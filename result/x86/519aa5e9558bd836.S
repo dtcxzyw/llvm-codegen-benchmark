@@ -1,7 +1,8 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	shrq	$3, %rsi
-	imull	$-1227133513, %esi, %ecx        # imm = 0xB6DB6DB7
+	imull	$-1227133513, %esi, %ecx
 	shrq	$3, %rdi
-	imull	$-1227133513, %edi, %eax        # imm = 0xB6DB6DB7
+	imull	$-1227133513, %edi, %eax
 	addl	%ecx, %eax
 	retq
+

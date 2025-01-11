@@ -1,4 +1,4 @@
-func00000000000034ec:                   # @func00000000000034ec
+func00000000000034ec:
 	sext.w	a3, a0
 	sext.w	a1, a1
 	sh1add	a0, a0, a2
@@ -9,3 +9,4 @@ func00000000000034ec:                   # @func00000000000034ec
 	snez	a1, a3
 	and	a0, a0, a1
 	ret
+

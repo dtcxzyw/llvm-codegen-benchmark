@@ -1,10 +1,11 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
 	andq	$-2, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	shrq	$61, %rdx
 	xorl	%eax, %eax
 	negq	%rdx
@@ -13,3 +14,4 @@ func0000000000000020:                   # @func0000000000000020
 	andq	$-8, %rsi
 	addq	%rsi, %rax
 	retq
+

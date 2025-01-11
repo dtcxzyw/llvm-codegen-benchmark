@@ -1,11 +1,11 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
 	fmv.s	fa5, fa0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	bnez	a0, .LBB0_4
 	lui	a0, 276464
 	fmv.w.x	fa4, a0
@@ -14,7 +14,8 @@ func0000000000000004:                   # @func0000000000000004
 .LBB0_4:
 	fmv.w.x	fa0, zero
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	andi	a0, a0, 1
@@ -22,13 +23,14 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a1, 264704
 	fmv.w.x	fa0, a1
 	beqz	a0, .LBB1_4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-.LBB1_3:                                # %entry
+.LBB1_3:
 	fmv.s	fa5, fa0
 	lui	a1, 264704
 	fmv.w.x	fa0, a1
 	bnez	a0, .LBB1_2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	fmul.s	fa0, fa5, fa0
 	ret
+

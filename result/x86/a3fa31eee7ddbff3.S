@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	imull	%edx, %esi
 	cmpl	%esi, %edi
 	setl	%cl
@@ -6,3 +6,4 @@ func00000000000004ca:                   # @func00000000000004ca
 	setns	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	li	a0, -16
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	li	a0, -4
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,7 +20,8 @@ func0000000000000016:                   # @func0000000000000016
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	lui	a0, 32
 	addiw	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -30,7 +32,8 @@ func000000000000003c:                   # @func000000000000003c
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	li	a0, -16
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -41,3 +44,4 @@ func0000000000000002:                   # @func0000000000000002
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+

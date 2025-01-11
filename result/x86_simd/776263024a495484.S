@@ -1,4 +1,4 @@
-func00000000000001fa:                   # @func00000000000001fa
+func00000000000001fa:
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
@@ -8,11 +8,12 @@ func00000000000001fa:                   # @func00000000000001fa
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	75                              # 0x4b
+	.long	75
 .LCPI1_1:
-	.long	65386                           # 0xff6a
-func00000000000001a8:                   # @func00000000000001a8
+	.long	65386
+func00000000000001a8:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
@@ -20,3 +21,4 @@ func00000000000001a8:                   # @func00000000000001a8
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

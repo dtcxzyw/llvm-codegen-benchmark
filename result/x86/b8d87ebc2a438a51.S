@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -6,12 +6,14 @@ func0000000000000001:                   # @func0000000000000001
 	testq	$-5, %rdx
 	cmovnel	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movabsq	$1095216660480, %rcx            # imm = 0xFF00000000
+
+func000000000000000c:
+	movabsq	$1095216660480, %rcx
 	andq	%rdx, %rcx
 	andl	$1, %esi
 	leal	2(%rsi), %eax
-	movabsq	$8589934592, %rdx               # imm = 0x200000000
+	movabsq	$8589934592, %rdx
 	cmpq	%rdx, %rcx
 	cmovel	%edi, %eax
 	retq
+

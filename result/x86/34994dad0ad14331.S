@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vucomisd	%xmm1, %xmm0
 	setp	%al
 	setne	%cl
@@ -7,3 +7,4 @@ func0000000000000007:                   # @func0000000000000007
 	movzbl	%cl, %eax
 	negl	%eax
 	retq
+

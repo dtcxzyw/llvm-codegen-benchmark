@@ -1,12 +1,13 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000108:                   # @func0000000000000108
+	.quad	1
+func0000000000000108:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpsllvq	%ymm1, %ymm3, %ymm1
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

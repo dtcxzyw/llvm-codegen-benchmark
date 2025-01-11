@@ -1,4 +1,4 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,4), %rax
 	andq	%rdi, %rax
@@ -8,3 +8,4 @@ func0000000000000108:                   # @func0000000000000108
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
+

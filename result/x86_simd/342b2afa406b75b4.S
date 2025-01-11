@@ -1,12 +1,13 @@
 .LCPI0_0:
-	.long	2047                            # 0x7ff
+	.long	2047
 .LCPI0_1:
-	.long	34                              # 0x22
-func0000000000000021:                   # @func0000000000000021
+	.long	34
+func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [34,34,34,34,34,34,34,34]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} {z}
 	retq
+

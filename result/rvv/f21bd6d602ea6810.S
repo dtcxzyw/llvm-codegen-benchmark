@@ -1,4 +1,4 @@
-func0000000000000074:                   # @func0000000000000074
+func0000000000000074:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 160
@@ -9,7 +9,8 @@ func0000000000000074:                   # @func0000000000000074
 	addiw	a0, a0, -744
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 115
@@ -20,7 +21,8 @@ func0000000000000054:                   # @func0000000000000054
 	addiw	a0, a0, -1005
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 1048332
@@ -31,7 +33,8 @@ func0000000000000070:                   # @func0000000000000070
 	addiw	a0, a0, -1177
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 115
@@ -42,3 +45,4 @@ func0000000000000040:                   # @func0000000000000040
 	addiw	a0, a0, -1005
 	vmacc.vx	v8, a0, v10
 	ret
+

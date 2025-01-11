@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	li	a0, 32
@@ -8,7 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a1, 29
 	addi	a0, a0, 16
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	sext.w	a1, a1
 	slli	a0, a0, 63
 	slli	a1, a1, 2
@@ -16,3 +17,4 @@ func000000000000001f:                   # @func000000000000001f
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
+

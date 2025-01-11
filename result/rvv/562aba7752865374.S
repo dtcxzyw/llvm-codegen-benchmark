@@ -1,4 +1,4 @@
-func0000000000000327:                   # @func0000000000000327
+func0000000000000327:
 	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
@@ -12,7 +12,8 @@ func0000000000000327:                   # @func0000000000000327
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-func00000000000002a7:                   # @func00000000000002a7
+
+func00000000000002a7:
 	li	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
@@ -27,3 +28,4 @@ func00000000000002a7:                   # @func00000000000002a7
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
+

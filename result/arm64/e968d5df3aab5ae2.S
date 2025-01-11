@@ -1,21 +1,18 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	w8, #-1                         // =0xffffffff
+func0000000000000003:
+	mov	w8, #-1
 	lsl	w8, w8, w0
 	mvn	w0, w8
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	w8, #-1                         // =0xffffffff
+
+func0000000000000002:
+	mov	w8, #-1
 	lsl	w8, w8, w0
 	eor	w0, w8, #0xff
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+
+func0000000000000004:
+	mov	w8, #1
 	lsl	w8, w8, w0
 	mvn	w0, w8
 	ret
-                                        // -- End function
+

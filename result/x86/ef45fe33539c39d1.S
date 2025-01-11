@@ -1,4 +1,4 @@
-func000000000000204c:                   # @func000000000000204c
+func000000000000204c:
 	cmpl	$5, %esi
 	setb	%al
 	cmpl	$32, %edi
@@ -8,7 +8,8 @@ func000000000000204c:                   # @func000000000000204c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000628c:                   # @func000000000000628c
+
+func000000000000628c:
 	testl	%esi, %esi
 	setne	%al
 	testl	%edi, %edi
@@ -18,7 +19,8 @@ func000000000000628c:                   # @func000000000000628c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000005194:                   # @func0000000000005194
+
+func0000000000005194:
 	testl	%esi, %esi
 	setns	%al
 	cmpl	$2, %edi
@@ -28,7 +30,8 @@ func0000000000005194:                   # @func0000000000005194
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000620c:                   # @func000000000000620c
+
+func000000000000620c:
 	cmpl	$5, %edi
 	setne	%al
 	cmpl	$127, %esi
@@ -38,17 +41,19 @@ func000000000000620c:                   # @func000000000000620c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000004104:                   # @func0000000000004104
-	cmpl	$48001, %esi                    # imm = 0xBB81
+
+func0000000000004104:
+	cmpl	$48001, %esi
 	setae	%al
-	cmpl	$4609, %edi                     # imm = 0x1201
+	cmpl	$4609, %edi
 	setb	%cl
 	orb	%al, %cl
-	cmpl	$16385, %edi                    # imm = 0x4001
+	cmpl	$16385, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000630c:                   # @func000000000000630c
+
+func000000000000630c:
 	movl	%edi, %eax
 	xorl	$64, %eax
 	xorl	$2, %esi
@@ -58,7 +63,8 @@ func000000000000630c:                   # @func000000000000630c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000084c:                   # @func000000000000084c
+
+func000000000000084c:
 	cmpl	$6, %edi
 	sete	%al
 	cmpl	$14, %esi
@@ -68,7 +74,8 @@ func000000000000084c:                   # @func000000000000084c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000604c:                   # @func000000000000604c
+
+func000000000000604c:
 	testl	%esi, %esi
 	setne	%al
 	cmpl	$140, %edi
@@ -78,7 +85,8 @@ func000000000000604c:                   # @func000000000000604c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000b0c:                   # @func0000000000000b0c
+
+func0000000000000b0c:
 	cmpl	$3, %esi
 	sete	%al
 	cmpl	$3, %edi
@@ -88,3 +96,4 @@ func0000000000000b0c:                   # @func0000000000000b0c
 	setne	%al
 	andb	%cl, %al
 	retq
+

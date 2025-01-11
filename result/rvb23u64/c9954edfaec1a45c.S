@@ -1,4 +1,4 @@
-func0000000000000aaa:                   # @func0000000000000aaa
+func0000000000000aaa:
 	lui	a3, 1033928
 	addiw	a3, a3, -1792
 	mul	a2, a2, a3
@@ -10,7 +10,8 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func000000000000088a:                   # @func000000000000088a
+
+func000000000000088a:
 	lui	a3, 804435
 	addiw	a3, a3, 1536
 	mul	a0, a0, a3
@@ -23,3 +24,4 @@ func000000000000088a:                   # @func000000000000088a
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000184:
 	movl	%edx, %eax
 	shlq	$10, %rax
 	leaq	(%rax,%rax,8), %rax
@@ -6,3 +6,4 @@ func0000000000000184:                   # @func0000000000000184
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

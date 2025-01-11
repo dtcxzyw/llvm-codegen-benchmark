@@ -1,5 +1,4 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	add	x8, x2, #3
 	cmp	x2, #0
 	sub	x9, x0, x1
@@ -7,9 +6,8 @@ func0000000000000007:                   // @func0000000000000007
 	cmp	x9, x8, asr #2
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	add	x8, x2, #3
 	cmp	x2, #0
 	sub	x9, x0, x1
@@ -17,97 +15,88 @@ func0000000000000006:                   // @func0000000000000006
 	cmp	x9, x8, asr #2
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	add	x8, x2, x2, lsr #63
 	sub	x9, x0, x1
 	cmp	x9, x8, asr #1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	asr	x8, x2, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000a8:                   // @func00000000000000a8
-// %bb.0:                               // %entry
+
+func00000000000000a8:
 	asr	x8, x2, #4
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000a4:                   // @func00000000000000a4
-// %bb.0:                               // %entry
+
+func00000000000000a4:
 	asr	x8, x2, #4
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	add	x8, x2, x2, lsr #63
 	sub	x9, x0, x1
 	cmp	x9, x8, asr #1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000000c6:                   // @func00000000000000c6
-// %bb.0:                               // %entry
+
+func00000000000000c6:
 	asr	x8, x2, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+
+func000000000000008a:
 	asr	x8, x2, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
+
+func00000000000000aa:
 	asr	x8, x2, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000000e4:                   // @func00000000000000e4
-// %bb.0:                               // %entry
+
+func00000000000000e4:
 	asr	x8, x2, #3
-	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
+	mov	x9, #-3689348814741910324
 	movk	x9, #52429
 	mul	x8, x8, x9
 	sub	x9, x0, x1
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
+

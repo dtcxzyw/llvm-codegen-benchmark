@@ -1,28 +1,32 @@
-func000000000000002f:                   # @func000000000000002f
-	vpmovzxbd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
+func000000000000002f:
+	vpmovzxbd	%xmm2, %xmm2
 	vpslld	$24, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmovzxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000002c:                   # @func000000000000002c
-	vpmovzxbd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
+
+func000000000000002c:
+	vpmovzxbd	%xmm2, %xmm2
 	vpslld	$24, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmovzxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000003c:                   # @func000000000000003c
-	vpmovzxbd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
+
+func000000000000003c:
+	vpmovzxbd	%xmm2, %xmm2
 	vpslld	$8, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm1
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmovzxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000002b:                   # @func000000000000002b
-	vpmovzxbd	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero
+
+func000000000000002b:
+	vpmovzxbd	%xmm2, %xmm2
 	vpslld	$24, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmovzxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
+

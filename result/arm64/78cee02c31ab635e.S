@@ -1,5 +1,4 @@
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+func000000000000002c:
 	tst	w2, #0xff
 	cset	w8, eq
 	cmp	w1, #5
@@ -8,9 +7,8 @@ func000000000000002c:                   // @func000000000000002c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
+
+func0000000000000188:
 	tst	w2, #0xff
 	cset	w8, ne
 	cmp	w1, #31
@@ -19,9 +17,8 @@ func0000000000000188:                   // @func0000000000000188
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	and	w8, w2, #0xff
 	cmp	w8, #90
 	cset	w8, eq
@@ -31,9 +28,8 @@ func0000000000000021:                   // @func0000000000000021
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	and	w8, w2, #0xff
 	cmp	w8, #254
 	cset	w8, lo
@@ -43,9 +39,8 @@ func0000000000000081:                   // @func0000000000000081
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	and	w8, w2, #0xff
 	cmp	w8, #22
 	cset	w8, ne
@@ -55,9 +50,8 @@ func000000000000018c:                   // @func000000000000018c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	tst	w2, #0xff
 	cset	w8, eq
 	cmp	w1, #13
@@ -66,9 +60,8 @@ func0000000000000024:                   // @func0000000000000024
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000198:                   // @func0000000000000198
-// %bb.0:                               // %entry
+
+func0000000000000198:
 	and	w8, w2, #0xff
 	cmp	w8, #4
 	cset	w8, ne
@@ -78,9 +71,8 @@ func0000000000000198:                   // @func0000000000000198
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	and	w8, w2, #0xff
 	cmp	w8, #1
 	cset	w8, hi
@@ -90,9 +82,8 @@ func0000000000000101:                   // @func0000000000000101
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+
+func0000000000000181:
 	tst	w2, #0xff
 	cset	w8, ne
 	cmp	w1, #0
@@ -101,9 +92,8 @@ func0000000000000181:                   // @func0000000000000181
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000186:                   // @func0000000000000186
-// %bb.0:                               // %entry
+
+func0000000000000186:
 	tst	w2, #0xff
 	cset	w8, ne
 	cmp	w1, #0
@@ -112,9 +102,8 @@ func0000000000000186:                   // @func0000000000000186
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	tst	w2, #0xff
 	cset	w8, eq
 	cmp	w1, #1
@@ -123,4 +112,4 @@ func0000000000000026:                   // @func0000000000000026
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

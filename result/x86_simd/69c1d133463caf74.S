@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm1
@@ -7,7 +7,8 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm1
@@ -16,3 +17,4 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+

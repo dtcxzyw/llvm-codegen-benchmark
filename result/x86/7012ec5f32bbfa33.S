@@ -1,11 +1,12 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	xorl	%eax, %eax
 	subq	$1, %rsi
 	cmovaeq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	cmpq	$36, %rsi
 	movl	$35, %eax
 	cmovaeq	%rsi, %rax
@@ -13,3 +14,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

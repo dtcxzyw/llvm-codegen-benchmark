@@ -1,17 +1,13 @@
-func00000000000000fa:                   // @func00000000000000fa
-// %bb.0:                               // %entry
-	mov	w8, #8192                       // =0x2000
+func00000000000000fa:
+	mov	w8, #8192
 	sub	w8, w8, w1
 	mul	x8, x0, x8
 	lsr	x0, x8, #13
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	neg	w8, w1
 	mul	x8, x0, x8
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	1995                            # 0x7cb
+	.long	1995
 .LCPI0_1:
-	.long	2020                            # 0x7e4
-func000000000000018c:                   # @func000000000000018c
+	.long	2020
+func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -13,3 +13,4 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

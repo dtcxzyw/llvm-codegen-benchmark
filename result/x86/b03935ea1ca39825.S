@@ -1,14 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%esi, %eax
 	shll	$9, %eax
 	orl	%edi, %eax
 	shrl	$8, %eax
-	andl	$49152, %eax                    # imm = 0xC000
+	andl	$49152, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	andl	$43690, %esi                    # imm = 0xAAAA
+
+func0000000000000002:
+	andl	$43690, %esi
 	shll	$16, %edi
 	leal	(%rdi,%rsi), %eax
 	shrl	%eax
-	andl	$1431655765, %eax               # imm = 0x55555555
+	andl	$1431655765, %eax
 	retq
+

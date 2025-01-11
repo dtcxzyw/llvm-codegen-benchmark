@@ -1,7 +1,7 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
 	subq	%rcx, %rsi
@@ -25,7 +25,7 @@ func0000000000000008:                   # @func0000000000000008
 	subq	%rcx, %rsi
 	addq	%rdx, %rsi
 	vmovq	%rsi, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm3, %xmm3
 	vpextrq	$1, %xmm2, %rdx
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
@@ -50,7 +50,7 @@ func0000000000000008:                   # @func0000000000000008
 	subq	%rax, %rcx
 	addq	%rdx, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm1, %ymm1
@@ -59,10 +59,11 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
 	subq	%rcx, %rsi
@@ -86,7 +87,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	subq	%rcx, %rsi
 	addq	%rdx, %rsi
 	vmovq	%rsi, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm3, %xmm3
 	vpextrq	$1, %xmm2, %rdx
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
@@ -111,7 +112,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	subq	%rax, %rcx
 	addq	%rdx, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm1, %ymm1
@@ -120,3 +121,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

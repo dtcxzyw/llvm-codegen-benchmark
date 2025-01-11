@@ -1,7 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -48,10 +48,11 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -98,3 +99,4 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

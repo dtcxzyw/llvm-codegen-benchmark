@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	srai	a1, a1, 1
 	sub	a1, a1, a0
 	li	a0, 1
@@ -7,7 +7,8 @@ func000000000000008a:                   # @func000000000000008a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func00000000000002a8:                   # @func00000000000002a8
+
+func00000000000002a8:
 	srai	a1, a1, 3
 	sub	a1, a1, a0
 	li	a0, -1
@@ -17,25 +18,29 @@ func00000000000002a8:                   # @func00000000000002a8
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret
-func00000000000002a1:                   # @func00000000000002a1
+
+func00000000000002a1:
 	srai	a1, a1, 3
 	sub	a1, a1, a0
 	addi	a1, a1, 1
 	seqz	a0, a1
 	ret
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	srai	a1, a1, 3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	srai	a1, a1, 3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000208:                   # @func0000000000000208
+
+func0000000000000208:
 	srai	a1, a1, 5
 	sub	a1, a1, a0
 	li	a0, -1
@@ -45,3 +50,4 @@ func0000000000000208:                   # @func0000000000000208
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret
+

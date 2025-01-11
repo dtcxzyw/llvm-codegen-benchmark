@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	pushq	%rbx
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
@@ -83,3 +83,4 @@ func0000000000000001:                   # @func0000000000000001
 	popq	%rbx
 	vzeroupper
 	retq
+

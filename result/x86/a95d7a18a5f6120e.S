@@ -1,4 +1,4 @@
-func0000000000000946:                   # @func0000000000000946
+func0000000000000946:
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cmpl	%eax, %edi
@@ -7,7 +7,8 @@ func0000000000000946:                   # @func0000000000000946
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000966:                   # @func0000000000000966
+
+func0000000000000966:
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	cmpl	%eax, %edi
@@ -16,7 +17,8 @@ func0000000000000966:                   # @func0000000000000966
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000b26:                   # @func0000000000000b26
+
+func0000000000000b26:
 	shrxl	%esi, %edi, %eax
 	testl	%eax, %eax
 	setne	%cl
@@ -24,3 +26,4 @@ func0000000000000b26:                   # @func0000000000000b26
 	sets	%al
 	orb	%cl, %al
 	retq
+

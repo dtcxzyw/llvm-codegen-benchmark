@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	andi	a3, a0, 1
 	sext.w	a2, a2
 	addi	a2, a2, -2
@@ -7,10 +7,11 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a3, .LBB0_2
 	lui	a1, 524288
 	addiw	a1, a1, 4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	sext.w	a3, a2
 	andi	a2, a0, 1
 	beqz	a3, .LBB1_2
@@ -24,6 +25,7 @@ func0000000000000003:                   # @func0000000000000003
 	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a1, 260
-.LBB1_4:                                # %entry
+.LBB1_4:
 	or	a0, a0, a1
 	ret
+

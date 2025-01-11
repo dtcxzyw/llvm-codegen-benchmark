@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
@@ -11,7 +11,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpextrd	$1, %xmm3, %ecx
 	cltd
 	idivl	%ecx
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	movl	%edx, %edi
 	vmovd	%xmm2, %eax
 	vmovd	%xmm3, %ecx
@@ -65,7 +65,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %ymm0
 	vmovd	%esi, %xmm1
-	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1      # 4-byte Folded Reload
+	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1
 	vpinsrd	$2, %r8d, %xmm1, %xmm1
 	vpinsrd	$3, %r9d, %xmm1, %xmm1
 	vmovd	%r14d, %xmm2
@@ -81,7 +81,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	popq	%r15
 	popq	%rbp
 	retq
-func00000000000000a0:                   # @func00000000000000a0
+
+func00000000000000a0:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
@@ -94,7 +95,7 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpextrd	$1, %xmm3, %ecx
 	cltd
 	idivl	%ecx
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	movl	%edx, %edi
 	vmovd	%xmm2, %eax
 	vmovd	%xmm3, %ecx
@@ -148,7 +149,7 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %ymm0
 	vmovd	%esi, %xmm1
-	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1      # 4-byte Folded Reload
+	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1
 	vpinsrd	$2, %r8d, %xmm1, %xmm1
 	vpinsrd	$3, %r9d, %xmm1, %xmm1
 	vmovd	%r14d, %xmm2
@@ -164,7 +165,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	popq	%r15
 	popq	%rbp
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
@@ -177,7 +179,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpextrd	$1, %xmm3, %ecx
 	cltd
 	idivl	%ecx
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	movl	%edx, %edi
 	vmovd	%xmm2, %eax
 	vmovd	%xmm3, %ecx
@@ -231,7 +233,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vmovd	%esi, %xmm1
-	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1      # 4-byte Folded Reload
+	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1
 	vpinsrd	$2, %r8d, %xmm1, %xmm1
 	vpinsrd	$3, %r9d, %xmm1, %xmm1
 	vmovd	%r14d, %xmm2
@@ -249,7 +251,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	popq	%r15
 	popq	%rbp
 	retq
-func00000000000000c0:                   # @func00000000000000c0
+
+func00000000000000c0:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
@@ -262,7 +265,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpextrd	$1, %xmm3, %ecx
 	cltd
 	idivl	%ecx
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	movl	%edx, %edi
 	vmovd	%xmm2, %eax
 	vmovd	%xmm3, %ecx
@@ -316,7 +319,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vmovd	%esi, %xmm1
-	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1      # 4-byte Folded Reload
+	vpinsrd	$1, -4(%rsp), %xmm1, %xmm1
 	vpinsrd	$2, %r8d, %xmm1, %xmm1
 	vpinsrd	$3, %r9d, %xmm1, %xmm1
 	vmovd	%r14d, %xmm2
@@ -334,3 +337,4 @@ func00000000000000c0:                   # @func00000000000000c0
 	popq	%r15
 	popq	%rbp
 	retq
+

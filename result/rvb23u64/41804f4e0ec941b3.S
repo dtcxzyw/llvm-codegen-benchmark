@@ -1,4 +1,4 @@
-func00000000000000ff:                   # @func00000000000000ff
+func00000000000000ff:
 	andi	a2, a2, 255
 	li	a3, 150
 	mul	a2, a2, a3
@@ -6,7 +6,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a2
 	addiw	a0, a0, 128
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	zext.h	a2, a2
 	li	a3, 365
 	add	a0, a0, a1
@@ -16,7 +17,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	addi	a1, a1, 723
 	addw	a0, a0, a1
 	ret
-func00000000000000f7:                   # @func00000000000000f7
+
+func00000000000000f7:
 	andi	a2, a2, 55
 	li	a3, 1260
 	add	a0, a0, a1
@@ -26,7 +28,8 @@ func00000000000000f7:                   # @func00000000000000f7
 	addi	a1, a1, 834
 	addw	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	andi	a2, a2, 63
 	li	a3, 1260
 	add	a0, a0, a1
@@ -36,7 +39,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	addi	a1, a1, -378
 	addw	a0, a0, a1
 	ret
-func0000000000000057:                   # @func0000000000000057
+
+func0000000000000057:
 	andi	a2, a2, 1020
 	lui	a3, 1048571
 	add	a0, a0, a1
@@ -46,7 +50,8 @@ func0000000000000057:                   # @func0000000000000057
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	andi	a2, a2, 1020
 	lui	a3, 1048570
 	add	a0, a0, a1
@@ -56,7 +61,8 @@ func0000000000000075:                   # @func0000000000000075
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	slli	a2, a2, 56
 	lui	a3, 7200
 	add	a0, a0, a1
@@ -65,3 +71,4 @@ func00000000000000dd:                   # @func00000000000000dd
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+

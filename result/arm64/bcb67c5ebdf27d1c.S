@@ -1,35 +1,30 @@
-func0000000000000087:                   // @func0000000000000087
-// %bb.0:                               // %entry
+func0000000000000087:
 	udiv	w8, w1, w2
 	cmp	w8, w0
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	udiv	w8, w1, w2
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	udiv	w8, w1, w2
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	udiv	w8, w1, w2
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	udiv	w8, w1, w2
 	cmp	w8, w0
 	cset	w0, lt
 	ret
-                                        // -- End function
+

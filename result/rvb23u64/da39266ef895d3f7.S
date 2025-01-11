@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	andi	a0, a0, 255
 	addi	a1, a0, -58
 	addi	a0, a0, -46
@@ -6,14 +6,16 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	andi	a0, a0, 255
 	addi	a1, a0, -11
 	sltiu	a1, a1, -2
 	sltiu	a0, a0, 32
 	and	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	sext.b	a1, a0
 	andi	a0, a0, 255
 	addi	a0, a0, -16
@@ -21,10 +23,12 @@ func000000000000008a:                   # @func000000000000008a
 	slti	a1, a1, 0
 	andn	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	andi	a0, a0, 255
 	addi	a1, a0, -127
 	sltiu	a1, a1, -4
 	sltiu	a0, a0, 95
 	andn	a0, a1, a0
 	ret
+

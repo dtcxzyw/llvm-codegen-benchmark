@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000038:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -6,7 +6,8 @@ func0000000000000038:                   # @func0000000000000038
 	cmpb	$24, %dil
 	setae	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -14,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$100, %dil
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -22,7 +24,8 @@ func0000000000000014:                   # @func0000000000000014
 	cmpb	$10, %dil
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -30,7 +33,8 @@ func0000000000000034:                   # @func0000000000000034
 	cmpb	$64, %dil
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -38,7 +42,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$3, %dil
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -46,7 +51,8 @@ func0000000000000048:                   # @func0000000000000048
 	cmpb	$100, %dil
 	setae	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	movl	%edi, %eax
 	sarb	$7, %al
 	xorb	%al, %dil
@@ -54,3 +60,4 @@ func0000000000000058:                   # @func0000000000000058
 	cmpb	$10, %dil
 	setae	%al
 	retq
+

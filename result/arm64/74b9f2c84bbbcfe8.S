@@ -1,70 +1,63 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+func0000000000000061:
+	mov	x8, #-6148914691236517206
 	add	x9, x0, #1
 	movk	x8, #43691
 	umulh	x8, x1, x8
 	cmp	x9, x8, lsr #1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+
+func0000000000000041:
+	mov	x8, #-6148914691236517206
 	add	x9, x0, #1
 	movk	x8, #43691
 	umulh	x8, x1, x8
 	cmp	x9, x8, lsr #1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
+
+func00000000000000c1:
 	lsr	x8, x1, #4
-	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
+	mov	x9, #-3689348814741910324
 	movk	x9, #52429
 	mul	x8, x8, x9
 	add	x9, x0, #1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	lsr	x8, x1, #4
-	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
+	mov	x9, #-3689348814741910324
 	movk	x9, #52429
 	mul	x8, x8, x9
 	add	x9, x0, #1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000e1:                   // @func00000000000000e1
-// %bb.0:                               // %entry
+
+func00000000000000e1:
 	lsr	x8, x1, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	add	x9, x0, #1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	lsr	x8, x1, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x0, #1
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	x8, #1027                       // =0x403
+
+func0000000000000001:
+	mov	x8, #1027
 	movk	x8, #4104, lsl #16
 	movk	x8, #16416, lsl #32
 	movk	x8, #128, lsl #48
@@ -75,20 +68,18 @@ func0000000000000001:                   // @func0000000000000001
 	cmp	x9, x8, lsr #8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
-	mov	x8, #-9187201950435737472       // =0x8080808080808080
+
+func0000000000000074:
+	mov	x8, #-9187201950435737472
 	add	x9, x0, #1
 	movk	x8, #32897
 	umulh	x8, x1, x8
 	cmp	x9, x8, lsr #7
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000b4:                   // @func00000000000000b4
-// %bb.0:                               // %entry
-	mov	x9, #51739                      // =0xca1b
+
+func00000000000000b4:
+	mov	x9, #51739
 	lsr	x8, x1, #4
 	movk	x9, #10347, lsl #16
 	movk	x9, #41391, lsl #32
@@ -98,10 +89,9 @@ func00000000000000b4:                   // @func00000000000000b4
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	x8, #9363                       // =0x2493
+
+func0000000000000024:
+	mov	x8, #9363
 	movk	x8, #37449, lsl #16
 	movk	x8, #18724, lsl #32
 	movk	x8, #9362, lsl #48
@@ -112,4 +102,4 @@ func0000000000000024:                   // @func0000000000000024
 	cmp	x9, x8, lsr #2
 	cset	w0, lo
 	ret
-                                        // -- End function
+

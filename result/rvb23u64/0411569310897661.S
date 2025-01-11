@@ -1,4 +1,4 @@
-func0000000000000017:                   # @func0000000000000017
+func0000000000000017:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -8,7 +8,8 @@ func0000000000000017:                   # @func0000000000000017
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -18,7 +19,8 @@ func000000000000001f:                   # @func000000000000001f
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -28,7 +30,8 @@ func0000000000000013:                   # @func0000000000000013
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -38,7 +41,8 @@ func0000000000000010:                   # @func0000000000000010
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -48,7 +52,8 @@ func0000000000000014:                   # @func0000000000000014
 	or	a1, a1, a3
 	sh2add	a0, a1, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andi	a1, a1, 1
 	li	a3, 2
 	sllw	a2, a3, a2
@@ -58,3 +63,4 @@ func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	fmv.d.x	fa5, zero
@@ -8,9 +8,10 @@ func0000000000000008:                   # @func0000000000000008
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+
 .LCPI1_0:
-	.quad	0x4066800000000000              # double 180
-func000000000000000a:                   # @func000000000000000a
+	.quad	0x4066800000000000
+func000000000000000a:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -21,7 +22,8 @@ func000000000000000a:                   # @func000000000000000a
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	fmv.d.x	fa5, zero
@@ -31,9 +33,10 @@ func0000000000000002:                   # @func0000000000000002
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+
 .LCPI3_0:
-	.quad	0x4066800000000000              # double 180
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x4066800000000000
+func0000000000000004:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -44,3 +47,4 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+

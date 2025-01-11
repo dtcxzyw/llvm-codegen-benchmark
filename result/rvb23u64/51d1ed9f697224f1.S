@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	sext.w	a2, a2
 	slliw	a1, a1, 2
 	li	a3, 4
@@ -8,7 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	sext.w	a2, a2
 	slliw	a1, a1, 28
 	lui	a3, 131072
@@ -18,7 +19,8 @@ func000000000000000e:                   # @func000000000000000e
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a2, a2
 	slliw	a1, a1, 2
 	li	a3, 4
@@ -28,3 +30,4 @@ func000000000000000a:                   # @func000000000000000a
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

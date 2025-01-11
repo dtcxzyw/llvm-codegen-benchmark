@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v9, v10, 0
 	vmand.mm	v9, v9, v0
@@ -6,7 +6,8 @@ func000000000000018c:                   # @func000000000000018c
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v9, v10, 0
 	vmand.mm	v9, v9, v0
@@ -14,7 +15,8 @@ func0000000000000181:                   # @func0000000000000181
 	vmseq.vi	v8, v8, 1
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 0
 	vmand.mm	v9, v9, v0
@@ -22,7 +24,8 @@ func0000000000000024:                   # @func0000000000000024
 	vmsleu.vi	v8, v8, 15
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 3
 	li	a0, 125
@@ -31,7 +34,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
@@ -40,7 +44,8 @@ func0000000000000084:                   # @func0000000000000084
 	vmsleu.vi	v8, v8, 9
 	vmand.mm	v0, v9, v8
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 0
 	li	a0, 83
@@ -49,7 +54,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v9, v10, 11
 	li	a0, 100
@@ -58,3 +64,4 @@ func0000000000000101:                   # @func0000000000000101
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
+

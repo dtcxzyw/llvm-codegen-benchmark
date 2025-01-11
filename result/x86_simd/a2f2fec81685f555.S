@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	4294967058                      # 0xffffff12
+	.long	4294967058
 .LCPI0_1:
-	.long	4294967287                      # 0xfffffff7
-func0000000000000010:                   # @func0000000000000010
+	.long	4294967287
+func0000000000000010:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
@@ -14,11 +14,12 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294965358                      # 0xfffff86e
+	.long	4294965358
 .LCPI1_1:
-	.long	4294963421                      # 0xfffff0dd
-func0000000000000090:                   # @func0000000000000090
+	.long	4294963421
+func0000000000000090:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
@@ -30,9 +31,10 @@ func0000000000000090:                   # @func0000000000000090
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	3                               # 0x3
-func0000000000000018:                   # @func0000000000000018
+	.long	3
+func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
@@ -44,11 +46,12 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	4294967294                      # 0xfffffffe
+	.long	4294967294
 .LCPI3_1:
-	.long	4294967293                      # 0xfffffffd
-func0000000000000020:                   # @func0000000000000020
+	.long	4294967293
+func0000000000000020:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
@@ -60,9 +63,10 @@ func0000000000000020:                   # @func0000000000000020
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	2                               # 0x2
-func0000000000000030:                   # @func0000000000000030
+	.long	2
+func0000000000000030:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
@@ -73,3 +77,4 @@ func0000000000000030:                   # @func0000000000000030
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

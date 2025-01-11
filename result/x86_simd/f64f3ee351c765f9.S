@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm0, %zmm0
 	vaddps	%zmm1, %zmm0, %zmm0
@@ -7,7 +7,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm0, %zmm0
 	vaddps	%zmm1, %zmm0, %zmm0
@@ -16,9 +17,10 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x27800000                      # float 3.55271368E-15
-func0000000000000002:                   # @func0000000000000002
+	.long	0x27800000
+func0000000000000002:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm0, %zmm0
 	vaddps	%zmm1, %zmm0, %zmm0
@@ -26,7 +28,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm0, %zmm0
 	vaddps	%zmm1, %zmm0, %zmm0
@@ -35,7 +38,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm0, %zmm0
 	vaddps	%zmm1, %zmm0, %zmm0
@@ -44,3 +48,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

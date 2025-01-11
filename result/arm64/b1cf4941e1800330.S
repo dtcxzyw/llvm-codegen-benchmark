@@ -1,35 +1,30 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+func0000000000000005:
 	clz	w8, w1
 	sub	w8, w0, w8
 	add	w0, w8, #2
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	clz	w8, w1
 	sub	w8, w0, w8
 	add	w0, w8, #31
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	clz	w8, w1
 	sub	w8, w0, w8
 	add	w0, w8, #41
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	clz	w8, w1
 	sub	w8, w0, w8
 	add	w0, w8, #7
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	clz	w8, w1
 	sub	w8, w0, w8
 	add	w0, w8, #32
 	ret
-                                        // -- End function
+

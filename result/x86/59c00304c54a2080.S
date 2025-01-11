@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	leal	15(%rax), %ecx
@@ -8,3 +8,4 @@ func0000000000000081:                   # @func0000000000000081
 	cmpl	%ecx, %edi
 	sete	%al
 	retq
+

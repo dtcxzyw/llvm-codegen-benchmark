@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 160
@@ -7,7 +7,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003a1:                   # @func00000000000003a1
+
+func00000000000003a1:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 432
@@ -16,7 +17,8 @@ func00000000000003a1:                   # @func00000000000003a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e8:                   # @func00000000000001e8
+
+func00000000000001e8:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -26,3 +28,4 @@ func00000000000001e8:                   # @func00000000000001e8
 	addi	a1, a1, 5
 	sltu	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000481:                   # @func0000000000000481
+func0000000000000481:
 	leal	-65(%rsi), %eax
 	movl	%esi, %ecx
 	orb	$32, %cl
@@ -8,7 +8,8 @@ func0000000000000481:                   # @func0000000000000481
 	cmpb	%al, %dil
 	sete	%al
 	retq
-func000000000000048a:                   # @func000000000000048a
+
+func000000000000048a:
 	leal	-65(%rsi), %eax
 	movl	%esi, %ecx
 	orb	$32, %cl
@@ -18,7 +19,8 @@ func000000000000048a:                   # @func000000000000048a
 	cmpb	%al, %dil
 	setg	%al
 	retq
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	leal	-65(%rsi), %eax
 	movl	%esi, %ecx
 	orb	$32, %cl
@@ -28,3 +30,4 @@ func0000000000000484:                   # @func0000000000000484
 	cmpb	%al, %dil
 	setb	%al
 	retq
+

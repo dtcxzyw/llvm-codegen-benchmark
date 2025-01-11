@@ -1,4 +1,4 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000001f4:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
@@ -9,7 +9,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	addiw	a1, a3, 2003
 	sltu	a0, a0, a1
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
@@ -20,7 +21,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	sltiu	a0, a0, 625
 	xori	a0, a0, 1
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a2, a2, a3
@@ -29,7 +31,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
@@ -39,3 +42,4 @@ func0000000000000008:                   # @func0000000000000008
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret
+

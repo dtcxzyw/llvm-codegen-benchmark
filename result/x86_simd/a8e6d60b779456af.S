@@ -1,4 +1,4 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000036:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovd2m	%xmm2, %k1
@@ -6,7 +6,8 @@ func0000000000000036:                   # @func0000000000000036
 	knotw	%k0, %k1
 	vpsllq	$32, %ymm1, %ymm0 {%k1} {z}
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovd2m	%xmm2, %k1
@@ -14,3 +15,4 @@ func0000000000000034:                   # @func0000000000000034
 	knotw	%k0, %k1
 	vpsllq	$32, %ymm1, %ymm0 {%k1} {z}
 	retq
+

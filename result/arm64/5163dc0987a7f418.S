@@ -1,12 +1,10 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	asr	x8, x0, #1
 	bic	x0, x8, x0, asr #63
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	asr	x8, x0, #32
 	bic	x0, x8, x0, asr #63
 	ret
-                                        // -- End function
+

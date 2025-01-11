@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000000f4:
 	vpslld	$8, %ymm2, %ymm3
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm2
@@ -46,3 +46,4 @@ func00000000000000f4:                   # @func00000000000000f4
 	vpinsrw	$7, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
+

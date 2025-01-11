@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, 85
@@ -9,7 +9,8 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, 100
@@ -20,7 +21,8 @@ func000000000000007f:                   # @func000000000000007f
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, -9
@@ -31,3 +33,4 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
 	ret
+

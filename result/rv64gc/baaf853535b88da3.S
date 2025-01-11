@@ -1,4 +1,4 @@
-func000000000000088c:                   # @func000000000000088c
+func000000000000088c:
 	slli	a0, a0, 48
 	addi	a2, a2, -1
 	srli	a0, a0, 48
@@ -6,7 +6,8 @@ func000000000000088c:                   # @func000000000000088c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d81:                   # @func0000000000000d81
+
+func0000000000000d81:
 	slli	a0, a0, 48
 	addi	a2, a2, 328
 	srli	a0, a0, 48
@@ -15,7 +16,8 @@ func0000000000000d81:                   # @func0000000000000d81
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d8c:                   # @func0000000000000d8c
+
+func0000000000000d8c:
 	slli	a0, a0, 48
 	addi	a2, a2, 48
 	srli	a0, a0, 48
@@ -25,7 +27,8 @@ func0000000000000d8c:                   # @func0000000000000d8c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000881:                   # @func0000000000000881
+
+func0000000000000881:
 	slli	a0, a0, 48
 	addi	a2, a2, -2
 	sltu	a1, a1, a2
@@ -36,3 +39,4 @@ func0000000000000881:                   # @func0000000000000881
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

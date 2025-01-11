@@ -1,43 +1,38 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	add	x8, x1, x2, lsl #3
-	mov	w9, #28087                      // =0x6db7
+	mov	w9, #28087
 	movk	w9, #46811, lsl #16
 	sub	x8, x8, x0
 	lsr	x8, x8, #3
 	mul	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000064:                   // @func0000000000000064
-// %bb.0:                               // %entry
-	mov	w8, #56                         // =0x38
-	mov	w9, #28087                      // =0x6db7
+
+func0000000000000064:
+	mov	w8, #56
+	mov	w9, #28087
 	madd	x8, x2, x8, x1
 	movk	w9, #46811, lsl #16
 	sub	x8, x8, x0
 	lsr	x8, x8, #3
 	mul	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
-	mov	w9, #43691                      // =0xaaab
+
+func0000000000000044:
+	mov	w8, #48
+	mov	w9, #43691
 	madd	x8, x2, x8, x1
 	movk	w9, #43690, lsl #16
 	sub	x8, x8, x0
 	lsr	x8, x8, #4
 	mul	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	add	x8, x1, x2
 	sub	x8, x8, x0
 	add	x9, x8, #15
 	cmp	x8, #0
 	csel	x8, x9, x8, lt
 	lsr	x0, x8, #4
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

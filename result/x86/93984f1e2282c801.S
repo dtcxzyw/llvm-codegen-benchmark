@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	sarq	$4, %rsi
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
@@ -7,3 +7,4 @@ func000000000000014a:                   # @func000000000000014a
 	cmpq	%rdi, %rax
 	setg	%al
 	retq
+

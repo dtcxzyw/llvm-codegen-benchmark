@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 32
@@ -7,7 +7,8 @@ func000000000000004c:                   # @func000000000000004c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 262127
@@ -17,7 +18,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 1
@@ -26,7 +28,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 1
@@ -35,3 +38,4 @@ func00000000000000d4:                   # @func00000000000000d4
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
+

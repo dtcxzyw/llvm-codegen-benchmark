@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	andl	$1, %esi
 	leaq	(%rsi,%rdi), %rcx
 	movq	%rcx, %rdx
@@ -9,7 +9,8 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000001d8:                   # @func00000000000001d8
+
+func00000000000001d8:
 	andl	$1, %esi
 	leaq	(%rsi,%rdi), %rcx
 	movq	%rcx, %rdx
@@ -20,7 +21,8 @@ func00000000000001d8:                   # @func00000000000001d8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	andl	$1, %esi
 	leaq	(%rsi,%rdi), %rcx
 	movq	%rcx, %rdx
@@ -31,3 +33,4 @@ func00000000000000e8:                   # @func00000000000000e8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

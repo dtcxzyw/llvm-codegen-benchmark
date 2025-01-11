@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	testb	$1, %sil
 	movl	$3, %eax
 	movl	$9, %ecx
@@ -8,7 +8,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	cmpl	$9, %ecx
 	setge	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	testb	$1, %sil
 	movl	$-49, %eax
 	movl	$-55, %ecx
@@ -18,7 +19,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	$-55, %ecx
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -28,7 +30,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	$12, %eax
 	setae	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	andl	$1, %esi
 	leal	11(%rsi,%rsi), %eax
 	testl	%edi, %edi
@@ -36,7 +39,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	cmpl	$11, %eax
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -46,3 +50,4 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	$3, %eax
 	setge	%al
 	retq
+

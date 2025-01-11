@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	fmv.x.w	a1, fa0
 	andi	a0, a0, 1
 	lui	a2, 32769
@@ -8,3 +8,4 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

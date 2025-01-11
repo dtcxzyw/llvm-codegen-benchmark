@@ -1,7 +1,6 @@
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+func0000000000000078:
 	fmov	x8, d1
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	fmov	d1, x9
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -12,11 +11,10 @@ func0000000000000078:                   // @func0000000000000078
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	fmov	x8, d1
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	fmov	d1, x9
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -27,4 +25,4 @@ func0000000000000088:                   // @func0000000000000088
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

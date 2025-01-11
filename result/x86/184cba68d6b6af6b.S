@@ -1,5 +1,5 @@
-func0000000000000001:                   # @func0000000000000001
-	testl	$67108864, %esi                 # imm = 0x4000000
+func0000000000000001:
+	testl	$67108864, %esi
 	sete	%al
 	movb	$2, %cl
 	subb	%al, %cl
@@ -9,3 +9,4 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

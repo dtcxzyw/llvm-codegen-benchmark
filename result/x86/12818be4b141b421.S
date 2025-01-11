@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	movq	%rdi, %rax
 	andq	$-32, %rax
 	subq	%rsi, %rax
@@ -7,3 +7,4 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
+

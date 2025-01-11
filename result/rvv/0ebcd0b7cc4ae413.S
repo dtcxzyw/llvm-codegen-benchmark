@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
@@ -8,9 +8,10 @@ func0000000000000000:                   # @func0000000000000000
 	vmv1r.v	v0, v9
 	vfmerge.vfm	v8, v24, fa5, v0
 	ret
+
 .LCPI1_0:
-	.quad	0x4076800000000000              # double 360
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x4076800000000000
+func0000000000000001:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
@@ -22,3 +23,4 @@ func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v0, v9
 	vfmerge.vfm	v8, v24, fa5, v0
 	ret
+

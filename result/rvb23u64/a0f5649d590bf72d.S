@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andi	a0, a0, 255
 	zext.h	a1, a1
 	addi	a1, a1, -126
@@ -6,10 +6,12 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	andi	a0, a0, 255
 	zext.h	a1, a1
 	sltiu	a1, a1, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

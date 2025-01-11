@@ -1,4 +1,4 @@
-func000000000000028a:                   # @func000000000000028a
+func000000000000028a:
 	vpaddq	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -8,3 +8,4 @@ func000000000000028a:                   # @func000000000000028a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	839798700976720815              # 0xba79078168d4baf
-func0000000000000000:                   # @func0000000000000000
+	.quad	839798700976720815
+func0000000000000000:
 	li	a0, -57
 	li	a1, 32
 	slli	a0, a0, 54
@@ -15,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmul.vx	v10, v10, a0
 	vmadd.vx	v8, a1, v10
 	ret
-func00000000000001b4:                   # @func00000000000001b4
+
+func00000000000001b4:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -27,7 +28,8 @@ func00000000000001b4:                   # @func00000000000001b4
 	addiw	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
-func00000000000001b0:                   # @func00000000000001b0
+
+func00000000000001b0:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -39,3 +41,4 @@ func00000000000001b0:                   # @func00000000000001b0
 	addiw	a0, a0, -1177
 	vmacc.vx	v8, a0, v10
 	ret
+

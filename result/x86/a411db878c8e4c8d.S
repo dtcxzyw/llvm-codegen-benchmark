@@ -1,8 +1,8 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	movl	%esi, %eax
-	addl	$53999, %eax                    # imm = 0xD2EF
+	addl	$53999, %eax
 	cltq
-	imulq	$-1688717511, %rax, %rax        # imm = 0x9B583739
+	imulq	$-1688717511, %rax, %rax
 	shrq	$32, %rax
 	leal	53999(%rax,%rsi), %eax
 	movl	%eax, %ecx
@@ -12,7 +12,8 @@ func0000000000000010:                   # @func0000000000000010
 	shll	$12, %eax
 	leal	-1(%rdi,%rax), %eax
 	retq
-func0000000000000090:                   # @func0000000000000090
+
+func0000000000000090:
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -20,3 +21,4 @@ func0000000000000090:                   # @func0000000000000090
 	andl	$-8, %esi
 	leal	-1(%rdi,%rsi), %eax
 	retq
+

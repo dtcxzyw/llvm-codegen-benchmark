@@ -1,6 +1,6 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	movl	%edi, %eax
-	movl	$2938661835, %ecx               # imm = 0xAF286BCB
+	movl	$2938661835, %ecx
 	imulq	%rax, %rcx
 	shrq	$32, %rcx
 	movl	%edi, %eax
@@ -16,3 +16,4 @@ func0000000000000061:                   # @func0000000000000061
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
+

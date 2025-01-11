@@ -1,15 +1,18 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	addl	$4, %edx
 	shlxl	%esi, %edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	addl	$65526, %edx                    # imm = 0xFFF6
+
+func0000000000000040:
+	addl	$65526, %edx
 	shlxl	%esi, %edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
-	addl	$65534, %edx                    # imm = 0xFFFE
+
+func0000000000000020:
+	addl	$65534, %edx
 	shlxl	%esi, %edx, %eax
 	orl	%edi, %eax
 	retq
+

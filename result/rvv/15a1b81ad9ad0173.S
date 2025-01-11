@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	lui	a0, 132
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	lui	a0, 15
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -17,7 +18,8 @@ func0000000000000184:                   # @func0000000000000184
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	lui	a0, 16
 	addi	a0, a0, -256
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -27,7 +29,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vi	v8, v8, 4
 	vmor.mm	v0, v8, v9
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a0, 4096
 	addi	a0, a0, -256
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -38,7 +41,8 @@ func000000000000018c:                   # @func000000000000018c
 	vmsne.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	lui	a0, 256
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -48,7 +52,8 @@ func0000000000000181:                   # @func0000000000000181
 	vmseq.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -57,7 +62,8 @@ func0000000000000024:                   # @func0000000000000024
 	vmsleu.vi	v8, v8, 10
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	lui	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -66,3 +72,4 @@ func0000000000000188:                   # @func0000000000000188
 	vmsgtu.vi	v8, v8, 7
 	vmor.mm	v0, v8, v9
 	ret
+

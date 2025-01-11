@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3f2ac083                      # float 0.666999995
-func000000000000000b:                   # @func000000000000000b
+	.word	0x3f2ac083
+func000000000000000b:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, 258048
@@ -14,9 +14,10 @@ func000000000000000b:                   # @func000000000000000b
 	flt.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
+
 .LCPI1_0:
-	.word	0x3f2ac083                      # float 0.666999995
-func0000000000000002:                   # @func0000000000000002
+	.word	0x3f2ac083
+func0000000000000002:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)
@@ -28,7 +29,8 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 277632
@@ -40,3 +42,4 @@ func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa0, fa5
 	ret
+

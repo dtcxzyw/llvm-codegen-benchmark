@@ -1,4 +1,4 @@
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001aa:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -6,7 +6,8 @@ func00000000000001aa:                   # @func00000000000001aa
 	cmovlel	%edi, %ecx
 	movslq	%ecx, %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -14,7 +15,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmovlel	%edi, %eax
 	cltq
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -22,7 +24,8 @@ func000000000000000a:                   # @func000000000000000a
 	cmovlel	%edi, %eax
 	cltq
 	retq
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -30,7 +33,8 @@ func0000000000000068:                   # @func0000000000000068
 	cmovbel	%edi, %ecx
 	movslq	%ecx, %rax
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -38,3 +42,4 @@ func0000000000000048:                   # @func0000000000000048
 	cmovbel	%edi, %eax
 	cltq
 	retq
+

@@ -1,84 +1,70 @@
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+func0000000000000060:
 	fcmp	s0, s1
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000039:                   // @func0000000000000039
-// %bb.0:                               // %entry
+
+func0000000000000039:
 	fcmp	s0, s1
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	fcmp	s0, s1
 	cinc	w0, w0, mi
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	fcmp	s0, s1
 	cinc	w0, w0, gt
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	fcmp	s0, s1
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	fcmp	s0, s1
 	cinc	w0, w0, gt
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	fcmp	s0, s1
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000053:                   // @func0000000000000053
-// %bb.0:                               // %entry
+
+func0000000000000053:
 	fcmp	s0, s1
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	fcmp	s0, s1
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
+
+func0000000000000011:
 	fcmp	s0, s1
 	cinc	w0, w0, mi
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	fcmp	s0, s1
 	cinc	w0, w0, mi
 	ret
-                                        // -- End function
-func000000000000005b:                   // @func000000000000005b
-// %bb.0:                               // %entry
+
+func000000000000005b:
 	fcmp	s0, s1
 	cinc	w0, w0, le
 	ret
-                                        // -- End function
-func000000000000006b:                   // @func000000000000006b
-// %bb.0:                               // %entry
+
+func000000000000006b:
 	fcmp	s0, s1
 	cinc	w0, w0, pl
 	ret
-                                        // -- End function
-func0000000000000069:                   // @func0000000000000069
-// %bb.0:                               // %entry
+
+func0000000000000069:
 	fcmp	s0, s1
 	cinc	w0, w0, pl
 	ret
-                                        // -- End function
+

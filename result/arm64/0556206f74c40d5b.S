@@ -1,32 +1,28 @@
-func0000000000000047:                   // @func0000000000000047
-// %bb.0:                               // %entry
+func0000000000000047:
 	fcmp	s1, #0.0
 	cset	w8, gt
 	fcmp	s0, #0.0
 	and	w8, w8, w0
 	csel	w0, wzr, w8, eq
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
+
+func0000000000000074:
 	fcmp	s1, #0.0
 	cset	w8, ne
 	fcmp	s0, #0.0
 	and	w8, w8, w0
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
-func0000000000000077:                   // @func0000000000000077
-// %bb.0:                               // %entry
+
+func0000000000000077:
 	fcmp	s1, #0.0
 	cset	w8, ne
 	fcmp	s0, #0.0
 	and	w8, w8, w0
 	csel	w0, wzr, w8, eq
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fmov	s2, #0.75000000
 	fcmp	s1, s2
 	fmov	s1, #0.12500000
@@ -35,9 +31,8 @@ func0000000000000022:                   // @func0000000000000022
 	and	w8, w0, w8
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
-func00000000000000c2:                   // @func00000000000000c2
-// %bb.0:                               // %entry
+
+func00000000000000c2:
 	fmov	s2, #0.12500000
 	fcmp	s1, #0.0
 	cset	w8, ge
@@ -45,18 +40,16 @@ func00000000000000c2:                   // @func00000000000000c2
 	and	w8, w8, w0
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
-func00000000000000c4:                   // @func00000000000000c4
-// %bb.0:                               // %entry
+
+func00000000000000c4:
 	fcmp	s1, #0.0
 	cset	w8, ge
 	fcmp	s0, #0.0
 	and	w8, w8, w0
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	fmov	s2, #1.00000000
 	fcmp	s1, s2
 	fmov	s1, #0.50000000
@@ -65,4 +58,4 @@ func0000000000000024:                   // @func0000000000000024
 	and	w8, w8, w0
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
+

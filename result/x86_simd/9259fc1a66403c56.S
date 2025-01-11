@@ -1,4 +1,4 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	vpslld	$3, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -48,3 +48,4 @@ func0000000000000025:                   # @func0000000000000025
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpslld	$3, %ymm0, %ymm0
 	retq
+

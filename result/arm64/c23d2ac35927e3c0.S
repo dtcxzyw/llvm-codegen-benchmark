@@ -1,8 +1,6 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-                                        // kill: def $w0 killed $w0 def $x0
+func0000000000000001:
+	mov	w8, #2
 	bfxil	x8, x0, #0, #1
 	mov	x0, x8
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func00000000000000cb:                   # @func00000000000000cb
+func00000000000000cb:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpnltq	%ymm1, %ymm0, %k1
@@ -6,7 +6,8 @@ func00000000000000cb:                   # @func00000000000000cb
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpminuq	%ymm2, %ymm1, %ymm1
@@ -14,7 +15,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpminsq	%ymm2, %ymm1, %ymm1
@@ -22,7 +24,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpmaxsq	%ymm2, %ymm1, %ymm1
@@ -30,7 +33,8 @@ func000000000000014a:                   # @func000000000000014a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpneqq	%ymm1, %ymm0, %k1
@@ -38,7 +42,8 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+
+func00000000000000eb:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpnltq	%ymm1, %ymm0, %k1
@@ -46,7 +51,8 @@ func00000000000000eb:                   # @func00000000000000eb
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm0, %k1
@@ -54,3 +60,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

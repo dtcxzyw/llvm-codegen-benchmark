@@ -1,16 +1,18 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andb	$1, %dl
 	xorb	$27, %dl
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andb	$1, %dl
 	xorb	$27, %dl
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	xorl	%eax, %eax
 	testb	$1, %dl
 	sete	%al
@@ -18,7 +20,8 @@ func0000000000000006:                   # @func0000000000000006
 	shlxl	%eax, %esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	testb	$1, %dl
 	movl	$14, %eax
 	movl	$24, %ecx
@@ -26,10 +29,12 @@ func0000000000000005:                   # @func0000000000000005
 	shlxl	%ecx, %esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andb	$1, %dl
 	shlb	$4, %dl
 	orb	$10, %dl
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq
+

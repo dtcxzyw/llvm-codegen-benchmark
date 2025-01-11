@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x7fffffffffffffff
+func0000000000000000:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vbroadcastsd	.LCPI0_0(%rip), %zmm0   # zmm0 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	vbroadcastsd	.LCPI0_0(%rip), %zmm0
 	vandpd	%zmm0, %zmm3, %zmm3
 	vandpd	%zmm0, %zmm4, %zmm4
 	vandpd	%zmm0, %zmm1, %zmm5
@@ -16,12 +16,13 @@ func0000000000000000:                   # @func0000000000000000
 	vmovapd	%zmm5, %zmm3 {%k1}
 	vdivpd	%zmm2, %zmm3, %zmm0
 	retq
+
 .LCPI1_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000003:                   # @func0000000000000003
+	.quad	0x7fffffffffffffff
+func0000000000000003:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vbroadcastsd	.LCPI1_0(%rip), %zmm0   # zmm0 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	vbroadcastsd	.LCPI1_0(%rip), %zmm0
 	vandpd	%zmm0, %zmm3, %zmm3
 	vandpd	%zmm0, %zmm4, %zmm4
 	vandpd	%zmm0, %zmm1, %zmm5
@@ -34,3 +35,4 @@ func0000000000000003:                   # @func0000000000000003
 	vmovapd	%zmm5, %zmm3 {%k1}
 	vdivpd	%zmm2, %zmm3, %zmm0
 	retq
+

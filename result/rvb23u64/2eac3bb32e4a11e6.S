@@ -1,10 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	slli	a1, a1, 44
 	srli	a1, a1, 12
 	add.uw	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	slli	a1, a1, 40
 	lui	a2, 128
 	srli	a1, a1, 21
@@ -13,7 +14,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	slli	a1, a1, 48
 	lui	a2, 4096
 	srli	a1, a1, 45
@@ -23,3 +25,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
+

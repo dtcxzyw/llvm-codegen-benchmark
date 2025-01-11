@@ -1,60 +1,53 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
+func0000000000000028:
+	mov	w8, #4
 	mov	w9, w1
 	movk	w8, #80, lsl #16
 	cmp	x0, x8
-	mov	w8, #1048576                    // =0x100000
+	mov	w8, #1048576
 	csel	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	mov	w8, w1
 	cmp	x0, #1
 	csel	x0, xzr, x8, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	mov	w8, w1
 	cmp	x0, #1
 	csel	x0, xzr, x8, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	lsr	x9, x0, #12
-	mov	w8, #40960                      // =0xa000
+	mov	w8, #40960
 	mov	w10, w1
 	cmp	x9, #4
 	csel	x0, x8, x10, hi
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	lsr	x9, x0, #12
-	mov	w8, #40960                      // =0xa000
+	mov	w8, #40960
 	mov	w10, w1
 	cmp	x9, #4
 	csel	x0, x8, x10, hi
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
-	mov	w8, #1280                       // =0x500
+
+func0000000000000034:
+	mov	w8, #1280
 	mov	w9, w1
 	movk	w8, #160, lsl #16
 	cmp	x0, x8
-	mov	w8, #8192                       // =0x2000
+	mov	w8, #8192
 	csel	x0, x8, x9, lo
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func0000000000000024:
+	mov	w8, #12
 	mov	w9, w1
-	cmp	x0, #4, lsl #12                 // =16384
+	cmp	x0, #4, lsl #12
 	csel	x0, x8, x9, lo
 	ret
-                                        // -- End function
+

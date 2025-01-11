@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setne	%al
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	movl	%esi, %ecx
 	leaq	12(%rcx,%rax), %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	setne	%al
@@ -14,3 +15,4 @@ func0000000000000030:                   # @func0000000000000030
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
+

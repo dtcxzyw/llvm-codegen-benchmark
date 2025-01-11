@@ -1,4 +1,4 @@
-func0000000000000cca:                   # @func0000000000000cca
+func0000000000000cca:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 2
@@ -7,7 +7,8 @@ func0000000000000cca:                   # @func0000000000000cca
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 2
@@ -16,7 +17,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 1
@@ -25,3 +27,4 @@ func000000000000010c:                   # @func000000000000010c
 	snez	a1, a2
 	and	a0, a0, a1
 	ret
+

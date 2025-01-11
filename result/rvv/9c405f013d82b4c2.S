@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.word	0x4423d70a                      # float 655.359985
+	.word	0x4423d70a
 .LCPI0_1:
-	.word	0x477fff00                      # float 65535
-func0000000000000024:                   # @func0000000000000024
+	.word	0x477fff00
+func0000000000000024:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	fli.s	fa4, 1.0
@@ -16,3 +16,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmerge.vim	v8, v8, 0, v0
 	vmfgt.vf	v0, v8, fa4
 	ret
+

@@ -1,10 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	subw	a0, a0, a1
 	slli	a0, a0, 61
 	srli	a0, a0, 63
 	seqz	a0, a0
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	sub	a0, a0, a1
 	lui	a1, 595138
 	srli	a0, a0, 3
@@ -15,3 +16,4 @@ func00000000000000ac:                   # @func00000000000000ac
 	andi	a0, a0, 7
 	snez	a0, a0
 	ret
+

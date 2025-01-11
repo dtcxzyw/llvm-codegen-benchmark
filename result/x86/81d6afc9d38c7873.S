@@ -1,23 +1,25 @@
-func0000000000000a50:                   # @func0000000000000a50
+func0000000000000a50:
 	xorl	%ecx, %ecx
-	cmpl	$65536, %esi                    # imm = 0x10000
+	cmpl	$65536, %esi
 	setb	%cl
 	orq	$-4, %rcx
-	cmpl	$2048, %esi                     # imm = 0x800
+	cmpl	$2048, %esi
 	movq	$-2, %rax
 	cmovaeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000a53:                   # @func0000000000000a53
-	cmpl	$65536, %esi                    # imm = 0x10000
+
+func0000000000000a53:
+	cmpl	$65536, %esi
 	movl	$4, %ecx
 	sbbq	$0, %rcx
-	cmpl	$2048, %esi                     # imm = 0x800
+	cmpl	$2048, %esi
 	movl	$2, %eax
 	cmovaeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000a04:                   # @func0000000000000a04
+
+func0000000000000a04:
 	xorl	%eax, %eax
 	cmpl	$13, %esi
 	setae	%al
@@ -27,12 +29,14 @@ func0000000000000a04:                   # @func0000000000000a04
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000210:                   # @func0000000000000210
-	cmpl	$65536, %esi                    # imm = 0x10000
+
+func0000000000000210:
+	cmpl	$65536, %esi
 	movl	$4, %ecx
 	sbbq	$0, %rcx
-	cmpl	$2048, %esi                     # imm = 0x800
+	cmpl	$2048, %esi
 	movl	$2, %eax
 	cmovaeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

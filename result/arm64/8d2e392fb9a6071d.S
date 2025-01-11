@@ -1,7 +1,6 @@
-func0000000000000264:                   // @func0000000000000264
-// %bb.0:                               // %entry
-	mov	x11, #48771                     // =0xbe83
-	mov	w8, #44939                      // =0xaf8b
+func0000000000000264:
+	mov	x11, #48771
+	mov	w8, #44939
 	lsr	x9, x1, #3
 	movk	x11, #12192, lsl #16
 	asr	x10, x0, #3
@@ -14,11 +13,10 @@ func0000000000000264:                   // @func0000000000000264
 	cmp	x8, x9
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000268:                   // @func0000000000000268
-// %bb.0:                               // %entry
-	mov	x11, #36409                     // =0x8e39
-	mov	w8, #36409                      // =0x8e39
+
+func0000000000000268:
+	mov	x11, #36409
+	mov	w8, #36409
 	lsr	x9, x1, #3
 	movk	x11, #14563, lsl #16
 	asr	x10, x0, #3
@@ -31,12 +29,11 @@ func0000000000000268:                   // @func0000000000000268
 	cmp	x8, x9
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+
+func0000000000000068:
+	mov	x8, #-6148914691236517206
 	asr	x9, x0, #5
-	mov	x10, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
+	mov	x10, #-6148914691236517206
 	eor	x8, x8, #0x8000000000000001
 	movk	x10, #43691
 	smulh	x8, x1, x8
@@ -48,12 +45,11 @@ func0000000000000068:                   // @func0000000000000068
 	cmp	x8, x9
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000064:                   // @func0000000000000064
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+
+func0000000000000064:
+	mov	x8, #-6148914691236517206
 	asr	x9, x0, #5
-	mov	x10, #-6148914691236517206      // =0xaaaaaaaaaaaaaaaa
+	mov	x10, #-6148914691236517206
 	eor	x8, x8, #0x8000000000000001
 	movk	x10, #43691
 	smulh	x8, x1, x8
@@ -65,4 +61,4 @@ func0000000000000064:                   // @func0000000000000064
 	cmp	x8, x9
 	cset	w0, lo
 	ret
-                                        // -- End function
+

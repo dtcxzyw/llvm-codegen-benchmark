@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	or	a3, a3, a4
 	srl	a1, a2, a0
 	not	a2, a0
@@ -13,3 +13,4 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a2
 	czero.eqz	a1, a5, a4
 	ret
+

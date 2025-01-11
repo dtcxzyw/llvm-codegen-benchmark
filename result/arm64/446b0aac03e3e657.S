@@ -1,7 +1,4 @@
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-                                        // kill: def $w1 killed $w1 def $x1
+func00000000000001e1:
 	and	x8, x2, #0xffff
 	and	x9, x1, #0xffff
 	add	x8, x8, #1
@@ -9,11 +6,8 @@ func00000000000001e1:                   // @func00000000000001e1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000004e1:                   // @func00000000000004e1
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-                                        // kill: def $w1 killed $w1 def $x1
+
+func00000000000004e1:
 	and	x8, x2, #0xffff
 	and	x9, x1, #0xffff
 	sub	x8, x8, #1
@@ -21,11 +15,8 @@ func00000000000004e1:                   // @func00000000000004e1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000181:
 	and	x8, x2, #0xffff
 	and	x9, x1, #0xffff
 	add	x8, x8, #1
@@ -33,4 +24,4 @@ func0000000000000181:                   // @func0000000000000181
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

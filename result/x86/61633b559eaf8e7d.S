@@ -1,4 +1,4 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002e:
 	xorl	%eax, %eax
 	cmpb	$103, %dl
 	setne	%al
@@ -8,7 +8,8 @@ func000000000000002e:                   # @func000000000000002e
 	addq	%rdi, %rcx
 	leaq	-32(%rax,%rcx), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	cmpb	$-119, %dl
 	movl	%esi, %eax
 	leaq	(%rax,%rax,8), %rax
@@ -16,7 +17,8 @@ func000000000000003e:                   # @func000000000000003e
 	leaq	-36(%rdi,%rax,4), %rax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	shlq	$4, %rax
@@ -25,3 +27,4 @@ func0000000000000030:                   # @func0000000000000030
 	leaq	-160(%rdi,%rax), %rax
 	cmoveq	%rcx, %rax
 	retq
+

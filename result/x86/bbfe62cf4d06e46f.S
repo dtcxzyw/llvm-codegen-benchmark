@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	andl	$-33, %edx
 	addl	$-65, %edx
 	cmpl	$26, %edx
@@ -6,3 +6,4 @@ func0000000000000048:                   # @func0000000000000048
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+

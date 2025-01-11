@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	movl	%edx, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -6,7 +6,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%edx, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -14,3 +15,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
+

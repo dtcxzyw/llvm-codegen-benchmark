@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	sarq	$3, %rdx
 	cmpq	$1, %rdx
 	adcq	$0, %rdx
@@ -6,3 +6,4 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	andb	%dil, %al
 	retq
+

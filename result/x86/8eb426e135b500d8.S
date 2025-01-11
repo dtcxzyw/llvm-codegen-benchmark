@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000022:
 	shrq	$2, %rdx
 	andl	$1, %esi
 	leaq	(%rdx,%rdx,2), %rax
@@ -7,3 +7,4 @@ func0000000000000022:                   # @func0000000000000022
 	shll	$6, %esi
 	subq	%rsi, %rax
 	retq
+

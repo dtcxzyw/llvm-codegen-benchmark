@@ -1,56 +1,48 @@
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+func0000000000000026:
 	cmp	x1, x2
 	cset	w8, lt
 	sub	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	cmp	x1, x2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	cmp	x1, x2
 	cset	w8, eq
 	sub	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	cmp	x1, x2
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	add	w8, w0, #8
 	cmp	x1, x2
 	csel	w0, w0, w8, eq
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	mov	w8, #55296                      // =0xd800
+
+func0000000000000007:
+	mov	w8, #55296
 	cmp	x1, x2
 	movk	w8, #4500, lsl #16
 	add	w8, w0, w8
 	csel	w0, w0, w8, gt
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	cmp	x1, x2
 	cset	w8, hi
 	sub	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	add	w8, w0, #50
 	cmp	x1, x2
 	csel	w0, w8, w0, lo
 	ret
-                                        // -- End function
+

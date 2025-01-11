@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	sext.w	a1, a0
 	li	a2, 63
 	blt	a2, a1, .LBB0_2
@@ -8,3 +8,4 @@ func00000000000000aa:                   # @func00000000000000aa
 .LBB0_2:
 	addiw	a0, a0, -64
 	ret
+

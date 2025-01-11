@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	testq	%rsi, %rsi
 	setne	%al
 	testq	%rdi, %rdi
@@ -8,3 +8,4 @@ func0000000000000302:                   # @func0000000000000302
 	negl	%eax
 	orl	$114, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
 	cqto
@@ -21,7 +21,7 @@ func0000000000000000:                   # @func0000000000000000
 	cqto
 	idivq	%r8
 	movq	%rax, %r8
-	movabsq	$7378697629483820647, %r9       # imm = 0x6666666666666667
+	movabsq	$7378697629483820647, %r9
 	imulq	%r9
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -41,7 +41,7 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rdx,%rdx,4), %rax
 	subq	%rax, %rdi
 	vmovq	%rdi, %xmm1
-	vpunpcklqdq	%xmm0, %xmm1, %xmm0     # xmm0 = xmm1[0],xmm0[0]
+	vpunpcklqdq	%xmm0, %xmm1, %xmm0
 	movq	%rsi, %rax
 	imulq	%r9
 	movq	%rdx, %rax
@@ -62,6 +62,7 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rdx,%rdx,4), %rax
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	retq
+

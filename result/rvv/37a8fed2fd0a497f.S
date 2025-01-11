@@ -1,4 +1,4 @@
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000000d5:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, -100
@@ -12,7 +12,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 150
@@ -25,7 +26,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 3
@@ -38,7 +40,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000001f5:                   # @func00000000000001f5
+
+func00000000000001f5:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 10
@@ -52,7 +55,8 @@ func00000000000001f5:                   # @func00000000000001f5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	li	a0, 1260
@@ -67,7 +71,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 65536
@@ -78,7 +83,8 @@ func0000000000000000:                   # @func0000000000000000
 	bseti	a0, zero, 11
 	vadd.vx	v8, v10, a0
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 65462
@@ -90,3 +96,4 @@ func0000000000000030:                   # @func0000000000000030
 	lui	a0, 32896
 	vadd.vx	v8, v10, a0
 	ret
+

@@ -1,9 +1,8 @@
 .LCPI0_0:
-	.xword	0x3d719799812dea11              // double 9.9999999999999998E-13
+	.xword	0x3d719799812dea11
 .LCPI0_1:
-	.xword	0x400921fb54442d18              // double 3.1415926535897931
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+	.xword	0x400921fb54442d18
+func0000000000000024:
 	adrp	x8, .LCPI0_0
 	fabs	d1, d1
 	ldr	d2, [x8, :lo12:.LCPI0_0]
@@ -15,13 +14,12 @@ func0000000000000024:                   // @func0000000000000024
 	csel	w8, wzr, w8, pl
 	and	w0, w8, w0
 	ret
-                                        // -- End function
+
 .LCPI1_0:
-	.xword	0x406573fae561f647              // double 171.62437695630271
+	.xword	0x406573fae561f647
 .LCPI1_1:
-	.xword	0x40862e42fefa39ef              // double 709.78271289338397
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+	.xword	0x40862e42fefa39ef
+func0000000000000022:
 	adrp	x8, .LCPI1_0
 	fabs	d1, d1
 	ldr	d2, [x8, :lo12:.LCPI1_0]
@@ -33,4 +31,4 @@ func0000000000000022:                   // @func0000000000000022
 	csel	w8, wzr, w8, pl
 	and	w0, w8, w0
 	ret
-                                        // -- End function
+

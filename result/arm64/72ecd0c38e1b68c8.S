@@ -1,5 +1,4 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+func0000000000000028:
 	fcmp	s0, s1
 	fcsel	s0, s0, s1, mi
 	fcmp	s0, #0.0
@@ -7,9 +6,8 @@ func0000000000000028:                   // @func0000000000000028
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	fcmp	s0, s1
 	fcsel	s0, s0, s1, mi
 	fcmp	s0, #0.0
@@ -17,4 +15,4 @@ func000000000000002a:                   // @func000000000000002a
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

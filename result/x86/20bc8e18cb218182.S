@@ -1,4 +1,4 @@
-func0000000000000090:                   # @func0000000000000090
+func0000000000000090:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	movq	%rsi, %rcx
@@ -8,3 +8,4 @@ func0000000000000090:                   # @func0000000000000090
 	subq	%rcx, %rdi
 	cmovaeq	%rdi, %rax
 	retq
+

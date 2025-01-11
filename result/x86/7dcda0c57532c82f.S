@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$17, %eax
 	movl	$16, %ecx
@@ -9,3 +9,4 @@ func000000000000008a:                   # @func000000000000008a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
+

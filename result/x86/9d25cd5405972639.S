@@ -1,4 +1,4 @@
-func0000000000000650:                   # @func0000000000000650
+func0000000000000650:
 	testq	%rdx, %rdx
 	sets	%al
 	testq	%rsi, %rsi
@@ -7,7 +7,8 @@ func0000000000000650:                   # @func0000000000000650
 	movzbl	%cl, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000a31:                   # @func0000000000000a31
+
+func0000000000000a31:
 	testq	%rdx, %rdx
 	setg	%al
 	cmpq	$-59, %rsi
@@ -16,7 +17,8 @@ func0000000000000a31:                   # @func0000000000000a31
 	movzbl	%cl, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000c60:                   # @func0000000000000c60
+
+func0000000000000c60:
 	cmpq	$60, %rdx
 	setne	%al
 	cmpq	$62, %rsi
@@ -25,3 +27,4 @@ func0000000000000c60:                   # @func0000000000000c60
 	movzbl	%cl, %eax
 	addq	%rdi, %rax
 	retq
+

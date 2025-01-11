@@ -1,5 +1,4 @@
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+func0000000000000019:
 	sub	x8, x1, x2
 	add	x9, x0, #1
 	asr	x8, x8, #2
@@ -7,9 +6,8 @@ func0000000000000019:                   // @func0000000000000019
 	csinc	x9, x8, x0, ls
 	add	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000039:                   // @func0000000000000039
-// %bb.0:                               // %entry
+
+func0000000000000039:
 	sub	x8, x1, x2
 	add	x9, x0, #1
 	asr	x8, x8, #5
@@ -17,9 +15,8 @@ func0000000000000039:                   // @func0000000000000039
 	csinc	x9, x8, x0, hi
 	add	x0, x9, x8
 	ret
-                                        // -- End function
-func000000000000003b:                   // @func000000000000003b
-// %bb.0:                               // %entry
+
+func000000000000003b:
 	sub	x8, x1, x2
 	add	x9, x0, #1
 	asr	x8, x8, #2
@@ -27,9 +24,8 @@ func000000000000003b:                   // @func000000000000003b
 	csinc	x9, x8, x0, hi
 	add	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	sub	x8, x1, x2
 	add	x9, x0, #1
 	asr	x8, x8, #4
@@ -37,4 +33,4 @@ func0000000000000008:                   // @func0000000000000008
 	csinc	x9, x8, x0, hi
 	add	x0, x9, x8
 	ret
-                                        // -- End function
+

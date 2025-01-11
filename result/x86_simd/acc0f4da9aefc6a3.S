@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -7,24 +7,25 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-func000000000000000c:                   # @func000000000000000c
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+func000000000000000c:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -33,3 +34,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

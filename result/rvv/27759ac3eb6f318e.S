@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	lui	a0, 16
@@ -7,7 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vv	v8, v10, v8
 	vor.vi	v8, v8, 1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 20
 	li	a0, -1
@@ -16,7 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 20
 	li	a0, -1
@@ -25,9 +27,10 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 2
 	ret
+
 .LCPI3_0:
-	.quad	3472327196715986992             # 0x30302f30302f3030
-func000000000000000b:                   # @func000000000000000b
+	.quad	3472327196715986992
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	lui	a0, 61440
@@ -41,7 +44,8 @@ func000000000000000b:                   # @func000000000000000b
 	vor.vv	v8, v10, v8
 	vor.vx	v8, v8, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a0, 37
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
@@ -51,7 +55,8 @@ func000000000000000c:                   # @func000000000000000c
 	bseti	a0, zero, 38
 	vor.vx	v8, v8, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	lui	a0, 128
@@ -60,3 +65,4 @@ func000000000000000f:                   # @func000000000000000f
 	vor.vv	v8, v10, v8
 	vor.vi	v8, v8, 2
 	ret
+

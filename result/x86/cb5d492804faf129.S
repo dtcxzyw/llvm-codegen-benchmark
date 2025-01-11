@@ -1,6 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
-	imulq	$16807, %rdi, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+func0000000000000001:
+	imulq	$16807, %rdi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -13,9 +13,10 @@ func0000000000000001:                   # @func0000000000000001
 	notq	%rax
 	addq	%rdx, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	imulq	$16807, %rdi, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func000000000000000d:
+	imulq	$16807, %rdi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -28,9 +29,10 @@ func000000000000000d:                   # @func000000000000000d
 	notq	%rax
 	addq	%rdx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	imulq	$48271, %rdi, %rdx              # imm = 0xBC8F
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func0000000000000005:
+	imulq	$48271, %rdi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -43,3 +45,4 @@ func0000000000000005:                   # @func0000000000000005
 	notq	%rax
 	addq	%rdx, %rax
 	retq
+

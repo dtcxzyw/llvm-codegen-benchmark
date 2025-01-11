@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	fli.s	fa5, 1.0
 	lui	a0, 276464
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+

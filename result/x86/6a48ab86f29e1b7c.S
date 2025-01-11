@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	leaq	(,%rdx,8), %rax
 	subq	%rdx, %rax
 	leaq	(%rsi,%rax), %rcx
@@ -6,10 +6,12 @@ func0000000000000015:                   # @func0000000000000015
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	imulq	$-12211, %rdx, %rax             # imm = 0xD04D
+
+func0000000000000011:
+	imulq	$-12211, %rdx, %rax
 	leaq	(%rsi,%rax), %rcx
 	leaq	2147483563(%rsi,%rax), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

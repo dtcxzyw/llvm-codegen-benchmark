@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vxor.vx	v12, v12, a0
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	li	a0, 257
 	vmul.vx	v8, v12, a0
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vxor.vx	v12, v12, a0
@@ -15,7 +16,8 @@ func000000000000003e:                   # @func000000000000003e
 	addi	a0, a0, 129
 	vmul.vx	v8, v12, a0
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vxor.vx	v12, v12, a0
@@ -23,3 +25,4 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 257
 	vmul.vx	v8, v12, a0
 	ret
+

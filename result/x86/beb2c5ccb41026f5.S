@@ -1,8 +1,9 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000038:
 	testb	$1, %dil
-	movl	$65520, %ecx                    # imm = 0xFFF0
+	movl	$65520, %ecx
 	cmovneq	%rsi, %rcx
 	leaq	-65521(%rcx), %rax
-	cmpq	$65521, %rcx                    # imm = 0xFFF1
+	cmpq	$65521, %rcx
 	cmovbq	%rcx, %rax
 	retq
+

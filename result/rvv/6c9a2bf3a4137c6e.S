@@ -1,4 +1,4 @@
-func00000000000001ec:                   # @func00000000000001ec
+func00000000000001ec:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -11,7 +11,8 @@ func00000000000001ec:                   # @func00000000000001ec
 	srli	a0, a0, 32
 	vmsne.vx	v0, v8, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vwsll.vi	v14, v13, 24
@@ -20,7 +21,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	vor.vv	v8, v8, v14
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -33,7 +35,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vwsll.vi	v14, v13, 24
@@ -42,3 +45,4 @@ func00000000000001f4:                   # @func00000000000001f4
 	vor.vv	v8, v14, v8
 	vmsleu.vi	v0, v8, 7
 	ret
+

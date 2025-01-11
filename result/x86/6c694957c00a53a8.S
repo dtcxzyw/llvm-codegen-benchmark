@@ -1,8 +1,8 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	movl	%esi, %eax
 	addl	$30, %eax
 	cltq
-	imulq	$-2004318071, %rax, %rax        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rax
 	shrq	$32, %rax
 	leal	30(%rax,%rsi), %eax
 	movl	%eax, %ecx
@@ -10,7 +10,7 @@ func000000000000008c:                   # @func000000000000008c
 	sarl	$5, %eax
 	addl	%ecx, %eax
 	cltq
-	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rcx
 	shrq	$32, %rcx
 	addl	%eax, %ecx
 	movl	%ecx, %edx
@@ -22,3 +22,4 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	orb	%dil, %al
 	retq
+

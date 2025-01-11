@@ -1,4 +1,4 @@
-func00000000000000ff:                   # @func00000000000000ff
+func00000000000000ff:
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,8), %rcx
 	leaq	(%rcx,%rcx,2), %rcx
@@ -7,3 +7,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	imulq	$150, %rdi, %rcx
 	leaq	128(%rcx,%rax), %rax
 	retq
+

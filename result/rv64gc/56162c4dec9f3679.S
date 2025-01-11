@@ -1,4 +1,4 @@
-func000000000000042c:                   # @func000000000000042c
+func000000000000042c:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	srai	a1, a1, 2
@@ -8,7 +8,8 @@ func000000000000042c:                   # @func000000000000042c
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000428:                   # @func0000000000000428
+
+func0000000000000428:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	srai	a1, a1, 2
@@ -18,3 +19,4 @@ func0000000000000428:                   # @func0000000000000428
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

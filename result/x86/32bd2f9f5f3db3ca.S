@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andb	$1, %sil
 	xorl	%eax, %eax
 	cmpb	$1, %sil
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andb	$1, %sil
 	xorl	%eax, %eax
 	cmpb	$1, %sil
@@ -16,13 +17,15 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andb	$1, %sil
 	xorl	%eax, %eax
 	cmpb	$1, %sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
 	andq	%rdi, %rax
-	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rax
 	setb	%al
 	retq
+

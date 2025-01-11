@@ -1,7 +1,6 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	fmul	d0, d0, d1
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	fmov	x8, d0
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -9,11 +8,10 @@ func000000000000000c:                   // @func000000000000000c
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fmul	d0, d0, d1
-	mov	x8, #158329674399744            // =0x900000000000
+	mov	x8, #158329674399744
 	movk	x8, #14875, lsl #48
 	fmov	d1, x8
 	fabs	d0, d0
@@ -22,11 +20,10 @@ func0000000000000004:                   // @func0000000000000004
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	fmul	d0, d0, d1
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	fmov	x8, d0
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -34,11 +31,10 @@ func0000000000000010:                   // @func0000000000000010
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+
+func000000000000000e:
 	fmul	d0, d0, d1
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	fmov	x8, d0
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -46,11 +42,10 @@ func000000000000000e:                   // @func000000000000000e
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmul	d0, d0, d1
-	mov	x8, #70368744177664             // =0x400000000000
+	mov	x8, #70368744177664
 	movk	x8, #16527, lsl #48
 	fmov	d1, x8
 	fabs	d0, d0
@@ -59,11 +54,10 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	fmul	d0, d0, d1
-	mov	x9, #9218868437227405311        // =0x7fefffffffffffff
+	mov	x9, #9218868437227405311
 	fmov	x8, d0
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
@@ -71,4 +65,4 @@ func0000000000000012:                   // @func0000000000000012
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

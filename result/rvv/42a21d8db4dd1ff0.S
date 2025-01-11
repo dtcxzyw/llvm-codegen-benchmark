@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	lui	a0, 526344
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -8,7 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a0, 526344
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -18,7 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 526344
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -28,7 +30,8 @@ func0000000000000005:                   # @func0000000000000005
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	lui	a0, 526344
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -38,7 +41,8 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -48,3 +52,4 @@ func0000000000000004:                   # @func0000000000000004
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	fmv.d.x	fa5, zero
 	slli	a0, a0, 63
 	flt.d	a1, fa0, fa5
@@ -7,9 +7,10 @@ func0000000000000002:                   # @func0000000000000002
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	0x41e0000000000000              # double 2147483648
-func000000000000000c:                   # @func000000000000000c
+	.quad	0x41e0000000000000
+func000000000000000c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	li	a0, 1
@@ -20,7 +21,8 @@ func000000000000000c:                   # @func000000000000000c
 	fle.d	a0, fa5, fa0
 	slli	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	fmv.d.x	fa5, zero
 	li	a1, 2
 	slli	a0, a0, 63
@@ -29,3 +31,4 @@ func0000000000000004:                   # @func0000000000000004
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
+

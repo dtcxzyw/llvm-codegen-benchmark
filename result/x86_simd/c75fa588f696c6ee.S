@@ -1,5 +1,5 @@
-func0000000000000002:                   # @func0000000000000002
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+func0000000000000002:
+	vpmovzxbd	%xmm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -46,8 +46,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+
+func0000000000000000:
+	vpmovzxbd	%xmm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -94,3 +95,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

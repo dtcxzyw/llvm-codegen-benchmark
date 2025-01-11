@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	fli.d	fa5, 1.0
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfrdiv.vf	v12, v12, fa5
@@ -7,3 +7,4 @@ func0000000000000000:                   # @func0000000000000000
 	vfcvt.f.x.v	v8, v8
 	vfmul.vv	v8, v8, v10
 	ret
+

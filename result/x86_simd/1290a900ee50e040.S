@@ -1,37 +1,41 @@
 .LCPI0_0:
-	.long	15                              # 0xf
+	.long	15
 .LCPI0_1:
-	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+	.long	1
+func0000000000000021:
 	vptestmd	%ymm0, %ymm0, %k1
-	vbroadcastss	.LCPI0_0(%rip), %ymm0   # ymm0 = [15,15,15,15,15,15,15,15]
+	vbroadcastss	.LCPI0_0(%rip), %ymm0
 	vorps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI1_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI1_2:
-	.long	8                               # 0x8
-func0000000000000001:                   # @func0000000000000001
+	.long	8
+func0000000000000001:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
-	vbroadcastss	.LCPI1_1(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
+	vbroadcastss	.LCPI1_1(%rip), %ymm0
 	vorps	.LCPI1_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.long	2                               # 0x2
-func0000000000000026:                   # @func0000000000000026
+	.long	2
+func0000000000000026:
 	vpsrad	$31, %ymm0, %ymm0
-	vpternlogd	$14, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ~ymm0 & (ymm1 | mem)
+	vpternlogd	$14, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	10000                           # 0x2710
+	.long	10000
 .LCPI3_1:
-	.long	6144                            # 0x1800
+	.long	6144
 .LCPI3_2:
-	.long	2048                            # 0x800
-func0000000000000004:                   # @func0000000000000004
+	.long	2048
+func0000000000000004:
 	vpcmpnltud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	vbroadcastss	.LCPI3_1(%rip), %ymm0   # ymm0 = [6144,6144,6144,6144,6144,6144,6144,6144]
+	vbroadcastss	.LCPI3_1(%rip), %ymm0
 	vorps	.LCPI3_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	lui	a0, 128
 	addi	a0, a0, -8
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -9,7 +9,8 @@ func000000000000001b:                   # @func000000000000001b
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 16
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,7 +21,8 @@ func0000000000000005:                   # @func0000000000000005
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 30
 	lui	a0, 258048
@@ -30,7 +32,8 @@ func0000000000000007:                   # @func0000000000000007
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 16
 	lui	a0, 1048560
@@ -40,7 +43,8 @@ func0000000000000001:                   # @func0000000000000001
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 12
 	li	a0, 31
@@ -51,7 +55,8 @@ func0000000000000004:                   # @func0000000000000004
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 3
 	li	a0, -57
@@ -61,7 +66,8 @@ func0000000000000009:                   # @func0000000000000009
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 7
 	lui	a0, 983548
@@ -72,3 +78,4 @@ func000000000000001d:                   # @func000000000000001d
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
+

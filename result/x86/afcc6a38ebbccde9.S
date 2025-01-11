@@ -1,4 +1,4 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000001f4:
 	incl	%esi
 	cmpl	$32, %esi
 	movl	$32, %eax
@@ -7,12 +7,14 @@ func00000000000001f4:                   # @func00000000000001f4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	incl	%esi
-	cmpl	$273, %esi                      # imm = 0x111
-	movl	$273, %eax                      # imm = 0x111
+	cmpl	$273, %esi
+	movl	$273, %eax
 	cmovbl	%esi, %eax
 	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

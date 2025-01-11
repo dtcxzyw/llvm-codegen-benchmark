@@ -1,4 +1,4 @@
-func00000000000000f0:                   # @func00000000000000f0
+func00000000000000f0:
 	andi	a3, a0, 1
 	slli	a1, a1, 3
 	lui	a0, 4
@@ -12,7 +12,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	andi	a3, a0, 1
 	slli	a0, a1, 3
 	bnez	a3, .LBB1_2
@@ -25,7 +26,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+
+func00000000000000fa:
 	andi	a3, a0, 1
 	slli	a0, a1, 3
 	bnez	a3, .LBB2_2
@@ -38,3 +40,4 @@ func00000000000000fa:                   # @func00000000000000fa
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

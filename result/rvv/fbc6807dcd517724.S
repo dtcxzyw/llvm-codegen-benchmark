@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
 	vsub.vv	v8, v8, v10
@@ -8,7 +8,8 @@ func000000000000001d:                   # @func000000000000001d
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
@@ -18,9 +19,10 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
 	ret
+
 .LCPI2_0:
-	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
-func0000000000000000:                   # @func0000000000000000
+	.quad	2361183241434822607
+func0000000000000000:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -32,7 +34,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsub.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
@@ -42,7 +45,8 @@ func0000000000000015:                   # @func0000000000000015
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
@@ -52,7 +56,8 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
@@ -62,7 +67,8 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
@@ -72,3 +78,4 @@ func0000000000000011:                   # @func0000000000000011
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
 	ret
+

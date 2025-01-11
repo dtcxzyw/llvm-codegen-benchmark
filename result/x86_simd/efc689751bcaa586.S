@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	48                              # 0x30
+	.long	48
 .LCPI0_1:
-	.long	8                               # 0x8
-func0000000000000024:                   # @func0000000000000024
+	.long	8
+func0000000000000024:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0
@@ -11,21 +11,23 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
-func000000000000004c:                   # @func000000000000004c
+	.long	1
+func000000000000004c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
+	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	67108863                        # 0x3ffffff
+	.long	67108863
 .LCPI2_1:
-	.long	2                               # 0x2
-func0000000000000028:                   # @func0000000000000028
+	.long	2
+func0000000000000028:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm0
@@ -34,3 +36,4 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,6 +1,6 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	vpmovqd	%ymm2, %xmm2
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2 # xmm2 = ~xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm2, %eax
 	xorl	%edx, %edx
@@ -26,3 +26,4 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

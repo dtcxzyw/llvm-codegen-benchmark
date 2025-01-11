@@ -1,12 +1,15 @@
-func0000000000000001:                   # @func0000000000000001
-	andl	$-385, %edi                     # imm = 0xFE7F
+func0000000000000001:
+	andl	$-385, %edi
 	leal	128(%rdi), %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	andl	$4095, %edi                     # imm = 0xFFF
+
+func0000000000000007:
+	andl	$4095, %edi
 	leal	32768(%rdi), %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	andl	$-32768, %edi                   # imm = 0x8000
+
+func0000000000000005:
+	andl	$-32768, %edi
 	leal	31744(%rdi), %eax
 	retq
+

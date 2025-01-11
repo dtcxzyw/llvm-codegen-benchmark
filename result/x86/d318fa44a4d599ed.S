@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -9,7 +9,8 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	andl	$1, %esi
 	decl	%esi
 	orl	$10, %esi
@@ -19,3 +20,4 @@ func000000000000004c:                   # @func000000000000004c
 	sets	%al
 	orb	%cl, %al
 	retq
+

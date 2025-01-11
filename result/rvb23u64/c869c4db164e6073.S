@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
@@ -9,3 +9,4 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
+

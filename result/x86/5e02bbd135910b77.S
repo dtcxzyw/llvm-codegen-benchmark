@@ -1,58 +1,67 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	movzbl	%sil, %eax
-	andl	$1920, %edi                     # imm = 0x780
+	andl	$1920, %edi
 	orl	%eax, %edi
 	cmpl	$128, %edi
 	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	movzbl	%sil, %eax
-	andl	$32512, %edi                    # imm = 0x7F00
+	andl	$32512, %edi
 	orl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movzbl	%sil, %eax
-	andl	$3840, %edi                     # imm = 0xF00
+	andl	$3840, %edi
 	orl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	movzbl	%sil, %eax
 	andl	$48, %edi
 	orl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	movzbl	%sil, %eax
-	andl	$1984, %edi                     # imm = 0x7C0
+	andl	$1984, %edi
 	orl	%eax, %edi
 	cmpl	$32, %edi
 	setb	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	movzbl	%sil, %eax
 	andl	$1, %edi
 	orl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+
+func0000000000000078:
 	movzbl	%sil, %eax
 	andl	$8, %edi
 	orl	%eax, %edi
 	cmpl	$2, %edi
 	setae	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	movzbl	%sil, %eax
 	andl	$32, %edi
 	orl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movzbl	%sil, %eax
 	andl	$128, %edi
 	orl	%eax, %edi
 	cmpl	$127, %edi
 	sete	%al
 	retq
+

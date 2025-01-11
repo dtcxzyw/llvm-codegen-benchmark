@@ -1,4 +1,4 @@
-func00000000000002aa:                   # @func00000000000002aa
+func00000000000002aa:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	li	a0, 10
@@ -8,7 +8,8 @@ func00000000000002aa:                   # @func00000000000002aa
 	vadd.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 12
 	ret
-func00000000000002a6:                   # @func00000000000002a6
+
+func00000000000002a6:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	li	a0, 10
@@ -19,7 +20,8 @@ func00000000000002a6:                   # @func00000000000002a6
 	li	a0, 60
 	vmslt.vx	v0, v8, a0
 	ret
-func00000000000002a4:                   # @func00000000000002a4
+
+func00000000000002a4:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	li	a0, 10
@@ -30,3 +32,4 @@ func00000000000002a4:                   # @func00000000000002a4
 	li	a0, -32
 	vmsltu.vx	v0, v8, a0
 	ret
+

@@ -1,64 +1,53 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	neg	w0, w0, lsl #3
 	ret
-                                        // -- End function
-func000000000000003d:                   // @func000000000000003d
-// %bb.0:                               // %entry
-	mov	w8, #64                         // =0x40
+
+func000000000000003d:
+	mov	w8, #64
 	sub	w0, w8, w0, lsl #3
 	ret
-                                        // -- End function
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-	mov	w8, #128                        // =0x80
+
+func000000000000003f:
+	mov	w8, #128
 	sub	w0, w8, w0, lsl #3
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	mvn	w8, w0
 	lsl	w0, w8, #4
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
+
+func000000000000002f:
+	mov	w8, #24
 	sub	w0, w8, w0, lsl #3
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
-	mov	w8, #128                        // =0x80
+
+func0000000000000035:
+	mov	w8, #128
 	sub	w0, w8, w0, lsl #4
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	w8, #1280                       // =0x500
+
+func000000000000000d:
+	mov	w8, #1280
 	sub	w0, w8, w0, lsl #8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #1535                       // =0x5ff
+
+func0000000000000001:
+	mov	w8, #1535
 	sub	w0, w8, w0, lsl #6
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
+
+func0000000000000009:
+	mov	w8, #7
 	sub	w0, w8, w0, lsl #1
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-	mov	w8, #32                         // =0x20
+
+func0000000000000010:
+	mov	w8, #32
 	sub	w0, w8, w0, lsl #3
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	neg	w0, w0, lsl #2
 	ret
-                                        // -- End function
+

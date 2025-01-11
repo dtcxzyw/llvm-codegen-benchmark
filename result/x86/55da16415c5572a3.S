@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	lzcntq	%rsi, %rax
 	notb	%al
 	movl	$8, %ecx
@@ -7,7 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$16, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	lzcntq	%rsi, %rax
 	notb	%al
 	movl	$1, %ecx
@@ -16,7 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andb	$1, %dil
 	lzcntq	%rsi, %rax
 	notb	%al
@@ -27,3 +29,4 @@ func000000000000000e:                   # @func000000000000000e
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

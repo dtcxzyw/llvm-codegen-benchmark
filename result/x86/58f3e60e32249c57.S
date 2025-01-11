@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andl	$7, %edi
 	xorl	%ecx, %ecx
 	cmpl	$1, %edi
@@ -8,3 +8,4 @@ func0000000000000021:                   # @func0000000000000021
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
+

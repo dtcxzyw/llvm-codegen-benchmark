@@ -1,13 +1,14 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpcmpnleud	%ymm2, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpxor	%ymm1, %ymm2, %ymm0
@@ -17,9 +18,10 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	2147483647                      # 0x7fffffff
-func000000000000000c:                   # @func000000000000000c
+	.long	2147483647
+func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpxord	.LCPI2_0(%rip){1to8}, %ymm2, %ymm0
@@ -28,3 +30,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

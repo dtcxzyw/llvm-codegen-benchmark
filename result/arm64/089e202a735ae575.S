@@ -1,76 +1,67 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	x8, #1                          // =0x1
+func0000000000000024:
+	mov	x8, #1
 	mov	w9, w1
 	movk	x8, #16384, lsl #48
 	orr	x9, x0, x9
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
-	mov	x8, #1                          // =0x1
+
+func0000000000000026:
+	mov	x8, #1
 	mov	w9, w1
 	movk	x8, #16384, lsl #48
 	orr	x9, x0, x9
 	cmp	x9, x8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #2
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #511
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	mov	w8, w1
 	orr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
+

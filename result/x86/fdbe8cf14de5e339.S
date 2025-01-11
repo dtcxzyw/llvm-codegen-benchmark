@@ -1,7 +1,8 @@
-func00000000000001f3:                   # @func00000000000001f3
+func00000000000001f3:
 	incl	%esi
 	vcvtsi2ss	%esi, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setb	%al
 	orb	%dil, %al
 	retq
+

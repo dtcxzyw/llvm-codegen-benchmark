@@ -1,4 +1,4 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000059:
 	sarq	$2, %rsi
 	leaq	1(%rsi), %rax
 	sarq	$2, %rdi
@@ -6,3 +6,4 @@ func0000000000000059:                   # @func0000000000000059
 	cmovbeq	%rdi, %rax
 	addq	%rdi, %rax
 	retq
+

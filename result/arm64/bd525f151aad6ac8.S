@@ -1,70 +1,50 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+func000000000000001a:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	sub	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+
+func000000000000001b:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	add	x8, x1, #1
 	udiv	x0, x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

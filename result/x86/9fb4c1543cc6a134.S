@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andl	$1, %edx
 	negl	%edx
 	cmpl	%edx, %esi
@@ -6,3 +6,4 @@ func0000000000000021:                   # @func0000000000000021
 	notb	%dil
 	andb	%dil, %al
 	retq
+

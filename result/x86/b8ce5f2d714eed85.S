@@ -1,9 +1,11 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	addq	%rdx, %rsi
 	leaq	-1(%rdi,%rsi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	(%rsi,%rdx), %rax
 	addq	%rdi, %rax
-	subq	$-2147483648, %rax              # imm = 0x80000000
+	subq	$-2147483648, %rax
 	retq
+

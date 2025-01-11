@@ -1,13 +1,14 @@
-func0000000000000c84:                   # @func0000000000000c84
+func0000000000000c84:
 	addq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
 	movzwl	%di, %eax
-	cmpl	$56320, %eax                    # imm = 0xDC00
+	cmpl	$56320, %eax
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000c81:                   # @func0000000000000c81
+
+func0000000000000c81:
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -15,3 +16,4 @@ func0000000000000c81:                   # @func0000000000000c81
 	sete	%al
 	andb	%cl, %al
 	retq
+

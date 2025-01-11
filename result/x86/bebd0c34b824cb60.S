@@ -1,144 +1,156 @@
 .LCPI0_0:
-	.long	0x3fc90fdb                      # float 1.57079637
-func0000000000000018:                   # @func0000000000000018
+	.long	0x3fc90fdb
+func0000000000000018:
 	vaddss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	$2139095040, %eax               # imm = 0x7F800000
+	andl	$2147483647, %eax
+	cmpl	$2139095040, %eax
 	sete	%al
 	retq
+
 .LCPI1_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI1_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI1_2:
-	.long	0x358637bd                      # float 9.99999997E-7
-func0000000000000014:                   # @func0000000000000014
+	.long	0x358637bd
+func0000000000000014:
 	vaddss	.LCPI1_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vucomiss	.LCPI1_2(%rip), %xmm0
 	seta	%al
 	retq
+
 .LCPI2_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI2_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI2_2:
-	.long	0x358637bd                      # float 9.99999997E-7
-func0000000000000015:                   # @func0000000000000015
+	.long	0x358637bd
+func0000000000000015:
 	vaddss	.LCPI2_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI2_2(%rip), %xmm1           # xmm1 = [9.99999997E-7,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI2_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
+
 .LCPI3_0:
-	.long	0xbf2ec4c6                      # float -0.682690024
+	.long	0xbf2ec4c6
 .LCPI3_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI3_2:
-	.long	0x3ca3d70a                      # float 0.0199999996
-func0000000000000012:                   # @func0000000000000012
+	.long	0x3ca3d70a
+func0000000000000012:
 	vaddss	.LCPI3_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI3_2(%rip), %xmm1           # xmm1 = [1.99999996E-2,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI3_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq
+
 .LCPI4_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI4_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI4_2:
-	.long	0x322bcc77                      # float 9.99999993E-9
-func000000000000001b:                   # @func000000000000001b
+	.long	0x322bcc77
+func000000000000001b:
 	vaddss	.LCPI4_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vucomiss	.LCPI4_2(%rip), %xmm0
 	setbe	%al
 	retq
+
 .LCPI5_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI5_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI5_2:
-	.long	0x34000000                      # float 1.1920929E-7
-func0000000000000004:                   # @func0000000000000004
+	.long	0x34000000
+func0000000000000004:
 	vaddss	.LCPI5_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
 	vucomiss	.LCPI5_2(%rip), %xmm0
 	seta	%al
 	retq
+
 .LCPI6_0:
-	.long	0xb58637bd                      # float -9.99999997E-7
+	.long	0xb58637bd
 .LCPI6_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI6_2:
-	.long	0x2a0637bd                      # float 1.19209289E-13
-func000000000000001d:                   # @func000000000000001d
+	.long	0x2a0637bd
+func000000000000001d:
 	vaddss	.LCPI6_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI6_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI6_2(%rip), %xmm1           # xmm1 = [1.19209289E-13,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI6_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
 	retq
+
 .LCPI7_0:
-	.long	0xc0400000                      # float -3
+	.long	0xc0400000
 .LCPI7_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI7_2:
-	.long	0x3c23d70a                      # float 0.00999999977
-func0000000000000002:                   # @func0000000000000002
+	.long	0x3c23d70a
+func0000000000000002:
 	vaddss	.LCPI7_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI7_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI7_2(%rip), %xmm1           # xmm1 = [9.99999977E-3,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI7_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq
+
 .LCPI8_0:
-	.long	0xc3340000                      # float -180
-func0000000000000009:                   # @func0000000000000009
+	.long	0xc3340000
+func0000000000000009:
 	vaddss	.LCPI8_0(%rip), %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	$2139095040, %eax               # imm = 0x7F800000
+	andl	$2147483647, %eax
+	cmpl	$2139095040, %eax
 	setge	%al
 	retq
+
 .LCPI9_0:
-	.long	0xc00ccccd                      # float -2.20000005
+	.long	0xc00ccccd
 .LCPI9_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI9_2:
-	.long	0x3a83126f                      # float 0.00100000005
-func000000000000000d:                   # @func000000000000000d
+	.long	0x3a83126f
+func000000000000000d:
 	vaddss	.LCPI9_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI9_2(%rip), %xmm1           # xmm1 = [1.00000005E-3,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI9_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
 	retq
+
 .LCPI10_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI10_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI10_2:
-	.long	0x358637bd                      # float 9.99999997E-7
-func0000000000000005:                   # @func0000000000000005
+	.long	0x358637bd
+func0000000000000005:
 	vaddss	.LCPI10_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI10_2(%rip), %xmm1          # xmm1 = [9.99999997E-7,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI10_2(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
+
 .LCPI11_0:
-	.long	0xbf800000                      # float -1
+	.long	0xbf800000
 .LCPI11_1:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI11_2:
-	.long	0x34000000                      # float 1.1920929E-7
-func0000000000000013:                   # @func0000000000000013
+	.long	0x34000000
+func0000000000000013:
 	vaddss	.LCPI11_0(%rip), %xmm0, %xmm0
 	vandps	.LCPI11_1(%rip){1to4}, %xmm0, %xmm0
 	vucomiss	.LCPI11_2(%rip), %xmm0
 	setb	%al
 	retq
+

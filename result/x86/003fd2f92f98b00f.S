@@ -1,8 +1,9 @@
-func00000000000001a4:                   # @func00000000000001a4
+func00000000000001a4:
 	movzwl	%si, %eax
 	orl	%edi, %eax
-	xorl	$55296, %eax                    # imm = 0xD800
-	addl	$-1114112, %eax                 # imm = 0xFFEF0000
-	cmpl	$-1112064, %eax                 # imm = 0xFFEF0800
+	xorl	$55296, %eax
+	addl	$-1114112, %eax
+	cmpl	$-1112064, %eax
 	setb	%al
 	retq
+

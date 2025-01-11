@@ -1,7 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	decl	%edi
 	movslq	%edi, %rax
-	imulq	$1717986919, %rax, %rcx         # imm = 0x66666667
+	imulq	$1717986919, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$34, %rcx
@@ -10,14 +10,16 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rcx,%rcx,4), %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	addl	$1900, %edi                     # imm = 0x76C
+
+func0000000000000001:
+	addl	$1900, %edi
 	movslq	%edi, %rax
-	imulq	$1374389535, %rax, %rcx         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$39, %rcx
 	addl	%edx, %ecx
-	imull	$400, %ecx, %ecx                # imm = 0x190
+	imull	$400, %ecx, %ecx
 	subl	%ecx, %eax
 	retq
+

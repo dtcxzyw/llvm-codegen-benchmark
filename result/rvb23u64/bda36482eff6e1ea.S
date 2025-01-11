@@ -1,4 +1,4 @@
-func0000000000001082:                   # @func0000000000001082
+func0000000000001082:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, 255
@@ -8,7 +8,8 @@ func0000000000001082:                   # @func0000000000001082
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000001098:                   # @func0000000000001098
+
+func0000000000001098:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sext.w	a2, a2
@@ -20,7 +21,8 @@ func0000000000001098:                   # @func0000000000001098
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000001202:                   # @func0000000000001202
+
+func0000000000001202:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sext.w	a2, a2
@@ -32,7 +34,8 @@ func0000000000001202:                   # @func0000000000001202
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000160c:                   # @func000000000000160c
+
+func000000000000160c:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sext.w	a2, a2
@@ -43,7 +46,8 @@ func000000000000160c:                   # @func000000000000160c
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000c40c:                   # @func000000000000c40c
+
+func000000000000c40c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, 255
@@ -55,7 +59,8 @@ func000000000000c40c:                   # @func000000000000c40c
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000004608:                   # @func0000000000004608
+
+func0000000000004608:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sext.w	a2, a2
@@ -65,7 +70,8 @@ func0000000000004608:                   # @func0000000000004608
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000c208:                   # @func000000000000c208
+
+func000000000000c208:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, 255
@@ -75,7 +81,8 @@ func000000000000c208:                   # @func000000000000c208
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000008418:                   # @func0000000000008418
+
+func0000000000008418:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sext.w	a2, a2
@@ -86,7 +93,8 @@ func0000000000008418:                   # @func0000000000008418
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func000000000000c410:                   # @func000000000000c410
+
+func000000000000c410:
 	sext.w	a0, a0
 	andi	a2, a2, 255
 	srliw	a1, a1, 16
@@ -98,3 +106,4 @@ func000000000000c410:                   # @func000000000000c410
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

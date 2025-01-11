@@ -1,4 +1,4 @@
-func000000000000024a:                   # @func000000000000024a
+func000000000000024a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srli	a2, a2, 32
@@ -8,7 +8,8 @@ func000000000000024a:                   # @func000000000000024a
 	min	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func000000000000044a:                   # @func000000000000044a
+
+func000000000000044a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srli	a2, a2, 5
@@ -16,7 +17,8 @@ func000000000000044a:                   # @func000000000000044a
 	min	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func000000000000020a:                   # @func000000000000020a
+
+func000000000000020a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srli	a2, a2, 32
@@ -24,3 +26,4 @@ func000000000000020a:                   # @func000000000000020a
 	min	a1, a2, a1
 	slt	a0, a1, a0
 	ret
+

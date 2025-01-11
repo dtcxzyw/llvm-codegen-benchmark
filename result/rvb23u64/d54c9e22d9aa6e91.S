@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	slli	a3, a2, 6
 	subw	a1, a1, a2
 	add	a1, a1, a3
@@ -7,10 +7,12 @@ func0000000000000054:                   # @func0000000000000054
 	subw	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a3, a2, 1
 	add	a1, a1, a2
 	add	a1, a1, a3
 	sh2add	a1, a1, a1
 	addw	a0, a0, a1
 	ret
+

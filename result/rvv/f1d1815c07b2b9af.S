@@ -1,4 +1,4 @@
-func00000000000000c7:                   # @func00000000000000c7
+func00000000000000c7:
 	lui	a0, 522240
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -7,7 +7,8 @@ func00000000000000c7:                   # @func00000000000000c7
 	vmfne.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	lui	a0, 524288
 	fli.s	fa5, min
 	addi	a0, a0, -1
@@ -17,7 +18,8 @@ func000000000000014c:                   # @func000000000000014c
 	vmfle.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	lui	a0, 2048
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -26,7 +28,8 @@ func000000000000008c:                   # @func000000000000008c
 	vmfgt.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -36,7 +39,8 @@ func0000000000000081:                   # @func0000000000000081
 	vmfgt.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
 	fmv.w.x	fa5, zero
@@ -44,7 +48,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmfle.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 4
 	fli.s	fa5, 0.5
@@ -52,7 +57,8 @@ func000000000000004c:                   # @func000000000000004c
 	vmflt.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	lui	a0, 4096
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -61,7 +67,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmfgt.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -2
 	fmv.w.x	fa5, zero
@@ -69,3 +76,4 @@ func000000000000018c:                   # @func000000000000018c
 	vmfge.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret
+

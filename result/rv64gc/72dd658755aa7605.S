@@ -1,4 +1,4 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000000e4:
 	srli	a0, a0, 32
 	andi	a1, a1, 255
 	li	a2, 6
@@ -15,7 +15,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	slli	a0, a0, 3
 	sllw	a0, a1, a0
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	andi	a1, a1, 255
 	li	a2, 6
 	snez	a0, a0
@@ -31,3 +32,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	slli	a0, a0, 3
 	sllw	a0, a1, a0
 	ret
+

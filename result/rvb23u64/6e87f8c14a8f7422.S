@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	lui	a3, 1
 	slli	a2, a2, 60
 	addiw	a3, a3, 511
@@ -7,14 +7,16 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	lui	a3, 1016800
 	slliw	a1, a1, 27
 	andn	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	lui	a3, 2
 	slli	a1, a1, 57
 	addiw	a3, a3, -65
@@ -23,14 +25,16 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slli	a2, a2, 40
 	slliw	a1, a1, 25
 	srli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	lui	a3, 519951
 	slli	a1, a1, 16
 	and	a2, a2, a3
@@ -39,3 +43,4 @@ func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

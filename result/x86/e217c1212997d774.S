@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	vcvttss2si	%xmm0, %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -6,7 +6,8 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	vcvttss2si	%xmm0, %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -14,7 +15,8 @@ func000000000000014a:                   # @func000000000000014a
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vcvttss2si	%xmm0, %eax
 	cmpl	%eax, %esi
 	sete	%cl
@@ -22,7 +24,8 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	vcvttss2si	%xmm0, %eax
 	cmpl	%eax, %esi
 	setl	%cl
@@ -30,7 +33,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	vcvttss2si	%xmm0, %eax
 	cmpl	%eax, %esi
 	setne	%cl
@@ -38,3 +42,4 @@ func000000000000018a:                   # @func000000000000018a
 	setg	%al
 	andb	%cl, %al
 	retq
+

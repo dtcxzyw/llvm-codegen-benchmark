@@ -1,9 +1,9 @@
-func00000000000007a4:                   # @func00000000000007a4
+func00000000000007a4:
 	movq	%rdx, %rax
 	movq	%rsi, %rdx
 	incq	%rax
 	imulq	%rdi, %rax
-	movabsq	$8589934597, %rcx               # imm = 0x200000005
+	movabsq	$8589934597, %rcx
 	mulxq	%rcx, %rcx, %rcx
 	subq	%rcx, %rsi
 	shrq	%rsi
@@ -17,3 +17,4 @@ func00000000000007a4:                   # @func00000000000007a4
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
+

@@ -1,18 +1,20 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	xorl	%eax, %eax
 	cmpl	$3, %esi
 	cmovnel	%esi, %eax
 	shlq	$6, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	xorl	%eax, %eax
 	cmpl	$18, %esi
 	cmovnel	%esi, %eax
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	cmpl	$12, %esi
 	movl	$11, %eax
 	cmovnel	%esi, %eax
@@ -21,9 +23,11 @@ func000000000000000f:                   # @func000000000000000f
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	xorl	%eax, %eax
 	cmpl	$124, %esi
 	cmovbl	%esi, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
+

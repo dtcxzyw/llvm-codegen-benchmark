@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	lui	a0, 256
 	addi	a1, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -10,7 +10,8 @@ func0000000000000034:                   # @func0000000000000034
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	lui	a0, 1048552
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -22,3 +23,4 @@ func0000000000000021:                   # @func0000000000000021
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
+

@@ -1,16 +1,14 @@
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+func0000000000000040:
 	lsr	x8, x1, #3
-	mov	w9, #28087                      // =0x6db7
+	mov	w9, #28087
 	movk	w9, #46811, lsl #16
 	madd	w8, w8, w9, w0
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	x8, #10583                      // =0x2957
-	add	w10, w0, #437, lsl #12          // =1789952
+
+func0000000000000004:
+	mov	x8, #10583
+	add	w10, w0, #437, lsl #12
 	movk	x8, #52817, lsl #16
 	movk	x8, #51360, lsl #32
 	movk	x8, #6213, lsl #48
@@ -21,20 +19,18 @@ func0000000000000004:                   // @func0000000000000004
 	add	w9, w10, #43
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000045:                   // @func0000000000000045
-// %bb.0:                               // %entry
+
+func0000000000000045:
 	lsr	x8, x1, #3
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	movk	w9, #43690, lsl #16
 	madd	w8, w8, w9, w0
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	x8, #56455                      // =0xdc87
-	add	w10, w0, #175, lsl #12          // =716800
+
+func0000000000000005:
+	mov	x8, #56455
+	add	w10, w0, #175, lsl #12
 	movk	x8, #64819, lsl #16
 	movk	x8, #43125, lsl #32
 	movk	x8, #25451, lsl #48
@@ -45,11 +41,10 @@ func0000000000000005:                   // @func0000000000000005
 	add	w9, w10, #2668
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
-	mov	x8, #18659                      // =0x48e3
-	add	w10, w0, #175, lsl #12          // =716800
+
+func0000000000000015:
+	mov	x8, #18659
+	add	w10, w0, #175, lsl #12
 	movk	x8, #18681, lsl #16
 	movk	x8, #65391, lsl #32
 	movk	x8, #26687, lsl #48
@@ -60,4 +55,4 @@ func0000000000000015:                   // @func0000000000000015
 	add	w9, w10, #2668
 	add	w0, w8, w9
 	ret
-                                        // -- End function
+

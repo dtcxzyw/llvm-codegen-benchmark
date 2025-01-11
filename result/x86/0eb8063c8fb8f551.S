@@ -1,4 +1,4 @@
-func0000000000000101:                   # @func0000000000000101
+func0000000000000101:
 	cmpb	$26, %dl
 	setb	%al
 	shlb	$5, %al
@@ -6,3 +6,4 @@ func0000000000000101:                   # @func0000000000000101
 	cmpb	%dil, %al
 	sete	%al
 	retq
+

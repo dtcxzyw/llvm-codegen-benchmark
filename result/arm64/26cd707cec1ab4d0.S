@@ -1,44 +1,37 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	cmp	w0, #1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	cmp	w0, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	cmn	w0, #1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	cmp	w0, #5
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	mov	w8, #50511                      // =0xc54f
+
+func0000000000000028:
+	mov	w8, #50511
 	movk	w8, #65533, lsl #16
 	cmp	w0, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	mvn	w8, w0
 	lsr	w0, w8, #31
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	cmp	w0, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
+

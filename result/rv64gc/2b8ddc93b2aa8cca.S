@@ -1,4 +1,4 @@
-func000000000000030f:                   # @func000000000000030f
+func000000000000030f:
 	li	a3, -1
 	andi	a1, a1, 1
 	slli	a3, a3, 63
@@ -8,7 +8,8 @@ func000000000000030f:                   # @func000000000000030f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000028f:                   # @func000000000000028f
+
+func000000000000028f:
 	li	a3, -1
 	andi	a1, a1, 1
 	slli	a3, a3, 63
@@ -17,7 +18,8 @@ func000000000000028f:                   # @func000000000000028f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000010f:                   # @func000000000000010f
+
+func000000000000010f:
 	lui	a3, 32
 	andi	a1, a1, 1
 	addiw	a3, a3, 1
@@ -25,3 +27,4 @@ func000000000000010f:                   # @func000000000000010f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

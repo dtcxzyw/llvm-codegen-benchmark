@@ -1,14 +1,15 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%edi, %eax
 	movzwl	%ax, %ecx
 	shrl	$4, %ecx
-	imull	$839, %ecx, %ecx                # imm = 0x347
+	imull	$839, %ecx, %ecx
 	shrl	$19, %ecx
-	imull	$10000, %ecx, %ecx              # imm = 0x2710
+	imull	$10000, %ecx, %ecx
 	subl	%ecx, %eax
 	movzwl	%ax, %ecx
-	imull	$5243, %ecx, %ecx               # imm = 0x147B
+	imull	$5243, %ecx, %ecx
 	shrl	$19, %ecx
 	imull	$100, %ecx, %ecx
 	subl	%ecx, %eax
 	retq
+

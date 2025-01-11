@@ -1,4 +1,4 @@
-func000000000000048c:                   # @func000000000000048c
+func000000000000048c:
 	sarq	$3, %rdx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -6,7 +6,8 @@ func000000000000048c:                   # @func000000000000048c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000481:                   # @func0000000000000481
+
+func0000000000000481:
 	sarq	$2, %rdx
 	cmpq	%rdx, %rsi
 	setae	%cl
@@ -14,3 +15,4 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	andb	%cl, %al
 	retq
+

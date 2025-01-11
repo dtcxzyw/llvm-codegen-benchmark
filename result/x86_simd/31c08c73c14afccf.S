@@ -1,26 +1,31 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vblendmps	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpmovd2m	%ymm2, %k1
 	vblendmps	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.long	1                               # 0x1
-func000000000000000a:                   # @func000000000000000a
+	.long	1
+func000000000000000a:
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm2, %k1
 	vblendmps	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI3_0:
-	.long	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
+	.long	2
+func0000000000000004:
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vblendmps	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI4_0:
-	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+	.long	2
+func0000000000000008:
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm2, %k1
 	vblendmps	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
+

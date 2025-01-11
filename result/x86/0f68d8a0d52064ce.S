@@ -1,11 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	sarq	$32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andb	$1, %sil
 	sarq	$32, %rdx
 	xorl	%eax, %eax
@@ -14,10 +15,12 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	sarq	$32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
+

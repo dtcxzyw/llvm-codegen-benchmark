@@ -1,4 +1,4 @@
-func000000000000003d:                   # @func000000000000003d
+func000000000000003d:
 	andl	$1, %esi
 	addl	%edi, %esi
 	imull	$205, %esi, %eax
@@ -6,7 +6,8 @@ func000000000000003d:                   # @func000000000000003d
 	shrl	$11, %eax
 	orb	$48, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %esi
 	addl	%edi, %esi
 	movzbl	%sil, %eax
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	shrl	$11, %eax
 	orb	$48, %al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000ab:                   # @func00000000000000ab
+func00000000000000ab:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	vsub.vv	v10, v10, v8
@@ -6,7 +6,8 @@ func00000000000000ab:                   # @func00000000000000ab
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func00000000000000fb:                   # @func00000000000000fb
+
+func00000000000000fb:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	vsub.vv	v10, v10, v8
@@ -15,7 +16,8 @@ func00000000000000fb:                   # @func00000000000000fb
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	vsub.vv	v10, v10, v8
@@ -23,7 +25,8 @@ func000000000000002b:                   # @func000000000000002b
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000007b:                   # @func000000000000007b
+
+func000000000000007b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 1
 	vsub.vv	v10, v10, v8
@@ -31,7 +34,8 @@ func000000000000007b:                   # @func000000000000007b
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000079:                   # @func0000000000000079
+
+func0000000000000079:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	vsub.vv	v10, v10, v8
@@ -39,7 +43,8 @@ func0000000000000079:                   # @func0000000000000079
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func00000000000000eb:                   # @func00000000000000eb
+
+func00000000000000eb:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 6
 	vsub.vv	v10, v10, v8
@@ -47,7 +52,8 @@ func00000000000000eb:                   # @func00000000000000eb
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000006b:                   # @func000000000000006b
+
+func000000000000006b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	vsub.vv	v10, v10, v8
@@ -55,3 +61,4 @@ func000000000000006b:                   # @func000000000000006b
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
 	ret
+

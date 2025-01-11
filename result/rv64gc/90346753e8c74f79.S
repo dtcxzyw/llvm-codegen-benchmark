@@ -1,4 +1,4 @@
-func00000000000000bf:                   # @func00000000000000bf
+func00000000000000bf:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a2, a2, a3
@@ -10,3 +10,4 @@ func00000000000000bf:                   # @func00000000000000bf
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
+

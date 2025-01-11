@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrw	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -87,3 +87,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

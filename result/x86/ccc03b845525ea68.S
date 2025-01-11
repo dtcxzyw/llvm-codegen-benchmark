@@ -1,23 +1,27 @@
-func000000000000000c:                   # @func000000000000000c
-	andl	$2052, %esi                     # imm = 0x804
+func000000000000000c:
+	andl	$2052, %esi
 	cmpw	$4, %si
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$15, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	andl	$16376, %esi                    # imm = 0x3FF8
-	cmpl	$2008, %esi                     # imm = 0x7D8
+
+func0000000000000014:
+	andl	$16376, %esi
+	cmpl	$2008, %esi
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	andl	$896, %esi                      # imm = 0x380
-	cmpl	$384, %esi                      # imm = 0x180
+
+func0000000000000018:
+	andl	$896, %esi
+	cmpl	$384, %esi
 	setae	%al
 	andb	%dil, %al
 	retq
+

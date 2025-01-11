@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8
 .LCPI0_1:
-	.quad	1                               # 0x1
-func0000000000000000:                   # @func0000000000000000
+	.quad	1
+func0000000000000000:
 	vpsraq	$63, %ymm1, %ymm2
 	vpsrlq	$56, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -21,7 +21,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rcx
 	vpextrq	$1, %xmm0, %rax
 	xorl	%edx, %edx
@@ -32,7 +32,8 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
 	retq
+

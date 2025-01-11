@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.zero	16,1
 .LCPI0_1:
-	.long	256                             # 0x100
-func00000000000001a4:                   # @func00000000000001a4
+	.long	256
+func00000000000001a4:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$7, %ymm1, %ymm2
@@ -10,3 +10,4 @@ func00000000000001a4:                   # @func00000000000001a4
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+

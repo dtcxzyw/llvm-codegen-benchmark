@@ -1,5 +1,4 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	fdiv	d0, d0, d1
 	movi	d1, #0000000000000000
 	tst	w0, #0x1
@@ -7,9 +6,8 @@ func0000000000000002:                   // @func0000000000000002
 	fmov	d1, #1.00000000
 	fminnm	d0, d0, d1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fdiv	d0, d0, d1
 	fmov	d1, #1.00000000
 	tst	w0, #0x1
@@ -17,4 +15,4 @@ func0000000000000004:                   // @func0000000000000004
 	fcsel	d0, d0, d1, ne
 	fmaxnm	d0, d0, d2
 	ret
-                                        // -- End function
+

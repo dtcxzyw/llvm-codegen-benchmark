@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	srliw	a1, a0, 2
 	lui	a2, 349525
 	slli	a1, a1, 1
@@ -41,7 +41,8 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, 73
 	ret
-func000000000000005f:                   # @func000000000000005f
+
+func000000000000005f:
 	srliw	a1, a0, 2
 	lui	a2, 349525
 	slli	a1, a1, 1
@@ -84,7 +85,8 @@ func000000000000005f:                   # @func000000000000005f
 	add	a0, a0, a1
 	addi	a0, a0, 73
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	srliw	a1, a0, 2
 	lui	a2, 349525
 	slli	a1, a1, 1
@@ -127,7 +129,8 @@ func000000000000007f:                   # @func000000000000007f
 	add	a0, a0, a1
 	addi	a0, a0, 73
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	srliw	a1, a0, 2
 	lui	a2, 349525
 	slli	a1, a1, 1
@@ -170,3 +173,4 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
 	addi	a0, a0, 73
 	ret
+

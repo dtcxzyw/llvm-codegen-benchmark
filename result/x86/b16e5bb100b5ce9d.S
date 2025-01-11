@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	addq	$16, %rax
 	sarq	$3, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -17,7 +18,8 @@ func0000000000000011:                   # @func0000000000000011
 	addq	$-32, %rax
 	sarq	$2, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -26,3 +28,4 @@ func0000000000000019:                   # @func0000000000000019
 	subq	%rdi, %rax
 	sarq	$4, %rax
 	retq
+

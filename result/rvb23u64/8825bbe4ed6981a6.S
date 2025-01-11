@@ -1,4 +1,4 @@
-func00000000000004c6:                   # @func00000000000004c6
+func00000000000004c6:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	sext.w	a2, a2
@@ -8,7 +8,8 @@ func00000000000004c6:                   # @func00000000000004c6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000058a:                   # @func000000000000058a
+
+func000000000000058a:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	sext.w	a2, a2
@@ -19,7 +20,8 @@ func000000000000058a:                   # @func000000000000058a
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	sext.w	a2, a2
@@ -30,3 +32,4 @@ func000000000000054a:                   # @func000000000000054a
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

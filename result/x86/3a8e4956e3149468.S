@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	movl	%eax, %eax
@@ -6,7 +6,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	movl	%eax, %eax
@@ -14,3 +15,4 @@ func0000000000000085:                   # @func0000000000000085
 	setbe	%al
 	andb	%dil, %al
 	retq
+

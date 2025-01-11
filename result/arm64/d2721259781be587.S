@@ -1,20 +1,17 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	and	x8, x1, #0xffffffffffff
 	mov	w9, w0
 	add	x0, x8, x9, lsl #5
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	and	x8, x1, #0xffffffffffe00000
 	add	x0, x8, w0, uxtw
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	and	x8, x1, #0xffffffffffff
 	mov	w9, w0
 	add	x0, x8, x9, lsl #5
 	ret
-                                        // -- End function
+

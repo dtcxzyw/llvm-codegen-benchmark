@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$62, %rdx
@@ -8,7 +8,8 @@ func0000000000000048:                   # @func0000000000000048
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$60, %rdx
@@ -18,7 +19,8 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -28,7 +30,8 @@ func0000000000000088:                   # @func0000000000000088
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -38,7 +41,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000001d8:                   # @func00000000000001d8
+
+func00000000000001d8:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -48,7 +52,8 @@ func00000000000001d8:                   # @func00000000000001d8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$62, %rdx
@@ -58,7 +63,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	leaq	(%rdi,%rsi), %rcx
 	movq	%rcx, %rdx
 	shrq	$61, %rdx
@@ -68,3 +74,4 @@ func00000000000000e8:                   # @func00000000000000e8
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

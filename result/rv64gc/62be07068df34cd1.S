@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	xor	a2, a2, a0
 	srliw	a3, a1, 8
 	slli	a1, a1, 24
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	addw	a0, a0, a1
 	xor	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	xor	a2, a2, a0
 	srliw	a3, a1, 20
 	slli	a1, a1, 12
@@ -20,3 +21,4 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	xor	a0, a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a0, a0, 3
@@ -11,7 +11,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	min	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	sub	a1, a1, a2
 	lui	a2, 838861
 	srai	a0, a0, 2
@@ -24,3 +25,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	min	a0, a0, a1
 	seqz	a0, a0
 	ret
+

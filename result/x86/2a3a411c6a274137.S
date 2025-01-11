@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	testb	$1, %sil
 	movl	$169, %eax
 	movl	$208, %ecx
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$1, %sil
 	movl	$169, %eax
 	movl	$208, %ecx
@@ -14,7 +15,8 @@ func0000000000000001:                   # @func0000000000000001
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	notb	%sil
 	andb	$1, %sil
 	addb	%sil, %sil
@@ -22,7 +24,8 @@ func0000000000000007:                   # @func0000000000000007
 	addb	$3, %sil
 	movzbl	%sil, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	xorl	%eax, %eax
 	testb	$1, %sil
 	setne	%al
@@ -30,3 +33,4 @@ func0000000000000002:                   # @func0000000000000002
 	addb	%dil, %al
 	movzbl	%al, %eax
 	retq
+

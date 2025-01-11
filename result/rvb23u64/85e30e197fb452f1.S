@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1749024623285053783             # 0x1845c8a0ce512957
-func0000000000000024:                   # @func0000000000000024
+	.quad	1749024623285053783
+func0000000000000024:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mulh	a0, a0, a1
@@ -11,11 +11,12 @@ func0000000000000024:                   # @func0000000000000024
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	-329406144173384850             # 0xfb6db6db6db6db6e
+	.quad	-329406144173384850
 .LCPI1_1:
-	.quad	-329406144173384851             # 0xfb6db6db6db6db6d
-func00000000000000a8:                   # @func00000000000000a8
+	.quad	-329406144173384851
+func00000000000000a8:
 	lui	a1, 748983
 	lui	a2, %hi(.LCPI1_0)
 	addiw	a1, a1, -585
@@ -29,15 +30,18 @@ func00000000000000a8:                   # @func00000000000000a8
 	add	a0, a0, a2
 	sltu	a0, a0, a3
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	addi	a0, a0, -24
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	addi	a0, a0, -88
 	sltiu	a0, a0, 88
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	srai	a0, a0, 3
 	lui	a1, 699051
 	addiw	a1, a1, -1365
@@ -47,7 +51,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	addi	a0, a0, -13
 	sltiu	a0, a0, 2
 	ret
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	srai	a0, a0, 4
 	lui	a1, 838861
 	addiw	a1, a1, -819
@@ -57,11 +62,13 @@ func00000000000000b4:                   # @func00000000000000b4
 	addi	a0, a0, 1
 	sltiu	a0, a0, 6
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	addi	a0, a0, 1
 	sltiu	a0, a0, -2
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	srli	a1, a0, 63
 	add	a0, a0, a1
 	li	a1, -1
@@ -72,7 +79,9 @@ func0000000000000038:                   # @func0000000000000038
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	addi	a0, a0, 40
 	snez	a0, a0
 	ret
+

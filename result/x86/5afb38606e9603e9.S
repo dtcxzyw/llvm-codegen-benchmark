@@ -1,18 +1,20 @@
-func0000000000000185:                   # @func0000000000000185
+func0000000000000185:
 	xorl	%eax, %eax
-	cmpl	$2097152, %edx                  # imm = 0x200000
+	cmpl	$2097152, %edx
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	negl	%eax
 	retq
-func0000000000000180:                   # @func0000000000000180
+
+func0000000000000180:
 	xorl	%eax, %eax
 	cmpl	$32, %edx
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	negl	%eax
 	retq
-func0000000000000080:                   # @func0000000000000080
+
+func0000000000000080:
 	cmpl	$2, %edx
 	movl	$10, %ecx
 	cmovael	%esi, %ecx
@@ -20,3 +22,4 @@ func0000000000000080:                   # @func0000000000000080
 	movl	$3, %eax
 	subl	%ecx, %eax
 	retq
+

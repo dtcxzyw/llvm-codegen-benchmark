@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vpsrad	$3, %xmm2, %xmm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -24,5 +24,6 @@ func000000000000000a:                   # @func000000000000000a
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vpmulld	%xmm0, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

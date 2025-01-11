@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	decq	%rdi
 	cmpl	$-1, %edi
 	sete	%cl
@@ -6,23 +6,26 @@ func0000000000000050:                   # @func0000000000000050
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000870:                   # @func0000000000000870
+
+func0000000000000870:
 	decq	%rdi
 	cmpb	$-1, %dil
 	sete	%cl
-	cmpq	$256, %rdi                      # imm = 0x100
+	cmpq	$256, %rdi
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	incq	%rdi
-	cmpq	$4096, %rdi                     # imm = 0x1000
+	cmpq	$4096, %rdi
 	setb	%cl
-	testq	$-16773121, %rdi                # imm = 0xFF000FFF
+	testq	$-16773121, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000a02:                   # @func0000000000000a02
+
+func0000000000000a02:
 	addq	$-2, %rdi
 	movl	%edi, %eax
 	notl	%eax
@@ -32,3 +35,4 @@ func0000000000000a02:                   # @func0000000000000a02
 	setne	%al
 	orb	%cl, %al
 	retq
+

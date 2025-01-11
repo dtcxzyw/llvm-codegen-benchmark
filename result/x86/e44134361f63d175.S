@@ -1,20 +1,22 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	shrq	%rdx
-	imull	$-1431655765, %edx, %ecx        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %ecx
 	addl	%edi, %ecx
 	shrq	%rsi
-	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %esi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	shrq	$4, %rdx
-	imull	$-1762037865, %edx, %ecx        # imm = 0x96F96F97
+	imull	$-1762037865, %edx, %ecx
 	addl	%edi, %ecx
 	shrq	$4, %rsi
-	imull	$-1762037865, %esi, %eax        # imm = 0x96F96F97
+	imull	$-1762037865, %esi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addl	%edx, %eax
@@ -27,3 +29,4 @@ func0000000000000004:                   # @func0000000000000004
 	subl	%ecx, %eax
 	andl	$63, %eax
 	retq
+

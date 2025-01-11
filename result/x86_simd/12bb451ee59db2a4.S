@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	63                              # 0x3f
-func0000000000000001:                   # @func0000000000000001
+	.long	63
+func0000000000000001:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -49,9 +49,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	63                              # 0x3f
-func0000000000000000:                   # @func0000000000000000
+	.long	63
+func0000000000000000:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -100,3 +101,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a1, a1, 2
@@ -9,7 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a0, a0, a1
 	maxu	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a1, a1, 2
@@ -20,3 +21,4 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a0, a0, a1
 	maxu	a0, a1, a0
 	ret
+

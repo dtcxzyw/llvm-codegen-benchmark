@@ -1,4 +1,4 @@
-func0000000000000144:                   # @func0000000000000144
+func0000000000000144:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v9
@@ -8,3 +8,4 @@ func0000000000000144:                   # @func0000000000000144
 	vmsgt.vi	v8, v8, -1
 	vmand.mm	v0, v9, v8
 	ret
+

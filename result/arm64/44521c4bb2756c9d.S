@@ -1,48 +1,40 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	and	w8, w1, #0xff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	and	w8, w1, #0x7fffffff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	and	w8, w1, #0x1fffffff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	and	w8, w1, #0x7
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	and	w8, w1, #0xff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	and	w8, w1, #0xff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	and	w8, w1, #0x7fffffff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	and	w8, w1, #0x3fffff
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -8,7 +8,8 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -17,7 +18,8 @@ func0000000000000025:                   # @func0000000000000025
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -27,19 +29,21 @@ func000000000000002b:                   # @func000000000000002b
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	4096                            # 0x1000
-func0000000000000008:                   # @func0000000000000008
+	.quad	4096
+func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpbroadcastq	.LCPI3_0(%rip), %ymm4   # ymm4 = [4096,4096,4096,4096]
+	vpbroadcastq	.LCPI3_0(%rip), %ymm4
 	vpsubq	%ymm2, %ymm4, %ymm2
 	vpcmpnleuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -48,7 +52,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -57,7 +62,8 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -66,3 +72,4 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

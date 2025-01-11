@@ -1,32 +1,36 @@
 .LCPI0_0:
 	.zero	16,1
-func0000000000000002:                   # @func0000000000000002
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+func0000000000000002:
+	vpmovzxbd	%xmm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k1
-	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+
 .LCPI1_0:
 	.zero	16,1
-func0000000000000042:                   # @func0000000000000042
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+func0000000000000042:
+	vpmovzxbd	%xmm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k1
-	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+
 .LCPI2_0:
 	.zero	16,1
-func0000000000000016:                   # @func0000000000000016
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+func0000000000000016:
+	vpmovzxbd	%xmm1, %ymm1
 	vpcmpnltd	%ymm1, %ymm0, %k1
-	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+
 .LCPI3_0:
 	.zero	16,1
-func0000000000000014:                   # @func0000000000000014
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+func0000000000000014:
+	vpmovzxbd	%xmm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k1
-	vmovdqu8	.LCPI3_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI3_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+

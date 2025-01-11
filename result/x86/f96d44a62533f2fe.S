@@ -1,4 +1,4 @@
-func0000000000000842:                   # @func0000000000000842
+func0000000000000842:
 	orl	%esi, %edi
 	cmpw	$1, %di
 	sete	%cl
@@ -6,12 +6,14 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000848:                   # @func0000000000000848
+
+func0000000000000848:
 	orl	%esi, %edi
 	cmpw	$63, %di
 	setb	%cl
 	movzwl	%di, %eax
-	cmpl	$65281, %eax                    # imm = 0xFF01
+	cmpl	$65281, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
+

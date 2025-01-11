@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a2, a2, 1
 	beqz	a2, .LBB0_2
 	srli	a2, a1, 8
@@ -12,13 +12,14 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a2, a2, 1
 	beqz	a2, .LBB1_2
 	srli	a2, a1, 8
@@ -32,12 +33,13 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-.LBB1_2:                                # %entry
+.LBB1_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andi	a2, a2, 1
 	beqz	a2, .LBB2_2
 	srli	a2, a1, 8
@@ -51,13 +53,14 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-.LBB2_2:                                # %entry
+.LBB2_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a2, a2, 1
 	beqz	a2, .LBB3_2
 	srli	a2, a1, 8
@@ -71,8 +74,9 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-.LBB3_2:                                # %entry
+.LBB3_2:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
 	ret
+

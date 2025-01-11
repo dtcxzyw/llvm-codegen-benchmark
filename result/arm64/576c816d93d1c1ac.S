@@ -1,40 +1,35 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	fdiv	d0, d0, d1
 	ucvtf	d1, w0
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	fdiv	d0, d0, d1
 	ucvtf	d1, w0
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	fdiv	d0, d0, d1
 	ucvtf	d1, w0
 	fcmp	d0, d1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fdiv	d0, d0, d1
 	ucvtf	d1, w0
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	fdiv	d0, d0, d1
 	ucvtf	d1, w0
 	fcmp	d0, d1
 	cset	w0, lt
 	ret
-                                        // -- End function
+

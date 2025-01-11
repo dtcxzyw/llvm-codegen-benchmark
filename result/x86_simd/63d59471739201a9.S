@@ -1,38 +1,40 @@
 .LCPI0_0:
-	.long	7152                            # 0x1bf0
+	.long	7152
 .LCPI0_1:
-	.long	722                             # 0x2d2
+	.long	722
 .LCPI0_2:
-	.long	3518437209                      # 0xd1b71759
-func00000000000001fe:                   # @func00000000000001fe
+	.long	3518437209
+func00000000000001fe:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI0_2(%rip), %ymm2   # ymm2 = [3518437209,3518437209,3518437209,3518437209,3518437209,3518437209,3518437209,3518437209]
+	vpshufd	$245, %ymm0, %ymm1
+	vpbroadcastd	.LCPI0_2(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpmuludq	%ymm2, %ymm0, %ymm0
-	vpshufd	$245, %ymm0, %ymm0              # ymm0 = ymm0[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
+	vpshufd	$245, %ymm0, %ymm0
+	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpsrld	$13, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	4194967296                      # 0xfa0a1f00
+	.long	4194967296
 .LCPI1_1:
-	.long	4293967296                      # 0xfff0bdc0
+	.long	4293967296
 .LCPI1_2:
-	.long	3518437209                      # 0xd1b71759
-func0000000000000000:                   # @func0000000000000000
+	.long	3518437209
+func0000000000000000:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI1_2(%rip), %ymm2   # ymm2 = [3518437209,3518437209,3518437209,3518437209,3518437209,3518437209,3518437209,3518437209]
+	vpshufd	$245, %ymm0, %ymm1
+	vpbroadcastd	.LCPI1_2(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpmuludq	%ymm2, %ymm0, %ymm0
-	vpshufd	$245, %ymm0, %ymm0              # ymm0 = ymm0[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
+	vpshufd	$245, %ymm0, %ymm0
+	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpsrld	$13, %ymm0, %ymm0
 	retq
+

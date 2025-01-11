@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	movq	%rsi, %rcx
 	shrq	$32, %rcx
 	testq	%rdx, %rdx
@@ -8,10 +8,11 @@ func0000000000000043:                   # @func0000000000000043
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movq	%rsi, %rcx
 	shrq	$32, %rcx
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	movl	$4294967295, %eax
 	cmpq	%rax, %rdx
 	cmovneq	%rsi, %rcx
 	movq	%rcx, %rax
@@ -19,3 +20,4 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sext.w	a1, a1
 	add	a2, a2, a0
 	addi	a2, a2, 56
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func00000000000001e6:                   # @func00000000000001e6
+
+func00000000000001e6:
 	sext.w	a1, a1
 	sh2add	a2, a2, a2
 	slli	a2, a2, 4
@@ -17,7 +18,8 @@ func00000000000001e6:                   # @func00000000000001e6
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000144:                   # @func0000000000000144
+
+func0000000000000144:
 	sext.w	a1, a1
 	add	a2, a2, a0
 	addi	a2, a2, -3
@@ -26,7 +28,8 @@ func0000000000000144:                   # @func0000000000000144
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	sext.w	a1, a1
 	slli	a2, a2, 4
 	add	a2, a2, a0
@@ -36,7 +39,8 @@ func000000000000014a:                   # @func000000000000014a
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	sext.w	a1, a1
 	slli	a2, a2, 4
 	add	a2, a2, a0
@@ -46,7 +50,8 @@ func0000000000000146:                   # @func0000000000000146
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func00000000000001ea:                   # @func00000000000001ea
+
+func00000000000001ea:
 	sext.w	a1, a1
 	sh2add	a2, a2, a0
 	addi	a2, a2, 4
@@ -55,7 +60,8 @@ func00000000000001ea:                   # @func00000000000001ea
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	sext.w	a1, a1
 	sh2add	a2, a2, a0
 	addi	a2, a2, 4
@@ -63,7 +69,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a1, a1
 	slli	a2, a2, 4
 	add	a2, a2, a0
@@ -73,7 +80,8 @@ func0000000000000006:                   # @func0000000000000006
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000166:                   # @func0000000000000166
+
+func0000000000000166:
 	sext.w	a1, a1
 	add	a2, a2, a0
 	addi	a2, a2, 8
@@ -82,7 +90,8 @@ func0000000000000166:                   # @func0000000000000166
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	sext.w	a1, a1
 	slli	a2, a2, 4
 	add	a2, a2, a0
@@ -92,3 +101,4 @@ func0000000000000161:                   # @func0000000000000161
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

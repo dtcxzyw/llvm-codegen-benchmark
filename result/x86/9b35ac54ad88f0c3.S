@@ -1,43 +1,47 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	leaq	2(%rsi), %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rax, %rax
 	shrq	%rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	leaq	2(%rsi), %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rax, %rax
 	shrq	%rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003c1:                   # @func00000000000003c1
+
+func00000000000003c1:
 	addq	$80, %rsi
 	shrq	$4, %rsi
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	movabsq	$-3689348814741910323, %rax
 	imulq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	addq	$-144, %rsi
 	shrq	$4, %rsi
-	movabsq	$-8198552921648689607, %rax     # imm = 0x8E38E38E38E38E39
+	movabsq	$-8198552921648689607, %rax
 	imulq	%rsi, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rsi, %rdx
-	addq	$1021, %rdx                     # imm = 0x3FD
-	movabsq	$36099303471055875, %rax        # imm = 0x80402010080403
+	addq	$1021, %rdx
+	movabsq	$36099303471055875, %rax
 	mulxq	%rax, %rax, %rax
 	subq	%rax, %rdx
 	shrq	%rdx
@@ -47,21 +51,24 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	leaq	-1(%rsi), %rdx
-	movabsq	$-2049638230412172401, %rax     # imm = 0xE38E38E38E38E38F
+	movabsq	$-2049638230412172401, %rax
 	mulxq	%rax, %rax, %rax
 	shrq	$9, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000361:                   # @func0000000000000361
+
+func0000000000000361:
 	leaq	12(%rsi), %rdx
-	movabsq	$5675921253449092805, %rax      # imm = 0x4EC4EC4EC4EC4EC5
+	movabsq	$5675921253449092805, %rax
 	mulxq	%rax, %rax, %rax
 	shrq	$2, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

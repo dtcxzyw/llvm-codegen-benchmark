@@ -1,21 +1,23 @@
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+func0000000000000001:
+	movabsq	$-3689348814741910323, %rax
 	imulq	%rdi, %rax
 	rorxq	$1, %rax, %rax
-	movabsq	$1844674407370955162, %rcx      # imm = 0x199999999999999A
+	movabsq	$1844674407370955162, %rcx
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+
+func00000000000000a1:
+	movabsq	$-3689348814741910323, %rax
 	imulq	%rdi, %rax
 	rorxq	$1, %rax, %rax
-	movabsq	$1844674407370955162, %rcx      # imm = 0x199999999999999A
+	movabsq	$1844674407370955162, %rcx
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
-	movabsq	$-8608480567731124087, %rax     # imm = 0x8888888888888889
+
+func00000000000000a6:
+	movabsq	$-8608480567731124087, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$5, %rax
@@ -24,30 +26,34 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpq	$10, %rdi
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movabsq	$3777893186295716171, %rax      # imm = 0x346DC5D63886594B
+
+func0000000000000006:
+	movabsq	$3777893186295716171, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$11, %rax
-	imulq	$10000, %rax, %rax              # imm = 0x2710
+	imulq	$10000, %rax, %rax
 	subq	%rax, %rdi
-	cmpq	$5000, %rdi                     # imm = 0x1388
+	cmpq	$5000, %rdi
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	movabsq	$3777893186295716171, %rax      # imm = 0x346DC5D63886594B
+
+func0000000000000014:
+	movabsq	$3777893186295716171, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$11, %rax
-	imulq	$10000, %rax, %rax              # imm = 0x2710
+	imulq	$10000, %rax, %rax
 	subq	%rax, %rdi
-	cmpq	$7000, %rdi                     # imm = 0x1B58
+	cmpq	$7000, %rdi
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	movabsq	$-8737931403336103397, %rax     # imm = 0x86BCA1AF286BCA1B
+
+func0000000000000081:
+	movabsq	$-8737931403336103397, %rax
 	imulq	%rdi, %rax
-	movabsq	$970881267037344822, %rcx       # imm = 0xD79435E50D79436
+	movabsq	$970881267037344822, %rcx
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
+

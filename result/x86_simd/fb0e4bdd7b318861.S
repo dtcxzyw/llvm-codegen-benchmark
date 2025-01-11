@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.quad	4095                            # 0xfff
+	.quad	4095
 .LCPI0_1:
-	.quad	4096                            # 0x1000
-func0000000000000001:                   # @func0000000000000001
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [4095,4095,4095,4095]
+	.quad	4096
+func0000000000000001:
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -11,14 +11,15 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	4095                            # 0xfff
+	.quad	4095
 .LCPI1_1:
-	.quad	-4096                           # 0xfffffffffffff000
-func0000000000000004:                   # @func0000000000000004
-	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [4095,4095,4095,4095]
+	.quad	-4096
+func0000000000000004:
+	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpbroadcastq	.LCPI1_1(%rip), %ymm3   # ymm3 = [18446744073709547520,18446744073709547520,18446744073709547520,18446744073709547520]
+	vpbroadcastq	.LCPI1_1(%rip), %ymm3
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpand	%ymm3, %ymm0, %ymm0
@@ -26,11 +27,12 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	11                              # 0xb
+	.quad	11
 .LCPI2_1:
-	.quad	3                               # 0x3
-func00000000000001e1:                   # @func00000000000001e1
+	.quad	3
+func00000000000001e1:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -40,12 +42,13 @@ func00000000000001e1:                   # @func00000000000001e1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	32                              # 0x20
+	.quad	32
 .LCPI3_1:
-	.quad	64                              # 0x40
-func00000000000000a1:                   # @func00000000000000a1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [32,32,32,32]
+	.quad	64
+func00000000000000a1:
+	vpbroadcastq	.LCPI3_0(%rip), %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -53,3 +56,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

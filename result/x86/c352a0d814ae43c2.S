@@ -1,7 +1,8 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	orl	%esi, %edi
-	imull	$31711, %edi, %eax              # imm = 0x7BDF
+	imull	$31711, %edi, %eax
 	movzwl	%ax, %eax
-	cmpl	$2115, %eax                     # imm = 0x843
+	cmpl	$2115, %eax
 	setb	%al
 	retq
+

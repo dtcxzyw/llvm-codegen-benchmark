@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000004c:                   # @func000000000000004c
+	.long	1
+func000000000000004c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	%ymm2, %ymm1, %k1
@@ -10,7 +10,8 @@ func000000000000004c:                   # @func000000000000004c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	%ymm2, %ymm1, %k1
@@ -20,7 +21,8 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpneqd	%ymm2, %ymm1, %k1
@@ -30,7 +32,8 @@ func000000000000030c:                   # @func000000000000030c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpneqd	%ymm2, %ymm1, %k1
@@ -40,9 +43,10 @@ func0000000000000302:                   # @func0000000000000302
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	1                               # 0x1
-func000000000000028c:                   # @func000000000000028c
+	.long	1
+func000000000000028c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -52,7 +56,8 @@ func000000000000028c:                   # @func000000000000028c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000196:                   # @func0000000000000196
+
+func0000000000000196:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -63,7 +68,8 @@ func0000000000000196:                   # @func0000000000000196
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpltud	%ymm2, %ymm1, %k1
@@ -73,3 +79,4 @@ func0000000000000102:                   # @func0000000000000102
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

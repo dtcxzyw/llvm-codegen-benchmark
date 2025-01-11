@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a2, a2, 63
 	slli	a1, a1, 3
 	srai	a2, a2, 63
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slli	a2, a2, 63
 	slli	a1, a1, 3
 	srai	a2, a2, 63
@@ -14,7 +15,8 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, 24
@@ -32,7 +34,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andi	a2, a2, 1
 	li	a3, 40
 	addi	a2, a2, -1
@@ -41,7 +44,8 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	andi	a2, a2, 1
 	bnez	a2, .LBB4_2
 	li	a2, 16
@@ -53,7 +57,8 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 8
@@ -67,7 +72,8 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	slli	a2, a2, 63
 	slli	a1, a1, 3
 	srai	a2, a2, 63
@@ -75,7 +81,8 @@ func000000000000000e:                   # @func000000000000000e
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a2, a2, 1
 	slli	a1, a1, 3
 	addi	a2, a2, -1
@@ -83,3 +90,4 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

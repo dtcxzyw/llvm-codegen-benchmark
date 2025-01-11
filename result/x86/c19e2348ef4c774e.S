@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovneq	%rdx, %rax
@@ -6,7 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovneq	%rdx, %rax
@@ -14,3 +15,4 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
+

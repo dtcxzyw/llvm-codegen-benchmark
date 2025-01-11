@@ -1,5 +1,5 @@
-func0000000000000022:                   # @func0000000000000022
-	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+func0000000000000022:
+	movabsq	$-9223372036854775808, %rax
 	leaq	63(%rax), %rcx
 	andq	%rsi, %rcx
 	xorl	%edx, %edx
@@ -7,3 +7,4 @@ func0000000000000022:                   # @func0000000000000022
 	setbe	%dl
 	leaq	-8(%rdi,%rdx,8), %rax
 	retq
+

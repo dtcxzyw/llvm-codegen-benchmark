@@ -1,16 +1,14 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	fcvtzu	x9, d0
-	mov	w8, #16384                      // =0x4000
-	cmp	x9, #4, lsl #12                 // =16384
+	mov	w8, #16384
+	cmp	x9, #4, lsl #12
 	csel	x0, x9, x8, hi
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	fcvtzu	x9, d0
-	mov	w8, #2097152                    // =0x200000
-	cmp	x9, #512, lsl #12               // =2097152
+	mov	w8, #2097152
+	cmp	x9, #512, lsl #12
 	csel	x0, x9, x8, hi
 	ret
-                                        // -- End function
+

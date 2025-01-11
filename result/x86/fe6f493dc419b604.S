@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004a:
 	movl	$1, %eax
 	shlxq	%rdx, %rax, %rcx
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func000000000000004a:                   # @func000000000000004a
 	cmovlq	%rcx, %rax
 	andq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movq	$-1, %rax
 	shlxq	%rdx, %rax, %rcx
 	xorl	%eax, %eax
@@ -14,3 +15,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmovneq	%rcx, %rax
 	andq	%rdi, %rax
 	retq
+

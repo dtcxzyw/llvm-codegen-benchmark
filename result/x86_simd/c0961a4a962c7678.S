@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$26, %ymm1, %ymm1
@@ -7,3 +7,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

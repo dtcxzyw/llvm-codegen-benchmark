@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -8,17 +8,19 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$6, %eax
-	andl	$256, %esi                      # imm = 0x100
+	andl	$256, %esi
 	orq	%rsi, %rax
 	orq	%rdi, %rax
 	orq	$12, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andq	$-256, %rdx
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -27,3 +29,4 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rdx, %rax
 	orq	%rdi, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	leal	1(%rsi), %eax
 	leal	16(%rsi), %ecx
 	testl	%eax, %eax
@@ -9,7 +9,8 @@ func000000000000001e:                   # @func000000000000001e
 	cltq
 	leaq	512(%rdi,%rax,4), %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	leal	1(%rsi), %eax
 	leal	128(%rsi), %ecx
 	testl	%eax, %eax
@@ -20,10 +21,11 @@ func000000000000000c:                   # @func000000000000000c
 	cltq
 	leaq	74720(%rdi,%rax,2), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	incl	%esi
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -34,3 +36,4 @@ func000000000000000e:                   # @func000000000000000e
 	shlq	$10, %rax
 	leaq	180(%rdi,%rax), %rax
 	retq
+

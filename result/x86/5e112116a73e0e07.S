@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -6,7 +6,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	%eax, %ecx
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -14,7 +15,8 @@ func0000000000000074:                   # @func0000000000000074
 	cmpl	%eax, %ecx
 	setb	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -22,3 +24,4 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%eax, %ecx
 	setg	%al
 	retq
+

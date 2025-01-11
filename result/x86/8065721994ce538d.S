@@ -1,4 +1,4 @@
-func00000000000001b8:                   # @func00000000000001b8
+func00000000000001b8:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -8,7 +8,8 @@ func00000000000001b8:                   # @func00000000000001b8
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
-func00000000000001a8:                   # @func00000000000001a8
+
+func00000000000001a8:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -18,3 +19,4 @@ func00000000000001a8:                   # @func00000000000001a8
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
+

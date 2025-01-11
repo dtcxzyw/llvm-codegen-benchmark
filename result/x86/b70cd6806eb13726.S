@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	addq	$-15, %rdx
 	cmpq	%rdx, %rdi
 	seta	%cl
@@ -6,3 +6,4 @@ func0000000000000028:                   # @func0000000000000028
 	sete	%al
 	orb	%cl, %al
 	retq
+

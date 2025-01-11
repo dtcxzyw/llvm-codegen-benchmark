@@ -1,16 +1,18 @@
-func0000000000000210:                   # @func0000000000000210
+func0000000000000210:
 	li	a0, -1
 	srli	a0, a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
-func000000000000020c:                   # @func000000000000020c
+
+func000000000000020c:
 	li	a0, -1
 	srli	a0, a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000230:                   # @func0000000000000230
+
+func0000000000000230:
 	li	a0, -1
 	srli	a0, a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,3 +21,4 @@ func0000000000000230:                   # @func0000000000000230
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
+

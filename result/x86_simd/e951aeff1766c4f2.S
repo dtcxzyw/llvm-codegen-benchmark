@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
-	.byte	192                             # 0xc0
+	.byte	192
+	.byte	192
+	.byte	192
+	.byte	192
+	.byte	192
+	.byte	192
+	.byte	192
+	.byte	192
 	.zero	1
 	.zero	1
 	.zero	1
@@ -17,22 +17,23 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,192
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm0
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -43,10 +44,11 @@ func0000000000000000:                   # @func0000000000000000
 	.zero	1
 .LCPI1_1:
 	.zero	4,1
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm0
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
+

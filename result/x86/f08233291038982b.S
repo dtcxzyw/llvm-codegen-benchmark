@@ -1,12 +1,13 @@
-func000000000000042c:                   # @func000000000000042c
+func000000000000042c:
 	orq	%rdx, %rsi
 	sete	%cl
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+	movabsq	$9223372036854775807, %rax
 	cmpq	%rax, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -16,3 +17,4 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	andb	%cl, %al
 	retq
+

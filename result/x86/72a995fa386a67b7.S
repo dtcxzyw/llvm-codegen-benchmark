@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	leaq	(%rdi,%rdi), %rcx
 	testq	%rdi, %rdi
 	movq	$-1, %rax
@@ -8,7 +8,8 @@ func000000000000000a:                   # @func000000000000000a
 	testb	$1, %sil
 	cmoveq	%rdi, %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	leaq	(%rdi,%rdi), %rcx
 	testq	%rdi, %rdi
 	movq	$-1, %rax
@@ -18,3 +19,4 @@ func000000000000004a:                   # @func000000000000004a
 	testb	$1, %sil
 	cmoveq	%rdi, %rax
 	retq
+

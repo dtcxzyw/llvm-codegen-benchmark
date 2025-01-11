@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	mulw	a2, a2, a3
@@ -6,10 +6,11 @@ func000000000000000c:                   # @func000000000000000c
 	addiw	a3, a3, 1366
 	bltu	a2, a3, .LBB0_2
 	mv	a1, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	mv	a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a3, 838861
 	addi	a3, a3, -819
 	mulw	a2, a2, a3
@@ -17,9 +18,10 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a3, a3, 820
 	bltu	a2, a3, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	slli	a3, a2, 32
 	lui	a4, 233017
 	addi	a4, a4, -455
@@ -32,9 +34,10 @@ func0000000000000014:                   # @func0000000000000014
 	li	a3, 10
 	bltu	a2, a3, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	slli	a3, a2, 32
 	lui	a4, 149797
 	addi	a4, a4, -1755
@@ -51,5 +54,6 @@ func0000000000000018:                   # @func0000000000000018
 	li	a3, 1
 	bltu	a3, a2, .LBB3_2
 	mv	a0, a1
-.LBB3_2:                                # %entry
+.LBB3_2:
 	ret
+

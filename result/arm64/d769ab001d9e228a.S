@@ -1,6 +1,5 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	x9, #30479                      // =0x770f
+func0000000000000004:
+	mov	x9, #30479
 	add	x8, x1, x2
 	movk	x9, #62984, lsl #16
 	add	x8, x0, x8
@@ -9,13 +8,12 @@ func0000000000000004:                   // @func0000000000000004
 	smulh	x9, x8, x9
 	asr	x10, x9, #14
 	add	x9, x10, x9, lsr #63
-	mov	w10, #60000                     // =0xea60
+	mov	w10, #60000
 	msub	x0, x9, x10, x8
 	ret
-                                        // -- End function
-func0000000000000080:                   // @func0000000000000080
-// %bb.0:                               // %entry
-	mov	x9, #63439                      // =0xf7cf
+
+func0000000000000080:
+	mov	x9, #63439
 	add	x8, x1, x2
 	movk	x9, #58195, lsl #16
 	add	x8, x8, x0
@@ -24,13 +22,12 @@ func0000000000000080:                   // @func0000000000000080
 	smulh	x9, x8, x9
 	asr	x10, x9, #7
 	add	x9, x10, x9, lsr #63
-	mov	w10, #64536                     // =0xfc18
+	mov	w10, #64536
 	madd	x0, x9, x10, x8
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	x9, #13531                      // =0x34db
+
+func0000000000000000:
+	mov	x9, #13531
 	add	x8, x1, x2
 	movk	x9, #55222, lsl #16
 	add	x8, x0, x8
@@ -39,14 +36,13 @@ func0000000000000000:                   // @func0000000000000000
 	smulh	x9, x8, x9
 	asr	x10, x9, #18
 	add	x9, x10, x9, lsr #63
-	mov	w10, #48576                     // =0xbdc0
+	mov	w10, #48576
 	movk	w10, #65520, lsl #16
 	madd	x0, x9, x10, x8
 	ret
-                                        // -- End function
-func0000000000000095:                   // @func0000000000000095
-// %bb.0:                               // %entry
-	mov	x9, #13531                      // =0x34db
+
+func0000000000000095:
+	mov	x9, #13531
 	add	x8, x1, x2
 	movk	x9, #55222, lsl #16
 	add	x8, x8, x0
@@ -55,14 +51,13 @@ func0000000000000095:                   // @func0000000000000095
 	smulh	x9, x8, x9
 	asr	x10, x9, #18
 	add	x9, x10, x9, lsr #63
-	mov	w10, #16960                     // =0x4240
+	mov	w10, #16960
 	movk	w10, #15, lsl #16
 	msub	x0, x9, x10, x8
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
-	mov	x9, #38067                      // =0x94b3
+
+func0000000000000084:
+	mov	x9, #38067
 	add	x8, x1, x2
 	movk	x9, #9942, lsl #16
 	add	x8, x8, x0
@@ -71,8 +66,8 @@ func0000000000000084:                   // @func0000000000000084
 	smulh	x9, x8, x9
 	asr	x10, x9, #26
 	add	x9, x10, x9, lsr #63
-	mov	w10, #51712                     // =0xca00
+	mov	w10, #51712
 	movk	w10, #15258, lsl #16
 	msub	x0, x9, x10, x8
 	ret
-                                        // -- End function
+

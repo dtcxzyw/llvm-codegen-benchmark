@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andl	$31, %edx
 	cmpl	$20, %edx
 	sete	%cl
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	andl	$31, %edx
 	cmpl	$20, %edx
 	sete	%cl
@@ -16,7 +17,8 @@ func0000000000000181:                   # @func0000000000000181
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	andl	$31, %edx
 	cmpl	$27, %edx
 	setne	%cl
@@ -25,7 +27,8 @@ func000000000000002c:                   # @func000000000000002c
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	andl	$31, %edx
 	cmpl	$27, %edx
 	setne	%cl
@@ -34,7 +37,8 @@ func000000000000018c:                   # @func000000000000018c
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	andl	$6, %edx
 	cmpl	$2, %edx
 	setne	%cl
@@ -43,11 +47,13 @@ func000000000000010c:                   # @func000000000000010c
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	testb	$7, %dl
 	sete	%cl
-	cmpq	$16416, %rsi                    # imm = 0x4020
+	cmpq	$16416, %rsi
 	setae	%al
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
+

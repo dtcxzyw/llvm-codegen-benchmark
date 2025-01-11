@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func000000000000042c:                   # @func000000000000042c
+	.quad	1
+func000000000000042c:
 	vpmovsxwd	%xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm2
 	vpcmpeqd	%xmm1, %xmm2, %k1
@@ -8,3 +8,4 @@ func000000000000042c:                   # @func000000000000042c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

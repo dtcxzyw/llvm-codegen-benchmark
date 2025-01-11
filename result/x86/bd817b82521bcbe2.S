@@ -1,15 +1,17 @@
-func0000000000000085:                   # @func0000000000000085
-	andl	$32767, %esi                    # imm = 0x7FFF
+func0000000000000085:
+	andl	$32767, %esi
 	leal	-16448(%rsi), %ecx
 	testl	%esi, %esi
-	movl	$-16447, %eax                   # imm = 0xBFC1
+	movl	$-16447, %eax
 	cmovnel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
-	andl	$4095, %esi                     # imm = 0xFFF
+
+func0000000000000084:
+	andl	$4095, %esi
 	subl	$1, %esi
-	movl	$4095, %eax                     # imm = 0xFFF
+	movl	$4095, %eax
 	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
+

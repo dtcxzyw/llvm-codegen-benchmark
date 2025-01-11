@@ -1,52 +1,42 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func0000000000000005:
 	and	x8, x2, #0x1
 	add	x8, x1, x8
 	orr	x0, x0, x8, lsl #1
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000001f:
 	and	x8, x2, #0x1
 	add	x8, x1, x8
 	orr	x0, x0, x8, lsl #27
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	and	w8, w2, #0x1
 	add	w8, w1, w8
 	orr	x0, x0, x8, lsl #48
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
+
+func000000000000001e:
 	and	w8, w2, #0x1
 	add	w8, w1, w8
 	orr	x0, x0, x8, lsl #52
 	ret
-                                        // -- End function
-func000000000000001d:                   // @func000000000000001d
-// %bb.0:                               // %entry
+
+func000000000000001d:
 	and	w8, w2, #0x1
 	add	w8, w1, w8
 	orr	x0, x0, x8, lsl #32
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	and	w8, w2, #0x1
 	add	w8, w1, w8
 	orr	x0, x0, x8, lsl #52
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000001:
 	and	x8, x2, #0x1
 	add	x8, x1, x8
 	orr	x0, x0, x8, lsl #3
 	ret
-                                        // -- End function
+

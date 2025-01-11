@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpb	$1, %sil
 	movl	$102, %eax
 	movl	$198, %ecx
@@ -6,11 +6,13 @@ func0000000000000021:                   # @func0000000000000021
 	testl	%ecx, %edi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	cmpb	$2, %sil
-	movl	$-65536, %eax                   # imm = 0xFFFF0000
-	movl	$49135, %ecx                    # imm = 0xBFEF
+	movl	$-65536, %eax
+	movl	$49135, %ecx
 	cmovbl	%eax, %ecx
 	testl	%edi, %ecx
 	sete	%al
 	retq
+

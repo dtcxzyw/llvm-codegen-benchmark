@@ -1,27 +1,30 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	leal	55(%rdi,%rsi), %eax
 	movzwl	%ax, %eax
 	shrl	$3, %eax
-	imull	$9363, %eax, %eax               # imm = 0x2493
+	imull	$9363, %eax, %eax
 	shrl	$16, %eax
 	retq
-func000000000000007e:                   # @func000000000000007e
+
+func000000000000007e:
 	leal	1(%rdi,%rsi), %eax
 	movzwl	%ax, %eax
-	imull	$43691, %eax, %eax              # imm = 0xAAAB
+	imull	$43691, %eax, %eax
 	shrl	$17, %eax
 	retq
-func0000000000000076:                   # @func0000000000000076
+
+func0000000000000076:
 	leal	50(%rdi,%rsi), %eax
 	movzwl	%ax, %eax
 	shrl	$2, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %eax, %eax
 	shrl	$17, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	leal	6(%rdi,%rsi), %eax
 	movzwl	%ax, %ecx
-	imull	$9363, %ecx, %ecx               # imm = 0x2493
+	imull	$9363, %ecx, %ecx
 	shrl	$16, %ecx
 	subl	%ecx, %eax
 	movzwl	%ax, %eax
@@ -29,3 +32,4 @@ func0000000000000022:                   # @func0000000000000022
 	addl	%ecx, %eax
 	shrl	$2, %eax
 	retq
+

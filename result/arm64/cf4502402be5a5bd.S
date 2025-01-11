@@ -1,42 +1,35 @@
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func000000000000003f:
 	ubfiz	x8, x2, #8, #8
 	orr	x9, x1, x0
 	orr	x8, x9, x8
-	mov	w9, #16960                      // =0x4240
+	mov	w9, #16960
 	movk	w9, #15, lsl #16
 	mul	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000003c:                   // @func000000000000003c
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000003c:
 	ubfiz	x8, x2, #16, #8
 	orr	x9, x1, x0
 	orr	x8, x8, x9
-	mov	x9, #11                         // =0xb
+	mov	x9, #11
 	movk	x9, #5, lsl #16
 	movk	x9, #1792, lsl #32
 	movk	x9, #768, lsl #48
 	mul	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
-	mov	x8, #3170893824                 // =0xbd000000
+
+func0000000000000038:
+	mov	x8, #3170893824
 	orr	x9, x0, x1
 	movk	x8, #13735, lsl #32
 	movk	x8, #30, lsl #48
 	mul	x0, x9, x8
 	ret
-                                        // -- End function
-func000000000000003d:                   // @func000000000000003d
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000003d:
 	ubfiz	x8, x2, #8, #8
 	orr	x9, x1, x0
 	orr	x8, x9, x8
 	sub	x0, x8, x8, lsl #3
 	ret
-                                        // -- End function
+

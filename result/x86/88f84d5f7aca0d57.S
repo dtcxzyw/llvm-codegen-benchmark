@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	shrq	$2, %rdx
 	andl	$1, %esi
 	negq	%rsi
@@ -7,3 +7,4 @@ func000000000000000b:                   # @func000000000000000b
 	cmoveq	%rsi, %rax
 	addq	%rdx, %rax
 	retq
+

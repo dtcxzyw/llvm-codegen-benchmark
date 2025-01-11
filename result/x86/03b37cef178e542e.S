@@ -1,4 +1,4 @@
-func000000000000030f:                   # @func000000000000030f
+func000000000000030f:
 	xorl	%eax, %eax
 	cmpb	$3, %dl
 	setne	%al
@@ -6,7 +6,8 @@ func000000000000030f:                   # @func000000000000030f
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000004f:                   # @func000000000000004f
+
+func000000000000004f:
 	xorl	%eax, %eax
 	cmpb	$-1, %dl
 	sete	%al
@@ -14,7 +15,8 @@ func000000000000004f:                   # @func000000000000004f
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	sete	%al
@@ -22,3 +24,4 @@ func000000000000004c:                   # @func000000000000004c
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+

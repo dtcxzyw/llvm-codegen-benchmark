@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	testl	%esi, %esi
 	sete	%cl
 	addb	$-8, %dil
@@ -6,3 +6,4 @@ func0000000000000421:                   # @func0000000000000421
 	setne	%al
 	andb	%cl, %al
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	add	x8, x1, x0
 	neg	x9, x1
 	sub	x8, x8, #1
@@ -7,9 +6,8 @@ func0000000000000001:                   // @func0000000000000001
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	add	x8, x0, x1
 	neg	x9, x1
 	sub	x8, x8, #1
@@ -17,9 +15,8 @@ func0000000000000084:                   // @func0000000000000084
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000201:                   // @func0000000000000201
-// %bb.0:                               // %entry
+
+func0000000000000201:
 	add	x8, x0, x1
 	neg	x9, x1
 	sub	x8, x8, #1
@@ -27,9 +24,8 @@ func0000000000000201:                   // @func0000000000000201
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	add	x8, x1, x0
 	neg	x9, x1
 	sub	x8, x8, #1
@@ -37,9 +33,8 @@ func0000000000000004:                   // @func0000000000000004
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	add	x8, x0, x1
 	neg	x9, x1
 	add	x8, x8, #62
@@ -47,9 +42,8 @@ func0000000000000008:                   // @func0000000000000008
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000281:                   // @func0000000000000281
-// %bb.0:                               // %entry
+
+func0000000000000281:
 	add	x8, x1, x0
 	neg	x9, x1
 	sub	x8, x8, #1
@@ -57,4 +51,4 @@ func0000000000000281:                   // @func0000000000000281
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
+

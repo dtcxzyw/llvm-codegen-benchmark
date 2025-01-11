@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	movl	%edx, %eax
 	leaq	(%rax,%rax), %rcx
 	shlq	$31, %rax
@@ -7,3 +7,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	setb	%al
 	orb	%dil, %al
 	retq
+

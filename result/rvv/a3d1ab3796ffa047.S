@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	lui	a0, 4
 	addi	a0, a0, -358
 	vsetivli	zero, 4, e16, mf2, ta, ma
@@ -11,7 +11,8 @@ func0000000000000041:                   # @func0000000000000041
 	vsext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	li	a0, 184
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmv.v.x	v11, a0
@@ -23,3 +24,4 @@ func0000000000000046:                   # @func0000000000000046
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
+

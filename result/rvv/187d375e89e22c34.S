@@ -1,4 +1,4 @@
-func000000000000310c:                   # @func000000000000310c
+func000000000000310c:
 	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v12, v8, v12
@@ -9,3 +9,4 @@ func000000000000310c:                   # @func000000000000310c
 	vmandn.mm	v8, v14, v8
 	vmor.mm	v0, v9, v8
 	ret
+

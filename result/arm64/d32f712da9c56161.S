@@ -1,5 +1,4 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -7,9 +6,8 @@ func0000000000000181:                   // @func0000000000000181
 	cmn	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000184:                   // @func0000000000000184
-// %bb.0:                               // %entry
+
+func0000000000000184:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -18,9 +16,8 @@ func0000000000000184:                   // @func0000000000000184
 	cmp	w8, #8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
+
+func00000000000001e1:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -29,9 +26,8 @@ func00000000000001e1:                   // @func00000000000001e1
 	cmp	w8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001f8:                   // @func00000000000001f8
-// %bb.0:                               // %entry
+
+func00000000000001f8:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -40,9 +36,8 @@ func00000000000001f8:                   // @func00000000000001f8
 	cmp	w8, #64
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
+
+func0000000000000188:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -51,9 +46,8 @@ func0000000000000188:                   // @func0000000000000188
 	cmp	w8, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -61,4 +55,4 @@ func000000000000018c:                   // @func000000000000018c
 	cmn	w0, w8
 	cset	w0, ne
 	ret
-                                        // -- End function
+

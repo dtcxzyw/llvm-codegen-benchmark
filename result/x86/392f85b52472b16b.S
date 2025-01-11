@@ -1,4 +1,4 @@
-func0000000000003f18:                   # @func0000000000003f18
+func0000000000003f18:
 	leaq	8(%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%cl
@@ -7,3 +7,4 @@ func0000000000003f18:                   # @func0000000000003f18
 	seta	%al
 	orb	%cl, %al
 	retq
+

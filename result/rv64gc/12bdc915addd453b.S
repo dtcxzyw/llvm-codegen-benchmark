@@ -1,4 +1,4 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000211:
 	andi	a3, a2, 255
 	li	a4, 6
 	andi	a2, a1, 255
@@ -11,12 +11,13 @@ func0000000000000211:                   # @func0000000000000211
 	li	a1, -87
 	li	a3, 10
 	bgeu	a2, a3, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	li	a1, -48
-.LBB0_4:                                # %entry
+.LBB0_4:
 	addw	a0, a0, a1
 	ret
-func0000000000000210:                   # @func0000000000000210
+
+func0000000000000210:
 	andi	a3, a2, 255
 	li	a4, 6
 	andi	a2, a1, 255
@@ -29,12 +30,13 @@ func0000000000000210:                   # @func0000000000000210
 	li	a1, -87
 	li	a3, 10
 	bgeu	a2, a3, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	li	a1, -48
-.LBB1_4:                                # %entry
+.LBB1_4:
 	addw	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	slli	a1, a1, 56
 	bltz	a1, .LBB2_2
 	li	a1, 1
@@ -47,7 +49,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	xori	a1, a1, 3
 	addw	a0, a0, a1
 	ret
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	andi	a2, a2, 255
 	li	a3, 6
 	andi	a1, a1, 255
@@ -65,7 +68,8 @@ func0000000000000085:                   # @func0000000000000085
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	andi	a2, a2, 255
 	li	a3, 6
 	andi	a1, a1, 255
@@ -83,3 +87,4 @@ func0000000000000084:                   # @func0000000000000084
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+

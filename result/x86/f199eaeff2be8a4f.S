@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	addq	$2, %rcx
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	divq	%rcx
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -14,7 +15,8 @@ func000000000000000b:                   # @func000000000000000b
 	divq	%rcx
 	addq	%rdi, %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -22,7 +24,8 @@ func000000000000001b:                   # @func000000000000001b
 	divq	%rcx
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -30,3 +33,4 @@ func0000000000000018:                   # @func0000000000000018
 	divq	%rcx
 	leaq	(%rdi,%rax,4), %rax
 	retq
+

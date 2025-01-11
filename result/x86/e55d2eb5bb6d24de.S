@@ -1,14 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%esi, %eax
 	rolw	$8, %ax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	movzwl	%ax, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%esi, %eax
 	rolw	$8, %ax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	movzwl	%ax, %eax
 	retq
+

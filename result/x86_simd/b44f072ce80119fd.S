@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -8,9 +8,10 @@ func0000000000000302:                   # @func0000000000000302
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	5                               # 0x5
-func0000000000000102:                   # @func0000000000000102
+	.long	5
+func0000000000000102:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
@@ -20,3 +21,4 @@ func0000000000000102:                   # @func0000000000000102
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

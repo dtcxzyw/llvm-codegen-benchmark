@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x40800000                      # float 4
-func0000000000000000:                   # @func0000000000000000
+	.long	0x40800000
+func0000000000000000:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -9,3 +9,4 @@ func0000000000000000:                   # @func0000000000000000
 	vextractf64x4	$1, %zmm1, %ymm1
 	vcvtps2pd	%ymm1, %zmm1
 	retq
+

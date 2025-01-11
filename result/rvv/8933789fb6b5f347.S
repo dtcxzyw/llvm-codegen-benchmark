@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	lui	a0, 717447
 	addi	a0, a0, -1077
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -13,3 +13,4 @@ func0000000000000061:                   # @func0000000000000061
 	vrsub.vx	v8, v10, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
+

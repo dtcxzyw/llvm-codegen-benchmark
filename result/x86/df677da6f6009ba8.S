@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -14,7 +15,8 @@ func000000000000000e:                   # @func000000000000000e
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -22,7 +24,8 @@ func000000000000001f:                   # @func000000000000001f
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -30,7 +33,8 @@ func0000000000000000:                   # @func0000000000000000
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -38,7 +42,8 @@ func0000000000000010:                   # @func0000000000000010
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movq	%rdx, %rax
 	addq	%r8, %rax
 	adcq	$0, %rcx
@@ -46,3 +51,4 @@ func000000000000000a:                   # @func000000000000000a
 	adcq	%rsi, %rcx
 	movq	%rcx, %rdx
 	retq
+

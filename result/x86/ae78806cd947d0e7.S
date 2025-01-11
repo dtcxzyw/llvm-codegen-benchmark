@@ -1,17 +1,19 @@
-func000000000000042c:                   # @func000000000000042c
-	andl	$256, %edx                      # imm = 0x100
+func000000000000042c:
+	andl	$256, %edx
 	orq	%rsi, %rdx
 	sete	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	movb	$48, %al
 	bzhiq	%rax, %rdx, %rax
 	orq	%rsi, %rax
 	setne	%cl
-	cmpq	$16382, %rdi                    # imm = 0x3FFE
+	cmpq	$16382, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
+

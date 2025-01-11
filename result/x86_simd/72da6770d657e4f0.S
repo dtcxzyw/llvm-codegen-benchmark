@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,26 +16,27 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI0_2:
 	.zero	4,3
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
+	vpmovzxbd	%xmm1, %ymm1
+	vpbroadcastd	.LCPI0_1(%rip), %ymm2
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
 	.zero	1
 	.zero	1
 	.zero	1
@@ -45,14 +46,15 @@ func000000000000000f:                   # @func000000000000000f
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI1_2:
 	.zero	4,7
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
+	vpmovzxbd	%xmm1, %ymm1
+	vpbroadcastd	.LCPI1_1(%rip), %ymm2
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
+

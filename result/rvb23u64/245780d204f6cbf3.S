@@ -1,4 +1,4 @@
-func0000000000000caa:                   # @func0000000000000caa
+func0000000000000caa:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa2
 	fle.d	a1, fa1, fa5
@@ -6,7 +6,8 @@ func0000000000000caa:                   # @func0000000000000caa
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000888:                   # @func0000000000000888
+
+func0000000000000888:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
@@ -14,9 +15,10 @@ func0000000000000888:                   # @func0000000000000888
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308
-func0000000000000aaa:                   # @func0000000000000aaa
+	.quad	0x7fefffffffffffff
+func0000000000000aaa:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fle.d	a0, fa2, fa5
@@ -25,13 +27,14 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+
 .LCPI3_0:
-	.quad	0x3fb999999999999a              # double 0.10000000000000001
+	.quad	0x3fb999999999999a
 .LCPI3_1:
-	.quad	0x3fa999999999999a              # double 0.050000000000000003
+	.quad	0x3fa999999999999a
 .LCPI3_2:
-	.quad	0xbfb999999999999a              # double -0.10000000000000001
-func0000000000000224:                   # @func0000000000000224
+	.quad	0xbfb999999999999a
+func0000000000000224:
 	lui	a0, %hi(.LCPI3_0)
 	lui	a1, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a0)
@@ -44,7 +47,8 @@ func0000000000000224:                   # @func0000000000000224
 	flt.d	a1, fa3, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000777:                   # @func0000000000000777
+
+func0000000000000777:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
@@ -54,11 +58,12 @@ func0000000000000777:                   # @func0000000000000777
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+
 .LCPI5_0:
-	.quad	0x40862e42fefa39ef              # double 709.78271289338397
+	.quad	0x40862e42fefa39ef
 .LCPI5_1:
-	.quad	0x406573fae561f647              # double 171.62437695630271
-func0000000000000222:                   # @func0000000000000222
+	.quad	0x406573fae561f647
+func0000000000000222:
 	lui	a0, %hi(.LCPI5_0)
 	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
@@ -69,7 +74,8 @@ func0000000000000222:                   # @func0000000000000222
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func0000000000000111:                   # @func0000000000000111
+
+func0000000000000111:
 	feq.d	a0, fa2, fa2
 	feq.d	a1, fa1, fa1
 	not	a1, a1
@@ -78,11 +84,12 @@ func0000000000000111:                   # @func0000000000000111
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+
 .LCPI7_0:
-	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+	.quad	0x3ddb7cdfd9d7bdbb
 .LCPI7_1:
-	.quad	0x4009220092718f51              # double 3.1416026535897932
-func00000000000004a4:                   # @func00000000000004a4
+	.quad	0x4009220092718f51
+func00000000000004a4:
 	lui	a0, %hi(.LCPI7_0)
 	lui	a1, %hi(.LCPI7_1)
 	fld	fa5, %lo(.LCPI7_0)(a0)
@@ -93,7 +100,8 @@ func00000000000004a4:                   # @func00000000000004a4
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000c22:                   # @func0000000000000c22
+
+func0000000000000c22:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa2
 	flt.d	a1, fa1, fa5
@@ -101,9 +109,10 @@ func0000000000000c22:                   # @func0000000000000c22
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+
 .LCPI9_0:
-	.quad	0xbd71979980000000              # double -9.999999960041972E-13
-func0000000000000444:                   # @func0000000000000444
+	.quad	0xbd71979980000000
+func0000000000000444:
 	lui	a0, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a0)
 	flt.d	a0, fa5, fa2
@@ -112,7 +121,8 @@ func0000000000000444:                   # @func0000000000000444
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000666:                   # @func0000000000000666
+
+func0000000000000666:
 	fli.d	fa5, inf
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa5
@@ -120,10 +130,12 @@ func0000000000000666:                   # @func0000000000000666
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func0000000000000eee:                   # @func0000000000000eee
+
+func0000000000000eee:
 	feq.d	a0, fa2, fa2
 	feq.d	a1, fa1, fa1
 	and	a0, a0, a1
 	feq.d	a1, fa0, fa0
 	and	a0, a0, a1
 	ret
+

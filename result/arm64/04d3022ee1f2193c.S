@@ -1,47 +1,41 @@
-func00000000000000ef:                   // @func00000000000000ef
-// %bb.0:                               // %entry
+func00000000000000ef:
 	mov	w8, w1
 	add	x8, x8, #7
 	add	x8, x0, x8, lsr #3
 	add	x0, x8, #5
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	mov	w8, w1
-	mov	w9, #20                         // =0x14
+	mov	w9, #20
 	sub	x8, x8, #3120
 	lsr	x8, x8, #3
 	madd	x8, x8, x9, x0
 	add	x0, x8, #2912
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func000000000000002f:
 	ubfiz	x8, x1, #2, #32
-	add	x9, x0, #256, lsl #12           // =1048576
+	add	x9, x0, #256, lsl #12
 	add	x9, x9, #16
 	sub	x8, x8, #8
 	and	x8, x8, #0xfffffffffffffff8
 	add	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	mov	w8, w1
 	add	x8, x8, #3
 	and	x8, x8, #0x1fffffffc
 	add	x8, x0, x8
 	add	x0, x8, #12
 	ret
-                                        // -- End function
-func00000000000000a0:                   // @func00000000000000a0
-// %bb.0:                               // %entry
+
+func00000000000000a0:
 	mov	w8, w1
 	sub	x8, x8, #8
 	and	x8, x8, #0xfffffffffffffffc
 	add	x8, x0, x8
 	add	x0, x8, #8
 	ret
-                                        // -- End function
+

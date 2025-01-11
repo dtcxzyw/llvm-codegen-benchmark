@@ -1,20 +1,22 @@
-func00000000000000a4:                   # @func00000000000000a4
-	cmpl	$65535, %esi                    # imm = 0xFFFF
+func00000000000000a4:
+	cmpl	$65535, %esi
 	sete	%cl
 	addl	$-9, %edi
 	cmpl	$8, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000624:                   # @func0000000000000624
+
+func0000000000000624:
 	testl	%esi, %esi
 	sete	%cl
-	addl	$-9001, %edi                    # imm = 0xDCD7
+	addl	$-9001, %edi
 	cmpl	$2, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	testl	%esi, %esi
 	setne	%cl
 	decl	%edi
@@ -22,7 +24,8 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
+
+func0000000000000204:
 	cmpl	$2, %esi
 	setb	%cl
 	addl	$-55, %edi
@@ -30,7 +33,8 @@ func0000000000000204:                   # @func0000000000000204
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000324:                   # @func0000000000000324
+
+func0000000000000324:
 	testl	%esi, %esi
 	setle	%cl
 	addl	$-6, %edi
@@ -38,7 +42,8 @@ func0000000000000324:                   # @func0000000000000324
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000404:                   # @func0000000000000404
+
+func0000000000000404:
 	cmpl	$4, %esi
 	setb	%cl
 	addl	$-2, %edi
@@ -46,7 +51,8 @@ func0000000000000404:                   # @func0000000000000404
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000224:                   # @func0000000000000224
+
+func0000000000000224:
 	cmpl	$5, %esi
 	setae	%cl
 	decl	%edi
@@ -54,18 +60,21 @@ func0000000000000224:                   # @func0000000000000224
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000304:                   # @func0000000000000304
+
+func0000000000000304:
 	cmpl	$3, %esi
 	setl	%cl
 	addl	$127, %edi
-	cmpl	$256, %edi                      # imm = 0x100
+	cmpl	$256, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	testl	%esi, %esi
 	setle	%cl
 	cmpl	$7, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
+

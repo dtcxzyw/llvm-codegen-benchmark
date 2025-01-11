@@ -1,6 +1,6 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	addi	sp, sp, -16
-	sd	ra, 8(sp)                       # 8-byte Folded Spill
+	sd	ra, 8(sp)
 	mv	a6, a3
 	mv	a5, a1
 	mv	a3, a0
@@ -9,6 +9,7 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a2, a3
 	mv	a3, a5
 	call	__udivti3
-	ld	ra, 8(sp)                       # 8-byte Folded Reload
+	ld	ra, 8(sp)
 	addi	sp, sp, 16
 	ret
+

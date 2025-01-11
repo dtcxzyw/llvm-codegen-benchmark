@@ -1,11 +1,12 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	incb	%dl
 	setns	%cl
 	cmpl	%esi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	incb	%dl
 	cmpb	$3, %dl
 	setl	%cl
@@ -13,3 +14,4 @@ func00000000000000c6:                   # @func00000000000000c6
 	setl	%al
 	andb	%cl, %al
 	retq
+

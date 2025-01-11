@@ -1,14 +1,14 @@
 .LCPI0_0:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-func0000000000000009:                   # @func0000000000000009
-	vpmullw	.LCPI0_0(%rip), %xmm1, %xmm1    # [36,36,36,36,36,36,36,36]
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+func0000000000000009:
+	vpmullw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %ecx
 	vpextrw	$1, %xmm1, %eax
 	xorl	%edx, %edx
@@ -50,9 +50,10 @@ func0000000000000009:                   # @func0000000000000009
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$7, %eax, %xmm2, %xmm0
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpsllw	$8, %xmm1, %xmm2
 	vpsubw	%xmm1, %xmm2, %xmm1
 	vpextrw	$1, %xmm1, %eax
@@ -96,19 +97,20 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$7, %eax, %xmm2, %xmm0
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-func0000000000000000:                   # @func0000000000000000
-	vpmullw	.LCPI2_0(%rip), %xmm1, %xmm1    # [10,10,10,10,10,10,10,10]
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+func0000000000000000:
+	vpmullw	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %ecx
 	vpextrw	$1, %xmm1, %eax
 	xorl	%edx, %edx
@@ -150,5 +152,6 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$7, %eax, %xmm2, %xmm0
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	retq
+

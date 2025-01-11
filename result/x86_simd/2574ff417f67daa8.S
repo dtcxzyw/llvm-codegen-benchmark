@@ -1,10 +1,12 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	vpsraq	$2, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpmaxuq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vpsraq	$4, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpmaxuq	%ymm1, %ymm0, %ymm0
 	retq
+

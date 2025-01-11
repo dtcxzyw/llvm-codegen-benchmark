@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v8
 	lui	a0, 131072
@@ -8,7 +8,8 @@ func0000000000000050:                   # @func0000000000000050
 	vmfeq.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
-func0000000000000244:                   # @func0000000000000244
+
+func0000000000000244:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v8
 	lui	a0, 212992
@@ -18,7 +19,8 @@ func0000000000000244:                   # @func0000000000000244
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
-func0000000000000248:                   # @func0000000000000248
+
+func0000000000000248:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v8
 	lui	a0, 212992
@@ -28,7 +30,8 @@ func0000000000000248:                   # @func0000000000000248
 	vmfgt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
-func0000000000000124:                   # @func0000000000000124
+
+func0000000000000124:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v8
 	li	a0, 897
@@ -39,7 +42,8 @@ func0000000000000124:                   # @func0000000000000124
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v8
 	li	a0, 129
@@ -50,7 +54,8 @@ func0000000000000108:                   # @func0000000000000108
 	vmfgt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
-func0000000000000134:                   # @func0000000000000134
+
+func0000000000000134:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v8
 	li	a0, 897
@@ -61,3 +66,4 @@ func0000000000000134:                   # @func0000000000000134
 	vmfle.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
+

@@ -1,15 +1,16 @@
 .LCPI0_0:
-	.quad	0x0010000000000000              # double 2.2250738585072014E-308
-func00000000000006c2:                   # @func00000000000006c2
+	.quad	0x0010000000000000
+func00000000000006c2:
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
-	vmovsd	.LCPI0_0(%rip), %xmm1           # xmm1 = [2.2250738585072014E-308,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000006c8:                   # @func00000000000006c8
+
+func00000000000006c8:
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
@@ -20,3 +21,4 @@ func00000000000006c8:                   # @func00000000000006c8
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
+

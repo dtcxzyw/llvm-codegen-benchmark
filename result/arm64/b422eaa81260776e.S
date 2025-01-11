@@ -1,15 +1,13 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+func0000000000000061:
 	lsl	x8, x2, #1
 	tst	w1, #0xff
 	csinc	x0, x0, x8, ne
 	ret
-                                        // -- End function
-func00000000000000e1:                   // @func00000000000000e1
-// %bb.0:                               // %entry
+
+func00000000000000e1:
 	lsl	x8, x2, #1
-	mov	w9, #255                        // =0xff
+	mov	w9, #255
 	bics	wzr, w9, w1
 	csinc	x0, x0, x8, ne
 	ret
-                                        // -- End function
+

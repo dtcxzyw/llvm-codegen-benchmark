@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	incq	%rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
@@ -6,7 +6,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpq	$8, %rdi
 	setb	%al
 	retq
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	incq	%rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
@@ -14,7 +15,8 @@ func00000000000000b4:                   # @func00000000000000b4
 	cmpq	$4, %rdi
 	setb	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	incq	%rsi
 	incq	%rdi
 	cmpq	%rdi, %rsi
@@ -22,3 +24,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	shrq	$61, %rdi
 	setne	%al
 	retq
+

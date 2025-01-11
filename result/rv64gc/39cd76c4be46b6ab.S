@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -8,7 +8,8 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -18,7 +19,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	li	a3, 11
@@ -31,7 +33,8 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -41,7 +44,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	slli	a1, a1, 48
 	sext.w	a2, a2
 	srli	a1, a1, 48
@@ -50,7 +54,8 @@ func0000000000000084:                   # @func0000000000000084
 	sltiu	a1, a1, 3
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	slli	a1, a1, 48
 	sext.w	a2, a2
 	srli	a1, a1, 48
@@ -60,7 +65,8 @@ func0000000000000024:                   # @func0000000000000024
 	sltiu	a1, a1, 3
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srai	a0, a0, 48
@@ -71,7 +77,8 @@ func000000000000002a:                   # @func000000000000002a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -81,3 +88,4 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

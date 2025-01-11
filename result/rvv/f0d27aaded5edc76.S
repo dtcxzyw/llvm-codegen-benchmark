@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	lui	a0, 280480
 	fmv.w.x	fa5, zero
 	fmv.w.x	fa4, a0
@@ -11,3 +11,4 @@ func0000000000000042:                   # @func0000000000000042
 	vmv1r.v	v0, v8
 	vmerge.vim	v8, v12, 0, v0
 	ret
+

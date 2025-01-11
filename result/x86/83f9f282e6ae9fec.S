@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	testl	%edx, %edx
 	cmovneq	%rsi, %rdi
 	testq	%rdi, %rdi
@@ -6,7 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	setg	%al
 	subb	%cl, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	testl	%edx, %edx
 	cmovneq	%rsi, %rdi
 	testq	%rdi, %rdi
@@ -14,3 +15,4 @@ func0000000000000002:                   # @func0000000000000002
 	setg	%al
 	subb	%cl, %al
 	retq
+

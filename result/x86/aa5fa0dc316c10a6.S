@@ -1,6 +1,6 @@
-func0000000000000000:                   # @func0000000000000000
-	imulq	$16807, %rsi, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+func0000000000000000:
+	imulq	$16807, %rsi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -16,9 +16,10 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rax, %rdi
 	leaq	-1(%rdi,%rcx), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	imulq	$16807, %rsi, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func0000000000000015:
+	imulq	$16807, %rsi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -34,9 +35,10 @@ func0000000000000015:                   # @func0000000000000015
 	subq	%rax, %rdi
 	leaq	-1(%rdi,%rcx), %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	imulq	$16807, %rsi, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func0000000000000035:
+	imulq	$16807, %rsi, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -52,3 +54,4 @@ func0000000000000035:                   # @func0000000000000035
 	subq	%rax, %rdi
 	leaq	-1(%rdi,%rcx), %rax
 	retq
+

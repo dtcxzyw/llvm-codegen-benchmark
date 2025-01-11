@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
@@ -7,7 +7,8 @@ func000000000000000d:                   # @func000000000000000d
 	bclri	a0, a0, 26
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
@@ -16,3 +17,4 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, -17
 	or	a0, a0, a1
 	ret
+

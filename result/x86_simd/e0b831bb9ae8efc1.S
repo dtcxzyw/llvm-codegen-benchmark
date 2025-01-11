@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpmovqd	%ymm2, %xmm3
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpextrd	$1, %xmm0, %eax
@@ -22,5 +22,6 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

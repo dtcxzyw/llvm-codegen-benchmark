@@ -1,35 +1,38 @@
 .LCPI0_0:
-	.word	0x42b0c0a5                      # float 88.3762589
-func0000000000000004:                   # @func0000000000000004
+	.word	0x42b0c0a5
+func0000000000000004:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	flt.s	a0, fa5, fa2
 	beqz	a0, .LBB0_2
 	lui	a0, 522240
 	fmv.w.x	fa1, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	fmul.s	fa0, fa0, fa1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa2, fa5
 	beqz	a0, .LBB1_2
 	li	a0, -1
 	fmv.w.x	fa1, a0
-.LBB1_2:                                # %entry
+.LBB1_2:
 	fmul.s	fa0, fa1, fa0
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 215040
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa2, fa5
 	beqz	a0, .LBB2_2
 	fmv.w.x	fa1, zero
-.LBB2_2:                                # %entry
+.LBB2_2:
 	fmul.s	fa0, fa1, fa0
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa2, fa5
@@ -37,53 +40,59 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a1
 	bnez	a0, .LBB3_2
 	fmv.w.x	fa1, zero
-.LBB3_2:                                # %entry
+.LBB3_2:
 	fmul.s	fa0, fa0, fa1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa2
 	bnez	a0, .LBB4_2
 	li	a0, -1
 	fmv.w.x	fa1, a0
-.LBB4_2:                                # %entry
+.LBB4_2:
 	fmul.s	fa0, fa0, fa1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa2, fa5
 	bnez	a0, .LBB5_2
 	fmv.s	fa5, fa1
-.LBB5_2:                                # %entry
+.LBB5_2:
 	fmul.s	fa0, fa0, fa5
 	ret
+
 .LCPI6_0:
-	.word	0x322bcc77                      # float 9.99999993E-9
-func000000000000000b:                   # @func000000000000000b
+	.word	0x322bcc77
+func000000000000000b:
 	lui	a0, %hi(.LCPI6_0)
 	flw	fa5, %lo(.LCPI6_0)(a0)
 	flt.s	a0, fa5, fa2
 	bnez	a0, .LBB6_2
 	fmv.w.x	fa1, zero
-.LBB6_2:                                # %entry
+.LBB6_2:
 	fmul.s	fa0, fa0, fa1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	feq.s	a0, fa2, fa2
 	bnez	a0, .LBB7_2
 	lui	a0, 523264
 	fmv.w.x	fa1, a0
-.LBB7_2:                                # %entry
+.LBB7_2:
 	fmul.s	fa0, fa0, fa1
 	ret
+
 .LCPI8_0:
-	.word	0x4095ec57                      # float 4.68510008
-func0000000000000005:                   # @func0000000000000005
+	.word	0x4095ec57
+func0000000000000005:
 	lui	a0, %hi(.LCPI8_0)
 	flw	fa5, %lo(.LCPI8_0)(a0)
 	fle.s	a0, fa2, fa5
 	bnez	a0, .LBB8_2
 	fmv.w.x	fa1, zero
-.LBB8_2:                                # %entry
+.LBB8_2:
 	fmul.s	fa0, fa1, fa0
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	xori	a3, a1, 1
 	sext.w	a2, a2
 	addi	a2, a2, -6
@@ -7,3 +7,4 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

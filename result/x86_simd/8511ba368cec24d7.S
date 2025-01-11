@@ -6,7 +6,7 @@
 	.zero	16,208
 .LCPI0_3:
 	.zero	16,69
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k0
 	vpaddb	.LCPI0_2(%rip), %xmm0, %xmm0
@@ -14,6 +14,7 @@ func0000000000000108:                   # @func0000000000000108
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+
 .LCPI1_0:
 	.zero	16,32
 .LCPI1_1:
@@ -22,7 +23,7 @@ func0000000000000108:                   # @func0000000000000108
 	.zero	16,127
 .LCPI1_3:
 	.zero	16,31
-func0000000000002908:                   # @func0000000000002908
+func0000000000002908:
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0
 	vpaddb	.LCPI1_2(%rip), %xmm0, %xmm0
@@ -30,3 +31,4 @@ func0000000000002908:                   # @func0000000000002908
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+

@@ -1,14 +1,13 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	cmp	x1, x2
-	mov	x9, #9223372036854775744        // =0x7fffffffffffffc0
+	mov	x9, #9223372036854775744
 	csel	x8, x1, x2, hi
 	add	x8, x8, x1
 	cmp	x8, x9
 	csel	x8, x8, x9, lo
 	tst	w0, #0x1
-	mov	x9, #9223372036854775807        // =0x7fffffffffffffff
+	mov	x9, #9223372036854775807
 	add	x8, x8, #63
 	csel	x0, x9, x8, ne
 	ret
-                                        // -- End function
+

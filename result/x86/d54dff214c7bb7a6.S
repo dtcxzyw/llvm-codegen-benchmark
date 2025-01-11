@@ -1,11 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andl	$1, %esi
-	movl	$2050, %eax                     # imm = 0x802
+	movl	$2050, %eax
 	subl	%esi, %eax
 	testw	%di, %ax
 	sete	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -14,3 +15,4 @@ func000000000000000c:                   # @func000000000000000c
 	testw	%ax, %di
 	setne	%al
 	retq
+

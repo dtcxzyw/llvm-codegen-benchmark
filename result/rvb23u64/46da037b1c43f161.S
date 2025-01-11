@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	slli	a0, a0, 1
 	flt.d	a1, fa0, fa1
 	addi	a2, a0, 2
@@ -7,7 +7,8 @@ func0000000000000012:                   # @func0000000000000012
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	slli	a0, a0, 1
 	flt.d	a1, fa1, fa0
 	addi	a2, a0, 2
@@ -16,3 +17,4 @@ func0000000000000014:                   # @func0000000000000014
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

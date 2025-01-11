@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	leaq	(,%rdx,4), %rcx
 	testb	$1, %sil
 	movl	$8, %eax
@@ -7,7 +7,8 @@ func000000000000001b:                   # @func000000000000001b
 	cmovbeq	%rdi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	leaq	(%rdx,%rdx), %rcx
 	testb	$1, %sil
 	movl	$8, %eax
@@ -16,7 +17,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovbeq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	leaq	(%rdx,%rdx), %rcx
 	testb	$1, %sil
 	movl	$8, %eax
@@ -25,7 +27,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovbeq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	leaq	(%rdx,%rdx), %rcx
 	testb	$1, %sil
 	movl	$16, %eax
@@ -34,7 +37,8 @@ func0000000000000017:                   # @func0000000000000017
 	cmovbeq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	leaq	(%rdx,%rdx), %rcx
 	testb	$1, %sil
 	movl	$16, %eax
@@ -43,3 +47,4 @@ func000000000000001f:                   # @func000000000000001f
 	cmovbeq	%rdi, %rax
 	shlq	$2, %rax
 	retq
+

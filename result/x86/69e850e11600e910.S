@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	shrq	$2, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	shrq	$7, %rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -15,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
+

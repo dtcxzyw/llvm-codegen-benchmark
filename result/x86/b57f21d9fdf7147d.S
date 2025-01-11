@@ -1,28 +1,31 @@
-func0000000000000226:                   # @func0000000000000226
+func0000000000000226:
 	leaq	-9(%rdi), %rax
 	addq	$3, %rdi
-	cmpq	$1530, %rsi                     # imm = 0x5FA
+	cmpq	$1530, %rsi
 	cmovaeq	%rax, %rdi
 	cmpq	$3, %rdi
 	setl	%al
 	retq
-func000000000000052a:                   # @func000000000000052a
+
+func000000000000052a:
 	notq	%rsi
 	sarq	$63, %rsi
 	orq	$1, %rsi
 	addq	%rdi, %rsi
 	setns	%al
 	retq
-func0000000000000408:                   # @func0000000000000408
-	movabsq	$-100000000000000000, %rax      # imm = 0xFE9CBA87A2760000
+
+func0000000000000408:
+	movabsq	$-100000000000000000, %rax
 	addq	%rdi, %rax
-	movabsq	$99999999999999999, %rcx        # imm = 0x16345785D89FFFF
+	movabsq	$99999999999999999, %rcx
 	cmpq	%rcx, %rsi
 	cmovbeq	%rdi, %rax
 	cmpq	$100, %rax
 	setae	%al
 	retq
-func0000000000000608:                   # @func0000000000000608
+
+func0000000000000608:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -31,7 +34,8 @@ func0000000000000608:                   # @func0000000000000608
 	cmpq	$16, %rax
 	setae	%al
 	retq
-func0000000000000228:                   # @func0000000000000228
+
+func0000000000000228:
 	shrq	$62, %rsi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
@@ -40,7 +44,8 @@ func0000000000000228:                   # @func0000000000000228
 	cmpq	$253, %rax
 	setae	%al
 	retq
-func000000000000022c:                   # @func000000000000022c
+
+func000000000000022c:
 	shrq	$62, %rsi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
@@ -49,7 +54,8 @@ func000000000000022c:                   # @func000000000000022c
 	cmpq	$253, %rax
 	setne	%al
 	retq
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setle	%al
@@ -57,7 +63,8 @@ func0000000000000321:                   # @func0000000000000321
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	xorl	%eax, %eax
 	cmpq	$9, %rsi
 	setge	%al
@@ -66,3 +73,4 @@ func0000000000000308:                   # @func0000000000000308
 	shrq	$60, %rax
 	setne	%al
 	retq
+

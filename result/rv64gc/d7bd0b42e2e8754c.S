@@ -1,4 +1,4 @@
-func00000000000004c1:                   # @func00000000000004c1
+func00000000000004c1:
 	srli	a2, a2, 5
 	lui	a3, 699051
 	addi	a3, a3, -1365
@@ -10,9 +10,10 @@ func00000000000004c1:                   # @func00000000000004c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func00000000000000c1:                   # @func00000000000000c1
+	.quad	3074457345618258603
+func00000000000000c1:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	mulh	a2, a2, a3
@@ -26,3 +27,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

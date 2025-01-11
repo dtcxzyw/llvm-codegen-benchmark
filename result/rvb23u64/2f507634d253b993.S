@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
-func00000000000001a4:                   # @func00000000000001a4
+	.quad	-8198552921648689607
+func00000000000001a4:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	sub	a1, a1, a2
@@ -11,9 +11,10 @@ func00000000000001a4:                   # @func00000000000001a4
 	srli	a0, a0, 16
 	seqz	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	384307168202282325              # 0x555555555555555
-func00000000000000a8:                   # @func00000000000000a8
+	.quad	384307168202282325
+func00000000000000a8:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -26,7 +27,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	add.uw	a0, a0, a1
 	sltu	a0, a3, a0
 	ret
-func00000000000001a8:                   # @func00000000000001a8
+
+func00000000000001a8:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a1, a1, 2
@@ -39,7 +41,8 @@ func00000000000001a8:                   # @func00000000000001a8
 	srli	a0, a0, 61
 	snez	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	sub	a1, a1, a2
 	lui	a2, 349525
 	zext.w	a0, a0
@@ -52,7 +55,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	sub	a1, a1, a2
 	lui	a2, 838861
 	srai	a1, a1, 3
@@ -64,7 +68,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	sub	a1, a1, a2
 	lui	a2, 838861
 	srai	a1, a1, 3
@@ -75,7 +80,8 @@ func00000000000000b4:                   # @func00000000000000b4
 	add.uw	a0, a0, a1
 	sltiu	a0, a0, 12
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a1, a1, 3
@@ -86,3 +92,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	add.uw	a0, a0, a1
 	sltiu	a0, a0, 8
 	ret
+

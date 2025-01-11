@@ -1,8 +1,8 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	movl	%edi, %eax
 	negl	%eax
 	cmovsl	%edi, %eax
-	imulq	$1374389535, %rax, %rcx         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rcx
 	shrq	$37, %rcx
 	imull	$100, %ecx, %ecx
 	subl	%ecx, %eax
@@ -12,3 +12,4 @@ func0000000000000007:                   # @func0000000000000007
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq
+

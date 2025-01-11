@@ -1,4 +1,4 @@
-func0000000000000305:                   # @func0000000000000305
+func0000000000000305:
 	addq	$-5, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -6,7 +6,8 @@ func0000000000000305:                   # @func0000000000000305
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000f04:                   # @func0000000000000f04
+
+func0000000000000f04:
 	addq	$8, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000000f04:                   # @func0000000000000f04
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000d04:                   # @func0000000000000d04
+
+func0000000000000d04:
 	addq	$8, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -22,3 +24,4 @@ func0000000000000d04:                   # @func0000000000000d04
 	setae	%al
 	orb	%cl, %al
 	retq
+

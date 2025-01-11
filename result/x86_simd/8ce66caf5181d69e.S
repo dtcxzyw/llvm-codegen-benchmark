@@ -1,6 +1,7 @@
 .LCPI0_0:
-	.long	1431655765                      # 0x55555555
-func0000000000000000:                   # @func0000000000000000
+	.long	1431655765
+func0000000000000000:
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpternlogd	$32, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm1 & ~ymm2
+	vpternlogd	$32, %ymm1, %ymm2, %ymm0
 	retq
+

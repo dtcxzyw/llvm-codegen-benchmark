@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 209715
@@ -8,7 +8,8 @@ func0000000000000026:                   # @func0000000000000026
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 4
 	ret
-func0000000000000036:                   # @func0000000000000036
+
+func0000000000000036:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 28784
@@ -18,7 +19,8 @@ func0000000000000036:                   # @func0000000000000036
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 8
 	ret
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 12336
@@ -28,7 +30,8 @@ func000000000000002e:                   # @func000000000000002e
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 8
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 197379
@@ -38,7 +41,8 @@ func000000000000002f:                   # @func000000000000002f
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 4
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 112
@@ -48,7 +52,8 @@ func000000000000003e:                   # @func000000000000003e
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 28672
@@ -58,7 +63,8 @@ func000000000000003f:                   # @func000000000000003f
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 8
 	ret
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 209715
@@ -68,3 +74,4 @@ func0000000000000016:                   # @func0000000000000016
 	vadd.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 4
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -10,7 +10,8 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -22,7 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -34,7 +36,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -46,7 +49,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -59,7 +63,8 @@ func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -71,7 +76,8 @@ func0000000000000004:                   # @func0000000000000004
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -84,7 +90,8 @@ func000000000000000e:                   # @func000000000000000e
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -97,3 +104,4 @@ func000000000000000d:                   # @func000000000000000d
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
+

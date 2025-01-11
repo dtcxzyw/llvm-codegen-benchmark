@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-	.short	21                              # 0x15
-func0000000000000042:                   # @func0000000000000042
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+	.short	21
+func0000000000000042:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqw	.LCPI0_0(%rip), %xmm2, %k1
@@ -16,3 +16,4 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,22 +1,24 @@
 .LCPI0_0:
-	.long	63                              # 0x3f
+	.long	63
 .LCPI0_1:
-	.quad	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
+	.quad	1
+func000000000000000e:
 	vptestnmd	%xmm2, %xmm2, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [63,63,63,63]
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1}
+	vpmovzxdq	%xmm1, %ymm1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	1                               # 0x1
-func000000000000000f:                   # @func000000000000000f
+	.quad	1
+func000000000000000f:
 	vptestmd	%xmm2, %xmm2, %k1
 	vmovdqa32	%xmm1, %xmm1 {%k1} {z}
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vpmovzxdq	%xmm1, %ymm1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
+

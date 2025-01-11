@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubw	%ymm2, %ymm0, %ymm0
@@ -6,51 +6,54 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-func0000000000000085:                   # @func0000000000000085
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+func0000000000000085:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpcmpleuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-func0000000000000084:                   # @func0000000000000084
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+func0000000000000084:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

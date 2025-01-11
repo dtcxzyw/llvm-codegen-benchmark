@@ -1,36 +1,30 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000001d:                   // @func000000000000001d
-// %bb.0:                               // %entry
+
+func000000000000001d:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	mul	w8, w1, w2
 	sub	x0, x0, x8
 	ret
-                                        // -- End function
+

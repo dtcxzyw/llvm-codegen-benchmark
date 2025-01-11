@@ -1,4 +1,4 @@
-func0000000000000e81:                   # @func0000000000000e81
+func0000000000000e81:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -7,7 +7,8 @@ func0000000000000e81:                   # @func0000000000000e81
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000f01:                   # @func0000000000000f01
+
+func0000000000000f01:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -16,7 +17,8 @@ func0000000000000f01:                   # @func0000000000000f01
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -25,7 +27,8 @@ func0000000000000101:                   # @func0000000000000101
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -34,7 +37,8 @@ func0000000000000081:                   # @func0000000000000081
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -43,7 +47,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -52,7 +57,8 @@ func0000000000000141:                   # @func0000000000000141
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000941:                   # @func0000000000000941
+
+func0000000000000941:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -61,7 +67,8 @@ func0000000000000941:                   # @func0000000000000941
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000000881:                   # @func0000000000000881
+
+func0000000000000881:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v10, v8, v9
@@ -70,3 +77,4 @@ func0000000000000881:                   # @func0000000000000881
 	vmand.mm	v9, v0, v10
 	vmor.mm	v0, v9, v8
 	ret
+

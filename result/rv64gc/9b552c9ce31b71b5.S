@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	add	a1, a1, a2
 	slli	a0, a0, 48
 	andi	a1, a1, 31
@@ -6,7 +6,8 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	lui	a3, 16
 	add	a1, a1, a2
 	addiw	a3, a3, -1
@@ -15,7 +16,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	add	a1, a1, a2
 	lui	a2, 16
 	addiw	a2, a2, -1
@@ -23,7 +25,8 @@ func0000000000000014:                   # @func0000000000000014
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	add	a1, a1, a2
 	lui	a2, 16
 	addiw	a2, a2, -1
@@ -31,3 +34,4 @@ func00000000000000d4:                   # @func00000000000000d4
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
+

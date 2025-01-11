@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
@@ -7,7 +7,8 @@ func0000000000000029:                   # @func0000000000000029
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	xor	a0, a0, a2
@@ -15,7 +16,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000c85:                   # @func0000000000000c85
+
+func0000000000000c85:
 	andi	a1, a1, 255
 	addi	a2, a2, 6
 	sltu	a0, a0, a2
@@ -23,7 +25,8 @@ func0000000000000c85:                   # @func0000000000000c85
 	sltiu	a1, a1, 254
 	or	a0, a0, a1
 	ret
-func0000000000000c29:                   # @func0000000000000c29
+
+func0000000000000c29:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
@@ -32,3 +35,4 @@ func0000000000000c29:                   # @func0000000000000c29
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000018c3:                   # @func00000000000018c3
+func00000000000018c3:
 	vptestmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
@@ -7,7 +7,8 @@ func00000000000018c3:                   # @func00000000000018c3
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000213:                   # @func0000000000000213
+
+func0000000000000213:
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
@@ -16,7 +17,8 @@ func0000000000000213:                   # @func0000000000000213
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000001813:                   # @func0000000000001813
+
+func0000000000001813:
 	vptestmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
@@ -25,3 +27,4 @@ func0000000000001813:                   # @func0000000000001813
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+

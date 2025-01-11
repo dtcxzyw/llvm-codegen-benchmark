@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	lui	a0, 34953
 	addi	a0, a0, -1912
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -15,3 +15,4 @@ func0000000000000018:                   # @func0000000000000018
 	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vcvttsd2usi	%xmm1, %eax
 	cmpl	$1, %eax
 	adcl	$0, %eax
@@ -9,3 +9,4 @@ func0000000000000001:                   # @func0000000000000001
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
+

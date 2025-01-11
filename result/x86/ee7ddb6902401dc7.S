@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	testq	%rdx, %rdx
 	sete	%al
 	cmpq	%rsi, %rdi
@@ -6,3 +6,4 @@ func0000000000000048:                   # @func0000000000000048
 	andb	%al, %cl
 	movzbl	%cl, %eax
 	retq
+

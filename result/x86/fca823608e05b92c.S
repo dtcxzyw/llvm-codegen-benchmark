@@ -1,5 +1,5 @@
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$189151184349560832, %rcx       # imm = 0x2A0000000000000
+func0000000000000008:
+	movabsq	$189151184349560832, %rcx
 	imulq	%rsi, %rcx
 	orq	%rdi, %rcx
 	movq	%rcx, %rax
@@ -7,19 +7,22 @@ func0000000000000008:                   # @func0000000000000008
 	addq	%rcx, %rax
 	shrq	$22, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
-	movabsq	$158913789952, %rcx             # imm = 0x2500000000
+
+func0000000000000038:
+	movabsq	$158913789952, %rcx
 	imulq	%rsi, %rcx
 	orq	%rdi, %rcx
-	movabsq	$-4658895280553007687, %rax     # imm = 0xBF58476D1CE4E5B9
+	movabsq	$-4658895280553007687, %rax
 	imulq	%rcx, %rax
 	shrq	$31, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	movabsq	$158913789952, %rcx             # imm = 0x2500000000
+
+func0000000000000018:
+	movabsq	$158913789952, %rcx
 	imulq	%rsi, %rcx
 	orq	%rdi, %rcx
-	movabsq	$-4658895280553007687, %rax     # imm = 0xBF58476D1CE4E5B9
+	movabsq	$-4658895280553007687, %rax
 	imulq	%rcx, %rax
 	shrq	$31, %rax
 	retq
+

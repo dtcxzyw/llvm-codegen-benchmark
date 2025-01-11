@@ -1,4 +1,4 @@
-func000000000000012c:                   # @func000000000000012c
+func000000000000012c:
 	li	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmaxu.vx	v12, v12, a0
@@ -6,7 +6,8 @@ func000000000000012c:                   # @func000000000000012c
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v14
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	li	a0, 5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmaxu.vx	v12, v12, a0
@@ -14,3 +15,4 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v14
 	ret
+

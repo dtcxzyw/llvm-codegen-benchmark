@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	sext.w	a2, a2
 	snez	a2, a2
 	addi	a2, a2, -1
@@ -7,7 +7,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000361:                   # @func0000000000000361
+
+func0000000000000361:
 	sext.w	a2, a2
 	slti	a2, a2, 0
 	xori	a2, a2, 1
@@ -16,7 +17,8 @@ func0000000000000361:                   # @func0000000000000361
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	sext.w	a2, a2
 	snez	a2, a2
 	addi	a2, a2, -1
@@ -24,7 +26,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	sext.w	a2, a2
 	snez	a2, a2
 	addi	a2, a2, -1
@@ -33,7 +36,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	sext.w	a2, a2
 	li	a3, 97
 	beq	a2, a3, .LBB4_2
@@ -46,7 +50,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	sext.w	a2, a2
 	addi	a2, a2, -2
 	snez	a2, a2
@@ -55,7 +60,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	sext.w	a2, a2
 	addi	a2, a2, -2
 	snez	a2, a2
@@ -64,7 +70,8 @@ func00000000000000e8:                   # @func00000000000000e8
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000244:                   # @func0000000000000244
+
+func0000000000000244:
 	srliw	a2, a2, 16
 	beqz	a2, .LBB7_2
 	li	a2, -4
@@ -76,3 +83,4 @@ func0000000000000244:                   # @func0000000000000244
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
+

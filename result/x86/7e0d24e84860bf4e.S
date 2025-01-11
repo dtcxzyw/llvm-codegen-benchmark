@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movl	%edi, %ecx
 	andl	$96, %ecx
 	xorl	%eax, %eax
@@ -8,12 +8,14 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$6, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	xorl	%eax, %eax
-	testl	$1024, %edi                     # imm = 0x400
+	testl	$1024, %edi
 	sete	%al
 	shll	$9, %eax
-	andl	$-16640, %edi                   # imm = 0xBF00
+	andl	$-16640, %edi
 	orl	%edi, %eax
-	orl	$16406, %eax                    # imm = 0x4016
+	orl	$16406, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000028e:                   # @func000000000000028e
+func000000000000028e:
 	sext.w	a2, a2
 	slli	a1, a1, 48
 	slt	a2, a2, a0
@@ -7,3 +7,4 @@ func000000000000028e:                   # @func000000000000028e
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
+

@@ -1,6 +1,6 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	movzwl	%si, %eax
-	imull	$9363, %eax, %eax               # imm = 0x2493
+	imull	$9363, %eax, %eax
 	shrl	$16, %eax
 	movl	%esi, %ecx
 	subl	%eax, %ecx
@@ -16,3 +16,4 @@ func0000000000000007:                   # @func0000000000000007
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+

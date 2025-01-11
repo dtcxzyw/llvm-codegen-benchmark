@@ -1,9 +1,9 @@
-func000000000000000a:                   # @func000000000000000a
-	cmpq	$10000, %rsi                    # imm = 0x2710
-	movl	$10000, %eax                    # imm = 0x2710
+func000000000000000a:
+	cmpq	$10000, %rsi
+	movl	$10000, %eax
 	cmovlq	%rsi, %rax
 	addq	$87, %rax
-	movabsq	$3353953467947191203, %rcx      # imm = 0x2E8BA2E8BA2E8BA3
+	movabsq	$3353953467947191203, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -12,9 +12,10 @@ func000000000000000a:                   # @func000000000000000a
 	imulq	$88, %rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpq	$10000, %rsi                    # imm = 0x2710
-	movl	$10000, %eax                    # imm = 0x2710
+
+func0000000000000008:
+	cmpq	$10000, %rsi
+	movl	$10000, %eax
 	cmovlq	%rsi, %rax
 	leaq	7(%rax), %rcx
 	addq	$14, %rax
@@ -23,3 +24,4 @@ func0000000000000008:                   # @func0000000000000008
 	andq	$-8, %rax
 	addq	%rdi, %rax
 	retq
+

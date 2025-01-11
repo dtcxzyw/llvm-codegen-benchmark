@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vcvtdq2pd	%ymm2, %zmm2
 	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
@@ -6,7 +6,8 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vcvtdq2pd	%ymm2, %zmm2
 	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
@@ -14,7 +15,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vcvtdq2pd	%ymm2, %zmm2
 	vaddpd	%zmm2, %zmm0, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
@@ -22,3 +24,4 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

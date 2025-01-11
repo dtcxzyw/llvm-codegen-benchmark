@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	lui	a0, 4096
@@ -7,7 +7,8 @@ func0000000000000024:                   # @func0000000000000024
 	vsll.vi	v8, v10, 4
 	vor.vi	v8, v8, 8, v0.t
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -15,7 +16,8 @@ func0000000000000021:                   # @func0000000000000021
 	vsll.vi	v8, v10, 4
 	vor.vi	v8, v8, 8, v0.t
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	li	a0, 280
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.x	v10, a0
@@ -27,7 +29,8 @@ func000000000000002a:                   # @func000000000000002a
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -35,7 +38,8 @@ func000000000000002c:                   # @func000000000000002c
 	vor.vi	v8, v10, 10
 	vor.vi	v8, v10, 8, v0.t
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	li	a0, 255
@@ -44,7 +48,8 @@ func0000000000000038:                   # @func0000000000000038
 	vsll.vi	v8, v10, 4
 	vor.vi	v8, v8, 8, v0.t
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	lui	a0, 65857
 	addi	a0, a0, 161
 	vsetivli	zero, 8, e32, m2, ta, mu
@@ -59,7 +64,8 @@ func0000000000000034:                   # @func0000000000000034
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 14, v0
@@ -67,3 +73,4 @@ func000000000000000a:                   # @func000000000000000a
 	vor.vi	v10, v10, 9, v0.t
 	vmv.v.v	v8, v10
 	ret
+

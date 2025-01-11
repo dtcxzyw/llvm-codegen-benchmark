@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
-func0000000000000076:                   # @func0000000000000076
+	.quad	384307168202282325
+func0000000000000076:
 	srai	a1, a1, 2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -14,14 +14,15 @@ func0000000000000076:                   # @func0000000000000076
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	bgeu	a0, a2, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	bltu	a0, a2, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	mv	a0, a2
 	ret
+

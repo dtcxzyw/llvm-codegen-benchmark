@@ -1,11 +1,12 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	cmpl	$1, %edx
 	sbbl	$0, %esi
 	addl	$2, %esi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setne	%al
@@ -14,7 +15,8 @@ func0000000000000084:                   # @func0000000000000084
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setne	%al
@@ -22,7 +24,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000521:                   # @func0000000000000521
+
+func0000000000000521:
 	xorl	%eax, %eax
 	cmpl	$9, %edx
 	setge	%al
@@ -30,7 +33,8 @@ func0000000000000521:                   # @func0000000000000521
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	xorl	%eax, %eax
 	cmpl	$6, %edx
 	sete	%al
@@ -38,7 +42,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000056b:                   # @func000000000000056b
+
+func000000000000056b:
 	xorl	%eax, %eax
 	cmpl	$31, %edx
 	setge	%al
@@ -47,14 +52,16 @@ func000000000000056b:                   # @func000000000000056b
 	cmpl	%esi, %edi
 	setge	%al
 	retq
-func000000000000052a:                   # @func000000000000052a
+
+func000000000000052a:
 	leal	65535(%rsi), %eax
 	testl	%edx, %edx
 	cmovlel	%esi, %eax
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000507:                   # @func0000000000000507
+
+func0000000000000507:
 	xorl	%eax, %eax
 	cmpl	$5, %edx
 	setl	%al
@@ -63,7 +70,8 @@ func0000000000000507:                   # @func0000000000000507
 	cmpl	%eax, %edi
 	setle	%al
 	retq
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
@@ -71,7 +79,8 @@ func0000000000000321:                   # @func0000000000000321
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000621:                   # @func0000000000000621
+
+func0000000000000621:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	sete	%al
@@ -80,21 +89,24 @@ func0000000000000621:                   # @func0000000000000621
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	xorl	%eax, %eax
-	cmpl	$1129464626, %edx               # imm = 0x43524332
+	cmpl	$1129464626, %edx
 	sete	%al
 	leal	8(%rsi,%rax,8), %eax
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	cmpl	$1, %edx
 	adcl	$1, %esi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	sete	%al
@@ -103,7 +115,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	sete	%al
@@ -112,7 +125,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	sete	%al
@@ -121,14 +135,16 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000261:                   # @func0000000000000261
-	cmpl	$65536, %edx                    # imm = 0x10000
+
+func0000000000000261:
+	cmpl	$65536, %edx
 	sbbl	$0, %esi
 	addl	$2, %esi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000e6:                   # @func00000000000000e6
+
+func00000000000000e6:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	setne	%al
@@ -137,3 +153,4 @@ func00000000000000e6:                   # @func00000000000000e6
 	cmpl	%eax, %edi
 	setl	%al
 	retq
+

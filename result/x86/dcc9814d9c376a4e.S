@@ -1,4 +1,4 @@
-func0000000000002021:                   # @func0000000000002021
+func0000000000002021:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	testq	%rsi, %rsi
@@ -7,3 +7,4 @@ func0000000000002021:                   # @func0000000000002021
 	sete	%al
 	orb	%cl, %al
 	retq
+

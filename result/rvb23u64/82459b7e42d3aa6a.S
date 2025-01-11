@@ -1,42 +1,48 @@
-func000000000000010a:                   # @func000000000000010a
+func000000000000010a:
 	subw	a1, a1, a2
 	andi	a1, a1, 3
 	addi	a1, a1, -3
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	subw	a1, a1, a2
 	andi	a1, a1, 3
 	addi	a1, a1, -3
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	subw	a1, a1, a2
 	andi	a1, a1, 63
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000163:                   # @func0000000000000163
+
+func0000000000000163:
 	subw	a1, a1, a2
 	andi	a1, a1, 7
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	subw	a1, a1, a2
 	andi	a1, a1, 7
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	subw	a1, a1, a2
 	andi	a1, a1, 63
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	sub	a1, a1, a2
 	lui	a2, 4
 	addiw	a2, a2, -8
@@ -44,7 +50,8 @@ func0000000000000060:                   # @func0000000000000060
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000151:                   # @func0000000000000151
+
+func0000000000000151:
 	sub	a1, a1, a2
 	li	a2, 63
 	bseti	a2, a2, 63
@@ -52,3 +59,4 @@ func0000000000000151:                   # @func0000000000000151
 	sgtz	a1, a1
 	add	a0, a0, a1
 	ret
+

@@ -1,20 +1,18 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	tst	w1, #0x1
-	mov	x8, #-1                         // =0xffffffffffffffff
+	mov	x8, #-1
 	csinv	x8, x8, x2, eq
 	tst	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	tst	w1, #0x1
-	mov	x8, #-1                         // =0xffffffffffffffff
-	mov	w9, #2147483647                 // =0x7fffffff
+	mov	x8, #-1
+	mov	w9, #2147483647
 	csinv	x8, x8, x2, eq
 	and	x8, x8, x0
 	cmp	x8, x9
 	cset	w0, lo
 	ret
-                                        // -- End function
+

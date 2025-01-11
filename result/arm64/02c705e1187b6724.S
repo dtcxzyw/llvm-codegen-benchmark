@@ -1,16 +1,14 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #25                         // =0x19
+func0000000000000001:
+	mov	w8, #25
 	and	w9, w0, w1
 	tst	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	w8, #257                        // =0x101
+
+func0000000000000021:
+	mov	w8, #257
 	and	w9, w0, w1
 	tst	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

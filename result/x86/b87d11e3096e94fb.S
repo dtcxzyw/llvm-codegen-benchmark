@@ -1,6 +1,6 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	movq	%rdx, %rax
-	movabsq	$2361183241434822607, %rcx      # imm = 0x20C49BA5E353F7CF
+	movabsq	$2361183241434822607, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -10,11 +10,13 @@ func0000000000000014:                   # @func0000000000000014
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000052:                   # @func0000000000000052
+
+func0000000000000052:
 	sarq	$3, %rdx
-	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
+	movabsq	$7905747460161236407, %rax
 	imulq	%rdx, %rax
 	cmpq	%rax, %rsi
 	setae	%al
 	orb	%dil, %al
 	retq
+

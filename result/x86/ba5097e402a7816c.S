@@ -1,6 +1,6 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	sarq	$3, %rsi
-	movabsq	$-1229782938247303441, %rcx     # imm = 0xEEEEEEEEEEEEEEEF
+	movabsq	$-1229782938247303441, %rcx
 	imulq	%rsi, %rcx
 	shrq	$62, %rcx
 	xorl	%eax, %eax
@@ -8,3 +8,4 @@ func0000000000000028:                   # @func0000000000000028
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
+

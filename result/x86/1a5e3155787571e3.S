@@ -1,4 +1,4 @@
-func00000000000000b8:                   # @func00000000000000b8
+func00000000000000b8:
 	movl	%edx, %eax
 	negl	%eax
 	cmovsl	%edx, %eax
@@ -9,3 +9,4 @@ func00000000000000b8:                   # @func00000000000000b8
 	seta	%al
 	orb	%dil, %al
 	retq
+

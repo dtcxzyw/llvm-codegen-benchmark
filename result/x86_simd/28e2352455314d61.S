@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-4                              # 0xfffffffffffffffc
-func0000000000000206:                   # @func0000000000000206
+	.quad	-4
+func0000000000000206:
 	vpsraq	$63, %ymm0, %ymm2
 	vpsrlq	$62, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm2
@@ -11,3 +11,4 @@ func0000000000000206:                   # @func0000000000000206
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

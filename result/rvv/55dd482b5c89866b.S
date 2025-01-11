@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-276504962471310366             # 0xfc29a8339d43cbe2
+	.quad	-276504962471310366
 .LCPI0_1:
-	.quad	6364136223846793005             # 0x5851f42d4c957f2d
-func0000000000000000:                   # @func0000000000000000
+	.quad	6364136223846793005
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, %hi(.LCPI0_1)
@@ -16,7 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vx	v10, a1, v12
 	vmv.v.v	v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -25,7 +26,8 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v8, v9
 	lui	a0, 1048540
@@ -35,7 +37,8 @@ func0000000000000075:                   # @func0000000000000075
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v10
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v8, v9
 	li	a0, -1000
@@ -45,7 +48,8 @@ func000000000000001d:                   # @func000000000000001d
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v8, v9
 	li	a0, -216
@@ -55,3 +59,4 @@ func000000000000003d:                   # @func000000000000003d
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
+

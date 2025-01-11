@@ -1,4 +1,4 @@
-func000000000000005b:                   # @func000000000000005b
+func000000000000005b:
 	srai	a1, a1, 3
 	li	a2, 1
 	maxu	a2, a1, a2
@@ -8,3 +8,4 @@ func000000000000005b:                   # @func000000000000005b
 	minu	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
+

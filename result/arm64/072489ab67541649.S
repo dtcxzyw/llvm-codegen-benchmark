@@ -1,5 +1,4 @@
-func0000000000000218:                   // @func0000000000000218
-// %bb.0:                               // %entry
+func0000000000000218:
 	lsr	w8, w2, #16
 	cmp	w8, #0
 	csel	w8, w1, w2, ne
@@ -9,9 +8,8 @@ func0000000000000218:                   // @func0000000000000218
 	cmp	w8, #15
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000618:                   // @func0000000000000618
-// %bb.0:                               // %entry
+
+func0000000000000618:
 	cmp	w2, #255
 	csel	w8, w1, w2, hi
 	tst	w0, #0x1
@@ -20,4 +18,4 @@ func0000000000000618:                   // @func0000000000000618
 	cmp	w8, #3
 	cset	w0, hi
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	xorl	%ecx, %ecx
 	testb	$1, %dil
 	cmoveq	%rsi, %rcx
@@ -6,7 +6,8 @@ func0000000000000061:                   # @func0000000000000061
 	testq	%rcx, %rcx
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	xorl	%ecx, %ecx
 	testb	$1, %dil
 	cmoveq	%rsi, %rcx
@@ -14,13 +15,14 @@ func0000000000000041:                   # @func0000000000000041
 	testq	%rcx, %rcx
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$1, %dil
 	jne	.LBB2_1
 	movq	%rsi, %rax
 	testq	%rax, %rax
 	je	.LBB2_4
-.LBB2_5:                                # %select.false3
+.LBB2_5:
 	addq	$8, %rax
 	retq
 .LBB2_1:
@@ -30,3 +32,4 @@ func0000000000000001:                   # @func0000000000000001
 .LBB2_4:
 	xorl	%eax, %eax
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	4294967291                      # 0xfffffffb
+	.long	4294967291
 .LCPI0_1:
-	.long	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
+	.long	2
+func0000000000000004:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$15, %xmm0, %xmm0
@@ -11,11 +11,12 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294967205                      # 0xffffffa5
+	.long	4294967205
 .LCPI1_1:
-	.long	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+	.long	2
+func0000000000000008:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$15, %xmm0, %xmm0
@@ -24,3 +25,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

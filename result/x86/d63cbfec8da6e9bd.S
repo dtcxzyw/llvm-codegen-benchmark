@@ -1,12 +1,13 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	$1, %sil
-	movl	$65520, %ecx                    # imm = 0xFFF0
+	movl	$65520, %ecx
 	cmovneq	%rdx, %rcx
 	leaq	-65521(%rcx), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovneq	%rdx, %rcx
@@ -14,3 +15,4 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

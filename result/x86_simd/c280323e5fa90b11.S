@@ -1,26 +1,30 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func0000000000000004:                   # @func0000000000000004
+	.long	0x3f800000
+func0000000000000004:
 	vcmpgtps	.LCPI0_0(%rip){1to16}, %zmm2, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmulps	%zmm1, %zmm1, %zmm0
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%zmm2, %zmm3, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmulps	%zmm1, %zmm1, %zmm0
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpordps	%zmm3, %zmm2, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmulps	%zmm1, %zmm1, %zmm0
 	retq
+
 .LCPI3_0:
-	.long	0x33800000                      # float 5.96046448E-8
-func0000000000000002:                   # @func0000000000000002
+	.long	0x33800000
+func0000000000000002:
 	vcmpltps	.LCPI3_0(%rip){1to16}, %zmm2, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmulps	%zmm1, %zmm1, %zmm0
 	retq
+

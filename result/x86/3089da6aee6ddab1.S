@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andl	$1, %edx
 	shll	$5, %edx
 	subl	%esi, %edx
@@ -16,3 +17,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edx, %edi
 	setb	%al
 	retq
+

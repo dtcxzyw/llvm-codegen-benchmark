@@ -1,11 +1,12 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	sext.w	a1, a1
 	li	a3, -2
 	subw	a3, a3, a2
 	slt	a1, a1, a3
 	and	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sext.w	a1, a1
 	li	a3, 32
 	subw	a3, a3, a2
@@ -13,3 +14,4 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+

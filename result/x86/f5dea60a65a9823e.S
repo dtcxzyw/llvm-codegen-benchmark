@@ -1,7 +1,8 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$8388607, %eax                  # imm = 0x7FFFFF
-	orl	$8388608, %eax                  # imm = 0x800000
+	andl	$8388607, %eax
+	orl	$8388608, %eax
 	xorl	%edx, %edx
 	retq
+

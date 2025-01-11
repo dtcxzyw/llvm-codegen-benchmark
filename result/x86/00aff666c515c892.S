@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	testw	%dx, %dx
 	setne	%cl
 	orb	%dil, %cl
@@ -6,7 +6,8 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	cmpw	$2, %dx
 	setae	%cl
 	orb	%dil, %cl
@@ -14,12 +15,14 @@ func0000000000000104:                   # @func0000000000000104
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	movzwl	%dx, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	setne	%cl
 	cmpl	$-80, %esi
 	setb	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

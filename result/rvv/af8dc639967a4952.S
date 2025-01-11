@@ -1,4 +1,4 @@
-func0000000000000384:                   # @func0000000000000384
+func0000000000000384:
 	li	a0, 10
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vx	v12, v12, a0
@@ -7,7 +7,8 @@ func0000000000000384:                   # @func0000000000000384
 	vsub.vv	v8, v8, v10
 	vmsltu.vv	v0, v8, v14
 	ret
-func0000000000000386:                   # @func0000000000000386
+
+func0000000000000386:
 	li	a0, 6
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vx	v12, v12, a0
@@ -16,7 +17,8 @@ func0000000000000386:                   # @func0000000000000386
 	vsub.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v14
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	li	a0, 3
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vx	v12, v12, a0
@@ -25,3 +27,4 @@ func0000000000000006:                   # @func0000000000000006
 	vsub.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v14
 	ret
+

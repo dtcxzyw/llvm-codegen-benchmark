@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000044:
 	subq	%rdx, %rsi
 	movq	%rsi, %rcx
 	shrq	$63, %rcx
@@ -11,13 +11,15 @@ func0000000000000044:                   # @func0000000000000044
 	addq	%rcx, %rax
 	addq	%rax, %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
-	movabsq	$3353953467947191203, %rax      # imm = 0x2E8BA2E8BA2E8BA3
+	movabsq	$3353953467947191203, %rax
 	imulq	%rax, %rsi
 	sarq	$3, %rdi
 	imulq	%rdi, %rax
 	addq	%rsi, %rax
 	shlq	$2, %rax
 	retq
+

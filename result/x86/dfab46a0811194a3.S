@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000016:
 	xorl	%eax, %eax
 	cmpb	$-43, %dl
 	sete	%al
@@ -6,7 +6,8 @@ func0000000000000016:                   # @func0000000000000016
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	xorl	%eax, %eax
 	cmpb	$-61, %dl
 	sete	%al
@@ -15,7 +16,8 @@ func0000000000000012:                   # @func0000000000000012
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	xorl	%eax, %eax
 	cmpb	$-30, %dl
 	setne	%al
@@ -24,3 +26,4 @@ func0000000000000010:                   # @func0000000000000010
 	cltq
 	addq	%rdi, %rax
 	retq
+

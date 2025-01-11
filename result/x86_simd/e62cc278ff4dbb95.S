@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	255                             # 0xff
-func0000000000000cf4:                   # @func0000000000000cf4
+	.long	255
+func0000000000000cf4:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpslld	$31, %xmm1, %xmm1
@@ -10,9 +10,10 @@ func0000000000000cf4:                   # @func0000000000000cf4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	13                              # 0xd
-func00000000000000a4:                   # @func00000000000000a4
+	.long	13
+func00000000000000a4:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpslld	$31, %xmm1, %xmm1
@@ -22,3 +23,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

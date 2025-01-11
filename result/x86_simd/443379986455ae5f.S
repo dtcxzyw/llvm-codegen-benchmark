@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -25,7 +25,8 @@ func0000000000000061:                   # @func0000000000000061
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -52,7 +53,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -79,9 +81,10 @@ func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	64                              # 0x40
-func0000000000000004:                   # @func0000000000000004
+	.long	64
+func0000000000000004:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -108,7 +111,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -133,10 +137,11 @@ func000000000000000c:                   # @func000000000000000c
 	vpinsrd	$3, %edx, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm2, %ecx
@@ -161,6 +166,7 @@ func000000000000004c:                   # @func000000000000004c
 	vpinsrd	$3, %edx, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
+

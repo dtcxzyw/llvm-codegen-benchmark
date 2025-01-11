@@ -1,24 +1,26 @@
 .LCPI0_0:
-	.long	4                               # 0x4
+	.long	4
 .LCPI0_1:
-	.long	224                             # 0xe0
-func0000000000000038:                   # @func0000000000000038
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
-	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	.long	224
+func0000000000000038:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
+	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm2
+	vpmovzxbd	%xmm0, %ymm0
 	vpcmpgtd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	128                             # 0x80
+	.long	128
 .LCPI1_1:
-	.long	63                              # 0x3f
-func0000000000000021:                   # @func0000000000000021
-	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [128,128,128,128,128,128,128,128]
-	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	.long	63
+func0000000000000021:
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2
+	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm2
+	vpmovzxbd	%xmm0, %ymm0
 	vpcmpeqd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

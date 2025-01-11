@@ -1,28 +1,24 @@
-func000000000000007f:                   // @func000000000000007f
-// %bb.0:                               // %entry
+func000000000000007f:
 	lsl	w8, w1, #9
 	bfi	w8, w2, #1, #8
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000007c:                   // @func000000000000007c
-// %bb.0:                               // %entry
+
+func000000000000007c:
 	ubfiz	w8, w2, #12, #8
 	orr	w8, w8, w1, lsl #4
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000007d:                   // @func000000000000007d
-// %bb.0:                               // %entry
+
+func000000000000007d:
 	ubfiz	w8, w2, #12, #8
 	orr	w8, w8, w1, lsl #4
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000075:                   // @func0000000000000075
-// %bb.0:                               // %entry
+
+func0000000000000075:
 	lsl	w8, w2, #24
 	orr	w8, w8, w1, lsl #8
 	add	w0, w0, w8
 	ret
-                                        // -- End function
+

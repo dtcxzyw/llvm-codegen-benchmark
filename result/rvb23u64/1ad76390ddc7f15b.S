@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	li	a3, 32
 	subw	a3, a3, a2
 	li	a2, -1
@@ -7,10 +7,12 @@ func0000000000000030:                   # @func0000000000000030
 	mul	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000032:                   # @func0000000000000032
+
+func0000000000000032:
 	li	a3, 64
 	subw	a3, a3, a2
 	bset	a2, zero, a3
 	mul	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

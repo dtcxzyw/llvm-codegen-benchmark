@@ -1,5 +1,4 @@
-func000000000000202a:                   // @func000000000000202a
-// %bb.0:                               // %entry
+func000000000000202a:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -7,9 +6,8 @@ func000000000000202a:                   // @func000000000000202a
 	cmp	w0, #0
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
-func000000000000102a:                   // @func000000000000102a
-// %bb.0:                               // %entry
+
+func000000000000102a:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -17,9 +15,8 @@ func000000000000102a:                   // @func000000000000102a
 	cmp	w0, #0
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
-func0000000000001826:                   // @func0000000000001826
-// %bb.0:                               // %entry
+
+func0000000000001826:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -27,9 +24,8 @@ func0000000000001826:                   // @func0000000000001826
 	cmp	w0, #0
 	csinc	w0, w8, wzr, ge
 	ret
-                                        // -- End function
-func0000000000001c26:                   // @func0000000000001c26
-// %bb.0:                               // %entry
+
+func0000000000001c26:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -37,9 +33,8 @@ func0000000000001c26:                   // @func0000000000001c26
 	cmp	w0, #0
 	csinc	w0, w8, wzr, ge
 	ret
-                                        // -- End function
-func000000000000282a:                   // @func000000000000282a
-// %bb.0:                               // %entry
+
+func000000000000282a:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -47,9 +42,8 @@ func000000000000282a:                   // @func000000000000282a
 	cmp	w0, #0
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
-func0000000000002c2a:                   // @func0000000000002c2a
-// %bb.0:                               // %entry
+
+func0000000000002c2a:
 	cmp	w0, #0
 	cset	w8, eq
 	cmp	w1, w2
@@ -57,4 +51,4 @@ func0000000000002c2a:                   // @func0000000000002c2a
 	cmp	w0, #0
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
+

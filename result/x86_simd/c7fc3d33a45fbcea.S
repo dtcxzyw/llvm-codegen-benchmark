@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0
 	movb	$80, %al
@@ -45,7 +45,8 @@ func0000000000000006:                   # @func0000000000000006
 	popq	%rbx
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0
 	movb	$-128, %al
@@ -92,7 +93,8 @@ func0000000000000004:                   # @func0000000000000004
 	popq	%rbx
 	vzeroupper
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0
 	movb	$52, %al
@@ -139,3 +141,4 @@ func0000000000000000:                   # @func0000000000000000
 	popq	%rbx
 	vzeroupper
 	retq
+

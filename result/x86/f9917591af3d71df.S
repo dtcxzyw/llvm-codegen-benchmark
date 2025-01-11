@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andb	$1, %dil
 	movl	%esi, %ecx
 	shlq	$3, %rcx
@@ -7,10 +7,12 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	movl	%esi, %ecx
 	shlq	$10, %rcx
 	testb	$1, %dil
-	movl	$2097152, %eax                  # imm = 0x200000
+	movl	$2097152, %eax
 	cmoveq	%rcx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	srai	a2, a2, 3
 	seqz	a3, a2
 	add	a2, a2, a3
@@ -7,3 +7,4 @@ func000000000000014c:                   # @func000000000000014c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
+

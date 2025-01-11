@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	cmpb	$97, %dil
 	movl	$169, %eax
 	movl	$208, %ecx
@@ -6,7 +6,8 @@ func0000000000000050:                   # @func0000000000000050
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+
+func0000000000000051:
 	cmpb	$97, %dil
 	movl	$169, %eax
 	movl	$208, %ecx
@@ -14,7 +15,8 @@ func0000000000000051:                   # @func0000000000000051
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+
+func00000000000000c7:
 	cmpb	$10, %dil
 	movl	$55, %eax
 	movl	$48, %ecx
@@ -22,3 +24,4 @@ func00000000000000c7:                   # @func00000000000000c7
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
+

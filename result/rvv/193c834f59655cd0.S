@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	lui	a0, 325632
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,3 +9,4 @@ func0000000000000003:                   # @func0000000000000003
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
+

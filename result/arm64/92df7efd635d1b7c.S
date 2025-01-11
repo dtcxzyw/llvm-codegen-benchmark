@@ -1,8 +1,7 @@
-func0000000000000a10:                   // @func0000000000000a10
-// %bb.0:                               // %entry
+func0000000000000a10:
 	fmov	d2, #1.00000000
 	fcmp	d0, #0.0
-	mov	x9, #158329674399744            // =0x900000000000
+	mov	x9, #158329674399744
 	movk	x9, #14875, lsl #48
 	cset	w8, eq
 	fcmp	d0, d2
@@ -11,13 +10,12 @@ func0000000000000a10:                   // @func0000000000000a10
 	fcmp	d1, d0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
+
 .LCPI1_0:
-	.xword	0x3ff921fb54442d18              // double 1.5707963267948966
+	.xword	0x3ff921fb54442d18
 .LCPI1_1:
-	.xword	0xbff921fb54442d18              // double -1.5707963267948966
-func0000000000002210:                   // @func0000000000002210
-// %bb.0:                               // %entry
+	.xword	0xbff921fb54442d18
+func0000000000002210:
 	adrp	x8, .LCPI1_0
 	adrp	x9, .LCPI1_1
 	ldr	d2, [x8, :lo12:.LCPI1_0]
@@ -29,13 +27,12 @@ func0000000000002210:                   // @func0000000000002210
 	fcmp	d0, d1
 	csinc	w0, w8, wzr, ne
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x401921fb54442d18              // double 6.2831853071795862
+	.xword	0x401921fb54442d18
 .LCPI2_1:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
-func0000000000000904:                   // @func0000000000000904
-// %bb.0:                               // %entry
+	.xword	0x3eb0c6f7a0b5ed8d
+func0000000000000904:
 	fabs	d0, d0
 	adrp	x8, .LCPI2_0
 	ldr	d2, [x8, :lo12:.LCPI2_0]
@@ -46,11 +43,10 @@ func0000000000000904:                   // @func0000000000000904
 	fcmp	d1, d0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
-func0000000000002698:                   // @func0000000000002698
-// %bb.0:                               // %entry
-	mov	x8, #9218868437227405312        // =0x7ff0000000000000
-	mov	x9, #4643211215818981376        // =0x4070000000000000
+
+func0000000000002698:
+	mov	x8, #9218868437227405312
+	mov	x9, #4643211215818981376
 	fmov	d2, x8
 	fcmp	d1, d2
 	fmov	d1, #-1.00000000
@@ -62,14 +58,13 @@ func0000000000002698:                   // @func0000000000002698
 	fcmp	d0, d1
 	csinc	w0, w8, wzr, lt
 	ret
-                                        // -- End function
-func0000000000000888:                   // @func0000000000000888
-// %bb.0:                               // %entry
-	mov	x8, #3689348814741910323        // =0x3333333333333333
+
+func0000000000000888:
+	mov	x8, #3689348814741910323
 	fminnm	d1, d0, d1
 	movk	x8, #16379, lsl #48
 	fmov	d2, x8
-	mov	x8, #3689348814741910323        // =0x3333333333333333
+	mov	x8, #3689348814741910323
 	movk	x8, #16339, lsl #48
 	fcmp	d0, d2
 	fmov	d0, x8
@@ -77,13 +72,12 @@ func0000000000000888:                   // @func0000000000000888
 	fcmp	d1, d0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
+
 .LCPI5_0:
-	.xword	0x400521fb54442d18              // double 2.6415926535897931
-func0000000000002088:                   // @func0000000000002088
-// %bb.0:                               // %entry
+	.xword	0x400521fb54442d18
+func0000000000002088:
 	fmov	d2, #0.50000000
-	mov	x8, #9218868437227405312        // =0x7ff0000000000000
+	mov	x8, #9218868437227405312
 	adrp	x9, .LCPI5_0
 	fcmp	d0, d2
 	fmov	d2, x8
@@ -94,4 +88,4 @@ func0000000000002088:                   // @func0000000000002088
 	fcmp	d0, d1
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
+

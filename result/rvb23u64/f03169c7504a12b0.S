@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	srl	a0, a0, a2
 	slli	a3, a1, 1
 	zext.w	a2, a2
@@ -12,7 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	srl	a0, a0, a2
 	slli	a3, a1, 1
 	zext.w	a2, a2
@@ -26,7 +27,8 @@ func000000000000000a:                   # @func000000000000000a
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	srl	a0, a0, a2
 	slli	a3, a1, 1
 	zext.w	a2, a2
@@ -40,3 +42,4 @@ func000000000000000b:                   # @func000000000000000b
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

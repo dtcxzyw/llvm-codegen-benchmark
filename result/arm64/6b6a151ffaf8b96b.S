@@ -1,5 +1,4 @@
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+func0000000000000078:
 	and	x8, x2, #0x3fffffe
 	tst	w1, #0x1
 	csel	x8, x8, x2, ne
@@ -7,4 +6,4 @@ func0000000000000078:                   // @func0000000000000078
 	tst	x8, #0xfffffffffe000000
 	cset	w0, ne
 	ret
-                                        // -- End function
+

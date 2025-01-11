@@ -1,4 +1,4 @@
-func0000000000000017:                   # @func0000000000000017
+func0000000000000017:
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v8, v8, a0
@@ -11,3 +11,4 @@ func0000000000000017:                   # @func0000000000000017
 	zext.w	a0, a0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
+

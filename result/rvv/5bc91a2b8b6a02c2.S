@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a0, 795364
 	addi	a0, a0, 1287
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,7 +11,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 384
 	vnmsac.vx	v8, a0, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 559241
 	addi	a0, a0, -1911
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -23,3 +24,4 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 60
 	vnmsac.vx	v8, a0, v10
 	ret
+

@@ -1,12 +1,13 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx
-	addl	$256, %edx                      # imm = 0x100
+	addl	$256, %edx
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx
 	incl	%edx
@@ -14,3 +15,4 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
+

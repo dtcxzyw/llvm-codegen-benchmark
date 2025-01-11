@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func0000000000000016:                   # @func0000000000000016
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func0000000000000016:
 	vpmovdw	%ymm1, %xmm1
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %eax
@@ -53,3 +53,4 @@ func0000000000000016:                   # @func0000000000000016
 	vpinsrw	$7, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
+

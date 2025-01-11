@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	add	a0, a0, a2
 	sltu	a2, a0, a2
 	add	a1, a1, a2
@@ -6,7 +6,8 @@ func0000000000000004:                   # @func0000000000000004
 	sub	a1, a1, a2
 	addi	a0, a0, -1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	add	a3, a2, a0
 	sltu	a0, a3, a2
 	add	a1, a1, a0
@@ -15,3 +16,4 @@ func000000000000000c:                   # @func000000000000000c
 	sltu	a2, a0, a3
 	add	a1, a1, a2
 	ret
+

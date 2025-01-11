@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -10,3 +10,4 @@ func0000000000000000:                   # @func0000000000000000
 	vaddpd	%zmm0, %zmm3, %zmm0
 	vaddpd	%zmm1, %zmm5, %zmm1
 	retq
+

@@ -1,80 +1,84 @@
 .LCPI0_0:
-	.long	8                               # 0x8
+	.long	8
 .LCPI0_2:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI0_1:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func000000000000000c:                   # @func000000000000000c
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [8,8,8,8,8,8,8,8]
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+func000000000000000c:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI1_1:
-	.long	8                               # 0x8
-func0000000000000000:                   # @func0000000000000000
-	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [12,12,12,12,12,12,12,12]
+	.long	8
+func0000000000000000:
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI2_1:
-	.long	15                              # 0xf
-func0000000000000004:                   # @func0000000000000004
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [12,12,12,12,12,12,12,12]
+	.long	15
+func0000000000000004:
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	9                               # 0x9
+	.long	9
 .LCPI3_1:
-	.long	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
-	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [9,9,9,9,9,9,9,9]
+	.long	1
+func000000000000000e:
+	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+

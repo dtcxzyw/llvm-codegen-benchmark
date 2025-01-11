@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	movl	%edi, %eax
 	andl	$1, %eax
 	addq	%rsi, %rax
@@ -7,7 +7,8 @@ func0000000000000075:                   # @func0000000000000075
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000045:                   # @func0000000000000045
+
+func0000000000000045:
 	movl	%edi, %eax
 	andl	$1, %eax
 	addq	%rsi, %rax
@@ -16,3 +17,4 @@ func0000000000000045:                   # @func0000000000000045
 	setbe	%al
 	andb	%dil, %al
 	retq
+

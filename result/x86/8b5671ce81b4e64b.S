@@ -1,13 +1,14 @@
-func0000000000000108:                   # @func0000000000000108
-	cmpl	$1114112, %edi                  # imm = 0x110000
-	movl	$-400, %eax                     # imm = 0xFE70
+func0000000000000108:
+	cmpl	$1114112, %edi
+	movl	$-400, %eax
 	movl	$4, %ecx
 	cmovael	%eax, %ecx
-	cmpl	$65536, %edi                    # imm = 0x10000
+	cmpl	$65536, %edi
 	movl	$2, %eax
 	cmovael	%ecx, %eax
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	xorl	%eax, %eax
 	cmpl	$27, %edi
 	setge	%al
@@ -16,7 +17,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	movl	$9, %eax
 	cmovgel	%ecx, %eax
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	xorl	%eax, %eax
 	cmpl	$10, %edi
 	setge	%al
@@ -25,3 +27,4 @@ func00000000000000c6:                   # @func00000000000000c6
 	movl	$100, %eax
 	cmovll	%ecx, %eax
 	retq
+

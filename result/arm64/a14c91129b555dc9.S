@@ -1,49 +1,42 @@
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+func000000000000001e:
+	mov	w8, #40
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func000000000000001b:
+	mov	w8, #12
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func0000000000000016:                   // @func0000000000000016
-// %bb.0:                               // %entry
-	mov	w8, #416                        // =0x1a0
+
+func0000000000000016:
+	mov	w8, #416
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func000000000000001f:
+	mov	w8, #12
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+
+func000000000000001c:
+	mov	w8, #40
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
+
+func0000000000000012:
+	mov	w8, #48
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
+
+func000000000000001a:
+	mov	w8, #24
 	sub	x9, x0, x2
 	madd	x0, x1, x8, x9
 	ret
-                                        // -- End function
+

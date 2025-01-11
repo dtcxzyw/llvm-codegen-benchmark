@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	seqz	a2, a2
 	or	a0, a0, a2
 	li	a2, -1
@@ -8,23 +8,27 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	snez	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	seqz	a2, a2
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	sltiu	a2, a2, 128
 	not	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+

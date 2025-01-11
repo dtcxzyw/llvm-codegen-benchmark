@@ -1,56 +1,49 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	clz	w9, w0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+
+func000000000000000e:
 	clz	w9, w0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	clz	w9, w0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	clz	w9, w0
-	mov	w8, #2                          // =0x2
+	mov	w8, #2
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	clz	w9, w0
-	mov	w8, #4                          // =0x4
+	mov	w8, #4
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	clz	w9, w0
-	mov	w8, #4096                       // =0x1000
+	mov	w8, #4096
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	clz	w9, w0
-	mov	w8, #-1                         // =0xffffffff
+	mov	w8, #-1
 	eor	w9, w9, #0x1f
 	lsl	w0, w8, w9
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000c61:                   # @func0000000000000c61
+func0000000000000c61:
 	testl	%edx, %edx
 	setne	%al
 	andb	%sil, %al
@@ -6,7 +6,8 @@ func0000000000000c61:                   # @func0000000000000c61
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	cmpl	$4, %edx
 	setne	%al
 	andb	%sil, %al
@@ -15,3 +16,4 @@ func0000000000000c21:                   # @func0000000000000c21
 	cmpl	$1, %eax
 	sete	%al
 	retq
+

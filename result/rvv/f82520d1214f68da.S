@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	lui	a0, 878906
 	addi	a0, a0, 1024
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -8,7 +8,8 @@ func0000000000000015:                   # @func0000000000000015
 	vwmacc.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	lui	a0, 1
 	addi	a0, a0, -496
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -17,7 +18,8 @@ func0000000000000017:                   # @func0000000000000017
 	vwmacc.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v10, v9
 	lui	a0, 2575
@@ -30,3 +32,4 @@ func0000000000000004:                   # @func0000000000000004
 	vwmacc.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
+

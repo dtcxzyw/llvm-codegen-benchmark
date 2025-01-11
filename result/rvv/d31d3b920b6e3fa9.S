@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3c23d70a                      # float 0.00999999977
-func0000000000000000:                   # @func0000000000000000
+	.word	0x3c23d70a
+func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
@@ -13,3 +13,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmv1r.v	v0, v9
 	vfmerge.vfm	v8, v16, fa5, v0
 	ret
+

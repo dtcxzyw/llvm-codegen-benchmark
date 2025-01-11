@@ -1,4 +1,4 @@
-func000000000000184c:                   # @func000000000000184c
+func000000000000184c:
 	leaq	(%rdi,%rdi), %rax
 	sarq	$4, %rsi
 	cmpq	%rax, %rsi
@@ -7,3 +7,4 @@ func000000000000184c:                   # @func000000000000184c
 	sete	%al
 	orb	%cl, %al
 	retq
+

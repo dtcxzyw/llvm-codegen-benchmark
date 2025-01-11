@@ -1,4 +1,4 @@
-func00000000000000df:                   # @func00000000000000df
+func00000000000000df:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 12
 	vsll.vi	v10, v10, 6
@@ -7,3 +7,4 @@ func00000000000000df:                   # @func00000000000000df
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v8, v10
 	ret
+

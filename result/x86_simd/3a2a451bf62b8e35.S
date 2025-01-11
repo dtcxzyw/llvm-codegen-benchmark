@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000007:                   # @func0000000000000007
+	.long	7
+func0000000000000007:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm1
 	vpandn	%ymm1, %ymm0, %ymm0
@@ -9,9 +9,10 @@ func0000000000000007:                   # @func0000000000000007
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	7                               # 0x7
-func0000000000000003:                   # @func0000000000000003
+	.long	7
+func0000000000000003:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm1
 	vpandn	%ymm1, %ymm0, %ymm0
@@ -20,3 +21,4 @@ func0000000000000003:                   # @func0000000000000003
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+

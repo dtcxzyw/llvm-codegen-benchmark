@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func0000000000000004:                   # @func0000000000000004
+	.long	0x3f800000
+func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -9,7 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -19,7 +20,8 @@ func0000000000000016:                   # @func0000000000000016
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -29,7 +31,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -39,9 +42,10 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	0x41000000                      # float 8
-func000000000000000a:                   # @func000000000000000a
+	.long	0x41000000
+func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -50,7 +54,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -60,7 +65,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
@@ -70,3 +76,4 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000001f8:
 	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -7,7 +7,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -15,7 +16,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 30
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -24,7 +26,8 @@ func0000000000000008:                   # @func0000000000000008
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000005e4:                   # @func00000000000005e4
+
+func00000000000005e4:
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -32,7 +35,8 @@ func00000000000005e4:                   # @func00000000000005e4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v12, 0
 	vwaddu.wv	v8, v8, v11
@@ -40,7 +44,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v8, v14
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -48,7 +53,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000548:                   # @func0000000000000548
+
+func0000000000000548:
 	li	a0, -7
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
@@ -57,3 +63,4 @@ func0000000000000548:                   # @func0000000000000548
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
+

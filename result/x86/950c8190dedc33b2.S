@@ -1,4 +1,4 @@
-func0000000000002188:                   # @func0000000000002188
+func0000000000002188:
 	cmpl	$8, %edx
 	setae	%cl
 	testb	%sil, %sil
@@ -8,7 +8,8 @@ func0000000000002188:                   # @func0000000000002188
 	orb	%cl, %al
 	orb	%dl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testl	%edx, %edx
 	setne	%al
 	cmpb	$22, %sil
@@ -18,7 +19,8 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000003181:                   # @func0000000000003181
+
+func0000000000003181:
 	cmpl	$-1, %edx
 	setne	%al
 	testb	%sil, %sil
@@ -28,7 +30,8 @@ func0000000000003181:                   # @func0000000000003181
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000003186:                   # @func0000000000003186
+
+func0000000000003186:
 	cmpl	$1, %edx
 	setne	%al
 	testb	%sil, %sil
@@ -38,3 +41,4 @@ func0000000000003186:                   # @func0000000000003186
 	sets	%al
 	orb	%cl, %al
 	retq
+

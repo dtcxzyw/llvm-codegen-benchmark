@@ -1,13 +1,14 @@
-func0000000000000698:                   # @func0000000000000698
-	andl	$253952, %edx                   # imm = 0x3E000
+func0000000000000698:
+	andl	$253952, %edx
 	orl	%esi, %edx
-	cmpl	$57344, %edx                    # imm = 0xE000
+	cmpl	$57344, %edx
 	setb	%cl
-	cmpl	$55296, %edi                    # imm = 0xD800
+	cmpl	$55296, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	andl	$16, %edx
 	orl	%esi, %edx
 	sete	%cl
@@ -15,7 +16,8 @@ func000000000000042c:                   # @func000000000000042c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	andl	$1, %edx
 	orl	%esi, %edx
 	setne	%cl
@@ -23,7 +25,8 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	andl	$1, %edx
 	orl	%esi, %edx
 	setne	%cl
@@ -31,7 +34,8 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	andl	$48, %edx
 	orl	%esi, %edx
 	setne	%cl
@@ -39,7 +43,8 @@ func000000000000058c:                   # @func000000000000058c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andl	$128, %edx
 	orl	%esi, %edx
 	xorl	$127, %edx
@@ -47,21 +52,24 @@ func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000681:                   # @func0000000000000681
-	andl	$196608, %edx                   # imm = 0x30000
+
+func0000000000000681:
+	andl	$196608, %edx
 	orl	%esi, %edx
-	cmpl	$1114112, %edx                  # imm = 0x110000
+	cmpl	$1114112, %edx
 	setb	%cl
-	cmpl	$65534, %edi                    # imm = 0xFFFE
+	cmpl	$65534, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000701:                   # @func0000000000000701
-	andl	$61440, %edx                    # imm = 0xF000
+
+func0000000000000701:
+	andl	$61440, %edx
 	orl	%esi, %edx
-	cmpl	$2048, %edx                     # imm = 0x800
+	cmpl	$2048, %edx
 	setae	%cl
 	cmpl	$128, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
+

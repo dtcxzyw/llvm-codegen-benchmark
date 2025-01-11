@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fmv.d.x	fa5, zero
@@ -11,9 +11,10 @@ func0000000000000014:                   # @func0000000000000014
 	fabs.d	fa4, fa0
 	flt.d	a0, fa5, fa4
 	ret
+
 .LCPI1_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000012:                   # @func0000000000000012
+	.quad	0x3cb0000000000000
+func0000000000000012:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fli.d	fa5, min
@@ -27,7 +28,8 @@ func0000000000000012:                   # @func0000000000000012
 	fabs.d	fa4, fa0
 	flt.d	a0, fa4, fa5
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fmv.d.x	fa5, zero
@@ -40,3 +42,4 @@ func0000000000000004:                   # @func0000000000000004
 	fabs.d	fa4, fa0
 	flt.d	a0, fa5, fa4
 	ret
+

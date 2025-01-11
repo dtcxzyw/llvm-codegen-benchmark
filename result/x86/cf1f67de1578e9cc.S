@@ -1,5 +1,5 @@
-func000000000000003f:                   # @func000000000000003f
-	movabsq	$2635249153387078803, %rax      # imm = 0x2492492492492493
+func000000000000003f:
+	movabsq	$2635249153387078803, %rax
 	mulxq	%rax, %rax, %rax
 	subq	%rax, %rdx
 	shrq	%rdx
@@ -8,3 +8,4 @@ func000000000000003f:                   # @func000000000000003f
 	andq	$-4, %rdx
 	leaq	8(%rax,%rdx,2), %rax
 	retq
+

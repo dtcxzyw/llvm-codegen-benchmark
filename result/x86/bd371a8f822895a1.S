@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	movl	%edx, %eax
 	orb	$32, %al
 	movzbl	%al, %eax
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpb	%al, %dil
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	movl	%edx, %eax
 	orb	$32, %al
 	movzbl	%al, %eax
@@ -16,7 +17,8 @@ func000000000000002a:                   # @func000000000000002a
 	cmpb	%al, %dil
 	setg	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	movl	%edx, %eax
 	orb	$32, %al
 	movzbl	%al, %eax
@@ -25,7 +27,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpb	%al, %dil
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edx, %eax
 	orb	$32, %al
 	movzbl	%al, %eax
@@ -34,7 +37,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	%al, %dil
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	movl	%edx, %eax
 	orb	$-16, %al
 	movzbl	%al, %eax
@@ -43,3 +47,4 @@ func0000000000000026:                   # @func0000000000000026
 	cmpb	%al, %dil
 	setl	%al
 	retq
+

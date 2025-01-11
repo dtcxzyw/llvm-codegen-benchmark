@@ -1,8 +1,7 @@
 .LCPI0_0:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
-func0000000000000090:                   // @func0000000000000090
-// %bb.0:                               // %entry
-	mov	w8, #4059                       // =0xfdb
+	.xword	0x3eb0c6f7a0b5ed8d
+func0000000000000090:
+	mov	w8, #4059
 	movk	w8, #16585, lsl #16
 	fmov	s2, w8
 	adrp	x8, .LCPI0_0
@@ -14,4 +13,4 @@ func0000000000000090:                   // @func0000000000000090
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

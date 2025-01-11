@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	snez	a2, a0
 	or	a1, a1, a2
 	lui	a2, 256
@@ -7,3 +7,4 @@ func000000000000000c:                   # @func000000000000000c
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

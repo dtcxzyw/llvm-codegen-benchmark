@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	4                               # 0x4
+	.quad	4
 .LCPI0_1:
-	.quad	-4                              # 0xfffffffffffffffc
-func0000000000000026:                   # @func0000000000000026
+	.quad	-4
+func0000000000000026:
 	vpmaxsq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpminsq	%ymm0, %ymm1, %ymm0
 	vpsraq	$63, %ymm0, %ymm1
@@ -13,3 +13,4 @@ func0000000000000026:                   # @func0000000000000026
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

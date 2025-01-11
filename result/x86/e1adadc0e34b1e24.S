@@ -1,11 +1,12 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000084:
 	leal	576(%rsi), %eax
 	testb	%dl, %dl
 	cmovel	%esi, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	sete	%al
@@ -13,3 +14,4 @@ func0000000000000086:                   # @func0000000000000086
 	cmpl	%eax, %edi
 	setl	%al
 	retq
+

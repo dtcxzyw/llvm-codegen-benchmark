@@ -1,17 +1,18 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andl	$1, %edx
 	shlq	$56, %rdx
 	testb	$1, %sil
-	movabsq	$-72057594037927936, %rax       # imm = 0xFF00000000000000
-	movabsq	$-281474976710656, %rcx         # imm = 0xFFFF000000000000
+	movabsq	$-72057594037927936, %rax
+	movabsq	$-281474976710656, %rcx
 	cmovneq	%rax, %rcx
 	addq	%rdx, %rcx
-	movabsq	$280375465082880, %rax          # imm = 0xFF0000000000
+	movabsq	$280375465082880, %rax
 	orq	%rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -24,3 +25,4 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovneq	%rdx, %rax
 	retq
+

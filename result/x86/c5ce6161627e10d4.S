@@ -1,20 +1,22 @@
-func0000000000000024:                   # @func0000000000000024
-	testq	$-779184, %rdi                  # imm = 0xFFF41C50
+func0000000000000024:
+	testq	$-779184, %rdi
 	sete	%cl
 	decq	%rdi
-	cmpq	$524288, %rdi                   # imm = 0x80000
+	cmpq	$524288, %rdi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	leaq	1048576(%rdi), %rax
-	cmpq	$2097149, %rax                  # imm = 0x1FFFFD
+	cmpq	$2097149, %rax
 	setb	%cl
 	testb	$3, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	movl	%edi, %eax
 	andl	$6, %eax
 	cmpl	$2, %eax
@@ -24,3 +26,4 @@ func0000000000000424:                   # @func0000000000000424
 	setb	%al
 	andb	%cl, %al
 	retq
+

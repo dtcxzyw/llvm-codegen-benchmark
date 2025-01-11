@@ -1,4 +1,4 @@
-func00000000000031e1:                   # @func00000000000031e1
+func00000000000031e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
@@ -7,7 +7,8 @@ func00000000000031e1:                   # @func00000000000031e1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000031c1:                   # @func00000000000031c1
+
+func00000000000031c1:
 	lui	a0, 512
 	addi	a0, a0, -1
 	slli	a0, a0, 34
@@ -19,7 +20,8 @@ func00000000000031c1:                   # @func00000000000031c1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000003064:                   # @func0000000000003064
+
+func0000000000003064:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
@@ -28,7 +30,8 @@ func0000000000003064:                   # @func0000000000003064
 	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v10
 	ret
-func000000000000300c:                   # @func000000000000300c
+
+func000000000000300c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
@@ -37,7 +40,8 @@ func000000000000300c:                   # @func000000000000300c
 	vadd.vi	v8, v8, 1
 	vmsne.vv	v0, v8, v10
 	ret
-func0000000000003004:                   # @func0000000000003004
+
+func0000000000003004:
 	li	a0, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v0, v12, a0
@@ -47,7 +51,8 @@ func0000000000003004:                   # @func0000000000003004
 	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000030e1:                   # @func00000000000030e1
+
+func00000000000030e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
@@ -56,7 +61,8 @@ func00000000000030e1:                   # @func00000000000030e1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000003044:                   # @func0000000000003044
+
+func0000000000003044:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v12, 0
 	vmv.v.i	v12, 0
@@ -65,3 +71,4 @@ func0000000000003044:                   # @func0000000000003044
 	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v10
 	ret
+

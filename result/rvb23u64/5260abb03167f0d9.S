@@ -1,4 +1,4 @@
-func0000000000006302:                   # @func0000000000006302
+func0000000000006302:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -10,7 +10,8 @@ func0000000000006302:                   # @func0000000000006302
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000006042:                   # @func0000000000006042
+
+func0000000000006042:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -20,7 +21,8 @@ func0000000000006042:                   # @func0000000000006042
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000002108:                   # @func0000000000002108
+
+func0000000000002108:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -33,7 +35,8 @@ func0000000000002108:                   # @func0000000000002108
 	sltiu	a0, a0, 173
 	or	a0, a0, a1
 	ret
-func0000000000002102:                   # @func0000000000002102
+
+func0000000000002102:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -47,3 +50,4 @@ func0000000000002102:                   # @func0000000000002102
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

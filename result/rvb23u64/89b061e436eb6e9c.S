@@ -1,4 +1,4 @@
-func0000000000000884:                   # @func0000000000000884
+func0000000000000884:
 	andi	a0, a0, 1
 	srliw	a3, a2, 16
 	seqz	a3, a3
@@ -10,7 +10,8 @@ func0000000000000884:                   # @func0000000000000884
 	srliw	a0, a0, 28
 	seqz	a0, a0
 	ret
-func0000000000000886:                   # @func0000000000000886
+
+func0000000000000886:
 	andi	a0, a0, 1
 	srliw	a3, a2, 28
 	seqz	a3, a3
@@ -22,7 +23,8 @@ func0000000000000886:                   # @func0000000000000886
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
-func000000000000088a:                   # @func000000000000088a
+
+func000000000000088a:
 	andi	a0, a0, 1
 	srliw	a3, a2, 28
 	seqz	a3, a3
@@ -35,3 +37,4 @@ func000000000000088a:                   # @func000000000000088a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
+

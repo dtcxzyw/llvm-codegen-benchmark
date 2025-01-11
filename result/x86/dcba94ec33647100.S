@@ -1,4 +1,4 @@
-func0000000000000764:                   # @func0000000000000764
+func0000000000000764:
 	lzcntl	%edx, %eax
 	shrl	$24, %esi
 	subl	%eax, %esi
@@ -6,3 +6,4 @@ func0000000000000764:                   # @func0000000000000764
 	cmpl	%edi, %esi
 	setb	%al
 	retq
+

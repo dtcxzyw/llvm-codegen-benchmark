@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	addiw	a1, a2, -33
@@ -8,7 +8,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	addiw	a1, a2, -1
@@ -18,7 +19,8 @@ func0000000000000081:                   # @func0000000000000081
 	addiw	a1, a1, 15
 	seqz	a0, a1
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+
+func00000000000001a1:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	addiw	a1, a2, 1
@@ -30,7 +32,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	addi	a1, a1, -1
 	seqz	a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	addiw	a1, a2, 1
@@ -42,3 +45,4 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, 1
 	seqz	a0, a1
 	ret
+

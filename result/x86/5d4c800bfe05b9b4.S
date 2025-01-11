@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	notb	%dil
 	testb	$12, %sil
 	sete	%al
@@ -6,11 +6,13 @@ func0000000000000014:                   # @func0000000000000014
 	movzbl	%al, %eax
 	shll	$14, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$64, %sil
-	movl	$33188, %ecx                    # imm = 0x81A4
-	movl	$33261, %eax                    # imm = 0x81ED
+	movl	$33188, %ecx
+	movl	$33261, %eax
 	cmovel	%ecx, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

@@ -1,6 +1,5 @@
-func0000000000000036:                   // @func0000000000000036
-// %bb.0:                               // %entry
-	mov	x8, #45266                      // =0xb0d2
+func0000000000000036:
+	mov	x8, #45266
 	movk	x8, #56138, lsl #16
 	movk	x8, #9534, lsl #32
 	movk	x8, #30223, lsl #48
@@ -8,13 +7,12 @@ func0000000000000036:                   // @func0000000000000036
 	mul	x9, x3, x8
 	umulh	x8, x2, x8
 	cmn	x1, x10
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	adc	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-	mov	w8, #27910                      // =0x6d06
+
+func000000000000001e:
+	mov	w8, #27910
 	lsr	x11, x3, #51
 	movk	w8, #7, lsl #16
 	umulh	x9, x0, x8
@@ -26,10 +24,9 @@ func000000000000001e:                   // @func000000000000001e
 	extr	x0, x8, x9, #51
 	lsr	x1, x8, #51
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	x8, #7081                       // =0x1ba9
+
+func0000000000000024:
+	mov	x8, #7081
 	movk	x8, #46307, lsl #16
 	movk	x8, #56210, lsl #32
 	movk	x8, #40473, lsl #48
@@ -37,7 +34,7 @@ func0000000000000024:                   // @func0000000000000024
 	mul	x9, x3, x8
 	umulh	x8, x2, x8
 	cmn	x1, x10
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	adc	x0, x8, x9
 	ret
-                                        // -- End function
+

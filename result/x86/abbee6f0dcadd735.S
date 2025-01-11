@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,2), %rax
 	subq	%rdi, %rax
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func000000000000020a:                   # @func000000000000020a
+
+func000000000000020a:
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax
@@ -14,10 +15,12 @@ func000000000000020a:                   # @func000000000000020a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	imulq	$59536, %rsi, %rax              # imm = 0xE890
+
+func0000000000000004:
+	imulq	$59536, %rsi, %rax
 	subq	%rdi, %rax
-	addq	$178608, %rax                   # imm = 0x2B9B0
+	addq	$178608, %rax
 	cmpq	$32, %rax
 	setb	%al
 	retq
+

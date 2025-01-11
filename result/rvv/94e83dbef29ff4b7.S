@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func0000000000000022:                   # @func0000000000000022
+	.word	0x358637bd
+func0000000000000022:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,7 +9,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
-func0000000000000077:                   # @func0000000000000077
+
+func0000000000000077:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v16, v12, fa5
@@ -17,9 +18,10 @@ func0000000000000077:                   # @func0000000000000077
 	vmfne.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
+
 .LCPI2_0:
-	.word	0x48976760                      # float 310075
-func0000000000000044:                   # @func0000000000000044
+	.word	0x48976760
+func0000000000000044:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -28,7 +30,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmfgt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -37,7 +40,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	vmflt.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
@@ -45,7 +49,8 @@ func0000000000000033:                   # @func0000000000000033
 	vmfge.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
 	ret
-func00000000000000bb:                   # @func00000000000000bb
+
+func00000000000000bb:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
@@ -53,7 +58,8 @@ func00000000000000bb:                   # @func00000000000000bb
 	vmfgt.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
 	ret
-func00000000000000a2:                   # @func00000000000000a2
+
+func00000000000000a2:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
@@ -62,3 +68,4 @@ func00000000000000a2:                   # @func00000000000000a2
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
+

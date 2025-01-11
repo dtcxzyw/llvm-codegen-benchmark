@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	3472339291344613424             # 0x30303a30303a3030
-func0000000000000003:                   # @func0000000000000003
+	.quad	3472339291344613424
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
 	lui	a0, 61440
@@ -13,7 +13,8 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vv	v8, v8, v10
 	vor.vx	v8, v8, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 16
 	li	a0, 3
@@ -23,7 +24,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 512
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
@@ -32,3 +34,4 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 2
 	ret
+

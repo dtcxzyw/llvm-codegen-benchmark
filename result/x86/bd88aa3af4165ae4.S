@@ -1,11 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movl	%edi, %eax
 	shrl	$11, %eax
 	orl	%edi, %eax
-	testl	$2047, %eax                     # imm = 0x7FF
+	testl	$2047, %eax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movl	%edi, %eax
 	shrl	%eax
 	andl	$2, %eax
@@ -13,3 +14,4 @@ func0000000000000021:                   # @func0000000000000021
 	orl	%eax, %edi
 	sete	%al
 	retq
+

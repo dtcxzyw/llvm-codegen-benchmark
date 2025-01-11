@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vmovdqa32	%ymm2, %ymm1 {%k1}
@@ -7,3 +7,4 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

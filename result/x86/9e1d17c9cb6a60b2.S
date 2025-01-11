@@ -1,21 +1,24 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	movl	%edx, %eax
-	andl	$511, %eax                      # imm = 0x1FF
+	andl	$511, %eax
 	orl	%esi, %eax
-	testl	$33554432, %edx                 # imm = 0x2000000
+	testl	$33554432, %edx
 	cmovnel	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edx, %eax
-	andl	$1022, %eax                     # imm = 0x3FE
+	andl	$1022, %eax
 	orl	%esi, %eax
-	testl	$4096, %edx                     # imm = 0x1000
+	testl	$4096, %edx
 	cmovnel	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	movl	%edx, %eax
 	andl	$7, %eax
 	orl	%esi, %eax
-	testl	$65528, %edx                    # imm = 0xFFF8
+	testl	$65528, %edx
 	cmovnel	%edi, %eax
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	4                               # 0x4
-func0000000000000002:                   # @func0000000000000002
+	.quad	4
+func0000000000000002:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -15,7 +15,7 @@ func0000000000000002:                   # @func0000000000000002
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -26,10 +26,11 @@ func0000000000000002:                   # @func0000000000000002
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -45,7 +46,7 @@ func0000000000000008:                   # @func0000000000000008
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -56,10 +57,11 @@ func0000000000000008:                   # @func0000000000000008
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -75,7 +77,7 @@ func0000000000000000:                   # @func0000000000000000
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -86,12 +88,13 @@ func0000000000000000:                   # @func0000000000000000
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	8                               # 0x8
-func000000000000000a:                   # @func000000000000000a
+	.quad	8
+func000000000000000a:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -106,7 +109,7 @@ func000000000000000a:                   # @func000000000000000a
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -117,6 +120,7 @@ func000000000000000a:                   # @func000000000000000a
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
+

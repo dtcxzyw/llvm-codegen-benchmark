@@ -1,4 +1,4 @@
-func0000000000000033:                   # @func0000000000000033
+func0000000000000033:
 	slli	a2, a2, 32
 	slli	a0, a0, 4
 	srli	a2, a2, 32
@@ -6,7 +6,8 @@ func0000000000000033:                   # @func0000000000000033
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
-func0000000000000133:                   # @func0000000000000133
+
+func0000000000000133:
 	sext.w	a2, a2
 	slli	a3, a0, 4
 	slli	a0, a0, 7
@@ -19,7 +20,8 @@ func0000000000000133:                   # @func0000000000000133
 	addi	a0, a0, 2047
 	addi	a0, a0, 556
 	ret
-func00000000000001fb:                   # @func00000000000001fb
+
+func00000000000001fb:
 	sext.w	a2, a2
 	slli	a0, a0, 4
 	slli	a3, a2, 3
@@ -29,7 +31,8 @@ func00000000000001fb:                   # @func00000000000001fb
 	add	a0, a0, a2
 	addi	a0, a0, 56
 	ret
-func000000000000010f:                   # @func000000000000010f
+
+func000000000000010f:
 	sext.w	a2, a2
 	li	a3, 144
 	slli	a0, a0, 4
@@ -38,7 +41,8 @@ func000000000000010f:                   # @func000000000000010f
 	add	a0, a0, a2
 	addi	a0, a0, -56
 	ret
-func000000000000010b:                   # @func000000000000010b
+
+func000000000000010b:
 	sext.w	a2, a2
 	slli	a2, a2, 7
 	add	a1, a1, a2
@@ -48,7 +52,8 @@ func000000000000010b:                   # @func000000000000010b
 	add	a0, a0, a1
 	addi	a0, a0, -112
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	li	a3, 9
 	slli	a2, a2, 32
 	slli	a0, a0, 3
@@ -58,14 +63,16 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a2
 	addi	a0, a0, 16
 	ret
-func00000000000001ff:                   # @func00000000000001ff
+
+func00000000000001ff:
 	sext.w	a2, a2
 	add	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slli	a2, a2, 32
 	slli	a0, a0, 4
 	srli	a2, a2, 32
@@ -73,7 +80,8 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a2
 	addi	a0, a0, -260
 	ret
-func00000000000000ef:                   # @func00000000000000ef
+
+func00000000000000ef:
 	slli	a2, a2, 32
 	slli	a0, a0, 3
 	srli	a2, a2, 32
@@ -81,3 +89,4 @@ func00000000000000ef:                   # @func00000000000000ef
 	add	a0, a0, a2
 	addi	a0, a0, -56
 	ret
+

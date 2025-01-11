@@ -1,11 +1,12 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	vfcvt.f.xu.v	v8, v8
 	fli.s	fa5, 0.5
 	vfmul.vf	v8, v8, fa5
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 273536
@@ -13,9 +14,10 @@ func0000000000000000:                   # @func0000000000000000
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret
+
 .LCPI2_0:
-	.word	0x3de147ae                      # float 0.109999999
-func0000000000000002:                   # @func0000000000000002
+	.word	0x3de147ae
+func0000000000000002:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -23,9 +25,10 @@ func0000000000000002:                   # @func0000000000000002
 	vfcvt.f.xu.v	v8, v8
 	vfmul.vf	v8, v8, fa5
 	ret
+
 .LCPI3_0:
-	.word	0x40c90fdb                      # float 6.28318548
-func0000000000000003:                   # @func0000000000000003
+	.word	0x40c90fdb
+func0000000000000003:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -33,3 +36,4 @@ func0000000000000003:                   # @func0000000000000003
 	vfcvt.f.xu.v	v8, v8
 	vfmul.vf	v8, v8, fa5
 	ret
+

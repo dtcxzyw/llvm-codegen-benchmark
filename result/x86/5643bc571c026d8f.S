@@ -1,5 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
-	andl	$8388607, %edx                  # imm = 0x7FFFFF
+func0000000000000001:
+	andl	$8388607, %edx
 	leal	(%rdi,%rsi), %eax
 	orl	%edx, %eax
 	retq
+

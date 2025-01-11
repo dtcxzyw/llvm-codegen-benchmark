@@ -1,4 +1,4 @@
-func0000000000006102:                   # @func0000000000006102
+func0000000000006102:
 	cmpq	$1, %rsi
 	setne	%al
 	cmpq	$3, %rsi
@@ -8,3 +8,4 @@ func0000000000006102:                   # @func0000000000006102
 	sete	%al
 	orb	%cl, %al
 	retq
+

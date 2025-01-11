@@ -1,4 +1,4 @@
-func0000000000000698:                   # @func0000000000000698
+func0000000000000698:
 	lui	a3, 62
 	srliw	a0, a0, 11
 	and	a2, a2, a3
@@ -8,7 +8,8 @@ func0000000000000698:                   # @func0000000000000698
 	sltiu	a0, a0, 27
 	andn	a0, a1, a0
 	ret
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	sext.w	a0, a0
 	andi	a2, a2, 16
 	or	a1, a1, a2
@@ -17,7 +18,8 @@ func000000000000042c:                   # @func000000000000042c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a0, a0
 	andi	a2, a2, 1
 	or	a1, a1, a2
@@ -27,7 +29,8 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	sext.w	a0, a0
 	andi	a2, a2, 1
 	or	a1, a1, a2
@@ -36,7 +39,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	sext.w	a0, a0
 	andi	a2, a2, 48
 	or	a1, a1, a2
@@ -45,7 +49,8 @@ func000000000000058c:                   # @func000000000000058c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andi	a2, a2, 128
 	or	a1, a1, a2
 	xori	a1, a1, 127
@@ -54,7 +59,8 @@ func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	sext.w	a0, a0
 	lui	a3, 48
 	and	a2, a2, a3
@@ -67,7 +73,8 @@ func0000000000000681:                   # @func0000000000000681
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000701:                   # @func0000000000000701
+
+func0000000000000701:
 	sext.w	a0, a0
 	lui	a3, 15
 	and	a2, a2, a3
@@ -79,3 +86,4 @@ func0000000000000701:                   # @func0000000000000701
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

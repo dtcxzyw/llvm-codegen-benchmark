@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	sext.w	a0, a0
 	lui	a1, 349525
 	seqz	a2, a0
@@ -23,12 +23,13 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sext.w	a0, a0
 	li	a1, 8
 	bltu	a1, a0, .LBB1_2
 	li	a0, 8
-.LBB1_2:                                # %entry
+.LBB1_2:
 	srli	a1, a0, 1
 	lui	a2, 349525
 	addiw	a2, a2, 1365
@@ -50,3 +51,4 @@ func0000000000000001:                   # @func0000000000000001
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
+

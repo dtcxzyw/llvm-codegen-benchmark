@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000058:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 768
@@ -7,7 +7,8 @@ func0000000000000058:                   # @func0000000000000058
 	vmseq.vi	v10, v8, 2
 	vmor.mm	v0, v12, v10
 	ret
-func0000000000000842:                   # @func0000000000000842
+
+func0000000000000842:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 255
@@ -18,7 +19,8 @@ func0000000000000842:                   # @func0000000000000842
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 104
@@ -27,3 +29,4 @@ func0000000000000042:                   # @func0000000000000042
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000000a:                   # @func000000000000000a
+	.long	1
+func000000000000000a:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -23,13 +23,14 @@ func000000000000000a:                   # @func000000000000000a
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm1, %xmm0
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
-func0000000000000006:                   # @func0000000000000006
+	.long	1
+func0000000000000006:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -52,11 +53,12 @@ func0000000000000006:                   # @func0000000000000006
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm1, %xmm0
-	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -81,12 +83,13 @@ func000000000000000c:                   # @func000000000000000c
 	vpinsrd	$3, %eax, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	1                               # 0x1
-func0000000000000001:                   # @func0000000000000001
+	.long	1
+func0000000000000001:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -109,7 +112,8 @@ func0000000000000001:                   # @func0000000000000001
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm1, %xmm0
-	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI3_0(%rip), %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

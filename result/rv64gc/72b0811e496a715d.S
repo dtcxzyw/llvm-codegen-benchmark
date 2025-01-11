@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	82351536043346212               # 0x124924924924924
-func000000000000000a:                   # @func000000000000000a
+	.quad	82351536043346212
+func000000000000000a:
 	andi	a1, a1, 1
 	srai	a2, a2, 4
 	lui	a3, 748983
@@ -22,12 +22,13 @@ func000000000000000a:                   # @func000000000000000a
 	add	a2, a2, a3
 	andi	a0, a0, 1
 	bltu	a2, a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a2, a1
-.LBB0_4:                                # %entry
+.LBB0_4:
 	beqz	a0, .LBB0_6
 	mv	a0, a1
 	ret
-.LBB0_6:                                # %entry
+.LBB0_6:
 	mv	a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006a:
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
@@ -6,7 +6,8 @@ func000000000000006a:                   # @func000000000000006a
 	addl	%eax, %edi
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andl	$1, %edx
 	testb	$1, %dil
 	movl	$1, %eax
@@ -15,8 +16,9 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	$2, %eax
 	setge	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
+
+func0000000000000041:
+	andl	$2147483647, %edx
 	testb	$1, %dil
 	movl	$1, %eax
 	cmovel	%esi, %eax
@@ -24,7 +26,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	$13, %eax
 	sete	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
@@ -33,3 +36,4 @@ func000000000000004a:                   # @func000000000000004a
 	testl	%edi, %edi
 	setg	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	%dil, %dil
 	je	.LBB0_1
 	movzbl	%dil, %eax
@@ -9,3 +9,4 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_1:
 	vxorps	%xmm0, %xmm0, %xmm0
 	retq
+

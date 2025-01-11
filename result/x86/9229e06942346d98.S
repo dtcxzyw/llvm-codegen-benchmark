@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	leal	13(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
@@ -7,7 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 	cmovel	%ecx, %eax
 	incl	%eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	leal	8(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
@@ -16,7 +17,8 @@ func0000000000000015:                   # @func0000000000000015
 	cmovel	%ecx, %eax
 	addl	$8, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	leal	8(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
@@ -25,7 +27,8 @@ func0000000000000014:                   # @func0000000000000014
 	cmovel	%ecx, %eax
 	addl	$7, %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	leal	317(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
@@ -34,7 +37,8 @@ func000000000000003f:                   # @func000000000000003f
 	cmovel	%ecx, %eax
 	addl	$51, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	16(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
@@ -43,3 +47,4 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	addl	$8, %eax
 	retq
+

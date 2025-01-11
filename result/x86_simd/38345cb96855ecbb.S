@@ -1,27 +1,27 @@
 .LCPI0_0:
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
 .LCPI0_1:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
 .LCPI0_2:
-	.long	7                               # 0x7
+	.long	7
 .LCPI0_3:
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-func0000000000000021:                   # @func0000000000000021
+	.short	63
+	.short	63
+func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm2
@@ -31,3 +31,4 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000001e4:                   # @func00000000000001e4
+func00000000000001e4:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
@@ -7,7 +7,8 @@ func00000000000001e4:                   # @func00000000000001e4
 	add	a0, a0, a2
 	addi	a0, a0, 52
 	ret
-func00000000000001e6:                   # @func00000000000001e6
+
+func00000000000001e6:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
@@ -16,7 +17,8 @@ func00000000000001e6:                   # @func00000000000001e6
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
-func00000000000001ea:                   # @func00000000000001ea
+
+func00000000000001ea:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a1, a0
@@ -25,7 +27,8 @@ func00000000000001ea:                   # @func00000000000001ea
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
@@ -34,7 +37,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	add	a0, a0, a2
 	addi	a0, a0, 96
 	ret
-func0000000000000144:                   # @func0000000000000144
+
+func0000000000000144:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
@@ -43,7 +47,8 @@ func0000000000000144:                   # @func0000000000000144
 	add	a0, a0, a2
 	addi	a0, a0, -24
 	ret
-func00000000000001e8:                   # @func00000000000001e8
+
+func00000000000001e8:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a0, a1, a0
@@ -52,7 +57,8 @@ func00000000000001e8:                   # @func00000000000001e8
 	add	a0, a0, a2
 	addi	a0, a0, 16
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
@@ -61,7 +67,8 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a2
 	addi	a0, a0, 128
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a1, a0
@@ -70,3 +77,4 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a2
 	addi	a0, a0, 96
 	ret
+

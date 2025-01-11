@@ -1,62 +1,54 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
+func0000000000000028:
+	mov	w8, #255
 	bics	wzr, w8, w1
 	cinc	x8, x0, eq
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000180:                   // @func0000000000000180
-// %bb.0:                               // %entry
+
+func0000000000000180:
 	tst	w1, #0xff
 	cinc	w8, w0, ne
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	tst	w1, #0xff
 	cinc	w8, w0, eq
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
-func000000000000002e:                   // @func000000000000002e
-// %bb.0:                               // %entry
+
+func000000000000002e:
 	and	w8, w1, #0xff
 	cmp	w8, #58
 	cinc	x8, x0, eq
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
+
+func000000000000002f:
 	and	w8, w1, #0xff
 	cmp	w8, #58
 	cinc	x8, x0, eq
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
+
+func0000000000000188:
 	and	w8, w1, #0xff
 	cmp	w8, #1
 	cinc	x8, x0, ne
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	and	w8, w1, #0xff
 	cmp	w8, #254
 	cinc	x8, x0, lo
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000288:                   // @func0000000000000288
-// %bb.0:                               // %entry
+
+func0000000000000288:
 	and	w8, w1, #0xff
 	cmp	w8, #254
 	cinc	x8, x0, lo
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
+

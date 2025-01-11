@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	andi	a2, a2, 1
 	addi	a2, a2, -1
 	ori	a2, a2, -65
@@ -6,3 +6,4 @@ func000000000000000e:                   # @func000000000000000e
 	bset	a1, zero, a1
 	and	a0, a0, a1
 	ret
+

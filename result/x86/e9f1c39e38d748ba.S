@@ -1,4 +1,4 @@
-func00000000000001ca:                   # @func00000000000001ca
+func00000000000001ca:
 	subq	%rdx, %rsi
 	sarq	$4, %rsi
 	sarq	$4, %rdi
@@ -7,7 +7,8 @@ func00000000000001ca:                   # @func00000000000001ca
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	subq	%rdx, %rsi
 	sarq	$5, %rsi
 	sarq	$5, %rdi
@@ -16,7 +17,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	subq	%rdx, %rsi
 	sarq	%rsi
 	sarq	%rdi
@@ -25,3 +27,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	testq	%rdi, %rdi
 	sete	%al
 	retq
+

@@ -1,24 +1,26 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	movl	%edi, %eax
-	imull	$34953, %edi, %ecx              # imm = 0x8889
+	imull	$34953, %edi, %ecx
 	shrl	$21, %ecx
 	imull	$60, %ecx, %ecx
 	subl	%ecx, %eax
 	orb	$48, %al
 	retq
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	movl	%edi, %eax
-	imull	$52429, %edi, %ecx              # imm = 0xCCCD
+	imull	$52429, %edi, %ecx
 	shrl	$18, %ecx
 	andl	$-2, %ecx
 	leal	(%rcx,%rcx,4), %ecx
 	subl	%ecx, %eax
 	orb	$48, %al
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	movl	%edi, %eax
 	movzwl	%ax, %ecx
-	imull	$12137, %ecx, %ecx              # imm = 0x2F69
+	imull	$12137, %ecx, %ecx
 	shrl	$16, %ecx
 	movl	%edi, %edx
 	subl	%ecx, %edx
@@ -31,3 +33,4 @@ func000000000000000f:                   # @func000000000000000f
 	subl	%ecx, %eax
 	orb	$64, %al
 	retq
+

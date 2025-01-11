@@ -1,12 +1,14 @@
-func0000000000000003:                   # @func0000000000000003
-	andl	$67108863, %esi                 # imm = 0x3FFFFFF
+func0000000000000003:
+	andl	$67108863, %esi
 	cmpl	%edi, %esi
 	cmovael	%edi, %esi
 	leal	1(%rsi), %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$131068, %esi                   # imm = 0x1FFFC
+
+func0000000000000001:
+	andl	$131068, %esi
 	cmpl	%edi, %esi
 	cmovael	%edi, %esi
 	leal	-4(%rsi), %eax
 	retq
+

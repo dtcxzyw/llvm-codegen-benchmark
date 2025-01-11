@@ -1,4 +1,4 @@
-func000000000000002b:                   # @func000000000000002b
+func000000000000002b:
 	sext.w	a1, a1
 	li	a2, 4
 	minu	a1, a1, a2
@@ -6,7 +6,8 @@ func000000000000002b:                   # @func000000000000002b
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, -32
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	li	a2, 5
 	minu	a1, a1, a2
@@ -15,7 +16,8 @@ func000000000000002c:                   # @func000000000000002c
 	add	a0, a0, a1
 	addi	a0, a0, 1024
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	sext.w	a1, a1
 	li	a2, 5
 	minu	a1, a1, a2
@@ -26,3 +28,4 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

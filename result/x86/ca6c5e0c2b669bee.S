@@ -1,10 +1,11 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	%sil, %sil
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movl	%esi, %eax
 	orb	$32, %al
 	movzbl	%al, %eax
@@ -13,3 +14,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmpb	$48, %al
 	sete	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andb	$1, %sil
 	andb	$1, %dil
 	leaq	8(%rdx), %rcx
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rcx, %rax
 	orq	%rdx, %rax
 	retq
+

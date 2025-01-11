@@ -1,11 +1,12 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	orq	%rdx, %rsi
 	sete	%cl
-	cmpl	$32773, %edi                    # imm = 0x8005
+	cmpl	$32773, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000003181:                   # @func0000000000003181
+
+func0000000000003181:
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -15,7 +16,8 @@ func0000000000003181:                   # @func0000000000003181
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -25,7 +27,8 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000003188:                   # @func0000000000003188
+
+func0000000000003188:
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -35,7 +38,8 @@ func0000000000003188:                   # @func0000000000003188
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000003184:                   # @func0000000000003184
+
+func0000000000003184:
 	testq	%rdx, %rdx
 	setne	%al
 	testq	%rsi, %rsi
@@ -45,3 +49,4 @@ func0000000000003184:                   # @func0000000000003184
 	setb	%al
 	andb	%cl, %al
 	retq
+

@@ -1,5 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movl	%esi, %eax
-	andl	$-449, %eax                     # imm = 0xFE3F
+	andl	$-449, %eax
 	orl	%edi, %eax
 	retq
+

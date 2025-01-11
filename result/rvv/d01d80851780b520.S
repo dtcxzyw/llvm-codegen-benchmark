@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-7046029288634856825            # 0x9e3779b185ebca87
-func000000000000003c:                   # @func000000000000003c
+	.quad	-7046029288634856825
+func000000000000003c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
 	vor.vv	v8, v8, v10
@@ -12,3 +12,4 @@ func000000000000003c:                   # @func000000000000003c
 	vxor.vx	v8, v8, a1
 	vmul.vx	v8, v8, a0
 	ret
+

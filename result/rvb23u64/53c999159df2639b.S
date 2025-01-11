@@ -1,4 +1,4 @@
-func00000000000001ff:                   # @func00000000000001ff
+func00000000000001ff:
 	sext.w	a1, a1
 	li	a2, 544
 	mul	a1, a1, a2
@@ -6,7 +6,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	add	a0, a0, a1
 	addi	a0, a0, 544
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	slli.uw	a1, a1, 3
 	li	a2, -24
 	sh1add	a1, a1, a1
@@ -14,7 +15,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	add	a0, a0, a1
 	addi	a0, a0, -24
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	zext.w	a1, a1
 	li	a2, 296
 	mul	a1, a1, a2
@@ -24,7 +26,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	add	a0, a0, a1
 	addi	a0, a0, 112
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	zext.w	a1, a1
 	lui	a2, 3
 	addiw	a2, a2, 1645
@@ -36,3 +39,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	lui	a1, 8
 	add	a0, a0, a1
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x80000000                      # float -0
-func0000000000000000:                   # @func0000000000000000
+	.long	0x80000000
+func0000000000000000:
 	vxorps	.LCPI0_0(%rip){1to16}, %zmm2, %zmm2
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
 	retq
+

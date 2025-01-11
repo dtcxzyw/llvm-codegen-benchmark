@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
+	.quad	5675921253449092805
 .LCPI0_1:
-	.quad	-5675921253449092805            # 0xb13b13b13b13b13b
-func000000000000004d:                   # @func000000000000004d
+	.quad	-5675921253449092805
+func000000000000004d:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	lui	a3, %hi(.LCPI0_1)
@@ -13,11 +13,12 @@ func000000000000004d:                   # @func000000000000004d
 	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+	.quad	-8198552921648689607
 .LCPI1_1:
-	.quad	8198552921648689607             # 0x71c71c71c71c71c7
-func000000000000004f:                   # @func000000000000004f
+	.quad	8198552921648689607
+func000000000000004f:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	lui	a3, %hi(.LCPI1_1)
@@ -28,9 +29,10 @@ func000000000000004f:                   # @func000000000000004f
 	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func000000000000000f:                   # @func000000000000000f
+	.quad	3074457345618258603
+func000000000000000f:
 	lui	a2, %hi(.LCPI2_0)
 	lui	a3, 349525
 	ld	a2, %lo(.LCPI2_0)(a2)
@@ -45,3 +47,4 @@ func000000000000000f:                   # @func000000000000000f
 	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
+

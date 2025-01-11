@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	zext.w	a4, a4
 	mul	a1, a1, a4
 	mulhu	a3, a0, a4
@@ -8,3 +8,4 @@ func000000000000000f:                   # @func000000000000000f
 	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
+

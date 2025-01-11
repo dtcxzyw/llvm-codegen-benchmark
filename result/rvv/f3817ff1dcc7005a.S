@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func0000000000000051:
 	li	a0, 63
 	li	a1, 56
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,3 +9,4 @@ func0000000000000051:                   # @func0000000000000051
 	vmerge.vxm	v10, v10, a1, v0
 	vsub.vv	v8, v10, v8
 	ret
+

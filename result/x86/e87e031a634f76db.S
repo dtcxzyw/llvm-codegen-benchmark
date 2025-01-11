@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -7,7 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %eax
 	shlq	$49, %rsi
@@ -15,7 +16,8 @@ func000000000000000c:                   # @func000000000000000c
 	orq	%rsi, %rax
 	orq	$1, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %eax
 	shlq	$49, %rsi
@@ -23,7 +25,8 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rsi, %rax
 	orq	$1, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %eax
 	shlq	$54, %rsi
@@ -31,16 +34,18 @@ func0000000000000002:                   # @func0000000000000002
 	orq	%rsi, %rax
 	orq	$1, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	notb	%dl
 	movzbl	%dl, %eax
 	shll	$31, %eax
 	shlq	$37, %rsi
 	orq	%rdi, %rsi
 	orq	%rsi, %rax
-	orq	$134217728, %rax                # imm = 0x8000000
+	orq	$134217728, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	movq	%rsi, %rax
 	andl	$1, %edx
 	shll	$16, %edx
@@ -48,10 +53,12 @@ func000000000000000b:                   # @func000000000000000b
 	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	movq	%rsi, %rax
 	shlq	$63, %rdx
 	orq	%rdi, %rdx
 	shlq	$52, %rax
 	orq	%rdx, %rax
 	retq
+

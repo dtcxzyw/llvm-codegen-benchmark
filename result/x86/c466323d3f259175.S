@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%edi, %eax
 	sarb	$7, %al
 	shrb	$5, %al
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	sarb	$3, %al
 	movsbq	%al, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	imull	$103, %edi, %eax
 	movzwl	%ax, %eax
 	movswl	%ax, %ecx
@@ -15,3 +16,4 @@ func0000000000000002:                   # @func0000000000000002
 	addb	%al, %cl
 	movsbq	%cl, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	lui	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -8,3 +8,4 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 11
 	vxor.vx	v8, v8, a0
 	ret
+

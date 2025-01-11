@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1749024623285053783             # 0x1845c8a0ce512957
-func0000000000000015:                   # @func0000000000000015
+	.quad	1749024623285053783
+func0000000000000015:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -13,9 +13,10 @@ func0000000000000015:                   # @func0000000000000015
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+
 .LCPI1_0:
-	.quad	-7854979361862454525            # 0x92fd81e34a29f303
-func0000000000000014:                   # @func0000000000000014
+	.quad	-7854979361862454525
+func0000000000000014:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -29,9 +30,10 @@ func0000000000000014:                   # @func0000000000000014
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+
 .LCPI2_0:
-	.quad	-6640827866535438581            # 0xa3d70a3d70a3d70b
-func0000000000000010:                   # @func0000000000000010
+	.quad	-6640827866535438581
+func0000000000000010:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -46,9 +48,10 @@ func0000000000000010:                   # @func0000000000000010
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+
 .LCPI3_0:
-	.quad	-7183739866224372601            # 0x9c4e3aa71ae25487
-func0000000000000011:                   # @func0000000000000011
+	.quad	-7183739866224372601
+func0000000000000011:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -63,9 +66,10 @@ func0000000000000011:                   # @func0000000000000011
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12
 	ret
+
 .LCPI4_0:
-	.quad	-3689348814741910312            # 0xccccccccccccccd8
-func0000000000000040:                   # @func0000000000000040
+	.quad	-3689348814741910312
+func0000000000000040:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -73,9 +77,10 @@ func0000000000000040:                   # @func0000000000000040
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+
 .LCPI5_0:
-	.quad	3689348814741910328             # 0x3333333333333338
-func0000000000000050:                   # @func0000000000000050
+	.quad	3689348814741910328
+func0000000000000050:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -83,3 +88,4 @@ func0000000000000050:                   # @func0000000000000050
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+

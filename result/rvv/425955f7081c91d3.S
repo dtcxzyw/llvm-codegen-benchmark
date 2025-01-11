@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -12,3 +12,4 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 60
 	vnmsub.vx	v8, a0, v10
 	ret
+

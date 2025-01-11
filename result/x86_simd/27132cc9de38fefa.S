@@ -1,11 +1,12 @@
 .LCPI0_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI0_1:
-	.long	11                              # 0xb
-func00000000000000d0:                   # @func00000000000000d0
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [12,12,12,12,12,12,12,12]
+	.long	11
+func00000000000000d0:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpcmpltud	%ymm3, %ymm2, %k1
 	vpcmpeqd	%ymm3, %ymm1, %k1 {%k1}
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [11,11,11,11,11,11,11,11]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
+

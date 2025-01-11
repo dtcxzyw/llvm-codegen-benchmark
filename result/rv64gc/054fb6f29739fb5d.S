@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sext.w	a2, a1
 	li	a3, 1
 	andi	a1, a0, 1
@@ -11,7 +11,8 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 16
 	li	a2, 17
 	bnez	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a0, a2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
+

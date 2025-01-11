@@ -1,4 +1,4 @@
-func000000000000010a:                   # @func000000000000010a
+func000000000000010a:
 	notq	%rdx
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rsi,%rax,8), %rax
@@ -6,3 +6,4 @@ func000000000000010a:                   # @func000000000000010a
 	testq	%rax, %rax
 	setg	%al
 	retq
+

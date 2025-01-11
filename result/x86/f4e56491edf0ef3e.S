@@ -1,4 +1,4 @@
-func0000000000000e86:                   # @func0000000000000e86
+func0000000000000e86:
 	movslq	%esi, %rax
 	leaq	1(%rdi), %rcx
 	cmpq	%rax, %rcx
@@ -7,3 +7,4 @@ func0000000000000e86:                   # @func0000000000000e86
 	setb	%al
 	andb	%cl, %al
 	retq
+

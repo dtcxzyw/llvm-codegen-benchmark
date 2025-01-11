@@ -1,78 +1,86 @@
 .LCPI0_0:
-	.quad	0x402a000000000000              # double 13
+	.quad	0x402a000000000000
 .LCPI0_1:
-	.quad	0xc0b26c0000000000              # double -4716
+	.quad	0xc0b26c0000000000
 .LCPI0_2:
-	.quad	0xc0b26b0000000000              # double -4715
-func0000000000000005:                   # @func0000000000000005
+	.quad	0xc0b26b0000000000
+func0000000000000005:
 	vcmpnlesd	.LCPI0_0(%rip), %xmm0, %k1
-	vmovsd	.LCPI0_1(%rip), %xmm0           # xmm0 = [-4.716E+3,0.0E+0]
-	vmovsd	.LCPI0_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-4.715E+3,0.0E+0]
+	vmovsd	.LCPI0_1(%rip), %xmm0
+	vmovsd	.LCPI0_2(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.quad	0x7ff0000000000000              # double +Inf
+	.quad	0x7ff0000000000000
 .LCPI1_1:
-	.quad	0xfff0000000000000              # double -Inf
-func0000000000000002:                   # @func0000000000000002
+	.quad	0xfff0000000000000
+func0000000000000002:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpltsd	%xmm1, %xmm0, %k1
-	vmovsd	.LCPI1_0(%rip), %xmm0           # xmm0 = [+Inf,0.0E+0]
-	vmovsd	.LCPI1_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-Inf,0.0E+0]
+	vmovsd	.LCPI1_0(%rip), %xmm0
+	vmovsd	.LCPI1_1(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x3ff0000000000000
 .LCPI2_1:
-	.quad	0xbff0000000000000              # double -1
-func0000000000000004:                   # @func0000000000000004
+	.quad	0xbff0000000000000
+func0000000000000004:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpltsd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI2_0(%rip), %xmm0           # xmm0 = [1.0E+0,0.0E+0]
-	vmovsd	.LCPI2_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-1.0E+0,0.0E+0]
+	vmovsd	.LCPI2_0(%rip), %xmm0
+	vmovsd	.LCPI2_1(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI3_0:
-	.quad	0xbff0000000000000              # double -1
+	.quad	0xbff0000000000000
 .LCPI3_1:
-	.quad	0x3ff0000000000000              # double 1
-func000000000000000c:                   # @func000000000000000c
+	.quad	0x3ff0000000000000
+func000000000000000c:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmplesd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI3_0(%rip), %xmm0           # xmm0 = [-1.0E+0,0.0E+0]
-	vmovsd	.LCPI3_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI3_0(%rip), %xmm0
+	vmovsd	.LCPI3_1(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI4_0:
-	.quad	0x4000000000000000              # double 2
+	.quad	0x4000000000000000
 .LCPI4_1:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x3fe0000000000000
+func0000000000000008:
 	vcmpeqsd	.LCPI4_0(%rip), %xmm0, %k1
-	vmovsd	.LCPI4_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [5.0E-1,0.0E+0]
+	vmovsd	.LCPI4_1(%rip), %xmm0 {%k1} {z}
 	retq
+
 .LCPI5_0:
-	.quad	0x3feffffffffffffe              # double 0.99999999999999978
+	.quad	0x3feffffffffffffe
 .LCPI5_1:
-	.quad	0xbfeffffffffffffe              # double -0.99999999999999978
-func0000000000000003:                   # @func0000000000000003
+	.quad	0xbfeffffffffffffe
+func0000000000000003:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpnlesd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI5_0(%rip), %xmm0           # xmm0 = [9.9999999999999978E-1,0.0E+0]
-	vmovsd	.LCPI5_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-9.9999999999999978E-1,0.0E+0]
+	vmovsd	.LCPI5_0(%rip), %xmm0
+	vmovsd	.LCPI5_1(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI6_0:
-	.quad	0xc066800000000000              # double -180
+	.quad	0xc066800000000000
 .LCPI6_1:
-	.quad	0x4066800000000000              # double 180
-func000000000000000a:                   # @func000000000000000a
+	.quad	0x4066800000000000
+func000000000000000a:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmplesd	%xmm1, %xmm0, %k1
-	vmovsd	.LCPI6_0(%rip), %xmm0           # xmm0 = [-1.8E+2,0.0E+0]
-	vmovsd	.LCPI6_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.8E+2,0.0E+0]
+	vmovsd	.LCPI6_0(%rip), %xmm0
+	vmovsd	.LCPI6_1(%rip), %xmm0 {%k1}
 	retq
+
 .LCPI7_0:
-	.quad	0xbfe0000000000000              # double -0.5
+	.quad	0xbfe0000000000000
 .LCPI7_1:
-	.quad	0x3fe0000000000000              # double 0.5
-func000000000000000e:                   # @func000000000000000e
+	.quad	0x3fe0000000000000
+func000000000000000e:
 	vcmpordsd	%xmm0, %xmm0, %k1
-	vmovsd	.LCPI7_0(%rip), %xmm0           # xmm0 = [-5.0E-1,0.0E+0]
-	vmovsd	.LCPI7_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [5.0E-1,0.0E+0]
+	vmovsd	.LCPI7_0(%rip), %xmm0
+	vmovsd	.LCPI7_1(%rip), %xmm0 {%k1}
 	retq
+

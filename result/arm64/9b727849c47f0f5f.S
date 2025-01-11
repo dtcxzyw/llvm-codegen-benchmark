@@ -1,51 +1,44 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+func0000000000000006:
+	mov	w8, #1
 	cmp	w0, w1
 	cinc	w0, w8, lt
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #-128                       // =0xffffff80
+
+func0000000000000001:
+	mov	w8, #-128
 	cmp	w0, w1
 	csel	w0, wzr, w8, eq
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	w8, #5                          // =0x5
+
+func000000000000000a:
+	mov	w8, #5
 	cmp	w0, w1
-	mov	w9, #11                         // =0xb
+	mov	w9, #11
 	csel	w0, w9, w8, gt
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	cmp	w0, w1
 	cset	w8, lo
 	lsl	w0, w8, #3
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	mov	w8, #56                         // =0x38
+
+func0000000000000009:
+	mov	w8, #56
 	cmp	w0, w1
-	mov	w9, #48                         // =0x30
+	mov	w9, #48
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+
+func000000000000000c:
+	mov	w8, #1
 	cmp	w0, w1
 	cinc	w0, w8, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	w8, #-128                       // =0xffffff80
+
+func0000000000000008:
+	mov	w8, #-128
 	cmp	w0, w1
 	csel	w0, w8, wzr, hi
 	ret
-                                        // -- End function
+

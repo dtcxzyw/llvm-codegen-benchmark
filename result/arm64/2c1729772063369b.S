@@ -1,15 +1,13 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	neg	w8, w0
 	and	w8, w0, w8
-	cmp	w8, #1, lsl #12                 // =4096
+	cmp	w8, #1, lsl #12
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	neg	w8, w0
 	tst	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	shrb	%dl
 	andb	$3, %dl
 	orb	%dil, %dl
@@ -8,7 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovnel	%ecx, %eax
 	orb	%dl, %al
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	shrb	$6, %dl
 	andb	$1, %dl
 	orb	%dil, %dl
@@ -16,3 +17,4 @@ func0000000000000003:                   # @func0000000000000003
 	leal	(,%rsi,4), %eax
 	orb	%dl, %al
 	retq
+

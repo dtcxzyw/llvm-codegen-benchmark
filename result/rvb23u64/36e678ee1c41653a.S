@@ -1,21 +1,26 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	sll	a0, a0, a1
 	addi	a0, a0, -1
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	sll	a0, a0, a1
 	addi	a0, a0, 7
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	sll	a0, a0, a1
 	addi	a0, a0, -1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	sll	a0, a0, a1
 	bseti	a1, zero, 31
 	add	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	sll	a0, a0, a1
 	addi	a0, a0, -1
 	ret
+

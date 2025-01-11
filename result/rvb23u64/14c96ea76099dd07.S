@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	ori	a2, a2, 1
 	or	a0, a0, a1
 	zext.h	a2, a2
@@ -7,3 +7,4 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 4
 	subw	a0, a0, a1
 	ret
+

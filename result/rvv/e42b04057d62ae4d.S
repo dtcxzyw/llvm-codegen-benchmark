@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	lui	a0, 858993
 	addi	a0, a0, 1881
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -17,3 +17,4 @@ func000000000000000f:                   # @func000000000000000f
 	vnmsub.vx	v9, a0, v8
 	vadd.vv	v8, v9, v9
 	ret
+

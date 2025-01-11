@@ -1,40 +1,40 @@
 .LCPI0_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
 .LCPI0_1:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-func000000000000001c:                   # @func000000000000001c
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+func000000000000001c:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm1
-	vpmullw	.LCPI0_1(%rip), %ymm0, %ymm0    # [36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36]
+	vpmullw	.LCPI0_1(%rip), %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrw	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -121,43 +121,44 @@ func000000000000001c:                   # @func000000000000001c
 	vpinsrw	$7, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
 .LCPI1_1:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-func0000000000000000:                   # @func0000000000000000
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+func0000000000000000:
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm1
-	vpmullw	.LCPI1_1(%rip), %ymm0, %ymm0    # [36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36]
+	vpmullw	.LCPI1_1(%rip), %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrw	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -244,3 +245,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrw	$7, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

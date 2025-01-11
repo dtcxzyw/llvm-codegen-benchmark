@@ -1,4 +1,4 @@
-func0000000000000210:                   # @func0000000000000210
+func0000000000000210:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v12, v8, fa5
@@ -7,9 +7,10 @@ func0000000000000210:                   # @func0000000000000210
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
+
 .LCPI1_0:
-	.word	0x3cffff04                      # float 0.0312495306
-func0000000000000088:                   # @func0000000000000088
+	.word	0x3cffff04
+func0000000000000088:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 266752
@@ -20,7 +21,8 @@ func0000000000000088:                   # @func0000000000000088
 	vmfgt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vv	v12, v8, v8
 	lui	a0, 847872
@@ -29,9 +31,10 @@ func0000000000000044:                   # @func0000000000000044
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
+
 .LCPI3_0:
-	.word	0x40c90fdb                      # float 6.28318548
-func0000000000000104:                   # @func0000000000000104
+	.word	0x40c90fdb
+func0000000000000104:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -39,7 +42,8 @@ func0000000000000104:                   # @func0000000000000104
 	vmfgt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v0
 	ret
-func0000000000000298:                   # @func0000000000000298
+
+func0000000000000298:
 	lui	a0, 798736
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -49,9 +53,10 @@ func0000000000000298:                   # @func0000000000000298
 	vmfge.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
+
 .LCPI5_0:
-	.word	0x7f7fffff                      # float 3.40282347E+38
-func0000000000000050:                   # @func0000000000000050
+	.word	0x7f7fffff
+func0000000000000050:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -60,3 +65,4 @@ func0000000000000050:                   # @func0000000000000050
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
+

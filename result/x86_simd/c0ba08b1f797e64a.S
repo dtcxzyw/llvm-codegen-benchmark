@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -48,7 +48,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -98,9 +99,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	4294901760                      # 0xffff0000
-func0000000000000008:                   # @func0000000000000008
+	.long	4294901760
+func0000000000000008:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -149,9 +151,10 @@ func0000000000000008:                   # @func0000000000000008
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	8                               # 0x8
-func0000000000000009:                   # @func0000000000000009
+	.long	8
+func0000000000000009:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -200,3 +203,4 @@ func0000000000000009:                   # @func0000000000000009
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000ff:                   # @func00000000000000ff
+func00000000000000ff:
 	zext.w	a2, a2
 	lui	a3, 235184
 	addiw	a3, a3, 1725
@@ -12,7 +12,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	zext.w	a2, a2
 	lui	a3, 335544
 	add	a0, a0, a1
@@ -25,7 +26,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	zext.w	a2, a2
 	lui	a3, 335544
 	add	a0, a0, a1
@@ -38,7 +40,8 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	zext.w	a2, a2
 	lui	a3, 235184
 	addiw	a3, a3, 1725
@@ -50,3 +53,4 @@ func00000000000000d5:                   # @func00000000000000d5
 	add	a0, a0, a1
 	addiw	a0, a0, -1900
 	ret
+

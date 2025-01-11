@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpb	$80, %sil
 	setne	%al
 	shlb	$2, %al
@@ -8,3 +8,4 @@ func0000000000000021:                   # @func0000000000000021
 	movl	$11, %eax
 	cmovel	%ecx, %eax
 	retq
+

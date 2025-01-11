@@ -1,6 +1,7 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movl	%esi, %eax
-	andl	$-98305, %eax                   # imm = 0xFFFE7FFF
-	testl	$18501, %edx                    # imm = 0x4845
+	andl	$-98305, %eax
+	testl	$18501, %edx
 	cmovnel	%edi, %eax
 	retq
+

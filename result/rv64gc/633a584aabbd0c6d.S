@@ -1,4 +1,4 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	sub	a1, a1, a2
 	srai	a2, a1, 1
 	seqz	a3, a2
@@ -7,3 +7,4 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

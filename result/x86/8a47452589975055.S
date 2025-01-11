@@ -1,4 +1,4 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003a:
 	movb	$4, %al
 	subb	%dl, %al
 	movzbl	%al, %eax
@@ -8,3 +8,4 @@ func000000000000003a:                   # @func000000000000003a
 	shrxq	%rcx, %rdi, %rax
 	addq	$9, %rax
 	retq
+

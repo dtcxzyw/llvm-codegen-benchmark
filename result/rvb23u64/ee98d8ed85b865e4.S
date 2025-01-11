@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000084:
 	andi	a1, a1, 255
 	not	a2, a2
 	bexti	a2, a2, 30
@@ -6,7 +6,8 @@ func0000000000000084:                   # @func0000000000000084
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000090:                   # @func0000000000000090
+
+func0000000000000090:
 	andi	a1, a1, 255
 	andi	a2, a2, 15
 	seqz	a2, a2
@@ -14,7 +15,8 @@ func0000000000000090:                   # @func0000000000000090
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	sext.b	a1, a1
 	andi	a2, a2, 1
 	seqz	a2, a2
@@ -22,17 +24,20 @@ func0000000000000098:                   # @func0000000000000098
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000604:                   # @func0000000000000604
+
+func0000000000000604:
 	andi	a1, a1, 255
 	addi	a1, a1, -61
 	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000618:                   # @func0000000000000618
+
+func0000000000000618:
 	sext.b	a1, a1
 	bexti	a2, a2, 10
 	slti	a1, a1, 0
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	testq	%rdi, %rdi
 	sete	%cl
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -6,7 +6,8 @@ func000000000000001d:                   # @func000000000000001d
 	setbe	%al
 	orb	%cl, %al
 	retq
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	cmpq	$4, %rdi
 	sete	%cl
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -16,17 +17,20 @@ func0000000000000017:                   # @func0000000000000017
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	cmpq	$4, %rdi
 	sete	%cl
 	vucomiss	%xmm0, %xmm0
 	setp	%al
 	orb	%cl, %al
 	retq
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	testq	%rdi, %rdi
 	sete	%cl
 	vucomiss	%xmm0, %xmm0
 	setnp	%al
 	orb	%cl, %al
 	retq
+

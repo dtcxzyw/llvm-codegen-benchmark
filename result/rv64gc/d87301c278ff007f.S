@@ -1,4 +1,4 @@
-func0000000000000052:                   # @func0000000000000052
+func0000000000000052:
 	mul	a6, a4, a3
 	mulhu	a4, a4, a2
 	mul	a7, a5, a2
@@ -14,7 +14,8 @@ func0000000000000052:                   # @func0000000000000052
 	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	mul	a6, a4, a3
 	mulhu	a7, a4, a2
 	mul	a5, a5, a2
@@ -30,7 +31,8 @@ func000000000000004a:                   # @func000000000000004a
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
-func000000000000007b:                   # @func000000000000007b
+
+func000000000000007b:
 	mul	a6, a4, a3
 	mulhu	a4, a4, a2
 	mul	a7, a5, a2
@@ -46,3 +48,4 @@ func000000000000007b:                   # @func000000000000007b
 	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
+

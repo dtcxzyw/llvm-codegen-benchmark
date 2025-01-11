@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
 	li	a0, -1920
@@ -9,7 +9,8 @@ func000000000000001f:                   # @func000000000000001f
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
 	li	a0, -21
@@ -20,11 +21,12 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
+
 .LCPI2_0:
-	.quad	1650762746860425525             # 0x16e8aff8df105135
+	.quad	1650762746860425525
 .LCPI2_1:
-	.quad	1051668233026429277             # 0xe9846af9b1a615d
-func0000000000000010:                   # @func0000000000000010
+	.quad	1051668233026429277
+func0000000000000010:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	lui	a1, %hi(.LCPI2_1)
@@ -35,11 +37,12 @@ func0000000000000010:                   # @func0000000000000010
 	vmacc.vx	v10, a1, v12
 	vmv.v.v	v8, v10
 	ret
+
 .LCPI3_0:
-	.quad	-4650441984963589867            # 0xbf764fa75daec915
+	.quad	-4650441984963589867
 .LCPI3_1:
-	.quad	-1225172306242737336            # 0xeeff504759c16b48
-func0000000000000011:                   # @func0000000000000011
+	.quad	-1225172306242737336
+func0000000000000011:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	lui	a1, %hi(.LCPI3_1)
@@ -50,11 +53,12 @@ func0000000000000011:                   # @func0000000000000011
 	vmacc.vx	v10, a1, v12
 	vmv.v.v	v8, v10
 	ret
+
 .LCPI4_0:
-	.quad	-7100786597449064539            # 0x9d74f03611319fa5
+	.quad	-7100786597449064539
 .LCPI4_1:
-	.quad	-1225172306242737336            # 0xeeff504759c16b48
-func0000000000000000:                   # @func0000000000000000
+	.quad	-1225172306242737336
+func0000000000000000:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	lui	a1, %hi(.LCPI4_1)
@@ -65,7 +69,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vx	v10, a1, v12
 	vmv.v.v	v8, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -74,3 +79,4 @@ func000000000000000d:                   # @func000000000000000d
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	ret
+

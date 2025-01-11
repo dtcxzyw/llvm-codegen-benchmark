@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmd	%ymm2, %ymm2, %k1
@@ -8,9 +8,10 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	31536000                        # 0x1e13380
-func000000000000002a:                   # @func000000000000002a
+	.long	31536000
+func000000000000002a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
@@ -21,16 +22,17 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-func000000000000018c:                   # @func000000000000018c
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -40,7 +42,8 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -51,18 +54,19 @@ func000000000000018a:                   # @func000000000000018a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	4294583296                      # 0xfffa2400
+	.long	4294583296
 .LCPI4_1:
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-	.short	65472                           # 0xffc0
-func0000000000000084:                   # @func0000000000000084
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+func0000000000000084:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm2, %k1
@@ -72,3 +76,4 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x401c000000000000              # double 7
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x401c000000000000
+func0000000000000001:
 	lui	a2, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a2)
 	fcvt.d.w	fa4, a1
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	fmv.x.d	a1, fa5
 	add.uw	a0, a1, a0
 	ret
+

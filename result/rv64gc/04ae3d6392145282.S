@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	lui	a1, 258048
 	lui	a2, 261120
 	fmv.w.x	fa5, a1
@@ -9,7 +9,8 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	lui	a1, 258048
 	lui	a2, 273536
 	fmv.w.x	fa5, a1
@@ -20,7 +21,8 @@ func0000000000000022:                   # @func0000000000000022
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	fmv.w.x	fa5, zero
 	lui	a1, 784384
 	not	a0, a0
@@ -32,7 +34,8 @@ func000000000000002b:                   # @func000000000000002b
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	fmv.w.x	fa5, zero
 	lui	a1, 276480
 	not	a0, a0
@@ -44,9 +47,10 @@ func000000000000002d:                   # @func000000000000002d
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+
 .LCPI4_0:
-	.word	0x3d25aee6                      # float 0.0404499993
-func0000000000000023:                   # @func0000000000000023
+	.word	0x3d25aee6
+func0000000000000023:
 	lui	a1, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a1)
 	fmv.w.x	fa4, zero
@@ -57,7 +61,8 @@ func0000000000000023:                   # @func0000000000000023
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	feq.s	a2, fa0, fa5
@@ -65,7 +70,8 @@ func0000000000000028:                   # @func0000000000000028
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	fle.s	a2, fa0, fa5
@@ -73,7 +79,8 @@ func000000000000002a:                   # @func000000000000002a
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	fmv.w.x	fa5, zero
 	lui	a1, 258048
 	flt.s	a2, fa0, fa5
@@ -84,3 +91,4 @@ func0000000000000025:                   # @func0000000000000025
 	or	a0, a0, a2
 	and	a0, a0, a1
 	ret
+

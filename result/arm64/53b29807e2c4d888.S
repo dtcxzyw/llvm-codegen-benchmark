@@ -1,10 +1,8 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	neg	x0, x1
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	neg	x0, x1
 	ret
-                                        // -- End function
+

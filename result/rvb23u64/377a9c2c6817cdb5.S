@@ -1,8 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	not	a0, a0
 	fcvt.s.wu	fa0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	xori	a0, a0, 1
 	fcvt.s.wu	fa0, a0
 	ret
+

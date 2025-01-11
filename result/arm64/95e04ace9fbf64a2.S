@@ -1,45 +1,39 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	mov	w8, #56                         // =0x38
+func0000000000000007:
+	mov	w8, #56
 	add	w9, w0, #1
 	smull	x0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+
+func0000000000000005:
+	mov	w8, #40
 	add	w9, w0, #1
 	smull	x0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #272                        // =0x110
+
+func0000000000000001:
+	mov	w8, #272
 	sub	w9, w0, #1
 	smull	x0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
+
+func0000000000000003:
+	mov	w8, #6
 	sub	w9, w0, #2
 	smull	x0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
+
+func0000000000000009:
+	mov	w8, #24
 	add	w9, w0, #1
 	smull	x0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	add	w8, w0, #1
-	mov	x9, #52507                      // =0xcd1b
+	mov	x9, #52507
 	sxtw	x8, w8
 	movk	x9, #30795, lsl #16
 	movk	x9, #38042, lsl #32
 	mul	x0, x8, x9
 	ret
-                                        // -- End function
+

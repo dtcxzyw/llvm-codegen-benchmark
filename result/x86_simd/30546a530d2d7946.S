@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000894:                   # @func0000000000000894
+	.long	7
+func0000000000000894:
 	vpmovqd	%ymm2, %xmm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm1, %xmm1
@@ -9,3 +9,4 @@ func0000000000000894:                   # @func0000000000000894
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

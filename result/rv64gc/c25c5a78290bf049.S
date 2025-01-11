@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	addi	a2, a1, -1
 	not	a1, a1
 	lui	a3, 5
@@ -21,7 +21,8 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	addi	a2, a1, -1
 	not	a1, a1
 	lui	a3, 5
@@ -44,7 +45,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	addi	a2, a1, -1
 	not	a1, a1
 	lui	a3, 5
@@ -67,3 +69,4 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

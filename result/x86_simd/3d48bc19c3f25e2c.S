@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vptestnmw	%ymm1, %ymm1, %k1
@@ -6,24 +6,25 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-	.short	32                              # 0x20
-func000000000000000c:                   # @func000000000000000c
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+	.short	32
+func000000000000000c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpneqw	.LCPI1_0(%rip), %ymm1, %k1
@@ -31,24 +32,25 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-func0000000000000008:                   # @func0000000000000008
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpnleuw	.LCPI2_0(%rip), %ymm1, %k1
@@ -56,24 +58,25 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-func0000000000000006:                   # @func0000000000000006
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpltw	.LCPI3_0(%rip), %ymm1, %k1
@@ -81,24 +84,25 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-func0000000000000004:                   # @func0000000000000004
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpltuw	.LCPI4_0(%rip), %ymm1, %k1
@@ -106,24 +110,25 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-func0000000000000018:                   # @func0000000000000018
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+func0000000000000018:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpnleuw	.LCPI5_0(%rip), %ymm1, %k1
@@ -131,24 +136,25 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-	.short	512                             # 0x200
-func0000000000000014:                   # @func0000000000000014
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+	.short	512
+func0000000000000014:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpltuw	.LCPI6_0(%rip), %ymm1, %k1
@@ -156,7 +162,8 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -165,3 +172,4 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

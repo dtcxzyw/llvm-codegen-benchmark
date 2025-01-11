@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	cmpl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	cmpl	%edx, %esi
 	seta	%al
 	orb	%dil, %al
@@ -16,7 +17,8 @@ func0000000000000010:                   # @func0000000000000010
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	cmpl	%edx, %esi
 	setbe	%al
 	orb	%dil, %al
@@ -25,7 +27,8 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	cmpl	%edx, %esi
 	setge	%al
 	orb	%dil, %al
@@ -33,15 +36,17 @@ func0000000000000016:                   # @func0000000000000016
 	andl	$1, %eax
 	xorl	$3, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
-	movl	$-9216, %ecx                    # imm = 0xDC00
+	movl	$-9216, %ecx
 	cmovgl	%ecx, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	notb	%dil
 	cmpl	%edx, %esi
 	setae	%al
@@ -50,7 +55,8 @@ func0000000000000008:                   # @func0000000000000008
 	negl	%eax
 	orl	$1, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	cmpl	%edx, %esi
 	setl	%al
 	orb	%dil, %al
@@ -58,7 +64,8 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	incl	%eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	movl	$-22, %ecx
@@ -66,3 +73,4 @@ func0000000000000018:                   # @func0000000000000018
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

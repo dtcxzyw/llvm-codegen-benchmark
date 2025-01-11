@@ -1,15 +1,16 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3ff0000000000000
+func0000000000000002:
 	vmulsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI0_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	orb	%dil, %al
 	retq
+
 .LCPI1_0:
-	.quad	0x47efffffe0000000              # double 3.4028234663852886E+38
-func0000000000000007:                   # @func0000000000000007
+	.quad	0x47efffffe0000000
+func0000000000000007:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI1_0(%rip), %xmm0
 	setp	%cl
@@ -18,7 +19,8 @@ func0000000000000007:                   # @func0000000000000007
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -26,9 +28,10 @@ func000000000000000b:                   # @func000000000000000b
 	notb	%dil
 	andb	%dil, %al
 	retq
+
 .LCPI3_0:
-	.quad	0x47efffffe0000000              # double 3.4028234663852886E+38
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x47efffffe0000000
+func0000000000000008:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI3_0(%rip), %xmm0
 	setnp	%cl
@@ -36,28 +39,32 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
+
 .LCPI4_0:
-	.quad	0xc0bf400000000000              # double -8000
-func0000000000000004:                   # @func0000000000000004
+	.quad	0xc0bf400000000000
+func0000000000000004:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI4_0(%rip), %xmm0
 	seta	%al
 	orb	%dil, %al
 	retq
+
 .LCPI5_0:
-	.quad	0xc069000000000000              # double -200
-func0000000000000005:                   # @func0000000000000005
+	.quad	0xc069000000000000
+func0000000000000005:
 	vmulsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI5_0(%rip), %xmm1           # xmm1 = [-2.0E+2,0.0E+0]
+	vmovsd	.LCPI5_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setb	%al
 	orb	%dil, %al
 	retq
+
 .LCPI6_0:
-	.quad	0x4069000000000000              # double 200
-func0000000000000003:                   # @func0000000000000003
+	.quad	0x4069000000000000
+func0000000000000003:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI6_0(%rip), %xmm0
 	setb	%al
 	orb	%dil, %al
 	retq
+

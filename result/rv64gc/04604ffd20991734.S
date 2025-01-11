@@ -1,4 +1,4 @@
-func00000000000001ef:                   # @func00000000000001ef
+func00000000000001ef:
 	slli	a2, a1, 2
 	add	a1, a1, a2
 	slli	a2, a0, 1
@@ -8,7 +8,8 @@ func00000000000001ef:                   # @func00000000000001ef
 	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	addi	a1, a1, 5
 	lui	a2, 2
 	addi	a2, a2, -1638
@@ -18,3 +19,4 @@ func0000000000000009:                   # @func0000000000000009
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

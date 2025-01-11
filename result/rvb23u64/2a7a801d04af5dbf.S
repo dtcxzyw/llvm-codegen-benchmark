@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	bexti	a2, a1, 15
 	add	a1, a1, a2
 	sext.h	a1, a1
@@ -6,7 +6,8 @@ func0000000000000026:                   # @func0000000000000026
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.h	a1, a1
 	lui	a2, 6
 	addiw	a2, a2, 1639
@@ -19,7 +20,8 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 800
 	xori	a0, a0, 1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	bexti	a2, a1, 15
 	add	a1, a1, a2
 	sext.h	a1, a1
@@ -27,3 +29,4 @@ func0000000000000024:                   # @func0000000000000024
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	ret
+

@@ -1,15 +1,17 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	andl	$3, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	addl	%eax, %eax
-	andl	$-1073741825, %edi              # imm = 0xBFFFFFFF
+	andl	$-1073741825, %edi
 	orl	%edi, %eax
 	retq
+

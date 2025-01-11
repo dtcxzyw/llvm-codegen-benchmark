@@ -1,8 +1,9 @@
-func000000000000052a:                   # @func000000000000052a
-	cmpl	$33900, %esi                    # imm = 0x846C
-	movl	$32768, %eax                    # imm = 0x8000
+func000000000000052a:
+	cmpl	$33900, %esi
+	movl	$32768, %eax
 	cmovll	%edi, %eax
 	vcvttss2si	%xmm0, %ecx
 	addl	%eax, %ecx
 	setns	%al
 	retq
+

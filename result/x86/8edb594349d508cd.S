@@ -1,7 +1,7 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	movl	%edi, %eax
 	movl	%edi, %ecx
-	movl	$3435973837, %edx               # imm = 0xCCCCCCCD
+	movl	$3435973837, %edx
 	imulq	%rcx, %rdx
 	shrq	$35, %rdx
 	addl	%edx, %edx
@@ -9,12 +9,14 @@ func0000000000000007:                   # @func0000000000000007
 	subl	%ecx, %eax
 	orb	$48, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	movl	%edi, %eax
 	movl	%edi, %ecx
-	imulq	$875407347, %rcx, %rcx          # imm = 0x342DA7F3
+	imulq	$875407347, %rcx, %rcx
 	shrq	$37, %rcx
 	imull	$157, %ecx, %ecx
 	subl	%ecx, %eax
 	orb	$64, %al
 	retq
+

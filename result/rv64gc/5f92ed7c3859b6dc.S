@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	sext.w	a0, a0
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
@@ -6,21 +6,24 @@ func0000000000000088:                   # @func0000000000000088
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	sext.w	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	feq.s	a1, fa0, fa0
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	sext.w	a0, a0
 	feq.s	a1, fa0, fa0
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000001d4:                   # @func00000000000001d4
+
+func00000000000001d4:
 	sext.w	a0, a0
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
@@ -29,7 +32,8 @@ func00000000000001d4:                   # @func00000000000001d4
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000001d8:                   # @func00000000000001d8
+
+func00000000000001d8:
 	sext.w	a0, a0
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
@@ -39,21 +43,24 @@ func00000000000001d8:                   # @func00000000000001d8
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	slti	a0, a0, 16
 	fle.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	slti	a0, a0, 258
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+
+func0000000000000036:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	seqz	a0, a0
@@ -61,9 +68,10 @@ func0000000000000036:                   # @func0000000000000036
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+
 .LCPI8_0:
-	.word	0x7f7fffff                      # float 3.40282347E+38
-func000000000000018e:                   # @func000000000000018e
+	.word	0x7f7fffff
+func000000000000018e:
 	lui	a1, %hi(.LCPI8_0)
 	flw	fa5, %lo(.LCPI8_0)(a1)
 	sext.w	a0, a0
@@ -72,14 +80,16 @@ func000000000000018e:                   # @func000000000000018e
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000190:                   # @func0000000000000190
+
+func0000000000000190:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	snez	a0, a0
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func000000000000014e:                   # @func000000000000014e
+
+func000000000000014e:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	slti	a0, a0, 4
@@ -87,7 +97,8 @@ func000000000000014e:                   # @func000000000000014e
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	slti	a0, a0, 3
@@ -95,7 +106,8 @@ func0000000000000148:                   # @func0000000000000148
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
@@ -103,7 +115,8 @@ func0000000000000202:                   # @func0000000000000202
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000002c2:                   # @func00000000000002c2
+
+func00000000000002c2:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
@@ -111,14 +124,16 @@ func00000000000002c2:                   # @func00000000000002c2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a0, a0
 	lui	a1, 258048
 	addi	a0, a0, -256
@@ -127,7 +142,8 @@ func0000000000000024:                   # @func0000000000000024
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	srliw	a0, a0, 24
 	lui	a1, 258048
 	seqz	a0, a0
@@ -135,7 +151,8 @@ func0000000000000084:                   # @func0000000000000084
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000000082:                   # @func0000000000000082
+
+func0000000000000082:
 	sext.w	a0, a0
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
@@ -144,7 +161,8 @@ func0000000000000082:                   # @func0000000000000082
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	slti	a0, a0, 0
@@ -152,14 +170,16 @@ func00000000000000c6:                   # @func00000000000000c6
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000090:                   # @func0000000000000090
+
+func0000000000000090:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	sltiu	a0, a0, 2
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func00000000000000d6:                   # @func00000000000000d6
+
+func00000000000000d6:
 	sext.w	a0, a0
 	lui	a1, 260096
 	slti	a0, a0, 1
@@ -168,7 +188,8 @@ func00000000000000d6:                   # @func00000000000000d6
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func00000000000001c2:                   # @func00000000000001c2
+
+func00000000000001c2:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
@@ -176,3 +197,4 @@ func00000000000001c2:                   # @func00000000000001c2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

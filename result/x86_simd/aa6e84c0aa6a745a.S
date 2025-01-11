@@ -1,69 +1,72 @@
 .LCPI0_0:
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	4                               # 0x4
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	8                               # 0x8
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	12                              # 0xc
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	16                              # 0x10
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	20                              # 0x14
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	24                              # 0x18
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	28                              # 0x1c
-	.byte	128                             # 0x80
+	.byte	128
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
 .LCPI0_1:
-	.long	2654435769                      # 0x9e3779b9
-func0000000000000080:                   # @func0000000000000080
-	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2    # ymm2 = zero,zero,ymm2[0],zero,zero,zero,ymm2[4],zero,zero,zero,ymm2[8],zero,zero,zero,ymm2[12],zero,zero,zero,ymm2[16],zero,zero,zero,ymm2[20],zero,zero,zero,ymm2[24],zero,zero,zero,ymm2[28],zero
+	.long	2654435769
+func0000000000000080:
+	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI1_1:
-	.long	4294967293                      # 0xfffffffd
-func0000000000000015:                   # @func0000000000000015
+	.long	4294967293
+func0000000000000015:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI2_1:
-	.long	4294967290                      # 0xfffffffa
-func0000000000000035:                   # @func0000000000000035
+	.long	4294967290
+func0000000000000035:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	16128                           # 0x3f00
-func00000000000000c0:                   # @func00000000000000c0
+	.long	16128
+func00000000000000c0:
 	vpslld	$8, %ymm2, %ymm2
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -71,3 +74,4 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+

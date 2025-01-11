@@ -1,4 +1,4 @@
-func0000000000000053:                   # @func0000000000000053
+func0000000000000053:
 	andb	$1, %dl
 	andb	$1, %sil
 	xorl	%eax, %eax
@@ -6,3 +6,4 @@ func0000000000000053:                   # @func0000000000000053
 	setae	%al
 	leaq	16(%rdi,%rax,8), %rax
 	retq
+

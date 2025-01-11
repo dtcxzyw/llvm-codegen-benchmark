@@ -1,10 +1,11 @@
-func0000000000000aa1:                   # @func0000000000000aa1
+func0000000000000aa1:
 	sarq	$3, %rdx
-	movabsq	$3816567739388183093, %rax      # imm = 0x34F72C234F72C235
+	movabsq	$3816567739388183093, %rax
 	imulq	%rdx, %rax
 	leaq	(%rax,%rsi,2), %rax
 	addq	%rdi, %rax
-	movabsq	$39755913951960240, %rcx        # imm = 0x8D3DCB08D3DCB0
+	movabsq	$39755913951960240, %rcx
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
+

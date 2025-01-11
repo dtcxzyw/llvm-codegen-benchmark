@@ -1,19 +1,20 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a2, a0, 255
 	andi	a1, a1, 1
 	lui	a0, 1
 	beqz	a1, .LBB0_3
 	bnez	a2, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	lui	a0, 2
 	beqz	a2, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	li	a0, 1
 	slli	a0, a0, 11
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slli	a0, a0, 56
 	andi	a2, a1, 1
 	srai	a1, a0, 56
@@ -26,11 +27,12 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 5
 	li	a2, 64
 	blt	a2, a1, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	li	a0, 18
-.LBB1_4:                                # %entry
+.LBB1_4:
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a2, a1, 1
 	andi	a1, a0, 255
 	bnez	a2, .LBB2_2
@@ -42,7 +44,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 5
 	li	a2, 1
 	bltu	a2, a1, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	li	a0, 1
-.LBB2_4:                                # %entry
+.LBB2_4:
 	ret
+

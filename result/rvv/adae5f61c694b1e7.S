@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -9,7 +9,8 @@ func0000000000000075:                   # @func0000000000000075
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,7 +21,8 @@ func000000000000007f:                   # @func000000000000007f
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -31,7 +33,8 @@ func000000000000005d:                   # @func000000000000005d
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -42,7 +45,8 @@ func0000000000000055:                   # @func0000000000000055
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -53,7 +57,8 @@ func000000000000005c:                   # @func000000000000005c
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -64,7 +69,8 @@ func000000000000004c:                   # @func000000000000004c
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	lui	a0, 512
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -75,3 +81,4 @@ func0000000000000040:                   # @func0000000000000040
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
+

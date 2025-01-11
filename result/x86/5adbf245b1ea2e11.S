@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3f000000                      # float 0.5
-func0000000000000000:                   # @func0000000000000000
+	.long	0x3f000000
+func0000000000000000:
 	andb	$1, %dil
 	vaddss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vcvttss2si	%xmm0, %ecx
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	sbbl	%eax, %eax
 	orb	%cl, %al
 	retq
+

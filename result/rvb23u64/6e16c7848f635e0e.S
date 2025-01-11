@@ -1,4 +1,4 @@
-func00000000000007e1:                   # @func00000000000007e1
+func00000000000007e1:
 	addi	a2, a1, 168
 	xor	a2, a2, a0
 	addi	a0, a0, 36
@@ -7,7 +7,8 @@ func00000000000007e1:                   # @func00000000000007e1
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	lui	a2, 8
 	addiw	a2, a2, 7
 	add	a2, a2, a1
@@ -18,7 +19,8 @@ func0000000000000061:                   # @func0000000000000061
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000005c8:                   # @func00000000000005c8
+
+func00000000000005c8:
 	addi	a2, a1, -7
 	sltu	a2, a2, a0
 	addi	a0, a0, 3
@@ -27,3 +29,4 @@ func00000000000005c8:                   # @func00000000000005c8
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

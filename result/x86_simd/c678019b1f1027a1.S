@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+func0000000000000000:
+	vpmovzxdq	%xmm2, %ymm2
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
 	xorl	%edx, %edx
@@ -31,7 +31,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%r8
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm1, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm0, %xmm0
 	vpextrq	$1, %xmm2, %rdi
 	movq	%rsi, %rax
 	xorl	%edx, %edx
@@ -42,6 +42,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	retq
+

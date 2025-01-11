@@ -1,4 +1,4 @@
-func00000000000008ca:                   # @func00000000000008ca
+func00000000000008ca:
 	addq	%rsi, %rdx
 	shrq	%rsi
 	testl	%edi, %edi
@@ -6,7 +6,8 @@ func00000000000008ca:                   # @func00000000000008ca
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func000000000000094a:                   # @func000000000000094a
+
+func000000000000094a:
 	addq	%rsi, %rdx
 	shrq	%rsi
 	cmpl	$3, %edi
@@ -14,3 +15,4 @@ func000000000000094a:                   # @func000000000000094a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
+

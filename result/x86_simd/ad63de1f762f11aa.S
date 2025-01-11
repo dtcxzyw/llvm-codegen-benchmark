@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpsrlq	$32, %ymm2, %ymm2 {%k1}
@@ -6,9 +6,10 @@ func0000000000000061:                   # @func0000000000000061
 	vpsrlq	$16, %ymm2, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	65535                           # 0xffff
-func0000000000000001:                   # @func0000000000000001
+	.quad	65535
+func0000000000000001:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpsrlq	$32, %ymm2, %ymm2 {%k1}
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrlq	$16, %ymm2, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
+

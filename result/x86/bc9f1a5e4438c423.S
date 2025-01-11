@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	testq	%rdx, %rdx
 	setne	%al
 	andb	%sil, %al
@@ -6,7 +6,8 @@ func0000000000000019:                   # @func0000000000000019
 	shll	$13, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	testq	%rdx, %rdx
 	sete	%al
 	andb	%sil, %al
@@ -14,3 +15,4 @@ func0000000000000003:                   # @func0000000000000003
 	shlq	$35, %rax
 	orq	%rdi, %rax
 	retq
+

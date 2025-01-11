@@ -1,4 +1,4 @@
-func000000000000318c:                   # @func000000000000318c
+func000000000000318c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a2, a1, -9
@@ -9,7 +9,8 @@ func000000000000318c:                   # @func000000000000318c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000005184:                   # @func0000000000005184
+
+func0000000000005184:
 	sext.w	a0, a0
 	sext.w	a2, a1
 	srliw	a1, a1, 6
@@ -22,3 +23,4 @@ func0000000000005184:                   # @func0000000000005184
 	sltiu	a0, a0, 177
 	or	a0, a0, a1
 	ret
+

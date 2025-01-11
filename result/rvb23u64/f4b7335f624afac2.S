@@ -1,4 +1,4 @@
-func000000000000014f:                   # @func000000000000014f
+func000000000000014f:
 	sltu	a2, a1, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -6,3 +6,4 @@ func000000000000014f:                   # @func000000000000014f
 	slli	a0, a0, 2
 	addi	a0, a0, 4
 	ret
+

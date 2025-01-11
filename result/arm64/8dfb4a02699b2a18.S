@@ -1,52 +1,45 @@
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	mov	w8, #25                         // =0x19
+func0000000000000041:
+	mov	w8, #25
 	cmp	x0, #23
 	csinc	x0, x8, x0, eq
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	lsr	x9, x0, #5
-	mov	w8, #8096                       // =0x1fa0
+	mov	w8, #8096
 	add	x10, x0, #32
 	cmp	x9, #253
 	csel	x0, x8, x10, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	add	x8, x0, #2
 	cmp	x0, #0
 	csel	x0, xzr, x8, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	w8, #16777215                   // =0xffffff
+
+func0000000000000021:
+	mov	w8, #16777215
 	sub	x9, x0, #1
 	cmp	x0, #0
 	csel	x0, x8, x9, eq
 	ret
-                                        // -- End function
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
-	mov	w8, #32766                      // =0x7ffe
+
+func0000000000000068:
+	mov	w8, #32766
 	cmp	x0, x8
 	csinc	x0, xzr, x0, hi
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	cmp	x0, #2
 	csinc	x0, xzr, x0, eq
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
-	mov	w8, #65532                      // =0xfffc
+
+func0000000000000078:
+	mov	w8, #65532
 	cmp	x0, x8
 	csel	x8, x0, x8, lo
 	add	x0, x8, #4
 	ret
-                                        // -- End function
+

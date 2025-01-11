@@ -1,16 +1,19 @@
-func0000000000000004:                   # @func0000000000000004
-	movabsq	$-4294967296, %rcx              # imm = 0xFFFFFFFF00000000
+func0000000000000004:
+	movabsq	$-4294967296, %rcx
 	andq	%rdi, %rcx
-	movabsq	$1099511627776, %rax            # imm = 0x10000000000
+	movabsq	$1099511627776, %rax
 	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	andl	$1023, %esi                     # imm = 0x3FF
+
+func0000000000000007:
+	andl	$1023, %esi
 	leaq	2048(%rsi,%rdi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	andq	$-4096, %rsi                    # imm = 0xF000
-	orq	$4095, %rdi                     # imm = 0xFFF
+
+func0000000000000000:
+	andq	$-4096, %rsi
+	orq	$4095, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq
+

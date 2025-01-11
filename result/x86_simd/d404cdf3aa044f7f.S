@@ -1,5 +1,6 @@
 .LCPI0_0:
-	.long	0x40228f5c                      # float 2.53999996
-func0000000000000000:                   # @func0000000000000000
+	.long	0x40228f5c
+func0000000000000000:
 	vdivps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+

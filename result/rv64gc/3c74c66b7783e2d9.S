@@ -1,13 +1,14 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andi	a1, a0, 255
 	li	a0, 1
 	beq	a1, a0, .LBB0_2
 	addi	a1, a1, -2
 	seqz	a0, a1
 	slli	a0, a0, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	andi	a1, a0, 255
 	slli	a0, a0, 56
 	srai	a0, a0, 56
@@ -18,3 +19,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+

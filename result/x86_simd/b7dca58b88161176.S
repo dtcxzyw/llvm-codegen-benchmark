@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
 .LCPI0_1:
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-func0000000000000041:                   # @func0000000000000041
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+func0000000000000041:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpeqw	.LCPI0_0(%rip), %ymm2, %k1
@@ -41,3 +41,4 @@ func0000000000000041:                   # @func0000000000000041
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

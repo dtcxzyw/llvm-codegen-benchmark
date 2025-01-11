@@ -1,4 +1,4 @@
-func0000000000000420:                   # @func0000000000000420
+func0000000000000420:
 	addl	%edx, %esi
 	cmpl	$16, %esi
 	setae	%al
@@ -7,7 +7,8 @@ func0000000000000420:                   # @func0000000000000420
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000630:                   # @func0000000000000630
+
+func0000000000000630:
 	addl	%edx, %esi
 	setne	%al
 	testq	%rdi, %rdi
@@ -15,3 +16,4 @@ func0000000000000630:                   # @func0000000000000630
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
+

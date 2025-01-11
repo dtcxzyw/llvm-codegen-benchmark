@@ -1,11 +1,12 @@
-func0000000000000308:                   # @func0000000000000308
+func0000000000000308:
 	zext.h	a0, a0
 	addiw	a1, a1, -127
 	sltiu	a1, a1, -94
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	zext.h	a0, a0
 	addiw	a1, a1, -12
 	sltiu	a1, a1, -11
@@ -13,7 +14,8 @@ func0000000000000048:                   # @func0000000000000048
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000910:                   # @func0000000000000910
+
+func0000000000000910:
 	zext.h	a0, a0
 	addiw	a1, a1, -58
 	lui	a2, 2
@@ -22,7 +24,8 @@ func0000000000000910:                   # @func0000000000000910
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000908:                   # @func0000000000000908
+
+func0000000000000908:
 	zext.h	a0, a0
 	addiw	a1, a1, -59
 	lui	a2, 16
@@ -31,7 +34,8 @@ func0000000000000908:                   # @func0000000000000908
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000902:                   # @func0000000000000902
+
+func0000000000000902:
 	zext.h	a0, a0
 	addiw	a1, a1, -284
 	sltiu	a1, a1, 8
@@ -39,14 +43,16 @@ func0000000000000902:                   # @func0000000000000902
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	zext.h	a0, a0
 	sext.w	a1, a1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	zext.h	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, 1
@@ -55,14 +61,16 @@ func0000000000000302:                   # @func0000000000000302
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	zext.h	a0, a0
 	addiw	a1, a1, -5
 	sltiu	a1, a1, 2
 	sltiu	a0, a0, 13
 	or	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	zext.h	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, 1
@@ -70,3 +78,4 @@ func0000000000000042:                   # @func0000000000000042
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

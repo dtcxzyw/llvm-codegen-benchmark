@@ -1,7 +1,8 @@
-func0000000000000004:                   # @func0000000000000004
-	andl	$8388607, %edx                  # imm = 0x7FFFFF
-	orl	$8388608, %edx                  # imm = 0x800000
+func0000000000000004:
+	andl	$8388607, %edx
+	orl	$8388608, %edx
 	shrxl	%edi, %edx, %eax
-	andl	$32768, %esi                    # imm = 0x8000
+	andl	$32768, %esi
 	orl	%esi, %eax
 	retq
+

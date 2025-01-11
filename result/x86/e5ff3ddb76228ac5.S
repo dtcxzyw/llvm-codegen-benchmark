@@ -1,10 +1,11 @@
-func0000000000000002:                   # @func0000000000000002
-	andl	$2048, %edi                     # imm = 0x800
+func0000000000000002:
+	andl	$2048, %edi
 	testl	%edx, %esi
-	movl	$2048, %eax                     # imm = 0x800
+	movl	$2048, %eax
 	cmovel	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	xorl	%eax, %eax
 	testl	%edx, %esi
 	setne	%al
@@ -12,3 +13,4 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$-2, %edi
 	orl	%edi, %eax
 	retq
+

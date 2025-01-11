@@ -1,14 +1,16 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	notb	%dil
 	addl	$-58, %esi
 	cmpl	$-10, %esi
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	xorb	$1, %dil
-	addl	$-918000, %esi                  # imm = 0xFFF1FE10
-	cmpl	$196112, %esi                   # imm = 0x2FE10
+	addl	$-918000, %esi
+	cmpl	$196112, %esi
 	setae	%al
 	andb	%dil, %al
 	retq
+

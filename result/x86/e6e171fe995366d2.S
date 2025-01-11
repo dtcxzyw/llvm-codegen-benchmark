@@ -1,4 +1,4 @@
-func0000000000000114:                   # @func0000000000000114
+func0000000000000114:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
 	setnp	%al
@@ -9,3 +9,4 @@ func0000000000000114:                   # @func0000000000000114
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

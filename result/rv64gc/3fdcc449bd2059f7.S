@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	82351536043346212               # 0x124924924924924
-func000000000000000a:                   # @func000000000000000a
+	.quad	82351536043346212
+func000000000000000a:
 	andi	a3, a0, 1
 	sub	a1, a1, a2
 	lui	a0, 748983
@@ -21,7 +21,8 @@ func000000000000000a:                   # @func000000000000000a
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	bltu	a0, a2, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a0, a2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
+

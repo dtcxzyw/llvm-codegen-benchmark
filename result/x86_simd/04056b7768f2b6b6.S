@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	10000                           # 0x2710
-func0000000000000044:                   # @func0000000000000044
+	.quad	10000
+func0000000000000044:
 	vpsraq	$3, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -14,7 +14,7 @@ func0000000000000044:                   # @func0000000000000044
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
@@ -25,15 +25,16 @@ func0000000000000044:                   # @func0000000000000044
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	19                              # 0x13
-func0000000000000048:                   # @func0000000000000048
+	.quad	19
+func0000000000000048:
 	vpsraq	$3, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
@@ -47,7 +48,7 @@ func0000000000000048:                   # @func0000000000000048
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
@@ -58,9 +59,10 @@ func0000000000000048:                   # @func0000000000000048
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

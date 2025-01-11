@@ -1,4 +1,4 @@
-func0000000000000281:                   # @func0000000000000281
+func0000000000000281:
 	addb	$-3, %sil
 	movzbl	%sil, %eax
 	cmpb	$2, %al
@@ -11,7 +11,8 @@ func0000000000000281:                   # @func0000000000000281
 	cmpb	%al, %cl
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	addb	$-16, %sil
 	movzbl	%sil, %eax
 	cmpb	$18, %al
@@ -24,7 +25,8 @@ func0000000000000081:                   # @func0000000000000081
 	cmpb	%al, %cl
 	sete	%al
 	retq
-func0000000000000201:                   # @func0000000000000201
+
+func0000000000000201:
 	addb	$-16, %sil
 	movzbl	%sil, %eax
 	cmpb	$18, %al
@@ -37,3 +39,4 @@ func0000000000000201:                   # @func0000000000000201
 	cmpb	%al, %cl
 	sete	%al
 	retq
+

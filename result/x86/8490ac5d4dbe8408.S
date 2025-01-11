@@ -1,32 +1,38 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movzbl	%sil, %eax
 	addl	%edi, %eax
 	imull	$153, %eax, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andl	$1, %esi
 	addl	%edi, %esi
-	imull	$1000, %esi, %eax               # imm = 0x3E8
+	imull	$1000, %esi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %esi
 	addl	%edi, %esi
 	imull	$100, %esi, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	andl	$1, %esi
 	addl	%edi, %esi
-	imull	$-24578, %esi, %eax             # imm = 0x9FFE
+	imull	$-24578, %esi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movzbl	%sil, %ecx
 	addl	%edi, %ecx
 	movl	%ecx, %eax
 	shll	$10, %eax
 	addl	%ecx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	andl	$252645135, %esi                # imm = 0xF0F0F0F
+
+func000000000000000c:
+	andl	$252645135, %esi
 	addl	%edi, %esi
-	imull	$16843009, %esi, %eax           # imm = 0x1010101
+	imull	$16843009, %esi, %eax
 	retq
+

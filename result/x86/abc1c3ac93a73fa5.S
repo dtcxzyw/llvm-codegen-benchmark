@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	incl	%edx
 	cmpl	%edi, %edx
 	cmovlel	%edi, %edx
@@ -6,3 +6,4 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%edi, %edx
 	movslq	%edx, %rax
 	retq
+

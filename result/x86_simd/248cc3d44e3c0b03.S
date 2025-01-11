@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	2147483647                      # 0x7fffffff
+	.long	2147483647
 .LCPI0_1:
-	.long	2139095040                      # 0x7f800000
-func0000000000000018:                   # @func0000000000000018
+	.long	2139095040
+func0000000000000018:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
@@ -11,11 +11,12 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	2147483647                      # 0x7fffffff
+	.long	2147483647
 .LCPI1_1:
-	.long	2139095040                      # 0x7f800000
-func0000000000000008:                   # @func0000000000000008
+	.long	2139095040
+func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
@@ -24,11 +25,12 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI2_1:
-	.long	0x358637bd                      # float 9.99999997E-7
-func0000000000000012:                   # @func0000000000000012
+	.long	0x358637bd
+func0000000000000012:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
@@ -37,11 +39,12 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	2147483647                      # 0x7fffffff
+	.long	2147483647
 .LCPI3_1:
-	.long	2139095039                      # 0x7f7fffff
-func0000000000000009:                   # @func0000000000000009
+	.long	2139095039
+func0000000000000009:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
@@ -50,11 +53,12 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI4_1:
-	.long	0x42c80000                      # float 100
-func000000000000000a:                   # @func000000000000000a
+	.long	0x42c80000
+func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vmovaps	%zmm1, %zmm2 {%k1}
@@ -63,3 +67,4 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

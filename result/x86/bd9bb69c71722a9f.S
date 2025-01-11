@@ -1,20 +1,22 @@
-func0000000000000602:                   # @func0000000000000602
+func0000000000000602:
 	notl	%edx
-	testl	$1792, %edx                     # imm = 0x700
+	testl	$1792, %edx
 	setne	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$1792, %eax                     # imm = 0x700
+	cmpl	$1792, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
-	andl	$65533, %edx                    # imm = 0xFFFD
-	cmpl	$3076, %edx                     # imm = 0xC04
+
+func0000000000000082:
+	andl	$65533, %edx
+	cmpl	$3076, %edx
 	sete	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$1282, %eax                     # imm = 0x502
+	cmpl	$1282, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
+

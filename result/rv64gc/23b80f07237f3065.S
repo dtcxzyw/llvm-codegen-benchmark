@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func00000000000000cc:
 	li	a3, 17
 	slli	a2, a2, 32
 	slli	a0, a0, 3
@@ -10,7 +10,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	andi	a2, a2, 127
 	li	a3, 80
 	slli	a0, a0, 2
@@ -21,3 +22,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	addiw	a1, a3, 96
 	add	a0, a0, a1
 	ret
+

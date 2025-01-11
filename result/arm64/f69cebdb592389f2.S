@@ -1,32 +1,27 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	ubfx	w8, w1, #2, #24
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	lsr	x8, x1, #9
 	and	w8, w8, #0xffffe0
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	ubfx	w8, w1, #2, #5
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	ubfx	x8, x1, #32, #16
 	orr	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	lsr	w8, w1, #8
 	and	w8, w8, #0x1000
 	orr	w0, w8, w0
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	testb	$64, %dl
 	sete	%cl
 	testl	%esi, %esi
@@ -6,7 +6,8 @@ func0000000000000042:                   # @func0000000000000042
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+
+func0000000000000182:
 	btq	$32, %rdx
 	setae	%cl
 	testl	%esi, %esi
@@ -14,3 +15,4 @@ func0000000000000182:                   # @func0000000000000182
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
+

@@ -1,6 +1,6 @@
-func0000000000000161:                   # @func0000000000000161
+func0000000000000161:
 	shrq	$2, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	addq	$-2, %rax
 	shrq	%rax
@@ -8,9 +8,10 @@ func0000000000000161:                   # @func0000000000000161
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	shrq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	addq	$-2, %rax
 	shrq	%rax
@@ -18,3 +19,4 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	andb	%dil, %al
 	retq
+

@@ -1,10 +1,8 @@
-func000000000000004f:                   // @func000000000000004f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func000000000000004f:
 	ubfiz	x9, x2, #1, #15
-	mov	w8, #14                         // =0xe
+	mov	w8, #14
 	add	x9, x1, x9
 	madd	x8, x9, x8, x0
 	add	x0, x8, #12
 	ret
-                                        // -- End function
+

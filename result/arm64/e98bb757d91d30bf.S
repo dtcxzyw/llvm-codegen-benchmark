@@ -1,20 +1,18 @@
-func0000000000000029:                   // @func0000000000000029
-// %bb.0:                               // %entry
+func0000000000000029:
 	sxtb	w9, w0
-	mov	w8, #-65                        // =0xffffffbf
-	mov	w10, #-97                       // =0xffffff9f
+	mov	w8, #-65
+	mov	w10, #-97
 	cmp	w9, #96
 	csel	w8, w10, w8, gt
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+
+func0000000000000019:
 	sxtb	w9, w0
-	mov	w8, #-87                        // =0xffffffa9
-	mov	w10, #-48                       // =0xffffffd0
+	mov	w8, #-87
+	mov	w10, #-48
 	cmp	w9, #97
 	csel	w8, w10, w8, lt
 	add	w0, w8, w9
 	ret
-                                        // -- End function
+

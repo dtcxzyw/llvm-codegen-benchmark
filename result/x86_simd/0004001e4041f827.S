@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,8 +16,8 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	2                               # 0x2
-func000000000000002c:                   # @func000000000000002c
+	.long	2
+func000000000000002c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
@@ -26,7 +26,8 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
@@ -36,7 +37,8 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmb	%xmm1, %xmm1, %k1
@@ -45,15 +47,16 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -62,7 +65,7 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -72,7 +75,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmb	%xmm1, %xmm1, %k1
@@ -81,7 +85,8 @@ func0000000000000181:                   # @func0000000000000181
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -91,15 +96,16 @@ func0000000000000141:                   # @func0000000000000141
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
-	.byte	10                              # 0xa
+	.byte	10
+	.byte	10
+	.byte	10
+	.byte	10
+	.byte	10
+	.byte	10
+	.byte	10
+	.byte	10
 	.zero	1
 	.zero	1
 	.zero	1
@@ -109,8 +115,8 @@ func0000000000000141:                   # @func0000000000000141
 	.zero	1
 	.zero	1
 .LCPI6_1:
-	.long	2                               # 0x2
-func00000000000000c4:                   # @func00000000000000c4
+	.long	2
+func00000000000000c4:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI6_0(%rip), %xmm1, %k1
@@ -119,15 +125,16 @@ func00000000000000c4:                   # @func00000000000000c4
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI7_0:
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
-	.byte	16                              # 0x10
+	.byte	16
+	.byte	16
+	.byte	16
+	.byte	16
+	.byte	16
+	.byte	16
+	.byte	16
+	.byte	16
 	.zero	1
 	.zero	1
 	.zero	1
@@ -136,7 +143,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000184:                   # @func0000000000000184
+func0000000000000184:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI7_0(%rip), %xmm1, %k1
@@ -145,7 +152,8 @@ func0000000000000184:                   # @func0000000000000184
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
@@ -155,15 +163,16 @@ func000000000000014c:                   # @func000000000000014c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI9_0:
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
-	.byte	126                             # 0x7e
+	.byte	126
+	.byte	126
+	.byte	126
+	.byte	126
+	.byte	126
+	.byte	126
+	.byte	126
+	.byte	126
 	.zero	1
 	.zero	1
 	.zero	1
@@ -172,7 +181,7 @@ func000000000000014c:                   # @func000000000000014c
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI9_0(%rip), %xmm1, %k1
@@ -181,3 +190,4 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

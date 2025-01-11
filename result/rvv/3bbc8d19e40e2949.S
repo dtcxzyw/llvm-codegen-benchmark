@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	lui	a0, 559241
 	addi	a0, a0, -1911
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -10,7 +10,8 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, -60
 	vwmacc.vx	v8, a0, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -21,3 +22,4 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, -1000
 	vwmacc.vx	v8, a0, v10
 	ret
+

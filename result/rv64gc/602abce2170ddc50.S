@@ -1,14 +1,14 @@
-func0000000000000201:                   # @func0000000000000201
+func0000000000000201:
 	andi	a3, a0, 1
 	li	a4, 7
 	li	a0, 4
 	bgeu	a1, a4, .LBB0_3
 	bnez	a3, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	li	a1, 4
 	beqz	a3, .LBB0_2
 .LBB0_4:
@@ -18,17 +18,18 @@ func0000000000000201:                   # @func0000000000000201
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000221:                   # @func0000000000000221
+
+func0000000000000221:
 	andi	a3, a0, 1
 	li	a4, 10
 	li	a0, 5
 	bgeu	a1, a4, .LBB1_3
 	bnez	a3, .LBB1_4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-.LBB1_3:                                # %entry
+.LBB1_3:
 	li	a1, 5
 	beqz	a3, .LBB1_2
 .LBB1_4:
@@ -36,3 +37,4 @@ func0000000000000221:                   # @func0000000000000221
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

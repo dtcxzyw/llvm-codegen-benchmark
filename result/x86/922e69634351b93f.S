@@ -1,31 +1,34 @@
-func0000000000000410:                   # @func0000000000000410
+func0000000000000410:
 	cmpl	$4, %edx
 	setae	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$1024, %eax                     # imm = 0x400
+	cmpl	$1024, %eax
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000602:                   # @func0000000000000602
-	cmpl	$1792, %edx                     # imm = 0x700
+
+func0000000000000602:
+	cmpl	$1792, %edx
 	setne	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$1792, %eax                     # imm = 0x700
+	cmpl	$1792, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000610:                   # @func0000000000000610
+
+func0000000000000610:
 	testl	%edx, %edx
 	setne	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$3049, %eax                     # imm = 0xBE9
+	cmpl	$3049, %eax
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	$51, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -33,7 +36,8 @@ func0000000000000084:                   # @func0000000000000084
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	cmpl	$2, %edx
 	setb	%cl
 	orb	%sil, %cl
@@ -41,7 +45,8 @@ func0000000000000202:                   # @func0000000000000202
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000604:                   # @func0000000000000604
+
+func0000000000000604:
 	testl	%edx, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -49,21 +54,24 @@ func0000000000000604:                   # @func0000000000000604
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	cmpl	$1, %edx
 	sete	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
-	cmpl	$3076, %edx                     # imm = 0xC04
+
+func0000000000000082:
+	cmpl	$3076, %edx
 	sete	%cl
 	orb	%sil, %cl
 	movzwl	%di, %eax
-	cmpl	$1282, %eax                     # imm = 0x502
+	cmpl	$1282, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
+

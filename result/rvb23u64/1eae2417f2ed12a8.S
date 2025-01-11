@@ -1,15 +1,16 @@
 .LCPI0_0:
-	.quad	4153837486827862103             # 0x39a5652fb1137857
-func000000000000003f:                   # @func000000000000003f
+	.quad	4153837486827862103
+func000000000000003f:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mulhu	a0, a0, a1
 	srli	a0, a0, 50
 	ori	a0, a0, 1
 	ret
+
 .LCPI1_0:
-	.quad	-6067343680855748867            # 0xabcc77118461cefd
-func000000000000000f:                   # @func000000000000000f
+	.quad	-6067343680855748867
+func000000000000000f:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	mulhu	a0, a0, a1
@@ -17,3 +18,4 @@ func000000000000000f:                   # @func000000000000000f
 	sext.w	a0, a0
 	ori	a0, a0, 1
 	ret
+

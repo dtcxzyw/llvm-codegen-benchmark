@@ -1,4 +1,4 @@
-func0000000000000484:                   # @func0000000000000484
+func0000000000000484:
 	addb	$-65, %dl
 	cmpb	$26, %dl
 	setb	%cl
@@ -7,7 +7,8 @@ func0000000000000484:                   # @func0000000000000484
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	incb	%dl
 	cmpb	$2, %dl
 	setb	%cl
@@ -16,7 +17,8 @@ func000000000000008c:                   # @func000000000000008c
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addb	$-13, %dl
 	cmpb	$-12, %dl
 	setb	%cl
@@ -25,7 +27,8 @@ func0000000000000084:                   # @func0000000000000084
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	addb	$-32, %dl
 	cmpb	$-31, %dl
 	setb	%cl
@@ -34,3 +37,4 @@ func0000000000000088:                   # @func0000000000000088
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

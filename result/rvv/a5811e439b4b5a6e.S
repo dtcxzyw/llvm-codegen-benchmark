@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	li	a0, 126
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vx	v12, v12, a0
@@ -8,3 +8,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 1
 	ret
+

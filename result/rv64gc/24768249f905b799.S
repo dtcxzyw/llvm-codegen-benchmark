@@ -1,4 +1,4 @@
-func000000000000026a:                   # @func000000000000026a
+func000000000000026a:
 	srli	a2, a2, 3
 	lui	a3, 699051
 	addi	a3, a3, -1365
@@ -6,5 +6,6 @@ func000000000000026a:                   # @func000000000000026a
 	li	a3, 2
 	blt	a3, a2, .LBB0_2
 	addi	a0, a1, 32
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

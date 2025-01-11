@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	shll	$2, %esi
 	leal	(%rsi,%rsi,2), %eax
 	testl	%eax, %eax
@@ -6,9 +6,11 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	testl	%esi, %esi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
+

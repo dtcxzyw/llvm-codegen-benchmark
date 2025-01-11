@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	slliw	a2, a2, 27
 	lui	a3, 1015840
 	addiw	a3, a3, -1
@@ -9,7 +9,8 @@ func000000000000000b:                   # @func000000000000000b
 	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	slliw	a2, a2, 16
 	or	a1, a1, a2
 	lui	a2, 1016064
@@ -20,14 +21,16 @@ func000000000000000f:                   # @func000000000000000f
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slliw	a2, a2, 3
 	andi	a1, a1, -6
 	or	a1, a1, a2
 	andi	a0, a0, -2
 	or	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slliw	a2, a2, 24
 	lui	a3, 1046536
 	addiw	a3, a3, 255
@@ -38,3 +41,4 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
+

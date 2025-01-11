@@ -1,4 +1,4 @@
-func000000000000294c:                   # @func000000000000294c
+func000000000000294c:
 	testl	%edx, %edx
 	setns	%al
 	testl	%esi, %esi
@@ -8,17 +8,19 @@ func000000000000294c:                   # @func000000000000294c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000302c:                   # @func000000000000302c
+
+func000000000000302c:
 	testl	%edx, %edx
 	setne	%cl
-	cmpl	$772, %esi                      # imm = 0x304
+	cmpl	$772, %esi
 	sete	%dl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	xorl	$31, %edx
 	xorl	$31, %esi
 	orl	%edx, %esi
@@ -27,7 +29,8 @@ func000000000000042c:                   # @func000000000000042c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -37,7 +40,8 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	testl	%edx, %edx
 	sete	%cl
 	testl	%esi, %esi
@@ -47,7 +51,8 @@ func000000000000058c:                   # @func000000000000058c
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func000000000000282c:                   # @func000000000000282c
+
+func000000000000282c:
 	testl	%edx, %edx
 	setg	%al
 	cmpl	$2, %esi
@@ -57,7 +62,8 @@ func000000000000282c:                   # @func000000000000282c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000114c:                   # @func000000000000114c
+
+func000000000000114c:
 	cmpl	$32, %edx
 	setb	%al
 	testl	%esi, %esi
@@ -67,13 +73,15 @@ func000000000000114c:                   # @func000000000000114c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000108c:                   # @func000000000000108c
-	cmpl	$2147483646, %edx               # imm = 0x7FFFFFFE
+
+func000000000000108c:
+	cmpl	$2147483646, %edx
 	setb	%al
-	cmpl	$2147483646, %esi               # imm = 0x7FFFFFFE
+	cmpl	$2147483646, %esi
 	setb	%cl
 	andb	%al, %cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
+

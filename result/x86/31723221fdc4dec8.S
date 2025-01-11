@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	movzbl	%dl, %eax
 	cmpl	%eax, %esi
 	sete	%cl
@@ -6,7 +6,8 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000544:                   # @func0000000000000544
+
+func0000000000000544:
 	movzbl	%dl, %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -14,7 +15,8 @@ func0000000000000544:                   # @func0000000000000544
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	movzbl	%dl, %eax
 	cmpl	%eax, %esi
 	sete	%cl
@@ -22,7 +24,8 @@ func0000000000000024:                   # @func0000000000000024
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	movzbl	%dl, %eax
 	cmpl	%eax, %esi
 	setl	%cl
@@ -30,3 +33,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	setae	%al
 	andb	%cl, %al
 	retq
+

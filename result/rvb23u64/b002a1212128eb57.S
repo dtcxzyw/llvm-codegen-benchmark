@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	andi	a2, a2, 1
 	li	a3, -4
 	czero.nez	a2, a3, a2
@@ -6,7 +6,8 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a2
 	addi	a0, a0, 10
 	ret
-func000000000000003b:                   # @func000000000000003b
+
+func000000000000003b:
 	andi	a2, a2, 1
 	li	a3, 8
 	slli	a0, a0, 4
@@ -15,7 +16,8 @@ func000000000000003b:                   # @func000000000000003b
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	andi	a2, a2, 1
 	li	a3, 600
 	sh2add	a0, a0, a0
@@ -25,7 +27,8 @@ func0000000000000030:                   # @func0000000000000030
 	li	a1, 1098
 	sh2add	a0, a1, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a2, a2, 1
 	li	a3, -2
 	czero.nez	a2, a3, a2
@@ -33,7 +36,8 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	andi	a2, a2, 1
 	li	a3, -32
 	slli	a0, a0, 5
@@ -42,7 +46,8 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	andi	a2, a2, 1
 	li	a3, 3
 	czero.eqz	a2, a3, a2
@@ -50,7 +55,8 @@ func0000000000000038:                   # @func0000000000000038
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a2, a2, 1
 	lui	a3, 1048387
 	add	a0, a0, a1
@@ -61,7 +67,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
@@ -69,7 +76,8 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a2, a2, 1
 	li	a3, 16
 	czero.nez	a2, a3, a2
@@ -77,7 +85,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	addi	a0, a0, -88
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	andi	a2, a2, 1
 	li	a3, -8
 	czero.nez	a2, a3, a2
@@ -86,7 +95,8 @@ func0000000000000033:                   # @func0000000000000033
 	addi	a0, a0, 2047
 	addi	a0, a0, 29
 	ret
-func000000000000003a:                   # @func000000000000003a
+
+func000000000000003a:
 	andi	a2, a2, 1
 	li	a3, -8
 	czero.nez	a2, a3, a2
@@ -94,7 +104,8 @@ func000000000000003a:                   # @func000000000000003a
 	sh3add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	andi	a2, a2, 1
 	li	a3, -64
 	czero.nez	a2, a3, a2
@@ -102,3 +113,4 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a2
 	addi	a0, a0, 56
 	ret
+

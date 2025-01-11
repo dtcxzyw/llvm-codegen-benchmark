@@ -1,8 +1,8 @@
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000000fc:
 	vpmovdw	%ymm1, %xmm1
 	vpsllw	$8, %xmm1, %xmm3
 	vpsubw	%xmm1, %xmm3, %xmm1
-	vpmovzxbw	%xmm2, %xmm2            # xmm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+	vpmovzxbw	%xmm2, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1
 	vpextrw	$1, %xmm1, %eax
 	vpextrw	$1, %xmm0, %ecx
@@ -47,3 +47,4 @@ func00000000000000fc:                   # @func00000000000000fc
 	vpinsrw	$7, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
+

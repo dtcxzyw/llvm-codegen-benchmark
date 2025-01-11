@@ -1,4 +1,4 @@
-func0000000000000118:                   # @func0000000000000118
+func0000000000000118:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	sltiu	a2, a2, 97
@@ -7,7 +7,8 @@ func0000000000000118:                   # @func0000000000000118
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
@@ -15,7 +16,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	lui	a3, 20480
@@ -27,7 +29,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	sltiu	a2, a2, 120
@@ -35,7 +38,8 @@ func0000000000000084:                   # @func0000000000000084
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -8
@@ -44,7 +48,8 @@ func0000000000000184:                   # @func0000000000000184
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	sltiu	a2, a2, 4
@@ -53,7 +58,8 @@ func000000000000010c:                   # @func000000000000010c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -61,7 +67,8 @@ func0000000000000181:                   # @func0000000000000181
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	snez	a2, a2
@@ -69,7 +76,8 @@ func000000000000018c:                   # @func000000000000018c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 12
@@ -79,3 +87,4 @@ func0000000000000101:                   # @func0000000000000101
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	slli	a1, a1, 3
@@ -6,6 +6,7 @@ func0000000000000028:                   # @func0000000000000028
 	mv	a2, a1
 	bltu	a0, a1, .LBB0_2
 	mv	a2, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	add	a0, a2, a1
 	ret
+

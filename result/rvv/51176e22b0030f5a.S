@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	0x412e848000000000              # double 1.0E+6
+	.quad	0x412e848000000000
 .LCPI0_1:
-	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
+	.quad	0x43e0000000000000
 .LCPI0_2:
-	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
-func0000000000000058:                   # @func0000000000000058
+	.quad	0xc3e0000000000000
+func0000000000000058:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
@@ -17,7 +17,8 @@ func0000000000000058:                   # @func0000000000000058
 	vmflt.vf	v17, v8, fa3
 	vmor.mm	v0, v16, v17
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	fli.d	fa5, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
@@ -27,11 +28,12 @@ func0000000000000084:                   # @func0000000000000084
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
+
 .LCPI2_0:
-	.quad	0x413fffff00000000              # double 2097151
+	.quad	0x413fffff00000000
 .LCPI2_1:
-	.quad	0xc140000000000000              # double -2097152
-func0000000000000048:                   # @func0000000000000048
+	.quad	0xc140000000000000
+func0000000000000048:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
@@ -43,11 +45,12 @@ func0000000000000048:                   # @func0000000000000048
 	vmflt.vf	v17, v8, fa4
 	vmor.mm	v0, v16, v17
 	ret
+
 .LCPI3_0:
-	.quad	0x4059000000000000              # double 100
+	.quad	0x4059000000000000
 .LCPI3_1:
-	.quad	0x54b249ad2594c37d              # double 1.0E+100
-func0000000000000028:                   # @func0000000000000028
+	.quad	0x54b249ad2594c37d
+func0000000000000028:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
@@ -58,9 +61,10 @@ func0000000000000028:                   # @func0000000000000028
 	vmfne.vv	v17, v8, v8
 	vmor.mm	v0, v16, v17
 	ret
+
 .LCPI4_0:
-	.quad	0x3f10000000000000              # double 6.103515625E-5
-func0000000000000110:                   # @func0000000000000110
+	.quad	0x3f10000000000000
+func0000000000000110:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -71,3 +75,4 @@ func0000000000000110:                   # @func0000000000000110
 	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
+

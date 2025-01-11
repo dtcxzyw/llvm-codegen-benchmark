@@ -1,4 +1,4 @@
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000000f5:
 	andi	a1, a1, 1
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
@@ -9,3 +9,4 @@ func00000000000000f5:                   # @func00000000000000f5
 	li	a1, 1461
 	mulw	a0, a0, a1
 	ret
+

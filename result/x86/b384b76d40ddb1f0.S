@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	xorl	%eax, %eax
 	cmpb	$32, %sil
 	sete	%al
@@ -18,7 +19,8 @@ func000000000000002c:                   # @func000000000000002c
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000198:                   # @func0000000000000198
+
+func0000000000000198:
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setne	%al
@@ -28,7 +30,8 @@ func0000000000000198:                   # @func0000000000000198
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	xorl	%eax, %eax
 	cmpb	$3, %sil
 	setb	%al
@@ -38,7 +41,8 @@ func000000000000008c:                   # @func000000000000008c
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	xorl	%eax, %eax
 	cmpb	$28, %sil
 	sete	%al
@@ -48,3 +52,4 @@ func0000000000000028:                   # @func0000000000000028
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

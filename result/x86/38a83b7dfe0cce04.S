@@ -1,4 +1,4 @@
-func0000000000000187:                   # @func0000000000000187
+func0000000000000187:
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	$3, %esi
@@ -7,7 +7,8 @@ func0000000000000187:                   # @func0000000000000187
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	$3, %esi
@@ -15,7 +16,8 @@ func0000000000000186:                   # @func0000000000000186
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	$12, %esi
@@ -24,7 +26,8 @@ func0000000000000028:                   # @func0000000000000028
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	$18, %esi
@@ -33,7 +36,8 @@ func0000000000000004:                   # @func0000000000000004
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	decl	%esi
 	movl	$3, %eax
 	cmovnsl	%esi, %eax
@@ -41,7 +45,8 @@ func0000000000000018:                   # @func0000000000000018
 	imulq	$56, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	$25, %esi
@@ -49,3 +54,4 @@ func0000000000000086:                   # @func0000000000000086
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
+

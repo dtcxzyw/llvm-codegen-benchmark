@@ -1,21 +1,18 @@
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
+func000000000000002f:
 	orr	w8, w1, w2
 	add	x8, x0, w8, uxth
 	add	x0, x8, #1
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	orr	w8, w1, w2
 	add	x8, x0, w8, uxth
 	add	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	orr	w8, w1, w2
 	add	x8, x0, w8, uxth
 	sub	x0, x8, #1
 	ret
-                                        // -- End function
+

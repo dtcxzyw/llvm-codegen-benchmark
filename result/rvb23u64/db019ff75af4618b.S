@@ -1,4 +1,4 @@
-func0000000000000049:                   # @func0000000000000049
+func0000000000000049:
 	andi	a1, a1, 1
 	srliw	a0, a0, 24
 	slli	a1, a1, 4
@@ -6,7 +6,8 @@ func0000000000000049:                   # @func0000000000000049
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	slli	a1, a1, 4
@@ -14,7 +15,8 @@ func0000000000000043:                   # @func0000000000000043
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000071:                   # @func0000000000000071
+
+func0000000000000071:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	slli	a1, a1, 4
@@ -23,14 +25,16 @@ func0000000000000071:                   # @func0000000000000071
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	sext.w	a0, a0
 	binvi	a0, a0, 15
 	li	a1, -4
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 6
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	li	a2, 14
@@ -41,3 +45,4 @@ func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
+

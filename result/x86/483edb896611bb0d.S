@@ -1,30 +1,35 @@
-func0000000000000010:                   # @func0000000000000010
-	movl	$4294967294, %eax               # imm = 0xFFFFFFFE
+func0000000000000010:
+	movl	$4294967294, %eax
 	cmpq	%rax, %rdi
 	movl	%esi, %ecx
-	movl	$268435455, %eax                # imm = 0xFFFFFFF
+	movl	$268435455, %eax
 	cmovbeq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	testq	%rdi, %rdi
 	movl	%esi, %eax
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	movl	%esi, %ecx
-	cmpq	$300000, %rdi                   # imm = 0x493E0
-	movl	$300000, %eax                   # imm = 0x493E0
+	cmpq	$300000, %rdi
+	movl	$300000, %eax
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	cmpq	$4097, %rdi                     # imm = 0x1001
+
+func0000000000000030:
+	cmpq	$4097, %rdi
 	movl	%esi, %ecx
-	movl	$4096, %eax                     # imm = 0x1000
+	movl	$4096, %eax
 	cmovbq	%rcx, %rax
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	xorl	%eax, %eax
-	cmpq	$858993460, %rdi                # imm = 0x33333334
+	cmpq	$858993460, %rdi
 	movl	%esi, %ecx
 	cmovaeq	%rcx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	addiw	a1, a1, 1
 	fmv.d.x	fa5, zero
 	feq.d	a2, fa0, fa5
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	addiw	a1, a1, 1
 	fmv.d.x	fa5, zero
 	feq.d	a2, fa0, fa5
@@ -14,7 +15,8 @@ func0000000000000037:                   # @func0000000000000037
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	addiw	a1, a1, -1
 	fmv.d.x	fa5, zero
 	feq.d	a2, fa0, fa5
@@ -22,3 +24,4 @@ func0000000000000017:                   # @func0000000000000017
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

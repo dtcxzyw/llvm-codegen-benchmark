@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func00000000000000ab:                   # @func00000000000000ab
+	.long	0x3f800000
+func00000000000000ab:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vcmpnleps	.LCPI0_0(%rip){1to16}, %zmm2, %k1
@@ -11,7 +11,8 @@ func00000000000000ab:                   # @func00000000000000ab
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000006b:                   # @func000000000000006b
+
+func000000000000006b:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -22,7 +23,8 @@ func000000000000006b:                   # @func000000000000006b
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -33,7 +35,8 @@ func0000000000000044:                   # @func0000000000000044
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ad:                   # @func00000000000000ad
+
+func00000000000000ad:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -44,3 +47,4 @@ func00000000000000ad:                   # @func00000000000000ad
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

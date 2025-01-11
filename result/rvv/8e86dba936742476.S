@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000058:
 	li	a0, 1032
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -7,7 +7,8 @@ func0000000000000058:                   # @func0000000000000058
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -16,7 +17,8 @@ func0000000000000302:                   # @func0000000000000302
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
 	li	a0, 128
@@ -25,7 +27,8 @@ func0000000000000102:                   # @func0000000000000102
 	vmor.mm	v8, v12, v10
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -34,7 +37,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -5
 	li	a0, 64
@@ -43,7 +47,8 @@ func0000000000000318:                   # @func0000000000000318
 	vmor.mm	v8, v12, v10
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000502:                   # @func0000000000000502
+
+func0000000000000502:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 15
 	vmsleu.vi	v12, v10, 2
@@ -51,7 +56,8 @@ func0000000000000502:                   # @func0000000000000502
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v8, v0
 	ret
-func0000000000000518:                   # @func0000000000000518
+
+func0000000000000518:
 	lui	a0, 4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -60,3 +66,4 @@ func0000000000000518:                   # @func0000000000000518
 	vmor.mm	v8, v12, v10
 	vmand.mm	v0, v0, v8
 	ret
+

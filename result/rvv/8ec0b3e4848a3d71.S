@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 5
 	lui	a0, 748983
@@ -10,7 +10,8 @@ func0000000000000010:                   # @func0000000000000010
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 5
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 4
 	lui	a0, 699051
@@ -22,7 +23,8 @@ func0000000000000011:                   # @func0000000000000011
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, -1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v8, a0
@@ -33,9 +35,10 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v10, v8, 3
 	vadd.vi	v8, v10, 1
 	ret
+
 .LCPI3_0:
-	.quad	8232332665104686119             # 0x723f1ef13068dc27
-func0000000000000005:                   # @func0000000000000005
+	.quad	8232332665104686119
+func0000000000000005:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -50,9 +53,10 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 1601
 	vadd.vx	v8, v10, a0
 	ret
+
 .LCPI4_0:
-	.quad	7164004856975580295             # 0x636ba875fd33dc87
-func0000000000000001:                   # @func0000000000000001
+	.quad	7164004856975580295
+func0000000000000001:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -65,9 +69,10 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 1
 	ret
+
 .LCPI5_0:
-	.quad	7164004856975580295             # 0x636ba875fd33dc87
-func0000000000000003:                   # @func0000000000000003
+	.quad	7164004856975580295
+func0000000000000003:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -82,3 +87,4 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -68
 	vadd.vx	v8, v10, a0
 	ret
+

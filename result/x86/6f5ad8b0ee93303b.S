@@ -1,4 +1,4 @@
-func0000000000000f61:                   # @func0000000000000f61
+func0000000000000f61:
 	movl	$10, %eax
 	mulxq	%rax, %rdx, %rax
 	leaq	(%rcx,%rcx,4), %rcx
@@ -7,7 +7,8 @@ func0000000000000f61:                   # @func0000000000000f61
 	adcq	%rsi, %rax
 	sete	%al
 	retq
-func0000000000000f6c:                   # @func0000000000000f6c
+
+func0000000000000f6c:
 	movl	$10, %eax
 	mulxq	%rax, %rdx, %rax
 	leaq	(%rcx,%rcx,4), %rcx
@@ -16,8 +17,9 @@ func0000000000000f6c:                   # @func0000000000000f6c
 	adcq	%rsi, %rax
 	setne	%al
 	retq
-func0000000000000a41:                   # @func0000000000000a41
-	movabsq	$-8446744073709551616, %rax     # imm = 0x8AC7230489E80000
+
+func0000000000000a41:
+	movabsq	$-8446744073709551616, %rax
 	imulq	%rax, %rcx
 	mulxq	%rax, %rax, %rdx
 	addq	%rcx, %rdx
@@ -25,8 +27,9 @@ func0000000000000a41:                   # @func0000000000000a41
 	adcq	%rsi, %rdx
 	sete	%al
 	retq
-func0000000000000f78:                   # @func0000000000000f78
-	movabsq	$-7054365918152680535, %rax     # imm = 0x9E19DB92B4E31BA9
+
+func0000000000000f78:
+	movabsq	$-7054365918152680535, %rax
 	imulq	%rax, %rcx
 	mulxq	%rax, %rax, %rdx
 	addq	%rcx, %rdx
@@ -35,3 +38,4 @@ func0000000000000f78:                   # @func0000000000000f78
 	cmpq	$40, %rdx
 	setae	%al
 	retq
+

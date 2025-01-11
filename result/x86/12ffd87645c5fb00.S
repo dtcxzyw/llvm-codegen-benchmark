@@ -1,4 +1,4 @@
-func0000000000000035:                   # @func0000000000000035
+func0000000000000035:
 	shrdq	$1, %rdx, %rsi
 	shrq	%rdx
 	lzcntq	%rsi, %rax
@@ -8,3 +8,4 @@ func0000000000000035:                   # @func0000000000000035
 	subl	%ecx, %edi
 	leal	-16318(%rdi), %eax
 	retq
+

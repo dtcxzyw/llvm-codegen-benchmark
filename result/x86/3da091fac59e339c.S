@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	addl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -7,7 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	leal	31(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	addl	%edx, %ecx
@@ -16,7 +17,8 @@ func0000000000000046:                   # @func0000000000000046
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -25,7 +27,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	addl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -34,10 +37,11 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	imulq	$1152921505, %rax, %rax         # imm = 0x44B82FA1
+	imulq	$1152921505, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$60, %rax
@@ -45,7 +49,8 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%edi, %eax
 	setne	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	addl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -54,10 +59,11 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000004b:                   # @func000000000000004b
+
+func000000000000004b:
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$35, %rax
@@ -65,3 +71,4 @@ func000000000000004b:                   # @func000000000000004b
 	cmpl	%edi, %eax
 	setge	%al
 	retq
+

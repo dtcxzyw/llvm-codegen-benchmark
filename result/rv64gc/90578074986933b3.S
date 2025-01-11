@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	slli	a1, a1, 61
 	srli	a1, a1, 43
 	or	a0, a0, a1
@@ -7,7 +7,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	slli	a1, a1, 61
 	srli	a1, a1, 43
 	or	a0, a0, a1
@@ -17,7 +18,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	slli	a1, a1, 61
 	srli	a1, a1, 43
 	or	a0, a0, a1
@@ -25,3 +27,4 @@ func00000000000000e8:                   # @func00000000000000e8
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	ret
+

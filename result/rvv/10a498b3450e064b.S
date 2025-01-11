@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x40490fdb                      # float 3.14159274
-func0000000000000024:                   # @func0000000000000024
+	.word	0x40490fdb
+func0000000000000024:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,9 +9,10 @@ func0000000000000024:                   # @func0000000000000024
 	vmfgt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
+
 .LCPI1_0:
-	.word	0x40490fdb                      # float 3.14159274
-func0000000000000042:                   # @func0000000000000042
+	.word	0x40490fdb
+func0000000000000042:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -21,9 +22,10 @@ func0000000000000042:                   # @func0000000000000042
 	vmflt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
+
 .LCPI2_0:
-	.word	0x40c90fdb                      # float 6.28318548
-func000000000000002c:                   # @func000000000000002c
+	.word	0x40c90fdb
+func000000000000002c:
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa4, %lo(.LCPI2_0)(a0)
@@ -33,7 +35,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmfge.vf	v0, v12, fa4
 	vmerge.vvm	v8, v12, v8, v0
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v16, fa5
@@ -41,7 +44,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmflt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v16, fa5
@@ -50,7 +54,8 @@ func0000000000000084:                   # @func0000000000000084
 	vmfgt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
-func0000000000000082:                   # @func0000000000000082
+
+func0000000000000082:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v16, fa5
@@ -59,3 +64,4 @@ func0000000000000082:                   # @func0000000000000082
 	vmflt.vf	v0, v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000910:                   # @func0000000000000910
+func0000000000000910:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax), %rcx
 	shlq	$31, %rax
@@ -9,3 +9,4 @@ func0000000000000910:                   # @func0000000000000910
 	seta	%al
 	orb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -8,7 +8,8 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 4
 	vmadd.vx	v8, a0, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a0, 43
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -18,10 +19,12 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 14
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v8, 4
 	vmerge.vvm	v8, v12, v8, v0
 	li	a0, 3
 	vmacc.vx	v8, a0, v10
 	ret
+

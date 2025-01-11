@@ -10,11 +10,12 @@
 	.zero	4,1
 .LCPI0_5:
 	.zero	4,2
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)
-	vpternlogd	$236, .LCPI0_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm2, %xmm1
+	vpternlogd	$236, .LCPI0_5(%rip){1to4}, %xmm1, %xmm0
 	retq
+
 .LCPI1_0:
 	.zero	16,254
 .LCPI1_1:
@@ -27,11 +28,12 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	4,240
 .LCPI1_5:
 	.zero	4,1
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$248, .LCPI1_4(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)
-	vpternlogd	$236, .LCPI1_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vpternlogd	$248, .LCPI1_4(%rip){1to4}, %xmm2, %xmm1
+	vpternlogd	$236, .LCPI1_5(%rip){1to4}, %xmm1, %xmm0
 	retq
+
 .LCPI2_0:
 	.zero	16,129
 .LCPI2_1:
@@ -40,8 +42,9 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	4,129
 .LCPI2_3:
 	.zero	4,127
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
-	vpternlogd	$248, .LCPI2_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vpternlogd	$248, .LCPI2_3(%rip){1to4}, %xmm1, %xmm0
 	retq
+

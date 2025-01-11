@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	testl	%edx, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -6,7 +6,8 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	testl	%edx, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -14,25 +15,28 @@ func0000000000000301:                   # @func0000000000000301
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	testl	%edx, %edx
 	setne	%cl
 	orb	%dil, %cl
-	andl	$-1025, %esi                    # imm = 0xFBFF
-	cmpl	$2064, %esi                     # imm = 0x810
+	andl	$-1025, %esi
+	cmpl	$2064, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	testl	%edx, %edx
 	sete	%cl
 	orb	%dil, %cl
-	andl	$-1025, %esi                    # imm = 0xFBFF
-	cmpl	$2064, %esi                     # imm = 0x810
+	andl	$-1025, %esi
+	cmpl	$2064, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	testb	$1, %dl
 	sete	%cl
 	testl	%esi, %esi
@@ -40,7 +44,8 @@ func0000000000000302:                   # @func0000000000000302
 	orb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	cmpl	$-101, %edx
 	setb	%cl
 	orb	%dil, %cl
@@ -48,11 +53,13 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
-	testl	$511, %edx                      # imm = 0x1FF
+
+func0000000000000042:
+	testl	$511, %edx
 	sete	%cl
 	cmpl	$3, %esi
 	sete	%al
 	orb	%dil, %al
 	andb	%cl, %al
 	retq
+

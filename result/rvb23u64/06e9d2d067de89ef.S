@@ -1,4 +1,4 @@
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000000fc:
 	li	a1, 64
 	sub	a1, a1, a0
 	li	a0, 7
@@ -6,3 +6,4 @@ func00000000000000fc:                   # @func00000000000000fc
 	slli	a0, a0, 2
 	addi	a0, a0, 1
 	ret
+

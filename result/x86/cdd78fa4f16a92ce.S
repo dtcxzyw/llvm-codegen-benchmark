@@ -1,18 +1,21 @@
-func0000000000000005:                   # @func0000000000000005
-	cmpl	$1024, %esi                     # imm = 0x400
-	movl	$1024, %eax                     # imm = 0x400
+func0000000000000005:
+	cmpl	$1024, %esi
+	movl	$1024, %eax
 	cmovbl	%esi, %eax
 	subq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	cmpl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+
+func0000000000000007:
+	cmpl	$2147483647, %esi
+	movl	$2147483647, %eax
 	cmovbl	%esi, %eax
 	subq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$300000, %esi                   # imm = 0x493E0
-	movl	$300000, %eax                   # imm = 0x493E0
+
+func0000000000000004:
+	cmpl	$300000, %esi
+	movl	$300000, %eax
 	cmovbl	%esi, %eax
 	subq	%rdi, %rax
 	retq
+

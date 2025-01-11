@@ -1,4 +1,4 @@
-func00000000000000c0:                   # @func00000000000000c0
+func00000000000000c0:
 	andi	a2, a2, 255
 	slli	a1, a1, 3
 	seqz	a2, a2
@@ -7,7 +7,8 @@ func00000000000000c0:                   # @func00000000000000c0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	andi	a2, a2, 255
 	addi	a2, a2, -216
 	snez	a2, a2
@@ -16,7 +17,8 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000004f:                   # @func000000000000004f
+
+func000000000000004f:
 	andi	a2, a2, 255
 	li	a3, 2
 	bltu	a2, a3, .LBB2_2
@@ -29,7 +31,8 @@ func000000000000004f:                   # @func000000000000004f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
 	slti	a2, a2, 1
@@ -38,7 +41,8 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	andi	a2, a2, 255
 	slli	a1, a1, 5
 	addi	a2, a2, -103
@@ -48,7 +52,8 @@ func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	andi	a2, a2, 255
 	li	a3, 254
 	beq	a2, a3, .LBB5_2
@@ -65,7 +70,8 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func00000000000000af:                   # @func00000000000000af
+
+func00000000000000af:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
 	slti	a2, a2, 49
@@ -74,7 +80,8 @@ func00000000000000af:                   # @func00000000000000af
 	add	a0, a0, a2
 	addi	a0, a0, 3
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	andi	a2, a2, 255
 	addi	a2, a2, -110
 	seqz	a2, a2
@@ -82,7 +89,8 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a2
 	addi	a0, a0, 3
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	andi	a2, a2, 255
 	beqz	a2, .LBB8_2
 	li	a2, 12
@@ -96,7 +104,8 @@ func0000000000000013:                   # @func0000000000000013
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	andi	a2, a2, 255
 	addi	a2, a2, -88
 	seqz	a2, a2
@@ -104,3 +113,4 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

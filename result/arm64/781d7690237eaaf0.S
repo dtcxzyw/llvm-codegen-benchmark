@@ -1,5 +1,4 @@
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+func0000000000000010:
 	fmul	d1, d1, d1
 	fmadd	d0, d0, d0, d1
 	fcmp	d0, #0.0
@@ -7,9 +6,8 @@ func0000000000000010:                   // @func0000000000000010
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmul	d1, d1, d1
 	fmadd	d0, d0, d0, d1
 	fmov	d1, #1.00000000
@@ -18,4 +16,4 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

@@ -1,6 +1,6 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
@@ -25,3 +25,4 @@ func0000000000000006:                   # @func0000000000000006
 	vpinsrd	$3, %edx, %xmm2, %xmm0
 	vzeroupper
 	retq
+

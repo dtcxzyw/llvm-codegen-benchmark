@@ -1,4 +1,4 @@
-func0000000000000494:                   # @func0000000000000494
+func0000000000000494:
 	blsrl	%edx, %eax
 	sete	%cl
 	cmpl	$29, %esi
@@ -6,3 +6,4 @@ func0000000000000494:                   # @func0000000000000494
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
+

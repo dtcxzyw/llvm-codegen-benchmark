@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	or	a1, a1, a2
@@ -13,7 +13,8 @@ func0000000000000021:                   # @func0000000000000021
 .LBB0_2:
 	li	a0, -7
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	andi	a0, a0, 1
@@ -27,7 +28,8 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	or	a1, a1, a2
 	sext.w	a2, a1
 	li	a3, 1239
@@ -41,7 +43,8 @@ func000000000000002a:                   # @func000000000000002a
 	li	a2, 1131
 	lui	a0, 8
 	bnez	a1, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	mv	a0, a2
-.LBB2_4:                                # %entry
+.LBB2_4:
 	ret
+

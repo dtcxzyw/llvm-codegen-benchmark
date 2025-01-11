@@ -1,4 +1,4 @@
-func0000000000000426:                   # @func0000000000000426
+func0000000000000426:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 4
@@ -11,7 +11,8 @@ func0000000000000426:                   # @func0000000000000426
 	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a2, a1, -12
@@ -22,7 +23,8 @@ func0000000000000421:                   # @func0000000000000421
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000434:                   # @func0000000000000434
+
+func0000000000000434:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a2, a1, -12
@@ -33,7 +35,8 @@ func0000000000000434:                   # @func0000000000000434
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 1
@@ -47,7 +50,8 @@ func000000000000042c:                   # @func000000000000042c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 8
@@ -61,7 +65,8 @@ func0000000000000424:                   # @func0000000000000424
 	or	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
-func0000000000000438:                   # @func0000000000000438
+
+func0000000000000438:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 32
@@ -75,7 +80,8 @@ func0000000000000438:                   # @func0000000000000438
 	or	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
-func0000000000000428:                   # @func0000000000000428
+
+func0000000000000428:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 32
@@ -89,7 +95,8 @@ func0000000000000428:                   # @func0000000000000428
 	or	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 8
@@ -102,3 +109,4 @@ func000000000000042a:                   # @func000000000000042a
 	or	a1, a1, a3
 	slt	a0, a1, a0
 	ret
+

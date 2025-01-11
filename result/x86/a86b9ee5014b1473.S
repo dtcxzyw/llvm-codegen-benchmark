@@ -1,7 +1,7 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	leaq	(%rsi,%rdi), %r8
 	leaq	-1(%rsi,%rdi), %rcx
-	movabsq	$-6640827866535438581, %rdx     # imm = 0xA3D70A3D70A3D70B
+	movabsq	$-6640827866535438581, %rdx
 	movq	%rcx, %rax
 	imulq	%rdx
 	leaq	-1(%rdx,%r8), %rax
@@ -13,7 +13,8 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rcx
 	movq	%rcx, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	40(%rsi,%rdi), %rax
 	leaq	43(%rsi,%rdi), %rcx
 	testq	%rax, %rax
@@ -21,7 +22,8 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-4, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	leaq	-53(%rsi,%rdi), %rax
 	leaq	-50(%rsi,%rdi), %rcx
 	testq	%rax, %rax
@@ -29,3 +31,4 @@ func0000000000000004:                   # @func0000000000000004
 	andq	$-4, %rcx
 	subq	%rcx, %rax
 	retq
+

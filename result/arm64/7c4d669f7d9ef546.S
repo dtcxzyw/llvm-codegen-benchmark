@@ -1,64 +1,56 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	lsr	w8, w2, #17
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	lsr	w8, w2, #3
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	lsr	w8, w2, #15
 	mul	w8, w1, w8
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	lsr	w8, w2, #3
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	lsr	w8, w2, #3
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+
+func0000000000000078:
 	lsr	w8, w2, #3
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
+
+func0000000000000068:
 	lsr	w8, w2, #3
 	mul	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
+
+func000000000000006a:
 	lsr	w8, w2, #24
 	mul	w8, w1, w8
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000649:                   # @func0000000000000649
+func0000000000000649:
 	addq	%rdi, %rdi
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -9,7 +9,8 @@ func0000000000000649:                   # @func0000000000000649
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func0000000000000669:                   # @func0000000000000669
+
+func0000000000000669:
 	addq	%rdi, %rdi
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -20,7 +21,8 @@ func0000000000000669:                   # @func0000000000000669
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func0000000000000609:                   # @func0000000000000609
+
+func0000000000000609:
 	addq	%rdi, %rdi
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -31,3 +33,4 @@ func0000000000000609:                   # @func0000000000000609
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
+

@@ -1,12 +1,10 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+func0000000000000005:
 	eor	w8, w0, #0x1
 	neg	x0, x8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	mvn	w8, w0
 	neg	x0, x8
 	ret
-                                        // -- End function
+

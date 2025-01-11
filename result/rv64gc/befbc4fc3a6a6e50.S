@@ -1,4 +1,4 @@
-func00000000000001bf:                   # @func00000000000001bf
+func00000000000001bf:
 	not	a2, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -12,3 +12,4 @@ func00000000000001bf:                   # @func00000000000001bf
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
+

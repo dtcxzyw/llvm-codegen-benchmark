@@ -1,4 +1,4 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	cmpw	$10, %dx
 	setb	%cl
 	orb	%dil, %cl
@@ -6,7 +6,8 @@ func0000000000000108:                   # @func0000000000000108
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000608:                   # @func0000000000000608
+
+func0000000000000608:
 	cmpw	$97, %dx
 	setae	%cl
 	orb	%dil, %cl
@@ -14,3 +15,4 @@ func0000000000000608:                   # @func0000000000000608
 	setb	%al
 	orb	%cl, %al
 	retq
+

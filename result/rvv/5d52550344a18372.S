@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	lui	a0, 524288
 	fmv.d.x	fa5, zero
 	addi	a0, a0, -1
@@ -9,3 +9,4 @@ func0000000000000030:                   # @func0000000000000030
 	vmfeq.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v14
 	ret
+

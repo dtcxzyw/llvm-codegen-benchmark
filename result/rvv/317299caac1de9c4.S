@@ -1,4 +1,4 @@
-func0000000000000308:                   # @func0000000000000308
+func0000000000000308:
 	li	a0, 1
 	slli	a0, a0, 34
 	addi	a0, a0, -12
@@ -9,7 +9,8 @@ func0000000000000308:                   # @func0000000000000308
 	vnsrl.wi	v8, v10, 2
 	vmsgtu.vi	v0, v8, 5
 	ret
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	lui	a0, 524288
 	srli	a0, a0, 29
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,7 +20,8 @@ func0000000000000301:                   # @func0000000000000301
 	vnsrl.wi	v8, v10, 3
 	vmseq.vi	v0, v8, 0
 	ret
-func000000000000030a:                   # @func000000000000030a
+
+func000000000000030a:
 	lui	a0, 524288
 	srli	a0, a0, 29
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -29,7 +31,8 @@ func000000000000030a:                   # @func000000000000030a
 	vnsrl.wi	v8, v10, 3
 	vmsgt.vi	v0, v8, 0
 	ret
-func000000000000070a:                   # @func000000000000070a
+
+func000000000000070a:
 	li	a0, 1
 	slli	a0, a0, 34
 	addi	a0, a0, -8
@@ -40,3 +43,4 @@ func000000000000070a:                   # @func000000000000070a
 	vnsrl.wi	v8, v10, 2
 	vmsgt.vi	v0, v8, 0
 	ret
+

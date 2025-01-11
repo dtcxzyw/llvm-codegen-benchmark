@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	imulq	$208, %rdx, %rcx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmovneq	%rcx, %rax
 	addq	$104, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	imulq	$240, %rdx, %rcx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
@@ -14,7 +15,8 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%rcx, %rax
 	addq	$92, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	leaq	(%rdx,%rdx,4), %rcx
 	shlq	$4, %rcx
 	addq	%rsi, %rcx
@@ -23,3 +25,4 @@ func000000000000000b:                   # @func000000000000000b
 	cmovneq	%rcx, %rax
 	addq	$56, %rax
 	retq
+

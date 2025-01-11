@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setl	%cl
@@ -6,7 +6,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setb	%cl
@@ -14,7 +15,8 @@ func000000000000008a:                   # @func000000000000008a
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000058a:                   # @func000000000000058a
+
+func000000000000058a:
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setne	%cl
@@ -22,7 +24,8 @@ func000000000000058a:                   # @func000000000000058a
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setl	%cl
@@ -30,3 +33,4 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
+

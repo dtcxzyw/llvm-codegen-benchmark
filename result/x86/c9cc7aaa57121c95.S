@@ -1,6 +1,6 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	movzwl	%si, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %eax, %eax
 	shrl	$18, %eax
 	andl	$-2, %eax
 	leal	(%rax,%rax,4), %eax
@@ -9,9 +9,10 @@ func0000000000000018:                   # @func0000000000000018
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movzwl	%si, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %eax, %eax
 	shrl	$18, %eax
 	andl	$-2, %eax
 	leal	(%rax,%rax,4), %eax
@@ -20,9 +21,10 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movzwl	%si, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %eax, %eax
 	shrl	$18, %eax
 	leal	(%rax,%rax,4), %eax
 	subl	%eax, %esi
@@ -30,10 +32,11 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movzwl	%si, %eax
 	shrl	$2, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %eax, %eax
 	shrl	$17, %eax
 	imull	$100, %eax, %eax
 	subl	%eax, %esi
@@ -41,3 +44,4 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	andb	%dil, %al
 	retq
+

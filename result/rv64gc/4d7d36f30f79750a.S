@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sext.w	a2, a0
 	andi	a0, a1, 1
 	li	a1, 1
@@ -9,11 +9,12 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:
 	li	a0, 33
 	beq	a2, a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	li	a0, 32
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a2, a1, 1
 	mv	a1, a0
 	bnez	a2, .LBB1_2
@@ -25,11 +26,12 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, -400
 	srliw	a1, a1, 16
 	bnez	a1, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	li	a0, 2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a2, a1, 1
 	sext.w	a1, a0
 	bnez	a2, .LBB2_2
@@ -41,11 +43,12 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 10
 	li	a2, -5
 	bltu	a1, a2, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	li	a0, 14
-.LBB2_4:                                # %entry
+.LBB2_4:
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a2, a1, 1
 	sext.w	a1, a0
 	bnez	a2, .LBB3_2
@@ -57,11 +60,12 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 15
 	li	a2, 192
 	bne	a1, a2, .LBB3_4
-.LBB3_3:                                # %entry
+.LBB3_3:
 	li	a0, 31
-.LBB3_4:                                # %entry
+.LBB3_4:
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a0, a0
 	slli	a1, a1, 63
 	srai	a1, a1, 63
@@ -70,7 +74,8 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a0, a0
 	blez	a0, .LBB5_2
 	li	a0, 1
@@ -80,3 +85,4 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a1, -1
 	andi	a0, a0, 3
 	ret
+

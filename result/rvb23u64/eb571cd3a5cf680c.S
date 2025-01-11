@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005a:
 	andi	a0, a0, 31
 	slli	a1, a0, 8
 	subw	a1, a1, a0
@@ -7,3 +7,4 @@ func000000000000005a:                   # @func000000000000005a
 	mulhu	a0, a1, a0
 	srli	a0, a0, 18
 	ret
+

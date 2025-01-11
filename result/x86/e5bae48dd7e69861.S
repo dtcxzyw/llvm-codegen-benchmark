@@ -1,4 +1,4 @@
-func0000000000000282:                   # @func0000000000000282
+func0000000000000282:
 	cmpl	$3, %esi
 	setge	%cl
 	cmpl	%esi, %edx
@@ -6,3 +6,4 @@ func0000000000000282:                   # @func0000000000000282
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
+

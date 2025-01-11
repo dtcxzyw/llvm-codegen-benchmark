@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	8                               # 0x8
-func0000000000000002:                   # @func0000000000000002
+	.quad	8
+func0000000000000002:
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -27,6 +27,7 @@ func0000000000000002:                   # @func0000000000000002
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
+

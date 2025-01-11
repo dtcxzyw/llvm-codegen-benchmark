@@ -1,4 +1,4 @@
-func0000000000000381:                   # @func0000000000000381
+func0000000000000381:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -9,7 +9,8 @@ func0000000000000381:                   # @func0000000000000381
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -20,3 +21,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	sete	%al
 	orb	%cl, %al
 	retq
+

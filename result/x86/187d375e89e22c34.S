@@ -1,4 +1,4 @@
-func000000000000310c:                   # @func000000000000310c
+func000000000000310c:
 	testl	%edx, %edx
 	setne	%al
 	cmpl	$32, %esi
@@ -8,3 +8,4 @@ func000000000000310c:                   # @func000000000000310c
 	setne	%al
 	orb	%cl, %al
 	retq
+

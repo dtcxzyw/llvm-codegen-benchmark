@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
-	.byte	55                              # 0x37
+	.byte	55
+	.byte	55
+	.byte	55
+	.byte	55
+	.byte	55
+	.byte	55
+	.byte	55
+	.byte	55
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,8 +16,8 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	10                              # 0xa
-func00000000000001f4:                   # @func00000000000001f4
+	.long	10
+func00000000000001f4:
 	vpmovdb	%ymm1, %xmm2
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -25,3 +25,4 @@ func00000000000001f4:                   # @func00000000000001f4
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
+

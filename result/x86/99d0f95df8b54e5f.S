@@ -1,5 +1,5 @@
-func000000000000001b:                   # @func000000000000001b
-	movabsq	$768614336404564650, %rax       # imm = 0xAAAAAAAAAAAAAAA
+func000000000000001b:
+	movabsq	$768614336404564650, %rax
 	cmpq	%rax, %rdx
 	cmovaeq	%rax, %rdx
 	testq	%rsi, %rsi
@@ -7,3 +7,4 @@ func000000000000001b:                   # @func000000000000001b
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
+

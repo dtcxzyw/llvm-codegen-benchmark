@@ -1,12 +1,13 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	movslq	%esi, %rax
-	cmpq	$-32767, %rdi                   # imm = 0x8001
-	movq	$-32768, %rcx                   # imm = 0x8000
+	cmpq	$-32767, %rdi
+	movq	$-32768, %rcx
 	cmovgeq	%rdi, %rcx
 	cmpq	%rax, %rcx
 	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movslq	%esi, %rax
 	movq	%rdi, %rcx
 	sarq	$63, %rcx
@@ -14,7 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movslq	%esi, %rax
 	cmpq	$2, %rdi
 	movl	$1, %ecx
@@ -22,7 +24,8 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rax, %rcx
 	setg	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movslq	%esi, %rax
 	movq	%rdi, %rcx
 	sarq	$63, %rcx
@@ -30,3 +33,4 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
+

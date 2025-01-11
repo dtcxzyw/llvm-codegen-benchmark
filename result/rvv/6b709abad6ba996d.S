@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -9,3 +9,4 @@ func000000000000000d:                   # @func000000000000000d
 	vadd.vx	v8, v8, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
+

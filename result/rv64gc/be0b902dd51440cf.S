@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -33,7 +33,8 @@ func000000000000001f:                   # @func000000000000001f
 	subw	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -68,7 +69,8 @@ func000000000000001c:                   # @func000000000000001c
 	subw	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -103,3 +105,4 @@ func000000000000001e:                   # @func000000000000001e
 	subw	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
+

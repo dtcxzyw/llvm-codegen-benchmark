@@ -1,4 +1,4 @@
-func000000000000021b:                   # @func000000000000021b
+func000000000000021b:
 	lui	a0, 8
 	addiw	a0, a0, -768
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -11,3 +11,4 @@ func000000000000021b:                   # @func000000000000021b
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v8, v10
 	ret
+

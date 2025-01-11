@@ -1,4 +1,4 @@
-func00000000000000bc:                   # @func00000000000000bc
+func00000000000000bc:
 	srli	a2, a2, 2
 	lui	a3, 349525
 	slli	a1, a1, 32
@@ -13,3 +13,4 @@ func00000000000000bc:                   # @func00000000000000bc
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

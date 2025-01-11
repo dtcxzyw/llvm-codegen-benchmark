@@ -1,4 +1,4 @@
-func0000000000000c21:                   # @func0000000000000c21
+func0000000000000c21:
 	addq	$32, %rsi
 	cmpq	%rsi, %rdi
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000000c21:                   # @func0000000000000c21
 	sete	%al
 	orb	%cl, %al
 	retq
+

@@ -1,40 +1,48 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	cmpq	$4, %rsi
 	cmovbq	%rsi, %rdi
 	leaq	-34(%rdi), %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpq	$34, %rsi
 	cmovbq	%rsi, %rdi
 	leaq	-1(%rdi), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	testq	%rsi, %rsi
 	cmovneq	%rsi, %rdi
 	leaq	12(%rdi), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	cmpq	$4, %rsi
 	cmovbq	%rsi, %rdi
 	leaq	-1(%rdi), %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rdi
 	leaq	-1000000(%rdi), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	testq	%rsi, %rsi
 	cmovneq	%rsi, %rdi
 	leaq	-1(%rdi), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
-	cmpq	$1000000000, %rsi               # imm = 0x3B9ACA00
+
+func0000000000000028:
+	cmpq	$1000000000, %rsi
 	cmovlq	%rsi, %rdi
 	leaq	-1000000(%rdi), %rax
 	retq
-func0000000000000029:                   # @func0000000000000029
-	cmpq	$1000000000, %rsi               # imm = 0x3B9ACA00
+
+func0000000000000029:
+	cmpq	$1000000000, %rsi
 	cmovlq	%rsi, %rdi
 	leaq	999000000(%rdi), %rax
 	retq
+

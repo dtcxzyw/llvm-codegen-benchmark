@@ -1,6 +1,6 @@
-func0000000000000c94:                   # @func0000000000000c94
+func0000000000000c94:
 	leal	1(%rsi), %eax
-	cmpl	$1073741824, %edx               # imm = 0x40000000
+	cmpl	$1073741824, %edx
 	movl	$32, %ecx
 	cmovael	%eax, %ecx
 	testb	$1, %dil
@@ -8,3 +8,4 @@ func0000000000000c94:                   # @func0000000000000c94
 	cmpl	$11, %ecx
 	setb	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000250:                   # @func0000000000000250
+func0000000000000250:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 48
@@ -8,7 +8,8 @@ func0000000000000250:                   # @func0000000000000250
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000310:                   # @func0000000000000310
+
+func0000000000000310:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 48
@@ -19,7 +20,8 @@ func0000000000000310:                   # @func0000000000000310
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
@@ -29,7 +31,8 @@ func0000000000000058:                   # @func0000000000000058
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000052:                   # @func0000000000000052
+
+func0000000000000052:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
@@ -39,7 +42,8 @@ func0000000000000052:                   # @func0000000000000052
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000198:                   # @func0000000000000198
+
+func0000000000000198:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 48
@@ -48,7 +52,8 @@ func0000000000000198:                   # @func0000000000000198
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000258:                   # @func0000000000000258
+
+func0000000000000258:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 48
@@ -58,7 +63,8 @@ func0000000000000258:                   # @func0000000000000258
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000b02:                   # @func0000000000000b02
+
+func0000000000000b02:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
@@ -69,7 +75,8 @@ func0000000000000b02:                   # @func0000000000000b02
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 48
@@ -79,3 +86,4 @@ func0000000000000302:                   # @func0000000000000302
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

@@ -1,64 +1,55 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsr #51
 	lsl	x0, x8, #3
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsr #1
 	lsl	x0, x8, #2
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsr #44
 	lsl	x0, x8, #18
 	ret
-                                        // -- End function
-func000000000000006f:                   // @func000000000000006f
-// %bb.0:                               // %entry
+
+func000000000000006f:
 	add	x8, x1, x2
 	add	x8, x8, x0, lsl #26
 	and	x0, x8, #0xfffffffffc000000
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsr #26
 	lsl	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsr #44
 	lsl	x0, x8, #24
 	ret
-                                        // -- End function
-func000000000000006c:                   // @func000000000000006c
-// %bb.0:                               // %entry
+
+func000000000000006c:
 	add	x8, x1, x2
 	add	x8, x8, x0, lsl #44
 	and	x0, x8, #0xfffff00000000000
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+
+func0000000000000048:
 	add	x8, x1, x2
 	add	x8, x8, x0, lsl #32
 	and	x0, x8, #0xffffffff00000000
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	add	x8, x1, x2
 	lsr	x8, x8, #16
 	add	w8, w0, w8
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
+

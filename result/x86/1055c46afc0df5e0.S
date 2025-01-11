@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -6,7 +6,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -14,7 +15,8 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -22,7 +24,8 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -30,7 +33,8 @@ func0000000000000066:                   # @func0000000000000066
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -38,7 +42,8 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%edi, %eax
 	setne	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -46,7 +51,8 @@ func0000000000000048:                   # @func0000000000000048
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -54,3 +60,4 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
+

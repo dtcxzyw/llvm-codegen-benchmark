@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	movl	%esi, %eax
 	andl	$31, %eax
 	movl	$32, %ecx
@@ -7,7 +7,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	movl	%esi, %eax
 	andl	$7, %eax
 	movl	$8, %ecx
@@ -16,7 +17,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	movl	%esi, %eax
 	andl	$31, %eax
 	movl	$32, %ecx
@@ -25,7 +27,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	movl	%esi, %eax
 	andl	$3, %eax
 	movl	$4, %ecx
@@ -34,3 +37,4 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
+

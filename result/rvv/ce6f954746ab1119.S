@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x40efffe000000000              # double 65535
-func000000000000000f:                   # @func000000000000000f
+	.quad	0x40efffe000000000
+func000000000000000f:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -13,9 +13,10 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfdiv.vv	v8, v10, v12
 	ret
+
 .LCPI1_0:
-	.quad	0x40efffe000000000              # double 65535
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x40efffe000000000
+func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -28,9 +29,10 @@ func0000000000000002:                   # @func0000000000000002
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfdiv.vv	v8, v10, v12
 	ret
+
 .LCPI2_0:
-	.quad	0x4059000000000000              # double 100
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x4059000000000000
+func0000000000000008:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -43,9 +45,10 @@ func0000000000000008:                   # @func0000000000000008
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfdiv.vv	v8, v10, v12
 	ret
+
 .LCPI3_0:
-	.quad	0x4059000000000000              # double 100
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x4059000000000000
+func0000000000000000:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -58,3 +61,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfdiv.vv	v8, v10, v12
 	ret
+

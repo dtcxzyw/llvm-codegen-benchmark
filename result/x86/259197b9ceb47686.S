@@ -1,4 +1,4 @@
-func0000000000000344:                   # @func0000000000000344
+func0000000000000344:
 	movb	$-53, %al
 	subb	%sil, %al
 	movl	$1, %ecx
@@ -7,7 +7,8 @@ func0000000000000344:                   # @func0000000000000344
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	movb	$-53, %al
 	subb	%sil, %al
 	movl	$1, %ecx
@@ -16,7 +17,8 @@ func0000000000000308:                   # @func0000000000000308
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000304:                   # @func0000000000000304
+
+func0000000000000304:
 	movb	$-53, %al
 	subb	%sil, %al
 	movl	$1, %ecx
@@ -25,3 +27,4 @@ func0000000000000304:                   # @func0000000000000304
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

@@ -1,5 +1,4 @@
-func00000000000000ac:                   // @func00000000000000ac
-// %bb.0:                               // %entry
+func00000000000000ac:
 	fmov	s1, #1.00000000
 	movi	d2, #0000000000000000
 	fcmp	s0, s1
@@ -7,9 +6,8 @@ func00000000000000ac:                   // @func00000000000000ac
 	cset	w8, ge
 	and	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	fmov	s1, #1.00000000
 	movi	d2, #0000000000000000
 	fcmp	s0, s1
@@ -17,9 +15,8 @@ func0000000000000024:                   // @func0000000000000024
 	cset	w8, gt
 	and	w0, w0, w8
 	ret
-                                        // -- End function
-func00000000000000bd:                   // @func00000000000000bd
-// %bb.0:                               // %entry
+
+func00000000000000bd:
 	fmov	s1, #1.00000000
 	movi	d2, #0000000000000000
 	fcmp	s0, s1
@@ -27,4 +24,4 @@ func00000000000000bd:                   // @func00000000000000bd
 	cset	w8, pl
 	and	w0, w0, w8
 	ret
-                                        // -- End function
+

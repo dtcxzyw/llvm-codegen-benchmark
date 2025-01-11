@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	subw	a1, a1, a2
 	lui	a2, 21
 	slti	a3, a1, 0
@@ -8,7 +8,8 @@ func0000000000000026:                   # @func0000000000000026
 	czero.nez	a0, a0, a3
 	or	a0, a0, a1
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	subw	a1, a1, a2
 	slti	a2, a1, 8
 	addiw	a1, a1, -1
@@ -16,7 +17,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	subw	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -2
@@ -26,7 +28,8 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	subw	a1, a1, a2
 	lui	a2, 176
 	lui	a3, 1048400
@@ -38,3 +41,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

@@ -1,98 +1,84 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	lsr	x8, x1, #29
 	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	lsr	x8, x1, #32
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	lsr	x8, x1, #32
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func000000000000002d:                   // @func000000000000002d
-// %bb.0:                               // %entry
+
+func000000000000002d:
 	lsr	x8, x1, #12
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func000000000000003d:                   // @func000000000000003d
-// %bb.0:                               // %entry
+
+func000000000000003d:
 	lsr	x8, x1, #12
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+
+func0000000000000040:
 	lsr	x8, x1, #7
 	add	w8, w0, w8
 	sub	w0, w8, #6
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	lsr	x8, x1, #48
 	add	w8, w0, w8
 	add	w0, w8, #248
 	ret
-                                        // -- End function
-func0000000000000070:                   // @func0000000000000070
-// %bb.0:                               // %entry
+
+func0000000000000070:
 	lsr	x8, x1, #39
 	add	w8, w0, w8
 	add	w0, w8, #5
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	lsr	x8, x1, #3
 	add	w8, w0, w8
 	add	w0, w8, #2
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	lsr	x8, x1, #2
 	add	w8, w0, w8
 	add	w0, w8, #4
 	ret
-                                        // -- End function
-func000000000000004d:                   // @func000000000000004d
-// %bb.0:                               // %entry
+
+func000000000000004d:
 	lsr	x8, x1, #1
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000046:                   // @func0000000000000046
-// %bb.0:                               // %entry
+
+func0000000000000046:
 	lsr	x8, x1, #3
 	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	lsr	x8, x1, #13
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000045:                   // @func0000000000000045
-// %bb.0:                               // %entry
+
+func0000000000000045:
 	lsr	x8, x1, #2
 	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
+

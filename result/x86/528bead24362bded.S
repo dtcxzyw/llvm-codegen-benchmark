@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000c4:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -6,7 +6,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -14,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -22,7 +24,8 @@ func0000000000000044:                   # @func0000000000000044
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -30,7 +33,8 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -38,7 +42,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -46,7 +51,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -54,7 +60,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
 	cmovaeq	%rsi, %rax
@@ -62,3 +69,4 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
+

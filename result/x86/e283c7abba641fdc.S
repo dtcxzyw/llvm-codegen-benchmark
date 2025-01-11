@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi
 	setne	%cl
@@ -6,7 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	movl	%edi, %eax
 	orq	%rcx, %rax
 	retq
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi
 	setg	%cl
@@ -14,3 +15,4 @@ func0000000000000029:                   # @func0000000000000029
 	movl	%edi, %eax
 	orq	%rcx, %rax
 	retq
+

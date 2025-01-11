@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fmv.d.x	fa5, zero
@@ -7,7 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmfgt.vf	v17, v8, fa5
 	vmxor.mm	v0, v17, v16
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	vmsne.vi	v16, v16, 0
@@ -15,7 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmfne.vv	v17, v8, v8
 	vmxor.mm	v0, v17, v16
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fli.d	fa5, inf
@@ -24,3 +26,4 @@ func0000000000000007:                   # @func0000000000000007
 	vmfne.vf	v17, v8, fa5
 	vmxor.mm	v0, v17, v16
 	ret
+

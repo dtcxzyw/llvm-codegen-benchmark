@@ -1,36 +1,40 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	movslq	%esi, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$39, %rax
 	addl	%ecx, %eax
 	leal	-25550(%rdi,%rax), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	3(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$2, %eax
 	leal	2(%rdi,%rax), %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	movslq	%esi, %rax
-	imulq	$1717986919, %rax, %rax         # imm = 0x66666667
+	imulq	$1717986919, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$33, %rax
 	addl	%ecx, %eax
 	leal	-42(%rdi,%rax), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
 	leal	2(%rdi,%rax), %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	leal	8191(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -38,37 +42,42 @@ func0000000000000008:                   # @func0000000000000008
 	subl	%eax, %esi
 	leal	-351(%rsi), %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	movl	%edi, %eax
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
 	leal	128(%rsi,%rax), %eax
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	movl	%edi, %eax
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
 	leal	8(%rsi,%rax), %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	leal	1(%rdi,%rax), %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
 	leal	-1(%rdi,%rax), %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movl	%edi, %eax
 	shrl	$31, %eax
 	addl	%edi, %eax
@@ -76,10 +85,12 @@ func0000000000000018:                   # @func0000000000000018
 	subl	%eax, %esi
 	leal	1(%rsi), %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leal	3(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
 	sarl	$2, %eax
 	leal	6(%rdi,%rax), %eax
 	retq
+

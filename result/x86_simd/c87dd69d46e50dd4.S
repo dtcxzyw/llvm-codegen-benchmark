@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	17179869180                     # 0x3fffffffc
-func0000000000000001:                   # @func0000000000000001
+	.quad	17179869180
+func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -9,3 +9,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

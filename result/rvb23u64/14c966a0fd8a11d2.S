@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	sext.w	a0, a0
 	addiw	a2, a1, 64
 	ori	a1, a1, 96
@@ -7,7 +7,8 @@ func0000000000000064:                   # @func0000000000000064
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	sext.w	a0, a0
 	addiw	a2, a1, 3
 	ori	a1, a1, 1
@@ -15,7 +16,8 @@ func0000000000000061:                   # @func0000000000000061
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	addiw	a2, a1, 55
 	ori	a1, a1, 48
 	srliw	a0, a0, 29
@@ -24,7 +26,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	sext.w	a0, a0
 	addiw	a2, a1, 24
 	ori	a1, a1, 20
@@ -32,7 +35,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a0, a0
 	lui	a2, 5
 	addiw	a2, a2, 1028
@@ -44,7 +48,8 @@ func0000000000000024:                   # @func0000000000000024
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	sext.w	a0, a0
 	li	a2, 21
 	slli	a2, a2, 10
@@ -56,7 +61,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	sext.w	a0, a0
 	lui	a2, 5
 	addiw	a2, a2, 1028
@@ -68,7 +74,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	sext.w	a0, a0
 	addiw	a2, a1, 55
 	ori	a1, a1, 48
@@ -77,3 +84,4 @@ func0000000000000014:                   # @func0000000000000014
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

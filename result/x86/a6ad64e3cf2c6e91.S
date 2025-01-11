@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -9,10 +9,11 @@ func0000000000000081:                   # @func0000000000000081
 	addl	%edi, %ecx
 	sete	%al
 	retq
-func0000000000000224:                   # @func0000000000000224
+
+func0000000000000224:
 	testb	$1, %dl
-	movl	$-3712, %eax                    # imm = 0xF180
-	movl	$-753664, %ecx                  # imm = 0xFFF48000
+	movl	$-3712, %eax
+	movl	$-753664, %ecx
 	cmovnel	%eax, %ecx
 	cmpb	$67, %sil
 	movl	$-16, %eax
@@ -21,7 +22,8 @@ func0000000000000224:                   # @func0000000000000224
 	cmpl	$65, %eax
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	andl	$1, %edx
 	decl	%edx
 	orl	$-4, %edx
@@ -31,3 +33,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+

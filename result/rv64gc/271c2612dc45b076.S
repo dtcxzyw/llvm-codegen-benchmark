@@ -1,4 +1,4 @@
-func0000000000000c61:                   # @func0000000000000c61
+func0000000000000c61:
 	and	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
@@ -6,7 +6,8 @@ func0000000000000c61:                   # @func0000000000000c61
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000c01:                   # @func0000000000000c01
+
+func0000000000000c01:
 	sext.w	a0, a0
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -15,3 +16,4 @@ func0000000000000c01:                   # @func0000000000000c01
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

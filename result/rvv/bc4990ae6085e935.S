@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	lui	a0, 1048575
 	addi	a0, a0, 1726
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -12,7 +12,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 1970
 	vadd.vx	v8, v10, a0
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 3
 	lui	a0, 149797
@@ -26,7 +27,8 @@ func000000000000000b:                   # @func000000000000000b
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, 1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 335544
@@ -37,7 +39,8 @@ func0000000000000001:                   # @func0000000000000001
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, -11
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 335544
@@ -48,7 +51,8 @@ func0000000000000005:                   # @func0000000000000005
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, -11
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 335544
@@ -59,7 +63,8 @@ func000000000000000d:                   # @func000000000000000d
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, -11
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
 	lui	a0, 699051
@@ -70,7 +75,8 @@ func0000000000000007:                   # @func0000000000000007
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, 1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 699051
@@ -81,3 +87,4 @@ func000000000000000f:                   # @func000000000000000f
 	vnmsub.vx	v10, a0, v8
 	vadd.vi	v8, v10, 3
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func00000000000000a8:                   # @func00000000000000a8
+	.quad	768614336404564650
+func00000000000000a8:
 	sub	a1, a1, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
@@ -9,3 +9,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
+

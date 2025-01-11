@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	sext.w	a0, a0
@@ -11,7 +11,8 @@ func000000000000001e:                   # @func000000000000001e
 	slli	a0, a0, 4
 	sub	a0, a0, a1
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	sext.w	a0, a0
@@ -24,7 +25,8 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 4
 	sub	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	sext.w	a0, a0
@@ -37,3 +39,4 @@ func000000000000001c:                   # @func000000000000001c
 	slli	a0, a0, 4
 	sub	a0, a0, a1
 	ret
+

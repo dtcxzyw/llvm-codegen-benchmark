@@ -1,47 +1,47 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	pushq	%rbp
 	pushq	%rbx
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpextrd	$3, %xmm0, %ecx
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vpextrd	$2, %xmm0, %esi
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	movl	%eax, %esi
 	vmovd	%xmm0, %edi
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%edi
 	movl	%eax, %edi
 	vpextrd	$1, %xmm0, %r8d
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%r8d
 	movl	%eax, %r8d
 	vextracti128	$1, %ymm0, %xmm0
 	vpextrd	$3, %xmm0, %r9d
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%r9d
 	movl	%eax, %r9d
 	vpextrd	$2, %xmm0, %r10d
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%r10d
 	movl	%eax, %r10d
 	vmovd	%xmm0, %r11d
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%r11d
 	movl	%eax, %r11d
 	vpextrd	$1, %xmm0, %ebx
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	xorl	%edx, %edx
 	divl	%ebx
 	vextracti128	$1, %ymm1, %xmm0
@@ -90,3 +90,4 @@ func000000000000001c:                   # @func000000000000001c
 	popq	%rbx
 	popq	%rbp
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000ca4:                   # @func0000000000000ca4
+func0000000000000ca4:
 	vcmpless	%xmm2, %xmm1, %k1
 	vmovaps	%xmm1, %xmm3
 	vmovss	%xmm2, %xmm3, %xmm3 {%k1}
@@ -7,3 +7,4 @@ func0000000000000ca4:                   # @func0000000000000ca4
 	vucomiss	%xmm3, %xmm1
 	seta	%al
 	retq
+

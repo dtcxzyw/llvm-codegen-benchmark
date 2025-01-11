@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -9,19 +9,22 @@ func0000000000000021:                   # @func0000000000000021
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 2
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	or	a0, a0, a1
 	sext.w	a0, a0
 	li	a1, 129
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 6
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	or	a0, a0, a1
 	srliw	a0, a0, 31
 	addi	a0, a0, 1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -31,7 +34,8 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, 7
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -40,7 +44,8 @@ func0000000000000024:                   # @func0000000000000024
 	li	a1, 8
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -11
@@ -52,14 +57,16 @@ func0000000000000181:                   # @func0000000000000181
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -74
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	max	a0, a0, a1
 	sgtz	a0, a0
 	addi	a0, a0, 1
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slti	a1, a1, 5
@@ -71,7 +78,8 @@ func0000000000000141:                   # @func0000000000000141
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
@@ -80,3 +88,4 @@ func0000000000000081:                   # @func0000000000000081
 	or	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000006b:                   # @func000000000000006b
+func000000000000006b:
 	leaq	(%rsi,%rdx), %rax
 	sarq	$2, %rdi
 	subq	%rdi, %rax
@@ -6,7 +6,8 @@ func000000000000006b:                   # @func000000000000006b
 	cmovaq	%rdi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	leaq	(%rsi,%rdx), %rax
 	sarq	$4, %rdi
 	subq	%rdi, %rax
@@ -14,7 +15,8 @@ func000000000000002b:                   # @func000000000000002b
 	cmovaq	%rdi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000007b:                   # @func000000000000007b
+
+func000000000000007b:
 	leaq	(%rsi,%rdx), %rax
 	sarq	$2, %rdi
 	subq	%rdi, %rax
@@ -22,3 +24,4 @@ func000000000000007b:                   # @func000000000000007b
 	cmovaq	%rdi, %rax
 	addq	%rdi, %rax
 	retq
+

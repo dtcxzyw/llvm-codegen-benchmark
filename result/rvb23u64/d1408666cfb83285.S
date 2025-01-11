@@ -1,4 +1,4 @@
-func0000000000001d8c:                   # @func0000000000001d8c
+func0000000000001d8c:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -7,7 +7,8 @@ func0000000000001d8c:                   # @func0000000000001d8c
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000d81:                   # @func0000000000000d81
+
+func0000000000000d81:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -16,7 +17,8 @@ func0000000000000d81:                   # @func0000000000000d81
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001e8a:                   # @func0000000000001e8a
+
+func0000000000001e8a:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -24,7 +26,8 @@ func0000000000001e8a:                   # @func0000000000001e8a
 	slti	a0, a0, 0
 	andn	a0, a1, a0
 	ret
-func0000000000000e81:                   # @func0000000000000e81
+
+func0000000000000e81:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -33,7 +36,8 @@ func0000000000000e81:                   # @func0000000000000e81
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d8c:                   # @func0000000000000d8c
+
+func0000000000000d8c:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -43,7 +47,8 @@ func0000000000000d8c:                   # @func0000000000000d8c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001d81:                   # @func0000000000001d81
+
+func0000000000001d81:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -52,7 +57,8 @@ func0000000000001d81:                   # @func0000000000001d81
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001e8c:                   # @func0000000000001e8c
+
+func0000000000001e8c:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -61,7 +67,8 @@ func0000000000001e8c:                   # @func0000000000001e8c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001e81:                   # @func0000000000001e81
+
+func0000000000001e81:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -69,7 +76,8 @@ func0000000000001e81:                   # @func0000000000001e81
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001e86:                   # @func0000000000001e86
+
+func0000000000001e86:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -77,7 +85,8 @@ func0000000000001e86:                   # @func0000000000001e86
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000e8c:                   # @func0000000000000e8c
+
+func0000000000000e8c:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -85,7 +94,8 @@ func0000000000000e8c:                   # @func0000000000000e8c
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000001d8a:                   # @func0000000000001d8a
+
+func0000000000001d8a:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -94,7 +104,8 @@ func0000000000001d8a:                   # @func0000000000001d8a
 	slti	a0, a0, 0
 	andn	a0, a1, a0
 	ret
-func0000000000000e8a:                   # @func0000000000000e8a
+
+func0000000000000e8a:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -102,7 +113,8 @@ func0000000000000e8a:                   # @func0000000000000e8a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001e98:                   # @func0000000000001e98
+
+func0000000000001e98:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -110,7 +122,8 @@ func0000000000001e98:                   # @func0000000000001e98
 	sltiu	a0, a0, 2
 	andn	a0, a1, a0
 	ret
-func0000000000000d86:                   # @func0000000000000d86
+
+func0000000000000d86:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -119,7 +132,8 @@ func0000000000000d86:                   # @func0000000000000d86
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000d8a:                   # @func0000000000000d8a
+
+func0000000000000d8a:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -128,7 +142,8 @@ func0000000000000d8a:                   # @func0000000000000d8a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000e84:                   # @func0000000000000e84
+
+func0000000000000e84:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	addi	a1, a1, 1
@@ -136,3 +151,4 @@ func0000000000000e84:                   # @func0000000000000e84
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
+

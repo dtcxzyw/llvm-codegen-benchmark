@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3f847ae147ae147b              # double 0.01
-func000000000000006c:                   # @func000000000000006c
+	.quad	0x3f847ae147ae147b
+func000000000000006c:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	sext.w	a0, a0
@@ -10,16 +10,18 @@ func000000000000006c:                   # @func000000000000006c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	0x3cd203afa0000000              # double 1.0000000036274937E-15
-func00000000000000aa:                   # @func00000000000000aa
+	.quad	0x3cd203afa0000000
+func00000000000000aa:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	sext.w	a0, a0
@@ -28,7 +30,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
@@ -37,9 +40,10 @@ func00000000000000ac:                   # @func00000000000000ac
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
+
 .LCPI4_0:
-	.quad	0x47efffffe0000000              # double 3.4028234663852886E+38
-func0000000000000081:                   # @func0000000000000081
+	.quad	0x47efffffe0000000
+func0000000000000081:
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
 	sext.w	a0, a0
@@ -48,7 +52,8 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000121:                   # @func0000000000000121
+
+func0000000000000121:
 	sext.w	a0, a0
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
@@ -58,7 +63,8 @@ func0000000000000121:                   # @func0000000000000121
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
 	xori	a1, a1, 1
@@ -66,7 +72,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
@@ -74,21 +81,24 @@ func00000000000000ec:                   # @func00000000000000ec
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
@@ -96,30 +106,34 @@ func000000000000014c:                   # @func000000000000014c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000106:                   # @func0000000000000106
+
+func0000000000000106:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
+
 .LCPI14_0:
-	.quad	0x3fc999999999999a              # double 0.20000000000000001
-func00000000000001ac:                   # @func00000000000001ac
+	.quad	0x3fc999999999999a
+func00000000000001ac:
 	lui	a1, %hi(.LCPI14_0)
 	fld	fa5, %lo(.LCPI14_0)(a1)
 	sext.w	a0, a0
@@ -129,7 +143,8 @@ func00000000000001ac:                   # @func00000000000001ac
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
@@ -137,3 +152,4 @@ func0000000000000141:                   # @func0000000000000141
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

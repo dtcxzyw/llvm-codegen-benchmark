@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	andl	$1, %edx
 	leaq	(%rdi,%rdx,4), %rcx
 	leaq	34(%rdi,%rdx,4), %rax
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmoveq	%rcx, %rax
 	addq	$5, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -15,7 +16,8 @@ func000000000000000b:                   # @func000000000000000b
 	xorq	$5, %rsi
 	leaq	-8(%rsi,%rax), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andl	$1, %edx
 	addq	%rdi, %rdx
 	notb	%sil
@@ -23,7 +25,8 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$1, %eax
 	leaq	11(%rdx,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -35,3 +38,4 @@ func000000000000000a:                   # @func000000000000000a
 	shll	$4, %ecx
 	leaq	-32(%rcx,%rax), %rax
 	retq
+

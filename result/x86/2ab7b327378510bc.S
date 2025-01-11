@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	movq	%rsi, %rax
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	testw	%si, %si
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	movq	%rsi, %rax
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	$-1, %si
 	cmovneq	%rsi, %rax
 	retq
+

@@ -1,25 +1,25 @@
 .LCPI0_0:
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
+	.short	64512
+	.short	64512
+	.short	64512
+	.short	64512
+	.short	64512
+	.short	64512
+	.short	64512
+	.short	64512
 .LCPI0_1:
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
 .LCPI0_2:
-	.short	64512                           # 0xfc00
-	.short	64512                           # 0xfc00
-func0000000000000e81:                   # @func0000000000000e81
+	.short	64512
+	.short	64512
+func0000000000000e81:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpltud	%ymm0, %ymm2, %k1
@@ -28,16 +28,17 @@ func0000000000000e81:                   # @func0000000000000e81
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-	.short	8192                            # 0x2000
-func0000000000000e8c:                   # @func0000000000000e8c
+	.short	8192
+	.short	8192
+	.short	8192
+	.short	8192
+	.short	8192
+	.short	8192
+	.short	8192
+	.short	8192
+func0000000000000e8c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpltud	%ymm0, %ymm2, %k1
@@ -45,3 +46,4 @@ func0000000000000e8c:                   # @func0000000000000e8c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

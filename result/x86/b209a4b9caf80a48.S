@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	cmovbl	%edi, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -14,3 +15,4 @@ func000000000000000e:                   # @func000000000000000e
 	cmpl	%eax, %edi
 	cmovbl	%edi, %eax
 	retq
+

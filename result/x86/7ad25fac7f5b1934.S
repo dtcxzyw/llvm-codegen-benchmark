@@ -1,4 +1,4 @@
-func0000000000000230:                   # @func0000000000000230
+func0000000000000230:
 	cmpl	$-9, %edx
 	setb	%cl
 	testq	%rsi, %rsi
@@ -6,7 +6,8 @@ func0000000000000230:                   # @func0000000000000230
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	$27, %edx
 	sete	%cl
 	cmpq	$20, %rsi
@@ -14,15 +15,17 @@ func0000000000000084:                   # @func0000000000000084
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000420:                   # @func0000000000000420
-	cmpl	$65536, %edx                    # imm = 0x10000
+
+func0000000000000420:
+	cmpl	$65536, %edx
 	setae	%al
 	shrq	$32, %rsi
 	setne	%cl
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+
+func00000000000000b0:
 	testq	%rdx, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -30,7 +33,8 @@ func00000000000000b0:                   # @func00000000000000b0
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	testq	%rdx, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -38,7 +42,8 @@ func0000000000000098:                   # @func0000000000000098
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000304:                   # @func0000000000000304
+
+func0000000000000304:
 	testl	%edx, %edx
 	setle	%cl
 	testq	%rsi, %rsi
@@ -46,7 +51,8 @@ func0000000000000304:                   # @func0000000000000304
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
+
+func0000000000000204:
 	cmpl	$-2, %edx
 	setb	%cl
 	testq	%rsi, %rsi
@@ -54,7 +60,8 @@ func0000000000000204:                   # @func0000000000000204
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000630:                   # @func0000000000000630
+
+func0000000000000630:
 	testl	%edx, %edx
 	setne	%cl
 	cmpq	$-1, %rsi
@@ -62,7 +69,8 @@ func0000000000000630:                   # @func0000000000000630
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000610:                   # @func0000000000000610
+
+func0000000000000610:
 	testl	%edx, %edx
 	setne	%cl
 	cmpq	$5, %rsi
@@ -70,16 +78,18 @@ func0000000000000610:                   # @func0000000000000610
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000604:                   # @func0000000000000604
+
+func0000000000000604:
 	testl	%edx, %edx
 	setne	%al
-	movabsq	$1125899906842624, %rcx         # imm = 0x4000000000000
+	movabsq	$1125899906842624, %rcx
 	cmpq	%rcx, %rsi
 	sete	%cl
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000620:                   # @func0000000000000620
+
+func0000000000000620:
 	cmpl	$1, %edx
 	setne	%al
 	shrq	$32, %rsi
@@ -87,7 +97,8 @@ func0000000000000620:                   # @func0000000000000620
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000504:                   # @func0000000000000504
+
+func0000000000000504:
 	testl	%edx, %edx
 	setg	%cl
 	testq	%rsi, %rsi
@@ -95,7 +106,8 @@ func0000000000000504:                   # @func0000000000000504
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000530:                   # @func0000000000000530
+
+func0000000000000530:
 	cmpl	$4, %edx
 	setge	%cl
 	testq	%rsi, %rsi
@@ -103,7 +115,8 @@ func0000000000000530:                   # @func0000000000000530
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	testl	%edx, %edx
 	setle	%cl
 	testq	%rsi, %rsi
@@ -111,7 +124,8 @@ func0000000000000318:                   # @func0000000000000318
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000310:                   # @func0000000000000310
+
+func0000000000000310:
 	testl	%edx, %edx
 	setle	%al
 	shrq	$32, %rsi
@@ -119,3 +133,4 @@ func0000000000000310:                   # @func0000000000000310
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

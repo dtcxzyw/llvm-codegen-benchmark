@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	andi	a0, a0, 1
 	sext.w	a3, a1
 	slti	a3, a3, 0
@@ -13,3 +13,4 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

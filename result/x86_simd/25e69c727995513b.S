@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	vcvtps2pd	%ymm0, %zmm0
 	vcvtps2pd	%ymm1, %zmm1
 	retq
+

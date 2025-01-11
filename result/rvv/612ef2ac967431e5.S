@@ -1,4 +1,4 @@
-func00000000000003a1:                   # @func00000000000003a1
+func00000000000003a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	li	a0, 32
@@ -7,7 +7,8 @@ func00000000000003a1:                   # @func00000000000003a1
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vmerge.vim	v12, v12, 8, v0
@@ -15,7 +16,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000002a1:                   # @func00000000000002a1
+
+func00000000000002a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vnot.v	v12, v12
@@ -23,7 +25,8 @@ func00000000000002a1:                   # @func00000000000002a1
 	vadd.vv	v10, v12, v10
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000341:                   # @func0000000000000341
+
+func0000000000000341:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	li	a0, 32
@@ -32,7 +35,8 @@ func0000000000000341:                   # @func0000000000000341
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vmerge.vim	v12, v12, 4, v0
@@ -40,7 +44,8 @@ func0000000000000301:                   # @func0000000000000301
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vmerge.vim	v12, v12, 8, v0
@@ -48,7 +53,8 @@ func0000000000000321:                   # @func0000000000000321
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000241:                   # @func0000000000000241
+
+func0000000000000241:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vmerge.vim	v12, v12, 4, v0
@@ -56,3 +62,4 @@ func0000000000000241:                   # @func0000000000000241
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v8, v10
 	ret
+

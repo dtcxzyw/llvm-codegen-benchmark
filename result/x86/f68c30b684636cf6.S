@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovgel	%esi, %eax
@@ -6,3 +6,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

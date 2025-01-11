@@ -1,4 +1,4 @@
-func00000000000001a4:                   # @func00000000000001a4
+func00000000000001a4:
 	srli	a1, a0, 3
 	andi	a2, a0, -8
 	addi	a0, a0, -1
@@ -8,7 +8,8 @@ func00000000000001a4:                   # @func00000000000001a4
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	srli	a1, a0, 3
 	andi	a2, a0, -8
 	addi	a0, a0, -1
@@ -18,3 +19,4 @@ func0000000000000104:                   # @func0000000000000104
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

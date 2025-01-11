@@ -1,11 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subw	a1, a1, a0
 	addi	a1, a1, 7
 	srliw	a1, a1, 3
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	sub	a1, a1, a0
 	lui	a2, 262144
 	addiw	a2, a2, -1
@@ -14,9 +15,11 @@ func0000000000000010:                   # @func0000000000000010
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	sub	a1, a1, a0
 	addi	a1, a1, -65
 	andi	a1, a1, -64
 	add	a0, a0, a1
 	ret
+

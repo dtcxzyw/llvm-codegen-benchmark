@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	32                              # 0x20
+	.quad	32
 .LCPI0_1:
-	.quad	64                              # 0x40
-func0000000000000004:                   # @func0000000000000004
+	.quad	64
+func0000000000000004:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpand	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
@@ -11,3 +11,4 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

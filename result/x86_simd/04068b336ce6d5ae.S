@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpextrq	$1, %xmm0, %rax
 	testq	%rax, %rax
 	sets	%al
@@ -26,7 +26,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpinsrb	$3, %ecx, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpextrq	$1, %xmm0, %rax
 	testq	%rax, %rax
 	sets	%al
@@ -54,3 +55,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrb	$3, %ecx, %xmm1, %xmm0
 	vzeroupper
 	retq
+

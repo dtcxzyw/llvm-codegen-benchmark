@@ -1,7 +1,6 @@
-func0000000000000266:                   // @func0000000000000266
-// %bb.0:                               // %entry
+func0000000000000266:
 	sub	x8, x1, x2
-	mov	w9, #28087                      // =0x6db7
+	mov	w9, #28087
 	lsr	x8, x8, #3
 	movk	w9, #46811, lsl #16
 	mul	w8, w8, w9
@@ -9,11 +8,10 @@ func0000000000000266:                   // @func0000000000000266
 	cmp	w9, w8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000226:                   // @func0000000000000226
-// %bb.0:                               // %entry
+
+func0000000000000226:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #3
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -21,11 +19,10 @@ func0000000000000226:                   // @func0000000000000226
 	cmp	w9, w8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000204:                   // @func0000000000000204
-// %bb.0:                               // %entry
+
+func0000000000000204:
 	sub	x8, x1, x2
-	mov	w9, #36409                      // =0x8e39
+	mov	w9, #36409
 	lsr	x8, x8, #3
 	movk	w9, #14563, lsl #16
 	mul	w8, w8, w9
@@ -33,11 +30,10 @@ func0000000000000204:                   // @func0000000000000204
 	cmp	w9, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000244:                   // @func0000000000000244
-// %bb.0:                               // %entry
+
+func0000000000000244:
 	sub	x8, x1, x2
-	mov	w9, #36409                      // =0x8e39
+	mov	w9, #36409
 	lsr	x8, x8, #2
 	movk	w9, #14563, lsl #16
 	mul	w8, w8, w9
@@ -45,11 +41,10 @@ func0000000000000244:                   // @func0000000000000244
 	cmp	w9, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000206:                   // @func0000000000000206
-// %bb.0:                               // %entry
+
+func0000000000000206:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #5
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -57,11 +52,10 @@ func0000000000000206:                   // @func0000000000000206
 	cmp	w9, w8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000241:                   // @func0000000000000241
-// %bb.0:                               // %entry
+
+func0000000000000241:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #2
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -69,11 +63,10 @@ func0000000000000241:                   // @func0000000000000241
 	cmp	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000221:                   // @func0000000000000221
-// %bb.0:                               // %entry
+
+func0000000000000221:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #4
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -81,11 +74,10 @@ func0000000000000221:                   // @func0000000000000221
 	cmp	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000261:                   // @func0000000000000261
-// %bb.0:                               // %entry
+
+func0000000000000261:
 	sub	x8, x1, x2
-	mov	w9, #18127                      // =0x46cf
+	mov	w9, #18127
 	lsr	x8, x8, #3
 	movk	w9, #26493, lsl #16
 	mul	w8, w8, w9
@@ -93,11 +85,10 @@ func0000000000000261:                   // @func0000000000000261
 	cmp	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000201:                   // @func0000000000000201
-// %bb.0:                               // %entry
+
+func0000000000000201:
 	sub	x8, x1, x2
-	mov	w9, #31711                      // =0x7bdf
+	mov	w9, #31711
 	lsr	x8, x8, #3
 	movk	w9, #48623, lsl #16
 	mul	w8, w8, w9
@@ -105,11 +96,10 @@ func0000000000000201:                   // @func0000000000000201
 	cmp	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	sub	x8, x1, x2
-	mov	w9, #33554431                   // =0x1ffffff
+	mov	w9, #33554431
 	add	x9, x8, x9
 	cmp	x8, #0
 	csel	x8, x9, x8, lt
@@ -118,11 +108,10 @@ func0000000000000061:                   // @func0000000000000061
 	cmp	w9, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000208:                   // @func0000000000000208
-// %bb.0:                               // %entry
+
+func0000000000000208:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #6
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -130,11 +119,10 @@ func0000000000000208:                   // @func0000000000000208
 	cmp	w9, w8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000022a:                   // @func000000000000022a
-// %bb.0:                               // %entry
+
+func000000000000022a:
 	sub	x8, x1, x2
-	mov	w9, #43691                      // =0xaaab
+	mov	w9, #43691
 	lsr	x8, x8, #3
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -142,4 +130,4 @@ func000000000000022a:                   // @func000000000000022a
 	cmp	w9, w8
 	cset	w0, gt
 	ret
-                                        // -- End function
+

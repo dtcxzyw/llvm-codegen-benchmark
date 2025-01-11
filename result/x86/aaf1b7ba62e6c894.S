@@ -1,4 +1,4 @@
-func0000000000000541:                   # @func0000000000000541
+func0000000000000541:
 	decl	%esi
 	cmpl	%edx, %esi
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000000541:                   # @func0000000000000541
 	setg	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	orb	$38, %dl
 	shrxq	%rdx, %rsi, %rcx
 	andl	$1, %ecx
@@ -6,3 +6,4 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

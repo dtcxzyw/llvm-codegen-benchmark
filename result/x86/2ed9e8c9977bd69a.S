@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	notl	%edi
 	leal	-150(%rdx), %ecx
 	testb	$1, %sil
@@ -7,3 +7,4 @@ func0000000000000015:                   # @func0000000000000015
 	orl	$-2, %edi
 	addl	%edi, %eax
 	retq
+

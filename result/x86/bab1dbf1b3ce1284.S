@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	leal	1(%rdi), %ecx
 	andl	$31, %ecx
 	notl	%edi
@@ -6,7 +6,8 @@ func0000000000000061:                   # @func0000000000000061
 	movl	$32, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	leal	-1(%rdi), %ecx
 	andl	$3, %ecx
 	andl	$3, %edi
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	movl	$4, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	leal	1(%rdi), %ecx
 	andl	$31, %ecx
 	notl	%edi
@@ -22,7 +24,8 @@ func0000000000000041:                   # @func0000000000000041
 	movl	$32, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	1(%rdi), %ecx
 	andl	$3, %ecx
 	notl	%edi
@@ -30,3 +33,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$4, %eax
 	cmovneq	%rcx, %rax
 	retq
+

@@ -1,10 +1,12 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	decb	%dil
-	movl	$237567, %eax                   # imm = 0x39FFF
+	movl	$237567, %eax
 	shrxl	%edi, %eax, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	addb	$93, %dil
-	movl	$260607, %eax                   # imm = 0x3F9FF
+	movl	$260607, %eax
 	shrxl	%edi, %eax, %eax
 	retq
+

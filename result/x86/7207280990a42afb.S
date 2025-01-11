@@ -1,7 +1,8 @@
-func00000000000001ac:                   # @func00000000000001ac
-	andl	$2047, %edi                     # imm = 0x7FF
-	addl	$-1075, %edi                    # imm = 0xFBCD
+func00000000000001ac:
+	andl	$2047, %edi
+	addl	$-1075, %edi
 	andl	$-2, %edi
 	cmpl	$2, %edi
 	setne	%al
 	retq
+

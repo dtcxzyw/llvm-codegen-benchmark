@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	lui	a3, 3840
 	lui	a4, 240
 	addiw	a3, a3, 240
@@ -13,9 +13,10 @@ func000000000000002c:                   # @func000000000000002c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	-6148914691236517206            # 0xaaaaaaaaaaaaaaaa
-func0000000000000028:                   # @func0000000000000028
+	.quad	-6148914691236517206
+func0000000000000028:
 	lui	a3, 349525
 	lui	a4, %hi(.LCPI1_0)
 	addiw	a3, a3, 1365
@@ -27,9 +28,10 @@ func0000000000000028:                   # @func0000000000000028
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+
 .LCPI2_0:
-	.quad	-6148914691236517206            # 0xaaaaaaaaaaaaaaaa
-func0000000000000024:                   # @func0000000000000024
+	.quad	-6148914691236517206
+func0000000000000024:
 	lui	a3, 349525
 	lui	a4, %hi(.LCPI2_0)
 	addiw	a3, a3, 1365
@@ -41,3 +43,4 @@ func0000000000000024:                   # @func0000000000000024
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
+

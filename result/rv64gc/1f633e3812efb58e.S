@@ -1,4 +1,4 @@
-func00000000000006e1:                   # @func00000000000006e1
+func00000000000006e1:
 	slli	a2, a2, 48
 	add	a1, a1, a0
 	srli	a2, a2, 48
@@ -7,3 +7,4 @@ func00000000000006e1:                   # @func00000000000006e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

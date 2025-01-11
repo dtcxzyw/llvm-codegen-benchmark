@@ -1,4 +1,4 @@
-func000000000000006f:                   # @func000000000000006f
+func000000000000006f:
 	li	a2, 1
 	slli	a2, a2, 37
 	addi	a2, a2, -32
@@ -8,7 +8,8 @@ func000000000000006f:                   # @func000000000000006f
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 8
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	addi	a1, a1, 1
 	slli	a1, a1, 53
 	srli	a1, a1, 61
@@ -16,7 +17,8 @@ func000000000000000f:                   # @func000000000000000f
 	sh3add	a0, a1, a0
 	addi	a0, a0, 224
 	ret
-func000000000000007c:                   # @func000000000000007c
+
+func000000000000007c:
 	li	a2, 1
 	slli	a2, a2, 36
 	addi	a2, a2, -336
@@ -27,7 +29,8 @@ func000000000000007c:                   # @func000000000000007c
 	add	a0, a0, a1
 	addi	a0, a0, 600
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	li	a2, 1
 	slli	a2, a2, 34
 	addi	a2, a2, -64
@@ -37,7 +40,8 @@ func000000000000006c:                   # @func000000000000006c
 	addi	a0, a0, 2047
 	addi	a0, a0, 833
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	li	a2, 1
 	slli	a2, a2, 35
 	addi	a2, a2, -48
@@ -46,7 +50,8 @@ func000000000000007f:                   # @func000000000000007f
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 48
 	ret
-func0000000000000073:                   # @func0000000000000073
+
+func0000000000000073:
 	slli	a1, a1, 1
 	li	a2, 1
 	addi	a1, a1, 320
@@ -58,7 +63,8 @@ func0000000000000073:                   # @func0000000000000073
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	slli	a1, a1, 1
 	li	a2, 1
 	addi	a1, a1, 322
@@ -70,17 +76,20 @@ func0000000000000063:                   # @func0000000000000063
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a1, a1, 1
 	addi	a1, a1, 14
 	andi	a1, a1, 24
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	addi	a1, a1, 224
 	srli	a1, a1, 3
 	andi	a1, a1, 24
 	add	a0, a0, a1
 	addi	a0, a0, -32
 	ret
+

@@ -1,21 +1,24 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	subq	%rdx, %rsi
-	imulq	$1000, %rsi, %rax               # imm = 0x3E8
+	imulq	$1000, %rsi, %rax
 	addq	%rdi, %rax
 	negq	%rax
 	seto	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	subq	%rdx, %rsi
-	imulq	$1000, %rsi, %rax               # imm = 0x3E8
+	imulq	$1000, %rsi, %rax
 	addq	%rdi, %rax
-	cmpq	$5001, %rax                     # imm = 0x1389
+	cmpq	$5001, %rax
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	subq	%rdx, %rsi
-	imulq	$1000000, %rsi, %rax            # imm = 0xF4240
+	imulq	$1000000, %rsi, %rax
 	addq	%rdi, %rax
 	testq	%rax, %rax
 	setle	%al
 	retq
+

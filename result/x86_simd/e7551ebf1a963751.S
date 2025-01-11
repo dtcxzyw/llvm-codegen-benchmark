@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000002:                   # @func0000000000000002
+	.long	0x7fffffff
+func0000000000000002:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -10,9 +10,10 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000014:                   # @func0000000000000014
+	.long	0x7fffffff
+func0000000000000014:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -22,9 +23,10 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000012:                   # @func0000000000000012
+	.long	0x7fffffff
+func0000000000000012:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -34,9 +36,10 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000015:                   # @func0000000000000015
+	.long	0x7fffffff
+func0000000000000015:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -46,9 +49,10 @@ func0000000000000015:                   # @func0000000000000015
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000005:                   # @func0000000000000005
+	.long	0x7fffffff
+func0000000000000005:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -58,3 +62,4 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

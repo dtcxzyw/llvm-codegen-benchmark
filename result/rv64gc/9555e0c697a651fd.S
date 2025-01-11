@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	li	a1, 64
 	li	a2, 64
 	beqz	a0, .LBB0_2
@@ -43,14 +43,15 @@ func0000000000000007:                   # @func0000000000000007
 	add	a2, a2, a3
 	mul	a2, a0, a2
 	srli	a2, a2, 56
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	sub	a0, a1, a2
 	li	a1, 7
 	bltu	a0, a1, .LBB0_4
 	li	a0, 7
-.LBB0_4:                                # %cond.end
+.LBB0_4:
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	srli	a1, a0, 1
 	lui	a2, 349525
 	lui	a3, 209715
@@ -97,5 +98,6 @@ func000000000000000e:                   # @func000000000000000e
 	li	a1, 15
 	bltu	a0, a1, .LBB1_2
 	li	a0, 15
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000c8c:                   # @func0000000000000c8c
+func0000000000000c8c:
 	incb	%dl
 	cmpb	%dil, %dl
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000c8c:                   # @func0000000000000c8c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	incb	%dl
 	cmpb	%dil, %dl
 	setb	%cl
@@ -15,3 +16,4 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
+

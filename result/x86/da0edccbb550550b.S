@@ -1,16 +1,17 @@
 .LCPI0_0:
-	.quad	0x4066800000000000              # double 180
-func000000000000001a:                   # @func000000000000001a
+	.quad	0x4066800000000000
+func000000000000001a:
 	andl	$1, %edi
 	negl	%edi
 	orl	$1, %edi
 	movl	%edi, %eax
 	negl	%eax
-	vmovsd	.LCPI0_0(%rip), %xmm1           # xmm1 = [1.8E+2,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	cmovbl	%edi, %eax
 	retq
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	andl	$1, %edi
 	leal	-1(%rdi), %ecx
 	orl	$1, %ecx
@@ -20,9 +21,10 @@ func0000000000000012:                   # @func0000000000000012
 	vucomisd	%xmm0, %xmm1
 	cmovbel	%ecx, %eax
 	retq
+
 .LCPI2_0:
-	.quad	0x4066800000000000              # double 180
-func0000000000000014:                   # @func0000000000000014
+	.quad	0x4066800000000000
+func0000000000000014:
 	andl	$1, %edi
 	negl	%edi
 	orl	$1, %edi
@@ -31,3 +33,4 @@ func0000000000000014:                   # @func0000000000000014
 	vucomisd	.LCPI2_0(%rip), %xmm0
 	cmovbel	%edi, %eax
 	retq
+

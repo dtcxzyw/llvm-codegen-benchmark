@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	sh1add	a1, a1, a1
 	slli	a2, a0, 4
 	slli	a1, a1, 4
@@ -7,7 +7,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000218c:                   # @func000000000000218c
+
+func000000000000218c:
 	sh1add	a1, a1, a1
 	slli	a2, a0, 5
 	slli	a1, a1, 3
@@ -16,3 +17,4 @@ func000000000000218c:                   # @func000000000000218c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

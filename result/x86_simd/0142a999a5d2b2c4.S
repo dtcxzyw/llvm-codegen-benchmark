@@ -1,4 +1,4 @@
-func0000000000000158:                   # @func0000000000000158
+func0000000000000158:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$8, %ymm2, %ymm0
@@ -8,7 +8,8 @@ func0000000000000158:                   # @func0000000000000158
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000142:                   # @func0000000000000142
+
+func0000000000000142:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$8, %ymm2, %ymm0
@@ -18,24 +19,25 @@ func0000000000000142:                   # @func0000000000000142
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-	.short	60001                           # 0xea61
-func0000000000000148:                   # @func0000000000000148
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+	.short	60001
+func0000000000000148:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$8, %ymm2, %ymm0
@@ -45,24 +47,25 @@ func0000000000000148:                   # @func0000000000000148
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-	.short	300                             # 0x12c
-func0000000000000150:                   # @func0000000000000150
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+	.short	300
+func0000000000000150:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$8, %ymm2, %ymm0
@@ -72,3 +75,4 @@ func0000000000000150:                   # @func0000000000000150
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

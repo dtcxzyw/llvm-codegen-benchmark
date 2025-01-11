@@ -1,18 +1,16 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	ubfx	w8, w2, #19, #2
 	tst	w0, #0x1
 	csel	w8, w1, w8, ne
 	cmp	w8, #2
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	ubfx	w8, w2, #6, #2
 	tst	w0, #0x1
 	csel	w8, w1, w8, ne
 	cmp	w8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
+

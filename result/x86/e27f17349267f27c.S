@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000046:
 	notq	%rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax
@@ -8,7 +8,8 @@ func0000000000000046:                   # @func0000000000000046
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	subq	%rdx, %rsi
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
@@ -17,7 +18,8 @@ func0000000000000141:                   # @func0000000000000141
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	subq	%rdx, %rsi
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
@@ -26,7 +28,8 @@ func000000000000014a:                   # @func000000000000014a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	subq	%rdx, %rsi
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
@@ -35,3 +38,4 @@ func0000000000000146:                   # @func0000000000000146
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
+

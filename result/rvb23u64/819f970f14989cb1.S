@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	zext.h	a1, a1
 	addi	a1, a1, -38
 	seqz	a1, a1
@@ -7,7 +7,8 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	zext.h	a1, a1
 	addi	a1, a1, -3
 	seqz	a1, a1
@@ -15,7 +16,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	addiw	a0, a0, -11
 	sgtz	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	zext.h	a1, a1
 	addi	a1, a1, -1
 	li	a2, -12
@@ -25,3 +27,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
+

@@ -1,22 +1,25 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	imulq	%rdx, %rsi
-	cmpq	$33554433, %rsi                 # imm = 0x2000001
+	cmpq	$33554433, %rsi
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	imulq	%rdx, %rsi
 	cmpq	$32, %rsi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -24,9 +27,11 @@ func0000000000000042:                   # @func0000000000000042
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
+

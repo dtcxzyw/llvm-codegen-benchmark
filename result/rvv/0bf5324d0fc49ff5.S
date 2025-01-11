@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v0, v10, a0
@@ -7,3 +7,4 @@ func0000000000000031:                   # @func0000000000000031
 	vmerge.vim	v9, v9, 1, v0
 	vsub.vv	v8, v8, v9
 	ret
+

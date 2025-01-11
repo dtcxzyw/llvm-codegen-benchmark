@@ -1,22 +1,27 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subw	a0, a0, a1
 	slliw	a0, a0, 3
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	subw	a0, a0, a1
 	slliw	a0, a0, 4
 	ret
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	subw	a0, a0, a1
 	slliw	a0, a0, 1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	slli	a1, a1, 1
 	slli	a0, a0, 5
 	subw	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	slli	a1, a1, 5
 	slli	a0, a0, 3
 	subw	a0, a0, a1
 	ret
+

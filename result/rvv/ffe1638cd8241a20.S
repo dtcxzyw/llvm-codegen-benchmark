@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	lui	a0, 349525
 	addi	a0, a0, 1366
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,7 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 	vnmsub.vx	v10, a0, v8
 	vmseq.vi	v0, v10, 1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 28
@@ -18,7 +19,8 @@ func0000000000000006:                   # @func0000000000000006
 	vsub.vv	v8, v8, v10
 	vmsle.vi	v0, v8, 2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 940744
 	addi	a0, a0, 507
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -34,7 +36,8 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -1273
 	vmsgt.vx	v0, v10, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	lui	a0, 940744
 	addi	a0, a0, 507
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -50,7 +53,8 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a0, a0, -966
 	vmsltu.vx	v0, v10, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	lui	a0, 20972
 	addi	a0, a0, -1968
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -63,7 +67,8 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -984
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 349525
 	addi	a0, a0, 1366
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -74,7 +79,8 @@ func0000000000000004:                   # @func0000000000000004
 	vnmsub.vx	v10, a0, v8
 	vmsleu.vi	v0, v10, 2
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 599186
 	addi	a0, a0, 1171
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -87,3 +93,4 @@ func0000000000000008:                   # @func0000000000000008
 	vnmsub.vx	v10, a0, v8
 	vmsgtu.vi	v0, v10, 6
 	ret
+

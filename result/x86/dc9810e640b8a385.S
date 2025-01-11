@@ -1,15 +1,18 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	andl	$1, %edi
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	andl	$1, %edi
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
 	retq
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	andl	$1, %edi
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
 	retq
+

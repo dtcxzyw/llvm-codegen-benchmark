@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1749024623285053783             # 0x1845c8a0ce512957
-func0000000000000019:                   # @func0000000000000019
+	.quad	1749024623285053783
+func0000000000000019:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	mulh	a2, a1, a2
@@ -13,11 +13,12 @@ func0000000000000019:                   # @func0000000000000019
 	sub	a1, a1, a2
 	bltz	a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+
 .LCPI1_0:
-	.quad	1749024623285053783             # 0x1845c8a0ce512957
-func000000000000001b:                   # @func000000000000001b
+	.quad	1749024623285053783
+func000000000000001b:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mulh	a2, a1, a2
@@ -30,11 +31,12 @@ func000000000000001b:                   # @func000000000000001b
 	sub	a1, a1, a2
 	bltz	a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+
 .LCPI2_0:
-	.quad	1237940039285380275             # 0x112e0be826d694b3
-func0000000000000018:                   # @func0000000000000018
+	.quad	1237940039285380275
+func0000000000000018:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mulh	a2, a1, a2
@@ -48,5 +50,6 @@ func0000000000000018:                   # @func0000000000000018
 	sub	a1, a1, a2
 	bltz	a1, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+

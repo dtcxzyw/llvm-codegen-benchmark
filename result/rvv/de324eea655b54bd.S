@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	fmv.w.x	fa5, zero
 	lui	a0, 276464
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,7 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, 0.5
 	vfadd.vf	v8, v8, fa5
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 276488
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -20,3 +21,4 @@ func0000000000000004:                   # @func0000000000000004
 	fneg.s	fa5, fa5
 	vfadd.vf	v8, v8, fa5
 	ret
+

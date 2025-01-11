@@ -1,4 +1,4 @@
-func0000000000000322:                   # @func0000000000000322
+func0000000000000322:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -7,7 +7,8 @@ func0000000000000322:                   # @func0000000000000322
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -16,7 +17,8 @@ func0000000000000028:                   # @func0000000000000028
 	vmerge.vvm	v16, v24, v16, v0
 	vmfeq.vv	v0, v8, v16
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -25,7 +27,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -35,7 +38,8 @@ func0000000000000043:                   # @func0000000000000043
 	vmfle.vv	v24, v16, v8
 	vmnot.m	v0, v24
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -44,7 +48,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v16, v8
 	ret
-func0000000000000342:                   # @func0000000000000342
+
+func0000000000000342:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -53,7 +58,8 @@ func0000000000000342:                   # @func0000000000000342
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret
-func0000000000000344:                   # @func0000000000000344
+
+func0000000000000344:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v16, v16
@@ -62,3 +68,4 @@ func0000000000000344:                   # @func0000000000000344
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v16, v8
 	ret
+

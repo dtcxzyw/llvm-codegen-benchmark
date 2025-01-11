@@ -1,66 +1,77 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	andl	$3, %esi
 	addl	$-32, %edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
-	andl	$16383, %esi                    # imm = 0x3FFF
+
+func00000000000000f8:
+	andl	$16383, %esi
 	addl	$32, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
-	andl	$4095, %esi                     # imm = 0xFFF
+
+func00000000000000a8:
+	andl	$4095, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
-	andl	$1023, %esi                     # imm = 0x3FF
+
+func000000000000008a:
+	andl	$1023, %esi
 	addl	$16, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	movzbl	%sil, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
-	andl	$511, %esi                      # imm = 0x1FF
+
+func00000000000000a6:
+	andl	$511, %esi
 	addl	$-8, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
-	andl	$8191, %esi                     # imm = 0x1FFF
+
+func00000000000000f4:
+	andl	$8191, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	movzbl	%sil, %eax
 	addl	$-2, %edi
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
-	andl	$32767, %esi                    # imm = 0x7FFF
+
+func0000000000000086:
+	andl	$32767, %esi
 	addl	$64, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	andl	$15, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	andl	$3, %esi
 	addl	$-9, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
+

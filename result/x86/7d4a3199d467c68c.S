@@ -1,11 +1,12 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	movq	%rdi, %rcx
 	shrq	$32, %rcx
 	cmpb	$1, %dil
 	movl	$-1, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdi, %rcx
 	shrq	$3, %rcx
 	notl	%edi
@@ -13,3 +14,4 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$3, %dil
 	cmovel	%ecx, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movq	%rdi, %rax
 	testq	%rdx, %rdx
 	sete	%cl
@@ -6,7 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	movzbl	%cl, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	movq	%rdi, %rax
 	cmpq	$6, %rdx
 	setne	%cl
@@ -14,7 +15,8 @@ func0000000000000031:                   # @func0000000000000031
 	movzbl	%cl, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	movq	%rdi, %rax
 	testq	%rdx, %rdx
 	setne	%cl
@@ -22,3 +24,4 @@ func0000000000000030:                   # @func0000000000000030
 	movzbl	%cl, %ecx
 	subq	%rcx, %rax
 	retq
+

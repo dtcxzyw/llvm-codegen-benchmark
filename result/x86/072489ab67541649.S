@@ -1,5 +1,5 @@
-func0000000000000218:                   # @func0000000000000218
-	cmpl	$65536, %edx                    # imm = 0x10000
+func0000000000000218:
+	cmpl	$65536, %edx
 	cmovbl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$8, %eax
@@ -8,8 +8,9 @@ func0000000000000218:                   # @func0000000000000218
 	cmpl	$16, %eax
 	setae	%al
 	retq
-func0000000000000618:                   # @func0000000000000618
-	cmpl	$256, %edx                      # imm = 0x100
+
+func0000000000000618:
+	cmpl	$256, %edx
 	cmovbl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$4, %eax
@@ -18,3 +19,4 @@ func0000000000000618:                   # @func0000000000000618
 	cmpl	$4, %eax
 	setae	%al
 	retq
+

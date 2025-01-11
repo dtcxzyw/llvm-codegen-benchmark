@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	leal	(%rsi,%rdx), %eax
 	cmpl	$15, %eax
 	movl	$15, %ecx
@@ -7,3 +7,4 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

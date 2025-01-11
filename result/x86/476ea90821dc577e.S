@@ -1,9 +1,10 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	testl	%edi, %edi
 	sete	%al
 	andb	%sil, %al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	xorl	%ecx, %ecx
@@ -13,7 +14,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	cmpl	$32, %ecx
 	setl	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	xorl	%ecx, %ecx
@@ -23,3 +25,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	cmpl	$-1, %ecx
 	sete	%al
 	retq
+

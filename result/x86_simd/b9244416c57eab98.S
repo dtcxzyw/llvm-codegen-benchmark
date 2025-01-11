@@ -1,8 +1,8 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vmulpd	%zmm4, %zmm4, %zmm4
 	vmulpd	%zmm5, %zmm5, %zmm5
-	vfmadd213pd	%zmm3, %zmm1, %zmm5     # zmm5 = (zmm1 * zmm5) + zmm3
-	vfmadd213pd	%zmm2, %zmm0, %zmm4     # zmm4 = (zmm0 * zmm4) + zmm2
+	vfmadd213pd	%zmm3, %zmm1, %zmm5
+	vfmadd213pd	%zmm2, %zmm0, %zmm4
 	vxorpd	%xmm0, %xmm0, %xmm0
 	vcmpeqpd	%zmm0, %zmm4, %k0
 	vcmpeqpd	%zmm0, %zmm5, %k1
@@ -10,11 +10,12 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vmulpd	%zmm4, %zmm4, %zmm4
 	vmulpd	%zmm5, %zmm5, %zmm5
-	vfmadd213pd	%zmm3, %zmm1, %zmm5     # zmm5 = (zmm1 * zmm5) + zmm3
-	vfmadd213pd	%zmm2, %zmm0, %zmm4     # zmm4 = (zmm0 * zmm4) + zmm2
+	vfmadd213pd	%zmm3, %zmm1, %zmm5
+	vfmadd213pd	%zmm2, %zmm0, %zmm4
 	vxorpd	%xmm0, %xmm0, %xmm0
 	vcmpltpd	%zmm0, %zmm4, %k0
 	vcmpltpd	%zmm0, %zmm5, %k1
@@ -22,3 +23,4 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

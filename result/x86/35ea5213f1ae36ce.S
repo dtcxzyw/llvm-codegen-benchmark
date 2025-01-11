@@ -1,4 +1,4 @@
-func0000000000000185:                   # @func0000000000000185
+func0000000000000185:
 	negb	%sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %ecx
@@ -7,10 +7,12 @@ func0000000000000185:                   # @func0000000000000185
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	negb	%sil
 	testl	%edi, %edi
 	movl	$1, %ecx
 	shlxl	%esi, %ecx, %eax
 	cmovel	%ecx, %eax
 	retq
+

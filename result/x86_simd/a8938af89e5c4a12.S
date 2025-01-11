@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3e800000                      # float 0.25
-func0000000000000000:                   # @func0000000000000000
+	.long	0x3e800000
+func0000000000000000:
 	vaddps	%zmm3, %zmm2, %zmm2
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -9,3 +9,4 @@ func0000000000000000:                   # @func0000000000000000
 	vaddpd	%zmm2, %zmm0, %zmm0
 	vaddpd	%zmm3, %zmm1, %zmm1
 	retq
+

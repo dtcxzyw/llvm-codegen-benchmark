@@ -1,4 +1,4 @@
-func0000000000000426:                   # @func0000000000000426
+func0000000000000426:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	sete	%al
@@ -9,7 +9,8 @@ func0000000000000426:                   # @func0000000000000426
 	cmpl	%ecx, %edi
 	setl	%al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	xorl	%eax, %eax
 	cmpl	$12, %esi
 	sete	%al
@@ -20,7 +21,8 @@ func0000000000000421:                   # @func0000000000000421
 	cmpl	%ecx, %edi
 	sete	%al
 	retq
-func0000000000000434:                   # @func0000000000000434
+
+func0000000000000434:
 	xorl	%eax, %eax
 	cmpl	$12, %esi
 	sete	%al
@@ -31,7 +33,8 @@ func0000000000000434:                   # @func0000000000000434
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	xorl	%eax, %eax
 	cmpl	$33, %esi
 	sete	%al
@@ -42,7 +45,8 @@ func000000000000042c:                   # @func000000000000042c
 	cmpl	%ecx, %edi
 	setne	%al
 	retq
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
@@ -53,39 +57,43 @@ func0000000000000424:                   # @func0000000000000424
 	cmpl	%ecx, %edi
 	setb	%al
 	retq
-func0000000000000438:                   # @func0000000000000438
+
+func0000000000000438:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
 	shll	$17, %eax
-	orl	$65535, %eax                    # imm = 0xFFFF
+	orl	$65535, %eax
 	testl	%esi, %esi
 	movl	$255, %ecx
 	cmovnel	%eax, %ecx
 	cmpl	%ecx, %edi
 	seta	%al
 	retq
-func0000000000000428:                   # @func0000000000000428
+
+func0000000000000428:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
 	shll	$17, %eax
-	orl	$65535, %eax                    # imm = 0xFFFF
+	orl	$65535, %eax
 	testl	%esi, %esi
 	movl	$255, %ecx
 	cmovnel	%eax, %ecx
 	cmpl	%ecx, %edi
 	seta	%al
 	retq
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
 	shll	$15, %eax
-	addl	$32768, %eax                    # imm = 0x8000
+	addl	$32768, %eax
 	testl	%esi, %esi
-	movl	$8388608, %ecx                  # imm = 0x800000
+	movl	$8388608, %ecx
 	cmovnel	%eax, %ecx
 	cmpl	%ecx, %edi
 	setg	%al
 	retq
+

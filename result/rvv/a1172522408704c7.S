@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 3
 	vmerge.vim	v10, v10, 0, v0
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	vzext.vf2	v12, v9
 	vmerge.vvm	v8, v12, v10, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a0, 127
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -20,3 +21,4 @@ func0000000000000004:                   # @func0000000000000004
 	vzext.vf2	v12, v9
 	vmerge.vvm	v8, v12, v10, v0
 	ret
+

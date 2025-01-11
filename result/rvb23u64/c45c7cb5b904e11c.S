@@ -1,10 +1,11 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	sext.w	a2, a2
 	max	a2, a2, zero
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	sext.w	a3, a2
 	li	a4, 30
 	sgtz	a3, a3
@@ -14,9 +15,11 @@ func00000000000000a5:                   # @func00000000000000a5
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000ad:                   # @func00000000000000ad
+
+func00000000000000ad:
 	sext.w	a2, a2
 	max	a2, a2, zero
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+

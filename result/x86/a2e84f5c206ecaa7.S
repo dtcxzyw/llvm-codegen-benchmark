@@ -1,7 +1,7 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000011:
 	cmpb	$-69, %dl
-	movl	$-3712, %eax                    # imm = 0xF180
-	movl	$-753664, %ecx                  # imm = 0xFFF48000
+	movl	$-3712, %eax
+	movl	$-753664, %ecx
 	cmovbl	%eax, %ecx
 	testb	$1, %sil
 	movl	$-16, %eax
@@ -9,7 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	xorl	%eax, %eax
 	cmpb	$6, %dl
 	sete	%al
@@ -20,3 +21,4 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %ecx
 	movslq	%ecx, %rax
 	retq
+

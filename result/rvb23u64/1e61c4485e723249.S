@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	sext.h	a0, a0
 	sext.h	a1, a1
 	sext.h	a2, a2
@@ -6,7 +6,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -16,7 +17,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	zext.h	a2, a2
@@ -24,3 +26,4 @@ func0000000000000088:                   # @func0000000000000088
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

@@ -1,5 +1,4 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	fmul	d1, d1, d2
 	ret
-                                        // -- End function
+

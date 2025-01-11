@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movzbl	%dl, %eax
 	xorq	%rsi, %rax
 	movq	%rax, %rcx
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$5, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	movzbl	%dl, %eax
 	xorq	%rsi, %rax
 	movq	%rax, %rcx
@@ -20,7 +21,8 @@ func000000000000000f:                   # @func000000000000000f
 	shlq	$5, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movzbl	%dl, %eax
 	xorq	%rsi, %rax
 	movq	%rax, %rcx
@@ -31,3 +33,4 @@ func000000000000000c:                   # @func000000000000000c
 	shlq	$5, %rax
 	addq	%rcx, %rax
 	retq
+

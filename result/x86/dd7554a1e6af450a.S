@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	shrq	$6, %rdx
 	shrq	$6, %rsi
 	cmpq	%rdx, %rsi
@@ -7,7 +7,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	shrq	%rdx
 	shrq	%rsi
 	cmpq	%rdx, %rsi
@@ -16,3 +17,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
+

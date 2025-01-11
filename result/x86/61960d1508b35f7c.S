@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -6,7 +6,8 @@ func0000000000000029:                   # @func0000000000000029
 	addq	%rsi, %rax
 	andq	$-2, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	addq	%rsi, %rax
 	andq	$-2, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -23,7 +25,8 @@ func0000000000000020:                   # @func0000000000000020
 	shlq	$3, %rax
 	andq	$-16, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -31,7 +34,8 @@ func0000000000000009:                   # @func0000000000000009
 	addq	%rsi, %rax
 	andq	$-2, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -39,7 +43,8 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rsi, %rax
 	andq	$-2, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	movq	%rsi, %rax
@@ -48,7 +53,8 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$3, %rax
 	andq	$-16, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	leaq	31(%rsi), %rax
@@ -58,3 +64,4 @@ func0000000000000028:                   # @func0000000000000028
 	negq	%rax
 	shlq	$5, %rax
 	retq
+

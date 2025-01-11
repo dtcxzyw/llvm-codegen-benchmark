@@ -1,4 +1,4 @@
-func0000000000000910:                   # @func0000000000000910
+func0000000000000910:
 	lui	a0, 524288
 	addi	a0, a0, -2
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -8,3 +8,4 @@ func0000000000000910:                   # @func0000000000000910
 	vmsltu.vv	v13, v10, v8
 	vmor.mm	v0, v13, v12
 	ret
+

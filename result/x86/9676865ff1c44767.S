@@ -1,26 +1,30 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	orl	%edx, %esi
-	andl	$65534, %esi                    # imm = 0xFFFE
+	andl	$65534, %esi
 	cmpl	$4, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	orq	%rdx, %rsi
-	testq	$-65521, %rsi                   # imm = 0xFFFF000F
+	testq	$-65521, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	orl	%edx, %esi
 	testb	$64, %sil
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	orl	%edx, %esi
 	notl	%esi
-	testl	$2146435072, %esi               # imm = 0x7FF00000
+	testl	$2146435072, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
+

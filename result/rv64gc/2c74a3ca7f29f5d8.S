@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x3fe0000000000000              # double 0.5
+	.quad	0x3fe0000000000000
 .LCPI0_1:
-	.quad	0x4000000000000000              # double 2
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x4000000000000000
+func0000000000000002:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)
@@ -11,11 +11,12 @@ func0000000000000002:                   # @func0000000000000002
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	0xc1dfffe000000000              # double -2147450880
+	.quad	0xc1dfffe000000000
 .LCPI1_1:
-	.quad	0xc1e0000000000000              # double -2147483648
-func000000000000000a:                   # @func000000000000000a
+	.quad	0xc1e0000000000000
+func000000000000000a:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	lui	a1, %hi(.LCPI1_1)
@@ -25,11 +26,12 @@ func000000000000000a:                   # @func000000000000000a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x3ff0000000000000
 .LCPI2_1:
-	.quad	0x3ff1c28f5c28f5c3              # double 1.1100000000000001
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3ff1c28f5c28f5c3
+func0000000000000004:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	lui	a1, %hi(.LCPI2_1)
@@ -39,3 +41,4 @@ func0000000000000004:                   # @func0000000000000004
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

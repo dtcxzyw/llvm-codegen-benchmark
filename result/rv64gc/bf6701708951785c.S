@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fe0000000000000
+func0000000000000000:
 	andi	a2, a0, 1
 	bnez	a2, .LBB0_2
 	mv	a0, a1
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	fmul.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret
+

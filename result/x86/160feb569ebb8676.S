@@ -1,6 +1,6 @@
-func00000000000000ef:                   # @func00000000000000ef
+func00000000000000ef:
 	sarq	$2, %rdi
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdi, %rax
 	movl	$8, %ecx
 	subq	%rax, %rcx
@@ -10,3 +10,4 @@ func00000000000000ef:                   # @func00000000000000ef
 	shlq	$2, %rcx
 	leaq	(%rcx,%rcx,2), %rax
 	retq
+

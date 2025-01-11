@@ -1,9 +1,10 @@
-func000000000000018c:                   # @func000000000000018c
-	cmpl	$273, %edi                      # imm = 0x111
+func000000000000018c:
+	cmpl	$273, %edi
 	setne	%cl
 	andb	%sil, %dl
 	andb	%dl, %cl
-	cmpl	$289, %edi                      # imm = 0x121
+	cmpl	$289, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
+

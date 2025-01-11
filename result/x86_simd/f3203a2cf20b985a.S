@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func0000000000000001:                   # @func0000000000000001
+	.quad	-6148914691236517205
+func0000000000000001:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$2, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rcx, %rcx
 	shrq	%rcx
 	leaq	(%rcx,%rcx,2), %rcx
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdx
 	mulxq	%rax, %rcx, %rcx
 	shrq	%rcx
@@ -31,6 +31,7 @@ func0000000000000001:                   # @func0000000000000001
 	leaq	(%rax,%rax,2), %rax
 	subq	%rax, %rdx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
+

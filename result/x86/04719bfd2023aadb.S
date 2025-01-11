@@ -1,12 +1,13 @@
-func0000000000000040:                   # @func0000000000000040
+func0000000000000040:
 	shrq	$4, %rdx
-	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %eax
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movq	%rdx, %rax
-	movabsq	$-2361183241434822607, %rcx     # imm = 0xDF3B645A1CAC0831
+	movabsq	$-2361183241434822607, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -15,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
+

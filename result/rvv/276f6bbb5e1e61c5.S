@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 838861
@@ -12,7 +12,8 @@ func0000000000000021:                   # @func0000000000000021
 	vand.vx	v8, v8, a1
 	vmseq.vi	v0, v8, 11
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 838861
@@ -27,9 +28,10 @@ func0000000000000034:                   # @func0000000000000034
 	li	a0, 29
 	vmsltu.vx	v0, v8, a0
 	ret
+
 .LCPI2_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000028:                   # @func0000000000000028
+	.quad	3353953467947191203
+func0000000000000028:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -42,7 +44,8 @@ func0000000000000028:                   # @func0000000000000028
 	bseti	a0, zero, 63
 	vmsgtu.vx	v0, v8, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 699051
@@ -56,9 +59,10 @@ func000000000000002c:                   # @func000000000000002c
 	vand.vx	v8, v8, a1
 	vmsne.vi	v0, v8, 0
 	ret
+
 .LCPI4_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000001:                   # @func0000000000000001
+	.quad	3074457345618258603
+func0000000000000001:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -71,9 +75,10 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
+
 .LCPI5_0:
-	.quad	4835703278458516699             # 0x431bde82d7b634db
-func0000000000000018:                   # @func0000000000000018
+	.quad	4835703278458516699
+func0000000000000018:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -90,9 +95,10 @@ func0000000000000018:                   # @func0000000000000018
 	addiw	a0, a0, -1441
 	vmsgtu.vx	v0, v8, a0
 	ret
+
 .LCPI6_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000038:                   # @func0000000000000038
+	.quad	3353953467947191203
+func0000000000000038:
 	lui	a0, %hi(.LCPI6_0)
 	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -104,3 +110,4 @@ func0000000000000038:                   # @func0000000000000038
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret
+

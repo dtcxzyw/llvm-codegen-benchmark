@@ -1,7 +1,8 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002e:
 	slliw	a2, a2, 1
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

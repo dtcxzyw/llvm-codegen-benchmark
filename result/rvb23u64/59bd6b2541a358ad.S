@@ -1,13 +1,14 @@
-func0000000000000208:                   # @func0000000000000208
+func0000000000000208:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 31
 	snez	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000104:                   # @func0000000000000104
+	.quad	1844674407370955161
+func0000000000000104:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	andi	a1, a1, 255
@@ -15,7 +16,8 @@ func0000000000000104:                   # @func0000000000000104
 	sh1add	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000201:                   # @func0000000000000201
+
+func0000000000000201:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	slli	a0, a0, 1
@@ -23,41 +25,47 @@ func0000000000000201:                   # @func0000000000000201
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000206:                   # @func0000000000000206
+
+func0000000000000206:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
-func00000000000002a6:                   # @func00000000000002a6
+
+func00000000000002a6:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
-func00000000000002a4:                   # @func00000000000002a4
+
+func00000000000002a4:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sltiu	a0, a0, 256
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 32
 	snez	a0, a0
 	ret
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	addi	a0, a0, -19
 	seqz	a0, a0
 	ret
+
 .LCPI8_0:
-	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000348:                   # @func0000000000000348
+	.quad	1844674407370955161
+func0000000000000348:
 	lui	a2, %hi(.LCPI8_0)
 	ld	a2, %lo(.LCPI8_0)(a2)
 	andi	a1, a1, 255
@@ -65,7 +73,8 @@ func0000000000000348:                   # @func0000000000000348
 	sh1add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
-func0000000000000268:                   # @func0000000000000268
+
+func0000000000000268:
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
@@ -73,3 +82,4 @@ func0000000000000268:                   # @func0000000000000268
 	addiw	a1, a1, 575
 	sltu	a0, a1, a0
 	ret
+

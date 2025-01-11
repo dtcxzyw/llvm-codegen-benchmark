@@ -1,4 +1,4 @@
-func0000000000000101:                   # @func0000000000000101
+func0000000000000101:
 	addl	$-14, %edx
 	cmpl	$5, %edx
 	setb	%cl
@@ -7,7 +7,8 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	decl	%edx
 	cmpl	$2, %edx
 	setb	%cl
@@ -16,3 +17,4 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	andb	%cl, %al
 	retq
+

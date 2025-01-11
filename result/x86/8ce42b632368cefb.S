@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx
 	shrl	$10, %ecx
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	subb	%cl, %al
 	orb	$48, %al
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	movl	%edi, %eax
 	imull	$205, %edi, %ecx
 	shrl	$10, %ecx
@@ -16,7 +17,8 @@ func0000000000000007:                   # @func0000000000000007
 	subb	%cl, %al
 	orb	$48, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	movl	%edi, %eax
 	imull	$205, %edi, %ecx
 	shrl	$10, %ecx
@@ -25,3 +27,4 @@ func0000000000000005:                   # @func0000000000000005
 	subb	%cl, %al
 	orb	$48, %al
 	retq
+

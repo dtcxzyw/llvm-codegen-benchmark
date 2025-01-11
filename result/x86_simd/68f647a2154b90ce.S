@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsubpd	%zmm3, %zmm1, %zmm4
 	vsubpd	%zmm2, %zmm0, %zmm5
 	vcmpltpd	%zmm1, %zmm3, %k1
@@ -8,3 +8,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmovapd	%zmm5, %zmm0
 	vmovapd	%zmm4, %zmm1
 	retq
+

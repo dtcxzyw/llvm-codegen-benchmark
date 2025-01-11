@@ -1,7 +1,8 @@
-func000000000000000c:                   # @func000000000000000c
-	cmpq	$8192, %rdx                     # imm = 0x2000
-	movl	$8192, %eax                     # imm = 0x2000
+func000000000000000c:
+	cmpq	$8192, %rdx
+	movl	$8192, %eax
 	cmovbq	%rdx, %rax
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
+

@@ -1,11 +1,12 @@
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000000a6:
 	srai	a1, a0, 63
 	lui	a2, 488281
 	addiw	a2, a2, 1024
 	and	a1, a1, a2
 	sh1add	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	slli	a1, a0, 16
 	lui	a2, 16
 	addiw	a2, a2, -16
@@ -15,7 +16,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	lui	a1, 122
 	lui	a2, 1048332
 	addiw	a1, a1, 288
@@ -24,3 +26,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	czero.eqz	a1, a2, a1
 	sh1add	a0, a0, a1
 	ret
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	4                               # 0x4
+	.quad	4
 .LCPI0_1:
-	.quad	3                               # 0x3
-func0000000000000000:                   # @func0000000000000000
+	.quad	3
+func0000000000000000:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpmovsxdq	%xmm2, %ymm1
@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
@@ -29,9 +29,10 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [4,4,4,4]
-	vpbroadcastq	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [3,3,3,3]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm1 {%k1}
 	vpsllvq	%ymm1, %ymm0, %ymm0
 	retq
+

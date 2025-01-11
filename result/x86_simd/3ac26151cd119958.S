@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -8,7 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -18,24 +19,25 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-func0000000000000004:                   # @func0000000000000004
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -45,24 +47,25 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-func0000000000000008:                   # @func0000000000000008
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -72,3 +75,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

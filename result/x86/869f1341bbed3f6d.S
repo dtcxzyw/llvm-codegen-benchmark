@@ -1,16 +1,18 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	rorxq	$33, %rdx, %rax
-	movabsq	$-7046029288634856825, %rcx     # imm = 0x9E3779B185EBCA87
+	movabsq	$-7046029288634856825, %rcx
 	imulq	%rax, %rcx
 	rorxq	$46, %rcx, %rax
 	addq	%rsi, %rax
 	xorq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	rorxq	$33, %rdx, %rax
-	movabsq	$-7046029288634856825, %rcx     # imm = 0x9E3779B185EBCA87
+	movabsq	$-7046029288634856825, %rcx
 	imulq	%rax, %rcx
 	rorxq	$46, %rcx, %rax
 	addq	%rsi, %rax
 	xorq	%rdi, %rax
 	retq
+

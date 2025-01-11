@@ -1,4 +1,4 @@
-func000000000000009b:                   # @func000000000000009b
+func000000000000009b:
 	shlq	$32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -6,7 +6,8 @@ func000000000000009b:                   # @func000000000000009b
 	testl	%esi, %esi
 	cmovnsq	%rdx, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	shlq	$32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -14,3 +15,4 @@ func000000000000001a:                   # @func000000000000001a
 	testl	%esi, %esi
 	cmovnsq	%rdx, %rax
 	retq
+

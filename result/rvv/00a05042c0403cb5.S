@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v11, v10
 	vmv.v.i	v10, 1
@@ -6,7 +6,8 @@ func000000000000001f:                   # @func000000000000001f
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v11, v10
 	vmv.v.i	v10, 3
@@ -14,7 +15,8 @@ func000000000000003c:                   # @func000000000000003c
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v11, v10
 	vmv.v.i	v10, 1
@@ -22,7 +24,8 @@ func0000000000000030:                   # @func0000000000000030
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v11, v10
 	vmv.v.i	v10, 1
@@ -30,7 +33,8 @@ func0000000000000033:                   # @func0000000000000033
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v11, v10
 	vmv.v.i	v10, 5
@@ -38,3 +42,4 @@ func0000000000000020:                   # @func0000000000000020
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret
+

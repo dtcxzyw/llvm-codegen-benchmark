@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
+	.short	36
+	.short	36
+	.short	36
+	.short	36
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func000000000000082c:                   # @func000000000000082c
+func000000000000082c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm1, %ymm2, %k0
@@ -16,16 +16,17 @@ func000000000000082c:                   # @func000000000000082c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
-	.short	55296                           # 0xd800
+	.short	55296
+	.short	55296
+	.short	55296
+	.short	55296
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func000000000000042c:                   # @func000000000000042c
+func000000000000042c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm1, %ymm2, %k0
@@ -34,3 +35,4 @@ func000000000000042c:                   # @func000000000000042c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,5 +1,5 @@
-func0000000000001e8c:                   # @func0000000000001e8c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+func0000000000001e8c:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -7,10 +7,11 @@ func0000000000001e8c:                   # @func0000000000001e8c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	25                              # 0x19
-func0000000000000e8c:                   # @func0000000000000e8c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	.quad	25
+func0000000000000e8c:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -18,8 +19,9 @@ func0000000000000e8c:                   # @func0000000000000e8c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000001d81:                   # @func0000000000001d81
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func0000000000001d81:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -27,8 +29,9 @@ func0000000000001d81:                   # @func0000000000001d81
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000d81:                   # @func0000000000000d81
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func0000000000000d81:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -36,10 +39,11 @@ func0000000000000d81:                   # @func0000000000000d81
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	2                               # 0x2
-func0000000000000d84:                   # @func0000000000000d84
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	.quad	2
+func0000000000000d84:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -47,8 +51,9 @@ func0000000000000d84:                   # @func0000000000000d84
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000014cc:                   # @func00000000000014cc
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func00000000000014cc:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -56,8 +61,9 @@ func00000000000014cc:                   # @func00000000000014cc
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000e81:                   # @func0000000000000e81
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func0000000000000e81:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -65,8 +71,9 @@ func0000000000000e81:                   # @func0000000000000e81
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000001d8c:                   # @func0000000000001d8c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func0000000000001d8c:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -74,3 +81,4 @@ func0000000000001d8c:                   # @func0000000000001d8c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

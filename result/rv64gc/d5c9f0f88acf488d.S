@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a2, a1
 	sext.w	a1, a0
 	beqz	a2, .LBB0_2
@@ -10,11 +10,12 @@ func0000000000000021:                   # @func0000000000000021
 	li	a2, 421
 	li	a0, 456
 	beqz	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a0, a2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	sext.w	a2, a1
 	li	a3, 1853
 	sext.w	a1, a0
@@ -29,11 +30,12 @@ func0000000000000034:                   # @func0000000000000034
 	li	a0, 12
 	li	a3, 2
 	bltu	a1, a3, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	mv	a0, a2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a2, a1
 	sext.w	a1, a0
 	beqz	a2, .LBB2_2
@@ -45,11 +47,12 @@ func0000000000000181:                   # @func0000000000000181
 	li	a0, 1
 	li	a2, 9
 	beqz	a1, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	mv	a0, a2
-.LBB2_4:                                # %entry
+.LBB2_4:
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.w	a2, a1
 	sext.w	a1, a0
 	beqz	a2, .LBB3_2
@@ -61,11 +64,12 @@ func000000000000002a:                   # @func000000000000002a
 	li	a2, 83
 	li	a0, 78
 	bltz	a1, .LBB3_4
-.LBB3_3:                                # %entry
+.LBB3_3:
 	mv	a0, a2
-.LBB3_4:                                # %entry
+.LBB3_4:
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	li	a3, 160
@@ -78,7 +82,8 @@ func0000000000000318:                   # @func0000000000000318
 	neg	a0, a0
 	andi	a0, a0, -34
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	sext.w	a3, a1
 	li	a1, 7
 	sext.w	a2, a0
@@ -92,7 +97,8 @@ func0000000000000084:                   # @func0000000000000084
 	li	a0, 8
 	li	a3, 4
 	bltu	a2, a3, .LBB5_4
-.LBB5_3:                                # %entry
+.LBB5_3:
 	mv	a0, a1
-.LBB5_4:                                # %entry
+.LBB5_4:
 	ret
+

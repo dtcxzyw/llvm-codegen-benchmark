@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
-	.byte	51                              # 0x33
+	.byte	51
+	.byte	51
+	.byte	51
+	.byte	51
+	.byte	51
+	.byte	51
+	.byte	51
+	.byte	51
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,8 +16,8 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	1                               # 0x1
-func0000000000000188:                   # @func0000000000000188
+	.long	1
+func0000000000000188:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k1
@@ -26,7 +26,8 @@ func0000000000000188:                   # @func0000000000000188
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmb	%xmm2, %xmm2, %k1
@@ -35,15 +36,16 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
-	.byte	221                             # 0xdd
+	.byte	221
+	.byte	221
+	.byte	221
+	.byte	221
+	.byte	221
+	.byte	221
+	.byte	221
+	.byte	221
 	.zero	1
 	.zero	1
 	.zero	1
@@ -53,8 +55,8 @@ func000000000000018c:                   # @func000000000000018c
 	.zero	1
 	.zero	1
 .LCPI2_1:
-	.long	4294967294                      # 0xfffffffe
-func000000000000010c:                   # @func000000000000010c
+	.long	4294967294
+func000000000000010c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpnleub	.LCPI2_0(%rip), %xmm2, %k1
@@ -63,3 +65,4 @@ func000000000000010c:                   # @func000000000000010c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

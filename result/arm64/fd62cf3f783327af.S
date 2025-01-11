@@ -1,8 +1,7 @@
-func0000000000000043:                   // @func0000000000000043
-// %bb.0:                               // %entry
+func0000000000000043:
 	fadd	s0, s0, s1
 	fmov	s1, #1.00000000
-	mov	w8, #44774                      // =0xaee6
+	mov	w8, #44774
 	movk	w8, #15653, lsl #16
 	fcmp	s0, s1
 	fcsel	s0, s1, s0, gt
@@ -12,12 +11,11 @@ func0000000000000043:                   // @func0000000000000043
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	fadd	s0, s0, s1
 	fmov	s1, #1.00000000
-	mov	w8, #52429                      // =0xcccd
+	mov	w8, #52429
 	movk	w8, #15692, lsl #16
 	fcmp	s0, s1
 	fcsel	s0, s1, s0, gt
@@ -26,9 +24,8 @@ func0000000000000044:                   // @func0000000000000044
 	cset	w8, gt
 	bic	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	fadd	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
@@ -38,9 +35,8 @@ func000000000000004a:                   // @func000000000000004a
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+
+func0000000000000042:
 	fadd	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
@@ -50,4 +46,4 @@ func0000000000000042:                   // @func0000000000000042
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

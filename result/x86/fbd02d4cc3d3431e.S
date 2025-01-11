@@ -1,4 +1,4 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000141:
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	$2, %eax
 	setge	%cl
@@ -6,16 +6,19 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000014c4:                   # @func00000000000014c4
+
+func00000000000014c4:
 	leal	-272(%rdx,%rsi), %eax
 	cmpl	$17, %eax
 	setl	%cl
-	cmpl	$286, %edi                      # imm = 0x11E
+	cmpl	$286, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func00000000000010c6:                   # @func00000000000010c6
+
+func00000000000010c6:
 	leal	-1(%rdx,%rsi), %eax
 	orl	%edi, %eax
 	shrl	$31, %eax
 	retq
+

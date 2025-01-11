@@ -1,4 +1,4 @@
-func0000000000000040:                   # @func0000000000000040
+func0000000000000040:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -6,7 +6,8 @@ func0000000000000040:                   # @func0000000000000040
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
@@ -22,25 +24,28 @@ func0000000000000070:                   # @func0000000000000070
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	4                               # 0x4
-func00000000000000d0:                   # @func00000000000000d0
+	.long	4
+func00000000000000d0:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+
 .LCPI4_0:
-	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+	.long	2
+func0000000000000021:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func0000000000000045:                   # @func0000000000000045
+
+func0000000000000045:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -48,7 +53,8 @@ func0000000000000045:                   # @func0000000000000045
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -56,3 +62,4 @@ func00000000000000f0:                   # @func00000000000000f0
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+

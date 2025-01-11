@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func00000000000000cc:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setl	%cl
@@ -6,7 +6,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setg	%cl
@@ -14,7 +15,8 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setb	%cl
@@ -22,7 +24,8 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setg	%cl
@@ -30,7 +33,8 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setne	%cl
@@ -38,7 +42,8 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	movslq	%edx, %rax
 	cmpq	%rax, %rsi
 	setne	%cl
@@ -46,3 +51,4 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	andb	%cl, %al
 	retq
+

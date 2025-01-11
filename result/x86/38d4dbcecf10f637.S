@@ -1,4 +1,4 @@
-func0000000000000821:                   # @func0000000000000821
+func0000000000000821:
 	subq	$1, %rdi
 	setb	%cl
 	shlq	$5, %rdi
@@ -6,7 +6,8 @@ func0000000000000821:                   # @func0000000000000821
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	subq	$1, %rdi
 	setb	%cl
 	shlq	$4, %rdi
@@ -14,3 +15,4 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	orb	%cl, %al
 	retq
+

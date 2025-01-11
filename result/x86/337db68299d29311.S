@@ -1,5 +1,6 @@
-func0000000000000002:                   # @func0000000000000002
-	cmpl	$-16777216, %esi                # imm = 0xFF000000
+func0000000000000002:
+	cmpl	$-16777216, %esi
 	setae	%al
 	orb	%dil, %al
 	retq
+

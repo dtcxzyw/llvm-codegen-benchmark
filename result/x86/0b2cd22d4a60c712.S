@@ -1,21 +1,23 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	orl	%esi, %edi
 	xorl	%eax, %eax
-	cmpl	$804389138, %edi                # imm = 0x2FF20112
+	cmpl	$804389138, %edi
 	sete	%al
-	cmpl	$-804389139, %edi               # imm = 0xD00DFEED
+	cmpl	$-804389139, %edi
 	leal	-9(%rax,%rax,8), %ecx
 	movl	$-7, %eax
 	cmovnel	%ecx, %eax
 	retq
-func00000000000002aa:                   # @func00000000000002aa
+
+func00000000000002aa:
 	orl	%esi, %edi
 	xorl	%ecx, %ecx
-	cmpl	$1240, %edi                     # imm = 0x4D8
+	cmpl	$1240, %edi
 	setge	%cl
 	shll	$10, %ecx
 	orl	$107, %ecx
-	cmpl	$33900, %edi                    # imm = 0x846C
-	movl	$32768, %eax                    # imm = 0x8000
+	cmpl	$33900, %edi
+	movl	$32768, %eax
 	cmovll	%ecx, %eax
 	retq
+

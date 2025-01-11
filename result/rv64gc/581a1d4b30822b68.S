@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	addiw	a1, a0, -1
 	li	a0, 32
 	li	a2, 32
@@ -34,10 +34,11 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a2, a1, 24
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	sub	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	addiw	a0, a0, -2
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -73,7 +74,8 @@ func000000000000000f:                   # @func000000000000000f
 	li	a1, 32
 	sub	a0, a1, a0
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -109,7 +111,8 @@ func000000000000002f:                   # @func000000000000002f
 	li	a1, 32
 	sub	a0, a1, a0
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	addiw	a1, a0, -1
 	li	a0, 32
 	li	a2, 32
@@ -145,10 +148,11 @@ func0000000000000017:                   # @func0000000000000017
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a2, a1, 24
-.LBB3_2:                                # %cond.end
+.LBB3_2:
 	sub	a0, a0, a2
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -184,7 +188,8 @@ func000000000000001f:                   # @func000000000000001f
 	li	a1, 32
 	sub	a0, a1, a0
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	addiw	a0, a0, -6
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -220,3 +225,4 @@ func000000000000002b:                   # @func000000000000002b
 	li	a1, 30
 	sub	a0, a1, a0
 	ret
+

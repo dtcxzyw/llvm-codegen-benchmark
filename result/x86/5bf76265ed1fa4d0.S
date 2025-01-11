@@ -1,4 +1,4 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000211:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -8,3 +8,4 @@ func0000000000000211:                   # @func0000000000000211
 	seta	%cl
 	subl	%ecx, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	xorl	%eax, %eax
 	cmpb	$16, %dl
 	cmovael	%esi, %eax
@@ -6,3 +6,4 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	%eax, %edi
 	setb	%al
 	retq
+

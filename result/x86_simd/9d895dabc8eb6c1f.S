@@ -1,46 +1,46 @@
 .LCPI0_0:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
 .LCPI0_1:
-	.long	65024                           # 0xfe00
+	.long	65024
 .LCPI0_2:
-	.long	256                             # 0x100
+	.long	256
 .LCPI0_3:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-func0000000000000084:                   # @func0000000000000084
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+func0000000000000084:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm1, %ymm0
@@ -51,9 +51,10 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294967103                      # 0xffffff3f
-func0000000000000604:                   # @func0000000000000604
+	.long	4294967103
+func0000000000000604:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
@@ -63,13 +64,14 @@ func0000000000000604:                   # @func0000000000000604
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	4294967264                      # 0xffffffe0
+	.long	4294967264
 .LCPI2_1:
-	.long	96                              # 0x60
+	.long	96
 .LCPI2_2:
-	.long	32                              # 0x20
-func00000000000000d0:                   # @func00000000000000d0
+	.long	32
+func00000000000000d0:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
@@ -80,49 +82,50 @@ func00000000000000d0:                   # @func00000000000000d0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 .LCPI3_1:
-	.long	9984                            # 0x2700
+	.long	9984
 .LCPI3_2:
-	.long	6144                            # 0x1800
+	.long	6144
 .LCPI3_3:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func0000000000000090:                   # @func0000000000000090
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+func0000000000000090:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI3_3(%rip){1to8}, %ymm1, %ymm0
@@ -133,3 +136,4 @@ func0000000000000090:                   # @func0000000000000090
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

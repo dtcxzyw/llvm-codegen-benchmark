@@ -1,80 +1,71 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	orr	w9, w0, w1
-	mov	w8, #331                        // =0x14b
+	mov	w8, #331
 	cmp	w9, #0
-	mov	w9, #91                         // =0x5b
+	mov	w9, #91
 	csel	w0, w9, w8, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	w8, #274                        // =0x112
+
+func0000000000000021:
+	mov	w8, #274
 	orr	w9, w0, w1
 	movk	w8, #12274, lsl #16
 	cmp	w9, w8
-	mov	w8, #-9                         // =0xfffffff7
+	mov	w8, #-9
 	csel	w0, wzr, w8, eq
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
-	mov	w8, #33900                      // =0x846c
+
+func0000000000000034:
+	mov	w8, #33900
 	orr	w9, w0, w1
 	cmp	w9, w8
-	mov	w8, #32768                      // =0x8000
-	mov	w9, #1131                       // =0x46b
+	mov	w8, #32768
+	mov	w9, #1131
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	w8, #33900                      // =0x846c
+
+func0000000000000024:
+	mov	w8, #33900
 	orr	w9, w0, w1
 	cmp	w9, w8
-	mov	w8, #32768                      // =0x8000
-	mov	w9, #1131                       // =0x46b
+	mov	w8, #32768
+	mov	w9, #1131
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	orr	w9, w0, w1
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	cmp	w9, #127
 	cinc	w0, w8, hi
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #-48                        // =0xffffffd0
+
+func0000000000000006:
+	mov	w8, #-48
 	orr	w9, w0, w1
 	and	w0, w8, w9, asr #31
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	orr	w9, w0, w1
-	mov	w8, #107                        // =0x6b
+	mov	w8, #107
 	cmp	w9, #1239
-	mov	w9, #1131                       // =0x46b
+	mov	w9, #1131
 	csel	w0, w9, w8, gt
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
+
+func0000000000000038:
 	orr	w9, w0, w1
-	mov	w8, #65472                      // =0xffc0
+	mov	w8, #65472
 	cmp	w9, #3121
-	mov	w9, #8388352                    // =0x7fff00
+	mov	w9, #8388352
 	csel	w0, w9, w8, hi
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	orr	w9, w0, w1
-	mov	w8, #10                         // =0xa
+	mov	w8, #10
 	cmp	w9, #0
 	cinc	w0, w8, eq
 	ret
-                                        // -- End function
+

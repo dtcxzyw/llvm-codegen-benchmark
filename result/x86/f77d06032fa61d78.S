@@ -1,6 +1,6 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movslq	%edi, %rax
-	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -9,9 +9,10 @@ func0000000000000003:                   # @func0000000000000003
 	negl	%ecx
 	leal	2(%rax,%rcx), %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movslq	%edi, %rax
-	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -20,3 +21,4 @@ func0000000000000002:                   # @func0000000000000002
 	negl	%ecx
 	leal	1(%rax,%rcx), %eax
 	retq
+

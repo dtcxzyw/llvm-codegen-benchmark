@@ -1,9 +1,9 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	movq	%rdx, %rcx
 	orq	%rsi, %rcx
-	movabsq	$2549297995355413924, %rsi      # imm = 0x2360ED051FC65DA4
+	movabsq	$2549297995355413924, %rsi
 	imulq	%rdi, %rsi
-	movabsq	$4865540595714422341, %r8       # imm = 0x4385DF649FCCF645
+	movabsq	$4865540595714422341, %r8
 	movq	%rdi, %rdx
 	mulxq	%r8, %rax, %rdx
 	addq	%rsi, %rdx
@@ -11,13 +11,15 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdx, %rcx
 	movq	%rcx, %rdx
 	retq
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	movq	%rdx, %rcx
 	orq	%rsi, %rcx
-	movabsq	$1844674407370955161, %rsi      # imm = 0x1999999999999999
+	movabsq	$1844674407370955161, %rsi
 	movq	%rdi, %rdx
 	mulxq	%rsi, %rax, %rdx
 	imulq	%rsi, %rcx
 	addq	%rdx, %rcx
 	movq	%rcx, %rdx
 	retq
+

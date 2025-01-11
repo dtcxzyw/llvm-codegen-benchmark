@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	andb	$1, %dil
 	imull	%edx, %esi
 	leaq	(,%rsi,4), %rcx
@@ -7,7 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andb	$1, %dil
 	imull	%edx, %esi
 	leaq	(,%rsi,4), %rcx
@@ -16,7 +17,8 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	andb	$1, %dil
 	imull	%edx, %esi
 	leaq	(,%rsi,4), %rcx
@@ -25,3 +27,4 @@ func000000000000000b:                   # @func000000000000000b
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

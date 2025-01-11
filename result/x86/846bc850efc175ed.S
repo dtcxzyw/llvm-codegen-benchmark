@@ -1,7 +1,8 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	subl	%edx, %esi
-	imulq	$1374389535, %rsi, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rsi, %rax
 	shrq	$39, %rax
 	addl	%edi, %eax
-	imull	$400, %eax, %eax                # imm = 0x190
+	imull	$400, %eax, %eax
 	retq
+

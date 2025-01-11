@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -35,5 +35,6 @@ func000000000000000e:                   # @func000000000000000e
 	li	a1, 8
 	bltu	a0, a1, .LBB0_2
 	li	a0, 8
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

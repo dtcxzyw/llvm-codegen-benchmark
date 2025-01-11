@@ -1,20 +1,18 @@
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+func0000000000000013:
 	and	w8, w1, #0xffff
-	mov	w9, #24                         // =0x18
+	mov	w9, #24
 	cmp	w8, w2, uxth
-	mov	w8, #16                         // =0x10
+	mov	w8, #16
 	csel	x8, x9, x8, lo
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	and	w8, w1, #0xffff
-	mov	w9, #16                         // =0x10
+	mov	w9, #16
 	cmp	w8, w2, uxth
-	mov	w8, #24                         // =0x18
+	mov	w8, #24
 	csel	x8, x9, x8, hi
 	add	x0, x0, x8
 	ret
-                                        // -- End function
+

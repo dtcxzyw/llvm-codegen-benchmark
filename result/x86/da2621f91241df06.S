@@ -1,10 +1,12 @@
-func0000000000000028:                   # @func0000000000000028
-	imull	$168822685, %edi, %eax          # imm = 0xA10079D
+func0000000000000028:
+	imull	$168822685, %edi, %eax
 	addl	%esi, %eax
-	andl	$268435455, %eax                # imm = 0xFFFFFFF
+	andl	$268435455, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	(%rdi,%rdi,4), %eax
 	addl	%esi, %eax
-	andl	$67108863, %eax                 # imm = 0x3FFFFFF
+	andl	$67108863, %eax
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+func0000000000000009:
 	sdiv	w8, w0, w1
 	adds	w9, w8, #3
 	add	w8, w8, #6
@@ -7,4 +6,4 @@ func0000000000000009:                   // @func0000000000000009
 	lsl	w8, w8, #10
 	and	w0, w8, #0xfffff000
 	ret
-                                        // -- End function
+

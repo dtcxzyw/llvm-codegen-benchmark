@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	movq	%rdx, %r10
 	shrdq	$32, %r9, %r8
 	shrq	$32, %r9
@@ -12,7 +12,8 @@ func000000000000000a:                   # @func000000000000000a
 	adcq	%r9, %r10
 	movq	%r10, %rdx
 	retq
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rax, %rdx
 	addq	%r9, %rdx
@@ -20,7 +21,8 @@ func0000000000000012:                   # @func0000000000000012
 	addq	%rsi, %rax
 	adcq	%rcx, %rdx
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rax, %rdx
 	addq	%r9, %rdx
@@ -28,3 +30,4 @@ func000000000000001b:                   # @func000000000000001b
 	addq	%rsi, %rax
 	adcq	%rcx, %rdx
 	retq
+

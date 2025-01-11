@@ -1,12 +1,13 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000104:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
 	cmovbq	%rsi, %rax
 	addl	%edi, %eax
-	cmpl	$4096, %eax                     # imm = 0x1000
+	cmpl	$4096, %eax
 	setb	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
 	cmovbq	%rsi, %rax
@@ -14,3 +15,4 @@ func0000000000000108:                   # @func0000000000000108
 	cmpl	$4, %eax
 	setae	%al
 	retq
+

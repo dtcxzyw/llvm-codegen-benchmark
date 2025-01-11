@@ -1,6 +1,7 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	movq	%rdi, %rax
 	cmpl	%edx, %esi
 	cmovbl	%esi, %edx
 	subq	%rdx, %rax
 	retq
+

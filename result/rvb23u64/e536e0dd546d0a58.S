@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 2
@@ -7,7 +7,8 @@ func0000000000000061:                   # @func0000000000000061
 	sh2add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 292
@@ -17,7 +18,8 @@ func0000000000000074:                   # @func0000000000000074
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 147712
@@ -27,7 +29,8 @@ func0000000000000041:                   # @func0000000000000041
 	or	a0, a0, a1
 	bseti	a0, a0, 25
 	ret
-func00000000000002a1:                   # @func00000000000002a1
+
+func00000000000002a1:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 131072
@@ -38,7 +41,8 @@ func00000000000002a1:                   # @func00000000000002a1
 	or	a0, a0, a1
 	bseti	a0, a0, 27
 	ret
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	sext.w	a1, a1
 	lui	a2, 128
 	addiw	a2, a2, -2048
@@ -52,7 +56,8 @@ func0000000000000066:                   # @func0000000000000066
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000134:                   # @func0000000000000134
+
+func0000000000000134:
 	sext.w	a0, a0
 	srliw	a1, a1, 16
 	sltiu	a0, a0, 256
@@ -61,7 +66,8 @@ func0000000000000134:                   # @func0000000000000134
 	slli	a1, a1, 4
 	sh3add	a0, a0, a1
 	ret
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a0, a0
@@ -70,7 +76,8 @@ func0000000000000321:                   # @func0000000000000321
 	slli	a0, a0, 9
 	or	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -78,3 +85,4 @@ func000000000000006c:                   # @func000000000000006c
 	slli	a0, a0, 3
 	sh1add	a0, a1, a0
 	ret
+

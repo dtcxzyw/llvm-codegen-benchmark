@@ -1,7 +1,7 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	-24(,%rax,8), %rax
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	movq	%rax, %rdx
 	mulxq	%rcx, %rcx, %rcx
 	shrq	%rcx
@@ -9,10 +9,11 @@ func000000000000000d:                   # @func000000000000000d
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	-24(,%rax,8), %rax
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	movq	%rax, %rdx
 	mulxq	%rcx, %rcx, %rcx
 	shrq	%rcx
@@ -20,10 +21,11 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	-24(,%rax,8), %rax
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	movq	%rax, %rdx
 	mulxq	%rcx, %rcx, %rcx
 	shrq	%rcx
@@ -31,10 +33,11 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	-24(,%rax,8), %rax
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	movq	%rax, %rdx
 	mulxq	%rcx, %rcx, %rcx
 	shrq	%rcx
@@ -42,3 +45,4 @@ func0000000000000005:                   # @func0000000000000005
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rax
 	retq
+

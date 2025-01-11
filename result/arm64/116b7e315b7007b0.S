@@ -1,5 +1,4 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+func000000000000001a:
 	fmov	s2, #1.00000000
 	fcmp	s1, s2
 	cset	w8, pl
@@ -7,9 +6,8 @@ func000000000000001a:                   // @func000000000000001a
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmov	s2, #1.00000000
 	fcmp	s1, s2
 	cset	w8, gt
@@ -17,18 +15,16 @@ func0000000000000008:                   // @func0000000000000008
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fcmp	s1, #0.0
 	cset	w8, mi
 	orr	w8, w8, w0
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	fmov	s2, #-1.00000000
 	fcmp	s1, s2
 	cset	w8, eq
@@ -36,10 +32,9 @@ func0000000000000010:                   // @func0000000000000010
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	w8, #1132396544                 // =0x437f0000
+
+func000000000000000a:
+	mov	w8, #1132396544
 	fmov	s2, w8
 	fcmp	s1, s2
 	cset	w8, hi
@@ -47,13 +42,12 @@ func000000000000000a:                   // @func000000000000000a
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	fcmp	s1, #0.0
 	cset	w8, lt
 	orr	w8, w8, w0
 	tst	w8, #0x1
 	fcsel	s0, s0, s1, ne
 	ret
-                                        // -- End function
+

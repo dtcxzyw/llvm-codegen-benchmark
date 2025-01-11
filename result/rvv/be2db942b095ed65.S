@@ -1,4 +1,4 @@
-func0000000000000f18:                   # @func0000000000000f18
+func0000000000000f18:
 	lui	a0, 16
 	addiw	a1, a0, -1
 	addiw	a0, a0, -16
@@ -9,3 +9,4 @@ func0000000000000f18:                   # @func0000000000000f18
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
+

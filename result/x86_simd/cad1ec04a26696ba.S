@@ -1,18 +1,20 @@
 .LCPI0_0:
-	.long	32768                           # 0x8000
-func000000000000008c:                   # @func000000000000008c
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+	.long	32768
+func000000000000008c:
+	vpmovzxwd	%xmm2, %ymm2
 	vpcmpltud	%ymm2, %ymm0, %k1
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	7168                            # 0x1c00
-func000000000000068c:                   # @func000000000000068c
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+	.long	7168
+func000000000000068c:
+	vpmovzxwd	%xmm2, %ymm2
 	vpcmpltud	%ymm2, %ymm0, %k1
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

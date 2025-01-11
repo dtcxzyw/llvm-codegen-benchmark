@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	srli	a1, a1, 59
 	srlw	a2, a0, a1
 	negw	a1, a1
@@ -7,3 +7,4 @@ func000000000000000e:                   # @func000000000000000e
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+

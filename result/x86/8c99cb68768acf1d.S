@@ -1,4 +1,4 @@
-func0000000000000304:                   # @func0000000000000304
+func0000000000000304:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi
 	seta	%cl
@@ -7,7 +7,8 @@ func0000000000000304:                   # @func0000000000000304
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000001304:                   # @func0000000000001304
+
+func0000000000001304:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi
 	seta	%cl
@@ -16,7 +17,8 @@ func0000000000001304:                   # @func0000000000001304
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000001144:                   # @func0000000000001144
+
+func0000000000001144:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi
 	setg	%cl
@@ -25,3 +27,4 @@ func0000000000001144:                   # @func0000000000001144
 	setb	%al
 	andb	%cl, %al
 	retq
+

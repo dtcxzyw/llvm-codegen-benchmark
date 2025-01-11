@@ -1,6 +1,7 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vmovd	%xmm0, %eax
-	addl	$-2147483648, %eax              # imm = 0x80000000
+	addl	$-2147483648, %eax
 	testl	%esi, %esi
 	cmovsl	%edi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	setne	%cl
@@ -7,8 +7,9 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000031:
+	movabsq	$-4294967296, %rax
 	xorl	%ecx, %ecx
 	cmpq	%rax, %rsi
 	setb	%cl
@@ -17,8 +18,9 @@ func0000000000000031:                   # @func0000000000000031
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000011:
+	movabsq	$-4294967296, %rax
 	xorl	%ecx, %ecx
 	cmpq	%rax, %rsi
 	setb	%cl
@@ -27,7 +29,8 @@ func0000000000000011:                   # @func0000000000000011
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	xorl	%ecx, %ecx
 	shrq	$32, %rsi
 	setne	%cl
@@ -36,7 +39,8 @@ func0000000000000009:                   # @func0000000000000009
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	xorl	%ecx, %ecx
 	cmpq	$16, %rsi
 	setae	%cl
@@ -45,3 +49,4 @@ func0000000000000029:                   # @func0000000000000029
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

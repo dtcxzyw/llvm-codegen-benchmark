@@ -1,6 +1,7 @@
-func0000000000000005:                   # @func0000000000000005
-	addl	$1023, %edi                     # imm = 0x3FF
-	andl	$-1024, %edi                    # imm = 0xFC00
+func0000000000000005:
+	addl	$1023, %edi
+	andl	$-1024, %edi
 	movslq	%edi, %rax
 	shlq	$2, %rax
 	retq
+

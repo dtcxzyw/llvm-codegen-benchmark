@@ -1,5 +1,4 @@
-func0000000000000484:                   // @func0000000000000484
-// %bb.0:                               // %entry
+func0000000000000484:
 	sub	w8, w2, #6
 	cmp	w8, #5
 	cset	w8, lo
@@ -9,9 +8,8 @@ func0000000000000484:                   // @func0000000000000484
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000058c:                   // @func000000000000058c
-// %bb.0:                               // %entry
+
+func000000000000058c:
 	cmp	w2, #1
 	cset	w8, ne
 	cmp	w1, #0
@@ -20,11 +18,10 @@ func000000000000058c:                   // @func000000000000058c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000094c:                   // @func000000000000094c
-// %bb.0:                               // %entry
-	mov	w8, #16777216                   // =0x1000000
-	mov	w9, #33554431                   // =0x1ffffff
+
+func000000000000094c:
+	mov	w8, #16777216
+	mov	w9, #33554431
 	add	w8, w2, w8
 	cmp	w8, w9
 	cset	w8, gt
@@ -34,12 +31,11 @@ func000000000000094c:                   // @func000000000000094c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	sub	w8, w2, #100
 	cmn	w8, #99
-	mov	w8, #-9999                      // =0xffffd8f1
+	mov	w8, #-9999
 	cset	w9, lo
 	cmp	w1, w8
 	orr	w8, w0, w9
@@ -47,9 +43,8 @@ func0000000000000084:                   // @func0000000000000084
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	sub	w8, w2, #257
 	cmn	w8, #256
 	cset	w8, lo
@@ -59,10 +54,9 @@ func0000000000000088:                   // @func0000000000000088
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
-	mov	w8, #6144                       // =0x1800
+
+func0000000000000108:
+	mov	w8, #6144
 	lsr	w10, w1, #19
 	movk	w8, #65532, lsl #16
 	add	w9, w2, w8
@@ -75,4 +69,4 @@ func0000000000000108:                   // @func0000000000000108
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

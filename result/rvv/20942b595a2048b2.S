@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
@@ -11,7 +11,8 @@ func000000000000001b:                   # @func000000000000001b
 	zext.w	a0, a0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vand.vi	v8, v10, -8
@@ -20,7 +21,8 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf2	v10, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 16
@@ -31,3 +33,4 @@ func000000000000001a:                   # @func000000000000001a
 	vzext.vf2	v10, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a0, 1048568
 	addi	a0, a0, 132
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -10,3 +10,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmsleu.vi	v11, v8, 15
 	vmand.mm	v0, v11, v10
 	ret
+

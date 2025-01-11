@@ -1,14 +1,15 @@
-func000000000000314c:                   # @func000000000000314c
+func000000000000314c:
 	testl	%edx, %edx
 	setne	%al
-	cmpl	$769, %esi                      # imm = 0x301
+	cmpl	$769, %esi
 	setge	%cl
 	andb	%al, %cl
 	testl	%edi, %edi
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -18,7 +19,8 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000588:                   # @func0000000000000588
+
+func0000000000000588:
 	testl	%edx, %edx
 	sete	%al
 	testl	%esi, %esi
@@ -28,24 +30,27 @@ func0000000000000588:                   # @func0000000000000588
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	orl	%edx, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000003021:                   # @func0000000000003021
+
+func0000000000003021:
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
 	sete	%cl
 	andb	%al, %cl
-	cmpl	$2000, %edi                     # imm = 0x7D0
+	cmpl	$2000, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000003181:                   # @func0000000000003181
+
+func0000000000003181:
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -55,7 +60,8 @@ func0000000000003181:                   # @func0000000000003181
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000054c:                   # @func000000000000054c
+
+func000000000000054c:
 	testl	%edx, %edx
 	sete	%al
 	testl	%esi, %esi
@@ -65,7 +71,8 @@ func000000000000054c:                   # @func000000000000054c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000302c:                   # @func000000000000302c
+
+func000000000000302c:
 	cmpl	$6, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -75,7 +82,8 @@ func000000000000302c:                   # @func000000000000302c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	testl	%edx, %edx
 	sete	%al
 	testl	%esi, %esi
@@ -85,3 +93,4 @@ func0000000000000581:                   # @func0000000000000581
 	sete	%al
 	orb	%cl, %al
 	retq
+

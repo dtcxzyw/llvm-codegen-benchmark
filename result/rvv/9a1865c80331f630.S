@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	lui	a0, 14
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
@@ -9,7 +9,8 @@ func0000000000000030:                   # @func0000000000000030
 	vnsrl.wi	v8, v12, 0
 	vmerge.vim	v8, v8, -3, v0
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	lui	a0, 14
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
@@ -20,3 +21,4 @@ func0000000000000033:                   # @func0000000000000033
 	vnsrl.wi	v8, v12, 0
 	vmerge.vim	v8, v8, -3, v0
 	ret
+

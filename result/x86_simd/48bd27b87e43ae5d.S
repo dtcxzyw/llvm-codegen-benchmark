@@ -1,4 +1,4 @@
-func0000000000000d87:                   # @func0000000000000d87
+func0000000000000d87:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpcmpled	%xmm2, %xmm0, %k1
@@ -6,3 +6,4 @@ func0000000000000d87:                   # @func0000000000000d87
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

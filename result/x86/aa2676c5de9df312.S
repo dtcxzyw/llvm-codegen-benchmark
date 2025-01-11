@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	cmpq	$1, %rsi
 	movq	%rsi, %rax
 	adcq	$0, %rax
@@ -6,7 +6,8 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	cmpq	$1, %rsi
 	movq	%rsi, %rax
 	adcq	$0, %rax
@@ -15,7 +16,8 @@ func0000000000000041:                   # @func0000000000000041
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	cmpq	$1, %rsi
 	movq	%rsi, %rax
 	adcq	$0, %rax
@@ -24,7 +26,8 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	cmpq	$1, %rsi
 	movq	%rsi, %rax
 	adcq	$0, %rax
@@ -32,3 +35,4 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
+

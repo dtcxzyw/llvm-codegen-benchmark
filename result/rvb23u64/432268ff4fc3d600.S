@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	srli	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
@@ -9,7 +9,8 @@ func000000000000001e:                   # @func000000000000001e
 	sh2add	a1, a2, a2
 	sh3add	a0, a1, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	srli	a2, a2, 4
 	lui	a3, 838861
 	addiw	a3, a3, -819
@@ -21,9 +22,10 @@ func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func0000000000000016:                   # @func0000000000000016
+	.quad	5675921253449092805
+func0000000000000016:
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
 	srli	a2, a2, 5
@@ -33,7 +35,8 @@ func0000000000000016:                   # @func0000000000000016
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	srli	a2, a2, 2
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -44,7 +47,8 @@ func000000000000001f:                   # @func000000000000001f
 	sh1add	a1, a2, a2
 	sh3add	a0, a1, a0
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	srli	a2, a2, 3
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -54,14 +58,16 @@ func000000000000001b:                   # @func000000000000001b
 	sub	a2, a2, a1
 	sh3add	a0, a2, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	srli	a3, a2, 63
 	add	a2, a2, a3
 	srli	a2, a2, 1
 	sub	a2, a2, a1
 	sh3add	a0, a2, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	srli	a2, a2, 3
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -72,7 +78,8 @@ func000000000000001c:                   # @func000000000000001c
 	sh1add	a1, a2, a2
 	sh3add	a0, a1, a0
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	srli	a2, a2, 4
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -84,7 +91,8 @@ func0000000000000012:                   # @func0000000000000012
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	srli	a2, a2, 4
 	lui	a3, 699051
 	addiw	a3, a3, -1365
@@ -96,7 +104,8 @@ func0000000000000013:                   # @func0000000000000013
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	srai	a2, a2, 3
 	lui	a3, 838861
 	addiw	a3, a3, -819
@@ -106,3 +115,4 @@ func000000000000001a:                   # @func000000000000001a
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

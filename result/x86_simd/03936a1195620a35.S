@@ -1,4 +1,4 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000184:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vptestmq	%ymm1, %ymm1, %k1 {%k1}
@@ -6,7 +6,8 @@ func0000000000000184:                   # @func0000000000000184
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -15,9 +16,10 @@ func0000000000000186:                   # @func0000000000000186
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	2                               # 0x2
-func0000000000000306:                   # @func0000000000000306
+	.quad	2
+func0000000000000306:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpcmpgtq	%ymm1, %ymm2, %k1 {%k1}
@@ -25,3 +27,4 @@ func0000000000000306:                   # @func0000000000000306
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

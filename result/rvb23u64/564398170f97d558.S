@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	andi	a1, a1, 1
 	zext.h	a2, a2
 	li	a3, 1
@@ -9,3 +9,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	slti	a0, a0, 8
 	xori	a0, a0, 1
 	ret
+

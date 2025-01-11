@@ -1,98 +1,102 @@
 .LCPI0_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI0_1:
-	.long	631305                          # 0x9a209
+	.long	631305
 .LCPI0_2:
-	.long	4200271546                      # 0xfa5b0eba
+	.long	4200271546
 .LCPI0_3:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func0000000000000005:                   # @func0000000000000005
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+func0000000000000005:
 	vpsrld	$23, %ymm0, %ymm0
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm0
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	3                               # 0x3
+	.long	3
 .LCPI1_1:
-	.long	257                             # 0x101
-func000000000000000f:                   # @func000000000000000f
+	.long	257
+func000000000000000f:
 	vpsrld	$12, %ymm0, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm1
-	vpbroadcastd	.LCPI1_1(%rip), %ymm0   # ymm0 = [257,257,257,257,257,257,257,257]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm0
 	vpdpwssd	%ymm0, %ymm1, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	31                              # 0x1f
+	.long	31
 .LCPI2_1:
-	.long	4294967152                      # 0xffffff70
+	.long	4294967152
 .LCPI2_3:
-	.short	144                             # 0x90
-	.short	0                               # 0x0
+	.short	144
+	.short	0
 .LCPI2_2:
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-	.short	144                             # 0x90
-	.short	0                               # 0x0
-func0000000000000007:                   # @func0000000000000007
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+	.short	144
+	.short	0
+func0000000000000007:
 	vpsrld	$16, %ymm0, %ymm0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
-	vpbroadcastd	.LCPI2_1(%rip), %ymm0   # ymm0 = [4294967152,4294967152,4294967152,4294967152,4294967152,4294967152,4294967152,4294967152]
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0
 	vpdpwssd	.LCPI2_3(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	2040                            # 0x7f8
+	.long	2040
 .LCPI3_1:
-	.long	4294967280                      # 0xfffffff0
-func000000000000000d:                   # @func000000000000000d
+	.long	4294967280
+func000000000000000d:
 	vpsrld	$5, %ymm0, %ymm0
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280]
+	vpbroadcastd	.LCPI3_1(%rip), %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
+

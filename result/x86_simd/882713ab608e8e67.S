@@ -1,14 +1,16 @@
 .LCPI0_0:
-	.long	0x42c80000                      # float 100
-func0000000000000000:                   # @func0000000000000000
+	.long	0x42c80000
+func0000000000000000:
 	vcvtuqq2ps	%ymm0, %xmm0
 	vdivps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x41700000                      # float 15
-func0000000000000001:                   # @func0000000000000001
+	.long	0x41700000
+func0000000000000001:
 	vcvtqq2ps	%ymm0, %xmm0
 	vdivps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+

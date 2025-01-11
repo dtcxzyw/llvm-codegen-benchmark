@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	leal	(%rsi,%rdx), %ecx
 	shrl	$6, %ecx
 	leal	246(%rcx), %eax
@@ -6,3 +6,4 @@ func000000000000001e:                   # @func000000000000001e
 	cmovnel	%ecx, %eax
 	andl	$207, %eax
 	retq
+

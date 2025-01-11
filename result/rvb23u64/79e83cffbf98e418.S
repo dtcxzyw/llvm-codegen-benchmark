@@ -1,4 +1,4 @@
-func00000000000000db:                   # @func00000000000000db
+func00000000000000db:
 	sext.w	a2, a1
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
@@ -10,3 +10,4 @@ func00000000000000db:                   # @func00000000000000db
 	srli	a0, a0, 59
 	addi	a0, a0, 48
 	ret
+

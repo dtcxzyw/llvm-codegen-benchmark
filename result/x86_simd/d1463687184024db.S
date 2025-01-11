@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
 .LCPI0_1:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-func0000000000002842:                   # @func0000000000002842
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+func0000000000002842:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqw	.LCPI0_0(%rip), %ymm0, %k0
@@ -41,41 +41,42 @@ func0000000000002842:                   # @func0000000000002842
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
-	.short	63                              # 0x3f
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
+	.short	63
 .LCPI1_1:
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-	.short	65281                           # 0xff01
-func0000000000002848:                   # @func0000000000002848
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+	.short	65281
+func0000000000002848:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpltuw	.LCPI1_0(%rip), %ymm0, %k0
@@ -84,3 +85,4 @@ func0000000000002848:                   # @func0000000000002848
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

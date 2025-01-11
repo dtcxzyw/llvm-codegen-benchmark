@@ -1,112 +1,97 @@
-func0000000000000180:                   // @func0000000000000180
-// %bb.0:                               // %entry
+func0000000000000180:
 	cmp	x2, #0
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	cmp	x2, #0
 	add	x8, x0, x1
 	cinc	x0, x8, eq
 	ret
-                                        // -- End function
-func000000000000018f:                   // @func000000000000018f
-// %bb.0:                               // %entry
+
+func000000000000018f:
 	cmp	x2, #2
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
+
+func000000000000002f:
 	cmp	x2, #258
 	add	x8, x0, x1
 	cinc	x0, x8, eq
 	ret
-                                        // -- End function
-func00000000000000c5:                   // @func00000000000000c5
-// %bb.0:                               // %entry
+
+func00000000000000c5:
 	cmp	x2, #3
 	add	x8, x0, x1
 	cinc	x0, x8, lt
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	cmp	x2, #0
 	add	x8, x0, x1
 	cinc	x0, x8, eq
 	ret
-                                        // -- End function
-func000000000000014f:                   // @func000000000000014f
-// %bb.0:                               // %entry
-	mov	x8, #-9223372036854775807       // =0x8000000000000001
+
+func000000000000014f:
+	mov	x8, #-9223372036854775807
 	cmp	x2, x8
 	add	x8, x0, x1
 	cinc	x0, x8, gt
 	ret
-                                        // -- End function
-func000000000000030f:                   // @func000000000000030f
-// %bb.0:                               // %entry
+
+func000000000000030f:
 	lsr	x8, x2, #48
 	cmp	x8, #0
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret
-                                        // -- End function
-func0000000000000100:                   // @func0000000000000100
-// %bb.0:                               // %entry
+
+func0000000000000100:
 	cmp	x2, #1
 	add	x8, x0, x1
 	cinc	x0, x8, hi
 	ret
-                                        // -- End function
-func0000000000000307:                   // @func0000000000000307
-// %bb.0:                               // %entry
+
+func0000000000000307:
 	lsr	x8, x2, #54
 	cmp	x8, #0
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret
-                                        // -- End function
-func0000000000000145:                   // @func0000000000000145
-// %bb.0:                               // %entry
-	mov	w8, #16959                      // =0x423f
+
+func0000000000000145:
+	mov	w8, #16959
 	movk	w8, #15, lsl #16
 	cmp	x2, x8
 	add	x8, x0, x1
 	cinc	x0, x8, gt
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	cmp	x2, #0
 	add	x8, x0, x1
 	cinc	x0, x8, eq
 	ret
-                                        // -- End function
-func000000000000008f:                   // @func000000000000008f
-// %bb.0:                               // %entry
-	cmp	x2, #4, lsl #12                 // =16384
+
+func000000000000008f:
+	cmp	x2, #4, lsl #12
 	add	x8, x0, x1
 	cinc	x0, x8, ls
 	ret
-                                        // -- End function
-func0000000000000140:                   // @func0000000000000140
-// %bb.0:                               // %entry
+
+func0000000000000140:
 	mvn	x8, x2
 	add	x9, x0, x1
 	add	x0, x9, x8, lsr #63
 	ret
-                                        // -- End function
-func0000000000000300:                   // @func0000000000000300
-// %bb.0:                               // %entry
-	mov	w8, #51711                      // =0xc9ff
+
+func0000000000000300:
+	mov	w8, #51711
 	movk	w8, #15258, lsl #16
 	cmp	x2, x8
 	add	x8, x0, x1
 	cinc	x0, x8, hi
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 1
 	fli.d	fa5, 0.25
@@ -8,11 +8,12 @@ func0000000000000012:                   # @func0000000000000012
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vv	v0, v8, v12
 	ret
+
 .LCPI1_0:
-	.quad	0x3e80000000000000              # double 1.1920928955078125E-7
+	.quad	0x3e80000000000000
 .LCPI1_1:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000014:                   # @func0000000000000014
+	.quad	0x3cb0000000000000
+func0000000000000014:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
@@ -24,3 +25,4 @@ func0000000000000014:                   # @func0000000000000014
 	vfmerge.vfm	v12, v12, fa4, v0
 	vmflt.vv	v0, v12, v8
 	ret
+

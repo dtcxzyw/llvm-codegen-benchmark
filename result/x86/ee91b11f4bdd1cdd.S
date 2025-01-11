@@ -1,4 +1,4 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -6,7 +6,8 @@ func0000000000000025:                   # @func0000000000000025
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -22,7 +24,8 @@ func0000000000000044:                   # @func0000000000000044
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -30,7 +33,8 @@ func0000000000000020:                   # @func0000000000000020
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000065:                   # @func0000000000000065
+
+func0000000000000065:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -38,7 +42,8 @@ func0000000000000065:                   # @func0000000000000065
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	leaq	2(%rsi), %rax
 	cmpq	%rax, %rdi
 	cmovgq	%rdi, %rax
@@ -46,3 +51,4 @@ func0000000000000040:                   # @func0000000000000040
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
+

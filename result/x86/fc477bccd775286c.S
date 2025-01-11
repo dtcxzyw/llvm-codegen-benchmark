@@ -1,12 +1,13 @@
-func0000000000000620:                   # @func0000000000000620
+func0000000000000620:
 	testb	%dl, %dl
 	setne	%cl
-	cmpl	$-536870912, %esi               # imm = 0xE0000000
+	cmpl	$-536870912, %esi
 	setae	%al
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000604:                   # @func0000000000000604
+
+func0000000000000604:
 	cmpb	$4, %dl
 	setne	%cl
 	testl	%esi, %esi
@@ -14,7 +15,8 @@ func0000000000000604:                   # @func0000000000000604
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	cmpb	$1, %dl
 	sete	%cl
 	cmpl	$8, %esi
@@ -22,7 +24,8 @@ func0000000000000098:                   # @func0000000000000098
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000220:                   # @func0000000000000220
+
+func0000000000000220:
 	cmpb	$-23, %dl
 	setb	%cl
 	cmpl	$4, %esi
@@ -30,7 +33,8 @@ func0000000000000220:                   # @func0000000000000220
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000618:                   # @func0000000000000618
+
+func0000000000000618:
 	cmpb	$17, %dl
 	setne	%cl
 	testl	%esi, %esi
@@ -38,7 +42,8 @@ func0000000000000618:                   # @func0000000000000618
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	testb	%dl, %dl
 	sete	%cl
 	testl	%esi, %esi
@@ -46,15 +51,17 @@ func0000000000000084:                   # @func0000000000000084
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
+
+func0000000000000204:
 	cmpb	$-12, %dl
 	setb	%cl
-	cmpl	$-32768, %esi                   # imm = 0x8000
+	cmpl	$-32768, %esi
 	sete	%al
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
+
+func0000000000000090:
 	testl	%edx, %edx
 	sete	%cl
 	cmpb	$16, %sil
@@ -62,7 +69,8 @@ func0000000000000090:                   # @func0000000000000090
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	cmpl	$192, %edx
 	sete	%cl
 	testb	%sil, %sil
@@ -70,7 +78,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000d0:                   # @func00000000000000d0
+
+func00000000000000d0:
 	testl	%edx, %edx
 	sete	%cl
 	cmpb	$3, %sil
@@ -78,7 +87,8 @@ func00000000000000d0:                   # @func00000000000000d0
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000450:                   # @func0000000000000450
+
+func0000000000000450:
 	cmpb	$22, %dl
 	setae	%cl
 	cmpl	$8, %esi
@@ -86,7 +96,8 @@ func0000000000000450:                   # @func0000000000000450
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000630:                   # @func0000000000000630
+
+func0000000000000630:
 	testl	%edx, %edx
 	setne	%cl
 	cmpb	$27, %sil
@@ -94,7 +105,8 @@ func0000000000000630:                   # @func0000000000000630
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+
+func00000000000000b0:
 	testl	%edx, %edx
 	sete	%cl
 	cmpb	$17, %sil
@@ -102,7 +114,8 @@ func00000000000000b0:                   # @func00000000000000b0
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000230:                   # @func0000000000000230
+
+func0000000000000230:
 	cmpl	$50, %edx
 	setb	%cl
 	testb	%sil, %sil
@@ -110,7 +123,8 @@ func0000000000000230:                   # @func0000000000000230
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000610:                   # @func0000000000000610
+
+func0000000000000610:
 	testb	%dl, %dl
 	setne	%cl
 	cmpl	$50, %esi
@@ -118,7 +132,8 @@ func0000000000000610:                   # @func0000000000000610
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000420:                   # @func0000000000000420
+
+func0000000000000420:
 	cmpl	$12, %edx
 	setae	%cl
 	cmpb	$2, %sil
@@ -126,3 +141,4 @@ func0000000000000420:                   # @func0000000000000420
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
+

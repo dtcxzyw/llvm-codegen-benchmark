@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmand.mm	v9, v0, v9
 	vmsgt.vi	v8, v8, -1
@@ -9,3 +9,4 @@ func0000000000000014:                   # @func0000000000000014
 	bseti	a0, zero, 63
 	vrsub.vx	v8, v8, a0
 	ret
+

@@ -1,5 +1,4 @@
-func000000000000042c:                   // @func000000000000042c
-// %bb.0:                               // %entry
+func000000000000042c:
 	fcmp	d1, d2
 	fcsel	d1, d1, d2, gt
 	fcmp	d1, #0.0
@@ -7,9 +6,8 @@ func000000000000042c:                   // @func000000000000042c
 	fcmp	d0, #0.0
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
-func000000000000044a:                   // @func000000000000044a
-// %bb.0:                               // %entry
+
+func000000000000044a:
 	fcmp	d2, d1
 	fcsel	d1, d1, d2, gt
 	fcmp	d1, #0.0
@@ -17,9 +15,8 @@ func000000000000044a:                   // @func000000000000044a
 	fcmp	d0, #0.0
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
-func0000000000000c44:                   // @func0000000000000c44
-// %bb.0:                               // %entry
+
+func0000000000000c44:
 	fcmp	d1, d2
 	fmov	d3, #1.00000000
 	fcsel	d1, d1, d2, ge
@@ -28,9 +25,8 @@ func0000000000000c44:                   // @func0000000000000c44
 	fcmp	d0, d3
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
-func0000000000000c42:                   // @func0000000000000c42
-// %bb.0:                               // %entry
+
+func0000000000000c42:
 	fcmp	d1, d2
 	fmov	d3, #1.00000000
 	fcsel	d1, d1, d2, ge
@@ -39,4 +35,4 @@ func0000000000000c42:                   // @func0000000000000c42
 	fcmp	d0, d3
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
+

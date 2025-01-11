@@ -1,8 +1,7 @@
-func0000000000000186:                   // @func0000000000000186
-// %bb.0:                               // %entry
+func0000000000000186:
 	sub	x8, x1, x2
 	cmp	x8, #0
 	ccmp	x0, #0, #4, lt
 	cset	w0, ne
 	ret
-                                        // -- End function
+

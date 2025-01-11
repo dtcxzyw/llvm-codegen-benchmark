@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm2, %ecx
 	xorl	%edx, %edx
@@ -23,5 +23,6 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmulld	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

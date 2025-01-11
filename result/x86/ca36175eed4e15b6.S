@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	movabsq	$-7286425919675154467, %rcx     # imm = 0x9AE16A3B2F903FDD
+func0000000000000000:
+	movabsq	$-7286425919675154467, %rcx
 	imulq	%rdx, %rcx
 	movq	%rcx, %rax
 	shrq	$47, %rax
@@ -7,3 +7,4 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	xorq	%rdi, %rax
 	retq
+

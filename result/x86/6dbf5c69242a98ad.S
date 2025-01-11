@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	cmpq	%rdx, %rsi
 	cmovbq	%rsi, %rdx
 	testq	%rdx, %rdx
@@ -7,3 +7,4 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	andb	%cl, %al
 	retq
+

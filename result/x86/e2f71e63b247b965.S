@@ -1,6 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
-	andl	$-272236544, %edx               # imm = 0xEFC60000
+func0000000000000000:
+	andl	$-272236544, %edx
 	xorq	%rsi, %rdi
 	xorq	%rdx, %rdi
 	vcvtusi2ss	%rdi, %xmm0, %xmm0
 	retq
+

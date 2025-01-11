@@ -1,4 +1,4 @@
-func0000000000000f0c:                   # @func0000000000000f0c
+func0000000000000f0c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 16
@@ -8,7 +8,8 @@ func0000000000000f0c:                   # @func0000000000000f0c
 	vmsne.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
 	vmseq.vv	v9, v10, v12
@@ -16,7 +17,8 @@ func0000000000000424:                   # @func0000000000000424
 	vmsleu.vi	v8, v8, -11
 	vmor.mm	v0, v8, v9
 	ret
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
 	li	a0, 23
@@ -25,7 +27,8 @@ func000000000000058c:                   # @func000000000000058c
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
 	vmseq.vv	v9, v10, v12
@@ -33,7 +36,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vi	v8, v8, 1
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000d8c:                   # @func0000000000000d8c
+
+func0000000000000d8c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	li	a0, 40
@@ -43,7 +47,8 @@ func0000000000000d8c:                   # @func0000000000000d8c
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 128
@@ -52,7 +57,8 @@ func0000000000000101:                   # @func0000000000000101
 	vmseq.vi	v8, v8, -2
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000501:                   # @func0000000000000501
+
+func0000000000000501:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	li	a0, 332
@@ -62,3 +68,4 @@ func0000000000000501:                   # @func0000000000000501
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
+

@@ -1,23 +1,26 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sext.w	a0, a0
 	li	a2, -233
 	beq	a0, a2, .LBB0_2
 	li	a1, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	sext.w	a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sext.w	a0, a0
 	sltiu	a0, a0, 3
 	negw	a0, a0
@@ -25,14 +28,17 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a0, a0
 	sgtz	a0, a0
 	negw	a0, a0
@@ -40,7 +46,8 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.w	a0, a0
 	slti	a0, a0, 3
 	addi	a0, a0, -1
@@ -48,3 +55,4 @@ func000000000000002a:                   # @func000000000000002a
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+

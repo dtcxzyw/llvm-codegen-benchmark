@@ -1,21 +1,23 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	andi	a1, a1, 255
 	li	a3, 45
 	bne	a1, a3, .LBB0_2
 	sub	a0, a2, a0
 	addi	a0, a0, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	lui	a1, 262144
 	slt	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a1, a1, 255
 	li	a3, 45
 	bne	a1, a3, .LBB1_2
 	sub	a0, a2, a0
 	addi	a0, a0, 1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	lui	a1, 262144
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
+

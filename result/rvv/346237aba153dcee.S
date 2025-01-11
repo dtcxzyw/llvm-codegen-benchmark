@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	li	a0, -48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
@@ -9,7 +9,8 @@ func000000000000003f:                   # @func000000000000003f
 	vwaddu.wv	v8, v8, v12
 	vwaddu.wv	v8, v8, v11
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	li	a0, -48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
@@ -20,3 +21,4 @@ func000000000000007f:                   # @func000000000000007f
 	vwaddu.wv	v8, v8, v12
 	vwaddu.wv	v8, v8, v11
 	ret
+

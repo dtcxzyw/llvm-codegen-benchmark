@@ -1,5 +1,4 @@
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+func000000000000000f:
 	mov	w8, w4
 	umulh	x9, x2, x8
 	mul	x10, x2, x8
@@ -7,9 +6,8 @@ func000000000000000f:                   // @func000000000000000f
 	adds	x0, x10, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	mov	w8, w4
 	umulh	x9, x2, x8
 	mul	x10, x2, x8
@@ -17,4 +15,4 @@ func000000000000000a:                   // @func000000000000000a
 	adds	x0, x10, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
+

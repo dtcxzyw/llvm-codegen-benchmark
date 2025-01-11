@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000032:                   # @func0000000000000032
-	vbroadcastss	.LCPI0_0(%rip), %xmm2   # xmm2 = [NaN,NaN,NaN,NaN]
+	.long	0x7fffffff
+func0000000000000032:
+	vbroadcastss	.LCPI0_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
 	vandps	%xmm2, %xmm0, %xmm0
 	xorl	%eax, %eax
@@ -9,10 +9,11 @@ func0000000000000032:                   # @func0000000000000032
 	seta	%al
 	orl	$2, %eax
 	retq
+
 .LCPI1_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000034:                   # @func0000000000000034
-	vbroadcastss	.LCPI1_0(%rip), %xmm2   # xmm2 = [NaN,NaN,NaN,NaN]
+	.long	0x7fffffff
+func0000000000000034:
+	vbroadcastss	.LCPI1_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
 	vandps	%xmm2, %xmm0, %xmm0
 	xorl	%eax, %eax
@@ -20,3 +21,4 @@ func0000000000000034:                   # @func0000000000000034
 	seta	%al
 	incl	%eax
 	retq
+

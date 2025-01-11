@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
 	.zero	1
 	.zero	1
 	.zero	1
@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000030e:                   # @func000000000000030e
+func000000000000030e:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2d	%k0, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
@@ -67,3 +67,4 @@ func000000000000030e:                   # @func000000000000030e
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

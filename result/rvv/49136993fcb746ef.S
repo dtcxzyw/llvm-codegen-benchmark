@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -7,3 +7,4 @@ func0000000000000014:                   # @func0000000000000014
 	vnsrl.wx	v10, v8, a0
 	vadd.vi	v8, v10, 3
 	ret
+

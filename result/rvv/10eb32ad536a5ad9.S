@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	li	a0, 1995
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,14 +7,16 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 52
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	vand.vi	v8, v8, 3
 	ret
+
 .LCPI2_0:
-	.quad	9187201950435737470             # 0x7f7f7f7f7f7f7f7e
-func0000000000000002:                   # @func0000000000000002
+	.quad	9187201950435737470
+func0000000000000002:
 	lui	a0, 522232
 	lui	a1, 152146
 	addiw	a0, a0, -129
@@ -30,7 +32,8 @@ func0000000000000002:                   # @func0000000000000002
 	vadd.vx	v8, v8, a0
 	vand.vx	v8, v8, a2
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -38,3 +41,4 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vi	v8, v8, -1
 	vand.vi	v8, v8, -16
 	ret
+

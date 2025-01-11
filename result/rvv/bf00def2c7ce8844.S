@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -8
 	lui	a0, 1032192
@@ -8,7 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a0, 1024
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -8
 	li	a0, -136
@@ -19,3 +20,4 @@ func0000000000000008:                   # @func0000000000000008
 	rori	a0, a0, 4
 	vmsltu.vx	v0, v8, a0
 	ret
+

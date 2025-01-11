@@ -1,4 +1,4 @@
-func0000000000000261:                   # @func0000000000000261
+func0000000000000261:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	incl	%edx
@@ -6,7 +6,8 @@ func0000000000000261:                   # @func0000000000000261
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	incl	%edx
@@ -14,7 +15,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	incl	%edx
@@ -22,7 +24,8 @@ func0000000000000161:                   # @func0000000000000161
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	decl	%edx
@@ -30,7 +33,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	incl	%edx
@@ -38,7 +42,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000361:                   # @func0000000000000361
+
+func0000000000000361:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	incl	%edx
@@ -46,3 +51,4 @@ func0000000000000361:                   # @func0000000000000361
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testw	%dx, %dx
 	sete	%cl
 	andb	%dil, %cl
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	cmpw	$120, %dx
 	setb	%cl
 	andb	%dil, %cl
@@ -14,7 +15,8 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	cmpw	$8, %dx
 	setae	%cl
 	andb	%dil, %cl
@@ -22,7 +24,8 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	testw	%dx, %dx
 	setns	%cl
 	andb	%sil, %cl
@@ -30,7 +33,8 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	cmpw	$58, %dx
 	sete	%cl
 	andb	%dil, %cl
@@ -38,7 +42,8 @@ func0000000000000024:                   # @func0000000000000024
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	testw	%dx, %dx
 	sete	%cl
 	andb	%sil, %cl
@@ -46,16 +51,18 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	movzwl	%dx, %eax
 	cmpl	$128, %eax
 	setb	%cl
-	cmpl	$65536, %esi                    # imm = 0x10000
+	cmpl	$65536, %esi
 	setb	%al
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	testw	%dx, %dx
 	setne	%cl
 	andb	%sil, %cl
@@ -63,7 +70,8 @@ func0000000000000188:                   # @func0000000000000188
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	cmpw	$5, %dx
 	setne	%cl
 	andb	%sil, %cl
@@ -71,3 +79,4 @@ func0000000000000184:                   # @func0000000000000184
 	setb	%al
 	andb	%cl, %al
 	retq
+

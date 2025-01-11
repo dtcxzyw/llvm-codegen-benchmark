@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3c23d70a                      # float 0.00999999977
-func0000000000000000:                   # @func0000000000000000
+	.word	0x3c23d70a
+func0000000000000000:
 	andi	a1, a1, 1
 	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
@@ -16,5 +16,6 @@ func0000000000000000:                   # @func0000000000000000
 .LBB0_3:
 	lui	a0, 784384
 	fmv.w.x	fa0, a0
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
+

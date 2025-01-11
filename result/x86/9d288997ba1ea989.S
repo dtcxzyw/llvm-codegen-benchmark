@@ -1,4 +1,4 @@
-func00000000000006c4:                   # @func00000000000006c4
+func00000000000006c4:
 	movb	$33, %al
 	subb	%sil, %al
 	movl	$1, %ecx
@@ -8,12 +8,14 @@ func00000000000006c4:                   # @func00000000000006c4
 	movl	$64, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000264:                   # @func0000000000000264
+
+func0000000000000264:
 	movb	$10, %al
 	subb	%sil, %al
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
-	addl	$65535, %edi                    # imm = 0xFFFF
-	cmpl	$65536, %edi                    # imm = 0x10000
+	addl	$65535, %edi
+	cmpl	$65536, %edi
 	cmovbl	%ecx, %eax
 	retq
+

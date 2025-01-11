@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -4
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a3, 3
 	addi	a3, a3, 63
 	xor	a1, a1, a3
@@ -17,7 +18,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	sext.w	a1, a1
 	srliw	a2, a2, 24
 	sltiu	a2, a2, 7
@@ -25,7 +27,8 @@ func000000000000008a:                   # @func000000000000008a
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 7
@@ -33,7 +36,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -41,7 +45,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -50,7 +55,8 @@ func000000000000002a:                   # @func000000000000002a
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 2
@@ -59,7 +65,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 5
@@ -69,3 +76,4 @@ func0000000000000081:                   # @func0000000000000081
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+

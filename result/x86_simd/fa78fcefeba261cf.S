@@ -1,7 +1,7 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rcx
-	movabsq	$5270498306774157605, %rsi      # imm = 0x4924924924924925
+	movabsq	$5270498306774157605, %rsi
 	movq	%rcx, %rax
 	imulq	%rsi
 	movq	%rdx, %rax
@@ -23,7 +23,7 @@ func0000000000000026:                   # @func0000000000000026
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -46,7 +46,7 @@ func0000000000000026:                   # @func0000000000000026
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm2
 	vpmovqd	%ymm2, %xmm1
 	vpmovq2m	%ymm2, %k1
@@ -54,3 +54,4 @@ func0000000000000026:                   # @func0000000000000026
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+

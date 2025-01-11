@@ -1,7 +1,6 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	fmov	d1, #1.00000000
-	mov	x8, #6148914691236517205        // =0x5555555555555555
+	mov	x8, #6148914691236517205
 	movk	x8, #16341, lsl #48
 	fadd	d0, d0, d1
 	fmov	d1, x8
@@ -9,22 +8,20 @@ func0000000000000004:                   // @func0000000000000004
 	fcmp	d0, #0.0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmov	d1, #1.00000000
 	fadd	d0, d0, d1
 	fadd	d0, d0, d0
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x3fb999999999999a              // double 0.10000000000000001
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+	.xword	0x3fb999999999999a
+func0000000000000002:
 	fmov	d1, #0.50000000
-	mov	x8, #4463067230724161536        // =0x3df0000000000000
+	mov	x8, #4463067230724161536
 	fadd	d0, d0, d1
 	fmov	d1, x8
 	adrp	x8, .LCPI2_0
@@ -33,11 +30,10 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+
 .LCPI3_0:
-	.xword	0x3e45798ee2308c3a              // double 1.0E-8
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+	.xword	0x3e45798ee2308c3a
+func0000000000000005:
 	fmov	d1, #1.00000000
 	adrp	x8, .LCPI3_0
 	fadd	d0, d0, d1
@@ -47,9 +43,8 @@ func0000000000000005:                   // @func0000000000000005
 	fcmp	d0, d1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	fmov	d1, #3.00000000
 	fadd	d0, d0, d1
 	fmov	d1, #0.50000000
@@ -58,9 +53,8 @@ func0000000000000009:                   // @func0000000000000009
 	cset	w8, eq
 	csinc	w0, w8, wzr, vc
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	fmov	d1, #-1.00000000
 	fadd	d0, d0, d1
 	fmov	d1, #0.50000000
@@ -68,4 +62,4 @@ func0000000000000003:                   // @func0000000000000003
 	fcmp	d0, #0.0
 	cset	w0, lt
 	ret
-                                        // -- End function
+

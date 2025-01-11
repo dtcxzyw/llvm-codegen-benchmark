@@ -1,5 +1,4 @@
-func0000000000000688:                   // @func0000000000000688
-// %bb.0:                               // %entry
+func0000000000000688:
 	asr	x8, x1, #3
 	add	x8, x8, x2, asr #3
 	add	x8, x8, x0
@@ -7,28 +6,25 @@ func0000000000000688:                   // @func0000000000000688
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000068a:                   // @func000000000000068a
-// %bb.0:                               // %entry
+
+func000000000000068a:
 	asr	x8, x1, #4
 	add	x8, x8, x2, asr #4
 	add	x8, x8, x0
 	cmp	x8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000681:                   // @func0000000000000681
-// %bb.0:                               // %entry
+
+func0000000000000681:
 	asr	x8, x1, #4
-	mov	x9, #576460752303423487         // =0x7ffffffffffffff
+	mov	x9, #576460752303423487
 	add	x8, x8, x2, asr #4
 	add	x8, x8, x0
 	cmp	x8, x9
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000006a8:                   // @func00000000000006a8
-// %bb.0:                               // %entry
+
+func00000000000006a8:
 	asr	x8, x1, #3
 	add	x8, x8, x2, asr #3
 	add	x8, x8, x0
@@ -36,12 +32,11 @@ func00000000000006a8:                   // @func00000000000006a8
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000006a1:                   // @func00000000000006a1
-// %bb.0:                               // %entry
+
+func00000000000006a1:
 	asr	x8, x1, #3
 	add	x8, x8, x2, asr #3
 	cmn	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andl	$1, %edx
 	movl	$6, %eax
 	subl	%edx, %eax
@@ -7,3 +7,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%edi, %eax
 	sete	%al
 	retq
+

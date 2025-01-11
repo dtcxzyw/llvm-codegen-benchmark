@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	li	a2, 1
 	slli	a2, a2, 52
 	xor	a0, a0, a2
@@ -6,12 +6,14 @@ func00000000000000a1:                   # @func00000000000000a1
 	not	a0, a0
 	addw	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	seqz	a0, a0
 	subw	a0, a1, a0
 	addiw	a0, a0, 2
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	lui	a2, 935504
 	addiw	a2, a2, -985
 	slli	a2, a2, 14
@@ -27,3 +29,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	addi	a0, a0, -1428
 	addw	a0, a0, a1
 	ret
+

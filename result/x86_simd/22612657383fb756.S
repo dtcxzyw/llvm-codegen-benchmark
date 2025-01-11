@@ -1,16 +1,17 @@
 .LCPI0_0:
-	.quad	8                               # 0x8
-func00000000000001e4:                   # @func00000000000001e4
+	.quad	8
+func00000000000001e4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$2, %ymm1, %ymm1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [8,8,8,8]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsraq	$2, %ymm0, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -20,7 +21,8 @@ func0000000000000161:                   # @func0000000000000161
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000016c:                   # @func000000000000016c
+
+func000000000000016c:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$5, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -30,7 +32,8 @@ func000000000000016c:                   # @func000000000000016c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000164:                   # @func0000000000000164
+
+func0000000000000164:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$4, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -40,7 +43,8 @@ func0000000000000164:                   # @func0000000000000164
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000168:                   # @func0000000000000168
+
+func0000000000000168:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$4, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -50,3 +54,4 @@ func0000000000000168:                   # @func0000000000000168
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

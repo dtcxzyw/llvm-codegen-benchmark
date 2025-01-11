@@ -1,4 +1,4 @@
-func000000000000021e:                   # @func000000000000021e
+func000000000000021e:
 	lui	a0, 244141
 	addi	a0, a0, -1537
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -14,7 +14,8 @@ func000000000000021e:                   # @func000000000000021e
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
 	ret
-func0000000000000200:                   # @func0000000000000200
+
+func0000000000000200:
 	lui	a0, 244141
 	addi	a0, a0, -1537
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -30,3 +31,4 @@ func0000000000000200:                   # @func0000000000000200
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
 	ret
+

@@ -1,8 +1,9 @@
-func0000000000000042:                   # @func0000000000000042
-	andl	$61440, %edx                    # imm = 0xF000
-	andl	$63488, %esi                    # imm = 0xF800
+func0000000000000042:
+	andl	$61440, %edx
+	andl	$63488, %esi
 	orl	%edx, %esi
-	cmpl	$55296, %esi                    # imm = 0xD800
+	cmpl	$55296, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
+

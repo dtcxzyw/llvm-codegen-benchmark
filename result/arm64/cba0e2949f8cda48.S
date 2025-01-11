@@ -1,5 +1,4 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	orr	x8, x3, x5
 	orr	x10, x2, x4
 	mvn	w11, w0
@@ -12,4 +11,4 @@ func0000000000000002:                   // @func0000000000000002
 	orr	x9, x9, x10
 	csel	x0, x8, x9, ne
 	ret
-                                        // -- End function
+

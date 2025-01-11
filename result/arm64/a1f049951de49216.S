@@ -1,26 +1,22 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	ubfx	w8, w0, #20, #11
-	mov	w9, #107                        // =0x6b
+	mov	w9, #107
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	sbfx	w0, w0, #7, #1
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	ubfx	w8, w0, #20, #11
-	mov	w9, #1075                       // =0x433
+	mov	w9, #1075
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	ubfx	w8, w0, #20, #11
-	mov	w9, #26                         // =0x1a
+	mov	w9, #26
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
+

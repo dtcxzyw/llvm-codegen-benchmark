@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
+	.byte	242
+	.byte	242
+	.byte	242
+	.byte	242
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,10 +16,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
+	.byte	252
+	.byte	252
+	.byte	252
+	.byte	252
 	.zero	1
 	.zero	1
 	.zero	1
@@ -32,7 +32,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000184:                   # @func0000000000000184
+func0000000000000184:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k0
@@ -41,11 +41,12 @@ func0000000000000184:                   # @func0000000000000184
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
-	.byte	242                             # 0xf2
+	.byte	242
+	.byte	242
+	.byte	242
+	.byte	242
 	.zero	1
 	.zero	1
 	.zero	1
@@ -59,10 +60,10 @@ func0000000000000184:                   # @func0000000000000184
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
-	.byte	252                             # 0xfc
+	.byte	252
+	.byte	252
+	.byte	252
+	.byte	252
 	.zero	1
 	.zero	1
 	.zero	1
@@ -75,7 +76,7 @@ func0000000000000184:                   # @func0000000000000184
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0
@@ -84,3 +85,4 @@ func000000000000008c:                   # @func000000000000008c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

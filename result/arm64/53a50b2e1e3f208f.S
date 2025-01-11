@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	tst	w0, #0x1
 	movi	d2, #0000000000000000
 	fcsel	d0, d0, d1, ne
@@ -8,10 +7,9 @@ func0000000000000042:                   // @func0000000000000042
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
-	mov	x8, #281200098803712            // =0xffc000000000
+
+func0000000000000024:
+	mov	x8, #281200098803712
 	tst	w0, #0x1
 	movk	x8, #16607, lsl #48
 	fcsel	d0, d0, d1, ne
@@ -20,11 +18,10 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	d0, #0.0
 	cset	w0, gt
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x3ff921fb54442d18              // double 1.5707963267948966
-func00000000000000e4:                   // @func00000000000000e4
-// %bb.0:                               // %entry
+	.xword	0x3ff921fb54442d18
+func00000000000000e4:
 	tst	w0, #0x1
 	adrp	x8, .LCPI2_0
 	fcsel	d0, d0, d1, ne
@@ -35,11 +32,10 @@ func00000000000000e4:                   // @func00000000000000e4
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
+
 .LCPI3_0:
-	.xword	0x4012d97c7f3321d2              // double 4.7123889803846897
-func00000000000000e2:                   // @func00000000000000e2
-// %bb.0:                               // %entry
+	.xword	0x4012d97c7f3321d2
+func00000000000000e2:
 	tst	w0, #0x1
 	adrp	x8, .LCPI3_0
 	fcsel	d0, d0, d1, ne
@@ -50,4 +46,4 @@ func00000000000000e2:                   // @func00000000000000e2
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+

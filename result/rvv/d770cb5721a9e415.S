@@ -1,4 +1,4 @@
-func00000000000000c0:                   # @func00000000000000c0
+func00000000000000c0:
 	li	a0, -1
 	lui	a1, 298023
 	srli	a0, a0, 32
@@ -10,7 +10,8 @@ func00000000000000c0:                   # @func00000000000000c0
 	vmacc.vx	v10, a1, v12
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, -1
 	srli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -24,3 +25,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	ret
+

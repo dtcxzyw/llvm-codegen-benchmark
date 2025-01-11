@@ -1,4 +1,4 @@
-func00000000000003a4:                   # @func00000000000003a4
+func00000000000003a4:
 	lui	a0, 448
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v8, v8, 12
@@ -9,7 +9,8 @@ func00000000000003a4:                   # @func00000000000003a4
 	lui	a0, 1048320
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 6
 	li	a0, 63
@@ -22,7 +23,8 @@ func0000000000000084:                   # @func0000000000000084
 	addi	a0, a0, 2047
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000334:                   # @func0000000000000334
+
+func0000000000000334:
 	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v8, v8, 8
@@ -34,7 +36,8 @@ func0000000000000334:                   # @func0000000000000334
 	li	a0, 809
 	vmsltu.vx	v0, v8, a0
 	ret
-func00000000000003b4:                   # @func00000000000003b4
+
+func00000000000003b4:
 	lui	a0, 448
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v8, v8, 12
@@ -45,3 +48,4 @@ func00000000000003b4:                   # @func00000000000003b4
 	lui	a0, 258
 	vmsltu.vx	v0, v8, a0
 	ret
+

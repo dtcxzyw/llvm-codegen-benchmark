@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI0_1:
-	.long	0x7e7fffff                      # float 8.50705867E+37
-func0000000000000002:                   # @func0000000000000002
+	.long	0x7e7fffff
+func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -13,3 +13,4 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

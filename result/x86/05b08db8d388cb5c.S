@@ -1,4 +1,4 @@
-func0000000000000013:                   # @func0000000000000013
+func0000000000000013:
 	xorl	%eax, %eax
 	shrq	$32, %rsi
 	sete	%al
@@ -7,7 +7,8 @@ func0000000000000013:                   # @func0000000000000013
 	shll	$4, %edi
 	leal	9(%rdi,%rax), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	xorl	%ecx, %ecx
 	shrq	$32, %rsi
 	setne	%cl
@@ -17,7 +18,8 @@ func0000000000000023:                   # @func0000000000000023
 	cmovel	%ecx, %eax
 	orl	$8, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	sete	%cl
@@ -27,7 +29,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovel	%ecx, %eax
 	orl	$8, %eax
 	retq
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	xorl	%ecx, %ecx
 	shrq	$32, %rsi
 	sete	%cl
@@ -37,3 +40,4 @@ func0000000000000053:                   # @func0000000000000053
 	cmovel	%ecx, %eax
 	orl	$8, %eax
 	retq
+

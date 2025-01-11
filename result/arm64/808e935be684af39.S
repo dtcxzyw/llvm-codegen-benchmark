@@ -1,14 +1,10 @@
-func00000000000000a3:                   // @func00000000000000a3
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+func00000000000000a3:
 	cmp	x0, w1, uxth
 	cinc	x0, x0, lo
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000022:
 	cmp	x0, w1, uxth
 	cinc	x0, x0, lo
 	ret
-                                        // -- End function
+

@@ -1,13 +1,14 @@
-func0000000000000082:                   # @func0000000000000082
-	cmpl	$2042, %edi                     # imm = 0x7FA
+func0000000000000082:
+	cmpl	$2042, %edi
 	sete	%cl
 	andb	%dl, %cl
-	cmpl	$2036, %edi                     # imm = 0x7F4
+	cmpl	$2036, %edi
 	sete	%al
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	$2, %esi
 	sete	%cl
 	andb	%dl, %cl
@@ -16,3 +17,4 @@ func0000000000000084:                   # @func0000000000000084
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

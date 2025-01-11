@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	lui	a0, 599186
 	addi	a0, a0, 1171
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -13,7 +13,8 @@ func0000000000000018:                   # @func0000000000000018
 	vadd.vi	v10, v8, -7
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 174763
 	addi	a0, a0, -1366
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -27,7 +28,8 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vi	v10, v8, 4
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 74898
 	addi	a0, a0, 1168
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -44,3 +46,4 @@ func0000000000000005:                   # @func0000000000000005
 	vxor.vi	v10, v10, 3
 	vadd.vv	v8, v8, v10
 	ret
+

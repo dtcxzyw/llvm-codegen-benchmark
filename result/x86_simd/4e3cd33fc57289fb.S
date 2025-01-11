@@ -1,5 +1,5 @@
-func0000000000000001:                   # @func0000000000000001
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
+func0000000000000001:
+	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
@@ -48,8 +48,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
-func0000000000000004:                   # @func0000000000000004
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
+
+func0000000000000004:
+	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
@@ -98,8 +99,9 @@ func0000000000000004:                   # @func0000000000000004
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
+
+func0000000000000005:
+	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
@@ -148,10 +150,11 @@ func0000000000000005:                   # @func0000000000000005
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	4294959104                      # 0xffffe000
-func0000000000000000:                   # @func0000000000000000
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
+	.long	4294959104
+func0000000000000000:
+	vpmovzxwd	%xmm1, %ymm1
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -199,3 +202,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

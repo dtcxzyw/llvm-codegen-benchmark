@@ -1,4 +1,4 @@
-func00000000000004a4:                   # @func00000000000004a4
+func00000000000004a4:
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -15,11 +15,12 @@ func00000000000004a4:                   # @func00000000000004a4
 	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v10
 	ret
+
 .LCPI1_0:
-	.quad	-5675921253449092805            # 0xb13b13b13b13b13b
+	.quad	-5675921253449092805
 .LCPI1_1:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func00000000000007a4:                   # @func00000000000007a4
+	.quad	5675921253449092805
+func00000000000007a4:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -32,3 +33,4 @@ func00000000000007a4:                   # @func00000000000007a4
 	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v10
 	ret
+

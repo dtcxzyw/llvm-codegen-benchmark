@@ -1,4 +1,4 @@
-func0000000000000142:                   # @func0000000000000142
+func0000000000000142:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setg	%al
@@ -6,7 +6,8 @@ func0000000000000142:                   # @func0000000000000142
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setg	%al
@@ -14,7 +15,8 @@ func0000000000000146:                   # @func0000000000000146
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func0000000000000147:                   # @func0000000000000147
+
+func0000000000000147:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setg	%al
@@ -22,7 +24,8 @@ func0000000000000147:                   # @func0000000000000147
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func0000000000000143:                   # @func0000000000000143
+
+func0000000000000143:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setg	%al
@@ -30,3 +33,4 @@ func0000000000000143:                   # @func0000000000000143
 	movl	$1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
+

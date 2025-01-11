@@ -1,10 +1,11 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	andl	$-2, %esi
 	cmpl	$4, %esi
 	setne	%al
 	xorb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	testb	$16, %sil
 	sete	%cl
 	andl	$-3, %edi
@@ -12,7 +13,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	xorb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	andb	$8, %sil
 	shrb	$3, %sil
 	andl	$-3, %edi
@@ -20,3 +22,4 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	xorb	%sil, %al
 	retq
+

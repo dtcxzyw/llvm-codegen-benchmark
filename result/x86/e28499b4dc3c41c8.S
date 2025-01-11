@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000058:
 	cmpq	%rsi, %rdi
 	cmovlq	%rdi, %rsi
 	leaq	(,%rsi,4), %rcx
@@ -8,3 +8,4 @@ func0000000000000058:                   # @func0000000000000058
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

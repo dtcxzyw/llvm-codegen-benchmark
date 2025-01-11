@@ -1,72 +1,76 @@
 .LCPI0_0:
-	.quad	-4611686020574871553            # 0xbfffffff7fffffff
-func000000000000001f:                   # @func000000000000001f
+	.quad	-4611686020574871553
+func000000000000001f:
 	vpslld	$30, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	-140733193388033                # 0xffff8000ffffffff
-func0000000000000003:                   # @func0000000000000003
+	.quad	-140733193388033
+func0000000000000003:
 	vpslld	$17, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0
 	retq
+
 .LCPI2_0:
-	.quad	-4294967297                     # 0xfffffffeffffffff
-func0000000000000013:                   # @func0000000000000013
+	.quad	-4294967297
+func0000000000000013:
 	vpslld	$31, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0
 	retq
+
 .LCPI3_0:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
 .LCPI3_1:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-func0000000000000000:                   # @func0000000000000000
+	.byte	0
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+	.byte	255
+func0000000000000000:
 	vpslld	$3, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogq	$248, .LCPI3_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpternlogq	$248, .LCPI3_1(%rip){1to4}, %ymm1, %ymm0
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	3777893186295716171             # 0x346dc5d63886594b
-func0000000000000000:                   # @func0000000000000000
+	.quad	3777893186295716171
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	lui	a0, %hi(.LCPI0_0)
@@ -11,9 +11,10 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 10
 	ret
+
 .LCPI1_0:
-	.quad	2635249153387078803             # 0x2492492492492493
-func000000000000001a:                   # @func000000000000001a
+	.quad	2635249153387078803
+func000000000000001a:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -25,9 +26,10 @@ func000000000000001a:                   # @func000000000000001a
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 2
 	ret
+
 .LCPI2_0:
-	.quad	2635249153387078803             # 0x2492492492492493
-func0000000000000014:                   # @func0000000000000014
+	.quad	2635249153387078803
+func0000000000000014:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -39,9 +41,10 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 2
 	ret
+
 .LCPI3_0:
-	.quad	4137408090565272301             # 0x396b06bcc8f862ed
-func0000000000000008:                   # @func0000000000000008
+	.quad	4137408090565272301
+func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
 	lui	a0, 118
@@ -53,7 +56,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmulhu.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 15
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 10
 	lui	a0, 699051
@@ -64,7 +68,8 @@ func000000000000000a:                   # @func000000000000000a
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 2
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 3
 	li	a0, 29
@@ -76,3 +81,4 @@ func000000000000001e:                   # @func000000000000001e
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 4
 	ret
+

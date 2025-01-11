@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000003:                   # @func0000000000000003
-	vbroadcastsd	.LCPI0_0(%rip), %zmm5   # zmm5 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	.quad	0x8000000000000000
+func0000000000000003:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm5
 	vxorpd	%zmm5, %zmm1, %zmm4
 	vxorpd	%zmm5, %zmm0, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -12,10 +12,11 @@ func0000000000000003:                   # @func0000000000000003
 	vmovapd	%zmm5, %zmm0
 	vmovapd	%zmm4, %zmm1
 	retq
+
 .LCPI1_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000004:                   # @func0000000000000004
-	vbroadcastsd	.LCPI1_0(%rip), %zmm5   # zmm5 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	.quad	0x8000000000000000
+func0000000000000004:
+	vbroadcastsd	.LCPI1_0(%rip), %zmm5
 	vxorpd	%zmm5, %zmm1, %zmm4
 	vxorpd	%zmm5, %zmm0, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -26,10 +27,11 @@ func0000000000000004:                   # @func0000000000000004
 	vmovapd	%zmm5, %zmm0
 	vmovapd	%zmm4, %zmm1
 	retq
+
 .LCPI2_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000002:                   # @func0000000000000002
-	vbroadcastsd	.LCPI2_0(%rip), %zmm5   # zmm5 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	.quad	0x8000000000000000
+func0000000000000002:
+	vbroadcastsd	.LCPI2_0(%rip), %zmm5
 	vxorpd	%zmm5, %zmm1, %zmm4
 	vxorpd	%zmm5, %zmm0, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -40,10 +42,11 @@ func0000000000000002:                   # @func0000000000000002
 	vmovapd	%zmm5, %zmm0
 	vmovapd	%zmm4, %zmm1
 	retq
+
 .LCPI3_0:
-	.quad	0x8000000000000000              # double -0
-func000000000000000c:                   # @func000000000000000c
-	vbroadcastsd	.LCPI3_0(%rip), %zmm5   # zmm5 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	.quad	0x8000000000000000
+func000000000000000c:
+	vbroadcastsd	.LCPI3_0(%rip), %zmm5
 	vxorpd	%zmm5, %zmm1, %zmm4
 	vxorpd	%zmm5, %zmm0, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -54,3 +57,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmovapd	%zmm5, %zmm0
 	vmovapd	%zmm4, %zmm1
 	retq
+

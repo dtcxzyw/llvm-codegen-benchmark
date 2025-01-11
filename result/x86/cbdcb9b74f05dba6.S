@@ -1,5 +1,5 @@
-func000000000000021b:                   # @func000000000000021b
-	cmpl	$1073741824, %esi               # imm = 0x40000000
+func000000000000021b:
+	cmpl	$1073741824, %esi
 	movl	$32, %ecx
 	cmovael	%edx, %ecx
 	testl	%esi, %esi
@@ -7,3 +7,4 @@ func000000000000021b:                   # @func000000000000021b
 	movl	$43, %eax
 	subl	%ecx, %eax
 	retq
+

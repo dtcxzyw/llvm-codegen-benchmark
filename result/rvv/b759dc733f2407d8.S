@@ -1,4 +1,4 @@
-func00000000000000c3:                   # @func00000000000000c3
+func00000000000000c3:
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
@@ -13,3 +13,4 @@ func00000000000000c3:                   # @func00000000000000c3
 	vmerge.vim	v8, v8, 1, v0
 	vadd.vv	v8, v10, v8
 	ret
+

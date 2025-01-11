@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
@@ -10,3 +10,4 @@ func0000000000000082:                   # @func0000000000000082
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v8, v12, -1, v0
 	ret
+

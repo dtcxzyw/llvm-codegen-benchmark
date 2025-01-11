@@ -1,6 +1,6 @@
-func0000000000000004:                   # @func0000000000000004
-	vfmadd213pd	%zmm5, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm5
-	vfmadd213pd	%zmm4, %zmm2, %zmm0     # zmm0 = (zmm2 * zmm0) + zmm4
+func0000000000000004:
+	vfmadd213pd	%zmm5, %zmm3, %zmm1
+	vfmadd213pd	%zmm4, %zmm2, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -9,9 +9,10 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
-	vfmadd213pd	%zmm5, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm5
-	vfmadd213pd	%zmm4, %zmm2, %zmm0     # zmm0 = (zmm2 * zmm0) + zmm4
+
+func0000000000000002:
+	vfmadd213pd	%zmm5, %zmm3, %zmm1
+	vfmadd213pd	%zmm4, %zmm2, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -20,9 +21,10 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000003:                   # @func0000000000000003
-	vfmadd213pd	%zmm5, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm5
-	vfmadd213pd	%zmm4, %zmm2, %zmm0     # zmm0 = (zmm2 * zmm0) + zmm4
+
+func0000000000000003:
+	vfmadd213pd	%zmm5, %zmm3, %zmm1
+	vfmadd213pd	%zmm4, %zmm2, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -31,9 +33,10 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
-	vfmadd213pd	%zmm5, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm5
-	vfmadd213pd	%zmm4, %zmm2, %zmm0     # zmm0 = (zmm2 * zmm0) + zmm4
+
+func0000000000000008:
+	vfmadd213pd	%zmm5, %zmm3, %zmm1
+	vfmadd213pd	%zmm4, %zmm2, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -42,9 +45,10 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000005:                   # @func0000000000000005
-	vfmadd213pd	%zmm5, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm5
-	vfmadd213pd	%zmm4, %zmm2, %zmm0     # zmm0 = (zmm2 * zmm0) + zmm4
+
+func0000000000000005:
+	vfmadd213pd	%zmm5, %zmm3, %zmm1
+	vfmadd213pd	%zmm4, %zmm2, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -53,3 +57,4 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

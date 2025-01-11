@@ -1,5 +1,5 @@
-func0000000000002042:                   # @func0000000000002042
-	cmpq	$8193, %rdx                     # imm = 0x2001
+func0000000000002042:
+	cmpq	$8193, %rdx
 	setb	%al
 	testl	%esi, %esi
 	sete	%cl
@@ -8,7 +8,8 @@ func0000000000002042:                   # @func0000000000002042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000002048:                   # @func0000000000002048
+
+func0000000000002048:
 	shrq	$32, %rdx
 	sete	%al
 	testl	%esi, %esi
@@ -18,3 +19,4 @@ func0000000000002048:                   # @func0000000000002048
 	setb	%al
 	orb	%cl, %al
 	retq
+

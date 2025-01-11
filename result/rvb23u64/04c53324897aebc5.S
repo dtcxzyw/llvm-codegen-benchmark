@@ -1,4 +1,4 @@
-func00000000000000ac:                   # @func00000000000000ac
+func00000000000000ac:
 	fli.s	fa5, 1.0
 	fle.s	a1, fa0, fa5
 	fmv.w.x	fa5, zero
@@ -6,9 +6,10 @@ func00000000000000ac:                   # @func00000000000000ac
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.word	0xb8d1b717                      # float -9.99999974E-5
-func00000000000000ca:                   # @func00000000000000ca
+	.word	0xb8d1b717
+func00000000000000ca:
 	lui	a1, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a1)
 	fli.s	fa4, 1.0
@@ -17,3 +18,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

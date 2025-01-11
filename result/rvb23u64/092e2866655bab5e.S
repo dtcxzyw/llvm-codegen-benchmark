@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006a:
 	andi	a1, a1, 1
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
@@ -9,3 +9,4 @@ func000000000000006a:                   # @func000000000000006a
 	mul	a0, a0, a1
 	sraiw	a0, a0, 2
 	ret
+

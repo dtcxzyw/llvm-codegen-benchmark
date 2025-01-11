@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	leal	55(%rsi), %eax
 	orb	$48, %sil
 	cmpq	$10, %rdi
@@ -6,7 +6,8 @@ func0000000000000064:                   # @func0000000000000064
 	movzbl	%al, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	leal	87(%rsi), %eax
 	orb	$48, %sil
 	cmpq	$10, %rdi
@@ -14,3 +15,4 @@ func0000000000000024:                   # @func0000000000000024
 	movzbl	%al, %eax
 	cmovbl	%ecx, %eax
 	retq
+

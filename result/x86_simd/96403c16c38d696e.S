@@ -1,52 +1,58 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000005:                   # @func0000000000000005
+	.long	7
+func0000000000000005:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$3, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	4294967294                      # 0xfffffffe
-func0000000000000017:                   # @func0000000000000017
+	.long	4294967294
+func0000000000000017:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	7                               # 0x7
-func0000000000000007:                   # @func0000000000000007
+	.long	7
+func0000000000000007:
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$3, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	63                              # 0x3f
+	.long	63
 .LCPI3_1:
-	.quad	4294967295                      # 0xffffffff
-func0000000000000037:                   # @func0000000000000037
+	.quad	4294967295
+func0000000000000037:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$6, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	vpaddq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpsrld	$7, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsrld	$1, %xmm0, %xmm0
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

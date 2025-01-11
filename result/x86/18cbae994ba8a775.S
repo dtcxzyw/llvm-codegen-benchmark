@@ -1,9 +1,10 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	xorl	%eax, %eax
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	testq	%rsi, %rsi
 	sete	%al
 	testq	%rdi, %rdi
@@ -11,3 +12,4 @@ func0000000000000058:                   # @func0000000000000058
 	andb	%al, %cl
 	movzbl	%cl, %eax
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x3fb54fdf3b645a1d              # double 0.083250000000000005
+	.quad	0x3fb54fdf3b645a1d
 .LCPI0_1:
-	.quad	0x3fd54fdf3b645a1d              # double 0.33300000000000002
-func0000000000000021:                   # @func0000000000000021
+	.quad	0x3fd54fdf3b645a1d
+func0000000000000021:
 	li	a0, -18
 	fli.d	fa5, 0.25
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -19,3 +19,4 @@ func0000000000000021:                   # @func0000000000000021
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmerge.vfm	v8, v12, fa5, v0
 	ret
+

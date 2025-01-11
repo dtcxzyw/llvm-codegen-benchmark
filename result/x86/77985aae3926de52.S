@@ -1,4 +1,4 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000104:
 	subl	%edx, %esi
 	cmpl	$9, %esi
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000104:                   # @func0000000000000104
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000030a:                   # @func000000000000030a
+
+func000000000000030a:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setge	%cl
@@ -14,7 +15,8 @@ func000000000000030a:                   # @func000000000000030a
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000070a:                   # @func000000000000070a
+
+func000000000000070a:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setge	%cl
@@ -22,3 +24,4 @@ func000000000000070a:                   # @func000000000000070a
 	setae	%al
 	andb	%cl, %al
 	retq
+

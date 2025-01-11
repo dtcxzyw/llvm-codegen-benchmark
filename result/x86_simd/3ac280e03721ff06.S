@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vdivpd	%zmm5, %zmm3, %zmm5
 	vdivpd	%zmm4, %zmm2, %zmm3
 	vmaxpd	%zmm0, %zmm3, %zmm2
@@ -10,3 +10,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmovapd	%zmm2, %zmm0
 	vmovapd	%zmm3, %zmm1
 	retq
+

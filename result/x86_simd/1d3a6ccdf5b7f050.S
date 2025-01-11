@@ -1,55 +1,55 @@
 .LCPI0_0:
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
-	.short	65488                           # 0xffd0
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
+	.short	65488
 .LCPI0_1:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
 .LCPI0_2:
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-	.short	96                              # 0x60
-func0000000000000130:                   # @func0000000000000130
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+	.short	96
+func0000000000000130:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm0
@@ -60,3 +60,4 @@ func0000000000000130:                   # @func0000000000000130
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

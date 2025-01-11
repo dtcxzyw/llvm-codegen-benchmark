@@ -1,17 +1,19 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	andi	a1, a1, 255
 	snez	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 3
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andi	a1, a1, 255
 	addi	a1, a1, -12
 	seqz	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 14
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 49
@@ -23,3 +25,4 @@ func000000000000000a:                   # @func000000000000000a
 .LBB2_2:
 	li	a0, 3
 	ret
+

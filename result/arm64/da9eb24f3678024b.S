@@ -1,13 +1,11 @@
-func00000000000000ec:                   // @func00000000000000ec
-// %bb.0:                               // %entry
+func00000000000000ec:
 	fcmp	s0, #0.0
 	ccmp	x0, #0, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
-	mov	w8, #2139095040                 // =0x7f800000
+
+func00000000000000cc:
+	mov	w8, #2139095040
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w8, mi
@@ -15,37 +13,33 @@ func00000000000000cc:                   // @func00000000000000cc
 	cmp	x0, #0
 	csel	w0, wzr, w8, eq
 	ret
-                                        // -- End function
-func00000000000000c6:                   // @func00000000000000c6
-// %bb.0:                               // %entry
-	mov	w8, #2139095040                 // =0x7f800000
+
+func00000000000000c6:
+	mov	w8, #2139095040
 	cmp	x0, #0
 	fmov	s1, w8
 	fccmp	s0, s1, #4, ne
 	fccmp	s0, s1, #1, ne
 	cset	w0, vc
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
 	ccmp	x0, #0, #4, gt
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000000ac:                   // @func00000000000000ac
-// %bb.0:                               // %entry
+
+func00000000000000ac:
 	fcmp	s0, #0.0
 	ccmp	x0, #0, #4, hi
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000000c4:                   // @func00000000000000c4
-// %bb.0:                               // %entry
+
+func00000000000000c4:
 	movi	d1, #0000000000000000
 	cmp	x0, #0
 	fccmp	s0, s1, #4, ne
 	cset	w0, gt
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func00000000000003aa:                   # @func00000000000003aa
+func00000000000003aa:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -37,3 +37,4 @@ func00000000000003aa:                   # @func00000000000003aa
 	addiw	a1, a2, -541
 	slt	a0, a1, a0
 	ret
+

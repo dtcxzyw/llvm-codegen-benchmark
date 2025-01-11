@@ -1,11 +1,12 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004a:
 	negq	%rsi
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rsi
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	$2, %eax
 	subq	%rsi, %rax
 	cmpq	%rax, %rdi
@@ -13,3 +14,4 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setg	%al
 	retq
+

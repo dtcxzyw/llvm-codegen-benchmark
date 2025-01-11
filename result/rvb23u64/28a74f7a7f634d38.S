@@ -1,11 +1,12 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	czero.nez	a1, a2, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 8
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	czero.nez	a1, a2, a1
@@ -13,7 +14,8 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, -192
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	li	a3, 16
@@ -23,7 +25,8 @@ func000000000000000f:                   # @func000000000000000f
 	sh2add	a0, a1, a0
 	addi	a0, a0, 8
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a3, 5
@@ -33,7 +36,8 @@ func000000000000001c:                   # @func000000000000001c
 	sh2add	a0, a1, a0
 	addi	a0, a0, 64
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	czero.nez	a1, a2, a1
@@ -41,3 +45,4 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
+

@@ -1,32 +1,35 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	testl	%edx, %edx
 	setne	%al
 	orb	%sil, %al
 	movzbl	%al, %eax
 	andl	$1, %eax
 	shll	$21, %eax
-	andl	$-2097155, %edi                 # imm = 0xFFDFFFFD
+	andl	$-2097155, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	cmpl	$131072, %edx                   # imm = 0x20000
+
+func0000000000000005:
+	cmpl	$131072, %edx
 	sete	%al
 	orb	%sil, %al
 	movzbl	%al, %eax
 	andl	$1, %eax
 	shll	$20, %eax
-	andl	$-15728641, %edi                # imm = 0xFF0FFFFF
+	andl	$-15728641, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	xorl	%ecx, %ecx
 	cmpl	$3, %edx
 	setne	%cl
 	shll	$31, %ecx
-	addl	$-2113667072, %ecx              # imm = 0x82040000
+	addl	$-2113667072, %ecx
 	testb	$1, %sil
-	movl	$-2113667072, %eax              # imm = 0x82040000
+	movl	$-2113667072, %eax
 	cmovel	%ecx, %eax
-	andl	$-38010881, %edi                # imm = 0xFDBBFFFF
+	andl	$-38010881, %edi
 	orl	%edi, %eax
 	retq
+

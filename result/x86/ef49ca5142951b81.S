@@ -1,55 +1,62 @@
-func0000000000000481:                   # @func0000000000000481
+func0000000000000481:
 	addl	$-7, %esi
 	cmpl	$-2, %esi
 	setb	%cl
-	andl	$16711680, %edi                 # imm = 0xFF0000
-	cmpl	$65536, %edi                    # imm = 0x10000
+	andl	$16711680, %edi
+	cmpl	$65536, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	cmpl	$1, %esi
 	setne	%cl
 	shlq	$33, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	notl	%esi
 	testb	$7, %sil
 	setne	%cl
 	decl	%edi
-	cmpl	$2147483646, %edi               # imm = 0x7FFFFFFE
+	cmpl	$2147483646, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	addl	$-56, %esi
-	cmpl	$1073741769, %esi               # imm = 0x3FFFFFC9
+	cmpl	$1073741769, %esi
 	setb	%cl
 	testb	$7, %dil
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	addl	$-91, %esi
 	cmpl	$2, %esi
 	setb	%al
 	shrq	$32, %rdi
 	andb	%dil, %al
 	retq
-func000000000000048c:                   # @func000000000000048c
+
+func000000000000048c:
 	addl	$-3, %esi
 	cmpl	$2, %esi
 	setb	%al
 	shrb	$5, %dil
 	andb	%dil, %al
 	retq
-func0000000000000584:                   # @func0000000000000584
+
+func0000000000000584:
 	shrl	$28, %esi
 	andl	$1, %esi
-	addl	$-446667, %edi                  # imm = 0xFFF92F35
-	cmpl	$33333, %edi                    # imm = 0x8235
+	addl	$-446667, %edi
+	cmpl	$33333, %edi
 	setb	%al
 	andb	%sil, %al
 	retq
+

@@ -1,10 +1,11 @@
-func0000000000000084:                   # @func0000000000000084
-	addl	$-257, %esi                     # imm = 0xFEFF
+func0000000000000084:
+	addl	$-257, %esi
 	movzwl	%si, %eax
-	cmpl	$65280, %eax                    # imm = 0xFF00
+	cmpl	$65280, %eax
 	setb	%cl
-	addl	$-384001, %edi                  # imm = 0xFFFA23FF
-	cmpl	$-384000, %edi                  # imm = 0xFFFA2400
+	addl	$-384001, %edi
+	cmpl	$-384000, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
+

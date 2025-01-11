@@ -1,12 +1,13 @@
 .LCPI0_0:
-	.quad	0x408997e631f8a090              # double 818.98739999999998
+	.quad	0x408997e631f8a090
 .LCPI0_1:
-	.quad	0x3fef8a6c50c753f8              # double 0.98564735199999997
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fef8a6c50c753f8
+func0000000000000000:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI0_0(%rip), %zmm2   # zmm2 = [8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2,8.1898739999999998E+2]
-	vbroadcastsd	.LCPI0_1(%rip), %zmm3   # zmm3 = [9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1,9.8564735199999997E-1]
-	vfmadd213pd	%zmm2, %zmm3, %zmm0     # zmm0 = (zmm3 * zmm0) + zmm2
-	vfmadd213pd	%zmm2, %zmm3, %zmm1     # zmm1 = (zmm3 * zmm1) + zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm2
+	vbroadcastsd	.LCPI0_1(%rip), %zmm3
+	vfmadd213pd	%zmm2, %zmm3, %zmm0
+	vfmadd213pd	%zmm2, %zmm3, %zmm1
 	retq
+

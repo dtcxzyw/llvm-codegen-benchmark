@@ -1,84 +1,60 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func0000000000000000:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000005:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000000c:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000000f:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000010:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000001c:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000003:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000013:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000000d:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000004:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000007:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000008:
 	and	x8, x2, #0xffff
 	madd	x0, x1, x8, x0
 	ret
-                                        // -- End function
+

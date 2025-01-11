@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setne	%al
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	shll	$3, %edi
 	leal	6(%rdi,%rax,2), %eax
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	xorl	%ecx, %ecx
 	cmpl	$3, %esi
 	setge	%cl
@@ -15,12 +16,14 @@ func000000000000002b:                   # @func000000000000002b
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	xorl	%eax, %eax
-	cmpl	$301, %esi                      # imm = 0x12D
+	cmpl	$301, %esi
 	movl	$165, %ecx
 	cmovbl	%eax, %ecx
 	leal	317(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+

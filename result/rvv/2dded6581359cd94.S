@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	li	a0, -4
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -17,7 +18,8 @@ func000000000000000a:                   # @func000000000000000a
 	vmacc.vx	v10, a0, v8
 	vsrl.vi	v8, v10, 8
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	lui	a0, 65536
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,7 +30,8 @@ func0000000000000014:                   # @func0000000000000014
 	vmacc.vx	v10, a0, v8
 	vsrl.vi	v8, v10, 28
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	lui	a0, 16384
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -37,3 +40,4 @@ func000000000000001e:                   # @func000000000000001e
 	vmacc.vx	v10, a0, v8
 	vsrl.vi	v8, v10, 26
 	ret
+

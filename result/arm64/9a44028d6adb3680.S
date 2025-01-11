@@ -1,5 +1,4 @@
-func0000000000000036:                   // @func0000000000000036
-// %bb.0:                               // %entry
+func0000000000000036:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #56
@@ -9,9 +8,8 @@ func0000000000000036:                   // @func0000000000000036
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #55
@@ -21,9 +19,8 @@ func0000000000000000:                   // @func0000000000000000
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #56
@@ -33,9 +30,8 @@ func0000000000000006:                   // @func0000000000000006
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	cmn	x2, x4
 	adc	x8, x3, x5
 	adds	x8, x0, x8
@@ -43,9 +39,8 @@ func0000000000000026:                   // @func0000000000000026
 	extr	x0, x9, x8, #62
 	lsr	x1, x9, #62
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+
+func0000000000000034:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #16
@@ -55,9 +50,8 @@ func0000000000000034:                   // @func0000000000000034
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #56
@@ -67,9 +61,8 @@ func0000000000000022:                   // @func0000000000000022
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	adds	x8, x2, x4
 	adc	x9, x3, x5
 	extr	x8, x9, x8, #16
@@ -79,4 +72,4 @@ func0000000000000014:                   // @func0000000000000014
 	extr	x0, x9, x8, #56
 	lsr	x1, x9, #56
 	ret
-                                        // -- End function
+

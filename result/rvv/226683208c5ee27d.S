@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x4012c8590b21642d              # double 4.6956521739130439
+	.quad	0x4012c8590b21642d
 .LCPI0_1:
-	.quad	0x3fd4fbcda3ac10c9              # double 0.32786885245901637
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fd4fbcda3ac10c9
+func0000000000000000:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
@@ -13,3 +13,4 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vf	v8, v8, fa4
 	vfdiv.vv	v8, v8, v24
 	ret
+

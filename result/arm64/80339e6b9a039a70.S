@@ -1,5 +1,4 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	scvtf	s0, x0, #31
 	ret
-                                        // -- End function
+

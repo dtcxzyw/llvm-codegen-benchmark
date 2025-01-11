@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movzbl	%sil, %eax
 	movl	$1, %ecx
 	subl	%eax, %ecx
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	notl	%esi
 	addl	%edx, %esi
 	movzwl	%si, %eax
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	subb	%dil, %cl
 	shrxl	%ecx, %eax, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	notl	%esi
 	addl	%edx, %esi
 	movzwl	%si, %eax
@@ -14,3 +15,4 @@ func0000000000000022:                   # @func0000000000000022
 	subb	%dil, %cl
 	shrxl	%ecx, %eax, %eax
 	retq
+

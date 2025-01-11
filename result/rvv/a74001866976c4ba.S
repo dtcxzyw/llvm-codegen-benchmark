@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	lui	a0, 14
 	addi	a0, a0, -339
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,3 +11,4 @@ func0000000000000002:                   # @func0000000000000002
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+

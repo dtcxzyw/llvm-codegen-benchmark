@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000016:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	sarq	$2, %rcx
@@ -7,7 +7,8 @@ func0000000000000016:                   # @func0000000000000016
 	divq	%rcx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	sarq	$3, %rcx
@@ -16,3 +17,4 @@ func0000000000000014:                   # @func0000000000000014
 	divq	%rcx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	leal	1075(%rdx), %ecx
 	shlq	$52, %rcx
 	xorl	%eax, %eax
@@ -6,3 +6,4 @@ func000000000000001f:                   # @func000000000000001f
 	cmoveq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
+

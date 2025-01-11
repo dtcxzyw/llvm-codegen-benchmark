@@ -1,23 +1,25 @@
 .LCPI0_0:
-	.long	0x80000000                      # float -0
+	.long	0x80000000
 .LCPI0_1:
-	.quad	0x3f847ae147ae147b              # double 0.01
-func0000000000000022:                   # @func0000000000000022
+	.quad	0x3f847ae147ae147b
+func0000000000000022:
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm1
 	vmaxss	%xmm0, %xmm1, %xmm0
 	vcvtss2sd	%xmm0, %xmm0, %xmm0
-	vmovsd	.LCPI0_1(%rip), %xmm1           # xmm1 = [1.0E-2,0.0E+0]
+	vmovsd	.LCPI0_1(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	retq
+
 .LCPI1_0:
-	.long	0x80000000                      # float -0
+	.long	0x80000000
 .LCPI1_1:
-	.quad	0x3fb999999999999a              # double 0.10000000000000001
-func0000000000000023:                   # @func0000000000000023
+	.quad	0x3fb999999999999a
+func0000000000000023:
 	vxorps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm1
 	vmaxss	%xmm0, %xmm1, %xmm0
 	vcvtss2sd	%xmm0, %xmm0, %xmm0
 	vucomisd	.LCPI1_1(%rip), %xmm0
 	setb	%al
 	retq
+

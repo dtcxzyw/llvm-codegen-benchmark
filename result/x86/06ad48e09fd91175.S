@@ -1,4 +1,4 @@
-func0000000000000cc1:                   # @func0000000000000cc1
+func0000000000000cc1:
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -7,7 +7,8 @@ func0000000000000cc1:                   # @func0000000000000cc1
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000004a1:                   # @func00000000000004a1
+
+func00000000000004a1:
 	movslq	%edx, %rax
 	decq	%rsi
 	cmpq	%rax, %rsi
@@ -16,7 +17,8 @@ func00000000000004a1:                   # @func00000000000004a1
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000426:                   # @func0000000000000426
+
+func0000000000000426:
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -25,7 +27,8 @@ func0000000000000426:                   # @func0000000000000426
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000546:                   # @func0000000000000546
+
+func0000000000000546:
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -34,7 +37,8 @@ func0000000000000546:                   # @func0000000000000546
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000c26:                   # @func0000000000000c26
+
+func0000000000000c26:
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -43,7 +47,8 @@ func0000000000000c26:                   # @func0000000000000c26
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000ccc:                   # @func0000000000000ccc
+
+func0000000000000ccc:
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -52,16 +57,18 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004cc:                   # @func00000000000004cc
+
+func00000000000004cc:
 	movslq	%edx, %rax
-	addq	$132224, %rsi                   # imm = 0x20480
+	addq	$132224, %rsi
 	cmpq	%rax, %rsi
 	setl	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000058a:                   # @func000000000000058a
+
+func000000000000058a:
 	movslq	%edx, %rax
 	decq	%rsi
 	cmpq	%rax, %rsi
@@ -70,3 +77,4 @@ func000000000000058a:                   # @func000000000000058a
 	setne	%al
 	andb	%cl, %al
 	retq
+

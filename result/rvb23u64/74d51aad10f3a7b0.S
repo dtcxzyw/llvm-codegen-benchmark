@@ -1,4 +1,4 @@
-func0000000000000a41:                   # @func0000000000000a41
+func0000000000000a41:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -11,7 +11,8 @@ func0000000000000a41:                   # @func0000000000000a41
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000a4c:                   # @func0000000000000a4c
+
+func0000000000000a4c:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -24,7 +25,8 @@ func0000000000000a4c:                   # @func0000000000000a4c
 	add	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000a48:                   # @func0000000000000a48
+
+func0000000000000a48:
 	mul	a6, a2, a5
 	mulhu	a5, a2, a4
 	mul	a3, a3, a4
@@ -38,3 +40,4 @@ func0000000000000a48:                   # @func0000000000000a48
 	sltiu	a0, a0, 40
 	xori	a0, a0, 1
 	ret
+

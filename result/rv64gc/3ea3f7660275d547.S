@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	neg	a2, a2
@@ -7,7 +7,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d8a:                   # @func0000000000000d8a
+
+func0000000000000d8a:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	or	a1, a1, a2
@@ -15,7 +16,8 @@ func0000000000000d8a:                   # @func0000000000000d8a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -24,3 +26,4 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

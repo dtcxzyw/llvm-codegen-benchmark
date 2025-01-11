@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000038:
 	andi	a0, a0, 1
 	srliw	a3, a2, 7
 	lui	a4, 1048555
@@ -10,7 +10,8 @@ func0000000000000038:                   # @func0000000000000038
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	andi	a0, a0, 1
 	sraiw	a3, a2, 31
 	andi	a3, a3, 13
@@ -19,7 +20,8 @@ func0000000000000026:                   # @func0000000000000026
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	lui	a4, 1
@@ -33,3 +35,4 @@ func000000000000002a:                   # @func000000000000002a
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

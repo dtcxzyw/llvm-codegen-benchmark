@@ -1,20 +1,18 @@
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
+func0000000000000108:
 	cmp	w1, #14
-	mov	w8, #256                        // =0x100
+	mov	w8, #256
 	ccmp	w1, #19, #4, ne
 	csel	w8, w8, wzr, eq
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000109:                   // @func0000000000000109
-// %bb.0:                               // %entry
-	mov	w8, #16194                      // =0x3f42
+
+func0000000000000109:
+	mov	w8, #16194
 	cmp	w1, w8
-	mov	w8, #16199                      // =0x3f47
+	mov	w8, #16199
 	ccmp	w1, w8, #4, ne
-	mov	w8, #256                        // =0x100
+	mov	w8, #256
 	csel	w8, w8, wzr, eq
 	add	w0, w0, w8
 	ret
-                                        // -- End function
+

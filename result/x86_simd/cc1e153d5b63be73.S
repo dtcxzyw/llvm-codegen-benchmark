@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func0000000000000210:                   # @func0000000000000210
+	.long	0x3f800000
+func0000000000000210:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -11,11 +11,12 @@ func0000000000000210:                   # @func0000000000000210
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x3cffff04                      # float 0.0312495306
+	.long	0x3cffff04
 .LCPI1_1:
-	.long	0x41200000                      # float 10
-func0000000000000088:                   # @func0000000000000088
+	.long	0x41200000
+func0000000000000088:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vcmpltps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
@@ -25,9 +26,10 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0xcf000000                      # float -2.14748365E+9
-func0000000000000044:                   # @func0000000000000044
+	.long	0xcf000000
+func0000000000000044:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -38,11 +40,12 @@ func0000000000000044:                   # @func0000000000000044
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI3_1:
-	.long	0x40c90fdb                      # float 6.28318548
-func0000000000000104:                   # @func0000000000000104
+	.long	0x40c90fdb
+func0000000000000104:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vandps	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
@@ -51,11 +54,12 @@ func0000000000000104:                   # @func0000000000000104
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	0xc3010000                      # float -129
+	.long	0xc3010000
 .LCPI4_1:
-	.long	0x43000000                      # float 128
-func0000000000000298:                   # @func0000000000000298
+	.long	0x43000000
+func0000000000000298:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vcmpleps	.LCPI4_0(%rip){1to16}, %zmm0, %k1
@@ -65,9 +69,10 @@ func0000000000000298:                   # @func0000000000000298
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.long	0x7f7fffff                      # float 3.40282347E+38
-func0000000000000050:                   # @func0000000000000050
+	.long	0x7f7fffff
+func0000000000000050:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -78,3 +83,4 @@ func0000000000000050:                   # @func0000000000000050
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,25 +1,28 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	andi	a1, a1, 15
 	li	a2, 3
 	bltu	a1, a2, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andi	a1, a1, 15
 	li	a2, 15
 	beq	a1, a2, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	andi	a1, a1, 255
 	li	a2, 2
 	bltu	a2, a1, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a2, 655360
 	lui	a3, 65536
 	addiw	a2, a2, -1
@@ -28,5 +31,6 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a3, a3, -1
 	blt	a3, a2, .LBB3_2
 	mv	a0, a1
-.LBB3_2:                                # %entry
+.LBB3_2:
 	ret
+

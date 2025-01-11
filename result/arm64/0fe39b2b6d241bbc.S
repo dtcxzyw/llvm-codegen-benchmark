@@ -1,5 +1,4 @@
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+func0000000000000034:
 	fabs	d0, d0
 	fmov	d1, #1.00000000
 	orr	w9, w0, w1
@@ -8,9 +7,8 @@ func0000000000000034:                   // @func0000000000000034
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	fabs	d0, d0
 	fmov	d1, #1.00000000
 	orr	w9, w0, w1
@@ -19,10 +17,9 @@ func000000000000002c:                   // @func000000000000002c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	x8, #158329674399744            // =0x900000000000
+
+func0000000000000008:
+	mov	x8, #158329674399744
 	fabs	d0, d0
 	orr	w9, w0, w1
 	movk	x8, #14875, lsl #48
@@ -32,11 +29,10 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	fmov	x8, d0
-	mov	x9, #9218868437227405311        // =0x7fefffffffffffff
+	mov	x9, #9218868437227405311
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
 	orr	w9, w0, w1
@@ -44,11 +40,10 @@ func0000000000000024:                   // @func0000000000000024
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	fmov	x8, d0
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
 	orr	w9, w0, w1
@@ -56,11 +51,10 @@ func000000000000001c:                   // @func000000000000001c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	fmov	x8, d0
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
 	orr	w9, w0, w1
@@ -68,4 +62,4 @@ func0000000000000020:                   // @func0000000000000020
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

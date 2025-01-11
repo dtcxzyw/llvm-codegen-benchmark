@@ -1,4 +1,4 @@
-func0000000000001150:                   # @func0000000000001150
+func0000000000001150:
 	leaq	(%rdi,%rdx,8), %rax
 	cmpq	%rsi, %rax
 	setbe	%cl
@@ -6,7 +6,8 @@ func0000000000001150:                   # @func0000000000001150
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000001910:                   # @func0000000000001910
+
+func0000000000001910:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000001910:                   # @func0000000000001910
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000001110:                   # @func0000000000001110
+
+func0000000000001110:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
 	setb	%cl
@@ -22,7 +24,8 @@ func0000000000001110:                   # @func0000000000001110
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	leaq	(%rdi,%rdx,4), %rax
 	cmpq	%rsi, %rax
 	sete	%cl
@@ -30,7 +33,8 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000001042:                   # @func0000000000001042
+
+func0000000000001042:
 	leaq	(%rdi,%rdx,4), %rax
 	cmpq	%rsi, %rax
 	sete	%cl
@@ -38,3 +42,4 @@ func0000000000001042:                   # @func0000000000001042
 	sete	%al
 	orb	%cl, %al
 	retq
+

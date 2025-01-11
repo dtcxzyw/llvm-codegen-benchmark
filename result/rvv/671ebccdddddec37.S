@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x7e7fffff                      # float 8.50705867E+37
-func0000000000000022:                   # @func0000000000000022
+	.word	0x7e7fffff
+func0000000000000022:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -10,3 +10,4 @@ func0000000000000022:                   # @func0000000000000022
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
+

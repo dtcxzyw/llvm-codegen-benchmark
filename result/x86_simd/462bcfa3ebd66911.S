@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm1, %ecx
 	xorl	%edx, %edx
@@ -20,9 +20,10 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$3, %eax, %xmm2, %xmm0
-	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	vpmovzxwq	%xmm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm1, %ecx
 	xorl	%edx, %edx
@@ -44,5 +45,6 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$3, %eax, %xmm2, %xmm0
-	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
+	vpmovzxwq	%xmm0, %ymm0
 	retq
+

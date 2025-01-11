@@ -1,4 +1,4 @@
-func00000000000000ac:                   # @func00000000000000ac
+func00000000000000ac:
 	lui	a2, 260096
 	fmv.w.x	fa5, zero
 	fle.s	a3, fa5, fa0
@@ -8,3 +8,4 @@ func00000000000000ac:                   # @func00000000000000ac
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

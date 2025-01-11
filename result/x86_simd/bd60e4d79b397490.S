@@ -1,4 +1,4 @@
-func0000000000000126:                   # @func0000000000000126
+func0000000000000126:
 	vpaddd	%ymm0, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -8,7 +8,8 @@ func0000000000000126:                   # @func0000000000000126
 	vpcmpnltd	%ymm4, %ymm1, %k1
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vpaddd	%ymm0, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -18,3 +19,4 @@ func0000000000000026:                   # @func0000000000000026
 	vpcmpgtd	%ymm4, %ymm1, %k1
 	vpaddd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
+

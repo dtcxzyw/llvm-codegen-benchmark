@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -7,7 +7,8 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -16,24 +17,25 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-	.short	561                             # 0x231
-func0000000000000010:                   # @func0000000000000010
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+	.short	561
+func0000000000000010:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -42,24 +44,25 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-func0000000000000008:                   # @func0000000000000008
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+func0000000000000008:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -68,3 +71,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

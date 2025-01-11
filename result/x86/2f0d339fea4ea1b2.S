@@ -1,4 +1,4 @@
-func00000000000003a8:                   # @func00000000000003a8
+func00000000000003a8:
 	andl	$63, %esi
 	movl	$64, %eax
 	subq	%rsi, %rax
@@ -8,17 +8,20 @@ func00000000000003a8:                   # @func00000000000003a8
 	cmpq	$64, %rcx
 	setae	%al
 	retq
-func0000000000000301:                   # @func0000000000000301
-	andl	$8191, %esi                     # imm = 0x1FFF
-	movl	$8192, %eax                     # imm = 0x2000
+
+func0000000000000301:
+	andl	$8191, %esi
+	movl	$8192, %eax
 	subq	%rsi, %rax
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func0000000000000381:                   # @func0000000000000381
-	andl	$1023, %esi                     # imm = 0x3FF
-	movl	$1024, %eax                     # imm = 0x400
+
+func0000000000000381:
+	andl	$1023, %esi
+	movl	$1024, %eax
 	subq	%rsi, %rax
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
+

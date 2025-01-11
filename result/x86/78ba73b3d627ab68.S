@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	leaq	-128(%rsi), %rax
 	addq	$127, %rsi
 	testq	%rax, %rax
@@ -11,3 +11,4 @@ func000000000000008a:                   # @func000000000000008a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
+

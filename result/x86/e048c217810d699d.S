@@ -1,5 +1,6 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	addq	%rdi, %rdx
-	movabsq	$-7070675565921424023, %rax     # imm = 0x9DDFEA08EB382D69
+	movabsq	$-7070675565921424023, %rax
 	mulxq	%rax, %rax, %rdx
 	retq
+

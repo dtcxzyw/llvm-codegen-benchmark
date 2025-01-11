@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	2                               # 0x2
-func00000000000000a6:                   # @func00000000000000a6
+	.quad	2
+func00000000000000a6:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpmulld	%xmm2, %xmm1, %xmm1
@@ -10,3 +10,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

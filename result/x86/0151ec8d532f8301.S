@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	leaq	1(%rsi), %rcx
 	movl	%ecx, %eax
 	andl	$15, %eax
@@ -7,7 +7,8 @@ func000000000000003f:                   # @func000000000000003f
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	13(%rsi), %rcx
 	movl	%ecx, %eax
 	andl	$7, %eax
@@ -16,3 +17,4 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+

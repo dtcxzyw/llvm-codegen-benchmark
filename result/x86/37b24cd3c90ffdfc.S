@@ -1,7 +1,8 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	shrxq	%rsi, %rdi, %rax
 	movl	%eax, %ecx
-	movl	$3435973837, %eax               # imm = 0xCCCCCCCD
+	movl	$3435973837, %eax
 	imulq	%rcx, %rax
 	shrq	$35, %rax
 	retq
+

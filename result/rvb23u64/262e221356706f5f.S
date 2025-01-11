@@ -1,4 +1,4 @@
-func000000000000042a:                   # @func000000000000042a
+func000000000000042a:
 	minu	a2, a2, a0
 	slti	a0, a0, 0
 	xor	a1, a1, a2
@@ -6,3 +6,4 @@ func000000000000042a:                   # @func000000000000042a
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
+

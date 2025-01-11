@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	lui	a0, 522240
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
@@ -8,7 +8,8 @@ func0000000000000015:                   # @func0000000000000015
 	vadd.vv	v8, v8, v10
 	vrsub.vi	v8, v8, 0
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 2
 	vmseq.vi	v0, v12, 0
@@ -16,3 +17,4 @@ func0000000000000011:                   # @func0000000000000011
 	vmerge.vvm	v8, v10, v8, v0
 	vrsub.vi	v8, v8, 0
 	ret
+

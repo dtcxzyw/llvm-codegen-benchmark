@@ -1,4 +1,4 @@
-func0000000000000484:                   # @func0000000000000484
+func0000000000000484:
 	andl	$-33, %esi
 	addl	$-65, %esi
 	cmpl	$26, %esi
@@ -7,7 +7,8 @@ func0000000000000484:                   # @func0000000000000484
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	andl	$127, %esi
 	addl	$-7, %esi
 	cmpl	$-2, %esi
@@ -16,7 +17,8 @@ func0000000000000424:                   # @func0000000000000424
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	andl	$-33, %esi
 	addl	$-65, %esi
 	cmpl	$26, %esi
@@ -25,3 +27,4 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	orb	%cl, %al
 	retq
+

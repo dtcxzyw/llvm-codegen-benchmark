@@ -1,4 +1,4 @@
-func0000000000000146:                   # @func0000000000000146
+func0000000000000146:
 	subq	%rdx, %rsi
 	sarq	$2, %rsi
 	leaq	-1(%rsi), %rax
@@ -8,7 +8,8 @@ func0000000000000146:                   # @func0000000000000146
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
 	leaq	-1(%rsi), %rax
@@ -18,3 +19,4 @@ func0000000000000046:                   # @func0000000000000046
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
+

@@ -1,6 +1,6 @@
-func000000000000052b:                   # @func000000000000052b
+func000000000000052b:
 	xorl	%ecx, %ecx
-	cmpl	$1000, %esi                     # imm = 0x3E8
+	cmpl	$1000, %esi
 	setge	%cl
 	addq	$3, %rcx
 	cmpl	$100, %esi
@@ -8,3 +8,4 @@ func000000000000052b:                   # @func000000000000052b
 	cmovgeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

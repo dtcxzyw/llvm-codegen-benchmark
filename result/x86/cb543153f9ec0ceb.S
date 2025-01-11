@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	sarl	$8, %edi
 	cmpl	$255, %edi
 	movl	$255, %eax
@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	sarl	$31, %ecx
 	andnl	%eax, %ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sarl	$23, %edi
 	cmpl	$127, %edi
 	movl	$127, %ecx
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$-128, %eax
 	cmovgel	%ecx, %eax
 	retq
+

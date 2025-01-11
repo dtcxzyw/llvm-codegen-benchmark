@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	andi	a1, a1, 1
 	li	a3, 32
 	czero.nez	a1, a3, a1
@@ -8,7 +8,8 @@ func0000000000000054:                   # @func0000000000000054
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	andi	a1, a1, 1
 	li	a3, 32
 	czero.nez	a1, a3, a1
@@ -18,3 +19,4 @@ func0000000000000044:                   # @func0000000000000044
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vcmpnltpd	%zmm2, %zmm0, %k2 {%k1}
@@ -7,7 +7,8 @@ func000000000000000b:                   # @func000000000000000b
 	vcmpnltpd	%zmm3, %zmm1, %k1 {%k1}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vcmpnltpd	%zmm0, %zmm2, %k2 {%k1}
@@ -16,7 +17,8 @@ func000000000000000d:                   # @func000000000000000d
 	vcmpnltpd	%zmm1, %zmm3, %k1 {%k1}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vcmpltpd	%zmm2, %zmm0, %k2 {%k1}
@@ -25,7 +27,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcmpltpd	%zmm3, %zmm1, %k1 {%k1}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vcmpnlepd	%zmm0, %zmm2, %k2 {%k1}
@@ -34,7 +37,8 @@ func0000000000000005:                   # @func0000000000000005
 	vcmpnlepd	%zmm1, %zmm3, %k1 {%k1}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
 	vcmpltpd	%zmm0, %zmm2, %k2 {%k1}
@@ -43,3 +47,4 @@ func0000000000000004:                   # @func0000000000000004
 	vcmpltpd	%zmm1, %zmm3, %k1 {%k1}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
+

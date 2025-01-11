@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3f000000                      # float 0.5
-func0000000000000004:                   # @func0000000000000004
+	.long	0x3f000000
+func0000000000000004:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -8,9 +8,10 @@ func0000000000000004:                   # @func0000000000000004
 	vmovaps	%zmm0, %zmm2 {%k1}
 	vmovaps	%zmm2, %zmm0
 	retq
+
 .LCPI1_0:
-	.long	0x40800000                      # float 4
-func0000000000000002:                   # @func0000000000000002
+	.long	0x40800000
+func0000000000000002:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -18,3 +19,4 @@ func0000000000000002:                   # @func0000000000000002
 	vmovaps	%zmm0, %zmm2 {%k1}
 	vmovaps	%zmm2, %zmm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	slli	a3, a2, 32
 	lui	a4, 335544
 	addi	a4, a4, 1311
@@ -13,9 +13,10 @@ func0000000000000088:                   # @func0000000000000088
 	add	a1, a1, a2
 	bltu	a4, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	slli	a3, a2, 32
 	lui	a4, 524408
 	addi	a4, a4, 113
@@ -33,5 +34,6 @@ func00000000000000f8:                   # @func00000000000000f8
 	addiw	a4, a4, -31
 	bltu	a4, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

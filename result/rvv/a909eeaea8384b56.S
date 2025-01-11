@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	lui	a0, 8
 	addi	a0, a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -10,3 +10,4 @@ func0000000000000015:                   # @func0000000000000015
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	ret
+

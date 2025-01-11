@@ -1,4 +1,4 @@
-func0000000000001084:                   # @func0000000000001084
+func0000000000001084:
 	srliw	a3, a2, 16
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -10,7 +10,8 @@ func0000000000001084:                   # @func0000000000001084
 	srliw	a0, a0, 28
 	seqz	a0, a0
 	ret
-func0000000000001086:                   # @func0000000000001086
+
+func0000000000001086:
 	srliw	a3, a2, 28
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -22,7 +23,8 @@ func0000000000001086:                   # @func0000000000001086
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
-func000000000000108a:                   # @func000000000000108a
+
+func000000000000108a:
 	srliw	a3, a2, 28
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -35,7 +37,8 @@ func000000000000108a:                   # @func000000000000108a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000002318:                   # @func0000000000002318
+
+func0000000000002318:
 	srliw	a3, a2, 16
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
@@ -49,7 +52,8 @@ func0000000000002318:                   # @func0000000000002318
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1
 	ret
-func0000000000006318:                   # @func0000000000006318
+
+func0000000000006318:
 	sext.w	a3, a2
 	sltiu	a3, a3, 256
 	czero.eqz	a2, a2, a3
@@ -64,9 +68,11 @@ func0000000000006318:                   # @func0000000000006318
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	or	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
+

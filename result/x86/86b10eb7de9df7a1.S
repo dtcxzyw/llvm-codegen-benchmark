@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testl	%esi, %esi
 	je	.LBB0_2
 	movzbl	%dil, %ecx
@@ -6,6 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$5, %eax
 	cmovael	%ecx, %eax
 	retq
-.LBB0_2:                                # %select.end
+.LBB0_2:
 	movl	%edi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	li	a0, 17
 	slli	a0, a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -8,7 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 	vwmaccu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 2048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -17,7 +18,8 @@ func000000000000000a:                   # @func000000000000000a
 	vwmaccu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v10, v8
 	lui	a0, 1046528
@@ -27,7 +29,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 255
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	li	a0, -292
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -36,7 +39,8 @@ func000000000000001d:                   # @func000000000000001d
 	vwmaccu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 14
 	li	a0, 9
@@ -44,7 +48,8 @@ func000000000000001f:                   # @func000000000000001f
 	vwmaccu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 48
 	addi	a0, a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -55,7 +60,8 @@ func0000000000000005:                   # @func0000000000000005
 	vwmaccsu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	li	a0, 1000
@@ -63,3 +69,4 @@ func000000000000000d:                   # @func000000000000000d
 	vwmaccu.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
+

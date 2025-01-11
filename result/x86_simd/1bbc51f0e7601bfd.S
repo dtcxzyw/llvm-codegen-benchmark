@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.byte	6                               # 0x6
-	.byte	6                               # 0x6
-	.byte	6                               # 0x6
-	.byte	6                               # 0x6
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,10 +16,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,12 +33,13 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.quad	-3                              # 0xfffffffffffffffd
+	.quad	-3
 .LCPI0_3:
 	.zero	4,6
-func00000000000000a1:                   # @func00000000000000a1
-	vpmovzxbq	%xmm0, %ymm1            # ymm1 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+func00000000000000a1:
+	vpmovzxbq	%xmm0, %ymm1
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm1, %ymm0 {%k1} {z}
 	retq
+

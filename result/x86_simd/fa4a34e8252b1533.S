@@ -1,4 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	vfmsub213pd	%zmm2, %zmm0, %zmm0     # zmm0 = (zmm0 * zmm0) - zmm2
-	vfmsub213pd	%zmm3, %zmm1, %zmm1     # zmm1 = (zmm1 * zmm1) - zmm3
+func0000000000000000:
+	vfmsub213pd	%zmm2, %zmm0, %zmm0
+	vfmsub213pd	%zmm3, %zmm1, %zmm1
 	retq
+

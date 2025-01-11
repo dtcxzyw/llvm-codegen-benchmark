@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	srai	a1, a1, 3
 	lui	a2, 748983
 	addiw	a2, a2, -585
@@ -8,10 +8,11 @@ func000000000000000b:                   # @func000000000000000b
 	mv	a2, a1
 	bltu	a0, a1, .LBB0_2
 	mv	a2, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	add	a0, a2, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -21,6 +22,7 @@ func0000000000000009:                   # @func0000000000000009
 	mv	a2, a1
 	bltu	a0, a1, .LBB1_2
 	mv	a2, a0
-.LBB1_2:                                # %entry
+.LBB1_2:
 	add	a0, a2, a1
 	ret
+

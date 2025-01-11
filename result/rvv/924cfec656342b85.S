@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-2972493582642298179            # 0xd6bf94d5e57a42bd
-func000000000000000a:                   # @func000000000000000a
+	.quad	-2972493582642298179
+func000000000000000a:
 	li	a0, 32
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
@@ -12,3 +12,4 @@ func000000000000000a:                   # @func000000000000000a
 	vmulhu.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 23
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	li	a0, 256
@@ -12,7 +12,8 @@ func0000000000000043:                   # @func0000000000000043
 	lui	a0, 2
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000629:                   # @func0000000000000629
+
+func0000000000000629:
 	li	a0, -1
 	bclri	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,7 +29,8 @@ func0000000000000629:                   # @func0000000000000629
 	vmerge.vvm	v8, v8, v9, v0
 	vor.vi	v8, v8, 8
 	ret
-func0000000000000209:                   # @func0000000000000209
+
+func0000000000000209:
 	li	a0, -1
 	bclri	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -44,7 +46,8 @@ func0000000000000209:                   # @func0000000000000209
 	vmerge.vvm	v8, v8, v9, v0
 	vor.vi	v8, v8, 8
 	ret
-func0000000000000129:                   # @func0000000000000129
+
+func0000000000000129:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
@@ -59,7 +62,8 @@ func0000000000000129:                   # @func0000000000000129
 	vmerge.vvm	v8, v8, v9, v0
 	vor.vi	v8, v8, 8
 	ret
-func0000000000000229:                   # @func0000000000000229
+
+func0000000000000229:
 	li	a0, -1
 	bclri	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -75,7 +79,8 @@ func0000000000000229:                   # @func0000000000000229
 	vmerge.vvm	v8, v8, v9, v0
 	vor.vi	v8, v8, 8
 	ret
-func0000000000000529:                   # @func0000000000000529
+
+func0000000000000529:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
@@ -90,3 +95,4 @@ func0000000000000529:                   # @func0000000000000529
 	vmerge.vvm	v8, v8, v9, v0
 	vor.vi	v8, v8, 4
 	ret
+

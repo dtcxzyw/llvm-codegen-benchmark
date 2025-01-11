@@ -1,6 +1,7 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	subq	%rsi, %rdx
-	cmpq	$-8192, %rdx                    # imm = 0xE000
+	cmpq	$-8192, %rdx
 	setae	%al
 	andb	%dil, %al
 	retq
+

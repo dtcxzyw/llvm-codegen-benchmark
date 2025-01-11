@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	movq	%rdi, %rax
 	subl	%edx, %esi
 	leal	63(%rsi), %ecx
@@ -7,7 +7,8 @@ func0000000000000028:                   # @func0000000000000028
 	sarl	$6, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	movq	%rdi, %rax
 	subl	%edx, %esi
 	movl	%esi, %ecx
@@ -16,7 +17,8 @@ func0000000000000020:                   # @func0000000000000020
 	sarl	%ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	movq	%rdi, %rax
 	subl	%edx, %esi
 	movl	%esi, %ecx
@@ -25,7 +27,8 @@ func0000000000000030:                   # @func0000000000000030
 	sarl	%ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -33,7 +36,8 @@ func0000000000000031:                   # @func0000000000000031
 	sarl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -41,7 +45,8 @@ func0000000000000018:                   # @func0000000000000018
 	sarl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -49,7 +54,8 @@ func0000000000000021:                   # @func0000000000000021
 	sarl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	shrl	$31, %eax
@@ -57,7 +63,8 @@ func0000000000000000:                   # @func0000000000000000
 	sarl	%eax
 	addl	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	subl	%edx, %esi
 	leal	31(%rsi), %eax
 	testl	%esi, %esi
@@ -65,7 +72,8 @@ func0000000000000001:                   # @func0000000000000001
 	sarl	$5, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movq	%rdi, %rax
 	subl	%edx, %esi
 	movl	%esi, %ecx
@@ -74,3 +82,4 @@ func0000000000000008:                   # @func0000000000000008
 	sarl	%ecx
 	subl	%ecx, %eax
 	retq
+

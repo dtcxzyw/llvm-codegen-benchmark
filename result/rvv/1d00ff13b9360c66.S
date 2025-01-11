@@ -1,4 +1,4 @@
-func000000000000006d:                   # @func000000000000006d
+func000000000000006d:
 	lui	a0, 2
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vx	v0, v12, a0
@@ -7,7 +7,8 @@ func000000000000006d:                   # @func000000000000006d
 	vadd.vx	v8, v8, a0
 	vadd.vv	v8, v8, v10, v0.t
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	lui	a0, 2
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vx	v0, v12, a0
@@ -16,3 +17,4 @@ func000000000000006c:                   # @func000000000000006c
 	vadd.vx	v8, v8, a0
 	vadd.vv	v8, v8, v10, v0.t
 	ret
+

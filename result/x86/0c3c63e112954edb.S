@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andb	$1, %dil
 	leal	(%rsi,%rsi), %ecx
 	shlq	$2, %rcx
@@ -7,17 +7,20 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	leal	(%rsi,%rsi), %ecx
 	shlq	$2, %rcx
 	testb	$1, %dil
 	movl	$64, %eax
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leal	(%rsi,%rsi), %ecx
 	shlq	$2, %rcx
 	testb	$1, %dil
 	movl	$64, %eax
 	cmoveq	%rcx, %rax
 	retq
+

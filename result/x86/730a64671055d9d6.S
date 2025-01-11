@@ -1,13 +1,14 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vcvttsd2si	%xmm0, %eax
-	cmpl	$1023, %eax                     # imm = 0x3FF
-	movl	$1023, %ecx                     # imm = 0x3FF
+	cmpl	$1023, %eax
+	movl	$1023, %ecx
 	cmovll	%eax, %ecx
 	cmpl	$32, %ecx
 	movl	$31, %eax
 	cmovgel	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$255, %eax
 	movl	$255, %ecx
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	sarl	$31, %eax
 	andnl	%ecx, %eax, %eax
 	retq
+

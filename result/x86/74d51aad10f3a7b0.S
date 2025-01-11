@@ -1,4 +1,4 @@
-func0000000000000a41:                   # @func0000000000000a41
+func0000000000000a41:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rdx, %rax
 	addq	%r9, %rax
@@ -8,7 +8,8 @@ func0000000000000a41:                   # @func0000000000000a41
 	adcq	%rsi, %rcx
 	sete	%al
 	retq
-func0000000000000a4c:                   # @func0000000000000a4c
+
+func0000000000000a4c:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rdx, %rax
 	addq	%r9, %rax
@@ -18,7 +19,8 @@ func0000000000000a4c:                   # @func0000000000000a4c
 	adcq	%rsi, %rcx
 	setne	%al
 	retq
-func0000000000000a48:                   # @func0000000000000a48
+
+func0000000000000a48:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rdx, %rax
 	addq	%r9, %rax
@@ -29,3 +31,4 @@ func0000000000000a48:                   # @func0000000000000a48
 	cmpq	$40, %rcx
 	setae	%al
 	retq
+

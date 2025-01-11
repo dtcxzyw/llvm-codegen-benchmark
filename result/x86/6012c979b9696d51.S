@@ -1,5 +1,6 @@
-func0000000000000041:                   # @func0000000000000041
-	andl	$2048, %edi                     # imm = 0x800
+func0000000000000041:
+	andl	$2048, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq
+

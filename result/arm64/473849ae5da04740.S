@@ -1,9 +1,7 @@
-func0000000000000130:                   // @func0000000000000130
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func0000000000000130:
 	lsr	x8, x0, x2
 	cmp	x8, #0
 	csinc	x8, x1, xzr, eq
 	mul	x0, x8, x0
 	ret
-                                        // -- End function
+

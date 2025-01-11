@@ -1,5 +1,4 @@
-func000000000000005f:                   // @func000000000000005f
-// %bb.0:                               // %entry
+func000000000000005f:
 	cmp	w2, #0
 	cneg	w8, w2, mi
 	cmp	w1, #0
@@ -7,9 +6,8 @@ func000000000000005f:                   // @func000000000000005f
 	cneg	w9, w1, mi
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	cmp	w2, #0
 	cneg	w8, w2, mi
 	cmp	w1, #0
@@ -17,4 +15,4 @@ func0000000000000050:                   // @func0000000000000050
 	cneg	w9, w1, mi
 	add	w0, w8, w9
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000161:                   # @func0000000000000161
+func0000000000000161:
 	addl	$28, %esi
 	andl	$31, %esi
 	movl	%edi, %eax
@@ -7,3 +7,4 @@ func0000000000000161:                   # @func0000000000000161
 	orl	%esi, %eax
 	sete	%al
 	retq
+

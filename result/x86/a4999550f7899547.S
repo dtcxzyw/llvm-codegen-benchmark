@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	cmovbeq	%rdi, %rsi
@@ -8,16 +8,18 @@ func000000000000000f:                   # @func000000000000000f
 	shlq	$5, %rax
 	leaq	(%rax,%rax,2), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	cmovbeq	%rdi, %rsi
 	cmpq	$5, %rsi
 	movl	$4, %eax
 	cmovaeq	%rsi, %rax
-	imulq	$424, %rax, %rax                # imm = 0x1A8
+	imulq	$424, %rax, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	cmovbeq	%rdi, %rsi
@@ -27,12 +29,14 @@ func000000000000000c:                   # @func000000000000000c
 	shlq	$4, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
 	cmovbeq	%rdi, %rsi
 	cmpq	$5, %rsi
 	movl	$4, %eax
 	cmovaeq	%rsi, %rax
-	imulq	$944, %rax, %rax                # imm = 0x3B0
+	imulq	$944, %rax, %rax
 	retq
+

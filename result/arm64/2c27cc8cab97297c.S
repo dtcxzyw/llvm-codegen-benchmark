@@ -1,9 +1,8 @@
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+func0000000000000012:
 	sub	w9, w0, w1
-	mov	w8, #52429                      // =0xcccd
+	mov	w8, #52429
 	and	w9, w9, #0xffff
 	mul	w8, w9, w8
 	lsr	w0, w8, #24
 	ret
-                                        // -- End function
+

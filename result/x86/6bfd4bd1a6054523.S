@@ -1,4 +1,4 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000001f8:
 	andb	$1, %dl
 	andb	$1, %sil
 	addb	%dl, %sil
@@ -6,3 +6,4 @@ func00000000000001f8:                   # @func00000000000001f8
 	cmpb	$2, %sil
 	setae	%al
 	retq
+

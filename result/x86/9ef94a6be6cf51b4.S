@@ -1,10 +1,11 @@
-func0000000000000015:                   # @func0000000000000015
-	imull	$666643, %edx, %eax             # imm = 0xA2C13
+func0000000000000015:
+	imull	$666643, %edx, %eax
 	addl	%esi, %eax
-	andl	$2097151, %eax                  # imm = 0x1FFFFF
+	andl	$2097151, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	(%rdx,%rax,2), %rax
 	addq	%rsi, %rax
@@ -12,7 +13,8 @@ func0000000000000003:                   # @func0000000000000003
 	bzhiq	%rcx, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	(%rdx,%rax,2), %rax
 	addq	%rsi, %rax
@@ -20,13 +22,15 @@ func000000000000003c:                   # @func000000000000003c
 	bzhiq	%rcx, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	imull	$666643, %edx, %eax             # imm = 0xA2C13
+
+func0000000000000011:
+	imull	$666643, %edx, %eax
 	addl	%esi, %eax
-	andl	$2097151, %eax                  # imm = 0x1FFFFF
+	andl	$2097151, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	leaq	(%rdx,%rdx,8), %rax
 	leaq	(%rdx,%rax,2), %rax
 	addq	%rsi, %rax
@@ -34,10 +38,12 @@ func000000000000003f:                   # @func000000000000003f
 	bzhiq	%rcx, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	leaq	(%rdx,%rdx,4), %rax
 	addq	%rsi, %rax
 	movb	$44, %cl
 	bzhiq	%rcx, %rax, %rax
 	addq	%rdi, %rax
 	retq
+

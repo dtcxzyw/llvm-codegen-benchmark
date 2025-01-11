@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -6,7 +6,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsrl.vi	v10, v10, 6
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -14,7 +15,8 @@ func0000000000000007:                   # @func0000000000000007
 	vsrl.vi	v10, v10, 6
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -22,7 +24,8 @@ func0000000000000005:                   # @func0000000000000005
 	vsrl.vi	v10, v10, 6
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 9
 	lui	a0, 69
@@ -31,3 +34,4 @@ func0000000000000006:                   # @func0000000000000006
 	vsrl.vi	v10, v10, 7
 	vwaddu.wv	v8, v8, v10
 	ret
+

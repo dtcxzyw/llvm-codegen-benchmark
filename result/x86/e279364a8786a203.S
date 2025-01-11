@@ -1,4 +1,4 @@
-func0000000000004082:                   # @func0000000000004082
+func0000000000004082:
 	cmpb	$-32, %dl
 	setb	%cl
 	testq	%rsi, %rsi
@@ -8,3 +8,4 @@ func0000000000004082:                   # @func0000000000004082
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
+

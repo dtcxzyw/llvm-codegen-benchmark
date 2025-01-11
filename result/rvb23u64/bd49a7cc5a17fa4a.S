@@ -1,4 +1,4 @@
-func00000000000002e1:                   # @func00000000000002e1
+func00000000000002e1:
 	sub	a1, a1, a2
 	li	a2, 1
 	srli	a1, a1, 4
@@ -7,3 +7,4 @@ func00000000000002e1:                   # @func00000000000002e1
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

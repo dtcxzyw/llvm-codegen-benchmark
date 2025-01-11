@@ -1,17 +1,18 @@
 .LCPI0_0:
-	.short	5                               # 0x5
-	.short	5                               # 0x5
-	.short	5                               # 0x5
-	.short	5                               # 0x5
+	.short	5
+	.short	5
+	.short	5
+	.short	5
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
 .LCPI0_1:
-	.short	5                               # 0x5
-func000000000000001f:                   # @func000000000000001f
-	vpbroadcastw	.LCPI0_1(%rip), %xmm2   # xmm2 = [5,5,5,5,5,5,5,5]
+	.short	5
+func000000000000001f:
+	vpbroadcastw	.LCPI0_1(%rip), %xmm2
 	vpsubw	%xmm1, %xmm2, %xmm1
-	vpmovzxwq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
+	vpmovzxwq	%xmm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	7                               # 0x7
-func0000000000000008:                   # @func0000000000000008
+	.quad	7
+func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -9,45 +9,49 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	6                               # 0x6
+	.quad	6
 .LCPI1_1:
-	.quad	5                               # 0x5
-func0000000000000028:                   # @func0000000000000028
+	.quad	5
+func0000000000000028:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [6,6,6,6]
-	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [5,5,5,5]
+	vpbroadcastq	.LCPI1_0(%rip), %ymm1
+	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1}
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	12                              # 0xc
+	.quad	12
 .LCPI2_1:
-	.quad	16                              # 0x10
-func0000000000000048:                   # @func0000000000000048
+	.quad	16
+func0000000000000048:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
-	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [12,12,12,12]
-	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [16,16,16,16]
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1
+	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1}
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	5000                            # 0x1388
+	.quad	5000
 .LCPI3_1:
-	.quad	1                               # 0x1
-func0000000000000006:                   # @func0000000000000006
+	.quad	1
+func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
-	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [5000,5000,5000,5000]
-	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1]
+	vpbroadcastq	.LCPI3_0(%rip), %ymm1
+	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1}
 	vpcmpgtq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

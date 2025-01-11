@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	vcvttss2si	%xmm0, %eax
 	addl	%esi, %eax
 	setns	%cl
@@ -6,3 +6,4 @@ func00000000000004ca:                   # @func00000000000004ca
 	setl	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000003c21:                   # @func0000000000003c21
+func0000000000003c21:
 	cmpq	$63, %rdx
 	sete	%cl
 	addq	$16, %rsi
@@ -6,7 +6,8 @@ func0000000000003c21:                   # @func0000000000003c21
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000003021:                   # @func0000000000003021
+
+func0000000000003021:
 	cmpq	$3, %rdx
 	sete	%cl
 	addq	$2, %rsi
@@ -14,8 +15,9 @@ func0000000000003021:                   # @func0000000000003021
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000c81:                   # @func0000000000000c81
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000c81:
+	movabsq	$-4294967296, %rax
 	addq	%rax, %rdx
 	incq	%rax
 	cmpq	%rax, %rdx
@@ -25,8 +27,9 @@ func0000000000000c81:                   # @func0000000000000c81
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000081:
+	movabsq	$-4294967296, %rax
 	addq	%rax, %rdx
 	incq	%rax
 	cmpq	%rax, %rdx
@@ -36,3 +39,4 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	orb	%cl, %al
 	retq
+

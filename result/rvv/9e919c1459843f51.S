@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -10,7 +10,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 576
 	vmacc.vx	v8, a0, v12
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -22,3 +23,4 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, 576
 	vmacc.vx	v8, a0, v12
 	ret
+

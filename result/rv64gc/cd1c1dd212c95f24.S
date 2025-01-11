@@ -1,8 +1,8 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	sext.w	a2, a2
 	bnez	a2, .LBB0_2
 	li	a1, -6
-.LBB0_2:                                # %entry
+.LBB0_2:
 	add	a0, a0, a1
 	lui	a1, 599186
 	addiw	a0, a0, 7
@@ -14,11 +14,12 @@ func0000000000000020:                   # @func0000000000000020
 	sraiw	a0, a0, 2
 	add	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	sext.w	a2, a2
 	bnez	a2, .LBB1_2
 	li	a1, -6
-.LBB1_2:                                # %entry
+.LBB1_2:
 	add	a0, a0, a1
 	lui	a1, 599186
 	addiw	a0, a0, 7
@@ -30,3 +31,4 @@ func0000000000000028:                   # @func0000000000000028
 	sraiw	a0, a0, 2
 	add	a0, a0, a1
 	ret
+

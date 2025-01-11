@@ -1,25 +1,21 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+func000000000000001a:
 	sdiv	w8, w2, w1
 	add	x0, x0, w8, sxtw #2
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	sdiv	w8, w2, w1
 	add	x0, x0, w8, sxtw #2
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	sdiv	w8, w2, w1
 	add	x0, x0, w8, sxtw #2
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	sdiv	w8, w2, w1
-	mov	w9, #96                         // =0x60
+	mov	w9, #96
 	smaddl	x0, w8, w9, x0
 	ret
-                                        // -- End function
+

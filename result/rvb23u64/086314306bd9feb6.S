@@ -1,4 +1,4 @@
-func0000000000000080:                   # @func0000000000000080
+func0000000000000080:
 	sltiu	a3, a2, 3
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -6,7 +6,8 @@ func0000000000000080:                   # @func0000000000000080
 	add	a0, a0, a1
 	slli	a0, a0, 7
 	ret
-func000000000000018d:                   # @func000000000000018d
+
+func000000000000018d:
 	lui	a3, 16
 	addiw	a3, a3, -16
 	sltu	a3, a3, a2
@@ -16,3 +17,4 @@ func000000000000018d:                   # @func000000000000018d
 	add	a0, a0, a1
 	slli	a0, a0, 16
 	ret
+

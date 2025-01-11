@@ -1,4 +1,4 @@
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000000e9:
 	slli	a1, a0, 48
 	lui	a2, 149808
 	mulhu	a1, a1, a2
@@ -17,3 +17,4 @@ func00000000000000e9:                   # @func00000000000000e9
 	czero.eqz	a0, a0, a1
 	zext.h	a0, a0
 	ret
+

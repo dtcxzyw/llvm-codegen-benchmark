@@ -1,4 +1,4 @@
-func0000000000000090:                   # @func0000000000000090
+func0000000000000090:
 	movl	%edi, %eax
 	andb	$-2, %al
 	cmpb	$-114, %al
@@ -8,3 +8,4 @@ func0000000000000090:                   # @func0000000000000090
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	3                               # 0x3
-func0000000000000005:                   # @func0000000000000005
+	.long	3
+func0000000000000005:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm1, %ecx
@@ -23,9 +23,10 @@ func0000000000000005:                   # @func0000000000000005
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %ecx
@@ -49,9 +50,10 @@ func0000000000000004:                   # @func0000000000000004
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %ecx
@@ -75,9 +77,10 @@ func000000000000000c:                   # @func000000000000000c
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %ecx
@@ -101,5 +104,6 @@ func0000000000000009:                   # @func0000000000000009
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

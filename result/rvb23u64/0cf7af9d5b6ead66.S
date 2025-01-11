@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	lui	a2, 8
 	li	a3, 1619
 	addi	a2, a2, -1431
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	lui	a2, 1
 	addi	a2, a2, 337
 	mul	a1, a1, a2
@@ -16,7 +17,8 @@ func0000000000000055:                   # @func0000000000000055
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	lui	a2, 1
 	addi	a2, a2, 337
 	mul	a1, a1, a2
@@ -26,7 +28,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	li	a2, 298
 	mul	a1, a1, a2
 	li	a2, -100
@@ -36,7 +39,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret
-func00000000000000fd:                   # @func00000000000000fd
+
+func00000000000000fd:
 	li	a2, 588
 	mul	a1, a1, a2
 	slli	a2, a0, 2
@@ -47,7 +51,8 @@ func00000000000000fd:                   # @func00000000000000fd
 	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	sh1add	a2, a1, a1
 	slli	a1, a1, 5
 	subw	a1, a1, a2
@@ -56,7 +61,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	lui	a2, 1
 	addi	a2, a2, 337
 	mul	a1, a1, a2
@@ -65,7 +71,8 @@ func0000000000000050:                   # @func0000000000000050
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+
+func00000000000000fa:
 	lui	a2, 8
 	addi	a3, a2, -129
 	mul	a1, a1, a3
@@ -74,14 +81,16 @@ func00000000000000fa:                   # @func00000000000000fa
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	sh2add	a1, a1, a1
 	slli	a1, a1, 4
 	sh1add	a0, a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, 390
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
 	sh2add	a1, a1, a1
@@ -91,7 +100,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+
+func00000000000000f6:
 	lui	a2, 2
 	addi	a2, a2, -255
 	mul	a1, a1, a2
@@ -101,7 +111,8 @@ func00000000000000f6:                   # @func00000000000000f6
 	add	a0, a0, a1
 	addiw	a0, a0, -2011
 	ret
-func00000000000000df:                   # @func00000000000000df
+
+func00000000000000df:
 	lui	a2, 3072
 	addi	a2, a2, 5
 	mul	a1, a1, a2
@@ -113,7 +124,8 @@ func00000000000000df:                   # @func00000000000000df
 	addi	a1, a2, 567
 	addw	a0, a0, a1
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+
+func00000000000000d8:
 	lui	a2, 3072
 	addi	a2, a2, 5
 	mul	a1, a1, a2
@@ -125,7 +137,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	addi	a1, a2, 729
 	addw	a0, a0, a1
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	li	a2, 196
 	mul	a1, a1, a2
 	slli	a2, a0, 2
@@ -136,7 +149,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	addi	a1, a2, 1708
 	addw	a0, a0, a1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	li	a2, 1000
 	sh2add	a0, a0, a0
 	mul	a1, a1, a2
@@ -144,7 +158,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	sh2add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	lui	a2, 2
 	addi	a3, a2, -1922
 	mul	a1, a1, a3
@@ -153,7 +168,8 @@ func0000000000000054:                   # @func0000000000000054
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	lui	a2, 65462
 	addi	a2, a2, -2031
 	mul	a1, a1, a2
@@ -164,7 +180,8 @@ func0000000000000030:                   # @func0000000000000030
 	lui	a1, 32896
 	addw	a0, a0, a1
 	ret
-func00000000000000fe:                   # @func00000000000000fe
+
+func00000000000000fe:
 	lui	a2, 1023
 	lui	a3, 514
 	addi	a2, a2, 1712
@@ -174,7 +191,8 @@ func00000000000000fe:                   # @func00000000000000fe
 	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
-func0000000000000077:                   # @func0000000000000077
+
+func0000000000000077:
 	lui	a2, 1048571
 	addi	a2, a2, 1744
 	mul	a1, a1, a2
@@ -185,7 +203,8 @@ func0000000000000077:                   # @func0000000000000077
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	lui	a2, 1
 	addi	a2, a2, -1879
 	mul	a1, a1, a2
@@ -197,3 +216,4 @@ func0000000000000040:                   # @func0000000000000040
 	addi	a1, a2, 1848
 	addw	a0, a0, a1
 	ret
+

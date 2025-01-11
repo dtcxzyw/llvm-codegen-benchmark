@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	7164004856975580295             # 0x636ba875fd33dc87
-func0000000000000010:                   # @func0000000000000010
+	.quad	7164004856975580295
+func0000000000000010:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -14,3 +14,4 @@ func0000000000000010:                   # @func0000000000000010
 	vnmsub.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12
 	ret
+

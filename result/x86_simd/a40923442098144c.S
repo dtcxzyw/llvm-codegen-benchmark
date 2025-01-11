@@ -6,7 +6,7 @@
 	.zero	4,127
 .LCPI0_3:
 	.zero	4,128
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpmovwb	%ymm1, %xmm0
@@ -15,6 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+
 .LCPI1_0:
 	.zero	16,31
 .LCPI1_1:
@@ -23,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	4,31
 .LCPI1_3:
 	.zero	4,2
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpmovwb	%ymm1, %xmm0
@@ -32,3 +33,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+

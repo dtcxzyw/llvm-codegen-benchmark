@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func0000000000000154:
 	andi	a0, a0, 1
 	srli	a3, a2, 16
 	seqz	a3, a3
@@ -8,7 +8,8 @@ func0000000000000154:                   # @func0000000000000154
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000144:                   # @func0000000000000144
+
+func0000000000000144:
 	andi	a0, a0, 1
 	srli	a3, a2, 16
 	seqz	a3, a3
@@ -18,7 +19,8 @@ func0000000000000144:                   # @func0000000000000144
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func00000000000001d4:                   # @func00000000000001d4
+
+func00000000000001d4:
 	andi	a0, a0, 1
 	srli	a3, a2, 16
 	seqz	a3, a3
@@ -28,3 +30,4 @@ func00000000000001d4:                   # @func00000000000001d4
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

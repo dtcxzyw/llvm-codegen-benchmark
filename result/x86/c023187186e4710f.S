@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -6,7 +6,8 @@ func000000000000008a:                   # @func000000000000008a
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	addq	%rdi, %rdx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000000085:                   # @func0000000000000085
 	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+
+func0000000000000089:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -22,7 +24,8 @@ func0000000000000089:                   # @func0000000000000089
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000a9:                   # @func00000000000000a9
+
+func00000000000000a9:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -30,7 +33,8 @@ func00000000000000a9:                   # @func00000000000000a9
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000004c7:                   # @func00000000000004c7
+
+func00000000000004c7:
 	addq	%rdi, %rdx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -38,7 +42,8 @@ func00000000000004c7:                   # @func00000000000004c7
 	setle	%al
 	andb	%cl, %al
 	retq
-func00000000000004eb:                   # @func00000000000004eb
+
+func00000000000004eb:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setle	%cl
@@ -46,7 +51,8 @@ func00000000000004eb:                   # @func00000000000004eb
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000004cb:                   # @func00000000000004cb
+
+func00000000000004cb:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setl	%cl
@@ -54,7 +60,8 @@ func00000000000004cb:                   # @func00000000000004cb
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000cb:                   # @func00000000000000cb
+
+func00000000000000cb:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setl	%cl
@@ -62,7 +69,8 @@ func00000000000000cb:                   # @func00000000000000cb
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	addq	%rdi, %rdx
 	cmpq	%rdx, %rsi
 	setbe	%cl
@@ -70,3 +78,4 @@ func00000000000000a5:                   # @func00000000000000a5
 	setbe	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm2, %ecx
 	cltd
@@ -24,3 +24,4 @@ func0000000000000007:                   # @func0000000000000007
 	vpsraq	$1, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
+

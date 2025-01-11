@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	movq	%rdi, %rax
 	movslq	%esi, %rcx
 	cqto
@@ -6,7 +6,8 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	setne	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdi, %rax
 	movslq	%esi, %rcx
 	cqto
@@ -14,7 +15,8 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movq	%rdi, %rax
 	movslq	%esi, %rcx
 	cqto
@@ -22,7 +24,8 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rdx, %rdx
 	setns	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movq	%rdi, %rax
 	movslq	%esi, %rcx
 	cqto
@@ -30,3 +33,4 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	retq
+

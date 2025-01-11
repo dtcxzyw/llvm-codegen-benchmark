@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
@@ -11,7 +11,8 @@ func000000000000004c:                   # @func000000000000004c
 	sh2add	a0, a0, a0
 	slliw	a0, a0, 4
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	add	a1, a1, a2
 	lui	a2, 699051
 	slli	a1, a1, 32
@@ -24,7 +25,8 @@ func000000000000000c:                   # @func000000000000000c
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 2
 	ret
-func000000000000004d:                   # @func000000000000004d
+
+func000000000000004d:
 	add	a1, a1, a2
 	lui	a2, 235184
 	andi	a0, a0, 1
@@ -36,3 +38,4 @@ func000000000000004d:                   # @func000000000000004d
 	li	a1, -400
 	mul	a0, a0, a1
 	ret
+

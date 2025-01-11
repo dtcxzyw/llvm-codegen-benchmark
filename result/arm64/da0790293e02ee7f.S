@@ -1,66 +1,60 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	add	w8, w0, w1
 	negs	w9, w8
 	and	w8, w8, #0x7
 	and	w9, w9, #0x7
 	csneg	w0, w8, w9, mi
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #43691                      // =0xaaab
+
+func0000000000000001:
+	mov	w8, #43691
 	add	w9, w0, w1
 	movk	w8, #10922, lsl #16
 	smull	x8, w9, w8
 	lsr	x10, x8, #63
 	lsr	x8, x8, #32
 	add	w8, w8, w10
-	mov	w10, #6                         // =0x6
+	mov	w10, #6
 	msub	w0, w8, w10, w9
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	w8, #43691                      // =0xaaab
+
+func0000000000000004:
+	mov	w8, #43691
 	add	w9, w0, w1
 	movk	w8, #10922, lsl #16
 	smull	x8, w9, w8
 	lsr	x10, x8, #63
 	lsr	x8, x8, #32
 	add	w8, w8, w10
-	mov	w10, #6                         // =0x6
+	mov	w10, #6
 	msub	w0, w8, w10, w9
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	mov	w8, #43691                      // =0xaaab
+
+func000000000000000c:
+	mov	w8, #43691
 	add	w9, w0, w1
 	movk	w8, #10922, lsl #16
 	smull	x8, w9, w8
 	lsr	x10, x8, #63
 	lsr	x8, x8, #32
 	add	w8, w8, w10
-	mov	w10, #6                         // =0x6
+	mov	w10, #6
 	msub	w0, w8, w10, w9
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	w8, #56837                      // =0xde05
+
+func000000000000000d:
+	mov	w8, #56837
 	add	w9, w0, w1
-	mov	w10, #113                       // =0x71
+	mov	w10, #113
 	movk	w8, #18558, lsl #16
 	smull	x8, w9, w8
 	asr	x8, x8, #37
 	add	w8, w8, w8, lsr #31
 	msub	w0, w8, w10, w9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	w8, #9363                       // =0x2493
+
+func0000000000000005:
+	mov	w8, #9363
 	add	w9, w0, w1
 	movk	w8, #37449, lsl #16
 	smull	x8, w9, w8
@@ -71,4 +65,4 @@ func0000000000000005:                   // @func0000000000000005
 	sub	w8, w8, w8, lsl #3
 	add	w0, w9, w8
 	ret
-                                        // -- End function
+

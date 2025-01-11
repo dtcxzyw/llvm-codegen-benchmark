@@ -1,4 +1,4 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000094:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -6,7 +6,8 @@ func0000000000000094:                   # @func0000000000000094
 	cmpq	$8, %rsi
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -14,7 +15,8 @@ func0000000000000081:                   # @func0000000000000081
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func00000000000000b8:                   # @func00000000000000b8
+
+func00000000000000b8:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -22,7 +24,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	cmpq	$4, %rsi
 	setae	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rsi, %rdi
@@ -30,7 +33,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rsi, %rdi
@@ -38,7 +42,8 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	$32, %rsi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rsi, %rdi
@@ -46,7 +51,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$16, %rsi
 	setae	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -54,7 +60,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	cmpq	$16, %rsi
 	setae	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -62,7 +69,8 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	movl	%edx, %eax
 	subq	%rax, %rsi
 	cmpq	%rdi, %rsi
@@ -70,3 +78,4 @@ func0000000000000148:                   # @func0000000000000148
 	cmpq	$8, %rsi
 	setae	%al
 	retq
+

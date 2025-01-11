@@ -1,4 +1,4 @@
-func00000000000001a1:                   # @func00000000000001a1
+func00000000000001a1:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm1, %ymm0, %ymm0
@@ -6,7 +6,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm0, %ymm1, %ymm0
@@ -14,9 +15,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	15                              # 0xf
-func0000000000000008:                   # @func0000000000000008
+	.quad	15
+func0000000000000008:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm1, %ymm0, %ymm0
@@ -24,7 +26,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm0, %ymm1, %ymm0
@@ -32,9 +35,10 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	11                              # 0xb
-func0000000000000004:                   # @func0000000000000004
+	.quad	11
+func0000000000000004:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm0, %ymm1, %ymm0
@@ -42,9 +46,10 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	1                               # 0x1
-func0000000000000181:                   # @func0000000000000181
+	.quad	1
+func0000000000000181:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm1, %ymm0, %ymm0
@@ -52,7 +57,8 @@ func0000000000000181:                   # @func0000000000000181
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+
+func00000000000001ac:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm1, %ymm0, %ymm0
@@ -60,3 +66,4 @@ func00000000000001ac:                   # @func00000000000001ac
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

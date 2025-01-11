@@ -1,5 +1,5 @@
-func0000000000000050:                   # @func0000000000000050
-	cmpq	$65536, %rsi                    # imm = 0x10000
+func0000000000000050:
+	cmpq	$65536, %rsi
 	cmovbq	%rsi, %rdx
 	movq	%rdx, %rax
 	shrq	$8, %rax
@@ -7,8 +7,9 @@ func0000000000000050:                   # @func0000000000000050
 	cmovneq	%rdx, %rax
 	shrq	$4, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpq	$65536, %rsi                    # imm = 0x10000
+
+func0000000000000010:
+	cmpq	$65536, %rsi
 	cmovbq	%rsi, %rdx
 	movq	%rdx, %rax
 	shrq	$8, %rax
@@ -16,3 +17,4 @@ func0000000000000010:                   # @func0000000000000010
 	cmovneq	%rdx, %rax
 	shrq	$4, %rax
 	retq
+

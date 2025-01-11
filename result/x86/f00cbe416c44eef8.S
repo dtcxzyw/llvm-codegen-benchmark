@@ -1,4 +1,4 @@
-func00000000000002a6:                   # @func00000000000002a6
+func00000000000002a6:
 	imulq	%rdi, %rdx
 	subq	%rdx, %rsi
 	addq	$-128, %rsi
@@ -6,3 +6,4 @@ func00000000000002a6:                   # @func00000000000002a6
 	cmpq	%rdi, %rsi
 	setl	%al
 	retq
+

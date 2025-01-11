@@ -1,21 +1,18 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	and	w8, w1, #0x1fffffff
 	sub	w8, w8, w0
 	lsl	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	and	w8, w1, #0x3ffffff
 	sub	w8, w8, w0
 	lsl	w0, w8, #3
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	and	w8, w1, #0x7ffff
 	sub	w8, w8, w0
 	lsl	w0, w8, #1
 	ret
-                                        // -- End function
+

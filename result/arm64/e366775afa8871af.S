@@ -1,34 +1,30 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	fmov	s1, #0.50000000
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	bics	wzr, w8, w0
 	cset	w8, eq
 	fcmp	s0, s1
 	csel	w0, wzr, w8, lt
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	fmov	s1, #0.50000000
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	bics	wzr, w8, w0
 	cset	w8, eq
 	fcmp	s0, s1
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	fmov	s1, #0.75000000
 	fcmp	s0, s1
 	cset	w8, gt
 	and	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
-	mov	w8, #55050                      // =0xd70a
+
+func0000000000000081:
+	mov	w8, #55050
 	tst	w0, #0x100
 	movk	w8, #15395, lsl #16
 	fmov	s1, w8
@@ -36,20 +32,18 @@ func0000000000000081:                   // @func0000000000000081
 	fcmp	s0, s1
 	csel	w0, wzr, w8, le
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	tst	w0, #0x3fffffff
 	cset	w8, eq
 	fcmp	s0, #0.0
 	csel	w0, wzr, w8, ne
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
 	cset	w8, mi
 	and	w0, w8, w0, lsr #18
 	ret
-                                        // -- End function
+

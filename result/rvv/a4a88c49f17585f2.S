@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v14, v16
 	li	a0, 22
@@ -9,7 +9,8 @@ func0000000000000048:                   # @func0000000000000048
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v14, v12
 	ret
-func0000000000000248:                   # @func0000000000000248
+
+func0000000000000248:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v14, v16
 	li	a0, 22
@@ -20,3 +21,4 @@ func0000000000000248:                   # @func0000000000000248
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v14, v12
 	ret
+

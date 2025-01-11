@@ -1,24 +1,24 @@
 .LCPI0_0:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
 .LCPI0_1:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func00000000000000b9:                   # @func00000000000000b9
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func00000000000000b9:
 	vpmovdw	%ymm0, %xmm0
-	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm1    # [36,36,36,36,36,36,36,36]
+	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpextrw	$1, %xmm1, %eax
 	vpextrw	$1, %xmm0, %ecx
@@ -61,5 +61,6 @@ func00000000000000b9:                   # @func00000000000000b9
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$7, %eax, %xmm2, %xmm0
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	retq
+

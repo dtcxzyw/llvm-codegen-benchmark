@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	sext.w	a2, a2
 	li	a3, 8
 	czero.eqz	a3, a3, a2
@@ -7,12 +7,14 @@ func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	sext.w	a2, a2
 	czero.nez	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func00000000000000a7:                   # @func00000000000000a7
+
+func00000000000000a7:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
 	czero.eqz	a1, a1, a2
@@ -20,7 +22,8 @@ func00000000000000a7:                   # @func00000000000000a7
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	sext.w	a2, a2
 	lui	a3, 16
 	addiw	a3, a3, -1
@@ -31,7 +34,8 @@ func0000000000000037:                   # @func0000000000000037
 	sext.w	a1, a1
 	sh2add	a0, a1, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	sext.w	a2, a2
 	li	a3, 1
 	sltiu	a2, a2, 2
@@ -41,7 +45,8 @@ func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	sext.w	a2, a2
 	li	a3, -1
 	slti	a2, a2, 0
@@ -51,7 +56,8 @@ func0000000000000053:                   # @func0000000000000053
 	or	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func00000000000000c7:                   # @func00000000000000c7
+
+func00000000000000c7:
 	sext.w	a2, a2
 	li	a3, 8
 	sltiu	a2, a2, 57
@@ -61,13 +67,15 @@ func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	sext.w	a2, a2
 	slti	a2, a2, 8
 	czero.eqz	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func0000000000000057:                   # @func0000000000000057
+
+func0000000000000057:
 	sext.w	a2, a2
 	lui	a3, 3
 	addiw	a3, a3, -2039
@@ -79,3 +87,4 @@ func0000000000000057:                   # @func0000000000000057
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	ret
+

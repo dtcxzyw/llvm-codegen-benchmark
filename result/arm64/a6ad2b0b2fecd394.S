@@ -1,7 +1,6 @@
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+func000000000000004a:
 	scvtf	d0, x1
-	mov	w8, #2147483647                 // =0x7fffffff
+	mov	w8, #2147483647
 	fcvtzs	x9, d0
 	add	x9, x1, x9
 	cmp	x9, x8
@@ -9,4 +8,4 @@ func000000000000004a:                   // @func000000000000004a
 	cmp	x8, x0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

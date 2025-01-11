@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	andb	$1, %dil
 	sarq	%rsi
 	leaq	4(%rsi), %rcx
@@ -7,7 +7,8 @@ func0000000000000015:                   # @func0000000000000015
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	andb	$1, %dil
 	sarq	$2, %rsi
 	leaq	8(%rsi), %rcx
@@ -16,7 +17,8 @@ func0000000000000017:                   # @func0000000000000017
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andb	$1, %dil
 	leaq	8(%rsi), %rcx
 	xorl	%eax, %eax
@@ -24,7 +26,8 @@ func0000000000000014:                   # @func0000000000000014
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	andb	$1, %dil
 	leaq	8(%rsi), %rcx
 	xorl	%eax, %eax
@@ -32,3 +35,4 @@ func0000000000000016:                   # @func0000000000000016
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

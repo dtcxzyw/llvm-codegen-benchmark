@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	movq	%rsi, %rax
 	shrq	$63, %rax
 	addb	$9, %al
@@ -8,3 +8,4 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

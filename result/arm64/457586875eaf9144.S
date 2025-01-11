@@ -1,5 +1,4 @@
-func00000000000000d3:                   // @func00000000000000d3
-// %bb.0:                               // %entry
+func00000000000000d3:
 	movi	v1.2s, #207, lsl #24
 	movi	v2.2s, #79, lsl #24
 	fcmp	s0, s1
@@ -8,9 +7,8 @@ func00000000000000d3:                   // @func00000000000000d3
 	and	w8, w8, w0
 	csel	w0, wzr, w8, ge
 	ret
-                                        // -- End function
-func0000000000000053:                   // @func0000000000000053
-// %bb.0:                               // %entry
+
+func0000000000000053:
 	fmov	s1, #-1.00000000
 	fcmp	s0, s1
 	fmov	s1, #2.00000000
@@ -19,4 +17,4 @@ func0000000000000053:                   // @func0000000000000053
 	and	w8, w8, w0
 	csel	w0, wzr, w8, ge
 	ret
-                                        // -- End function
+

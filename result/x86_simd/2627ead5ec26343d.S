@@ -1,54 +1,61 @@
 .LCPI0_0:
-	.quad	3                               # 0x3
+	.quad	3
 .LCPI0_1:
-	.quad	-3                              # 0xfffffffffffffffd
-func0000000000000034:                   # @func0000000000000034
+	.quad	-3
+func0000000000000034:
 	vpcmpnltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.quad	2000                            # 0x7d0
-func0000000000000066:                   # @func0000000000000066
+	.quad	2000
+func0000000000000066:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltq	%ymm1, %ymm0, %k1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.quad	12                              # 0xc
+	.quad	12
 .LCPI2_1:
-	.quad	4294967284                      # 0xfffffff4
-func0000000000000074:                   # @func0000000000000074
+	.quad	4294967284
+func0000000000000074:
 	vpcmpnltuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI3_0:
-	.quad	-4                              # 0xfffffffffffffffc
-func0000000000000026:                   # @func0000000000000026
+	.quad	-4
+func0000000000000026:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltq	%ymm1, %ymm0, %k1
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI4_0:
-	.quad	2                               # 0x2
+	.quad	2
 .LCPI4_1:
-	.quad	-2                              # 0xfffffffffffffffe
-func0000000000000004:                   # @func0000000000000004
+	.quad	-2
+func0000000000000004:
 	vpcmpnltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vpaddq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI5_0:
-	.quad	16                              # 0x10
+	.quad	16
 .LCPI5_1:
-	.quad	240                             # 0xf0
-func0000000000000046:                   # @func0000000000000046
+	.quad	240
+func0000000000000046:
 	vpcmpgtq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
 	vpaddq	.LCPI5_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI6_0:
-	.quad	-8446744073709551616            # 0x8ac7230489e80000
+	.quad	-8446744073709551616
 .LCPI6_1:
-	.quad	8446744073709551616             # 0x7538dcfb76180000
-func0000000000000024:                   # @func0000000000000024
+	.quad	8446744073709551616
+func0000000000000024:
 	vpcmpnltuq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
 	vpaddq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+

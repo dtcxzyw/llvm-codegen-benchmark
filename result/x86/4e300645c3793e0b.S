@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -9,7 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	andl	$1, %edx
 	leaq	3(%rdx), %rcx
 	cmpl	$100, %esi
@@ -17,3 +18,4 @@ func000000000000002b:                   # @func000000000000002b
 	cmovgeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

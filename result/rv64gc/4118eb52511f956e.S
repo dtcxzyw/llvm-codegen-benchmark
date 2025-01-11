@@ -1,8 +1,8 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	sext.w	a2, a2
 	beqz	a2, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a1, a0, 32
 	lui	a2, 33825
 	addi	a2, a2, 133
@@ -18,3 +18,4 @@ func0000000000000003:                   # @func0000000000000003
 	subw	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

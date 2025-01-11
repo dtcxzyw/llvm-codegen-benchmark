@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x3bf0000000000000              # double 5.4210108624275222E-20
+	.quad	0x3bf0000000000000
 .LCPI0_1:
-	.quad	0x43f0000000000000              # double 1.8446744073709552E+19
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x43f0000000000000
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
@@ -12,3 +12,4 @@ func0000000000000000:                   # @func0000000000000000
 	fnmsub.d	fa5, fa5, fa4, fa0
 	fsgnj.d	fa0, fa5, fa0
 	ret
+

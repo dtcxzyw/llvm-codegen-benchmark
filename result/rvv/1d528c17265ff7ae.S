@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, -1
 	li	a0, -65
@@ -7,7 +7,8 @@ func000000000000000e:                   # @func000000000000000e
 	vmv.v.i	v11, 1
 	vwsll.vv	v8, v11, v10
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
@@ -16,7 +17,8 @@ func000000000000001d:                   # @func000000000000001d
 	vzext.vf2	v12, v8
 	vsll.vv	v8, v10, v12
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
@@ -25,3 +27,4 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.v.i	v11, 7
 	vwsll.vv	v8, v11, v10
 	ret
+

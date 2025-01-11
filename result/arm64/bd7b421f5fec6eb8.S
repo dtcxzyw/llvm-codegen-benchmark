@@ -1,5 +1,4 @@
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
+func0000000000000068:
 	fcvtzs	w8, s0
 	sub	w9, w1, #1
 	cmp	w9, w0
@@ -8,9 +7,8 @@ func0000000000000068:                   // @func0000000000000068
 	cmp	w8, w9
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+
+func000000000000008a:
 	fcvtzs	w8, s0
 	sub	w9, w1, #1
 	cmp	w0, w9
@@ -20,9 +18,8 @@ func000000000000008a:                   // @func000000000000008a
 	cmp	w8, w9
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
+
+func000000000000006a:
 	fcvtzs	w8, s0
 	sub	w9, w1, #1
 	cmp	w9, w0
@@ -31,9 +28,8 @@ func000000000000006a:                   // @func000000000000006a
 	cmp	w8, w9
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fcvtzs	w8, s0
 	add	w9, w1, #1
 	cmp	w0, w9
@@ -42,4 +38,4 @@ func000000000000000a:                   // @func000000000000000a
 	cmp	w8, w9
 	cset	w0, gt
 	ret
-                                        // -- End function
+

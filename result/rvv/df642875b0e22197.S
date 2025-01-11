@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v8, v8, v10
 	li	a0, -1
@@ -9,7 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	zext.w	a0, a0
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v8, v8, v10
 	li	a0, -1
@@ -19,9 +20,10 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a0, a0, -1201
 	vmul.vx	v8, v8, a0
 	ret
+
 .LCPI2_0:
-	.quad	-4658895280553007687            # 0xbf58476d1ce4e5b9
-func0000000000000000:                   # @func0000000000000000
+	.quad	-4658895280553007687
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v8, v8, v10
 	lui	a0, %hi(.LCPI2_0)
@@ -31,3 +33,4 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v8, v8, a1
 	vmul.vx	v8, v8, a0
 	ret
+

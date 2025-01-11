@@ -1,4 +1,4 @@
-func0000000000000381:                   # @func0000000000000381
+func0000000000000381:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
@@ -8,7 +8,8 @@ func0000000000000381:                   # @func0000000000000381
 	vmseq.vv	v12, v10, v8
 	vmor.mm	v0, v16, v12
 	ret
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 1
@@ -18,3 +19,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	vmseq.vv	v12, v10, v8
 	vmor.mm	v0, v16, v12
 	ret
+

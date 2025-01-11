@@ -1,4 +1,4 @@
-func0000000000000a64:                   # @func0000000000000a64
+func0000000000000a64:
 	not	a2, a2
 	srli	a2, a2, 63
 	slli	a3, a2, 3
@@ -7,17 +7,20 @@ func0000000000000a64:                   # @func0000000000000a64
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000164:                   # @func0000000000000164
+
+func0000000000000164:
 	seqz	a2, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000168:                   # @func0000000000000168
+
+func0000000000000168:
 	seqz	a2, a2
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000a6c:                   # @func0000000000000a6c
+
+func0000000000000a6c:
 	not	a2, a2
 	srli	a2, a2, 63
 	li	a3, 88
@@ -26,7 +29,8 @@ func0000000000000a6c:                   # @func0000000000000a6c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000a61:                   # @func0000000000000a61
+
+func0000000000000a61:
 	not	a2, a2
 	srli	a2, a2, 63
 	li	a3, 88
@@ -35,10 +39,12 @@ func0000000000000a61:                   # @func0000000000000a61
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000016c:                   # @func000000000000016c
+
+func000000000000016c:
 	addi	a2, a2, -8
 	seqz	a2, a2
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+

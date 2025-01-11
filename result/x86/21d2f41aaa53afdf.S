@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,4), %rcx
 	andq	%rsi, %rcx
@@ -6,7 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	leaq	(%rdi,%rdi,4), %rax
 	subq	%rcx, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,4), %rcx
 	andq	%rsi, %rcx
@@ -14,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rdi,%rdi,4), %rax
 	subq	%rcx, %rax
 	retq
+

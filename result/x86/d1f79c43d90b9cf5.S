@@ -1,4 +1,4 @@
-func000000000000006b:                   # @func000000000000006b
+func000000000000006b:
 	vmovd	%edx, %xmm0
 	vmovd	%esi, %xmm1
 	xorl	%eax, %eax
@@ -6,3 +6,4 @@ func000000000000006b:                   # @func000000000000006b
 	setbe	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
+

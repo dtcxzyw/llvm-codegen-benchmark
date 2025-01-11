@@ -1,6 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	$16384, %eax                    # imm = 0x4000
+func0000000000000000:
+	movl	$16384, %eax
 	shlxl	%esi, %eax, %eax
-	andl	$4177920, %eax                  # imm = 0x3FC000
+	andl	$4177920, %eax
 	orl	%edi, %eax
 	retq
+

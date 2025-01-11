@@ -1,7 +1,7 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	movabsq	$-3689348814741910323, %rax
 	imulq	%rax, %rsi
 	sarq	$3, %rdi
 	imulq	%rdi, %rax
@@ -9,10 +9,11 @@ func0000000000000019:                   # @func0000000000000019
 	cmovaq	%rax, %rsi
 	addq	%rsi, %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rax, %rsi
 	sarq	$3, %rdi
 	imulq	%rdi, %rax
@@ -20,3 +21,4 @@ func000000000000001b:                   # @func000000000000001b
 	cmovaq	%rax, %rsi
 	addq	%rsi, %rax
 	retq
+

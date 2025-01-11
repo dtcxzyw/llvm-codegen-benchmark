@@ -1,44 +1,44 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$16777216, %eax                 # imm = 0x1000000
+	movl	$16777216, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -47,47 +47,48 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$1048576, %eax                  # imm = 0x100000
+	movl	$1048576, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -96,7 +97,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	movl	$-1, %eax
@@ -145,7 +147,8 @@ func0000000000000019:                   # @func0000000000000019
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	movl	$-1, %eax
@@ -194,47 +197,48 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -243,7 +247,8 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	movl	$59, %eax
@@ -292,47 +297,48 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -341,47 +347,48 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -390,47 +397,48 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vpextrd	$1, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	movl	%eax, %ecx
 	vmovd	%xmm1, %esi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	vmovd	%eax, %xmm3
 	vpinsrd	$1, %ecx, %xmm3, %xmm3
 	vpextrd	$2, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$2, %eax, %xmm3, %xmm3
 	vpextrd	$3, %xmm1, %ecx
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
@@ -439,7 +447,8 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	movl	$-49, %eax
@@ -488,7 +497,8 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	movl	$128, %eax
@@ -537,3 +547,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

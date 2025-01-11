@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x80000000                      # float -0
-func0000000000000001:                   # @func0000000000000001
+	.long	0x80000000
+func0000000000000001:
 	testl	%edi, %edi
 	sete	%al
 	vmulss	%xmm1, %xmm0, %xmm1
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	kmovd	%eax, %k1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+

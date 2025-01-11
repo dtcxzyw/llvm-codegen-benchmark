@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	-2
 .LCPI0_1:
-	.quad	2                               # 0x2
-func00000000000002a4:                   # @func00000000000002a4
+	.quad	2
+func00000000000002a4:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
@@ -10,7 +10,8 @@ func00000000000002a4:                   # @func00000000000002a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -18,11 +19,12 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	-1024                           # 0xfffffffffffffc00
+	.quad	-1024
 .LCPI2_1:
-	.quad	-1025                           # 0xfffffffffffffbff
-func0000000000000004:                   # @func0000000000000004
+	.quad	-1025
+func0000000000000004:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
@@ -30,11 +32,12 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	-2
 .LCPI3_1:
-	.quad	2                               # 0x2
-func0000000000000034:                   # @func0000000000000034
+	.quad	2
+func0000000000000034:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
@@ -42,11 +45,12 @@ func0000000000000034:                   # @func0000000000000034
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	-2
 .LCPI4_1:
-	.quad	2                               # 0x2
-func0000000000000234:                   # @func0000000000000234
+	.quad	2
+func0000000000000234:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
@@ -54,3 +58,4 @@ func0000000000000234:                   # @func0000000000000234
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

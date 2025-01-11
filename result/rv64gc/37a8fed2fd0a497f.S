@@ -1,4 +1,4 @@
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000000d5:
 	andi	a1, a1, 255
 	li	a2, 298
 	mul	a1, a1, a2
@@ -9,7 +9,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	addi	a1, a2, -544
 	addw	a0, a0, a1
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	andi	a1, a1, 255
 	li	a2, 29
 	mul	a1, a1, a2
@@ -18,7 +19,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	andi	a1, a1, 255
 	li	a2, 80
 	mul	a1, a1, a2
@@ -27,7 +29,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	add	a0, a0, a1
 	addiw	a0, a0, 390
 	ret
-func00000000000001f5:                   # @func00000000000001f5
+
+func00000000000001f5:
 	andi	a1, a1, 255
 	li	a2, 100
 	mul	a1, a1, a2
@@ -38,7 +41,8 @@ func00000000000001f5:                   # @func00000000000001f5
 	addi	a1, a2, -1232
 	addw	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	li	a2, 1260
 	mul	a0, a0, a2
 	lui	a2, 788
@@ -50,7 +54,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a1, a1, 255
 	lui	a2, 65536
 	addi	a2, a2, -1357
@@ -61,7 +66,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 2047
 	addiw	a0, a0, 1
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	slli	a1, a1, 56
 	lui	a2, 112
 	addi	a2, a2, 1572
@@ -74,3 +80,4 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

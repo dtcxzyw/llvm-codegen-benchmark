@@ -1,5 +1,4 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	orr	w8, w2, #0x20
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -7,9 +6,8 @@ func0000000000000021:                   // @func0000000000000021
 	cmp	w8, w0, uxtb
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	orr	w8, w2, #0x20
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -17,9 +15,8 @@ func000000000000002a:                   // @func000000000000002a
 	cmp	w8, w0, sxtb
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	orr	w8, w2, #0x20
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -27,9 +24,8 @@ func0000000000000024:                   // @func0000000000000024
 	cmp	w8, w0, uxtb
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	orr	w8, w2, #0x20
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -37,9 +33,8 @@ func0000000000000001:                   // @func0000000000000001
 	cmp	w8, w0, uxtb
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	orr	w8, w2, #0xf0
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -47,9 +42,8 @@ func0000000000000026:                   // @func0000000000000026
 	cmp	w8, w0, sxtb
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	orr	w8, w2, #0x20
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -57,4 +51,4 @@ func000000000000002c:                   // @func000000000000002c
 	cmp	w8, w0, uxtb
 	cset	w0, ne
 	ret
-                                        // -- End function
+

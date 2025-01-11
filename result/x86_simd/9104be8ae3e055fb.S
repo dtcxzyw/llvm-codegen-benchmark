@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -7,3 +7,4 @@ func0000000000000042:                   # @func0000000000000042
 	vpmaxsd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

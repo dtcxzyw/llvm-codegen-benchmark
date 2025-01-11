@@ -1,12 +1,15 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subl	%esi, %edx
 	leal	(%rdi,%rdx,8), %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	subl	%esi, %edx
 	leal	(%rdi,%rdx,8), %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	subl	%esi, %edx
 	leal	(%rdi,%rdx,8), %eax
 	retq
+

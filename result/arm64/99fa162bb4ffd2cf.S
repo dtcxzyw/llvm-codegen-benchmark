@@ -1,14 +1,12 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	and	x8, x2, #0xfffffffffffffff8
 	add	x8, x1, x8
 	add	x8, x8, #8
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000168:                   // @func0000000000000168
-// %bb.0:                               // %entry
+
+func0000000000000168:
 	add	x8, x2, #7
 	and	x8, x8, #0xfffffffffffffff8
 	add	x8, x1, x8
@@ -16,9 +14,8 @@ func0000000000000168:                   // @func0000000000000168
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000003e4:                   // @func00000000000003e4
-// %bb.0:                               // %entry
+
+func00000000000003e4:
 	add	w8, w2, #10
 	and	x8, x8, #0xfffffffe
 	add	x8, x1, x8
@@ -26,18 +23,16 @@ func00000000000003e4:                   // @func00000000000003e4
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000604:                   // @func0000000000000604
-// %bb.0:                               // %entry
+
+func0000000000000604:
 	sub	w8, w2, #1
 	add	x8, x1, x8
 	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000001e8:                   // @func00000000000001e8
-// %bb.0:                               // %entry
+
+func00000000000001e8:
 	add	w8, w2, #76
 	and	x8, x8, #0xfffffffe
 	add	x8, x1, x8
@@ -45,20 +40,18 @@ func00000000000001e8:                   // @func00000000000001e8
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000003e1:                   // @func00000000000003e1
-// %bb.0:                               // %entry
+
+func00000000000003e1:
 	sub	w8, w2, #1
-	mov	w9, #56                         // =0x38
+	mov	w9, #56
 	and	x8, x8, #0x3ff
 	umaddl	x8, w8, w9, x1
 	add	x8, x8, #48
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000201:                   // @func0000000000000201
-// %bb.0:                               // %entry
+
+func0000000000000201:
 	sub	x8, x2, #1
 	and	x8, x8, #0xfffffffffffffff8
 	add	x8, x1, x8
@@ -66,14 +59,13 @@ func0000000000000201:                   // @func0000000000000201
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
+
+func00000000000001e1:
 	sub	w8, w2, #2
-	mov	w9, #56                         // =0x38
+	mov	w9, #56
 	umaddl	x8, w8, w9, x1
 	add	x8, x8, #56
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
+

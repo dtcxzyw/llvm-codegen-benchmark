@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.word	0x4037ae14                      # float 2.86999989
+	.word	0x4037ae14
 .LCPI0_1:
-	.word	0xbe8ccccd                      # float -0.275000006
-func0000000000000000:                   # @func0000000000000000
+	.word	0xbe8ccccd
+func0000000000000000:
 	fli.s	fa5, 3.0
 	lui	a0, %hi(.LCPI0_0)
 	fneg.s	fa5, fa5
@@ -15,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vv	v8, v12, v8
 	vfadd.vf	v8, v8, fa3
 	ret
+

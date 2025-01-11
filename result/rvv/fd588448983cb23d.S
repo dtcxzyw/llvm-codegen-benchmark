@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	li	a0, 45
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e8, m1, ta, ma
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	fneg.d	fa5, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+

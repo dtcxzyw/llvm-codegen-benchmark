@@ -1,4 +1,4 @@
-func00000000000001a1:                   # @func00000000000001a1
+func00000000000001a1:
 	shrq	$2, %rsi
 	leaq	(%rsi,%rsi), %rax
 	xorl	%ecx, %ecx
@@ -6,3 +6,4 @@ func00000000000001a1:                   # @func00000000000001a1
 	sete	%cl
 	subq	%rcx, %rax
 	retq
+

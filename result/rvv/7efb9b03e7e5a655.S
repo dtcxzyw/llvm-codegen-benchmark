@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 20
 	vand.vi	v10, v10, 15
@@ -7,7 +7,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v12
 	ret
-func00000000000000f9:                   # @func00000000000000f9
+
+func00000000000000f9:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 20
 	vand.vi	v10, v10, 15
@@ -16,7 +17,8 @@ func00000000000000f9:                   # @func00000000000000f9
 	vadd.vi	v8, v8, 1
 	vmsleu.vv	v0, v12, v8
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 10
 	vand.vi	v10, v10, 15
@@ -25,7 +27,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v12
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 3
 	lui	a0, 4096
@@ -36,7 +39,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	vadd.vi	v8, v8, 1
 	vmslt.vv	v0, v8, v12
 	ret
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 19
 	li	a0, 127
@@ -46,7 +50,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	vadd.vi	v8, v8, 1
 	vmsne.vv	v0, v8, v12
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 1024
@@ -57,7 +62,8 @@ func0000000000000084:                   # @func0000000000000084
 	vadd.vi	v8, v8, -11
 	vmsltu.vv	v0, v8, v12
 	ret
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 1024
@@ -68,3 +74,4 @@ func00000000000000b4:                   # @func00000000000000b4
 	vadd.vi	v8, v8, -3
 	vmsltu.vv	v0, v8, v12
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vfncvt.rtz.xu.f.w	v12, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -10,7 +10,8 @@ func000000000000001d:                   # @func000000000000001d
 	vsll.vi	v8, v8, 24
 	vor.vv	v8, v8, v12
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vfncvt.rtz.xu.f.w	v12, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -22,7 +23,8 @@ func000000000000001f:                   # @func000000000000001f
 	vsll.vi	v8, v8, 16
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vfncvt.rtz.xu.f.w	v12, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -34,7 +36,8 @@ func0000000000000007:                   # @func0000000000000007
 	vsll.vi	v8, v8, 24
 	vor.vv	v8, v12, v8
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vfncvt.rtz.xu.f.w	v12, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -46,3 +49,4 @@ func0000000000000017:                   # @func0000000000000017
 	vsll.vi	v8, v8, 16
 	vor.vv	v8, v8, v12
 	ret
+

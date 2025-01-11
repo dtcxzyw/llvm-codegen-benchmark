@@ -1,4 +1,4 @@
-func0000000000000c61:                   # @func0000000000000c61
+func0000000000000c61:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
@@ -6,3 +6,4 @@ func0000000000000c61:                   # @func0000000000000c61
 	sete	%al
 	orb	%dil, %al
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
-func0000000000000040:                   # @func0000000000000040
+	.quad	-8198552921648689607
+func0000000000000040:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,8 @@ func0000000000000040:                   # @func0000000000000040
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 1
 	lui	a0, 699051
@@ -22,7 +23,8 @@ func0000000000000050:                   # @func0000000000000050
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 748983
@@ -34,9 +36,10 @@ func0000000000000054:                   # @func0000000000000054
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+
 .LCPI3_0:
-	.quad	1654928120671552141             # 0x16f77c5b896ec28d
-func0000000000000014:                   # @func0000000000000014
+	.quad	1654928120671552141
+func0000000000000014:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -50,7 +53,8 @@ func0000000000000014:                   # @func0000000000000014
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-func0000000000000052:                   # @func0000000000000052
+
+func0000000000000052:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
@@ -62,9 +66,10 @@ func0000000000000052:                   # @func0000000000000052
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+
 .LCPI5_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000056:                   # @func0000000000000056
+	.quad	3353953467947191203
+func0000000000000056:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -74,3 +79,4 @@ func0000000000000056:                   # @func0000000000000056
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+

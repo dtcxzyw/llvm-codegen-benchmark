@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	$1, %sil
 	movl	$62, %eax
 	movl	$125, %ecx
@@ -6,13 +6,15 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	%cl, %dil
 	sete	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andb	$1, %sil
 	addb	$29, %sil
 	cmpb	%sil, %dil
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	testb	$1, %sil
 	movl	$121, %eax
 	movl	$33, %ecx
@@ -20,7 +22,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	%cl, %dil
 	setb	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	notb	%sil
 	andb	$1, %sil
 	shlb	$3, %sil
@@ -28,7 +31,8 @@ func0000000000000005:                   # @func0000000000000005
 	cmpb	%sil, %dil
 	setbe	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	testb	$1, %sil
 	movl	$253, %eax
 	movl	$3, %ecx
@@ -36,7 +40,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%cl, %dil
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	notb	%sil
 	andb	$1, %sil
 	shlb	$5, %sil
@@ -44,3 +49,4 @@ func0000000000000018:                   # @func0000000000000018
 	cmpb	%sil, %dil
 	seta	%al
 	retq
+

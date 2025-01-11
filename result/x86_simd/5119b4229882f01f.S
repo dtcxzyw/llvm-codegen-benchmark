@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -7,3 +7,4 @@ func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm0, %ymm2, %ymm3 {%k2}
 	vpblendmd	%ymm3, %ymm1, %ymm0 {%k1}
 	retq
+

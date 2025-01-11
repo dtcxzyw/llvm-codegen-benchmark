@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	andi	a0, a0, 255
 	and	a1, a1, a2
 	andi	a1, a1, 255
@@ -6,7 +6,8 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	andi	a0, a0, 255
 	and	a1, a1, a2
 	andi	a1, a1, 255
@@ -14,3 +15,4 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
+

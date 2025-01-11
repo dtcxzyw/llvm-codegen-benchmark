@@ -1,4 +1,4 @@
-func000000000000048c:                   # @func000000000000048c
+func000000000000048c:
 	andi	a1, a0, 255
 	slli	a0, a0, 56
 	srai	a0, a0, 56
@@ -8,7 +8,8 @@ func000000000000048c:                   # @func000000000000048c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000048a:                   # @func000000000000048a
+
+func000000000000048a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	addi	a1, a0, -48
@@ -17,3 +18,4 @@ func000000000000048a:                   # @func000000000000048a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

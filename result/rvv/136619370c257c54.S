@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	82351536043346212               # 0x124924924924924
-func00000000000000a4:                   # @func00000000000000a4
+	.quad	82351536043346212
+func00000000000000a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	lui	a0, 748983
@@ -15,3 +15,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	vmsltu.vv	v0, v10, v12
 	vmerge.vxm	v8, v8, a1, v0
 	ret
+

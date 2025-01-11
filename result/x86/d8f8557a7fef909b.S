@@ -1,11 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	xorl	%edx, %esi
 	leal	(%rsi,%rdi), %ecx
 	leal	(,%rcx,8), %eax
 	xorl	%ecx, %eax
 	shrl	$5, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	xorl	%edx, %esi
 	leal	(%rsi,%rdi), %ecx
 	movl	%ecx, %eax
@@ -13,3 +14,4 @@ func000000000000001c:                   # @func000000000000001c
 	xorl	%ecx, %eax
 	shrl	$17, %eax
 	retq
+

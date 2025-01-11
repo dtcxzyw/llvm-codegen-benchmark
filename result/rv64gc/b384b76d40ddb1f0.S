@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	andi	a2, a0, 1
 	andi	a0, a1, 255
 	bnez	a2, .LBB0_2
@@ -7,7 +7,8 @@ func0000000000000024:                   # @func0000000000000024
 .LBB0_2:
 	sltiu	a0, a0, 4
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	andi	a2, a0, 1
 	andi	a0, a1, 255
 	bnez	a2, .LBB1_2
@@ -18,7 +19,8 @@ func000000000000002c:                   # @func000000000000002c
 	addi	a0, a0, -92
 	snez	a0, a0
 	ret
-func0000000000000198:                   # @func0000000000000198
+
+func0000000000000198:
 	andi	a2, a0, 1
 	andi	a0, a1, 255
 	bnez	a2, .LBB2_2
@@ -28,7 +30,8 @@ func0000000000000198:                   # @func0000000000000198
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	andi	a2, a0, 1
 	andi	a0, a1, 255
 	bnez	a2, .LBB3_2
@@ -38,7 +41,8 @@ func000000000000008c:                   # @func000000000000008c
 	addi	a0, a0, -2
 	snez	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	andi	a2, a0, 1
 	andi	a0, a1, 255
 	bnez	a2, .LBB4_2
@@ -49,3 +53,4 @@ func0000000000000028:                   # @func0000000000000028
 	sltiu	a0, a0, 34
 	xori	a0, a0, 1
 	ret
+

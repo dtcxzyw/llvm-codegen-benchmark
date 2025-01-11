@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 748983
@@ -11,7 +11,8 @@ func0000000000000011:                   # @func0000000000000011
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v8, v9
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -24,7 +25,8 @@ func0000000000000010:                   # @func0000000000000010
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v8, v9
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	li	a0, 63
@@ -36,9 +38,10 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v10, 2
 	vadd.vv	v8, v8, v9
 	ret
+
 .LCPI3_0:
-	.quad	-2361183241434822607            # 0xdf3b645a1cac0831
-func0000000000000020:                   # @func0000000000000020
+	.quad	-2361183241434822607
+func0000000000000020:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -52,3 +55,4 @@ func0000000000000020:                   # @func0000000000000020
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v8, v9
 	ret
+

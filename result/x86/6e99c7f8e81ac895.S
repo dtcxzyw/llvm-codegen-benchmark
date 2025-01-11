@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpw	$-33, %di
 	sete	%al
 	orb	$2, %al
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	movzbl	%al, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	xorl	%eax, %eax
 	cmpw	$11, %di
 	movl	$10, %ecx
@@ -15,3 +16,4 @@ func0000000000000028:                   # @func0000000000000028
 	movl	$12, %eax
 	cmovbel	%ecx, %eax
 	retq
+

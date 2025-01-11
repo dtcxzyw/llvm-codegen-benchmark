@@ -1,4 +1,4 @@
-func00000000000000c7:                   # @func00000000000000c7
+func00000000000000c7:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
@@ -7,11 +7,12 @@ func00000000000000c7:                   # @func00000000000000c7
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9
 	ret
+
 .LCPI1_0:
-	.word	0x2a0637bd                      # float 1.19209289E-13
+	.word	0x2a0637bd
 .LCPI1_1:
-	.word	0x358637bd                      # float 9.99999997E-7
-func0000000000000022:                   # @func0000000000000022
+	.word	0x358637bd
+func0000000000000022:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
@@ -23,11 +24,12 @@ func0000000000000022:                   # @func0000000000000022
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9
 	ret
+
 .LCPI2_0:
-	.word	0x2a0637bd                      # float 1.19209289E-13
+	.word	0x2a0637bd
 .LCPI2_1:
-	.word	0x358637bd                      # float 9.99999997E-7
-func00000000000000d2:                   # @func00000000000000d2
+	.word	0x358637bd
+func00000000000000d2:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
@@ -39,7 +41,8 @@ func00000000000000d2:                   # @func00000000000000d2
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -49,7 +52,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vv	v16, v12, v12
 	vmfne.vv	v12, v8, v8
@@ -57,7 +61,8 @@ func0000000000000011:                   # @func0000000000000011
 	vmand.mm	v9, v16, v12
 	vmor.mm	v0, v9, v8
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vv	v16, v12, v12
 	vmfne.vv	v12, v8, v8
@@ -65,3 +70,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	vmand.mm	v9, v16, v12
 	vmor.mm	v0, v9, v8
 	ret
+

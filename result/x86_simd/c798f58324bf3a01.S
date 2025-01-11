@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-	.short	307                             # 0x133
-func000000000000002a:                   # @func000000000000002a
+	.short	307
+	.short	307
+	.short	307
+	.short	307
+	.short	307
+	.short	307
+	.short	307
+	.short	307
+func000000000000002a:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -17,3 +17,4 @@ func000000000000002a:                   # @func000000000000002a
 	vpsraw	$3, %xmm0, %xmm0
 	vzeroupper
 	retq
+

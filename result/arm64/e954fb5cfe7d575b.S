@@ -1,43 +1,31 @@
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+func000000000000001f:
 	add	x8, x0, x1, lsl #4
-                                        // kill: def $w2 killed $w2 def $x2
 	add	x0, x8, w2, uxtb #2
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	add	x8, x0, x1, lsl #8
-                                        // kill: def $w2 killed $w2 def $x2
 	add	x0, x8, w2, uxtb
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-	mov	w8, #96                         // =0x60
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000001c:
+	mov	w8, #96
 	madd	x8, x1, x8, x0
 	add	x0, x8, w2, uxtb #2
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	add	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	add	x0, x8, w2, uxtb
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	add	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	add	x0, x8, w2, uxtb
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	add	x8, x0, x1, lsl #6
-                                        // kill: def $w2 killed $w2 def $x2
 	add	x0, x8, w2, uxtb #2
 	ret
-                                        // -- End function
+

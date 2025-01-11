@@ -1,102 +1,87 @@
-func0000000000000288:                   // @func0000000000000288
-// %bb.0:                               // %entry
+func0000000000000288:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #6
 	lsr	x8, x8, #60
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000028a:                   // @func000000000000028a
-// %bb.0:                               // %entry
+
+func000000000000028a:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #5
 	cmp	x8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000028c:                   // @func000000000000028c
-// %bb.0:                               // %entry
+
+func000000000000028c:
 	add	x8, x1, x2
 	cmn	x0, x8, lsl #20
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000786:                   // @func0000000000000786
-// %bb.0:                               // %entry
+
+func0000000000000786:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #9
 	lsr	x0, x8, #63
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000060a:                   // @func000000000000060a
-// %bb.0:                               // %entry
+
+func000000000000060a:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #10
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000601:                   // @func0000000000000601
-// %bb.0:                               // %entry
+
+func0000000000000601:
 	add	w8, w1, w2
 	cmn	x0, x8, lsl #32
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000281:                   // @func0000000000000281
-// %bb.0:                               // %entry
+
+func0000000000000281:
 	add	x8, x1, x2
-	mov	x9, #576460752303423487         // =0x7ffffffffffffff
+	mov	x9, #576460752303423487
 	add	x8, x0, x8, lsl #5
 	cmp	x8, x9
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000401:                   // @func0000000000000401
-// %bb.0:                               // %entry
+
+func0000000000000401:
 	add	w8, w1, w2
 	cmn	x0, x8, lsl #32
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000286:                   // @func0000000000000286
-// %bb.0:                               // %entry
+
+func0000000000000286:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #9
 	lsr	x0, x8, #63
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func00000000000007ec:                   // @func00000000000007ec
-// %bb.0:                               // %entry
+
+func00000000000007ec:
 	add	x8, x1, x2
 	orr	x8, x0, x8, lsl #3
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	add	x8, x1, x2
 	cmn	x0, x8, lsl #8
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000002a8:                   // @func00000000000002a8
-// %bb.0:                               // %entry
+
+func00000000000002a8:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #2
 	cmp	x8, #1032
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000003aa:                   // @func00000000000003aa
-// %bb.0:                               // %entry
+
+func00000000000003aa:
 	add	x8, x1, x2
 	add	x8, x0, x8, lsl #1
-	cmp	x8, #16, lsl #12                // =65536
+	cmp	x8, #16, lsl #12
 	cset	w0, gt
 	ret
-                                        // -- End function
+

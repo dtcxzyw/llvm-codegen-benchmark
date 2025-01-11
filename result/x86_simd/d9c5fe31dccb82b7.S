@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vpmovqd	%ymm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
@@ -8,14 +8,16 @@ func0000000000000003:                   # @func0000000000000003
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	65534                           # 0xfffe
-func0000000000000000:                   # @func0000000000000000
+	.long	65534
+func0000000000000000:
 	vpmovqd	%ymm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %xmm2 {%k1} # xmm2 {%k1} = [65534,65534,65534,65534]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm2 {%k1}
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
+

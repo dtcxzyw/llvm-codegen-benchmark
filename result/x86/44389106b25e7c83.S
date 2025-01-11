@@ -1,12 +1,14 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000046:
 	decl	%esi
 	sarxl	%edi, %esi, %eax
-	cmpl	$65536, %eax                    # imm = 0x10000
+	cmpl	$65536, %eax
 	setl	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	decl	%esi
 	sarxl	%edi, %esi, %eax
 	testl	%eax, %eax
 	setg	%al
 	retq
+

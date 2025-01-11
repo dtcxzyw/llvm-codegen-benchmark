@@ -1,10 +1,11 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andl	$1, %edx
 	subl	%edx, %esi
 	andl	$1, %edi
 	leal	4(%rsi,%rdi,8), %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andl	$1, %edx
 	decl	%edx
 	orl	$11, %edx
@@ -13,7 +14,8 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -21,3 +23,4 @@ func000000000000000f:                   # @func000000000000000f
 	andl	$1, %edi
 	leal	5(%rax,%rdi,4), %eax
 	retq
+

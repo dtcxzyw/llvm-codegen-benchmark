@@ -1,4 +1,4 @@
-func00000000000004c9:                   # @func00000000000004c9
+func00000000000004c9:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%cl
@@ -6,7 +6,8 @@ func00000000000004c9:                   # @func00000000000004c9
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	seta	%cl
@@ -14,7 +15,8 @@ func0000000000000108:                   # @func0000000000000108
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setb	%cl
@@ -22,7 +24,8 @@ func0000000000000088:                   # @func0000000000000088
 	seta	%al
 	orb	%cl, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setbe	%al
@@ -32,7 +35,8 @@ func00000000000000a8:                   # @func00000000000000a8
 .LBB3_1:
 	movb	$1, %al
 	retq
-func00000000000000cb:                   # @func00000000000000cb
+
+func00000000000000cb:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%cl
@@ -40,7 +44,8 @@ func00000000000000cb:                   # @func00000000000000cb
 	setge	%al
 	orb	%cl, %al
 	retq
-func00000000000004ea:                   # @func00000000000004ea
+
+func00000000000004ea:
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setle	%cl
@@ -48,3 +53,4 @@ func00000000000004ea:                   # @func00000000000004ea
 	setg	%al
 	orb	%cl, %al
 	retq
+

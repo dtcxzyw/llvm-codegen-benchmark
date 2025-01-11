@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
-	.byte	253                             # 0xfd
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
-	.byte	36                              # 0x24
+	.byte	36
+	.byte	36
+	.byte	36
+	.byte	36
+	.byte	36
+	.byte	36
+	.byte	36
+	.byte	36
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,10 +33,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.long	2                               # 0x2
+	.long	2
 .LCPI0_3:
 	.zero	4,253
-func0000000000000058:                   # @func0000000000000058
+func0000000000000058:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm0
@@ -46,15 +46,16 @@ func0000000000000058:                   # @func0000000000000058
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
 	.zero	1
 	.zero	1
 	.zero	1
@@ -64,8 +65,8 @@ func0000000000000058:                   # @func0000000000000058
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.long	4                               # 0x4
-func0000000000000042:                   # @func0000000000000042
+	.long	4
+func0000000000000042:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmb	.LCPI1_0(%rip), %xmm2, %k1
@@ -74,3 +75,4 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

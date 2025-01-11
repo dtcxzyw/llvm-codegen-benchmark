@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	vcvttsd2si	%xmm0, %eax
 	cltq
 	subq	%rsi, %rdi
@@ -6,7 +6,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	vcvttsd2si	%xmm0, %eax
 	cltq
 	subq	%rsi, %rdi
@@ -14,3 +15,4 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
+

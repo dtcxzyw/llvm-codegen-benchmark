@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 524288
@@ -6,9 +6,10 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a2, -1
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 524288
@@ -16,5 +17,6 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a1, a2, -1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

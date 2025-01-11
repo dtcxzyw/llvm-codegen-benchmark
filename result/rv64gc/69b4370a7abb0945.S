@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0xc1e0000000000000              # double -2147483648
-func0000000000000184:                   # @func0000000000000184
+	.quad	0xc1e0000000000000
+func0000000000000184:
 	sext.w	a1, a1
 	lui	a2, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a2)
@@ -11,9 +11,10 @@ func0000000000000184:                   # @func0000000000000184
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+
 .LCPI1_0:
-	.quad	0x41dfffffffc00000              # double 2147483647
-func0000000000000144:                   # @func0000000000000144
+	.quad	0x41dfffffffc00000
+func0000000000000144:
 	sext.w	a1, a1
 	lui	a2, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a2)
@@ -24,9 +25,10 @@ func0000000000000144:                   # @func0000000000000144
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+
 .LCPI2_0:
-	.quad	0x4340000000000000              # double 9007199254740992
-func0000000000000194:                   # @func0000000000000194
+	.quad	0x4340000000000000
+func0000000000000194:
 	lui	a2, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a2)
 	sext.w	a1, a1
@@ -35,3 +37,4 @@ func0000000000000194:                   # @func0000000000000194
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

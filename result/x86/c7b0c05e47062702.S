@@ -1,13 +1,15 @@
-func00000000000001ca:                   # @func00000000000001ca
+func00000000000001ca:
 	shll	$24, %esi
-	addl	$16777216, %esi                 # imm = 0x1000000
-	cmpl	$33554432, %esi                 # imm = 0x2000000
+	addl	$16777216, %esi
+	cmpl	$33554432, %esi
 	setge	%al
 	andb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	shll	$2, %esi
 	addl	$-8, %esi
 	setns	%al
 	andb	%dil, %al
 	retq
+

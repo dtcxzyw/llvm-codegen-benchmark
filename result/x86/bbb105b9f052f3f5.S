@@ -1,4 +1,4 @@
-func00000000000000c9:                   # @func00000000000000c9
+func00000000000000c9:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	shrq	$3, %rax
@@ -6,3 +6,4 @@ func00000000000000c9:                   # @func00000000000000c9
 	adcq	$-1, %rax
 	negq	%rax
 	retq
+

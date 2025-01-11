@@ -1,208 +1,182 @@
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+func0000000000000034:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
+
+func0000000000000038:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
+
+func000000000000006a:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+
+func0000000000000078:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
+
+func0000000000000074:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000079:                   // @func0000000000000079
-// %bb.0:                               // %entry
+
+func0000000000000079:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hs
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000039:                   // @func0000000000000039
-// %bb.0:                               // %entry
+
+func0000000000000039:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hs
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hs
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000002b:                   // @func000000000000002b
-// %bb.0:                               // %entry
+
+func000000000000002b:
 	cmp	w1, #0
 	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, ge
 	ret
-                                        // -- End function
+

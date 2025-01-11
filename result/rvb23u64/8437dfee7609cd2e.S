@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	addi	a2, a2, 15
 	srai	a3, a2, 63
 	srli	a3, a3, 60
@@ -8,7 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	sh3add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	addi	a2, a2, 15
 	srai	a3, a2, 63
 	srli	a3, a3, 60
@@ -18,7 +19,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	sh3add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func0000000000000080:                   # @func0000000000000080
+
+func0000000000000080:
 	addi	a2, a2, 7
 	srai	a3, a2, 63
 	srli	a3, a3, 61
@@ -28,3 +30,4 @@ func0000000000000080:                   # @func0000000000000080
 	sh3add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
+

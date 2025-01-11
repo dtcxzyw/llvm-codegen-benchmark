@@ -1,6 +1,6 @@
-func0000000000000002:                   # @func0000000000000002
-	andl	$4099, %edx                     # imm = 0x1003
-	cmpl	$4097, %edx                     # imm = 0x1001
+func0000000000000002:
+	andl	$4099, %edx
+	cmpl	$4097, %edx
 	sete	%al
 	orb	%dil, %sil
 	orb	%al, %sil
@@ -8,5 +8,6 @@ func0000000000000002:                   # @func0000000000000002
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	shll	$16, %eax
-	addl	$65536, %eax                    # imm = 0x10000
+	addl	$65536, %eax
 	retq
+

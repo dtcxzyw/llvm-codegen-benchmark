@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	lui	a0, 524296
 	addi	a0, a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,7 +11,8 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, -1
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 699051
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -6
@@ -22,7 +23,8 @@ func0000000000000005:                   # @func0000000000000005
 	vmacc.vx	v10, a0, v8
 	vmv.v.v	v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -32,7 +34,8 @@ func000000000000000f:                   # @func000000000000000f
 	vmv.v.x	v8, a0
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -43,7 +46,8 @@ func000000000000000d:                   # @func000000000000000d
 	vmv.v.x	v8, a0
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	lui	a0, 322639
 	addi	a0, a0, -945
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -53,3 +57,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.x	v8, a0
 	vmacc.vx	v8, a0, v10
 	ret
+

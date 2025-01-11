@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	shrq	$32, %rdx
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
@@ -8,3 +8,4 @@ func0000000000000012:                   # @func0000000000000012
 	cmpl	%edx, %eax
 	cmovgel	%edx, %eax
 	retq
+

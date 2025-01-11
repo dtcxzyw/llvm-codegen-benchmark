@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -7,7 +7,8 @@ func0000000000000075:                   # @func0000000000000075
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -16,7 +17,8 @@ func000000000000007f:                   # @func000000000000007f
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -25,7 +27,8 @@ func000000000000005d:                   # @func000000000000005d
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -34,7 +37,8 @@ func0000000000000055:                   # @func0000000000000055
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -43,7 +47,8 @@ func000000000000005c:                   # @func000000000000005c
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -52,7 +57,8 @@ func000000000000004c:                   # @func000000000000004c
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	slli	a2, a2, 43
 	srli	a2, a2, 43
 	add	a0, a0, a2
@@ -61,3 +67,4 @@ func0000000000000040:                   # @func0000000000000040
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

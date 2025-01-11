@@ -1,6 +1,6 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vmovq	%xmm0, %rsi
-	movabsq	$-8608480567731124087, %r10     # imm = 0x8888888888888889
+	movabsq	$-8608480567731124087, %r10
 	movq	%rsi, %rax
 	imulq	%r10
 	movq	%rdx, %rcx
@@ -57,7 +57,7 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	$60, %rdx, %rax
 	subq	%rax, %rdi
 	vmovq	%rdi, %xmm1
-	vpunpcklqdq	%xmm0, %xmm1, %xmm0     # xmm0 = xmm1[0],xmm0[0]
+	vpunpcklqdq	%xmm0, %xmm1, %xmm0
 	movq	%rsi, %rax
 	imulq	%r10
 	addq	%rsi, %rdx
@@ -78,14 +78,15 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	$60, %rdx, %rax
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	-5650354040595718513            # 0xb195e8efdb195e8f
+	.quad	-5650354040595718513
 .LCPI1_1:
-	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000001:                   # @func0000000000000001
+	.quad	-16
+func0000000000000001:
 	vpsraq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm1
@@ -94,3 +95,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+

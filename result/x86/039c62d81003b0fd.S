@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	pushq	%r14
 	pushq	%rbx
 	pushq	%rax
@@ -15,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	popq	%rbx
 	popq	%r14
 	retq
+

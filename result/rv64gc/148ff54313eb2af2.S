@@ -1,4 +1,4 @@
-func0000000000001c34:                   # @func0000000000001c34
+func0000000000001c34:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -6,7 +6,8 @@ func0000000000001c34:                   # @func0000000000001c34
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d94:                   # @func0000000000000d94
+
+func0000000000000d94:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	addi	a1, a1, 1
@@ -15,7 +16,8 @@ func0000000000000d94:                   # @func0000000000000d94
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000e94:                   # @func0000000000000e94
+
+func0000000000000e94:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	addi	a1, a1, 1
@@ -24,7 +26,8 @@ func0000000000000e94:                   # @func0000000000000e94
 	sltiu	a0, a0, 24
 	and	a0, a0, a1
 	ret
-func0000000000001686:                   # @func0000000000001686
+
+func0000000000001686:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -32,7 +35,8 @@ func0000000000001686:                   # @func0000000000001686
 	sltiu	a0, a0, 7
 	and	a0, a0, a1
 	ret
-func0000000000000c34:                   # @func0000000000000c34
+
+func0000000000000c34:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	addi	a1, a1, 1
@@ -41,7 +45,8 @@ func0000000000000c34:                   # @func0000000000000c34
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001cd4:                   # @func0000000000001cd4
+
+func0000000000001cd4:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -49,7 +54,8 @@ func0000000000001cd4:                   # @func0000000000001cd4
 	slti	a0, a0, 7
 	and	a0, a0, a1
 	ret
-func0000000000000d54:                   # @func0000000000000d54
+
+func0000000000000d54:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	addi	a1, a1, 1
@@ -58,7 +64,8 @@ func0000000000000d54:                   # @func0000000000000d54
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001d54:                   # @func0000000000001d54
+
+func0000000000001d54:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -66,7 +73,8 @@ func0000000000001d54:                   # @func0000000000001d54
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000001d94:                   # @func0000000000001d94
+
+func0000000000001d94:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
@@ -74,7 +82,8 @@ func0000000000001d94:                   # @func0000000000001d94
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000d14:                   # @func0000000000000d14
+
+func0000000000000d14:
 	sext.w	a0, a0
 	slli	a2, a2, 32
 	addi	a1, a1, 1
@@ -84,3 +93,4 @@ func0000000000000d14:                   # @func0000000000000d14
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
+

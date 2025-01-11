@@ -1,4 +1,4 @@
-func00000000000000ae:                   # @func00000000000000ae
+func00000000000000ae:
 	sext.w	a2, a2
 	li	a3, 4
 	subw	a3, a3, a1
@@ -9,3 +9,4 @@ func00000000000000ae:                   # @func00000000000000ae
 	or	a1, a1, a3
 	srl	a0, a0, a1
 	ret
+

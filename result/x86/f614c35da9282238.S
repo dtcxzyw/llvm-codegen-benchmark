@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func00000000000000c6:
 	leaq	1023(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -9,3 +9,4 @@ func00000000000000c6:                   # @func00000000000000c6
 	sets	%al
 	orb	%cl, %al
 	retq
+

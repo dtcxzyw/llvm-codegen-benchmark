@@ -1,6 +1,6 @@
-func000000000000003d:                   # @func000000000000003d
+func000000000000003d:
 	shrl	$9, %esi
-	imulq	$281475, %rsi, %rax             # imm = 0x44B83
+	imulq	$281475, %rsi, %rax
 	shrq	$39, %rax
 	addl	%edi, %eax
 	imull	$205, %eax, %eax
@@ -8,9 +8,10 @@ func000000000000003d:                   # @func000000000000003d
 	shrl	$11, %eax
 	orb	$48, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	shrl	$9, %esi
-	imulq	$281475, %rsi, %rax             # imm = 0x44B83
+	imulq	$281475, %rsi, %rax
 	shrq	$39, %rax
 	addl	%edi, %eax
 	movzbl	%al, %eax
@@ -18,3 +19,4 @@ func0000000000000001:                   # @func0000000000000001
 	shrl	$11, %eax
 	orb	$48, %al
 	retq
+

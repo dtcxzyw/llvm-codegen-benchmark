@@ -1,13 +1,14 @@
-func0000000000000448:                   # @func0000000000000448
+func0000000000000448:
 	leal	-9(%rdi), %eax
 	addl	$3, %edi
-	cmpl	$1530, %esi                     # imm = 0x5FA
+	cmpl	$1530, %esi
 	cmovael	%eax, %edi
 	xorl	%eax, %eax
 	cmpl	$3, %edi
 	setb	%al
 	retq
-func0000000000000654:                   # @func0000000000000654
+
+func0000000000000654:
 	xorl	%ecx, %ecx
 	cmpl	$2, %esi
 	setge	%cl
@@ -18,3 +19,4 @@ func0000000000000654:                   # @func0000000000000654
 	cmpl	$12, %ecx
 	setge	%al
 	retq
+

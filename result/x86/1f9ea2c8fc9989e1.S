@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movq	%rdi, %rax
 	shlq	$4, %rax
 	leaq	(%rax,%rax,4), %rcx
@@ -7,11 +7,13 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000148:                   # @func0000000000000148
-	imulq	$400, %rdi, %rcx                # imm = 0x190
+
+func0000000000000148:
+	imulq	$400, %rdi, %rcx
 	addq	$16, %rcx
-	movabsq	$46116860184273878, %rax        # imm = 0xA3D70A3D70A3D6
+	movabsq	$46116860184273878, %rax
 	cmpq	%rax, %rdi
 	movq	$-1, %rax
 	cmovbeq	%rcx, %rax
 	retq
+

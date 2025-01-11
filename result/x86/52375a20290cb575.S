@@ -1,18 +1,20 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	movq	%rsi, %rax
 	addq	%r9, %rdx
 	addq	%rdi, %rdx
 	adcq	$0, %rax
 	xorl	%edx, %edx
 	retq
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	movq	%rsi, %rax
 	addq	%r9, %rdx
 	addq	%rdi, %rdx
 	adcq	$0, %rax
 	xorl	%edx, %edx
 	retq
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	shrdq	$51, %r9, %r8
 	addq	%rdx, %r8
 	movb	$51, %al
@@ -23,3 +25,4 @@ func000000000000001e:                   # @func000000000000001e
 	shrq	$51, %rsi
 	movq	%rsi, %rdx
 	retq
+

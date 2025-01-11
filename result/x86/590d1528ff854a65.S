@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	andb	$1, %dil
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -8,7 +8,8 @@ func0000000000000010:                   # @func0000000000000010
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	andb	$1, %dil
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -18,7 +19,8 @@ func0000000000000018:                   # @func0000000000000018
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andb	$1, %dil
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -28,3 +30,4 @@ func0000000000000008:                   # @func0000000000000008
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
+

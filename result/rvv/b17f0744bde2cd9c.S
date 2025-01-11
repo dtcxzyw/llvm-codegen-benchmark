@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x1e3ce508                      # float 9.99999968E-21
-func0000000000000004:                   # @func0000000000000004
+	.word	0x1e3ce508
+func0000000000000004:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,7 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v12, v8
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v0, v16, fa5
@@ -18,7 +19,8 @@ func0000000000000007:                   # @func0000000000000007
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v8, v12
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v16, fa5
@@ -26,7 +28,8 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v12, v8
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v16, fa5
@@ -34,9 +37,10 @@ func000000000000000c:                   # @func000000000000000c
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v12, v8
 	ret
+
 .LCPI4_0:
-	.word	0xc15d0c55                      # float -13.8155107
-func0000000000000005:                   # @func0000000000000005
+	.word	0xc15d0c55
+func0000000000000005:
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	fmv.w.x	fa4, zero
@@ -47,7 +51,8 @@ func0000000000000005:                   # @func0000000000000005
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v12, v8
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	fli.s	fa5, inf
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v20, v16, fa5
@@ -57,9 +62,11 @@ func0000000000000006:                   # @func0000000000000006
 	vmerge.vvm	v12, v16, v12, v0
 	vfmul.vv	v8, v8, v12
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfeq.vf	v0, v16, fa5
 	vfmul.vv	v8, v8, v12, v0.t
 	ret
+

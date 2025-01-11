@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	andl	$4, %edx
 	negl	%esi
 	xorl	%edx, %esi
@@ -6,7 +6,8 @@ func0000000000000421:                   # @func0000000000000421
 	orl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	andl	$31, %edx
 	addl	%esi, %edx
 	xorl	$1, %edx
@@ -14,3 +15,4 @@ func0000000000000c21:                   # @func0000000000000c21
 	orl	%edx, %edi
 	sete	%al
 	retq
+

@@ -1,15 +1,17 @@
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000000d5:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpled	%xmm1, %xmm0, %k1
 	vpsubd	%xmm3, %xmm2, %xmm0 {%k1} {z}
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
-func00000000000000c3:                   # @func00000000000000c3
+	.long	1
+func00000000000000c3:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpbroadcastd	.LCPI1_0(%rip), %xmm4   # xmm4 = [1,1,1,1]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm4
 	vpcmpneqd	%xmm1, %xmm0, %k1
 	vpsubd	%xmm3, %xmm2, %xmm4 {%k1}
-	vpmovzxdq	%xmm4, %ymm0            # ymm0 = xmm4[0],zero,xmm4[1],zero,xmm4[2],zero,xmm4[3],zero
+	vpmovzxdq	%xmm4, %ymm0
 	retq
+

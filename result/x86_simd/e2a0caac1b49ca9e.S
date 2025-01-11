@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	65536                           # 0x10000
-func000000000000004a:                   # @func000000000000004a
+	.long	65536
+func000000000000004a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm2, %k2
@@ -8,3 +8,4 @@ func000000000000004a:                   # @func000000000000004a
 	vpslld	$8, %ymm2, %ymm2 {%k1}
 	vpslld	$4, %ymm2, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	testl	%edx, %edx
 	setne	%cl
 	andb	%sil, %cl
@@ -6,7 +6,8 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	cmpl	$32, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -14,7 +15,8 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	testl	%edx, %edx
 	setne	%cl
 	andb	%sil, %cl
@@ -22,7 +24,8 @@ func000000000000030c:                   # @func000000000000030c
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	testl	%edx, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -30,23 +33,26 @@ func0000000000000058:                   # @func0000000000000058
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	cmpl	$2, %edx
 	setb	%cl
 	andb	%sil, %cl
-	cmpl	$330, %edi                      # imm = 0x14A
+	cmpl	$330, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000114:                   # @func0000000000000114
+
+func0000000000000114:
 	cmpl	$2, %edx
 	setb	%cl
 	andb	%sil, %cl
-	cmpl	$991, %edi                      # imm = 0x3DF
+	cmpl	$991, %edi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	cmpl	$2, %edx
 	setb	%cl
 	andb	%sil, %cl
@@ -54,7 +60,8 @@ func0000000000000108:                   # @func0000000000000108
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000118:                   # @func0000000000000118
+
+func0000000000000118:
 	cmpl	$-4, %edx
 	setb	%cl
 	andb	%dil, %cl
@@ -62,7 +69,8 @@ func0000000000000118:                   # @func0000000000000118
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	cmpl	$40, %edx
 	setne	%cl
 	andb	%sil, %cl
@@ -70,3 +78,4 @@ func0000000000000318:                   # @func0000000000000318
 	setne	%al
 	orb	%cl, %al
 	retq
+

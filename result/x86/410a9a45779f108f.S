@@ -1,13 +1,14 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000104:
 	xorb	$1, %sil
-	cmpl	$196112, %edx                   # imm = 0x2FE10
+	cmpl	$196112, %edx
 	setae	%cl
 	andb	%sil, %cl
-	cmpl	$1114112, %edi                  # imm = 0x110000
+	cmpl	$1114112, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	notb	%sil
 	cmpl	$35, %edx
 	setne	%cl
@@ -16,7 +17,8 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	notb	%sil
 	cmpl	$-3, %edx
 	sete	%cl
@@ -25,7 +27,8 @@ func000000000000030c:                   # @func000000000000030c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	xorb	$1, %sil
 	testl	%edx, %edx
 	sete	%cl
@@ -34,3 +37,4 @@ func0000000000000301:                   # @func0000000000000301
 	sete	%al
 	andb	%cl, %al
 	retq
+

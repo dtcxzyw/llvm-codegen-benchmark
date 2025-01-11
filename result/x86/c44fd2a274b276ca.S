@@ -1,9 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andb	$1, %dil
 	movslq	%esi, %rax
-	imulq	$1056, %rax, %rcx               # imm = 0x420
+	imulq	$1056, %rax, %rcx
 	xorl	%eax, %eax
 	negb	%dil
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000007c:                   # @func000000000000007c
+func000000000000007c:
 	li	a2, 8
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -6,7 +6,8 @@ func000000000000007c:                   # @func000000000000007c
 	slli	a0, a0, 5
 	addi	a0, a0, 32
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	li	a2, 8
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -14,7 +15,8 @@ func000000000000007f:                   # @func000000000000007f
 	slli	a0, a0, 4
 	addi	a0, a0, 16
 	ret
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	li	a2, 8
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -22,7 +24,8 @@ func0000000000000074:                   # @func0000000000000074
 	slli	a0, a0, 2
 	addi	a0, a0, 4
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	li	a2, 16
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -30,7 +33,8 @@ func0000000000000075:                   # @func0000000000000075
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	li	a2, 32
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -38,7 +42,8 @@ func0000000000000068:                   # @func0000000000000068
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	li	a2, 4
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -46,7 +51,8 @@ func0000000000000060:                   # @func0000000000000060
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
-func0000000000000064:                   # @func0000000000000064
+
+func0000000000000064:
 	li	a2, 8
 	czero.nez	a2, a2, a1
 	or	a1, a1, a2
@@ -54,3 +60,4 @@ func0000000000000064:                   # @func0000000000000064
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
+

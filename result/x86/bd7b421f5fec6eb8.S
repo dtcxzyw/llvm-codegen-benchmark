@@ -1,4 +1,4 @@
-func0000000000000068:                   # @func0000000000000068
+func0000000000000068:
 	decl	%esi
 	cmpl	%edi, %esi
 	cmovgel	%edi, %esi
@@ -9,7 +9,8 @@ func0000000000000068:                   # @func0000000000000068
 	cmpl	%esi, %eax
 	seta	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	decl	%esi
 	cmpl	%esi, %edi
 	cmovll	%edi, %esi
@@ -20,7 +21,8 @@ func000000000000008a:                   # @func000000000000008a
 	cmpl	%esi, %ecx
 	setg	%al
 	retq
-func000000000000006a:                   # @func000000000000006a
+
+func000000000000006a:
 	decl	%esi
 	cmpl	%edi, %esi
 	cmovgel	%edi, %esi
@@ -31,7 +33,8 @@ func000000000000006a:                   # @func000000000000006a
 	cmpl	%esi, %eax
 	setg	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	incl	%esi
 	cmpl	%esi, %edi
 	cmovll	%edi, %esi
@@ -42,3 +45,4 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%esi, %eax
 	setg	%al
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	negs	w8, w0
 	and	w9, w0, #0x3f
 	and	w8, w8, #0x3f
@@ -7,4 +6,4 @@ func0000000000000001:                   // @func0000000000000001
 	neg	w8, w8
 	sxtw	x0, w8
 	ret
-                                        // -- End function
+

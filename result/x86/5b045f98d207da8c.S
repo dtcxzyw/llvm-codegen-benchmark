@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	xorl	%eax, %eax
 	cmpl	$1, %edi
 	sete	%al
@@ -9,3 +9,4 @@ func0000000000000043:                   # @func0000000000000043
 	shll	$17, %ecx
 	leal	8978432(%rcx,%rax), %eax
 	retq
+

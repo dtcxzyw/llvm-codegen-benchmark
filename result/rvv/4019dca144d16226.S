@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	li	a0, 5
 	lui	a1, 524288
 	bseti	a0, a0, 33
@@ -16,3 +16,4 @@ func0000000000000015:                   # @func0000000000000015
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v12, -1
 	ret
+

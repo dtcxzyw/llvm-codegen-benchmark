@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	addw	a0, a0, a1
 	lui	a1, 5
 	addi	a1, a1, -315
@@ -8,7 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 	sh2add	a1, a2, a1
 	sub	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	addw	a0, a0, a1
 	slli	a1, a0, 48
 	lui	a2, 186416
@@ -19,7 +20,8 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 3
 	sub	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	addw	a0, a0, a1
 	lui	a1, 1
 	zext.w	a2, a0
@@ -36,3 +38,4 @@ func000000000000000e:                   # @func000000000000000e
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret
+

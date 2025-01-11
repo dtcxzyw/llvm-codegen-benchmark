@@ -1,14 +1,14 @@
 .LCPI0_0:
-	.long	772                             # 0x304
+	.long	772
 .LCPI0_1:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
 	.zero	1
 	.zero	1
 	.zero	1
@@ -17,24 +17,25 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
-	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [3,3,3,3,3,3,3,3,u,u,u,u,u,u,u,u]
+	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294967168                      # 0xffffff80
+	.long	4294967168
 .LCPI1_1:
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
-	.byte	129                             # 0x81
+	.byte	129
+	.byte	129
+	.byte	129
+	.byte	129
+	.byte	129
+	.byte	129
+	.byte	129
+	.byte	129
 	.zero	1
 	.zero	1
 	.zero	1
@@ -43,22 +44,23 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
-	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [129,129,129,129,129,129,129,129,u,u,u,u,u,u,u,u]
+	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
 	.zero	1
 	.zero	1
 	.zero	1
@@ -67,24 +69,25 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	vpmovdb	%ymm0, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
-	vmovdqu8	.LCPI2_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [12,12,12,12,12,12,12,12,u,u,u,u,u,u,u,u]
+	vmovdqu8	.LCPI2_0(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	127                             # 0x7f
+	.long	127
 .LCPI3_1:
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
 	.zero	1
 	.zero	1
 	.zero	1
@@ -93,28 +96,30 @@ func0000000000000061:                   # @func0000000000000061
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	vmovdqu8	.LCPI3_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [63,63,63,63,63,63,63,63,u,u,u,u,u,u,u,u]
+	vmovdqu8	.LCPI3_1(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.long	134                             # 0x86
+	.long	134
 .LCPI5_1:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -123,18 +128,20 @@ func0000000000000048:                   # @func0000000000000048
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI5_0(%rip){1to8}, %ymm0, %k1
-	vmovdqu8	.LCPI5_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1,1,1,1,1,1,1,1,u,u,u,u,u,u,u,u]
+	vmovdqu8	.LCPI5_1(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.long	10                              # 0xa
-func000000000000000a:                   # @func000000000000000a
+	.long	10
+func000000000000000a:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm0, %k1
 	vmovdqu8	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+

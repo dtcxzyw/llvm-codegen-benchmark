@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
-	.byte	65                              # 0x41
+	.byte	65
+	.byte	65
+	.byte	65
+	.byte	65
+	.byte	65
+	.byte	65
+	.byte	65
+	.byte	65
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
-	.byte	73                              # 0x49
+	.byte	73
+	.byte	73
+	.byte	73
+	.byte	73
+	.byte	73
+	.byte	73
+	.byte	73
+	.byte	73
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,24 +33,25 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.byte	65                              # 0x41
-func0000000000000021:                   # @func0000000000000021
+	.byte	65
+func0000000000000021:
 	vptestnmd	%ymm1, %ymm1, %k1
-	vpbroadcastb	.LCPI0_2(%rip), %xmm1   # xmm1 = [65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]
-	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [73,73,73,73,73,73,73,73,u,u,u,u,u,u,u,u]
+	vpbroadcastb	.LCPI0_2(%rip), %xmm1
+	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}
 	vpcmpeqb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
-	.byte	77                              # 0x4d
+	.byte	77
+	.byte	77
+	.byte	77
+	.byte	77
+	.byte	77
+	.byte	77
+	.byte	77
+	.byte	77
 	.zero	1
 	.zero	1
 	.zero	1
@@ -60,14 +61,14 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
-	.byte	72                              # 0x48
+	.byte	72
+	.byte	72
+	.byte	72
+	.byte	72
+	.byte	72
+	.byte	72
+	.byte	72
+	.byte	72
 	.zero	1
 	.zero	1
 	.zero	1
@@ -77,26 +78,27 @@ func0000000000000021:                   # @func0000000000000021
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.byte	77                              # 0x4d
-func0000000000000181:                   # @func0000000000000181
+	.byte	77
+func0000000000000181:
 	vptestnmd	%ymm1, %ymm1, %k1
-	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77]
-	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [72,72,72,72,72,72,72,72,u,u,u,u,u,u,u,u]
+	vpbroadcastb	.LCPI1_2(%rip), %xmm1
+	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}
 	vpcmpeqb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	3                               # 0x3
+	.long	3
 .LCPI2_1:
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
-	.byte	47                              # 0x2f
+	.byte	47
+	.byte	47
+	.byte	47
+	.byte	47
+	.byte	47
+	.byte	47
+	.byte	47
+	.byte	47
 	.zero	1
 	.zero	1
 	.zero	1
@@ -106,14 +108,14 @@ func0000000000000181:                   # @func0000000000000181
 	.zero	1
 	.zero	1
 .LCPI2_2:
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
-	.byte	92                              # 0x5c
+	.byte	92
+	.byte	92
+	.byte	92
+	.byte	92
+	.byte	92
+	.byte	92
+	.byte	92
+	.byte	92
 	.zero	1
 	.zero	1
 	.zero	1
@@ -123,24 +125,25 @@ func0000000000000181:                   # @func0000000000000181
 	.zero	1
 	.zero	1
 .LCPI2_3:
-	.byte	47                              # 0x2f
-func000000000000002c:                   # @func000000000000002c
+	.byte	47
+func000000000000002c:
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastb	.LCPI2_3(%rip), %xmm1   # xmm1 = [47,47,47,47,47,47,47,47,47,47,47,47,47,47,47,47]
-	vmovdqu8	.LCPI2_2(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [92,92,92,92,92,92,92,92,u,u,u,u,u,u,u,u]
+	vpbroadcastb	.LCPI2_3(%rip), %xmm1
+	vmovdqu8	.LCPI2_2(%rip), %xmm1 {%k1}
 	vpcmpneqb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
+	.byte	3
 	.zero	1
 	.zero	1
 	.zero	1
@@ -150,14 +153,14 @@ func000000000000002c:                   # @func000000000000002c
 	.zero	1
 	.zero	1
 .LCPI3_1:
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
 	.zero	1
 	.zero	1
 	.zero	1
@@ -167,24 +170,25 @@ func000000000000002c:                   # @func000000000000002c
 	.zero	1
 	.zero	1
 .LCPI3_2:
-	.byte	3                               # 0x3
-func0000000000000024:                   # @func0000000000000024
+	.byte	3
+func0000000000000024:
 	vptestnmd	%ymm1, %ymm1, %k1
-	vpbroadcastb	.LCPI3_2(%rip), %xmm1   # xmm1 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
-	vmovdqu8	.LCPI3_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [2,2,2,2,2,2,2,2,u,u,u,u,u,u,u,u]
+	vpbroadcastb	.LCPI3_2(%rip), %xmm1
+	vmovdqu8	.LCPI3_1(%rip), %xmm1 {%k1}
 	vpcmpltub	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
-	.byte	31                              # 0x1f
+	.byte	31
+	.byte	31
+	.byte	31
+	.byte	31
+	.byte	31
+	.byte	31
+	.byte	31
+	.byte	31
 	.zero	1
 	.zero	1
 	.zero	1
@@ -193,9 +197,10 @@ func0000000000000024:                   # @func0000000000000024
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

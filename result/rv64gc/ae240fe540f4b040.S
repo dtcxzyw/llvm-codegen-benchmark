@@ -1,22 +1,25 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	slliw	a1, a1, 4
 	slli	a0, a0, 44
 	srli	a0, a0, 60
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slliw	a1, a1, 1
 	slli	a0, a0, 56
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	slliw	a1, a1, 2
 	srli	a0, a0, 6
 	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	slliw	a1, a1, 16
 	srli	a0, a0, 8
 	lui	a2, 16
@@ -24,3 +27,4 @@ func0000000000000021:                   # @func0000000000000021
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

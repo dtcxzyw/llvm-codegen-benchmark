@@ -1,4 +1,4 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	max	a2, a2, zero
@@ -6,7 +6,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	min	a0, a0, a1
 	max	a0, a0, zero
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	max	a2, a2, zero
@@ -14,3 +15,4 @@ func00000000000000ac:                   # @func00000000000000ac
 	min	a0, a0, a1
 	max	a0, a0, zero
 	ret
+

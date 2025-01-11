@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000084:
 	cmpl	$2, %esi
 	movl	$60, %eax
 	movl	$36, %ecx
@@ -8,7 +8,8 @@ func0000000000000084:                   # @func0000000000000084
 	cmovnel	%ecx, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	sete	%al
@@ -18,3 +19,4 @@ func0000000000000085:                   # @func0000000000000085
 	cmovnel	%ecx, %eax
 	imull	%edi, %eax
 	retq
+

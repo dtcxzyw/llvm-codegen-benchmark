@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-	.short	4                               # 0x4
-func0000000000001421:                   # @func0000000000001421
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+	.short	4
+func0000000000001421:
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpcmpeqw	.LCPI0_0(%rip), %ymm0, %k1
@@ -23,3 +23,4 @@ func0000000000001421:                   # @func0000000000001421
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

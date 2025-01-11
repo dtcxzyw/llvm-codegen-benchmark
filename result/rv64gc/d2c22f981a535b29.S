@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	slli	a3, a1, 3
 	slli	a1, a1, 5
 	sub	a1, a1, a3
@@ -8,7 +8,8 @@ func000000000000000e:                   # @func000000000000000e
 	mv	a0, a1
 	mv	a1, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	slli	a3, a1, 3
 	slli	a1, a1, 5
 	sub	a1, a1, a3
@@ -18,3 +19,4 @@ func000000000000000f:                   # @func000000000000000f
 	mv	a0, a1
 	mv	a1, a2
 	ret
+

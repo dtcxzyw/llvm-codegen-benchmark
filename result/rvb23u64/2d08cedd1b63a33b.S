@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	sext.w	a1, a1
 	li	a2, 5
 	minu	a1, a1, a2
@@ -7,3 +7,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

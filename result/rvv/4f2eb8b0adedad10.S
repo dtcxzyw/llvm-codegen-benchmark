@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -10,7 +10,8 @@ func000000000000018c:                   # @func000000000000018c
 	vmsne.vx	v8, v8, a0
 	vmxor.mm	v0, v8, v9
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	lui	a0, 32768
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -21,3 +22,4 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vi	v8, v8, 0
 	vmxor.mm	v0, v8, v9
 	ret
+

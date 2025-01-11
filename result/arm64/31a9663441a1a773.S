@@ -1,5 +1,4 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	cmp	w0, #0
 	cset	w8, ne
 	cmp	w0, #20
@@ -7,9 +6,8 @@ func0000000000000021:                   // @func0000000000000021
 	orn	w8, w8, w1
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	cmp	w0, #0
 	cset	w8, ne
 	cmn	w0, #1
@@ -17,4 +15,4 @@ func0000000000000026:                   // @func0000000000000026
 	orn	w8, w8, w1
 	and	w0, w8, w9
 	ret
-                                        // -- End function
+

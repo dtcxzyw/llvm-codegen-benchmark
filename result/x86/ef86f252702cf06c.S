@@ -1,4 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007a:
 	movzwl	%si, %eax
 	leal	(%rax,%rax,8), %ecx
 	leal	(%rcx,%rcx,2), %ecx
@@ -7,9 +7,11 @@ func000000000000007a:                   # @func000000000000007a
 	addl	%ecx, %eax
 	shrl	$8, %eax
 	retq
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	movzwl	%si, %eax
-	imull	$19234, %eax, %eax              # imm = 0x4B22
+	imull	$19234, %eax, %eax
 	addl	%edi, %eax
 	shrl	$15, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000799:                   # @func0000000000000799
+func0000000000000799:
 	sext.w	a1, a1
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
@@ -8,7 +8,8 @@ func0000000000000799:                   # @func0000000000000799
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000699:                   # @func0000000000000699
+
+func0000000000000699:
 	sext.w	a1, a1
 	lui	a3, 1048540
 	addi	a3, a3, 1359
@@ -18,7 +19,8 @@ func0000000000000699:                   # @func0000000000000699
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000698:                   # @func0000000000000698
+
+func0000000000000698:
 	sext.w	a1, a1
 	lui	a3, 1048540
 	addi	a3, a3, 1359
@@ -28,3 +30,4 @@ func0000000000000698:                   # @func0000000000000698
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
+

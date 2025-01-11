@@ -1,6 +1,6 @@
-func0000000000000063:                   # @func0000000000000063
+func0000000000000063:
 	xorl	%eax, %eax
-	cmpq	$65536, %rdx                    # imm = 0x10000
+	cmpq	$65536, %rdx
 	setae	%al
 	shll	$4, %eax
 	andl	$1, %esi
@@ -8,7 +8,8 @@ func0000000000000063:                   # @func0000000000000063
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
@@ -18,3 +19,4 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	andi	a1, a0, 511
 	sraiw	a2, a0, 31
 	snez	a1, a1
@@ -7,7 +7,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sraiw	a0, a0, 9
 	add	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	lui	a1, 524288
 	sraiw	a2, a0, 31
 	addi	a1, a1, 3
@@ -19,3 +20,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	sraiw	a0, a0, 2
 	add	a0, a0, a1
 	ret
+

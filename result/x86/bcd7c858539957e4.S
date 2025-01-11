@@ -1,20 +1,22 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000094:
 	shrq	$32, %rdx
 	sete	%al
 	shlb	$5, %al
-	cmpq	$65536, %rsi                    # imm = 0x10000
+	cmpq	$65536, %rsi
 	movzbl	%al, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000294:                   # @func0000000000000294
+
+func0000000000000294:
 	shrq	$32, %rdx
 	sete	%al
 	shlb	$5, %al
-	cmpq	$65536, %rsi                    # imm = 0x10000
+	cmpq	$65536, %rsi
 	movzbl	%al, %eax
 	cmovbl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpq	$1, %rdx
 	movb	$2, %al
 	sbbb	$0, %al
@@ -22,3 +24,4 @@ func0000000000000021:                   # @func0000000000000021
 	movzbl	%al, %eax
 	cmovel	%edi, %eax
 	retq
+

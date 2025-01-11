@@ -1,4 +1,4 @@
-func000000000000052a:                   # @func000000000000052a
+func000000000000052a:
 	sarl	$31, %edx
 	andl	%esi, %edx
 	movl	%edi, %eax
@@ -6,7 +6,8 @@ func000000000000052a:                   # @func000000000000052a
 	andnl	%edi, %eax, %eax
 	addl	%edx, %eax
 	retq
-func000000000000052b:                   # @func000000000000052b
+
+func000000000000052b:
 	sarl	$31, %edx
 	andl	%esi, %edx
 	movl	%edi, %eax
@@ -14,3 +15,4 @@ func000000000000052b:                   # @func000000000000052b
 	andnl	%edi, %eax, %eax
 	addl	%edx, %eax
 	retq
+

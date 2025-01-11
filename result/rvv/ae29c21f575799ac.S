@@ -1,4 +1,4 @@
-func00000000000001a4:                   # @func00000000000001a4
+func00000000000001a4:
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -14,7 +14,8 @@ func00000000000001a4:                   # @func00000000000001a4
 	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v12
 	ret
-func00000000000001e4:                   # @func00000000000001e4
+
+func00000000000001e4:
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -30,3 +31,4 @@ func00000000000001e4:                   # @func00000000000001e4
 	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v12
 	ret
+

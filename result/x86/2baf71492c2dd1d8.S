@@ -1,4 +1,4 @@
-func0000000000000a2a:                   # @func0000000000000a2a
+func0000000000000a2a:
 	xorl	%eax, %eax
 	cmpl	$128, %edx
 	sbbl	%eax, %eax
@@ -7,7 +7,8 @@ func0000000000000a2a:                   # @func0000000000000a2a
 	setns	%al
 	andb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	xorl	%eax, %eax
 	negl	%edx
 	sbbl	%eax, %eax
@@ -17,7 +18,8 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%dil, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	sbbl	%eax, %eax
@@ -26,3 +28,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	setns	%al
 	andb	%dil, %al
 	retq
+

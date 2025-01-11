@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	li	a0, 32
@@ -11,7 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsll.vi	v8, v8, 30
@@ -24,9 +25,10 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v10
 	ret
+
 .LCPI2_0:
-	.quad	-5675921253449092805            # 0xb13b13b13b13b13b
-func000000000000000d:                   # @func000000000000000d
+	.quad	-5675921253449092805
+func000000000000000d:
 	li	a0, 32
 	lui	a1, %hi(.LCPI2_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -37,3 +39,4 @@ func000000000000000d:                   # @func000000000000000d
 	vsra.vi	v10, v10, 3
 	vmacc.vx	v8, a1, v10
 	ret
+

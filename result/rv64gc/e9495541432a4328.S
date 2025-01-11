@@ -1,4 +1,4 @@
-func0000000000000cd9:                   # @func0000000000000cd9
+func0000000000000cd9:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
@@ -6,7 +6,8 @@ func0000000000000cd9:                   # @func0000000000000cd9
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret
-func0000000000000d99:                   # @func0000000000000d99
+
+func0000000000000d99:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
@@ -14,7 +15,8 @@ func0000000000000d99:                   # @func0000000000000d99
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000d18:                   # @func0000000000000d18
+
+func0000000000000d18:
 	sext.w	a1, a1
 	addi	a2, a2, 32
 	sltu	a0, a0, a2
@@ -22,7 +24,8 @@ func0000000000000d18:                   # @func0000000000000d18
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	xor	a0, a0, a2
@@ -31,7 +34,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000d59:                   # @func0000000000000d59
+
+func0000000000000d59:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
@@ -39,7 +43,8 @@ func0000000000000d59:                   # @func0000000000000d59
 	sgtz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000c2b:                   # @func0000000000000c2b
+
+func0000000000000c2b:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	slt	a0, a2, a0
@@ -47,7 +52,8 @@ func0000000000000c2b:                   # @func0000000000000c2b
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000d98:                   # @func0000000000000d98
+
+func0000000000000d98:
 	sext.w	a1, a1
 	addi	a2, a2, 20
 	sltu	a0, a0, a2
@@ -57,7 +63,8 @@ func0000000000000d98:                   # @func0000000000000d98
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	xor	a0, a0, a2
@@ -65,3 +72,4 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
+

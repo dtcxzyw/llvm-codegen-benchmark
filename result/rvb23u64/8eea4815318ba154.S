@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	andi	a0, a0, 1
 	zext.w	a1, a1
 	lui	a2, 335544
@@ -11,7 +11,8 @@ func000000000000000d:                   # @func000000000000000d
 	addw	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a0, a0, 1
 	zext.w	a1, a1
 	lui	a2, 335544
@@ -24,3 +25,4 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a1, a1, 400
 	czero.eqz	a0, a1, a0
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
-func00000000000000aa:                   # @func00000000000000aa
+	.quad	2361183241434822607
+func00000000000000aa:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	li	a1, 63
@@ -19,9 +19,10 @@ func00000000000000aa:                   # @func00000000000000aa
 	addiw	a0, a0, 1808
 	vmsgt.vx	v0, v8, a0
 	ret
+
 .LCPI1_0:
-	.quad	230584300921369395              # 0x333333333333333
-func0000000000000688:                   # @func0000000000000688
+	.quad	230584300921369395
+func0000000000000688:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vsra.vi	v10, v10, 3
@@ -36,7 +37,8 @@ func0000000000000688:                   # @func0000000000000688
 	vadd.vv	v8, v10, v8
 	vmsgtu.vx	v0, v8, a1
 	ret
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vsra.vi	v10, v10, 3
@@ -49,7 +51,8 @@ func0000000000000681:                   # @func0000000000000681
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
-func00000000000006aa:                   # @func00000000000006aa
+
+func00000000000006aa:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vsra.vi	v10, v10, 3
@@ -62,9 +65,10 @@ func00000000000006aa:                   # @func00000000000006aa
 	vadd.vv	v8, v10, v8
 	vmsgt.vi	v0, v8, 1
 	ret
+
 .LCPI4_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func00000000000006a8:                   # @func00000000000006a8
+	.quad	3353953467947191203
+func00000000000006a8:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -77,9 +81,10 @@ func00000000000006a8:                   # @func00000000000006a8
 	srli	a0, a0, 3
 	vmsgtu.vx	v0, v8, a0
 	ret
+
 .LCPI5_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func00000000000006a1:                   # @func00000000000006a1
+	.quad	3353953467947191203
+func00000000000006a1:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -90,3 +95,4 @@ func00000000000006a1:                   # @func00000000000006a1
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
+

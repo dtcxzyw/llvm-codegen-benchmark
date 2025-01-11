@@ -1,13 +1,14 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000044:
 	subl	%esi, %edi
 	leal	3(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
 	sarl	$2, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	subl	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -16,7 +17,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %eax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	subl	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -25,7 +27,8 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	$64, %eax
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	subl	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -34,3 +37,4 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$64, %eax
 	setb	%al
 	retq
+

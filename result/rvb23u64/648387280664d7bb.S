@@ -1,4 +1,4 @@
-func000000000000005b:                   # @func000000000000005b
+func000000000000005b:
 	srli	a0, a0, 2
 	li	a1, 1
 	maxu	a1, a0, a1
@@ -8,7 +8,8 @@ func000000000000005b:                   # @func000000000000005b
 	minu	a0, a0, a1
 	slli	a0, a0, 2
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	srli	a0, a0, 2
 	li	a1, 1
 	maxu	a1, a0, a1
@@ -18,3 +19,4 @@ func000000000000001b:                   # @func000000000000001b
 	minu	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+

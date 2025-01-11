@@ -1,4 +1,4 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	sh3add	a0, a1, a0
 	li	a1, 63
 	bseti	a1, a1, 63
@@ -8,7 +8,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	li	a1, -8
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	sh3add	a0, a1, a0
 	li	a1, 63
 	bseti	a1, a1, 63
@@ -18,3 +19,4 @@ func0000000000000088:                   # @func0000000000000088
 	li	a1, -8
 	czero.eqz	a0, a1, a0
 	ret
+

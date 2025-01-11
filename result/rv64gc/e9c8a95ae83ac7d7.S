@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 29
 	add	a2, a2, a3
@@ -7,5 +7,6 @@ func0000000000000012:                   # @func0000000000000012
 	sext.w	a1, a1
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

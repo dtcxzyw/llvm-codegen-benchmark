@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	sext.w	a2, a1
@@ -13,7 +13,8 @@ func000000000000002a:                   # @func000000000000002a
 	li	a2, 1131
 	lui	a0, 8
 	bnez	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a0, a2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
+

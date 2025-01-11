@@ -1,5 +1,6 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	subl	%edi, %esi
 	sarl	%esi
 	leal	-1(%rsi,%rdi), %eax
 	retq
+

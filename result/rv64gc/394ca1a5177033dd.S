@@ -1,4 +1,4 @@
-func0000000000000c21:                   # @func0000000000000c21
+func0000000000000c21:
 	sext.w	a1, a1
 	andi	a0, a0, 128
 	addi	a1, a1, -1
@@ -6,7 +6,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	lui	a2, 1048574
 	slli	a0, a0, 52
 	addi	a2, a2, -42
@@ -15,7 +16,8 @@ func000000000000008c:                   # @func000000000000008c
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func0000000000000941:                   # @func0000000000000941
+
+func0000000000000941:
 	lui	a2, 4096
 	addw	a1, a1, a2
 	lui	a2, 8192
@@ -25,7 +27,8 @@ func0000000000000941:                   # @func0000000000000941
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000048c:                   # @func000000000000048c
+
+func000000000000048c:
 	addiw	a1, a1, -7
 	lui	a2, 4
 	sltiu	a1, a1, 2
@@ -34,7 +37,8 @@ func000000000000048c:                   # @func000000000000048c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000481:                   # @func0000000000000481
+
+func0000000000000481:
 	addiw	a1, a1, -1
 	andi	a0, a0, 112
 	sltiu	a1, a1, 4
@@ -42,7 +46,8 @@ func0000000000000481:                   # @func0000000000000481
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000c2c:                   # @func0000000000000c2c
+
+func0000000000000c2c:
 	sext.w	a1, a1
 	lui	a2, 256
 	addi	a1, a1, -3
@@ -52,7 +57,8 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	sext.w	a1, a1
 	andi	a0, a0, 2
 	addi	a1, a1, -1
@@ -60,7 +66,8 @@ func0000000000000421:                   # @func0000000000000421
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	sext.w	a1, a1
 	slli	a0, a0, 54
 	addi	a1, a1, -1
@@ -68,3 +75,4 @@ func000000000000042c:                   # @func000000000000042c
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
+

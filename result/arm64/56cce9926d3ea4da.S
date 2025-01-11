@@ -1,8 +1,7 @@
-func0000000000000142:                   // @func0000000000000142
-// %bb.0:                               // %entry
+func0000000000000142:
 	ucvtf	s2, w0
 	fcmp	s1, s2
 	fccmp	s0, s2, #0, gt
 	cset	w0, mi
 	ret
-                                        // -- End function
+

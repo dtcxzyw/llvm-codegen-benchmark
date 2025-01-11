@@ -1,25 +1,25 @@
 .LCPI0_0:
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-	.short	255                             # 0xff
-	.short	0                               # 0x0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
+	.short	255
+	.short	0
 .LCPI0_1:
-	.short	255                             # 0xff
-	.short	0                               # 0x0
-func000000000000007c:                   # @func000000000000007c
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	.short	255
+	.short	0
+func000000000000007c:
+	vpmovzxbd	%xmm2, %ymm2
 	vpdpwssd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm1
 	vpmovdw	%ymm1, %xmm2
 	vpextrw	$1, %xmm2, %eax
@@ -65,3 +65,4 @@ func000000000000007c:                   # @func000000000000007c
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
+

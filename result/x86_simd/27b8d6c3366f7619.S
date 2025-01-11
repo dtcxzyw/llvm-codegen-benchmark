@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.long	4294909952                      # 0xffff2000
+	.long	4294909952
 .LCPI0_1:
-	.long	1056768                         # 0x102000
+	.long	1056768
 .LCPI0_2:
-	.long	65534                           # 0xfffe
-func0000000000000184:                   # @func0000000000000184
+	.long	65534
+func0000000000000184:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
@@ -14,13 +14,14 @@ func0000000000000184:                   # @func0000000000000184
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294967293                      # 0xfffffffd
+	.long	4294967293
 .LCPI1_1:
-	.long	13652                           # 0x3554
+	.long	13652
 .LCPI1_2:
-	.long	10                              # 0xa
-func0000000000000086:                   # @func0000000000000086
+	.long	10
+func0000000000000086:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm0
@@ -29,13 +30,14 @@ func0000000000000086:                   # @func0000000000000086
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	4294962776                      # 0xffffee58
+	.long	4294962776
 .LCPI2_1:
-	.long	11172                           # 0x2ba4
+	.long	11172
 .LCPI2_2:
-	.long	27                              # 0x1b
-func0000000000000084:                   # @func0000000000000084
+	.long	27
+func0000000000000084:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
@@ -45,13 +47,14 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	4294923264                      # 0xffff5400
+	.long	4294923264
 .LCPI3_1:
-	.long	11172                           # 0x2ba4
+	.long	11172
 .LCPI3_2:
-	.long	27                              # 0x1b
-func0000000000000484:                   # @func0000000000000484
+	.long	27
+func0000000000000484:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
@@ -61,3 +64,4 @@ func0000000000000484:                   # @func0000000000000484
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 30
 	add	a1, a1, a0
@@ -9,7 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 30
 	add	a1, a1, a0
@@ -20,3 +21,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

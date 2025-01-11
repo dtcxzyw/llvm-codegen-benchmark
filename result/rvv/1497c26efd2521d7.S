@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
-func00000000000001a8:                   # @func00000000000001a8
+	.quad	384307168202282325
+func00000000000001a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 699051
@@ -14,7 +14,8 @@ func00000000000001a8:                   # @func00000000000001a8
 	vmacc.vx	v8, a0, v10
 	vmsgtu.vx	v0, v8, a1
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+
+func00000000000001a1:
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -30,9 +31,10 @@ func00000000000001a1:                   # @func00000000000001a1
 	vmul.vx	v8, v8, a1
 	vmseq.vv	v0, v8, v10
 	ret
+
 .LCPI2_0:
-	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000121:                   # @func0000000000000121
+	.quad	5270498306774157605
+func0000000000000121:
 	lui	a0, 209715
 	addiw	a0, a0, 819
 	slli	a1, a0, 32
@@ -49,7 +51,8 @@ func0000000000000121:                   # @func0000000000000121
 	vadd.vv	v8, v8, v12
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000001a4:                   # @func00000000000001a4
+
+func00000000000001a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 5
 	vsra.vi	v8, v8, 5
@@ -63,3 +66,4 @@ func00000000000001a4:                   # @func00000000000001a4
 	addiw	a0, a1, 904
 	vmsltu.vx	v0, v8, a0
 	ret
+

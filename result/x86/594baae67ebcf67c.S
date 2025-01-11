@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	cmpl	$8, %edx
 	movl	$64, %eax
 	movl	$2, %ecx
@@ -9,7 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$-75, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	xorl	%ecx, %ecx
 	cmpl	$127, %edx
 	seta	%cl
@@ -21,14 +22,16 @@ func0000000000000011:                   # @func0000000000000011
 	andl	$56, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	testl	%edx, %edx
-	movl	$-520094722, %eax               # imm = 0xE0FFFBFE
-	movl	$-486539266, %ecx               # imm = 0xE2FFFFFE
+	movl	$-520094722, %eax
+	movl	$-486539266, %ecx
 	cmovel	%eax, %ecx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%ecx, %eax
-	andl	$1020, %edi                     # imm = 0x3FC
+	andl	$1020, %edi
 	orl	%edi, %eax
 	retq
+

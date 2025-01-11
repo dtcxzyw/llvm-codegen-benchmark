@@ -1,17 +1,20 @@
 .LCPI0_0:
-	.quad	0x3e45798ee2308c3a              # double 1.0E-8
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3e45798ee2308c3a
+func0000000000000004:
 	vmaxsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
+
 .LCPI1_0:
-	.quad	0x40c3880000000000              # double 1.0E+4
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x40c3880000000000
+func0000000000000002:
 	vminsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vcmpordsd	%xmm1, %xmm1, %k1
 	vmovsd	%xmm1, %xmm1, %xmm1 {%k1} {z}
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
+

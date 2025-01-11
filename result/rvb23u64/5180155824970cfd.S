@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -12,7 +12,8 @@ func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a3
 	add	a1, a1, a2
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -27,7 +28,8 @@ func000000000000001b:                   # @func000000000000001b
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -42,7 +44,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -51,7 +54,8 @@ func0000000000000013:                   # @func0000000000000013
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -66,7 +70,8 @@ func000000000000001a:                   # @func000000000000001a
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -75,7 +80,8 @@ func0000000000000002:                   # @func0000000000000002
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -90,7 +96,8 @@ func0000000000000019:                   # @func0000000000000019
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -105,7 +112,8 @@ func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -115,7 +123,8 @@ func000000000000000b:                   # @func000000000000000b
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -130,7 +139,8 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
@@ -145,3 +155,4 @@ func0000000000000009:                   # @func0000000000000009
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
+

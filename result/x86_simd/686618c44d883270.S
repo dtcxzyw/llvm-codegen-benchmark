@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -21,9 +21,10 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -46,9 +47,10 @@ func0000000000000004:                   # @func0000000000000004
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -71,9 +73,10 @@ func0000000000000007:                   # @func0000000000000007
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -96,9 +99,10 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -121,9 +125,10 @@ func0000000000000005:                   # @func0000000000000005
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpmovqd	%ymm1, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
@@ -146,5 +151,6 @@ func0000000000000006:                   # @func0000000000000006
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	li	a0, 2047
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
@@ -9,3 +9,4 @@ func0000000000000421:                   # @func0000000000000421
 	vmerge.vvm	v8, v10, v8, v0
 	vmseq.vx	v0, v8, a0
 	ret
+

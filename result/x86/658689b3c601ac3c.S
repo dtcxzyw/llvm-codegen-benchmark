@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	xorl	%ecx, %ecx
 	cmpl	%esi, %edi
 	movl	$0, %eax
@@ -6,3 +6,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	testl	%edi, %edi
 	cmovlel	%ecx, %eax
 	retq
+

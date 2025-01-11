@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	zext.w	a1, a0
 	li	a2, -1
 	lui	a3, 524288
@@ -15,7 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	or	a1, a1, a2
 	czero.eqz	a0, a0, a4
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	zext.w	a1, a0
 	li	a2, 8
 	li	a3, 4
@@ -30,7 +31,8 @@ func0000000000000007:                   # @func0000000000000007
 	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	li	a1, -1
 	zext.w	a2, a0
 	sll	a0, a1, a0
@@ -46,7 +48,8 @@ func0000000000000005:                   # @func0000000000000005
 	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	bset	a1, zero, a0
 	zext.w	a0, a0
 	addi	a2, a0, -64
@@ -55,3 +58,4 @@ func0000000000000006:                   # @func0000000000000006
 	czero.eqz	a0, a1, a2
 	czero.nez	a1, a3, a2
 	ret
+

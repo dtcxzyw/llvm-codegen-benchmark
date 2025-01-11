@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3a83126f                      # float 0.00100000005
-func0000000000000002:                   # @func0000000000000002
+	.word	0x3a83126f
+func0000000000000002:
 	fmv.s	fa5, fa0
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa0, %lo(.LCPI0_0)(a0)
@@ -10,5 +10,6 @@ func0000000000000002:                   # @func0000000000000002
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB0_2
 	fmv.s	fa0, fa5
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

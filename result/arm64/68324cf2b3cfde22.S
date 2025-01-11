@@ -1,24 +1,22 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	str	x30, [sp, #-16]!                // 8-byte Folded Spill
+func0000000000000028:
+	str	x30, [sp, #-16]!
 	mov	x8, x0
 	mov	x3, x1
 	mov	x0, x4
 	mov	x1, x2
 	mov	x2, x8
 	bl	__udivti3
-	ldr	x30, [sp], #16                  // 8-byte Folded Reload
+	ldr	x30, [sp], #16
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	str	x30, [sp, #-16]!                // 8-byte Folded Spill
+
+func0000000000000008:
+	str	x30, [sp, #-16]!
 	mov	x8, x0
 	mov	x3, x1
 	mov	x0, x4
 	mov	x1, x2
 	mov	x2, x8
 	bl	__udivti3
-	ldr	x30, [sp], #16                  // 8-byte Folded Reload
+	ldr	x30, [sp], #16
 	ret
-                                        // -- End function
+

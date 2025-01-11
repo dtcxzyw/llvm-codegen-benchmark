@@ -1,4 +1,4 @@
-func00000000000000f0:                   # @func00000000000000f0
+func00000000000000f0:
 	andi	a2, a2, 63
 	slli	a3, a2, 2
 	slli	a2, a2, 6
@@ -9,7 +9,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	zext.h	a2, a2
 	li	a3, 722
 	mul	a2, a2, a3
@@ -19,7 +20,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000f7:                   # @func00000000000000f7
+
+func00000000000000f7:
 	andi	a2, a2, 255
 	li	a3, 1260
 	mul	a2, a2, a3
@@ -29,7 +31,8 @@ func00000000000000f7:                   # @func00000000000000f7
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	andi	a2, a2, 255
 	li	a3, 1260
 	mul	a2, a2, a3
@@ -39,7 +42,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000fd:                   # @func00000000000000fd
+
+func00000000000000fd:
 	andi	a2, a2, 255
 	li	a3, 1260
 	mul	a2, a2, a3
@@ -49,7 +53,8 @@ func00000000000000fd:                   # @func00000000000000fd
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000077:                   # @func0000000000000077
+
+func0000000000000077:
 	andi	a2, a2, 1020
 	lui	a3, 7
 	addi	a3, a3, 128
@@ -60,7 +65,8 @@ func0000000000000077:                   # @func0000000000000077
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	andi	a2, a2, 1020
 	lui	a3, 1048575
 	addi	a3, a3, -588
@@ -71,7 +77,8 @@ func0000000000000055:                   # @func0000000000000055
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	andi	a2, a2, 255
 	lui	a3, 1048552
 	addi	a3, a3, 1840
@@ -82,3 +89,4 @@ func00000000000000dd:                   # @func00000000000000dd
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	sarl	$31, %esi
 	addl	%edi, %esi
 	movzbl	%sil, %eax
@@ -9,3 +9,4 @@ func0000000000000009:                   # @func0000000000000009
 	subb	%cl, %al
 	orb	$48, %al
 	retq
+

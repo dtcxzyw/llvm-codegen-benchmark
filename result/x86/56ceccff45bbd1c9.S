@@ -1,13 +1,14 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000086:
 	shrq	$3, %rdx
-	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %eax
 	cmpl	%eax, %esi
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movq	%rdx, %rcx
-	movabsq	$-5614226457215950491, %rdx     # imm = 0xB21642C8590B2165
+	movabsq	$-5614226457215950491, %rdx
 	movq	%rcx, %rax
 	imulq	%rdx
 	addq	%rcx, %rdx
@@ -19,24 +20,28 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	shrq	$3, %rdx
-	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %eax
 	cmpl	%eax, %esi
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000087:                   # @func0000000000000087
+
+func0000000000000087:
 	shrq	$4, %rdx
-	imull	$1749801491, %edx, %eax         # imm = 0x684BDA13
+	imull	$1749801491, %edx, %eax
 	cmpl	%eax, %esi
 	setle	%al
 	andb	%dil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	shrq	$5, %rdx
-	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
+

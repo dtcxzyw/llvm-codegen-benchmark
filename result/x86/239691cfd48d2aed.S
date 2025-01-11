@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -6,9 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rdi
 	leaq	14(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	imulq	%rdx, %rsi
 	andl	$1, %edi
 	shlq	$32, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq
+

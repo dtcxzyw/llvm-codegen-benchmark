@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x80000000                      # float -0
-func0000000000000000:                   # @func0000000000000000
+	.long	0x80000000
+func0000000000000000:
 	kmovd	%esi, %k1
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	kmovd	%edi, %k1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+

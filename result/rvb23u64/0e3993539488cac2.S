@@ -1,28 +1,32 @@
-func0000000000000049:                   # @func0000000000000049
+func0000000000000049:
 	srliw	a1, a1, 24
 	seqz	a1, a1
 	slli	a1, a1, 3
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	sext.w	a1, a1
 	seqz	a1, a1
 	slli	a1, a1, 3
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	ori	a0, a0, 10
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	sext.w	a1, a1
 	sgtz	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
@@ -30,7 +34,8 @@ func0000000000000030:                   # @func0000000000000030
 	or	a0, a0, a1
 	ori	a0, a0, 32
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	sext.w	a1, a1
 	lui	a2, 12
 	xor	a1, a1, a2
@@ -39,7 +44,8 @@ func0000000000000042:                   # @func0000000000000042
 	or	a0, a0, a1
 	bseti	a0, a0, 21
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	sext.w	a1, a1
 	slti	a1, a1, 5
 	xori	a1, a1, 1
@@ -47,7 +53,8 @@ func0000000000000055:                   # @func0000000000000055
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret
-func0000000000000071:                   # @func0000000000000071
+
+func0000000000000071:
 	sext.w	a1, a1
 	sltiu	a1, a1, 256
 	xori	a1, a1, 1
@@ -55,14 +62,16 @@ func0000000000000071:                   # @func0000000000000071
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	not	a1, a1
 	srliw	a1, a1, 31
 	slli	a1, a1, 21
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret
-func0000000000000051:                   # @func0000000000000051
+
+func0000000000000051:
 	sext.w	a1, a1
 	sltiu	a1, a1, 256
 	xori	a1, a1, 1
@@ -70,7 +79,8 @@ func0000000000000051:                   # @func0000000000000051
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
 	slli	a1, a1, 11
@@ -78,3 +88,4 @@ func0000000000000048:                   # @func0000000000000048
 	bseti	a0, a0, 26
 	bseti	a0, a0, 27
 	ret
+

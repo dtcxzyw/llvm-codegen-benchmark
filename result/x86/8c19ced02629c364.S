@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andb	$1, %dil
 	andb	$7, %sil
 	leal	-1(%rsi), %ecx
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	sbbl	%eax, %eax
 	orb	%cl, %al
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andb	$7, %sil
 	addb	$4, %sil
 	movzbl	%sil, %ecx
@@ -15,3 +16,4 @@ func0000000000000003:                   # @func0000000000000003
 	movl	$7, %eax
 	cmovnel	%ecx, %eax
 	retq
+

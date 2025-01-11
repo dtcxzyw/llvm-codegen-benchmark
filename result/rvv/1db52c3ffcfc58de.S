@@ -1,4 +1,4 @@
-func0000000000000055:                   # @func0000000000000055
+func0000000000000055:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	li	a0, 10
@@ -13,7 +13,8 @@ func0000000000000055:                   # @func0000000000000055
 	li	a0, 100
 	vmacc.vx	v8, a0, v12
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
 	li	a0, 10
@@ -29,3 +30,4 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a0, a0, -496
 	vmacc.vx	v8, a0, v12
 	ret
+

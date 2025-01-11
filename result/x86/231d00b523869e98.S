@@ -1,4 +1,4 @@
-func00000000000000d0:                   # @func00000000000000d0
+func00000000000000d0:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -7,7 +7,8 @@ func00000000000000d0:                   # @func00000000000000d0
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func000000000000005b:                   # @func000000000000005b
+
+func000000000000005b:
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax
@@ -16,7 +17,8 @@ func000000000000005b:                   # @func000000000000005b
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func00000000000000db:                   # @func00000000000000db
+
+func00000000000000db:
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax
@@ -25,7 +27,8 @@ func00000000000000db:                   # @func00000000000000db
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	leaq	7(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -34,3 +37,4 @@ func0000000000000050:                   # @func0000000000000050
 	andq	$-8, %rax
 	leaq	(%rcx,%rax,4), %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000828:                   # @func0000000000000828
+func0000000000000828:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 1
 	lui	a0, 262145
@@ -12,3 +12,4 @@ func0000000000000828:                   # @func0000000000000828
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
+

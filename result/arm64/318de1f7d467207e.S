@@ -1,5 +1,4 @@
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+func0000000000000025:
 	sxtb	w8, w2
 	ubfx	w8, w8, #13, #2
 	add	w8, w2, w8
@@ -7,4 +6,4 @@ func0000000000000025:                   // @func0000000000000025
 	add	w8, w1, w8, asr #2
 	add	w0, w8, w0
 	ret
-                                        // -- End function
+

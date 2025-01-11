@@ -1,4 +1,4 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	slli.uw	a0, a0, 2
 	lui	a1, 699051
 	sh1add	a0, a0, a0
@@ -12,7 +12,8 @@ func000000000000002f:                   # @func000000000000002f
 	slli	a0, a0, 2
 	addi	a0, a0, 12
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	slli.uw	a0, a0, 2
 	lui	a1, 699051
 	sh1add	a0, a0, a0
@@ -26,9 +27,10 @@ func000000000000002d:                   # @func000000000000002d
 	slli	a0, a0, 2
 	addi	a0, a0, 12
 	ret
+
 .LCPI2_0:
-	.quad	-7515340178177965473            # 0x97b425ed097b425f
-func000000000000003f:                   # @func000000000000003f
+	.quad	-7515340178177965473
+func000000000000003f:
 	sext.w	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	sh1add	a0, a0, a0
@@ -43,9 +45,10 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 3
 	addi	a0, a0, 216
 	ret
+
 .LCPI3_0:
-	.quad	-7515340178177965473            # 0x97b425ed097b425f
-func000000000000003d:                   # @func000000000000003d
+	.quad	-7515340178177965473
+func000000000000003d:
 	sext.w	a0, a0
 	lui	a1, %hi(.LCPI3_0)
 	sh1add	a0, a0, a0
@@ -60,3 +63,4 @@ func000000000000003d:                   # @func000000000000003d
 	slli	a0, a0, 3
 	addi	a0, a0, 216
 	ret
+

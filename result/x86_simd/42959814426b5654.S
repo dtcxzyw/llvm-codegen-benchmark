@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	16807                           # 0x41a7
-func0000000000000004:                   # @func0000000000000004
+	.quad	16807
+func0000000000000004:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
 	subq	%rcx, %rsi
@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 	subq	%rcx, %rsi
 	addq	%rdx, %rsi
 	vmovq	%rsi, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm3, %xmm3
 	vpextrq	$1, %xmm2, %rdx
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
@@ -53,20 +53,21 @@ func0000000000000004:                   # @func0000000000000004
 	subq	%rax, %rcx
 	addq	%rdx, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vcvtuqq2pd	%ymm2, %ymm2
-	vfmadd213pd	%ymm1, %ymm2, %ymm0     # ymm0 = (ymm2 * ymm0) + ymm1
+	vfmadd213pd	%ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	16807                           # 0x41a7
-func0000000000000034:                   # @func0000000000000034
+	.quad	16807
+func0000000000000034:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
 	subq	%rcx, %rsi
@@ -90,7 +91,7 @@ func0000000000000034:                   # @func0000000000000034
 	subq	%rcx, %rsi
 	addq	%rdx, %rsi
 	vmovq	%rsi, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm3, %xmm3
 	vpextrq	$1, %xmm2, %rdx
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rsi
@@ -115,10 +116,11 @@ func0000000000000034:                   # @func0000000000000034
 	subq	%rax, %rcx
 	addq	%rdx, %rcx
 	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vcvtuqq2pd	%ymm2, %ymm2
-	vfmadd213pd	%ymm1, %ymm2, %ymm0     # ymm0 = (ymm2 * ymm0) + ymm1
+	vfmadd213pd	%ymm1, %ymm2, %ymm0
 	retq
+

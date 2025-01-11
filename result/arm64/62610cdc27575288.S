@@ -1,7 +1,6 @@
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+func000000000000008a:
 	cmp	w1, #16
-	mov	w8, #16                         // =0x10
+	mov	w8, #16
 	sub	w9, w2, #2
 	csel	w8, w1, w8, gt
 	cmp	w8, w9
@@ -9,9 +8,8 @@ func000000000000008a:                   // @func000000000000008a
 	cmp	w0, w8
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	bic	w8, w1, w1, asr #31
 	sub	w9, w2, #1
 	cmp	w8, w9
@@ -19,4 +17,4 @@ func000000000000000a:                   // @func000000000000000a
 	cmp	w0, w8
 	cset	w0, gt
 	ret
-                                        // -- End function
+

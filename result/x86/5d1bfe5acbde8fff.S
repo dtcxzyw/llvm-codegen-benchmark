@@ -1,4 +1,4 @@
-func0000000000000478:                   # @func0000000000000478
+func0000000000000478:
 	cmpb	$22, %dl
 	setb	%al
 	andb	%sil, %al
@@ -7,7 +7,8 @@ func0000000000000478:                   # @func0000000000000478
 	cmpq	$2, %rax
 	setae	%al
 	retq
-func0000000000000404:                   # @func0000000000000404
+
+func0000000000000404:
 	cmpb	$64, %dl
 	setb	%al
 	andb	%sil, %al
@@ -16,7 +17,8 @@ func0000000000000404:                   # @func0000000000000404
 	cmpq	$-119, %rax
 	setb	%al
 	retq
-func0000000000000408:                   # @func0000000000000408
+
+func0000000000000408:
 	cmpb	$64, %dl
 	setb	%al
 	andb	%sil, %al
@@ -25,3 +27,4 @@ func0000000000000408:                   # @func0000000000000408
 	cmpq	$6, %rax
 	setae	%al
 	retq
+

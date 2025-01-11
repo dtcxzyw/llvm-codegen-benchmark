@@ -1,6 +1,7 @@
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$-4294967297, %rax              # imm = 0xFFFFFFFEFFFFFFFF
+func0000000000000001:
+	movabsq	$-4294967297, %rax
 	cmpq	%rax, %rsi
 	seta	%al
 	orb	%dil, %al
 	retq
+

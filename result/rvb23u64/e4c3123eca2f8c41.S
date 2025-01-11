@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	not	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -17,7 +18,8 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -26,7 +28,8 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a1, 524288
 	xnor	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -36,7 +39,8 @@ func0000000000000018:                   # @func0000000000000018
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -47,7 +51,8 @@ func0000000000000014:                   # @func0000000000000014
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 48
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -56,7 +61,8 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	slli	a0, a0, 6
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -65,3 +71,4 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	addi	a0, a0, 2
 	ret
+

@@ -1,24 +1,27 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	negw	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	srl	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a2, -54
 	subw	a2, a2, a1
 	li	a1, 10
 	mul	a0, a0, a1
 	srl	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	li	a2, -53
 	subw	a2, a2, a1
 	li	a1, 10
 	mul	a0, a0, a1
 	srl	a0, a0, a2
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	li	a2, 40
 	subw	a2, a2, a1
 	lui	a1, 26510
@@ -28,3 +31,4 @@ func0000000000000038:                   # @func0000000000000038
 	mul	a0, a0, a1
 	srl	a0, a0, a2
 	ret
+

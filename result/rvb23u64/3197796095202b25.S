@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	slli	a1, a1, 33
 	srli	a2, a1, 33
 	srli	a1, a1, 53
@@ -6,7 +6,8 @@ func0000000000000054:                   # @func0000000000000054
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	zext.h	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -16
@@ -15,7 +16,8 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	bclri	a1, a1, 29
 	lui	a2, 65536
 	bclri	a1, a1, 30
@@ -26,3 +28,4 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

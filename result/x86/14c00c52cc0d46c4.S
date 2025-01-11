@@ -1,16 +1,18 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	movq	%rsi, %rdx
-	movl	$1000, %eax                     # imm = 0x3E8
+	movl	$1000, %eax
 	mulxq	%rax, %rcx, %rdx
 	movl	%edi, %eax
 	addq	%rcx, %rax
 	adcq	$0, %rdx
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	movq	%rsi, %rdx
-	movl	$1000000000, %eax               # imm = 0x3B9ACA00
+	movl	$1000000000, %eax
 	mulxq	%rax, %rcx, %rdx
 	movl	%edi, %eax
 	addq	%rcx, %rax
 	adcq	$0, %rdx
 	retq
+

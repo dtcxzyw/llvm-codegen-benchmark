@@ -1,4 +1,4 @@
-func000000000000003d:                   # @func000000000000003d
+func000000000000003d:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,8 @@ func000000000000003d:                   # @func000000000000003d
 	vadd.vv	v8, v8, v8
 	vadd.vi	v8, v8, -2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, -8
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,3 +20,4 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 35
 	vadd.vx	v8, v8, a0
 	ret
+

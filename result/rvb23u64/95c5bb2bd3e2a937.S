@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 1
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 32
@@ -17,7 +18,8 @@ func0000000000000181:                   # @func0000000000000181
 	addi	a0, a0, -6
 	czero.nez	a0, a1, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, -8
@@ -30,7 +32,8 @@ func000000000000002c:                   # @func000000000000002c
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 33
@@ -42,7 +45,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 3
@@ -54,7 +58,8 @@ func0000000000000024:                   # @func0000000000000024
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sgtz	a1, a1
@@ -63,14 +68,16 @@ func0000000000000141:                   # @func0000000000000141
 	addi	a1, a1, -100
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	sext.w	a1, a1
 	seqz	a1, a1
 	bseti	a1, a1, 14
 	srliw	a0, a0, 12
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 3
@@ -82,10 +89,12 @@ func0000000000000146:                   # @func0000000000000146
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	sext.w	a0, a0
 	sraiw	a1, a1, 31
 	ori	a1, a1, 1
 	slti	a0, a0, 0
 	czero.nez	a0, a1, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	setae	%al
 	leaq	6(,%rax,8), %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	xorl	%eax, %eax
@@ -14,7 +15,8 @@ func0000000000000014:                   # @func0000000000000014
 	setae	%al
 	shll	$3, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	xorl	%eax, %eax
@@ -22,7 +24,8 @@ func0000000000000034:                   # @func0000000000000034
 	setae	%al
 	leaq	4(,%rax,4), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	shrq	$32, %rsi
@@ -30,7 +33,8 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$3, %eax
 	sbbq	$0, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
 	xorl	%eax, %eax
@@ -38,3 +42,4 @@ func0000000000000028:                   # @func0000000000000028
 	sete	%al
 	shll	$3, %eax
 	retq
+

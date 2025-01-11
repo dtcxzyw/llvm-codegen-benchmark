@@ -1,4 +1,4 @@
-func0000000000000063:                   # @func0000000000000063
+func0000000000000063:
 	testl	%edx, %edx
 	setne	%cl
 	orb	%dil, %cl
@@ -7,3 +7,4 @@ func0000000000000063:                   # @func0000000000000063
 	leal	(,%rsi,4), %eax
 	orb	%cl, %al
 	retq
+

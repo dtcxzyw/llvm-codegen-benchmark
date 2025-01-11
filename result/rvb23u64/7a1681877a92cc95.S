@@ -1,18 +1,20 @@
-func0000000000000769:                   # @func0000000000000769
+func0000000000000769:
 	maxu	a1, a1, a2
 	li	a2, 4
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000749:                   # @func0000000000000749
+
+func0000000000000749:
 	maxu	a1, a1, a2
 	li	a2, 4
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000709:                   # @func0000000000000709
+
+func0000000000000709:
 	maxu	a1, a1, a2
 	li	a2, 4
 	maxu	a1, a1, a2
@@ -21,10 +23,12 @@ func0000000000000709:                   # @func0000000000000709
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func00000000000007f9:                   # @func00000000000007f9
+
+func00000000000007f9:
 	maxu	a1, a1, a2
 	li	a2, 4
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000048c:                   # @func000000000000048c
+func000000000000048c:
 	andi	a0, a0, 255
 	addiw	a2, a2, -91
 	sltiu	a2, a2, -26
@@ -7,3 +7,4 @@ func000000000000048c:                   # @func000000000000048c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

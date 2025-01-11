@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	sarq	$4, %rsi
 	sarq	$4, %rdi
 	cmpq	%rsi, %rdi
@@ -6,7 +6,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	sarq	%rsi
 	sarq	%rdi
 	cmpq	%rsi, %rdi
@@ -14,3 +15,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	testq	%rdi, %rdi
 	sete	%al
 	retq
+

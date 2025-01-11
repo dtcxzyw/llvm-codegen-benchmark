@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	andi	a0, a0, 1
 	sh1add	a2, a2, a2
 	slli	a1, a1, 63
@@ -9,3 +9,4 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a3
 	add	a0, a0, a2
 	ret
+

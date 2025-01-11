@@ -1,10 +1,10 @@
-func000000000000004a:                   # @func000000000000004a
-	imull	$315653, %edi, %eax             # imm = 0x4D105
+func000000000000004a:
+	imull	$315653, %edi, %eax
 	sarl	$20, %eax
-	movl	$294, %ecx                      # imm = 0x126
+	movl	$294, %ecx
 	subl	%eax, %ecx
 	movzwl	%cx, %eax
-	imull	$12137, %eax, %edx              # imm = 0x2F69
+	imull	$12137, %eax, %edx
 	shrl	$16, %edx
 	subl	%edx, %ecx
 	movzwl	%cx, %eax
@@ -12,3 +12,4 @@ func000000000000004a:                   # @func000000000000004a
 	addl	%edx, %eax
 	shrl	$4, %eax
 	retq
+

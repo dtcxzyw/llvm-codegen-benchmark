@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001a:
 	leal	255(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -9,3 +9,4 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
+

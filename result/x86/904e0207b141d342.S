@@ -1,4 +1,4 @@
-func0000000000000119:                   # @func0000000000000119
+func0000000000000119:
 	leal	-1(%rsi), %eax
 	cmpl	%edi, %eax
 	cmovgel	%edi, %eax
@@ -6,3 +6,4 @@ func0000000000000119:                   # @func0000000000000119
 	cmovlel	%edi, %eax
 	incl	%eax
 	retq
+

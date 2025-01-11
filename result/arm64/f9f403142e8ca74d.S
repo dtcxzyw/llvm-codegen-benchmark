@@ -1,57 +1,52 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	w8, #17                         // =0x11
+func0000000000000003:
+	mov	w8, #17
 	cmp	w1, #0
-	mov	w9, #34                         // =0x22
+	mov	w9, #34
 	csel	w8, w9, w8, eq
 	tst	w0, #0x1
 	orr	w9, w8, #0x80
 	csel	w0, w8, w9, ne
 	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
+
+func0000000000000019:
+	mov	w8, #2
 	cmp	w1, #0
-	mov	w9, #98                         // =0x62
+	mov	w9, #98
 	csel	w8, w9, w8, eq
 	tst	w0, #0x1
 	orr	w9, w8, #0x8
 	csel	w0, w8, w9, ne
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	w8, #638582784                  // =0x26100000
+
+func0000000000000002:
+	mov	w8, #638582784
 	cmp	w1, #0
-	mov	w9, #33554432                   // =0x2000000
+	mov	w9, #33554432
 	csel	w8, w9, w8, eq
-	mov	w9, #537919488                  // =0x20100000
+	mov	w9, #537919488
 	tst	w0, #0x1
 	orr	w9, w8, w9
 	csel	w0, w8, w9, ne
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
-	mov	w8, #671088640                  // =0x28000000
+
+func0000000000000015:
+	mov	w8, #671088640
 	cmp	w1, #0
-	mov	w9, #134217728                  // =0x8000000
+	mov	w9, #134217728
 	csel	w8, w9, w8, ge
-	mov	w9, #576                        // =0x240
+	mov	w9, #576
 	tst	w0, #0x1
 	orr	w9, w8, w9
 	csel	w0, w8, w9, ne
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	tst	w1, #0xffff0000
-	mov	w8, #8                          // =0x8
+	mov	w8, #8
 	cset	w9, ne
 	tst	w0, #0x1
 	lsl	w10, w9, #4
 	bfi	w8, w9, #4, #1
 	csel	w0, w10, w8, ne
 	ret
-                                        // -- End function
+

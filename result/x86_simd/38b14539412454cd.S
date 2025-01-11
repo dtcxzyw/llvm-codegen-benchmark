@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -50,11 +50,12 @@ func000000000000014a:                   # @func000000000000014a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	31                              # 0x1f
+	.long	31
 .LCPI1_1:
-	.long	6                               # 0x6
-func0000000000000148:                   # @func0000000000000148
+	.long	6
+func0000000000000148:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -105,9 +106,10 @@ func0000000000000148:                   # @func0000000000000148
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	32                              # 0x20
-func0000000000000081:                   # @func0000000000000081
+	.long	32
+func0000000000000081:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -158,11 +160,12 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	65536                           # 0x10000
+	.long	65536
 .LCPI3_1:
-	.long	16                              # 0x10
-func0000000000000284:                   # @func0000000000000284
+	.long	16
+func0000000000000284:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -213,3 +216,4 @@ func0000000000000284:                   # @func0000000000000284
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

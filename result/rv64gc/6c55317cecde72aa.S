@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andi	a1, a1, 255
 	beqz	a1, .LBB0_2
 	li	a1, 8
@@ -8,13 +8,15 @@ func0000000000000003:                   # @func0000000000000003
 	li	a1, 16
 	or	a0, a0, a1
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	andi	a1, a1, 255
 	sltiu	a1, a1, 12
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andi	a1, a1, 255
 	li	a2, 11
 	beq	a1, a2, .LBB2_2
@@ -25,7 +27,8 @@ func0000000000000002:                   # @func0000000000000002
 	li	a1, 192
 	or	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 33
@@ -33,13 +36,15 @@ func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	andi	a1, a1, -256
 	or	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	andi	a2, a1, 255
 	lui	a1, 40
 	beqz	a2, .LBB5_2
@@ -50,29 +55,33 @@ func0000000000000018:                   # @func0000000000000018
 	addiw	a1, a1, 640
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	andi	a1, a1, 255
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ori	a0, a0, 10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a2, a1, 56
 	lui	a1, 1
 	bltz	a2, .LBB7_2
 	li	a1, 1
 	slli	a1, a1, 11
-.LBB7_2:                                # %entry
+.LBB7_2:
 	or	a0, a0, a1
 	ret
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	andi	a1, a1, 255
 	snez	a1, a1
 	slli	a1, a1, 2
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 0
@@ -80,9 +89,11 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a1, a1, 255
 	sltiu	a1, a1, 2
 	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
+

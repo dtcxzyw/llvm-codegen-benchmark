@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -7
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -9,7 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -20,7 +21,8 @@ func0000000000000084:                   # @func0000000000000084
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	li	a0, -91
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -33,3 +35,4 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
+

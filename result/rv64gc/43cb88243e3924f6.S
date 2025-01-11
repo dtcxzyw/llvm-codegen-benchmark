@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	sext.w	a2, a1
 	beqz	a2, .LBB0_2
 	srliw	a2, a1, 1
@@ -46,7 +46,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	sext.w	a2, a1
 	beqz	a2, .LBB1_2
 	srliw	a2, a1, 1
@@ -94,7 +95,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000005c1:                   # @func00000000000005c1
+
+func00000000000005c1:
 	sext.w	a2, a1
 	beqz	a2, .LBB2_2
 	srliw	a2, a1, 1
@@ -142,7 +144,8 @@ func00000000000005c1:                   # @func00000000000005c1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000004c1:                   # @func00000000000004c1
+
+func00000000000004c1:
 	sext.w	a2, a1
 	beqz	a2, .LBB3_2
 	srliw	a2, a1, 1
@@ -190,3 +193,4 @@ func00000000000004c1:                   # @func00000000000004c1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
+

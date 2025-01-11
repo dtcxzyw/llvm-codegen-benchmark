@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	srli	a1, a1, 2
 	addi	a1, a1, -1
 	zext.w	a1, a1
@@ -6,7 +6,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	srli	a1, a1, 3
 	addi	a1, a1, 1
 	andi	a1, a1, -4
@@ -14,7 +15,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000381:                   # @func0000000000000381
+
+func0000000000000381:
 	srli	a1, a1, 4
 	addi	a1, a1, 1
 	andi	a1, a1, 3
@@ -22,7 +24,8 @@ func0000000000000381:                   # @func0000000000000381
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	srli	a1, a1, 1
 	addi	a1, a1, 1
 	andi	a1, a1, -16
@@ -30,7 +33,8 @@ func0000000000000141:                   # @func0000000000000141
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	srli	a1, a1, 2
 	addi	a1, a1, 1
 	andi	a1, a1, -2
@@ -38,7 +42,8 @@ func0000000000000181:                   # @func0000000000000181
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	srli	a1, a1, 1
 	addi	a1, a1, 1
 	andi	a1, a1, -2
@@ -46,7 +51,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000341:                   # @func0000000000000341
+
+func0000000000000341:
 	srli	a1, a1, 1
 	addi	a1, a1, 1
 	andi	a1, a1, -16
@@ -54,7 +60,8 @@ func0000000000000341:                   # @func0000000000000341
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003c1:                   # @func00000000000003c1
+
+func00000000000003c1:
 	srli	a1, a1, 2
 	addi	a1, a1, 1
 	andi	a1, a1, -8
@@ -62,7 +69,8 @@ func00000000000003c1:                   # @func00000000000003c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	srli	a1, a1, 6
 	addi	a1, a1, -1
 	andi	a1, a1, -2
@@ -70,3 +78,4 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

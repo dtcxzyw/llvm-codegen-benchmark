@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
-func00000000000000a6:                   # @func00000000000000a6
+	.quad	0x3ff0000000000000
+func00000000000000a6:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fmv.d.x	fa4, zero
@@ -11,7 +11,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa1
 	xori	a1, a1, 1
@@ -20,14 +21,16 @@ func0000000000000066:                   # @func0000000000000066
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000154:                   # @func0000000000000154
+
+func0000000000000154:
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa1, fa5
 	or	a0, a0, a1
 	fle.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000000132:                   # @func0000000000000132
+
+func0000000000000132:
 	fclass.d	a1, fa1
 	andi	a1, a1, 896
 	snez	a1, a1
@@ -37,3 +40,4 @@ func0000000000000132:                   # @func0000000000000132
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
+

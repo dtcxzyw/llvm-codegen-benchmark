@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	zext.w	a4, a4
 	mulhu	a3, a2, a4
 	mul	a2, a2, a4
@@ -11,3 +11,4 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	ret
+

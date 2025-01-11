@@ -1,5 +1,5 @@
-func0000000000000007:                   # @func0000000000000007
-	movl	$32640, %eax                    # imm = 0x7F80
+func0000000000000007:
+	movl	$32640, %eax
 	subq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -8,3 +8,4 @@ func0000000000000007:                   # @func0000000000000007
 	cmovgeq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
+

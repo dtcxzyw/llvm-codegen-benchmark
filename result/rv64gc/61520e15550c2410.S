@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	srai	a3, a0, 63
 	sub	a1, a1, a2
 	sltiu	a2, a0, 65
@@ -9,3 +9,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	not	a1, a2
 	and	a0, a0, a1
 	ret
+

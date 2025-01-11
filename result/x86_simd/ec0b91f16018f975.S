@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vextracti128	$1, %ymm1, %xmm0
@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	cqto
 	idivq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm4, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm0, %xmm0
 	vpextrq	$1, %xmm1, %rax
 	vpextrq	$1, %xmm2, %rcx
 	cqto
@@ -24,9 +24,10 @@ func0000000000000001:                   # @func0000000000000001
 	cqto
 	idivq	%rcx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.long	0x437f0000                      # float 255
+	.long	0x437f0000
 .LCPI0_1:
-	.long	0x3f000000                      # float 0.5
-func0000000000000000:                   # @func0000000000000000
+	.long	0x3f000000
+func0000000000000000:
 	andb	$1, %dil
-	vmovss	.LCPI0_0(%rip), %xmm1           # xmm1 = [2.55E+2,0.0E+0,0.0E+0,0.0E+0]
-	vfmadd213ss	.LCPI0_1(%rip), %xmm0, %xmm1 # xmm1 = (xmm0 * xmm1) + mem
+	vmovss	.LCPI0_0(%rip), %xmm1
+	vfmadd213ss	.LCPI0_1(%rip), %xmm0, %xmm1
 	vcvttss2si	%xmm1, %ecx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -14,3 +14,4 @@ func0000000000000000:                   # @func0000000000000000
 	sbbl	%eax, %eax
 	orb	%cl, %al
 	retq
+

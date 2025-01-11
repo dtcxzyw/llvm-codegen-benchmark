@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 29
@@ -8,7 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 29
@@ -18,7 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 26
@@ -28,7 +30,8 @@ func000000000000000a:                   # @func000000000000000a
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
@@ -37,7 +40,8 @@ func0000000000000006:                   # @func0000000000000006
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 349525
 	addi	a0, a0, 1366
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -48,7 +52,8 @@ func0000000000000008:                   # @func0000000000000008
 	vsext.vf2	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 26
@@ -58,7 +63,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsext.vf2	v12, v10
 	vmsne.vv	v0, v8, v12
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 26
@@ -68,3 +74,4 @@ func0000000000000005:                   # @func0000000000000005
 	vsext.vf2	v12, v10
 	vmsleu.vv	v0, v8, v12
 	ret
+

@@ -1,5 +1,4 @@
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+func0000000000000019:
 	extr	x8, x3, x2, #1
 	lsr	x9, x3, #1
 	clz	x8, x8
@@ -11,4 +10,4 @@ func0000000000000019:                   // @func0000000000000019
 	csinc	w9, w0, wzr, hi
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
+

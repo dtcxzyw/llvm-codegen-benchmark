@@ -1,6 +1,7 @@
-func00000000000003a1:                   # @func00000000000003a1
+func00000000000003a1:
 	addl	%edx, %esi
-	cmpl	$131069, %esi                   # imm = 0x1FFFD
+	cmpl	$131069, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
+

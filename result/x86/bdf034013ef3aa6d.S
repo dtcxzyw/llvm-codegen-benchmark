@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	decl	%edx
 	cmpl	%esi, %edx
 	cmovgel	%esi, %edx
@@ -7,3 +7,4 @@ func0000000000000009:                   # @func0000000000000009
 	incl	%edx
 	movslq	%edx, %rax
 	retq
+

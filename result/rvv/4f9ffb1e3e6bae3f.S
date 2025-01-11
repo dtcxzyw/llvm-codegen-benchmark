@@ -1,4 +1,4 @@
-func0000000000000284:                   # @func0000000000000284
+func0000000000000284:
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -7,7 +7,8 @@ func0000000000000284:                   # @func0000000000000284
 	li	a0, 256
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a0, 1000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -16,11 +17,12 @@ func0000000000000004:                   # @func0000000000000004
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	ret
+
 .LCPI2_0:
-	.quad	211813488000000000              # 0x2f0833ebee06000
+	.quad	211813488000000000
 .LCPI2_1:
-	.quad	-9011559254509551616            # 0x82f0829a72930000
-func0000000000000204:                   # @func0000000000000204
+	.quad	-9011559254509551616
+func0000000000000204:
 	lui	a0, 244
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
@@ -32,3 +34,4 @@ func0000000000000204:                   # @func0000000000000204
 	vadd.vx	v8, v8, a1
 	vmsltu.vx	v0, v8, a2
 	ret
+

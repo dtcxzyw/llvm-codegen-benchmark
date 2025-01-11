@@ -1,4 +1,4 @@
-func000000000000028e:                   # @func000000000000028e
+func000000000000028e:
 	movswq	%dx, %rax
 	cmpq	%rax, %rdi
 	setle	%cl
@@ -6,3 +6,4 @@ func000000000000028e:                   # @func000000000000028e
 	setg	%al
 	orb	%cl, %al
 	retq
+

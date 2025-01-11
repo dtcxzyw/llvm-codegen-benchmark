@@ -1,5 +1,4 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	negs	w8, w0
 	and	w9, w0, #0x3
 	and	w8, w8, #0x3
@@ -9,9 +8,8 @@ func0000000000000001:                   // @func0000000000000001
 	add	w9, w9, #4
 	csel	w0, w0, w9, eq
 	ret
-                                        // -- End function
-func00000000000000a1:                   // @func00000000000000a1
-// %bb.0:                               // %entry
+
+func00000000000000a1:
 	negs	w8, w0
 	and	w9, w0, #0x3
 	and	w8, w8, #0x3
@@ -21,4 +19,4 @@ func00000000000000a1:                   // @func00000000000000a1
 	add	w9, w9, #4
 	csel	w0, w0, w9, eq
 	ret
-                                        // -- End function
+

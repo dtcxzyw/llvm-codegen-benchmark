@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	decq	%rsi
 	movb	$61, %al
 	bzhiq	%rax, %rsi, %rax
@@ -7,7 +7,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	decq	%rsi
 	movb	$62, %al
 	bzhiq	%rax, %rsi, %rax
@@ -16,7 +17,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	decq	%rsi
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
@@ -25,7 +27,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	decq	%rsi
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
@@ -34,3 +37,4 @@ func0000000000000141:                   # @func0000000000000141
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

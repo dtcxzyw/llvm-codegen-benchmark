@@ -1,41 +1,36 @@
-func0000000000000141:                   // @func0000000000000141
-// %bb.0:                               // %entry
+func0000000000000141:
 	and	w8, w0, #0xff
 	sub	x9, x1, x2
 	cmp	w8, #48
 	ccmp	x9, #1, #4, eq
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000144:                   // @func0000000000000144
-// %bb.0:                               // %entry
+
+func0000000000000144:
 	and	w8, w0, #0xff
 	sub	x9, x1, x2
 	cmp	w8, #5
 	ccmp	x9, #2, #4, lo
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
+
+func00000000000000cc:
 	sub	x8, x1, x2
 	tst	w0, #0xff
-	mov	w9, #8190                       // =0x1ffe
+	mov	w9, #8190
 	ccmp	x8, x9, #0, ne
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	sub	x8, x1, x2
 	tst	w0, #0xff
-	mov	w9, #256                        // =0x100
+	mov	w9, #256
 	ccmp	x8, x9, #2, ne
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	sub	x8, x1, x2
 	and	w9, w0, #0xff
 	lsr	x8, x8, #32
@@ -43,27 +38,24 @@ func0000000000000081:                   // @func0000000000000081
 	ccmp	x8, #0, #0, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	tst	w0, #0xff
 	ccmp	x1, x2, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000054c:                   // @func000000000000054c
-// %bb.0:                               // %entry
+
+func000000000000054c:
 	tst	w0, #0xff
 	ccmp	x1, x2, #4, ne
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	and	w8, w0, #0xff
 	sub	x9, x1, x2
 	cmp	w8, #62
 	ccmp	x9, #19, #0, eq
 	cset	w0, hi
 	ret
-                                        // -- End function
+

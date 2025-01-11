@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	li	a0, -48
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -7,7 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 	li	a0, 100
 	vwmaccu.vx	v8, a0, v11
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	li	a0, -48
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -16,7 +17,8 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 100
 	vwmaccu.vx	v8, a0, v11
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	li	a0, -48
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -25,3 +27,4 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 10
 	vwmaccu.vx	v8, a0, v11
 	ret
+

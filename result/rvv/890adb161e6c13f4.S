@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	lui	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -7,7 +7,8 @@ func0000000000000043:                   # @func0000000000000043
 	vmerge.vvm	v8, v10, v8, v0
 	vor.vi	v8, v8, 3
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -18,7 +19,8 @@ func0000000000000042:                   # @func0000000000000042
 	slli	a0, a0, 24
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
@@ -29,7 +31,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 4080
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	li	a0, 212
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vx	v0, v10, a0
@@ -37,7 +40,8 @@ func0000000000000018:                   # @func0000000000000018
 	vor.vi	v8, v8, 2, v0.t
 	vor.vi	v8, v8, 4
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	bseti	a0, zero, 34
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vi	v0, v10, 0
@@ -47,7 +51,8 @@ func0000000000000014:                   # @func0000000000000014
 	bseti	a0, zero, 35
 	vor.vx	v8, v8, a0
 	ret
-func000000000000004d:                   # @func000000000000004d
+
+func000000000000004d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -55,7 +60,8 @@ func000000000000004d:                   # @func000000000000004d
 	vmerge.vvm	v8, v10, v8, v0
 	vor.vi	v8, v8, 4
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -64,7 +70,8 @@ func000000000000004c:                   # @func000000000000004c
 	li	a0, 32
 	vor.vx	v8, v8, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
@@ -74,3 +81,4 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 16
 	vor.vx	v8, v8, a0
 	ret
+

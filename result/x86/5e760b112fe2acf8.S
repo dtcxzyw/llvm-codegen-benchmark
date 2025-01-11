@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	movl	%esi, %eax
 	andl	$1, %edx
 	shll	$24, %edx
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	orl	%edi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -15,7 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -24,7 +26,8 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	movl	%esi, %eax
 	andl	$1, %edx
 	shll	$7, %edx
@@ -32,21 +35,24 @@ func000000000000000e:                   # @func000000000000000e
 	orl	%edi, %eax
 	orl	%edx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movl	%esi, %eax
 	shll	$31, %edx
 	orl	%edi, %edx
 	shll	$23, %eax
 	orl	%edx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	%esi, %eax
 	shll	$31, %edx
 	orl	%edi, %edx
 	shll	$24, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %eax
 	shll	$16, %edi
@@ -54,7 +60,8 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%edi, %eax
 	orl	$1, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -64,3 +71,4 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%esi, %eax
 	orl	$1, %eax
 	retq
+

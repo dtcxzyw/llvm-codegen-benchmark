@@ -1,11 +1,12 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vzext.vf4	v10, v8
 	vadd.vi	v8, v10, 6
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func0000000000000057:                   # @func0000000000000057
+
+func0000000000000057:
 	li	a0, 30
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
@@ -15,7 +16,8 @@ func0000000000000057:                   # @func0000000000000057
 	vsub.vv	v8, v12, v10
 	vadd.vi	v8, v8, 4
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vzext.vf4	v10, v8
@@ -23,7 +25,8 @@ func000000000000000b:                   # @func000000000000000b
 	vadd.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	li	a0, 57
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
@@ -36,7 +39,8 @@ func0000000000000043:                   # @func0000000000000043
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
 	ret
-func0000000000000051:                   # @func0000000000000051
+
+func0000000000000051:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, 9
 	vmv.v.i	v10, 0
@@ -47,3 +51,4 @@ func0000000000000051:                   # @func0000000000000051
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
 	ret
+

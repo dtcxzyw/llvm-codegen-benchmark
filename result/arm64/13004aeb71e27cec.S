@@ -1,6 +1,5 @@
-func0000000000000043:                   // @func0000000000000043
-// %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
+func0000000000000043:
+	mov	w8, #3
 	tst	w1, #0x1
 	and	w9, w0, #0xff
 	csel	w8, w8, wzr, ne
@@ -9,16 +8,15 @@ func0000000000000043:                   // @func0000000000000043
 	csel	w8, w10, w8, eq
 	orr	w0, w8, #0x8
 	ret
-                                        // -- End function
-func0000000000000051:                   // @func0000000000000051
-// %bb.0:                               // %entry
-	mov	w8, #4098                       // =0x1002
+
+func0000000000000051:
+	mov	w8, #4098
 	tst	w1, #0x1
-	mov	w9, #2                          // =0x2
+	mov	w9, #2
 	csel	w8, w9, w8, ne
 	tst	w0, #0xe0
 	orr	w9, w8, #0x400
 	csel	w8, w9, w8, ne
 	orr	w0, w8, #0x800
 	ret
-                                        // -- End function
+

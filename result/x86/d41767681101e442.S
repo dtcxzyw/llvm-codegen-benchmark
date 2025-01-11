@@ -1,5 +1,5 @@
-func0000000000000104:                   # @func0000000000000104
-	cmpl	$1029, %edx                     # imm = 0x405
+func0000000000000104:
+	cmpl	$1029, %edx
 	sete	%cl
 	orb	%dil, %cl
 	addl	$-3, %esi
@@ -7,3 +7,4 @@ func0000000000000104:                   # @func0000000000000104
 	setb	%al
 	orb	%cl, %al
 	retq
+

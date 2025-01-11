@@ -1,4 +1,4 @@
-func00000000000000de:                   # @func00000000000000de
+func00000000000000de:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -34,7 +34,8 @@ func00000000000000de:                   # @func00000000000000de
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000005e:                   # @func000000000000005e
+
+func000000000000005e:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -70,7 +71,8 @@ func000000000000005e:                   # @func000000000000005e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000009e:                   # @func000000000000009e
+
+func000000000000009e:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -106,7 +108,8 @@ func000000000000009e:                   # @func000000000000009e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -142,7 +145,8 @@ func000000000000001e:                   # @func000000000000001e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -179,7 +183,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	li	a0, -1
 	sllw	a0, a0, a2
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -216,3 +221,4 @@ func000000000000001f:                   # @func000000000000001f
 	li	a0, 1
 	sllw	a0, a0, a2
 	ret
+

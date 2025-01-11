@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	andi	a1, a1, 1
 	andi	a0, a0, 255
 	bnez	a1, .LBB0_2
@@ -11,3 +11,4 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
+

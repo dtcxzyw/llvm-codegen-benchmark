@@ -1,8 +1,8 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	mv	a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a0, a1, 32
 	lui	a2, 33825
 	addi	a2, a2, 133
@@ -19,3 +19,4 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	xori	a0, a0, 31
 	ret
+

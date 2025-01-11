@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006a:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vle32.v	v24, (a0)
 	vfwcvt.f.f.v	v0, v24
@@ -8,7 +8,8 @@ func000000000000006a:                   # @func000000000000006a
 	vmfle.vv	v9, v0, v16
 	vmorn.mm	v0, v8, v9
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vle32.v	v24, (a0)
 	vfwcvt.f.f.v	v0, v24
@@ -18,3 +19,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	vmnot.m	v8, v16
 	vmorn.mm	v0, v8, v24
 	ret
+

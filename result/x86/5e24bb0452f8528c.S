@@ -1,6 +1,7 @@
-func0000000000000008:                   # @func0000000000000008
-	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
+func0000000000000008:
+	andl	$2147483647, %edx
 	addl	%esi, %edi
 	cmpl	%edi, %edx
 	seta	%al
 	retq
+

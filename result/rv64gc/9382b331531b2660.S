@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	fcvt.s.d	fa5, fa1
 	lui	a0, 260096
 	fcvt.s.d	fa4, fa0
@@ -7,7 +7,8 @@ func0000000000000088:                   # @func0000000000000088
 	feq.s	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	fcvt.s.d	fa5, fa1
 	lui	a0, 260096
 	fcvt.s.d	fa4, fa0
@@ -16,7 +17,8 @@ func0000000000000022:                   # @func0000000000000022
 	flt.s	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	fcvt.s.d	fa5, fa1
 	lui	a0, 260096
 	fcvt.s.d	fa4, fa0
@@ -25,3 +27,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	fle.s	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
+

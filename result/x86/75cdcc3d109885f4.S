@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -6,7 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -22,3 +24,4 @@ func000000000000000f:                   # @func000000000000000f
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
+

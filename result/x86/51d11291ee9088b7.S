@@ -1,4 +1,4 @@
-func0000000000000481:                   # @func0000000000000481
+func0000000000000481:
 	leal	-65(%rdi), %eax
 	movl	%edi, %ecx
 	orb	$32, %cl
@@ -8,3 +8,4 @@ func0000000000000481:                   # @func0000000000000481
 	cmpb	$48, %al
 	sete	%al
 	retq
+

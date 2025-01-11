@@ -1,11 +1,12 @@
 .LCPI0_0:
-	.quad	0xbff8000000000000              # double -1.5
+	.quad	0xbff8000000000000
 .LCPI0_1:
-	.quad	0x3fd287a7636f4361              # double 0.28952965460216801
+	.quad	0x3fd287a7636f4361
 .LCPI0_2:
-	.quad	0x3fc68a288b60c8b3              # double 0.1760912590558
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fc68a288b60c8b3
+func0000000000000000:
 	vaddpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm1
-	vbroadcastsd	.LCPI0_1(%rip), %ymm0   # ymm0 = [2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1]
-	vfmadd213pd	.LCPI0_2(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm1 * ymm0) + mem
+	vbroadcastsd	.LCPI0_1(%rip), %ymm0
+	vfmadd213pd	.LCPI0_2(%rip){1to4}, %ymm1, %ymm0
 	retq
+

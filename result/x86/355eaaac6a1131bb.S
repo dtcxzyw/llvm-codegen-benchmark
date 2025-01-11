@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x3d800000                      # float 0.0625
-func0000000000000000:                   # @func0000000000000000
+	.long	0x3d800000
+func0000000000000000:
 	leal	3(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	vcvtsi2ss	%eax, %xmm0, %xmm0
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
+

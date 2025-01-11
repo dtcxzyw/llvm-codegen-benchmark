@@ -1,4 +1,4 @@
-func0000000000001904:                   # @func0000000000001904
+func0000000000001904:
 	shrxq	%rdx, %rdi, %rax
 	testq	%rax, %rax
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000001904:                   # @func0000000000001904
 	seta	%al
 	andb	%cl, %al
 	retq
+

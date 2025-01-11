@@ -1,6 +1,7 @@
-func00000000000000d5:                   # @func00000000000000d5
-	andl	$2047, %esi                     # imm = 0x7FF
+func00000000000000d5:
+	andl	$2047, %esi
 	addl	%edi, %esi
-	movl	$1086, %eax                     # imm = 0x43E
+	movl	$1086, %eax
 	subl	%esi, %eax
 	retq
+

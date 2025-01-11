@@ -1,18 +1,20 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	shrl	%esi
 	cmpl	$1, %esi
 	adcl	$0, %esi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	shrl	$9, %esi
 	cmpl	$1, %esi
 	adcl	$0, %esi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	shrl	$3, %esi
 	cmpl	$17, %esi
 	movl	$16, %eax
@@ -20,3 +22,4 @@ func0000000000000029:                   # @func0000000000000029
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
+

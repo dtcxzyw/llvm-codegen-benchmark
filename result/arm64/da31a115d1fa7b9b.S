@@ -1,18 +1,16 @@
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+func0000000000000014:
 	umulh	x9, x0, x2
 	orr	x8, x4, x3
 	madd	x8, x0, x8, x9
 	mul	x0, x0, x2
 	madd	x1, x1, x2, x8
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	umulh	x9, x0, x2
 	orr	x8, x4, x3
 	madd	x8, x0, x8, x9
 	mul	x0, x0, x2
 	madd	x1, x1, x2, x8
 	ret
-                                        // -- End function
+

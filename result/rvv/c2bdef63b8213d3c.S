@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 16
 	li	a0, 255
@@ -10,7 +10,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 1
 	lui	a0, 512
@@ -20,7 +21,8 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 1
 	lui	a0, 512
@@ -30,7 +32,8 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a0, a0, 1619
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 2
 	li	a0, -1
@@ -39,7 +42,8 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 80
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	li	a0, 32
 	lui	a1, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -51,3 +55,4 @@ func0000000000000002:                   # @func0000000000000002
 	bseti	a0, a0, 48
 	vmul.vx	v8, v8, a0
 	ret
+

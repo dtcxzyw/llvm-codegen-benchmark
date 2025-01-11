@@ -1,8 +1,8 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	addi	sp, sp, -32
-	sd	ra, 24(sp)                      # 8-byte Folded Spill
-	sd	s0, 16(sp)                      # 8-byte Folded Spill
-	sd	s1, 8(sp)                       # 8-byte Folded Spill
+	sd	ra, 24(sp)
+	sd	s0, 16(sp)
+	sd	s1, 8(sp)
 	mv	a6, a1
 	mv	a7, a0
 	or	s0, a2, a4
@@ -16,8 +16,9 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a1, s1, a1
 	sub	a1, a1, a2
 	sub	a0, s0, a0
-	ld	ra, 24(sp)                      # 8-byte Folded Reload
-	ld	s0, 16(sp)                      # 8-byte Folded Reload
-	ld	s1, 8(sp)                       # 8-byte Folded Reload
+	ld	ra, 24(sp)
+	ld	s0, 16(sp)
+	ld	s1, 8(sp)
 	addi	sp, sp, 32
 	ret
+

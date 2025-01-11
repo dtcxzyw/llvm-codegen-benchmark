@@ -1,24 +1,20 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	sub	w8, w1, w2
 	eor	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	sub	w8, w1, w2
 	eor	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	sub	w8, w1, w2
 	eor	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	sub	w8, w1, w2
 	eor	w0, w0, w8
 	ret
-                                        // -- End function
+

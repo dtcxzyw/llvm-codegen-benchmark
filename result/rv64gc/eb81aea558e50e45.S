@@ -1,4 +1,4 @@
-func0000000000000ea6:                   # @func0000000000000ea6
+func0000000000000ea6:
 	srli	a3, a2, 1
 	lui	a6, 349525
 	lui	a7, 209715
@@ -44,3 +44,4 @@ func0000000000000ea6:                   # @func0000000000000ea6
 	subw	a0, a0, a2
 	slti	a0, a0, 1
 	ret
+

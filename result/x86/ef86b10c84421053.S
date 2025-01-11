@@ -1,4 +1,4 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
@@ -8,7 +8,8 @@ func0000000000000108:                   # @func0000000000000108
 	cmpl	$23, %edi
 	setae	%al
 	retq
-func0000000000000128:                   # @func0000000000000128
+
+func0000000000000128:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
@@ -18,3 +19,4 @@ func0000000000000128:                   # @func0000000000000128
 	cmpl	$23, %edi
 	setae	%al
 	retq
+

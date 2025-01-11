@@ -1,11 +1,12 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 28
 	add	a1, a1, a2
 	srliw	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	sext.w	a2, a1
 	lui	a3, 599186
 	addiw	a3, a3, 1171
@@ -17,3 +18,4 @@ func0000000000000000:                   # @func0000000000000000
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

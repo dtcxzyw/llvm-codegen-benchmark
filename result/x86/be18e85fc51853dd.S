@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000c4:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -6,7 +6,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	cmpq	$15, %rdi
 	setb	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -14,7 +15,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	cmpq	$3, %rdi
 	setb	%al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+
+func00000000000000d8:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -22,7 +24,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	cmpq	$7, %rdi
 	setae	%al
 	retq
-func00000000000003d4:                   # @func00000000000003d4
+
+func00000000000003d4:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -30,7 +33,8 @@ func00000000000003d4:                   # @func00000000000003d4
 	cmpq	$15, %rdi
 	setb	%al
 	retq
-func00000000000003d8:                   # @func00000000000003d8
+
+func00000000000003d8:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -38,7 +42,8 @@ func00000000000003d8:                   # @func00000000000003d8
 	cmpq	$7, %rdi
 	setae	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -46,7 +51,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$15, %rdi
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -54,7 +60,8 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	$3, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	addq	%rdx, %rsi
 	incq	%rdi
 	cmpq	%rsi, %rdi
@@ -62,7 +69,8 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	$7, %rdi
 	setae	%al
 	retq
-func00000000000002a4:                   # @func00000000000002a4
+
+func00000000000002a4:
 	incq	%rdx
 	addq	%rsi, %rdi
 	cmpq	%rdx, %rdi
@@ -70,7 +78,8 @@ func00000000000002a4:                   # @func00000000000002a4
 	cmpq	$8, %rdi
 	setb	%al
 	retq
-func00000000000002a8:                   # @func00000000000002a8
+
+func00000000000002a8:
 	incq	%rdx
 	addq	%rsi, %rdi
 	cmpq	%rdx, %rdi
@@ -78,7 +87,8 @@ func00000000000002a8:                   # @func00000000000002a8
 	shrq	$61, %rdi
 	setne	%al
 	retq
-func00000000000002b4:                   # @func00000000000002b4
+
+func00000000000002b4:
 	incq	%rdx
 	addq	%rsi, %rdi
 	cmpq	%rdx, %rdi
@@ -86,11 +96,13 @@ func00000000000002b4:                   # @func00000000000002b4
 	cmpq	$4, %rdi
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	decq	%rdx
 	addq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	cmovbeq	%rdx, %rdi
-	cmpq	$2001, %rdi                     # imm = 0x7D1
+	cmpq	$2001, %rdi
 	setb	%al
 	retq
+

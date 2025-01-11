@@ -1,18 +1,20 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000002b:                   # @func000000000000002b
+	.long	1
+func000000000000002b:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	63                              # 0x3f
-func0000000000000003:                   # @func0000000000000003
+	.long	63
+func0000000000000003:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [63,63,63,63]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

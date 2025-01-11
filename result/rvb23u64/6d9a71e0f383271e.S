@@ -1,4 +1,4 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002e:
 	andi	a1, a1, 1
 	addi	a2, a2, -1
 	srai	a3, a2, 63
@@ -10,7 +10,8 @@ func000000000000002e:                   # @func000000000000002e
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a1, a1, 1
 	addi	a2, a2, 1
 	srai	a3, a2, 63
@@ -22,7 +23,8 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a1, a1, 1
 	addi	a2, a2, -1
 	srai	a3, a2, 63
@@ -34,3 +36,4 @@ func000000000000002a:                   # @func000000000000002a
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
+

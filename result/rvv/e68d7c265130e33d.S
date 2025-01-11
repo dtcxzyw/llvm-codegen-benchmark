@@ -1,4 +1,4 @@
-func0000000000000902:                   # @func0000000000000902
+func0000000000000902:
 	li	a0, -65
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v8, a0
@@ -8,7 +8,8 @@ func0000000000000902:                   # @func0000000000000902
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vi	v9, v8, -14
 	li	a0, 18
@@ -17,7 +18,8 @@ func0000000000000110:                   # @func0000000000000110
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	li	a0, -48
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v8, a0
@@ -26,7 +28,8 @@ func0000000000000102:                   # @func0000000000000102
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000930:                   # @func0000000000000930
+
+func0000000000000930:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vi	v9, v8, -9
 	li	a0, 31
@@ -34,7 +37,8 @@ func0000000000000930:                   # @func0000000000000930
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vi	v9, v8, -9
 	li	a0, -64
@@ -42,7 +46,8 @@ func000000000000010c:                   # @func000000000000010c
 	vmslt.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	li	a0, -97
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v8, a0
@@ -52,7 +57,8 @@ func0000000000000108:                   # @func0000000000000108
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000114:                   # @func0000000000000114
+
+func0000000000000114:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vi	v9, v8, -3
 	li	a0, 29
@@ -61,7 +67,8 @@ func0000000000000114:                   # @func0000000000000114
 	vmsgt.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
-func0000000000000928:                   # @func0000000000000928
+
+func0000000000000928:
 	li	a0, 21
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v8, a0
@@ -70,3 +77,4 @@ func0000000000000928:                   # @func0000000000000928
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
+

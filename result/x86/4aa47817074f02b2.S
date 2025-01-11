@@ -1,13 +1,14 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000003c:
 	leaq	5032(%rdi), %rax
-	addq	$4432, %rdi                     # imm = 0x1150
+	addq	$4432, %rdi
 	cmpl	$105, %edx
 	cmovneq	%rax, %rdi
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setne	%al
@@ -15,7 +16,8 @@ func000000000000002f:                   # @func000000000000002f
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,8), %rax
 	retq
-func000000000000015f:                   # @func000000000000015f
+
+func000000000000015f:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setle	%al
@@ -24,7 +26,8 @@ func000000000000015f:                   # @func000000000000015f
 	movl	%esi, %ecx
 	leaq	96(%rcx,%rax), %rax
 	retq
-func000000000000014f:                   # @func000000000000014f
+
+func000000000000014f:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	setge	%al
@@ -32,7 +35,8 @@ func000000000000014f:                   # @func000000000000014f
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,4), %rax
 	retq
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	leaq	1536(%rdi), %rcx
 	leaq	22016(%rdi), %rax
 	cmpl	$3, %edx
@@ -40,13 +44,15 @@ func0000000000000110:                   # @func0000000000000110
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	cmpl	$1, %edx
 	sbbq	$0, %rdi
 	movl	%esi, %eax
 	leaq	10(%rdi,%rax), %rax
 	retq
-func0000000000000100:                   # @func0000000000000100
+
+func0000000000000100:
 	leaq	64(%rdi), %rcx
 	leaq	21504(%rdi), %rax
 	cmpl	$3, %edx
@@ -54,7 +60,8 @@ func0000000000000100:                   # @func0000000000000100
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000008f:                   # @func000000000000008f
+
+func000000000000008f:
 	xorl	%eax, %eax
 	cmpl	$254, %edx
 	setae	%al
@@ -62,3 +69,4 @@ func000000000000008f:                   # @func000000000000008f
 	movl	%esi, %ecx
 	leaq	1(%rcx,%rax), %rax
 	retq
+

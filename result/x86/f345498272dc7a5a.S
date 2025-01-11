@@ -1,56 +1,66 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	addq	$-9, %rdi
 	cmpq	$-64, %rdi
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	decq	%rdi
 	cmpq	$-63, %rdi
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	movabsq	$4611686018427387903, %rax      # imm = 0x3FFFFFFFFFFFFFFF
+
+func0000000000000034:
+	movabsq	$4611686018427387903, %rax
 	addq	%rax, %rdi
 	incq	%rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
-	movabsq	$-4294967297, %rax              # imm = 0xFFFFFFFEFFFFFFFF
+
+func0000000000000024:
+	movabsq	$-4294967297, %rax
 	addq	%rax, %rdi
 	incq	%rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addq	$-66, %rdi
-	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
+	movabsq	$-9223372036854775807, %rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+
+func000000000000000a:
+	movabsq	$-9223372036854775808, %rax
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	addq	$-4093, %rdi                    # imm = 0xF003
+
+func0000000000000006:
+	addq	$-4093, %rdi
 	cmpq	$-4, %rdi
 	setge	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addq	$8, %rdi
 	cmpq	$9, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	decq	%rdi
-	movabsq	$-36000000000, %rax             # imm = 0xFFFFFFF79E3B9800
+	movabsq	$-36000000000, %rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	addq	$-64, %rdi
 	cmpq	$-63, %rdi
 	setb	%al
 	retq
+

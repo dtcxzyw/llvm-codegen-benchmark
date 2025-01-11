@@ -1,9 +1,10 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	add	a0, a0, a1
 	negw	a0, a0
 	bset	a0, zero, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	add	a0, a0, a1
 	li	a1, 32
 	subw	a1, a1, a0
@@ -11,21 +12,25 @@ func000000000000002c:                   # @func000000000000002c
 	srli	a0, a0, 32
 	sll	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	add	a0, a0, a1
 	li	a1, -54
 	subw	a1, a1, a0
 	bset	a0, zero, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	add	a0, a0, a1
 	li	a1, -53
 	subw	a1, a1, a0
 	bset	a0, zero, a1
 	ret
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	add	a0, a0, a1
 	li	a1, 64
 	subw	a1, a1, a0
 	bset	a0, zero, a1
 	ret
+

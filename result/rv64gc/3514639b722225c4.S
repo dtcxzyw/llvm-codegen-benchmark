@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0xc0b26c0000000000              # double -4716
+	.quad	0xc0b26c0000000000
 .LCPI0_1:
-	.quad	0xc0b26b0000000000              # double -4715
-func0000000000000000:                   # @func0000000000000000
+	.quad	0xc0b26b0000000000
+func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, %hi(.LCPI0_0)
@@ -16,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	fadd.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret
+

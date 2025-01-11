@@ -1,6 +1,6 @@
-func0000000000000146:                   # @func0000000000000146
+func0000000000000146:
 	testb	$1, %sil
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$2147483647, %eax
 	cmovneq	%rdx, %rax
 	cmpq	%rax, %rdi
 	setg	%cl
@@ -8,3 +8,4 @@ func0000000000000146:                   # @func0000000000000146
 	sets	%al
 	orb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000002b:                   # @func000000000000002b
+func000000000000002b:
 	subl	%edx, %esi
 	leal	28(%rsi), %ecx
 	andl	$31, %ecx
@@ -7,7 +7,8 @@ func000000000000002b:                   # @func000000000000002b
 	andnl	%edi, %eax, %eax
 	addl	%ecx, %eax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	subl	%edx, %esi
 	leal	28(%rsi), %ecx
 	andl	$31, %ecx
@@ -16,3 +17,4 @@ func000000000000002a:                   # @func000000000000002a
 	andnl	%edi, %eax, %eax
 	addl	%ecx, %eax
 	retq
+

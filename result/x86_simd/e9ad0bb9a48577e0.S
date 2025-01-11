@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	0xc30a9066                      # float -138.564056
+	.long	0xc30a9066
 .LCPI0_1:
-	.long	0x43fa0000                      # float 500
-func000000000000002c:                   # @func000000000000002c
+	.long	0x43fa0000
+func000000000000002c:
 	vaddps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxps	%zmm0, %zmm1, %zmm0
@@ -10,9 +10,10 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0xc30a9066                      # float -138.564056
-func0000000000000028:                   # @func0000000000000028
+	.long	0xc30a9066
+func0000000000000028:
 	vaddps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxps	%zmm0, %zmm1, %zmm0
@@ -20,11 +21,12 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x3f800000                      # float 1
+	.long	0x3f800000
 .LCPI2_1:
-	.long	0x477fff00                      # float 65535
-func0000000000000024:                   # @func0000000000000024
+	.long	0x477fff00
+func0000000000000024:
 	vaddps	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxps	%zmm0, %zmm1, %zmm0
@@ -32,3 +34,4 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

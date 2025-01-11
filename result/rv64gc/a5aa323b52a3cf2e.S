@@ -1,4 +1,4 @@
-func00000000000002f8:                   # @func00000000000002f8
+func00000000000002f8:
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
 	subw	a1, a0, a1
@@ -37,5 +37,6 @@ func00000000000002f8:                   # @func00000000000002f8
 	srliw	a0, a0, 24
 	li	a1, 32
 	sub	a0, a1, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

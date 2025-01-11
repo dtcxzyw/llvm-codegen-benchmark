@@ -1,5 +1,4 @@
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+func000000000000018c:
 	and	w8, w2, #0xff
 	cmp	w8, #1
 	cset	w8, ne
@@ -9,9 +8,8 @@ func000000000000018c:                   // @func000000000000018c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	tst	w2, #0xff
 	cset	w8, eq
 	cmp	w1, #5
@@ -20,9 +18,8 @@ func000000000000002c:                   // @func000000000000002c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	and	w8, w2, #0xff
 	cmp	w8, #233
 	cset	w8, lo
@@ -32,9 +29,8 @@ func0000000000000088:                   // @func0000000000000088
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+
+func0000000000000181:
 	and	w8, w2, #0xff
 	cmp	w8, #5
 	cset	w8, ne
@@ -44,9 +40,8 @@ func0000000000000181:                   // @func0000000000000181
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	and	w8, w2, #0xff
 	cmp	w8, #2
 	cset	w8, eq
@@ -56,9 +51,8 @@ func0000000000000021:                   // @func0000000000000021
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000184:                   // @func0000000000000184
-// %bb.0:                               // %entry
+
+func0000000000000184:
 	tst	w2, #0xff
 	cset	w8, ne
 	cmp	w1, #13
@@ -67,9 +61,8 @@ func0000000000000184:                   // @func0000000000000184
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000198:                   // @func0000000000000198
-// %bb.0:                               // %entry
+
+func0000000000000198:
 	tst	w2, #0xff
 	cset	w8, ne
 	cmp	w1, #255
@@ -78,9 +71,8 @@ func0000000000000198:                   // @func0000000000000198
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	tst	w2, #0xff
 	cset	w8, eq
 	cmp	w1, #6
@@ -89,9 +81,8 @@ func0000000000000024:                   // @func0000000000000024
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000010c:                   // @func000000000000010c
-// %bb.0:                               // %entry
+
+func000000000000010c:
 	and	w8, w2, #0xff
 	cmp	w8, #24
 	cset	w8, hi
@@ -101,9 +92,8 @@ func000000000000010c:                   // @func000000000000010c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	and	w8, w2, #0xff
 	cmp	w8, #63
 	cset	w8, hi
@@ -113,4 +103,4 @@ func0000000000000101:                   // @func0000000000000101
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

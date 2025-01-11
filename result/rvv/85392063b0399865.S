@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -10,7 +10,8 @@ func0000000000000015:                   # @func0000000000000015
 	vmadd.vx	v10, a0, v8
 	vmul.vx	v8, v10, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -25,7 +26,8 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 365
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	lui	a0, 174763
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -40,3 +42,4 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 367
 	vmul.vx	v8, v8, a0
 	ret
+

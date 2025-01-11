@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
-	.short	37500                           # 0x927c
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
+	.short	37500
 .LCPI0_1:
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-	.short	61440                           # 0xf000
-func0000000000000102:                   # @func0000000000000102
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+	.short	61440
+func0000000000000102:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm2, %xmm1
@@ -45,3 +45,4 @@ func0000000000000102:                   # @func0000000000000102
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

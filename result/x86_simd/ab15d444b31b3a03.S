@@ -1,27 +1,28 @@
 .LCPI0_0:
-	.long	2                               # 0x2
+	.long	2
 .LCPI0_1:
-	.long	3                               # 0x3
+	.long	3
 .LCPI0_2:
-	.long	4                               # 0x4
+	.long	4
 .LCPI0_3:
-	.long	56                              # 0x38
-func0000000000000003:                   # @func0000000000000003
+	.long	56
+func0000000000000003:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [2,2,2,2,2,2,2,2]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm3 {%k1}
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm0
-	vpternlogd	$254, .LCPI0_3(%rip){1to8}, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | mem
+	vpternlogd	$254, .LCPI0_3(%rip){1to8}, %ymm3, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	48                              # 0x30
+	.long	48
 .LCPI1_1:
-	.long	4294950863                      # 0xffffbfcf
+	.long	4294950863
 .LCPI1_2:
-	.long	16384                           # 0x4000
-func0000000000000002:                   # @func0000000000000002
+	.long	16384
+func0000000000000002:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -30,3 +31,4 @@ func0000000000000002:                   # @func0000000000000002
 	vorps	%ymm1, %ymm0, %ymm0 {%k1}
 	vorps	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq
+

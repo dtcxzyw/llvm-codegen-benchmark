@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax
@@ -7,7 +7,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	testq	%rax, %rax
 	setg	%al
 	retq
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax
@@ -16,7 +17,8 @@ func000000000000054a:                   # @func000000000000054a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax
@@ -25,7 +27,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	testq	%rax, %rax
 	sete	%al
 	retq
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	movq	%rdi, %rax
 	notq	%rax
 	addq	%rdx, %rax
@@ -34,3 +37,4 @@ func000000000000042a:                   # @func000000000000042a
 	testq	%rax, %rax
 	setg	%al
 	retq
+

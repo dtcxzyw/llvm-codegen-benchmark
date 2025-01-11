@@ -1,4 +1,4 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	addi	a0, a0, -1
@@ -6,7 +6,8 @@ func000000000000002f:                   # @func000000000000002f
 	andi	a0, a0, -8
 	addi	a0, a0, 8
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	addi	a0, a0, 63
@@ -14,7 +15,8 @@ func000000000000006f:                   # @func000000000000006f
 	andi	a0, a0, -8
 	addi	a0, a0, 24
 	ret
-func000000000000006d:                   # @func000000000000006d
+
+func000000000000006d:
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	addi	a0, a0, 63
@@ -22,3 +24,4 @@ func000000000000006d:                   # @func000000000000006d
 	andi	a0, a0, -8
 	addi	a0, a0, -8
 	ret
+

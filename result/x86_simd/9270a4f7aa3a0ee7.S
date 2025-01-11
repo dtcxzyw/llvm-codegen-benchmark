@@ -1,41 +1,41 @@
 .LCPI0_0:
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
+	.short	3840
 .LCPI0_1:
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
-	.short	2048                            # 0x800
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
 .LCPI0_2:
-	.short	3840                            # 0xf00
-	.short	3840                            # 0xf00
-func0000000000000001:                   # @func0000000000000001
+	.short	3840
+	.short	3840
+func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -46,24 +46,25 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-	.short	16384                           # 0x4000
-func000000000000000c:                   # @func000000000000000c
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+	.short	16384
+func000000000000000c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -73,3 +74,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

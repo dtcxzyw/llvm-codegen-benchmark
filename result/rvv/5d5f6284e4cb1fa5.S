@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -7,9 +7,10 @@ func0000000000000015:                   # @func0000000000000015
 	vadd.vv	v8, v9, v8
 	vadd.vv	v8, v10, v8
 	ret
+
 .LCPI1_0:
-	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000085:                   # @func0000000000000085
+	.quad	999999999999999999
+func0000000000000085:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -22,7 +23,8 @@ func0000000000000085:                   # @func0000000000000085
 	li	a0, 18
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -32,7 +34,8 @@ func000000000000001c:                   # @func000000000000001c
 	vsub.vv	v8, v8, v10
 	vadd.vi	v8, v8, 6
 	ret
-func00000000000000a0:                   # @func00000000000000a0
+
+func00000000000000a0:
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -43,7 +46,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	vadd.vv	v8, v9, v8
 	vadd.vv	v8, v8, v10
 	ret
-func000000000000014f:                   # @func000000000000014f
+
+func000000000000014f:
 	lui	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -52,7 +56,8 @@ func000000000000014f:                   # @func000000000000014f
 	vmerge.vvm	v9, v10, v9, v0
 	vadd.vv	v8, v9, v8
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	li	a0, 408
@@ -62,7 +67,8 @@ func000000000000001f:                   # @func000000000000001f
 	vadd.vv	v8, v9, v8
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000145:                   # @func0000000000000145
+
+func0000000000000145:
 	lui	a0, 9095
 	addiw	a0, a0, -217
 	slli	a0, a0, 12
@@ -78,3 +84,4 @@ func0000000000000145:                   # @func0000000000000145
 	vadd.vv	v8, v9, v8
 	vadd.vv	v8, v10, v8
 	ret
+

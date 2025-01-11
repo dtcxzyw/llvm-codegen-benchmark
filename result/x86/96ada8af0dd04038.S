@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax
@@ -7,7 +7,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	movq	%rsi, %rax
 	shrq	$63, %rax
 	addq	%rsi, %rax
@@ -16,3 +17,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
+

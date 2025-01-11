@@ -1,63 +1,55 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	sub	x9, x0, x1
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	cmp	x9, #0
 	csinv	x0, x8, xzr, gt
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	sub	x8, x0, x1
 	lsr	x8, x8, #62
 	cmp	x8, #0
 	cset	w8, eq
 	ubfiz	x0, x8, #3, #32
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	sub	x8, x0, x1
 	asr	x8, x8, #63
 	and	x0, x8, #0x1c00
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	cmp	x0, x1
 	cset	w8, eq
 	ubfiz	x0, x8, #4, #32
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
-	mov	w8, #65450                      // =0xffaa
+
+func000000000000002a:
+	mov	w8, #65450
 	cmp	x0, x1
 	movk	w8, #32767, lsl #16
 	csel	x0, xzr, x8, gt
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	x8, #-9223372036854775808       // =0x8000000000000000
+
+func0000000000000021:
+	mov	x8, #-9223372036854775808
 	sub	x9, x0, x1
 	cmp	x9, x8
-	mov	x8, #9223372036854775806        // =0x7ffffffffffffffe
+	mov	x8, #9223372036854775806
 	csel	x0, x9, x8, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	sub	x8, x0, x1
 	cmp	x8, #16
 	cset	w8, hi
 	ubfiz	x0, x8, #4, #32
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+
+func0000000000000026:
+	mov	w8, #1
 	cmp	x0, x1
 	cneg	x0, x8, le
 	ret
-                                        // -- End function
+

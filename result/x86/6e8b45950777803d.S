@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	imull	%edx, %esi
 	leal	7(%rdi), %eax
 	testl	%edi, %edi
@@ -7,3 +7,4 @@ func000000000000000a:                   # @func000000000000000a
 	orl	%esi, %eax
 	setns	%al
 	retq
+

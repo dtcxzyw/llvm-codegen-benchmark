@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setns	%al
@@ -6,9 +6,11 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andl	$1, %esi
 	shll	$4, %esi
 	leal	8(%rdi,%rsi), %eax
 	cltq
 	retq
+

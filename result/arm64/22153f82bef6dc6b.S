@@ -1,30 +1,27 @@
-func0000000000000166:                   // @func0000000000000166
-// %bb.0:                               // %entry
+func0000000000000166:
 	fmov	w9, s0
 	fmov	w10, s1
-	mov	w8, #2139095040                 // =0x7f800000
+	mov	w8, #2139095040
 	and	w9, w9, #0x7fffffff
 	and	w10, w10, #0x7fffffff
 	cmp	w9, w8
 	ccmp	w10, w8, #8, ge
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	fabs	s1, s1
 	fabs	s0, s0
-	mov	w8, #26464                      // =0x6760
+	mov	w8, #26464
 	movk	w8, #18583, lsl #16
 	fmaxnm	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000055:                   // @func0000000000000055
-// %bb.0:                               // %entry
-	mov	w8, #14269                      // =0x37bd
+
+func0000000000000055:
+	mov	w8, #14269
 	fabs	s0, s0
 	fabs	s1, s1
 	movk	w8, #13702, lsl #16
@@ -34,9 +31,8 @@ func0000000000000055:                   // @func0000000000000055
 	fcmp	s1, s2
 	csinc	w0, w8, wzr, ls
 	ret
-                                        // -- End function
-func00000000000001dd:                   // @func00000000000001dd
-// %bb.0:                               // %entry
+
+func00000000000001dd:
 	movi	v2.2s, #52, lsl #24
 	fabs	s0, s0
 	fabs	s1, s1
@@ -45,9 +41,8 @@ func00000000000001dd:                   // @func00000000000001dd
 	fcmp	s1, s2
 	csinc	w0, w8, wzr, mi
 	ret
-                                        // -- End function
-func0000000000000122:                   // @func0000000000000122
-// %bb.0:                               // %entry
+
+func0000000000000122:
 	fabs	s1, s1
 	fabs	s0, s0
 	movi	v2.2s, #52, lsl #24
@@ -55,10 +50,9 @@ func0000000000000122:                   // @func0000000000000122
 	fcmp	s0, s2
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000155:                   // @func0000000000000155
-// %bb.0:                               // %entry
-	mov	w8, #14269                      // =0x37bd
+
+func0000000000000155:
+	mov	w8, #14269
 	fabs	s0, s0
 	fabs	s1, s1
 	movk	w8, #13702, lsl #16
@@ -68,22 +62,20 @@ func0000000000000155:                   // @func0000000000000155
 	fcmp	s1, s2
 	csinc	w0, w8, wzr, ls
 	ret
-                                        // -- End function
-func0000000000000099:                   // @func0000000000000099
-// %bb.0:                               // %entry
+
+func0000000000000099:
 	fmov	w9, s0
 	fmov	w10, s1
-	mov	w8, #2139095039                 // =0x7f7fffff
+	mov	w8, #2139095039
 	and	w9, w9, #0x7fffffff
 	and	w10, w10, #0x7fffffff
 	cmp	w9, w8
 	ccmp	w10, w8, #0, le
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000000dd:                   // @func00000000000000dd
-// %bb.0:                               // %entry
-	mov	w8, #59135                      // =0xe6ff
+
+func00000000000000dd:
+	mov	w8, #59135
 	fabs	s0, s0
 	fabs	s1, s1
 	movk	w8, #11995, lsl #16
@@ -93,27 +85,25 @@ func00000000000000dd:                   // @func00000000000000dd
 	fcmp	s1, s2
 	csinc	w0, w8, wzr, mi
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	fmov	w9, s0
 	fmov	w10, s1
-	mov	w8, #2139095040                 // =0x7f800000
+	mov	w8, #2139095040
 	and	w9, w9, #0x7fffffff
 	and	w10, w10, #0x7fffffff
 	cmp	w9, w8
 	ccmp	w10, w8, #4, ne
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000144:                   // @func0000000000000144
-// %bb.0:                               // %entry
+
+func0000000000000144:
 	fabs	s1, s1
 	fabs	s0, s0
-	mov	w8, #8388608                    // =0x800000
+	mov	w8, #8388608
 	fmaxnm	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
+

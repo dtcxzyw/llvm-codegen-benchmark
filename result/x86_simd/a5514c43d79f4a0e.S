@@ -1,6 +1,7 @@
-func0000000000000080:                   # @func0000000000000080
+func0000000000000080:
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vpmovm2b	%k0, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
-	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	vpmovzxbq	%xmm0, %ymm0
 	retq
+

@@ -1,15 +1,13 @@
-func00000000000000db:                   // @func00000000000000db
-// %bb.0:                               // %entry
+func00000000000000db:
 	neg	w8, w1
 	sub	x8, x0, x8
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func00000000000001da:                   // @func00000000000001da
-// %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
+
+func00000000000001da:
+	mov	w8, #16
 	sub	w8, w8, w1
 	sub	x8, x0, x8
 	sub	x0, x8, #16
 	ret
-                                        // -- End function
+

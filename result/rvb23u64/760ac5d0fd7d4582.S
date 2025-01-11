@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a1, a1, 255
 	fcvt.s.wu	fa5, a1
 	li	a1, 1
@@ -7,3 +7,4 @@ func0000000000000001:                   # @func0000000000000001
 	fcvt.s.w	fa4, a1
 	fdiv.s	fa0, fa4, fa5
 	ret
+

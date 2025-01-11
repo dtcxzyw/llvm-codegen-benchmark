@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	lui	a0, 91867
 	addi	a0, a0, 115
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,7 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	vsrl.vi	v10, v10, 8
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -24,7 +25,8 @@ func0000000000000005:                   # @func0000000000000005
 	vsrl.vi	v10, v10, 3
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	lui	a0, 67109
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 9
@@ -38,3 +40,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v10, v10, 7
 	vadd.vv	v8, v8, v10
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000001f4:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -6,7 +6,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	andi	a2, a2, 255
 	slli	a2, a2, 16
 	or	a0, a0, a1
@@ -14,7 +15,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func00000000000001ec:                   # @func00000000000001ec
+
+func00000000000001ec:
 	andi	a2, a2, 255
 	or	a0, a0, a1
 	slli	a2, a2, 8
@@ -24,7 +26,8 @@ func00000000000001ec:                   # @func00000000000001ec
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000001e8:                   # @func00000000000001e8
+
+func00000000000001e8:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -33,7 +36,8 @@ func00000000000001e8:                   # @func00000000000001e8
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	ret
-func00000000000001e4:                   # @func00000000000001e4
+
+func00000000000001e4:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -41,7 +45,8 @@ func00000000000001e4:                   # @func00000000000001e4
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
 	ret
-func00000000000001e6:                   # @func00000000000001e6
+
+func00000000000001e6:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -49,7 +54,8 @@ func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a0, a0
 	slti	a0, a0, 1
 	ret
-func00000000000001ea:                   # @func00000000000001ea
+
+func00000000000001ea:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -57,7 +63,8 @@ func00000000000001ea:                   # @func00000000000001ea
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -65,7 +72,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a0, a0, a1
@@ -74,7 +82,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1
 	ret
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	andi	a2, a2, 255
 	slli	a2, a2, 6
 	or	a0, a0, a1
@@ -83,7 +92,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	addi	a0, a0, -10
 	seqz	a0, a0
 	ret
-func00000000000003f4:                   # @func00000000000003f4
+
+func00000000000003f4:
 	andi	a2, a2, 255
 	slli	a2, a2, 6
 	or	a0, a0, a1
@@ -91,7 +101,8 @@ func00000000000003f4:                   # @func00000000000003f4
 	sext.w	a0, a0
 	sltiu	a0, a0, 32
 	ret
-func0000000000000198:                   # @func0000000000000198
+
+func0000000000000198:
 	andi	a2, a2, 255
 	or	a0, a0, a1
 	lui	a1, 1
@@ -101,14 +112,16 @@ func0000000000000198:                   # @func0000000000000198
 	addiw	a1, a1, -24
 	sltu	a0, a1, a0
 	ret
-func0000000000000164:                   # @func0000000000000164
+
+func0000000000000164:
 	slli	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	srliw	a0, a0, 11
 	sltiu	a0, a0, 27
 	ret
-func0000000000000168:                   # @func0000000000000168
+
+func0000000000000168:
 	slli	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -116,7 +129,8 @@ func0000000000000168:                   # @func0000000000000168
 	sltiu	a0, a0, 7
 	xori	a0, a0, 1
 	ret
-func00000000000003f8:                   # @func00000000000003f8
+
+func00000000000003f8:
 	andi	a2, a2, 255
 	or	a0, a0, a1
 	lui	a1, 16
@@ -126,7 +140,8 @@ func00000000000003f8:                   # @func00000000000003f8
 	addiw	a1, a1, -561
 	sltu	a0, a1, a0
 	ret
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	slli	a2, a2, 24
 	or	a0, a0, a1
 	lui	a1, 472728
@@ -136,3 +151,4 @@ func0000000000000161:                   # @func0000000000000161
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

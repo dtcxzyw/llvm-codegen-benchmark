@@ -1,7 +1,6 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	ucvtf	d1, x1
-	mov	x8, #7378697629483820646        // =0x6666666666666666
+	mov	x8, #7378697629483820646
 	movk	x8, #16366, lsl #48
 	fdiv	d0, d0, d1
 	fmov	d1, x8
@@ -9,9 +8,8 @@ func0000000000000002:                   // @func0000000000000002
 	cset	w8, mi
 	and	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	ucvtf	d1, x1
 	fdiv	d0, d0, d1
 	fmov	d1, #10.00000000
@@ -19,4 +17,4 @@ func0000000000000003:                   // @func0000000000000003
 	cset	w8, lt
 	and	w0, w0, w8
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v8, v8, 5
 	lui	a0, 1048573
@@ -7,7 +7,8 @@ func0000000000000007:                   # @func0000000000000007
 	vsrl.vi	v10, v8, 3
 	vwsll.vi	v8, v10, 10
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, 1048571
@@ -16,7 +17,8 @@ func0000000000000037:                   # @func0000000000000037
 	vsrl.vi	v10, v8, 1
 	vwsll.vi	v8, v10, 16
 	ret
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	lui	a0, 2
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vx	v8, v8, a0
@@ -26,7 +28,8 @@ func0000000000000027:                   # @func0000000000000027
 	vsrl.vi	v10, v8, 7
 	vwsll.vi	v8, v10, 8
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vx	v8, v8, a0
@@ -36,7 +39,8 @@ func0000000000000026:                   # @func0000000000000026
 	vsrl.vi	v10, v8, 7
 	vwsll.vi	v8, v10, 24
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	lui	a0, 1048570
 	addi	a1, a0, -1540
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -46,3 +50,4 @@ func0000000000000017:                   # @func0000000000000017
 	vsrl.vi	v10, v8, 13
 	vwsll.vi	v8, v10, 24
 	ret
+

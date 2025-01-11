@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpor	%xmm1, %xmm0, %xmm0
 	vpslld	$31, %xmm0, %xmm0
@@ -6,3 +6,4 @@ func0000000000000000:                   # @func0000000000000000
 	knotw	%k0, %k1
 	vpsubq	%ymm3, %ymm2, %ymm0 {%k1} {z}
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
@@ -6,3 +6,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

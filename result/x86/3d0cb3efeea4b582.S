@@ -1,12 +1,14 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	shrq	%rsi
 	xorq	%rdi, %rsi
-	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rsi
 	seta	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	shrq	$16, %rsi
 	xorq	%rdi, %rsi
-	cmpq	$65535, %rsi                    # imm = 0xFFFF
+	cmpq	$65535, %rsi
 	sete	%al
 	retq
+

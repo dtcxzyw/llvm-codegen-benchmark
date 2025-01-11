@@ -1,5 +1,4 @@
-func0000000000000322:                   // @func0000000000000322
-// %bb.0:                               // %entry
+func0000000000000322:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d1, d2
@@ -7,9 +6,8 @@ func0000000000000322:                   // @func0000000000000322
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d2, d1
@@ -17,9 +15,8 @@ func0000000000000028:                   // @func0000000000000028
 	fcmp	d0, d1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d1, d2
@@ -27,9 +24,8 @@ func0000000000000022:                   // @func0000000000000022
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000043:                   // @func0000000000000043
-// %bb.0:                               // %entry
+
+func0000000000000043:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d2, d1
@@ -37,9 +33,8 @@ func0000000000000043:                   // @func0000000000000043
 	fcmp	d0, d1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d1, d2
@@ -47,9 +42,8 @@ func0000000000000044:                   // @func0000000000000044
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000342:                   // @func0000000000000342
-// %bb.0:                               // %entry
+
+func0000000000000342:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d1, d2
@@ -57,9 +51,8 @@ func0000000000000342:                   // @func0000000000000342
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000344:                   // @func0000000000000344
-// %bb.0:                               // %entry
+
+func0000000000000344:
 	fabs	d2, d2
 	fabs	d1, d1
 	fcmp	d1, d2
@@ -67,4 +60,4 @@ func0000000000000344:                   // @func0000000000000344
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
+

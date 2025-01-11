@@ -1,4 +1,4 @@
-func0000000000000426:                   # @func0000000000000426
+func0000000000000426:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -8,7 +8,8 @@ func0000000000000426:                   # @func0000000000000426
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
-func00000000000018c1:                   # @func00000000000018c1
+
+func00000000000018c1:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -19,7 +20,8 @@ func00000000000018c1:                   # @func00000000000018c1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000050c6:                   # @func00000000000050c6
+
+func00000000000050c6:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -29,7 +31,8 @@ func00000000000050c6:                   # @func00000000000050c6
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func00000000000018c6:                   # @func00000000000018c6
+
+func00000000000018c6:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -39,7 +42,8 @@ func00000000000018c6:                   # @func00000000000018c6
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func00000000000050cc:                   # @func00000000000050cc
+
+func00000000000050cc:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -49,7 +53,8 @@ func00000000000050cc:                   # @func00000000000050cc
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -59,7 +64,8 @@ func0000000000000421:                   # @func0000000000000421
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func00000000000004cc:                   # @func00000000000004cc
+
+func00000000000004cc:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -69,7 +75,8 @@ func00000000000004cc:                   # @func00000000000004cc
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -80,3 +87,4 @@ func0000000000000424:                   # @func0000000000000424
 	sltiu	a0, a0, -3
 	or	a0, a0, a1
 	ret
+

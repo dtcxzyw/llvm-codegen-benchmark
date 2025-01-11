@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	li	a0, 7
 	slli	a0, a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -11,7 +11,8 @@ func0000000000000181:                   # @func0000000000000181
 	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v0, v8
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -2
 	li	a0, 32
@@ -21,3 +22,4 @@ func0000000000000021:                   # @func0000000000000021
 	vmand.mm	v8, v9, v8
 	vmand.mm	v0, v8, v0
 	ret
+

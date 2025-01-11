@@ -1,88 +1,77 @@
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+func0000000000000015:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, pl
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+
+func000000000000001a:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	fmul	d1, d1, d2
 	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, lt
 	ret
-                                        // -- End function
+

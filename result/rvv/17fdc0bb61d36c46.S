@@ -1,4 +1,4 @@
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000000e9:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsleu.vi	v0, v8, 2
 	vmv.v.i	v10, 0
@@ -6,7 +6,8 @@ func00000000000000e9:                   # @func00000000000000e9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	lui	a0, 1
 	addi	a1, a0, -64
 	vsetivli	zero, 4, e32, m1, ta, mu
@@ -18,13 +19,15 @@ func00000000000000d4:                   # @func00000000000000d4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsgtu.vi	v0, v8, 8
 	vmv.v.i	v10, 0
@@ -32,7 +35,8 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsgt.vi	v0, v8, 0
 	vmv.v.i	v10, 0
@@ -40,7 +44,8 @@ func0000000000000094:                   # @func0000000000000094
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsgt.vi	v0, v8, 0
 	lui	a0, 524288
@@ -50,7 +55,8 @@ func0000000000000055:                   # @func0000000000000055
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000069:                   # @func0000000000000069
+
+func0000000000000069:
 	li	a0, 264
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmv.v.i	v10, 0
@@ -60,3 +66,4 @@ func0000000000000069:                   # @func0000000000000069
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+

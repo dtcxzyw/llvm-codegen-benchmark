@@ -1,13 +1,14 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	sext.w	a2, a0
 	snez	a1, a1
 	seqz	a2, a2
 	and	a1, a1, a2
 	beqz	a1, .LBB0_2
 	li	a0, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a2, a0
 	li	a3, 1
 	slli	a3, a3, 32
@@ -15,5 +16,6 @@ func0000000000000021:                   # @func0000000000000021
 	or	a1, a1, a2
 	bnez	a1, .LBB1_2
 	li	a0, 1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

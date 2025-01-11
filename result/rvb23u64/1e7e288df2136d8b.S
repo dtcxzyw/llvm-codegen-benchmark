@@ -1,4 +1,4 @@
-func00000000000003a8:                   # @func00000000000003a8
+func00000000000003a8:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	add	a1, a1, a2
@@ -10,3 +10,4 @@ func00000000000003a8:                   # @func00000000000003a8
 	addiw	a2, a2, -16
 	sltu	a0, a2, a0
 	ret
+

@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.long	400                             # 0x190
-func0000000000000015:                   # @func0000000000000015
+	.long	400
+func0000000000000015:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
-	movabsq	$4137408090565272301, %rcx      # imm = 0x396B06BCC8F862ED
+	movabsq	$4137408090565272301, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -17,7 +17,7 @@ func0000000000000015:                   # @func0000000000000015
 	sarq	$15, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
@@ -32,25 +32,27 @@ func0000000000000015:                   # @func0000000000000015
 	sarq	$15, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	365                             # 0x16d
-func0000000000000000:                   # @func0000000000000000
+	.long	365
+func0000000000000000:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
-	movabsq	$3234497591006606311, %rcx      # imm = 0x2CE33E6C02CE33E7
+	movabsq	$3234497591006606311, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -64,7 +66,7 @@ func0000000000000000:                   # @func0000000000000000
 	sarq	$6, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
@@ -79,10 +81,11 @@ func0000000000000000:                   # @func0000000000000000
 	sarq	$6, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

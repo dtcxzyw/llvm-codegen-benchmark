@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpl	$-1, %edx
 	sete	%cl
 	cmpw	$-1, %si
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	cmpl	$2, %edx
 	setge	%cl
 	testw	%si, %si
@@ -14,7 +15,8 @@ func000000000000014c:                   # @func000000000000014c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	testl	%edx, %edx
 	sete	%cl
 	cmpw	$48, %si
@@ -22,7 +24,8 @@ func000000000000002c:                   # @func000000000000002c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	cmpl	$-2, %edx
 	setne	%cl
 	testw	%si, %si
@@ -30,7 +33,8 @@ func000000000000018c:                   # @func000000000000018c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	cmpl	$95, %edx
 	setne	%cl
 	testw	%si, %si
@@ -38,7 +42,8 @@ func0000000000000181:                   # @func0000000000000181
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	cmpl	$2, %edx
 	setge	%cl
 	cmpw	$2, %si
@@ -46,7 +51,8 @@ func0000000000000141:                   # @func0000000000000141
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	cmpl	$8, %edx
 	setae	%cl
 	cmpw	$6, %si
@@ -54,7 +60,8 @@ func0000000000000101:                   # @func0000000000000101
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000281:                   # @func0000000000000281
+
+func0000000000000281:
 	cmpl	$8, %edx
 	setb	%cl
 	testw	%si, %si
@@ -62,3 +69,4 @@ func0000000000000281:                   # @func0000000000000281
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
+

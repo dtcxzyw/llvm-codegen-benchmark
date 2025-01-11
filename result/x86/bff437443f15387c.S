@@ -1,4 +1,4 @@
-func000000000000050a:                   # @func000000000000050a
+func000000000000050a:
 	xorl	%eax, %eax
 	subq	%rsi, %rdx
 	cmovlq	%rdx, %rax
@@ -6,7 +6,8 @@ func000000000000050a:                   # @func000000000000050a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func0000000000000506:                   # @func0000000000000506
+
+func0000000000000506:
 	xorl	%eax, %eax
 	subq	%rsi, %rdx
 	cmovlq	%rdx, %rax
@@ -14,3 +15,4 @@ func0000000000000506:                   # @func0000000000000506
 	testq	%rax, %rax
 	setle	%al
 	retq
+

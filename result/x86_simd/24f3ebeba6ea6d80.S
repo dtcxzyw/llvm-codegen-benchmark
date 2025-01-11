@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000045:                   # @func0000000000000045
+	.long	7
+func0000000000000045:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrad	$3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -52,3 +52,4 @@ func0000000000000045:                   # @func0000000000000045
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm0, %ymm2, %ymm0
 	retq
+

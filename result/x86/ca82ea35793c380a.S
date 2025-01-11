@@ -1,13 +1,14 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	xorl	%eax, %eax
 	cmpb	$120, %sil
-	movabsq	$38654705664, %rcx              # imm = 0x900000000
+	movabsq	$38654705664, %rcx
 	cmovneq	%rax, %rcx
 	testb	$1, %dil
-	movabsq	$34359738368, %rax              # imm = 0x800000000
+	movabsq	$34359738368, %rax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	cmpb	$-16, %sil
 	movl	$4, %ecx
 	sbbq	$0, %rcx
@@ -15,7 +16,8 @@ func0000000000000014:                   # @func0000000000000014
 	movl	$2, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	xorl	%eax, %eax
 	cmpb	$29, %sil
 	setae	%al
@@ -24,3 +26,4 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$16, %eax
 	cmoveq	%rcx, %rax
 	retq
+

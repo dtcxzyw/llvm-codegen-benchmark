@@ -1,49 +1,41 @@
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+func0000000000000015:
 	sub	w8, w0, w1, uxtb
 	add	w0, w8, #48
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	sub	w8, w0, w1, uxtb
 	sub	w0, w8, #22
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	sub	w8, w0, w1, uxtb
 	sub	w0, w8, #2
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+
+func000000000000000e:
 	mvn	w8, w1
 	orr	w8, w8, #0xffffff00
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	sub	w8, w0, w1, uxtb
 	sub	w0, w8, #2
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	sub	w8, w0, w1, uxtb
 	sub	w0, w8, #3
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	sub	w8, w0, w1, uxtb
 	add	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	sub	w8, w0, w1, uxtb
 	add	w0, w8, #6
 	ret
-                                        // -- End function
+

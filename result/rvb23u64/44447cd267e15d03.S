@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	lui	a1, 5
@@ -7,3 +7,4 @@ func0000000000000021:                   # @func0000000000000021
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
+

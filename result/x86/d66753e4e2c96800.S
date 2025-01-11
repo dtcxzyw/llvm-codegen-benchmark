@@ -1,4 +1,4 @@
-func0000000000000194:                   # @func0000000000000194
+func0000000000000194:
 	testl	%esi, %esi
 	setle	%cl
 	orb	%dil, %cl
@@ -6,7 +6,8 @@ func0000000000000194:                   # @func0000000000000194
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testl	%esi, %esi
 	sete	%cl
 	orb	%dil, %cl
@@ -14,3 +15,4 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
+

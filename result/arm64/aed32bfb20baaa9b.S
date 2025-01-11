@@ -1,7 +1,6 @@
 .LCPI0_0:
-	.xword	0x3d719799812dea11              // double 9.9999999999999998E-13
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+	.xword	0x3d719799812dea11
+func0000000000000002:
 	fabs	d2, d2
 	adrp	x8, .LCPI0_0
 	fadd	d1, d1, d2
@@ -10,11 +9,10 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+
 .LCPI1_0:
-	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+	.xword	0x3eb0c6f7a0b5ed8d
+func0000000000000014:
 	fabs	d2, d2
 	adrp	x8, .LCPI1_0
 	fadd	d1, d1, d2
@@ -23,31 +21,28 @@ func0000000000000014:                   // @func0000000000000014
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
+
+func0000000000000017:
 	fabs	d2, d2
 	fadd	d1, d1, d2
 	fadd	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fabs	d2, d2
 	fadd	d1, d1, d2
 	fadd	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	fabs	d2, d2
 	fadd	d1, d1, d2
 	fadd	d0, d0, d1
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret
-                                        // -- End function
+

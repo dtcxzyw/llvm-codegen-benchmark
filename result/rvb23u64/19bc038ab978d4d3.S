@@ -1,4 +1,4 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000184:
 	addi	a2, a2, 21
 	lui	a3, 32
 	addiw	a3, a3, -8
@@ -6,33 +6,39 @@ func0000000000000184:                   # @func0000000000000184
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addi	a2, a2, 7
 	andi	a2, a2, -8
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addi	a2, a2, 7
 	andi	a2, a2, -8
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	addi	a2, a2, 1
 	zext.w	a2, a2
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	addi	a2, a2, 31
 	andi	a2, a2, -8
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	addi	a2, a2, 6
 	zext.w	a2, a2
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
+

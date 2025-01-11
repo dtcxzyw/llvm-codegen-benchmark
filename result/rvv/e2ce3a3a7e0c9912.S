@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.word	0x40490fdb                      # float 3.14159274
+	.word	0x40490fdb
 .LCPI0_1:
-	.word	0x40c90fdb                      # float 6.28318548
+	.word	0x40c90fdb
 .LCPI0_2:
-	.word	0xc0c90fdb                      # float -6.28318548
-func0000000000000002:                   # @func0000000000000002
+	.word	0xc0c90fdb
+func0000000000000002:
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmv1r.v	v12, v0
 	lui	a0, %hi(.LCPI0_0)
@@ -18,7 +18,8 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v12
 	vfadd.vf	v8, v8, fa3, v0.t
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmv1r.v	v12, v0
 	lui	a0, 271168
@@ -32,3 +33,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmv1r.v	v0, v12
 	vfadd.vf	v8, v8, fa5, v0.t
 	ret
+

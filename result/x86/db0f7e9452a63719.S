@@ -1,7 +1,8 @@
-func0000000000000004:                   # @func0000000000000004
-	andl	$-65538, %edi                   # imm = 0xFFFEFFFE
+func0000000000000004:
+	andl	$-65538, %edi
 	leal	-131072(%rdi), %ecx
 	testl	%esi, %esi
-	movl	$-196610, %eax                  # imm = 0xFFFCFFFE
+	movl	$-196610, %eax
 	cmovel	%ecx, %eax
 	retq
+

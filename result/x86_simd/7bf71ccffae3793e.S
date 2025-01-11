@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	vpsrld	$31, %xmm1, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$1, %xmm1, %xmm1
@@ -7,9 +7,10 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovsxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
+	.long	2
+func0000000000000004:
 	vpsrld	$31, %xmm1, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$1, %xmm1, %xmm1
@@ -17,3 +18,4 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovsxdq	%xmm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
+

@@ -1,11 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a1, a1, 63
 	li	a2, 57
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	lui	a2, 1046528
 	srli	a2, a2, 1
 	and	a1, a1, a2
@@ -19,3 +20,4 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

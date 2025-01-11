@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0xbddb7cdfd9d7bdbb              # double -1.0E-10
+	.quad	0xbddb7cdfd9d7bdbb
 .LCPI0_1:
-	.quad	0x3fd34413509f79ff              # double 0.3010299956639812
-func000000000000000a:                   # @func000000000000000a
+	.quad	0x3fd34413509f79ff
+func000000000000000a:
 	sext.w	a1, a1
 	li	a2, 1
 	maxu	a1, a1, a2
@@ -17,3 +17,4 @@ func000000000000000a:                   # @func000000000000000a
 	fcvt.d.w	fa3, a0
 	fmadd.d	fa0, fa3, fa4, fa5
 	ret
+

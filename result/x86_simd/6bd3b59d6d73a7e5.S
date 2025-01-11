@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000003181:                   # @func0000000000003181
+	.long	7
+func0000000000003181:
 	vpcmpneqd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vptestmq	%ymm2, %ymm2, %k0 {%k1}
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -8,3 +8,4 @@ func0000000000003181:                   # @func0000000000003181
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

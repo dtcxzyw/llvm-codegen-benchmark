@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
 	cltd
@@ -39,7 +39,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %eax, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
 	cltd
@@ -80,3 +81,4 @@ func0000000000000006:                   # @func0000000000000006
 	vpinsrd	$3, %eax, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+

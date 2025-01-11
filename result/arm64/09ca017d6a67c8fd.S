@@ -1,65 +1,56 @@
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+func000000000000002c:
 	and	x8, x2, #0x1f
 	cmp	x8, #11
 	ccmp	x0, x1, #4, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	tst	x2, #0x2
 	ccmp	x0, x1, #0, ne
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	tst	x2, #0x10000
 	ccmp	x0, x1, #4, ne
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000141:                   // @func0000000000000141
-// %bb.0:                               // %entry
+
+func0000000000000141:
 	tst	x2, #0x1
 	ccmp	x0, x1, #0, ne
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000014c:                   // @func000000000000014c
-// %bb.0:                               // %entry
+
+func000000000000014c:
 	cmp	x0, x1
 	cset	w8, gt
 	orr	w8, w2, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	tst	x2, #0x3
 	ccmp	x0, x1, #0, eq
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	tst	x2, #0x1
 	ccmp	x0, x1, #2, ne
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
+
+func00000000000000c1:
 	cmp	w2, #0
 	ccmp	x0, x1, #8, ne
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	cmp	w2, #0
 	ccmp	x0, x1, #0, ge
 	cset	w0, lo
 	ret
-                                        // -- End function
+

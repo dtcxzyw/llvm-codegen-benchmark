@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	64                              # 0x40
-func000000000000030c:                   # @func000000000000030c
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [64,64,64,64,64,64,64,64]
+	.long	64
+func000000000000030c:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpand	%ymm3, %ymm2, %ymm2
 	vpand	%ymm3, %ymm1, %ymm1
 	vpcmpgtd	%ymm2, %ymm1, %k0
@@ -10,3 +10,4 @@ func000000000000030c:                   # @func000000000000030c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

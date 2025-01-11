@@ -1,7 +1,6 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	w8, #16960                      // =0x4240
-	mov	x9, #63439                      // =0xf7cf
+func0000000000000000:
+	mov	w8, #16960
+	mov	x9, #63439
 	movk	w8, #15, lsl #16
 	movk	x9, #58195, lsl #16
 	madd	x8, x1, x8, x0
@@ -11,11 +10,10 @@ func0000000000000000:                   // @func0000000000000000
 	umulh	x8, x8, x9
 	lsr	x0, x8, #4
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	w8, #16960                      // =0x4240
-	mov	x9, #13531                      // =0x34db
+
+func0000000000000008:
+	mov	w8, #16960
+	mov	x9, #13531
 	movk	w8, #15, lsl #16
 	movk	x9, #55222, lsl #16
 	madd	x8, x1, x8, x0
@@ -24,11 +22,10 @@ func0000000000000008:                   // @func0000000000000008
 	umulh	x8, x8, x9
 	lsr	x0, x8, #18
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	x8, #-15025                     // =0xffffffffffffc54f
-	mov	x9, #13287                      // =0x33e7
+
+func000000000000000a:
+	mov	x8, #-15025
+	mov	x9, #13287
 	movk	x8, #65533, lsl #16
 	movk	x9, #718, lsl #16
 	madd	x8, x1, x8, x0
@@ -38,11 +35,10 @@ func000000000000000a:                   // @func000000000000000a
 	umulh	x8, x8, x9
 	lsr	x0, x8, #6
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-	mov	w8, #300                        // =0x12c
-	mov	x9, #51975                      // =0xcb07
+
+func000000000000001e:
+	mov	w8, #300
+	mov	x9, #51975
 	madd	x8, x1, x8, x0
 	movk	x9, #6517, lsl #16
 	movk	x9, #38201, lsl #32
@@ -51,4 +47,4 @@ func000000000000001e:                   // @func000000000000001e
 	umulh	x8, x8, x9
 	lsr	x0, x8, #13
 	ret
-                                        // -- End function
+

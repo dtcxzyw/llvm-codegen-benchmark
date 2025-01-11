@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	184467440737095517              # 0x28f5c28f5c28f5d
-func000000000000001b:                   # @func000000000000001b
+	.quad	184467440737095517
+func000000000000001b:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	li	a1, 99
@@ -11,3 +11,4 @@ func000000000000001b:                   # @func000000000000001b
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+

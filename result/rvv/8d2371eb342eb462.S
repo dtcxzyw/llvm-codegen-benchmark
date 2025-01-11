@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	li	a0, 128
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vx	v9, v9, a0
@@ -8,7 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vi	v9, v9, 1
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -17,7 +18,8 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	li	a0, 128
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vx	v9, v9, a0
@@ -27,3 +29,4 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+

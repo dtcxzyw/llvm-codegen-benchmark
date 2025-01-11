@@ -1,9 +1,10 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	or	a1, a1, a2
 	sh3add	a0, a1, a0
 	addi	a0, a0, 120
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	or	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 6
@@ -11,3 +12,4 @@ func000000000000001c:                   # @func000000000000001c
 	add	a0, a0, a1
 	addi	a0, a0, 664
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	testq	%rdx, %rdx
 	sete	%cl
 	subq	%rsi, %rdi
@@ -6,7 +6,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000c28:                   # @func0000000000000c28
+
+func0000000000000c28:
 	cmpq	$65, %rdx
 	setae	%cl
 	subq	%rsi, %rdi
@@ -14,14 +15,16 @@ func0000000000000c28:                   # @func0000000000000c28
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	cmpq	$65, %rdx
 	setb	%cl
 	cmpq	%rsi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000408:                   # @func0000000000000408
+
+func0000000000000408:
 	cmpq	$65, %rdx
 	setae	%cl
 	subq	%rsi, %rdi
@@ -29,3 +32,4 @@ func0000000000000408:                   # @func0000000000000408
 	setae	%al
 	andb	%cl, %al
 	retq
+

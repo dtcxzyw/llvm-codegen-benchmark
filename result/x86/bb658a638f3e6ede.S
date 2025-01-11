@@ -1,4 +1,4 @@
-func0000000000000604:                   # @func0000000000000604
+func0000000000000604:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	sete	%al
@@ -8,16 +8,18 @@ func0000000000000604:                   # @func0000000000000604
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000506:                   # @func0000000000000506
+
+func0000000000000506:
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	movq	$-12, %rax
 	cmovleq	%rcx, %rax
-	cmpl	$455, %esi                      # imm = 0x1C7
+	cmpl	$455, %esi
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000207:                   # @func0000000000000207
+
+func0000000000000207:
 	xorl	%eax, %eax
 	cmpl	$12, %edx
 	setae	%al
@@ -27,16 +29,18 @@ func0000000000000207:                   # @func0000000000000207
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000607:                   # @func0000000000000607
+
+func0000000000000607:
 	testl	%edx, %edx
-	movl	$296, %eax                      # imm = 0x128
+	movl	$296, %eax
 	movl	$248, %ecx
 	cmoveq	%rcx, %rax
 	cmpl	$6, %esi
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000087:                   # @func0000000000000087
+
+func0000000000000087:
 	xorl	$2, %edx
 	xorl	$1, %esi
 	xorl	%eax, %eax
@@ -45,7 +49,8 @@ func0000000000000087:                   # @func0000000000000087
 	shll	$4, %eax
 	leaq	2224(%rax,%rdi), %rax
 	retq
-func0000000000000213:                   # @func0000000000000213
+
+func0000000000000213:
 	cmpl	$-10, %edx
 	setb	%al
 	cmpl	$10, %esi
@@ -54,21 +59,24 @@ func0000000000000213:                   # @func0000000000000213
 	movzbl	%cl, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func00000000000000b3:                   # @func00000000000000b3
+
+func00000000000000b3:
 	testl	%edx, %edx
-	movl	$14632, %eax                    # imm = 0x3928
-	movl	$14596, %ecx                    # imm = 0x3904
+	movl	$14632, %eax
+	movl	$14596, %ecx
 	cmovneq	%rcx, %rax
 	testl	%esi, %esi
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000232:                   # @func0000000000000232
+
+func0000000000000232:
 	cmpl	$2, %edx
-	movq	$-16777214, %rax                # imm = 0xFF000002
-	movabsq	$-3758096382, %rcx              # imm = 0xFFFFFFFF20000002
+	movq	$-16777214, %rax
+	movabsq	$-3758096382, %rcx
 	cmovaeq	%rcx, %rax
 	testl	%esi, %esi
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

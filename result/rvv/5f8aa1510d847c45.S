@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3f1a36e2eb1c432d              # double 1.0E-4
-func0000000000000088:                   # @func0000000000000088
+	.quad	0x3f1a36e2eb1c432d
+func0000000000000088:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -8,9 +8,10 @@ func0000000000000088:                   # @func0000000000000088
 	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v0, v16
 	ret
+
 .LCPI1_0:
-	.quad	0x3ff3333333333333              # double 1.2
-func00000000000000ba:                   # @func00000000000000ba
+	.quad	0x3ff3333333333333
+func00000000000000ba:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fli.d	fa4, 1.0
@@ -21,9 +22,10 @@ func00000000000000ba:                   # @func00000000000000ba
 	vmorn.mm	v8, v9, v8
 	vmand.mm	v0, v0, v8
 	ret
+
 .LCPI2_0:
-	.quad	0x3ff3333333333333              # double 1.2
-func00000000000001aa:                   # @func00000000000001aa
+	.quad	0x3ff3333333333333
+func00000000000001aa:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fli.d	fa4, 1.0
@@ -34,7 +36,8 @@ func00000000000001aa:                   # @func00000000000001aa
 	vmorn.mm	v8, v8, v24
 	vmand.mm	v0, v0, v8
 	ret
-func00000000000000ee:                   # @func00000000000000ee
+
+func00000000000000ee:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vf	v24, v16, fa5
@@ -43,7 +46,8 @@ func00000000000000ee:                   # @func00000000000000ee
 	vmor.mm	v8, v16, v24
 	vmand.mm	v0, v0, v8
 	ret
-func00000000000001b6:                   # @func00000000000001b6
+
+func00000000000001b6:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
@@ -52,7 +56,8 @@ func00000000000001b6:                   # @func00000000000001b6
 	vmorn.mm	v8, v8, v24
 	vmand.mm	v0, v8, v0
 	ret
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
@@ -62,3 +67,4 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmor.mm	v8, v17, v16
 	vmand.mm	v0, v0, v8
 	ret
+

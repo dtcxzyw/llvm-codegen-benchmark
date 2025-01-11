@@ -1,4 +1,4 @@
-func000000000000308c:                   # @func000000000000308c
+func000000000000308c:
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -6,16 +6,18 @@ func000000000000308c:                   # @func000000000000308c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000003484:                   # @func0000000000003484
+
+func0000000000003484:
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
 	incq	%rsi
-	cmpq	$1024, %rsi                     # imm = 0x400
+	cmpq	$1024, %rsi
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000358c:                   # @func000000000000358c
+
+func000000000000358c:
 	addq	$4, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -23,3 +25,4 @@ func000000000000358c:                   # @func000000000000358c
 	setne	%al
 	andb	%cl, %al
 	retq
+

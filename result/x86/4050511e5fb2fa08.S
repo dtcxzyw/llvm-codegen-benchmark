@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	pushq	%rax
 	movq	%rdi, %rdx
 	movq	%rcx, %rdi
@@ -6,7 +6,8 @@ func0000000000000012:                   # @func0000000000000012
 	callq	__udivti3@PLT
 	popq	%rcx
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	pushq	%rax
 	movq	%rdi, %rdx
 	movq	%rcx, %rdi
@@ -14,3 +15,4 @@ func0000000000000002:                   # @func0000000000000002
 	callq	__udivti3@PLT
 	popq	%rcx
 	retq
+

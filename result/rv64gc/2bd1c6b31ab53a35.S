@@ -1,4 +1,4 @@
-func000000000000022b:                   # @func000000000000022b
+func000000000000022b:
 	srli	a2, a2, 3
 	lui	a3, 699051
 	addi	a3, a3, -1365
@@ -6,6 +6,7 @@ func000000000000022b:                   # @func000000000000022b
 	li	a3, 2
 	blt	a3, a2, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	addi	a0, a0, 8
 	ret
+

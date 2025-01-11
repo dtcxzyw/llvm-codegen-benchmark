@@ -1,5 +1,5 @@
-func0000000000000042:                   # @func0000000000000042
-	cmpl	$4097, %edx                     # imm = 0x1001
+func0000000000000042:
+	cmpl	$4097, %edx
 	sete	%al
 	testl	%esi, %esi
 	sete	%cl
@@ -9,5 +9,6 @@ func0000000000000042:                   # @func0000000000000042
 	movzbl	%cl, %eax
 	andl	$1, %eax
 	shll	$16, %eax
-	addl	$65536, %eax                    # imm = 0x10000
+	addl	$65536, %eax
 	retq
+

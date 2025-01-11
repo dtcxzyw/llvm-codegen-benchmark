@@ -1,6 +1,6 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	leaq	(%rdi,%rsi,8), %rax
-	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
+	movabsq	$-9223372036854775808, %rcx
 	leaq	63(%rcx), %rdx
 	andq	%rax, %rdx
 	xorl	%eax, %eax
@@ -8,9 +8,10 @@ func00000000000000a8:                   # @func00000000000000a8
 	setbe	%al
 	leaq	-8(,%rax,8), %rax
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	leaq	(%rdi,%rsi,8), %rax
-	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
+	movabsq	$-9223372036854775808, %rcx
 	leaq	63(%rcx), %rdx
 	andq	%rax, %rdx
 	xorl	%eax, %eax
@@ -18,3 +19,4 @@ func0000000000000088:                   # @func0000000000000088
 	setbe	%al
 	leaq	-8(,%rax,8), %rax
 	retq
+

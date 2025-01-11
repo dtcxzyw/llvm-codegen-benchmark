@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andi	a0, a0, 64
 	beqz	a0, .LBB0_2
 	li	a0, 1
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a1
 	addi	a0, a0, 2
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a2, a1
 	li	a3, 224
 	mv	a1, a0
@@ -23,7 +24,8 @@ func000000000000002c:                   # @func000000000000002c
 	andi	a1, a1, 224
 	li	a2, 192
 	bne	a1, a2, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	li	a0, 31
-.LBB1_4:                                # %entry
+.LBB1_4:
 	ret
+

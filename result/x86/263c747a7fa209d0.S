@@ -1,9 +1,10 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vminss	%xmm1, %xmm0, %xmm2
 	vmaxss	%xmm0, %xmm1, %xmm0
 	vdivss	%xmm0, %xmm2, %xmm0
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vucomiss	%xmm1, %xmm0
 	setae	%al
 	kmovd	%eax, %k1
@@ -12,7 +13,8 @@ func000000000000000c:                   # @func000000000000000c
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	vdivss	%xmm0, %xmm2, %xmm0
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	kmovd	%eax, %k1
@@ -21,3 +23,4 @@ func0000000000000003:                   # @func0000000000000003
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	vdivss	%xmm0, %xmm2, %xmm0
 	retq
+

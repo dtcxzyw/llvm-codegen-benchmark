@@ -1,5 +1,4 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	fcvt	d1, s1
 	fcvt	d2, s2
 	fcmp	d0, d1
@@ -7,9 +6,8 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	d0, d2
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
-func00000000000000ac:                   // @func00000000000000ac
-// %bb.0:                               // %entry
+
+func00000000000000ac:
 	fcvt	d1, s1
 	fcvt	d2, s2
 	fcmp	d0, d1
@@ -17,4 +15,4 @@ func00000000000000ac:                   // @func00000000000000ac
 	fcmp	d0, d2
 	csel	w0, wzr, w8, hi
 	ret
-                                        // -- End function
+

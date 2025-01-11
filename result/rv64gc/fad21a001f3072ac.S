@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000000f4:
 	mv	a2, a0
 	slli	a1, a1, 8
 	lui	a0, 8
@@ -7,9 +7,10 @@ func00000000000000f4:                   # @func00000000000000f4
 	addiw	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 1131
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 8
@@ -21,7 +22,8 @@ func00000000000000c1:                   # @func00000000000000c1
 .LBB1_2:
 	li	a0, 13
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -32,7 +34,8 @@ func000000000000002a:                   # @func000000000000002a
 .LBB2_2:
 	li	a0, 1131
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	srliw	a0, a0, 1
@@ -45,16 +48,18 @@ func00000000000000f8:                   # @func00000000000000f8
 	lui	a0, 2048
 	addiw	a0, a0, -256
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	sext.w	a1, a0
 	li	a0, 100
 	beq	a1, a0, .LBB4_2
 	li	a0, 10
-.LBB4_2:                                # %entry
+.LBB4_2:
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	slli	a1, a1, 8
 	li	a2, 5
 	or	a0, a0, a1
@@ -67,3 +72,4 @@ func0000000000000006:                   # @func0000000000000006
 .LBB5_2:
 	addiw	a0, a0, 417
 	ret
+

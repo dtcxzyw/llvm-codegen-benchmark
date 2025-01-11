@@ -1,10 +1,11 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	shrq	$3, %rdi
-	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edi, %eax
 	vcvtsi2sd	%eax, %xmm0, %xmm0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movabsq	$8608480567731124087, %rcx      # imm = 0x7777777777777777
+
+func0000000000000000:
+	movabsq	$8608480567731124087, %rcx
 	movq	%rdi, %rax
 	imulq	%rcx
 	subq	%rdi, %rdx
@@ -14,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%eax, %edx
 	vcvtsi2sd	%edx, %xmm0, %xmm0
 	retq
+

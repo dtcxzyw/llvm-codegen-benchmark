@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -7,3 +7,4 @@ func000000000000008a:                   # @func000000000000008a
 	vand.vi	v8, v8, 3
 	vmslt.vv	v0, v9, v8
 	ret
+

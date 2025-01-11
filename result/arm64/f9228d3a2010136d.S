@@ -1,5 +1,4 @@
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+func0000000000000025:
 	subs	w8, w0, #7
 	csel	w8, wzr, w8, lo
 	add	w8, w8, #3
@@ -7,4 +6,4 @@ func0000000000000025:                   // @func0000000000000025
 	sub	w8, w0, w8
 	sub	w0, w8, #4
 	ret
-                                        // -- End function
+

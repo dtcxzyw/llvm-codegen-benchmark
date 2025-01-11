@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -6,6 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%ecx, %eax
-	andl	$-1537, %edi                    # imm = 0xF9FF
+	andl	$-1537, %edi
 	orl	%edi, %eax
 	retq
+

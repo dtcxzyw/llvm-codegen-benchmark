@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	slli	a0, a0, 3
 	lui	a1, 349525
 	addiw	a0, a0, 2
@@ -8,9 +8,11 @@ func0000000000000002:                   # @func0000000000000002
 	srli	a0, a0, 32
 	addw	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	bexti	a1, a0, 30
 	sh1add	a0, a0, a1
 	addi	a0, a0, 1
 	sraiw	a0, a0, 1
 	ret
+

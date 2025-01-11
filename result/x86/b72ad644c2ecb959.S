@@ -1,5 +1,5 @@
-func0000000000000058:                   # @func0000000000000058
-	imull	$23593, %esi, %eax              # imm = 0x5C29
+func0000000000000058:
+	imull	$23593, %esi, %eax
 	rorw	$4, %ax
 	movzwl	%ax, %eax
 	cmpl	$164, %eax
@@ -8,3 +8,4 @@ func0000000000000058:                   # @func0000000000000058
 	setne	%al
 	orb	%cl, %al
 	retq
+

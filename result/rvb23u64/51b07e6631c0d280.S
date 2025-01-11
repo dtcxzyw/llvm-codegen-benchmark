@@ -1,4 +1,4 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000094:
 	srli	a3, a1, 32
 	snez	a4, a3
 	czero.eqz	a2, a2, a3
@@ -10,7 +10,8 @@ func0000000000000094:                   # @func0000000000000094
 	czero.nez	a1, a4, a1
 	or	a0, a0, a1
 	ret
-func0000000000000294:                   # @func0000000000000294
+
+func0000000000000294:
 	sltiu	a3, a1, 16
 	xori	a4, a3, 1
 	czero.nez	a2, a2, a3
@@ -22,3 +23,4 @@ func0000000000000294:                   # @func0000000000000294
 	czero.eqz	a1, a4, a1
 	or	a0, a0, a1
 	ret
+

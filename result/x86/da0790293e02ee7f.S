@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	7(%rdi,%rsi), %ecx
 	movl	%edi, %eax
 	addl	%esi, %eax
@@ -6,10 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-8, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addl	%edi, %esi
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -18,10 +19,11 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addl	%edi, %esi
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -30,10 +32,11 @@ func0000000000000004:                   # @func0000000000000004
 	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	addl	%edi, %esi
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -42,10 +45,11 @@ func000000000000000c:                   # @func000000000000000c
 	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	addl	%edi, %esi
 	movslq	%esi, %rax
-	imulq	$1216273925, %rax, %rcx         # imm = 0x487EDE05
+	imulq	$1216273925, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$37, %rcx
@@ -53,10 +57,11 @@ func000000000000000d:                   # @func000000000000000d
 	imull	$113, %ecx, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	addl	%edi, %esi
 	movslq	%esi, %rcx
-	imulq	$-1840700269, %rcx, %rax        # imm = 0x92492493
+	imulq	$-1840700269, %rcx, %rax
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	movl	%eax, %edx
@@ -67,3 +72,4 @@ func0000000000000005:                   # @func0000000000000005
 	subl	%edx, %eax
 	addl	%ecx, %eax
 	retq
+

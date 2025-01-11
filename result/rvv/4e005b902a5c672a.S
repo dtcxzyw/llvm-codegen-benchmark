@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000022:
 	fli.s	fa5, 0.25
 	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -9,9 +9,10 @@ func0000000000000022:                   # @func0000000000000022
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
+
 .LCPI1_0:
-	.word	0x3c010204                      # float 0.00787401571
-func00000000000000c4:                   # @func00000000000000c4
+	.word	0x3c010204
+func00000000000000c4:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -23,3 +24,4 @@ func00000000000000c4:                   # @func00000000000000c4
 	fli.s	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5
 	ret
+

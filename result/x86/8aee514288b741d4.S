@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	shrl	$13, %edx
 	andl	$3, %edx
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovnel	%edx, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movq	%rdi, %rax
 	testb	$1, %sil
 	je	.LBB1_2
@@ -15,8 +16,9 @@ func0000000000000004:                   # @func0000000000000004
 	shll	$4, %edx
 	addq	%rdx, %rax
 	retq
-.LBB1_2:                                # %select.false
+.LBB1_2:
 	xorl	%edx, %edx
 	shll	$4, %edx
 	addq	%rdx, %rax
 	retq
+

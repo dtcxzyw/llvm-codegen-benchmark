@@ -1,11 +1,12 @@
-func0000000000000826:                   # @func0000000000000826
+func0000000000000826:
 	cmpq	%rsi, %rdx
 	movzbl	%dil, %eax
 	sbbl	$0, %eax
 	cmpl	$3, %eax
 	setl	%al
 	retq
-func0000000000000821:                   # @func0000000000000821
+
+func0000000000000821:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
 	sbbl	%eax, %eax
@@ -13,7 +14,8 @@ func0000000000000821:                   # @func0000000000000821
 	addl	%eax, %ecx
 	sete	%al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	sbbl	%eax, %eax
@@ -21,7 +23,8 @@ func0000000000000421:                   # @func0000000000000421
 	addl	%eax, %ecx
 	sete	%al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	sbbl	%eax, %eax
@@ -29,16 +32,19 @@ func000000000000042c:                   # @func000000000000042c
 	addl	%eax, %ecx
 	setne	%al
 	retq
-func0000000000000426:                   # @func0000000000000426
+
+func0000000000000426:
 	cmpq	%rdx, %rsi
 	movzbl	%dil, %eax
 	sbbl	$0, %eax
 	cmpl	$9, %eax
 	setl	%al
 	retq
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	cmpq	%rdx, %rsi
 	movzbl	%dil, %eax
 	sbbl	$0, %eax
 	setns	%al
 	retq
+

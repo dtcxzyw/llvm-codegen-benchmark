@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -6,7 +6,8 @@ func000000000000001f:                   # @func000000000000001f
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -14,7 +15,8 @@ func0000000000000015:                   # @func0000000000000015
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmovsxdq	%xmm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -22,3 +24,4 @@ func0000000000000014:                   # @func0000000000000014
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
+

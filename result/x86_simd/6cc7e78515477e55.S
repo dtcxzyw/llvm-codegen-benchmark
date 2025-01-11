@@ -1,138 +1,144 @@
 .LCPI0_0:
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-	.short	510                             # 0x1fe
-func0000000000000002:                   # @func0000000000000002
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+	.short	510
+func0000000000000002:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$1, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-func000000000000001b:                   # @func000000000000001b
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+func000000000000001b:
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-	.short	10304                           # 0x2840
-func000000000000000a:                   # @func000000000000000a
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+	.short	10304
+func000000000000000a:
 	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-	.short	2043                            # 0x7fb
-func0000000000000008:                   # @func0000000000000008
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+	.short	2043
+func0000000000000008:
 	vpaddw	.LCPI3_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-	.short	16380                           # 0x3ffc
-func0000000000000000:                   # @func0000000000000000
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+	.short	16380
+func0000000000000000:
 	vpaddw	.LCPI4_0(%rip), %ymm0, %ymm0
 	vpsrlw	$6, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-	.short	768                             # 0x300
-func000000000000001a:                   # @func000000000000001a
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+	.short	768
+func000000000000001a:
 	vpaddw	.LCPI5_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000001a6:                   # @func00000000000001a6
+func00000000000001a6:
 	notb	%dl
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
@@ -6,7 +6,8 @@ func00000000000001a6:                   # @func00000000000001a6
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	notb	%dl
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
@@ -14,3 +15,4 @@ func0000000000000181:                   # @func0000000000000181
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+

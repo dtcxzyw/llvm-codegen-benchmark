@@ -1,4 +1,4 @@
-func0000000000003181:                   # @func0000000000003181
+func0000000000003181:
 	testw	%dx, %dx
 	setne	%al
 	cmpw	$8, %si
@@ -8,7 +8,8 @@ func0000000000003181:                   # @func0000000000003181
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000002084:                   # @func0000000000002084
+
+func0000000000002084:
 	cmpw	$71, %dx
 	setae	%cl
 	cmpw	$-8, %si
@@ -18,7 +19,8 @@ func0000000000002084:                   # @func0000000000002084
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func0000000000002088:                   # @func0000000000002088
+
+func0000000000002088:
 	cmpw	$71, %dx
 	setae	%cl
 	cmpw	$-8, %si
@@ -28,7 +30,8 @@ func0000000000002088:                   # @func0000000000002088
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func0000000000001084:                   # @func0000000000001084
+
+func0000000000001084:
 	cmpw	$-49, %dx
 	setb	%al
 	cmpw	$-7, %si
@@ -38,7 +41,8 @@ func0000000000001084:                   # @func0000000000001084
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	xorl	$2, %edx
 	cmpw	$1, %si
 	setne	%cl
@@ -47,7 +51,8 @@ func0000000000000581:                   # @func0000000000000581
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	cmpw	$2, %dx
 	sete	%cl
 	cmpw	$1, %si
@@ -57,7 +62,8 @@ func000000000000058c:                   # @func000000000000058c
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	cmpw	$2, %dx
 	setne	%al
 	cmpw	$1, %si
@@ -67,33 +73,37 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	xorl	$16, %edx
-	xorl	$258, %esi                      # imm = 0x102
+	xorl	$258, %esi
 	orl	%edx, %esi
 	xorl	$17, %edi
 	orw	%si, %di
 	sete	%al
 	retq
-func000000000000050c:                   # @func000000000000050c
+
+func000000000000050c:
 	cmpw	$3, %dx
 	sete	%cl
 	movzwl	%si, %eax
-	cmpl	$768, %eax                      # imm = 0x300
+	cmpl	$768, %eax
 	setae	%dl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func0000000000001184:                   # @func0000000000001184
+
+func0000000000001184:
 	cmpw	$-5, %dx
 	setb	%cl
 	movzwl	%si, %eax
-	cmpl	$8204, %eax                     # imm = 0x200C
+	cmpl	$8204, %eax
 	setne	%dl
 	cmpw	$-4, %di
 	setb	%al
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
+

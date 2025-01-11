@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	leal	63(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	leal	63(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -14,7 +15,8 @@ func0000000000000005:                   # @func0000000000000005
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	leal	31(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -22,7 +24,8 @@ func0000000000000004:                   # @func0000000000000004
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	7(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -30,3 +33,4 @@ func0000000000000000:                   # @func0000000000000000
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
+

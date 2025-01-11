@@ -1,5 +1,6 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	sarq	$63, %rsi
-	imulq	$504, %rsi, %rax                # imm = 0x1F8
+	imulq	$504, %rsi, %rax
 	addq	%rdi, %rax
 	retq
+

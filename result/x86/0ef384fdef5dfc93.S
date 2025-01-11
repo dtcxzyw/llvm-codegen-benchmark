@@ -1,4 +1,4 @@
-func0000000000000282:                   # @func0000000000000282
+func0000000000000282:
 	testq	%rdx, %rdx
 	setns	%cl
 	xorb	%sil, %cl
@@ -6,7 +6,8 @@ func0000000000000282:                   # @func0000000000000282
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	testq	%rdx, %rdx
 	setne	%cl
 	xorb	%sil, %cl
@@ -14,3 +15,4 @@ func0000000000000318:                   # @func0000000000000318
 	setne	%al
 	orb	%cl, %al
 	retq
+

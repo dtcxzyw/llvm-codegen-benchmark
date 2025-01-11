@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	xorl	%eax, %eax
 	testw	%si, %si
 	setne	%al
@@ -7,3 +7,4 @@ func0000000000000031:                   # @func0000000000000031
 	andl	$1, %ecx
 	leal	(%rax,%rcx,2), %eax
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
 	fcsel	s2, s1, s0, gt
@@ -7,4 +6,4 @@ func0000000000000042:                   // @func0000000000000042
 	fsub	s2, s1, s2
 	fcsel	s0, s1, s2, mi
 	ret
-                                        // -- End function
+

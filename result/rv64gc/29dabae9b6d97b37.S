@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	sext.w	a2, a2
 	andi	a1, a1, 192
 	snez	a2, a2
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	sext.w	a2, a2
 	andi	a1, a1, 120
 	sgtz	a2, a2
@@ -14,20 +15,22 @@ func000000000000002b:                   # @func000000000000002b
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sext.w	a3, a2
 	lui	a2, 786432
 	beqz	a3, .LBB2_2
 	lui	a2, 921600
 	addiw	a2, a2, -1026
-.LBB2_2:                                # %entry
+.LBB2_2:
 	lui	a3, 196608
 	addiw	a3, a3, -1
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a2, a2
 	lui	a3, 4
 	snez	a2, a2
@@ -36,7 +39,8 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000062:                   # @func0000000000000062
+
+func0000000000000062:
 	sext.w	a2, a2
 	lui	a3, 8
 	sltiu	a2, a2, 144
@@ -47,3 +51,4 @@ func0000000000000062:                   # @func0000000000000062
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

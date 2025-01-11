@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-func0000000000000284:                   # @func0000000000000284
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+func0000000000000284:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -24,24 +24,25 @@ func0000000000000284:                   # @func0000000000000284
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-	.short	1500                            # 0x5dc
-func00000000000002a4:                   # @func00000000000002a4
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+	.short	1500
+func00000000000002a4:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -50,3 +51,4 @@ func00000000000002a4:                   # @func00000000000002a4
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

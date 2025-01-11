@@ -1,4 +1,4 @@
-func000000000000015f:                   # @func000000000000015f
+func000000000000015f:
 	sext.w	a2, a2
 	slti	a2, a2, 5
 	czero.nez	a1, a1, a2
@@ -8,7 +8,8 @@ func000000000000015f:                   # @func000000000000015f
 	addi	a0, a0, 2047
 	addi	a0, a0, 993
 	ret
-func000000000000015c:                   # @func000000000000015c
+
+func000000000000015c:
 	sext.w	a2, a2
 	sgtz	a2, a2
 	czero.eqz	a1, a1, a2
@@ -16,3 +17,4 @@ func000000000000015c:                   # @func000000000000015c
 	sh1add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
+

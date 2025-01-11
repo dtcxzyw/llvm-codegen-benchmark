@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v8, 3
 	lui	a0, 85218
@@ -16,7 +16,8 @@ func000000000000001b:                   # @func000000000000001b
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v8, 6
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	lui	a0, 286331
 	addi	a0, a0, 627
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -34,3 +35,4 @@ func0000000000000013:                   # @func0000000000000013
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v8, 4
 	ret
+

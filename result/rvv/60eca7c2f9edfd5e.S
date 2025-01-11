@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+	.quad	-8198552921648689607
 .LCPI0_1:
-	.quad	128102389400760775              # 0x1c71c71c71c71c7
-func00000000000006a1:                   # @func00000000000006a1
+	.quad	128102389400760775
+func00000000000006a1:
 	li	a0, 7
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
@@ -14,7 +14,8 @@ func00000000000006a1:                   # @func00000000000006a1
 	vmadd.vx	v10, a1, v8
 	vmseq.vx	v0, v10, a2
 	ret
-func00000000000006a8:                   # @func00000000000006a8
+
+func00000000000006a8:
 	li	a0, 21
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
@@ -28,7 +29,8 @@ func00000000000006a8:                   # @func00000000000006a8
 	srli	a1, a1, 4
 	vmsgtu.vx	v0, v10, a1
 	ret
-func0000000000000208:                   # @func0000000000000208
+
+func0000000000000208:
 	li	a0, 6
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
@@ -41,9 +43,10 @@ func0000000000000208:                   # @func0000000000000208
 	li	a0, 100
 	vmsgtu.vx	v0, v10, a0
 	ret
+
 .LCPI3_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func00000000000006a4:                   # @func00000000000006a4
+	.quad	3353953467947191203
+func00000000000006a4:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	li	a1, 5
@@ -54,3 +57,4 @@ func00000000000006a4:                   # @func00000000000006a4
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v10, a0
 	ret
+

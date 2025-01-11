@@ -1,4 +1,4 @@
-func0000000000000c2c:                   # @func0000000000000c2c
+func0000000000000c2c:
 	andi	a0, a0, 255
 	addiw	a2, a2, -1
 	xor	a1, a1, a2
@@ -6,7 +6,8 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	andi	a0, a0, 255
 	addiw	a2, a2, -1
 	xor	a1, a1, a2
@@ -15,7 +16,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000821:                   # @func0000000000000821
+
+func0000000000000821:
 	andi	a0, a0, 255
 	addi	a2, a2, -1
 	slli	a2, a2, 32
@@ -25,3 +27,4 @@ func0000000000000821:                   # @func0000000000000821
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

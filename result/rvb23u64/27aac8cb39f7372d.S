@@ -1,24 +1,26 @@
 .LCPI0_0:
-	.quad	0x3ffb333333333333              # double 1.7
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3ffb333333333333
+func0000000000000004:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fmul.d	fa5, fa0, fa5
 	fcvt.lu.d	a1, fa5, rtz
 	sltu	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	0x3fe6666666666666              # double 0.69999999999999996
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x3fe6666666666666
+func0000000000000008:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	fmul.d	fa5, fa0, fa5
 	fcvt.lu.d	a1, fa5, rtz
 	sltu	a0, a1, a0
 	ret
+
 .LCPI2_0:
-	.quad	0x3fe4cccccccccccd              # double 0.65000000000000002
-func0000000000000009:                   # @func0000000000000009
+	.quad	0x3fe4cccccccccccd
+func0000000000000009:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	fmul.d	fa5, fa0, fa5
@@ -26,9 +28,10 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+
 .LCPI3_0:
-	.quad	0x404e000000000000              # double 60
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x404e000000000000
+func0000000000000001:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
 	fmul.d	fa5, fa0, fa5
@@ -36,3 +39,4 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

@@ -1,5 +1,5 @@
-func00000000000028b4:                   # @func00000000000028b4
-	cmpq	$16777216, %rdx                 # imm = 0x1000000
+func00000000000028b4:
+	cmpq	$16777216, %rdx
 	movl	$127, %eax
 	sbbl	$0, %eax
 	subl	%esi, %edi
@@ -7,3 +7,4 @@ func00000000000028b4:                   # @func00000000000028b4
 	cmpl	$255, %edi
 	setb	%al
 	retq
+

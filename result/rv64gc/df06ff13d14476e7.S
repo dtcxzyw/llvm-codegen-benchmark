@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	andi	a1, a1, 255
 	addi	a1, a1, -255
 	snez	a1, a1
@@ -6,15 +6,18 @@ func000000000000000b:                   # @func000000000000000b
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	andi	a1, a1, 255
 	addi	a1, a1, -45
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	andi	a1, a1, 255
 	addi	a1, a1, -42
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret
+

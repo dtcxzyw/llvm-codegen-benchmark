@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	andi	a0, a0, 1
 	addi	a1, a1, -200
 	addi	a0, a0, -1
@@ -6,7 +6,8 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a1, a1, 32
 	and	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andi	a0, a0, 1
 	addi	a1, a1, 56
 	addi	a0, a0, -1
@@ -14,7 +15,8 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a1, a1, -56
 	and	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a0, a0, 1
 	addi	a1, a1, 20
 	addi	a0, a0, -1
@@ -22,3 +24,4 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, 32
 	and	a0, a0, a1
 	ret
+

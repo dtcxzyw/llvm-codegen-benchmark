@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	movl	$12, %eax
 	shlxq	%rsi, %rax, %rax
 	testl	$-4, %eax
@@ -6,3 +6,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	notb	%dil
 	andb	%dil, %al
 	retq
+

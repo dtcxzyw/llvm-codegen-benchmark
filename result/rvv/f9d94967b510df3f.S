@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3c23d70a                      # float 0.00999999977
-func0000000000000000:                   # @func0000000000000000
+	.word	0x3c23d70a
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vf	v8, v8, fa5
 	vfdiv.vv	v8, v8, v9
 	ret
+

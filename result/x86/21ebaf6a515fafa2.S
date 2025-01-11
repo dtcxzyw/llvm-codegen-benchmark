@@ -1,11 +1,12 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	addl	%edx, %esi
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	negb	%sil
 	shrxq	%rsi, %rax, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addl	%edx, %esi
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
@@ -13,7 +14,8 @@ func0000000000000000:                   # @func0000000000000000
 	subb	%sil, %cl
 	shrxq	%rcx, %rax, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addl	%edx, %esi
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
@@ -21,3 +23,4 @@ func0000000000000008:                   # @func0000000000000008
 	subb	%sil, %cl
 	shrxq	%rcx, %rax, %rax
 	retq
+

@@ -1,7 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movq	%rdi, %rcx
 	xorl	%esi, %esi
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	movl	$4294967295, %eax
 	xorl	%edx, %edx
 	shldq	%cl, %rax, %rdx
 	shlxq	%rdi, %rax, %rax
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovneq	%rax, %rdx
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	movq	%rdi, %rcx
 	xorl	%esi, %esi
 	movl	$8, %eax
@@ -20,7 +21,8 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%rax, %rdx
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	$-1, %rdx
 	shlxq	%rdi, %rdx, %rcx
 	xorl	%eax, %eax
@@ -28,7 +30,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmoveq	%rcx, %rax
 	cmovneq	%rcx, %rdx
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movq	%rdi, %rcx
 	xorl	%esi, %esi
 	movl	$1, %eax
@@ -39,3 +42,4 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rax, %rdx
 	cmovneq	%rsi, %rax
 	retq
+

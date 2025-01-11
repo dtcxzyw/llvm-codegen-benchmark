@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x3fd0000000000000              # double 0.25
+	.quad	0x3fd0000000000000
 .LCPI0_1:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3fe0000000000000
+func0000000000000002:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, %hi(.LCPI0_0)
@@ -14,11 +14,12 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa5, %lo(.LCPI0_1)(a0)
 	flt.d	a0, fa0, fa5
 	ret
+
 .LCPI1_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+	.quad	0x3cb0000000000000
 .LCPI1_1:
-	.quad	0x3ce0000000000000              # double 1.7763568394002505E-15
-func0000000000000003:                   # @func0000000000000003
+	.quad	0x3ce0000000000000
+func0000000000000003:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)
@@ -32,9 +33,10 @@ func0000000000000003:                   # @func0000000000000003
 	fle.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
+
 .LCPI2_0:
-	.quad	0xc066800000000000              # double -180
-func0000000000000007:                   # @func0000000000000007
+	.quad	0xc066800000000000
+func0000000000000007:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, %hi(.LCPI2_0)
@@ -47,11 +49,12 @@ func0000000000000007:                   # @func0000000000000007
 	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
+
 .LCPI3_0:
-	.quad	0x3e80000000000000              # double 1.1920928955078125E-7
+	.quad	0x3e80000000000000
 .LCPI3_1:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3cb0000000000000
+func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	lui	a0, %hi(.LCPI3_0)
@@ -63,11 +66,12 @@ func0000000000000004:                   # @func0000000000000004
 	fld	fa5, %lo(.LCPI3_1)(a0)
 	flt.d	a0, fa5, fa0
 	ret
+
 .LCPI4_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x3ff0000000000000
 .LCPI4_1:
-	.quad	0x3ff8000000000000              # double 1.5
-func0000000000000005:                   # @func0000000000000005
+	.quad	0x3ff8000000000000
+func0000000000000005:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	lui	a0, %hi(.LCPI4_0)
@@ -81,3 +85,4 @@ func0000000000000005:                   # @func0000000000000005
 	fle.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
+

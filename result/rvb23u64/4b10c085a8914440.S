@@ -1,16 +1,18 @@
-func00000000000001a1:                   # @func00000000000001a1
+func00000000000001a1:
 	sext.w	a1, a0
 	slli	a0, a0, 1
 	addiw	a0, a0, -2
 	czero.eqz	a0, a0, a1
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	sext.w	a1, a0
 	slli	a0, a0, 3
 	addiw	a0, a0, 8
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	sext.w	a1, a0
 	slli	a0, a0, 2
 	li	a2, 7
@@ -20,13 +22,15 @@ func0000000000000086:                   # @func0000000000000086
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sext.w	a1, a0
 	slli	a0, a0, 16
 	addiw	a0, a0, -1
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a1, a0
 	slli	a0, a0, 1
 	li	a2, 1
@@ -35,7 +39,8 @@ func0000000000000141:                   # @func0000000000000141
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	sext.w	a1, a0
 	slli	a0, a0, 1
 	lui	a2, 32
@@ -47,7 +52,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a1, a0
 	slli	a0, a0, 7
 	lui	a2, 481
@@ -60,7 +66,8 @@ func0000000000000006:                   # @func0000000000000006
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	sext.w	a1, a0
 	slli	a0, a0, 2
 	li	a2, 6
@@ -69,7 +76,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sext.w	a1, a0
 	slli	a0, a0, 26
 	lui	a2, 851968
@@ -77,3 +85,4 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a1, a1, 13
 	czero.nez	a0, a0, a1
 	ret
+

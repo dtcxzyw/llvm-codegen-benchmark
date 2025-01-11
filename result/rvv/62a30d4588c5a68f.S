@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	li	a0, 100
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsleu.vi	v0, v8, 14
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, 10
 	vmsleu.vi	v0, v8, 14
@@ -17,7 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v8, 0
 	vadd.vi	v8, v9, 1
@@ -25,7 +27,8 @@ func0000000000000021:                   # @func0000000000000021
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, 10
 	lui	a0, 32
@@ -36,7 +39,8 @@ func000000000000002a:                   # @func000000000000002a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v8, 0
@@ -45,7 +49,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v8, -1
 	vadd.vi	v8, v9, -1
@@ -53,7 +58,8 @@ func0000000000000026:                   # @func0000000000000026
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	li	a0, 101
 	li	a1, 100
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -63,3 +69,4 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
+

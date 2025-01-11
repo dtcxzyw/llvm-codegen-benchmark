@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	lui	a0, 699051
@@ -8,9 +8,10 @@ func0000000000000011:                   # @func0000000000000011
 	vmadd.vx	v10, a0, v8
 	vclz.v	v8, v10
 	ret
+
 .LCPI1_0:
-	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000005:                   # @func0000000000000005
+	.quad	5270498306774157605
+func0000000000000005:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -22,9 +23,10 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vv	v8, v10, v8
 	vclz.v	v8, v8
 	ret
+
 .LCPI2_0:
-	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000001:                   # @func0000000000000001
+	.quad	5270498306774157605
+func0000000000000001:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -36,7 +38,8 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vv	v8, v10, v8
 	vclz.v	v8, v8
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 838861
@@ -46,3 +49,4 @@ func0000000000000015:                   # @func0000000000000015
 	vmadd.vx	v10, a0, v8
 	vclz.v	v8, v10
 	ret
+

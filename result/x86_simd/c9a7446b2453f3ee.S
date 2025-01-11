@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000002:                   # @func0000000000000002
-	vbroadcastsd	.LCPI0_0(%rip), %zmm6   # zmm6 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
+	.quad	0x3fe0000000000000
+func0000000000000002:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm6
 	vmulpd	%zmm6, %zmm4, %zmm4
 	vmulpd	%zmm6, %zmm5, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -10,10 +10,11 @@ func0000000000000002:                   # @func0000000000000002
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
+
 .LCPI1_0:
-	.quad	0x3f80000000000000              # double 0.0078125
-func0000000000000005:                   # @func0000000000000005
-	vbroadcastsd	.LCPI1_0(%rip), %zmm6   # zmm6 = [7.8125E-3,7.8125E-3,7.8125E-3,7.8125E-3,7.8125E-3,7.8125E-3,7.8125E-3,7.8125E-3]
+	.quad	0x3f80000000000000
+func0000000000000005:
+	vbroadcastsd	.LCPI1_0(%rip), %zmm6
 	vmulpd	%zmm6, %zmm4, %zmm4
 	vmulpd	%zmm6, %zmm5, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -22,10 +23,11 @@ func0000000000000005:                   # @func0000000000000005
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
+
 .LCPI2_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000003:                   # @func0000000000000003
-	vbroadcastsd	.LCPI2_0(%rip), %zmm6   # zmm6 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
+	.quad	0x3fe0000000000000
+func0000000000000003:
+	vbroadcastsd	.LCPI2_0(%rip), %zmm6
 	vmulpd	%zmm6, %zmm4, %zmm4
 	vmulpd	%zmm6, %zmm5, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -34,7 +36,8 @@ func0000000000000003:                   # @func0000000000000003
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vaddpd	%zmm4, %zmm4, %zmm4
 	vaddpd	%zmm5, %zmm5, %zmm5
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -43,3 +46,4 @@ func0000000000000004:                   # @func0000000000000004
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
+

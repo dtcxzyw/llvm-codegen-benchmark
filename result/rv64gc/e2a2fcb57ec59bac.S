@@ -1,4 +1,4 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000001f8:
 	li	a2, 5
 	slli	a1, a1, 32
 	srliw	a0, a0, 1
@@ -9,7 +9,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	srli	a0, a0, 31
 	snez	a0, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	li	a2, 5
 	slli	a1, a1, 32
 	srliw	a0, a0, 1
@@ -20,3 +21,4 @@ func00000000000001f4:                   # @func00000000000001f4
 	srli	a0, a0, 31
 	seqz	a0, a0
 	ret
+

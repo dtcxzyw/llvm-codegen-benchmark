@@ -1,52 +1,60 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	decl	%edi
 	movzwl	%di, %eax
 	shrl	$4, %eax
-	imull	$4195, %eax, %eax               # imm = 0x1063
+	imull	$4195, %eax, %eax
 	shrl	$19, %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	addl	$55, %edi
 	movzwl	%di, %eax
 	shrl	$3, %eax
-	imull	$9363, %eax, %eax               # imm = 0x2493
+	imull	$9363, %eax, %eax
 	shrl	$16, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addl	$5, %edi
 	movzwl	%di, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %eax, %eax
 	shrl	$19, %eax
 	retq
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	incl	%edi
 	movzwl	%di, %eax
-	imull	$43691, %eax, %eax              # imm = 0xAAAB
+	imull	$43691, %eax, %eax
 	shrl	$17, %eax
 	retq
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	addl	$50, %edi
 	movzwl	%di, %eax
 	shrl	$2, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %eax, %eax
 	shrl	$17, %eax
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	decl	%edi
 	movzwl	%di, %eax
 	shrl	$4, %eax
-	imull	$2622, %eax, %eax               # imm = 0xA3E
+	imull	$2622, %eax, %eax
 	shrl	$16, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	addl	$5, %edi
 	movzwl	%di, %eax
-	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	imull	$52429, %eax, %eax
 	shrl	$19, %eax
 	retq
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	addl	$9, %edi
 	movzwl	%di, %eax
-	imull	$58255, %eax, %eax              # imm = 0xE38F
+	imull	$58255, %eax, %eax
 	shrl	$19, %eax
 	retq
+

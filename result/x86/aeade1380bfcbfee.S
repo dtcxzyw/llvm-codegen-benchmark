@@ -1,4 +1,4 @@
-func0000000000000284:                   # @func0000000000000284
+func0000000000000284:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000284:                   # @func0000000000000284
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	sete	%cl
@@ -22,7 +24,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000281:                   # @func0000000000000281
+
+func0000000000000281:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setb	%cl
@@ -30,7 +33,8 @@ func0000000000000281:                   # @func0000000000000281
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000301:                   # @func0000000000000301
+
+func0000000000000301:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	seta	%cl
@@ -38,7 +42,8 @@ func0000000000000301:                   # @func0000000000000301
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -46,7 +51,8 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setl	%cl
@@ -54,7 +60,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setb	%cl
@@ -62,7 +69,8 @@ func0000000000000681:                   # @func0000000000000681
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000004c1:                   # @func00000000000004c1
+
+func00000000000004c1:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
 	setl	%cl
@@ -70,3 +78,4 @@ func00000000000004c1:                   # @func00000000000004c1
 	sete	%al
 	orb	%cl, %al
 	retq
+

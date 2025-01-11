@@ -1,4 +1,4 @@
-func00000000000001a8:                   # @func00000000000001a8
+func00000000000001a8:
 	andi	a3, a1, 1
 	srli	a2, a2, 3
 	lui	a1, 699051
@@ -9,6 +9,7 @@ func00000000000001a8:                   # @func00000000000001a8
 	bnez	a3, .LBB0_2
 	addi	a1, a1, 1
 	srli	a1, a1, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sltu	a0, a0, a1
 	ret
+

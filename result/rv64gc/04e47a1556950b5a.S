@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
@@ -13,7 +13,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a2, a1, 2
 	add	a1, a1, a2
 	lui	a2, 877240
@@ -26,7 +27,8 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
-func00000000000000ad:                   # @func00000000000000ad
+
+func00000000000000ad:
 	lui	a2, 9
 	addi	a2, a2, -339
 	mul	a1, a1, a2
@@ -42,7 +44,8 @@ func00000000000000ad:                   # @func00000000000000ad
 	add	a0, a0, a1
 	addiw	a0, a0, 429
 	ret
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
@@ -57,3 +60,4 @@ func00000000000000a5:                   # @func00000000000000a5
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

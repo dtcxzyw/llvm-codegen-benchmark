@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, -1
 	vmerge.vim	v12, v12, 1, v0
@@ -8,7 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v10, v8, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	bseti	a0, zero, 11
@@ -20,7 +21,8 @@ func0000000000000050:                   # @func0000000000000050
 	vmerge.vim	v10, v10, -2, v0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	bseti	a0, zero, 11
@@ -32,7 +34,8 @@ func0000000000000053:                   # @func0000000000000053
 	vmerge.vim	v10, v10, 2, v0
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 9
 	li	a0, 17
@@ -43,7 +46,8 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vim	v10, v12, 4, v0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	li	a0, 68
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -55,7 +59,8 @@ func0000000000000007:                   # @func0000000000000007
 	vadd.vv	v10, v8, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -68,7 +73,8 @@ func0000000000000013:                   # @func0000000000000013
 	vmerge.vim	v10, v12, 12, v0
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	li	a0, -55
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -81,3 +87,4 @@ func0000000000000011:                   # @func0000000000000011
 	vmerge.vxm	v10, v12, a0, v0
 	vadd.vv	v8, v10, v8
 	ret
+

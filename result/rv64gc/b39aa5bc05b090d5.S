@@ -1,11 +1,12 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	sext.w	a1, a1
 	andi	a0, a0, 255
 	slt	a1, a0, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	slli	a2, a0, 56
 	sext.w	a1, a1
 	andi	a0, a0, 255
@@ -15,3 +16,4 @@ func000000000000054a:                   # @func000000000000054a
 	not	a1, a1
 	and	a0, a0, a1
 	ret
+

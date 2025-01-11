@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
@@ -7,3 +7,4 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	(%rcx,%rax,8), %rax
 	leaq	80(%rdi,%rax), %rax
 	retq
+

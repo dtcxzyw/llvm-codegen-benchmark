@@ -1,4 +1,4 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -8,7 +8,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -18,7 +19,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	addi	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -29,7 +31,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	srai	a1, a1, 3
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -40,7 +43,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -50,7 +54,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	addi	a1, a1, -1
 	slt	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	srli	a2, a1, 63
 	add	a1, a1, a2
 	srai	a1, a1, 1
@@ -58,7 +63,8 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	srai	a2, a1, 63
 	srli	a2, a2, 60
 	add	a1, a1, a2
@@ -66,7 +72,8 @@ func0000000000000028:                   # @func0000000000000028
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a1, a1, a2
@@ -74,3 +81,4 @@ func0000000000000026:                   # @func0000000000000026
 	addi	a1, a1, 1
 	slt	a0, a1, a0
 	ret
+

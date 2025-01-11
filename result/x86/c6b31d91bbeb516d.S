@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -7,15 +7,17 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rdx, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	cmpq	$536870911, %rdx                # imm = 0x1FFFFFFF
+
+func0000000000000005:
+	cmpq	$536870911, %rdx
 	sete	%al
 	orb	%sil, %al
 	movzbl	%al, %eax
 	shlq	$63, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	testq	%rdx, %rdx
 	setne	%al
 	orb	%sil, %al
@@ -23,3 +25,4 @@ func0000000000000031:                   # @func0000000000000031
 	andl	$1, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
+

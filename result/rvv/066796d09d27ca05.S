@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	li	a0, 256
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vminu.vx	v10, v10, a0
@@ -6,3 +6,4 @@ func0000000000000024:                   # @func0000000000000024
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
+

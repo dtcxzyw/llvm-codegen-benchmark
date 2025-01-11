@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	addb	%dil, %sil
 	shrb	%sil
 	andb	$30, %sil
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%ecx, %eax
 	shrl	$8, %eax
 	retq
+

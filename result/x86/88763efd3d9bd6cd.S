@@ -1,4 +1,5 @@
-func000000000000000f:                   # @func000000000000000f
-	andl	$4190208, %esi                  # imm = 0x3FF000
+func000000000000000f:
+	andl	$4190208, %esi
 	leal	6(%rsi,%rdi), %eax
 	retq
+

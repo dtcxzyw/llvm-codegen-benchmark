@@ -1,4 +1,4 @@
-func0000000000000604:                   # @func0000000000000604
+func0000000000000604:
 	testb	$6, %sil
 	setne	%cl
 	testq	%rsi, %rsi
@@ -6,3 +6,4 @@ func0000000000000604:                   # @func0000000000000604
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
+

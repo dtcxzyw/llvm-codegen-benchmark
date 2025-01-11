@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.long	4294967168                      # 0xffffff80
+	.long	4294967168
 .LCPI0_1:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-func0000000000000020:                   # @func0000000000000020
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+func0000000000000020:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$27, %ymm1, %ymm1
@@ -19,3 +19,4 @@ func0000000000000020:                   # @func0000000000000020
 	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
+

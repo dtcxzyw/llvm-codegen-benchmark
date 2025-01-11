@@ -1,4 +1,4 @@
-func0000000000000083:                   # @func0000000000000083
+func0000000000000083:
 	sext.w	a1, a1
 	slliw	a2, a2, 3
 	lui	a3, 131072
@@ -10,19 +10,22 @@ func0000000000000083:                   # @func0000000000000083
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	sext.w	a1, a1
 	slliw	a2, a2, 1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	sext.w	a1, a1
 	slliw	a2, a2, 8
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	sext.w	a1, a1
 	slliw	a2, a2, 23
 	lui	a3, 8
@@ -34,7 +37,8 @@ func0000000000000015:                   # @func0000000000000015
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000000b0:                   # @func00000000000000b0
+
+func00000000000000b0:
 	sext.w	a1, a1
 	slliw	a2, a2, 24
 	lui	a3, 1044480
@@ -44,7 +48,8 @@ func00000000000000b0:                   # @func00000000000000b0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	sext.w	a1, a1
 	slliw	a2, a2, 16
 	lui	a3, 4080
@@ -54,3 +59,4 @@ func00000000000000f0:                   # @func00000000000000f0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

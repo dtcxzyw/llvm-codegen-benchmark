@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andb	$1, %dl
 	movb	$4, %al
 	subb	%dl, %al
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	notb	%dl
 	andb	$1, %dl
 	addb	%dl, %dl
@@ -15,7 +16,8 @@ func0000000000000068:                   # @func0000000000000068
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andb	$1, %dl
 	addb	%dl, %dl
 	incb	%dl
@@ -23,7 +25,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andb	$1, %dl
 	movb	$12, %al
 	subb	%dl, %al
@@ -31,3 +34,4 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
+

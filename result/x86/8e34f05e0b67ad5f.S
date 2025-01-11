@@ -1,18 +1,20 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
 	testq	%rax, %rax
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
 	cmpq	$32, %rax
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testl	%edx, %edx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -20,10 +22,12 @@ func0000000000000042:                   # @func0000000000000042
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movslq	%edx, %rax
 	imulq	%rsi, %rax
 	testq	%rax, %rax
 	setne	%al
 	orb	%dil, %al
 	retq
+

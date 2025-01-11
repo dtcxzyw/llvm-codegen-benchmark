@@ -1,4 +1,4 @@
-func000000000000028c:                   # @func000000000000028c
+func000000000000028c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, 1
 	vmsle.vi	v10, v8, 1
@@ -8,3 +8,4 @@ func000000000000028c:                   # @func000000000000028c
 	vmerge.vim	v8, v8, 1, v0
 	vsll.vi	v8, v8, 2
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	li	a0, -65
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -17,7 +18,8 @@ func0000000000000003:                   # @func0000000000000003
 	vand.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a0, 4
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,3 +29,4 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+

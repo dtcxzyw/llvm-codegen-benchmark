@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	testl	%edx, %edx
 	setns	%cl
 	andb	%dil, %cl
@@ -6,7 +6,8 @@ func000000000000014a:                   # @func000000000000014a
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	testl	%edx, %edx
 	setne	%cl
 	andb	%dil, %cl
@@ -14,7 +15,8 @@ func0000000000000184:                   # @func0000000000000184
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	testl	%edx, %edx
 	setne	%cl
 	andb	%dil, %cl
@@ -22,3 +24,4 @@ func000000000000018a:                   # @func000000000000018a
 	setg	%al
 	andb	%cl, %al
 	retq
+

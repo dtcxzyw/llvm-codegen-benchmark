@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	slli.uw	a3, a2, 6
 	slli.uw	a2, a2, 9
 	sub	a2, a2, a3
@@ -7,7 +7,8 @@ func0000000000000030:                   # @func0000000000000030
 	addi	a0, a0, 2047
 	addi	a0, a0, 1313
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	zext.w	a2, a2
 	lui	a3, 2
 	add	a0, a0, a1
@@ -17,7 +18,8 @@ func0000000000000075:                   # @func0000000000000075
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	zext.w	a2, a2
 	lui	a3, 1
 	add	a0, a0, a1
@@ -27,3 +29,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

@@ -1,48 +1,42 @@
-func00000000000000a4:                   // @func00000000000000a4
-// %bb.0:                               // %entry
-	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
+func00000000000000a4:
+	mov	x8, #2305843009213693951
 	sub	x8, x8, x1, asr #2
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000a8:                   // @func00000000000000a8
-// %bb.0:                               // %entry
-	mov	x8, #288230376151711743         // =0x3ffffffffffffff
+
+func00000000000000a8:
+	mov	x8, #288230376151711743
 	sub	x8, x8, x1, asr #5
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000b4:                   // @func00000000000000b4
-// %bb.0:                               // %entry
-	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+
+func00000000000000b4:
+	mov	x8, #1152921504606846975
 	sub	x8, x8, x1, asr #3
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000e4:                   // @func00000000000000e4
-// %bb.0:                               // %entry
-	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+
+func00000000000000e4:
+	mov	x8, #1152921504606846975
 	sub	x8, x8, x1, asr #3
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
+
+func0000000000000038:
 	asr	x8, x1, #1
 	eor	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000e8:                   // @func00000000000000e8
-// %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
+
+func00000000000000e8:
+	mov	w8, #8
 	sub	x8, x8, x1, asr #2
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
+

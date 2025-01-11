@@ -1,4 +1,4 @@
-func000000000000058c:                   # @func000000000000058c
+func000000000000058c:
 	imulq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setne	%cl
@@ -6,7 +6,8 @@ func000000000000058c:                   # @func000000000000058c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	imulq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setb	%cl
@@ -14,3 +15,4 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
+

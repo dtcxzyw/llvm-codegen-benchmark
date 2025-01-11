@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	lui	a2, 260096
 	fmv.w.x	fa5, a2
 	flt.s	a2, fa5, fa0
@@ -7,9 +7,10 @@ func0000000000000008:                   # @func0000000000000008
 	beqz	a0, .LBB0_2
 	andi	a1, a1, 1
 	fcvt.s.w	fa0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	fmv.w.x	fa5, zero
 	flt.s	a2, fa0, fa5
 	or	a0, a0, a2
@@ -18,5 +19,6 @@ func0000000000000004:                   # @func0000000000000004
 	not	a0, a1
 	andi	a0, a0, 1
 	fcvt.s.w	fa0, a0
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

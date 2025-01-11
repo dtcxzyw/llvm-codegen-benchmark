@@ -1,4 +1,4 @@
-func0000000000000155:                   # @func0000000000000155
+func0000000000000155:
 	add	a1, a1, a2
 	lui	a2, 1048575
 	addi	a2, a2, 900
@@ -9,7 +9,8 @@ func0000000000000155:                   # @func0000000000000155
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	add	a1, a1, a2
 	lui	a2, 1048575
 	addi	a2, a2, 900
@@ -20,21 +21,24 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
 	ret
-func00000000000003ff:                   # @func00000000000003ff
+
+func00000000000003ff:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a0, a0
 	sh1add	a0, a0, a1
 	addiw	a0, a0, 8
 	ret
-func0000000000000150:                   # @func0000000000000150
+
+func0000000000000150:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a0, a0
 	sh1add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret
-func0000000000000154:                   # @func0000000000000154
+
+func0000000000000154:
 	add	a1, a1, a2
 	lui	a2, 2
 	addi	a3, a2, 675
@@ -44,7 +48,8 @@ func0000000000000154:                   # @func0000000000000154
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000003fe:                   # @func00000000000003fe
+
+func00000000000003fe:
 	add	a1, a1, a2
 	lui	a2, 1023
 	addi	a2, a2, 1712
@@ -55,7 +60,8 @@ func00000000000003fe:                   # @func00000000000003fe
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000300:                   # @func0000000000000300
+
+func0000000000000300:
 	add	a1, a1, a2
 	lui	a2, 16379
 	addi	a2, a2, 1399
@@ -67,7 +73,8 @@ func0000000000000300:                   # @func0000000000000300
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
-func00000000000003cc:                   # @func00000000000003cc
+
+func00000000000003cc:
 	add	a1, a1, a2
 	lui	a2, 16378
 	addi	a2, a2, 460
@@ -79,7 +86,8 @@ func00000000000003cc:                   # @func00000000000003cc
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
-func0000000000000355:                   # @func0000000000000355
+
+func0000000000000355:
 	add	a1, a1, a2
 	lui	a2, 1048571
 	addi	a2, a2, 1399
@@ -91,7 +99,8 @@ func0000000000000355:                   # @func0000000000000355
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
-func00000000000003dd:                   # @func00000000000003dd
+
+func00000000000003dd:
 	add	a1, a1, a2
 	lui	a2, 1048570
 	addi	a2, a2, 460
@@ -103,3 +112,4 @@ func00000000000003dd:                   # @func00000000000003dd
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
+

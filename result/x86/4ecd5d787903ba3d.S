@@ -1,7 +1,7 @@
-func0000000000000005:                   # @func0000000000000005
-	addl	$299, %edx                      # imm = 0x12B
+func0000000000000005:
+	addl	$299, %edx
 	movslq	%edx, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$39, %rax
@@ -9,7 +9,8 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	leal	16(%rdx), %ecx
 	leal	31(%rdx), %eax
 	testl	%ecx, %ecx
@@ -18,7 +19,8 @@ func0000000000000025:                   # @func0000000000000025
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	7(%rdx), %ecx
 	leal	14(%rdx), %eax
 	testl	%ecx, %ecx
@@ -27,10 +29,11 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	decl	%edx
 	movslq	%edx, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$39, %rax
@@ -38,7 +41,8 @@ func0000000000000020:                   # @func0000000000000020
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	leal	-1(%rdx), %ecx
 	leal	2(%rdx), %eax
 	testl	%ecx, %ecx
@@ -47,10 +51,11 @@ func000000000000002d:                   # @func000000000000002d
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	decl	%edx
 	movslq	%edx, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$39, %rax
@@ -58,3 +63,4 @@ func0000000000000024:                   # @func0000000000000024
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+

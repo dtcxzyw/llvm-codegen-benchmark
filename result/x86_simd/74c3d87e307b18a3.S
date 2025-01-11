@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.zero	16,3
 .LCPI0_1:
-	.byte	3                               # 0x3
-func0000000000000018:                   # @func0000000000000018
-	vpbroadcastb	.LCPI0_1(%rip), %xmm3   # xmm3 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+	.byte	3
+func0000000000000018:
+	vpbroadcastb	.LCPI0_1(%rip), %xmm3
 	vpand	%xmm3, %xmm2, %xmm2
 	vpcmpneqb	%xmm3, %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -12,3 +12,4 @@ func0000000000000018:                   # @func0000000000000018
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+

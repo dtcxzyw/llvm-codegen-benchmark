@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	leaq	-200(%rsi), %rax
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -7,7 +7,8 @@ func000000000000000b:                   # @func000000000000000b
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	leaq	56(%rsi), %rax
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -16,7 +17,8 @@ func000000000000000e:                   # @func000000000000000e
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leaq	20(%rsi), %rax
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -25,3 +27,4 @@ func000000000000000f:                   # @func000000000000000f
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+

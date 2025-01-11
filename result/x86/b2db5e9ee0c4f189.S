@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	xorl	%ecx, %ecx
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$34, %eax
 	cmovbq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -14,15 +15,17 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	addq	$3, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
-	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
+	movabsq	$9223372036854775807, %rcx
 	leaq	1(%rcx), %rax
 	testq	%rsi, %rsi
 	cmovgq	%rcx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -30,9 +33,11 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%al
 	addl	%eax, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
 	shrq	$63, %rsi
 	leaq	2(%rsi), %rax
 	retq
+

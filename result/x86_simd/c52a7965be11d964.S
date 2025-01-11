@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	16026                           # 0x3e9a
-func0000000000000024:                   # @func0000000000000024
+	.long	16026
+func0000000000000024:
 	vpmovsxwd	%xmm1, %ymm1
 	vpmovsxwd	%xmm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vpmovsxwd	%xmm1, %ymm1
 	vpmovsxwd	%xmm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -17,9 +18,10 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	6774                            # 0x1a76
-func0000000000000028:                   # @func0000000000000028
+	.long	6774
+func0000000000000028:
 	vpmovsxwd	%xmm1, %ymm1
 	vpmovsxwd	%xmm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -27,7 +29,8 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vpmovsxwd	%xmm1, %ymm1
 	vpmovsxwd	%xmm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -35,3 +38,4 @@ func0000000000000026:                   # @func0000000000000026
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

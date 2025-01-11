@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	andi	a1, a1, 1
 	addiw	a2, a2, 1
 	li	a3, 5
@@ -9,7 +9,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	andi	a1, a1, 1
 	addiw	a2, a2, -1
 	li	a3, 94
@@ -20,3 +21,4 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

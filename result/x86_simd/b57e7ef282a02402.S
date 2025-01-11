@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	64                              # 0x40
-func0000000000000201:                   # @func0000000000000201
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [64,64,64,64]
+	.quad	64
+func0000000000000201:
+	vpmovzxdq	%xmm1, %ymm1
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -10,10 +10,11 @@ func0000000000000201:                   # @func0000000000000201
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	1                               # 0x1
-func0000000000000308:                   # @func0000000000000308
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	.quad	1
+func0000000000000308:
+	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpandn	%ymm0, %ymm1, %ymm0
@@ -21,8 +22,9 @@ func0000000000000308:                   # @func0000000000000308
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000301:                   # @func0000000000000301
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+
+func0000000000000301:
+	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpandn	%ymm0, %ymm1, %ymm0
@@ -30,3 +32,4 @@ func0000000000000301:                   # @func0000000000000301
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

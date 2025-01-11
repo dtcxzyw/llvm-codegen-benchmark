@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -35,7 +35,8 @@ func000000000000001e:                   # @func000000000000001e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000005e:                   # @func000000000000005e
+
+func000000000000005e:
 	addiw	a0, a0, 1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -72,7 +73,8 @@ func000000000000005e:                   # @func000000000000005e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func00000000000000de:                   # @func00000000000000de
+
+func00000000000000de:
 	addiw	a0, a0, 1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -109,7 +111,8 @@ func00000000000000de:                   # @func00000000000000de
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func00000000000000df:                   # @func00000000000000df
+
+func00000000000000df:
 	addiw	a0, a0, 1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -146,7 +149,8 @@ func00000000000000df:                   # @func00000000000000df
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000009e:                   # @func000000000000009e
+
+func000000000000009e:
 	addiw	a0, a0, 1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -183,7 +187,8 @@ func000000000000009e:                   # @func000000000000009e
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB5_2
 	srliw	a1, a0, 1
@@ -229,7 +234,8 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
-func000000000000004e:                   # @func000000000000004e
+
+func000000000000004e:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB6_2
 	srliw	a1, a0, 1
@@ -275,7 +281,8 @@ func000000000000004e:                   # @func000000000000004e
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB7_2
 	srliw	a1, a0, 1
@@ -321,7 +328,8 @@ func000000000000002e:                   # @func000000000000002e
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
-func000000000000006e:                   # @func000000000000006e
+
+func000000000000006e:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB8_2
 	srliw	a1, a0, 1
@@ -367,7 +375,8 @@ func000000000000006e:                   # @func000000000000006e
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB9_2
 	srliw	a1, a0, 1
@@ -411,7 +420,8 @@ func000000000000006f:                   # @func000000000000006f
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	addiw	a0, a0, -1
 	beqz	a0, .LBB10_2
 	srliw	a1, a0, 1
@@ -455,7 +465,8 @@ func000000000000002d:                   # @func000000000000002d
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -492,7 +503,8 @@ func000000000000005c:                   # @func000000000000005c
 	li	a1, 2
 	sllw	a0, a1, a0
 	ret
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -530,3 +542,4 @@ func000000000000005d:                   # @func000000000000005d
 	li	a0, -1
 	sllw	a0, a0, a2
 	ret
+

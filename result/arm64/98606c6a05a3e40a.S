@@ -1,50 +1,38 @@
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	mov	w8, #40                         // =0x28
+func0000000000000013:
+	mov	w8, #40
 	and	x9, x1, #0x3fff
 	umaddl	x8, w9, w8, x0
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
-	mov	w8, #24                         // =0x18
+
+func000000000000001f:
+	mov	w8, #24
 	and	x9, x1, #0x3fff
 	umaddl	x8, w9, w8, x0
 	add	x0, x8, #16
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func000000000000001c:
 	and	x8, x1, #0x7ffe
 	add	x8, x0, x8
 	add	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000010:
 	and	x8, x1, #0x1ff8
 	add	x8, x0, x8
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000000:
 	and	x8, x1, #0xfffc
 	add	x8, x0, x8
 	add	x0, x8, #4
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func000000000000000f:
 	and	x8, x1, #0xfff8
 	add	x8, x0, x8
 	add	x0, x8, #2
 	ret
-                                        // -- End function
+

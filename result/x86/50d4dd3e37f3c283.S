@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	decq	%rsi
 	lzcntq	%rsi, %rax
 	movq	$-1, %rcx
@@ -9,3 +9,4 @@ func0000000000000004:                   # @func0000000000000004
 	incq	%rax
 	sete	%dl
 	retq
+

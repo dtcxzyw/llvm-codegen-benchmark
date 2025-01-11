@@ -1,30 +1,25 @@
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+func0000000000000015:
 	sxtb	w8, w0
 	add	w0, w8, #5
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	sxth	w8, w0
 	add	w0, w8, #128
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	sbfx	w8, w0, #11, #3
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	sxtb	w8, w0
 	add	w0, w8, #4
 	ret
-                                        // -- End function
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
+
+func0000000000000011:
 	sbfx	w8, w0, #4, #4
 	add	w0, w8, #12
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000c4:
 	sext.w	a0, a0
 	fmv.x.w	a2, fa0
 	neg	a3, a2
@@ -9,3 +9,4 @@ func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
+

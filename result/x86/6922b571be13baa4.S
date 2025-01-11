@@ -1,4 +1,4 @@
-func0000000000000074:                   # @func0000000000000074
+func0000000000000074:
 	leaq	64(%rdi), %rax
 	addq	$8, %rdi
 	testb	$1, %sil
@@ -7,6 +7,7 @@ func0000000000000074:                   # @func0000000000000074
 	movq	$-64, %rcx
 	cmovneq	%rax, %rcx
 	andq	%rdi, %rcx
-	cmpq	$513, %rcx                      # imm = 0x201
+	cmpq	$513, %rcx
 	setb	%al
 	retq
+

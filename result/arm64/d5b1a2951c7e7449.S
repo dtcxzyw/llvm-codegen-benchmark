@@ -1,7 +1,6 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	fcvtzu	w8, d0
-	mov	w9, #24                         // =0x18
+	mov	w9, #24
 	umaddl	x0, w8, w9, x0
 	ret
-                                        // -- End function
+

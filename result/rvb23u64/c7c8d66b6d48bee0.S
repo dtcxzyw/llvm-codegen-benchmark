@@ -1,4 +1,4 @@
-func00000000000001e4:                   # @func00000000000001e4
+func00000000000001e4:
 	srai	a1, a1, 2
 	srai	a0, a0, 4
 	li	a2, -1
@@ -7,7 +7,8 @@ func00000000000001e4:                   # @func00000000000001e4
 	xor	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	srai	a1, a1, 32
 	srai	a0, a0, 2
 	li	a2, -1
@@ -16,7 +17,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	xor	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	srai	a1, a1, 32
 	srai	a0, a0, 2
 	li	a2, -1
@@ -25,3 +27,4 @@ func00000000000001f4:                   # @func00000000000001f4
 	xor	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
+

@@ -1,105 +1,90 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000104:                   // @func0000000000000104
-// %bb.0:                               // %entry
+
+func0000000000000104:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
+
+func0000000000000108:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000184:                   // @func0000000000000184
-// %bb.0:                               // %entry
+
+func0000000000000184:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000198:                   // @func0000000000000198
-// %bb.0:                               // %entry
+
+func0000000000000198:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
+
+func0000000000000188:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, ge
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000086:                   // @func0000000000000086
-// %bb.0:                               // %entry
+
+func0000000000000086:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+
+func000000000000008a:
 	mul	w8, w1, w2
 	cmp	w0, w8
 	cset	w0, gt
 	ret
-                                        // -- End function
+

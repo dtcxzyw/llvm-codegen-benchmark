@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	testb	%dl, %dl
 	sete	%cl
 	testq	%rsi, %rsi
@@ -6,7 +6,8 @@ func000000000000002c:                   # @func000000000000002c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	testb	%dl, %dl
 	setne	%cl
 	testq	%rsi, %rsi
@@ -14,7 +15,8 @@ func000000000000018c:                   # @func000000000000018c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	cmpb	$-3, %dl
 	setb	%cl
 	testq	%rsi, %rsi
@@ -22,7 +24,8 @@ func000000000000008c:                   # @func000000000000008c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	cmpb	$-3, %dl
 	setb	%cl
 	testq	%rsi, %rsi
@@ -30,7 +33,8 @@ func0000000000000081:                   # @func0000000000000081
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	cmpb	$-3, %dl
 	setae	%cl
 	testq	%rsi, %rsi
@@ -38,7 +42,8 @@ func000000000000010c:                   # @func000000000000010c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpb	$1, %dl
 	sete	%cl
 	testq	%rsi, %rsi
@@ -46,3 +51,4 @@ func0000000000000021:                   # @func0000000000000021
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000e3:                   # @func00000000000000e3
+func00000000000000e3:
 	lui	a0, 16
 	addiw	a1, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -10,3 +10,4 @@ func00000000000000e3:                   # @func00000000000000e3
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
+

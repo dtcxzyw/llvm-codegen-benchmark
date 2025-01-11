@@ -1,4 +1,4 @@
-func00000000000001e8:                   # @func00000000000001e8
+func00000000000001e8:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	slli	a2, a1, 1
@@ -7,3 +7,4 @@ func00000000000001e8:                   # @func00000000000001e8
 	addi	a1, a1, 6
 	sltu	a0, a0, a1
 	ret
+

@@ -1,16 +1,18 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	subq	%rsi, %rdx
 	shrq	$3, %rdx
-	imull	$954437177, %edx, %eax          # imm = 0x38E38E39
+	imull	$954437177, %edx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	subq	%rsi, %rdx
 	shrq	$2, %rdx
-	imull	$-1431655765, %edx, %eax        # imm = 0xAAAAAAAB
+	imull	$-1431655765, %edx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	subq	%rsi, %rdx
 	leaq	4095(%rdx), %rax
 	testq	%rdx, %rdx
@@ -18,3 +20,4 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$12, %rax
 	addl	%edi, %eax
 	retq
+

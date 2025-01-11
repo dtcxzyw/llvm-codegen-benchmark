@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	1                               # 0x1
-	.byte	2                               # 0x2
-	.byte	4                               # 0x4
-	.byte	8                               # 0x8
-	.byte	16                              # 0x10
-	.byte	32                              # 0x20
-	.byte	64                              # 0x40
-	.byte	128                             # 0x80
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
 	.zero	1
 	.zero	1
 	.zero	1
@@ -18,38 +18,39 @@
 .LCPI0_1:
 	.zero	16,149
 .LCPI0_2:
-	.byte	1                               # 0x1
-	.byte	2                               # 0x2
-	.byte	4                               # 0x4
-	.byte	8                               # 0x8
-	.byte	16                              # 0x10
-	.byte	32                              # 0x20
-	.byte	64                              # 0x40
-	.byte	128                             # 0x80
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI0_3:
 	.zero	4,149
-func0000000000000002:                   # @func0000000000000002
-	vmovq	.LCPI0_2(%rip), %xmm1           # xmm1 = [1,2,4,8,16,32,64,128,0,0,0,0,0,0,0,0]
+func0000000000000002:
+	vmovq	.LCPI0_2(%rip), %xmm1
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	retq
+
 .LCPI1_0:
-	.byte	1                               # 0x1
-	.byte	2                               # 0x2
-	.byte	4                               # 0x4
-	.byte	8                               # 0x8
-	.byte	16                              # 0x10
-	.byte	32                              # 0x20
-	.byte	64                              # 0x40
-	.byte	128                             # 0x80
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
 	.zero	1
 	.zero	1
 	.zero	1
@@ -61,38 +62,39 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_1:
 	.zero	16,55
 .LCPI1_2:
-	.byte	1                               # 0x1
-	.byte	2                               # 0x2
-	.byte	4                               # 0x4
-	.byte	8                               # 0x8
-	.byte	16                              # 0x10
-	.byte	32                              # 0x20
-	.byte	64                              # 0x40
-	.byte	128                             # 0x80
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI1_3:
 	.zero	4,55
-func0000000000000003:                   # @func0000000000000003
-	vmovq	.LCPI1_2(%rip), %xmm1           # xmm1 = [1,2,4,8,16,32,64,128,0,0,0,0,0,0,0,0]
+func0000000000000003:
+	vmovq	.LCPI1_2(%rip), %xmm1
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
 	retq
+
 .LCPI2_0:
-	.byte	255                             # 0xff
-	.byte	254                             # 0xfe
-	.byte	252                             # 0xfc
-	.byte	248                             # 0xf8
-	.byte	240                             # 0xf0
-	.byte	224                             # 0xe0
-	.byte	192                             # 0xc0
-	.byte	128                             # 0x80
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
 	.zero	1
 	.zero	1
 	.zero	1
@@ -104,26 +106,27 @@ func0000000000000003:                   # @func0000000000000003
 .LCPI2_1:
 	.zero	16,127
 .LCPI2_2:
-	.byte	255                             # 0xff
-	.byte	254                             # 0xfe
-	.byte	252                             # 0xfc
-	.byte	248                             # 0xf8
-	.byte	240                             # 0xf0
-	.byte	224                             # 0xe0
-	.byte	192                             # 0xc0
-	.byte	128                             # 0x80
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI2_3:
 	.zero	4,127
-func0000000000000001:                   # @func0000000000000001
-	vmovq	.LCPI2_2(%rip), %xmm1           # xmm1 = [255,254,252,248,240,224,192,128,0,0,0,0,0,0,0,0]
+func0000000000000001:
+	vmovq	.LCPI2_2(%rip), %xmm1
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vpandd	.LCPI2_3(%rip){1to4}, %xmm0, %xmm0
 	retq
+

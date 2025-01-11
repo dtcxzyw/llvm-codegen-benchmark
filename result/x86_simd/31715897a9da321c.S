@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+	.long	1
+func0000000000000021:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1}
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -53,11 +53,12 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	256                             # 0x100
-func0000000000000026:                   # @func0000000000000026
+	.long	256
+func0000000000000026:
 	vptestnmd	%ymm1, %ymm1, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [256,256,256,256,256,256,256,256]
+	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1}
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -107,3 +108,4 @@ func0000000000000026:                   # @func0000000000000026
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

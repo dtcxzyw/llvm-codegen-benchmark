@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -6,7 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -14,7 +15,8 @@ func0000000000000007:                   # @func0000000000000007
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -22,7 +24,8 @@ func0000000000000006:                   # @func0000000000000006
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -30,7 +33,8 @@ func0000000000000002:                   # @func0000000000000002
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -38,7 +42,8 @@ func0000000000000003:                   # @func0000000000000003
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	%esi, %ecx
 	movq	%rdi, %rax
 	xorl	%edx, %edx
@@ -46,3 +51,4 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rdx, %rdi
 	movq	%rdi, %rax
 	retq
+

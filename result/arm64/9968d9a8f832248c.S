@@ -1,24 +1,20 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	ubfx	w0, w0, #1, #1
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	tst	w0, #0x4
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	tst	w0, #0x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	and	w8, w0, #0x7e
 	cmp	w8, #4
 	cset	w0, hi
 	ret
-                                        // -- End function
+

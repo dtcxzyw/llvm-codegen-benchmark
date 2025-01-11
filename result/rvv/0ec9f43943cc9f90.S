@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	fli.d	fa5, 1.0
 	li	a0, 22
 	vsetivli	zero, 8, e64, m4, ta, ma
@@ -8,3 +8,4 @@ func0000000000000048:                   # @func0000000000000048
 	vmand.mm	v8, v11, v10
 	vmand.mm	v0, v0, v8
 	ret
+

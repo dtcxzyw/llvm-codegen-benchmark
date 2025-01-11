@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	lui	a1, 276464
 	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa0, fa4
@@ -9,11 +9,12 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.s	fa0, fa4
 	bnez	a0, .LBB0_3
 	fmv.s	fa0, fa5
-.LBB0_3:                                # %entry
+.LBB0_3:
 	ret
+
 .LCPI1_0:
-	.word	0x3a83126f                      # float 0.00100000005
-func0000000000000004:                   # @func0000000000000004
+	.word	0x3a83126f
+func0000000000000004:
 	lui	a1, 271488
 	fmv.w.x	fa5, a1
 	lui	a1, 273536
@@ -24,9 +25,10 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_4
 	fmv.s	fa0, fa5
-.LBB1_3:                                # %entry
+.LBB1_3:
 	ret
 .LBB1_4:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa0, %lo(.LCPI1_0)(a0)
 	ret
+

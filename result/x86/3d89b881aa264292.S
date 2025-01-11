@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
@@ -7,9 +7,10 @@ func000000000000008a:                   # @func000000000000008a
 	andb	%sil, %al
 	andb	%cl, %al
 	retq
+
 .LCPI1_0:
-	.long	0x7f800000                      # float +Inf
-func00000000000000ca:                   # @func00000000000000ca
+	.long	0x7f800000
+func00000000000000ca:
 	vucomiss	.LCPI1_0(%rip), %xmm0
 	setne	%cl
 	testl	%edi, %edi
@@ -17,3 +18,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	andb	%sil, %al
 	andb	%cl, %al
 	retq
+

@@ -1,21 +1,24 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	andi	a2, a2, 32
 	beqz	a2, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	addiw	a0, a0, -1
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andi	a2, a2, 3
 	beqz	a2, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	addiw	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a2, a2, 256
 	beqz	a2, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	addiw	a0, a0, 1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	addl	$-13, %edx
 	cmpl	$2, %edx
 	setb	%cl
@@ -7,8 +7,9 @@ func0000000000000088:                   # @func0000000000000088
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000481:                   # @func0000000000000481
-	addl	$-1919, %edx                    # imm = 0xF881
+
+func0000000000000481:
+	addl	$-1919, %edx
 	cmpl	$16, %edx
 	setb	%cl
 	subl	%esi, %edi
@@ -16,10 +17,12 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	cmpl	$1, %edx
 	setne	%cl
 	cmpl	%esi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
+

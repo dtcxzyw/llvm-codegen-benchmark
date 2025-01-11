@@ -1,4 +1,4 @@
-func00000000000002e6:                   # @func00000000000002e6
+func00000000000002e6:
 	cmpq	$2, %rdx
 	movl	$1, %eax
 	cmovgeq	%rdx, %rax
@@ -7,3 +7,4 @@ func00000000000002e6:                   # @func00000000000002e6
 	cmpq	%rsi, %rax
 	setl	%al
 	retq
+

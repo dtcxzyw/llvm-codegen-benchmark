@@ -1,4 +1,4 @@
-func00000000000000c9:                   # @func00000000000000c9
+func00000000000000c9:
 	sext.w	a1, a1
 	srliw	a2, a0, 7
 	addi	a2, a2, 256
@@ -8,3 +8,4 @@ func00000000000000c9:                   # @func00000000000000c9
 	or	a0, a0, a2
 	sext.w	a0, a0
 	ret
+

@@ -1,6 +1,4 @@
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func0000000000000044:
 	sxtw	x8, w2
 	sub	x9, x0, x1
 	sub	x8, x8, x9
@@ -8,4 +6,4 @@ func0000000000000044:                   // @func0000000000000044
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
+

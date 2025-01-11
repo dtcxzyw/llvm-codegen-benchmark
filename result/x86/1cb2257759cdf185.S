@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -6,7 +6,8 @@ func0000000000000010:                   # @func0000000000000010
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addq	%rdx, %rax
@@ -14,7 +15,8 @@ func0000000000000018:                   # @func0000000000000018
 	leaq	(%rdi,%rsi,8), %rcx
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -22,7 +24,8 @@ func000000000000001b:                   # @func000000000000001b
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addq	%rdx, %rax
@@ -30,7 +33,8 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	(%rdi,%rsi,8), %rcx
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -38,7 +42,8 @@ func000000000000001f:                   # @func000000000000001f
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -46,7 +51,8 @@ func0000000000000013:                   # @func0000000000000013
 	andq	$-4, %rax
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -54,7 +60,8 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rdi
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax
@@ -62,3 +69,4 @@ func000000000000000c:                   # @func000000000000000c
 	leaq	(%rdi,%rsi,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
+

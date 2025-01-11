@@ -1,57 +1,49 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	sub	w8, w2, #1
 	cmp	w1, #1
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	add	w8, w2, #44
-	cmp	w1, #8, lsl #12                 // =32768
+	cmp	w1, #8, lsl #12
 	csel	w0, w8, w0, lt
 	ret
-                                        // -- End function
-func0000000000000082:                   // @func0000000000000082
-// %bb.0:                               // %entry
+
+func0000000000000082:
 	cmp	w1, #1
 	csinc	w0, w0, w2, ne
 	ret
-                                        // -- End function
-func00000000000000c3:                   // @func00000000000000c3
-// %bb.0:                               // %entry
+
+func00000000000000c3:
 	cmp	w1, #1
 	csinc	w0, w0, w2, ne
 	ret
-                                        // -- End function
-func0000000000000094:                   // @func0000000000000094
-// %bb.0:                               // %entry
-	mov	w8, #2147483647                 // =0x7fffffff
+
+func0000000000000094:
+	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w2, w8
 	csel	w0, w0, w8, lt
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
-	mov	w8, #2147483647                 // =0x7fffffff
+
+func000000000000008c:
+	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w2, w8
 	csel	w0, w8, w0, lt
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	sub	w8, w2, #1
 	cmp	w1, #0
 	csel	w0, w0, w8, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	lsr	w8, w1, #27
 	add	w9, w2, #15
 	cmp	w8, #0
 	csel	w0, w9, w0, eq
 	ret
-                                        // -- End function
+

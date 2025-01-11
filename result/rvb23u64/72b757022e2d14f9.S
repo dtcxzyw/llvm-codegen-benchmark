@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	xor	a1, a1, a0
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	slt	a1, a0, a1
@@ -16,17 +17,20 @@ func0000000000000161:                   # @func0000000000000161
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	slt	a1, a1, a0
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000106:                   # @func0000000000000106
+
+func0000000000000106:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	sltu	a1, a1, a0
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
@@ -22,11 +22,12 @@ func0000000000000007:                   # @func0000000000000007
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	47                              # 0x2f
-func0000000000000002:                   # @func0000000000000002
+	.long	47
+func0000000000000002:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm1, %eax
@@ -49,11 +50,12 @@ func0000000000000002:                   # @func0000000000000002
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	2                               # 0x2
-func0000000000000001:                   # @func0000000000000001
+	.long	2
+func0000000000000001:
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm1, %eax
@@ -76,9 +78,10 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
@@ -102,9 +105,10 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
@@ -128,5 +132,6 @@ func0000000000000005:                   # @func0000000000000005
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

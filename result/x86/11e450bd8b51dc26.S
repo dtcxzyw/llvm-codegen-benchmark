@@ -1,4 +1,4 @@
-func0000000000000842:                   # @func0000000000000842
+func0000000000000842:
 	leal	2(%rsi), %eax
 	cmpl	%eax, %edi
 	sete	%cl
@@ -6,7 +6,8 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	leal	-1(%rsi), %eax
 	cmpl	%eax, %edi
 	sete	%cl
@@ -14,3 +15,4 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
+

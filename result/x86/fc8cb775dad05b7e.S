@@ -1,13 +1,14 @@
-func0000000000000e81:                   # @func0000000000000e81
+func0000000000000e81:
 	incl	%edx
 	cmpl	%esi, %edx
 	setb	%cl
 	movzwl	%di, %eax
-	cmpl	$55296, %eax                    # imm = 0xD800
+	cmpl	$55296, %eax
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000e8c:                   # @func0000000000000e8c
+
+func0000000000000e8c:
 	addl	$4, %edx
 	cmpl	%esi, %edx
 	setb	%cl
@@ -15,7 +16,8 @@ func0000000000000e8c:                   # @func0000000000000e8c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000f04:                   # @func0000000000000f04
+
+func0000000000000f04:
 	addl	$48, %edx
 	cmpl	%esi, %edx
 	seta	%cl
@@ -23,16 +25,18 @@ func0000000000000f04:                   # @func0000000000000f04
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000881:                   # @func0000000000000881
+
+func0000000000000881:
 	incl	%edx
 	cmpl	%esi, %edx
 	setb	%cl
 	movzwl	%di, %eax
-	cmpl	$538, %eax                      # imm = 0x21A
+	cmpl	$538, %eax
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000544:                   # @func0000000000000544
+
+func0000000000000544:
 	addl	$48, %edx
 	cmpl	%esi, %edx
 	setg	%cl
@@ -40,7 +44,8 @@ func0000000000000544:                   # @func0000000000000544
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000548:                   # @func0000000000000548
+
+func0000000000000548:
 	addl	$87, %edx
 	cmpl	%esi, %edx
 	setg	%cl
@@ -48,7 +53,8 @@ func0000000000000548:                   # @func0000000000000548
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000054c:                   # @func000000000000054c
+
+func000000000000054c:
 	decl	%edx
 	cmpl	%esi, %edx
 	setg	%cl
@@ -56,7 +62,8 @@ func000000000000054c:                   # @func000000000000054c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	addl	$4, %edx
 	cmpl	%esi, %edx
 	seta	%cl
@@ -64,11 +71,13 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004cc:                   # @func00000000000004cc
-	addl	$32767, %edx                    # imm = 0x7FFF
+
+func00000000000004cc:
+	addl	$32767, %edx
 	cmpl	%esi, %edx
 	setl	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
+

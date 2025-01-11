@@ -1,4 +1,4 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -12
 	li	a0, 12
@@ -15,7 +15,8 @@ func000000000000002f:                   # @func000000000000002f
 	li	a0, -12
 	vsub.vx	v8, v8, a0
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -12
 	li	a0, 12
@@ -32,9 +33,10 @@ func000000000000002d:                   # @func000000000000002d
 	li	a0, -12
 	vsub.vx	v8, v8, a0
 	ret
+
 .LCPI2_0:
-	.quad	-7515340178177965473            # 0x97b425ed097b425f
-func000000000000003f:                   # @func000000000000003f
+	.quad	-7515340178177965473
+func000000000000003f:
 	li	a0, -216
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
@@ -49,9 +51,10 @@ func000000000000003f:                   # @func000000000000003f
 	vmul.vx	v8, v8, a2
 	vsub.vx	v8, v8, a0
 	ret
+
 .LCPI3_0:
-	.quad	-7515340178177965473            # 0x97b425ed097b425f
-func000000000000003d:                   # @func000000000000003d
+	.quad	-7515340178177965473
+func000000000000003d:
 	li	a0, -216
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
@@ -66,3 +69,4 @@ func000000000000003d:                   # @func000000000000003d
 	vmul.vx	v8, v8, a2
 	vsub.vx	v8, v8, a0
 	ret
+

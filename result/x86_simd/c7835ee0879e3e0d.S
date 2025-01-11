@@ -1,21 +1,23 @@
 .LCPI0_0:
-	.quad	-3                              # 0xfffffffffffffffd
+	.quad	-3
 .LCPI0_1:
-	.quad	2                               # 0x2
-func0000000000000003:                   # @func0000000000000003
+	.quad	2
+func0000000000000003:
 	vpcmpeqq	%ymm2, %ymm1, %k1
 	vandpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.quad	33554432                        # 0x2000000
+	.quad	33554432
 .LCPI1_1:
-	.quad	33556480                        # 0x2000800
+	.quad	33556480
 .LCPI1_2:
-	.quad	-1040187393                     # 0xffffffffc1ffffff
-func0000000000000002:                   # @func0000000000000002
+	.quad	-1040187393
+func0000000000000002:
 	vpcmpeqq	%ymm2, %ymm1, %k1
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [33554432,33554432,33554432,33554432]
-	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [33556480,33556480,33556480,33556480]
-	vpternlogq	$236, .LCPI1_2(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm1
+	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1}
+	vpternlogq	$236, .LCPI1_2(%rip){1to4}, %ymm1, %ymm0
 	retq
+

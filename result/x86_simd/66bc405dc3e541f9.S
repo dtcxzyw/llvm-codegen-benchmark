@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.long	4008636143                      # 0xeeeeeeef
+	.long	4008636143
 .LCPI0_1:
-	.long	143165576                       # 0x8888888
+	.long	143165576
 .LCPI0_2:
-	.long	71582788                        # 0x4444444
-func0000000000000001:                   # @func0000000000000001
+	.long	71582788
+func0000000000000001:
 	vpabsd	%ymm0, %ymm0
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
@@ -13,3 +13,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	addiw	a2, a2, 1365
@@ -10,7 +10,8 @@ func000000000000001e:                   # @func000000000000001e
 	sh1add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	addiw	a2, a2, 1365
@@ -22,7 +23,8 @@ func000000000000001f:                   # @func000000000000001f
 	sh1add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	srli	a1, a1, 2
 	lui	a2, 349525
 	addiw	a2, a2, 1365
@@ -34,3 +36,4 @@ func000000000000001c:                   # @func000000000000001c
 	sh1add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
+

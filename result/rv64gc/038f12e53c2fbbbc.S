@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	andi	a2, a2, 255
 	andi	a1, a1, 1
 	slli	a2, a2, 16
@@ -6,7 +6,8 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a1, a1, 1
 	andi	a2, a2, 255
 	slli	a2, a2, 16
@@ -16,13 +17,15 @@ func000000000000000f:                   # @func000000000000000f
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slliw	a2, a2, 24
 	or	a0, a0, a2
 	slliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andi	a1, a1, 1
 	andi	a2, a2, 63
 	slli	a2, a2, 19
@@ -37,7 +40,8 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	andi	a1, a1, 1
 	andi	a2, a2, 223
 	slli	a2, a2, 5
@@ -52,7 +56,8 @@ func000000000000001e:                   # @func000000000000001e
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	andi	a1, a1, 1
 	slliw	a2, a2, 24
 	or	a0, a0, a2
@@ -60,3 +65,4 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 255
 	or	a0, a0, a1
 	ret
+

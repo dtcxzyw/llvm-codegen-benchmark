@@ -1,9 +1,10 @@
 .LCPI0_0:
-	.long	14                              # 0xe
-func000000000000003f:                   # @func000000000000003f
+	.long	14
+func000000000000003f:
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [14,14,14,14]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1
 	vpmulld	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

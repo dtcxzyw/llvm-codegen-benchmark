@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmsltu.vv	v13, v8, v10
 	vmand.mm	v0, v12, v13
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v0, v12, 0
@@ -15,7 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vvm	v10, v12, v10, v0
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v0, v12, 0
@@ -24,7 +26,8 @@ func0000000000000048:                   # @func0000000000000048
 	vmerge.vvm	v10, v12, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v0, v12, 0
@@ -33,7 +36,8 @@ func0000000000000054:                   # @func0000000000000054
 	vmerge.vvm	v10, v12, v10, v0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v0, v12, 0
@@ -42,7 +46,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmerge.vvm	v10, v12, v10, v0
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v0, v12, 0
@@ -51,7 +56,8 @@ func0000000000000009:                   # @func0000000000000009
 	vmerge.vvm	v10, v12, v10, v0
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v12, v12, 1
 	lui	a0, 29
@@ -62,3 +68,4 @@ func0000000000000018:                   # @func0000000000000018
 	vmerge.vvm	v10, v12, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
+

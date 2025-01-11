@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	2147483647                      # 0x7fffffff
-func00000000000004ea:                   # @func00000000000004ea
+	.long	2147483647
+func00000000000004ea:
 	vpsrlq	$32, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -8,3 +8,4 @@ func00000000000004ea:                   # @func00000000000004ea
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

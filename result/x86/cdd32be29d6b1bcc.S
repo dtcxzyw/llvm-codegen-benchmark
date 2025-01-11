@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rcx
 	leaq	16(%rcx,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -15,17 +16,20 @@ func000000000000000a:                   # @func000000000000000a
 	movslq	%esi, %rcx
 	leaq	-32(%rcx,%rax), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andl	$1, %edx
 	leaq	(%rdx,%rdx,2), %rcx
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andl	$1, %edx
 	leaq	(%rdx,%rdx,2), %rcx
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
+

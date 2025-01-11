@@ -1,20 +1,17 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	bic	w8, w1, w1, asr #31
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	cmp	w1, #1
 	csinc	w8, w1, wzr, gt
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	cmp	w1, #0
 	csinv	w8, w1, wzr, ge
 	add	x0, x0, x8
 	ret
-                                        // -- End function
+

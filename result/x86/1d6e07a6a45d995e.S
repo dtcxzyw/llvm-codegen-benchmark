@@ -1,4 +1,4 @@
-func0000000000000842:                   # @func0000000000000842
+func0000000000000842:
 	xorl	$1, %esi
 	orl	%edi, %esi
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
+

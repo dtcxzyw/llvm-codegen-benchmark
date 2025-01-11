@@ -1,4 +1,4 @@
-func00000000000000fb:                   # @func00000000000000fb
+func00000000000000fb:
 	srliw	a3, a2, 1
 	lui	a4, 349525
 	or	a2, a2, a3
@@ -37,3 +37,4 @@ func00000000000000fb:                   # @func00000000000000fb
 	add	a0, a0, a1
 	add	a0, a0, a4
 	ret
+

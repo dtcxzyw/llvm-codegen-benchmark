@@ -1,5 +1,6 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	movzwl	%di, %eax
 	shrl	$12, %eax
 	incl	%eax
 	retq
+

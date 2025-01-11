@@ -1,95 +1,114 @@
-func0000000000000077:                   # @func0000000000000077
+func0000000000000077:
 	shrq	%rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	shrq	$63, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	shrq	$29, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	shrq	$2, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	shrq	$63, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	shrq	$63, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	shrq	$48, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+
+func0000000000000045:
 	shrq	$3, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	shrq	$3, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func000000000000007c:                   # @func000000000000007c
+
+func000000000000007c:
 	shrq	$39, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	shrq	$2, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	shrq	$2, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	shrq	$32, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	shrq	$16, %rdx
 	leal	(%rdi,%rsi), %eax
 	addl	%edx, %eax
 	retq
+

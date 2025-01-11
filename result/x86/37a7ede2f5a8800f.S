@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	movq	%rdx, %rax
 	shrl	$13, %eax
 	andl	%esi, %eax
@@ -6,8 +6,9 @@ func0000000000000019:                   # @func0000000000000019
 	shll	$13, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movabsq	$34293153759, %rcx              # imm = 0x7FC07FFDF
+
+func0000000000000003:
+	movabsq	$34293153759, %rcx
 	leaq	66584609(%rcx), %rax
 	xorl	%r8d, %r8d
 	testb	$1, %sil
@@ -16,3 +17,4 @@ func0000000000000003:                   # @func0000000000000003
 	cmovneq	%r8, %rax
 	orq	%rdi, %rax
 	retq
+

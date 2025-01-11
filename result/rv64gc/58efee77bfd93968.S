@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	sraiw	a1, a1, 13
 	lui	a2, 335544
 	addiw	a2, a2, 1311
@@ -11,5 +11,6 @@ func000000000000001b:                   # @func000000000000001b
 	subw	a1, a1, a2
 	bltz	a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

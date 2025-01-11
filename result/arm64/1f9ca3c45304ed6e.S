@@ -1,36 +1,30 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	tst	x1, x2
 	cinc	x0, x0, eq
 	ret
-                                        // -- End function
-func0000000000000062:                   // @func0000000000000062
-// %bb.0:                               // %entry
+
+func0000000000000062:
 	tst	x1, x2
 	cinc	x0, x0, ne
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	tst	x1, x2
 	cinc	x0, x0, ne
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	tst	x1, x2
 	cinc	x0, x0, ne
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	tst	x1, x2
 	cinc	x0, x0, eq
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	tst	x1, x2
 	cinc	x0, x0, eq
 	ret
-                                        // -- End function
+

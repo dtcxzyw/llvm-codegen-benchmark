@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	li	a4, 1000
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
@@ -9,7 +9,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	lui	a4, 244141
 	addiw	a4, a4, -1536
 	mul	a3, a3, a4
@@ -22,7 +23,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	add	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	lui	a4, 477
 	addiw	a4, a4, -667
 	slli	a4, a4, 11
@@ -36,3 +38,4 @@ func00000000000001f4:                   # @func00000000000001f4
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	shrl	$13, %edx
 	andl	$127, %edx
 	xorl	%eax, %eax
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	shrl	$2, %edx
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
@@ -16,3 +17,4 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%ecx, %edi
 	setg	%al
 	retq
+

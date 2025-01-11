@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x400921fb60000000              # double 3.1415927410125732
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x400921fb60000000
+func0000000000000000:
 	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
@@ -12,3 +12,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vf	v8, v16, fa4
 	ret
+

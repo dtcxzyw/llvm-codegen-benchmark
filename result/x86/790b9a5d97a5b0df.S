@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	leaq	30(%rdx), %rax
 	orq	$15, %rdx
 	testq	%rdx, %rdx
@@ -8,7 +8,8 @@ func0000000000000020:                   # @func0000000000000020
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	leaq	30(%rdx), %rax
 	orq	$15, %rdx
 	testq	%rdx, %rdx
@@ -18,3 +19,4 @@ func000000000000002a:                   # @func000000000000002a
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+

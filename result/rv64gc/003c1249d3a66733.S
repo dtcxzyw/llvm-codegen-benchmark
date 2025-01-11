@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a1, a1, 36
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -6,37 +6,43 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a1, -360
 	add	a0, a0, a1
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	slli	a1, a1, 34
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	slli	a1, a1, 34
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func000000000000003a:                   # @func000000000000003a
+
+func000000000000003a:
 	slli	a1, a1, 56
 	srli	a1, a1, 55
 	add	a0, a0, a1
 	addi	a0, a0, 38
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	srliw	a1, a1, 2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, -448
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	slli	a1, a1, 2
 	andi	a1, a1, -16
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	slli	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 33
@@ -46,20 +52,23 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	srli	a1, a1, 2
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 113
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	srliw	a1, a1, 2
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	slli	a1, a1, 4
 	li	a2, 1
 	slli	a2, a2, 35
@@ -68,9 +77,11 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	slli	a1, a1, 33
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	addi	a0, a0, 14
 	ret
+

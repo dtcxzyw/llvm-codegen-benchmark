@@ -1,4 +1,4 @@
-func000000000000054a:                   # @func000000000000054a
+func000000000000054a:
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setg	%cl
@@ -6,3 +6,4 @@ func000000000000054a:                   # @func000000000000054a
 	setge	%al
 	andb	%cl, %al
 	retq
+

@@ -1,12 +1,13 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	slli	a1, a1, 61
 	srli	a1, a1, 63
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000001:                   # @func0000000000000001
+	.quad	3074457345618258603
+func0000000000000001:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mulh	a1, a1, a2
@@ -17,3 +18,4 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+

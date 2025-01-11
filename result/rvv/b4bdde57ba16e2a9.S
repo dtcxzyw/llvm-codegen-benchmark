@@ -1,4 +1,4 @@
-func0000000000000080:                   # @func0000000000000080
+func0000000000000080:
 	lui	a0, 272
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 18
@@ -11,7 +11,8 @@ func0000000000000080:                   # @func0000000000000080
 	vor.vi	v8, v10, -16
 	vmerge.vim	v8, v8, -16, v0
 	ret
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	lui	a0, 272
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 12
@@ -25,7 +26,8 @@ func0000000000000085:                   # @func0000000000000085
 	li	a0, -17
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func0000000000000087:                   # @func0000000000000087
+
+func0000000000000087:
 	lui	a0, 272
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 18
@@ -38,7 +40,8 @@ func0000000000000087:                   # @func0000000000000087
 	vor.vi	v8, v10, -16
 	vmerge.vim	v8, v8, -16, v0
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	lui	a0, 272
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 12
@@ -52,3 +55,4 @@ func0000000000000081:                   # @func0000000000000081
 	li	a0, -17
 	vmerge.vxm	v8, v8, a0, v0
 	ret
+

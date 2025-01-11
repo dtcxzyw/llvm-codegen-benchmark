@@ -1,4 +1,4 @@
-func0000000000000053:                   # @func0000000000000053
+func0000000000000053:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	sete	%al
@@ -8,3 +8,4 @@ func0000000000000053:                   # @func0000000000000053
 	leaq	(%rcx,%rax,8), %rax
 	addq	%rdi, %rax
 	retq
+

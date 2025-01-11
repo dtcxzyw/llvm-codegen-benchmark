@@ -1,4 +1,4 @@
-func0000000000000481:                   # @func0000000000000481
+func0000000000000481:
 	andl	$31, %esi
 	addl	$-13, %esi
 	cmpl	$4, %esi
@@ -7,7 +7,8 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	andl	$7, %esi
 	addl	$-5, %esi
 	cmpl	$-4, %esi
@@ -16,16 +17,18 @@ func0000000000000484:                   # @func0000000000000484
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000048c:                   # @func000000000000048c
+
+func000000000000048c:
 	andl	$7, %esi
 	addl	$-5, %esi
 	cmpl	$-4, %esi
 	setb	%cl
-	cmpl	$640, %edi                      # imm = 0x280
+	cmpl	$640, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000048a:                   # @func000000000000048a
+
+func000000000000048a:
 	movzbl	%sil, %eax
 	decl	%eax
 	cmpl	$12, %eax
@@ -34,3 +37,4 @@ func000000000000048a:                   # @func000000000000048a
 	setns	%al
 	andb	%cl, %al
 	retq
+

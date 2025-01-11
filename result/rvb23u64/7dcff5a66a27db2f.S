@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	negw	a1, a1
 	li	a2, -1
 	slli	a0, a0, 63
@@ -6,7 +6,8 @@ func000000000000000d:                   # @func000000000000000d
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andi	a0, a0, 1
 	li	a2, 32
 	subw	a2, a2, a1
@@ -16,7 +17,8 @@ func000000000000000e:                   # @func000000000000000e
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a0, a0, 1
 	li	a2, 32
 	subw	a2, a2, a1
@@ -26,3 +28,4 @@ func000000000000000f:                   # @func000000000000000f
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

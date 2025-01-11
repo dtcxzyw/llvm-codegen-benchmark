@@ -1,14 +1,12 @@
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+func000000000000003f:
+	mov	w8, #12
 	mul	x8, x0, x8
 	add	x0, x8, w1, uxtw #2
 	ret
-                                        // -- End function
-func000000000000005d:                   // @func000000000000005d
-// %bb.0:                               // %entry
-	mov	w8, #160                        // =0xa0
+
+func000000000000005d:
+	mov	w8, #160
 	mul	x8, x0, x8
 	add	x0, x8, w1, uxtw #3
 	ret
-                                        // -- End function
+

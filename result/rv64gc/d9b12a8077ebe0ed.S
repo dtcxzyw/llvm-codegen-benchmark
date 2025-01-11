@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	li	a3, -1
 	sllw	a2, a3, a2
 	not	a2, a2
@@ -7,7 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a3, -1
 	sllw	a2, a3, a2
 	not	a2, a2
@@ -16,3 +17,4 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+

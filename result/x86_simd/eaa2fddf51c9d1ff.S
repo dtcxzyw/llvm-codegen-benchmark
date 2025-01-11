@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vpminsq	%ymm2, %ymm1, %ymm1
@@ -7,9 +7,10 @@ func0000000000000061:                   # @func0000000000000061
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	2                               # 0x2
-func0000000000000361:                   # @func0000000000000361
+	.quad	2
+func0000000000000361:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -18,7 +19,8 @@ func0000000000000361:                   # @func0000000000000361
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
@@ -27,7 +29,8 @@ func0000000000000161:                   # @func0000000000000161
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vpminsq	%ymm2, %ymm1, %ymm1
@@ -36,9 +39,10 @@ func0000000000000141:                   # @func0000000000000141
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	16                              # 0x10
-func0000000000000126:                   # @func0000000000000126
+	.quad	16
+func0000000000000126:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -47,9 +51,10 @@ func0000000000000126:                   # @func0000000000000126
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	32                              # 0x20
-func0000000000000366:                   # @func0000000000000366
+	.quad	32
+func0000000000000366:
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -58,3 +63,4 @@ func0000000000000366:                   # @func0000000000000366
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

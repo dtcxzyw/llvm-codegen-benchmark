@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	lui	a0, 1
 	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -6,9 +6,11 @@ func0000000000000018:                   # @func0000000000000018
 	vrsub.vx	v10, v10, a0
 	vssubu.vv	v8, v8, v10
 	ret
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 7
 	vrsub.vi	v10, v10, 8
 	vssubu.vv	v8, v8, v10
 	ret
+

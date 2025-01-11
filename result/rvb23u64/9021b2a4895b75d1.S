@@ -1,4 +1,4 @@
-func00000000000000bc:                   # @func00000000000000bc
+func00000000000000bc:
 	srli	a2, a2, 2
 	lui	a3, 349525
 	addiw	a3, a3, 1365
@@ -9,3 +9,4 @@ func00000000000000bc:                   # @func00000000000000bc
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
+

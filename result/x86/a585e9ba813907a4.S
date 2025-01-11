@@ -1,11 +1,12 @@
-func00000000000000ff:                   # @func00000000000000ff
+func00000000000000ff:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	imull	$85, %eax, %eax
 	addl	%edi, %eax
 	imull	$85, %eax, %eax
 	retq
-func0000000000000155:                   # @func0000000000000155
+
+func0000000000000155:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,4), %eax
@@ -13,7 +14,8 @@ func0000000000000155:                   # @func0000000000000155
 	addl	%eax, %eax
 	leal	(%rax,%rax,4), %eax
 	retq
-func00000000000001ff:                   # @func00000000000001ff
+
+func00000000000001ff:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,4), %eax
@@ -21,7 +23,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	addl	%eax, %eax
 	leal	(%rax,%rax,4), %eax
 	retq
-func00000000000001fe:                   # @func00000000000001fe
+
+func00000000000001fe:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	leal	(%rax,%rax,4), %eax
@@ -29,10 +32,12 @@ func00000000000001fe:                   # @func00000000000001fe
 	addl	%eax, %eax
 	leal	(%rax,%rax,4), %eax
 	retq
-func00000000000001fc:                   # @func00000000000001fc
+
+func00000000000001fc:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	imull	$60, %eax, %eax
 	addl	%edi, %eax
-	imull	$1000000, %eax, %eax            # imm = 0xF4240
+	imull	$1000000, %eax, %eax
 	retq
+

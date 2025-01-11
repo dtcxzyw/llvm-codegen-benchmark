@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	slli	a2, a2, 32
 	slli	a3, a1, 2
 	slli	a1, a1, 4
@@ -9,7 +9,8 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -18,7 +19,8 @@ func000000000000003f:                   # @func000000000000003f
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000073:                   # @func0000000000000073
+
+func0000000000000073:
 	sext.w	a2, a2
 	slli	a2, a2, 1
 	add	a0, a0, a2
@@ -26,7 +28,8 @@ func0000000000000073:                   # @func0000000000000073
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000007c:                   # @func000000000000007c
+
+func000000000000007c:
 	sext.w	a2, a2
 	slli	a2, a2, 1
 	add	a0, a0, a2
@@ -35,7 +38,8 @@ func000000000000007c:                   # @func000000000000007c
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	sext.w	a2, a2
 	slli	a2, a2, 1
 	add	a0, a0, a2
@@ -44,7 +48,8 @@ func0000000000000070:                   # @func0000000000000070
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	sext.w	a2, a2
 	slli	a2, a2, 2
 	add	a0, a0, a2
@@ -52,14 +57,16 @@ func000000000000007f:                   # @func000000000000007f
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	slli	a2, a2, 32
 	slli	a1, a1, 2
 	srli	a2, a2, 32
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	slli	a2, a2, 32
 	srli	a2, a2, 30
 	add	a0, a0, a2
@@ -68,7 +75,8 @@ func000000000000002f:                   # @func000000000000002f
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	sext.w	a2, a2
 	slli	a2, a2, 2
 	add	a0, a0, a2
@@ -77,7 +85,8 @@ func0000000000000040:                   # @func0000000000000040
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	slli	a2, a2, 32
 	li	a3, 40
 	srli	a2, a2, 32
@@ -86,7 +95,8 @@ func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	li	a3, 160
 	mul	a1, a1, a3
 	li	a3, 5
@@ -96,7 +106,8 @@ func000000000000003c:                   # @func000000000000003c
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a2, a2, 32
 	srli	a2, a2, 30
 	add	a0, a0, a2
@@ -105,7 +116,8 @@ func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	li	a3, -832
 	mul	a1, a1, a3
 	li	a3, 13
@@ -115,7 +127,8 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	sext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 112
@@ -124,7 +137,8 @@ func0000000000000050:                   # @func0000000000000050
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -132,7 +146,8 @@ func0000000000000033:                   # @func0000000000000033
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	slli	a2, a2, 32
 	srli	a2, a2, 29
 	add	a0, a0, a2
@@ -141,3 +156,4 @@ func0000000000000030:                   # @func0000000000000030
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

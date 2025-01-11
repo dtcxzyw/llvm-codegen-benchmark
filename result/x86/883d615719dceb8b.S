@@ -1,11 +1,12 @@
-func0000000000000630:                   # @func0000000000000630
-	imull	$-286331153, %esi, %eax         # imm = 0xEEEEEEEF
-	addl	$143165576, %eax                # imm = 0x8888888
+func0000000000000630:
+	imull	$-286331153, %esi, %eax
+	addl	$143165576, %eax
 	rorxl	$2, %eax, %eax
-	cmpl	$71582789, %eax                 # imm = 0x4444445
+	cmpl	$71582789, %eax
 	setae	%al
 	cmpb	$5, %dil
 	setne	%cl
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	retq
+

@@ -1,120 +1,105 @@
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+func000000000000000d:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, pl
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+
+func000000000000001b:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, mi
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, le
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, ge
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, ge
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+
+func000000000000001a:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	fmul	s2, s2, s2
 	fmadd	s0, s0, s0, s1
 	fcmp	s0, s2
 	cset	w0, hi
 	ret
-                                        // -- End function
+

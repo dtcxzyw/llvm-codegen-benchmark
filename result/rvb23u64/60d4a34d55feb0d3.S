@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.word	0x40c90fdb                      # float 6.28318548
+	.word	0x40c90fdb
 .LCPI0_1:
-	.word	0xc0c90fdb                      # float -6.28318548
-func0000000000000000:                   # @func0000000000000000
+	.word	0xc0c90fdb
+func0000000000000000:
 	andi	a1, a1, 1
 	andi	a0, a0, 1
 	bnez	a1, .LBB0_3
 	bnez	a0, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
 .LBB0_3:
 	lui	a1, %hi(.LCPI0_0)
@@ -19,3 +19,4 @@ func0000000000000000:                   # @func0000000000000000
 	flw	fa5, %lo(.LCPI0_1)(a0)
 	fadd.s	fa0, fa0, fa5
 	ret
+

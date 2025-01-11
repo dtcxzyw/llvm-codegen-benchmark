@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	andi	a2, a2, 255
 	or	a0, a0, a1
 	lui	a1, 65535
@@ -7,7 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 12
 	or	a0, a0, a1
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	andi	a2, a2, 255
 	or	a0, a0, a1
 	lui	a1, 4096
@@ -17,10 +18,12 @@ func000000000000003f:                   # @func000000000000003f
 	bseti	a1, a1, 56
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	andi	a2, a2, 253
 	slli	a2, a2, 44
 	or	a0, a0, a1
 	or	a0, a0, a2
 	bseti	a0, a0, 45
 	ret
+

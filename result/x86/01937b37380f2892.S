@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	testq	%rdx, %rdx
 	setne	%cl
 	cmpq	$2, %rsi
@@ -6,15 +6,17 @@ func0000000000000302:                   # @func0000000000000302
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	cmpq	$1048544, %rdx                  # imm = 0xFFFE0
+
+func0000000000000048:
+	cmpq	$1048544, %rdx
 	sete	%cl
 	cmpq	$32, %rsi
 	setb	%al
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	cmpq	$12, %rdx
 	sete	%cl
 	cmpq	$132, %rsi
@@ -22,3 +24,4 @@ func0000000000000042:                   # @func0000000000000042
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
+

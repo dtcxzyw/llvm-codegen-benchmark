@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovqd	%ymm2, %xmm2
 	vptestmd	%xmm2, %xmm2, %k1
@@ -8,22 +8,24 @@ func000000000000018c:                   # @func000000000000018c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	256                             # 0x100
-func0000000000000021:                   # @func0000000000000021
+	.long	256
+func0000000000000021:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovqd	%ymm2, %xmm2
-	vpbroadcastd	.LCPI1_0(%rip), %xmm4   # xmm4 = [256,256,256,256]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm4
 	vpcmpeqd	%xmm4, %xmm1, %k1
 	vpcmpeqd	%xmm4, %xmm2, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	2147483648                      # 0x80000000
-func000000000000014a:                   # @func000000000000014a
+	.quad	2147483648
+func000000000000014a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
@@ -32,9 +34,10 @@ func000000000000014a:                   # @func000000000000014a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	5                               # 0x5
-func0000000000000024:                   # @func0000000000000024
+	.long	5
+func0000000000000024:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm0
@@ -43,27 +46,30 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	2                               # 0x2
-func000000000000094a:                   # @func000000000000094a
+	.long	2
+func000000000000094a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm0
-	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [2,2,2,2]
+	vpbroadcastd	.LCPI4_0(%rip), %xmm2
 	vpcmpgtd	%xmm2, %xmm1, %k1 {%k1}
 	vpcmpgtd	%xmm2, %xmm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.long	128                             # 0x80
-func00000000000008c6:                   # @func00000000000008c6
+	.long	128
+func00000000000008c6:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm0
-	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [128,128,128,128]
+	vpbroadcastd	.LCPI5_0(%rip), %xmm2
 	vpcmpgtd	%xmm1, %xmm2, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

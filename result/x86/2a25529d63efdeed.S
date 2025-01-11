@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	$-17973513, %ecx                # imm = 0xFEEDBEF7
+func0000000000000000:
+	movl	$-17973513, %ecx
 	subl	%edx, %ecx
 	xorl	%edi, %ecx
 	movl	%ecx, %eax
@@ -7,3 +7,4 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%esi, %eax
 	addl	%ecx, %eax
 	retq
+

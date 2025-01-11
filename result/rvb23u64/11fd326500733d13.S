@@ -1,4 +1,4 @@
-func0000000000000175:                   # @func0000000000000175
+func0000000000000175:
 	sext.w	a2, a2
 	lui	a3, 1048332
 	addiw	a3, a3, 1619
@@ -9,7 +9,8 @@ func0000000000000175:                   # @func0000000000000175
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000001dd:                   # @func00000000000001dd
+
+func00000000000001dd:
 	sext.w	a2, a2
 	lui	a3, 33
 	addiw	a3, a3, 1489
@@ -20,7 +21,8 @@ func00000000000001dd:                   # @func00000000000001dd
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000001d5:                   # @func00000000000001d5
+
+func00000000000001d5:
 	sext.w	a2, a2
 	lui	a3, 33
 	addiw	a3, a3, 1489
@@ -31,7 +33,8 @@ func00000000000001d5:                   # @func00000000000001d5
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000001f5:                   # @func00000000000001f5
+
+func00000000000001f5:
 	sext.w	a2, a2
 	lui	a3, 33
 	addiw	a3, a3, 1489
@@ -42,7 +45,8 @@ func00000000000001f5:                   # @func00000000000001f5
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000001ff:                   # @func00000000000001ff
+
+func00000000000001ff:
 	sext.w	a2, a2
 	lui	a3, 163
 	addiw	a3, a3, -1005
@@ -53,7 +57,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000155:                   # @func0000000000000155
+
+func0000000000000155:
 	sext.w	a2, a2
 	lui	a3, 1048332
 	addiw	a3, a3, 1619
@@ -64,7 +69,8 @@ func0000000000000155:                   # @func0000000000000155
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	zext.w	a2, a2
 	lui	a3, 244
 	addiw	a3, a3, 576
@@ -75,7 +81,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
-func00000000000001f0:                   # @func00000000000001f0
+
+func00000000000001f0:
 	sext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 112
@@ -84,7 +91,8 @@ func00000000000001f0:                   # @func00000000000001f0
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000001c4:                   # @func00000000000001c4
+
+func00000000000001c4:
 	sext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 112
@@ -95,7 +103,8 @@ func00000000000001c4:                   # @func00000000000001c4
 	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
-func00000000000001d0:                   # @func00000000000001d0
+
+func00000000000001d0:
 	sext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 112
@@ -106,7 +115,8 @@ func00000000000001d0:                   # @func00000000000001d0
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	zext.w	a2, a2
 	lui	a3, 1048572
 	addiw	a3, a3, 1301
@@ -117,7 +127,8 @@ func0000000000000055:                   # @func0000000000000055
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	zext.w	a2, a2
 	lui	a3, 4
 	addiw	a3, a3, -1058
@@ -128,7 +139,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	zext.w	a2, a2
 	lui	a3, 1
 	addiw	a3, a3, 1697
@@ -139,7 +151,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	zext.w	a2, a2
 	lui	a3, 1048574
 	addiw	a3, a3, -1841
@@ -150,7 +163,8 @@ func0000000000000075:                   # @func0000000000000075
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	zext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 11
@@ -161,7 +175,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	zext.w	a2, a2
 	li	a3, 589
 	mul	a2, a2, a3
@@ -170,3 +185,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
+

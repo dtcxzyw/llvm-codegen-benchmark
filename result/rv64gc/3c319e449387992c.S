@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func0000000000000004:                   # @func0000000000000004
+	.word	0x358637bd
+func0000000000000004:
 	fadd.s	fa5, fa1, fa2
 	lui	a0, 258048
 	fmv.w.x	fa4, a0
@@ -11,3 +11,4 @@ func0000000000000004:                   # @func0000000000000004
 	fmadd.s	fa5, fa5, fa5, fa4
 	flt.s	a0, fa3, fa5
 	ret
+

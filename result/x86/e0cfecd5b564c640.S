@@ -1,12 +1,13 @@
-func0000000000000798:                   # @func0000000000000798
-	addq	$2097151, %rsi                  # imm = 0x1FFFFF
+func0000000000000798:
+	addq	$2097151, %rsi
 	shrq	$21, %rsi
-	addq	$2097151, %rdi                  # imm = 0x1FFFFF
+	addq	$2097151, %rdi
 	shrq	$21, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	addq	$63, %rsi
 	shrq	$6, %rsi
 	addq	$63, %rdi
@@ -14,14 +15,16 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addq	$63, %rsi
 	addq	$64, %rdi
 	xorq	%rsi, %rdi
 	cmpq	$64, %rdi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	addq	$10, %rsi
 	shrq	$3, %rsi
 	addq	$10, %rdi
@@ -29,14 +32,16 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000781:                   # @func0000000000000781
+
+func0000000000000781:
 	addq	$63, %rsi
 	addq	$63, %rdi
 	xorq	%rsi, %rdi
 	cmpq	$64, %rdi
 	setb	%al
 	retq
-func0000000000000794:                   # @func0000000000000794
+
+func0000000000000794:
 	addq	$63, %rsi
 	shrq	$6, %rsi
 	addq	$63, %rdi
@@ -44,7 +49,8 @@ func0000000000000794:                   # @func0000000000000794
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	addq	$7, %rsi
 	shrq	$3, %rsi
 	addq	$7, %rdi
@@ -52,7 +58,8 @@ func0000000000000015:                   # @func0000000000000015
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000218:                   # @func0000000000000218
+
+func0000000000000218:
 	addq	$-2, %rsi
 	shrq	%rsi
 	decq	%rdi
@@ -60,7 +67,8 @@ func0000000000000218:                   # @func0000000000000218
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000614:                   # @func0000000000000614
+
+func0000000000000614:
 	addq	$7, %rsi
 	shrq	$3, %rsi
 	addq	$7, %rdi
@@ -68,3 +76,4 @@ func0000000000000614:                   # @func0000000000000614
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
+

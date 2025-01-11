@@ -1,4 +1,4 @@
-func0000000000001d6a:                   # @func0000000000001d6a
+func0000000000001d6a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -10,7 +10,8 @@ func0000000000001d6a:                   # @func0000000000001d6a
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000002ce1:                   # @func0000000000002ce1
+
+func0000000000002ce1:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -21,7 +22,8 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func00000000000028c1:                   # @func00000000000028c1
+
+func00000000000028c1:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -32,7 +34,8 @@ func00000000000028c1:                   # @func00000000000028c1
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000010a1:                   # @func00000000000010a1
+
+func00000000000010a1:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -43,7 +46,8 @@ func00000000000010a1:                   # @func00000000000010a1
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000001d66:                   # @func0000000000001d66
+
+func0000000000001d66:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -55,7 +59,8 @@ func0000000000001d66:                   # @func0000000000001d66
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000002ce6:                   # @func0000000000002ce6
+
+func0000000000002ce6:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -67,7 +72,8 @@ func0000000000002ce6:                   # @func0000000000002ce6
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000001d61:                   # @func0000000000001d61
+
+func0000000000001d61:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -78,7 +84,8 @@ func0000000000001d61:                   # @func0000000000001d61
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func00000000000028ca:                   # @func00000000000028ca
+
+func00000000000028ca:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -89,3 +96,4 @@ func00000000000028ca:                   # @func00000000000028ca
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

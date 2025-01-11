@@ -1,5 +1,6 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000016:
 	subq	%rdx, %rsi
 	sarq	%rsi
 	leaq	-2(%rdi,%rsi), %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	slli	a0, a0, 48
 	lui	a3, 256
 	addiw	a3, a3, -256
@@ -13,7 +13,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	slli	a0, a0, 48
 	andi	a2, a2, 255
 	srli	a0, a0, 48
@@ -23,7 +24,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	slli	a0, a0, 48
 	li	a3, 15
 	srai	a0, a0, 48
@@ -36,3 +38,4 @@ func000000000000002a:                   # @func000000000000002a
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

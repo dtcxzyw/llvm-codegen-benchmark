@@ -1,36 +1,30 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	cmp	x2, w0, uxtw
 	csel	w0, w0, w1, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	cmp	x2, w0, uxtw
 	csel	w0, w0, w1, hi
 	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+
+func0000000000000019:
 	cmp	x2, w0, uxtw
 	csel	w0, w1, w0, lo
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	cmp	x2, w0, uxtw
 	csel	w0, w0, w1, gt
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	cmp	x2, w0, uxtw
 	csel	w0, w0, w1, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	cmp	x2, w0, uxtw
 	csel	w0, w0, w1, hi
 	ret
-                                        // -- End function
+

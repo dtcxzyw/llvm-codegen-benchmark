@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	addiw	a1, a1, -2
 	lui	a2, 349525
 	srliw	a3, a1, 1
@@ -36,7 +36,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000002e4:                   # @func00000000000002e4
+
+func00000000000002e4:
 	addiw	a2, a1, -1
 	li	a1, 32
 	li	a3, 32
@@ -72,7 +73,8 @@ func00000000000002e4:                   # @func00000000000002e4
 	addi	a3, a3, 257
 	mul	a2, a2, a3
 	srliw	a3, a2, 24
-.LBB1_2:                                # %cond.end
+.LBB1_2:
 	sub	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
+

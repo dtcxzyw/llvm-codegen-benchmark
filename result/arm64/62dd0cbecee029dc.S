@@ -1,7 +1,6 @@
 .LCPI0_0:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+	.xword	0x3fd34413509f79fb
+func0000000000000002:
 	scvtf	d1, w1
 	adrp	x8, .LCPI0_0
 	ldr	d2, [x8, :lo12:.LCPI0_0]
@@ -11,4 +10,4 @@ func0000000000000002:                   // @func0000000000000002
 	and	w8, w8, w0
 	sbfx	w0, w8, #0, #1
 	ret
-                                        // -- End function
+

@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI0_1:
-	.long	18                              # 0x12
-func00000000000001f8:                   # @func00000000000001f8
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0,255,0,0,0]
+	.long	18
+func00000000000001f8:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpand	%ymm3, %ymm2, %ymm2
 	vpand	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -15,3 +15,4 @@ func00000000000001f8:                   # @func00000000000001f8
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

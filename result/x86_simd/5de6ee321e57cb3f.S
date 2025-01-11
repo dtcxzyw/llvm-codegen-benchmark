@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	vpmovqd	%ymm1, %xmm1
 	vpsrad	$31, %xmm0, %xmm2
 	vpsrld	$29, %xmm2, %xmm2
@@ -11,3 +11,4 @@ func0000000000000026:                   # @func0000000000000026
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+

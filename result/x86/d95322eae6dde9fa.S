@@ -1,6 +1,7 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007a:
 	movzbl	%dl, %eax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	shrl	$2, %eax
 	retq
+

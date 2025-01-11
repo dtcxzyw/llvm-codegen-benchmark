@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x8000000000000000
+func0000000000000001:
 	cmpl	$1, %esi
 	adcl	$0, %esi
 	vcvtusi2sd	%esi, %xmm0, %xmm0
@@ -10,3 +10,4 @@ func0000000000000001:                   # @func0000000000000001
 	kmovd	%eax, %k1
 	vmovsd	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+

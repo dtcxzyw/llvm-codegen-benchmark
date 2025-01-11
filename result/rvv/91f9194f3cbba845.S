@@ -1,4 +1,4 @@
-func00000000000000c2:                   # @func00000000000000c2
+func00000000000000c2:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
@@ -9,7 +9,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmerge.vvm	v8, v20, v8, v0
 	vmflt.vv	v0, v8, v12
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
@@ -20,9 +21,10 @@ func00000000000000c4:                   # @func00000000000000c4
 	vmerge.vvm	v8, v20, v8, v0
 	vmflt.vv	v0, v12, v8
 	ret
+
 .LCPI2_0:
-	.word	0x3f7fffff                      # float 0.99999994
-func0000000000000022:                   # @func0000000000000022
+	.word	0x3f7fffff
+func0000000000000022:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	fli.s	fa4, 1.0
@@ -32,9 +34,10 @@ func0000000000000022:                   # @func0000000000000022
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vv	v0, v8, v12
 	ret
+
 .LCPI3_0:
-	.word	0x3f7fffff                      # float 0.99999994
-func0000000000000042:                   # @func0000000000000042
+	.word	0x3f7fffff
+func0000000000000042:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	fmv.w.x	fa4, zero
@@ -44,7 +47,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vv	v0, v8, v12
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v16, 0
@@ -52,3 +56,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vv	v0, v12, v8
 	ret
+

@@ -1,7 +1,8 @@
-func00000000000004aa:                   # @func00000000000004aa
+func00000000000004aa:
 	shrq	$32, %rsi
 	subl	%edi, %esi
-	addl	$348, %esi                      # imm = 0x15C
+	addl	$348, %esi
 	testl	%esi, %esi
 	setg	%al
 	retq
+

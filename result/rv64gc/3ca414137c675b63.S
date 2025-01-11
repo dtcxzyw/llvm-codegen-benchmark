@@ -1,16 +1,18 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	seqz	a2, a2
 	or	a0, a0, a2
 	sltiu	a1, a1, 32
 	and	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	seqz	a2, a2
 	or	a1, a1, a2
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	addi	a2, a2, -3
 	sltiu	a0, a0, 256
 	snez	a2, a2
@@ -18,7 +20,8 @@ func0000000000000188:                   # @func0000000000000188
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	li	a3, 257
 	slli	a3, a3, 34
 	addi	a3, a3, 2
@@ -31,3 +34,4 @@ func000000000000018a:                   # @func000000000000018a
 	slt	a0, a3, a0
 	and	a0, a0, a1
 	ret
+

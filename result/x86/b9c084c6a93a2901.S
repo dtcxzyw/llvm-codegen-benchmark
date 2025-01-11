@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	shrl	$23, %edx
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax
@@ -6,11 +6,13 @@ func000000000000008c:                   # @func000000000000008c
 	setno	%al
 	orb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	shrl	$23, %edx
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax
-	cmpl	$-2147483647, %eax              # imm = 0x80000001
+	cmpl	$-2147483647, %eax
 	setae	%al
 	orb	%dil, %al
 	retq
+

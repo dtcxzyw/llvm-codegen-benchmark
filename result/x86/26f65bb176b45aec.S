@@ -1,10 +1,12 @@
-func0000000000000034:                   # @func0000000000000034
-	addl	$16384, %edi                    # imm = 0x4000
+func0000000000000034:
+	addl	$16384, %edi
 	movzwl	%di, %eax
-	cmpl	$16385, %eax                    # imm = 0x4001
+	cmpl	$16385, %eax
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	decw	%di
 	setns	%al
 	retq
+

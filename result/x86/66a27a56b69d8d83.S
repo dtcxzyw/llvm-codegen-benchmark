@@ -1,4 +1,4 @@
-func0000000000000126:                   # @func0000000000000126
+func0000000000000126:
 	addl	$2, %edx
 	cmpl	%edx, %esi
 	setae	%cl
@@ -6,3 +6,4 @@ func0000000000000126:                   # @func0000000000000126
 	sets	%al
 	andb	%cl, %al
 	retq
+

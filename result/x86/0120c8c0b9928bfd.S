@@ -1,4 +1,4 @@
-func0000000000000130:                   # @func0000000000000130
+func0000000000000130:
 	movl	%edi, %eax
 	addl	$-48, %eax
 	cmpw	$10, %ax
@@ -7,7 +7,8 @@ func0000000000000130:                   # @func0000000000000130
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000902:                   # @func0000000000000902
+
+func0000000000000902:
 	movl	%edi, %eax
 	addl	$-43, %eax
 	cmpw	$10, %ax
@@ -16,7 +17,8 @@ func0000000000000902:                   # @func0000000000000902
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	movl	%edi, %eax
 	addl	$-48, %eax
 	cmpw	$10, %ax
@@ -25,13 +27,15 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	leal	-2048(%rdi), %eax
 	movzwl	%ax, %eax
-	cmpl	$53248, %eax                    # imm = 0xD000
+	cmpl	$53248, %eax
 	setb	%cl
 	movzwl	%di, %eax
-	cmpl	$57344, %eax                    # imm = 0xE000
+	cmpl	$57344, %eax
 	setae	%al
 	orb	%cl, %al
 	retq
+

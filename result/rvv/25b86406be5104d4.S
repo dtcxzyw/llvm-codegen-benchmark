@@ -1,4 +1,4 @@
-func000000000000038d:                   # @func000000000000038d
+func000000000000038d:
 	lui	a0, 16
 	addiw	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -9,3 +9,4 @@ func000000000000038d:                   # @func000000000000038d
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 16
 	ret
+

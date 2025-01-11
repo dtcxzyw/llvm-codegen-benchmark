@@ -1,9 +1,8 @@
-func0000000000000884:                   // @func0000000000000884
-// %bb.0:                               // %entry
-	mov	w8, #864026624                  // =0x33800000
+func0000000000000884:
+	mov	w8, #864026624
 	fminnm	s1, s1, s2
 	fmov	s2, w8
-	mov	w8, #14269                      // =0x37bd
+	mov	w8, #14269
 	movk	w8, #13702, lsl #16
 	fcmp	s0, s2
 	fmov	s0, w8
@@ -11,19 +10,17 @@ func0000000000000884:                   // @func0000000000000884
 	fcmp	s1, s0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
-func0000000000000888:                   // @func0000000000000888
-// %bb.0:                               // %entry
+
+func0000000000000888:
 	fminnm	s1, s1, s2
-	mov	w8, #1148846080                 // =0x447a0000
+	mov	w8, #1148846080
 	fminnm	s0, s1, s0
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000cc6:                   // @func0000000000000cc6
-// %bb.0:                               // %entry
+
+func0000000000000cc6:
 	fcmp	s1, #0.0
 	cset	w8, lt
 	fcmp	s2, #0.0
@@ -31,11 +28,10 @@ func0000000000000cc6:                   // @func0000000000000cc6
 	fcmp	s0, #0.0
 	csinc	w0, w8, wzr, ge
 	ret
-                                        // -- End function
-func0000000000001210:                   // @func0000000000001210
-// %bb.0:                               // %entry
+
+func0000000000001210:
 	fcmp	s1, #0.0
-	mov	w9, #13107                      // =0x3333
+	mov	w9, #13107
 	movk	w9, #16243, lsl #16
 	cset	w8, eq
 	fcmp	s0, #0.0
@@ -44,18 +40,16 @@ func0000000000001210:                   // @func0000000000001210
 	fcmp	s2, s0
 	csinc	w0, w8, wzr, le
 	ret
-                                        // -- End function
-func0000000000001108:                   // @func0000000000001108
-// %bb.0:                               // %entry
+
+func0000000000001108:
 	fmaxnm	s1, s1, s2
 	fmaxnm	s0, s0, s1
 	movi	v1.2s, #52, lsl #24
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000001dce:                   // @func0000000000001dce
-// %bb.0:                               // %entry
+
+func0000000000001dce:
 	fcmp	s1, #0.0
 	fmov	s3, #1.00000000
 	cset	w8, ne
@@ -64,9 +58,8 @@ func0000000000001dce:                   // @func0000000000001dce
 	fcmp	s0, s3
 	csinc	w0, w8, wzr, eq
 	ret
-                                        // -- End function
-func0000000000001ddc:                   // @func0000000000001ddc
-// %bb.0:                               // %entry
+
+func0000000000001ddc:
 	fcmp	s1, #0.0
 	cset	w8, ne
 	fcmp	s2, #0.0
@@ -74,9 +67,8 @@ func0000000000001ddc:                   // @func0000000000001ddc
 	fcmp	s0, #0.0
 	csinc	w0, w8, wzr, eq
 	ret
-                                        // -- End function
-func0000000000002220:                   // @func0000000000002220
-// %bb.0:                               // %entry
+
+func0000000000002220:
 	fcmp	s1, #0.0
 	cset	w8, eq
 	fcmp	s2, #0.0
@@ -84,11 +76,10 @@ func0000000000002220:                   // @func0000000000002220
 	fcmp	s0, #0.0
 	csinc	w0, w8, wzr, ne
 	ret
-                                        // -- End function
-func0000000000000cd4:                   // @func0000000000000cd4
-// %bb.0:                               // %entry
-	mov	w8, #46871                      // =0xb717
-	mov	w9, #839                        // =0x347
+
+func0000000000000cd4:
+	mov	w8, #46871
+	mov	w9, #839
 	movk	w8, #47313, lsl #16
 	movk	w9, #16256, lsl #16
 	fmov	s3, w8
@@ -100,10 +91,9 @@ func0000000000000cd4:                   // @func0000000000000cd4
 	fcmp	s0, s1
 	csinc	w0, w8, wzr, ls
 	ret
-                                        // -- End function
-func0000000000002664:                   // @func0000000000002664
-// %bb.0:                               // %entry
-	mov	w8, #2139095040                 // =0x7f800000
+
+func0000000000002664:
+	mov	w8, #2139095040
 	fmov	s3, w8
 	fcmp	s2, s3
 	cset	w8, eq
@@ -117,9 +107,8 @@ func0000000000002664:                   // @func0000000000002664
 	csinc	w9, w9, wzr, vc
 	orr	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000002210:                   // @func0000000000002210
-// %bb.0:                               // %entry
+
+func0000000000002210:
 	fcmp	s1, #0.0
 	cset	w8, eq
 	fcmp	s2, #0.0
@@ -127,10 +116,9 @@ func0000000000002210:                   // @func0000000000002210
 	fcmp	s0, #0.0
 	csinc	w0, w8, wzr, ne
 	ret
-                                        // -- End function
-func0000000000001e10:                   // @func0000000000001e10
-// %bb.0:                               // %entry
-	mov	w8, #2139095040                 // =0x7f800000
+
+func0000000000001e10:
+	mov	w8, #2139095040
 	fmov	s3, w8
 	fcmp	s1, s3
 	cset	w8, eq
@@ -139,4 +127,4 @@ func0000000000001e10:                   // @func0000000000001e10
 	fcmp	s2, s3
 	csinc	w0, w8, wzr, eq
 	ret
-                                        // -- End function
+

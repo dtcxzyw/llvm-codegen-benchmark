@@ -1,5 +1,4 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	lsr	x8, x2, #1
 	mvn	w9, w0
 	lsl	x10, x2, x0
@@ -8,9 +7,8 @@ func0000000000000003:                   // @func0000000000000003
 	csel	x0, xzr, x10, ne
 	csel	x1, x10, x8, ne
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	lsr	x8, x2, #1
 	mvn	w9, w0
 	lsl	x10, x2, x0
@@ -19,9 +17,8 @@ func0000000000000000:                   // @func0000000000000000
 	csel	x0, xzr, x10, ne
 	csel	x1, x10, x8, ne
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	lsr	x8, x2, #1
 	mvn	w9, w0
 	lsl	x10, x2, x0
@@ -30,9 +27,8 @@ func0000000000000006:                   // @func0000000000000006
 	csel	x0, xzr, x10, ne
 	csel	x1, x10, x8, ne
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	lsr	x8, x2, #1
 	mvn	w9, w0
 	lsl	x10, x2, x0
@@ -41,9 +37,8 @@ func0000000000000002:                   // @func0000000000000002
 	csel	x0, xzr, x10, ne
 	csel	x1, x10, x8, ne
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	lsr	x8, x2, #1
 	mvn	w9, w0
 	lsl	x10, x2, x0
@@ -52,4 +47,4 @@ func0000000000000007:                   // @func0000000000000007
 	csel	x0, xzr, x10, ne
 	csel	x1, x10, x8, ne
 	ret
-                                        // -- End function
+

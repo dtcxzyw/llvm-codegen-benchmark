@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	0xbfc5c28f5c28f5c3              # double -0.17000000000000001
+	.quad	0xbfc5c28f5c28f5c3
 .LCPI0_1:
-	.quad	0x3fceb851eb851eb8              # double 0.23999999999999999
+	.quad	0x3fceb851eb851eb8
 .LCPI0_2:
-	.quad	0x3fd47ae147ae147b              # double 0.32000000000000001
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fd47ae147ae147b
+func0000000000000000:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
@@ -19,3 +19,4 @@ func0000000000000000:                   # @func0000000000000000
 	vfmacc.vf	v0, fa3, v16
 	vfmadd.vf	v8, fa2, v0
 	ret
+

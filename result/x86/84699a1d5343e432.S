@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	movl	$20, %eax
@@ -6,7 +6,8 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	movl	$20, %eax
@@ -14,7 +15,8 @@ func000000000000000a:                   # @func000000000000000a
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	movl	$20, %eax
@@ -22,7 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	cmpq	%rdx, %rsi
 	movl	$8, %eax
 	movl	$48, %ecx
@@ -30,7 +33,8 @@ func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	notb	%dil
 	cmpq	%rdx, %rsi
 	setae	%al
@@ -39,7 +43,8 @@ func0000000000000014:                   # @func0000000000000014
 	andl	$1, %eax
 	leaq	16(,%rax,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	notb	%dil
 	cmpq	%rdx, %rsi
 	setbe	%al
@@ -48,7 +53,8 @@ func0000000000000008:                   # @func0000000000000008
 	andl	$1, %eax
 	leaq	16(,%rax,8), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	notb	%dil
 	cmpq	%rdx, %rsi
 	setae	%al
@@ -57,7 +63,8 @@ func0000000000000004:                   # @func0000000000000004
 	andl	$1, %eax
 	leaq	16(,%rax,8), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	notb	%dil
 	cmpq	%rdx, %rsi
 	setl	%al
@@ -66,3 +73,4 @@ func000000000000000b:                   # @func000000000000000b
 	andl	$1, %eax
 	leaq	16(,%rax,8), %rax
 	retq
+

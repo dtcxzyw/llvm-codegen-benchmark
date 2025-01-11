@@ -1,4 +1,4 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000001f4:
 	lui	a3, 15
 	slli	a1, a1, 6
 	and	a2, a2, a3
@@ -7,7 +7,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	srliw	a0, a0, 11
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	lui	a3, 15
 	slli	a1, a1, 6
 	and	a2, a2, a3
@@ -16,7 +17,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	lui	a3, 240
 	slli	a1, a1, 8
 	and	a2, a2, a3
@@ -26,7 +28,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	lui	a1, 32
 	sltu	a0, a1, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	slli	a2, a2, 16
 	lui	a3, 16
 	addi	a3, a3, -256
@@ -36,3 +39,4 @@ func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
+

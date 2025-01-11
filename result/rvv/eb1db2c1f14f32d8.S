@@ -1,4 +1,4 @@
-func000000000000002b:                   # @func000000000000002b
+func000000000000002b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 256
@@ -10,7 +10,8 @@ func000000000000002b:                   # @func000000000000002b
 	vmerge.vxm	v8, v8, a0, v0
 	vmsle.vv	v0, v10, v8
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 256
@@ -22,7 +23,8 @@ func000000000000002a:                   # @func000000000000002a
 	vmerge.vxm	v8, v8, a0, v0
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 256
@@ -34,7 +36,8 @@ func0000000000000026:                   # @func0000000000000026
 	vmerge.vxm	v8, v8, a0, v0
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 256
@@ -46,7 +49,8 @@ func0000000000000025:                   # @func0000000000000025
 	vmerge.vxm	v8, v8, a0, v0
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, -1
@@ -57,7 +61,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmerge.vxm	v8, v8, a0, v0
 	vmseq.vv	v0, v8, v10
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 4
@@ -66,7 +71,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmerge.vim	v8, v8, 3, v0
 	vmsne.vv	v0, v8, v10
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
@@ -74,3 +80,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmsltu.vv	v13, v8, v10
 	vmandn.mm	v0, v13, v12
 	ret
+

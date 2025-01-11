@@ -1,6 +1,5 @@
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
-	mov	w8, #32769                      // =0x8001
+func00000000000001e1:
+	mov	w8, #32769
 	add	x9, x0, #1
 	movk	w8, #32768, lsl #16
 	umull	x8, w1, w8
@@ -9,10 +8,9 @@ func00000000000001e1:                   // @func00000000000001e1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000003e1:                   // @func00000000000003e1
-// %bb.0:                               // %entry
-	mov	w8, #43691                      // =0xaaab
+
+func00000000000003e1:
+	mov	w8, #43691
 	add	x9, x0, #1
 	movk	w8, #43690, lsl #16
 	umull	x8, w1, w8
@@ -21,10 +19,9 @@ func00000000000003e1:                   // @func00000000000003e1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000161:                   // @func0000000000000161
-// %bb.0:                               // %entry
-	mov	w8, #43691                      // =0xaaab
+
+func0000000000000161:
+	mov	w8, #43691
 	add	x9, x0, #1
 	movk	w8, #43690, lsl #16
 	umull	x8, w1, w8
@@ -33,4 +30,4 @@ func0000000000000161:                   // @func0000000000000161
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

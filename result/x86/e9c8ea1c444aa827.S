@@ -1,12 +1,13 @@
-func00000000000000cc:                   # @func00000000000000cc
-	cmpl	$768, %esi                      # imm = 0x300
+func00000000000000cc:
+	cmpl	$768, %esi
 	setl	%cl
 	testl	%esi, %esi
 	setne	%al
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000194:                   # @func0000000000000194
+
+func0000000000000194:
 	cmpl	$3, %esi
 	setne	%cl
 	cmpl	$6, %esi
@@ -14,7 +15,8 @@ func0000000000000194:                   # @func0000000000000194
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	cmpl	$15, %esi
 	setne	%cl
 	testl	%esi, %esi
@@ -22,7 +24,8 @@ func000000000000018c:                   # @func000000000000018c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
+
+func0000000000000198:
 	cmpl	$255, %esi
 	setne	%cl
 	cmpl	$127, %esi
@@ -30,7 +33,8 @@ func0000000000000198:                   # @func0000000000000198
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	cmpl	$19, %esi
 	setne	%cl
 	cmpl	$13, %esi
@@ -38,3 +42,4 @@ func0000000000000188:                   # @func0000000000000188
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
+

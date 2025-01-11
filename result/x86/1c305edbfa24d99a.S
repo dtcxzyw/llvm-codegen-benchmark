@@ -1,4 +1,4 @@
-func0000000000000c04:                   # @func0000000000000c04
+func0000000000000c04:
 	testl	%edx, %edx
 	setne	%al
 	andb	%sil, %al
@@ -7,3 +7,4 @@ func0000000000000c04:                   # @func0000000000000c04
 	cmpq	$-119, %rax
 	setb	%al
 	retq
+

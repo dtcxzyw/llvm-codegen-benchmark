@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a0, a0
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 29
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
@@ -16,7 +17,8 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 30
 	add	a1, a1, a2
@@ -25,7 +27,8 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	sext.w	a1, a1
 	lui	a2, 233017
 	addiw	a2, a2, -455
@@ -36,14 +39,16 @@ func0000000000000026:                   # @func0000000000000026
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
 	subw	a0, a0, a1
 	slti	a0, a0, 3
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	sext.w	a2, a1
 	lui	a3, 599186
 	addiw	a3, a3, 1171
@@ -57,7 +62,8 @@ func0000000000000038:                   # @func0000000000000038
 	sltiu	a0, a0, 52
 	xori	a0, a0, 1
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 24
 	add	a1, a1, a2
@@ -65,7 +71,8 @@ func0000000000000034:                   # @func0000000000000034
 	addw	a0, a0, a1
 	sltiu	a0, a0, 48
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sext.w	a1, a1
 	lui	a2, 274878
 	addiw	a2, a2, -381
@@ -77,7 +84,8 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 1001
 	xori	a0, a0, 1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sext.w	a0, a0
 	sext.w	a2, a1
 	lui	a3, 349525
@@ -91,10 +99,12 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
+

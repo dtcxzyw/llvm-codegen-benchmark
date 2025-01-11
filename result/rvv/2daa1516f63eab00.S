@@ -1,4 +1,4 @@
-func00000000000018f0:                   # @func00000000000018f0
+func00000000000018f0:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	vmsne.vi	v0, v10, 0
@@ -9,3 +9,4 @@ func00000000000018f0:                   # @func00000000000018f0
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
+

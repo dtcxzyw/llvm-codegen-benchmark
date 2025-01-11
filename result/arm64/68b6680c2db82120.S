@@ -1,5 +1,4 @@
-func0000000000000602:                   // @func0000000000000602
-// %bb.0:                               // %entry
+func0000000000000602:
 	and	w8, w2, #0xff
 	cmp	w8, #70
 	cset	w8, ne
@@ -9,9 +8,8 @@ func0000000000000602:                   // @func0000000000000602
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000082:                   // @func0000000000000082
-// %bb.0:                               // %entry
+
+func0000000000000082:
 	and	w8, w2, #0xff
 	cmp	w8, #12
 	cset	w8, eq
@@ -21,4 +19,4 @@ func0000000000000082:                   // @func0000000000000082
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

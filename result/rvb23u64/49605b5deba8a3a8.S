@@ -1,31 +1,35 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	bexti	a1, a1, 11
 	addi	a0, a0, -27
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	andi	a1, a1, 1024
 	addi	a0, a0, -27
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	andi	a1, a1, 254
 	addi	a1, a1, -12
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	andi	a1, a1, 1
 	slti	a0, a0, 0
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000118:                   # @func0000000000000118
+
+func0000000000000118:
 	andi	a1, a1, 7
 	lui	a2, 524288
 	snez	a1, a1
@@ -33,62 +37,72 @@ func0000000000000118:                   # @func0000000000000118
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	bexti	a1, a1, 1
 	sltiu	a0, a0, 6
 	or	a0, a0, a1
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	andi	a1, a1, -2048
 	bclri	a1, a1, 11
 	binvi	a1, a1, 12
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000602:                   # @func0000000000000602
+
+func0000000000000602:
 	andi	a1, a1, 48
 	sltiu	a0, a0, 2
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	andi	a1, a1, -3
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	not	a1, a1
 	bexti	a1, a1, 29
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
-func0000000000000182:                   # @func0000000000000182
+
+func0000000000000182:
 	not	a1, a1
 	bexti	a1, a1, 61
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
-func0000000000000314:                   # @func0000000000000314
+
+func0000000000000314:
 	bexti	a1, a1, 59
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	srli	a1, a1, 1
 	addi	a1, a1, -1487
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	srliw	a1, a1, 31
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	lui	a2, 1045632
 	sltiu	a0, a0, 64
 	addi	a2, a2, 503
@@ -99,14 +113,16 @@ func0000000000000070:                   # @func0000000000000070
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000502:                   # @func0000000000000502
+
+func0000000000000502:
 	slli	a1, a1, 3
 	srli	a1, a1, 3
 	sltiu	a1, a1, 7
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	sext.w	a1, a1
 	li	a2, -1
 	addi	a1, a1, 1
@@ -115,7 +131,8 @@ func0000000000000202:                   # @func0000000000000202
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000298:                   # @func0000000000000298
+
+func0000000000000298:
 	sext.w	a1, a1
 	slti	a0, a0, 0
 	addi	a1, a1, -6
@@ -123,30 +140,35 @@ func0000000000000298:                   # @func0000000000000298
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	andi	a1, a1, 7
 	seqz	a1, a1
 	sltiu	a0, a0, -255
 	or	a0, a0, a1
 	ret
-func0000000000000328:                   # @func0000000000000328
+
+func0000000000000328:
 	bexti	a1, a1, 1
 	lui	a2, 98
 	addiw	a2, a2, -1408
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	andi	a1, a1, 256
 	lui	a2, 16
 	seqz	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000618:                   # @func0000000000000618
+
+func0000000000000618:
 	andi	a1, a1, 2044
 	li	a2, 2047
 	snez	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

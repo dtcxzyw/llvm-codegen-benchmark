@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+func0000000000000000:
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm1, %xmm3
@@ -46,3 +46,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

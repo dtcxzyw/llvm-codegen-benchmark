@@ -1,41 +1,46 @@
-func00000000000001e5:                   # @func00000000000001e5
+func00000000000001e5:
 	imull	$153, %edx, %ecx
 	addl	$2, %ecx
-	movl	$3435973837, %eax               # imm = 0xCCCCCCCD
+	movl	$3435973837, %eax
 	imulq	%rcx, %rax
 	shrq	$34, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leal	2(%rdx,%rdx,4), %eax
-	imulq	$718635051, %rax, %rax          # imm = 0x2AD5802B
+	imulq	$718635051, %rax, %rax
 	shrq	$40, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func00000000000000a0:                   # @func00000000000000a0
-	imull	$36525, %edx, %eax              # imm = 0x8EAD
-	addl	$172251900, %eax                # imm = 0xA445AFC
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+
+func00000000000000a0:
+	imull	$36525, %edx, %eax
+	addl	$172251900, %eax
+	imulq	$1374389535, %rax, %rax
 	shrq	$37, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func00000000000001e0:                   # @func00000000000001e0
-	imull	$36525, %edx, %eax              # imm = 0x8EAD
-	addl	$172251900, %eax                # imm = 0xA445AFC
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+
+func00000000000001e0:
+	imull	$36525, %edx, %eax
+	addl	$172251900, %eax
+	imulq	$1374389535, %rax, %rax
 	shrq	$37, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	imull	$153, %edx, %ecx
 	addl	$2, %ecx
-	movl	$3435973837, %eax               # imm = 0xCCCCCCCD
+	movl	$3435973837, %eax
 	imulq	%rcx, %rax
 	shrq	$34, %rax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+

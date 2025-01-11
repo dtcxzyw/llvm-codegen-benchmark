@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andl	$1, %edx
 	shll	$9, %edx
 	addl	%esi, %edx
@@ -6,7 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	shll	$19, %edi
 	leal	576(%rdi,%rdx), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -17,7 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %eax
 	orl	%esi, %eax
@@ -26,7 +28,8 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%edi, %eax
 	orl	$5, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edi, %eax
 	andl	$1, %edx
 	shll	$11, %edx
@@ -34,5 +37,6 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$1, %eax
 	shll	$19, %eax
 	orl	%edx, %eax
-	orl	$-33553857, %eax                # imm = 0xFE00023F
+	orl	$-33553857, %eax
 	retq
+

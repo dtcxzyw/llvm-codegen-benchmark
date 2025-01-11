@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	negw	a1, a1
@@ -8,7 +8,8 @@ func000000000000004c:                   # @func000000000000004c
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	negw	a1, a1
@@ -19,3 +20,4 @@ func000000000000004a:                   # @func000000000000004a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
+

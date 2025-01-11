@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa1
@@ -14,12 +14,13 @@ func0000000000000042:                   # @func0000000000000042
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa1
 	bnez	a0, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	fmv.s	fa4, fa5
-.LBB0_4:                                # %entry
+.LBB0_4:
 	flt.s	a0, fa4, fa0
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa1
@@ -35,12 +36,13 @@ func0000000000000044:                   # @func0000000000000044
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa1
 	bnez	a0, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	fmv.s	fa4, fa5
-.LBB1_4:                                # %entry
+.LBB1_4:
 	flt.s	a0, fa0, fa4
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fmv.s	fa5, fa1
@@ -54,12 +56,13 @@ func0000000000000024:                   # @func0000000000000024
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	fmv.s	fa4, fa5
-.LBB2_4:                                # %entry
+.LBB2_4:
 	flt.s	a0, fa0, fa4
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	fmv.s	fa5, fa1
@@ -75,13 +78,14 @@ func0000000000000043:                   # @func0000000000000043
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa1
 	bnez	a0, .LBB3_4
-.LBB3_3:                                # %entry
+.LBB3_3:
 	fmv.s	fa4, fa5
-.LBB3_4:                                # %entry
+.LBB3_4:
 	fle.s	a0, fa0, fa4
 	xori	a0, a0, 1
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	fmv.s	fa5, fa1
@@ -95,12 +99,13 @@ func0000000000000022:                   # @func0000000000000022
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB4_4
-.LBB4_3:                                # %entry
+.LBB4_3:
 	fmv.s	fa4, fa5
-.LBB4_4:                                # %entry
+.LBB4_4:
 	flt.s	a0, fa4, fa0
 	ret
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	fmv.s	fa5, fa1
@@ -114,13 +119,14 @@ func0000000000000023:                   # @func0000000000000023
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB5_4
-.LBB5_3:                                # %entry
+.LBB5_3:
 	fmv.s	fa4, fa5
-.LBB5_4:                                # %entry
+.LBB5_4:
 	fle.s	a0, fa0, fa4
 	xori	a0, a0, 1
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
 	fmv.s	fa5, fa1
@@ -134,13 +140,14 @@ func0000000000000025:                   # @func0000000000000025
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB6_4
-.LBB6_3:                                # %entry
+.LBB6_3:
 	fmv.s	fa4, fa5
-.LBB6_4:                                # %entry
+.LBB6_4:
 	fle.s	a0, fa4, fa0
 	xori	a0, a0, 1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB7_2
 	fmv.s	fa5, fa1
@@ -154,12 +161,13 @@ func000000000000002c:                   # @func000000000000002c
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB7_4
-.LBB7_3:                                # %entry
+.LBB7_3:
 	fmv.s	fa4, fa5
-.LBB7_4:                                # %entry
+.LBB7_4:
 	fle.s	a0, fa0, fa4
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
 	fmv.s	fa5, fa1
@@ -173,8 +181,9 @@ func000000000000002a:                   # @func000000000000002a
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa4
 	bnez	a0, .LBB8_4
-.LBB8_3:                                # %entry
+.LBB8_3:
 	fmv.s	fa4, fa5
-.LBB8_4:                                # %entry
+.LBB8_4:
 	fle.s	a0, fa4, fa0
 	ret
+

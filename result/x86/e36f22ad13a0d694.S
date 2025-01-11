@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func00000000000000c6:
 	testl	%edx, %edx
 	setg	%cl
 	orb	%sil, %cl
@@ -6,7 +6,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	setle	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	testl	%edx, %edx
 	setle	%cl
 	notb	%sil
@@ -15,7 +16,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpl	$63, %edx
 	setne	%cl
 	orb	%sil, %cl
@@ -23,7 +25,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	cmpl	$1, %edx
 	setne	%cl
 	notb	%sil
@@ -32,7 +35,8 @@ func0000000000000026:                   # @func0000000000000026
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	cmpl	$1, %edx
 	sete	%cl
 	orb	%sil, %cl
@@ -40,7 +44,8 @@ func000000000000002a:                   # @func000000000000002a
 	setns	%al
 	orb	%cl, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	negl	%edx
 	seto	%cl
 	notb	%sil
@@ -49,7 +54,8 @@ func0000000000000028:                   # @func0000000000000028
 	setae	%al
 	orb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	testl	%edx, %edx
 	sets	%cl
 	notb	%sil
@@ -58,3 +64,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	setns	%al
 	orb	%cl, %al
 	retq
+

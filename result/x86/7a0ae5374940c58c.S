@@ -1,6 +1,6 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	movl	%esi, %eax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	shrq	$36, %rax
 	imull	$50, %eax, %eax
 	subl	%eax, %esi
@@ -8,14 +8,16 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	$51, %rsi
 	setae	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	movl	%esi, %eax
-	movl	$2147975281, %ecx               # imm = 0x80078071
+	movl	$2147975281, %ecx
 	imulq	%rax, %rcx
 	shrq	$47, %rcx
-	imull	$65521, %ecx, %eax              # imm = 0xFFF1
+	imull	$65521, %ecx, %eax
 	subl	%eax, %esi
 	addq	%rdi, %rsi
-	cmpq	$131042, %rsi                   # imm = 0x1FFE2
+	cmpq	$131042, %rsi
 	setae	%al
 	retq
+

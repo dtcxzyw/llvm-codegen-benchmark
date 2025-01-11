@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	shrl	$4, %edi
 	movl	%edi, %eax
 	andb	$63, %al
@@ -11,3 +11,4 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq
+

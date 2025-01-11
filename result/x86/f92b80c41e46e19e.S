@@ -1,7 +1,7 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	imulq	$1717986919, %rax, %rcx         # imm = 0x66666667
+	imulq	$1717986919, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$36, %rcx
@@ -12,7 +12,8 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	255(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	addl	%edx, %ecx
@@ -22,7 +23,8 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%ecx, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	leal	3(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	addl	%edx, %ecx
@@ -32,3 +34,4 @@ func0000000000000002:                   # @func0000000000000002
 	movslq	%ecx, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
+

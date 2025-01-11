@@ -1,4 +1,4 @@
-func00000000000002a8:                   # @func00000000000002a8
+func00000000000002a8:
 	sext.h	a3, a0
 	srliw	a2, a2, 16
 	sgtz	a3, a3
@@ -7,3 +7,4 @@ func00000000000002a8:                   # @func00000000000002a8
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

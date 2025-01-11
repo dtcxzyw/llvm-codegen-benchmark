@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func0000000000000224:                   # @func0000000000000224
-	vmovss	.LCPI0_0(%rip), %xmm3           # xmm3 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3f800000
+func0000000000000224:
+	vmovss	.LCPI0_0(%rip), %xmm3
 	vcmpltps	%xmm3, %xmm1, %k1
 	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
 	kmovd	%k0, %ecx
@@ -10,10 +10,11 @@ func0000000000000224:                   # @func0000000000000224
 	seta	%al
 	andb	%cl, %al
 	retq
+
 .LCPI1_0:
-	.long	0x3f800000                      # float 1
-func0000000000000888:                   # @func0000000000000888
-	vmovss	.LCPI1_0(%rip), %xmm3           # xmm3 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3f800000
+func0000000000000888:
+	vmovss	.LCPI1_0(%rip), %xmm3
 	vcmpeqps	%xmm3, %xmm1, %k1
 	vcmpeqps	%xmm3, %xmm2, %k0 {%k1}
 	kmovd	%k0, %ecx
@@ -23,7 +24,8 @@ func0000000000000888:                   # @func0000000000000888
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func0000000000000aca:                   # @func0000000000000aca
+
+func0000000000000aca:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vucomiss	%xmm3, %xmm1
 	setae	%cl
@@ -32,7 +34,8 @@ func0000000000000aca:                   # @func0000000000000aca
 	kmovd	%k0, %eax
 	andb	%cl, %al
 	retq
-func0000000000000444:                   # @func0000000000000444
+
+func0000000000000444:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%xmm1, %xmm3, %k1
 	vcmpltps	%xmm2, %xmm3, %k0 {%k1}
@@ -41,7 +44,8 @@ func0000000000000444:                   # @func0000000000000444
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000aaa:                   # @func0000000000000aaa
+
+func0000000000000aaa:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%xmm3, %xmm1, %k1
 	vcmpleps	%xmm3, %xmm2, %k0 {%k1}
@@ -50,22 +54,24 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	setae	%al
 	andb	%cl, %al
 	retq
+
 .LCPI5_0:
-	.long	0x3f800000                      # float 1
-func0000000000000742:                   # @func0000000000000742
+	.long	0x3f800000
+func0000000000000742:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%xmm1, %xmm3, %k1
 	vcmpneqps	%xmm3, %xmm2, %k0 {%k1}
 	kmovd	%k0, %ecx
-	vmovss	.LCPI5_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI5_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	andb	%cl, %al
 	retq
+
 .LCPI6_0:
-	.long	0x3f000000                      # float 0.5
-func000000000000044a:                   # @func000000000000044a
-	vmovss	.LCPI6_0(%rip), %xmm3           # xmm3 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3f000000
+func000000000000044a:
+	vmovss	.LCPI6_0(%rip), %xmm3
 	vcmpltps	%xmm1, %xmm3, %k1
 	vcmpltps	%xmm2, %xmm3, %k0 {%k1}
 	kmovd	%k0, %ecx
@@ -73,10 +79,11 @@ func000000000000044a:                   # @func000000000000044a
 	setae	%al
 	andb	%cl, %al
 	retq
+
 .LCPI7_0:
-	.long	0x3f000000                      # float 0.5
-func000000000000022c:                   # @func000000000000022c
-	vmovss	.LCPI7_0(%rip), %xmm3           # xmm3 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3f000000
+func000000000000022c:
+	vmovss	.LCPI7_0(%rip), %xmm3
 	vcmpltps	%xmm3, %xmm1, %k1
 	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
 	kmovd	%k0, %ecx
@@ -84,10 +91,11 @@ func000000000000022c:                   # @func000000000000022c
 	setae	%al
 	andb	%cl, %al
 	retq
+
 .LCPI8_0:
-	.long	0x3dcccccd                      # float 0.100000001
-func0000000000000222:                   # @func0000000000000222
-	vmovss	.LCPI8_0(%rip), %xmm3           # xmm3 = [1.00000001E-1,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3dcccccd
+func0000000000000222:
+	vmovss	.LCPI8_0(%rip), %xmm3
 	vcmpltps	%xmm3, %xmm1, %k1
 	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
 	kmovd	%k0, %ecx
@@ -95,7 +103,8 @@ func0000000000000222:                   # @func0000000000000222
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000024a:                   # @func000000000000024a
+
+func000000000000024a:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%xmm1, %xmm3, %k1
 	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
@@ -104,15 +113,17 @@ func000000000000024a:                   # @func000000000000024a
 	setae	%al
 	andb	%cl, %al
 	retq
+
 .LCPI10_0:
-	.long	0x3f800000                      # float 1
-func0000000000000cca:                   # @func0000000000000cca
+	.long	0x3f800000
+func0000000000000cca:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%xmm1, %xmm3, %k1
 	vcmpleps	%xmm2, %xmm3, %k0 {%k1}
 	kmovd	%k0, %ecx
-	vmovss	.LCPI10_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI10_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setae	%al
 	andb	%cl, %al
 	retq
+

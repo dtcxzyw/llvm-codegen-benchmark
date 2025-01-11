@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -35,7 +35,8 @@ func000000000000001d:                   # @func000000000000001d
 	sllw	a0, a1, a0
 	not	a0, a0
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	sext.w	a1, a0
 	beqz	a1, .LBB1_2
 	srliw	a1, a0, 1
@@ -81,7 +82,8 @@ func000000000000002d:                   # @func000000000000002d
 	sllw	a0, a1, a0
 	not	a0, a0
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	srliw	a1, a0, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -119,3 +121,4 @@ func0000000000000015:                   # @func0000000000000015
 	sllw	a0, a0, a2
 	not	a0, a0
 	ret
+

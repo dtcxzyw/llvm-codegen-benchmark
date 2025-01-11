@@ -1,4 +1,4 @@
-func0000000000000c38:                   # @func0000000000000c38
+func0000000000000c38:
 	sext.w	a0, a0
 	srliw	a2, a2, 1
 	slli	a2, a2, 1
@@ -9,3 +9,4 @@ func0000000000000c38:                   # @func0000000000000c38
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

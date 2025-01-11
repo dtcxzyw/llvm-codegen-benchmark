@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -14,7 +15,8 @@ func0000000000000015:                   # @func0000000000000015
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -22,7 +24,8 @@ func0000000000000011:                   # @func0000000000000011
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -30,7 +33,8 @@ func0000000000000035:                   # @func0000000000000035
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -38,7 +42,8 @@ func0000000000000010:                   # @func0000000000000010
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -46,7 +51,8 @@ func0000000000000034:                   # @func0000000000000034
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
 	vsub.vv	v10, v11, v10
@@ -54,3 +60,4 @@ func0000000000000024:                   # @func0000000000000024
 	vsext.vf2	v12, v10
 	vmul.vv	v8, v8, v12
 	ret
+

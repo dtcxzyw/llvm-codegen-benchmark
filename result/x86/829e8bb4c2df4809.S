@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	shrb	%dil
 	andb	$31, %dil
 	movzbl	%dil, %eax
@@ -10,3 +10,4 @@ func0000000000000003:                   # @func0000000000000003
 	leal	(%rcx,%rcx,4), %ecx
 	subb	%cl, %al
 	retq
+

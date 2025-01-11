@@ -1,58 +1,64 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func000000000000000f:                   # @func000000000000000f
+	.quad	1
+func000000000000000f:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
+	vpmovzxdq	%xmm2, %ymm2
+	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	4294967292                      # 0xfffffffc
+	.long	4294967292
 .LCPI1_1:
-	.quad	15                              # 0xf
-func0000000000000004:                   # @func0000000000000004
+	.quad	15
+func0000000000000004:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpbroadcastq	.LCPI1_1(%rip), %ymm3   # ymm3 = [15,15,15,15]
+	vpmovzxdq	%xmm2, %ymm2
+	vpbroadcastq	.LCPI1_1(%rip), %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	4294967291                      # 0xfffffffb
+	.long	4294967291
 .LCPI2_1:
-	.quad	1                               # 0x1
-func0000000000000006:                   # @func0000000000000006
+	.quad	1
+func0000000000000006:
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpbroadcastq	.LCPI2_1(%rip), %ymm3   # ymm3 = [1,1,1,1]
+	vpmovzxdq	%xmm2, %ymm2
+	vpbroadcastq	.LCPI2_1(%rip), %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
+	.quad	1
+func000000000000000e:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpbroadcastq	.LCPI3_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
+	vpmovzxdq	%xmm2, %ymm2
+	vpbroadcastq	.LCPI3_0(%rip), %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpternlogq	$128, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & ymm2 & ymm1
+	vpternlogq	$128, %ymm1, %ymm2, %ymm0
 	retq
+

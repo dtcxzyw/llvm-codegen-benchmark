@@ -1,16 +1,14 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	lsr	x8, x1, #2
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	subs	x8, x0, x8
 	csel	x0, xzr, x8, lo
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	x9, #63439                      // =0xf7cf
+
+func0000000000000000:
+	mov	x9, #63439
 	lsr	x8, x1, #3
 	movk	x9, #58195, lsl #16
 	movk	x9, #39845, lsl #32
@@ -19,4 +17,4 @@ func0000000000000000:                   // @func0000000000000000
 	subs	x8, x0, x8, lsr #4
 	csel	x0, xzr, x8, lo
 	ret
-                                        // -- End function
+

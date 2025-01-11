@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	fli.s	fa5, 0.5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
@@ -10,3 +10,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmfgt.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	ret
+

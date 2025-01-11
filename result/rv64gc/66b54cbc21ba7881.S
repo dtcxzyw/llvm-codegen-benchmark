@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 24
@@ -16,7 +16,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 24
@@ -28,7 +29,8 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, 16
@@ -40,7 +42,8 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, 1
@@ -52,7 +55,8 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB4_2
 	li	a2, 172
@@ -64,7 +68,8 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 280
@@ -80,3 +85,4 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	fli.s	fa5, 0.5
 	flt.s	a1, fa0, fa5
 	fli.s	fa5, 1.5
@@ -7,7 +7,8 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	fli.s	fa5, 0.5
 	lui	a1, 273536
 	flt.s	a2, fa0, fa5
@@ -16,7 +17,8 @@ func0000000000000022:                   # @func0000000000000022
 	andn	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	fli.s	fa5, -1.0
@@ -26,7 +28,8 @@ func000000000000002b:                   # @func000000000000002b
 	andn	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	fli.s	fa5, 256.0
@@ -36,9 +39,10 @@ func000000000000002d:                   # @func000000000000002d
 	andn	a0, a1, a0
 	and	a0, a0, a2
 	ret
+
 .LCPI4_0:
-	.word	0x3d25aee6                      # float 0.0404499993
-func0000000000000023:                   # @func0000000000000023
+	.word	0x3d25aee6
+func0000000000000023:
 	lui	a1, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a1)
 	fmv.w.x	fa4, zero
@@ -48,21 +52,24 @@ func0000000000000023:                   # @func0000000000000023
 	andn	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	feq.s	a2, fa0, fa5
 	andn	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	fle.s	a2, fa0, fa5
 	andn	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	fli.s	fa5, 0.5
@@ -72,3 +79,4 @@ func0000000000000025:                   # @func0000000000000025
 	or	a0, a0, a2
 	and	a0, a0, a1
 	ret
+

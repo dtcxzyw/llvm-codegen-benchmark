@@ -1,86 +1,71 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	cmp	x0, #0
 	csinv	w0, w0, wzr, ne
 	ret
-                                        // -- End function
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
+
+func0000000000000068:
 	lsr	x8, x0, #31
 	cmp	x8, #0
 	csinv	w0, w0, wzr, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func0000000000000061:
+	mov	w8, #12
 	cmp	x0, #0
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
+
+func0000000000000021:
+	mov	w8, #7
 	cmp	x0, #0
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	lsr	x8, x0, #31
 	cmp	x8, #0
 	csinv	w0, w0, wzr, eq
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 killed $x0
+
+func0000000000000048:
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	cmp	x0, #0
 	csel	w0, wzr, w0, ge
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	cmp	x0, #0
 	csinv	w0, w0, wzr, ge
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	lsr	x9, x0, #32
-	mov	w8, #65533                      // =0xfffd
+	mov	w8, #65533
 	cmp	x9, #0
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
-func0000000000000054:                   // @func0000000000000054
-// %bb.0:                               // %entry
-	mov	w8, #7                          // =0x7
+
+func0000000000000054:
+	mov	w8, #7
 	cmp	x0, #2
 	csel	w0, w8, w0, lo
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 killed $x0
+
+func0000000000000058:
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
-	mov	w8, #268435456                  // =0x10000000
+
+func0000000000000078:
+	mov	w8, #268435456
 	cmp	x0, x8
 	csel	w0, wzr, w0, hi
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	mov	w8, #-1                         // =0xffffffff
+
+func0000000000000041:
+	mov	w8, #-1
 	cmp	x0, x8
-	mov	w8, #-4                         // =0xfffffffc
+	mov	w8, #-4
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
+

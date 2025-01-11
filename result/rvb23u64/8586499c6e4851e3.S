@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	srliw	a1, a1, 8
 	li	a2, 77
 	srliw	a0, a0, 8
@@ -7,3 +7,4 @@ func000000000000003f:                   # @func000000000000003f
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

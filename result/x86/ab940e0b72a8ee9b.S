@@ -1,6 +1,7 @@
-func000000000000000a:                   # @func000000000000000a
-	andl	$32768, %edx                    # imm = 0x8000
+func000000000000000a:
+	andl	$32768, %edx
 	shrxl	%esi, %edi, %eax
 	orl	%edx, %eax
 	incl	%eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	notl	%esi
 	xorl	%eax, %eax
 	testb	$3, %sil
@@ -6,7 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	shll	$5, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andl	$3, %esi
 	xorl	%eax, %eax
 	cmpl	$1, %esi
@@ -15,3 +16,4 @@ func0000000000000002:                   # @func0000000000000002
 	orq	%rdi, %rax
 	orq	$1, %rax
 	retq
+

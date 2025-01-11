@@ -1,20 +1,22 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	subq	%rdx, %rsi
 	shrq	$2, %rsi
-	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	movabsq	$6148914691236517205, %rax
 	imulq	%rsi, %rax
 	movl	%edi, %ecx
 	addq	%rax, %rcx
 	shlq	$2, %rcx
 	leaq	(%rcx,%rcx,2), %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
-	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	movabsq	$6148914691236517205, %rax
 	imulq	%rsi, %rax
 	movl	%edi, %ecx
 	addq	%rax, %rcx
 	shlq	$3, %rcx
 	leaq	(%rcx,%rcx,2), %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	bset	a1, zero, a1
 	lui	a2, 262145
 	slli	a2, a2, 2
@@ -7,7 +7,8 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	bset	a1, zero, a1
 	lui	a2, 4059
 	addiw	a2, a2, -769
@@ -15,7 +16,8 @@ func000000000000004c:                   # @func000000000000004c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	bset	a1, zero, a1
 	lui	a2, 49923
 	slli	a2, a2, 4
@@ -24,7 +26,8 @@ func000000000000006c:                   # @func000000000000006c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	bset	a1, zero, a1
 	li	a2, 63
 	slli	a2, a2, 32
@@ -35,3 +38,4 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
+

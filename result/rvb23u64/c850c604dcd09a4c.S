@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	srli	a1, a1, 8
 	add	a0, a0, a1
 	li	a1, 255
@@ -6,34 +6,41 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, 255
 	and	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	srli	a1, a1, 40
 	add	a0, a0, a1
 	lui	a1, 1042432
 	andn	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	srli	a1, a1, 3
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	srli	a1, a1, 8
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	srli	a1, a1, 2
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	srli	a1, a1, 3
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
+

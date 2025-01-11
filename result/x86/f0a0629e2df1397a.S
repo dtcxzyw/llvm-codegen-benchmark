@@ -1,10 +1,12 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	movq	%rdi, %rax
-	testl	$33554432, %edx                 # imm = 0x2000000
+	testl	$33554432, %edx
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdi, %rax
-	testl	$16711680, %edx                 # imm = 0xFF0000
+	testl	$16711680, %edx
 	cmovneq	%rsi, %rax
 	retq
+

@@ -1,18 +1,15 @@
-func000000000000007b:                   // @func000000000000007b
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+func000000000000007b:
+	mov	w8, #12
 	smaddl	x0, w2, w8, x0
 	ret
-                                        // -- End function
-func000000000000007a:                   // @func000000000000007a
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
+
+func000000000000007a:
+	mov	w8, #24
 	smaddl	x0, w2, w8, x0
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
+
+func0000000000000078:
+	mov	w8, #48
 	smaddl	x0, w2, w8, x0
 	ret
-                                        // -- End function
+

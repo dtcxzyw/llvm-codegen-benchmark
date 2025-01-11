@@ -1,14 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	sub	a0, a0, a1
 	li	a1, 100
 	blt	a0, a1, .LBB0_2
 	li	a0, 100
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	sub	a0, a0, a1
 	li	a1, 128
 	blt	a0, a1, .LBB1_2
 	li	a0, 128
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

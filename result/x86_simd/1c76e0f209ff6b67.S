@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
+	.quad	5675921253449092805
 .LCPI0_1:
-	.quad	-5675921253449092805            # 0xb13b13b13b13b13b
-func00000000000001a1:                   # @func00000000000001a1
+	.quad	-5675921253449092805
+func00000000000001a1:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
@@ -12,11 +12,12 @@ func00000000000001a1:                   # @func00000000000001a1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func00000000000001a4:                   # @func00000000000001a4
+	.quad	-6148914691236517205
+func00000000000001a4:
 	vpsraq	$4, %ymm2, %ymm2
-	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [12297829382473034411,12297829382473034411,12297829382473034411,12297829382473034411]
+	vpbroadcastq	.LCPI1_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsraq	$4, %ymm1, %ymm1
@@ -25,11 +26,12 @@ func00000000000001a4:                   # @func00000000000001a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	-3689348814741910323            # 0xcccccccccccccccd
-func00000000000001a8:                   # @func00000000000001a8
+	.quad	-3689348814741910323
+func00000000000001a8:
 	vpsraq	$3, %ymm2, %ymm2
-	vpbroadcastq	.LCPI2_0(%rip), %ymm3   # ymm3 = [14757395258967641293,14757395258967641293,14757395258967641293,14757395258967641293]
+	vpbroadcastq	.LCPI2_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsraq	$3, %ymm1, %ymm1
@@ -38,11 +40,12 @@ func00000000000001a8:                   # @func00000000000001a8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	6148914691236517205             # 0x5555555555555555
+	.quad	6148914691236517205
 .LCPI3_1:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func0000000000000181:                   # @func0000000000000181
+	.quad	-6148914691236517205
+func0000000000000181:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -52,11 +55,12 @@ func0000000000000181:                   # @func0000000000000181
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func0000000000000188:                   # @func0000000000000188
+	.quad	-6148914691236517205
+func0000000000000188:
 	vpsraq	$3, %ymm2, %ymm2
-	vpbroadcastq	.LCPI4_0(%rip), %ymm3   # ymm3 = [12297829382473034411,12297829382473034411,12297829382473034411,12297829382473034411]
+	vpbroadcastq	.LCPI4_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsraq	$3, %ymm1, %ymm1
@@ -65,11 +69,12 @@ func0000000000000188:                   # @func0000000000000188
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func00000000000001a6:                   # @func00000000000001a6
+	.quad	-6148914691236517205
+func00000000000001a6:
 	vpsraq	$3, %ymm2, %ymm2
-	vpbroadcastq	.LCPI5_0(%rip), %ymm3   # ymm3 = [12297829382473034411,12297829382473034411,12297829382473034411,12297829382473034411]
+	vpbroadcastq	.LCPI5_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsraq	$3, %ymm1, %ymm1
@@ -78,3 +83,4 @@ func00000000000001a6:                   # @func00000000000001a6
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

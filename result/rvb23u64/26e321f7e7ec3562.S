@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	slli.uw	a0, a0, 3
 	lui	a1, 699051
 	sh1add	a0, a0, a0
@@ -12,7 +12,8 @@ func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 3
 	sub	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	sext.w	a0, a0
 	lui	a1, 699051
 	sh1add	a0, a0, a0
@@ -27,3 +28,4 @@ func000000000000001d:                   # @func000000000000001d
 	slli	a1, a1, 2
 	sub	a0, a0, a1
 	ret
+

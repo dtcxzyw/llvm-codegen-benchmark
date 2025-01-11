@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -36,7 +36,8 @@ func000000000000003f:                   # @func000000000000003f
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	ret
-func000000000000004b:                   # @func000000000000004b
+
+func000000000000004b:
 	sext.w	a2, a1
 	beqz	a2, .LBB1_2
 	srliw	a2, a1, 1
@@ -84,7 +85,8 @@ func000000000000004b:                   # @func000000000000004b
 	srli	a2, a2, 30
 	add	a0, a0, a2
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -122,7 +124,8 @@ func000000000000003c:                   # @func000000000000003c
 	srli	a2, a2, 30
 	add	a0, a0, a2
 	ret
-func000000000000005f:                   # @func000000000000005f
+
+func000000000000005f:
 	sext.w	a4, a1
 	li	a2, 32
 	li	a3, 32
@@ -158,9 +161,10 @@ func000000000000005f:                   # @func000000000000005f
 	addi	a3, a3, 257
 	mul	a1, a1, a3
 	srliw	a3, a1, 24
-.LBB3_2:                                # %cond.end
+.LBB3_2:
 	subw	a2, a2, a3
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	ret
+

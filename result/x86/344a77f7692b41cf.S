@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000084:
 	leal	2(%rsi,%rdx), %eax
 	cmpl	$39, %eax
 	setb	%cl
@@ -6,19 +6,22 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000108c:                   # @func000000000000108c
+
+func000000000000108c:
 	leal	-56671232(%rsi,%rdx), %eax
-	cmpl	$8176, %eax                     # imm = 0x1FF0
+	cmpl	$8176, %eax
 	setb	%cl
-	cmpl	$65279, %edi                    # imm = 0xFEFF
+	cmpl	$65279, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000148c:                   # @func000000000000148c
+
+func000000000000148c:
 	addl	%edx, %esi
-	cmpl	$56679167, %esi                 # imm = 0x360DAFF
+	cmpl	$56679167, %esi
 	setne	%cl
-	cmpl	$8176, %edi                     # imm = 0x1FF0
+	cmpl	$8176, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
+

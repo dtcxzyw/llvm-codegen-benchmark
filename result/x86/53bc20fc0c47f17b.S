@@ -1,6 +1,7 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	leaq	1(%rdx), %rcx
 	xorl	%eax, %eax
 	cmpb	$10, %dil
 	cmoveq	%rcx, %rax
 	retq
+

@@ -1,48 +1,42 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	fabs	s2, s2
 	fmul	s1, s1, s2
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	fabs	s2, s2
 	fmul	s1, s1, s2
 	fcmp	s0, s1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	fabs	s2, s2
 	fmul	s1, s2, s1
 	fcmp	s0, s1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	fabs	s2, s2
 	fmul	s1, s2, s1
 	fcmp	s0, s1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fabs	s2, s2
 	fmul	s1, s1, s2
 	fcmp	s0, s1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	fabs	s2, s2
 	fmul	s1, s2, s1
 	fcmp	s0, s1
 	cset	w0, hi
 	ret
-                                        // -- End function
+

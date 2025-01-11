@@ -1,24 +1,21 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xfffffff1
 	orr	w8, w9, w8
 	orr	w0, w8, #0x4
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xffffffef
 	orr	w8, w9, w8
 	orr	w0, w8, #0x1000
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xfffffffe
 	orr	w8, w9, w8
 	orr	w0, w8, #0x10
 	ret
-                                        // -- End function
+

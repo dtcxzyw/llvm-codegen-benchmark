@@ -1,4 +1,4 @@
-func0000000000000ca1:                   # @func0000000000000ca1
+func0000000000000ca1:
 	leal	(%rsi,%rsi,8), %eax
 	leal	-292(%rax,%rax,2), %eax
 	sarl	$20, %edi
@@ -7,3 +7,4 @@ func0000000000000ca1:                   # @func0000000000000ca1
 	cmpl	%eax, %ecx
 	sete	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, -8
 	vand.vi	v10, v10, -8
@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 232
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -18,7 +19,8 @@ func000000000000003f:                   # @func000000000000003f
 	bseti	a0, zero, 31
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	li	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, -8
@@ -30,7 +32,8 @@ func000000000000003c:                   # @func000000000000003c
 	li	a0, 40
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, -2
 	vand.vi	v10, v10, -2
@@ -39,7 +42,8 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 114
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, -8
 	vand.vi	v10, v10, -8
@@ -48,3 +52,4 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 135
 	vadd.vx	v8, v8, a0
 	ret
+

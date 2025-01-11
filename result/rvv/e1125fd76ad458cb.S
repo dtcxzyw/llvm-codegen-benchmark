@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	lui	a0, 8
 	fli.d	fa5, min
 	addi	a0, a0, 64
@@ -10,9 +10,10 @@ func0000000000000001:                   # @func0000000000000001
 	vfmv.v.f	v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	ret
+
 .LCPI1_0:
-	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000018:                   # @func0000000000000018
+	.quad	0x3ee4f8b588e368f1
+func0000000000000018:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v8, v8, 7
 	lui	a0, %hi(.LCPI1_0)
@@ -23,3 +24,4 @@ func0000000000000018:                   # @func0000000000000018
 	vfmv.v.f	v8, fa4
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+

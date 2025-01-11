@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	addl	$-4, %eax
@@ -6,7 +6,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000001a4:                   # @func00000000000001a4
+
+func00000000000001a4:
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	addl	$-127, %eax
@@ -14,3 +15,4 @@ func00000000000001a4:                   # @func00000000000001a4
 	setb	%al
 	orb	%dil, %al
 	retq
+

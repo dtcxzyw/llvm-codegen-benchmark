@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -7,7 +7,8 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
@@ -16,12 +17,14 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	cltd
 	idivl	%ecx
-	cmpl	$16384, %eax                    # imm = 0x4000
+	cmpl	$16384, %eax
 	sete	%al
 	andb	%dil, %al
 	retq
+

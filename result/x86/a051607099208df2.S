@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -7,7 +7,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+
+func00000000000000eb:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -16,7 +17,8 @@ func00000000000000eb:                   # @func00000000000000eb
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000e6:                   # @func00000000000000e6
+
+func00000000000000e6:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -25,7 +27,8 @@ func00000000000000e6:                   # @func00000000000000e6
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000128:                   # @func0000000000000128
+
+func0000000000000128:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -34,7 +37,8 @@ func0000000000000128:                   # @func0000000000000128
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rsi, %rdx
@@ -43,7 +47,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -52,7 +57,8 @@ func0000000000000146:                   # @func0000000000000146
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -61,7 +67,8 @@ func0000000000000088:                   # @func0000000000000088
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000109:                   # @func0000000000000109
+
+func0000000000000109:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -70,7 +77,8 @@ func0000000000000109:                   # @func0000000000000109
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000016b:                   # @func000000000000016b
+
+func000000000000016b:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rsi, %rdx
@@ -79,7 +87,8 @@ func000000000000016b:                   # @func000000000000016b
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -88,7 +97,8 @@ func0000000000000321:                   # @func0000000000000321
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000a7:                   # @func00000000000000a7
+
+func00000000000000a7:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -97,7 +107,8 @@ func00000000000000a7:                   # @func00000000000000a7
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -106,7 +117,8 @@ func0000000000000086:                   # @func0000000000000086
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000167:                   # @func0000000000000167
+
+func0000000000000167:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -115,3 +127,4 @@ func0000000000000167:                   # @func0000000000000167
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

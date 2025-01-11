@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004a:
 	slti	a1, a1, 0
 	addi	a3, a1, -1
 	sh1add	a3, a3, a3
@@ -7,3 +7,4 @@ func000000000000004a:                   # @func000000000000004a
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

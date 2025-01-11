@@ -1,4 +1,4 @@
-func00000000000008a9:                   # @func00000000000008a9
+func00000000000008a9:
 	shrq	$32, %rdx
 	cmpl	%edx, %edi
 	setbe	%cl
@@ -6,7 +6,8 @@ func00000000000008a9:                   # @func00000000000008a9
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	shrq	$6, %rdx
 	cmpl	%edx, %edi
 	setg	%cl
@@ -14,3 +15,4 @@ func000000000000014a:                   # @func000000000000014a
 	setg	%al
 	andb	%cl, %al
 	retq
+

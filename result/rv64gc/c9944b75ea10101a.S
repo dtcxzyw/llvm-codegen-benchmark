@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	srai	a1, a1, 3
 	lui	a2, 699051
 	srai	a0, a0, 3
@@ -9,10 +9,11 @@ func00000000000000ca:                   # @func00000000000000ca
 	mul	a0, a0, a2
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sgtz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	srai	a1, a1, 2
 	lui	a2, 838861
 	srai	a0, a0, 2
@@ -23,6 +24,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	mul	a0, a0, a2
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	seqz	a0, a0
 	ret
+

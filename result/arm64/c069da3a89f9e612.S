@@ -1,60 +1,48 @@
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func0000000000000044:
 	and	x8, x2, #0x1
 	add	x9, x0, #1
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func00000000000000c1:
 	and	x8, x2, #0x1
 	add	x9, x0, #1
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000041:
 	and	x8, x2, #0x1
 	add	x9, x0, #1
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000c4:                   // @func00000000000000c4
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func00000000000000c4:
 	and	x8, x2, #0x1
 	add	x9, x0, #1
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000a1:                   // @func00000000000000a1
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func00000000000000a1:
 	and	x8, x2, #0x1
 	add	x9, x0, #1087
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000061:
 	and	x8, x2, #0x1
 	add	x9, x0, #1
 	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

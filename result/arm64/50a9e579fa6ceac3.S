@@ -1,5 +1,4 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	fmov	d2, #10.00000000
 	scvtf	d3, w0
 	fmul	d1, d1, d2
@@ -7,4 +6,4 @@ func0000000000000007:                   // @func0000000000000007
 	fcmp	d0, #0.0
 	cset	w0, ne
 	ret
-                                        // -- End function
+

@@ -1,16 +1,14 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	scvtf	s1, w1
 	ucvtf	s2, w0
 	fdiv	s1, s2, s1
 	fmul	s0, s1, s0
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	scvtf	s1, w1
 	ucvtf	s2, w0
 	fdiv	s1, s2, s1
 	fmul	s0, s1, s0
 	ret
-                                        // -- End function
+

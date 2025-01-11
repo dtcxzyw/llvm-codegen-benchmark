@@ -1,4 +1,4 @@
-func0000000000001881:                   # @func0000000000001881
+func0000000000001881:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -7,7 +7,8 @@ func0000000000001881:                   # @func0000000000001881
 	sets	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000002921:                   # @func0000000000002921
+
+func0000000000002921:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setae	%cl
@@ -16,7 +17,8 @@ func0000000000002921:                   # @func0000000000002921
 	setns	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000002901:                   # @func0000000000002901
+
+func0000000000002901:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -25,7 +27,8 @@ func0000000000002901:                   # @func0000000000002901
 	setg	%al
 	cmovel	%ecx, %eax
 	retq
-func00000000000018a1:                   # @func00000000000018a1
+
+func00000000000018a1:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setbe	%cl
@@ -34,7 +37,8 @@ func00000000000018a1:                   # @func00000000000018a1
 	setle	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000002941:                   # @func0000000000002941
+
+func0000000000002941:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -43,7 +47,8 @@ func0000000000002941:                   # @func0000000000002941
 	setg	%al
 	cmovel	%ecx, %eax
 	retq
-func00000000000018e1:                   # @func00000000000018e1
+
+func00000000000018e1:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setle	%cl
@@ -52,7 +57,8 @@ func00000000000018e1:                   # @func00000000000018e1
 	setle	%al
 	cmovel	%ecx, %eax
 	retq
-func00000000000028c1:                   # @func00000000000028c1
+
+func00000000000028c1:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -61,7 +67,8 @@ func00000000000028c1:                   # @func00000000000028c1
 	setg	%al
 	cmovel	%ecx, %eax
 	retq
-func00000000000018c1:                   # @func00000000000018c1
+
+func00000000000018c1:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -70,7 +77,8 @@ func00000000000018c1:                   # @func00000000000018c1
 	sets	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000002961:                   # @func0000000000002961
+
+func0000000000002961:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setge	%cl
@@ -79,7 +87,8 @@ func0000000000002961:                   # @func0000000000002961
 	setns	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000003141:                   # @func0000000000003141
+
+func0000000000003141:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -88,7 +97,8 @@ func0000000000003141:                   # @func0000000000003141
 	setne	%al
 	cmovel	%ecx, %eax
 	retq
-func0000000000001961:                   # @func0000000000001961
+
+func0000000000001961:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
 	setge	%cl
@@ -97,3 +107,4 @@ func0000000000001961:                   # @func0000000000001961
 	setle	%al
 	cmovel	%ecx, %eax
 	retq
+

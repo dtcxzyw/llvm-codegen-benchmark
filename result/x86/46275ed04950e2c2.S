@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movl	%edx, %ecx
 	movl	%edx, %eax
 	cltd
@@ -7,7 +7,8 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %ecx
 	movl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%edx, %ecx
 	movl	%edx, %eax
 	cltd
@@ -16,7 +17,8 @@ func0000000000000004:                   # @func0000000000000004
 	addl	%edi, %ecx
 	movl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	%edx, %ecx
 	movl	%edx, %eax
 	cltd
@@ -25,3 +27,4 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %ecx
 	movl	%ecx, %eax
 	retq
+

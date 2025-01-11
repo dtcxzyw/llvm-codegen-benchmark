@@ -1,4 +1,4 @@
-func0000000000000204:                   # @func0000000000000204
+func0000000000000204:
 	decq	%rdx
 	xorl	%eax, %eax
 	subq	$2, %rdx
@@ -8,3 +8,4 @@ func0000000000000204:                   # @func0000000000000204
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

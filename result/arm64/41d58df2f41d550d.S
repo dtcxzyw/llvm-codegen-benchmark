@@ -1,21 +1,15 @@
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+func0000000000000027:
 	add	x8, x0, x1
 	clz	x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	add	x8, x0, x1
 	clz	x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	add	x8, x0, x1
 	clz	x0, x8
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

@@ -1,6 +1,5 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	tst	w0, #0x2
 	fcsel	s0, s0, s1, eq
 	ret
-                                        // -- End function
+

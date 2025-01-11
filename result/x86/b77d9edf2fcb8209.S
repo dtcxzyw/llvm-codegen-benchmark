@@ -1,30 +1,36 @@
-func0000000000000041:                   # @func0000000000000041
-	movl	$2031, %eax                     # imm = 0x7EF
+func0000000000000041:
+	movl	$2031, %eax
 	btl	%edi, %eax
 	setae	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	movl	$5, %eax
 	btl	%edi, %eax
 	setae	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	movl	$12, %eax
 	btl	%edi, %eax
 	setb	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
-	movl	$510, %eax                      # imm = 0x1FE
+
+func000000000000006c:
+	movl	$510, %eax
 	btl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpl	$3, %edi
 	setae	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
-	testl	$-2147483645, %eax              # imm = 0x80000003
+	testl	$-2147483645, %eax
 	setg	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	slli	a2, a2, 48
 	snez	a0, a0
 	srli	a2, a2, 48
@@ -6,7 +6,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a3, 16
 	snez	a1, a1
 	addiw	a3, a3, -1
@@ -16,3 +17,4 @@ func000000000000018c:                   # @func000000000000018c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

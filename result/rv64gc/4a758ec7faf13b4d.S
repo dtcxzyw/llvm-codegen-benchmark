@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	sub	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
@@ -7,9 +7,10 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 1
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sub	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
@@ -18,5 +19,6 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a1, a1, 1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000ab8:                   # @func0000000000000ab8
+func0000000000000ab8:
 	subw	a2, a0, a2
 	subw	a0, a0, a1
 	negw	a1, a2
@@ -7,7 +7,8 @@ func0000000000000ab8:                   # @func0000000000000ab8
 	max	a0, a0, a3
 	sltu	a0, a1, a0
 	ret
-func0000000000000ab4:                   # @func0000000000000ab4
+
+func0000000000000ab4:
 	subw	a2, a0, a2
 	subw	a0, a0, a1
 	negw	a1, a2
@@ -16,3 +17,4 @@ func0000000000000ab4:                   # @func0000000000000ab4
 	max	a0, a0, a3
 	sltu	a0, a0, a1
 	ret
+

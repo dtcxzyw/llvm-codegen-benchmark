@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	xorl	%ecx, %ecx
 	cmpb	$125, %dl
 	sete	%cl
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	leal	(%rsi,%rdi), %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	xorl	%ecx, %ecx
 	cmpb	$125, %dl
 	sete	%cl
@@ -14,7 +15,8 @@ func0000000000000025:                   # @func0000000000000025
 	leal	(%rsi,%rdi), %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	xorl	%ecx, %ecx
 	cmpb	$62, %dl
 	sete	%cl
@@ -22,3 +24,4 @@ func0000000000000024:                   # @func0000000000000024
 	leal	(%rsi,%rdi), %eax
 	subl	%ecx, %eax
 	retq
+

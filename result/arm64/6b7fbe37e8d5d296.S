@@ -1,5 +1,4 @@
-func0000000000000a21:                   // @func0000000000000a21
-// %bb.0:                               // %entry
+func0000000000000a21:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -7,9 +6,8 @@ func0000000000000a21:                   // @func0000000000000a21
 	cmp	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000a01:                   // @func0000000000000a01
-// %bb.0:                               // %entry
+
+func0000000000000a01:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -17,9 +15,8 @@ func0000000000000a01:                   // @func0000000000000a01
 	cmp	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000a0a:                   // @func0000000000000a0a
-// %bb.0:                               // %entry
+
+func0000000000000a0a:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -27,9 +24,8 @@ func0000000000000a0a:                   // @func0000000000000a0a
 	cmp	w8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000a2a:                   // @func0000000000000a2a
-// %bb.0:                               // %entry
+
+func0000000000000a2a:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -37,9 +33,8 @@ func0000000000000a2a:                   // @func0000000000000a2a
 	cmp	w8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000c0a:                   // @func0000000000000c0a
-// %bb.0:                               // %entry
+
+func0000000000000c0a:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -47,9 +42,8 @@ func0000000000000c0a:                   // @func0000000000000c0a
 	mvn	w8, w8
 	lsr	w0, w8, #31
 	ret
-                                        // -- End function
-func0000000000000161:                   // @func0000000000000161
-// %bb.0:                               // %entry
+
+func0000000000000161:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -58,9 +52,8 @@ func0000000000000161:                   // @func0000000000000161
 	cmp	w8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000c21:                   // @func0000000000000c21
-// %bb.0:                               // %entry
+
+func0000000000000c21:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -68,9 +61,8 @@ func0000000000000c21:                   // @func0000000000000c21
 	cmp	w0, w8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000c2a:                   // @func0000000000000c2a
-// %bb.0:                               // %entry
+
+func0000000000000c2a:
 	sdiv	w8, w1, w2
 	msub	w8, w8, w2, w1
 	cmp	w8, #0
@@ -78,4 +70,4 @@ func0000000000000c2a:                   // @func0000000000000c2a
 	cmp	w8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -8,7 +8,8 @@ func0000000000000020:                   # @func0000000000000020
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -18,7 +19,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	fli.s	fa5, inf
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -28,7 +30,8 @@ func000000000000001c:                   # @func000000000000001c
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	fli.s	fa5, 0.25
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -38,7 +41,8 @@ func0000000000000010:                   # @func0000000000000010
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -48,7 +52,8 @@ func0000000000000014:                   # @func0000000000000014
 	vmsne.vi	v8, v8, 0
 	vmandn.mm	v0, v8, v9
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fli.s	fa5, inf
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
@@ -60,3 +65,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmsne.vi	v8, v8, 0
 	vmandn.mm	v0, v8, v9
 	ret
+

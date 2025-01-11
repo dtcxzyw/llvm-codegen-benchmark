@@ -1,4 +1,4 @@
-func00000000000006c2:                   # @func00000000000006c2
+func00000000000006c2:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
 	fli.d	fa5, min
@@ -6,7 +6,8 @@ func00000000000006c2:                   # @func00000000000006c2
 	vmflt.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v14
 	ret
-func00000000000006c8:                   # @func00000000000006c8
+
+func00000000000006c8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
 	fmv.d.x	fa5, zero
@@ -14,3 +15,4 @@ func00000000000006c8:                   # @func00000000000006c8
 	vmfeq.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v14
 	ret
+

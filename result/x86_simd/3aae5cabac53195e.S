@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vextractf64x4	$1, %zmm1, %ymm4
 	vcvtps2pd	%ymm4, %zmm4
 	vcvtps2pd	%ymm1, %zmm5
@@ -7,7 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	kunpckbw	%k0, %k1, %k1
 	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vextractf64x4	$1, %zmm1, %ymm4
 	vcvtps2pd	%ymm4, %zmm4
 	vcvtps2pd	%ymm1, %zmm5
@@ -16,3 +17,4 @@ func0000000000000002:                   # @func0000000000000002
 	kunpckbw	%k0, %k1, %k1
 	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
 	retq
+

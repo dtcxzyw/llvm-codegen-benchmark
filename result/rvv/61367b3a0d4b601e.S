@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -10,7 +10,8 @@ func0000000000000028:                   # @func0000000000000028
 	vzext.vf8	v12, v8
 	vmsltu.vv	v0, v12, v10
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -22,7 +23,8 @@ func0000000000000024:                   # @func0000000000000024
 	vzext.vf8	v12, v8
 	vmsltu.vv	v0, v10, v12
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -34,7 +36,8 @@ func0000000000000068:                   # @func0000000000000068
 	vzext.vf8	v12, v8
 	vmsltu.vv	v0, v12, v10
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -46,7 +49,8 @@ func0000000000000026:                   # @func0000000000000026
 	vzext.vf8	v12, v8
 	vmslt.vv	v0, v10, v12
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -58,3 +62,4 @@ func0000000000000061:                   # @func0000000000000061
 	vzext.vf8	v12, v8
 	vmseq.vv	v0, v10, v12
 	ret
+

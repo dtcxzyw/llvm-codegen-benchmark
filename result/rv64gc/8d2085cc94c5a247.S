@@ -1,4 +1,4 @@
-func0000000000000de1:                   # @func0000000000000de1
+func0000000000000de1:
 	addi	a2, a2, 1
 	srli	a2, a2, 1
 	slli	a3, a2, 3
@@ -8,7 +8,8 @@ func0000000000000de1:                   # @func0000000000000de1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000d61:                   # @func0000000000000d61
+
+func0000000000000d61:
 	addi	a2, a2, 1
 	srli	a2, a2, 1
 	li	a3, 80
@@ -17,3 +18,4 @@ func0000000000000d61:                   # @func0000000000000d61
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

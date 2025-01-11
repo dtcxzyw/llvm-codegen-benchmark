@@ -1,7 +1,6 @@
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+func0000000000000012:
 	sub	x9, x0, x1
-	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+	mov	x8, #1152921504606846975
 	asr	x9, x9, #3
 	cmp	x9, #1
 	csinc	x10, x9, xzr, hi
@@ -9,11 +8,10 @@ func0000000000000012:                   // @func0000000000000012
 	cmp	x9, x8
 	csel	x0, x9, x8, lo
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	sub	x9, x0, x1
-	mov	x8, #4611686018427387903        // =0x3fffffffffffffff
+	mov	x8, #4611686018427387903
 	asr	x9, x9, #1
 	cmp	x9, #1
 	csinc	x10, x9, xzr, hi
@@ -21,11 +19,10 @@ func0000000000000010:                   // @func0000000000000010
 	cmp	x9, x8
 	csel	x0, x9, x8, lo
 	ret
-                                        // -- End function
-func0000000000000016:                   // @func0000000000000016
-// %bb.0:                               // %entry
+
+func0000000000000016:
 	sub	x9, x0, x1
-	mov	x8, #1152921504606846975        // =0xfffffffffffffff
+	mov	x8, #1152921504606846975
 	asr	x9, x9, #3
 	cmp	x9, #1
 	csinc	x10, x9, xzr, hi
@@ -33,4 +30,4 @@ func0000000000000016:                   // @func0000000000000016
 	cmp	x9, x8
 	csel	x0, x9, x8, lo
 	ret
-                                        // -- End function
+

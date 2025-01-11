@@ -1,4 +1,4 @@
-func00000000000000c3:                   # @func00000000000000c3
+func00000000000000c3:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vctz.v	v10, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -8,3 +8,4 @@ func00000000000000c3:                   # @func00000000000000c3
 	vnot.v	v8, v8
 	vsll.vi	v8, v8, 3
 	ret
+

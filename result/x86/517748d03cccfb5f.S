@@ -1,25 +1,27 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000141:
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax
-	imull	$-1227133513, %eax, %eax        # imm = 0xB6DB6DB7
-	cmpl	$613566757, %eax                # imm = 0x24924925
+	imull	$-1227133513, %eax, %eax
+	cmpl	$613566757, %eax
 	setb	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	leal	-1000000000(%rdi), %eax
-	cmpl	$1000000000, %edi               # imm = 0x3B9ACA00
+	cmpl	$1000000000, %edi
 	cmovbl	%edi, %eax
-	imull	$1757569337, %eax, %eax         # imm = 0x68C26139
+	imull	$1757569337, %eax, %eax
 	rorxl	$6, %eax, %eax
-	cmpl	$4295, %eax                     # imm = 0x10C7
+	cmpl	$4295, %eax
 	setb	%al
 	retq
-func0000000000000558:                   # @func0000000000000558
+
+func0000000000000558:
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax
-	imulq	$613566757, %rax, %rcx          # imm = 0x24924925
+	imulq	$613566757, %rax, %rcx
 	shrq	$32, %rcx
 	movl	%eax, %edx
 	subl	%ecx, %edx
@@ -32,11 +34,13 @@ func0000000000000558:                   # @func0000000000000558
 	cmpl	$2, %edx
 	setae	%al
 	retq
-func0000000000000541:                   # @func0000000000000541
+
+func0000000000000541:
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax
-	imull	$-1227133513, %eax, %eax        # imm = 0xB6DB6DB7
-	cmpl	$613566757, %eax                # imm = 0x24924925
+	imull	$-1227133513, %eax, %eax
+	cmpl	$613566757, %eax
 	setb	%al
 	retq
+

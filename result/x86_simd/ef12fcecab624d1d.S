@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpmovqd	%ymm2, %xmm2
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm1, %ecx
@@ -24,3 +24,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
+

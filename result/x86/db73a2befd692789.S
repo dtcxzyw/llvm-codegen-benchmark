@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3fe0000000000000
+func0000000000000004:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -8,9 +8,10 @@ func0000000000000004:                   # @func0000000000000004
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	retq
+
 .LCPI1_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x3fe0000000000000
+func0000000000000008:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -18,9 +19,10 @@ func0000000000000008:                   # @func0000000000000008
 	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
+
 .LCPI2_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000007:                   # @func0000000000000007
+	.quad	0x3fe0000000000000
+func0000000000000007:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -28,3 +30,4 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
+

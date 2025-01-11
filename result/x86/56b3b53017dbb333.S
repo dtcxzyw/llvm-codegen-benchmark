@@ -1,12 +1,13 @@
-func0000000000000021:                   # @func0000000000000021
-	cmpl	$772, %esi                      # imm = 0x304
-	movl	$771, %ecx                      # imm = 0x303
+func0000000000000021:
+	cmpl	$772, %esi
+	movl	$771, %ecx
 	cmovnel	%esi, %ecx
 	testl	%edi, %edi
-	movl	$769, %eax                      # imm = 0x301
+	movl	$769, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	testl	%esi, %esi
 	movl	$4, %ecx
 	cmovnel	%esi, %ecx
@@ -14,3 +15,4 @@ func0000000000000024:                   # @func0000000000000024
 	movl	$2, %eax
 	cmovael	%ecx, %eax
 	retq
+

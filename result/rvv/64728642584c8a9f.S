@@ -1,4 +1,4 @@
-func0000000000000032:                   # @func0000000000000032
+func0000000000000032:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v24, v16, fa5
@@ -7,7 +7,8 @@ func0000000000000032:                   # @func0000000000000032
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v8, v16, v0
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v24, v16, fa5
@@ -16,7 +17,8 @@ func000000000000003c:                   # @func000000000000003c
 	vmfle.vv	v0, v8, v16
 	vmerge.vvm	v8, v8, v16, v0
 	ret
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v24, v16, fa5
@@ -25,7 +27,8 @@ func0000000000000035:                   # @func0000000000000035
 	vmfle.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	ret
-func000000000000003a:                   # @func000000000000003a
+
+func000000000000003a:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v24, v16, fa5
@@ -34,7 +37,8 @@ func000000000000003a:                   # @func000000000000003a
 	vmfle.vv	v0, v16, v8
 	vmerge.vvm	v8, v8, v16, v0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v16, fa5
@@ -42,3 +46,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v8, v16, v0
 	ret
+

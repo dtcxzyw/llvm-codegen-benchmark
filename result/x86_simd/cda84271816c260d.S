@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000005:                   # @func0000000000000005
+	.quad	0x7fffffffffffffff
+func0000000000000005:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
@@ -8,9 +8,10 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func000000000000001a:                   # @func000000000000001a
+	.quad	0x7fffffffffffffff
+func000000000000001a:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
@@ -18,9 +19,10 @@ func000000000000001a:                   # @func000000000000001a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000015:                   # @func0000000000000015
+	.quad	0x7fffffffffffffff
+func0000000000000015:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
@@ -28,9 +30,10 @@ func0000000000000015:                   # @func0000000000000015
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000012:                   # @func0000000000000012
+	.quad	0x7fffffffffffffff
+func0000000000000012:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI3_0(%rip){1to8}, %zmm1, %zmm1
@@ -38,9 +41,10 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000014:                   # @func0000000000000014
+	.quad	0x7fffffffffffffff
+func0000000000000014:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI4_0(%rip){1to8}, %zmm1, %zmm1
@@ -48,9 +52,10 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x7fffffffffffffff
+func0000000000000004:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI5_0(%rip){1to8}, %zmm1, %zmm1
@@ -58,9 +63,10 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func000000000000000b:                   # @func000000000000000b
+	.quad	0x7fffffffffffffff
+func000000000000000b:
 	vcvtdq2pd	%ymm2, %zmm2
 	vsubpd	%zmm2, %zmm1, %zmm1
 	vandpd	.LCPI6_0(%rip){1to8}, %zmm1, %zmm1
@@ -68,3 +74,4 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vmovd	%xmm0, %eax
 	shrl	$23, %eax
 	movb	$126, %cl
@@ -6,3 +6,4 @@ func000000000000000c:                   # @func000000000000000c
 	shrxl	%ecx, %esi, %eax
 	orl	%edi, %eax
 	retq
+

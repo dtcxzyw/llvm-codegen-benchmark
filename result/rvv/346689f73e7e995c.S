@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	lui	a0, 163151
 	addiw	a0, a0, -1201
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,3 +10,4 @@ func0000000000000019:                   # @func0000000000000019
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
+

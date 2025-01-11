@@ -1,4 +1,4 @@
-func0000000000002108:                   # @func0000000000002108
+func0000000000002108:
 	li	a0, 255
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v9, v12, a0
@@ -11,7 +11,8 @@ func0000000000002108:                   # @func0000000000002108
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
 	ret
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v9, v10, 0
@@ -19,11 +20,12 @@ func000000000000318c:                   # @func000000000000318c
 	vmsne.vi	v8, v8, 0
 	vmor.mm	v0, v9, v8
 	ret
+
 .LCPI2_0:
-	.quad	8350346493797257175             # 0x73e263e4e236cfd7
+	.quad	8350346493797257175
 .LCPI2_1:
-	.quad	-8753079529849560484            # 0x8686d08b1c92e25c
-func0000000000003181:                   # @func0000000000003181
+	.quad	-8753079529849560484
+func0000000000003181:
 	lui	a0, %hi(.LCPI2_0)
 	lui	a1, %hi(.LCPI2_1)
 	ld	a0, %lo(.LCPI2_0)(a0)
@@ -36,7 +38,8 @@ func0000000000003181:                   # @func0000000000003181
 	vmseq.vi	v8, v8, 0
 	vmor.mm	v0, v9, v8
 	ret
-func000000000000318a:                   # @func000000000000318a
+
+func000000000000318a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v9, v10, 0
@@ -44,3 +47,4 @@ func000000000000318a:                   # @func000000000000318a
 	vmsgt.vi	v8, v8, 0
 	vmor.mm	v0, v9, v8
 	ret
+

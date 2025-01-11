@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	cmpl	$1, %edx
 	sete	%al
 	orb	%dil, %sil
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	cmpl	$26, %edx
 	setb	%al
 	orb	%dil, %sil
@@ -14,3 +15,4 @@ func0000000000000020:                   # @func0000000000000020
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	retq
+

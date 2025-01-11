@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000004c:
 	negl	%edx
 	cmpl	%edx, %esi
 	cmovgel	%edx, %esi
@@ -7,7 +7,8 @@ func000000000000004c:                   # @func000000000000004c
 	testl	%esi, %esi
 	setne	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	negl	%edx
 	cmpl	%edx, %esi
 	cmovgel	%edx, %esi
@@ -16,3 +17,4 @@ func000000000000004a:                   # @func000000000000004a
 	testl	%esi, %esi
 	setns	%al
 	retq
+

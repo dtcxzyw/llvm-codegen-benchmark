@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	fmov	s1, #1.00000000
 	movi	d2, #0000000000000000
 	fcmp	s0, s1
@@ -8,9 +7,8 @@ func0000000000000042:                   // @func0000000000000042
 	fcsel	s0, s2, s0, mi
 	fsub	s0, s1, s0
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	movi	d1, #0000000000000000
 	fcmp	s0, #0.0
 	fcsel	s0, s1, s0, mi
@@ -19,9 +17,8 @@ func0000000000000024:                   // @func0000000000000024
 	fcsel	s0, s1, s0, gt
 	fsub	s0, s1, s0
 	ret
-                                        // -- End function
-func00000000000000ca:                   // @func00000000000000ca
-// %bb.0:                               // %entry
+
+func00000000000000ca:
 	fmov	s1, #1.00000000
 	movi	d2, #0000000000000000
 	fcmp	s0, s1
@@ -30,4 +27,4 @@ func00000000000000ca:                   // @func00000000000000ca
 	fcsel	s0, s2, s0, ls
 	fsub	s0, s1, s0
 	ret
-                                        // -- End function
+

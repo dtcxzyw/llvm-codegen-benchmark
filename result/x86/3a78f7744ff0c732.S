@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	shrq	$2, %rdx
 	xorl	%eax, %eax
 	subq	%rsi, %rdx
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	shrq	$3, %rdx
 	xorl	%eax, %eax
 	subq	%rsi, %rdx
@@ -14,7 +15,8 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	shrq	$4, %rdx
 	xorl	%eax, %eax
 	subq	%rsi, %rdx
@@ -22,3 +24,4 @@ func0000000000000007:                   # @func0000000000000007
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
 	retq
+

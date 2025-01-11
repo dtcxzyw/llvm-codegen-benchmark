@@ -1,11 +1,9 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	msub	x1, x2, x4, x0
-	mov	x0, #0                          // =0x0
+	mov	x0, #0
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	umulh	x8, x2, x4
 	mul	x9, x2, x4
 	madd	x8, x2, x5, x8
@@ -15,9 +13,8 @@ func0000000000000001:                   // @func0000000000000001
 	sbc	x8, x1, x8
 	extr	x1, x8, x9, #63
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	umulh	x8, x2, x4
 	mul	x9, x2, x4
 	madd	x8, x2, x5, x8
@@ -27,4 +24,4 @@ func0000000000000003:                   // @func0000000000000003
 	sbc	x8, x1, x8
 	extr	x1, x8, x9, #63
 	ret
-                                        // -- End function
+

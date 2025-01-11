@@ -1,4 +1,4 @@
-func0000000000006042:                   # @func0000000000006042
+func0000000000006042:
 	testq	%rdx, %rdx
 	setne	%cl
 	testq	%rsi, %rsi
@@ -8,44 +8,49 @@ func0000000000006042:                   # @func0000000000006042
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000006070:                   # @func0000000000006070
+
+func0000000000006070:
 	testq	%rdx, %rdx
 	setne	%al
 	cmpq	$2, %rsi
 	sete	%cl
 	orb	%al, %cl
-	cmpq	$524288, %rdi                   # imm = 0x80000
+	cmpq	$524288, %rdi
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000004210:                   # @func0000000000004210
-	cmpq	$4095, %rdx                     # imm = 0xFFF
+
+func0000000000004210:
+	cmpq	$4095, %rdx
 	setae	%al
-	cmpq	$4095, %rsi                     # imm = 0xFFF
+	cmpq	$4095, %rsi
 	setae	%cl
 	orb	%al, %cl
-	cmpq	$4097, %rdi                     # imm = 0x1001
+	cmpq	$4097, %rdi
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000004130:                   # @func0000000000004130
-	cmpq	$4097, %rdx                     # imm = 0x1001
+
+func0000000000004130:
+	cmpq	$4097, %rdx
 	setae	%cl
-	cmpq	$-32768, %rsi                   # imm = 0x8000
+	cmpq	$-32768, %rsi
 	setb	%dl
 	cmpq	$2, %rdi
 	setae	%al
 	orb	%cl, %al
 	orb	%dl, %al
 	retq
-func0000000000005290:                   # @func0000000000005290
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+
+func0000000000005290:
+	movl	$4294967295, %eax
 	cmpq	%rax, %rdx
 	setg	%cl
 	cmpq	%rax, %rsi
 	setg	%dl
 	orb	%cl, %dl
-	cmpq	$65536, %rdi                    # imm = 0x10000
+	cmpq	$65536, %rdi
 	setae	%al
 	orb	%dl, %al
 	retq
+

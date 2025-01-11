@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllw	$7, %xmm0, %xmm0
@@ -7,9 +7,10 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	255                             # 0xff
-func0000000000000022:                   # @func0000000000000022
+	.long	255
+func0000000000000022:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -17,3 +18,4 @@ func0000000000000022:                   # @func0000000000000022
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

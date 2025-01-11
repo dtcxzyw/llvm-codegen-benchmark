@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-	.short	8194                            # 0x2002
-func00000000000000a1:                   # @func00000000000000a1
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+	.short	8194
+func00000000000000a1:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$8, %ymm2, %ymm0
@@ -24,7 +24,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$8, %ymm2, %ymm0
@@ -34,24 +35,25 @@ func00000000000000aa:                   # @func00000000000000aa
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-	.short	3                               # 0x3
-func00000000000000a8:                   # @func00000000000000a8
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+func00000000000000a8:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$8, %ymm2, %ymm0
@@ -60,3 +62,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,10 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a0, a0, 1
 	lui	a1, 2
 	addiw	a1, a1, 1808
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a0, a0, 1
 	addi	a0, a0, 15
 	srai	a1, a0, 63
@@ -12,13 +12,14 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	srai	a0, a0, 4
 	ret
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	slli	a0, a0, 1
 	lui	a1, 2
 	addiw	a1, a1, 1808
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	slli	a0, a0, 1
 	addi	a0, a0, 15
 	srai	a1, a0, 63
@@ -26,3 +27,4 @@ func000000000000004a:                   # @func000000000000004a
 	add	a0, a0, a1
 	srai	a0, a0, 4
 	ret
+

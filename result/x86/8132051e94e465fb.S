@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	movzwl	%dx, %ecx
 	testq	%rsi, %rsi
 	movl	$1, %eax
@@ -6,3 +6,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	imulq	%rdi, %rdi
 	imulq	%rdi, %rax
 	retq
+

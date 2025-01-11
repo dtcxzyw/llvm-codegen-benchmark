@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -11,9 +11,10 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v9, v10, 0
 	vmin.vv	v8, v9, v8
 	ret
+
 .LCPI1_0:
-	.quad	6148914691236517206             # 0x5555555555555556
-func0000000000000000:                   # @func0000000000000000
+	.quad	6148914691236517206
+func0000000000000000:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -26,3 +27,4 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v10, 0
 	vmin.vv	v8, v9, v8
 	ret
+

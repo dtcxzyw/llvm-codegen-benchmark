@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vvm	v10, v10, v8, v0
 	lui	a0, 16
@@ -12,7 +12,8 @@ func0000000000000034:                   # @func0000000000000034
 	vmv1r.v	v0, v8
 	vmerge.vvm	v8, v10, v9, v0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vvm	v10, v10, v8, v0
 	lui	a0, 16
@@ -26,3 +27,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmv1r.v	v0, v8
 	vmerge.vvm	v8, v10, v9, v0
 	ret
+

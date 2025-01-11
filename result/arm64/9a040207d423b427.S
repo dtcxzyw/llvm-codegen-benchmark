@@ -1,8 +1,7 @@
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
+func000000000000001e:
 	fmov	x9, d0
-	mov	x8, #-4503599627370496          // =0xfff0000000000000
-	mov	x11, #4503599627370495          // =0xfffffffffffff
+	mov	x8, #-4503599627370496
+	mov	x11, #4503599627370495
 	ands	x10, x9, #0x7fffffffffffffff
 	add	x8, x10, x8
 	sub	x10, x9, #1
@@ -15,4 +14,4 @@ func000000000000001e:                   // @func000000000000001e
 	csinc	w8, w10, wzr, lt
 	and	w0, w8, w0
 	ret
-                                        // -- End function
+

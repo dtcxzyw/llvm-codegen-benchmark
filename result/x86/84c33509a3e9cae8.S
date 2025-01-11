@@ -1,6 +1,7 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	xorb	$1, %dil
-	testl	$256, %esi                      # imm = 0x100
+	testl	$256, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
+

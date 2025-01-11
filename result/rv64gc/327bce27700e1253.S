@@ -1,33 +1,36 @@
 .LCPI0_0:
-	.quad	0x3f91df46a2529d39              # double 0.017453292519943295
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x3f91df46a2529d39
+func0000000000000001:
 	sext.w	a0, a0
 	beqz	a0, .LBB0_2
 	fmv.d	fa0, fa1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fmul.d	fa0, fa0, fa5
 	ret
+
 .LCPI1_0:
-	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308
-func0000000000000006:                   # @func0000000000000006
+	.quad	0x7fefffffffffffff
+func0000000000000006:
 	sext.w	a0, a0
 	bltz	a0, .LBB1_2
 	fmv.d	fa0, fa1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fmul.d	fa0, fa0, fa5
 	ret
+
 .LCPI2_0:
-	.quad	0x3e112e0be826d695              # double 1.0000000000000001E-9
-func000000000000000a:                   # @func000000000000000a
+	.quad	0x3e112e0be826d695
+func000000000000000a:
 	sext.w	a0, a0
 	bgtz	a0, .LBB2_2
 	fmv.d	fa0, fa1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fmul.d	fa0, fa0, fa5
 	ret
+

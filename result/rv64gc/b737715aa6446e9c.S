@@ -1,4 +1,4 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000000da:
 	lui	a2, 315653
 	slli	a2, a2, 1
 	addi	a2, a2, -1403
@@ -10,3 +10,4 @@ func00000000000000da:                   # @func00000000000000da
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
+

@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.quad	17179869172                     # 0x3fffffff4
+	.quad	17179869172
 .LCPI0_1:
-	.long	5                               # 0x5
-func0000000000000308:                   # @func0000000000000308
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.long	5
+func0000000000000308:
+	vpmovzxdq	%xmm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -11,10 +11,11 @@ func0000000000000308:                   # @func0000000000000308
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	34359738364                     # 0x7fffffffc
-func0000000000000301:                   # @func0000000000000301
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.quad	34359738364
+func0000000000000301:
+	vpmovzxdq	%xmm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -22,10 +23,11 @@ func0000000000000301:                   # @func0000000000000301
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	34359738364                     # 0x7fffffffc
-func000000000000030a:                   # @func000000000000030a
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.quad	34359738364
+func000000000000030a:
+	vpmovzxdq	%xmm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -33,10 +35,11 @@ func000000000000030a:                   # @func000000000000030a
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	17179869176                     # 0x3fffffff8
-func000000000000070a:                   # @func000000000000070a
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.quad	17179869176
+func000000000000070a:
+	vpmovzxdq	%xmm0, %ymm0
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -44,3 +47,4 @@ func000000000000070a:                   # @func000000000000070a
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,45 +1,38 @@
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+func000000000000000f:
 	add	w8, w0, w1, uxth
-	add	w0, w8, #16, lsl #12            // =65536
+	add	w0, w8, #16, lsl #12
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	add	w8, w0, w1, uxth
 	add	w0, w8, #2
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	add	w8, w0, w1, uxth
-	add	w0, w8, #16, lsl #12            // =65536
+	add	w0, w8, #16, lsl #12
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	add	w8, w0, w1, uxth
-	mov	w9, #-7424                      // =0xffffe300
+	mov	w9, #-7424
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	add	w8, w0, w1, uxth
-	sub	w0, w8, #16, lsl #12            // =65536
+	sub	w0, w8, #16, lsl #12
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	add	w8, w0, w1, uxth
-	mov	w9, #537985024                  // =0x20110000
+	mov	w9, #537985024
 	add	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	and	w8, w1, #0xffff
-	add	w9, w0, #14, lsl #12            // =57344
+	add	w9, w0, #14, lsl #12
 	orr	w0, w9, w8
 	ret
-                                        // -- End function
+

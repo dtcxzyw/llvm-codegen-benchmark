@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x41efffffffe00000              # double 4294967295
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x41efffffffe00000
+func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, %hi(.LCPI0_0)
@@ -9,9 +9,10 @@ func0000000000000000:                   # @func0000000000000000
 .LBB0_2:
 	fcvt.d.wu	fa0, a1
 	ret
+
 .LCPI1_0:
-	.quad	0x404e000000000000              # double 60
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x404e000000000000
+func0000000000000001:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)
@@ -20,3 +21,4 @@ func0000000000000001:                   # @func0000000000000001
 .LBB1_2:
 	fcvt.d.wu	fa0, a1
 	ret
+

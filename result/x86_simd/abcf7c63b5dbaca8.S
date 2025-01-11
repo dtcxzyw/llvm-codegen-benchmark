@@ -1,4 +1,4 @@
-func0000000000000326:                   # @func0000000000000326
+func0000000000000326:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
 	vmovdqa	%ymm0, %ymm1
@@ -9,3 +9,4 @@ func0000000000000326:                   # @func0000000000000326
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

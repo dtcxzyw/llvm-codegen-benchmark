@@ -1,13 +1,14 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	leal	6145(%rdi,%rsi), %eax
 	cltq
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	orl	%esi, %edi
 	movl	%edi, %eax
 	incl	%eax
@@ -15,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	leal	1(%rdi,%rax), %eax
 	sarl	%eax
 	retq
+

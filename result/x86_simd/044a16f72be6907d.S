@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
@@ -7,9 +7,10 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	800                             # 0x320
-func0000000000000008:                   # @func0000000000000008
+	.long	800
+func0000000000000008:
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
@@ -18,7 +19,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000012aa:                   # @func00000000000012aa
+
+func00000000000012aa:
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
@@ -27,7 +29,8 @@ func00000000000012aa:                   # @func00000000000012aa
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000002aa:                   # @func00000000000002aa
+
+func00000000000002aa:
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
@@ -36,3 +39,4 @@ func00000000000002aa:                   # @func00000000000002aa
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

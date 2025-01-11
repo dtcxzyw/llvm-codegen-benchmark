@@ -1,22 +1,26 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	$2139095040, %eax               # imm = 0x7F800000
+	andl	$2147483647, %eax
+	cmpl	$2139095040, %eax
 	setl	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	cmpl	$2139095040, %eax               # imm = 0x7F800000
+	andl	$2147483647, %eax
+	cmpl	$2139095040, %eax
 	setge	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vmovd	%xmm0, %eax
-	testl	$2130706432, %eax               # imm = 0x7F000000
+	testl	$2130706432, %eax
 	setne	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vmovd	%xmm0, %eax
-	testl	$4194304, %eax                  # imm = 0x400000
+	testl	$4194304, %eax
 	sete	%al
 	retq
+

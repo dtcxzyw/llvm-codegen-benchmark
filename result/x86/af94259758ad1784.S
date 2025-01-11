@@ -1,4 +1,4 @@
-func0000000000000221:                   # @func0000000000000221
+func0000000000000221:
 	xorl	%eax, %eax
 	cmpb	$2, %sil
 	setae	%al
@@ -7,7 +7,8 @@ func0000000000000221:                   # @func0000000000000221
 	cmpb	$4, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	setne	%al
@@ -18,7 +19,8 @@ func0000000000000068:                   # @func0000000000000068
 	shll	$10, %ecx
 	leal	2(%rcx,%rax), %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	xorl	%eax, %eax
 	cmpb	$123, %sil
 	sete	%al
@@ -27,3 +29,4 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%cl
 	leal	4(%rax,%rcx,8), %eax
 	retq
+

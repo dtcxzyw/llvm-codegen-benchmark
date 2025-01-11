@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 28
 	vsll.vi	v10, v10, 20
@@ -8,7 +8,8 @@ func0000000000000030:                   # @func0000000000000030
 	addi	a0, a0, -273
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000375:                   # @func0000000000000375
+
+func0000000000000375:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 12
 	vsll.vi	v10, v10, 4
@@ -18,7 +19,8 @@ func0000000000000375:                   # @func0000000000000375
 	addi	a0, a0, -273
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 3
 	vsll.vi	v10, v10, 4
@@ -27,7 +29,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 224
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000003ff:                   # @func00000000000003ff
+
+func00000000000003ff:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	vadd.vv	v8, v12, v8
@@ -35,7 +38,8 @@ func00000000000003ff:                   # @func00000000000003ff
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 4
 	ret
-func000000000000037d:                   # @func000000000000037d
+
+func000000000000037d:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 8
@@ -45,7 +49,8 @@ func000000000000037d:                   # @func000000000000037d
 	addi	a0, a0, 96
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000037f:                   # @func000000000000037f
+
+func000000000000037f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 8
@@ -55,7 +60,8 @@ func000000000000037f:                   # @func000000000000037f
 	addi	a0, a0, 128
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 24
 	vsll.vi	v10, v10, 8
@@ -65,3 +71,4 @@ func0000000000000110:                   # @func0000000000000110
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0
 	ret
+

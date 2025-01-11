@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v10, v8, 0
 	lui	a0, 335544
@@ -18,3 +18,4 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 10
 	vnmsub.vx	v8, a0, v9
 	ret
+

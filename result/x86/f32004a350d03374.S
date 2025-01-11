@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000046:
 	leaq	-1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
@@ -6,7 +6,8 @@ func0000000000000046:                   # @func0000000000000046
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	leaq	-2(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-2(%rsi,%rax), %rax
@@ -14,9 +15,10 @@ func000000000000004a:                   # @func000000000000004a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leaq	41(%rsi), %rax
-	movabsq	$485440633518672411, %rcx       # imm = 0x6BCA1AF286BCA1B
+	movabsq	$485440633518672411, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -24,7 +26,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	leaq	-1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
@@ -32,7 +35,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000047:                   # @func0000000000000047
+
+func0000000000000047:
 	leaq	-1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	-1(%rsi,%rax), %rax
@@ -40,7 +44,8 @@ func0000000000000047:                   # @func0000000000000047
 	cmpq	%rax, %rdi
 	setle	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	1(%rsi,%rax), %rax
@@ -48,3 +53,4 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

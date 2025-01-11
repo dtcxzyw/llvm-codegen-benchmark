@@ -1,7 +1,8 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000061:                   # @func0000000000000061
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	.quad	1
+func0000000000000061:
+	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpaddq	%ymm2, %ymm2, %ymm0 {%k1}
 	retq
+

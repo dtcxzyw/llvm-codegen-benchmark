@@ -1,4 +1,4 @@
-func00000000000000c0:                   # @func00000000000000c0
+func00000000000000c0:
 	lui	a0, 349525
 	lui	a1, 699051
 	addiw	a0, a0, 1365
@@ -17,11 +17,12 @@ func00000000000000c0:                   # @func00000000000000c0
 	vnsrl.wi	v10, v8, 0
 	vadd.vv	v8, v10, v12
 	ret
+
 .LCPI1_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
+	.quad	3074457345618258603
 .LCPI1_1:
-	.quad	3234497591006606311             # 0x2ce33e6c02ce33e7
-func0000000000000000:                   # @func0000000000000000
+	.quad	3234497591006606311
+func0000000000000000:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, %hi(.LCPI1_1)
@@ -41,3 +42,4 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v10, v8, 0
 	vadd.vv	v8, v10, v12
 	ret
+

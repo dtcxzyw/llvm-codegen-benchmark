@@ -1,9 +1,10 @@
-func0000000000000061:                   # @func0000000000000061
-	andl	$65280, %esi                    # imm = 0xFF00
+func0000000000000061:
+	andl	$65280, %esi
 	addq	%rdi, %rsi
-	movabsq	$-1190112520884487201, %rax     # imm = 0xEF7BDEF7BDEF7BDF
+	movabsq	$-1190112520884487201, %rax
 	imulq	%rsi, %rax
-	movabsq	$595056260442243601, %rcx       # imm = 0x842108421084211
+	movabsq	$595056260442243601, %rcx
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
+

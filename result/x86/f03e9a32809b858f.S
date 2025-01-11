@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -6,7 +6,8 @@ func0000000000000061:                   # @func0000000000000061
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -14,7 +15,8 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	setne	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -22,7 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -30,7 +33,8 @@ func0000000000000041:                   # @func0000000000000041
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -38,7 +42,8 @@ func0000000000000021:                   # @func0000000000000021
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
 	xorl	%edx, %edx
@@ -46,3 +51,4 @@ func000000000000004c:                   # @func000000000000004c
 	testq	%rdx, %rdx
 	setne	%al
 	retq
+

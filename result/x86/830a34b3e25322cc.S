@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	cmpl	$255, %edx
 	movl	$255, %eax
 	cmovbl	%edx, %eax
@@ -6,7 +6,8 @@ func000000000000001f:                   # @func000000000000001f
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	cmpl	$255, %edx
 	movl	$255, %eax
 	cmovbl	%edx, %eax
@@ -14,7 +15,8 @@ func000000000000001b:                   # @func000000000000001b
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	cmpl	$255, %edx
 	movl	$255, %eax
 	cmovbl	%edx, %eax
@@ -22,7 +24,8 @@ func000000000000000b:                   # @func000000000000000b
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	cmpl	$255, %edx
 	movl	$255, %eax
 	cmovbl	%edx, %eax
@@ -30,7 +33,8 @@ func000000000000000f:                   # @func000000000000000f
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	cmpl	$255, %edx
 	movl	$255, %eax
 	cmovbl	%edx, %eax
@@ -38,3 +42,4 @@ func0000000000000008:                   # @func0000000000000008
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
+

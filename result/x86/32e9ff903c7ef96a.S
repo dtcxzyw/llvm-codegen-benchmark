@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	orb	$38, %dl
 	shrxq	%rdx, %rsi, %rax
 	andl	$3, %eax
@@ -6,3 +6,4 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%dil, %al
 	retq
+

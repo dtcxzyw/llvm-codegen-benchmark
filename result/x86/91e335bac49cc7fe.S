@@ -1,5 +1,5 @@
-func0000000000000145:                   # @func0000000000000145
-	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+func0000000000000145:
+	movabsq	$-9223372036854775808, %rax
 	subq	%rsi, %rax
 	negq	%rsi
 	andq	%rdx, %rsi
@@ -7,8 +7,9 @@ func0000000000000145:                   # @func0000000000000145
 	cmpq	%rax, %rsi
 	setbe	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+
+func0000000000000048:
+	movabsq	$-9223372036854775808, %rax
 	subq	%rsi, %rax
 	negq	%rsi
 	andq	%rdx, %rsi
@@ -16,3 +17,4 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
+

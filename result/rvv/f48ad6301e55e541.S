@@ -1,4 +1,4 @@
-func000000000000005c:                   # @func000000000000005c
+func000000000000005c:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	vmsne.vi	v16, v16, 0
@@ -6,7 +6,8 @@ func000000000000005c:                   # @func000000000000005c
 	vmfeq.vv	v17, v8, v8
 	vmor.mm	v0, v17, v16
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	vmsne.vi	v16, v16, 0
@@ -14,9 +15,10 @@ func000000000000001c:                   # @func000000000000001c
 	vmfeq.vv	v17, v8, v8
 	vmor.mm	v0, v17, v16
 	ret
+
 .LCPI2_0:
-	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
-func0000000000000018:                   # @func0000000000000018
+	.quad	0x43e0000000000000
+func0000000000000018:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e8, m1, ta, ma
@@ -26,7 +28,8 @@ func0000000000000018:                   # @func0000000000000018
 	vmfge.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fli.d	fa5, 1.0
@@ -35,7 +38,8 @@ func0000000000000016:                   # @func0000000000000016
 	vmfgt.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret
-func0000000000000056:                   # @func0000000000000056
+
+func0000000000000056:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fmv.d.x	fa5, zero
@@ -44,7 +48,8 @@ func0000000000000056:                   # @func0000000000000056
 	vmfgt.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret
-func000000000000005a:                   # @func000000000000005a
+
+func000000000000005a:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fmv.d.x	fa5, zero
@@ -53,7 +58,8 @@ func000000000000005a:                   # @func000000000000005a
 	vmflt.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v16, v16, 1
 	fmv.d.x	fa5, zero
@@ -62,3 +68,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmflt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
+

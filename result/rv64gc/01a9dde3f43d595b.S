@@ -1,8 +1,9 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	div	a1, a1, a2
 	slli	a1, a1, 3
 	bgtz	a0, .LBB0_2
 	li	a0, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sub	a0, a0, a1
 	ret
+

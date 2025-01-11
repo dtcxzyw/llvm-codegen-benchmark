@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	subq	%rdx, %rsi
 	sarq	$5, %rsi
 	andl	$1, %edi
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
 	notb	%dil
@@ -16,7 +17,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rax, %rsi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
 	notb	%dil
@@ -26,7 +28,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	subq	%rdx, %rsi
 	sarq	$4, %rsi
 	andl	$1, %edi
@@ -34,3 +37,4 @@ func0000000000000025:                   # @func0000000000000025
 	cmpq	%rdi, %rsi
 	setbe	%al
 	retq
+

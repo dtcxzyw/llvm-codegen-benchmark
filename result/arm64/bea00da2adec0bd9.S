@@ -1,5 +1,4 @@
-func00000000000000fc:                   // @func00000000000000fc
-// %bb.0:                               // %entry
+func00000000000000fc:
 	lsl	w8, w1, #8
 	and	w9, w0, #0xffff
 	sub	w8, w8, w1
@@ -7,4 +6,4 @@ func00000000000000fc:                   // @func00000000000000fc
 	and	w8, w8, #0xffff
 	udiv	w0, w8, w9
 	ret
-                                        // -- End function
+

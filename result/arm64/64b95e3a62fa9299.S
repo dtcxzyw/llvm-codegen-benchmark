@@ -1,16 +1,14 @@
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+func000000000000001c:
 	lsr	w8, w1, #1
 	and	w8, w8, #0x7ffe
 	add	x8, x0, x8
 	add	x0, x8, #1
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	lsr	w8, w1, #1
 	and	w8, w8, #0x7ffe
 	add	x8, x0, x8
 	add	x0, x8, #1
 	ret
-                                        // -- End function
+

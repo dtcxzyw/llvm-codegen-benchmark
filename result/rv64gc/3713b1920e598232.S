@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -37,7 +37,8 @@ func000000000000001d:                   # @func000000000000001d
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	andi	a2, a0, 1
 	li	a0, 1
 	bnez	a2, .LBB1_2
@@ -74,9 +75,10 @@ func000000000000001e:                   # @func000000000000001e
 	srli	a1, a1, 24
 	negw	a1, a1
 	sllw	a0, a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	andi	a2, a0, 1
 	li	a0, 1
 	bnez	a2, .LBB2_2
@@ -113,5 +115,6 @@ func000000000000001f:                   # @func000000000000001f
 	srli	a1, a1, 24
 	negw	a1, a1
 	sllw	a0, a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+

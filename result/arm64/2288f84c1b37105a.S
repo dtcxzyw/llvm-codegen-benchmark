@@ -1,113 +1,102 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	and	w9, w1, #0xff
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	cmp	w9, #144
 	cinc	w8, w8, ne
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	and	w9, w1, #0xff
-	mov	w8, #10                         // =0xa
+	mov	w8, #10
 	cmp	w9, #8
-	mov	w9, #6                          // =0x6
+	mov	w9, #6
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000094:                   // @func0000000000000094
-// %bb.0:                               // %entry
+
+func0000000000000094:
 	and	w9, w1, #0xff
-	mov	w8, #4                          // =0x4
+	mov	w8, #4
 	cmp	w9, #5
-	mov	w9, #2                          // =0x2
+	mov	w9, #2
 	csel	w8, w9, w8, lo
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
+
+func0000000000000034:
+	mov	w8, #2
 	tst	w1, #0xff
 	cinc	w8, w8, eq
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	and	w9, w1, #0xff
-	mov	w8, #8                          // =0x8
+	mov	w8, #8
 	cmp	w9, #20
 	csinc	w8, w8, wzr, hs
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	and	w9, w1, #0xff
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	cmp	w9, #1
 	cinc	w8, w8, ls
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
+
+func0000000000000038:
 	and	w9, w1, #0xff
-	mov	w8, #500                        // =0x1f4
+	mov	w8, #500
 	cmp	w9, #3
-	mov	w9, #900                        // =0x384
+	mov	w9, #900
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
-	mov	w8, #6                          // =0x6
+
+func0000000000000188:
+	mov	w8, #6
 	tst	w1, #0xff
-	mov	w9, #3                          // =0x3
+	mov	w9, #3
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	and	w9, w1, #0xff
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	cmp	w9, #1
-	mov	w9, #8                          // =0x8
+	mov	w9, #8
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+
+func0000000000000181:
 	and	w9, w1, #0xff
-	mov	w8, #34                         // =0x22
+	mov	w8, #34
 	cmp	w9, #39
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000099:                   // @func0000000000000099
-// %bb.0:                               // %entry
-	mov	w8, #11                         // =0xb
+
+func0000000000000099:
+	mov	w8, #11
 	tst	w1, #0xfe
-	mov	w9, #19                         // =0x13
+	mov	w9, #19
 	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, hs
 	ret
-                                        // -- End function
+

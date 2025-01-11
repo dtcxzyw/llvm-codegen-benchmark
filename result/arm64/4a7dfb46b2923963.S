@@ -1,24 +1,21 @@
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+func0000000000000014:
 	neg	x8, x2
 	cmp	xzr, x0
 	sbc	x0, x8, x1
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	neg	x8, x2
 	cmp	xzr, x0
 	sbc	x0, x8, x1
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	neg	x8, x2
 	cmp	xzr, x0
 	sbc	x0, x8, x1
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	ret
-                                        // -- End function
+

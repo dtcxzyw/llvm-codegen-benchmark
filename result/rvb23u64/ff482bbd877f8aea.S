@@ -1,4 +1,4 @@
-func000000000000007b:                   # @func000000000000007b
+func000000000000007b:
 	sext.w	a1, a1
 	srai	a0, a0, 2
 	lui	a2, 699051
@@ -10,7 +10,8 @@ func000000000000007b:                   # @func000000000000007b
 	maxu	a1, a0, a1
 	add	a0, a0, a1
 	ret
-func000000000000003b:                   # @func000000000000003b
+
+func000000000000003b:
 	zext.w	a1, a1
 	srai	a0, a0, 2
 	lui	a2, 699051
@@ -22,3 +23,4 @@ func000000000000003b:                   # @func000000000000003b
 	maxu	a1, a0, a1
 	add	a0, a0, a1
 	ret
+

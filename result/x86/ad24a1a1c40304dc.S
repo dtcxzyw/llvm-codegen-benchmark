@@ -1,4 +1,4 @@
-func0000000000000581:                   # @func0000000000000581
+func0000000000000581:
 	xorb	$114, %dl
 	cmpl	$6, %esi
 	setne	%cl
@@ -7,7 +7,8 @@ func0000000000000581:                   # @func0000000000000581
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	cmpb	$123, %dl
 	sete	%al
 	cmpl	$3, %esi
@@ -17,7 +18,8 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000501:                   # @func0000000000000501
+
+func0000000000000501:
 	xorb	$65, %dl
 	cmpl	$12, %esi
 	setae	%cl
@@ -26,3 +28,4 @@ func0000000000000501:                   # @func0000000000000501
 	sete	%al
 	andb	%cl, %al
 	retq
+

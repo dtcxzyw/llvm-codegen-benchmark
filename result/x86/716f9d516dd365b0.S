@@ -1,8 +1,9 @@
 .LCPI0_0:
-	.long	0x43800000                      # float 256
-func0000000000000004:                   # @func0000000000000004
+	.long	0x43800000
+func0000000000000004:
 	vmaxss	%xmm2, %xmm0, %xmm2
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
 	vdivss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
 	retq
+

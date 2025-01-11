@@ -1,4 +1,4 @@
-func000000000000008f:                   # @func000000000000008f
+func000000000000008f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	fmv.w.x	fa5, zero
@@ -10,7 +10,8 @@ func000000000000008f:                   # @func000000000000008f
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret
-func00000000000001cf:                   # @func00000000000001cf
+
+func00000000000001cf:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	fli.s	fa5, 1.0
@@ -22,9 +23,10 @@ func00000000000001cf:                   # @func00000000000001cf
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret
+
 .LCPI2_0:
-	.word	0xbdb27eb6                      # float -0.0871557444
-func0000000000000085:                   # @func0000000000000085
+	.word	0xbdb27eb6
+func0000000000000085:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	lui	a0, %hi(.LCPI2_0)
@@ -37,3 +39,4 @@ func0000000000000085:                   # @func0000000000000085
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v14
 	ret
+

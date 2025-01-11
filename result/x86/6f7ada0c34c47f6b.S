@@ -1,22 +1,24 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	movl	%edi, %eax
-	andl	$-2048, %eax                    # imm = 0xF800
-	cmpl	$55296, %eax                    # imm = 0xD800
+	andl	$-2048, %eax
+	cmpl	$55296, %eax
 	setne	%cl
-	cmpl	$1114112, %edi                  # imm = 0x110000
+	cmpl	$1114112, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movl	%edi, %eax
-	andl	$-2048, %eax                    # imm = 0xF800
-	cmpl	$55296, %eax                    # imm = 0xD800
+	andl	$-2048, %eax
+	cmpl	$55296, %eax
 	sete	%cl
 	cmpl	$-1, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	movl	%edi, %eax
 	andl	$254, %eax
 	cmpl	$6, %eax
@@ -25,3 +27,4 @@ func0000000000000026:                   # @func0000000000000026
 	sets	%al
 	andb	%cl, %al
 	retq
+

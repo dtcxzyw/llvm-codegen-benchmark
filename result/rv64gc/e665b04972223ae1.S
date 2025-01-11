@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	andi	a2, a0, 1
 	li	a0, 1
 	bnez	a2, .LBB0_2
@@ -35,9 +35,10 @@ func000000000000001e:                   # @func000000000000001e
 	srli	a1, a1, 24
 	negw	a1, a1
 	sllw	a0, a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	sext.w	a2, a1
 	beqz	a2, .LBB1_3
 	srliw	a2, a1, 1
@@ -73,7 +74,7 @@ func000000000000000e:                   # @func000000000000000e
 	srliw	a1, a1, 24
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_4
-.LBB1_2:                                # %cond.end
+.LBB1_2:
 	li	a0, 33
 	subw	a0, a0, a1
 	li	a1, 1
@@ -86,7 +87,8 @@ func000000000000000e:                   # @func000000000000000e
 .LBB1_4:
 	li	a0, 64
 	ret
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	sext.w	a2, a1
 	beqz	a2, .LBB2_3
 	srliw	a2, a1, 1
@@ -122,7 +124,7 @@ func000000000000002e:                   # @func000000000000002e
 	srliw	a1, a1, 24
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_4
-.LBB2_2:                                # %cond.end
+.LBB2_2:
 	li	a0, 33
 	subw	a0, a0, a1
 	li	a1, 1
@@ -135,3 +137,4 @@ func000000000000002e:                   # @func000000000000002e
 .LBB2_4:
 	li	a0, 64
 	ret
+

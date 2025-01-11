@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -12,9 +12,10 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 18
 	vmsltu.vx	v0, v8, a0
 	ret
+
 .LCPI1_0:
-	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000008:                   # @func0000000000000008
+	.quad	999999999999999999
+func0000000000000008:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	lui	a0, %hi(.LCPI1_0)
@@ -25,7 +26,8 @@ func0000000000000008:                   # @func0000000000000008
 	vadd.vx	v8, v8, a1
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -37,3 +39,4 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v8, v12
 	ret
+

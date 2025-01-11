@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
+	.quad	1
 .LCPI0_1:
-	.quad	65534                           # 0xfffe
-func0000000000000001:                   # @func0000000000000001
+	.quad	65534
+func0000000000000001:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
-	vpternlogq	$248, .LCPI0_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0
+	vpternlogq	$248, .LCPI0_1(%rip){1to4}, %ymm1, %ymm0
 	retq
+

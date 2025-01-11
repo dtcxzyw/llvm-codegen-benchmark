@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vmaxpd	%zmm3, %zmm5, %zmm6
 	vcmpunordpd	%zmm3, %zmm3, %k1
 	vmovapd	%zmm5, %zmm6 {%k1}
@@ -14,3 +14,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmovapd	%zmm2, %zmm0
 	vmovapd	%zmm3, %zmm1
 	retq
+

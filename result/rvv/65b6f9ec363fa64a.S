@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
@@ -9,7 +9,8 @@ func000000000000001c:                   # @func000000000000001c
 	fli.d	fa5, -1.0
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -20,9 +21,10 @@ func0000000000000002:                   # @func0000000000000002
 	fneg.d	fa5, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+
 .LCPI2_0:
-	.quad	0x400921fb54442d18              # double 3.1415926535897931
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x400921fb54442d18
+func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -33,7 +35,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.i	v8, 0
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
@@ -44,3 +47,4 @@ func0000000000000012:                   # @func0000000000000012
 	fli.d	fa5, -1.0
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+

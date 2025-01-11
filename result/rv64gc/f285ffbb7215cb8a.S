@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	andi	a2, a2, 255
 	xor	a0, a0, a1
 	addi	a1, a2, -65
@@ -6,10 +6,12 @@ func0000000000000024:                   # @func0000000000000024
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	andi	a2, a2, 255
 	addi	a2, a2, -5
 	sltiu	a2, a2, -4
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

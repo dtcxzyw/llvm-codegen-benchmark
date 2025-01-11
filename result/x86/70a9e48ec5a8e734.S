@@ -1,27 +1,35 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	2(%rdi,%rdi), %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	shll	$4, %edi
 	leal	-624(%rdi), %eax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	leal	-2(%rdi,%rdi), %eax
 	retq
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	leal	8(,%rdi,4), %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	leal	992(,%rdi,4), %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leal	-36(,%rdi,4), %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	shll	$5, %edi
 	leal	-32(%rdi), %eax
 	retq
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	shll	$5, %edi
 	leal	-64(%rdi), %eax
 	retq
+

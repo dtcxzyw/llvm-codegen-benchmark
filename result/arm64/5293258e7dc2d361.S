@@ -1,15 +1,13 @@
-func0000000000001c21:                   // @func0000000000001c21
-// %bb.0:                               // %entry
-	mov	x8, #6148914691236517205        // =0x5555555555555555
+func0000000000001c21:
+	mov	x8, #6148914691236517205
 	mov	w9, w2
 	add	x10, x1, #1
 	cmp	x0, x8
 	ccmp	x10, x9, #4, ne
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000c28:                   // @func0000000000000c28
-// %bb.0:                               // %entry
+
+func0000000000000c28:
 	lsr	x8, x0, #32
 	mov	w9, w2
 	add	x10, x1, #1
@@ -17,49 +15,44 @@ func0000000000000c28:                   // @func0000000000000c28
 	ccmp	x10, x9, #4, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000c2c:                   // @func0000000000000c2c
-// %bb.0:                               // %entry
+
+func0000000000000c2c:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	x0, #0
 	ccmp	x9, x8, #4, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000001f01:                   // @func0000000000001f01
-// %bb.0:                               // %entry
+
+func0000000000001f01:
 	mov	w8, w2
 	add	x9, x1, #16
 	cmp	x0, #0
 	ccmp	x9, x8, #2, ne
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000c21:                   // @func0000000000000c21
-// %bb.0:                               // %entry
+
+func0000000000000c21:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	x0, #1
 	ccmp	x9, x8, #4, ne
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000f21:                   // @func0000000000000f21
-// %bb.0:                               // %entry
+
+func0000000000000f21:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	x0, #1
 	ccmp	x9, x8, #2, ne
 	cset	w0, hs
 	ret
-                                        // -- End function
-func0000000000001c2c:                   // @func0000000000001c2c
-// %bb.0:                               // %entry
+
+func0000000000001c2c:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	x0, #0
 	ccmp	x9, x8, #4, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
+

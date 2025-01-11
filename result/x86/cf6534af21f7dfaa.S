@@ -1,5 +1,5 @@
-func0000000000000009:                   # @func0000000000000009
-	cmpl	$65536, %esi                    # imm = 0x10000
+func0000000000000009:
+	cmpl	$65536, %esi
 	setb	%al
 	shlb	$4, %al
 	movzbl	%al, %ecx
@@ -8,7 +8,8 @@ func0000000000000009:                   # @func0000000000000009
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	cmpl	$2, %esi
 	sete	%al
 	andb	$1, %dil
@@ -16,8 +17,9 @@ func0000000000000003:                   # @func0000000000000003
 	orb	%dil, %al
 	orb	$4, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	cmpl	$65536, %esi                    # imm = 0x10000
+
+func0000000000000031:
+	cmpl	$65536, %esi
 	setae	%al
 	shlb	$4, %al
 	movzbl	%al, %ecx
@@ -26,8 +28,9 @@ func0000000000000031:                   # @func0000000000000031
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
-	cmpl	$65536, %esi                    # imm = 0x10000
+
+func0000000000000029:
+	cmpl	$65536, %esi
 	setb	%al
 	shlb	$4, %al
 	movzbl	%al, %ecx
@@ -36,3 +39,4 @@ func0000000000000029:                   # @func0000000000000029
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+

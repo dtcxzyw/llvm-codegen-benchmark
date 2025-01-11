@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	sub	a1, a1, a2
 	lui	a2, 838861
 	srai	a1, a1, 3
@@ -11,7 +11,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srai	a1, a1, 3
@@ -23,3 +24,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
+

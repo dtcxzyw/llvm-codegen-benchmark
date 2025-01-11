@@ -1,10 +1,11 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	andi	a0, a0, 255
 	bexti	a1, a1, 13
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	andi	a0, a0, 255
 	not	a1, a1
 	bexti	a1, a1, 11
@@ -12,34 +13,39 @@ func0000000000000042:                   # @func0000000000000042
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	andi	a0, a0, 255
 	not	a1, a1
 	bexti	a1, a1, 13
 	sltiu	a0, a0, 4
 	or	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	andi	a0, a0, 255
 	bexti	a1, a1, 3
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	sext.b	a0, a0
 	andi	a1, a1, 8
 	seqz	a1, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	andi	a0, a0, 255
 	not	a1, a1
 	bexti	a1, a1, 13
 	sltiu	a0, a0, 4
 	or	a0, a0, a1
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	andi	a0, a0, 255
 	not	a1, a1
 	bexti	a1, a1, 11
@@ -47,13 +53,15 @@ func0000000000000050:                   # @func0000000000000050
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000314:                   # @func0000000000000314
+
+func0000000000000314:
 	sext.b	a0, a0
 	bexti	a1, a1, 6
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	andi	a0, a0, 255
 	andi	a1, a1, 256
 	seqz	a1, a1
@@ -61,7 +69,8 @@ func0000000000000202:                   # @func0000000000000202
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	andi	a0, a0, 255
 	slli	a1, a1, 48
 	srli	a1, a1, 56
@@ -70,3 +79,4 @@ func0000000000000058:                   # @func0000000000000058
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

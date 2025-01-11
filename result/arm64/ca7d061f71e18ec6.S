@@ -1,7 +1,5 @@
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	mov	x9, #32557                      // =0x7f2d
-                                        // kill: def $w3 killed $w3 def $x3
+func000000000000000b:
+	mov	x9, #32557
 	and	x8, x3, #0xff
 	movk	x9, #19605, lsl #16
 	eor	x8, x2, x8
@@ -12,11 +10,9 @@ func000000000000000b:                   // @func000000000000000b
 	eor	x1, x1, x10
 	eor	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	x9, #32557                      // =0x7f2d
-                                        // kill: def $w3 killed $w3 def $x3
+
+func0000000000000003:
+	mov	x9, #32557
 	and	x8, x3, #0xff
 	movk	x9, #19605, lsl #16
 	eor	x8, x2, x8
@@ -27,4 +23,4 @@ func0000000000000003:                   // @func0000000000000003
 	eor	x1, x1, x10
 	eor	x0, x0, x8
 	ret
-                                        // -- End function
+

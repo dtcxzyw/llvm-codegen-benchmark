@@ -1,12 +1,14 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%esi, %eax
-	andl	$8585216, %eax                  # imm = 0x830000
+	andl	$8585216, %eax
 	orl	%edi, %eax
-	xorl	$142405730, %eax                # imm = 0x87CF062
+	xorl	$142405730, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%esi, %eax
-	andl	$256, %eax                      # imm = 0x100
+	andl	$256, %eax
 	orl	%edi, %eax
-	xorl	$256, %eax                      # imm = 0x100
+	xorl	$256, %eax
 	retq
+

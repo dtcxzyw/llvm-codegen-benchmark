@@ -1,10 +1,10 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	leal	32(%rsi,%rdx), %ecx
 	movl	%esi, %eax
 	orl	%edx, %eax
 	testb	$1, %dil
 	cmovnel	%eax, %ecx
-	imulq	$138547333, %rcx, %rdx          # imm = 0x8421085
+	imulq	$138547333, %rcx, %rdx
 	shrq	$32, %rdx
 	movl	%ecx, %eax
 	subl	%edx, %eax
@@ -17,3 +17,4 @@ func0000000000000007:                   # @func0000000000000007
 	addl	%ecx, %eax
 	orl	%ecx, %eax
 	retq
+

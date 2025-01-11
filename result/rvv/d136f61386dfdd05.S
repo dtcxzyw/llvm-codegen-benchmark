@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 12
 	vand.vx	v8, v10, a0, v0.t
 	ret
+

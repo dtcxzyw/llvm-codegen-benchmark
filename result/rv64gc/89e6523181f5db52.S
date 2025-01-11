@@ -1,4 +1,4 @@
-func0000000000000083:                   # @func0000000000000083
+func0000000000000083:
 	sext.w	a1, a1
 	lui	a3, 131072
 	addiw	a3, a3, -2
@@ -10,7 +10,8 @@ func0000000000000083:                   # @func0000000000000083
 	slliw	a1, a2, 3
 	or	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	sext.w	a1, a1
 	slliw	a2, a2, 1
 	seqz	a1, a1
@@ -18,7 +19,8 @@ func0000000000000043:                   # @func0000000000000043
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	sext.w	a1, a1
 	slliw	a2, a2, 8
 	seqz	a1, a1
@@ -26,7 +28,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	sext.w	a1, a1
 	lui	a3, 8
 	addiw	a3, a3, -641
@@ -38,7 +41,8 @@ func0000000000000015:                   # @func0000000000000015
 	slliw	a1, a2, 23
 	or	a0, a0, a1
 	ret
-func00000000000000b0:                   # @func00000000000000b0
+
+func00000000000000b0:
 	sext.w	a1, a1
 	li	a3, 255
 	bgeu	a3, a1, .LBB4_2
@@ -49,7 +53,8 @@ func00000000000000b0:                   # @func00000000000000b0
 	slliw	a1, a2, 24
 	or	a0, a0, a1
 	ret
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	sext.w	a1, a1
 	li	a3, 255
 	bgeu	a3, a1, .LBB5_2
@@ -60,3 +65,4 @@ func00000000000000f0:                   # @func00000000000000f0
 	slliw	a1, a2, 16
 	or	a0, a0, a1
 	ret
+

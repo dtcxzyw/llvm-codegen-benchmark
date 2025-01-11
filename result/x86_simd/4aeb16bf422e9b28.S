@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-56                             # 0xffffffffffffffc8
-func0000000000000101:                   # @func0000000000000101
+	.quad	-56
+func0000000000000101:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -9,9 +9,10 @@ func0000000000000101:                   # @func0000000000000101
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	1000000                         # 0xf4240
-func000000000000002a:                   # @func000000000000002a
+	.quad	1000000
+func000000000000002a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -21,11 +22,12 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	-4                              # 0xfffffffffffffffc
+	.quad	-4
 .LCPI2_1:
-	.quad	4                               # 0x4
-func0000000000000008:                   # @func0000000000000008
+	.quad	4
+func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -34,11 +36,12 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8
 .LCPI3_1:
-	.quad	4294967296                      # 0x100000000
-func0000000000000004:                   # @func0000000000000004
+	.quad	4294967296
+func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -47,7 +50,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpslld	$31, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm0
@@ -56,9 +60,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	1000000000                      # 0x3b9aca00
-func00000000000000aa:                   # @func00000000000000aa
+	.quad	1000000000
+func00000000000000aa:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0
@@ -68,3 +73,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

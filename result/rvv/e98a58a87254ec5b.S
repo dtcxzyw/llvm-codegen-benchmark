@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfsub.vv	v12, v12, v16
 	fmv.d.x	fa5, zero
@@ -7,3 +7,4 @@ func0000000000000030:                   # @func0000000000000030
 	vmseq.vi	v11, v8, 1
 	vmor.mm	v0, v10, v11
 	ret
+

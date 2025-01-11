@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -7,7 +7,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -16,7 +17,8 @@ func000000000000004a:                   # @func000000000000004a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -25,7 +27,8 @@ func0000000000000048:                   # @func0000000000000048
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	movl	%esi, %eax
 	decl	%eax
 	shrl	$31, %eax
@@ -34,7 +37,8 @@ func0000000000000046:                   # @func0000000000000046
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	leal	63(%rsi), %eax
 	addl	$126, %esi
 	testl	%eax, %eax
@@ -43,7 +47,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -52,10 +57,11 @@ func0000000000000044:                   # @func0000000000000044
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addl	$-16, %esi
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$33, %rax
@@ -63,7 +69,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000004b:                   # @func000000000000004b
+
+func000000000000004b:
 	leal	3(%rsi), %eax
 	addl	$6, %esi
 	testl	%eax, %eax
@@ -72,7 +79,8 @@ func000000000000004b:                   # @func000000000000004b
 	cmpl	%esi, %edi
 	setge	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax
@@ -81,3 +89,4 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	setg	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	sete	%cl
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	sete	%cl
@@ -14,7 +15,8 @@ func000000000000002b:                   # @func000000000000002b
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	seta	%cl
@@ -22,7 +24,8 @@ func0000000000000104:                   # @func0000000000000104
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	seta	%cl
@@ -30,7 +33,8 @@ func0000000000000108:                   # @func0000000000000108
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	setb	%cl
@@ -38,7 +42,8 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	orb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	sete	%cl
@@ -46,7 +51,8 @@ func000000000000042c:                   # @func000000000000042c
 	setne	%al
 	orb	%cl, %al
 	retq
-func00000000000004c6:                   # @func00000000000004c6
+
+func00000000000004c6:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	setl	%cl
@@ -54,7 +60,8 @@ func00000000000004c6:                   # @func00000000000004c6
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000504:                   # @func0000000000000504
+
+func0000000000000504:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
 	seta	%cl
@@ -62,3 +69,4 @@ func0000000000000504:                   # @func0000000000000504
 	setb	%al
 	orb	%cl, %al
 	retq
+

@@ -1,8 +1,8 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000044:
 	andl	$1, %edx
 	addl	%edi, %edx
 	movl	%esi, %eax
-	movl	$3435973837, %ecx               # imm = 0xCCCCCCCD
+	movl	$3435973837, %ecx
 	imulq	%rax, %rcx
 	shrq	$35, %rcx
 	addl	%ecx, %ecx
@@ -10,3 +10,4 @@ func0000000000000044:                   # @func0000000000000044
 	cmpl	%edx, %eax
 	setb	%al
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3c23d70a                      # float 0.00999999977
-func0000000000000002:                   # @func0000000000000002
+	.word	0x3c23d70a
+func0000000000000002:
 	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.x	v12, a0
@@ -13,7 +13,8 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vxm	v8, v8, a0, v0
 	vfmul.vf	v8, v8, fa5
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v12, 0
 	fli.s	fa5, 1.0
@@ -24,7 +25,8 @@ func0000000000000004:                   # @func0000000000000004
 	vfmul.vf	v8, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 273216
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.x	v12, a0
@@ -36,3 +38,4 @@ func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 65536.0
 	vfmul.vf	v8, v8, fa5
 	ret
+

@@ -1,50 +1,52 @@
 .LCPI0_0:
-	.long	524288                          # 0x80000
+	.long	524288
 .LCPI0_1:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	9                               # 0x9
-	.long	2                               # 0x2
-	.long	10                              # 0xa
-	.long	3                               # 0x3
-	.long	11                              # 0xb
+	.long	0
+	.long	8
+	.long	1
+	.long	9
+	.long	2
+	.long	10
+	.long	3
+	.long	11
 .LCPI0_2:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	9                               # 0x9
-	.byte	2                               # 0x2
-	.byte	10                              # 0xa
-	.byte	3                               # 0x3
-	.byte	11                              # 0xb
-func0000000000000005:                   # @func0000000000000005
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	9
+	.byte	2
+	.byte	10
+	.byte	3
+	.byte	11
+func0000000000000005:
 	vpord	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
-	vpmovsxbd	.LCPI0_2(%rip), %ymm2   # ymm2 = [0,8,1,9,2,10,3,11]
+	vpmovsxbd	.LCPI0_2(%rip), %ymm2
 	vpermt2d	%ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
+	.long	1
 .LCPI1_1:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	9                               # 0x9
-	.long	2                               # 0x2
-	.long	10                              # 0xa
-	.long	3                               # 0x3
-	.long	11                              # 0xb
+	.long	0
+	.long	8
+	.long	1
+	.long	9
+	.long	2
+	.long	10
+	.long	3
+	.long	11
 .LCPI1_2:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	9                               # 0x9
-	.byte	2                               # 0x2
-	.byte	10                              # 0xa
-	.byte	3                               # 0x3
-	.byte	11                              # 0xb
-func0000000000000025:                   # @func0000000000000025
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	9
+	.byte	2
+	.byte	10
+	.byte	3
+	.byte	11
+func0000000000000025:
 	vpord	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
-	vpmovsxbd	.LCPI1_2(%rip), %ymm2   # ymm2 = [0,8,1,9,2,10,3,11]
+	vpmovsxbd	.LCPI1_2(%rip), %ymm2
 	vpermt2d	%ymm1, %ymm2, %ymm0
 	retq
+

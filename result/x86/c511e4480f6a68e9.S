@@ -1,4 +1,4 @@
-func00000000000003e4:                   # @func00000000000003e4
+func00000000000003e4:
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
@@ -6,7 +6,8 @@ func00000000000003e4:                   # @func00000000000003e4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000003b8:                   # @func00000000000003b8
+
+func00000000000003b8:
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
@@ -14,7 +15,8 @@ func00000000000003b8:                   # @func00000000000003b8
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
@@ -22,7 +24,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003f9:                   # @func00000000000003f9
+
+func00000000000003f9:
 	movzbl	%dl, %eax
 	shll	$9, %eax
 	orq	%rsi, %rax
@@ -30,7 +33,8 @@ func00000000000003f9:                   # @func00000000000003f9
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+
+func00000000000003f4:
 	movzbl	%dl, %eax
 	shll	$9, %eax
 	orq	%rsi, %rax
@@ -38,3 +42,4 @@ func00000000000003f4:                   # @func00000000000003f4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

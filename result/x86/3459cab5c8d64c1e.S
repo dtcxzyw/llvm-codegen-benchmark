@@ -1,21 +1,24 @@
-func00000000000000e1:                   # @func00000000000000e1
-	andl	$61440, %esi                    # imm = 0xF000
+func00000000000000e1:
+	andl	$61440, %esi
 	shll	$6, %edi
-	andl	$63488, %edi                    # imm = 0xF800
+	andl	$63488, %edi
 	orl	%esi, %edi
-	cmpl	$55296, %edi                    # imm = 0xD800
+	cmpl	$55296, %edi
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	shll	$8, %edi
 	orl	%esi, %edi
-	testl	$16384, %edi                    # imm = 0x4000
+	testl	$16384, %edi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andl	$62, %esi
 	shll	$6, %edi
 	orl	%esi, %edi
-	cmpl	$65534, %edi                    # imm = 0xFFFE
+	cmpl	$65534, %edi
 	sete	%al
 	retq
+

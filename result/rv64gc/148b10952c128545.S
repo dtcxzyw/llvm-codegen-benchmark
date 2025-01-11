@@ -1,11 +1,12 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	srliw	a1, a1, 1
 	li	a2, 40
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 44
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	srliw	a1, a1, 4
 	addi	a1, a1, -5
 	slli	a1, a1, 32
@@ -13,3 +14,4 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
+

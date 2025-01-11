@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	lzcntl	%edx, %eax
 	movl	$32, %ecx
 	subl	%eax, %ecx
@@ -9,3 +9,4 @@ func0000000000000075:                   # @func0000000000000075
 	movl	$24, %eax
 	subl	%edx, %eax
 	retq
+

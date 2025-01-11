@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -6,7 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	vremu.vv	v8, v10, v8
 	vsub.vv	v8, v10, v8
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	lui	a0, 1
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -14,3 +15,4 @@ func0000000000000006:                   # @func0000000000000006
 	vremu.vv	v8, v10, v8
 	vsub.vv	v8, v10, v8
 	ret
+

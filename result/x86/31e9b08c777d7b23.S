@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	movl	$8, %ecx
 	subq	%rdx, %rcx
 	cmpq	%rcx, %rsi
@@ -7,7 +7,8 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rcx, %rdi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	movl	$8, %ecx
 	subq	%rdx, %rcx
 	cmpq	%rcx, %rsi
@@ -16,8 +17,9 @@ func0000000000000030:                   # @func0000000000000030
 	subq	%rcx, %rdi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movl	$16384, %ecx                    # imm = 0x4000
+
+func0000000000000000:
+	movl	$16384, %ecx
 	subq	%rdx, %rcx
 	cmpq	%rsi, %rcx
 	cmovaeq	%rsi, %rcx
@@ -25,3 +27,4 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rcx, %rdi
 	cmovaeq	%rdi, %rax
 	retq
+

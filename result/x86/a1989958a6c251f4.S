@@ -1,4 +1,4 @@
-func0000000000000842:                   # @func0000000000000842
+func0000000000000842:
 	cmpl	$11, %edx
 	sete	%al
 	cmpl	$9, %esi
@@ -8,7 +8,8 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000006042:                   # @func0000000000006042
+
+func0000000000006042:
 	cmpl	$41, %edx
 	setne	%cl
 	testl	%esi, %esi
@@ -18,3 +19,4 @@ func0000000000006042:                   # @func0000000000006042
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
+

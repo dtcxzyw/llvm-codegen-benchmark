@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	pushq	%rax
 	movl	$100, %edx
 	xorl	%ecx, %ecx
@@ -6,3 +6,4 @@ func000000000000000f:                   # @func000000000000000f
 	addl	%eax, %eax
 	popq	%rcx
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000012a:                   # @func000000000000012a
+func000000000000012a:
 	vpsraq	$3, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -7,9 +7,10 @@ func000000000000012a:                   # @func000000000000012a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	64                              # 0x40
-func0000000000000134:                   # @func0000000000000134
+	.quad	64
+func0000000000000134:
 	vpsraq	$3, %ymm2, %ymm2
 	vpminsq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -17,3 +18,4 @@ func0000000000000134:                   # @func0000000000000134
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

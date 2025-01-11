@@ -1,5 +1,4 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -8,9 +7,8 @@ func0000000000000181:                   // @func0000000000000181
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
+
+func00000000000001e1:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -19,9 +17,8 @@ func00000000000001e1:                   // @func00000000000001e1
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -30,9 +27,8 @@ func000000000000018c:                   // @func000000000000018c
 	cmp	w8, w0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000001e6:                   // @func00000000000001e6
-// %bb.0:                               // %entry
+
+func00000000000001e6:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -41,9 +37,8 @@ func00000000000001e6:                   // @func00000000000001e6
 	cmp	w8, w0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func00000000000001e4:                   // @func00000000000001e4
-// %bb.0:                               // %entry
+
+func00000000000001e4:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -52,9 +47,8 @@ func00000000000001e4:                   // @func00000000000001e4
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000001ea:                   // @func00000000000001ea
-// %bb.0:                               // %entry
+
+func00000000000001ea:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -63,9 +57,8 @@ func00000000000001ea:                   // @func00000000000001ea
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func00000000000001f4:                   // @func00000000000001f4
-// %bb.0:                               // %entry
+
+func00000000000001f4:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -74,9 +67,8 @@ func00000000000001f4:                   // @func00000000000001f4
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000001e7:                   // @func00000000000001e7
-// %bb.0:                               // %entry
+
+func00000000000001e7:
 	fmov	d0, x2
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -85,4 +77,4 @@ func00000000000001e7:                   // @func00000000000001e7
 	cmp	w8, w0
 	cset	w0, le
 	ret
-                                        // -- End function
+

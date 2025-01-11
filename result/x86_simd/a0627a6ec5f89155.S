@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	2                               # 0x2
-func00000000000001fa:                   # @func00000000000001fa
+	.long	2
+func00000000000001fa:
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
@@ -9,3 +9,4 @@ func00000000000001fa:                   # @func00000000000001fa
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

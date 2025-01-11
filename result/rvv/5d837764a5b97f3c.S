@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	230584300921369395              # 0x333333333333333
-func000000000000000f:                   # @func000000000000000f
+	.quad	230584300921369395
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 2
 	lui	a0, %hi(.LCPI0_0)
@@ -14,7 +14,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 1
 	vadd.vv	v8, v8, v10
@@ -23,3 +24,4 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret
+

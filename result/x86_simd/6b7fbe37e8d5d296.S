@@ -1,4 +1,4 @@
-func0000000000000a21:                   # @func0000000000000a21
+func0000000000000a21:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -50,7 +50,8 @@ func0000000000000a21:                   # @func0000000000000a21
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000a01:                   # @func0000000000000a01
+
+func0000000000000a01:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -102,7 +103,8 @@ func0000000000000a01:                   # @func0000000000000a01
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000a0a:                   # @func0000000000000a0a
+
+func0000000000000a0a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -155,7 +157,8 @@ func0000000000000a0a:                   # @func0000000000000a0a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000a2a:                   # @func0000000000000a2a
+
+func0000000000000a2a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -208,7 +211,8 @@ func0000000000000a2a:                   # @func0000000000000a2a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000c0a:                   # @func0000000000000c0a
+
+func0000000000000c0a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -263,7 +267,8 @@ func0000000000000c0a:                   # @func0000000000000c0a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -317,7 +322,8 @@ func0000000000000161:                   # @func0000000000000161
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -365,12 +371,13 @@ func0000000000000c21:                   # @func0000000000000c21
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000c2a:                   # @func0000000000000c2a
+
+func0000000000000c2a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -425,3 +432,4 @@ func0000000000000c2a:                   # @func0000000000000c2a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
+	.quad	5675921253449092805
 .LCPI0_1:
-	.quad	-5675921253449092805            # 0xb13b13b13b13b13b
-func000000000000004d:                   # @func000000000000004d
+	.quad	-5675921253449092805
+func000000000000004d:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -16,11 +16,12 @@ func000000000000004d:                   # @func000000000000004d
 	vsra.vi	v8, v8, 3
 	vmadd.vx	v8, a0, v10
 	ret
+
 .LCPI1_0:
-	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+	.quad	-8198552921648689607
 .LCPI1_1:
-	.quad	8198552921648689607             # 0x71c71c71c71c71c7
-func000000000000004f:                   # @func000000000000004f
+	.quad	8198552921648689607
+func000000000000004f:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -34,9 +35,10 @@ func000000000000004f:                   # @func000000000000004f
 	vsra.vi	v8, v8, 3
 	vmadd.vx	v8, a0, v10
 	ret
+
 .LCPI2_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func000000000000000f:                   # @func000000000000000f
+	.quad	3074457345618258603
+func000000000000000f:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	li	a1, 63
@@ -55,3 +57,4 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000003021:                   # @func0000000000003021
+func0000000000003021:
 	testl	%edx, %edx
 	setne	%cl
 	xorq	$4, %rsi
@@ -7,7 +7,8 @@ func0000000000003021:                   # @func0000000000003021
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	cmpl	$44, %edx
 	sete	%al
 	cmpq	$24, %rsi
@@ -17,3 +18,4 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	andb	%cl, %al
 	retq
+

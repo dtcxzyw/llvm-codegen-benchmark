@@ -1,13 +1,14 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leaq	1(%rdx), %rax
 	testb	$1, %sil
 	movl	$1, %ecx
 	cmoveq	%rax, %rcx
 	testb	$1, %dil
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+	movabsq	$9223372036854775807, %rax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leaq	1(%rdx), %rax
 	testb	$1, %sil
 	movl	$1, %ecx
@@ -16,7 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	leaq	1(%rdx), %rax
 	testb	$1, %sil
 	movl	$3, %ecx
@@ -25,3 +27,4 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

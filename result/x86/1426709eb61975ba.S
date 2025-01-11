@@ -1,8 +1,9 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leaq	(%rdi,%rsi), %rax
 	shrq	$16, %rax
-	movabsq	$1095216660735, %rcx            # imm = 0xFF000000FF
+	movabsq	$1095216660735, %rcx
 	andq	%rax, %rcx
-	movabsq	$42949672960001, %rax           # imm = 0x271000000001
+	movabsq	$42949672960001, %rax
 	imulq	%rcx, %rax
 	retq
+

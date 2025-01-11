@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x39b4484bfeebc2a0              # double 1.0000000000000001E-30
-func00000000000000a5:                   # @func00000000000000a5
+	.quad	0x39b4484bfeebc2a0
+func00000000000000a5:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	li	a0, -30
@@ -12,7 +12,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	vmfle.vv	v16, v8, v12
 	vmnot.m	v0, v16
 	ret
-func0000000000000144:                   # @func0000000000000144
+
+func0000000000000144:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v16, 3
 	vsetvli	zero, zero, e64, m4, ta, ma
@@ -20,7 +21,8 @@ func0000000000000144:                   # @func0000000000000144
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v12, v8
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v16, 0
 	vsetvli	zero, zero, e64, m4, ta, ma
@@ -28,3 +30,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v12, v8
 	ret
+

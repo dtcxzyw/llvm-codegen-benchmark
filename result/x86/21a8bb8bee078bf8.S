@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	orl	%edx, %esi
 	orl	%edi, %esi
 	movl	%esi, %eax
@@ -6,3 +6,4 @@ func0000000000000000:                   # @func0000000000000000
 	sarl	$8, %esi
 	orl	%esi, %eax
 	retq
+

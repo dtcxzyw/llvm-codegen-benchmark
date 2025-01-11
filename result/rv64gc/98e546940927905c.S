@@ -1,4 +1,4 @@
-func00000000000010ca:                   # @func00000000000010ca
+func00000000000010ca:
 	sext.w	a0, a0
 	srai	a1, a1, 3
 	lui	a2, 838861
@@ -11,7 +11,8 @@ func00000000000010ca:                   # @func00000000000010ca
 	slt	a0, a3, a0
 	and	a0, a0, a1
 	ret
-func000000000000114a:                   # @func000000000000114a
+
+func000000000000114a:
 	sext.w	a0, a0
 	srai	a1, a1, 3
 	lui	a2, 699051
@@ -22,3 +23,4 @@ func000000000000114a:                   # @func000000000000114a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+

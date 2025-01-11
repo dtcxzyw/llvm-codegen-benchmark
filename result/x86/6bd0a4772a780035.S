@@ -1,23 +1,25 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
 	testl	%edi, %edi
 	leal	281(%rax,%rax), %ecx
-	movl	$281, %eax                      # imm = 0x119
+	movl	$281, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sete	%al
 	xorl	%ecx, %ecx
-	movabsq	$64424509440, %rdx              # imm = 0xF00000000
+	movabsq	$64424509440, %rdx
 	cmpq	%rdx, %rdi
 	leal	(%rax,%rax,8), %eax
 	cmovnel	%ecx, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	cmpl	$2, %esi
 	sete	%al
 	testq	%rdi, %rdi
@@ -26,7 +28,8 @@ func000000000000002c:                   # @func000000000000002c
 	movzbl	%cl, %eax
 	shll	$8, %eax
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	shrq	$32, %rsi
 	setne	%al
 	testl	%edi, %edi
@@ -35,7 +38,8 @@ func000000000000010c:                   # @func000000000000010c
 	movzbl	%cl, %eax
 	xorl	$5, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	sete	%al
@@ -44,25 +48,28 @@ func0000000000000024:                   # @func0000000000000024
 	movl	$1, %eax
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setne	%al
 	xorl	%ecx, %ecx
-	cmpq	$65535, %rdi                    # imm = 0xFFFF
+	cmpq	$65535, %rdi
 	leal	(%rax,%rax,4), %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	$4, %esi
 	setb	%al
-	cmpq	$1025, %rdi                     # imm = 0x401
+	cmpq	$1025, %rdi
 	setb	%cl
 	andb	%al, %cl
 	movzbl	%cl, %eax
 	shll	$2, %eax
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -71,3 +78,4 @@ func000000000000018c:                   # @func000000000000018c
 	movl	$5, %eax
 	cmovnel	%ecx, %eax
 	retq
+

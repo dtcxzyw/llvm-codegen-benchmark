@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	sets	%al
@@ -6,3 +6,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	andl	$1, %eax
 	shll	$3, %eax
 	retq
+

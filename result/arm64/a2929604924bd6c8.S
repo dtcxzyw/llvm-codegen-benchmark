@@ -1,27 +1,24 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	w8, #60                         // =0x3c
+func0000000000000005:
+	mov	w8, #60
 	cmp	w0, #60
-	mov	x9, #-1                         // =0xffffffffffffffff
+	mov	x9, #-1
 	csel	w8, w0, w8, lo
 	lsl	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	mov	w8, #30                         // =0x1e
+
+func0000000000000007:
+	mov	w8, #30
 	cmp	w0, #30
-	mov	w9, #4096                       // =0x1000
+	mov	w9, #4096
 	csel	w8, w0, w8, lo
 	lsl	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
+
+func0000000000000006:
+	mov	w8, #63
 	cmp	w0, #63
-	mov	w9, #1                          // =0x1
+	mov	w9, #1
 	csel	w8, w0, w8, lo
 	lsl	x0, x9, x8
 	ret
-                                        // -- End function
+

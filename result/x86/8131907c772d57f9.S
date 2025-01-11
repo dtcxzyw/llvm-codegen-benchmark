@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	shll	$3, %edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	shll	$2, %edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -14,3 +15,4 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	cltq
 	retq
+

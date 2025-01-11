@@ -1,12 +1,14 @@
-func0000000000000018:                   # @func0000000000000018
-	andl	$1008, %esi                     # imm = 0x3F0
-	andl	$1008, %edi                     # imm = 0x3F0
+func0000000000000018:
+	andl	$1008, %esi
+	andl	$1008, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$65280, %esi                    # imm = 0xFF00
-	andl	$65280, %edi                    # imm = 0xFF00
+
+func0000000000000001:
+	andl	$65280, %esi
+	andl	$65280, %edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
+

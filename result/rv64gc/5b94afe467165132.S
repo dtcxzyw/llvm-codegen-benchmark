@@ -1,4 +1,4 @@
-func000000000000052a:                   # @func000000000000052a
+func000000000000052a:
 	sext.w	a2, a2
 	li	a3, 1239
 	andi	a1, a1, 1
@@ -11,14 +11,15 @@ func000000000000052a:                   # @func000000000000052a
 	li	a2, 1131
 	lui	a3, 8
 	bnez	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a3, a2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	addw	a0, a0, a3
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000508:                   # @func0000000000000508
+
+func0000000000000508:
 	sext.w	a3, a2
 	li	a4, 79
 	andi	a2, a1, 1
@@ -32,8 +33,9 @@ func0000000000000508:                   # @func0000000000000508
 .LBB1_3:
 	lui	a1, 1048575
 	addi	a1, a1, 216
-.LBB1_4:                                # %entry
+.LBB1_4:
 	addw	a0, a0, a1
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	ret
+

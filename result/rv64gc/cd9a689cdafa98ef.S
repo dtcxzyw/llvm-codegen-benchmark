@@ -1,20 +1,23 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andi	a1, a1, 15
 	add	a0, a0, a1
 	not	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	not	a0, a0
 	ret
+
 .LCPI2_0:
-	.quad	-8446744073709551616            # 0x8ac7230489e80000
-func0000000000000000:                   # @func0000000000000000
+	.quad	-8446744073709551616
+func0000000000000000:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	and	a1, a1, a2
 	add	a0, a0, a1
 	not	a0, a0
 	ret
+

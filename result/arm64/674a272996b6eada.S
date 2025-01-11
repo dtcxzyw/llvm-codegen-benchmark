@@ -1,92 +1,80 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	add	w8, w0, w1, uxtb
 	ubfx	w0, w8, #15, #1
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #7
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
+
+func0000000000000088:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #999
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
+
+func00000000000000aa:
 	add	w8, w0, w1, uxtb
 	sxth	w8, w8
 	cmp	w8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
+
+func0000000000000074:
 	add	w8, w0, w1, uxtb
 	tst	w8, #0xff00
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000f4:                   // @func00000000000000f4
-// %bb.0:                               // %entry
+
+func00000000000000f4:
 	add	w8, w0, w1, uxtb
 	tst	w8, #0xfff8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+
+func0000000000000078:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #254
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	add	w8, w0, w1, uxtb
 	sxth	w8, w8
 	cmp	w8, #0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #33
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+
+func0000000000000048:
 	add	w8, w0, w1, uxtb
 	and	w8, w8, #0xffff
 	cmp	w8, #1440
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000f8:                   // @func00000000000000f8
-// %bb.0:                               // %entry
+
+func00000000000000f8:
 	add	w8, w0, w1, uxtb
 	ubfx	w8, w8, #1, #15
 	cmp	w8, #3276
 	cset	w0, hi
 	ret
-                                        // -- End function
+

@@ -1,14 +1,12 @@
-func000000000000048c:                   // @func000000000000048c
-// %bb.0:                               // %entry
+func000000000000048c:
 	cmp	x1, #1
 	csinc	x8, x1, xzr, hi
 	cmn	x1, x8
 	ccmp	x0, #0, #0, lo
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000481:                   // @func0000000000000481
-// %bb.0:                               // %entry
+
+func0000000000000481:
 	cmp	x1, #1
 	mvn	x9, x1
 	csinc	x8, x1, xzr, hi
@@ -16,9 +14,8 @@ func0000000000000481:                   // @func0000000000000481
 	ccmp	x0, #0, #0, ls
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	cmp	x1, #1
 	mvn	x9, x1
 	csinc	x8, x1, xzr, hi
@@ -26,13 +23,12 @@ func0000000000000081:                   // @func0000000000000081
 	ccmp	x0, #0, #0, ls
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	cmp	x1, #1
 	csinc	x8, x1, xzr, hi
 	cmn	x1, x8
 	ccmp	x0, #0, #0, lo
 	cset	w0, ne
 	ret
-                                        // -- End function
+

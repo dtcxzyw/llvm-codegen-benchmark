@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	fli.s	fa5, 0.5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v12, fa5
@@ -9,7 +9,8 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.i	v8, 0
 	vmerge.vvm	v8, v8, v12, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	lui	a0, 268653
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.x	v12, a0
@@ -19,7 +20,8 @@ func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, min
 	vfmax.vf	v8, v12, fa5
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v12, fa5
@@ -27,3 +29,4 @@ func0000000000000002:                   # @func0000000000000002
 	vfmacc.vf	v12, fa4, v8
 	vfmin.vf	v8, v12, fa5
 	ret
+

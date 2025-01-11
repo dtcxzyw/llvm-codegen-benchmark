@@ -6,7 +6,7 @@
 	.zero	4,15
 .LCPI0_3:
 	.zero	4,240
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -16,3 +16,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
+

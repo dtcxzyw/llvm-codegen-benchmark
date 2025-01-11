@@ -1,12 +1,13 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	addiw	a2, a2, -1
 	li	a3, 3
 	bltu	a2, a3, .LBB0_2
 	andi	a1, a1, 1
 	xori	a0, a1, 45
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	lui	a3, 1048573
 	addi	a3, a3, -1946
 	add	a2, a2, a3
@@ -15,5 +16,6 @@ func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	andi	a0, a1, 255
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

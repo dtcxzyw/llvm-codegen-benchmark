@@ -1,4 +1,4 @@
-func0000000000001ab4:                   # @func0000000000001ab4
+func0000000000001ab4:
 	addq	%rdi, %rdx
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
@@ -7,7 +7,8 @@ func0000000000001ab4:                   # @func0000000000001ab4
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000014a4:                   # @func00000000000014a4
+
+func00000000000014a4:
 	addq	%rdi, %rdx
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
@@ -16,7 +17,8 @@ func00000000000014a4:                   # @func00000000000014a4
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000010a4:                   # @func00000000000010a4
+
+func00000000000010a4:
 	addq	%rdi, %rdx
 	movzwl	%si, %eax
 	cmpq	%rax, %rdi
@@ -25,3 +27,4 @@ func00000000000010a4:                   # @func00000000000010a4
 	setbe	%al
 	andb	%cl, %al
 	retq
+

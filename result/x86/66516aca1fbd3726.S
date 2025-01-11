@@ -1,8 +1,9 @@
-func0000000000000041:                   # @func0000000000000041
-	imull	$28087, %esi, %eax              # imm = 0x6DB7
+func0000000000000041:
+	imull	$28087, %esi, %eax
 	rorw	$2, %ax
 	movzwl	%ax, %eax
-	cmpl	$2341, %eax                     # imm = 0x925
+	cmpl	$2341, %eax
 	setb	%al
 	andb	%dil, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a1, a5, 9
 	srli	a4, a4, 55
 	srli	a5, a5, 55
@@ -12,7 +12,8 @@ func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
 	srli	a5, a5, 56
@@ -26,7 +27,8 @@ func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
 	srli	a5, a5, 56
@@ -40,7 +42,8 @@ func000000000000004c:                   # @func000000000000004c
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
 	srli	a5, a5, 56
@@ -54,15 +57,18 @@ func000000000000006f:                   # @func000000000000006f
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000064:                   # @func0000000000000064
+
+func0000000000000064:
 	add	a5, a5, a2
 	sltu	a1, a5, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	add	a5, a5, a2
 	sltu	a1, a5, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
+

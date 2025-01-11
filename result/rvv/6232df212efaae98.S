@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	vsra.vi	v8, v8, 3
@@ -9,3 +9,4 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	ret
+

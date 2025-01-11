@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	leal	7(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	decl	%eax
 	shlq	$3, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	leal	7(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -14,7 +15,8 @@ func000000000000000b:                   # @func000000000000000b
 	decl	%eax
 	shlq	$2, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	leal	7(%rdi), %eax
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
@@ -22,3 +24,4 @@ func000000000000000a:                   # @func000000000000000a
 	incl	%eax
 	shlq	$32, %rax
 	retq
+

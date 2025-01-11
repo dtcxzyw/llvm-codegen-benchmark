@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1051668233026429277             # 0xe9846af9b1a615d
-func0000000000000000:                   # @func0000000000000000
+	.quad	1051668233026429277
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	lui	a0, 81007
@@ -14,9 +14,10 @@ func0000000000000000:                   # @func0000000000000000
 	vxor.vv	v8, v10, v8
 	vmul.vx	v8, v8, a1
 	ret
+
 .LCPI1_0:
-	.quad	1051668233026429277             # 0xe9846af9b1a615d
-func0000000000000020:                   # @func0000000000000020
+	.quad	1051668233026429277
+func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	lui	a0, 81007
@@ -30,9 +31,10 @@ func0000000000000020:                   # @func0000000000000020
 	vxor.vv	v8, v10, v8
 	vmul.vx	v8, v8, a1
 	ret
+
 .LCPI2_0:
-	.quad	1051668233026429277             # 0xe9846af9b1a615d
-func0000000000000060:                   # @func0000000000000060
+	.quad	1051668233026429277
+func0000000000000060:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	lui	a0, 81007
@@ -46,3 +48,4 @@ func0000000000000060:                   # @func0000000000000060
 	vxor.vv	v8, v10, v8
 	vmul.vx	v8, v8, a1
 	ret
+

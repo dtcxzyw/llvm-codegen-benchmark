@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a0, 275632
 	fmv.w.x	fa5, a0
 	lui	a0, 287172
@@ -9,7 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lui	a0, 275632
 	fmv.w.x	fa5, a0
 	lui	a0, 280480
@@ -20,9 +21,10 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
+
 .LCPI2_0:
-	.word	0x40c90fdb                      # float 6.28318548
-func0000000000000003:                   # @func0000000000000003
+	.word	0x40c90fdb
+func0000000000000003:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, 271360
@@ -34,11 +36,12 @@ func0000000000000003:                   # @func0000000000000003
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
+
 .LCPI3_0:
-	.word	0x3fb82a99                      # float 1.43879998
+	.word	0x3fb82a99
 .LCPI3_1:
-	.word	0x3fb81062                      # float 1.43799996
-func0000000000000005:                   # @func0000000000000005
+	.word	0x3fb81062
+func0000000000000005:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
@@ -51,9 +54,10 @@ func0000000000000005:                   # @func0000000000000005
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
+
 .LCPI4_0:
-	.word	0x40490fdb                      # float 3.14159274
-func0000000000000007:                   # @func0000000000000007
+	.word	0x40490fdb
+func0000000000000007:
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, 275264
@@ -64,3 +68,4 @@ func0000000000000007:                   # @func0000000000000007
 	fmv.w.x	fa5, zero
 	vmfne.vf	v0, v8, fa5
 	ret
+

@@ -1,19 +1,20 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	andi	a2, a0, 255
 	sext.w	a1, a1
 	lui	a0, 1
 	bnez	a1, .LBB0_3
 	bnez	a2, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	lui	a0, 2
 	beqz	a2, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	li	a0, 1
 	slli	a0, a0, 11
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	andi	a0, a0, 255
 	not	a1, a1
 	srliw	a1, a1, 31
@@ -22,3 +23,4 @@ func0000000000000141:                   # @func0000000000000141
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
+

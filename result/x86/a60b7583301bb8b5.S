@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	movq	%rsi, %rax
 	mulq	%rax
 	seto	%cl
@@ -6,3 +6,4 @@ func0000000000000012:                   # @func0000000000000012
 	setae	%al
 	orb	%cl, %al
 	retq
+

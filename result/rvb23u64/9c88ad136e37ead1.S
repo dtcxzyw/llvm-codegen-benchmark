@@ -1,10 +1,11 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	andi	a1, a1, -5
 	snez	a1, a1
 	andi	a0, a0, 1
 	sh1add	a0, a1, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	li	a2, 255
 	slli	a2, a2, 32
 	and	a1, a1, a2
@@ -13,3 +14,4 @@ func000000000000004c:                   # @func000000000000004c
 	andi	a0, a0, 1
 	sh2add	a0, a1, a0
 	ret
+

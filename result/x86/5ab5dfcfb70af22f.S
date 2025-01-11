@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	testl	%esi, %esi
 	setne	%al
 	andb	$-16, %dl
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	addb	%al, %al
 	orb	%dl, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	testl	%esi, %esi
 	setne	%al
 	andb	$-7, %dl
@@ -14,3 +15,4 @@ func0000000000000005:                   # @func0000000000000005
 	addb	%al, %al
 	orb	%dl, %al
 	retq
+

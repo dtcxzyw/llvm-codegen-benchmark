@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	lui	a0, 349525
 	addi	a0, a0, 1366
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -8,7 +8,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 108
 	vwmul.vx	v8, v10, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a0, 559241
 	addi	a0, a0, -1911
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,3 +21,4 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -60
 	vwmul.vx	v8, v10, a0
 	ret
+

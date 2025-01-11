@@ -1,31 +1,28 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+func000000000000001a:
 	and	w8, w2, #0xfc
 	add	x9, x0, x1
 	cmp	w8, #216
-	mov	x8, #-2                         // =0xfffffffffffffffe
+	mov	x8, #-2
 	csel	x8, x8, xzr, eq
 	add	x0, x9, x8
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	and	w8, w2, #0x7e
-	mov	w9, #24                         // =0x18
+	mov	w9, #24
 	add	x10, x0, x1, lsl #5
 	cmp	w8, #22
-	mov	w8, #22                         // =0x16
+	mov	w8, #22
 	csel	x8, x9, x8, eq
 	add	x0, x10, x8
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-	mov	w8, #223                        // =0xdf
+
+func0000000000000010:
+	mov	w8, #223
 	add	x9, x0, x1
 	and	w8, w2, w8
 	cmp	w8, #88
 	cset	w8, eq
 	add	x0, x9, w8, uxtw #1
 	ret
-                                        // -- End function
+

@@ -1,5 +1,4 @@
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+func000000000000000b:
 	rbit	w8, w1
 	rbit	w9, w0
 	clz	w8, w8
@@ -7,9 +6,8 @@ func000000000000000b:                   // @func000000000000000b
 	cmp	w9, w8
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	rbit	w8, w1
 	rbit	w9, w0
 	clz	w8, w8
@@ -17,9 +15,8 @@ func000000000000001f:                   // @func000000000000001f
 	cmp	w9, w8
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
+
+func000000000000001e:
 	rbit	w8, w1
 	rbit	w9, w0
 	clz	w8, w8
@@ -27,9 +24,8 @@ func000000000000001e:                   // @func000000000000001e
 	cmp	w9, w8
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	rbit	w8, w1
 	rbit	w9, w0
 	clz	w8, w8
@@ -37,4 +33,4 @@ func0000000000000014:                   // @func0000000000000014
 	cmp	w9, w8
 	csel	w0, w9, w8, lo
 	ret
-                                        // -- End function
+

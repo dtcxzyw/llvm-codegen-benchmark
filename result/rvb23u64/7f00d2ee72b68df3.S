@@ -1,16 +1,18 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	mul	a0, a0, a1
 	bseti	a1, zero, 62
 	add	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	mul	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	mul	a0, a0, a1
 	li	a1, -125
 	slli	a1, a1, 26
@@ -22,7 +24,8 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 12
 	sltu	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	mul	a0, a0, a1
 	li	a1, -125
 	slli	a1, a1, 26
@@ -34,7 +37,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	slli	a1, a1, 12
 	sltu	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	mul	a0, a0, a1
 	lui	a1, 950920
 	addiw	a2, a1, -1025
@@ -42,44 +46,52 @@ func0000000000000104:                   # @func0000000000000104
 	addiw	a1, a1, -1024
 	sltu	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	mul	a2, a0, a1
 	mulw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	mul	a2, a0, a1
 	mulw	a0, a0, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	mul	a0, a0, a1
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	mul	a0, a0, a1
 	addi	a0, a0, -1
 	sltiu	a0, a0, 28
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+
+func00000000000001a1:
 	mul	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	mul	a0, a0, a1
 	addi	a0, a0, 16
 	snez	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	mul	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	mul	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 61
@@ -88,14 +100,16 @@ func0000000000000088:                   # @func0000000000000088
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	mul	a0, a0, a1
 	lui	a1, 4
 	addi	a0, a0, 2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+
+func0000000000000098:
 	mul	a0, a0, a1
 	lui	a1, 1048572
 	addiw	a2, a1, 1
@@ -103,17 +117,20 @@ func0000000000000098:                   # @func0000000000000098
 	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	mul	a0, a0, a1
 	addi	a0, a0, 511
 	srli	a0, a0, 63
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	mul	a0, a0, a1
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	mul	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 60
@@ -122,8 +139,10 @@ func0000000000000028:                   # @func0000000000000028
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	mul	a0, a0, a1
 	addi	a0, a0, -1
 	sltiu	a0, a0, 19
 	ret
+

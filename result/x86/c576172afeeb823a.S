@@ -1,16 +1,18 @@
-func0000000000000085:                   # @func0000000000000085
-	movl	$1075, %ecx                     # imm = 0x433
+func0000000000000085:
+	movl	$1075, %ecx
 	subl	%edi, %ecx
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
-	movl	$1074, %eax                     # imm = 0x432
+	movl	$1074, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000087:                   # @func0000000000000087
-	movl	$1092, %ecx                     # imm = 0x444
+
+func0000000000000087:
+	movl	$1092, %ecx
 	subl	%edi, %ecx
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
-	movl	$1091, %eax                     # imm = 0x443
+	movl	$1091, %eax
 	cmovnel	%ecx, %eax
 	retq
+

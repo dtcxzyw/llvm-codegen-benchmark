@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -6,3 +6,4 @@ func0000000000000031:                   # @func0000000000000031
 	shll	$5, %edi
 	orl	%edi, %eax
 	retq
+

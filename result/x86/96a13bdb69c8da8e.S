@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	andl	$2, %edx
 	shrl	%edx
 	andl	%esi, %edx
@@ -6,3 +6,4 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%dl, %al
 	retq
+

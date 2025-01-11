@@ -1,5 +1,4 @@
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+func000000000000001b:
 	sub	x8, x0, x1
 	scvtf	d1, x8
 	fdiv	d0, d1, d0
@@ -7,36 +6,32 @@ func000000000000001b:                   // @func000000000000001b
 	fcmp	d0, d1
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	sub	x8, x0, x1
 	scvtf	d1, x8
 	fdiv	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	sub	x8, x0, x1
 	scvtf	d1, x8
 	fdiv	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	sub	x8, x0, x1
 	scvtf	d1, x8
 	fdiv	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	sub	x8, x0, x1
 	scvtf	d1, x8
 	fdiv	d0, d1, d0
@@ -44,4 +39,4 @@ func0000000000000012:                   // @func0000000000000012
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+

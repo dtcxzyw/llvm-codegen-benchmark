@@ -1,6 +1,6 @@
-func00000000000001a4:                   # @func00000000000001a4
-	imulq	$16807, %rdx, %rdx              # imm = 0x41A7
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+func00000000000001a4:
+	imulq	$16807, %rdx, %rdx
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -16,3 +16,4 @@ func00000000000001a4:                   # @func00000000000001a4
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

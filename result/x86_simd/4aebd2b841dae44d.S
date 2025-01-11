@@ -1,4 +1,4 @@
-func0000000000000c61:                   # @func0000000000000c61
+func0000000000000c61:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm3, %ymm1, %ymm1
@@ -6,14 +6,16 @@ func0000000000000c61:                   # @func0000000000000c61
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	2                               # 0x2
+	.long	2
 .LCPI1_1:
-	.long	13                              # 0xd
-func0000000000000c60:                   # @func0000000000000c60
+	.long	13
+func0000000000000c60:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm2, %k0
 	vpcmpneqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+

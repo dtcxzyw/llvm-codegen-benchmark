@@ -1,7 +1,7 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	leal	32767(%rdi), %eax
 	cltq
-	imulq	$-2147450879, %rax, %rax        # imm = 0x80008001
+	imulq	$-2147450879, %rax, %rax
 	shrq	$32, %rax
 	leal	32767(%rax,%rdi), %eax
 	movl	%eax, %ecx
@@ -10,7 +10,8 @@ func0000000000000009:                   # @func0000000000000009
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	63(%rdi), %ecx
 	leal	126(%rdi), %eax
 	testl	%ecx, %ecx
@@ -18,3 +19,4 @@ func0000000000000000:                   # @func0000000000000000
 	sarl	$6, %eax
 	addl	%edi, %eax
 	retq
+

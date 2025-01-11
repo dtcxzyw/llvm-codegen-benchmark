@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	andi	a0, a0, 1
 	addiw	a1, a1, -176
 	sltiu	a1, a1, -128
@@ -7,14 +7,16 @@ func0000000000000028:                   # @func0000000000000028
 	addi	a1, a1, 128
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addiw	a1, a1, -8
 	sltiu	a1, a1, -6
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	xori	a0, a0, 213
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a0, a0, 1
 	addiw	a1, a1, -18
 	li	a2, 232
@@ -24,3 +26,4 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

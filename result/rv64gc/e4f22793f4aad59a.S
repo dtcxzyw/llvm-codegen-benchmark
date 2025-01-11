@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func000000000000010c:                   # @func000000000000010c
+	.quad	0x3fe0000000000000
+func000000000000010c:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fsub.d	fa4, fa0, fa1
@@ -9,14 +9,16 @@ func000000000000010c:                   # @func000000000000010c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a0, a0
 	flt.d	a1, fa1, fa0
 	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	sext.w	a0, a0
 	fsub.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
@@ -24,3 +26,4 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

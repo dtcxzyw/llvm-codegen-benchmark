@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v8, v8, 4
@@ -6,7 +6,8 @@ func000000000000000d:                   # @func000000000000000d
 	li	a0, 31
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
@@ -15,7 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
@@ -24,7 +26,8 @@ func0000000000000005:                   # @func0000000000000005
 	addiw	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
@@ -34,7 +37,8 @@ func0000000000000015:                   # @func0000000000000015
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
@@ -43,7 +47,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	li	a0, 32
@@ -53,3 +58,4 @@ func0000000000000008:                   # @func0000000000000008
 	bseti	a0, a0, 63
 	vand.vx	v8, v8, a0
 	ret
+

@@ -1,100 +1,88 @@
-func0000000000000075:                   // @func0000000000000075
-// %bb.0:                               // %entry
+func0000000000000075:
 	ubfiz	w8, w2, #16, #8
 	orr	w8, w1, w8
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
-	mov	w9, #35814                      // =0x8be6
+
+func0000000000000050:
+	mov	w9, #35814
 	orr	w8, w1, w2, lsl #24
 	movk	w9, #20642, lsl #16
 	add	w9, w0, w9
 	add	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000070:                   // @func0000000000000070
-// %bb.0:                               // %entry
+
+func0000000000000070:
 	ubfiz	w8, w2, #8, #8
-	mov	w9, #34375                      // =0x8647
+	mov	w9, #34375
 	movk	w9, #25032, lsl #16
 	orr	w8, w1, w8
 	add	w9, w0, w9
 	add	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000007f:                   // @func000000000000007f
-// %bb.0:                               // %entry
+
+func000000000000007f:
 	ubfiz	w8, w2, #1, #8
 	orr	w8, w8, w1
 	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000077:                   // @func0000000000000077
-// %bb.0:                               // %entry
+
+func0000000000000077:
 	ubfiz	w8, w2, #8, #8
-	mov	w9, #9216                       // =0x2400
+	mov	w9, #9216
 	movk	w9, #64672, lsl #16
 	orr	w8, w8, w1
 	add	w9, w0, w9
 	add	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000064:                   // @func0000000000000064
-// %bb.0:                               // %entry
+
+func0000000000000064:
 	ubfiz	w8, w2, #8, #8
 	orr	w8, w8, w0
 	add	w8, w1, w8
 	add	w0, w8, #10
 	ret
-                                        // -- End function
-func000000000000004d:                   // @func000000000000004d
-// %bb.0:                               // %entry
+
+func000000000000004d:
 	orr	w8, w0, w2, lsl #24
 	add	w8, w1, w8
 	add	w0, w8, #9
 	ret
-                                        // -- End function
-func0000000000000073:                   // @func0000000000000073
-// %bb.0:                               // %entry
+
+func0000000000000073:
 	ubfiz	w8, w2, #1, #8
 	orr	w8, w8, w1
 	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-	mov	w9, #48891                      // =0xbefb
+
+func0000000000000044:
+	mov	w9, #48891
 	orr	w8, w0, w2, lsl #24
 	movk	w9, #57005, lsl #16
 	add	w9, w1, w9
 	add	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000006d:                   // @func000000000000006d
-// %bb.0:                               // %entry
+
+func000000000000006d:
 	ubfiz	w8, w2, #8, #8
 	orr	w8, w8, w0
 	add	w8, w1, w8
 	add	w0, w8, #2
 	ret
-                                        // -- End function
-func0000000000000071:                   // @func0000000000000071
-// %bb.0:                               // %entry
+
+func0000000000000071:
 	ubfiz	w8, w2, #8, #8
 	orr	w8, w8, w1
 	add	w8, w0, w8
 	add	w0, w8, #2
 	ret
-                                        // -- End function
-func0000000000000055:                   // @func0000000000000055
-// %bb.0:                               // %entry
+
+func0000000000000055:
 	orr	w8, w1, w2, lsl #24
 	add	w8, w0, w8
-	sub	w0, w8, #2048, lsl #12          // =8388608
+	sub	w0, w8, #2048, lsl #12
 	ret
-                                        // -- End function
+

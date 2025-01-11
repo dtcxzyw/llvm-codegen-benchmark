@@ -1,5 +1,4 @@
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+func000000000000008c:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	cmp	w9, #95
@@ -10,9 +9,8 @@ func000000000000008c:                   // @func000000000000008c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000082:                   // @func0000000000000082
-// %bb.0:                               // %entry
+
+func0000000000000082:
 	and	w8, w0, #0xff
 	cmp	w8, #35
 	cset	w9, eq
@@ -22,9 +20,8 @@ func0000000000000082:                   // @func0000000000000082
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000202:                   // @func0000000000000202
-// %bb.0:                               // %entry
+
+func0000000000000202:
 	and	w8, w0, #0xff
 	cmp	w8, #17
 	cset	w9, lo
@@ -34,9 +31,8 @@ func0000000000000202:                   // @func0000000000000202
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000302:                   // @func0000000000000302
-// %bb.0:                               // %entry
+
+func0000000000000302:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	cmp	w8, #0
@@ -47,9 +43,8 @@ func0000000000000302:                   // @func0000000000000302
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	and	w8, w1, #0xff
 	cmp	w8, #22
 	cset	w9, eq
@@ -59,9 +54,8 @@ func0000000000000084:                   // @func0000000000000084
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000090:                   // @func0000000000000090
-// %bb.0:                               // %entry
+
+func0000000000000090:
 	and	w8, w0, #0xff
 	cmp	w8, #14
 	cset	w9, eq
@@ -71,4 +65,4 @@ func0000000000000090:                   // @func0000000000000090
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

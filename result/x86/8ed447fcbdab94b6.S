@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	cmpb	$-35, %dl
 	setne	%cl
 	andb	%dil, %cl
@@ -6,7 +6,8 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	cmpb	$112, %dl
 	setae	%cl
 	andb	%dil, %cl
@@ -14,7 +15,8 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	negb	%dl
 	setno	%cl
 	andb	%dil, %cl
@@ -22,3 +24,4 @@ func0000000000000184:                   # @func0000000000000184
 	setb	%al
 	orb	%cl, %al
 	retq
+

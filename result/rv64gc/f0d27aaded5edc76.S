@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	lui	a0, 280480
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa0, fa5
@@ -10,5 +10,6 @@ func0000000000000042:                   # @func0000000000000042
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB0_3
 	fmv.s	fa0, fa5
-.LBB0_3:                                # %entry
+.LBB0_3:
 	ret
+

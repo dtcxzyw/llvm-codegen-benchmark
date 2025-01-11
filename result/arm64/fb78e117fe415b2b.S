@@ -1,18 +1,15 @@
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+func0000000000000009:
 	ubfiz	w8, w1, #8, #8
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	ubfiz	w8, w1, #1, #15
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	ubfiz	w8, w1, #6, #10
 	orr	w0, w0, w8
 	ret
-                                        // -- End function
+

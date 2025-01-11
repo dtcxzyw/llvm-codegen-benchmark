@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	vmovq	%xmm0, %rax
 	movq	%rax, %rcx
 	shlq	$12, %rcx
@@ -7,7 +7,8 @@ func0000000000000028:                   # @func0000000000000028
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	vmovq	%xmm0, %rax
 	movq	%rax, %rcx
 	shlq	$12, %rcx
@@ -16,3 +17,4 @@ func0000000000000184:                   # @func0000000000000184
 	sete	%al
 	andb	%cl, %al
 	retq
+

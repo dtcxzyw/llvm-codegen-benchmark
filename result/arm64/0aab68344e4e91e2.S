@@ -1,5 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	add	w8, w2, #63
 	cmp	w2, #0
 	csel	w8, w8, w2, lt
@@ -7,9 +6,8 @@ func000000000000000a:                   // @func000000000000000a
 	add	x8, x1, w8, sxtw #3
 	add	x0, x8, x0
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	add	w8, w2, #63
 	cmp	w2, #0
 	csel	w8, w8, w2, lt
@@ -17,9 +15,8 @@ func000000000000000b:                   // @func000000000000000b
 	add	x8, x1, w8, sxtw #3
 	add	x0, x8, x0, lsl #3
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, lt
@@ -27,9 +24,8 @@ func0000000000000008:                   // @func0000000000000008
 	add	x8, x1, w8, sxtw
 	add	x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	add	w8, w2, #31
 	cmp	w2, #0
 	csel	w8, w8, w2, lt
@@ -37,9 +33,8 @@ func0000000000000000:                   // @func0000000000000000
 	add	x8, x1, w8, sxtw #2
 	add	x0, x8, x0, lsl #2
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, lt
@@ -47,4 +42,4 @@ func0000000000000002:                   // @func0000000000000002
 	add	x8, x1, w8, sxtw #3
 	add	x0, x8, x0, lsl #3
 	ret
-                                        // -- End function
+

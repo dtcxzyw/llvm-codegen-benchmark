@@ -1,5 +1,6 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	shrl	$4, %edi
-	movl	$279, %eax                      # imm = 0x117
+	movl	$279, %eax
 	shrxl	%edi, %eax, %eax
 	retq
+

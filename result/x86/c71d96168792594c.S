@@ -1,13 +1,14 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	cmpq	$131072, %rax                   # imm = 0x20000
+	cmpq	$131072, %rax
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
+

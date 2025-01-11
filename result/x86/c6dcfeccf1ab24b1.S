@@ -1,27 +1,30 @@
-func0000000000000410:                   # @func0000000000000410
-	addq	$-1073741825, %rdx              # imm = 0xBFFFFFFF
-	cmpq	$-1073741824, %rdx              # imm = 0xC0000000
+func0000000000000410:
+	addq	$-1073741825, %rdx
+	cmpq	$-1073741824, %rdx
 	setb	%cl
-	cmpq	$1073741825, %rsi               # imm = 0x40000001
+	cmpq	$1073741825, %rsi
 	setae	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000808:                   # @func0000000000000808
+
+func0000000000000808:
 	cmpq	$32, %rdx
 	setb	%cl
 	orb	%dil, %cl
 	andq	$-32, %rsi
-	cmpq	$-119072, %rsi                  # imm = 0xFFFE2EE0
+	cmpq	$-119072, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000208:                   # @func0000000000000208
-	cmpq	$8144, %rdx                     # imm = 0x1FD0
+
+func0000000000000208:
+	cmpq	$8144, %rdx
 	sete	%cl
 	orb	%dil, %cl
-	addq	$-8150, %rsi                    # imm = 0xE02A
+	addq	$-8150, %rsi
 	cmpq	$6, %rsi
 	setb	%al
 	orb	%cl, %al
 	retq
+

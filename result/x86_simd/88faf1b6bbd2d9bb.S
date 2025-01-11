@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func000000000000000d:                   # @func000000000000000d
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func000000000000000d:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm1, %ecx
@@ -50,5 +50,6 @@ func000000000000000d:                   # @func000000000000000d
 	xorl	%edx, %edx
 	divw	%cx
 	vpinsrw	$7, %eax, %xmm2, %xmm0
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
+	vpmovzxwd	%xmm0, %ymm0
 	retq
+

@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x7ff0000000000000              # double +Inf
-	.quad	0xfff0000000000000              # double -Inf
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x7ff0000000000000
+	.quad	0xfff0000000000000
+func0000000000000001:
 	andi	a0, a0, 255
 	addi	a0, a0, -45
 	seqz	a0, a0
@@ -11,3 +11,4 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	fld	fa0, 0(a0)
 	ret
+

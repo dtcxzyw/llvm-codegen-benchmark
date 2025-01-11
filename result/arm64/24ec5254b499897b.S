@@ -1,24 +1,21 @@
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+func000000000000008c:
 	add	x8, x1, x2
 	cmp	x0, #0
 	ccmp	x0, x8, #2, ne
 	cset	w0, lo
 	ret
-                                        // -- End function
-func000000000000058c:                   // @func000000000000058c
-// %bb.0:                               // %entry
+
+func000000000000058c:
 	add	x8, x1, x2
 	cmp	x0, #0
 	ccmp	x0, x8, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000048a:                   // @func000000000000048a
-// %bb.0:                               // %entry
+
+func000000000000048a:
 	add	x8, x1, x2
 	cmp	x0, #0
 	ccmp	x0, x8, #2, ge
 	cset	w0, lo
 	ret
-                                        // -- End function
+

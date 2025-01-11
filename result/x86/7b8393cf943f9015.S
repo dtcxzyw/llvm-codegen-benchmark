@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	xorl	$255, %edx
 	imull	%esi, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -6,13 +6,15 @@ func0000000000000020:                   # @func0000000000000020
 	shll	$8, %eax
 	addl	%ecx, %eax
 	retq
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	xorl	$255, %edx
 	imull	%esi, %edx
 	addl	%edi, %edx
-	imull	$32897, %edx, %eax              # imm = 0x8081
+	imull	$32897, %edx, %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	xorl	$255, %edx
 	imull	%esi, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -20,3 +22,4 @@ func000000000000003f:                   # @func000000000000003f
 	shll	$8, %eax
 	addl	%ecx, %eax
 	retq
+

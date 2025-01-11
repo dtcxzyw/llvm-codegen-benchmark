@@ -1,4 +1,4 @@
-func00000000000000ef:                   # @func00000000000000ef
+func00000000000000ef:
 	srai	a0, a0, 2
 	lui	a1, 699051
 	addiw	a1, a1, -1365
@@ -12,3 +12,4 @@ func00000000000000ef:                   # @func00000000000000ef
 	sh1add	a0, a0, a0
 	slli	a0, a0, 2
 	ret
+

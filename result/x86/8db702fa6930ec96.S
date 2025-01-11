@@ -1,10 +1,11 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subq	%rsi, %rdi
 	leaq	-48(%rdi), %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rax, %rax
 	shrq	$5, %rax
 	leaq	(%rax,%rax,2), %rax
 	shlq	$4, %rax
 	addq	$48, %rax
 	retq
+

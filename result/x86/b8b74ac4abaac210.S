@@ -1,4 +1,4 @@
-func0000000000000059:                   # @func0000000000000059
+func0000000000000059:
 	decl	%edi
 	movl	%edi, %eax
 	negl	%eax
@@ -8,3 +8,4 @@ func0000000000000059:                   # @func0000000000000059
 	shrl	$11, %eax
 	orb	$48, %al
 	retq
+

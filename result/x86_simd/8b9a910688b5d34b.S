@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
-	.byte	243                             # 0xf3
+	.byte	243
+	.byte	243
+	.byte	243
+	.byte	243
+	.byte	243
+	.byte	243
+	.byte	243
+	.byte	243
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
-	.byte	244                             # 0xf4
+	.byte	244
+	.byte	244
+	.byte	244
+	.byte	244
+	.byte	244
+	.byte	244
+	.byte	244
+	.byte	244
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,8 +33,8 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.long	4294934528                      # 0xffff8000
-func0000000000000204:                   # @func0000000000000204
+	.long	4294934528
+func0000000000000204:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm0
@@ -45,15 +45,16 @@ func0000000000000204:                   # @func0000000000000204
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
+	.byte	15
+	.byte	15
+	.byte	15
+	.byte	15
+	.byte	15
+	.byte	15
+	.byte	15
+	.byte	15
 	.zero	1
 	.zero	1
 	.zero	1
@@ -63,14 +64,14 @@ func0000000000000204:                   # @func0000000000000204
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
-	.byte	4                               # 0x4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
+	.byte	4
 	.zero	1
 	.zero	1
 	.zero	1
@@ -80,8 +81,8 @@ func0000000000000204:                   # @func0000000000000204
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.long	128                             # 0x80
-func0000000000000090:                   # @func0000000000000090
+	.long	128
+func0000000000000090:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddb	.LCPI1_0(%rip), %xmm2, %xmm0
@@ -92,3 +93,4 @@ func0000000000000090:                   # @func0000000000000090
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

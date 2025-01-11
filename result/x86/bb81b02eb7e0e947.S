@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	movq	%rdi, %rax
 	notb	%dl
 	movzbl	%dl, %ecx
@@ -8,7 +8,8 @@ func0000000000000019:                   # @func0000000000000019
 	subq	%rcx, %rax
 	sarq	$4, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movq	%rdi, %rax
 	leaq	12(%rsi), %rcx
 	testb	$1, %dl
@@ -16,7 +17,8 @@ func0000000000000018:                   # @func0000000000000018
 	subq	%rcx, %rax
 	sarq	$2, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdi, %rax
 	notb	%dl
 	movzbl	%dl, %ecx
@@ -26,3 +28,4 @@ func0000000000000001:                   # @func0000000000000001
 	subq	%rcx, %rax
 	sarq	$3, %rax
 	retq
+

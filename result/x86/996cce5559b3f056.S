@@ -1,23 +1,26 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	movq	%rdi, %rcx
-	orq	$512, %rcx                      # imm = 0x200
-	testl	$1114112, %esi                  # imm = 0x110000
+	orq	$512, %rcx
+	testl	$1114112, %esi
 	cmoveq	%rdi, %rcx
-	movabsq	$562949953421312, %rax          # imm = 0x2000000000000
+	movabsq	$562949953421312, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	movabsq	$1095216660480, %rcx            # imm = 0xFF00000000
+
+func0000000000000042:
+	movabsq	$1095216660480, %rcx
 	orq	%rdi, %rcx
 	testb	$16, %sil
 	cmoveq	%rdi, %rcx
-	movl	$4278190080, %eax               # imm = 0xFF000000
+	movl	$4278190080, %eax
 	orq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	$4278190080, %eax               # imm = 0xFF000000
+
+func0000000000000002:
+	movl	$4278190080, %eax
 	orq	%rdi, %rax
 	testb	$8, %sil
 	cmoveq	%rdi, %rax
-	orq	$16711680, %rax                 # imm = 0xFF0000
+	orq	$16711680, %rax
 	retq
+

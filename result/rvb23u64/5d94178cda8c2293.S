@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	andi	a0, a0, 1
 	negw	a2, a2
 	bset	a2, zero, a2
@@ -6,7 +6,8 @@ func000000000000000e:                   # @func000000000000000e
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a0, a0, 1
 	negw	a2, a2
 	bset	a2, zero, a2
@@ -14,3 +15,4 @@ func000000000000000f:                   # @func000000000000000f
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

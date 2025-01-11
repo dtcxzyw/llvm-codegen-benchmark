@@ -1,11 +1,12 @@
-func0000000000000058:                   # @func0000000000000058
-	testl	$3584, %edi                     # imm = 0xE00
+func0000000000000058:
+	testl	$3584, %edi
 	sete	%al
 	shrl	$12, %edi
 	andl	$1, %edi
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testb	%dil, %dil
 	setns	%cl
 	andl	$63, %edi
@@ -13,3 +14,4 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
+

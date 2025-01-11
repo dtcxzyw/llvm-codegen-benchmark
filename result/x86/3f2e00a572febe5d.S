@@ -1,12 +1,14 @@
-func0000000000000001:                   # @func0000000000000001
-	andl	$-65538, %edi                   # imm = 0xFFFEFFFE
+func0000000000000001:
+	andl	$-65538, %edi
 	testl	%esi, %esi
-	movl	$-65538, %eax                   # imm = 0xFFFEFFFE
+	movl	$-65538, %eax
 	cmovel	%edi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	andl	$1073741824, %edi               # imm = 0x40000000
+
+func000000000000000a:
+	andl	$1073741824, %edi
 	testl	%esi, %esi
-	movl	$1073741824, %eax               # imm = 0x40000000
+	movl	$1073741824, %eax
 	cmovnsl	%edi, %eax
 	retq
+

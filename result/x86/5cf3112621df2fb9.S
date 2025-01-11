@@ -1,12 +1,13 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	testl	%esi, %esi
-	movl	$1073774720, %ecx               # imm = 0x40008080
-	movl	$1073856640, %eax               # imm = 0x4001C080
+	movl	$1073774720, %ecx
+	movl	$1073856640, %eax
 	cmovel	%ecx, %eax
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	testl	%esi, %esi
 	sete	%al
 	testl	%edi, %edi
@@ -14,5 +15,6 @@ func0000000000000043:                   # @func0000000000000043
 	orb	%al, %cl
 	movzbl	%cl, %eax
 	shll	$19, %eax
-	addl	$-204996608, %eax               # imm = 0xF3C80000
+	addl	$-204996608, %eax
 	retq
+

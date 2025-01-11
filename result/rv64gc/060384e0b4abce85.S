@@ -1,4 +1,4 @@
-func0000000000000186:                   # @func0000000000000186
+func0000000000000186:
 	sext.w	a2, a0
 	sext.w	a3, a1
 	addi	a3, a3, 28
@@ -7,9 +7,10 @@ func0000000000000186:                   # @func0000000000000186
 	and	a2, a2, a3
 	bnez	a2, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	sext.w	a2, a0
 	sext.w	a3, a1
 	sltiu	a3, a3, -2
@@ -18,9 +19,10 @@ func0000000000000104:                   # @func0000000000000104
 	and	a2, a2, a3
 	bnez	a2, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a2, a1
 	sext.w	a3, a0
 	snez	a3, a3
@@ -28,9 +30,10 @@ func0000000000000181:                   # @func0000000000000181
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a2, a0
 	sext.w	a3, a1
 	addi	a3, a3, -4
@@ -40,9 +43,10 @@ func000000000000002c:                   # @func000000000000002c
 	and	a2, a2, a3
 	bnez	a2, .LBB3_2
 	mv	a0, a1
-.LBB3_2:                                # %entry
+.LBB3_2:
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a2, a1
 	sext.w	a3, a0
 	slti	a3, a3, 0
@@ -50,9 +54,10 @@ func0000000000000141:                   # @func0000000000000141
 	or	a2, a2, a3
 	beqz	a2, .LBB4_2
 	mv	a0, a1
-.LBB4_2:                                # %entry
+.LBB4_2:
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	sext.w	a2, a1
 	sext.w	a3, a0
 	slti	a3, a3, 0
@@ -61,5 +66,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a2, a2, a3
 	bnez	a2, .LBB5_2
 	mv	a0, a1
-.LBB5_2:                                # %entry
+.LBB5_2:
 	ret
+

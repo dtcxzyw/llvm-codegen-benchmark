@@ -1,9 +1,10 @@
-func000000000000010c:                   # @func000000000000010c
-	movabsq	$6148914691236517216, %rax      # imm = 0x5555555555555560
+func000000000000010c:
+	movabsq	$6148914691236517216, %rax
 	imulq	%rsi, %rax
 	rorxq	$3, %rax, %rax
-	movabsq	$768614336404564650, %rcx       # imm = 0xAAAAAAAAAAAAAAA
+	movabsq	$768614336404564650, %rcx
 	cmpq	%rcx, %rax
 	seta	%al
 	andb	%dil, %al
 	retq
+

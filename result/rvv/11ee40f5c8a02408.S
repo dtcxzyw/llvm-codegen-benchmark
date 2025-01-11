@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	4223091239536077                # 0xf00e10d2fc5cd
-func000000000000000f:                   # @func000000000000000f
+	.quad	4223091239536077
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 16
 	lui	a0, 16
@@ -19,3 +19,4 @@ func000000000000000f:                   # @func000000000000000f
 	vsub.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
 	ret
+

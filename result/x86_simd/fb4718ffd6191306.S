@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func0000000000000000:                   # @func0000000000000000
+	.long	1
+func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vextracti128	$1, %ymm1, %xmm0
@@ -48,5 +48,6 @@ func0000000000000000:                   # @func0000000000000000
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
-	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1}
 	retq
+

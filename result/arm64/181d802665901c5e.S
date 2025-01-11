@@ -1,14 +1,13 @@
 .LCPI0_0:
-	.xword	0x3fe999999999999a              // double 0.80000000000000004
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+	.xword	0x3fe999999999999a
+func0000000000000000:
 	adrp	x8, .LCPI0_0
 	tst	w0, #0x1
 	ldr	d1, [x8, :lo12:.LCPI0_0]
-	mov	w8, #1135542272                 // =0x43af0000
+	mov	w8, #1135542272
 	fmul	d0, d0, d1
 	fmov	s1, w8
 	fcvt	s0, d0
 	fcsel	s0, s1, s0, ne
 	ret
-                                        // -- End function
+

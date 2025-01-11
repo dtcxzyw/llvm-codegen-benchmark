@@ -1,47 +1,52 @@
 .LCPI0_0:
-	.long	4294967292                      # 0xfffffffc
+	.long	4294967292
 .LCPI0_1:
-	.long	4                               # 0x4
-func0000000000000000:                   # @func0000000000000000
+	.long	4
+func0000000000000000:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	2                               # 0x2
-func000000000000000c:                   # @func000000000000000c
+	.long	2
+func000000000000000c:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendw	$170, %xmm2, %xmm1, %xmm1       # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3],xmm1[4],xmm2[5],xmm1[6],xmm2[7]
+	vpblendw	$170, %xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendw	$170, %xmm2, %xmm1, %xmm1       # xmm1 = xmm1[0],xmm2[1],xmm1[2],xmm2[3],xmm1[4],xmm2[5],xmm1[6],xmm2[7]
+	vpblendw	$170, %xmm2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	131056                          # 0x1fff0
+	.long	131056
 .LCPI3_1:
-	.long	24                              # 0x18
-func000000000000000d:                   # @func000000000000000d
+	.long	24
+func000000000000000d:
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+
 .LCPI4_0:
-	.long	4294967292                      # 0xfffffffc
+	.long	4294967292
 .LCPI4_1:
-	.long	16                              # 0x10
-func0000000000000008:                   # @func0000000000000008
+	.long	16
+func0000000000000008:
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+

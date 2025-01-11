@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	movq	%rdi, %rax
 	leal	1(%rsi), %ecx
 	xorl	%edx, %edx
@@ -6,3 +6,4 @@ func0000000000000009:                   # @func0000000000000009
 	cmovnel	%ecx, %edx
 	subq	%rdx, %rax
 	retq
+

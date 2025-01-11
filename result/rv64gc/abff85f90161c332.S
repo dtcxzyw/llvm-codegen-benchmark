@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
-func0000000000000012:                   # @func0000000000000012
+	.quad	384307168202282325
+func0000000000000012:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	addiw	a1, a1, -1365
@@ -15,11 +15,12 @@ func0000000000000012:                   # @func0000000000000012
 	add	a0, a0, a2
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+
 .LCPI1_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func0000000000000016:                   # @func0000000000000016
+	.quad	768614336404564650
+func0000000000000016:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	addiw	a1, a1, -1365
@@ -34,11 +35,12 @@ func0000000000000016:                   # @func0000000000000016
 	add	a0, a0, a2
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+
 .LCPI2_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func0000000000000010:                   # @func0000000000000010
+	.quad	768614336404564650
+func0000000000000010:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	addiw	a1, a1, -1365
@@ -53,5 +55,6 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a2
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+

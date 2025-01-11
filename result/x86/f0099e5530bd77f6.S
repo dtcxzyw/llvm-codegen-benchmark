@@ -1,4 +1,4 @@
-func0000000000000101:                   # @func0000000000000101
+func0000000000000101:
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	notq	%rsi
@@ -6,3 +6,4 @@ func0000000000000101:                   # @func0000000000000101
 	testq	%rsi, %rsi
 	sete	%al
 	retq
+

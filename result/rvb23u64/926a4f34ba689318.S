@@ -1,10 +1,11 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	fmin.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
 	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
-func0000000000000220:                   # @func0000000000000220
+
+func0000000000000220:
 	fli.s	fa5, 1.0
 	feq.s	a1, fa1, fa5
 	fmv.w.x	fa5, zero
@@ -12,7 +13,8 @@ func0000000000000220:                   # @func0000000000000220
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa5, fa1
 	fle.s	a2, fa5, fa0
@@ -20,9 +22,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+
 .LCPI3_0:
-	.word	0x3f733333                      # float 0.949999988
-func0000000000000120:                   # @func0000000000000120
+	.word	0x3f733333
+func0000000000000120:
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
 	fmv.w.x	fa4, zero
@@ -31,14 +34,16 @@ func0000000000000120:                   # @func0000000000000120
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	fmax.s	fa5, fa0, fa1
 	lui	a1, 212992
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
-func00000000000001dc:                   # @func00000000000001dc
+
+func00000000000001dc:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
 	feq.s	a2, fa0, fa5
@@ -46,7 +51,8 @@ func00000000000001dc:                   # @func00000000000001dc
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000248:                   # @func0000000000000248
+
+func0000000000000248:
 	fli.s	fa5, inf
 	lui	a1, 913408
 	flt.s	a2, fa1, fa5
@@ -58,7 +64,8 @@ func0000000000000248:                   # @func0000000000000248
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000264:                   # @func0000000000000264
+
+func0000000000000264:
 	fli.s	fa5, inf
 	flt.s	a1, fa1, fa5
 	flt.s	a2, fa5, fa1
@@ -70,7 +77,8 @@ func0000000000000264:                   # @func0000000000000264
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000268:                   # @func0000000000000268
+
+func0000000000000268:
 	fli.s	fa5, inf
 	lui	a1, 798736
 	flt.s	a2, fa1, fa5
@@ -82,7 +90,8 @@ func0000000000000268:                   # @func0000000000000268
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000001e0:                   # @func00000000000001e0
+
+func00000000000001e0:
 	fli.s	fa5, inf
 	feq.s	a1, fa1, fa5
 	feq.s	a2, fa0, fa5
@@ -90,3 +99,4 @@ func00000000000001e0:                   # @func00000000000001e0
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

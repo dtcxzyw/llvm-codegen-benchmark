@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	sext.w	a2, a2
 	negw	a3, a2
 	max	a2, a2, a3
@@ -9,3 +9,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
+

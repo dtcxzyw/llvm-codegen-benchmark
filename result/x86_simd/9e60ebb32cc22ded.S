@@ -1,17 +1,18 @@
 .LCPI0_0:
-	.long	1174137155                      # 0x45fbe943
+	.long	1174137155
 .LCPI0_1:
-	.long	3782248765                      # 0xe170893d
+	.long	3782248765
 .LCPI0_2:
-	.long	153742143                       # 0x929eb3f
-func0000000000000000:                   # @func0000000000000000
+	.long	153742143
+func0000000000000000:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vpslld	$12, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1
@@ -21,9 +22,10 @@ func0000000000000014:                   # @func0000000000000014
 	vpslld	$10, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	528513                          # 0x81081
-func0000000000000010:                   # @func0000000000000010
+	.long	528513
+func0000000000000010:
 	vpslld	$4, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1
@@ -32,7 +34,8 @@ func0000000000000010:                   # @func0000000000000010
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vpslld	$12, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1
@@ -42,3 +45,4 @@ func0000000000000030:                   # @func0000000000000030
 	vpslld	$10, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+

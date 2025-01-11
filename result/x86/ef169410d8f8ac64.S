@@ -1,6 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movq	%rdx, %rcx
-	movl	$1572864, %eax                  # imm = 0x180000
+	movl	$1572864, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	movq	%rax, %rcx
@@ -13,3 +13,4 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
+

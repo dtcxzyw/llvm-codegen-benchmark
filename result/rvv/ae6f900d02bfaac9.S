@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func0000000000000051:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -13,7 +13,8 @@ func0000000000000051:                   # @func0000000000000051
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	lui	a0, 349525
 	addi	a0, a0, 1366
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -27,7 +28,8 @@ func0000000000000061:                   # @func0000000000000061
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	lui	a0, 174763
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -42,3 +44,4 @@ func0000000000000031:                   # @func0000000000000031
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
 	ret
+

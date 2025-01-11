@@ -1,26 +1,30 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	shrq	$3, %rdx
 	leaq	(%rdx,%rsi), %rax
 	shlq	$9, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	shrq	$9, %rdx
 	leaq	(%rdx,%rsi), %rax
 	shlq	$10, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	shlq	$48, %rsi
 	leaq	(%rsi,%rdx), %rcx
-	movabsq	$-281474976710656, %rax         # imm = 0xFFFF000000000000
+	movabsq	$-281474976710656, %rax
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	shlq	$32, %rsi
 	leaq	(%rsi,%rdx), %rcx
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+	movabsq	$-4294967296, %rax
 	andq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

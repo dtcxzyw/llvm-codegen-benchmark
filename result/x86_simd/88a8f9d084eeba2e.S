@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.long	1                               # 0x1
+	.long	1
 .LCPI0_1:
-	.quad	8388607                         # 0x7fffff
-func0000000000000008:                   # @func0000000000000008
+	.quad	8388607
+func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
@@ -16,3 +16,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

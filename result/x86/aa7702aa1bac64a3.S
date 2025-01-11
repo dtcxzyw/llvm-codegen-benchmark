@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	decl	%esi
 	testl	%esi, %esi
 	setg	%cl
@@ -6,7 +6,8 @@ func000000000000014a:                   # @func000000000000014a
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addl	$-2, %esi
 	cmpl	$-3, %esi
 	setb	%cl
@@ -14,3 +15,4 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
+

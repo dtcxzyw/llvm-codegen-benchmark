@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	xorl	%ecx, %ecx
 	cmpl	$12, %esi
 	cmovel	%esi, %ecx
@@ -8,7 +8,8 @@ func0000000000000003:                   # @func0000000000000003
 	leal	(%rax,%rax,2), %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	cmpl	$16, %esi
 	setge	%al
 	shlb	$3, %al
@@ -16,3 +17,4 @@ func0000000000000015:                   # @func0000000000000015
 	orb	%dil, %al
 	orb	$-44, %al
 	retq
+

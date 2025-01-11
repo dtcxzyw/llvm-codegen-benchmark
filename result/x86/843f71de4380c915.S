@@ -1,4 +1,4 @@
-func000000000000118c:                   # @func000000000000118c
+func000000000000118c:
 	cmpb	$-26, %sil
 	setb	%cl
 	cmpb	$95, %dil
@@ -8,3 +8,4 @@ func000000000000118c:                   # @func000000000000118c
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srli	a1, a1, 3
@@ -8,9 +8,10 @@ func000000000000000b:                   # @func000000000000000b
 	mul	a1, a1, a2
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	srli	a1, a1, 3
@@ -20,10 +21,11 @@ func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
 	bltu	a1, a0, .LBB1_2
 	mv	a1, a0
-.LBB1_2:                                # %entry
+.LBB1_2:
 	mv	a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	sub	a1, a1, a2
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -33,5 +35,6 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 3
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+

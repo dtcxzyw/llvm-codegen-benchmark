@@ -1,4 +1,4 @@
-func000000000000006e:                   # @func000000000000006e
+func000000000000006e:
 	slli	a2, a2, 8
 	or	a0, a0, a2
 	andi	a1, a1, 255
@@ -6,7 +6,8 @@ func000000000000006e:                   # @func000000000000006e
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 2
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	slli	a2, a2, 16
 	or	a0, a0, a2
 	andi	a1, a1, 255
@@ -15,7 +16,8 @@ func000000000000006f:                   # @func000000000000006f
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	slli	a2, a2, 8
 	andi	a1, a1, 255
 	or	a0, a0, a2
@@ -23,3 +25,4 @@ func000000000000006c:                   # @func000000000000006c
 	li	a1, 1000
 	mulw	a0, a0, a1
 	ret
+

@@ -1,11 +1,12 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	orq	%rdx, %rsi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -15,3 +16,4 @@ func0000000000000581:                   # @func0000000000000581
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
+

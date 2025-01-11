@@ -1,25 +1,29 @@
-func0000000000001868:                   # @func0000000000001868
+func0000000000001868:
 	snez	a2, a2
 	srli	a1, a1, 2
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000001864:                   # @func0000000000001864
+
+func0000000000001864:
 	snez	a2, a2
 	srli	a1, a1, 9
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000001878:                   # @func0000000000001878
+
+func0000000000001878:
 	snez	a2, a2
 	srli	a1, a1, 3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000001861:                   # @func0000000000001861
+
+func0000000000001861:
 	snez	a2, a2
 	srli	a1, a1, 3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

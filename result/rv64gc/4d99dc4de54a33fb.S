@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	sext.w	a3, a0
 	sub	a2, a2, a1
 	lui	a0, 699051
@@ -7,5 +7,6 @@ func0000000000000008:                   # @func0000000000000008
 	mulw	a0, a2, a0
 	bltu	a0, a3, .LBB0_2
 	mv	a0, a3
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

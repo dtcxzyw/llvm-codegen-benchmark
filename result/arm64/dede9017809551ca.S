@@ -1,28 +1,24 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	lsl	w8, w2, #5
 	add	x8, x0, w8, sxtw
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func000000000000003b:                   // @func000000000000003b
-// %bb.0:                               // %entry
+
+func000000000000003b:
 	lsl	w8, w2, #1
 	add	x8, x0, w8, sxtw
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func000000000000002b:                   // @func000000000000002b
-// %bb.0:                               // %entry
+
+func000000000000002b:
 	lsl	w8, w2, #1
 	add	x8, x0, w8, sxtw
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	lsl	w8, w2, #4
 	add	x8, x0, w8, sxtw #1
 	add	x0, x8, w1, uxtw #1
 	ret
-                                        // -- End function
+

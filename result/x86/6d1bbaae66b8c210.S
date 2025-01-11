@@ -1,11 +1,12 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	cmpw	$1, %si
 	sete	%cl
 	testw	%di, %di
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	addl	$-60, %esi
 	cmpw	$31, %si
 	setb	%cl
@@ -13,7 +14,8 @@ func0000000000000484:                   # @func0000000000000484
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addl	$-8, %esi
 	cmpw	$-3, %si
 	setb	%cl
@@ -21,7 +23,8 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000494:                   # @func0000000000000494
+
+func0000000000000494:
 	addl	$-137, %esi
 	cmpw	$32, %si
 	setb	%cl
@@ -29,7 +32,8 @@ func0000000000000494:                   # @func0000000000000494
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000481:                   # @func0000000000000481
+
+func0000000000000481:
 	addl	$-19, %esi
 	cmpw	$2, %si
 	setb	%cl
@@ -37,3 +41,4 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	orb	%cl, %al
 	retq
+

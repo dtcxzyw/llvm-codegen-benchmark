@@ -1,5 +1,4 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	asr	x8, x0, #3
 	ucvtf	s1, x8
 	fdiv	s0, s0, s1
@@ -7,4 +6,4 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
+

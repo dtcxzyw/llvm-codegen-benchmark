@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	22                              # 0x16
+	.long	22
 .LCPI0_1:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000048:                   # @func0000000000000048
+	.quad	0x3ff0000000000000
+func0000000000000048:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
@@ -11,3 +11,4 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

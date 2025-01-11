@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
-func0000000000000004:                   # @func0000000000000004
+	.quad	2951479051793528259
+func0000000000000004:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -11,9 +11,10 @@ func0000000000000004:                   # @func0000000000000004
 	vsrl.vi	v8, v10, 2
 	vmerge.vim	v8, v8, 1, v0
 	ret
+
 .LCPI1_0:
-	.quad	19342813113834067               # 0x44b82fa09b5a53
-func0000000000000008:                   # @func0000000000000008
+	.quad	19342813113834067
+func0000000000000008:
 	lui	a0, %hi(.LCPI1_0)
 	lui	a1, 8801
 	ld	a0, %lo(.LCPI1_0)(a0)
@@ -29,9 +30,10 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, -1408
 	vmerge.vxm	v8, v8, a0, v0
 	ret
+
 .LCPI2_0:
-	.quad	-1336720585051416783            # 0xed7303b5cc0ed731
-func0000000000000001:                   # @func0000000000000001
+	.quad	-1336720585051416783
+func0000000000000001:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -41,3 +43,4 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v8, v10, 6
 	vmerge.vim	v8, v8, 4, v0
 	ret
+

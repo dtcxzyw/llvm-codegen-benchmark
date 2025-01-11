@@ -1,4 +1,4 @@
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000000f5:
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	addiw	a0, a0, -1005
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -22,7 +23,8 @@ func0000000000000075:                   # @func0000000000000075
 	addiw	a0, a0, -1005
 	vmacc.vx	v8, a0, v10
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -34,7 +36,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	addiw	a0, a0, 131
 	vmadd.vx	v8, a0, v12
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, -1
 	srli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -47,7 +50,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 5
 	vmacc.vx	v8, a0, v10
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -58,3 +62,4 @@ func00000000000000cc:                   # @func00000000000000cc
 	slli	a0, a0, 33
 	vmacc.vx	v8, a0, v10
 	ret
+

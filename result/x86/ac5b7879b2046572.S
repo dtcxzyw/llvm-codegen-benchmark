@@ -1,8 +1,9 @@
-func0000000000000042:                   # @func0000000000000042
-	cmpl	$-25728, %edi                   # imm = 0x9B80
-	movl	$-26368, %ecx                   # imm = 0x9900
+func0000000000000042:
+	cmpl	$-25728, %edi
+	movl	$-26368, %ecx
 	movl	%edi, %eax
 	cmovel	%ecx, %eax
-	cmpl	$-24576, %edi                   # imm = 0xA000
+	cmpl	$-24576, %edi
 	cmovel	%ecx, %eax
 	retq
+

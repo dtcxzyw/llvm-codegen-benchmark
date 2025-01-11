@@ -1,19 +1,22 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movq	%rdi, %rax
 	addq	%rcx, %rdx
 	orq	%rsi, %rdx
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	movq	%rdi, %rax
 	addq	%rcx, %rdx
 	orq	%rsi, %rdx
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	movq	%rdi, %rax
 	addq	%rcx, %rdx
 	orq	%rsi, %rdx
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	leaq	(%rdx,%rcx), %rax
 	movq	%rax, %rdx
 	shrq	$32, %rdx
@@ -21,7 +24,8 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rdi, %rax
 	orq	%rsi, %rdx
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	leaq	(%rdx,%rcx), %rax
 	movq	%rax, %rdx
 	shrq	$32, %rdx
@@ -29,8 +33,10 @@ func000000000000003f:                   # @func000000000000003f
 	orq	%rdi, %rax
 	orq	%rsi, %rdx
 	retq
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	movq	%rdi, %rax
 	addq	%rcx, %rdx
 	orq	%rsi, %rdx
 	retq
+

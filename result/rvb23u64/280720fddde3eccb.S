@@ -1,4 +1,4 @@
-func00000000000000c3:                   # @func00000000000000c3
+func00000000000000c3:
 	andi	a1, a1, 255
 	slliw	a2, a2, 8
 	li	a3, 512
@@ -8,10 +8,12 @@ func00000000000000c3:                   # @func00000000000000c3
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	andi	a1, a1, 255
 	slliw	a2, a2, 16
 	addi	a1, a1, -1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

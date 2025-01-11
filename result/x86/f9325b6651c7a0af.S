@@ -1,7 +1,7 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	addl	$64, %esi
 	xorl	%eax, %eax
-	subl	$-1074, %esi                    # imm = 0xFBCE
+	subl	$-1074, %esi
 	cmovbl	%eax, %esi
 	movl	$64, %ecx
 	subl	%esi, %ecx
@@ -9,10 +9,11 @@ func0000000000000009:                   # @func0000000000000009
 	movl	$11, %eax
 	cmovel	%ecx, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	addl	$64, %esi
 	xorl	%eax, %eax
-	subl	$-1074, %esi                    # imm = 0xFBCE
+	subl	$-1074, %esi
 	cmovbl	%eax, %esi
 	movl	$4, %ecx
 	subl	%esi, %ecx
@@ -20,3 +21,4 @@ func000000000000000b:                   # @func000000000000000b
 	movl	$-49, %eax
 	cmovel	%ecx, %eax
 	retq
+

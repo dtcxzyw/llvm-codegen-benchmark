@@ -1,4 +1,4 @@
-func0000000000000163:                   # @func0000000000000163
+func0000000000000163:
 	cmpb	$-1, %dl
 	sete	%al
 	cmpq	$1, %rsi
@@ -7,3 +7,4 @@ func0000000000000163:                   # @func0000000000000163
 	movzbl	%cl, %eax
 	addq	%rdi, %rax
 	retq
+

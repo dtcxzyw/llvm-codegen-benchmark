@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	sext.w	a3, a2
 	li	a2, 8
 	andi	a1, a1, 1
@@ -9,12 +9,13 @@ func0000000000000003:                   # @func0000000000000003
 .LBB0_2:
 	li	a3, 64
 	bnez	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a2, a3
-.LBB0_4:                                # %entry
+.LBB0_4:
 	or	a0, a0, a2
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	sext.w	a2, a2
@@ -28,29 +29,32 @@ func0000000000000002:                   # @func0000000000000002
 	li	a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	sext.w	a3, a2
 	li	a2, 128
 	andi	a1, a1, 1
 	bgeu	a3, a2, .LBB2_2
 	li	a2, 64
-.LBB2_2:                                # %entry
+.LBB2_2:
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+
+func0000000000000031:
 	sext.w	a3, a2
 	li	a2, 128
 	andi	a1, a1, 1
 	bgeu	a3, a2, .LBB3_2
 	li	a2, 64
-.LBB3_2:                                # %entry
+.LBB3_2:
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a1, a1, 1
 	srliw	a2, a2, 16
 	seqz	a2, a2
@@ -59,7 +63,8 @@ func0000000000000008:                   # @func0000000000000008
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	andi	a1, a1, 1
 	sext.w	a3, a2
 	li	a4, 1048
@@ -67,13 +72,14 @@ func0000000000000029:                   # @func0000000000000029
 	bgeu	a3, a4, .LBB5_3
 	lui	a3, 131072
 	beqz	a1, .LBB5_4
-.LBB5_2:                                # %entry
+.LBB5_2:
 	or	a0, a0, a3
 	ret
-.LBB5_3:                                # %entry
+.LBB5_3:
 	lui	a2, 393216
 	lui	a3, 131072
 	bnez	a1, .LBB5_2
-.LBB5_4:                                # %entry
+.LBB5_4:
 	or	a0, a0, a2
 	ret
+

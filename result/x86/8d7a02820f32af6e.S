@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	xorl	%eax, %eax
 	testw	%dx, %dx
 	setne	%al
@@ -6,3 +6,4 @@ func0000000000000010:                   # @func0000000000000010
 	addq	%rsi, %rax
 	leaq	3(%rdi,%rax), %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000104:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 10
@@ -6,7 +6,8 @@ func0000000000000104:                   # @func0000000000000104
 	sltiu	a0, a0, 11
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -126
@@ -15,14 +16,16 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	zext.h	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	zext.h	a1, a1
 	zext.h	a0, a0
 	maxu	a0, a0, a1
@@ -30,48 +33,55 @@ func0000000000000084:                   # @func0000000000000084
 	addiw	a1, a1, -1575
 	sltu	a0, a0, a1
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	sext.h	a1, a1
 	sext.h	a0, a0
 	min	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	sext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	seqz	a1, a1
 	sltiu	a0, a0, 37
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	sext.h	a0, a0
 	sext.h	a1, a1
 	sgtz	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 2
@@ -79,7 +89,8 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
@@ -89,7 +100,8 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	zext.h	a0, a0
 	sext.h	a1, a1
 	slti	a1, a1, -14
@@ -97,7 +109,8 @@ func0000000000000141:                   # @func0000000000000141
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	li	a2, 11
@@ -108,14 +121,16 @@ func0000000000000188:                   # @func0000000000000188
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
 	sltiu	a0, a0, 11
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 8
@@ -123,21 +138,24 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	seqz	a1, a1
 	sltiu	a0, a0, 256
 	andn	a0, a1, a0
 	ret
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 53
 	sltiu	a0, a0, 137
 	and	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -3
@@ -145,7 +163,8 @@ func0000000000000028:                   # @func0000000000000028
 	sltiu	a0, a0, 4
 	andn	a0, a1, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	zext.h	a0, a0
 	sext.h	a1, a1
 	lui	a2, 6
@@ -155,7 +174,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
+
+func0000000000000194:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -3
@@ -163,14 +183,16 @@ func0000000000000194:                   # @func0000000000000194
 	sltiu	a0, a0, 10
 	and	a0, a0, a1
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	sext.h	a1, a1
 	sext.h	a0, a0
 	max	a0, a0, a1
 	lui	a1, 1048569
 	slt	a0, a0, a1
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 2
@@ -178,21 +200,24 @@ func0000000000000108:                   # @func0000000000000108
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.h	a0, a0
 	zext.h	a1, a1
 	seqz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	seqz	a1, a1
 	sltiu	a0, a0, 63
 	and	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	sext.h	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
@@ -202,10 +227,12 @@ func0000000000000026:                   # @func0000000000000026
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	sext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+

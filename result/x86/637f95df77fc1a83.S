@@ -1,5 +1,6 @@
-func0000000000000000:                   # @func0000000000000000
-	addq	$1024, %rsi                     # imm = 0x400
+func0000000000000000:
+	addq	$1024, %rsi
 	addq	%rdi, %rsi
 	setb	%al
 	retq
+

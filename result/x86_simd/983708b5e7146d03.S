@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
 .LCPI0_1:
-	.long	2                               # 0x2
+	.long	2
 .LCPI0_2:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
+	.short	1
+	.short	1
+func000000000000000e:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm2, %ymm1 # ymm1 = ymm1 | (ymm2 & mem)
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
@@ -64,3 +64,4 @@ func000000000000000e:                   # @func000000000000000e
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

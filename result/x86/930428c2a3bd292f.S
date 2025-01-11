@@ -1,6 +1,7 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	movq	%rdi, %rax
 	imull	%esi, %eax
-	andl	$-2147483648, %eax              # imm = 0x80000000
-	subq	$-2147483648, %rax              # imm = 0x80000000
+	andl	$-2147483648, %eax
+	subq	$-2147483648, %rax
 	retq
+

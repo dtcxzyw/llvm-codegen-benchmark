@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -49,7 +49,8 @@ func0000000000000002:                   # @func0000000000000002
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -100,7 +101,8 @@ func0000000000000012:                   # @func0000000000000012
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -151,7 +153,8 @@ func0000000000000019:                   # @func0000000000000019
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -202,3 +205,4 @@ func000000000000001a:                   # @func000000000000001a
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
+

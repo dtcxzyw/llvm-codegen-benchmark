@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	lui	a0, 569227
 	addi	a0, a0, -117
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -10,3 +10,4 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret
+

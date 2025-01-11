@@ -1,4 +1,4 @@
-func000000000000102c:                   # @func000000000000102c
+func000000000000102c:
 	sext.w	a0, a0
 	bseti	a2, a2, 23
 	sllw	a1, a2, a1
@@ -8,3 +8,4 @@ func000000000000102c:                   # @func000000000000102c
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

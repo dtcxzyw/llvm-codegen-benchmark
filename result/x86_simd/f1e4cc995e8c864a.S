@@ -1,5 +1,5 @@
-func0000000000000008:                   # @func0000000000000008
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2 # xmm2 = ~xmm2
+func0000000000000008:
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
 	xorl	%edx, %edx
@@ -26,8 +26,9 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000018:                   # @func0000000000000018
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2 # xmm2 = ~xmm2
+
+func0000000000000018:
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpextrd	$1, %xmm0, %ecx
 	vpextrd	$1, %xmm2, %eax
 	xorl	%edx, %edx
@@ -54,3 +55,4 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

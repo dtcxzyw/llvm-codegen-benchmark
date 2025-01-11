@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	xorl	%ecx, %ecx
 	testb	%dl, %dl
 	movl	$6, %eax
@@ -7,7 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	cmpb	$12, %dl
 	sete	%al
 	shlb	$3, %al
@@ -15,3 +16,4 @@ func0000000000000007:                   # @func0000000000000007
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+

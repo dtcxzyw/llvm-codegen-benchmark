@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	lui	a0, 877240
 	addi	a0, a0, 215
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,3 +9,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmacc.vx	v10, a0, v8
 	vadd.vi	v8, v10, 3
 	ret
+

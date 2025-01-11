@@ -1,16 +1,16 @@
 .LCPI0_0:
-	.long	4294967205                      # 0xffffffa5
+	.long	4294967205
 .LCPI0_1:
-	.long	4294967270                      # 0xffffffe6
+	.long	4294967270
 .LCPI0_2:
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
-	.byte	95                              # 0x5f
+	.byte	95
+	.byte	95
+	.byte	95
+	.byte	95
+	.byte	95
+	.byte	95
+	.byte	95
+	.byte	95
 	.zero	1
 	.zero	1
 	.zero	1
@@ -19,7 +19,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000048c:                   # @func000000000000048c
+func000000000000048c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
@@ -29,3 +29,4 @@ func000000000000048c:                   # @func000000000000048c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

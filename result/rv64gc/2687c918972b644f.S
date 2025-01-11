@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ea:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
@@ -8,7 +8,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func00000000000000cb:                   # @func00000000000000cb
+
+func00000000000000cb:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
@@ -18,3 +19,4 @@ func00000000000000cb:                   # @func00000000000000cb
 	not	a1, a1
 	and	a0, a0, a1
 	ret
+

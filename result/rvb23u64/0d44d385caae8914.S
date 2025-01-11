@@ -1,4 +1,4 @@
-func0000000000000068:                   # @func0000000000000068
+func0000000000000068:
 	andi	a2, a2, 255
 	or	a1, a1, a0
 	srliw	a0, a0, 16
@@ -10,7 +10,8 @@ func0000000000000068:                   # @func0000000000000068
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	andi	a2, a2, 255
 	or	a1, a1, a0
 	srliw	a0, a0, 16
@@ -22,3 +23,4 @@ func00000000000000f8:                   # @func00000000000000f8
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	decl	%edx
 	testb	$1, %sil
 	movl	$81, %ecx
@@ -7,3 +7,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %edx
 	cmovael	%edi, %eax
 	retq
+

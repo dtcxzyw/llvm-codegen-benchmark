@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000022:
 	lzcntq	%rdx, %rax
 	shlxq	%rax, %rdx, %rax
 	imulq	%rax, %rsi
@@ -6,7 +6,8 @@ func0000000000000022:                   # @func0000000000000022
 	mulxq	%rax, %rax, %rdx
 	addq	%rsi, %rdx
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lzcntq	%rdx, %rax
 	shlxq	%rax, %rdx, %rax
 	imulq	%rax, %rsi
@@ -14,7 +15,8 @@ func0000000000000002:                   # @func0000000000000002
 	mulxq	%rax, %rax, %rdx
 	addq	%rsi, %rdx
 	retq
-func0000000000000062:                   # @func0000000000000062
+
+func0000000000000062:
 	lzcntq	%rdx, %rax
 	shlxq	%rax, %rdx, %rax
 	imulq	%rax, %rsi
@@ -22,7 +24,8 @@ func0000000000000062:                   # @func0000000000000062
 	mulxq	%rax, %rax, %rdx
 	addq	%rsi, %rdx
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	lzcntq	%rdx, %rax
 	shlxq	%rax, %rdx, %rax
 	imulq	%rax, %rsi
@@ -30,3 +33,4 @@ func0000000000000000:                   # @func0000000000000000
 	mulxq	%rax, %rax, %rdx
 	addq	%rsi, %rdx
 	retq
+

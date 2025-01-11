@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpsllq	$7, %ymm2, %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -14,7 +14,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rax
 	vpextrq	$1, %xmm0, %rcx
 	xorl	%edx, %edx
@@ -25,10 +25,11 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpsllq	$5, %ymm2, %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -44,7 +45,7 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rax
 	vpextrq	$1, %xmm0, %rcx
 	xorl	%edx, %edx
@@ -55,12 +56,13 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.quad	3389                            # 0xd3d
-func0000000000000005:                   # @func0000000000000005
+	.quad	3389
+func0000000000000005:
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
@@ -75,7 +77,7 @@ func0000000000000005:                   # @func0000000000000005
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm1, %rax
 	vpextrq	$1, %xmm0, %rcx
 	xorl	%edx, %edx
@@ -86,6 +88,7 @@ func0000000000000005:                   # @func0000000000000005
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

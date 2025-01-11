@@ -1,4 +1,4 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	cmpl	$4, %esi
 	sete	%al
 	orb	%dl, %al
@@ -7,3 +7,4 @@ func0000000000000025:                   # @func0000000000000025
 	subl	%eax, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
+

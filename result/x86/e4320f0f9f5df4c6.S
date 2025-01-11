@@ -1,4 +1,4 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	leal	-32(%rsi), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil
@@ -7,7 +7,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpb	$-6, %al
 	setb	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	leal	-32(%rsi), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil
@@ -16,7 +17,8 @@ func0000000000000084:                   # @func0000000000000084
 	cmpb	$6, %al
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	-94(%rsi), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil
@@ -24,7 +26,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$31, %al
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	leal	-94(%rsi), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil
@@ -33,3 +36,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$5, %al
 	setb	%al
 	retq
+

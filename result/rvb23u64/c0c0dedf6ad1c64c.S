@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	srai	a1, a1, 1
@@ -9,7 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	fcvt.d.lu	fa5, a0
 	fdiv.d	fa0, fa0, fa5
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	srai	a1, a1, 3
@@ -20,3 +21,4 @@ func0000000000000003:                   # @func0000000000000003
 	fcvt.d.lu	fa5, a0
 	fdiv.d	fa0, fa0, fa5
 	ret
+

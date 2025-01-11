@@ -1,11 +1,12 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	andl	$1, %edx
 	shll	$10, %edx
-	andl	$-1025, %esi                    # imm = 0xFBFF
+	andl	$-1025, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andl	$8, %edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -14,3 +15,4 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
+

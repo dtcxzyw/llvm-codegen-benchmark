@@ -1,28 +1,31 @@
-func000000000000060a:                   # @func000000000000060a
+func000000000000060a:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
-	cmpl	$65536, %eax                    # imm = 0x10000
+	cmpl	$65536, %eax
 	setge	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+
+func00000000000003f8:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	setae	%al
 	retq
-func0000000000000601:                   # @func0000000000000601
+
+func0000000000000601:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
-	cmpl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	cmpl	$2147483647, %eax
 	sete	%al
 	retq
-func0000000000000604:                   # @func0000000000000604
+
+func0000000000000604:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
@@ -30,7 +33,8 @@ func0000000000000604:                   # @func0000000000000604
 	cmpl	$32, %eax
 	setb	%al
 	retq
-func0000000000000608:                   # @func0000000000000608
+
+func0000000000000608:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
@@ -38,7 +42,8 @@ func0000000000000608:                   # @func0000000000000608
 	cmpl	$64, %eax
 	setae	%al
 	retq
-func00000000000006ac:                   # @func00000000000006ac
+
+func00000000000006ac:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	addl	%edi, %edi
@@ -46,7 +51,8 @@ func00000000000006ac:                   # @func00000000000006ac
 	addl	%eax, %ecx
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
@@ -54,30 +60,34 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$127, %eax
 	seta	%al
 	retq
-func0000000000000668:                   # @func0000000000000668
+
+func0000000000000668:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
-	cmpl	$65536, %eax                    # imm = 0x10000
+	cmpl	$65536, %eax
 	setae	%al
 	retq
-func00000000000006aa:                   # @func00000000000006aa
+
+func00000000000006aa:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
-	cmpl	$1001, %eax                     # imm = 0x3E9
+	cmpl	$1001, %eax
 	setge	%al
 	retq
-func00000000000006a6:                   # @func00000000000006a6
+
+func00000000000006a6:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
 	leal	(%rax,%rcx,2), %eax
 	shrl	$31, %eax
 	retq
-func000000000000060c:                   # @func000000000000060c
+
+func000000000000060c:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	addl	%edi, %edi
@@ -85,3 +95,4 @@ func000000000000060c:                   # @func000000000000060c
 	addl	%eax, %ecx
 	setne	%al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	sext.w	a3, a2
 	li	a4, 1
 	sub	a4, a4, a2
@@ -13,3 +13,4 @@ func00000000000004ca:                   # @func00000000000004ca
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

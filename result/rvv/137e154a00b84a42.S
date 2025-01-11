@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
 	lui	a0, 65535
@@ -9,7 +9,8 @@ func000000000000003f:                   # @func000000000000003f
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v11
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
 	lui	a0, 16
@@ -21,7 +22,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v11
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
 	lui	a0, 16
@@ -33,3 +35,4 @@ func0000000000000030:                   # @func0000000000000030
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v11
 	ret
+

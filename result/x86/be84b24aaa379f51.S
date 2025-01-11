@@ -1,5 +1,6 @@
-func0000000000000028:                   # @func0000000000000028
-	imull	$-99612771, %esi, %eax          # imm = 0xFA10079D
-	andl	$268435455, %edi                # imm = 0xFFFFFFF
+func0000000000000028:
+	imull	$-99612771, %esi, %eax
+	andl	$268435455, %edi
 	addl	%edi, %eax
 	retq
+

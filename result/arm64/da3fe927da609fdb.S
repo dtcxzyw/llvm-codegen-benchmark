@@ -1,14 +1,12 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	add	w8, w1, #1
 	add	w8, w8, w8, lsr #31
 	sbfx	x8, x8, #1, #31
 	mul	x8, x0, x8
 	lsl	x0, x8, #2
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	adds	w8, w1, #7
 	add	w9, w1, #14
 	csel	w8, w9, w8, lt
@@ -16,9 +14,8 @@ func0000000000000024:                   // @func0000000000000024
 	mul	x8, x0, x8
 	lsl	x0, x8, #7
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	adds	w8, w1, #63
 	add	w9, w1, #126
 	csel	w8, w9, w8, lt
@@ -26,13 +23,12 @@ func0000000000000025:                   // @func0000000000000025
 	mul	x8, x0, x8
 	lsl	x0, x8, #3
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	add	w8, w1, #1
 	add	w8, w8, w8, lsr #31
 	sbfx	x8, x8, #1, #31
 	mul	x8, x0, x8
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
+

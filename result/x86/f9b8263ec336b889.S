@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vcvttss2si	%xmm0, %eax
 	cmpl	$3, %eax
 	movl	$2, %ecx
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%ecx, %edi
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vcvttss2si	%xmm0, %eax
 	movl	%eax, %ecx
 	sarl	$31, %ecx
@@ -14,7 +15,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vcvttss2si	%xmm0, %eax
 	movl	%eax, %ecx
 	sarl	$31, %ecx
@@ -22,3 +24,4 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	setg	%al
 	retq
+

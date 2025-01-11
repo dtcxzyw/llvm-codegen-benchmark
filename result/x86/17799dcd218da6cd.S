@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	setae	%al
@@ -8,7 +8,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al
@@ -18,7 +19,8 @@ func0000000000000022:                   # @func0000000000000022
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000bd:                   # @func00000000000000bd
+
+func00000000000000bd:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	setbe	%al
@@ -28,7 +30,8 @@ func00000000000000bd:                   # @func00000000000000bd
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al
@@ -38,7 +41,8 @@ func0000000000000042:                   # @func0000000000000042
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1
 	seta	%al
@@ -48,7 +52,8 @@ func0000000000000024:                   # @func0000000000000024
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
@@ -57,7 +62,8 @@ func000000000000004c:                   # @func000000000000004c
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	vucomisd	%xmm0, %xmm1
@@ -66,7 +72,8 @@ func000000000000002a:                   # @func000000000000002a
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000b3:                   # @func00000000000000b3
+
+func00000000000000b3:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
@@ -75,7 +82,8 @@ func00000000000000b3:                   # @func00000000000000b3
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	vucomisd	%xmm0, %xmm1
@@ -84,3 +92,4 @@ func00000000000000d5:                   # @func00000000000000d5
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

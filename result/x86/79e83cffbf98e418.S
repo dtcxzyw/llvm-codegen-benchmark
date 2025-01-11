@@ -1,4 +1,4 @@
-func00000000000000db:                   # @func00000000000000db
+func00000000000000db:
 	testl	%esi, %esi
 	cmovnsl	%esi, %edi
 	imull	$205, %edi, %eax
@@ -6,3 +6,4 @@ func00000000000000db:                   # @func00000000000000db
 	shrl	$11, %eax
 	addb	$48, %al
 	retq
+

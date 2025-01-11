@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
-	.short	46                              # 0x2e
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
+	.short	46
 .LCPI0_1:
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-	.short	13                              # 0xd
-func0000000000000042:                   # @func0000000000000042
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+	.short	13
+func0000000000000042:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$7, %xmm1, %xmm0
@@ -43,3 +43,4 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

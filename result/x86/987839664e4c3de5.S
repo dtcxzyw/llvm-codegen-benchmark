@@ -1,11 +1,12 @@
-func000000000000010c:                   # @func000000000000010c
+func000000000000010c:
 	addl	$-1, %edi
 	setb	%cl
 	cmpl	%esi, %edi
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	leal	1(%rdi), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -13,7 +14,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000004c8:                   # @func00000000000004c8
+
+func00000000000004c8:
 	leal	-87(%rdi), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -21,3 +23,4 @@ func00000000000004c8:                   # @func00000000000004c8
 	setae	%al
 	andb	%cl, %al
 	retq
+

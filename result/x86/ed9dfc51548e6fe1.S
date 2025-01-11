@@ -1,5 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	shrxq	%rcx, %rsi, %rax
 	orq	%rdi, %rax
 	sete	%al
 	retq
+

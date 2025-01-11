@@ -1,4 +1,4 @@
-func0000000000000acc:                   # @func0000000000000acc
+func0000000000000acc:
 	movswl	%si, %eax
 	addl	%eax, %edx
 	cmpl	%edx, %edi
@@ -7,3 +7,4 @@ func0000000000000acc:                   # @func0000000000000acc
 	setl	%al
 	orb	%cl, %al
 	retq
+

@@ -1,6 +1,7 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000094:
 	srliw	a1, a1, 4
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -40
 	ret
+

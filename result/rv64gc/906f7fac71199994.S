@@ -1,11 +1,12 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	slli	a2, a2, 58
 	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lui	a3, 8176
 	and	a2, a2, a3
 	snez	a2, a2
@@ -13,7 +14,8 @@ func0000000000000002:                   # @func0000000000000002
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	slli	a2, a2, 1
 	lui	a3, 524288
 	srli	a2, a2, 1
@@ -24,13 +26,15 @@ func0000000000000030:                   # @func0000000000000030
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	lui	a3, 2077
 	slli	a3, a3, 13
 	and	a2, a2, a3
 	beqz	a2, .LBB3_2
 	li	a1, 1
 	slli	a1, a1, 31
-.LBB3_2:                                # %entry
+.LBB3_2:
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000000f0:                   # @func00000000000000f0
+func00000000000000f0:
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -8,3 +8,4 @@ func00000000000000f0:                   # @func00000000000000f0
 	srli	a0, a0, 25
 	snez	a0, a0
 	ret
+

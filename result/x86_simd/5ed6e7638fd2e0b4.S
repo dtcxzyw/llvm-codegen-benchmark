@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.byte	223                             # 0xdf
-	.byte	223                             # 0xdf
-	.byte	223                             # 0xdf
-	.byte	223                             # 0xdf
+	.byte	223
+	.byte	223
+	.byte	223
+	.byte	223
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,10 +16,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	70                              # 0x46
-	.byte	70                              # 0x46
-	.byte	70                              # 0x46
-	.byte	70                              # 0x46
+	.byte	70
+	.byte	70
+	.byte	70
+	.byte	70
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,10 +33,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.quad	1                               # 0x1
+	.quad	1
 .LCPI0_3:
 	.zero	4,223
-func0000000000000602:                   # @func0000000000000602
+func0000000000000602:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm1
@@ -47,11 +47,12 @@ func0000000000000602:                   # @func0000000000000602
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	30                              # 0x1e
-	.byte	30                              # 0x1e
-	.byte	30                              # 0x1e
-	.byte	30                              # 0x1e
+	.byte	30
+	.byte	30
+	.byte	30
+	.byte	30
 	.zero	1
 	.zero	1
 	.zero	1
@@ -65,10 +66,10 @@ func0000000000000602:                   # @func0000000000000602
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
-	.byte	12                              # 0xc
+	.byte	12
+	.byte	12
+	.byte	12
+	.byte	12
 	.zero	1
 	.zero	1
 	.zero	1
@@ -82,10 +83,10 @@ func0000000000000602:                   # @func0000000000000602
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.quad	16                              # 0x10
+	.quad	16
 .LCPI1_3:
 	.zero	4,30
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm2, %xmm1
@@ -96,3 +97,4 @@ func0000000000000082:                   # @func0000000000000082
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

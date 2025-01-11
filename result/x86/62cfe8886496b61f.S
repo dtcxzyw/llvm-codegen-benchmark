@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000c4:
 	cmpl	$-1, %esi
 	setne	%cl
 	andb	%dil, %cl
@@ -7,7 +7,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	testl	%esi, %esi
 	setg	%cl
 	andb	%dil, %cl
@@ -16,3 +17,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	seta	%al
 	andb	%cl, %al
 	retq
+

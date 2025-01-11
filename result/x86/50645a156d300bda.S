@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	(%rsi,%rdx), %ecx
 	movl	%ecx, %eax
 	shrl	$31, %eax
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	sarl	%eax
 	imull	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	leal	1023(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	addl	%edx, %ecx
@@ -14,7 +15,8 @@ func0000000000000009:                   # @func0000000000000009
 	sarl	$10, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	leal	7(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	addl	%edx, %ecx
@@ -22,7 +24,8 @@ func0000000000000008:                   # @func0000000000000008
 	sarl	$3, %eax
 	imull	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	(%rsi,%rdx), %ecx
 	movl	%ecx, %eax
 	shrl	$31, %eax
@@ -30,3 +33,4 @@ func0000000000000001:                   # @func0000000000000001
 	sarl	%eax
 	imull	%edi, %eax
 	retq
+

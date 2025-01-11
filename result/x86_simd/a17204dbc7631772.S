@@ -1,24 +1,26 @@
 .LCPI0_0:
-	.long	7                               # 0x7
+	.long	7
 .LCPI0_1:
-	.long	255                             # 0xff
+	.long	255
 .LCPI0_2:
-	.long	127                             # 0x7f
-func0000000000000003:                   # @func0000000000000003
+	.long	127
+func0000000000000003:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [255,255,255,255,255,255,255,255]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	30                              # 0x1e
+	.long	30
 .LCPI1_1:
-	.long	3                               # 0x3
+	.long	3
 .LCPI1_2:
-	.long	4294967292                      # 0xfffffffc
-func0000000000000002:                   # @func0000000000000002
+	.long	4294967292
+func0000000000000002:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq
+

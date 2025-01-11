@@ -1,4 +1,4 @@
-func00000000000004c1:                   # @func00000000000004c1
+func00000000000004c1:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -6,7 +6,8 @@ func00000000000004c1:                   # @func00000000000004c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -22,7 +24,8 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000d01:                   # @func0000000000000d01
+
+func0000000000000d01:
 	incq	%rdx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -30,7 +33,8 @@ func0000000000000d01:                   # @func0000000000000d01
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000d0c:                   # @func0000000000000d0c
+
+func0000000000000d0c:
 	incq	%rdx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -38,23 +42,26 @@ func0000000000000d0c:                   # @func0000000000000d0c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
-	addq	$200000, %rdx                   # imm = 0x30D40
+
+func00000000000000e1:
+	addq	$200000, %rdx
 	cmpq	%rdx, %rsi
 	setle	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
-	addq	$200000, %rdx                   # imm = 0x30D40
+
+func00000000000000ec:
+	addq	$200000, %rdx
 	cmpq	%rdx, %rsi
 	setle	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000481:                   # @func0000000000000481
+
+func0000000000000481:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -62,7 +69,8 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	addq	$-5, %rdx
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -70,7 +78,8 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000090c:                   # @func000000000000090c
+
+func000000000000090c:
 	incq	%rdx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -78,3 +87,4 @@ func000000000000090c:                   # @func000000000000090c
 	setne	%al
 	andb	%cl, %al
 	retq
+

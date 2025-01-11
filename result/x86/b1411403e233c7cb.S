@@ -1,7 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
-	movabsq	$-6640827866535438581, %rcx     # imm = 0xA3D70A3D70A3D70B
+	movabsq	$-6640827866535438581, %rcx
 	movq	%rsi, %rax
 	imulq	%rcx
 	leaq	(%rdx,%rsi), %rax
@@ -10,3 +10,4 @@ func0000000000000000:                   # @func0000000000000000
 	sarq	$8, %rax
 	addq	%rcx, %rax
 	retq
+

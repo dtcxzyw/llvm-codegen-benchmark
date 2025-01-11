@@ -1,4 +1,4 @@
-func0000000000000114:                   # @func0000000000000114
+func0000000000000114:
 	shrxl	%edx, %esi, %eax
 	cmpl	$16, %eax
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000000114:                   # @func0000000000000114
 	setae	%al
 	andb	%cl, %al
 	retq
+

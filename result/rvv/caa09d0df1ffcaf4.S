@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 838861
@@ -8,7 +8,8 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 10
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 351844
@@ -20,7 +21,8 @@ func0000000000000000:                   # @func0000000000000000
 	vnmsub.vx	v8, a0, v10
 	vsub.vv	v8, v8, v10
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 351844
@@ -32,7 +34,8 @@ func0000000000000010:                   # @func0000000000000010
 	vnmsub.vx	v8, a0, v10
 	vsub.vv	v8, v8, v10
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 351844
@@ -42,7 +45,8 @@ func0000000000000013:                   # @func0000000000000013
 	li	a0, 103
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 374016
@@ -53,7 +57,8 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -1955
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 596523
@@ -65,7 +70,8 @@ func0000000000000008:                   # @func0000000000000008
 	vnmsub.vx	v8, a0, v10
 	vsub.vv	v8, v8, v10
 	ret
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 858993
@@ -77,3 +83,4 @@ func0000000000000019:                   # @func0000000000000019
 	vnmsub.vx	v8, a0, v10
 	vsub.vv	v8, v8, v10
 	ret
+

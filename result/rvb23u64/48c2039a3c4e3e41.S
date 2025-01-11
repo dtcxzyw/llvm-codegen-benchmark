@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 5
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	srai	a0, a0, 32
 	sub	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 2
@@ -14,3 +15,4 @@ func000000000000000b:                   # @func000000000000000b
 	srai	a0, a0, 32
 	sub	a0, a0, a1
 	ret
+

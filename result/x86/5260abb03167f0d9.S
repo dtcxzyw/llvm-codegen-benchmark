@@ -1,6 +1,6 @@
-func0000000000006302:                   # @func0000000000006302
+func0000000000006302:
 	movzwl	%dx, %eax
-	cmpl	$57344, %eax                    # imm = 0xE000
+	cmpl	$57344, %eax
 	setne	%al
 	testw	%si, %si
 	setne	%cl
@@ -9,7 +9,8 @@ func0000000000006302:                   # @func0000000000006302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000006042:                   # @func0000000000006042
+
+func0000000000006042:
 	testw	%dx, %dx
 	setne	%al
 	testw	%si, %si
@@ -19,7 +20,8 @@ func0000000000006042:                   # @func0000000000006042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000002108:                   # @func0000000000002108
+
+func0000000000002108:
 	cmpw	$-71, %dx
 	setb	%al
 	cmpw	$-8, %si
@@ -30,7 +32,8 @@ func0000000000002108:                   # @func0000000000002108
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000002102:                   # @func0000000000002102
+
+func0000000000002102:
 	cmpw	$-49, %dx
 	setb	%al
 	cmpw	$-7, %si
@@ -40,3 +43,4 @@ func0000000000002102:                   # @func0000000000002102
 	sete	%al
 	orb	%cl, %al
 	retq
+

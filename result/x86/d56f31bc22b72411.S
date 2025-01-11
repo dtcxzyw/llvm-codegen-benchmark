@@ -1,4 +1,4 @@
-func0000000000000826:                   # @func0000000000000826
+func0000000000000826:
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000000826:                   # @func0000000000000826
 	setl	%al
 	orb	%cl, %al
 	retq
+

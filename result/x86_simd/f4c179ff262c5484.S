@@ -3,12 +3,13 @@
 .LCPI0_1:
 	.zero	16,8
 .LCPI0_2:
-	.byte	6                               # 0x6
-func0000000000000001:                   # @func0000000000000001
+	.byte	6
+func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vptestnmb	%xmm1, %xmm1, %k2
-	vpbroadcastb	.LCPI0_2(%rip), %xmm0   # xmm0 = [6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6]
-	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k2}     # xmm0 {%k2} = [8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8]
+	vpbroadcastb	.LCPI0_2(%rip), %xmm0
+	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k2}
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	retq
+

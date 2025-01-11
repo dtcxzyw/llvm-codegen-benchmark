@@ -1,48 +1,42 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	sxth	w8, w0
 	scvtf	d1, w8
 	fcmp	d0, d1
 	cset	w0, ge
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000210:                   # @func0000000000000210
+func0000000000000210:
 	sub	a2, a2, a1
 	lui	a3, 2
 	sub	a0, a0, a1
@@ -7,14 +7,16 @@ func0000000000000210:                   # @func0000000000000210
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltiu	a1, a2, 32
 	sltiu	a0, a0, 56
 	or	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
+
+func0000000000000194:
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	slti	a1, a2, 8
@@ -22,7 +24,8 @@ func0000000000000194:                   # @func0000000000000194
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	slti	a1, a2, -7
@@ -30,3 +33,4 @@ func000000000000028c:                   # @func000000000000028c
 	slti	a0, a0, 8
 	or	a0, a0, a1
 	ret
+

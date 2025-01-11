@@ -1,12 +1,13 @@
-func0000000000000078:                   # @func0000000000000078
+func0000000000000078:
 	movl	%esi, %ecx
 	andl	$1, %ecx
 	addq	%rsi, %rcx
 	xorl	%eax, %eax
-	cmpq	$33554432, %rcx                 # imm = 0x2000000
+	cmpq	$33554432, %rcx
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	movq	%rsi, %rcx
 	andq	$-16, %rcx
 	addq	%rsi, %rcx
@@ -16,3 +17,4 @@ func0000000000000028:                   # @func0000000000000028
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
+

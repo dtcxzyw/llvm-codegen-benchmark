@@ -1,4 +1,4 @@
-func0000000000000299:                   # @func0000000000000299
+func0000000000000299:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setae	%cl
@@ -6,7 +6,8 @@ func0000000000000299:                   # @func0000000000000299
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000105:                   # @func0000000000000105
+
+func0000000000000105:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setbe	%cl
@@ -14,7 +15,8 @@ func0000000000000105:                   # @func0000000000000105
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000294:                   # @func0000000000000294
+
+func0000000000000294:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setb	%cl
@@ -22,7 +24,8 @@ func0000000000000294:                   # @func0000000000000294
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000085:                   # @func0000000000000085
+
+func0000000000000085:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setbe	%cl
@@ -30,7 +33,8 @@ func0000000000000085:                   # @func0000000000000085
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000284:                   # @func0000000000000284
+
+func0000000000000284:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setb	%cl
@@ -38,7 +42,8 @@ func0000000000000284:                   # @func0000000000000284
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000298:                   # @func0000000000000298
+
+func0000000000000298:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	seta	%cl
@@ -46,7 +51,8 @@ func0000000000000298:                   # @func0000000000000298
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000319:                   # @func0000000000000319
+
+func0000000000000319:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setae	%cl
@@ -54,7 +60,8 @@ func0000000000000319:                   # @func0000000000000319
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
 	setg	%cl
@@ -62,3 +69,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	setl	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	xor	a0, a0, a1
 	sext.w	a1, a0
 	beqz	a1, .LBB0_2
@@ -34,10 +34,11 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	li	a0, 32
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	xor	a0, a0, a1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -71,7 +72,8 @@ func0000000000000001:                   # @func0000000000000001
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	xor	a0, a0, a1
 	sext.w	a1, a0
 	beqz	a1, .LBB2_2
@@ -107,10 +109,11 @@ func0000000000000002:                   # @func0000000000000002
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
-.LBB2_2:                                # %cond.end
+.LBB2_2:
 	li	a0, 32
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	xor	a0, a0, a1
 	lui	a1, 349525
 	srliw	a2, a0, 1
@@ -144,3 +147,4 @@ func0000000000000003:                   # @func0000000000000003
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a2, fa5, fa0
@@ -6,7 +6,8 @@ func000000000000008a:                   # @func000000000000008a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	sext.w	a0, a0
 	lui	a2, 522240
 	fmv.w.x	fa5, a2
@@ -15,3 +16,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

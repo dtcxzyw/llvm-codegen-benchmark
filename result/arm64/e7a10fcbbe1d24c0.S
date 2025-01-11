@@ -1,11 +1,10 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	ubfx	w8, w0, #1, #5
-	mov	w9, #26                         // =0x1a
-	mov	w10, #10                        // =0xa
+	mov	w9, #26
+	mov	w10, #10
 	mul	w9, w8, w9
 	lsr	w9, w9, #8
 	msub	w8, w9, w10, w8
 	orr	w0, w8, #0x30
 	ret
-                                        // -- End function
+

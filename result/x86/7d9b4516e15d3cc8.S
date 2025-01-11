@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	subl	%edi, %edx
 	cmpl	$3, %edx
 	setb	%cl
@@ -6,11 +6,13 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+
+func0000000000000089:
 	subl	%edi, %edx
-	cmpl	$262144, %edx                   # imm = 0x40000
+	cmpl	$262144, %edx
 	setb	%cl
 	cmpl	%esi, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
+

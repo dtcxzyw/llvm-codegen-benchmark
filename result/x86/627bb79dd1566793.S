@@ -1,10 +1,11 @@
-func0000000000000841:                   # @func0000000000000841
-	cmpl	$1953068401, %esi               # imm = 0x74697571
+func0000000000000841:
+	cmpl	$1953068401, %esi
 	sete	%al
-	cmpl	$1701669236, %esi               # imm = 0x656D6974
+	cmpl	$1701669236, %esi
 	sete	%cl
 	orb	%al, %cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
+

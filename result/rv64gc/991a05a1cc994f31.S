@@ -1,4 +1,4 @@
-func000000000000294c:                   # @func000000000000294c
+func000000000000294c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a0, a0
@@ -8,7 +8,8 @@ func000000000000294c:                   # @func000000000000294c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000302c:                   # @func000000000000302c
+
+func000000000000302c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a0, a0
@@ -18,7 +19,8 @@ func000000000000302c:                   # @func000000000000302c
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	xori	a2, a2, 31
 	xori	a1, a1, 31
 	or	a1, a1, a2
@@ -27,7 +29,8 @@ func000000000000042c:                   # @func000000000000042c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -36,7 +39,8 @@ func000000000000318c:                   # @func000000000000318c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
@@ -45,7 +49,8 @@ func000000000000058c:                   # @func000000000000058c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000282c:                   # @func000000000000282c
+
+func000000000000282c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a0, a0
@@ -55,7 +60,8 @@ func000000000000282c:                   # @func000000000000282c
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000114c:                   # @func000000000000114c
+
+func000000000000114c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a0, a0
@@ -65,7 +71,8 @@ func000000000000114c:                   # @func000000000000114c
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000108c:                   # @func000000000000108c
+
+func000000000000108c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 524288
@@ -76,3 +83,4 @@ func000000000000108c:                   # @func000000000000108c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

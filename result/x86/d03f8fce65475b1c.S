@@ -1,11 +1,12 @@
-func000000000000012c:                   # @func000000000000012c
+func000000000000012c:
 	addq	$-1, %rdi
 	setb	%cl
 	cmpq	%rdi, %rsi
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	leaq	-4(%rdi), %rax
 	cmpq	%rax, %rsi
 	setbe	%cl
@@ -13,7 +14,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	leaq	-1(%rdi), %rax
 	cmpq	%rax, %rsi
 	seta	%cl
@@ -21,7 +23,8 @@ func0000000000000108:                   # @func0000000000000108
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	leaq	-1(%rdi), %rax
 	cmpq	%rax, %rsi
 	sete	%cl
@@ -29,14 +32,16 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000052c:                   # @func000000000000052c
+
+func000000000000052c:
 	addq	$-1, %rdi
 	setb	%cl
 	cmpq	%rdi, %rsi
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	leaq	-8(%rdi), %rax
 	cmpq	%rax, %rsi
 	setb	%cl
@@ -44,7 +49,8 @@ func0000000000000088:                   # @func0000000000000088
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000098c:                   # @func000000000000098c
+
+func000000000000098c:
 	leaq	3(%rdi), %rax
 	cmpq	%rax, %rsi
 	setne	%cl
@@ -52,3 +58,4 @@ func000000000000098c:                   # @func000000000000098c
 	setne	%al
 	andb	%cl, %al
 	retq
+

@@ -1,64 +1,48 @@
-func000000000000007b:                   // @func000000000000007b
-// %bb.0:                               // %entry
+func000000000000007b:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000052:                   // @func0000000000000052
-// %bb.0:                               // %entry
+
+func0000000000000052:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func00000000000000f8:                   // @func00000000000000f8
-// %bb.0:                               // %entry
+
+func00000000000000f8:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #28
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
+
+func0000000000000078:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #28
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+
+func0000000000000042:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #32
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+
+func0000000000000040:
 	mov	w8, w2
 	madd	x8, x1, x8, x0
 	lsr	x0, x8, #30
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

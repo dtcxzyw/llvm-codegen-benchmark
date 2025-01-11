@@ -1,7 +1,8 @@
 .LCPI0_0:
-	.quad	0x3e50000000000000              # double 1.4901161193847656E-8
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3e50000000000000
+func0000000000000000:
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vcvtsi2sd	%edi, %xmm2, %xmm2
-	vfmadd231sd	%xmm2, %xmm1, %xmm0     # xmm0 = (xmm1 * xmm2) + xmm0
+	vfmadd231sd	%xmm2, %xmm1, %xmm0
 	retq
+

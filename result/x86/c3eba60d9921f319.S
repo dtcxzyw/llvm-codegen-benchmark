@@ -1,4 +1,4 @@
-func0000000000000f18:                   # @func0000000000000f18
+func0000000000000f18:
 	leal	87(%rdx), %eax
 	cmpl	%esi, %eax
 	seta	%cl
@@ -7,7 +7,8 @@ func0000000000000f18:                   # @func0000000000000f18
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000546:                   # @func0000000000000546
+
+func0000000000000546:
 	leal	7(%rdx), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -16,7 +17,8 @@ func0000000000000546:                   # @func0000000000000546
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000d46:                   # @func0000000000000d46
+
+func0000000000000d46:
 	leal	10(%rdx), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -25,3 +27,4 @@ func0000000000000d46:                   # @func0000000000000d46
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
+

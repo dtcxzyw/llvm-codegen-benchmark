@@ -1,4 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007a:
 	shrl	$8, %esi
 	leal	(%rsi,%rsi,8), %eax
 	leal	(%rax,%rax,2), %ecx
@@ -7,3 +7,4 @@ func000000000000007a:                   # @func000000000000007a
 	addl	%ecx, %eax
 	shrl	$8, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vcvttsd2si	%xmm0, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
@@ -6,3 +6,4 @@ func000000000000008a:                   # @func000000000000008a
 	testq	%rax, %rax
 	setg	%al
 	retq
+

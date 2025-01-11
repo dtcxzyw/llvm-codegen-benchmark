@@ -1,12 +1,13 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	subq	%rdx, %rsi
-	addq	$8192, %rsi                     # imm = 0x2000
+	addq	$8192, %rsi
 	cmpq	%rdi, %rsi
 	cmovaeq	%rdi, %rsi
 	testq	%rsi, %rsi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	subq	%rdx, %rsi
 	incq	%rsi
 	cmpq	%rdi, %rsi
@@ -14,7 +15,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$16, %rsi
 	setae	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	subq	%rdx, %rsi
 	addq	$-3, %rsi
 	cmpq	%rdi, %rsi
@@ -22,3 +24,4 @@ func000000000000002c:                   # @func000000000000002c
 	testq	%rsi, %rsi
 	setne	%al
 	retq
+

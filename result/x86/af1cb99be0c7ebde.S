@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	leal	31(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -6,7 +6,8 @@ func000000000000000c:                   # @func000000000000000c
 	cltq
 	leaq	8(%rdi,%rax,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -14,7 +15,8 @@ func000000000000000e:                   # @func000000000000000e
 	cltq
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -22,9 +24,10 @@ func0000000000000002:                   # @func0000000000000002
 	cltq
 	leaq	-4(%rdi,%rax,4), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	shrq	$32, %rax
@@ -32,7 +35,8 @@ func0000000000000000:                   # @func0000000000000000
 	cltq
 	leaq	-4(%rdi,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -40,7 +44,8 @@ func000000000000000a:                   # @func000000000000000a
 	cltq
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -48,3 +53,4 @@ func0000000000000008:                   # @func0000000000000008
 	cltq
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
+

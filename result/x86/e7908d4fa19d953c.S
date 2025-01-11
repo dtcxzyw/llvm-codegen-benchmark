@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	decb	%dil
 	movzbl	%dil, %ecx
 	leal	1(%rcx), %edx
@@ -6,7 +6,8 @@ func0000000000000064:                   # @func0000000000000064
 	cmpb	$3, %cl
 	cmovbl	%edx, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	leal	1(%rdi), %eax
 	movzbl	%al, %ecx
 	decl	%ecx
@@ -14,7 +15,8 @@ func000000000000002c:                   # @func000000000000002c
 	movl	$255, %eax
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	decb	%dil
 	movzbl	%dil, %ecx
 	leal	1(%rcx), %edx
@@ -22,3 +24,4 @@ func00000000000000e4:                   # @func00000000000000e4
 	cmpb	$3, %cl
 	cmovbl	%edx, %eax
 	retq
+

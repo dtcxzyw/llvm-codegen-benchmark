@@ -1,6 +1,6 @@
-func0000000000000c78:                   # @func0000000000000c78
+func0000000000000c78:
 	xorl	%ecx, %ecx
-	cmpq	$2147483647, %rdx               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rdx
 	setne	%cl
 	addq	%rsi, %rcx
 	shrq	$61, %rcx
@@ -9,7 +9,8 @@ func0000000000000c78:                   # @func0000000000000c78
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000c44:                   # @func0000000000000c44
+
+func0000000000000c44:
 	xorl	%ecx, %ecx
 	cmpq	$7, %rdx
 	setne	%cl
@@ -18,3 +19,4 @@ func0000000000000c44:                   # @func0000000000000c44
 	cmpq	$2, %rcx
 	cmovaeq	%rdi, %rax
 	retq
+

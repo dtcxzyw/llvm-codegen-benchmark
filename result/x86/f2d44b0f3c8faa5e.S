@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	testq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
@@ -6,7 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	andl	$1, %eax
 	orq	$2, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax
@@ -15,3 +16,4 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$48, %eax
 	cmovneq	%rcx, %rax
 	retq
+

@@ -1,111 +1,117 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vptestnmw	%ymm1, %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
+
 .LCPI1_0:
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
-	.short	1024                            # 0x400
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
+	.short	1024
 .LCPI1_1:
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
-	.short	31745                           # 0x7c01
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
+	.short	31745
 .LCPI1_2:
-	.short	31745                           # 0x7c01
-func0000000000000004:                   # @func0000000000000004
+	.short	31745
+func0000000000000004:
 	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
-	vpbroadcastw	.LCPI1_2(%rip), %ymm1   # ymm1 = [31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745,31745]
+	vpbroadcastw	.LCPI1_2(%rip), %ymm1
 	vmovdqu16	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI2_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-func0000000000000006:                   # @func0000000000000006
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+func0000000000000006:
 	vpcmpltw	.LCPI2_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
+
 .LCPI3_0:
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-	.short	255                             # 0xff
-func0000000000000018:                   # @func0000000000000018
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+	.short	255
+func0000000000000018:
 	vpcmpnleuw	.LCPI3_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	retq
+
 .LCPI5_0:
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-func0000000000000014:                   # @func0000000000000014
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+func0000000000000014:
 	vpcmpltuw	.LCPI5_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-329406144173384850             # 0xfb6db6db6db6db6e
+	.quad	-329406144173384850
 .LCPI0_1:
-	.quad	-329406144173384851             # 0xfb6db6db6db6db6d
-func00000000000000a8:                   # @func00000000000000a8
+	.quad	-329406144173384851
+func00000000000000a8:
 	sub	a0, a0, a1
 	lui	a1, 748983
 	lui	a2, %hi(.LCPI0_0)
@@ -17,12 +17,14 @@ func00000000000000a8:                   # @func00000000000000a8
 	add	a0, a0, a2
 	sltu	a0, a0, a3
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	sub	a0, a0, a1
 	addi	a0, a0, -24
 	seqz	a0, a0
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	srai	a0, a0, 3
@@ -33,7 +35,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	addi	a0, a0, -13
 	sltiu	a0, a0, 2
 	ret
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	sub	a0, a0, a1
 	lui	a1, 838861
 	srai	a0, a0, 4
@@ -44,13 +47,16 @@ func00000000000000b4:                   # @func00000000000000b4
 	addi	a0, a0, 1
 	sltiu	a0, a0, 6
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sub	a0, a0, a1
 	addi	a0, a0, -24
 	sltiu	a0, a0, 12
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	sub	a0, a0, a1
 	addi	a0, a0, 40
 	snez	a0, a0
 	ret
+

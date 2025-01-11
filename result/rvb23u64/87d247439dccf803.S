@@ -1,17 +1,19 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	lui	a2, 1048560
 	and	a1, a1, a2
 	andi	a0, a0, -8
 	sub	a0, a1, a0
 	addi	a0, a0, -16
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andi	a1, a1, 120
 	andi	a0, a0, 255
 	sub	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	li	a2, -1
 	srli	a2, a2, 8
 	and	a1, a1, a2
@@ -21,3 +23,4 @@ func000000000000000f:                   # @func000000000000000f
 	bseti	a1, a2, 58
 	add	a0, a0, a1
 	ret
+

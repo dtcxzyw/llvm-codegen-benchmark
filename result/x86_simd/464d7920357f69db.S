@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x41200000                      # float 10
-func0000000000000088:                   # @func0000000000000088
+	.long	0x41200000
+func0000000000000088:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmaxps	%zmm2, %zmm1, %zmm0
@@ -9,9 +9,10 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x447a0000                      # float 1000
-func0000000000000044:                   # @func0000000000000044
+	.long	0x447a0000
+func0000000000000044:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vminps	%zmm2, %zmm1, %zmm0
@@ -20,7 +21,8 @@ func0000000000000044:                   # @func0000000000000044
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmaxps	%zmm2, %zmm1, %zmm0
@@ -30,9 +32,10 @@ func000000000000005c:                   # @func000000000000005c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	0x3f800000                      # float 1
-func000000000000004a:                   # @func000000000000004a
+	.long	0x3f800000
+func000000000000004a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vminps	%zmm2, %zmm1, %zmm0
@@ -41,7 +44,8 @@ func000000000000004a:                   # @func000000000000004a
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vminps	%zmm2, %zmm1, %zmm0
@@ -51,7 +55,8 @@ func0000000000000046:                   # @func0000000000000046
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000056:                   # @func0000000000000056
+
+func0000000000000056:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vmaxps	%zmm2, %zmm1, %zmm0
@@ -61,7 +66,8 @@ func0000000000000056:                   # @func0000000000000056
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vminps	%zmm2, %zmm1, %zmm0
@@ -71,3 +77,4 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

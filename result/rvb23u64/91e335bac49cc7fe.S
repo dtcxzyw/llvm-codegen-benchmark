@@ -1,4 +1,4 @@
-func0000000000000145:                   # @func0000000000000145
+func0000000000000145:
 	neg	a3, a1
 	and	a2, a2, a3
 	bseti	a3, zero, 63
@@ -7,7 +7,8 @@ func0000000000000145:                   # @func0000000000000145
 	sltu	a0, a3, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	neg	a3, a1
 	and	a2, a2, a3
 	bseti	a3, zero, 63
@@ -15,3 +16,4 @@ func0000000000000048:                   # @func0000000000000048
 	sub	a3, a3, a1
 	sltu	a0, a3, a0
 	ret
+

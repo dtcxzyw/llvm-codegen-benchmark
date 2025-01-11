@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	li	a2, 5
 	bseti	a2, a2, 33
 	mulhu	a2, a1, a2
@@ -13,3 +13,4 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	divu	a0, a1, a0
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000000fd:                   # @func00000000000000fd
+func00000000000000fd:
 	srliw	a3, a2, 1
 	lui	a4, 349525
 	or	a2, a2, a3
@@ -34,7 +34,8 @@ func00000000000000fd:                   # @func00000000000000fd
 	addiw	a1, a1, 32
 	sub	a0, a0, a1
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	srliw	a3, a2, 1
 	lui	a4, 349525
 	or	a2, a2, a3
@@ -70,3 +71,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	addiw	a1, a1, 32
 	sub	a0, a0, a1
 	ret
+

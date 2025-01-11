@@ -1,90 +1,105 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000000f:                   # @func000000000000000f
+	.long	1
+func000000000000000f:
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
-func000000000000000b:                   # @func000000000000000b
+	.long	1
+func000000000000000b:
 	vpslld	$16, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	2                               # 0x2
-func0000000000000003:                   # @func0000000000000003
+	.long	2
+func0000000000000003:
 	vpslld	$4, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	4294901760                      # 0xffff0000
-func0000000000000002:                   # @func0000000000000002
+	.long	4294901760
+func0000000000000002:
 	vpslld	$8, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI4_0:
-	.long	262144                          # 0x40000
-func000000000000000c:                   # @func000000000000000c
+	.long	262144
+func000000000000000c:
 	vpslld	$14, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI5_0:
-	.long	16                              # 0x10
-func000000000000000a:                   # @func000000000000000a
+	.long	16
+func000000000000000a:
 	vpslld	$16, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI6_0:
-	.long	1                               # 0x1
-func0000000000000000:                   # @func0000000000000000
+	.long	1
+func0000000000000000:
 	vpslld	$10, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI6_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI6_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI7_0:
-	.long	2143289344                      # 0x7fc00000
-func000000000000000e:                   # @func000000000000000e
+	.long	2143289344
+func000000000000000e:
 	vpslld	$13, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI7_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI7_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI8_0:
-	.long	8373                            # 0x20b5
-func0000000000000001:                   # @func0000000000000001
+	.long	8373
+func0000000000000001:
 	vpslld	$23, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI8_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI8_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI9_0:
-	.long	1                               # 0x1
-func0000000000000005:                   # @func0000000000000005
+	.long	1
+func0000000000000005:
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI9_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI9_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI10_0:
-	.long	16777216                        # 0x1000000
-func0000000000000008:                   # @func0000000000000008
+	.long	16777216
+func0000000000000008:
 	vpslld	$25, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI10_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI10_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI11_0:
-	.long	2                               # 0x2
-func0000000000000007:                   # @func0000000000000007
+	.long	2
+func0000000000000007:
 	vpslld	$2, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI11_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI11_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI12_0:
-	.long	32                              # 0x20
-func0000000000000004:                   # @func0000000000000004
+	.long	32
+func0000000000000004:
 	vpslld	$2, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI12_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI12_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI13_0:
-	.long	1                               # 0x1
-func0000000000000009:                   # @func0000000000000009
+	.long	1
+func0000000000000009:
 	vpslld	$16, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI13_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI13_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI14_0:
-	.long	225                             # 0xe1
-func000000000000000d:                   # @func000000000000000d
+	.long	225
+func000000000000000d:
 	vpslld	$8, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI14_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	vpternlogd	$254, .LCPI14_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+

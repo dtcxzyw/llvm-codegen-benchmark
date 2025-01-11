@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	notl	%edx
 	leal	(%rsi,%rdi), %eax
 	addl	%edx, %eax
@@ -7,3 +7,4 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%eax, %eax
 	setg	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	lui	a2, 548541
 	addi	a2, a2, -1401
 	add	a1, a1, a2
@@ -6,15 +6,18 @@ func000000000000000e:                   # @func000000000000000e
 	zext.w	a0, a0
 	mul	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	addi	a1, a1, 3
 	zext.w	a1, a1
 	zext.w	a0, a0
 	mul	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	addi	a1, a1, 1
 	zext.w	a1, a1
 	zext.w	a0, a0
 	mul	a0, a0, a1
 	ret
+

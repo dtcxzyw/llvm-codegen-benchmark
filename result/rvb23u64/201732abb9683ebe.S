@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	andi	a0, a0, 1
 	addiw	a2, a1, -1
 	li	a3, 1
@@ -10,7 +10,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	xori	a0, a0, 1
 	addi	a0, a0, 3
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+
+func00000000000000b8:
 	andi	a0, a0, 1
 	addiw	a2, a1, -3
 	li	a3, 3
@@ -22,7 +23,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	andi	a0, a0, 1
 	addiw	a2, a1, -3
 	li	a3, 3
@@ -35,3 +37,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	sltu	a0, a1, a0
 	addi	a0, a0, 9
 	ret
+

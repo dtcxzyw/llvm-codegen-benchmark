@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax,8), %rax
 	leaq	(%rsi,%rax,4), %rcx
@@ -7,7 +7,8 @@ func000000000000000b:                   # @func000000000000000b
 	cmoveq	%rcx, %rax
 	addq	$4, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	testb	$1, %dil
 	jne	.LBB1_1
 	movq	%rsi, %rax
@@ -19,3 +20,4 @@ func0000000000000003:                   # @func0000000000000003
 	xorl	%eax, %eax
 	addq	$28, %rax
 	retq
+

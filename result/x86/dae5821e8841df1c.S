@@ -1,8 +1,8 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000011:
 	movl	%esi, %eax
 	addl	$30, %eax
 	cltq
-	imulq	$-2004318071, %rax, %rax        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rax
 	shrq	$32, %rax
 	leal	30(%rax,%rsi), %eax
 	movl	%eax, %ecx
@@ -10,7 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	sarl	$5, %eax
 	addl	%ecx, %eax
 	movslq	%eax, %rcx
-	imulq	$-2004318071, %rcx, %rax        # imm = 0x88888889
+	imulq	$-2004318071, %rcx, %rax
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	movl	%eax, %edx
@@ -23,3 +23,4 @@ func0000000000000011:                   # @func0000000000000011
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+

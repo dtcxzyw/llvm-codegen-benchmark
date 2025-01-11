@@ -1,4 +1,4 @@
-func0000000000000f18:                   # @func0000000000000f18
+func0000000000000f18:
 	addq	$8, %rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -6,3 +6,4 @@ func0000000000000f18:                   # @func0000000000000f18
 	seta	%al
 	orb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000028a4:                   # @func00000000000028a4
+func00000000000028a4:
 	sext.w	a2, a2
 	sltiu	a2, a2, 256
 	negw	a2, a2
@@ -7,7 +7,8 @@ func00000000000028a4:                   # @func00000000000028a4
 	addiw	a0, a0, 128
 	sltiu	a0, a0, 256
 	ret
-func0000000000000884:                   # @func0000000000000884
+
+func0000000000000884:
 	sext.w	a2, a2
 	sltiu	a2, a2, 10
 	negw	a2, a2
@@ -16,3 +17,4 @@ func0000000000000884:                   # @func0000000000000884
 	addiw	a0, a0, -7
 	sltiu	a0, a0, 2
 	ret
+

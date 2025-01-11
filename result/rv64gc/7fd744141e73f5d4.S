@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	addi	a2, a2, -3
 	seqz	a2, a2
 	sext.w	a1, a1
@@ -7,7 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func00000000000000a7:                   # @func00000000000000a7
+
+func00000000000000a7:
 	li	a3, 7
 	bgeu	a2, a3, .LBB1_2
 	li	a1, 1
@@ -19,7 +20,8 @@ func00000000000000a7:                   # @func00000000000000a7
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func00000000000000a3:                   # @func00000000000000a3
+
+func00000000000000a3:
 	lui	a3, 209715
 	addiw	a3, a3, 820
 	sltu	a2, a2, a3
@@ -29,3 +31,4 @@ func00000000000000a3:                   # @func00000000000000a3
 	srli	a1, a1, 30
 	add	a0, a0, a1
 	ret
+

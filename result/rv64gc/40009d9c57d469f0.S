@@ -1,15 +1,16 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	sext.w	a4, a1
 	sext.w	a2, a2
 	mv	a3, a2
 	bge	a2, a4, .LBB0_3
 	bgez	a2, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	or	a0, a0, a1
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a3, a4
 	bltz	a2, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	or	a0, a0, a3
 	ret
+

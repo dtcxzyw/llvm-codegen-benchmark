@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpl	$-1, %esi
 	sete	%al
 	andb	%al, %dl
@@ -6,3 +6,4 @@ func0000000000000021:                   # @func0000000000000021
 	andb	%dil, %al
 	andb	%dl, %al
 	retq
+

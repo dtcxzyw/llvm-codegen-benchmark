@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	slli	a2, a2, 32
 	li	a3, 1000
 	srli	a2, a2, 32
@@ -10,7 +10,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	slli	a2, a2, 32
 	lui	a3, 244141
 	srli	a2, a2, 32
@@ -24,7 +25,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	add	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000003f8:                   # @func00000000000003f8
+
+func00000000000003f8:
 	slli	a2, a2, 32
 	lui	a3, 244141
 	srli	a2, a2, 32
@@ -38,7 +40,8 @@ func00000000000003f8:                   # @func00000000000003f8
 	add	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+
+func00000000000001f4:
 	slli	a2, a2, 32
 	lui	a3, 477
 	srli	a2, a2, 32
@@ -53,7 +56,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	slli	a2, a2, 32
 	lui	a3, 244141
 	srli	a2, a2, 32
@@ -66,7 +70,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003f4:                   # @func00000000000003f4
+
+func00000000000003f4:
 	slli	a2, a2, 32
 	li	a3, 1000
 	srli	a2, a2, 32
@@ -79,3 +84,4 @@ func00000000000003f4:                   # @func00000000000003f4
 	add	a0, a0, a1
 	seqz	a0, a0
 	ret
+

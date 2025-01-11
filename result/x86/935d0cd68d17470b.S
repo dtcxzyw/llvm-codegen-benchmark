@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	decl	%edx
 	movslq	%edx, %rax
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -14,7 +15,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	decl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -22,7 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -30,7 +33,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addl	$-24, %edx
 	movslq	%edx, %rcx
 	xorl	%eax, %eax
@@ -38,7 +42,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -46,7 +51,8 @@ func000000000000000e:                   # @func000000000000000e
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	incl	%edx
 	movslq	%edx, %rax
 	testb	$1, %sil
@@ -54,3 +60,4 @@ func0000000000000007:                   # @func0000000000000007
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
+

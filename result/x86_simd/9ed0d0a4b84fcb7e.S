@@ -1,39 +1,39 @@
 .LCPI0_0:
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
 .LCPI0_1:
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-func0000000000000074:                   # @func0000000000000074
-	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm1    # [9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363,9363]
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+func0000000000000074:
+	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm2
 	vpsrlw	$1, %ymm2, %ymm2
 	vpaddw	%ymm1, %ymm2, %ymm1
@@ -45,3 +45,4 @@ func0000000000000074:                   # @func0000000000000074
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0 {%k1} {z}
 	retq
+

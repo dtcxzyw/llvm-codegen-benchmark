@@ -1,16 +1,16 @@
 .LCPI0_0:
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-func000000000000003f:                   # @func000000000000003f
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+func000000000000003f:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
+	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm2
 	vpsrlw	$1, %xmm2, %xmm2
 	vpaddw	%xmm1, %xmm2, %xmm1
@@ -22,3 +22,4 @@ func000000000000003f:                   # @func000000000000003f
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,7 +1,8 @@
-func0000000000000021:                   # @func0000000000000021
-	andl	$4095, %esi                     # imm = 0xFFF
+func0000000000000021:
+	andl	$4095, %esi
 	shrl	$16, %edi
-	andl	$4095, %edi                     # imm = 0xFFF
+	andl	$4095, %edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
+

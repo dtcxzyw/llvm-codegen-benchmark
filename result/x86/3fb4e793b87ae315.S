@@ -1,10 +1,11 @@
-func00000000000002f8:                   # @func00000000000002f8
-	movl	$2147975281, %eax               # imm = 0x80078071
+func00000000000002f8:
+	movl	$2147975281, %eax
 	imulq	%rsi, %rax
 	shrq	$47, %rax
-	imull	$65521, %eax, %eax              # imm = 0xFFF1
+	imull	$65521, %eax, %eax
 	subl	%eax, %esi
 	addq	%rdi, %rsi
-	cmpq	$131042, %rsi                   # imm = 0x1FFE2
+	cmpq	$131042, %rsi
 	setae	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	zext.w	a1, a1
 	lui	a2, 274878
 	addiw	a2, a2, -381
@@ -7,7 +7,8 @@ func000000000000003f:                   # @func000000000000003f
 	sh2add	a0, a1, a0
 	addiw	a0, a0, 17
 	ret
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	zext.w	a1, a1
 	lui	a2, 91867
 	addiw	a2, a2, 115
@@ -18,7 +19,8 @@ func0000000000000035:                   # @func0000000000000035
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	zext.w	a1, a1
 	lui	a2, 31301
 	addiw	a2, a2, -917
@@ -27,7 +29,8 @@ func000000000000003d:                   # @func000000000000003d
 	sh1add	a0, a1, a0
 	addiw	a0, a0, 2
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	slli	a1, a1, 32
 	lui	a2, 838861
 	addi	a2, a2, -819
@@ -37,3 +40,4 @@ func000000000000003c:                   # @func000000000000003c
 	sh3add	a0, a1, a0
 	addiw	a0, a0, 8
 	ret
+

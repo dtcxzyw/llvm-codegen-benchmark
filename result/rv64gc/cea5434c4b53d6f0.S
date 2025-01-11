@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	lui	a3, 16
 	li	a4, 1
 	addiw	a3, a3, -1
@@ -8,9 +8,10 @@ func0000000000000021:                   # @func0000000000000021
 	and	a2, a2, a3
 	snez	a0, a2
 	addi	a0, a0, 1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a1, a1, a3
@@ -21,5 +22,6 @@ func0000000000000024:                   # @func0000000000000024
 	seqz	a0, a2
 	addi	a0, a0, -1
 	ori	a0, a0, 9
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	leaq	7(%rdx), %rax
 	andq	$-8, %rax
 	cmpq	%rdx, %rax
@@ -7,3 +7,4 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

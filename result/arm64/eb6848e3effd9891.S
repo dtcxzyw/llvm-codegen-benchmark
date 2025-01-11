@@ -1,14 +1,12 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	movi	d3, #0000000000000000
 	fmul	d1, d1, d2
 	fmadd	d0, d0, d3, d1
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	fmul	d1, d1, d2
 	fmov	d2, #2.00000000
 	fmadd	d0, d0, d2, d1
 	ret
-                                        // -- End function
+

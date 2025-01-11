@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -14,3 +15,4 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2d	%k0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	zext.h	a1, a1
 	srliw	a2, a0, 7
 	addi	a2, a2, 256
@@ -8,3 +8,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	or	a0, a0, a2
 	zext.w	a0, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000c81:                   # @func0000000000000c81
+func0000000000000c81:
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -8,7 +8,8 @@ func0000000000000c81:                   # @func0000000000000c81
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000486:                   # @func0000000000000486
+
+func0000000000000486:
 	sext.b	a0, a0
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -18,7 +19,8 @@ func0000000000000486:                   # @func0000000000000486
 	sext.b	a1, a1
 	slt	a0, a1, a0
 	ret
-func000000000000048a:                   # @func000000000000048a
+
+func000000000000048a:
 	sext.b	a0, a0
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -28,7 +30,8 @@ func000000000000048a:                   # @func000000000000048a
 	sext.b	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000481:                   # @func0000000000000481
+
+func0000000000000481:
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -39,7 +42,8 @@ func0000000000000481:                   # @func0000000000000481
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000c86:                   # @func0000000000000c86
+
+func0000000000000c86:
 	sext.b	a0, a0
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -48,7 +52,8 @@ func0000000000000c86:                   # @func0000000000000c86
 	sext.b	a1, a1
 	slt	a0, a1, a0
 	ret
-func0000000000000c8a:                   # @func0000000000000c8a
+
+func0000000000000c8a:
 	sext.b	a0, a0
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -57,7 +62,8 @@ func0000000000000c8a:                   # @func0000000000000c8a
 	sext.b	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000c84:                   # @func0000000000000c84
+
+func0000000000000c84:
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -66,7 +72,8 @@ func0000000000000c84:                   # @func0000000000000c84
 	andi	a1, a1, 255
 	sltu	a0, a1, a0
 	ret
-func0000000000000c8c:                   # @func0000000000000c8c
+
+func0000000000000c8c:
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -76,7 +83,8 @@ func0000000000000c8c:                   # @func0000000000000c8c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	andi	a0, a0, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 26
@@ -86,3 +94,4 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

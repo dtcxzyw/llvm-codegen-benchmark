@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	mul	a3, a3, a0
 	mulhu	a5, a0, a2
 	mul	a1, a1, a2
@@ -9,7 +9,8 @@ func000000000000000f:                   # @func000000000000000f
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	mul	a5, a5, a2
 	mulhu	a1, a2, a4
 	mul	a3, a3, a4
@@ -21,3 +22,4 @@ func000000000000000a:                   # @func000000000000000a
 	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
+

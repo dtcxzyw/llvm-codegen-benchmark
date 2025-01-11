@@ -1,4 +1,4 @@
-func0000000000000102:                   # @func0000000000000102
+func0000000000000102:
 	movl	%edi, %eax
 	andb	$-33, %al
 	addb	$-65, %al
@@ -8,7 +8,8 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	movl	%edi, %eax
 	andb	$-33, %al
 	addb	$-65, %al
@@ -18,3 +19,4 @@ func000000000000010c:                   # @func000000000000010c
 	sets	%al
 	orb	%cl, %al
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000082:                   // @func0000000000000082
-// %bb.0:                               // %entry
+func0000000000000082:
 	cmp	x1, #0
 	and	x8, x1, #0xff
 	cset	w9, eq
@@ -9,12 +8,11 @@ func0000000000000082:                   // @func0000000000000082
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000402:                   // @func0000000000000402
-// %bb.0:                               // %entry
-	mov	x8, #-65537                     // =0xfffffffffffeffff
+
+func0000000000000402:
+	mov	x8, #-65537
 	cmp	x1, x8
-	mov	x8, #-4294901761                // =0xffffffff0000ffff
+	mov	x8, #-4294901761
 	cset	w9, hi
 	bics	xzr, x8, x1
 	orr	w8, w9, w0
@@ -22,4 +20,4 @@ func0000000000000402:                   // @func0000000000000402
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

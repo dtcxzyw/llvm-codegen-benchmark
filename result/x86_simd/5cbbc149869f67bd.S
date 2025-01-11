@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x7fffffffffffffff              # double NaN
+	.quad	0x7fffffffffffffff
 .LCPI0_1:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3cb0000000000000
+func0000000000000002:
 	vcvtdq2pd	%ymm1, %zmm1
 	vdivpd	%zmm1, %zmm0, %zmm0
 	vandpd	.LCPI0_0(%rip){1to8}, %zmm0, %zmm0
@@ -10,11 +10,12 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	9223372036854775807             # 0x7fffffffffffffff
+	.quad	9223372036854775807
 .LCPI1_1:
-	.quad	9218868437227405312             # 0x7ff0000000000000
-func0000000000000007:                   # @func0000000000000007
+	.quad	9218868437227405312
+func0000000000000007:
 	vcvtdq2pd	%ymm1, %zmm1
 	vdivpd	%zmm1, %zmm0, %zmm0
 	vandpd	.LCPI1_0(%rip){1to8}, %zmm0, %zmm0
@@ -22,3 +23,4 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	andl	$-512, %edi                     # imm = 0xFE00
+func0000000000000000:
+	andl	$-512, %edi
 	movslq	%edi, %rax
 	retq
+

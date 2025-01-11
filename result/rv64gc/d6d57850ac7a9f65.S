@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	xor	a0, a0, a2
@@ -6,17 +6,20 @@ func0000000000000181:                   # @func0000000000000181
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
+
+func0000000000000194:
 	slli	a2, a2, 33
 	srli	a2, a2, 33
 	sltu	a0, a0, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000105:                   # @func0000000000000105
+
+func0000000000000105:
 	andi	a2, a2, -16
 	sltu	a0, a2, a0
 	sltiu	a1, a1, 96
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+

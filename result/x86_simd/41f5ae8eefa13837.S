@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000002:                   # @func0000000000000002
-	vbroadcastss	.LCPI0_0(%rip), %zmm3   # zmm3 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.long	0x7fffffff
+func0000000000000002:
+	vbroadcastss	.LCPI0_0(%rip), %zmm3
 	vandps	%zmm3, %zmm2, %zmm2
 	vandps	%zmm3, %zmm1, %zmm1
 	vaddps	%zmm2, %zmm1, %zmm1
@@ -9,10 +9,11 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x7fffffff                      # float NaN
-func0000000000000032:                   # @func0000000000000032
-	vbroadcastss	.LCPI1_0(%rip), %zmm3   # zmm3 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.long	0x7fffffff
+func0000000000000032:
+	vbroadcastss	.LCPI1_0(%rip), %zmm3
 	vandps	%zmm3, %zmm2, %zmm2
 	vandps	%zmm3, %zmm1, %zmm1
 	vaddps	%zmm2, %zmm1, %zmm1
@@ -20,3 +21,4 @@ func0000000000000032:                   # @func0000000000000032
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

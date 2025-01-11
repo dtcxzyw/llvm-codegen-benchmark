@@ -1,17 +1,20 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
-	imulq	$86400, %rsi, %rax              # imm = 0x15180
+	imulq	$86400, %rsi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
-	movabsq	$5871781006564002453, %rax      # imm = 0x517CC1B727220A95
+	movabsq	$5871781006564002453, %rax
 	imulq	%rsi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
-	movabsq	$5871781006564002453, %rax      # imm = 0x517CC1B727220A95
+	movabsq	$5871781006564002453, %rax
 	imulq	%rsi, %rax
 	retq
+

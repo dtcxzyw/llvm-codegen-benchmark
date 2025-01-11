@@ -1,14 +1,15 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$8, %eax
-	addl	$336, %eax                      # imm = 0x150
+	addl	$336, %eax
 	cmpl	%eax, %esi
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %edx
 	movl	$2, %eax
 	subl	%edx, %eax
@@ -16,7 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	testb	$1, %dl
 	movl	$111, %eax
 	movl	$125, %ecx
@@ -25,10 +27,12 @@ func0000000000000018:                   # @func0000000000000018
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andl	$1, %edx
 	leal	5(%rdx,%rdx,2), %eax
 	cmpl	%eax, %esi
 	seta	%al
 	orb	%dil, %al
 	retq
+

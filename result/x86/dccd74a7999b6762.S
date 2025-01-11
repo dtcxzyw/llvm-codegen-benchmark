@@ -1,10 +1,11 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andl	$1, %edx
 	shll	$6, %esi
 	orl	%edx, %esi
 	leal	-1640531527(%rdi,%rsi), %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -13,7 +14,8 @@ func0000000000000015:                   # @func0000000000000015
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -21,9 +23,11 @@ func0000000000000010:                   # @func0000000000000010
 	leal	(%rax,%rdx,2), %eax
 	leal	8(%rdi,%rax), %eax
 	retq
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	shll	$2, %edx
 	andl	$1, %esi
 	leal	(%rdx,%rsi,4), %eax
 	leal	4(%rdi,%rax), %eax
 	retq
+

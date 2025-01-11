@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sltiu	a1, a1, -2
 	li	a2, -1
 	xori	a1, a1, 1
@@ -7,25 +7,30 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	slti	a1, a1, 0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000050c:                   # @func000000000000050c
+
+func000000000000050c:
 	sltiu	a1, a1, 17
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	sgtz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	slti	a1, a1, 512
 	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

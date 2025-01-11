@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3e45798ee2308c3a              # double 1.0E-8
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3e45798ee2308c3a
+func0000000000000002:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fadd.d	fa4, fa1, fa2
@@ -8,5 +8,6 @@ func0000000000000002:                   # @func0000000000000002
 	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB0_2
 	fmv.d	fa0, fa5
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

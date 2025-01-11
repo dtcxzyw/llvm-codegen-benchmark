@@ -1,7 +1,6 @@
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	mov	w9, #12                         // =0xc
+func000000000000000f:
+	mov	x8, #-6148914691236517206
+	mov	w9, #12
 	neg	x10, x0
 	movk	x8, #43691
 	umulh	x8, x0, x8
@@ -9,11 +8,10 @@ func000000000000000f:                   // @func000000000000000f
 	madd	x8, x8, x9, x10
 	umaddl	x0, w1, w9, x8
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	mov	w9, #12                         // =0xc
+
+func000000000000000d:
+	mov	x8, #-6148914691236517206
+	mov	w9, #12
 	neg	x10, x0
 	movk	x8, #43691
 	umulh	x8, x0, x8
@@ -21,11 +19,10 @@ func000000000000000d:                   // @func000000000000000d
 	madd	x8, x8, x9, x10
 	umaddl	x0, w1, w9, x8
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	mov	x8, #16991                      // =0x425f
-	mov	w9, #216                        // =0xd8
+
+func000000000000001f:
+	mov	x8, #16991
+	mov	w9, #216
 	neg	x10, x0
 	movk	x8, #2427, lsl #16
 	movk	x8, #9709, lsl #32
@@ -35,11 +32,10 @@ func000000000000001f:                   // @func000000000000001f
 	madd	x8, x8, x9, x10
 	umaddl	x0, w1, w9, x8
 	ret
-                                        // -- End function
-func000000000000001d:                   // @func000000000000001d
-// %bb.0:                               // %entry
-	mov	x8, #16991                      // =0x425f
-	mov	w9, #216                        // =0xd8
+
+func000000000000001d:
+	mov	x8, #16991
+	mov	w9, #216
 	neg	x10, x0
 	movk	x8, #2427, lsl #16
 	movk	x8, #9709, lsl #32
@@ -49,4 +45,4 @@ func000000000000001d:                   // @func000000000000001d
 	madd	x8, x8, x9, x10
 	umaddl	x0, w1, w9, x8
 	ret
-                                        // -- End function
+

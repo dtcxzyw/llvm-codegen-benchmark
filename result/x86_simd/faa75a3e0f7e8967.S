@@ -1,7 +1,8 @@
 .LCPI0_0:
-	.long	2164195328                      # 0x80ff0000
-func0000000000000000:                   # @func0000000000000000
+	.long	2164195328
+func0000000000000000:
 	vpsrld	$3, %ymm0, %ymm0
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [2164195328,2164195328,2164195328,2164195328,2164195328,2164195328,2164195328,2164195328]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1
 	vpsrlvd	%ymm0, %ymm1, %ymm0
 	retq
+

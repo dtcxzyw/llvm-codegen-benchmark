@@ -1,4 +1,4 @@
-func000000000000030e:                   # @func000000000000030e
+func000000000000030e:
 	andi	a2, a2, 255
 	sltiu	a2, a2, 4
 	xori	a2, a2, 1
@@ -6,3 +6,4 @@ func000000000000030e:                   # @func000000000000030e
 	addi	a1, a1, 1
 	divuw	a0, a0, a1
 	ret
+

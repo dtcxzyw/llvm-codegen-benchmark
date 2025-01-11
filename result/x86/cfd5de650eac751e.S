@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setb	%cl
@@ -6,3 +6,4 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
+

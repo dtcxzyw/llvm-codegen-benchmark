@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	addiw	a1, a1, -1
@@ -13,7 +13,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	xori	a0, a0, 1
 	addi	a0, a0, 3
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+
+func00000000000000b8:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	addiw	a1, a1, -3
@@ -28,7 +29,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	addiw	a1, a1, -3
@@ -45,3 +47,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	sltu	a0, a0, a1
 	addi	a0, a0, 9
 	ret
+

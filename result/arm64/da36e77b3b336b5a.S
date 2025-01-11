@@ -1,49 +1,42 @@
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+func0000000000000015:
 	sxth	x8, w1
-	mov	x9, #32768                      // =0x8000
+	mov	x9, #32768
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	sxtw	x8, w1
-	mov	w9, #-2147483648                // =0x80000000
+	mov	w9, #-2147483648
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	sbfx	x8, x1, #16, #16
-	mov	w9, #-2147483648                // =0x80000000
+	mov	w9, #-2147483648
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	sbfiz	x8, x1, #17, #32
-	mov	w9, #-2147483648                // =0x80000000
+	mov	w9, #-2147483648
 	madd	x0, x8, x0, x9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	sbfx	x8, x1, #16, #16
-	mov	w9, #-2147483648                // =0x80000000
+	mov	w9, #-2147483648
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	sxtw	x8, w1
-	mov	x9, #8                          // =0x8
+	mov	x9, #8
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000055:                   // @func0000000000000055
-// %bb.0:                               // %entry
+
+func0000000000000055:
 	sxtw	x8, w1
-	mov	x9, #32768                      // =0x8000
+	mov	x9, #32768
 	madd	x0, x0, x8, x9
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	imull	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -7,7 +7,8 @@ func0000000000000009:                   # @func0000000000000009
 	cltq
 	shlq	$2, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	imull	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -16,7 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	cltq
 	shlq	$3, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	imull	%esi, %edi
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -25,3 +27,4 @@ func000000000000000b:                   # @func000000000000000b
 	cltq
 	shlq	$5, %rax
 	retq
+

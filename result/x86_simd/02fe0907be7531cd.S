@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movb	$8, %al
 	movzbl	%al, %ecx
 	vpextrb	$1, %xmm0, %edx
@@ -20,5 +20,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpinsrb	$1, %edx, %xmm0, %xmm0
 	vpinsrb	$2, %edi, %xmm0, %xmm0
 	vpinsrb	$3, %eax, %xmm0, %xmm0
-	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	vpmovzxbq	%xmm0, %ymm0
 	retq
+

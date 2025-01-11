@@ -1,4 +1,4 @@
-func0000000000000175:                   # @func0000000000000175
+func0000000000000175:
 	lui	a0, 1048332
 	addiw	a0, a0, 1619
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -8,7 +8,8 @@ func0000000000000175:                   # @func0000000000000175
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func00000000000001dd:                   # @func00000000000001dd
+
+func00000000000001dd:
 	lui	a0, 33
 	addiw	a0, a0, 1489
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -18,7 +19,8 @@ func00000000000001dd:                   # @func00000000000001dd
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v12
 	ret
-func00000000000001f5:                   # @func00000000000001f5
+
+func00000000000001f5:
 	lui	a0, 33
 	addiw	a0, a0, 1489
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,7 +30,8 @@ func00000000000001f5:                   # @func00000000000001f5
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func00000000000001ff:                   # @func00000000000001ff
+
+func00000000000001ff:
 	lui	a0, 115
 	addiw	a0, a0, -744
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -38,7 +41,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func00000000000001d5:                   # @func00000000000001d5
+
+func00000000000001d5:
 	lui	a0, 160
 	addiw	a0, a0, -1177
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -48,7 +52,8 @@ func00000000000001d5:                   # @func00000000000001d5
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v12
 	ret
-func00000000000001f0:                   # @func00000000000001f0
+
+func00000000000001f0:
 	lui	a0, 2
 	addiw	a0, a0, 112
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -56,7 +61,8 @@ func00000000000001f0:                   # @func00000000000001f0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	lui	a0, 1
 	addiw	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -66,7 +72,8 @@ func00000000000000f5:                   # @func00000000000000f5
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	lui	a0, 1
 	addiw	a0, a0, -567
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -76,7 +83,8 @@ func0000000000000055:                   # @func0000000000000055
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v12
 	ret
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	lui	a0, 5
 	addiw	a0, a0, 382
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -86,7 +94,8 @@ func0000000000000075:                   # @func0000000000000075
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	lui	a0, 2
 	addiw	a0, a0, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -96,7 +105,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v12
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	lui	a0, 11
 	addiw	a0, a0, 1815
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -106,3 +116,4 @@ func00000000000000ff:                   # @func00000000000000ff
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	ret
+

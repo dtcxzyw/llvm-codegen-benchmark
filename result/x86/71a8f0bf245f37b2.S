@@ -1,13 +1,14 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	testw	%dx, %dx
 	sete	%cl
 	orb	%dil, %cl
 	notl	%esi
-	testl	$1792, %esi                     # imm = 0x700
+	testl	$1792, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000602:                   # @func0000000000000602
+
+func0000000000000602:
 	testw	%dx, %dx
 	setne	%cl
 	orb	%dil, %cl
@@ -16,12 +17,14 @@ func0000000000000602:                   # @func0000000000000602
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	cmpw	$31, %dx
 	setb	%cl
 	orb	%dil, %cl
-	andl	$65520, %esi                    # imm = 0xFFF0
-	cmpl	$8976, %esi                     # imm = 0x2310
+	andl	$65520, %esi
+	cmpl	$8976, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
+

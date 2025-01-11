@@ -1,4 +1,4 @@
-func0000000000000118:                   # @func0000000000000118
+func0000000000000118:
 	srliw	a2, a1, 16
 	snez	a2, a2
 	slli	a2, a2, 4
@@ -6,9 +6,10 @@ func0000000000000118:                   # @func0000000000000118
 	li	a2, 255
 	bltu	a2, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	sext.w	a2, a1
 	sltiu	a2, a2, 256
 	xori	a2, a2, 1
@@ -17,5 +18,6 @@ func0000000000000318:                   # @func0000000000000318
 	li	a2, 15
 	bltu	a2, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

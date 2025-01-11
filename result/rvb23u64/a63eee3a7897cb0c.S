@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	lui	a2, 4100
 	addiw	a2, a2, 17
 	bseti	a2, a2, 34
@@ -15,7 +15,8 @@ func000000000000000c:                   # @func000000000000000c
 	sh3add	a0, a1, a0
 	addi	a0, a0, 1368
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	lui	a2, 8193
 	addiw	a2, a2, 1
 	bseti	a2, a2, 38
@@ -33,3 +34,4 @@ func000000000000000f:                   # @func000000000000000f
 	sh2add	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
+

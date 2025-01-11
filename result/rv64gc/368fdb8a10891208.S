@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	andi	a2, a2, 255
 	slli	a1, a1, 8
 	or	a1, a1, a2
@@ -10,7 +10,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	andi	a2, a2, 255
 	slli	a1, a1, 56
 	slli	a2, a2, 48
@@ -19,7 +20,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	andi	a2, a2, 255
 	slli	a1, a1, 8
 	or	a1, a1, a2
@@ -29,3 +31,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000009b:                   # @func000000000000009b
+func000000000000009b:
 	sltu	a1, a1, a2
 	slli	a0, a0, 1
 	li	a2, -1
@@ -11,3 +11,4 @@ func000000000000009b:                   # @func000000000000009b
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

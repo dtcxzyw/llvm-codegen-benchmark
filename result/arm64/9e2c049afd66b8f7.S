@@ -1,6 +1,5 @@
-func0000000000000088:                   // @func0000000000000088
-// %bb.0:                               // %entry
-	mov	w8, #26464                      // =0x6760
+func0000000000000088:
+	mov	w8, #26464
 	fmaxnm	s0, s0, s1
 	movk	w8, #18583, lsl #16
 	fmov	s1, w8
@@ -9,9 +8,8 @@ func0000000000000088:                   // @func0000000000000088
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000ee:                   // @func00000000000000ee
-// %bb.0:                               // %entry
+
+func00000000000000ee:
 	fcmp	s0, #0.0
 	cset	w8, ne
 	fcmp	s1, #0.0
@@ -19,4 +17,4 @@ func00000000000000ee:                   // @func00000000000000ee
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000084:
 	slli	a1, a1, 1
 	li	a2, -1
 	sltu	a3, a0, a1
@@ -8,7 +8,8 @@ func0000000000000084:                   # @func0000000000000084
 	czero.nez	a0, a0, a3
 	or	a0, a0, a1
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	slli	a1, a1, 1
 	li	a2, -1
 	sltu	a3, a0, a1
@@ -18,3 +19,4 @@ func00000000000000d4:                   # @func00000000000000d4
 	czero.nez	a0, a0, a3
 	or	a0, a0, a1
 	ret
+

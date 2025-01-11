@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	2147483647                      # 0x7fffffff
-func0000000000000002:                   # @func0000000000000002
+	.long	2147483647
+func0000000000000002:
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -48,10 +48,11 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	4294901760                      # 0xffff0000
-func0000000000000000:                   # @func0000000000000000
-	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [4294901760,4294901760,4294901760,4294901760,4294901760,4294901760,4294901760,4294901760]
+	.long	4294901760
+func0000000000000000:
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -99,10 +100,11 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	2147483648                      # 0x80000000
-func0000000000000004:                   # @func0000000000000004
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648]
+	.long	2147483648
+func0000000000000004:
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -150,10 +152,11 @@ func0000000000000004:                   # @func0000000000000004
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	2097152                         # 0x200000
-func0000000000000006:                   # @func0000000000000006
-	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [2097152,2097152,2097152,2097152,2097152,2097152,2097152,2097152]
+	.long	2097152
+func0000000000000006:
+	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -201,3 +204,4 @@ func0000000000000006:                   # @func0000000000000006
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000039:                   # @func0000000000000039
+func0000000000000039:
 	leal	38(%rdi), %ecx
 	shll	$2, %edi
 	leal	(%rdi,%rdi,8), %eax
@@ -6,3 +6,4 @@ func0000000000000039:                   # @func0000000000000039
 	divw	%cx
 	movzwl	%ax, %eax
 	retq
+

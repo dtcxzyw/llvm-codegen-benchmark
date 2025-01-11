@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpsubw	%ymm2, %ymm0, %ymm0
@@ -6,30 +6,32 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-func0000000000000041:                   # @func0000000000000041
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+func0000000000000041:
 	vpaddw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpcmpeqw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpaddw	%ymm2, %ymm0, %ymm0
@@ -37,7 +39,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpaddw	%ymm2, %ymm0, %ymm0
@@ -45,3 +48,4 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

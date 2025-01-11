@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	shrq	$4, %rdx
 	leaq	1(%rdx), %rcx
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func000000000000001f:                   # @func000000000000001f
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	shrq	$3, %rdx
 	leaq	1(%rdx), %rcx
 	xorl	%eax, %eax
@@ -14,3 +15,4 @@ func000000000000000c:                   # @func000000000000000c
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

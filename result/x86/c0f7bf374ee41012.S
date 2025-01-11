@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	testb	$1, %sil
 	movl	$3, %ecx
 	movl	$9, %eax
@@ -6,14 +6,16 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edi, %edi
 	cmovgl	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %esi
 	shll	$20, %esi
 	leal	1048576(%rsi), %eax
-	cmpl	$1048576, %edi                  # imm = 0x100000
+	cmpl	$1048576, %edi
 	cmovnel	%edi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	movl	$-105, %eax
@@ -21,3 +23,4 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	cmovlel	%edi, %eax
 	retq
+

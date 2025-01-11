@@ -1,14 +1,15 @@
-func000000000000000c:                   # @func000000000000000c
-	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
-	addl	$85899344, %eax                 # imm = 0x51EB850
+func000000000000000c:
+	imull	$-1030792151, %esi, %eax
+	addl	$85899344, %eax
 	rorxl	$2, %eax, %eax
-	cmpl	$42949673, %eax                 # imm = 0x28F5C29
+	cmpl	$42949673, %eax
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -19,9 +20,10 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movslq	%esi, %rax
-	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rcx
 	shrq	$32, %rcx
 	addl	%eax, %ecx
 	movl	%ecx, %edx
@@ -37,7 +39,8 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -47,9 +50,10 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movslq	%esi, %rax
-	imulq	$1374389535, %rax, %rcx         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$37, %rcx
@@ -59,3 +63,4 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	andb	%dil, %al
 	retq
+

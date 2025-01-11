@@ -1,5 +1,5 @@
-func0000000000000986:                   # @func0000000000000986
-	movl	$16026, %eax                    # imm = 0x3E9A
+func0000000000000986:
+	movl	$16026, %eax
 	subl	%edx, %eax
 	cmpl	$163, %eax
 	movl	$163, %ecx
@@ -10,3 +10,4 @@ func0000000000000986:                   # @func0000000000000986
 	cmpl	%ecx, %eax
 	setl	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	fcvt.d.l	fa5, a0
 	fcvt.l.d	a1, fa5, rtz
 	add	a0, a0, a1
@@ -10,3 +10,4 @@ func0000000000000048:                   # @func0000000000000048
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
+

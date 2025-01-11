@@ -1,4 +1,4 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	sraiw	a0, a0, 13
 	li	a1, 1
 	subw	a1, a1, a0
@@ -12,7 +12,8 @@ func000000000000002f:                   # @func000000000000002f
 	slli	a0, a0, 4
 	addiw	a0, a0, 400
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	sraiw	a0, a0, 13
 	li	a1, 1
 	subw	a1, a1, a0
@@ -26,3 +27,4 @@ func000000000000002d:                   # @func000000000000002d
 	mul	a0, a0, a1
 	addw	a0, a0, a1
 	ret
+

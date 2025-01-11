@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	sub	a1, a1, a2
 	li	a2, 1
 	mul	a0, a0, a0
@@ -9,3 +9,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	srli	a2, a2, 1
 	slt	a0, a2, a0
 	ret
+

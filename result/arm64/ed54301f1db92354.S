@@ -1,7 +1,6 @@
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+func000000000000000d:
 	fabs	d0, d0
-	mov	x8, #4503599627370496000        // =0x3e80000000000000
+	mov	x8, #4503599627370496000
 	orr	w9, w1, w0
 	fmov	d1, x8
 	fcmp	d0, d1
@@ -9,11 +8,10 @@ func000000000000000d:                   // @func000000000000000d
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmov	x8, d0
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
 	orr	w9, w1, w0
@@ -21,11 +19,10 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	fmov	x8, d0
-	mov	x9, #9218868437227405312        // =0x7ff0000000000000
+	mov	x9, #9218868437227405312
 	and	x8, x8, #0x7fffffffffffffff
 	cmp	x8, x9
 	orr	w9, w1, w0
@@ -33,11 +30,10 @@ func0000000000000007:                   // @func0000000000000007
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+
 .LCPI3_0:
-	.xword	0x402921fb54442d18              // double 12.566370614359172
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+	.xword	0x402921fb54442d18
+func0000000000000005:
 	fabs	d0, d0
 	adrp	x8, .LCPI3_0
 	orr	w9, w1, w0
@@ -47,11 +43,10 @@ func0000000000000005:                   // @func0000000000000005
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fabs	d0, d0
-	mov	x8, #4372995238176751616        // =0x3cb0000000000000
+	mov	x8, #4372995238176751616
 	orr	w9, w1, w0
 	fmov	d1, x8
 	fcmp	d0, d1
@@ -59,4 +54,4 @@ func0000000000000002:                   // @func0000000000000002
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

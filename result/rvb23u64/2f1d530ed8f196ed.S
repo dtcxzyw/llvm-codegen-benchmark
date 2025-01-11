@@ -1,4 +1,4 @@
-func000000000000048c:                   # @func000000000000048c
+func000000000000048c:
 	andi	a0, a0, 1
 	li	a2, -1488
 	addi	a0, a0, -1
@@ -13,7 +13,8 @@ func000000000000048c:                   # @func000000000000048c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	andi	a0, a0, 1
 	lui	a2, 1032192
 	czero.eqz	a0, a1, a0
@@ -25,3 +26,4 @@ func000000000000008c:                   # @func000000000000008c
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
+

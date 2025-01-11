@@ -1,7 +1,7 @@
-func0000000000000042:                   # @func0000000000000042
-	movabsq	$-7817130112363805961, %rax     # imm = 0x9383F994698BC2F7
+func0000000000000042:
+	movabsq	$-7817130112363805961, %rax
 	xorq	%rdx, %rax
-	movabsq	$4644845956201273805, %rcx      # imm = 0x4075CEC9A7C959CD
+	movabsq	$4644845956201273805, %rcx
 	xorq	%rsi, %rcx
 	orq	%rax, %rcx
 	sete	%cl
@@ -9,10 +9,11 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000302:                   # @func0000000000000302
-	movabsq	$-7817130112363805961, %rax     # imm = 0x9383F994698BC2F7
+
+func0000000000000302:
+	movabsq	$-7817130112363805961, %rax
 	xorq	%rdx, %rax
-	movabsq	$4644845956201273805, %rcx      # imm = 0x4075CEC9A7C959CD
+	movabsq	$4644845956201273805, %rcx
 	xorq	%rsi, %rcx
 	orq	%rax, %rcx
 	setne	%cl
@@ -20,14 +21,16 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	testq	%rdx, %rdx
 	sete	%cl
-	movabsq	$402707733310306022, %rax       # imm = 0x596B48CC04376E6
+	movabsq	$402707733310306022, %rax
 	xorq	%rsi, %rax
-	movabsq	$5574462982184004571, %rdx      # imm = 0x4D5C788C2AA46BDB
+	movabsq	$5574462982184004571, %rdx
 	xorq	%rdi, %rdx
 	orq	%rax, %rdx
 	setne	%al
 	orb	%cl, %al
 	retq
+

@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF
+func0000000000000000:
+	movl	$4294967295, %ecx
 	leal	8(%rsi,%rcx), %eax
 	leal	1(%rsi,%rcx), %edx
 	testb	$1, %dil
@@ -8,7 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	andl	%edx, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	leaq	64(%rsi), %rax
 	leaq	8(%rsi), %rcx
 	testb	$1, %dil
@@ -19,7 +20,8 @@ func0000000000000007:                   # @func0000000000000007
 	decq	%rax
 	andq	%rdx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	leaq	64(%rsi), %rax
 	leaq	8(%rsi), %rcx
 	testb	$1, %dil
@@ -30,7 +32,8 @@ func0000000000000005:                   # @func0000000000000005
 	decq	%rax
 	andq	%rdx, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	leaq	64(%rsi), %rax
 	leaq	8(%rsi), %rcx
 	testb	$1, %dil
@@ -41,3 +44,4 @@ func000000000000000f:                   # @func000000000000000f
 	addq	$12, %rax
 	andq	%rdx, %rax
 	retq
+

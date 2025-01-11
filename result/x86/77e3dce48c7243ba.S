@@ -1,15 +1,17 @@
-func0000000000000024:                   # @func0000000000000024
-	addl	$-1004, %edx                    # imm = 0xFC14
+func0000000000000024:
+	addl	$-1004, %edx
 	cmpw	$3, %dx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	addl	$-18432, %edx                   # imm = 0xB800
+
+func0000000000000004:
+	addl	$-18432, %edx
 	movzwl	%dx, %eax
-	cmpl	$47105, %eax                    # imm = 0xB801
+	cmpl	$47105, %eax
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
+

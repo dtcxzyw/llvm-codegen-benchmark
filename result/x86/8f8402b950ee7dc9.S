@@ -1,6 +1,7 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	leal	256(%rsi), %eax
 	movzwl	%di, %ecx
-	cmpl	$256, %ecx                      # imm = 0x100
+	cmpl	$256, %ecx
 	cmovbl	%edi, %eax
 	retq
+

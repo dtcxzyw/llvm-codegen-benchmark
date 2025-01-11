@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000078:                   # @func0000000000000078
+	.quad	0x7ff0000000000000
+func0000000000000078:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fclass.d	a1, fa1
@@ -11,7 +11,8 @@ func0000000000000078:                   # @func0000000000000078
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	fclass.d	a1, fa1
 	fclass.d	a2, fa0
 	andi	a1, a1, 129
@@ -21,3 +22,4 @@ func0000000000000088:                   # @func0000000000000088
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

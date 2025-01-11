@@ -1,4 +1,4 @@
-func0000000000001c24:                   # @func0000000000001c24
+func0000000000001c24:
 	sext.w	a0, a0
 	li	a3, 1
 	sllw	a2, a3, a2
@@ -7,7 +7,8 @@ func0000000000001c24:                   # @func0000000000001c24
 	sltiu	a0, a0, 13
 	and	a0, a0, a1
 	ret
-func00000000000010ac:                   # @func00000000000010ac
+
+func00000000000010ac:
 	sext.w	a0, a0
 	li	a3, 1
 	sllw	a2, a3, a2
@@ -18,3 +19,4 @@ func00000000000010ac:                   # @func00000000000010ac
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

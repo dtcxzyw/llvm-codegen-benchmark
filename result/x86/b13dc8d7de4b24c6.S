@@ -1,26 +1,29 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000141:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
 	orq	%rdi, %rcx
 	sete	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
 	addq	%rdi, %rcx
-	cmpq	$268435456, %rcx                # imm = 0x10000000
+	cmpq	$268435456, %rcx
 	setb	%al
 	retq
-func00000000000005e1:                   # @func00000000000005e1
+
+func00000000000005e1:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
 	orq	%rdi, %rcx
 	sete	%al
 	retq
-func00000000000005f8:                   # @func00000000000005f8
+
+func00000000000005f8:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
@@ -28,7 +31,8 @@ func00000000000005f8:                   # @func00000000000005f8
 	cmpq	$2, %rcx
 	setae	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
@@ -36,7 +40,8 @@ func0000000000000148:                   # @func0000000000000148
 	shrq	$32, %rcx
 	setne	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+
+func0000000000000144:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	imulq	%rax, %rcx
@@ -44,3 +49,4 @@ func0000000000000144:                   # @func0000000000000144
 	shrq	$31, %rcx
 	sete	%al
 	retq
+

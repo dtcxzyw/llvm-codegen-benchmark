@@ -1,2 +1,3 @@
-func0000000000000000:                   # @func0000000000000000
-	jmp	fmodf@PLT                       # TAILCALL
+func0000000000000000:
+	jmp	fmodf@PLT
+

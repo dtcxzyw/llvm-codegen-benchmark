@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000301:                   # @func0000000000000301
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	.quad	1
+func0000000000000301:
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm3
 	vpandn	%ymm2, %ymm3, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -16,7 +16,7 @@ func0000000000000301:                   # @func0000000000000301
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm3
-	vpunpcklqdq	%xmm5, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm5[0]
+	vpunpcklqdq	%xmm5, %xmm3, %xmm3
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
@@ -27,9 +27,10 @@ func0000000000000301:                   # @func0000000000000301
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm4, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm0, %xmm0
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpcmpeqq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

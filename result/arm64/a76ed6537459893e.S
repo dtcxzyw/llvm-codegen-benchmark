@@ -1,5 +1,4 @@
-func00000000000001cc:                   // @func00000000000001cc
-// %bb.0:                               // %entry
+func00000000000001cc:
 	cmp	w2, w0
 	cset	w8, le
 	cmn	w0, #2
@@ -7,9 +6,8 @@ func00000000000001cc:                   // @func00000000000001cc
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	cmp	w2, w0
 	cset	w8, eq
 	cmp	w0, #0
@@ -17,9 +15,8 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	cmp	w2, w0
 	cset	w8, eq
 	cmp	w0, #0
@@ -27,4 +24,4 @@ func000000000000004a:                   // @func000000000000004a
 	cset	w9, gt
 	and	w0, w9, w8
 	ret
-                                        // -- End function
+

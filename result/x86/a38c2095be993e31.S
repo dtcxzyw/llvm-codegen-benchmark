@@ -1,10 +1,11 @@
-func0000000000000226:                   # @func0000000000000226
+func0000000000000226:
 	shrq	$3, %rsi
-	imull	$-1717986918, %esi, %eax        # imm = 0x9999999A
+	imull	$-1717986918, %esi, %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	7(%rsi), %eax
 	testq	%rsi, %rsi
 	cmovnsl	%esi, %eax
@@ -12,3 +13,4 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %eax
 	sete	%al
 	retq
+

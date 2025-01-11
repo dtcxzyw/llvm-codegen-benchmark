@@ -1,13 +1,13 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	leal	255(%rdi), %eax
-	addl	$510, %edi                      # imm = 0x1FE
+	addl	$510, %edi
 	testl	%eax, %eax
 	cmovnsl	%eax, %edi
 	sarl	$8, %edi
 	movl	%edi, %eax
 	addl	$119, %eax
 	cltq
-	imulq	$-2004318071, %rax, %rax        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rax
 	shrq	$32, %rax
 	leal	119(%rax,%rdi), %eax
 	movl	%eax, %ecx
@@ -15,10 +15,11 @@ func0000000000000012:                   # @func0000000000000012
 	sarl	$6, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	addl	$12, %edi
 	movslq	%edi, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$32, %rcx
 	shrq	$63, %rax
@@ -28,7 +29,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnsl	%edx, %eax
 	sarl	$5, %eax
 	retq
-func0000000000000032:                   # @func0000000000000032
+
+func0000000000000032:
 	leal	7(%rdi), %ecx
 	leal	14(%rdi), %eax
 	testl	%ecx, %ecx
@@ -40,15 +42,17 @@ func0000000000000032:                   # @func0000000000000032
 	cmovnsl	%ecx, %eax
 	sarl	$3, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	leal	255(%rdi), %ecx
 	leal	510(%rdi), %eax
 	testl	%ecx, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$8, %eax
 	leal	255(%rax), %ecx
-	addl	$510, %eax                      # imm = 0x1FE
+	addl	$510, %eax
 	testl	%ecx, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$8, %eax
 	retq
+

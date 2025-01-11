@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	lui	a4, 524304
@@ -14,3 +14,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	addw	a1, a1, a3
 	slt	a0, a1, a0
 	ret
+

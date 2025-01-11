@@ -1,5 +1,4 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	cmp	w2, #0
 	and	w8, w0, #0xffff
 	cset	w9, ne
@@ -7,18 +6,16 @@ func0000000000000181:                   // @func0000000000000181
 	and	w9, w1, w9
 	csel	w0, wzr, w9, ne
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	cmp	w2, #1
 	cset	w8, eq
 	tst	w0, #0xffff
 	and	w8, w1, w8
 	csel	w0, wzr, w8, ne
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	cmp	w2, #2816
 	and	w8, w0, #0xffff
 	cset	w9, eq
@@ -26,9 +23,8 @@ func000000000000002c:                   // @func000000000000002c
 	and	w9, w1, w9
 	csel	w0, wzr, w9, eq
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	cmp	w2, #0
 	and	w8, w0, #0xffff
 	cset	w9, ne
@@ -36,9 +32,8 @@ func000000000000018c:                   // @func000000000000018c
 	and	w9, w9, w1
 	csel	w0, wzr, w9, eq
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	cmp	w2, #3
 	and	w8, w1, #0xffff
 	cset	w9, lo
@@ -46,9 +41,8 @@ func0000000000000084:                   // @func0000000000000084
 	and	w9, w0, w9
 	csel	w0, wzr, w9, hs
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	cmp	w2, #5
 	and	w8, w1, #0xffff
 	cset	w9, eq
@@ -56,9 +50,8 @@ func0000000000000024:                   // @func0000000000000024
 	and	w9, w9, w0
 	csel	w0, wzr, w9, hs
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	sxth	w8, w0
 	cmp	w2, #2048
 	cset	w9, eq
@@ -66,9 +59,8 @@ func000000000000002a:                   // @func000000000000002a
 	cmp	w8, #0
 	csel	w0, wzr, w9, lt
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	cmn	w2, #3
 	and	w8, w0, #0xffff
 	cset	w9, lo
@@ -76,4 +68,4 @@ func000000000000008c:                   // @func000000000000008c
 	and	w9, w9, w1
 	csel	w0, wzr, w9, eq
 	ret
-                                        // -- End function
+

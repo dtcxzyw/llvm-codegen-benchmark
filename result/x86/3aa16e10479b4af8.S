@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	xorl	%eax, %eax
 	testb	$1, %dil
 	movl	$20, %ecx
@@ -7,3 +7,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$4, %eax
 	cmoveq	%rcx, %rax
 	retq
+

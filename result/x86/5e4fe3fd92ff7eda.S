@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	movq	%rdi, %rax
 	movl	%eax, %ecx
 	andl	$7, %ecx
@@ -7,7 +7,8 @@ func000000000000001c:                   # @func000000000000001c
 	subq	%rdx, %rax
 	shlq	$5, %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	movl	%edi, %eax
 	andl	$7, %eax
 	movl	$8, %ecx
@@ -15,7 +16,8 @@ func0000000000000015:                   # @func0000000000000015
 	subq	%rcx, %rdi
 	leaq	(,%rdi,4), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	movq	%rdi, %rax
 	movl	%eax, %ecx
 	andl	$7, %ecx
@@ -24,7 +26,8 @@ func000000000000001f:                   # @func000000000000001f
 	subq	%rdx, %rax
 	shlq	$4, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movl	%edi, %eax
 	andl	$7, %eax
 	movl	$8, %ecx
@@ -32,7 +35,8 @@ func0000000000000014:                   # @func0000000000000014
 	subq	%rcx, %rdi
 	leaq	(,%rdi,4), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movl	%edi, %eax
 	andl	$31, %eax
 	movl	$32, %ecx
@@ -40,7 +44,8 @@ func0000000000000018:                   # @func0000000000000018
 	subq	%rcx, %rdi
 	leaq	(%rdi,%rdi), %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	movl	%edi, %eax
 	andl	$3, %eax
 	movl	$4, %ecx
@@ -48,3 +53,4 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rcx, %rdi
 	leaq	(%rdi,%rdi), %rax
 	retq
+

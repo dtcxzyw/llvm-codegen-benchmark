@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	andi	a1, a1, 255
 	andi	a0, a0, 255
 	sltiu	a2, a0, 5
@@ -6,7 +6,8 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a2
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	andi	a1, a1, 255
 	andi	a0, a0, 255
 	xor	a1, a1, a0
@@ -14,7 +15,8 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	andi	a1, a1, 255
 	andi	a0, a0, 255
 	xor	a1, a1, a0
@@ -23,7 +25,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	slli	a2, a0, 56
 	andi	a0, a0, 255
 	andi	a1, a1, 255
@@ -32,3 +35,4 @@ func000000000000010a:                   # @func000000000000010a
 	sgtz	a1, a2
 	and	a0, a0, a1
 	ret
+

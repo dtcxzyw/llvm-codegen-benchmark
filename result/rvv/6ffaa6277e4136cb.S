@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	li	a0, 32
@@ -8,7 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
 	li	a0, 1
@@ -18,7 +19,8 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 6
 	li	a0, 120
@@ -29,7 +31,8 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 56
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	li	a0, -1
@@ -38,7 +41,8 @@ func000000000000000b:                   # @func000000000000000b
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	li	a0, -1
@@ -47,7 +51,8 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	li	a0, -1
@@ -56,7 +61,8 @@ func0000000000000005:                   # @func0000000000000005
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	li	a0, -1
@@ -65,3 +71,4 @@ func0000000000000008:                   # @func0000000000000008
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
 	ret
+

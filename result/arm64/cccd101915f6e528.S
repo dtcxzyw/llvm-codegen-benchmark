@@ -1,22 +1,19 @@
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+func000000000000000d:
 	orr	x8, x1, x2
 	orr	x8, x8, x0
 	neg	x0, x8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	orr	x8, x1, x2
-	mov	x9, #4611686018427387902        // =0x3ffffffffffffffe
+	mov	x9, #4611686018427387902
 	orr	x8, x8, x0
 	sub	x0, x9, x8
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	orr	x8, x1, x2
 	orr	x8, x8, x0
 	neg	x0, x8
 	ret
-                                        // -- End function
+

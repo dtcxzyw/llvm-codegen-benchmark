@@ -1,5 +1,5 @@
-func0000000000000042:                   # @func0000000000000042
-	cmpl	$1936220465, %edi               # imm = 0x73686131
+func0000000000000042:
+	cmpl	$1936220465, %edi
 	sete	%al
 	testl	%edi, %edi
 	sete	%cl
@@ -7,3 +7,4 @@ func0000000000000042:                   # @func0000000000000042
 	movb	$2, %al
 	subb	%cl, %al
 	retq
+

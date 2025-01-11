@@ -1,4 +1,4 @@
-func000000000000019d:                   # @func000000000000019d
+func000000000000019d:
 	li	a0, 1570
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v10, 0
@@ -10,7 +10,8 @@ func000000000000019d:                   # @func000000000000019d
 	vmv.v.x	v11, a0
 	vwmulsu.vv	v8, v11, v10
 	ret
-func0000000000000303:                   # @func0000000000000303
+
+func0000000000000303:
 	lui	a0, 1048509
 	addi	a0, a0, 432
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -21,7 +22,8 @@ func0000000000000303:                   # @func0000000000000303
 	li	a0, 24
 	vwmulu.vx	v8, v10, a0
 	ret
-func0000000000000307:                   # @func0000000000000307
+
+func0000000000000307:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v0, v9, 0
 	vmv.v.i	v9, 0
@@ -30,7 +32,8 @@ func0000000000000307:                   # @func0000000000000307
 	li	a0, 24
 	vwmulu.vx	v8, v10, a0
 	ret
-func0000000000000203:                   # @func0000000000000203
+
+func0000000000000203:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vi	v0, v9, 2
 	vmv.v.i	v9, 0
@@ -39,3 +42,4 @@ func0000000000000203:                   # @func0000000000000203
 	li	a0, 88
 	vwmulu.vx	v8, v10, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	cmpl	$1, %edx
 	setne	%al
 	orb	%sil, %al
@@ -7,7 +7,8 @@ func0000000000000061:                   # @func0000000000000061
 	subl	%eax, %edi
 	leal	2(%rdi), %eax
 	retq
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	testl	%edx, %edx
 	setne	%al
 	orb	%sil, %al
@@ -15,7 +16,8 @@ func0000000000000063:                   # @func0000000000000063
 	andl	$1, %eax
 	leal	1(%rax,%rdi), %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	testl	%edx, %edx
 	sete	%al
 	orb	%sil, %al
@@ -24,7 +26,8 @@ func0000000000000009:                   # @func0000000000000009
 	subl	%eax, %edi
 	leal	-28(%rdi), %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	cmpl	$14, %edx
 	sete	%al
 	orb	%sil, %al
@@ -33,7 +36,8 @@ func0000000000000008:                   # @func0000000000000008
 	shll	$8, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	movl	$100, %ecx
@@ -42,7 +46,8 @@ func000000000000000b:                   # @func000000000000000b
 	cmovnel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	sete	%al
@@ -52,3 +57,4 @@ func0000000000000060:                   # @func0000000000000060
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

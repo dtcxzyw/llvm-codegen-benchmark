@@ -1,12 +1,13 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
-	cmpq	$65537, %rcx                    # imm = 0x10001
+	cmpq	$65537, %rcx
 	setge	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -14,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$58, %rcx
 	setne	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -22,7 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rcx, %rcx
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -30,7 +33,8 @@ func0000000000000081:                   # @func0000000000000081
 	testq	%rcx, %rcx
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -38,7 +42,8 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	$8, %rcx
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -46,7 +51,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	$3, %rcx
 	setae	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -54,14 +60,16 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rcx, %rcx
 	setne	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	movslq	%edx, %rcx
 	imulq	%rdi, %rcx
 	movslq	%esi, %rax
 	imulq	%rcx, %rax
 	shrq	$63, %rax
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	testl	%edx, %edx
 	sete	%al
 	testq	%rdi, %rdi
@@ -71,7 +79,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -79,7 +88,8 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rcx, %rcx
 	setg	%al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
@@ -87,11 +97,13 @@ func000000000000008c:                   # @func000000000000008c
 	testq	%rcx, %rcx
 	setne	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	movslq	%edx, %rax
 	imulq	%rdi, %rax
 	movslq	%esi, %rcx
 	imulq	%rax, %rcx
-	cmpq	$2147483647, %rcx               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rcx
 	setge	%al
 	retq
+

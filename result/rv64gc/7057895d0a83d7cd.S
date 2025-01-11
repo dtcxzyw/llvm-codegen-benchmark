@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	seqz	a2, a1
 	lui	a3, 24390
 	add	a4, a1, a2
@@ -7,6 +7,7 @@ func000000000000014a:                   # @func000000000000014a
 	mul	a0, a0, a4
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slt	a0, a0, a1
 	ret
+

@@ -1,5 +1,4 @@
-func00000000000007e1:                   // @func00000000000007e1
-// %bb.0:                               // %entry
+func00000000000007e1:
 	mov	w8, w2
 	mov	w9, w1
 	mul	x8, x0, x8
@@ -7,9 +6,8 @@ func00000000000007e1:                   // @func00000000000007e1
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000003e1:                   // @func00000000000003e1
-// %bb.0:                               // %entry
+
+func00000000000003e1:
 	mov	w8, w2
 	mov	w9, w1
 	mul	x8, x0, x8
@@ -17,27 +15,24 @@ func00000000000003e1:                   // @func00000000000003e1
 	cmp	x8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000007f8:                   // @func00000000000007f8
-// %bb.0:                               // %entry
+
+func00000000000007f8:
 	mov	w8, w2
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
 	cmp	x8, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000003f8:                   // @func00000000000003f8
-// %bb.0:                               // %entry
+
+func00000000000003f8:
 	mov	w8, w2
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
 	cmp	x8, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000148:                   // @func0000000000000148
-// %bb.0:                               // %entry
+
+func0000000000000148:
 	mov	w8, w2
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
@@ -45,9 +40,8 @@ func0000000000000148:                   // @func0000000000000148
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000005f8:                   // @func00000000000005f8
-// %bb.0:                               // %entry
+
+func00000000000005f8:
 	mov	w8, w2
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
@@ -55,9 +49,8 @@ func00000000000005f8:                   // @func00000000000005f8
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func00000000000001f8:                   // @func00000000000001f8
-// %bb.0:                               // %entry
+
+func00000000000001f8:
 	mov	w8, w2
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
@@ -65,4 +58,4 @@ func00000000000001f8:                   // @func00000000000001f8
 	cmp	x8, #0
 	cset	w0, ne
 	ret
-                                        // -- End function
+

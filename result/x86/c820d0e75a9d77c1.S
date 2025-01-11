@@ -1,4 +1,4 @@
-func000000000000042a:                   # @func000000000000042a
+func000000000000042a:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -8,7 +8,8 @@ func000000000000042a:                   # @func000000000000042a
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -18,3 +19,4 @@ func000000000000042c:                   # @func000000000000042c
 	sete	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	andi	a1, a1, 1
 	addi	a2, a2, -1
 	bseti	a3, zero, 63
@@ -8,3 +8,4 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
+

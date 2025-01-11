@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000021:                   # @func0000000000000021
+	.long	7
+func0000000000000021:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm2
@@ -12,3 +12,4 @@ func0000000000000021:                   # @func0000000000000021
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	snez	a2, a2
@@ -7,7 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	li	a3, 2
@@ -18,7 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	li	a3, -10
@@ -29,7 +31,8 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	li	a3, 8
@@ -40,3 +43,4 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

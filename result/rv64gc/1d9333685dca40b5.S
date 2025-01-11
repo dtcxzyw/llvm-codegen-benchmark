@@ -1,22 +1,24 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	andi	a2, a2, 1
 	sext.w	a0, a0
 	bnez	a2, .LBB0_2
 	neg	a1, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a2, a2, 1
 	sext.w	a0, a0
 	bnez	a2, .LBB1_2
 	neg	a1, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andi	a2, a2, 1
 	sext.w	a0, a0
 	bnez	a2, .LBB2_2
@@ -31,7 +33,8 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	andi	a2, a2, 1
 	sext.w	a0, a0
 	bnez	a2, .LBB3_2
@@ -46,3 +49,4 @@ func000000000000002b:                   # @func000000000000002b
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+

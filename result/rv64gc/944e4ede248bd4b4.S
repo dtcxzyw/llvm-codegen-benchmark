@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	0x4197d78400000000              # double 1.0E+8
+	.quad	0x4197d78400000000
 .LCPI0_1:
-	.quad	0x41cdcd6500000000              # double 1.0E+9
+	.quad	0x41cdcd6500000000
 .LCPI0_2:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3ff0000000000000
+func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, %hi(.LCPI0_2)
@@ -18,3 +18,4 @@ func0000000000000000:                   # @func0000000000000000
 	fmul.d	fa5, fa0, fa5
 	fdiv.d	fa0, fa5, fa4
 	ret
+

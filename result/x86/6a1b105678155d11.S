@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	notl	%edx
 	xorl	%eax, %eax
 	testb	$3, %dl
@@ -9,3 +9,4 @@ func0000000000000421:                   # @func0000000000000421
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
+

@@ -1,13 +1,14 @@
-func0000000000000108:                   # @func0000000000000108
-	addl	$-2100, %esi                    # imm = 0xF7CC
+func0000000000000108:
+	addl	$-2100, %esi
 	movzwl	%si, %eax
-	cmpl	$900, %eax                      # imm = 0x384
+	cmpl	$900, %eax
 	setb	%cl
 	cmpw	$100, %di
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	addl	$-48, %esi
 	cmpw	$10, %si
 	setb	%cl
@@ -15,7 +16,8 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000908:                   # @func0000000000000908
+
+func0000000000000908:
 	addl	$-97, %esi
 	cmpw	$6, %si
 	setb	%cl
@@ -23,7 +25,8 @@ func0000000000000908:                   # @func0000000000000908
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000902:                   # @func0000000000000902
+
+func0000000000000902:
 	addl	$-21, %esi
 	cmpw	$-5, %si
 	setb	%cl
@@ -31,7 +34,8 @@ func0000000000000902:                   # @func0000000000000902
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	addl	$-7, %esi
 	cmpw	$-2, %si
 	setb	%cl
@@ -39,7 +43,8 @@ func0000000000000048:                   # @func0000000000000048
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000848:                   # @func0000000000000848
+
+func0000000000000848:
 	addl	$-242, %esi
 	cmpw	$-4, %si
 	setb	%cl
@@ -48,3 +53,4 @@ func0000000000000848:                   # @func0000000000000848
 	sete	%al
 	orb	%cl, %al
 	retq
+

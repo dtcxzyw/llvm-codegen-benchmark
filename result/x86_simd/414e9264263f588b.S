@@ -1,4 +1,4 @@
-func0000000000001421:                   # @func0000000000001421
+func0000000000001421:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -50,7 +50,8 @@ func0000000000001421:                   # @func0000000000001421
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000001401:                   # @func0000000000001401
+
+func0000000000001401:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -102,7 +103,8 @@ func0000000000001401:                   # @func0000000000001401
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000140a:                   # @func000000000000140a
+
+func000000000000140a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -155,7 +157,8 @@ func000000000000140a:                   # @func000000000000140a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000142a:                   # @func000000000000142a
+
+func000000000000142a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -208,10 +211,11 @@ func000000000000142a:                   # @func000000000000142a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000001821:                   # @func0000000000001821
+
+func0000000000001821:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm1, %xmm4
@@ -261,7 +265,8 @@ func0000000000001821:                   # @func0000000000001821
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000182a:                   # @func000000000000182a
+
+func000000000000182a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -316,3 +321,4 @@ func000000000000182a:                   # @func000000000000182a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

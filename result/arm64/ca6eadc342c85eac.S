@@ -1,5 +1,4 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #8
@@ -8,9 +7,8 @@ func0000000000000181:                   // @func0000000000000181
 	cset	w9, eq
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #22
@@ -19,9 +17,8 @@ func000000000000018c:                   // @func000000000000018c
 	cset	w9, ne
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000294:                   // @func0000000000000294
-// %bb.0:                               // %entry
+
+func0000000000000294:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #3
@@ -30,9 +27,8 @@ func0000000000000294:                   // @func0000000000000294
 	cset	w9, lo
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #47
@@ -41,9 +37,8 @@ func0000000000000021:                   // @func0000000000000021
 	cset	w9, eq
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #1
@@ -52,9 +47,8 @@ func000000000000002c:                   // @func000000000000002c
 	cset	w9, ne
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
+
+func00000000000000cc:
 	sxtb	w8, w1
 	cmp	w8, #0
 	cset	w8, lt
@@ -62,9 +56,8 @@ func00000000000000cc:                   // @func00000000000000cc
 	cset	w9, ne
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000018a:                   // @func000000000000018a
-// %bb.0:                               // %entry
+
+func000000000000018a:
 	sxtb	w8, w0
 	tst	w1, #0xff
 	cset	w9, ne
@@ -72,9 +65,8 @@ func000000000000018a:                   // @func000000000000018a
 	cset	w8, ge
 	eor	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	cmp	w8, #3
@@ -83,9 +75,8 @@ func0000000000000084:                   // @func0000000000000084
 	cset	w9, lo
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000154:                   // @func0000000000000154
-// %bb.0:                               // %entry
+
+func0000000000000154:
 	sxtb	w8, w1
 	and	w9, w0, #0xff
 	cmp	w8, #4
@@ -94,9 +85,8 @@ func0000000000000154:                   // @func0000000000000154
 	cset	w9, lo
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func00000000000000c6:                   // @func00000000000000c6
-// %bb.0:                               // %entry
+
+func00000000000000c6:
 	sxtb	w8, w1
 	sxtb	w9, w0
 	cmp	w8, #53
@@ -105,9 +95,8 @@ func00000000000000c6:                   // @func00000000000000c6
 	cset	w9, lt
 	eor	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	and	w8, w0, #0xff
 	tst	w1, #0xff
 	cset	w9, eq
@@ -115,4 +104,4 @@ func0000000000000024:                   // @func0000000000000024
 	cset	w8, lo
 	eor	w0, w8, w9
 	ret
-                                        // -- End function
+

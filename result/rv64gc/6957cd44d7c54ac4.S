@@ -1,11 +1,12 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	andi	a1, a1, 31
 	addi	a1, a1, -10
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	li	a2, 1
 	slli	a2, a2, 11
 	and	a1, a1, a2
@@ -13,14 +14,16 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	li	a2, 1
 	slli	a2, a2, 49
 	and	a1, a1, a2
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	lui	a2, 1024
 	addiw	a2, a2, 1
 	slli	a2, a2, 12
@@ -30,3 +33,4 @@ func0000000000000181:                   # @func0000000000000181
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
+

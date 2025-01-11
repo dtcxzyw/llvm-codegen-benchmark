@@ -1,5 +1,5 @@
-func0000000000000061:                   # @func0000000000000061
-	imull	$6400, %esi, %eax               # imm = 0x1900
+func0000000000000061:
+	imull	$6400, %esi, %eax
 	cmpl	$2, %eax
 	movl	$1, %ecx
 	cmovgel	%eax, %ecx
@@ -7,3 +7,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	%ecx, %edi
 	sete	%al
 	retq
+

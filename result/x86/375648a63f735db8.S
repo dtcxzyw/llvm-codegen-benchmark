@@ -1,4 +1,4 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	movq	%rdi, %rax
 	shrq	%rax
 	cmpq	%rsi, %rax
@@ -7,7 +7,8 @@ func0000000000000108:                   # @func0000000000000108
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	shrq	$32, %rdi
 	cmpq	%rsi, %rdi
 	setne	%cl
@@ -15,3 +16,4 @@ func0000000000000308:                   # @func0000000000000308
 	sete	%al
 	orb	%cl, %al
 	retq
+

@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	2635249153387078803             # 0x2492492492492493
-func00000000000000a1:                   # @func00000000000000a1
+	.quad	2635249153387078803
+func00000000000000a1:
 	addi	a1, a1, 1
 	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	slli	a0, a0, 3
@@ -15,13 +15,14 @@ func00000000000000a1:                   # @func00000000000000a1
 	srli	a0, a0, 2
 	addi	a0, a0, -1
 	ret
+
 .LCPI1_0:
-	.quad	2635249153387078803             # 0x2492492492492493
-func00000000000000b1:                   # @func00000000000000b1
+	.quad	2635249153387078803
+func00000000000000b1:
 	addi	a1, a1, 1
 	bltu	a1, a0, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	slli	a0, a0, 3
@@ -32,3 +33,4 @@ func00000000000000b1:                   # @func00000000000000b1
 	srli	a0, a0, 2
 	addi	a0, a0, -1
 	ret
+

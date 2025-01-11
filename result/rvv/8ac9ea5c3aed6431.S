@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	lui	a0, 596523
 	addi	a0, a0, 965
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -20,3 +20,4 @@ func0000000000000002:                   # @func0000000000000002
 	vsrl.vi	v9, v8, 15
 	vadd.vv	v8, v8, v9
 	ret
+

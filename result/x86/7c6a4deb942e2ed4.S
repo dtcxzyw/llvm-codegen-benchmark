@@ -1,14 +1,16 @@
-func0000000000000100:                   # @func0000000000000100
-	movl	$4234967296, %ecx               # imm = 0xFC6C7900
+func0000000000000100:
+	movl	$4234967296, %ecx
 	imull	%edx, %ecx
-	imull	$-1000000, %edi, %eax           # imm = 0xFFF0BDC0
+	imull	$-1000000, %edi, %eax
 	addl	%esi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000154:                   # @func0000000000000154
-	movl	$4291367296, %ecx               # imm = 0xFFC91180
+
+func0000000000000154:
+	movl	$4291367296, %ecx
 	imull	%edx, %ecx
-	imull	$-60000, %esi, %eax             # imm = 0xFFFF15A0
+	imull	$-60000, %esi, %eax
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
+

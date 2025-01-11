@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	shrl	$6, %esi
 	andl	$63, %esi
 	decl	%esi
@@ -6,7 +6,8 @@ func0000000000000026:                   # @func0000000000000026
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	shrl	$16, %esi
 	movzbl	%sil, %eax
 	decl	%eax
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	shrl	$23, %esi
 	movzbl	%sil, %eax
 	addl	$-127, %eax
@@ -22,7 +24,8 @@ func000000000000002a:                   # @func000000000000002a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	shrl	$16, %esi
 	movzbl	%sil, %eax
 	addl	$-127, %eax
@@ -30,7 +33,8 @@ func000000000000002b:                   # @func000000000000002b
 	cmpq	%rax, %rdi
 	setge	%al
 	retq
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	shrl	$16, %esi
 	movzbl	%sil, %eax
 	addl	$-127, %eax
@@ -38,3 +42,4 @@ func0000000000000027:                   # @func0000000000000027
 	cmpq	%rax, %rdi
 	setle	%al
 	retq
+

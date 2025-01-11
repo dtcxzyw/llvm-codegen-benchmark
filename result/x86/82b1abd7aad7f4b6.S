@@ -1,6 +1,6 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	movswl	%si, %eax
-	imull	$26215, %eax, %eax              # imm = 0x6667
+	imull	$26215, %eax, %eax
 	movl	%eax, %ecx
 	sarl	$17, %ecx
 	shrl	$31, %eax
@@ -8,9 +8,10 @@ func0000000000000004:                   # @func0000000000000004
 	cwtl
 	addl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	movswl	%si, %eax
-	imull	$26215, %eax, %eax              # imm = 0x6667
+	imull	$26215, %eax, %eax
 	movl	%eax, %ecx
 	sarl	$18, %ecx
 	shrl	$31, %eax
@@ -18,3 +19,4 @@ func0000000000000005:                   # @func0000000000000005
 	cwtl
 	addl	%edi, %eax
 	retq
+

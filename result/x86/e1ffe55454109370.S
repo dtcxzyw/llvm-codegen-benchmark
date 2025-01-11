@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	shrq	%rdx
 	cmpq	%rdx, %rdi
 	setne	%cl
@@ -6,11 +6,13 @@ func000000000000002c:                   # @func000000000000002c
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	shrq	$2, %rdx
 	cmpq	%rdx, %rdi
 	setg	%cl
-	cmpq	$2001, %rsi                     # imm = 0x7D1
+	cmpq	$2001, %rsi
 	setge	%al
 	andb	%cl, %al
 	retq
+

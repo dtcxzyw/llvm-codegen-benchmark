@@ -1,11 +1,12 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	andi	a0, a0, 7
 	sh1add	a0, a0, a0
 	slli	a0, a0, 1
 	addi	a0, a0, 7
 	srli	a0, a0, 3
 	ret
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	lui	a1, 2032
 	addiw	a1, a1, 127
 	slli	a2, a1, 32
@@ -19,11 +20,12 @@ func000000000000001c:                   # @func000000000000001c
 	add	a0, a0, a1
 	srli	a0, a0, 8
 	ret
+
 .LCPI2_0:
-	.quad	-1225172306242737336            # 0xeeff504759c16b48
+	.quad	-1225172306242737336
 .LCPI2_1:
-	.quad	-4650441984963589867            # 0xbf764fa75daec915
-func0000000000000000:                   # @func0000000000000000
+	.quad	-4650441984963589867
+func0000000000000000:
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
 	lui	a2, %hi(.LCPI2_1)
@@ -33,3 +35,4 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	srli	a0, a0, 47
 	ret
+

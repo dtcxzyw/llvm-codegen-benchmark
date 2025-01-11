@@ -1,18 +1,15 @@
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+func0000000000000014:
+	mov	w8, #10
 	madd	w0, w1, w8, w0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	w8, #64536                      // =0xfc18
+
+func0000000000000000:
+	mov	w8, #64536
 	madd	w0, w1, w8, w0
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	mov	w8, #25354                      // =0x630a
+
+func0000000000000028:
+	mov	w8, #25354
 	madd	w0, w1, w8, w0
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000124:                   # @func0000000000000124
+func0000000000000124:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -8,7 +8,8 @@ func0000000000000124:                   # @func0000000000000124
 	mv	a1, a0
 	bltu	a2, a0, .LBB0_2
 	mv	a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	not	a0, a0
 	sltu	a0, a0, a1
 	ret
+

@@ -1,22 +1,19 @@
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+func0000000000000022:
 	fmov	d2, #1.00000000
 	fminnm	d1, d1, d2
 	fminnm	d0, d0, d2
 	fsub	d0, d0, d1
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	movi	d2, #0000000000000000
 	fmov	d3, #1.00000000
 	fminnm	d1, d1, d3
 	fmaxnm	d0, d0, d2
 	fsub	d0, d0, d1
 	ret
-                                        // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
+
+func00000000000000cc:
 	movi	d2, #0000000000000000
 	fcmp	d1, #0.0
 	fcsel	d1, d1, d2, ge
@@ -24,9 +21,8 @@ func00000000000000cc:                   // @func00000000000000cc
 	fcsel	d0, d0, d2, ge
 	fsub	d0, d0, d1
 	ret
-                                        // -- End function
-func00000000000000ee:                   // @func00000000000000ee
-// %bb.0:                               // %entry
+
+func00000000000000ee:
 	movi	d2, #0000000000000000
 	fcmp	d1, d1
 	fcsel	d1, d1, d2, vc
@@ -34,4 +30,4 @@ func00000000000000ee:                   // @func00000000000000ee
 	fcsel	d0, d0, d2, vc
 	fsub	d0, d0, d1
 	ret
-                                        // -- End function
+

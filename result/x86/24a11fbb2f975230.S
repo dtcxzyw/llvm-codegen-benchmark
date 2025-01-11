@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testb	$1, %dl
 	cmoveq	%rsi, %rdi
 	testq	%rsi, %rsi
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	testq	%rdi, %rdi
 	sete	%al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	testq	%rsi, %rsi
 	cmoveq	%rsi, %rdi
 	testb	$1, %dl
@@ -14,3 +15,4 @@ func000000000000018c:                   # @func000000000000018c
 	testq	%rdi, %rdi
 	setne	%al
 	retq
+

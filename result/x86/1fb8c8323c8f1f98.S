@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subq	%rsi, %rdi
 	shrq	$4, %rdi
 	leal	8(%rdi), %ecx
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$4, %eax
 	cmovgel	%ecx, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	cmpl	$3, %edi
@@ -14,7 +15,8 @@ func0000000000000022:                   # @func0000000000000022
 	cmovgel	%edi, %eax
 	decl	%eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	decl	%edi
@@ -22,7 +24,8 @@ func0000000000000020:                   # @func0000000000000020
 	sarl	$31, %eax
 	andnl	%edi, %eax, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	decl	%edi
@@ -30,7 +33,8 @@ func0000000000000021:                   # @func0000000000000021
 	sarl	$31, %eax
 	andnl	%edi, %eax, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	subq	%rsi, %rdi
 	shrq	$3, %rdi
 	decl	%edi
@@ -38,3 +42,4 @@ func0000000000000001:                   # @func0000000000000001
 	sarl	$31, %eax
 	andnl	%edi, %eax, %eax
 	retq
+

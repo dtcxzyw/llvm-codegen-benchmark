@@ -1,38 +1,40 @@
 .LCPI0_0:
-	.quad	-9                              # 0xfffffffffffffff7
+	.quad	-9
 .LCPI0_1:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8
 .LCPI0_2:
-	.quad	8                               # 0x8
-func0000000000000002:                   # @func0000000000000002
+	.quad	8
+func0000000000000002:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	vpandq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	12                              # 0xc
+	.quad	12
 .LCPI1_1:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8
 .LCPI1_2:
-	.quad	32768                           # 0x8000
+	.quad	32768
 .LCPI1_3:
-	.quad	40                              # 0x28
-func0000000000000000:                   # @func0000000000000000
+	.quad	40
+func0000000000000000:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm1
-	vpbroadcastq	.LCPI1_2(%rip), %ymm0   # ymm0 = [32768,32768,32768,32768]
+	vpbroadcastq	.LCPI1_2(%rip), %ymm0
 	vpaddq	.LCPI1_3(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.quad	-2303591209400008704            # 0xe008000000000000
+	.quad	-2303591209400008704
 .LCPI2_1:
-	.quad	-4503599627370496               # 0xfff0000000000000
+	.quad	-4503599627370496
 .LCPI2_2:
-	.quad	4602678819172646912             # 0x3fe0000000000000
-func0000000000000004:                   # @func0000000000000004
+	.quad	4602678819172646912
+func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0
@@ -40,13 +42,14 @@ func0000000000000004:                   # @func0000000000000004
 	knotw	%k0, %k1
 	vpaddq	.LCPI2_2(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
 	retq
+
 .LCPI3_0:
-	.quad	7                               # 0x7
+	.quad	7
 .LCPI3_1:
-	.quad	34359738360                     # 0x7fffffff8
+	.quad	34359738360
 .LCPI3_2:
-	.quad	40                              # 0x28
-func000000000000000f:                   # @func000000000000000f
+	.quad	40
+func000000000000000f:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm0
@@ -54,3 +57,4 @@ func000000000000000f:                   # @func000000000000000f
 	knotw	%k0, %k1
 	vpaddq	.LCPI3_2(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
 	retq
+

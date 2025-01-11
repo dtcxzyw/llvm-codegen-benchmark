@@ -1,7 +1,7 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	andl	$32, %esi
 	movl	%edi, %eax
-	imulq	$138547333, %rax, %rax          # imm = 0x8421085
+	imulq	$138547333, %rax, %rax
 	shrq	$32, %rax
 	movl	%edi, %ecx
 	subl	%eax, %ecx
@@ -15,3 +15,4 @@ func000000000000002c:                   # @func000000000000002c
 	orl	%esi, %ecx
 	setne	%al
 	retq
+

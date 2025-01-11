@@ -1,4 +1,4 @@
-func00000000000001ba:                   # @func00000000000001ba
+func00000000000001ba:
 	lui	a2, 8
 	zext.h	a0, a0
 	addi	a3, a2, -129
@@ -8,7 +8,8 @@ func00000000000001ba:                   # @func00000000000001ba
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func00000000000001ff:                   # @func00000000000001ff
+
+func00000000000001ff:
 	slli	a1, a1, 48
 	lui	a2, 307760
 	mulhu	a1, a1, a2
@@ -19,7 +20,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	zext.h	a1, a1
 	lui	a2, 1048571
 	addi	a2, a2, 1399
@@ -31,7 +33,8 @@ func0000000000000055:                   # @func0000000000000055
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
-func00000000000000dd:                   # @func00000000000000dd
+
+func00000000000000dd:
 	zext.h	a1, a1
 	lui	a2, 1048570
 	addi	a2, a2, 460
@@ -43,3 +46,4 @@ func00000000000000dd:                   # @func00000000000000dd
 	lui	a1, 8224
 	addw	a0, a0, a1
 	ret
+

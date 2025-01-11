@@ -1,4 +1,4 @@
-func0000000000000381:                   # @func0000000000000381
+func0000000000000381:
 	sext.w	a1, a1
 	fmv.d.x	fa5, zero
 	addiw	a0, a0, 1
@@ -7,7 +7,8 @@ func0000000000000381:                   # @func0000000000000381
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	sext.w	a1, a1
 	fmv.d.x	fa5, zero
 	addiw	a0, a0, 1
@@ -16,3 +17,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
+

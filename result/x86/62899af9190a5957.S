@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	cmpl	%esi, %edi
 	cmovgel	%esi, %edi
 	testb	$1, %dl
@@ -6,3 +6,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	testl	%edi, %edi
 	setg	%al
 	retq
+

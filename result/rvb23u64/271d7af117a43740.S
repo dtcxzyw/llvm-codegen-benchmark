@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	andi	a1, a1, 1
 	lui	a2, 21
 	addi	a2, a2, 384
@@ -13,7 +13,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	addiw	a1, a1, 1092
 	sltu	a0, a0, a1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	andi	a1, a1, 1
 	lui	a2, 21
 	addi	a2, a2, 384
@@ -28,3 +29,4 @@ func00000000000000ac:                   # @func00000000000000ac
 	addiw	a1, a1, 1091
 	sltu	a0, a1, a0
 	ret
+

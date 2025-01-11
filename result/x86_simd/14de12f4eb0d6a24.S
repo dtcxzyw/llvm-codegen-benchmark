@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	vpsrlq	$59, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -6,7 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	vprorvd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vpsrlq	$59, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -14,3 +15,4 @@ func0000000000000019:                   # @func0000000000000019
 	vprorvd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
+

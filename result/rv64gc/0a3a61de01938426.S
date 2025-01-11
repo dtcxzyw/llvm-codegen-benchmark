@@ -1,4 +1,4 @@
-func0000000000000688:                   # @func0000000000000688
+func0000000000000688:
 	addi	a1, a0, -1
 	and	a1, a1, a0
 	sltiu	a0, a0, 3
@@ -6,7 +6,8 @@ func0000000000000688:                   # @func0000000000000688
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000684:                   # @func0000000000000684
+
+func0000000000000684:
 	addi	a1, a0, -1
 	lui	a2, 524288
 	and	a1, a1, a0
@@ -15,28 +16,32 @@ func0000000000000684:                   # @func0000000000000684
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000068a:                   # @func000000000000068a
+
+func000000000000068a:
 	addi	a1, a0, -1
 	and	a1, a1, a0
 	seqz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	addi	a1, a0, -1
 	and	a0, a0, a1
 	seqz	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000284:                   # @func0000000000000284
+
+func0000000000000284:
 	addi	a1, a0, -1
 	and	a1, a1, a0
 	seqz	a1, a1
 	sltiu	a0, a0, 9
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	lui	a1, 349525
 	lui	a2, 209715
 	lui	a3, 61681
@@ -70,7 +75,8 @@ func0000000000000024:                   # @func0000000000000024
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000428:                   # @func0000000000000428
+
+func0000000000000428:
 	addi	a1, a0, -1
 	and	a1, a1, a0
 	sltiu	a0, a0, 4
@@ -78,7 +84,8 @@ func0000000000000428:                   # @func0000000000000428
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	addi	a1, a0, -1
 	slti	a2, a0, 0
 	xor	a0, a0, a1
@@ -86,7 +93,8 @@ func000000000000002a:                   # @func000000000000002a
 	not	a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000288:                   # @func0000000000000288
+
+func0000000000000288:
 	addi	a1, a0, -1
 	and	a1, a1, a0
 	sltiu	a0, a0, 512
@@ -94,3 +102,4 @@ func0000000000000288:                   # @func0000000000000288
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

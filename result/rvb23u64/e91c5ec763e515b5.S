@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	andi	a1, a1, 1
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 26
@@ -9,3 +9,4 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
+

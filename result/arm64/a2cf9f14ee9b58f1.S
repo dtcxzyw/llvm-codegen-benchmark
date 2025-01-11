@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	fdiv	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
@@ -9,11 +8,10 @@ func0000000000000042:                   // @func0000000000000042
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000004b:                   // @func000000000000004b
-// %bb.0:                               // %entry
+
+func000000000000004b:
 	fdiv	s0, s0, s1
-	mov	w8, #1132396544                 // =0x437f0000
+	mov	w8, #1132396544
 	fmov	s1, w8
 	fcmp	s0, s1
 	fcsel	s0, s1, s0, gt
@@ -22,13 +20,12 @@ func000000000000004b:                   // @func000000000000004b
 	cset	w8, le
 	bic	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000004d:                   // @func000000000000004d
-// %bb.0:                               // %entry
+
+func000000000000004d:
 	fdiv	s0, s0, s1
-	mov	w8, #1132396544                 // =0x437f0000
+	mov	w8, #1132396544
 	fmov	s1, w8
-	mov	w8, #1132462080                 // =0x43800000
+	mov	w8, #1132462080
 	fcmp	s0, s1
 	fcsel	s0, s1, s0, gt
 	fmov	s1, w8
@@ -36,11 +33,10 @@ func000000000000004d:                   // @func000000000000004d
 	cset	w8, pl
 	bic	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	fdiv	s0, s0, s1
-	mov	w8, #65280                      // =0xff00
+	mov	w8, #65280
 	movk	w8, #18303, lsl #16
 	fmov	s1, w8
 	fcmp	s0, s1
@@ -51,9 +47,8 @@ func0000000000000044:                   // @func0000000000000044
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+
+func0000000000000048:
 	fdiv	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
@@ -63,4 +58,4 @@ func0000000000000048:                   // @func0000000000000048
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

@@ -1,22 +1,19 @@
-func000000000000001d:                   // @func000000000000001d
-// %bb.0:                               // %entry
+func000000000000001d:
 	and	w8, w0, #0xff
 	bfi	w8, w1, #8, #8
 	sub	w0, w8, #16
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	and	w8, w0, #0xff
 	bfi	w8, w1, #8, #8
 	add	w0, w8, #13
 	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+
+func0000000000000019:
 	ubfiz	w8, w1, #7, #8
 	and	w9, w0, #0xff
 	orr	w8, w8, w9
-	sub	w0, w8, #2, lsl #12             // =8192
+	sub	w0, w8, #2, lsl #12
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000078:                   # @func0000000000000078
+func0000000000000078:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -6,7 +6,8 @@ func0000000000000078:                   # @func0000000000000078
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000278:                   # @func0000000000000278
+
+func0000000000000278:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -14,7 +15,8 @@ func0000000000000278:                   # @func0000000000000278
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -22,7 +24,8 @@ func000000000000006c:                   # @func000000000000006c
 	cmpq	%rax, %rcx
 	setne	%al
 	retq
-func0000000000000274:                   # @func0000000000000274
+
+func0000000000000274:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -30,7 +33,8 @@ func0000000000000274:                   # @func0000000000000274
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func00000000000001f8:                   # @func00000000000001f8
+
+func00000000000001f8:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -38,7 +42,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -46,7 +51,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func00000000000002f8:                   # @func00000000000002f8
+
+func00000000000002f8:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -54,7 +60,8 @@ func00000000000002f8:                   # @func00000000000002f8
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000178:                   # @func0000000000000178
+
+func0000000000000178:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -62,7 +69,8 @@ func0000000000000178:                   # @func0000000000000178
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func00000000000003f8:                   # @func00000000000003f8
+
+func00000000000003f8:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -70,7 +78,8 @@ func00000000000003f8:                   # @func00000000000003f8
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func00000000000002f5:                   # @func00000000000002f5
+
+func00000000000002f5:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -78,7 +87,8 @@ func00000000000002f5:                   # @func00000000000002f5
 	cmpq	%rax, %rcx
 	setbe	%al
 	retq
-func0000000000000378:                   # @func0000000000000378
+
+func0000000000000378:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -86,7 +96,8 @@ func0000000000000378:                   # @func0000000000000378
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000075:                   # @func0000000000000075
+
+func0000000000000075:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -94,7 +105,8 @@ func0000000000000075:                   # @func0000000000000075
 	cmpq	%rax, %rcx
 	setbe	%al
 	retq
-func0000000000000174:                   # @func0000000000000174
+
+func0000000000000174:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -102,7 +114,8 @@ func0000000000000174:                   # @func0000000000000174
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	movl	%edx, %eax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -110,3 +123,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
+

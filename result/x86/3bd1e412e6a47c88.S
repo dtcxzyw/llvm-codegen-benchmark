@@ -1,4 +1,4 @@
-func0000000000000924:                   # @func0000000000000924
+func0000000000000924:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setae	%cl
@@ -6,7 +6,8 @@ func0000000000000924:                   # @func0000000000000924
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000004cb:                   # @func00000000000004cb
+
+func00000000000004cb:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setge	%cl
@@ -14,7 +15,8 @@ func00000000000004cb:                   # @func00000000000004cb
 	setl	%al
 	andb	%cl, %al
 	retq
-func000000000000054b:                   # @func000000000000054b
+
+func000000000000054b:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setge	%cl
@@ -22,21 +24,24 @@ func000000000000054b:                   # @func000000000000054b
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	subl	%edx, %esi
 	setns	%cl
 	cmpl	%edi, %esi
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000547:                   # @func0000000000000547
+
+func0000000000000547:
 	subl	%edx, %esi
 	setns	%cl
 	cmpl	%edi, %esi
 	setle	%al
 	andb	%cl, %al
 	retq
-func00000000000004cc:                   # @func00000000000004cc
+
+func00000000000004cc:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setne	%cl
@@ -44,22 +49,25 @@ func00000000000004cc:                   # @func00000000000004cc
 	setle	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	subl	%edx, %esi
-	cmpl	$1000, %esi                     # imm = 0x3E8
+	cmpl	$1000, %esi
 	setb	%cl
 	cmpl	%edi, %esi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	subl	%edx, %esi
 	setns	%cl
 	cmpl	%edi, %esi
 	setl	%al
 	andb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+
+func000000000000016a:
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -67,10 +75,12 @@ func000000000000016a:                   # @func000000000000016a
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000004ea:                   # @func00000000000004ea
+
+func00000000000004ea:
 	subl	%edx, %esi
 	setns	%cl
 	cmpl	%edi, %esi
 	setle	%al
 	andb	%cl, %al
 	retq
+

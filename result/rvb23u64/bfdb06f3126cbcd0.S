@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000000a6:
 	addi	a2, a2, -48
 	andi	a2, a2, 255
 	add	a1, a1, a2
@@ -8,3 +8,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

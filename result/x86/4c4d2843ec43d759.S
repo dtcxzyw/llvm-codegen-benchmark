@@ -1,6 +1,6 @@
-func00000000000001a8:                   # @func00000000000001a8
+func00000000000001a8:
 	shrq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	leaq	1(%rax), %rcx
 	shrq	%rcx
@@ -9,3 +9,4 @@ func00000000000001a8:                   # @func00000000000001a8
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
+

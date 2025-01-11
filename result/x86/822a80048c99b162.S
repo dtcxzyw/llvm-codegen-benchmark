@@ -1,4 +1,4 @@
-func000000000000102c:                   # @func000000000000102c
+func000000000000102c:
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax
 	negl	%eax
@@ -7,3 +7,4 @@ func000000000000102c:                   # @func000000000000102c
 	sete	%al
 	orb	%cl, %al
 	retq
+

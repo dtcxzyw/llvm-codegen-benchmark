@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	63(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -14,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%eax, %edi
 	movslq	%edi, %rax
 	retq
+

@@ -1,10 +1,12 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movl	%edi, %eax
 	andb	$1, %al
 	xorb	%sil, %al
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	%edi, %eax
 	andb	$1, %al
 	xorb	%sil, %al
 	retq
+

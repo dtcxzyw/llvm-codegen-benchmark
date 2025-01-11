@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001e:
 	lzcntl	%esi, %eax
 	negb	%al
 	movl	$1, %ecx
@@ -6,7 +6,8 @@ func000000000000001e:                   # @func000000000000001e
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	lzcntl	%esi, %eax
 	movb	$33, %cl
 	subb	%al, %cl
@@ -16,7 +17,8 @@ func000000000000000e:                   # @func000000000000000e
 	movl	$64, %eax
 	cmovel	%ecx, %eax
 	retq
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	lzcntl	%esi, %eax
 	movb	$33, %cl
 	subb	%al, %cl
@@ -26,3 +28,4 @@ func000000000000002e:                   # @func000000000000002e
 	movl	$64, %eax
 	cmovel	%ecx, %eax
 	retq
+

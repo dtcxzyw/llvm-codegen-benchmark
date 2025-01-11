@@ -1,35 +1,30 @@
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+func0000000000000030:
 	and	w8, w2, #0xfff
 	madd	w8, w1, w8, w1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	and	w8, w2, #0x1ff
 	madd	w8, w1, w8, w1
 	mul	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000003d:                   // @func000000000000003d
-// %bb.0:                               // %entry
+
+func000000000000003d:
 	and	w8, w2, #0x1ff
 	madd	w8, w1, w8, w1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000003c:                   // @func000000000000003c
-// %bb.0:                               // %entry
+
+func000000000000003c:
 	and	w8, w2, #0x1ff
 	madd	w8, w1, w8, w1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
+
+func000000000000003f:
 	and	w8, w2, #0x1ff
 	madd	w8, w1, w8, w1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	sll	a6, a3, a4
 	srli	a7, a2, 1
 	zext.w	a3, a4
@@ -16,7 +16,8 @@ func000000000000000e:                   # @func000000000000000e
 	or	a1, a1, a3
 	or	a0, a0, a4
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sll	a6, a3, a4
 	srli	a7, a2, 1
 	zext.w	a3, a4
@@ -34,7 +35,8 @@ func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a3
 	or	a0, a0, a4
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	sll	a6, a3, a4
 	srli	a7, a2, 1
 	zext.w	a3, a4
@@ -52,3 +54,4 @@ func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a3
 	or	a0, a0, a4
 	ret
+

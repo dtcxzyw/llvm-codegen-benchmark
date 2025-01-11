@@ -1,30 +1,25 @@
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+func000000000000000b:
 	rev	w8, w0
 	ubfiz	x0, x8, #1, #32
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	rev	w8, w0
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	rev	w8, w0
 	ubfiz	x0, x8, #3, #32
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	rev	w8, w0
 	ubfiz	x0, x8, #3, #32
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	rev	w8, w0
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
+

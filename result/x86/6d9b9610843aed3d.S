@@ -1,24 +1,29 @@
-func0000000000000068:                   # @func0000000000000068
+func0000000000000068:
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+
+func0000000000000064:
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func0000000000000069:                   # @func0000000000000069
+
+func0000000000000069:
 	cmpq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leaq	7(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax
@@ -30,3 +35,4 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
+

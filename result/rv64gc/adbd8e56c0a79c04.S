@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006a:
 	fmv.w.x	fa5, zero
 	lui	a1, 260096
 	fle.s	a2, fa5, fa1
@@ -9,3 +9,4 @@ func000000000000006a:                   # @func000000000000006a
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+

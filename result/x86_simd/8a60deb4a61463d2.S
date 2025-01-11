@@ -1,4 +1,4 @@
-func000000000000014a:                   # @func000000000000014a
+func000000000000014a:
 	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpminsq	%ymm1, %ymm0, %ymm0
@@ -7,9 +7,10 @@ func000000000000014a:                   # @func000000000000014a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	4611686018427387903             # 0x3fffffffffffffff
-func0000000000000158:                   # @func0000000000000158
+	.quad	4611686018427387903
+func0000000000000158:
 	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpminsq	%ymm1, %ymm0, %ymm0
@@ -17,3 +18,4 @@ func0000000000000158:                   # @func0000000000000158
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

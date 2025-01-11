@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	15                              # 0xf
-func000000000000008a:                   # @func000000000000008a
+	.long	15
+func000000000000008a:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$28, %xmm2, %xmm2
@@ -10,7 +10,8 @@ func000000000000008a:                   # @func000000000000008a
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm2
@@ -21,9 +22,10 @@ func0000000000000186:                   # @func0000000000000186
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	7                               # 0x7
-func000000000000000a:                   # @func000000000000000a
+	.long	7
+func000000000000000a:
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$29, %xmm2, %xmm2
@@ -33,9 +35,10 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	5                               # 0x5
-func000000000000010a:                   # @func000000000000010a
+	.long	5
+func000000000000010a:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -44,7 +47,8 @@ func000000000000010a:                   # @func000000000000010a
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000106:                   # @func0000000000000106
+
+func0000000000000106:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
@@ -54,7 +58,8 @@ func0000000000000106:                   # @func0000000000000106
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
@@ -64,3 +69,4 @@ func000000000000018a:                   # @func000000000000018a
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+

@@ -1,51 +1,43 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	lsr	x8, x1, #3
 	and	x8, x8, #0x3ffffff8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	ubfx	x8, x1, #2, #21
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	lsr	x8, x1, #2
 	and	x8, x8, #0x2020202020202020
 	add	x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	lsr	x8, x1, #4
 	add	x0, x0, w8, uxtw
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	lsr	x8, x1, #3
 	add	x0, x0, w8, uxtw
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	lsr	x8, x1, #16
 	add	x0, x0, w8, uxth
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	lsr	x8, x1, #1
 	and	x8, x8, #0x7fffffff8
 	add	x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	ubfx	x8, x1, #12, #10
 	add	x0, x0, x8
 	ret
-                                        // -- End function
+

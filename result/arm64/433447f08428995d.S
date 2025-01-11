@@ -1,5 +1,4 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	fmov	d2, #1.50000000
 	tst	w0, #0x1
 	fmul	d1, d1, d2
@@ -8,9 +7,8 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	fmov	d2, #0.50000000
 	tst	w0, #0x1
 	fmul	d1, d1, d2
@@ -19,10 +17,9 @@ func0000000000000005:                   // @func0000000000000005
 	fcmp	d1, d0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	x8, #4634766966517661696        // =0x4052000000000000
+
+func0000000000000003:
+	mov	x8, #4634766966517661696
 	tst	w0, #0x1
 	fmov	d2, x8
 	fmul	d1, d1, d2
@@ -31,13 +28,12 @@ func0000000000000003:                   // @func0000000000000003
 	fcmp	d1, d0
 	cset	w0, lt
 	ret
-                                        // -- End function
+
 .LCPI3_0:
-	.xword	0x3feccccccccccccd              // double 0.90000000000000002
+	.xword	0x3feccccccccccccd
 .LCPI3_1:
-	.xword	0x3fb999999999999a              // double 0.10000000000000001
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+	.xword	0x3fb999999999999a
+func0000000000000004:
 	adrp	x8, .LCPI3_0
 	tst	w0, #0x1
 	ldr	d2, [x8, :lo12:.LCPI3_0]
@@ -48,4 +44,4 @@ func0000000000000004:                   // @func0000000000000004
 	fcmp	d1, d0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

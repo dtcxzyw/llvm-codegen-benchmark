@@ -1,114 +1,114 @@
 .LCPI0_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
 .LCPI0_1:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
+	.short	2
 .LCPI0_2:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
 .LCPI0_3:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
 .LCPI0_4:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
 .LCPI0_5:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-func0000000000000058:                   # @func0000000000000058
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+func0000000000000058:
 	vpandd	.LCPI0_4(%rip){1to8}, %ymm0, %ymm1
 	vpcmpeqw	.LCPI0_1(%rip), %ymm1, %k0
 	vpandd	.LCPI0_5(%rip){1to8}, %ymm0, %ymm0
@@ -117,3 +117,4 @@ func0000000000000058:                   # @func0000000000000058
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

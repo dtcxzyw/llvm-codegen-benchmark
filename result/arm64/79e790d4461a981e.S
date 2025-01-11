@@ -1,14 +1,12 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	udiv	w8, w1, w0
 	cmp	w0, w1
 	csinc	w0, w8, wzr, ls
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	udiv	w8, w1, w0
 	cmp	w0, w1
 	csinc	w0, w8, wzr, ls
 	ret
-                                        // -- End function
+

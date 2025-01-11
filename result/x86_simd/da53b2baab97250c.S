@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
 	.zero	1
 	.zero	1
 	.zero	1
@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,128
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -27,3 +27,4 @@ func0000000000000031:                   # @func0000000000000031
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+

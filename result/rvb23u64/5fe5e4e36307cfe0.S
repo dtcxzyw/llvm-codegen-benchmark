@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	andi	a0, a0, 1
 	slli	a2, a2, 32
 	czero.nez	a2, a2, a0
@@ -7,3 +7,4 @@ func000000000000000a:                   # @func000000000000000a
 	not	a0, a0
 	srai	a0, a0, 63
 	ret
+

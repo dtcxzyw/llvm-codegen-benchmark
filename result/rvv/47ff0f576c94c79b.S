@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -14,3 +15,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
+

@@ -1,6 +1,5 @@
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
+func0000000000000058:
 	tst	w0, #0x3
 	cset	w0, ne
 	ret
-                                        // -- End function
+

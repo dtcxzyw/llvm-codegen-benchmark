@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	li	a6, 64
 	li	a3, 64
 	beqz	a1, .LBB0_2
@@ -43,9 +43,10 @@ func000000000000000f:                   # @func000000000000000f
 	add	a3, a3, a4
 	mul	a3, a1, a3
 	srli	a3, a3, 56
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	sub	a1, a6, a3
 	li	a2, 40
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

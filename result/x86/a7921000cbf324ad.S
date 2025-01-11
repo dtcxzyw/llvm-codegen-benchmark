@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	testl	%esi, %esi
 	setg	%cl
 	movb	$6, %al
@@ -9,7 +9,8 @@ func000000000000014c:                   # @func000000000000014c
 	movl	$1, %eax
 	cmovael	%ecx, %eax
 	retq
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	cmpl	$61, %esi
 	setb	%cl
 	movb	$61, %al
@@ -20,7 +21,8 @@ func000000000000028c:                   # @func000000000000028c
 	movl	$1, %eax
 	cmovael	%ecx, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	testl	%esi, %esi
 	sete	%cl
 	movb	$4, %al
@@ -31,3 +33,4 @@ func000000000000002c:                   # @func000000000000002c
 	movl	$1, %eax
 	cmovael	%ecx, %eax
 	retq
+

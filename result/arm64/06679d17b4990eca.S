@@ -1,11 +1,10 @@
-func00000000000007e1:                   // @func00000000000007e1
-// %bb.0:                               // %entry
+func00000000000007e1:
 	add	x8, x2, x1
-	mov	w9, #65520                      // =0xfff0
-	mov	x10, #-65521                    // =0xffffffffffff000f
+	mov	w9, #65520
+	mov	x10, #-65521
 	add	x8, x8, x9
 	add	x10, x0, x10
 	cmp	x8, x9
 	csinv	x0, x10, xzr, hi
 	ret
-                                        // -- End function
+

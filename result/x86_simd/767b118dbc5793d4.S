@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000005:                   # @func0000000000000005
+	.long	7
+func0000000000000005:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
-	movabsq	$5270498306774157605, %rsi      # imm = 0x4924924924924925
+	movabsq	$5270498306774157605, %rsi
 	movq	%rcx, %rax
 	imulq	%rsi
 	movq	%rdx, %rax
@@ -25,7 +25,7 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -48,9 +48,10 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+

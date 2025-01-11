@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	addiw	a1, a1, 8
 	lui	a2, 233017
 	addiw	a2, a2, -455
@@ -9,7 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	slliw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	addiw	a1, a1, 8
 	lui	a2, 233017
 	addiw	a2, a2, -455
@@ -20,3 +21,4 @@ func000000000000010a:                   # @func000000000000010a
 	slliw	a0, a0, 1
 	slt	a0, a0, a1
 	ret
+

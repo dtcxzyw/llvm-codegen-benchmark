@@ -1,6 +1,7 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	imulq	%rdx, %rsi
 	leaq	(%rdi,%rdi), %rax
 	cmpq	%rsi, %rax
 	cmovgeq	%rsi, %rax
 	retq
+

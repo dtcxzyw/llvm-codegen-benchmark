@@ -1,11 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
 	subw	a0, a0, a1
 	max	a0, a0, zero
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	sext.w	a2, a1
 	lui	a3, 688572
 	addiw	a3, a3, -363
@@ -20,3 +21,4 @@ func0000000000000002:                   # @func0000000000000002
 	addiw	a1, a3, 1262
 	max	a0, a0, a1
 	ret
+

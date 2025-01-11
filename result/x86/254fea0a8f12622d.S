@@ -1,6 +1,6 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	movzwl	%dx, %eax
-	cmpl	$2048, %eax                     # imm = 0x800
+	cmpl	$2048, %eax
 	movl	$3, %ecx
 	sbbq	$0, %rcx
 	testb	$1, %sil
@@ -8,3 +8,4 @@ func0000000000000010:                   # @func0000000000000010
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

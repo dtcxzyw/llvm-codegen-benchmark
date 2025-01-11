@@ -10,11 +10,12 @@
 	.zero	4,253
 .LCPI0_5:
 	.zero	4,2
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm2
-	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm1, %xmm2 # xmm2 = xmm2 | (xmm1 & mem)
+	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm1, %xmm2
 	vpord	.LCPI0_5(%rip){1to4}, %xmm2, %xmm0
 	vmovdqu8	%xmm2, %xmm0 {%k1}
 	retq
+

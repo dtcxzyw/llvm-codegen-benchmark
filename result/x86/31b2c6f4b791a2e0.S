@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
 	vminss	%xmm0, %xmm1, %xmm0
@@ -6,7 +6,8 @@ func0000000000000048:                   # @func0000000000000048
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	vmaxss	%xmm0, %xmm1, %xmm0
@@ -14,7 +15,8 @@ func0000000000000084:                   # @func0000000000000084
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	vmaxss	%xmm0, %xmm1, %xmm0
@@ -22,3 +24,4 @@ func0000000000000044:                   # @func0000000000000044
 	seta	%al
 	orb	%cl, %al
 	retq
+

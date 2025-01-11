@@ -1,4 +1,4 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000098:
 	sext.w	a1, a1
 	neg	a2, a0
 	slti	a1, a1, 0
@@ -6,7 +6,8 @@ func0000000000000098:                   # @func0000000000000098
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	sext.w	a1, a1
 	neg	a2, a0
 	slti	a1, a1, 0
@@ -14,7 +15,8 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	sext.w	a1, a1
 	neg	a2, a0
 	addi	a1, a1, -45
@@ -22,3 +24,4 @@ func0000000000000005:                   # @func0000000000000005
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

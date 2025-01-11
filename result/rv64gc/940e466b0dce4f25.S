@@ -1,4 +1,4 @@
-func0000000000000c2c:                   # @func0000000000000c2c
+func0000000000000c2c:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2
@@ -6,7 +6,8 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2
@@ -14,7 +15,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000c88:                   # @func0000000000000c88
+
+func0000000000000c88:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	sltiu	a0, a0, 128
@@ -22,14 +24,16 @@ func0000000000000c88:                   # @func0000000000000c88
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000d61:                   # @func0000000000000d61
+
+func0000000000000d61:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	slt	a1, a2, a1
@@ -37,7 +41,8 @@ func0000000000000d61:                   # @func0000000000000d61
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000434:                   # @func0000000000000434
+
+func0000000000000434:
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	srli	a0, a0, 32
@@ -46,9 +51,10 @@ func0000000000000434:                   # @func0000000000000434
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+
 .LCPI6_0:
-	.quad	922337203685477580              # 0xccccccccccccccc
-func000000000000054c:                   # @func000000000000054c
+	.quad	922337203685477580
+func000000000000054c:
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
 	sext.w	a1, a1
@@ -58,3 +64,4 @@ func000000000000054c:                   # @func000000000000054c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
+

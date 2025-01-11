@@ -1,18 +1,20 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	subq	%rdi, %rsi
 	sarq	$5, %rsi
 	cmpq	$1, %rsi
 	adcq	$0, %rsi
 	leaq	(,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	subq	%rdi, %rsi
 	sarq	$3, %rsi
 	cmpq	$1, %rsi
 	adcq	$0, %rsi
 	leaq	(,%rsi,8), %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	subq	%rdi, %rsi
 	sarq	$3, %rsi
 	cmpq	$36, %rsi
@@ -20,7 +22,8 @@ func0000000000000009:                   # @func0000000000000009
 	cmovaeq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	subq	%rdi, %rsi
 	sarq	$2, %rsi
 	cmpq	$9, %rsi
@@ -28,7 +31,8 @@ func000000000000000c:                   # @func000000000000000c
 	cmovaeq	%rsi, %rax
 	shlq	$2, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	subq	%rdi, %rsi
 	sarq	$3, %rsi
 	cmpq	$5, %rsi
@@ -36,7 +40,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmovaeq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	subq	%rdi, %rsi
 	sarq	$2, %rsi
 	cmpq	$9, %rsi
@@ -44,3 +49,4 @@ func000000000000000b:                   # @func000000000000000b
 	cmovaeq	%rsi, %rax
 	shlq	$2, %rax
 	retq
+

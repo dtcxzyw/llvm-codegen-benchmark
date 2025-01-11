@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_2
 	srli	a1, a0, 8
@@ -12,12 +12,13 @@ func0000000000000041:                   # @func0000000000000041
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sext.w	a0, a0
 	addi	a0, a0, -8
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
 	srli	a1, a0, 8
@@ -31,11 +32,12 @@ func0000000000000044:                   # @func0000000000000044
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	sext.w	a0, a0
 	sltiu	a0, a0, 8
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andi	a1, a1, 1
 	beqz	a1, .LBB2_2
 	srli	a1, a0, 8
@@ -49,11 +51,12 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	andi	a1, a1, 1
 	beqz	a1, .LBB3_2
 	srli	a1, a0, 8
@@ -67,11 +70,12 @@ func000000000000004c:                   # @func000000000000004c
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB3_2:                                # %entry
+.LBB3_2:
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a1, a1, 1
 	beqz	a1, .LBB4_2
 	srli	a1, a0, 8
@@ -85,11 +89,12 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB4_2:                                # %entry
+.LBB4_2:
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a1, a1, 1
 	beqz	a1, .LBB5_2
 	srli	a1, a0, 8
@@ -103,8 +108,9 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-.LBB5_2:                                # %entry
+.LBB5_2:
 	sext.w	a0, a0
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
+

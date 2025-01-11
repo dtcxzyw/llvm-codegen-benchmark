@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func0000000000000006:                   # @func0000000000000006
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func0000000000000006:
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrw	$1, %xmm2, %eax
@@ -103,24 +103,25 @@ func0000000000000006:                   # @func0000000000000006
 	vpinsrw	$7, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func0000000000000000:                   # @func0000000000000000
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func0000000000000000:
 	vpaddw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrw	$1, %xmm2, %eax
@@ -208,3 +209,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrw	$7, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

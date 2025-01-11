@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-func0000000000000001:                   # @func0000000000000001
-	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[7,6,5,4,3,2,1,0,15,14,13,12,11,10,9,8,23,22,21,20,19,18,17,16,31,30,29,28,27,26,25,24]
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+func0000000000000001:
+	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
 	vextracti128	$1, %ymm1, %xmm3
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm0, %rcx
 	vpextrq	$1, %xmm1, %rax
 	xorl	%edx, %edx
@@ -56,44 +56,45 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-func0000000000000000:                   # @func0000000000000000
-	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[7,6,5,4,3,2,1,0,15,14,13,12,11,10,9,8,23,22,21,20,19,18,17,16,31,30,29,28,27,26,25,24]
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+func0000000000000000:
+	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
 	vextracti128	$1, %ymm1, %xmm3
@@ -106,7 +107,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
 	vpextrq	$1, %xmm0, %rcx
 	vpextrq	$1, %xmm1, %rax
 	xorl	%edx, %edx
@@ -117,6 +118,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm3[0]
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

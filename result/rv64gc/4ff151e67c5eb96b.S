@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000023:
 	srli	a2, a2, 32
 	andi	a1, a1, 1
 	snez	a2, a2
@@ -7,7 +7,8 @@ func0000000000000023:                   # @func0000000000000023
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	srli	a2, a2, 16
 	andi	a1, a1, 1
 	snez	a2, a2
@@ -16,17 +17,19 @@ func0000000000000063:                   # @func0000000000000063
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	lui	a3, 8
 	beqz	a2, .LBB2_2
 	lui	a3, 40
-.LBB2_2:                                # %entry
+.LBB2_2:
 	or	a0, a0, a3
 	andi	a1, a1, 1
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andi	a0, a0, 1
 	beqz	a2, .LBB3_3
 	li	a2, 16
@@ -40,7 +43,8 @@ func0000000000000005:                   # @func0000000000000005
 	li	a2, 1040
 	or	a1, a1, a2
 	bnez	a0, .LBB3_2
-.LBB3_4:                                # %entry
+.LBB3_4:
 	li	a0, 4
 	or	a0, a0, a1
 	ret
+

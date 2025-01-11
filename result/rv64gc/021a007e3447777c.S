@@ -1,4 +1,4 @@
-func00000000000003aa:                   # @func00000000000003aa
+func00000000000003aa:
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	li	a1, 32
@@ -15,3 +15,4 @@ func00000000000003aa:                   # @func00000000000003aa
 	slti	a0, a0, 8
 	xori	a0, a0, 1
 	ret
+

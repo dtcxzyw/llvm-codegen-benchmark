@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	addl	$-11, %edi
 	cmpl	$9, %edi
 	setae	%cl
@@ -6,7 +6,8 @@ func0000000000000050:                   # @func0000000000000050
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000850:                   # @func0000000000000850
+
+func0000000000000850:
 	addl	$-12, %edi
 	cmpl	$8, %edi
 	setae	%cl
@@ -14,7 +15,8 @@ func0000000000000850:                   # @func0000000000000850
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000842:                   # @func0000000000000842
+
+func0000000000000842:
 	addl	$-29, %edi
 	cmpl	$20, %edi
 	sete	%cl
@@ -22,3 +24,4 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
+

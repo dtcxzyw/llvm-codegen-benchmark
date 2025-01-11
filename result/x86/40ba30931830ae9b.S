@@ -1,8 +1,8 @@
-func00000000000004aa:                   # @func00000000000004aa
+func00000000000004aa:
 	movl	%edx, %eax
-	addl	$32766, %eax                    # imm = 0x7FFE
+	addl	$32766, %eax
 	cltq
-	imulq	$-2147418109, %rax, %rax        # imm = 0x80010003
+	imulq	$-2147418109, %rax, %rax
 	shrq	$32, %rax
 	leal	32766(%rax,%rdx), %eax
 	movl	%eax, %ecx
@@ -14,3 +14,4 @@ func00000000000004aa:                   # @func00000000000004aa
 	cmpl	%eax, %edi
 	setg	%al
 	retq
+

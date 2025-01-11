@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	127                             # 0x7f
-func000000000000012a:                   # @func000000000000012a
+	.long	127
+func000000000000012a:
 	vpmovsxwd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm0, %ymm2
 	vpmaxsd	%ymm1, %ymm2, %ymm1
@@ -9,3 +9,4 @@ func000000000000012a:                   # @func000000000000012a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

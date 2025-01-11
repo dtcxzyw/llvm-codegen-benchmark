@@ -1,8 +1,7 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	fcmp	d0, d1
 	fmov	d2, #0.50000000
-	mov	x8, #35184372088832             // =0x200000000000
+	mov	x8, #35184372088832
 	movk	x8, #49286, lsl #48
 	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
@@ -10,12 +9,11 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fcmp	d1, d0
 	fmov	d2, #0.50000000
-	mov	x8, #43980465111040             // =0x280000000000
+	mov	x8, #43980465111040
 	movk	x8, #16518, lsl #48
 	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
@@ -23,11 +21,10 @@ func0000000000000022:                   // @func0000000000000022
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x3f50624dd2f1a9fc              // double 0.001
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+	.xword	0x3f50624dd2f1a9fc
+func0000000000000044:
 	fcmp	d0, d1
 	adrp	x8, .LCPI2_0
 	fcsel	d0, d0, d1, gt
@@ -36,13 +33,12 @@ func0000000000000044:                   // @func0000000000000044
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
+
 .LCPI3_0:
-	.xword	0x3f50624dd2f1a9fc              // double 0.001
+	.xword	0x3f50624dd2f1a9fc
 .LCPI3_1:
-	.xword	0xbf50624dd2f1a9fc              // double -0.001
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+	.xword	0xbf50624dd2f1a9fc
+func0000000000000042:
 	fcmp	d1, d0
 	adrp	x8, .LCPI3_0
 	fcsel	d0, d0, d1, gt
@@ -53,4 +49,4 @@ func0000000000000042:                   // @func0000000000000042
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+

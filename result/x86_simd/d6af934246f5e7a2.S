@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	10                              # 0xa
-func0000000000000008:                   # @func0000000000000008
+	.long	10
+func0000000000000008:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -50,9 +50,10 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	200                             # 0xc8
-func0000000000000000:                   # @func0000000000000000
+	.long	200
+func0000000000000000:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -102,3 +103,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+

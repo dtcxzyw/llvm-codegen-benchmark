@@ -1,4 +1,4 @@
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000000f5:
 	andb	$1, %dil
 	leaq	-65522(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
@@ -6,3 +6,4 @@ func00000000000000f5:                   # @func00000000000000f5
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000063:                   # @func0000000000000063
+func0000000000000063:
 	andb	$15, %dil
 	cmpb	$10, %dil
 	movl	$55, %ecx
@@ -6,7 +6,8 @@ func0000000000000063:                   # @func0000000000000063
 	cmovael	%ecx, %eax
 	addb	%dil, %al
 	retq
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	andb	$15, %dil
 	cmpb	$10, %dil
 	movl	$48, %ecx
@@ -14,3 +15,4 @@ func0000000000000053:                   # @func0000000000000053
 	cmovbl	%ecx, %eax
 	addb	%dil, %al
 	retq
+

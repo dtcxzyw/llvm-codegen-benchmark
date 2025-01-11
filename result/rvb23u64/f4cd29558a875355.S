@@ -1,10 +1,11 @@
-func000000000000008d:                   # @func000000000000008d
+func000000000000008d:
 	sext.w	a3, a0
 	sub	a1, a1, a2
 	minu	a1, a1, a3
 	subw	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	li	a2, -1
@@ -14,3 +15,4 @@ func0000000000000008:                   # @func0000000000000008
 	maxu	a0, a0, a1
 	sub	a0, a0, a1
 	ret
+

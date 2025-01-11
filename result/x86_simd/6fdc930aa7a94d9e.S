@@ -1,9 +1,10 @@
 .LCPI0_0:
-	.quad	0x0350000000000000              # double 1.0020841800044864E-292
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x0350000000000000
+func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vcvtdq2pd	%ymm2, %zmm0
 	vmulpd	.LCPI0_0(%rip){1to8}, %zmm0, %zmm0
 	vmovapd	%zmm1, %zmm0 {%k1}
 	retq
+

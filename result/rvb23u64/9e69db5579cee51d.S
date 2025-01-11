@@ -1,12 +1,13 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sub	a1, a1, a2
 	bexti	a1, a1, 2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000001:                   # @func0000000000000001
+	.quad	3074457345618258603
+func0000000000000001:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a1, a1, a2
@@ -18,3 +19,4 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+

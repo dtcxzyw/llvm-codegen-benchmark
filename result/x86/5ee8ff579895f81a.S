@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andb	$1, %dl
 	notb	%sil
 	andb	$1, %sil
@@ -7,3 +7,4 @@ func0000000000000003:                   # @func0000000000000003
 	andb	$-4, %dil
 	orb	%dil, %al
 	retq
+

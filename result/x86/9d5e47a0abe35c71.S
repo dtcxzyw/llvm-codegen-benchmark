@@ -1,6 +1,7 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	leaq	-2147483648(%rdi), %rax
-	cmpq	$-2147483647, %rax              # imm = 0x80000001
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	cmpq	$-2147483647, %rax
+	movl	$2147483647, %eax
 	cmovaeq	%rdi, %rax
 	retq
+

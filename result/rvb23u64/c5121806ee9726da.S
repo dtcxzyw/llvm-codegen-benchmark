@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	zext.w	a4, a4
 	srli	a2, a2, 32
 	zext.w	a3, a3
@@ -16,3 +16,4 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a5
 	add	a1, a1, a2
 	ret
+

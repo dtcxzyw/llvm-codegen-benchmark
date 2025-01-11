@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
@@ -8,3 +8,4 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 256
 	xori	a0, a0, 1
 	ret
+

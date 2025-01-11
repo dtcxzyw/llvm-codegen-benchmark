@@ -1,7 +1,8 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	andi	a2, a2, 2047
 	bnez	a2, .LBB0_2
 	slli	a0, a1, 12
 	srli	a0, a0, 12
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

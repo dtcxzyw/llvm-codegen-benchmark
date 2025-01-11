@@ -1,4 +1,4 @@
-func0000000000000604:                   # @func0000000000000604
+func0000000000000604:
 	li	a0, 37
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v12, v10, a0
@@ -6,7 +6,8 @@ func0000000000000604:                   # @func0000000000000604
 	vmadd.vx	v12, a0, v9
 	vmsltu.vv	v0, v12, v8
 	ret
-func0000000000000608:                   # @func0000000000000608
+
+func0000000000000608:
 	li	a0, 37
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v12, v10, a0
@@ -14,3 +15,4 @@ func0000000000000608:                   # @func0000000000000608
 	vmadd.vx	v12, a0, v9
 	vmsltu.vv	v0, v8, v12
 	ret
+

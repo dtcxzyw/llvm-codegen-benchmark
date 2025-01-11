@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	cmpb	$95, %dl
 	sete	%cl
 	andb	%sil, %cl
@@ -6,3 +6,4 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	orb	%cl, %al
 	retq
+

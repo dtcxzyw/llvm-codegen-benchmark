@@ -1,4 +1,4 @@
-func00000000000003d3:                   # @func00000000000003d3
+func00000000000003d3:
 	leal	87(%rdi), %eax
 	movl	%edi, %ecx
 	orb	$48, %cl
@@ -7,7 +7,8 @@ func00000000000003d3:                   # @func00000000000003d3
 	movzbl	%al, %eax
 	cmovbl	%ecx, %eax
 	retq
-func00000000000002d0:                   # @func00000000000002d0
+
+func00000000000002d0:
 	leal	87(%rdi), %eax
 	movl	%edi, %ecx
 	orb	$48, %cl
@@ -16,3 +17,4 @@ func00000000000002d0:                   # @func00000000000002d0
 	movzbl	%al, %eax
 	cmovbl	%ecx, %eax
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	64                              # 0x40
+	.quad	64
 .LCPI0_1:
-	.quad	2048                            # 0x800
-func0000000000000002:                   # @func0000000000000002
+	.quad	2048
+func0000000000000002:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
@@ -12,11 +12,12 @@ func0000000000000002:                   # @func0000000000000002
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm2, %ymm2 {%k2}
 	vmovapd	%ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	4096                            # 0x1000
+	.quad	4096
 .LCPI1_1:
-	.quad	32                              # 0x20
-func0000000000000000:                   # @func0000000000000000
+	.quad	32
+func0000000000000000:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
@@ -26,11 +27,12 @@ func0000000000000000:                   # @func0000000000000000
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm2, %ymm2 {%k2}
 	vmovapd	%ymm2, %ymm0
 	retq
+
 .LCPI2_0:
-	.quad	16                              # 0x10
+	.quad	16
 .LCPI2_1:
-	.quad	4                               # 0x4
-func0000000000000003:                   # @func0000000000000003
+	.quad	4
+func0000000000000003:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
@@ -40,3 +42,4 @@ func0000000000000003:                   # @func0000000000000003
 	vorpd	.LCPI2_1(%rip){1to4}, %ymm2, %ymm2 {%k2}
 	vmovapd	%ymm2, %ymm0
 	retq
+

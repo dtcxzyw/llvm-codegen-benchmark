@@ -1,16 +1,14 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+func0000000000000007:
+	mov	w8, #10
 	and	w9, w0, #0xffff
-	mov	w10, #-480                      // =0xfffffe20
+	mov	w10, #-480
 	madd	w0, w9, w8, w10
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func0000000000000005:
+	mov	w8, #12
 	and	w9, w0, #0xffff
-	mov	w10, #-12                       // =0xfffffff4
+	mov	w10, #-12
 	madd	w0, w9, w8, w10
 	ret
-                                        // -- End function
+

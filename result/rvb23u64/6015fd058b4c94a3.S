@@ -1,4 +1,4 @@
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000000ec:
 	srai	a2, a2, 4
 	lui	a3, 748983
 	addi	a3, a3, -585
@@ -12,3 +12,4 @@ func00000000000000ec:                   # @func00000000000000ec
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
+

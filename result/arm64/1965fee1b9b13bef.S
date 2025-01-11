@@ -1,28 +1,24 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+func0000000000000061:
 	lsl	x8, x0, x1
 	tst	x8, #0xffff
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	lsl	x8, x0, x1
 	tst	x8, #0xffff
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000006c:                   // @func000000000000006c
-// %bb.0:                               // %entry
+
+func000000000000006c:
 	lsl	x8, x0, x1
 	tst	x8, #0x7f00
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	lsl	x8, x0, x1
 	tst	x8, #0xff00
 	cset	w0, ne
 	ret
-                                        // -- End function
+

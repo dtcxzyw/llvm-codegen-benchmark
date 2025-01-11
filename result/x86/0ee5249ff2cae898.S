@@ -1,4 +1,4 @@
-func00000000000006e1:                   # @func00000000000006e1
+func00000000000006e1:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -6,7 +6,8 @@ func00000000000006e1:                   # @func00000000000006e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000461:                   # @func0000000000000461
+
+func0000000000000461:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -14,7 +15,8 @@ func0000000000000461:                   # @func0000000000000461
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -22,7 +24,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000004e1:                   # @func00000000000004e1
+
+func00000000000004e1:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -30,7 +33,8 @@ func00000000000004e1:                   # @func00000000000004e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -38,7 +42,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000261:                   # @func0000000000000261
+
+func0000000000000261:
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%esi, %eax
@@ -46,3 +51,4 @@ func0000000000000261:                   # @func0000000000000261
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

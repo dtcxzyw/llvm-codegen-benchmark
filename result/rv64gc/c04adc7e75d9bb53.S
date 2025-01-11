@@ -1,4 +1,4 @@
-func0000000000000401:                   # @func0000000000000401
+func0000000000000401:
 	sext.w	a1, a1
 	sext.w	a3, a0
 	addw	a0, a0, a2
@@ -9,7 +9,8 @@ func0000000000000401:                   # @func0000000000000401
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000242a:                   # @func000000000000242a
+
+func000000000000242a:
 	addw	a2, a2, a0
 	lui	a3, 32
 	subw	a0, a0, a1
@@ -17,3 +18,4 @@ func000000000000242a:                   # @func000000000000242a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000003e4:                   # @func00000000000003e4
+func00000000000003e4:
 	lui	a2, 1048560
 	add	a1, a1, a2
 	srliw	a1, a1, 20
@@ -7,7 +7,8 @@ func00000000000003e4:                   # @func00000000000003e4
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	li	a2, 12
@@ -15,7 +16,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
-func00000000000001e4:                   # @func00000000000001e4
+
+func00000000000001e4:
 	addiw	a1, a1, -1
 	sltiu	a1, a1, 10
 	li	a2, -24
@@ -23,3 +25,4 @@ func00000000000001e4:                   # @func00000000000001e4
 	add	a0, a0, a1
 	addi	a0, a0, 232
 	ret
+

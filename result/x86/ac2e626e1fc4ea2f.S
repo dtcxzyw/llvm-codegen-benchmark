@@ -1,15 +1,18 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	negq	%rsi
 	andq	%rdi, %rsi
 	leaq	168(%rsi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	negq	%rsi
 	andq	%rdi, %rsi
 	leaq	-16(%rsi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	negq	%rsi
 	andq	%rdi, %rsi
 	leaq	-8(%rsi), %rax
 	retq
+

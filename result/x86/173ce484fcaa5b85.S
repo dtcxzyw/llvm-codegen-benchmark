@@ -1,4 +1,4 @@
-func0000000000000221:                   # @func0000000000000221
+func0000000000000221:
 	leal	5(%rsi,%rsi), %eax
 	cmpl	$6, %eax
 	movl	$5, %ecx
@@ -6,7 +6,8 @@ func0000000000000221:                   # @func0000000000000221
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func00000000000002a1:                   # @func00000000000002a1
+
+func00000000000002a1:
 	addl	%esi, %esi
 	cmpl	$3, %esi
 	movl	$2, %eax
@@ -15,7 +16,8 @@ func00000000000002a1:                   # @func00000000000002a1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	leal	2(%rsi,%rsi), %eax
 	cmpl	$3, %eax
 	movl	$2, %ecx
@@ -23,3 +25,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
+

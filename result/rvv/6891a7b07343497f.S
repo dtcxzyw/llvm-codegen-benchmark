@@ -1,4 +1,4 @@
-func0000000000000118:                   # @func0000000000000118
+func0000000000000118:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -9,7 +9,8 @@ func0000000000000118:                   # @func0000000000000118
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -18,3 +19,4 @@ func0000000000000318:                   # @func0000000000000318
 	li	a0, 255
 	vmsgtu.vx	v0, v8, a0
 	ret
+

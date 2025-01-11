@@ -1,4 +1,4 @@
-func0000000000000074:                   # @func0000000000000074
+func0000000000000074:
 	leal	(%rdx,%rsi), %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -6,7 +6,8 @@ func0000000000000074:                   # @func0000000000000074
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	leal	(%rdx,%rsi), %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -14,3 +15,4 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

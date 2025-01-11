@@ -1,4 +1,4 @@
-func0000000000000285:                   # @func0000000000000285
+func0000000000000285:
 	xorl	%ecx, %ecx
 	testl	%esi, %esi
 	setg	%cl
@@ -8,3 +8,4 @@ func0000000000000285:                   # @func0000000000000285
 	sarl	$18, %eax
 	addl	%ecx, %eax
 	retq
+

@@ -1,18 +1,20 @@
-func00000000000000c0:                   # @func00000000000000c0
+func00000000000000c0:
 	andi	a2, a2, 255
 	add	a1, a1, a2
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	ret
-func0000000000000155:                   # @func0000000000000155
+
+func0000000000000155:
 	andi	a2, a2, 255
 	add	a1, a1, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	andi	a2, a2, 255
 	add	a1, a1, a2
 	lui	a2, 1048350
@@ -21,10 +23,12 @@ func00000000000000f5:                   # @func00000000000000f5
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000175:                   # @func0000000000000175
+
+func0000000000000175:
 	andi	a2, a2, 255
 	add	a1, a1, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	ret
+

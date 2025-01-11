@@ -1,16 +1,18 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	andi	a0, a0, -4
 	addi	a0, a0, -8
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	addi	a0, a0, -1
 	srli	a0, a0, 3
 	andi	a0, a0, -8
 	addi	a0, a0, 8
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	lui	a1, 1024
 	addiw	a1, a1, -1
 	add	a0, a0, a1
@@ -18,7 +20,8 @@ func000000000000000d:                   # @func000000000000000d
 	andi	a0, a0, -32
 	addi	a0, a0, -1
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	lui	a1, 256
 	addiw	a1, a1, -1
 	add	a0, a0, a1
@@ -26,7 +29,8 @@ func000000000000006f:                   # @func000000000000006f
 	andi	a0, a0, -4
 	addi	a0, a0, 511
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	lui	a1, 1
 	addiw	a1, a1, -1
 	add	a0, a0, a1
@@ -34,31 +38,36 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, -4
 	addi	a0, a0, 511
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	slli	a0, a0, 3
 	addi	a0, a0, -8
 	andi	a0, a0, -16
 	addi	a0, a0, 16
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	slli	a0, a0, 3
 	addi	a0, a0, -8
 	andi	a0, a0, -16
 	addi	a0, a0, 16
 	ret
-func000000000000006d:                   # @func000000000000006d
+
+func000000000000006d:
 	addi	a0, a0, 63
 	srli	a0, a0, 3
 	andi	a0, a0, -8
 	addi	a0, a0, -8
 	ret
-func000000000000002e:                   # @func000000000000002e
+
+func000000000000002e:
 	slli	a0, a0, 1
 	addi	a0, a0, 2
 	andi	a0, a0, -4
 	addi	a0, a0, 4
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	slli	a0, a0, 1
 	li	a1, 1
 	addi	a0, a0, 2
@@ -67,3 +76,4 @@ func0000000000000068:                   # @func0000000000000068
 	addi	a1, a1, -8
 	add	a0, a0, a1
 	ret
+

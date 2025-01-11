@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.long	9                               # 0x9
+	.long	9
 .LCPI0_1:
-	.long	128                             # 0x80
+	.long	128
 .LCPI0_2:
-	.long	256                             # 0x100
-func00000000000004a4:                   # @func00000000000004a4
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [9,9,9,9,9,9,9,9]
+	.long	256
+func00000000000004a4:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpsrlvd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -14,3 +14,4 @@ func00000000000004a4:                   # @func00000000000004a4
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

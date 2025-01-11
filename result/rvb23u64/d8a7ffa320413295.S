@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
 	li	a2, -8
@@ -7,7 +7,8 @@ func0000000000000007:                   # @func0000000000000007
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
 	li	a2, 64
@@ -16,25 +17,29 @@ func000000000000000f:                   # @func000000000000000f
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	andi	a0, a0, 1
 	slli	a1, a1, 2
 	addiw	a1, a1, 4
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a0, a0, 1
 	slli	a1, a1, 4
 	addiw	a1, a1, 16
 	czero.nez	a0, a1, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andi	a0, a0, 1
 	slli	a1, a1, 2
 	addiw	a1, a1, -4
 	czero.nez	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
 	li	a2, 256
@@ -43,3 +48,4 @@ func000000000000000e:                   # @func000000000000000e
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

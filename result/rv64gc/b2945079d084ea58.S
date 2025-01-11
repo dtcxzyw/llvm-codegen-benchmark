@@ -1,12 +1,14 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	lui	a2, 4096
 	sllw	a1, a2, a1
 	srli	a1, a1, 24
 	addw	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	li	a2, 1
 	sllw	a1, a2, a1
 	srli	a1, a1, 1
 	addw	a0, a0, a1
 	ret
+

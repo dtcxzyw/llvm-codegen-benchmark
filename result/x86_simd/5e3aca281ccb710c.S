@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpmovdw	%ymm1, %xmm2
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm2, %ecx
@@ -43,7 +43,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpmovdw	%ymm1, %xmm2
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm2, %ecx
@@ -88,7 +89,8 @@ func0000000000000006:                   # @func0000000000000006
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpmovdw	%ymm1, %xmm2
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm2, %ecx
@@ -133,3 +135,4 @@ func0000000000000004:                   # @func0000000000000004
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
+

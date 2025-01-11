@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	zext.h	a1, a1
 	zext.h	a0, a0
 	xor	a1, a1, a0
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	zext.h	a1, a1
 	zext.h	a0, a0
 	lui	a2, 16
@@ -17,10 +18,12 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltu	a1, a1, a0
 	sltiu	a0, a0, 24
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000087:                   # @func0000000000000087
+func0000000000000087:
 	fclass.d	a1, fa1
 	fli.d	fa5, inf
 	andi	a1, a1, 129
@@ -8,7 +8,8 @@ func0000000000000087:                   # @func0000000000000087
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	fclass.d	a1, fa1
 	fli.d	fa5, inf
 	andi	a1, a1, 129
@@ -17,3 +18,4 @@ func0000000000000088:                   # @func0000000000000088
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

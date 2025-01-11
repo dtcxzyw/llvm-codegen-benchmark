@@ -1,6 +1,6 @@
-func0000000000000008:                   # @func0000000000000008
-	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
-	movl	$2147483647, %ecx               # imm = 0x7FFFFFFF
+func0000000000000008:
+	cmpq	$2147483647, %rsi
+	movl	$2147483647, %ecx
 	cmovlq	%rsi, %rcx
 	shrq	$62, %rcx
 	xorl	%eax, %eax
@@ -8,3 +8,4 @@ func0000000000000008:                   # @func0000000000000008
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
+

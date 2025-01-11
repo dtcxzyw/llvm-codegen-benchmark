@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -6,7 +6,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	$24, %rdx
 	setae	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -14,7 +15,8 @@ func0000000000000081:                   # @func0000000000000081
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
@@ -22,7 +24,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$16, %rdx
 	setae	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -30,7 +33,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	cmpq	$16, %rdx
 	setae	%al
 	retq
-func0000000000000228:                   # @func0000000000000228
+
+func0000000000000228:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
@@ -38,7 +42,8 @@ func0000000000000228:                   # @func0000000000000228
 	cmpq	$16, %rdx
 	setae	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
@@ -46,3 +51,4 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
+

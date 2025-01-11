@@ -1,4 +1,4 @@
-func00000000000000a9:                   # @func00000000000000a9
+func00000000000000a9:
 	lui	a0, 882825
 	addi	a0, a0, 1558
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,3 +9,4 @@ func00000000000000a9:                   # @func00000000000000a9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsra.wi	v8, v10, 21
 	ret
+

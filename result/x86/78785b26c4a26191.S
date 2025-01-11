@@ -1,9 +1,10 @@
 .LCPI0_0:
-	.quad	0x75154fdd7f73bf3c              # double 1.0E+256
-func0000000000000001:                   # @func0000000000000001
-	testl	$256, %edi                      # imm = 0x100
+	.quad	0x75154fdd7f73bf3c
+func0000000000000001:
+	testl	$256, %edi
 	je	.LBB0_2
 	vdivsd	.LCPI0_0(%rip), %xmm1, %xmm1
-.LBB0_2:                                # %select.end
+.LBB0_2:
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq
+

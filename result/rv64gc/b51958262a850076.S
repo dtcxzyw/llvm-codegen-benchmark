@@ -1,10 +1,11 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
 	bnez	a1, .LBB1_2
@@ -15,9 +16,10 @@ func0000000000000013:                   # @func0000000000000013
 	li	a1, 112
 	add	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func000000000000001b:                   # @func000000000000001b
+	.quad	0x7ff0000000000000
+func000000000000001b:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	flt.d	a2, fa0, fa5
@@ -30,3 +32,4 @@ func000000000000001b:                   # @func000000000000001b
 	addiw	a1, a1, -1712
 	add	a0, a0, a1
 	ret
+

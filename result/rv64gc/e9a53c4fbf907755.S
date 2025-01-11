@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	sext.w	a2, a2
 	snez	a2, a2
 	addi	a2, a2, -1
@@ -6,3 +6,4 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, 40
 	ret
+

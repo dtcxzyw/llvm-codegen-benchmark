@@ -1,4 +1,4 @@
-func000000000000010c:                   # @func000000000000010c
+func000000000000010c:
 	addw	a1, a1, a2
 	slli	a0, a0, 33
 	lui	a2, 8
@@ -9,3 +9,4 @@ func000000000000010c:                   # @func000000000000010c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	imull	%edi, %esi
 	cmpl	$51, %esi
 	setl	%cl
@@ -6,7 +6,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000004c6:                   # @func00000000000004c6
+
+func00000000000004c6:
 	imull	%edi, %esi
 	cmpl	$250, %esi
 	setl	%cl
@@ -14,7 +15,8 @@ func00000000000004c6:                   # @func00000000000004c6
 	setl	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	shll	$4, %esi
 	cmpl	$16, %esi
 	setl	%cl
@@ -22,7 +24,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	imull	%edi, %esi
 	testl	%esi, %esi
 	sete	%cl
@@ -30,3 +33,4 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	orb	%cl, %al
 	retq
+

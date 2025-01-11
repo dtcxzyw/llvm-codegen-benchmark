@@ -1,6 +1,6 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	movq	%rsi, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rsi, %rcx
 	subq	%rax, %rcx
@@ -18,9 +18,10 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000002a4:                   # @func00000000000002a4
+
+func00000000000002a4:
 	movq	%rsi, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rsi, %rcx
 	subq	%rax, %rcx
@@ -38,9 +39,10 @@ func00000000000002a4:                   # @func00000000000002a4
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000003a4:                   # @func00000000000003a4
+
+func00000000000003a4:
 	movq	%rsi, %rdx
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rsi, %rcx
 	subq	%rax, %rcx
@@ -58,3 +60,4 @@ func00000000000003a4:                   # @func00000000000003a4
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

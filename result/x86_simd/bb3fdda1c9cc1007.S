@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -47,11 +47,12 @@ func0000000000000006:                   # @func0000000000000006
 	vpsrad	$31, %ymm1, %ymm1
 	vpandn	%ymm0, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	15                              # 0xf
+	.long	15
 .LCPI1_1:
-	.long	16                              # 0x10
-func0000000000000004:                   # @func0000000000000004
+	.long	16
+func0000000000000004:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -98,5 +99,6 @@ func0000000000000004:                   # @func0000000000000004
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [16,16,16,16,16,16,16,16]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1}
 	retq
+

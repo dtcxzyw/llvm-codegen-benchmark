@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	384307168202282325              # 0x555555555555555
-func0000000000000012:                   # @func0000000000000012
+	.quad	384307168202282325
+func0000000000000012:
 	mv	a2, a0
 	srai	a1, a1, 3
 	lui	a0, 699051
@@ -16,17 +16,18 @@ func0000000000000012:                   # @func0000000000000012
 	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB0_3
 	beqz	a2, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a1, a0
 	bnez	a2, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	mv	a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func0000000000000010:                   # @func0000000000000010
+	.quad	768614336404564650
+func0000000000000010:
 	mv	a2, a0
 	srai	a1, a1, 2
 	lui	a0, 699051
@@ -42,11 +43,12 @@ func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB1_3
 	beqz	a2, .LBB1_4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-.LBB1_3:                                # %entry
+.LBB1_3:
 	mv	a1, a0
 	bnez	a2, .LBB1_2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	mv	a0, a1
 	ret
+

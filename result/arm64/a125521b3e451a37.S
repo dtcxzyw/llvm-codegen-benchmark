@@ -1,5 +1,4 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	fmul	s0, s0, s1
 	fmov	s2, #0.50000000
 	fmov	s1, #-0.50000000
@@ -8,9 +7,8 @@ func0000000000000002:                   // @func0000000000000002
 	fadd	s0, s0, s1
 	fcvtzs	w0, s0
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	fmul	s0, s0, s1
 	fmov	s2, #-0.50000000
 	fmov	s1, #0.50000000
@@ -19,4 +17,4 @@ func000000000000000c:                   // @func000000000000000c
 	fadd	s0, s1, s0
 	fcvtzs	w0, s0
 	ret
-                                        // -- End function
+

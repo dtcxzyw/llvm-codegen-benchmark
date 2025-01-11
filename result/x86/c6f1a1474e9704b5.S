@@ -1,11 +1,12 @@
-func000000000000168a:                   # @func000000000000168a
+func000000000000168a:
 	blsrl	%edi, %eax
 	sete	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	popcntl	%edi, %eax
 	cmpl	$1, %eax
 	sete	%cl
@@ -13,7 +14,8 @@ func0000000000000026:                   # @func0000000000000026
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	popcntl	%edi, %eax
 	cmpl	$1, %eax
 	sete	%cl
@@ -21,3 +23,4 @@ func0000000000000024:                   # @func0000000000000024
 	sete	%al
 	andb	%cl, %al
 	retq
+

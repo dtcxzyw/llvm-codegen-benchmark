@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	sext.w	a1, a1
 	addi	a2, a2, -1
 	addi	a1, a1, -1
@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	sext.w	a1, a1
 	addi	a2, a2, 44
 	lui	a3, 8
@@ -17,7 +18,8 @@ func000000000000004c:                   # @func000000000000004c
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000082:                   # @func0000000000000082
+
+func0000000000000082:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	addi	a1, a1, -1
@@ -26,7 +28,8 @@ func0000000000000082:                   # @func0000000000000082
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func00000000000000c3:                   # @func00000000000000c3
+
+func00000000000000c3:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	addi	a1, a1, -1
@@ -35,7 +38,8 @@ func00000000000000c3:                   # @func00000000000000c3
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a3, a3, -1
@@ -46,7 +50,8 @@ func0000000000000094:                   # @func0000000000000094
 	or	a0, a0, a2
 	zext.w	a0, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a3, a3, -1
@@ -57,7 +62,8 @@ func000000000000008c:                   # @func000000000000008c
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	sext.w	a1, a1
 	addi	a2, a2, -1
 	czero.eqz	a2, a2, a1
@@ -65,7 +71,8 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a2
 	zext.w	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addi	a2, a2, 15
 	srliw	a1, a1, 27
 	czero.eqz	a0, a0, a1
@@ -73,3 +80,4 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
+

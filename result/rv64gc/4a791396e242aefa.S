@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	fdiv.s	fa5, fa0, fa1
 	lui	a0, 784384
 	fmv.w.x	fa4, a0
@@ -6,7 +6,8 @@ func0000000000000006:                   # @func0000000000000006
 	fcvt.w.s	a0, fa5, rtz
 	slti	a0, a0, 1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	fdiv.s	fa5, fa0, fa1
 	lui	a0, 258048
 	fmv.w.x	fa4, a0
@@ -14,3 +15,4 @@ func000000000000000a:                   # @func000000000000000a
 	fcvt.w.s	a0, fa5, rtz
 	sgtz	a0, a0
 	ret
+

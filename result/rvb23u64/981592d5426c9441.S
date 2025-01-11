@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	sext.w	a0, a0
 	neg	a1, a0
 	max	a0, a0, a1
@@ -8,3 +8,4 @@ func000000000000000a:                   # @func000000000000000a
 	mul	a0, a0, a1
 	srli	a0, a0, 47
 	ret
+

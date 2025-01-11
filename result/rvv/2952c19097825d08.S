@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 4
@@ -7,7 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 2
@@ -16,7 +17,8 @@ func0000000000000013:                   # @func0000000000000013
 	vor.vv	v9, v10, v9
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 17
@@ -24,7 +26,8 @@ func0000000000000002:                   # @func0000000000000002
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 21
@@ -32,7 +35,8 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 21
@@ -41,7 +45,8 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 8
@@ -49,7 +54,8 @@ func0000000000000012:                   # @func0000000000000012
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vsrl.vi	v10, v12, 8
@@ -58,3 +64,4 @@ func0000000000000007:                   # @func0000000000000007
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
 	ret
+

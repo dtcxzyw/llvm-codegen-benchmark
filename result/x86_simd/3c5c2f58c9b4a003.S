@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpltpd	%zmm0, %zmm2, %k0
 	vpmovm2d	%k0, %ymm1
@@ -8,3 +8,4 @@ func0000000000000082:                   # @func0000000000000082
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$27, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$16, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	pushq	%rax
 	orq	%rdx, %rdi
 	orq	%rcx, %rsi
@@ -7,3 +7,4 @@ func0000000000000002:                   # @func0000000000000002
 	callq	__udivti3@PLT
 	popq	%rcx
 	retq
+

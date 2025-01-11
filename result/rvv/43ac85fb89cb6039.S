@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	lui	a0, 3
 	addi	a0, a0, -151
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -19,3 +19,4 @@ func0000000000000075:                   # @func0000000000000075
 	vmacc.vx	v10, a0, v12
 	vmv.v.v	v8, v10
 	ret
+

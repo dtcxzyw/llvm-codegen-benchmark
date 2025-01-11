@@ -1,5 +1,4 @@
-func00000000000000ac:                   // @func00000000000000ac
-// %bb.0:                               // %entry
+func00000000000000ac:
 	fmadd	s1, s1, s1, s2
 	movi	d2, #0000000000000000
 	fdiv	s0, s0, s1
@@ -8,4 +7,4 @@ func00000000000000ac:                   // @func00000000000000ac
 	fccmp	s0, s2, #8, ls
 	cset	w0, ge
 	ret
-                                        // -- End function
+

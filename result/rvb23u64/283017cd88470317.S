@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	add.uw	a0, a2, a0
 	srai	a1, a1, 3
 	lui	a2, 838861
@@ -9,7 +9,8 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	add.uw	a0, a2, a0
 	srai	a1, a1, 3
 	lui	a2, 699051
@@ -20,7 +21,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a9:                   # @func00000000000000a9
+
+func00000000000000a9:
 	add.uw	a0, a2, a0
 	srai	a1, a1, 3
 	lui	a2, 838861
@@ -31,7 +33,8 @@ func00000000000000a9:                   # @func00000000000000a9
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	add.uw	a0, a2, a0
 	srai	a1, a1, 3
 	lui	a2, 838861
@@ -41,3 +44,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+

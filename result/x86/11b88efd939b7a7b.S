@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	notb	%sil
 	addl	$-58, %edx
 	cmpl	$-10, %edx
@@ -6,3 +6,4 @@ func0000000000000048:                   # @func0000000000000048
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000007ab:                   # @func00000000000007ab
+func00000000000007ab:
 	sext.w	a0, a0
 	addi	a2, a2, 32
 	addi	a1, a1, 48
@@ -8,7 +8,8 @@ func00000000000007ab:                   # @func00000000000007ab
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000784:                   # @func0000000000000784
+
+func0000000000000784:
 	sext.w	a0, a0
 	addi	a2, a2, 8
 	addi	a1, a1, 80
@@ -18,7 +19,8 @@ func0000000000000784:                   # @func0000000000000784
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func000000000000061b:                   # @func000000000000061b
+
+func000000000000061b:
 	sext.w	a0, a0
 	addi	a2, a2, 96
 	addi	a1, a1, 16
@@ -28,7 +30,8 @@ func000000000000061b:                   # @func000000000000061b
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000187:                   # @func0000000000000187
+
+func0000000000000187:
 	sext.w	a0, a0
 	addi	a2, a2, -96
 	addi	a1, a1, 80
@@ -37,7 +40,8 @@ func0000000000000187:                   # @func0000000000000187
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func0000000000000787:                   # @func0000000000000787
+
+func0000000000000787:
 	sext.w	a0, a0
 	addi	a2, a2, 8
 	addi	a1, a1, 302
@@ -46,7 +50,8 @@ func0000000000000787:                   # @func0000000000000787
 	or	a0, a0, a2
 	addi	a0, a0, 2
 	ret
-func000000000000079b:                   # @func000000000000079b
+
+func000000000000079b:
 	sext.w	a0, a0
 	addi	a2, a2, 776
 	addi	a1, a1, 8
@@ -56,7 +61,8 @@ func000000000000079b:                   # @func000000000000079b
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func00000000000005ab:                   # @func00000000000005ab
+
+func00000000000005ab:
 	sext.w	a0, a0
 	addi	a2, a2, -16
 	addi	a1, a1, 16
@@ -66,3 +72,4 @@ func00000000000005ab:                   # @func00000000000005ab
 	or	a0, a0, a2
 	addi	a0, a0, 8
 	ret
+

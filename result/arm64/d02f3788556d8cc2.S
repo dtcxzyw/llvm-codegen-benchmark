@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	fabs	d2, d2
 	fabs	d0, d0
 	fcmp	d1, d2
@@ -7,9 +6,8 @@ func0000000000000042:                   // @func0000000000000042
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
+
+func0000000000000084:
 	fabs	d2, d2
 	fabs	d0, d0
 	fcmp	d1, d2
@@ -17,9 +15,8 @@ func0000000000000084:                   // @func0000000000000084
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000292:                   // @func0000000000000292
-// %bb.0:                               // %entry
+
+func0000000000000292:
 	fabs	d2, d2
 	fabs	d0, d0
 	fcmp	d1, d2
@@ -27,9 +24,8 @@ func0000000000000292:                   // @func0000000000000292
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000294:                   // @func0000000000000294
-// %bb.0:                               // %entry
+
+func0000000000000294:
 	fabs	d2, d2
 	fabs	d0, d0
 	fcmp	d1, d2
@@ -37,4 +33,4 @@ func0000000000000294:                   // @func0000000000000294
 	fcmp	d0, d1
 	cset	w0, gt
 	ret
-                                        // -- End function
+

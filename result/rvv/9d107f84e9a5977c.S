@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a0, a0, 1365
 	vmsleu.vx	v0, v10, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v8, v8, 2
 	lui	a0, 699051
@@ -18,7 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1365
 	vmsleu.vx	v0, v8, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v8, v8, 0
 	lui	a0, 944962
@@ -28,3 +30,4 @@ func000000000000002c:                   # @func000000000000002c
 	addi	a0, a0, -1765
 	vmsgtu.vx	v0, v8, a0
 	ret
+

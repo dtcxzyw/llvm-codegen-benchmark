@@ -1,4 +1,4 @@
-func0000000000001082:                   # @func0000000000001082
+func0000000000001082:
 	cmpw	$47, %si
 	sete	%al
 	cmpw	$92, %di
@@ -8,7 +8,8 @@ func0000000000001082:                   # @func0000000000001082
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000004082:                   # @func0000000000004082
+
+func0000000000004082:
 	cmpw	$2, %si
 	setb	%cl
 	cmpw	$66, %di
@@ -18,3 +19,4 @@ func0000000000004082:                   # @func0000000000004082
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	movzwl	%dx, %eax
 	cmpl	%eax, %edi
 	setb	%cl
@@ -6,11 +6,13 @@ func000000000000008c:                   # @func000000000000008c
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000068c:                   # @func000000000000068c
+
+func000000000000068c:
 	movzwl	%dx, %eax
 	cmpl	%eax, %edi
 	setb	%cl
-	testl	$7168, %esi                     # imm = 0x1C00
+	testl	$7168, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
+

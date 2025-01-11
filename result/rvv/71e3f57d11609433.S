@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnot.v	v14, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -8,7 +8,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vi	v0, v8, 0
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnot.v	v14, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -18,3 +19,4 @@ func000000000000054a:                   # @func000000000000054a
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vi	v0, v8, 0
 	ret
+

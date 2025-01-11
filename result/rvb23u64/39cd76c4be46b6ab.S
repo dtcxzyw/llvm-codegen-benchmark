@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	zext.h	a0, a0
 	sext.w	a2, a2
 	snez	a2, a2
@@ -7,7 +7,8 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	zext.h	a0, a0
 	sext.w	a2, a2
 	addi	a2, a2, -1
@@ -16,7 +17,8 @@ func0000000000000021:                   # @func0000000000000021
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	zext.h	a0, a0
 	sext.w	a2, a2
 	li	a3, 11
@@ -28,7 +30,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	zext.h	a0, a0
 	sext.w	a2, a2
 	snez	a2, a2
@@ -37,7 +40,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
@@ -45,7 +49,8 @@ func0000000000000084:                   # @func0000000000000084
 	sltiu	a1, a1, 3
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -5
@@ -54,7 +59,8 @@ func0000000000000024:                   # @func0000000000000024
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.h	a0, a0
 	sext.w	a2, a2
 	addi	a2, a2, -2048
@@ -63,7 +69,8 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 0
 	andn	a0, a1, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	zext.h	a0, a0
 	sext.w	a2, a2
 	sltiu	a2, a2, -3
@@ -72,3 +79,4 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

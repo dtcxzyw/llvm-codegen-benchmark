@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -48,3 +48,4 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	notb	%dil
 	movsbl	%sil, %eax
 	addl	$-58, %eax
@@ -6,3 +6,4 @@ func0000000000000048:                   # @func0000000000000048
 	setae	%al
 	andb	%dil, %al
 	retq
+

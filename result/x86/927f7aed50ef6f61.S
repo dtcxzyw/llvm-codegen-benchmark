@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	decl	%edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addl	$4, %edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	cltq
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	incl	%edx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -22,3 +24,4 @@ func000000000000000d:                   # @func000000000000000d
 	addl	%edi, %eax
 	cltq
 	retq
+

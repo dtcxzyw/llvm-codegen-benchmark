@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x3fb999999999999a              # double 0.10000000000000001
-	.quad	0x401c000000000000              # double 7
-func0000000000000014:                   # @func0000000000000014
+	.quad	0x3fb999999999999a
+	.quad	0x401c000000000000
+func0000000000000014:
 	sext.w	a0, a0
 	seqz	a0, a0
 	lui	a1, %hi(.LCPI0_0)
@@ -10,3 +10,4 @@ func0000000000000014:                   # @func0000000000000014
 	fld	fa5, 0(a0)
 	flt.d	a0, fa0, fa5
 	ret
+

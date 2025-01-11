@@ -1,19 +1,22 @@
-func000000000000000f:                   # @func000000000000000f
-	andl	$992, %edx                      # imm = 0x3E0
-	andl	$31744, %esi                    # imm = 0x7C00
+func000000000000000f:
+	andl	$992, %edx
+	andl	$31744, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
-	andl	$2016, %edx                     # imm = 0x7E0
-	andl	$63488, %esi                    # imm = 0xF800
+
+func000000000000000e:
+	andl	$2016, %edx
+	andl	$63488, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movl	%esi, %eax
-	andl	$63488, %edx                    # imm = 0xF800
-	andl	$65504, %eax                    # imm = 0xFFE0
+	andl	$63488, %edx
+	andl	$65504, %eax
 	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
+

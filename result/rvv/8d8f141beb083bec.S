@@ -1,4 +1,4 @@
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000003f8:
 	li	a0, -48
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,7 +12,8 @@ func00000000000003f8:                   # @func00000000000003f8
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v10, a0
 	ret
-func00000000000003f4:                   # @func00000000000003f4
+
+func00000000000003f4:
 	li	a0, -48
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -25,7 +26,8 @@ func00000000000003f4:                   # @func00000000000003f4
 	bseti	a0, zero, 31
 	vmsltu.vx	v0, v10, a0
 	ret
-func00000000000007ec:                   # @func00000000000007ec
+
+func00000000000007ec:
 	li	a0, -48
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -38,7 +40,8 @@ func00000000000007ec:                   # @func00000000000007ec
 	vor.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
 	ret
-func00000000000003ec:                   # @func00000000000003ec
+
+func00000000000003ec:
 	li	a0, -48
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -51,9 +54,10 @@ func00000000000003ec:                   # @func00000000000003ec
 	vor.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
 	ret
+
 .LCPI4_0:
-	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000308:                   # @func0000000000000308
+	.quad	1844674407370955161
+func0000000000000308:
 	li	a0, -48
 	li	a1, -2
 	zext.w	a0, a0
@@ -67,3 +71,4 @@ func0000000000000308:                   # @func0000000000000308
 	vmacc.vx	v10, a1, v8
 	vmsgtu.vx	v0, v10, a0
 	ret
+

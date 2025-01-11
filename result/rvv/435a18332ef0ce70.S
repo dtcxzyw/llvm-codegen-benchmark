@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	lui	a0, 92373
 	addiw	a0, a0, -1105
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a0, a0, -1201
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lui	a0, 92373
 	addiw	a0, a0, -1105
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -23,7 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	zext.w	a0, a0
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	lui	a0, 10486
 	addiw	a0, a0, -983
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -34,3 +36,4 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 100
 	vmul.vx	v8, v8, a0
 	ret
+

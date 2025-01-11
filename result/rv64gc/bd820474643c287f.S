@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	sext.w	a0, a0
 	lui	a3, 8
 	slt	a0, a0, a3
@@ -9,7 +9,8 @@ func000000000000000d:                   # @func000000000000000d
 	and	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	sext.w	a0, a0
 	li	a3, 4
 	bne	a0, a3, .LBB1_2
@@ -22,3 +23,4 @@ func0000000000000003:                   # @func0000000000000003
 	and	a0, a0, a2
 	sext.w	a0, a0
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000354c:                   # @func000000000000354c
+func000000000000354c:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	addl	%edi, %esi
@@ -8,3 +8,4 @@ func000000000000354c:                   # @func000000000000354c
 	setne	%al
 	andb	%cl, %al
 	retq
+

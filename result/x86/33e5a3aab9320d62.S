@@ -1,37 +1,45 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	testb	$-64, %dil
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	movq	%rdi, %rax
 	shrb	$7, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	bswapq	%rdi
 	cmpq	$48, %rdi
 	setae	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	bswapq	%rdi
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	bswapq	%rdi
-	cmpq	$12000, %rdi                    # imm = 0x2EE0
+	cmpq	$12000, %rdi
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	bswapq	%rdi
 	shrq	$33, %rdi
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	bswapq	%rdi
-	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rdi
 	seta	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movq	%rdi, %rax
 	shrb	$7, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	cmpl	$-2, %edi
 	movl	$-3, %ecx
 	cmovgel	%edi, %ecx
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$3, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	cmpl	$-126, %edi
 	movl	$-127, %ecx
 	cmovgel	%edi, %ecx
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$127, %eax
 	cmovll	%ecx, %eax
 	retq
+

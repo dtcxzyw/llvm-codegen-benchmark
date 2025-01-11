@@ -1,25 +1,27 @@
 .LCPI0_0:
-	.long	0x447a0000                      # float 1000
+	.long	0x447a0000
 .LCPI0_1:
-	.long	0x3f800000                      # float 1
-func0000000000000004:                   # @func0000000000000004
+	.long	0x3f800000
+func0000000000000004:
 	vdivss	.LCPI0_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI0_1(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI0_1(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm0
 	kmovd	%edi, %k1
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.long	0x42480000                      # float 50
+	.long	0x42480000
 .LCPI1_1:
-	.long	0x3fc00000                      # float 1.5
+	.long	0x3fc00000
 .LCPI1_2:
-	.long	0x40800000                      # float 4
-func0000000000000002:                   # @func0000000000000002
+	.long	0x40800000
+func0000000000000002:
 	vdivss	.LCPI1_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [1.5E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI1_1(%rip), %xmm1
 	vmaxss	%xmm0, %xmm1, %xmm0
 	kmovd	%edi, %k1
-	vmovss	.LCPI1_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [4.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI1_2(%rip), %xmm0 {%k1}
 	retq
+

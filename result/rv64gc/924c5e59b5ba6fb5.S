@@ -1,17 +1,18 @@
 .LCPI0_0:
-	.quad	0x41dfffffffc00000              # double 2147483647
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x41dfffffffc00000
+func0000000000000002:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fmadd.d	fa4, fa1, fa5, fa2
 	fdiv.d	fa5, fa4, fa5
 	flt.d	a0, fa5, fa0
 	ret
+
 .LCPI1_0:
-	.quad	0x3fc71a9fbe76c8b4              # double 0.18049999999999999
+	.quad	0x3fc71a9fbe76c8b4
 .LCPI1_1:
-	.quad	0x4057c3020c49ba5e              # double 95.046999999999997
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x4057c3020c49ba5e
+func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
@@ -20,3 +21,4 @@ func0000000000000004:                   # @func0000000000000004
 	fdiv.d	fa5, fa5, fa4
 	flt.d	a0, fa0, fa5
 	ret
+

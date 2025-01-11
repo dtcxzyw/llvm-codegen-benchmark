@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v0, v16, fa5
@@ -7,13 +7,15 @@ func000000000000000e:                   # @func000000000000000e
 	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v16, v16, fa5
 	vfmadd.vv	v8, v16, v12
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v16, fa5
@@ -21,21 +23,24 @@ func0000000000000018:                   # @func0000000000000018
 	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vf	v16, v16, fa5
 	vfmadd.vv	v8, v16, v12
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v16, v16, fa5
 	vfmadd.vv	v8, v16, v12
 	ret
+
 .LCPI5_0:
-	.word	0x3dcccccd                      # float 0.100000001
-func000000000000000a:                   # @func000000000000000a
+	.word	0x3dcccccd
+func000000000000000a:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	fmv.w.x	fa4, zero
@@ -46,3 +51,4 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret
+

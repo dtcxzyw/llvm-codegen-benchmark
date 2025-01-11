@@ -1,19 +1,22 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000201:                   # @func0000000000000201
+
+func0000000000000201:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
@@ -21,37 +24,44 @@ func000000000000002a:                   # @func000000000000002a
 	testq	%rax, %rax
 	setg	%al
 	retq
-func00000000000002c1:                   # @func00000000000002c1
+
+func00000000000002c1:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
@@ -59,12 +69,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$6, %rax
 	setae	%al
 	retq
-func00000000000002e1:                   # @func00000000000002e1
+
+func00000000000002e1:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
@@ -72,7 +84,8 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000206:                   # @func0000000000000206
+
+func0000000000000206:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
@@ -80,7 +93,8 @@ func0000000000000206:                   # @func0000000000000206
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+
+func0000000000000106:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
@@ -88,10 +102,12 @@ func0000000000000106:                   # @func0000000000000106
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000226:                   # @func0000000000000226
+
+func0000000000000226:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
 	subq	%rsi, %rdi
 	cmovaeq	%rdi, %rax
 	shrq	$63, %rax
 	retq
+

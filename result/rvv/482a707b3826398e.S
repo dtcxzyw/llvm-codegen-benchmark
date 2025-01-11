@@ -1,4 +1,4 @@
-func00000000000003f8:                   # @func00000000000003f8
+func00000000000003f8:
 	lui	a0, 524408
 	addi	a0, a0, 113
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -16,3 +16,4 @@ func00000000000003f8:                   # @func00000000000003f8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
+

@@ -1,14 +1,16 @@
-func0000000000000001:                   # @func0000000000000001
-	testl	$256, %edi                      # imm = 0x100
+func0000000000000001:
+	testl	$256, %edi
 	sete	%al
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
-func0000000000000014:                   # @func0000000000000014
-	testl	$2146435072, %edi               # imm = 0x7FF00000
+
+func0000000000000014:
+	testl	$2146435072, %edi
 	sete	%al
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
+

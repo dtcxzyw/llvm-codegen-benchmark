@@ -1,5 +1,4 @@
-func0000000000000256:                   // @func0000000000000256
-// %bb.0:                               // %entry
+func0000000000000256:
 	movi	v3.2s, #52, lsl #24
 	fmadd	s1, s1, s1, s2
 	fcmp	s1, s3
@@ -7,9 +6,8 @@ func0000000000000256:                   // @func0000000000000256
 	fcmp	s0, s3
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	movi	v3.2s, #52, lsl #24
 	fmadd	s1, s1, s1, s2
 	fcmp	s0, s3
@@ -17,9 +15,8 @@ func0000000000000044:                   // @func0000000000000044
 	fcmp	s1, #0.0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
-func0000000000000244:                   // @func0000000000000244
-// %bb.0:                               // %entry
+
+func0000000000000244:
 	movi	v3.2s, #52, lsl #24
 	fmadd	s1, s1, s1, s2
 	fcmp	s1, s3
@@ -27,4 +24,4 @@ func0000000000000244:                   // @func0000000000000244
 	fcmp	s0, #0.0
 	csinc	w0, w8, wzr, pl
 	ret
-                                        // -- End function
+

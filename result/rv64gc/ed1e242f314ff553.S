@@ -1,4 +1,4 @@
-func00000000000002cc:                   # @func00000000000002cc
+func00000000000002cc:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	slli	a2, a2, 48
@@ -10,7 +10,8 @@ func00000000000002cc:                   # @func00000000000002cc
 	slt	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000212:                   # @func0000000000000212
+
+func0000000000000212:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a1, a1, a3
@@ -21,7 +22,8 @@ func0000000000000212:                   # @func0000000000000212
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000294:                   # @func0000000000000294
+
+func0000000000000294:
 	slli	a0, a0, 48
 	slli	a1, a1, 48
 	slli	a2, a2, 48
@@ -32,7 +34,8 @@ func0000000000000294:                   # @func0000000000000294
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a1, a1, a3
@@ -42,7 +45,8 @@ func0000000000000108:                   # @func0000000000000108
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000210:                   # @func0000000000000210
+
+func0000000000000210:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -52,7 +56,8 @@ func0000000000000210:                   # @func0000000000000210
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000001ce:                   # @func00000000000001ce
+
+func00000000000001ce:
 	slli	a1, a1, 48
 	slli	a2, a2, 48
 	slli	a0, a0, 48
@@ -64,7 +69,8 @@ func00000000000001ce:                   # @func00000000000001ce
 	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a1, a1, a3
@@ -75,7 +81,8 @@ func000000000000014a:                   # @func000000000000014a
 	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -86,7 +93,8 @@ func000000000000010a:                   # @func000000000000010a
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	lui	a3, 16
 	addiw	a3, a3, -1
 	and	a0, a0, a3
@@ -97,3 +105,4 @@ func0000000000000308:                   # @func0000000000000308
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

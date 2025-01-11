@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.long	25                              # 0x19
+	.long	25
 .LCPI0_1:
-	.long	50                              # 0x32
-func0000000000000000:                   # @func0000000000000000
+	.long	50
+func0000000000000000:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [25,25,25,25,25,25,25,25]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [50,50,50,50,50,50,50,50]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1}
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -53,3 +53,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %edx, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vcvttss2si	%xmm0, %eax
 	movl	%eax, %ecx
 	sarl	$31, %ecx
@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$255, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vcvttss2si	%xmm0, %eax
 	movl	%eax, %ecx
 	sarl	$31, %ecx
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$255, %eax
 	cmovll	%ecx, %eax
 	retq
+

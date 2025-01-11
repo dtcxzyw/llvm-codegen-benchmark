@@ -1,32 +1,37 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	testl	$16777215, %esi                 # imm = 0xFFFFFF
+	testl	$16777215, %esi
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	shll	$8, %esi
-	cmpl	$1008, %esi                     # imm = 0x3F0
+	cmpl	$1008, %esi
 	setb	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	testl	$268435456, %esi                # imm = 0x10000000
+	testl	$268435456, %esi
 	sete	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	testl	$536870912, %esi                # imm = 0x20000000
+	testl	$536870912, %esi
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	shll	$3, %esi
 	cmpl	$2, %esi
 	setl	%al
 	retq
+

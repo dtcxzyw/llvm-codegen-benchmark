@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	leal	-5(%rdi), %eax
 	cmpl	%esi, %eax
 	sete	%cl
@@ -6,3 +6,4 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	orb	%cl, %al
 	retq
+

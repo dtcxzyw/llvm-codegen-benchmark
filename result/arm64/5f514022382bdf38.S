@@ -1,88 +1,77 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	sub	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000057:                   // @func0000000000000057
-// %bb.0:                               // %entry
+
+func0000000000000057:
 	add	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	add	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func00000000000000a7:                   // @func00000000000000a7
-// %bb.0:                               // %entry
+
+func00000000000000a7:
 	add	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000097:                   // @func0000000000000097
-// %bb.0:                               // %entry
+
+func0000000000000097:
 	sub	w9, w0, #1
-	mov	w8, #29                         // =0x1d
+	mov	w8, #29
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
+
+func0000000000000017:
 	sub	w9, w0, #1
-	mov	w8, #34                         // =0x22
+	mov	w8, #34
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	sub	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	sub	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	sub	w9, w0, #1
-	mov	w8, #29                         // =0x1d
+	mov	w8, #29
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000087:                   // @func0000000000000087
-// %bb.0:                               // %entry
+
+func0000000000000087:
 	sub	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
-func00000000000000d7:                   // @func00000000000000d7
-// %bb.0:                               // %entry
+
+func00000000000000d7:
 	sub	w9, w0, #1
-	mov	w8, #32                         // =0x20
+	mov	w8, #32
 	clz	w9, w9
 	sub	w0, w8, w9
 	ret
-                                        // -- End function
+

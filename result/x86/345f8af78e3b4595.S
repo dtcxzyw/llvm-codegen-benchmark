@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	leal	1(%rdx), %eax
 	xorl	%ecx, %ecx
 	cmpl	$63, %edx
@@ -7,3 +7,4 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	orb	%dil, %al
 	retq
+

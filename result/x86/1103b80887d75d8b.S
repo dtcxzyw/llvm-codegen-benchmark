@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	shlq	$2, %rsi
 	leaq	(%rdi,%rdi), %rax
 	cmpq	%rsi, %rax
@@ -7,3 +7,4 @@ func000000000000018c:                   # @func000000000000018c
 	setne	%al
 	andb	%cl, %al
 	retq
+

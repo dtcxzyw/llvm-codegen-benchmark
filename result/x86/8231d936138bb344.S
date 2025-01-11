@@ -1,4 +1,4 @@
-func0000000000001546:                   # @func0000000000001546
+func0000000000001546:
 	leal	5(%rsi), %eax
 	cmpl	%eax, %edi
 	setg	%cl
@@ -7,3 +7,4 @@ func0000000000001546:                   # @func0000000000001546
 	setl	%al
 	orb	%cl, %al
 	retq
+

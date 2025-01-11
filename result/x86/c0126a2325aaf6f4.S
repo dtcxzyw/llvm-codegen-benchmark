@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	testl	%esi, %esi
 	setg	%cl
 	shrb	%cl, %dil
@@ -8,7 +8,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmovael	%eax, %ecx
 	movzbl	%cl, %eax
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	cmpl	$61, %esi
 	setb	%cl
 	shrb	%cl, %dil
@@ -18,7 +19,8 @@ func0000000000000141:                   # @func0000000000000141
 	cmovael	%eax, %ecx
 	movzbl	%cl, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	testl	%esi, %esi
 	sete	%cl
 	shrb	%cl, %dil
@@ -28,3 +30,4 @@ func0000000000000011:                   # @func0000000000000011
 	cmovael	%eax, %ecx
 	movzbl	%cl, %eax
 	retq
+

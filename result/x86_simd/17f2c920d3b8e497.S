@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$28, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -8,15 +8,16 @@ func0000000000000026:                   # @func0000000000000026
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	2973438897                      # 0xb13b13b1
-func0000000000000004:                   # @func0000000000000004
-	vpshufd	$245, %ymm2, %ymm3              # ymm3 = ymm2[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI1_0(%rip), %ymm4   # ymm4 = [2973438897,2973438897,2973438897,2973438897,2973438897,2973438897,2973438897,2973438897]
+	.long	2973438897
+func0000000000000004:
+	vpshufd	$245, %ymm2, %ymm3
+	vpbroadcastd	.LCPI1_0(%rip), %ymm4
 	vpmuldq	%ymm4, %ymm3, %ymm3
 	vpmuldq	%ymm4, %ymm2, %ymm2
-	vpshufd	$245, %ymm2, %ymm2              # ymm2 = ymm2[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
+	vpshufd	$245, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpsrad	$3, %ymm2, %ymm2
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -25,7 +26,8 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -34,7 +36,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$30, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -44,15 +47,16 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	1431655766                      # 0x55555556
-func000000000000002a:                   # @func000000000000002a
-	vpshufd	$245, %ymm2, %ymm3              # ymm3 = ymm2[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI4_0(%rip), %ymm4   # ymm4 = [1431655766,1431655766,1431655766,1431655766,1431655766,1431655766,1431655766,1431655766]
+	.long	1431655766
+func000000000000002a:
+	vpshufd	$245, %ymm2, %ymm3
+	vpbroadcastd	.LCPI4_0(%rip), %ymm4
 	vpmuldq	%ymm4, %ymm3, %ymm3
 	vpmuldq	%ymm4, %ymm2, %ymm2
-	vpshufd	$245, %ymm2, %ymm2              # ymm2 = ymm2[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
+	vpshufd	$245, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
@@ -60,7 +64,8 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -69,7 +74,8 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -78,15 +84,16 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI7_0:
-	.long	1374389535                      # 0x51eb851f
-func000000000000000b:                   # @func000000000000000b
-	vpshufd	$245, %ymm2, %ymm3              # ymm3 = ymm2[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI7_0(%rip), %ymm4   # ymm4 = [1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535]
+	.long	1374389535
+func000000000000000b:
+	vpshufd	$245, %ymm2, %ymm3
+	vpbroadcastd	.LCPI7_0(%rip), %ymm4
 	vpmuldq	%ymm4, %ymm3, %ymm3
 	vpmuldq	%ymm4, %ymm2, %ymm2
-	vpshufd	$245, %ymm2, %ymm2              # ymm2 = ymm2[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
+	vpshufd	$245, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpsrad	$5, %ymm2, %ymm2
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -95,15 +102,16 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI8_0:
-	.long	1431655766                      # 0x55555556
-func0000000000000021:                   # @func0000000000000021
-	vpshufd	$245, %ymm2, %ymm3              # ymm3 = ymm2[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI8_0(%rip), %ymm4   # ymm4 = [1431655766,1431655766,1431655766,1431655766,1431655766,1431655766,1431655766,1431655766]
+	.long	1431655766
+func0000000000000021:
+	vpshufd	$245, %ymm2, %ymm3
+	vpbroadcastd	.LCPI8_0(%rip), %ymm4
 	vpmuldq	%ymm4, %ymm3, %ymm3
 	vpmuldq	%ymm4, %ymm2, %ymm2
-	vpshufd	$245, %ymm2, %ymm2              # ymm2 = ymm2[1,1,3,3,5,5,7,7]
-	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
+	vpshufd	$245, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
@@ -111,7 +119,8 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$24, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -121,7 +130,8 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -130,7 +140,8 @@ func0000000000000034:                   # @func0000000000000034
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000039:                   # @func0000000000000039
+
+func0000000000000039:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -139,7 +150,8 @@ func0000000000000039:                   # @func0000000000000039
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpsrad	$1, %ymm2, %ymm2
@@ -148,3 +160,4 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

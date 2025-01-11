@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	li	a3, 5
 	bseti	a3, a3, 33
 	mulhu	a3, a2, a3
@@ -15,7 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	sub	a1, a1, a4
 	sltu	a0, a0, a1
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	li	a3, 5
 	bseti	a3, a3, 33
 	mulhu	a3, a2, a3
@@ -32,7 +33,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	sub	a1, a1, a4
 	sltu	a0, a0, a1
 	ret
-func00000000000001a4:                   # @func00000000000001a4
+
+func00000000000001a4:
 	li	a3, 5
 	bseti	a3, a3, 33
 	mulhu	a3, a2, a3
@@ -49,3 +51,4 @@ func00000000000001a4:                   # @func00000000000001a4
 	sub	a1, a1, a4
 	sltu	a0, a0, a1
 	ret
+

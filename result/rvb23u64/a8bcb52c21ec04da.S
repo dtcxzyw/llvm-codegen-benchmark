@@ -1,4 +1,4 @@
-func000000000000007f:                   # @func000000000000007f
+func000000000000007f:
 	li	a2, 5
 	subw	a2, a2, a1
 	zext.h	a2, a2
@@ -6,3 +6,4 @@ func000000000000007f:                   # @func000000000000007f
 	sh3add	a0, a1, a0
 	addi	a0, a0, 8
 	ret
+

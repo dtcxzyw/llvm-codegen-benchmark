@@ -1,15 +1,13 @@
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+func000000000000001f:
 	lsl	w8, w2, #7
 	and	w8, w8, #0x100
 	orr	w8, w8, w1
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	ubfiz	w8, w2, #8, #6
 	orr	w8, w8, w1
 	add	w0, w8, w0
 	ret
-                                        // -- End function
+

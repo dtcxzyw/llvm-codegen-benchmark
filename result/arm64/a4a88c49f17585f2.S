@@ -1,5 +1,4 @@
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+func0000000000000048:
 	fmov	d2, #1.00000000
 	fcvtzs	w8, d1
 	fcmp	d0, d2
@@ -7,9 +6,8 @@ func0000000000000048:                   // @func0000000000000048
 	ccmp	w8, #22, #0, mi
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000248:                   // @func0000000000000248
-// %bb.0:                               // %entry
+
+func0000000000000248:
 	fmov	d2, #1.00000000
 	fcvtzs	w8, d1
 	fcmp	d0, d2
@@ -17,4 +15,4 @@ func0000000000000248:                   // @func0000000000000248
 	ccmp	w8, #22, #0, mi
 	cset	w0, hi
 	ret
-                                        // -- End function
+

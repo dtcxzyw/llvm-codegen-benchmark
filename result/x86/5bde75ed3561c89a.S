@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	testb	%sil, %sil
 	setne	%al
 	movzbl	%dil, %ecx
@@ -6,3 +6,4 @@ func000000000000000b:                   # @func000000000000000b
 	orb	$12, %al
 	shlxl	%eax, %ecx, %eax
 	retq
+

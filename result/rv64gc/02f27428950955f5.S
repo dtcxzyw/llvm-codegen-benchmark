@@ -1,4 +1,4 @@
-func000000000000098c:                   # @func000000000000098c
+func000000000000098c:
 	slli	a3, a2, 3
 	slli	a2, a2, 5
 	sub	a2, a2, a3
@@ -7,7 +7,8 @@ func000000000000098c:                   # @func000000000000098c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000e8a:                   # @func0000000000000e8a
+
+func0000000000000e8a:
 	lui	a3, 244
 	slti	a0, a0, 0
 	addiw	a3, a3, 576
@@ -16,3 +17,4 @@ func0000000000000e8a:                   # @func0000000000000e8a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

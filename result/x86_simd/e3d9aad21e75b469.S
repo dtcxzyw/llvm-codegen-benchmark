@@ -1,144 +1,150 @@
 .LCPI0_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI0_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func0000000000000003:                   # @func0000000000000003
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func0000000000000003:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI0_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI0_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI1_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func0000000000000005:                   # @func0000000000000005
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func0000000000000005:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI1_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI1_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI2_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func000000000000000d:                   # @func000000000000000d
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func000000000000000d:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI2_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI2_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI3_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func000000000000000f:                   # @func000000000000000f
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func000000000000000f:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI3_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI3_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI4_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI4_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func0000000000000007:                   # @func0000000000000007
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func0000000000000007:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI4_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI4_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI5_0:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	10                              # 0xa
-	.long	2                               # 0x2
-	.long	12                              # 0xc
-	.long	3                               # 0x3
-	.long	14                              # 0xe
+	.long	0
+	.long	8
+	.long	1
+	.long	10
+	.long	2
+	.long	12
+	.long	3
+	.long	14
 .LCPI5_1:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	10                              # 0xa
-	.byte	2                               # 0x2
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	14                              # 0xe
-func0000000000000009:                   # @func0000000000000009
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	10
+	.byte	2
+	.byte	12
+	.byte	3
+	.byte	14
+func0000000000000009:
 	vpxor	%xmm2, %xmm1, %xmm2
-	vpmovsxbd	.LCPI5_1(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpmovsxbd	.LCPI5_1(%rip), %ymm1
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
+

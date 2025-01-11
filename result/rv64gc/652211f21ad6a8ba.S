@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	0x3fc68a288b60c8b3              # double 0.1760912590558
+	.quad	0x3fc68a288b60c8b3
 .LCPI0_1:
-	.quad	0x3fd287a7636f4361              # double 0.28952965460216801
+	.quad	0x3fd287a7636f4361
 .LCPI0_2:
-	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x3fd34413509f79fb
+func0000000000000001:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)
@@ -17,13 +17,14 @@ func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
+
 .LCPI1_0:
-	.quad	0x3fc68a288b60c8b3              # double 0.1760912590558
+	.quad	0x3fc68a288b60c8b3
 .LCPI1_1:
-	.quad	0x3fd287a7636f4361              # double 0.28952965460216801
+	.quad	0x3fd287a7636f4361
 .LCPI1_2:
-	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
-func0000000000000005:                   # @func0000000000000005
+	.quad	0x3fd34413509f79fb
+func0000000000000005:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	lui	a1, %hi(.LCPI1_1)
@@ -36,13 +37,14 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
+
 .LCPI2_0:
-	.quad	0x3fc68a288b60c8b3              # double 0.1760912590558
+	.quad	0x3fc68a288b60c8b3
 .LCPI2_1:
-	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
+	.quad	0x3fd34413509f79fb
 .LCPI2_2:
-	.quad	0x3fd287a7636f4361              # double 0.28952965460216801
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3fd287a7636f4361
+func0000000000000004:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	lui	a1, %hi(.LCPI2_1)
@@ -55,3 +57,4 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	addiw	a0, a0, 99
 	ret
+

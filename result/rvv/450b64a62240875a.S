@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 209715
@@ -10,9 +10,10 @@ func000000000000000b:                   # @func000000000000000b
 	vwaddu.wv	v10, v10, v8
 	vmv2r.v	v8, v10
 	ret
+
 .LCPI1_0:
-	.quad	8198552921648689607             # 0x71c71c71c71c71c7
-func000000000000000f:                   # @func000000000000000f
+	.quad	8198552921648689607
+func000000000000000f:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -22,7 +23,8 @@ func000000000000000f:                   # @func000000000000000f
 	vwaddu.wv	v10, v10, v8
 	vmv2r.v	v8, v10
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 349525
@@ -34,3 +36,4 @@ func0000000000000009:                   # @func0000000000000009
 	vwaddu.wv	v10, v10, v8
 	vmv2r.v	v8, v10
 	ret
+

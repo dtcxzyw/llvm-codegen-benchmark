@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000006:                   # @func0000000000000006
+	.quad	5270498306774157605
+func0000000000000006:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -15,3 +15,4 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+

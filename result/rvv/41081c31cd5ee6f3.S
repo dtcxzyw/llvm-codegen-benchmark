@@ -1,4 +1,4 @@
-func000000000000036c:                   # @func000000000000036c
+func000000000000036c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	fli.d	fa5, 1.0
@@ -8,7 +8,8 @@ func000000000000036c:                   # @func000000000000036c
 	vmorn.mm	v8, v8, v24
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000264:                   # @func0000000000000264
+
+func0000000000000264:
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v8, fa5
@@ -21,11 +22,12 @@ func0000000000000264:                   # @func0000000000000264
 	vmorn.mm	v8, v16, v8
 	vmor.mm	v0, v8, v0
 	ret
+
 .LCPI2_0:
-	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
+	.quad	0x3eb0c6f7a0b5ed8d
 .LCPI2_1:
-	.quad	0x401921fb54442d18              # double 6.2831853071795862
-func0000000000000090:                   # @func0000000000000090
+	.quad	0x401921fb54442d18
+func0000000000000090:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
@@ -37,7 +39,8 @@ func0000000000000090:                   # @func0000000000000090
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v0, v8
 	ret
-func00000000000001e0:                   # @func00000000000001e0
+
+func00000000000001e0:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 894
@@ -48,7 +51,8 @@ func00000000000001e0:                   # @func00000000000001e0
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000220:                   # @func0000000000000220
+
+func0000000000000220:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
@@ -59,9 +63,10 @@ func0000000000000220:                   # @func0000000000000220
 	vmor.mm	v8, v24, v16
 	vmor.mm	v0, v8, v0
 	ret
+
 .LCPI5_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000374:                   # @func0000000000000374
+	.quad	0x3cb0000000000000
+func0000000000000374:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -72,3 +77,4 @@ func0000000000000374:                   # @func0000000000000374
 	vmorn.mm	v8, v8, v24
 	vmor.mm	v0, v8, v0
 	ret
+

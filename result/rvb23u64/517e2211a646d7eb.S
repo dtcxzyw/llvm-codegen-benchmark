@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	andi	a1, a1, 1
 	li	a2, -3
 	czero.nez	a1, a2, a1
@@ -7,7 +7,8 @@ func00000000000003e1:                   # @func00000000000003e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003a1:                   # @func00000000000003a1
+
+func00000000000003a1:
 	andi	a1, a1, 1
 	li	a2, -4
 	czero.nez	a1, a2, a1
@@ -16,3 +17,4 @@ func00000000000003a1:                   # @func00000000000003a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

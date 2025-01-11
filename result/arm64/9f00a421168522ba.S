@@ -1,5 +1,4 @@
-func000000000000012a:                   // @func000000000000012a
-// %bb.0:                               // %entry
+func000000000000012a:
 	add	x8, x0, x0, lsr #63
 	sub	x9, x1, x2
 	asr	x8, x8, #1
@@ -7,9 +6,8 @@ func000000000000012a:                   // @func000000000000012a
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000134:                   // @func0000000000000134
-// %bb.0:                               // %entry
+
+func0000000000000134:
 	add	x8, x0, x0, lsr #63
 	sub	x9, x1, x2
 	asr	x8, x8, #1
@@ -17,9 +15,8 @@ func0000000000000134:                   // @func0000000000000134
 	cmp	x8, #32
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
+
+func00000000000000aa:
 	sub	x8, x1, x2
 	add	x9, x0, x0, lsr #63
 	asr	x8, x8, #4
@@ -27,9 +24,8 @@ func00000000000000aa:                   // @func00000000000000aa
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000b4:                   // @func00000000000000b4
-// %bb.0:                               // %entry
+
+func00000000000000b4:
 	sub	x8, x1, x2
 	add	x9, x0, x0, lsr #63
 	asr	x8, x8, #4
@@ -37,46 +33,42 @@ func00000000000000b4:                   // @func00000000000000b4
 	cmp	x8, #32
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000001a8:                   // @func00000000000001a8
-// %bb.0:                               // %entry
+
+func00000000000001a8:
 	asr	x8, x0, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x1, x2
 	add	x8, x8, x9, asr #2
-	mov	x9, #6148914691236517205        // =0x5555555555555555
+	mov	x9, #6148914691236517205
 	movk	x9, #1365, lsl #48
 	cmp	x8, x9
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000001b1:                   // @func00000000000001b1
-// %bb.0:                               // %entry
+
+func00000000000001b1:
 	asr	x8, x0, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x1, x2
 	cmn	x8, x9, asr #4
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001a1:                   // @func00000000000001a1
-// %bb.0:                               // %entry
+
+func00000000000001a1:
 	asr	x8, x0, #3
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	movk	x9, #43691
 	mul	x8, x8, x9
 	sub	x9, x1, x2
 	cmn	x8, x9, asr #4
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000121:                   // @func0000000000000121
-// %bb.0:                               // %entry
-	mov	x8, #18725                      // =0x4925
+
+func0000000000000121:
+	mov	x8, #18725
 	movk	x8, #9362, lsl #16
 	movk	x8, #37449, lsl #32
 	movk	x8, #18724, lsl #48
@@ -87,4 +79,4 @@ func0000000000000121:                   // @func0000000000000121
 	cmn	x8, x9, asr #3
 	cset	w0, eq
 	ret
-                                        // -- End function
+

@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
-	.byte	191                             # 0xbf
+	.byte	191
+	.byte	191
+	.byte	191
+	.byte	191
+	.byte	191
+	.byte	191
+	.byte	191
+	.byte	191
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,14 +33,14 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
+	.byte	32
+	.byte	32
+	.byte	32
+	.byte	32
+	.byte	32
+	.byte	32
+	.byte	32
+	.byte	32
 	.zero	1
 	.zero	1
 	.zero	1
@@ -49,21 +49,22 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
 	vpaddb	.LCPI0_2(%rip), %xmm0, %xmm0 {%k1}
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
-	.byte	159                             # 0x9f
+	.byte	159
+	.byte	159
+	.byte	159
+	.byte	159
+	.byte	159
+	.byte	159
+	.byte	159
+	.byte	159
 	.zero	1
 	.zero	1
 	.zero	1
@@ -73,14 +74,14 @@ func00000000000000c8:                   # @func00000000000000c8
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
-	.byte	26                              # 0x1a
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
+	.byte	26
 	.zero	1
 	.zero	1
 	.zero	1
@@ -90,14 +91,14 @@ func00000000000000c8:                   # @func00000000000000c8
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
-	.byte	224                             # 0xe0
+	.byte	224
+	.byte	224
+	.byte	224
+	.byte	224
+	.byte	224
+	.byte	224
+	.byte	224
+	.byte	224
 	.zero	1
 	.zero	1
 	.zero	1
@@ -106,9 +107,10 @@ func00000000000000c8:                   # @func00000000000000c8
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k1
 	vpaddb	.LCPI1_2(%rip), %xmm0, %xmm0 {%k1}
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	retq
+

@@ -1,40 +1,35 @@
-func00000000000000ff:                   // @func00000000000000ff
-// %bb.0:                               // %entry
-	mov	w8, #85                         // =0x55
+func00000000000000ff:
+	mov	w8, #85
 	mul	w9, w1, w8
 	add	w9, w9, w2, uxtb
 	madd	w0, w9, w8, w0
 	ret
-                                        // -- End function
-func0000000000000155:                   // @func0000000000000155
-// %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+
+func0000000000000155:
+	mov	w8, #10
 	mul	w9, w1, w8
 	add	w9, w9, w2, uxtb
 	madd	w0, w9, w8, w0
 	ret
-                                        // -- End function
-func00000000000001ff:                   // @func00000000000001ff
-// %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+
+func00000000000001ff:
+	mov	w8, #10
 	mul	w9, w1, w8
 	add	w9, w9, w2, uxtb
 	madd	w0, w9, w8, w0
 	ret
-                                        // -- End function
-func00000000000000fd:                   // @func00000000000000fd
-// %bb.0:                               // %entry
-	mov	w8, #91                         // =0x5b
+
+func00000000000000fd:
+	mov	w8, #91
 	mul	w9, w1, w8
 	add	w9, w9, w2, uxtb
 	madd	w0, w9, w8, w0
 	ret
-                                        // -- End function
-func00000000000001f8:                   // @func00000000000001f8
-// %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+
+func00000000000001f8:
+	mov	w8, #10
 	mul	w9, w1, w8
 	add	w9, w9, w2, uxtb
 	madd	w0, w9, w8, w0
 	ret
-                                        // -- End function
+

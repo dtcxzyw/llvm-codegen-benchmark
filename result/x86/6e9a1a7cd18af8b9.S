@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	vcvttss2si	%xmm0, %eax
 	decl	%esi
 	cmpl	%eax, %esi
@@ -6,7 +6,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	decl	%esi
 	vcvttss2si	%xmm0, %eax
 	cmpl	%esi, %eax
@@ -14,7 +15,8 @@ func000000000000004a:                   # @func000000000000004a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	decl	%esi
 	vcvttss2si	%xmm0, %eax
 	cmpl	%esi, %eax
@@ -22,7 +24,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vcvttss2si	%xmm0, %eax
 	decl	%esi
 	cmpl	%eax, %esi
@@ -30,3 +33,4 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
+

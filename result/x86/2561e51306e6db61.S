@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	leaq	-1(%rsi), %rax
 	shrq	$2, %rsi
 	andq	$-2, %rsi
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	movq	%rsi, %rcx
 	leaq	-1(%rsi), %rax
 	shrq	$3, %rsi
@@ -15,3 +16,4 @@ func000000000000000d:                   # @func000000000000000d
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

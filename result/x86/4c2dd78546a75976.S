@@ -1,5 +1,5 @@
-func0000000000000058:                   # @func0000000000000058
-	andl	$34304, %esi                    # imm = 0x8600
+func0000000000000058:
+	andl	$34304, %esi
 	cmpl	$1, %esi
 	movl	$2, %eax
 	sbbl	$0, %eax
@@ -7,3 +7,4 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	%ecx, %eax
 	seta	%al
 	retq
+

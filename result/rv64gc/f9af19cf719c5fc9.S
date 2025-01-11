@@ -1,8 +1,8 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_2
 	li	a2, -6
-.LBB0_2:                                # %entry
+.LBB0_2:
 	add	a0, a0, a2
 	lui	a1, 599186
 	addiw	a0, a0, 7
@@ -14,11 +14,12 @@ func0000000000000000:                   # @func0000000000000000
 	sraiw	a0, a0, 2
 	add	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
 	li	a2, -6
-.LBB1_2:                                # %entry
+.LBB1_2:
 	add	a0, a0, a2
 	lui	a1, 599186
 	addiw	a0, a0, 7
@@ -30,3 +31,4 @@ func0000000000000008:                   # @func0000000000000008
 	sraiw	a0, a0, 2
 	add	a0, a0, a1
 	ret
+

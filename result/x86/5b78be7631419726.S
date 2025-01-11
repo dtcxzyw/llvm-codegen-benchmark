@@ -1,4 +1,4 @@
-func0000000000000d94:                   # @func0000000000000d94
+func0000000000000d94:
 	shrl	$30, %edx
 	andl	$1, %edx
 	incq	%rsi
@@ -6,3 +6,4 @@ func0000000000000d94:                   # @func0000000000000d94
 	setb	%al
 	andb	%dl, %al
 	retq
+

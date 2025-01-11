@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	shrq	$5, %rsi
 	leaq	1(%rsi), %rax
 	movl	%eax, %ecx
@@ -8,7 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmoveq	%rcx, %rdx
 	subq	%rdx, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	shrq	$2, %rsi
 	leaq	1(%rsi), %rax
 	movl	%eax, %ecx
@@ -18,7 +19,8 @@ func000000000000000d:                   # @func000000000000000d
 	cmoveq	%rcx, %rdx
 	subq	%rdx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	shrq	%rsi
 	leaq	1(%rsi), %rax
 	movl	%eax, %ecx
@@ -28,7 +30,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmoveq	%rcx, %rdx
 	subq	%rdx, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	shrq	%rsi
 	leaq	1(%rsi), %rax
 	movl	%eax, %ecx
@@ -38,3 +41,4 @@ func0000000000000009:                   # @func0000000000000009
 	cmoveq	%rcx, %rdx
 	subq	%rdx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000002210:                   # @func0000000000002210
+func0000000000002210:
 	fli.s	fa5, 1.0
 	feq.s	a0, fa1, fa5
 	fmv.w.x	fa4, zero
@@ -7,7 +7,8 @@ func0000000000002210:                   # @func0000000000002210
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000002698:                   # @func0000000000002698
+
+func0000000000002698:
 	fli.s	fa5, inf
 	lui	a0, 798736
 	flt.s	a1, fa1, fa5
@@ -21,3 +22,4 @@ func0000000000002698:                   # @func0000000000002698
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

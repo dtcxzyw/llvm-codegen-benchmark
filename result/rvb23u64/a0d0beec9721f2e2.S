@@ -1,4 +1,4 @@
-func0000000000000c28:                   # @func0000000000000c28
+func0000000000000c28:
 	lui	a3, 32
 	addiw	a3, a3, -31
 	sltu	a3, a3, a2
@@ -13,3 +13,4 @@ func0000000000000c28:                   # @func0000000000000c28
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

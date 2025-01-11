@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	sext.w	a2, a0
 	li	a0, 1
 	beq	a2, a0, .LBB0_2
@@ -35,9 +35,10 @@ func00000000000000e1:                   # @func00000000000000e1
 	srliw	a0, a0, 24
 	li	a1, 32
 	sub	a0, a1, a0
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func00000000000000e6:                   # @func00000000000000e6
+
+func00000000000000e6:
 	sext.w	a2, a0
 	li	a0, 2
 	blt	a2, a0, .LBB1_2
@@ -74,9 +75,10 @@ func00000000000000e6:                   # @func00000000000000e6
 	srliw	a0, a0, 24
 	li	a1, 34
 	sub	a0, a1, a0
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	sext.w	a0, a0
 	srliw	a2, a1, 1
 	lui	a3, 349525
@@ -115,3 +117,4 @@ func00000000000000e4:                   # @func00000000000000e4
 	addi	a0, a0, -1
 	and	a0, a0, a3
 	ret
+

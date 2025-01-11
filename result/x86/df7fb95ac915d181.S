@@ -1,4 +1,4 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000141:
 	shrdq	$32, %r9, %r8
 	shrq	$32, %r9
 	addq	%rdx, %rdi
@@ -8,3 +8,4 @@ func0000000000000141:                   # @func0000000000000141
 	orq	%rdi, %rsi
 	sete	%al
 	retq
+

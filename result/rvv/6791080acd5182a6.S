@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	li	a0, -1000
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v10, v8, 0
 	vmseq.vi	v0, v10, 0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 262083
 	slli	a0, a0, 2
 	addi	a0, a0, -576
@@ -18,7 +19,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 99
 	vmsgtu.vx	v0, v10, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	li	a0, -1000
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,3 +29,4 @@ func000000000000000c:                   # @func000000000000000c
 	vnsrl.wi	v10, v8, 0
 	vmsne.vi	v0, v10, 0
 	ret
+

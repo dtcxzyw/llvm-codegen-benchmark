@@ -1,10 +1,9 @@
 .LCPI0_0:
-	.xword	0x3ed2fcc27d8f32a0              // double 4.526935264825713E-6
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+	.xword	0x3ed2fcc27d8f32a0
+func0000000000000000:
 	adrp	x8, .LCPI0_0
 	ldr	d1, [x8, :lo12:.LCPI0_0]
 	fmul	d0, d0, d1
 	fcvt	s0, d0
 	ret
-                                        // -- End function
+

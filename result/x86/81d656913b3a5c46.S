@@ -1,17 +1,21 @@
-func0000000000000078:                   # @func0000000000000078
-	testl	$31744, %edi                    # imm = 0x7C00
+func0000000000000078:
+	testl	$31744, %edi
 	setne	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	testl	$32767, %edi                    # imm = 0x7FFF
+
+func0000000000000061:
+	testl	$32767, %edi
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	notl	%edi
-	testl	$31744, %edi                    # imm = 0x7C00
+	testl	$31744, %edi
 	setne	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
-	testl	$1023, %edi                     # imm = 0x3FF
+
+func000000000000006c:
+	testl	$1023, %edi
 	setne	%al
 	retq
+

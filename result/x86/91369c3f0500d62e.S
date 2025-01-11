@@ -1,31 +1,36 @@
-func000000000000006b:                   # @func000000000000006b
+func000000000000006b:
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000005b:                   # @func000000000000005b
+
+func000000000000005b:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	setbe	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	shll	$5, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
+

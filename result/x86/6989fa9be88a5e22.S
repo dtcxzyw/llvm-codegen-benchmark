@@ -1,4 +1,4 @@
-func0000000000000429:                   # @func0000000000000429
+func0000000000000429:
 	sarq	$3, %rdx
 	cmpq	%rdx, %rdi
 	setae	%cl
@@ -6,7 +6,8 @@ func0000000000000429:                   # @func0000000000000429
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000684:                   # @func0000000000000684
+
+func0000000000000684:
 	sarq	$4, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -14,15 +15,17 @@ func0000000000000684:                   # @func0000000000000684
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	sarq	$3, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
-	cmpq	$2048, %rsi                     # imm = 0x800
+	cmpq	$2048, %rsi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000185:                   # @func0000000000000185
+
+func0000000000000185:
 	sarq	$12, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -30,7 +33,8 @@ func0000000000000185:                   # @func0000000000000185
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	sarq	$3, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -38,10 +42,12 @@ func0000000000000424:                   # @func0000000000000424
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	sarq	$32, %rdx
 	xorq	%rdi, %rdx
 	xorq	$1, %rsi
 	orq	%rdx, %rsi
 	sete	%al
 	retq
+

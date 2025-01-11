@@ -1,4 +1,4 @@
-func0000000000000c2c:                   # @func0000000000000c2c
+func0000000000000c2c:
 	movzwl	%dx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -7,3 +7,4 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	setne	%al
 	orb	%cl, %al
 	retq
+

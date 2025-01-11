@@ -1,4 +1,4 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000000e4:
 	addi	a2, a1, 38
 	li	a3, 36
 	mul	a1, a1, a3
@@ -9,3 +9,4 @@ func00000000000000e4:                   # @func00000000000000e4
 	divuw	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+

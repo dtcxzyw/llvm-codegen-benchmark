@@ -1,8 +1,9 @@
-func00000000000000a6:                   # @func00000000000000a6
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+func00000000000000a6:
+	vpmovzxdq	%xmm2, %ymm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	slli	a2, a2, 32
 	srliw	a1, a1, 16
 	slli	a1, a1, 16
@@ -8,7 +8,8 @@ func000000000000000b:                   # @func000000000000000b
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slli	a2, a2, 63
 	bseti	a3, zero, 62
 	and	a1, a1, a3
@@ -17,7 +18,8 @@ func0000000000000003:                   # @func0000000000000003
 	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	slli	a2, a2, 16
 	lui	a3, 16
 	andi	a0, a0, 255
@@ -26,13 +28,15 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andi	a2, a2, 1
 	sh1add	a1, a1, a2
 	andi	a0, a0, 14
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	lui	a3, 64
 	slli	a1, a1, 21
 	bclri	a0, a0, 18
@@ -41,14 +45,16 @@ func000000000000000e:                   # @func000000000000000e
 	bclri	a0, a0, 21
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a2, a2, 1
 	sh1add	a1, a1, a2
 	bseti	a2, zero, 62
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a2, a2, 1
 	bseti	a3, zero, 46
 	and	a1, a1, a3
@@ -57,3 +63,4 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
+

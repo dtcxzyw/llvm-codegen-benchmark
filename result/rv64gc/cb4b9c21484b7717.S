@@ -1,8 +1,8 @@
-func0000000000000093:                   # @func0000000000000093
+func0000000000000093:
 	mv	a3, a1
 	bltu	a2, a1, .LBB0_2
 	mv	a3, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	not	a1, a1
 	bgeu	a1, a3, .LBB0_4
 	li	a0, -15
@@ -12,3 +12,4 @@ func0000000000000093:                   # @func0000000000000093
 	li	a1, 40
 	mul	a0, a0, a1
 	ret
+

@@ -1,18 +1,20 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 8
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v12, v10, v8
 	vmor.mm	v0, v0, v12
 	ret
-func0000000000000154:                   # @func0000000000000154
+
+func0000000000000154:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, -1
 	vmsgt.vi	v10, v8, 6
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	li	a0, -48
@@ -21,14 +23,16 @@ func0000000000000014:                   # @func0000000000000014
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, -1
 	vmsleu.vi	v10, v8, 2
 	vmor.mm	v0, v10, v0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	lui	a0, 1048568
@@ -36,7 +40,8 @@ func000000000000000c:                   # @func000000000000000c
 	vmsle.vi	v10, v8, -1
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	li	a0, -64
@@ -44,7 +49,8 @@ func0000000000000148:                   # @func0000000000000148
 	vmsleu.vi	v10, v8, 7
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	li	a0, -35
@@ -54,7 +60,8 @@ func0000000000000102:                   # @func0000000000000102
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000150:                   # @func0000000000000150
+
+func0000000000000150:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, -1
@@ -62,3 +69,4 @@ func0000000000000150:                   # @func0000000000000150
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
+

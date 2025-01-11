@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	sete	%al
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
@@ -14,7 +15,8 @@ func0000000000000006:                   # @func0000000000000006
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	xorl	%eax, %eax
 	shrq	$53, %rdx
 	setne	%al
@@ -22,7 +24,8 @@ func0000000000000063:                   # @func0000000000000063
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
@@ -30,7 +33,8 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
@@ -38,3 +42,4 @@ func0000000000000005:                   # @func0000000000000005
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
+

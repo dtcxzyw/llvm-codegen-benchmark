@@ -1,6 +1,6 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movl	%edx, %eax
-	orl	$1048576, %eax                  # imm = 0x100000
+	orl	$1048576, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
 	movl	%eax, %ecx
@@ -9,3 +9,4 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%eax, %ecx
 	movzbl	%cl, %eax
 	retq
+

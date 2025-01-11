@@ -1,5 +1,5 @@
-func0000000000000021:                   # @func0000000000000021
-	testl	$2048, %edx                     # imm = 0x800
+func0000000000000021:
+	testl	$2048, %edx
 	movl	$-49, %eax
 	movl	$-55, %ecx
 	cmovel	%eax, %ecx
@@ -8,3 +8,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	$-55, %ecx
 	sete	%al
 	retq
+

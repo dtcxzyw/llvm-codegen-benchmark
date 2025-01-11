@@ -1,5 +1,4 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	add	w8, w1, #31
 	cmp	w1, #0
 	csel	w8, w8, w1, lt
@@ -7,9 +6,8 @@ func000000000000000c:                   // @func000000000000000c
 	add	x8, x0, w8, sxtw #2
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+
+func000000000000000e:
 	add	w8, w1, #7
 	cmp	w1, #0
 	csel	w8, w8, w1, lt
@@ -17,18 +15,16 @@ func000000000000000e:                   // @func000000000000000e
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	add	w8, w1, w1, lsr #31
 	asr	w8, w8, #1
 	add	x8, x0, w8, sxtw #2
 	sub	x0, x8, #4
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	w8, #21846                      // =0x5556
+
+func0000000000000000:
+	mov	w8, #21846
 	movk	w8, #21845, lsl #16
 	smull	x8, w1, w8
 	lsr	x9, x8, #63
@@ -37,20 +33,18 @@ func0000000000000000:                   // @func0000000000000000
 	add	x8, x0, w8, sxtw #2
 	sub	x0, x8, #4
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	add	w8, w1, w1, lsr #31
 	asr	w8, w8, #1
 	add	x8, x0, w8, sxtw #3
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	add	w8, w1, w1, lsr #31
 	asr	w8, w8, #1
 	add	x8, x0, w8, sxtw #3
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
+

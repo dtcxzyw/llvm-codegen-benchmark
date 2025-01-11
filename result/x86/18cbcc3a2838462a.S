@@ -1,11 +1,13 @@
-func0000000000000018:                   # @func0000000000000018
-	andl	$61440, %edi                    # imm = 0xF000
+func0000000000000018:
+	andl	$61440, %edi
 	xorl	%eax, %eax
-	cmpl	$28672, %edi                    # imm = 0x7000
+	cmpl	$28672, %edi
 	setne	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+
+func0000000000000118:
 	xorl	%eax, %eax
-	testl	$65280, %edi                    # imm = 0xFF00
+	testl	$65280, %edi
 	setne	%al
 	retq
+

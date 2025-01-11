@@ -1,4 +1,4 @@
-func0000000000000090:                   # @func0000000000000090
+func0000000000000090:
 	addi	a3, a2, -1
 	not	a2, a2
 	lui	a4, 5
@@ -23,7 +23,8 @@ func0000000000000090:                   # @func0000000000000090
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	slli	a3, a2, 48
 	beqz	a3, .LBB1_2
 	addi	a3, a2, -1
@@ -56,7 +57,8 @@ func000000000000007f:                   # @func000000000000007f
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func00000000000000db:                   # @func00000000000000db
+
+func00000000000000db:
 	addi	a3, a2, -1
 	not	a2, a2
 	lui	a4, 5
@@ -81,7 +83,8 @@ func00000000000000db:                   # @func00000000000000db
 	add	a0, a0, a2
 	addi	a0, a0, -16
 	ret
-func000000000000009b:                   # @func000000000000009b
+
+func000000000000009b:
 	addi	a3, a2, -1
 	not	a2, a2
 	lui	a4, 5
@@ -106,3 +109,4 @@ func000000000000009b:                   # @func000000000000009b
 	add	a0, a0, a2
 	addi	a0, a0, -16
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0xc014000000000000              # double -5
-func0000000000000014:                   # @func0000000000000014
+	.quad	0xc014000000000000
+func0000000000000014:
 	movl	%esi, %eax
 	orq	%rdi, %rax
 	vmovq	%rax, %xmm1
@@ -8,3 +8,4 @@ func0000000000000014:                   # @func0000000000000014
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	retq
+

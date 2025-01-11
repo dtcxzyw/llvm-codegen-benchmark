@@ -1,4 +1,4 @@
-func000000000000005d:                   # @func000000000000005d
+func000000000000005d:
 	li	a0, 292
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vrsub.vx	v8, v8, a0
@@ -16,3 +16,4 @@ func000000000000005d:                   # @func000000000000005d
 	li	a0, 27
 	vwmaccu.vx	v8, a0, v10
 	ret
+

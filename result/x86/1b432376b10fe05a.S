@@ -1,14 +1,15 @@
-func0000000000000c08:                   # @func0000000000000c08
+func0000000000000c08:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
 	cmpq	$1, %rdx
 	sbbq	$-1, %rdi
-	cmpq	$256, %rdi                      # imm = 0x100
+	cmpq	$256, %rdi
 	setae	%al
 	retq
-func0000000000000c01:                   # @func0000000000000c01
+
+func0000000000000c01:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%esi, %esi
@@ -19,3 +20,4 @@ func0000000000000c01:                   # @func0000000000000c01
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
+

@@ -1,6 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	(%rsi,%rdx), %eax
 	subl	%edi, %eax
 	addl	$-2, %eax
-	andl	$-2147483648, %eax              # imm = 0x80000000
+	andl	$-2147483648, %eax
 	retq
+

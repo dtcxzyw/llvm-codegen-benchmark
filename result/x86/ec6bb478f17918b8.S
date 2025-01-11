@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	xorb	$31, %dil
 	movzbl	%dil, %eax
 	imull	$171, %eax, %eax
@@ -6,3 +6,4 @@ func0000000000000007:                   # @func0000000000000007
 	incb	%al
 	movzbl	%al, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	leaq	3(%rax), %rcx
@@ -7,16 +7,18 @@ func0000000000000015:                   # @func0000000000000015
 	andq	$-4, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	leaq	2047(%rax), %rcx
 	testq	%rax, %rax
 	cmovnsq	%rax, %rcx
-	andq	$-2048, %rcx                    # imm = 0xF800
+	andq	$-2048, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	movq	%rax, %rcx
@@ -25,3 +27,4 @@ func0000000000000014:                   # @func0000000000000014
 	andq	$-2, %rcx
 	subq	%rcx, %rax
 	retq
+

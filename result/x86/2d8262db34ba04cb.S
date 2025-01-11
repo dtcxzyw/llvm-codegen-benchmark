@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	andb	$1, %dil
 	addl	%esi, %esi
 	movslq	%esi, %rcx
@@ -8,7 +8,8 @@ func0000000000000005:                   # @func0000000000000005
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andb	$1, %dil
 	addl	%esi, %esi
 	movslq	%esi, %rcx
@@ -18,7 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andb	$1, %dil
 	addl	%esi, %esi
 	movslq	%esi, %rcx
@@ -28,3 +30,4 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
+

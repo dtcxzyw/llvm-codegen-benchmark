@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -6,7 +6,8 @@ func000000000000002a:                   # @func000000000000002a
 	setge	%al
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -14,7 +15,8 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	leal	-2(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
@@ -22,11 +24,13 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	leal	2(%rdx), %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax
-	cmpl	$-1074, %eax                    # imm = 0xFBCE
+	cmpl	$-1074, %eax
 	setl	%al
 	andb	%dil, %al
 	retq
+

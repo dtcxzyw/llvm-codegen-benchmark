@@ -1,30 +1,33 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000058:
 	sarq	$4, %rdx
-	movabsq	$-8198552921648689607, %rax     # imm = 0x8E38E38E38E38E39
+	movabsq	$-8198552921648689607, %rax
 	imulq	%rdx, %rax
 	cmpq	%rsi, %rax
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000052:                   # @func0000000000000052
+
+func0000000000000052:
 	sarq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	cmpq	%rsi, %rax
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	sarq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	cmpq	%rsi, %rax
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movq	%rdx, %rax
-	movabsq	$2361183241434822607, %rcx      # imm = 0x20C49BA5E353F7CF
+	movabsq	$2361183241434822607, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -34,25 +37,28 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	sarq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax
 	cmpq	%rsi, %rax
 	setbe	%al
 	orb	%dil, %al
 	retq
-func000000000000004e:                   # @func000000000000004e
+
+func000000000000004e:
 	sarq	$3, %rdx
-	movabsq	$-3208129404123400281, %rax     # imm = 0xD37A6F4DE9BD37A7
+	movabsq	$-3208129404123400281, %rax
 	imulq	%rdx, %rax
 	cmpq	%rsi, %rax
 	setle	%al
 	orb	%dil, %al
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	movq	%rdx, %rcx
-	movabsq	$-5614226457215950491, %rdx     # imm = 0xB21642C8590B2165
+	movabsq	$-5614226457215950491, %rdx
 	movq	%rcx, %rax
 	imulq	%rdx
 	addq	%rcx, %rdx
@@ -64,3 +70,4 @@ func000000000000000e:                   # @func000000000000000e
 	setle	%al
 	orb	%dil, %al
 	retq
+

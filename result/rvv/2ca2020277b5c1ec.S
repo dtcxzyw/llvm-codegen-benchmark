@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.word	0xbd23d70a                      # float -0.0399999991
+	.word	0xbd23d70a
 .LCPI0_1:
-	.quad	0xbc91a62633145c07              # double -6.123233995736766E-17
-func0000000000000000:                   # @func0000000000000000
+	.quad	0xbc91a62633145c07
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
@@ -14,3 +14,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfwadd.wv	v8, v8, v16
 	ret
+

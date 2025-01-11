@@ -1,21 +1,23 @@
 .LCPI0_0:
-	.quad	17                              # 0x11
-func0000000000000021:                   # @func0000000000000021
+	.quad	17
+func0000000000000021:
 	vptestnmd	%xmm1, %xmm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	knotw	%k0, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [17,17,17,17]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z}
 	retq
+
 .LCPI1_0:
-	.long	65536                           # 0x10000
+	.long	65536
 .LCPI1_1:
-	.quad	-4                              # 0xfffffffffffffffc
+	.quad	-4
 .LCPI1_2:
-	.quad	-3                              # 0xfffffffffffffffd
-func0000000000000024:                   # @func0000000000000024
+	.quad	-3
+func0000000000000024:
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k1 {%k1}
-	vpbroadcastq	.LCPI1_1(%rip), %ymm0   # ymm0 = [18446744073709551612,18446744073709551612,18446744073709551612,18446744073709551612]
-	vpbroadcastq	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [18446744073709551613,18446744073709551613,18446744073709551613,18446744073709551613]
+	vpbroadcastq	.LCPI1_1(%rip), %ymm0
+	vpbroadcastq	.LCPI1_2(%rip), %ymm0 {%k1}
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000031:
 	movl	$32, %ecx
 	subl	%edx, %ecx
 	testb	$1, %sil
@@ -7,3 +7,4 @@ func0000000000000031:                   # @func0000000000000031
 	shll	$4, %edi
 	addl	%edi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000202:                   # @func0000000000000202
+func0000000000000202:
 	addl	$-65, %edx
 	cmpw	$26, %dx
 	setb	%cl
@@ -7,7 +7,8 @@ func0000000000000202:                   # @func0000000000000202
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000208:                   # @func0000000000000208
+
+func0000000000000208:
 	addl	$-17, %edx
 	cmpw	$71, %dx
 	setb	%cl
@@ -16,7 +17,8 @@ func0000000000000208:                   # @func0000000000000208
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000210:                   # @func0000000000000210
+
+func0000000000000210:
 	addl	$-88, %edx
 	cmpw	$49, %dx
 	setb	%cl
@@ -25,3 +27,4 @@ func0000000000000210:                   # @func0000000000000210
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

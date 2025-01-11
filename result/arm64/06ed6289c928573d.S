@@ -1,7 +1,6 @@
-func00000000000000c4:                   // @func00000000000000c4
-// %bb.0:                               // %entry
+func00000000000000c4:
 	fmov	s2, #1.00000000
-	mov	w8, #9216                       // =0x2400
+	mov	w8, #9216
 	tst	w0, #0x1
 	movk	w8, #18804, lsl #16
 	fmaxnm	s1, s1, s2
@@ -10,9 +9,8 @@ func00000000000000c4:                   // @func00000000000000c4
 	fcmp	s1, s0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+
+func0000000000000042:
 	fmov	s2, #-1.00000000
 	tst	w0, #0x1
 	fmaxnm	s1, s1, s2
@@ -20,9 +18,8 @@ func0000000000000042:                   // @func0000000000000042
 	fcmp	s1, s0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fmov	s2, #1.00000000
 	tst	w0, #0x1
 	fminnm	s1, s1, s2
@@ -30,9 +27,8 @@ func0000000000000022:                   // @func0000000000000022
 	fcmp	s1, s0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000043:                   // @func0000000000000043
-// %bb.0:                               // %entry
+
+func0000000000000043:
 	movi	d2, #0000000000000000
 	tst	w0, #0x1
 	fmaxnm	s1, s1, s2
@@ -41,9 +37,8 @@ func0000000000000043:                   // @func0000000000000043
 	fcmp	s1, s0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000045:                   // @func0000000000000045
-// %bb.0:                               // %entry
+
+func0000000000000045:
 	movi	d2, #0000000000000000
 	tst	w0, #0x1
 	fmaxnm	s1, s1, s2
@@ -52,4 +47,4 @@ func0000000000000045:                   // @func0000000000000045
 	fcmp	s1, s0
 	cset	w0, hi
 	ret
-                                        // -- End function
+

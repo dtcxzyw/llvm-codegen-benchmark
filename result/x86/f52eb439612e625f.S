@@ -1,21 +1,24 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	movzwl	%si, %eax
-	movabsq	$4611686018427387903, %rcx      # imm = 0x3FFFFFFFFFFFFFFF
+	movabsq	$4611686018427387903, %rcx
 	subq	%rdi, %rcx
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	movzwl	%si, %eax
-	movl	$420, %ecx                      # imm = 0x1A4
+	movl	$420, %ecx
 	subq	%rdi, %rcx
 	cmpq	%rax, %rcx
 	setb	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	movzwl	%si, %eax
-	movl	$3406, %ecx                     # imm = 0xD4E
+	movl	$3406, %ecx
 	subl	%edi, %ecx
 	cmpl	%eax, %ecx
 	setb	%al
 	retq
+

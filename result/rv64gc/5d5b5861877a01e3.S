@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	mul	a0, a0, a1
 	lui	a1, 335544
 	addiw	a0, a0, 50
@@ -10,11 +10,12 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, 255
 	bge	a0, a1, .LBB0_3
 	blez	a0, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	li	a0, 255
 	bgtz	a0, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	li	a0, 1
 	ret
+

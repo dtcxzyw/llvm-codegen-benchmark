@@ -1,16 +1,14 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	scvtf	s1, w0
 	fadd	s0, s0, s1
 	fcmp	s0, s1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	scvtf	s1, w0
 	fadd	s0, s0, s1
 	fcmp	s0, s1
 	cset	w0, lt
 	ret
-                                        // -- End function
+

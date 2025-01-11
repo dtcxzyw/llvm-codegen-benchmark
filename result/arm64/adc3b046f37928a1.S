@@ -1,14 +1,12 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+func0000000000000005:
 	ucvtf	d2, w0
 	fadd	d0, d0, d1
 	fdiv	d0, d0, d2
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	ucvtf	d2, w0
 	fadd	d0, d0, d1
 	fdiv	d0, d0, d2
 	ret
-                                        // -- End function
+

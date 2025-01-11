@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000041:
 	andl	$1, %edx
 	shll	$7, %edx
 	orl	%esi, %edx
@@ -7,3 +7,4 @@ func0000000000000041:                   # @func0000000000000041
 	testl	%eax, %eax
 	sete	%al
 	retq
+

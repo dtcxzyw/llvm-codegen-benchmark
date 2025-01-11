@@ -1,4 +1,4 @@
-func0000000000001c34:                   # @func0000000000001c34
+func0000000000001c34:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -7,7 +7,8 @@ func0000000000001c34:                   # @func0000000000001c34
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000d94:                   # @func0000000000000d94
+
+func0000000000000d94:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -16,7 +17,8 @@ func0000000000000d94:                   # @func0000000000000d94
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000e94:                   # @func0000000000000e94
+
+func0000000000000e94:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -25,7 +27,8 @@ func0000000000000e94:                   # @func0000000000000e94
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000001686:                   # @func0000000000001686
+
+func0000000000001686:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -34,7 +37,8 @@ func0000000000001686:                   # @func0000000000001686
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000c34:                   # @func0000000000000c34
+
+func0000000000000c34:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -43,7 +47,8 @@ func0000000000000c34:                   # @func0000000000000c34
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000001cd4:                   # @func0000000000001cd4
+
+func0000000000001cd4:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -52,7 +57,8 @@ func0000000000001cd4:                   # @func0000000000001cd4
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000d54:                   # @func0000000000000d54
+
+func0000000000000d54:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -61,7 +67,8 @@ func0000000000000d54:                   # @func0000000000000d54
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000001d54:                   # @func0000000000001d54
+
+func0000000000001d54:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -70,7 +77,8 @@ func0000000000001d54:                   # @func0000000000001d54
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000001d94:                   # @func0000000000001d94
+
+func0000000000001d94:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -79,7 +87,8 @@ func0000000000001d94:                   # @func0000000000001d94
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000d14:                   # @func0000000000000d14
+
+func0000000000000d14:
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -88,3 +97,4 @@ func0000000000000d14:                   # @func0000000000000d14
 	setae	%al
 	andb	%cl, %al
 	retq
+

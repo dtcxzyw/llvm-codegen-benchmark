@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
 	vpsrlq	$3, %ymm2, %ymm2
@@ -8,7 +8,8 @@ func000000000000000c:                   # @func000000000000000c
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpsrlq	$3, %ymm2, %ymm2
@@ -18,3 +19,4 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000003c1:                   # @func00000000000003c1
+func00000000000003c1:
 	addl	%edx, %esi
 	andb	$31, %sil
 	negb	%sil
@@ -6,3 +6,4 @@ func00000000000003c1:                   # @func00000000000003c1
 	testl	%eax, %eax
 	sete	%al
 	retq
+

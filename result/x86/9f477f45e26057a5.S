@@ -1,5 +1,5 @@
-func00000000000001d2:                   # @func00000000000001d2
-	movabsq	$-12884901888, %rax             # imm = 0xFFFFFFFD00000000
+func00000000000001d2:
+	movabsq	$-12884901888, %rax
 	addq	%rdx, %rax
 	sarq	$32, %rax
 	xorl	%ecx, %ecx
@@ -7,8 +7,9 @@ func00000000000001d2:                   # @func00000000000001d2
 	cmovaeq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
-func0000000000000186:                   # @func0000000000000186
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000186:
+	movabsq	$-4294967296, %rax
 	addq	%rdx, %rax
 	sarq	$32, %rax
 	testq	%rsi, %rsi
@@ -16,8 +17,9 @@ func0000000000000186:                   # @func0000000000000186
 	cmovneq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func0000000000000086:                   # @func0000000000000086
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+
+func0000000000000086:
+	movabsq	$-4294967296, %rax
 	addq	%rdx, %rax
 	sarq	$32, %rax
 	testq	%rsi, %rsi
@@ -25,3 +27,4 @@ func0000000000000086:                   # @func0000000000000086
 	cmovneq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
+

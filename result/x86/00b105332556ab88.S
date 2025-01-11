@@ -1,11 +1,12 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setge	%al
 	andq	$-3, %rdi
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	xorl	%eax, %eax
 	cmpl	$3, %esi
 	sete	%al
@@ -13,14 +14,16 @@ func0000000000000003:                   # @func0000000000000003
 	andq	$-33, %rdi
 	orq	%rdi, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	notl	%esi
 	shrl	$18, %esi
-	andl	$8192, %esi                     # imm = 0x2000
-	andq	$-8193, %rdi                    # imm = 0xDFFF
+	andl	$8192, %esi
+	andq	$-8193, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	xorl	%ecx, %ecx
 	cmpl	$2, %esi
 	setae	%cl
@@ -29,14 +32,16 @@ func0000000000000011:                   # @func0000000000000011
 	bzhiq	%rax, %rdi, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	xorl	%eax, %eax
 	cmpl	$-2, %esi
 	setb	%al
 	andq	$-5, %rdi
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	xorl	%ecx, %ecx
 	cmpl	$16, %esi
 	movl	$6, %eax
@@ -44,3 +49,4 @@ func0000000000000002:                   # @func0000000000000002
 	andq	$-256, %rdi
 	orq	%rdi, %rax
 	retq
+

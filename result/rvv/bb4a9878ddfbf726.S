@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	li	a0, 5
 	lui	a1, 524288
 	bseti	a0, a0, 33
@@ -15,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	vadd.vi	v10, v14, -1
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000002a8:                   # @func00000000000002a8
+
+func00000000000002a8:
 	li	a0, 5
 	lui	a1, 524288
 	bseti	a0, a0, 33
@@ -32,7 +33,8 @@ func00000000000002a8:                   # @func00000000000002a8
 	vadd.vi	v10, v14, -1
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000006a8:                   # @func00000000000006a8
+
+func00000000000006a8:
 	li	a0, 5
 	lui	a1, 524288
 	bseti	a0, a0, 33
@@ -49,3 +51,4 @@ func00000000000006a8:                   # @func00000000000006a8
 	vadd.vi	v10, v14, -1
 	vmsltu.vv	v0, v8, v10
 	ret
+

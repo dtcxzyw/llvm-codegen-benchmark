@@ -1,7 +1,7 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpextrd	$1, %xmm2, %ecx
 	vpextrd	$1, %xmm1, %eax
 	xorl	%edx, %edx
@@ -28,10 +28,11 @@ func0000000000000108:                   # @func0000000000000108
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpextrd	$1, %xmm2, %ecx
 	vpextrd	$1, %xmm1, %eax
 	xorl	%edx, %edx
@@ -58,10 +59,11 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000118:                   # @func0000000000000118
+
+func0000000000000118:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpextrd	$1, %xmm2, %ecx
 	vpextrd	$1, %xmm1, %eax
 	xorl	%edx, %edx
@@ -88,3 +90,4 @@ func0000000000000118:                   # @func0000000000000118
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

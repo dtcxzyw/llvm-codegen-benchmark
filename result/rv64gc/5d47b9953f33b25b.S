@@ -1,4 +1,4 @@
-func0000000000000e8a:                   # @func0000000000000e8a
+func0000000000000e8a:
 	li	a2, -1
 	srli	a2, a2, 1
 	xor	a2, a2, a0
@@ -7,3 +7,4 @@ func0000000000000e8a:                   # @func0000000000000e8a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

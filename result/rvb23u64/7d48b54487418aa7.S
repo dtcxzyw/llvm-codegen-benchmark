@@ -1,4 +1,4 @@
-func000000000000030a:                   # @func000000000000030a
+func000000000000030a:
 	slli	a3, a2, 4
 	slli	a2, a2, 7
 	sub	a2, a2, a3
@@ -6,3 +6,4 @@ func000000000000030a:                   # @func000000000000030a
 	add	a1, a1, a2
 	sgtz	a0, a1
 	ret
+

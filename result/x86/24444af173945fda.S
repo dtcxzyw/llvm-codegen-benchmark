@@ -1,4 +1,4 @@
-func0000000000000124:                   # @func0000000000000124
+func0000000000000124:
 	decl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -6,7 +6,8 @@ func0000000000000124:                   # @func0000000000000124
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000126:                   # @func0000000000000126
+
+func0000000000000126:
 	incl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -14,7 +15,8 @@ func0000000000000126:                   # @func0000000000000126
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000128:                   # @func0000000000000128
+
+func0000000000000128:
 	addl	$5, %edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -22,7 +24,8 @@ func0000000000000128:                   # @func0000000000000128
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000121:                   # @func0000000000000121
+
+func0000000000000121:
 	incl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -30,7 +33,8 @@ func0000000000000121:                   # @func0000000000000121
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000129:                   # @func0000000000000129
+
+func0000000000000129:
 	decl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -38,7 +42,8 @@ func0000000000000129:                   # @func0000000000000129
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	decl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -46,7 +51,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	addl	$2, %edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -54,7 +60,8 @@ func0000000000000026:                   # @func0000000000000026
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addl	$2, %edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -62,7 +69,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func000000000000012a:                   # @func000000000000012a
+
+func000000000000012a:
 	incl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -70,7 +78,8 @@ func000000000000012a:                   # @func000000000000012a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func000000000000012c:                   # @func000000000000012c
+
+func000000000000012c:
 	incl	%edx
 	movslq	%edx, %rax
 	subq	%rsi, %rdi
@@ -78,3 +87,4 @@ func000000000000012c:                   # @func000000000000012c
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
+

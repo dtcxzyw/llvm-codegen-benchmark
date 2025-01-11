@@ -1,18 +1,15 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	add	x8, x1, w2, sxtw
 	orr	x0, x0, x8, lsl #15
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	add	w8, w1, w2
 	orr	x0, x0, x8, lsl #56
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	add	w8, w1, w2
 	orr	x0, x0, x8, lsl #32
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func00000000000008c1:                   # @func00000000000008c1
+func00000000000008c1:
 	add	a3, a0, a2
 	slti	a2, a2, 12
 	czero.nez	a1, a1, a2
@@ -7,3 +7,4 @@ func00000000000008c1:                   # @func00000000000008c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

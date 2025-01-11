@@ -1,9 +1,10 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andb	$-113, %dil
 	cmpb	$15, %dil
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movsbl	%dil, %eax
 	imull	$103, %eax, %eax
 	movzwl	%ax, %eax
@@ -18,3 +19,4 @@ func0000000000000006:                   # @func0000000000000006
 	cmpb	$5, %dil
 	setl	%al
 	retq
+

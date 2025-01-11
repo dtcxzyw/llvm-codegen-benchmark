@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	zext.h	a2, a2
 	li	a3, 1
 	czero.eqz	a3, a3, a1
@@ -7,3 +7,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	mul	a0, a0, a0
 	mul	a0, a0, a1
 	ret
+

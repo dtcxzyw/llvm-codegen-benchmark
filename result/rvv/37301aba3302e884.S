@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3f19999a                      # float 0.600000024
-func0000000000000001:                   # @func0000000000000001
+	.word	0x3f19999a
+func0000000000000001:
 	lui	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -12,3 +12,4 @@ func0000000000000001:                   # @func0000000000000001
 	vfmerge.vfm	v10, v10, fa5, v0
 	vfadd.vv	v8, v10, v8
 	ret
+

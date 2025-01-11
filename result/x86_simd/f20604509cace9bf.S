@@ -1,7 +1,7 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	vextracti128	$1, %ymm1, %xmm4
@@ -51,10 +51,11 @@ func0000000000000048:                   # @func0000000000000048
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	vextracti128	$1, %ymm1, %xmm4
@@ -104,10 +105,11 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	vextracti128	$1, %ymm1, %xmm4
@@ -157,3 +159,4 @@ func0000000000000058:                   # @func0000000000000058
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

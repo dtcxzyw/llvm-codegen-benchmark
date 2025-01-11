@@ -1,4 +1,4 @@
-func000000000000007f:                   # @func000000000000007f
+func000000000000007f:
 	movl	%edx, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	8(,%rax,4), %rax
@@ -7,7 +7,8 @@ func000000000000007f:                   # @func000000000000007f
 	cmovneq	%rax, %rcx
 	leaq	3040(%rdi,%rcx), %rax
 	retq
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	movl	%edx, %eax
 	shlq	$5, %rax
 	orq	$24, %rax
@@ -16,3 +17,4 @@ func0000000000000033:                   # @func0000000000000033
 	cmovneq	%rax, %rcx
 	leaq	56(%rdi,%rcx), %rax
 	retq
+

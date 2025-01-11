@@ -1,6 +1,6 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	shlq	$3, %rdi
-	movabsq	$2635249153387078803, %rax      # imm = 0x2492492492492493
+	movabsq	$2635249153387078803, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	subq	%rax, %rdi
@@ -10,9 +10,10 @@ func0000000000000005:                   # @func0000000000000005
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	retq
-func0000000000000045:                   # @func0000000000000045
+
+func0000000000000045:
 	shlq	$3, %rdi
-	movabsq	$2635249153387078803, %rax      # imm = 0x2492492492492493
+	movabsq	$2635249153387078803, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	subq	%rax, %rdi
@@ -22,3 +23,4 @@ func0000000000000045:                   # @func0000000000000045
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	notb	%sil
 	movl	$8, %eax
 	shlxq	%rsi, %rax, %rcx
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$16, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rcx
@@ -14,3 +15,4 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

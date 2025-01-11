@@ -1,4 +1,4 @@
-func0000000000003021:                   # @func0000000000003021
+func0000000000003021:
 	vptestmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -6,7 +6,8 @@ func0000000000003021:                   # @func0000000000003021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -14,7 +15,8 @@ func000000000000058c:                   # @func000000000000058c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -22,7 +24,8 @@ func0000000000000581:                   # @func0000000000000581
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -30,7 +33,8 @@ func000000000000042c:                   # @func000000000000042c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -38,16 +42,18 @@ func0000000000000421:                   # @func0000000000000421
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.long	1                               # 0x1
-func000000000000302c:                   # @func000000000000302c
+	.long	1
+func000000000000302c:
 	vptestmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k1
@@ -55,3 +61,4 @@ func000000000000302c:                   # @func000000000000302c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

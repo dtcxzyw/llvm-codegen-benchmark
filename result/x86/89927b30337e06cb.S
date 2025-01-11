@@ -1,5 +1,5 @@
-func000000000000004a:                   # @func000000000000004a
-	movl	$2147483645, %eax               # imm = 0x7FFFFFFD
+func000000000000004a:
+	movl	$2147483645, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	movl	%eax, %ecx
@@ -7,3 +7,4 @@ func000000000000004a:                   # @func000000000000004a
 	xorl	%edx, %edx
 	divq	%rcx
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
 	lui	a0, 1536
@@ -7,7 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 1024
 	vmseq.vx	v0, v8, a0
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
 	lui	a0, 2064
@@ -17,7 +18,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	li	a0, 514
 	vmseq.vx	v0, v8, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	vor.vv	v8, v10, v8
@@ -25,7 +27,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 4
 	vor.vv	v8, v8, v10
@@ -33,7 +36,8 @@ func0000000000000041:                   # @func0000000000000041
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	lui	a0, 16
@@ -44,7 +48,8 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a0, a0, 333
 	vmseq.vx	v0, v8, a0
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+
+func00000000000000d8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 4
 	li	a0, 31
@@ -53,7 +58,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
 	li	a0, -2048
@@ -63,3 +69,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	slli	a0, a0, 11
 	vmseq.vx	v0, v8, a0
 	ret
+

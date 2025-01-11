@@ -1,16 +1,14 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
-	mov	w8, #2048                       // =0x800
+func0000000000000042:
+	mov	w8, #2048
 	tst	w1, #0xff
 	ccmp	x0, x8, #0, eq
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
+
+func0000000000000058:
+	mov	w8, #255
 	bics	wzr, w8, w1
 	ccmp	x0, #1, #4, eq
 	cset	w0, ne
 	ret
-                                        // -- End function
+

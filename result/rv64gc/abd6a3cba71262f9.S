@@ -1,4 +1,4 @@
-func0000000000000075:                   # @func0000000000000075
+func0000000000000075:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 33
@@ -6,7 +6,8 @@ func0000000000000075:                   # @func0000000000000075
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 115
@@ -14,7 +15,8 @@ func000000000000007f:                   # @func000000000000007f
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 1048332
@@ -22,7 +24,8 @@ func000000000000005d:                   # @func000000000000005d
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000055:                   # @func0000000000000055
+
+func0000000000000055:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 115
@@ -30,7 +33,8 @@ func0000000000000055:                   # @func0000000000000055
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 163
@@ -38,7 +42,8 @@ func000000000000005c:                   # @func000000000000005c
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -47,7 +52,8 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -56,7 +62,8 @@ func000000000000001d:                   # @func000000000000001d
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 163
@@ -64,7 +71,8 @@ func000000000000004c:                   # @func000000000000004c
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	lui	a2, 115
@@ -72,7 +80,8 @@ func0000000000000040:                   # @func0000000000000040
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -80,7 +89,8 @@ func000000000000000c:                   # @func000000000000000c
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -88,7 +98,8 @@ func0000000000000004:                   # @func0000000000000004
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -97,10 +108,12 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	sext.w	a2, a2
 	add	a0, a0, a2
 	slli	a2, a1, 1
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

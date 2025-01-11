@@ -1,45 +1,38 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	sub	x8, x1, x2
 	madd	x0, x0, x8, x0
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	sub	x8, x1, x2
 	madd	x0, x0, x8, x0
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	sub	x8, x1, x2
 	madd	x0, x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	sub	x8, x1, x2
 	sub	x8, x8, #2
 	mul	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	mvn	x8, x2
 	add	x8, x1, x8
 	mul	x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	sub	x8, x1, x2
 	madd	x0, x0, x8, x0
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	mvn	x8, x2
 	add	x8, x1, x8
 	mul	x0, x0, x8
 	ret
-                                        // -- End function
+

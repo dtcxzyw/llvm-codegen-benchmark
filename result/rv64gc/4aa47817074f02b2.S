@@ -1,4 +1,4 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000003c:
 	sext.w	a3, a2
 	li	a4, 105
 	lui	a2, 1
@@ -18,7 +18,8 @@ func000000000000003c:                   # @func000000000000003c
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	sext.w	a2, a2
 	slli	a1, a1, 32
 	snez	a2, a2
@@ -27,7 +28,8 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000015f:                   # @func000000000000015f
+
+func000000000000015f:
 	sext.w	a2, a2
 	bgtz	a2, .LBB2_2
 	li	a2, 128
@@ -41,7 +43,8 @@ func000000000000015f:                   # @func000000000000015f
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000014f:                   # @func000000000000014f
+
+func000000000000014f:
 	sext.w	a2, a2
 	slli	a1, a1, 32
 	slti	a2, a2, 2
@@ -51,7 +54,8 @@ func000000000000014f:                   # @func000000000000014f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	sext.w	a2, a2
 	li	a3, 2
 	bltu	a3, a2, .LBB4_2
@@ -67,7 +71,8 @@ func0000000000000110:                   # @func0000000000000110
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	seqz	a2, a2
@@ -75,7 +80,8 @@ func0000000000000030:                   # @func0000000000000030
 	sub	a0, a0, a2
 	addi	a0, a0, 10
 	ret
-func0000000000000100:                   # @func0000000000000100
+
+func0000000000000100:
 	sext.w	a2, a2
 	li	a3, 2
 	bltu	a3, a2, .LBB6_2
@@ -93,7 +99,8 @@ func0000000000000100:                   # @func0000000000000100
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func000000000000008f:                   # @func000000000000008f
+
+func000000000000008f:
 	sext.w	a2, a2
 	li	a3, 254
 	bltu	a2, a3, .LBB7_2
@@ -110,3 +117,4 @@ func000000000000008f:                   # @func000000000000008f
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
+

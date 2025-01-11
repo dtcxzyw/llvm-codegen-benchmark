@@ -1,13 +1,15 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movl	%esi, %eax
-	andl	$-196612, %eax                  # imm = 0xFFFCFFFC
-	orl	$65536, %eax                    # imm = 0x10000
-	andl	$-131075, %esi                  # imm = 0xFFFDFFFD
+	andl	$-196612, %eax
+	orl	$65536, %eax
+	andl	$-131075, %esi
 	testb	$1, %dil
 	cmovnel	%esi, %eax
-	orl	$131072, %eax                   # imm = 0x20000
+	orl	$131072, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	andl	$251659265, %esi                # imm = 0xF000401
+
+func0000000000000002:
+	andl	$251659265, %esi
 	leal	-520094722(%rsi), %eax
 	retq
+

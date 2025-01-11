@@ -1,19 +1,22 @@
 .LCPI0_0:
-	.long	4026531840                      # 0xf0000000
-func0000000000000000:                   # @func0000000000000000
+	.long	4026531840
+func0000000000000000:
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 & mem)
+	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	63                              # 0x3f
-func0000000000000003:                   # @func0000000000000003
+	.long	63
+func0000000000000003:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandnd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	1                               # 0x1
-func0000000000000001:                   # @func0000000000000001
+	.long	1
+func0000000000000001:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandnd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+

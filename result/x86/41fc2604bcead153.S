@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	andb	$1, %dil
 	xorl	%eax, %eax
 	cmpb	$1, %dil
@@ -9,7 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	movq	$-1, %rax
 	cmovnsq	%rcx, %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	andb	$1, %dil
 	xorl	%eax, %eax
 	cmpb	$1, %dil
@@ -20,3 +21,4 @@ func000000000000004a:                   # @func000000000000004a
 	movq	$-1, %rax
 	cmovnsq	%rcx, %rax
 	retq
+

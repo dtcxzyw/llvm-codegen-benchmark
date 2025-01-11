@@ -1,4 +1,4 @@
-func0000000000000ccb:                   # @func0000000000000ccb
+func0000000000000ccb:
 	sext.w	a2, a1
 	sext.w	a0, a0
 	addiw	a1, a1, 704
@@ -7,7 +7,8 @@ func0000000000000ccb:                   # @func0000000000000ccb
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000004cb:                   # @func00000000000004cb
+
+func00000000000004cb:
 	sext.w	a2, a1
 	sext.w	a0, a0
 	addiw	a1, a1, 704
@@ -16,3 +17,4 @@ func00000000000004cb:                   # @func00000000000004cb
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

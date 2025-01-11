@@ -1,4 +1,4 @@
-func0000000000000037:                   # @func0000000000000037
+func0000000000000037:
 	movl	%edi, %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -9,3 +9,4 @@ func0000000000000037:                   # @func0000000000000037
 	subb	%cl, %al
 	orb	$48, %al
 	retq
+

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
-	.byte	64                              # 0x40
+	.byte	64
+	.byte	64
+	.byte	64
+	.byte	64
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,10 +16,10 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
-	.byte	63                              # 0x3f
+	.byte	63
+	.byte	63
+	.byte	63
+	.byte	63
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,19 +33,20 @@
 	.zero	1
 	.zero	1
 .LCPI0_2:
-	.byte	64                              # 0x40
+	.byte	64
 .LCPI0_3:
 	.zero	4,63
-func0000000000000003:                   # @func0000000000000003
-	vpbroadcastb	.LCPI0_2(%rip), %xmm1   # xmm1 = [64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64]
-	vpternlogd	$248, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1 # xmm1 = xmm1 | (xmm0 & mem)
-	vpmovzxbq	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
+func0000000000000003:
+	vpbroadcastb	.LCPI0_2(%rip), %xmm1
+	vpternlogd	$248, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1
+	vpmovzxbq	%xmm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -59,10 +60,10 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	248                             # 0xf8
-	.byte	248                             # 0xf8
-	.byte	248                             # 0xf8
-	.byte	248                             # 0xf8
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
 	.zero	1
 	.zero	1
 	.zero	1
@@ -76,11 +77,12 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.byte	1                               # 0x1
+	.byte	1
 .LCPI1_3:
 	.zero	4,248
-func0000000000000002:                   # @func0000000000000002
-	vpbroadcastb	.LCPI1_2(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vpternlogd	$248, .LCPI1_3(%rip){1to4}, %xmm0, %xmm1 # xmm1 = xmm1 | (xmm0 & mem)
-	vpmovzxbq	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
+func0000000000000002:
+	vpbroadcastb	.LCPI1_2(%rip), %xmm1
+	vpternlogd	$248, .LCPI1_3(%rip){1to4}, %xmm0, %xmm1
+	vpmovzxbq	%xmm1, %ymm0
 	retq
+

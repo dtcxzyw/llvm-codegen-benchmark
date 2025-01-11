@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	xorl	%ecx, %ecx
 	cmpb	$-1, %dl
 	sete	%cl
@@ -8,3 +8,4 @@ func0000000000000043:                   # @func0000000000000043
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq
+

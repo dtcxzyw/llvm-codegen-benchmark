@@ -1,24 +1,26 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testl	%esi, %esi
-	movl	$421, %eax                      # imm = 0x1A5
-	movl	$1154, %ecx                     # imm = 0x482
+	movl	$421, %eax
+	movl	$1154, %ecx
 	cmovel	%eax, %ecx
-	movl	$456, %edx                      # imm = 0x1C8
-	movl	$1184, %eax                     # imm = 0x4A0
+	movl	$456, %edx
+	movl	$1184, %eax
 	cmovel	%edx, %eax
 	testl	%edi, %edi
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	xorl	%eax, %eax
-	cmpl	$1853, %esi                     # imm = 0x73D
+	cmpl	$1853, %esi
 	sete	%al
 	leal	1(%rax,%rax), %ecx
 	leal	8(,%rax,4), %eax
 	cmpl	$2, %edi
 	cmovael	%ecx, %eax
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	sete	%al
@@ -29,7 +31,8 @@ func0000000000000181:                   # @func0000000000000181
 	testl	%edi, %edi
 	cmovel	%edx, %eax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	testl	%esi, %esi
@@ -40,7 +43,8 @@ func000000000000002a:                   # @func000000000000002a
 	testl	%edi, %edi
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	xorl	%ecx, %ecx
 	cmpl	$161, %esi
 	movl	$-34, %edx
@@ -50,7 +54,8 @@ func0000000000000318:                   # @func0000000000000318
 	cmpl	$161, %edi
 	cmovael	%edx, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	xorl	%eax, %eax
 	cmpl	$7, %esi
 	setae	%al
@@ -59,3 +64,4 @@ func0000000000000084:                   # @func0000000000000084
 	cmpl	$4, %edi
 	cmovbl	%ecx, %eax
 	retq
+

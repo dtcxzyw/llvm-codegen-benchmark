@@ -1,7 +1,8 @@
-func0000000000000154:                   # @func0000000000000154
-	cmpl	$-1085, %edi                    # imm = 0xFBC3
+func0000000000000154:
+	cmpl	$-1085, %edi
 	setl	%cl
-	cmpl	$-1070, %esi                    # imm = 0xFBD2
+	cmpl	$-1070, %esi
 	setb	%al
 	andb	%cl, %al
 	retq
+

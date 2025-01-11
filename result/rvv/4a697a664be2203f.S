@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
@@ -8,7 +8,8 @@ func000000000000002a:                   # @func000000000000002a
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
@@ -18,7 +19,8 @@ func0000000000000020:                   # @func0000000000000020
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
@@ -27,7 +29,8 @@ func000000000000003f:                   # @func000000000000003f
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 1048332
@@ -35,7 +38,8 @@ func0000000000000014:                   # @func0000000000000014
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 21
 	lui	a0, 115
@@ -43,7 +47,8 @@ func0000000000000030:                   # @func0000000000000030
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	li	a0, 51
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
@@ -51,7 +56,8 @@ func0000000000000010:                   # @func0000000000000010
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
@@ -61,10 +67,12 @@ func0000000000000000:                   # @func0000000000000000
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 1
 	li	a0, 789
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
+

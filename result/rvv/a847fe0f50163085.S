@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	fli.s	fa5, 0.5
 	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -10,7 +10,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmv1r.v	v0, v8
 	vmerge.vim	v8, v12, 0, v0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fli.s	fa5, 0.5
 	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -22,3 +23,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmv1r.v	v0, v8
 	vfmerge.vfm	v8, v12, fa4, v0
 	ret
+

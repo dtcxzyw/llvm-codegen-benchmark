@@ -1,4 +1,4 @@
-func00000000000001ca:                   # @func00000000000001ca
+func00000000000001ca:
 	andi	a0, a0, 127
 	lui	a1, 4096
 	slli	a2, a0, 24
@@ -9,3 +9,4 @@ func00000000000001ca:                   # @func00000000000001ca
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
+

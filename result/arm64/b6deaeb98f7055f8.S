@@ -1,22 +1,18 @@
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+func0000000000000035:
 	sub	w8, w0, #1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	madd	w0, w0, w0, w0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	madd	w0, w0, w0, w0
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	sub	w8, w0, #1
 	mul	w0, w8, w0
 	ret
-                                        // -- End function
+

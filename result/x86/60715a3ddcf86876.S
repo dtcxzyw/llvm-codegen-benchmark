@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	notb	%dl
 	andb	$1, %dl
 	shlb	$5, %dl
@@ -9,3 +9,4 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	addb	%dil, %al
 	retq
+

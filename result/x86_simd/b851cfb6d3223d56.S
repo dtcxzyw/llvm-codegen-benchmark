@@ -1,4 +1,4 @@
-func0000000000000305:                   # @func0000000000000305
+func0000000000000305:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsrad	$31, %ymm0, %ymm3
 	vpsrld	$23, %ymm3, %ymm3
@@ -10,3 +10,4 @@ func0000000000000305:                   # @func0000000000000305
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$9, %ymm0, %ymm0
 	retq
+

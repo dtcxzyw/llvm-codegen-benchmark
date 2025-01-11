@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	shll	$4, %edx
 	leal	15(%rsi,%rdx), %eax
 	movl	%esi, %ecx
@@ -7,10 +7,11 @@ func0000000000000029:                   # @func0000000000000029
 	sarl	$4, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	leal	(%rsi,%rdx,2), %eax
 	cltq
-	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
+	imulq	$-2004318071, %rax, %rcx
 	shrq	$32, %rcx
 	addl	%ecx, %eax
 	movl	%eax, %ecx
@@ -19,7 +20,8 @@ func0000000000000020:                   # @func0000000000000020
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	leal	(%rsi,%rdx,8), %ecx
 	leal	7(%rsi,%rdx,8), %eax
 	testl	%ecx, %ecx
@@ -27,3 +29,4 @@ func0000000000000028:                   # @func0000000000000028
 	sarl	$3, %eax
 	addl	%edi, %eax
 	retq
+

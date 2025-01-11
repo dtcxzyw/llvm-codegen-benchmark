@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001a:
 	slli	a0, a0, 32
 	lui	a1, 699051
 	srli	a2, a0, 30
@@ -11,9 +11,10 @@ func000000000000001a:                   # @func000000000000001a
 	mulhu	a0, a0, a1
 	srli	a0, a0, 3
 	ret
+
 .LCPI1_0:
-	.quad	184467440737095517              # 0x28f5c28f5c28f5d
-func000000000000001e:                   # @func000000000000001e
+	.quad	184467440737095517
+func000000000000001e:
 	slli	a0, a0, 32
 	lui	a1, %hi(.LCPI1_0)
 	srli	a2, a0, 32
@@ -23,7 +24,8 @@ func000000000000001e:                   # @func000000000000001e
 	addi	a0, a0, 99
 	mulhu	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	sext.w	a0, a0
 	addi	a0, a0, 128
 	slli	a1, a0, 16
@@ -39,3 +41,4 @@ func000000000000003e:                   # @func000000000000003e
 	add	a0, a0, a1
 	srli	a0, a0, 23
 	ret
+

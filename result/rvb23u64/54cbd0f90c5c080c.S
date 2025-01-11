@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
-func00000000000000aa:                   # @func00000000000000aa
+	.quad	2361183241434822607
+func00000000000000aa:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	lui	a4, 2
@@ -17,9 +17,10 @@ func00000000000000aa:                   # @func00000000000000aa
 	addiw	a1, a4, 1808
 	slt	a0, a1, a0
 	ret
+
 .LCPI1_0:
-	.quad	230584300921369395              # 0x333333333333333
-func0000000000000688:                   # @func0000000000000688
+	.quad	230584300921369395
+func0000000000000688:
 	srai	a2, a2, 3
 	lui	a3, 838861
 	srai	a1, a1, 3
@@ -34,7 +35,8 @@ func0000000000000688:                   # @func0000000000000688
 	add	a0, a0, a1
 	sltu	a0, a4, a0
 	ret
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	srai	a2, a2, 3
 	lui	a3, 838861
 	srai	a1, a1, 3
@@ -48,7 +50,8 @@ func0000000000000681:                   # @func0000000000000681
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000006aa:                   # @func00000000000006aa
+
+func00000000000006aa:
 	srai	a2, a2, 3
 	lui	a3, 986895
 	srai	a1, a1, 3
@@ -62,9 +65,10 @@ func00000000000006aa:                   # @func00000000000006aa
 	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
+
 .LCPI4_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func00000000000006a8:                   # @func00000000000006a8
+	.quad	3353953467947191203
+func00000000000006a8:
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
 	srai	a2, a2, 3
@@ -76,9 +80,10 @@ func00000000000006a8:                   # @func00000000000006a8
 	srli	a0, a0, 61
 	snez	a0, a0
 	ret
+
 .LCPI5_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func00000000000006a1:                   # @func00000000000006a1
+	.quad	3353953467947191203
+func00000000000006a1:
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
 	srai	a2, a2, 3
@@ -90,3 +95,4 @@ func00000000000006a1:                   # @func00000000000006a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

@@ -1,24 +1,21 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	add	w8, w0, #16
 	negs	w9, w8
 	and	w8, w8, #0xf
 	and	w9, w9, #0xf
 	csneg	w0, w8, w9, mi
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	add	w8, w0, #2
 	negs	w9, w8
 	and	w8, w8, #0x3
 	and	w9, w9, #0x3
 	csneg	w0, w8, w9, mi
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	w8, #21846                      // =0x5556
+
+func0000000000000000:
+	mov	w8, #21846
 	add	w9, w0, #1
 	movk	w8, #21845, lsl #16
 	smull	x8, w9, w8
@@ -28,10 +25,9 @@ func0000000000000000:                   // @func0000000000000000
 	add	w8, w8, w8, lsl #1
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	mov	w8, #30841                      // =0x7879
+
+func0000000000000003:
+	mov	w8, #30841
 	add	w9, w0, #17
 	movk	w8, #30840, lsl #16
 	smull	x8, w9, w8
@@ -40,4 +36,4 @@ func0000000000000003:                   // @func0000000000000003
 	add	w8, w8, w8, lsl #4
 	sub	w0, w9, w8
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000043:                   # @func0000000000000043
+func0000000000000043:
 	movq	%rsi, %rcx
 	orq	$2, %rcx
 	testl	%edx, %edx
@@ -8,37 +8,41 @@ func0000000000000043:                   # @func0000000000000043
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	movabsq	$1095216660480, %rcx            # imm = 0xFF00000000
+
+func0000000000000042:
+	movabsq	$1095216660480, %rcx
 	orq	%rsi, %rcx
 	testl	%edx, %edx
 	cmoveq	%rsi, %rcx
-	movl	$4278190080, %eax               # imm = 0xFF000000
+	movl	$4278190080, %eax
 	orq	%rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	$4278190080, %ecx               # imm = 0xFF000000
+
+func0000000000000002:
+	movl	$4278190080, %ecx
 	orq	%rsi, %rcx
 	testl	%edx, %edx
 	cmoveq	%rsi, %rcx
 	movq	%rcx, %rax
-	orq	$16711680, %rax                 # imm = 0xFF0000
+	orq	$16711680, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	movabsq	$17179869184, %rcx              # imm = 0x400000000
+
+func0000000000000014:
+	movabsq	$17179869184, %rcx
 	orq	%rsi, %rcx
 	testl	%edx, %edx
 	cmovgq	%rsi, %rcx
-	movabsq	$34359738368, %rax              # imm = 0x800000000
+	movabsq	$34359738368, %rax
 	orq	%rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000004d:                   # @func000000000000004d
+
+func000000000000004d:
 	movq	%rsi, %rcx
 	orq	$2, %rcx
 	testl	%edx, %edx
@@ -48,7 +52,8 @@ func000000000000004d:                   # @func000000000000004d
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	movq	%rsi, %rcx
 	orq	$8, %rcx
 	testl	%edx, %edx
@@ -58,7 +63,8 @@ func000000000000004c:                   # @func000000000000004c
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movq	%rsi, %rcx
 	orq	$32, %rcx
 	testl	%edx, %edx
@@ -68,3 +74,4 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+

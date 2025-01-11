@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	leal	63(%rdi), %ecx
@@ -7,7 +7,8 @@ func0000000000000020:                   # @func0000000000000020
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	leal	63(%rdi), %ecx
@@ -16,7 +17,8 @@ func0000000000000024:                   # @func0000000000000024
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	movl	%edi, %eax
@@ -25,3 +27,4 @@ func0000000000000022:                   # @func0000000000000022
 	leal	1(%rdi,%rax), %eax
 	sarl	%eax
 	retq
+

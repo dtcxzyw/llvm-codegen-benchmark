@@ -1,7 +1,8 @@
 .LCPI0_0:
-	.long	7                               # 0x7
-func0000000000000003:                   # @func0000000000000003
+	.long	7
+func0000000000000003:
 	vptestmd	%xmm1, %xmm1, %k1
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0 {%k1}
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

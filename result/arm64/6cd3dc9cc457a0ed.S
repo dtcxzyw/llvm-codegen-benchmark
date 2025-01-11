@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	cmp	w2, #13
 	cset	w8, eq
 	cmp	x1, #0
@@ -7,9 +6,8 @@ func0000000000000042:                   // @func0000000000000042
 	cset	w9, eq
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
+
+func0000000000000058:
 	cmp	w2, #7
 	cset	w8, eq
 	cmp	x1, #0
@@ -17,9 +15,8 @@ func0000000000000058:                   // @func0000000000000058
 	cset	w9, ne
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	cmp	w2, #32
 	cset	w8, eq
 	cmp	x0, #0
@@ -27,9 +24,8 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000030c:                   // @func000000000000030c
-// %bb.0:                               // %entry
+
+func000000000000030c:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	x0, #0
@@ -37,9 +33,8 @@ func000000000000030c:                   // @func000000000000030c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000020c:                   // @func000000000000020c
-// %bb.0:                               // %entry
+
+func000000000000020c:
 	cmp	w2, #136
 	cset	w8, hi
 	cmp	x0, #0
@@ -47,9 +42,8 @@ func000000000000020c:                   // @func000000000000020c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000318:                   // @func0000000000000318
-// %bb.0:                               // %entry
+
+func0000000000000318:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	x1, #0
@@ -57,4 +51,4 @@ func0000000000000318:                   // @func0000000000000318
 	cset	w9, ne
 	and	w0, w8, w9
 	ret
-                                        // -- End function
+

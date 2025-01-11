@@ -1,18 +1,21 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	addiw	a1, a1, 1
 	li	a2, 1
 	sllw	a0, a2, a0
 	slt	a0, a1, a0
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	addiw	a1, a1, 1
 	li	a2, 2
 	sllw	a0, a2, a0
 	slt	a0, a1, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	addiw	a1, a1, -1
 	li	a2, 1
 	sllw	a0, a2, a0
 	slt	a0, a1, a0
 	ret
+

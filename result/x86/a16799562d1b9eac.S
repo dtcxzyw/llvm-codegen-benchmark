@@ -1,18 +1,21 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	shrl	$3, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	shrl	$3, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	shrl	%eax
 	addl	%edi, %eax
 	retq
+

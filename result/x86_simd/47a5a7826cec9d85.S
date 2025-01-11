@@ -1,35 +1,40 @@
 .LCPI0_0:
-	.quad	-8663945395140668459            # 0x87c37b91114253d5
-func0000000000000000:                   # @func0000000000000000
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.quad	-8663945395140668459
+func0000000000000000:
+	vpmovzxdq	%xmm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$31, %ymm0, %ymm0
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpsrld	$1, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	1431655766                      # 0x55555556
-func0000000000000006:                   # @func0000000000000006
-	vpshufd	$245, %xmm0, %xmm1              # xmm1 = xmm0[1,1,3,3]
-	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [1431655766,1431655766,1431655766,1431655766]
+	.long	1431655766
+func0000000000000006:
+	vpshufd	$245, %xmm0, %xmm1
+	vpbroadcastd	.LCPI2_0(%rip), %xmm2
 	vpmuludq	%xmm2, %xmm1, %xmm1
 	vpmuludq	%xmm2, %xmm0, %xmm0
-	vpshufd	$245, %xmm0, %xmm0              # xmm0 = xmm0[1,1,3,3]
-	vpblendd	$10, %xmm1, %xmm0, %xmm0        # xmm0 = xmm0[0],xmm1[1],xmm0[2],xmm1[3]
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpshufd	$245, %xmm0, %xmm0
+	vpblendd	$10, %xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	-4070662928558531325            # 0xc78219a23eeadd03
-func0000000000000008:                   # @func0000000000000008
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	.quad	-4070662928558531325
+func0000000000000008:
+	vpmovzxdq	%xmm0, %ymm0
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$4, %ymm0, %ymm0
 	retq
-func000000000000000e:                   # @func000000000000000e
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+
+func000000000000000e:
+	vpmovzxdq	%xmm0, %ymm0
 	vpsllq	$4, %ymm0, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	retq
+

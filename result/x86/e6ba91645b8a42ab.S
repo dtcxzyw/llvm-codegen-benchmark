@@ -1,18 +1,21 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	imull	%edx, %esi
 	imull	%edi, %esi
 	shll	$2, %esi
 	movslq	%esi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	imull	%edx, %esi
 	imull	%edi, %esi
 	shll	$2, %esi
 	movslq	%esi, %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	imull	%edx, %esi
 	imull	%edi, %esi
 	shll	$2, %esi
 	movslq	%esi, %rax
 	retq
+

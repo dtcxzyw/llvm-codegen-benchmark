@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	xor	a1, a1, a2
 	srai	a0, a0, 4
 	lui	a2, 748983
@@ -12,9 +12,10 @@ func000000000000000d:                   # @func000000000000000d
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func000000000000000f:                   # @func000000000000000f
+	.quad	5675921253449092805
+func000000000000000f:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	xor	a1, a1, a2
@@ -26,3 +27,4 @@ func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a3
 	add	a0, a0, a1
 	ret
+

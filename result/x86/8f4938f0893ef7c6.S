@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	incl	%edx
 	testb	$1, %sil
 	movl	$2, %eax
@@ -7,7 +7,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	decl	%edx
 	testb	$1, %sil
 	movl	$3, %eax
@@ -16,7 +17,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	incl	%edx
 	testb	$1, %sil
 	movl	$5, %eax
@@ -25,3 +27,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

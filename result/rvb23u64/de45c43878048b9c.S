@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	andi	a0, a0, 1
 	addiw	a2, a1, -1
 	li	a3, 1
@@ -9,7 +9,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	andi	a0, a0, 1
 	addi	a2, a1, -3
 	li	a3, 3
@@ -21,7 +22,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	sltiu	a0, a0, 625
 	xori	a0, a0, 1
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+
+func00000000000000b8:
 	andi	a0, a0, 1
 	addiw	a2, a1, -3
 	li	a3, 3
@@ -32,7 +34,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a0, a0, 1
 	addiw	a2, a1, -1
 	li	a3, 1
@@ -43,7 +46,8 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	andi	a0, a0, 1
 	addiw	a2, a1, -1
 	li	a3, 1
@@ -53,7 +57,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	or	a0, a0, a1
 	slti	a0, a0, 4
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	andi	a0, a0, 1
 	lui	a2, 264192
 	lui	a3, 784384
@@ -64,7 +69,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	or	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	andi	a0, a0, 1
 	lui	a2, 264192
 	lui	a3, 784384
@@ -75,3 +81,4 @@ func0000000000000044:                   # @func0000000000000044
 	or	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
+

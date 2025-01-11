@@ -1,4 +1,4 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	sext.w	a2, a2
 	xor	a0, a0, a1
 	addi	a1, a2, -61
@@ -6,36 +6,42 @@ func0000000000000421:                   # @func0000000000000421
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000424:                   # @func0000000000000424
+
+func0000000000000424:
 	addiw	a2, a2, 9
 	xor	a0, a0, a1
 	sltiu	a1, a2, 19
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addiw	a2, a2, 9
 	xor	a0, a0, a1
 	sltiu	a1, a2, 19
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000484:                   # @func0000000000000484
+
+func0000000000000484:
 	addiw	a2, a2, -64
 	sltiu	a2, a2, -128
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	sext.w	a2, a2
 	addi	a2, a2, -48
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addiw	a2, a2, -3
 	sltiu	a2, a2, -2
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

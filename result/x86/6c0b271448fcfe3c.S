@@ -1,4 +1,4 @@
-func000000000000020a:                   # @func000000000000020a
+func000000000000020a:
 	cmpl	%edx, %edi
 	seta	%al
 	cmpl	%esi, %edi
@@ -8,7 +8,8 @@ func000000000000020a:                   # @func000000000000020a
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000208:                   # @func0000000000000208
+
+func0000000000000208:
 	cmpl	%edx, %edi
 	setbe	%al
 	cmpl	%esi, %edi
@@ -18,7 +19,8 @@ func0000000000000208:                   # @func0000000000000208
 	negl	%eax
 	orl	$1, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	cmpl	%edx, %edi
 	sete	%al
 	cmpl	%esi, %edi
@@ -28,3 +30,4 @@ func0000000000000042:                   # @func0000000000000042
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
+

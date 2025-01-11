@@ -1,19 +1,15 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
+func0000000000000007:
+	mov	w8, #16
 	cmp	x0, #0
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 killed $x0
+
+func0000000000000004:
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #-3                         // =0xfffffffd
+
+func0000000000000006:
+	mov	w8, #-3
 	cmp	x0, #4
 	csel	w0, w8, w0, eq
 	ret
-                                        // -- End function
+

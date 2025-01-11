@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func0000000000000071:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -6,7 +6,8 @@ func0000000000000071:                   # @func0000000000000071
 	vor.vv	v8, v8, v12
 	vor.vi	v8, v8, 2
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 16
 	li	a0, 32
@@ -17,7 +18,8 @@ func000000000000007f:                   # @func000000000000007f
 	slli	a0, a0, 12
 	vor.vx	v8, v8, a0
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 24
@@ -28,7 +30,8 @@ func000000000000002f:                   # @func000000000000002f
 	lui	a0, 1600
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000039:                   # @func0000000000000039
+
+func0000000000000039:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 2
 	li	a0, 32
@@ -37,7 +40,8 @@ func0000000000000039:                   # @func0000000000000039
 	vor.vv	v8, v8, v12
 	vor.vi	v8, v8, 2
 	ret
-func000000000000003b:                   # @func000000000000003b
+
+func000000000000003b:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 16
@@ -49,7 +53,8 @@ func000000000000003b:                   # @func000000000000003b
 	addiw	a0, a0, 1
 	vor.vx	v8, v8, a0
 	ret
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 1
 	li	a0, 33
@@ -58,7 +63,8 @@ func0000000000000033:                   # @func0000000000000033
 	vor.vv	v8, v8, v12
 	vor.vi	v8, v8, 1
 	ret
-func0000000000000079:                   # @func0000000000000079
+
+func0000000000000079:
 	li	a0, 58
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0
@@ -67,7 +73,8 @@ func0000000000000079:                   # @func0000000000000079
 	vor.vv	v8, v12, v8
 	vor.vi	v8, v8, 1
 	ret
-func000000000000003a:                   # @func000000000000003a
+
+func000000000000003a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 29
 	li	a0, 63
@@ -78,7 +85,8 @@ func000000000000003a:                   # @func000000000000003a
 	slli	a0, a0, 39
 	vor.vx	v8, v8, a0
 	ret
-func000000000000007a:                   # @func000000000000007a
+
+func000000000000007a:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 29
@@ -90,3 +98,4 @@ func000000000000007a:                   # @func000000000000007a
 	slli	a0, a0, 39
 	vor.vx	v8, v8, a0
 	ret
+

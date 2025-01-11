@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movl	%edx, %ecx
 	negl	%ecx
 	testb	$1, %sil
@@ -7,12 +7,14 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	%edx, %ecx
 	negl	%ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
 	testb	$1, %dil
-	movl	$-2147483648, %eax              # imm = 0x80000000
+	movl	$-2147483648, %eax
 	cmovel	%ecx, %eax
 	retq
+

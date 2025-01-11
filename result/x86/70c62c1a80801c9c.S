@@ -1,32 +1,38 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andl	$3, %esi
 	andl	$-4, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$512, %esi                      # imm = 0x200
-	andl	$-513, %edi                     # imm = 0xFDFF
+
+func0000000000000001:
+	andl	$512, %esi
+	andl	$-513, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andl	$63, %esi
-	andl	$-32768, %edi                   # imm = 0x8000
+	andl	$-32768, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	%edi, %eax
 	andl	$72, %esi
 	andl	$-65, %eax
 	orl	%esi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andl	$1, %esi
 	andl	$-2, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movl	%edi, %eax
 	andl	$1, %esi
-	andl	$-1023, %eax                    # imm = 0xFC01
+	andl	$-1023, %eax
 	orl	%esi, %eax
 	retq
+

@@ -1,5 +1,5 @@
-func0000000000000007:                   # @func0000000000000007
-	movabsq	$-825973615240726191, %rax      # imm = 0xF4898D5F85BB3951
+func0000000000000007:
+	movabsq	$-825973615240726191, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$6, %rax
@@ -7,8 +7,9 @@ func0000000000000007:                   # @func0000000000000007
 	subl	%eax, %edi
 	leaq	1(%rdi,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func0000000000000006:
+	movabsq	$8589934597, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdi, %rax
@@ -19,6 +20,7 @@ func0000000000000006:                   # @func0000000000000006
 	leal	(%rdi,%rax), %ecx
 	shll	$31, %eax
 	addl	%ecx, %eax
-	orq	$1073741824, %rax               # imm = 0x40000000
+	orq	$1073741824, %rax
 	shlq	$32, %rax
 	retq
+

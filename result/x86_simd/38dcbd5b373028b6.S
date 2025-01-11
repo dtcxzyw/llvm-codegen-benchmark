@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8
 .LCPI0_1:
-	.quad	4611686018427387900             # 0x3ffffffffffffffc
-func0000000000000003:                   # @func0000000000000003
+	.quad	4611686018427387900
+func0000000000000003:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
@@ -10,11 +10,12 @@ func0000000000000003:                   # @func0000000000000003
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpandq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	-2
 .LCPI1_1:
-	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000002:                   # @func0000000000000002
+	.quad	-16
+func0000000000000002:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
@@ -22,11 +23,12 @@ func0000000000000002:                   # @func0000000000000002
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+
 .LCPI2_0:
-	.quad	-2                              # 0xfffffffffffffffe
+	.quad	-2
 .LCPI2_1:
-	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000006:                   # @func0000000000000006
+	.quad	-16
+func0000000000000006:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
@@ -34,11 +36,12 @@ func0000000000000006:                   # @func0000000000000006
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	-4                              # 0xfffffffffffffffc
+	.quad	-4
 .LCPI3_1:
-	.quad	9223372036854775800             # 0x7ffffffffffffff8
-func0000000000000007:                   # @func0000000000000007
+	.quad	9223372036854775800
+func0000000000000007:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
@@ -46,3 +49,4 @@ func0000000000000007:                   # @func0000000000000007
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpandq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+

@@ -1,41 +1,36 @@
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
+func000000000000003f:
+	mov	w8, #24
 	sub	w9, w0, #1
 	umull	x8, w9, w8
 	add	x0, x8, #32
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+
+func000000000000000d:
+	mov	w8, #12
 	add	w9, w0, #1
-	mov	x10, #-12                       // =0xfffffffffffffff4
+	mov	x10, #-12
 	umaddl	x0, w9, w8, x10
 	ret
-                                        // -- End function
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
-	mov	x8, #12884901888                // =0x300000000
+
+func0000000000000030:
+	mov	x8, #12884901888
 	sub	w9, w0, #1
-	mov	x10, #3758096384                // =0xe0000000
+	mov	x10, #3758096384
 	movk	x10, #4, lsl #32
 	madd	x0, x9, x8, x10
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	mov	w8, #520                        // =0x208
+
+func000000000000000f:
+	mov	w8, #520
 	sub	w9, w0, #1
 	umull	x8, w9, w8
 	add	x0, x8, #536
 	ret
-                                        // -- End function
-func000000000000007d:                   // @func000000000000007d
-// %bb.0:                               // %entry
-	mov	w8, #216                        // =0xd8
+
+func000000000000007d:
+	mov	w8, #216
 	add	w9, w0, #1
-	mov	x10, #-216                      // =0xffffffffffffff28
+	mov	x10, #-216
 	umaddl	x0, w9, w8, x10
 	ret
-                                        // -- End function
+

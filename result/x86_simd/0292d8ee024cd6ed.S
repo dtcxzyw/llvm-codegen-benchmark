@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm3
-	vpunpcklqdq	%xmm5, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm5[0]
+	vpunpcklqdq	%xmm5, %xmm3, %xmm3
 	vpextrq	$1, %xmm0, %rax
 	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
@@ -25,7 +25,8 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm4, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm4[0]
+	vpunpcklqdq	%xmm4, %xmm0, %xmm0
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
+

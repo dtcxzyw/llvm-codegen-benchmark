@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -20,12 +21,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	xorl	%ecx, %ecx
 	testb	$1, %dl
-	movl	$4095, %eax                     # imm = 0xFFF
+	movl	$4095, %eax
 	cmoveq	%rcx, %rax
 	testb	$1, %sil
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	li	a0, -57
 	slli	a0, a0, 54
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,8 @@ func000000000000000a:                   # @func000000000000000a
 	zext.w	a0, a0
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, -57
 	slli	a0, a0, 54
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -22,7 +23,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1615
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000065:                   # @func0000000000000065
+
+func0000000000000065:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -31,7 +33,8 @@ func0000000000000065:                   # @func0000000000000065
 	addiw	a0, a0, 131
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -40,7 +43,8 @@ func000000000000006c:                   # @func000000000000006c
 	addiw	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	lui	a0, 4096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -48,7 +52,8 @@ func000000000000006f:                   # @func000000000000006f
 	li	a0, 19
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	lui	a0, 1048574
 	srli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -58,14 +63,16 @@ func000000000000002c:                   # @func000000000000002c
 	li	a0, -19
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 3
 	vsrl.vi	v10, v10, 2
 	li	a0, 160
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000004e:                   # @func000000000000004e
+
+func000000000000004e:
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -74,3 +81,4 @@ func000000000000004e:                   # @func000000000000004e
 	li	a0, 3
 	vmacc.vx	v8, a0, v10
 	ret
+

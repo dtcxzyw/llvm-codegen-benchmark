@@ -1,4 +1,4 @@
-func000000000000082c:                   # @func000000000000082c
+func000000000000082c:
 	zext.h	a0, a0
 	addi	a2, a2, 1
 	xor	a1, a1, a2
@@ -7,7 +7,8 @@ func000000000000082c:                   # @func000000000000082c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	zext.h	a0, a0
 	addi	a2, a2, 1
 	xor	a1, a1, a2
@@ -18,3 +19,4 @@ func000000000000042c:                   # @func000000000000042c
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
+

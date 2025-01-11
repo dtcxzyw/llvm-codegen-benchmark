@@ -1,4 +1,4 @@
-func00000000000004a9:                   # @func00000000000004a9
+func00000000000004a9:
 	movq	%rsi, %rax
 	negq	%rax
 	cmpq	%rax, %rdi
@@ -7,7 +7,8 @@ func00000000000004a9:                   # @func00000000000004a9
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000004cb:                   # @func00000000000004cb
+
+func00000000000004cb:
 	movq	%rsi, %rax
 	negq	%rax
 	cmpq	%rax, %rdi
@@ -16,3 +17,4 @@ func00000000000004cb:                   # @func00000000000004cb
 	setl	%al
 	andb	%cl, %al
 	retq
+

@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	imull	$365, %edx, %eax                # imm = 0x16D
+func0000000000000000:
+	imull	$365, %edx, %eax
 	addl	%esi, %eax
 	leal	3(%rdx), %ecx
 	testl	%edx, %edx
@@ -8,8 +8,9 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000080:                   # @func0000000000000080
-	imull	$365, %edx, %eax                # imm = 0x16D
+
+func0000000000000080:
+	imull	$365, %edx, %eax
 	addl	%esi, %eax
 	leal	3(%rdx), %ecx
 	testl	%edx, %edx
@@ -18,11 +19,12 @@ func0000000000000080:                   # @func0000000000000080
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000095:                   # @func0000000000000095
-	imull	$365, %edx, %eax                # imm = 0x16D
+
+func0000000000000095:
+	imull	$365, %edx, %eax
 	addl	%esi, %eax
 	movslq	%edx, %rcx
-	imulq	$-1374389535, %rcx, %rcx        # imm = 0xAE147AE1
+	imulq	$-1374389535, %rcx, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$37, %rcx
@@ -30,3 +32,4 @@ func0000000000000095:                   # @func0000000000000095
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
+

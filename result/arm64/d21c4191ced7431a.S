@@ -1,84 +1,72 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+func0000000000000021:
 	cmp	w1, #3
 	cinc	w8, w0, lo
 	and	w0, w8, #0x3
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	cmp	w1, #7
 	cinc	w8, w0, eq
 	and	w0, w8, #0xfffff
 	ret
-                                        // -- End function
-func0000000000000053:                   // @func0000000000000053
-// %bb.0:                               // %entry
+
+func0000000000000053:
 	mvn	w8, w1
 	add	w8, w0, w8, lsr #31
 	and	w0, w8, #0x3f
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	cmp	w1, #0
 	cinc	w8, w0, ne
 	and	w0, w8, #0x3f
 	ret
-                                        // -- End function
-func0000000000000051:                   // @func0000000000000051
-// %bb.0:                               // %entry
+
+func0000000000000051:
 	cmp	w1, #0
 	cinc	w8, w0, gt
 	and	w0, w8, #0xfffff
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	cmp	w1, #0
 	cinc	w8, w0, eq
 	and	w0, w8, #0x1f
 	ret
-                                        // -- End function
-func00000000000000a3:                   // @func00000000000000a3
-// %bb.0:                               // %entry
+
+func00000000000000a3:
 	cmp	w1, #127
 	cinc	w8, w0, lo
 	and	w0, w8, #0x1f
 	ret
-                                        // -- End function
-func00000000000000a1:                   // @func00000000000000a1
-// %bb.0:                               // %entry
+
+func00000000000000a1:
 	cmp	w1, #127
 	cinc	w8, w0, lo
 	and	w0, w8, #0x1f
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	cmp	w1, #0
 	cinc	w8, w0, ne
 	and	w0, w8, #0xff
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	cmp	w1, #1962
 	cinc	w8, w0, eq
 	and	w0, w8, #0x3
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	cmp	w1, #0
 	cinc	w8, w0, ne
 	and	w0, w8, #0x7
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	cmp	w1, #3
 	cinc	w8, w0, lo
 	and	w0, w8, #0xffff
 	ret
-                                        // -- End function
+

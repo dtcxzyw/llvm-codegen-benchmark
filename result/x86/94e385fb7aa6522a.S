@@ -1,15 +1,18 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	xorl	%eax, %eax
-	cmpl	$65536, %esi                    # imm = 0x10000
+	cmpl	$65536, %esi
 	cmovgel	%edi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	xorl	%eax, %eax
-	cmpl	$8192, %esi                     # imm = 0x2000
+	cmpl	$8192, %esi
 	cmovll	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	cmpl	$-65536, %esi                   # imm = 0xFFFF0000
+
+func000000000000000c:
+	cmpl	$-65536, %esi
 	movl	$-1, %eax
 	cmovbl	%edi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000c94:                   # @func0000000000000c94
+func0000000000000c94:
 	andi	a0, a0, 1
 	addi	a3, a1, 1
 	srliw	a2, a2, 30
@@ -12,3 +12,4 @@ func0000000000000c94:                   # @func0000000000000c94
 	sext.w	a0, a0
 	sltiu	a0, a0, 11
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vi	v10, v10, 11
 	lui	a0, 838861
@@ -11,9 +11,10 @@ func000000000000000c:                   # @func000000000000000c
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
 	ret
+
 .LCPI1_0:
-	.quad	-6067343680855748867            # 0xabcc77118461cefd
-func000000000000001c:                   # @func000000000000001c
+	.quad	-6067343680855748867
+func000000000000001c:
 	li	a0, 1075
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
@@ -25,3 +26,4 @@ func000000000000001c:                   # @func000000000000001c
 	vmulhu.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 26
 	ret
+

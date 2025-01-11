@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	leal	63(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -8,7 +8,8 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rcx,8), %rcx
 	leaq	(%rcx,%rax,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movl	%edx, %eax
 	shrl	$31, %eax
 	addl	%edx, %eax
@@ -18,3 +19,4 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	(%rdi,%rcx,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
+

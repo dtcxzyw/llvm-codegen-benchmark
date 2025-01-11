@@ -1,9 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subq	%rsi, %rdi
-	cmpq	$-2147483647, %rdi              # imm = 0x80000001
-	movq	$-2147483648, %rcx              # imm = 0x80000000
+	cmpq	$-2147483647, %rdi
+	movq	$-2147483648, %rcx
 	cmovgeq	%rdi, %rcx
-	cmpq	$2147483647, %rcx               # imm = 0x7FFFFFFF
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	cmpq	$2147483647, %rcx
+	movl	$2147483647, %eax
 	cmovlq	%rcx, %rax
 	retq
+

@@ -1,11 +1,12 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	andi	a2, a2, -2
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	slli	a2, a2, 39
 	srli	a2, a2, 39
 	add	a1, a1, a2
@@ -14,16 +15,19 @@ func0000000000000108:                   # @func0000000000000108
 	addiw	a1, a2, -96
 	sltu	a0, a1, a0
 	ret
-func000000000000038c:                   # @func000000000000038c
+
+func000000000000038c:
 	andi	a2, a2, 1016
 	addw	a1, a1, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000384:                   # @func0000000000000384
+
+func0000000000000384:
 	zext.h	a2, a2
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	sltiu	a0, a0, 79
 	ret
+

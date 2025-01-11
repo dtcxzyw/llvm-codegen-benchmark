@@ -1,6 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vmovq	%xmm1, %rsi
-	movabsq	$-8130577079664715991, %r9      # imm = 0x8F2A633943A6D729
+	movabsq	$-8130577079664715991, %r9
 	movq	%rsi, %rax
 	imulq	%r9
 	movq	%rdx, %rcx
@@ -37,7 +37,7 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$63, %rax
 	sarq	$25, %r9
 	addq	%rax, %r9
-	movabsq	$-8608480567731124087, %r8      # imm = 0x8888888888888889
+	movabsq	$-8608480567731124087, %r8
 	movq	%r9, %rax
 	imulq	%r8
 	addq	%r9, %rdx
@@ -58,7 +58,7 @@ func0000000000000001:                   # @func0000000000000001
 	imulq	$60, %rdx, %rax
 	subq	%rax, %rdi
 	vmovq	%rdi, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	movq	%rsi, %rax
 	imulq	%r8
 	addq	%rsi, %rdx
@@ -79,7 +79,8 @@ func0000000000000001:                   # @func0000000000000001
 	imulq	$60, %rdx, %rax
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm3
-	vpunpcklqdq	%xmm2, %xmm3, %xmm2     # xmm2 = xmm3[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm3, %xmm2
 	vinserti128	$1, %xmm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
+

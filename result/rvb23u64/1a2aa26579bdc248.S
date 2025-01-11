@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	sext.w	a1, a1
 	lui	a2, 2
 	slt	a1, a1, a2
@@ -7,7 +7,8 @@ func0000000000000026:                   # @func0000000000000026
 	mulw	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	sext.w	a1, a1
 	lui	a2, 2
 	sh2add	a0, a0, a0
@@ -16,3 +17,4 @@ func0000000000000066:                   # @func0000000000000066
 	slliw	a0, a0, 4
 	czero.eqz	a0, a0, a1
 	ret
+

@@ -1,18 +1,19 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	imulq	$1431655766, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	shrq	$32, %rax
 	addl	%ecx, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	movl	$255, %ecx
 	cmovgel	%eax, %ecx
 	incl	%ecx
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -24,3 +25,4 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
+

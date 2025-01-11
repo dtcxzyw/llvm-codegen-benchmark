@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func00000000000001aa:                   # @func00000000000001aa
+	.word	0x358637bd
+func00000000000001aa:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -10,7 +10,8 @@ func00000000000001aa:                   # @func00000000000001aa
 	vmfle.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
-func0000000000000122:                   # @func0000000000000122
+
+func0000000000000122:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
 	lui	a0, 212992
@@ -20,7 +21,8 @@ func0000000000000122:                   # @func0000000000000122
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
-func0000000000000099:                   # @func0000000000000099
+
+func0000000000000099:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v12
 	li	a0, 897
@@ -31,7 +33,8 @@ func0000000000000099:                   # @func0000000000000099
 	vmsne.vi	v12, v8, 0
 	vmand.mm	v0, v12, v16
 	ret
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v12
 	li	a0, 126
@@ -42,9 +45,10 @@ func0000000000000066:                   # @func0000000000000066
 	vmsne.vi	v12, v8, 0
 	vmand.mm	v0, v12, v16
 	ret
+
 .LCPI4_0:
-	.word	0x4e6e6b28                      # float 1.0E+9
-func0000000000000022:                   # @func0000000000000022
+	.word	0x4e6e6b28
+func0000000000000022:
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -54,9 +58,10 @@ func0000000000000022:                   # @func0000000000000022
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
+
 .LCPI5_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func00000000000002dd:                   # @func00000000000002dd
+	.word	0x358637bd
+func00000000000002dd:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -66,3 +71,4 @@ func00000000000002dd:                   # @func00000000000002dd
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000015f:                   # @func000000000000015f
+func000000000000015f:
 	sraiw	a3, a2, 31
 	xor	a2, a2, a3
 	subw	a2, a2, a3
@@ -11,3 +11,4 @@ func000000000000015f:                   # @func000000000000015f
 	subw	a0, a0, a3
 	addw	a0, a0, a1
 	ret
+

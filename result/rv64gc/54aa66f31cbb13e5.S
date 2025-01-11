@@ -1,25 +1,28 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	srai	a1, a1, 32
 	slt	a1, a0, a1
 	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	srai	a1, a1, 32
 	slt	a1, a0, a1
 	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000048a:                   # @func000000000000048a
+
+func000000000000048a:
 	srai	a1, a1, 2
 	sltu	a1, a0, a1
 	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000004cc:                   # @func00000000000004cc
+
+func00000000000004cc:
 	srai	a1, a1, 1
 	li	a2, -1
 	slt	a1, a0, a1
@@ -28,3 +31,4 @@ func00000000000004cc:                   # @func00000000000004cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+

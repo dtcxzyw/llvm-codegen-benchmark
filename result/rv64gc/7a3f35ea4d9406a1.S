@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	seqz	a3, a2
 	add	a2, a2, a2
 	add	a2, a2, a3
@@ -7,3 +7,4 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, -8
 	add	a0, a0, a2
 	ret
+

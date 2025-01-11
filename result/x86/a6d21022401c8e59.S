@@ -1,62 +1,69 @@
-func00000000000001a4:                   # @func00000000000001a4
+func00000000000001a4:
 	movl	%esi, %eax
 	sarq	$2, %rdi
-	movabsq	$-8198552921648689607, %rcx     # imm = 0x8E38E38E38E38E39
+	movabsq	$-8198552921648689607, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
-	cmpq	$65536, %rcx                    # imm = 0x10000
+	cmpq	$65536, %rcx
 	setb	%al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	movl	%esi, %eax
 	sarq	$3, %rdi
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
-	movabsq	$384307168202282325, %rax       # imm = 0x555555555555555
+	movabsq	$384307168202282325, %rax
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func00000000000001a8:                   # @func00000000000001a8
+
+func00000000000001a8:
 	movl	%esi, %eax
 	sarq	$2, %rdi
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
 	shrq	$61, %rcx
 	setne	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	movl	%esi, %eax
 	sarq	$3, %rdi
-	movabsq	$6148914691236517205, %rcx      # imm = 0x5555555555555555
+	movabsq	$6148914691236517205, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
 	sete	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	movl	%esi, %eax
 	sarq	$3, %rdi
-	movabsq	$-3689348814741910323, %rcx     # imm = 0xCCCCCCCCCCCCCCCD
+	movabsq	$-3689348814741910323, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
 	setns	%al
 	retq
-func00000000000000b4:                   # @func00000000000000b4
+
+func00000000000000b4:
 	movl	%esi, %eax
 	sarq	$3, %rdi
-	movabsq	$-3689348814741910323, %rcx     # imm = 0xCCCCCCCCCCCCCCCD
+	movabsq	$-3689348814741910323, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
 	cmpq	$12, %rcx
 	setb	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	movl	%esi, %eax
 	sarq	$3, %rdi
-	movabsq	$-6148914691236517205, %rcx     # imm = 0xAAAAAAAAAAAAAAAB
+	movabsq	$-6148914691236517205, %rcx
 	imulq	%rdi, %rcx
 	addq	%rax, %rcx
 	cmpq	$8, %rcx
 	setb	%al
 	retq
+

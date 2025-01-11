@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movzbl	%dl, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %ecx
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	movzbl	%dl, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -14,7 +15,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	orl	%edi, %ecx
 	sete	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	movzbl	%dl, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -23,7 +25,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpl	$17, %ecx
 	setae	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	movzbl	%dl, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
@@ -32,3 +35,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmpl	$2, %ecx
 	setge	%al
 	retq
+

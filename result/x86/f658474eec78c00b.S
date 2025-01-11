@@ -1,12 +1,13 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	orl	%edx, %esi
 	movl	%esi, %eax
-	orl	$4096, %eax                     # imm = 0x1000
+	orl	$4096, %eax
 	testl	%edi, %edi
 	cmovlel	%esi, %eax
-	orl	$65536, %eax                    # imm = 0x10000
+	orl	$65536, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	orl	%edx, %esi
 	movl	%esi, %eax
 	orl	$2, %eax
@@ -14,19 +15,22 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%esi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	orl	%edx, %esi
 	movl	%esi, %eax
 	orl	$127, %eax
 	testl	%edi, %edi
 	cmovnel	%esi, %eax
-	orl	$1048448, %eax                  # imm = 0xFFF80
+	orl	$1048448, %eax
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	leal	201326592(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	orl	%edx, %ecx
 	cmpl	$25, %edi
 	cmovll	%ecx, %eax
-	orl	$512, %eax                      # imm = 0x200
+	orl	$512, %eax
 	retq
+

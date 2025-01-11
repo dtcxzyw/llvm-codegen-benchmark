@@ -1,5 +1,5 @@
-func0000000000000210:                   # @func0000000000000210
-	addq	$178608, %rdx                   # imm = 0x2B9B0
+func0000000000000210:
+	addq	$178608, %rdx
 	cmpq	$32, %rdx
 	setb	%cl
 	cmpq	$32, %rsi
@@ -7,12 +7,14 @@ func0000000000000210:                   # @func0000000000000210
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
-	addq	$-2979, %rdx                    # imm = 0xF45D
+
+func0000000000000204:
+	addq	$-2979, %rdx
 	cmpq	$2, %rdx
 	setb	%cl
-	cmpq	$2974, %rsi                     # imm = 0xB9E
+	cmpq	$2974, %rsi
 	sete	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

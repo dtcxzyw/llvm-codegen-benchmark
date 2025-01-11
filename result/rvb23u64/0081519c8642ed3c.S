@@ -1,61 +1,72 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	add	a0, a0, a1
 	slli	a0, a0, 2
 	addi	a0, a0, 32
 	zext.w	a0, a0
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	add	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, 32
 	ret
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	add	a0, a0, a1
 	slli	a0, a0, 4
 	addi	a0, a0, 80
 	zext.w	a0, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	add	a0, a0, a1
 	slli	a0, a0, 4
 	addi	a0, a0, 80
 	zext.w	a0, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	add	a0, a0, a1
 	slli	a0, a0, 2
 	addiw	a0, a0, 4
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	slliw	a0, a0, 27
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	add	a0, a0, a1
 	slli	a0, a0, 4
 	addi	a0, a0, 16
 	zext.w	a0, a0
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	add	a0, a0, a1
 	slli	a0, a0, 3
 	addi	a0, a0, 8
 	zext.w	a0, a0
 	ret
-func000000000000007c:                   # @func000000000000007c
+
+func000000000000007c:
 	add	a0, a0, a1
 	slli	a0, a0, 1
 	addi	a0, a0, 6
 	zext.w	a0, a0
 	ret
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	add	a0, a0, a1
 	slli	a0, a0, 5
 	addiw	a0, a0, -64
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	add	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, 2
 	ret
+

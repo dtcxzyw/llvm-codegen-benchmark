@@ -1,36 +1,28 @@
-func0000000000000104:                   // @func0000000000000104
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+func0000000000000104:
 	lsr	x8, x0, x1
 	cmp	w8, #10
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000004:
 	lsr	x8, x0, x1
 	cmp	w8, #10
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000108:
 	lsr	x8, x0, x1
-	mov	w9, #51711                      // =0xc9ff
+	mov	w9, #51711
 	movk	w9, #15258, lsl #16
 	cmp	w8, w9
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000118:                   // @func0000000000000118
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000118:
 	lsr	x8, x0, x1
-	mov	w9, #57599                      // =0xe0ff
+	mov	w9, #57599
 	movk	w9, #1525, lsl #16
 	cmp	w8, w9
 	cset	w0, hi
 	ret
-                                        // -- End function
+

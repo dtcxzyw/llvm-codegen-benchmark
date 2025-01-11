@@ -1,14 +1,16 @@
-func0000000000000021:                   # @func0000000000000021
-	imull	$-21845, %edi, %eax             # imm = 0xAAAB
+func0000000000000021:
+	imull	$-21845, %edi, %eax
 	decl	%eax
 	movzwl	%ax, %eax
-	cmpl	$21845, %eax                    # imm = 0x5555
+	cmpl	$21845, %eax
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
-	imull	$-21845, %edi, %eax             # imm = 0xAAAB
-	addl	$-21846, %eax                   # imm = 0xAAAA
+
+func0000000000000001:
+	imull	$-21845, %edi, %eax
+	addl	$-21846, %eax
 	movzwl	%ax, %eax
-	cmpl	$21846, %eax                    # imm = 0x5556
+	cmpl	$21846, %eax
 	setb	%al
 	retq
+

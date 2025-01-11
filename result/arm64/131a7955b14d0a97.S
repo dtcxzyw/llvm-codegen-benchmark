@@ -1,5 +1,4 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+func0000000000000005:
 	add	w8, w0, #63
 	negs	w9, w8
 	and	w10, w8, #0x3f
@@ -8,9 +7,8 @@ func0000000000000005:                   // @func0000000000000005
 	sub	w8, w8, w9
 	add	w0, w8, #64
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	add	w8, w0, #63
 	negs	w9, w8
 	and	w10, w8, #0x3f
@@ -19,4 +17,4 @@ func0000000000000027:                   // @func0000000000000027
 	sub	w8, w8, w9
 	add	w0, w8, #64
 	ret
-                                        // -- End function
+

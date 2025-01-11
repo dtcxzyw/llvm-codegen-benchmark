@@ -1,23 +1,26 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	zext.h	a1, a1
 	snez	a1, a1
 	slli	a1, a1, 2
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	zext.h	a1, a1
 	snez	a1, a1
 	slli	a1, a1, 3
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	zext.h	a1, a1
 	sltiu	a1, a1, 12
 	li	a2, 3
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	zext.h	a1, a1
 	lui	a2, 8
 	addiw	a2, a2, 1
@@ -26,10 +29,12 @@ func0000000000000024:                   # @func0000000000000024
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	zext.h	a1, a1
 	sltiu	a1, a1, 16
 	xori	a1, a1, 1
 	slli	a1, a1, 2
 	or	a0, a0, a1
 	ret
+

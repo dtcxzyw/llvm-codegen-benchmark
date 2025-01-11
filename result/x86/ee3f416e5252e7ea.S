@@ -1,18 +1,20 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vucomisd	%xmm1, %xmm0
 	seta	%cl
 	testb	%dil, %dil
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+
+func0000000000000046:
 	vucomisd	%xmm0, %xmm1
 	seta	%cl
 	testb	%dil, %dil
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
 	sete	%cl
@@ -21,7 +23,8 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
 	sete	%cl
@@ -30,3 +33,4 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
+

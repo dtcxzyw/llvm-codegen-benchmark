@@ -1,4 +1,4 @@
-func000000000000c410:                   # @func000000000000c410
+func000000000000c410:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sext.w	a2, a2
@@ -11,7 +11,8 @@ func000000000000c410:                   # @func000000000000c410
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000c610:                   # @func000000000000c610
+
+func000000000000c610:
 	zext.h	a2, a2
 	sext.w	a1, a1
 	lui	a3, 345895
@@ -24,3 +25,4 @@ func000000000000c610:                   # @func000000000000c610
 	sltiu	a0, a0, 33
 	or	a0, a0, a1
 	ret
+

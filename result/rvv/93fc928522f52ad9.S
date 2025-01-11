@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	li	a0, -29
@@ -7,7 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 12
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	li	a0, -2
@@ -17,7 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 	vsll.vx	v8, v8, a0
 	vrsub.vi	v8, v8, 0
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
 	li	a0, -1
@@ -26,7 +28,8 @@ func000000000000000b:                   # @func000000000000000b
 	li	a0, 20
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	li	a0, 143
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -36,9 +39,10 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 10
 	vmul.vx	v8, v8, a0
 	ret
+
 .LCPI4_0:
-	.quad	7109453100751455733             # 0x62a9d9ed799705f5
-func0000000000000000:                   # @func0000000000000000
+	.quad	7109453100751455733
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	lui	a0, %hi(.LCPI4_0)
@@ -48,7 +52,8 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v8, v8, a1
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
 	li	a0, -1
@@ -57,7 +62,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 56
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
 	lui	a0, 524288
@@ -66,10 +72,12 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 104
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 15
 	vand.vi	v8, v8, -16
 	li	a0, 3
 	vmul.vx	v8, v8, a0
 	ret
+

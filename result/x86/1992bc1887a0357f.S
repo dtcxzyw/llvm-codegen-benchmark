@@ -1,9 +1,9 @@
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000000a4:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax), %rcx
 	shlq	$31, %rax
 	subq	%rcx, %rax
-	movabsq	$8589934597, %rcx               # imm = 0x200000005
+	movabsq	$8589934597, %rcx
 	movq	%rsi, %rdx
 	mulxq	%rcx, %rcx, %rcx
 	addq	%rsi, %rdi
@@ -18,3 +18,4 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpq	%rax, %rsi
 	setb	%al
 	retq
+

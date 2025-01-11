@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	addl	$-6, %edx
 	notb	%sil
 	movzbl	%sil, %eax
@@ -7,3 +7,4 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	(%rax,%rax,2), %rax
 	cmovaeq	%rdi, %rax
 	retq
+

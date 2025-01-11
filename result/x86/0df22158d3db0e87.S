@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	leal	100(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
@@ -9,3 +9,4 @@ func000000000000000f:                   # @func000000000000000f
 	subb	%cl, %al
 	orb	$48, %al
 	retq
+

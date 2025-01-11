@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	vpsubq	%ymm0, %ymm1, %ymm3
 	vpcmpnltuq	%ymm2, %ymm3, %k1
 	vpaddq	%ymm2, %ymm0, %ymm1 {%k1}
@@ -6,3 +6,4 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsle.vi	v0, v8, -1
 	li	a0, 48
@@ -7,3 +7,4 @@ func0000000000000026:                   # @func0000000000000026
 	vsext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
+

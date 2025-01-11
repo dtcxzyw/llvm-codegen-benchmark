@@ -1,13 +1,16 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	testq	$-5, %rdi
 	setne	%al
 	retq
-func0000000000000030:                   # @func0000000000000030
-	andl	$4161536, %edi                  # imm = 0x3F8000
-	cmpl	$524289, %edi                   # imm = 0x80001
+
+func0000000000000030:
+	andl	$4161536, %edi
+	cmpl	$524289, %edi
 	setae	%al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	testw	%di, %di
 	setns	%al
 	retq
+

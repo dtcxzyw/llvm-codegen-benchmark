@@ -1,58 +1,50 @@
-func000000000000003b:                   // @func000000000000003b
-// %bb.0:                               // %entry
+func000000000000003b:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #3
 	ret
-                                        // -- End function
-func000000000000007b:                   // @func000000000000007b
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+
+func000000000000007b:
+	mov	w8, #40
 	sub	w9, w1, w2
 	smaddl	x8, w9, w8, x0
 	add	x0, x8, #24
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #3
 	sub	x0, x8, #24
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #2
 	sub	x0, x8, #20
 	ret
-                                        // -- End function
-func0000000000000068:                   // @func0000000000000068
-// %bb.0:                               // %entry
+
+func0000000000000068:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #2
 	add	x0, x8, #12
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #2
 	add	x0, x8, #4
 	ret
-                                        // -- End function
-func0000000000000070:                   // @func0000000000000070
-// %bb.0:                               // %entry
+
+func0000000000000070:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #4
 	add	x0, x8, #24
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+
+func0000000000000040:
 	sub	w8, w1, w2
 	add	x8, x0, w8, sxtw #2
-	add	x8, x8, #18, lsl #12            // =73728
+	add	x8, x8, #18, lsl #12
 	add	x0, x8, #788
 	ret
-                                        // -- End function
+

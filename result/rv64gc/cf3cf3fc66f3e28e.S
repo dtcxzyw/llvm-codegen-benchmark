@@ -1,11 +1,12 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	sext.w	a2, a2
 	add	a1, a1, a2
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -13,7 +14,8 @@ func0000000000000101:                   # @func0000000000000101
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	addi	a2, a2, 1
 	slli	a2, a2, 32
 	srli	a2, a2, 29
@@ -21,7 +23,8 @@ func0000000000000061:                   # @func0000000000000061
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000003e1:                   # @func00000000000003e1
+
+func00000000000003e1:
 	sext.w	a2, a2
 	slli	a2, a2, 3
 	add	a1, a1, a2
@@ -29,21 +32,24 @@ func00000000000003e1:                   # @func00000000000003e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	addi	a2, a2, -2
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000064:                   # @func0000000000000064
+
+func0000000000000064:
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000261:                   # @func0000000000000261
+
+func0000000000000261:
 	addi	a2, a2, 4
 	slli	a2, a2, 32
 	srli	a2, a2, 29
@@ -51,7 +57,8 @@ func0000000000000261:                   # @func0000000000000261
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+
+func00000000000001e1:
 	sext.w	a2, a2
 	slli	a3, a2, 3
 	slli	a2, a2, 5
@@ -61,7 +68,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	addi	a2, a2, -1
 	li	a3, 11
 	slli	a3, a3, 36
@@ -71,7 +79,8 @@ func000000000000006c:                   # @func000000000000006c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000381:                   # @func0000000000000381
+
+func0000000000000381:
 	sext.w	a2, a2
 	slli	a2, a2, 2
 	add	a1, a1, a2
@@ -79,7 +88,8 @@ func0000000000000381:                   # @func0000000000000381
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	addi	a2, a2, -1
 	li	a3, 43
 	slli	a3, a3, 36
@@ -89,7 +99,8 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	addi	a2, a2, 1
 	li	a3, 5
 	slli	a3, a3, 36
@@ -99,26 +110,30 @@ func0000000000000161:                   # @func0000000000000161
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001e4:                   # @func00000000000001e4
+
+func00000000000001e4:
 	sext.w	a2, a2
 	slli	a2, a2, 4
 	add	a1, a1, a2
 	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
-func00000000000003e4:                   # @func00000000000003e4
+
+func00000000000003e4:
 	sext.w	a2, a2
 	add	a1, a1, a2
 	addi	a1, a1, 3
 	sltu	a0, a0, a1
 	ret
-func00000000000001e8:                   # @func00000000000001e8
+
+func00000000000001e8:
 	sext.w	a2, a2
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
-func0000000000000065:                   # @func0000000000000065
+
+func0000000000000065:
 	addi	a2, a2, -10
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -126,3 +141,4 @@ func0000000000000065:                   # @func0000000000000065
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
+

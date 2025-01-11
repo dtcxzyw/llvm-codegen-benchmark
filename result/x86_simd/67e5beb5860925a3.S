@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	4294967296                      # 0x100000000
-func0000000000000085:                   # @func0000000000000085
+	.quad	4294967296
+func0000000000000085:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpleud	%xmm2, %xmm1, %k1
@@ -8,7 +8,8 @@ func0000000000000085:                   # @func0000000000000085
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %k1
@@ -16,9 +17,10 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	8                               # 0x8
-func0000000000000081:                   # @func0000000000000081
+	.quad	8
+func0000000000000081:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %k1
@@ -26,9 +28,10 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	4294967295                      # 0xffffffff
-func0000000000000188:                   # @func0000000000000188
+	.quad	4294967295
+func0000000000000188:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpneqd	%xmm2, %xmm1, %k1
@@ -36,7 +39,8 @@ func0000000000000188:                   # @func0000000000000188
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000189:                   # @func0000000000000189
+
+func0000000000000189:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnltud	%xmm2, %xmm1, %k1
@@ -44,7 +48,8 @@ func0000000000000189:                   # @func0000000000000189
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000012c:                   # @func000000000000012c
+
+func000000000000012c:
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnltud	%xmm2, %xmm1, %k1
@@ -52,3 +57,4 @@ func000000000000012c:                   # @func000000000000012c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpneqd	%ymm1, %ymm2, %k1
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpneqd	%ymm1, %ymm2, %k1
@@ -16,7 +17,8 @@ func0000000000000421:                   # @func0000000000000421
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000d66:                   # @func0000000000000d66
+
+func0000000000000d66:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -25,7 +27,8 @@ func0000000000000d66:                   # @func0000000000000d66
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000c21:                   # @func0000000000000c21
+
+func0000000000000c21:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpcmpneqd	%ymm1, %ymm2, %k1
@@ -34,3 +37,4 @@ func0000000000000c21:                   # @func0000000000000c21
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	4                               # 0x4
-func0000000000000009:                   # @func0000000000000009
+	.long	4
+func0000000000000009:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -49,7 +49,8 @@ func0000000000000009:                   # @func0000000000000009
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -99,7 +100,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -149,9 +151,10 @@ func0000000000000001:                   # @func0000000000000001
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	2                               # 0x2
-func0000000000000005:                   # @func0000000000000005
+	.long	2
+func0000000000000005:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -200,7 +203,8 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm2, %xmm4
@@ -250,7 +254,8 @@ func000000000000000d:                   # @func000000000000000d
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -300,7 +305,8 @@ func0000000000000019:                   # @func0000000000000019
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -350,3 +356,4 @@ func0000000000000018:                   # @func0000000000000018
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	retq
+

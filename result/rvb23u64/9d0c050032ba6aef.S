@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	andi	a1, a1, 255
 	li	a2, -4
 	czero.eqz	a1, a2, a1
@@ -7,7 +7,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	andi	a1, a1, 255
 	li	a2, -4
 	czero.eqz	a1, a2, a1
@@ -16,7 +17,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	andi	a1, a1, 255
 	li	a2, 2
 	czero.eqz	a1, a2, a1
@@ -25,3 +27,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+

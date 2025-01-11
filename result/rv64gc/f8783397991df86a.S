@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	li	a3, -1
 	addi	a1, a1, -2
 	slli	a3, a3, 32
@@ -11,5 +11,6 @@ func000000000000002c:                   # @func000000000000002c
 	lui	a0, 32768
 	addiw	a0, a0, 5
 	slli	a0, a0, 10
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
+

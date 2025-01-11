@@ -1,15 +1,16 @@
-func0000000000000001:                   # @func0000000000000001
-	imull	$-4369, %esi, %eax              # imm = 0xEEEF
+func0000000000000001:
+	imull	$-4369, %esi, %eax
 	rorw	$2, %ax
 	movzwl	%ax, %eax
-	cmpl	$1093, %eax                     # imm = 0x445
+	cmpl	$1093, %eax
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movzwl	%si, %eax
 	shrl	$2, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %eax, %eax
 	shrl	$17, %eax
 	imull	$100, %eax, %eax
 	subl	%eax, %esi
@@ -17,10 +18,12 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	andb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	imull	$-12483, %esi, %eax             # imm = 0xCF3D
+
+func000000000000000c:
+	imull	$-12483, %esi, %eax
 	movzwl	%ax, %eax
-	cmpl	$3121, %eax                     # imm = 0xC31
+	cmpl	$3121, %eax
 	setae	%al
 	andb	%dil, %al
 	retq
+

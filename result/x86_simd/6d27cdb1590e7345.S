@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	3                               # 0x3
-func0000000000000421:                   # @func0000000000000421
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [3,3,3,3,3,3,3,3]
+	.long	3
+func0000000000000421:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpcmpltud	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -9,11 +9,12 @@ func0000000000000421:                   # @func0000000000000421
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	63                              # 0x3f
+	.long	63
 .LCPI1_1:
-	.long	31                              # 0x1f
-func0000000000000a74:                   # @func0000000000000a74
+	.long	31
+func0000000000000a74:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -22,9 +23,10 @@ func0000000000000a74:                   # @func0000000000000a74
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	7                               # 0x7
-func0000000000000c21:                   # @func0000000000000c21
+	.long	7
+func0000000000000c21:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -34,21 +36,23 @@ func0000000000000c21:                   # @func0000000000000c21
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	11                              # 0xb
+	.long	11
 .LCPI3_1:
-	.long	3                               # 0x3
-func0000000000000a21:                   # @func0000000000000a21
-	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [11,11,11,11,11,11,11,11]
+	.long	3
+func0000000000000a21:
+	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI3_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.long	7                               # 0x7
-func0000000000000c61:                   # @func0000000000000c61
+	.long	7
+func0000000000000c61:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -58,9 +62,10 @@ func0000000000000c61:                   # @func0000000000000c61
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.long	7                               # 0x7
-func0000000000000c01:                   # @func0000000000000c01
+	.long	7
+func0000000000000c01:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -70,3 +75,4 @@ func0000000000000c01:                   # @func0000000000000c01
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,5 +1,4 @@
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+func0000000000000015:
 	add	x8, x0, #3
 	cmp	x0, #0
 	sub	x9, x0, x1
@@ -7,9 +6,8 @@ func0000000000000015:                   // @func0000000000000015
 	and	x8, x8, #0xfffffffffffffffc
 	sub	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	add	x8, x0, #3
 	cmp	x0, #0
 	sub	x9, x0, x1
@@ -17,4 +15,4 @@ func0000000000000010:                   // @func0000000000000010
 	and	x8, x8, #0xfffffffffffffffc
 	sub	x0, x9, x8
 	ret
-                                        // -- End function
+

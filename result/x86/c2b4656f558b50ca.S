@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	movb	$32, %al
 	subb	%sil, %al
 	movzbl	%al, %ecx
@@ -6,7 +6,8 @@ func000000000000000d:                   # @func000000000000000d
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movb	$64, %al
 	subb	%sil, %al
 	movzbl	%al, %ecx
@@ -14,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movb	$100, %al
 	subb	%sil, %al
 	movzbl	%al, %ecx
@@ -22,7 +24,8 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	movb	$4, %al
 	subb	%sil, %al
 	movzbl	%al, %ecx
@@ -30,3 +33,4 @@ func000000000000000f:                   # @func000000000000000f
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+

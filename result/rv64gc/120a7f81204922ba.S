@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slliw	a2, a2, 2
@@ -6,7 +6,8 @@ func0000000000000026:                   # @func0000000000000026
 	neg	a0, a0
 	and	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slliw	a2, a2, 3
@@ -15,7 +16,8 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slliw	a2, a2, 1
@@ -23,7 +25,8 @@ func000000000000002a:                   # @func000000000000002a
 	neg	a0, a0
 	and	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slliw	a2, a2, 2
@@ -31,3 +34,4 @@ func0000000000000008:                   # @func0000000000000008
 	neg	a0, a0
 	and	a0, a0, a2
 	ret
+

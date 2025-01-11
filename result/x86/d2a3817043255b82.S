@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000014:
 	xorl	%eax, %eax
 	testb	%sil, %sil
 	sete	%al
@@ -6,3 +6,4 @@ func0000000000000014:                   # @func0000000000000014
 	leal	96(%rax,%rdi), %eax
 	shlq	$32, %rax
 	retq
+

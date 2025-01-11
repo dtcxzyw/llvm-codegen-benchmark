@@ -1,5 +1,4 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	sub	w8, w1, #1
 	fmov	s1, #1.00000000
 	scvtf	s0, w8
@@ -7,9 +6,8 @@ func0000000000000003:                   // @func0000000000000003
 	ucvtf	s1, w0
 	fmul	s0, s0, s1
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	sub	w8, w1, #1
 	fmov	s1, #1.00000000
 	scvtf	s0, w8
@@ -17,4 +15,4 @@ func0000000000000001:                   // @func0000000000000001
 	ucvtf	s1, w0
 	fmul	s0, s0, s1
 	ret
-                                        // -- End function
+

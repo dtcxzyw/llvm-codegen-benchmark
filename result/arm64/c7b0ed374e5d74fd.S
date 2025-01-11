@@ -1,5 +1,4 @@
-func000000000000002b:                   // @func000000000000002b
-// %bb.0:                               // %entry
+func000000000000002b:
 	sub	x8, x1, x2
 	asr	x9, x8, #4
 	add	x8, x9, x8, lsr #63
@@ -7,9 +6,8 @@ func000000000000002b:                   // @func000000000000002b
 	add	x8, x0, x8, lsl #4
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	sub	x8, x1, x2
 	asr	x9, x8, #4
 	add	x8, x9, x8, lsr #63
@@ -17,9 +15,8 @@ func000000000000002a:                   // @func000000000000002a
 	add	x8, x0, x8, lsl #4
 	sub	x0, x8, #16
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	sub	x8, x1, x2
 	asr	x9, x8, #5
 	add	x8, x9, x8, lsr #63
@@ -27,9 +24,8 @@ func0000000000000028:                   // @func0000000000000028
 	add	x8, x0, x8, lsl #5
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	sub	x8, x1, x2
 	asr	x9, x8, #3
 	add	x8, x9, x8, lsr #63
@@ -37,9 +33,8 @@ func0000000000000020:                   // @func0000000000000020
 	add	x8, x0, x8, lsl #3
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	sub	x8, x1, x2
 	asr	x9, x8, #4
 	add	x8, x9, x8, lsr #63
@@ -47,4 +42,4 @@ func0000000000000023:                   // @func0000000000000023
 	add	x8, x0, x8, lsl #4
 	add	x0, x8, #8
 	ret
-                                        // -- End function
+

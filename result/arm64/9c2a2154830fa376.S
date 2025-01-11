@@ -1,20 +1,18 @@
-func0000000000000054:                   // @func0000000000000054
-// %bb.0:                               // %entry
+func0000000000000054:
 	lsr	x8, x2, #32
 	tst	w1, #0x1
 	lsl	w9, w0, #16
 	csel	x8, x2, x8, ne
-	cmp	x8, #16, lsl #12                // =65536
+	cmp	x8, #16, lsl #12
 	csel	w0, w9, w0, lo
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
+
+func0000000000000044:
 	lsr	x8, x2, #32
 	tst	w1, #0x1
 	lsl	w9, w0, #16
 	csel	x8, x2, x8, ne
-	cmp	x8, #16, lsl #12                // =65536
+	cmp	x8, #16, lsl #12
 	csel	w0, w9, w0, lo
 	ret
-                                        // -- End function
+

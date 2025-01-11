@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vi	v9, v9, -5
@@ -6,7 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v9, v8
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vi	v9, v9, -6
@@ -14,7 +15,8 @@ func0000000000000003:                   # @func0000000000000003
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v9, v8
 	ret
-func0000000000000036:                   # @func0000000000000036
+
+func0000000000000036:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vi	v9, v9, -1
@@ -22,7 +24,8 @@ func0000000000000036:                   # @func0000000000000036
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v9, v8
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vi	v9, v9, -1
@@ -30,7 +33,8 @@ func0000000000000037:                   # @func0000000000000037
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v9, v8
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vi	v9, v9, 1
@@ -38,7 +42,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v9, v8
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	li	a0, -31
@@ -47,7 +52,8 @@ func0000000000000005:                   # @func0000000000000005
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v8, v9
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	li	a0, -54
@@ -56,3 +62,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsll.vv	v9, v10, v9
 	vand.vv	v8, v8, v9
 	ret
+

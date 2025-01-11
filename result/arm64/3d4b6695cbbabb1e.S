@@ -1,10 +1,8 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+func0000000000000061:
 	add	x8, x1, #1
-                                        // kill: def $w2 killed $w2 def $x2
 	cmp	x8, w2, uxth
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

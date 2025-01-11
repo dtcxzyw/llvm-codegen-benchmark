@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fc999999999999a              # double 0.20000000000000001
-func0000000000000001:                   # @func0000000000000001
+	.quad	0x3fc999999999999a
+func0000000000000001:
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vcvttsd2si	%xmm0, %eax
 	movl	%eax, %ecx
@@ -10,3 +10,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$93, %eax
 	cmovll	%ecx, %eax
 	retq
+

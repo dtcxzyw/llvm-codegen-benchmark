@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	15                              # 0xf
-func0000000000000039:                   # @func0000000000000039
+	.long	15
+func0000000000000039:
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpsrld	$5, %ymm0, %ymm0
@@ -8,3 +8,4 @@ func0000000000000039:                   # @func0000000000000039
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+

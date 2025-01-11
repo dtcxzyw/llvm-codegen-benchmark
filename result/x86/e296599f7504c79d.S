@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	cmpl	$1, %edx
 	movl	$5, %ecx
 	sbbq	$0, %rcx
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	sete	%cl
@@ -15,7 +16,8 @@ func000000000000000b:                   # @func000000000000000b
 	orq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	xorl	%eax, %eax
 	cmpl	$16, %edx
 	movl	$6, %ecx
@@ -24,3 +26,4 @@ func000000000000000c:                   # @func000000000000000c
 	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
+

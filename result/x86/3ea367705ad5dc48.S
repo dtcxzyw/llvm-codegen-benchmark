@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	incb	%dl
 	movl	$1, %ecx
 	shlxq	%rdx, %rcx, %rdx
@@ -8,3 +8,4 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+

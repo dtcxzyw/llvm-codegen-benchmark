@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -6,15 +6,17 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	subl	%edx, %esi
 	cmpl	$54, %esi
 	setae	%cl
-	cmpl	$1751474532, %edi               # imm = 0x68656164
+	cmpl	$1751474532, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -22,3 +24,4 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	andb	%cl, %al
 	retq
+

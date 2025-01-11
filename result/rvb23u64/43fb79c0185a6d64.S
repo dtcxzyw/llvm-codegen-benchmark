@@ -1,4 +1,4 @@
-func000000000000042c:                   # @func000000000000042c
+func000000000000042c:
 	or	a1, a1, a2
 	lui	a2, 16
 	sext.w	a1, a1
@@ -8,13 +8,15 @@ func000000000000042c:                   # @func000000000000042c
 	srli	a0, a0, 8
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000681:                   # @func0000000000000681
+
+func0000000000000681:
 	or	a1, a1, a2
 	lui	a2, 16
 	srliw	a1, a1, 16
@@ -25,7 +27,8 @@ func0000000000000681:                   # @func0000000000000681
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000701:                   # @func0000000000000701
+
+func0000000000000701:
 	or	a1, a1, a2
 	li	a2, 2047
 	andi	a0, a0, 192
@@ -35,3 +38,4 @@ func0000000000000701:                   # @func0000000000000701
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

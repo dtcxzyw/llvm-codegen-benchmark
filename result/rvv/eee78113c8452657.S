@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	lui	a0, 838861
 	addi	a0, a0, -819
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -10,7 +10,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmsleu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	li	a0, 76
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -23,7 +24,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmsleu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lui	a0, 796918
 	addi	a1, a0, -907
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -36,3 +38,4 @@ func0000000000000002:                   # @func0000000000000002
 	vmsleu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
+

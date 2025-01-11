@@ -1,7 +1,6 @@
-func0000000000000228:                   // @func0000000000000228
-// %bb.0:                               // %entry
+func0000000000000228:
 	sub	x8, x2, x1
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	sub	x8, x8, #24
 	movk	x9, #43691
 	asr	x8, x8, #3
@@ -9,11 +8,10 @@ func0000000000000228:                   // @func0000000000000228
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000328:                   // @func0000000000000328
-// %bb.0:                               // %entry
+
+func0000000000000328:
 	sub	x8, x2, x1
-	mov	x9, #20165                      // =0x4ec5
+	mov	x9, #20165
 	add	x8, x8, #104
 	movk	x9, #50412, lsl #16
 	asr	x8, x8, #3
@@ -23,11 +21,10 @@ func0000000000000328:                   // @func0000000000000328
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000321:                   // @func0000000000000321
-// %bb.0:                               // %entry
+
+func0000000000000321:
 	sub	x8, x2, x1
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	add	x8, x8, #24
 	movk	x9, #43691
 	asr	x8, x8, #3
@@ -35,11 +32,10 @@ func0000000000000321:                   // @func0000000000000321
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
+
+func0000000000000026:
 	sub	x8, x2, x1
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	add	x8, x8, #24
 	movk	x9, #43691
 	asr	x8, x8, #3
@@ -47,11 +43,10 @@ func0000000000000026:                   // @func0000000000000026
 	cmp	x8, x0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000032c:                   // @func000000000000032c
-// %bb.0:                               // %entry
+
+func000000000000032c:
 	sub	x8, x2, x1
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	add	x8, x8, #12
 	movk	x9, #43691
 	asr	x8, x8, #2
@@ -59,11 +54,10 @@ func000000000000032c:                   // @func000000000000032c
 	cmp	x8, x0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000224:                   // @func0000000000000224
-// %bb.0:                               // %entry
+
+func0000000000000224:
 	sub	x8, x2, x1
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	sub	x8, x8, #48
 	movk	x9, #43691
 	asr	x8, x8, #4
@@ -71,4 +65,4 @@ func0000000000000224:                   // @func0000000000000224
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
+

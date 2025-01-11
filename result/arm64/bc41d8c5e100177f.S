@@ -1,137 +1,120 @@
-func0000000000000047:                   // @func0000000000000047
-// %bb.0:                               // %entry
+func0000000000000047:
 	cmp	w1, #1
 	add	w8, w0, #3
 	csinc	w0, w8, w0, hi
 	ret
-                                        // -- End function
-func00000000000000c2:                   // @func00000000000000c2
-// %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
+
+func00000000000000c2:
+	mov	w8, #4
 	cmp	w1, #4
-	mov	w9, #6                          // =0x6
+	mov	w9, #6
 	csel	w8, w9, w8, hi
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	mov	w8, #5                          // =0x5
+
+func000000000000000f:
+	mov	w8, #5
 	cmp	w1, #0
 	cinc	w8, w8, ne
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000067:                   // @func0000000000000067
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+
+func0000000000000067:
+	mov	w8, #40
 	cmp	w1, #0
-	mov	w9, #24                         // =0x18
+	mov	w9, #24
 	csel	w8, w9, w8, eq
 	add	w0, w0, w8
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
-	mov	w8, #201                        // =0xc9
+
+func0000000000000020:
+	mov	w8, #201
 	cmp	w1, #10
-	mov	w9, #208                        // =0xd0
+	mov	w9, #208
 	csel	w8, w9, w8, lo
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	w8, #5                          // =0x5
+
+func0000000000000008:
+	mov	w8, #5
 	cmp	w1, #5
 	cinc	w8, w8, ne
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	cmp	w1, #0
 	cset	w8, ne
 	add	w0, w0, w8, lsl #1
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	cmp	w1, #0
 	cset	w8, ne
 	add	w0, w0, w8, lsl #1
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
+
+func000000000000000b:
+	mov	w8, #2
 	cmp	w1, #1
 	cinc	w8, w8, ne
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
+
+func000000000000000d:
+	mov	w8, #3
 	cmp	w1, #8
 	cinc	w8, w8, eq
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	mov	w8, #-40                        // =0xffffffd8
+
+func0000000000000009:
+	mov	w8, #-40
 	cmp	w1, #0
-	mov	w9, #-32                        // =0xffffffe0
+	mov	w9, #-32
 	csel	w8, w9, w8, eq
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func00000000000000a7:                   // @func00000000000000a7
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+
+func00000000000000a7:
+	mov	w8, #1
 	cmp	w1, #9
 	cinc	w8, w8, lo
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func00000000000000a0:                   // @func00000000000000a0
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	cmp	w1, #16, lsl #12                // =65536
+
+func00000000000000a0:
+	mov	w8, #1
+	cmp	w1, #16, lsl #12
 	cinc	w8, w8, hs
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	w8, #-2                         // =0xfffffffe
+
+func000000000000000a:
+	mov	w8, #-2
 	cmp	w1, #2
 	cinc	w8, w8, ne
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	cmp	w1, #254
 	add	w8, w0, #5
 	csinc	w0, w8, w0, hs
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
-	mov	w8, #-3                         // =0xfffffffd
+
+func0000000000000022:
+	mov	w8, #-3
 	cmp	w1, #2
 	csel	w8, w8, wzr, lo
 	add	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
-	mov	w8, #-2                         // =0xfffffffe
+
+func0000000000000040:
+	mov	w8, #-2
 	cmp	w1, #253
-	mov	w9, #-4                         // =0xfffffffc
+	mov	w9, #-4
 	csel	w8, w9, w8, hi
 	add	w0, w8, w0
 	ret
-                                        // -- End function
+

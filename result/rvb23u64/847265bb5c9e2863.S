@@ -1,4 +1,4 @@
-func00000000000000ac:                   # @func00000000000000ac
+func00000000000000ac:
 	fli.s	fa5, 1.0
 	fle.s	a1, fa0, fa5
 	fmv.w.x	fa5, zero
@@ -6,7 +6,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fli.s	fa5, 1.0
 	flt.s	a1, fa0, fa5
 	fmv.w.x	fa5, zero
@@ -14,7 +15,8 @@ func0000000000000024:                   # @func0000000000000024
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000bd:                   # @func00000000000000bd
+
+func00000000000000bd:
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa0
 	fmv.w.x	fa5, zero
@@ -23,3 +25,4 @@ func00000000000000bd:                   # @func00000000000000bd
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000002b4:                   # @func00000000000002b4
+func00000000000002b4:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -9,7 +9,8 @@ func00000000000002b4:                   # @func00000000000002b4
 	cmpl	%eax, %edx
 	setb	%al
 	retq
-func00000000000002a1:                   # @func00000000000002a1
+
+func00000000000002a1:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -20,7 +21,8 @@ func00000000000002a1:                   # @func00000000000002a1
 	cmpl	%eax, %edx
 	sete	%al
 	retq
-func00000000000002b8:                   # @func00000000000002b8
+
+func00000000000002b8:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -31,7 +33,8 @@ func00000000000002b8:                   # @func00000000000002b8
 	cmpl	%eax, %edx
 	seta	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+
+func00000000000003f4:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -42,7 +45,8 @@ func00000000000003f4:                   # @func00000000000003f4
 	cmpl	%eax, %edx
 	setb	%al
 	retq
-func00000000000003f9:                   # @func00000000000003f9
+
+func00000000000003f9:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -53,7 +57,8 @@ func00000000000003f9:                   # @func00000000000003f9
 	cmpl	%eax, %edx
 	setae	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -64,7 +69,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%ecx, %eax
 	setl	%al
 	retq
-func000000000000022a:                   # @func000000000000022a
+
+func000000000000022a:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	subl	%esi, %edx
@@ -75,7 +81,8 @@ func000000000000022a:                   # @func000000000000022a
 	cmpl	%eax, %edx
 	setg	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -86,3 +93,4 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%ecx, %eax
 	setg	%al
 	retq
+

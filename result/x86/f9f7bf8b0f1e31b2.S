@@ -1,17 +1,18 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	movzwl	%dx, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	sete	%al
 	testl	%esi, %esi
 	sete	%cl
 	andb	%al, %cl
 	movzwl	%di, %eax
-	cmpl	$256, %eax                      # imm = 0x100
+	cmpl	$256, %eax
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000042a:                   # @func000000000000042a
-	cmpl	$2048, %edx                     # imm = 0x800
+
+func000000000000042a:
+	cmpl	$2048, %edx
 	sete	%al
 	testw	%si, %si
 	sete	%cl
@@ -20,3 +21,4 @@ func000000000000042a:                   # @func000000000000042a
 	setns	%al
 	andb	%cl, %al
 	retq
+

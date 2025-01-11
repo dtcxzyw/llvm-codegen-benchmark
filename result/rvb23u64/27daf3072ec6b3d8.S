@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	lui	a3, 16
@@ -9,3 +9,4 @@ func000000000000000e:                   # @func000000000000000e
 	sh2add	a0, a1, a0
 	addi	a0, a0, 16
 	ret
+

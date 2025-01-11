@@ -1,11 +1,12 @@
-func0000000000000021:                   # @func0000000000000021
-	xorl	$65526, %edx                    # imm = 0xFFF6
-	xorl	$65526, %esi                    # imm = 0xFFF6
+func0000000000000021:
+	xorl	$65526, %edx
+	xorl	$65526, %esi
 	orw	%dx, %si
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	testw	%dx, %dx
 	setne	%cl
 	testw	%si, %si
@@ -13,7 +14,8 @@ func000000000000018c:                   # @func000000000000018c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	testw	%dx, %dx
 	setne	%cl
 	testw	%si, %si
@@ -21,7 +23,8 @@ func0000000000000181:                   # @func0000000000000181
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	testw	%dx, %dx
 	sete	%cl
 	testw	%si, %si
@@ -29,7 +32,8 @@ func000000000000002c:                   # @func000000000000002c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	movzwl	%dx, %eax
 	cmpl	$173, %eax
 	setb	%cl
@@ -39,7 +43,8 @@ func0000000000000084:                   # @func0000000000000084
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	cmpw	$-2, %dx
 	setb	%al
 	movzwl	%si, %ecx
@@ -48,7 +53,8 @@ func0000000000000081:                   # @func0000000000000081
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	cmpw	$-10, %dx
 	setb	%cl
 	cmpw	$45, %si
@@ -56,7 +62,8 @@ func000000000000008c:                   # @func000000000000008c
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	cmpw	$32, %dx
 	setae	%cl
 	cmpw	$32, %si
@@ -64,3 +71,4 @@ func0000000000000108:                   # @func0000000000000108
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
+

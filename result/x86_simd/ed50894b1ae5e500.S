@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	2                               # 0x2
-func00000000000000ef:                   # @func00000000000000ef
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	.quad	2
+func00000000000000ef:
+	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -9,8 +9,9 @@ func00000000000000ef:                   # @func00000000000000ef
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
-func000000000000006f:                   # @func000000000000006f
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+
+func000000000000006f:
+	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -19,3 +20,4 @@ func000000000000006f:                   # @func000000000000006f
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+

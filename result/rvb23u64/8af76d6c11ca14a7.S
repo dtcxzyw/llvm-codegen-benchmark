@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	li	a1, -1
 	addi	a2, a0, -64
 	not	a3, a0
@@ -13,7 +13,8 @@ func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	li	a1, 8
 	addi	a2, a0, -64
 	not	a3, a0
@@ -26,7 +27,8 @@ func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a1, -1
 	not	a2, a0
 	addi	a3, a0, -64
@@ -40,10 +42,12 @@ func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
 	czero.eqz	a0, a0, a3
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	bset	a1, zero, a0
 	addi	a0, a0, -64
 	slti	a2, a0, 0
 	czero.eqz	a0, a1, a2
 	czero.nez	a1, a1, a2
 	ret
+

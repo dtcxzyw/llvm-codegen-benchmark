@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	bseti	a0, zero, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v8, a0
@@ -8,7 +8,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	vnot.v	v8, v8
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -17,7 +18,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsub.vv	v8, v10, v8
 	vadd.vi	v8, v8, 2
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	lui	a0, 935504
 	addiw	a0, a0, -985
 	slli	a0, a0, 14
@@ -34,3 +36,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	vmerge.vxm	v8, v8, a0, v0
 	vadd.vv	v8, v10, v8
 	ret
+

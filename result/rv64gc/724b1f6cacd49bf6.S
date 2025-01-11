@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -18,7 +19,8 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -29,7 +31,8 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	slli	a0, a0, 48
 	slli	a1, a1, 48
 	srli	a0, a0, 48
@@ -38,7 +41,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -47,7 +51,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -56,7 +61,8 @@ func0000000000000084:                   # @func0000000000000084
 	sltiu	a0, a0, 32
 	xor	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a0, a0, a2
@@ -67,7 +73,8 @@ func0000000000000104:                   # @func0000000000000104
 	sltu	a0, a0, a2
 	xor	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	lui	a2, 16
 	lui	a3, 8
 	addiw	a2, a2, -1
@@ -78,3 +85,4 @@ func0000000000000088:                   # @func0000000000000088
 	sltu	a0, a3, a0
 	xor	a0, a0, a1
 	ret
+

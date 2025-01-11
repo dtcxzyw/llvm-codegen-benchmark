@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax
 	addq	$4, %rcx
@@ -6,7 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	cqto
 	idivq	%rcx
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax
 	incq	%rcx
@@ -14,7 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	cqto
 	idivq	%rcx
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax
 	incq	%rcx
@@ -22,7 +24,8 @@ func0000000000000000:                   # @func0000000000000000
 	cqto
 	idivq	%rcx
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax
 	addq	$8, %rcx
@@ -30,3 +33,4 @@ func000000000000000a:                   # @func000000000000000a
 	cqto
 	idivq	%rcx
 	retq
+

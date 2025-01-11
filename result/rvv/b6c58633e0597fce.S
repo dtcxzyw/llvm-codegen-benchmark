@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	lui	a0, 235216
@@ -9,3 +9,4 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, -328
 	vxor.vx	v8, v8, a0
 	ret
+

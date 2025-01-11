@@ -1,5 +1,4 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	add	w8, w1, w2
 	negs	w9, w8
 	and	w8, w8, #0xf
@@ -7,9 +6,8 @@ func0000000000000006:                   // @func0000000000000006
 	csneg	w8, w8, w9, mi
 	add	x0, x0, w8, sxtw
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	add	w8, w1, w2
 	negs	w9, w8
 	and	w8, w8, #0x3f
@@ -17,9 +15,8 @@ func0000000000000002:                   // @func0000000000000002
 	csneg	w8, w8, w9, mi
 	add	x0, x0, w8, sxtw #4
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	add	w8, w1, w2
 	negs	w9, w8
 	and	w8, w8, #0x3ff
@@ -27,4 +24,4 @@ func0000000000000000:                   // @func0000000000000000
 	csneg	w8, w8, w9, mi
 	add	x0, x0, w8, sxtw
 	ret
-                                        // -- End function
+

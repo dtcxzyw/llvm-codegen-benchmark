@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	fmv.w.x	fa5, zero
 	lui	a0, 524288
 	vsetivli	zero, 16, e32, m4, ta, mu
@@ -7,7 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	vfneg.v	v12, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	fmv.w.x	fa5, zero
 	lui	a0, 524288
 	vsetivli	zero, 16, e32, m4, ta, mu
@@ -16,7 +17,8 @@ func000000000000000c:                   # @func000000000000000c
 	vfneg.v	v12, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	fmv.w.x	fa5, zero
 	lui	a0, 524288
 	vsetivli	zero, 16, e32, m4, ta, mu
@@ -25,7 +27,8 @@ func0000000000000002:                   # @func0000000000000002
 	vfneg.v	v12, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfeq.vv	v0, v8, v8
 	fli.s	fa5, inf
@@ -34,3 +37,4 @@ func000000000000000e:                   # @func000000000000000e
 	vfneg.v	v12, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
+

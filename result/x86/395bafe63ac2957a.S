@@ -1,4 +1,4 @@
-func000000000000010e:                   # @func000000000000010e
+func000000000000010e:
 	shrq	$4, %rdx
 	testq	%rsi, %rsi
 	cmoveq	%rsi, %rdx
@@ -7,3 +7,4 @@ func000000000000010e:                   # @func000000000000010e
 	movl	$3, %eax
 	cmovaeq	%rcx, %rax
 	retq
+

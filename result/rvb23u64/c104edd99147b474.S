@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	sext.w	a1, a1
 	not	a3, a0
 	add	a2, a2, a3
@@ -8,7 +8,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	or	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	sext.w	a1, a1
 	not	a3, a0
 	add	a2, a2, a3
@@ -18,7 +19,8 @@ func000000000000054a:                   # @func000000000000054a
 	or	a0, a0, a2
 	sgtz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	sext.w	a1, a1
 	not	a3, a0
 	add	a2, a2, a3
@@ -28,7 +30,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	sext.w	a1, a1
 	not	a3, a0
 	add	a2, a2, a3
@@ -37,3 +40,4 @@ func000000000000042a:                   # @func000000000000042a
 	or	a0, a0, a1
 	sgtz	a0, a0
 	ret
+

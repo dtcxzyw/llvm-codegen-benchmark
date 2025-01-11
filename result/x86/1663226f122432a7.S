@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	testb	$1, %sil
 	movl	$-98, %eax
 	movl	$-88, %ecx
@@ -10,3 +10,4 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rax,%rax,4), %eax
 	leal	12(%rcx,%rax), %eax
 	retq
+

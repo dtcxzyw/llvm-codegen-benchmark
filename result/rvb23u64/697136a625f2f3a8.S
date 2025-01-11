@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	addi	a2, a2, 63
 	sltu	a0, a0, a1
 	li	a1, -113
@@ -8,3 +8,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

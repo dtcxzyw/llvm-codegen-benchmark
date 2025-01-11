@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	cmpq	$5, %rsi
 	movl	$4, %ecx
 	cmovgeq	%rsi, %rcx
@@ -9,3 +9,4 @@ func0000000000000000:                   # @func0000000000000000
 	cmovnsq	%rcx, %rax
 	sarq	$2, %rax
 	retq
+

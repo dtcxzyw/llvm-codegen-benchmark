@@ -1,42 +1,35 @@
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+func0000000000000060:
 	cmp	x1, #0
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	cmp	x1, #0
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	cmp	x1, #0
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	cmp	x1, #0
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	cmp	x1, #0
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	cmp	x1, #0
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000062:                   // @func0000000000000062
-// %bb.0:                               // %entry
+
+func0000000000000062:
 	cmp	x1, #0
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
+

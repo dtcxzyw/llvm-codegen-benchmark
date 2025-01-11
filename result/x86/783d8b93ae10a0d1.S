@@ -1,9 +1,10 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	cmpl	$12, %esi
-	movl	$-2147483648, %ecx              # imm = 0x80000000
+	movl	$-2147483648, %ecx
 	cmovnel	%edx, %ecx
 	cmpl	$2, %esi
-	movl	$536870912, %eax                # imm = 0x20000000
+	movl	$536870912, %eax
 	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
+

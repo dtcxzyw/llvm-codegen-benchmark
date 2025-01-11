@@ -1,27 +1,30 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	fli.d	fa5, 1.0
 	fle.d	a2, fa0, fa5
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	fmv.d.x	fa5, zero
 	fle.d	a2, fa5, fa0
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+
 .LCPI2_0:
-	.quad	0x47efffffe0000000              # double 3.4028234663852886E+38
-func0000000000000010:                   # @func0000000000000010
+	.quad	0x47efffffe0000000
+func0000000000000010:
 	lui	a2, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a2)
 	feq.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	fli.d	fa5, inf
 	flt.d	a2, fa0, fa5
 	flt.d	a3, fa5, fa0
@@ -30,9 +33,10 @@ func0000000000000012:                   # @func0000000000000012
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+
 .LCPI4_0:
-	.quad	0x3f747ae147ae147b              # double 0.0050000000000000001
-func000000000000001a:                   # @func000000000000001a
+	.quad	0x3f747ae147ae147b
+func000000000000001a:
 	lui	a2, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a2)
 	flt.d	a2, fa0, fa5
@@ -40,37 +44,43 @@ func000000000000001a:                   # @func000000000000001a
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+
 .LCPI5_0:
-	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
-func0000000000000008:                   # @func0000000000000008
+	.quad	0x3eb0c6f7a0b5ed8d
+func0000000000000008:
 	lui	a2, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a2)
 	flt.d	a2, fa5, fa0
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	fmv.d.x	fa5, zero
 	fle.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	fli.d	fa5, 1.0
 	fle.d	a2, fa5, fa0
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	fmv.d.x	fa5, zero
 	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	fli.d	fa5, 1.0
 	flt.d	a2, fa5, fa0
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

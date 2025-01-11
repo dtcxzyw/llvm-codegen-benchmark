@@ -1,18 +1,16 @@
-func00000000000000df:                   // @func00000000000000df
-// %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
+func00000000000000df:
+	mov	w8, #4
 	sub	w8, w8, w2
 	lsr	w8, w1, w8
 	add	x8, x0, w8, uxtw #1
 	add	x0, x8, #6
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
+
+func000000000000001f:
+	mov	w8, #16
 	sub	w8, w8, w2
 	lsr	w8, w1, w8
 	add	x8, x0, x8
 	add	x0, x8, #340
 	ret
-                                        // -- End function
+

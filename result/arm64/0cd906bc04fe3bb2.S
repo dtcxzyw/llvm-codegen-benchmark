@@ -1,5 +1,4 @@
-func0000000000000076:                   // @func0000000000000076
-// %bb.0:                               // %entry
+func0000000000000076:
 	umulh	x8, x2, x4
 	mul	x9, x2, x4
 	madd	x8, x3, x4, x8
@@ -10,9 +9,8 @@ func0000000000000076:                   // @func0000000000000076
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret
-                                        // -- End function
-func0000000000000036:                   // @func0000000000000036
-// %bb.0:                               // %entry
+
+func0000000000000036:
 	umulh	x8, x2, x4
 	mul	x9, x2, x4
 	madd	x8, x3, x4, x8
@@ -23,9 +21,8 @@ func0000000000000036:                   // @func0000000000000036
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	umulh	x8, x2, x4
 	mul	x9, x2, x4
 	madd	x8, x3, x4, x8
@@ -36,13 +33,12 @@ func0000000000000020:                   // @func0000000000000020
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	umulh	x8, x2, x4
 	madd	x8, x3, x4, x8
 	cmn	x8, x0
 	cinc	x0, x1, hs
-	mov	x1, #0                          // =0x0
+	mov	x1, #0
 	ret
-                                        // -- End function
+

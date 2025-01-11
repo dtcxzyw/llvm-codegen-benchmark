@@ -1,7 +1,6 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	x8, #99                         // =0x63
-	mov	x9, #62915                      // =0xf5c3
+func0000000000000000:
+	mov	x8, #99
+	mov	x9, #62915
 	madd	x8, x0, x1, x8
 	movk	x9, #23592, lsl #16
 	movk	x9, #49807, lsl #32
@@ -10,11 +9,10 @@ func0000000000000000:                   // @func0000000000000000
 	umulh	x8, x8, x9
 	lsr	x0, x8, #2
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	w8, #7999                       // =0x1f3f
-	mov	x9, #16253                      // =0x3f7d
+
+func000000000000000a:
+	mov	w8, #7999
+	mov	x9, #16253
 	madd	x8, x0, x1, x8
 	movk	x9, #24117, lsl #16
 	movk	x9, #18874, lsl #32
@@ -22,21 +20,19 @@ func000000000000000a:                   // @func000000000000000a
 	lsr	x8, x8, #6
 	umulh	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
-	mov	x8, #127                        // =0x7f
-	mov	x9, #-9187201950435737472       // =0x8080808080808080
+
+func000000000000001e:
+	mov	x8, #127
+	mov	x9, #-9187201950435737472
 	madd	x8, x0, x1, x8
 	movk	x9, #32897
 	umulh	x8, x8, x9
 	lsr	x0, x8, #7
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
-	mov	w8, #8191                       // =0x1fff
-	mov	x9, #13531                      // =0x34db
+
+func0000000000000014:
+	mov	w8, #8191
+	mov	x9, #13531
 	movk	w8, #1953, lsl #16
 	movk	x9, #55222, lsl #16
 	madd	x8, x0, x1, x8
@@ -45,11 +41,10 @@ func0000000000000014:                   // @func0000000000000014
 	umulh	x8, x8, x9
 	lsr	x0, x8, #25
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-	mov	x8, #57343                      // =0xdfff
-	mov	x9, #33251                      // =0x81e3
+
+func0000000000000010:
+	mov	x8, #57343
+	mov	x9, #33251
 	movk	x8, #38196, lsl #16
 	movk	x9, #57861, lsl #16
 	movk	x8, #100, lsl #32
@@ -59,4 +54,4 @@ func0000000000000010:                   // @func0000000000000010
 	umulh	x8, x8, x9
 	lsr	x0, x8, #38
 	ret
-                                        // -- End function
+

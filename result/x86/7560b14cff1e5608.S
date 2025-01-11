@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm0
 	seta	%cl
@@ -7,7 +7,8 @@ func0000000000000042:                   # @func0000000000000042
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
+
+func00000000000000c2:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm0
 	setae	%cl
@@ -16,3 +17,4 @@ func00000000000000c2:                   # @func00000000000000c2
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
+

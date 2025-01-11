@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
@@ -8,13 +8,15 @@ func0000000000000054:                   # @func0000000000000054
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testb	$1, %dil
 	movl	$1, %eax
 	cmovel	%esi, %eax
-	cmpl	$-17958193, %eax                # imm = 0xFEEDFACF
+	cmpl	$-17958193, %eax
 	sete	%cl
-	cmpl	$-805638658, %eax               # imm = 0xCFFAEDFE
+	cmpl	$-805638658, %eax
 	sete	%al
 	orb	%cl, %al
 	retq
+

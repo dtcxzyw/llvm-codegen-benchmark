@@ -1,4 +1,4 @@
-func000000000000007f:                   # @func000000000000007f
+func000000000000007f:
 	imulq	$88, %rsi, %rax
 	addq	$84, %rax
 	cmpq	$2, %rdx
@@ -6,3 +6,4 @@ func000000000000007f:                   # @func000000000000007f
 	cmovneq	%rax, %rcx
 	leaq	992(%rdi,%rcx), %rax
 	retq
+

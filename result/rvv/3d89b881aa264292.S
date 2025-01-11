@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfgt.vf	v12, v10, fa5
@@ -6,7 +6,8 @@ func000000000000008a:                   # @func000000000000008a
 	vmsgt.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	fli.s	fa5, inf
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v12, v10, fa5
@@ -16,3 +17,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmsgt.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret
+

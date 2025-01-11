@@ -1,8 +1,9 @@
-func0000000000000a01:                   # @func0000000000000a01
-	movl	$4195354525, %eax               # imm = 0xFA10079D
+func0000000000000a01:
+	movl	$4195354525, %eax
 	imulq	%rdx, %rax
 	addq	%rsi, %rax
 	shrq	$28, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000002108:                   # @func0000000000002108
+func0000000000002108:
 	cmpb	$26, %dl
 	setb	%al
 	cmpb	$10, %sil
@@ -8,3 +8,4 @@ func0000000000002108:                   # @func0000000000002108
 	setb	%al
 	orb	%cl, %al
 	retq
+

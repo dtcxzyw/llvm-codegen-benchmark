@@ -1,11 +1,12 @@
 .LCPI0_0:
-	.long	32769                           # 0x8001
+	.long	32769
 .LCPI0_1:
-	.long	4                               # 0x4
-func0000000000000000:                   # @func0000000000000000
-	vpternlogq	$128, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 & xmm1 & xmm2
+	.long	4
+func0000000000000000:
+	vpternlogq	$128, %xmm2, %xmm1, %xmm0
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [32769,32769,32769,32769,32769,32769,32769,32769]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4,4,4,4,4,4,4,4]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm0
+	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1}
 	retq
+

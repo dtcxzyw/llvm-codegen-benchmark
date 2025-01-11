@@ -1,107 +1,94 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	tst	w1, #0x1
 	csel	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	tst	w1, #0x1
 	csinv	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	tst	w1, #0x1
 	csinv	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	tst	w1, #0x1
 	csel	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	tst	w1, #0x1
 	csinc	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, hs
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	tst	w1, #0x1
 	csinc	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	tst	w1, #0x1
 	csel	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	tst	w1, #0x1
 	csel	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	tst	w1, #0x1
-	mov	w8, #3                          // =0x3
+	mov	w8, #3
 	csel	w8, w2, w8, ne
 	cmp	w8, w0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	tst	w1, #0x1
-	mov	w8, #2                          // =0x2
+	mov	w8, #2
 	csel	w8, w2, w8, ne
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	tst	w1, #0x1
 	csel	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	tst	w1, #0x1
-	mov	w8, #8                          // =0x8
+	mov	w8, #8
 	csel	w8, w2, w8, ne
 	cmp	w8, w0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	tst	w1, #0x1
 	csinc	w8, w2, wzr, ne
 	cmp	w8, w0
 	cset	w0, ge
 	ret
-                                        // -- End function
+

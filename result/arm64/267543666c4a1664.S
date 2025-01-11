@@ -1,24 +1,21 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
-                                        // -- End function
+

@@ -1,41 +1,41 @@
 .LCPI0_0:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
+	.short	65534
 .LCPI0_1:
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
-	.short	12                              # 0xc
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
+	.short	12
 .LCPI0_2:
-	.short	65534                           # 0xfffe
-	.short	65534                           # 0xfffe
-func000000000000000c:                   # @func000000000000000c
+	.short	65534
+	.short	65534
+func000000000000000c:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpneqw	.LCPI0_1(%rip), %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -45,3 +45,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

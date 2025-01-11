@@ -1,67 +1,76 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	cmpl	$1, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	cmpl	$2, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	vucomiss	%xmm1, %xmm0
 	setbe	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
 	cmpl	$1, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
 	cmpl	$2, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000154:                   # @func0000000000000154
+
+func0000000000000154:
 	vucomiss	%xmm0, %xmm1
 	setae	%cl
 	cmpl	$7, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	vucomiss	%xmm1, %xmm0
 	setp	%al
 	setne	%cl
@@ -70,7 +79,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	vucomiss	%xmm1, %xmm0
 	setp	%al
 	setne	%cl
@@ -79,14 +89,16 @@ func00000000000000f8:                   # @func00000000000000f8
 	setae	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	vucomiss	%xmm0, %xmm1
 	setae	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vucomiss	%xmm1, %xmm0
 	setnp	%al
 	sete	%cl
@@ -95,10 +107,12 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
 	cmpl	$2, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
+

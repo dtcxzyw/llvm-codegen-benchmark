@@ -1,76 +1,78 @@
 .LCPI0_0:
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
-	.byte	3                               # 0x3
-	.byte	2                               # 0x2
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-	.byte	7                               # 0x7
-	.byte	6                               # 0x6
-	.byte	5                               # 0x5
-	.byte	4                               # 0x4
-	.byte	11                              # 0xb
-	.byte	10                              # 0xa
-	.byte	9                               # 0x9
-	.byte	8                               # 0x8
-	.byte	15                              # 0xf
-	.byte	14                              # 0xe
-	.byte	13                              # 0xd
-	.byte	12                              # 0xc
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
 .LCPI0_1:
-	.long	1073741820                      # 0x3ffffffc
-func0000000000000002:                   # @func0000000000000002
-	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[3,2,1,0,7,6,5,4,11,10,9,8,15,14,13,12,19,18,17,16,23,22,21,20,27,26,25,24,31,30,29,28]
+	.long	1073741820
+func0000000000000002:
+	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.byte	2                               # 0x2
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	6                               # 0x6
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	10                              # 0xa
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	14                              # 0xe
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	18                              # 0x12
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	22                              # 0x16
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	26                              # 0x1a
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	30                              # 0x1e
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-func0000000000000000:                   # @func0000000000000000
-	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0    # ymm0 = ymm0[2],zero,zero,zero,ymm0[6],zero,zero,zero,ymm0[10],zero,zero,zero,ymm0[14],zero,zero,zero,ymm0[18],zero,zero,zero,ymm0[22],zero,zero,zero,ymm0[26],zero,zero,zero,ymm0[30],zero,zero,zero
+	.byte	2
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	6
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	10
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	14
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	18
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	22
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	26
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	30
+	.byte	128
+	.byte	128
+	.byte	128
+func0000000000000000:
+	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	retq
+

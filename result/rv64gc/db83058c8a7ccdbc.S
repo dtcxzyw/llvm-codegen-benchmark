@@ -1,22 +1,24 @@
-func000000000000002f:                   # @func000000000000002f
+func000000000000002f:
 	addi	a1, a1, -16
 	li	a2, 16
 	bltu	a2, a1, .LBB0_2
 	li	a1, 16
-.LBB0_2:                                # %entry
+.LBB0_2:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	addi	a1, a1, -2048
 	addi	a1, a1, -2048
 	lui	a2, 1
 	bltu	a2, a1, .LBB1_2
 	lui	a1, 1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	slli	a1, a1, 3
 	lui	a2, 8
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

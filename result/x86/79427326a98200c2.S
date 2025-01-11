@@ -1,6 +1,6 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	movslq	%edx, %rax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
+	imulq	$274877907, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$38, %rax
@@ -11,9 +11,10 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	movslq	%edx, %rax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
+	imulq	$274877907, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$38, %rax
@@ -24,7 +25,8 @@ func0000000000000086:                   # @func0000000000000086
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	movl	%edx, %eax
 	shrl	$31, %eax
 	addl	%edx, %eax
@@ -35,3 +37,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
+

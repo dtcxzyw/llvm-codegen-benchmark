@@ -1,12 +1,14 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	$1, %dil
 	movl	$133, %eax
 	cmovel	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movl	%edi, %eax
-	andl	$-1024, %eax                    # imm = 0xFC00
-	cmpl	$56320, %eax                    # imm = 0xDC00
-	movl	$65533, %eax                    # imm = 0xFFFD
+	andl	$-1024, %eax
+	cmpl	$56320, %eax
+	movl	$65533, %eax
 	cmovnel	%edi, %eax
 	retq
+

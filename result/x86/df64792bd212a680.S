@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testb	%sil, %sil
 	movl	$39, %ecx
 	cmovnel	%esi, %ecx
@@ -6,3 +6,4 @@ func0000000000000021:                   # @func0000000000000021
 	movl	$34, %eax
 	cmovnel	%ecx, %eax
 	retq
+

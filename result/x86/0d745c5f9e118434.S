@@ -1,30 +1,34 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leaq	(%rsi,%rdx), %rcx
-	andq	$-4096, %rcx                    # imm = 0xF000
+	andq	$-4096, %rcx
 	subq	%rdi, %rcx
-	movabsq	$-4294963200, %rax              # imm = 0xFFFFFFFF00001000
+	movabsq	$-4294963200, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	leaq	(%rsi,%rdx), %rcx
-	andq	$-4096, %rcx                    # imm = 0xF000
+	andq	$-4096, %rcx
 	subq	%rdi, %rcx
-	movabsq	$-4294963200, %rax              # imm = 0xFFFFFFFF00001000
+	movabsq	$-4294963200, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
+
+func0000000000000035:
 	addq	%rdx, %rsi
 	movb	$51, %al
 	bzhiq	%rax, %rsi, %rcx
 	subq	%rdi, %rcx
-	movabsq	$4503599627370494, %rax         # imm = 0xFFFFFFFFFFFFE
+	movabsq	$4503599627370494, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	addq	%rdx, %rsi
 	movb	$51, %al
 	bzhiq	%rax, %rsi, %rcx
 	subq	%rdi, %rcx
-	movabsq	$4503599627370458, %rax         # imm = 0xFFFFFFFFFFFDA
+	movabsq	$4503599627370458, %rax
 	addq	%rcx, %rax
 	retq
+

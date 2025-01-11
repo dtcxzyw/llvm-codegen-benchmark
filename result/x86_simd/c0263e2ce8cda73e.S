@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,2
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vptestnmw	%ymm2, %ymm2, %k1
@@ -10,24 +10,25 @@ func0000000000000082:                   # @func0000000000000082
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-	.short	7                               # 0x7
-func0000000000000202:                   # @func0000000000000202
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+func0000000000000202:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpcmpltuw	.LCPI1_0(%rip), %ymm2, %k1
@@ -37,3 +38,4 @@ func0000000000000202:                   # @func0000000000000202
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

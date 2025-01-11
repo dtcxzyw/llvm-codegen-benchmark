@@ -1,4 +1,4 @@
-func000000000000056a:                   # @func000000000000056a
+func000000000000056a:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	cmovlel	%esi, %eax
@@ -6,7 +6,8 @@ func000000000000056a:                   # @func000000000000056a
 	addl	%eax, %edi
 	setg	%al
 	retq
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	cmovlel	%esi, %eax
@@ -15,3 +16,4 @@ func000000000000054a:                   # @func000000000000054a
 	testl	%edi, %edi
 	setg	%al
 	retq
+

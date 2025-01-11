@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -8,9 +8,10 @@ func000000000000002a:                   # @func000000000000002a
 	subw	a0, a0, a2
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
@@ -20,5 +21,6 @@ func000000000000003e:                   # @func000000000000003e
 	subw	a0, a0, a2
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

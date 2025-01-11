@@ -1,15 +1,17 @@
-func0000000000000055:                   # @func0000000000000055
+func0000000000000055:
 	movslq	%edx, %rax
-	imulq	$21600, %rax, %rcx              # imm = 0x5460
+	imulq	$21600, %rax, %rcx
 	addq	%rsi, %rdi
-	imulq	$86400, %rdi, %rax              # imm = 0x15180
+	imulq	$86400, %rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	movslq	%edx, %rax
-	imulq	$1000, %rax, %rcx               # imm = 0x3E8
+	imulq	$1000, %rax, %rcx
 	leaq	(%rdi,%rsi), %rdx
-	movabsq	$1000000000000, %rax            # imm = 0xE8D4A51000
+	movabsq	$1000000000000, %rax
 	imulq	%rdx, %rax
 	addq	%rcx, %rax
 	retq
+

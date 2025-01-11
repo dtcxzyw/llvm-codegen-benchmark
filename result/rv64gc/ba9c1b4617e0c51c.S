@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	addi	a2, a2, 32
 	slli	a1, a1, 32
 	srliw	a2, a2, 4
@@ -7,7 +7,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000004f:                   # @func000000000000004f
+
+func000000000000004f:
 	addi	a2, a2, 1
 	slli	a1, a1, 32
 	srli	a1, a1, 30
@@ -16,7 +17,8 @@ func000000000000004f:                   # @func000000000000004f
 	srli	a2, a2, 30
 	add	a0, a0, a2
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	addi	a2, a2, -2
 	slli	a1, a1, 32
 	srli	a1, a1, 29
@@ -25,7 +27,8 @@ func000000000000006c:                   # @func000000000000006c
 	slli	a2, a2, 4
 	add	a0, a0, a2
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	addi	a2, a2, 1
 	lui	a3, 32
 	slli	a1, a1, 32
@@ -35,3 +38,4 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

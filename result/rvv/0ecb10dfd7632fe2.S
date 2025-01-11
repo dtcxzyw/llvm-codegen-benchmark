@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	3074457345618258600             # 0x2aaaaaaaaaaaaaa8
-func0000000000000001:                   # @func0000000000000001
+	.quad	3074457345618258600
+func0000000000000001:
 	lui	a0, %hi(.LCPI0_0)
 	lui	a1, 699051
 	lui	a2, 349525
@@ -19,3 +19,4 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vim	v8, v8, 12, v0
 	ret
+

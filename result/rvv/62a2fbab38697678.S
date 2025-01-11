@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -10,7 +10,8 @@ func000000000000002a:                   # @func000000000000002a
 	li	a0, 32
 	vnsrl.wx	v8, v10, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -20,3 +21,4 @@ func0000000000000028:                   # @func0000000000000028
 	vwmacc.vx	v10, a0, v8
 	vnsrl.wi	v8, v10, 12
 	ret
+

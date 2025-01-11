@@ -1,5 +1,6 @@
-func0000000000000025:                   # @func0000000000000025
-	imull	$52429, %edi, %eax              # imm = 0xCCCD
+func0000000000000025:
+	imull	$52429, %edi, %eax
 	shrl	$23, %eax
 	addq	$-128, %rax
 	retq
+

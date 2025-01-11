@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	notb	%dil
 	cmpq	%rdx, %rsi
 	setne	%al
@@ -6,3 +6,4 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%al, %eax
 	shll	$6, %eax
 	retq
+

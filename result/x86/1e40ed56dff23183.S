@@ -1,13 +1,14 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	leal	63(%rdi), %ecx
 	testl	%edi, %edi
 	cmovnsl	%edi, %ecx
 	sarl	$6, %ecx
-	cmpl	$512, %ecx                      # imm = 0x200
-	movl	$512, %eax                      # imm = 0x200
+	cmpl	$512, %ecx
+	movl	$512, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	leal	7(%rdi), %ecx
 	testl	%edi, %edi
 	cmovnsl	%edi, %ecx
@@ -16,3 +17,4 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$31, %eax
 	cmovll	%ecx, %eax
 	retq
+

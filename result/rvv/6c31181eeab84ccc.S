@@ -1,4 +1,4 @@
-func000000000000060e:                   # @func000000000000060e
+func000000000000060e:
 	lui	a0, 8192
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -11,3 +11,4 @@ func000000000000060e:                   # @func000000000000060e
 	li	a0, 255
 	vminu.vx	v8, v8, a0
 	ret
+

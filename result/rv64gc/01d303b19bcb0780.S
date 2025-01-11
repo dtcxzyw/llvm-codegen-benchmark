@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andi	a3, a2, 1
 	andi	a2, a1, 1
 	bnez	a3, .LBB0_2
@@ -13,9 +13,10 @@ func0000000000000000:                   # @func0000000000000000
 .LBB0_3:
 	lui	a1, 1
 	addiw	a1, a1, -1
-.LBB0_4:                                # %entry
+.LBB0_4:
 	bgeu	a0, a1, .LBB0_6
 	ret
-.LBB0_6:                                # %entry
+.LBB0_6:
 	mv	a0, a1
 	ret
+

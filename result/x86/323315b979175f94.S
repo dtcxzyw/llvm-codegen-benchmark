@@ -1,14 +1,14 @@
-func0000000000000002:                   # @func0000000000000002
-	movabsq	$5247073869855161349, %rcx      # imm = 0x48D159E26AF37C05
+func0000000000000002:
+	movabsq	$5247073869855161349, %rcx
 	movq	%rdi, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	shrq	$10, %rdx
 	addl	%eax, %edx
-	imull	$3600, %edx, %eax               # imm = 0xE10
+	imull	$3600, %edx, %eax
 	subl	%eax, %edi
-	imull	$-30583, %edi, %eax             # imm = 0x8889
+	imull	$-30583, %edi, %eax
 	shrl	$16, %eax
 	addl	%edi, %eax
 	movzwl	%ax, %ecx
@@ -17,3 +17,4 @@ func0000000000000002:                   # @func0000000000000002
 	sarl	$5, %eax
 	addl	%ecx, %eax
 	retq
+

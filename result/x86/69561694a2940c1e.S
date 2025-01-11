@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	cmpl	$20, %edi
 	setne	%al
 	cmpl	$2, %edi
@@ -8,3 +8,4 @@ func000000000000018c:                   # @func000000000000018c
 	negl	%eax
 	orl	$1, %eax
 	retq
+

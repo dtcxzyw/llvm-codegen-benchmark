@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	sarl	$6, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -6,7 +6,8 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	sarl	$3, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -14,7 +15,8 @@ func0000000000000148:                   # @func0000000000000148
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sarl	$3, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -22,3 +24,4 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	negb	%al
@@ -6,7 +6,8 @@ func000000000000000d:                   # @func000000000000000d
 	shlxq	%rax, %rcx, %rax
 	notq	%rax
 	retq
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	negb	%al
@@ -14,7 +15,8 @@ func000000000000001d:                   # @func000000000000001d
 	shlxq	%rax, %rcx, %rax
 	notq	%rax
 	retq
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	movb	$60, %cl
@@ -23,7 +25,8 @@ func000000000000005d:                   # @func000000000000005d
 	shlxq	%rcx, %rax, %rax
 	notq	%rax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	decq	%rdi
 	lzcntq	%rdi, %rax
 	movb	$60, %cl
@@ -32,3 +35,4 @@ func0000000000000015:                   # @func0000000000000015
 	shlxq	%rcx, %rax, %rax
 	notq	%rax
 	retq
+

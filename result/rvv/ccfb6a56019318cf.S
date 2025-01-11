@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fd2000000000000              # double 0.28125
-func0000000000000018:                   # @func0000000000000018
+	.quad	0x3fd2000000000000
+func0000000000000018:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, 524288
@@ -12,7 +12,8 @@ func0000000000000018:                   # @func0000000000000018
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 1
 	vmseq.vi	v0, v12, 0
@@ -20,3 +21,4 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+

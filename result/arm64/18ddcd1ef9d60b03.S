@@ -1,6 +1,5 @@
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+func0000000000000030:
 	umull	x8, w2, w1
 	add	x0, x0, x8, lsl #9
 	ret
-                                        // -- End function
+

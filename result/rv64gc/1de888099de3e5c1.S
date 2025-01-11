@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	andi	a1, a1, 255
 	li	a2, -1
 	srli	a2, a2, 1
@@ -7,7 +7,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	mul	a0, a0, a2
 	slt	a0, a1, a0
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	not	a1, a1
 	li	a2, 10
 	slli	a1, a1, 56
@@ -15,3 +16,4 @@ func00000000000000c8:                   # @func00000000000000c8
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
+

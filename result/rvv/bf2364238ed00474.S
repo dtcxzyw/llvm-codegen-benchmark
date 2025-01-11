@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	li	a0, 1
 	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 4
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -16,21 +17,24 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 16
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 8
 	vsrl.vi	v8, v8, 3
 	li	a0, 64
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 8
 	vsrl.vi	v8, v8, 3
 	li	a0, 64
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -40,3 +44,4 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, -1
 	vminu.vx	v8, v8, a0
 	ret
+

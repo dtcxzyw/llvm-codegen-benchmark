@@ -1,5 +1,5 @@
-func00000000000000e9:                   # @func00000000000000e9
-	imull	$9363, %esi, %eax               # imm = 0x2493
+func00000000000000e9:
+	imull	$9363, %esi, %eax
 	shrl	$16, %eax
 	movl	%esi, %ecx
 	subl	%eax, %ecx
@@ -16,3 +16,4 @@ func00000000000000e9:                   # @func00000000000000e9
 	cmovbl	%edi, %ecx
 	movzwl	%cx, %eax
 	retq
+

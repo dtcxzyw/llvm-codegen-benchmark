@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -88,7 +88,8 @@ func0000000000000001:                   # @func0000000000000001
 	popq	%rbp
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -178,3 +179,4 @@ func0000000000000004:                   # @func0000000000000004
 	popq	%rbp
 	vzeroupper
 	retq
+

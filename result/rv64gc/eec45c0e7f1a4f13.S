@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -124
@@ -7,17 +7,19 @@ func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 3
 	sltu	a0, a1, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	slli	a1, a1, 48
 	srli	a2, a1, 48
 	li	a1, 2
 	beq	a2, a1, .LBB1_2
 	li	a1, 4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	li	a2, 768
@@ -29,3 +31,4 @@ func0000000000000024:                   # @func0000000000000024
 	li	a1, 148
 	sltu	a0, a0, a1
 	ret
+

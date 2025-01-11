@@ -1,270 +1,225 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	cmp	w1, w2
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	cmp	w1, w2
 	cinc	w0, w0, gt
 	ret
-                                        // -- End function
-func0000000000000031:                   // @func0000000000000031
-// %bb.0:                               // %entry
+
+func0000000000000031:
 	cmp	w1, w2
 	cinc	w0, w0, lt
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+
+func0000000000000009:
 	cmp	w1, w2
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func0000000000000043:                   // @func0000000000000043
-// %bb.0:                               // %entry
+
+func0000000000000043:
 	cmp	w1, w2
 	cinc	w0, w0, hi
 	ret
-                                        // -- End function
-func0000000000000063:                   // @func0000000000000063
-// %bb.0:                               // %entry
+
+func0000000000000063:
 	cmp	w1, w2
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+
+func0000000000000048:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+
+func0000000000000030:
 	cmp	w1, w2
 	cinc	w0, w0, lt
 	ret
-                                        // -- End function
-func0000000000000051:                   // @func0000000000000051
-// %bb.0:                               // %entry
+
+func0000000000000051:
 	cmp	w1, w2
 	cinc	w0, w0, gt
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func000000000000005b:                   // @func000000000000005b
-// %bb.0:                               // %entry
+
+func000000000000005b:
 	cmp	w1, w2
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	cmp	w1, w2
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+
+func0000000000000040:
 	cmp	w1, w2
 	cinc	w0, w0, hi
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	cmp	w1, w2
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	cmp	w1, w2
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000059:                   // @func0000000000000059
-// %bb.0:                               // %entry
+
+func0000000000000059:
 	cmp	w1, w2
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000033:                   // @func0000000000000033
-// %bb.0:                               // %entry
+
+func0000000000000033:
 	cmp	w1, w2
 	cinc	w0, w0, lt
 	ret
-                                        // -- End function
-func000000000000003b:                   // @func000000000000003b
-// %bb.0:                               // %entry
+
+func000000000000003b:
 	cmp	w1, w2
 	cinc	w0, w0, le
 	ret
-                                        // -- End function
-func0000000000000039:                   // @func0000000000000039
-// %bb.0:                               // %entry
+
+func0000000000000039:
 	cmp	w1, w2
 	cinc	w0, w0, le
 	ret
-                                        // -- End function
-func0000000000000032:                   // @func0000000000000032
-// %bb.0:                               // %entry
+
+func0000000000000032:
 	cmp	w1, w2
 	cinc	w0, w0, lt
 	ret
-                                        // -- End function
-func000000000000002b:                   // @func000000000000002b
-// %bb.0:                               // %entry
+
+func000000000000002b:
 	cmp	w1, w2
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func00000000000000a3:                   // @func00000000000000a3
-// %bb.0:                               // %entry
+
+func00000000000000a3:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	cmp	w1, w2
 	cinc	w0, w0, hi
 	ret
-                                        // -- End function
-func000000000000004b:                   // @func000000000000004b
-// %bb.0:                               // %entry
+
+func000000000000004b:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
+
+func00000000000000c1:
 	cmp	w1, w2
 	cinc	w0, w0, hi
 	ret
-                                        // -- End function
-func00000000000000c0:                   // @func00000000000000c0
-// %bb.0:                               // %entry
+
+func00000000000000c0:
 	cmp	w1, w2
 	cinc	w0, w0, hi
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
+
+func0000000000000058:
 	cmp	w1, w2
 	cinc	w0, w0, ge
 	ret
-                                        // -- End function
-func0000000000000049:                   // @func0000000000000049
-// %bb.0:                               // %entry
+
+func0000000000000049:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func0000000000000062:                   // @func0000000000000062
-// %bb.0:                               // %entry
+
+func0000000000000062:
 	cmp	w1, w2
 	cinc	w0, w0, ne
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	cmp	w1, w2
 	cinc	w0, w0, eq
 	ret
-                                        // -- End function
-func0000000000000038:                   // @func0000000000000038
-// %bb.0:                               // %entry
+
+func0000000000000038:
 	cmp	w1, w2
 	cinc	w0, w0, le
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	cmp	w1, w2
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func0000000000000053:                   // @func0000000000000053
-// %bb.0:                               // %entry
+
+func0000000000000053:
 	cmp	w1, w2
 	cinc	w0, w0, gt
 	ret
-                                        // -- End function
-func00000000000000c9:                   // @func00000000000000c9
-// %bb.0:                               // %entry
+
+func00000000000000c9:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func00000000000000ab:                   // @func00000000000000ab
-// %bb.0:                               // %entry
+
+func00000000000000ab:
 	cmp	w1, w2
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func00000000000000a9:                   // @func00000000000000a9
-// %bb.0:                               // %entry
+
+func00000000000000a9:
 	cmp	w1, w2
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func00000000000000cb:                   // @func00000000000000cb
-// %bb.0:                               // %entry
+
+func00000000000000cb:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func0000000000000029:                   // @func0000000000000029
-// %bb.0:                               // %entry
+
+func0000000000000029:
 	cmp	w1, w2
 	cinc	w0, w0, ls
 	ret
-                                        // -- End function
-func00000000000000c8:                   // @func00000000000000c8
-// %bb.0:                               // %entry
+
+func00000000000000c8:
 	cmp	w1, w2
 	cinc	w0, w0, hs
 	ret
-                                        // -- End function
-func00000000000000a0:                   // @func00000000000000a0
-// %bb.0:                               // %entry
+
+func00000000000000a0:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
-func00000000000000a1:                   // @func00000000000000a1
-// %bb.0:                               // %entry
+
+func00000000000000a1:
 	cmp	w1, w2
 	cinc	w0, w0, lo
 	ret
-                                        // -- End function
+

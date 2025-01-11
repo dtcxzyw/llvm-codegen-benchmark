@@ -1,4 +1,4 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000026:
 	movl	%edx, %eax
 	movslq	%esi, %rcx
 	addq	%rax, %rcx
@@ -6,7 +6,8 @@ func0000000000000026:                   # @func0000000000000026
 	cmpq	%rax, %rcx
 	setl	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	movslq	%edx, %rax
 	movl	%esi, %ecx
 	addq	%rax, %rcx
@@ -14,7 +15,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	movl	%edx, %eax
 	movslq	%esi, %rcx
 	addq	%rax, %rcx
@@ -22,3 +24,4 @@ func000000000000002a:                   # @func000000000000002a
 	cmpq	%rax, %rcx
 	setg	%al
 	retq
+

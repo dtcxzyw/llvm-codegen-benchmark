@@ -1,4 +1,4 @@
-func0000000000000093:                   # @func0000000000000093
+func0000000000000093:
 	not	a1, a1
 	sh1add	a0, a0, a0
 	sltu	a1, a1, a2
@@ -9,7 +9,8 @@ func0000000000000093:                   # @func0000000000000093
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	not	a1, a1
 	sh1add	a0, a0, a0
 	sltu	a1, a1, a2
@@ -20,3 +21,4 @@ func0000000000000013:                   # @func0000000000000013
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

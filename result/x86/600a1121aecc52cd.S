@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	andl	%esi, %edi
 	vcvttsd2si	%xmm0, %eax
 	andl	$1, %edi
@@ -6,7 +6,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$23, %eax
 	setae	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	andl	%esi, %edi
 	vcvttsd2si	%xmm0, %eax
 	andl	$1, %edi
@@ -14,3 +15,4 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	$23, %eax
 	setae	%al
 	retq
+

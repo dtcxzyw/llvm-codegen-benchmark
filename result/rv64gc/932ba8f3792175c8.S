@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	sext.w	a1, a1
 	snez	a2, a2
 	or	a0, a0, a2
@@ -6,7 +6,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	lui	a3, 244
 	addiw	a3, a3, 575
@@ -16,7 +17,8 @@ func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	sext.w	a1, a1
 	sltiu	a2, a2, 256
 	xori	a2, a2, 1
@@ -25,14 +27,16 @@ func0000000000000108:                   # @func0000000000000108
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	sext.w	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a2
 	sltiu	a1, a1, 5
 	or	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	li	a3, -1
 	srli	a3, a3, 32
@@ -45,7 +49,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
+
+func000000000000018a:
 	sext.w	a1, a1
 	sltiu	a2, a2, -1
 	or	a0, a0, a2
@@ -53,9 +58,10 @@ func000000000000018a:                   # @func000000000000018a
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+
 .LCPI6_0:
-	.quad	8350346493797257175             # 0x73e263e4e236cfd7
-func0000000000000181:                   # @func0000000000000181
+	.quad	8350346493797257175
+func0000000000000181:
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
 	sext.w	a1, a1
@@ -65,7 +71,8 @@ func0000000000000181:                   # @func0000000000000181
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	sext.w	a1, a1
 	snez	a2, a2
 	or	a0, a0, a2
@@ -73,7 +80,8 @@ func0000000000000188:                   # @func0000000000000188
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	sext.w	a1, a1
 	addi	a2, a2, -1
 	snez	a2, a2
@@ -81,3 +89,4 @@ func0000000000000184:                   # @func0000000000000184
 	sltiu	a1, a1, 2
 	or	a0, a0, a1
 	ret
+

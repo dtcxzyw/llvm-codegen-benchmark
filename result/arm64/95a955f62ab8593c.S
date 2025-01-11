@@ -1,22 +1,19 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+func0000000000000028:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, d0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, d0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000083:                   // @func0000000000000083
-// %bb.0:                               // %entry
-	mov	x8, #281474439839744            // =0xffffe0000000
+
+func0000000000000083:
+	mov	x8, #281474439839744
 	movk	x8, #18415, lsl #48
 	fmov	d3, x8
 	fcmp	d2, d3
@@ -24,10 +21,9 @@ func0000000000000083:                   // @func0000000000000083
 	fcmp	d1, d0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000085:                   // @func0000000000000085
-// %bb.0:                               // %entry
-	mov	x8, #281474439839744            // =0xffffe0000000
+
+func0000000000000085:
+	mov	x8, #281474439839744
 	movk	x8, #18415, lsl #48
 	fmov	d3, x8
 	fcmp	d2, d3
@@ -35,85 +31,75 @@ func0000000000000085:                   // @func0000000000000085
 	fcmp	d1, d0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fmov	d3, #0.50000000
 	fcmp	d2, d3
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000033:                   // @func0000000000000033
-// %bb.0:                               // %entry
+
+func0000000000000033:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
+
+func0000000000000025:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, d0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000032:                   // @func0000000000000032
-// %bb.0:                               // %entry
+
+func0000000000000032:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
+
+func0000000000000035:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+
+func0000000000000034:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000003c:                   // @func000000000000003c
-// %bb.0:                               // %entry
+
+func000000000000003c:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, ge
 	ret
-                                        // -- End function
-func000000000000003a:                   // @func000000000000003a
-// %bb.0:                               // %entry
+
+func000000000000003a:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, d0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func00000000000000a2:                   // @func00000000000000a2
-// %bb.0:                               // %entry
+
+func00000000000000a2:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, ls
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
+
+func0000000000000023:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, d0
 	cset	w0, lt
 	ret
-                                        // -- End function
+

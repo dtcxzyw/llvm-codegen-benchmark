@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	addb	$-6, %dl
 	movl	$1, %ecx
 	shlxl	%edx, %ecx, %eax
@@ -6,7 +6,8 @@ func0000000000000019:                   # @func0000000000000019
 	cmovnel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	decb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
@@ -15,7 +16,8 @@ func000000000000000b:                   # @func000000000000000b
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	decb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
@@ -24,7 +26,8 @@ func0000000000000009:                   # @func0000000000000009
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	addb	$-11, %dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
@@ -33,7 +36,8 @@ func0000000000000018:                   # @func0000000000000018
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addb	$-54, %dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
@@ -42,3 +46,4 @@ func0000000000000008:                   # @func0000000000000008
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

@@ -1,62 +1,71 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	cmpw	%dx, %di
 	seta	%cl
 	cmpw	%si, %di
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000124:                   # @func0000000000000124
+
+func0000000000000124:
 	cmpw	%dx, %di
 	setae	%cl
 	cmpw	%si, %di
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+
+func00000000000000eb:
 	cmpw	%dx, %di
 	setle	%cl
 	cmpw	%si, %di
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	xorl	%edi, %edx
 	xorl	%edi, %esi
 	orw	%dx, %si
 	sete	%al
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+
+func00000000000000ea:
 	cmpw	%dx, %di
 	setle	%cl
 	cmpw	%si, %di
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	cmpw	%dx, %di
 	setbe	%cl
 	cmpw	%si, %di
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	cmpw	%dx, %di
 	setbe	%cl
 	cmpw	%si, %di
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+
+func0000000000000089:
 	cmpw	%dx, %di
 	setb	%cl
 	cmpw	%si, %di
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000a9:                   # @func00000000000000a9
+
+func00000000000000a9:
 	cmpw	%dx, %di
 	setbe	%cl
 	cmpw	%si, %di
 	setae	%al
 	andb	%cl, %al
 	retq
+

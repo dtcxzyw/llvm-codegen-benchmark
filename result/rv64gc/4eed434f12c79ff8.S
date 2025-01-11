@@ -1,4 +1,4 @@
-func0000000000000055:                   # @func0000000000000055
+func0000000000000055:
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -7,7 +7,8 @@ func0000000000000055:                   # @func0000000000000055
 	slli	a0, a0, 6
 	subw	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a2, a1, 2
 	add	a0, a0, a1
 	lui	a1, 352717
@@ -17,7 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a1, a0, 2
 	addw	a0, a0, a1
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	slli	a2, a1, 2
 	slli	a1, a1, 5
 	subw	a1, a1, a2
@@ -27,21 +29,24 @@ func00000000000000f5:                   # @func00000000000000f5
 	slli	a0, a0, 6
 	subw	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	li	a2, 85
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -85
 	ret
-func00000000000000d7:                   # @func00000000000000d7
+
+func00000000000000d7:
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -480
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -49,14 +54,16 @@ func0000000000000003:                   # @func0000000000000003
 	li	a1, 100
 	mulw	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -480
 	ret
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	li	a2, 37
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -65,7 +72,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	addi	a1, a1, 865
 	addw	a0, a0, a1
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	li	a2, 21
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -74,7 +82,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	slli	a0, a0, 5
 	subw	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+
+func0000000000000043:
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -82,3 +91,4 @@ func0000000000000043:                   # @func0000000000000043
 	li	a1, 100
 	mulw	a0, a0, a1
 	ret
+

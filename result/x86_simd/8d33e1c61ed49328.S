@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,14 +16,15 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	8                               # 0x8
+	.long	8
 .LCPI0_2:
-	.long	6                               # 0x6
-func0000000000000001:                   # @func0000000000000001
+	.long	6
+func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestnmb	.LCPI0_0(%rip), %xmm2, %k2
-	vpbroadcastd	.LCPI0_1(%rip), %ymm0   # ymm0 = [8,8,8,8,8,8,8,8]
-	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k2} # ymm0 {%k2} = [6,6,6,6,6,6,6,6]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm0
+	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k2}
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	lui	a0, 1044480
@@ -9,7 +9,8 @@ func0000000000000007:                   # @func0000000000000007
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	lui	a0, 32767
@@ -22,7 +23,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 17
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	li	a0, 255
@@ -37,9 +39,10 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
+
 .LCPI3_0:
-	.quad	35748417275625727               # 0x7f00ff00ff00ff
-func0000000000000004:                   # @func0000000000000004
+	.quad	35748417275625727
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	li	a0, 255
@@ -52,3 +55,4 @@ func0000000000000004:                   # @func0000000000000004
 	vand.vx	v8, v8, a1
 	vor.vv	v8, v8, v10
 	ret
+

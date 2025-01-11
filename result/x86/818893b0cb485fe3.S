@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	(,%rdx,8), %ecx
 	andb	$8, %cl
 	andb	$1, %sil
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movl	%edx, %eax
 	shlb	$4, %al
 	andb	$16, %al
@@ -16,7 +17,8 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %al
 	orb	%sil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	leal	(%rdx,%rdx), %eax
 	andb	$-128, %al
 	notb	%sil
@@ -25,7 +27,8 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %al
 	orb	%sil, %al
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	leal	(,%rdx,4), %eax
 	andb	$12, %al
 	notb	%sil
@@ -34,7 +37,8 @@ func0000000000000003:                   # @func0000000000000003
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	(%rdx,%rdx), %ecx
 	andb	$16, %cl
 	xorl	%edx, %edx
@@ -44,3 +48,4 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edi, %eax
 	orb	%cl, %al
 	retq
+

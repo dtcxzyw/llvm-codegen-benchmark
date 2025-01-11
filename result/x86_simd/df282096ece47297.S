@@ -1,7 +1,7 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rsi
-	movabsq	$1749024623285053783, %r9       # imm = 0x1845C8A0CE512957
+	movabsq	$1749024623285053783, %r9
 	movq	%rsi, %rax
 	imulq	%r9
 	movq	%rdx, %rcx
@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$63, %rax
 	sarq	$13, %rcx
 	addq	%rax, %rcx
-	imulq	$86400, %rcx, %rax              # imm = 0x15180
+	imulq	$86400, %rcx, %rax
 	subq	%rax, %rsi
 	vmovq	%rsi, %xmm2
 	vmovq	%xmm1, %rdi
@@ -20,10 +20,10 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$63, %rax
 	sarq	$13, %rsi
 	addq	%rax, %rsi
-	imulq	$86400, %rsi, %rax              # imm = 0x15180
+	imulq	$86400, %rsi, %rax
 	subq	%rax, %rdi
 	vmovq	%rdi, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %r8
 	movq	%r8, %rax
 	imulq	%r9
@@ -32,7 +32,7 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$63, %rax
 	sarq	$13, %rdi
 	addq	%rax, %rdi
-	imulq	$86400, %rdi, %rax              # imm = 0x15180
+	imulq	$86400, %rdi, %rax
 	subq	%rax, %r8
 	vmovq	%r8, %xmm2
 	vmovq	%xmm0, %r8
@@ -42,27 +42,28 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$63, %rax
 	sarq	$13, %rdx
 	addq	%rax, %rdx
-	imulq	$86400, %rdx, %rax              # imm = 0x15180
+	imulq	$86400, %rdx, %rax
 	subq	%rax, %r8
 	vmovq	%r8, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm0
 	vmovq	%rcx, %xmm1
 	vmovq	%rsi, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	vmovq	%rdi, %xmm2
 	vmovq	%rdx, %xmm3
-	vpunpcklqdq	%xmm2, %xmm3, %xmm2     # xmm2 = xmm3[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm3, %xmm2
 	vinserti128	$1, %xmm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rsi
-	movabsq	$1749024623285053783, %r9       # imm = 0x1845C8A0CE512957
+	movabsq	$1749024623285053783, %r9
 	movq	%rsi, %rax
 	imulq	%r9
 	movq	%rdx, %rcx
@@ -70,7 +71,7 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$63, %rax
 	sarq	$13, %rcx
 	addq	%rax, %rcx
-	imulq	$86400, %rcx, %rax              # imm = 0x15180
+	imulq	$86400, %rcx, %rax
 	subq	%rax, %rsi
 	vmovq	%rsi, %xmm2
 	vmovq	%xmm1, %rdi
@@ -81,10 +82,10 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$63, %rax
 	sarq	$13, %rsi
 	addq	%rax, %rsi
-	imulq	$86400, %rsi, %rax              # imm = 0x15180
+	imulq	$86400, %rsi, %rax
 	subq	%rax, %rdi
 	vmovq	%rdi, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %r8
 	movq	%r8, %rax
 	imulq	%r9
@@ -93,7 +94,7 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$63, %rax
 	sarq	$13, %rdi
 	addq	%rax, %rdi
-	imulq	$86400, %rdi, %rax              # imm = 0x15180
+	imulq	$86400, %rdi, %rax
 	subq	%rax, %r8
 	vmovq	%r8, %xmm2
 	vmovq	%xmm0, %r8
@@ -103,20 +104,21 @@ func0000000000000005:                   # @func0000000000000005
 	shrq	$63, %rax
 	sarq	$13, %rdx
 	addq	%rax, %rdx
-	imulq	$86400, %rdx, %rax              # imm = 0x15180
+	imulq	$86400, %rdx, %rax
 	subq	%rax, %r8
 	vmovq	%r8, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm0
 	vmovq	%rcx, %xmm1
 	vmovq	%rsi, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1     # xmm1 = xmm2[0],xmm1[0]
+	vpunpcklqdq	%xmm1, %xmm2, %xmm1
 	vmovq	%rdi, %xmm2
 	vmovq	%rdx, %xmm3
-	vpunpcklqdq	%xmm2, %xmm3, %xmm2     # xmm2 = xmm3[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm3, %xmm2
 	vinserti128	$1, %xmm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+

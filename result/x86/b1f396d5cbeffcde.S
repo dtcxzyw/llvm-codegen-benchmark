@@ -1,11 +1,12 @@
-func0000000000000761:                   # @func0000000000000761
+func0000000000000761:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000408:                   # @func0000000000000408
+
+func0000000000000408:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
@@ -14,7 +15,8 @@ func0000000000000408:                   # @func0000000000000408
 	cmpl	$3, %eax
 	setae	%al
 	retq
-func0000000000000778:                   # @func0000000000000778
+
+func0000000000000778:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax
@@ -22,7 +24,8 @@ func0000000000000778:                   # @func0000000000000778
 	cmpl	$2, %eax
 	setae	%al
 	retq
-func0000000000000278:                   # @func0000000000000278
+
+func0000000000000278:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
 	vucomiss	%xmm0, %xmm1
@@ -31,3 +34,4 @@ func0000000000000278:                   # @func0000000000000278
 	cmpl	$3, %eax
 	setae	%al
 	retq
+

@@ -1,12 +1,13 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	movl	$1, %eax
 	subl	%edx, %eax
 	testb	$1, %sil
-	movl	$65530, %ecx                    # imm = 0xFFFA
+	movl	$65530, %ecx
 	cmovel	%eax, %ecx
 	leal	6(%rdi,%rcx), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	movl	$1, %eax
 	subl	%edx, %eax
 	testb	$1, %sil
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%eax, %ecx
 	leal	7(%rdi,%rcx), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	$1, %eax
 	subl	%edx, %eax
 	testb	$1, %sil
@@ -22,7 +24,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovel	%eax, %ecx
 	leal	7(%rdi,%rcx), %eax
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	movl	$4, %eax
 	subl	%edx, %eax
 	xorl	%ecx, %ecx
@@ -30,7 +33,8 @@ func0000000000000030:                   # @func0000000000000030
 	cmovel	%eax, %ecx
 	leal	8(%rdi,%rcx), %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	movl	$4, %eax
 	subl	%edx, %eax
 	xorl	%ecx, %ecx
@@ -38,3 +42,4 @@ func000000000000003f:                   # @func000000000000003f
 	cmovel	%eax, %ecx
 	leal	4(%rdi,%rcx), %eax
 	retq
+

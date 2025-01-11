@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	leal	1(%rdi), %ecx
 	testb	$1, %sil
 	movl	$7, %eax
@@ -6,3 +6,4 @@ func0000000000000029:                   # @func0000000000000029
 	testl	%edi, %edi
 	cmovnsl	%ecx, %eax
 	retq
+

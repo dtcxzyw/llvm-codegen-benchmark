@@ -1,4 +1,4 @@
-func0000000000000105:                   # @func0000000000000105
+func0000000000000105:
 	subl	%edi, %edx
 	cmpl	$3, %edx
 	setae	%cl
@@ -6,3 +6,4 @@ func0000000000000105:                   # @func0000000000000105
 	setbe	%al
 	andb	%cl, %al
 	retq
+

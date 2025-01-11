@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -8,7 +8,8 @@ func0000000000000034:                   # @func0000000000000034
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -18,7 +19,8 @@ func0000000000000024:                   # @func0000000000000024
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -28,7 +30,8 @@ func0000000000000028:                   # @func0000000000000028
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -38,7 +41,8 @@ func0000000000000021:                   # @func0000000000000021
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -48,7 +52,8 @@ func000000000000002a:                   # @func000000000000002a
 	vzext.vf2	v12, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -58,7 +63,8 @@ func0000000000000038:                   # @func0000000000000038
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 1
 	lui	a0, 599186
@@ -69,3 +75,4 @@ func0000000000000026:                   # @func0000000000000026
 	vzext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
+

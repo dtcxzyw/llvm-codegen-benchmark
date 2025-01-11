@@ -1,6 +1,6 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	movq	%rdx, %rcx
-	movl	$1572864, %eax                  # imm = 0x180000
+	movl	$1572864, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	cmpq	%rax, %rsi
@@ -9,9 +9,10 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	movq	%rdx, %rcx
-	movl	$1572864, %eax                  # imm = 0x180000
+	movl	$1572864, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	cmpq	%rax, %rsi
@@ -20,3 +21,4 @@ func0000000000000007:                   # @func0000000000000007
 	cmpq	%rax, %rdi
 	setle	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000010a:                   # @func000000000000010a
+func000000000000010a:
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
 	li	a3, -8
@@ -10,7 +10,8 @@ func000000000000010a:                   # @func000000000000010a
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret
-func000000000000010e:                   # @func000000000000010e
+
+func000000000000010e:
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
 	li	a3, -8
@@ -22,3 +23,4 @@ func000000000000010e:                   # @func000000000000010e
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret
+

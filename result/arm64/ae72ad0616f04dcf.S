@@ -1,5 +1,4 @@
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
+func0000000000000009:
 	sub	x8, x1, x2
 	udiv	x8, x8, x0
 	negs	x9, x8
@@ -8,4 +7,4 @@ func0000000000000009:                   // @func0000000000000009
 	csneg	x9, x10, x9, mi
 	sub	x0, x8, x9
 	ret
-                                        // -- End function
+

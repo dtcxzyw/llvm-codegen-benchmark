@@ -6,7 +6,8 @@
 	.zero	4,3
 .LCPI0_3:
 	.zero	4,12
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$254, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | mem
+	vpternlogd	$254, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0
 	retq
+

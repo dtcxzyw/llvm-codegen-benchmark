@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000042:                   # @func0000000000000042
-	vbroadcastsd	.LCPI0_0(%rip), %zmm6   # zmm6 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.quad	0x7fffffffffffffff
+func0000000000000042:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm6
 	vandpd	%zmm6, %zmm4, %zmm4
 	vandpd	%zmm6, %zmm5, %zmm5
 	vminpd	%zmm3, %zmm5, %zmm3
@@ -14,10 +14,11 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000084:                   # @func0000000000000084
-	vbroadcastsd	.LCPI1_0(%rip), %zmm6   # zmm6 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.quad	0x7fffffffffffffff
+func0000000000000084:
+	vbroadcastsd	.LCPI1_0(%rip), %zmm6
 	vandpd	%zmm6, %zmm4, %zmm4
 	vandpd	%zmm6, %zmm5, %zmm5
 	vmaxpd	%zmm3, %zmm5, %zmm3
@@ -30,10 +31,11 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000292:                   # @func0000000000000292
-	vbroadcastsd	.LCPI2_0(%rip), %zmm6   # zmm6 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.quad	0x7fffffffffffffff
+func0000000000000292:
+	vbroadcastsd	.LCPI2_0(%rip), %zmm6
 	vandpd	%zmm6, %zmm4, %zmm4
 	vandpd	%zmm6, %zmm5, %zmm5
 	vmaxpd	%zmm3, %zmm5, %zmm3
@@ -46,10 +48,11 @@ func0000000000000292:                   # @func0000000000000292
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000294:                   # @func0000000000000294
-	vbroadcastsd	.LCPI3_0(%rip), %zmm6   # zmm6 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
+	.quad	0x7fffffffffffffff
+func0000000000000294:
+	vbroadcastsd	.LCPI3_0(%rip), %zmm6
 	vandpd	%zmm6, %zmm4, %zmm4
 	vandpd	%zmm6, %zmm5, %zmm5
 	vmaxpd	%zmm3, %zmm5, %zmm3
@@ -62,3 +65,4 @@ func0000000000000294:                   # @func0000000000000294
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,40 +1,35 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	fadd	d2, d1, d2
 	fadd	d0, d0, d1
 	fcmp	d0, d2
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fadd	d2, d2, d1
 	fadd	d0, d0, d1
 	fcmp	d0, d2
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	fadd	d2, d2, d1
 	fadd	d0, d0, d1
 	fcmp	d0, d2
 	cset	w0, mi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fadd	d2, d2, d0
 	fadd	d0, d0, d1
 	fcmp	d0, d2
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	fadd	d2, d0, d2
 	fadd	d0, d0, d1
 	fcmp	d0, d2
 	cset	w0, lt
 	ret
-                                        // -- End function
+

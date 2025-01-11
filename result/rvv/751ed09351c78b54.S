@@ -1,4 +1,4 @@
-func0000000000000534:                   # @func0000000000000534
+func0000000000000534:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -9,7 +9,8 @@ func0000000000000534:                   # @func0000000000000534
 	vor.vi	v9, v8, 8
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000124:                   # @func0000000000000124
+
+func0000000000000124:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -20,7 +21,8 @@ func0000000000000124:                   # @func0000000000000124
 	vor.vi	v9, v8, 8
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func0000000000000134:                   # @func0000000000000134
+
+func0000000000000134:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -32,3 +34,4 @@ func0000000000000134:                   # @func0000000000000134
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+

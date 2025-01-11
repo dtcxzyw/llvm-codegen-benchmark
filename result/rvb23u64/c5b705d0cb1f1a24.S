@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	slli	a1, a1, 63
 	sraiw	a2, a0, 31
 	srai	a1, a1, 63
@@ -8,7 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a1, a1, 1
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 27
@@ -17,3 +18,4 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	sgtz	a0, a0
 	ret
+

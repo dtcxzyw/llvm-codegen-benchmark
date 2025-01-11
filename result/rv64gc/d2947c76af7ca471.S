@@ -1,11 +1,12 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	andi	a2, a2, 255
 	seqz	a2, a2
 	not	a2, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	andi	a2, a2, 255
 	addi	a2, a2, -3
 	snez	a2, a2
@@ -13,7 +14,8 @@ func0000000000000084:                   # @func0000000000000084
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	andi	a2, a2, 255
 	li	a3, 1
 	beq	a2, a3, .LBB2_2
@@ -28,7 +30,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	andi	a2, a2, 255
 	li	a3, 1
 	beq	a2, a3, .LBB3_2
@@ -41,7 +44,8 @@ func00000000000000e8:                   # @func00000000000000e8
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	andi	a2, a2, 255
 	beqz	a2, .LBB4_2
 	li	a2, 12
@@ -55,7 +59,8 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000089:                   # @func0000000000000089
+
+func0000000000000089:
 	andi	a2, a2, 255
 	li	a3, 8
 	beq	a2, a3, .LBB5_2
@@ -70,3 +75,4 @@ func0000000000000089:                   # @func0000000000000089
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+

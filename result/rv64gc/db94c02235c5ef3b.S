@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	sext.w	a2, a2
 	sgtz	a2, a2
 	addi	a2, a2, -1
@@ -8,3 +8,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	mul	a0, a0, a1
 	sraiw	a0, a0, 2
 	ret
+

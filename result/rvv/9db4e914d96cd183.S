@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
@@ -8,7 +8,8 @@ func0000000000000302:                   # @func0000000000000302
 	vmand.mm	v8, v10, v11
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000058:                   # @func0000000000000058
+
+func0000000000000058:
 	lui	a0, 8192
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
@@ -19,7 +20,8 @@ func0000000000000058:                   # @func0000000000000058
 	vmand.mm	v8, v10, v11
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
@@ -29,7 +31,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmand.mm	v8, v10, v11
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	li	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
@@ -39,3 +42,4 @@ func0000000000000318:                   # @func0000000000000318
 	vmand.mm	v8, v10, v11
 	vmor.mm	v0, v0, v8
 	ret
+

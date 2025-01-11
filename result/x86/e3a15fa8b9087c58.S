@@ -1,17 +1,20 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	movl	%edi, %eax
-	addq	$511, %rax                      # imm = 0x1FF
+	addq	$511, %rax
 	shrq	$9, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movl	%edi, %ecx
-	movabsq	$17179869172, %rax              # imm = 0x3FFFFFFF4
+	movabsq	$17179869172, %rax
 	addq	%rcx, %rax
 	shrq	$2, %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	movl	%edi, %ecx
-	movabsq	$17179869176, %rax              # imm = 0x3FFFFFFF8
+	movabsq	$17179869176, %rax
 	addq	%rcx, %rax
 	shrq	$2, %rax
 	retq
+

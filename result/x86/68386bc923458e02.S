@@ -1,4 +1,4 @@
-func0000000000000cec:                   # @func0000000000000cec
+func0000000000000cec:
 	incl	%edx
 	cmpl	%edx, %esi
 	setle	%cl
@@ -6,7 +6,8 @@ func0000000000000cec:                   # @func0000000000000cec
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000c8c:                   # @func0000000000000c8c
+
+func0000000000000c8c:
 	addl	$2, %edx
 	cmpl	%edx, %esi
 	setb	%cl
@@ -14,3 +15,4 @@ func0000000000000c8c:                   # @func0000000000000c8c
 	setne	%al
 	andb	%cl, %al
 	retq
+

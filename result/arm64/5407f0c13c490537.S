@@ -1,27 +1,24 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	lsr	x8, x2, #1
-	mov	w9, #12                         // =0xc
+	mov	w9, #12
 	madd	x8, x8, x9, x1
 	cmp	x0, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
+
+func00000000000001e1:
 	lsr	x8, x2, #1
-	mov	w9, #24                         // =0x18
+	mov	w9, #24
 	madd	x8, x8, x9, x1
 	cmp	x0, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000161:                   // @func0000000000000161
-// %bb.0:                               // %entry
+
+func0000000000000161:
 	lsr	x8, x2, #1
-	mov	w9, #80                         // =0x50
+	mov	w9, #80
 	madd	x8, x8, x9, x1
 	cmp	x0, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

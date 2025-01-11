@@ -1,11 +1,10 @@
 .LCPI0_0:
-	.xword	0xbfc5c28f5c28f5c3              // double -0.17000000000000001
+	.xword	0xbfc5c28f5c28f5c3
 .LCPI0_1:
-	.xword	0x3fceb851eb851eb8              // double 0.23999999999999999
+	.xword	0x3fceb851eb851eb8
 .LCPI0_2:
-	.xword	0x3fd47ae147ae147b              // double 0.32000000000000001
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+	.xword	0x3fd47ae147ae147b
+func0000000000000000:
 	adrp	x8, .LCPI0_0
 	fmov	d3, #1.00000000
 	ldr	d4, [x8, :lo12:.LCPI0_0]
@@ -17,4 +16,4 @@ func0000000000000000:                   // @func0000000000000000
 	ldr	d2, [x8, :lo12:.LCPI0_2]
 	fmadd	d0, d0, d2, d1
 	ret
-                                        // -- End function
+

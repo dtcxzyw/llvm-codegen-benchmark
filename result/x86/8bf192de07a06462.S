@@ -1,5 +1,5 @@
-func0000000000000318:                   # @func0000000000000318
-	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
+func0000000000000318:
+	movabsq	$-9223372036854775807, %rax
 	cmpq	%rax, %rsi
 	setne	%al
 	shlb	$2, %al
@@ -9,7 +9,8 @@ func0000000000000318:                   # @func0000000000000318
 	movl	$6, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000302:                   # @func0000000000000302
+
+func0000000000000302:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -18,7 +19,8 @@ func0000000000000302:                   # @func0000000000000302
 	movl	$3, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testq	%rsi, %rsi
 	sete	%al
 	testl	%edi, %edi
@@ -27,3 +29,4 @@ func0000000000000042:                   # @func0000000000000042
 	movb	$2, %al
 	subb	%cl, %al
 	retq
+

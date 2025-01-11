@@ -1,12 +1,14 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	shlq	$32, %rsi
 	vmovq	%rsi, %xmm0
 	vmovq	%rdi, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	shlq	$32, %rsi
 	vmovq	%rsi, %xmm0
 	vmovq	%rdi, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
+

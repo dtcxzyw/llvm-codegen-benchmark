@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	li	a0, 128
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v8, v8, a0
@@ -12,3 +12,4 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, 45
 	vmerge.vxm	v8, v8, a0, v0
 	ret
+

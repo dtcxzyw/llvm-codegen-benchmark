@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a2, a1, 240
 	li	a3, 224
 	andi	a1, a0, 1
@@ -9,7 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:
 	li	a0, 15
 	bnez	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	li	a0, 31
-.LBB0_4:                                # %entry
+.LBB0_4:
 	ret
+

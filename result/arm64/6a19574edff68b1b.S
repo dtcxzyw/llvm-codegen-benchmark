@@ -1,16 +1,12 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+func0000000000000001:
 	sxtw	x8, w1
 	mul	x8, x0, x8
 	orr	x0, x8, #0x3
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000003:
 	sxtw	x8, w1
 	mul	x8, x0, x8
 	orr	x0, x8, #0x1
 	ret
-                                        // -- End function
+

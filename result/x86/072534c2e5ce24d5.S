@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	andl	$1, %edx
 	shll	$4, %edx
 	testb	$1, %sil
@@ -7,7 +7,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %edx
 	xorl	$57, %edx
 	testb	$1, %sil
@@ -16,7 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andl	$1, %edx
 	incl	%edx
 	cmpl	%edi, %edx
@@ -24,7 +26,8 @@ func0000000000000014:                   # @func0000000000000014
 	notb	%sil
 	andb	%sil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andl	$1, %edx
 	addl	%edx, %edx
 	testb	$1, %sil
@@ -33,7 +36,8 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -44,7 +48,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%ecx, %edi
 	setb	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andl	$1, %edx
 	shll	$4, %edx
 	addl	$112, %edx
@@ -54,27 +59,30 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$17, %eax
-	orl	$65535, %eax                    # imm = 0xFFFF
+	orl	$65535, %eax
 	testb	$1, %sil
 	movl	$255, %ecx
 	cmovel	%eax, %ecx
 	cmpl	%ecx, %edi
 	seta	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$17, %eax
-	orl	$65535, %eax                    # imm = 0xFFFF
+	orl	$65535, %eax
 	testb	$1, %sil
 	movl	$255, %ecx
 	cmovel	%eax, %ecx
 	cmpl	%ecx, %edi
 	seta	%al
 	retq
+

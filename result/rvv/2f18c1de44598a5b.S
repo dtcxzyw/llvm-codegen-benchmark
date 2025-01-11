@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -10,9 +10,10 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfmul.vf	v8, v10, fa5
 	ret
+
 .LCPI1_0:
-	.word	0x3b808081                      # float 0.00392156886
-func0000000000000004:                   # @func0000000000000004
+	.word	0x3b808081
+func0000000000000004:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, %hi(.LCPI1_0)
@@ -25,3 +26,4 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfmul.vf	v8, v10, fa5
 	ret
+

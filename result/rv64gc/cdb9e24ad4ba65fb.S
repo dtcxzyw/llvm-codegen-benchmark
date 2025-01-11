@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB0_2
@@ -6,9 +6,10 @@ func0000000000000015:                   # @func0000000000000015
 	mul	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -48
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB1_2
@@ -16,9 +17,10 @@ func0000000000000014:                   # @func0000000000000014
 	mul	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -48
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB2_2
@@ -26,5 +28,6 @@ func0000000000000037:                   # @func0000000000000037
 	mul	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -48
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	testb	$1, %dl
 	movl	$104, %eax
 	movl	$80, %ecx
@@ -8,7 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000033:                   # @func0000000000000033
+
+func0000000000000033:
 	andl	$1, %edx
 	leal	(,%rdx,4), %ecx
 	testl	%esi, %esi
@@ -16,18 +17,20 @@ func0000000000000033:                   # @func0000000000000033
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	leaq	-18344(%rax,%rax,8), %rcx
 	testl	%esi, %esi
-	movq	$-18326, %rax                   # imm = 0xB86A
+	movq	$-18326, %rax
 	cmoveq	%rcx, %rax
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	notb	%dl
 	movzbl	%dl, %ecx
 	andl	$1, %ecx
@@ -38,3 +41,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+

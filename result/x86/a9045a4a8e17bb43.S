@@ -1,11 +1,12 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002e:
 	leaq	(%rsi,%rdx,8), %rcx
 	sarq	$3, %rdi
-	movabsq	$-8737931403336103397, %rax     # imm = 0x86BCA1AF286BCA1B
+	movabsq	$-8737931403336103397, %rax
 	imulq	%rdi, %rax
 	subq	%rcx, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	leaq	(%rsi,%rdx,8), %rcx
 	movq	%rdi, %rax
 	shrq	$63, %rax
@@ -13,3 +14,4 @@ func000000000000002a:                   # @func000000000000002a
 	sarq	%rax
 	subq	%rcx, %rax
 	retq
+

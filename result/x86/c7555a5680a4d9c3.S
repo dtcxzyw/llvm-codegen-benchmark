@@ -1,8 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andb	$1, %sil
 	shlxl	%esi, %edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andb	$1, %sil
 	shlxl	%esi, %edi, %eax
 	retq
+

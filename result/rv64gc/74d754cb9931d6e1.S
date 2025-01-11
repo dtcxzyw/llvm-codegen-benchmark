@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x3ff0000000000000
 .LCPI0_1:
-	.quad	0x3ff1c28f5c28f5c3              # double 1.1100000000000001
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3ff1c28f5c28f5c3
+func0000000000000004:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)
@@ -13,3 +13,4 @@ func0000000000000004:                   # @func0000000000000004
 	not	a0, a0
 	and	a0, a0, a1
 	ret
+

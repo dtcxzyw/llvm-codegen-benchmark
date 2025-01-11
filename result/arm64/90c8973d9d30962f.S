@@ -1,9 +1,8 @@
 .LCPI0_0:
-	.xword	0x406573fae561f647              // double 171.62437695630271
+	.xword	0x406573fae561f647
 .LCPI0_1:
-	.xword	0x40862e42fefa39ef              // double 709.78271289338397
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+	.xword	0x40862e42fefa39ef
+func0000000000000022:
 	adrp	x8, .LCPI0_0
 	fabs	d1, d1
 	ldr	d2, [x8, :lo12:.LCPI0_0]
@@ -15,4 +14,4 @@ func0000000000000022:                   // @func0000000000000022
 	and	w8, w8, w0
 	csel	w0, wzr, w8, pl
 	ret
-                                        // -- End function
+

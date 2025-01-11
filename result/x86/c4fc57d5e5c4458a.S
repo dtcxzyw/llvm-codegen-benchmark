@@ -1,5 +1,5 @@
-func0000000000000302:                   # @func0000000000000302
-	movl	$4294967293, %eax               # imm = 0xFFFFFFFD
+func0000000000000302:
+	movl	$4294967293, %eax
 	cmpq	%rax, %rdx
 	setne	%cl
 	testq	%rsi, %rsi
@@ -7,7 +7,8 @@ func0000000000000302:                   # @func0000000000000302
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	cmpq	$-1, %rdx
 	sete	%cl
 	cmpq	$2, %rsi
@@ -15,7 +16,8 @@ func0000000000000048:                   # @func0000000000000048
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	testq	%rdx, %rdx
 	sete	%cl
 	cmpq	$1, %rsi
@@ -23,7 +25,8 @@ func0000000000000042:                   # @func0000000000000042
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	testq	%rdx, %rdx
 	setne	%cl
 	cmpq	$8, %rsi
@@ -31,3 +34,4 @@ func0000000000000308:                   # @func0000000000000308
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
+

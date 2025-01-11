@@ -1,12 +1,14 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	subl	%edx, %esi
 	leal	(%rdi,%rsi,8), %eax
 	shrl	$6, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	subq	%rdx, %rsi
 	shrq	$3, %rdi
 	leaq	(%rdi,%rsi), %rcx
-	movabsq	$2305843009213693944, %rax      # imm = 0x1FFFFFFFFFFFFFF8
+	movabsq	$2305843009213693944, %rax
 	andq	%rcx, %rax
 	retq
+

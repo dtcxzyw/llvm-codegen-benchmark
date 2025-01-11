@@ -1,7 +1,7 @@
-func0000000000000013:                   # @func0000000000000013
+func0000000000000013:
 	movzwl	%di, %eax
 	shrl	$2, %eax
-	imull	$5243, %eax, %eax               # imm = 0x147B
+	imull	$5243, %eax, %eax
 	shrl	$17, %eax
 	imull	$205, %eax, %eax
 	movzwl	%ax, %eax
@@ -9,3 +9,4 @@ func0000000000000013:                   # @func0000000000000013
 	orb	$48, %al
 	movzbl	%al, %eax
 	retq
+

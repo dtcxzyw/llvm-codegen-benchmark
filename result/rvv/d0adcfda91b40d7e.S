@@ -1,16 +1,16 @@
 .LCPI0_0:
-	.quad	0x3bf0000000000000              # double 5.4210108624275222E-20
+	.quad	0x3bf0000000000000
 .LCPI0_1:
-	.quad	0x4330000000000000              # double 4503599627370496
+	.quad	0x4330000000000000
 .LCPI0_2:
-	.quad	0x43f0000000000000              # double 1.8446744073709552E+19
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x43f0000000000000
+func0000000000000000:
 	addi	sp, sp, -16
 	csrr	a0, vlenb
 	slli	a0, a0, 3
 	sub	sp, sp, a0
 	addi	a0, sp, 16
-	vs8r.v	v8, (a0)                        # Unknown-size Folded Spill
+	vs8r.v	v8, (a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v7, v0
 	lui	a0, %hi(.LCPI0_0)
@@ -30,9 +30,10 @@ func0000000000000000:                   # @func0000000000000000
 	vfsgnj.vv	v8, v8, v16
 	vmv1r.v	v0, v7
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
+	vl8r.v	v16, (a0)
 	vmerge.vvm	v8, v8, v16, v0
 	csrr	a0, vlenb
 	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
+

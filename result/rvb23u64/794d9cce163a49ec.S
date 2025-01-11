@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	lui	a3, 1048560
 	slli	a1, a1, 49
 	slli	a0, a0, 54
@@ -7,7 +7,8 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	lui	a3, 1048510
 	slli	a1, a1, 32
 	slli	a0, a0, 18
@@ -17,7 +18,8 @@ func000000000000003f:                   # @func000000000000003f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	srliw	a2, a2, 16
 	slli	a1, a1, 32
 	slli	a0, a0, 8
@@ -25,7 +27,8 @@ func000000000000002f:                   # @func000000000000002f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000003b:                   # @func000000000000003b
+
+func000000000000003b:
 	slli	a2, a2, 47
 	lui	a3, 262144
 	slli	a0, a0, 62
@@ -35,14 +38,16 @@ func000000000000003b:                   # @func000000000000003b
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	zext.h	a2, a2
 	slli	a1, a1, 16
 	or	a1, a1, a2
 	slli	a0, a0, 20
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	lui	a3, 65535
 	slli	a1, a1, 48
 	slli	a0, a0, 56
@@ -51,30 +56,35 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	slli	a1, a1, 32
 	add.uw	a1, a2, a1
 	slli	a0, a0, 48
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	slli	a2, a2, 17
 	bclri	a1, a1, 15
 	or	a1, a1, a2
 	slli	a0, a0, 30
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	andi	a2, a2, 2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+
+func0000000000000036:
 	andi	a2, a2, 31
 	slli	a1, a1, 5
 	or	a1, a1, a2
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret
+

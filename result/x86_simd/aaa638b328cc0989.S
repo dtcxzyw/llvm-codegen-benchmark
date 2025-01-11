@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vpminsd	%ymm0, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
@@ -7,7 +7,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vpminsd	%ymm0, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
@@ -15,3 +16,4 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

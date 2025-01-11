@@ -1,54 +1,46 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	sub	w8, w1, #87
 	cmp	w0, #10
 	csel	w0, w0, w8, lo
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	add	w8, w1, #169
 	cmp	w0, #10
 	csel	w0, w0, w8, lo
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
-	add	w8, w1, #1, lsl #12             // =4096
-	cmp	w0, #1, lsl #12                 // =4096
+
+func0000000000000074:
+	add	w8, w1, #1, lsl #12
+	cmp	w0, #1, lsl #12
 	csel	w0, w0, w8, ls
 	ret
-                                        // -- End function
-func0000000000000064:                   // @func0000000000000064
-// %bb.0:                               // %entry
-	add	w8, w1, #1, lsl #12             // =4096
-	cmp	w0, #1, lsl #12                 // =4096
+
+func0000000000000064:
+	add	w8, w1, #1, lsl #12
+	cmp	w0, #1, lsl #12
 	csel	w0, w0, w8, ls
 	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
+
+func000000000000002c:
 	cmp	w0, #0
 	csinc	w0, w0, w1, ne
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	sub	w8, w1, #1
 	cmp	w0, #0
 	csel	w0, w0, w8, gt
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+
+func0000000000000034:
 	sub	w8, w1, #9
 	cmp	w0, #5
 	csel	w0, w0, w8, lo
 	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
+
+func000000000000006a:
 	cmp	w0, #0
 	csinc	w0, w0, w1, ge
 	ret
-                                        // -- End function
+

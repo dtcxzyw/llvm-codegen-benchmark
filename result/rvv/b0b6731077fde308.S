@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	0x4084666666666666              # double 652.79999999999995
+	.quad	0x4084666666666666
 .LCPI0_1:
-	.quad	0x40efffdfffffffff              # double 65534.999999999993
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x40efffdfffffffff
+func0000000000000002:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -17,9 +17,10 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v17
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
+
 .LCPI1_0:
-	.quad	0x3fffffe000000000              # double 1.999969482421875
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x3fffffe000000000
+func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v16, v0
 	lui	a0, %hi(.LCPI1_0)
@@ -31,3 +32,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmv1r.v	v0, v16
 	vmerge.vim	v8, v8, 0, v0
 	ret
+

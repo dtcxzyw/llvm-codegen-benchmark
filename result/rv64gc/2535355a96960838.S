@@ -1,4 +1,4 @@
-func000000000000005f:                   # @func000000000000005f
+func000000000000005f:
 	sraiw	a3, a2, 31
 	xor	a2, a2, a3
 	subw	a2, a2, a3
@@ -8,7 +8,8 @@ func000000000000005f:                   # @func000000000000005f
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000005d:                   # @func000000000000005d
+
+func000000000000005d:
 	sraiw	a3, a2, 31
 	xor	a2, a2, a3
 	subw	a2, a2, a3
@@ -18,7 +19,8 @@ func000000000000005d:                   # @func000000000000005d
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000005c:                   # @func000000000000005c
+
+func000000000000005c:
 	sraiw	a3, a2, 31
 	xor	a2, a2, a3
 	subw	a2, a2, a3
@@ -28,3 +30,4 @@ func000000000000005c:                   # @func000000000000005c
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	incl	%edi
 	movl	%edi, %eax
 	sarl	$31, %eax
@@ -7,7 +7,8 @@ func0000000000000007:                   # @func0000000000000007
 	leaq	(%rax,%rax,2), %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	incl	%edi
 	cmpl	$9, %edi
 	movl	$8, %eax
@@ -15,3 +16,4 @@ func0000000000000027:                   # @func0000000000000027
 	shlq	$3, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
+

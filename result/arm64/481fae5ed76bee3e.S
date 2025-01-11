@@ -1,102 +1,78 @@
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func000000000000000f:
 	ubfiz	x8, x2, #1, #8
 	orr	x9, x0, x1
 	orr	x0, x9, x8
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #56
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000000e:
 	ubfiz	x8, x2, #8, #8
 	orr	x9, x0, x1
 	orr	x0, x9, x8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #56
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func000000000000001f:
 	ubfiz	x8, x2, #14, #8
 	orr	x9, x0, x1
 	orr	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
-// %bb.0:                               // %entry
+
+func000000000000001e:
 	and	w8, w2, #0xff
 	orr	x9, x0, x1
 	orr	x0, x9, x8, lsl #42
 	ret
-                                        // -- End function
-func0000000000000016:                   // @func0000000000000016
-// %bb.0:                               // %entry
+
+func0000000000000016:
 	and	w8, w2, #0xff
 	orr	x9, x0, x1
 	orr	x0, x9, x8, lsl #49
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #63
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #56
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	and	w8, w2, #0xff
 	orr	x9, x0, x1
 	orr	x0, x9, x8, lsl #40
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	and	w8, w2, #0xff
 	orr	x9, x0, x1
 	orr	x0, x9, x8, lsl #40
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #56
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000006:
 	ubfiz	x8, x2, #16, #8
 	orr	x9, x0, x1
 	orr	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	orr	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
 	orr	x0, x8, x2, lsl #63
 	ret
-                                        // -- End function
+

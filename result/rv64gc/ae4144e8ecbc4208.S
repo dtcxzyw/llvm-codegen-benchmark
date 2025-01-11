@@ -1,4 +1,4 @@
-func0000000000000078:                   # @func0000000000000078
+func0000000000000078:
 	li	a2, 16
 	slli	a4, a1, 48
 	li	a3, 16
@@ -32,7 +32,7 @@ func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 52
 	srli	a1, a1, 60
 	add	a3, a3, a1
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	slli	a1, a0, 48
 	beqz	a1, .LBB0_4
 	addi	a1, a0, -1
@@ -55,8 +55,9 @@ func0000000000000078:                   # @func0000000000000078
 	slli	a0, a0, 52
 	srli	a0, a0, 60
 	add	a2, a2, a0
-.LBB0_4:                                # %cond.end2
+.LBB0_4:
 	add	a2, a2, a3
 	sltiu	a0, a2, 16
 	xori	a0, a0, 1
 	ret
+

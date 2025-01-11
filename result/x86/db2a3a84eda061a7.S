@@ -1,7 +1,8 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	movslq	%esi, %rcx
 	movslq	%edi, %rax
 	imulq	%rcx, %rax
 	addq	$7, %rax
 	andq	$-8, %rax
 	retq
+

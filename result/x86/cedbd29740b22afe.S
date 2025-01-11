@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	notq	%rdx
 	cmpl	$63, %esi
 	movq	$-1, %rax
@@ -6,3 +6,4 @@ func0000000000000021:                   # @func0000000000000021
 	testq	%rax, %rdi
 	sete	%al
 	retq
+

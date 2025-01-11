@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000088:
 	subl	%esi, %edx
 	incl	%edx
 	cmpl	$9, %edx
@@ -7,3 +7,4 @@ func0000000000000088:                   # @func0000000000000088
 	setae	%al
 	andb	%cl, %al
 	retq
+

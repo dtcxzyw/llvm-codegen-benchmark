@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
-func000000000000036c:                   # @func000000000000036c
+	.quad	0x3ff0000000000000
+func000000000000036c:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fabs.d	fa4, fa1
@@ -10,7 +10,8 @@ func000000000000036c:                   # @func000000000000036c
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000264:                   # @func0000000000000264
+
+func0000000000000264:
 	fclass.d	a1, fa1
 	fclass.d	a2, fa0
 	andi	a1, a1, 897
@@ -19,11 +20,12 @@ func0000000000000264:                   # @func0000000000000264
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
+	.quad	0x3eb0c6f7a0b5ed8d
 .LCPI2_1:
-	.quad	0x401921fb54442d18              # double 6.2831853071795862
-func0000000000000090:                   # @func0000000000000090
+	.quad	0x401921fb54442d18
+func0000000000000090:
 	lui	a1, %hi(.LCPI2_0)
 	lui	a2, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_0)(a1)
@@ -34,7 +36,8 @@ func0000000000000090:                   # @func0000000000000090
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func00000000000001e0:                   # @func00000000000001e0
+
+func00000000000001e0:
 	fclass.d	a1, fa1
 	fclass.d	a2, fa0
 	andi	a1, a1, 894
@@ -44,7 +47,8 @@ func00000000000001e0:                   # @func00000000000001e0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000220:                   # @func0000000000000220
+
+func0000000000000220:
 	fclass.d	a1, fa1
 	fmv.d.x	fa5, zero
 	andi	a1, a1, 129
@@ -53,9 +57,10 @@ func0000000000000220:                   # @func0000000000000220
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+
 .LCPI5_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000374:                   # @func0000000000000374
+	.quad	0x3cb0000000000000
+func0000000000000374:
 	lui	a1, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a1)
 	fabs.d	fa4, fa1
@@ -65,3 +70,4 @@ func0000000000000374:                   # @func0000000000000374
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+

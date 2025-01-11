@@ -1,4 +1,4 @@
-func0000000000000143:                   # @func0000000000000143
+func0000000000000143:
 	testl	%edx, %edx
 	setg	%cl
 	shrb	%cl, %sil
@@ -8,7 +8,8 @@ func0000000000000143:                   # @func0000000000000143
 	cmovael	%ecx, %eax
 	addb	%dil, %al
 	retq
-func0000000000000283:                   # @func0000000000000283
+
+func0000000000000283:
 	cmpl	$61, %edx
 	setb	%cl
 	shrb	%cl, %sil
@@ -18,7 +19,8 @@ func0000000000000283:                   # @func0000000000000283
 	cmovael	%ecx, %eax
 	addb	%dil, %al
 	retq
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	testl	%edx, %edx
 	sete	%cl
 	shrb	%cl, %sil
@@ -28,3 +30,4 @@ func0000000000000023:                   # @func0000000000000023
 	cmovael	%ecx, %eax
 	addb	%dil, %al
 	retq
+

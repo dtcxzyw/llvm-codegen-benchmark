@@ -1,5 +1,5 @@
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+func0000000000000008:
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -15,8 +15,9 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
-	movabsq	$8589934597, %rax               # imm = 0x200000005
+
+func0000000000000148:
+	movabsq	$8589934597, %rax
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx
 	subq	%rax, %rcx
@@ -32,3 +33,4 @@ func0000000000000148:                   # @func0000000000000148
 	setb	%al
 	orb	%dil, %al
 	retq
+

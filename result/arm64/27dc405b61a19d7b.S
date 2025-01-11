@@ -1,5 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	scvtf	d2, w0
 	fdiv	d1, d1, d2
 	fmul	d0, d1, d0
@@ -7,9 +6,8 @@ func000000000000000a:                   // @func000000000000000a
 	fcmp	d0, d1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	scvtf	d2, w0
 	fdiv	d1, d1, d2
 	fmul	d0, d1, d0
@@ -17,27 +15,24 @@ func000000000000000c:                   // @func000000000000000c
 	fcmp	d0, d1
 	cset	w0, ge
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	scvtf	d2, w0
 	fdiv	d1, d1, d2
 	fmul	d0, d1, d0
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	scvtf	d2, w0
 	fdiv	d1, d1, d2
 	fmul	d0, d0, d1
 	fcmp	d0, #0.0
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	scvtf	d2, w0
 	fdiv	d1, d1, d2
 	fmul	d0, d1, d0
@@ -45,4 +40,4 @@ func0000000000000003:                   // @func0000000000000003
 	fcmp	d0, d1
 	cset	w0, lt
 	ret
-                                        // -- End function
+

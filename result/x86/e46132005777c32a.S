@@ -1,12 +1,13 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	leaq	86400(%rsi), %rcx
 	testb	$1, %dl
 	cmoveq	%rsi, %rcx
-	movl	$4294963696, %eax               # imm = 0xFFFFF1F0
+	movl	$4294963696, %eax
 	imulq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	leaq	43(%rsi), %rax
 	leaq	230(%rsi), %rcx
 	testb	$1, %dl
@@ -16,7 +17,8 @@ func000000000000000c:                   # @func000000000000000c
 	subq	%rcx, %rdi
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -24,3 +26,4 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rsi,2), %rax
 	addq	%rcx, %rax
 	retq
+

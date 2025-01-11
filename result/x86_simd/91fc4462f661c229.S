@@ -1,11 +1,12 @@
 .LCPI0_0:
-	.long	4096                            # 0x1000
+	.long	4096
 .LCPI0_1:
-	.long	4291821439                      # 0xffcfff7f
+	.long	4291821439
 .LCPI0_2:
-	.long	4291690367                      # 0xffcdff7f
-func0000000000000001:                   # @func0000000000000001
+	.long	4291690367
+func0000000000000001:
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %ymm0   # ymm0 = [4291821439,4291821439,4291821439,4291821439,4291821439,4291821439,4291821439,4291821439]
-	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4291690367,4291690367,4291690367,4291690367,4291690367,4291690367,4291690367,4291690367]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm0
+	vpbroadcastd	.LCPI0_2(%rip), %ymm0 {%k1}
 	retq
+

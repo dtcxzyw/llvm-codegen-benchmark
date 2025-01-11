@@ -1,4 +1,4 @@
-func0000000000000c8c:                   # @func0000000000000c8c
+func0000000000000c8c:
 	addq	$8, %rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000c8c:                   # @func0000000000000c8c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000d81:                   # @func0000000000000d81
+
+func0000000000000d81:
 	addq	$32, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -14,15 +15,17 @@ func0000000000000d81:                   # @func0000000000000d81
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000ca1:                   # @func0000000000000ca1
+
+func0000000000000ca1:
 	addq	$9, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%cl
-	testl	$1024, %esi                     # imm = 0x400
+	testl	$1024, %esi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000c81:                   # @func0000000000000c81
+
+func0000000000000c81:
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -30,7 +33,8 @@ func0000000000000c81:                   # @func0000000000000c81
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000d8c:                   # @func0000000000000d8c
+
+func0000000000000d8c:
 	addq	$16, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -39,19 +43,22 @@ func0000000000000d8c:                   # @func0000000000000d8c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000821:                   # @func0000000000000821
+
+func0000000000000821:
 	addq	$-2, %rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
-	andl	$-1024, %esi                    # imm = 0xFC00
-	cmpl	$55296, %esi                    # imm = 0xD800
+	andl	$-1024, %esi
+	cmpl	$55296, %esi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000cac:                   # @func0000000000000cac
+
+func0000000000000cac:
 	addq	$3, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%al
 	shrb	$4, %sil
 	andb	%sil, %al
 	retq
+

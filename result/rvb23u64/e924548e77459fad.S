@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	-7070675565921424023            # 0x9ddfea08eb382d69
-func000000000000000c:                   # @func000000000000000c
+	.quad	-7070675565921424023
+func000000000000000c:
 	srliw	a1, a1, 3
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
@@ -9,3 +9,4 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret
+

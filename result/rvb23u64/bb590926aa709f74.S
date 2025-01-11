@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	zext.h	a0, a0
 	subw	a1, a1, a2
 	slti	a1, a1, 0
@@ -6,7 +6,8 @@ func000000000000002a:                   # @func000000000000002a
 	seqz	a0, a0
 	andn	a0, a0, a1
 	ret
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	zext.h	a0, a0
 	subw	a1, a1, a2
 	li	a2, 27
@@ -16,3 +17,4 @@ func000000000000042a:                   # @func000000000000042a
 	seqz	a0, a0
 	andn	a0, a0, a1
 	ret
+

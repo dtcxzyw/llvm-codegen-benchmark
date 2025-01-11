@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	li	a0, -17
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
@@ -9,7 +9,8 @@ func000000000000001f:                   # @func000000000000001f
 	vmerge.vvm	v8, v12, v8, v0
 	vsll.vv	v8, v8, v14
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	li	a0, -128
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
@@ -20,3 +21,4 @@ func0000000000000008:                   # @func0000000000000008
 	vmerge.vvm	v8, v12, v8, v0
 	vsll.vv	v8, v8, v14
 	ret
+

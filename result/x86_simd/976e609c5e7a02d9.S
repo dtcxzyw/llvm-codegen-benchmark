@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm1, %xmm4
@@ -49,9 +49,10 @@ func0000000000000015:                   # @func0000000000000015
 	vpmulld	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	2                               # 0x2
-func0000000000000014:                   # @func0000000000000014
+	.long	2
+func0000000000000014:
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm1, %xmm4
@@ -101,3 +102,4 @@ func0000000000000014:                   # @func0000000000000014
 	vpmulld	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
+

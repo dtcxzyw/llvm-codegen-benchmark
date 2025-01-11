@@ -1,11 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	xorb	$1, %sil
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andb	$1, %dil
 	leal	-128(%rsi), %ecx
 	xorl	%eax, %eax
@@ -13,3 +14,4 @@ func0000000000000002:                   # @func0000000000000002
 	sbbl	%eax, %eax
 	orb	%cl, %al
 	retq
+

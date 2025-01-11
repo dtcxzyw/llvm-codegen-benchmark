@@ -1,10 +1,12 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	xorl	%eax, %eax
-	cmpq	$1024, %rdi                     # imm = 0x400
+	cmpq	$1024, %rdi
 	cmovbl	%esi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
-	cmpq	$65536, %rdi                    # imm = 0x10000
+
+func0000000000000044:
+	cmpq	$65536, %rdi
 	movl	$255, %eax
 	cmovbl	%esi, %eax
 	retq
+

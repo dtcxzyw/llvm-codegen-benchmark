@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	li	a2, -1
 	slli	a2, a2, 62
 	addi	a2, a2, 1
@@ -8,13 +8,15 @@ func0000000000000028:                   # @func0000000000000028
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	addi	a1, a1, -2
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	li	a2, -125
 	slli	a2, a2, 26
 	addi	a3, a2, 127
@@ -27,30 +29,35 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 1
 	slli	a0, a0, 32
 	addi	a0, a0, -59
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	addi	a1, a1, -8
 	sltiu	a1, a1, -7
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a2, 1
 	bne	a1, a2, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+.LBB4_2:
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	addi	a1, a1, -7
 	snez	a1, a1
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addi	a1, a1, -1
 	li	a2, 2
 	bgeu	a1, a2, .LBB6_2
 	li	a0, 1
-.LBB6_2:                                # %entry
+.LBB6_2:
 	ret
+

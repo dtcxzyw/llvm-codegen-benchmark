@@ -1,4 +1,4 @@
-func00000000000000db:                   # @func00000000000000db
+func00000000000000db:
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -8,3 +8,4 @@ func00000000000000db:                   # @func00000000000000db
 	li	a0, 77
 	vmul.vx	v8, v8, a0
 	ret
+

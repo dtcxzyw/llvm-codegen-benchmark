@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
-func0000000000000014:                   # @func0000000000000014
+	.quad	2951479051793528259
+func0000000000000014:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,7 +12,8 @@ func0000000000000014:                   # @func0000000000000014
 	vnmsub.vx	v10, a0, v8
 	vmsltu.vv	v0, v10, v12
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 838861
@@ -25,3 +26,4 @@ func0000000000000034:                   # @func0000000000000034
 	vnmsub.vx	v10, a0, v8
 	vmsltu.vv	v0, v10, v12
 	ret
+

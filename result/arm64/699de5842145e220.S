@@ -1,38 +1,34 @@
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+func0000000000000030:
 	tst	w2, #0x1
-	mov	w8, #8                          // =0x8
-	mov	w9, #4                          // =0x4
+	mov	w8, #8
+	mov	w9, #4
 	csel	x8, x9, x8, ne
 	add	x8, x0, x8
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	tst	w2, #0x1
-	mov	w8, #36                         // =0x24
-	mov	w9, #15                         // =0xf
+	mov	w8, #36
+	mov	w9, #15
 	csel	x8, x9, x8, ne
 	add	x8, x0, x8
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
+
+func000000000000003f:
 	tst	w2, #0x1
 	add	x8, x0, #5
 	csinc	x8, x8, x0, eq
 	add	x0, x8, w1, uxtw
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
+
+func000000000000002f:
 	tst	w2, #0x1
-	mov	w8, #2176                       // =0x880
-	mov	w9, #128                        // =0x80
+	mov	w8, #2176
+	mov	w9, #128
 	csel	x8, x9, x8, ne
 	add	x8, x0, x8
 	add	x0, x8, w1, uxtw #2
 	ret
-                                        // -- End function
+

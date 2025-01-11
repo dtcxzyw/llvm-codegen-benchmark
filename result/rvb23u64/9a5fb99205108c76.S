@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	sub	a1, a1, a2
 	srai	a1, a1, 1
 	zext.w	a0, a0
@@ -6,3 +6,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
+

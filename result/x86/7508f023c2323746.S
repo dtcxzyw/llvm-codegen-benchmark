@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testb	%dil, %dil
 	je	.LBB0_2
 	movzbl	%dil, %ecx
@@ -6,6 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$100, %eax
 	cmovbl	%ecx, %eax
 	retq
-.LBB0_2:                                # %select.end
+.LBB0_2:
 	movb	$1, %al
 	retq
+

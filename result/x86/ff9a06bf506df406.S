@@ -1,18 +1,21 @@
-func0000000000000003:                   # @func0000000000000003
-	movabsq	$3317948294049201653, %rax      # imm = 0x2E0BB864E9EA7DF5
+func0000000000000003:
+	movabsq	$3317948294049201653, %rax
 	mulxq	%rax, %rax, %rdx
 	xorq	%rdi, %rax
 	xorq	%rsi, %rdx
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movabsq	$-7070675565921424023, %rax     # imm = 0x9DDFEA08EB382D69
+
+func0000000000000002:
+	movabsq	$-7070675565921424023, %rax
 	mulxq	%rax, %rax, %rdx
 	xorq	%rdi, %rax
 	xorq	%rsi, %rdx
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movabsq	$6364136223846793005, %rax      # imm = 0x5851F42D4C957F2D
+
+func0000000000000007:
+	movabsq	$6364136223846793005, %rax
 	mulxq	%rax, %rax, %rdx
 	xorq	%rdi, %rax
 	xorq	%rsi, %rdx
 	retq
+

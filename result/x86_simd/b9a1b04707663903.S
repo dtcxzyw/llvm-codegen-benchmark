@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.long	90                              # 0x5a
+	.long	90
 .LCPI0_1:
-	.long	100                             # 0x64
-func0000000000000002:                   # @func0000000000000002
+	.long	100
+func0000000000000002:
 	vptestmd	%ymm0, %ymm0, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [90,90,90,90,90,90,90,90]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1
 	vpminsd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+

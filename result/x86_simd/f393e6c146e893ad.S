@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -7,7 +7,8 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -16,7 +17,8 @@ func000000000000010a:                   # @func000000000000010a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -24,7 +26,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -32,7 +35,8 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+
+func00000000000001aa:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -40,7 +44,8 @@ func00000000000001aa:                   # @func00000000000001aa
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%ymm3, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -49,3 +54,4 @@ func000000000000008a:                   # @func000000000000008a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

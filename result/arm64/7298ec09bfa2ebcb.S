@@ -1,50 +1,43 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+func0000000000000001:
 	and	w8, w2, #0x3f
 	sub	w9, w1, #1
 	cmp	w8, #42
 	csel	w0, w0, w9, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	sub	w8, w1, #2
 	tst	w2, #0x1
 	csel	w0, w0, w8, eq
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+
+func0000000000000034:
 	sub	w8, w1, #256
 	tst	w2, #0x80
 	csel	w0, w0, w8, eq
 	ret
-                                        // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+
+func0000000000000061:
 	add	w8, w1, #6
 	tst	w2, #0x800
 	csel	w0, w0, w8, eq
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	tst	w2, #0x1
 	csinc	w0, w0, w1, ne
 	ret
-                                        // -- End function
-func000000000000006c:                   // @func000000000000006c
-// %bb.0:                               // %entry
+
+func000000000000006c:
 	tst	w2, #0x1
 	csinc	w0, w0, w1, ne
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
+
+func0000000000000074:
 	and	w8, w2, #0x380
-	add	w9, w1, #512, lsl #12           // =2097152
+	add	w9, w1, #512, lsl #12
 	add	w9, w9, #192
 	cmp	w8, #384
 	csel	w0, w0, w9, lo
 	ret
-                                        // -- End function
+

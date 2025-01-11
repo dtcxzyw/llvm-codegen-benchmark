@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v12, -1
 	lui	a0, 596523
@@ -10,7 +10,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsrl.vi	v10, v8, 31
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	lui	a0, 174763
@@ -21,7 +22,8 @@ func0000000000000002:                   # @func0000000000000002
 	vsrl.vi	v10, v8, 31
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v12, 0
 	vmerge.vvm	v8, v10, v8, v0
@@ -29,3 +31,4 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 1
 	ret
+

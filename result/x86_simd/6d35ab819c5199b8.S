@@ -1,48 +1,53 @@
 .LCPI0_0:
-	.quad	8192                            # 0x2000
-func0000000000000021:                   # @func0000000000000021
+	.quad	8192
+func0000000000000021:
 	vpor	%xmm1, %xmm0, %xmm0
 	vptestnmd	%xmm0, %xmm0, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [8192,8192,8192,8192]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z}
 	retq
+
 .LCPI1_0:
-	.quad	-17179869185                    # 0xfffffffbffffffff
+	.quad	-17179869185
 .LCPI1_1:
-	.quad	-805306369                      # 0xffffffffcfffffff
-func0000000000000181:                   # @func0000000000000181
+	.quad	-805306369
+func0000000000000181:
 	vptestmd	%xmm1, %xmm1, %k1
 	vptestnmd	%xmm0, %xmm0, %k1 {%k1}
-	vpbroadcastq	.LCPI1_0(%rip), %ymm0   # ymm0 = [18446744056529682431,18446744056529682431,18446744056529682431,18446744056529682431]
-	vpbroadcastq	.LCPI1_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [18446744072904245247,18446744072904245247,18446744072904245247,18446744072904245247]
+	vpbroadcastq	.LCPI1_0(%rip), %ymm0
+	vpbroadcastq	.LCPI1_1(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.long	12                              # 0xc
+	.long	12
 .LCPI2_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI2_2:
-	.quad	1                               # 0x1
+	.quad	1
 .LCPI2_3:
-	.quad	23                              # 0x17
-func0000000000000024:                   # @func0000000000000024
+	.quad	23
+func0000000000000024:
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm0, %k1
 	vpcmpeqd	.LCPI2_1(%rip){1to4}, %xmm1, %k1 {%k1}
-	vpbroadcastq	.LCPI2_2(%rip), %ymm0   # ymm0 = [1,1,1,1]
-	vpbroadcastq	.LCPI2_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [23,23,23,23]
+	vpbroadcastq	.LCPI2_2(%rip), %ymm0
+	vpbroadcastq	.LCPI2_3(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI3_0:
-	.quad	4                               # 0x4
+	.quad	4
 .LCPI3_1:
-	.quad	3                               # 0x3
-func000000000000002c:                   # @func000000000000002c
+	.quad	3
+func000000000000002c:
 	vptestnmd	%xmm1, %xmm1, %k1
 	vptestmd	%xmm0, %xmm0, %k1 {%k1}
-	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [4,4,4,4]
-	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [3,3,3,3]
+	vpbroadcastq	.LCPI3_0(%rip), %ymm0
+	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI4_0:
-	.quad	281474976710656                 # 0x1000000000000
-func000000000000018c:                   # @func000000000000018c
+	.quad	281474976710656
+func000000000000018c:
 	vptestmd	%xmm1, %xmm1, %k1
 	vptestmd	%xmm0, %xmm0, %k1 {%k1}
-	vpbroadcastq	.LCPI4_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [281474976710656,281474976710656,281474976710656,281474976710656]
+	vpbroadcastq	.LCPI4_0(%rip), %ymm0 {%k1} {z}
 	retq
+

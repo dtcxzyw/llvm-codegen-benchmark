@@ -1,10 +1,11 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	imull	$-51, %edi, %eax
 	rorb	%al
 	cmpb	$26, %al
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	movl	%edi, %eax
 	shrb	%al
 	movzbl	%al, %eax
@@ -17,13 +18,15 @@ func0000000000000014:                   # @func0000000000000014
 	cmpb	$10, %dil
 	setb	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	imull	$-51, %edi, %eax
 	rorb	$2, %al
 	cmpb	$13, %al
 	setae	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx
 	shrl	$10, %ecx
@@ -33,3 +36,4 @@ func0000000000000018:                   # @func0000000000000018
 	cmpb	$2, %al
 	setae	%al
 	retq
+

@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	65524                           # 0xfff4
-	.short	65524                           # 0xfff4
-	.short	65524                           # 0xfff4
-	.short	65524                           # 0xfff4
+	.short	65524
+	.short	65524
+	.short	65524
+	.short	65524
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltuw	.LCPI0_0(%rip), %xmm2, %k1
@@ -16,3 +16,4 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

@@ -1,11 +1,12 @@
-func0000000000000055:                   # @func0000000000000055
+func0000000000000055:
 	slli	a2, a2, 2
 	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 176
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a2, a2, 6
 	sext.w	a1, a1
 	add	a0, a0, a2
@@ -15,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
+

@@ -1,11 +1,12 @@
-func0000000000000142:                   # @func0000000000000142
+func0000000000000142:
 	testq	%rdi, %rdi
 	setns	%cl
 	vucomisd	%xmm0, %xmm0
 	setp	%al
 	orb	%cl, %al
 	retq
-func000000000000014e:                   # @func000000000000014e
+
+func000000000000014e:
 	testq	%rdi, %rdi
 	setns	%cl
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -15,7 +16,8 @@ func000000000000014e:                   # @func000000000000014e
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000282:                   # @func0000000000000282
+
+func0000000000000282:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setae	%cl
@@ -23,17 +25,19 @@ func0000000000000282:                   # @func0000000000000282
 	sete	%al
 	orb	%cl, %al
 	retq
+
 .LCPI3_0:
-	.quad	0x3f847ae147ae147b              # double 0.01
-func0000000000000024:                   # @func0000000000000024
+	.quad	0x3f847ae147ae147b
+func0000000000000024:
 	cmpq	$4, %rdi
 	sete	%cl
-	vmovsd	.LCPI3_0(%rip), %xmm1           # xmm1 = [1.0E-2,0.0E+0]
+	vmovsd	.LCPI3_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -43,26 +47,29 @@ func0000000000000202:                   # @func0000000000000202
 	sete	%al
 	orb	%cl, %al
 	retq
+
 .LCPI5_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000182:                   # @func0000000000000182
+	.quad	0x7ff0000000000000
+func0000000000000182:
 	vucomisd	.LCPI5_0(%rip), %xmm0
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
+
 .LCPI6_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000250:                   # @func0000000000000250
+	.quad	0x7ff0000000000000
+func0000000000000250:
 	vucomisd	.LCPI6_0(%rip), %xmm0
 	sete	%cl
 	shrq	$48, %rdi
-	cmpl	$65529, %edi                    # imm = 0xFFF9
+	cmpl	$65529, %edi
 	setae	%al
 	orb	%cl, %al
 	retq
-func00000000000002d8:                   # @func00000000000002d8
+
+func00000000000002d8:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setbe	%cl
@@ -70,16 +77,18 @@ func00000000000002d8:                   # @func00000000000002d8
 	setne	%al
 	orb	%cl, %al
 	retq
+
 .LCPI8_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000148:                   # @func0000000000000148
+	.quad	0x3fe0000000000000
+func0000000000000148:
 	cmpq	$2, %rdi
 	setge	%cl
 	vucomisd	.LCPI8_0(%rip), %xmm0
 	seta	%al
 	orb	%cl, %al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+
+func00000000000000d6:
 	testq	%rdi, %rdi
 	setle	%cl
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -87,7 +96,8 @@ func00000000000000d6:                   # @func00000000000000d6
 	setbe	%al
 	orb	%cl, %al
 	retq
-func000000000000020c:                   # @func000000000000020c
+
+func000000000000020c:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -97,7 +107,8 @@ func000000000000020c:                   # @func000000000000020c
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	testq	%rdi, %rdi
 	sete	%cl
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -107,3 +118,4 @@ func0000000000000030:                   # @func0000000000000030
 	andb	%dl, %al
 	orb	%cl, %al
 	retq
+

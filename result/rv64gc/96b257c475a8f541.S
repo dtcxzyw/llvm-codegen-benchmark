@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	slli	a2, a2, 2
@@ -7,12 +7,13 @@ func000000000000001b:                   # @func000000000000001b
 .LBB0_2:
 	li	a2, 8
 	bltu	a0, a2, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a2, a0
-.LBB0_4:                                # %entry
+.LBB0_4:
 	slli	a0, a2, 3
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	slli	a2, a2, 1
@@ -21,12 +22,13 @@ func0000000000000007:                   # @func0000000000000007
 .LBB1_2:
 	li	a2, 8
 	bltu	a0, a2, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	mv	a2, a0
-.LBB1_4:                                # %entry
+.LBB1_4:
 	slli	a0, a2, 2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	slli	a2, a2, 1
@@ -35,12 +37,13 @@ func0000000000000004:                   # @func0000000000000004
 .LBB2_2:
 	li	a2, 8
 	bltu	a0, a2, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	mv	a2, a0
-.LBB2_4:                                # %entry
+.LBB2_4:
 	slli	a0, a2, 2
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
 	slli	a2, a2, 1
@@ -49,12 +52,13 @@ func0000000000000017:                   # @func0000000000000017
 .LBB3_2:
 	li	a2, 16
 	bltu	a0, a2, .LBB3_4
-.LBB3_3:                                # %entry
+.LBB3_3:
 	mv	a2, a0
-.LBB3_4:                                # %entry
+.LBB3_4:
 	slli	a0, a2, 2
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	andi	a1, a1, 1
 	bnez	a1, .LBB4_2
 	slli	a2, a2, 1
@@ -63,8 +67,9 @@ func000000000000001f:                   # @func000000000000001f
 .LBB4_2:
 	li	a2, 16
 	bltu	a0, a2, .LBB4_4
-.LBB4_3:                                # %entry
+.LBB4_3:
 	mv	a2, a0
-.LBB4_4:                                # %entry
+.LBB4_4:
 	slli	a0, a2, 2
 	ret
+

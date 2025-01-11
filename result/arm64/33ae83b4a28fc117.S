@@ -1,16 +1,14 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	add	x8, x1, x2
-	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	mov	x9, #-6148914691236517206
 	sub	x8, x0, x8
 	movk	x9, #43691
 	umulh	x8, x8, x9
 	lsr	x0, x8, #2
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	mov	x9, #40759                      // =0x9f37
+
+func000000000000001a:
+	mov	x9, #40759
 	add	x8, x1, x2
 	movk	x9, #5745, lsl #16
 	sub	x8, x0, x8
@@ -21,10 +19,9 @@ func000000000000001a:                   // @func000000000000001a
 	add	x8, x9, x8, lsr #1
 	lsr	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	x9, #19127                      // =0x4ab7
+
+func0000000000000000:
+	mov	x9, #19127
 	add	x8, x1, x2
 	movk	x9, #29321, lsl #16
 	sub	x8, x0, x8
@@ -33,11 +30,10 @@ func0000000000000000:                   // @func0000000000000000
 	umulh	x8, x8, x9
 	lsr	x0, x8, #16
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	add	x8, x1, x2
-	mov	x9, #23123                      // =0x5a53
+	mov	x9, #23123
 	sub	x8, x0, x8
 	movk	x9, #41115, lsl #16
 	lsr	x8, x8, #9
@@ -46,10 +42,9 @@ func000000000000000a:                   // @func000000000000000a
 	umulh	x8, x8, x9
 	lsr	x0, x8, #11
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	x9, #19127                      // =0x4ab7
+
+func0000000000000008:
+	mov	x9, #19127
 	add	x8, x1, x2
 	movk	x9, #29321, lsl #16
 	sub	x8, x0, x8
@@ -58,4 +53,4 @@ func0000000000000008:                   // @func0000000000000008
 	umulh	x8, x8, x9
 	lsr	x0, x8, #16
 	ret
-                                        // -- End function
+

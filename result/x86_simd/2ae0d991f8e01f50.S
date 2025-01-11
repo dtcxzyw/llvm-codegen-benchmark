@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpnleuq	%ymm2, %ymm1, %k1
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpgtq	%ymm2, %ymm1, %k1
@@ -14,7 +15,8 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func000000000000001c:                   # @func000000000000001c
+
+func000000000000001c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpleq	%ymm2, %ymm1, %k1
@@ -22,7 +24,8 @@ func000000000000001c:                   # @func000000000000001c
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpleuq	%ymm2, %ymm1, %k1
@@ -30,7 +33,8 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func0000000000000030:                   # @func0000000000000030
+
+func0000000000000030:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -38,7 +42,8 @@ func0000000000000030:                   # @func0000000000000030
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -46,7 +51,8 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -54,3 +60,4 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
+

@@ -1,11 +1,12 @@
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000000e8:
 	negw	a2, a2
 	li	a3, 1
 	sll	a2, a3, a2
 	sub	a0, a1, a0
 	add	a0, a0, a2
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	li	a3, -53
 	subw	a3, a3, a2
 	li	a2, 1
@@ -13,3 +14,4 @@ func0000000000000068:                   # @func0000000000000068
 	sub	a0, a1, a0
 	add	a0, a0, a2
 	ret
+

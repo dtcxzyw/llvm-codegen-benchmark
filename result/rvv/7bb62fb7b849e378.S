@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	4835703278458516699             # 0x431bde82d7b634db
-func000000000000000a:                   # @func000000000000000a
+	.quad	4835703278458516699
+func000000000000000a:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,7 +12,8 @@ func000000000000000a:                   # @func000000000000000a
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 699051
@@ -23,7 +24,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 699051
@@ -34,9 +36,10 @@ func0000000000000024:                   # @func0000000000000024
 	vmsltu.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
+
 .LCPI3_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func000000000000002a:                   # @func000000000000002a
+	.quad	5675921253449092805
+func000000000000002a:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -45,7 +48,8 @@ func000000000000002a:                   # @func000000000000002a
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v10, a0
@@ -54,9 +58,10 @@ func0000000000000007:                   # @func0000000000000007
 	vmsle.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
+
 .LCPI5_0:
-	.quad	-8881765665119413741            # 0x84bda12f684bda13
-func0000000000000021:                   # @func0000000000000021
+	.quad	-8881765665119413741
+func0000000000000021:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -65,9 +70,10 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
+
 .LCPI6_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func0000000000000025:                   # @func0000000000000025
+	.quad	5675921253449092805
+func0000000000000025:
 	lui	a0, %hi(.LCPI6_0)
 	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -76,3 +82,4 @@ func0000000000000025:                   # @func0000000000000025
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v12, v0
 	ret
+

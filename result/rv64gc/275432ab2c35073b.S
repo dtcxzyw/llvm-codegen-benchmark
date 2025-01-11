@@ -1,4 +1,4 @@
-func00000000000000e0:                   # @func00000000000000e0
+func00000000000000e0:
 	slli	a2, a2, 2
 	slli	a0, a0, 32
 	add	a1, a1, a2
@@ -6,7 +6,8 @@ func00000000000000e0:                   # @func00000000000000e0
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func0000000000000180:                   # @func0000000000000180
+
+func0000000000000180:
 	slli	a2, a2, 5
 	slli	a0, a0, 32
 	add	a1, a1, a2
@@ -14,9 +15,10 @@ func0000000000000180:                   # @func0000000000000180
 	add	a0, a0, a1
 	addi	a0, a0, 640
 	ret
+
 .LCPI2_0:
-	.quad	4629700417037541376             # 0x4040000006002000
-func00000000000001ff:                   # @func00000000000001ff
+	.quad	4629700417037541376
+func00000000000001ff:
 	slli	a2, a2, 42
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
@@ -25,7 +27,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	add	a0, a0, a1
 	add	a0, a0, a3
 	ret
-func00000000000001ef:                   # @func00000000000001ef
+
+func00000000000001ef:
 	slli	a2, a2, 2
 	slli	a0, a0, 32
 	add	a1, a1, a2
@@ -34,7 +37,8 @@ func00000000000001ef:                   # @func00000000000001ef
 	lui	a1, 128
 	add	a0, a0, a1
 	ret
-func00000000000001ed:                   # @func00000000000001ed
+
+func00000000000001ed:
 	slli	a2, a2, 1
 	slli	a0, a0, 32
 	add	a1, a1, a2
@@ -45,3 +49,4 @@ func00000000000001ed:                   # @func00000000000001ed
 	addi	a1, a2, 98
 	add	a0, a0, a1
 	ret
+

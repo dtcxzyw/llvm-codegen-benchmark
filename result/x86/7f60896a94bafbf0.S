@@ -1,4 +1,4 @@
-func00000000000034ec:                   # @func00000000000034ec
+func00000000000034ec:
 	leal	(%rdx,%rdi,2), %eax
 	cmpl	%esi, %eax
 	setle	%cl
@@ -6,3 +6,4 @@ func00000000000034ec:                   # @func00000000000034ec
 	setne	%al
 	andb	%cl, %al
 	retq
+

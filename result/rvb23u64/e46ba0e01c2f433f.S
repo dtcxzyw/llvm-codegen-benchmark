@@ -1,4 +1,4 @@
-func0000000000000481:                   # @func0000000000000481
+func0000000000000481:
 	addiw	a2, a1, -65
 	sltiu	a2, a2, 26
 	czero.nez	a1, a1, a2
@@ -9,7 +9,8 @@ func0000000000000481:                   # @func0000000000000481
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000494:                   # @func0000000000000494
+
+func0000000000000494:
 	addiw	a2, a1, -65
 	sltiu	a2, a2, 26
 	czero.nez	a1, a1, a2
@@ -18,7 +19,8 @@ func0000000000000494:                   # @func0000000000000494
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	addiw	a2, a1, -14
 	sltiu	a2, a2, 32
 	czero.nez	a1, a1, a2
@@ -28,3 +30,4 @@ func0000000000000081:                   # @func0000000000000081
 	addi	a0, a0, -54
 	seqz	a0, a0
 	ret
+

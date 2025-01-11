@@ -1,16 +1,14 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	and	w8, w1, #0xffff
 	udiv	w8, w0, w8
-	cmp	w8, #16, lsl #12                // =65536
+	cmp	w8, #16, lsl #12
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+
+func0000000000000018:
 	and	w8, w1, #0xffff
 	udiv	w8, w0, w8
 	cmp	w8, #1
 	cset	w0, hi
 	ret
-                                        // -- End function
+

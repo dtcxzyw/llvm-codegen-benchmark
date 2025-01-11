@@ -1,20 +1,22 @@
 .LCPI0_0:
 	.zero	16,1
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vptestmb	%xmm1, %xmm1, %k1
 	korw	%k0, %k1, %k1
-	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z}
 	retq
+
 .LCPI1_0:
 	.zero	16,7
 .LCPI1_1:
 	.zero	16,1
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1
 	korw	%k0, %k1, %k1
-	vmovdqu8	.LCPI1_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI1_1(%rip), %xmm0 {%k1} {z}
 	retq
+

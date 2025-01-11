@@ -1,18 +1,19 @@
 .LCPI0_0:
-	.quad	0x3fd287a7636f4361              # double 0.28952965460216801
+	.quad	0x3fd287a7636f4361
 .LCPI0_1:
-	.quad	0x3fc68a288b60c8b3              # double 0.1760912590558
+	.quad	0x3fc68a288b60c8b3
 .LCPI0_2:
-	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3fd34413509f79fb
+func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vbroadcastsd	.LCPI0_0(%rip), %zmm0   # zmm0 = [2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1,2.8952965460216801E-1]
-	vfmadd213pd	.LCPI0_1(%rip){1to8}, %zmm2, %zmm0 # zmm0 = (zmm2 * zmm0) + mem
+	vbroadcastsd	.LCPI0_0(%rip), %zmm0
+	vfmadd213pd	.LCPI0_1(%rip){1to8}, %zmm2, %zmm0
 	vcvtdq2pd	%ymm1, %zmm1
-	vfmadd132pd	.LCPI0_2(%rip){1to8}, %zmm0, %zmm1 # zmm1 = (zmm1 * mem) + zmm0
+	vfmadd132pd	.LCPI0_2(%rip){1to8}, %zmm0, %zmm1
 	vxorpd	%xmm0, %xmm0, %xmm0
 	vcmpltpd	%zmm0, %zmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

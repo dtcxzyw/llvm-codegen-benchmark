@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
@@ -8,7 +8,8 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
@@ -17,7 +18,8 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
@@ -28,7 +30,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
@@ -39,7 +42,8 @@ func0000000000000088:                   # @func0000000000000088
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
@@ -49,7 +53,8 @@ func0000000000000104:                   # @func0000000000000104
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000124:                   # @func0000000000000124
+
+func0000000000000124:
 	lui	a2, 16
 	addiw	a3, a2, -1
 	addiw	a2, a2, -510
@@ -60,3 +65,4 @@ func0000000000000124:                   # @func0000000000000124
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
+

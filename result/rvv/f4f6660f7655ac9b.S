@@ -1,4 +1,4 @@
-func0000000000000106:                   # @func0000000000000106
+func0000000000000106:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 32768
@@ -8,7 +8,8 @@ func0000000000000106:                   # @func0000000000000106
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vmsle.vi	v10, v12, 0
@@ -16,7 +17,8 @@ func0000000000000026:                   # @func0000000000000026
 	vmseq.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 262144
@@ -26,7 +28,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vmsne.vi	v10, v12, 0
@@ -34,7 +37,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmseq.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	li	a0, 5
@@ -44,7 +48,8 @@ func000000000000030c:                   # @func000000000000030c
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	lui	a0, 65535
 	slli	a0, a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -52,7 +57,8 @@ func0000000000000188:                   # @func0000000000000188
 	vor.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	li	a0, 32
@@ -61,7 +67,8 @@ func0000000000000028:                   # @func0000000000000028
 	vmseq.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -69,10 +76,12 @@ func0000000000000086:                   # @func0000000000000086
 	vmsleu.vi	v10, v8, 11
 	vmor.mm	v0, v12, v10
 	ret
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
 	ret
+

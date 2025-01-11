@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 28
 	add	a2, a2, a1
@@ -8,7 +8,8 @@ func000000000000000e:                   # @func000000000000000e
 	add	a0, a0, a1
 	addi	a0, a0, 512
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 25
 	add	a2, a2, a1
@@ -20,3 +21,4 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
+

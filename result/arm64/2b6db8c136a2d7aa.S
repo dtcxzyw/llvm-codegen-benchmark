@@ -1,16 +1,14 @@
-func0000000000000401:                   // @func0000000000000401
-// %bb.0:                               // %entry
+func0000000000000401:
 	cmp	w0, w1
 	csel	w8, w0, w1, gt
 	cmp	w8, w2
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000421:                   // @func0000000000000421
-// %bb.0:                               // %entry
+
+func0000000000000421:
 	cmp	w0, w1
 	csel	w8, w0, w1, gt
 	cmp	w8, w2
 	cset	w0, eq
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	lui	a0, 256
 	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -9,3 +9,4 @@ func000000000000001c:                   # @func000000000000001c
 	vrsub.vx	v8, v8, a1
 	vsll.vv	v8, v10, v8
 	ret
+

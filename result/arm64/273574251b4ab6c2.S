@@ -1,60 +1,51 @@
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+func0000000000000007:
 	lsr	w8, w1, #31
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000037:                   // @func0000000000000037
-// %bb.0:                               // %entry
+
+func0000000000000037:
 	lsr	w8, w1, #3
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000027:                   // @func0000000000000027
-// %bb.0:                               // %entry
+
+func0000000000000027:
 	lsr	w8, w1, #5
 	add	x0, x0, w8, uxtw #2
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	lsr	w8, w1, #2
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	lsr	w8, w1, #2
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
+
+func000000000000003f:
 	lsr	w8, w1, #2
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
+
+func0000000000000034:
 	lsr	w8, w1, #1
 	add	x0, x0, w8, uxtw #2
 	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
+
+func000000000000002f:
 	lsr	w8, w1, #5
 	add	x0, x0, w8, uxtw #2
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	lsr	w8, w1, #3
 	mov	w8, w8
 	add	x0, x0, x8
 	ret
-                                        // -- End function
+

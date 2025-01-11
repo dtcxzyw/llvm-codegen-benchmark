@@ -1,5 +1,4 @@
-func0000000000000248:                   // @func0000000000000248
-// %bb.0:                               // %entry
+func0000000000000248:
 	asr	x8, x1, #3
 	mul	x8, x0, x8
 	lsr	x9, x8, #61
@@ -7,9 +6,8 @@ func0000000000000248:                   // @func0000000000000248
 	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
-                                        // -- End function
-func0000000000000208:                   // @func0000000000000208
-// %bb.0:                               // %entry
+
+func0000000000000208:
 	asr	x8, x1, #3
 	mul	x8, x0, x8
 	lsr	x9, x8, #61
@@ -17,9 +15,8 @@ func0000000000000208:                   // @func0000000000000208
 	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
-                                        // -- End function
-func00000000000002c8:                   // @func00000000000002c8
-// %bb.0:                               // %entry
+
+func00000000000002c8:
 	asr	x8, x1, #32
 	mul	x8, x0, x8
 	lsr	x9, x8, #61
@@ -27,9 +24,8 @@ func00000000000002c8:                   // @func00000000000002c8
 	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
-                                        // -- End function
-func0000000000000288:                   // @func0000000000000288
-// %bb.0:                               // %entry
+
+func0000000000000288:
 	asr	x8, x1, #32
 	mul	x8, x0, x8
 	lsr	x9, x8, #61
@@ -37,9 +33,8 @@ func0000000000000288:                   // @func0000000000000288
 	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
-                                        // -- End function
-func00000000000002e8:                   // @func00000000000002e8
-// %bb.0:                               // %entry
+
+func00000000000002e8:
 	asr	x8, x1, #32
 	mul	x8, x8, x0
 	lsr	x9, x8, #62
@@ -47,4 +42,4 @@ func00000000000002e8:                   // @func00000000000002e8
 	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
-                                        // -- End function
+

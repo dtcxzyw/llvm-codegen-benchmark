@@ -1,5 +1,5 @@
-func00000000000000ca:                   # @func00000000000000ca
-	movl	$1000, %eax                     # imm = 0x3E8
+func00000000000000ca:
+	movl	$1000, %eax
 	subl	%esi, %eax
 	cmpl	%eax, %edi
 	setl	%cl
@@ -7,7 +7,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000004cc:                   # @func00000000000004cc
+
+func00000000000004cc:
 	movl	$1, %eax
 	subl	%esi, %eax
 	cmpl	%eax, %edi
@@ -16,3 +17,4 @@ func00000000000004cc:                   # @func00000000000004cc
 	setle	%al
 	andb	%cl, %al
 	retq
+

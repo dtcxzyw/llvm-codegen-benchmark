@@ -1,4 +1,4 @@
-func0000000000000093:                   # @func0000000000000093
+func0000000000000093:
 	movq	%rdx, %rax
 	imulq	%rdi, %rcx
 	movq	%rdi, %rdx
@@ -7,5 +7,6 @@ func0000000000000093:                   # @func0000000000000093
 	imulq	%rax, %rsi
 	addq	%rdx, %rsi
 	shrq	$32, %rsi
-	imulq	$1374389535, %rsi, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rsi, %rax
 	retq
+

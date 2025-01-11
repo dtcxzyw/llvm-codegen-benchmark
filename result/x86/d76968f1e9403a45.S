@@ -1,13 +1,14 @@
-func0000000000000144:                   # @func0000000000000144
+func0000000000000144:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
 	testb	$1, %dil
 	cmovel	%eax, %esi
-	cmpl	$60001, %esi                    # imm = 0xEA61
+	cmpl	$60001, %esi
 	setb	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
@@ -16,7 +17,8 @@ func0000000000000148:                   # @func0000000000000148
 	cmpl	$2, %esi
 	setae	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
@@ -24,7 +26,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnel	%esi, %eax
 	shrl	$31, %eax
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
@@ -33,7 +36,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpl	$10, %esi
 	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
@@ -42,12 +46,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$5, %esi
 	setb	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	movl	%edx, %eax
 	subl	%esi, %eax
 	subl	%edx, %esi
 	testb	$1, %dil
 	cmovel	%eax, %esi
-	cmpl	$16777216, %esi                 # imm = 0x1000000
+	cmpl	$16777216, %esi
 	setge	%al
 	retq
+

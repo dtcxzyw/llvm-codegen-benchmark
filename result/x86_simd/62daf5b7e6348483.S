@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000008a:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vmovdqa32	%ymm1, %ymm2 {%k1}
@@ -7,9 +7,10 @@ func000000000000008a:                   # @func000000000000008a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	500000                          # 0x7a120
-func0000000000000088:                   # @func0000000000000088
+	.long	500000
+func0000000000000088:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %k1
 	vmovdqa32	%ymm1, %ymm2 {%k1}
@@ -18,3 +19,4 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

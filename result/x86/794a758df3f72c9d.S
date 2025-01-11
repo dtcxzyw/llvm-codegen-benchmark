@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	addl	$-3, %edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -6,7 +6,8 @@ func000000000000000e:                   # @func000000000000000e
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	incl	%edx
 	movslq	%edx, %rax
 	xorl	%ecx, %ecx
@@ -14,7 +15,8 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,4), %rax
 	retq
-func000000000000006e:                   # @func000000000000006e
+
+func000000000000006e:
 	decl	%edx
 	movslq	%edx, %rax
 	testb	$1, %sil
@@ -22,3 +24,4 @@ func000000000000006e:                   # @func000000000000006e
 	cmoveq	%rax, %rcx
 	leaq	(%rdi,%rcx,8), %rax
 	retq
+

@@ -1,6 +1,6 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	addq	%rsi, %rdi
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	movabsq	$-3689348814741910323, %rax
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$2, %rax
@@ -10,3 +10,4 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rcx, %rax
 	subq	%rdi, %rax
 	retq
+

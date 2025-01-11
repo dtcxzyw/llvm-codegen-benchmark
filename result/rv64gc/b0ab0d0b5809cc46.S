@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3ff0000000000000
+func0000000000000000:
 	andi	a0, a0, 1
 	fabs.d	fa4, fa1
 	bnez	a0, .LBB0_2
@@ -18,9 +18,10 @@ func0000000000000000:                   # @func0000000000000000
 	fdiv.d	fa5, fa0, fa5
 	fmadd.d	fa0, fa5, fa5, fa4
 	ret
+
 .LCPI1_0:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x3ff0000000000000
+func0000000000000002:
 	andi	a0, a0, 1
 	fabs.d	fa4, fa1
 	bnez	a0, .LBB1_2
@@ -38,3 +39,4 @@ func0000000000000002:                   # @func0000000000000002
 	fdiv.d	fa5, fa0, fa5
 	fmadd.d	fa0, fa5, fa5, fa4
 	ret
+

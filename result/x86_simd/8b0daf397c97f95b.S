@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	2147483647                      # 0x7fffffff
+	.long	2147483647
 .LCPI0_1:
-	.long	2139095039                      # 0x7f7fffff
-func0000000000000009:                   # @func0000000000000009
+	.long	2139095039
+func0000000000000009:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vaddps	%zmm0, %zmm1, %zmm0
 	vandps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
@@ -10,11 +10,12 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI1_1:
-	.long	0x3b83126f                      # float 0.00400000019
-func0000000000000002:                   # @func0000000000000002
+	.long	0x3b83126f
+func0000000000000002:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vaddps	%zmm1, %zmm0, %zmm0
 	vandps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
@@ -22,11 +23,12 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI2_1:
-	.long	0x34000000                      # float 1.1920929E-7
-func0000000000000014:                   # @func0000000000000014
+	.long	0x34000000
+func0000000000000014:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vaddps	%zmm0, %zmm1, %zmm0
 	vandps	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
@@ -34,11 +36,12 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	0x7fffffff                      # float NaN
+	.long	0x7fffffff
 .LCPI3_1:
-	.long	0x34000000                      # float 1.1920929E-7
-func0000000000000012:                   # @func0000000000000012
+	.long	0x34000000
+func0000000000000012:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vaddps	%zmm1, %zmm0, %zmm0
 	vandps	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
@@ -46,3 +49,4 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

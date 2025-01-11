@@ -1,11 +1,10 @@
 .LCPI0_0:
-	.xword	0x3fc68a288b60c8b3              // double 0.1760912590558
+	.xword	0x3fc68a288b60c8b3
 .LCPI0_1:
-	.xword	0x3fd287a7636f4361              // double 0.28952965460216801
+	.xword	0x3fd287a7636f4361
 .LCPI0_2:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+	.xword	0x3fd34413509f79fb
+func0000000000000001:
 	adrp	x8, .LCPI0_0
 	adrp	x9, .LCPI0_1
 	ldr	d2, [x8, :lo12:.LCPI0_0]
@@ -18,15 +17,14 @@ func0000000000000001:                   // @func0000000000000001
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
+
 .LCPI1_0:
-	.xword	0x3fc68a288b60c8b3              // double 0.1760912590558
+	.xword	0x3fc68a288b60c8b3
 .LCPI1_1:
-	.xword	0x3fd287a7636f4361              // double 0.28952965460216801
+	.xword	0x3fd287a7636f4361
 .LCPI1_2:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+	.xword	0x3fd34413509f79fb
+func0000000000000005:
 	adrp	x8, .LCPI1_0
 	adrp	x9, .LCPI1_1
 	ldr	d2, [x8, :lo12:.LCPI1_0]
@@ -39,15 +37,14 @@ func0000000000000005:                   // @func0000000000000005
 	add	w8, w0, w8
 	sub	w0, w8, #1
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x3fc68a288b60c8b3              // double 0.1760912590558
+	.xword	0x3fc68a288b60c8b3
 .LCPI2_1:
-	.xword	0x3fd34413509f79fb              // double 0.30102999566398098
+	.xword	0x3fd34413509f79fb
 .LCPI2_2:
-	.xword	0x3fd287a7636f4361              // double 0.28952965460216801
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+	.xword	0x3fd287a7636f4361
+func0000000000000004:
 	adrp	x8, .LCPI2_0
 	adrp	x9, .LCPI2_1
 	ldr	d2, [x8, :lo12:.LCPI2_0]
@@ -60,4 +57,4 @@ func0000000000000004:                   // @func0000000000000004
 	add	w8, w0, w8
 	add	w0, w8, #99
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	lzcntl	%edi, %eax
 	negb	%al
 	cmpl	$2, %edi
@@ -7,3 +7,4 @@ func00000000000003e1:                   # @func00000000000003e1
 	movl	$-2, %eax
 	cmovael	%ecx, %eax
 	retq
+

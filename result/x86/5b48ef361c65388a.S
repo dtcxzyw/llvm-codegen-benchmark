@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	movl	$1, %eax
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+
+func00000000000000ea:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	sarl	$31, %eax
@@ -14,7 +15,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	movl	$1, %eax
@@ -22,7 +24,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	subl	%edx, %esi
 	cmpl	$7, %esi
 	movl	$6, %eax
@@ -30,7 +33,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+
+func0000000000000078:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	sarl	$31, %eax
@@ -38,7 +42,8 @@ func0000000000000078:                   # @func0000000000000078
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	sarl	$31, %eax
@@ -46,7 +51,8 @@ func0000000000000068:                   # @func0000000000000068
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	subl	%edx, %esi
 	movl	%esi, %eax
 	sarl	$31, %eax
@@ -54,7 +60,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	movl	$1, %eax
@@ -62,7 +69,8 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	movl	$1, %eax
@@ -70,3 +78,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
+

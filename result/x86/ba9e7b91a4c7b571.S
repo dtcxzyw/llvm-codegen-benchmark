@@ -1,4 +1,4 @@
-func0000000000000106:                   # @func0000000000000106
+func0000000000000106:
 	shrq	$3, %rsi
 	movl	%edi, %eax
 	sarl	$31, %eax
@@ -6,3 +6,4 @@ func0000000000000106:                   # @func0000000000000106
 	cmpl	%esi, %eax
 	setl	%al
 	retq
+

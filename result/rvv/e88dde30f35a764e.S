@@ -1,4 +1,4 @@
-func0000000000000067:                   # @func0000000000000067
+func0000000000000067:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	li	a0, 20
@@ -7,7 +7,8 @@ func0000000000000067:                   # @func0000000000000067
 	vsrl.vi	v8, v8, 5
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	lui	a0, 8
@@ -19,7 +20,8 @@ func000000000000000b:                   # @func000000000000000b
 	vsrl.vi	v8, v8, 2
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
@@ -28,7 +30,8 @@ func0000000000000063:                   # @func0000000000000063
 	vsub.vv	v8, v8, v10
 	vadd.vi	v8, v8, 2
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
@@ -37,7 +40,8 @@ func000000000000000f:                   # @func000000000000000f
 	vsub.vv	v8, v8, v10
 	vadd.vi	v8, v8, 2
 	ret
-func00000000000000a3:                   # @func00000000000000a3
+
+func00000000000000a3:
 	li	a0, 880
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsrl.vi	v8, v8, 5
@@ -45,7 +49,8 @@ func00000000000000a3:                   # @func00000000000000a3
 	li	a0, 320
 	vadd.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	li	a0, 254
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -54,7 +59,8 @@ func0000000000000023:                   # @func0000000000000023
 	vsrl.vi	v8, v8, 3
 	vadd.vv	v8, v10, v8
 	ret
-func00000000000000a2:                   # @func00000000000000a2
+
+func00000000000000a2:
 	li	a0, 62
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
@@ -65,3 +71,4 @@ func00000000000000a2:                   # @func00000000000000a2
 	vsrl.vi	v8, v8, 1
 	vadd.vv	v8, v10, v8
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000001f0:                   # @func00000000000001f0
+func00000000000001f0:
 	slli	a3, a2, 8
 	subw	a2, a2, a1
 	lui	a1, 16
@@ -8,3 +8,4 @@ func00000000000001f0:                   # @func00000000000001f0
 	and	a1, a1, a3
 	divuw	a0, a1, a0
 	ret
+

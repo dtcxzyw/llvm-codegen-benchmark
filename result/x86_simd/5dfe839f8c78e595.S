@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	8                               # 0x8
+	.quad	8
 .LCPI0_1:
-	.quad	4096                            # 0x1000
+	.quad	4096
 .LCPI0_2:
-	.quad	32                              # 0x20
-func0000000000000000:                   # @func0000000000000000
+	.quad	32
+func0000000000000000:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -14,13 +14,14 @@ func0000000000000000:                   # @func0000000000000000
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm2, %ymm2 {%k1}
 	vorpd	.LCPI0_2(%rip){1to4}, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	2                               # 0x2
+	.quad	2
 .LCPI1_1:
-	.quad	4                               # 0x4
+	.quad	4
 .LCPI1_2:
-	.quad	8                               # 0x8
-func0000000000000007:                   # @func0000000000000007
+	.quad	8
+func0000000000000007:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -30,13 +31,14 @@ func0000000000000007:                   # @func0000000000000007
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm2, %ymm2 {%k1}
 	vorpd	.LCPI1_2(%rip){1to4}, %ymm2, %ymm0
 	retq
+
 .LCPI2_0:
-	.quad	280375465082880                 # 0xff0000000000
+	.quad	280375465082880
 .LCPI2_1:
-	.quad	1095216660480                   # 0xff00000000
+	.quad	1095216660480
 .LCPI2_2:
-	.quad	4278190080                      # 0xff000000
-func0000000000000006:                   # @func0000000000000006
+	.quad	4278190080
+func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -46,13 +48,14 @@ func0000000000000006:                   # @func0000000000000006
 	vorpd	.LCPI2_1(%rip){1to4}, %ymm2, %ymm2 {%k1}
 	vorpd	.LCPI2_2(%rip){1to4}, %ymm2, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	1095216660480                   # 0xff00000000
+	.quad	1095216660480
 .LCPI3_1:
-	.quad	4278190080                      # 0xff000000
+	.quad	4278190080
 .LCPI3_2:
-	.quad	16711680                        # 0xff0000
-func0000000000000004:                   # @func0000000000000004
+	.quad	16711680
+func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
@@ -62,3 +65,4 @@ func0000000000000004:                   # @func0000000000000004
 	vorpd	.LCPI3_1(%rip){1to4}, %ymm2, %ymm2 {%k1}
 	vorpd	.LCPI3_2(%rip){1to4}, %ymm2, %ymm0
 	retq
+

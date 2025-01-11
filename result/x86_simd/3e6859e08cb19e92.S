@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	2863311531                      # 0xaaaaaaab
-func0000000000000008:                   # @func0000000000000008
+	.long	2863311531
+func0000000000000008:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -25,5 +25,6 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmovzxdq	%xmm0, %ymm0
 	retq
+

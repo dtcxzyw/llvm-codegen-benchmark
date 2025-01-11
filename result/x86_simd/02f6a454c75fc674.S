@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vmovq	%xmm1, %rax
 	vmovq	%xmm2, %rcx
 	xorl	%edx, %edx
@@ -30,7 +30,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divq	%rdi
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -39,9 +39,10 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

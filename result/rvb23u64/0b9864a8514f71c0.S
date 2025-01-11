@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
 	li	a2, 255
@@ -11,7 +11,8 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	lui	a3, 508411
 	slli	a3, a3, 1
 	addi	a3, a3, 778
@@ -21,3 +22,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
+

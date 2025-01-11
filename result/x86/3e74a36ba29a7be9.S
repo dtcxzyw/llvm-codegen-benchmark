@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testl	%esi, %esi
 	sete	%cl
 	testl	%edi, %edi
@@ -7,3 +7,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmovel	%edx, %eax
 	xorb	%cl, %al
 	retq
+

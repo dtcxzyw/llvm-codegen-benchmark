@@ -1,14 +1,15 @@
-func0000000000000001:                   # @func0000000000000001
-	addl	$299, %esi                      # imm = 0x12B
+func0000000000000001:
+	addl	$299, %esi
 	movslq	%esi, %rax
-	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
+	imulq	$1374389535, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$39, %rax
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	leal	7(%rsi), %ecx
 	leal	14(%rsi), %eax
 	testl	%ecx, %ecx
@@ -16,7 +17,8 @@ func0000000000000009:                   # @func0000000000000009
 	sarl	$3, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movl	%edi, %eax
 	movl	%esi, %ecx
 	decl	%ecx
@@ -25,17 +27,19 @@ func0000000000000008:                   # @func0000000000000008
 	sarl	%ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	addl	$-457, %esi                     # imm = 0xFE37
+
+func0000000000000000:
+	addl	$-457, %esi
 	movslq	%esi, %rax
-	imulq	$1717986919, %rax, %rax         # imm = 0x66666667
+	imulq	$1717986919, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$33, %rax
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	leal	31(%rsi), %ecx
 	leal	62(%rsi), %eax
 	testl	%ecx, %ecx
@@ -43,17 +47,19 @@ func000000000000000b:                   # @func000000000000000b
 	sarl	$5, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	addl	$500000, %esi                   # imm = 0x7A120
+
+func0000000000000010:
+	addl	$500000, %esi
 	movslq	%esi, %rax
-	imulq	$1125899907, %rax, %rax         # imm = 0x431BDE83
+	imulq	$1125899907, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	sarq	$50, %rax
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	movl	%edi, %eax
 	leal	8(%rsi), %ecx
 	addl	$23, %esi
@@ -62,3 +68,4 @@ func0000000000000011:                   # @func0000000000000011
 	sarl	$4, %esi
 	subl	%esi, %eax
 	retq
+

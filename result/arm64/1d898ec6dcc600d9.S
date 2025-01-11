@@ -1,18 +1,16 @@
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+func000000000000000f:
 	mvn	w9, w1
-	mov	w8, #12                         // =0xc
+	mov	w8, #12
 	and	x9, x9, #0x1
 	umaddl	x8, w9, w8, x0
 	add	x0, x8, #4
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	mvn	w9, w1
-	mov	w8, #24                         // =0x18
+	mov	w8, #24
 	and	x9, x9, #0x1
 	umaddl	x8, w9, w8, x0
 	add	x0, x8, #8
 	ret
-                                        // -- End function
+

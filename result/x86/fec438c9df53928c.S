@@ -1,20 +1,22 @@
-func0000000000000484:                   # @func0000000000000484
-	addl	$-1012, %edx                    # imm = 0xFC0C
+func0000000000000484:
+	addl	$-1012, %edx
 	movzwl	%dx, %eax
-	cmpl	$2988, %eax                     # imm = 0xBAC
+	cmpl	$2988, %eax
 	setb	%cl
 	cmpw	$3, %si
 	setb	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
-	addl	$-257, %edx                     # imm = 0xFEFF
+
+func0000000000000084:
+	addl	$-257, %edx
 	movzwl	%dx, %eax
-	cmpl	$65280, %eax                    # imm = 0xFF00
+	cmpl	$65280, %eax
 	setb	%cl
 	cmpw	$-64, %si
 	setb	%al
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
+

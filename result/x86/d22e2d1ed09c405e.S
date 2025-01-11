@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	addb	$7, %dil
 	movzbl	%dil, %eax
 	leal	(%rax,%rax,8), %ecx
@@ -9,7 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	addb	%cl, %al
 	shrb	$2, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	decb	%dil
 	movzbl	%dil, %eax
 	leal	(%rax,%rax,8), %ecx
@@ -20,3 +21,4 @@ func0000000000000010:                   # @func0000000000000010
 	addb	%cl, %al
 	shrb	$2, %al
 	retq
+

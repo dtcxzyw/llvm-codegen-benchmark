@@ -1,4 +1,4 @@
-func00000000000000f0:                   # @func00000000000000f0
+func00000000000000f0:
 	slli	a2, a2, 16
 	or	a0, a0, a1
 	lui	a1, 196615
@@ -12,7 +12,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	slli	a2, a2, 56
 	add	a0, a0, a2
 	ret
-func00000000000000fd:                   # @func00000000000000fd
+
+func00000000000000fd:
 	slli	a2, a2, 16
 	or	a0, a0, a1
 	lui	a1, 21
@@ -24,3 +25,4 @@ func00000000000000fd:                   # @func00000000000000fd
 	slli	a2, a2, 8
 	add	a0, a0, a2
 	ret
+

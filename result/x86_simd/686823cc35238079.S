@@ -1,82 +1,84 @@
 .LCPI0_0:
-	.short	0                               # 0x0
-	.short	16                              # 0x10
-	.short	1                               # 0x1
-	.short	18                              # 0x12
-	.short	2                               # 0x2
-	.short	20                              # 0x14
-	.short	3                               # 0x3
-	.short	22                              # 0x16
-	.short	4                               # 0x4
-	.short	24                              # 0x18
-	.short	5                               # 0x5
-	.short	26                              # 0x1a
-	.short	6                               # 0x6
-	.short	28                              # 0x1c
-	.short	7                               # 0x7
-	.short	30                              # 0x1e
+	.short	0
+	.short	16
+	.short	1
+	.short	18
+	.short	2
+	.short	20
+	.short	3
+	.short	22
+	.short	4
+	.short	24
+	.short	5
+	.short	26
+	.short	6
+	.short	28
+	.short	7
+	.short	30
 .LCPI0_1:
-	.byte	0                               # 0x0
-	.byte	16                              # 0x10
-	.byte	1                               # 0x1
-	.byte	18                              # 0x12
-	.byte	2                               # 0x2
-	.byte	20                              # 0x14
-	.byte	3                               # 0x3
-	.byte	22                              # 0x16
-	.byte	4                               # 0x4
-	.byte	24                              # 0x18
-	.byte	5                               # 0x5
-	.byte	26                              # 0x1a
-	.byte	6                               # 0x6
-	.byte	28                              # 0x1c
-	.byte	7                               # 0x7
-	.byte	30                              # 0x1e
-func000000000000001d:                   # @func000000000000001d
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpmovsxbw	.LCPI0_1(%rip), %ymm2   # ymm2 = [0,16,1,18,2,20,3,22,4,24,5,26,6,28,7,30]
+	.byte	0
+	.byte	16
+	.byte	1
+	.byte	18
+	.byte	2
+	.byte	20
+	.byte	3
+	.byte	22
+	.byte	4
+	.byte	24
+	.byte	5
+	.byte	26
+	.byte	6
+	.byte	28
+	.byte	7
+	.byte	30
+func000000000000001d:
+	vpmovzxbd	%xmm1, %ymm1
+	vpmovsxbw	.LCPI0_1(%rip), %ymm2
 	vpermi2w	%ymm1, %ymm0, %ymm2
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.short	0                               # 0x0
-	.short	16                              # 0x10
-	.short	1                               # 0x1
-	.short	18                              # 0x12
-	.short	2                               # 0x2
-	.short	20                              # 0x14
-	.short	3                               # 0x3
-	.short	22                              # 0x16
-	.short	4                               # 0x4
-	.short	24                              # 0x18
-	.short	5                               # 0x5
-	.short	26                              # 0x1a
-	.short	6                               # 0x6
-	.short	28                              # 0x1c
-	.short	7                               # 0x7
-	.short	30                              # 0x1e
+	.short	0
+	.short	16
+	.short	1
+	.short	18
+	.short	2
+	.short	20
+	.short	3
+	.short	22
+	.short	4
+	.short	24
+	.short	5
+	.short	26
+	.short	6
+	.short	28
+	.short	7
+	.short	30
 .LCPI1_1:
-	.byte	0                               # 0x0
-	.byte	16                              # 0x10
-	.byte	1                               # 0x1
-	.byte	18                              # 0x12
-	.byte	2                               # 0x2
-	.byte	20                              # 0x14
-	.byte	3                               # 0x3
-	.byte	22                              # 0x16
-	.byte	4                               # 0x4
-	.byte	24                              # 0x18
-	.byte	5                               # 0x5
-	.byte	26                              # 0x1a
-	.byte	6                               # 0x6
-	.byte	28                              # 0x1c
-	.byte	7                               # 0x7
-	.byte	30                              # 0x1e
-func000000000000001f:                   # @func000000000000001f
-	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
-	vpmovsxbw	.LCPI1_1(%rip), %ymm2   # ymm2 = [0,16,1,18,2,20,3,22,4,24,5,26,6,28,7,30]
+	.byte	0
+	.byte	16
+	.byte	1
+	.byte	18
+	.byte	2
+	.byte	20
+	.byte	3
+	.byte	22
+	.byte	4
+	.byte	24
+	.byte	5
+	.byte	26
+	.byte	6
+	.byte	28
+	.byte	7
+	.byte	30
+func000000000000001f:
+	vpmovzxbd	%xmm1, %ymm1
+	vpmovsxbw	.LCPI1_1(%rip), %ymm2
 	vpermi2w	%ymm1, %ymm0, %ymm2
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
+

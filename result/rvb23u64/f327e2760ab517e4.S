@@ -1,4 +1,4 @@
-func000000000000001d:                   # @func000000000000001d
+func000000000000001d:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
 	bseti	a2, zero, 53
@@ -6,7 +6,8 @@ func000000000000001d:                   # @func000000000000001d
 	or	a0, a0, a1
 	addi	a0, a0, -1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a0, a0, 1
 	slli	a1, a1, 2
 	bseti	a2, zero, 54
@@ -14,3 +15,4 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	addi	a0, a0, -1
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000014c:
 	lui	a3, 16
 	sext.w	a1, a1
 	addiw	a3, a3, -1
@@ -8,7 +8,8 @@ func000000000000014c:                   # @func000000000000014c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	lui	a3, 16
 	sext.w	a0, a0
 	addiw	a4, a3, -1
@@ -20,7 +21,8 @@ func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000056c:                   # @func000000000000056c
+
+func000000000000056c:
 	lui	a3, 16
 	sext.w	a1, a1
 	addiw	a3, a3, -1
@@ -31,7 +33,8 @@ func000000000000056c:                   # @func000000000000056c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	lui	a3, 16
 	sext.w	a0, a0
 	addiw	a3, a3, -1
@@ -42,7 +45,8 @@ func0000000000000108:                   # @func0000000000000108
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	lui	a3, 16
 	sext.w	a0, a0
 	addiw	a3, a3, -1
@@ -55,7 +59,8 @@ func0000000000000028:                   # @func0000000000000028
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000039:                   # @func0000000000000039
+
+func0000000000000039:
 	lui	a3, 16
 	sext.w	a0, a0
 	addiw	a3, a3, -1
@@ -66,3 +71,4 @@ func0000000000000039:                   # @func0000000000000039
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
+

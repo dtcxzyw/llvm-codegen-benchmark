@@ -1,18 +1,21 @@
-func0000000000000018:                   # @func0000000000000018
-	andl	$61440, %edi                    # imm = 0xF000
+func0000000000000018:
+	andl	$61440, %edi
 	xorl	%eax, %eax
-	cmpl	$28672, %edi                    # imm = 0x7000
+	cmpl	$28672, %edi
 	setne	%al
 	retq
-func0000000000000002:                   # @func0000000000000002
-	andl	$32512, %edi                    # imm = 0x7F00
+
+func0000000000000002:
+	andl	$32512, %edi
 	xorl	%eax, %eax
-	cmpl	$23808, %edi                    # imm = 0x5D00
+	cmpl	$23808, %edi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	andl	$2139095040, %edi               # imm = 0x7F800000
+
+func0000000000000028:
+	andl	$2139095040, %edi
 	xorl	%eax, %eax
-	cmpl	$1065353216, %edi               # imm = 0x3F800000
+	cmpl	$1065353216, %edi
 	setb	%al
 	retq
+

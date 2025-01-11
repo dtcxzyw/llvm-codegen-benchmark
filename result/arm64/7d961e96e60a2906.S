@@ -1,42 +1,36 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000086:                   // @func0000000000000086
-// %bb.0:                               // %entry
+
+func0000000000000086:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, lt
 	ret
-                                        // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+
+func000000000000008a:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+
+func000000000000000b:
 	bic	w8, w0, w0, asr #31
 	cmp	w8, w1
 	cset	w0, ge
 	ret
-                                        // -- End function
+

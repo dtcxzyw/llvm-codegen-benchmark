@@ -1,4 +1,4 @@
-func0000000000000302:                   # @func0000000000000302
+func0000000000000302:
 	andb	$4, %dl
 	shrb	$2, %dl
 	andb	%sil, %dl
@@ -6,3 +6,4 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%dl, %al
 	retq
+

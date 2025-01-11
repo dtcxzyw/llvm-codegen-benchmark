@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vaddpd	%zmm2, %zmm2, %zmm2
 	vaddpd	%zmm3, %zmm3, %zmm3
 	vdivpd	%zmm1, %zmm3, %zmm1
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
 	vaddps	%zmm0, %zmm0, %zmm0
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fle.d	a0, fa1, fa0
@@ -6,7 +6,8 @@ func00000000000000ca:                   # @func00000000000000ca
 .LBB0_2:
 	fle.d	a0, fa0, fa1
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	flt.d	a0, fa1, fa0
@@ -14,7 +15,8 @@ func0000000000000022:                   # @func0000000000000022
 .LBB1_2:
 	flt.d	a0, fa0, fa1
 	ret
-func00000000000000bd:                   # @func00000000000000bd
+
+func00000000000000bd:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	flt.d	a0, fa1, fa0
@@ -24,7 +26,8 @@ func00000000000000bd:                   # @func00000000000000bd
 	flt.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	flt.d	a0, fa1, fa0
@@ -32,7 +35,8 @@ func0000000000000042:                   # @func0000000000000042
 .LBB3_2:
 	flt.d	a0, fa0, fa1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	flt.d	a0, fa0, fa1
@@ -40,7 +44,8 @@ func0000000000000024:                   # @func0000000000000024
 .LBB4_2:
 	flt.d	a0, fa1, fa0
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	flt.d	a0, fa1, fa0
@@ -48,7 +53,8 @@ func000000000000004c:                   # @func000000000000004c
 .LBB5_2:
 	fle.d	a0, fa1, fa0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
 	flt.d	a0, fa0, fa1
@@ -56,7 +62,8 @@ func000000000000002a:                   # @func000000000000002a
 .LBB6_2:
 	fle.d	a0, fa0, fa1
 	ret
-func00000000000000b3:                   # @func00000000000000b3
+
+func00000000000000b3:
 	andi	a0, a0, 1
 	bnez	a0, .LBB7_2
 	flt.d	a0, fa1, fa0
@@ -66,7 +73,8 @@ func00000000000000b3:                   # @func00000000000000b3
 	fle.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
 	flt.d	a0, fa0, fa1
@@ -76,3 +84,4 @@ func00000000000000d5:                   # @func00000000000000d5
 	fle.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
+

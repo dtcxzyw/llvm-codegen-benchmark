@@ -1,4 +1,4 @@
-func0000000000000040:                   # @func0000000000000040
+func0000000000000040:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	movl	%edi, %ecx
@@ -6,7 +6,8 @@ func0000000000000040:                   # @func0000000000000040
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func00000000000000d5:                   # @func00000000000000d5
+
+func00000000000000d5:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	movl	%edi, %ecx
@@ -14,7 +15,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	movl	%edi, %ecx
@@ -22,7 +24,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func00000000000000c0:                   # @func00000000000000c0
+
+func00000000000000c0:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	movl	%edi, %ecx
@@ -30,7 +33,8 @@ func00000000000000c0:                   # @func00000000000000c0
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	movl	%edi, %ecx
@@ -38,3 +42,4 @@ func0000000000000042:                   # @func0000000000000042
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
+

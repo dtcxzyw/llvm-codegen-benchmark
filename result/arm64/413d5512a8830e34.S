@@ -1,60 +1,48 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
+
+func0000000000000040:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+
+func0000000000000042:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func0000000000000060:                   // @func0000000000000060
-// %bb.0:                               // %entry
+
+func0000000000000060:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000007b:                   // @func000000000000007b
-// %bb.0:                               // %entry
+
+func000000000000007b:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000007f:                   // @func000000000000007f
-// %bb.0:                               // %entry
+
+func000000000000007f:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000006a:                   // @func000000000000006a
-// %bb.0:                               // %entry
+
+func000000000000006a:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000007e:                   // @func000000000000007e
-// %bb.0:                               // %entry
+
+func000000000000007e:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func000000000000004f:                   // @func000000000000004f
-// %bb.0:                               // %entry
+
+func000000000000004f:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
+
+func0000000000000058:
 	madd	w0, w1, w2, w0
 	ret
-                                        // -- End function
+

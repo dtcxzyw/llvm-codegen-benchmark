@@ -1,5 +1,4 @@
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+func0000000000000081:
 	eor	x8, x2, #0x8000000000000000
 	cmp	x8, #3
 	csinc	x8, x8, xzr, lo
@@ -8,4 +7,4 @@ func0000000000000081:                   // @func0000000000000081
 	cmp	x8, x9
 	cset	w0, eq
 	ret
-                                        // -- End function
+

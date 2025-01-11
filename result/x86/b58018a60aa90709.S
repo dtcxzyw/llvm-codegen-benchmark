@@ -1,5 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	movl	%edi, %eax
-	andl	$-57600, %eax                   # imm = 0xFFFF1F00
+	andl	$-57600, %eax
 	bswapl	%eax
 	retq
+

@@ -1,7 +1,6 @@
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+func0000000000000013:
 	fcvtzs	x8, d0
-	mov	w9, #2147483647                 // =0x7fffffff
+	mov	w9, #2147483647
 	add	x8, x1, x8
 	cmp	x8, x0
 	csel	x8, x8, x0, lt
@@ -9,4 +8,4 @@ func0000000000000013:                   // @func0000000000000013
 	csel	x8, x8, x9, lt
 	lsl	x0, x8, #2
 	ret
-                                        // -- End function
+

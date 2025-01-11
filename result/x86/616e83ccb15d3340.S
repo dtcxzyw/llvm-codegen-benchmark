@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000082:
 	cmpl	%edi, %edx
 	sete	%cl
 	orb	%sil, %cl
@@ -6,7 +6,8 @@ func0000000000000082:                   # @func0000000000000082
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000402:                   # @func0000000000000402
+
+func0000000000000402:
 	cmpl	%edi, %edx
 	seta	%cl
 	orb	%sil, %cl
@@ -14,7 +15,8 @@ func0000000000000402:                   # @func0000000000000402
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	%esi, %edx
 	sete	%cl
 	orb	%dil, %cl
@@ -22,7 +24,8 @@ func0000000000000084:                   # @func0000000000000084
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	cmpl	%edi, %edx
 	sete	%cl
 	orb	%sil, %cl
@@ -30,3 +33,4 @@ func0000000000000094:                   # @func0000000000000094
 	setg	%al
 	orb	%cl, %al
 	retq
+

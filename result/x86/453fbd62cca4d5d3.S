@@ -1,4 +1,4 @@
-func000000000000006e:                   # @func000000000000006e
+func000000000000006e:
 	shrq	$63, %rdx
 	leal	(%rdi,%rsi), %ecx
 	addl	%edx, %ecx
@@ -6,3 +6,4 @@ func000000000000006e:                   # @func000000000000006e
 	movl	$255, %eax
 	cmovbl	%ecx, %eax
 	retq
+

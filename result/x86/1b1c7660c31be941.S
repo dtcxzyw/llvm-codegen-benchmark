@@ -1,4 +1,4 @@
-func000000000000030c:                   # @func000000000000030c
+func000000000000030c:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	testl	%edx, %edx
@@ -7,7 +7,8 @@ func000000000000030c:                   # @func000000000000030c
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx
 	cmpl	$2, %edx
@@ -16,3 +17,4 @@ func000000000000018c:                   # @func000000000000018c
 	setle	%al
 	orb	%cl, %al
 	retq
+

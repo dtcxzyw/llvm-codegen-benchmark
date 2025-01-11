@@ -1,5 +1,4 @@
-func0000000000000052:                   // @func0000000000000052
-// %bb.0:                               // %entry
+func0000000000000052:
 	umulh	x8, x4, x2
 	umulh	x9, x0, x2
 	madd	x8, x4, x3, x8
@@ -10,9 +9,8 @@ func0000000000000052:                   // @func0000000000000052
 	adds	x0, x8, x10
 	adc	x1, x9, x11
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	umulh	x8, x4, x2
 	umulh	x9, x0, x2
 	madd	x8, x4, x3, x8
@@ -23,9 +21,8 @@ func000000000000004a:                   // @func000000000000004a
 	adds	x0, x10, x8
 	adc	x1, x9, x11
 	ret
-                                        // -- End function
-func000000000000007b:                   // @func000000000000007b
-// %bb.0:                               // %entry
+
+func000000000000007b:
 	umulh	x8, x4, x2
 	umulh	x9, x0, x2
 	madd	x8, x4, x3, x8
@@ -36,4 +33,4 @@ func000000000000007b:                   // @func000000000000007b
 	adds	x0, x8, x10
 	adc	x1, x9, x11
 	ret
-                                        // -- End function
+

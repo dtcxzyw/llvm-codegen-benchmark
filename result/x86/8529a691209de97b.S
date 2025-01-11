@@ -1,16 +1,18 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movl	%edi, %eax
 	andb	$1, %sil
 	orb	$2, %sil
 	shlxq	%rsi, %rax, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	movl	%edi, %eax
 	andb	$1, %sil
 	xorb	$3, %sil
 	shlxq	%rsi, %rax, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	movl	%edi, %eax
 	testb	$1, %sil
 	movl	$32, %ecx
@@ -18,3 +20,4 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%ecx, %edx
 	shlxq	%rdx, %rax, %rax
 	retq
+

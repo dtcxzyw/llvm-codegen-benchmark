@@ -1,10 +1,11 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	shrxl	%edx, %edi, %eax
 	testl	%eax, %eax
 	sete	%al
 	orb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andb	$1, %sil
 	movl	$-1, %eax
 	shlxl	%edx, %eax, %eax
@@ -16,3 +17,4 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%ecx, %edi
 	sete	%al
 	retq
+

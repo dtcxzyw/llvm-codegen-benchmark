@@ -1,64 +1,73 @@
-func000000000000006f:                   # @func000000000000006f
+func000000000000006f:
 	lui	a3, 256
 	add	a2, a2, a3
 	srli	a2, a2, 21
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000065:                   # @func0000000000000065
+
+func0000000000000065:
 	lui	a3, 256
 	add	a2, a2, a3
 	srli	a2, a2, 21
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	lui	a3, 256
 	add	a2, a2, a3
 	srli	a2, a2, 21
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	addi	a2, a2, 63
 	srli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addi	a2, a2, 63
 	srli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000006a:                   # @func000000000000006a
+
+func000000000000006a:
 	bseti	a3, zero, 31
 	add	a2, a2, a3
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000007b:                   # @func000000000000007b
+
+func000000000000007b:
 	lui	a3, 256
 	add	a2, a2, a3
 	srli	a2, a2, 21
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000004a:                   # @func000000000000004a
+
+func000000000000004a:
 	addi	a2, a2, 63
 	srli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000004f:                   # @func000000000000004f
+
+func000000000000004f:
 	bseti	a3, zero, 31
 	add	a2, a2, a3
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	lui	a3, 81007
 	slli	a3, a3, 3
 	addi	a3, a3, -1607
@@ -67,9 +76,11 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000069:                   # @func0000000000000069
+
+func0000000000000069:
 	addi	a2, a2, 31
 	srli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

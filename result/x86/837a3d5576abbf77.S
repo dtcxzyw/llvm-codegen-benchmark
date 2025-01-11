@@ -1,4 +1,4 @@
-func0000000000000186:                   # @func0000000000000186
+func0000000000000186:
 	xorl	%ecx, %ecx
 	cmpq	$2, %rdx
 	setne	%cl
@@ -6,7 +6,8 @@ func0000000000000186:                   # @func0000000000000186
 	leaq	(%rsi,%rdi), %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	xorl	%ecx, %ecx
 	cmpq	$2, %rdx
 	setae	%cl
@@ -14,7 +15,8 @@ func0000000000000104:                   # @func0000000000000104
 	leaq	(%rsi,%rdi), %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000180:                   # @func0000000000000180
+
+func0000000000000180:
 	xorl	%ecx, %ecx
 	testq	%rdx, %rdx
 	setne	%cl
@@ -22,3 +24,4 @@ func0000000000000180:                   # @func0000000000000180
 	leaq	(%rsi,%rdi), %rax
 	orq	%rcx, %rax
 	retq
+

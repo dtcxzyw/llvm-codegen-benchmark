@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000015:
 	subq	%rdx, %rsi
 	cmpq	$1, %rsi
 	adcq	$0, %rsi
@@ -6,3 +6,4 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	%rsi, %rdi
 	leaq	100000(%rdi), %rax
 	retq
+

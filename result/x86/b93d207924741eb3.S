@@ -1,4 +1,4 @@
-func0000000000000d4c:                   # @func0000000000000d4c
+func0000000000000d4c:
 	incq	%rdx
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -6,7 +6,8 @@ func0000000000000d4c:                   # @func0000000000000d4c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -14,8 +15,9 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
-	movabsq	$20000000000, %rax              # imm = 0x4A817C800
+
+func00000000000000e1:
+	movabsq	$20000000000, %rax
 	addq	%rdx, %rax
 	cmpq	%rax, %rsi
 	setle	%cl
@@ -23,7 +25,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	incq	%rdx
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -31,7 +34,8 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000004c1:                   # @func00000000000004c1
+
+func00000000000004c1:
 	decq	%rdx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -39,3 +43,4 @@ func00000000000004c1:                   # @func00000000000004c1
 	sete	%al
 	andb	%cl, %al
 	retq
+

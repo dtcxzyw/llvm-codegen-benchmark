@@ -1,8 +1,10 @@
-func0000000000000003:                   # @func0000000000000003
-	andl	$-1092, %edi                    # imm = 0xFBBC
+func0000000000000003:
+	andl	$-1092, %edi
 	leal	65(%rdi), %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$-512, %edi                     # imm = 0xFE00
+
+func0000000000000001:
+	andl	$-512, %edi
 	leal	257(%rdi), %eax
 	retq
+

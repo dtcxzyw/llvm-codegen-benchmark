@@ -1,4 +1,4 @@
-func000000000000030c:                   # @func000000000000030c
+func000000000000030c:
 	addi	a2, a2, 16
 	slli	a0, a0, 1
 	xor	a1, a1, a2
@@ -10,7 +10,8 @@ func000000000000030c:                   # @func000000000000030c
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func000000000000030e:                   # @func000000000000030e
+
+func000000000000030e:
 	addi	a2, a2, 16
 	slli	a0, a0, 1
 	xor	a1, a1, a2
@@ -22,7 +23,8 @@ func000000000000030e:                   # @func000000000000030e
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func000000000000020c:                   # @func000000000000020c
+
+func000000000000020c:
 	addi	a2, a2, -64
 	slli	a0, a0, 1
 	xor	a1, a1, a2
@@ -34,3 +36,4 @@ func000000000000020c:                   # @func000000000000020c
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000ea1:                   # @func0000000000000ea1
+func0000000000000ea1:
 	slli	a1, a1, 48
 	lui	a2, 432
 	mulhu	a1, a1, a2
@@ -8,3 +8,4 @@ func0000000000000ea1:                   # @func0000000000000ea1
 	xor	a1, a1, a2
 	seqz	a0, a1
 	ret
+

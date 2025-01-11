@@ -1,27 +1,30 @@
 .LCPI0_0:
-	.quad	4503595332403200                # 0xfffff00000000
-func0000000000000021:                   # @func0000000000000021
+	.quad	4503595332403200
+func0000000000000021:
 	vpsllq	$32, %ymm1, %ymm1
-	vpternlogq	$236, .LCPI0_0(%rip){1to4}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
+	vpternlogq	$236, .LCPI0_0(%rip){1to4}, %ymm0, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	524280                          # 0x7fff8
-func00000000000000e1:                   # @func00000000000000e1
+	.quad	524280
+func00000000000000e1:
 	vpsllq	$3, %ymm1, %ymm1
-	vpternlogq	$236, .LCPI1_0(%rip){1to4}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
+	vpternlogq	$236, .LCPI1_0(%rip){1to4}, %ymm0, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	524280                          # 0x7fff8
-func00000000000000a1:                   # @func00000000000000a1
+	.quad	524280
+func00000000000000a1:
 	vpsllq	$3, %ymm1, %ymm1
-	vpternlogq	$236, .LCPI2_0(%rip){1to4}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
+	vpternlogq	$236, .LCPI2_0(%rip){1to4}, %ymm0, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

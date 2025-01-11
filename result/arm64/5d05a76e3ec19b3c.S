@@ -1,6 +1,5 @@
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
-	mov	w8, #34079                      // =0x851f
+func0000000000000011:
+	mov	w8, #34079
 	add	w9, w1, w2
 	movk	w8, #20971, lsl #16
 	smull	x8, w9, w8
@@ -8,10 +7,9 @@ func0000000000000011:                   // @func0000000000000011
 	add	w8, w8, w8, lsr #31
 	add	w0, w0, w8, asr #2
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
-	mov	w8, #34079                      // =0x851f
+
+func0000000000000010:
+	mov	w8, #34079
 	add	w9, w1, w2
 	movk	w8, #20971, lsl #16
 	smull	x8, w9, w8
@@ -19,4 +17,4 @@ func0000000000000010:                   // @func0000000000000010
 	add	w8, w8, w8, lsr #31
 	add	w0, w0, w8, asr #2
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	srli	a1, a1, 41
@@ -7,7 +7,8 @@ func000000000000003f:                   # @func000000000000003f
 	sub	a0, a0, a1
 	sub	a0, a2, a0
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	srli	a1, a1, 48
@@ -17,3 +18,4 @@ func000000000000003e:                   # @func000000000000003e
 	srli	a0, a0, 34
 	addw	a0, a0, a1
 	ret
+

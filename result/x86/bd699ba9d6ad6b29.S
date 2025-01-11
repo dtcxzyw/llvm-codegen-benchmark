@@ -1,7 +1,8 @@
-func00000000000001e1:                   # @func00000000000001e1
-	andl	$1023, %esi                     # imm = 0x3FF
+func00000000000001e1:
+	andl	$1023, %esi
 	addl	%edi, %esi
-	cmpl	$640, %esi                      # imm = 0x280
+	cmpl	$640, %esi
 	movl	$48, %eax
 	sbbl	$-1, %eax
 	retq
+

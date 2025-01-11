@@ -1,13 +1,14 @@
-func0000000000000181:                   # @func0000000000000181
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+func0000000000000181:
+	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rax, %rax
 	andq	$-2, %rax
 	leaq	4(%rsi,%rax,2), %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000001e4:                   # @func00000000000001e4
-	movabsq	$2635249153387078803, %rax      # imm = 0x2492492492492493
+
+func00000000000001e4:
+	movabsq	$2635249153387078803, %rax
 	mulxq	%rax, %rax, %rax
 	subq	%rax, %rdx
 	shrq	%rdx
@@ -17,3 +18,4 @@ func00000000000001e4:                   # @func00000000000001e4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+

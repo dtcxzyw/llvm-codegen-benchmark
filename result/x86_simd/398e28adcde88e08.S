@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.long	640                             # 0x280
+	.long	640
 .LCPI0_1:
-	.long	246                             # 0xf6
-func00000000000001f4:                   # @func00000000000001f4
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	.long	246
+func00000000000001f4:
+	vpmovzxbd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpnltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
+

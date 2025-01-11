@@ -1,61 +1,53 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+func0000000000000061:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	tst	w8, #0x1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000ec:                   // @func00000000000000ec
-// %bb.0:                               // %entry
+
+func00000000000000ec:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000e1:                   // @func00000000000000e1
-// %bb.0:                               // %entry
+
+func00000000000000e1:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	tst	w8, #0x1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	tst	w8, #0x1
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	tst	w8, #0xf
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
+
+func00000000000000c1:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	tst	w8, #0x2
 	cset	w0, eq
 	ret
-                                        // -- End function
-func000000000000006c:                   // @func000000000000006c
-// %bb.0:                               // %entry
+
+func000000000000006c:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	and	w8, w1, #0xffff
 	lsr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

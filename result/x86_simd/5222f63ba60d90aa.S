@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.long	2                               # 0x2
+	.long	2
 .LCPI0_1:
-	.long	1                               # 0x1
-func0000000000000002:                   # @func0000000000000002
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
+	.long	1
+func0000000000000002:
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1
 	vmovdqa32	%ymm2, %ymm1 {%k1}
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -53,16 +53,17 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	24                              # 0x18
+	.long	24
 .LCPI1_1:
-	.long	6                               # 0x6
+	.long	6
 .LCPI1_2:
-	.long	7                               # 0x7
-func0000000000000014:                   # @func0000000000000014
+	.long	7
+func0000000000000014:
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [6,6,6,6,6,6,6,6]
-	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [7,7,7,7,7,7,7,7]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm1
+	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1}
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3
@@ -109,3 +110,4 @@ func0000000000000014:                   # @func0000000000000014
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
+

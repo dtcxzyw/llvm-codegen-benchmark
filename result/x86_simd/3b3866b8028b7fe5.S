@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.quad	7                               # 0x7
-func0000000000000005:                   # @func0000000000000005
+	.quad	7
+func0000000000000005:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vextracti128	$1, %ymm1, %xmm0
 	vpextrq	$1, %xmm0, %rcx
-	movabsq	$5270498306774157605, %rsi      # imm = 0x4924924924924925
+	movabsq	$5270498306774157605, %rsi
 	movq	%rcx, %rax
 	imulq	%rsi
 	movq	%rdx, %rax
@@ -27,7 +27,7 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vpextrq	$1, %xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -50,9 +50,10 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rax, %rdx
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+

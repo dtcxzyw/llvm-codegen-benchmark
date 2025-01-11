@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000000f4:
 	andb	$15, %dil
 	leal	48(%rdi), %eax
 	leal	55(%rdi), %ecx
@@ -7,3 +7,4 @@ func00000000000000f4:                   # @func00000000000000f4
 	movzbl	%cl, %eax
 	cmovbl	%edx, %eax
 	retq
+

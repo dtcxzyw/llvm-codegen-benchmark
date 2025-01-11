@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.long	22                              # 0x16
-func00000000000001c0:                   # @func00000000000001c0
+	.long	22
+func00000000000001c0:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	vpmovzxbd	%xmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+

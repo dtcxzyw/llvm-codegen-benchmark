@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	addw	a1, a1, a2
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2
@@ -8,7 +8,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	slti	a0, a0, 24
 	xori	a0, a0, 1
 	ret
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	addw	a1, a1, a2
 	slti	a2, a1, 1
 	czero.nez	a1, a1, a2
@@ -19,7 +20,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	addiw	a1, a2, 1807
 	slt	a0, a1, a0
 	ret
-func00000000000004c8:                   # @func00000000000004c8
+
+func00000000000004c8:
 	addw	a1, a1, a2
 	slti	a2, a1, -305
 	czero.nez	a1, a1, a2
@@ -29,14 +31,16 @@ func00000000000004c8:                   # @func00000000000004c8
 	sltiu	a0, a0, -22
 	xori	a0, a0, 1
 	ret
-func00000000000004c6:                   # @func00000000000004c6
+
+func00000000000004c6:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	slti	a1, a1, -305
 	slti	a0, a0, -308
 	and	a0, a0, a1
 	ret
-func0000000000000541:                   # @func0000000000000541
+
+func0000000000000541:
 	addw	a1, a1, a2
 	slti	a2, a1, 12
 	czero.eqz	a1, a1, a2
@@ -46,7 +50,8 @@ func0000000000000541:                   # @func0000000000000541
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000426:                   # @func0000000000000426
+
+func0000000000000426:
 	addw	a1, a1, a2
 	addi	a2, a1, 1
 	czero.eqz	a1, a1, a2
@@ -55,7 +60,8 @@ func0000000000000426:                   # @func0000000000000426
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	addw	a1, a1, a2
 	addi	a2, a1, 1
 	czero.eqz	a1, a1, a2
@@ -64,3 +70,4 @@ func0000000000000421:                   # @func0000000000000421
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000035:                   # @func0000000000000035
+func0000000000000035:
 	vcmpnlepd	%zmm1, %zmm3, %k0
 	vcmpnlepd	%zmm2, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k0
@@ -10,3 +10,4 @@ func0000000000000035:                   # @func0000000000000035
 	vmovdqa	%xmm5, %xmm0
 	vzeroupper
 	retq
+

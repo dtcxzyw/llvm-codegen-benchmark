@@ -1,4 +1,4 @@
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000000d5:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -7,7 +7,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	addq	$2, %rcx
@@ -16,7 +17,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	decq	%rcx
@@ -25,7 +27,8 @@ func0000000000000054:                   # @func0000000000000054
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	addq	$16, %rcx
@@ -34,7 +37,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -43,7 +47,8 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -52,7 +57,8 @@ func0000000000000044:                   # @func0000000000000044
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -61,7 +67,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	addq	$2, %rcx
@@ -70,3 +77,4 @@ func00000000000000c4:                   # @func00000000000000c4
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

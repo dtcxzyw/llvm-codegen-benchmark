@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax), %rcx
 	shlq	$31, %rax
@@ -7,3 +7,4 @@ func0000000000000048:                   # @func0000000000000048
 	setb	%al
 	orb	%dil, %al
 	retq
+

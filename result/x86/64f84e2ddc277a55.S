@@ -1,4 +1,4 @@
-func0000000000001a88:                   # @func0000000000001a88
+func0000000000001a88:
 	addl	$7, %edx
 	cmpl	%esi, %edx
 	setg	%cl
@@ -6,7 +6,8 @@ func0000000000001a88:                   # @func0000000000001a88
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000001b02:                   # @func0000000000001b02
+
+func0000000000001b02:
 	addl	$2, %edx
 	cmpl	%esi, %edx
 	setne	%cl
@@ -14,7 +15,8 @@ func0000000000001b02:                   # @func0000000000001b02
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000acc:                   # @func0000000000000acc
+
+func0000000000000acc:
 	addl	$-3, %edx
 	cmpl	%esi, %edx
 	setge	%cl
@@ -22,7 +24,8 @@ func0000000000000acc:                   # @func0000000000000acc
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	decl	%edx
 	cmpl	%esi, %edx
 	setb	%cl
@@ -30,3 +33,4 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
+

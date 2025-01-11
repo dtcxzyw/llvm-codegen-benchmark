@@ -1,7 +1,7 @@
-func0000000000000426:                   # @func0000000000000426
+func0000000000000426:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpmovzxdq	%xmm2, %ymm0            # ymm0 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpmovzxdq	%xmm2, %ymm0
 	vpcmpgtq	%ymm1, %ymm0, %k1
 	vptestnmd	%xmm2, %xmm2, %k2
 	korw	%k1, %k0, %k0
@@ -9,3 +9,4 @@ func0000000000000426:                   # @func0000000000000426
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

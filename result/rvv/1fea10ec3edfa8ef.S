@@ -1,4 +1,4 @@
-func00000000000005e1:                   # @func00000000000005e1
+func00000000000005e1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, -184
@@ -7,7 +7,8 @@ func00000000000005e1:                   # @func00000000000005e1
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, -95
@@ -16,7 +17,8 @@ func0000000000000101:                   # @func0000000000000101
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000de1:                   # @func0000000000000de1
+
+func0000000000000de1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, -95
@@ -25,7 +27,8 @@ func0000000000000de1:                   # @func0000000000000de1
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000541:                   # @func0000000000000541
+
+func0000000000000541:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, -94
@@ -34,7 +37,8 @@ func0000000000000541:                   # @func0000000000000541
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000ff4:                   # @func0000000000000ff4
+
+func0000000000000ff4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	li	a0, 258
@@ -43,7 +47,8 @@ func0000000000000ff4:                   # @func0000000000000ff4
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000561:                   # @func0000000000000561
+
+func0000000000000561:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	lui	a0, 1048544
@@ -53,7 +58,8 @@ func0000000000000561:                   # @func0000000000000561
 	vzext.vf2	v12, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
 	vadd.vi	v10, v10, -2
@@ -61,3 +67,4 @@ func0000000000000014:                   # @func0000000000000014
 	vzext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
+

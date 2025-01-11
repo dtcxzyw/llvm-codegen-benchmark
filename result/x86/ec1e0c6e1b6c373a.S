@@ -1,19 +1,21 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000094:
 	addq	%rdx, %rsi
 	cmpq	$20, %rsi
 	setb	%cl
-	cmpq	$513, %rdi                      # imm = 0x201
+	cmpq	$513, %rdi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addq	%rdx, %rsi
 	sete	%cl
 	cmpq	$17, %rdi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000881:                   # @func0000000000000881
+
+func0000000000000881:
 	addq	%rdx, %rsi
 	cmpq	$2, %rsi
 	setae	%cl
@@ -21,3 +23,4 @@ func0000000000000881:                   # @func0000000000000881
 	sete	%al
 	andb	%cl, %al
 	retq
+

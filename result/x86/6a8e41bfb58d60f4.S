@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	shll	$27, %edx
 	sarl	$31, %edx
 	notb	%sil
@@ -9,7 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	andl	%edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andl	$1, %esi
 	leal	(%rsi,%rsi), %ecx
 	testb	$1, %dl
@@ -17,3 +18,4 @@ func0000000000000003:                   # @func0000000000000003
 	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
+

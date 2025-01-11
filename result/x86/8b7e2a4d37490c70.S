@@ -1,4 +1,4 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	andb	$7, %dil
 	movb	$8, %al
 	subb	%dil, %al
@@ -6,7 +6,8 @@ func000000000000000d:                   # @func000000000000000d
 	shlxl	%eax, %ecx, %eax
 	notl	%eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	andb	$31, %dil
 	movb	$30, %al
 	subb	%dil, %al
@@ -14,3 +15,4 @@ func0000000000000005:                   # @func0000000000000005
 	shlxl	%eax, %ecx, %eax
 	notl	%eax
 	retq
+

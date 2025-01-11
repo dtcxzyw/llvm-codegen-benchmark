@@ -1,77 +1,68 @@
-func000000000000204c:                   // @func000000000000204c
-// %bb.0:                               // %entry
+func000000000000204c:
 	cmp	w0, #32
 	ccmp	w1, #5, #0, ne
 	ccmp	w0, #10, #4, lo
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000628c:                   // @func000000000000628c
-// %bb.0:                               // %entry
+
+func000000000000628c:
 	cmp	w0, #0
 	ccmp	w1, #0, #0, lt
 	ccmn	w0, #4, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000005194:                   // @func0000000000005194
-// %bb.0:                               // %entry
+
+func0000000000005194:
 	cmp	w0, #2
 	ccmp	w1, #0, #0, ge
 	ccmp	w0, #0, #4, ge
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000620c:                   // @func000000000000620c
-// %bb.0:                               // %entry
+
+func000000000000620c:
 	cmp	w1, #127
 	ccmp	w0, #5, #0, ls
 	ccmp	w0, #4, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000004104:                   // @func0000000000004104
-// %bb.0:                               // %entry
-	mov	w8, #4609                       // =0x1201
+
+func0000000000004104:
+	mov	w8, #4609
 	cmp	w0, w8
-	mov	w8, #48000                      // =0xbb80
+	mov	w8, #48000
 	ccmp	w1, w8, #2, hs
-	mov	w8, #16384                      // =0x4000
+	mov	w8, #16384
 	ccmp	w0, w8, #2, hi
 	cset	w0, ls
 	ret
-                                        // -- End function
-func000000000000630c:                   // @func000000000000630c
-// %bb.0:                               // %entry
-	mov	w8, #64                         // =0x40
+
+func000000000000630c:
+	mov	w8, #64
 	cmp	w1, #2
 	ccmp	w0, w8, #0, eq
 	ccmp	w0, #0, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000084c:                   // @func000000000000084c
-// %bb.0:                               // %entry
+
+func000000000000084c:
 	cmp	w1, #14
 	ccmp	w0, #6, #4, ne
 	ccmp	w0, #7, #4, eq
 	cset	w0, ne
 	ret
-                                        // -- End function
-func000000000000604c:                   // @func000000000000604c
-// %bb.0:                               // %entry
+
+func000000000000604c:
 	cmp	w0, #140
-	mov	w8, #90                         // =0x5a
+	mov	w8, #90
 	ccmp	w1, #0, #0, ne
 	ccmp	w0, w8, #4, ne
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000b0c:                   // @func0000000000000b0c
-// %bb.0:                               // %entry
+
+func0000000000000b0c:
 	cmp	w0, #3
 	ccmp	w1, #3, #4, eq
 	ccmp	w0, #2, #4, eq
 	cset	w0, ne
 	ret
-                                        // -- End function
+

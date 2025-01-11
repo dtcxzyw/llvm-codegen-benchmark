@@ -1,4 +1,4 @@
-func000000000000007d:                   # @func000000000000007d
+func000000000000007d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
@@ -10,7 +10,8 @@ func000000000000007d:                   # @func000000000000007d
 	vmv.v.i	v8, -1
 	vsll.vv	v8, v8, v10
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 63
@@ -19,7 +20,8 @@ func000000000000001f:                   # @func000000000000001f
 	vmv.v.i	v11, 1
 	vwsll.vv	v8, v11, v10
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
@@ -29,7 +31,8 @@ func000000000000007f:                   # @func000000000000007f
 	vmv.v.i	v11, 1
 	vwsll.vv	v8, v11, v10
 	ret
-func000000000000001d:                   # @func000000000000001d
+
+func000000000000001d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 63
@@ -41,3 +44,4 @@ func000000000000001d:                   # @func000000000000001d
 	vmv.v.i	v8, -1
 	vsll.vv	v8, v8, v10
 	ret
+

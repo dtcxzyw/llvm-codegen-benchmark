@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv.v.i	v12, 1
 	bseti	a0, zero, 63
@@ -8,3 +8,4 @@ func0000000000000081:                   # @func0000000000000081
 	vmerge.vvm	v8, v12, v8, v0
 	vmseq.vv	v0, v8, v14
 	ret
+

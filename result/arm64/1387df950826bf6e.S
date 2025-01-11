@@ -1,7 +1,6 @@
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+func0000000000000030:
 	sub	x8, x0, x1
 	add	x8, x8, #7
 	and	x0, x8, #0xfffffffffffffff8
 	ret
-                                        // -- End function
+

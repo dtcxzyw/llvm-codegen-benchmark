@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	164703072086692425              # 0x249249249249249
-func0000000000000016:                   # @func0000000000000016
+	.quad	164703072086692425
+func0000000000000016:
 	srai	a1, a1, 3
 	lui	a2, 748983
 	addiw	a2, a2, -585
@@ -13,20 +13,21 @@ func0000000000000016:                   # @func0000000000000016
 	ld	a3, %lo(.LCPI0_0)(a0)
 	add	a0, a2, a1
 	bgeu	a0, a3, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a2, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a0)
 	add	a0, a2, a1
 	bltu	a0, a3, .LBB0_2
-.LBB0_4:                                # %entry
+.LBB0_4:
 	mv	a0, a3
 	ret
+
 .LCPI1_0:
-	.quad	230584300921369395              # 0x333333333333333
-func0000000000000012:                   # @func0000000000000012
+	.quad	230584300921369395
+func0000000000000012:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	addiw	a2, a2, -819
@@ -39,14 +40,15 @@ func0000000000000012:                   # @func0000000000000012
 	ld	a3, %lo(.LCPI1_0)(a0)
 	add	a0, a2, a1
 	bgeu	a0, a3, .LBB1_4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
-.LBB1_3:                                # %entry
+.LBB1_3:
 	mv	a2, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a0)
 	add	a0, a2, a1
 	bltu	a0, a3, .LBB1_2
-.LBB1_4:                                # %entry
+.LBB1_4:
 	mv	a0, a3
 	ret
+

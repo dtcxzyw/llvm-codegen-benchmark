@@ -1,5 +1,4 @@
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+func000000000000001b:
 	sub	x8, x1, x2
 	scvtf	d1, x0
 	scvtf	d0, x8
@@ -8,9 +7,8 @@ func000000000000001b:                   // @func000000000000001b
 	fcmp	d0, d1
 	cset	w0, le
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	sub	x8, x1, x2
 	scvtf	d1, x0
 	scvtf	d0, x8
@@ -18,9 +16,8 @@ func0000000000000014:                   // @func0000000000000014
 	fcmp	d0, #0.0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+
+func0000000000000012:
 	sub	x8, x1, x2
 	scvtf	d1, x0
 	scvtf	d0, x8
@@ -29,4 +26,4 @@ func0000000000000012:                   // @func0000000000000012
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
+

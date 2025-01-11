@@ -1,5 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #0
@@ -8,9 +7,8 @@ func0000000000000042:                   // @func0000000000000042
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000302:                   // @func0000000000000302
-// %bb.0:                               // %entry
+
+func0000000000000302:
 	cmp	w2, #0
 	cset	w8, eq
 	cmp	w0, #0
@@ -19,9 +17,8 @@ func0000000000000302:                   // @func0000000000000302
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000020c:                   // @func000000000000020c
-// %bb.0:                               // %entry
+
+func000000000000020c:
 	cmp	w2, #32
 	cset	w8, lo
 	cmp	w0, #8
@@ -30,9 +27,8 @@ func000000000000020c:                   // @func000000000000020c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000214:                   // @func0000000000000214
-// %bb.0:                               // %entry
+
+func0000000000000214:
 	cmp	w2, #32
 	cset	w8, lo
 	cmp	w0, #2
@@ -41,9 +37,8 @@ func0000000000000214:                   // @func0000000000000214
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000318:                   // @func0000000000000318
-// %bb.0:                               // %entry
+
+func0000000000000318:
 	cmp	w2, #0
 	cset	w8, eq
 	cmp	w0, #0
@@ -52,9 +47,8 @@ func0000000000000318:                   // @func0000000000000318
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000050:                   // @func0000000000000050
-// %bb.0:                               // %entry
+
+func0000000000000050:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #1
@@ -63,4 +57,4 @@ func0000000000000050:                   // @func0000000000000050
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

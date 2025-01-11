@@ -1,7 +1,6 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	fsub	s0, s0, s1
-	mov	w8, #4719                       // =0x126f
+	mov	w8, #4719
 	movk	w8, #14979, lsl #16
 	fneg	s1, s0
 	fcmp	s0, #0.0
@@ -10,11 +9,10 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	fsub	s0, s0, s1
-	mov	w8, #58720256                   // =0x3800000
+	mov	w8, #58720256
 	fneg	s1, s0
 	fcmp	s0, #0.0
 	fcsel	s0, s1, s0, mi
@@ -22,4 +20,4 @@ func000000000000002a:                   // @func000000000000002a
 	fcmp	s0, s1
 	cset	w0, ls
 	ret
-                                        // -- End function
+

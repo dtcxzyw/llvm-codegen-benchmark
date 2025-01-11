@@ -1,8 +1,8 @@
-func000000000000004f:                   # @func000000000000004f
+func000000000000004f:
 	leal	(%rdx,%rdx), %eax
 	movzwl	%ax, %eax
 	shll	$5, %edx
-	andl	$1048544, %edx                  # imm = 0xFFFE0
+	andl	$1048544, %edx
 	addq	%rax, %rax
 	subq	%rax, %rdx
 	leaq	(%rdi,%rdi), %rax
@@ -11,3 +11,4 @@ func000000000000004f:                   # @func000000000000004f
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andl	$1, %edx
 	negq	%rdx
 	testb	$1, %dil
@@ -6,7 +6,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmoveq	%rdx, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andl	$1, %edx
 	negq	%rdx
 	testb	$1, %dil
@@ -14,3 +15,4 @@ func0000000000000002:                   # @func0000000000000002
 	cmoveq	%rdx, %rax
 	addq	%rsi, %rax
 	retq
+

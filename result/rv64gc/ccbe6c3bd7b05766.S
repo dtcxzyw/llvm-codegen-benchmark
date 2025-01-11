@@ -1,4 +1,4 @@
-func00000000000002b4:                   # @func00000000000002b4
+func00000000000002b4:
 	andi	a2, a2, 255
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -9,7 +9,8 @@ func00000000000002b4:                   # @func00000000000002b4
 	subw	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000002b8:                   # @func00000000000002b8
+
+func00000000000002b8:
 	andi	a2, a2, 255
 	subw	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -20,3 +21,4 @@ func00000000000002b8:                   # @func00000000000002b8
 	subw	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
+

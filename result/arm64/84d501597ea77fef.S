@@ -1,5 +1,4 @@
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+func0000000000000041:
 	cmp	w2, #0
 	cset	w8, eq
 	cmp	w0, #382
@@ -7,9 +6,8 @@ func0000000000000041:                   // @func0000000000000041
 	cset	w9, eq
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000030a:                   // @func000000000000030a
-// %bb.0:                               // %entry
+
+func000000000000030a:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #0
@@ -17,9 +15,8 @@ func000000000000030a:                   // @func000000000000030a
 	cset	w9, gt
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000028c:                   // @func000000000000028c
-// %bb.0:                               // %entry
+
+func000000000000028c:
 	cmp	w2, #0
 	cset	w8, gt
 	cmp	w0, #0
@@ -27,20 +24,18 @@ func000000000000028c:                   // @func000000000000028c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	cmp	w2, #0
-	mov	w8, #38912                      // =0x9800
+	mov	w8, #38912
 	cset	w9, eq
 	cmp	w0, w8
 	orr	w8, w9, w1
 	cset	w9, gt
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
+
+func0000000000000101:
 	cmp	w2, #2
 	cset	w8, lo
 	cmp	w0, #14
@@ -48,9 +43,8 @@ func0000000000000101:                   // @func0000000000000101
 	cset	w9, eq
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000301:                   // @func0000000000000301
-// %bb.0:                               // %entry
+
+func0000000000000301:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #0
@@ -58,9 +52,8 @@ func0000000000000301:                   // @func0000000000000301
 	cset	w9, eq
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000030c:                   // @func000000000000030c
-// %bb.0:                               // %entry
+
+func000000000000030c:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #0
@@ -68,9 +61,8 @@ func000000000000030c:                   // @func000000000000030c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000286:                   // @func0000000000000286
-// %bb.0:                               // %entry
+
+func0000000000000286:
 	cmp	w2, #0
 	cset	w8, gt
 	cmp	w0, #2
@@ -78,9 +70,8 @@ func0000000000000286:                   // @func0000000000000286
 	cset	w9, lt
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
+
+func000000000000004c:
 	cmp	w2, #0
 	cset	w8, eq
 	cmp	w0, #1
@@ -88,9 +79,8 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000306:                   // @func0000000000000306
-// %bb.0:                               // %entry
+
+func0000000000000306:
 	cmp	w2, #0
 	cset	w8, ne
 	cmp	w0, #0
@@ -98,9 +88,8 @@ func0000000000000306:                   // @func0000000000000306
 	cset	w9, lt
 	and	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+
+func0000000000000181:
 	cmp	w2, #0
 	cset	w8, lt
 	cmp	w0, #0
@@ -108,4 +97,4 @@ func0000000000000181:                   // @func0000000000000181
 	cset	w9, eq
 	and	w0, w9, w8
 	ret
-                                        // -- End function
+

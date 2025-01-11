@@ -1,4 +1,4 @@
-func0000000000000123:                   # @func0000000000000123
+func0000000000000123:
 	srliw	a2, a2, 30
 	seqz	a2, a2
 	slli	a2, a2, 1
@@ -6,7 +6,8 @@ func0000000000000123:                   # @func0000000000000123
 	andi	a1, a1, 1
 	addw	a0, a0, a1
 	ret
-func00000000000001c3:                   # @func00000000000001c3
+
+func00000000000001c3:
 	sext.w	a2, a2
 	sltiu	a2, a2, 4
 	xori	a2, a2, 1
@@ -15,3 +16,4 @@ func00000000000001c3:                   # @func00000000000001c3
 	andi	a1, a1, 1
 	addw	a0, a0, a1
 	ret
+

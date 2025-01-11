@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	shlq	$6, %rdx
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -6,3 +6,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	setg	%al
 	andb	%cl, %al
 	retq
+

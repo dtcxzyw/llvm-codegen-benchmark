@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	4095                            # 0xfff
-func000000000000000a:                   # @func000000000000000a
+	.long	4095
+func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$16, %ymm2, %ymm0
@@ -10,9 +10,10 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	31                              # 0x1f
-func0000000000000001:                   # @func0000000000000001
+	.long	31
+func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$16, %ymm2, %ymm0
@@ -22,9 +23,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	8                               # 0x8
-func000000000000000b:                   # @func000000000000000b
+	.long	8
+func000000000000000b:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$28, %ymm2, %ymm0
@@ -34,9 +36,10 @@ func000000000000000b:                   # @func000000000000000b
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	63                              # 0x3f
-func0000000000000018:                   # @func0000000000000018
+	.long	63
+func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$16, %ymm2, %ymm0
@@ -46,56 +49,59 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.byte	1                               # 0x1
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	5                               # 0x5
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	9                               # 0x9
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	13                              # 0xd
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	17                              # 0x11
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	21                              # 0x15
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	25                              # 0x19
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	29                              # 0x1d
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-func000000000000000c:                   # @func000000000000000c
+	.byte	1
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	5
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	9
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	13
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	17
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	21
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	25
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	29
+	.byte	128
+	.byte	128
+	.byte	128
+func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpshufb	.LCPI4_0(%rip), %ymm2, %ymm0    # ymm0 = ymm2[1],zero,zero,zero,ymm2[5],zero,zero,zero,ymm2[9],zero,zero,zero,ymm2[13],zero,zero,zero,ymm2[17],zero,zero,zero,ymm2[21],zero,zero,zero,ymm2[25],zero,zero,zero,ymm2[29],zero,zero,zero
+	vpshufb	.LCPI4_0(%rip), %ymm2, %ymm0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$2, %ymm2, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendw	$170, %ymm2, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm2[1],ymm0[2],ymm2[3],ymm0[4],ymm2[5],ymm0[6],ymm2[7],ymm0[8],ymm2[9],ymm0[10],ymm2[11],ymm0[12],ymm2[13],ymm0[14],ymm2[15]
+	vpblendw	$170, %ymm2, %ymm0, %ymm0
 	vpcmpltud	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

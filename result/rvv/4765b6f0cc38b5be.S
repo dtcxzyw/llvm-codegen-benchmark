@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 1
 	lui	a0, 349525
@@ -10,7 +10,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 819
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 209715
@@ -22,7 +23,8 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, 1799
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 3
 	vand.vi	v10, v10, 7
@@ -31,7 +33,8 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 992
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 1
 	lui	a0, 17476
@@ -43,7 +46,8 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a0, a0, 771
 	vand.vx	v8, v8, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 12336
@@ -55,7 +59,8 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a0, a0, 7
 	vand.vx	v8, v8, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 771
@@ -67,7 +72,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 7
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 1
 	lui	a0, 2040
@@ -78,3 +84,4 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 255
 	vand.vx	v8, v8, a0
 	ret
+

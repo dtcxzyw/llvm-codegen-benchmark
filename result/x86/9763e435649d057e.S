@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	xorl	%eax, %eax
 	cmpl	$33, %esi
 	sete	%al
@@ -6,7 +6,8 @@ func0000000000000009:                   # @func0000000000000009
 	andl	$2, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	xorl	%ecx, %ecx
 	testl	%esi, %esi
 	setne	%cl
@@ -14,11 +15,13 @@ func0000000000000061:                   # @func0000000000000061
 	movzwl	%di, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+
+func0000000000000051:
 	xorl	%eax, %eax
-	cmpl	$65536, %esi                    # imm = 0x10000
+	cmpl	$65536, %esi
 	setge	%al
 	shrl	$2, %edi
-	andl	$65534, %edi                    # imm = 0xFFFE
+	andl	$65534, %edi
 	orl	%edi, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000084c:                   # @func000000000000084c
+func000000000000084c:
 	sarq	$4, %rdx
 	cmpq	%rdi, %rdx
 	setl	%cl
@@ -6,7 +6,8 @@ func000000000000084c:                   # @func000000000000084c
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000852:                   # @func0000000000000852
+
+func0000000000000852:
 	sarq	$3, %rdx
 	cmpq	%rdi, %rdx
 	setae	%cl
@@ -14,7 +15,8 @@ func0000000000000852:                   # @func0000000000000852
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000084a:                   # @func000000000000084a
+
+func000000000000084a:
 	sarq	$4, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%cl
@@ -22,7 +24,8 @@ func000000000000084a:                   # @func000000000000084a
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000842:                   # @func0000000000000842
+
+func0000000000000842:
 	sarq	$3, %rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -30,7 +33,8 @@ func0000000000000842:                   # @func0000000000000842
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000a18:                   # @func0000000000000a18
+
+func0000000000000a18:
 	sarq	$32, %rdx
 	cmpq	%rsi, %rdx
 	seta	%cl
@@ -38,3 +42,4 @@ func0000000000000a18:                   # @func0000000000000a18
 	setne	%al
 	orb	%cl, %al
 	retq
+

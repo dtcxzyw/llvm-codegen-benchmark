@@ -1,4 +1,4 @@
-func0000000000000694:                   # @func0000000000000694
+func0000000000000694:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 25
@@ -6,28 +6,32 @@ func0000000000000694:                   # @func0000000000000694
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmseq.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmseq.vi	v12, v10, -1
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000118:                   # @func0000000000000118
+
+func0000000000000118:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 272
@@ -36,21 +40,24 @@ func0000000000000118:                   # @func0000000000000118
 	vmsgtu.vi	v10, v8, 3
 	vmor.mm	v0, v10, v12
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmseq.vi	v12, v10, 0
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmseq.vi	v12, v10, 0
 	vmsgt.vi	v10, v8, -1
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 100
@@ -59,26 +66,30 @@ func0000000000000318:                   # @func0000000000000318
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
-func000000000000070c:                   # @func000000000000070c
+
+func000000000000070c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 16
@@ -86,21 +97,24 @@ func000000000000070c:                   # @func000000000000070c
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+
+func00000000000000d8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsle.vi	v12, v10, -1
 	vmsgtu.vi	v10, v8, 5
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v12, v10, 0
 	vmsleu.vi	v10, v8, -8
 	vmor.mm	v0, v10, v12
 	ret
-func000000000000050c:                   # @func000000000000050c
+
+func000000000000050c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 768
@@ -108,14 +122,16 @@ func000000000000050c:                   # @func000000000000050c
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000186:                   # @func0000000000000186
+
+func0000000000000186:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vmsne.vi	v12, v10, 0
 	vmsle.vi	v10, v8, 1
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000718:                   # @func0000000000000718
+
+func0000000000000718:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 2048
@@ -123,3 +139,4 @@ func0000000000000718:                   # @func0000000000000718
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
+

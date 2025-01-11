@@ -1,11 +1,12 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	andi	a0, a0, 255
 	or	a1, a1, a2
 	sext.w	a1, a1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000586:                   # @func0000000000000586
+
+func0000000000000586:
 	sext.b	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -13,7 +14,8 @@ func0000000000000586:                   # @func0000000000000586
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	andi	a0, a0, 255
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -22,7 +24,8 @@ func0000000000000581:                   # @func0000000000000581
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000706:                   # @func0000000000000706
+
+func0000000000000706:
 	sext.b	a0, a0
 	or	a1, a1, a2
 	srliw	a1, a1, 16
@@ -30,7 +33,8 @@ func0000000000000706:                   # @func0000000000000706
 	slti	a0, a0, -64
 	and	a0, a0, a1
 	ret
-func000000000000070a:                   # @func000000000000070a
+
+func000000000000070a:
 	sext.b	a0, a0
 	or	a1, a1, a2
 	lui	a2, 16
@@ -40,3 +44,4 @@ func000000000000070a:                   # @func000000000000070a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+

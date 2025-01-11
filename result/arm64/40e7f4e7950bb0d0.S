@@ -1,5 +1,4 @@
-func0000000000000318:                   // @func0000000000000318
-// %bb.0:                               // %entry
+func0000000000000318:
 	cmn	x2, #1
 	cset	w8, ne
 	cmp	x1, #0
@@ -7,10 +6,9 @@ func0000000000000318:                   // @func0000000000000318
 	cset	w9, ne
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
-	mov	x8, #4                          // =0x4
+
+func0000000000000042:
+	mov	x8, #4
 	cmp	x2, #1
 	movk	x8, #32768, lsl #48
 	cset	w9, eq
@@ -19,10 +17,9 @@ func0000000000000042:                   // @func0000000000000042
 	cset	w9, eq
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000202:                   // @func0000000000000202
-// %bb.0:                               // %entry
-	mov	x8, #4                          // =0x4
+
+func0000000000000202:
+	mov	x8, #4
 	cmp	x2, #3
 	movk	x8, #32768, lsl #48
 	cset	w9, hi
@@ -31,21 +28,19 @@ func0000000000000202:                   // @func0000000000000202
 	cset	w9, eq
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000058:                   // @func0000000000000058
-// %bb.0:                               // %entry
-	mov	w8, #536870911                  // =0x1fffffff
+
+func0000000000000058:
+	mov	w8, #536870911
 	cmp	x2, x8
-	mov	w8, #-1610612737                // =0x9fffffff
+	mov	w8, #-1610612737
 	cset	w9, eq
 	cmp	x1, x8
 	orr	w8, w0, w9
 	cset	w9, ne
 	and	w0, w8, w9
 	ret
-                                        // -- End function
-func0000000000000302:                   // @func0000000000000302
-// %bb.0:                               // %entry
+
+func0000000000000302:
 	cmp	x2, #0
 	cset	w8, ne
 	cmp	x1, #0
@@ -53,4 +48,4 @@ func0000000000000302:                   // @func0000000000000302
 	cset	w9, eq
 	and	w0, w8, w9
 	ret
-                                        // -- End function
+

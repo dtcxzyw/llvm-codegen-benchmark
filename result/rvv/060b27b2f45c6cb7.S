@@ -1,4 +1,4 @@
-func0000000000000010:                   # @func0000000000000010
+func0000000000000010:
 	lui	a0, 6
 	addi	a0, a0, 1639
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -12,7 +12,8 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwadd.wv	v8, v8, v12
 	ret
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	lui	a0, 6
 	addi	a0, a0, 1639
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -26,3 +27,4 @@ func0000000000000015:                   # @func0000000000000015
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwadd.wv	v8, v8, v12
 	ret
+

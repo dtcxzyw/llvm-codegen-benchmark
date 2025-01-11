@@ -1,18 +1,20 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	fneg.d	fa5, fa1
 	fdiv.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	fneg.d	fa5, fa1
 	fdiv.d	fa5, fa5, fa0
 	fli.d	fa4, 1.0
 	flt.d	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	fneg.d	fa5, fa1
 	fdiv.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero
@@ -20,3 +22,4 @@ func000000000000000e:                   # @func000000000000000e
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+

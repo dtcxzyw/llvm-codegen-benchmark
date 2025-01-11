@@ -1,6 +1,5 @@
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
-	mov	w8, #-11904                     // =0xffffd180
+func0000000000000108:
+	mov	w8, #-11904
 	add	w8, w2, w8
 	lsr	w8, w8, #4
 	cmp	w8, #1893
@@ -10,10 +9,9 @@ func0000000000000108:                   // @func0000000000000108
 	cmp	w8, #2793
 	csinc	w0, w9, wzr, hs
 	ret
-                                        // -- End function
-func0000000000000908:                   // @func0000000000000908
-// %bb.0:                               // %entry
-	mov	w8, #-11904                     // =0xffffd180
+
+func0000000000000908:
+	mov	w8, #-11904
 	add	w8, w2, w8
 	lsr	w8, w8, #4
 	cmp	w8, #1893
@@ -23,9 +21,8 @@ func0000000000000908:                   // @func0000000000000908
 	cmp	w8, #2793
 	csinc	w0, w9, wzr, hs
 	ret
-                                        // -- End function
-func0000000000000102:                   // @func0000000000000102
-// %bb.0:                               // %entry
+
+func0000000000000102:
 	sub	w8, w2, #1919
 	cmp	w8, #16
 	cset	w8, lo
@@ -33,9 +30,8 @@ func0000000000000102:                   // @func0000000000000102
 	and	w8, w1, w8
 	csinc	w0, w8, wzr, ne
 	ret
-                                        // -- End function
-func0000000000000118:                   // @func0000000000000118
-// %bb.0:                               // %entry
+
+func0000000000000118:
 	sub	w8, w2, #27
 	cmn	w8, #2
 	cset	w8, lo
@@ -43,9 +39,8 @@ func0000000000000118:                   // @func0000000000000118
 	and	w8, w0, w8
 	csinc	w0, w8, wzr, eq
 	ret
-                                        // -- End function
-func0000000000000918:                   // @func0000000000000918
-// %bb.0:                               // %entry
+
+func0000000000000918:
 	sub	w8, w2, #14
 	cmn	w8, #4
 	cset	w8, lo
@@ -53,4 +48,4 @@ func0000000000000918:                   // @func0000000000000918
 	and	w8, w0, w8
 	csinc	w0, w8, wzr, eq
 	ret
-                                        // -- End function
+

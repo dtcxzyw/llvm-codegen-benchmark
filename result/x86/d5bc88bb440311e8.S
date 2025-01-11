@@ -1,27 +1,30 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000000e4:
 	subq	%rdx, %rsi
 	sarq	$2, %rsi
 	subq	%rsi, %rdi
-	movabsq	$2305843009213693951, %rax      # imm = 0x1FFFFFFFFFFFFFFF
+	movabsq	$2305843009213693951, %rax
 	xorq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	subq	%rdx, %rsi
 	sarq	$4, %rsi
 	subq	%rsi, %rdi
-	movabsq	$576460752303423487, %rax       # imm = 0x7FFFFFFFFFFFFFF
+	movabsq	$576460752303423487, %rax
 	xorq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	subq	%rdx, %rsi
 	sarq	$2, %rsi
 	subq	%rsi, %rdi
-	movabsq	$2305843009213693951, %rax      # imm = 0x1FFFFFFFFFFFFFFF
+	movabsq	$2305843009213693951, %rax
 	xorq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+

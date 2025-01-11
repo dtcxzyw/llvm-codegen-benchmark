@@ -1,6 +1,6 @@
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000000e9:
 	movzwl	%di, %eax
-	imull	$9363, %eax, %eax               # imm = 0x2493
+	imull	$9363, %eax, %eax
 	shrl	$16, %eax
 	movl	%edi, %ecx
 	subl	%eax, %ecx
@@ -17,3 +17,4 @@ func00000000000000e9:                   # @func00000000000000e9
 	cmovael	%edx, %eax
 	movzwl	%ax, %eax
 	retq
+

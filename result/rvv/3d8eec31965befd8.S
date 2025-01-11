@@ -1,4 +1,4 @@
-func0000000000002a84:                   # @func0000000000002a84
+func0000000000002a84:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -8,7 +8,8 @@ func0000000000002a84:                   # @func0000000000002a84
 	lui	a0, 4096
 	vmsltu.vx	v0, v10, a0
 	ret
-func0000000000002884:                   # @func0000000000002884
+
+func0000000000002884:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -18,7 +19,8 @@ func0000000000002884:                   # @func0000000000002884
 	lui	a0, 4096
 	vmsltu.vx	v0, v10, a0
 	ret
-func0000000000003a84:                   # @func0000000000003a84
+
+func0000000000003a84:
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -28,3 +30,4 @@ func0000000000003a84:                   # @func0000000000003a84
 	lui	a0, 4096
 	vmsltu.vx	v0, v10, a0
 	ret
+

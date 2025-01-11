@@ -1,114 +1,122 @@
-func000000000000003e:                   # @func000000000000003e
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+func000000000000003e:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$21, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.short	0                               # 0x0
-	.short	16                              # 0x10
-	.short	1                               # 0x1
-	.short	17                              # 0x11
-	.short	2                               # 0x2
-	.short	18                              # 0x12
-	.short	3                               # 0x3
-	.short	19                              # 0x13
-	.short	4                               # 0x4
-	.short	20                              # 0x14
-	.short	5                               # 0x5
-	.short	21                              # 0x15
-	.short	6                               # 0x6
-	.short	22                              # 0x16
-	.short	7                               # 0x7
-	.short	23                              # 0x17
+	.short	0
+	.short	16
+	.short	1
+	.short	17
+	.short	2
+	.short	18
+	.short	3
+	.short	19
+	.short	4
+	.short	20
+	.short	5
+	.short	21
+	.short	6
+	.short	22
+	.short	7
+	.short	23
 .LCPI1_1:
-	.byte	0                               # 0x0
-	.byte	16                              # 0x10
-	.byte	1                               # 0x1
-	.byte	17                              # 0x11
-	.byte	2                               # 0x2
-	.byte	18                              # 0x12
-	.byte	3                               # 0x3
-	.byte	19                              # 0x13
-	.byte	4                               # 0x4
-	.byte	20                              # 0x14
-	.byte	5                               # 0x5
-	.byte	21                              # 0x15
-	.byte	6                               # 0x6
-	.byte	22                              # 0x16
-	.byte	7                               # 0x7
-	.byte	23                              # 0x17
-func000000000000002f:                   # @func000000000000002f
-	vpmovsxbw	.LCPI1_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
+	.byte	0
+	.byte	16
+	.byte	1
+	.byte	17
+	.byte	2
+	.byte	18
+	.byte	3
+	.byte	19
+	.byte	4
+	.byte	20
+	.byte	5
+	.byte	21
+	.byte	6
+	.byte	22
+	.byte	7
+	.byte	23
+func000000000000002f:
+	vpmovsxbw	.LCPI1_1(%rip), %ymm3
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
 	retq
+
 .LCPI2_0:
-	.short	0                               # 0x0
-	.short	16                              # 0x10
-	.short	1                               # 0x1
-	.short	17                              # 0x11
-	.short	2                               # 0x2
-	.short	18                              # 0x12
-	.short	3                               # 0x3
-	.short	19                              # 0x13
-	.short	4                               # 0x4
-	.short	20                              # 0x14
-	.short	5                               # 0x5
-	.short	21                              # 0x15
-	.short	6                               # 0x6
-	.short	22                              # 0x16
-	.short	7                               # 0x7
-	.short	23                              # 0x17
+	.short	0
+	.short	16
+	.short	1
+	.short	17
+	.short	2
+	.short	18
+	.short	3
+	.short	19
+	.short	4
+	.short	20
+	.short	5
+	.short	21
+	.short	6
+	.short	22
+	.short	7
+	.short	23
 .LCPI2_1:
-	.byte	0                               # 0x0
-	.byte	16                              # 0x10
-	.byte	1                               # 0x1
-	.byte	17                              # 0x11
-	.byte	2                               # 0x2
-	.byte	18                              # 0x12
-	.byte	3                               # 0x3
-	.byte	19                              # 0x13
-	.byte	4                               # 0x4
-	.byte	20                              # 0x14
-	.byte	5                               # 0x5
-	.byte	21                              # 0x15
-	.byte	6                               # 0x6
-	.byte	22                              # 0x16
-	.byte	7                               # 0x7
-	.byte	23                              # 0x17
-func000000000000000a:                   # @func000000000000000a
-	vpmovsxbw	.LCPI2_1(%rip), %ymm3   # ymm3 = [0,16,1,17,2,18,3,19,4,20,5,21,6,22,7,23]
+	.byte	0
+	.byte	16
+	.byte	1
+	.byte	17
+	.byte	2
+	.byte	18
+	.byte	3
+	.byte	19
+	.byte	4
+	.byte	20
+	.byte	5
+	.byte	21
+	.byte	6
+	.byte	22
+	.byte	7
+	.byte	23
+func000000000000000a:
+	vpmovsxbw	.LCPI2_1(%rip), %ymm3
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm3, %ymm0, %ymm0
 	retq
-func000000000000003c:                   # @func000000000000003c
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+
+func000000000000003c:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$8, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
-func000000000000003d:                   # @func000000000000003d
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+
+func000000000000003d:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$8, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
-func000000000000003a:                   # @func000000000000003a
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+
+func000000000000003a:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$24, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
-func000000000000003f:                   # @func000000000000003f
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+
+func000000000000003f:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$12, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
-func0000000000000003:                   # @func0000000000000003
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+
+func0000000000000003:
+	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$19, %ymm2, %ymm2
-	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0
 	retq
+

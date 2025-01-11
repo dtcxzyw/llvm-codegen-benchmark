@@ -1,4 +1,4 @@
-func0000000000000c64:                   # @func0000000000000c64
+func0000000000000c64:
 	addq	$32, %rsi
 	shrq	$6, %rsi
 	lzcntq	%rsi, %rax
@@ -7,7 +7,8 @@ func0000000000000c64:                   # @func0000000000000c64
 	cmpq	%rdi, %rcx
 	setb	%al
 	retq
-func0000000000000c68:                   # @func0000000000000c68
+
+func0000000000000c68:
 	addq	$32, %rsi
 	shrq	$6, %rsi
 	lzcntq	%rsi, %rax
@@ -16,3 +17,4 @@ func0000000000000c68:                   # @func0000000000000c68
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
+

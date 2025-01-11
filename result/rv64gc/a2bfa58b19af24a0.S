@@ -1,4 +1,4 @@
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000003e1:
 	sext.w	a3, a1
 	li	a2, 1
 	bgeu	a2, a3, .LBB0_2
@@ -35,6 +35,7 @@ func00000000000003e1:                   # @func00000000000003e1
 	srliw	a1, a1, 24
 	li	a2, 32
 	sub	a2, a2, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	addw	a0, a0, a2
 	ret
+

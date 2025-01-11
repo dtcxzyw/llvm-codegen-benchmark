@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func0000000000000061:
 	movb	$61, %al
 	bzhiq	%rax, %rsi, %rax
 	incq	%rax
@@ -6,14 +6,16 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+
+func0000000000000021:
+	andl	$2147483647, %esi
 	decq	%rsi
 	andq	$-16, %rsi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
 	incq	%rax
@@ -21,3 +23,4 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

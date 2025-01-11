@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.long	6                               # 0x6
+	.long	6
 .LCPI0_1:
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-	.short	340                             # 0x154
-func0000000000000318:                   # @func0000000000000318
+	.short	340
+	.short	340
+	.short	340
+	.short	340
+	.short	340
+	.short	340
+	.short	340
+	.short	340
+func0000000000000318:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
@@ -19,3 +19,4 @@ func0000000000000318:                   # @func0000000000000318
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

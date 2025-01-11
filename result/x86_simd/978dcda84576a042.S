@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	3                               # 0x3
+	.long	3
 .LCPI0_1:
-	.long	4294963200                      # 0xfffff000
-func0000000000000009:                   # @func0000000000000009
+	.long	4294963200
+func0000000000000009:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -55,3 +55,4 @@ func0000000000000009:                   # @func0000000000000009
 	vpslld	$10, %ymm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
+

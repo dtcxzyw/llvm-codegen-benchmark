@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	decl	%esi
 	cmpl	$255, %esi
 	movl	$255, %eax
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	addl	$-5, %esi
 	cmpl	$2, %esi
 	movl	$2, %eax
@@ -14,7 +15,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+
+func00000000000000c8:
 	cmpl	$10, %esi
 	movl	$10, %eax
 	cmovbl	%esi, %eax
@@ -22,14 +24,16 @@ func00000000000000c8:                   # @func00000000000000c8
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	cmpl	$10, %esi
 	movl	$10, %eax
 	cmovbl	%esi, %eax
 	cmpl	%eax, %edi
 	setbe	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addl	$10, %esi
 	cmpl	$100, %esi
 	movl	$100, %eax
@@ -37,15 +41,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	incl	%esi
-	cmpl	$2048, %esi                     # imm = 0x800
-	movl	$2048, %eax                     # imm = 0x800
+	cmpl	$2048, %esi
+	movl	$2048, %eax
 	cmovbl	%esi, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	cmpl	$198, %esi
 	movl	$198, %eax
 	cmovbl	%esi, %eax
@@ -53,7 +59,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	cmpl	$198, %esi
 	movl	$198, %eax
 	cmovbl	%esi, %eax
@@ -61,3 +68,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+

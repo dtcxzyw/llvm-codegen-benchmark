@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	lui	a0, 1
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -8,7 +8,8 @@ func000000000000002c:                   # @func000000000000002c
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -18,7 +19,8 @@ func000000000000010c:                   # @func000000000000010c
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func000000000000012c:                   # @func000000000000012c
+
+func000000000000012c:
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,3 +30,4 @@ func000000000000012c:                   # @func000000000000012c
 	vmsne.vi	v8, v8, -1
 	vmand.mm	v0, v8, v9
 	ret
+

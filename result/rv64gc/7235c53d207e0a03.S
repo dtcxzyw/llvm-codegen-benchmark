@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	slli	a2, a2, 32
 	lui	a3, 423516
 	srli	a2, a2, 32
@@ -10,7 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000541:                   # @func0000000000000541
+
+func0000000000000541:
 	slli	a2, a2, 32
 	srli	a3, a2, 32
 	add	a1, a1, a2
@@ -18,7 +19,8 @@ func0000000000000541:                   # @func0000000000000541
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000007e1:                   # @func00000000000007e1
+
+func00000000000007e1:
 	li	a3, 5
 	slli	a3, a3, 33
 	slli	a2, a2, 32
@@ -27,7 +29,8 @@ func00000000000007e1:                   # @func00000000000007e1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000aaa:                   # @func0000000000000aaa
+
+func0000000000000aaa:
 	sext.w	a2, a2
 	lui	a3, 1033928
 	addiw	a3, a3, -1792
@@ -37,3 +40,4 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
+

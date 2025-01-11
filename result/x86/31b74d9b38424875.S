@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	testl	%edx, %edx
 	setne	%al
 	orb	%dil, %sil
@@ -7,3 +7,4 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	shll	$3, %eax
 	retq
+

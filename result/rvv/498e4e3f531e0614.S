@@ -1,4 +1,4 @@
-func000000000000005c:                   # @func000000000000005c
+func000000000000005c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	lui	a0, 1047552
@@ -7,7 +7,8 @@ func000000000000005c:                   # @func000000000000005c
 	vsll.vi	v10, v10, 12
 	vor.vv	v8, v8, v10
 	ret
-func00000000000000fe:                   # @func00000000000000fe
+
+func00000000000000fe:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 10
 	lui	a0, 4
@@ -16,7 +17,8 @@ func00000000000000fe:                   # @func00000000000000fe
 	vsll.vi	v10, v10, 15
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	li	a0, 254
@@ -25,7 +27,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsll.vi	v10, v10, 4
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	lui	a0, 8192
@@ -34,7 +37,8 @@ func0000000000000006:                   # @func0000000000000006
 	vsll.vi	v8, v8, 8
 	vor.vv	v8, v8, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	lui	a0, 16
@@ -44,7 +48,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsll.vi	v10, v10, 16
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	lui	a0, 592
@@ -53,7 +58,8 @@ func0000000000000054:                   # @func0000000000000054
 	vsll.vi	v10, v10, 8
 	vor.vv	v8, v8, v10
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	lui	a0, 4016
@@ -62,3 +68,4 @@ func00000000000000f4:                   # @func00000000000000f4
 	vsll.vi	v10, v10, 8
 	vor.vv	v8, v8, v10
 	ret
+

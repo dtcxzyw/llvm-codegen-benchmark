@@ -1,5 +1,4 @@
-func0000000000000204:                   // @func0000000000000204
-// %bb.0:                               // %entry
+func0000000000000204:
 	lsr	x8, x2, #3
 	sub	w9, w1, #1
 	cmp	w9, w8
@@ -7,9 +6,8 @@ func0000000000000204:                   // @func0000000000000204
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000261:                   // @func0000000000000261
-// %bb.0:                               // %entry
+
+func0000000000000261:
 	lsr	x8, x2, #3
 	add	w9, w1, #5
 	cmp	w9, w8
@@ -17,9 +15,8 @@ func0000000000000261:                   // @func0000000000000261
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000121:                   // @func0000000000000121
-// %bb.0:                               // %entry
+
+func0000000000000121:
 	lsr	x8, x2, #32
 	sub	w9, w1, #1
 	cmp	w9, w8
@@ -27,9 +24,8 @@ func0000000000000121:                   // @func0000000000000121
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	lsr	x8, x2, #8
 	sub	w9, w1, #1
 	cmp	w9, w8
@@ -37,9 +33,8 @@ func0000000000000004:                   // @func0000000000000004
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000241:                   // @func0000000000000241
-// %bb.0:                               // %entry
+
+func0000000000000241:
 	lsr	x8, x2, #3
 	add	w9, w1, #1
 	cmp	w9, w8
@@ -47,9 +42,8 @@ func0000000000000241:                   // @func0000000000000241
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000221:                   // @func0000000000000221
-// %bb.0:                               // %entry
+
+func0000000000000221:
 	lsr	x8, x2, #1
 	add	w9, w1, #1
 	cmp	w9, w8
@@ -57,9 +51,8 @@ func0000000000000221:                   // @func0000000000000221
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000161:                   // @func0000000000000161
-// %bb.0:                               // %entry
+
+func0000000000000161:
 	lsr	x8, x2, #32
 	add	w9, w1, #1
 	cmp	w9, w8
@@ -67,4 +60,4 @@ func0000000000000161:                   // @func0000000000000161
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

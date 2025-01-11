@@ -1,4 +1,4 @@
-func0000000000000068:                   # @func0000000000000068
+func0000000000000068:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 5
@@ -6,7 +6,8 @@ func0000000000000068:                   # @func0000000000000068
 	srai	a0, a0, 32
 	sltu	a0, a1, a0
 	ret
-func0000000000000064:                   # @func0000000000000064
+
+func0000000000000064:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 5
@@ -14,7 +15,8 @@ func0000000000000064:                   # @func0000000000000064
 	srai	a0, a0, 32
 	sltu	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 2
@@ -22,7 +24,8 @@ func0000000000000048:                   # @func0000000000000048
 	srai	a0, a0, 32
 	sltu	a0, a1, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	sub	a1, a1, a2
 	bseti	a2, zero, 32
 	srai	a1, a1, 2
@@ -30,3 +33,4 @@ func0000000000000044:                   # @func0000000000000044
 	srai	a0, a0, 32
 	sltu	a0, a0, a1
 	ret
+

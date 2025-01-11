@@ -1,20 +1,24 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	movq	%rsi, %rax
-	andl	$32767, %eax                    # imm = 0x7FFF
+	andl	$32767, %eax
 	orq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movabsq	$10737418240, %rax              # imm = 0x280000000
+
+func0000000000000002:
+	movabsq	$10737418240, %rax
 	andq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movabsq	$175921860444160, %rax          # imm = 0xA00000000000
+
+func0000000000000000:
+	movabsq	$175921860444160, %rax
 	andq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$34359803904, %rax              # imm = 0x800010000
+
+func0000000000000001:
+	movabsq	$34359803904, %rax
 	andq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
+

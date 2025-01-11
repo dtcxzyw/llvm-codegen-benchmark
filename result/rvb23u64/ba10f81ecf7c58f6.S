@@ -1,14 +1,16 @@
-func0000000000000146:                   # @func0000000000000146
+func0000000000000146:
 	sub	a1, a0, a1
 	sgtz	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	max	a1, a1, zero
 	slt	a0, a1, a0
 	ret
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	sub	a1, a0, a1
 	addi	a0, a0, -2
 	slti	a1, a1, 0
@@ -16,8 +18,10 @@ func000000000000014c:                   # @func000000000000014c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000546:                   # @func0000000000000546
+
+func0000000000000546:
 	slt	a1, a1, a0
 	slti	a0, a0, 1
 	and	a0, a0, a1
 	ret
+

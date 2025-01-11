@@ -1,4 +1,4 @@
-func0000000000000631:                   # @func0000000000000631
+func0000000000000631:
 	movl	%edi, %eax
 	testl	%edi, %edi
 	setne	%cl
@@ -8,7 +8,8 @@ func0000000000000631:                   # @func0000000000000631
 	movzbl	%dl, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000529:                   # @func0000000000000529
+
+func0000000000000529:
 	movl	%edi, %eax
 	testl	%edi, %edi
 	setg	%cl
@@ -18,17 +19,19 @@ func0000000000000529:                   # @func0000000000000529
 	movzbl	%dl, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000610:                   # @func0000000000000610
+
+func0000000000000610:
 	movl	%edi, %eax
 	testl	%edi, %edi
 	setne	%cl
-	cmpl	$536870912, %esi                # imm = 0x20000000
+	cmpl	$536870912, %esi
 	setb	%dl
 	andb	%cl, %dl
 	movzbl	%dl, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000619:                   # @func0000000000000619
+
+func0000000000000619:
 	movl	%edi, %eax
 	testl	%edi, %edi
 	setne	%cl
@@ -38,3 +41,4 @@ func0000000000000619:                   # @func0000000000000619
 	movzbl	%dl, %ecx
 	subl	%ecx, %eax
 	retq
+

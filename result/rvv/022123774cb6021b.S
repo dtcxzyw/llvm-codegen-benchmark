@@ -1,4 +1,4 @@
-func00000000000001ef:                   # @func00000000000001ef
+func00000000000001ef:
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
@@ -10,7 +10,8 @@ func00000000000001ef:                   # @func00000000000001ef
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	li	a0, 5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
@@ -21,7 +22,8 @@ func0000000000000070:                   # @func0000000000000070
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
 	ret
-func00000000000000f5:                   # @func00000000000000f5
+
+func00000000000000f5:
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
@@ -33,3 +35,4 @@ func00000000000000f5:                   # @func00000000000000f5
 	vwaddu.wv	v10, v10, v9
 	vmv2r.v	v8, v10
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000105:                   # @func0000000000000105
+func0000000000000105:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	seta	%cl
@@ -6,7 +6,8 @@ func0000000000000105:                   # @func0000000000000105
 	setbe	%al
 	andb	%cl, %al
 	retq
-func000000000000082c:                   # @func000000000000082c
+
+func000000000000082c:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setne	%cl
@@ -14,7 +15,8 @@ func000000000000082c:                   # @func000000000000082c
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000c2c:                   # @func0000000000000c2c
+
+func0000000000000c2c:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setne	%cl
@@ -22,7 +24,8 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000d24:                   # @func0000000000000d24
+
+func0000000000000d24:
 	shlq	$12, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
@@ -31,7 +34,8 @@ func0000000000000d24:                   # @func0000000000000d24
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000928:                   # @func0000000000000928
+
+func0000000000000928:
 	addq	%rdi, %rdx
 	cmpq	%rdx, %rsi
 	setae	%cl
@@ -39,7 +43,8 @@ func0000000000000928:                   # @func0000000000000928
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+
+func0000000000000089:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -47,7 +52,8 @@ func0000000000000089:                   # @func0000000000000089
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000ca9:                   # @func0000000000000ca9
+
+func0000000000000ca9:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -55,7 +61,8 @@ func0000000000000ca9:                   # @func0000000000000ca9
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000c89:                   # @func0000000000000c89
+
+func0000000000000c89:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -63,7 +70,8 @@ func0000000000000c89:                   # @func0000000000000c89
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000889:                   # @func0000000000000889
+
+func0000000000000889:
 	leaq	(%rdx,%rdx,2), %rax
 	shlq	$4, %rax
 	addq	%rsi, %rax
@@ -73,7 +81,8 @@ func0000000000000889:                   # @func0000000000000889
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000888:                   # @func0000000000000888
+
+func0000000000000888:
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -81,7 +90,8 @@ func0000000000000888:                   # @func0000000000000888
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000885:                   # @func0000000000000885
+
+func0000000000000885:
 	addq	%rdi, %rdx
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -89,3 +99,4 @@ func0000000000000885:                   # @func0000000000000885
 	setbe	%al
 	andb	%cl, %al
 	retq
+

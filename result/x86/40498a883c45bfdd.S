@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
 	setae	%cl
@@ -6,3 +6,4 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	orb	%cl, %al
 	retq
+

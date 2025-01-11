@@ -1,25 +1,26 @@
 .LCPI0_0:
-	.long	4294967294                      # 0xfffffffe
+	.long	4294967294
 .LCPI0_1:
-	.long	0                               # 0x0
-	.long	8                               # 0x8
-	.long	1                               # 0x1
-	.long	9                               # 0x9
-	.long	2                               # 0x2
-	.long	10                              # 0xa
-	.long	3                               # 0x3
-	.long	11                              # 0xb
+	.long	0
+	.long	8
+	.long	1
+	.long	9
+	.long	2
+	.long	10
+	.long	3
+	.long	11
 .LCPI0_2:
-	.byte	0                               # 0x0
-	.byte	8                               # 0x8
-	.byte	1                               # 0x1
-	.byte	9                               # 0x9
-	.byte	2                               # 0x2
-	.byte	10                              # 0xa
-	.byte	3                               # 0x3
-	.byte	11                              # 0xb
-func0000000000000005:                   # @func0000000000000005
+	.byte	0
+	.byte	8
+	.byte	1
+	.byte	9
+	.byte	2
+	.byte	10
+	.byte	3
+	.byte	11
+func0000000000000005:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm2
-	vpmovsxbd	.LCPI0_2(%rip), %ymm0   # ymm0 = [0,8,1,9,2,10,3,11]
+	vpmovsxbd	.LCPI0_2(%rip), %ymm0
 	vpermi2d	%ymm1, %ymm2, %ymm0
 	retq
+

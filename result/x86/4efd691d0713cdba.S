@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	leaq	4(%rdi), %rax
 	cmpq	%rsi, %rax
 	sete	%cl
@@ -6,7 +6,8 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000150:                   # @func0000000000000150
+
+func0000000000000150:
 	leaq	16384(%rdi), %rax
 	cmpq	%rsi, %rax
 	setbe	%cl
@@ -14,3 +15,4 @@ func0000000000000150:                   # @func0000000000000150
 	seta	%al
 	orb	%cl, %al
 	retq
+

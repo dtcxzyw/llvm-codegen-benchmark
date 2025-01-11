@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 30
 	add	a2, a2, a0
@@ -6,9 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	subw	a2, a0, a2
 	beqz	a2, .LBB0_2
 	subw	a0, a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 30
 	add	a2, a2, a0
@@ -16,5 +17,6 @@ func0000000000000021:                   # @func0000000000000021
 	subw	a2, a0, a2
 	beqz	a2, .LBB1_2
 	subw	a0, a1, a2
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+

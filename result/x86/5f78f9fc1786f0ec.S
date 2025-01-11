@@ -1,5 +1,5 @@
-func0000000000000021:                   # @func0000000000000021
-	movabsq	$34370224148, %rax              # imm = 0x800A00014
+func0000000000000021:
+	movabsq	$34370224148, %rax
 	testq	%rax, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -7,7 +7,8 @@ func0000000000000021:                   # @func0000000000000021
 	orb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	testb	$1, %dl
 	sete	%cl
 	cmpl	$1, %esi
@@ -15,3 +16,4 @@ func0000000000000181:                   # @func0000000000000181
 	orb	%dil, %al
 	andb	%cl, %al
 	retq
+

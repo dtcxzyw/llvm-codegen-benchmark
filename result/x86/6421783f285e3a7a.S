@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	0x80000000                      # float -0
-func0000000000000004:                   # @func0000000000000004
+	.long	0x80000000
+func0000000000000004:
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm2, %xmm3
 	vxorps	%xmm4, %xmm4, %xmm4
 	vcmpltss	%xmm1, %xmm4, %k1
@@ -8,3 +8,4 @@ func0000000000000004:                   # @func0000000000000004
 	vaddss	%xmm3, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
 	retq
+

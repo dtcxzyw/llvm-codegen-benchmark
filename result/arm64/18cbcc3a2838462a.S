@@ -1,13 +1,11 @@
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+func0000000000000018:
 	and	x8, x0, #0xf000
-	cmp	x8, #7, lsl #12                 // =28672
+	cmp	x8, #7, lsl #12
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000118:                   // @func0000000000000118
-// %bb.0:                               // %entry
+
+func0000000000000118:
 	tst	x0, #0xff00
 	cset	w0, ne
 	ret
-                                        // -- End function
+

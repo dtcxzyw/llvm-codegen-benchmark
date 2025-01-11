@@ -1,4 +1,4 @@
-func0000000000002182:                   # @func0000000000002182
+func0000000000002182:
 	shrq	$5, %rsi
 	cmpl	%esi, %edi
 	setl	%cl
@@ -6,7 +6,8 @@ func0000000000002182:                   # @func0000000000002182
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000002102:                   # @func0000000000002102
+
+func0000000000002102:
 	shrq	$5, %rsi
 	cmpl	%esi, %edi
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000002102:                   # @func0000000000002102
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi
 	setne	%cl
@@ -22,7 +24,8 @@ func000000000000030c:                   # @func000000000000030c
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000002282:                   # @func0000000000002282
+
+func0000000000002282:
 	shrq	$4, %rsi
 	cmpl	%esi, %edi
 	setg	%cl
@@ -30,7 +33,8 @@ func0000000000002282:                   # @func0000000000002282
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000022cc:                   # @func00000000000022cc
+
+func00000000000022cc:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi
 	setge	%cl
@@ -38,7 +42,8 @@ func00000000000022cc:                   # @func00000000000022cc
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000002042:                   # @func0000000000002042
+
+func0000000000002042:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi
 	sete	%cl
@@ -46,3 +51,4 @@ func0000000000002042:                   # @func0000000000002042
 	sete	%al
 	orb	%cl, %al
 	retq
+

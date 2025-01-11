@@ -1,6 +1,5 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	x8, #281474972516352            // =0xffffffc00000
+func0000000000000002:
+	mov	x8, #281474972516352
 	movk	x8, #16863, lsl #48
 	fmov	d3, x8
 	fmadd	d1, d1, d3, d2
@@ -8,13 +7,12 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
-                                        // -- End function
+
 .LCPI1_0:
-	.xword	0x3fc71a9fbe76c8b4              // double 0.18049999999999999
+	.xword	0x3fc71a9fbe76c8b4
 .LCPI1_1:
-	.xword	0x4057c3020c49ba5e              // double 95.046999999999997
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+	.xword	0x4057c3020c49ba5e
+func0000000000000004:
 	adrp	x8, .LCPI1_0
 	ldr	d3, [x8, :lo12:.LCPI1_0]
 	adrp	x8, .LCPI1_1
@@ -24,4 +22,4 @@ func0000000000000004:                   // @func0000000000000004
 	fcmp	d1, d0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

@@ -1,5 +1,5 @@
-func0000000000000081:                   # @func0000000000000081
-	movabsq	$-9223372036854775807, %rax     # imm = 0x8000000000000001
+func0000000000000081:
+	movabsq	$-9223372036854775807, %rax
 	leaq	1(%rax), %rcx
 	cmpq	%rcx, %rdi
 	setg	%cl
@@ -7,9 +7,11 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000094:                   # @func0000000000000094
+
+func0000000000000094:
 	shrq	%rdi
-	movabsq	$4611686018427387905, %rax      # imm = 0x4000000000000001
+	movabsq	$4611686018427387905, %rax
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
+

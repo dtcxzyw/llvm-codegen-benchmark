@@ -1,4 +1,4 @@
-func000000000000098a:                   # @func000000000000098a
+func000000000000098a:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	sext.w	a4, a1
@@ -11,7 +11,8 @@ func000000000000098a:                   # @func000000000000098a
 	max	a0, a0, zero
 	slt	a0, a1, a0
 	ret
-func0000000000000a8a:                   # @func0000000000000a8a
+
+func0000000000000a8a:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	sext.w	a4, a1
@@ -24,7 +25,8 @@ func0000000000000a8a:                   # @func0000000000000a8a
 	max	a0, a0, zero
 	slt	a0, a1, a0
 	ret
-func0000000000000d0a:                   # @func0000000000000d0a
+
+func0000000000000d0a:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	sext.w	a4, a1
@@ -37,3 +39,4 @@ func0000000000000d0a:                   # @func0000000000000d0a
 	max	a0, a0, zero
 	slt	a0, a1, a0
 	ret
+

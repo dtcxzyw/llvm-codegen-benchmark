@@ -1,5 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	lsl	x8, x5, #32
 	mov	w9, w2
 	umulh	x10, x8, x9
@@ -9,4 +8,4 @@ func000000000000000a:                   // @func000000000000000a
 	adds	x0, x8, x0
 	adc	x1, x9, x1
 	ret
-                                        // -- End function
+

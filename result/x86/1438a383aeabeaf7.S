@@ -1,4 +1,4 @@
-func00000000000000cb:                   # @func00000000000000cb
+func00000000000000cb:
 	addl	$-2, %edx
 	cmpl	%edx, %edi
 	setl	%cl
@@ -6,17 +6,19 @@ func00000000000000cb:                   # @func00000000000000cb
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	incl	%edx
 	cmpl	%edx, %edi
 	setb	%al
 	cmpl	%esi, %edi
 	jbe	.LBB1_1
 	retq
-.LBB1_1:                                # %select.false
+.LBB1_1:
 	xorl	%eax, %eax
 	retq
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	addl	$-4, %edx
 	cmpl	%edx, %edi
 	setl	%cl
@@ -24,7 +26,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	decl	%edx
 	cmpl	%edx, %edi
 	setb	%cl
@@ -32,3 +35,4 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
+

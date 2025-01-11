@@ -1,4 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
+func000000000000000c:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	lui	a3, 524288
@@ -10,7 +10,8 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	minu	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, 64
@@ -20,7 +21,8 @@ func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
 	minu	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, 56
@@ -31,3 +33,4 @@ func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
 	minu	a0, a0, a1
 	ret
+

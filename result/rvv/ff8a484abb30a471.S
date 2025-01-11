@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	li	a0, -1
@@ -7,7 +7,8 @@ func000000000000000a:                   # @func000000000000000a
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 16
 	lui	a0, 16
@@ -16,7 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 512
@@ -25,7 +27,8 @@ func0000000000000007:                   # @func0000000000000007
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 28
 	li	a0, 1
@@ -35,7 +38,8 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
 	lui	a0, 65536
@@ -44,7 +48,8 @@ func000000000000000b:                   # @func000000000000000b
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	li	a0, -1
@@ -53,7 +58,8 @@ func0000000000000002:                   # @func0000000000000002
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 9
 	lui	a0, 1048572
@@ -62,7 +68,8 @@ func0000000000000004:                   # @func0000000000000004
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 2
 	lui	a0, 524288
@@ -71,3 +78,4 @@ func000000000000000f:                   # @func000000000000000f
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
 	ret
+

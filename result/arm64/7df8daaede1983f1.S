@@ -1,21 +1,15 @@
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+func0000000000000028:
 	orr	x8, x1, x2, lsl #32
 	udiv	x0, x8, x0
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	orr	x8, x1, x2, lsl #32
 	udiv	x0, x8, x0
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	orr	x8, x1, x2, lsl #32
 	udiv	x0, x8, x0
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

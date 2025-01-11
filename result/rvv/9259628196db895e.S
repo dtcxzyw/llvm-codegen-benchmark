@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.word	0x3dcccccd                      # float 0.100000001
-func0000000000000024:                   # @func0000000000000024
+	.word	0x3dcccccd
+func0000000000000024:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	fmv.w.x	fa5, zero
 	vfmax.vf	v8, v8, fa5
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v12, 0
@@ -18,11 +19,12 @@ func00000000000000ca:                   # @func00000000000000ca
 	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	ret
+
 .LCPI2_0:
-	.word	0x358637bd                      # float 9.99999997E-7
+	.word	0x358637bd
 .LCPI2_1:
-	.word	0x3f7fffef                      # float 0.999998986
-func0000000000000042:                   # @func0000000000000042
+	.word	0x3f7fffef
+func0000000000000042:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
@@ -31,3 +33,4 @@ func0000000000000042:                   # @func0000000000000042
 	vfmax.vf	v8, v8, fa5
 	vfmin.vf	v8, v8, fa4
 	ret
+

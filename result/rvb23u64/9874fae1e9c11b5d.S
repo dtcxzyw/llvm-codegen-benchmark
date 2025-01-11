@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 2
@@ -7,7 +7,8 @@ func0000000000000181:                   # @func0000000000000181
 	snez	a0, a0
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 2
@@ -16,7 +17,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	lui	a3, 16
 	xor	a0, a0, a1
 	addiw	a1, a3, -256
@@ -26,7 +28,8 @@ func000000000000018c:                   # @func000000000000018c
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	bexti	a2, a2, 35
@@ -34,7 +37,8 @@ func000000000000002c:                   # @func000000000000002c
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	not	a2, a2
@@ -42,7 +46,8 @@ func0000000000000101:                   # @func0000000000000101
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	not	a2, a2
@@ -50,7 +55,8 @@ func0000000000000081:                   # @func0000000000000081
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -58,7 +64,8 @@ func0000000000000141:                   # @func0000000000000141
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	bseti	a3, zero, 31
@@ -68,3 +75,4 @@ func000000000000014c:                   # @func000000000000014c
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

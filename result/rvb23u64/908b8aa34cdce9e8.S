@@ -1,4 +1,4 @@
-func000000000000029c:                   # @func000000000000029c
+func000000000000029c:
 	sext.w	a2, a2
 	zext.h	a1, a1
 	li	a3, 1
@@ -9,3 +9,4 @@ func000000000000029c:                   # @func000000000000029c
 	sh2add	a0, a1, a0
 	addi	a0, a0, 2
 	ret
+

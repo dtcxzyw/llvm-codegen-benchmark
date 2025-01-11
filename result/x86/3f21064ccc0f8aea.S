@@ -1,14 +1,15 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	movl	%esi, %eax
 	notl	%eax
-	testl	$511, %eax                      # imm = 0x1FF
+	testl	$511, %eax
 	setne	%cl
 	shrl	$9, %esi
 	cmpl	%esi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	movl	%esi, %eax
 	shrl	$3, %eax
 	cmpl	%eax, %edi
@@ -18,7 +19,8 @@ func000000000000002c:                   # @func000000000000002c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movl	%esi, %eax
 	andl	$15, %eax
 	xorl	$7, %eax
@@ -27,7 +29,8 @@ func0000000000000021:                   # @func0000000000000021
 	orl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	movl	%esi, %eax
 	shrl	$16, %eax
 	cmpl	%eax, %edi
@@ -36,3 +39,4 @@ func0000000000000101:                   # @func0000000000000101
 	sete	%al
 	andb	%cl, %al
 	retq
+

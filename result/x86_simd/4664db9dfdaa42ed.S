@@ -1,6 +1,7 @@
 .LCPI0_0:
-	.quad	0x401c000000000000              # double 7
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x401c000000000000
+func0000000000000000:
 	vcvtdq2pd	%ymm1, %zmm1
-	vfmadd213pd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm0 # zmm0 = (zmm1 * zmm0) + mem
+	vfmadd213pd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm0
 	retq
+

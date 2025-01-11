@@ -1,8 +1,8 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000022:
 	li	a3, 8
 	bltu	a3, a1, .LBB0_2
 	mv	a0, a1
-.LBB0_2:                                # %entry
+.LBB0_2:
 	srli	a2, a2, 3
 	lui	a1, 748983
 	addiw	a1, a1, -585
@@ -13,3 +13,4 @@ func0000000000000022:                   # @func0000000000000022
 	sltu	a1, a2, a0
 	mv	a0, a2
 	ret
+

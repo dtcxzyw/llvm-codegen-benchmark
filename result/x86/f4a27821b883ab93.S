@@ -1,4 +1,4 @@
-func0000000000000121:                   # @func0000000000000121
+func0000000000000121:
 	orl	%edx, %esi
 	shrl	$6, %esi
 	orl	$192, %esi
@@ -6,3 +6,4 @@ func0000000000000121:                   # @func0000000000000121
 	cmpl	%eax, %esi
 	sete	%al
 	retq
+

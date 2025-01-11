@@ -1,30 +1,27 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	mov	x8, #32245                      // =0x7df5
+func000000000000000c:
+	mov	x8, #32245
 	movk	x8, #59882, lsl #16
 	movk	x8, #47204, lsl #32
 	movk	x8, #11787, lsl #48
 	mul	x8, x2, x8
 	eor	x0, x0, x8
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	x8, #11625                      // =0x2d69
+
+func0000000000000008:
+	mov	x8, #11625
 	movk	x8, #60216, lsl #16
 	movk	x8, #59912, lsl #32
 	movk	x8, #40415, lsl #48
 	mul	x8, x2, x8
 	eor	x0, x0, x8
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
-	mov	x8, #32557                      // =0x7f2d
+
+func000000000000001c:
+	mov	x8, #32557
 	movk	x8, #19605, lsl #16
 	movk	x8, #62509, lsl #32
 	movk	x8, #22609, lsl #48
 	mul	x8, x2, x8
 	eor	x0, x0, x8
 	ret
-                                        // -- End function
+

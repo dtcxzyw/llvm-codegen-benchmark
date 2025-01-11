@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	slli	a0, a0, 48
 	lui	a1, 260096
 	srli	a0, a0, 48
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	fmadd.s	fa5, fa4, fa5, fa0
 	fcvt.lu.s	a0, fa5, rtz
 	ret
+

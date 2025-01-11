@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -7,7 +7,8 @@ func0000000000000048:                   # @func0000000000000048
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	subw	a2, a2, a1
@@ -16,7 +17,8 @@ func0000000000000044:                   # @func0000000000000044
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	subw	a2, a2, a1
@@ -25,7 +27,8 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a2, a2, a1
@@ -34,7 +37,8 @@ func000000000000000a:                   # @func000000000000000a
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000078:                   # @func0000000000000078
+
+func0000000000000078:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -43,7 +47,8 @@ func0000000000000078:                   # @func0000000000000078
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -52,7 +57,8 @@ func000000000000002a:                   # @func000000000000002a
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -61,7 +67,8 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -70,7 +77,8 @@ func0000000000000068:                   # @func0000000000000068
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	subw	a1, a1, a2
@@ -79,3 +87,4 @@ func0000000000000006:                   # @func0000000000000006
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

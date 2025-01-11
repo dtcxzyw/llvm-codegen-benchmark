@@ -1,4 +1,4 @@
-func0000000000003284:                   # @func0000000000003284
+func0000000000003284:
 	leaq	1(%rsi,%rdx), %rax
 	cmpq	%rdi, %rax
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000003284:                   # @func0000000000003284
 	setb	%al
 	andb	%cl, %al
 	retq
+

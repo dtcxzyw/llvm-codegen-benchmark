@@ -1,4 +1,4 @@
-func0000000000000118:                   # @func0000000000000118
+func0000000000000118:
 	srli	a3, a2, 32
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
@@ -8,7 +8,8 @@ func0000000000000118:                   # @func0000000000000118
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000318:                   # @func0000000000000318
+
+func0000000000000318:
 	srli	a3, a2, 16
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
@@ -18,7 +19,8 @@ func0000000000000318:                   # @func0000000000000318
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	sltiu	a3, a2, 4
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -28,7 +30,8 @@ func0000000000000308:                   # @func0000000000000308
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	srli	a3, a2, 32
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -38,7 +41,8 @@ func0000000000000084:                   # @func0000000000000084
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	sltiu	a3, a2, 40
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -48,11 +52,12 @@ func0000000000000108:                   # @func0000000000000108
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+
 .LCPI5_0:
-	.quad	-14862916799999999              # 0xffcb324183cf5001
+	.quad	-14862916799999999
 .LCPI5_1:
-	.quad	928028793599999999              # 0xce1054557dcbfff
-func00000000000000ca:                   # @func00000000000000ca
+	.quad	928028793599999999
+func00000000000000ca:
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
 	lui	a4, %hi(.LCPI5_1)
@@ -66,7 +71,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000284:                   # @func0000000000000284
+
+func0000000000000284:
 	srli	a3, a2, 32
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
@@ -76,3 +82,4 @@ func0000000000000284:                   # @func0000000000000284
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

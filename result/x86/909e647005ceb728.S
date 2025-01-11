@@ -1,13 +1,14 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	andb	$3, %dl
 	cmpb	$2, %dl
-	movl	$6357120, %ecx                  # imm = 0x610080
-	movl	$553648127, %eax                # imm = 0x20FFFFFF
+	movl	$6357120, %ecx
+	movl	$553648127, %eax
 	cmovel	%ecx, %eax
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	andb	$7, %dl
 	xorl	%eax, %eax
 	cmpb	$2, %dl
@@ -16,7 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	andb	$7, %dl
 	xorl	%eax, %eax
 	cmpb	$2, %dl
@@ -25,3 +27,4 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
+

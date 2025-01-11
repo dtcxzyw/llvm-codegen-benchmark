@@ -1,4 +1,4 @@
-func00000000000000e7:                   # @func00000000000000e7
+func00000000000000e7:
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
@@ -7,7 +7,8 @@ func00000000000000e7:                   # @func00000000000000e7
 	cmpl	%eax, %edi
 	setle	%al
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+
+func00000000000000ea:
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
@@ -16,7 +17,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	movzbl	%sil, %eax
 	imull	$171, %eax, %eax
 	shrl	$9, %eax
@@ -25,3 +27,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+

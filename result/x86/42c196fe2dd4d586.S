@@ -1,19 +1,20 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leal	-2147483647(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
-	imulq	$1321528399, %rax, %rcx         # imm = 0x4EC4EC4F
+	imulq	$1321528399, %rax, %rcx
 	shrq	$35, %rcx
 	leal	(%rcx,%rcx,4), %edx
 	leal	(%rdx,%rdx,4), %edx
 	addl	%ecx, %edx
 	subl	%edx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	leal	4(%rsi), %ecx
 	testb	$1, %dil
 	cmovel	%esi, %ecx
-	imulq	$613566757, %rcx, %rdx          # imm = 0x24924925
+	imulq	$613566757, %rcx, %rdx
 	shrq	$32, %rdx
 	movl	%ecx, %eax
 	subl	%edx, %eax
@@ -24,3 +25,4 @@ func0000000000000001:                   # @func0000000000000001
 	subl	%edx, %eax
 	addl	%ecx, %eax
 	retq
+

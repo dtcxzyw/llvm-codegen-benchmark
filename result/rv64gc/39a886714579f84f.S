@@ -1,4 +1,4 @@
-func00000000000000a0:                   # @func00000000000000a0
+func00000000000000a0:
 	addi	a2, a2, -292
 	lui	a3, 425
 	addi	a3, a3, 847
@@ -7,7 +7,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret
-func00000000000000a5:                   # @func00000000000000a5
+
+func00000000000000a5:
 	addi	a2, a2, -292
 	lui	a3, 425
 	addi	a3, a3, 847
@@ -16,3 +17,4 @@ func00000000000000a5:                   # @func00000000000000a5
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret
+

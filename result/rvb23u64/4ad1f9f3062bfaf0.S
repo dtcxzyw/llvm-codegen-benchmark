@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	andi	a0, a0, 1
 	sub	a1, a1, a2
 	li	a2, -1
@@ -12,3 +12,4 @@ func000000000000000b:                   # @func000000000000000b
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

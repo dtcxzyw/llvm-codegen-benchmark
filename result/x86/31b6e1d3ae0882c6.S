@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	movzbl	%dl, %ecx
 	incl	%ecx
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movzbl	%dl, %ecx
 	addl	$12, %ecx
 	testb	$1, %sil
@@ -14,7 +15,8 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movzbl	%dl, %ecx
 	decl	%ecx
 	xorl	%eax, %eax
@@ -22,3 +24,4 @@ func0000000000000004:                   # @func0000000000000004
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

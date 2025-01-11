@@ -1,4 +1,4 @@
-func0000000000000308:                   # @func0000000000000308
+func0000000000000308:
 	movb	$-53, %al
 	subb	%dl, %al
 	movl	$1, %ecx
@@ -7,3 +7,4 @@ func0000000000000308:                   # @func0000000000000308
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
+

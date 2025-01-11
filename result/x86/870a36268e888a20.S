@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	subl	%edx, %esi
 	leal	1074(%rsi), %ecx
 	movl	$53, %eax
@@ -6,3 +6,4 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%ecx, %eax
 	cmovgel	%ecx, %eax
 	retq
+

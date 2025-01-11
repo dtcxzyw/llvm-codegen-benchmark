@@ -1,4 +1,4 @@
-func00000000000000c5:                   # @func00000000000000c5
+func00000000000000c5:
 	testq	%rdx, %rdx
 	setne	%al
 	andb	%dil, %al
@@ -6,7 +6,8 @@ func00000000000000c5:                   # @func00000000000000c5
 	notl	%eax
 	addl	%esi, %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	testq	%rdx, %rdx
 	sete	%al
 	andb	%dil, %al
@@ -14,3 +15,4 @@ func0000000000000015:                   # @func0000000000000015
 	notl	%eax
 	addl	%esi, %eax
 	retq
+

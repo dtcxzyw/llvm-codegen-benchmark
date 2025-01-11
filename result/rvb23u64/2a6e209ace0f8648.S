@@ -1,4 +1,4 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000000f1:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	sub	a1, a1, a2
@@ -8,7 +8,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret
-func0000000000000090:                   # @func0000000000000090
+
+func0000000000000090:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	sub	a1, a1, a2
@@ -18,3 +19,4 @@ func0000000000000090:                   # @func0000000000000090
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret
+

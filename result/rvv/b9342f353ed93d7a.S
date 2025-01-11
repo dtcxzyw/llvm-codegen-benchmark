@@ -1,4 +1,4 @@
-func0000000000000118:                   # @func0000000000000118
+func0000000000000118:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	li	a0, -238
@@ -8,7 +8,8 @@ func0000000000000118:                   # @func0000000000000118
 	vmsne.vi	v11, v8, 0
 	vmor.mm	v0, v11, v10
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	li	a0, -1440
@@ -21,7 +22,8 @@ func0000000000000102:                   # @func0000000000000102
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	li	a0, 38
@@ -31,3 +33,4 @@ func0000000000000042:                   # @func0000000000000042
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
+

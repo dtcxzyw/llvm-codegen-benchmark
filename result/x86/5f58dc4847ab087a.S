@@ -1,4 +1,4 @@
-func0000000000001d87:                   # @func0000000000001d87
+func0000000000001d87:
 	incb	%dl
 	movzbl	%dl, %eax
 	cmpl	%eax, %edi
@@ -7,3 +7,4 @@ func0000000000001d87:                   # @func0000000000001d87
 	setne	%al
 	andb	%cl, %al
 	retq
+

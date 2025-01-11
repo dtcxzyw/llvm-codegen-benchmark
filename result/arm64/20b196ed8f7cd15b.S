@@ -1,5 +1,4 @@
-func0000000000000144:                   // @func0000000000000144
-// %bb.0:                               // %entry
+func0000000000000144:
 	lsl	w8, w2, #16
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -10,9 +9,8 @@ func0000000000000144:                   // @func0000000000000144
 	cmp	w8, #0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000146:                   // @func0000000000000146
-// %bb.0:                               // %entry
+
+func0000000000000146:
 	lsl	w8, w2, #4
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -21,9 +19,8 @@ func0000000000000146:                   // @func0000000000000146
 	csel	w8, w9, w8, ne
 	lsr	w0, w8, #31
 	ret
-                                        // -- End function
-func000000000000014a:                   // @func000000000000014a
-// %bb.0:                               // %entry
+
+func000000000000014a:
 	lsl	w8, w2, #4
 	tst	w1, #0x1
 	csel	w8, w8, w2, ne
@@ -33,4 +30,4 @@ func000000000000014a:                   // @func000000000000014a
 	mvn	w8, w8
 	lsr	w0, w8, #31
 	ret
-                                        // -- End function
+

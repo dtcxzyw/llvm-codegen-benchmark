@@ -1,48 +1,49 @@
 .LCPI0_0:
 	.zero	16,31
 .LCPI0_1:
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
-	.short	26                              # 0x1a
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
 .LCPI0_2:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
 .LCPI0_3:
 	.zero	4,31
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm1            # ymm1 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero,xmm0[8],zero,xmm0[9],zero,xmm0[10],zero,xmm0[11],zero,xmm0[12],zero,xmm0[13],zero,xmm0[14],zero,xmm0[15],zero
-	vpmullw	.LCPI0_1(%rip), %ymm1, %ymm1    # [26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26]
+	vpmovzxbw	%xmm0, %ymm1
+	vpmullw	.LCPI0_1(%rip), %ymm1, %ymm1
 	vpsrlw	$8, %ymm1, %ymm1
-	vpmullw	.LCPI0_2(%rip), %ymm1, %ymm1    # [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+	vpmullw	.LCPI0_2(%rip), %ymm1, %ymm1
 	vpmovwb	%ymm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

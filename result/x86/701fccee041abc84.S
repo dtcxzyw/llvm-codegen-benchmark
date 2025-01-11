@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	leal	1(%rsi), %eax
 	testl	%edx, %edx
 	movl	$4, %ecx
@@ -6,7 +6,8 @@ func000000000000002a:                   # @func000000000000002a
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	andb	$1, %dil
 	leal	-1(%rsi), %eax
 	cmpl	$2, %edx
@@ -17,7 +18,8 @@ func0000000000000029:                   # @func0000000000000029
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	leal	9(%rsi), %eax
 	testb	$1, %dil
 	movl	$8, %ecx
@@ -25,3 +27,4 @@ func000000000000002b:                   # @func000000000000002b
 	testl	%edx, %edx
 	cmovsl	%ecx, %eax
 	retq
+

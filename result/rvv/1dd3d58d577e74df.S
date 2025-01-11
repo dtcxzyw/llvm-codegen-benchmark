@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
@@ -6,7 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	fli.d	fa5, min
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfgt.vf	v0, v8, fa5
@@ -15,7 +16,8 @@ func0000000000000004:                   # @func0000000000000004
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfne.vf	v0, v8, fa5
@@ -23,7 +25,8 @@ func0000000000000007:                   # @func0000000000000007
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfeq.vv	v0, v8, v8
 	bseti	a0, zero, 63
@@ -31,7 +34,8 @@ func000000000000000e:                   # @func000000000000000e
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	fmv.d.x	fa5, zero
 	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, mu
@@ -40,3 +44,4 @@ func000000000000000a:                   # @func000000000000000a
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
+

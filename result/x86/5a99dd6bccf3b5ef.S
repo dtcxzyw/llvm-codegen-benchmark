@@ -1,8 +1,9 @@
-func0000000000000006:                   # @func0000000000000006
-	movabsq	$-10000000000, %rdx             # imm = 0xFFFFFFFDABF41C00
+func0000000000000006:
+	movabsq	$-10000000000, %rdx
 	imulq	%rsi, %rdx
 	addq	%rdi, %rdx
-	movabsq	$1844674407370955162, %rax      # imm = 0x199999999999999A
+	movabsq	$1844674407370955162, %rax
 	mulxq	%rax, %rax, %rax
 	xorl	%edx, %edx
 	retq
+

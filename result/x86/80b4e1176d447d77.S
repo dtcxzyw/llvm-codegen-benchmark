@@ -1,4 +1,4 @@
-func000000000000114b:                   # @func000000000000114b
+func000000000000114b:
 	shrq	$3, %rdx
 	cmpl	%edx, %edi
 	setge	%cl
@@ -6,7 +6,8 @@ func000000000000114b:                   # @func000000000000114b
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000c2c:                   # @func0000000000000c2c
+
+func0000000000000c2c:
 	shrq	$63, %rdx
 	cmpl	%edx, %edi
 	setne	%cl
@@ -14,7 +15,8 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000908:                   # @func0000000000000908
+
+func0000000000000908:
 	shrq	$32, %rdx
 	cmpl	%edx, %edi
 	seta	%cl
@@ -22,7 +24,8 @@ func0000000000000908:                   # @func0000000000000908
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000941:                   # @func0000000000000941
+
+func0000000000000941:
 	shrq	$32, %rdx
 	cmpl	%edx, %edi
 	sete	%cl
@@ -30,3 +33,4 @@ func0000000000000941:                   # @func0000000000000941
 	setg	%al
 	andb	%cl, %al
 	retq
+

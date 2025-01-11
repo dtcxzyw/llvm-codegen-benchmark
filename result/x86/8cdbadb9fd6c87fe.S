@@ -1,4 +1,4 @@
-func0000000000000090:                   # @func0000000000000090
+func0000000000000090:
 	movq	%rdx, %rax
 	orq	$15, %rax
 	addq	$30, %rdx
@@ -9,7 +9,8 @@ func0000000000000090:                   # @func0000000000000090
 	shlq	$4, %rsi
 	leaq	16(%rsi,%rdx), %rax
 	retq
-func000000000000009a:                   # @func000000000000009a
+
+func000000000000009a:
 	movq	%rdx, %rax
 	orq	$15, %rax
 	addq	$30, %rdx
@@ -20,3 +21,4 @@ func000000000000009a:                   # @func000000000000009a
 	shlq	$4, %rsi
 	leaq	16(%rsi,%rdx), %rax
 	retq
+

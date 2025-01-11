@@ -1,25 +1,22 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
+func0000000000000042:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, gt
 	fcmp	d1, #0.0
 	fcsel	d0, d0, d1, mi
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, mi
 	fcmp	d1, #0.0
 	fcsel	d0, d0, d1, mi
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0xc00921fb54442d18              // double -3.1415926535897931
+	.xword	0xc00921fb54442d18
 .LCPI2_1:
-	.xword	0x400921fb54442d18              // double 3.1415926535897931
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+	.xword	0x400921fb54442d18
+func0000000000000024:
 	adrp	x8, .LCPI2_0
 	ldr	d3, [x8, :lo12:.LCPI2_0]
 	adrp	x8, .LCPI2_1
@@ -29,21 +26,19 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	d1, d2
 	fcsel	d0, d0, d1, gt
 	ret
-                                        // -- End function
-func0000000000000033:                   // @func0000000000000033
-// %bb.0:                               // %entry
+
+func0000000000000033:
 	fcmp	d2, #0.0
 	fcsel	d1, d1, d2, lt
 	fcmp	d1, #0.0
 	fcsel	d0, d0, d1, lt
 	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-	mov	x8, #140737488355328            // =0x800000000000
+
+func0000000000000044:
+	mov	x8, #140737488355328
 	movk	x8, #16486, lsl #48
 	fmov	d3, x8
-	mov	x8, #140737488355328            // =0x800000000000
+	mov	x8, #140737488355328
 	movk	x8, #16470, lsl #48
 	fcmp	d2, d3
 	fcsel	d1, d1, d2, gt
@@ -51,4 +46,4 @@ func0000000000000044:                   // @func0000000000000044
 	fcmp	d1, d2
 	fcsel	d0, d0, d1, gt
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	sext.w	a0, a0
 	lui	a1, 233
 	srai	a2, a0, 63
@@ -18,3 +18,4 @@ func000000000000000a:                   # @func000000000000000a
 	mulhu	a1, a1, a2
 	sub	a0, a0, a1
 	ret
+

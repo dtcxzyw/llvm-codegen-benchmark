@@ -1,102 +1,105 @@
 .LCPI0_0:
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
 .LCPI0_1:
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-func0000000000000084:                   # @func0000000000000084
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+func0000000000000084:
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm2, %xmm2
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	vpmovzxbd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
 .LCPI1_1:
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-func0000000000000088:                   # @func0000000000000088
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+func0000000000000088:
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm2, %xmm2
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	vpmovzxbd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-	.byte	4                               # 0x4
-	.byte	2                               # 0x2
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-	.byte	4                               # 0x4
-	.byte	2                               # 0x2
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
 .LCPI2_1:
-	.byte	0                               # 0x0
-	.byte	128                             # 0x80
-	.byte	64                              # 0x40
-	.byte	32                              # 0x20
-	.byte	16                              # 0x10
-	.byte	8                               # 0x8
-	.byte	4                               # 0x4
-	.byte	2                               # 0x2
-func00000000000000f8:                   # @func00000000000000f8
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+func00000000000000f8:
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm2, %xmm2
-	vpmovzxbd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero
+	vpmovzxbd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

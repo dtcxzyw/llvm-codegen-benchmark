@@ -1,4 +1,4 @@
-func0000000000000047:                   # @func0000000000000047
+func0000000000000047:
 	cmpb	$-96, %sil
 	movl	$55, %eax
 	movl	$48, %ecx
@@ -6,7 +6,8 @@ func0000000000000047:                   # @func0000000000000047
 	addb	%dil, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	cmpb	$1, %sil
 	setne	%al
 	negb	%al
@@ -14,3 +15,4 @@ func0000000000000009:                   # @func0000000000000009
 	addb	%dil, %al
 	movzbl	%al, %eax
 	retq
+

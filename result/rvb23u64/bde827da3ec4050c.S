@@ -1,4 +1,4 @@
-func00000000000000ef:                   # @func00000000000000ef
+func00000000000000ef:
 	srai	a3, a1, 2
 	lui	a4, 699051
 	addiw	a4, a4, -1365
@@ -11,9 +11,10 @@ func00000000000000ef:                   # @func00000000000000ef
 	sh2add	a0, a2, a0
 	add	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func00000000000000af:                   # @func00000000000000af
+	.quad	5675921253449092805
+func00000000000000af:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	srai	a4, a1, 4
@@ -25,3 +26,4 @@ func00000000000000af:                   # @func00000000000000af
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 24
@@ -7,12 +7,13 @@ func0000000000000001:                   # @func0000000000000001
 .LBB0_2:
 	li	a2, 12
 	beqz	a1, .LBB0_4
-.LBB0_3:                                # %entry
+.LBB0_3:
 	mv	a2, a0
-.LBB0_4:                                # %entry
+.LBB0_4:
 	mv	a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 235
@@ -25,12 +26,13 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a2, a2, 49
 	srli	a1, a1, 32
 	beqz	a1, .LBB1_4
-.LBB1_3:                                # %entry
+.LBB1_3:
 	mv	a2, a0
-.LBB1_4:                                # %entry
+.LBB1_4:
 	mv	a0, a2
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	andi	a3, a2, 1
 	li	a2, -1
 	bnez	a3, .LBB2_2
@@ -41,8 +43,9 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 63
 	addi	a2, a2, 1
 	bltz	a1, .LBB2_4
-.LBB2_3:                                # %entry
+.LBB2_3:
 	mv	a2, a0
-.LBB2_4:                                # %entry
+.LBB2_4:
 	mv	a0, a2
 	ret
+

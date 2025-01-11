@@ -1,27 +1,29 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	imull	%esi, %edi
 	movslq	%edi, %rax
-	imulq	$274877907, %rax, %rcx          # imm = 0x10624DD3
+	imulq	$274877907, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	sarq	$38, %rcx
 	addl	%edx, %ecx
-	imull	$1000, %ecx, %ecx               # imm = 0x3E8
+	imull	$1000, %ecx, %ecx
 	subl	%ecx, %eax
 	testl	%eax, %eax
 	setg	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	imull	%esi, %edi
-	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
-	addl	$715827882, %eax                # imm = 0x2AAAAAAA
-	cmpl	$1431655765, %eax               # imm = 0x55555555
+	imull	$-1431655765, %edi, %eax
+	addl	$715827882, %eax
+	cmpl	$1431655765, %eax
 	setae	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	imull	%esi, %edi
 	movslq	%edi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rcx
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
@@ -32,19 +34,22 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	$3, %eax
 	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	imull	%esi, %edi
-	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
-	addl	$715827882, %eax                # imm = 0x2AAAAAAA
+	imull	$-1431655765, %edi, %eax
+	addl	$715827882, %eax
 	rorxl	$1, %eax, %eax
-	cmpl	$715827883, %eax                # imm = 0x2AAAAAAB
+	cmpl	$715827883, %eax
 	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	imull	%esi, %edi
-	imull	$-1030792151, %edi, %eax        # imm = 0xC28F5C29
-	addl	$85899344, %eax                 # imm = 0x51EB850
+	imull	$-1030792151, %edi, %eax
+	addl	$85899344, %eax
 	rorxl	$2, %eax, %eax
-	cmpl	$42949673, %eax                 # imm = 0x28F5C29
+	cmpl	$42949673, %eax
 	setae	%al
 	retq
+

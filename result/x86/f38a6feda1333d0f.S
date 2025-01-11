@@ -1,4 +1,4 @@
-func000000000000010a:                   # @func000000000000010a
+func000000000000010a:
 	andq	$-8, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -6,3 +6,4 @@ func000000000000010a:                   # @func000000000000010a
 	setb	%al
 	orb	%cl, %al
 	retq
+

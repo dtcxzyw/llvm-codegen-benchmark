@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovqw	%ymm1, %xmm1
@@ -16,16 +16,17 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
+	.short	16
+	.short	16
+	.short	16
+	.short	16
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovqw	%ymm1, %xmm1
@@ -34,7 +35,8 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovqw	%ymm1, %xmm1
@@ -43,3 +45,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

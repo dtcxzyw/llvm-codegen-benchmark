@@ -1,4 +1,4 @@
-func00000000000000dd:                   # @func00000000000000dd
+func00000000000000dd:
 	zext.w	a1, a1
 	lui	a2, 335544
 	addiw	a2, a2, 1311
@@ -10,3 +10,4 @@ func00000000000000dd:                   # @func00000000000000dd
 	add	a0, a0, a1
 	addiw	a0, a0, 399
 	ret
+

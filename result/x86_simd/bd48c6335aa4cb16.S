@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000000a:                   # @func000000000000000a
+	.long	1
+func000000000000000a:
 	vpmovqd	%ymm1, %xmm2
 	vpmovqd	%ymm0, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -24,7 +24,8 @@ func000000000000000a:                   # @func000000000000000a
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm0, %xmm0
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

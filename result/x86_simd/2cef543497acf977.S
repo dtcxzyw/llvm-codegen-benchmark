@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	4294967294                      # 0xfffffffe
-func0000000000000001:                   # @func0000000000000001
+	.long	4294967294
+func0000000000000001:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3
@@ -48,6 +48,7 @@ func0000000000000001:                   # @func0000000000000001
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
+

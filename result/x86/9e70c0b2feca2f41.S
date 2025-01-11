@@ -1,8 +1,9 @@
 .LCPI0_0:
-	.quad	0x405fc00000000000              # double 127
+	.quad	0x405fc00000000000
 .LCPI0_1:
-	.quad	0x7fffffffffffffff              # double NaN
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x7fffffffffffffff
+func0000000000000000:
 	vdivsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vandpd	.LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	retq
+

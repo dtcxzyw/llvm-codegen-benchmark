@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func00000000000000c4:
 	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.vx	v12, v10, a0
@@ -9,7 +9,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	li	a0, 1
 	slli	a0, a0, 34
 	addi	a0, a0, -4
@@ -24,7 +25,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	li	a0, 1
 	slli	a0, a0, 33
 	addi	a0, a0, -8
@@ -39,7 +41,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret
-func00000000000000d4:                   # @func00000000000000d4
+
+func00000000000000d4:
 	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.vx	v12, v10, a0
@@ -50,7 +53,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000001d4:                   # @func00000000000001d4
+
+func00000000000001d4:
 	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.vx	v12, v10, a0
@@ -61,3 +65,4 @@ func00000000000001d4:                   # @func00000000000001d4
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
+

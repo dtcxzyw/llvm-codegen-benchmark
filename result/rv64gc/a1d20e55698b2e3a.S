@@ -1,51 +1,55 @@
-func0000000000000066:                   # @func0000000000000066
+func0000000000000066:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	mv	a1, a2
-.LBB0_2:                                # %entry
+.LBB0_2:
 	sext.w	a0, a1
 	slti	a0, a0, 3
 	negw	a0, a0
 	andi	a0, a0, 12
 	addw	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	mv	a1, a2
-.LBB1_2:                                # %entry
+.LBB1_2:
 	sext.w	a0, a1
 	slti	a0, a0, 60
 	xori	a0, a0, 1
 	slli	a0, a0, 2
 	addw	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	mv	a1, a2
-.LBB2_2:                                # %entry
+.LBB2_2:
 	sraiw	a0, a1, 31
 	lui	a2, 1
 	addi	a2, a2, -496
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+
+func000000000000006a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	mv	a1, a2
-.LBB3_2:                                # %entry
+.LBB3_2:
 	sext.w	a0, a1
 	sgtz	a0, a0
 	slli	a0, a0, 1
 	addw	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	mv	a1, a2
-.LBB4_2:                                # %entry
+.LBB4_2:
 	sext.w	a0, a1
 	lui	a2, 523342
 	addiw	a2, a2, -1428
@@ -56,3 +60,4 @@ func000000000000002a:                   # @func000000000000002a
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

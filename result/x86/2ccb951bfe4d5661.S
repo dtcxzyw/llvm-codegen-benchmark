@@ -1,14 +1,16 @@
-func0000000000000007:                   # @func0000000000000007
-	andl	$-1793, %edx                    # imm = 0xF8FF
-	andl	$1024, %esi                     # imm = 0x400
+func0000000000000007:
+	andl	$-1793, %edx
+	andl	$1024, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
-	orl	$256, %eax                      # imm = 0x100
+	orl	$256, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	andl	$-195, %edx
 	andl	$128, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	orl	$2, %eax
 	retq
+

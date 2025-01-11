@@ -1,4 +1,4 @@
-func0000000000000164:                   # @func0000000000000164
+func0000000000000164:
 	xorl	%eax, %eax
 	cmpb	$-1, %dl
 	sete	%al
@@ -7,7 +7,8 @@ func0000000000000164:                   # @func0000000000000164
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000161:                   # @func0000000000000161
+
+func0000000000000161:
 	xorl	%eax, %eax
 	cmpb	$13, %dl
 	sete	%al
@@ -15,7 +16,8 @@ func0000000000000161:                   # @func0000000000000161
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000168:                   # @func0000000000000168
+
+func0000000000000168:
 	xorl	%eax, %eax
 	cmpb	$47, %dl
 	sete	%al
@@ -23,7 +25,8 @@ func0000000000000168:                   # @func0000000000000168
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func000000000000016c:                   # @func000000000000016c
+
+func000000000000016c:
 	xorl	%eax, %eax
 	cmpb	$-1, %dl
 	sete	%al
@@ -32,7 +35,8 @@ func000000000000016c:                   # @func000000000000016c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	xorl	%eax, %eax
 	cmpb	$10, %dl
 	sete	%al
@@ -40,7 +44,8 @@ func0000000000000101:                   # @func0000000000000101
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	xorl	%eax, %eax
 	cmpb	$32, %dl
 	sete	%al
@@ -48,7 +53,8 @@ func0000000000000104:                   # @func0000000000000104
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
+
+func0000000000000108:
 	xorl	%eax, %eax
 	cmpb	$32, %dl
 	sete	%al
@@ -56,3 +62,4 @@ func0000000000000108:                   # @func0000000000000108
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
 	li	a0, 512
@@ -7,7 +7,8 @@ func000000000000000e:                   # @func000000000000000e
 	vmv.v.x	v8, a0
 	vnsrl.wi	v8, v10, 0, v0.t
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
 	vsll.vv	v10, v10, v8
@@ -15,7 +16,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmv.v.i	v8, 0
 	vnsrl.wi	v8, v10, 0, v0.t
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
 	vsll.vv	v10, v10, v8
@@ -23,3 +25,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.i	v8, 0
 	vnsrl.wi	v8, v10, 0, v0.t
 	ret
+

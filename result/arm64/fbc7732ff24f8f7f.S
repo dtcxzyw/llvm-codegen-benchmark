@@ -1,5 +1,4 @@
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
+func0000000000000108:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #121
@@ -7,9 +6,8 @@ func0000000000000108:                   // @func0000000000000108
 	ccmp	w9, #4, #0, hs
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000868:                   // @func0000000000000868
-// %bb.0:                               // %entry
+
+func0000000000000868:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	sub	w8, w8, #1
@@ -17,9 +15,8 @@ func0000000000000868:                   // @func0000000000000868
 	ccmp	w9, #9, #4, hs
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000102:                   // @func0000000000000102
-// %bb.0:                               // %entry
+
+func0000000000000102:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #65
@@ -27,20 +24,18 @@ func0000000000000102:                   // @func0000000000000102
 	ccmp	w9, #26, #0, ne
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
+
+func0000000000000048:
 	and	w9, w1, #0xff
-	mov	w8, #43                         // =0x2b
+	mov	w8, #43
 	and	w10, w0, #0xff
 	sub	w9, w9, #97
 	cmp	w9, #26
 	ccmp	w10, w8, #4, hs
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000308:                   // @func0000000000000308
-// %bb.0:                               // %entry
+
+func0000000000000308:
 	and	w8, w1, #0xff
 	and	w9, w0, #0xff
 	sub	w8, w8, #3
@@ -48,9 +43,8 @@ func0000000000000308:                   // @func0000000000000308
 	ccmp	w9, #2, #0, hs
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000908:                   // @func0000000000000908
-// %bb.0:                               // %entry
+
+func0000000000000908:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #65
@@ -58,9 +52,8 @@ func0000000000000908:                   // @func0000000000000908
 	ccmp	w9, #26, #0, hs
 	cset	w0, lo
 	ret
-                                        // -- End function
-func000000000000010c:                   // @func000000000000010c
-// %bb.0:                               // %entry
+
+func000000000000010c:
 	sxtb	w8, w0
 	and	w9, w1, #0xff
 	sub	w9, w9, #65
@@ -68,9 +61,8 @@ func000000000000010c:                   // @func000000000000010c
 	ccmp	w9, #26, #0, ge
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000918:                   // @func0000000000000918
-// %bb.0:                               // %entry
+
+func0000000000000918:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #15
@@ -78,20 +70,18 @@ func0000000000000918:                   // @func0000000000000918
 	ccmp	w9, #2, #0, eq
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000118:                   // @func0000000000000118
-// %bb.0:                               // %entry
-	mov	w8, #255                        // =0xff
+
+func0000000000000118:
+	mov	w8, #255
 	and	w9, w1, #0xff
 	sub	w9, w9, #255
 	bics	wzr, w8, w0
-	mov	w8, #-254                       // =0xffffff02
+	mov	w8, #-254
 	ccmp	w9, w8, #0, eq
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000902:                   // @func0000000000000902
-// %bb.0:                               // %entry
+
+func0000000000000902:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #17
@@ -99,31 +89,28 @@ func0000000000000902:                   // @func0000000000000902
 	ccmp	w9, #13, #0, ne
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000208:                   // @func0000000000000208
-// %bb.0:                               // %entry
+
+func0000000000000208:
 	and	w9, w1, #0xff
-	mov	w8, #53                         // =0x35
+	mov	w8, #53
 	and	w10, w0, #0xff
 	sub	w9, w9, #30
 	cmn	w9, #15
 	ccmp	w10, w8, #2, hs
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000848:                   // @func0000000000000848
-// %bb.0:                               // %entry
+
+func0000000000000848:
 	and	w9, w1, #0xff
-	mov	w8, #238                        // =0xee
+	mov	w8, #238
 	and	w10, w0, #0xff
 	sub	w9, w9, #225
 	cmp	w9, #12
 	ccmp	w10, w8, #4, hs
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000114:                   // @func0000000000000114
-// %bb.0:                               // %entry
+
+func0000000000000114:
 	sxtb	w8, w0
 	and	w9, w1, #0xff
 	sub	w9, w9, #25
@@ -131,27 +118,24 @@ func0000000000000114:                   // @func0000000000000114
 	ccmn	w9, #12, #0, lt
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000b08:                   // @func0000000000000b08
-// %bb.0:                               // %entry
+
+func0000000000000b08:
 	and	w8, w1, #0xff
 	tst	w0, #0xff
 	sub	w8, w8, #14
 	ccmn	w8, #3, #0, eq
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000318:                   // @func0000000000000318
-// %bb.0:                               // %entry
-	mov	w8, #40                         // =0x28
+
+func0000000000000318:
+	mov	w8, #40
 	and	w9, w1, #0xff
 	tst	w0, #0xff
 	ccmp	w9, w8, #0, eq
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000110:                   // @func0000000000000110
-// %bb.0:                               // %entry
+
+func0000000000000110:
 	and	w8, w0, #0xff
 	and	w9, w1, #0xff
 	sub	w9, w9, #6
@@ -159,15 +143,14 @@ func0000000000000110:                   // @func0000000000000110
 	ccmn	w9, #5, #0, ls
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000130:                   // @func0000000000000130
-// %bb.0:                               // %entry
+
+func0000000000000130:
 	and	w9, w0, #0xff
 	and	w10, w1, #0xff
-	mov	w8, #245                        // =0xf5
+	mov	w8, #245
 	sub	w10, w10, #6
 	cmp	w9, #7
 	ccmp	w10, w8, #0, ls
 	cset	w0, lo
 	ret
-                                        // -- End function
+

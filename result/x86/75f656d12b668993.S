@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	testq	%rsi, %rsi
 	movl	$1, %eax
 	movl	$100, %ecx
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	xorl	%eax, %eax
 	cmpq	$3, %rsi
 	setae	%al
@@ -14,7 +15,8 @@ func000000000000028c:                   # @func000000000000028c
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -22,13 +24,15 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	shrq	$63, %rsi
-	addq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	addq	$2147483647, %rsi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	xorl	%eax, %eax
 	cmpq	$7, %rsi
 	setge	%al
@@ -36,25 +40,29 @@ func00000000000000c1:                   # @func00000000000000c1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+
+func00000000000000c6:
 	shrq	$63, %rsi
 	addq	$3, %rsi
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	testq	%rsi, %rsi
-	movl	$1000, %eax                     # imm = 0x3E8
-	movl	$1024, %ecx                     # imm = 0x400
+	movl	$1000, %eax
+	movl	$1024, %ecx
 	cmoveq	%rax, %rcx
 	cmpq	%rcx, %rdi
 	setl	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	testq	%rsi, %rsi
-	movl	$1000000, %eax                  # imm = 0xF4240
-	movl	$1048576, %ecx                  # imm = 0x100000
+	movl	$1000000, %eax
+	movl	$1048576, %ecx
 	cmoveq	%rax, %rcx
 	cmpq	%rcx, %rdi
 	setb	%al
 	retq
+

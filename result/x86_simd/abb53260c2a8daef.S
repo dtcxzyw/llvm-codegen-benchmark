@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	100                             # 0x64
-func0000000000000002:                   # @func0000000000000002
+	.long	100
+func0000000000000002:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpextrd	$1, %xmm0, %ecx
@@ -26,7 +26,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$16, %xmm1, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -53,3 +54,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrd	$3, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
+

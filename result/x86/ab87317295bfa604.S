@@ -1,10 +1,12 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	rorxl	$19, %edi, %eax
-	imull	$-1640531535, %eax, %eax        # imm = 0x9E3779B1
+	imull	$-1640531535, %eax, %eax
 	rorxl	$31, %eax, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	rorxl	$11, %edi, %eax
-	imull	$-862048943, %eax, %eax         # imm = 0xCC9E2D51
+	imull	$-862048943, %eax, %eax
 	rorxl	$17, %eax, %eax
 	retq
+

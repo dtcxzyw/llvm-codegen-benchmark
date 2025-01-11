@@ -1,12 +1,13 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	andl	$2147483647, %esi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	movl	%esi, %eax
@@ -14,7 +15,8 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	movl	%esi, %eax
@@ -22,7 +24,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	andl	$-2, %esi
@@ -30,7 +33,8 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	andl	$-4, %esi
@@ -38,7 +42,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000f9:                   # @func00000000000000f9
+
+func00000000000000f9:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	movl	%esi, %eax
@@ -46,7 +51,8 @@ func00000000000000f9:                   # @func00000000000000f9
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
 	movl	%esi, %eax
@@ -54,15 +60,17 @@ func0000000000000074:                   # @func0000000000000074
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
-	andl	$2147483584, %esi               # imm = 0x7FFFFFC0
+	andl	$2147483584, %esi
 	addq	$64, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	movl	%esi, %eax
@@ -70,7 +78,8 @@ func0000000000000088:                   # @func0000000000000088
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	subq	%rdx, %rsi
 	shrq	%rsi
 	movl	%esi, %eax
@@ -78,15 +87,17 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	andl	$2147483647, %esi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
 	movl	%esi, %eax
@@ -94,7 +105,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	movl	%esi, %eax
@@ -102,7 +114,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
 	movl	%esi, %eax
@@ -110,7 +123,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	subq	%rdx, %rsi
 	shrq	$5, %rsi
 	movl	%esi, %eax
@@ -118,11 +132,13 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	subq	%rdx, %rsi
 	shrq	$2, %rsi
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	andl	$2147483647, %esi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
+

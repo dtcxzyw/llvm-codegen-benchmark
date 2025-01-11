@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v12, v12, a0
@@ -10,3 +10,4 @@ func0000000000000007:                   # @func0000000000000007
 	vor.vv	v10, v10, v14
 	vor.vv	v8, v10, v8
 	ret
+

@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func000000000000001b:                   # @func000000000000001b
+	.quad	768614336404564650
+func000000000000001b:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	li	a1, 1
@@ -11,3 +11,4 @@ func000000000000001b:                   # @func000000000000001b
 	li	a0, 12
 	vmul.vx	v8, v8, a0
 	ret
+

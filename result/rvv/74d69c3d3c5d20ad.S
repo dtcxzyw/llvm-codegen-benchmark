@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func0000000000000000:                   # @func0000000000000000
+	.quad	5675921253449092805
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -14,9 +14,10 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 26
 	vmul.vx	v8, v10, a0
 	ret
+
 .LCPI1_0:
-	.quad	4137408090565272301             # 0x396b06bcc8f862ed
-func0000000000000005:                   # @func0000000000000005
+	.quad	4137408090565272301
+func0000000000000005:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -30,7 +31,8 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 400
 	vmul.vx	v8, v10, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 2
 	lui	a0, 699051
@@ -43,7 +45,8 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 3
 	vmul.vx	v8, v10, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 3
 	lui	a0, 838861
@@ -56,3 +59,4 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 3
 	vmul.vx	v8, v10, a0
 	ret
+

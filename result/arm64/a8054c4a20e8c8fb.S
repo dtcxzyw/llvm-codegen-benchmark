@@ -1,5 +1,4 @@
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
+func000000000000008a:
 	sub	x8, x0, x1
 	asr	x8, x8, #3
 	sub	x9, x2, x8
@@ -7,9 +6,8 @@ func000000000000008a:                   // @func000000000000008a
 	cmp	x8, x10
 	csinc	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func00000000000000ce:                   // @func00000000000000ce
-// %bb.0:                               // %entry
+
+func00000000000000ce:
 	sub	x8, x0, x1
 	asr	x8, x8, #3
 	sub	x9, x2, x8
@@ -17,9 +15,8 @@ func00000000000000ce:                   // @func00000000000000ce
 	cmp	x8, x9
 	csel	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	sub	x8, x0, x1
 	asr	x8, x8, #3
 	sub	x9, x2, x8
@@ -27,9 +24,8 @@ func000000000000000a:                   // @func000000000000000a
 	cmp	x8, x10
 	csinc	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func000000000000004e:                   // @func000000000000004e
-// %bb.0:                               // %entry
+
+func000000000000004e:
 	sub	x8, x0, x1
 	asr	x8, x8, #1
 	sub	x9, x2, x8
@@ -37,9 +33,8 @@ func000000000000004e:                   // @func000000000000004e
 	cmp	x8, x10
 	csinc	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func00000000000000ca:                   // @func00000000000000ca
-// %bb.0:                               // %entry
+
+func00000000000000ca:
 	sub	x8, x0, x1
 	asr	x8, x8, #6
 	sub	x9, x2, x8
@@ -47,9 +42,8 @@ func00000000000000ca:                   // @func00000000000000ca
 	cmp	x8, x10
 	csinc	x0, x8, x9, hi
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	sub	x8, x0, x1
 	asr	x8, x8, #3
 	sub	x9, x2, x8
@@ -57,4 +51,4 @@ func000000000000004a:                   // @func000000000000004a
 	cmp	x8, x10
 	csinc	x0, x8, x9, hi
 	ret
-                                        // -- End function
+

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k0
 	vcmpltpd	%zmm3, %zmm1, %k1
@@ -9,7 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	korb	%k1, %k0, %k1
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k0
 	vcmpltpd	%zmm3, %zmm1, %k1
@@ -20,7 +21,8 @@ func0000000000000004:                   # @func0000000000000004
 	korb	%k1, %k0, %k1
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k0
 	vcmplepd	%zmm1, %zmm3, %k1
@@ -31,3 +33,4 @@ func000000000000000c:                   # @func000000000000000c
 	korb	%k1, %k0, %k1
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
+

@@ -1,7 +1,6 @@
 .LCPI0_0:
-	.xword	0x3f847ae147ae147b              // double 0.01
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+	.xword	0x3f847ae147ae147b
+func0000000000000002:
 	fmov	d2, #-0.50000000
 	tst	w0, #0x1
 	adrp	x8, .LCPI0_0
@@ -11,9 +10,8 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d0, d1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fmov	d2, #-1.00000000
 	tst	w0, #0x1
 	fadd	d1, d1, d2
@@ -21,4 +19,4 @@ func0000000000000004:                   // @func0000000000000004
 	fcmp	d0, #0.0
 	cset	w0, gt
 	ret
-                                        // -- End function
+

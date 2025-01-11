@@ -1,4 +1,4 @@
-func0000000000000601:                   # @func0000000000000601
+func0000000000000601:
 	testl	%edx, %edx
 	setne	%cl
 	andb	%sil, %cl
@@ -6,7 +6,8 @@ func0000000000000601:                   # @func0000000000000601
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	testl	%edx, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -14,7 +15,8 @@ func000000000000008a:                   # @func000000000000008a
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	cmpl	$5, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -22,7 +24,8 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000050a:                   # @func000000000000050a
+
+func000000000000050a:
 	testl	%edx, %edx
 	setg	%cl
 	andb	%sil, %cl
@@ -30,7 +33,8 @@ func000000000000050a:                   # @func000000000000050a
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	cmpl	$1, %edx
 	sete	%cl
 	andb	%sil, %cl
@@ -38,15 +42,17 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
-	cmpl	$512, %edx                      # imm = 0x200
+
+func0000000000000204:
+	cmpl	$512, %edx
 	setb	%cl
 	andb	%sil, %cl
-	cmpl	$257, %edi                      # imm = 0x101
+	cmpl	$257, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000406:                   # @func0000000000000406
+
+func0000000000000406:
 	cmpl	$2, %edx
 	setae	%cl
 	andb	%sil, %cl
@@ -54,7 +60,8 @@ func0000000000000406:                   # @func0000000000000406
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000501:                   # @func0000000000000501
+
+func0000000000000501:
 	cmpl	$2, %edx
 	setge	%cl
 	andb	%sil, %cl
@@ -62,3 +69,4 @@ func0000000000000501:                   # @func0000000000000501
 	sete	%al
 	andb	%cl, %al
 	retq
+

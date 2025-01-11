@@ -1,9 +1,10 @@
 .LCPI0_0:
-	.quad	0x3faab12320000000              # double 0.052132699638605118
-func0000000000000000:                   # @func0000000000000000
-	vbroadcastsd	.LCPI0_0(%rip), %zmm2   # zmm2 = [5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2,5.2132699638605118E-2]
+	.quad	0x3faab12320000000
+func0000000000000000:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm2
 	vaddpd	%zmm2, %zmm1, %zmm3
 	vaddpd	%zmm2, %zmm0, %zmm2
 	vsubpd	%zmm0, %zmm2, %zmm0
 	vsubpd	%zmm1, %zmm3, %zmm1
 	retq
+

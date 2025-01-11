@@ -1,4 +1,4 @@
-func0000000000000078:                   # @func0000000000000078
+func0000000000000078:
 	lui	a0, 16384
 	addiw	a0, a0, -2
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -9,3 +9,4 @@ func0000000000000078:                   # @func0000000000000078
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
+

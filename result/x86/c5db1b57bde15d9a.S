@@ -1,10 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
-	cmpl	$1431655766, %edi               # imm = 0x55555556
+func0000000000000001:
+	cmpl	$1431655766, %edi
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	imull	$1431655772, %edi, %eax         # imm = 0x5555555C
+
+func0000000000000061:
+	imull	$1431655772, %edi, %eax
 	rorxl	$2, %eax, %eax
-	cmpl	$71582789, %eax                 # imm = 0x4444445
+	cmpl	$71582789, %eax
 	setb	%al
 	retq
+

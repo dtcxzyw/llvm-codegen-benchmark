@@ -1,5 +1,4 @@
-func0000000000000308:                   // @func0000000000000308
-// %bb.0:                               // %entry
+func0000000000000308:
 	mvn	x8, x2
 	add	x8, x8, x1
 	cmp	x8, #2
@@ -7,9 +6,8 @@ func0000000000000308:                   // @func0000000000000308
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000030c:                   // @func000000000000030c
-// %bb.0:                               // %entry
+
+func000000000000030c:
 	sub	x8, x1, x2
 	sub	x8, x8, #4
 	cmp	x8, #0
@@ -17,9 +15,8 @@ func000000000000030c:                   // @func000000000000030c
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	sub	x8, x1, x2
 	sub	x8, x8, #4
 	cmp	x8, #5
@@ -27,9 +24,8 @@ func000000000000000c:                   // @func000000000000000c
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000302:                   // @func0000000000000302
-// %bb.0:                               // %entry
+
+func0000000000000302:
 	mvn	x8, x2
 	add	x8, x8, x1
 	cmn	x8, #1
@@ -37,9 +33,8 @@ func0000000000000302:                   // @func0000000000000302
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	sub	x8, x1, x2
 	sub	x8, x8, #8
 	cmp	x8, #4
@@ -47,4 +42,4 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

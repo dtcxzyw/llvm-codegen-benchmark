@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	andb	$1, %dl
 	shlb	$2, %dl
 	movzbl	%dl, %ecx
@@ -8,3 +8,4 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
+

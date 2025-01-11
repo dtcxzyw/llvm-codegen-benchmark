@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000aa:
 	slli	a2, a2, 48
 	srai	a2, a2, 48
 	subw	a0, a0, a1
@@ -6,7 +6,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	slti	a0, a0, 129
 	xori	a0, a0, 1
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	slli	a2, a2, 48
 	srai	a2, a2, 48
 	subw	a0, a0, a1
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
+

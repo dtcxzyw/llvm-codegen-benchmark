@@ -1,4 +1,4 @@
-func0000000000000017:                   # @func0000000000000017
+func0000000000000017:
 	vaddsd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setp	%al
@@ -8,3 +8,4 @@ func0000000000000017:                   # @func0000000000000017
 	sete	%al
 	orb	%cl, %al
 	retq
+

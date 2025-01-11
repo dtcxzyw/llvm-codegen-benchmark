@@ -1,54 +1,48 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+func0000000000000001:
+	mov	x8, #9223372036854775807
 	tst	w1, #0x1
-	mov	w9, #4                          // =0x4
+	mov	w9, #4
 	add	x8, x2, x8
 	csel	x8, x8, x9, ne
 	cmp	x0, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	sub	x8, x2, #4
 	tst	w1, #0x1
-	mov	w9, #5                          // =0x5
+	mov	w9, #5
 	csel	x8, x8, x9, ne
 	cmp	x0, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	sub	x8, x2, #256
 	tst	w1, #0x1
 	csel	x8, x8, xzr, ne
 	cmp	x0, x8
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000064:                   // @func0000000000000064
-// %bb.0:                               // %entry
+
+func0000000000000064:
 	cmp	x2, x0
 	cset	w8, hs
 	and	w0, w1, w8
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
+
+func000000000000002a:
 	cmp	x2, x0
 	cset	w8, le
 	and	w0, w1, w8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	sub	x8, x2, #2
 	tst	w1, #0x1
-	mov	w9, #10                         // =0xa
+	mov	w9, #10
 	csel	x8, x8, x9, ne
 	cmp	x0, x8
 	cset	w0, lo
 	ret
-                                        // -- End function
+

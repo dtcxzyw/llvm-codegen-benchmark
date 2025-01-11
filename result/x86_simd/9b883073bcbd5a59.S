@@ -1,46 +1,50 @@
 .LCPI0_0:
-	.quad	0x3ff0000000000000              # double 1
-func0000000000000004:                   # @func0000000000000004
-	vbroadcastsd	.LCPI0_0(%rip), %zmm4   # zmm4 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	.quad	0x3ff0000000000000
+func0000000000000004:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm4
 	vcmpltpd	%zmm3, %zmm4, %k1
 	vcmpltpd	%zmm2, %zmm4, %k2
 	vmulpd	%zmm2, %zmm0, %zmm0 {%k2}
 	vmulpd	%zmm3, %zmm1, %zmm1 {%k1}
 	retq
+
 .LCPI1_0:
-	.quad	0x3ff6666666666666              # double 1.3999999999999999
-func0000000000000002:                   # @func0000000000000002
-	vbroadcastsd	.LCPI1_0(%rip), %zmm4   # zmm4 = [1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0,1.3999999999999999E+0]
+	.quad	0x3ff6666666666666
+func0000000000000002:
+	vbroadcastsd	.LCPI1_0(%rip), %zmm4
 	vminpd	%zmm4, %zmm3, %zmm3
 	vminpd	%zmm4, %zmm2, %zmm2
 	vmulpd	%zmm0, %zmm2, %zmm0
 	vmulpd	%zmm1, %zmm3, %zmm1
 	retq
+
 .LCPI2_0:
-	.quad	0x4059000000000000              # double 100
-func0000000000000007:                   # @func0000000000000007
+	.quad	0x4059000000000000
+func0000000000000007:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpneqpd	%zmm4, %zmm2, %k1
 	vcmpneqpd	%zmm4, %zmm3, %k2
-	vbroadcastsd	.LCPI2_0(%rip), %zmm4   # zmm4 = [1.0E+2,1.0E+2,1.0E+2,1.0E+2,1.0E+2,1.0E+2,1.0E+2,1.0E+2]
+	vbroadcastsd	.LCPI2_0(%rip), %zmm4
 	vblendmpd	%zmm3, %zmm4, %zmm3 {%k2}
 	vmovapd	%zmm2, %zmm4 {%k1}
 	vmulpd	%zmm0, %zmm4, %zmm0
 	vmulpd	%zmm1, %zmm3, %zmm1
 	retq
+
 .LCPI3_0:
-	.quad	0x408f400000000000              # double 1000
-func0000000000000005:                   # @func0000000000000005
+	.quad	0x408f400000000000
+func0000000000000005:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm4, %zmm2, %k1
 	vcmpnlepd	%zmm4, %zmm3, %k2
-	vbroadcastsd	.LCPI3_0(%rip), %zmm4   # zmm4 = [1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3]
+	vbroadcastsd	.LCPI3_0(%rip), %zmm4
 	vblendmpd	%zmm3, %zmm4, %zmm3 {%k2}
 	vmovapd	%zmm2, %zmm4 {%k1}
 	vmulpd	%zmm0, %zmm4, %zmm0
 	vmulpd	%zmm1, %zmm3, %zmm1
 	retq
-func000000000000000e:                   # @func000000000000000e
+
+func000000000000000e:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpordpd	%zmm4, %zmm2, %k1
 	vcmpordpd	%zmm4, %zmm3, %k2
@@ -49,12 +53,14 @@ func000000000000000e:                   # @func000000000000000e
 	vmulpd	%zmm0, %zmm2, %zmm0
 	vmulpd	%zmm1, %zmm3, %zmm1
 	retq
+
 .LCPI5_0:
-	.quad	0x3ff0000000000000              # double 1
-func000000000000000a:                   # @func000000000000000a
-	vbroadcastsd	.LCPI5_0(%rip), %zmm4   # zmm4 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	.quad	0x3ff0000000000000
+func000000000000000a:
+	vbroadcastsd	.LCPI5_0(%rip), %zmm4
 	vcmplepd	%zmm4, %zmm3, %k1
 	vcmplepd	%zmm4, %zmm2, %k2
 	vmulpd	%zmm2, %zmm0, %zmm0 {%k2}
 	vmulpd	%zmm3, %zmm1, %zmm1 {%k1}
 	retq
+

@@ -1,24 +1,24 @@
 .LCPI0_0:
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
-	.short	36                              # 0x24
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
+	.short	36
 .LCPI0_1:
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-	.short	38                              # 0x26
-func000000000000005c:                   # @func000000000000005c
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+	.short	38
+func000000000000005c:
 	vpmovdw	%ymm0, %xmm0
-	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm1    # [36,36,36,36,36,36,36,36]
+	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpextrw	$1, %xmm1, %eax
 	vpextrw	$1, %xmm0, %ecx
@@ -63,3 +63,4 @@ func000000000000005c:                   # @func000000000000005c
 	vpinsrw	$7, %eax, %xmm2, %xmm0
 	vzeroupper
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andb	$1, %dil
 	leaq	-1(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andb	$1, %dil
 	leaq	-1(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
@@ -14,7 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+
+func000000000000000d:
 	andb	$1, %dil
 	leaq	1(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
@@ -22,9 +24,11 @@ func000000000000000d:                   # @func000000000000000d
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	leaq	2(%rdx,%rsi), %rcx
 	testb	$1, %dil
-	movl	$16384, %eax                    # imm = 0x4000
+	movl	$16384, %eax
 	cmovneq	%rcx, %rax
 	retq
+

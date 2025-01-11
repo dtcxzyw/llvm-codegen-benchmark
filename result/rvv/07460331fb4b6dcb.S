@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000001b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 32
@@ -8,7 +8,8 @@ func000000000000001b:                   # @func000000000000001b
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 48
@@ -18,7 +19,8 @@ func0000000000000013:                   # @func0000000000000013
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 32
@@ -28,7 +30,8 @@ func000000000000001f:                   # @func000000000000001f
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 48
@@ -38,7 +41,8 @@ func0000000000000017:                   # @func0000000000000017
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 48
@@ -48,7 +52,8 @@ func0000000000000010:                   # @func0000000000000010
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func000000000000001a:                   # @func000000000000001a
+
+func000000000000001a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	vwsll.vi	v14, v12, 24
@@ -57,7 +62,8 @@ func000000000000001a:                   # @func000000000000001a
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v12, v11
 	li	a0, 48
@@ -67,3 +73,4 @@ func0000000000000012:                   # @func0000000000000012
 	vzext.vf2	v12, v10
 	vor.vv	v8, v8, v12
 	ret
+

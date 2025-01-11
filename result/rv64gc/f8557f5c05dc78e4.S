@@ -1,11 +1,12 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	add	a1, a1, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	add	a1, a1, a2
 	sext.w	a0, a0
 	li	a2, 40
@@ -13,7 +14,8 @@ func0000000000000013:                   # @func0000000000000013
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	add	a1, a1, a2
 	sext.w	a0, a0
 	slli	a2, a0, 5
@@ -22,7 +24,8 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	add	a1, a1, a2
 	slli	a0, a0, 32
 	srli	a2, a0, 30
@@ -31,3 +34,4 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addi	a0, a0, 10
 	ret
+

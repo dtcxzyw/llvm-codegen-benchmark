@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	xorl	%eax, %eax
 	cmpb	$1, %dl
 	sete	%al
@@ -8,7 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	xorl	%ecx, %ecx
 	cmpb	$6, %dl
 	setae	%cl
@@ -19,7 +20,8 @@ func0000000000000011:                   # @func0000000000000011
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	xorl	%ecx, %ecx
 	cmpb	$6, %dl
 	setae	%cl
@@ -30,7 +32,8 @@ func0000000000000010:                   # @func0000000000000010
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+
+func0000000000000029:
 	cmpb	$65, %dl
 	movl	$-55, %eax
 	movl	$-48, %ecx
@@ -40,7 +43,8 @@ func0000000000000029:                   # @func0000000000000029
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	xorl	%ecx, %ecx
 	cmpb	$1, %dl
 	sete	%cl
@@ -50,7 +54,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	cmpb	$1, %dl
 	movl	$20, %eax
 	movl	$5, %ecx
@@ -60,7 +65,8 @@ func0000000000000005:                   # @func0000000000000005
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000020:                   # @func0000000000000020
+
+func0000000000000020:
 	cmpb	$10, %dl
 	movl	$2, %ecx
 	sbbl	$-1, %ecx
@@ -69,7 +75,8 @@ func0000000000000020:                   # @func0000000000000020
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpb	$10, %dl
 	movl	$1, %ecx
 	sbbl	$-1, %ecx
@@ -78,7 +85,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	cmpb	$10, %dl
 	movl	$1, %ecx
 	sbbl	$-1, %ecx
@@ -87,3 +95,4 @@ func0000000000000023:                   # @func0000000000000023
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

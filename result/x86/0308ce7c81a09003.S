@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000e:
 	andl	$1, %edx
 	decl	%edx
 	orl	$191, %edx
@@ -7,3 +7,4 @@ func000000000000000e:                   # @func000000000000000e
 	shlxq	%rdx, %rax, %rax
 	andq	%rdi, %rax
 	retq
+

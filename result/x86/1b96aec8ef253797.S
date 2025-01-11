@@ -1,4 +1,4 @@
-func000000000000056a:                   # @func000000000000056a
+func000000000000056a:
 	leal	-1(%rdi), %eax
 	cmpl	%eax, %esi
 	setge	%cl
@@ -6,14 +6,16 @@ func000000000000056a:                   # @func000000000000056a
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	addl	$-1, %edi
 	setb	%cl
 	cmpl	%edi, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000cea:                   # @func0000000000000cea
+
+func0000000000000cea:
 	leal	1(%rdi), %eax
 	cmpl	%eax, %esi
 	setle	%cl
@@ -21,14 +23,16 @@ func0000000000000cea:                   # @func0000000000000cea
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	addl	$-1, %edi
 	setb	%cl
 	cmpl	%edi, %esi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000096a:                   # @func000000000000096a
+
+func000000000000096a:
 	leal	2(%rdi), %eax
 	cmpl	%eax, %esi
 	setge	%cl
@@ -36,14 +40,16 @@ func000000000000096a:                   # @func000000000000096a
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+
+func000000000000014c:
 	addl	$-1, %edi
 	setb	%cl
 	cmpl	%edi, %esi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000546:                   # @func0000000000000546
+
+func0000000000000546:
 	leal	2147483647(%rdi), %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -51,7 +57,8 @@ func0000000000000546:                   # @func0000000000000546
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000042a:                   # @func000000000000042a
+
+func000000000000042a:
 	leal	-2(%rdi), %eax
 	cmpl	%eax, %esi
 	sete	%cl
@@ -59,7 +66,8 @@ func000000000000042a:                   # @func000000000000042a
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000d4a:                   # @func0000000000000d4a
+
+func0000000000000d4a:
 	leal	1(%rdi), %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -67,7 +75,8 @@ func0000000000000d4a:                   # @func0000000000000d4a
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000054c:                   # @func000000000000054c
+
+func000000000000054c:
 	leal	-2(%rdi), %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -75,7 +84,8 @@ func000000000000054c:                   # @func000000000000054c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000054a:                   # @func000000000000054a
+
+func000000000000054a:
 	leal	1(%rdi), %eax
 	cmpl	%eax, %esi
 	setg	%cl
@@ -83,3 +93,4 @@ func000000000000054a:                   # @func000000000000054a
 	setge	%al
 	andb	%cl, %al
 	retq
+

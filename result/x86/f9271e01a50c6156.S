@@ -1,4 +1,4 @@
-func0000000000001114:                   # @func0000000000001114
+func0000000000001114:
 	cmpb	$8, %dl
 	setb	%cl
 	cmpl	$2, %esi
@@ -8,7 +8,8 @@ func0000000000001114:                   # @func0000000000001114
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	cmpb	$58, %dl
 	sete	%al
 	testl	%esi, %esi
@@ -18,7 +19,8 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000042c:                   # @func000000000000042c
+
+func000000000000042c:
 	cmpb	$48, %dl
 	sete	%al
 	cmpl	$3, %esi
@@ -28,7 +30,8 @@ func000000000000042c:                   # @func000000000000042c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000001194:                   # @func0000000000001194
+
+func0000000000001194:
 	cmpb	$-96, %dl
 	setb	%cl
 	testl	%esi, %esi
@@ -38,7 +41,8 @@ func0000000000001194:                   # @func0000000000001194
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
-func0000000000001021:                   # @func0000000000001021
+
+func0000000000001021:
 	cmpb	$6, %dl
 	setb	%cl
 	xorl	$26, %edi
@@ -46,7 +50,8 @@ func0000000000001021:                   # @func0000000000001021
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000058c:                   # @func000000000000058c
+
+func000000000000058c:
 	testl	%edx, %edx
 	sete	%cl
 	testb	%sil, %sil
@@ -56,7 +61,8 @@ func000000000000058c:                   # @func000000000000058c
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	xorl	$5, %edx
 	testb	%sil, %sil
 	setne	%cl
@@ -64,3 +70,4 @@ func0000000000000581:                   # @func0000000000000581
 	sete	%al
 	andb	%cl, %al
 	retq
+

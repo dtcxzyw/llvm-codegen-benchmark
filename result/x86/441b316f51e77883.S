@@ -1,4 +1,4 @@
-func00000000000028c1:                   # @func00000000000028c1
+func00000000000028c1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -7,7 +7,8 @@ func00000000000028c1:                   # @func00000000000028c1
 	cmpl	$1, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000001d66:                   # @func0000000000001d66
+
+func0000000000001d66:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -16,7 +17,8 @@ func0000000000001d66:                   # @func0000000000001d66
 	testl	%edi, %edi
 	cmovsl	%ecx, %eax
 	retq
-func00000000000014e1:                   # @func00000000000014e1
+
+func00000000000014e1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -25,7 +27,8 @@ func00000000000014e1:                   # @func00000000000014e1
 	cmpl	$11, %edi
 	cmovel	%ecx, %eax
 	retq
-func00000000000010c1:                   # @func00000000000010c1
+
+func00000000000010c1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -34,7 +37,8 @@ func00000000000010c1:                   # @func00000000000010c1
 	cmpl	$11, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000002cea:                   # @func0000000000002cea
+
+func0000000000002cea:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -43,7 +47,8 @@ func0000000000002cea:                   # @func0000000000002cea
 	testl	%edi, %edi
 	cmovgl	%ecx, %eax
 	retq
-func0000000000002ce1:                   # @func0000000000002ce1
+
+func0000000000002ce1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -52,7 +57,8 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000001d61:                   # @func0000000000001d61
+
+func0000000000001d61:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -61,7 +67,8 @@ func0000000000001d61:                   # @func0000000000001d61
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func00000000000028ca:                   # @func00000000000028ca
+
+func00000000000028ca:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi
@@ -70,3 +77,4 @@ func00000000000028ca:                   # @func00000000000028ca
 	testl	%edi, %edi
 	cmovgl	%ecx, %eax
 	retq
+

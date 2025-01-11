@@ -1,12 +1,13 @@
-func000000000000002c:                   # @func000000000000002c
-	andl	$4095, %edx                     # imm = 0xFFF
+func000000000000002c:
+	andl	$4095, %edx
 	cmpq	%rdx, %rsi
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
 	seta	%cl
@@ -14,7 +15,8 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000012c:                   # @func000000000000012c
+
+func000000000000012c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
 	setae	%cl
@@ -22,3 +24,4 @@ func000000000000012c:                   # @func000000000000012c
 	setne	%al
 	andb	%cl, %al
 	retq
+

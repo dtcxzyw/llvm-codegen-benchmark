@@ -1,38 +1,39 @@
 .LCPI0_0:
-	.byte	32                              # 0x20
-	.byte	33                              # 0x21
-	.byte	0                               # 0x0
-	.byte	35                              # 0x23
-	.byte	36                              # 0x24
-	.byte	37                              # 0x25
-	.byte	1                               # 0x1
-	.byte	39                              # 0x27
-	.byte	40                              # 0x28
-	.byte	41                              # 0x29
-	.byte	2                               # 0x2
-	.byte	43                              # 0x2b
-	.byte	44                              # 0x2c
-	.byte	45                              # 0x2d
-	.byte	3                               # 0x3
-	.byte	47                              # 0x2f
-	.byte	48                              # 0x30
-	.byte	49                              # 0x31
-	.byte	4                               # 0x4
-	.byte	51                              # 0x33
-	.byte	52                              # 0x34
-	.byte	53                              # 0x35
-	.byte	5                               # 0x5
-	.byte	55                              # 0x37
-	.byte	56                              # 0x38
-	.byte	57                              # 0x39
-	.byte	6                               # 0x6
-	.byte	59                              # 0x3b
-	.byte	60                              # 0x3c
-	.byte	61                              # 0x3d
-	.byte	7                               # 0x7
-	.byte	63                              # 0x3f
-func0000000000000001:                   # @func0000000000000001
+	.byte	32
+	.byte	33
+	.byte	0
+	.byte	35
+	.byte	36
+	.byte	37
+	.byte	1
+	.byte	39
+	.byte	40
+	.byte	41
+	.byte	2
+	.byte	43
+	.byte	44
+	.byte	45
+	.byte	3
+	.byte	47
+	.byte	48
+	.byte	49
+	.byte	4
+	.byte	51
+	.byte	52
+	.byte	53
+	.byte	5
+	.byte	55
+	.byte	56
+	.byte	57
+	.byte	6
+	.byte	59
+	.byte	60
+	.byte	61
+	.byte	7
+	.byte	63
+func0000000000000001:
 	vpxor	%xmm1, %xmm1, %xmm1
-	vmovdqa	.LCPI0_0(%rip), %ymm2           # ymm2 = [32,33,0,35,36,37,1,39,40,41,2,43,44,45,3,47,48,49,4,51,52,53,5,55,56,57,6,59,60,61,7,63]
+	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpermt2b	%ymm1, %ymm2, %ymm0
 	retq
+

@@ -1,11 +1,12 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	leal	7(%rdx), %eax
 	andl	$-8, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %edi
 	addl	%edi, %eax
 	retq
-func00000000000000a7:                   # @func00000000000000a7
+
+func00000000000000a7:
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	cmovlel	%edi, %ecx
@@ -13,7 +14,8 @@ func00000000000000a7:                   # @func00000000000000a7
 	andl	$31, %eax
 	addl	%ecx, %eax
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+
+func00000000000000a6:
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	cmovlel	%edi, %ecx
@@ -21,3 +23,4 @@ func00000000000000a6:                   # @func00000000000000a6
 	andl	$31, %eax
 	addl	%ecx, %eax
 	retq
+

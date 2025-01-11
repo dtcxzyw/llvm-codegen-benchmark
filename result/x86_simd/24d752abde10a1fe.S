@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	10                              # 0xa
-func0000000000000408:                   # @func0000000000000408
+	.quad	10
+func0000000000000408:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm0, %ymm2, %ymm0
@@ -9,9 +9,10 @@ func0000000000000408:                   # @func0000000000000408
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	10                              # 0xa
-func0000000000000404:                   # @func0000000000000404
+	.quad	10
+func0000000000000404:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm0, %ymm2, %ymm0
@@ -20,9 +21,10 @@ func0000000000000404:                   # @func0000000000000404
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	10                              # 0xa
-func0000000000000409:                   # @func0000000000000409
+	.quad	10
+func0000000000000409:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvq	%ymm2, %ymm3, %ymm2
 	vpandn	%ymm0, %ymm2, %ymm0
@@ -31,3 +33,4 @@ func0000000000000409:                   # @func0000000000000409
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

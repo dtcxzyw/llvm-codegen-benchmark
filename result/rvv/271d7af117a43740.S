@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -15,7 +15,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	addi	a0, a0, 1091
 	vmsleu.vx	v0, v8, a0
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+
+func00000000000000ac:
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -32,3 +33,4 @@ func00000000000000ac:                   # @func00000000000000ac
 	addi	a0, a0, 1091
 	vmsgtu.vx	v0, v8, a0
 	ret
+

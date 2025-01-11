@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	4223091239536077                # 0xf00e10d2fc5cd
-func000000000000003f:                   # @func000000000000003f
+	.quad	4223091239536077
+func000000000000003f:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	zext.h	a2, a2
@@ -17,3 +17,4 @@ func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a3
 	add	a0, a0, a2
 	ret
+

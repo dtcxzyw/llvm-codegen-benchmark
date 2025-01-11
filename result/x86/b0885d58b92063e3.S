@@ -1,4 +1,4 @@
-func0000000000000e94:                   # @func0000000000000e94
+func0000000000000e94:
 	incl	%edx
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000000e94:                   # @func0000000000000e94
 	setb	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	li	a0, 80
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -7,9 +7,10 @@ func0000000000000001:                   # @func0000000000000001
 	vmacc.vx	v10, a0, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret
+
 .LCPI1_0:
-	.quad	46116860184273878               # 0xa3d70a3d70a3d6
-func0000000000000148:                   # @func0000000000000148
+	.quad	46116860184273878
+func0000000000000148:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	li	a1, 16
@@ -20,3 +21,4 @@ func0000000000000148:                   # @func0000000000000148
 	vmacc.vx	v10, a0, v8
 	vmerge.vim	v8, v10, -1, v0
 	ret
+

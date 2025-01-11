@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
+	.byte	48
+	.byte	48
+	.byte	48
+	.byte	48
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,8 +16,8 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.quad	1                               # 0x1
-func000000000000002c:                   # @func000000000000002c
+	.quad	1
+func000000000000002c:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
@@ -26,11 +26,12 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
-	.byte	48                              # 0x30
+	.byte	48
+	.byte	48
+	.byte	48
+	.byte	48
 	.zero	1
 	.zero	1
 	.zero	1
@@ -44,8 +45,8 @@ func000000000000002c:                   # @func000000000000002c
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.quad	1                               # 0x1
-func0000000000000028:                   # @func0000000000000028
+	.quad	1
+func0000000000000028:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k1
@@ -54,3 +55,4 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

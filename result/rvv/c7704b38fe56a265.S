@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
 	vwsll.vv	v12, v11, v10
@@ -7,7 +7,8 @@ func0000000000000020:                   # @func0000000000000020
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret
-func0000000000000077:                   # @func0000000000000077
+
+func0000000000000077:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
 	vwsll.vv	v12, v11, v10
@@ -16,7 +17,8 @@ func0000000000000077:                   # @func0000000000000077
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
 	vwsll.vv	v12, v11, v10
@@ -25,7 +27,8 @@ func0000000000000060:                   # @func0000000000000060
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	lui	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
@@ -35,3 +38,4 @@ func0000000000000040:                   # @func0000000000000040
 	vrsub.vi	v10, v12, 0
 	vand.vv	v8, v8, v10
 	ret
+

@@ -1,7 +1,8 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	movl	%esi, %eax
-	andl	$1048574, %eax                  # imm = 0xFFFFE
-	testl	$2146435072, %esi               # imm = 0x7FF00000
+	andl	$1048574, %eax
+	testl	$2146435072, %esi
 	cmovnel	%edi, %eax
 	shrl	%eax
 	retq
+

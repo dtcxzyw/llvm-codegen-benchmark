@@ -1,5 +1,4 @@
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+func0000000000000024:
 	fabs	d2, d2
 	fcmp	d1, d2
 	fcsel	d1, d2, d1, mi
@@ -7,9 +6,8 @@ func0000000000000024:                   // @func0000000000000024
 	fmov	d1, #1.00000000
 	fmadd	d0, d0, d0, d1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fabs	d2, d2
 	fcmp	d1, d2
 	fcsel	d1, d2, d1, mi
@@ -17,4 +15,4 @@ func0000000000000004:                   // @func0000000000000004
 	fmov	d1, #1.00000000
 	fmadd	d0, d0, d0, d1
 	ret
-                                        // -- End function
+

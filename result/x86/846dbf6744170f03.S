@@ -1,22 +1,24 @@
-func0000000000000108:                   # @func0000000000000108
+func0000000000000108:
 	leal	-33920(%rdi), %eax
 	cmpl	$18, %eax
 	setb	%cl
-	addl	$-33904, %edi                   # imm = 0xFFFF7B90
+	addl	$-33904, %edi
 	cmpl	$15, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000908:                   # @func0000000000000908
+
+func0000000000000908:
 	leal	-57344(%rdi), %eax
-	cmpl	$1056768, %eax                  # imm = 0x102000
+	cmpl	$1056768, %eax
 	setb	%cl
 	addl	$-160, %edi
-	cmpl	$55136, %edi                    # imm = 0xD760
+	cmpl	$55136, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000002908:                   # @func0000000000002908
+
+func0000000000002908:
 	leal	-4(%rdi), %eax
 	cmpl	$3, %eax
 	setb	%cl
@@ -25,3 +27,4 @@ func0000000000002908:                   # @func0000000000002908
 	setb	%al
 	orb	%cl, %al
 	retq
+

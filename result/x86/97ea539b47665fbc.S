@@ -1,4 +1,4 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000081:
 	xorl	%edx, %esi
 	cmpl	$16, %esi
 	setb	%cl
@@ -6,14 +6,16 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000146:                   # @func0000000000000146
+
+func0000000000000146:
 	xorl	%edx, %esi
 	setns	%cl
 	testl	%edi, %edi
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	xorl	%edx, %esi
 	cmpl	$2, %esi
 	setb	%cl
@@ -21,7 +23,8 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	xorl	%edx, %esi
 	cmpl	$2, %esi
 	setb	%cl
@@ -29,7 +32,8 @@ func0000000000000184:                   # @func0000000000000184
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	xorl	%edx, %esi
 	cmpl	$64, %esi
 	setb	%cl
@@ -37,3 +41,4 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
+

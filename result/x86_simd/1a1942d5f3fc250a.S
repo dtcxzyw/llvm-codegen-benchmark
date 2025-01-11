@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.quad	0x408f400000000000              # double 1000
-func0000000000000004:                   # @func0000000000000004
-	vbroadcastsd	.LCPI0_0(%rip), %zmm6   # zmm6 = [1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3]
+	.quad	0x408f400000000000
+func0000000000000004:
+	vbroadcastsd	.LCPI0_0(%rip), %zmm6
 	vdivpd	%zmm6, %zmm4, %zmm4
 	vdivpd	%zmm6, %zmm5, %zmm5
 	vaddpd	%zmm3, %zmm5, %zmm3
@@ -12,10 +12,11 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	0x412e848000000000              # double 1.0E+6
-func0000000000000002:                   # @func0000000000000002
-	vbroadcastsd	.LCPI1_0(%rip), %zmm6   # zmm6 = [1.0E+6,1.0E+6,1.0E+6,1.0E+6,1.0E+6,1.0E+6,1.0E+6,1.0E+6]
+	.quad	0x412e848000000000
+func0000000000000002:
+	vbroadcastsd	.LCPI1_0(%rip), %zmm6
 	vdivpd	%zmm6, %zmm4, %zmm4
 	vdivpd	%zmm6, %zmm5, %zmm5
 	vaddpd	%zmm3, %zmm5, %zmm3
@@ -26,10 +27,11 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	0x4008000000000000              # double 3
-func0000000000000003:                   # @func0000000000000003
-	vbroadcastsd	.LCPI2_0(%rip), %zmm6   # zmm6 = [3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0,3.0E+0]
+	.quad	0x4008000000000000
+func0000000000000003:
+	vbroadcastsd	.LCPI2_0(%rip), %zmm6
 	vdivpd	%zmm6, %zmm4, %zmm4
 	vdivpd	%zmm6, %zmm5, %zmm5
 	vaddpd	%zmm5, %zmm3, %zmm3
@@ -40,10 +42,11 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	0x408f400000000000              # double 1000
-func0000000000000005:                   # @func0000000000000005
-	vbroadcastsd	.LCPI3_0(%rip), %zmm6   # zmm6 = [1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3,1.0E+3]
+	.quad	0x408f400000000000
+func0000000000000005:
+	vbroadcastsd	.LCPI3_0(%rip), %zmm6
 	vdivpd	%zmm6, %zmm4, %zmm4
 	vdivpd	%zmm6, %zmm5, %zmm5
 	vaddpd	%zmm3, %zmm5, %zmm3
@@ -54,3 +57,4 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

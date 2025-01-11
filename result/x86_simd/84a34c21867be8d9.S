@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	vpsrad	$3, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -49,3 +49,4 @@ func0000000000000005:                   # @func0000000000000005
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
 	vpmulld	%ymm0, %ymm2, %ymm0
 	retq
+

@@ -1,10 +1,12 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	$510, %eax                      # imm = 0x1FE
+func0000000000000000:
+	movl	$510, %eax
 	btl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	movl	$7, %eax
 	btl	%edi, %eax
 	setb	%al
 	retq
+

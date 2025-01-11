@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	or	a1, a1, a2
 	lui	a2, 1
 	or	a0, a0, a1
@@ -9,7 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	or	a1, a1, a2
 	li	a2, 1
 	or	a0, a0, a1
@@ -18,13 +19,15 @@ func0000000000000041:                   # @func0000000000000041
 	and	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	or	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 61
 	srli	a0, a0, 63
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	or	a1, a1, a2
 	li	a2, -1
 	or	a0, a0, a1
@@ -33,16 +36,19 @@ func0000000000000061:                   # @func0000000000000061
 	and	a0, a0, a2
 	seqz	a0, a0
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	or	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 54
 	srli	a0, a0, 63
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	or	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 12
 	srli	a0, a0, 12
 	snez	a0, a0
 	ret
+

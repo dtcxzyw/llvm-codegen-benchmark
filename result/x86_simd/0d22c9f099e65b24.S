@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpextrb	$1, %xmm0, %eax
 	movzbl	%al, %eax
 	divb	%cl
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	vmovd	%xmm1, %ecx
 	vmovd	%xmm0, %eax
 	movzbl	%al, %eax
@@ -85,7 +85,7 @@ func0000000000000000:                   # @func0000000000000000
 	movzbl	%al, %eax
 	vpextrb	$15, %xmm1, %esi
 	divb	%sil
-	vpinsrb	$1, -4(%rsp), %xmm2, %xmm0      # 4-byte Folded Reload
+	vpinsrb	$1, -4(%rsp), %xmm2, %xmm0
 	vpinsrb	$2, %edx, %xmm0, %xmm0
 	vpinsrb	$3, %edi, %xmm0, %xmm0
 	vpinsrb	$4, %r8d, %xmm0, %xmm0
@@ -107,3 +107,4 @@ func0000000000000000:                   # @func0000000000000000
 	popq	%r15
 	popq	%rbp
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	movl	%edi, %eax
 	shrl	$16, %eax
 	orl	%edi, %eax
@@ -6,11 +6,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$16, %eax
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	movl	%edi, %eax
 	shrl	$16, %eax
 	orl	%edi, %eax
-	addl	$-65535, %eax                   # imm = 0xFFFF0001
-	cmpl	$-65536, %eax                   # imm = 0xFFFF0000
+	addl	$-65535, %eax
+	cmpl	$-65536, %eax
 	setb	%al
 	retq
+

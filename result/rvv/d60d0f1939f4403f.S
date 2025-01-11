@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	lui	a0, 276464
 	fli.s	fa5, 1.0
 	fmv.w.x	fa4, a0
@@ -12,3 +12,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
+

@@ -1,8 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	$11141307, %eax                 # imm = 0xAA00BB
+func0000000000000000:
+	movl	$11141307, %eax
 	shrxl	%edi, %eax, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movl	$67108879, %eax                 # imm = 0x400000F
+
+func0000000000000010:
+	movl	$67108879, %eax
 	shrxl	%edi, %eax, %eax
 	retq
+

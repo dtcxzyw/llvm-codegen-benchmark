@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	li	a0, -3
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vx	v8, a0, v9
@@ -7,7 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	vwmulu.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	li	a0, 60
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vx	v8, a0, v9
@@ -16,7 +17,8 @@ func000000000000007f:                   # @func000000000000007f
 	vwmulu.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	li	a0, 3
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vx	v8, a0, v9
@@ -26,3 +28,4 @@ func000000000000002a:                   # @func000000000000002a
 	bseti	a0, a0, 32
 	vmul.vx	v8, v10, a0
 	ret
+

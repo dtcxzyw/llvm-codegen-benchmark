@@ -1,9 +1,10 @@
-func0000000000000000:                   # @func0000000000000000
-	imull	$-2048144789, %esi, %eax        # imm = 0x85EBCA6B
+func0000000000000000:
+	imull	$-2048144789, %esi, %eax
 	xorl	%edi, %eax
-	imull	$-1028477387, %eax, %eax        # imm = 0xC2B2AE35
+	imull	$-1028477387, %eax, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	movl	%esi, %ecx
 	shll	$12, %ecx
 	addl	%esi, %ecx
@@ -12,7 +13,8 @@ func0000000000000005:                   # @func0000000000000005
 	shll	$4, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	movl	%esi, %ecx
 	shll	$4, %ecx
 	addl	%esi, %ecx
@@ -21,7 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 	shll	$10, %eax
 	addl	%ecx, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	movl	%esi, %ecx
 	shll	$12, %ecx
 	addl	%esi, %ecx
@@ -30,3 +33,4 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$4, %eax
 	addl	%ecx, %eax
 	retq
+

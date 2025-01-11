@@ -1,4 +1,4 @@
-func00000000000000fe:                   # @func00000000000000fe
+func00000000000000fe:
 	lui	a3, 1
 	sext.w	a0, a0
 	addiw	a3, a3, -608
@@ -9,7 +9,8 @@ func00000000000000fe:                   # @func00000000000000fe
 	addi	a0, a0, 2047
 	addi	a0, a0, 361
 	ret
-func00000000000000ee:                   # @func00000000000000ee
+
+func00000000000000ee:
 	li	a3, 220
 	sext.w	a0, a0
 	mul	a1, a1, a3
@@ -20,7 +21,8 @@ func00000000000000ee:                   # @func00000000000000ee
 	add	a0, a0, a1
 	addi	a0, a0, 112
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	lui	a3, 2
 	sext.w	a0, a0
 	addiw	a4, a3, 176
@@ -31,3 +33,4 @@ func00000000000000cc:                   # @func00000000000000cc
 	addiw	a1, a3, 208
 	add	a0, a0, a1
 	ret
+

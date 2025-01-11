@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	srli	a0, a1, 1
@@ -48,7 +48,8 @@ func0000000000000007:                   # @func0000000000000007
 .LBB0_2:
 	li	a0, 1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	li	a6, 64
 	li	a3, 64
 	beqz	a1, .LBB1_2
@@ -93,9 +94,10 @@ func0000000000000003:                   # @func0000000000000003
 	add	a3, a3, a4
 	mul	a3, a1, a3
 	srli	a3, a3, 56
-.LBB1_2:                                # %cond.end
+.LBB1_2:
 	sub	a1, a6, a3
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
+

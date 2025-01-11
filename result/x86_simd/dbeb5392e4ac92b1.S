@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	vcvtpd2ps	%zmm1, %ymm1
 	vcvtpd2ps	%zmm2, %ymm2
 	vinsertf64x4	$1, %ymm2, %zmm1, %zmm1
@@ -8,9 +8,10 @@ func0000000000000008:                   # @func0000000000000008
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmovaps	%zmm1, %zmm0
 	retq
+
 .LCPI1_0:
-	.long	0x3f800000                      # float 1
-func0000000000000002:                   # @func0000000000000002
+	.long	0x3f800000
+func0000000000000002:
 	vcvtpd2ps	%zmm1, %ymm1
 	vcvtpd2ps	%zmm2, %ymm2
 	vinsertf64x4	$1, %ymm2, %zmm1, %zmm1
@@ -19,3 +20,4 @@ func0000000000000002:                   # @func0000000000000002
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vmovaps	%zmm1, %zmm0
 	retq
+

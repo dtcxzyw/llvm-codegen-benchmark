@@ -1,4 +1,4 @@
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000c8:
 	slli	a1, a1, 56
 	li	a2, 85
 	srai	a1, a1, 56
@@ -6,7 +6,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	mulw	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	slli	a1, a1, 56
 	lui	a2, 524288
 	srai	a1, a1, 56
@@ -16,3 +17,4 @@ func000000000000002a:                   # @func000000000000002a
 	mulw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
+

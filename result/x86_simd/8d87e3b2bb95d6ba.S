@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.long	0x3da3d70a                      # float 0.0799999982
+	.long	0x3da3d70a
 .LCPI0_1:
-	.quad	0x3fe999999999999a              # double 0.80000000000000004
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fe999999999999a
+func0000000000000000:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
-	vbroadcastsd	.LCPI0_1(%rip), %zmm4   # zmm4 = [8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1,8.0000000000000004E-1]
+	vbroadcastsd	.LCPI0_1(%rip), %zmm4
 	vaddpd	%zmm4, %zmm2, %zmm2
 	vaddpd	%zmm4, %zmm3, %zmm3
 	vmulpd	%zmm1, %zmm3, %zmm1
@@ -16,3 +16,4 @@ func0000000000000000:                   # @func0000000000000000
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
 	retq
+

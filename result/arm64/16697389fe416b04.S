@@ -1,24 +1,18 @@
-func00000000000001f4:                   // @func00000000000001f4
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+func00000000000001f4:
 	add	x8, x0, w2, uxtb
 	cmp	x8, w1, uxtw
 	cset	w0, lo
 	ret
-                                        // -- End function
-func00000000000000f4:                   // @func00000000000000f4
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func00000000000000f4:
 	add	x8, x0, w2, uxtb
 	cmp	x8, w1, uxtw
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000074:                   // @func0000000000000074
-// %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
+
+func0000000000000074:
 	add	x8, x0, w2, uxtb
 	cmp	x8, w1, uxtw
 	cset	w0, lo
 	ret
-                                        // -- End function
+

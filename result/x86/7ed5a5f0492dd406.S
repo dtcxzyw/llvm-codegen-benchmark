@@ -1,22 +1,24 @@
 .LCPI0_0:
-	.quad	0xbcd203afa0000000              # double -1.0000000036274937E-15
-func000000000000000d:                   # @func000000000000000d
+	.quad	0xbcd203afa0000000
+func000000000000000d:
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setbe	%al
 	andb	%dil, %al
 	retq
+
 .LCPI1_0:
-	.quad	0x421d5ec4b0000000              # double 3.1536E+10
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x421d5ec4b0000000
+func0000000000000004:
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	andb	%dil, %al
 	retq
+
 .LCPI2_0:
-	.quad	0xbfaab12320000000              # double -0.052132699638605118
-func0000000000000008:                   # @func0000000000000008
+	.quad	0xbfaab12320000000
+func0000000000000008:
 	vaddsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setnp	%cl
@@ -24,3 +26,4 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
+

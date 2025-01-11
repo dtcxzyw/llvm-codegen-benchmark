@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000081:                   # @func0000000000000081
+	.quad	3353953467947191203
+func0000000000000081:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	srai	a1, a1, 3
@@ -8,9 +8,10 @@ func0000000000000081:                   # @func0000000000000081
 	mul	a0, a0, a2
 	seqz	a0, a0
 	ret
+
 .LCPI1_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000088:                   # @func0000000000000088
+	.quad	3353953467947191203
+func0000000000000088:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	srai	a1, a1, 3
@@ -19,11 +20,12 @@ func0000000000000088:                   # @func0000000000000088
 	srli	a0, a0, 62
 	snez	a0, a0
 	ret
+
 .LCPI2_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
+	.quad	3074457345618258603
 .LCPI2_1:
-	.quad	384307168202282325              # 0x555555555555555
-func0000000000000028:                   # @func0000000000000028
+	.quad	384307168202282325
+func0000000000000028:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	lui	a3, %hi(.LCPI2_1)
@@ -35,9 +37,10 @@ func0000000000000028:                   # @func0000000000000028
 	mul	a0, a0, a1
 	sltu	a0, a3, a0
 	ret
+
 .LCPI3_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000021:                   # @func0000000000000021
+	.quad	3074457345618258603
+func0000000000000021:
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	mulh	a1, a1, a2
@@ -48,7 +51,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+
+func00000000000000a8:
 	srai	a1, a1, 3
 	lui	a2, 699051
 	mul	a0, a1, a0
@@ -59,7 +63,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	srli	a0, a0, 60
 	snez	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+
+func00000000000000a1:
 	srai	a1, a1, 3
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -70,3 +75,4 @@ func00000000000000a1:                   # @func00000000000000a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+

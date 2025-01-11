@@ -1,4 +1,4 @@
-func0000000000000e94:                   # @func0000000000000e94
+func0000000000000e94:
 	leaq	1(%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000e94:                   # @func0000000000000e94
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000e86:                   # @func0000000000000e86
+
+func0000000000000e86:
 	leaq	1(%rsi), %rax
 	cmpq	%rdi, %rax
 	setl	%cl
@@ -14,7 +15,8 @@ func0000000000000e86:                   # @func0000000000000e86
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000e84:                   # @func0000000000000e84
+
+func0000000000000e84:
 	leaq	1(%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%cl
@@ -22,3 +24,4 @@ func0000000000000e84:                   # @func0000000000000e84
 	setb	%al
 	andb	%cl, %al
 	retq
+

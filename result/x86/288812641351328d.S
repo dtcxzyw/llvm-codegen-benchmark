@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	leaq	255(%rsi), %rcx
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rcx
@@ -10,3 +10,4 @@ func0000000000000009:                   # @func0000000000000009
 	shlq	$3, %rdi
 	subq	%rdi, %rax
 	retq
+

@@ -1,6 +1,5 @@
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	x8, #56455                      // =0xdc87
+func0000000000000001:
+	mov	x8, #56455
 	add	x9, x0, w1, sxtw
 	movk	x8, #64819, lsl #16
 	movk	x8, #43125, lsl #32
@@ -9,18 +8,16 @@ func0000000000000001:                   // @func0000000000000001
 	lsr	x10, x8, #63
 	lsr	x8, x8, #25
 	add	w8, w8, w10
-	mov	w10, #23552                     // =0x5c00
+	mov	w10, #23552
 	movk	w10, #1318, lsl #16
 	msub	w0, w8, w10, w9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	add	x8, x0, w1, sxtw
 	negs	x9, x8
 	and	x8, x8, #0x3
 	and	x9, x9, #0x3
 	csneg	x0, x8, x9, mi
-                                        // kill: def $w0 killed $w0 killed $x0
 	ret
-                                        // -- End function
+

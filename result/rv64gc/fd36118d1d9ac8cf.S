@@ -1,4 +1,4 @@
-func00000000000000ff:                   # @func00000000000000ff
+func00000000000000ff:
 	andi	a2, a2, 255
 	li	a3, 100
 	andi	a0, a0, 255
@@ -6,7 +6,8 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	andi	a2, a2, 255
 	li	a3, 100
 	andi	a0, a0, 255
@@ -14,7 +15,8 @@ func000000000000007f:                   # @func000000000000007f
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func00000000000000ef:                   # @func00000000000000ef
+
+func00000000000000ef:
 	andi	a2, a2, 255
 	li	a3, 100
 	andi	a0, a0, 255
@@ -22,7 +24,8 @@ func00000000000000ef:                   # @func00000000000000ef
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	andi	a2, a2, 255
 	slli	a3, a1, 2
 	andi	a0, a0, 255
@@ -30,3 +33,4 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+

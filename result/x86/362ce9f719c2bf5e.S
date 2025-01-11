@@ -1,4 +1,4 @@
-func00000000000004c4:                   # @func00000000000004c4
+func00000000000004c4:
 	shlq	$20, %rdx
 	cmpq	%rdi, %rdx
 	setb	%cl
@@ -6,7 +6,8 @@ func00000000000004c4:                   # @func00000000000004c4
 	setl	%al
 	andb	%cl, %al
 	retq
-func000000000000054c:                   # @func000000000000054c
+
+func000000000000054c:
 	shlq	$3, %rdx
 	cmpq	%rdi, %rdx
 	setne	%cl
@@ -14,3 +15,4 @@ func000000000000054c:                   # @func000000000000054c
 	setg	%al
 	andb	%cl, %al
 	retq
+

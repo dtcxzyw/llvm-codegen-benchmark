@@ -1,4 +1,4 @@
-func000000000000068a:                   # @func000000000000068a
+func000000000000068a:
 	incl	%edx
 	andl	$63, %edx
 	subq	%rdx, %rsi
@@ -6,3 +6,4 @@ func000000000000068a:                   # @func000000000000068a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
+

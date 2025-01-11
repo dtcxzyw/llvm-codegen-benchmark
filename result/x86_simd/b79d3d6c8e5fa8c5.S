@@ -1,9 +1,9 @@
 .LCPI0_0:
-	.quad	0x3f832f59df476bbb              # double 0.0093676587356891129
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3f832f59df476bbb
+func0000000000000000:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
-	vbroadcastsd	.LCPI0_0(%rip), %zmm3   # zmm3 = [9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3,9.3676587356891129E-3]
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
 	vmulpd	%zmm3, %zmm0, %zmm2
 	vmovapd	%zmm0, %zmm2 {%k1}
 	vmulpd	%zmm3, %zmm1, %zmm3
@@ -12,3 +12,4 @@ func0000000000000000:                   # @func0000000000000000
 	vmovapd	%zmm2, %zmm0
 	vmovapd	%zmm3, %zmm1
 	retq
+

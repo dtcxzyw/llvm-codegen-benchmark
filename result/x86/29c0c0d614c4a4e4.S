@@ -1,4 +1,4 @@
-func0000000000000488:                   # @func0000000000000488
+func0000000000000488:
 	movzwl	%dx, %eax
 	subq	%rdi, %rsi
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000000488:                   # @func0000000000000488
 	setb	%al
 	orb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000019:
 	lui	a0, 2
 	addi	a0, a0, -1638
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -7,7 +7,8 @@ func0000000000000019:                   # @func0000000000000019
 	li	a0, -10
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	lui	a0, 4
 	addi	a0, a0, 393
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -17,7 +18,8 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -1000
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
@@ -25,7 +27,8 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -48
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	li	a0, 1000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
@@ -34,7 +37,8 @@ func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 576
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
@@ -43,7 +47,8 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1792
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	lui	a0, 2
 	addi	a0, a0, 197
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -52,7 +57,8 @@ func0000000000000009:                   # @func0000000000000009
 	li	a0, -1000
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	lui	a0, 1
 	addi	a0, a0, 1147
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -61,3 +67,4 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, -100
 	vmul.vx	v8, v8, a0
 	ret
+

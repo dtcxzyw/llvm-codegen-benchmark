@@ -1,5 +1,4 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	lsr	x8, x2, #1
 	mvn	w9, w4
 	lsl	x10, x3, x4
@@ -12,9 +11,8 @@ func0000000000000006:                   // @func0000000000000006
 	orr	x0, x9, x0
 	orr	x1, x8, x1
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	lsr	x8, x2, #1
 	mvn	w9, w4
 	lsl	x10, x3, x4
@@ -27,9 +25,8 @@ func0000000000000000:                   // @func0000000000000000
 	orr	x0, x0, x9
 	orr	x1, x1, x8
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	lsr	x8, x2, #1
 	mvn	w9, w4
 	lsl	x10, x3, x4
@@ -42,4 +39,4 @@ func0000000000000004:                   // @func0000000000000004
 	orr	x0, x9, x0
 	orr	x1, x8, x1
 	ret
-                                        // -- End function
+

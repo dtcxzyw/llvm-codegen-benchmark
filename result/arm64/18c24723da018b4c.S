@@ -1,5 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	negs	x8, x0
 	and	x9, x0, #0x3
 	and	x8, x8, #0x3
@@ -7,4 +6,4 @@ func000000000000000a:                   // @func000000000000000a
 	add	x8, x8, x8, lsr #63
 	asr	x0, x8, #1
 	ret
-                                        // -- End function
+

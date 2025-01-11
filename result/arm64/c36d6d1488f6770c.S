@@ -1,8 +1,6 @@
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
-	mov	x9, #49717                      // =0xc235
+func0000000000000035:
+	mov	x9, #49717
 	asr	x8, x0, #3
-                                        // kill: def $w2 killed $w2 def $x2
 	movk	x9, #20338, lsl #16
 	movk	x9, #11299, lsl #32
 	movk	x9, #13559, lsl #48
@@ -11,4 +9,4 @@ func0000000000000035:                   // @func0000000000000035
 	sub	x9, x1, x9
 	add	x0, x8, x9, lsl #1
 	ret
-                                        // -- End function
+

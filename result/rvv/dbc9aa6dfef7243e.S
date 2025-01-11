@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	lui	a0, 327680
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -14,3 +14,4 @@ func0000000000000005:                   # @func0000000000000005
 	bseti	a0, a0, 40
 	vor.vx	v8, v8, a0
 	ret
+

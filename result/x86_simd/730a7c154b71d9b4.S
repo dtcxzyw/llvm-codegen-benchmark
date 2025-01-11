@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	pushq	%rbx
 	movb	$80, %al
 	movzbl	%al, %ecx
@@ -41,10 +41,11 @@ func0000000000000001:                   # @func0000000000000001
 	vpinsrb	$5, %r10d, %xmm0, %xmm0
 	vpinsrb	$6, %r11d, %xmm0, %xmm0
 	vpinsrb	$7, %eax, %xmm0, %xmm0
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	popq	%rbx
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	pushq	%rbx
 	movb	$-1, %al
 	movzbl	%al, %ecx
@@ -87,6 +88,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrb	$5, %r10d, %xmm0, %xmm0
 	vpinsrb	$6, %r11d, %xmm0, %xmm0
 	vpinsrb	$7, %eax, %xmm0, %xmm0
-	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
+	vpmovzxbd	%xmm0, %ymm0
 	popq	%rbx
 	retq
+

@@ -1,8 +1,7 @@
-func00000000000000c5:                   // @func00000000000000c5
-// %bb.0:                               // %entry
-	mov	x8, #4746794007248502784        // =0x41e0000000000000
+func00000000000000c5:
+	mov	x8, #4746794007248502784
 	fmov	d1, x8
-	mov	x8, #2097152                    // =0x200000
+	mov	x8, #2097152
 	movk	x8, #49632, lsl #48
 	fcmp	d0, d1
 	fmov	d1, x8
@@ -11,12 +10,11 @@ func00000000000000c5:                   // @func00000000000000c5
 	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, hi
 	ret
-                                        // -- End function
-func0000000000000047:                   // @func0000000000000047
-// %bb.0:                               // %entry
+
+func0000000000000047:
 	fcmp	d0, #0.0
-	mov	w8, #2                          // =0x2
+	mov	w8, #2
 	csinc	w8, w8, wzr, le
 	csel	w0, w8, wzr, ne
 	ret
-                                        // -- End function
+

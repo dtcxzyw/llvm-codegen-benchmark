@@ -1,14 +1,10 @@
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+func000000000000000c:
 	asr	x8, x0, #32
-                                        // kill: def $w1 killed $w1 def $x1
 	lsl	x0, x8, x1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	asr	x8, x0, #32
-                                        // kill: def $w1 killed $w1 def $x1
 	lsl	x0, x8, x1
 	ret
-                                        // -- End function
+

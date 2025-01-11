@@ -1,7 +1,7 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	shrdq	$32, %r9, %r8
 	shrq	$32, %r9
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+	movabsq	$-4294967296, %rax
 	mulxq	%rax, %rax, %r11
 	movq	%rdx, %r10
 	shlq	$32, %r10
@@ -15,7 +15,8 @@ func000000000000002a:                   # @func000000000000002a
 	adcq	%rsi, %r10
 	movq	%r10, %rdx
 	retq
-func000000000000006a:                   # @func000000000000006a
+
+func000000000000006a:
 	movq	%r8, %rdx
 	movq	$-1, %rax
 	mulxq	%rax, %rax, %rdx
@@ -25,3 +26,4 @@ func000000000000006a:                   # @func000000000000006a
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	retq
+

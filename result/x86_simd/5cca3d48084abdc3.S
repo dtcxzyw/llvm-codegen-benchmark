@@ -1,8 +1,9 @@
-func0000000000000000:                   # @func0000000000000000
-	vpmovzxbd	%xmm2, %zmm2            # zmm2 = xmm2[0],zero,zero,zero,xmm2[1],zero,zero,zero,xmm2[2],zero,zero,zero,xmm2[3],zero,zero,zero,xmm2[4],zero,zero,zero,xmm2[5],zero,zero,zero,xmm2[6],zero,zero,zero,xmm2[7],zero,zero,zero,xmm2[8],zero,zero,zero,xmm2[9],zero,zero,zero,xmm2[10],zero,zero,zero,xmm2[11],zero,zero,zero,xmm2[12],zero,zero,zero,xmm2[13],zero,zero,zero,xmm2[14],zero,zero,zero,xmm2[15],zero,zero,zero
+func0000000000000000:
+	vpmovzxbd	%xmm2, %zmm2
 	vcvtdq2ps	%zmm2, %zmm2
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
 	vmulps	%zmm2, %zmm0, %zmm0
 	retq
+

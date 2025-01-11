@@ -1,4 +1,4 @@
-func000000000000002d:                   # @func000000000000002d
+func000000000000002d:
 	andi	a0, a0, 1
 	li	a2, 1
 	subw	a2, a2, a1
@@ -13,7 +13,8 @@ func000000000000002d:                   # @func000000000000002d
 	addw	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	andi	a0, a0, 1
 	li	a2, 1
 	subw	a2, a2, a1
@@ -28,3 +29,4 @@ func000000000000002f:                   # @func000000000000002f
 	addiw	a1, a1, 400
 	czero.eqz	a0, a1, a0
 	ret
+

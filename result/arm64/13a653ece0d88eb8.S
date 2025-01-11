@@ -1,5 +1,4 @@
-func000000000000054a:                   // @func000000000000054a
-// %bb.0:                               // %entry
+func000000000000054a:
 	fcvtzs	w8, s0
 	sub	w9, w1, #1
 	cmp	w1, w8
@@ -7,9 +6,8 @@ func000000000000054a:                   // @func000000000000054a
 	cmp	w0, w8
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000547:                   // @func0000000000000547
-// %bb.0:                               // %entry
+
+func0000000000000547:
 	fcvtzs	w8, s0
 	sub	w9, w1, #1
 	cmp	w1, w8
@@ -17,4 +15,4 @@ func0000000000000547:                   // @func0000000000000547
 	cmp	w0, w8
 	cset	w0, le
 	ret
-                                        // -- End function
+

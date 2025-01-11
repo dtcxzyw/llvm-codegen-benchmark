@@ -1,64 +1,56 @@
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+func000000000000000e:
 	clz	x9, x0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
+
+func000000000000000d:
 	clz	x9, x0
-	mov	x8, #-1                         // =0xffffffffffffffff
+	mov	x8, #-1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
+
+func000000000000000f:
 	clz	x9, x0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
+
+func000000000000000c:
 	clz	x9, x0
-	mov	w8, #8                          // =0x8
+	mov	w8, #8
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	clz	x9, x0
-	mov	x8, #-1                         // =0xffffffffffffffff
+	mov	x8, #-1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	clz	x9, x0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	clz	x9, x0
-	mov	w8, #1                          // =0x1
+	mov	w8, #1
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	clz	x9, x0
-	mov	w8, #2                          // =0x2
+	mov	w8, #2
 	eor	x9, x9, #0x3f
 	lsl	x0, x8, x9
 	ret
-                                        // -- End function
+

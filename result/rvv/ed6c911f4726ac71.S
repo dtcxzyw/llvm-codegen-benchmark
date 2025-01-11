@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.word	0x3f1645a2                      # float 0.587000012
+	.word	0x3f1645a2
 .LCPI0_1:
-	.word	0x3e991687                      # float 0.298999995
+	.word	0x3e991687
 .LCPI0_2:
-	.word	0x3de978d5                      # float 0.114
-func0000000000000000:                   # @func0000000000000000
+	.word	0x3de978d5
+func0000000000000000:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v10, v9
 	lui	a0, %hi(.LCPI0_0)
@@ -23,13 +23,14 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfmadd.vf	v8, fa5, v16
 	ret
+
 .LCPI1_0:
-	.word	0x3f170a3d                      # float 0.589999974
+	.word	0x3f170a3d
 .LCPI1_1:
-	.word	0x3e99999a                      # float 0.300000012
+	.word	0x3e99999a
 .LCPI1_2:
-	.word	0x3de147ae                      # float 0.109999999
-func0000000000000001:                   # @func0000000000000001
+	.word	0x3de147ae
+func0000000000000001:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v10, v9
 	lui	a0, %hi(.LCPI1_0)
@@ -48,3 +49,4 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfmadd.vf	v8, fa5, v16
 	ret
+

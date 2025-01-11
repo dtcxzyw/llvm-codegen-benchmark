@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	srai	a0, a0, 3
@@ -10,9 +10,10 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a2, a2, 2
 	maxu	a0, a0, a2
 	ret
+
 .LCPI1_0:
-	.quad	5675921253449092805             # 0x4ec4ec4ec4ec4ec5
-func00000000000000ca:                   # @func00000000000000ca
+	.quad	5675921253449092805
+func00000000000000ca:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a0, a0, a1
@@ -22,7 +23,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	addi	a2, a2, 1
 	maxu	a0, a0, a2
 	ret
-func00000000000000ce:                   # @func00000000000000ce
+
+func00000000000000ce:
 	sub	a0, a0, a1
 	lui	a1, 957395
 	srai	a0, a0, 4
@@ -34,3 +36,4 @@ func00000000000000ce:                   # @func00000000000000ce
 	addi	a2, a2, 1
 	maxu	a0, a0, a2
 	ret
+

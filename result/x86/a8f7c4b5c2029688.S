@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -8,7 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	andl	$1, %edx
 	leal	2(%rdx,%rdx), %ecx
 	testb	$1, %sil
@@ -16,7 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andl	$1, %edx
 	leal	(%rdx,%rdx), %ecx
 	testb	$1, %sil
@@ -24,7 +26,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -34,3 +37,4 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

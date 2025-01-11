@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	seqz	a2, a2
@@ -6,7 +6,8 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	sext.w	a2, a2
 	slli	a1, a1, 32
 	seqz	a2, a2
@@ -15,7 +16,8 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	addi	a2, a2, -16
@@ -25,3 +27,4 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

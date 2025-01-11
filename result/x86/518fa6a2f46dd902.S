@@ -1,4 +1,4 @@
-func00000000000002e1:                   # @func00000000000002e1
+func00000000000002e1:
 	shrl	%esi
 	cmpl	$1, %esi
 	adcl	$0, %esi
@@ -6,7 +6,8 @@ func00000000000002e1:                   # @func00000000000002e1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	shrl	$9, %esi
 	cmpl	$1, %esi
 	adcl	$0, %esi
@@ -14,3 +15,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leaq	(%rsi,%rdx), %rcx
 	shrq	$3, %rcx
 	xorq	%rdi, %rcx
@@ -6,3 +6,4 @@ func0000000000000000:                   # @func0000000000000000
 	shrq	$35, %rax
 	xorq	%rcx, %rax
 	retq
+

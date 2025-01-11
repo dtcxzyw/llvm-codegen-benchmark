@@ -1,28 +1,32 @@
-func0000000000000008:                   # @func0000000000000008
-	addl	$-2000, %edx                    # imm = 0xF830
+func0000000000000008:
+	addl	$-2000, %edx
 	cmpl	$31, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
-	addl	$-1938, %edx                    # imm = 0xF86E
-	cmpl	$-3875, %edx                    # imm = 0xF0DD
+
+func0000000000000088:
+	addl	$-1938, %edx
+	cmpl	$-3875, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	addl	$-5, %edx
 	cmpl	$-4, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
-	addl	$-444, %edx                     # imm = 0xFE44
+
+func0000000000000090:
+	addl	$-444, %edx
 	cmpl	$37, %edx
 	setb	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
+

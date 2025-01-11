@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v10, -1
 	lui	a0, 322639
@@ -9,7 +9,8 @@ func0000000000000006:                   # @func0000000000000006
 	li	a0, 26
 	vnmsub.vx	v8, a0, v10
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, -5
 	lui	a0, 149797
@@ -23,7 +24,8 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 7
 	vnmsub.vx	v8, a0, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	lui	a0, 244141
 	addi	a0, a0, -1537
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -37,3 +39,4 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 576
 	vnmsub.vx	v8, a0, v10
 	ret
+

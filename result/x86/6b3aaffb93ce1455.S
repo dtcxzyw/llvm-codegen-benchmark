@@ -1,9 +1,10 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	subq	%rdx, %rsi
 	movq	%rsi, %rax
 	sarq	$4, %rax
 	sarq	$3, %rsi
 	cmpq	%rax, %rsi
-	movabsq	$576460752303423487, %rax       # imm = 0x7FFFFFFFFFFFFFF
+	movabsq	$576460752303423487, %rax
 	cmovaeq	%rdi, %rax
 	retq
+

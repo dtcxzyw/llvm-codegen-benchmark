@@ -1,40 +1,44 @@
 .LCPI0_0:
-	.long	1168776                         # 0x11d588
+	.long	1168776
 .LCPI0_1:
-	.long	1168800                         # 0x11d5a0
-func0000000000000003:                   # @func0000000000000003
+	.long	1168800
+func0000000000000003:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [1168776,1168776,1168776,1168776,1168776,1168776,1168776,1168776]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1168800,1168800,1168800,1168800,1168800,1168800,1168800,1168800]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm0
+	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI1_0:
-	.long	4294967280                      # 0xfffffff0
+	.long	4294967280
 .LCPI1_1:
-	.long	16                              # 0x10
-func0000000000000001:                   # @func0000000000000001
+	.long	16
+func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %ymm0   # ymm0 = [4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280,4294967280]
-	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [16,16,16,16,16,16,16,16]
+	vpbroadcastd	.LCPI1_0(%rip), %ymm0
+	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.long	2164260864                      # 0x81000000
+	.long	2164260864
 .LCPI2_1:
-	.long	285212672                       # 0x11000000
-func0000000000000002:                   # @func0000000000000002
+	.long	285212672
+func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [2164260864,2164260864,2164260864,2164260864,2164260864,2164260864,2164260864,2164260864]
-	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [285212672,285212672,285212672,285212672,285212672,285212672,285212672,285212672]
+	vpbroadcastd	.LCPI2_0(%rip), %ymm0
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1}
 	retq
+
 .LCPI3_0:
-	.long	4227858432                      # 0xfc000000
+	.long	4227858432
 .LCPI3_1:
-	.long	4261412864                      # 0xfe000000
-func0000000000000000:                   # @func0000000000000000
+	.long	4261412864
+func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm0   # ymm0 = [4227858432,4227858432,4227858432,4227858432,4227858432,4227858432,4227858432,4227858432]
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4261412864,4261412864,4261412864,4261412864,4261412864,4261412864,4261412864,4261412864]
+	vpbroadcastd	.LCPI3_0(%rip), %ymm0
+	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1}
 	retq
+

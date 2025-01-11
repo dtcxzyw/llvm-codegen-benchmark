@@ -1,7 +1,6 @@
-func0000000000000649:                   // @func0000000000000649
-// %bb.0:                               // %entry
+func0000000000000649:
 	lsl	x9, x0, #1
-	mov	w8, #4                          // =0x4
+	mov	w8, #4
 	cmp	x9, x1
 	csel	x10, x9, x1, hi
 	cmp	x10, #4
@@ -9,11 +8,10 @@ func0000000000000649:                   // @func0000000000000649
 	cmp	x9, x8, lsl #1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000669:                   // @func0000000000000669
-// %bb.0:                               // %entry
+
+func0000000000000669:
 	lsl	x9, x0, #1
-	mov	w8, #4                          // =0x4
+	mov	w8, #4
 	cmp	x9, x1
 	csel	x10, x9, x1, hi
 	cmp	x10, #4
@@ -21,11 +19,10 @@ func0000000000000669:                   // @func0000000000000669
 	cmp	x9, x8, lsl #1
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000609:                   // @func0000000000000609
-// %bb.0:                               // %entry
+
+func0000000000000609:
 	lsl	x9, x0, #1
-	mov	w8, #4                          // =0x4
+	mov	w8, #4
 	cmp	x9, x1
 	csel	x10, x9, x1, hi
 	cmp	x10, #4
@@ -33,4 +30,4 @@ func0000000000000609:                   // @func0000000000000609
 	cmp	x9, x8, lsl #1
 	cset	w0, ls
 	ret
-                                        // -- End function
+

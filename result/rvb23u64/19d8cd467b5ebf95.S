@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	bexti	a1, a1, 29
 	lui	a2, 262144
 	bseti	a2, a2, 62
@@ -9,10 +9,12 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	bexti	a1, a1, 20
 	li	a2, -2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 3
 	sltu	a0, a0, a1
 	ret
+

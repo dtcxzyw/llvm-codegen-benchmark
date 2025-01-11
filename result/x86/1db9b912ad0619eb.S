@@ -1,28 +1,32 @@
-func00000000000001c1:                   # @func00000000000001c1
-	imull	$652835029, %edi, %eax          # imm = 0x26E978D5
-	addl	$652835029, %eax                # imm = 0x26E978D5
+func00000000000001c1:
+	imull	$652835029, %edi, %eax
+	addl	$652835029, %eax
 	rorxl	$3, %eax, %eax
-	cmpl	$4294968, %eax                  # imm = 0x418938
+	cmpl	$4294968, %eax
 	setb	%al
 	retq
-func00000000000001e1:                   # @func00000000000001e1
-	imull	$954437177, %edi, %eax          # imm = 0x38E38E39
-	addl	$954437177, %eax                # imm = 0x38E38E39
+
+func00000000000001e1:
+	imull	$954437177, %edi, %eax
+	addl	$954437177, %eax
 	rorxl	$1, %eax, %eax
-	cmpl	$238609295, %eax                # imm = 0xE38E38F
+	cmpl	$238609295, %eax
 	setb	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
-	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
-	addl	$-858993459, %eax               # imm = 0xCCCCCCCD
+
+func00000000000000e1:
+	imull	$-858993459, %edi, %eax
+	addl	$-858993459, %eax
 	rorxl	$1, %eax, %eax
-	cmpl	$429496730, %eax                # imm = 0x1999999A
+	cmpl	$429496730, %eax
 	setb	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
-	imull	$-1171354717, %edi, %eax        # imm = 0xBA2E8BA3
-	addl	$-1171354717, %eax              # imm = 0xBA2E8BA3
+
+func0000000000000181:
+	imull	$-1171354717, %edi, %eax
+	addl	$-1171354717, %eax
 	rorxl	$1, %eax, %eax
-	cmpl	$195225787, %eax                # imm = 0xBA2E8BB
+	cmpl	$195225787, %eax
 	setb	%al
 	retq
+

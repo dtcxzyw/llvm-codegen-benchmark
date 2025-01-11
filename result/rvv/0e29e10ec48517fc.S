@@ -1,4 +1,4 @@
-func00000000000000a5:                   # @func00000000000000a5
+func00000000000000a5:
 	li	a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
@@ -6,3 +6,4 @@ func00000000000000a5:                   # @func00000000000000a5
 	vmsleu.vv	v12, v8, v10
 	vmand.mm	v0, v14, v12
 	ret
+

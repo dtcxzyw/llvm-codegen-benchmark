@@ -1,9 +1,10 @@
 .LCPI0_0:
-	.long	0x3f000000                      # float 0.5
+	.long	0x3f000000
 .LCPI0_1:
-	.long	0x437f0000                      # float 255
-func0000000000000000:                   # @func0000000000000000
+	.long	0x437f0000
+func0000000000000000:
 	vmulss	.LCPI0_0(%rip), %xmm2, %xmm2
 	vmulss	%xmm1, %xmm2, %xmm1
-	vfmadd132ss	.LCPI0_1(%rip), %xmm1, %xmm0 # xmm0 = (xmm0 * mem) + xmm1
+	vfmadd132ss	.LCPI0_1(%rip), %xmm1, %xmm0
 	retq
+

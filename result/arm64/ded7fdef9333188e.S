@@ -1,5 +1,4 @@
-func0000000000000630:                   // @func0000000000000630
-// %bb.0:                               // %entry
+func0000000000000630:
 	and	w8, w1, #0xff
 	lsr	x9, x2, #39
 	cmp	w8, #12
@@ -8,9 +7,8 @@ func0000000000000630:                   // @func0000000000000630
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000b0:                   // @func00000000000000b0
-// %bb.0:                               // %entry
+
+func00000000000000b0:
 	and	w8, w1, #0xff
 	tst	x2, #0x100000
 	ccmp	w8, #28, #0, ne
@@ -18,4 +16,4 @@ func00000000000000b0:                   // @func00000000000000b0
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

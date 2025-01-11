@@ -1,36 +1,40 @@
 .LCPI0_0:
-	.long	0x42c80000                      # float 100
-func0000000000000007:                   # @func0000000000000007
+	.long	0x42c80000
+func0000000000000007:
 	vcvtdq2ps	%ymm1, %ymm1
 	vmulps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vcmpneqps	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	0x3f000000                      # float 0.5
-func0000000000000004:                   # @func0000000000000004
+	.long	0x3f000000
+func0000000000000004:
 	vcvtdq2ps	%ymm1, %ymm1
 	vmulps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vcmpltps	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	0x40600000                      # float 3.5
-func0000000000000002:                   # @func0000000000000002
+	.long	0x40600000
+func0000000000000002:
 	vcvtdq2ps	%ymm1, %ymm1
 	vmulps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vcmpltps	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	0x3f000000                      # float 0.5
-func0000000000000003:                   # @func0000000000000003
+	.long	0x3f000000
+func0000000000000003:
 	vcvtdq2ps	%ymm1, %ymm1
 	vmulps	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vcmpnleps	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

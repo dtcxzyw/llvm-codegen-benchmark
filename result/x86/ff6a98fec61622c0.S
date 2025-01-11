@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000000a6:
 	addl	%edx, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -6,7 +6,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	addl	%edx, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -14,7 +15,8 @@ func0000000000000026:                   # @func0000000000000026
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	shll	$6, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -22,7 +24,8 @@ func0000000000000066:                   # @func0000000000000066
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	shll	$3, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -30,7 +33,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	cmpq	%rcx, %rax
 	setne	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+
+func00000000000000aa:
 	addl	%edx, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
@@ -38,3 +42,4 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmpq	%rcx, %rax
 	setg	%al
 	retq
+

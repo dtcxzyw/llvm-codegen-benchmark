@@ -1,4 +1,4 @@
-func000000000000003f:                   # @func000000000000003f
+func000000000000003f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	lui	a0, 244
@@ -9,7 +9,8 @@ func000000000000003f:                   # @func000000000000003f
 	addiw	a0, a0, 576
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	lui	a0, 196615
@@ -23,7 +24,8 @@ func000000000000003c:                   # @func000000000000003c
 	addi	a0, a0, 11
 	vmul.vx	v8, v8, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
 	lui	a0, 123738
@@ -31,7 +33,8 @@ func0000000000000038:                   # @func0000000000000038
 	slli	a0, a0, 24
 	vmul.vx	v8, v8, a0
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vwsll.vi	v14, v13, 8
@@ -41,3 +44,4 @@ func000000000000003d:                   # @func000000000000003d
 	li	a0, -7
 	vmul.vx	v8, v8, a0
 	ret
+

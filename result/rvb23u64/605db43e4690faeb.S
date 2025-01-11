@@ -1,6 +1,6 @@
-func000000000000002b:                   # @func000000000000002b
+func000000000000002b:
 	addi	sp, sp, -16
-	sd	ra, 8(sp)                       # 8-byte Folded Spill
+	sd	ra, 8(sp)
 	mv	a4, a2
 	mv	a1, a0
 	lui	a0, 1323
@@ -12,14 +12,15 @@ func000000000000002b:                   # @func000000000000002b
 	slli	a2, a2, 26
 	mv	a0, a4
 	call	__udivti3
-	ld	ra, 8(sp)                       # 8-byte Folded Reload
+	ld	ra, 8(sp)
 	addi	sp, sp, 16
 	ret
+
 .LCPI1_0:
-	.quad	-8446744073709551616            # 0x8ac7230489e80000
-func0000000000000028:                   # @func0000000000000028
+	.quad	-8446744073709551616
+func0000000000000028:
 	addi	sp, sp, -16
-	sd	ra, 8(sp)                       # 8-byte Folded Spill
+	sd	ra, 8(sp)
 	mv	a3, a2
 	mv	a1, a0
 	lui	a0, %hi(.LCPI1_0)
@@ -27,6 +28,7 @@ func0000000000000028:                   # @func0000000000000028
 	mv	a0, a3
 	li	a3, 0
 	call	__udivti3
-	ld	ra, 8(sp)                       # 8-byte Folded Reload
+	ld	ra, 8(sp)
 	addi	sp, sp, 16
 	ret
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	fli.d	fa5, 1.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v12, -2
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	vfrdiv.vf	v12, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	fli.d	fa5, 1.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
@@ -14,3 +15,4 @@ func0000000000000001:                   # @func0000000000000001
 	vfrdiv.vf	v12, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
+

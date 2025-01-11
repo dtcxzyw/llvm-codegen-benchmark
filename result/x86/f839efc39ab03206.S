@@ -1,14 +1,15 @@
 .LCPI0_0:
-	.quad	0x412e848000000000              # double 1.0E+6
-func0000000000000002:                   # @func0000000000000002
+	.quad	0x412e848000000000
+func0000000000000002:
 	vmulsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI0_0(%rip), %xmm1           # xmm1 = [1.0E+6,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -16,3 +17,4 @@ func0000000000000004:                   # @func0000000000000004
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
+

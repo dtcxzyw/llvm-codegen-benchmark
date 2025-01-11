@@ -1,4 +1,4 @@
-func000000000000006b:                   # @func000000000000006b
+func000000000000006b:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a2, a2, 2
@@ -6,7 +6,8 @@ func000000000000006b:                   # @func000000000000006b
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	slli	a3, a2, 3
 	slli	a0, a0, 3
 	addw	a2, a2, a3
@@ -15,7 +16,8 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
 	slli	a0, a0, 5
@@ -24,7 +26,8 @@ func000000000000002f:                   # @func000000000000002f
 	add	a0, a0, a2
 	addi	a0, a0, 30
 	ret
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
 	slli	a0, a0, 5
@@ -33,7 +36,8 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a2
 	addi	a0, a0, 30
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a2, a2, 2
@@ -41,7 +45,8 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
 	slli	a0, a0, 2
@@ -51,7 +56,8 @@ func000000000000006c:                   # @func000000000000006c
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
 	slli	a0, a0, 2
@@ -61,7 +67,8 @@ func000000000000004c:                   # @func000000000000004c
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	slli	a3, a2, 1
 	slli	a0, a0, 2
 	addw	a2, a2, a3
@@ -70,7 +77,8 @@ func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	li	a3, 54
 	slli	a0, a0, 3
 	mulw	a2, a2, a3
@@ -79,14 +87,16 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a2
 	addi	a0, a0, 72
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 3
 	ret
-func000000000000006a:                   # @func000000000000006a
+
+func000000000000006a:
 	slli	a3, a2, 1
 	slli	a0, a0, 3
 	addw	a2, a2, a3
@@ -95,7 +105,8 @@ func000000000000006a:                   # @func000000000000006a
 	add	a0, a0, a2
 	addi	a0, a0, -24
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a2, a2, 2
@@ -103,7 +114,8 @@ func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	slli	a3, a2, 2
 	slli	a0, a0, 3
 	addw	a2, a2, a3
@@ -112,3 +124,4 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	addi	a0, a0, -40
 	ret
+

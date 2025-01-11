@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	cmpq	%rsi, %rdi
 	movq	%rsi, %rax
 	cmovbq	%rdi, %rax
@@ -7,7 +7,8 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$16, %rax
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	cmpq	%rdi, %rsi
 	movq	%rdi, %rax
 	cmovbq	%rsi, %rax
@@ -16,3 +17,4 @@ func0000000000000021:                   # @func0000000000000021
 	testq	%rax, %rax
 	sete	%al
 	retq
+

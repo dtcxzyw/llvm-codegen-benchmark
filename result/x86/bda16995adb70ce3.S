@@ -1,5 +1,5 @@
-func0000000000000108:                   # @func0000000000000108
-	cmpl	$-1525678080, %edx              # imm = 0xA5100000
+func0000000000000108:
+	cmpl	$-1525678080, %edx
 	sete	%cl
 	cmpl	$1, %esi
 	sete	%al
@@ -7,3 +7,4 @@ func0000000000000108:                   # @func0000000000000108
 	orb	%dil, %al
 	andb	$1, %al
 	retq
+

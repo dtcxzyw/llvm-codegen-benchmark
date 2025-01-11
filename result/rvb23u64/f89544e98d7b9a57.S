@@ -1,4 +1,4 @@
-func0000000000000c68:                   # @func0000000000000c68
+func0000000000000c68:
 	lui	a3, 16
 	addiw	a3, a3, -16
 	sltu	a4, a3, a1
@@ -9,3 +9,4 @@ func0000000000000c68:                   # @func0000000000000c68
 	add	a0, a0, a2
 	sltu	a0, a3, a0
 	ret
+

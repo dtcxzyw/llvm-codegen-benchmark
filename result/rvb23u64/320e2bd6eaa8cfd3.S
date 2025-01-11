@@ -1,4 +1,4 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000008c:
 	sext.w	a1, a1
 	sext.w	a3, a2
 	min	a3, a1, a3
@@ -8,3 +8,4 @@ func000000000000008c:                   # @func000000000000008c
 	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
+

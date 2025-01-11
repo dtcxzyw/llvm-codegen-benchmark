@@ -1,4 +1,4 @@
-func0000000000000378:                   # @func0000000000000378
+func0000000000000378:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vi	v12, v12, 1
 	lui	a0, 4096
@@ -9,3 +9,4 @@ func0000000000000378:                   # @func0000000000000378
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
+

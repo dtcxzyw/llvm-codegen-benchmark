@@ -1,4 +1,4 @@
-func00000000000000ee:                   # @func00000000000000ee
+func00000000000000ee:
 	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa5, fa4
@@ -6,7 +6,8 @@ func00000000000000ee:                   # @func00000000000000ee
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
 	lui	a0, 212992
@@ -15,14 +16,16 @@ func0000000000000044:                   # @func0000000000000044
 	flt.s	a0, fa0, fa5
 	or	a0, a0, a1
 	ret
-func0000000000000110:                   # @func0000000000000110
+
+func0000000000000110:
 	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa5, fa4
 	feq.s	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	fadd.s	fa5, fa1, fa2
 	lui	a0, 260096
 	fmv.w.x	fa4, a0
@@ -31,3 +34,4 @@ func0000000000000048:                   # @func0000000000000048
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
+

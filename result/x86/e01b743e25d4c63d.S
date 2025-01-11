@@ -1,8 +1,9 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	movl	%edi, %eax
 	movl	%esi, %ecx
 	negl	%ecx
 	cmovsl	%esi, %ecx
-	cmpl	$97201, %ecx                    # imm = 0x17BB1
+	cmpl	$97201, %ecx
 	cmovael	%esi, %eax
 	retq
+

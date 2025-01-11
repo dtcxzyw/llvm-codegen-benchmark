@@ -1,8 +1,9 @@
-func0000000000000021:                   # @func0000000000000021
-	testl	$2047, %edx                     # imm = 0x7FF
+func0000000000000021:
+	testl	$2047, %edx
 	setne	%cl
-	movabsq	$4503599627370496, %rax         # imm = 0x10000000000000
+	movabsq	$4503599627370496, %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq
+

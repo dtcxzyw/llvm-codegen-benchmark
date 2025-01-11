@@ -1,4 +1,4 @@
-func0000000000000121:                   # @func0000000000000121
+func0000000000000121:
 	lui	a0, 77
 	addi	a0, a0, 261
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -7,3 +7,4 @@ func0000000000000121:                   # @func0000000000000121
 	vrsub.vi	v10, v10, 2
 	vmseq.vv	v0, v10, v8
 	ret
+

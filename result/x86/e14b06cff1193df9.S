@@ -1,5 +1,5 @@
-func000000000000021b:                   # @func000000000000021b
-	cmpq	$32000, %rdx                    # imm = 0x7D00
+func000000000000021b:
+	cmpq	$32000, %rdx
 	movl	$16, %ecx
 	movl	$4, %eax
 	cmovbq	%rcx, %rax
@@ -7,3 +7,4 @@ func000000000000021b:                   # @func000000000000021b
 	cmovlq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+

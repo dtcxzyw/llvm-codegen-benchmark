@@ -1,20 +1,25 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
+

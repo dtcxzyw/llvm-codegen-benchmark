@@ -1,11 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andl	$1, %edx
-	xorl	$343, %edx                      # imm = 0x157
+	xorl	$343, %edx
 	cmpl	%edx, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -14,16 +15,18 @@ func000000000000000b:                   # @func000000000000000b
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	testb	$1, %dl
-	movl	$258, %eax                      # imm = 0x102
+	movl	$258, %eax
 	movl	$64, %ecx
 	cmovnel	%eax, %ecx
 	cmpl	%ecx, %esi
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andl	$1, %edx
 	shll	$5, %edx
 	addl	$32, %edx
@@ -31,7 +34,8 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	andl	$1, %edx
 	movl	$4, %eax
 	subl	%edx, %eax
@@ -39,16 +43,18 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	testb	$1, %dl
-	movl	$1000, %eax                     # imm = 0x3E8
+	movl	$1000, %eax
 	movl	$100, %ecx
 	cmovnel	%eax, %ecx
 	cmpl	%ecx, %esi
 	seta	%al
 	andb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -57,7 +63,8 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andl	$1, %edx
 	movl	$2, %eax
 	subl	%edx, %eax
@@ -65,7 +72,8 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	testb	$1, %dl
 	movl	$-7, %eax
 	movl	$12, %ecx
@@ -74,3 +82,4 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	andb	%dil, %al
 	retq
+

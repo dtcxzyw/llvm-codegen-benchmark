@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	subq	%rdx, %rsi
 	shrq	%rsi
 	leal	52(%rsi), %ecx
@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	subl	%edx, %esi
 	shrl	%esi
 	leal	1(%rsi), %ecx
@@ -16,7 +17,8 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$4, %eax
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	subl	%edx, %esi
 	shrl	$4, %esi
 	leal	1(%rsi), %ecx
@@ -25,7 +27,8 @@ func0000000000000003:                   # @func0000000000000003
 	movl	$4, %eax
 	cmoveq	%rcx, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	subq	%rdx, %rsi
 	shrq	%rsi
 	leaq	15(%rsi), %rcx
@@ -34,3 +37,4 @@ func000000000000000b:                   # @func000000000000000b
 	movl	$192, %eax
 	cmoveq	%rcx, %rax
 	retq
+

@@ -1,30 +1,26 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+func0000000000000000:
 	tst	w1, #0x1
 	csel	w8, wzr, w2, ne
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	tst	w1, #0x1
-	mov	w8, #6144                       // =0x1800
+	mov	w8, #6144
 	csel	w8, w8, w2, ne
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	tst	w1, #0x1
 	csel	w8, wzr, w2, ne
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	tst	w1, #0x1
-	mov	w8, #-27648                     // =0xffff9400
+	mov	w8, #-27648
 	csel	w8, w8, w2, ne
 	sub	w0, w8, w0
 	ret
-                                        // -- End function
+

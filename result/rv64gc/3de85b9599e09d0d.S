@@ -1,4 +1,4 @@
-func0000000000000201:                   # @func0000000000000201
+func0000000000000201:
 	sll	a1, a1, a2
 	li	a2, -1
 	add	a0, a0, a1
@@ -7,10 +7,12 @@ func0000000000000201:                   # @func0000000000000201
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000020c:                   # @func000000000000020c
+
+func000000000000020c:
 	sll	a1, a1, a2
 	add	a0, a0, a1
 	slli	a0, a0, 52
 	srli	a0, a0, 52
 	snez	a0, a0
 	ret
+

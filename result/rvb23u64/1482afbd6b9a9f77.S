@@ -1,4 +1,4 @@
-func0000000000000035:                   # @func0000000000000035
+func0000000000000035:
 	clz	a3, a2
 	clz	a1, a1
 	czero.eqz	a3, a3, a2
@@ -11,3 +11,4 @@ func0000000000000035:                   # @func0000000000000035
 	subw	a0, a0, a1
 	fcvt.d.w	fa0, a0
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000060:                   # @func0000000000000060
+func0000000000000060:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
@@ -7,7 +7,8 @@ func0000000000000060:                   # @func0000000000000060
 	li	a0, -1000
 	vadd.vx	v8, v10, a0
 	ret
-func00000000000000fb:                   # @func00000000000000fb
+
+func00000000000000fb:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
@@ -16,7 +17,8 @@ func00000000000000fb:                   # @func00000000000000fb
 	li	a0, 50
 	vadd.vx	v8, v10, a0
 	ret
-func00000000000000f0:                   # @func00000000000000f0
+
+func00000000000000f0:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
@@ -24,7 +26,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 2
 	ret
-func00000000000000e0:                   # @func00000000000000e0
+
+func00000000000000e0:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
@@ -32,7 +35,8 @@ func00000000000000e0:                   # @func00000000000000e0
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 6
 	ret
-func0000000000000050:                   # @func0000000000000050
+
+func0000000000000050:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
@@ -40,7 +44,8 @@ func0000000000000050:                   # @func0000000000000050
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, -1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
@@ -48,7 +53,8 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 3
 	ret
-func0000000000000080:                   # @func0000000000000080
+
+func0000000000000080:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
@@ -56,3 +62,4 @@ func0000000000000080:                   # @func0000000000000080
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 1
 	ret
+

@@ -1,12 +1,14 @@
-func0000000000000050:                   # @func0000000000000050
-	addl	$130974, %edi                   # imm = 0x1FF9E
+func0000000000000050:
+	addl	$130974, %edi
 	shrl	%edi
-	movl	$837, %eax                      # imm = 0x345
+	movl	$837, %eax
 	shrxl	%edi, %eax, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	addl	$268431360, %edi                # imm = 0xFFFF000
+
+func0000000000000010:
+	addl	$268431360, %edi
 	shrl	$12, %edi
-	movl	$683, %eax                      # imm = 0x2AB
+	movl	$683, %eax
 	shrxl	%edi, %eax, %eax
 	retq
+

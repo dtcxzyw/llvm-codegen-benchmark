@@ -1,18 +1,20 @@
-func0000000000000183:                   # @func0000000000000183
+func0000000000000183:
 	not	a2, a2
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func0000000000000103:                   # @func0000000000000103
+
+func0000000000000103:
 	not	a2, a2
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	subw	a1, a1, a2
 	addi	a1, a1, -1408
 	slli	a1, a1, 32
@@ -21,7 +23,8 @@ func0000000000000003:                   # @func0000000000000003
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func00000000000001e3:                   # @func00000000000001e3
+
+func00000000000001e3:
 	subw	a1, a1, a2
 	li	a2, 13
 	addi	a1, a1, 1
@@ -30,7 +33,8 @@ func00000000000001e3:                   # @func00000000000001e3
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	subw	a1, a1, a2
 	li	a2, 13
 	addi	a1, a1, 1
@@ -39,10 +43,12 @@ func0000000000000060:                   # @func0000000000000060
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	subw	a1, a1, a2
 	addi	a1, a1, 1
 	slli	a1, a1, 32
 	srli	a1, a1, 29
 	add	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000001ca:                   # @func00000000000001ca
+func00000000000001ca:
 	slli	a1, a1, 24
 	lui	a2, 4096
 	addw	a1, a1, a2
@@ -7,10 +7,12 @@ func00000000000001ca:                   # @func00000000000001ca
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slli	a1, a1, 2
 	addiw	a1, a1, -8
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+

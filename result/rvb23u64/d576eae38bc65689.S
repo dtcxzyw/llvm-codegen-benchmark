@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	sext.w	a1, a1
 	snez	a2, a1
 	addi	a1, a1, -5
@@ -6,7 +6,8 @@ func000000000000018c:                   # @func000000000000018c
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	sext.w	a2, a1
 	srliw	a1, a1, 6
 	lui	a3, 15
@@ -17,3 +18,4 @@ func000000000000028c:                   # @func000000000000028c
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

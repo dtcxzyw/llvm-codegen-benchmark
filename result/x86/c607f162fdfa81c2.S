@@ -1,5 +1,5 @@
-func0000000000000000:                   # @func0000000000000000
-	addl	$8192, %edx                     # imm = 0x2000
+func0000000000000000:
+	addl	$8192, %edx
 	movl	%esi, %eax
 	sarl	$31, %eax
 	andnl	%esi, %eax, %eax
@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	cmovel	%edx, %eax
 	cltq
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	decl	%edx
 	movl	%esi, %eax
 	sarl	$31, %eax
@@ -16,3 +17,4 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%edx, %eax
 	cltq
 	retq
+

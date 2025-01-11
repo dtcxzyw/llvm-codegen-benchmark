@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv.v.i	v24, 0
@@ -10,7 +10,8 @@ func0000000000000024:                   # @func0000000000000024
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	fmv.d.x	fa5, zero
 	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -22,3 +23,4 @@ func0000000000000028:                   # @func0000000000000028
 	vmv1r.v	v0, v16
 	vmerge.vim	v8, v8, 0, v0
 	ret
+

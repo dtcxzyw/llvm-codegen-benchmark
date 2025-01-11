@@ -1,11 +1,12 @@
-func0000000000000521:                   # @func0000000000000521
+func0000000000000521:
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
 	setg	%al
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000526:                   # @func0000000000000526
+
+func0000000000000526:
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
 	testq	%rdi, %rdi
@@ -13,3 +14,4 @@ func0000000000000526:                   # @func0000000000000526
 	subq	%rcx, %rax
 	shrq	$63, %rax
 	retq
+

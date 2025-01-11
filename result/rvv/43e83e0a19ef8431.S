@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	li	a0, 63
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v10, v10, 6
@@ -8,7 +8,8 @@ func0000000000000003:                   # @func0000000000000003
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 3
 	li	a0, 1536
@@ -17,7 +18,8 @@ func0000000000000002:                   # @func0000000000000002
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	li	a0, 64
@@ -26,7 +28,8 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 11
 	bseti	a0, zero, 11
@@ -36,7 +39,8 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	li	a0, -2048
@@ -46,7 +50,8 @@ func000000000000000b:                   # @func000000000000000b
 	vor.vv	v8, v10, v8
 	vor.vv	v8, v8, v12
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	li	a0, 32
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v10, v10, 4
@@ -56,7 +61,8 @@ func0000000000000007:                   # @func0000000000000007
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 4
 	li	a0, 16
@@ -67,3 +73,4 @@ func000000000000000f:                   # @func000000000000000f
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
+

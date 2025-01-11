@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000061:                   # @func0000000000000061
+	.quad	1
+func0000000000000061:
 	vpsraq	$2, %ymm2, %ymm2
 	vpminuq	%ymm2, %ymm1, %ymm1
 	vpmaxuq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -10,9 +10,10 @@ func0000000000000061:                   # @func0000000000000061
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	1                               # 0x1
-func0000000000000261:                   # @func0000000000000261
+	.quad	1
+func0000000000000261:
 	vpsraq	$2, %ymm2, %ymm2
 	vpminuq	%ymm1, %ymm2, %ymm1
 	vpmaxuq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
@@ -22,9 +23,10 @@ func0000000000000261:                   # @func0000000000000261
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	1                               # 0x1
-func0000000000000241:                   # @func0000000000000241
+	.quad	1
+func0000000000000241:
 	vpsraq	$2, %ymm2, %ymm2
 	vpminuq	%ymm1, %ymm2, %ymm1
 	vpmaxuq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -34,3 +36,4 @@ func0000000000000241:                   # @func0000000000000241
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

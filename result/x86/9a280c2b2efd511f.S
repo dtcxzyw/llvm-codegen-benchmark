@@ -1,6 +1,7 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andq	$-8, %rsi
 	subq	%rsi, %rdi
 	andq	$-8, %rdi
 	leaq	-8(%rdi), %rax
 	retq
+

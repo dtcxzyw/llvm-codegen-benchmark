@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	6                               # 0x6
-func000000000000000c:                   # @func000000000000000c
+	.long	6
+func000000000000000c:
 	vpsllw	$15, %xmm1, %xmm3
 	vpmovw2m	%xmm3, %k0
 	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
@@ -13,3 +13,4 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

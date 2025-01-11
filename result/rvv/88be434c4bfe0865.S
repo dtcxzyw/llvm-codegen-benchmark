@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
@@ -9,7 +9,8 @@ func0000000000000021:                   # @func0000000000000021
 	vnot.v	v10, v10
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
@@ -20,3 +21,4 @@ func0000000000000025:                   # @func0000000000000025
 	vnot.v	v10, v10
 	vadd.vv	v8, v10, v8
 	ret
+

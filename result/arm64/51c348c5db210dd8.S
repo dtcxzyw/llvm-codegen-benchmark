@@ -1,61 +1,52 @@
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
+func0000000000000017:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #8
 	ret
-                                        // -- End function
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
+
+func0000000000000011:
 	orr	w8, w1, w2
 	bfi	w0, w8, #8, #24
 	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+
+func000000000000001f:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #6
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
+
+func0000000000000015:
 	orr	w8, w1, w2
 	bfi	w0, w8, #8, #24
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+
+func0000000000000006:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #4
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
+
+func0000000000000000:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #1
 	ret
-                                        // -- End function
-func0000000000000019:                   // @func0000000000000019
-// %bb.0:                               // %entry
+
+func0000000000000019:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #4
 	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
+
+func000000000000000e:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #6
 	ret
-                                        // -- End function
-func000000000000001d:                   // @func000000000000001d
-// %bb.0:                               // %entry
+
+func000000000000001d:
 	orr	w8, w1, w2
 	and	w9, w0, #0xff
 	orr	w0, w9, w8, lsl #4
 	ret
-                                        // -- End function
+

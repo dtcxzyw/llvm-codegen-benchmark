@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	leal	(%rdx,%rsi), %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	leal	(%rdx,%rsi), %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -14,3 +15,4 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
+

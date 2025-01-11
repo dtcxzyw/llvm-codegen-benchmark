@@ -1,6 +1,6 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	pushq	%rbx
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
+	vpmovzxwd	%xmm2, %ymm2
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
 	xorl	%edx, %edx
@@ -81,3 +81,4 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	popq	%rbx
 	retq
+

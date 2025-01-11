@@ -1,30 +1,25 @@
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
+func0000000000000018:
 	tst	x0, #0xfffffffffffffffb
 	cset	w0, ne
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+
+func0000000000000002:
 	tst	x0, #0xfffffffffffffffb
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	and	x8, x0, #0x7ff
 	cmp	x8, #1023
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
+
+func0000000000000030:
 	ubfx	x0, x0, #11, #1
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	tst	x0, #0x800000000000003f
 	cset	w0, gt
 	ret
-                                        // -- End function
+

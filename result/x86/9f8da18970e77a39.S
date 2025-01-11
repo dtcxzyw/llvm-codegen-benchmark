@@ -1,6 +1,7 @@
-func0000000000000009:                   # @func0000000000000009
-	addl	$-261663, %edi                  # imm = 0xFFFC01E1
+func0000000000000009:
+	addl	$-261663, %edi
 	sarl	$21, %edi
 	movl	$31, %eax
 	subl	%edi, %eax
 	retq
+

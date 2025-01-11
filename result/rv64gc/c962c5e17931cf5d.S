@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	negw	a3, a2
 	sraiw	a2, a2, 31
 	slli	a0, a0, 63
@@ -7,7 +7,8 @@ func000000000000002a:                   # @func000000000000002a
 	and	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000ab:                   # @func00000000000000ab
+
+func00000000000000ab:
 	negw	a3, a2
 	sraiw	a2, a2, 31
 	slli	a0, a0, 63
@@ -16,3 +17,4 @@ func00000000000000ab:                   # @func00000000000000ab
 	and	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+

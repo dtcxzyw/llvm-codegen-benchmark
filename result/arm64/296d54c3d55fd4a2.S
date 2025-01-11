@@ -1,14 +1,12 @@
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+func0000000000000012:
 	fcmp	s0, s1
 	add	x8, x0, #2
 	csinc	x0, x8, x0, pl
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	fcmp	s0, s1
 	add	x8, x0, #2
 	csinc	x0, x8, x0, le
 	ret
-                                        // -- End function
+

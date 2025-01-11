@@ -1,15 +1,13 @@
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
+func000000000000001f:
 	ubfx	w8, w1, #6, #2
 	add	x8, x0, w8, uxtw #3
 	add	x0, x8, #104
 	ret
-                                        // -- End function
-func000000000000001c:                   // @func000000000000001c
-// %bb.0:                               // %entry
+
+func000000000000001c:
 	ubfx	w8, w1, #3, #5
-	mov	w9, #112                        // =0x70
+	mov	w9, #112
 	umaddl	x8, w8, w9, x0
 	add	x0, x8, #2496
 	ret
-                                        // -- End function
+

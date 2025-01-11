@@ -1,4 +1,4 @@
-func000000000000018e:                   # @func000000000000018e
+func000000000000018e:
 	testq	%rdi, %rdi
 	setne	%cl
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -8,7 +8,8 @@ func000000000000018e:                   # @func000000000000018e
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
+
+func0000000000000082:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%cl
@@ -16,3 +17,4 @@ func0000000000000082:                   # @func0000000000000082
 	sete	%al
 	orb	%cl, %al
 	retq
+

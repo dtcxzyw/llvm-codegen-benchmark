@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	lui	a0, 1048572
@@ -12,7 +12,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, -1073
 	vmul.vx	v8, v10, a0
 	ret
-func0000000000000037:                   # @func0000000000000037
+
+func0000000000000037:
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmslt.vx	v0, v9, a0
@@ -20,7 +21,8 @@ func0000000000000037:                   # @func0000000000000037
 	li	a0, 12
 	vwmulu.vx	v8, v10, a0
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	li	a0, 1
@@ -30,7 +32,8 @@ func000000000000000a:                   # @func000000000000000a
 	bseti	a0, a0, 32
 	vmul.vx	v8, v10, a0
 	ret
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsleu.vi	v0, v9, 1
 	li	a0, 24
@@ -38,10 +41,12 @@ func0000000000000027:                   # @func0000000000000027
 	li	a0, 20
 	vwmulu.vx	v8, v10, a0
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	vmerge.vim	v10, v8, 8, v0
 	li	a0, 24
 	vwmulu.vx	v8, v10, a0
 	ret
+

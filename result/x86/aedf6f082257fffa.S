@@ -1,4 +1,4 @@
-func0000000000001202:                   # @func0000000000001202
+func0000000000001202:
 	leal	-48(%rdi), %eax
 	cmpl	$10, %eax
 	setb	%cl
@@ -7,7 +7,8 @@ func0000000000001202:                   # @func0000000000001202
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000202:                   # @func0000000000000202
+
+func0000000000000202:
 	leal	-11(%rdi), %eax
 	cmpl	$3, %eax
 	setb	%cl
@@ -16,7 +17,8 @@ func0000000000000202:                   # @func0000000000000202
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000204:                   # @func0000000000000204
+
+func0000000000000204:
 	leal	-48(%rsi), %eax
 	cmpl	$10, %eax
 	setb	%cl
@@ -25,7 +27,8 @@ func0000000000000204:                   # @func0000000000000204
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000001204:                   # @func0000000000001204
+
+func0000000000001204:
 	leal	-44(%rsi), %eax
 	cmpl	$-7, %eax
 	setb	%cl
@@ -34,16 +37,18 @@ func0000000000001204:                   # @func0000000000001204
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-func0000000000000210:                   # @func0000000000000210
+
+func0000000000000210:
 	leal	-57344(%rdi), %eax
-	cmpl	$6400, %eax                     # imm = 0x1900
+	cmpl	$6400, %eax
 	setb	%cl
-	cmpl	$65536, %edi                    # imm = 0x10000
+	cmpl	$65536, %edi
 	setae	%al
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000001214:                   # @func0000000000001214
+
+func0000000000001214:
 	leal	-65(%rdi), %eax
 	cmpl	$26, %eax
 	setb	%cl
@@ -52,3 +57,4 @@ func0000000000001214:                   # @func0000000000001214
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
+

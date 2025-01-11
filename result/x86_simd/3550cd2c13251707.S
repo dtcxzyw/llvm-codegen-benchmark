@@ -1,16 +1,17 @@
 .LCPI0_0:
-	.long	4                               # 0x4
+	.long	4
 .LCPI0_1:
-	.long	0x3f000000                      # float 0.5
+	.long	0x3f000000
 .LCPI0_2:
-	.long	0x3f666666                      # float 0.899999976
+	.long	0x3f666666
 .LCPI0_3:
-	.long	0x3dcccccd                      # float 0.100000001
-func0000000000000021:                   # @func0000000000000021
+	.long	0x3dcccccd
+func0000000000000021:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
-	vbroadcastss	.LCPI0_1(%rip), %ymm1   # ymm1 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1,5.0E-1]
-	vbroadcastss	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [8.99999976E-1,8.99999976E-1,8.99999976E-1,8.99999976E-1,8.99999976E-1,8.99999976E-1,8.99999976E-1,8.99999976E-1]
+	vbroadcastss	.LCPI0_1(%rip), %ymm1
+	vbroadcastss	.LCPI0_2(%rip), %ymm1 {%k1}
 	vptestnmd	%ymm0, %ymm0, %k1
-	vbroadcastss	.LCPI0_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1.00000001E-1,1.00000001E-1,1.00000001E-1,1.00000001E-1,1.00000001E-1,1.00000001E-1,1.00000001E-1,1.00000001E-1]
+	vbroadcastss	.LCPI0_3(%rip), %ymm1 {%k1}
 	vmovaps	%ymm1, %ymm0
 	retq
+

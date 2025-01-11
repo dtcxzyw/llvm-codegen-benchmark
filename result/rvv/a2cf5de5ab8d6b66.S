@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	lui	a0, 20972
 	addi	a0, a0, -1892
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -12,3 +12,4 @@ func000000000000002c:                   # @func000000000000002c
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
+

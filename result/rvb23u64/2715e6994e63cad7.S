@@ -1,4 +1,4 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000000a8:
 	sub	a0, a0, a1
 	li	a1, 63
 	srai	a0, a0, 4
@@ -8,3 +8,4 @@ func00000000000000a8:                   # @func00000000000000a8
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
 	ret
+

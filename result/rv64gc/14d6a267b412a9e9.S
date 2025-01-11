@@ -1,4 +1,4 @@
-func000000000000003b:                   # @func000000000000003b
+func000000000000003b:
 	addi	a2, a2, 7
 	sext.w	a1, a1
 	andi	a2, a2, -8
@@ -6,7 +6,8 @@ func000000000000003b:                   # @func000000000000003b
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	addi	a2, a2, 7
 	li	a3, 1
 	sext.w	a1, a1
@@ -17,7 +18,8 @@ func000000000000007f:                   # @func000000000000007f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000060:                   # @func0000000000000060
+
+func0000000000000060:
 	li	a3, 1
 	slli	a1, a1, 32
 	slli	a3, a3, 33
@@ -28,7 +30,8 @@ func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	addi	a2, a2, 40
 	slli	a1, a1, 32
 	andi	a2, a2, -16
@@ -36,7 +39,8 @@ func000000000000000b:                   # @func000000000000000b
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	addi	a2, a2, 1
 	slli	a1, a1, 32
 	slli	a2, a2, 32
@@ -45,7 +49,8 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	addi	a2, a2, 16
 	lui	a3, 131072
 	sext.w	a1, a1
@@ -54,7 +59,8 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000006f:                   # @func000000000000006f
+
+func000000000000006f:
 	addi	a2, a2, 63
 	li	a3, 1
 	slli	a1, a1, 32
@@ -65,3 +71,4 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+

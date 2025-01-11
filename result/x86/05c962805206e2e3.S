@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	leal	15(%rdi,%rsi), %ecx
 	movl	%edi, %eax
 	addl	%esi, %eax
@@ -6,10 +6,11 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$-16, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	addl	%esi, %edi
 	movslq	%edi, %rcx
-	imulq	$-1840700269, %rcx, %rax        # imm = 0x92492493
+	imulq	$-1840700269, %rcx, %rax
 	shrq	$32, %rax
 	addl	%ecx, %eax
 	movl	%eax, %edx
@@ -20,3 +21,4 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%edx, %eax
 	addl	%ecx, %eax
 	retq
+

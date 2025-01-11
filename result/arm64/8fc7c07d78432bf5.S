@@ -1,9 +1,8 @@
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
-	mov	w8, #-1                         // =0xffffffff
+func0000000000000034:
+	mov	w8, #-1
 	fcmp	s2, #0.0
 	fmov	s2, w8
-	mov	w8, #4059                       // =0xfdb
+	mov	w8, #4059
 	movk	w8, #16457, lsl #16
 	fcsel	s1, s2, s1, lt
 	fmul	s0, s1, s0
@@ -11,22 +10,20 @@ func0000000000000034:                   // @func0000000000000034
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000032:                   // @func0000000000000032
-// %bb.0:                               // %entry
-	mov	w8, #-1                         // =0xffffffff
+
+func0000000000000032:
+	mov	w8, #-1
 	fcmp	s2, #0.0
 	fmov	s2, w8
-	mov	w8, #-1023541248                // =0xc2fe0000
+	mov	w8, #-1023541248
 	fcsel	s1, s2, s1, lt
 	fmul	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
+
+func0000000000000022:
 	movi	d3, #0000000000000000
 	fcmp	s2, #0.0
 	fcsel	s1, s3, s1, mi
@@ -34,9 +31,8 @@ func0000000000000022:                   // @func0000000000000022
 	fcmp	s0, #0.0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	movi	d3, #0000000000000000
 	fcmp	s2, #0.0
 	fcsel	s1, s3, s1, mi
@@ -45,9 +41,8 @@ func0000000000000024:                   // @func0000000000000024
 	fcmp	s0, s1
 	cset	w0, gt
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	movi	d3, #0000000000000000
 	fcmp	s2, #0.0
 	fcsel	s1, s3, s1, eq
@@ -55,10 +50,9 @@ func000000000000008c:                   // @func000000000000008c
 	fcmp	s0, #0.0
 	cset	w0, ge
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-	mov	w8, #2143289344                 // =0x7fc00000
+
+func0000000000000013:
+	mov	w8, #2143289344
 	fcmp	s2, s2
 	fmov	s2, w8
 	fcsel	s1, s2, s1, vs
@@ -66,12 +60,11 @@ func0000000000000013:                   // @func0000000000000013
 	fcmp	s0, #0.0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000085:                   // @func0000000000000085
-// %bb.0:                               // %entry
+
+func0000000000000085:
 	movi	d3, #0000000000000000
 	fcmp	s2, #0.0
-	mov	w8, #44774                      // =0xaee6
+	mov	w8, #44774
 	movk	w8, #15653, lsl #16
 	fcsel	s1, s3, s1, eq
 	fmul	s0, s0, s1
@@ -79,4 +72,4 @@ func0000000000000085:                   // @func0000000000000085
 	fcmp	s0, s1
 	cset	w0, hi
 	ret
-                                        // -- End function
+

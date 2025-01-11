@@ -1,11 +1,12 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	sext.w	a1, a1
 	bexti	a2, a2, 2
 	sltiu	a1, a1, -1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sext.w	a1, a1
 	not	a2, a2
 	bexti	a2, a2, 12
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	seqz	a2, a2
@@ -23,14 +25,16 @@ func0000000000000181:                   # @func0000000000000181
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	bexti	a2, a2, 10
 	seqz	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	sext.w	a1, a1
 	andi	a2, a2, 63
 	lui	a3, 20480
@@ -42,7 +46,8 @@ func0000000000000038:                   # @func0000000000000038
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	sext.w	a1, a1
 	andi	a2, a2, 15
 	addi	a2, a2, -2
@@ -51,7 +56,8 @@ func000000000000030c:                   # @func000000000000030c
 	andn	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000294:                   # @func0000000000000294
+
+func0000000000000294:
 	sext.w	a1, a1
 	andi	a2, a2, 14
 	sltiu	a2, a2, 10
@@ -59,7 +65,8 @@ func0000000000000294:                   # @func0000000000000294
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	sext.w	a1, a1
 	lui	a3, 524288
 	addiw	a3, a3, -8
@@ -70,7 +77,8 @@ func0000000000000034:                   # @func0000000000000034
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	sext.w	a1, a1
 	andi	a2, a2, -2
 	sext.w	a2, a2
@@ -80,7 +88,8 @@ func0000000000000081:                   # @func0000000000000081
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	sext.w	a1, a1
 	lui	a3, 524288
 	addiw	a3, a3, 7
@@ -88,7 +97,8 @@ func000000000000010c:                   # @func000000000000010c
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
+
+func0000000000000194:
 	sext.w	a1, a1
 	andi	a2, a2, 15
 	sltiu	a2, a2, 9
@@ -96,3 +106,4 @@ func0000000000000194:                   # @func0000000000000194
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

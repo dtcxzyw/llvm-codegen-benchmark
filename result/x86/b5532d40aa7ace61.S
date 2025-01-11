@@ -1,4 +1,4 @@
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000003f4:
 	movl	%edi, %eax
 	orb	$48, %al
 	leal	55(%rdi), %ecx
@@ -7,3 +7,4 @@ func00000000000003f4:                   # @func00000000000003f4
 	movzbl	%cl, %eax
 	cmovbl	%edx, %eax
 	retq
+

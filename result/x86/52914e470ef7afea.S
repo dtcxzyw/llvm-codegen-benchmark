@@ -1,6 +1,6 @@
-func000000000000000d:                   # @func000000000000000d
+func000000000000000d:
 	xorl	%eax, %eax
-	subl	$-1074, %edx                    # imm = 0xFBCE
+	subl	$-1074, %edx
 	cmovbl	%eax, %edx
 	movl	$4, %ecx
 	subl	%edx, %ecx
@@ -9,9 +9,10 @@ func000000000000000d:                   # @func000000000000000d
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	xorl	%eax, %eax
-	subl	$-1074, %edx                    # imm = 0xFBCE
+	subl	$-1074, %edx
 	cmovbl	%eax, %edx
 	movl	$4, %ecx
 	subl	%edx, %ecx
@@ -20,3 +21,4 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

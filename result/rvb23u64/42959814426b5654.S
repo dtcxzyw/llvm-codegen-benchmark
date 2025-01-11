@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000004:
 	lui	a1, 4
 	li	a2, 5
 	addiw	a1, a1, 423
@@ -16,7 +16,8 @@ func0000000000000004:                   # @func0000000000000004
 	fcvt.d.lu	fa5, a0
 	fmadd.d	fa0, fa5, fa0, fa1
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	lui	a1, 4
 	li	a2, 5
 	addiw	a1, a1, 423
@@ -34,3 +35,4 @@ func0000000000000034:                   # @func0000000000000034
 	fcvt.d.lu	fa5, a0
 	fmadd.d	fa0, fa5, fa0, fa1
 	ret
+

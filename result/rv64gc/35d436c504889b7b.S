@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3fe1c6a7ef9db22d              # double 0.55549999999999999
-func0000000000000000:                   # @func0000000000000000
+	.quad	0x3fe1c6a7ef9db22d
+func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fcvt.d.s	fa4, fa1
@@ -8,3 +8,4 @@ func0000000000000000:                   # @func0000000000000000
 	fcvt.d.s	fa4, fa0
 	fmul.d	fa0, fa5, fa4
 	ret
+

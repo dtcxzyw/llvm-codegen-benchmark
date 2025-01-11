@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -6,7 +6,8 @@ func0000000000000029:                   # @func0000000000000029
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -22,7 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -30,7 +33,8 @@ func0000000000000011:                   # @func0000000000000011
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
-func0000000000000019:                   # @func0000000000000019
+
+func0000000000000019:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -38,7 +42,8 @@ func0000000000000019:                   # @func0000000000000019
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
-func0000000000000039:                   # @func0000000000000039
+
+func0000000000000039:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
@@ -46,3 +51,4 @@ func0000000000000039:                   # @func0000000000000039
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	ret
+

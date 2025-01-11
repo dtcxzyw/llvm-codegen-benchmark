@@ -1,4 +1,4 @@
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ea:
 	addl	$28, %edx
 	andl	$31, %edx
 	xorl	%eax, %eax
@@ -7,7 +7,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	addl	%edx, %eax
 	setg	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	addl	$28, %edx
 	andl	$31, %edx
 	xorl	%eax, %eax
@@ -17,3 +18,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	testl	%eax, %eax
 	setg	%al
 	retq
+

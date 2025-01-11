@@ -1,4 +1,4 @@
-func0000000000000328:                   # @func0000000000000328
+func0000000000000328:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -7,9 +7,10 @@ func0000000000000328:                   # @func0000000000000328
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
+
 .LCPI1_0:
-	.quad	0x408f400000000000              # double 1000
-func0000000000000322:                   # @func0000000000000322
+	.quad	0x408f400000000000
+func0000000000000322:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -19,7 +20,8 @@ func0000000000000322:                   # @func0000000000000322
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vf	v0, v8, fa5
 	ret
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -28,7 +30,8 @@ func0000000000000042:                   # @func0000000000000042
 	fli.d	fa5, min
 	vmflt.vf	v0, v8, fa5
 	ret
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -37,7 +40,8 @@ func0000000000000022:                   # @func0000000000000022
 	fli.d	fa5, 1.0
 	vmflt.vf	v0, v8, fa5
 	ret
-func0000000000000222:                   # @func0000000000000222
+
+func0000000000000222:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -46,7 +50,8 @@ func0000000000000222:                   # @func0000000000000222
 	fli.d	fa5, 1.0
 	vmflt.vf	v0, v8, fa5
 	ret
-func0000000000000342:                   # @func0000000000000342
+
+func0000000000000342:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -55,9 +60,10 @@ func0000000000000342:                   # @func0000000000000342
 	fli.d	fa5, min
 	vmflt.vf	v0, v8, fa5
 	ret
+
 .LCPI6_0:
-	.quad	0x2ab0000000000000              # double 4.4647944971963866E-103
-func0000000000000325:                   # @func0000000000000325
+	.quad	0x2ab0000000000000
+func0000000000000325:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -68,9 +74,10 @@ func0000000000000325:                   # @func0000000000000325
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
+
 .LCPI7_0:
-	.quad	0x5e40000000000000              # double 9.9895953610111751E+145
-func0000000000000343:                   # @func0000000000000343
+	.quad	0x5e40000000000000
+func0000000000000343:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -81,9 +88,10 @@ func0000000000000343:                   # @func0000000000000343
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
+
 .LCPI8_0:
-	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
-func0000000000000345:                   # @func0000000000000345
+	.quad	0x21a0000000000000
+func0000000000000345:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -94,7 +102,8 @@ func0000000000000345:                   # @func0000000000000345
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
-func0000000000000347:                   # @func0000000000000347
+
+func0000000000000347:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -103,7 +112,8 @@ func0000000000000347:                   # @func0000000000000347
 	fmv.d.x	fa5, zero
 	vmfne.vf	v0, v8, fa5
 	ret
-func0000000000000324:                   # @func0000000000000324
+
+func0000000000000324:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -112,7 +122,8 @@ func0000000000000324:                   # @func0000000000000324
 	fli.d	fa5, 2.0
 	vmfgt.vf	v0, v8, fa5
 	ret
-func0000000000000323:                   # @func0000000000000323
+
+func0000000000000323:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -122,7 +133,8 @@ func0000000000000323:                   # @func0000000000000323
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -131,7 +143,8 @@ func0000000000000028:                   # @func0000000000000028
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
@@ -140,3 +153,4 @@ func0000000000000048:                   # @func0000000000000048
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
+

@@ -1,30 +1,34 @@
-func0000000000000055:                   # @func0000000000000055
+func0000000000000055:
 	movl	%esi, %eax
-	imulq	$-1000, %rdi, %rcx              # imm = 0xFC18
+	imulq	$-1000, %rdi, %rcx
 	addq	%rax, %rcx
-	imulq	$1000000, %rcx, %rax            # imm = 0xF4240
+	imulq	$1000000, %rcx, %rax
 	retq
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	movl	%esi, %eax
 	imulq	$60, %rdi, %rcx
 	addq	%rax, %rcx
-	imulq	$1000000, %rcx, %rax            # imm = 0xF4240
+	imulq	$1000000, %rcx, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+
+func0000000000000062:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,8), %rcx
 	leaq	(%rdi,%rcx,4), %rcx
@@ -32,7 +36,8 @@ func0000000000000015:                   # @func0000000000000015
 	leaq	(%rcx,%rcx,8), %rax
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,8), %rcx
 	leaq	(%rdi,%rcx,4), %rcx
@@ -40,23 +45,27 @@ func000000000000003f:                   # @func000000000000003f
 	leaq	(%rcx,%rcx,8), %rax
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	movl	%esi, %eax
-	imulq	$1540483477, %rdi, %rcx         # imm = 0x5BD1E995
+	imulq	$1540483477, %rdi, %rcx
 	addq	%rax, %rcx
-	imulq	$1540483477, %rcx, %rax         # imm = 0x5BD1E995
+	imulq	$1540483477, %rcx, %rax
 	retq
-func0000000000000054:                   # @func0000000000000054
+
+func0000000000000054:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	addq	%rax, %rax
 	leaq	(%rax,%rax,4), %rax
 	retq
+

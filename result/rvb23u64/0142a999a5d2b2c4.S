@@ -1,18 +1,20 @@
-func0000000000000158:                   # @func0000000000000158
+func0000000000000158:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000142:                   # @func0000000000000142
+
+func0000000000000142:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000148:                   # @func0000000000000148
+
+func0000000000000148:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	lui	a2, 15
@@ -21,7 +23,8 @@ func0000000000000148:                   # @func0000000000000148
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000150:                   # @func0000000000000150
+
+func0000000000000150:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
@@ -29,3 +32,4 @@ func0000000000000150:                   # @func0000000000000150
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000025:                   # @func0000000000000025
+func0000000000000025:
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 30
 	add	a2, a2, a3
@@ -6,7 +6,8 @@ func0000000000000025:                   # @func0000000000000025
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000005:                   # @func0000000000000005
+
+func0000000000000005:
 	sext.w	a2, a2
 	lui	a3, 335544
 	addiw	a3, a3, 1311
@@ -17,7 +18,8 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	sext.w	a2, a2
 	lui	a3, 174763
 	addiw	a3, a3, -1365
@@ -28,10 +30,12 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	srliw	a3, a2, 31
 	add	a2, a2, a3
 	sraiw	a2, a2, 1
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
+

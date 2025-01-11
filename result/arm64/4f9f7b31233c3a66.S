@@ -1,6 +1,4 @@
-func00000000000000e1:                   // @func00000000000000e1
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+func00000000000000e1:
 	mvn	x8, x2
 	and	x9, x1, #0xffff
 	add	x8, x9, x8
@@ -8,10 +6,8 @@ func00000000000000e1:                   // @func00000000000000e1
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000041:
 	mvn	x8, x2
 	and	x9, x1, #0xffff
 	add	x8, x9, x8
@@ -19,4 +15,4 @@ func0000000000000041:                   // @func0000000000000041
 	cmp	x9, x8
 	cset	w0, eq
 	ret
-                                        // -- End function
+

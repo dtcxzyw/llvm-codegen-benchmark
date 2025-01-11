@@ -1,4 +1,4 @@
-func000000000000114a:                   # @func000000000000114a
+func000000000000114a:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -7,7 +7,8 @@ func000000000000114a:                   # @func000000000000114a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000001546:                   # @func0000000000001546
+
+func0000000000001546:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -16,7 +17,8 @@ func0000000000001546:                   # @func0000000000001546
 	testl	%ecx, %ecx
 	setle	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -25,7 +27,8 @@ func0000000000000101:                   # @func0000000000000101
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000154a:                   # @func000000000000154a
+
+func000000000000154a:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -34,7 +37,8 @@ func000000000000154a:                   # @func000000000000154a
 	testl	%ecx, %ecx
 	setg	%al
 	retq
-func00000000000014c6:                   # @func00000000000014c6
+
+func00000000000014c6:
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
@@ -42,7 +46,8 @@ func00000000000014c6:                   # @func00000000000014c6
 	cmovgel	%edi, %eax
 	shrl	$31, %eax
 	retq
-func00000000000014c1:                   # @func00000000000014c1
+
+func00000000000014c1:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -51,7 +56,8 @@ func00000000000014c1:                   # @func00000000000014c1
 	testl	%ecx, %ecx
 	sete	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -60,7 +66,8 @@ func000000000000014a:                   # @func000000000000014a
 	testl	%ecx, %ecx
 	setg	%al
 	retq
-func0000000000003541:                   # @func0000000000003541
+
+func0000000000003541:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -69,7 +76,8 @@ func0000000000003541:                   # @func0000000000003541
 	testl	%ecx, %ecx
 	sete	%al
 	retq
-func0000000000001541:                   # @func0000000000001541
+
+func0000000000001541:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -78,7 +86,8 @@ func0000000000001541:                   # @func0000000000001541
 	testl	%eax, %eax
 	sete	%al
 	retq
-func000000000000154c:                   # @func000000000000154c
+
+func000000000000154c:
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -87,3 +96,4 @@ func000000000000154c:                   # @func000000000000154c
 	testl	%ecx, %ecx
 	setne	%al
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000042:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -7,7 +7,8 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000022:                   # @func0000000000000022
+
+func0000000000000022:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
 	vinsertf64x4	$1, %ymm3, %zmm2, %zmm2
@@ -16,3 +17,4 @@ func0000000000000022:                   # @func0000000000000022
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

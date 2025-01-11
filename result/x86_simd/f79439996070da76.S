@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -88,7 +88,8 @@ func0000000000000006:                   # @func0000000000000006
 	popq	%rbp
 	vzeroupper
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -178,7 +179,8 @@ func0000000000000001:                   # @func0000000000000001
 	popq	%rbp
 	vzeroupper
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -268,7 +270,8 @@ func000000000000000a:                   # @func000000000000000a
 	popq	%rbp
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -358,7 +361,8 @@ func000000000000000c:                   # @func000000000000000c
 	popq	%rbp
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -448,7 +452,8 @@ func0000000000000007:                   # @func0000000000000007
 	popq	%rbp
 	vzeroupper
 	retq
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	pushq	%rbp
 	pushq	%rbx
 	vextracti128	$1, %ymm2, %xmm3
@@ -538,3 +543,4 @@ func0000000000000004:                   # @func0000000000000004
 	popq	%rbp
 	vzeroupper
 	retq
+

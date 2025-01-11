@@ -1,32 +1,36 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000018:                   # @func0000000000000018
+	.quad	1
+func0000000000000018:
 	vporq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	63                              # 0x3f
-func0000000000000010:                   # @func0000000000000010
+	.quad	63
+func0000000000000010:
 	vporq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	3                               # 0x3
-func000000000000001c:                   # @func000000000000001c
+	.quad	3
+func000000000000001c:
 	vporq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	2                               # 0x2
-func0000000000000000:                   # @func0000000000000000
+	.quad	2
+func0000000000000000:
 	vporq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
+

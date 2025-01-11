@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	slli	a0, a0, 48
 	xor	a1, a1, a2
 	srli	a0, a0, 48
@@ -6,14 +6,16 @@ func000000000000002c:                   # @func000000000000002c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000028c:                   # @func000000000000028c
+
+func000000000000028c:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a1, a2
@@ -21,7 +23,8 @@ func000000000000028c:                   # @func000000000000028c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+
+func0000000000000184:
 	slli	a0, a0, 48
 	xor	a1, a1, a2
 	srli	a0, a0, 48
@@ -29,7 +32,8 @@ func0000000000000184:                   # @func0000000000000184
 	sltiu	a0, a0, 256
 	and	a0, a0, a1
 	ret
-func0000000000000321:                   # @func0000000000000321
+
+func0000000000000321:
 	slli	a0, a0, 48
 	sltu	a1, a1, a2
 	srli	a0, a0, 48
@@ -37,7 +41,8 @@ func0000000000000321:                   # @func0000000000000321
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000281:                   # @func0000000000000281
+
+func0000000000000281:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a1, a2
@@ -45,7 +50,8 @@ func0000000000000281:                   # @func0000000000000281
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	slli	a0, a0, 48
 	sltu	a1, a1, a2
 	lui	a2, 16
@@ -54,7 +60,8 @@ func0000000000000084:                   # @func0000000000000084
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	slli	a0, a0, 48
 	xor	a1, a1, a2
 	lui	a2, 6
@@ -64,21 +71,24 @@ func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	slt	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sltu	a1, a1, a2
@@ -86,14 +96,16 @@ func000000000000008a:                   # @func000000000000008a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a2, a1
 	sltiu	a0, a0, 257
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	slli	a0, a0, 48
 	xor	a1, a1, a2
 	srli	a0, a0, 48
@@ -101,14 +113,16 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	slt	a1, a2, a1
@@ -116,7 +130,8 @@ func0000000000000141:                   # @func0000000000000141
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
+
+func000000000000010a:
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sltu	a1, a2, a1
@@ -124,17 +139,20 @@ func000000000000010a:                   # @func000000000000010a
 	not	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
+
+func0000000000000101:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

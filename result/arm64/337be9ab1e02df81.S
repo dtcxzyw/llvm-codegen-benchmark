@@ -1,5 +1,4 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
+func0000000000000006:
 	lsr	x8, x1, #63
 	tst	w0, #0x1
 	add	x8, x8, #9
@@ -7,4 +6,4 @@ func0000000000000006:                   // @func0000000000000006
 	and	x9, x8, #0xfffffffffffffe
 	csel	x0, x9, x8, ne
 	ret
-                                        // -- End function
+

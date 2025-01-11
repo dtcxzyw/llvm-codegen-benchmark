@@ -1,8 +1,9 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	xorl	%esi, %edi
 	movl	%edi, %eax
 	shll	$7, %eax
-	andl	$22144, %eax                    # imm = 0x5680
+	andl	$22144, %eax
 	xorl	%edi, %eax
 	shll	$15, %eax
 	retq
+

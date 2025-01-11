@@ -1,8 +1,9 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	movq	%rdi, %rcx
 	shlq	$16, %rcx
-	movabsq	$-8587968512, %rax              # imm = 0xFFFFFFFE001E0000
+	movabsq	$-8587968512, %rax
 	addq	%rcx, %rax
-	cmpq	$131042, %rdi                   # imm = 0x1FFE2
+	cmpq	$131042, %rdi
 	cmovbq	%rcx, %rax
 	retq
+

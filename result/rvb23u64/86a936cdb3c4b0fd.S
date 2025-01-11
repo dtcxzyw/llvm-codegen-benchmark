@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a2, a2, a0
@@ -7,7 +7,8 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 32
 	snez	a0, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a2, a2, a0
@@ -16,7 +17,8 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func0000000000000026:                   # @func0000000000000026
+
+func0000000000000026:
 	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a2, a2, a0
@@ -26,7 +28,8 @@ func0000000000000026:                   # @func0000000000000026
 	addiw	a1, a1, -1
 	slt	a0, a0, a1
 	ret
-func0000000000000078:                   # @func0000000000000078
+
+func0000000000000078:
 	andi	a0, a0, 1
 	lui	a2, 16
 	sub	a2, a2, a1
@@ -36,7 +39,8 @@ func0000000000000078:                   # @func0000000000000078
 	lui	a1, 4
 	sltu	a0, a1, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	andi	a0, a0, 1
 	lui	a2, 16
 	sub	a2, a2, a1
@@ -46,7 +50,8 @@ func0000000000000074:                   # @func0000000000000074
 	srli	a0, a0, 12
 	sltiu	a0, a0, 3
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	andi	a0, a0, 1
 	bseti	a2, zero, 36
 	sub	a2, a2, a1
@@ -55,7 +60,8 @@ func0000000000000061:                   # @func0000000000000061
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	andi	a0, a0, 1
 	bseti	a2, zero, 34
 	sub	a2, a2, a1
@@ -65,7 +71,8 @@ func0000000000000024:                   # @func0000000000000024
 	srli	a0, a0, 28
 	seqz	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	andi	a0, a0, 1
 	bseti	a2, zero, 34
 	sub	a2, a2, a1
@@ -75,7 +82,8 @@ func0000000000000028:                   # @func0000000000000028
 	srli	a0, a0, 29
 	snez	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andi	a0, a0, 1
 	bseti	a2, zero, 34
 	sub	a2, a2, a1
@@ -84,7 +92,8 @@ func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	andi	a0, a0, 1
 	bseti	a2, zero, 34
 	sub	a2, a2, a1
@@ -94,7 +103,8 @@ func0000000000000034:                   # @func0000000000000034
 	srli	a0, a0, 27
 	seqz	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a2, a2, a0
@@ -104,7 +114,8 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, 256
 	sltu	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a2, a2, a0
@@ -117,3 +128,4 @@ func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 17
 	sltu	a0, a0, a1
 	ret
+

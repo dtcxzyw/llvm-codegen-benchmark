@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.long	37                              # 0x25
+	.long	37
 .LCPI0_1:
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-	.short	24                              # 0x18
-func0000000000000041:                   # @func0000000000000041
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+	.short	24
+func0000000000000041:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
@@ -19,7 +19,8 @@ func0000000000000041:                   # @func0000000000000041
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000004c:                   # @func000000000000004c
+
+func000000000000004c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	%ymm2, %ymm2, %k1
@@ -29,9 +30,10 @@ func000000000000004c:                   # @func000000000000004c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	25                              # 0x19
-func000000000000010c:                   # @func000000000000010c
+	.long	25
+func000000000000010c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1
@@ -41,3 +43,4 @@ func000000000000010c:                   # @func000000000000010c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

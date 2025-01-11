@@ -1,59 +1,51 @@
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
+func0000000000000000:
+	mov	w8, #1
 	sub	w8, w8, w1
 	add	x8, x0, w8, sxtw #3
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+
+func000000000000001a:
 	neg	w8, w1
 	add	x8, x0, w8, sxtw #4
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+
+func000000000000001b:
 	sub	x8, x0, w1, sxtw #4
 	add	x0, x8, #8
 	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
+
+func000000000000000b:
+	mov	w8, #3
 	sub	w8, w8, w1
 	add	x8, x0, w8, sxtw #4
 	add	x0, x8, #4
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	neg	w8, w1
 	add	x8, x0, w8, sxtw #2
 	add	x0, x8, #32
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
+
+func000000000000000a:
+	mov	w8, #3
 	sub	w8, w8, w1
 	add	x8, x0, w8, sxtw #2
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	mov	w8, #-2                         // =0xfffffffe
+
+func0000000000000018:
+	mov	w8, #-2
 	sub	w8, w8, w1
 	add	x8, x0, w8, sxtw #3
 	sub	x0, x8, #8
 	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+
+func0000000000000003:
 	neg	w8, w1
 	add	x8, x0, w8, sxtw #1
 	add	x0, x8, #1
 	ret
-                                        // -- End function
+

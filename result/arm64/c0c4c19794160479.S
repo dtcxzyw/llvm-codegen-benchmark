@@ -1,5 +1,4 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+func0000000000000004:
 	and	w8, w1, #0xff
 	sub	w8, w8, #14
 	cmn	w8, #4
@@ -7,9 +6,8 @@ func0000000000000004:                   // @func0000000000000004
 	eor	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000024:                   // @func0000000000000024
-// %bb.0:                               // %entry
+
+func0000000000000024:
 	and	w8, w1, #0xff
 	sub	w8, w8, #15
 	cmn	w8, #2
@@ -17,4 +15,4 @@ func0000000000000024:                   // @func0000000000000024
 	eor	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

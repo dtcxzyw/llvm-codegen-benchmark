@@ -1,8 +1,8 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000003:
 	shll	$8, %esi
 	movzwl	%si, %edx
 	addq	%rdi, %rdx
-	movabsq	$595056260442243601, %rax       # imm = 0x842108421084211
+	movabsq	$595056260442243601, %rax
 	mulxq	%rax, %rcx, %rcx
 	movq	%rdx, %rax
 	subq	%rcx, %rax
@@ -14,3 +14,4 @@ func0000000000000003:                   # @func0000000000000003
 	subq	%rcx, %rax
 	addq	%rdx, %rax
 	retq
+

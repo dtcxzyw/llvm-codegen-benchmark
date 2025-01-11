@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-	.short	256                             # 0x100
-func000000000000000c:                   # @func000000000000000c
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovdw	%ymm1, %xmm0
@@ -18,3 +18,4 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+

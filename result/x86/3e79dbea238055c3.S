@@ -1,4 +1,4 @@
-func0000000000000574:                   # @func0000000000000574
+func0000000000000574:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -6,7 +6,8 @@ func0000000000000574:                   # @func0000000000000574
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000506:                   # @func0000000000000506
+
+func0000000000000506:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -14,7 +15,8 @@ func0000000000000506:                   # @func0000000000000506
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000534:                   # @func0000000000000534
+
+func0000000000000534:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -22,7 +24,8 @@ func0000000000000534:                   # @func0000000000000534
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000504:                   # @func0000000000000504
+
+func0000000000000504:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -30,7 +33,8 @@ func0000000000000504:                   # @func0000000000000504
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000526:                   # @func0000000000000526
+
+func0000000000000526:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -38,7 +42,8 @@ func0000000000000526:                   # @func0000000000000526
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000561:                   # @func0000000000000561
+
+func0000000000000561:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -46,7 +51,8 @@ func0000000000000561:                   # @func0000000000000561
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000056c:                   # @func000000000000056c
+
+func000000000000056c:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -54,7 +60,8 @@ func000000000000056c:                   # @func000000000000056c
 	cmpl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000578:                   # @func0000000000000578
+
+func0000000000000578:
 	shll	$8, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
@@ -62,3 +69,4 @@ func0000000000000578:                   # @func0000000000000578
 	cmpl	%eax, %edi
 	seta	%al
 	retq
+

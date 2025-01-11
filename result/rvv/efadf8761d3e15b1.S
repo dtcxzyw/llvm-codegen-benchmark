@@ -1,4 +1,4 @@
-func000000000000006f:                   # @func000000000000006f
+func000000000000006f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
@@ -6,7 +6,8 @@ func000000000000006f:                   # @func000000000000006f
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
@@ -14,7 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 1
 	ret
-func0000000000000027:                   # @func0000000000000027
+
+func0000000000000027:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
@@ -23,9 +25,10 @@ func0000000000000027:                   # @func0000000000000027
 	li	a0, 1086
 	vadd.vx	v8, v8, a0
 	ret
+
 .LCPI3_0:
-	.quad	-6313183731941900               # 0xffe992315e417df4
-func0000000000000025:                   # @func0000000000000025
+	.quad	-6313183731941900
+func0000000000000025:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	lui	a0, %hi(.LCPI3_0)
@@ -35,7 +38,8 @@ func0000000000000025:                   # @func0000000000000025
 	vadd.vv	v8, v8, v10
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
@@ -48,3 +52,4 @@ func0000000000000040:                   # @func0000000000000040
 	slli	a0, a0, 19
 	vadd.vx	v8, v8, a0
 	ret
+

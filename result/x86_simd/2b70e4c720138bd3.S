@@ -1,30 +1,30 @@
 .LCPI0_0:
-	.long	7                               # 0x7
+	.long	7
 .LCPI0_1:
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
-	.short	9363                            # 0x2493
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
+	.short	9363
 .LCPI0_2:
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
-	.short	6                               # 0x6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
 .LCPI0_3:
-	.short	6                               # 0x6
-func00000000000001f4:                   # @func00000000000001f4
+	.short	6
+func00000000000001f4:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
+	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm2
 	vpsrlw	$1, %xmm2, %xmm2
 	vpaddw	%xmm1, %xmm2, %xmm1
@@ -32,7 +32,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	vpsllw	$3, %xmm1, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0
-	vpbroadcastw	.LCPI0_3(%rip), %xmm1   # xmm1 = [6,6,6,6,6,6,6,6]
+	vpbroadcastw	.LCPI0_3(%rip), %xmm1
 	vpcmpgtw	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+

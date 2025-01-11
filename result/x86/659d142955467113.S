@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	andl	$1, %edx
 	negl	%edx
 	orl	$1, %edx
@@ -6,7 +6,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	andl	$1, %edx
 	negl	%edx
 	orl	$1, %edx
@@ -14,10 +15,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+
+func0000000000000086:
 	leal	296(%rsi), %eax
 	testb	$1, %dl
 	cmovel	%esi, %eax
 	cmpl	%eax, %edi
 	setl	%al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	bseti	a3, zero, 63
@@ -8,7 +8,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
 	li	a3, 1
@@ -18,3 +19,4 @@ func00000000000000e1:                   # @func00000000000000e1
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
+

@@ -1,22 +1,24 @@
 .LCPI0_0:
-	.quad	9223372036854775800             # 0x7ffffffffffffff8
+	.quad	9223372036854775800
 .LCPI0_1:
-	.quad	24                              # 0x18
-func0000000000000093:                   # @func0000000000000093
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	.quad	24
+func0000000000000093:
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpleuq	%ymm1, %ymm2, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [9223372036854775800,9223372036854775800,9223372036854775800,9223372036854775800]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	9223372036854775800             # 0x7ffffffffffffff8
+	.quad	9223372036854775800
 .LCPI1_1:
-	.quad	12                              # 0xc
-func0000000000000013:                   # @func0000000000000013
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	.quad	12
+func0000000000000013:
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpleuq	%ymm1, %ymm2, %k1
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [9223372036854775800,9223372036854775800,9223372036854775800,9223372036854775800]
+	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	vpmullq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+

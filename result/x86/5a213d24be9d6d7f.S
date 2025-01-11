@@ -1,11 +1,12 @@
-func000000000000302c:                   # @func000000000000302c
+func000000000000302c:
 	testl	%esi, %esi
 	sete	%cl
 	orq	%rdx, %rdi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
+
+func0000000000000581:
 	testq	%rdx, %rdx
 	sete	%cl
 	testl	%esi, %esi
@@ -15,7 +16,8 @@ func0000000000000581:                   # @func0000000000000581
 	orb	%cl, %al
 	orb	%dl, %al
 	retq
-func0000000000000421:                   # @func0000000000000421
+
+func0000000000000421:
 	testq	%rdx, %rdx
 	sete	%al
 	testl	%esi, %esi
@@ -25,7 +27,8 @@ func0000000000000421:                   # @func0000000000000421
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000318c:                   # @func000000000000318c
+
+func000000000000318c:
 	testq	%rdx, %rdx
 	setne	%al
 	testl	%esi, %esi
@@ -35,3 +38,4 @@ func000000000000318c:                   # @func000000000000318c
 	setne	%al
 	orb	%cl, %al
 	retq
+

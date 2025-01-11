@@ -1,4 +1,4 @@
-func0000000000000039:                   # @func0000000000000039
+func0000000000000039:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 16
@@ -7,7 +7,8 @@ func0000000000000039:                   # @func0000000000000039
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v10, v8
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 12
@@ -16,7 +17,8 @@ func000000000000003f:                   # @func000000000000003f
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v8, v10
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 12
@@ -25,7 +27,8 @@ func000000000000007f:                   # @func000000000000007f
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v10, v8
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 24
@@ -34,7 +37,8 @@ func000000000000003d:                   # @func000000000000003d
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v10, v8
 	ret
-func0000000000000076:                   # @func0000000000000076
+
+func0000000000000076:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 12
@@ -43,7 +47,8 @@ func0000000000000076:                   # @func0000000000000076
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v10, v8
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 24
@@ -52,7 +57,8 @@ func000000000000003c:                   # @func000000000000003c
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v8, v10
 	ret
-func000000000000003e:                   # @func000000000000003e
+
+func000000000000003e:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwsll.vi	v14, v13, 12
@@ -61,3 +67,4 @@ func000000000000003e:                   # @func000000000000003e
 	vor.vv	v10, v14, v10
 	vor.vv	v8, v8, v10
 	ret
+

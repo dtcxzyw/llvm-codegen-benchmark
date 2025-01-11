@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	15                              # 0xf
+	.quad	15
 .LCPI0_1:
-	.quad	9                               # 0x9
-func0000000000000074:                   # @func0000000000000074
+	.quad	9
+func0000000000000074:
 	vpsrlq	$16, %ymm1, %ymm1
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -10,20 +10,22 @@ func0000000000000074:                   # @func0000000000000074
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	63                              # 0x3f
-func0000000000000061:                   # @func0000000000000061
+	.quad	63
+func0000000000000061:
 	vpsrlq	$12, %ymm1, %ymm1
-	vpternlogq	$236, .LCPI1_0(%rip){1to4}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
+	vpternlogq	$236, .LCPI1_0(%rip){1to4}, %ymm0, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.quad	1073741816                      # 0x3ffffff8
+	.quad	1073741816
 .LCPI2_1:
-	.quad	32768                           # 0x8000
-func0000000000000028:                   # @func0000000000000028
+	.quad	32768
+func0000000000000028:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -31,44 +33,48 @@ func0000000000000028:                   # @func0000000000000028
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.quad	576460752303423487              # 0x7ffffffffffffff
-func00000000000000a8:                   # @func00000000000000a8
+	.quad	576460752303423487
+func00000000000000a8:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendd	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7]
+	vpblendd	$170, %ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI4_0:
-	.quad	1                               # 0x1
-func0000000000000078:                   # @func0000000000000078
+	.quad	1
+func0000000000000078:
 	vpsrlq	$5, %ymm1, %ymm1
-	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	vpbroadcastq	.LCPI4_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI5_0:
-	.quad	65520                           # 0xfff0
-func0000000000000068:                   # @func0000000000000068
+	.quad	65520
+func0000000000000068:
 	vpsrlq	$16, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendw	$17, %ymm1, %ymm2, %ymm1        # ymm1 = ymm1[0],ymm2[1,2,3],ymm1[4],ymm2[5,6,7],ymm1[8],ymm2[9,10,11],ymm1[12],ymm2[13,14,15]
+	vpblendw	$17, %ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI6_0:
-	.quad	31                              # 0x1f
+	.quad	31
 .LCPI6_1:
-	.quad	32                              # 0x20
-func0000000000000008:                   # @func0000000000000008
+	.quad	32
+func0000000000000008:
 	vpsrlq	$7, %ymm1, %ymm1
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -76,9 +82,10 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI7_0:
-	.quad	4222189076152335                # 0xf000f000f000f
-func000000000000000c:                   # @func000000000000000c
+	.quad	4222189076152335
+func000000000000000c:
 	vpsrlq	$10, %ymm1, %ymm1
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -87,11 +94,12 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI8_0:
-	.quad	18014398509481983               # 0x3fffffffffffff
+	.quad	18014398509481983
 .LCPI8_1:
-	.quad	513                             # 0x201
-func0000000000000024:                   # @func0000000000000024
+	.quad	513
+func0000000000000024:
 	vpsrlq	$9, %ymm1, %ymm1
 	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -99,3 +107,4 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

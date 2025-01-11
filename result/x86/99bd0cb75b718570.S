@@ -1,15 +1,17 @@
-func0000000000000421:                   # @func0000000000000421
+func0000000000000421:
 	movl	%edx, %eax
 	xorq	%rdi, %rax
 	andl	$1, %esi
 	orq	%rax, %rsi
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	movl	%edx, %eax
 	xorq	%rdi, %rax
-	movabsq	$1099510579200, %rcx            # imm = 0xFFFFF00000
+	movabsq	$1099510579200, %rcx
 	andq	%rsi, %rcx
 	orq	%rax, %rcx
 	sete	%al
 	retq
+

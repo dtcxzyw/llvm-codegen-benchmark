@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v10, a0
@@ -9,9 +9,10 @@ func0000000000000021:                   # @func0000000000000021
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v0, v8, v9
 	ret
+
 .LCPI1_0:
-	.quad	7164004856975580295             # 0x636ba875fd33dc87
-func0000000000000024:                   # @func0000000000000024
+	.quad	7164004856975580295
+func0000000000000024:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -27,3 +28,4 @@ func0000000000000024:                   # @func0000000000000024
 	vnsrl.wi	v9, v12, 0
 	vmsltu.vv	v0, v8, v9
 	ret
+

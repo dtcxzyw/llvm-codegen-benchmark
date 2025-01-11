@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.quad	-8737931403336103397            # 0x86bca1af286bca1b
+	.quad	-8737931403336103397
 .LCPI0_1:
-	.quad	485440633518672410              # 0x6bca1af286bca1a
+	.quad	485440633518672410
 .LCPI0_2:
-	.quad	970881267037344820              # 0xd79435e50d79434
-func0000000000000001:                   # @func0000000000000001
+	.quad	970881267037344820
+func0000000000000001:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
@@ -12,13 +12,14 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	-3689348814741910323            # 0xcccccccccccccccd
+	.quad	-3689348814741910323
 .LCPI1_1:
-	.quad	1844674407370955160             # 0x1999999999999998
+	.quad	1844674407370955160
 .LCPI1_2:
-	.quad	922337203685477580              # 0xccccccccccccccc
-func0000000000000021:                   # @func0000000000000021
+	.quad	922337203685477580
+func0000000000000021:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
@@ -27,3 +28,4 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

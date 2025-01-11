@@ -1,28 +1,31 @@
-func00000000000000c2:                   # @func00000000000000c2
+func00000000000000c2:
 	leal	8192(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	orl	%edx, %ecx
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
-	orl	$49152, %eax                    # imm = 0xC000
+	orl	$49152, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	orl	%edx, %esi
 	movl	%esi, %eax
-	orl	$553646080, %eax                # imm = 0x20FFF800
+	orl	$553646080, %eax
 	testl	%edi, %edi
 	cmovel	%esi, %eax
-	orl	$256, %eax                      # imm = 0x100
+	orl	$256, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	orl	%edx, %esi
 	movl	%esi, %eax
-	orl	$1627388926, %eax               # imm = 0x60FFFBFE
+	orl	$1627388926, %eax
 	testl	%edi, %edi
 	cmovel	%esi, %eax
-	orl	$-2147483648, %eax              # imm = 0x80000000
+	orl	$-2147483648, %eax
 	retq
-func00000000000000c3:                   # @func00000000000000c3
+
+func00000000000000c3:
 	leal	32(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	orl	%edx, %ecx
@@ -30,3 +33,4 @@ func00000000000000c3:                   # @func00000000000000c3
 	cmovel	%ecx, %eax
 	orl	$2, %eax
 	retq
+

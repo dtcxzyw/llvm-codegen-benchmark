@@ -1,6 +1,5 @@
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	mov	x8, #281474439839744            // =0xffffe0000000
+func0000000000000005:
+	mov	x8, #281474439839744
 	orr	w9, w1, w0
 	movk	x8, #18415, lsl #48
 	fmov	d1, x8
@@ -9,20 +8,18 @@ func0000000000000005:                   // @func0000000000000005
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
+
+func0000000000000007:
 	fcmp	d0, #0.0
 	orr	w9, w1, w0
 	cset	w8, ne
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+
 .LCPI2_0:
-	.xword	0x3cd203af9ee75616              // double 1.0000000000000001E-15
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
+	.xword	0x3cd203af9ee75616
+func000000000000000b:
 	adrp	x8, .LCPI2_0
 	orr	w9, w1, w0
 	ldr	d1, [x8, :lo12:.LCPI2_0]
@@ -31,10 +28,9 @@ func000000000000000b:                   // @func000000000000000b
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	mov	x8, #4503599627370496000        // =0x3e80000000000000
+
+func000000000000000d:
+	mov	x8, #4503599627370496000
 	orr	w9, w1, w0
 	fmov	d1, x8
 	fcmp	d0, d1
@@ -42,9 +38,8 @@ func000000000000000d:                   // @func000000000000000d
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+
+func0000000000000008:
 	fmov	d1, #2.00000000
 	orr	w9, w1, w0
 	fcmp	d0, d1
@@ -52,10 +47,9 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	x8, #4503599627370496           // =0x10000000000000
+
+func0000000000000002:
+	mov	x8, #4503599627370496
 	orr	w9, w1, w0
 	fmov	d1, x8
 	fcmp	d0, d1
@@ -63,31 +57,28 @@ func0000000000000002:                   // @func0000000000000002
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
+
+func0000000000000001:
 	fcmp	d0, d0
 	orr	w9, w1, w0
 	cset	w8, vs
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fcmp	d0, #0.0
 	orr	w9, w1, w0
 	cset	w8, ls
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	fcmp	d0, #0.0
 	orr	w9, w1, w0
 	cset	w8, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

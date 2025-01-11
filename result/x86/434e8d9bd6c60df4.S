@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	shll	$8, %edx
 	orl	%esi, %edx
 	cmpl	%edx, %edi
@@ -7,3 +7,4 @@ func00000000000004ca:                   # @func00000000000004ca
 	setns	%al
 	andb	%cl, %al
 	retq
+

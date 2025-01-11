@@ -1,4 +1,4 @@
-func0000000000000013:                   # @func0000000000000013
+func0000000000000013:
 	lui	a0, 349525
 	addi	a0, a0, 1365
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -10,7 +10,8 @@ func0000000000000013:                   # @func0000000000000013
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	ret
-func000000000000001b:                   # @func000000000000001b
+
+func000000000000001b:
 	lui	a0, 209715
 	addi	a0, a0, 819
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -22,7 +23,8 @@ func000000000000001b:                   # @func000000000000001b
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000017:                   # @func0000000000000017
+
+func0000000000000017:
 	lui	a0, 17476
 	addi	a0, a0, 1092
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -34,7 +36,8 @@ func0000000000000017:                   # @func0000000000000017
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
-func000000000000001f:                   # @func000000000000001f
+
+func000000000000001f:
 	lui	a0, 771
 	addi	a0, a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -46,7 +49,8 @@ func000000000000001f:                   # @func000000000000001f
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	li	a0, 257
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
@@ -56,7 +60,8 @@ func0000000000000003:                   # @func0000000000000003
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 7
 	lui	a0, 209715
@@ -66,7 +71,8 @@ func000000000000000b:                   # @func000000000000000b
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	lui	a0, 2040
 	addi	a0, a0, -129
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -77,3 +83,4 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	ret
+

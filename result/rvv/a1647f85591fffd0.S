@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x3f1a36e2eb1c432d              # double 1.0E-4
-func00000000000000d1:                   # @func00000000000000d1
+	.quad	0x3f1a36e2eb1c432d
+func00000000000000d1:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -9,9 +9,10 @@ func00000000000000d1:                   # @func00000000000000d1
 	vmfne.vv	v16, v8, v8
 	vmorn.mm	v0, v16, v24
 	ret
+
 .LCPI1_0:
-	.quad	0x3cd203af9ee75616              # double 1.0000000000000001E-15
-func00000000000000bb:                   # @func00000000000000bb
+	.quad	0x3cd203af9ee75616
+func00000000000000bb:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -21,7 +22,8 @@ func00000000000000bb:                   # @func00000000000000bb
 	vmnot.m	v8, v16
 	vmorn.mm	v0, v8, v24
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	fli.d	fa5, 2.0
@@ -30,7 +32,8 @@ func0000000000000038:                   # @func0000000000000038
 	vmfeq.vf	v16, v8, fa5
 	vmorn.mm	v0, v16, v24
 	ret
-func0000000000000099:                   # @func0000000000000099
+
+func0000000000000099:
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v8, fa5
@@ -42,16 +45,18 @@ func0000000000000099:                   # @func0000000000000099
 	vmor.mm	v8, v25, v24
 	vmorn.mm	v0, v16, v8
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfmax.vv	v8, v8, v16
 	fli.d	fa5, min
 	vmfgt.vf	v0, v8, fa5
 	ret
+
 .LCPI5_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000055:                   # @func0000000000000055
+	.quad	0x3cb0000000000000
+func0000000000000055:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -61,7 +66,8 @@ func0000000000000055:                   # @func0000000000000055
 	vmnot.m	v8, v16
 	vmorn.mm	v0, v8, v24
 	ret
-func0000000000000087:                   # @func0000000000000087
+
+func0000000000000087:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
@@ -71,7 +77,8 @@ func0000000000000087:                   # @func0000000000000087
 	vmfne.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
-func0000000000000088:                   # @func0000000000000088
+
+func0000000000000088:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
@@ -81,9 +88,10 @@ func0000000000000088:                   # @func0000000000000088
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
+
 .LCPI8_0:
-	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
-func0000000000000022:                   # @func0000000000000022
+	.quad	0x3ddb7cdfd9d7bdbb
+func0000000000000022:
 	lui	a0, %hi(.LCPI8_0)
 	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -91,3 +99,4 @@ func0000000000000022:                   # @func0000000000000022
 	vfmin.vv	v8, v8, v16
 	vmflt.vf	v0, v8, fa5
 	ret
+

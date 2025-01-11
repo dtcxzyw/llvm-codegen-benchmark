@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	movzbl	%sil, %eax
 	cmpl	%eax, %edi
 	setl	%cl
@@ -6,3 +6,4 @@ func00000000000000ca:                   # @func00000000000000ca
 	setg	%al
 	andb	%cl, %al
 	retq
+

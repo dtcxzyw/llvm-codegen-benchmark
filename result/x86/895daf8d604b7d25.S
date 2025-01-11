@@ -1,4 +1,4 @@
-func0000000000000424:                   # @func0000000000000424
+func0000000000000424:
 	notl	%esi
 	testb	$7, %sil
 	setne	%cl
@@ -7,37 +7,42 @@ func0000000000000424:                   # @func0000000000000424
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000426:                   # @func0000000000000426
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+
+func0000000000000426:
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
 	sete	%cl
-	cmpl	$1096, %edi                     # imm = 0x448
+	cmpl	$1096, %edi
 	setl	%al
 	orb	%cl, %al
 	retq
-func000000000000042a:                   # @func000000000000042a
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+
+func000000000000042a:
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
 	setne	%cl
-	cmpl	$1087, %edi                     # imm = 0x43F
+	cmpl	$1087, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000438:                   # @func0000000000000438
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+
+func0000000000000438:
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
 	setne	%cl
-	addl	$-1023, %edi                    # imm = 0xFC01
+	addl	$-1023, %edi
 	cmpl	$52, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000434:                   # @func0000000000000434
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+
+func0000000000000434:
+	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rsi
 	sete	%cl
-	addl	$-1075, %edi                    # imm = 0xFBCD
+	addl	$-1075, %edi
 	cmpl	$-128, %edi
 	setb	%al
 	orb	%cl, %al
 	retq
+

@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	0x3f800000                      # float 1
-func0000000000000422:                   # @func0000000000000422
-	vmovss	.LCPI0_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	.long	0x3f800000
+func0000000000000422:
+	vmovss	.LCPI0_0(%rip), %xmm2
 	vminss	%xmm1, %xmm2, %xmm2
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm1, %k1
@@ -9,3 +9,4 @@ func0000000000000422:                   # @func0000000000000422
 	vucomiss	%xmm0, %xmm2
 	seta	%al
 	retq
+

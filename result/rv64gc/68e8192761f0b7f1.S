@@ -1,4 +1,4 @@
-func0000000000000124:                   # @func0000000000000124
+func0000000000000124:
 	srliw	a1, a1, 16
 	srliw	a0, a0, 24
 	seqz	a1, a1
@@ -7,7 +7,8 @@ func0000000000000124:                   # @func0000000000000124
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -16,7 +17,8 @@ func0000000000000061:                   # @func0000000000000061
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
-func00000000000002ac:                   # @func00000000000002ac
+
+func00000000000002ac:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a0, a0, -4
@@ -26,7 +28,8 @@ func00000000000002ac:                   # @func00000000000002ac
 	or	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func0000000000000238:                   # @func0000000000000238
+
+func0000000000000238:
 	sext.w	a0, a0
 	srliw	a1, a1, 16
 	snez	a1, a1
@@ -36,7 +39,8 @@ func0000000000000238:                   # @func0000000000000238
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+
+func000000000000006c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a0, a0
@@ -50,7 +54,8 @@ func000000000000006c:                   # @func000000000000006c
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	ret
-func0000000000000534:                   # @func0000000000000534
+
+func0000000000000534:
 	srliw	a1, a1, 1
 	li	a2, 1571
 	bltu	a1, a2, .LBB5_2
@@ -69,7 +74,8 @@ func0000000000000534:                   # @func0000000000000534
 	slli	a0, a0, 13
 	or	a0, a0, a1
 	ret
-func000000000000028a:                   # @func000000000000028a
+
+func000000000000028a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slti	a1, a1, 2
@@ -80,3 +86,4 @@ func000000000000028a:                   # @func000000000000028a
 	andi	a0, a0, 9
 	or	a0, a0, a1
 	ret
+

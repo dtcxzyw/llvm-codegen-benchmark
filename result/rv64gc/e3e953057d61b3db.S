@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000018:
 	li	a2, 255
 	bgeu	a2, a0, .LBB0_2
 	li	a0, 4
@@ -7,16 +7,18 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 1
 	xori	a0, a1, 3
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	li	a2, 516
 	beq	a0, a2, .LBB1_2
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	andi	a2, a1, 1022
-.LBB1_2:                                # %entry
+.LBB1_2:
 	mv	a0, a2
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	li	a2, -1024
 	bge	a0, a2, .LBB2_2
 	lui	a0, 1048332
@@ -29,7 +31,8 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a0, a0, 576
 	and	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a2, a1, 1
 	mv	a1, a0
 	bnez	a2, .LBB3_2
@@ -41,11 +44,12 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 8
 	srli	a1, a1, 16
 	bnez	a1, .LBB3_4
-.LBB3_3:                                # %entry
+.LBB3_3:
 	li	a0, 6
-.LBB3_4:                                # %entry
+.LBB3_4:
 	ret
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	andi	a2, a1, 1
 	mv	a1, a0
 	bnez	a2, .LBB4_2
@@ -59,12 +63,13 @@ func0000000000000014:                   # @func0000000000000014
 	slli	a0, a0, 49
 	srli	a1, a1, 31
 	bnez	a1, .LBB4_4
-.LBB4_3:                                # %entry
+.LBB4_3:
 	li	a0, 251
 	slli	a0, a0, 49
-.LBB4_4:                                # %entry
+.LBB4_4:
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andi	a2, a1, 1
 	mv	a1, a0
 	bnez	a2, .LBB5_2
@@ -76,14 +81,16 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 20
 	srli	a1, a1, 30
 	beqz	a1, .LBB5_4
-.LBB5_3:                                # %entry
+.LBB5_3:
 	li	a0, 30
-.LBB5_4:                                # %entry
+.LBB5_4:
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	andi	a1, a1, 1
 	li	a2, 2
 	sub	a2, a2, a1
 	srai	a0, a0, 63
 	and	a0, a0, a2
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	subw	a1, a1, a2
@@ -12,3 +12,4 @@ func0000000000000000:                   # @func0000000000000000
 	fneg.s	fa4, fa4
 	fadd.s	fa0, fa4, fa5
 	ret
+

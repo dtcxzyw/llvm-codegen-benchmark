@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	leaq	255(%rdi), %rax
 	testq	%rdi, %rdi
 	cmovnsq	%rdi, %rax
@@ -8,7 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$1, %ecx
 	cmovgeq	%rax, %rcx
 	shlq	$5, %rcx
-	movl	$4718592, %eax                  # imm = 0x480000
+	movl	$4718592, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	retq
+

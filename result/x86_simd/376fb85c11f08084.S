@@ -1,16 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	pushq	%rbp
 	pushq	%r15
 	pushq	%r14
 	pushq	%r13
 	pushq	%r12
 	pushq	%rbx
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpextrb	$1, %xmm0, %ecx
 	vpextrb	$1, %xmm1, %eax
 	movzbl	%al, %eax
 	divb	%cl
-	movl	%eax, -4(%rsp)                  # 4-byte Spill
+	movl	%eax, -4(%rsp)
 	vmovd	%xmm0, %ecx
 	vmovd	%xmm1, %eax
 	movzbl	%al, %eax
@@ -86,7 +86,7 @@ func0000000000000000:                   # @func0000000000000000
 	movzbl	%al, %eax
 	vpextrb	$15, %xmm0, %esi
 	divb	%sil
-	vpinsrb	$1, -4(%rsp), %xmm2, %xmm0      # 4-byte Folded Reload
+	vpinsrb	$1, -4(%rsp), %xmm2, %xmm0
 	vpinsrb	$2, %edx, %xmm0, %xmm0
 	vpinsrb	$3, %edi, %xmm0, %xmm0
 	vpinsrb	$4, %r8d, %xmm0, %xmm0
@@ -108,3 +108,4 @@ func0000000000000000:                   # @func0000000000000000
 	popq	%r15
 	popq	%rbp
 	retq
+

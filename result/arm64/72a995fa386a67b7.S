@@ -1,5 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+func000000000000000a:
 	lsl	x8, x0, #1
 	cmp	x0, #0
 	and	w9, w1, w2
@@ -7,9 +6,8 @@ func000000000000000a:                   // @func000000000000000a
 	tst	w9, #0x1
 	csel	x0, x8, x0, ne
 	ret
-                                        // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
+
+func000000000000004a:
 	lsl	x8, x0, #1
 	cmp	x0, #0
 	and	w9, w1, w2
@@ -17,4 +15,4 @@ func000000000000004a:                   // @func000000000000004a
 	tst	w9, #0x1
 	csel	x0, x8, x0, ne
 	ret
-                                        // -- End function
+

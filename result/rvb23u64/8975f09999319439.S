@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	addiw	a1, a1, -1
 	lui	a2, 16
 	sltiu	a1, a1, 6
@@ -8,7 +8,8 @@ func0000000000000024:                   # @func0000000000000024
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+
+func00000000000000e4:
 	addi	a1, a1, -2048
 	lui	a2, 1048575
 	addiw	a1, a1, -2048
@@ -17,3 +18,4 @@ func00000000000000e4:                   # @func00000000000000e4
 	addiw	a0, a0, 8
 	czero.eqz	a0, a0, a1
 	ret
+

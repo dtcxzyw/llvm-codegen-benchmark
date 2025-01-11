@@ -1,18 +1,20 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpl	$1, %esi
 	movl	$2, %eax
 	sbbl	$0, %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000141:                   # @func0000000000000141
+
+func0000000000000141:
 	sarl	$31, %esi
 	orl	$1, %esi
 	xorl	%eax, %eax
-	cmpl	$2139095040, %edi               # imm = 0x7F800000
+	cmpl	$2139095040, %edi
 	cmovnel	%esi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	cmpl	$12, %esi
 	movl	$165, %eax
 	movl	$171, %ecx
@@ -21,7 +23,8 @@ func0000000000000024:                   # @func0000000000000024
 	movl	$183, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	cmpl	$-6, %esi
 	setb	%al
 	cmpl	$17, %edi
@@ -30,16 +33,18 @@ func0000000000000084:                   # @func0000000000000084
 	movzbl	%cl, %eax
 	xorl	$213, %eax
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	testl	%esi, %esi
-	movl	$636, %eax                      # imm = 0x27C
-	movl	$697, %ecx                      # imm = 0x2B9
+	movl	$636, %eax
+	movl	$697, %ecx
 	cmovel	%eax, %ecx
 	cmpl	$4, %edi
-	movl	$584, %eax                      # imm = 0x248
+	movl	$584, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000081:                   # @func0000000000000081
+
+func0000000000000081:
 	xorl	%eax, %eax
 	cmpl	$-2, %esi
 	setae	%al
@@ -48,7 +53,8 @@ func0000000000000081:                   # @func0000000000000081
 	movl	$-9, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000104:                   # @func0000000000000104
+
+func0000000000000104:
 	xorl	%ecx, %ecx
 	cmpl	$15, %esi
 	adcl	$1, %ecx
@@ -56,7 +62,8 @@ func0000000000000104:                   # @func0000000000000104
 	movl	$2, %eax
 	cmovael	%ecx, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setg	%al
@@ -64,3 +71,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
+

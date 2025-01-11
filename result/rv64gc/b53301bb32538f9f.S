@@ -1,4 +1,4 @@
-func00000000000001ff:                   # @func00000000000001ff
+func00000000000001ff:
 	srli	a3, a2, 1
 	lui	a6, 349525
 	lui	a7, 209715
@@ -43,7 +43,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
-func00000000000001f5:                   # @func00000000000001f5
+
+func00000000000001f5:
 	srli	a3, a2, 1
 	lui	a6, 349525
 	lui	a7, 209715
@@ -88,3 +89,4 @@ func00000000000001f5:                   # @func00000000000001f5
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
+

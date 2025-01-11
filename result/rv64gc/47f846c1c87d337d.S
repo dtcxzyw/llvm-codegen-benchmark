@@ -1,4 +1,4 @@
-func0000000000001ab4:                   # @func0000000000001ab4
+func0000000000001ab4:
 	add	a2, a2, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -7,7 +7,8 @@ func0000000000001ab4:                   # @func0000000000001ab4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func00000000000014a4:                   # @func00000000000014a4
+
+func00000000000014a4:
 	add	a2, a2, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -16,7 +17,8 @@ func00000000000014a4:                   # @func00000000000014a4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func00000000000010a4:                   # @func00000000000010a4
+
+func00000000000010a4:
 	add	a2, a2, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -25,3 +27,4 @@ func00000000000010a4:                   # @func00000000000010a4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
+

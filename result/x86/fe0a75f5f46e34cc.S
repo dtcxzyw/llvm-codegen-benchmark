@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testl	%edi, %edi
 	sete	%al
 	kmovd	%eax, %k1
@@ -6,3 +6,4 @@ func0000000000000001:                   # @func0000000000000001
 	vmovss	%xmm2, %xmm1, %xmm1 {%k1}
 	vsubss	%xmm1, %xmm0, %xmm0
 	retq
+

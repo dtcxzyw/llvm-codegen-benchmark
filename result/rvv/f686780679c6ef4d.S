@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func0000000000000054:
 	lui	a0, 359
 	addi	a0, a0, -256
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -8,3 +8,4 @@ func0000000000000054:                   # @func0000000000000054
 	vsra.vi	v8, v8, 20
 	vmax.vx	v8, v8, zero
 	ret
+

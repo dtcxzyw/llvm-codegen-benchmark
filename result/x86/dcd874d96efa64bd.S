@@ -1,12 +1,13 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000008:
 	movzwl	%dx, %eax
 	testb	$1, %sil
-	movl	$65536, %ecx                    # imm = 0x10000
+	movl	$65536, %ecx
 	cmovneq	%rax, %rcx
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	movb	$63, %al
 	bzhiq	%rax, %rdx, %rax
 	testb	$1, %sil
@@ -15,7 +16,8 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdi, %rcx
 	seta	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movb	$63, %al
 	bzhiq	%rax, %rdx, %rax
 	testb	$1, %sil
@@ -24,3 +26,4 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rcx
 	sete	%al
 	retq
+

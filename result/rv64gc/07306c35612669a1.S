@@ -1,4 +1,4 @@
-func00000000000001cc:                   # @func00000000000001cc
+func00000000000001cc:
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -34,3 +34,4 @@ func00000000000001cc:                   # @func00000000000001cc
 	srl	a0, a0, a1
 	snez	a0, a0
 	ret
+

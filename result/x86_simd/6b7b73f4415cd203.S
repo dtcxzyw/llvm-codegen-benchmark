@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000042a:                   # @func000000000000042a
+	.long	1
+func000000000000042a:
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0 {%k1}
@@ -8,9 +8,10 @@ func000000000000042a:                   # @func000000000000042a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	1                               # 0x1
-func0000000000000026:                   # @func0000000000000026
+	.long	1
+func0000000000000026:
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0 {%k1}
@@ -18,10 +19,11 @@ func0000000000000026:                   # @func0000000000000026
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI2_0:
-	.long	1                               # 0x1
-func0000000000000421:                   # @func0000000000000421
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
+	.long	1
+func0000000000000421:
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vptestmd	%ymm2, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0 {%k1}
@@ -29,9 +31,10 @@ func0000000000000421:                   # @func0000000000000421
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI3_0:
-	.long	1                               # 0x1
-func0000000000000426:                   # @func0000000000000426
+	.long	1
+func0000000000000426:
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0 {%k1}
@@ -39,3 +42,4 @@ func0000000000000426:                   # @func0000000000000426
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

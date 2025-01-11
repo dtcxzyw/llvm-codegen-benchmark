@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func00000000000000c1:
 	vcvttsd2si	%xmm0, %eax
 	notl	%eax
 	cmpl	%eax, %esi
@@ -7,3 +7,4 @@ func00000000000000c1:                   # @func00000000000000c1
 	sete	%al
 	andb	%cl, %al
 	retq
+

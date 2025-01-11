@@ -1,12 +1,12 @@
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
+func0000000000000001:
+	movabsq	$1749024623285053783, %rcx
 	movq	%rsi, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	sarq	$13, %rdx
 	addq	%rax, %rdx
-	imulq	$86400, %rdx, %rax              # imm = 0x15180
+	imulq	$86400, %rdx, %rax
 	movq	%rsi, %rcx
 	subq	%rax, %rcx
 	negq	%rax
@@ -14,3 +14,4 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+

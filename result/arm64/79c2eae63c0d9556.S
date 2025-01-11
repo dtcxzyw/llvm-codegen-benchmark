@@ -1,6 +1,5 @@
-func0000000000000242:                   // @func0000000000000242
-// %bb.0:                               // %entry
-	mov	w8, #931135488                  // =0x37800000
+func0000000000000242:
+	mov	w8, #931135488
 	fmov	s3, #1.00000000
 	fmov	s2, w8
 	fcmp	s1, s2
@@ -10,10 +9,9 @@ func0000000000000242:                   // @func0000000000000242
 	fcmp	s1, s0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000244:                   // @func0000000000000244
-// %bb.0:                               // %entry
-	mov	w8, #931135488                  // =0x37800000
+
+func0000000000000244:
+	mov	w8, #931135488
 	fmov	s3, #1.00000000
 	fmov	s2, w8
 	fcmp	s1, s2
@@ -23,9 +21,8 @@ func0000000000000244:                   // @func0000000000000244
 	fcmp	s1, s0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000424:                   // @func0000000000000424
-// %bb.0:                               // %entry
+
+func0000000000000424:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -35,9 +32,8 @@ func0000000000000424:                   // @func0000000000000424
 	fcmp	s1, s0
 	cset	w0, gt
 	ret
-                                        // -- End function
-func0000000000000243:                   // @func0000000000000243
-// %bb.0:                               // %entry
+
+func0000000000000243:
 	fmov	s2, #-1.00000000
 	fmov	s3, #1.00000000
 	fcmp	s1, s2
@@ -47,9 +43,8 @@ func0000000000000243:                   // @func0000000000000243
 	fcmp	s1, s0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000422:                   // @func0000000000000422
-// %bb.0:                               // %entry
+
+func0000000000000422:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -59,9 +54,8 @@ func0000000000000422:                   // @func0000000000000422
 	fcmp	s1, s0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func0000000000000423:                   // @func0000000000000423
-// %bb.0:                               // %entry
+
+func0000000000000423:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -71,9 +65,8 @@ func0000000000000423:                   // @func0000000000000423
 	fcmp	s1, s0
 	cset	w0, lt
 	ret
-                                        // -- End function
-func0000000000000425:                   // @func0000000000000425
-// %bb.0:                               // %entry
+
+func0000000000000425:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -83,9 +76,8 @@ func0000000000000425:                   // @func0000000000000425
 	fcmp	s1, s0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func000000000000042c:                   // @func000000000000042c
-// %bb.0:                               // %entry
+
+func000000000000042c:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -95,9 +87,8 @@ func000000000000042c:                   // @func000000000000042c
 	fcmp	s1, s0
 	cset	w0, ge
 	ret
-                                        // -- End function
-func000000000000042a:                   // @func000000000000042a
-// %bb.0:                               // %entry
+
+func000000000000042a:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
 	fcmp	s1, s2
@@ -107,4 +98,4 @@ func000000000000042a:                   // @func000000000000042a
 	fcmp	s1, s0
 	cset	w0, ls
 	ret
-                                        // -- End function
+

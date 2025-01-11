@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	decb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
@@ -6,7 +6,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	setg	%al
 	orb	%dil, %al
 	retq
-func00000000000000cb:                   # @func00000000000000cb
+
+func00000000000000cb:
 	incb	%dl
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
@@ -14,3 +15,4 @@ func00000000000000cb:                   # @func00000000000000cb
 	setge	%al
 	orb	%dil, %al
 	retq
+

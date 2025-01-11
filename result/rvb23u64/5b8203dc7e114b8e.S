@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ca:
 	sext.w	a1, a1
 	srli	a2, a2, 1
 	slti	a1, a1, 0
@@ -7,7 +7,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	or	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func000000000000014a:                   # @func000000000000014a
+
+func000000000000014a:
 	sext.w	a1, a1
 	srli	a2, a2, 1
 	slti	a1, a1, 3
@@ -16,3 +17,4 @@ func000000000000014a:                   # @func000000000000014a
 	or	a0, a0, a1
 	sgtz	a0, a0
 	ret
+

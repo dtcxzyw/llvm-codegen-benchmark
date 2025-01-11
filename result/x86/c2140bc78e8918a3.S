@@ -1,4 +1,4 @@
-func0000000000001a10:                   # @func0000000000001a10
+func0000000000001a10:
 	movl	%edi, %eax
 	addq	$40, %rax
 	cmpq	%rsi, %rax
@@ -7,3 +7,4 @@ func0000000000001a10:                   # @func0000000000001a10
 	setae	%al
 	orb	%cl, %al
 	retq
+

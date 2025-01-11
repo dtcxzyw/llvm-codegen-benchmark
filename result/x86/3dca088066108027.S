@@ -1,4 +1,4 @@
-func0000000000000029:                   # @func0000000000000029
+func0000000000000029:
 	sarq	$4, %rdx
 	leaq	(%rdx,%rsi), %rcx
 	movq	%rcx, %rax
@@ -7,7 +7,8 @@ func0000000000000029:                   # @func0000000000000029
 	sarq	%rax
 	addq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	sarq	$5, %rdx
 	leaq	(%rdx,%rsi), %rcx
 	movq	%rcx, %rax
@@ -16,10 +17,11 @@ func0000000000000021:                   # @func0000000000000021
 	sarq	%rax
 	addq	%rdi, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+
+func0000000000000009:
 	sarq	$63, %rdx
 	leaq	(%rdx,%rsi), %rax
-	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
+	movabsq	$1749024623285053783, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -27,3 +29,4 @@ func0000000000000009:                   # @func0000000000000009
 	addq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
+

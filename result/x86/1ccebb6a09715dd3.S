@@ -1,6 +1,6 @@
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000001f4:
 	addl	%esi, %edi
-	imull	$9363, %edi, %eax               # imm = 0x2493
+	imull	$9363, %edi, %eax
 	shrl	$16, %eax
 	movl	%edi, %ecx
 	subl	%eax, %ecx
@@ -15,17 +15,20 @@ func00000000000001f4:                   # @func00000000000001f4
 	cmpw	$6, %ax
 	setb	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	addl	%esi, %edi
-	imull	$6203, %edi, %eax               # imm = 0x183B
+	imull	$6203, %edi, %eax
 	movzwl	%ax, %eax
-	cmpl	$270, %eax                      # imm = 0x10E
+	cmpl	$270, %eax
 	setb	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	addl	%esi, %edi
-	imull	$7253, %edi, %eax               # imm = 0x1C55
+	imull	$7253, %edi, %eax
 	movzwl	%ax, %eax
-	cmpl	$260, %eax                      # imm = 0x104
+	cmpl	$260, %eax
 	setb	%al
 	retq
+

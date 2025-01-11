@@ -1,25 +1,22 @@
-func000000000000007f:                   // @func000000000000007f
-// %bb.0:                               // %entry
+func000000000000007f:
 	lsr	x8, x2, #63
 	sub	w9, w1, w0
-	mov	w10, #-32618                    // =0xffff8096
+	mov	w10, #-32618
 	add	w9, w9, w10
 	add	w0, w9, w8
 	ret
-                                        // -- End function
-func0000000000000075:                   // @func0000000000000075
-// %bb.0:                               // %entry
+
+func0000000000000075:
 	lsr	x8, x2, #63
 	sub	w9, w1, w0
 	add	w8, w9, w8
 	add	w0, w8, #190
 	ret
-                                        // -- End function
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
+
+func0000000000000020:
 	lsr	x8, x2, #32
 	sub	w9, w1, w0
 	add	w8, w9, w8
 	add	w0, w8, #1
 	ret
-                                        // -- End function
+

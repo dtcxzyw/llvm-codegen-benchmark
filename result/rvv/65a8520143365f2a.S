@@ -1,4 +1,4 @@
-func0000000000000115:                   # @func0000000000000115
+func0000000000000115:
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v14, 0
@@ -12,7 +12,8 @@ func0000000000000115:                   # @func0000000000000115
 	addi	a0, a0, 1
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -24,3 +25,4 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 10
 	ret
+

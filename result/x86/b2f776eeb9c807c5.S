@@ -1,4 +1,4 @@
-func0000000000000584:                   # @func0000000000000584
+func0000000000000584:
 	addq	$-2, %rdi
 	cmpq	$3, %rdi
 	setb	%cl
@@ -6,8 +6,9 @@ func0000000000000584:                   # @func0000000000000584
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000184:                   # @func0000000000000184
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
+
+func0000000000000184:
+	movabsq	$9223372036854775807, %rax
 	addq	%rdi, %rax
 	cmpq	$5, %rax
 	setb	%cl
@@ -15,3 +16,4 @@ func0000000000000184:                   # @func0000000000000184
 	setne	%al
 	andb	%cl, %al
 	retq
+

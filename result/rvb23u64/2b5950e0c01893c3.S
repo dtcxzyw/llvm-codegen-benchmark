@@ -1,4 +1,4 @@
-func00000000000014c6:                   # @func00000000000014c6
+func00000000000014c6:
 	sext.w	a0, a0
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
@@ -7,3 +7,4 @@ func00000000000014c6:                   # @func00000000000014c6
 	slti	a0, a0, 60
 	and	a0, a0, a1
 	ret
+

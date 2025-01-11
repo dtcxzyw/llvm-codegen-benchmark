@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.long	64                              # 0x40
+	.long	64
 .LCPI0_1:
-	.long	5                               # 0x5
+	.long	5
 .LCPI0_2:
-	.long	128                             # 0x80
-func0000000000000061:                   # @func0000000000000061
+	.long	128
+func0000000000000061:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -13,13 +13,14 @@ func0000000000000061:                   # @func0000000000000061
 	vorps	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.long	3221225472                      # 0xc0000000
+	.long	3221225472
 .LCPI1_1:
-	.long	1073741888                      # 0x40000040
+	.long	1073741888
 .LCPI1_2:
-	.long	2147483648                      # 0x80000000
-func0000000000000001:                   # @func0000000000000001
+	.long	2147483648
+func0000000000000001:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -28,13 +29,14 @@ func0000000000000001:                   # @func0000000000000001
 	vorps	.LCPI1_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI2_0:
-	.long	32                              # 0x20
+	.long	32
 .LCPI2_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI2_2:
-	.long	64                              # 0x40
-func0000000000000018:                   # @func0000000000000018
+	.long	64
+func0000000000000018:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -43,13 +45,14 @@ func0000000000000018:                   # @func0000000000000018
 	vorps	.LCPI2_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI3_0:
-	.long	8                               # 0x8
+	.long	8
 .LCPI3_1:
-	.long	1                               # 0x1
+	.long	1
 .LCPI3_2:
-	.long	16                              # 0x10
-func0000000000000078:                   # @func0000000000000078
+	.long	16
+func0000000000000078:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -58,13 +61,14 @@ func0000000000000078:                   # @func0000000000000078
 	vorps	.LCPI3_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI4_0:
-	.long	524288                          # 0x80000
+	.long	524288
 .LCPI4_1:
-	.long	65522                           # 0xfff2
+	.long	65522
 .LCPI4_2:
-	.long	1048576                         # 0x100000
-func0000000000000041:                   # @func0000000000000041
+	.long	1048576
+func0000000000000041:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -73,13 +77,14 @@ func0000000000000041:                   # @func0000000000000041
 	vorps	.LCPI4_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI5_0:
-	.long	16                              # 0x10
+	.long	16
 .LCPI5_1:
-	.long	2                               # 0x2
+	.long	2
 .LCPI5_2:
-	.long	2048                            # 0x800
-func0000000000000064:                   # @func0000000000000064
+	.long	2048
+func0000000000000064:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -88,11 +93,12 @@ func0000000000000064:                   # @func0000000000000064
 	vorps	.LCPI5_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI6_0:
-	.long	4                               # 0x4
+	.long	4
 .LCPI6_1:
-	.long	8                               # 0x8
-func000000000000006a:                   # @func000000000000006a
+	.long	8
+func000000000000006a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -102,11 +108,12 @@ func000000000000006a:                   # @func000000000000006a
 	vorps	.LCPI6_1(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+
 .LCPI7_0:
-	.long	64                              # 0x40
+	.long	64
 .LCPI7_1:
-	.long	128                             # 0x80
-func000000000000000a:                   # @func000000000000000a
+	.long	128
+func000000000000000a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
@@ -116,3 +123,4 @@ func000000000000000a:                   # @func000000000000000a
 	vorps	.LCPI7_1(%rip){1to8}, %ymm2, %ymm2 {%k1}
 	vmovaps	%ymm2, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	sext.w	a0, a0
 	lui	a2, 16
 	addiw	a2, a2, -256
@@ -10,7 +10,8 @@ func0000000000000021:                   # @func0000000000000021
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a0, a0
 	andi	a1, a1, 240
 	li	a2, 2
@@ -22,3 +23,4 @@ func000000000000002c:                   # @func000000000000002c
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

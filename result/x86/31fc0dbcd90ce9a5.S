@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	movzwl	%si, %eax
 	cmpl	$255, %eax
 	movl	$255, %eax
@@ -6,3 +6,4 @@ func000000000000001f:                   # @func000000000000001f
 	movzwl	%ax, %eax
 	leaq	16(%rdi,%rax,2), %rax
 	retq
+

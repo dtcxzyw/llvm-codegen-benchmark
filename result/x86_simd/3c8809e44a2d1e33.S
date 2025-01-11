@@ -1,4 +1,4 @@
-func000000000000002b:                   # @func000000000000002b
+func000000000000002b:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -12,7 +12,8 @@ func000000000000002b:                   # @func000000000000002b
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000042:                   # @func0000000000000042
+
+func0000000000000042:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -26,7 +27,8 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -40,7 +42,8 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+
+func00000000000000ca:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -54,7 +57,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+
+func00000000000000a4:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -68,7 +72,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	vextractf64x4	$1, %zmm4, %ymm5
 	vcvtps2pd	%ymm5, %zmm5
 	vcvtps2pd	%ymm4, %zmm4
@@ -82,3 +87,4 @@ func00000000000000cc:                   # @func00000000000000cc
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

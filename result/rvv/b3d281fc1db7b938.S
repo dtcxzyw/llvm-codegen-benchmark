@@ -1,10 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	li	a0, 54
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v10, v8, a0
 	vmorn.mm	v0, v10, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a0, 1
 	bseti	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,13 +13,15 @@ func0000000000000004:                   # @func0000000000000004
 	vmsleu.vi	v10, v8, 3
 	vmorn.mm	v0, v10, v0
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	lui	a0, 1048544
 	addiw	a0, a0, 30
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,37 +31,44 @@ func0000000000000038:                   # @func0000000000000038
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	lui	a0, 244141
 	addiw	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v10, v8, a0
 	vmorn.mm	v0, v10, v0
 	ret
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -2
 	vmsleu.vi	v10, v8, 11
 	vmorn.mm	v0, v10, v0
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v10, v8, 4
 	vmorn.mm	v0, v10, v0
 	ret
-func0000000000000078:                   # @func0000000000000078
+
+func0000000000000078:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v0, v10
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v10, v8, 1
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -2
 	vmsleu.vi	v10, v8, 2
 	vmorn.mm	v0, v10, v0
 	ret
+

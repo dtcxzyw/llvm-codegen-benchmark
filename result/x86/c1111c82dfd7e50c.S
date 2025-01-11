@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000034:
 	addb	%dil, %dil
 	movzbl	%dil, %eax
 	cmpb	$6, %al
@@ -8,3 +8,4 @@ func0000000000000034:                   # @func0000000000000034
 	leal	(%rcx,%rcx,4), %eax
 	movzbl	%al, %eax
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000009d:                   # @func000000000000009d
+func000000000000009d:
 	fclass.s	a0, fa1
 	lui	a1, 798688
 	andi	a0, a0, 897
@@ -7,9 +7,10 @@ func000000000000009d:                   # @func000000000000009d
 	flt.s	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
+
 .LCPI1_0:
-	.word	0x3089705f                      # float 9.99999971E-10
-func0000000000000022:                   # @func0000000000000022
+	.word	0x3089705f
+func0000000000000022:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	fabs.s	fa4, fa1
@@ -17,9 +18,10 @@ func0000000000000022:                   # @func0000000000000022
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+
 .LCPI2_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func00000000000000aa:                   # @func00000000000000aa
+	.word	0x358637bd
+func00000000000000aa:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	fabs.s	fa4, fa1
@@ -27,7 +29,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	fle.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func0000000000000066:                   # @func0000000000000066
+
+func0000000000000066:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
 	andi	a0, a0, 126
@@ -35,9 +38,10 @@ func0000000000000066:                   # @func0000000000000066
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+
 .LCPI4_0:
-	.word	0x358637bd                      # float 9.99999997E-7
-func0000000000000044:                   # @func0000000000000044
+	.word	0x358637bd
+func0000000000000044:
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	fabs.s	fa4, fa1
@@ -45,7 +49,8 @@ func0000000000000044:                   # @func0000000000000044
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000077:                   # @func0000000000000077
+
+func0000000000000077:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
 	andi	a0, a0, 894
@@ -53,3 +58,4 @@ func0000000000000077:                   # @func0000000000000077
 	feq.s	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
+

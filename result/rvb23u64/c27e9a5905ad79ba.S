@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	andi	a0, a0, 1
 	fli.d	fa5, 0.75
 	li	a1, 1
@@ -8,7 +8,8 @@ func0000000000000002:                   # @func0000000000000002
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
@@ -16,3 +17,4 @@ func0000000000000004:                   # @func0000000000000004
 	ori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret
+

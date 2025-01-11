@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -6,7 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -14,7 +15,8 @@ func0000000000000003:                   # @func0000000000000003
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -22,7 +24,8 @@ func0000000000000008:                   # @func0000000000000008
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -30,7 +33,8 @@ func0000000000000004:                   # @func0000000000000004
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -38,7 +42,8 @@ func0000000000000001:                   # @func0000000000000001
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func000000000000000b:                   # @func000000000000000b
+
+func000000000000000b:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -46,7 +51,8 @@ func000000000000000b:                   # @func000000000000000b
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -54,7 +60,8 @@ func0000000000000002:                   # @func0000000000000002
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -62,7 +69,8 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func0000000000000007:                   # @func0000000000000007
+
+func0000000000000007:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -70,7 +78,8 @@ func0000000000000007:                   # @func0000000000000007
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
+
+func000000000000000f:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v10, v9
 	vwsubu.wv	v8, v8, v10
@@ -78,3 +87,4 @@ func000000000000000f:                   # @func000000000000000f
 	vzext.vf2	v10, v8
 	vmv.v.v	v8, v10
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	fli.s	fa5, 4.0
 	fneg.s	fa5, fa5
 	fmul.s	fa5, fa1, fa5
@@ -7,3 +7,4 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa5, fa4
 	ret
+

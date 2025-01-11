@@ -1,4 +1,4 @@
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000000e1:
 	zext.w	a2, a1
 	lui	a3, 149797
 	addiw	a3, a3, -1755
@@ -15,7 +15,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+
+func00000000000000e8:
 	zext.w	a2, a1
 	lui	a3, 225209
 	addiw	a3, a3, 1387
@@ -30,3 +31,4 @@ func00000000000000e8:                   # @func00000000000000e8
 	subw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+

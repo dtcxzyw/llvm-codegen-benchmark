@@ -1,4 +1,4 @@
-func000000000000030b:                   # @func000000000000030b
+func000000000000030b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v0, v9, 0
 	vmv.v.i	v9, 0
@@ -8,7 +8,8 @@ func000000000000030b:                   # @func000000000000030b
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000100:                   # @func0000000000000100
+
+func0000000000000100:
 	li	a0, -13
 	slli	a0, a0, 8
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,7 +21,8 @@ func0000000000000100:                   # @func0000000000000100
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000300:                   # @func0000000000000300
+
+func0000000000000300:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v0, v9, 2
 	vmv.v.i	v9, 0
@@ -30,7 +32,8 @@ func0000000000000300:                   # @func0000000000000300
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000040:                   # @func0000000000000040
+
+func0000000000000040:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 1
 	vmv.v.i	v9, 0
@@ -40,7 +43,8 @@ func0000000000000040:                   # @func0000000000000040
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000200:                   # @func0000000000000200
+
+func0000000000000200:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vi	v0, v9, 2
 	vmv.v.i	v9, 0
@@ -50,7 +54,8 @@ func0000000000000200:                   # @func0000000000000200
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func0000000000000303:                   # @func0000000000000303
+
+func0000000000000303:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v0, v9, 0
 	vmv.v.i	v9, 0
@@ -60,3 +65,4 @@ func0000000000000303:                   # @func0000000000000303
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
+

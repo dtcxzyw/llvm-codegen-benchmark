@@ -1,21 +1,21 @@
 .LCPI0_0:
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-	.short	65521                           # 0xfff1
-func0000000000000318:                   # @func0000000000000318
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+	.short	65521
+func0000000000000318:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vptestmw	%ymm2, %ymm2, %k1
@@ -25,3 +25,4 @@ func0000000000000318:                   # @func0000000000000318
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

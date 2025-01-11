@@ -1,4 +1,4 @@
-func0000000000000cca:                   # @func0000000000000cca
+func0000000000000cca:
 	leal	2(%rdi), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -6,7 +6,8 @@ func0000000000000cca:                   # @func0000000000000cca
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000004ca:                   # @func00000000000004ca
+
+func00000000000004ca:
 	leal	2(%rdi), %eax
 	cmpl	%esi, %eax
 	setl	%cl
@@ -14,7 +15,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
+
+func000000000000010c:
 	leal	1(%rdi), %eax
 	cmpl	%esi, %eax
 	seta	%cl
@@ -22,3 +24,4 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
+

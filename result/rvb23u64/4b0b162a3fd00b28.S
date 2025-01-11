@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.word	0x358637bd                      # float 9.99999997E-7
+	.word	0x358637bd
 .LCPI0_1:
-	.word	0x3f7fffef                      # float 0.999998986
-func0000000000000042:                   # @func0000000000000042
+	.word	0x3f7fffef
+func0000000000000042:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
@@ -11,20 +11,23 @@ func0000000000000042:                   # @func0000000000000042
 	fmax.s	fa5, fa3, fa5
 	flt.s	a0, fa5, fa4
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	fdiv.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa5
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa4
-.LBB1_2:                                # %entry
+.LBB1_2:
 	fli.s	fa4, 1.0
 	flt.s	a0, fa4, fa5
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	fdiv.s	fa5, fa0, fa1
 	fli.s	fa4, 1.0
 	fmin.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa4, fa5
 	ret
+

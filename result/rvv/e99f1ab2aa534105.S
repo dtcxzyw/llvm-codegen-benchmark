@@ -1,4 +1,4 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000003c:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 8
@@ -6,7 +6,8 @@ func000000000000003c:                   # @func000000000000003c
 	vor.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 24
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	vor.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 8
@@ -22,7 +24,8 @@ func000000000000003d:                   # @func000000000000003d
 	vor.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 24
@@ -30,3 +33,4 @@ func000000000000002c:                   # @func000000000000002c
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
 	ret
+

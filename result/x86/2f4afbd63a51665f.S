@@ -1,4 +1,4 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000020:
 	subl	%edi, %esi
 	leal	-1023(%rsi), %ecx
 	cmpl	$-5, %ecx
@@ -6,7 +6,8 @@ func0000000000000020:                   # @func0000000000000020
 	cmovgel	%ecx, %eax
 	addl	$6, %eax
 	retq
-func000000000000002a:                   # @func000000000000002a
+
+func000000000000002a:
 	notl	%edi
 	addl	%esi, %edi
 	movl	%edi, %eax
@@ -14,3 +15,4 @@ func000000000000002a:                   # @func000000000000002a
 	andnl	%edi, %eax, %eax
 	incl	%eax
 	retq
+

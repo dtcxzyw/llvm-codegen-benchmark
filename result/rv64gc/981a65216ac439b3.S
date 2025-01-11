@@ -1,11 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	mv	a3, a0
 	sext.w	a1, a1
 	li	a0, 1
 	andi	a3, a3, 1
 	bne	a1, a0, .LBB0_3
 	bnez	a3, .LBB0_4
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
 .LBB0_3:
 	seqz	a0, a1
@@ -15,3 +15,4 @@ func0000000000000021:                   # @func0000000000000021
 .LBB0_4:
 	li	a0, 2
 	ret
+

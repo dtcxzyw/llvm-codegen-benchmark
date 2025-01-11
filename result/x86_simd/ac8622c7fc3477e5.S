@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	4294967288                      # 0xfffffff8
-func0000000000000021:                   # @func0000000000000021
+	.long	4294967288
+func0000000000000021:
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$29, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -9,9 +9,10 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.long	4294963200                      # 0xfffff000
-func000000000000002a:                   # @func000000000000002a
+	.long	4294963200
+func000000000000002a:
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$20, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -20,3 +21,4 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+

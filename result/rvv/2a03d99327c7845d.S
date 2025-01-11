@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vclz.v	v10, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -7,3 +7,4 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 63
 	vxor.vx	v8, v8, a0
 	ret
+

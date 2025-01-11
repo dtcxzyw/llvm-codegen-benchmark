@@ -1,25 +1,28 @@
-func000000000000003e:                   # @func000000000000003e
+func000000000000003e:
 	slliw	a2, a2, 21
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000002f:                   # @func000000000000002f
+
+func000000000000002f:
 	slliw	a2, a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	slliw	a2, a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+
+func000000000000003c:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
 	srli	a2, a2, 40
@@ -27,7 +30,8 @@ func000000000000003c:                   # @func000000000000003c
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000003d:                   # @func000000000000003d
+
+func000000000000003d:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
 	srli	a2, a2, 40
@@ -35,14 +39,16 @@ func000000000000003d:                   # @func000000000000003d
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+
+func000000000000003a:
 	slliw	a2, a2, 24
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000003f:                   # @func000000000000003f
+
+func000000000000003f:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
 	srli	a2, a2, 36
@@ -50,10 +56,12 @@ func000000000000003f:                   # @func000000000000003f
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	slliw	a2, a2, 19
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+

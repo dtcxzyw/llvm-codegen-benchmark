@@ -1,4 +1,4 @@
-func0000000000000013:                   # @func0000000000000013
+func0000000000000013:
 	vcvttss2si	%xmm1, %eax
 	incl	%eax
 	vcvtsi2ss	%eax, %xmm2, %xmm1
@@ -6,7 +6,8 @@ func0000000000000013:                   # @func0000000000000013
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000015:                   # @func0000000000000015
+
+func0000000000000015:
 	vcvttss2si	%xmm1, %eax
 	incl	%eax
 	vcvtsi2ss	%eax, %xmm2, %xmm1
@@ -14,3 +15,4 @@ func0000000000000015:                   # @func0000000000000015
 	setb	%al
 	orb	%dil, %al
 	retq
+

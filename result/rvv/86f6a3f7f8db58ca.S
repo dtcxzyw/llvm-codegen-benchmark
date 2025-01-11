@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	lui	a0, 351844
 	addi	a0, a0, -1143
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -12,7 +12,8 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 15
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	lui	a0, 858993
 	addi	a0, a0, 1881
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -25,3 +26,4 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -983
 	vmulhu.vx	v8, v10, a0
 	ret
+

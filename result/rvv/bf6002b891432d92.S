@@ -1,4 +1,4 @@
-func0000000000000aca:                   # @func0000000000000aca
+func0000000000000aca:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -8,7 +8,8 @@ func0000000000000aca:                   # @func0000000000000aca
 	vmand.mm	v8, v16, v17
 	vmand.mm	v0, v8, v7
 	ret
-func0000000000000666:                   # @func0000000000000666
+
+func0000000000000666:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, inf
@@ -24,7 +25,8 @@ func0000000000000666:                   # @func0000000000000666
 	vmor.mm	v9, v17, v16
 	vmand.mm	v0, v8, v9
 	ret
-func0000000000000888:                   # @func0000000000000888
+
+func0000000000000888:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -34,7 +36,8 @@ func0000000000000888:                   # @func0000000000000888
 	vmfeq.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
-func0000000000000877:                   # @func0000000000000877
+
+func0000000000000877:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -44,7 +47,8 @@ func0000000000000877:                   # @func0000000000000877
 	vmand.mm	v9, v7, v16
 	vmand.mm	v0, v9, v8
 	ret
-func000000000000044c:                   # @func000000000000044c
+
+func000000000000044c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -54,7 +58,8 @@ func000000000000044c:                   # @func000000000000044c
 	vmfge.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
-func0000000000000444:                   # @func0000000000000444
+
+func0000000000000444:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
@@ -64,9 +69,10 @@ func0000000000000444:                   # @func0000000000000444
 	vmfgt.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
+
 .LCPI6_0:
-	.quad	0x3ff921fb54442d18              # double 1.5707963267948966
-func0000000000000222:                   # @func0000000000000222
+	.quad	0x3ff921fb54442d18
+func0000000000000222:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI6_0)
@@ -77,3 +83,4 @@ func0000000000000222:                   # @func0000000000000222
 	vmflt.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
+

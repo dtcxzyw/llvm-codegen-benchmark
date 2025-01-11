@@ -1,8 +1,9 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	testb	$1, %sil
-	movl	$32768, %ecx                    # imm = 0x8000
+	movl	$32768, %ecx
 	cmovel	%edx, %ecx
 	testb	$1, %dil
-	movl	$32767, %eax                    # imm = 0x7FFF
+	movl	$32767, %eax
 	cmovel	%ecx, %eax
 	retq
+

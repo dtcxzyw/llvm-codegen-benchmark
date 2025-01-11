@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	vfncvt.f.f.w	v20, v8
@@ -9,9 +9,10 @@ func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
+
 .LCPI1_0:
-	.word	0x3f4ccccd                      # float 0.800000011
-func0000000000000004:                   # @func0000000000000004
+	.word	0x3f4ccccd
+func0000000000000004:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	vfncvt.f.f.w	v20, v8
@@ -23,3 +24,4 @@ func0000000000000004:                   # @func0000000000000004
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
+

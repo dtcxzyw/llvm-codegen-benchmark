@@ -1,4 +1,4 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002e:
 	srli	a1, a1, 2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -10,9 +10,10 @@ func000000000000002e:                   # @func000000000000002e
 	sh2add	a0, a1, a0
 	addi	a0, a0, -24
 	ret
+
 .LCPI1_0:
-	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func000000000000000e:                   # @func000000000000000e
+	.quad	3074457345618258603
+func000000000000000e:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mulh	a1, a1, a2
@@ -24,7 +25,8 @@ func000000000000000e:                   # @func000000000000000e
 	sh2add	a0, a1, a0
 	addi	a0, a0, -24
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	srli	a1, a1, 3
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -36,3 +38,4 @@ func000000000000002c:                   # @func000000000000002c
 	sh3add	a0, a1, a0
 	addi	a0, a0, -48
 	ret
+

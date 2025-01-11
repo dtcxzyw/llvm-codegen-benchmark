@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000000a1:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -48,7 +48,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpcmpgtd	%ymm3, %ymm2, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-func00000000000000a0:                   # @func00000000000000a0
+
+func00000000000000a0:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -98,7 +99,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpcmpgtd	%ymm3, %ymm2, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+
+func00000000000000c1:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -150,7 +152,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-func00000000000000c0:                   # @func00000000000000c0
+
+func00000000000000c0:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
 	vpextrd	$1, %xmm4, %eax
@@ -202,3 +205,4 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+

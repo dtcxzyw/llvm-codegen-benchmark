@@ -1,4 +1,4 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000181:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -6,7 +6,8 @@ func0000000000000181:                   # @func0000000000000181
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	zext.h	a2, a2
 	sext.w	a1, a1
 	xori	a1, a1, 1
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
@@ -25,7 +27,8 @@ func000000000000018c:                   # @func000000000000018c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	addi	a2, a2, -62
@@ -35,7 +38,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+
+func0000000000000028:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	addi	a2, a2, -18
@@ -44,7 +48,8 @@ func0000000000000028:                   # @func0000000000000028
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	zext.h	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -2
@@ -53,7 +58,8 @@ func0000000000000024:                   # @func0000000000000024
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	snez	a2, a2
@@ -61,7 +67,8 @@ func0000000000000188:                   # @func0000000000000188
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	zext.h	a1, a1
 	srliw	a2, a2, 12
 	seqz	a2, a2
@@ -69,3 +76,4 @@ func0000000000000084:                   # @func0000000000000084
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+

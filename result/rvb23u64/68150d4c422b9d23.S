@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	fcvt.l.d	a1, fa0, rtz
 	add	a0, a0, a1
 	lui	a1, 524288
@@ -6,3 +6,4 @@ func000000000000000a:                   # @func000000000000000a
 	min	a0, a0, a1
 	slli	a0, a0, 2
 	ret
+

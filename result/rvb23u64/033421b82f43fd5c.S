@@ -1,4 +1,4 @@
-func00000000000000f3:                   # @func00000000000000f3
+func00000000000000f3:
 	addi	a1, a1, -1
 	li	a2, 272
 	zext.w	a1, a1
@@ -7,12 +7,14 @@ func00000000000000f3:                   # @func00000000000000f3
 	li	a1, 1565
 	sh3add	a0, a1, a0
 	ret
-func00000000000000ff:                   # @func00000000000000ff
+
+func00000000000000ff:
 	addi	a1, a1, -5
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 61
 	ret
-func000000000000007f:                   # @func000000000000007f
+
+func000000000000007f:
 	slli	a1, a1, 4
 	li	a2, 1
 	slli	a2, a2, 36
@@ -23,14 +25,16 @@ func000000000000007f:                   # @func000000000000007f
 	add	a0, a0, a1
 	addi	a0, a0, 56
 	ret
-func0000000000000073:                   # @func0000000000000073
+
+func0000000000000073:
 	addi	a1, a1, -1
 	slli.uw	a1, a1, 3
 	sh3add	a1, a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 256
 	ret
-func0000000000000070:                   # @func0000000000000070
+
+func0000000000000070:
 	addi	a1, a1, -1
 	lui	a2, 6
 	slli	a1, a1, 33
@@ -39,7 +43,8 @@ func0000000000000070:                   # @func0000000000000070
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
-func00000000000000bf:                   # @func00000000000000bf
+
+func00000000000000bf:
 	slli	a1, a1, 4
 	li	a2, 1
 	slli	a2, a2, 36
@@ -50,3 +55,4 @@ func00000000000000bf:                   # @func00000000000000bf
 	add	a0, a0, a1
 	addi	a0, a0, 264
 	ret
+

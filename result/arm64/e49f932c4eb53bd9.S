@@ -1,18 +1,15 @@
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
+func0000000000000003:
 	and	w9, w1, #0xffff
-	mov	x8, #281470681743360            // =0xffff00000000
+	mov	x8, #281470681743360
 	tst	w0, #0x1
 	lsl	x9, x9, #32
 	csel	x0, x8, x9, ne
 	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-                                        // kill: def $w1 killed $w1 def $x1
+
+func0000000000000002:
 	lsl	x9, x1, #48
-	mov	x8, #-281474976710656           // =0xffff000000000000
+	mov	x8, #-281474976710656
 	tst	w0, #0x1
 	csel	x0, x8, x9, ne
 	ret
-                                        // -- End function
+

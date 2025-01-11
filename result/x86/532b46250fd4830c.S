@@ -1,4 +1,4 @@
-func0000000000000012:                   # @func0000000000000012
+func0000000000000012:
 	andl	$1, %edx
 	shll	$5, %edx
 	addl	$32, %edx
@@ -6,7 +6,8 @@ func0000000000000012:                   # @func0000000000000012
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -15,7 +16,8 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+
+func0000000000000016:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -24,7 +26,8 @@ func0000000000000016:                   # @func0000000000000016
 	setge	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	testb	$1, %dl
 	movl	$-64, %eax
 	movl	$-256, %ecx
@@ -33,7 +36,8 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+
+func0000000000000014:
 	testb	$1, %dl
 	movl	$63, %eax
 	movl	$255, %ecx
@@ -42,26 +46,30 @@ func0000000000000014:                   # @func0000000000000014
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	andl	$1, %edx
 	addl	$3, %edx
 	cmpl	%edx, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	xorl	%eax, %eax
 	testb	$1, %dl
-	movl	$-694955008, %ecx               # imm = 0xD693D400
+	movl	$-694955008, %ecx
 	cmovel	%eax, %ecx
 	cmpl	%ecx, %esi
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	andl	$1, %edx
 	addl	$5, %edx
 	cmpl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
+

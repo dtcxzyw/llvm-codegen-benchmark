@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.long	348                             # 0x15c
-func0000000000000caa:                   # @func0000000000000caa
+	.long	348
+func0000000000000caa:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -9,3 +9,4 @@ func0000000000000caa:                   # @func0000000000000caa
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

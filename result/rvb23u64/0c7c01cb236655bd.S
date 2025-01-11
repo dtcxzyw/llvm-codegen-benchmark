@@ -1,4 +1,4 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	andi	a2, a2, 1
 	subw	a1, a1, a2
 	lui	a2, 335544
@@ -11,7 +11,8 @@ func000000000000002c:                   # @func000000000000002c
 	sh2add	a0, a0, a0
 	slliw	a0, a0, 4
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a2, a2, 1
 	subw	a1, a1, a2
 	lui	a2, 699051
@@ -24,7 +25,8 @@ func000000000000000c:                   # @func000000000000000c
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 2
 	ret
-func000000000000002d:                   # @func000000000000002d
+
+func000000000000002d:
 	andi	a2, a2, 1
 	subw	a1, a1, a2
 	lui	a2, 235184
@@ -36,3 +38,4 @@ func000000000000002d:                   # @func000000000000002d
 	li	a1, -400
 	mulw	a0, a0, a1
 	ret
+

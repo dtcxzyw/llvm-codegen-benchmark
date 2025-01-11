@@ -1,8 +1,10 @@
-func0000000000000012:                   # @func0000000000000012
-	vfmadd213ss	%xmm2, %xmm1, %xmm1     # xmm1 = (xmm1 * xmm1) + xmm2
+func0000000000000012:
+	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vmaxss	%xmm0, %xmm1, %xmm0
 	retq
-func0000000000000004:                   # @func0000000000000004
-	vfmadd213ss	%xmm2, %xmm1, %xmm1     # xmm1 = (xmm1 * xmm1) + xmm2
+
+func0000000000000004:
+	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vminss	%xmm0, %xmm1, %xmm0
 	retq
+

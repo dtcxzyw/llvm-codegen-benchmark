@@ -1,7 +1,7 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	testl	%edx, %edx
 	cmovnel	%esi, %edi
-	imulq	$138547333, %rdi, %rcx          # imm = 0x8421085
+	imulq	$138547333, %rdi, %rcx
 	shrq	$32, %rcx
 	movl	%edi, %eax
 	subl	%ecx, %eax
@@ -13,3 +13,4 @@ func0000000000000001:                   # @func0000000000000001
 	subl	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

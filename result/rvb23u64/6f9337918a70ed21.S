@@ -1,4 +1,4 @@
-func00000000000001b8:                   # @func00000000000001b8
+func00000000000001b8:
 	zext.h	a1, a1
 	lui	a2, 16
 	add	a0, a0, a1
@@ -9,7 +9,8 @@ func00000000000001b8:                   # @func00000000000001b8
 	czero.eqz	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	slli	a1, a1, 44
 	lui	a2, 244
 	srli	a1, a1, 44
@@ -21,3 +22,4 @@ func000000000000008a:                   # @func000000000000008a
 	czero.eqz	a1, a1, a2
 	add	a0, a0, a1
 	ret
+

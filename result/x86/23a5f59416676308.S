@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000024:
 	decb	%dl
 	cmpb	$2, %dl
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000000024:                   # @func0000000000000024
 	sete	%al
 	orb	%cl, %al
 	retq
+

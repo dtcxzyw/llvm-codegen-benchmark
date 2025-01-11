@@ -1,5 +1,4 @@
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
+func0000000000000002:
 	fdiv	d1, d1, d2
 	fmov	d2, #1.00000000
 	fsub	d1, d2, d1
@@ -7,9 +6,8 @@ func0000000000000002:                   // @func0000000000000002
 	fcmp	d0, #0.0
 	cset	w0, mi
 	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
+
+func000000000000000a:
 	fdiv	d1, d1, d2
 	fmov	d2, #1.00000000
 	fsub	d1, d2, d1
@@ -17,4 +15,4 @@ func000000000000000a:                   // @func000000000000000a
 	fcmp	d0, #0.0
 	cset	w0, ls
 	ret
-                                        // -- End function
+

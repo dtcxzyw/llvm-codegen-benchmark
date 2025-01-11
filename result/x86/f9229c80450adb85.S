@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000030:
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax
@@ -6,3 +6,4 @@ func0000000000000030:                   # @func0000000000000030
 	addq	%rsi, %rax
 	leaq	12(%rdi,%rax), %rax
 	retq
+

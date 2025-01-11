@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	li	a0, 96
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgt.vx	v0, v8, a0
@@ -8,7 +8,8 @@ func0000000000000028:                   # @func0000000000000028
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vi	v0, v8, 9
 	li	a0, 48
@@ -17,7 +18,8 @@ func0000000000000063:                   # @func0000000000000063
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a0, -83
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vx	v0, v8, a0
@@ -25,7 +27,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmerge.vim	v9, v9, 1, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsle.vi	v0, v8, 9
 	li	a0, 87
@@ -34,7 +37,8 @@ func0000000000000018:                   # @func0000000000000018
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v0, v8, 9
 	li	a0, 55
@@ -43,7 +47,8 @@ func0000000000000053:                   # @func0000000000000053
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	li	a0, -111
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -53,7 +58,8 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
-func0000000000000051:                   # @func0000000000000051
+
+func0000000000000051:
 	li	a0, -32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -63,3 +69,4 @@ func0000000000000051:                   # @func0000000000000051
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret
+

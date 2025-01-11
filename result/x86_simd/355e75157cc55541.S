@@ -1,23 +1,24 @@
 .LCPI0_0:
-	.quad	0xbf77a291236668e4              # double -0.0057702702964894416
+	.quad	0xbf77a291236668e4
 .LCPI0_1:
-	.quad	0xbef8ead6120016ac              # double -2.3763016656650163E-5
+	.quad	0xbef8ead6120016ac
 .LCPI0_2:
-	.quad	0xbf9d2a51dbd7194f              # double -0.02848174957559851
+	.quad	0xbf9d2a51dbd7194f
 .LCPI0_3:
-	.quad	0xbfd4cd7d691cb913              # double -0.3250421072470015
-func0000000000000000:                   # @func0000000000000000
+	.quad	0xbfd4cd7d691cb913
+func0000000000000000:
 	vmulpd	%zmm1, %zmm1, %zmm2
 	vmulpd	%zmm0, %zmm0, %zmm3
-	vbroadcastsd	.LCPI0_0(%rip), %zmm4   # zmm4 = [-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3,-5.7702702964894416E-3]
-	vbroadcastsd	.LCPI0_1(%rip), %zmm1   # zmm1 = [-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5,-2.3763016656650163E-5]
+	vbroadcastsd	.LCPI0_0(%rip), %zmm4
+	vbroadcastsd	.LCPI0_1(%rip), %zmm1
 	vmovapd	%zmm1, %zmm0
-	vfmadd213pd	%zmm4, %zmm3, %zmm0     # zmm0 = (zmm3 * zmm0) + zmm4
-	vfmadd213pd	%zmm4, %zmm2, %zmm1     # zmm1 = (zmm2 * zmm1) + zmm4
-	vbroadcastsd	.LCPI0_2(%rip), %zmm4   # zmm4 = [-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2,-2.848174957559851E-2]
-	vfmadd213pd	%zmm4, %zmm2, %zmm1     # zmm1 = (zmm2 * zmm1) + zmm4
-	vfmadd213pd	%zmm4, %zmm3, %zmm0     # zmm0 = (zmm3 * zmm0) + zmm4
-	vbroadcastsd	.LCPI0_3(%rip), %zmm4   # zmm4 = [-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1,-3.250421072470015E-1]
-	vfmadd213pd	%zmm4, %zmm3, %zmm0     # zmm0 = (zmm3 * zmm0) + zmm4
-	vfmadd213pd	%zmm4, %zmm2, %zmm1     # zmm1 = (zmm2 * zmm1) + zmm4
+	vfmadd213pd	%zmm4, %zmm3, %zmm0
+	vfmadd213pd	%zmm4, %zmm2, %zmm1
+	vbroadcastsd	.LCPI0_2(%rip), %zmm4
+	vfmadd213pd	%zmm4, %zmm2, %zmm1
+	vfmadd213pd	%zmm4, %zmm3, %zmm0
+	vbroadcastsd	.LCPI0_3(%rip), %zmm4
+	vfmadd213pd	%zmm4, %zmm3, %zmm0
+	vfmadd213pd	%zmm4, %zmm2, %zmm1
 	retq
+

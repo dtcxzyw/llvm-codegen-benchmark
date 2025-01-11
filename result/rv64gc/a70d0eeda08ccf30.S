@@ -1,4 +1,4 @@
-func0000000000000110:                   # @func0000000000000110
+func0000000000000110:
 	add	a0, a0, a1
 	li	a2, 1
 	sltu	a1, a0, a1
@@ -6,7 +6,8 @@ func0000000000000110:                   # @func0000000000000110
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000020a:                   # @func000000000000020a
+
+func000000000000020a:
 	add	a1, a1, a0
 	li	a2, 1
 	sltu	a0, a0, a1
@@ -16,13 +17,15 @@ func000000000000020a:                   # @func000000000000020a
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
+
+func0000000000000188:
 	add	a1, a1, a0
 	sltu	a0, a1, a0
 	slti	a1, a1, 0
 	or	a0, a0, a1
 	ret
-func0000000000000208:                   # @func0000000000000208
+
+func0000000000000208:
 	add	a1, a1, a0
 	li	a2, 1
 	sltu	a0, a1, a0
@@ -31,16 +34,19 @@ func0000000000000208:                   # @func0000000000000208
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000102:                   # @func0000000000000102
+
+func0000000000000102:
 	add	a0, a0, a1
 	sltu	a1, a0, a1
 	addi	a0, a0, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	add	a1, a1, a0
 	slti	a2, a1, 0
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

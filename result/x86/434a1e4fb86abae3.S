@@ -1,14 +1,16 @@
-func0000000000000001:                   # @func0000000000000001
-	andl	$-449, %edx                     # imm = 0xFE3F
+func0000000000000001:
+	andl	$-449, %edx
 	testb	$1, %dil
-	movl	$384, %eax                      # imm = 0x180
+	movl	$384, %eax
 	cmovel	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	andl	$-2049, %edx                    # imm = 0xF7FF
+
+func0000000000000000:
+	andl	$-2049, %edx
 	testb	$1, %dil
-	movl	$2048, %eax                     # imm = 0x800
+	movl	$2048, %eax
 	cmovel	%esi, %eax
 	orl	%edx, %eax
 	retq
+

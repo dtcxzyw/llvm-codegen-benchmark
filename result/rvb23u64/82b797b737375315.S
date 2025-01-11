@@ -1,4 +1,4 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000001f:
 	sext.w	a2, a2
 	slliw	a1, a1, 21
 	addi	a2, a2, -1
@@ -7,7 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000010:                   # @func0000000000000010
+
+func0000000000000010:
 	sext.w	a2, a2
 	slliw	a1, a1, 16
 	snez	a2, a2
@@ -15,7 +16,8 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000001e:                   # @func000000000000001e
+
+func000000000000001e:
 	sext.w	a2, a2
 	slliw	a1, a1, 13
 	snez	a2, a2
@@ -23,7 +25,8 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	sext.w	a2, a2
 	slliw	a1, a1, 16
 	addi	a2, a2, -13
@@ -32,3 +35,4 @@ func0000000000000012:                   # @func0000000000000012
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

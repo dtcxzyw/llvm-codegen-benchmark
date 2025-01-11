@@ -1,4 +1,4 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000006:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm0, %xmm3
@@ -47,3 +47,4 @@ func0000000000000006:                   # @func0000000000000006
 	vpsrad	$31, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
+

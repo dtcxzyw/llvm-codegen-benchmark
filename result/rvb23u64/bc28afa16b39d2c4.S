@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func0000000000000002:                   # @func0000000000000002
+	.quad	768614336404564650
+func0000000000000002:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	andi	a0, a0, 1
@@ -10,7 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000000:                   # @func0000000000000000
+
+func0000000000000000:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
 	li	a2, -1
@@ -20,3 +21,4 @@ func0000000000000000:                   # @func0000000000000000
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
+

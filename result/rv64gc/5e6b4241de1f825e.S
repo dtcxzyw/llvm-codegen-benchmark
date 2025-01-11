@@ -1,4 +1,4 @@
-func0000000000000009:                   # @func0000000000000009
+func0000000000000009:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
@@ -12,9 +12,10 @@ func0000000000000009:                   # @func0000000000000009
 .LBB0_2:
 	fmv.w.x	fa0, zero
 	ret
+
 .LCPI1_0:
-	.word	0xc2b0c0a5                      # float -88.3762589
-func0000000000000002:                   # @func0000000000000002
+	.word	0xc2b0c0a5
+func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 260096
@@ -22,11 +23,12 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa0, a0
 	bnez	a1, .LBB1_2
 	fdiv.s	fa0, fa0, fa1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	ret
+
 .LCPI2_0:
-	.word	0x3e22f983                      # float 0.159154937
-func0000000000000008:                   # @func0000000000000008
+	.word	0x3e22f983
+func0000000000000008:
 	fmv.s	fa5, fa0
 	fmv.w.x	fa0, zero
 	feq.s	a0, fa5, fa0
@@ -34,11 +36,12 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	fdiv.s	fa0, fa5, fa1
-.LBB2_2:                                # %entry
+.LBB2_2:
 	ret
+
 .LCPI3_0:
-	.word	0x322bcc77                      # float 9.99999993E-9
-func000000000000000b:                   # @func000000000000000b
+	.word	0x322bcc77
+func000000000000000b:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	flt.s	a0, fa5, fa0
@@ -50,3 +53,4 @@ func000000000000000b:                   # @func000000000000000b
 .LBB3_2:
 	fmv.w.x	fa0, zero
 	ret
+

@@ -1,4 +1,4 @@
-func0000000000000484:                   # @func0000000000000484
+func0000000000000484:
 	li	a0, 17
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -8,7 +8,8 @@ func0000000000000484:                   # @func0000000000000484
 	vmand.mm	v8, v12, v10
 	vmand.mm	v0, v8, v0
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -18,3 +19,4 @@ func0000000000000024:                   # @func0000000000000024
 	vmand.mm	v8, v12, v10
 	vmand.mm	v0, v8, v0
 	ret
+

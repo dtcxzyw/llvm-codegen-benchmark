@@ -1,4 +1,4 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000000e4:
 	sub	a1, a1, a2
 	li	a2, -1
 	srai	a1, a1, 2
@@ -7,7 +7,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	xor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+
+func00000000000000c4:
 	sub	a1, a1, a2
 	li	a2, -1
 	srai	a1, a1, 4
@@ -16,7 +17,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	xor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	sub	a1, a1, a2
 	li	a2, -1
 	srai	a1, a1, 2
@@ -25,3 +27,4 @@ func00000000000000f4:                   # @func00000000000000f4
 	xor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+

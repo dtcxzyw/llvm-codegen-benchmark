@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	movl	%edi, %ecx
 	shlq	$6, %rdx
 	shlq	$6, %rcx
@@ -8,7 +8,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
+
+func0000000000000001:
 	movl	%edi, %ecx
 	addq	%rsi, %rcx
 	addq	%rdx, %rcx
@@ -16,3 +17,4 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
+

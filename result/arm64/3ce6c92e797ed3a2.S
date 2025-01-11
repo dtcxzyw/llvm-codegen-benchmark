@@ -1,32 +1,27 @@
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
+func0000000000000012:
 	umull	x8, w1, w2
 	add	x0, x0, x8, lsr #32
 	ret
-                                        // -- End function
-func0000000000000011:                   // @func0000000000000011
-// %bb.0:                               // %entry
+
+func0000000000000011:
 	umull	x8, w1, w2
 	add	x0, x0, x8, lsr #32
 	ret
-                                        // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
+
+func0000000000000013:
 	umull	x8, w1, w2
 	add	x0, x0, x8, lsr #32
 	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
+
+func000000000000001b:
 	and	x8, x1, #0xffff
 	umull	x8, w8, w2
 	add	x0, x0, x8, lsr #15
 	ret
-                                        // -- End function
-func0000000000000010:                   // @func0000000000000010
-// %bb.0:                               // %entry
+
+func0000000000000010:
 	and	x8, x2, #0xfffffffc
 	umull	x8, w1, w8
 	add	x0, x0, x8, lsr #32
 	ret
-                                        // -- End function
+

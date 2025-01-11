@@ -1,4 +1,4 @@
-func0000000000000000:                   # @func0000000000000000
+func0000000000000000:
 	movl	%esi, %ecx
 	shrl	$11, %ecx
 	addl	%esi, %ecx
@@ -6,7 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	movl	%esi, %ecx
 	shrl	$5, %ecx
 	addl	%esi, %ecx
@@ -15,3 +16,4 @@ func0000000000000038:                   # @func0000000000000038
 	xorl	%ecx, %eax
 	addl	%edi, %eax
 	retq
+

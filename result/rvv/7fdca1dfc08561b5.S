@@ -1,4 +1,4 @@
-func0000000000000005:                   # @func0000000000000005
+func0000000000000005:
 	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vx	v9, v9, a0
@@ -10,7 +10,8 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v10
 	ret
-func0000000000000025:                   # @func0000000000000025
+
+func0000000000000025:
 	lui	a0, 512
 	addi	a0, a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -23,3 +24,4 @@ func0000000000000025:                   # @func0000000000000025
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v10
 	ret
+

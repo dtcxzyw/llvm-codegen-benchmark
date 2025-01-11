@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func0000000000000064:
 	li	a6, 64
 	li	a3, 64
 	beqz	a1, .LBB0_2
@@ -43,11 +43,12 @@ func0000000000000064:                   # @func0000000000000064
 	add	a3, a3, a4
 	mul	a3, a1, a3
 	srli	a3, a3, 56
-.LBB0_2:                                # %cond.end
+.LBB0_2:
 	sub	a1, a6, a3
 	sltu	a0, a1, a0
 	ret
-func00000000000000e1:                   # @func00000000000000e1
+
+func00000000000000e1:
 	srli	a2, a1, 1
 	lui	a6, 349525
 	lui	a4, 209715
@@ -94,7 +95,8 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
-func0000000000000068:                   # @func0000000000000068
+
+func0000000000000068:
 	li	a6, 64
 	li	a3, 64
 	beqz	a1, .LBB2_2
@@ -139,11 +141,12 @@ func0000000000000068:                   # @func0000000000000068
 	add	a3, a3, a4
 	mul	a3, a1, a3
 	srli	a3, a3, 56
-.LBB2_2:                                # %cond.end
+.LBB2_2:
 	sub	a1, a6, a3
 	sltu	a0, a0, a1
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	srli	a2, a1, 1
 	lui	a6, 349525
 	lui	a4, 209715
@@ -189,7 +192,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	sub	a2, a2, a1
 	sltu	a0, a2, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
+
+func0000000000000074:
 	beqz	a1, .LBB4_2
 	srli	a2, a1, 1
 	lui	a3, 349525
@@ -242,3 +246,4 @@ func0000000000000074:                   # @func0000000000000074
 	sub	a2, a2, a1
 	sltu	a0, a2, a0
 	ret
+

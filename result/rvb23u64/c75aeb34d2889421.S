@@ -1,11 +1,12 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000002c:
 	and	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
 	srli	a0, a0, 17
 	and	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
+
+func000000000000018c:
 	and	a1, a1, a2
 	andi	a0, a0, 31
 	sext.w	a1, a1
@@ -13,7 +14,8 @@ func000000000000018c:                   # @func000000000000018c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000181:                   # @func0000000000000181
+
+func0000000000000181:
 	and	a1, a1, a2
 	andi	a0, a0, 248
 	sext.w	a1, a1
@@ -22,3 +24,4 @@ func0000000000000181:                   # @func0000000000000181
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+

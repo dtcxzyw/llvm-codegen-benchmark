@@ -1,38 +1,38 @@
 .LCPI0_0:
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
-	.short	291                             # 0x123
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
+	.short	291
 .LCPI0_1:
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-	.short	221                             # 0xdd
-func0000000000000042:                   # @func0000000000000042
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+	.short	221
+func0000000000000042:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqw	.LCPI0_0(%rip), %ymm1, %k0
@@ -42,3 +42,4 @@ func0000000000000042:                   # @func0000000000000042
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+

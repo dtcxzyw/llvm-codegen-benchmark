@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 838861
@@ -11,9 +11,10 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 10
 	vmul.vx	v8, v8, a0
 	ret
+
 .LCPI1_0:
-	.quad	-4078282918271054303            # 0xc767074b22e90e21
-func0000000000000000:                   # @func0000000000000000
+	.quad	-4078282918271054303
+func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 838861
@@ -27,3 +28,4 @@ func0000000000000000:                   # @func0000000000000000
 	vsrl.vi	v8, v8, 3
 	vmul.vx	v8, v8, a1
 	ret
+

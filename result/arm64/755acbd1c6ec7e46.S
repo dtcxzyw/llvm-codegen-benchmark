@@ -1,73 +1,65 @@
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
+func0000000000000061:
 	sub	x8, x1, #1
 	and	x8, x8, #0x3fffffffffffffff
 	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
+
+func00000000000001e1:
 	sub	x8, x1, #1
 	and	x8, x8, #0x1fffffffffffffff
 	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
+
+func0000000000000005:
 	add	x8, x1, #4095
 	and	x8, x8, #0xfffffffffffff000
 	sub	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, ls
 	ret
-                                        // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
+
+func0000000000000004:
 	add	x8, x1, #7
 	and	x8, x8, #0xfffffffffffffff8
 	add	x8, x8, #24
 	cmp	x8, x0
 	cset	w0, lo
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	add	x8, x1, #16, lsl #12            // =65536
+
+func0000000000000008:
+	add	x8, x1, #16, lsl #12
 	add	x8, x8, #15
 	and	x8, x8, #0xffffffffffff0000
 	sub	x8, x8, #16
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
+
+func0000000000000041:
 	sub	x8, x1, #1
 	and	x8, x8, #0x7fffffffffffffff
 	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func0000000000000141:                   // @func0000000000000141
-// %bb.0:                               // %entry
+
+func0000000000000141:
 	sub	x8, x1, #1
 	and	x8, x8, #0x7fffffffffffffff
 	add	x8, x8, #1
 	cmp	x8, x0
 	cset	w0, eq
 	ret
-                                        // -- End function
-func00000000000001e8:                   // @func00000000000001e8
-// %bb.0:                               // %entry
+
+func00000000000001e8:
 	add	w8, w1, #1
 	and	x8, x8, #0xfffffffe
 	add	x8, x8, #8
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
+

@@ -1,6 +1,6 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
+	imulq	$715827883, %rax, %rax
 	movq	%rax, %rcx
 	shrq	$63, %rcx
 	shrq	$33, %rax
@@ -9,7 +9,8 @@ func0000000000000021:                   # @func0000000000000021
 	testb	$3, %al
 	sete	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+
+func0000000000000034:
 	leal	255(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -18,3 +19,4 @@ func0000000000000034:                   # @func0000000000000034
 	testb	$-32, %al
 	sete	%al
 	retq
+

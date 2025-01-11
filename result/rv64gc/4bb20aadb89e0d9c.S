@@ -1,4 +1,4 @@
-func000000000000000b:                   # @func000000000000000b
+func000000000000000b:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sgtz	a3, a2
@@ -8,12 +8,14 @@ func000000000000000b:                   # @func000000000000000b
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	bgtz	a2, .LBB1_2
 	li	a2, 1
-.LBB1_2:                                # %entry
+.LBB1_2:
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

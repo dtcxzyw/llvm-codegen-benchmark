@@ -1,35 +1,39 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
-	vbroadcastsd	.LCPI0_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
+	.quad	1
+func0000000000000021:
+	vbroadcastsd	.LCPI0_0(%rip), %ymm2
 	vptestmq	%ymm0, %ymm0, %k1
 	vorpd	%ymm2, %ymm1, %ymm2 {%k1}
 	vmovapd	%ymm2, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	34359737855999                  # 0x1f3ffff82fff
+	.quad	34359737855999
 .LCPI1_1:
-	.quad	4294967237                      # 0xffffffc5
+	.quad	4294967237
 .LCPI1_2:
-	.quad	5                               # 0x5
-func0000000000000028:                   # @func0000000000000028
+	.quad	5
+func0000000000000028:
 	vpcmpleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
-	vbroadcastsd	.LCPI1_1(%rip), %ymm0   # ymm0 = [4294967237,4294967237,4294967237,4294967237]
+	vbroadcastsd	.LCPI1_1(%rip), %ymm0
 	vorpd	.LCPI1_2(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq
+
 .LCPI2_0:
-	.quad	46079                           # 0xb3ff
-func0000000000000001:                   # @func0000000000000001
-	vbroadcastsd	.LCPI2_0(%rip), %ymm2   # ymm2 = [46079,46079,46079,46079]
+	.quad	46079
+func0000000000000001:
+	vbroadcastsd	.LCPI2_0(%rip), %ymm2
 	vptestmq	%ymm0, %ymm0, %k1
 	vorpd	%ymm2, %ymm1, %ymm2 {%k1}
 	vmovapd	%ymm2, %ymm0
 	retq
+
 .LCPI3_0:
-	.quad	8                               # 0x8
+	.quad	8
 .LCPI3_1:
-	.quad	-9223372036854775808            # 0x8000000000000000
-func0000000000000024:                   # @func0000000000000024
+	.quad	-9223372036854775808
+func0000000000000024:
 	vpcmpnltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
 	vorpd	.LCPI3_1(%rip){1to4}, %ymm1, %ymm0 {%k1} {z}
 	retq
+

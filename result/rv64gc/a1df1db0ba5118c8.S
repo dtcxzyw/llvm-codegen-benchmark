@@ -1,4 +1,4 @@
-func0000000000003a34:                   # @func0000000000003a34
+func0000000000003a34:
 	add	a1, a1, a2
 	srli	a1, a1, 24
 	seqz	a1, a1
@@ -6,9 +6,10 @@ func0000000000003a34:                   # @func0000000000003a34
 	addw	a0, a0, a1
 	sltiu	a0, a0, 255
 	ret
+
 .LCPI1_0:
-	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func000000000000242a:                   # @func000000000000242a
+	.quad	999999999999999999
+func000000000000242a:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a1, a1, a2
@@ -17,3 +18,4 @@ func000000000000242a:                   # @func000000000000242a
 	addiw	a0, a0, 18
 	sgtz	a0, a0
 	ret
+

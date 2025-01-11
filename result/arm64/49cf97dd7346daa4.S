@@ -1,6 +1,5 @@
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-	mov	x8, #45266                      // =0xb0d2
+func000000000000003f:
+	mov	x8, #45266
 	movk	x8, #56138, lsl #16
 	movk	x8, #9534, lsl #32
 	movk	x8, #30223, lsl #48
@@ -12,10 +11,9 @@ func000000000000003f:                   // @func000000000000003f
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
-	mov	x8, #-4294967296                // =0xffffffff00000000
+
+func000000000000002a:
+	mov	x8, #-4294967296
 	lsl	x9, x4, #32
 	umulh	x8, x4, x8
 	sub	x10, x9, x4
@@ -27,10 +25,9 @@ func000000000000002a:                   // @func000000000000002a
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
-	mov	x8, #-4294967297                // =0xfffffffeffffffff
+
+func0000000000000017:
+	mov	x8, #-4294967297
 	add	x9, x4, x4, lsl #32
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
@@ -42,10 +39,9 @@ func0000000000000017:                   // @func0000000000000017
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	mov	x8, #-4294967297                // =0xfffffffeffffffff
+
+func0000000000000000:
+	mov	x8, #-4294967297
 	add	x9, x4, x4, lsl #32
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
@@ -57,10 +53,9 @@ func0000000000000000:                   // @func0000000000000000
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
-	mov	x8, #-4294967297                // =0xfffffffeffffffff
+
+func0000000000000015:
+	mov	x8, #-4294967297
 	add	x9, x4, x4, lsl #32
 	add	x10, x5, x5, lsl #32
 	umulh	x8, x4, x8
@@ -72,10 +67,9 @@ func0000000000000015:                   // @func0000000000000015
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func000000000000003a:                   // @func000000000000003a
-// %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
+
+func000000000000003a:
+	mov	x8, #-1
 	neg	x9, x4
 	umulh	x8, x4, x8
 	adds	x9, x2, x9
@@ -84,10 +78,9 @@ func000000000000003a:                   // @func000000000000003a
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
-func000000000000003e:                   // @func000000000000003e
-// %bb.0:                               // %entry
-	mov	x8, #-1                         // =0xffffffffffffffff
+
+func000000000000003e:
+	mov	x8, #-1
 	neg	x9, x4
 	umulh	x8, x4, x8
 	adds	x9, x2, x9
@@ -96,4 +89,4 @@ func000000000000003e:                   // @func000000000000003e
 	adds	x0, x9, x0
 	adc	x1, x8, x1
 	ret
-                                        // -- End function
+

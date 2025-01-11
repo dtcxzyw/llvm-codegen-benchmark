@@ -1,4 +1,4 @@
-func0000000000002904:                   # @func0000000000002904
+func0000000000002904:
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	subq	%rdi, %rax
@@ -7,3 +7,4 @@ func0000000000002904:                   # @func0000000000002904
 	seta	%al
 	andb	%cl, %al
 	retq
+

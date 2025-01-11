@@ -1,7 +1,6 @@
-func0000000000000020:                   // @func0000000000000020
-// %bb.0:                               // %entry
-	mov	x8, #-41984                     // =0xffffffffffff5c00
-	mov	x9, #55081                      // =0xd729
+func0000000000000020:
+	mov	x8, #-41984
+	mov	x9, #55081
 	movk	x8, #10604, lsl #16
 	movk	x9, #17318, lsl #16
 	madd	x8, x1, x8, x0
@@ -14,11 +13,10 @@ func0000000000000020:                   // @func0000000000000020
 	add	w8, w8, w9
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
-func0000000000000029:                   // @func0000000000000029
-// %bb.0:                               // %entry
-	mov	x8, #-34560                     // =0xffffffffffff7900
-	mov	x9, #13531                      // =0x34db
+
+func0000000000000029:
+	mov	x8, #-34560
+	mov	x9, #13531
 	movk	x8, #64620, lsl #16
 	movk	x9, #55222, lsl #16
 	madd	x8, x1, x8, x0
@@ -29,11 +27,10 @@ func0000000000000029:                   // @func0000000000000029
 	add	x8, x9, x8, lsr #63
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	mov	x8, #-22528                     // =0xffffffffffffa800
-	mov	x9, #38067                      // =0x94b3
+
+func0000000000000021:
+	mov	x8, #-22528
+	mov	x9, #38067
 	movk	x8, #1976, lsl #16
 	movk	x9, #9942, lsl #16
 	movk	x8, #65522, lsl #32
@@ -45,11 +42,10 @@ func0000000000000021:                   // @func0000000000000021
 	add	x8, x9, x8, lsr #63
 	lsl	x0, x8, #1
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
-	mov	w8, #1000                       // =0x3e8
-	mov	x9, #56455                      // =0xdc87
+
+func0000000000000028:
+	mov	w8, #1000
+	mov	x9, #56455
 	madd	x8, x1, x8, x0
 	movk	x9, #64819, lsl #16
 	movk	x9, #43125, lsl #32
@@ -60,4 +56,4 @@ func0000000000000028:                   // @func0000000000000028
 	add	w8, w8, w9
 	lsl	x0, x8, #32
 	ret
-                                        // -- End function
+

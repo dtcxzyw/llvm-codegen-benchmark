@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	pushq	%rbx
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
@@ -82,9 +82,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpsubd	%ymm1, %ymm0, %ymm0
 	popq	%rbx
 	retq
+
 .LCPI1_0:
-	.long	7                               # 0x7
-func0000000000000000:                   # @func0000000000000000
+	.long	7
+func0000000000000000:
 	pushq	%rbx
 	vpextrd	$3, %xmm1, %eax
 	vpextrd	$3, %xmm2, %ecx
@@ -167,3 +168,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	popq	%rbx
 	retq
+

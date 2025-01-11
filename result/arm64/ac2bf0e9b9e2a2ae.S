@@ -1,5 +1,4 @@
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
+func0000000000000008:
 	add	x8, x2, #1
 	tst	w1, #0x1
 	lsr	x8, x8, #1
@@ -7,9 +6,8 @@ func0000000000000008:                   // @func0000000000000008
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
-func00000000000000c8:                   // @func00000000000000c8
-// %bb.0:                               // %entry
+
+func00000000000000c8:
 	add	x8, x2, #1
 	tst	w1, #0x1
 	lsr	x8, x8, #1
@@ -17,4 +15,4 @@ func00000000000000c8:                   // @func00000000000000c8
 	cmp	x8, x0
 	cset	w0, hi
 	ret
-                                        // -- End function
+

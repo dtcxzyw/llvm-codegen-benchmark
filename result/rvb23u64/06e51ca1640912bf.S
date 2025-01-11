@@ -1,4 +1,4 @@
-func0000000000000318:                   # @func0000000000000318
+func0000000000000318:
 	lui	a2, 1
 	addiw	a3, a2, -991
 	addiw	a2, a2, -1279
@@ -9,7 +9,8 @@ func0000000000000318:                   # @func0000000000000318
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000030c:                   # @func000000000000030c
+
+func000000000000030c:
 	li	a2, 1
 	li	a3, 3
 	bseti	a2, a2, 63
@@ -20,10 +21,12 @@ func000000000000030c:                   # @func000000000000030c
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000308:                   # @func0000000000000308
+
+func0000000000000308:
 	addi	a2, a1, -1
 	snez	a2, a2
 	sltiu	a1, a1, 3
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
+

@@ -1,5 +1,4 @@
-func0000000000000690:                   // @func0000000000000690
-// %bb.0:                               // %entry
+func0000000000000690:
 	lsl	x8, x2, #3
 	sub	x9, x1, #1
 	cmp	x9, #8
@@ -7,4 +6,4 @@ func0000000000000690:                   // @func0000000000000690
 	csel	x8, x9, x8, lo
 	sub	x0, x8, x0
 	ret
-                                        // -- End function
+

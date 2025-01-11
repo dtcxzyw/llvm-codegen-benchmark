@@ -1,4 +1,4 @@
-func0000000000000086:                   # @func0000000000000086
+func0000000000000086:
 	decb	%dl
 	cmpb	$2, %dl
 	setb	%cl
@@ -6,7 +6,8 @@ func0000000000000086:                   # @func0000000000000086
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	addb	$-42, %dl
 	cmpb	$18, %dl
 	setb	%cl
@@ -14,7 +15,8 @@ func0000000000000024:                   # @func0000000000000024
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+
+func0000000000000084:
 	addb	$-2, %dl
 	cmpb	$35, %dl
 	setb	%cl
@@ -22,3 +24,4 @@ func0000000000000084:                   # @func0000000000000084
 	setb	%al
 	andb	%cl, %al
 	retq
+

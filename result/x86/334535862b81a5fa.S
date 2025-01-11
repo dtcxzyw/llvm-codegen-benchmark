@@ -1,4 +1,4 @@
-func0000000000000484:                   # @func0000000000000484
+func0000000000000484:
 	addl	$-48, %esi
 	cmpl	$10, %esi
 	setb	%cl
@@ -6,3 +6,4 @@ func0000000000000484:                   # @func0000000000000484
 	setb	%al
 	andb	%cl, %al
 	retq
+

@@ -1,4 +1,4 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000000f4:
 	mv	a2, a0
 	andi	a1, a1, 255
 	lui	a0, 8
@@ -8,9 +8,10 @@ func00000000000000f4:                   # @func00000000000000f4
 	addiw	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 1131
-.LBB0_2:                                # %entry
+.LBB0_2:
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+
+func00000000000000f8:
 	andi	a1, a1, 255
 	slli	a1, a1, 8
 	or	a0, a0, a1
@@ -24,3 +25,4 @@ func00000000000000f8:                   # @func00000000000000f8
 	lui	a0, 2048
 	addiw	a0, a0, -256
 	ret
+

@@ -1,4 +1,4 @@
-func00000000000030ca:                   # @func00000000000030ca
+func00000000000030ca:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -7,7 +7,8 @@ func00000000000030ca:                   # @func00000000000030ca
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000034ca:                   # @func00000000000034ca
+
+func00000000000034ca:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -16,7 +17,8 @@ func00000000000034ca:                   # @func00000000000034ca
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000014ca:                   # @func00000000000014ca
+
+func00000000000014ca:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -25,3 +27,4 @@ func00000000000014ca:                   # @func00000000000014ca
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

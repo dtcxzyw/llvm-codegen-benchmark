@@ -1,4 +1,4 @@
-func00000000000008ca:                   # @func00000000000008ca
+func00000000000008ca:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setl	%cl
@@ -6,16 +6,18 @@ func00000000000008ca:                   # @func00000000000008ca
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000185:                   # @func0000000000000185
+
+func0000000000000185:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setbe	%cl
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	movl	$4294967295, %eax
 	cmpq	%rax, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+
+func000000000000008a:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setb	%cl
@@ -23,7 +25,8 @@ func000000000000008a:                   # @func000000000000008a
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000094a:                   # @func000000000000094a
+
+func000000000000094a:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setg	%cl
@@ -31,12 +34,14 @@ func000000000000094a:                   # @func000000000000094a
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+
+func00000000000000cc:
 	subq	%rdx, %rsi
 	cmpq	%rsi, %rdi
 	setl	%cl
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	movl	$4294967295, %eax
 	cmpq	%rax, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
+

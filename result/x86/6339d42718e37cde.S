@@ -1,9 +1,10 @@
-func0000000000000698:                   # @func0000000000000698
-	andl	$61440, %esi                    # imm = 0xF000
+func0000000000000698:
+	andl	$61440, %esi
 	orl	%esi, %edi
-	cmpl	$55296, %edi                    # imm = 0xD800
+	cmpl	$55296, %edi
 	setae	%cl
-	cmpl	$57344, %esi                    # imm = 0xE000
+	cmpl	$57344, %esi
 	setb	%al
 	andb	%cl, %al
 	retq
+

@@ -1,11 +1,12 @@
 .LCPI0_0:
-	.quad	0x413534e400000000              # double 1389796
+	.quad	0x413534e400000000
 .LCPI0_1:
-	.quad	0xc1dfffffffc00000              # double -2147483647
-func0000000000000000:                   # @func0000000000000000
+	.quad	0xc1dfffffffc00000
+func0000000000000000:
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vmovsd	.LCPI0_0(%rip), %xmm2           # xmm2 = [1.389796E+6,0.0E+0]
+	vmovsd	.LCPI0_0(%rip), %xmm2
 	vmulsd	%xmm2, %xmm0, %xmm0
-	vfmadd231sd	.LCPI0_1(%rip), %xmm1, %xmm0 # xmm0 = (xmm1 * mem) + xmm0
+	vfmadd231sd	.LCPI0_1(%rip), %xmm1, %xmm0
 	vmulsd	%xmm2, %xmm0, %xmm0
 	retq
+

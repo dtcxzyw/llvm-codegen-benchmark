@@ -1,22 +1,25 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	addi	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	addi	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	snez	a2, a2
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
+
 .LCPI3_0:
-	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
-func000000000000001b:                   # @func000000000000001b
+	.quad	768614336404564650
+func000000000000001b:
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
 	slti	a2, a2, 0
@@ -26,7 +29,8 @@ func000000000000001b:                   # @func000000000000001b
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret
-func0000000000000012:                   # @func0000000000000012
+
+func0000000000000012:
 	sltiu	a2, a2, -1025
 	li	a3, 33
 	czero.nez	a1, a1, a2
@@ -34,7 +38,8 @@ func0000000000000012:                   # @func0000000000000012
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000053:                   # @func0000000000000053
+
+func0000000000000053:
 	sltiu	a2, a2, 23
 	li	a3, 32
 	czero.nez	a1, a1, a2
@@ -42,12 +47,14 @@ func0000000000000053:                   # @func0000000000000053
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+
+func0000000000000023:
 	sltiu	a2, a2, 32
 	czero.eqz	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+
+func0000000000000013:
 	sltiu	a2, a2, 23
 	li	a3, 32
 	czero.nez	a1, a1, a2
@@ -55,7 +62,8 @@ func0000000000000013:                   # @func0000000000000013
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000063:                   # @func0000000000000063
+
+func0000000000000063:
 	srli	a2, a2, 11
 	bseti	a3, zero, 11
 	czero.eqz	a3, a3, a2
@@ -63,3 +71,4 @@ func0000000000000063:                   # @func0000000000000063
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
+

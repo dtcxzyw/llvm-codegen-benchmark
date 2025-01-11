@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	0x41efffffffe00000              # double 4294967295
-func0000000000000004:                   # @func0000000000000004
+	.quad	0x41efffffffe00000
+func0000000000000004:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	sext.w	a0, a0
@@ -8,3 +8,4 @@ func0000000000000004:                   # @func0000000000000004
 	fcvt.wu.d	a1, fa5, rtz
 	sltu	a0, a0, a1
 	ret
+

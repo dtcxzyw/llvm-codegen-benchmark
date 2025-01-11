@@ -1,20 +1,22 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000028:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
 	shll	$10, %eax
-	orq	$16704, %rax                    # imm = 0x4140
+	orq	$16704, %rax
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	cmpq	$1, %rsi
 	movl	$2, %eax
 	sbbq	$0, %rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	sete	%al
@@ -22,3 +24,4 @@ func000000000000002c:                   # @func000000000000002c
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
+

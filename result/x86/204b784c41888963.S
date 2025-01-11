@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000048:
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,4), %rax
 	subq	%rax, %rsi
@@ -6,3 +6,4 @@ func0000000000000048:                   # @func0000000000000048
 	seta	%al
 	andb	%dil, %al
 	retq
+

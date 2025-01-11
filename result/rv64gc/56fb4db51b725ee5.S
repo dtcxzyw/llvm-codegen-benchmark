@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002a:
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	srai	a1, a0, 63
@@ -9,7 +9,8 @@ func000000000000002a:                   # @func000000000000002a
 	mul	a0, a0, a1
 	srli	a0, a0, 37
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	srai	a1, a0, 63
@@ -20,3 +21,4 @@ func000000000000000a:                   # @func000000000000000a
 	mul	a0, a0, a1
 	srli	a0, a0, 37
 	ret
+

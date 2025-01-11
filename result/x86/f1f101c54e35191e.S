@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000021:
 	cmpb	$60, %sil
 	movl	$62, %eax
 	movl	$125, %ecx
@@ -6,7 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	cmpb	%cl, %dil
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+
+func0000000000000038:
 	cmpb	$-19, %sil
 	setne	%al
 	shlb	$5, %al
@@ -14,3 +15,4 @@ func0000000000000038:                   # @func0000000000000038
 	cmpb	%al, %dil
 	seta	%al
 	retq
+

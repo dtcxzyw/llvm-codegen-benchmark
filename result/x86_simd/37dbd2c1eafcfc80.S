@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	2                               # 0x2
+	.long	2
 .LCPI0_1:
-	.long	80                              # 0x50
-func0000000000000004:                   # @func0000000000000004
+	.long	80
+func0000000000000004:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
@@ -11,3 +11,4 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

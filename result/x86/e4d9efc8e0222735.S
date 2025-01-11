@@ -1,6 +1,7 @@
-func0000000000000002:                   # @func0000000000000002
-	testl	$1792, %edx                     # imm = 0x700
+func0000000000000002:
+	testl	$1792, %edx
 	sete	%al
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
+

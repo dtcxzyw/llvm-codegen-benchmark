@@ -1,5 +1,4 @@
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+func000000000000008c:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	cmp	w9, #95
@@ -11,9 +10,8 @@ func000000000000008c:                   // @func000000000000008c
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000082:                   // @func0000000000000082
-// %bb.0:                               // %entry
+
+func0000000000000082:
 	and	w8, w0, #0xff
 	orr	w9, w1, w2
 	cmp	w8, #58
@@ -24,9 +22,8 @@ func0000000000000082:                   // @func0000000000000082
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000102:                   // @func0000000000000102
-// %bb.0:                               // %entry
+
+func0000000000000102:
 	and	w8, w0, #0xff
 	orr	w10, w1, w2
 	cmp	w8, #77
@@ -37,4 +34,4 @@ func0000000000000102:                   // @func0000000000000102
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

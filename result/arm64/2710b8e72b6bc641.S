@@ -1,6 +1,5 @@
-func0000000000000144:                   // @func0000000000000144
-// %bb.0:                               // %entry
-	mov	x9, #28087                      // =0x6db7
+func0000000000000144:
+	mov	x9, #28087
 	sub	x8, x1, x2
 	movk	x9, #46811, lsl #16
 	lsr	x8, x8, #3
@@ -10,4 +9,4 @@ func0000000000000144:                   // @func0000000000000144
 	cmp	x8, #2
 	cset	w0, lo
 	ret
-                                        // -- End function
+

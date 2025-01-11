@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000050:
 	lui	a0, 16
 	addiw	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -8,7 +8,8 @@ func0000000000000050:                   # @func0000000000000050
 	vadd.vx	v10, v10, a0, v0.t
 	vor.vv	v8, v10, v8
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsltu.vx	v0, v12, a0
@@ -17,3 +18,4 @@ func0000000000000048:                   # @func0000000000000048
 	vadd.vx	v10, v10, a0, v0.t
 	vor.vv	v8, v8, v10
 	ret
+

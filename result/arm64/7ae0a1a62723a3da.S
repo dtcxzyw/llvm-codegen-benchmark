@@ -1,5 +1,4 @@
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
+func0000000000000181:
 	cmp	x2, #0
 	cset	w8, ne
 	cmp	x1, #2
@@ -8,9 +7,8 @@ func0000000000000181:                   // @func0000000000000181
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
+
+func000000000000018c:
 	cmp	x2, #0
 	cset	w8, ne
 	cmp	x1, #0
@@ -19,9 +17,8 @@ func000000000000018c:                   // @func000000000000018c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000014a:                   // @func000000000000014a
-// %bb.0:                               // %entry
+
+func000000000000014a:
 	cmp	x2, #0
 	cset	w8, gt
 	cmp	x1, #0
@@ -30,9 +27,8 @@ func000000000000014a:                   // @func000000000000014a
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
+
+func0000000000000021:
 	cmp	x2, #0
 	cset	w8, eq
 	cmp	x1, #0
@@ -41,9 +37,8 @@ func0000000000000021:                   // @func0000000000000021
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
+
+func0000000000000108:
 	cmp	x2, #255
 	cset	w8, hi
 	cmp	x1, #255
@@ -52,9 +47,8 @@ func0000000000000108:                   // @func0000000000000108
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000146:                   // @func0000000000000146
-// %bb.0:                               // %entry
+
+func0000000000000146:
 	cmp	x2, #0
 	cset	w8, ge
 	cmp	x1, #0
@@ -63,9 +57,8 @@ func0000000000000146:                   // @func0000000000000146
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000c6:                   // @func00000000000000c6
-// %bb.0:                               // %entry
+
+func00000000000000c6:
 	cmp	x2, #0
 	cset	w8, lt
 	cmp	x1, #0
@@ -74,9 +67,8 @@ func00000000000000c6:                   // @func00000000000000c6
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000081:                   // @func0000000000000081
-// %bb.0:                               // %entry
+
+func0000000000000081:
 	cmp	x2, #2
 	cset	w8, lo
 	cmn	x1, #1
@@ -85,12 +77,11 @@ func0000000000000081:                   // @func0000000000000081
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000ca:                   // @func00000000000000ca
-// %bb.0:                               // %entry
-	mov	x8, #-16777216                  // =0xffffffffff000000
+
+func00000000000000ca:
+	mov	x8, #-16777216
 	cmp	x2, x8
-	mov	w8, #16777216                   // =0x1000000
+	mov	w8, #16777216
 	cset	w9, lt
 	cmp	x1, x8
 	orr	w8, w9, w0
@@ -98,9 +89,8 @@ func00000000000000ca:                   // @func00000000000000ca
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000028:                   // @func0000000000000028
-// %bb.0:                               // %entry
+
+func0000000000000028:
 	cmn	x2, #1
 	cset	w8, eq
 	cmp	x1, #128
@@ -109,11 +99,10 @@ func0000000000000028:                   // @func0000000000000028
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
+
+func00000000000000c1:
 	cmp	x2, #1
-	mov	x8, #9223372036854775807        // =0x7fffffffffffffff
+	mov	x8, #9223372036854775807
 	cset	w9, lt
 	cmp	x1, x8
 	orr	w8, w9, w0
@@ -121,9 +110,8 @@ func00000000000000c1:                   // @func00000000000000c1
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
+
+func000000000000008c:
 	cmn	x2, #20
 	cset	w8, lo
 	cmp	x1, #0
@@ -132,4 +120,4 @@ func000000000000008c:                   // @func000000000000008c
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

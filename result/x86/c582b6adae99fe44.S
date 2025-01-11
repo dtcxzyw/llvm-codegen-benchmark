@@ -1,11 +1,12 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000038:
 	addl	%esi, %edi
 	negb	%dil
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rax
 	notq	%rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	addl	%esi, %edi
 	movb	$-54, %al
 	subb	%dil, %al
@@ -13,7 +14,8 @@ func0000000000000008:                   # @func0000000000000008
 	shlxq	%rax, %rcx, %rax
 	notq	%rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+
+func0000000000000018:
 	addl	%esi, %edi
 	movb	$-53, %al
 	subb	%dil, %al
@@ -21,3 +23,4 @@ func0000000000000018:                   # @func0000000000000018
 	shlxq	%rax, %rcx, %rax
 	notq	%rax
 	retq
+

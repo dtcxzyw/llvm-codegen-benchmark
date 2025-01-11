@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000000f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -16,7 +16,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+
+func00000000000000f4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -33,7 +34,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	bseti	a0, zero, 31
 	vmsltu.vx	v0, v8, a0
 	ret
-func00000000000000ec:                   # @func00000000000000ec
+
+func00000000000000ec:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -49,9 +51,10 @@ func00000000000000ec:                   # @func00000000000000ec
 	vor.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
 	ret
+
 .LCPI3_0:
-	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000088:                   # @func0000000000000088
+	.quad	1844674407370955161
+func0000000000000088:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
@@ -69,3 +72,4 @@ func0000000000000088:                   # @func0000000000000088
 	vadd.vv	v8, v10, v8
 	vmsgtu.vx	v0, v8, a0
 	ret
+

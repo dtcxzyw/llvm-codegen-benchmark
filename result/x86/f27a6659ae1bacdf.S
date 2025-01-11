@@ -1,4 +1,4 @@
-func0000000000003024:                   # @func0000000000003024
+func0000000000003024:
 	addq	$24, %rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
@@ -7,7 +7,8 @@ func0000000000003024:                   # @func0000000000003024
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000d01:                   # @func0000000000000d01
+
+func0000000000000d01:
 	addq	$-7, %rdx
 	cmpq	$-6, %rdx
 	setb	%cl
@@ -16,3 +17,4 @@ func0000000000000d01:                   # @func0000000000000d01
 	sete	%al
 	andb	%cl, %al
 	retq
+

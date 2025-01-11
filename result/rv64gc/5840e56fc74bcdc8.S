@@ -1,4 +1,4 @@
-func00000000000004ca:                   # @func00000000000004ca
+func00000000000004ca:
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -7,3 +7,4 @@ func00000000000004ca:                   # @func00000000000004ca
 	not	a1, a2
 	and	a0, a0, a1
 	ret
+

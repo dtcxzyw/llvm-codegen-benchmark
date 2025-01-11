@@ -1,4 +1,4 @@
-func000000000000000f:                   # @func000000000000000f
+func000000000000000f:
 	vpand	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
@@ -8,3 +8,4 @@ func000000000000000f:                   # @func000000000000000f
 	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+

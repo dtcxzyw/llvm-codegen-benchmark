@@ -1,6 +1,6 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	addq	%rsi, %rdi
-	movabsq	$-8130577079664715991, %rcx     # imm = 0x8F2A633943A6D729
+	movabsq	$-8130577079664715991, %rcx
 	movq	%rdi, %rax
 	imulq	%rcx
 	addq	%rdi, %rdx
@@ -10,9 +10,10 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%eax, %edx
 	movslq	%edx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+
+func0000000000000011:
 	leaq	(%rdi,%rsi), %rax
-	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957
+	movabsq	$1749024623285053783, %rcx
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -20,3 +21,4 @@ func0000000000000011:                   # @func0000000000000011
 	addl	%eax, %edx
 	movslq	%edx, %rax
 	retq
+

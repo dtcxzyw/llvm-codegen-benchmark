@@ -1,4 +1,4 @@
-func00000000000002a6:                   # @func00000000000002a6
+func00000000000002a6:
 	addw	a0, a0, a1
 	li	a1, 98
 	blt	a0, a1, .LBB0_2
@@ -9,7 +9,8 @@ func00000000000002a6:                   # @func00000000000002a6
 	li	a1, 52
 	addw	a0, a0, a1
 	ret
-func00000000000006f4:                   # @func00000000000006f4
+
+func00000000000006f4:
 	addw	a0, a0, a1
 	li	a1, 98
 	bltu	a0, a1, .LBB1_2
@@ -20,7 +21,8 @@ func00000000000006f4:                   # @func00000000000006f4
 	li	a1, 52
 	addw	a0, a0, a1
 	ret
-func00000000000002f4:                   # @func00000000000002f4
+
+func00000000000002f4:
 	addw	a0, a0, a1
 	li	a1, 628
 	bltu	a0, a1, .LBB2_2
@@ -31,7 +33,8 @@ func00000000000002f4:                   # @func00000000000002f4
 	li	a1, 1372
 	addw	a0, a0, a1
 	ret
-func00000000000002aa:                   # @func00000000000002aa
+
+func00000000000002aa:
 	addw	a0, a0, a1
 	lui	a1, 1048400
 	addiw	a1, a1, 1427
@@ -45,3 +48,4 @@ func00000000000002aa:                   # @func00000000000002aa
 	addi	a1, a1, -1428
 	addw	a0, a0, a1
 	ret
+

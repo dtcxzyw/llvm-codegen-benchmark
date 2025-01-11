@@ -1,4 +1,4 @@
-func00000000000000ab:                   # @func00000000000000ab
+func00000000000000ab:
 	vpsraq	$3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -6,16 +6,18 @@ func00000000000000ab:                   # @func00000000000000ab
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
+
 .LCPI1_0:
-	.quad	256                             # 0x100
-func00000000000000fb:                   # @func00000000000000fb
+	.quad	256
+func00000000000000fb:
 	vpsraq	$3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000002b:                   # @func000000000000002b
+
+func000000000000002b:
 	vpsraq	$3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -23,7 +25,8 @@ func000000000000002b:                   # @func000000000000002b
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000007b:                   # @func000000000000007b
+
+func000000000000007b:
 	vpsraq	$1, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -31,7 +34,8 @@ func000000000000007b:                   # @func000000000000007b
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000079:                   # @func0000000000000079
+
+func0000000000000079:
 	vpsraq	$3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -39,7 +43,8 @@ func0000000000000079:                   # @func0000000000000079
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
-func00000000000000eb:                   # @func00000000000000eb
+
+func00000000000000eb:
 	vpsraq	$6, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -47,7 +52,8 @@ func00000000000000eb:                   # @func00000000000000eb
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000006b:                   # @func000000000000006b
+
+func000000000000006b:
 	vpsraq	$3, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -55,3 +61,4 @@ func000000000000006b:                   # @func000000000000006b
 	vpmaxuq	%ymm1, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
+

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000a:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	zext.h	a2, a2
@@ -8,3 +8,4 @@ func000000000000000a:                   # @func000000000000000a
 	or	a1, a1, a2
 	slt	a0, a1, a0
 	ret
+

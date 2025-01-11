@@ -1,6 +1,5 @@
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	w8, #52429                      // =0xcccd
+func0000000000000004:
+	mov	w8, #52429
 	movk	w8, #15820, lsl #16
 	fmov	s2, w8
 	fmul	s1, s1, s2
@@ -9,10 +8,9 @@ func0000000000000004:                   // @func0000000000000004
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	w8, #55050                      // =0xd70a
+
+func0000000000000008:
+	mov	w8, #55050
 	movk	w8, #15395, lsl #16
 	fmov	s2, w8
 	fmul	s1, s1, s2
@@ -21,9 +19,8 @@ func0000000000000008:                   // @func0000000000000008
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+
+func000000000000001a:
 	movi	v2.2s, #52, lsl #24
 	fmul	s1, s1, s2
 	fcmp	s0, s1
@@ -31,9 +28,8 @@ func000000000000001a:                   // @func000000000000001a
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
+
+func0000000000000014:
 	movi	v2.2s, #52, lsl #24
 	fmul	s1, s1, s2
 	fcmp	s0, s1
@@ -41,10 +37,9 @@ func0000000000000014:                   // @func0000000000000014
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #52429                      // =0xcccd
+
+func0000000000000006:
+	mov	w8, #52429
 	movk	w8, #16204, lsl #16
 	fmov	s2, w8
 	fmul	s1, s1, s2
@@ -53,4 +48,4 @@ func0000000000000006:                   // @func0000000000000006
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
-                                        // -- End function
+

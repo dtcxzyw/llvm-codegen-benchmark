@@ -1,4 +1,4 @@
-func0000000000001861:                   # @func0000000000001861
+func0000000000001861:
 	incl	%edx
 	testb	%sil, %sil
 	movl	$9, %eax
@@ -6,7 +6,8 @@ func0000000000001861:                   # @func0000000000001861
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000861:                   # @func0000000000000861
+
+func0000000000000861:
 	addl	$-8, %edx
 	cmpb	$-1, %sil
 	movl	$8, %eax
@@ -14,3 +15,4 @@ func0000000000000861:                   # @func0000000000000861
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+

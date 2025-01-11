@@ -1,14 +1,12 @@
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
+func000000000000001a:
 	fmov	s1, w0
 	fcmp	s0, s1
 	cset	w0, le
 	ret
-                                        // -- End function
-func000000000000005a:                   // @func000000000000005a
-// %bb.0:                               // %entry
+
+func000000000000005a:
 	fmov	s1, w0
 	fcmp	s0, s1
 	cset	w0, le
 	ret
-                                        // -- End function
+

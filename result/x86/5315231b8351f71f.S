@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
@@ -7,3 +7,4 @@ func0000000000000007:                   # @func0000000000000007
 	movl	$-131, %eax
 	cmovnel	%ecx, %eax
 	retq
+

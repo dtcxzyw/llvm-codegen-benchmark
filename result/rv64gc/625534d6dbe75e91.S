@@ -1,4 +1,4 @@
-func000000000000018c:                   # @func000000000000018c
+func000000000000018c:
 	slli	a1, a1, 48
 	li	a3, 15
 	srli	a1, a1, 48
@@ -10,7 +10,8 @@ func000000000000018c:                   # @func000000000000018c
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+
+func000000000000002c:
 	slli	a1, a1, 48
 	andi	a2, a2, 896
 	srli	a1, a1, 48
@@ -20,7 +21,8 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+
+func000000000000008c:
 	slli	a1, a1, 48
 	slli	a2, a2, 48
 	lui	a3, 1
@@ -35,3 +37,4 @@ func000000000000008c:                   # @func000000000000008c
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+

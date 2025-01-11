@@ -1,8 +1,9 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	addi	a0, a0, 24
 	seqz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+
+func0000000000000008:
 	li	a1, 4
 	maxu	a0, a0, a1
 	li	a1, -1
@@ -11,23 +12,27 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 62
 	sltiu	a0, a0, 3
 	ret
-func0000000000000004:                   # @func0000000000000004
+
+func0000000000000004:
 	li	a1, 7
 	maxu	a0, a0, a1
 	addi	a0, a0, -4
 	sltiu	a0, a0, 92
 	ret
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	li	a1, 8
 	maxu	a0, a0, a1
 	addi	a0, a0, -1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000006:                   # @func0000000000000006
+
+func0000000000000006:
 	lui	a1, 4
 	addiw	a1, a1, -256
 	maxu	a0, a0, a1
 	addi	a0, a0, 256
 	srli	a0, a0, 63
 	ret
+

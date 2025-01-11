@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	cmpl	$-1, %esi
 	movl	$8, %ecx
 	cmovnel	%esi, %ecx
@@ -8,3 +8,4 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$9, %eax
 	cmovel	%ecx, %eax
 	retq
+

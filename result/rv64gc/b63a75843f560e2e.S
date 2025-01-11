@@ -1,11 +1,12 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000007:
 	andi	a2, a2, 2
 	andi	a1, a1, 1
 	xori	a1, a1, 5
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+
+func0000000000000002:
 	andi	a3, a1, 1
 	lui	a1, 240
 	addiw	a1, a1, 1
@@ -18,11 +19,12 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a2, a2, 1409
 	slli	a2, a2, 32
 	srli	a2, a2, 19
-.LBB1_2:                                # %entry
+.LBB1_2:
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
+
+func0000000000000003:
 	lui	a3, 240
 	andi	a1, a1, 1
 	addiw	a3, a3, 1
@@ -33,3 +35,4 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

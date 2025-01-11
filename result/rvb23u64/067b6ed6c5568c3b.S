@@ -1,4 +1,4 @@
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000001e1:
 	li	a1, -97
 	zext.w	a1, a1
 	add	a0, a0, a1
@@ -7,7 +7,8 @@ func00000000000001e1:                   # @func00000000000001e1
 	bext	a0, a1, a0
 	seqz	a0, a0
 	ret
-func00000000000001c1:                   # @func00000000000001c1
+
+func00000000000001c1:
 	li	a1, -184
 	zext.w	a1, a1
 	add	a0, a0, a1
@@ -18,3 +19,4 @@ func00000000000001c1:                   # @func00000000000001c1
 	bext	a0, a1, a0
 	seqz	a0, a0
 	ret
+

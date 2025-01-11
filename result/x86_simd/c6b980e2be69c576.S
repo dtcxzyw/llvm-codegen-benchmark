@@ -1,10 +1,11 @@
 .LCPI0_0:
-	.long	0x3f1645a2                      # float 0.587000012
+	.long	0x3f1645a2
 .LCPI0_1:
-	.long	0x3e991687                      # float 0.298999995
-func0000000000000000:                   # @func0000000000000000
+	.long	0x3e991687
+func0000000000000000:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
-	vpmovzxbd	%xmm0, %zmm0            # zmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero,xmm0[8],zero,zero,zero,xmm0[9],zero,zero,zero,xmm0[10],zero,zero,zero,xmm0[11],zero,zero,zero,xmm0[12],zero,zero,zero,xmm0[13],zero,zero,zero,xmm0[14],zero,zero,zero,xmm0[15],zero,zero,zero
+	vpmovzxbd	%xmm0, %zmm0
 	vcvtdq2ps	%zmm0, %zmm0
-	vfmadd132ps	.LCPI0_1(%rip){1to16}, %zmm1, %zmm0 # zmm0 = (zmm0 * mem) + zmm1
+	vfmadd132ps	.LCPI0_1(%rip){1to16}, %zmm1, %zmm0
 	retq
+

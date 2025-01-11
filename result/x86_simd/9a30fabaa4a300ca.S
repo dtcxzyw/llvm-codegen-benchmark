@@ -1,6 +1,6 @@
 .LCPI0_0:
-	.quad	3                               # 0x3
-func000000000000010a:                   # @func000000000000010a
+	.quad	3
+func000000000000010a:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -8,9 +8,10 @@ func000000000000010a:                   # @func000000000000010a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.quad	3                               # 0x3
-func000000000000014a:                   # @func000000000000014a
+	.quad	3
+func000000000000014a:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$4, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -18,3 +19,4 @@ func000000000000014a:                   # @func000000000000014a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

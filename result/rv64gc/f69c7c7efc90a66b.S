@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	andi	a2, a2, 1
 	andi	a0, a0, 1
 	bnez	a2, .LBB0_2
@@ -17,3 +17,4 @@ func000000000000001c:                   # @func000000000000001c
 	sllw	a0, a2, a0
 	or	a0, a0, a1
 	ret
+

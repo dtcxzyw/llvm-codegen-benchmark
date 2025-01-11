@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000001:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	addi	a1, a1, -9
@@ -6,7 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+
+func0000000000000021:
 	andi	a1, a1, 255
 	addi	a2, a2, -1
 	addi	a1, a1, -42
@@ -14,7 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000041:                   # @func0000000000000041
+
+func0000000000000041:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	addi	a1, a1, -93
@@ -22,7 +24,8 @@ func0000000000000041:                   # @func0000000000000041
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000024:                   # @func0000000000000024
+
+func0000000000000024:
 	andi	a1, a1, 255
 	addi	a2, a2, -87
 	sltiu	a1, a1, 10
@@ -30,7 +33,8 @@ func0000000000000024:                   # @func0000000000000024
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000048:                   # @func0000000000000048
+
+func0000000000000048:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	sltiu	a1, a1, 64
@@ -38,7 +42,8 @@ func0000000000000048:                   # @func0000000000000048
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+
+func000000000000000c:
 	andi	a1, a1, 255
 	addi	a2, a2, 2
 	addi	a1, a1, -47
@@ -46,7 +51,8 @@ func000000000000000c:                   # @func000000000000000c
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+
+func0000000000000044:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	sltiu	a1, a1, 254
@@ -54,7 +60,8 @@ func0000000000000044:                   # @func0000000000000044
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000061:                   # @func0000000000000061
+
+func0000000000000061:
 	andi	a1, a1, 255
 	addi	a2, a2, 1
 	addi	a1, a1, -10
@@ -62,3 +69,4 @@ func0000000000000061:                   # @func0000000000000061
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
+

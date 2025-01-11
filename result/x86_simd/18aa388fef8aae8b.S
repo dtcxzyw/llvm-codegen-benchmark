@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
-func00000000000001e4:                   # @func00000000000001e4
+	.quad	-6148914691236517205
+func00000000000001e4:
 	vpsraq	$2, %ymm2, %ymm2
-	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [12297829382473034411,12297829382473034411,12297829382473034411,12297829382473034411]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
@@ -11,3 +11,4 @@ func00000000000001e4:                   # @func00000000000001e4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+

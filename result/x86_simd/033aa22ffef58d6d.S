@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000002:
 	vmulpd	%zmm4, %zmm2, %zmm2
 	vmulpd	%zmm5, %zmm3, %zmm3
 	vxorpd	%xmm4, %xmm4, %xmm4
@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	vmulpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm3, %zmm1, %zmm1
 	retq
-func000000000000000a:                   # @func000000000000000a
+
+func000000000000000a:
 	vmulpd	%zmm5, %zmm3, %zmm3
 	vmulpd	%zmm4, %zmm2, %zmm2
 	vxorpd	%xmm4, %xmm4, %xmm4
@@ -18,3 +19,4 @@ func000000000000000a:                   # @func000000000000000a
 	vmulpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm3, %zmm1, %zmm1
 	retq
+

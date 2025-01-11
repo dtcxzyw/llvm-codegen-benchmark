@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000001c:
 	vpmovdw	%ymm1, %xmm2
 	vpsllw	$8, %xmm0, %xmm3
 	vpsubw	%xmm0, %xmm3, %xmm0
@@ -45,18 +45,19 @@ func000000000000001c:                   # @func000000000000001c
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
+
 .LCPI1_0:
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-	.short	10                              # 0xa
-func0000000000000000:                   # @func0000000000000000
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+	.short	10
+func0000000000000000:
 	vpmovdw	%ymm1, %xmm2
-	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0    # [10,10,10,10,10,10,10,10]
+	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$1, %xmm2, %ecx
 	xorl	%edx, %edx
@@ -100,3 +101,4 @@ func0000000000000000:                   # @func0000000000000000
 	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vzeroupper
 	retq
+
