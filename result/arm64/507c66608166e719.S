@@ -20,10 +20,10 @@ func0000000000001c68:
 
 func000000000000132a:
 	mov	w8, #16959
-	cmp	x1, #0
+	adds	x9, x1, #1
 	movk	w8, #15, lsl #16
-	add	x9, x1, x8
-	csinc	x9, x1, x9, ge
+	add	x9, x9, x8
+	csel	x9, x9, x1, le
 	add	x9, x9, x0
 	cmp	x9, x8
 	cset	w0, gt

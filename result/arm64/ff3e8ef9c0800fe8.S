@@ -7,17 +7,15 @@ func0000000000000141:
 	ret
 
 func0000000000000144:
-	add	x8, x0, x1
-	cmp	x1, #3
-	sub	x8, x8, #3
+	subs	x8, x1, #3
+	add	x8, x8, x0
 	csel	x0, x0, x8, lo
 	ret
 
 func0000000000000001:
-	add	x8, x0, x1
-	cmp	x1, #0
-	sub	x8, x8, #1
-	csel	x0, x0, x8, eq
+	subs	x8, x1, #1
+	add	x8, x8, x0
+	csel	x0, x0, x8, lo
 	ret
 
 func0000000000000004:
