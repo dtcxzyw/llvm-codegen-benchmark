@@ -28,8 +28,17 @@ func0000000000000007:
 	.long	2
 	.long	3
 	.long	3
+.LCPI3_1:
+	.byte	0
+	.byte	0
+	.byte	1
+	.byte	1
+	.byte	2
+	.byte	2
+	.byte	3
+	.byte	3
 func0000000000000002:
-	vmovaps	.LCPI3_0(%rip), %ymm1
+	vpmovsxbd	.LCPI3_1(%rip), %ymm1
 	vpermps	%ymm0, %ymm1, %ymm0
 	retq
 

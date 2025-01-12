@@ -9,9 +9,18 @@
 	.long	2
 	.long	3
 	.long	3
+.LCPI0_2:
+	.byte	0
+	.byte	0
+	.byte	1
+	.byte	1
+	.byte	2
+	.byte	2
+	.byte	3
+	.byte	3
 func000000000000000a:
 	vorps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
-	vmovaps	.LCPI0_1(%rip), %ymm1
+	vpmovsxbd	.LCPI0_2(%rip), %ymm1
 	vpermps	%ymm0, %ymm1, %ymm0
 	retq
 
@@ -46,9 +55,18 @@ func0000000000000007:
 	.long	2
 	.long	3
 	.long	3
+.LCPI3_2:
+	.byte	0
+	.byte	0
+	.byte	1
+	.byte	1
+	.byte	2
+	.byte	2
+	.byte	3
+	.byte	3
 func000000000000000f:
 	vorps	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
-	vmovaps	.LCPI3_1(%rip), %ymm1
+	vpmovsxbd	.LCPI3_2(%rip), %ymm1
 	vpermps	%ymm0, %ymm1, %ymm0
 	retq
 
@@ -63,9 +81,18 @@ func000000000000000f:
 	.long	2
 	.long	3
 	.long	3
+.LCPI4_2:
+	.byte	0
+	.byte	0
+	.byte	1
+	.byte	1
+	.byte	2
+	.byte	2
+	.byte	3
+	.byte	3
 func0000000000000002:
 	vorps	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
-	vmovaps	.LCPI4_1(%rip), %ymm1
+	vpmovsxbd	.LCPI4_2(%rip), %ymm1
 	vpermps	%ymm0, %ymm1, %ymm0
 	retq
 

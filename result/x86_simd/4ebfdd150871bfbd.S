@@ -7,8 +7,17 @@
 	.long	10
 	.long	6
 	.long	11
+.LCPI0_1:
+	.byte	0
+	.byte	8
+	.byte	2
+	.byte	9
+	.byte	4
+	.byte	10
+	.byte	6
+	.byte	11
 func0000000000000005:
-	vmovaps	.LCPI0_0(%rip), %ymm2
+	vpmovsxbd	.LCPI0_1(%rip), %ymm2
 	vpermi2ps	%ymm0, %ymm1, %ymm2
 	vmovaps	%ymm2, %ymm0
 	retq
@@ -22,8 +31,17 @@ func0000000000000005:
 	.long	10
 	.long	6
 	.long	11
+.LCPI1_1:
+	.byte	0
+	.byte	8
+	.byte	2
+	.byte	9
+	.byte	4
+	.byte	10
+	.byte	6
+	.byte	11
 func000000000000000f:
-	vmovaps	.LCPI1_0(%rip), %ymm2
+	vpmovsxbd	.LCPI1_1(%rip), %ymm2
 	vpermi2ps	%ymm0, %ymm1, %ymm2
 	vmovaps	%ymm2, %ymm0
 	retq
