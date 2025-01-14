@@ -58,9 +58,9 @@ func00000000000000c0:
 	ret
 
 func0000000000000051:
-	li	a2, 63
-	bseti	a2, a2, 63
-	and	a1, a1, a2
+	li	a2, -127
+	srli	a2, a2, 1
+	andn	a1, a1, a2
 	sgtz	a1, a1
 	add	a0, a0, a1
 	ret

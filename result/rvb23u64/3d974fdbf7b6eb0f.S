@@ -32,11 +32,10 @@ func0000000000000029:
 	addi	a3, a3, -256
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
-	li	a3, -1
-	slli	a3, a3, 32
-	addi	a3, a3, 255
+	li	a3, -256
+	zext.w	a3, a3
 	or	a1, a1, a2
-	and	a0, a0, a3
+	andn	a0, a0, a3
 	add.uw	a0, a1, a0
 	ret
 

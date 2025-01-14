@@ -137,12 +137,13 @@ func0000000000000588:
 	ret
 
 func0000000000000421:
-	li	a3, 1
-	bseti	a3, a3, 63
-	xor	a2, a2, a3
-	xor	a1, a1, a3
+	li	a3, -3
+	binvi	a0, a0, 0
+	srli	a3, a3, 1
+	xnor	a2, a2, a3
+	xnor	a1, a1, a3
 	or	a1, a1, a2
-	xor	a0, a0, a3
+	binvi	a0, a0, 63
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

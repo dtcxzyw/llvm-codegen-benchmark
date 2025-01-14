@@ -12,11 +12,11 @@ func00000000000000a8:
 	addiw	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	li	a2, 63
-	bseti	a2, a2, 63
+	li	a2, -127
+	srli	a2, a2, 1
 	mul	a0, a0, a1
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
 	ret

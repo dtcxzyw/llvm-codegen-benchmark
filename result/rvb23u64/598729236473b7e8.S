@@ -1,7 +1,7 @@
 func0000000000000441:
-	li	a3, 63
-	bseti	a3, a3, 63
-	and	a2, a2, a3
+	li	a3, -127
+	srli	a3, a3, 1
+	andn	a2, a2, a3
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
 	li	a3, -8

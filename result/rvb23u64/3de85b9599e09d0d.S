@@ -1,10 +1,9 @@
 func0000000000000201:
 	sll	a1, a1, a2
-	li	a2, -1
+	lui	a2, 1048544
 	add	a0, a0, a1
-	slli	a2, a2, 56
-	addi	a1, a2, 511
-	and	a0, a0, a1
+	srli	a2, a2, 8
+	andn	a0, a0, a2
 	seqz	a0, a0
 	ret
 

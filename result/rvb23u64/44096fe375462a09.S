@@ -8,11 +8,11 @@ func000000000000000f:
 
 func000000000000001f:
 	sext.w	a2, a2
-	lui	a3, 1015808
+	li	a3, -31
 	slli	a0, a0, 32
-	slli	a4, a3, 32
-	add.uw	a3, a3, a4
-	and	a1, a1, a3
+	slli.uw	a3, a3, 27
+	addi	a3, a3, -1
+	andn	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

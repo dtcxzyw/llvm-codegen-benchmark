@@ -4,11 +4,11 @@ func0000000000000003:
 	li	a3, 3
 	slli	a3, a3, 11
 	czero.eqz	a1, a3, a1
-	lui	a3, 1048574
-	addiw	a3, a3, 1911
-	bclri	a3, a3, 39
+	lui	a3, 2
+	addiw	a3, a3, -1912
+	bseti	a3, a3, 39
 	or	a1, a1, a2
-	and	a0, a0, a3
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	addi	a0, a0, 128
 	ret

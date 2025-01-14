@@ -27,9 +27,9 @@ func0000000000000014:
 
 func0000000000000008:
 	sub	a1, a1, a0
-	li	a0, 63
-	bseti	a0, a0, 63
-	and	a0, a0, a1
+	li	a0, -127
+	srli	a0, a0, 1
+	andn	a0, a1, a0
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
 	ret

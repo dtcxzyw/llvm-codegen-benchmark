@@ -77,10 +77,11 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	li	a3, 1
-	bseti	a3, a3, 63
-	xor	a2, a2, a3
-	xor	a1, a1, a3
+	li	a3, -3
+	binvi	a1, a1, 0
+	srli	a3, a3, 1
+	xnor	a2, a2, a3
+	binvi	a1, a1, 63
 	or	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

@@ -1,12 +1,12 @@
 func0000000000000000:
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
-	lui	a2, 526344
-	addi	a2, a2, 128
+	lui	a2, 522232
+	addiw	a2, a2, -129
 	add	a0, a0, a1
 	slli	a1, a2, 32
-	add.uw	a1, a2, a1
-	and	a0, a0, a1
+	add	a1, a1, a2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000001:

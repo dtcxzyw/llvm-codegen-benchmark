@@ -34,9 +34,9 @@ func0000000000000018:
 	ret
 
 func000000000000000a:
-	li	a2, 7
-	bseti	a2, a2, 63
-	and	a1, a1, a2
+	li	a2, -15
+	srli	a2, a2, 1
+	andn	a1, a1, a2
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret

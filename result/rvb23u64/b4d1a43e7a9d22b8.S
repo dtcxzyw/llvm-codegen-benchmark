@@ -1,9 +1,8 @@
 func0000000000000006:
 	bset	a0, zero, a0
-	li	a1, 7
-	slli	a1, a1, 60
-	addi	a1, a1, 1
-	and	a0, a0, a1
+	li	a1, -24
+	rori	a1, a1, 4
+	andn	a0, a0, a1
 	ret
 
 func0000000000000007:

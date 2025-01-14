@@ -1,8 +1,7 @@
 func0000000000000001:
-	li	a3, -1
-	slli	a3, a3, 32
-	addi	a3, a3, 1
-	and	a2, a2, a3
+	li	a3, -2
+	zext.w	a3, a3
+	andn	a2, a2, a3
 	lui	a3, 32768
 	addiw	a3, a3, 5
 	slli	a3, a3, 10

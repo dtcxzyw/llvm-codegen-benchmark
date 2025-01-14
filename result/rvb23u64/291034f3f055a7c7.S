@@ -21,10 +21,10 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	lui	a2, 532479
-	addiw	a2, a2, 2047
-	bclri	a2, a2, 31
-	and	a1, a1, a2
+	lui	a2, 508
+	addiw	a2, a2, 1
+	slli	a2, a2, 11
+	andn	a1, a1, a2
 	lui	a2, 8192
 	add	a0, a0, a2
 	or	a0, a0, a1

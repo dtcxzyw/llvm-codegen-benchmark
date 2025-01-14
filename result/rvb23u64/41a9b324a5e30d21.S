@@ -39,9 +39,9 @@ func0000000000000000:
 func0000000000000008:
 	add	a1, a1, a2
 	srai	a0, a0, 32
-	li	a2, 63
+	li	a2, -127
 	add	a0, a0, a1
-	bseti	a1, a2, 63
-	and	a0, a0, a1
+	srli	a2, a2, 1
+	andn	a0, a0, a2
 	ret
 

@@ -6,9 +6,9 @@ func0000000000000000:
 
 func0000000000000001:
 	sub	a0, a0, a1
-	li	a1, 63
+	li	a1, -127
 	add.uw	a0, a2, a0
-	bseti	a1, a1, 63
-	and	a0, a0, a1
+	srli	a1, a1, 1
+	andn	a0, a0, a1
 	ret
 

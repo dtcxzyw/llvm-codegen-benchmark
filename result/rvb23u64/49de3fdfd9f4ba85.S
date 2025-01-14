@@ -29,12 +29,12 @@ func0000000000000000:
 	addiw	a1, a1, 257
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	lui	a2, 526344
-	addi	a2, a2, 128
+	lui	a2, 522232
+	addiw	a2, a2, -129
 	mul	a0, a0, a1
 	slli	a1, a2, 32
-	add.uw	a1, a2, a1
-	or	a0, a0, a1
+	add	a1, a1, a2
+	orn	a0, a0, a1
 	ret
 
 func0000000000000006:

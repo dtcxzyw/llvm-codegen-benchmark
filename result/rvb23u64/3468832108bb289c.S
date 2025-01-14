@@ -10,10 +10,9 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	li	a3, -1
-	slli	a3, a3, 32
-	addi	a3, a3, 3
-	and	a2, a2, a3
+	li	a3, -4
+	zext.w	a3, a3
+	andn	a2, a2, a3
 	lui	a3, 32767
 	slli	a3, a3, 5
 	andn	a1, a1, a3

@@ -14,12 +14,12 @@ func0000000000000004:
 
 func0000000000000000:
 	or	a0, a0, a1
-	lui	a1, 526344
+	lui	a1, 522232
 	addi	a0, a0, 1
-	addi	a1, a1, 128
+	addiw	a1, a1, -129
 	slli	a2, a1, 32
-	add.uw	a1, a1, a2
-	and	a0, a0, a1
+	add	a1, a1, a2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000003:

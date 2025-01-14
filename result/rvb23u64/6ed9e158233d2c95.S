@@ -22,9 +22,9 @@ func0000000000000015:
 func0000000000000004:
 	srai	a2, a2, 32
 	mul	a1, a1, a2
-	li	a2, 63
+	li	a2, -127
 	add	a0, a0, a1
-	bseti	a1, a2, 63
-	and	a0, a0, a1
+	srli	a2, a2, 1
+	andn	a0, a0, a2
 	ret
 

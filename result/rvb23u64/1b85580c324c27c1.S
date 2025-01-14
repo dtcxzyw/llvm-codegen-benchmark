@@ -9,10 +9,10 @@ func0000000000000008:
 
 func000000000000001f:
 	slli	a2, a2, 61
-	lui	a3, 786432
-	slli	a4, a3, 32
-	add.uw	a3, a3, a4
-	and	a1, a1, a3
+	li	a3, -3
+	slli.uw	a3, a3, 30
+	addi	a3, a3, -1
+	andn	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

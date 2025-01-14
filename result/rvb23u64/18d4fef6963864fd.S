@@ -20,9 +20,10 @@ func000000000000006f:
 
 func000000000000001b:
 	add	a1, a1, a2
-	lui	a2, 815559
+	lui	a2, 946631
 	addi	a2, a2, 455
-	and	a1, a1, a2
+	slli	a2, a2, 3
+	andn	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a1, a0, 12
 	addw	a0, a0, a1

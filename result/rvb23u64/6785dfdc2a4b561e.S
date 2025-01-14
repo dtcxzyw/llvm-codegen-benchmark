@@ -15,9 +15,9 @@ func0000000000000001:
 	addi	a2, a2, -1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
-	li	a1, 63
+	li	a1, -127
 	or	a0, a0, a2
-	bseti	a1, a1, 63
-	and	a0, a0, a1
+	srli	a1, a1, 1
+	andn	a0, a0, a1
 	ret
 

@@ -105,17 +105,17 @@ func000000000000002c:
 
 func000000000000002a:
 	addi	a0, a0, 1
-	li	a1, 7
-	bseti	a1, a1, 63
-	and	a0, a0, a1
+	li	a1, -15
+	srli	a1, a1, 1
+	andn	a0, a0, a1
 	sgtz	a0, a0
 	ret
 
 func000000000000006a:
 	addi	a0, a0, 1
-	li	a1, 7
-	bseti	a1, a1, 63
-	and	a0, a0, a1
+	li	a1, -15
+	srli	a1, a1, 1
+	andn	a0, a0, a1
 	sgtz	a0, a0
 	ret
 
