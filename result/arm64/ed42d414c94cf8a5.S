@@ -1,24 +1,25 @@
 func0000000000000003:
-	lsl	w8, w0, #3
-	sub	w8, w8, #16
-	and	x0, x8, #0x7f8
+	sub	w8, w0, #2
+	and	x8, x8, #0xff
+	lsl	x0, x8, #3
 	ret
 
 func000000000000001f:
-	lsl	w8, w0, #2
-	add	w8, w8, #4
-	and	x0, x8, #0x3fc
+	add	w8, w0, #1
+	and	x8, x8, #0xff
+	lsl	x0, x8, #2
 	ret
 
 func0000000000000007:
 	sub	w8, w0, #9
-	ubfiz	x0, x8, #28, #8
+	and	x8, x8, #0xff
+	lsl	x0, x8, #28
 	ret
 
 func000000000000000b:
-	lsl	w8, w0, #3
-	sub	w8, w8, #784
-	and	x0, x8, #0x7f8
+	sub	w8, w0, #98
+	and	x8, x8, #0xff
+	lsl	x0, x8, #3
 	ret
 
 func000000000000001b:
@@ -28,8 +29,8 @@ func000000000000001b:
 	ret
 
 func000000000000000f:
-	lsl	w8, w0, #3
-	sub	w8, w8, #384
-	and	x0, x8, #0x7f8
+	sub	w8, w0, #48
+	and	x8, x8, #0xff
+	lsl	x0, x8, #3
 	ret
 

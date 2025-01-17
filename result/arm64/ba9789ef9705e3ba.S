@@ -5,10 +5,10 @@ func0000000000000003:
 	ret
 
 func000000000000001f:
-	ubfiz	w8, w2, #12, #16
-	and	w9, w1, #0xfffc0000
-	orr	w9, w9, w0
-	orr	w0, w9, w8
+	and	w8, w1, #0xfffc0000
+	and	w9, w2, #0xffff
+	orr	w8, w8, w0
+	orr	w0, w8, w9, lsl #12
 	ret
 
 func0000000000000009:

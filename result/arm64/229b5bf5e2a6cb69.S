@@ -1,5 +1,6 @@
 func00000000000000e4:
-	ubfiz	w8, w1, #2, #16
+	and	w8, w1, #0xffff
+	lsl	w8, w8, #2
 	cmp	x0, x8
 	cset	w0, lo
 	ret

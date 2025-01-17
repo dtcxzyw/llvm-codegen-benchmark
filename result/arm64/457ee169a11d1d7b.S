@@ -10,7 +10,8 @@ func000000000000000f:
 	ret
 
 func0000000000000006:
-	lsr	x8, x0, #4
+	and	x8, x0, #0xfff0
+	lsr	x8, x8, #4
 	mov	w0, #1048575
 	bfi	x0, x8, #20, #12
 	ret

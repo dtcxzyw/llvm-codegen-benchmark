@@ -1,7 +1,7 @@
 func000000000000001f:
-	ubfiz	w8, w1, #6, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w0, w8, w9
+	orr	w0, w9, w8, lsl #6
 	ret
 
 func0000000000000007:
@@ -20,9 +20,9 @@ func000000000000001d:
 	ret
 
 func000000000000000f:
-	ubfiz	w8, w1, #3, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w0, w8, w9
+	orr	w0, w9, w8, lsl #3
 	ret
 
 func0000000000000005:
@@ -31,9 +31,9 @@ func0000000000000005:
 	ret
 
 func0000000000000006:
-	ubfiz	w8, w1, #4, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w0, w8, w9
+	orr	w0, w9, w8, lsl #4
 	ret
 
 func000000000000000d:
@@ -42,14 +42,14 @@ func000000000000000d:
 	ret
 
 func000000000000001e:
-	ubfiz	w8, w1, #6, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w0, w8, w9
+	orr	w0, w9, w8, lsl #6
 	ret
 
 func0000000000000016:
-	ubfiz	w8, w1, #4, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w0, w8, w9
+	orr	w0, w9, w8, lsl #4
 	ret
 

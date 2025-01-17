@@ -17,14 +17,14 @@ func0000000000000008:
 	ret
 
 func000000000000001e:
+	mov	w8, #16384
 	mov	w9, #16384
-	mov	w10, #16384
-	ubfiz	w8, w2, #16, #8
 	tst	w1, #0x1
-	movk	w9, #32, lsl #16
-	movk	w10, #32800, lsl #16
-	csel	w9, w10, w9, ne
-	orr	w8, w9, w8
+	movk	w8, #32, lsl #16
+	movk	w9, #32800, lsl #16
+	and	w10, w2, #0xff
+	csel	w8, w9, w8, ne
+	orr	w8, w8, w10, lsl #16
 	orr	w0, w0, w8
 	ret
 

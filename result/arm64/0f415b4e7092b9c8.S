@@ -6,14 +6,14 @@ func000000000000001f:
 
 func0000000000000007:
 	orr	w8, w1, w2
-	lsl	w8, w8, #16
-	orr	x0, x8, x0
+	and	x8, x8, #0xffff
+	orr	x0, x0, x8, lsl #16
 	ret
 
 func0000000000000017:
 	orr	w8, w1, w2
-	lsl	w8, w8, #16
-	orr	x0, x8, x0
+	and	x8, x8, #0xffff
+	orr	x0, x0, x8, lsl #16
 	ret
 
 func0000000000000015:

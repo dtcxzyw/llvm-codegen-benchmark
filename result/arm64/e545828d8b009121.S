@@ -11,9 +11,9 @@ func00000000000000ac:
 	ret
 
 func00000000000000c1:
-	ubfiz	w8, w1, #8, #16
+	and	w8, w1, #0xffff
 	and	w9, w0, #0xffff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #8
 	cmp	w8, #3584
 	cset	w0, eq
 	ret

@@ -4,8 +4,8 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	ubfiz	w8, w2, #16, #8
-	eor	w9, w1, w0
-	eor	w0, w9, w8
+	and	w8, w2, #0xff
+	eor	w8, w1, w8, lsl #16
+	eor	w0, w8, w0
 	ret
 

@@ -1,5 +1,6 @@
 func0000000000000006:
-	ubfiz	x8, x1, #4, #1
+	and	x8, x1, #0x1
+	lsl	x8, x8, #4
 	orr	x8, x8, x2, lsl #5
 	add	x0, x0, x8
 	ret
@@ -16,20 +17,22 @@ func0000000000000004:
 	ret
 
 func000000000000000f:
-	lsl	x8, x2, #1
-	and	x8, x8, #0x70
+	and	x8, x2, #0x38
+	lsl	x8, x8, #1
 	orr	x8, x8, x1, lsl #7
 	add	x0, x0, x8
 	ret
 
 func000000000000000e:
-	ubfiz	x8, x2, #2, #1
+	and	x8, x2, #0x1
+	lsl	x8, x8, #2
 	orr	x8, x8, x1, lsl #3
 	add	x0, x0, x8
 	ret
 
 func0000000000000016:
-	ubfiz	x8, x1, #3, #2
+	and	x8, x1, #0x3
+	lsl	x8, x8, #3
 	orr	x8, x8, x2, lsl #5
 	add	x0, x0, x8
 	ret

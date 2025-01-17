@@ -18,16 +18,16 @@ func0000000000000030:
 	ret
 
 func0000000000000038:
-	ubfiz	w8, w2, #16, #8
+	and	w8, w2, #0xff
 	orr	w9, w0, w1
-	orr	w8, w9, w8
+	orr	w8, w9, w8, lsl #16
 	orr	w0, w8, #0xc00
 	ret
 
 func0000000000000019:
-	ubfiz	w8, w2, #4, #8
+	and	w8, w2, #0xff
 	orr	w9, w0, w1
-	orr	w8, w9, w8
+	orr	w8, w9, w8, lsl #4
 	orr	w0, w8, #0x3f0000
 	ret
 

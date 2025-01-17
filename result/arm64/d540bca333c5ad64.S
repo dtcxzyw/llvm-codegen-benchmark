@@ -30,6 +30,7 @@ func0000000000000008:
 func0000000000000003:
 	and	w8, w1, #0x8000
 	orr	w8, w0, w8
-	ubfiz	w0, w8, #13, #16
+	and	w8, w8, #0xffff
+	lsl	w0, w8, #13
 	ret
 

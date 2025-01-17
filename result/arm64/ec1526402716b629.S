@@ -1,6 +1,6 @@
 func00000000000001a1:
-	ubfiz	w8, w2, #8, #8
-	orr	w8, w8, w0
+	and	w8, w2, #0xff
+	orr	w8, w0, w8, lsl #8
 	cmp	w8, w1, uxtb
 	cset	w0, eq
 	ret

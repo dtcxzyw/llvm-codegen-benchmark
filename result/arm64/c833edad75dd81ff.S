@@ -1,9 +1,9 @@
 func000000000000001f:
-	ubfiz	x8, x2, #8, #8
+	and	x8, x2, #0xff
 	tst	w1, #0x1
 	mov	w9, #3
+	orr	x8, x0, x8, lsl #8
 	cinc	x9, x9, eq
-	orr	x8, x8, x0
 	orr	x0, x8, x9
 	ret
 

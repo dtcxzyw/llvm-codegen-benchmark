@@ -1,5 +1,6 @@
 func000000000000001f:
-	ubfiz	w0, w0, #3, #16
+	and	w8, w0, #0xffff
+	lsl	w0, w8, #3
 	bfi	w0, w1, #19, #8
 	ret
 

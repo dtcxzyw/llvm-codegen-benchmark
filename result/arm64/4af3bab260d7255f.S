@@ -1,9 +1,11 @@
 func0000000000000003:
-	ubfiz	x0, x0, #1, #16
+	and	x8, x0, #0xffff
+	lsl	x0, x8, #1
 	ret
 
 func0000000000000007:
-	ubfiz	x0, x0, #20, #16
+	and	x8, x0, #0xffff
+	lsl	x0, x8, #20
 	ret
 
 func0000000000000000:

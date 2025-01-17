@@ -4,8 +4,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	ubfiz	x8, x1, #10, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xffff
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #10
 	ret
 

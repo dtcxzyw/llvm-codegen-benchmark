@@ -23,9 +23,9 @@ func000000000000001e:
 	ret
 
 func000000000000001b:
-	ubfiz	w8, w2, #4, #8
+	and	w8, w2, #0xff
 	and	w9, w1, #0xff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #4
 	add	w0, w0, w8
 	ret
 

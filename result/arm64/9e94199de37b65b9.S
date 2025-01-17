@@ -1,6 +1,6 @@
 func000000000000001e:
-	ubfiz	w8, w1, #8, #8
-	orr	w8, w8, w0
+	and	w8, w1, #0xff
+	orr	w8, w0, w8, lsl #8
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b
@@ -8,8 +8,8 @@ func000000000000001e:
 	ret
 
 func000000000000001c:
-	ubfiz	w8, w1, #8, #8
-	orr	w8, w0, w8
+	and	w8, w1, #0xff
+	orr	w8, w0, w8, lsl #8
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
 	addv	b0, v0.8b

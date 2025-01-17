@@ -3,12 +3,12 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	lsl	w8, w0, #24
-	and	w0, w8, #0xe0000000
+	and	w8, w0, #0xe0
+	lsl	w0, w8, #24
 	ret
 
 func000000000000000f:
-	lsl	w8, w0, #6
-	and	w0, w8, #0x3f00
+	and	w8, w0, #0xfc
+	lsl	w0, w8, #6
 	ret
 

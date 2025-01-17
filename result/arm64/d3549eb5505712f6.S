@@ -27,9 +27,9 @@ func00000000000000f4:
 	ret
 
 func00000000000003e1:
-	ubfiz	w8, w1, #6, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #6
 	cmp	w8, #10
 	cset	w0, eq
 	ret
@@ -49,9 +49,9 @@ func00000000000001ac:
 	ret
 
 func00000000000000d8:
-	ubfiz	w8, w1, #4, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #4
 	cmp	w8, #100
 	cset	w0, hi
 	ret
@@ -71,9 +71,9 @@ func00000000000002e1:
 	ret
 
 func00000000000003f4:
-	ubfiz	w8, w1, #6, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #6
 	cmp	w8, #272
 	cset	w0, lo
 	ret
@@ -86,9 +86,9 @@ func00000000000002f8:
 	ret
 
 func00000000000001e1:
-	ubfiz	w8, w1, #2, #8
+	and	w8, w1, #0xff
 	and	w9, w0, #0xff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #2
 	cmp	w8, #0
 	cset	w0, eq
 	ret

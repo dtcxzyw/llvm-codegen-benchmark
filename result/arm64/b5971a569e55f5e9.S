@@ -5,11 +5,13 @@ func0000000000000002:
 
 func0000000000000003:
 	add	w8, w0, w1
-	ubfiz	w0, w8, #2, #16
+	and	w8, w8, #0xffff
+	lsl	w0, w8, #2
 	ret
 
 func000000000000001f:
 	add	w8, w0, w1
-	ubfiz	w0, w8, #6, #16
+	and	w8, w8, #0xffff
+	lsl	w0, w8, #6
 	ret
 

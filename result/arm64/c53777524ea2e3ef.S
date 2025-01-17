@@ -1,7 +1,8 @@
 func0000000000000018:
+	and	x8, x1, #0xff
 	mov	x9, #144680345676153346
-	ubfiz	x8, x1, #3, #8
 	tst	w0, #0x1
+	lsl	x8, x8, #3
 	movk	x9, #1
 	movk	x9, #1, lsl #48
 	lsr	x8, x9, x8

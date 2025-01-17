@@ -3,13 +3,15 @@ func000000000000000f:
 	ret
 
 func0000000000000005:
-	lsr	w8, w1, #4
+	and	w8, w1, #0xfffff0
 	and	w0, w0, #0xff
+	lsr	w8, w8, #4
 	bfi	w0, w8, #12, #20
 	ret
 
 func0000000000000007:
-	lsr	w8, w1, #7
+	and	w8, w1, #0x80
+	lsr	w8, w8, #7
 	bfi	w0, w8, #10, #1
 	ret
 

@@ -9,26 +9,26 @@ func0000000000000017:
 	ret
 
 func000000000000001f:
-	ubfiz	x8, x1, #6, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xff
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #6
 	ret
 
 func000000000000000f:
-	ubfiz	x8, x1, #2, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xff
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #2
 	ret
 
 func0000000000000006:
-	ubfiz	x8, x1, #6, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xff
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #6
 	ret
 
 func000000000000001e:
-	ubfiz	x8, x1, #4, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xff
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #4
 	ret
 

@@ -8,7 +8,7 @@ func0000000000000017:
 	and	w8, w2, #0xff
 	cmp	w8, #246
 	csel	w8, w1, w2, eq
-	ubfiz	w8, w8, #8, #8
-	orr	w0, w8, w0
+	and	w8, w8, #0xff
+	orr	w0, w0, w8, lsl #8
 	ret
 

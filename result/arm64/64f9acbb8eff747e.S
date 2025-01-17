@@ -6,23 +6,23 @@ func0000000000000014:
 	ret
 
 func0000000000000019:
-	ubfiz	w8, w1, #8, #16
+	and	w8, w1, #0xffff
 	and	w9, w0, #0xffff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #8
 	sub	w0, w8, #3072
 	ret
 
 func000000000000003f:
-	ubfiz	w8, w1, #10, #16
+	and	w8, w1, #0xffff
 	and	w9, w0, #0xffff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #10
 	add	w0, w8, #16, lsl #12
 	ret
 
 func000000000000001f:
-	ubfiz	w8, w1, #10, #16
+	and	w8, w1, #0xffff
 	and	w9, w0, #0xffff
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #10
 	add	w0, w8, #16, lsl #12
 	ret
 

@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	ubfiz	w8, w1, #8, #16
-	orr	w8, w0, w8
+	and	w8, w1, #0xffff
+	orr	w8, w0, w8, lsl #8
 	sxtw	x0, w8
 	ret
 

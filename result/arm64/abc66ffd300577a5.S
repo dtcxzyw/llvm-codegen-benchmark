@@ -4,19 +4,20 @@ func000000000000000e:
 	ret
 
 func0000000000000007:
-	orr	w8, w0, w1, lsl #8
-	and	x0, x8, #0xfffe
+	and	x8, x1, #0xff
+	and	x9, x0, #0xfffe
+	orr	x0, x9, x8, lsl #8
 	ret
 
 func0000000000000006:
-	ubfiz	x8, x1, #8, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xffffffffffff
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #8
 	ret
 
 func000000000000000f:
-	ubfiz	x8, x1, #15, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xffffffffffffdfff
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #15
 	ret
 

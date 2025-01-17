@@ -17,9 +17,9 @@ func0000000000000033:
 	ret
 
 func000000000000001b:
-	ubfiz	w8, w2, #8, #16
+	and	w8, w2, #0xffff
 	and	w9, w1, #0xff
-	orr	w9, w0, w9
-	orr	w0, w9, w8
+	orr	w8, w0, w8, lsl #8
+	orr	w0, w8, w9
 	ret
 

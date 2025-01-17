@@ -5,8 +5,8 @@ func0000000000000019:
 	ret
 
 func000000000000003f:
-	ubfiz	x8, x2, #8, #8
+	and	x8, x2, #0xff
 	add	x9, x0, x1
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #8
 	ret
 

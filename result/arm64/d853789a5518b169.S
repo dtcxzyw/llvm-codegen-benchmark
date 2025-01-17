@@ -7,6 +7,7 @@ func000000000000000a:
 func000000000000000b:
 	and	w8, w1, #0xff
 	orr	w8, w0, w8
-	ubfiz	w0, w8, #2, #16
+	and	w8, w8, #0xffff
+	lsl	w0, w8, #2
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000000f:
-	ubfiz	x8, x2, #1, #8
+	and	x8, x2, #0xff
 	orr	x9, x0, x1
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #1
 	ret
 
 func000000000000000b:
@@ -10,9 +10,9 @@ func000000000000000b:
 	ret
 
 func000000000000000e:
-	ubfiz	x8, x2, #8, #8
+	and	x8, x2, #0xff
 	orr	x9, x0, x1
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #8
 	ret
 
 func0000000000000008:
@@ -21,9 +21,9 @@ func0000000000000008:
 	ret
 
 func000000000000001f:
-	ubfiz	x8, x2, #14, #8
+	and	x8, x2, #0xff
 	orr	x9, x0, x1
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #14
 	ret
 
 func000000000000001e:
@@ -66,9 +66,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	ubfiz	x8, x2, #16, #8
+	and	x8, x2, #0xff
 	orr	x9, x0, x1
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #16
 	ret
 
 func0000000000000018:

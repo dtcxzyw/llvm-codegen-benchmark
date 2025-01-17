@@ -1,13 +1,14 @@
 func000000000000002f:
-	ubfiz	x8, x1, #16, #8
+	and	x8, x1, #0xff
+	lsl	x8, x8, #16
 	bfi	x8, x0, #24, #7
 	mov	x0, x8
 	ret
 
 func000000000000003f:
 	ubfiz	x8, x1, #30, #1
-	lsl	w9, w0, #24
-	orr	x0, x9, x8
+	and	x9, x0, #0xff
+	orr	x0, x8, x9, lsl #24
 	ret
 
 func0000000000000021:

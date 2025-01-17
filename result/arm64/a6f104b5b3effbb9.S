@@ -1,8 +1,8 @@
 func000000000000001f:
-	ubfiz	x9, x1, #2, #16
-	mov	w8, #16777216
-	orr	x9, x0, x9
-	add	x0, x9, x8
+	and	x8, x1, #0xffff
+	mov	w9, #16777216
+	orr	x8, x0, x8, lsl #2
+	add	x0, x8, x9
 	ret
 
 func000000000000001d:

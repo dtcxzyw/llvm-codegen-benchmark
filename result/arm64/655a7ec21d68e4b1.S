@@ -4,8 +4,8 @@ func000000000000002b:
 	ret
 
 func000000000000003f:
-	ubfiz	w8, w2, #4, #8
-	orr	w8, w8, w1
+	and	w8, w2, #0xff
+	orr	w8, w1, w8, lsl #4
 	add	x0, x0, w8, uxth
 	ret
 
@@ -20,8 +20,8 @@ func000000000000000c:
 	ret
 
 func000000000000003c:
-	ubfiz	w8, w2, #1, #8
-	orr	w8, w8, w1
+	and	w8, w2, #0xff
+	orr	w8, w1, w8, lsl #1
 	add	x0, x0, w8, uxth
 	ret
 

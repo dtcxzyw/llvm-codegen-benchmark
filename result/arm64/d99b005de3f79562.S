@@ -1,6 +1,7 @@
 func0000000000000003:
-	ubfiz	w8, w1, #16, #8
+	and	w8, w1, #0xff
 	tst	w0, #0x1
+	lsl	w8, w8, #16
 	csel	w0, w8, wzr, ne
 	ret
 

@@ -1,5 +1,6 @@
 func000000000000000d:
-	ubfiz	w8, w0, #13, #16
+	and	w8, w0, #0xffff
+	lsl	w8, w8, #13
 	clz	w0, w8
 	ret
 

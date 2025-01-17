@@ -5,18 +5,18 @@ func000000000000002e:
 	ret
 
 func0000000000000036:
-	ubfiz	w8, w2, #8, #8
+	and	w8, w2, #0xff
 	mov	w9, #16
+	orr	w8, w0, w8, lsl #8
 	sub	w9, w9, w1
-	orr	w8, w8, w0
 	lsr	w0, w8, w9
 	ret
 
 func000000000000003e:
-	ubfiz	w8, w2, #8, #8
+	and	w8, w2, #0xff
 	mov	w9, #16
+	orr	w8, w0, w8, lsl #8
 	sub	w9, w9, w1
-	orr	w8, w8, w0
 	lsr	w0, w8, w9
 	ret
 

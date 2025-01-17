@@ -48,9 +48,9 @@ func00000000000002f4:
 	ret
 
 func00000000000000c1:
-	ubfiz	x8, x1, #6, #8
+	and	x8, x1, #0xff
 	and	x9, x0, #0xff
-	orr	x8, x8, x9
+	orr	x8, x9, x8, lsl #6
 	cmp	x8, #0
 	cset	w0, eq
 	ret
