@@ -38,9 +38,8 @@ func0000000000000006:
 
 func0000000000000026:
 	mov	w8, #1
-	cmp	w1, #1
-	sub	w8, w8, w1
-	csel	w0, w0, w8, lt
+	subs	w8, w8, w1
+	csel	w0, w0, w8, gt
 	ret
 
 func0000000000000078:
@@ -52,9 +51,8 @@ func0000000000000078:
 
 func0000000000000038:
 	mov	w8, #1
-	cmp	w1, #1
-	sub	w8, w8, w1
-	csel	w0, w0, w8, hi
+	subs	w8, w8, w1
+	csel	w0, w0, w8, lo
 	ret
 
 func0000000000000046:

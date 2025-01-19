@@ -1,8 +1,7 @@
 func0000000000000074:
 	mov	w8, #508
-	cmp	x0, #508
-	sub	x8, x8, x0
-	csinc	x0, x8, xzr, lo
+	subs	x8, x8, x0
+	csinc	x0, x8, xzr, hi
 	ret
 
 func0000000000000006:

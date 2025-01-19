@@ -30,9 +30,8 @@ func0000000000000d46:
 func000000000000054a:
 	mov	w8, #65519
 	movk	w8, #32767, lsl #16
-	sub	w9, w8, w0
-	cmp	w0, w8
-	ccmp	w1, w9, #0, le
+	subs	w8, w8, w0
+	ccmp	w1, w8, #0, ge
 	cset	w0, gt
 	ret
 

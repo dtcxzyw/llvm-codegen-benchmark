@@ -1,17 +1,15 @@
 func00000000000004ca:
 	mov	w8, #1
-	cmp	w1, #1
-	sub	w8, w8, w1
-	csel	w8, w8, w0, lt
+	subs	w8, w8, w1
+	csel	w8, w8, w0, gt
 	cmp	w8, #99
 	cset	w0, gt
 	ret
 
 func00000000000004c6:
 	mov	w8, #1
-	cmp	w1, #1
-	sub	w8, w8, w1
-	csel	w8, w8, w0, lt
+	subs	w8, w8, w1
+	csel	w8, w8, w0, gt
 	cmp	w8, #4
 	cset	w0, lt
 	ret
