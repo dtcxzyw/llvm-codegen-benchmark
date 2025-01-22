@@ -4,8 +4,7 @@ func0000000000000004:
 	li	a0, 1013
 	vmacc.vx	v8, a0, v12
 	lui	a0, 524288
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000000:
@@ -15,8 +14,7 @@ func0000000000000000:
 	addi	a0, a0, -1431
 	vmacc.vx	v8, a0, v12
 	lui	a0, 524288
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000030:
@@ -24,9 +22,8 @@ func0000000000000030:
 	vadd.vv	v8, v8, v10
 	li	a0, 3
 	vmacc.vx	v8, a0, v12
-	lui	a0, 2
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048574
+	vandn.vx	v8, v8, a0
 	ret
 
 func000000000000003f:

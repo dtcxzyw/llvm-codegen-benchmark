@@ -6,10 +6,9 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	lui	a0, 4096
-	addiw	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	li	a0, -1
 	srli	a0, a0, 32
 	vmerge.vxm	v8, v8, a0, v0

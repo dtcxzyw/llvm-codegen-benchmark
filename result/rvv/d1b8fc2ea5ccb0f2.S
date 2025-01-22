@@ -1,9 +1,8 @@
 func000000000000001f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 22
-	lui	a0, 524544
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 524032
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	lui	a0, 247552
 	vadd.vx	v8, v8, a0
@@ -12,9 +11,8 @@ func000000000000001f:
 func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 23
-	lui	a0, 2048
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1046528
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	lui	a0, 258048
 	vadd.vx	v8, v8, a0
@@ -25,9 +23,8 @@ func000000000000000a:
 	vsll.vi	v10, v10, 20
 	lui	a0, 13824
 	vadd.vx	v10, v10, a0
-	lui	a0, 524544
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 524032
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 
@@ -51,10 +48,10 @@ func0000000000000009:
 func0000000000000011:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 12
-	lui	a0, 1
-	addi	a1, a0, -1
-	vand.vx	v8, v8, a1
+	lui	a0, 1048575
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
+	lui	a0, 1
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -63,9 +60,8 @@ func0000000000000010:
 	vsll.vi	v10, v10, 16
 	lui	a0, 16
 	vadd.vx	v10, v10, a0
-	lui	a0, 786448
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 262128
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 
@@ -74,9 +70,8 @@ func000000000000001e:
 	vsll.vi	v10, v10, 17
 	lui	a0, 32
 	vadd.vx	v10, v10, a0
-	lui	a0, 1046560
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 2016
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 
@@ -85,20 +80,17 @@ func0000000000000000:
 	vsll.vi	v10, v10, 23
 	lui	a0, 2048
 	vadd.vx	v10, v10, a0
-	lui	a0, 1034240
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 14336
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 
 func000000000000001b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
+	vor.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -115,11 +107,9 @@ func0000000000000007:
 func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
+	vor.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	ret
 

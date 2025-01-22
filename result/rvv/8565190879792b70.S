@@ -4,8 +4,7 @@ func0000000000000004:
 	li	a0, 1619
 	vmadd.vx	v10, a0, v8
 	lui	a0, 524288
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	ret
 
 func000000000000003a:

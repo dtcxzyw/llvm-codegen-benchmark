@@ -20,10 +20,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a0, -6
-	rori	a0, a0, 35
+	li	a0, 5
+	slli	a0, a0, 29
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 131072
 	vor.vx	v8, v8, a0, v0.t
 	bseti	a0, zero, 31
@@ -37,12 +37,11 @@ func0000000000000001:
 	vmv.v.x	v10, a0
 	lui	a0, 131072
 	vmerge.vxm	v10, v10, a0, v0
-	lui	a0, 969727
+	lui	a0, 78849
 	slli	a0, a0, 4
-	addi	a0, a0, -1
+	addi	a0, a0, 1
 	slli	a0, a0, 13
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	li	a0, 9
 	vor.vv	v8, v8, v10
 	slli	a0, a0, 39

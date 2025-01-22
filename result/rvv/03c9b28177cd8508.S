@@ -33,10 +33,9 @@ func0000000000000021:
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 262144
-	addiw	a1, a1, -1
+	lui	a1, 786432
 	vmul.vx	v10, v10, a0
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a1
 	vmseq.vv	v0, v8, v10
 	ret
 

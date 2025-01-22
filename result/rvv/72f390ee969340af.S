@@ -21,9 +21,8 @@ func0000000000000032:
 func000000000000008c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 131072
-	addi	a0, a0, -1
-	vand.vx	v9, v9, a0
+	lui	a0, 917504
+	vandn.vx	v9, v9, a0
 	vmslt.vv	v0, v9, v8
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -32,9 +31,8 @@ func000000000000008c:
 func0000000000000028:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 131072
-	addi	a0, a0, -1
-	vand.vx	v9, v9, a0
+	lui	a0, 917504
+	vandn.vx	v9, v9, a0
 	vmsltu.vv	v0, v9, v8
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -52,9 +50,8 @@ func0000000000000002:
 func0000000000000096:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 131072
-	addi	a0, a0, -1
-	vand.vx	v9, v9, a0
+	lui	a0, 917504
+	vandn.vx	v9, v9, a0
 	vmsle.vv	v0, v8, v9
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -63,9 +60,8 @@ func0000000000000096:
 func0000000000000082:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 131072
-	addi	a0, a0, -1
-	vand.vx	v9, v9, a0
+	lui	a0, 917504
+	vandn.vx	v9, v9, a0
 	vmseq.vv	v0, v9, v8
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

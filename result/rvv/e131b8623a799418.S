@@ -55,9 +55,8 @@ func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	lui	a0, 10923
-	addiw	a1, a1, -1
 	vsrl.vi	v8, v8, 2
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a1
 	addiw	a0, a0, -1366
 	vmsgtu.vx	v0, v8, a0
 	ret

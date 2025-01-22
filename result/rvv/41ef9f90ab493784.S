@@ -26,10 +26,9 @@ func0000000000000061:
 	ret
 
 func000000000000004c:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 8189
 	slli	a0, a0, 19
 	vmv.v.x	v10, a0

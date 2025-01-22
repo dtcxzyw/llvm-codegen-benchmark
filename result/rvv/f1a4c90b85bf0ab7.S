@@ -21,12 +21,11 @@ func0000000000000042:
 	ret
 
 func0000000000000048:
-	li	a0, -1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	srli	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v11, v8, 9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v8, v10, 8

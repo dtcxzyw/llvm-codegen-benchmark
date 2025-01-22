@@ -11,9 +11,8 @@ func00000000000000c7:
 func000000000000014c:
 	lui	a0, 524288
 	fli.s	fa5, min
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v12, v10, 0
 	vmfle.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10

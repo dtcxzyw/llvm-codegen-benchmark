@@ -2,8 +2,7 @@ func0000000000000014:
 	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v8, v8, 1
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 8
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -1
@@ -12,11 +11,10 @@ func0000000000000014:
 	ret
 
 func000000000000001e:
-	lui	a0, 2048
+	lui	a0, 1046528
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v8, v8, 1
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 1
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -1

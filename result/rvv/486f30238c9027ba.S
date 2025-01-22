@@ -17,9 +17,7 @@ func0000000000000001:
 	bseti	a0, zero, 56
 	vmv.v.x	v12, a0
 	vand.vx	v12, v10, a0, v0.t
-	li	a0, -1
-	bclri	a0, a0, 56
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v12, v8
 	ret
 

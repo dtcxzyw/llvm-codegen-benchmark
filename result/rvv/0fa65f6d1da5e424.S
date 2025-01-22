@@ -16,13 +16,12 @@ func0000000000000000:
 	addi	a0, a0, 57
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a0, 8
 	vsra.vi	v12, v10, 31
 	vsrl.vi	v12, v12, 16
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 16
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1048568
+	vandn.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	ret
 

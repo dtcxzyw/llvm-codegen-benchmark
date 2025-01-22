@@ -54,10 +54,9 @@ func000000000000004a:
 	ret
 
 func0000000000000060:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmul.vv	v12, v12, v10
 	vsrl.vi	v12, v12, 16
 	vmadd.vv	v8, v10, v12

@@ -108,10 +108,9 @@ func000000000000002c:
 	ret
 
 func0000000000000068:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vmsltu.vv	v0, v10, v8
 	ret

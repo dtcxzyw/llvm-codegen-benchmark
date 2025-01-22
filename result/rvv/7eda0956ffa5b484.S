@@ -4,9 +4,8 @@ func0000000000000001:
 	vand.vx	v10, v8, a0
 	li	a0, 27
 	vmseq.vx	v0, v10, a0
-	lui	a0, 1048572
-	addiw	a0, a0, -1
-	vand.vx	v10, v8, a0
+	lui	a0, 4
+	vandn.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

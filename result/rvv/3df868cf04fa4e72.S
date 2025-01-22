@@ -9,15 +9,13 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	li	a0, 57
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
 	lui	a0, 524288
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vandn.vx	v10, v8, a0
+	li	a0, 57
+	vmv.v.x	v8, a0
 	li	a0, 72
-	vmacc.vx	v10, a0, v8
-	vmv.v.v	v8, v10
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000e:

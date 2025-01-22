@@ -23,11 +23,10 @@ func000000000000042a:
 	ret
 
 func0000000000000c21:
-	lui	a0, 1
+	lui	a0, 1048575
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 1
-	addi	a0, a0, -1
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmseq.vi	v14, v12, 6
 	vmseq.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14

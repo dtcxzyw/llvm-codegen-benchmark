@@ -3,13 +3,12 @@ func000000000000000b:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 524288
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwsll.vi	v10, v13, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 524288
+	vandn.vx	v8, v8, a0
 	ret
 
 func000000000000000f:

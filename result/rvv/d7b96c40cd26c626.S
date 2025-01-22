@@ -87,10 +87,10 @@ func00000000000000c0:
 	ret
 
 func0000000000000051:
-	li	a0, 63
-	bseti	a0, a0, 63
+	li	a0, -127
+	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

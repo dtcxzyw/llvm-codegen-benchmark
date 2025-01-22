@@ -35,11 +35,10 @@ func000000000000001f:
 	li	a0, 127
 	slli	a0, a0, 32
 	vand.vx	v10, v10, a0
-	lui	a0, 983040
-	addi	a0, a0, 1
-	slli	a0, a0, 32
+	lui	a0, 65536
 	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	slli	a0, a0, 32
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

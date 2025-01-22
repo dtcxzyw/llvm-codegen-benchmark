@@ -31,10 +31,9 @@ func0000000000000007:
 	ret
 
 func0000000000000017:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vadd.vi	v8, v8, -1
 	vsrl.vi	v8, v8, 2
 	vadd.vi	v10, v8, 1

@@ -3,10 +3,9 @@
 func0000000000000028:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	li	a1, -1
-	srli	a1, a1, 1
+	bseti	a1, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a1
 	vmsgtu.vx	v10, v8, a0
 	vmandn.mm	v0, v10, v0
 	ret
@@ -29,19 +28,17 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 0
 	vmandn.mm	v0, v10, v0
 	ret
 
 func0000000000000004:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmsleu.vi	v10, v8, 8
 	vmor.mm	v0, v0, v10
 	ret

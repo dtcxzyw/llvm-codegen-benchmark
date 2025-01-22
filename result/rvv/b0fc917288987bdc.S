@@ -10,12 +10,11 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	li	a0, -1
+	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v8, 0
-	slli.uw	a0, a0, 31
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	bseti	a0, a0, 63
+	vandn.vx	v8, v10, a0
 	vmseq.vi	v10, v8, 0
 	vmandn.mm	v8, v0, v12
 	vmor.mm	v9, v0, v10

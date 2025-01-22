@@ -15,11 +15,11 @@ func00000000000000a8:
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 63
+	li	a1, -127
 	vsra.vi	v8, v8, 2
-	bseti	a1, a1, 63
+	srli	a1, a1, 1
 	vmacc.vx	v10, a0, v8
-	vand.vx	v8, v10, a1
+	vandn.vx	v8, v10, a1
 	bseti	a0, zero, 63
 	vmsgtu.vx	v0, v8, a0
 	ret

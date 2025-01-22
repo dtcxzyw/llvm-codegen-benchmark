@@ -1,17 +1,15 @@
 func0000000000000004:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmul.vv	v10, v12, v10
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000041:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmul.vv	v10, v12, v10
 	vmseq.vv	v0, v8, v10
 	ret
@@ -32,10 +30,9 @@ func0000000000000026:
 	ret
 
 func0000000000000008:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmul.vv	v10, v12, v10
 	vmsltu.vv	v0, v10, v8
 	ret
@@ -69,10 +66,9 @@ func000000000000006a:
 	ret
 
 func0000000000000068:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmul.vv	v10, v12, v10
 	vmsltu.vv	v0, v10, v8
 	ret

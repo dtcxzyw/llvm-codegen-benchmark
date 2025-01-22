@@ -1,10 +1,9 @@
 func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 512
+	lui	a0, 1048064
 	vsrl.vi	v8, v8, 1
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 163
 	addiw	a0, a0, -1005
 	vmul.vx	v8, v8, a0
@@ -13,10 +12,9 @@ func000000000000000b:
 func0000000000000009:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 512
+	lui	a0, 1048064
 	vsrl.vi	v8, v8, 1
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 1048332
 	addiw	a0, a0, 1619
 	vmul.vx	v8, v8, a0

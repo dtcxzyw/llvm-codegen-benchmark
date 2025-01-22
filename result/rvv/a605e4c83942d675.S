@@ -11,9 +11,8 @@ func0000000000000000:
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	lui	a0, 8
-	addiw	a0, a0, -1
-	vand.vx	v12, v12, a0
+	lui	a0, 1048568
+	vandn.vx	v12, v12, a0
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v12, v8
 	ret

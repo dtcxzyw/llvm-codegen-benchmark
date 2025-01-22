@@ -9,9 +9,8 @@ func0000000000000008:
 
 func00000000000001e8:
 	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vadd.vv	v10, v10, v12
 	li	a0, 16
 	vadd.vx	v10, v10, a0

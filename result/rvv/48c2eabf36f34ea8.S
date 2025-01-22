@@ -15,10 +15,9 @@ func00000000000000c1:
 	vrsub.vx	v10, v10, a0
 	lui	a0, 2048
 	vor.vx	v8, v8, a0
-	lui	a0, 4
-	addi	a0, a0, -1
+	lui	a0, 1048572
 	vsrl.vv	v8, v8, v10
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 1
 	vmseq.vx	v0, v8, a0
 	ret

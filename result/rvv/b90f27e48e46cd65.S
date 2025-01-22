@@ -3,9 +3,8 @@ func000000000000000f:
 	vsrl.vi	v12, v12, 12
 	li	a0, 255
 	vand.vx	v12, v12, a0
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1048560
+	vandn.vx	v10, v10, a0
 	vmacc.vv	v8, v12, v10
 	ret
 

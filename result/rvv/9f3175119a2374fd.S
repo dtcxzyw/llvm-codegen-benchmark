@@ -26,12 +26,11 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	lui	a0, 256
+	lui	a0, 1048320
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vi	v8, v8, 8
-	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vi	v8, v8, 0

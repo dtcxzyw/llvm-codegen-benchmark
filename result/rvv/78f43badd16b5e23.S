@@ -1,8 +1,7 @@
 func00000000000000f4:
-	lui	a0, 4096
-	addi	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v10, a0
+	vandn.vx	v11, v10, a0
 	vsrl.vi	v10, v10, 24
 	vadd.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma

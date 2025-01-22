@@ -23,8 +23,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v10, v8, a0
 	lui	a0, 524288
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	vadd.vi	v8, v8, 5
 	vmerge.vim	v8, v8, 5, v0
 	ret

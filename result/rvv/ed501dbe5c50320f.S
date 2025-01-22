@@ -12,15 +12,13 @@ func000000000000000f:
 	ret
 
 func0000000000000009:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
-	lui	a0, 1024
-	addiw	a0, a0, -1
+	vandn.vx	v12, v12, a0
+	lui	a0, 1047552
 	vor.vv	v10, v12, v10
 	vsll.vi	v10, v10, 22
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 

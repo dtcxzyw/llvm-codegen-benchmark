@@ -12,8 +12,7 @@ func0000000000000006:
 	li	a0, 23
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmv.v.x	v8, a0
-	li	a0, -1
-	srli	a0, a0, 1
-	vand.vx	v8, v10, a0, v0.t
+	bseti	a0, zero, 63
+	vandn.vx	v8, v10, a0, v0.t
 	ret
 

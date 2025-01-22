@@ -13,10 +13,9 @@ func000000000000000b:
 	vzext.vf2	v14, v12
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vor.vv	v10, v10, v14
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

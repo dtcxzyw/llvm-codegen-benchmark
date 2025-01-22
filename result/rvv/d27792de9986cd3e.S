@@ -21,10 +21,9 @@ func0000000000000003:
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 131072
 	vmul.vx	v10, v10, a0
-	addiw	a1, a1, -1
-	vand.vx	v10, v10, a1
+	lui	a0, 917504
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
 

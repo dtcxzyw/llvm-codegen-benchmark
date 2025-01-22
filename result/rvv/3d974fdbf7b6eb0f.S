@@ -29,12 +29,11 @@ func0000000000000029:
 	lui	a0, 524288
 	addi	a0, a0, -256
 	vmerge.vxm	v10, v10, a0, v0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 255
+	li	a0, -256
+	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v12
 	ret
 

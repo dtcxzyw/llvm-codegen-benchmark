@@ -23,9 +23,8 @@ func0000000000000003:
 	vmv.v.x	v12, a0
 	li	a0, 1093
 	vmacc.vx	v12, a0, v10
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v10, v12, a0
+	lui	a0, 1048560
+	vandn.vx	v10, v12, a0
 	vadd.vv	v8, v8, v10
 	ret
 

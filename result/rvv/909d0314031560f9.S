@@ -12,10 +12,9 @@ func0000000000000001:
 	vzext.vf2	v9, v8
 	li	a0, 128
 	vmv.v.x	v8, a0
-	lui	a0, 16
 	vwsubu.vv	v10, v8, v9
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	ret
 

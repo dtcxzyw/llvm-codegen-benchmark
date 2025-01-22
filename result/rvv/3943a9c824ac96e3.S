@@ -34,8 +34,7 @@ func0000000000000000:
 	vsll.vi	v10, v10, 8
 	lui	a0, 524288
 	vor.vv	v10, v10, v12
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 
@@ -63,10 +62,9 @@ func000000000000003a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
 	vsll.vi	v10, v10, 24
-	lui	a0, 788496
+	lui	a0, 260080
 	vor.vv	v10, v10, v12
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

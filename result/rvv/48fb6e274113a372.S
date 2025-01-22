@@ -9,10 +9,9 @@ func0000000000000003:
 	ret
 
 func00000000000000c3:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	bseti	a0, zero, 32
 	vmseq.vi	v0, v10, 0
 	vor.vx	v10, v8, a0

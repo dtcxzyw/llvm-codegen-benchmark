@@ -63,10 +63,9 @@ func000000000000002a:
 	ret
 
 func0000000000000188:
-	lui	a0, 262144
-	addiw	a0, a0, -1
+	lui	a0, 786432
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v8, a0
+	vandn.vx	v10, v8, a0
 	li	a0, -1
 	bclri	a0, a0, 61
 	vmsne.vi	v12, v10, 0

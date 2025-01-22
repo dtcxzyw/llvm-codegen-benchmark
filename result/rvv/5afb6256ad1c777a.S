@@ -41,10 +41,9 @@ func0000000000000008:
 	ret
 
 func000000000000000f:
-	lui	a0, 4096
-	addiw	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vsub.vv	v10, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0

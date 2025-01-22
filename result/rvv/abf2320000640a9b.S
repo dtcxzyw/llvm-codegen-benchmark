@@ -28,10 +28,9 @@ func0000000000000074:
 	ret
 
 func00000000000000e8:
-	lui	a0, 1024
-	addi	a0, a0, -1
+	lui	a0, 1047552
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -39,10 +38,9 @@ func00000000000000e8:
 	ret
 
 func0000000000000068:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, -2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -50,10 +48,9 @@ func0000000000000068:
 	ret
 
 func0000000000000061:
-	lui	a0, 131072
-	addi	a0, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, -16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -72,10 +69,9 @@ func0000000000000048:
 	ret
 
 func00000000000000ec:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -95,9 +91,8 @@ func00000000000000f4:
 
 func0000000000000084:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -106,9 +101,8 @@ func0000000000000084:
 
 func0000000000000081:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -117,9 +111,8 @@ func0000000000000081:
 
 func0000000000000088:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -127,10 +120,9 @@ func0000000000000088:
 	ret
 
 func00000000000000e4:
-	lui	a0, 32768
-	addi	a0, a0, -1
+	lui	a0, 1015808
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -138,10 +130,9 @@ func00000000000000e4:
 	ret
 
 func0000000000000044:
-	lui	a0, 32768
-	addi	a0, a0, -1
+	lui	a0, 1015808
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -149,10 +140,9 @@ func0000000000000044:
 	ret
 
 func000000000000006c:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -170,10 +160,9 @@ func000000000000004c:
 	ret
 
 func0000000000000064:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10

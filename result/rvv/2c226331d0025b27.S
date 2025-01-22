@@ -11,14 +11,14 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	li	a0, -6
-	rori	a0, a0, 9
+	li	a0, 5
+	slli	a0, a0, 55
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vx	v10, v10, a0, v0.t
-	li	a0, -18
+	vandn.vx	v10, v10, a0, v0.t
+	li	a0, 17
 	vmseq.vi	v0, v8, 0
-	rori	a0, a0, 10
-	vand.vx	v10, v10, a0, v0.t
+	slli	a0, a0, 54
+	vandn.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
 

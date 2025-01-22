@@ -43,10 +43,9 @@ func000000000000000c:
 	ret
 
 func000000000000001b:
-	lui	a0, 2
-	addi	a0, a0, -1
+	lui	a0, 1048574
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v14, v12
 	vor.vv	v8, v8, v14

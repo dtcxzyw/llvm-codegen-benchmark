@@ -13,9 +13,9 @@ func0000000000000000:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	li	a0, 63
+	li	a0, -127
 	vmerge.vvm	v8, v10, v8, v0
-	bseti	a0, a0, 63
-	vand.vx	v8, v8, a0
+	srli	a0, a0, 1
+	vandn.vx	v8, v8, a0
 	ret
 

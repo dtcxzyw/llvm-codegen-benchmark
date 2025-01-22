@@ -1,8 +1,7 @@
 func0000000000000a8c:
-	lui	a0, 256
-	addiw	a0, a0, -1
+	lui	a0, 1048320
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 27392
 	addi	a0, a0, 1
 	vmsne.vi	v9, v10, 0

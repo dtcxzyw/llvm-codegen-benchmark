@@ -29,9 +29,8 @@ func0000000000000021:
 func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v8, v8, 0
-	lui	a0, 1
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048575
+	vandn.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret
 

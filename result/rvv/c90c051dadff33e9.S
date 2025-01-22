@@ -33,9 +33,8 @@ func0000000000000024:
 func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v10, 0
-	lui	a0, 262144
-	addi	a0, a0, -1
-	vand.vx	v8, v12, a0, v0.t
+	lui	a0, 786432
+	vandn.vx	v8, v12, a0, v0.t
 	vmsne.vi	v0, v8, 0
 	ret
 

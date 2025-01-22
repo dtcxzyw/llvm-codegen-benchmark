@@ -20,8 +20,7 @@ func0000000000000008:
 	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
-	addi	a0, a0, -1
-	vand.vx	v8, v11, a0
+	vandn.vx	v8, v11, a0
 	vsub.vv	v9, v12, v10
 	vsub.vv	v8, v9, v8
 	ret

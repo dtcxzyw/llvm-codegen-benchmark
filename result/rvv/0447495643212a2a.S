@@ -21,10 +21,9 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmsgtu.vi	v0, v8, 4
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, -10, v0

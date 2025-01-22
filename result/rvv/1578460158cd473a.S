@@ -1,8 +1,7 @@
 func000000000000030c:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	li	a0, 512
 	vmsgtu.vx	v12, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -12,9 +11,8 @@ func000000000000030c:
 
 func0000000000000285:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmsleu.vi	v12, v12, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v13, v8, v10

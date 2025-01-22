@@ -20,9 +20,8 @@ func0000000000000007:
 
 func0000000000000006:
 	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	bseti	a0, zero, 31
 	vor.vx	v8, v8, a0, v0.t
 	li	a0, 32

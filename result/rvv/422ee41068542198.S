@@ -82,10 +82,9 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsgt.vi	v8, v8, -1
@@ -93,10 +92,9 @@ func000000000000002a:
 	ret
 
 func000000000000028a:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 63
 	vmsltu.vx	v9, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -105,10 +103,9 @@ func000000000000028a:
 	ret
 
 func000000000000030a:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsgtu.vi	v9, v10, 2
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsgt.vi	v8, v8, -1
@@ -116,10 +113,9 @@ func000000000000030a:
 	ret
 
 func000000000000018a:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsgt.vi	v8, v8, -1

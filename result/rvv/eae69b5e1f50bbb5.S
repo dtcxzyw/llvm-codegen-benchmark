@@ -12,9 +12,8 @@ func0000000000000002:
 	lui	a0, 15
 	addi	a0, a0, 240
 	vand.vx	v10, v10, a0
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	vxor.vv	v8, v10, v8
 	ret
 

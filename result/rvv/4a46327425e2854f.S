@@ -10,10 +10,9 @@ func0000000000000318:
 	ret
 
 func0000000000000302:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v8, v10, v12

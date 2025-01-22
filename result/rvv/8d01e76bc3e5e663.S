@@ -3,8 +3,7 @@ func0000000000000001:
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 524288
 	vand.vx	v9, v9, a0
-	addi	a1, a0, -1
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	vxor.vx	v8, v8, a0
 	ret

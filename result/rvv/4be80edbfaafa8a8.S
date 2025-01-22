@@ -1,8 +1,7 @@
 func000000000000003d:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 163
 	addiw	a0, a0, -1005
 	vmadd.vx	v12, a0, v10
@@ -10,10 +9,9 @@ func000000000000003d:
 	ret
 
 func0000000000000015:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 1048332
 	addiw	a0, a0, 1619
 	vmadd.vx	v12, a0, v10

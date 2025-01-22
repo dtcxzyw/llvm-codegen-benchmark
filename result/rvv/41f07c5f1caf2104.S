@@ -1,8 +1,7 @@
 func0000000000000035:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 160
 	vadd.vv	v8, v8, v12
 	addiw	a0, a0, -1177
@@ -10,10 +9,9 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
 	addiw	a0, a0, -744
@@ -21,10 +19,9 @@ func0000000000000015:
 	ret
 
 func0000000000000034:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 163
 	vadd.vv	v10, v10, v12
 	addiw	a0, a0, -1005
@@ -32,10 +29,9 @@ func0000000000000034:
 	ret
 
 func0000000000000004:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
 	addiw	a0, a0, -744
@@ -43,10 +39,9 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
 	addiw	a0, a0, -744

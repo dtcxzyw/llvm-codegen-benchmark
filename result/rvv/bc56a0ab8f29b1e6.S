@@ -34,10 +34,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	lui	a0, 2
-	addiw	a0, a0, -1
+	lui	a0, 1048574
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsltu.vv	v12, v10, v8
 	vmor.mm	v0, v0, v12
 	ret

@@ -3,10 +3,10 @@
 func000000000000000e:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, 16
-	addiw	a2, a1, -1
+	lui	a1, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a2
+	vandn.vx	v10, v10, a1
+	lui	a1, 16
 	vmulhu.vx	v12, v8, a0
 	lui	a0, 524408
 	addiw	a1, a1, -15

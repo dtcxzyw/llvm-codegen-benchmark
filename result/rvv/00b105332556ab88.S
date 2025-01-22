@@ -19,11 +19,9 @@ func0000000000000003:
 func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, -1
-	lui	a0, 1048574
-	addiw	a0, a0, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
 	lui	a0, 2
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vandn.vx	v8, v8, a0
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -31,11 +29,9 @@ func000000000000000d:
 func0000000000000011:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vi	v0, v10, 1
-	li	a0, -1
-	srli	a0, a0, 1
-	vsetvli	zero, zero, e64, m2, ta, mu
-	vand.vx	v8, v8, a0
 	bseti	a0, zero, 63
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vandn.vx	v8, v8, a0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

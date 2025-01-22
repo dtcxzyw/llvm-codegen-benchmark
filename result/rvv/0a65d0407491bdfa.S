@@ -92,10 +92,9 @@ func0000000000001858:
 	ret
 
 func0000000000000058:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 256
 	vmsne.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

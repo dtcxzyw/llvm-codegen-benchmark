@@ -19,10 +19,10 @@ func0000000000000008:
 	vsll.vi	v10, v10, 28
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	li	a0, 63
-	bseti	a0, a0, 63
+	li	a0, -127
+	srli	a0, a0, 1
 	vadd.vv	v8, v10, v8
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	bseti	a0, zero, 63
 	vmsgtu.vx	v0, v8, a0
 	ret

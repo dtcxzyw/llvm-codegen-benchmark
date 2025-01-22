@@ -18,10 +18,9 @@ func0000000000000002:
 	addi	a0, a0, -1026
 	vmseq.vi	v0, v12, 0
 	vmv.v.x	v12, a0
-	lui	a0, 983040
-	addi	a0, a0, -1
+	lui	a0, 65536
 	vmerge.vvm	v8, v12, v8, v0
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
 

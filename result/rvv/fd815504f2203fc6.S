@@ -14,12 +14,12 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
-	li	a0, -6
-	rori	a0, a0, 9
-	vand.vx	v8, v8, a0, v0.t
-	li	a0, -18
-	rori	a0, a0, 10
+	li	a0, 5
+	slli	a0, a0, 55
+	vandn.vx	v8, v8, a0, v0.t
+	li	a0, 17
+	slli	a0, a0, 54
 	vmv1r.v	v0, v12
-	vand.vx	v8, v8, a0, v0.t
+	vandn.vx	v8, v8, a0, v0.t
 	ret
 

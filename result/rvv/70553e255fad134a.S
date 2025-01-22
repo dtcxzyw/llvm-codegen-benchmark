@@ -28,9 +28,8 @@ func0000000000000003:
 	vsll.vi	v10, v10, 18
 	lui	a0, 320
 	vand.vx	v10, v10, a0
-	lui	a0, 1040768
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 7808
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	lui	a0, 512
 	vor.vx	v8, v8, a0

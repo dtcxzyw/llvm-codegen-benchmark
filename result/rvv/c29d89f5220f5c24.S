@@ -1,8 +1,7 @@
 func0000000000000388:
-	lui	a0, 1024
-	addi	a0, a0, -1
+	lui	a0, 1047552
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vadd.vi	v12, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12

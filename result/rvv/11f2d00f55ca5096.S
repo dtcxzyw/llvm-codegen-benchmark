@@ -1,8 +1,7 @@
 func0000000000000014:
-	lui	a0, 14336
-	addiw	a0, a0, -1
+	lui	a0, 1034240
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 255
 	vmerge.vim	v10, v10, 0, v0
 	vsetvli	zero, zero, e32, m1, ta, ma

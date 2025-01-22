@@ -5,9 +5,8 @@ func0000000000000028:
 	vadd.vi	v12, v12, -1
 	lui	a0, 524288
 	lui	a1, %hi(.LCPI0_0)
-	addiw	a0, a0, -1
 	ld	a1, %lo(.LCPI0_0)(a1)
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vsub.vv	v8, v8, v10
 	vsra.vi	v8, v8, 4
 	vmul.vx	v8, v8, a1

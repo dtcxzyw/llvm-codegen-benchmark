@@ -16,10 +16,9 @@ func0000000000000000:
 	li	a0, -1
 	srli	a0, a0, 16
 	vand.vx	v10, v10, a0
-	lui	a0, 8
-	addiw	a0, a0, -1
+	lui	a0, 1048568
 	vor.vv	v8, v10, v8
-	vand.vx	v10, v12, a0
+	vandn.vx	v10, v12, a0
 	vor.vv	v8, v10, v8
 	ret
 

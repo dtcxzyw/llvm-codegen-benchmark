@@ -23,8 +23,7 @@ func000000000000003c:
 	vadd.vv	v8, v9, v8
 	addi	a0, a0, 48
 	vadd.vx	v8, v8, a0
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	ret
 

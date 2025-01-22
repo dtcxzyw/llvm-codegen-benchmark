@@ -11,10 +11,9 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	li	a0, 54
 	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma

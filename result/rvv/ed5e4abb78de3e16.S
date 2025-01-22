@@ -13,9 +13,8 @@ func0000000000000002:
 	lui	a0, 32768
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v10, v10, a0, v0
-	lui	a0, 1014016
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 34560
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 

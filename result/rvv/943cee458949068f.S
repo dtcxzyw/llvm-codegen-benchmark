@@ -1,10 +1,9 @@
 func000000000000042c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	lui	a0, 1
+	lui	a0, 1048575
 	vmseq.vv	v14, v8, v12
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v14
 	ret

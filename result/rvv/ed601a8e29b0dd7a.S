@@ -4,9 +4,8 @@ func000000000000003e:
 	lui	a0, 1048575
 	vwsll.vi	v12, v10, 12
 	zext.w	a0, a0
-	not	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v12, v8
 	ret
 
@@ -16,9 +15,8 @@ func000000000000001e:
 	lui	a0, 1048575
 	vwsll.vi	v12, v10, 12
 	zext.w	a0, a0
-	not	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v12, v8
 	ret
 

@@ -22,9 +22,8 @@ func0000000000000181:
 
 func000000000000082c:
 	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 524032
 	vmseq.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -65,10 +64,9 @@ func0000000000000081:
 	ret
 
 func000000000000002c:
-	lui	a0, 2048
-	addiw	a0, a0, -1
+	lui	a0, 1046528
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 255
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -77,10 +75,9 @@ func000000000000002c:
 	ret
 
 func0000000000000d8c:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vi	v8, v8, 0

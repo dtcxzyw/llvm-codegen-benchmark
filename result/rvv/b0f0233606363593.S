@@ -8,10 +8,9 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	lui	a0, 32
-	addi	a0, a0, -1
+	lui	a0, 1048544
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vsll.vi	v10, v10, 17
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

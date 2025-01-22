@@ -7,10 +7,9 @@ func000000000000012a:
 	ret
 
 func0000000000000061:
-	lui	a0, 4096
-	addi	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vnsrl.wi	v11, v8, 0
 	vmseq.vv	v0, v10, v11

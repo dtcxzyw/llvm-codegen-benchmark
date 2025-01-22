@@ -61,10 +61,10 @@ func0000000000000028:
 	ret
 
 func0000000000000146:
-	li	a0, 7
-	bseti	a0, a0, 63
+	li	a0, -15
+	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmsgt.vi	v14, v12, 0
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14

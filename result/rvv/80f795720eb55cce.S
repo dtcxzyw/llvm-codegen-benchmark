@@ -1,8 +1,7 @@
 func000000000000002c:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 524032
 	vmseq.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0

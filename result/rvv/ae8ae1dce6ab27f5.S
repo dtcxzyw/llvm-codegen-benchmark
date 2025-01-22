@@ -18,8 +18,7 @@ func0000000000000000:
 	li	a0, 1040
 	vmv1r.v	v0, v9
 	vor.vx	v10, v10, a0, v0.t
-	lui	a0, 786560
-	addiw	a0, a0, -1
-	vand.vx	v8, v10, a0
+	lui	a0, 262016
+	vandn.vx	v8, v10, a0
 	ret
 

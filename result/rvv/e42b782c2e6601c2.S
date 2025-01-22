@@ -36,9 +36,8 @@ func0000000000000007:
 	vzext.vf2	v9, v8
 	li	a0, -16
 	vwaddu.vx	v10, v9, a0
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	ret
 

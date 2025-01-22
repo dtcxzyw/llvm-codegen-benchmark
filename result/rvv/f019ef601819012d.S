@@ -33,9 +33,8 @@ func0000000000000001:
 	addi	a0, a0, -853
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 1040384
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 8192
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v0, v10
 	ret

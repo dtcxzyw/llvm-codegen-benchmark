@@ -26,10 +26,9 @@ func000000000000000d:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
-	li	a0, 61
+	li	a0, -61
 	slli	a0, a0, 26
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	lui	a0, 32768
 	vor.vx	v8, v8, a0

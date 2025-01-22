@@ -1,8 +1,7 @@
 func000000000000002c:
-	lui	a0, 8
-	addiw	a0, a0, -1
+	lui	a0, 1048568
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	li	a0, -1
 	vmseq.vi	v0, v12, 0
 	srli	a0, a0, 16
@@ -19,10 +18,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
 	li	a0, -17
 	vmerge.vvm	v8, v8, v10, v0

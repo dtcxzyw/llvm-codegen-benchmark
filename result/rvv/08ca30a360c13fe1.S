@@ -41,11 +41,10 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	lui	a0, 261632
-	addi	a0, a0, -1
+	lui	a0, 786944
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
-	vand.vx	v10, v8, a0
+	vandn.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

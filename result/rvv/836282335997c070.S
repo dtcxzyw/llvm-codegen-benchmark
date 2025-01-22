@@ -80,10 +80,9 @@ func000000000000000b:
 	vsll.vi	v12, v12, 16
 	lui	a0, 4080
 	vand.vx	v12, v12, a0
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vor.vv	v8, v8, v12
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
 

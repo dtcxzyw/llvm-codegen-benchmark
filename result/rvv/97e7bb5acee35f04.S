@@ -20,10 +20,9 @@ func000000000000000b:
 	ret
 
 func0000000000000009:
-	lui	a0, 1
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vand.vx	v9, v9, a0
+	vandn.vx	v9, v9, a0
 	vwaddu.wv	v8, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v8

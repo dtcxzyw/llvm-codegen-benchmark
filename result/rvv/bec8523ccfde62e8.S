@@ -13,13 +13,11 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	lui	a0, 8192
-	addiw	a0, a0, -1
+	lui	a0, 1040384
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
-	lui	a0, 4096
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v12, v12, a0
+	lui	a0, 1044480
+	vandn.vx	v10, v10, a0
 	vxor.vv	v8, v8, v12
 	vxor.vv	v8, v8, v10
 	li	a0, 32
@@ -27,13 +25,11 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	lui	a0, 8192
-	addiw	a0, a0, -1
+	lui	a0, 1040384
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
-	lui	a0, 262144
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v12, v12, a0
+	lui	a0, 786432
+	vandn.vx	v10, v10, a0
 	vxor.vv	v8, v12, v8
 	vxor.vv	v8, v8, v10
 	li	a0, 32

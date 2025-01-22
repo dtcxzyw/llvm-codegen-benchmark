@@ -11,8 +11,7 @@ func0000000000000008:
 	lui	a0, 1048544
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
-	lui	a0, 524280
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0, v0.t
+	lui	a0, 524296
+	vandn.vx	v8, v10, a0, v0.t
 	ret
 

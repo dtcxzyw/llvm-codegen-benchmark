@@ -6,9 +6,8 @@ func00000000000000ff:
 	addiw	a0, a0, 1441
 	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
-	lui	a0, 16
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	ret
 
 func00000000000000c0:

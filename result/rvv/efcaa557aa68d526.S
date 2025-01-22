@@ -56,11 +56,11 @@ func0000000000000011:
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	lui	a0, 16
-	addiw	a1, a0, -1023
+	addiw	a0, a0, -1023
 	vmerge.vim	v10, v10, 1, v0
-	vxor.vx	v10, v10, a1
+	vxor.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	ret
 

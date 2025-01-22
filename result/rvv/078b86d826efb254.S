@@ -32,10 +32,9 @@ func0000000000000181:
 func0000000000000421:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 4
+	lui	a0, 1048572
 	vmseq.vi	v12, v10, 0
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 1
 	vmand.mm	v0, v10, v12
 	ret

@@ -6,10 +6,10 @@ func000000000000001e:
 	vand.vx	v10, v10, a0
 	lui	a0, 8192
 	vadd.vx	v10, v10, a0
-	lui	a0, 532479
-	addiw	a0, a0, 2047
-	bclri	a0, a0, 31
-	vand.vx	v8, v8, a0
+	lui	a0, 508
+	addiw	a0, a0, 1
+	slli	a0, a0, 11
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 
@@ -19,11 +19,8 @@ func000000000000001a:
 	lui	a0, 1048568
 	srli	a0, a0, 13
 	vand.vx	v10, v10, a0
-	li	a0, -1
-	slli	a0, a0, 51
-	addi	a0, a0, 3
 	vadd.vi	v10, v10, -4
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

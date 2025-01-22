@@ -43,8 +43,7 @@ func000000000000000a:
 	vsub.vv	v10, v10, v12
 	lui	a0, 524288
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8
 	ret
 

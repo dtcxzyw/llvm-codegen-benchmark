@@ -36,19 +36,18 @@ func0000000000000072:
 
 func0000000000000000:
 	lui	a0, 1048560
-	addi	a0, a0, 1
-	slli.uw	a0, a0, 16
-	addi	a0, a0, -1
+	slli	a1, a0, 32
+	add.uw	a0, a0, a1
+	li	a1, 625
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	li	a0, 625
-	slli	a0, a0, 36
-	addi	a0, a0, 1
-	vmul.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 32
+	slli	a1, a1, 36
+	addi	a1, a1, 1
+	vmul.vx	v10, v10, a1
+	lui	a1, 24414
 	vsrl.vx	v10, v10, a0
-	lui	a0, 24414
-	addiw	a0, a0, 256
+	addiw	a0, a1, 256
 	vmadd.vx	v8, a0, v10
 	ret
 

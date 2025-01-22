@@ -4,9 +4,8 @@ func0000000000000000:
 	li	a0, 16
 	vsub.vv	v8, v8, v9
 	vsub.vx	v8, v8, a0
-	lui	a0, 131072
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 917504
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000010:

@@ -25,11 +25,10 @@ func0000000000000019:
 	li	a0, 44
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	lui	a0, 4096
-	addiw	a0, a0, -1
+	lui	a0, 1044480
 	vadd.vv	v10, v10, v12
 	vsll.vi	v10, v10, 24
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

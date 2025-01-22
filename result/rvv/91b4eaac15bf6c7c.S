@@ -56,9 +56,9 @@ func000000000000000f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v8, v10, v8
 	lui	a0, 16
-	addi	a1, a0, -3
-	vadd.vx	v8, v8, a1
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	addi	a0, a0, -3
+	vadd.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	ret
 

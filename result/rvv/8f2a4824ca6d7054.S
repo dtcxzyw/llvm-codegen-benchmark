@@ -22,11 +22,11 @@ func0000000000000141:
 	ret
 
 func0000000000000008:
-	li	a0, 63
+	li	a0, -127
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	bseti	a0, a0, 63
-	vand.vx	v8, v8, a0
+	srli	a0, a0, 1
+	vandn.vx	v8, v8, a0
 	bseti	a0, zero, 63
 	vmsgtu.vx	v0, v8, a0
 	ret

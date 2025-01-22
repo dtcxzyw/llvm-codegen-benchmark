@@ -60,8 +60,7 @@ func00000000000001aa:
 	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -1
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, -1
@@ -71,10 +70,9 @@ func00000000000001b4:
 	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -1
+	vandn.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
-	vand.vx	v10, v12, a0
-	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	li	a0, 64
 	vmsltu.vx	v0, v8, a0
 	ret

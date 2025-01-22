@@ -38,16 +38,15 @@ func0000000000000181:
 	ret
 
 func0000000000000081:
-	lui	a0, 16
+	lui	a0, 524272
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vandn.vx	v10, v10, a0
+	lui	a0, 16
 	vmsltu.vx	v12, v8, a0
-	lui	a0, 524304
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
-	vmor.mm	v10, v0, v12
-	vmseq.vi	v11, v8, 0
-	vmand.mm	v8, v10, v11
-	vmandn.mm	v9, v0, v11
-	vmor.mm	v0, v8, v9
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v9, v0, v12
+	vmand.mm	v9, v9, v8
+	vmandn.mm	v8, v0, v8
+	vmor.mm	v0, v9, v8
 	ret
 

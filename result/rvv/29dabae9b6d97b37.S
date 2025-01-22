@@ -26,9 +26,8 @@ func0000000000000004:
 	vmv.v.x	v12, a0
 	lui	a0, 786432
 	vmerge.vxm	v12, v12, a0, v0
-	lui	a0, 196608
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 851968
+	vandn.vx	v10, v10, a0
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v8, v10
 	ret

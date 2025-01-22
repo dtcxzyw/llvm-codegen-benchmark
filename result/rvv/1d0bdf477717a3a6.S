@@ -4,8 +4,8 @@ func0000000000000003:
 	lui	a0, 4096
 	vsll.vi	v10, v10, 23
 	vand.vx	v10, v10, a0
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1044480
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

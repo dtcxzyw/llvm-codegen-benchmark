@@ -4,10 +4,9 @@ func000000000000000c:
 	vand.vx	v12, v10, a0
 	vmsne.vi	v14, v12, 0
 	vmand.mm	v0, v14, v0
-	lui	a0, 8
 	vmerge.vvm	v8, v10, v8, v0
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048568
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000001:

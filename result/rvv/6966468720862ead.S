@@ -1,10 +1,9 @@
 func000000000000007f:
-	lui	a0, 512
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vx	v10, v12, a0
+	vandn.vx	v10, v12, a0
 	vwaddu.wv	v8, v8, v10
 	lui	a0, 256
 	vsetvli	zero, zero, e64, m2, ta, ma

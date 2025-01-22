@@ -92,8 +92,7 @@ func0000000000000006:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 524288
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
 
@@ -135,9 +134,8 @@ func0000000000000009:
 func0000000000000074:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 16
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1048560
+	vandn.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 

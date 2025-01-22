@@ -90,10 +90,9 @@ func0000000000000024:
 	ret
 
 func0000000000000281:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	li	a0, 257
 	vmsltu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -101,10 +100,9 @@ func0000000000000281:
 	ret
 
 func0000000000000294:
-	lui	a0, 4096
-	addi	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 3503
 	addi	a0, a0, 619
 	vmsltu.vx	v0, v12, a0

@@ -5,9 +5,8 @@ func0000000000000001:
 	vadd.vv	v8, v8, v10
 	slli	a0, a0, 4
 	vand.vx	v10, v12, a0
-	lui	a0, 16
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 

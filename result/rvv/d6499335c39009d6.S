@@ -1,8 +1,7 @@
 func0000000000000020:
-	lui	a0, 131072
-	addi	a0, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmsltu.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -47,10 +46,9 @@ func000000000000000b:
 	ret
 
 func0000000000000033:
-	lui	a0, 131072
-	addi	a0, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmslt.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -68,10 +66,9 @@ func0000000000000048:
 	ret
 
 func0000000000000043:
-	lui	a0, 32
-	addi	a0, a0, -1
+	lui	a0, 1048544
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmsltu.vv	v0, v10, v12
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

@@ -11,14 +11,12 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vsll.vx	v8, v8, a0
-	lui	a0, 917504
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
-	vor.vv	v8, v8, v10
 	lui	a0, 131072
+	li	a1, 32
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vandn.vx	v10, v10, a0
+	vsll.vx	v8, v8, a1
+	vor.vv	v8, v8, v10
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

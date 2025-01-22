@@ -40,11 +40,10 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 28
 	vsll.vx	v12, v12, a0
-	lui	a0, 983041
+	lui	a0, 65535
 	slli	a0, a0, 16
 	vor.vv	v10, v10, v12
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

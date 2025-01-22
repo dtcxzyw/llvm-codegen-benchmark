@@ -1,10 +1,9 @@
 func000000000000002c:
-	li	a0, -1
+	li	a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v14, v10, 2
-	slli	a0, a0, 32
-	addi	a0, a0, 1
-	vand.vx	v10, v12, a0
+	zext.w	a0, a0
+	vandn.vx	v10, v12, a0
 	lui	a0, 32768
 	addiw	a0, a0, 5
 	vmseq.vi	v12, v10, 0

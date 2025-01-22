@@ -13,10 +13,9 @@ func000000000000001c:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v10, v8
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
-	vand.vx	v8, v8, a0
+	li	a0, -2
+	zext.w	a0, a0
+	vandn.vx	v8, v8, a0
 	ret
 
 func000000000000000e:

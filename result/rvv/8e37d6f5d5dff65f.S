@@ -39,12 +39,10 @@ func0000000000000010:
 
 func0000000000000011:
 	lui	a0, 1048320
-	addi	a0, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v12, a0
-	lui	a0, 256
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
+	vmsgtu.vx	v0, v12, a1
 	vor.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -65,9 +63,8 @@ func0000000000000015:
 	vmsgt.vx	v0, v12, a0
 	lui	a0, 129024
 	vmerge.vxm	v8, v8, a0, v0
-	lui	a0, 2048
-	addi	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1046528
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
 

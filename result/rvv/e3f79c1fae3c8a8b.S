@@ -5,12 +5,11 @@ func0000000000000004:
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 16
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	addi	a1, a1, -1
-	vand.vx	v8, v10, a1
+	lui	a0, 1048560
+	vandn.vx	v8, v10, a0
 	ret
 
 .LCPI1_0:
@@ -22,12 +21,11 @@ func0000000000000000:
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
-	lui	a0, 4
 	vsrl.vi	v8, v8, 15
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	lui	a0, 1048572
+	vandn.vx	v8, v10, a0
 	ret
 

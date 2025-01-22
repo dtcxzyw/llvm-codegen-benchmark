@@ -83,10 +83,9 @@ func000000000000008a:
 	ret
 
 func0000000000000021:
-	lui	a0, 262144
-	addi	a0, a0, -1
+	lui	a0, 786432
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 4
 	ret
 
@@ -149,10 +148,10 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	lui	a0, 131072
-	addi	a1, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a0
+	lui	a0, 131072
 	addi	a0, a0, -5
 	vmsne.vx	v0, v8, a0
 	ret

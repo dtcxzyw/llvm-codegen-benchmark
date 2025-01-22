@@ -8,10 +8,9 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	lui	a0, 512
-	addiw	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 1048332
 	addiw	a0, a0, 1619
 	vmadd.vx	v8, a0, v10
@@ -34,10 +33,9 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	lui	a0, 65536
-	addiw	a0, a0, -1
+	lui	a0, 983040
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	lui	a0, 4001
 	slli	a0, a0, 8
 	addi	a0, a0, 1949

@@ -1,8 +1,7 @@
 func0000000000000075:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 33
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, 1489
@@ -11,10 +10,9 @@ func0000000000000075:
 	ret
 
 func000000000000007f:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, -744
@@ -23,10 +21,9 @@ func000000000000007f:
 	ret
 
 func000000000000005d:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 1048332
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, 1619
@@ -35,10 +32,9 @@ func000000000000005d:
 	ret
 
 func0000000000000055:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, -744
@@ -47,10 +43,9 @@ func0000000000000055:
 	ret
 
 func000000000000005c:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 163
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, -1005
@@ -59,10 +54,9 @@ func000000000000005c:
 	ret
 
 func000000000000004c:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 163
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, -1005
@@ -71,10 +65,9 @@ func000000000000004c:
 	ret
 
 func0000000000000040:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vwaddu.wv	v8, v8, v12
 	addiw	a0, a0, -744

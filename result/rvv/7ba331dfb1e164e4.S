@@ -10,10 +10,9 @@ func0000000000000384:
 	ret
 
 func0000000000000381:
-	lui	a0, 8192
-	addi	a0, a0, -1
+	lui	a0, 1040384
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vadd.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10

@@ -55,9 +55,8 @@ func0000000000000088:
 
 func0000000000000186:
 	lui	a0, 524288
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v8, a0
+	vandn.vx	v10, v8, a0
 	lui	a0, 526336
 	vmsne.vi	v12, v10, 0
 	vmslt.vx	v10, v8, a0
@@ -150,10 +149,9 @@ func0000000000000026:
 	ret
 
 func0000000000000284:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v8, a0
+	vandn.vx	v10, v8, a0
 	lui	a0, 240
 	vmsleu.vi	v12, v10, 14
 	vmsltu.vx	v10, v8, a0

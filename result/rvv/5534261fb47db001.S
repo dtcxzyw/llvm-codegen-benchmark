@@ -13,10 +13,9 @@ func0000000000000000:
 	bseti	a0, zero, 32
 	vmsne.vi	v0, v10, 0
 	vmv.v.x	v10, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 256
-	vand.vx	v10, v8, a0, v0.t
+	li	a0, -257
+	zext.w	a0, a0
+	vandn.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
 

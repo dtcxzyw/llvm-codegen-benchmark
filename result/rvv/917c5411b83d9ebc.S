@@ -35,10 +35,9 @@ func0000000000000054:
 	ret
 
 func0000000000000314:
-	lui	a0, 2048
-	addiw	a0, a0, -1
+	lui	a0, 1046528
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsne.vi	v9, v10, 0
 	vmand.mm	v9, v9, v0
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -5,14 +5,14 @@ func0000000000000042:
 	ret
 
 func0000000000000068:
-	lui	a0, 16
-	addi	a1, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a1
-	li	a1, 37
+	vandn.vx	v8, v8, a0
+	lui	a0, 16
 	addi	a0, a0, -2
 	vmseq.vx	v10, v8, a0
-	vmsltu.vx	v11, v8, a1
+	li	a0, 37
+	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
 

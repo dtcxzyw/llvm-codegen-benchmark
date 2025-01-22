@@ -10,16 +10,15 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lui	a0, 983041
+	lui	a0, 65535
 	lui	a1, 60162
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	bseti	a0, a1, 44
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v10, a0
-	vzext.vf2	v12, v8
-	vmerge.vxm	v8, v10, a1, v0
-	vor.vv	v8, v8, v12
+	vzext.vf2	v10, v8
+	vmv.v.x	v8, a0
+	vmerge.vxm	v8, v8, a1, v0
+	vor.vv	v8, v8, v10
 	ret
 

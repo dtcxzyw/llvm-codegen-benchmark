@@ -1,8 +1,7 @@
 func0000000000000001:
-	lui	a0, 1
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vwsubu.wv	v8, v8, v10
 	ret
 

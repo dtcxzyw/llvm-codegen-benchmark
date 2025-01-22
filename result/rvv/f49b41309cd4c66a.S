@@ -1,10 +1,9 @@
 func0000000000000009:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vv	v10, v10, v11
-	lui	a0, 18
+	lui	a0, 1048558
 	vnsrl.wi	v11, v8, 0
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	vandn.vx	v8, v10, a0
 	lui	a0, 14
 	vand.vx	v9, v11, a0
 	vor.vv	v8, v9, v8
@@ -27,9 +26,7 @@ func0000000000000003:
 	lui	a0, 3072
 	vor.vv	v8, v8, v9
 	vand.vx	v9, v12, a0
-	lui	a0, 1045504
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	ret
 

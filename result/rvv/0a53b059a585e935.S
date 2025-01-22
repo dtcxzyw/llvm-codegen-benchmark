@@ -115,9 +115,8 @@ func0000000000000048:
 func0000000000000054:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, -1
-	srli	a0, a0, 1
-	vand.vx	v8, v8, a0
+	bseti	a0, zero, 63
+	vandn.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 6
 	ret
 
@@ -130,18 +129,18 @@ func000000000000002c:
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	li	a0, 7
-	bseti	a0, a0, 63
-	vand.vx	v8, v8, a0
+	li	a0, -15
+	srli	a0, a0, 1
+	vandn.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0
 	ret
 
 func000000000000006a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	li	a0, 7
-	bseti	a0, a0, 63
-	vand.vx	v8, v8, a0
+	li	a0, -15
+	srli	a0, a0, 1
+	vandn.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0
 	ret
 

@@ -9,9 +9,8 @@ func000000000000000d:
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 16
-	lui	a0, 8
-	addi	a0, a0, -1
-	vand.vx	v12, v12, a0
+	lui	a0, 1048568
+	vandn.vx	v12, v12, a0
 	vsub.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12
 	ret

@@ -11,11 +11,11 @@ func0000000000000069:
 	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 1
-	lui	a1, 128
 	vmsltu.vx	v0, v8, a0
-	addi	a0, a1, -1
-	vand.vx	v8, v10, a0
-	vor.vx	v10, v8, a1
+	lui	a0, 1048448
+	vandn.vx	v8, v10, a0
+	lui	a0, 128
+	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

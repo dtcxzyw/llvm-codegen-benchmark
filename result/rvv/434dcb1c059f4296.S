@@ -58,11 +58,10 @@ func0000000000000001:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v10, a0
-	lui	a0, 524288
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 1
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 524288
+	vandn.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret
 
@@ -73,10 +72,9 @@ func000000000000002c:
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
-	lui	a1, 524288
 	vmul.vx	v10, v10, a0
-	addiw	a1, a1, -1
-	vand.vx	v10, v10, a1
+	lui	a0, 524288
+	vandn.vx	v10, v10, a0
 	vmsne.vv	v0, v8, v10
 	ret
 
@@ -89,11 +87,10 @@ func0000000000000019:
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	lui	a0, 524288
 	vsra.vi	v10, v10, 3
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 524288
+	vandn.vx	v10, v10, a0
 	vmsleu.vv	v0, v10, v8
 	ret
 
@@ -107,11 +104,10 @@ func0000000000000014:
 	li	a0, 63
 	vadd.vv	v10, v12, v10
 	vsrl.vx	v12, v10, a0
-	lui	a0, 524288
 	vsra.vi	v10, v10, 7
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 524288
+	vandn.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 

@@ -4,12 +4,12 @@ func0000000000000003:
 	lui	a0, 240
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 983295
-	addi	a1, a1, 15
+	lui	a1, 65281
+	addiw	a1, a1, -16
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
-	add.uw	a0, a1, a0
-	vand.vx	v10, v10, a0
+	add	a0, a0, a1
+	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
 	ret
@@ -20,9 +20,8 @@ func000000000000000b:
 	vsll.vx	v12, v12, a0
 	bseti	a0, zero, 32
 	vand.vx	v12, v12, a0
-	li	a0, -1
-	bclri	a0, a0, 33
-	vand.vx	v10, v10, a0
+	bseti	a0, zero, 33
+	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret

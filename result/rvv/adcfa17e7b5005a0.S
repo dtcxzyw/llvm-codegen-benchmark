@@ -7,19 +7,17 @@ func000000000000001f:
 	ret
 
 func000000000000001c:
-	lui	a0, 1
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vwaddu.wv	v8, v8, v10
 	ret
 
 func000000000000001d:
-	lui	a0, 1
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vi	v10, v10, 1
 	vwaddu.wv	v8, v8, v10
 	ret
@@ -34,10 +32,9 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	lui	a0, 1
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v8, v8, -12

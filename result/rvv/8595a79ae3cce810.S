@@ -13,11 +13,9 @@ func0000000000000009:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
-	lui	a0, 1048320
-	addi	a0, a0, -1
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vx	v8, v8, a0
 	lui	a0, 256
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vandn.vx	v8, v8, a0
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
@@ -26,9 +24,8 @@ func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vi	v0, v10, 7
 	lui	a0, 524288
-	addi	a1, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
@@ -54,9 +51,8 @@ func0000000000000019:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	lui	a0, 524288
-	addi	a1, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a0
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
@@ -69,9 +65,8 @@ func000000000000000d:
 	vmv.v.x	v9, a0
 	lui	a0, 786432
 	vmerge.vxm	v9, v9, a0, v0
-	lui	a0, 4096
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 1044480
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	ret
 

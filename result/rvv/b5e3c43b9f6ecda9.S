@@ -1,8 +1,7 @@
 func0000000000000015:
-	lui	a0, 524544
-	addi	a0, a0, -1
+	lui	a0, 524032
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vor.vv	v10, v11, v10
 	li	a0, 32
 	vwsll.vx	v12, v10, a0
@@ -11,10 +10,9 @@ func0000000000000015:
 	ret
 
 func0000000000000005:
-	lui	a0, 524544
-	addi	a0, a0, -1
+	lui	a0, 524032
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vor.vv	v10, v10, v11
 	li	a0, 32
 	vwsll.vx	v12, v10, a0
@@ -23,10 +21,9 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vor.vv	v10, v10, v11
 	li	a0, 32
 	vwsll.vx	v12, v10, a0
@@ -45,10 +42,9 @@ func000000000000001e:
 	ret
 
 func000000000000001f:
-	lui	a0, 8
-	addi	a0, a0, -1
+	lui	a0, 1048568
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vor.vv	v10, v10, v11
 	li	a0, 32
 	vwsll.vx	v12, v10, a0

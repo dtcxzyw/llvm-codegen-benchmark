@@ -1,9 +1,8 @@
 func000000000000001f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 512
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1048064
+	vandn.vx	v10, v10, a0
 	vmacc.vv	v8, v14, v10
 	ret
 

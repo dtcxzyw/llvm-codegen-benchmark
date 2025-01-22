@@ -15,19 +15,17 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	lui	a0, 16
-	addiw	a0, a0, -1
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsltu.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
 
 func0000000000000005:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret

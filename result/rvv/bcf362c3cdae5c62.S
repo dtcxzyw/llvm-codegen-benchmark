@@ -93,10 +93,9 @@ func0000000000000014:
 	lui	a0, 16384
 	addi	a1, a0, 64
 	vmv.v.x	v10, a1
-	lui	a1, 999152
-	addi	a1, a1, -1
+	lui	a1, 49424
 	vmerge.vxm	v10, v10, a0, v0
-	vand.vx	v8, v8, a1
+	vandn.vx	v8, v8, a1
 	vor.vv	v8, v8, v10
 	ret
 

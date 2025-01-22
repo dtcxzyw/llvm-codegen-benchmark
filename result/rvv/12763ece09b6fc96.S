@@ -24,9 +24,8 @@ func0000000000000048:
 	vadd.vi	v8, v8, 1
 	lui	a0, 1
 	vmsltu.vx	v10, v8, a0
-	lui	a0, 1044481
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 4095
+	vandn.vx	v8, v8, a0
 	vmseq.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret

@@ -13,9 +13,8 @@ func00000000000001e1:
 
 func00000000000000c1:
 	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 16
 	vadd.vi	v10, v10, -1
 	vand.vi	v10, v10, -16
@@ -24,10 +23,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000141:
-	li	a0, -1
-	srli	a0, a0, 1
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, -64
 	vadd.vi	v10, v10, 1
 	vand.vx	v10, v10, a0

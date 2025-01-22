@@ -1,9 +1,8 @@
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 15
-	lui	a0, 1048516
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	lui	a0, 60
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	lui	a0, 4
 	vor.vx	v8, v8, a0

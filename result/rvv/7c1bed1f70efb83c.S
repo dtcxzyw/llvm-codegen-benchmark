@@ -2,9 +2,8 @@ func000000000000000e:
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	lui	a0, 8
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	lui	a0, 1048568
+	vandn.vx	v10, v10, a0
 	lui	a0, 4
 	addiw	a0, a0, 35
 	vrsub.vx	v10, v10, a0

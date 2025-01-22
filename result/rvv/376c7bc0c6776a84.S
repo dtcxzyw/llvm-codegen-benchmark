@@ -15,11 +15,10 @@ func0000000000000001:
 	vzext.vf2	v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v8, v8, 6
-	lui	a0, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
-	addi	a0, a0, -1
+	lui	a0, 1048575
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	ret
 

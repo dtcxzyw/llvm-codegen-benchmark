@@ -34,9 +34,8 @@ func000000000000000b:
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 524288
 	vand.vx	v10, v12, a0
-	lui	a0, 8
-	addi	a0, a0, -1
-	vand.vx	v9, v9, a0
+	lui	a0, 1048568
+	vandn.vx	v9, v9, a0
 	vor.vv	v8, v8, v9
 	vor.vv	v8, v8, v10
 	ret

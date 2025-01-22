@@ -13,13 +13,13 @@ func000000000000000f:
 func000000000000001f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 1015808
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
-	li	a1, 32
-	vand.vx	v10, v10, a0
+	li	a0, -31
+	slli.uw	a0, a0, 27
+	addi	a0, a0, -1
+	vandn.vx	v10, v10, a0
+	li	a0, 32
 	vor.vv	v10, v10, v14
-	vsll.vx	v8, v8, a1
+	vsll.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
 

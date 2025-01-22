@@ -58,11 +58,11 @@ func0000000000000028:
 
 func000000000000008a:
 	lui	a0, 16
-	addi	a1, a0, -12
-	addi	a0, a0, -1
+	addi	a0, a0, -12
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a1
-	vand.vx	v10, v10, a0
+	vadd.vx	v10, v10, a0
+	lui	a0, 1048560
+	vandn.vx	v10, v10, a0
 	vadd.vi	v8, v8, 4
 	vmslt.vv	v0, v10, v8
 	ret

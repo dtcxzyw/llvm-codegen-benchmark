@@ -14,9 +14,8 @@ func000000000000018c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v10, v10, 1
 	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	vmsne.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret

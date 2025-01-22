@@ -14,9 +14,8 @@ func0000000000000000:
 	li	a0, 255
 	vsrl.vi	v8, v10, 23
 	vand.vx	v8, v8, a0
-	lui	a0, 2048
-	addi	a0, a0, -1
-	vand.vx	v9, v10, a0
+	lui	a0, 1046528
+	vandn.vx	v9, v10, a0
 	vor.vv	v8, v8, v9
 	ret
 

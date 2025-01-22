@@ -7,10 +7,9 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lui	a0, 65536
-	addi	a0, a0, -1
+	lui	a0, 983040
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 196608
 	vor.vx	v8, v8, a0
 	ret

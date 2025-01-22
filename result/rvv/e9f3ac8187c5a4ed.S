@@ -13,8 +13,7 @@ func000000000000000a:
 	lui	a0, 9
 	addi	a0, a0, 105
 	vmacc.vx	v10, a0, v8
-	lui	a0, 16
-	addi	a0, a0, -1
-	vand.vx	v8, v10, a0
+	lui	a0, 1048560
+	vandn.vx	v8, v10, a0
 	ret
 

@@ -20,10 +20,9 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	lui	a0, 131072
-	addi	a0, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 16
 	vmslt.vv	v0, v10, v8
 	vmv.v.x	v8, a0
@@ -51,10 +50,9 @@ func0000000000000018:
 	ret
 
 func0000000000000004:
-	lui	a0, 262144
-	addi	a0, a0, -1
+	lui	a0, 786432
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	li	a0, 16
 	vmsltu.vv	v0, v10, v8
 	vmv.v.x	v8, a0

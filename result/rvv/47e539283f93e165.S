@@ -15,20 +15,18 @@ func000000000000008c:
 	ret
 
 func000000000000002c:
-	lui	a0, 4096
-	addi	a0, a0, -1
+	lui	a0, 1044480
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmseq.vv	v14, v12, v10
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v14
 	ret
 
 func000000000000018c:
-	lui	a0, 131072
-	addi	a0, a0, -1
+	lui	a0, 917504
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vmsne.vv	v14, v12, v10
 	vmsne.vi	v10, v8, 2
 	vmand.mm	v0, v10, v14

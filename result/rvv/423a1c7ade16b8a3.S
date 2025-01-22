@@ -55,9 +55,8 @@ func00000000000000ec:
 	add	a0, a0, a1
 	lui	a1, 524288
 	vsrl.vi	v10, v10, 4
-	addiw	a1, a1, -1
 	vmul.vx	v10, v10, a0
-	vand.vx	v10, v10, a1
+	vandn.vx	v10, v10, a1
 	vadd.vi	v8, v8, 1
 	vmsne.vv	v0, v8, v10
 	ret
@@ -71,9 +70,8 @@ func00000000000000a1:
 	add	a0, a0, a1
 	lui	a1, 524288
 	vsrl.vi	v10, v10, 3
-	addiw	a1, a1, -1
 	vmul.vx	v10, v10, a0
-	vand.vx	v10, v10, a1
+	vandn.vx	v10, v10, a1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret

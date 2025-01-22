@@ -16,9 +16,8 @@ func0000000000000008:
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsleu.vi	v0, v10, 6
-	lui	a0, 1048112
-	addiw	a0, a0, -1
+	lui	a0, 464
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vand.vx	v8, v8, a0, v0.t
+	vandn.vx	v8, v8, a0, v0.t
 	ret
 

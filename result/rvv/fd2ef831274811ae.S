@@ -1,22 +1,20 @@
 func0000000000000055:
 	lui	a0, 163
-	lui	a1, 512
 	addiw	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	addiw	a1, a1, -1
-	vand.vx	v10, v10, a1
+	lui	a1, 1048064
+	vandn.vx	v10, v10, a1
 	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000045:
 	lui	a0, 163
-	lui	a1, 512
 	addiw	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	addiw	a1, a1, -1
-	vand.vx	v10, v10, a1
+	lui	a1, 1048064
+	vandn.vx	v10, v10, a1
 	vmadd.vx	v8, a0, v10
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000186:
-	lui	a0, 8
-	addi	a0, a0, -1
+	lui	a0, 1048568
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vand.vx	v10, v8, a0
+	vandn.vx	v10, v8, a0
 	li	a0, -31
 	slli	a0, a0, 10
 	vmsne.vi	v12, v10, 0

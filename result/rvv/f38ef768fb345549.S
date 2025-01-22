@@ -23,10 +23,9 @@ func0000000000000087:
 	ret
 
 func0000000000000084:
-	lui	a0, 8
-	addiw	a0, a0, -1
+	lui	a0, 1048568
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	bseti	a0, zero, 48
 	vmseq.vi	v0, v12, 0
 	vor.vx	v12, v10, a0

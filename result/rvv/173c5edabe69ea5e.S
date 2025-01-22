@@ -1,8 +1,7 @@
 func000000000000003f:
-	lui	a0, 512
-	addi	a0, a0, -1
+	lui	a0, 1048064
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vwmaccu.vv	v8, v10, v11
 	ret
 

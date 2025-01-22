@@ -89,10 +89,9 @@ func00000000000000d8:
 func00000000000000c1:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
-	lui	a0, 16
-	addi	a0, a0, -1
+	lui	a0, 1048560
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	lui	a0, 8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwsll.vi	v12, v11, 8

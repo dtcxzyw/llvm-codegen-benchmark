@@ -6,8 +6,7 @@ func0000000000000000:
 	li	a0, 1619
 	vadd.vx	v8, v8, a0
 	lui	a0, 524288
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	ret
 
 func000000000000003f:
@@ -34,12 +33,12 @@ func000000000000001d:
 
 func0000000000000010:
 	li	a0, 12
-	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	addi	a0, a1, -2
+	lui	a0, 16
+	addi	a0, a0, -2
 	vadd.vx	v8, v8, a0
-	addi	a1, a1, -1
-	vand.vx	v8, v8, a1
+	lui	a0, 1048560
+	vandn.vx	v8, v8, a0
 	ret
 

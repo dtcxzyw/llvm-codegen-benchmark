@@ -14,10 +14,9 @@ func000000000000001c:
 	ret
 
 func000000000000001d:
-	lui	a0, 32768
-	addi	a0, a0, -1
+	lui	a0, 1015808
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v11, v11, a0
+	vandn.vx	v11, v11, a0
 	vadd.vv	v10, v10, v11
 	vwsubu.wv	v8, v8, v10
 	ret

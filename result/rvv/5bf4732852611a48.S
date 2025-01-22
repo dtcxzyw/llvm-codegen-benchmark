@@ -4,9 +4,8 @@ func0000000000000014:
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	vmv.v.i	v10, 0
-	lui	a0, 6144
-	addiw	a0, a0, -1
-	vand.vx	v10, v8, a0, v0.t
+	lui	a0, 1042432
+	vandn.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
 
