@@ -17,7 +17,7 @@
 	.zero	2
 	.zero	2
 func00000000000000e9:
-	vpmovdw	%xmm1, %xmm1
+	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm3
 	vpsrlw	$1, %xmm3, %xmm3

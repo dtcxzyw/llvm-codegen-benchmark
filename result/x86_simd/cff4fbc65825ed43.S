@@ -68,7 +68,7 @@ func0000000000000024:
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
 	vpmullw	.LCPI0_2(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0

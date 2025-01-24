@@ -49,9 +49,9 @@ func00000000000000a6:
 	addq	%rcx, %rdx
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm1
-	vpmovqd	%ymm1, %xmm0
-	vpmovq2m	%ymm1, %k1
+	vinserti128	$1, %xmm1, %ymm0, %ymm2
+	vpackssdw	%xmm1, %xmm0, %xmm0
+	vpmovq2m	%ymm2, %k1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq

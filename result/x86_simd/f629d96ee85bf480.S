@@ -8,7 +8,7 @@
 	.short	5243
 	.short	5243
 func0000000000000037:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
@@ -44,7 +44,7 @@ func0000000000000007:
 	.short	5243
 	.short	5243
 func0000000000000027:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0

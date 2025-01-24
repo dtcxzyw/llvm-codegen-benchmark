@@ -25,7 +25,7 @@
 	.byte	64
 	.byte	32
 func0000000000000009:
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
 	retq

@@ -42,8 +42,7 @@ func0000000000000001:
 	xorl	%edx, %edx
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpmovdw	%ymm0, %xmm0
+	vpackssdw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

@@ -21,14 +21,14 @@ func0000000000000001:
 	retq
 
 func0000000000000010:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
 func000000000000001b:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
@@ -44,13 +44,13 @@ func000000000000001b:
 	.zero	2
 	.zero	2
 func000000000000001f:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
 func000000000000000a:
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0

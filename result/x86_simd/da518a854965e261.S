@@ -171,7 +171,7 @@ func000000000000004b:
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpsrlw	$7, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpaddb	.LCPI4_1(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq

@@ -16,7 +16,7 @@
 	.zero	1
 	.zero	1
 func0000000000000013:
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
 	retq
@@ -69,7 +69,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 func0000000000000011:
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
 	retq

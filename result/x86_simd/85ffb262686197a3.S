@@ -13,7 +13,7 @@ func0000000000000002:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %xmm2, %xmm1, %xmm1
 	vpsrlvd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

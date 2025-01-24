@@ -65,7 +65,7 @@ func000000000000001b:
 	vpshufd	$245, %xmm0, %xmm0
 	vpblendd	$10, %xmm1, %xmm0, %xmm0
 	vpsrld	$13, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI1_1(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1
@@ -103,7 +103,7 @@ func000000000000001a:
 	vpshufd	$245, %xmm0, %xmm0
 	vpblendd	$10, %xmm1, %xmm0, %xmm0
 	vpsrld	$13, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI2_1(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1

@@ -29,7 +29,7 @@ func0000000000000004:
 func0000000000000035:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -64,7 +64,7 @@ func000000000000002c:
 func0000000000000002:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -78,7 +78,7 @@ func000000000000000c:
 func0000000000000025:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

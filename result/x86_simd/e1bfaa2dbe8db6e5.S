@@ -8,7 +8,7 @@
 	.short	43691
 	.short	43691
 func0000000000000121:
-	vpmovdw	%xmm1, %xmm1
+	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

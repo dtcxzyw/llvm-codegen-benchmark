@@ -21,7 +21,7 @@ func0000000000000037:
 	vpsrld	$13, %xmm1, %xmm1
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_2(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0

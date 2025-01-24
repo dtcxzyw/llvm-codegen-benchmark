@@ -9,7 +9,7 @@
 	.zero	2
 func000000000000002a:
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsraw	$15, %xmm0, %xmm1
 	vpsrlw	$13, %xmm1, %xmm1

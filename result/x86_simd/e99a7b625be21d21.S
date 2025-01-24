@@ -25,7 +25,7 @@ func0000000000000012:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

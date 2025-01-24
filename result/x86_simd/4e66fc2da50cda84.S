@@ -20,11 +20,11 @@ func0000000000000002:
 	vpblendd	$10, %xmm1, %xmm2, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
-	vpsrld	$8, %xmm1, %xmm1
+	vpsrad	$8, %xmm1, %xmm1
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpmulhw	.LCPI0_2(%rip), %xmm0, %xmm0
 	vpsrlw	$15, %xmm0, %xmm1
 	vpsraw	$4, %xmm0, %xmm0

@@ -17,7 +17,7 @@
 	.short	100
 	.short	100
 func000000000000001f:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1
@@ -46,7 +46,7 @@ func000000000000001f:
 	.short	100
 	.short	100
 func0000000000000017:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1

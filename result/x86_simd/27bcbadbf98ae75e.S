@@ -55,8 +55,7 @@ func0000000000000024:
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
+	vpackssdw	%xmm2, %xmm1, %xmm1
 	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

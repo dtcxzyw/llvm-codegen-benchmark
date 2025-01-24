@@ -185,8 +185,7 @@ func000000000000000b:
 	divq	%rcx
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vpackssdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -249,8 +248,7 @@ func0000000000000003:
 	divq	%rcx
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vpackssdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -281,8 +279,7 @@ func000000000000001b:
 	divq	%rcx
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vpackssdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

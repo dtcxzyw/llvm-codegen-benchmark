@@ -12,11 +12,11 @@ func0000000000000001:
 	vpblendd	$10, %xmm1, %xmm2, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm2
-	vpsrld	$5, %xmm1, %xmm1
+	vpsrad	$5, %xmm1, %xmm1
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

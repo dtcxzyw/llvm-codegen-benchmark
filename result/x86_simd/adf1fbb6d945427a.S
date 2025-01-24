@@ -41,7 +41,7 @@ func000000000000001f:
 	vpsrlw	$5, %xmm1, %xmm1
 	vpmullw	.LCPI0_1(%rip), %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -89,7 +89,7 @@ func0000000000000017:
 	vpsrlw	$3, %xmm1, %xmm1
 	vpmullw	.LCPI1_1(%rip), %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpord	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -140,7 +140,7 @@ func000000000000000f:
 	vpsrlw	$4, %xmm1, %xmm1
 	vpmullw	.LCPI2_1(%rip), %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpord	.LCPI2_3(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

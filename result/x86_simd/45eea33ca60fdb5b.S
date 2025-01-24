@@ -56,8 +56,7 @@ func0000000000000005:
 	idivq	%rcx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
+	vpackssdw	%xmm3, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -88,8 +87,7 @@ func0000000000000004:
 	idivq	%rcx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
+	vpackssdw	%xmm3, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -120,8 +118,7 @@ func000000000000000f:
 	idivq	%rcx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
+	vpackssdw	%xmm3, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -152,8 +149,7 @@ func0000000000000007:
 	idivq	%rcx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm4, %xmm1, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
+	vpackssdw	%xmm3, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

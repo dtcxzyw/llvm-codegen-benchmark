@@ -72,7 +72,7 @@ func0000000000000012:
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm1
 	vpmullw	.LCPI0_1(%rip), %ymm1, %ymm1
 	vpsrlw	$8, %ymm1, %ymm1

@@ -19,7 +19,7 @@
 .LCPI0_2:
 	.short	292
 func0000000000000015:
-	vpmovdw	%xmm0, %xmm0
+	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1

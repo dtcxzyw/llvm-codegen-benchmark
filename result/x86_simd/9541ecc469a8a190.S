@@ -42,8 +42,7 @@ func0000000000000010:
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
 	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpmovqd	%ymm2, %xmm2
+	vpackssdw	%xmm3, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper

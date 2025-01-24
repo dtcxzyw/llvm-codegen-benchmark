@@ -17,7 +17,7 @@
 	.short	8389
 	.short	8389
 func0000000000000025:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsrlw	$3, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -44,7 +44,7 @@ func0000000000000025:
 	.short	16481
 	.short	16481
 func0000000000000021:
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
 	vpmulhuw	.LCPI1_1(%rip), %xmm0, %xmm0

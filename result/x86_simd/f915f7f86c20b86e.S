@@ -24,7 +24,7 @@ func000000000000000b:
 	vpsrlw	$1, %xmm0, %xmm0
 	vpaddw	%xmm1, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -135,7 +135,7 @@ func0000000000000052:
 	vpaddw	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI4_1(%rip), %xmm0, %xmm0
 	vpsrlw	$7, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

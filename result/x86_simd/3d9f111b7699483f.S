@@ -83,8 +83,7 @@ func0000000000000001:
 	cwtd
 	idivw	%cx
 	vpinsrw	$7, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vpacksswb	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

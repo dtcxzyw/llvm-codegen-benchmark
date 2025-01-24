@@ -48,7 +48,7 @@ func0000000000000012:
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -83,7 +83,7 @@ func000000000000001a:
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpsrlw	$3, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

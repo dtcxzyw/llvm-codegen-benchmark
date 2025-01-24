@@ -45,8 +45,7 @@ func0000000000000001:
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovdw	%ymm0, %xmm0
+	vpackssdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

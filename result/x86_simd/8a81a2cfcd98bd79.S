@@ -61,7 +61,7 @@
 .LCPI0_4:
 	.zero	4,48
 func0000000000000013:
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
 	vpmullw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
@@ -134,7 +134,7 @@ func0000000000000013:
 .LCPI1_4:
 	.zero	4,48
 func000000000000001b:
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
 	vpmullw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0

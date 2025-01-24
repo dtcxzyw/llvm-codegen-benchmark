@@ -150,8 +150,7 @@ func0000000000000002:
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovdw	%ymm0, %xmm0
+	vpackusdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

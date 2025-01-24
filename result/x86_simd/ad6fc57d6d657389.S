@@ -83,8 +83,7 @@ func0000000000000003:
 	divq	%rcx
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vpackssdw	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

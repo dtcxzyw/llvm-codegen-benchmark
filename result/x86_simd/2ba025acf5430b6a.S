@@ -26,7 +26,7 @@ func000000000000007c:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpmovdw	%xmm1, %xmm1
+	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

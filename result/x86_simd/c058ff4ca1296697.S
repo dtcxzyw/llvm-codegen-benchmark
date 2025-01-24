@@ -14,7 +14,7 @@
 func000000000000001f:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpmovdw	%xmm1, %xmm0
+	vpackusdw	%xmm1, %xmm1, %xmm0
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0
 	vpmovzxwq	%xmm0, %ymm0

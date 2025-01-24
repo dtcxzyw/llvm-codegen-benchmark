@@ -31,7 +31,7 @@ func0000000000000007:
 	vpsrld	$11, %xmm1, %xmm1
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_2(%rip), %xmm0, %xmm1
 	vpsrlw	$5, %xmm1, %xmm1
 	vpmullw	.LCPI0_3(%rip), %xmm1, %xmm1
@@ -72,7 +72,7 @@ func000000000000000f:
 	vpsrld	$13, %xmm1, %xmm1
 	vpmulld	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI1_2(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1
@@ -114,7 +114,7 @@ func0000000000000003:
 	vpsrld	$13, %xmm1, %xmm1
 	vpmulld	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpmovdw	%xmm0, %xmm0
+	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI2_2(%rip), %xmm1, %xmm1
 	vpsrlw	$1, %xmm1, %xmm1

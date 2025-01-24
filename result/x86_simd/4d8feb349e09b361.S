@@ -69,7 +69,7 @@ func0000000000000025:
 	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpsrlw	$1, %xmm0, %xmm0
-	vpmovwb	%xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

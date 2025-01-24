@@ -14,7 +14,7 @@
 .LCPI0_3:
 	.short	32
 func00000000000003e9:
-	vpmovdw	%xmm1, %xmm1
+	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpbroadcastw	.LCPI0_3(%rip), %xmm2
 	vpsubw	%xmm1, %xmm2, %xmm1
 	vpcmpltud	.LCPI0_1(%rip){1to4}, %xmm0, %k1
