@@ -5,7 +5,6 @@ func0000000000000002:
 
 func0000000000000003:
 	sub	w8, w0, w1
-	and	w8, w8, #0xffff
-	lsl	w0, w8, #4
+	ubfiz	w0, w8, #4, #16
 	ret
 

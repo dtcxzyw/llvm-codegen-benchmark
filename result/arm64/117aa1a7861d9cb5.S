@@ -13,7 +13,6 @@ func00000000000000c1:
 
 func00000000000000e1:
 	lsr	x8, x0, x1
-	and	w8, w8, #0x1
-	lsl	w0, w8, #1
+	ubfiz	w0, w8, #1, #1
 	ret
 

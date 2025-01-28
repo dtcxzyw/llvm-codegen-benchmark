@@ -1,8 +1,8 @@
 func000000000000002e:
-	and	x8, x2, #0xffff
+	ubfiz	x8, x2, #20, #16
 	mov	w9, w1
-	orr	x8, x9, x8, lsl #20
-	orr	x0, x8, x0
+	orr	x9, x9, x0
+	orr	x0, x8, x9
 	ret
 
 func000000000000000f:

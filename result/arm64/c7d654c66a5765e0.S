@@ -9,14 +9,14 @@ func000000000000000b:
 	ret
 
 func000000000000001f:
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #6
+	ubfiz	w8, w1, #6, #8
+	orr	w8, w8, w0
 	and	w0, w8, #0xffff
 	ret
 
 func000000000000000f:
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #2
+	ubfiz	w8, w1, #2, #8
+	orr	w8, w8, w0
 	and	w0, w8, #0xffff
 	ret
 

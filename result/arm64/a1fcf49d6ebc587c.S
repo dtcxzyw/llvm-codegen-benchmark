@@ -5,8 +5,7 @@ func000000000000001a:
 
 func0000000000000003:
 	add	w8, w0, w1
-	and	w8, w8, #0xff
-	lsl	w0, w8, #12
+	ubfiz	w0, w8, #12, #8
 	ret
 
 func0000000000000002:
@@ -16,7 +15,6 @@ func0000000000000002:
 
 func000000000000001b:
 	add	w8, w0, w1
-	and	w8, w8, #0xff
-	lsl	w0, w8, #16
+	ubfiz	w0, w8, #16, #8
 	ret
 

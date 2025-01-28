@@ -1,11 +1,9 @@
 func0000000000000003:
-	and	w8, w0, #0xff
-	lsl	w0, w8, #3
+	ubfiz	w0, w0, #3, #8
 	ret
 
 func0000000000000007:
-	and	w8, w0, #0xff
-	lsl	w0, w8, #8
+	ubfiz	w0, w0, #8, #8
 	ret
 
 func0000000000000002:

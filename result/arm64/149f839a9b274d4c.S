@@ -1,7 +1,6 @@
 func0000000000000072:
-	lsl	x8, x0, #9
-	and	x9, x1, #0xff
-	orr	x8, x8, x9, lsl #3
+	ubfiz	x8, x1, #3, #8
+	orr	x8, x8, x0, lsl #9
 	rev	x0, x8
 	ret
 

@@ -1,12 +1,11 @@
 func000000000000001f:
-	and	x8, x1, #0x3f
+	ubfiz	x8, x1, #6, #6
 	and	x9, x0, #0xff
-	orr	x0, x9, x8, lsl #6
+	orr	x0, x8, x9
 	ret
 
 func0000000000000007:
-	and	x8, x1, #0xc0
-	lsr	x8, x8, #6
+	lsr	x8, x1, #6
 	and	x0, x0, #0xff
 	bfi	x0, x8, #14, #2
 	ret

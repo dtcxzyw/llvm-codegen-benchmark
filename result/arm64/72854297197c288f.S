@@ -13,9 +13,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	and	x8, x1, #0x7f
+	ubfiz	x8, x1, #2, #7
 	and	x9, x0, #0xffffffffffffffe3
-	orr	x8, x9, x8, lsl #2
+	orr	x8, x9, x8
 	orr	x0, x8, #0x200
 	ret
 

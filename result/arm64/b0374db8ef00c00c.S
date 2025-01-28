@@ -3,8 +3,8 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	and	w8, w1, #0xffff
-	orr	w0, w0, w8, lsl #7
+	ubfiz	w8, w1, #7, #16
+	orr	w0, w8, w0
 	ret
 
 func000000000000001a:

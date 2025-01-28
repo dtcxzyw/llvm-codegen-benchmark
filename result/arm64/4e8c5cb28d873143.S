@@ -1,14 +1,12 @@
 func000000000000003f:
-	and	w8, w2, #0xff
+	ubfiz	w8, w2, #23, #8
 	orr	w9, w0, w1
-	lsl	w8, w8, #23
 	orr	w0, w8, w9, lsl #7
 	ret
 
 func000000000000003c:
-	and	w8, w2, #0xff
+	ubfiz	w8, w2, #16, #8
 	orr	w9, w0, w1
-	lsl	w8, w8, #16
 	orr	w0, w8, w9, lsl #8
 	ret
 

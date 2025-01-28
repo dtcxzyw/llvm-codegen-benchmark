@@ -4,32 +4,32 @@ func000000000000002f:
 	ret
 
 func000000000000003f:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #8
 	ret
 
 func0000000000000032:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w2, #8, #8
+	orr	w8, w0, w8
 	orr	w0, w8, w1, lsl #24
 	ret
 
 func000000000000003b:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #24
 	ret
 
 func000000000000003d:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w8, w1
 	orr	w0, w8, w0, lsl #24
 	ret
 
 func000000000000007f:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #12
+	ubfiz	w8, w2, #12, #8
+	orr	w8, w8, w1
 	orr	w0, w8, w0, lsl #6
 	ret
 
@@ -39,20 +39,20 @@ func000000000000002c:
 	ret
 
 func0000000000000030:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w0, w8
 	orr	w0, w8, w1, lsl #10
 	ret
 
 func000000000000003c:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #12
+	ubfiz	w8, w2, #12, #8
+	orr	w8, w0, w8
 	orr	w0, w8, w1, lsl #8
 	ret
 
 func0000000000000079:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #15
+	ubfiz	w8, w2, #15, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #16
 	ret
 
@@ -62,8 +62,8 @@ func000000000000002e:
 	ret
 
 func000000000000007c:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #12
+	ubfiz	w8, w2, #12, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #6
 	ret
 
@@ -73,20 +73,20 @@ func000000000000000c:
 	ret
 
 func0000000000000037:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w2, #8, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #16
 	ret
 
 func0000000000000073:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #5
+	ubfiz	w8, w2, #5, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #10
 	ret
 
 func000000000000007a:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #24
 	ret
 
@@ -96,38 +96,38 @@ func0000000000000020:
 	ret
 
 func0000000000000038:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #10
+	ubfiz	w8, w2, #10, #8
+	orr	w8, w8, w1
 	orr	w0, w8, w0, lsl #12
 	ret
 
 func000000000000003e:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #10
+	ubfiz	w8, w2, #10, #8
+	orr	w8, w8, w1
 	orr	w0, w8, w0, lsl #16
 	ret
 
 func000000000000007d:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #21
 	ret
 
 func0000000000000033:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #22
+	ubfiz	w8, w2, #22, #8
+	orr	w8, w0, w8
 	orr	w0, w8, w1, lsl #30
 	ret
 
 func000000000000007e:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #5
+	ubfiz	w8, w2, #5, #8
+	orr	w8, w8, w0
 	orr	w0, w8, w1, lsl #16
 	ret
 
 func0000000000000071:
-	and	w8, w2, #0xff
-	orr	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	orr	w8, w0, w8
 	orr	w0, w8, w1, lsl #21
 	ret
 
@@ -142,14 +142,14 @@ func000000000000006f:
 	ret
 
 func0000000000000070:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #11
+	ubfiz	w8, w2, #11, #8
+	orr	w8, w1, w8
 	orr	w0, w8, w0, lsl #3
 	ret
 
 func0000000000000076:
-	and	w8, w2, #0xff
-	orr	w8, w1, w8, lsl #11
+	ubfiz	w8, w2, #11, #8
+	orr	w8, w1, w8
 	orr	w0, w8, w0, lsl #3
 	ret
 

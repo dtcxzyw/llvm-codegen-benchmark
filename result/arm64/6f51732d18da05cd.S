@@ -7,15 +7,15 @@ func0000000000000050:
 	ret
 
 func000000000000007f:
-	and	w8, w2, #0xffff
-	orr	w8, w1, w8, lsl #8
+	ubfiz	w8, w2, #8, #16
+	orr	w8, w8, w1
 	add	w8, w8, w0
 	add	w0, w8, #1
 	ret
 
 func00000000000000fc:
-	and	w8, w2, #0xffff
-	orr	w8, w1, w8, lsl #1
+	ubfiz	w8, w2, #1, #16
+	orr	w8, w1, w8
 	add	w8, w8, w0
 	add	w0, w8, #6
 	ret

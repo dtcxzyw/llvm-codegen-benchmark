@@ -11,7 +11,6 @@ func000000000000000b:
 
 func0000000000000003:
 	orr	w8, w0, w1
-	and	x8, x8, #0xff
-	lsl	x0, x8, #8
+	ubfiz	x0, x8, #8, #8
 	ret
 

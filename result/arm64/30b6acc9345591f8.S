@@ -1,9 +1,9 @@
 func000000000000001e:
-	and	w8, w2, #0xff
+	ubfiz	w8, w2, #8, #8
+	orr	w9, w1, w0
+	orr	w8, w9, w8
 	mov	w9, #43691
-	orr	w8, w1, w8, lsl #8
 	movk	w9, #43690, lsl #16
-	orr	w8, w8, w0
 	umull	x8, w8, w9
 	lsr	x0, x8, #33
 	ret

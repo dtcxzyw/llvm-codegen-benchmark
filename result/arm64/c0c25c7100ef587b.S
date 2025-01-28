@@ -5,9 +5,10 @@ func0000000000000016:
 	ret
 
 func000000000000001e:
-	and	w8, w2, #0xfe
+	lsl	w8, w2, #8
 	orr	w9, w0, w1
-	orr	w8, w9, w8, lsl #8
+	and	w8, w8, #0xfe00
+	orr	w8, w9, w8
 	lsr	w0, w8, #9
 	ret
 

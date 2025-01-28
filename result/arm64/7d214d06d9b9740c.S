@@ -5,33 +5,33 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	and	x8, x1, #0x300
-	and	x9, x2, #0xff
-	orr	x8, x8, x0
-	orr	x0, x8, x9, lsl #16
+	ubfiz	x8, x2, #16, #8
+	and	x9, x1, #0x300
+	orr	x9, x9, x0
+	orr	x0, x9, x8
 	ret
 
 func000000000000001f:
 	mov	x8, #-7169
-	and	x9, x1, #0xff
+	ubfiz	x9, x1, #18, #8
 	movk	x8, #65531, lsl #16
 	movk	x8, #65534, lsl #32
 	and	x8, x2, x8
 	orr	x8, x0, x8
-	orr	x0, x8, x9, lsl #18
+	orr	x0, x9, x8
 	ret
 
 func000000000000000c:
-	and	x8, x1, #0x8000
-	and	x9, x2, #0xff
-	orr	x8, x0, x8
-	orr	x0, x8, x9, lsl #3
+	ubfiz	x8, x2, #3, #8
+	and	x9, x1, #0x8000
+	orr	x9, x0, x9
+	orr	x0, x9, x8
 	ret
 
 func000000000000001c:
-	and	x8, x1, #0xf00
-	and	x9, x2, #0xff
-	orr	x8, x0, x8
-	orr	x0, x8, x9, lsl #12
+	ubfiz	x8, x2, #12, #8
+	and	x9, x1, #0xf00
+	orr	x9, x0, x9
+	orr	x0, x9, x8
 	ret
 

@@ -6,10 +6,9 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	and	x9, x1, #0xff
+	ubfiz	x9, x1, #16, #8
 	mov	w8, #655360
 	tst	w0, #0x1
-	lsl	x9, x9, #16
 	csel	x0, x8, x9, ne
 	ret
 

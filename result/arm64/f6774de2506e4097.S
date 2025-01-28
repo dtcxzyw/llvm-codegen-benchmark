@@ -1,18 +1,19 @@
 func000000000000001d:
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w1, #8, #8
+	orr	w8, w8, w0
 	lsr	w0, w8, #1
 	ret
 
 func000000000000001f:
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #5
+	ubfiz	w8, w1, #5, #8
+	orr	w8, w8, w0
 	lsr	w0, w8, #3
 	ret
 
 func0000000000000019:
-	and	w8, w1, #0xfc
-	orr	w8, w0, w8, lsl #16
+	lsl	w8, w1, #16
+	and	w8, w8, #0xfc0000
+	orr	w8, w8, w0
 	lsr	w0, w8, #18
 	ret
 

@@ -10,9 +10,9 @@ func000000000000003c:
 	ret
 
 func000000000000003f:
-	and	x8, x2, #0xff
+	lsl	w8, w2, #24
 	orr	x9, x0, x1
-	orr	x8, x9, x8, lsl #24
+	orr	x8, x9, x8
 	mov	w9, #42941
 	movk	w9, #7733, lsl #16
 	mul	x0, x8, x9

@@ -5,18 +5,16 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	and	w9, w1, #0xff
+	ubfiz	w9, w1, #10, #8
 	mov	w8, #4096
 	tst	w0, #0x1
-	lsl	w9, w9, #10
 	csel	w0, w8, w9, ne
 	ret
 
 func0000000000000007:
-	and	w9, w1, #0xff
+	ubfiz	w9, w1, #10, #8
 	mov	w8, #16384
 	tst	w0, #0x1
-	lsl	w9, w9, #10
 	csel	w0, w8, w9, ne
 	ret
 

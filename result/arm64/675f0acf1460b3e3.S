@@ -1,16 +1,14 @@
 func00000000000003f4:
-	lsl	w8, w0, #8
-	and	w9, w1, #0xff
-	orr	w8, w8, w9, lsl #16
+	ubfiz	w8, w1, #16, #8
+	orr	w8, w8, w0, lsl #8
 	lsr	w8, w8, #8
 	cmp	w8, #17
 	cset	w0, lo
 	ret
 
 func00000000000003e1:
-	lsl	w8, w0, #8
-	and	w9, w1, #0xff
-	orr	w8, w8, w9, lsl #16
+	ubfiz	w8, w1, #16, #8
+	orr	w8, w8, w0, lsl #8
 	cmp	w8, #0
 	cset	w0, eq
 	ret
@@ -39,25 +37,21 @@ func00000000000002ec:
 	ret
 
 func00000000000003a1:
-	and	w8, w1, #0xff
-	and	w9, w0, #0xffff
-	orr	w8, w9, w8, lsl #8
-	cmp	w8, #0
+	orr	w8, w0, w1, lsl #8
+	tst	w8, #0xffff
 	cset	w0, eq
 	ret
 
 func00000000000007f4:
-	lsl	w8, w0, #12
-	and	w9, w1, #0xff
-	orr	w8, w8, w9, lsl #18
+	ubfiz	w8, w1, #18, #8
+	orr	w8, w8, w0, lsl #12
 	cmp	w8, #16, lsl #12
 	cset	w0, lo
 	ret
 
 func00000000000007f8:
-	lsl	w8, w0, #6
-	and	w9, w1, #0xff
-	orr	w8, w8, w9, lsl #12
+	ubfiz	w8, w1, #12, #8
+	orr	w8, w8, w0, lsl #6
 	lsr	w8, w8, #10
 	cmp	w8, #54
 	cset	w0, hi
@@ -71,8 +65,7 @@ func00000000000002e4:
 	ret
 
 func00000000000003f8:
-	and	w8, w1, #0xff
-	lsl	w8, w8, #8
+	ubfiz	w8, w1, #8, #8
 	orr	w8, w8, w0, lsl #16
 	cmp	w8, #16, lsl #12
 	cset	w0, hi

@@ -5,16 +5,14 @@ func000000000000007f:
 	ret
 
 func000000000000007c:
-	lsl	w8, w1, #4
-	and	w9, w2, #0xff
-	orr	w8, w8, w9, lsl #12
+	ubfiz	w8, w2, #12, #8
+	orr	w8, w8, w1, lsl #4
 	add	w0, w8, w0
 	ret
 
 func000000000000007d:
-	lsl	w8, w1, #4
-	and	w9, w2, #0xff
-	orr	w8, w8, w9, lsl #12
+	ubfiz	w8, w2, #12, #8
+	orr	w8, w8, w1, lsl #4
 	add	w0, w0, w8
 	ret
 

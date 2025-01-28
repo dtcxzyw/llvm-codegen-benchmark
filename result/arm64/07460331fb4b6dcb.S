@@ -31,10 +31,10 @@ func0000000000000010:
 	ret
 
 func000000000000001a:
-	and	x8, x2, #0xffff
+	ubfiz	x8, x2, #24, #16
 	mov	w9, w1
-	orr	x8, x0, x8, lsl #24
-	orr	x0, x8, x9
+	orr	x9, x0, x9
+	orr	x0, x9, x8
 	ret
 
 func0000000000000012:

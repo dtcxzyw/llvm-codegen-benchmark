@@ -4,20 +4,20 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	and	w8, w2, #0xff
-	eor	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	eor	w8, w0, w8
 	eor	w0, w8, w1, lsl #8
 	ret
 
 func000000000000000e:
-	and	w8, w2, #0xff
-	eor	w8, w0, w8, lsl #16
+	ubfiz	w8, w2, #16, #8
+	eor	w8, w0, w8
 	eor	w0, w8, w1, lsl #24
 	ret
 
 func000000000000000c:
-	and	w8, w2, #0xff
-	eor	w8, w0, w8, lsl #8
+	ubfiz	w8, w2, #8, #8
+	eor	w8, w8, w0
 	eor	w0, w8, w1, lsl #5
 	ret
 

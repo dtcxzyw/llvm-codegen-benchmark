@@ -5,7 +5,6 @@ func0000000000000007:
 
 func0000000000000003:
 	eor	w8, w0, #0x2
-	and	x8, x8, #0xff
-	lsl	x0, x8, #2
+	ubfiz	x0, x8, #2, #8
 	ret
 

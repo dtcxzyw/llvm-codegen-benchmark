@@ -13,10 +13,10 @@ func000000000000003f:
 	ret
 
 func000000000000000f:
-	and	x8, x0, #0xffff
+	lsl	w8, w1, #16
 	mov	x9, #259484744155136
-	bfi	x8, x1, #16, #16
 	movk	x9, #47701, lsl #48
+	bfxil	x8, x0, #0, #16
 	orr	x0, x8, x9
 	ret
 

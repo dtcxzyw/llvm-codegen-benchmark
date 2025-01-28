@@ -1,7 +1,7 @@
 func000000000000001f:
-	and	x8, x2, #0x7f
+	ubfiz	x8, x2, #14, #7
 	orr	x9, x0, x1
-	orr	x0, x9, x8, lsl #14
+	orr	x0, x8, x9
 	ret
 
 func000000000000001e:
@@ -17,9 +17,9 @@ func0000000000000016:
 	ret
 
 func000000000000001c:
-	and	x8, x2, #0x1
+	ubfiz	x8, x2, #30, #1
 	orr	x9, x0, x1
-	orr	x0, x9, x8, lsl #30
+	orr	x0, x9, x8
 	ret
 
 func0000000000000018:

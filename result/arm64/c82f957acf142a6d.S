@@ -1,13 +1,13 @@
 func000000000000003f:
-	orr	x8, x0, x1, lsl #9
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #1
+	ubfiz	x8, x2, #1, #8
+	orr	x9, x0, x1, lsl #9
+	orr	x0, x9, x8
 	ret
 
 func000000000000001f:
-	orr	x8, x0, x1, lsl #17
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #1
+	ubfiz	x8, x2, #1, #8
+	orr	x9, x0, x1, lsl #17
+	orr	x0, x9, x8
 	ret
 
 func000000000000003b:
@@ -22,15 +22,15 @@ func000000000000002f:
 	ret
 
 func000000000000003e:
-	orr	x8, x0, x1, lsl #16
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #8
+	ubfiz	x8, x2, #8, #8
+	orr	x9, x0, x1, lsl #16
+	orr	x0, x9, x8
 	ret
 
 func000000000000006f:
 	orr	x8, x0, x2, lsl #24
-	and	x9, x1, #0xff
-	orr	x0, x8, x9, lsl #8
+	ubfiz	x9, x1, #8, #8
+	orr	x0, x9, x8
 	ret
 
 func000000000000004f:
@@ -41,8 +41,8 @@ func000000000000004f:
 
 func000000000000006e:
 	orr	x8, x0, x2, lsl #16
-	and	x9, x1, #0xff
-	orr	x0, x8, x9, lsl #8
+	ubfiz	x9, x1, #8, #8
+	orr	x0, x9, x8
 	ret
 
 func0000000000000038:
@@ -52,8 +52,8 @@ func0000000000000038:
 
 func000000000000007f:
 	orr	x8, x0, x2, lsl #7
-	and	x9, x1, #0xff
-	orr	x0, x8, x9, lsl #14
+	ubfiz	x9, x1, #14, #8
+	orr	x0, x9, x8
 	ret
 
 func000000000000007e:
@@ -85,9 +85,9 @@ func000000000000003c:
 	ret
 
 func000000000000000c:
-	orr	x8, x0, x1, lsl #6
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #3
+	ubfiz	x8, x2, #3, #8
+	orr	x9, x0, x1, lsl #6
+	orr	x0, x9, x8
 	ret
 
 func000000000000007c:
@@ -109,14 +109,14 @@ func0000000000000064:
 
 func0000000000000066:
 	orr	x8, x0, x2, lsl #8
-	and	x9, x1, #0xff
-	orr	x0, x8, x9, lsl #16
+	ubfiz	x9, x1, #16, #8
+	orr	x0, x9, x8
 	ret
 
 func000000000000000f:
-	orr	x8, x0, x1, lsl #40
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #24
+	lsl	w8, w2, #24
+	orr	x9, x0, x1, lsl #40
+	orr	x0, x9, x8
 	ret
 
 func0000000000000048:
@@ -125,8 +125,8 @@ func0000000000000048:
 	ret
 
 func000000000000003d:
-	orr	x8, x0, x1, lsl #16
-	and	x9, x2, #0xff
-	orr	x0, x8, x9, lsl #8
+	ubfiz	x8, x2, #8, #8
+	orr	x9, x0, x1, lsl #16
+	orr	x0, x9, x8
 	ret
 

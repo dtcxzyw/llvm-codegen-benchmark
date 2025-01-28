@@ -1,12 +1,12 @@
 func000000000000001f:
-	and	x8, x1, #0xff
-	orr	x8, x0, x8, lsl #8
+	ubfiz	x8, x1, #8, #8
+	orr	x8, x8, x0
 	add	x0, x8, #5
 	ret
 
 func000000000000001d:
-	and	x8, x1, #0xff
-	orr	x8, x0, x8, lsl #8
+	ubfiz	x8, x1, #8, #8
+	orr	x8, x8, x0
 	sub	x0, x8, #6
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000017:
 	ret
 
 func0000000000000019:
-	and	x8, x1, #0xff
-	mov	x9, #-2147483648
-	orr	x8, x0, x8, lsl #24
-	add	x0, x8, x9
+	lsl	w9, w1, #24
+	mov	x8, #-2147483648
+	orr	x9, x0, x9
+	add	x0, x9, x8
 	ret
 

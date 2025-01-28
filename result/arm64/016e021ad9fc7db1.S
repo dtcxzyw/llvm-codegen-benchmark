@@ -9,9 +9,8 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	and	w8, w1, #0xff
-	and	w9, w0, #0xffff
-	orr	w0, w9, w8, lsl #8
+	orr	w8, w0, w1, lsl #8
+	and	w0, w8, #0xffff
 	ret
 
 func000000000000000a:

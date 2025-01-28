@@ -23,8 +23,8 @@ func000000000000001f:
 	ret
 
 func0000000000000018:
-	and	w8, w1, #0xff
+	ubfiz	w8, w1, #21, #8
 	sub	w9, w0, #32, lsl #12
-	orr	w0, w9, w8, lsl #21
+	orr	w0, w9, w8
 	ret
 
