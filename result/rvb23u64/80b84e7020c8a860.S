@@ -52,12 +52,10 @@ func0000000000000030:
 
 func0000000000000028:
 	andi	a0, a0, 1
-	sext.w	a2, a2
+	sraiw	a2, a2, 31
 	lui	a3, 4
+	andi	a2, a2, -8
 	czero.nez	a0, a3, a0
-	li	a3, -8
-	slti	a2, a2, 0
-	czero.eqz	a2, a3, a2
 	addi	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2

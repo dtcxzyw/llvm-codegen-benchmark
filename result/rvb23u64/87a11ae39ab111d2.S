@@ -80,12 +80,10 @@ func0000000000000086:
 
 func0000000000000364:
 	sext.w	a0, a0
-	sext.b	a2, a2
-	slti	a2, a2, 0
-	li	a3, -8
-	czero.nez	a2, a3, a2
+	srli	a2, a2, 4
+	andi	a2, a2, 8
 	add	a1, a1, a2
-	addiw	a1, a1, 9
+	addiw	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
 

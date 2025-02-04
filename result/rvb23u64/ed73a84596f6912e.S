@@ -127,12 +127,10 @@ func0000000000000010:
 	ret
 
 func000000000000001b:
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, -8
-	czero.nez	a1, a2, a1
+	srli	a1, a1, 4
+	andi	a1, a1, 8
 	add	a0, a0, a1
-	addiw	a0, a0, 9
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000061:

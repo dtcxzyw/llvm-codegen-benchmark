@@ -35,10 +35,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	srli	a0, a0, 28
+	andi	a0, a0, 8
 	addi	a0, a0, 24
 	ret
 

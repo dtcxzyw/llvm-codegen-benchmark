@@ -104,12 +104,11 @@ func000000000000002b:
 	ret
 
 func000000000000001a:
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, 32
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 56
+	srai	a1, a1, 63
+	andi	a1, a1, -32
 	add	a0, a0, a1
-	addi	a0, a0, -448
+	addi	a0, a0, -416
 	ret
 
 func0000000000000020:

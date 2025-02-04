@@ -68,10 +68,8 @@ func0000000000000005:
 	ret
 
 func0000000000000028:
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	sraiw	a1, a1, 31
+	andi	a1, a1, -8
 	addi	a1, a1, 16
 	or	a0, a0, a1
 	bseti	a0, a0, 14

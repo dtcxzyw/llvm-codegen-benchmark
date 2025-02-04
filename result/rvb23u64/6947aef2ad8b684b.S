@@ -198,12 +198,10 @@ func0000000000000060:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	li	a2, 24
-	czero.nez	a1, a2, a1
+	sraiw	a1, a1, 31
+	andi	a1, a1, -24
 	add	a0, a0, a1
-	addiw	a0, a0, 88
+	addiw	a0, a0, 112
 	ret
 
 func0000000000000012:

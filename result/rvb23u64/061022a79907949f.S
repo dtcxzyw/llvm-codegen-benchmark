@@ -69,10 +69,8 @@ func0000000000000108:
 	ret
 
 func0000000000000148:
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	li	a2, 5
-	czero.eqz	a1, a2, a1
+	sraiw	a1, a1, 31
+	andi	a1, a1, 5
 	addi	a1, a1, 4
 	sltu	a0, a0, a1
 	ret

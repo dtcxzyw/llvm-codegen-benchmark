@@ -83,10 +83,8 @@ func0000000000000007:
 	ret
 
 func000000000000002b:
-	slti	a1, a1, 0
-	li	a2, 4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	srli	a1, a1, 63
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 5
 	ret
 

@@ -80,10 +80,8 @@ func0000000000000040:
 	ret
 
 func00000000000000af:
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	srli	a1, a1, 6
+	andi	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

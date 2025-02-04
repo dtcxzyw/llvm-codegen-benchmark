@@ -108,10 +108,8 @@ func000000000000004f:
 	ret
 
 func00000000000000a0:
-	sext.w	a2, a2
-	li	a3, 8
-	slti	a2, a2, 0
-	czero.eqz	a2, a3, a2
+	srli	a2, a2, 28
+	andi	a2, a2, 8
 	sh2add	a0, a1, a0
 	add	a0, a0, a2
 	addi	a0, a0, -4
@@ -135,14 +133,12 @@ func0000000000000018:
 	ret
 
 func000000000000006b:
-	sext.w	a2, a2
-	li	a3, -4
+	srli	a2, a2, 29
 	sh2add	a1, a1, a1
-	slti	a2, a2, 0
-	czero.nez	a2, a3, a2
+	andi	a2, a2, 4
 	sh2add	a0, a1, a0
 	add	a0, a0, a2
-	addi	a0, a0, 8
+	addi	a0, a0, 4
 	ret
 
 func00000000000000c0:

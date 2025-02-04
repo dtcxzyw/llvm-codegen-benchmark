@@ -23,10 +23,8 @@ func0000000000000011:
 	ret
 
 func000000000000000d:
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	li	a1, 8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 4
+	sraiw	a0, a0, 31
+	andi	a0, a0, -8
+	addi	a0, a0, 12
 	ret
 
