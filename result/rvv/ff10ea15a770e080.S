@@ -6,9 +6,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsext.vf2	v12, v10
-	vsll.vi	v10, v12, 2
-	vadd.vv	v8, v8, v10
+	li	a0, 4
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vwmaccus.vx	v8, a0, v10
 	ret
 

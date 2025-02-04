@@ -8,10 +8,10 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vadd.vi	v8, v9, 1, v0.t
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v10, v8
-	vsll.vi	v8, v10, 4
+	vwmulsu.vx	v10, v8, a0
+	vmv2r.v	v8, v10
 	ret
 

@@ -1,10 +1,12 @@
 func00000000000000a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v10, v8
-	vsll.vi	v8, v10, 3
-	vadd.vi	v8, v8, 8
+	vmv.v.i	v10, 8
+	li	a0, 8
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwmaccus.vx	v10, a0, v8
 	li	a0, 1024
-	vmsltu.vx	v0, v8, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsltu.vx	v0, v10, a0
 	ret
 
 func00000000000000a1:

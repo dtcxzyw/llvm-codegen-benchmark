@@ -1,8 +1,10 @@
 func0000000000000050:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v14, v12
-	vsll.vi	v12, v14, 2
-	vadd.vi	v12, v12, -4
-	vmacc.vv	v8, v10, v12
+	vmv.v.i	v14, -4
+	li	a0, 4
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwmaccus.vx	v14, a0, v12
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmacc.vv	v8, v10, v14
 	ret
 
