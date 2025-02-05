@@ -1,7 +1,8 @@
 func00000000000000dc:
-	leal	-1(%rsi,%rdi), %eax
-	negl	%edi
-	andl	%edi, %eax
+	movq	%rdi, %rax
+	leal	-1(%rsi,%rdi), %ecx
+	negl	%eax
+	andl	%ecx, %eax
 	shlq	$32, %rax
 	retq
 
@@ -27,9 +28,10 @@ func0000000000000057:
 	retq
 
 func0000000000000050:
-	leal	-1(%rsi,%rdi), %eax
-	negl	%edi
-	andl	%edi, %eax
+	movq	%rdi, %rax
+	leal	-1(%rsi,%rdi), %ecx
+	negl	%eax
+	andl	%ecx, %eax
 	shlq	$32, %rax
 	retq
 

@@ -1,7 +1,7 @@
 func000000000000000a:
 	leal	63(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
+	movl	%edx, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	cltq
@@ -10,8 +10,8 @@ func000000000000000a:
 
 func0000000000000002:
 	leal	7(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
+	movl	%edx, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$3, %eax
 	cltq
@@ -20,8 +20,8 @@ func0000000000000002:
 
 func000000000000006a:
 	leal	63(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
+	movl	%edx, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	cltq
@@ -30,8 +30,8 @@ func000000000000006a:
 
 func0000000000000062:
 	leal	63(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
+	movl	%edx, %ecx
+	addl	%esi, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$6, %eax
 	cltq

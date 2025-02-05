@@ -1,7 +1,6 @@
 func0000000000000020:
 	shrq	$2, %rdi
-	movl	%edi, %eax
-	addl	$-5432, %eax
+	leal	-5432(%rdi), %eax
 	shrl	$31, %eax
 	leal	-5432(%rdi,%rax), %eax
 	sarl	%eax
@@ -18,8 +17,7 @@ func0000000000000024:
 
 func0000000000000022:
 	shrq	$2, %rdi
-	movl	%edi, %eax
-	addl	$3, %eax
+	leal	3(%rdi), %eax
 	shrl	$31, %eax
 	leal	3(%rdi,%rax), %eax
 	sarl	%eax

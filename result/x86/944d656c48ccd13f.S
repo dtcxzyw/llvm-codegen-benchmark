@@ -21,8 +21,7 @@ func0000000000000024:
 func0000000000000022:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
-	movl	%edi, %eax
-	incl	%eax
+	leal	1(%rdi), %eax
 	shrl	$31, %eax
 	leal	1(%rdi,%rax), %eax
 	sarl	%eax

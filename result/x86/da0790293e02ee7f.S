@@ -1,7 +1,7 @@
 func0000000000000000:
 	leal	7(%rdi,%rsi), %ecx
-	movl	%edi, %eax
-	addl	%esi, %eax
+	movl	%esi, %eax
+	addl	%edi, %eax
 	cmovnsl	%eax, %ecx
 	andl	$-8, %ecx
 	subl	%ecx, %eax

@@ -1,6 +1,5 @@
 func0000000000000000:
-	movl	%edi, %eax
-	addl	$4, %eax
+	leal	4(%rdi), %eax
 	cltq
 	imulq	$-1840700269, %rax, %rax
 	shrq	$32, %rax

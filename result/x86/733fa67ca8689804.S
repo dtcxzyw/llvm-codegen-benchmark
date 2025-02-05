@@ -1,19 +1,19 @@
 func000000000000003d:
-	leal	(%rsi,%rdx), %ecx
+	leal	(%rdx,%rsi), %ecx
 	leal	-1000000000(%rsi,%rdx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
 
 func0000000000000004:
-	leal	(%rsi,%rdx), %ecx
+	leal	(%rdx,%rsi), %ecx
 	leal	4(%rsi,%rdx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
 
 func0000000000000000:
-	leal	(%rsi,%rdx), %ecx
+	leal	(%rdx,%rsi), %ecx
 	leal	32(%rsi,%rdx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax

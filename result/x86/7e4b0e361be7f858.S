@@ -1,8 +1,7 @@
 func0000000000000020:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
-	movl	%edi, %eax
-	addl	$-5432, %eax
+	leal	-5432(%rdi), %eax
 	shrl	$31, %eax
 	leal	-5432(%rdi,%rax), %eax
 	sarl	%eax
