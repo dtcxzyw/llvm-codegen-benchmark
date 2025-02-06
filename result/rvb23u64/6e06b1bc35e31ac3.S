@@ -168,12 +168,10 @@ func00000000000000d4:
 	ret
 
 func0000000000000144:
-	sext.w	a1, a0
-	li	a2, 24
+	sraiw	a1, a0, 31
 	srliw	a0, a0, 19
-	slti	a1, a1, 0
-	czero.eqz	a1, a2, a1
 	li	a2, 12
+	andi	a1, a1, 24
 	addi	a1, a1, 36
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

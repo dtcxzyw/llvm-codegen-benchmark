@@ -300,12 +300,10 @@ func0000000000000081:
 	ret
 
 func0000000000000144:
-	sext.w	a1, a0
-	li	a2, 12
+	sraiw	a1, a0, 31
 	srliw	a0, a0, 19
-	slti	a1, a1, 0
-	czero.eqz	a1, a2, a1
 	li	a2, 6
+	andi	a1, a1, 12
 	addi	a1, a1, 18
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

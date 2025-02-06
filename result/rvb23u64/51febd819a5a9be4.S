@@ -34,11 +34,10 @@ func0000000000000023:
 	ret
 
 func000000000000001a:
-	slti	a1, a1, 0
-	li	a2, 16
-	czero.nez	a1, a2, a1
+	srai	a1, a1, 63
+	andi	a1, a1, -16
 	add	a0, a0, a1
-	addi	a0, a0, -32
+	addi	a0, a0, -16
 	ret
 
 func0000000000000053:
@@ -75,11 +74,9 @@ func0000000000000030:
 	ret
 
 func000000000000001b:
-	slti	a1, a1, 0
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 200
+	srli	a1, a1, 63
+	sh3add	a0, a1, a0
+	addi	a0, a0, 192
 	ret
 
 func0000000000000012:

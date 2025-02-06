@@ -1,8 +1,7 @@
 func000000000000000a:
 	andi	a0, a0, 1
-	slti	a2, a2, 0
-	li	a3, -128
-	czero.eqz	a2, a3, a2
+	srai	a2, a2, 63
+	andi	a2, a2, -128
 	addi	a2, a2, 406
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

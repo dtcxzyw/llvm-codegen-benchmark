@@ -44,11 +44,9 @@ func0000000000000010:
 
 func000000000000002b:
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	li	a3, 24
-	slti	a2, a2, 0
-	czero.eqz	a2, a3, a2
+	sraiw	a2, a2, 31
 	li	a3, 12
+	andi	a2, a2, 24
 	addi	a2, a2, 36
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

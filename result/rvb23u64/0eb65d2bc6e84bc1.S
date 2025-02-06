@@ -20,10 +20,9 @@ func00000000000000c6:
 
 func00000000000000cb:
 	sext.w	a0, a0
-	slti	a1, a0, 0
-	li	a2, 19
-	czero.nez	a1, a2, a1
-	addi	a1, a1, -7
+	srai	a1, a0, 63
+	andi	a1, a1, -19
+	addi	a1, a1, 12
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret

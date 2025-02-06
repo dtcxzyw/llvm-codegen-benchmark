@@ -373,11 +373,9 @@ func0000000000000094:
 
 func00000000000000d8:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	li	a2, 28
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 4
+	sraiw	a1, a1, 31
+	andi	a1, a1, -28
+	addi	a1, a1, 32
 	sltu	a0, a1, a0
 	ret
 

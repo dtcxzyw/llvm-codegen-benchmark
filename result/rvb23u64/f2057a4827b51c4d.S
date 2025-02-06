@@ -16,11 +16,10 @@ func00000000000000a5:
 
 func0000000000000065:
 	subw	a0, a0, a1
-	slti	a1, a0, 0
-	li	a2, -7
-	czero.nez	a1, a2, a1
+	sraiw	a1, a0, 31
+	andi	a1, a1, 7
 	add	a0, a0, a1
-	addiw	a0, a0, 8
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000061:

@@ -25,10 +25,10 @@ func000000000000004a:
 
 func0000000000000006:
 	addi	a0, a0, -19
-	sext.b	a0, a0
-	slti	a0, a0, 0
-	li	a1, 126
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 56
+	srai	a0, a0, 6
+	srli	a0, a0, 58
+	slli	a0, a0, 1
 	addi	a0, a0, 1
 	ret
 

@@ -54,10 +54,9 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	li	a1, 128
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	add	a0, a0, a1
+	sraiw	a0, a0, 31
+	andi	a0, a0, -128
+	addi	a0, a0, 129
 	ret
 

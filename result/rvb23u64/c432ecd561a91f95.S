@@ -43,11 +43,9 @@ func000000000000002a:
 
 func000000000000001b:
 	sub	a1, a1, a2
-	slti	a1, a1, 0
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 16
+	srli	a1, a1, 63
+	sh3add	a0, a1, a0
+	addi	a0, a0, 8
 	ret
 
 func000000000000001a:

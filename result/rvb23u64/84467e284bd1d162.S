@@ -109,14 +109,12 @@ func000000000000006e:
 	ret
 
 func000000000000006f:
-	sext.w	a2, a2
-	li	a3, 1024
+	sraiw	a2, a2, 31
 	slli	a0, a0, 5
-	slti	a2, a2, 0
-	czero.nez	a2, a3, a2
+	andi	a2, a2, -1024
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 8
+	addi	a0, a0, 1032
 	ret
 
 func00000000000000ae:

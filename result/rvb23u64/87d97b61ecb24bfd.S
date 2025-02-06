@@ -7,11 +7,10 @@ func0000000000000001:
 	ret
 
 func00000000000001e6:
-	sext.w	a0, a0
-	slti	a0, a0, 0
-	li	a2, 24
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
+	slli	a0, a0, 32
+	srai	a0, a0, 4
+	srli	a0, a0, 62
+	sh3add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 

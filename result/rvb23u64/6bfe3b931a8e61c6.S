@@ -54,10 +54,8 @@ func000000000000008c:
 	ret
 
 func00000000000000a0:
-	sext.h	a2, a2
-	li	a3, 8
-	slti	a2, a2, 0
-	czero.eqz	a2, a3, a2
+	srli	a2, a2, 12
+	andi	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8

@@ -1,8 +1,7 @@
 func000000000000000a:
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, -16
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 56
+	srai	a1, a1, 63
+	andi	a1, a1, -16
 	addi	a1, a1, 31
 	and	a0, a0, a1
 	ret

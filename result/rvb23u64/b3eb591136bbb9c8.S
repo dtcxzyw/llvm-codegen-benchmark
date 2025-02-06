@@ -64,10 +64,9 @@ func0000000000000026:
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	subw	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	li	a1, -7
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 8
+	add	a0, a0, a1
+	sraiw	a0, a0, 31
+	andi	a0, a0, 7
+	addi	a0, a0, 1
 	ret
 

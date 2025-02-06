@@ -87,10 +87,8 @@ func0000000000000086:
 
 func0000000000000154:
 	sext.w	a0, a0
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	srli	a1, a1, 5
+	andi	a1, a1, 4
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
