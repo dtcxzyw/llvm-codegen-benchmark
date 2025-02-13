@@ -8,9 +8,9 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	0x3e80000000000000
 func0000000000000001:
+	fmadd.d	fa5, fa0, fa0, fa1
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fmadd.d	fa4, fa0, fa0, fa1
-	fmul.d	fa0, fa4, fa5
+	fld	fa4, %lo(.LCPI1_0)(a0)
+	fmul.d	fa0, fa5, fa4
 	ret
 

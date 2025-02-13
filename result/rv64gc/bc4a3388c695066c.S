@@ -1,6 +1,6 @@
 func0000000000000007:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	not	a1, a2
 	sext.w	a1, a1

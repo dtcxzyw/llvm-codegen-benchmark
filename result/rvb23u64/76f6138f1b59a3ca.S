@@ -10,12 +10,12 @@ func00000000000000a1:
 	.quad	768614336404564650
 func00000000000000a8:
 	sext.w	a1, a1
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
 	seqz	a1, a1
 	xori	a1, a1, 5
 	add	a0, a0, a1
-	sltu	a0, a2, a0
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000088:

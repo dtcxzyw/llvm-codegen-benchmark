@@ -8,8 +8,8 @@ func0000000000000021:
 	vmseq.vi	v10, v8, 0
 	vmv.v.x	v8, a0
 	lui	a0, 262144
-	vmor.mm	v0, v10, v12
 	addi	a0, a0, 128
+	vmor.mm	v0, v10, v12
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -22,8 +22,8 @@ func0000000000000181:
 	addi	a0, a0, 1792
 	vmseq.vi	v10, v8, 0
 	vmv.v.x	v8, a0
-	vmor.mm	v0, v10, v12
 	li	a0, -74
+	vmor.mm	v0, v10, v12
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -34,8 +34,8 @@ func000000000000018c:
 	lui	a0, 640
 	vor.vv	v8, v10, v8
 	vmv.v.x	v10, a0
-	vmsne.vi	v0, v8, 0
 	lui	a0, 2688
+	vmsne.vi	v0, v8, 0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

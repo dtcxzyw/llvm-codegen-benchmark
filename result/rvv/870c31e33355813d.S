@@ -7,9 +7,9 @@ func0000000000000021:
 	addi	a0, a0, -1026
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v10, v12, v10
+	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000001:
@@ -19,9 +19,9 @@ func0000000000000001:
 	li	a0, 1012
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v10, v10, v12
+	vor.vi	v12, v10, 8
 	vmseq.vi	v0, v8, 0
-	vor.vi	v8, v10, 8
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000061:
@@ -30,8 +30,8 @@ func0000000000000061:
 	vor.vx	v12, v10, a0
 	li	a0, 32
 	vmerge.vvm	v10, v12, v10, v0
+	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 

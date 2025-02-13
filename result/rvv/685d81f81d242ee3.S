@@ -1,11 +1,12 @@
 func00000000000000a1:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vsub.vv	v10, v10, v12
+	vsub.vv	v12, v10, v12
 	li	a0, 56
+	vmv.v.i	v10, 0
 	bseti	a0, a0, 63
 	vmseq.vx	v0, v8, a0
-	vmv.v.i	v8, 0
-	vsrl.vi	v8, v10, 2, v0.t
+	vsrl.vi	v10, v12, 2, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000021:

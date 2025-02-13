@@ -23,9 +23,9 @@ func00000000000000c6:
 .LCPI2_0:
 	.quad	0x3ee4f8b588e368f1
 func000000000000004c:
+	sext.w	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
-	sext.w	a0, a0
 	fabs.d	fa4, fa0
 	addi	a0, a0, -1
 	flt.d	a1, fa4, fa5

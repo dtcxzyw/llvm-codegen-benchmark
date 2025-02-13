@@ -8,9 +8,9 @@ func0000000000000032:
 	lui	a0, %hi(.LCPI0_1)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v8, fa5
-	flw	fa5, %lo(.LCPI0_1)(a0)
 	vmnot.m	v0, v16
 	vmerge.vvm	v8, v12, v8, v0
+	flw	fa5, %lo(.LCPI0_1)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -46,9 +46,9 @@ func0000000000000078:
 
 func000000000000004b:
 	fmv.w.x	fa5, zero
+	lui	a0, 276672
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
-	lui	a0, 276672
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
@@ -57,9 +57,9 @@ func000000000000004b:
 
 func0000000000000044:
 	fmv.w.x	fa5, zero
+	lui	a0, 275264
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
-	lui	a0, 275264
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
@@ -89,11 +89,11 @@ func0000000000000054:
 func00000000000000c3:
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI8_0)
-	flw	fa4, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
-	vmfge.vf	v12, v8, fa4
+	flw	fa5, %lo(.LCPI8_0)(a0)
+	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
 
@@ -102,11 +102,11 @@ func00000000000000c3:
 func0000000000000042:
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI9_0)
-	flw	fa4, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI9_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 
 .LCPI10_0:
@@ -114,11 +114,11 @@ func0000000000000042:
 func000000000000004a:
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI10_0)
-	flw	fa4, %lo(.LCPI10_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
-	vmfle.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI10_0)(a0)
+	vmfle.vf	v0, v8, fa5
 	ret
 
 .LCPI11_0:
@@ -126,10 +126,10 @@ func000000000000004a:
 func00000000000000c2:
 	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI11_0)
-	flw	fa4, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI11_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 

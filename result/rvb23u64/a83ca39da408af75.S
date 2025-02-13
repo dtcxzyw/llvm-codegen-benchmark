@@ -1,7 +1,7 @@
 func0000000000000001:
 	andi	a0, a0, 255
-	li	a1, 45
 	fli.s	fa0, inf
+	li	a1, 45
 	bne	a0, a1, .LBB0_2
 	fneg.s	fa0, fa0
 .LBB0_2:
@@ -21,8 +21,8 @@ func0000000000000014:
 
 func0000000000000018:
 	andi	a0, a0, 255
-	li	a1, 31
 	fli.s	fa0, 1.0
+	li	a1, 31
 	bltu	a1, a0, .LBB2_2
 	fli.s	fa0, -1.0
 .LBB2_2:

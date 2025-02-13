@@ -14,13 +14,13 @@ func0000000000000084:
 func0000000000000022:
 	fli.s	fa5, 1.0
 	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v12, fa5
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	vfdiv.vv	v12, v8, v12
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
-	vfmerge.vfm	v8, v8, fa4, v0
+	vmflt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
 .LCPI2_0:
@@ -28,9 +28,9 @@ func0000000000000022:
 func0000000000000024:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 266752
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v0, v12, fa5
-	lui	a0, 266752
 	vfmerge.vfm	v12, v12, fa5, v0
 	fmv.w.x	fa5, a0
 	vfdiv.vv	v8, v8, v12

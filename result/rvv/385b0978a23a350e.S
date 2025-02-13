@@ -22,11 +22,11 @@ func0000000000000222:
 .LCPI2_0:
 	.word	0x7f7fffff
 func0000000000000c22:
+	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v0, v16, fa4
+	vmfge.vf	v0, v16, fa5
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	vfmv.v.f	v20, fa5
 	vmerge.vvm	v16, v20, v16, v0
 	vmflt.vv	v0, v12, v16

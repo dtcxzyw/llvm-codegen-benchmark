@@ -8,8 +8,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 1
 	andi	a0, a0, 1
+	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	lui	a2, 262168
 	addiw	a2, a2, 128

@@ -15,9 +15,9 @@ func0000000000000003:
 .LCPI2_0:
 	.quad	-4132994306676758123
 func0000000000000000:
+	sext.w	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
-	sext.w	a0, a0
 	mul	a0, a0, a1
 	ret
 

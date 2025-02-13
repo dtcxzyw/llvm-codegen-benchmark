@@ -43,11 +43,11 @@ func0000000000000023:
 .LCPI4_0:
 	.quad	0x3feffffffffffffe
 func0000000000000082:
+	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
-	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v0, v16, fa4
+	vmfeq.vf	v0, v16, fa5
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmflt.vv	v0, v16, v8
 	ret
@@ -125,11 +125,11 @@ func00000000000000c5:
 .LCPI13_0:
 	.quad	0x3ee4f8b588e368f1
 func0000000000000084:
+	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI13_0)
-	fld	fa5, %lo(.LCPI13_0)(a0)
-	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v0, v16, fa4
+	vmfeq.vf	v0, v16, fa5
+	fld	fa5, %lo(.LCPI13_0)(a0)
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmflt.vv	v0, v8, v16
 	ret

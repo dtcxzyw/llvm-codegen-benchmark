@@ -15,10 +15,10 @@ func0000000000000161:
 .LCPI1_0:
 	.quad	3074457345618258603
 func0000000000000061:
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a1, a1, a2
-	mulh	a1, a1, a3
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	mulh	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 1
 	add	a1, a1, a2

@@ -1,29 +1,29 @@
 func0000000000000219:
-	srliw	a3, a1, 30
-	sext.w	a1, a1
-	beqz	a3, .LBB0_3
-	bgez	a1, .LBB0_4
+	sext.w	a3, a1
+	srliw	a1, a1, 30
+	beqz	a1, .LBB0_3
+	bgez	a3, .LBB0_4
 .LBB0_2:
 	addiw	a0, a0, -11
 	ret
 .LBB0_3:
 	li	a2, 32
-	bltz	a1, .LBB0_2
+	bltz	a3, .LBB0_2
 .LBB0_4:
 	addiw	a0, a2, -11
 	ret
 
 func000000000000021b:
-	srliw	a3, a1, 30
-	sext.w	a1, a1
-	beqz	a3, .LBB1_3
-	bgez	a1, .LBB1_4
+	sext.w	a3, a1
+	srliw	a1, a1, 30
+	beqz	a1, .LBB1_3
+	bgez	a3, .LBB1_4
 .LBB1_2:
 	addiw	a0, a0, 21
 	ret
 .LBB1_3:
 	li	a2, 32
-	bltz	a1, .LBB1_2
+	bltz	a3, .LBB1_2
 .LBB1_4:
 	addiw	a0, a2, 21
 	ret

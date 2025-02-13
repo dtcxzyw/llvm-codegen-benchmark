@@ -7,10 +7,10 @@ func00000000000000e9:
 	vsub.vv	v10, v8, v9
 	vsrl.vi	v10, v10, 1
 	vadd.vv	v9, v10, v9
+	vmv.v.i	v10, 0
 	vsrl.vi	v9, v9, 2
 	vnmsub.vx	v9, a0, v8
 	vmsleu.vi	v0, v9, 5
-	vmv.v.i	v10, 0
 	vadd.vi	v10, v9, 1, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf4	v8, v10

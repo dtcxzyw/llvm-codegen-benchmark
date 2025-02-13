@@ -6,8 +6,8 @@ func0000000000000028:
 	addi	a0, a0, -2046
 	vand.vx	v8, v10, a0
 	vmseq.vi	v10, v8, 0
-	vmor.mm	v0, v12, v10
 	vmv.v.i	v8, 7
+	vmor.mm	v0, v12, v10
 	vmerge.vim	v8, v8, 0, v0
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000024:
 	vand.vi	v10, v10, 1
 	vmsleu.vi	v12, v8, 7
 	vmseq.vi	v8, v10, 0
+	vmv.v.i	v10, 8
 	vmor.mm	v0, v12, v8
-	vmv.v.i	v8, 8
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v10, 0, v0
 	ret
 
 func0000000000000021:
@@ -31,8 +31,8 @@ func0000000000000021:
 	vmseq.vi	v10, v8, 0
 	vmv.v.x	v8, a0
 	lui	a0, 262144
-	vmor.mm	v0, v12, v10
 	addi	a0, a0, 128
+	vmor.mm	v0, v12, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -40,9 +40,9 @@ func000000000000018c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 2
 	vor.vv	v8, v8, v10
+	vmv.v.i	v10, 0
 	vmsne.vi	v0, v8, 0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	vadd.vi	v8, v8, 1
 	ret
 

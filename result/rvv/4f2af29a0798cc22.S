@@ -2,9 +2,9 @@ func0000000000000004:
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
+	vmv.v.x	v14, a0
 	vmseq.vi	v0, v12, 0
-	vmv.v.x	v12, a0
-	vmerge.vim	v12, v12, 9, v0
+	vmerge.vim	v12, v14, 9, v0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret

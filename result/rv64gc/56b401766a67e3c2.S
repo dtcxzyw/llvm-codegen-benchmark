@@ -6,8 +6,8 @@ func0000000000000002:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
 	fadd.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI0_1)(a0)
 	fmin.d	fa0, fa5, fa4
 	ret
 
@@ -29,8 +29,8 @@ func000000000000000c:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	fadd.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	fmax.d	fa0, fa5, fa4
 	ret
 

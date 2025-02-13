@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	384307168202282325
 func0000000000000002:
+	li	a1, 1
+	maxu	a1, a0, a1
+	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	li	a2, 1
-	maxu	a2, a0, a2
-	add	a0, a0, a2
 	minu	a0, a0, a1
 	ret
 

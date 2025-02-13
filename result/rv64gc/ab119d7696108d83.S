@@ -80,8 +80,8 @@ func0000000000000013:
 	ret
 
 func0000000000000005:
-	andi	a2, a2, 1
 	sext.w	a1, a1
+	andi	a2, a2, 1
 	bnez	a2, .LBB7_3
 	li	a2, 16
 	or	a0, a0, a2

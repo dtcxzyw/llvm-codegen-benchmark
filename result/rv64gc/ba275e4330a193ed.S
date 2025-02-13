@@ -1,6 +1,6 @@
 func0000000000000000:
-	li	a3, 46
 	andi	a2, a0, 1
+	li	a3, 46
 	mv	a0, a1
 	bgeu	a3, a1, .LBB0_3
 	beqz	a2, .LBB0_4

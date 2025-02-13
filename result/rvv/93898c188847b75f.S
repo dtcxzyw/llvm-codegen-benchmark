@@ -19,10 +19,10 @@ func000000000000005d:
 .LCPI2_0:
 	.word	0x40c90fdb
 func000000000000008c:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vv	v20, v12, v16
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	vmfge.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v20
 	ret

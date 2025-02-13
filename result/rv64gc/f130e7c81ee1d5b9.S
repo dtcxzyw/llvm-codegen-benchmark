@@ -6,8 +6,8 @@ func0000000000000002:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a1)
 	fmul.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI0_1)(a1)
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret

@@ -10,8 +10,9 @@ func0000000000000081:
 	ret
 
 func00000000000000c1:
-	slli	a2, a0, 48
+	mv	a2, a0
 	li	a0, 1
+	slli	a2, a2, 48
 	beqz	a2, .LBB1_2
 	addi	a1, a1, -1
 	sllw	a0, a0, a1

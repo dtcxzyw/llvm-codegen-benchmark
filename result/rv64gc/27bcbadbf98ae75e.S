@@ -11,9 +11,9 @@ func0000000000000021:
 .LCPI1_0:
 	.quad	7164004856975580295
 func0000000000000024:
+	sext.w	a0, a0
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	sext.w	a0, a0
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srli	a2, a2, 25

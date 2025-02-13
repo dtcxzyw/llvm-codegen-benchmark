@@ -21,14 +21,14 @@ func0000000000000008:
 .LCPI2_0:
 	.quad	1749024623285053783
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
-	li	a1, 63
+	li	a0, 63
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v10, v10, a1
+	vsra.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
-	vmulh.vx	v8, v8, a0
-	vsrl.vx	v10, v8, a1
+	vmulh.vx	v8, v8, a1
+	vsrl.vx	v10, v8, a0
 	vsra.vi	v8, v8, 13
 	vadd.vv	v8, v8, v10
 	ret

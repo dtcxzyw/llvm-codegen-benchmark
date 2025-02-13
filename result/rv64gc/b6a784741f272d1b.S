@@ -30,11 +30,11 @@ func000000000000000a:
 .LCPI4_0:
 	.word	0x33d6bf95
 func0000000000000015:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	fabs.s	fa4, fa4
-	fle.s	a0, fa4, fa5
+	fabs.s	fa5, fa5
+	flw	fa4, %lo(.LCPI4_0)(a0)
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
@@ -58,11 +58,11 @@ func000000000000001d:
 .LCPI7_0:
 	.word	0x3f8147ae
 func0000000000000004:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	fabs.s	fa4, fa4
-	flt.s	a0, fa5, fa4
+	fabs.s	fa5, fa5
+	flw	fa4, %lo(.LCPI7_0)(a0)
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000009:
@@ -105,11 +105,11 @@ func0000000000000006:
 .LCPI13_0:
 	.word	0x4095ec57
 func0000000000000005:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI13_0)
-	flw	fa5, %lo(.LCPI13_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	fabs.s	fa4, fa4
-	fle.s	a0, fa4, fa5
+	fabs.s	fa5, fa5
+	flw	fa4, %lo(.LCPI13_0)(a0)
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

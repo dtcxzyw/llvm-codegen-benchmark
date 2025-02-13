@@ -2,9 +2,9 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vand.vi	v10, v10, 3
 	li	a0, -33
-	vmseq.vi	v0, v10, 3
 	vand.vx	v8, v8, a0
 	li	a0, 32
+	vmseq.vi	v0, v10, 3
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

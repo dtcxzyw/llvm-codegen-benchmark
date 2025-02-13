@@ -1,9 +1,9 @@
 func0000000000000041:
-	addi	a1, a1, 1
-	bne	a1, a0, .LBB0_2
-	li	a1, 9
+	mv	a2, a0
+	addi	a0, a1, 1
+	bne	a0, a2, .LBB0_2
+	li	a0, 9
 .LBB0_2:
-	mv	a0, a1
 	ret
 
 func0000000000000001:
@@ -45,11 +45,11 @@ func0000000000000021:
 	ret
 
 func0000000000000068:
-	addi	a1, a1, 8
-	bgeu	a0, a1, .LBB6_2
-	li	a1, -72
+	mv	a2, a0
+	addi	a0, a1, 8
+	bgeu	a2, a0, .LBB6_2
+	li	a0, -72
 .LBB6_2:
-	mv	a0, a1
 	ret
 
 func0000000000000049:

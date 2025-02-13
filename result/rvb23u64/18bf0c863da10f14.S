@@ -51,12 +51,12 @@ func0000000000000007:
 .LCPI8_0:
 	.quad	-7046029254386353130
 func0000000000000030:
-	lui	a3, %hi(.LCPI8_0)
-	ld	a3, %lo(.LCPI8_0)(a3)
 	xor	a1, a1, a2
+	lui	a2, %hi(.LCPI8_0)
 	seqz	a1, a1
 	sub	a0, a0, a1
-	add	a0, a0, a3
+	ld	a1, %lo(.LCPI8_0)(a2)
+	add	a0, a0, a1
 	ret
 
 func0000000000000019:

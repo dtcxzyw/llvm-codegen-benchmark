@@ -7,8 +7,8 @@ func0000000000000001:
 
 func0000000000000014:
 	sext.w	a0, a0
-	li	a1, 1024
 	fli.s	fa5, 16.0
+	li	a1, 1024
 	bltu	a0, a1, .LBB1_2
 	fli.s	fa5, 256.0
 .LBB1_2:

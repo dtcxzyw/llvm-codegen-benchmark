@@ -6,10 +6,10 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	fcvt.lu.d	a1, fa0, rtz
-	bltu	a0, a1, .LBB1_2
 	mv	a1, a0
-.LBB1_2:
+	fcvt.lu.d	a0, fa0, rtz
+	bltu	a1, a0, .LBB1_2
 	mv	a0, a1
+.LBB1_2:
 	ret
 

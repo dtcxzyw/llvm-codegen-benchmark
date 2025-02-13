@@ -24,8 +24,8 @@ func0000000000000002:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vfsub.vv	v16, v16, v24
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v16, v16
 	vmflt.vv	v0, v16, v8

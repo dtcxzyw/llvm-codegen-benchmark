@@ -10,10 +10,10 @@ func0000000000000000:
 .LCPI1_0:
 	.word	0x3b808081
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.xu.v	v12, v12
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	vfmul.vf	v12, v12, fa5
 	vfmadd.vv	v8, v12, v10
 	ret

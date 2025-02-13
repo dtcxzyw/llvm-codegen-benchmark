@@ -26,10 +26,10 @@ func0000000000000004:
 	ret
 
 func0000000000000041:
-	slli	a2, a0, 48
-	mv	a0, a1
-	bnez	a2, .LBB3_2
-	li	a0, -10
+	slli	a0, a0, 48
+	bnez	a0, .LBB3_2
+	li	a1, -10
 .LBB3_2:
+	mv	a0, a1
 	ret
 

@@ -23,22 +23,22 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	andi	a3, a2, 1
-	andi	a2, a1, 255
-	bnez	a3, .LBB2_2
-	li	a1, 14
-	li	a3, 2
+	andi	a1, a1, 255
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
+	li	a2, 14
 	sext.w	a0, a0
-	beq	a2, a3, .LBB2_3
+	li	a3, 2
+	beq	a1, a3, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	li	a1, 16
-	li	a3, 2
+	li	a2, 16
 	sext.w	a0, a0
-	bne	a2, a3, .LBB2_4
+	li	a3, 2
+	bne	a1, a3, .LBB2_4
 .LBB2_3:
-	li	a1, 24
+	li	a2, 24
 .LBB2_4:
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 

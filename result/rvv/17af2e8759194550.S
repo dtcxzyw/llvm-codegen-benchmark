@@ -2,8 +2,8 @@ func0000000000000005:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vf	v12, v10, fa5
-	vmnot.m	v0, v12
 	vmv.v.i	v10, 0
+	vmnot.m	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
@@ -14,8 +14,8 @@ func0000000000000003:
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfge.vf	v12, v10, fa5
-	vmnot.m	v0, v12
 	vmv.v.i	v10, -1
+	vmnot.m	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

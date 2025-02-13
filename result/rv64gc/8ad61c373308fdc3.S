@@ -6,9 +6,9 @@ func0000000000000004:
 	li	a0, 1
 	ret
 .LBB0_2:
+	srli	a0, a0, 2
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	srli	a0, a0, 2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 2
 	ret
@@ -25,9 +25,9 @@ func0000000000000008:
 	addiw	a0, a0, -1408
 	ret
 .LBB1_2:
+	srli	a0, a0, 9
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	srli	a0, a0, 9
 	mulhu	a0, a0, a1
 	srli	a0, a0, 11
 	ret

@@ -36,8 +36,8 @@ func0000000000000006:
 	.quad	0x3fd3333333333333
 func0000000000000014:
 	sext.w	a0, a0
-	li	a1, 40
 	fli.d	fa0, 1.0
+	li	a1, 40
 	bltu	a0, a1, .LBB3_2
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa0, %lo(.LCPI3_0)(a0)
@@ -46,8 +46,8 @@ func0000000000000014:
 
 func0000000000000004:
 	sext.w	a0, a0
-	li	a1, 3
 	fli.d	fa0, 0.5
+	li	a1, 3
 	bltu	a0, a1, .LBB4_2
 	fmv.d.x	fa0, zero
 .LBB4_2:

@@ -1,7 +1,7 @@
 func0000000000000000:
-	bseti	a0, zero, 11
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
+	bseti	a0, zero, 11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 12
@@ -16,9 +16,9 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	li	a0, 128
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
+	li	a0, 128
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 8

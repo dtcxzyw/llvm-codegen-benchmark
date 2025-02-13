@@ -15,11 +15,11 @@ func0000000000000004:
 	lui	a0, 4096
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v10, 5
+	vnsrl.wi	v11, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf2, ta, mu
-	vnsrl.wi	v8, v12, 0
-	vand.vi	v10, v8, 15, v0.t
+	vand.vi	v10, v11, 15, v0.t
 	vmv1r.v	v8, v10
 	ret
 

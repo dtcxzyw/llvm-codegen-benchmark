@@ -1,7 +1,7 @@
 func0000000000000007:
-	li	a4, 1
 	andi	a3, a1, 1
-	beq	a2, a4, .LBB0_2
+	li	a1, 1
+	beq	a2, a1, .LBB0_2
 	li	a1, 8
 	bnez	a3, .LBB0_3
 	j	.LBB0_4

@@ -2,31 +2,31 @@ func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
 	li	a0, -1
+	vadd.vi	v10, v10, 8
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
-	vadd.vi	v8, v10, 8
-	vmerge.vim	v8, v8, -1, v0
+	vmerge.vim	v8, v10, -1, v0
 	ret
 
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
 	li	a0, -4
+	vadd.vi	v10, v10, 4
 	bclri	a0, a0, 62
 	vmsgtu.vx	v0, v8, a0
-	vadd.vi	v8, v10, 4
-	vmerge.vim	v8, v8, -1, v0
+	vmerge.vim	v8, v10, -1, v0
 	ret
 
 func0000000000000168:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
+	li	a0, 16
+	vadd.vx	v10, v10, a0
 	li	a0, -1
 	srli	a0, a0, 6
 	vmsgtu.vx	v0, v8, a0
-	li	a0, 16
-	vadd.vx	v8, v10, a0
-	vmerge.vim	v8, v8, -1, v0
+	vmerge.vim	v8, v10, -1, v0
 	ret
 
 func00000000000001e4:

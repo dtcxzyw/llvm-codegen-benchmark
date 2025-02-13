@@ -14,18 +14,19 @@ func0000000000000007:
 	vmv.v.x	v12, a0
 	li	a0, 38
 	vmerge.vxm	v12, v12, a0, v0
-	vmslt.vv	v0, v10, v8
 	li	a0, 94
+	vmslt.vv	v0, v10, v8
 	vmerge.vxm	v8, v12, a0, v0
 	ret
 
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v14, v12, 1, v0
+	vmv.v.i	v12, 1
 	vmslt.vv	v0, v8, v10
-	vmv.v.i	v8, 1
-	vrsub.vi	v8, v12, 2, v0.t
+	vrsub.vi	v12, v14, 2, v0.t
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000001:

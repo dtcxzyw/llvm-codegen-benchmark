@@ -16,8 +16,8 @@ func0000000000000001:
 func0000000000000008:
 	fmv.d	fa5, fa0
 	andi	a0, a0, 1
-	li	a2, 1024
 	fli.d	fa0, inf
+	li	a2, 1024
 	bgeu	a2, a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:

@@ -64,10 +64,10 @@ func0000000000000036:
 .LCPI8_0:
 	.word	0x7f7fffff
 func000000000000018e:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
+	lui	a0, %hi(.LCPI8_0)
+	flw	fa5, %lo(.LCPI8_0)(a0)
 	vmfne.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret

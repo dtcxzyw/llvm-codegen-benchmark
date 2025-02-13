@@ -4,9 +4,9 @@ func0000000000000001:
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
+	li	a0, 16
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vi	v0, v8, 0
-	li	a0, 16
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmerge.vim	v12, v12, 1, v0
 	vmv.v.x	v8, a0

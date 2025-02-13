@@ -74,12 +74,12 @@ func0000000000000110:
 .LCPI6_0:
 	.quad	0x471a36e2d0e56042
 func0000000000000288:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI6_0)
 	vfmax.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
@@ -100,24 +100,24 @@ func00000000000006aa:
 .LCPI8_0:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000088:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI8_0)
 	vfmax.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
 .LCPI9_0:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000044:
-	lui	a0, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI9_0)
 	vfmin.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI9_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -136,12 +136,12 @@ func0000000000000710:
 .LCPI11_0:
 	.quad	0x3cb0000000000000
 func0000000000000644:
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI11_0)
 	vfmin.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI11_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 

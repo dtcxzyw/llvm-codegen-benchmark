@@ -1,7 +1,7 @@
 func0000000000000001:
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	sext.w	a1, a1
-	andi	a0, a0, 1
 	beq	a1, a2, .LBB0_2
 	li	a1, 4
 	addi	a0, a0, -1
@@ -40,16 +40,16 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
+	andi	a3, a0, 1
 	sext.w	a2, a2
-	sext.w	a3, a1
-	andi	a1, a0, 1
-	bltu	a3, a2, .LBB3_2
+	sext.w	a1, a1
+	bltu	a1, a2, .LBB3_2
 	li	a0, 134
-	bnez	a1, .LBB3_3
+	bnez	a3, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 127
-	beqz	a1, .LBB3_4
+	beqz	a3, .LBB3_4
 .LBB3_3:
 	li	a0, 19
 .LBB3_4:

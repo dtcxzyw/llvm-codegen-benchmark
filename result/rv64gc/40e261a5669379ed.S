@@ -1,7 +1,7 @@
 func0000000000000001:
 	li	a3, -1
-	addi	a2, a0, -64
 	sll	a1, a3, a0
+	addi	a2, a0, -64
 	bltz	a2, .LBB0_2
 	srai	a2, a2, 63
 	and	a2, a2, a1

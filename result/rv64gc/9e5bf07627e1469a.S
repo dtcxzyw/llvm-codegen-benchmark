@@ -73,10 +73,10 @@ func000000000000001f:
 	ret
 
 func000000000000008c:
-	slli	a2, a2, 48
-	srli	a3, a2, 48
-	li	a4, 12
+	slli	a3, a2, 48
 	lui	a2, 95
+	srli	a3, a3, 48
+	li	a4, 12
 	bltu	a4, a3, .LBB6_2
 	lui	a2, 146
 .LBB6_2:

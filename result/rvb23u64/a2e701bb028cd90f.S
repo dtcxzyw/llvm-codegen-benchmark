@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	1442695040888963407
 func0000000000000018:
+	negw	a1, a1
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	negw	a1, a1
 	add	a0, a0, a2
 	srl	a0, a0, a1
 	ret

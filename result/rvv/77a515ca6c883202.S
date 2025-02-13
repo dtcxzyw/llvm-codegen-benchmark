@@ -18,8 +18,8 @@ func00000000000000a4:
 	vadd.vv	v10, v10, v10
 	li	a0, 999
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v0, v10, 14
 	li	a0, 16
+	vmsleu.vi	v0, v10, 14
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -28,8 +28,8 @@ func0000000000000004:
 	vsll.vi	v10, v10, 2
 	li	a0, 399
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v0, v10, 14
 	li	a0, 16
+	vmsleu.vi	v0, v10, 14
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -57,12 +57,12 @@ func0000000000000434:
 .LCPI6_0:
 	.quad	922337203685477580
 func000000000000054c:
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
-	li	a1, -48
+	li	a0, -48
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v11, v11, a1
+	vadd.vx	v11, v11, a0
+	lui	a0, %hi(.LCPI6_0)
 	vmslt.vv	v10, v10, v11
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

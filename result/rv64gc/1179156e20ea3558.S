@@ -1,12 +1,11 @@
 func0000000000000012:
-	mv	a2, a0
+	andi	a2, a0, 1
 	srai	a1, a1, 3
 	seqz	a0, a1
 	add	a1, a1, a1
 	add	a1, a1, a0
 	li	a0, -1
 	srli	a0, a0, 4
-	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB0_3
 	beqz	a2, .LBB0_4
 .LBB0_2:
@@ -19,14 +18,13 @@ func0000000000000012:
 	ret
 
 func0000000000000010:
-	mv	a2, a0
+	andi	a2, a0, 1
 	srai	a1, a1, 1
 	seqz	a0, a1
 	add	a1, a1, a1
 	add	a1, a1, a0
 	li	a0, -1
 	srli	a0, a0, 2
-	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB1_3
 	beqz	a2, .LBB1_4
 .LBB1_2:

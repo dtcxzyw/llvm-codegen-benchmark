@@ -18,11 +18,11 @@ func0000000000000002:
 	.quad	0x3ff0000000000000
 func0000000000000008:
 	fmv.d	fa5, fa0
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa0, %lo(.LCPI1_0)(a0)
 	fmv.d.x	fa4, zero
-	feq.d	a0, fa5, fa4
-	bnez	a0, .LBB1_2
+	lui	a0, %hi(.LCPI1_0)
+	feq.d	a1, fa0, fa4
+	fld	fa0, %lo(.LCPI1_0)(a0)
+	bnez	a1, .LBB1_2
 	fdiv.d	fa0, fa0, fa5
 .LBB1_2:
 	ret

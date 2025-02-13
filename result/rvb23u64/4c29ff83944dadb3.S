@@ -3,13 +3,13 @@
 func0000000000000022:
 	fli.d	fa5, 0.75
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	flt.d	a0, fa0, fa5
-	li	a1, 1
-	xori	a0, a0, 3
-	flt.d	a2, fa0, fa4
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
+	flt.d	a1, fa0, fa5
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 1
+	xori	a1, a1, 3
+	flt.d	a2, fa0, fa5
+	czero.nez	a1, a1, a2
+	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

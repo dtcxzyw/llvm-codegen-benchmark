@@ -1,8 +1,8 @@
 func0000000000000008:
 	fmv.d	fa5, fa0
-	fmv.d.x	fa4, zero
-	feq.d	a0, fa0, fa4
 	fli.d	fa0, 1.0
+	fmv.d.x	fa4, zero
+	feq.d	a0, fa5, fa4
 	bnez	a0, .LBB0_2
 	fdiv.d	fa0, fa0, fa5
 .LBB0_2:
@@ -10,9 +10,9 @@ func0000000000000008:
 
 func000000000000000a:
 	fmv.d	fa5, fa0
-	fmv.d.x	fa4, zero
-	fle.d	a0, fa0, fa4
 	fli.d	fa0, 1.0
+	fmv.d.x	fa4, zero
+	fle.d	a0, fa5, fa4
 	bnez	a0, .LBB1_2
 	fdiv.d	fa0, fa0, fa5
 .LBB1_2:

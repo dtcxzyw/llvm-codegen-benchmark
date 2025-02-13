@@ -12,9 +12,9 @@ func0000000000000066:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	li	a0, -32
+	vxor.vx	v10, v8, a0
 	vmslt.vx	v0, v8, a0
-	vxor.vx	v8, v8, a0
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v10, a0, v0
 	ret
 
 func0000000000000021:

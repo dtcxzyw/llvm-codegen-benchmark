@@ -8,9 +8,9 @@ func0000000000000008:
 
 func000000000000000a:
 	vsetivli	zero, 16, e16, m2, ta, ma
+	vrsub.vi	v12, v8, 0
 	vmsle.vi	v0, v10, -1
-	vrsub.vi	v10, v8, 0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000026:

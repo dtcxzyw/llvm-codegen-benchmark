@@ -5,13 +5,13 @@
 func0000000000000036:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
+	lui	a2, %hi(.LCPI0_1)
 	add	a0, a0, a1
 	srli	a0, a0, 7
-	mulhu	a0, a0, a3
+	ld	a1, %lo(.LCPI0_1)(a2)
+	mulhu	a0, a0, a1
 	srli	a0, a0, 26
 	li	a1, 0
 	ret
@@ -23,12 +23,12 @@ func0000000000000036:
 func0000000000000026:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	lui	a3, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_1)(a3)
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
+	lui	a2, %hi(.LCPI1_1)
 	add	a0, a0, a1
-	mulhu	a0, a0, a3
+	ld	a1, %lo(.LCPI1_1)(a2)
+	mulhu	a0, a0, a1
 	li	a1, 0
 	ret
 

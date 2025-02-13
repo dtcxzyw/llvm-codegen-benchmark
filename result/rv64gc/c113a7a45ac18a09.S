@@ -7,8 +7,8 @@ func000000000000002a:
 	ret
 
 func000000000000002c:
-	li	a2, 16
 	sext.w	a0, a0
+	li	a2, 16
 	beq	a1, a2, .LBB1_2
 	li	a1, 48
 	xor	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	li	a2, 128
 	sext.w	a0, a0
+	li	a2, 128
 	beq	a1, a2, .LBB3_2
 	li	a1, 8
 	sltu	a0, a0, a1

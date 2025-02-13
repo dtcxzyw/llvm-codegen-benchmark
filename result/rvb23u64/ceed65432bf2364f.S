@@ -18,12 +18,12 @@ func00000000000000ca:
 .LCPI2_0:
 	.word	0x7f7fffff
 func00000000000000c4:
+	fmul.s	fa5, fa0, fa1
+	fli.s	fa4, min
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmul.s	fa4, fa0, fa1
-	fli.s	fa3, min
-	fmax.s	fa4, fa4, fa3
-	flt.s	a0, fa5, fa4
+	fmax.s	fa5, fa5, fa4
+	flw	fa4, %lo(.LCPI2_0)(a0)
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000024:

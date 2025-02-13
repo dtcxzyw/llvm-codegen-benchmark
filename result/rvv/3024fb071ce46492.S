@@ -4,15 +4,15 @@
 	.quad	0xc02a000000000000
 func0000000000000005:
 	lui	a0, %hi(.LCPI0_0)
+	fli.d	fa5, -1.0
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vfmv.v.f	v12, fa5
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vmfle.vf	v12, v8, fa5
-	fli.d	fa5, -1.0
-	vmnot.m	v0, v12
-	vfmv.v.f	v12, fa5
-	vfmerge.vfm	v12, v12, fa4, v0
+	vmfle.vf	v16, v8, fa5
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vmnot.m	v0, v16
+	vfmerge.vfm	v12, v12, fa5, v0
 	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
@@ -50,8 +50,8 @@ func0000000000000003:
 	vmfge.vf	v12, v8, fa5
 	fli.d	fa5, 0.5
 	vfmv.v.f	v16, fa5
-	vmnot.m	v0, v12
 	fneg.d	fa5, fa5
+	vmnot.m	v0, v12
 	vfmerge.vfm	v12, v16, fa5, v0
 	vfadd.vv	v12, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma

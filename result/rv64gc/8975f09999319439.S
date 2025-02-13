@@ -1,8 +1,8 @@
 func0000000000000024:
 	mv	a2, a0
 	addiw	a1, a1, -1
-	li	a3, 6
 	lui	a0, 16
+	li	a3, 6
 	bgeu	a1, a3, .LBB0_2
 	addi	a0, a0, 256
 	addw	a0, a0, a2

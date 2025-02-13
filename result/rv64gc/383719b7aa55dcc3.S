@@ -23,10 +23,10 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	andi	a3, a1, 1
-	sext.w	a1, a0
-	bnez	a3, .LBB2_3
-	bgez	a1, .LBB2_4
+	sext.w	a3, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_3
+	bgez	a3, .LBB2_4
 .LBB2_2:
 	sext.w	a2, a2
 	seqz	a0, a2
@@ -34,41 +34,41 @@ func00000000000000c1:
 .LBB2_3:
 	lui	a2, 524288
 	addi	a2, a2, -1
-	bltz	a1, .LBB2_2
+	bltz	a3, .LBB2_2
 .LBB2_4:
 	sext.w	a2, a0
 	seqz	a0, a2
 	ret
 
 func00000000000000ca:
-	andi	a3, a1, 1
-	sext.w	a1, a0
-	bnez	a3, .LBB3_3
-	bgez	a1, .LBB3_4
+	sext.w	a3, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_3
+	bgez	a3, .LBB3_4
 .LBB3_2:
 	sext.w	a2, a2
 	sgtz	a0, a2
 	ret
 .LBB3_3:
 	li	a2, 1
-	bltz	a1, .LBB3_2
+	bltz	a3, .LBB3_2
 .LBB3_4:
 	sext.w	a2, a0
 	sgtz	a0, a2
 	ret
 
 func00000000000000c6:
-	andi	a3, a1, 1
-	sext.w	a1, a0
-	bnez	a3, .LBB4_3
-	bgez	a1, .LBB4_4
+	sext.w	a3, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_3
+	bgez	a3, .LBB4_4
 .LBB4_2:
 	sext.w	a2, a2
 	slti	a0, a2, 1
 	ret
 .LBB4_3:
 	li	a2, 1
-	bltz	a1, .LBB4_2
+	bltz	a3, .LBB4_2
 .LBB4_4:
 	sext.w	a2, a0
 	slti	a0, a2, 1

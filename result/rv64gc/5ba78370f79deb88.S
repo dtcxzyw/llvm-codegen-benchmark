@@ -15,10 +15,10 @@ func00000000000001ed:
 func000000000000000f:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	lui	a3, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_1)(a3)
 	mul	a1, a1, a2
-	add	a1, a1, a3
+	lui	a2, %hi(.LCPI1_1)
+	ld	a2, %lo(.LCPI1_1)(a2)
+	add	a1, a1, a2
 	srli	a1, a1, 62
 	addw	a0, a0, a1
 	ret

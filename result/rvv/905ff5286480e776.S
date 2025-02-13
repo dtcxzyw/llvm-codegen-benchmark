@@ -16,11 +16,11 @@ func0000000000000008:
 func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
+	lui	a0, 1048561
+	addiw	a0, a0, 1440
+	vmacc.vx	v8, a0, v12
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	lui	a1, 1048561
-	addiw	a1, a1, 1440
-	vmacc.vx	v8, a1, v12
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -33,11 +33,11 @@ func0000000000000028:
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
+	lui	a0, 14648
+	addiw	a0, a0, 1792
+	vmacc.vx	v10, a0, v8
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	lui	a1, 14648
-	addiw	a1, a1, 1792
-	vmacc.vx	v10, a1, v8
 	vmulh.vx	v8, v10, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0

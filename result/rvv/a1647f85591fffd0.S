@@ -92,11 +92,11 @@ func0000000000000088:
 .LCPI8_0:
 	.quad	0x3ddb7cdfd9d7bdbb
 func0000000000000022:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI8_0)
 	vfmin.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 

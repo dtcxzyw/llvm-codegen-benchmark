@@ -17,11 +17,11 @@ func0000000000000003:
 	bnez	a0, .LBB1_2
 	fmv.d	fa0, fa1
 .LBB1_2:
+	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fli.d	fa4, 0.5
-	fadd.d	fa4, fa0, fa4
-	fle.d	a0, fa5, fa4
+	fadd.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI1_0)(a0)
+	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

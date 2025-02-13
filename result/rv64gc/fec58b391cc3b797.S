@@ -1,7 +1,7 @@
 func0000000000000007:
+	andi	a0, a0, 1
 	andi	a1, a1, 255
 	li	a2, 6
-	andi	a0, a0, 1
 	beq	a1, a2, .LBB0_2
 	lui	a1, 6
 	addi	a1, a1, 560

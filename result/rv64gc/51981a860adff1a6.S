@@ -9,8 +9,8 @@ func0000000000000001:
 
 func0000000000000008:
 	slli	a0, a0, 48
-	andi	a1, a1, 1
 	srli	a0, a0, 48
+	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 1
 	sltu	a0, a0, a1

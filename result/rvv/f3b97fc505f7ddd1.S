@@ -23,13 +23,13 @@ func0000000000000004:
 	li	a0, 43
 	vmerge.vim	v12, v12, 1, v0
 	vmv.v.x	v14, a0
+	li	a0, 45
+	vxor.vx	v12, v12, a0
 	li	a0, 81
 	vmv1r.v	v0, v11
 	vmerge.vxm	v10, v14, a0, v0
-	li	a0, 45
 	vmsleu.vi	v0, v8, 2
-	vxor.vx	v8, v12, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000014:

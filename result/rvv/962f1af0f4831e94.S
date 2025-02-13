@@ -5,8 +5,8 @@ func0000000000000008:
 	srli	a0, a0, 1
 	vandn.vx	v8, v8, a0
 	bseti	a0, zero, 63
+	vmv.v.i	v10, 0
 	vmsgtu.vx	v0, v8, a0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, -8, v0
+	vmerge.vim	v8, v10, -8, v0
 	ret
 

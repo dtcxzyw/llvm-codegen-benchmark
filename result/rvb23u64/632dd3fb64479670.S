@@ -3,13 +3,13 @@
 func0000000000000000:
 	lui	a3, %hi(.LCPI0_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI0_0)(a3)
-	lui	a3, 81007
-	slli	a3, a3, 3
-	addi	a3, a3, -1607
-	mul	a1, a1, a2
-	add	a0, a0, a3
+	lui	a1, 81007
+	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a1, a1, 3
+	addi	a1, a1, -1607
+	mul	a2, a2, a3
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000055:
@@ -73,12 +73,12 @@ func00000000000000fc:
 	.quad	-6313183731941900
 func00000000000000d5:
 	sh2add	a2, a2, a2
-	lui	a3, %hi(.LCPI7_0)
-	ld	a3, %lo(.LCPI7_0)(a3)
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
+	lui	a2, %hi(.LCPI7_0)
 	add	a0, a0, a1
-	add	a0, a0, a3
+	ld	a1, %lo(.LCPI7_0)(a2)
+	add	a0, a0, a1
 	ret
 
 func0000000000000057:

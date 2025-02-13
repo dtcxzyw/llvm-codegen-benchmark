@@ -37,22 +37,22 @@ func000000000000000c:
 .LCPI4_0:
 	.word	0x3ba3d70a
 func0000000000000002:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfneg.v	v12, v8
+	lui	a0, %hi(.LCPI4_0)
 	vmerge.vvm	v8, v12, v8, v0
+	flw	fa5, %lo(.LCPI4_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
 .LCPI5_0:
 	.word	0x3d0efa36
 func000000000000000a:
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfneg.v	v12, v8
+	lui	a0, %hi(.LCPI5_0)
 	vmerge.vvm	v8, v12, v8, v0
+	flw	fa5, %lo(.LCPI5_0)(a0)
 	vmfle.vf	v0, v8, fa5
 	ret
 

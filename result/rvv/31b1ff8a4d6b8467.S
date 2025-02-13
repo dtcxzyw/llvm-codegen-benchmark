@@ -5,8 +5,8 @@ func0000000000000042:
 	vfmv.v.f	v12, fa5
 	fmv.w.x	fa4, a0
 	vfmacc.vf	v12, fa4, v8
-	vmfgt.vf	v0, v12, fa5
 	fmv.w.x	fa4, zero
+	vmfgt.vf	v0, v12, fa5
 	vfmerge.vfm	v8, v12, fa5, v0
 	vmflt.vf	v0, v8, fa4
 	vmerge.vim	v8, v8, 0, v0

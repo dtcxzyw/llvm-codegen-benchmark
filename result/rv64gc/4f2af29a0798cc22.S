@@ -31,10 +31,10 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	andi	a2, a2, -2
-	sext.w	a3, a2
-	li	a4, 2
+	andi	a3, a2, -2
 	lui	a2, 262144
+	sext.w	a3, a3
+	li	a4, 2
 	beq	a3, a4, .LBB3_2
 	li	a2, 2
 .LBB3_2:

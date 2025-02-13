@@ -6,8 +6,8 @@ func0000000000000002:
 	lui	a0, 32
 	vmor.mm	v8, v8, v9
 	vmv.v.x	v10, a0
-	vmor.mm	v0, v8, v0
 	lui	a0, 16
+	vmor.mm	v0, v8, v0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

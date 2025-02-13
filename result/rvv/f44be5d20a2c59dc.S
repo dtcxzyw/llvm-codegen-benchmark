@@ -24,10 +24,10 @@ func0000000000000040:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
 	vsrl.vv	v8, v8, v14
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
-	vmul.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI1_0)(a1)
+	vmul.vx	v8, v8, a0
 	ret
 

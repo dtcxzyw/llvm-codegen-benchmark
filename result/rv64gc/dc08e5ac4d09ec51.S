@@ -10,11 +10,11 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	li	a2, 1
-	bne	a0, a2, .LBB1_2
-	addi	a2, a1, 1
+	mv	a2, a0
+	li	a0, 1
+	bne	a2, a0, .LBB1_2
+	addi	a0, a1, 1
 .LBB1_2:
-	mv	a0, a2
 	ret
 
 func000000000000002a:

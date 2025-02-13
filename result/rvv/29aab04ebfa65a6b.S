@@ -204,10 +204,10 @@ func000000000000008c:
 .LCPI26_0:
 	.quad	307445734561825861
 func0000000000000144:
-	lui	a0, %hi(.LCPI26_0)
-	ld	a0, %lo(.LCPI26_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
+	lui	a0, %hi(.LCPI26_0)
+	ld	a0, %lo(.LCPI26_0)(a0)
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

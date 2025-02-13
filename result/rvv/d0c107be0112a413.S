@@ -26,8 +26,8 @@ func000000000000000c:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, zero
-	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v12, 0
+	vmfge.vf	v0, v8, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 
@@ -36,11 +36,11 @@ func000000000000000c:
 func0000000000000005:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
+	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	fmv.w.x	fa4, zero
-	vmfle.vf	v12, v8, fa4
+	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
+	flw	fa5, %lo(.LCPI4_0)(a0)
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret

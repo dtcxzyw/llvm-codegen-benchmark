@@ -2,9 +2,9 @@ func0000000000000001:
 	andi	a2, a0, 255
 	lui	a3, 16384
 	addiw	a3, a3, 1024
-	li	a4, 5
 	and	a1, a1, a3
-	bgeu	a4, a2, .LBB0_3
+	li	a3, 5
+	bgeu	a3, a2, .LBB0_3
 	bnez	a1, .LBB0_4
 .LBB0_2:
 	ret

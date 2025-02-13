@@ -16,9 +16,9 @@ func0000000000000001:
 
 func0000000000000021:
 	sext.w	a3, a0
-	li	a4, -1
 	addw	a0, a1, a2
-	bne	a3, a4, .LBB2_2
+	li	a1, -1
+	bne	a3, a1, .LBB2_2
 	negw	a0, a0
 .LBB2_2:
 	ret
@@ -33,9 +33,9 @@ func0000000000000006:
 
 func00000000000000a1:
 	sext.w	a3, a0
-	li	a4, 45
 	addw	a0, a1, a2
-	bne	a3, a4, .LBB4_2
+	li	a1, 45
+	bne	a3, a1, .LBB4_2
 	negw	a0, a0
 .LBB4_2:
 	ret

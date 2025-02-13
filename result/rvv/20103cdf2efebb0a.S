@@ -13,8 +13,8 @@ func000000000000000b:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v11, v0
 	vand.vi	v10, v10, 1
-	vmsne.vi	v0, v10, 0
 	lui	a0, 4096
+	vmsne.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vx	v8, v8, a0, v0.t
 	li	a0, 256

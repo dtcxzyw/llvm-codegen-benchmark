@@ -11,19 +11,19 @@ func0000000000000003:
 	ret
 
 func0000000000000015:
-	sext.w	a2, a1
-	li	a3, 15
-	andi	a1, a0, 1
-	blt	a3, a2, .LBB1_3
+	andi	a2, a0, 1
+	sext.w	a1, a1
+	li	a0, 15
+	blt	a0, a1, .LBB1_3
 	li	a0, 4
-	beqz	a1, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_2:
 	li	a1, -16
 	or	a0, a0, a1
 	ret
 .LBB1_3:
 	li	a0, 12
-	bnez	a1, .LBB1_2
+	bnez	a2, .LBB1_2
 .LBB1_4:
 	li	a1, -48
 	or	a0, a0, a1

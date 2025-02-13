@@ -44,21 +44,21 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	andi	a3, a0, 1
-	mv	a0, a1
-	bnez	a3, .LBB3_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB3_2
 	li	a0, 1
 	slli	a0, a0, 32
 	addi	a0, a0, -2
-	sltu	a0, a0, a2
-	slli	a0, a0, 3
+	sltu	a1, a0, a2
+	slli	a1, a1, 3
 .LBB3_2:
+	mv	a0, a1
 	ret
 
 func0000000000000004:
+	andi	a0, a0, 1
 	srli	a2, a2, 8
 	li	a3, 125
-	andi	a0, a0, 1
 	bltu	a2, a3, .LBB4_2
 	li	a2, 4
 	beqz	a0, .LBB4_3

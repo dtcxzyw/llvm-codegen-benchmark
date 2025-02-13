@@ -18,8 +18,8 @@ func0000000000000001:
 func0000000000000008:
 	mv	a2, a0
 	lui	a0, 1048570
-	li	a3, 7
 	addiw	a0, a0, -768
+	li	a3, 7
 	bltu	a3, a2, .LBB1_2
 	andi	a1, a1, 1
 	addi	a1, a1, -1
@@ -28,37 +28,37 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	andi	a2, a1, 1
-	mv	a1, a0
-	bnez	a2, .LBB2_2
-	li	a0, 51
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
+	li	a1, 51
 	li	a2, 249
-	bltu	a2, a1, .LBB2_3
+	bltu	a2, a0, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	li	a0, 40
+	li	a1, 40
 	li	a2, 249
-	bgeu	a2, a1, .LBB2_4
+	bgeu	a2, a0, .LBB2_4
 .LBB2_3:
-	li	a0, 28
+	li	a1, 28
 .LBB2_4:
+	mv	a0, a1
 	ret
 
 func0000000000000004:
-	andi	a2, a1, 1
-	mv	a1, a0
-	bnez	a2, .LBB3_2
-	li	a0, 6
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
+	li	a1, 6
 	li	a2, 256
-	bltu	a1, a2, .LBB3_3
+	bltu	a0, a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a0, 4
+	li	a1, 4
 	li	a2, 256
-	bgeu	a1, a2, .LBB3_4
+	bgeu	a0, a2, .LBB3_4
 .LBB3_3:
-	li	a0, 2
+	li	a1, 2
 .LBB3_4:
+	mv	a0, a1
 	ret
 
 func0000000000000006:

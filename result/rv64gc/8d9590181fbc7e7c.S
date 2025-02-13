@@ -1,10 +1,10 @@
 func000000000000000b:
+	andi	a0, a0, 1
 	seqz	a2, a1
 	add	a1, a1, a1
 	add	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 4
-	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -17,12 +17,12 @@ func000000000000000b:
 	ret
 
 func0000000000000003:
+	andi	a0, a0, 1
 	seqz	a2, a1
 	add	a1, a1, a1
 	add	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 2
-	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -35,12 +35,12 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	andi	a0, a0, 1
 	seqz	a2, a1
 	add	a1, a1, a1
 	add	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 1
-	andi	a0, a0, 1
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:

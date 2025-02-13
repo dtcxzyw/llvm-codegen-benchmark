@@ -25,8 +25,8 @@ func0000000000000061:
 
 func0000000000000054:
 	mv	a2, a0
-	li	a3, 7
 	li	a0, 1
+	li	a3, 7
 	bltu	a2, a3, .LBB3_2
 	sllw	a0, a0, a1
 .LBB3_2:
@@ -34,8 +34,8 @@ func0000000000000054:
 
 func0000000000000074:
 	mv	a2, a0
-	li	a3, 7
 	li	a0, 1
+	li	a3, 7
 	bltu	a2, a3, .LBB4_2
 	sllw	a0, a0, a1
 .LBB4_2:
@@ -50,10 +50,10 @@ func0000000000000021:
 	ret
 
 func0000000000000044:
-	li	a2, 1
-	bgeu	a2, a0, .LBB6_2
-	sllw	a2, a2, a1
+	mv	a2, a0
+	li	a0, 1
+	bgeu	a0, a2, .LBB6_2
+	sllw	a0, a0, a1
 .LBB6_2:
-	mv	a0, a2
 	ret
 

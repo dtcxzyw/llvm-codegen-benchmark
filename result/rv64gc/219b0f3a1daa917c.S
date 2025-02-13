@@ -14,8 +14,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 255
 	andi	a0, a0, 255
+	andi	a1, a1, 255
 	beqz	a1, .LBB1_2
 	li	a1, -16
 	sltiu	a0, a0, 5

@@ -1,7 +1,7 @@
 func0000000000000015:
-	li	a0, -292
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, -292
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsub.vx	v8, v8, a0
 	ret
@@ -20,9 +20,9 @@ func000000000000000d:
 	ret
 
 func0000000000000006:
-	li	a0, -1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsub.vx	v8, v8, a0
 	ret
@@ -34,25 +34,25 @@ func000000000000001e:
 	ret
 
 func000000000000000c:
-	li	a0, 4
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsub.vx	v8, v8, a0
 	ret
 
 func000000000000001c:
-	li	a0, 2
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsub.vx	v8, v8, a0
 	ret
 
 func0000000000000005:
-	li	a0, -2
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, -2
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsub.vx	v8, v8, a0
 	ret

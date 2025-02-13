@@ -4,9 +4,9 @@ func0000000000000101:
 	vmseq.vi	v14, v10, -1
 	bclri	a0, a0, 32
 	vmsgtu.vx	v10, v12, a0
+	vmv.v.i	v12, 0
 	vmand.mm	v0, v14, v10
-	vmv.v.i	v10, 0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000021:

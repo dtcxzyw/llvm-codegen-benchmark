@@ -38,21 +38,21 @@ func0000000000000009:
 	ret
 
 func0000000000000003:
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa1
-	beqz	a0, .LBB4_2
 	fmv.d	fa5, fa0
-.LBB4_2:
+	fmv.d.x	fa0, zero
+	fle.d	a0, fa0, fa1
+	beqz	a0, .LBB4_2
 	fmv.d	fa0, fa5
+.LBB4_2:
 	ret
 
 func0000000000000005:
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa1, fa5
-	beqz	a0, .LBB5_2
 	fmv.d	fa5, fa0
-.LBB5_2:
+	fmv.d.x	fa0, zero
+	fle.d	a0, fa1, fa0
+	beqz	a0, .LBB5_2
 	fmv.d	fa0, fa5
+.LBB5_2:
 	ret
 
 .LCPI6_0:

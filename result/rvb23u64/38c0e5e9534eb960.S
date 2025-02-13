@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.word	0x358637bd
 func0000000000000022:
+	fmin.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
-	fmin.s	fa4, fa0, fa1
-	flt.s	a1, fa4, fa5
+	flw	fa4, %lo(.LCPI0_0)(a1)
+	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
@@ -20,10 +20,10 @@ func0000000000000077:
 .LCPI2_0:
 	.word	0x48976760
 func0000000000000044:
+	fmax.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fmax.s	fa4, fa0, fa1
-	flt.s	a1, fa5, fa4
+	flw	fa4, %lo(.LCPI2_0)(a1)
+	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 

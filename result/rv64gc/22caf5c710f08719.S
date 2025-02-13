@@ -44,19 +44,19 @@ func0000000000000529:
 
 func00000000000000d1:
 	sext.w	a1, a1
-	li	a2, 6
-	li	a3, 2
-	beq	a1, a2, .LBB3_2
 	li	a2, 2
-	bltu	a1, a3, .LBB3_3
+	li	a3, 6
+	beq	a1, a3, .LBB3_2
+	li	a3, 2
+	bltu	a1, a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a2, 4
-	bgeu	a1, a3, .LBB3_4
+	li	a3, 4
+	bgeu	a1, a2, .LBB3_4
 .LBB3_3:
-	li	a2, 3
+	li	a3, 3
 .LBB3_4:
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	ret
 
 func0000000000000085:

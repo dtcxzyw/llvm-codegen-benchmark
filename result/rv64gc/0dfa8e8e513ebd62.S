@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000
 func0000000000000002:
+	andi	a0, a0, 1
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a1)
-	andi	a0, a0, 1
 	fmin.d	fa5, fa0, fa4
 	bnez	a0, .LBB0_2
 	fmv.d	fa1, fa4
@@ -25,9 +25,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
+	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
-	andi	a0, a0, 1
 	beqz	a1, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:

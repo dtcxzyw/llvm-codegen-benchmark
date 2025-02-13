@@ -4,9 +4,9 @@ func0000000000000008:
 	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
+	slli	a0, a0, 3
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	slli	a0, a0, 3
 	mulhu	a1, a0, a1
 	sub	a0, a0, a1
 	srli	a0, a0, 1
@@ -20,9 +20,9 @@ func000000000000000c:
 	bltu	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
+	slli	a0, a0, 3
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	slli	a0, a0, 3
 	mulhu	a1, a0, a1
 	sub	a0, a0, a1
 	srli	a0, a0, 1

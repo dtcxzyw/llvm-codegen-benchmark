@@ -18,12 +18,12 @@ func0000000000000010:
 func0000000000000000:
 	sext.w	a1, a1
 	lui	a2, 2575
-	lui	a3, %hi(.LCPI2_0)
 	addiw	a2, a2, -325
-	ld	a3, %lo(.LCPI2_0)(a3)
 	slli	a2, a2, 13
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
 	add	a0, a0, a1
-	add	a0, a0, a3
+	ld	a1, %lo(.LCPI2_0)(a2)
+	add	a0, a0, a1
 	ret
 

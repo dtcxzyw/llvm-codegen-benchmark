@@ -76,12 +76,12 @@ func0000000000000070:
 .LCPI8_0:
 	.quad	-7046029254386353131
 func0000000000000060:
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vsrl.vi	v10, v10, 2
+	lui	a0, %hi(.LCPI8_0)
 	vadd.vv	v8, v8, v10
+	ld	a0, %lo(.LCPI8_0)(a0)
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -76,10 +76,10 @@ func0000000000000004:
 .LCPI11_0:
 	.word	0x3d4ccccd
 func0000000000000003:
-	lui	a0, %hi(.LCPI11_0)
-	flw	fa5, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	lui	a0, %hi(.LCPI11_0)
+	flw	fa5, %lo(.LCPI11_0)(a0)
 	vmfge.vf	v8, v10, fa5
 	vmnot.m	v0, v8
 	ret
@@ -87,10 +87,10 @@ func0000000000000003:
 .LCPI12_0:
 	.word	0x3d25aee6
 func0000000000000005:
-	lui	a0, %hi(.LCPI12_0)
-	flw	fa5, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	lui	a0, %hi(.LCPI12_0)
+	flw	fa5, %lo(.LCPI12_0)(a0)
 	vmfle.vf	v8, v10, fa5
 	vmnot.m	v0, v8
 	ret

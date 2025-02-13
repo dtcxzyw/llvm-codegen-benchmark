@@ -61,11 +61,11 @@ func0000000000000c99:
 .LCPI7_0:
 	.quad	1844674407370955161
 func0000000000000d19:
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
+	lui	a0, %hi(.LCPI7_0)
 	vmsleu.vv	v14, v8, v12
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8
 	ret

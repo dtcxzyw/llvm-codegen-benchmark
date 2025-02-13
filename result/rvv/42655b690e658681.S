@@ -7,10 +7,12 @@ func0000000000000002:
 	addi	a0, a0, -1365
 	vmacc.vx	v9, a0, v8
 	lui	a0, 349525
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v10, 0
 	addi	a0, a0, 1364
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vx	v0, v9, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	ret
 

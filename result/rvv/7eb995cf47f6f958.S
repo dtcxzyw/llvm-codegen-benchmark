@@ -7,10 +7,10 @@ func0000000000000019:
 	li	a0, 6
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
+	vmv.v.i	v12, -1
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, 0
-	vmv.v.i	v8, -1
-	vmerge.vim	v8, v8, 5, v0
+	vmerge.vim	v8, v12, 5, v0
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -27,10 +27,10 @@ func0000000000000099:
 	vsra.vi	v10, v10, 2
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
+	vmv.v.i	v12, 1
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, -1
-	vmv.v.i	v8, 1
-	vmerge.vim	v8, v8, 8, v0
+	vmerge.vim	v8, v12, 8, v0
 	vadd.vv	v8, v8, v10
 	ret
 

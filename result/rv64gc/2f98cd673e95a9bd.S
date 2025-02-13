@@ -1,9 +1,9 @@
 func000000000000004a:
 	seqz	a3, a2
-	add	a3, a3, a2
-	lui	a2, 24390
-	addiw	a2, a2, -1440
-	mul	a1, a1, a3
+	add	a2, a2, a3
+	lui	a3, 24390
+	mul	a1, a1, a2
+	addiw	a2, a3, -1440
 	bltu	a0, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:

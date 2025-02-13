@@ -23,9 +23,9 @@ func0000000000000007:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000012:
+	addi	a2, a2, -1
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
-	addi	a2, a2, -1
 	mul	a1, a1, a3
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -45,9 +45,9 @@ func0000000000000002:
 .LCPI4_0:
 	.quad	5871781006564002453
 func0000000000000013:
+	addi	a2, a2, -1
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
-	addi	a2, a2, -1
 	mul	a1, a1, a3
 	and	a1, a1, a2
 	add	a0, a0, a1

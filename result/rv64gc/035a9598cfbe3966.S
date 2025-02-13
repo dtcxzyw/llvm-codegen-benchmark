@@ -32,12 +32,12 @@ func0000000000000066:
 	.quad	0x3ff0000000000000
 func0000000000000188:
 	fclass.d	a0, fa1
+	fabs.d	fa5, fa0
 	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
 	andi	a0, a0, 129
 	snez	a0, a0
-	fabs.d	fa4, fa0
-	feq.d	a1, fa4, fa5
+	fld	fa4, %lo(.LCPI3_0)(a1)
+	feq.d	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
 
@@ -57,12 +57,12 @@ func0000000000000022:
 	.quad	0x3ff0000000000000
 func0000000000000098:
 	fclass.d	a0, fa1
+	fabs.d	fa5, fa0
 	lui	a1, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a1)
 	andi	a0, a0, 897
 	snez	a0, a0
-	fabs.d	fa4, fa0
-	feq.d	a1, fa4, fa5
+	fld	fa4, %lo(.LCPI5_0)(a1)
+	feq.d	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
 

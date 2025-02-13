@@ -7,8 +7,8 @@ func0000000000000014:
 	vsrl.vi	v10, v10, 3
 	vnmsub.vx	v10, a0, v8
 	li	a0, 22
-	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v8, 6
+	vmsltu.vx	v0, v10, a0
 	vmerge.vim	v8, v8, 4, v0
 	ret
 

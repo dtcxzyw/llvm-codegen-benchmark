@@ -18,10 +18,10 @@ func0000000000000022:
 	.quad	0xc1e0000000000000
 func00000000000000ca:
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fadd.d	fa4, fa0, fa5
 	fld	fa5, %lo(.LCPI1_1)(a0)
-	fadd.d	fa4, fa0, fa4
 	fle.d	a0, fa5, fa4
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa4

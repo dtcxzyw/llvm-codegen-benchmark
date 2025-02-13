@@ -9,8 +9,8 @@ func00000000000000a6:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	li	a1, 1
 	add	a1, a1, a2

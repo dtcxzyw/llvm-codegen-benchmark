@@ -11,17 +11,17 @@ func0000000000000007:
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	vfsub.vv	v16, v16, v24
+	vmv.v.i	v24, 0
 	vmfne.vf	v0, v16, fa5
-	vmv.v.i	v16, 0
-	vmerge.vvm	v8, v16, v8, v0
+	vmerge.vvm	v8, v24, v8, v0
 	ret
 
 func000000000000000e:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfsub.vv	v16, v16, v24
+	vmv.v.i	v24, 0
 	vmfeq.vv	v0, v16, v16
-	vmv.v.i	v16, 0
-	vmerge.vvm	v8, v16, v8, v0
+	vmerge.vvm	v8, v24, v8, v0
 	ret
 

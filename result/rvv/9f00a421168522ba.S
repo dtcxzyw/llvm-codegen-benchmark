@@ -53,16 +53,16 @@ func00000000000000b4:
 func00000000000001a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
 	vsra.vi	v10, v10, 2
-	vsra.vi	v8, v8, 3
 	vmadd.vx	v8, a0, v10
-	vmsgtu.vx	v0, v8, a1
+	ld	a0, %lo(.LCPI4_0)(a1)
+	vmsgtu.vx	v0, v8, a0
 	ret
 
 func00000000000001b1:
@@ -96,10 +96,10 @@ func00000000000001a1:
 .LCPI7_0:
 	.quad	5270498306774157605
 func0000000000000121:
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsra.vi	v10, v10, 3

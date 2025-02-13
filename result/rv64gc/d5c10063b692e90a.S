@@ -75,19 +75,19 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	andi	a2, a1, 1
-	sext.w	a1, a0
-	bnez	a2, .LBB7_2
+	sext.w	a2, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB7_2
 	li	a0, 536
-	lui	a2, 32768
-	addiw	a2, a2, 39
-	bltu	a2, a1, .LBB7_3
+	lui	a1, 32768
+	addiw	a1, a1, 39
+	bltu	a1, a2, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
 	li	a0, 600
-	lui	a2, 32768
-	addiw	a2, a2, 39
-	bgeu	a2, a1, .LBB7_4
+	lui	a1, 32768
+	addiw	a1, a1, 39
+	bgeu	a1, a2, .LBB7_4
 .LBB7_3:
 	li	a0, 664
 .LBB7_4:

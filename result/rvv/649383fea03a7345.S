@@ -27,12 +27,12 @@ func0000000000000007:
 	ret
 
 func0000000000000028:
+	li	a0, 12
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmul.vx	v8, v8, a0
 	li	a0, -5
 	srli	a0, a0, 2
-	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
-	li	a0, 12
-	vmul.vx	v8, v8, a0
 	vmerge.vim	v8, v8, -12, v0
 	ret
 

@@ -4,13 +4,13 @@ func0000000000000002:
 	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.x	v12, a0
+	lui	a0, 797824
+	fmv.w.x	fa5, a0
+	vmerge.vvm	v8, v12, v8, v0
+	vmflt.vf	v0, v8, fa5
+	vmerge.vxm	v8, v8, a0, v0
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, 797824
-	fmv.w.x	fa4, a0
-	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
-	vmerge.vxm	v8, v8, a0, v0
 	vfmul.vf	v8, v8, fa5
 	ret
 

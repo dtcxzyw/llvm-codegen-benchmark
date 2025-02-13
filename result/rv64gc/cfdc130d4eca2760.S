@@ -1,13 +1,13 @@
 func0000000000000001:
-	li	a3, 1
-	slli	a4, a3, 11
+	mv	a3, a0
+	li	a0, 1
+	slli	a4, a0, 11
 	and	a2, a2, a4
 	seqz	a2, a2
 	and	a1, a1, a2
 	bnez	a1, .LBB0_2
-	mv	a3, a0
-.LBB0_2:
 	mv	a0, a3
+.LBB0_2:
 	ret
 
 func000000000000000c:

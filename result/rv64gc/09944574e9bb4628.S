@@ -38,10 +38,10 @@ func0000000000000028:
 .LBB3_2:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	lui	a2, %hi(.LCPI3_1)
-	ld	a2, %lo(.LCPI3_1)(a2)
 	add	a0, a0, a1
-	sltu	a0, a0, a2
+	lui	a1, %hi(.LCPI3_1)
+	ld	a1, %lo(.LCPI3_1)(a1)
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000021:

@@ -35,26 +35,26 @@ func0000000000000053:
 	ret
 
 func0000000000000010:
-	andi	a3, a2, 1
-	sext.w	a2, a1
-	bnez	a3, .LBB3_2
-	li	a1, 9
+	sext.w	a1, a1
+	andi	a2, a2, 1
+	bnez	a2, .LBB3_2
+	li	a2, 9
 	li	a3, 5
-	bltu	a2, a3, .LBB3_3
+	bltu	a1, a3, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a1, 17
+	li	a2, 17
 	li	a3, 5
-	bgeu	a2, a3, .LBB3_4
+	bgeu	a1, a3, .LBB3_4
 .LBB3_3:
-	li	a1, 4
+	li	a2, 4
 .LBB3_4:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 1
 	sext.w	a1, a1
+	andi	a2, a2, 1
 	bnez	a2, .LBB4_2
 	li	a2, 68
 	seqz	a1, a1
@@ -88,20 +88,20 @@ func0000000000000013:
 	ret
 
 func0000000000000011:
-	andi	a3, a2, 1
-	sext.w	a2, a1
-	bnez	a3, .LBB6_2
-	li	a1, -55
+	sext.w	a1, a1
+	andi	a2, a2, 1
+	bnez	a2, .LBB6_2
+	li	a2, -55
 	li	a3, 10
-	bltu	a2, a3, .LBB6_3
+	bltu	a1, a3, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
-	li	a1, -87
+	li	a2, -87
 	li	a3, 10
-	bgeu	a2, a3, .LBB6_4
+	bgeu	a1, a3, .LBB6_4
 .LBB6_3:
-	li	a1, -48
+	li	a2, -48
 .LBB6_4:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

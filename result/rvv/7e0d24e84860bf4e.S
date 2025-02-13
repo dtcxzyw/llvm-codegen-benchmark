@@ -3,8 +3,8 @@ func0000000000000003:
 	vsetivli	zero, 16, e16, m2, ta, mu
 	vand.vx	v10, v8, a0
 	li	a0, 32
-	vmseq.vx	v0, v10, a0
 	vand.vi	v8, v8, 6
+	vmseq.vx	v0, v10, a0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

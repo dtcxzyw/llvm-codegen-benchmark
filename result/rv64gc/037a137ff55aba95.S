@@ -1,18 +1,18 @@
 func0000000000000087:
-	andi	a1, a1, 255
-	beqz	a1, .LBB0_2
-	li	a2, 1
+	andi	a2, a1, 255
+	beqz	a2, .LBB0_2
+	li	a1, 1
 	li	a3, 126
-	beq	a1, a3, .LBB0_3
+	beq	a2, a3, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 4
+	li	a1, 4
 	li	a3, 126
-	bne	a1, a3, .LBB0_4
+	bne	a2, a3, .LBB0_4
 .LBB0_3:
-	li	a2, 2
+	li	a1, 2
 .LBB0_4:
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000529:

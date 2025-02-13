@@ -32,10 +32,10 @@ func000000000000001e:
 	mul	a0, a0, a1
 	lui	a1, %hi(.LCPI3_0)
 	addiw	a2, a2, -128
-	ld	a1, %lo(.LCPI3_0)(a1)
 	add	a0, a0, a2
 	slli	a2, a2, 32
 	add	a0, a0, a2
+	ld	a1, %lo(.LCPI3_0)(a1)
 	and	a0, a0, a1
 	ret
 

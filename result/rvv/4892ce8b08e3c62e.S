@@ -4,9 +4,9 @@ func000000000000000c:
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
+	li	a0, 16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vi	v0, v8, 0
-	li	a0, 16
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
@@ -18,9 +18,9 @@ func0000000000000008:
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
+	li	a0, 96
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vi	v0, v8, 0
-	li	a0, 96
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
@@ -32,9 +32,9 @@ func0000000000000000:
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
+	li	a0, 320
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vi	v0, v8, 0
-	li	a0, 320
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
@@ -46,9 +46,9 @@ func000000000000000e:
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
+	lui	a0, 2
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vi	v0, v8, 0
-	lui	a0, 2
 	vsetvli	zero, zero, e16, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10

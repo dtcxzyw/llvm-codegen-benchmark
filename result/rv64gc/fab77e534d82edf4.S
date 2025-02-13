@@ -1,6 +1,6 @@
 func0000000000000006:
-	addi	a5, a4, -64
 	sll	a6, a2, a4
+	addi	a5, a4, -64
 	bltz	a5, .LBB0_2
 	srai	a5, a5, 63
 	and	a3, a5, a6
@@ -20,8 +20,8 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	addi	a5, a4, -64
 	sll	a6, a2, a4
+	addi	a5, a4, -64
 	bltz	a5, .LBB1_2
 	srai	a5, a5, 63
 	and	a3, a5, a6
@@ -41,8 +41,8 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	addi	a5, a4, -64
 	sll	a6, a2, a4
+	addi	a5, a4, -64
 	bltz	a5, .LBB2_2
 	srai	a5, a5, 63
 	and	a3, a5, a6

@@ -17,9 +17,9 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfgt.vf	v0, v8, fa5
-	vfadd.vf	v8, v8, fa4, v0.t
+	flw	fa5, %lo(.LCPI1_1)(a0)
+	vfadd.vf	v8, v8, fa5, v0.t
 	ret
 

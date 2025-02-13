@@ -10,9 +10,10 @@ func0000000000000028:
 
 func0000000000000068:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsrl.vi	v10, v8, 1
+	vsrl.vi	v12, v8, 1
+	vmv.v.i	v10, 1
 	vmsgtu.vi	v0, v8, 1
-	vmv.v.i	v8, 1
-	vadd.vi	v8, v10, 3, v0.t
+	vadd.vi	v10, v12, 3, v0.t
+	vmv.v.v	v8, v10
 	ret
 

@@ -49,14 +49,14 @@ func000000000000000a:
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI3_0)
-	ld	a1, %lo(.LCPI3_0)(a1)
+	li	a1, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
+	lui	a0, %hi(.LCPI3_0)
 	vsrl.vi	v12, v12, 3
-	li	a0, 10
-	vnmsub.vx	v12, a0, v10
-	vmacc.vx	v8, a1, v12
+	vnmsub.vx	v12, a1, v10
+	ld	a0, %lo(.LCPI3_0)(a0)
+	vmacc.vx	v8, a0, v12
 	ret
 
 func000000000000000e:

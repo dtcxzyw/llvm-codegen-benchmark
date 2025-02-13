@@ -3,11 +3,11 @@
 func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -1
+	lui	a0, 524288
+	vsra.vi	v8, v8, 4
+	vandn.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, 524288
-	vandn.vx	v10, v10, a1
-	vsra.vi	v8, v8, 4
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret

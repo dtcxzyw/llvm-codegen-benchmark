@@ -1,7 +1,7 @@
 func0000000000000028:
-	lui	a0, 4
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwmaccu.vv	v8, v10, v11
+	lui	a0, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

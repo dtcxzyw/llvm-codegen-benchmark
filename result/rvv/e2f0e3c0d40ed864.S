@@ -6,9 +6,9 @@ func0000000000000042:
 	vmseq.vx	v8, v10, a0
 	lui	a0, 32
 	vmv.v.x	v10, a0
+	lui	a0, 16
 	vmor.mm	v8, v12, v8
 	vmor.mm	v0, v8, v0
-	lui	a0, 16
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

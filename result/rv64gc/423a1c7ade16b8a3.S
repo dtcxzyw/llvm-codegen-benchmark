@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	-8198552921648689607
 func00000000000000e1:
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
 	sub	a1, a1, a2
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	srli	a1, a1, 2
-	mul	a1, a1, a3
+	mul	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -30,11 +30,11 @@ func00000000000000f4:
 .LCPI2_0:
 	.quad	-8198552921648689607
 func00000000000000c1:
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
 	sub	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	srli	a1, a1, 2
-	mul	a1, a1, a3
+	mul	a1, a1, a2
 	srliw	a1, a1, 1
 	slli	a1, a1, 1
 	addi	a0, a0, 2

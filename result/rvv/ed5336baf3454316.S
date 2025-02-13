@@ -17,11 +17,11 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI1_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v12, v16
-	flw	fa4, %lo(.LCPI1_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	vfneg.v	v12, v8
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 
 .LCPI2_0:
@@ -31,10 +31,10 @@ func00000000000000c2:
 	lui	a0, %hi(.LCPI2_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v12, v16
-	flw	fa4, %lo(.LCPI2_0)(a0)
 	vmfge.vf	v0, v8, fa5
 	vfneg.v	v12, v8
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 

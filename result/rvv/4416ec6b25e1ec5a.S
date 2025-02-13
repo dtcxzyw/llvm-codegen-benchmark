@@ -65,12 +65,12 @@ func000000000000000b:
 .LCPI8_0:
 	.quad	-7046029254386353130
 func000000000000000c:
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v0, v8, v10
 	vmv.v.i	v8, 0
+	lui	a0, %hi(.LCPI8_0)
 	vmerge.vim	v8, v8, 1, v0
+	ld	a0, %lo(.LCPI8_0)(a0)
 	vrsub.vx	v8, v8, a0
 	ret
 

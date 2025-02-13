@@ -18,11 +18,12 @@ func00000000000000c6:
 
 func0000000000000027:
 	li	a0, 48
-	vsetivli	zero, 8, e8, mf2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 5
+	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v0, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v12, 5
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsle.vv	v0, v10, v8
 	ret
 

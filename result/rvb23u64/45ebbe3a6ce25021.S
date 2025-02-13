@@ -124,9 +124,9 @@ func0000000000000015:
 .LCPI13_0:
 	.quad	0x433fffffffffffff
 func0000000000000014:
-	lui	a0, %hi(.LCPI13_0)
-	fld	fa5, %lo(.LCPI13_0)(a0)
 	feq.d	a0, fa1, fa1
+	lui	a1, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a1)
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -168,9 +168,9 @@ func0000000000000023:
 	lui	a0, %hi(.LCPI18_0)
 	lui	a1, %hi(.LCPI18_1)
 	fld	fa5, %lo(.LCPI18_0)(a0)
-	fld	fa4, %lo(.LCPI18_1)(a1)
 	flt.d	a0, fa1, fa5
-	fle.d	a1, fa4, fa0
+	fld	fa5, %lo(.LCPI18_1)(a1)
+	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

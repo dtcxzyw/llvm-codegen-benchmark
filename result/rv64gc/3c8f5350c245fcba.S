@@ -16,10 +16,10 @@ func0000000000000008:
 .LCPI2_0:
 	.word	0x3fb33333
 func0000000000000002:
+	fdiv.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fdiv.s	fa4, fa0, fa1
-	flt.s	a1, fa4, fa5
+	flw	fa4, %lo(.LCPI2_0)(a1)
+	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
 

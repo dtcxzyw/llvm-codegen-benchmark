@@ -64,20 +64,20 @@ func0000000000000066:
 .LCPI10_0:
 	.quad	384307168202282325
 func0000000000000048:
-	lui	a3, %hi(.LCPI10_0)
-	ld	a3, %lo(.LCPI10_0)(a3)
 	sub	a1, a1, a2
+	lui	a2, %hi(.LCPI10_0)
 	min	a0, a0, a1
-	sltu	a0, a3, a0
+	ld	a1, %lo(.LCPI10_0)(a2)
+	sltu	a0, a1, a0
 	ret
 
 .LCPI11_0:
 	.quad	384307168202282325
 func0000000000000008:
-	lui	a3, %hi(.LCPI11_0)
-	ld	a3, %lo(.LCPI11_0)(a3)
 	sub	a1, a1, a2
+	lui	a2, %hi(.LCPI11_0)
 	min	a0, a0, a1
-	sltu	a0, a3, a0
+	ld	a1, %lo(.LCPI11_0)(a2)
+	sltu	a0, a1, a0
 	ret
 

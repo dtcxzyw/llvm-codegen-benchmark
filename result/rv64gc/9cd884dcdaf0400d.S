@@ -6,9 +6,9 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
+	fmul.d	fa4, fa0, fa5
+	fmul.d	fa5, fa4, fa5
 	fld	fa4, %lo(.LCPI0_1)(a0)
-	fmul.d	fa3, fa0, fa5
-	fmul.d	fa5, fa3, fa5
 	flt.d	a0, fa4, fa5
 	ret
 
@@ -32,8 +32,8 @@ func000000000000000c:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	fmul.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	fmul.d	fa5, fa5, fa4
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
@@ -49,12 +49,12 @@ func0000000000000002:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
+	fmul.d	fa5, fa0, fa5
 	fld	fa4, %lo(.LCPI3_1)(a0)
 	lui	a0, %hi(.LCPI3_2)
-	fld	fa3, %lo(.LCPI3_2)(a0)
-	fmul.d	fa5, fa0, fa5
 	fmul.d	fa5, fa5, fa4
-	flt.d	a0, fa5, fa3
+	fld	fa4, %lo(.LCPI3_2)(a0)
+	flt.d	a0, fa5, fa4
 	ret
 
 .LCPI4_0:
@@ -65,8 +65,8 @@ func000000000000000e:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
 	fmul.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI4_1)(a0)
 	fmul.d	fa5, fa5, fa4
 	feq.d	a0, fa5, fa5
 	ret
@@ -79,8 +79,8 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
 	fmul.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI5_1)(a0)
 	fmul.d	fa5, fa5, fa4
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5

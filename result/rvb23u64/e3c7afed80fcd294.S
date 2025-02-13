@@ -2,13 +2,13 @@
 	.word	0x358637bd
 func0000000000000084:
 	lui	a1, %hi(.LCPI0_0)
+	lui	a2, 210944
+	fmv.w.x	fa5, a2
+	flt.s	a2, fa0, fa5
 	flw	fa5, %lo(.LCPI0_0)(a1)
-	lui	a1, 210944
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa0, fa4
-	flt.s	a2, fa1, fa5
-	or	a0, a0, a1
+	flt.s	a1, fa1, fa5
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000210:
@@ -64,12 +64,12 @@ func00000000000000c6:
 	.word	0x3f733333
 func0000000000000110:
 	lui	a1, %hi(.LCPI6_0)
+	fmv.w.x	fa5, zero
+	feq.s	a2, fa0, fa5
 	flw	fa5, %lo(.LCPI6_0)(a1)
-	fmv.w.x	fa4, zero
-	feq.s	a1, fa0, fa4
-	flt.s	a2, fa5, fa1
-	or	a0, a0, a1
+	flt.s	a1, fa5, fa1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000108:
@@ -106,13 +106,13 @@ func0000000000000220:
 	.word	0x3f800347
 func00000000000000d4:
 	lui	a1, %hi(.LCPI10_0)
+	lui	a2, %hi(.LCPI10_1)
 	flw	fa5, %lo(.LCPI10_0)(a1)
-	lui	a1, %hi(.LCPI10_1)
-	flw	fa4, %lo(.LCPI10_1)(a1)
 	fle.s	a1, fa5, fa1
+	flw	fa5, %lo(.LCPI10_1)(a2)
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fle.s	a1, fa0, fa4
+	fle.s	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

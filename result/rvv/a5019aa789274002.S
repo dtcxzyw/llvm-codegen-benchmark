@@ -9,10 +9,11 @@ func0000000000000021:
 
 func0000000000000011:
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 8, e64, m4, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmul.vv	v10, v8, v10
+	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmul.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

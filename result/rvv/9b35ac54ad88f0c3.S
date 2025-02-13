@@ -41,11 +41,11 @@ func00000000000003c1:
 .LCPI3_0:
 	.quad	-8198552921648689607
 func00000000000001c1:
+	li	a0, -144
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
-	li	a1, -144
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a1
 	vsrl.vi	v10, v10, 4
 	vmul.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1

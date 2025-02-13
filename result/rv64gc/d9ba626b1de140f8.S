@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.word	0x2edbe6ff
 func000000000000006d:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	fclass.s	a0, fa0
+	lui	a1, %hi(.LCPI0_0)
 	andi	a0, a0, 126
 	snez	a0, a0
+	flw	fa5, %lo(.LCPI0_0)(a1)
 	flt.s	a1, fa0, fa5
 	not	a1, a1
 	and	a0, a0, a1

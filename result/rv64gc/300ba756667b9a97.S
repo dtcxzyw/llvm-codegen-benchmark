@@ -47,11 +47,11 @@ func0000000000000015:
 func000000000000001d:
 	sub	a1, a1, a0
 	lui	a0, 2
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
 	addiw	a0, a0, -1408
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI4_0)
 	srli	a0, a0, 5
-	mul	a0, a0, a2
+	ld	a1, %lo(.LCPI4_0)(a1)
+	mul	a0, a0, a1
 	ret
 

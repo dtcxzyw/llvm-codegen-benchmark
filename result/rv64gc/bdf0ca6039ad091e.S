@@ -13,11 +13,11 @@ func0000000000000024:
 .LCPI1_0:
 	.quad	3353953467947191203
 func0000000000000028:
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 2
+	lui	a2, %hi(.LCPI1_0)
+	srli	a1, a1, 32
+	ld	a2, %lo(.LCPI1_0)(a2)
 	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

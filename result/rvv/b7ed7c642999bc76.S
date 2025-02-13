@@ -27,8 +27,8 @@ func0000000000000010:
 	vadd.vv	v8, v8, v10
 	vmv.v.i	v10, 0
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	lui	a0, 648056
+	vmseq.vi	v0, v12, 0
 	vmerge.vim	v10, v10, 1, v0
 	vsub.vv	v8, v8, v10
 	addi	a0, a0, -1606

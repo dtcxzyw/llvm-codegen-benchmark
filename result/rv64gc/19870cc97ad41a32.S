@@ -3,9 +3,9 @@
 .LCPI0_1:
 	.word	0x3dcccccd
 func0000000000000001:
+	andi	a0, a0, 1
 	sext.w	a1, a1
 	li	a2, 4
-	andi	a0, a0, 1
 	beq	a1, a2, .LBB0_2
 	lui	a1, 258048
 	fmv.w.x	fa0, a1

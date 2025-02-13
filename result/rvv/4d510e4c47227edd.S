@@ -4,9 +4,9 @@ func00000000000003c1:
 	li	a0, 32
 	vmv.v.i	v12, 1
 	vrsub.vx	v10, v10, a0
+	vsll.vv	v10, v12, v10
 	vmseq.vi	v0, v8, 0
-	vsll.vv	v8, v12, v10
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	ret
 
 func00000000000005c4:

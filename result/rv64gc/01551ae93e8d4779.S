@@ -1,6 +1,6 @@
 func000000000000000a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	slli	a1, a2, 48
 	srli	a1, a1, 48

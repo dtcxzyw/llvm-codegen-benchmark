@@ -1,16 +1,16 @@
 func0000000000000084:
-	andi	a2, a1, 255
-	li	a3, 6
-	andi	a1, a0, 255
-	bltu	a2, a3, .LBB0_2
+	andi	a2, a0, 255
+	andi	a0, a1, 255
+	li	a1, 6
+	bltu	a0, a1, .LBB0_2
 	li	a0, -55
-	li	a2, 10
-	bltu	a1, a2, .LBB0_3
+	li	a1, 10
+	bltu	a2, a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, -87
-	li	a2, 10
-	bgeu	a1, a2, .LBB0_4
+	li	a1, 10
+	bgeu	a2, a1, .LBB0_4
 .LBB0_3:
 	li	a0, -48
 .LBB0_4:

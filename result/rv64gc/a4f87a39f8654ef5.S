@@ -1,8 +1,8 @@
 func0000000000000081:
+	andi	a0, a0, 255
 	addi	a3, a2, -65
 	andi	a3, a3, 255
 	li	a4, 26
-	andi	a0, a0, 255
 	bltu	a3, a4, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -14,9 +14,9 @@ func0000000000000081:
 func000000000000008a:
 	slli	a0, a0, 56
 	addi	a3, a2, -65
+	srai	a0, a0, 56
 	andi	a3, a3, 255
 	li	a4, 26
-	srai	a0, a0, 56
 	bltu	a3, a4, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -26,10 +26,10 @@ func000000000000008a:
 	ret
 
 func0000000000000084:
+	andi	a0, a0, 255
 	addi	a3, a2, -65
 	andi	a3, a3, 255
 	li	a4, 26
-	andi	a0, a0, 255
 	bltu	a3, a4, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
@@ -40,9 +40,9 @@ func0000000000000084:
 func0000000000000086:
 	slli	a0, a0, 56
 	addi	a3, a2, -97
+	srai	a0, a0, 56
 	andi	a3, a3, 255
 	li	a4, 26
-	srai	a0, a0, 56
 	bltu	a3, a4, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
@@ -52,10 +52,10 @@ func0000000000000086:
 	ret
 
 func000000000000008c:
+	andi	a0, a0, 255
 	addi	a3, a2, -65
 	andi	a3, a3, 255
 	li	a4, 26
-	andi	a0, a0, 255
 	bltu	a3, a4, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

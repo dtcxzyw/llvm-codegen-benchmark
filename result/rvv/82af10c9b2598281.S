@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	5871781006564002453
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsleu.vi	v0, v8, 2
+	lui	a0, %hi(.LCPI0_0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v12, v10, v0
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -14,12 +14,12 @@ func0000000000000004:
 	.quad	5871781006564002453
 func0000000000000001:
 	li	a0, 29
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmseq.vx	v0, v8, a0
+	lui	a0, %hi(.LCPI1_0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v12, v10, v0
-	vmul.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI1_0)(a0)
+	vmul.vx	v8, v8, a0
 	ret
 

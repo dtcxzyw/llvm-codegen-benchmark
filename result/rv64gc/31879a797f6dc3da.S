@@ -14,17 +14,17 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	lui	a2, 15
-	and	a2, a2, a1
-	lui	a3, 14
-	andi	a1, a0, 1
-	beq	a2, a3, .LBB1_2
+	andi	a2, a0, 1
+	lui	a0, 15
+	and	a0, a0, a1
+	lui	a1, 14
+	beq	a0, a1, .LBB1_2
 	li	a0, 3
-	bnez	a1, .LBB1_3
+	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 1
-	beqz	a1, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a0, 2
 .LBB1_4:

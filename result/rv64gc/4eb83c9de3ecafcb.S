@@ -108,11 +108,11 @@ func0000000000000321:
 .LCPI12_0:
 	.quad	922337203685477580
 func000000000000070c:
-	lui	a3, %hi(.LCPI12_0)
-	ld	a3, %lo(.LCPI12_0)(a3)
 	sext.w	a2, a2
 	sltu	a1, a2, a1
-	xor	a0, a0, a3
+	lui	a2, %hi(.LCPI12_0)
+	ld	a2, %lo(.LCPI12_0)(a2)
+	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

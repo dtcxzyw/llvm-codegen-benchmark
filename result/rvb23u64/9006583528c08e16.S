@@ -46,9 +46,9 @@ func0000000000000047:
 .LCPI6_0:
 	.quad	0x4009220092718f51
 func000000000000002a:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	flt.d	a0, fa1, fa2
+	lui	a1, %hi(.LCPI6_0)
+	fld	fa5, %lo(.LCPI6_0)(a1)
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000
 func0000000000000018:
-	lui	a2, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a2)
 	xor	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
 	seqz	a0, a0
+	fld	fa5, %lo(.LCPI0_0)(a1)
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

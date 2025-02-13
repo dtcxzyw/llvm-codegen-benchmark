@@ -3,11 +3,11 @@
 func0000000000000001:
 	lui	a0, %hi(.LCPI0_0)
 	lui	a1, 559241
-	ld	a0, %lo(.LCPI0_0)(a0)
 	addiw	a1, a1, -1911
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	li	a2, 63
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v12, v10, a0
 	vadd.vv	v10, v12, v10

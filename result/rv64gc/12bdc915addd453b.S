@@ -1,39 +1,39 @@
 func0000000000000211:
-	andi	a3, a2, 255
-	li	a4, 6
-	andi	a2, a1, 255
-	bltu	a3, a4, .LBB0_2
-	li	a1, -55
+	andi	a1, a1, 255
+	andi	a2, a2, 255
+	li	a3, 6
+	bltu	a2, a3, .LBB0_2
+	li	a2, -55
 	li	a3, 10
-	bltu	a2, a3, .LBB0_3
+	bltu	a1, a3, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a1, -87
+	li	a2, -87
 	li	a3, 10
-	bgeu	a2, a3, .LBB0_4
+	bgeu	a1, a3, .LBB0_4
 .LBB0_3:
-	li	a1, -48
+	li	a2, -48
 .LBB0_4:
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000210:
-	andi	a3, a2, 255
-	li	a4, 6
-	andi	a2, a1, 255
-	bltu	a3, a4, .LBB1_2
-	li	a1, -55
+	andi	a1, a1, 255
+	andi	a2, a2, 255
+	li	a3, 6
+	bltu	a2, a3, .LBB1_2
+	li	a2, -55
 	li	a3, 10
-	bltu	a2, a3, .LBB1_3
+	bltu	a1, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a1, -87
+	li	a2, -87
 	li	a3, 10
-	bgeu	a2, a3, .LBB1_4
+	bgeu	a1, a3, .LBB1_4
 .LBB1_3:
-	li	a1, -48
+	li	a2, -48
 .LBB1_4:
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func00000000000000a8:
@@ -51,9 +51,9 @@ func00000000000000a8:
 	ret
 
 func0000000000000085:
+	andi	a1, a1, 255
 	andi	a2, a2, 255
 	li	a3, 6
-	andi	a1, a1, 255
 	beq	a2, a3, .LBB3_2
 	li	a2, 1
 	seqz	a1, a1
@@ -70,9 +70,9 @@ func0000000000000085:
 	ret
 
 func0000000000000084:
+	andi	a1, a1, 255
 	andi	a2, a2, 255
 	li	a3, 6
-	andi	a1, a1, 255
 	beq	a2, a3, .LBB4_2
 	li	a2, 1
 	seqz	a1, a1

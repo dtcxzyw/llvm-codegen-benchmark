@@ -1,6 +1,6 @@
 func0000000000000191:
-	srliw	a2, a2, 30
 	andi	a0, a0, 1
+	srliw	a2, a2, 30
 	bnez	a2, .LBB0_2
 	li	a2, 32
 	beqz	a0, .LBB0_3
@@ -15,8 +15,8 @@ func0000000000000191:
 	ret
 
 func0000000000000193:
-	srliw	a2, a2, 30
 	andi	a0, a0, 1
+	srliw	a2, a2, 30
 	bnez	a2, .LBB1_2
 	li	a2, 32
 	beqz	a0, .LBB1_3

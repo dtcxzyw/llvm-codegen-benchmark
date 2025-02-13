@@ -14,10 +14,10 @@ func0000000000000024:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vf	v8, v8, fa5
-	vfmax.vf	v8, v8, fa4
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vfmax.vf	v8, v8, fa5
 	ret
 
 func00000000000000ea:

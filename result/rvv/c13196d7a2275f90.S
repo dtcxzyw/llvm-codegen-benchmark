@@ -7,18 +7,18 @@
 func0000000000000000:
 	fli.d	fa5, 1.5
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa3, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
 	fneg.d	fa5, fa5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfadd.vf	v10, v10, fa5
-	fld	fa5, %lo(.LCPI0_2)(a0)
-	vfmv.v.f	v12, fa4
-	vfmacc.vf	v12, fa3, v10
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, %hi(.LCPI0_1)
+	vfmv.v.f	v12, fa5
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v12, fa5, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfwcvt.f.x.v	v10, v8
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa5, %lo(.LCPI0_2)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfmadd.vf	v10, fa5, v12
 	vmv.v.v	v8, v10

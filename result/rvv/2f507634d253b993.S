@@ -24,13 +24,13 @@ func00000000000000a8:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
 	vsra.vi	v10, v10, 3
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
+	ld	a0, %lo(.LCPI1_0)(a1)
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v10, a1
+	vmsgtu.vx	v0, v10, a0
 	ret
 
 func00000000000001a8:

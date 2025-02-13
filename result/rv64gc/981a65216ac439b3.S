@@ -1,8 +1,7 @@
 func0000000000000021:
-	mv	a3, a0
+	andi	a3, a0, 1
 	sext.w	a1, a1
 	li	a0, 1
-	andi	a3, a3, 1
 	bne	a1, a0, .LBB0_3
 	bnez	a3, .LBB0_4
 .LBB0_2:

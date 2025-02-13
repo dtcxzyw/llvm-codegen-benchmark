@@ -37,12 +37,12 @@ func0000000000000019:
 .LCPI3_0:
 	.quad	5675921253449092805
 func0000000000000001:
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
-	li	a1, -416
+	li	a0, -416
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a1, v10
+	vmacc.vx	v8, a0, v10
+	lui	a0, %hi(.LCPI3_0)
 	vsra.vi	v8, v8, 3
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vmul.vx	v8, v8, a0
 	ret
 

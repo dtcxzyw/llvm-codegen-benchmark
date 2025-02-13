@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000038:
-	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a2, a2
 	beqz	a2, .LBB1_2
 	li	a2, 125
 	sltu	a1, a2, a1
@@ -23,9 +23,9 @@ func0000000000000038:
 	ret
 
 func0000000000000039:
+	sext.w	a1, a1
 	sext.w	a2, a2
 	li	a3, 200
-	sext.w	a1, a1
 	beq	a2, a3, .LBB2_2
 	li	a2, 2
 	sltu	a1, a1, a2

@@ -62,10 +62,10 @@ func00000000000001b6:
 .LCPI7_0:
 	.word	0x3089705f
 func0000000000000024:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vv	v12, v8, v8
+	lui	a0, %hi(.LCPI7_0)
+	flw	fa5, %lo(.LCPI7_0)(a0)
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
@@ -119,10 +119,10 @@ func000000000000006a:
 	lui	a0, %hi(.LCPI12_0)
 	flw	fa5, %lo(.LCPI12_0)(a0)
 	lui	a0, %hi(.LCPI12_1)
-	flw	fa4, %lo(.LCPI12_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
-	vmfle.vf	v13, v8, fa4
+	flw	fa5, %lo(.LCPI12_1)(a0)
+	vmfle.vf	v13, v8, fa5
 	vmnot.m	v8, v13
 	vmorn.mm	v0, v8, v12
 	ret
@@ -256,11 +256,11 @@ func0000000000000146:
 .LCPI26_0:
 	.word	0x7f7fffff
 func0000000000000058:
+	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI26_0)
-	flw	fa5, %lo(.LCPI26_0)(a0)
-	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v12, v8, fa4
+	vmflt.vf	v12, v8, fa5
+	flw	fa5, %lo(.LCPI26_0)(a0)
 	vmfge.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret

@@ -40,10 +40,10 @@ func0000000000000024:
 .LCPI3_0:
 	.quad	5675921253449092805
 func000000000000002a:
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 2
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vmul.vx	v10, v10, a0
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
@@ -62,10 +62,10 @@ func0000000000000007:
 .LCPI5_0:
 	.quad	-8881765665119413741
 func0000000000000021:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vmul.vx	v10, v10, a0
 	vmseq.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
@@ -74,10 +74,10 @@ func0000000000000021:
 .LCPI6_0:
 	.quad	5675921253449092805
 func0000000000000025:
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vmul.vx	v10, v10, a0
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v12, v0

@@ -10,10 +10,10 @@ func0000000000000018:
 .LCPI1_0:
 	.quad	0x3d06849b86a12b9c
 func0000000000000012:
+	fabs.d	fa5, fa1
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fabs.d	fa4, fa1
-	flt.d	a0, fa4, fa5
+	fld	fa4, %lo(.LCPI1_0)(a0)
+	flt.d	a0, fa5, fa4
 	beqz	a0, .LBB1_2
 	fmv.d.x	fa0, zero
 .LBB1_2:
@@ -22,10 +22,10 @@ func0000000000000012:
 .LCPI2_0:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000002:
+	fabs.d	fa5, fa1
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fabs.d	fa4, fa1
-	flt.d	a0, fa4, fa5
+	fld	fa4, %lo(.LCPI2_0)(a0)
+	flt.d	a0, fa5, fa4
 	beqz	a0, .LBB2_2
 	fmv.d.x	fa0, zero
 .LBB2_2:

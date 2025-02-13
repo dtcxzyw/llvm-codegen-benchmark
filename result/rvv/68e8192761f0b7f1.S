@@ -5,9 +5,10 @@ func0000000000000124:
 	vmv.v.i	v10, 0
 	lui	a0, 4096
 	vmerge.vim	v10, v10, 1, v0
+	vsll.vi	v10, v10, 4
 	vmsltu.vx	v0, v8, a0
-	vsll.vi	v8, v10, 4
-	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000061:
@@ -15,19 +16,21 @@ func0000000000000061:
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vsll.vi	v10, v10, 4
 	vmseq.vi	v0, v8, 0
-	vsll.vi	v8, v10, 4
-	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func00000000000002ac:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v12, v10, 1, v0
+	vor.vi	v10, v12, 10
 	vmseq.vi	v0, v8, 4
-	vor.vi	v8, v10, 10
-	vor.vi	v8, v10, 8, v0.t
+	vor.vi	v10, v12, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000238:
@@ -38,9 +41,10 @@ func0000000000000238:
 	vmv.v.i	v10, 0
 	li	a0, 255
 	vmerge.vim	v10, v10, 1, v0
+	vsll.vi	v10, v10, 4
 	vmsgtu.vx	v0, v8, a0
-	vsll.vi	v8, v10, 4
-	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func000000000000006c:
@@ -49,9 +53,9 @@ func000000000000006c:
 	vmv.v.i	v10, 3
 	li	a0, 32
 	vmerge.vim	v10, v10, 1, v0
+	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000534:
@@ -64,11 +68,11 @@ func0000000000000534:
 	vmv.v.x	v10, a1
 	lui	a1, 98625
 	addi	a1, a1, 161
-	addi	a0, a0, -974
 	vmerge.vxm	v10, v10, a1, v0
+	lui	a1, 2
+	addi	a0, a0, -974
 	vmsltu.vx	v0, v8, a0
-	lui	a0, 2
-	vor.vx	v10, v10, a0, v0.t
+	vor.vx	v10, v10, a1, v0.t
 	vmv.v.v	v8, v10
 	ret
 

@@ -28,11 +28,11 @@ func00000000000001ec:
 	.quad	1844674407370955161
 func0000000000000108:
 	sh2add	a1, a1, a1
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
 	srliw	a0, a0, 1
 	slli	a0, a0, 1
 	sh1add	a0, a1, a0
-	sltu	a0, a2, a0
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
+	sltu	a0, a1, a0
 	ret
 

@@ -10,8 +10,8 @@ func0000000000000004:
 	fli.s	fa5, -1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmor.mm	v0, v0, v16
 	fli.s	fa5, 1.0
+	vmor.mm	v0, v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 

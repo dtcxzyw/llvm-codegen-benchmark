@@ -15,8 +15,8 @@ func0000000000000021:
 	lui	a0, 1
 	addi	a0, a0, -4
 	vand.vx	v10, v8, a0
-	vmseq.vi	v0, v10, 0
 	li	a0, 192
+	vmseq.vi	v0, v10, 0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

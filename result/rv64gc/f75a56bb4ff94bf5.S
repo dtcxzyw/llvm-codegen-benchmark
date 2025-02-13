@@ -24,8 +24,8 @@ func0000000000000026:
 	sext.w	a2, a2
 	mv	a3, a2
 	bge	a2, a4, .LBB1_3
-	li	a4, -1
 	sext.w	a0, a0
+	li	a4, -1
 	bne	a2, a4, .LBB1_4
 .LBB1_2:
 	sext.w	a1, a1
@@ -33,8 +33,8 @@ func0000000000000026:
 	ret
 .LBB1_3:
 	mv	a3, a4
-	li	a4, -1
 	sext.w	a0, a0
+	li	a4, -1
 	beq	a2, a4, .LBB1_2
 .LBB1_4:
 	sext.w	a1, a3
@@ -46,8 +46,8 @@ func000000000000002a:
 	sext.w	a2, a2
 	mv	a3, a2
 	bge	a2, a4, .LBB2_3
-	li	a4, -1
 	sext.w	a0, a0
+	li	a4, -1
 	bne	a2, a4, .LBB2_4
 .LBB2_2:
 	sext.w	a1, a1
@@ -55,8 +55,8 @@ func000000000000002a:
 	ret
 .LBB2_3:
 	mv	a3, a4
-	li	a4, -1
 	sext.w	a0, a0
+	li	a4, -1
 	beq	a2, a4, .LBB2_2
 .LBB2_4:
 	sext.w	a1, a3

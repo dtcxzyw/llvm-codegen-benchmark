@@ -1,7 +1,7 @@
 func0000000000000029:
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	li	a3, 513
-	andi	a0, a0, 1
 	bltu	a2, a3, .LBB0_2
 	li	a2, 128
 	beqz	a0, .LBB0_3

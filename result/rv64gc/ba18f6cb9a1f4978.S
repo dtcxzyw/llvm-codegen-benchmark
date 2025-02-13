@@ -9,10 +9,10 @@ func00000000000001d1:
 .LCPI1_0:
 	.quad	999999999999999999
 func0000000000000121:
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a1, a1, a2
-	sltu	a1, a3, a1
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	sltu	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 18
 	ret

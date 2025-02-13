@@ -38,11 +38,11 @@ func0000000000000044:
 func000000000000012a:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	li	a0, 897
 	vand.vx	v16, v16, a0
+	lui	a0, %hi(.LCPI3_0)
 	vmsne.vi	v24, v16, 0
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmfle.vf	v16, v8, fa5
 	vmorn.mm	v0, v24, v16
 	ret
@@ -75,11 +75,11 @@ func0000000000000084:
 func0000000000000072:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	li	a0, 897
 	vand.vx	v16, v16, a0
+	lui	a0, %hi(.LCPI6_0)
 	vmsne.vi	v24, v16, 0
+	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmfge.vf	v16, v8, fa5
 	vmorn.mm	v0, v24, v16
 	ret
@@ -131,22 +131,22 @@ func0000000000000242:
 .LCPI11_0:
 	.quad	0x471a36e2d0e56042
 func0000000000000088:
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI11_0)
 	vfmax.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI11_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
 .LCPI12_0:
 	.quad	0x471a36e2d0e56042
 func0000000000000288:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI12_0)
 	vfmax.vv	v8, v16, v8
+	fld	fa5, %lo(.LCPI12_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
@@ -168,14 +168,14 @@ func00000000000002aa:
 .LCPI14_1:
 	.quad	0x401921fb54442d18
 func0000000000000048:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI14_0)
 	fld	fa5, %lo(.LCPI14_0)(a0)
 	lui	a0, %hi(.LCPI14_1)
-	fld	fa4, %lo(.LCPI14_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmflt.vf	v24, v16, fa5
-	vmfgt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI14_1)(a0)
+	vmfgt.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
 
@@ -193,11 +193,11 @@ func0000000000000310:
 .LCPI16_0:
 	.quad	0x3cb0000000000000
 func0000000000000244:
-	lui	a0, %hi(.LCPI16_0)
-	fld	fa5, %lo(.LCPI16_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI16_0)
 	vfmin.vv	v8, v8, v16
+	fld	fa5, %lo(.LCPI16_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 

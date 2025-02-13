@@ -66,11 +66,11 @@ func00000000000000cc:
 .LCPI7_0:
 	.quad	0x4058c00000000000
 func00000000000000ea:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v24, v16, v16
+	lui	a0, %hi(.LCPI7_0)
 	vmand.mm	v16, v24, v0
+	fld	fa5, %lo(.LCPI7_0)(a0)
 	vmfle.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret
@@ -105,11 +105,11 @@ func0000000000000063:
 	lui	a0, %hi(.LCPI10_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	fld	fa4, %lo(.LCPI10_0)(a0)
 	vmfgt.vf	v25, v16, fa5
 	vmor.mm	v16, v25, v24
 	vmand.mm	v16, v0, v16
-	vmfge.vf	v17, v8, fa4
+	fld	fa5, %lo(.LCPI10_0)(a0)
+	vmfge.vf	v17, v8, fa5
 	vmandn.mm	v0, v16, v17
 	ret
 

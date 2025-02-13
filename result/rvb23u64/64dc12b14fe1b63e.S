@@ -23,10 +23,10 @@ func000000000000000d:
 .LCPI2_0:
 	.word	0x477fff00
 func0000000000000004:
+	fmul.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmul.s	fa4, fa1, fa2
-	fmul.s	fa5, fa4, fa5
+	flw	fa4, %lo(.LCPI2_0)(a0)
+	fmul.s	fa5, fa5, fa4
 	fadd.s	fa5, fa5, fa0
 	fli.s	fa4, -1.0
 	flt.s	a0, fa4, fa5
@@ -35,10 +35,10 @@ func0000000000000004:
 .LCPI3_0:
 	.word	0x477fff00
 func0000000000000002:
+	fmul.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
-	fmul.s	fa4, fa1, fa2
-	fmul.s	fa5, fa4, fa5
+	flw	fa4, %lo(.LCPI3_0)(a0)
+	fmul.s	fa5, fa5, fa4
 	fadd.s	fa5, fa5, fa0
 	fli.s	fa4, 65536.0
 	flt.s	a0, fa5, fa4
@@ -47,10 +47,10 @@ func0000000000000002:
 .LCPI4_0:
 	.word	0x477fff00
 func000000000000000c:
+	fmul.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	fmul.s	fa4, fa1, fa2
-	fmul.s	fa5, fa4, fa5
+	flw	fa4, %lo(.LCPI4_0)(a0)
+	fmul.s	fa5, fa5, fa4
 	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa5
@@ -61,13 +61,13 @@ func000000000000000c:
 .LCPI5_1:
 	.word	0x3b4d2e1c
 func0000000000000005:
+	fmul.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	flw	fa4, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
-	flw	fa4, %lo(.LCPI5_1)(a0)
-	fmul.s	fa3, fa1, fa2
-	fmul.s	fa5, fa3, fa5
+	fmul.s	fa5, fa5, fa4
 	fadd.s	fa5, fa5, fa0
+	flw	fa4, %lo(.LCPI5_1)(a0)
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret

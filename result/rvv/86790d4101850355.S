@@ -14,11 +14,11 @@ func0000000000000050:
 	vmv.v.i	v12, 0
 	bseti	a0, zero, 11
 	vmerge.vim	v12, v12, 1, v0
+	vor.vi	v12, v12, -4
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vi	v10, v12, -4
-	vmerge.vim	v10, v10, -2, v0
+	vmerge.vim	v10, v12, -2, v0
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -27,11 +27,11 @@ func0000000000000053:
 	vmv.v.i	v12, 0
 	bseti	a0, zero, 11
 	vmerge.vim	v12, v12, 1, v0
+	vrsub.vi	v12, v12, 4
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vrsub.vi	v10, v12, 4
-	vmerge.vim	v10, v10, 2, v0
+	vmerge.vim	v10, v12, 2, v0
 	vadd.vv	v8, v10, v8
 	ret
 
@@ -80,9 +80,9 @@ func0000000000000011:
 	vmv.v.x	v12, a0
 	li	a0, -87
 	vmerge.vxm	v12, v12, a0, v0
+	li	a0, -48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v0, v10, 9
-	li	a0, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
 	vadd.vv	v8, v10, v8

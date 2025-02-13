@@ -3,8 +3,8 @@ func0000000000000021:
 	vmseq.vi	v12, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v13, v10, 0
-	vmand.mm	v0, v13, v12
 	lui	a0, 16
+	vmand.mm	v0, v13, v12
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

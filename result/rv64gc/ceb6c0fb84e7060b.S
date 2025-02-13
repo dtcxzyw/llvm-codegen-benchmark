@@ -24,9 +24,9 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
+	sext.w	a0, a0
 	or	a1, a1, a2
 	andi	a1, a1, 1
-	sext.w	a0, a0
 	bnez	a1, .LBB3_2
 	li	a1, 17
 	slt	a0, a0, a1

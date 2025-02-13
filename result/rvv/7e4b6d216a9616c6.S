@@ -39,11 +39,11 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	flw	fa4, %lo(.LCPI2_1)(a0)
-	lui	a0, %hi(.LCPI2_2)
-	flw	fa3, %lo(.LCPI2_2)(a0)
 	vmfgt.vf	v0, v8, fa5
-	vfadd.vf	v8, v8, fa4, v0.t
-	vmflt.vf	v0, v8, fa3
+	flw	fa5, %lo(.LCPI2_1)(a0)
+	lui	a0, %hi(.LCPI2_2)
+	vfadd.vf	v8, v8, fa5, v0.t
+	flw	fa5, %lo(.LCPI2_2)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 

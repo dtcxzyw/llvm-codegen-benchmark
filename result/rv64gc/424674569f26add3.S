@@ -1,7 +1,7 @@
 func000000000000001f:
 	andi	a3, a2, 255
-	li	a4, 12
 	lui	a2, 524288
+	li	a4, 12
 	beq	a3, a4, .LBB0_2
 	lui	a2, 786432
 .LBB0_2:

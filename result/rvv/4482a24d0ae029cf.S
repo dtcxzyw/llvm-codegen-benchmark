@@ -4,8 +4,8 @@ func0000000000000001:
 	vand.vx	v12, v12, a0
 	li	a0, 54
 	vrsub.vx	v10, v10, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 1075
+	vmseq.vi	v0, v12, 0
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -16,8 +16,8 @@ func00000000000000a1:
 	vand.vx	v12, v12, a0
 	li	a0, 54
 	vrsub.vx	v10, v10, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 1075
+	vmseq.vi	v0, v12, 0
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

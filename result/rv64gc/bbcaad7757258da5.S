@@ -12,8 +12,8 @@ func0000000000000042:
 
 func000000000000028c:
 	sext.w	a1, a1
-	andi	a2, a2, 1
 	sext.w	a0, a0
+	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 127
 	slt	a2, a2, a0

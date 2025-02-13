@@ -16,10 +16,10 @@ func0000000000000022:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmflt.vf	v12, v8, fa4
+	flw	fa5, %lo(.LCPI1_1)(a0)
+	vmflt.vf	v12, v8, fa5
 	vmand.mm	v8, v16, v12
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9
@@ -33,10 +33,10 @@ func00000000000000d2:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	flw	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmflt.vf	v12, v8, fa4
+	flw	fa5, %lo(.LCPI2_1)(a0)
+	vmflt.vf	v12, v8, fa5
 	vmandn.mm	v8, v12, v16
 	vmandn.mm	v9, v0, v12
 	vmor.mm	v0, v8, v9

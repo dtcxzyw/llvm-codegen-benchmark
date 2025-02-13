@@ -26,10 +26,10 @@ func0000000000000004:
 	vle64.v	v24, (a0)
 	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
 	fneg.d	fa5, fa5
 	vfadd.vf	v24, v24, fa5
 	vfmadd.vv	v24, v8, v16
-	vmfgt.vf	v0, v24, fa4
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	vmfgt.vf	v0, v24, fa5
 	ret
 

@@ -182,10 +182,10 @@ func000000000000008c:
 .LCPI26_0:
 	.quad	307445734561825861
 func0000000000000144:
-	lui	a2, %hi(.LCPI26_0)
-	ld	a2, %lo(.LCPI26_0)(a2)
 	slti	a1, a1, 0
+	lui	a2, %hi(.LCPI26_0)
 	xori	a1, a1, 1
+	ld	a2, %lo(.LCPI26_0)(a2)
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

@@ -189,8 +189,8 @@ func0000000000000143:
 
 func00000000000000af:
 	sext.w	a2, a1
-	li	a3, 63
 	lui	a1, 1
+	li	a3, 63
 	blt	a3, a2, .LBB14_2
 	addiw	a1, a1, -976
 	add	a0, a0, a1

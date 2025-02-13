@@ -35,8 +35,8 @@ func000000000000002a:
 
 func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsra.vi	v10, v10, 16
 	vmseq.vi	v0, v8, -1
-	vsra.vi	v8, v10, 16
-	vmerge.vim	v8, v8, -1, v0
+	vmerge.vim	v8, v10, -1, v0
 	ret
 

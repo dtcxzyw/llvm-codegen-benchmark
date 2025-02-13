@@ -61,9 +61,9 @@ func0000000000000007:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
 	fdiv.d	fa5, fa5, fa1
 	fmul.d	fa5, fa5, fa0
+	fld	fa4, %lo(.LCPI5_1)(a0)
 	feq.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret

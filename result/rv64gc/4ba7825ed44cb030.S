@@ -26,8 +26,8 @@ func0000000000000034:
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 4
 	sext.w	a0, a0
+	andi	a1, a1, 4
 	beqz	a1, .LBB3_2
 	lui	a1, 1
 	sltu	a0, a1, a0
@@ -47,8 +47,8 @@ func0000000000000181:
 	ret
 
 func0000000000000188:
-	slli	a1, a1, 44
 	sext.w	a0, a0
+	slli	a1, a1, 44
 	bgez	a1, .LBB5_2
 	lui	a1, 272
 	addiw	a1, a1, -1
@@ -68,8 +68,8 @@ func0000000000000024:
 	ret
 
 func0000000000000026:
-	andi	a1, a1, 2
 	sext.w	a0, a0
+	andi	a1, a1, 2
 	beqz	a1, .LBB7_2
 	li	a1, 20
 	slt	a0, a0, a1
@@ -89,8 +89,8 @@ func000000000000002c:
 	ret
 
 func0000000000000029:
-	andi	a1, a1, 64
 	sext.w	a0, a0
+	andi	a1, a1, 64
 	beqz	a1, .LBB9_2
 	lui	a1, 1951
 	addiw	a1, a1, 704
@@ -105,8 +105,8 @@ func0000000000000029:
 	ret
 
 func0000000000000025:
-	andi	a1, a1, 64
 	sext.w	a0, a0
+	andi	a1, a1, 64
 	beqz	a1, .LBB10_2
 	lui	a1, 2441
 	addiw	a1, a1, 1664
@@ -121,8 +121,8 @@ func0000000000000025:
 	ret
 
 func000000000000002a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	beqz	a1, .LBB11_2
 	li	a1, 256
 	slt	a0, a1, a0

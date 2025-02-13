@@ -65,8 +65,8 @@ func0000000000000006:
 
 func0000000000000014:
 	sext.w	a2, a1
-	li	a3, 240
 	lui	a1, 64
+	li	a3, 240
 	bltu	a2, a3, .LBB6_2
 	addiw	a1, a1, -1
 	and	a0, a0, a1

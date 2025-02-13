@@ -56,12 +56,12 @@ func0000000000000108:
 func00000000000000ca:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
-	lui	a1, %hi(.LCPI5_1)
-	ld	a1, %lo(.LCPI5_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v0, v12, a0
+	lui	a0, %hi(.LCPI5_1)
+	ld	a0, %lo(.LCPI5_1)(a0)
 	vmerge.vvm	v10, v12, v10, v0
-	vmsgt.vx	v0, v10, a1
+	vmsgt.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

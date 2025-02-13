@@ -19,11 +19,11 @@ func0000000000000208:
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1
-	sltu	a0, a3, a0
+	ld	a1, %lo(.LCPI1_0)(a3)
+	sltu	a0, a1, a0
 	ret
 
 func00000000000000aa:

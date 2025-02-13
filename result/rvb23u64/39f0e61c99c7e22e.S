@@ -44,12 +44,12 @@ func0000000000000005:
 func0000000000000001:
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
-	lui	a4, %hi(.LCPI5_1)
-	ld	a4, %lo(.LCPI5_1)(a4)
 	add	a2, a2, a3
+	lui	a3, %hi(.LCPI5_1)
+	ld	a3, %lo(.LCPI5_1)(a3)
 	xor	a1, a1, a2
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a4, a1
+	czero.nez	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

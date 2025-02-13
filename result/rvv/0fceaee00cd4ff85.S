@@ -19,10 +19,10 @@ func0000000000000002:
 	vmv1r.v	v10, v0
 	vand.vi	v8, v8, 4
 	lui	a0, 155904
-	vmseq.vi	v0, v8, 0
-	vmv.v.x	v8, a0
+	vmv.v.x	v12, a0
 	lui	a0, 8192
-	vmerge.vxm	v8, v8, a0, v0
+	vmseq.vi	v0, v8, 0
+	vmerge.vxm	v8, v12, a0, v0
 	lui	a0, 131328
 	vor.vx	v12, v8, a0
 	vmv1r.v	v0, v10

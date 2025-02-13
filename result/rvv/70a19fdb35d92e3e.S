@@ -61,13 +61,13 @@ func00000000000000b8:
 .LCPI8_1:
 	.quad	-614891469123651721
 func0000000000000038:
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
-	lui	a1, %hi(.LCPI8_1)
-	ld	a1, %lo(.LCPI8_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 3
+	lui	a0, %hi(.LCPI8_0)
+	ld	a0, %lo(.LCPI8_0)(a0)
 	vadd.vx	v8, v8, a0
-	vmsltu.vx	v0, v8, a1
+	lui	a0, %hi(.LCPI8_1)
+	ld	a0, %lo(.LCPI8_1)(a0)
+	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000018:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	li	a1, 16
 	xor	a0, a0, a1
@@ -13,8 +13,8 @@ func0000000000000018:
 	ret
 
 func000000000000000a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 488
 	addiw	a1, a1, 1152

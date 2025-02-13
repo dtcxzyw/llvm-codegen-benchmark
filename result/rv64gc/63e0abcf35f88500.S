@@ -107,12 +107,12 @@ func00000000000000ca:
 	.word	0x3f666666
 func0000000000000042:
 	lui	a1, %hi(.LCPI11_0)
+	lui	a2, %hi(.LCPI11_1)
 	flw	fa5, %lo(.LCPI11_0)(a1)
-	lui	a1, %hi(.LCPI11_1)
-	flw	fa4, %lo(.LCPI11_1)(a1)
 	flt.s	a1, fa5, fa1
+	flw	fa5, %lo(.LCPI11_1)(a2)
 	and	a0, a0, a1
-	flt.s	a1, fa0, fa4
+	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 

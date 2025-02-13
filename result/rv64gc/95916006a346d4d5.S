@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	0x3e45798ee2308c3a
 func000000000000000d:
+	fabs.s	fa5, fa0
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fabs.s	fa4, fa0
-	fcvt.d.s	fa4, fa4
-	flt.d	a0, fa4, fa5
+	fcvt.d.s	fa5, fa5
+	fld	fa4, %lo(.LCPI0_0)(a0)
+	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
@@ -18,11 +18,11 @@ func0000000000000009:
 .LCPI2_0:
 	.quad	0x3ff921fb54442d18
 func0000000000000005:
+	fabs.s	fa5, fa0
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fabs.s	fa4, fa0
-	fcvt.d.s	fa4, fa4
-	fle.d	a0, fa4, fa5
+	fcvt.d.s	fa5, fa5
+	fld	fa4, %lo(.LCPI2_0)(a0)
+	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
@@ -43,10 +43,10 @@ func0000000000000003:
 .LCPI5_0:
 	.word	0x358637bd
 func0000000000000002:
+	fabs.s	fa5, fa0
 	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
-	fabs.s	fa4, fa0
-	flt.s	a0, fa4, fa5
+	flw	fa4, %lo(.LCPI5_0)(a0)
+	flt.s	a0, fa5, fa4
 	ret
 
 func0000000000000008:

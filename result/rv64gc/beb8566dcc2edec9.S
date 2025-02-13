@@ -1,7 +1,7 @@
 func0000000000000064:
 	srli	a0, a0, 32
-	andi	a1, a1, 1
 	snez	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	lui	a1, 6
 	addi	a1, a1, 560
@@ -16,8 +16,8 @@ func0000000000000064:
 	ret
 
 func0000000000000061:
-	andi	a1, a1, 1
 	snez	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 6
 	addi	a1, a1, 560

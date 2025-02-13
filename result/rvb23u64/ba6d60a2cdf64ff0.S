@@ -32,8 +32,9 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	feq.d	a0, fa0, fa0
+	fmv.d	fa5, fa0
 	fmv.d.x	fa0, zero
+	feq.d	a0, fa5, fa5
 	beqz	a0, .LBB2_2
 	fmul.d	fa0, fa1, fa0
 .LBB2_2:

@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.word	0xc2b0c0a5
 func0000000000000002:
+	andi	a0, a0, 1
 	lui	a1, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a1)
 	flt.s	a1, fa1, fa5
-	andi	a0, a0, 1
 	bnez	a1, .LBB0_3
 	fli.s	fa5, inf
 	beqz	a0, .LBB0_4
@@ -55,11 +55,11 @@ func0000000000000004:
 	ret
 
 func0000000000000009:
+	andi	a0, a0, 1
 	fli.s	fa5, inf
 	flt.s	a1, fa1, fa5
 	flt.s	a2, fa5, fa1
 	or	a1, a1, a2
-	andi	a0, a0, 1
 	beqz	a1, .LBB3_3
 	fli.s	fa5, 1.0
 	beqz	a0, .LBB3_4
@@ -75,9 +75,9 @@ func0000000000000009:
 
 func0000000000000003:
 	fmv.s	fa5, fa0
+	andi	a0, a0, 1
 	fmv.w.x	fa0, zero
 	fle.s	a1, fa0, fa1
-	andi	a0, a0, 1
 	bnez	a1, .LBB4_3
 	bnez	a0, .LBB4_4
 .LBB4_2:

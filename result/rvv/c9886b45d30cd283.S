@@ -5,8 +5,8 @@ func0000000000000021:
 	vmv.v.i	v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v10, v10, a0
-	vmand.mm	v0, v11, v10
 	li	a0, 20
+	vmand.mm	v0, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

@@ -1,4 +1,5 @@
 func0000000000000002:
+	andi	a0, a0, 1
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
 	lui	a1, 276464
@@ -6,7 +7,6 @@ func0000000000000002:
 	fmadd.s	fa4, fa0, fa4, fa5
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa4, fa5
-	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
 	fmv.s	fa5, fa4
 .LBB0_2:

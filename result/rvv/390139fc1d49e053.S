@@ -106,9 +106,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, -4, v0.t
+	li	a0, 64
 	vmsltu.vx	v0, v8, a0
 	ret
 

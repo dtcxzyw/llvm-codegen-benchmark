@@ -4,9 +4,9 @@ func00000000000000ac:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
+	fmv.d.x	fa5, zero
+	vmfge.vf	v7, v24, fa5
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fmv.d.x	fa4, zero
-	vmfge.vf	v7, v24, fa4
 	vmfle.vf	v6, v24, fa5
 	vmand.mm	v0, v7, v6
 	vmerge.vvm	v8, v16, v8, v0
@@ -22,9 +22,9 @@ func00000000000000c2:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vmfge.vf	v7, v24, fa5
-	vmflt.vf	v6, v24, fa4
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vmflt.vf	v6, v24, fa5
 	vmand.mm	v0, v6, v7
 	vmerge.vvm	v8, v16, v8, v0
 	ret

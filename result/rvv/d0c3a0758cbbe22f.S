@@ -6,17 +6,17 @@ func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, -18
+	fli.d	fa5, 0.25
 	vmseq.vx	v0, v8, a0
 	lui	a0, %hi(.LCPI0_0)
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vfmv.v.f	v12, fa5
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	fli.d	fa3, 0.25
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmv.v.f	v12, fa3
 	vfmerge.vfm	v12, v12, fa5, v0
+	fld	fa5, %lo(.LCPI0_1)(a0)
 	vmv1r.v	v0, v10
-	vfmerge.vfm	v8, v12, fa4, v0
+	vfmerge.vfm	v8, v12, fa5, v0
 	ret
 
 func0000000000000004:

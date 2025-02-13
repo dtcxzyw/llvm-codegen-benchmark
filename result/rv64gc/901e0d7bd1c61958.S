@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a2
 	andi	a0, a0, 1
+	sext.w	a2, a2
 	bltz	a2, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:

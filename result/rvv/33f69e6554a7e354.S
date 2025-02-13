@@ -1,8 +1,8 @@
 func0000000000000001:
-	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v8, v8, 2, v0.t
 	vsrl.vi	v8, v8, 1
+	li	a0, 31
 	vand.vx	v8, v8, a0
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000001:
 	slli	a1, a1, 48
-	andi	a2, a2, 1
 	srli	a1, a1, 48
+	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 8
 	li	a3, 2
@@ -18,8 +18,8 @@ func0000000000000001:
 
 func0000000000000004:
 	slli	a1, a1, 48
-	andi	a2, a2, 1
 	srli	a1, a1, 48
+	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 37
 	li	a3, 2
@@ -36,8 +36,8 @@ func0000000000000004:
 
 func0000000000000008:
 	slli	a1, a1, 48
-	andi	a2, a2, 1
 	srli	a1, a1, 48
+	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, 256
 	li	a3, 829

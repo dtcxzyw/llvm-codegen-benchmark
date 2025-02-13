@@ -9,21 +9,23 @@ func0000000000000041:
 	ret
 
 func0000000000000054:
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v11, 1
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10, v0.t
+	vsll.vv	v11, v11, v10, v0.t
+	vmv.v.v	v8, v11
 	ret
 
 func000000000000004c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
+	vsll.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vsll.vv	v8, v11, v10
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v10, 0, v0
 	ret
 

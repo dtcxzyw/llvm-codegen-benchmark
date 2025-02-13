@@ -12,9 +12,9 @@ func0000000000000015:
 func0000000000000003:
 	li	a0, 255
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v10, 0
-	vand.vx	v10, v12, a0
-	vmerge.vim	v10, v10, 2, v0
+	vmerge.vim	v10, v12, 2, v0
 	vor.vv	v8, v8, v10
 	ret
 

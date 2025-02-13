@@ -1,189 +1,96 @@
 func0000000000000014:
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a2, a1, 4
-	add	a1, a1, a2
+	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
+	vle64.v	v8, (a0)
 	vfabs.v	v24, v16
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v16, v24, v0
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v16, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl1r.v	v0, (a0)
+	vmflt.vv	v0, v24, v8
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)
+	vl8r.v	v8, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a1, a0, 4
-	add	a0, a0, a1
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
 
 func0000000000000012:
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a2, a1, 4
-	add	a1, a1, a2
+	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
+	vle64.v	v8, (a0)
 	vfabs.v	v24, v16
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v16, v0, v24
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v16, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl1r.v	v0, (a0)
+	vmflt.vv	v0, v8, v24
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)
+	vl8r.v	v8, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a1, a0, 4
-	add	a0, a0, a1
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
 
 func000000000000001b:
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a1, a1, 4
+	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
+	vle64.v	v8, (a0)
 	vfabs.v	v0, v16
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v24, (a0)
-	vmflt.vv	v16, v0, v24
-	vmnot.m	v0, v16
+	vmflt.vv	v24, v0, v8
+	vmnot.m	v0, v24
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)
+	vl8r.v	v8, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a0, a0, 4
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
 
 func0000000000000004:
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a2, a1, 4
-	add	a1, a1, a2
+	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
+	vle64.v	v8, (a0)
 	vfabs.v	v24, v16
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v16, v24, v0
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v16, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl1r.v	v0, (a0)
+	vmflt.vv	v0, v24, v8
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)
+	vl8r.v	v8, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a1, a0, 4
-	add	a0, a0, a1
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
 
 func0000000000000002:
 	addi	sp, sp, -16
 	csrr	a1, vlenb
-	slli	a2, a1, 4
-	add	a1, a1, a2
+	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
+	vle64.v	v8, (a0)
 	vfabs.v	v24, v16
-	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
-	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v16, v0, v24
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v16, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vl1r.v	v0, (a0)
+	vmflt.vv	v0, v8, v24
 	addi	a0, sp, 16
-	vl8r.v	v16, (a0)
+	vl8r.v	v8, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	csrr	a0, vlenb
-	slli	a1, a0, 4
-	add	a0, a0, a1
-	add	sp, sp, a0
+	sh3add	sp, a0, sp
 	addi	sp, sp, 16
 	ret
 

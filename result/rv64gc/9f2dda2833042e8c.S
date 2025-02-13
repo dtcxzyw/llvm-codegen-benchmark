@@ -24,10 +24,10 @@ func000000000000004a:
 	ret
 
 func0000000000000004:
-	addi	a0, a0, -2048
-	addiw	a1, a0, -1479
-	li	a2, 127
+	addi	a1, a0, -2048
 	lui	a0, 1
+	addiw	a1, a1, -1479
+	li	a2, 127
 	bltu	a1, a2, .LBB3_2
 	addiw	a0, a0, -432
 	ret

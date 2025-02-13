@@ -1,7 +1,7 @@
 func0000000000000001:
 	slli	a1, a1, 48
-	andi	a2, a2, 1
 	srli	a1, a1, 48
+	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, -1482
 	lui	a3, 1

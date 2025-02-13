@@ -28,12 +28,12 @@ func0000000000000001:
 func0000000000000038:
 	lui	a0, 1048574
 	addi	a1, a0, -1805
-	addi	a0, a0, -1806
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	li	a1, 609
+	addi	a0, a0, -1806
 	vmsltu.vx	v0, v10, a0
-	li	a0, 609
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func0000000000000024:
@@ -50,12 +50,12 @@ func0000000000000024:
 func0000000000000008:
 	lui	a0, 1048574
 	addi	a1, a0, 1342
-	addi	a0, a0, 1292
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	li	a1, 63
+	addi	a0, a0, 1292
 	vmsltu.vx	v0, v10, a0
-	li	a0, 63
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func000000000000004a:
@@ -79,8 +79,8 @@ func0000000000000061:
 func0000000000000034:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	vmsleu.vi	v0, v10, 15
 	li	a0, 64
+	vmsleu.vi	v0, v10, 15
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

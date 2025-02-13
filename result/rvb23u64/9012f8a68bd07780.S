@@ -29,8 +29,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	li	a1, 8
 	fli.s	fa0, 1.0
+	li	a1, 8
 	bltu	a0, a1, .LBB3_2
 	fli.s	fa0, 0.5
 .LBB3_2:

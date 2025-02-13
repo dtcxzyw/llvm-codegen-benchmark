@@ -30,9 +30,9 @@ func0000000000000221:
 	vmv.v.x	v12, a0
 	li	a0, -87
 	vmerge.vxm	v12, v12, a0, v0
+	li	a0, -48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v0, v10, 9
-	li	a0, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
 	vrsub.vi	v8, v8, 0

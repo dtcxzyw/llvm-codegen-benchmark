@@ -116,11 +116,11 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI11_0)
 	flw	fa5, %lo(.LCPI11_0)(a0)
 	lui	a0, %hi(.LCPI11_1)
-	flw	fa4, %lo(.LCPI11_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
+	flw	fa5, %lo(.LCPI11_1)(a0)
 	vmand.mm	v12, v16, v0
-	vmflt.vf	v13, v8, fa4
+	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
 

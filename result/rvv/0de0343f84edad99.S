@@ -33,10 +33,10 @@ func0000000000000006:
 .LCPI4_0:
 	.quad	1844674407370955209
 func0000000000000003:
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

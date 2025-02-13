@@ -1,7 +1,7 @@
 func000000000000003f:
+	sext.w	a1, a1
 	sext.w	a3, a2
 	li	a2, 255
-	sext.w	a1, a1
 	bgeu	a3, a2, .LBB0_3
 	slli	a3, a3, 8
 	or	a0, a0, a3
@@ -20,9 +20,9 @@ func000000000000003f:
 	ret
 
 func000000000000001b:
+	sext.w	a1, a1
 	sext.w	a3, a2
 	li	a2, 255
-	sext.w	a1, a1
 	bgeu	a3, a2, .LBB1_3
 	slli	a3, a3, 8
 	or	a0, a0, a3

@@ -4,9 +4,9 @@ func0000000000000420:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vi	v11, v8, 15
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vi	v8, v10, 15
-	vmor.mm	v0, v11, v8
 	vmv.v.i	v8, 0
+	vmsgtu.vi	v9, v10, 15
+	vmor.mm	v0, v11, v9
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000630:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vi	v12, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vv	v8, v10, v11
-	vmor.mm	v0, v8, v12
 	vmv.v.i	v8, 0
+	vmsne.vv	v9, v10, v11
+	vmor.mm	v0, v9, v12
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

@@ -8,12 +8,12 @@ func000000000000000a:
 .LCPI1_0:
 	.quad	4238682002231055
 func000000000000001e:
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a1, a1, a2
+	lui	a2, %hi(.LCPI1_0)
 	add	a0, a0, a1
 	srli	a0, a0, 8
-	and	a0, a0, a3
+	ld	a1, %lo(.LCPI1_0)(a2)
+	and	a0, a0, a1
 	ret
 
 func0000000000000000:

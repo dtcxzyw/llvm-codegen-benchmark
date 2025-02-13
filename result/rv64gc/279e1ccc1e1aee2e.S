@@ -17,10 +17,10 @@ func0000000000000007:
 	ret
 
 func0000000000000053:
-	li	a2, 16
-	bltu	a0, a2, .LBB2_2
-	andi	a2, a1, -4
+	mv	a2, a0
+	li	a0, 16
+	bltu	a2, a0, .LBB2_2
+	andi	a0, a1, -4
 .LBB2_2:
-	mv	a0, a2
 	ret
 

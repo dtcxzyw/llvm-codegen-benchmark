@@ -1,9 +1,9 @@
 func0000000000000010:
 	fli.s	fa5, inf
+	lui	a0, 266752
 	fneg.s	fa4, fa5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v16, fa4
-	lui	a0, 266752
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmv.v.x	v16, a0
 	vfmadd.vv	v8, v12, v16

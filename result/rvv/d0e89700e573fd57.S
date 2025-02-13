@@ -29,10 +29,10 @@ func0000000000000009:
 .LCPI2_0:
 	.quad	3074457345618258603
 func0000000000000003:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0

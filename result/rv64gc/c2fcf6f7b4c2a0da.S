@@ -1,10 +1,9 @@
 func0000000000000002:
-	andi	a3, a0, 1
-	bnez	a3, .LBB0_2
-	mv	a0, a1
-	ret
+	andi	a0, a0, 1
+	beqz	a0, .LBB0_2
+	slli	a0, a0, 4
+	sub	a1, a2, a0
 .LBB0_2:
-	slli	a3, a3, 4
-	sub	a0, a2, a3
+	mv	a0, a1
 	ret
 

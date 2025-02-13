@@ -52,12 +52,12 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	li	a2, 64
-	blt	a0, a2, .LBB6_2
+	mv	a2, a0
+	li	a0, 64
+	blt	a2, a0, .LBB6_2
 	li	a0, -127
 	srli	a0, a0, 1
-	and	a2, a1, a0
+	and	a0, a0, a1
 .LBB6_2:
-	mv	a0, a2
 	ret
 

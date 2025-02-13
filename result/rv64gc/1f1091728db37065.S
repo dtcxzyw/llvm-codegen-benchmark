@@ -27,10 +27,10 @@ func0000000000000004:
 	sll	a1, a2, a1
 	and	a0, a0, a1
 	beqz	a0, .LBB1_2
+	neg	a1, a0
+	and	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	neg	a2, a0
-	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 58
 	lui	a1, %hi(.LCPI1_1)

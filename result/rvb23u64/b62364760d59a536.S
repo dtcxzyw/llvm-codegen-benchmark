@@ -40,11 +40,11 @@ func0000000000000008:
 .LCPI6_0:
 	.word	0x3b4d2e1c
 func0000000000000005:
+	fsub.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
-	fsub.s	fa4, fa1, fa2
-	fsub.s	fa4, fa4, fa0
-	fle.s	a0, fa4, fa5
+	fsub.s	fa5, fa5, fa0
+	flw	fa4, %lo(.LCPI6_0)(a0)
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

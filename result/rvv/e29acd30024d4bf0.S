@@ -7,12 +7,12 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	lui	a0, 2
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256
-	vand.vx	v10, v12, a0
-	vor.vv	v8, v8, v10, v0.t
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vand.vx	v12, v12, a0
+	lui	a0, 2
+	vmseq.vx	v0, v10, a0
+	vor.vv	v8, v8, v12, v0.t
 	ret
 

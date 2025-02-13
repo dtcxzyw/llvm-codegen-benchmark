@@ -21,9 +21,9 @@ func0000000000000001:
 .LCPI3_0:
 	.quad	196742565691928
 func000000000000000c:
+	negw	a0, a0
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	negw	a0, a0
 	mul	a0, a0, a1
 	ret
 

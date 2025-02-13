@@ -11,8 +11,8 @@ func0000000000000084:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v0, v14, v12
 	li	a0, 32
+	vmand.mm	v0, v14, v12
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

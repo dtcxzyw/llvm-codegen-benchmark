@@ -10,15 +10,15 @@ func000000000000000f:
 
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vi	v10, v10, -8
 	vadd.vi	v8, v8, 4, v0.t
+	vand.vi	v10, v10, -8
 	vadd.vv	v8, v8, v10
 	ret
 
 func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vand.vi	v8, v8, -8
 	vadd.vi	v10, v10, 8, v0.t
+	vand.vi	v8, v8, -8
 	vadd.vv	v8, v8, v10
 	ret
 

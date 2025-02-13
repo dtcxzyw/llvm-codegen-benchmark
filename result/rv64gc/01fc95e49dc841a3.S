@@ -38,46 +38,46 @@ func000000000000001f:
 .LCPI4_0:
 	.quad	-4658895280553007687
 func000000000000003c:
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
 	sext.w	a1, a1
 	slli	a0, a0, 32
 	or	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 .LCPI5_0:
 	.quad	-4658895280553007687
 func000000000000001c:
 	slli	a1, a1, 32
-	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	or	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 .LCPI6_0:
 	.quad	-4658895280553007687
 func0000000000000034:
-	lui	a2, %hi(.LCPI6_0)
-	ld	a2, %lo(.LCPI6_0)(a2)
 	sext.w	a1, a1
 	slli	a0, a0, 32
 	or	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI6_0)
+	ld	a1, %lo(.LCPI6_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 .LCPI7_0:
 	.quad	-4658895280553007687
 func0000000000000024:
-	lui	a2, %hi(.LCPI7_0)
-	ld	a2, %lo(.LCPI7_0)(a2)
 	sext.w	a1, a1
 	slli	a0, a0, 32
 	or	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI7_0)
+	ld	a1, %lo(.LCPI7_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 func000000000000003f:

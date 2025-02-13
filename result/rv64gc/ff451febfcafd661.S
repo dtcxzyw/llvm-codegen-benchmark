@@ -13,10 +13,10 @@ func0000000000000008:
 	ret
 
 func0000000000000066:
-	add	a1, a1, a2
-	blt	a1, a0, .LBB2_2
-	li	a1, 2
+	mv	a3, a0
+	add	a0, a1, a2
+	blt	a0, a3, .LBB2_2
+	li	a0, 2
 .LBB2_2:
-	mv	a0, a1
 	ret
 

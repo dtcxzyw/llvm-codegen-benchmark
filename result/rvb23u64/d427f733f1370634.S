@@ -25,8 +25,8 @@ func0000000000000002:
 	ret
 
 func000000000000000e:
-	feq.d	a1, fa0, fa0
 	andi	a0, a0, 1
+	feq.d	a1, fa0, fa0
 	beqz	a1, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:

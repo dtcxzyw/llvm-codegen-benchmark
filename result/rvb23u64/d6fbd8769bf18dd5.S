@@ -18,8 +18,8 @@ func0000000000003188:
 	.quad	-1483400188077313
 func000000000000318c:
 	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	xor	a3, a0, a1
+	ld	a2, %lo(.LCPI2_0)(a2)
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1
@@ -33,8 +33,8 @@ func000000000000318c:
 	.quad	-1483400188077313
 func0000000000003181:
 	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
 	xor	a3, a0, a1
+	ld	a2, %lo(.LCPI3_0)(a2)
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1
@@ -48,8 +48,8 @@ func0000000000003181:
 	.quad	-1483400188077313
 func000000000000318b:
 	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
 	slt	a3, a0, a1
+	ld	a2, %lo(.LCPI4_0)(a2)
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1
@@ -63,8 +63,8 @@ func000000000000318b:
 	.quad	-1483400188077313
 func0000000000003187:
 	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
 	slt	a3, a1, a0
+	ld	a2, %lo(.LCPI5_0)(a2)
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1

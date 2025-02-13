@@ -19,9 +19,9 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	li	a0, 896
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 4, v0.t
+	li	a0, 896
 	vrsub.vx	v8, v8, a0
 	ret
 

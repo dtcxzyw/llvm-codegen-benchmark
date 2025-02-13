@@ -23,10 +23,10 @@ func0000000000000001:
 func0000000000000003:
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
-	lui	a2, %hi(.LCPI2_1)
-	ld	a2, %lo(.LCPI2_1)(a2)
 	xor	a0, a0, a1
-	add	a0, a0, a2
+	lui	a1, %hi(.LCPI2_1)
+	ld	a1, %lo(.LCPI2_1)(a1)
+	add	a0, a0, a1
 	ret
 
 .LCPI3_0:
@@ -36,9 +36,9 @@ func0000000000000003:
 func0000000000000002:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	lui	a2, %hi(.LCPI3_1)
-	ld	a2, %lo(.LCPI3_1)(a2)
 	xor	a0, a0, a1
-	add	a0, a0, a2
+	lui	a1, %hi(.LCPI3_1)
+	ld	a1, %lo(.LCPI3_1)(a1)
+	add	a0, a0, a1
 	ret
 

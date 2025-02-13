@@ -15,9 +15,9 @@ func0000000000000008:
 func0000000000000002:
 	li	a0, 45
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v9, 0
 	vmseq.vx	v0, v8, a0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v9, 1, v0
 	ret
 
 func0000000000000010:
@@ -30,9 +30,9 @@ func0000000000000010:
 func0000000000000014:
 	li	a0, -65
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v9, 0
 	vmsgt.vx	v0, v8, a0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v9, 1, v0
 	ret
 
 func0000000000000028:
@@ -45,9 +45,9 @@ func0000000000000028:
 func000000000000000c:
 	li	a0, 56
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v9, 0
 	vmslt.vx	v0, v8, a0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v9, 1, v0
 	ret
 
 func0000000000000030:

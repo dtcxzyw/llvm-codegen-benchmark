@@ -18,9 +18,9 @@ func0000000000000004:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000000:
+	zext.w	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
-	zext.w	a0, a0
 	mul	a0, a0, a1
 	srli	a0, a0, 57
 	ret

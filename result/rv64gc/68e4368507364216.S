@@ -41,9 +41,9 @@ func0000000000000134:
 func0000000000000234:
 	srli	a0, a0, 16
 	li	a2, -1
+	snez	a0, a0
 	slli	a2, a2, 32
 	addi	a2, a2, -1
-	snez	a0, a0
 	bltu	a2, a1, .LBB4_2
 	li	a1, 33
 	slli	a0, a0, 4

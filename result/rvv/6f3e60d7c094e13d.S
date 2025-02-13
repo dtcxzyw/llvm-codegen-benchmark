@@ -43,11 +43,11 @@ func0000000000000e94:
 .LCPI5_0:
 	.quad	922337203685477581
 func00000000000000c6:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v8, -1
+	lui	a0, %hi(.LCPI5_0)
 	vmslt.vv	v14, v12, v10
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret

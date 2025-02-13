@@ -169,8 +169,8 @@ func0000000000000006:
 
 func0000000000000020:
 	sext.w	a2, a1
-	lui	a3, 8192
 	lui	a1, 4096
+	lui	a3, 8192
 	bltu	a3, a2, .LBB18_2
 	lui	a1, 2048
 .LBB18_2:

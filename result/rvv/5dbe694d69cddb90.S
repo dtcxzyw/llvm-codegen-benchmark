@@ -36,17 +36,17 @@ func000000000000000f:
 	.quad	4835703278458516699
 func0000000000000001:
 	lui	a0, %hi(.LCPI2_0)
+	li	a1, 63
 	ld	a0, %lo(.LCPI2_0)(a0)
-	lui	a1, %hi(.LCPI2_1)
-	ld	a1, %lo(.LCPI2_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v10, a0
-	li	a0, 63
-	vmulh.vx	v8, v8, a1
-	vsrl.vx	v12, v10, a0
+	lui	a0, %hi(.LCPI2_1)
+	ld	a0, %lo(.LCPI2_1)(a0)
+	vmulh.vx	v8, v8, a0
+	vsrl.vx	v12, v10, a1
 	vsra.vi	v10, v10, 18
 	vadd.vv	v10, v10, v12
-	vsrl.vx	v12, v8, a0
+	vsrl.vx	v12, v8, a1
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v10, v8

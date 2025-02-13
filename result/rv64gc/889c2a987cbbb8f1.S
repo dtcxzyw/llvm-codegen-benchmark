@@ -18,8 +18,8 @@ func0000000000000004:
 
 func000000000000000a:
 	slli	a0, a0, 56
-	andi	a1, a1, 1
 	srai	a0, a0, 56
+	andi	a1, a1, 1
 	beqz	a1, .LBB2_2
 	li	a2, 1
 .LBB2_2:
@@ -29,8 +29,8 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
 	andi	a0, a0, 255
+	andi	a1, a1, 1
 	beqz	a1, .LBB3_2
 	li	a2, 12
 .LBB3_2:
@@ -70,8 +70,8 @@ func0000000000000006:
 	ret
 
 func0000000000000009:
-	andi	a1, a1, 1
 	andi	a0, a0, 255
+	andi	a1, a1, 1
 	beqz	a1, .LBB7_2
 	li	a2, 8
 .LBB7_2:

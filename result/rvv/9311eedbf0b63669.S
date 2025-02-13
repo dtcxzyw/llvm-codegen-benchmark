@@ -4,10 +4,10 @@ func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vmerge.vim	v12, v8, 1, v0
+	lui	a0, %hi(.LCPI0_0)
 	vadd.vv	v8, v12, v8
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vminu.vx	v8, v8, a0
 	li	a0, 112
 	vmul.vx	v8, v8, a0

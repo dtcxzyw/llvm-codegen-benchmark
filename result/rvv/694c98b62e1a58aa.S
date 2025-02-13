@@ -3,8 +3,8 @@ func0000000000000000:
 	vnsrl.wi	v12, v10, 0
 	vnsrl.wi	v10, v8, 0
 	vmv.v.i	v9, 0
-	vmsltu.vv	v0, v12, v10
 	vmsltu.vv	v8, v10, v12
+	vmsltu.vv	v0, v12, v10
 	vmerge.vim	v9, v9, 1, v0
 	vmv.v.v	v0, v8
 	vmerge.vim	v8, v9, -1, v0
@@ -15,8 +15,8 @@ func0000000000000014:
 	vnsrl.wi	v12, v10, 0
 	vnsrl.wi	v10, v8, 0
 	vmv.v.i	v9, 0
-	vmsltu.vv	v0, v12, v10
 	vmsltu.vv	v8, v10, v12
+	vmsltu.vv	v0, v12, v10
 	vmerge.vim	v9, v9, 1, v0
 	vmv.v.v	v0, v8
 	vmerge.vim	v8, v9, -1, v0

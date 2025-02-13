@@ -25,9 +25,9 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vadd.vx	v8, v8, a1
 	lui	a1, 106914
+	ld	a0, %lo(.LCPI1_0)(a0)
 	addiw	a1, a1, -1510
 	vand.vx	v8, v8, a0
 	slli	a0, a1, 32

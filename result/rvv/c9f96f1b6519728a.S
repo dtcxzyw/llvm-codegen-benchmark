@@ -43,13 +43,13 @@ func0000000000000047:
 .LCPI4_1:
 	.word	0xbe0efa36
 func0000000000000022:
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfsub.vv	v8, v8, v12
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	flw	fa4, %lo(.LCPI4_1)(a0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfsub.vv	v8, v8, v12
 	vfmin.vf	v8, v8, fa5
-	vmflt.vf	v0, v8, fa4
+	flw	fa5, %lo(.LCPI4_1)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 

@@ -9,9 +9,9 @@ func0000000000000008:
 	vsrl.vx	v10, v8, a0
 	vsra.vi	v8, v8, 2
 	vadd.vv	v8, v8, v10
+	vmv.v.i	v10, 0
 	vmsgtu.vi	v0, v8, 2
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	vadd.vi	v8, v8, 1
 	ret
 

@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	-9008875012741874045
 func0000000000000017:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI0_0)
 	vsra.vi	v10, v10, 3
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmadd.vx	v10, a0, v8
 	vsll.vi	v8, v10, 3
 	ret
@@ -13,11 +13,11 @@ func0000000000000017:
 .LCPI1_0:
 	.quad	4246732448623781667
 func0000000000000014:
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI1_0)
 	vsra.vi	v10, v10, 3
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vmadd.vx	v10, a0, v8
 	vsll.vi	v8, v10, 3
 	ret
@@ -47,11 +47,11 @@ func0000000000000000:
 .LCPI4_0:
 	.quad	3353953467947191203
 func0000000000000013:
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI4_0)
 	vsra.vi	v10, v10, 3
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vmadd.vx	v10, a0, v8
 	vsll.vi	v8, v10, 4
 	ret
@@ -98,11 +98,11 @@ func0000000000000010:
 .LCPI8_0:
 	.quad	3353953467947191203
 func0000000000000015:
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI8_0)
 	vsra.vi	v10, v10, 3
+	ld	a0, %lo(.LCPI8_0)(a0)
 	vmadd.vx	v10, a0, v8
 	vsll.vi	v8, v10, 2
 	ret

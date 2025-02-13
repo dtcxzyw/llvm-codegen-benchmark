@@ -45,21 +45,21 @@ func0000000000000003:
 .LCPI6_0:
 	.quad	0x401921fb5442754a
 func000000000000000c:
+	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	fadd.d	fa4, fa4, fa0
-	fle.d	a0, fa5, fa4
+	fadd.d	fa5, fa5, fa0
+	fld	fa4, %lo(.LCPI6_0)(a0)
+	fle.d	a0, fa4, fa5
 	ret
 
 .LCPI7_0:
 	.quad	0x3ff0000000000000
 func0000000000000005:
+	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	fadd.d	fa4, fa0, fa4
-	fle.d	a0, fa4, fa5
+	fadd.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI7_0)(a0)
+	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

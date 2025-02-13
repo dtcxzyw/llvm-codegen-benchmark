@@ -1,13 +1,13 @@
 func0000000000000001:
-	andi	a3, a2, 1
-	andi	a2, a0, 1
-	bnez	a3, .LBB0_2
+	andi	a3, a0, 1
+	andi	a2, a2, 1
+	bnez	a2, .LBB0_2
 	li	a0, 125
-	bnez	a2, .LBB0_3
+	bnez	a3, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 39
-	beqz	a2, .LBB0_4
+	beqz	a3, .LBB0_4
 .LBB0_3:
 	li	a0, 62
 .LBB0_4:

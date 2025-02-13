@@ -14,8 +14,8 @@ func0000000000000013:
 	vfmadd.vv	v12, v12, v16
 	fmv.w.x	fa5, a0
 	vmfge.vf	v16, v12, fa5
-	vmnot.m	v0, v16
 	fli.s	fa5, 1.0
+	vmnot.m	v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 

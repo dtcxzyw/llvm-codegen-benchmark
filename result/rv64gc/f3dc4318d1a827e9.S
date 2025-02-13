@@ -1,6 +1,6 @@
 func0000000000000042:
-	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a2, a2
 	beqz	a2, .LBB0_2
 	li	a2, 3
 	xor	a1, a1, a2

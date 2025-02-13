@@ -1,9 +1,9 @@
 func0000000000000061:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, mu
+	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v10, -1
-	vand.vx	v10, v12, a0
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 
 func0000000000000041:

@@ -8,8 +8,8 @@ func000000000000000b:
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 1
 	sext.w	a1, a1
+	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 8
 	slt	a1, a2, a1
@@ -35,8 +35,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	andi	a2, a2, 1
 	sext.w	a1, a1
+	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, 100
 	sltu	a1, a1, a2
@@ -59,8 +59,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	andi	a2, a2, 1
 	sext.w	a1, a1
+	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	lui	a2, 174763
 	addiw	a2, a2, -1366

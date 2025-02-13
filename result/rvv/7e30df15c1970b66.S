@@ -10,11 +10,11 @@ func0000000000000004:
 .LCPI1_0:
 	.quad	0x3f50624dd2f1a9fc
 func0000000000000002:
+	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmin.vf	v16, v16, fa4
+	vfmin.vf	v16, v16, fa5
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vfmv.v.f	v24, fa5
 	vmerge.vvm	v8, v24, v8, v0
 	vfmul.vv	v8, v8, v16

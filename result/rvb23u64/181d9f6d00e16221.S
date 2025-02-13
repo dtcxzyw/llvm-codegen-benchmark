@@ -2,12 +2,12 @@
 	.quad	4223091239536077
 func0000000000000046:
 	lui	a3, 16
+	addiw	a4, a3, -16
+	sltu	a4, a4, a1
+	czero.nez	a1, a1, a4
+	czero.eqz	a0, a0, a4
 	lui	a4, %hi(.LCPI0_0)
-	addiw	a5, a3, -16
 	ld	a4, %lo(.LCPI0_0)(a4)
-	sltu	a5, a5, a1
-	czero.nez	a1, a1, a5
-	czero.eqz	a0, a0, a5
 	or	a0, a0, a1
 	mulhu	a1, a2, a4
 	sub	a4, a2, a1

@@ -25,8 +25,8 @@ func000000000000006a:
 	vmv.v.x	v10, a0
 	li	a0, 124
 	vmerge.vxm	v10, v10, a0, v0
-	vmsgt.vi	v0, v8, 1
 	li	a0, 396
+	vmsgt.vi	v0, v8, 1
 	vadd.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

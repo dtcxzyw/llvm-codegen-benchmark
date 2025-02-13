@@ -23,16 +23,16 @@ func00000000000000dd:
 	ret
 
 func000000000000007f:
-	li	a0, 60
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 60
 	vwmaccu.vx	v8, a0, v11
 	ret
 
 func000000000000000e:
-	li	a0, 12
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
+	li	a0, 12
 	vwmaccu.vx	v8, a0, v10
 	ret
 

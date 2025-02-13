@@ -10,13 +10,13 @@ func0000000000000061:
 	slli	a1, a2, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	srli	a0, a0, 39
 	mul	a0, a0, a1
 	slli	a1, a0, 63
 	srli	a0, a0, 1
 	or	a0, a0, a1
-	sltu	a0, a0, a2
+	ld	a1, %lo(.LCPI0_0)(a2)
+	sltu	a0, a0, a1
 	ret
 
 .LCPI1_0:
@@ -32,12 +32,12 @@ func0000000000000041:
 	slli	a1, a2, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
 	srli	a0, a0, 37
 	mul	a0, a0, a1
 	slli	a1, a0, 63
 	srli	a0, a0, 1
 	or	a0, a0, a1
-	sltu	a0, a0, a2
+	ld	a1, %lo(.LCPI1_0)(a2)
+	sltu	a0, a0, a1
 	ret
 

@@ -1,8 +1,8 @@
 func00000000000004ca:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	vmsle.vi	v0, v8, -1
 	li	a0, 24
+	vmsle.vi	v0, v8, -1
 	vadd.vx	v8, v8, a0, v0.t
 	li	a0, 23
 	vmsgt.vx	v0, v8, a0

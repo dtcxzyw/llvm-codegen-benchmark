@@ -142,11 +142,11 @@ func00000000000000aa:
 .LCPI15_0:
 	.word	0x3e4ccccd
 func0000000000000012:
-	lui	a1, %hi(.LCPI15_0)
-	flw	fa5, %lo(.LCPI15_0)(a1)
 	sext.w	a0, a0
+	lui	a1, %hi(.LCPI15_0)
 	addi	a0, a0, -3
 	seqz	a0, a0
+	flw	fa5, %lo(.LCPI15_0)(a1)
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

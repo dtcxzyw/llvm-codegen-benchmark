@@ -7,11 +7,11 @@ func000000000000000a:
 	ret
 
 func0000000000000248:
-	li	a0, 127
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
+	li	a0, 127
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -24,11 +24,11 @@ func00000000000000a4:
 	ret
 
 func00000000000002a4:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v8, -5
+	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -1,11 +1,10 @@
 func0000000000000000:
 	mv	a3, a1
-	addi	a4, a2, -64
 	sra	a1, a1, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB0_2
-	srai	a3, a3, 63
 	mv	a0, a1
-	mv	a1, a3
+	srai	a1, a3, 63
 	ret
 .LBB0_2:
 	srl	a0, a0, a2

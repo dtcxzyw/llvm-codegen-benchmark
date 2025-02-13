@@ -8,13 +8,13 @@ func0000000000000011:
 .LCPI1_0:
 	.quad	9223372036854775
 func0000000000000019:
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
-	bseti	a3, zero, 63
-	sub	a3, a3, a0
-	slt	a0, a1, a2
+	bseti	a2, zero, 63
+	sub	a2, a2, a0
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	slt	a0, a1, a0
 	li	a1, 1
-	czero.eqz	a2, a3, a0
+	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret

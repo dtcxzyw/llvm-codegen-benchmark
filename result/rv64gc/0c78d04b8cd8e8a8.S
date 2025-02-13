@@ -12,15 +12,15 @@ func0000000000000006:
 
 func0000000000000001:
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	sext.w	a2, a0
-	bnez	a3, .LBB1_2
+	sext.w	a3, a0
+	andi	a2, a2, 1
+	bnez	a2, .LBB1_2
 	li	a0, 63
-	beq	a2, a1, .LBB1_3
+	beq	a3, a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 48
-	bne	a2, a1, .LBB1_4
+	bne	a3, a1, .LBB1_4
 .LBB1_3:
 	li	a0, 49
 .LBB1_4:
@@ -39,15 +39,15 @@ func0000000000000008:
 
 func0000000000000004:
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	sext.w	a2, a0
-	bnez	a3, .LBB3_2
+	sext.w	a3, a0
+	andi	a2, a2, 1
+	bnez	a2, .LBB3_2
 	li	a0, 3
-	bltu	a2, a1, .LBB3_3
+	bltu	a3, a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 5
-	bgeu	a2, a1, .LBB3_4
+	bgeu	a3, a1, .LBB3_4
 .LBB3_3:
 	li	a0, 7
 .LBB3_4:

@@ -16,10 +16,10 @@ func0000000000000008:
 .LCPI2_0:
 	.quad	-9223372036854775
 func000000000000000a:
-	lui	a3, %hi(.LCPI2_0)
-	ld	a4, %lo(.LCPI2_0)(a3)
 	andi	a3, a0, 1
 	li	a0, -1
+	lui	a4, %hi(.LCPI2_0)
+	ld	a4, %lo(.LCPI2_0)(a4)
 	bge	a4, a2, .LBB2_3
 	beqz	a3, .LBB2_4
 .LBB2_2:

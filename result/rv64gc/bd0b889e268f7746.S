@@ -59,14 +59,14 @@ func000000000000008a:
 .LCPI6_1:
 	.quad	8446744073709551616
 func0000000000000028:
-	lui	a2, %hi(.LCPI6_0)
-	ld	a2, %lo(.LCPI6_0)(a2)
-	lui	a3, %hi(.LCPI6_1)
-	ld	a3, %lo(.LCPI6_1)(a3)
 	add	a0, a0, a1
-	sltu	a1, a2, a0
+	lui	a1, %hi(.LCPI6_0)
+	lui	a2, %hi(.LCPI6_1)
+	ld	a1, %lo(.LCPI6_0)(a1)
+	sltu	a1, a1, a0
 	neg	a1, a1
-	and	a1, a1, a3
+	ld	a2, %lo(.LCPI6_1)(a2)
+	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

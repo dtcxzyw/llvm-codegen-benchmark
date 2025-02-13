@@ -34,11 +34,11 @@ func000000000000000a:
 	lui	a1, 152146
 	lui	a2, %hi(.LCPI4_0)
 	addiw	a1, a1, 1317
-	ld	a2, %lo(.LCPI4_0)(a2)
 	add	a0, a0, a1
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 106914
+	ld	a2, %lo(.LCPI4_0)(a2)
 	addiw	a1, a1, -1510
 	and	a0, a0, a2
 	slli	a2, a1, 32

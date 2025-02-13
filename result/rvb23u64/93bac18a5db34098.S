@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.word	0x38d1b717
 func0000000000000004:
-	flt.s	a1, fa1, fa0
 	andi	a0, a0, 1
+	flt.s	a1, fa1, fa0
 	beqz	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:
@@ -16,8 +16,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	flt.s	a1, fa0, fa1
 	andi	a0, a0, 1
+	flt.s	a1, fa0, fa1
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:

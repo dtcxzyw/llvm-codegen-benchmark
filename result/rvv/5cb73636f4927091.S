@@ -6,24 +6,27 @@ func00000000000000b4:
 
 func0000000000000064:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vadd.vi	v10, v10, -6
+	vadd.vi	v12, v10, -6
 	li	a0, 700
-	vmsleu.vi	v0, v10, 3
-	vsetvli	zero, zero, e32, m2, ta, mu
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	li	a0, 26
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vmsleu.vi	v0, v12, 3
+	vsetvli	zero, zero, e32, m2, ta, mu
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
 
 func0000000000000024:
 	li	a0, -48
-	vsetivli	zero, 8, e16, m1, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, -1
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsleu.vi	v0, v10, 9
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vmv.v.i	v10, -1
-	vadd.vx	v10, v8, a0, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v12, v8, a0, v0.t
+	vmv.v.v	v8, v12
 	ret
 

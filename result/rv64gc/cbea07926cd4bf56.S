@@ -59,15 +59,15 @@ func0000000000008410:
 	.quad	8789745728267363600
 func000000000000c630:
 	lui	a3, %hi(.LCPI6_0)
-	lui	a4, %hi(.LCPI6_1)
 	ld	a3, %lo(.LCPI6_0)(a3)
-	ld	a4, %lo(.LCPI6_1)(a4)
-	lui	a5, %hi(.LCPI6_2)
-	ld	a5, %lo(.LCPI6_2)(a5)
 	xor	a2, a2, a3
-	xor	a1, a1, a4
+	lui	a3, %hi(.LCPI6_1)
+	ld	a3, %lo(.LCPI6_1)(a3)
+	xor	a1, a1, a3
+	lui	a3, %hi(.LCPI6_2)
+	ld	a3, %lo(.LCPI6_2)(a3)
 	or	a1, a1, a2
-	xor	a0, a0, a5
+	xor	a0, a0, a3
 	or	a0, a0, a1
 	snez	a0, a0
 	ret

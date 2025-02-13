@@ -9,8 +9,8 @@ func0000000000000021:
 	vmv.v.x	v10, a0
 	lui	a0, 256
 	vmerge.vvm	v10, v10, v12, v0
+	vmv.v.x	v12, a0
 	vmseq.vi	v0, v8, 0
-	vmv.v.x	v8, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 

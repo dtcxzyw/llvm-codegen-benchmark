@@ -46,10 +46,10 @@ func0000000000000306:
 	ret
 
 func00000000000000ca:
+	sext.w	a1, a1
 	sext.w	a2, a0
 	lui	a3, 524288
 	addiw	a3, a3, -1
-	sext.w	a1, a1
 	bgeu	a2, a3, .LBB4_3
 	bgez	a1, .LBB4_4
 .LBB4_2:

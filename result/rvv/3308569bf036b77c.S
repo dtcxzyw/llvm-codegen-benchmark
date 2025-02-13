@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	6640827866535438581
 func0000000000000025:
+	li	a0, 1900
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v14, v12, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	li	a1, 1900
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v14, v12, a1
 	vmulh.vx	v14, v14, a0
 	li	a0, -1900
 	vsub.vv	v12, v14, v12
@@ -34,10 +34,10 @@ func0000000000000024:
 .LCPI2_0:
 	.quad	-6640827866535438581
 func0000000000000020:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vmulh.vx	v14, v12, a0
 	li	a0, 63
 	vadd.vv	v12, v14, v12

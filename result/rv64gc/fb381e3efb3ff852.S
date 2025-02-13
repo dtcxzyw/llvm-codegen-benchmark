@@ -1,7 +1,7 @@
 func0000000000000021:
+	sext.w	a0, a0
 	srliw	a2, a2, 10
 	slli	a2, a2, 10
-	sext.w	a0, a0
 	beqz	a2, .LBB0_2
 	li	a1, 1023
 .LBB0_2:
@@ -11,8 +11,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	slli	a2, a2, 52
 	sext.w	a0, a0
+	slli	a2, a2, 52
 	bgez	a2, .LBB1_2
 	lui	a1, 16
 .LBB1_2:

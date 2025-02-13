@@ -27,8 +27,8 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	flw	fa4, %lo(.LCPI2_1)(a0)
 	fmax.s	fa5, fa0, fa5
+	flw	fa4, %lo(.LCPI2_1)(a0)
 	fmin.s	fa0, fa5, fa4
 	ret
 

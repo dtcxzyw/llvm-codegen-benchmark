@@ -1,16 +1,16 @@
 .LCPI0_0:
 	.word	0x3d25aee6
 func0000000000000023:
+	fadd.s	fa5, fa0, fa1
+	fmv.w.x	fa4, zero
 	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
-	fadd.s	fa4, fa0, fa1
-	fmv.w.x	fa3, zero
-	flt.s	a1, fa4, fa3
-	fle.s	a2, fa5, fa4
-	xori	a2, a2, 1
+	flt.s	a2, fa5, fa4
+	flw	fa4, %lo(.LCPI0_0)(a1)
+	fle.s	a1, fa4, fa5
+	xori	a1, a1, 1
 	not	a0, a0
-	and	a0, a0, a2
-	or	a0, a0, a1
+	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 .LCPI1_0:
@@ -19,10 +19,10 @@ func0000000000000024:
 	fadd.s	fa5, fa0, fa1
 	lui	a1, 784384
 	lui	a2, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a2)
-	fmv.w.x	fa3, a1
-	flt.s	a1, fa5, fa3
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa5, fa4
 	xori	a1, a1, 1
+	flw	fa4, %lo(.LCPI1_0)(a2)
 	flt.s	a2, fa4, fa5
 	or	a0, a0, a2
 	and	a0, a0, a1

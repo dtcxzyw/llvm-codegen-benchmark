@@ -52,9 +52,9 @@ func0000000000000077:
 .LCPI6_0:
 	.quad	-3523014627327384477
 func000000000000000c:
+	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI6_0)
 	ld	a2, %lo(.LCPI6_0)(a2)
-	andi	a1, a1, 255
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 10

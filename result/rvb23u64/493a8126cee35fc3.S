@@ -20,8 +20,8 @@ func0000000000000002:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	fmsub.d	fa5, fa0, fa5, fa1
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	flt.d	a0, fa5, fa4
 	ret
 

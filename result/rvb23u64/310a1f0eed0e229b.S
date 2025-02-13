@@ -25,14 +25,14 @@ func0000000000000006:
 func0000000000000001:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	lui	a2, %hi(.LCPI1_1)
-	ld	a2, %lo(.LCPI1_1)(a2)
-	lui	a3, %hi(.LCPI1_2)
-	ld	a3, %lo(.LCPI1_2)(a3)
 	mul	a0, a0, a1
-	add	a0, a0, a2
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
+	add	a0, a0, a1
+	lui	a1, %hi(.LCPI1_2)
 	rori	a0, a0, 4
-	sltu	a0, a0, a3
+	ld	a1, %lo(.LCPI1_2)(a1)
+	sltu	a0, a0, a1
 	addi	a0, a0, 365
 	ret
 

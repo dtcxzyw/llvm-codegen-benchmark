@@ -31,9 +31,9 @@ func0000000000000442:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	vmerge.vvm	v8, v16, v8, v0
 	vfmax.vf	v8, v8, fa5
-	vmflt.vf	v0, v8, fa4
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 

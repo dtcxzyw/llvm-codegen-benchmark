@@ -37,11 +37,11 @@ func0000000000000035:
 func0000000000000000:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
-	lui	a1, %hi(.LCPI4_1)
-	ld	a1, %lo(.LCPI4_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	vmadd.vx	v8, a1, v10
+	lui	a0, %hi(.LCPI4_1)
+	ld	a0, %lo(.LCPI4_1)(a0)
+	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000004:

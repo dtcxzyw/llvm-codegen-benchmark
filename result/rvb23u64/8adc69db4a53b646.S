@@ -15,11 +15,11 @@ func000000000000002c:
 .LCPI2_0:
 	.quad	1844674407370955161
 func0000000000000301:
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	andi	a1, a1, 255
+	lui	a2, %hi(.LCPI2_0)
 	sltiu	a1, a1, 6
 	xori	a1, a1, 1
+	ld	a2, %lo(.LCPI2_0)(a2)
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -147,11 +147,11 @@ func0000000000000101:
 .LCPI18_0:
 	.quad	1844674407370955161
 func0000000000000141:
-	lui	a2, %hi(.LCPI18_0)
-	ld	a2, %lo(.LCPI18_0)(a2)
 	sext.b	a1, a1
+	lui	a2, %hi(.LCPI18_0)
 	slti	a1, a1, 54
 	xori	a1, a1, 1
+	ld	a2, %lo(.LCPI18_0)(a2)
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

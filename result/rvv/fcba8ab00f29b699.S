@@ -2,8 +2,8 @@ func00000000000000a1:
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v10, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 32
+	vmseq.vi	v0, v12, 0
 	vmerge.vxm	v12, v12, a0, v0
 	vsub.vv	v10, v10, v12
 	vmseq.vv	v0, v8, v10
@@ -22,8 +22,8 @@ func00000000000000c1:
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v10, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 32
+	vmseq.vi	v0, v12, 0
 	vmerge.vxm	v12, v12, a0, v0
 	vsub.vv	v10, v10, v12
 	vmseq.vv	v0, v8, v10

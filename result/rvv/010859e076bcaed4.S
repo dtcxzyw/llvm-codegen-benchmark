@@ -3,8 +3,8 @@ func000000000000018c:
 	vmsne.vi	v12, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v9, v9, 0
+	vmv.v.i	v10, 0
 	vmor.mm	v0, v9, v12
-	vmv.v.i	v9, 0
-	vmerge.vvm	v8, v9, v8, v0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

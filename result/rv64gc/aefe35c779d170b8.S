@@ -1,7 +1,7 @@
 func0000000000000481:
+	sext.w	a0, a0
 	addiw	a1, a1, -3
 	li	a2, 12
-	sext.w	a0, a0
 	bltu	a1, a2, .LBB0_2
 	li	a1, 6
 .LBB0_2:

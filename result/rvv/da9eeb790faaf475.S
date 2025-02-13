@@ -13,8 +13,8 @@ func000000000000000c:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vx	v10, v8, a0
 	vmv.v.x	v8, a0
-	vmand.mm	v0, v0, v10
 	lui	a0, 5
+	vmand.mm	v0, v0, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

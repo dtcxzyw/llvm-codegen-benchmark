@@ -48,9 +48,9 @@ func0000000000000201:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v8, 2
 	vmv.v.i	v10, 0
+	lui	a0, 1
 	vmerge.vim	v10, v10, 1, v0
 	vmseq.vi	v0, v8, 5
-	lui	a0, 1
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

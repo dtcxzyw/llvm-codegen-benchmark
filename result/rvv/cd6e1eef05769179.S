@@ -45,10 +45,10 @@ func00000000000001a8:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
 	vfmacc.vv	v24, v16, v8
 	vmfgt.vf	v8, v24, fa5
-	vmflt.vf	v9, v24, fa4
+	fld	fa5, %lo(.LCPI3_1)(a0)
+	vmflt.vf	v9, v24, fa5
 	vmorn.mm	v0, v8, v9
 	ret
 

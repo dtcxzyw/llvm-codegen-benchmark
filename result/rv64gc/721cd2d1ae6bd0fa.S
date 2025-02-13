@@ -35,11 +35,11 @@ func0000000000000420:
 	.quad	8784043285714375740
 func0000000000000630:
 	lui	a3, %hi(.LCPI4_0)
-	lui	a4, %hi(.LCPI4_1)
 	ld	a3, %lo(.LCPI4_0)(a3)
-	ld	a4, %lo(.LCPI4_1)(a4)
 	xor	a2, a2, a3
-	xor	a1, a1, a4
+	lui	a3, %hi(.LCPI4_1)
+	ld	a3, %lo(.LCPI4_1)(a3)
+	xor	a1, a1, a3
 	or	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1

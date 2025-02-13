@@ -1,23 +1,23 @@
 func0000000000000010:
-	bseti	a0, zero, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	bseti	a0, zero, 31
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000004:
-	li	a0, -63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -63
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000000:
-	li	a0, 512
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 512
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -30,17 +30,17 @@ func000000000000000f:
 	ret
 
 func0000000000000015:
-	lui	a0, 2
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000001f:
-	lui	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -53,9 +53,9 @@ func000000000000000a:
 	ret
 
 func0000000000000005:
-	lui	a0, 100
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 100
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -75,9 +75,9 @@ func0000000000000013:
 	ret
 
 func000000000000000d:
-	li	a0, -64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -141,9 +141,9 @@ func000000000000000b:
 	ret
 
 func0000000000000019:
-	li	a0, -55
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -55
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

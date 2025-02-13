@@ -41,9 +41,9 @@ func0000000000000004:
 	ret
 
 func00000000000000aa:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
-	sext.w	a0, a0
 	blt	a2, a1, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

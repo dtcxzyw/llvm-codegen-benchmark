@@ -4,8 +4,8 @@ func0000000000000021:
 	vmseq.vx	v0, v10, a0
 	li	a0, 771
 	vmerge.vxm	v10, v10, a0, v0
-	vmseq.vi	v0, v8, 0
 	li	a0, 769
+	vmseq.vi	v0, v8, 0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

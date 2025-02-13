@@ -16,10 +16,10 @@ func0000000000000004:
 	bnez	a0, .LBB1_2
 	fmv.w.x	fa1, zero
 .LBB1_2:
+	fmul.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fmul.s	fa4, fa0, fa1
-	flt.s	a0, fa5, fa4
+	flw	fa4, %lo(.LCPI1_0)(a0)
+	flt.s	a0, fa4, fa5
 	ret
 
 func000000000000000b:

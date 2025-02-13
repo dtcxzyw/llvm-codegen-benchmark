@@ -1,7 +1,7 @@
 func000000000000003c:
 	sext.w	a3, a2
-	li	a4, 105
 	lui	a2, 1
+	li	a4, 105
 	beq	a3, a4, .LBB0_2
 	addiw	a2, a2, 936
 	add	a0, a0, a2

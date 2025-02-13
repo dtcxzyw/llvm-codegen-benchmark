@@ -1,9 +1,10 @@
 func0000000000000000:
-	andi	a3, a1, 1
-	mv	a1, a0
-	beqz	a3, .LBB0_2
+	mv	a3, a0
+	andi	a1, a1, 1
+	beqz	a1, .LBB0_2
 	li	a2, 4
 .LBB0_2:
 	mv	a0, a2
+	mv	a1, a3
 	ret
 

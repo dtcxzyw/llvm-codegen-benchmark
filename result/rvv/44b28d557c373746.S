@@ -2,15 +2,15 @@
 	.quad	-6802270473709551616
 func0000000000000000:
 	lui	a0, 244141
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	addiw	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI0_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v10, a1
+	vadd.vx	v8, v10, a0
 	ret
 
 func0000000000000035:

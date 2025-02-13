@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	-8663945395140668459
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmul.vx	v8, v10, a0
 	ret
 
@@ -40,10 +40,10 @@ func0000000000000001:
 .LCPI5_0:
 	.quad	-4070662928558531325
 func0000000000000004:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vmul.vx	v8, v10, a0
 	ret
 

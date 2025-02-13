@@ -3,12 +3,12 @@
 func0000000000000054:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v0, v8, fa5
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vmerge.vim	v8, v8, 0, v0
-	vmfgt.vf	v0, v8, fa4
-	vfmerge.vfm	v8, v8, fa4, v0
+	vmfgt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
 func0000000000000042:
@@ -28,11 +28,11 @@ func00000000000000c4:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmax.vf	v8, v8, fa5
-	vmfgt.vf	v0, v8, fa4
-	vfmerge.vfm	v8, v8, fa4, v0
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	vmfgt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
 func0000000000000044:
@@ -51,14 +51,14 @@ func0000000000000044:
 func0000000000000052:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa4, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
+	fld	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, %hi(.LCPI4_1)
+	vfmv.v.f	v24, fa5
 	fld	fa5, %lo(.LCPI4_1)(a0)
 	vmnot.m	v0, v16
-	vfmv.v.f	v16, fa4
-	vmerge.vvm	v8, v16, v8, v0
+	vmerge.vvm	v8, v24, v8, v0
 	vmflt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret

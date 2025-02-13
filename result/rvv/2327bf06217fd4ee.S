@@ -8,8 +8,8 @@ func000000000000001b:
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10
-	vmsle.vi	v0, v12, -1
 	li	a0, -51
+	vmsle.vi	v0, v12, -1
 	vmerge.vvm	v8, v12, v8, v0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

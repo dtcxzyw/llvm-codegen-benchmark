@@ -1,9 +1,9 @@
 func0000000000000084:
-	addiw	a2, a0, 1
-	mv	a0, a1
-	beqz	a2, .LBB0_2
-	mv	a0, a2
+	addiw	a0, a0, 1
+	beqz	a0, .LBB0_2
+	mv	a1, a0
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000099:
@@ -57,10 +57,10 @@ func0000000000000013:
 	ret
 
 func0000000000000087:
-	addiw	a2, a0, 1
-	mv	a0, a1
-	beqz	a2, .LBB6_2
-	mv	a0, a2
+	addiw	a0, a0, 1
+	beqz	a0, .LBB6_2
+	mv	a1, a0
 .LBB6_2:
+	mv	a0, a1
 	ret
 

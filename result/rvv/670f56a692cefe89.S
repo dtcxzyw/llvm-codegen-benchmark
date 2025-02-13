@@ -25,10 +25,10 @@ func0000000000000008:
 
 func000000000000000a:
 	fmv.d.x	fa5, zero
+	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
 	vmandn.mm	v0, v0, v24
-	bseti	a0, zero, 63
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

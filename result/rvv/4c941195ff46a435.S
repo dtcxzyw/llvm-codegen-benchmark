@@ -17,8 +17,8 @@ func0000000000000024:
 	vmflt.vf	v0, v8, fa5
 	fli.s	fa5, 1.0
 	vmerge.vim	v12, v8, 0, v0
+	vfmul.vf	v12, v12, fa4
 	vmfgt.vf	v0, v8, fa5
-	vfmul.vf	v8, v12, fa4
-	vfmerge.vfm	v8, v8, fa4, v0
+	vfmerge.vfm	v8, v12, fa4, v0
 	ret
 

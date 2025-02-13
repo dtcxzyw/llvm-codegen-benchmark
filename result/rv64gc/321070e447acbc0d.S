@@ -1,17 +1,17 @@
 func0000000000000024:
-	andi	a1, a0, 240
+	andi	a1, a0, 255
+	andi	a0, a0, 240
 	li	a2, 32
-	andi	a0, a0, 255
-	beq	a1, a2, .LBB0_2
-	li	a1, 2
-	sltiu	a0, a0, 16
-	addi	a0, a0, -1
+	beq	a0, a2, .LBB0_2
+	li	a0, 2
+	sltiu	a1, a1, 16
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 .LBB0_2:
-	li	a1, 6
-	sltiu	a0, a0, 16
-	addi	a0, a0, -1
+	li	a0, 6
+	sltiu	a1, a1, 16
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 

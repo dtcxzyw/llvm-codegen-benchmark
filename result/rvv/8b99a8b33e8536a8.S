@@ -1,15 +1,15 @@
 .LCPI0_0:
 	.quad	839798700976720815
 func0000000000000000:
-	lui	a0, 967569
-	lui	a1, %hi(.LCPI0_0)
-	slli	a0, a0, 3
-	ld	a1, %lo(.LCPI0_0)(a1)
-	addi	a0, a0, 1615
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
 	vsub.vv	v10, v10, v12
-	vmacc.vx	v8, a1, v10
+	lui	a0, 967569
+	slli	a0, a0, 3
+	addi	a0, a0, 1615
+	vmul.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000054:

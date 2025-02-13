@@ -3,8 +3,8 @@
 func0000000000000044:
 	li	a1, 1
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	maxu	a1, a0, a1
+	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	sltu	a1, a0, a1
 	minu	a0, a0, a2

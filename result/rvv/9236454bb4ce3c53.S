@@ -18,10 +18,10 @@ func000000000000002a:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 2
 	vmerge.vim	v10, v10, 0, v0
+	vmv.v.i	v12, 6
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgt.vi	v0, v8, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v8, 6
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 

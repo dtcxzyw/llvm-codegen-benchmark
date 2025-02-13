@@ -22,9 +22,9 @@ func0000000000000000:
 .LCPI1_1:
 	.quad	0x3fe0000000000000
 func0000000000000001:
+	andi	a0, a0, 1
 	lui	a1, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_1)(a1)
-	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)

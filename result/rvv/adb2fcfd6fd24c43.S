@@ -4,8 +4,8 @@ func0000000000000010:
 	fmv.w.x	fa5, zero
 	vmv.v.i	v16, 0
 	vmfgt.vf	v14, v8, fa5
-	vmor.mm	v0, v0, v14
 	fli.s	fa5, 1.0
+	vmor.mm	v0, v0, v14
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmor.mm	v0, v13, v12
 	vmerge.vvm	v8, v8, v16, v0
@@ -16,8 +16,8 @@ func0000000000000008:
 	vmv1r.v	v13, v0
 	fli.s	fa5, 1.0
 	vmflt.vf	v14, v8, fa5
-	vmor.mm	v0, v0, v14
 	vfmv.v.f	v16, fa5
+	vmor.mm	v0, v0, v14
 	vmerge.vim	v16, v16, 0, v0
 	vmor.mm	v0, v13, v12
 	vmerge.vvm	v8, v8, v16, v0

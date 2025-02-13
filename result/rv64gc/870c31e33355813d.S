@@ -1,8 +1,8 @@
 func0000000000000021:
+	sext.w	a0, a0
 	andi	a4, a2, 1
 	lui	a2, 921600
 	addiw	a2, a2, -1026
-	sext.w	a0, a0
 	mv	a3, a2
 	bnez	a4, .LBB0_2
 	lui	a3, 135168
@@ -17,8 +17,8 @@ func0000000000000021:
 
 func0000000000000001:
 	sext.w	a0, a0
-	andi	a2, a2, 1
 	snez	a0, a0
+	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 1008
 	or	a1, a1, a2

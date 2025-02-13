@@ -1,6 +1,6 @@
 func00000000000000c4:
-	fmv.x.w	a2, fa0
 	sext.w	a0, a0
+	fmv.x.w	a2, fa0
 	bgez	a2, .LBB0_2
 	neg	a1, a2
 .LBB0_2:

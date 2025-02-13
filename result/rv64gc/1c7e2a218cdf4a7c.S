@@ -11,11 +11,10 @@ func0000000000000005:
 	ret
 
 func0000000000000003:
-	andi	a2, a0, 1
-	bnez	a2, .LBB2_2
-	mv	a0, a1
-	ret
+	andi	a0, a0, 1
+	beqz	a0, .LBB2_2
+	li	a1, 2
 .LBB2_2:
-	li	a0, 2
+	mv	a0, a1
 	ret
 

@@ -2,10 +2,10 @@ func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, 128
+	vmv.v.i	v9, 0
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v9, 1, v0
 	vrsub.vi	v11, v8, 2
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmv.v.i	v8, 0

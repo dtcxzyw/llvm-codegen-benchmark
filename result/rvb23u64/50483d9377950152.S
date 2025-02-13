@@ -16,9 +16,9 @@ func0000000000000002:
 func000000000000000c:
 	fli.s	fa5, 2.0
 	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
 	fneg.s	fa5, fa5
 	fmul.s	fa5, fa0, fa5
+	flw	fa4, %lo(.LCPI1_0)(a0)
 	lui	a0, 798656
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0

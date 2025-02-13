@@ -15,18 +15,18 @@ func0000000000000003:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fli.d	fa5, 1.0
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
-	fmul.d	fa5, fa0, fa5
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 .LBB1_2:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
-	fmul.d	fa5, fa0, fa5
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
@@ -39,17 +39,17 @@ func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fli.d	fa5, 1.0
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
-	fmul.d	fa5, fa0, fa5
 	flt.d	a0, fa4, fa5
 	ret
 .LBB2_2:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
-	fmul.d	fa5, fa0, fa5
 	flt.d	a0, fa4, fa5
 	ret
 

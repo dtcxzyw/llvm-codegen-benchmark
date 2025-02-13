@@ -28,12 +28,12 @@ func000000000000000b:
 .LCPI2_0:
 	.quad	3858142551364089227
 func0000000000000000:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 2
-	li	a1, 5
-	vmacc.vx	v10, a1, v8
+	li	a0, 5
+	vmacc.vx	v10, a0, v8
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 5
 	ret
@@ -55,13 +55,13 @@ func0000000000000014:
 	.quad	3234497591006606311
 func000000000000001e:
 	li	a0, 24
-	lui	a1, %hi(.LCPI4_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	ld	a0, %lo(.LCPI4_0)(a1)
-	li	a1, 365
+	li	a0, 365
 	csrwi	vxrm, 2
-	vaaddu.vx	v8, v8, a1
+	vaaddu.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 6
 	ret
@@ -98,13 +98,13 @@ func0000000000000008:
 	.quad	-8198552921648689607
 func0000000000000001:
 	li	a0, -144
-	lui	a1, %hi(.LCPI7_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	ld	a0, %lo(.LCPI7_0)(a1)
-	li	a1, 144
-	vmacc.vx	v10, a1, v8
+	li	a0, 144
+	vmacc.vx	v10, a0, v8
+	lui	a0, %hi(.LCPI7_0)
 	vsrl.vi	v8, v10, 4
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vmul.vx	v8, v8, a0
 	ret
 

@@ -56,11 +56,12 @@ func0000000000000005:
 
 func0000000000000022:
 	li	a0, 23
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, -8
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, -8
-	vmerge.vim	v10, v10, -12, v0
+	vmerge.vim	v10, v12, -12, v0
 	vadd.vv	v8, v10, v8
 	ret
 

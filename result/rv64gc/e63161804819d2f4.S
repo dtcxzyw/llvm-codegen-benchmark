@@ -1,7 +1,7 @@
 func000000000000008c:
 	sext.w	a3, a1
-	li	a4, 32
 	li	a2, 1
+	li	a4, 32
 	bge	a3, a4, .LBB0_2
 	sllw	a2, a2, a1
 .LBB0_2:
@@ -10,8 +10,8 @@ func000000000000008c:
 
 func0000000000000088:
 	sext.w	a3, a1
-	li	a4, 32
 	li	a2, 1
+	li	a4, 32
 	bgeu	a3, a4, .LBB1_2
 	sllw	a2, a2, a1
 .LBB1_2:
@@ -20,8 +20,8 @@ func0000000000000088:
 
 func00000000000000a8:
 	sext.w	a3, a1
-	li	a4, 32
 	li	a2, 1
+	li	a4, 32
 	bgeu	a3, a4, .LBB2_2
 	sllw	a2, a2, a1
 .LBB2_2:

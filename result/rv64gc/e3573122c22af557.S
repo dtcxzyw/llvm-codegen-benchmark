@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	5871781006564002453
 func000000000000000c:
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	or	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
 	sext.w	a0, a0
-	mul	a0, a0, a2
+	ld	a1, %lo(.LCPI0_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 func000000000000000a:

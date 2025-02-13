@@ -3,8 +3,8 @@
 func000000000000001a:
 	slli	a0, a0, 63
 	lui	a1, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a1)
 	srai	a0, a0, 63
+	fld	fa5, %lo(.LCPI0_0)(a1)
 	ori	a0, a0, 1
 	neg	a1, a0
 	fle.d	a2, fa0, fa5
@@ -30,8 +30,8 @@ func0000000000000012:
 func0000000000000014:
 	slli	a0, a0, 63
 	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
 	srai	a0, a0, 63
+	fld	fa5, %lo(.LCPI2_0)(a1)
 	ori	a0, a0, 1
 	neg	a1, a0
 	flt.d	a2, fa5, fa0

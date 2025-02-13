@@ -3,9 +3,9 @@ func0000000000000074:
 	vzext.vf4	v14, v12
 	li	a0, 256
 	vsll.vv	v10, v10, v14
+	vmv.v.i	v12, 0
 	vand.vx	v10, v10, a0
 	vmseq.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 

@@ -7,10 +7,10 @@ func0000000000000007:
 	ret
 
 func0000000000000020:
-	li	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
 	vadd.vi	v8, v8, 1
+	li	a0, 256
+	vmsltu.vx	v0, v10, a0
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -28,8 +28,8 @@ func0000000000000061:
 
 func000000000000002b:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vi	v0, v10, -1
 	vadd.vi	v8, v8, 1
+	vmsle.vi	v0, v10, -1
 	vmerge.vim	v8, v8, 0, v0
 	ret
 

@@ -10,8 +10,8 @@ func0000000000000085:
 func0000000000000004:
 	li	a0, 63
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v10, v10, 3
 	vmseq.vx	v0, v8, a0
-	vadd.vi	v8, v10, 3
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	ret
 

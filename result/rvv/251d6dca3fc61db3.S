@@ -8,11 +8,12 @@ func0000000000000421:
 	ret
 
 func0000000000000d58:
-	vsetivli	zero, 8, e8, mf2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v12, v12, 3
+	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vi	v10, v12, 3
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	li	a0, 24
 	vmsgtu.vx	v0, v8, a0
 	ret

@@ -3,9 +3,9 @@ func0000000000000004:
 	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v8, a1
+	lui	a1, 8192
 	vmsltu.vx	v0, v10, a0
-	lui	a0, 8192
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func0000000000000024:

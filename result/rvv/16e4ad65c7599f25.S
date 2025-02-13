@@ -3,16 +3,15 @@
 .LCPI0_1:
 	.word	0x3910f359
 func0000000000000000:
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a0)
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfmv.v.f	v12, fa5
-	vfcvt.f.xu.v	v10, v10
-	vfdiv.vv	v8, v8, v10
-	vfmacc.vf	v12, fa4, v8
-	vmv.v.v	v8, v12
+	vfdiv.vv	v10, v8, v10
+	vfmv.v.f	v8, fa5
+	flw	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v8, fa5, v10
 	ret
 
 func0000000000000002:

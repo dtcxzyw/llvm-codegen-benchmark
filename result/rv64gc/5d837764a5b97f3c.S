@@ -3,9 +3,9 @@
 func000000000000000f:
 	srli	a2, a2, 2
 	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a0, a0, a1
 	lui	a1, 61681
+	ld	a3, %lo(.LCPI0_0)(a3)
 	addiw	a1, a1, -241
 	and	a2, a2, a3
 	slli	a3, a1, 32

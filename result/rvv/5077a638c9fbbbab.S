@@ -47,16 +47,16 @@ func0000000000000007:
 func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vv	v12, v10, v8
-	vmnot.m	v0, v12
 	vmv.v.i	v8, 2
+	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 0, v0
 	ret
 
 func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vv	v12, v10, v8
-	vmnot.m	v0, v12
 	vmv.v.i	v8, 2
+	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 0, v0
 	ret
 

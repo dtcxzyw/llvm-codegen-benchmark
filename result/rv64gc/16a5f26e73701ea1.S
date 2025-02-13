@@ -11,9 +11,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	mv	a3, a0
+	andi	a3, a0, 1
 	sext.w	a0, a2
-	andi	a3, a3, 1
 	blez	a0, .LBB1_3
 	bnez	a3, .LBB1_4
 .LBB1_2:

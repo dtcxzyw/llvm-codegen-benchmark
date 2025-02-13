@@ -27,12 +27,12 @@ func00000000000000cc:
 	.word	0x3f733333
 func0000000000000120:
 	lui	a1, %hi(.LCPI3_0)
+	fmv.w.x	fa5, zero
+	feq.s	a2, fa0, fa5
 	flw	fa5, %lo(.LCPI3_0)(a1)
-	fmv.w.x	fa4, zero
-	feq.s	a1, fa0, fa4
-	flt.s	a2, fa5, fa1
-	or	a0, a0, a1
+	flt.s	a1, fa5, fa1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000110:

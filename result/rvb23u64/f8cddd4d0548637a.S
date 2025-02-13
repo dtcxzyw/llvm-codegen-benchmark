@@ -6,9 +6,9 @@ func0000000000000002:
 	bnez	a0, .LBB0_2
 	fmv.d	fa5, fa1
 .LBB0_2:
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
-	fmul.d	fa5, fa0, fa5
 	fmul.d	fa0, fa5, fa4
 	ret
 
@@ -21,9 +21,9 @@ func0000000000000008:
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa1
 .LBB1_2:
+	fmul.d	fa5, fa5, fa0
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
-	fmul.d	fa5, fa5, fa0
 	fmul.d	fa0, fa5, fa4
 	ret
 
@@ -38,9 +38,9 @@ func000000000000000a:
 	bnez	a0, .LBB2_2
 	fmv.d	fa5, fa1
 .LBB2_2:
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
-	fmul.d	fa5, fa0, fa5
 	fmul.d	fa0, fa5, fa4
 	ret
 

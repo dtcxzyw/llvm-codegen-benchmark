@@ -15,11 +15,11 @@ func00000000000000aa:
 func0000000000000028:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	li	a0, 129
 	vand.vx	v16, v16, a0
+	lui	a0, %hi(.LCPI1_0)
 	vmsne.vi	v24, v16, 0
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v24, v16
 	ret
@@ -41,14 +41,14 @@ func0000000000000022:
 .LCPI3_1:
 	.quad	0xbeb0c6f7a0000000
 func0000000000000122:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmflt.vf	v24, v16, fa5
-	vmflt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI3_1)(a0)
+	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v24, v16
 	ret
 
@@ -57,14 +57,14 @@ func0000000000000122:
 .LCPI4_1:
 	.quad	0x400921fb54442d18
 func0000000000000124:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmfgt.vf	v24, v16, fa5
-	vmflt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI4_1)(a0)
+	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v24, v16
 	ret
 
@@ -97,14 +97,14 @@ func0000000000000088:
 .LCPI7_1:
 	.quad	0x3ddb7cdfd9d7bdbb
 func000000000000004a:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	lui	a0, %hi(.LCPI7_1)
-	fld	fa4, %lo(.LCPI7_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmfle.vf	v24, v16, fa5
-	vmfgt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI7_1)(a0)
+	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v24, v16
 	ret
 
@@ -148,14 +148,14 @@ func00000000000000cb:
 .LCPI11_1:
 	.quad	0x3fef5c28f5c28f5c
 func000000000000004b:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI11_0)
 	fld	fa5, %lo(.LCPI11_0)(a0)
 	lui	a0, %hi(.LCPI11_1)
-	fld	fa4, %lo(.LCPI11_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmfgt.vf	v24, v16, fa5
-	vmfgt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI11_1)(a0)
+	vmfgt.vf	v16, v8, fa5
 	vmandn.mm	v0, v16, v24
 	ret
 

@@ -27,8 +27,8 @@ func0000000000000014:
 	addi	a0, a0, -496
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
-	vmand.mm	v0, v9, v0
 	li	a0, 43
+	vmand.mm	v0, v9, v0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

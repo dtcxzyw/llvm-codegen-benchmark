@@ -37,9 +37,9 @@ func0000000000000026:
 	ret
 
 func000000000000002c:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, -2
-	sext.w	a0, a0
 	blt	a2, a1, .LBB4_2
 	li	a1, -2
 .LBB4_2:

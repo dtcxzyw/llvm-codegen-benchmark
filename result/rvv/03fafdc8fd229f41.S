@@ -10,8 +10,8 @@ func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmsne.vi	v12, v10, 0
-	vmor.mm	v0, v12, v14
 	li	a0, 384
+	vmor.mm	v0, v12, v14
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

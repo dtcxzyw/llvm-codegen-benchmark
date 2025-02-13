@@ -15,9 +15,9 @@ func0000000000000322:
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -68,9 +68,9 @@ func0000000000000325:
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
@@ -82,9 +82,9 @@ func0000000000000343:
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI7_0)(a0)
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
@@ -96,9 +96,9 @@ func0000000000000345:
 	vfabs.v	v16, v16
 	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

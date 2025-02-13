@@ -1,7 +1,7 @@
 func0000000000000001:
+	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a3, a1
-	sext.w	a0, a0
 	blt	a3, a2, .LBB0_2
 	mv	a2, a3
 .LBB0_2:

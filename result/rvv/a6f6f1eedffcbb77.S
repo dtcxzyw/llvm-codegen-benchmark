@@ -19,8 +19,8 @@ func0000000000000001:
 	vadd.vv	v10, v10, v12
 	lui	a0, 8
 	addi	a0, a0, -1
+	vmin.vv	v12, v10, v8
 	vmseq.vx	v0, v10, a0
-	vmin.vv	v10, v10, v8
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 

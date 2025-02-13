@@ -40,8 +40,8 @@ func0000000000000024:
 func0000000000000074:
 	li	a0, 27
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v10, -1
+	vmsltu.vx	v0, v8, a0
 	vadd.vi	v10, v8, 5, v0.t
 	vmv.v.v	v8, v10
 	ret

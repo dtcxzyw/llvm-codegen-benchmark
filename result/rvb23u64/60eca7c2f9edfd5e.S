@@ -5,15 +5,15 @@
 func00000000000006a1:
 	slli	a3, a2, 3
 	sub	a2, a2, a0
+	srai	a1, a1, 3
 	lui	a0, %hi(.LCPI0_0)
 	sub	a3, a3, a2
-	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a2, %hi(.LCPI0_1)
-	ld	a2, %lo(.LCPI0_1)(a2)
-	srai	a1, a1, 3
+	ld	a0, %lo(.LCPI0_0)(a0)
 	mul	a0, a0, a1
 	add	a0, a0, a3
-	xor	a0, a0, a2
+	ld	a1, %lo(.LCPI0_1)(a2)
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
@@ -49,12 +49,12 @@ func0000000000000208:
 .LCPI3_0:
 	.quad	3353953467947191203
 func00000000000006a4:
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	sh2add	a2, a2, a2
-	add	a0, a0, a2
 	srai	a1, a1, 3
-	mul	a1, a1, a3
+	add	a0, a0, a2
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	seqz	a0, a0

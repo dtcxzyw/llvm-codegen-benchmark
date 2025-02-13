@@ -25,11 +25,11 @@ func0000000000000047:
 func0000000000000022:
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	flw	fa4, %lo(.LCPI2_1)(a0)
 	fadd.s	fa5, fa0, fa5
-	fmv.w.x	fa3, zero
-	fmin.s	fa5, fa5, fa3
+	fmv.w.x	fa4, zero
+	lui	a0, %hi(.LCPI2_1)
+	fmin.s	fa5, fa5, fa4
+	flw	fa4, %lo(.LCPI2_1)(a0)
 	flt.s	a0, fa5, fa4
 	ret
 

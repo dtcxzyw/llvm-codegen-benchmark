@@ -19,9 +19,11 @@ func000000000000000c:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	bseti	a0, zero, 33
-	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vor.vi	v9, v9, 2
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmseq.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

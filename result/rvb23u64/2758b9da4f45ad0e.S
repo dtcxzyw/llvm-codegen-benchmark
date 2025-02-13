@@ -7,9 +7,9 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	-7046029254386353067
 func0000000000000000:
+	sext.h	a0, a0
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	sext.h	a0, a0
 	mul	a0, a0, a1
 	ret
 

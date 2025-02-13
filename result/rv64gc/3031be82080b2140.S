@@ -33,9 +33,9 @@ func0000000000000002:
 .LCPI3_0:
 	.quad	-7794398904384317584
 func0000000000000007:
+	srli	a0, a0, 3
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	srli	a0, a0, 3
 	mul	a0, a0, a1
 	ret
 

@@ -93,12 +93,12 @@ func0000000000000006:
 .LCPI10_0:
 	.quad	1000000000000000001
 func0000000000000044:
-	lui	a3, %hi(.LCPI10_0)
-	ld	a3, %lo(.LCPI10_0)(a3)
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
+	lui	a2, %hi(.LCPI10_0)
 	add	a0, a0, a1
-	sltu	a0, a0, a3
+	ld	a1, %lo(.LCPI10_0)(a2)
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000028:

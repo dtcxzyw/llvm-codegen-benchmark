@@ -3,12 +3,12 @@
 .LCPI0_1:
 	.quad	-384307168202282326
 func0000000000000008:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
+	fcvt.l.d	a0, fa0, rtz
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)
-	fcvt.l.d	a2, fa0, rtz
-	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 

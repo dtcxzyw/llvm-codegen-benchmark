@@ -91,22 +91,22 @@ func000000000000006d:
 .LCPI9_0:
 	.word	0x358637bd
 func00000000000001dd:
+	fabs.s	fa5, fa1
 	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
-	fabs.s	fa4, fa1
-	fmin.s	fa4, fa0, fa4
-	flt.s	a0, fa4, fa5
+	fmin.s	fa5, fa0, fa5
+	flw	fa4, %lo(.LCPI9_0)(a0)
+	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
 .LCPI10_0:
 	.word	0x358637bd
 func00000000000000dd:
+	fabs.s	fa5, fa1
 	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
-	fabs.s	fa4, fa1
-	fmin.s	fa4, fa4, fa0
-	flt.s	a0, fa4, fa5
+	fmin.s	fa5, fa5, fa0
+	flw	fa4, %lo(.LCPI10_0)(a0)
+	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

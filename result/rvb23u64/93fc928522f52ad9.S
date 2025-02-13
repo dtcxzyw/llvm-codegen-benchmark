@@ -30,10 +30,10 @@ func000000000000000f:
 .LCPI4_0:
 	.quad	7109453100751455733
 func0000000000000000:
-	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
 	addi	a0, a0, 1
+	lui	a1, %hi(.LCPI4_0)
 	zext.w	a0, a0
+	ld	a1, %lo(.LCPI4_0)(a1)
 	mul	a0, a0, a1
 	ret
 

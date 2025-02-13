@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	6364136223846793005
 func0000000000000000:
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
 	zext.w	a0, a0
-	mul	a0, a0, a2
+	ld	a1, %lo(.LCPI0_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 func0000000000000003:
@@ -54,11 +54,11 @@ func000000000000000b:
 .LCPI7_0:
 	.quad	163391164108059
 func0000000000000008:
-	lui	a2, %hi(.LCPI7_0)
-	ld	a2, %lo(.LCPI7_0)(a2)
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI7_0)
 	zext.w	a0, a0
-	mul	a0, a0, a2
+	ld	a1, %lo(.LCPI7_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 func0000000000000002:

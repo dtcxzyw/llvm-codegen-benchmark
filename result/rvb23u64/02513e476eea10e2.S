@@ -34,8 +34,8 @@ func0000000000000006:
 
 func0000000000000014:
 	sext.w	a0, a0
-	li	a1, 1024
 	fli.s	fa0, 16.0
+	li	a1, 1024
 	bltu	a0, a1, .LBB4_2
 	fli.s	fa0, 256.0
 .LBB4_2:

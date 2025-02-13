@@ -17,20 +17,20 @@ func0000000000000000:
 .LCPI2_0:
 	.word	0x3de147ae
 func0000000000000002:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
 	addi	a0, a0, -1
-	fcvt.s.wu	fa4, a0
-	fmul.s	fa0, fa4, fa5
+	fcvt.s.wu	fa5, a0
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa4, %lo(.LCPI2_0)(a0)
+	fmul.s	fa0, fa5, fa4
 	ret
 
 .LCPI3_0:
 	.word	0x40c90fdb
 func0000000000000003:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
 	addi	a0, a0, -1
-	fcvt.s.wu	fa4, a0
-	fmul.s	fa0, fa4, fa5
+	fcvt.s.wu	fa5, a0
+	lui	a0, %hi(.LCPI3_0)
+	flw	fa4, %lo(.LCPI3_0)(a0)
+	fmul.s	fa0, fa5, fa4
 	ret
 

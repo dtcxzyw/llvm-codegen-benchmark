@@ -14,12 +14,12 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a2, a0, 255
-	li	a3, 4
-	mv	a0, a1
-	bltu	a2, a3, .LBB2_2
-	li	a0, 44
+	andi	a0, a0, 255
+	li	a2, 4
+	bltu	a0, a2, .LBB2_2
+	li	a1, 44
 .LBB2_2:
+	mv	a0, a1
 	ret
 
 func0000000000000024:

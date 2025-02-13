@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	0xc3e0000000000000
 func000000000000008c:
-	lui	a1, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a1)
 	feq.d	a1, fa0, fa1
+	lui	a2, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a2)
 	fle.d	a2, fa5, fa0
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -20,10 +20,10 @@ func0000000000000004:
 .LCPI3_0:
 	.quad	768614336404564650
 func000000000000001b:
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	slti	a2, a2, 0
+	lui	a3, %hi(.LCPI3_0)
 	czero.nez	a1, a1, a2
+	ld	a3, %lo(.LCPI3_0)(a3)
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sh1add	a1, a1, a1

@@ -49,8 +49,8 @@ func00000000000001e1:
 func0000000000000006:
 	sext.w	a3, a0
 	lui	a0, 356
-	li	a4, 2
 	addi	a0, a0, 572
+	li	a4, 2
 	blt	a3, a4, .LBB5_2
 	addw	a0, a0, a2
 	ret

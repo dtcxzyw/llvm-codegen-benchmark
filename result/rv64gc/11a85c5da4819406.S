@@ -1,7 +1,7 @@
 func0000000000000002:
+	andi	a0, a0, 1
 	li	a2, -1
 	srli	a2, a2, 32
-	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -10,9 +10,9 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
+	andi	a0, a0, 1
 	li	a2, 1
 	slli	a2, a2, 32
-	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -21,9 +21,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	mv	a2, a0
+	andi	a2, a0, 1
 	lui	a0, 2048
-	andi	a2, a2, 1
 	bgeu	a1, a0, .LBB2_3
 	beqz	a2, .LBB2_4
 .LBB2_2:

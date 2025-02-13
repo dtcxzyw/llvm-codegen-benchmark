@@ -1,7 +1,7 @@
 func0000000000000012:
 	sext.w	a0, a0
-	li	a1, 1
 	fli.d	fa5, 0.5
+	li	a1, 1
 	beq	a0, a1, .LBB0_2
 	fli.d	fa5, 0.25
 .LBB0_2:

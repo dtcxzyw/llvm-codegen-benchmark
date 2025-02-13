@@ -4,8 +4,8 @@ func000000000000000a:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsne.vi	v0, v11, 0
 	vand.vi	v10, v10, 1
+	vmsne.vi	v0, v11, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v12, v12, 11, v0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -20,11 +20,10 @@ func0000000000000000:
 	vand.vi	v10, v10, 1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v12, v11
+	vwsll.vi	v14, v12, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vi	v0, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwsll.vi	v10, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v14, v8, v0
 	ret
 

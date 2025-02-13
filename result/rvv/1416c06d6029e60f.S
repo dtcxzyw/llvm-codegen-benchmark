@@ -3,8 +3,8 @@ func0000000000000018:
 	vfclass.v	v16, v16
 	li	a0, 129
 	vand.vx	v16, v16, a0
-	vmsne.vi	v0, v16, 0
 	li	a0, -1
+	vmsne.vi	v0, v16, 0
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -34,9 +34,9 @@ func0000000000000008:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
+	fli.d	fa5, 1.0
 	vand.vx	v16, v16, a0
 	vmsne.vi	v0, v16, 0
-	fli.d	fa5, 1.0
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
@@ -44,9 +44,9 @@ func0000000000000009:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 897
+	fli.d	fa5, nan
 	vand.vx	v16, v16, a0
 	vmsne.vi	v0, v16, 0
-	fli.d	fa5, nan
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 

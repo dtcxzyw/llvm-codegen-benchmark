@@ -14,8 +14,8 @@ func0000000000000004:
 func00000000000000e4:
 	mv	a1, a0
 	addi	a2, a0, -1
-	li	a3, 4
 	li	a0, 5
+	li	a3, 4
 	bgeu	a2, a3, .LBB1_2
 	sub	a0, a0, a1
 .LBB1_2:

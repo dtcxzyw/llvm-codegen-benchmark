@@ -48,8 +48,8 @@ func0000000000000074:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB5_2
 	addiw	a2, a2, 8
 	sltu	a0, a2, a0
@@ -116,8 +116,8 @@ func0000000000000006:
 	ret
 
 func000000000000002a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB12_2
 	addiw	a1, a2, 32
 	slt	a0, a0, a1

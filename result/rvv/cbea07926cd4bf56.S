@@ -65,16 +65,16 @@ func0000000000008410:
 	.quad	8789745728267363600
 func000000000000c630:
 	lui	a0, %hi(.LCPI6_0)
-	lui	a1, %hi(.LCPI6_1)
 	ld	a0, %lo(.LCPI6_0)(a0)
-	ld	a1, %lo(.LCPI6_1)(a1)
-	lui	a2, %hi(.LCPI6_2)
-	ld	a2, %lo(.LCPI6_2)(a2)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v14, v12, a0
-	vmsne.vx	v12, v10, a1
+	lui	a0, %hi(.LCPI6_1)
+	ld	a0, %lo(.LCPI6_1)(a0)
+	vmsne.vx	v12, v10, a0
+	lui	a0, %hi(.LCPI6_2)
+	ld	a0, %lo(.LCPI6_2)(a0)
 	vmor.mm	v10, v12, v14
-	vmsne.vx	v11, v8, a2
+	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
 

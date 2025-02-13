@@ -1,7 +1,7 @@
 func0000000000000201:
 	andi	a3, a0, 1
-	li	a4, 7
 	li	a0, 4
+	li	a4, 7
 	bgeu	a1, a4, .LBB0_3
 	bnez	a3, .LBB0_4
 .LBB0_2:
@@ -21,8 +21,8 @@ func0000000000000201:
 
 func0000000000000221:
 	andi	a3, a0, 1
-	li	a4, 10
 	li	a0, 5
+	li	a4, 10
 	bgeu	a1, a4, .LBB1_3
 	bnez	a3, .LBB1_4
 .LBB1_2:

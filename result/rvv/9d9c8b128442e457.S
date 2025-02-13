@@ -19,8 +19,8 @@ func0000000000000050:
 	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	lui	a0, 16
-	vmor.mm	v0, v10, v12
 	addi	a0, a0, -3
+	vmor.mm	v0, v10, v12
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

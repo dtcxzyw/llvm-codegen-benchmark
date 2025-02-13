@@ -17,9 +17,9 @@ func0000000000000074:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 2
+	vmv.v.i	v10, -1
 	addi	a0, a0, 1809
 	vmsltu.vx	v0, v8, a0
-	vmv.v.i	v10, -1
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

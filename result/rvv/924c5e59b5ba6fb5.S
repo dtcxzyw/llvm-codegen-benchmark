@@ -20,9 +20,9 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vfmacc.vf	v24, fa5, v16
-	vfdiv.vf	v16, v24, fa4
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vfdiv.vf	v16, v24, fa5
 	vmflt.vv	v0, v8, v16
 	ret
 

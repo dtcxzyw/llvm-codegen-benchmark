@@ -6,9 +6,9 @@ func0000000000000022:
 	lui	a0, %hi(.LCPI0_0)
 	lui	a1, %hi(.LCPI0_1)
 	flw	fa5, %lo(.LCPI0_0)(a0)
-	flw	fa4, %lo(.LCPI0_1)(a1)
 	flt.s	a0, fa1, fa5
-	flt.s	a1, fa0, fa4
+	flw	fa5, %lo(.LCPI0_1)(a1)
+	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -146,10 +146,10 @@ func0000000000000099:
 .LCPI16_0:
 	.word	0x749dc5ae
 func00000000000000cc:
+	fmax.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI16_0)
-	flw	fa5, %lo(.LCPI16_0)(a0)
-	fmax.s	fa4, fa0, fa1
-	fle.s	a0, fa5, fa4
+	flw	fa4, %lo(.LCPI16_0)(a0)
+	fle.s	a0, fa4, fa5
 	ret
 
 func0000000000000084:
@@ -185,11 +185,11 @@ func000000000000002a:
 .LCPI21_0:
 	.word	0x3dcccccd
 func000000000000003b:
-	lui	a0, %hi(.LCPI21_0)
-	flw	fa5, %lo(.LCPI21_0)(a0)
 	lui	a0, 256000
-	fmv.w.x	fa4, a0
-	fle.s	a0, fa4, fa1
+	lui	a1, %hi(.LCPI21_0)
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa5, fa1
+	flw	fa5, %lo(.LCPI21_0)(a1)
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1

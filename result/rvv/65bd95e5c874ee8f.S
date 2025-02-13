@@ -46,8 +46,8 @@ func0000000000000004:
 	bseti	a0, zero, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v0, v12, v0
 	li	a0, -1022
+	vmand.mm	v0, v12, v0
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

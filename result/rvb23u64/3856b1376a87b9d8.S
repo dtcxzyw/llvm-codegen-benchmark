@@ -47,11 +47,11 @@ func000000000000018c:
 .LCPI6_0:
 	.quad	1844674407370955161
 func000000000000048a:
-	lui	a3, %hi(.LCPI6_0)
-	ld	a3, %lo(.LCPI6_0)(a3)
 	addw	a1, a1, a2
+	lui	a2, %hi(.LCPI6_0)
 	sgtz	a1, a1
-	sltu	a0, a0, a3
+	ld	a2, %lo(.LCPI6_0)(a2)
+	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

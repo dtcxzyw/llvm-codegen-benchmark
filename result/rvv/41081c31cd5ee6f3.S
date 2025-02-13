@@ -28,14 +28,14 @@ func0000000000000264:
 .LCPI2_1:
 	.quad	0x401921fb54442d18
 func0000000000000090:
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfabs.v	v16, v16
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v16
 	vmflt.vf	v24, v16, fa5
-	vmfgt.vf	v16, v8, fa4
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	vmfgt.vf	v16, v8, fa5
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v0, v8
 	ret

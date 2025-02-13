@@ -58,18 +58,18 @@ func0000000000000088:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsext.vf4	v11, v10
 	li	a0, -48
-	li	a1, -1
 	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
+	li	a0, -1
+	srli	a0, a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v12, v12, v11
-	srli	a1, a1, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v12, a1
+	vand.vx	v10, v12, a0
+	lui	a0, %hi(.LCPI3_0)
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 

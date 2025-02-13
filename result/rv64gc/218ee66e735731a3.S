@@ -14,9 +14,9 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	4835703278458516699
 func0000000000000004:
+	sext.w	a0, a0
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	sext.w	a0, a0
 	mulhu	a1, a1, a2
 	srli	a1, a1, 18
 	sext.w	a1, a1
@@ -26,10 +26,10 @@ func0000000000000004:
 .LCPI2_0:
 	.quad	4647998506761461825
 func000000000000006a:
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	sext.w	a0, a0
 	srli	a1, a1, 1
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
 	sext.w	a1, a1
@@ -39,10 +39,10 @@ func000000000000006a:
 .LCPI3_0:
 	.quad	4647998506761461825
 func000000000000000a:
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
 	sext.w	a0, a0
 	srli	a1, a1, 1
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
 	sext.w	a1, a1
@@ -114,9 +114,9 @@ func0000000000000068:
 .LCPI9_0:
 	.quad	4835703278458516699
 func0000000000000007:
+	sext.w	a0, a0
 	lui	a2, %hi(.LCPI9_0)
 	ld	a2, %lo(.LCPI9_0)(a2)
-	sext.w	a0, a0
 	mulhu	a1, a1, a2
 	srli	a1, a1, 21
 	sext.w	a1, a1
@@ -127,10 +127,10 @@ func0000000000000007:
 .LCPI10_0:
 	.quad	2951479051793528259
 func0000000000000064:
-	lui	a2, %hi(.LCPI10_0)
-	ld	a2, %lo(.LCPI10_0)(a2)
 	sext.w	a0, a0
 	srli	a1, a1, 2
+	lui	a2, %hi(.LCPI10_0)
+	ld	a2, %lo(.LCPI10_0)(a2)
 	mulhu	a1, a1, a2
 	srli	a1, a1, 2
 	sext.w	a1, a1
@@ -140,10 +140,10 @@ func0000000000000064:
 .LCPI11_0:
 	.quad	188894659314785809
 func0000000000000066:
-	lui	a2, %hi(.LCPI11_0)
-	ld	a2, %lo(.LCPI11_0)(a2)
 	sext.w	a0, a0
 	srli	a1, a1, 6
+	lui	a2, %hi(.LCPI11_0)
+	ld	a2, %lo(.LCPI11_0)(a2)
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
 	sext.w	a1, a1

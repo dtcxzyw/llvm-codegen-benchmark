@@ -43,13 +43,13 @@ func0000000000000081:
 .LCPI4_0:
 	.quad	1000000000000000001
 func0000000000000444:
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vi	v0, v12, 15
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
+	lui	a0, %hi(.LCPI4_0)
 	vmerge.vvm	v8, v10, v8, v0
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vmsltu.vx	v0, v8, a0
 	ret
 

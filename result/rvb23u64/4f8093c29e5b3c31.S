@@ -11,12 +11,12 @@ func000000000000000a:
 	.quad	-8446744073709551616
 func0000000000000004:
 	andi	a0, a0, 1
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
+	lui	a1, %hi(.LCPI1_0)
 	or	a0, a0, a2
-	sltu	a0, a0, a3
+	ld	a1, %lo(.LCPI1_0)(a1)
+	sltu	a0, a0, a1
 	neg	a0, a0
 	ret
 

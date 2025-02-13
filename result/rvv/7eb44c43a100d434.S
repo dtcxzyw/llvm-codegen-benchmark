@@ -1,8 +1,8 @@
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vnot.v	v12, v12
 	vmseq.vi	v0, v10, 0
-	vnot.v	v10, v12
-	vmerge.vim	v10, v10, 0, v0
+	vmerge.vim	v10, v12, 0, v0
 	vand.vv	v8, v10, v8
 	ret
 

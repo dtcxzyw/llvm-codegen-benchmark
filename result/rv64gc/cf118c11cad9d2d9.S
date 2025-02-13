@@ -12,9 +12,9 @@ func0000000000000221:
 	andi	a3, a0, 255
 	li	a0, 10
 	mul	a0, a2, a0
-	li	a2, 45
 	addw	a0, a0, a1
-	bne	a3, a2, .LBB1_2
+	li	a1, 45
+	bne	a3, a1, .LBB1_2
 	negw	a0, a0
 .LBB1_2:
 	ret
@@ -23,9 +23,9 @@ func00000000000002a1:
 	andi	a3, a0, 255
 	li	a0, 10
 	mul	a0, a2, a0
-	li	a2, 45
 	addw	a0, a0, a1
-	bne	a3, a2, .LBB2_2
+	li	a1, 45
+	bne	a3, a1, .LBB2_2
 	negw	a0, a0
 .LBB2_2:
 	ret
@@ -34,9 +34,9 @@ func0000000000000001:
 	andi	a3, a0, 255
 	li	a0, 10
 	mul	a0, a2, a0
-	li	a2, 45
 	addw	a0, a0, a1
-	bne	a3, a2, .LBB3_2
+	li	a1, 45
+	bne	a3, a1, .LBB3_2
 	negw	a0, a0
 .LBB3_2:
 	ret

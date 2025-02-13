@@ -44,8 +44,8 @@ func000000000000018f:
 
 func0000000000000060:
 	addw	a0, a0, a1
-	li	a2, 4
 	lui	a1, 1
+	li	a2, 4
 	blt	a0, a2, .LBB4_2
 	addi	a1, a1, -472
 	addw	a0, a0, a1

@@ -57,12 +57,12 @@ func0000000000000c99:
 .LCPI7_0:
 	.quad	1844674407370955161
 func0000000000000d19:
-	lui	a3, %hi(.LCPI7_0)
-	ld	a3, %lo(.LCPI7_0)(a3)
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
+	lui	a2, %hi(.LCPI7_0)
 	xori	a0, a0, 1
-	sltu	a1, a3, a1
+	ld	a2, %lo(.LCPI7_0)(a2)
+	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

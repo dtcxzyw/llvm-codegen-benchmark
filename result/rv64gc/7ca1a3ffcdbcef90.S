@@ -1,7 +1,7 @@
 func0000000000000021:
 	sext.w	a0, a0
-	andi	a2, a2, 4
 	andi	a1, a1, 1
+	andi	a2, a2, 4
 	beqz	a2, .LBB0_2
 	li	a2, 64
 	addi	a1, a1, -1

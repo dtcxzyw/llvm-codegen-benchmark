@@ -23,8 +23,8 @@ func0000000000000018:
 func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v12, v10, 2
-	vmand.mm	v0, v0, v12
 	li	a0, 256
+	vmand.mm	v0, v0, v12
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
@@ -38,8 +38,8 @@ func0000000000000019:
 func0000000000000009:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v12, v10, 5
-	vmand.mm	v0, v12, v0
 	lui	a0, 524288
+	vmand.mm	v0, v12, v0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

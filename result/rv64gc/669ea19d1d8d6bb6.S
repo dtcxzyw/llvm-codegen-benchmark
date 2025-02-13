@@ -5,10 +5,10 @@
 func0000000000000000:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
 	and	a1, a1, a2
-	mul	a1, a1, a3
+	lui	a2, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_1)(a2)
+	mul	a1, a1, a2
 	srl	a0, a1, a0
 	andi	a0, a0, 255
 	ret

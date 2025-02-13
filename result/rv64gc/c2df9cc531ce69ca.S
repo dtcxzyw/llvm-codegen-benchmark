@@ -13,15 +13,15 @@ func0000000000000008:
 .LCPI1_0:
 	.quad	6148914691236517206
 func0000000000000000:
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
+	sext.w	a3, a0
 	sub	a2, a2, a1
-	sext.w	a1, a0
-	mulh	a0, a2, a3
-	srli	a2, a0, 63
-	addw	a0, a0, a2
-	blt	a0, a1, .LBB1_2
-	mv	a0, a1
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	mulh	a0, a2, a0
+	srli	a1, a0, 63
+	addw	a0, a0, a1
+	blt	a0, a3, .LBB1_2
+	mv	a0, a3
 .LBB1_2:
 	ret
 

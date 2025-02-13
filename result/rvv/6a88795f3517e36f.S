@@ -9,10 +9,10 @@ func0000000000000076:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	vmul.vx	v10, v10, a0
-	ld	a0, %lo(.LCPI0_0)(a1)
 	vsub.vv	v10, v10, v8
 	vmaxu.vv	v10, v8, v10
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI0_0)(a1)
 	vminu.vx	v8, v8, a0
 	ret
 

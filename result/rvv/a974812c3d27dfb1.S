@@ -25,8 +25,8 @@ func0000000000000044:
 func0000000000000064:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v10, v10, -7
-	vmsleu.vi	v0, v10, 1
 	lui	a0, 4
+	vmsleu.vi	v0, v10, 1
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

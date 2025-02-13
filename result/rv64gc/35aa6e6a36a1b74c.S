@@ -17,9 +17,9 @@ func0000000000000025:
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa1
 .LBB1_2:
+	fmul.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
-	fmul.d	fa5, fa0, fa5
 	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret

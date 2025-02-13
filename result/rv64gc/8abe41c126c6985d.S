@@ -1,7 +1,7 @@
 func0000000000000004:
 	addw	a1, a1, a0
-	li	a2, 1519
 	lui	a0, 2
+	li	a2, 1519
 	bltu	a1, a2, .LBB0_2
 	addiw	a0, a0, 1596
 	ret

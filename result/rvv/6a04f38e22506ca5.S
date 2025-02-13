@@ -1,7 +1,7 @@
 func0000000000000048:
-	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
@@ -16,9 +16,9 @@ func00000000000000c8:
 	ret
 
 func0000000000000084:
-	li	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10

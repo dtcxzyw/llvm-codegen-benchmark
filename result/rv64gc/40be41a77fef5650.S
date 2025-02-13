@@ -8,8 +8,8 @@ func0000000000000041:
 
 func0000000000000054:
 	mv	a2, a0
-	li	a3, 32
 	li	a0, 1
+	li	a3, 32
 	bgeu	a2, a3, .LBB1_2
 	sllw	a0, a0, a1
 .LBB1_2:

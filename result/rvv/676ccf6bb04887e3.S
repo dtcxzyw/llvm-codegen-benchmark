@@ -4,9 +4,9 @@ func0000000000000c21:
 	vmseq.vv	v0, v8, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vrsub.vi	v10, v10, 2
 	vmseq.vi	v0, v8, 3
-	vrsub.vi	v8, v10, 2
-	vmerge.vim	v8, v8, 3, v0
+	vmerge.vim	v8, v10, 3, v0
 	ret
 
 func0000000000000021:
@@ -17,8 +17,8 @@ func0000000000000021:
 	vmv.v.x	v10, a0
 	li	a0, 312
 	vmerge.vxm	v10, v10, a0, v0
-	vmseq.vi	v0, v8, 0
 	li	a0, 184
+	vmseq.vi	v0, v8, 0
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
@@ -28,8 +28,8 @@ func0000000000000421:
 	vmseq.vv	v0, v8, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vadd.vv	v10, v10, v10
 	vmseq.vi	v0, v8, 0
-	vadd.vv	v8, v10, v10
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	ret
 

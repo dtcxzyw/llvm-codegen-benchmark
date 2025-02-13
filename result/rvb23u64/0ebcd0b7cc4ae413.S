@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a1, a1, 1
 	andi	a0, a0, 1
+	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	fmv.d.x	fa5, zero
 	fli.d	fa0, min
@@ -18,8 +18,8 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	0x4076800000000000
 func0000000000000001:
-	andi	a1, a1, 1
 	andi	a0, a0, 1
+	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)

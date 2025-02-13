@@ -42,10 +42,10 @@ func000000000000000c:
 .LCPI4_1:
 	.quad	0x401921fb54442d18
 func000000000000000a:
+	fsub.d	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
-	fsub.d	fa4, fa0, fa1
-	fle.d	a0, fa4, fa5
+	fld	fa4, %lo(.LCPI4_0)(a0)
+	fle.d	a0, fa5, fa4
 	bnez	a0, .LBB4_2
 	fmv.d.x	fa0, zero
 	ret

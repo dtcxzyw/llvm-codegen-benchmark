@@ -3,14 +3,14 @@
 .LCPI0_1:
 	.quad	-384307168202282326
 func0000000000000008:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, %hi(.LCPI0_1)
-	ld	a1, %lo(.LCPI0_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.rtz.x.f.v	v8, v8
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vadd.vx	v8, v8, a0
-	vmsltu.vx	v0, v8, a1
+	lui	a0, %hi(.LCPI0_1)
+	ld	a0, %lo(.LCPI0_1)(a0)
+	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000004:

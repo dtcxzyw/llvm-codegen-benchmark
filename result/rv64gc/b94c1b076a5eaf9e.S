@@ -8,12 +8,12 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	lui	a2, 1
-	bgeu	a2, a0, .LBB1_2
-	lui	a2, 1048575
-	and	a2, a2, a1
+	mv	a2, a0
+	lui	a0, 1
+	bgeu	a0, a2, .LBB1_2
+	lui	a0, 1048575
+	and	a0, a0, a1
 .LBB1_2:
-	mv	a0, a2
 	ret
 
 func0000000000000004:

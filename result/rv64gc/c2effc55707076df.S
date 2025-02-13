@@ -9,10 +9,10 @@ func0000000000000021:
 	ret
 
 func0000000000000106:
+	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	li	a2, 12
-	sext.w	a0, a0
 	bltu	a2, a1, .LBB1_2
 	li	a1, 35
 	slt	a0, a0, a1
@@ -23,10 +23,10 @@ func0000000000000106:
 	ret
 
 func0000000000000107:
+	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	li	a2, 11
-	sext.w	a0, a0
 	bltu	a2, a1, .LBB2_2
 	li	a1, 8
 	slt	a0, a1, a0

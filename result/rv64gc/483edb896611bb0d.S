@@ -20,22 +20,22 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
-	lui	a2, 73
-	addiw	a2, a2, 992
-	bgeu	a0, a2, .LBB2_2
-	slli	a1, a1, 32
-	srli	a2, a1, 32
+	mv	a2, a0
+	lui	a0, 73
+	addiw	a0, a0, 992
+	bgeu	a2, a0, .LBB2_2
+	slli	a0, a1, 32
+	srli	a0, a0, 32
 .LBB2_2:
-	mv	a0, a2
 	ret
 
 func0000000000000030:
-	lui	a2, 1
-	bltu	a2, a0, .LBB3_2
-	slli	a1, a1, 32
-	srli	a2, a1, 32
+	mv	a2, a0
+	lui	a0, 1
+	bltu	a0, a2, .LBB3_2
+	slli	a0, a1, 32
+	srli	a0, a0, 32
 .LBB3_2:
-	mv	a0, a2
 	ret
 
 func00000000000000a8:

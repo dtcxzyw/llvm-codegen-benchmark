@@ -40,8 +40,8 @@ func0000000000000031:
 
 func000000000000002b:
 	sext.w	a1, a0
-	li	a2, 2
 	lui	a0, 1
+	li	a2, 2
 	blt	a2, a1, .LBB4_2
 	addiw	a0, a0, -1233
 	ret

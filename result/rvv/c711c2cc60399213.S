@@ -13,11 +13,11 @@ func0000000000000031:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vnmsub.vx	v12, a0, v8
 	vmsne.vi	v8, v12, 0
-	vmor.mm	v0, v0, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v12, 0
+	vnsrl.wi	v9, v12, 0
+	vmor.mm	v0, v0, v8
 	vsetvli	zero, zero, e8, mf2, ta, mu
-	vnsrl.wi	v10, v8, 0, v0.t
+	vnsrl.wi	v10, v9, 0, v0.t
 	vmv1r.v	v8, v10
 	ret
 

@@ -5,10 +5,10 @@
 func0000000000000000:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	lui	a2, %hi(.LCPI0_1)
-	ld	a2, %lo(.LCPI0_1)(a2)
 	add	a0, a0, a1
-	sltu	a0, a0, a2
+	lui	a1, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_1)(a1)
+	sltu	a0, a0, a1
 	ret
 
 .LCPI1_0:
@@ -18,10 +18,10 @@ func0000000000000000:
 func0000000000000002:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	lui	a2, %hi(.LCPI1_1)
-	ld	a2, %lo(.LCPI1_1)(a2)
 	add	a0, a0, a1
-	sltu	a0, a0, a2
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
+	sltu	a0, a0, a1
 	ret
 
 .LCPI2_0:

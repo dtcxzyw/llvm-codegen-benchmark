@@ -22,8 +22,8 @@ func0000000000000018:
 func0000000000000020:
 	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v12, a0
 	vsub.vv	v10, v8, v10
+	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
@@ -64,8 +64,8 @@ func0000000000000028:
 func0000000000000029:
 	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vx	v0, v12, a0
 	vsub.vv	v10, v8, v10
+	vmsgt.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

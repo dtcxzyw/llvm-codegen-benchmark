@@ -9,8 +9,8 @@ func0000000000000021:
 
 func0000000000000024:
 	sext.w	a2, a0
-	li	a3, -18
 	li	a0, 2
+	li	a3, -18
 	bltu	a2, a3, .LBB1_2
 	subw	a0, a0, a1
 .LBB1_2:

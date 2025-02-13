@@ -14,9 +14,9 @@ func0000000000000042:
 .LCPI1_1:
 	.word	0x3ca3d70a
 func00000000000000a5:
+	fsub.s	fa4, fa0, fa1
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
-	fsub.s	fa4, fa0, fa1
 	fle.s	a0, fa4, fa5
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa4

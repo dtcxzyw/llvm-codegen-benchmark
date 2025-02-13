@@ -11,8 +11,8 @@ func0000000000000002:
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	lui	a0, 1048575
+	vmseq.vi	v0, v10, 0
 	vadd.vx	v8, v8, a0, v0.t
 	vsrl.vi	v8, v8, 12
 	ret

@@ -6,11 +6,11 @@ func0000000000000422:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
-	vmflt.vf	v0, v8, fa4
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 
 .LCPI1_0:
@@ -21,11 +21,11 @@ func000000000000042c:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI1_0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa4, %lo(.LCPI1_0)(a0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
-	vmfge.vf	v0, v8, fa4
+	fld	fa5, %lo(.LCPI1_0)(a0)
+	vmfge.vf	v0, v8, fa5
 	ret
 
 func0000000000000225:
@@ -47,14 +47,14 @@ func0000000000000332:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI3_0)
 	vmfge.vf	v7, v24, fa5
 	vmnot.m	v0, v7
-	lui	a0, %hi(.LCPI3_0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmfge.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v24
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -70,13 +70,13 @@ func0000000000000222:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
-	lui	a0, %hi(.LCPI4_2)
 	vmflt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI4_2)(a0)
+	fld	fa5, %lo(.LCPI4_1)(a0)
+	lui	a0, %hi(.LCPI4_2)
 	vmerge.vvm	v16, v24, v16, v0
-	vmflt.vf	v0, v16, fa4
+	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI4_2)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -89,13 +89,13 @@ func0000000000000244:
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI5_0)
-	fld	fa4, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
 	vmflt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI5_1)(a0)
+	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, %hi(.LCPI5_1)
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa4
+	vmfgt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI5_1)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
@@ -111,13 +111,13 @@ func0000000000000445:
 	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	lui	a0, %hi(.LCPI6_1)
-	fld	fa4, %lo(.LCPI6_1)(a0)
-	lui	a0, %hi(.LCPI6_2)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI6_2)(a0)
+	fld	fa5, %lo(.LCPI6_1)(a0)
+	lui	a0, %hi(.LCPI6_2)
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa4
+	vmfgt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
+	fld	fa5, %lo(.LCPI6_2)(a0)
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

@@ -5,8 +5,8 @@ func000000000000000c:
 	fneg.s	fa5, fa5
 	vfmacc.vf	v12, fa5, v8
 	fmv.w.x	fa5, zero
-	vmfge.vf	v0, v12, fa5
 	vmv.v.i	v8, 0
+	vmfge.vf	v0, v12, fa5
 	vmerge.vvm	v8, v8, v12, v0
 	ret
 

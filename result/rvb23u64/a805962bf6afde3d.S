@@ -52,9 +52,9 @@ func0000000000000005:
 .LCPI4_0:
 	.quad	81129638414607
 func000000000000000f:
+	srli	a1, a1, 18
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	srli	a1, a1, 18
 	mulhu	a1, a1, a2
 	lui	a2, 1571
 	addiw	a2, a2, 667

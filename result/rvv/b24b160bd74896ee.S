@@ -2,11 +2,11 @@
 	.quad	1844674407370955161
 func0000000000000021:
 	lui	a0, 838861
-	lui	a1, %hi(.LCPI0_0)
 	addiw	a0, a0, -819
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	slli	a2, a0, 32
-	add	a0, a0, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	vror.vi	v10, v10, 1

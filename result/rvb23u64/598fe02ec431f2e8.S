@@ -50,20 +50,20 @@ func0000000000000010:
 .LCPI7_0:
 	.quad	-7046029254386353067
 func000000000000000c:
-	lui	a2, %hi(.LCPI7_0)
-	ld	a2, %lo(.LCPI7_0)(a2)
 	zext.h	a1, a1
 	add	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI7_0)
+	ld	a1, %lo(.LCPI7_0)(a1)
+	mul	a0, a0, a1
 	ret
 
 .LCPI8_0:
 	.quad	-7046029254386353067
 func0000000000000008:
-	lui	a2, %hi(.LCPI8_0)
-	ld	a2, %lo(.LCPI8_0)(a2)
 	zext.h	a1, a1
 	add	a0, a0, a1
-	mul	a0, a0, a2
+	lui	a1, %hi(.LCPI8_0)
+	ld	a1, %lo(.LCPI8_0)(a1)
+	mul	a0, a0, a1
 	ret
 

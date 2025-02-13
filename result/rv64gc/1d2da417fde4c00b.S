@@ -17,8 +17,8 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	0x7ff0000000000000
 func0000000000000008:
-	li	a2, 1024
 	andi	a0, a0, 1
+	li	a2, 1024
 	bltu	a2, a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:

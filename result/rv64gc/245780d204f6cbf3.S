@@ -38,13 +38,13 @@ func0000000000000224:
 	lui	a0, %hi(.LCPI3_0)
 	lui	a1, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	fld	fa4, %lo(.LCPI3_1)(a1)
-	lui	a0, %hi(.LCPI3_2)
-	fld	fa3, %lo(.LCPI3_2)(a0)
 	flt.d	a0, fa2, fa5
-	flt.d	a1, fa1, fa4
+	fld	fa5, %lo(.LCPI3_1)(a1)
+	lui	a1, %hi(.LCPI3_2)
+	fld	fa4, %lo(.LCPI3_2)(a1)
+	flt.d	a1, fa1, fa5
 	and	a0, a0, a1
-	flt.d	a1, fa3, fa0
+	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
 	ret
 
@@ -68,8 +68,8 @@ func0000000000000222:
 	lui	a0, %hi(.LCPI5_0)
 	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	fld	fa4, %lo(.LCPI5_1)(a1)
 	flt.d	a0, fa2, fa5
+	fld	fa4, %lo(.LCPI5_1)(a1)
 	flt.d	a1, fa1, fa4
 	and	a0, a0, a1
 	flt.d	a1, fa0, fa5
@@ -95,8 +95,8 @@ func00000000000004a4:
 	lui	a0, %hi(.LCPI7_0)
 	lui	a1, %hi(.LCPI7_1)
 	fld	fa5, %lo(.LCPI7_0)(a0)
-	fld	fa4, %lo(.LCPI7_1)(a1)
 	flt.d	a0, fa5, fa2
+	fld	fa4, %lo(.LCPI7_1)(a1)
 	fle.d	a1, fa1, fa4
 	flt.d	a2, fa5, fa0
 	and	a0, a0, a2

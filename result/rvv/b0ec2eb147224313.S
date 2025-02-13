@@ -19,8 +19,8 @@ func0000000000000024:
 func0000000000000017:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfne.vv	v0, v24, v24
 	fli.d	fa5, nan
+	vmfne.vv	v0, v24, v24
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmfne.vv	v0, v8, v16
 	ret
@@ -76,8 +76,8 @@ func000000000000001c:
 func000000000000001e:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfne.vv	v0, v24, v24
 	bseti	a0, zero, 63
+	vmfne.vv	v0, v24, v24
 	vmerge.vxm	v16, v16, a0, v0
 	vmfeq.vv	v24, v16, v16
 	vmfeq.vv	v16, v8, v8

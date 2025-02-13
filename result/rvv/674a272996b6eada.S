@@ -13,9 +13,9 @@ func0000000000000018:
 	ret
 
 func0000000000000088:
-	li	a0, 999
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 999
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -28,9 +28,9 @@ func00000000000000aa:
 	ret
 
 func0000000000000074:
-	li	a0, 256
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 256
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -50,9 +50,9 @@ func0000000000000078:
 	ret
 
 func0000000000000008:
-	li	a0, 254
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 254
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -65,17 +65,17 @@ func000000000000000a:
 	ret
 
 func0000000000000014:
-	li	a0, 33
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 33
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000048:
-	li	a0, 1440
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 1440
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret

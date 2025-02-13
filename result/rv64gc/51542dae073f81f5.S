@@ -37,11 +37,11 @@ func0000000000000004:
 	ret
 
 func0000000000000021:
-	sext.w	a2, a0
-	mv	a0, a1
-	beqz	a2, .LBB6_2
-	li	a0, 1
+	sext.w	a0, a0
+	beqz	a0, .LBB6_2
+	li	a1, 1
 .LBB6_2:
+	mv	a0, a1
 	ret
 
 func000000000000000a:

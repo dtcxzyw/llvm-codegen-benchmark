@@ -63,13 +63,13 @@ func000000000000006c:
 .LCPI5_0:
 	.quad	-8198552921648689607
 func0000000000000065:
-	lui	a3, %hi(.LCPI5_0)
-	ld	a3, %lo(.LCPI5_0)(a3)
 	sub	a2, a2, a1
+	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
 	srai	a2, a2, 3
-	mul	a2, a2, a3
+	mul	a1, a1, a2
 	srai	a0, a0, 3
-	sltu	a0, a0, a2
+	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 

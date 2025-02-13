@@ -48,8 +48,8 @@ func000000000000004c:
 	ret
 
 func0000000000000021:
-	addi	a4, a2, -64
 	srl	a3, a1, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB3_2
 	mv	a0, a3
 	srai	a4, a4, 63

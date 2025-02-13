@@ -17,21 +17,22 @@ func0000000000000024:
 	vadd.vi	v8, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
+	li	a0, 20
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsleu.vi	v0, v8, 2
-	li	a0, 20
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
 func0000000000000034:
 	li	a0, -113
-	vsetivli	zero, 4, e8, mf4, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v10, 5
+	vsetvli	zero, zero, e8, mf4, ta, ma
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, 5
-	vmerge.vim	v8, v8, 3, v0
+	vmerge.vim	v8, v10, 3, v0
 	ret
 
 .LCPI3_0:
@@ -40,21 +41,25 @@ func0000000000000038:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v8, v8, -8
 	li	a0, 48
-	lui	a1, %hi(.LCPI3_0)
-	ld	a1, %lo(.LCPI3_0)(a1)
-	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vadd.vx	v8, v8, a1
+	vmv.v.i	v10, 0
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmseq.vx	v0, v8, a0
+	lui	a0, %hi(.LCPI3_0)
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmerge.vim	v8, v10, 1, v0
+	ld	a0, %lo(.LCPI3_0)(a0)
+	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000028:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vi	v8, v8, -3
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v10, 5
+	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsleu.vi	v0, v8, -3
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, 5
-	vmerge.vim	v8, v8, 9, v0
+	vmerge.vim	v8, v10, 9, v0
 	ret
 

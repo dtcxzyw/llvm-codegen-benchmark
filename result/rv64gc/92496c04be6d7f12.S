@@ -24,12 +24,12 @@ func0000000000000118:
 .LCPI3_0:
 	.quad	1844674407370955161
 func0000000000000e18:
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	addw	a1, a1, a2
+	lui	a2, %hi(.LCPI3_0)
 	sltiu	a1, a1, 6
 	xori	a1, a1, 1
-	xor	a0, a0, a3
+	ld	a2, %lo(.LCPI3_0)(a2)
+	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

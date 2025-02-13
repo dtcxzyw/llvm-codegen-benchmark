@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	-5435081209227447693
 func0000000000000030:
+	li	a0, 510
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v12, v12, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	li	a1, 510
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a1
 	vadd.vx	v12, v12, a0
 	vmacc.vv	v8, v10, v12
 	ret

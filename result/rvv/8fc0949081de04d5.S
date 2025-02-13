@@ -8,11 +8,11 @@ func0000000000000026:
 .LCPI1_0:
 	.quad	999999999999999999
 func0000000000000028:
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
+	lui	a0, %hi(.LCPI1_0)
 	vadd.vv	v8, v8, v10
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 

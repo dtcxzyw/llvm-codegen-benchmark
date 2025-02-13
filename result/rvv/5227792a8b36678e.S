@@ -5,13 +5,13 @@
 func0000000000000000:
 	fli.d	fa5, 1.5
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa3, %lo(.LCPI0_1)(a0)
 	fneg.d	fa5, fa5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfadd.vf	v10, v8, fa5
-	vfmv.v.f	v8, fa4
-	vfmacc.vf	v8, fa3, v10
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, %hi(.LCPI0_1)
+	vfmv.v.f	v8, fa5
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v8, fa5, v10
 	ret
 

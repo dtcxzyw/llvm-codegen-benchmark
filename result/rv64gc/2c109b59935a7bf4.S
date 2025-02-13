@@ -31,13 +31,13 @@ func00000000000001f8:
 .LCPI3_0:
 	.quad	1844674407370955161
 func0000000000000308:
-	li	a2, 10
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
-	mul	a0, a0, a2
 	sext.w	a1, a1
+	li	a2, 10
+	mul	a0, a0, a2
+	lui	a2, %hi(.LCPI3_0)
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	ld	a1, %lo(.LCPI3_0)(a2)
+	sltu	a0, a1, a0
 	ret
 
 func00000000000003f4:
@@ -95,25 +95,25 @@ func00000000000002a6:
 .LCPI9_0:
 	.quad	1844674407370955161
 func0000000000000204:
-	li	a2, 10
-	lui	a3, %hi(.LCPI9_0)
-	ld	a3, %lo(.LCPI9_0)(a3)
-	mul	a0, a0, a2
 	sext.w	a1, a1
+	li	a2, 10
+	mul	a0, a0, a2
+	lui	a2, %hi(.LCPI9_0)
 	add	a0, a0, a1
-	sltu	a0, a0, a3
+	ld	a1, %lo(.LCPI9_0)(a2)
+	sltu	a0, a0, a1
 	ret
 
 .LCPI10_0:
 	.quad	1844674407370955161
 func0000000000000201:
-	li	a2, 10
-	lui	a3, %hi(.LCPI10_0)
-	ld	a3, %lo(.LCPI10_0)(a3)
-	mul	a0, a0, a2
 	sext.w	a1, a1
+	li	a2, 10
+	mul	a0, a0, a2
+	lui	a2, %hi(.LCPI10_0)
 	add	a0, a0, a1
-	xor	a0, a0, a3
+	ld	a1, %lo(.LCPI10_0)(a2)
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 

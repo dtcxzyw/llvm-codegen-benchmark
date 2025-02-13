@@ -1,8 +1,8 @@
 func00000000000000ca:
 	slli	a0, a0, 56
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srai	a0, a0, 56
+	srai	a2, a2, 56
 	bgtz	a2, .LBB0_2
 	li	a1, 1
 .LBB0_2:
@@ -12,9 +12,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000021:
+	andi	a0, a0, 255
 	andi	a2, a2, 255
 	li	a3, 12
-	andi	a0, a0, 255
 	bne	a2, a3, .LBB1_2
 	li	a1, 12
 .LBB1_2:

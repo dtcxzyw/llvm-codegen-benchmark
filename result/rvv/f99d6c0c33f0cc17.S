@@ -5,9 +5,9 @@ func0000000000000005:
 	vxor.vx	v12, v12, a0
 	addi	a0, a1, -810
 	addi	a1, a1, -809
-	vsrl.vv	v10, v12, v10
-	vmseq.vi	v0, v10, 0
+	vsrl.vv	v12, v12, v10
 	vmv.v.x	v10, a0
+	vmseq.vi	v0, v12, 0
 	vadd.vx	v10, v8, a1, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -19,9 +19,9 @@ func0000000000000004:
 	vxor.vx	v12, v12, a0
 	addi	a0, a1, -810
 	addi	a1, a1, -809
-	vsrl.vv	v10, v12, v10
-	vmseq.vi	v0, v10, 0
+	vsrl.vv	v12, v12, v10
 	vmv.v.x	v10, a0
+	vmseq.vi	v0, v12, 0
 	vadd.vx	v10, v8, a1, v0.t
 	vmv.v.v	v8, v10
 	ret

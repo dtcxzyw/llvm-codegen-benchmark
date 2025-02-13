@@ -6,9 +6,9 @@ func0000000000000021:
 	li	a1, 1024
 	addi	a0, a0, 129
 	vmerge.vxm	v10, v10, a0, v0
+	vor.vx	v12, v10, a1
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v10, a1
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func000000000000002c:
@@ -27,9 +27,9 @@ func0000000000000034:
 	vmv.v.x	v10, a0
 	li	a0, 146
 	vmerge.vim	v10, v10, 0, v0
+	vor.vx	v12, v10, a0
 	vmsleu.vi	v0, v8, 1
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000001:
@@ -39,9 +39,9 @@ func0000000000000001:
 	lui	a0, 8192
 	vmerge.vxm	v10, v10, a0, v0
 	lui	a0, 131328
+	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 
 func0000000000000026:
@@ -50,8 +50,8 @@ func0000000000000026:
 	vmv.v.x	v10, a0
 	addi	a0, a0, 64
 	vmerge.vxm	v10, v10, a0, v0
+	vor.vi	v12, v10, 8
 	vmsle.vi	v0, v8, -1
-	vor.vi	v8, v10, 8
-	vmerge.vvm	v8, v8, v10, v0
+	vmerge.vvm	v8, v12, v10, v0
 	ret
 

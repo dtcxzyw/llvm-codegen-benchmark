@@ -18,8 +18,8 @@ func0000000000000024:
 func00000000000000cc:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmfge.vf	v0, v8, fa5
 	vmfge.vf	v7, v16, fa5
+	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v24, 0
 	vmerge.vvm	v8, v24, v8, v0
 	vmv1r.v	v0, v7

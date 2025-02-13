@@ -3,9 +3,9 @@
 .LCPI0_1:
 	.quad	0xc076800000000000
 func0000000000000004:
+	fsub.d	fa0, fa0, fa1
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fsub.d	fa0, fa0, fa1
 	flt.d	a0, fa5, fa0
 	beqz	a0, .LBB0_2
 	lui	a0, %hi(.LCPI0_1)
@@ -19,9 +19,9 @@ func0000000000000004:
 .LCPI1_1:
 	.quad	0x401921fb54442d18
 func0000000000000002:
+	fsub.d	fa0, fa0, fa1
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	fsub.d	fa0, fa0, fa1
 	flt.d	a0, fa0, fa5
 	beqz	a0, .LBB1_2
 	lui	a0, %hi(.LCPI1_1)

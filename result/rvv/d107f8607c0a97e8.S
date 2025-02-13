@@ -9,8 +9,8 @@ func000000000000000c:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
 	fmv.w.x	fa5, zero
-	vmfge.vf	v0, v16, fa5
 	vmv.v.i	v8, 0
+	vmfge.vf	v0, v16, fa5
 	vmerge.vvm	v8, v8, v16, v0
 	ret
 

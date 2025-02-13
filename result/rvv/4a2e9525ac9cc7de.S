@@ -7,10 +7,10 @@ func0000000000000014:
 	vsub.vv	v14, v10, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12
+	vmv.v.i	v14, 0
 	vsrl.vi	v12, v12, 2
 	vnmsub.vx	v12, a0, v10
 	vmsleu.vi	v0, v12, 5
-	vmv.v.i	v10, 0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v14, v8, v0
 	ret
 

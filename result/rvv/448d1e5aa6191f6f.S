@@ -81,10 +81,10 @@ func0000000000000607:
 .LCPI5_0:
 	.quad	3353953467947191203
 func0000000000000606:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vsrl.vi	v8, v8, 3
 	vmul.vx	v10, v10, a0
 	vmul.vx	v8, v8, a0

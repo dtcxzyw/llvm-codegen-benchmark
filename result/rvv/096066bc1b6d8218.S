@@ -7,10 +7,11 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vor.vi	v9, v8, 4
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vor.vi	v9, v8, 4
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

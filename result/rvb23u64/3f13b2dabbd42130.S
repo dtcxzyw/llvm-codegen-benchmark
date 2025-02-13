@@ -22,14 +22,14 @@ func0000000000000000:
 	lui	a3, %hi(.LCPI1_1)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	ld	a3, %lo(.LCPI1_1)(a3)
-	lui	a4, %hi(.LCPI1_2)
-	ld	a4, %lo(.LCPI1_2)(a4)
 	mul	a2, a2, a0
-	mulhu	a5, a0, a3
+	mulhu	a4, a0, a3
 	mul	a1, a1, a3
 	mul	a3, a3, a0
-	add	a2, a2, a5
-	add	a0, a3, a4
+	lui	a0, %hi(.LCPI1_2)
+	ld	a0, %lo(.LCPI1_2)(a0)
+	add	a2, a2, a4
+	add	a0, a0, a3
 	add	a1, a1, a2
 	sltu	a2, a0, a3
 	add	a1, a1, a2

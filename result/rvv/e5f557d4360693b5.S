@@ -2,10 +2,10 @@ func0000000000000002:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vand.vx	v12, v12, a0
-	li	a0, 32
-	vmseq.vx	v0, v12, a0
 	lui	a0, 131072
 	vandn.vx	v10, v10, a0
+	li	a0, 32
+	vmseq.vx	v0, v12, a0
 	vor.vv	v10, v10, v8, v0.t
 	vmv.v.v	v8, v10
 	ret

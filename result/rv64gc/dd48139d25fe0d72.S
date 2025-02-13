@@ -1,9 +1,9 @@
 func00000000000002a1:
 	andi	a3, a0, 255
 	andi	a0, a2, 255
-	li	a2, 45
 	addw	a0, a0, a1
-	bne	a3, a2, .LBB0_2
+	li	a1, 45
+	bne	a3, a1, .LBB0_2
 	negw	a0, a0
 .LBB0_2:
 	ret
@@ -11,9 +11,9 @@ func00000000000002a1:
 func0000000000000201:
 	andi	a3, a0, 255
 	andi	a0, a2, 255
-	li	a2, 45
 	addw	a0, a0, a1
-	bne	a3, a2, .LBB1_2
+	li	a1, 45
+	bne	a3, a1, .LBB1_2
 	negw	a0, a0
 .LBB1_2:
 	ret

@@ -33,8 +33,8 @@ func0000000000000034:
 
 func0000000000000094:
 	sext.w	a2, a1
-	li	a3, 41
 	lui	a1, 36
+	li	a3, 41
 	bltu	a2, a3, .LBB3_2
 	lui	a1, 12
 .LBB3_2:

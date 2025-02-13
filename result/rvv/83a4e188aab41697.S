@@ -21,14 +21,14 @@ func0000000000000002:
 func0000000000000000:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v8, v8, a0
+	li	a0, 63
+	vsrl.vx	v10, v8, a0
 	lui	a0, %hi(.LCPI1_1)
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vsrl.vx	v10, v8, a1
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v10
+	ld	a0, %lo(.LCPI1_1)(a0)
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 16
 	ret

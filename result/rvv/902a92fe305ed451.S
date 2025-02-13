@@ -4,8 +4,8 @@ func0000000000000021:
 	vmv.v.i	v12, 4
 	vand.vi	v10, v10, 2
 	vmerge.vvm	v8, v12, v8, v0
+	vmv.v.i	v12, 2
 	vmseq.vi	v0, v10, 0
-	vmv.v.i	v10, 2
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 

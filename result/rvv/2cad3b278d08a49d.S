@@ -10,25 +10,25 @@ func0000000000000884:
 
 func0000000000000888:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsub.vv	v14, v10, v12
 	vmsltu.vv	v0, v10, v12
-	vsub.vv	v10, v10, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v14, v8, v0
 	vmsgtu.vi	v0, v8, 1
 	ret
 
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsub.vv	v14, v10, v12
 	vmseq.vv	v0, v10, v12
-	vsub.vv	v10, v10, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v14, v8, v0
 	vmsle.vi	v0, v8, -1
 	ret
 
 func0000000000000084:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsub.vv	v14, v10, v12
 	vmsltu.vv	v0, v10, v12
-	vsub.vv	v10, v10, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v14, v8, v0
 	vmsleu.vi	v0, v8, 4
 	ret
 

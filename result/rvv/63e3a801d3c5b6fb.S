@@ -2,13 +2,13 @@
 	.quad	18040924479227903
 func0000000000000000:
 	bseti	a0, zero, 57
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vx	v12, v10, a0
+	lui	a0, %hi(.LCPI0_0)
 	vmerge.vvm	v10, v12, v10, v0
 	vor.vv	v8, v10, v8
-	vor.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI0_0)(a0)
+	vor.vx	v8, v8, a0
 	ret
 
 func0000000000000004:

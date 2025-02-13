@@ -8,10 +8,11 @@ func0000000000000021:
 	ret
 
 func0000000000000058:
-	li	a0, 188
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vzext.vf2	v12, v10
+	li	a0, 188
 	vmsgtu.vx	v0, v8, a0
-	vzext.vf2	v8, v10
-	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v12, v12, 8, v0.t
+	vmv.v.v	v8, v12
 	ret
 

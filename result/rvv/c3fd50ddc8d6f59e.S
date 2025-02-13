@@ -18,8 +18,8 @@ func0000000000000018:
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vor.vi	v10, v10, 2
 	vmor.mm	v0, v9, v8
-	vor.vi	v8, v10, 2
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v10, 0, v0
 	ret
 

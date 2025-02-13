@@ -22,10 +22,10 @@ func0000000000000005:
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfle.vf	v10, v12, fa5
-	vmnot.m	v0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, 1
-	vmerge.vvm	v8, v10, v8, v0
+	vmv.v.i	v12, 1
+	vmnot.m	v0, v10
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000008:
@@ -56,9 +56,9 @@ func000000000000000b:
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfgt.vf	v10, v12, fa5
-	vmnot.m	v0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, 1
-	vmerge.vvm	v8, v10, v8, v0
+	vmv.v.i	v12, 1
+	vmnot.m	v0, v10
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 

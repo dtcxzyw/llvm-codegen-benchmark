@@ -35,10 +35,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	slli	a0, a0, 48
-	srli	a1, a0, 48
-	li	a2, 52
+	slli	a1, a0, 48
 	lui	a0, 4
+	srli	a1, a1, 48
+	li	a2, 52
 	bltu	a2, a1, .LBB4_2
 	addiw	a0, a0, -138
 	ret

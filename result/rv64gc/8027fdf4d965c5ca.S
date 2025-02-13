@@ -9,23 +9,23 @@ func000000000000010a:
 	ret
 
 func000000000000012a:
+	sext.w	a3, a0
 	sext.w	a1, a1
-	addw	a2, a2, a0
-	sext.w	a0, a0
-	blt	a2, a1, .LBB1_2
-	mv	a2, a1
+	addw	a0, a0, a2
+	blt	a0, a1, .LBB1_2
+	mv	a0, a1
 .LBB1_2:
-	slt	a0, a0, a2
+	slt	a0, a3, a0
 	ret
 
 func000000000000002a:
+	sext.w	a3, a0
 	sext.w	a1, a1
-	addw	a2, a2, a0
-	sext.w	a0, a0
-	blt	a2, a1, .LBB2_2
-	mv	a2, a1
+	addw	a0, a0, a2
+	blt	a0, a1, .LBB2_2
+	mv	a0, a1
 .LBB2_2:
-	slt	a0, a0, a2
+	slt	a0, a3, a0
 	ret
 
 func000000000000000a:

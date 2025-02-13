@@ -7,12 +7,12 @@ func000000000000000a:
 .LCPI1_0:
 	.quad	768614336404564650
 func0000000000000006:
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a2, a2, a1
-	slti	a1, a2, 0
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
+	lui	a1, %hi(.LCPI1_0)
+	slti	a2, a2, 0
+	czero.nez	a0, a0, a2
+	ld	a1, %lo(.LCPI1_0)(a1)
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

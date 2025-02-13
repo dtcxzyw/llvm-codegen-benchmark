@@ -1,15 +1,15 @@
 func0000000000000074:
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vsrl.vi	v12, v12, 14
 	vmsleu.vi	v0, v10, 1
-	vsrl.vi	v10, v12, 14
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 
 func0000000000000066:
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vsrl.vi	v12, v12, 1
 	vmsle.vi	v0, v10, -1
-	vsrl.vi	v10, v12, 1
-	vadd.vi	v8, v10, 1, v0.t
+	vadd.vi	v8, v12, 1, v0.t
 	ret
 
 func000000000000004a:
@@ -17,9 +17,9 @@ func000000000000004a:
 	vsrl.vi	v12, v12, 31
 	lui	a0, 524288
 	addi	a0, a0, -1
+	vadd.vx	v12, v12, a0
 	vmsle.vi	v0, v10, -1
-	vadd.vx	v10, v12, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000046:

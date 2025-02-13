@@ -7,11 +7,11 @@ func0000000000000294:
 	addi	a1, a0, 1
 	vmsltu.vx	v0, v10, a1
 	li	a1, 1024
-	addi	a0, a0, -2047
 	vmerge.vxm	v14, v14, a1, v0
+	li	a1, 384
+	addi	a0, a0, -2047
 	vmsltu.vx	v0, v10, a0
-	li	a0, 384
-	vmerge.vxm	v10, v14, a0, v0
+	vmerge.vxm	v10, v14, a1, v0
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -41,10 +41,10 @@ func000000000000014a:
 	addi	a0, a0, -1450
 	vmv.v.x	v14, a0
 	addi	a0, a1, 1542
+	addi	a1, a1, 1530
 	vmerge.vxm	v14, v14, a0, v0
 	vmsgt.vi	v0, v10, 8
-	addi	a0, a1, 1530
-	vmerge.vxm	v10, v14, a0, v0
+	vmerge.vxm	v10, v14, a1, v0
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret

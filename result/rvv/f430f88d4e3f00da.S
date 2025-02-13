@@ -13,17 +13,17 @@ func0000000000000035:
 .LCPI1_0:
 	.quad	3353953467947191203
 func0000000000000030:
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 6
 	lui	a0, 838861
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 6
 	vmacc.vx	v8, a0, v12
-	vsra.vi	v10, v10, 3
-	vmacc.vx	v8, a1, v10
+	ld	a0, %lo(.LCPI1_0)(a1)
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000002d:
@@ -44,18 +44,18 @@ func000000000000002d:
 	.quad	-6640827866535438581
 func0000000000000005:
 	lui	a0, %hi(.LCPI3_0)
+	li	a1, 63
 	ld	a0, %lo(.LCPI3_0)(a0)
-	lui	a1, %hi(.LCPI3_1)
-	ld	a1, %lo(.LCPI3_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v12, v12, a0
-	li	a0, 63
-	vmulh.vx	v14, v10, a1
+	lui	a0, %hi(.LCPI3_1)
+	ld	a0, %lo(.LCPI3_1)(a0)
+	vmulh.vx	v14, v10, a0
 	vadd.vv	v10, v14, v10
-	vsrl.vx	v14, v12, a0
+	vsrl.vx	v14, v12, a1
 	vsra.vi	v12, v12, 2
 	vadd.vv	v12, v12, v14
-	vsrl.vx	v14, v10, a0
+	vsrl.vx	v14, v10, a1
 	vsra.vi	v10, v10, 6
 	vadd.vv	v8, v12, v8
 	vadd.vv	v10, v10, v14
@@ -65,18 +65,18 @@ func0000000000000005:
 .LCPI4_0:
 	.quad	-6640827866535438581
 func0000000000000000:
-	lui	a0, %hi(.LCPI4_0)
-	li	a1, 63
-	li	a2, 62
-	ld	a0, %lo(.LCPI4_0)(a0)
+	li	a0, 63
+	li	a1, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v14, v10, a1
-	vsrl.vx	v14, v14, a2
+	vsra.vx	v14, v10, a0
+	vsrl.vx	v14, v14, a1
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
 	vadd.vv	v10, v10, v14
-	vmulh.vx	v14, v12, a0
+	vmulh.vx	v14, v12, a1
 	vsra.vi	v10, v10, 2
 	vadd.vv	v12, v14, v12
-	vsrl.vx	v14, v12, a1
+	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 8
 	vadd.vv	v12, v12, v14
 	vsub.vv	v8, v8, v10
@@ -121,15 +121,15 @@ func0000000000000009:
 .LCPI7_1:
 	.quad	-3353953467947191203
 func0000000000000034:
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
-	lui	a1, %hi(.LCPI7_1)
-	ld	a1, %lo(.LCPI7_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	vmacc.vx	v8, a0, v12
+	lui	a0, %hi(.LCPI7_0)
 	vsra.vi	v10, v10, 3
-	vmacc.vx	v8, a1, v10
+	ld	a0, %lo(.LCPI7_0)(a0)
+	vmacc.vx	v8, a0, v12
+	lui	a0, %hi(.LCPI7_1)
+	ld	a0, %lo(.LCPI7_1)(a0)
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000004:

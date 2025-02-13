@@ -34,12 +34,13 @@ func0000000000000003:
 	ret
 
 func0000000000000004:
+	fmv.s	fa5, fa0
 	lui	a0, 292864
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
 	fmv.w.x	fa0, a0
-	bnez	a1, .LBB3_2
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB3_2
 	fmul.s	fa0, fa1, fa0
 .LBB3_2:
 	ret

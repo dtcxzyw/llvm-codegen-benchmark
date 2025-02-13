@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	0x3fc99999a0000000
 func0000000000000004:
+	andi	a0, a0, 1
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa0
-	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
 	fmv.s	fa5, fa0
 .LBB0_2:
@@ -16,9 +16,9 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
+	andi	a0, a0, 1
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
-	andi	a0, a0, 1
 	beqz	a1, .LBB1_3
 	fli.d	fa0, 1.0
 	beqz	a0, .LBB1_4

@@ -17,8 +17,8 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	li	a1, 280
 	slti	a0, a0, 51

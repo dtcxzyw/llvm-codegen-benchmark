@@ -2,8 +2,8 @@
 	.quad	5270498306774157605
 func0000000000000005:
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	slli	a0, a0, 63
+	ld	a2, %lo(.LCPI0_0)(a2)
 	srai	a0, a0, 63
 	mulh	a2, a1, a2
 	srli	a3, a2, 63

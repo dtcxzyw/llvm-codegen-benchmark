@@ -1,10 +1,10 @@
 func0000000000000ce1:
 	lui	a0, 104832
-	addi	a0, a0, 816
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v11, 0
+	addi	a0, a0, 816
 	vmseq.vx	v0, v10, a0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v11, 1, v0
 	vrsub.vi	v10, v10, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -28,9 +28,9 @@ func00000000000001e1:
 func0000000000000ae1:
 	li	a0, 24
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v11, 0
 	vmsgt.vx	v0, v10, a0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v11, 1, v0
 	vor.vi	v10, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v10

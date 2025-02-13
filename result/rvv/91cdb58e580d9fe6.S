@@ -5,9 +5,9 @@ func0000000000000109:
 	vmv.v.i	v12, 0
 	lui	a0, 4096
 	vmerge.vim	v12, v12, 1, v0
+	vsll.vi	v12, v12, 4
 	vmsltu.vx	v0, v10, a0
-	vsll.vi	v10, v12, 4
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	vor.vi	v8, v8, 4
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000043:
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
+	vsll.vi	v12, v12, 4
 	vmseq.vi	v0, v10, 0
-	vsll.vi	v10, v12, 4
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	vor.vi	v8, v8, 4
 	ret
 
@@ -30,9 +30,9 @@ func0000000000000231:
 	vmv.v.i	v12, 0
 	li	a0, 255
 	vmerge.vim	v12, v12, 1, v0
+	vsll.vi	v12, v12, 4
 	vmsgtu.vx	v0, v10, a0
-	vsll.vi	v10, v12, 4
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	vor.vi	v8, v8, 4
 	ret
 

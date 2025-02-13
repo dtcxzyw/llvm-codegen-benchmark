@@ -10,9 +10,9 @@ func000000000000000a:
 .LCPI1_0:
 	.word	0x48976760
 func0000000000000008:
-	lui	a2, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a2)
 	or	a0, a0, a1
+	lui	a1, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a1)
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

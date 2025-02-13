@@ -19,8 +19,8 @@ func0000000000000007:
 
 func0000000000000012:
 	mv	a1, a0
-	li	a2, 8
 	lui	a0, 69632
+	li	a2, 8
 	bltu	a1, a2, .LBB2_2
 	lui	a0, 528384
 .LBB2_2:

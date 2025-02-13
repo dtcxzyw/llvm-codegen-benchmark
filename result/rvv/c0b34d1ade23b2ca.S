@@ -18,9 +18,11 @@ func0000000000000018:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fmv.d.x	fa5, zero
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmv.v.i	v12, 0
+	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v12, 1, v0
 	ret
 

@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.word	0x3d4ccccd
 func0000000000000002:
+	fmv.s	fa5, fa0
+	fli.s	fa0, 1.0
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa4, %lo(.LCPI0_0)(a0)
-	fmv.s	fa5, fa0
-	flt.s	a0, fa0, fa4
-	fli.s	fa0, 1.0
+	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB0_2
 	fdiv.s	fa0, fa0, fa5
 .LBB0_2:
@@ -27,9 +27,9 @@ func0000000000000008:
 
 func000000000000000a:
 	fmv.s	fa5, fa0
-	fmv.w.x	fa4, zero
-	fle.s	a0, fa0, fa4
 	fli.s	fa0, 1.0
+	fmv.w.x	fa4, zero
+	fle.s	a0, fa5, fa4
 	bnez	a0, .LBB2_2
 	fdiv.s	fa0, fa0, fa5
 .LBB2_2:

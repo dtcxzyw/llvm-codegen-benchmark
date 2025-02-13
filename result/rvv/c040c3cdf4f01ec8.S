@@ -29,11 +29,11 @@ func0000000000000041:
 func000000000000004c:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
-	lui	a1, %hi(.LCPI3_1)
-	ld	a1, %lo(.LCPI3_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI3_1)
 	vror.vi	v8, v8, 2
-	vmsgtu.vx	v0, v8, a1
+	ld	a0, %lo(.LCPI3_1)(a0)
+	vmsgtu.vx	v0, v8, a0
 	ret
 

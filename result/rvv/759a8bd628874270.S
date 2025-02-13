@@ -42,8 +42,8 @@ func0000000000000009:
 	fli.s	fa5, inf
 	vmflt.vf	v17, v12, fa5
 	vmfgt.vf	v18, v12, fa5
-	vmnor.mm	v0, v18, v17
 	fli.s	fa5, 1.0
+	vmnor.mm	v0, v18, v17
 	vmerge.vim	v8, v8, 0, v0
 	vmv1r.v	v0, v16
 	vfmerge.vfm	v8, v8, fa5, v0
@@ -53,9 +53,9 @@ func0000000000000003:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
+	lui	a0, 280480
 	vmfge.vf	v17, v12, fa5
 	vmnot.m	v0, v17
-	lui	a0, 280480
 	vmerge.vim	v8, v8, 0, v0
 	vmv1r.v	v0, v16
 	vmerge.vxm	v8, v8, a0, v0

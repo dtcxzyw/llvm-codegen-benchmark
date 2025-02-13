@@ -20,9 +20,9 @@ func000000000000002a:
 
 func0000000000000021:
 	sext.w	a2, a0
-	li	a3, -1
 	slli	a0, a1, 1
-	beq	a2, a3, .LBB2_2
+	li	a1, -1
+	beq	a2, a1, .LBB2_2
 	addi	a0, a0, 2
 	ret
 .LBB2_2:

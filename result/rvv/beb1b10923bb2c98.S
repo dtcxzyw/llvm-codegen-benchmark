@@ -1,11 +1,12 @@
 func0000000000000028:
 	li	a0, 73
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgt.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vmv.v.i	v10, 0
-	vsll.vi	v10, v8, 3, v0.t
-	vmv.v.v	v8, v10
+	vsll.vi	v12, v8, 3, v0.t
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000004:

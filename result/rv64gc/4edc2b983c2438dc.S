@@ -26,8 +26,8 @@ func000000000000002b:
 func0000000000000005:
 	andi	a3, a1, 1
 	sext.w	a2, a2
-	li	a4, 6
 	lui	a1, 131072
+	li	a4, 6
 	bne	a2, a4, .LBB2_3
 	lui	a2, 262144
 	beqz	a3, .LBB2_4

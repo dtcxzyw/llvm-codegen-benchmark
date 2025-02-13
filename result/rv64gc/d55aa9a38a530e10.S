@@ -25,9 +25,9 @@ func0000000000000042:
 .LCPI1_0:
 	.word	0x3dcccccd
 func0000000000000024:
+	fadd.s	fa4, fa0, fa0
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
-	fadd.s	fa4, fa0, fa0
 	flt.s	a0, fa4, fa5
 	beqz	a0, .LBB1_3
 	lui	a0, 262144

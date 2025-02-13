@@ -28,13 +28,13 @@ func0000000000000005:
 	.quad	-9187201950435737472
 func0000000000000000:
 	lui	a1, 4112
-	lui	a2, %hi(.LCPI4_0)
 	addiw	a1, a1, 257
-	ld	a2, %lo(.LCPI4_0)(a2)
-	slli	a3, a1, 32
-	add	a1, a1, a3
+	slli	a2, a1, 32
+	add	a1, a1, a2
+	lui	a2, %hi(.LCPI4_0)
 	mul	a0, a0, a1
-	or	a0, a0, a2
+	ld	a1, %lo(.LCPI4_0)(a2)
+	or	a0, a0, a1
 	ret
 
 func0000000000000006:

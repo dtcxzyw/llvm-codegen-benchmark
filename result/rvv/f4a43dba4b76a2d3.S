@@ -4,10 +4,12 @@ func00000000000006f4:
 	li	a0, 32
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vrsub.vi	v10, v8, 0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vrsub.vx	v12, v12, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmax.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vrsub.vx	v8, v12, a0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v12, 1, v0
 	ret
 

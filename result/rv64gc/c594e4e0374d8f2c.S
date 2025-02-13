@@ -1,7 +1,7 @@
 func000000000000008d:
 	addw	a0, a0, a1
-	li	a2, 15
 	slti	a1, a0, 0
+	li	a2, 15
 	bltu	a0, a2, .LBB0_2
 	li	a0, 15
 .LBB0_2:

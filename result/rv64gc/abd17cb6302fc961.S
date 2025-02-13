@@ -11,9 +11,9 @@ func000000000000006e:
 .LCPI1_0:
 	.quad	196742565691928
 func00000000000000ed:
+	sext.w	a1, a1
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	sext.w	a1, a1
 	mul	a1, a1, a2
 	srli	a1, a1, 48
 	addw	a0, a0, a1
@@ -22,10 +22,10 @@ func00000000000000ed:
 .LCPI2_0:
 	.quad	163391164108059
 func000000000000000d:
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	slli	a1, a1, 32
+	lui	a2, %hi(.LCPI2_0)
 	srli	a1, a1, 32
+	ld	a2, %lo(.LCPI2_0)(a2)
 	mul	a1, a1, a2
 	srli	a1, a1, 46
 	addw	a0, a0, a1
@@ -52,9 +52,9 @@ func00000000000000ef:
 .LCPI5_0:
 	.quad	196742565691928
 func000000000000008d:
+	sext.w	a1, a1
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
-	sext.w	a1, a1
 	mul	a1, a1, a2
 	srli	a1, a1, 48
 	addw	a0, a0, a1

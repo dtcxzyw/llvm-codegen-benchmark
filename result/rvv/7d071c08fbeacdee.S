@@ -34,12 +34,12 @@ func0000000000000066:
 func000000000000006d:
 	fli.d	fa5, inf
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
 	vmor.mm	v16, v25, v24
-	vmflt.vf	v17, v8, fa4
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	vmflt.vf	v17, v8, fa5
 	vmandn.mm	v8, v16, v17
 	vmand.mm	v0, v0, v8
 	ret

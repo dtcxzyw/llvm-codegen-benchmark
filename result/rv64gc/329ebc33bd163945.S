@@ -16,9 +16,9 @@ func0000000000000017:
 .LCPI2_0:
 	.quad	0x47efffffe0000000
 func0000000000000018:
+	seqz	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
-	seqz	a0, a0
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -26,9 +26,9 @@ func0000000000000018:
 .LCPI3_0:
 	.quad	0xc0d6e6c000000000
 func00000000000000c7:
+	snez	a0, a0
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	snez	a0, a0
 	feq.d	a1, fa0, fa5
 	not	a1, a1
 	and	a0, a0, a1

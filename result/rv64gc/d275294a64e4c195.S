@@ -1,10 +1,10 @@
 func0000000000000021:
 	sext.w	a3, a1
-	li	a4, 1
 	li	a2, 2
+	li	a4, 1
 	beq	a3, a4, .LBB0_4
-	sext.w	a3, a1
 	andi	a0, a0, 1
+	sext.w	a3, a1
 	beq	a3, a2, .LBB0_5
 .LBB0_2:
 	bnez	a0, .LBB0_6
@@ -13,8 +13,8 @@ func0000000000000021:
 	ret
 .LBB0_4:
 	li	a1, 2
-	sext.w	a3, a1
 	andi	a0, a0, 1
+	sext.w	a3, a1
 	bne	a3, a2, .LBB0_2
 .LBB0_5:
 	li	a1, 3

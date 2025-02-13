@@ -1,8 +1,8 @@
 func0000000000000031:
 	vsetivli	zero, 16, e16, m2, ta, mu
 	vmsne.vi	v12, v10, 0
-	vmor.mm	v0, v0, v12
 	li	a0, 1024
+	vmor.mm	v0, v0, v12
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

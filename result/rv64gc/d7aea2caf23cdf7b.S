@@ -8,17 +8,17 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a2, a1, 1
-	mv	a1, a0
-	bnez	a2, .LBB1_2
+	mv	a2, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a0, 24
-	srli	a1, a1, 16
-	beqz	a1, .LBB1_3
+	srli	a2, a2, 16
+	beqz	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 16
-	srli	a1, a1, 16
-	bnez	a1, .LBB1_4
+	srli	a2, a2, 16
+	bnez	a2, .LBB1_4
 .LBB1_3:
 	li	a0, 8
 .LBB1_4:
@@ -37,17 +37,17 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	andi	a2, a1, 1
-	mv	a1, a0
-	bnez	a2, .LBB3_2
+	mv	a2, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
 	li	a0, 2
-	srli	a1, a1, 32
-	bnez	a1, .LBB3_3
+	srli	a2, a2, 32
+	bnez	a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 4
-	srli	a1, a1, 32
-	beqz	a1, .LBB3_4
+	srli	a2, a2, 32
+	beqz	a2, .LBB3_4
 .LBB3_3:
 	li	a0, 8
 .LBB3_4:

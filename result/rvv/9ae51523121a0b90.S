@@ -15,8 +15,8 @@ func0000000000000007:
 func0000000000000021:
 	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v12, a0
 	vmul.vv	v10, v8, v10
+	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000001:
-	mv	a3, a0
+	sext.w	a3, a0
 	sext.w	a0, a1
 	sext.w	a2, a2
-	sext.w	a3, a3
 	bge	a2, a0, .LBB0_3
 	lui	a1, 524288
 	beq	a3, a1, .LBB0_4
@@ -17,10 +16,9 @@ func0000000000000001:
 	ret
 
 func0000000000000024:
-	mv	a3, a0
+	sext.w	a3, a0
 	sext.w	a0, a1
 	sext.w	a2, a2
-	sext.w	a3, a3
 	bge	a2, a0, .LBB1_3
 	li	a1, 15
 	bltu	a3, a1, .LBB1_4

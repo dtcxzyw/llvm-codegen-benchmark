@@ -45,10 +45,10 @@ func00000000000000a8:
 .LCPI5_0:
 	.word	0x3727c5ac
 func0000000000000062:
-	lui	a1, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a1)
 	sext.w	a0, a0
+	lui	a1, %hi(.LCPI5_0)
 	slti	a0, a0, 8
+	flw	fa5, %lo(.LCPI5_0)(a1)
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -56,10 +56,10 @@ func0000000000000062:
 .LCPI6_0:
 	.word	0x3727c5ac
 func0000000000000042:
-	lui	a1, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a1)
 	sext.w	a0, a0
+	lui	a1, %hi(.LCPI6_0)
 	sltiu	a0, a0, 8
+	flw	fa5, %lo(.LCPI6_0)(a1)
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -84,11 +84,11 @@ func00000000000000c4:
 	.word	0x3727c5ac
 func0000000000000144:
 	sext.w	a0, a0
-	lui	a1, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a1)
 	lui	a1, 24
 	addiw	a1, a1, 1696
 	sltu	a0, a0, a1
+	lui	a1, %hi(.LCPI9_0)
+	flw	fa5, %lo(.LCPI9_0)(a1)
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

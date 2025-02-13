@@ -23,8 +23,8 @@ func0000000000000003:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfge.vf	v10, v8, fa5
-	vmnot.m	v0, v10
 	fli.d	fa5, 1.0
+	vmnot.m	v0, v10
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 

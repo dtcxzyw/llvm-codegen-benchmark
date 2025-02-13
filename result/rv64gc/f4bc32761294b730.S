@@ -18,10 +18,10 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
+	sext.w	a0, a0
 	andi	a1, a1, -2
 	sext.w	a1, a1
 	li	a2, 4
-	sext.w	a0, a0
 	beq	a1, a2, .LBB2_2
 	lui	a1, 485047
 	addiw	a1, a1, 622

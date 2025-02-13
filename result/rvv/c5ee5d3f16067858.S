@@ -13,9 +13,9 @@ func0000000000000003:
 	vmv.v.i	v12, 0
 	lui	a0, 8
 	vmerge.vim	v12, v12, 1, v0
+	vmv.v.x	v14, a0
 	vmseq.vi	v0, v10, 0
-	vmv.v.x	v10, a0
-	vsll.vi	v10, v12, 15, v0.t
-	vor.vv	v8, v8, v10
+	vsll.vi	v14, v12, 15, v0.t
+	vor.vv	v8, v8, v14
 	ret
 

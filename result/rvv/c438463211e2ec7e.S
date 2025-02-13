@@ -5,8 +5,8 @@ func0000000000000005:
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfle.vf	v12, v10, fa5
-	vmnot.m	v0, v12
 	vmv.v.i	v10, 0
+	vmnot.m	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
@@ -14,8 +14,8 @@ func0000000000000003:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfge.vf	v12, v10, fa5
-	vmnot.m	v0, v12
 	vmv.v.i	v10, 0
+	vmnot.m	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
@@ -38,8 +38,8 @@ func000000000000000b:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfgt.vf	v12, v10, fa5
-	vmnot.m	v0, v12
 	vmv.v.i	v10, 1
+	vmnot.m	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

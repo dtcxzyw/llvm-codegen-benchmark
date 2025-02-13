@@ -34,11 +34,12 @@ func0000000000000028:
 
 func000000000000000c:
 	lui	a0, 131072
-	vsetivli	zero, 8, e16, m1, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vor.vx	v12, v8, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000026:

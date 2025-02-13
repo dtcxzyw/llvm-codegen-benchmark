@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	-8198552921648689607
 func000000000000000d:
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	sext.w	a1, a1
 	srai	a0, a0, 2
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

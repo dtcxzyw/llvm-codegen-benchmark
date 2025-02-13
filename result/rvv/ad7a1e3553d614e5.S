@@ -17,8 +17,8 @@ func0000000000000061:
 func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 3
-	vmsleu.vi	v0, v10, 6
 	vrsub.vi	v8, v8, 0
+	vmsleu.vi	v0, v10, 6
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

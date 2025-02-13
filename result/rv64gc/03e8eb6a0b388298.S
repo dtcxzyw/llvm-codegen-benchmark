@@ -34,9 +34,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	li	a3, 149
 	andi	a2, a0, 1
-	bltu	a3, a1, .LBB3_2
+	li	a0, 149
+	bltu	a0, a1, .LBB3_2
 	li	a0, 51
 	bnez	a2, .LBB3_3
 	j	.LBB3_4
@@ -59,8 +59,8 @@ func0000000000000006:
 
 func0000000000000014:
 	andi	a2, a0, 1
-	li	a3, 40
 	lui	a0, 1
+	li	a3, 40
 	bltu	a1, a3, .LBB5_2
 	addiw	a0, a0, 384
 	bnez	a2, .LBB5_3

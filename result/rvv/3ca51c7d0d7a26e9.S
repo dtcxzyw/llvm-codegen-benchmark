@@ -5,11 +5,11 @@ func0000000000000000:
 	vle32.v	v24, (a0)
 	fli.d	fa5, 3.0
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	vfwcvt.f.f.v	v0, v24
 	fneg.d	fa5, fa5
+	vfwcvt.f.f.v	v0, v24
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmadd.vf	v0, fa5, v16
-	vfmadd.vf	v8, fa4, v0
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	vfmadd.vf	v8, fa5, v0
 	ret
 

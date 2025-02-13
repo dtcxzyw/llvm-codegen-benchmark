@@ -3,12 +3,12 @@
 func0000000000000000:
 	andi	a2, a2, 1
 	bseti	a3, zero, 56
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
-	czero.nez	a2, a3, a2
 	or	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
+	czero.nez	a2, a3, a2
 	or	a0, a0, a2
-	or	a0, a0, a4
+	ld	a1, %lo(.LCPI0_0)(a1)
+	or	a0, a0, a1
 	ret
 
 func0000000000000006:

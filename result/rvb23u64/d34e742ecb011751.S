@@ -169,9 +169,9 @@ func000000000000002a:
 .LCPI17_0:
 	.quad	5675921253449092805
 func0000000000000027:
+	srai	a1, a1, 2
 	lui	a2, %hi(.LCPI17_0)
 	ld	a2, %lo(.LCPI17_0)(a2)
-	srai	a1, a1, 2
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1

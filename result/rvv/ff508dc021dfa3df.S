@@ -26,9 +26,9 @@ func0000000000000074:
 func000000000000004a:
 	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vrsub.vx	v12, v10, a0
 	vmsle.vi	v0, v10, -1
-	vrsub.vx	v10, v10, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000034:

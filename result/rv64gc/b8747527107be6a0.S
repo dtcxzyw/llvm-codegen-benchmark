@@ -1,7 +1,7 @@
 func0000000000000054:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
-	sext.w	a0, a0
 	blt	a2, a1, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -9,9 +9,9 @@ func0000000000000054:
 	ret
 
 func000000000000000c:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
-	sext.w	a0, a0
 	blt	a2, a1, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -19,9 +19,9 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
-	sext.w	a0, a0
 	blt	a2, a1, .LBB2_2
 	mv	a1, a2
 .LBB2_2:

@@ -35,12 +35,12 @@ func0000000000000cc4:
 .LCPI2_0:
 	.word	0x3f7fffff
 func0000000000000422:
+	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmv.w.x	fa4, zero
-	fmax.s	fa4, fa1, fa4
-	fmin.s	fa5, fa0, fa5
-	flt.s	a0, fa5, fa4
+	fmax.s	fa5, fa1, fa5
+	flw	fa4, %lo(.LCPI2_0)(a0)
+	fmin.s	fa4, fa0, fa4
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000442:

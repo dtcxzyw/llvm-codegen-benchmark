@@ -28,20 +28,18 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v8, v8, -8
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
+	vand.vi	v8, v8, -8
 	vadd.vv	v8, v8, v10
 	ret
 
 func000000000000001d:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v10, v10, -2
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
+	vand.vi	v10, v10, -2
 	vadd.vv	v8, v8, v10
 	ret
 

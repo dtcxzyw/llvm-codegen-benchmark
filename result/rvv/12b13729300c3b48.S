@@ -20,8 +20,8 @@ func0000000000000034:
 	lui	a0, 32768
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	lui	a0, 230
+	vmseq.vi	v0, v12, 0
 	vmerge.vvm	v8, v10, v8, v0
 	addiw	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
@@ -31,8 +31,8 @@ func0000000000000038:
 	bseti	a0, zero, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 45
+	vmseq.vi	v0, v12, 0
 	vmerge.vvm	v8, v10, v8, v0
 	slli	a0, a0, 26
 	vmsgtu.vx	v0, v8, a0

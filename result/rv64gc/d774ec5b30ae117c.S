@@ -10,9 +10,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
+	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, 15
-	sext.w	a0, a0
 	beq	a2, a3, .LBB1_3
 	li	a2, 128
 	bgeu	a0, a2, .LBB1_4

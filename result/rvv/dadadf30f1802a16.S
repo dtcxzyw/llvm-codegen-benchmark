@@ -15,11 +15,11 @@ func00000000000000e0:
 .LCPI1_0:
 	.quad	-3523014627193167104
 func0000000000000020:
+	li	a0, 56
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vrsub.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	li	a1, 56
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vx	v10, v10, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v12, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

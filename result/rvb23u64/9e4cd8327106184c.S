@@ -23,11 +23,11 @@ func0000000000000007:
 .LCPI3_0:
 	.quad	0x3f847ae147ae147b
 func0000000000000003:
+	fcvt.d.s	fa5, fa1
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	fcvt.d.s	fa4, fa1
-	fmul.d	fa4, fa0, fa4
-	fle.d	a0, fa5, fa4
+	fmul.d	fa5, fa0, fa5
+	fld	fa4, %lo(.LCPI3_0)(a0)
+	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

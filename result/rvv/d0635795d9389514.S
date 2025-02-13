@@ -5,11 +5,11 @@ func0000000000000102:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v12, a0
 	addiw	a0, a1, -1024
+	addi	a1, a1, -1025
 	vmseq.vx	v12, v10, a0
 	vmor.mm	v0, v12, v9
-	addi	a0, a1, -1025
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func0000000000000058:

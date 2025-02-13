@@ -112,8 +112,8 @@ func0000000000000242:
 	lui	a0, %hi(.LCPI11_0)
 	lui	a1, %hi(.LCPI11_1)
 	flw	fa5, %lo(.LCPI11_0)(a0)
-	flw	fa4, %lo(.LCPI11_1)(a1)
 	flt.s	a0, fa2, fa5
+	flw	fa4, %lo(.LCPI11_1)(a1)
 	flt.s	a1, fa4, fa1
 	flt.s	a2, fa0, fa5
 	and	a0, a0, a2

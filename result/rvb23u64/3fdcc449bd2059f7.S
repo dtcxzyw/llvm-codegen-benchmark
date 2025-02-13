@@ -12,10 +12,10 @@ func000000000000000a:
 	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	czero.eqz	a3, a3, a0
-	ld	a2, %lo(.LCPI0_0)(a2)
 	czero.nez	a0, a1, a0
 	or	a0, a0, a3
 	add	a0, a0, a1
-	minu	a0, a0, a2
+	ld	a1, %lo(.LCPI0_0)(a2)
+	minu	a0, a0, a1
 	ret
 

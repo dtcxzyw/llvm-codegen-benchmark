@@ -62,15 +62,15 @@ func0000000000000066:
 	.quad	-8198552921648689607
 func0000000000000068:
 	li	a0, 32
-	lui	a1, %hi(.LCPI4_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v12, v12, a0
-	ld	a1, %lo(.LCPI4_0)(a1)
-	vsra.vx	v12, v12, a0
 	vsub.vv	v8, v8, v10
+	vsll.vx	v10, v12, a0
+	vsra.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI4_0)
 	vsra.vi	v8, v8, 3
-	vmul.vx	v8, v8, a1
-	vmsltu.vv	v0, v12, v8
+	ld	a0, %lo(.LCPI4_0)(a0)
+	vmul.vx	v8, v8, a0
+	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000061:

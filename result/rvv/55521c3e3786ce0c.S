@@ -42,22 +42,22 @@ func00000000000001f4:
 .LCPI5_0:
 	.quad	128102389400760775
 func00000000000000a1:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI5_0)
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vmseq.vx	v0, v8, a0
 	ret
 
 .LCPI6_0:
 	.quad	230584300921369395
 func00000000000000a8:
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
+	lui	a0, %hi(.LCPI6_0)
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 

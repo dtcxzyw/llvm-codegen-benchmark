@@ -18,8 +18,8 @@ func0000000000000007:
 
 func0000000000000004:
 	andi	a2, a1, 15
-	li	a3, 6
 	lui	a1, 1
+	li	a3, 6
 	beq	a2, a3, .LBB2_2
 	li	a1, 1
 	slli	a1, a1, 11

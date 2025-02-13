@@ -3,9 +3,9 @@
 func000000000000001b:
 	mv	a2, a0
 	bgeu	a1, a0, .LBB0_3
+	add	a0, a0, a2
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	add	a0, a0, a2
 	bgeu	a0, a1, .LBB0_4
 .LBB0_2:
 	slli	a1, a0, 3
@@ -13,10 +13,9 @@ func000000000000001b:
 	sub	a0, a0, a1
 	ret
 .LBB0_3:
-	mv	a2, a1
+	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	add	a0, a0, a2
 	bltu	a0, a1, .LBB0_2
 .LBB0_4:
 	mv	a0, a1

@@ -3,9 +3,9 @@ func0000000000000000:
 	vmv.v.i	v9, 0
 	vand.vi	v8, v8, 1
 	vmerge.vim	v9, v9, 1, v0
+	vadd.vv	v9, v9, v9
 	vmsne.vi	v0, v8, 0
-	vadd.vv	v8, v9, v9
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v9, 1, v0
 	ret
 
 func0000000000000002:
@@ -13,8 +13,8 @@ func0000000000000002:
 	vmv.v.i	v9, 0
 	vand.vi	v8, v8, 1
 	vmerge.vim	v9, v9, 1, v0
+	vor.vi	v9, v9, 2
 	vmsne.vi	v0, v8, 0
-	vor.vi	v8, v9, 2
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v9, 0, v0
 	ret
 

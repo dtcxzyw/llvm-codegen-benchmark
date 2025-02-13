@@ -28,18 +28,18 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a0
+	andi	a2, a1, 1
+	sext.w	a1, a0
 	lui	a3, 524288
 	addiw	a3, a3, -1
-	andi	a1, a1, 1
-	bgeu	a2, a3, .LBB3_3
-	beqz	a1, .LBB3_4
+	bgeu	a1, a3, .LBB3_3
+	beqz	a2, .LBB3_4
 .LBB3_2:
-	mv	a0, a2
+	mv	a0, a1
 	ret
 .LBB3_3:
-	mv	a2, a3
-	bnez	a1, .LBB3_2
+	mv	a1, a3
+	bnez	a2, .LBB3_2
 .LBB3_4:
 	ret
 

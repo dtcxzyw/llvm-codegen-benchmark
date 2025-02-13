@@ -4,8 +4,8 @@
 	.quad	8446744073709551616
 func0000000000000007:
 	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	ld	a2, %lo(.LCPI0_1)(a2)
 	mulhu	a0, a0, a1
 	srli	a1, a0, 43

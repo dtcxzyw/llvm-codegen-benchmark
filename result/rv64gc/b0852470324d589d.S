@@ -44,9 +44,9 @@ func0000000000002021:
 	ret
 
 func00000000000004c1:
+	sext.w	a2, a0
 	sext.w	a3, a1
 	li	a1, 11
-	sext.w	a2, a0
 	beq	a3, a1, .LBB3_3
 	bgtz	a2, .LBB3_4
 .LBB3_2:
@@ -64,9 +64,9 @@ func00000000000004c1:
 	ret
 
 func000000000000182a:
+	sext.w	a2, a0
 	sext.w	a3, a1
 	li	a1, 3
-	sext.w	a2, a0
 	blt	a3, a1, .LBB4_3
 	bnez	a2, .LBB4_4
 .LBB4_2:
@@ -84,22 +84,22 @@ func000000000000182a:
 	ret
 
 func000000000000302a:
-	sext.w	a2, a1
+	sext.w	a2, a0
+	sext.w	a1, a1
 	li	a3, 99
-	sext.w	a1, a0
-	beq	a2, a3, .LBB5_2
-	lui	a2, 524288
-	addi	a2, a2, -1
-	bnez	a1, .LBB5_3
+	beq	a1, a3, .LBB5_2
+	lui	a1, 524288
+	addi	a1, a1, -1
+	bnez	a2, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
-	li	a2, 1
-	beqz	a1, .LBB5_4
+	li	a1, 1
+	beqz	a2, .LBB5_4
 .LBB5_3:
-	mv	a2, a0
+	mv	a1, a0
 .LBB5_4:
-	sext.w	a2, a2
-	slti	a0, a2, 2
+	sext.w	a1, a1
+	slti	a0, a1, 2
 	xori	a0, a0, 1
 	ret
 

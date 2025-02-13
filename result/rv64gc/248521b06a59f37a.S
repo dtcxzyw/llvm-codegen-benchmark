@@ -1,7 +1,7 @@
 func0000000000000112:
+	addi	a1, a1, 5
 	li	a3, -1
 	srli	a3, a3, 1
-	addi	a1, a1, 5
 	mv	a2, a0
 	bgeu	a0, a3, .LBB0_3
 	bgeu	a1, a0, .LBB0_4
@@ -16,9 +16,9 @@ func0000000000000112:
 	ret
 
 func0000000000000012:
+	addi	a1, a1, 1
 	li	a3, -1
 	srli	a3, a3, 1
-	addi	a1, a1, 1
 	mv	a2, a0
 	bgeu	a0, a3, .LBB1_3
 	bgeu	a1, a0, .LBB1_4

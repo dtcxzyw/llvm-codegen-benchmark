@@ -1,7 +1,7 @@
 func0000000000000006:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 7
-	sext.w	a0, a0
 	bge	a2, a1, .LBB0_3
 	addiw	a1, a1, 2
 	bge	a0, a1, .LBB0_4
@@ -28,20 +28,20 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a1
-	li	a3, 1008
-	sext.w	a1, a0
-	bge	a3, a2, .LBB2_3
-	addiw	a0, a2, 16
-	bge	a0, a1, .LBB2_4
+	sext.w	a2, a0
+	sext.w	a0, a1
+	li	a1, 1008
+	bge	a1, a0, .LBB2_3
+	addiw	a0, a0, 16
+	bge	a0, a2, .LBB2_4
 .LBB2_2:
 	ret
 .LBB2_3:
-	li	a2, 1008
-	addiw	a0, a2, 16
-	blt	a0, a1, .LBB2_2
+	li	a0, 1008
+	addiw	a0, a0, 16
+	blt	a0, a2, .LBB2_2
 .LBB2_4:
-	mv	a0, a1
+	mv	a0, a2
 	ret
 
 func0000000000000000:

@@ -3,9 +3,9 @@ func0000000000000018:
 	vmv.v.i	v10, 0
 	li	a0, 255
 	vmerge.vim	v10, v10, 1, v0
+	vxor.vi	v10, v10, 3
 	vmsgtu.vx	v0, v8, a0
-	vxor.vi	v8, v10, 3
-	vmerge.vim	v8, v8, 4, v0
+	vmerge.vim	v8, v10, 4, v0
 	ret
 
 func0000000000000001:

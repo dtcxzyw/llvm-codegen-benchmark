@@ -11,10 +11,10 @@ func00000000000000a6:
 
 func0000000000000008:
 	lui	a0, 524288
-	addi	a0, a0, -2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v10, 1
+	addi	a0, a0, -2
+	vmsgtu.vx	v0, v8, a0
 	vmerge.vim	v10, v10, 8, v0
 	vadd.vv	v8, v8, v10
 	ret

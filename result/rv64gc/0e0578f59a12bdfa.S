@@ -11,8 +11,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	slli	a1, a1, 33
 	sext.w	a0, a0
+	slli	a1, a1, 33
 	bgez	a1, .LBB1_2
 	lui	a1, 2
 	addiw	a1, a1, 808

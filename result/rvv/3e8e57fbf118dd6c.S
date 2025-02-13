@@ -2,9 +2,9 @@ func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfsub.vv	v8, v8, v10
 	fli.s	fa5, 4.0
+	vmv.v.i	v10, 0
 	vmflt.vf	v0, v8, fa5
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v10, 1, v0
 	ret
 
 func0000000000000008:

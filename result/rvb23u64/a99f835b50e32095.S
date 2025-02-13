@@ -16,12 +16,12 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fmul.s	fa5, fa2, fa5
 	flw	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, %hi(.LCPI1_2)
-	flw	fa3, %lo(.LCPI1_2)(a0)
-	fmul.s	fa5, fa2, fa5
 	fmadd.s	fa5, fa0, fa4, fa5
-	fmul.s	fa4, fa1, fa3
+	flw	fa4, %lo(.LCPI1_2)(a0)
+	fmul.s	fa4, fa1, fa4
 	fadd.s	fa0, fa5, fa4
 	ret
 

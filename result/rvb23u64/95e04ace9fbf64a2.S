@@ -32,9 +32,9 @@ func0000000000000009:
 .LCPI5_0:
 	.quad	163391164108059
 func0000000000000004:
+	addiw	a0, a0, 1
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
-	addiw	a0, a0, 1
 	mul	a0, a0, a1
 	ret
 

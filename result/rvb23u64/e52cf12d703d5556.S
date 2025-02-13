@@ -2,14 +2,14 @@
 	.quad	839798700976720815
 func0000000000000000:
 	lui	a3, 775381
-	lui	a4, %hi(.LCPI0_0)
+	sub	a1, a1, a0
+	lui	a0, %hi(.LCPI0_0)
 	addiw	a3, a3, 451
-	ld	a4, %lo(.LCPI0_0)(a4)
 	bclri	a3, a3, 31
 	mul	a2, a2, a3
-	sub	a1, a1, a0
-	add	a0, a2, a1
-	mul	a0, a0, a4
+	add	a1, a1, a2
+	ld	a0, %lo(.LCPI0_0)(a0)
+	mul	a0, a0, a1
 	ret
 
 func0000000000000055:

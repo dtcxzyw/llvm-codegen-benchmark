@@ -2,13 +2,13 @@
 	.quad	-8737931403336103397
 func0000000000000164:
 	slli	a2, a2, 32
-	lui	a3, %hi(.LCPI0_0)
-	srli	a2, a2, 32
-	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a1, a1, 3
-	add	a1, a1, a2
 	srai	a0, a0, 3
-	mul	a0, a0, a3
+	srli	a2, a2, 32
+	add	a1, a1, a2
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	mul	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 

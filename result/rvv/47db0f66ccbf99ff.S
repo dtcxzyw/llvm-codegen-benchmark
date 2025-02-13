@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a0, 16
 	vsetivli	zero, 16, e8, m1, ta, mu
 	vor.vi	v8, v8, 8, v0.t
+	li	a0, 16
 	vor.vx	v8, v8, a0
 	ret
 

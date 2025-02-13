@@ -5,9 +5,9 @@ func0000000000000081:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	addiw	a3, a3, 1024
-	ld	a1, %lo(.LCPI0_0)(a1)
 	mul	a2, a2, a3
 	lui	a3, 15
+	ld	a1, %lo(.LCPI0_0)(a1)
 	addiw	a3, a3, -1440
 	add	a0, a0, a2
 	mulh	a1, a0, a1
@@ -26,9 +26,9 @@ func00000000000000a0:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
 	addiw	a3, a3, 384
-	ld	a1, %lo(.LCPI1_0)(a1)
 	mul	a2, a2, a3
 	lui	a3, 16
+	ld	a1, %lo(.LCPI1_0)(a1)
 	add	a0, a0, a2
 	mulh	a0, a0, a1
 	srli	a1, a0, 63
@@ -45,10 +45,10 @@ func0000000000000080:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI2_0)
 	slli	a3, a3, 1
-	ld	a1, %lo(.LCPI2_0)(a1)
 	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	lui	a3, 262083
+	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a3, a3, 2
 	add	a0, a0, a2
 	mulh	a0, a0, a1
@@ -66,10 +66,10 @@ func00000000000000a9:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI3_0)
 	slli	a3, a3, 1
-	ld	a1, %lo(.LCPI3_0)(a1)
 	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	lui	a3, 244
+	ld	a1, %lo(.LCPI3_0)(a1)
 	addiw	a3, a3, 576
 	add	a0, a0, a2
 	mulh	a1, a0, a1
@@ -88,10 +88,10 @@ func00000000000000a1:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
 	addiw	a3, a3, -1477
-	ld	a1, %lo(.LCPI4_0)(a1)
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	lui	a3, 244141
+	ld	a1, %lo(.LCPI4_0)(a1)
 	addiw	a3, a3, -1536
 	add	a0, a0, a2
 	mulh	a1, a0, a1

@@ -14,8 +14,8 @@ func0000000000000021:
 
 func0000000000000081:
 	andi	a2, a1, 255
-	li	a3, 2
 	lui	a1, 1048560
+	li	a3, 2
 	bltu	a2, a3, .LBB1_2
 	lui	a1, 12
 	addi	a1, a1, -17

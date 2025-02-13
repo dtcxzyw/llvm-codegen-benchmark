@@ -18,8 +18,8 @@ func000000000000000e:
 func000000000000000a:
 	li	a0, 113
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vx	v0, v12, a0
 	vsll.vi	v10, v10, 2
+	vmseq.vx	v0, v12, a0
 	vmerge.vim	v10, v10, 4, v0
 	vor.vv	v8, v10, v8
 	ret

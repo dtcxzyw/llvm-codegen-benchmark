@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	0x3ff5555555555555
 func0000000000000005:
+	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmfle.vf	v16, v8, fa4
+	vmfle.vf	v16, v8, fa5
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vmnot.m	v0, v16
 	vfmv.v.f	v16, fa5
 	fli.d	fa5, 1.0

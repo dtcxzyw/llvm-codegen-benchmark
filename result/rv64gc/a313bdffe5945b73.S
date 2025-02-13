@@ -34,11 +34,11 @@ func0000000000000508:
 .LCPI4_0:
 	.quad	1844674407370955161
 func0000000000000494:
-	lui	a3, %hi(.LCPI4_0)
-	ld	a3, %lo(.LCPI4_0)(a3)
 	sext.w	a2, a2
 	sltu	a0, a0, a2
-	sltu	a1, a1, a3
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
+	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

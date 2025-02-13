@@ -5,10 +5,10 @@ func0000000000000024:
 	bnez	a0, .LBB0_2
 	fmv.s	fa1, fa2
 .LBB0_2:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	flt.s	a0, fa5, fa4
+	flw	fa4, %lo(.LCPI0_0)(a0)
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000048:
@@ -39,10 +39,10 @@ func0000000000000023:
 	bnez	a0, .LBB3_2
 	fmv.s	fa1, fa2
 .LBB3_2:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	fle.s	a0, fa5, fa4
+	flw	fa4, %lo(.LCPI3_0)(a0)
+	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 
@@ -64,10 +64,10 @@ func0000000000000022:
 	bnez	a0, .LBB5_2
 	fmv.s	fa1, fa2
 .LBB5_2:
+	fdiv.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
-	fdiv.s	fa4, fa0, fa1
-	flt.s	a0, fa4, fa5
+	flw	fa4, %lo(.LCPI5_0)(a0)
+	flt.s	a0, fa5, fa4
 	ret
 
 func0000000000000027:

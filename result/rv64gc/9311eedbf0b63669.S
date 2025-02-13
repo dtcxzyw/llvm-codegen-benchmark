@@ -3,21 +3,21 @@
 func000000000000000b:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	add	a1, a1, a1
 	andi	a0, a0, 1
-	bgeu	a1, a3, .LBB0_3
+	add	a1, a1, a1
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	bgeu	a1, a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a2, 1
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	add	a1, a1, a2
 	andi	a0, a0, 1
-	bltu	a1, a3, .LBB0_4
+	add	a1, a1, a2
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	bltu	a1, a2, .LBB0_4
 .LBB0_3:
-	mv	a1, a3
+	mv	a1, a2
 .LBB0_4:
 	bnez	a0, .LBB0_6
 	slli	a0, a1, 4

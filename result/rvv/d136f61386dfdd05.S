@@ -4,8 +4,8 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vand.vx	v12, v10, a0
 	li	a0, -1
-	vmseq.vi	v0, v12, 0
 	srli	a0, a0, 12
+	vmseq.vi	v0, v12, 0
 	vand.vx	v8, v10, a0, v0.t
 	ret
 

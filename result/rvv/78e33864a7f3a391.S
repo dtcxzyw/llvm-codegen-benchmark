@@ -1,15 +1,15 @@
 func000000000000008a:
-	li	a0, 1077
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 1077
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	ret
 
 func0000000000000084:
-	bseti	a0, zero, 62
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	bseti	a0, zero, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -22,9 +22,9 @@ func00000000000000a8:
 	ret
 
 func0000000000000004:
-	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -193,9 +193,9 @@ func0000000000000086:
 	ret
 
 func00000000000000f8:
-	li	a0, 62
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -220,9 +220,9 @@ func0000000000000061:
 	ret
 
 func00000000000000c4:
-	li	a0, 128
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
+	li	a0, 128
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret

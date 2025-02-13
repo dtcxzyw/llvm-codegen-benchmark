@@ -15,8 +15,8 @@ func0000000000000005:
 	vmseq.vx	v12, v10, a0
 	lui	a0, 3840
 	vandn.vx	v8, v8, a0
-	vmor.mm	v0, v12, v0
 	lui	a0, 256
+	vmor.mm	v0, v12, v0
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

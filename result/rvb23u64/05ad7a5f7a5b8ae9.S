@@ -79,12 +79,12 @@ func0000000000000046:
 .LCPI9_0:
 	.quad	-8446744073709551617
 func000000000000000c:
-	lui	a1, %hi(.LCPI9_0)
-	ld	a1, %lo(.LCPI9_0)(a1)
-	addi	a2, a0, -1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a1, a0, -1
+	lui	a2, %hi(.LCPI9_0)
+	czero.eqz	a1, a1, a0
+	ld	a2, %lo(.LCPI9_0)(a2)
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
 	ret
 
 func0000000000000078:

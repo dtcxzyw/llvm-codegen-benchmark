@@ -16,13 +16,13 @@ func0000000000000024:
 	.quad	3353953467947191203
 func0000000000000028:
 	li	a0, -1
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 2
-	vmul.vx	v8, v8, a1
+	srli	a0, a0, 32
+	vand.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 

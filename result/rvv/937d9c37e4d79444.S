@@ -25,11 +25,11 @@ func0000000000000294:
 	li	a0, -32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v10, v10, 1, v0
+	vrsub.vi	v10, v10, 4
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vrsub.vi	v8, v10, 4
-	vmerge.vim	v8, v8, 2, v0
+	vmerge.vim	v8, v10, 2, v0
 	ret
 
 func0000000000000084:

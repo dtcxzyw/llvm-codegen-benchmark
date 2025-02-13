@@ -58,9 +58,9 @@ func000000000000000c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	vfsub.vv	v16, v16, v24
 	vfadd.vv	v8, v16, v8
+	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmfge.vf	v0, v8, fa5
 	ret
 

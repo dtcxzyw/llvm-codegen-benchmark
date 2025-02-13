@@ -38,9 +38,9 @@ func0000000000000208:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -60,9 +60,9 @@ func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, -1
 	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -85,8 +85,8 @@ func0000000000000108:
 
 func0000000000000308:
 	sext.w	a1, a0
-	li	a0, 2
 	li	a2, 4
+	li	a0, 2
 	bltu	a0, a1, .LBB7_2
 	li	a0, 4
 	bltu	a2, a1, .LBB7_3
@@ -117,9 +117,9 @@ func000000000000014a:
 	ret
 
 func0000000000000286:
-	srliw	a2, a0, 16
 	sext.w	a1, a0
-	beqz	a2, .LBB9_2
+	srliw	a0, a0, 16
+	beqz	a0, .LBB9_2
 	li	a0, 4
 	li	a2, 256
 	blt	a1, a2, .LBB9_3

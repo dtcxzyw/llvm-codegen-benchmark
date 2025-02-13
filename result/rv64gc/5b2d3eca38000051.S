@@ -98,8 +98,8 @@ func0000000000000062:
 
 func0000000000000005:
 	sext.w	a3, a2
-	li	a4, 6
 	lui	a2, 131072
+	li	a4, 6
 	beq	a3, a4, .LBB11_2
 	li	a2, 6
 .LBB11_2:

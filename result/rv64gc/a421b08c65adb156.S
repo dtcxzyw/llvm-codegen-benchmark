@@ -34,10 +34,10 @@ func0000000000000021:
 	ret
 
 func0000000000000c34:
+	sext.w	a0, a0
 	sext.w	a2, a1
 	lui	a3, 13
 	addiw	a3, a3, 2047
-	sext.w	a0, a0
 	bne	a2, a3, .LBB3_2
 	lui	a1, 14
 	sltu	a0, a1, a0

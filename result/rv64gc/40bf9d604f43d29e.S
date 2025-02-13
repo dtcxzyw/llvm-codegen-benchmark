@@ -1,6 +1,6 @@
 func0000000000000003:
-	addi	a4, a2, -64
 	sll	a3, a0, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB0_2
 	mv	a1, a3
 	srai	a0, a4, 63
@@ -17,8 +17,8 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	addi	a4, a2, -64
 	sll	a3, a0, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB1_2
 	mv	a1, a3
 	srai	a0, a4, 63
@@ -35,8 +35,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	addi	a4, a2, -64
 	sll	a3, a0, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB2_2
 	mv	a1, a3
 	srai	a0, a4, 63
@@ -53,8 +53,8 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	addi	a4, a2, -64
 	sll	a3, a0, a2
+	addi	a4, a2, -64
 	bltz	a4, .LBB3_2
 	mv	a1, a3
 	srai	a0, a4, 63

@@ -4,9 +4,9 @@
 	.quad	0x3ff0000000000000
 func0000000000000002:
 	fmv.d	fa5, fa0
+	andi	a0, a0, 1
 	fmv.d.x	fa0, zero
 	flt.d	a1, fa5, fa0
-	andi	a0, a0, 1
 	bnez	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:

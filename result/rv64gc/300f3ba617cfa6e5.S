@@ -29,17 +29,17 @@ func0000000000000021:
 	ret
 
 func0000000000000041:
-	sub	a1, a1, a2
-	mv	a2, a0
-	bgeu	a0, a1, .LBB2_3
-	bnez	a0, .LBB2_4
+	mv	a3, a0
+	sub	a0, a1, a2
+	mv	a1, a3
+	bgeu	a3, a0, .LBB2_3
+	bnez	a3, .LBB2_4
 .LBB2_2:
-	mv	a0, a1
 	ret
 .LBB2_3:
-	mv	a2, a1
-	beqz	a0, .LBB2_2
+	mv	a1, a0
+	beqz	a3, .LBB2_2
 .LBB2_4:
-	mv	a0, a2
+	mv	a0, a1
 	ret
 

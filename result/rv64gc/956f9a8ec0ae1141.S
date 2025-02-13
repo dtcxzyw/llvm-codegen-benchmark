@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	0x3a1b900000000000
 func0000000000000050:
+	fsub.d	fa5, fa1, fa2
+	fmv.d.x	fa4, zero
 	lui	a0, %hi(.LCPI0_0)
+	feq.d	a1, fa5, fa4
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	fmv.d.x	fa3, zero
-	feq.d	a0, fa4, fa3
-	flt.d	a1, fa0, fa5
+	flt.d	a0, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -21,22 +21,22 @@ func0000000000000110:
 .LCPI2_0:
 	.quad	0x3870000000000000
 func0000000000000044:
+	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	fmin.d	fa4, fa4, fa0
-	flt.d	a0, fa4, fa5
+	fmin.d	fa5, fa5, fa0
+	fld	fa4, %lo(.LCPI2_0)(a0)
+	flt.d	a0, fa5, fa4
 	ret
 
 .LCPI3_0:
 	.quad	0x471a36e2e0000000
 func0000000000000082:
+	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI3_0)
+	feq.d	a1, fa5, fa5
+	xori	a1, a1, 1
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	feq.d	a0, fa4, fa4
-	xori	a0, a0, 1
-	flt.d	a1, fa5, fa0
+	flt.d	a0, fa5, fa0
 	or	a0, a0, a1
 	ret
 
@@ -79,12 +79,12 @@ func000000000000002e:
 .LCPI8_0:
 	.quad	0x7ff0000000000000
 func00000000000000c2:
+	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI8_0)
+	feq.d	a1, fa5, fa5
+	xori	a1, a1, 1
 	fld	fa5, %lo(.LCPI8_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	feq.d	a0, fa4, fa4
-	xori	a0, a0, 1
-	flt.d	a1, fa0, fa5
+	flt.d	a0, fa0, fa5
 	or	a0, a0, a1
 	ret
 

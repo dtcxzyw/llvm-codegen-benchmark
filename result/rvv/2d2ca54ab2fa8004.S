@@ -3,9 +3,9 @@ func0000000000000002:
 	vmv1r.v	v9, v0
 	vmseq.vi	v12, v10, 0
 	lui	a0, 1536
-	vmand.mm	v0, v8, v12
 	vmv.v.x	v10, a0
 	lui	a0, 1024
+	vmand.mm	v0, v8, v12
 	vmerge.vxm	v10, v10, a0, v0
 	lui	a0, 512
 	vor.vx	v12, v10, a0
@@ -18,9 +18,9 @@ func0000000000000018:
 	vmv1r.v	v9, v0
 	vmsne.vi	v12, v10, 0
 	lui	a0, 1536
-	vmand.mm	v0, v12, v8
 	vmv.v.x	v10, a0
 	lui	a0, 1024
+	vmand.mm	v0, v12, v8
 	vmerge.vxm	v10, v10, a0, v0
 	lui	a0, 512
 	vor.vx	v12, v10, a0
@@ -33,13 +33,13 @@ func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vx	v9, v10, a0
 	lui	a0, 4096
-	vmand.mm	v10, v8, v9
-	vmv.v.x	v8, a0
+	vmv.v.x	v10, a0
 	lui	a0, 36864
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v10, v10, a0, v0
 	lui	a0, 16384
-	vmv1r.v	v0, v10
-	vor.vx	v8, v8, a0, v0.t
+	vmand.mm	v0, v8, v9
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000009:

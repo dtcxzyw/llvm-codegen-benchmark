@@ -19,12 +19,12 @@ func0000000000000041:
 .LCPI2_0:
 	.quad	999999999999999999
 func0000000000000068:
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
 	addi	a2, a2, 18
 	sltu	a1, a2, a1
+	lui	a2, %hi(.LCPI2_0)
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
+	ld	a2, %lo(.LCPI2_0)(a2)
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

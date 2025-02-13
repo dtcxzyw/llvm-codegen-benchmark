@@ -3,15 +3,15 @@
 .LCPI0_1:
 	.quad	-5675921253449092805
 func00000000000001a1:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, %hi(.LCPI0_1)
-	ld	a1, %lo(.LCPI0_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmadd.vx	v12, a0, v8
+	lui	a0, %hi(.LCPI0_1)
+	ld	a0, %lo(.LCPI0_1)(a0)
 	vsra.vi	v8, v10, 3
-	vmul.vx	v8, v8, a1
+	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v12, v8
 	ret
 

@@ -1,10 +1,9 @@
 func0000000000000004:
 	li	a0, -41
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v12, v10, a0
-	vmsleu.vi	v10, v12, 1
 	vmerge.vim	v8, v8, 4, v0
-	vmv1r.v	v0, v10
+	vadd.vx	v10, v10, a0
+	vmsleu.vi	v0, v10, 1
 	vmerge.vim	v8, v8, 2, v0
 	ret
 

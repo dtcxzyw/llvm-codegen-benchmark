@@ -1,8 +1,8 @@
 func0000000000000001:
 	mv	a3, a0
+	andi	a1, a1, 1
 	andi	a0, a2, 255
 	li	a2, 67
-	andi	a1, a1, 1
 	beq	a0, a2, .LBB0_2
 	li	a0, 2
 	andi	a3, a3, 1

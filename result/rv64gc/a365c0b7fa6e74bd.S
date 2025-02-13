@@ -9,8 +9,8 @@ func0000000000000018:
 	ret
 
 func000000000000000a:
-	li	a3, 383
 	andi	a0, a0, 1
+	li	a3, 383
 	blt	a3, a2, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:

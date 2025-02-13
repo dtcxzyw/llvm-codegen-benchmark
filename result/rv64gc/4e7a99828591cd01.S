@@ -12,15 +12,15 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a3, a1, 1
-	andi	a1, a0, 1
-	bnez	a3, .LBB1_2
+	andi	a3, a0, 1
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	sext.w	a0, a2
-	bnez	a1, .LBB1_3
+	bnez	a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 2
-	beqz	a1, .LBB1_4
+	beqz	a3, .LBB1_4
 .LBB1_3:
 	li	a0, 3
 .LBB1_4:

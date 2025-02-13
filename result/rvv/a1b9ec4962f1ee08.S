@@ -28,12 +28,12 @@ func0000000000000000:
 func000000000000000e:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	lui	a1, %hi(.LCPI2_1)
-	ld	a1, %lo(.LCPI2_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI2_1)
 	vxor.vv	v8, v10, v8
-	vadd.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI2_1)(a0)
+	vadd.vx	v8, v8, a0
 	ret
 
 .LCPI3_0:
@@ -43,12 +43,12 @@ func000000000000000e:
 func0000000000000007:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
-	lui	a1, %hi(.LCPI3_1)
-	ld	a1, %lo(.LCPI3_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI3_1)
 	vxor.vv	v8, v10, v8
-	vadd.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI3_1)(a0)
+	vadd.vx	v8, v8, a0
 	ret
 
 .LCPI4_0:
@@ -58,11 +58,11 @@ func0000000000000007:
 func0000000000000008:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
-	lui	a1, %hi(.LCPI4_1)
-	ld	a1, %lo(.LCPI4_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI4_1)
 	vxor.vv	v8, v10, v8
-	vadd.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI4_1)(a0)
+	vadd.vx	v8, v8, a0
 	ret
 

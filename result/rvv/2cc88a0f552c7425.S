@@ -19,14 +19,14 @@ func0000000000000384:
 	.quad	-9223371852387335071
 func0000000000000188:
 	lui	a0, 2749
-	lui	a1, %hi(.LCPI2_0)
 	addiw	a0, a0, -905
-	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a0, a0, 14
 	addi	a0, a0, 1122
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vmsgtu.vx	v0, v8, a1
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
+	vmsgtu.vx	v0, v8, a0
 	ret
 
 func000000000000018c:

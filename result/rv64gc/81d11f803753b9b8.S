@@ -19,9 +19,9 @@ func000000000000000a:
 .LCPI2_0:
 	.word	0x3d4ccccd
 func0000000000000009:
+	sext.w	a0, a0
 	lui	a1, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a1)
-	sext.w	a0, a0
 	fmul.s	fa5, fa0, fa5
 	fcvt.w.s	a1, fa5, rtz
 	sltu	a0, a0, a1
@@ -31,9 +31,9 @@ func0000000000000009:
 .LCPI3_0:
 	.word	0x3d4cccd0
 func0000000000000004:
+	sext.w	a0, a0
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
-	sext.w	a0, a0
 	fmul.s	fa5, fa0, fa5
 	fcvt.w.s	a1, fa5, rtz
 	sltu	a0, a0, a1
@@ -42,9 +42,9 @@ func0000000000000004:
 .LCPI4_0:
 	.word	0x3d4cccd0
 func000000000000000b:
+	sext.w	a0, a0
 	lui	a1, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a1)
-	sext.w	a0, a0
 	fmul.s	fa5, fa0, fa5
 	fcvt.w.s	a1, fa5, rtz
 	slt	a0, a0, a1

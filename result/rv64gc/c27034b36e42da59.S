@@ -9,17 +9,17 @@ func000000000000001a:
 	mul	a0, a0, a3
 	mv	a3, a0
 	beq	a1, a2, .LBB0_3
+	add	a0, a0, a3
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	add	a0, a0, a3
 	bgeu	a0, a1, .LBB0_4
 .LBB0_2:
 	ret
 .LBB0_3:
 	li	a3, 1
+	add	a0, a0, a3
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	add	a0, a0, a3
 	bltu	a0, a1, .LBB0_2
 .LBB0_4:
 	mv	a0, a1

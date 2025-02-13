@@ -9,9 +9,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
+	sext.w	a0, a0
 	andi	a2, a2, 63
 	li	a3, 34
-	sext.w	a0, a0
 	bne	a2, a3, .LBB1_2
 	li	a1, 1
 .LBB1_2:
@@ -30,9 +30,9 @@ func0000000000000025:
 	ret
 
 func000000000000002c:
+	sext.w	a0, a0
 	andi	a2, a2, 127
 	li	a3, 35
-	sext.w	a0, a0
 	bne	a2, a3, .LBB3_2
 	li	a1, 1
 .LBB3_2:

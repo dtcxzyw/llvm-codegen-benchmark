@@ -5,11 +5,11 @@ func0000000000000009:
 	addiw	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
-	mul	a1, a2, a1
-	mv	a2, a0
-	bltu	a1, a0, .LBB0_2
-	mv	a2, a1
+	mul	a2, a2, a1
+	mv	a1, a0
+	bltu	a2, a0, .LBB0_2
+	mv	a1, a2
 .LBB0_2:
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

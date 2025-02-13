@@ -3,14 +3,14 @@
 .LCPI0_1:
 	.quad	-1662802108035088514
 func0000000000000004:
+	sext.w	a1, a1
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
-	sext.w	a1, a1
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_1)(a2)
 	andi	a0, a0, 1
-	czero.nez	a2, a3, a0
+	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
@@ -48,10 +48,10 @@ func0000000000000002:
 .LCPI4_0:
 	.quad	7046029254386353131
 func0000000000000000:
-	lui	a2, %hi(.LCPI4_0)
-	ld	a2, %lo(.LCPI4_0)(a2)
 	andi	a0, a0, 1
 	zext.w	a1, a1
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	mul	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret

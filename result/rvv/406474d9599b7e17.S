@@ -3,9 +3,9 @@ func00000000000001c1:
 	vnsrl.wi	v12, v10, 0
 	vmv.v.i	v10, 2
 	vand.vv	v8, v8, v9
+	vsll.vv	v9, v10, v12
 	vmseq.vi	v0, v8, 0
-	vsll.vv	v8, v10, v12
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v9, 0, v0
 	ret
 
 func0000000000000001:
@@ -26,9 +26,9 @@ func00000000000001e1:
 	vnsrl.wi	v12, v10, 0
 	vmv.v.i	v10, 1
 	vand.vv	v8, v8, v9
+	vsll.vv	v9, v10, v12
 	vmseq.vi	v0, v8, 0
-	vsll.vv	v8, v10, v12
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v9, 0, v0
 	ret
 
 func00000000000001a1:
@@ -36,9 +36,9 @@ func00000000000001a1:
 	vnsrl.wi	v12, v10, 0
 	vmv.v.i	v10, -1
 	vand.vv	v8, v8, v9
+	vsll.vv	v9, v10, v12
 	vmseq.vi	v0, v8, 0
-	vsll.vv	v8, v10, v12
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v9, 0, v0
 	ret
 
 func0000000000000041:
@@ -46,8 +46,8 @@ func0000000000000041:
 	vnsrl.wi	v12, v10, 0
 	vmv.v.i	v10, 1
 	vand.vv	v8, v8, v9
+	vsll.vv	v9, v10, v12
 	vmseq.vi	v0, v8, 0
-	vsll.vv	v8, v10, v12
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v9, 0, v0
 	ret
 
