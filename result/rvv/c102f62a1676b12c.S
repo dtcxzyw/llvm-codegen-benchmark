@@ -17,8 +17,8 @@ func0000000000000002:
 func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 34
 	vmor.mm	v0, v0, v12
+	li	a0, 34
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

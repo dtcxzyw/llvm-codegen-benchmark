@@ -1,6 +1,6 @@
 func0000000000000002:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	bnez	a1, .LBB0_2
 	li	a1, 944
 	xor	a0, a0, a1
@@ -13,8 +13,8 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	bnez	a1, .LBB1_2
 	li	a1, 17
 	slt	a0, a0, a1
@@ -34,8 +34,8 @@ func0000000000000018:
 	ret
 
 func0000000000000016:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	bnez	a1, .LBB3_2
 	li	a1, 12
 	slt	a0, a0, a1

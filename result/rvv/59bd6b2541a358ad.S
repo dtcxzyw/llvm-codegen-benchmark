@@ -15,17 +15,16 @@ func0000000000000208:
 .LCPI1_0:
 	.quad	1844674407370955161
 func0000000000000104:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
 	li	a0, 10
-	vsetvli	zero, zero, e64, m2, ta, ma
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI1_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
 	vwaddu.wv	v8, v8, v11
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
+	vmsltu.vx	v0, v8, a1
 	ret
 
 func0000000000000201:
@@ -108,17 +107,16 @@ func0000000000000301:
 .LCPI8_0:
 	.quad	1844674407370955161
 func0000000000000348:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
 	li	a0, 10
-	vsetvli	zero, zero, e64, m2, ta, ma
+	lui	a1, %hi(.LCPI8_0)
+	ld	a1, %lo(.LCPI8_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI8_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
 	vwaddu.wv	v8, v8, v11
-	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	ret
 
 func0000000000000268:

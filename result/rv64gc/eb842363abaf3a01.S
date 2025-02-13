@@ -3,15 +3,15 @@
 func0000000000000003:
 	add	a1, a1, a2
 	lui	a2, 61440
+	lui	a3, %hi(.LCPI0_0)
 	slli	a1, a1, 8
 	addi	a2, a2, 15
+	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	slli	a2, a2, 8
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -20,15 +20,15 @@ func0000000000000003:
 func000000000000003b:
 	add	a1, a1, a2
 	lui	a2, 61440
+	lui	a3, %hi(.LCPI1_0)
 	slli	a1, a1, 8
 	addi	a2, a2, 15
+	ld	a3, %lo(.LCPI1_0)(a3)
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	slli	a2, a2, 8
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

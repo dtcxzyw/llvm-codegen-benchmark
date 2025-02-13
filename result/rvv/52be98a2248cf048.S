@@ -10,12 +10,12 @@ func00000000000000a4:
 .LCPI1_0:
 	.quad	0x7fefffffffffffff
 func00000000000000a5:
+	lui	a0, %hi(.LCPI1_0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v16, -2
-	lui	a0, %hi(.LCPI1_0)
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret

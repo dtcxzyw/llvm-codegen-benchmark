@@ -29,14 +29,14 @@ func0000000000000003:
 .LCPI2_0:
 	.quad	1237940039285380275
 func0000000000000001:
-	bseti	a1, zero, 63
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
-	xnor	a0, a0, a1
-	lui	a1, 244141
-	mulhu	a2, a0, a2
-	srli	a2, a2, 26
-	addiw	a1, a1, -1536
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
+	bseti	a2, zero, 63
+	xnor	a0, a0, a2
+	lui	a2, 244141
+	mulhu	a1, a0, a1
+	srli	a1, a1, 26
+	addiw	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

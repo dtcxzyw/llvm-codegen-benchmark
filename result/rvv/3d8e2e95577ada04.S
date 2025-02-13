@@ -91,11 +91,11 @@ func0000000000000000:
 func0000000000000040:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 244
-	addiw	a0, a0, 576
-	vmacc.vx	v8, a0, v12
 	lui	a0, %hi(.LCPI9_0)
 	ld	a0, %lo(.LCPI9_0)(a0)
+	lui	a1, 244
+	addiw	a1, a1, 576
+	vmacc.vx	v8, a1, v12
 	vadd.vx	v8, v8, a0
 	ret
 

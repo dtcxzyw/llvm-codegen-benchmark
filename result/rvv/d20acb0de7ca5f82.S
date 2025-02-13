@@ -9,8 +9,8 @@ func0000000000000004:
 func000000000000000c:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv.v.i	v20, 0
 	vmfge.vf	v0, v16, fa5
+	vmv.v.i	v20, 0
 	vmerge.vvm	v16, v20, v16, v0
 	vfmul.vv	v12, v16, v12
 	vfmul.vv	v8, v8, v12

@@ -24,8 +24,8 @@ func0000000000000101:
 func0000000000000024:
 	andi	a1, a1, 255
 	andi	a3, a2, 255
-	lui	a2, 7
 	li	a4, 86
+	lui	a2, 7
 	beq	a3, a4, .LBB2_2
 	addiw	a2, a2, -1941
 	li	a3, 5

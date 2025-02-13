@@ -3,10 +3,10 @@ func0000000000000008:
 	vmseq.vi	v9, v10, 1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vand.vi	v8, v8, 1
-	vmv.v.i	v10, 0
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 
 func0000000000000040:
@@ -14,10 +14,10 @@ func0000000000000040:
 	vmsgtu.vi	v9, v10, 1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vand.vi	v8, v8, 1
-	vmv.v.i	v10, 0
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 
 func0000000000000050:
@@ -25,9 +25,9 @@ func0000000000000050:
 	vmsgt.vi	v9, v10, 3
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vand.vi	v8, v8, 1
-	vmv.v.i	v10, 0
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

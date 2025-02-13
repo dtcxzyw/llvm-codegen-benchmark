@@ -5,14 +5,14 @@
 func0000000000000000:
 	srli	a3, a2, 31
 	slli	a2, a2, 33
+	lui	a4, %hi(.LCPI0_0)
+	lui	a5, %hi(.LCPI0_1)
+	ld	a4, %lo(.LCPI0_0)(a4)
+	ld	a5, %lo(.LCPI0_1)(a5)
 	or	a2, a2, a3
-	lui	a3, %hi(.LCPI0_0)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	ld	a2, %lo(.LCPI0_1)(a2)
-	mul	a1, a1, a3
-	mul	a0, a0, a2
+	mul	a1, a1, a4
+	mul	a0, a0, a5
 	add	a0, a0, a1
 	ret
 

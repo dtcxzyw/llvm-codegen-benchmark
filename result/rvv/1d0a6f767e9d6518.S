@@ -5,8 +5,8 @@ func0000000000000001:
 	vmseq.vx	v10, v8, a0
 	li	a0, 35
 	vmv.v.x	v8, a0
-	li	a0, 98
 	vmand.mm	v0, v0, v10
+	li	a0, 98
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000018:
 	sext.w	a2, a0
-	li	a0, 8
 	li	a3, 2
+	li	a0, 8
 	bgeu	a3, a2, .LBB0_2
 	srlw	a0, a0, a1
 .LBB0_2:

@@ -3,14 +3,14 @@
 func00000000000000e5:
 	sub	a2, a2, a1
 	lui	a1, 299593
-	addiw	a1, a1, 585
-	slli	a3, a1, 33
-	add	a1, a1, a3
 	lui	a3, %hi(.LCPI0_0)
+	addiw	a1, a1, 585
+	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a4, a1, 33
+	add	a1, a1, a4
 	srai	a2, a2, 3
 	mul	a1, a2, a1
-	ld	a2, %lo(.LCPI0_0)(a3)
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

@@ -3,8 +3,8 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
-	mv	a1, a2
 	andi	a0, a0, -4
+	mv	a1, a2
 	ret
 
 func000000000000000d:

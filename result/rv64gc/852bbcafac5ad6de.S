@@ -2,11 +2,11 @@
 	.quad	6148914691236517206
 func0000000000000042:
 	lui	a2, 699051
-	addiw	a2, a2, -1365
-	slli	a3, a2, 32
-	add	a2, a2, a3
 	lui	a3, %hi(.LCPI0_0)
+	addiw	a2, a2, -1365
 	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a4, a2, 32
+	add	a2, a2, a4
 	mul	a1, a1, a2
 	sltu	a1, a1, a3
 	seqz	a0, a0
@@ -20,13 +20,13 @@ func0000000000000042:
 func0000000000000058:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	lui	a3, %hi(.LCPI1_1)
+	ld	a3, %lo(.LCPI1_1)(a3)
 	mul	a1, a1, a2
 	slli	a2, a1, 61
 	srli	a1, a1, 3
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI1_1)
-	ld	a2, %lo(.LCPI1_1)(a2)
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

@@ -14,9 +14,9 @@ func0000000000001c68:
 	lui	a0, 16
 	lui	a1, 1048560
 	addiw	a0, a0, -16
-	addiw	a1, a1, 15
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
+	addiw	a1, a1, 15
 	vadd.vx	v10, v10, a1, v0.t
 	vadd.vv	v8, v10, v8
 	vmsgtu.vx	v0, v8, a0

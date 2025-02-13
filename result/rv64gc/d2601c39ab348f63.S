@@ -1,23 +1,23 @@
 func0000000000000088:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	feq.s	a0, fa2, fa0
-	feq.s	a1, fa1, fa0
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa2, fa5
+	feq.s	a1, fa1, fa5
 	and	a0, a0, a1
 	bnez	a0, .LBB0_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000044:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	flt.s	a0, fa0, fa2
-	flt.s	a1, fa0, fa1
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa2
+	flt.s	a1, fa5, fa1
 	and	a0, a0, a1
 	bnez	a0, .LBB1_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB1_2:
+	fmv.s	fa0, fa5
 	ret
 
 .LCPI2_0:

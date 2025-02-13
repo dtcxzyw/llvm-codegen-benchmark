@@ -18,12 +18,12 @@ func000000000000000c:
 	.quad	1537228672809129301
 func0000000000000008:
 	lui	a0, %hi(.LCPI1_0)
+	lui	a1, %hi(.LCPI1_1)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	lui	a0, %hi(.LCPI1_1)
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vand.vx	v10, v10, a0
+	vand.vx	v10, v10, a1
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	vsll.vi	v8, v8, 2

@@ -128,10 +128,10 @@ func00000000000000aa:
 .LCPI15_0:
 	.word	0x3e4ccccd
 func0000000000000012:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v12, v10, 3
 	lui	a0, %hi(.LCPI15_0)
 	flw	fa5, %lo(.LCPI15_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vi	v12, v10, 3
 	vmflt.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret

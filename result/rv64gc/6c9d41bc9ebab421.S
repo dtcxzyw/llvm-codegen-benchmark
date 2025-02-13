@@ -5,9 +5,9 @@ func0000000000000046:
 	srai	a2, a2, 48
 	srai	a0, a0, 63
 	neg	a2, a2
+	li	a3, 163
 	and	a0, a0, a2
-	li	a2, 163
-	blt	a1, a2, .LBB0_2
+	blt	a1, a3, .LBB0_2
 	li	a1, 163
 .LBB0_2:
 	slt	a0, a0, a1

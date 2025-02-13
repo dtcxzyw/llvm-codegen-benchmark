@@ -16,8 +16,8 @@ func0000000000000108:
 func00000000000000ca:
 	li	a0, 27
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 13
 	vmslt.vx	v0, v8, a0
+	vmv.v.i	v10, 13
 	vmerge.vim	v10, v10, 11, v0
 	vmsgt.vi	v0, v8, 9
 	vmv.v.i	v8, 9

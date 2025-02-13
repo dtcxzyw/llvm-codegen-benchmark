@@ -33,11 +33,11 @@ func0000000000000004:
 func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.xu.v	v8, v8
-	lui	a0, 194560
-	fmv.w.x	fa5, a0
 	lui	a0, %hi(.LCPI3_0)
-	vfmul.vf	v8, v8, fa5
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 194560
+	fmv.w.x	fa4, a0
+	vfmul.vf	v8, v8, fa4
 	vmfle.vf	v10, v8, fa5
 	vmnot.m	v0, v10
 	ret

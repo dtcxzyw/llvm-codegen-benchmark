@@ -2,14 +2,14 @@ func00000000000000f4:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	lui	a0, 8
-	li	a1, 1131
 	vwsll.vi	v12, v11, 8
+	addi	a1, a0, 1132
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v12, v8
-	vmv.v.x	v10, a0
-	addi	a0, a0, 1132
-	vmsltu.vx	v0, v8, a0
-	vmerge.vxm	v8, v10, a1, v0
+	vmsltu.vx	v0, v8, a1
+	li	a1, 1131
+	vmv.v.x	v8, a0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func00000000000000f8:

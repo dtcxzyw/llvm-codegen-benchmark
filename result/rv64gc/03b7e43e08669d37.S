@@ -27,8 +27,8 @@ func0000000000000004:
 
 func0000000000000064:
 	mv	a2, a0
-	li	a0, 5
 	li	a3, 4
+	li	a0, 5
 	bgeu	a2, a3, .LBB3_2
 	sub	a0, a0, a1
 .LBB3_2:

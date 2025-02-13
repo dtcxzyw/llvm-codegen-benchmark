@@ -1,8 +1,8 @@
 func0000000000000314:
 	sext.w	a2, a0
+	lui	a3, 4096
 	srliw	a1, a0, 16
-	lui	a0, 4096
-	blt	a2, a0, .LBB0_2
+	blt	a2, a3, .LBB0_2
 	li	a0, 8
 	beqz	a1, .LBB0_3
 	j	.LBB0_4

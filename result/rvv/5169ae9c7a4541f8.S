@@ -13,11 +13,11 @@ func0000000000000034:
 	vsrl.vi	v10, v10, 23
 	li	a0, 255
 	vand.vx	v10, v10, a0
-	li	a0, -127
-	vadd.vx	v12, v10, a0
 	li	a0, 127
 	vmsltu.vx	v0, v10, a0
-	vmerge.vvm	v8, v12, v8, v0
+	li	a0, -127
+	vadd.vx	v10, v10, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000061:
@@ -25,8 +25,8 @@ func0000000000000061:
 	vsrl.vi	v10, v10, 3
 	li	a0, 511
 	vand.vx	v10, v10, a0
-	vadd.vi	v12, v10, 1
 	vmseq.vi	v0, v10, 0
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vi	v10, v10, 1
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

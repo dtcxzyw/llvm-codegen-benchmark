@@ -28,11 +28,11 @@ func0000000000000118:
 .LCPI3_0:
 	.quad	1844674407370955161
 func0000000000000e18:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
-	lui	a0, %hi(.LCPI3_0)
 	vmsgtu.vi	v10, v10, 5
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

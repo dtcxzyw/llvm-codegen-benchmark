@@ -26,10 +26,10 @@ func0000000000000084:
 	ret
 
 func0000000000000108:
-	slli	a1, a0, 48
-	lui	a0, 15
-	srli	a1, a1, 48
+	slli	a0, a0, 48
+	srli	a1, a0, 48
 	li	a2, 10
+	lui	a0, 15
 	bgeu	a2, a1, .LBB2_3
 	li	a2, 12
 	bltu	a2, a1, .LBB2_4

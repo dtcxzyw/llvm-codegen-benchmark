@@ -3,12 +3,12 @@
 func0000000000000288:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
-	add	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
+	lui	a4, %hi(.LCPI0_0)
+	ld	a4, %lo(.LCPI0_0)(a4)
 	sub	a2, a2, a3
+	add	a0, a0, a1
 	add	a0, a0, a2
-	ld	a1, %lo(.LCPI0_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a4, a0
 	ret
 
 func0000000000000281:

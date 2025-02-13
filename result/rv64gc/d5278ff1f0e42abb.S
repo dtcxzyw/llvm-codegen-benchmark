@@ -7,11 +7,11 @@ func0000000000000004:
 	ret
 
 func0000000000000010:
-	mv	a2, a0
-	li	a0, 2
-	bltu	a1, a0, .LBB1_2
-	slli	a0, a2, 1
+	li	a2, 2
+	bltu	a1, a2, .LBB1_2
+	slli	a2, a0, 1
 .LBB1_2:
+	mv	a0, a2
 	ret
 
 func0000000000000007:
@@ -84,11 +84,11 @@ func0000000000000023:
 	ret
 
 func0000000000000053:
-	mv	a2, a0
-	li	a0, 16
-	bltu	a1, a0, .LBB10_2
-	slli	a0, a2, 2
+	li	a2, 16
+	bltu	a1, a2, .LBB10_2
+	slli	a2, a0, 2
 .LBB10_2:
+	mv	a0, a2
 	ret
 
 func0000000000000063:

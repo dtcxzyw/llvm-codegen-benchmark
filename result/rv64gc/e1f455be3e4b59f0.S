@@ -39,15 +39,15 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	mv	a2, a0
-	li	a0, 1
-	slli	a3, a0, 32
+	li	a2, 1
+	slli	a3, a2, 32
 	addi	a3, a3, -2
-	beq	a2, a3, .LBB4_2
+	beq	a0, a3, .LBB4_2
 	addi	a1, a1, 3
-	slli	a0, a1, 32
-	srli	a0, a0, 32
+	slli	a1, a1, 32
+	srli	a2, a1, 32
 .LBB4_2:
+	mv	a0, a2
 	ret
 
 func000000000000006a:

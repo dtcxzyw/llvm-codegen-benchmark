@@ -10,8 +10,8 @@ func0000000000000001:
 	vmv1r.v	v0, v11
 	vmerge.vxm	v10, v12, a0, v0
 	li	a0, 80
-	vmv.v.x	v12, a0
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vmv.v.x	v8, a0
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

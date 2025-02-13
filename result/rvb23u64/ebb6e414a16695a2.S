@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	3816567739388183093
 func0000000000000aa1:
-	srai	a2, a2, 3
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	srai	a2, a2, 3
 	mul	a2, a2, a3
 	lui	a3, 36158
 	addiw	a3, a3, -848

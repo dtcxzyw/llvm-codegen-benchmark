@@ -1,9 +1,9 @@
 func000000000000000c:
-	andi	a3, a1, 1
-	andi	a2, a2, 1
-	bnez	a2, .LBB0_3
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB0_3
 	li	a1, 16
-	beqz	a3, .LBB0_4
+	beqz	a2, .LBB0_4
 .LBB0_2:
 	li	a2, 56
 	add	a1, a1, a2
@@ -11,7 +11,7 @@ func000000000000000c:
 	ret
 .LBB0_3:
 	li	a1, 40
-	bnez	a3, .LBB0_2
+	bnez	a2, .LBB0_2
 .LBB0_4:
 	li	a2, 20
 	add	a1, a1, a2

@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.word	0x3c23d70a
 func0000000000000000:
-	andi	a0, a0, 1
 	andi	a1, a1, 1
+	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
 	lui	a1, 260096
 	fmv.w.x	fa0, a1

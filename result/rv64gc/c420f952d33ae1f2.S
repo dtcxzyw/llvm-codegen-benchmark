@@ -14,20 +14,19 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	mv	a2, a0
-	addi	a0, a1, -12
-	bgeu	a0, a2, .LBB1_3
-	lui	a1, 4096
-	addiw	a1, a1, -1
-	bgeu	a0, a1, .LBB1_4
+	addi	a1, a1, -12
+	bgeu	a1, a0, .LBB1_3
+	lui	a0, 4096
+	addiw	a0, a0, -1
+	bgeu	a1, a0, .LBB1_4
 .LBB1_2:
+	mv	a0, a1
 	ret
 .LBB1_3:
-	mv	a0, a2
-	lui	a1, 4096
-	addiw	a1, a1, -1
-	bltu	a2, a1, .LBB1_2
+	mv	a1, a0
+	lui	a0, 4096
+	addiw	a0, a0, -1
+	bltu	a1, a0, .LBB1_2
 .LBB1_4:
-	mv	a0, a1
 	ret
 

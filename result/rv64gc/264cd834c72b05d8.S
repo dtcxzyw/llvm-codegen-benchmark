@@ -20,11 +20,11 @@ func0000000000000408:
 	slli	a0, a0, 56
 	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	srai	a0, a0, 56
 	add	a0, a0, a1
 	addi	a0, a0, -48
-	ld	a1, %lo(.LCPI1_0)(a2)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000001:
@@ -55,10 +55,10 @@ func0000000000000008:
 	slli	a0, a0, 56
 	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	srai	a0, a0, 56
 	add	a0, a0, a1
 	addi	a0, a0, -48
-	ld	a1, %lo(.LCPI4_0)(a2)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 

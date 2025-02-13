@@ -3,8 +3,8 @@ func000000000000000a:
 	vadd.vv	v10, v10, v12
 	lui	a0, 524288
 	addiw	a1, a0, -2
-	addi	a0, a0, -1
 	vmsgt.vx	v0, v10, a1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

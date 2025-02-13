@@ -93,9 +93,9 @@ func00000000000000cc:
 	.quad	0x3ff0000000000000
 func00000000000000ac:
 	lui	a1, %hi(.LCPI10_0)
-	lui	a2, 2
 	fld	fa5, %lo(.LCPI10_0)(a1)
-	addiw	a1, a2, 1807
+	lui	a1, 2
+	addiw	a1, a1, 1807
 	xor	a0, a0, a1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1

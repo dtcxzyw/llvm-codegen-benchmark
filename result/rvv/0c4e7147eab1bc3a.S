@@ -7,13 +7,11 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmv.v.i	v11, -1
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v8, -1
 	vsetvli	zero, zero, e8, mf2, ta, mu
-	vnot.v	v11, v10, v0.t
-	vmv1r.v	v8, v11
+	vmv.v.i	v8, -1
+	vnot.v	v8, v10, v0.t
 	ret
 
 func0000000000000006:
@@ -27,12 +25,10 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmv.v.i	v11, -1
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v8, 7
 	vsetvli	zero, zero, e8, mf2, ta, mu
-	vnot.v	v11, v10, v0.t
-	vmv1r.v	v8, v11
+	vmv.v.i	v8, -1
+	vnot.v	v8, v10, v0.t
 	ret
 

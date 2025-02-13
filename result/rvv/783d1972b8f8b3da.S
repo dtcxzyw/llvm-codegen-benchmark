@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	2361183241434822607
 func0000000000000000:
-	lui	a0, 804435
-	addiw	a0, a0, 1536
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, 804435
+	addiw	a1, a1, 1536
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a1, v10
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -19,12 +19,12 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	4835703278458516699
 func0000000000000020:
-	lui	a0, 804435
-	addiw	a0, a0, 1536
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, 804435
+	addiw	a1, a1, 1536
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a1, v10
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -38,13 +38,13 @@ func0000000000000020:
 	.quad	8130577079664715991
 func0000000000000068:
 	lui	a0, 439453
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a0, a0, 1
 	addi	a0, a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
-	vmulh.vx	v10, v8, a0
+	vmulh.vx	v10, v8, a1
 	li	a0, 63
 	vsub.vv	v8, v10, v8
 	vsrl.vx	v10, v8, a0
@@ -57,12 +57,12 @@ func0000000000000068:
 .LCPI3_0:
 	.quad	-4835703278458516699
 func0000000000000028:
-	lui	a0, 14648
-	addiw	a0, a0, 1792
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	lui	a1, 14648
+	addiw	a1, a1, 1792
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a1, v10
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -76,13 +76,13 @@ func0000000000000028:
 	.quad	3667970486771497111
 func0000000000000021:
 	lui	a0, 1009952
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
 	addiw	a0, a0, 779
 	slli	a0, a0, 14
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
-	vmulh.vx	v8, v8, a0
+	vmulh.vx	v8, v8, a1
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
 	li	a0, 34
@@ -123,12 +123,12 @@ func000000000000006c:
 .LCPI7_0:
 	.quad	3667970486771497111
 func0000000000000029:
-	lui	a0, 244
-	addiw	a0, a0, 576
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	lui	a0, %hi(.LCPI7_0)
 	ld	a0, %lo(.LCPI7_0)(a0)
+	lui	a1, 244
+	addiw	a1, a1, 576
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a1, v10
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0

@@ -8,12 +8,11 @@ func000000000000000c:
 
 func0000000000000001:
 	lui	a0, 1044480
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vx	v12, v12, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func000000000000002c:
@@ -25,24 +24,22 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	lui	a0, 786432
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vx	v12, v12, a0
 	li	a0, 125
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a0, 786432
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000028:
-	li	a0, 48
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vx	v12, v12, a0
 	li	a0, -97
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsgtu.vx	v0, v10, a0
+	li	a0, 48
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

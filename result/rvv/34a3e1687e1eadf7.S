@@ -138,8 +138,8 @@ func000000000000002c:
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v12, v12, v12
 	vmseq.vi	v0, v10, 0
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vv	v10, v12, v12
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

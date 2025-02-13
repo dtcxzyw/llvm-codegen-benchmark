@@ -116,12 +116,12 @@ func0000000000000087:
 	.word	0x7f7fffff
 func00000000000000a4:
 	lui	a1, %hi(.LCPI12_0)
-	fmv.w.x	fa5, zero
-	flt.s	a2, fa5, fa0
 	flw	fa5, %lo(.LCPI12_0)(a1)
-	fle.s	a1, fa1, fa5
-	and	a0, a0, a2
+	fmv.w.x	fa4, zero
+	flt.s	a1, fa4, fa0
+	fle.s	a2, fa1, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000072:

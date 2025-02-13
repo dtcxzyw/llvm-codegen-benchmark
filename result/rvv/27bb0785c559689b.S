@@ -1,7 +1,7 @@
 func0000000000000005:
+	li	a0, 255
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vwaddu.wv	v8, v8, v9
-	li	a0, 255
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -9,9 +9,9 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
+	li	a0, 63
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vwaddu.wv	v8, v8, v9
-	li	a0, 63
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -19,9 +19,9 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
+	li	a0, 255
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vwaddu.wv	v8, v8, v9
-	li	a0, 255
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma

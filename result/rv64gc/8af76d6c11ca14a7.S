@@ -1,8 +1,8 @@
 func0000000000000000:
 	li	a1, -1
 	srli	a1, a1, 32
-	sll	a2, a1, a0
 	addi	a3, a0, -64
+	sll	a2, a1, a0
 	bltz	a3, .LBB0_2
 	mv	a1, a2
 	srai	a0, a3, 63
@@ -19,8 +19,8 @@ func0000000000000000:
 
 func0000000000000003:
 	li	a1, 8
-	sll	a2, a1, a0
 	addi	a3, a0, -64
+	sll	a2, a1, a0
 	bltz	a3, .LBB1_2
 	mv	a1, a2
 	srai	a0, a3, 63
@@ -36,8 +36,8 @@ func0000000000000003:
 
 func0000000000000001:
 	li	a1, -1
-	sll	a2, a1, a0
 	addi	a3, a0, -64
+	sll	a2, a1, a0
 	bltz	a3, .LBB2_2
 	mv	a1, a2
 	srai	a0, a3, 63

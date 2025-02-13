@@ -27,10 +27,10 @@ func0000000000000224:
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI2_0)
 	vmflt.vv	v0, v16, v24
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 
@@ -63,10 +63,10 @@ func0000000000000444:
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI5_0)
 	vmflt.vv	v0, v24, v16
+	fld	fa5, %lo(.LCPI5_0)(a0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
-	fld	fa5, %lo(.LCPI5_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 

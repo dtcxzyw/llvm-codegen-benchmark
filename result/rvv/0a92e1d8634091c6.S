@@ -4,12 +4,10 @@ func0000000000000072:
 	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfne.vv	v12, v8, v16
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v14, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v8, v14, -1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, -1, v0
 	ret
 

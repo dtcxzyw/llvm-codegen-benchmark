@@ -13,11 +13,11 @@ func00000000000000ac:
 	.word	0xb8d1b717
 func00000000000000ca:
 	fsub.s	fa5, fa0, fa1
+	lui	a1, %hi(.LCPI1_0)
+	flw	fa4, %lo(.LCPI1_0)(a1)
 	lui	a1, 260096
-	lui	a2, %hi(.LCPI1_0)
-	fmv.w.x	fa4, a1
-	fle.s	a1, fa5, fa4
-	flw	fa4, %lo(.LCPI1_0)(a2)
+	fmv.w.x	fa3, a1
+	fle.s	a1, fa5, fa3
 	fle.s	a2, fa4, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2

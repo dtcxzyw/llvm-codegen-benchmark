@@ -1,7 +1,7 @@
 func0000000000000004:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a3, 26
+	andi	a1, a1, 1
 	bgeu	a2, a3, .LBB0_3
 	sext.w	a0, a0
 	beqz	a1, .LBB0_4
@@ -18,9 +18,9 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a3, 26
+	andi	a1, a1, 1
 	bgeu	a2, a3, .LBB1_3
 	sext.w	a0, a0
 	beqz	a1, .LBB1_4

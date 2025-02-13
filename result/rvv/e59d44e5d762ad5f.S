@@ -28,8 +28,8 @@ func0000000000000003:
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v24, v16, fa5
-	fli.d	fa5, -1.0
 	vmnot.m	v0, v24
+	fli.d	fa5, -1.0
 	vfadd.vf	v8, v8, fa5, v0.t
 	ret
 

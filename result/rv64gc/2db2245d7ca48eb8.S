@@ -38,8 +38,8 @@ func0000000000000010:
 func0000000000000063:
 	andi	a2, a1, 255
 	li	a1, 1
-	slli	a1, a1, 32
 	li	a3, 71
+	slli	a1, a1, 32
 	bltu	a3, a2, .LBB4_2
 	addi	a1, a1, -59
 	add	a0, a0, a1
@@ -52,8 +52,8 @@ func0000000000000063:
 func0000000000000053:
 	andi	a2, a1, 255
 	li	a1, 1
-	slli	a1, a1, 32
 	li	a3, 46
+	slli	a1, a1, 32
 	bltu	a2, a3, .LBB5_2
 	addi	a1, a1, -46
 	add	a0, a0, a1

@@ -3,14 +3,14 @@
 func0000000000000000:
 	andi	a2, a2, 1
 	li	a3, 1
-	or	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
+	lui	a4, %hi(.LCPI0_0)
 	addi	a2, a2, -1
 	slli	a3, a3, 56
+	ld	a4, %lo(.LCPI0_0)(a4)
 	and	a2, a2, a3
-	or	a0, a0, a2
-	ld	a1, %lo(.LCPI0_0)(a1)
 	or	a0, a0, a1
+	or	a0, a0, a2
+	or	a0, a0, a4
 	ret
 
 func0000000000000006:

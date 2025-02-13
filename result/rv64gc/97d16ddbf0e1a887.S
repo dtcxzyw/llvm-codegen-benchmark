@@ -2,8 +2,8 @@ func000000000000042b:
 	sext.w	a2, a0
 	sext.w	a5, a1
 	lui	a3, 16
-	addi	a3, a3, -256
 	li	a4, 256
+	addi	a3, a3, -256
 	beq	a5, a4, .LBB0_3
 	sext.w	a1, a1
 	beq	a2, a4, .LBB0_4
@@ -25,8 +25,8 @@ func000000000000042a:
 	sext.w	a2, a0
 	sext.w	a5, a1
 	lui	a3, 16
-	addi	a3, a3, -256
 	li	a4, 256
+	addi	a3, a3, -256
 	beq	a5, a4, .LBB1_3
 	sext.w	a1, a1
 	beq	a2, a4, .LBB1_4
@@ -46,8 +46,8 @@ func0000000000000426:
 	sext.w	a2, a0
 	sext.w	a5, a1
 	lui	a3, 16
-	addi	a3, a3, -256
 	li	a4, 256
+	addi	a3, a3, -256
 	beq	a5, a4, .LBB2_3
 	sext.w	a1, a1
 	beq	a2, a4, .LBB2_4
@@ -67,8 +67,8 @@ func0000000000000425:
 	sext.w	a2, a0
 	sext.w	a5, a1
 	lui	a3, 16
-	addi	a3, a3, -256
 	li	a4, 256
+	addi	a3, a3, -256
 	beq	a5, a4, .LBB3_3
 	sext.w	a1, a1
 	beq	a2, a4, .LBB3_4
@@ -90,8 +90,8 @@ func0000000000000421:
 	sext.w	a2, a0
 	sext.w	a5, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
 	li	a4, -1
+	addi	a3, a3, -1
 	beq	a5, a4, .LBB4_3
 	sext.w	a1, a1
 	beq	a2, a4, .LBB4_4
@@ -110,12 +110,12 @@ func0000000000000421:
 	ret
 
 func000000000000042c:
-	sext.w	a2, a0
 	sext.w	a4, a1
-	li	a3, 4
-	beq	a4, a3, .LBB5_3
+	li	a2, 4
+	sext.w	a3, a0
+	beq	a4, a2, .LBB5_3
 	sext.w	a1, a1
-	beq	a2, a3, .LBB5_4
+	beq	a3, a2, .LBB5_4
 .LBB5_2:
 	sext.w	a0, a0
 	xor	a0, a0, a1
@@ -124,7 +124,7 @@ func000000000000042c:
 .LBB5_3:
 	li	a1, 3
 	sext.w	a1, a1
-	bne	a2, a3, .LBB5_2
+	bne	a3, a2, .LBB5_2
 .LBB5_4:
 	li	a0, 3
 	sext.w	a0, a0

@@ -19,8 +19,8 @@ func0000000000000030:
 	li	a0, 10
 	vsrl.vi	v10, v10, 3
 	vnmsub.vx	v10, a0, v8
-	vmv.v.i	v8, 0
 	vmsgtu.vi	v0, v10, 4
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -34,9 +34,9 @@ func0000000000000028:
 	vsrl.vi	v10, v10, 14
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 2
-	vmv.v.i	v8, 0
 	addi	a0, a0, 1808
 	vmsltu.vx	v0, v10, a0
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

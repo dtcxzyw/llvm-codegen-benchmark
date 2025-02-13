@@ -30,8 +30,8 @@ func000000000000000c:
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
 	lui	a1, %hi(.LCPI3_1)
-	fmul.s	fa5, fa0, fa5
 	flw	fa4, %lo(.LCPI3_1)(a1)
+	fmul.s	fa5, fa0, fa5
 	fle.s	a1, fa4, fa5
 	andn	a0, a1, a0
 	ret

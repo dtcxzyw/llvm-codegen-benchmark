@@ -4,11 +4,11 @@ func0000000000000000:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vv	v8, v8, v16
 	fli.d	fa5, 0.5
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa4, %lo(.LCPI0_0)(a0)
 	vfmul.vf	v16, v8, fa5
 	fli.d	fa5, 1.0
-	lui	a0, %hi(.LCPI0_0)
 	vfmv.v.f	v8, fa5
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	vfmacc.vf	v8, fa5, v16
+	vfmacc.vf	v8, fa4, v16
 	ret
 

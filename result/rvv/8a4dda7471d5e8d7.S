@@ -27,12 +27,12 @@ func000000000000318c:
 	.quad	-8753079529849560484
 func0000000000003181:
 	lui	a0, %hi(.LCPI2_0)
+	lui	a1, %hi(.LCPI2_1)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	ld	a1, %lo(.LCPI2_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v9, v12, a0
-	lui	a0, %hi(.LCPI2_1)
-	ld	a0, %lo(.LCPI2_1)(a0)
-	vmsne.vx	v12, v10, a0
+	vmsne.vx	v12, v10, a1
 	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v8, v8, 0

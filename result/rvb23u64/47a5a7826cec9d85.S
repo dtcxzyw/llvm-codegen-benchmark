@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	-8663945395140668459
 func0000000000000000:
-	zext.w	a0, a0
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	zext.w	a0, a0
 	mul	a0, a0, a1
 	srli	a0, a0, 31
 	ret
@@ -23,9 +23,9 @@ func0000000000000006:
 .LCPI3_0:
 	.quad	-4070662928558531325
 func0000000000000008:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	sext.w	a0, a0
 	mul	a0, a0, a1
 	srli	a0, a0, 4
 	ret

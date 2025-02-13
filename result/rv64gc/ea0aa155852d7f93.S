@@ -1,15 +1,15 @@
 func0000000000000001:
-	mv	a3, a0
-	sext.w	a2, a2
-	beqz	a2, .LBB0_2
+	sext.w	a3, a2
+	mv	a2, a0
+	beqz	a3, .LBB0_2
 	li	a0, 124
-	or	a1, a1, a3
+	or	a1, a1, a2
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 94
-	or	a1, a1, a3
+	or	a1, a1, a2
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_4
 .LBB0_3:

@@ -37,9 +37,9 @@ func0000000000000004:
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	sext.w	a1, a1
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	sext.w	a1, a1
 	mul	a0, a1, a0
 	ret
 

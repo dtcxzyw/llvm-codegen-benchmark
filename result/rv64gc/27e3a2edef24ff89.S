@@ -1,7 +1,7 @@
 func0000000000000061:
 	andi	a0, a0, 255
-	snez	a0, a0
 	andi	a1, a1, 255
+	snez	a0, a0
 	beqz	a1, .LBB0_2
 	li	a1, 3
 	slli	a0, a0, 2

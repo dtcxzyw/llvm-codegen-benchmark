@@ -1,6 +1,6 @@
 func0000000000000026:
-	slli	a1, a1, 56
 	sext.w	a2, a2
+	slli	a1, a1, 56
 	beqz	a2, .LBB0_2
 	li	a2, 8
 	bgez	a1, .LBB0_3

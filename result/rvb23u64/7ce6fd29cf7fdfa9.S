@@ -3,14 +3,14 @@
 .LCPI0_1:
 	.quad	46116860184273880
 func0000000000000041:
-	zext.h	a0, a0
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a2, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_1)(a2)
+	zext.h	a0, a0
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI0_1)
 	rori	a0, a0, 4
-	ld	a1, %lo(.LCPI0_1)(a1)
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	addi	a0, a0, 28
 	ret
 

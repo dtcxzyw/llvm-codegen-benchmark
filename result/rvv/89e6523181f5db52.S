@@ -1,10 +1,10 @@
 func0000000000000083:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v12, v12, 3
 	lui	a0, 131072
 	addi	a0, a0, -2
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
-	vmerge.vim	v10, v12, -16, v0
+	vsll.vi	v10, v12, 3
+	vmerge.vim	v10, v10, -16, v0
 	vor.vv	v8, v10, v8
 	ret
 

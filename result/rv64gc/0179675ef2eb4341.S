@@ -1,14 +1,14 @@
 func0000000000000021:
-	andi	a3, a1, 255
-	sext.w	a2, a2
-	li	a1, 244
-	beq	a2, a1, .LBB0_2
+	sext.w	a3, a2
+	li	a4, 244
+	andi	a2, a1, 255
+	beq	a3, a4, .LBB0_2
 	li	a1, 512
-	bnez	a3, .LBB0_3
+	bnez	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a1, 516
-	beqz	a3, .LBB0_4
+	beqz	a2, .LBB0_4
 .LBB0_3:
 	mv	a1, a0
 .LBB0_4:

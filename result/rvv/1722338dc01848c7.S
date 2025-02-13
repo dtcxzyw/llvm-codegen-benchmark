@@ -23,9 +23,9 @@ func0000000000000002:
 func000000000000000e:
 	fli.d	fa5, 3.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv.v.i	v16, 0
 	vfdiv.vf	v8, v8, fa5
 	vmfeq.vv	v0, v8, v8
+	vmv.v.i	v16, 0
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 

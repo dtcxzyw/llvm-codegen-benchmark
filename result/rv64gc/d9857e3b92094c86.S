@@ -24,12 +24,12 @@ func0000000000000002:
 .LCPI2_0:
 	.word	0x40c90fdb
 func0000000000000003:
-	lui	a0, 271360
-	fmv.w.x	fa5, a0
 	lui	a0, %hi(.LCPI2_0)
-	fmul.s	fa5, fa0, fa5
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	fdiv.s	fa5, fa5, fa4
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 271360
+	fmv.w.x	fa4, a0
+	fmul.s	fa4, fa0, fa4
+	fdiv.s	fa5, fa4, fa5
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -43,8 +43,8 @@ func0000000000000005:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
-	fmul.s	fa5, fa0, fa5
 	flw	fa4, %lo(.LCPI3_1)(a0)
+	fmul.s	fa5, fa0, fa5
 	lui	a0, 286124
 	fdiv.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0

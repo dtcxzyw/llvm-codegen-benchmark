@@ -5,9 +5,9 @@ func00000000000006a1:
 	vadd.vv	v12, v12, v12
 	vsra.vi	v10, v10, 3
 	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, 36158
 	vadd.vv	v8, v12, v8
-	ld	a0, %lo(.LCPI0_0)(a0)
 	addiw	a1, a1, -848
 	vmadd.vx	v10, a0, v8
 	slli	a0, a1, 28
@@ -18,12 +18,12 @@ func00000000000006a1:
 .LCPI1_0:
 	.quad	5675921253449092805
 func00000000000006a4:
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 2
-	vsra.vi	v10, v10, 3
-	lui	a0, %hi(.LCPI1_0)
 	vadd.vv	v8, v12, v8
-	ld	a0, %lo(.LCPI1_0)(a0)
+	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v8
 	vmsleu.vi	v0, v10, 1
 	ret

@@ -13,9 +13,9 @@ func0000000000000295:
 func0000000000000043:
 	sext.w	a2, a0
 	sext.w	a1, a1
+	li	a3, -1
 	seqz	a0, a1
-	li	a1, -1
-	beq	a2, a1, .LBB1_2
+	beq	a2, a3, .LBB1_2
 	li	a1, 16
 	or	a0, a0, a1
 	addi	a0, a0, 1
@@ -29,9 +29,9 @@ func0000000000000043:
 func0000000000000042:
 	sext.w	a2, a0
 	sext.w	a1, a1
-	addi	a1, a1, -8
-	seqz	a0, a1
+	addi	a0, a1, -8
 	li	a1, 8
+	seqz	a0, a0
 	bne	a2, a1, .LBB2_2
 	li	a1, 2
 .LBB2_2:

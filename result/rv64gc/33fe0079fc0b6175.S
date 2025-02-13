@@ -6,12 +6,12 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	srli	a0, a0, 31
-	beqz	a0, .LBB1_2
-	lui	a1, 524288
-	addiw	a1, a1, -1
-.LBB1_2:
+	srli	a2, a0, 31
 	mv	a0, a1
+	beqz	a2, .LBB1_2
+	lui	a0, 524288
+	addiw	a0, a0, -1
+.LBB1_2:
 	ret
 
 func0000000000000041:
@@ -42,11 +42,11 @@ func0000000000000061:
 	ret
 
 func0000000000000044:
-	srli	a0, a0, 32
-	bnez	a0, .LBB6_2
-	li	a1, 1
-.LBB6_2:
+	srli	a2, a0, 32
 	mv	a0, a1
+	bnez	a2, .LBB6_2
+	li	a0, 1
+.LBB6_2:
 	ret
 
 func0000000000000004:

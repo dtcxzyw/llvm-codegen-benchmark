@@ -13,13 +13,11 @@ func000000000000000c:
 	vsra.vi	v12, v12, 5
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
+	vnmsub.vx	v12, a0, v10
+	vmsne.vi	v9, v12, 0
+	vmor.mm	v0, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vnmsub.vx	v12, a0, v10
-	vmsne.vi	v10, v12, 0
-	vmor.mm	v0, v0, v10
-	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

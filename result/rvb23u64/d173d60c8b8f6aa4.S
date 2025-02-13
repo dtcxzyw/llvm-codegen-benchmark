@@ -54,11 +54,11 @@ func000000000000000a:
 	lui	a3, %hi(.LCPI3_0)
 	mulhu	a2, a1, a2
 	srli	a2, a2, 3
+	ld	a3, %lo(.LCPI3_0)(a3)
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
 	sub	a1, a1, a2
-	ld	a2, %lo(.LCPI3_0)(a3)
-	mul	a1, a1, a2
+	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

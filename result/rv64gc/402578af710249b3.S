@@ -37,8 +37,8 @@ func0000000000000010:
 
 func0000000000000051:
 	sext.w	a2, a1
-	lui	a1, 2048
 	li	a3, 2
+	lui	a1, 2048
 	bltu	a2, a3, .LBB4_2
 	lui	a1, 8
 .LBB4_2:

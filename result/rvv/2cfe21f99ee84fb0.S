@@ -1,8 +1,8 @@
 func000000000000000a:
 	fmv.w.x	fa5, zero
-	lui	a0, 267264
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfle.vf	v0, v8, fa5
+	lui	a0, 267264
 	vmerge.vxm	v8, v8, a0, v0
 	vfcvt.rtz.x.f.v	v8, v8
 	ret

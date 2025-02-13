@@ -17,8 +17,8 @@ func0000000000000074:
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vand.vx	v12, v12, a0
-	li	a0, 254
 	vmseq.vi	v0, v12, 0
+	li	a0, 254
 	vrsub.vx	v8, v10, a0, v0.t
 	ret
 

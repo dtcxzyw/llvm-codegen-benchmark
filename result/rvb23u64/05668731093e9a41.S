@@ -15,10 +15,10 @@ func0000000000000002:
 .LCPI2_0:
 	.quad	384307168202282325
 func0000000000000003:
-	andi	a1, a1, 1
 	lui	a3, %hi(.LCPI2_0)
-	czero.nez	a2, a2, a1
 	ld	a3, %lo(.LCPI2_0)(a3)
+	andi	a1, a1, 1
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	sh1add	a1, a1, a1

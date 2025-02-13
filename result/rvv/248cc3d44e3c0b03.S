@@ -19,11 +19,11 @@ func0000000000000008:
 .LCPI2_0:
 	.word	0x358637bd
 func0000000000000012:
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
-	lui	a0, %hi(.LCPI2_0)
 	vfabs.v	v8, v8
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 

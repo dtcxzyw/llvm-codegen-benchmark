@@ -85,10 +85,10 @@ func0000000000000088:
 .LCPI8_0:
 	.quad	0x3ddb7cdfd9d7bdbb
 func0000000000000022:
-	fabs.d	fa5, fa1
 	lui	a0, %hi(.LCPI8_0)
-	fmin.d	fa5, fa0, fa5
-	fld	fa4, %lo(.LCPI8_0)(a0)
-	flt.d	a0, fa5, fa4
+	fld	fa5, %lo(.LCPI8_0)(a0)
+	fabs.d	fa4, fa1
+	fmin.d	fa4, fa0, fa4
+	flt.d	a0, fa4, fa5
 	ret
 

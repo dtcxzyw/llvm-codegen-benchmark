@@ -31,8 +31,8 @@ func00000000000000ca:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v12, 0
-	lui	a0, 323584
 	vmfge.vf	v0, v8, fa5
+	lui	a0, 323584
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
@@ -64,13 +64,13 @@ func0000000000000044:
 	.word	0x477fff00
 func00000000000000c4:
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv.v.i	v12, 0
 	lui	a0, %hi(.LCPI6_0)
+	flw	fa4, %lo(.LCPI6_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
+	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
-	flw	fa5, %lo(.LCPI6_0)(a0)
-	vmfgt.vf	v0, v8, fa5
+	vmfgt.vf	v0, v8, fa4
 	ret
 
 func00000000000000c8:
@@ -85,8 +85,8 @@ func00000000000000c8:
 func00000000000000c5:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv.v.i	v12, 0
 	vmfge.vf	v0, v8, fa5
+	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

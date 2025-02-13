@@ -17,10 +17,10 @@ func0000000000000124:
 	bnez	a0, .LBB1_2
 	fmv.d	fa1, fa5
 .LBB1_2:
-	fmul.d	fa5, fa1, fa0
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a0)
-	flt.d	a0, fa4, fa5
+	fld	fa5, %lo(.LCPI1_0)(a0)
+	fmul.d	fa4, fa1, fa0
+	flt.d	a0, fa5, fa4
 	ret
 
 func0000000000000128:
@@ -53,10 +53,10 @@ func000000000000012b:
 	bnez	a0, .LBB4_2
 	fmv.d	fa1, fa5
 .LBB4_2:
-	fmul.d	fa5, fa1, fa0
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa4, %lo(.LCPI4_0)(a0)
-	flt.d	a0, fa4, fa5
+	fld	fa5, %lo(.LCPI4_0)(a0)
+	fmul.d	fa4, fa1, fa0
+	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

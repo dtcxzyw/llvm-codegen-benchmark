@@ -4,8 +4,8 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
 	lui	a0, 560295
-	addi	a0, a0, -1025
 	vmor.mm	v0, v0, v9
+	addi	a0, a0, -1025
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret
@@ -13,10 +13,10 @@ func0000000000000008:
 func0000000000000002:
 	lui	a0, 560295
 	addiw	a1, a0, -1024
-	addi	a0, a0, -1025
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v9, v10, a1
 	vmor.mm	v0, v9, v0
+	addi	a0, a0, -1025
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

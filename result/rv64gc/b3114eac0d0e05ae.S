@@ -1,16 +1,17 @@
 .LCPI0_0:
 	.quad	384307168202282325
 func000000000000000a:
-	andi	a3, a0, 1
-	srai	a2, a2, 3
+	mv	a3, a0
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a4, a0, 32
-	add	a0, a0, a4
-	lui	a4, %hi(.LCPI0_0)
-	mul	a0, a2, a0
-	add	a1, a1, a0
-	ld	a0, %lo(.LCPI0_0)(a4)
+	add	a4, a4, a0
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	srai	a2, a2, 3
+	mul	a2, a2, a4
+	add	a1, a1, a2
+	andi	a3, a3, 1
 	bgeu	a1, a0, .LBB0_3
 	beqz	a3, .LBB0_4
 .LBB0_2:
@@ -25,16 +26,17 @@ func000000000000000a:
 .LCPI1_0:
 	.quad	768614336404564650
 func0000000000000008:
-	andi	a3, a0, 1
-	srai	a2, a2, 2
+	mv	a3, a0
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a4, a0, 32
-	add	a0, a0, a4
-	lui	a4, %hi(.LCPI1_0)
-	mul	a0, a2, a0
-	add	a1, a1, a0
-	ld	a0, %lo(.LCPI1_0)(a4)
+	add	a4, a4, a0
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	srai	a2, a2, 2
+	mul	a2, a2, a4
+	add	a1, a1, a2
+	andi	a3, a3, 1
 	bgeu	a1, a0, .LBB1_3
 	beqz	a3, .LBB1_4
 .LBB1_2:

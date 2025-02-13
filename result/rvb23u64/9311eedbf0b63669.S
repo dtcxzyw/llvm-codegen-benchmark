@@ -7,9 +7,9 @@ func000000000000000b:
 	lui	a4, %hi(.LCPI0_0)
 	czero.eqz	a3, a3, a2
 	czero.nez	a2, a1, a2
+	ld	a4, %lo(.LCPI0_0)(a4)
 	or	a2, a2, a3
 	li	a3, -127
-	ld	a4, %lo(.LCPI0_0)(a4)
 	srli	a3, a3, 1
 	add	a1, a1, a2
 	minu	a1, a1, a4

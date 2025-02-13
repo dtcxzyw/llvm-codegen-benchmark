@@ -6,12 +6,12 @@ func000000000000004c:
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	mul	a1, a1, a2
 	slli	a2, a1, 61
 	srli	a1, a1, 3
 	or	a1, a1, a2
-	ld	a2, %lo(.LCPI0_0)(a3)
-	sltu	a1, a2, a1
+	sltu	a1, a3, a1
 	and	a0, a0, a1
 	ret
 

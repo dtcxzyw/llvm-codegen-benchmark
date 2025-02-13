@@ -20,11 +20,11 @@ func0000000000000005:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000000:
-	li	a0, 11
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vminu.vx	v8, v8, a0
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	li	a1, 11
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vminu.vx	v8, v8, a1
 	vmul.vx	v8, v8, a0
 	ret
 

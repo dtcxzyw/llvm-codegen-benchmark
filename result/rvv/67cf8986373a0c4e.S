@@ -4,8 +4,8 @@ func0000000000000168:
 	lui	a0, 272
 	vor.vv	v10, v10, v12
 	addi	a0, a0, -1
-	vor.vv	v8, v8, v10
 	vmsgtu.vx	v0, v10, a0
+	vor.vv	v8, v8, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -15,8 +15,8 @@ func00000000000001e8:
 	lui	a0, 272
 	vor.vv	v10, v12, v10
 	addi	a0, a0, -1
-	vor.vv	v8, v8, v10
 	vmsgtu.vx	v0, v10, a0
+	vor.vv	v8, v8, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -23,9 +23,9 @@ func000000000000000a:
 	add	a2, a2, a3
 	and	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	add	a0, a0, a2
 	lui	a2, 106914
-	ld	a1, %lo(.LCPI1_0)(a1)
 	addiw	a2, a2, -1510
 	and	a0, a0, a1
 	slli	a1, a2, 32

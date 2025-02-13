@@ -51,10 +51,10 @@ func0000000000000118:
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 
@@ -67,10 +67,10 @@ func0000000000000104:
 	vmv.v.i	v9, 0
 	bseti	a0, zero, 48
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 
@@ -82,10 +82,10 @@ func0000000000000284:
 	vmv.v.i	v9, 0
 	bseti	a0, zero, 48
 	vmerge.vim	v9, v9, 1, v0
-	vsll.vi	v9, v9, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vsll.vi	v9, v9, 5
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

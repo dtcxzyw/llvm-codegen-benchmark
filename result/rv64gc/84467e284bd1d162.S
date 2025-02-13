@@ -28,8 +28,8 @@ func000000000000018e:
 
 func000000000000001c:
 	sext.w	a3, a2
-	lui	a2, 1
 	li	a4, 105
+	lui	a2, 1
 	beq	a3, a4, .LBB2_2
 	addiw	a2, a2, 936
 	add	a1, a1, a2

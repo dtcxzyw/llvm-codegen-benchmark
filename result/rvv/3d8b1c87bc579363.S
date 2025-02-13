@@ -9,9 +9,9 @@ func000000000000030f:
 
 func000000000000010f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vv	v9, v8, v8
 	vmseq.vi	v0, v8, 0
-	vmerge.vim	v10, v9, 1, v0
+	vadd.vv	v8, v8, v8
+	vmerge.vim	v10, v8, 1, v0
 	vwsll.vi	v8, v10, 3
 	ret
 

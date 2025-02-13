@@ -10,9 +10,9 @@ func0000000000000001:
 func0000000000000014:
 	li	a0, 128
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v9, 1
 	vmsltu.vx	v0, v8, a0
-	vmerge.vim	v10, v9, -1, v0
+	vmv.v.i	v8, 1
+	vmerge.vim	v10, v8, -1, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret

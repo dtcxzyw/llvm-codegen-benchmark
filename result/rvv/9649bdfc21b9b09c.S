@@ -13,13 +13,13 @@ func0000000000000000:
 .LCPI1_1:
 	.word	0x41cc0003
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfcvt.f.xu.v	v8, v8
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	flw	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.xu.v	v8, v8
 	vfmul.vf	v8, v8, fa5
-	flw	fa5, %lo(.LCPI1_1)(a0)
-	vfadd.vf	v8, v8, fa5
+	vfadd.vf	v8, v8, fa4
 	ret
 

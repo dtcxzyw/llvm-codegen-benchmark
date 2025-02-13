@@ -97,12 +97,12 @@ func0000000000000006:
 	.quad	1000000000000000001
 func0000000000000044:
 	andi	a1, a1, 1
+	lui	a3, %hi(.LCPI10_0)
+	ld	a3, %lo(.LCPI10_0)(a3)
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI10_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI10_0)(a2)
-	sltu	a0, a0, a1
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000028:

@@ -14,8 +14,8 @@ func0000000000000042:
 	vmseq.vi	v14, v10, 4
 	lui	a0, 1
 	vmseq.vi	v10, v12, 6
-	addi	a0, a0, -636
 	vmor.mm	v0, v14, v10
+	addi	a0, a0, -636
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

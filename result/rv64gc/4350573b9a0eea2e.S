@@ -28,20 +28,20 @@ func0000000000000014:
 .LCPI5_0:
 	.quad	-81929232789475893
 func0000000000000001:
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	xor	a0, a0, a1
-	lui	a1, %hi(.LCPI5_0)
-	ld	a1, %lo(.LCPI5_0)(a1)
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
 .LCPI6_0:
 	.quad	-81929232789475893
 func000000000000000c:
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	xor	a0, a0, a1
-	lui	a1, %hi(.LCPI6_0)
-	ld	a1, %lo(.LCPI6_0)(a1)
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 

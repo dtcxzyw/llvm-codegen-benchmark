@@ -3,14 +3,14 @@
 .LCPI0_1:
 	.quad	9187201950435737344
 func0000000000000000:
+	lui	a3, %hi(.LCPI0_0)
+	lui	a4, %hi(.LCPI0_1)
+	ld	a3, %lo(.LCPI0_0)(a3)
+	ld	a4, %lo(.LCPI0_1)(a4)
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
 	slli	a1, a1, 9
-	ld	a2, %lo(.LCPI0_0)(a2)
-	and	a1, a1, a2
-	lui	a2, %hi(.LCPI0_1)
-	ld	a2, %lo(.LCPI0_1)(a2)
-	and	a0, a0, a2
+	and	a1, a1, a3
+	and	a0, a0, a4
 	or	a0, a0, a1
 	ret
 

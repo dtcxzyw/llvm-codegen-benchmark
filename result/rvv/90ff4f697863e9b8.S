@@ -1,10 +1,11 @@
 func0000000000000020:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 3
 	li	a0, 3
-	vmadd.vx	v8, a0, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmadd.vx	v8, a0, v12
 	ret
 
 func0000000000000035:

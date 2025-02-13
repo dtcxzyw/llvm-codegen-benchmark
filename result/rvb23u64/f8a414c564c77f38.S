@@ -4,15 +4,15 @@
 	.quad	128102389400760775
 func0000000000000aa1:
 	srai	a2, a2, 3
-	slli	a3, a1, 3
-	sub	a3, a3, a1
-	lui	a1, %hi(.LCPI0_0)
-	add	a0, a0, a3
-	lui	a3, %hi(.LCPI0_1)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	ld	a1, %lo(.LCPI0_1)(a3)
+	lui	a3, %hi(.LCPI0_0)
+	slli	a4, a1, 3
+	ld	a3, %lo(.LCPI0_0)(a3)
+	sub	a4, a4, a1
+	lui	a1, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_1)(a1)
+	mul	a2, a2, a3
+	add	a0, a0, a4
+	add	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

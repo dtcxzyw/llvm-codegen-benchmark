@@ -6,9 +6,9 @@ func000000000000002a:
 	blt	a2, a3, .LBB0_2
 	mv	a2, a3
 .LBB0_2:
-	addi	a2, a2, 87
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	addi	a2, a2, 87
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 4

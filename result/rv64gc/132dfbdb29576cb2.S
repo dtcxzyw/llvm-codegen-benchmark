@@ -1,7 +1,7 @@
 func0000000000000014:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	li	a3, 128
+	andi	a0, a0, 1
 	bltu	a2, a3, .LBB0_3
 	beqz	a0, .LBB0_4
 .LBB0_2:

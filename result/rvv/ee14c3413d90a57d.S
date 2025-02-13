@@ -81,8 +81,8 @@ func0000000000000010:
 func0000000000000060:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vor.vv	v8, v8, v10
 	vmsgtu.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 8, v0.t
 	ret
 

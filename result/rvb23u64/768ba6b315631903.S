@@ -31,10 +31,10 @@ func00000000000000e2:
 .LCPI4_0:
 	.quad	0x408f400000000000
 func0000000000000044:
-	fmin.d	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa4, %lo(.LCPI4_0)(a0)
-	flt.d	a0, fa5, fa4
+	fld	fa5, %lo(.LCPI4_0)(a0)
+	fmin.d	fa4, fa0, fa1
+	flt.d	a0, fa4, fa5
 	ret
 
 func0000000000000198:
@@ -72,11 +72,11 @@ func0000000000000050:
 .LCPI9_0:
 	.quad	0x3a1b900000000000
 func0000000000000104:
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI9_0)
-	feq.d	a1, fa1, fa5
 	fld	fa5, %lo(.LCPI9_0)(a0)
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa4, zero
+	feq.d	a0, fa1, fa4
+	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -100,9 +100,9 @@ func000000000000006a:
 	lui	a0, %hi(.LCPI11_0)
 	lui	a1, %hi(.LCPI11_1)
 	fld	fa5, %lo(.LCPI11_0)(a0)
+	fld	fa4, %lo(.LCPI11_1)(a1)
 	fle.d	a0, fa5, fa1
-	fld	fa5, %lo(.LCPI11_1)(a1)
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -111,12 +111,12 @@ func000000000000006a:
 	.quad	0xffefffffffffffff
 func000000000000012a:
 	fli.d	fa5, inf
+	lui	a0, %hi(.LCPI12_0)
+	fld	fa4, %lo(.LCPI12_0)(a0)
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa5, fa1
 	or	a0, a0, a1
-	lui	a1, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a1)
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -129,9 +129,9 @@ func0000000000000098:
 	lui	a0, %hi(.LCPI13_0)
 	lui	a1, %hi(.LCPI13_1)
 	fld	fa5, %lo(.LCPI13_0)(a0)
+	fld	fa4, %lo(.LCPI13_1)(a1)
 	flt.d	a0, fa5, fa1
-	fld	fa5, %lo(.LCPI13_1)(a1)
-	fle.d	a1, fa5, fa0
+	fle.d	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
@@ -158,13 +158,13 @@ func0000000000000084:
 	.quad	0x7fefffffffffffff
 func0000000000000072:
 	lui	a0, %hi(.LCPI16_0)
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
 	fld	fa5, %lo(.LCPI16_0)(a0)
-	fle.d	a0, fa5, fa1
-	or	a1, a1, a2
-	and	a0, a0, a1
+	fli.d	fa4, inf
+	flt.d	a0, fa0, fa4
+	flt.d	a1, fa4, fa0
+	fle.d	a2, fa5, fa1
+	or	a0, a0, a1
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
@@ -209,13 +209,13 @@ func0000000000000174:
 	.quad	0xc3e0000000000000
 func0000000000000124:
 	fli.d	fa5, inf
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa5, fa1
+	lui	a0, %hi(.LCPI21_0)
+	flt.d	a1, fa1, fa5
+	fld	fa4, %lo(.LCPI21_0)(a0)
+	flt.d	a0, fa5, fa1
 	or	a0, a0, a1
-	lui	a1, %hi(.LCPI21_0)
 	xori	a0, a0, 1
-	fld	fa5, %lo(.LCPI21_0)(a1)
-	flt.d	a1, fa0, fa5
+	flt.d	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
@@ -246,9 +246,9 @@ func0000000000000048:
 	lui	a0, %hi(.LCPI24_0)
 	lui	a1, %hi(.LCPI24_1)
 	fld	fa5, %lo(.LCPI24_0)(a0)
+	fld	fa4, %lo(.LCPI24_1)(a1)
 	flt.d	a0, fa1, fa5
-	fld	fa5, %lo(.LCPI24_1)(a1)
-	flt.d	a1, fa5, fa0
+	flt.d	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
@@ -293,11 +293,11 @@ func00000000000000ba:
 .LCPI29_0:
 	.quad	0x3ff3333333333333
 func00000000000001aa:
-	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI29_0)
-	flt.d	a1, fa1, fa5
 	fld	fa5, %lo(.LCPI29_0)(a0)
-	fle.d	a0, fa0, fa5
+	fli.d	fa4, 1.0
+	flt.d	a0, fa1, fa4
+	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

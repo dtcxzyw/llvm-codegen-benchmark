@@ -6,9 +6,9 @@ func0000000000000124:
 	bnez	a0, .LBB0_2
 	fmv.d	fa5, fa1
 .LBB0_2:
-	fmul.d	fa5, fa5, fa0
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
+	fmul.d	fa5, fa5, fa0
 	flt.d	a0, fa4, fa5
 	ret
 
@@ -42,9 +42,9 @@ func000000000000012b:
 	bnez	a0, .LBB3_2
 	fmv.d	fa5, fa1
 .LBB3_2:
-	fmul.d	fa5, fa5, fa0
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa4, %lo(.LCPI3_0)(a0)
+	fmul.d	fa5, fa5, fa0
 	flt.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret

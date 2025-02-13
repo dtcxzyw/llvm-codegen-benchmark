@@ -31,10 +31,10 @@ func0000000000000048:
 	.word	0xb8d1b717
 func000000000000006a:
 	lui	a0, %hi(.LCPI3_0)
-	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v12, v8, fa5
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	fli.s	fa4, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfle.vf	v12, v8, fa4
 	vmfge.vf	v13, v8, fa5
 	vmnot.m	v8, v12
 	vmorn.mm	v8, v8, v13

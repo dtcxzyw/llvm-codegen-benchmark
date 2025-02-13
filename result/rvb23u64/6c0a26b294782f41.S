@@ -35,8 +35,8 @@ func0000000000000442:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fmax.d	fa5, fa0, fa5
 	fld	fa4, %lo(.LCPI2_1)(a0)
+	fmax.d	fa5, fa0, fa5
 	flt.d	a0, fa5, fa4
 	ret
 

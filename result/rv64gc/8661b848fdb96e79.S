@@ -17,8 +17,8 @@ func0000000000000061:
 func0000000000000074:
 	mv	a2, a0
 	andi	a1, a1, 14
-	li	a0, 1
 	li	a3, 6
+	li	a0, 1
 	bltu	a1, a3, .LBB2_2
 	sllw	a0, a0, a2
 .LBB2_2:
@@ -27,8 +27,8 @@ func0000000000000074:
 func0000000000000054:
 	mv	a2, a0
 	andi	a1, a1, 62
-	li	a0, 1
 	li	a3, 6
+	li	a0, 1
 	bltu	a1, a3, .LBB3_2
 	sllw	a0, a0, a2
 .LBB3_2:

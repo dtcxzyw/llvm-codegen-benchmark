@@ -13,10 +13,10 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a2, 921600
 	addiw	a2, a2, -1026
+	andi	a0, a0, 1
 	mv	a3, a2
 	beqz	a4, .LBB1_2
 	lui	a3, 135168
@@ -43,8 +43,8 @@ func0000000000000010:
 	ret
 
 func0000000000000030:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	beqz	a2, .LBB3_2
 	li	a2, 1012
 	or	a1, a1, a2

@@ -1,6 +1,6 @@
 func0000000000000024:
-	andi	a0, a0, 1
 	flt.d	a1, fa0, fa1
+	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
 	fmv.d	fa0, fa1
 .LBB0_2:
@@ -15,8 +15,8 @@ func0000000000000024:
 .LCPI1_0:
 	.quad	0x40dfffc000000000
 func0000000000000042:
-	andi	a0, a0, 1
 	flt.d	a1, fa0, fa1
+	andi	a0, a0, 1
 	bnez	a1, .LBB1_2
 	fmv.d	fa0, fa1
 .LBB1_2:
@@ -34,8 +34,8 @@ func0000000000000042:
 .LCPI2_1:
 	.quad	0x3feccccccccccccd
 func0000000000000044:
-	andi	a0, a0, 1
 	flt.d	a1, fa1, fa0
+	andi	a0, a0, 1
 	bnez	a1, .LBB2_2
 	fmv.d	fa0, fa1
 .LBB2_2:

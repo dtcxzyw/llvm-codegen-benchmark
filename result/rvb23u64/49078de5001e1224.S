@@ -3,15 +3,15 @@
 .LCPI0_1:
 	.quad	1383505805528216371
 func0000000000000006:
-	srli	a1, a1, 1
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	srli	a1, a1, 1
+	lui	a3, %hi(.LCPI0_1)
+	ld	a3, %lo(.LCPI0_1)(a3)
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI0_1)
 	add	a0, a0, a1
 	srli	a0, a0, 2
-	ld	a1, %lo(.LCPI0_1)(a2)
-	and	a0, a0, a1
+	and	a0, a0, a3
 	ret
 
 func0000000000000004:

@@ -89,8 +89,8 @@ func0000000000000224:
 
 func0000000000000404:
 	andi	a2, a1, 255
-	lui	a1, 256
 	li	a3, 5
+	lui	a1, 256
 	bltu	a3, a2, .LBB8_2
 	lui	a1, 3
 .LBB8_2:

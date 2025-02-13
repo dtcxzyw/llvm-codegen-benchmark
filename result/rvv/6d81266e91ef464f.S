@@ -1,10 +1,9 @@
 func0000000000000009:
 	li	a0, 55
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, mu
+	vsll.vi	v8, v8, 2
 	vor.vi	v8, v8, 2, v0.t
 	ret
 

@@ -25,9 +25,9 @@ func0000000000000001:
 .LCPI1_1:
 	.quad	0x3ff0000000000000
 func0000000000000004:
-	andi	a0, a0, 1
 	sext.w	a1, a1
 	li	a2, 3
+	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2
 	fmv.d.x	fa0, zero
 	bnez	a0, .LBB1_3

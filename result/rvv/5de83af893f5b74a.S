@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a0, 22
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vzext.vf2	v8, v10, v0.t
-	li	a0, 22
 	vmseq.vx	v0, v8, a0
 	ret
 
@@ -30,9 +30,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vzext.vf2	v8, v10, v0.t
-	li	a0, 64
 	vmsltu.vx	v0, v8, a0
 	ret
 

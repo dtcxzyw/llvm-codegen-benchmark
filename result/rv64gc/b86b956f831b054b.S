@@ -21,9 +21,8 @@ func00000000000001c4:
 	ret
 
 func00000000000000e4:
-	mv	a2, a0
+	srliw	a2, a0, 16
 	li	a0, 1
-	srliw	a2, a2, 16
 	beqz	a2, .LBB2_2
 	li	a2, 10
 	subw	a2, a2, a1

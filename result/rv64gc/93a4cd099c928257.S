@@ -15,10 +15,10 @@ func00000000000001e1:
 func0000000000000001:
 	sext.w	a3, a0
 	slli	a0, a2, 5
+	lui	a2, 524288
+	addiw	a2, a2, 3
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, 3
-	beq	a3, a1, .LBB1_2
+	beq	a3, a2, .LBB1_2
 	li	a1, 24
 	add	a0, a0, a1
 	ret

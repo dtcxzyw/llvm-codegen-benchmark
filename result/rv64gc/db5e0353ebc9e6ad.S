@@ -3,14 +3,14 @@
 .LCPI0_1:
 	.word	0x358637bd
 func000000000000004d:
-	fadd.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI0_0)
-	lui	a1, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_0)(a0)
-	flt.s	a0, fa5, fa4
-	flw	fa4, %lo(.LCPI0_1)(a1)
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, %hi(.LCPI0_1)
+	flw	fa4, %lo(.LCPI0_1)(a0)
+	fadd.s	fa3, fa0, fa1
+	flt.s	a0, fa3, fa5
 	not	a0, a0
-	flt.s	a1, fa4, fa5
+	flt.s	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
 

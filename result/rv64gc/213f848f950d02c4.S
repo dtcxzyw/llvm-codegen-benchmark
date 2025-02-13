@@ -162,10 +162,10 @@ func0000000000000208:
 .LCPI23_0:
 	.quad	-81929232789475893
 func0000000000000218:
+	lui	a3, %hi(.LCPI23_0)
+	ld	a3, %lo(.LCPI23_0)(a3)
 	sltu	a1, a2, a1
-	lui	a2, %hi(.LCPI23_0)
-	ld	a2, %lo(.LCPI23_0)(a2)
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

@@ -20,9 +20,9 @@ func0000000000000003:
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI1_0)
 	vmfge.vf	v25, v16, fa5
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmnot.m	v0, v25
 	vmerge.vvm	v8, v16, v8, v0
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vfmv.v.f	v16, fa5
 	vmv1r.v	v0, v24
 	vmerge.vvm	v8, v16, v8, v0

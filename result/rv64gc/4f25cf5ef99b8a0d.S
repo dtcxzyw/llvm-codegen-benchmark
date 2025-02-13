@@ -13,8 +13,8 @@ func0000000000000024:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fmin.d	fa5, fa1, fa5
 	fld	fa4, %lo(.LCPI1_1)(a0)
+	fmin.d	fa5, fa1, fa5
 	fmax.d	fa4, fa0, fa4
 	fmul.d	fa0, fa4, fa5
 	ret

@@ -67,14 +67,14 @@ func0000000000000106:
 	.quad	99999999999999999
 func000000000000014a:
 	lui	a0, 5960
+	lui	a1, %hi(.LCPI8_0)
 	addiw	a0, a0, 1903
+	ld	a1, %lo(.LCPI8_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v12, v10, a0
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
-	vmsgt.vx	v10, v8, a0
+	vmsgt.vx	v10, v8, a1
 	vmor.mm	v0, v12, v10
 	ret
 
@@ -82,14 +82,14 @@ func000000000000014a:
 	.quad	99999999999999999
 func0000000000000118:
 	lui	a0, 5960
+	lui	a1, %hi(.LCPI9_0)
 	addiw	a0, a0, 1903
+	ld	a1, %lo(.LCPI9_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	lui	a0, %hi(.LCPI9_0)
-	ld	a0, %lo(.LCPI9_0)(a0)
-	vmsgtu.vx	v10, v8, a0
+	vmsgtu.vx	v10, v8, a1
 	vmor.mm	v0, v12, v10
 	ret
 

@@ -9,13 +9,13 @@ func0000000000000018:
 	ret
 
 func0000000000000001:
-	mv	a2, a0
-	li	a0, 516
-	beq	a2, a0, .LBB1_2
+	li	a2, 516
+	beq	a0, a2, .LBB1_2
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	andi	a0, a1, 1022
+	andi	a2, a1, 1022
 .LBB1_2:
+	mv	a0, a2
 	ret
 
 func0000000000000006:
@@ -33,54 +33,54 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	mv	a2, a0
-	andi	a1, a1, 1
-	bnez	a1, .LBB3_2
+	andi	a2, a1, 1
+	mv	a1, a0
+	bnez	a2, .LBB3_2
 	li	a0, 12
-	srli	a2, a2, 16
-	beqz	a2, .LBB3_3
+	srli	a1, a1, 16
+	beqz	a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 8
-	srli	a2, a2, 16
-	bnez	a2, .LBB3_4
+	srli	a1, a1, 16
+	bnez	a1, .LBB3_4
 .LBB3_3:
 	li	a0, 6
 .LBB3_4:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 1
-	bnez	a1, .LBB4_2
-	li	a1, 203
-	slli	a1, a1, 49
-	srli	a0, a0, 31
-	beqz	a0, .LBB4_3
+	andi	a2, a1, 1
+	mv	a1, a0
+	bnez	a2, .LBB4_2
+	li	a0, 203
+	slli	a0, a0, 49
+	srli	a1, a1, 31
+	beqz	a1, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	li	a1, 235
-	slli	a1, a1, 49
-	srli	a0, a0, 31
-	bnez	a0, .LBB4_4
+	li	a0, 235
+	slli	a0, a0, 49
+	srli	a1, a1, 31
+	bnez	a1, .LBB4_4
 .LBB4_3:
-	li	a1, 251
-	slli	a1, a1, 49
+	li	a0, 251
+	slli	a0, a0, 49
 .LBB4_4:
-	mv	a0, a1
 	ret
 
 func0000000000000008:
-	mv	a2, a0
-	andi	a1, a1, 1
-	bnez	a1, .LBB5_2
+	andi	a2, a1, 1
+	mv	a1, a0
+	bnez	a2, .LBB5_2
 	li	a0, 10
-	srli	a2, a2, 30
-	bnez	a2, .LBB5_3
+	srli	a1, a1, 30
+	bnez	a1, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
 	li	a0, 20
-	srli	a2, a2, 30
-	beqz	a2, .LBB5_4
+	srli	a1, a1, 30
+	beqz	a1, .LBB5_4
 .LBB5_3:
 	li	a0, 30
 .LBB5_4:

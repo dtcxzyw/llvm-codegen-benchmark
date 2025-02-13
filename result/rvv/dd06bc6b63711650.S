@@ -5,9 +5,9 @@ func0000000000000021:
 	srli	a0, a0, 11
 	vand.vx	v10, v10, a0
 	bseti	a0, zero, 53
-	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vor.vx	v8, v10, a0
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 
 func00000000000000a1:
@@ -17,8 +17,8 @@ func00000000000000a1:
 	srli	a0, a0, 11
 	vand.vx	v10, v10, a0
 	bseti	a0, zero, 53
-	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vor.vx	v8, v10, a0
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

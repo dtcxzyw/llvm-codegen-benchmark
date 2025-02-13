@@ -1,8 +1,8 @@
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	vmv.v.i	v10, 0
 	vmand.mm	v0, v12, v0
+	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
@@ -52,8 +52,8 @@ func0000000000000006:
 func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
-	vmv.v.i	v10, -1
 	vmand.mm	v0, v12, v0
+	vmv.v.i	v10, -1
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

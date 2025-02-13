@@ -11,12 +11,11 @@ func000000000000008f:
 
 func000000000000001c:
 	li	a0, 18
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v14, 3
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vx	v0, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v12, v14, 11, v0
+	vmv.v.i	v12, 3
+	vmerge.vim	v12, v12, 11, v0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v8, v12
 	ret

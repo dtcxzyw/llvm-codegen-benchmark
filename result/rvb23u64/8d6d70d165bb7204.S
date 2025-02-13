@@ -12,9 +12,9 @@ func0000000000000004:
 .LCPI1_0:
 	.quad	3353953467947191203
 func0000000000000005:
-	srli	a1, a1, 2
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	srli	a1, a1, 2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0

@@ -41,8 +41,8 @@ func000000000000001a:
 	fli.s	fa5, min
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v10, v8, fa5
-	vmv.v.i	v8, 0
 	vmnot.m	v0, v10
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -83,8 +83,8 @@ func0000000000000016:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfgt.vf	v10, v8, fa5
-	vmv.v.i	v8, 0
 	vmnot.m	v0, v10
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

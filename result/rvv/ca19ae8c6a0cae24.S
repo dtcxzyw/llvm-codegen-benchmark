@@ -15,8 +15,8 @@ func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
-	vor.vi	v10, v10, 4, v0.t
 	vmv.v.i	v12, 2
+	vor.vi	v10, v10, 4, v0.t
 	li	a0, 514
 	vmv1r.v	v0, v9
 	vmerge.vxm	v8, v12, a0, v0

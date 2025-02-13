@@ -31,8 +31,8 @@ func0000000000000006:
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10
 	lui	a0, 976563
-	addi	a0, a0, -2048
 	vmsle.vi	v0, v12, -1
+	addi	a0, a0, -2048
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	ret

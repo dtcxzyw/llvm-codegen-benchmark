@@ -8,8 +8,8 @@ func0000000000000003:
 
 func0000000000000000:
 	vsetivli	zero, 16, e8, m1, ta, mu
-	vor.vi	v8, v8, 4, v0.t
 	vand.vi	v9, v9, 8
+	vor.vi	v8, v8, 4, v0.t
 	vor.vv	v8, v8, v9
 	ret
 

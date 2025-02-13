@@ -218,10 +218,10 @@ func00000000000000a6:
 	.word	0x7c38aa25
 func000000000000006a:
 	lui	a0, %hi(.LCPI23_0)
-	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v16, v8, fa5
 	flw	fa5, %lo(.LCPI23_0)(a0)
+	fli.s	fa4, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfle.vf	v16, v8, fa4
 	vmfge.vf	v8, v12, fa5
 	vmnot.m	v9, v16
 	vmorn.mm	v0, v9, v8

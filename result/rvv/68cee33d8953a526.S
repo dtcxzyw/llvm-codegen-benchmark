@@ -54,9 +54,9 @@ func00000000000000a9:
 
 func00000000000001a9:
 	li	a0, 180
-	li	a1, -360
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vx	v0, v8, a0
+	li	a1, -360
 	vadd.vx	v8, v8, a1, v0.t
 	vadd.vx	v8, v8, a0
 	ret

@@ -19,8 +19,8 @@ func000000000000001b:
 	.word	0x3f2ac083
 func0000000000000012:
 	sext.w	a0, a0
-	fli.s	fa5, 0.5
 	li	a1, 9
+	fli.s	fa5, 0.5
 	beq	a0, a1, .LBB1_2
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)

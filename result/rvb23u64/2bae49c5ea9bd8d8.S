@@ -1,6 +1,7 @@
 func0000000000000000:
+	xori	a1, a1, 1
 	mv	a2, a0
-	xori	a0, a1, 1
+	mv	a0, a1
 	mv	a1, a2
 	ret
 

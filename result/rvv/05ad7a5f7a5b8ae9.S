@@ -1,8 +1,8 @@
 func0000000000000008:
 	li	a0, 96
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.x	v10, a0
 	vmsgtu.vi	v0, v8, 8
+	vmv.v.x	v10, a0
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -64,18 +64,18 @@ func000000000000004a:
 func0000000000000064:
 	li	a0, 20
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v10, 2
 	vmsltu.vx	v0, v8, a0
+	vmv.v.i	v10, 2
 	vadd.vi	v10, v8, 4, v0.t
 	vmv.v.v	v8, v10
 	ret
 
 func0000000000000046:
 	li	a0, 2
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v10, 0
 	bseti	a0, a0, 63
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmslt.vx	v0, v8, a0
+	vmv.v.i	v10, 0
 	vadd.vi	v10, v8, 1, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -83,12 +83,12 @@ func0000000000000046:
 .LCPI9_0:
 	.quad	-8446744073709551617
 func000000000000000c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v8, -1
-	vmseq.vi	v0, v8, 0
 	lui	a0, %hi(.LCPI9_0)
 	ld	a0, %lo(.LCPI9_0)(a0)
-	vmerge.vxm	v8, v10, a0, v0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v0, v8, 0
+	vadd.vi	v8, v8, -1
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000078:
@@ -104,10 +104,10 @@ func0000000000000078:
 
 func0000000000000066:
 	lui	a0, 512
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v10, 0
 	addiw	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmslt.vx	v0, v8, a0
+	vmv.v.i	v10, 0
 	vadd.vi	v10, v8, 1, v0.t
 	vmv.v.v	v8, v10
 	ret

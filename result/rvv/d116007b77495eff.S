@@ -102,8 +102,8 @@ func00000000000000ec:
 func00000000000000a8:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv.v.i	v24, 0
 	vmfle.vf	v0, v16, fa5
+	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
 	vmfeq.vv	v0, v8, v16
 	ret

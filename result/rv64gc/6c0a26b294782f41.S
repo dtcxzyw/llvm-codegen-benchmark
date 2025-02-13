@@ -5,11 +5,11 @@ func0000000000000242:
 	bnez	a0, .LBB0_2
 	fmv.d	fa0, fa1
 .LBB0_2:
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	fmax.d	fa5, fa0, fa5
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	flt.d	a0, fa5, fa4
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	fmv.d.x	fa4, zero
+	fmax.d	fa4, fa0, fa4
+	flt.d	a0, fa4, fa5
 	ret
 
 .LCPI1_0:
@@ -38,8 +38,8 @@ func0000000000000442:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	fmax.d	fa5, fa0, fa5
 	fld	fa4, %lo(.LCPI2_1)(a0)
+	fmax.d	fa5, fa0, fa5
 	flt.d	a0, fa5, fa4
 	ret
 

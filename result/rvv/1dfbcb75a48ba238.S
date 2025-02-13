@@ -101,9 +101,9 @@ func0000000000000041:
 	ret
 
 func0000000000000008:
+	lui	a0, 32768
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v8, v10, 0, v0.t
-	lui	a0, 32768
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -114,9 +114,9 @@ func0000000000000078:
 	ret
 
 func0000000000000004:
+	li	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v8, v10, 0, v0.t
-	li	a0, 256
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -38,10 +38,10 @@ func0000000000000009:
 	ret
 
 func0000000000000011:
-	slli	a2, a1, 48
-	lui	a1, 525824
-	srli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a1, 48
 	li	a3, 12
+	lui	a1, 525824
 	bltu	a3, a2, .LBB4_2
 	lui	a1, 524288
 .LBB4_2:
@@ -59,10 +59,10 @@ func0000000000000031:
 	ret
 
 func0000000000000008:
-	slli	a2, a1, 48
-	lui	a1, 786432
-	srli	a2, a2, 58
+	slli	a1, a1, 48
+	srli	a2, a1, 58
 	li	a3, 63
+	lui	a1, 786432
 	bltu	a2, a3, .LBB6_2
 	lui	a1, 524288
 .LBB6_2:

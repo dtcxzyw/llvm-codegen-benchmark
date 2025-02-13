@@ -19,10 +19,10 @@ func0000000000000004:
 func0000000000000008:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v12
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	vmfeq.vf	v0, v8, fa5
 	flw	fa5, %lo(.LCPI2_0)(a0)
+	fmv.w.x	fa4, zero
+	vmfeq.vf	v0, v8, fa4
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 

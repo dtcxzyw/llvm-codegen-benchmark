@@ -9,13 +9,13 @@ func0000000000000318:
 	lui	a0, 17476
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v9, v9, 5
-	vmv.v.i	v10, 0
 	addi	a0, a0, 1092
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vror.vi	v12, v12, 2
-	vmsgtu.vx	v11, v12, a0
-	vmor.mm	v0, v11, v9
+	vror.vi	v10, v12, 2
+	vmsgtu.vx	v12, v10, a0
+	vmor.mm	v0, v12, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
+	vmv.v.i	v9, 0
+	vmerge.vvm	v8, v9, v8, v0
 	ret
 

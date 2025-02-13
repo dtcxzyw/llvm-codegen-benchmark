@@ -40,8 +40,8 @@ func0000000000000044:
 func0000000000000001:
 	mv	a2, a0
 	sext.w	a1, a1
-	li	a0, 2
 	li	a3, -1
+	li	a0, 2
 	beq	a1, a3, .LBB4_2
 	sllw	a0, a0, a2
 .LBB4_2:

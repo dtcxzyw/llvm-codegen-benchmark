@@ -78,9 +78,9 @@ func000000000000014f:
 	andi	a2, a2, 1
 	addi	a2, a2, -1
 	andi	a2, a2, 94
+	li	a3, 78
 	add	a0, a0, a2
-	li	a2, 78
-	bltu	a1, a2, .LBB6_2
+	bltu	a1, a3, .LBB6_2
 	li	a1, 67
 	addw	a0, a0, a1
 	ret

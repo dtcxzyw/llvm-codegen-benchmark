@@ -19,8 +19,8 @@ func0000000000000004:
 func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	vmv.v.i	v14, 0
 	vmslt.vv	v0, v10, v12
-	vmerge.vvm	v8, v14, v8, v0
+	vmv.v.i	v10, 0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

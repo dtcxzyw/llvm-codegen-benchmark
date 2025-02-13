@@ -44,8 +44,8 @@ func0000000000000041:
 
 func0000000000000054:
 	sext.w	a2, a1
-	lui	a1, 1
 	li	a3, 1
+	lui	a1, 1
 	beq	a2, a3, .LBB4_2
 	lui	a1, 2
 .LBB4_2:

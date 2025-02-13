@@ -46,8 +46,8 @@ func0000000000000006:
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, 120
 	vmslt.vv	v0, v14, v10
+	li	a0, 120
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

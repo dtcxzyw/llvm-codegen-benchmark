@@ -3,11 +3,11 @@
 func000000000000006d:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v8
+	lui	a0, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	li	a0, 126
 	vand.vx	v12, v12, a0
-	lui	a0, %hi(.LCPI0_0)
 	vmsne.vi	v16, v12, 0
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	vmflt.vf	v12, v8, fa5
 	vmandn.mm	v0, v16, v12
 	ret

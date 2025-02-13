@@ -63,8 +63,8 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI6_0)
 	flw	fa5, %lo(.LCPI6_0)(a0)
 	lui	a0, %hi(.LCPI6_1)
-	fmadd.s	fa5, fa0, fa5, fa1
 	flw	fa4, %lo(.LCPI6_1)(a0)
+	fmadd.s	fa5, fa0, fa5, fa1
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
@@ -72,11 +72,11 @@ func0000000000000003:
 .LCPI7_0:
 	.word	0x3f733333
 func0000000000000013:
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI7_0)
-	fmadd.s	fa5, fa0, fa5, fa1
-	flw	fa4, %lo(.LCPI7_0)(a0)
-	fle.s	a0, fa4, fa5
+	flw	fa5, %lo(.LCPI7_0)(a0)
+	fmv.w.x	fa4, zero
+	fmadd.s	fa4, fa0, fa4, fa1
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

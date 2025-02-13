@@ -1,16 +1,16 @@
 func0000000000000001:
-	andi	a2, a0, 1
 	slli	a1, a1, 48
-	lui	a0, 11
-	srli	a1, a1, 48
-	addiw	a0, a0, -1912
-	beq	a1, a0, .LBB0_2
+	lui	a2, 11
+	srli	a3, a1, 48
+	addiw	a2, a2, -1912
+	andi	a1, a0, 1
+	beq	a3, a2, .LBB0_2
 	li	a0, 14
-	bnez	a2, .LBB0_3
+	bnez	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 22
-	beqz	a2, .LBB0_4
+	beqz	a1, .LBB0_4
 .LBB0_3:
 	li	a0, 18
 .LBB0_4:

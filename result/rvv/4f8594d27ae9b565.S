@@ -1,7 +1,7 @@
 func0000000000000010:
+	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 100
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -23,9 +23,9 @@ func0000000000000015:
 	ret
 
 func0000000000000030:
+	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 3
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -38,9 +38,9 @@ func0000000000000011:
 	ret
 
 func000000000000000c:
+	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v8, v10, v10
-	li	a0, 20
 	vmul.vx	v8, v8, a0
 	ret
 

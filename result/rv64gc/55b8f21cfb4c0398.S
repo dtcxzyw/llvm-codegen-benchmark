@@ -10,9 +10,9 @@ func0000000000000001:
 func00000000000005e1:
 	andi	a3, a0, 255
 	slli	a0, a2, 4
+	li	a2, 92
 	add	a0, a0, a1
-	li	a1, 92
-	beq	a3, a1, .LBB1_2
+	beq	a3, a2, .LBB1_2
 	li	a1, 12
 	add	a0, a0, a1
 	ret

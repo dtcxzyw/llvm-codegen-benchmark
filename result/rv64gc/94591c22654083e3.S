@@ -1,7 +1,7 @@
 func0000000000000021:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, 1
+	sext.w	a0, a0
 	beq	a2, a3, .LBB0_2
 	li	a1, 1
 .LBB0_2:
@@ -37,8 +37,8 @@ func00000000000000c6:
 	ret
 
 func0000000000000084:
-	sext.w	a0, a0
 	srliw	a2, a2, 24
+	sext.w	a0, a0
 	beqz	a2, .LBB4_2
 	li	a1, 12
 .LBB4_2:
@@ -95,9 +95,9 @@ func0000000000000141:
 	ret
 
 func0000000000000108:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, 1
+	sext.w	a0, a0
 	bltu	a3, a2, .LBB10_2
 	li	a1, 1
 .LBB10_2:
@@ -106,8 +106,8 @@ func0000000000000108:
 	ret
 
 func0000000000000038:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	beqz	a2, .LBB11_2
 	li	a1, 3
 .LBB11_2:
@@ -145,8 +145,8 @@ func0000000000000088:
 	ret
 
 func0000000000000158:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	bgez	a2, .LBB15_2
 	li	a1, 127
 .LBB15_2:
@@ -165,8 +165,8 @@ func0000000000000186:
 	ret
 
 func0000000000000189:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	bnez	a2, .LBB17_2
 	li	a1, 1
 .LBB17_2:
@@ -176,8 +176,8 @@ func0000000000000189:
 	ret
 
 func000000000000008a:
-	sext.w	a0, a0
 	srliw	a2, a2, 26
+	sext.w	a0, a0
 	beqz	a2, .LBB18_2
 	li	a1, 4
 .LBB18_2:
@@ -186,8 +186,8 @@ func000000000000008a:
 	ret
 
 func000000000000002b:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	beqz	a2, .LBB19_2
 	li	a1, 1
 .LBB19_2:
@@ -197,8 +197,8 @@ func000000000000002b:
 	ret
 
 func0000000000000027:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	beqz	a2, .LBB20_2
 	li	a1, 1
 .LBB20_2:
@@ -208,8 +208,8 @@ func0000000000000027:
 	ret
 
 func0000000000000034:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	beqz	a2, .LBB21_2
 	li	a1, 127
 .LBB21_2:

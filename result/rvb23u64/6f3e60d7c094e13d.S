@@ -37,10 +37,10 @@ func0000000000000e94:
 .LCPI5_0:
 	.quad	922337203685477581
 func00000000000000c6:
-	addi	a2, a0, -1
-	slt	a1, a2, a1
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
+	addi	a3, a0, -1
+	slt	a1, a3, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

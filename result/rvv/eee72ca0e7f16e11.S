@@ -6,9 +6,9 @@ func000000000000000a:
 	ret
 
 func000000000000002a:
+	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vrsub.vi	v8, v10, 1, v0.t
-	li	a0, 99
 	vmsgt.vx	v0, v8, a0
 	ret
 
@@ -46,9 +46,9 @@ func0000000000000028:
 	ret
 
 func0000000000000038:
+	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vrsub.vi	v8, v10, 3, v0.t
-	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -13,8 +13,8 @@ func0000000000000000:
 	vsetivli	zero, 16, e16, m2, ta, mu
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
-	vor.vi	v8, v8, 2, v0.t
 	li	a0, 256
+	vor.vi	v8, v8, 2, v0.t
 	vor.vx	v12, v8, a0
 	vmv1r.v	v0, v11
 	vmerge.vvm	v8, v12, v8, v0

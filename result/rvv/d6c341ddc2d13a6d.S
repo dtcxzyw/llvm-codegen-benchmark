@@ -8,13 +8,13 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
+	fld	fa4, %lo(.LCPI0_1)(a0)
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa3, %lo(.LCPI0_2)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfmv.v.f	v14, fa5
-	fld	fa5, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	vfmacc.vf	v14, fa5, v12
-	fld	fa5, %lo(.LCPI0_2)(a0)
-	vfmacc.vf	v14, fa5, v10
+	vfmacc.vf	v14, fa4, v12
+	vfmacc.vf	v14, fa3, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfncvt.rtz.x.f.w	v9, v14
 	vadd.vv	v10, v8, v9
@@ -32,13 +32,13 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
+	lui	a0, %hi(.LCPI1_2)
+	fld	fa3, %lo(.LCPI1_2)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfmv.v.f	v14, fa5
-	fld	fa5, %lo(.LCPI1_1)(a0)
-	lui	a0, %hi(.LCPI1_2)
-	vfmacc.vf	v14, fa5, v12
-	fld	fa5, %lo(.LCPI1_2)(a0)
-	vfmacc.vf	v14, fa5, v10
+	vfmacc.vf	v14, fa4, v12
+	vfmacc.vf	v14, fa3, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vfncvt.rtz.x.f.w	v9, v14
 	vadd.vv	v10, v8, v9

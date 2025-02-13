@@ -1,13 +1,13 @@
 func0000000000000000:
-	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	lui	a0, 838861
-	addi	a0, a0, -819
-	mul	a0, a1, a0
+	andi	a2, a0, 1
+	mv	a0, a1
+	beqz	a2, .LBB0_2
+	lui	a1, 838861
+	addi	a1, a1, -819
+	mul	a0, a0, a1
 	srliw	a1, a0, 1
 	slliw	a0, a0, 31
-	or	a1, a1, a0
+	or	a0, a0, a1
 .LBB0_2:
-	mv	a0, a1
 	ret
 

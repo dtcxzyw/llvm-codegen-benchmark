@@ -50,10 +50,10 @@ func0000000000000134:
 .LCPI4_0:
 	.quad	2361183241434822607
 func0000000000000026:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v10, v12
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v10, v10, v12
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0

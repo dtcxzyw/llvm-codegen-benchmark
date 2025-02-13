@@ -12,8 +12,8 @@ func0000000000000005:
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vx	v12, v10, a0
-	bseti	a0, zero, 63
 	vmor.mm	v0, v0, v12
+	bseti	a0, zero, 63
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

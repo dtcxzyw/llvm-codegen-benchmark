@@ -6,9 +6,9 @@ func0000000000000004:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 2
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.i	v10, 0
 	vmsne.vi	v8, v8, 0
 	vmor.mm	v0, v9, v8
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

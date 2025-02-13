@@ -2,14 +2,14 @@
 	.quad	-4417276706812531889
 func0000000000000008:
 	li	a0, 32
+	lui	a1, 797483
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	lui	a0, 797483
-	addi	a0, a0, -451
-	zext.w	a0, a0
-	vmul.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	addi	a1, a1, -451
+	zext.w	a1, a1
+	vmul.vx	v10, v10, a1
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -17,14 +17,14 @@ func0000000000000008:
 	.quad	839798700976720815
 func0000000000000000:
 	li	a0, 32
+	lui	a1, 967569
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	lui	a0, 967569
-	slli	a0, a0, 3
-	addi	a0, a0, 1615
-	vmul.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	slli	a1, a1, 3
+	addi	a1, a1, 1615
+	vmul.vx	v10, v10, a1
 	vmadd.vx	v8, a0, v10
 	ret
 

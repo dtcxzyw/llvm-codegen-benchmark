@@ -16,9 +16,9 @@ func0000000000000021:
 func0000000000000034:
 	li	a0, 1853
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 1
 	vmseq.vx	v0, v10, a0
-	vmerge.vim	v10, v12, 3, v0
+	vmv.v.i	v10, 1
+	vmerge.vim	v10, v10, 3, v0
 	vmv.v.i	v12, 8
 	vmerge.vim	v12, v12, 12, v0
 	vmsleu.vi	v0, v8, 1

@@ -18,8 +18,8 @@ func0000000000000043:
 
 func0000000000000042:
 	andi	a1, a0, 255
-	lui	a0, 4096
 	li	a2, 114
+	lui	a0, 4096
 	bne	a1, a2, .LBB1_2
 	addiw	a0, a0, 256
 .LBB1_2:

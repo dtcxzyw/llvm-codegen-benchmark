@@ -28,13 +28,13 @@ func00000000000000b7:
 func0000000000000042:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmerge.vfm	v8, v8, fa5, v0
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI2_1)
 	vmflt.vf	v16, v8, fa5
-	fld	fa5, %lo(.LCPI2_1)(a0)
-	vmfgt.vf	v17, v8, fa5
+	vmfgt.vf	v17, v8, fa4
 	vmand.mm	v0, v16, v17
 	ret
 

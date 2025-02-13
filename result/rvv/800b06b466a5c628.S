@@ -12,9 +12,9 @@ func0000000000000074:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 64
+	vmsleu.vi	v0, v10, 8
 	vrsub.vx	v8, v10, a0
 	li	a0, 56
-	vmsleu.vi	v0, v10, 8
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

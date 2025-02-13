@@ -62,10 +62,10 @@ func0000000000000878:
 	.quad	0x4009220092718f51
 func0000000000000555:
 	lui	a0, %hi(.LCPI6_0)
-	lui	a1, %hi(.LCPI6_1)
 	fld	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, %hi(.LCPI6_1)
+	fld	fa4, %lo(.LCPI6_1)(a0)
 	fle.d	a0, fa2, fa5
-	fld	fa4, %lo(.LCPI6_1)(a1)
 	fle.d	a1, fa1, fa5
 	and	a0, a0, a1
 	fle.d	a1, fa0, fa4

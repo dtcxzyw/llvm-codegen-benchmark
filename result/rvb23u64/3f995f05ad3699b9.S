@@ -23,9 +23,9 @@ func0000000000000006:
 .LCPI3_0:
 	.quad	0x7fefffffffffffff
 func0000000000000002:
-	fabs.d	fa5, fa0
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
-	fmin.d	fa0, fa5, fa4
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	fabs.d	fa4, fa0
+	fmin.d	fa0, fa4, fa5
 	ret
 

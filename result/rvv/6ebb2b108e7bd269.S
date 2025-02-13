@@ -40,10 +40,10 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI3_1)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v12, v16
+	flw	fa4, %lo(.LCPI3_1)(a0)
 	vmfgt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
-	flw	fa5, %lo(.LCPI3_1)(a0)
-	vmflt.vf	v0, v8, fa5
+	vmflt.vf	v0, v8, fa4
 	ret
 
 func0000000000000128:

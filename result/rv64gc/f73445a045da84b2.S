@@ -2,10 +2,10 @@
 	.quad	0x3ff0000000000000
 func00000000000000a6:
 	lui	a1, %hi(.LCPI0_0)
-	fmv.d.x	fa5, zero
-	fle.d	a2, fa5, fa0
 	fld	fa5, %lo(.LCPI0_0)(a1)
-	xori	a1, a2, 1
+	fmv.d.x	fa4, zero
+	fle.d	a1, fa4, fa0
+	xori	a1, a1, 1
 	fle.d	a2, fa1, fa5
 	xori	a2, a2, 1
 	or	a0, a0, a1

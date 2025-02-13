@@ -34,20 +34,20 @@ func0000000000000001:
 	lui	a1, 1
 	srli	a2, a0, 1
 	lui	a3, %hi(.LCPI1_0)
+	lui	a4, %hi(.LCPI1_1)
 	addiw	a1, a1, -832
 	and	a0, a0, a1
 	lui	a1, 61681
 	andi	a2, a2, 1088
+	ld	a3, %lo(.LCPI1_0)(a3)
+	ld	a4, %lo(.LCPI1_1)(a4)
 	addiw	a1, a1, -241
 	sub	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_0)(a3)
-	ld	a2, %lo(.LCPI1_1)(a2)
 	and	a3, a3, a0
 	srli	a0, a0, 2
-	and	a0, a0, a2
+	and	a0, a0, a4
 	add	a0, a0, a3
 	srli	a2, a0, 4
 	add	a0, a0, a2

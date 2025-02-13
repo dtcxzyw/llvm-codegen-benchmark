@@ -39,11 +39,11 @@ func0000000000000180:
 func0000000000000060:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v8, 6
-	vsrl.vi	v8, v8, 2
 	lui	a0, %hi(.LCPI3_0)
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
 	ld	a0, %lo(.LCPI3_0)(a0)
+	vadd.vv	v10, v10, v12
+	vsrl.vi	v8, v8, 2
+	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	ret
 

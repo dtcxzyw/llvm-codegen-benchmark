@@ -45,10 +45,10 @@ func000000000000000a:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 106914
-	ld	a1, %lo(.LCPI4_0)(a1)
 	addiw	a0, a0, -1510
 	vand.vx	v8, v8, a1
 	slli	a1, a0, 32

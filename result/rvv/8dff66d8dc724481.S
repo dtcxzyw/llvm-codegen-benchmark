@@ -4,9 +4,9 @@ func00000000000001e8:
 	lui	a0, 272
 	vor.vv	v10, v12, v10
 	addi	a0, a0, -1
-	vor.vv	v10, v10, v8
 	vmsgtu.vx	v0, v8, a0
-	vmerge.vxm	v8, v10, a0, v0
+	vor.vv	v8, v10, v8
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func00000000000001f8:

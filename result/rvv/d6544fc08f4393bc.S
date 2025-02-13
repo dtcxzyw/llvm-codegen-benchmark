@@ -2,13 +2,13 @@
 	.quad	108086680950914688
 func0000000000000002:
 	li	a0, 255
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
 	vmv.v.i	v10, 1
-	vand.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI0_0)
 	vsll.vv	v8, v10, v8
-	ld	a0, %lo(.LCPI0_0)(a0)
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v8, a1
 	ret
 
 func0000000000000003:

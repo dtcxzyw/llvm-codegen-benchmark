@@ -12,9 +12,9 @@ func0000000000000065:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	li	a0, 81
+	vmsle.vi	v0, v8, 15
 	vmv.v.x	v10, a0
 	li	a0, 42
-	vmsle.vi	v0, v8, 15
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
 	ret

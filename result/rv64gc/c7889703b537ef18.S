@@ -37,10 +37,10 @@ func000000000000001b:
 	ret
 
 func0000000000000006:
-	slli	a2, a1, 48
-	lui	a1, 1048540
-	srli	a2, a2, 48
+	slli	a1, a1, 48
+	srli	a2, a1, 48
 	li	a3, 12
+	lui	a1, 1048540
 	beq	a2, a3, .LBB3_2
 	addiw	a1, a1, -480
 	add	a0, a0, a1

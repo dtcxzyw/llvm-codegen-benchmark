@@ -57,14 +57,14 @@ func000000000000042d:
 	.word	0x3d25aee6
 func0000000000000423:
 	fli.s	fa5, 1.0
+	lui	a0, %hi(.LCPI4_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
+	flw	fa4, %lo(.LCPI4_0)(a0)
 	vfmerge.vfm	v12, v8, fa5, v0
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI4_0)
 	vmflt.vf	v16, v8, fa5
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	vmfge.vf	v8, v12, fa5
+	vmfge.vf	v8, v12, fa4
 	vmorn.mm	v0, v16, v8
 	ret
 

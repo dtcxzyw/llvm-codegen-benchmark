@@ -91,9 +91,9 @@ func0000000000000035:
 .LCPI7_1:
 	.quad	0xbff921fb54442d18
 func0000000000000042:
-	fsub.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa4, %lo(.LCPI7_0)(a0)
+	fsub.d	fa5, fa1, fa2
 	flt.d	a0, fa4, fa5
 	bnez	a0, .LBB7_2
 	fmv.d	fa0, fa5

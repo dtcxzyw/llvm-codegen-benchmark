@@ -5,13 +5,13 @@
 func000000000000001b:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	lui	a3, %hi(.LCPI0_1)
+	ld	a3, %lo(.LCPI0_1)(a3)
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
-	lui	a2, %hi(.LCPI0_1)
 	add	a0, a0, a1
 	srli	a0, a0, 7
-	ld	a1, %lo(.LCPI0_1)(a2)
-	mulhu	a0, a0, a1
+	mulhu	a0, a0, a3
 	slli	a0, a0, 38
 	srli	a1, a0, 38
 	li	a0, 0

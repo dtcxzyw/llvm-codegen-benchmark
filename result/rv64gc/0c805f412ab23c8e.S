@@ -19,8 +19,8 @@ func0000000000000007:
 
 func0000000000000005:
 	andi	a2, a1, 255
-	lui	a1, 524288
 	li	a3, 10
+	lui	a1, 524288
 	beq	a2, a3, .LBB2_2
 	li	a1, -1
 	slli	a1, a1, 63

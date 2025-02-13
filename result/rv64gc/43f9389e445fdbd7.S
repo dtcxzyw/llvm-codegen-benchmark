@@ -1,27 +1,27 @@
 func0000000000000001:
-	mv	a2, a0
-	addi	a0, a1, 9
-	andi	a1, a0, 1
-	beqz	a1, .LBB0_2
-	mv	a0, a2
+	addi	a1, a1, 9
+	andi	a2, a1, 1
+	beqz	a2, .LBB0_2
+	mv	a1, a0
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000061:
-	mv	a2, a0
-	addi	a0, a1, 1
-	andi	a1, a0, 15
-	beqz	a1, .LBB1_2
-	mv	a0, a2
+	addi	a1, a1, 1
+	andi	a2, a1, 15
+	beqz	a2, .LBB1_2
+	mv	a1, a0
 .LBB1_2:
+	mv	a0, a1
 	ret
 
 func0000000000000021:
-	mv	a2, a0
-	addi	a0, a1, 33
-	andi	a1, a0, 1
-	beqz	a1, .LBB2_2
-	mv	a0, a2
+	addi	a1, a1, 33
+	andi	a2, a1, 1
+	beqz	a2, .LBB2_2
+	mv	a1, a0
 .LBB2_2:
+	mv	a0, a1
 	ret
 

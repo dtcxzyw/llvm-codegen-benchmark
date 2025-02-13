@@ -129,17 +129,17 @@ func0000000000000000:
 .LCPI10_0:
 	.quad	211813488000000000
 func0000000000000040:
-	lui	a3, 244
-	addiw	a3, a3, 576
-	mul	a1, a1, a3
 	lui	a3, 2575
+	lui	a4, 244
+	addiw	a4, a4, 576
+	mul	a1, a1, a4
+	lui	a4, %hi(.LCPI10_0)
 	addiw	a3, a3, -325
+	ld	a4, %lo(.LCPI10_0)(a4)
 	slli	a3, a3, 13
 	mul	a2, a2, a3
-	lui	a3, %hi(.LCPI10_0)
 	add	a0, a0, a1
 	add	a0, a0, a2
-	ld	a1, %lo(.LCPI10_0)(a3)
-	add	a0, a0, a1
+	add	a0, a0, a4
 	ret
 

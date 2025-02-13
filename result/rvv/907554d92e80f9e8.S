@@ -1,16 +1,16 @@
 func0000000000000001:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vi	v9, v9, 1
 	vmseq.vi	v0, v8, 0
-	vmerge.vim	v8, v9, 0, v0
+	vand.vi	v8, v9, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vi	v9, v9, 2
 	li	a0, -65
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
-	vmerge.vim	v8, v9, 4, v0
+	vand.vi	v8, v9, 2
+	vmerge.vim	v8, v8, 4, v0
 	ret
 
 func0000000000000004:

@@ -1,15 +1,15 @@
 func0000000000000028:
-	andi	a2, a0, 255
-	andi	a0, a1, 255
-	beqz	a0, .LBB0_2
+	andi	a2, a1, 255
+	andi	a1, a0, 255
+	beqz	a2, .LBB0_2
 	li	a0, 1154
-	li	a1, 16
-	bltu	a1, a2, .LBB0_3
+	li	a2, 16
+	bltu	a2, a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 421
-	li	a1, 16
-	bgeu	a1, a2, .LBB0_4
+	li	a2, 16
+	bgeu	a2, a1, .LBB0_4
 .LBB0_3:
 	li	a0, 1154
 .LBB0_4:
@@ -34,45 +34,45 @@ func0000000000000021:
 	ret
 
 func0000000000000084:
-	andi	a2, a0, 255
-	andi	a0, a1, 255
-	li	a1, 6
-	bltu	a0, a1, .LBB2_2
+	andi	a2, a1, 255
+	li	a3, 6
+	andi	a1, a0, 255
+	bltu	a2, a3, .LBB2_2
 	li	a0, -55
-	li	a1, 10
-	bltu	a2, a1, .LBB2_3
+	li	a2, 10
+	bltu	a1, a2, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	li	a0, -87
-	li	a1, 10
-	bgeu	a2, a1, .LBB2_4
+	li	a2, 10
+	bgeu	a1, a2, .LBB2_4
 .LBB2_3:
 	li	a0, -48
 .LBB2_4:
 	ret
 
 func0000000000000081:
-	andi	a2, a0, 255
-	andi	a0, a1, 255
-	li	a1, 5
-	bltu	a0, a1, .LBB3_2
+	andi	a2, a1, 255
+	li	a3, 5
+	andi	a1, a0, 255
+	bltu	a2, a3, .LBB3_2
 	li	a0, 11
-	li	a1, 47
-	beq	a2, a1, .LBB3_3
+	li	a2, 47
+	beq	a1, a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 9
-	li	a1, 47
-	bne	a2, a1, .LBB3_4
+	li	a2, 47
+	bne	a1, a2, .LBB3_4
 .LBB3_3:
 	li	a0, 8
 .LBB3_4:
 	ret
 
 func0000000000000024:
-	andi	a0, a0, 255
 	andi	a1, a1, 255
 	li	a2, 32
+	andi	a0, a0, 255
 	beq	a1, a2, .LBB4_2
 	li	a1, 2
 	sltiu	a0, a0, 16

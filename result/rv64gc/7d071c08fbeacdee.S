@@ -33,9 +33,9 @@ func000000000000006d:
 	lui	a1, %hi(.LCPI3_0)
 	lui	a2, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a1)
+	fld	fa4, %lo(.LCPI3_1)(a2)
 	flt.d	a1, fa1, fa5
-	fld	fa5, %lo(.LCPI3_1)(a2)
-	flt.d	a2, fa0, fa5
+	flt.d	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -49,9 +49,9 @@ func0000000000000065:
 	lui	a1, %hi(.LCPI4_0)
 	lui	a2, %hi(.LCPI4_1)
 	fld	fa5, %lo(.LCPI4_0)(a1)
+	fld	fa4, %lo(.LCPI4_1)(a2)
 	flt.d	a1, fa1, fa5
-	fld	fa5, %lo(.LCPI4_1)(a2)
-	fle.d	a2, fa0, fa5
+	fle.d	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

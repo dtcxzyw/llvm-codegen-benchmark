@@ -7,10 +7,10 @@ func0000000000000026:
 .LCPI1_0:
 	.quad	999999999999999999
 func0000000000000028:
-	fcvt.l.d	a1, fa0, rtz
-	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	fcvt.l.d	a2, fa0, rtz
+	add	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
 

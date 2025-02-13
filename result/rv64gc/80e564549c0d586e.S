@@ -18,9 +18,9 @@ func0000000000000000:
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	fcvt.s.w	fa5, a0
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
-	fmul.s	fa0, fa5, fa4
+	lui	a1, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a1)
+	fcvt.s.w	fa4, a0
+	fmul.s	fa0, fa4, fa5
 	ret
 

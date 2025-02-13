@@ -48,15 +48,15 @@ func0000000000000028:
 
 func0000000000000026:
 	sext.w	a1, a1
-	sext.w	a3, a0
-	sext.w	a2, a2
-	beqz	a2, .LBB4_2
+	sext.w	a3, a2
+	sext.w	a2, a0
+	beqz	a3, .LBB4_2
 	li	a0, 500
-	blt	a3, a1, .LBB4_3
+	blt	a2, a1, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
 	li	a0, 300
-	bge	a3, a1, .LBB4_4
+	bge	a2, a1, .LBB4_4
 .LBB4_3:
 	li	a0, 50
 .LBB4_4:

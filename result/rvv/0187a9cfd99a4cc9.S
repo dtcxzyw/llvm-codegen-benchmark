@@ -1,7 +1,7 @@
 func0000000000000144:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v10, v10
-	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -20,9 +20,9 @@ func0000000000000001:
 	ret
 
 func0000000000000104:
+	lui	a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v10, v10
-	lui	a0, 1024
 	vmsltu.vx	v0, v8, a0
 	ret
 

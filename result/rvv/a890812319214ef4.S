@@ -32,16 +32,16 @@ func0000000000000009:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v12, v10, 14
-	li	a0, 256
 	vmor.mm	v0, v0, v12
+	li	a0, 256
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v12, v10, 1
-	li	a0, 100
 	vmor.mm	v0, v0, v12
+	li	a0, 100
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 

@@ -21,17 +21,17 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
+	li	a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 33
 	vsrl.vx	v10, v8, a0
 	vxor.vv	v8, v10, v8
 	ret
 
 func000000000000001a:
+	li	a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 33
 	vsrl.vx	v10, v8, a0
 	vxor.vv	v8, v10, v8
 	ret

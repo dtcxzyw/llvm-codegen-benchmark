@@ -6,18 +6,18 @@ func0000000000000060:
 	ret
 
 func0000000000000000:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
 	vsll.vi	v8, v8, 4
-	li	a0, 16
 	vadd.vx	v8, v8, a0
 	ret
 
 func00000000000000f8:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
 	vsll.vi	v8, v8, 4
-	li	a0, 16
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -90,10 +90,10 @@ func0000000000000050:
 	ret
 
 func0000000000000055:
+	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
 	vsll.vi	v8, v8, 16
-	bseti	a0, zero, 31
 	vadd.vx	v8, v8, a0
 	ret
 

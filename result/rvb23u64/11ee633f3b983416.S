@@ -30,11 +30,11 @@ func000000000000000a:
 .LCPI3_0:
 	.word	0x477fff00
 func0000000000000004:
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI3_0)
-	fmax.s	fa5, fa0, fa5
-	flw	fa4, %lo(.LCPI3_0)(a0)
-	fmul.s	fa0, fa5, fa4
+	flw	fa5, %lo(.LCPI3_0)(a0)
+	fmv.w.x	fa4, zero
+	fmax.s	fa4, fa0, fa4
+	fmul.s	fa0, fa4, fa5
 	ret
 
 func000000000000000c:

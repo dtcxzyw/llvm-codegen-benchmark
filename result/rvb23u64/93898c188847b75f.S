@@ -17,9 +17,9 @@ func000000000000005d:
 .LCPI2_0:
 	.word	0x40c90fdb
 func000000000000008c:
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	feq.s	a0, fa1, fa2
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
 	fle.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

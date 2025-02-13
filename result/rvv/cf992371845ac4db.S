@@ -6,8 +6,8 @@ func0000000000000024:
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vadd.vx	v8, v8, a0
-	li	a0, -87
 	vmsleu.vi	v0, v8, 5
+	li	a0, -87
 	vsetvli	zero, zero, e16, m1, ta, mu
 	vwadd.vx	v10, v9, a0, v0.t
 	vmv2r.v	v8, v10

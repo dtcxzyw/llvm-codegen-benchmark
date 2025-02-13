@@ -46,13 +46,13 @@ func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	li	a0, 255
+	lui	a1, %hi(.LCPI3_0)
 	vor.vv	v10, v10, v14
+	ld	a1, %lo(.LCPI3_0)(a1)
 	slli	a0, a0, 32
 	addi	a0, a0, 255
 	vand.vx	v10, v10, a0
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v8, a1
 	vor.vv	v8, v8, v10
 	ret
 

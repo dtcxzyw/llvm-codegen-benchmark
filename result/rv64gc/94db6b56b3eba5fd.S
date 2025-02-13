@@ -60,16 +60,16 @@ func000000000000002b:
 	ret
 
 func0000000000000011:
-	andi	a3, a1, 1
-	sext.w	a2, a2
-	li	a1, 6
-	bltu	a2, a1, .LBB5_2
+	sext.w	a3, a2
+	li	a4, 6
+	andi	a2, a1, 1
+	bltu	a3, a4, .LBB5_2
 	li	a1, -55
-	bnez	a3, .LBB5_3
+	bnez	a2, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
 	li	a1, -87
-	beqz	a3, .LBB5_4
+	beqz	a2, .LBB5_4
 .LBB5_3:
 	li	a1, -48
 .LBB5_4:

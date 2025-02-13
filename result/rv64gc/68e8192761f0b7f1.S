@@ -42,8 +42,8 @@ func0000000000000238:
 
 func000000000000006c:
 	sext.w	a0, a0
-	snez	a0, a0
 	sext.w	a1, a1
+	snez	a0, a0
 	beqz	a1, .LBB4_2
 	li	a1, 3
 	slli	a0, a0, 5

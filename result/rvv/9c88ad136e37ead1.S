@@ -11,17 +11,16 @@ func0000000000000041:
 	ret
 
 func000000000000004c:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, 255
 	slli	a0, a0, 32
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v10, v8, a0
 	bseti	a0, zero, 33
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
-	vor.vi	v10, v10, 4, v0.t
-	vmv.v.v	v8, v10
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
+	vmv1r.v	v0, v9
+	vor.vi	v8, v8, 4, v0.t
 	ret
 

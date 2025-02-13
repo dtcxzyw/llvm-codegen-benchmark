@@ -5,9 +5,9 @@ func000000000000007d:
 	lui	a4, 16
 	sub	a0, a0, a2
 	sext.w	a1, a1
+	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a0, a0, a1
 	lui	a1, 1048544
-	ld	a3, %lo(.LCPI0_0)(a3)
 	addiw	a4, a4, -15
 	addiw	a1, a1, 30
 	mulhu	a3, a2, a3

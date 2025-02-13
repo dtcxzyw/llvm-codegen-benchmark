@@ -4,8 +4,8 @@ func0000000000000021:
 	lui	a0, 4096
 	addi	a1, a0, -2
 	vand.vx	v10, v10, a1
-	vor.vx	v12, v10, a0
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vor.vx	v8, v10, a0
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

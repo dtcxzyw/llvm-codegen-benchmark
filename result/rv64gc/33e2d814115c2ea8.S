@@ -13,20 +13,20 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	andi	a3, a1, 1
-	andi	a2, a2, 63
-	li	a1, 1
-	beq	a2, a1, .LBB1_3
-	bnez	a3, .LBB1_4
+	andi	a3, a2, 63
+	li	a2, 1
+	andi	a1, a1, 1
+	beq	a3, a2, .LBB1_3
+	bnez	a1, .LBB1_4
 .LBB1_2:
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 .LBB1_3:
-	li	a1, 3
-	beqz	a3, .LBB1_2
+	li	a2, 3
+	beqz	a1, .LBB1_2
 .LBB1_4:
-	li	a1, 2
-	addw	a0, a0, a1
+	li	a2, 2
+	addw	a0, a0, a2
 	ret
 
 func0000000000000005:

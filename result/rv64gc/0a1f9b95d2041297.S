@@ -5,11 +5,11 @@
 func0000000000000000:
 	li	a2, -1
 	beq	a1, a2, .LBB0_2
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI0_1)
@@ -30,11 +30,11 @@ func0000000000000000:
 func0000000000000002:
 	li	a2, -1
 	beq	a1, a2, .LBB1_2
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI1_1)
@@ -53,11 +53,11 @@ func0000000000000002:
 .LCPI2_1:
 	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
 func0000000000000004:
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI2_1)
@@ -74,11 +74,11 @@ func0000000000000004:
 func0000000000000003:
 	li	a2, -1
 	beq	a1, a2, .LBB3_2
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI3_1)
@@ -97,11 +97,11 @@ func0000000000000003:
 .LCPI4_1:
 	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
 func0000000000000007:
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI4_1)

@@ -39,8 +39,8 @@ func0000000000000003:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	lui	a0, 476760
-	addi	a0, a0, -1932
 	vmnot.m	v0, v12
+	addi	a0, a0, -1932
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -59,9 +59,9 @@ func0000000000000006:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmfgt.vf	v13, v8, fa5
+	vmor.mm	v0, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmor.mm	v0, v13, v12
 	vmerge.vim	v8, v8, 1, v0
 	vor.vi	v8, v8, 2
 	ret
@@ -100,9 +100,9 @@ func000000000000000b:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfgt.vf	v12, v8, fa5
+	vmnot.m	v0, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 1, v0
 	li	a0, 187
 	vxor.vx	v8, v8, a0
@@ -112,9 +112,9 @@ func0000000000000005:
 	fli.d	fa5, 0.75
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfle.vf	v12, v8, fa5
+	vmnot.m	v0, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 1, v0
 	vrsub.vi	v8, v8, 2
 	ret

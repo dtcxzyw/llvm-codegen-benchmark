@@ -27,9 +27,9 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	li	a3, -17
 	srli	a3, a3, 2
+	andi	a0, a0, 1
 	bltu	a3, a2, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:

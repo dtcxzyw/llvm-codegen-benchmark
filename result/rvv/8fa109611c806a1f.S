@@ -10,9 +10,9 @@ func000000000000031c:
 func000000000000005c:
 	li	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v12, 0
 	vmseq.vx	v0, v11, a0
-	vmerge.vim	v11, v12, 1, v0
+	vmv.v.i	v11, 0
+	vmerge.vim	v11, v11, 1, v0
 	vadd.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
 	ret

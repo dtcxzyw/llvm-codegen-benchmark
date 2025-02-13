@@ -65,12 +65,12 @@ func0000000000000423:
 	bnez	a0, .LBB4_2
 	fmv.s	fa5, fa0
 .LBB4_2:
-	fmv.w.x	fa4, zero
 	lui	a0, %hi(.LCPI4_0)
-	flt.s	a1, fa0, fa4
 	flw	fa4, %lo(.LCPI4_0)(a0)
-	fle.s	a0, fa4, fa5
-	xori	a0, a0, 1
+	fmv.w.x	fa3, zero
+	flt.s	a0, fa0, fa3
+	fle.s	a1, fa4, fa5
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

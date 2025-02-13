@@ -9,9 +9,9 @@ func000000000000001e:
 .LCPI1_0:
 	.quad	-4078282918271054303
 func0000000000000018:
-	srli	a1, a1, 9
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	srli	a1, a1, 9
 	mul	a0, a0, a1
 	srli	a0, a0, 8
 	ret

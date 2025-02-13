@@ -5,17 +5,17 @@
 func0000000000000021:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	mulh	a1, a0, a1
-	srli	a2, a1, 63
-	srai	a1, a1, 25
-	add	a1, a1, a2
 	lui	a2, 21094
+	mulh	a1, a0, a1
+	srli	a3, a1, 63
+	srai	a1, a1, 25
+	add	a1, a1, a3
+	lui	a3, %hi(.LCPI0_1)
+	ld	a3, %lo(.LCPI0_1)(a3)
 	addiw	a2, a2, -1024
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI0_1)
-	ld	a2, %lo(.LCPI0_1)(a2)
 	sub	a0, a0, a1
-	mulh	a1, a0, a2
+	mulh	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 20
 	add	a1, a1, a2
@@ -42,9 +42,9 @@ func0000000000000020:
 	slli	a2, a2, 13
 	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI1_1)
+	ld	a2, %lo(.LCPI1_1)(a2)
 	sub	a0, a0, a1
 	lui	a1, 262083
-	ld	a2, %lo(.LCPI1_1)(a2)
 	slli	a1, a1, 2
 	mulh	a0, a0, a2
 	srli	a2, a0, 63

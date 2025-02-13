@@ -121,11 +121,11 @@ func0000000000000048:
 .LCPI13_0:
 	.word	0x3d25aee6
 func0000000000000023:
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI13_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v16, v12, fa5
 	flw	fa5, %lo(.LCPI13_0)(a0)
+	fmv.w.x	fa4, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v16, v12, fa4
 	vmfge.vf	v12, v8, fa5
 	vmorn.mm	v0, v16, v12
 	ret

@@ -49,20 +49,20 @@ func0000000000000000:
 .LCPI3_0:
 	.quad	-3689348814741910312
 func0000000000000010:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	vmacc.vx	v8, a0, v10
 	ret
 
 .LCPI4_0:
 	.quad	3689348814741910328
 func0000000000000014:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 3
 	vmacc.vx	v8, a0, v10
 	ret
 

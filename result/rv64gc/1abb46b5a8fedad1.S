@@ -13,11 +13,11 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	mv	a2, a0
-	slli	a0, a1, 9
-	bltu	a0, a2, .LBB2_2
-	mv	a0, a2
+	slli	a1, a1, 9
+	bltu	a1, a0, .LBB2_2
+	mv	a1, a0
 .LBB2_2:
+	mv	a0, a1
 	ret
 
 func0000000000000007:

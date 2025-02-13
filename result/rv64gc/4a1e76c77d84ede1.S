@@ -1,12 +1,12 @@
 func0000000000000010:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	feq.s	a1, fa1, fa0
+	fmv.w.x	fa5, zero
+	feq.s	a1, fa1, fa5
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000004:
@@ -44,14 +44,14 @@ func0000000000000002:
 	ret
 
 func000000000000000e:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	feq.s	a1, fa1, fa0
+	fmv.w.x	fa5, zero
+	feq.s	a1, fa1, fa5
 	not	a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB4_2:
+	fmv.s	fa0, fa5
 	ret
 

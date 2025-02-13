@@ -110,11 +110,11 @@ func00000000000000d4:
 	lui	a0, %hi(.LCPI10_0)
 	flw	fa5, %lo(.LCPI10_0)(a0)
 	lui	a0, %hi(.LCPI10_1)
+	flw	fa4, %lo(.LCPI10_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
-	flw	fa5, %lo(.LCPI10_1)(a0)
 	vmorn.mm	v12, v0, v16
-	vmfle.vf	v13, v8, fa5
+	vmfle.vf	v13, v8, fa4
 	vmorn.mm	v0, v12, v13
 	ret
 

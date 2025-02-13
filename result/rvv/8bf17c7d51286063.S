@@ -14,15 +14,15 @@ func0000000000000140:
 	.quad	-4417276706812531889
 func0000000000000100:
 	lui	a0, 797483
+	lui	a1, %hi(.LCPI1_0)
 	addi	a0, a0, -451
+	ld	a1, %lo(.LCPI1_0)(a1)
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	li	a0, 32
 	vsrl.vx	v12, v12, a0
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v8, a1, v10
 	vadd.vv	v8, v8, v12
 	ret
 

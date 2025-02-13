@@ -1,7 +1,7 @@
 func0000000000000021:
+	li	a3, 4
 	sub	a1, a1, a2
-	li	a2, 4
-	bge	a2, a0, .LBB0_3
+	bge	a3, a0, .LBB0_3
 	bge	a0, a1, .LBB0_4
 .LBB0_2:
 	srai	a1, a0, 63

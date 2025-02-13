@@ -16,10 +16,10 @@ func0000000000000004:
 	vmv.v.i	v10, 0
 	li	a0, 128
 	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v8, v10, 1, v0
+	vxor.vi	v8, v10, 3
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

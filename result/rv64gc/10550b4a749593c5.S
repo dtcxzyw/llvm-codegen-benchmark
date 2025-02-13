@@ -64,11 +64,11 @@ func0000000000000001:
 	.word	0x40490fdb
 func0000000000000003:
 	fadd.s	fa5, fa0, fa1
-	lui	a0, 258048
-	fmv.w.x	fa4, a0
 	lui	a0, %hi(.LCPI7_0)
-	fmul.s	fa5, fa5, fa4
 	flw	fa4, %lo(.LCPI7_0)(a0)
+	lui	a0, 258048
+	fmv.w.x	fa3, a0
+	fmul.s	fa5, fa5, fa3
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret

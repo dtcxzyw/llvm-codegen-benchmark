@@ -2,9 +2,9 @@
 	.quad	1654928120671552141
 func0000000000000051:
 	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a0, a0, a1
 	lui	a1, 1048574
-	ld	a3, %lo(.LCPI0_0)(a3)
 	addi	a1, a1, -1808
 	mulh	a2, a2, a3
 	srli	a3, a2, 63

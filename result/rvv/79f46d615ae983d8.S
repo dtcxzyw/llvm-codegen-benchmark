@@ -22,10 +22,10 @@ func00000000000002aa:
 	ret
 
 func00000000000007a6:
+	li	a0, 97
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
-	li	a0, 97
 	vmslt.vx	v0, v8, a0
 	ret
 
@@ -78,10 +78,10 @@ func0000000000000281:
 	ret
 
 func00000000000007a8:
+	li	a0, 264
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
-	li	a0, 264
 	vmsgtu.vx	v0, v8, a0
 	ret
 

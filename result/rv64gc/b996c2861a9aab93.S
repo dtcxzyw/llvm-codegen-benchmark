@@ -14,13 +14,13 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
 	lui	a1, 276464
 	fadd.s	fa4, fa0, fa5
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
+	andi	a0, a0, 1
 	bnez	a1, .LBB1_2
 	fmv.s	fa5, fa4
 .LBB1_2:

@@ -1,7 +1,7 @@
 func0000000000000001:
-	andi	a1, a1, 1
 	sext.w	a3, a2
 	li	a4, 1
+	andi	a1, a1, 1
 	beq	a3, a4, .LBB0_4
 	andi	a0, a0, 1
 	bnez	a1, .LBB0_5

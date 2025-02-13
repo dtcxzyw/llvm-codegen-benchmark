@@ -5,9 +5,9 @@ func0000000000000016:
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
+	vmnot.m	v0, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -98,9 +98,9 @@ func0000000000000012:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
+	vmnor.mm	v0, v17, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmnor.mm	v0, v17, v16
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -109,9 +109,9 @@ func000000000000000c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v0, v17, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmor.mm	v0, v17, v16
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -119,9 +119,9 @@ func0000000000000006:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
+	vmnot.m	v0, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

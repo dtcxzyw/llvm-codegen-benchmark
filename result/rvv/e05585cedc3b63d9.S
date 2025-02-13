@@ -110,9 +110,9 @@ func00000000000000c1:
 func000000000000030a:
 	lui	a0, 524288
 	addiw	a1, a0, -33
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v9, v9, a0, v0
 	vmslt.vv	v0, v8, v9

@@ -8,11 +8,11 @@ func0000000000000016:
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	vmul.vx	v10, v10, a0
 	vmaxu.vv	v8, v10, v8
 	vadd.vv	v8, v8, v10
-	ld	a0, %lo(.LCPI0_0)(a1)
-	vminu.vx	v8, v8, a0
+	vminu.vx	v8, v8, a1
 	ret
 
 .LCPI1_0:
@@ -25,10 +25,10 @@ func0000000000000012:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	vmul.vx	v10, v10, a0
 	vmaxu.vv	v8, v10, v8
 	vadd.vv	v8, v8, v10
-	ld	a0, %lo(.LCPI1_0)(a1)
-	vminu.vx	v8, v8, a0
+	vminu.vx	v8, v8, a1
 	ret
 

@@ -14,11 +14,11 @@ func000000000000006f:
 func000000000000006c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 8
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vor.vv	v8, v8, v12
 	vzext.vf8	v12, v10
-	lui	a0, %hi(.LCPI1_0)
 	vor.vv	v8, v8, v12
-	ld	a0, %lo(.LCPI1_0)(a0)
 	vmul.vx	v8, v8, a0
 	ret
 

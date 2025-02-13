@@ -37,9 +37,9 @@ func0000000000000019:
 func000000000000000d:
 	li	a0, 54
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v10, 6
 	vmslt.vx	v0, v9, a0
-	vmerge.vvm	v10, v10, v8, v0
+	vmv.v.i	v9, 6
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -60,9 +60,9 @@ func0000000000000008:
 	lui	a0, 4096
 	addi	a1, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.x	v10, a0
 	vmsltu.vx	v0, v9, a1
-	vmerge.vvm	v10, v10, v8, v0
+	vmv.v.x	v9, a0
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -100,9 +100,9 @@ func0000000000000014:
 func0000000000000010:
 	li	a0, 199
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v10, 0
 	vmsgtu.vx	v0, v9, a0
-	vmerge.vvm	v10, v10, v8, v0
+	vmv.v.i	v9, 0
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -116,9 +116,9 @@ func0000000000000018:
 func0000000000000031:
 	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v10, 8
 	vmsgtu.vx	v0, v9, a0
-	vmerge.vvm	v10, v10, v8, v0
+	vmv.v.i	v9, 8
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -126,9 +126,9 @@ func0000000000000031:
 func000000000000000c:
 	li	a0, 48
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v10, 6
 	vmslt.vx	v0, v9, a0
-	vmerge.vvm	v10, v10, v8, v0
+	vmv.v.i	v9, 6
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

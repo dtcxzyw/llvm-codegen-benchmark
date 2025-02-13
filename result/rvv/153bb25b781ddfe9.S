@@ -25,8 +25,8 @@ func000000000000000d:
 	.quad	1537228672809129301
 func000000000000000b:
 	lui	a0, %hi(.LCPI2_0)
-	lui	a1, 209715
 	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, 209715
 	addiw	a1, a1, 819
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0

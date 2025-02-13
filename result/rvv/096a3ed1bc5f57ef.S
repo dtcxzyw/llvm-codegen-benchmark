@@ -21,14 +21,14 @@ func0000000000000073:
 .LCPI2_0:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000072:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfdiv.vv	v16, v16, v8
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	vmfeq.vf	v24, v8, fa5
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	vmflt.vf	v8, v16, fa5
-	vmor.mm	v0, v24, v8
+	fmv.d.x	fa4, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v24, v8, fa4
+	vfdiv.vv	v8, v16, v8
+	vmflt.vf	v16, v8, fa5
+	vmor.mm	v0, v24, v16
 	ret
 
 func000000000000007c:

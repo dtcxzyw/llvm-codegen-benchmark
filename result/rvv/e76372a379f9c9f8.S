@@ -24,11 +24,11 @@ func000000000000000a:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmerge.vfm	v16, v16, fa5, v0
-	fld	fa5, %lo(.LCPI2_1)(a0)
-	vmfle.vf	v0, v16, fa5
-	vfmerge.vfm	v16, v16, fa5, v0
+	vmfle.vf	v0, v16, fa4
+	vfmerge.vfm	v16, v16, fa4, v0
 	vfmul.vv	v8, v8, v16
 	ret
 

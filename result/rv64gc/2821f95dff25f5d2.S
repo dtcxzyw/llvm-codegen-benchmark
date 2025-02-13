@@ -25,11 +25,11 @@ func0000000000000014:
 	slli	a3, a3, 40
 	or	a4, a4, a6
 	or	a1, a1, a3
+	ld	a3, %lo(.LCPI0_0)(a5)
 	or	a1, a1, a2
 	or	a1, a1, a4
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI0_0)(a5)
-	mulhu	a0, a0, a1
+	mulhu	a0, a0, a3
 	li	a1, 0
 	ret
 

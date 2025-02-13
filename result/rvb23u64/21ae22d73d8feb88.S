@@ -19,10 +19,10 @@ func0000000000000005:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000000:
-	li	a1, 11
-	minu	a0, a0, a1
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	li	a2, 11
+	minu	a0, a0, a2
 	mul	a0, a0, a1
 	ret
 

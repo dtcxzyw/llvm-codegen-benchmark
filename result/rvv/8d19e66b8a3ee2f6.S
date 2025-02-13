@@ -4,8 +4,8 @@ func0000000000000085:
 	vand.vx	v10, v10, a0
 	li	a0, -151
 	vadd.vx	v8, v8, a0
-	li	a0, -150
 	vmseq.vi	v0, v10, 0
+	li	a0, -150
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

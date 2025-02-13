@@ -45,8 +45,8 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
-	fadd.s	fa5, fa0, fa5
 	flw	fa4, %lo(.LCPI5_1)(a0)
+	fadd.s	fa5, fa0, fa5
 	flt.s	a0, fa4, fa5
 	ret
 

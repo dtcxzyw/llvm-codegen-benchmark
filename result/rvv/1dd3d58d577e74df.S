@@ -1,8 +1,8 @@
 func0000000000000002:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmv.v.i	v16, 0
 	vmflt.vf	v0, v8, fa5
+	vmv.v.i	v16, 0
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
@@ -20,8 +20,8 @@ func0000000000000004:
 func0000000000000007:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmv.v.i	v16, 0
 	vmfne.vf	v0, v8, fa5
+	vmv.v.i	v16, 0
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret

@@ -18,18 +18,18 @@ func0000000000000004:
 
 func0000000000000008:
 	fli.s	fa5, inf
-	li	a0, -1
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v12, fa5
+	li	a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000003:
 	fmv.w.x	fa5, zero
-	li	a0, -1
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
 	vmnot.m	v0, v16
+	li	a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

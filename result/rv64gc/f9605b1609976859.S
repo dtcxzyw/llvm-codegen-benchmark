@@ -1,16 +1,16 @@
 func000000000000000c:
-	andi	a3, a0, 1
-	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
+	andi	a3, a1, 1
+	andi	a1, a0, 1
+	bnez	a3, .LBB0_2
 	sext.w	a2, a2
 	seqz	a0, a2
 	addi	a0, a0, -1
 	andi	a0, a0, 771
-	bnez	a3, .LBB0_3
+	bnez	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 770
-	beqz	a3, .LBB0_4
+	beqz	a1, .LBB0_4
 .LBB0_3:
 	li	a0, 769
 .LBB0_4:
@@ -38,8 +38,8 @@ func000000000000000a:
 	mv	a3, a0
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	lui	a0, 1048575
 	li	a4, 1
+	lui	a0, 1048575
 	blt	a4, a2, .LBB2_2
 	addiw	a0, a0, 2007
 	andi	a3, a3, 1
@@ -61,17 +61,17 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	andi	a3, a0, 1
-	andi	a1, a1, 1
-	bnez	a1, .LBB3_2
+	andi	a3, a1, 1
+	andi	a1, a0, 1
+	bnez	a3, .LBB3_2
 	srliw	a0, a2, 28
 	seqz	a0, a0
 	addi	a0, a0, 10
-	bnez	a3, .LBB3_3
+	bnez	a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 12
-	beqz	a3, .LBB3_4
+	beqz	a1, .LBB3_4
 .LBB3_3:
 	li	a0, 13
 .LBB3_4:
@@ -79,9 +79,9 @@ func0000000000000004:
 
 func0000000000000006:
 	mv	a3, a0
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a0, 30
+	andi	a1, a1, 1
 	blt	a2, a0, .LBB4_2
 	li	a0, 72
 	andi	a3, a3, 1

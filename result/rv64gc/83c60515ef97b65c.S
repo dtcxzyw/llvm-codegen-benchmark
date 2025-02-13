@@ -29,17 +29,17 @@ func0000000000000a01:
 	ret
 
 func0000000000000221:
-	sext.w	a3, a1
-	andi	a2, a2, 1
-	bnez	a2, .LBB2_2
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB2_2
 	li	a1, -55
-	li	a2, 10
-	bltu	a3, a2, .LBB2_3
+	li	a3, 10
+	bltu	a2, a3, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	li	a1, -87
-	li	a2, 10
-	bgeu	a3, a2, .LBB2_4
+	li	a3, 10
+	bgeu	a2, a3, .LBB2_4
 .LBB2_3:
 	li	a1, -48
 .LBB2_4:

@@ -15,13 +15,12 @@ func0000000000000041:
 	ret
 
 func0000000000000028:
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v12, -1
 	lui	a0, 4096
 	addiw	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
-	vsll.vv	v12, v12, v10, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, -1
+	vsll.vv	v8, v8, v10, v0.t
 	ret
 
 func0000000000000021:

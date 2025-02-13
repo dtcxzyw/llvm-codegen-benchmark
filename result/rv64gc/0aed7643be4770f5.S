@@ -1,7 +1,7 @@
 func0000000000000481:
-	sext.w	a0, a0
 	addiw	a3, a2, -65
 	li	a4, 26
+	sext.w	a0, a0
 	bltu	a3, a4, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -11,9 +11,9 @@ func0000000000000481:
 	ret
 
 func0000000000000486:
-	sext.w	a0, a0
 	addiw	a3, a2, -65
 	li	a4, 26
+	sext.w	a0, a0
 	bltu	a3, a4, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -22,9 +22,9 @@ func0000000000000486:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	addiw	a3, a2, -65
 	li	a4, 26
+	sext.w	a0, a0
 	bltu	a3, a4, .LBB2_2
 	mv	a1, a2
 .LBB2_2:

@@ -26,9 +26,9 @@ func000000000000000c:
 func0000000000000003:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vv	v16, v12, v8
+	vmnot.m	v0, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 1, v0
 	vadd.vi	v8, v8, 1
 	ret

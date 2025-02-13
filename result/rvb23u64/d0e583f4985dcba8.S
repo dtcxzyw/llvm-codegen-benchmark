@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.word	0x3c23d70a
 func0000000000000004:
-	fsub.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI0_0)
-	flw	fa4, %lo(.LCPI0_0)(a1)
-	flt.s	a1, fa5, fa4
+	flw	fa5, %lo(.LCPI0_0)(a1)
+	fsub.s	fa4, fa0, fa1
+	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
@@ -33,10 +33,10 @@ func0000000000000010:
 .LCPI4_0:
 	.word	0x3dcccccd
 func000000000000001a:
-	fsub.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI4_0)
-	flw	fa4, %lo(.LCPI4_0)(a1)
-	flt.s	a1, fa5, fa4
+	flw	fa5, %lo(.LCPI4_0)(a1)
+	fsub.s	fa4, fa0, fa1
+	flt.s	a1, fa4, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -51,10 +51,10 @@ func0000000000000008:
 .LCPI6_0:
 	.word	0x3f333333
 func000000000000000a:
-	fsub.s	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI6_0)
-	flw	fa4, %lo(.LCPI6_0)(a1)
-	fle.s	a1, fa5, fa4
+	flw	fa5, %lo(.LCPI6_0)(a1)
+	fsub.s	fa4, fa0, fa1
+	fle.s	a1, fa4, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

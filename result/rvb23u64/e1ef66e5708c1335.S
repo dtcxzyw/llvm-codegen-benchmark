@@ -6,10 +6,10 @@ func0000000000000004:
 	li	a0, -1
 	fmv.w.x	fa1, a0
 .LBB0_2:
-	fmul.s	fa5, fa1, fa0
 	lui	a0, %hi(.LCPI0_0)
-	flw	fa4, %lo(.LCPI0_0)(a0)
-	flt.s	a0, fa4, fa5
+	flw	fa5, %lo(.LCPI0_0)(a0)
+	fmul.s	fa4, fa1, fa0
+	flt.s	a0, fa5, fa4
 	ret
 
 func0000000000000002:
@@ -54,10 +54,10 @@ func0000000000000005:
 	beqz	a0, .LBB4_2
 	fmv.w.x	fa1, zero
 .LBB4_2:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa4, %lo(.LCPI4_0)(a0)
-	fle.s	a0, fa5, fa4
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	fmul.s	fa4, fa0, fa1
+	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

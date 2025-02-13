@@ -8,18 +8,20 @@ func0000000000000006:
 	ret
 
 func00000000000000e8:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 3
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func00000000000000e6:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmslt.vv	v0, v8, v10
 	ret
 
@@ -34,106 +36,119 @@ func00000000000000aa:
 	ret
 
 func0000000000000081:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000084:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func00000000000000c1:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000041:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 7
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 7
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000088:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func00000000000000a6:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 4
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 4
 	vmsleu.vv	v0, v8, v10
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000e1:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000a1:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000044:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
 	vmsltu.vv	v0, v10, v8
 	ret
 

@@ -35,13 +35,13 @@ func0000000000000005:
 	.quad	-6313183731941900
 func0000000000000065:
 	lui	a2, 2153
+	lui	a3, %hi(.LCPI4_0)
 	addiw	a2, a2, 547
+	ld	a3, %lo(.LCPI4_0)(a3)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI4_0)
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI4_0)(a2)
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
 func000000000000002f:

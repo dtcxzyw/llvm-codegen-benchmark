@@ -59,16 +59,16 @@ func00000000000003ec:
 	.quad	1844674407370955161
 func0000000000000308:
 	li	a0, -48
+	li	a1, -2
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, -2
-	zext.w	a0, a0
-	vand.vx	v10, v10, a0
-	li	a0, 10
-	vmacc.vx	v10, a0, v8
 	lui	a0, %hi(.LCPI4_0)
+	zext.w	a1, a1
 	ld	a0, %lo(.LCPI4_0)(a0)
+	vand.vx	v10, v10, a1
+	li	a1, 10
+	vmacc.vx	v10, a1, v8
 	vmsgtu.vx	v0, v10, a0
 	ret
 

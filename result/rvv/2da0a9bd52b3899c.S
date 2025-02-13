@@ -48,8 +48,8 @@ func0000000000000048:
 
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v12, v10, v8
 	vmseq.vv	v0, v10, v8
-	vmerge.vim	v8, v12, -1, v0
+	vsub.vv	v8, v10, v8
+	vmerge.vim	v8, v8, -1, v0
 	ret
 

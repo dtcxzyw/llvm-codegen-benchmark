@@ -34,9 +34,9 @@ func0000000000000000:
 .LCPI5_0:
 	.quad	163391164108059
 func0000000000000004:
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	subw	a0, a0, a1
-	lui	a1, %hi(.LCPI5_0)
-	ld	a1, %lo(.LCPI5_0)(a1)
-	mul	a0, a0, a1
+	mul	a0, a0, a2
 	ret
 

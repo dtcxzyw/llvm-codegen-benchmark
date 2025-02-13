@@ -1,9 +1,9 @@
 func0000000000000003:
-	andi	a0, a0, 1
-	bnez	a0, .LBB0_2
-	li	a1, -3
-.LBB0_2:
+	andi	a2, a0, 1
 	mv	a0, a1
+	bnez	a2, .LBB0_2
+	li	a0, -3
+.LBB0_2:
 	ret
 
 func0000000000000007:
@@ -13,11 +13,11 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
-	bnez	a0, .LBB2_2
-	li	a1, -127
-.LBB2_2:
+	andi	a2, a0, 1
 	mv	a0, a1
+	bnez	a2, .LBB2_2
+	li	a0, -127
+.LBB2_2:
 	ret
 
 func0000000000000002:

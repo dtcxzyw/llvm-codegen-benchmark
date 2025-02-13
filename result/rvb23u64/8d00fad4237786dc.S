@@ -1,7 +1,7 @@
 func0000000000000042:
-	andi	a0, a0, 1
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa1
+	andi	a0, a0, 1
 	beqz	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:
@@ -16,9 +16,9 @@ func0000000000000042:
 	ret
 
 func0000000000000044:
-	andi	a0, a0, 1
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa1
+	andi	a0, a0, 1
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:
@@ -33,9 +33,9 @@ func0000000000000044:
 	ret
 
 func0000000000000045:
-	andi	a0, a0, 1
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa1
+	andi	a0, a0, 1
 	beqz	a1, .LBB2_3
 	bnez	a0, .LBB2_4
 .LBB2_2:

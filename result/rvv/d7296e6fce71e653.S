@@ -3,34 +3,34 @@ func0000000000000021:
 	vzext.vf4	v12, v10
 	lui	a0, 196384
 	vor.vv	v8, v8, v12
-	vmv.v.i	v10, -9
 	addi	a0, a0, 274
 	vmseq.vx	v0, v8, a0
-	vmerge.vim	v8, v10, 0, v0
+	vmv.v.i	v8, -9
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 func0000000000000034:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 8
-	li	a1, 1131
 	vor.vv	v8, v8, v12
-	vmv.v.x	v10, a0
-	addi	a0, a0, 1132
-	vmsltu.vx	v0, v8, a0
-	vmerge.vxm	v8, v10, a1, v0
+	addi	a1, a0, 1132
+	vmsltu.vx	v0, v8, a1
+	li	a1, 1131
+	vmv.v.x	v8, a0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 8
-	li	a1, 1131
 	vor.vv	v8, v8, v12
-	vmv.v.x	v10, a0
-	addi	a0, a0, 1132
-	vmsltu.vx	v0, v8, a0
-	vmerge.vxm	v8, v10, a1, v0
+	addi	a1, a0, 1132
+	vmsltu.vx	v0, v8, a1
+	li	a1, 1131
+	vmv.v.x	v8, a0
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 
 func0000000000000038:
@@ -53,8 +53,8 @@ func0000000000000001:
 	vzext.vf4	v12, v10
 	li	a0, -199
 	vor.vv	v8, v8, v12
-	vmv.v.x	v10, a0
 	vmseq.vi	v0, v8, 0
-	vmerge.vim	v8, v10, 0, v0
+	vmv.v.x	v8, a0
+	vmerge.vim	v8, v8, 0, v0
 	ret
 

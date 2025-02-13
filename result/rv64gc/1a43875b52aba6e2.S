@@ -22,10 +22,10 @@ func0000000000000004:
 .LCPI2_0:
 	.quad	0x3ff0000000000000
 func000000000000000a:
-	fadd.d	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
-	fle.d	a0, fa5, fa4
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	fadd.d	fa4, fa1, fa2
+	fle.d	a0, fa4, fa5
 	bnez	a0, .LBB2_2
 	fmv.d.x	fa0, zero
 .LBB2_2:

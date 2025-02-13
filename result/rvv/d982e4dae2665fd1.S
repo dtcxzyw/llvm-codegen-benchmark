@@ -29,9 +29,9 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
+	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vrev8.v	v8, v8, v0.t
-	li	a0, 255
 	vmsgtu.vx	v0, v8, a0
 	ret
 

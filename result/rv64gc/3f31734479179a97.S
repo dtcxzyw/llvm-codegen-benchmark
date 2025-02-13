@@ -76,9 +76,9 @@ func00000000000001c1:
 .LCPI5_0:
 	.quad	-8198552921648689607
 func0000000000000144:
-	srai	a2, a2, 7
 	lui	a3, %hi(.LCPI5_0)
 	ld	a3, %lo(.LCPI5_0)(a3)
+	srai	a2, a2, 7
 	mul	a2, a2, a3
 	bltu	a1, a2, .LBB5_2
 	mv	a1, a2

@@ -6,9 +6,9 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
+	li	a0, 7
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 7, v0.t
-	li	a0, 7
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -22,9 +22,9 @@ func0000000000000014:
 	ret
 
 func0000000000000000:
+	li	a0, 10
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v10, v10, 10, v0.t
-	li	a0, 10
 	vmadd.vx	v8, a0, v10
 	ret
 

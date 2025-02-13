@@ -1,9 +1,9 @@
 func0000000000000003:
 	sext.w	a2, a0
 	srli	a1, a1, 8
-	li	a3, 7
+	li	a0, 7
+	slli	a3, a0, 9
 	andi	a0, a1, 240
-	slli	a3, a3, 9
 	beq	a2, a3, .LBB0_2
 	li	a1, 3
 	or	a0, a0, a1

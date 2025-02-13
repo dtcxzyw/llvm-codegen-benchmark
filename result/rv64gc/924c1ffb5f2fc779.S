@@ -63,22 +63,22 @@ func0000000000000015:
 	ret
 
 func0000000000000030:
-	mv	a2, a0
-	li	a0, 1
-	slli	a0, a0, 31
-	bltu	a0, a1, .LBB7_2
-	slli	a0, a2, 32
-	srli	a0, a0, 32
+	li	a2, 1
+	slli	a2, a2, 31
+	bltu	a2, a1, .LBB7_2
+	slli	a0, a0, 32
+	srli	a2, a0, 32
 .LBB7_2:
+	mv	a0, a2
 	ret
 
 func0000000000000011:
-	mv	a2, a0
-	lui	a0, 73
-	addiw	a0, a0, 992
-	bgeu	a1, a0, .LBB8_2
-	sext.w	a0, a2
+	lui	a2, 73
+	addiw	a2, a2, 992
+	bgeu	a1, a2, .LBB8_2
+	sext.w	a2, a0
 .LBB8_2:
+	mv	a0, a2
 	ret
 
 func000000000000000d:

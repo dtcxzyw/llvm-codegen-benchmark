@@ -25,21 +25,21 @@ func0000000000000081:
 	ret
 
 func0000000000000084:
-	lui	a2, 1048560
-	bltu	a1, a2, .LBB2_2
-	li	a1, 2
-	li	a2, -1
-	slli	a2, a2, 32
-	bltu	a0, a2, .LBB2_3
+	lui	a3, 1048560
+	mv	a2, a0
+	bltu	a1, a3, .LBB2_2
+	li	a0, 2
+	li	a1, -1
+	slli	a1, a1, 32
+	bltu	a2, a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	li	a1, 4
-	li	a2, -1
-	slli	a2, a2, 32
-	bgeu	a0, a2, .LBB2_4
+	li	a0, 4
+	li	a1, -1
+	slli	a1, a1, 32
+	bgeu	a2, a1, .LBB2_4
 .LBB2_3:
-	li	a1, 8
+	li	a0, 8
 .LBB2_4:
-	mv	a0, a1
 	ret
 

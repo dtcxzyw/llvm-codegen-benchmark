@@ -1,10 +1,10 @@
 func0000000000000003:
 	mv	a3, a1
 	bgeu	a2, a1, .LBB0_4
-	andi	a0, a0, 1
 	add	a1, a1, a3
 	li	a2, -127
 	srli	a2, a2, 1
+	andi	a0, a0, 1
 	bgeu	a1, a2, .LBB0_5
 .LBB0_2:
 	bnez	a0, .LBB0_6
@@ -12,10 +12,10 @@ func0000000000000003:
 	addi	a0, a1, 63
 	ret
 .LBB0_4:
-	andi	a0, a0, 1
 	add	a1, a1, a2
 	li	a2, -127
 	srli	a2, a2, 1
+	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 .LBB0_5:
 	mv	a1, a2

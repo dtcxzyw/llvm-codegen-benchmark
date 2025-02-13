@@ -15,9 +15,9 @@ func0000000000000022:
 	lui	a1, %hi(.LCPI1_0)
 	lui	a2, %hi(.LCPI1_1)
 	flw	fa5, %lo(.LCPI1_0)(a1)
+	flw	fa4, %lo(.LCPI1_1)(a2)
 	flt.s	a1, fa1, fa5
-	flw	fa5, %lo(.LCPI1_1)(a2)
-	flt.s	a2, fa0, fa5
+	flt.s	a2, fa0, fa4
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -31,9 +31,9 @@ func00000000000000d2:
 	lui	a1, %hi(.LCPI2_0)
 	lui	a2, %hi(.LCPI2_1)
 	flw	fa5, %lo(.LCPI2_0)(a1)
+	flw	fa4, %lo(.LCPI2_1)(a2)
 	flt.s	a1, fa1, fa5
-	flw	fa5, %lo(.LCPI2_1)(a2)
-	flt.s	a2, fa0, fa5
+	flt.s	a2, fa0, fa4
 	xori	a1, a1, 1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

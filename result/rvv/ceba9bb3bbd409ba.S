@@ -14,8 +14,8 @@ func0000000000000021:
 	li	a0, 16
 	vmseq.vi	v14, v10, 0
 	vmseq.vx	v10, v12, a0
-	li	a0, 32
 	vmand.mm	v0, v10, v14
+	li	a0, 32
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -25,9 +25,9 @@ func0000000000000081:
 	vmsleu.vi	v14, v10, 12
 	vand.vx	v10, v12, a0
 	lui	a0, 17
-	addi	a0, a0, -624
 	vmseq.vi	v12, v10, 0
 	vmand.mm	v0, v12, v14
+	addi	a0, a0, -624
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

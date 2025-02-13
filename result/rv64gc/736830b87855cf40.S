@@ -11,8 +11,8 @@ func0000000000000015:
 
 func000000000000001c:
 	sext.w	a2, a1
-	lui	a1, 57344
 	li	a3, 28
+	lui	a1, 57344
 	beq	a2, a3, .LBB1_2
 	lui	a1, 86016
 .LBB1_2:

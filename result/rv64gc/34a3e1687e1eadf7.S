@@ -1,13 +1,13 @@
 func0000000000000021:
-	sext.w	a3, a1
-	sext.w	a2, a2
-	beqz	a2, .LBB0_2
+	sext.w	a3, a2
+	sext.w	a2, a1
+	beqz	a3, .LBB0_2
 	li	a1, 1184
-	bnez	a3, .LBB0_3
+	bnez	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a1, 456
-	beqz	a3, .LBB0_4
+	beqz	a2, .LBB0_4
 .LBB0_3:
 	mv	a1, a0
 .LBB0_4:
@@ -35,16 +35,16 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
-	sext.w	a3, a1
-	sext.w	a2, a2
-	li	a1, 1
-	beq	a2, a1, .LBB3_2
+	sext.w	a3, a2
+	li	a4, 1
+	sext.w	a2, a1
+	beq	a3, a4, .LBB3_2
 	li	a1, 16
-	bgez	a3, .LBB3_3
+	bgez	a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a1, 4
-	bltz	a3, .LBB3_4
+	bltz	a2, .LBB3_4
 .LBB3_3:
 	mv	a1, a0
 .LBB3_4:
@@ -52,8 +52,8 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	beqz	a2, .LBB4_2
 	li	a2, 87
 	bgez	a1, .LBB4_3
@@ -87,21 +87,21 @@ func0000000000000301:
 	ret
 
 func0000000000000038:
-	sext.w	a3, a1
-	sext.w	a2, a2
-	beqz	a2, .LBB7_2
+	sext.w	a3, a2
+	sext.w	a2, a1
+	beqz	a3, .LBB7_2
 	lui	a1, 81
 	addiw	a1, a1, 1557
-	lui	a2, 65
-	addiw	a2, a2, 427
-	bgeu	a2, a3, .LBB7_3
+	lui	a3, 65
+	addiw	a3, a3, 427
+	bgeu	a3, a2, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
 	lui	a1, 78
 	addiw	a1, a1, 512
-	lui	a2, 65
-	addiw	a2, a2, 427
-	bltu	a2, a3, .LBB7_4
+	lui	a3, 65
+	addiw	a3, a3, 427
+	bltu	a3, a2, .LBB7_4
 .LBB7_3:
 	mv	a1, a0
 .LBB7_4:
@@ -150,18 +150,18 @@ func0000000000000286:
 	ret
 
 func0000000000000084:
-	sext.w	a3, a1
-	sext.w	a2, a2
-	li	a1, 7
-	bltu	a2, a1, .LBB12_2
+	sext.w	a3, a2
+	li	a4, 7
+	sext.w	a2, a1
+	bltu	a3, a4, .LBB12_2
 	li	a1, 11
-	li	a2, 4
-	bgeu	a3, a2, .LBB12_3
+	li	a3, 4
+	bgeu	a2, a3, .LBB12_3
 	j	.LBB12_4
 .LBB12_2:
 	li	a1, 8
-	li	a2, 4
-	bltu	a3, a2, .LBB12_4
+	li	a3, 4
+	bltu	a2, a3, .LBB12_4
 .LBB12_3:
 	mv	a1, a0
 .LBB12_4:

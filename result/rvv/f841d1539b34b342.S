@@ -1,8 +1,8 @@
 func0000000000000074:
 	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vmv.v.i	v10, -1
 	vmsltu.vx	v0, v8, a0
+	vmv.v.i	v10, -1
 	vadd.vi	v10, v8, 1, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10

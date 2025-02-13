@@ -18,9 +18,9 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI1_1)(a0)
-	vfmv.v.f	v24, fa5
+	vfmv.v.f	v24, fa4
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v16, v8
 	ret
@@ -52,8 +52,8 @@ func0000000000000053:
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
 	vmfle.vf	v7, v24, fa5
-	vfmv.v.f	v24, fa5
 	vmnot.m	v0, v7
+	vfmv.v.f	v24, fa5
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24

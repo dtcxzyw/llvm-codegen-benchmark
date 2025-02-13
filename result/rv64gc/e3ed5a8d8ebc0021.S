@@ -16,9 +16,9 @@ func00000000000001cc:
 .LCPI2_0:
 	.quad	0x7fefffffffffffff
 func000000000000008c:
-	srli	a0, a0, 1
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
+	srli	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -33,10 +33,10 @@ func000000000000004c:
 .LCPI4_0:
 	.quad	0x3ff0000000000000
 func0000000000000041:
-	andi	a0, a0, 511
 	lui	a1, %hi(.LCPI4_0)
-	seqz	a0, a0
 	fld	fa5, %lo(.LCPI4_0)(a1)
+	andi	a0, a0, 511
+	seqz	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

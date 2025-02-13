@@ -1,55 +1,55 @@
 .LCPI0_0:
 	.quad	-7046029288634856825
 func000000000000001c:
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 24
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI0_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a3
 	ret
 
 .LCPI1_0:
 	.quad	1609587791953885689
 func0000000000000004:
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	slli	a2, a2, 32
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI1_0)
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI1_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a3
 	ret
 
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000014:
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	slli	a2, a2, 32
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI2_0)
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI2_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a3
 	ret
 
 .LCPI3_0:
 	.quad	9202493588570546565
 func0000000000000000:
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
 	slli	a2, a2, 32
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI3_0)
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI3_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a3
 	ret
 
 .LCPI4_0:
 	.quad	-4132994306676758123
 func0000000000000008:
+	lui	a3, %hi(.LCPI4_0)
+	ld	a3, %lo(.LCPI4_0)(a3)
 	slli	a2, a2, 32
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI4_0)
 	xor	a0, a0, a1
-	ld	a1, %lo(.LCPI4_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a3
 	ret
 

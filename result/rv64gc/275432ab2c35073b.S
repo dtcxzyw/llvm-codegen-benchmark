@@ -20,12 +20,12 @@ func0000000000000180:
 	.quad	4629700417037541376
 func00000000000001ff:
 	slli	a2, a2, 42
-	sext.w	a0, a0
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI2_0)
+	sext.w	a0, a0
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI2_0)(a2)
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
 func00000000000001ef:

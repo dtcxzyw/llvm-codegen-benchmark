@@ -25,10 +25,10 @@ func000000000000046a:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
 	lui	a0, %hi(.LCPI2_0)
-	fli.s	fa5, 1.0
-	vmerge.vvm	v12, v16, v12, v0
-	vmfle.vf	v16, v8, fa5
 	flw	fa5, %lo(.LCPI2_0)(a0)
+	fli.s	fa4, 1.0
+	vmerge.vvm	v12, v16, v12, v0
+	vmfle.vf	v16, v8, fa4
 	vmfge.vf	v8, v12, fa5
 	vmnot.m	v9, v16
 	vmorn.mm	v0, v9, v8

@@ -7,8 +7,8 @@ func00000000000001a6:
 	addi	a0, a0, 1359
 	vmv.v.x	v12, a0
 	vsrl.vi	v10, v10, 7
-	vmacc.vx	v12, a0, v10
 	vmsgt.vi	v0, v8, 0
+	vmacc.vx	v12, a0, v10
 	vmerge.vim	v8, v12, 0, v0
 	ret
 
@@ -20,8 +20,8 @@ func00000000000001e6:
 	li	a0, 400
 	vmv.v.x	v12, a0
 	vsrl.vi	v10, v10, 7
-	vmacc.vx	v12, a0, v10
 	vmsgt.vi	v0, v8, 0
+	vmacc.vx	v12, a0, v10
 	vmerge.vim	v8, v12, 0, v0
 	ret
 

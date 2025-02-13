@@ -40,10 +40,10 @@ func0000000000000208:
 	bltu	a2, a3, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI3_0)
-	ld	a1, %lo(.LCPI3_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func000000000000032a:
@@ -63,10 +63,10 @@ func0000000000000088:
 	beq	a2, a3, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI5_0)
-	ld	a1, %lo(.LCPI5_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000081:

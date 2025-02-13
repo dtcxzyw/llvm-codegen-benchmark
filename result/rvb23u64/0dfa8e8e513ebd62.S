@@ -19,9 +19,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
+	andi	a0, a0, 1
 	beqz	a1, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:

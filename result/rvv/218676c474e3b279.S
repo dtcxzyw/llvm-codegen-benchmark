@@ -4,8 +4,8 @@ func0000000000000084:
 	li	a0, 30
 	vmerge.vxm	v10, v10, a0, v0
 	li	a0, -1
-	srli	a0, a0, 1
 	vmsltu.vv	v0, v8, v10
+	srli	a0, a0, 1
 	vminu.vx	v8, v10, a0, v0.t
 	ret
 
@@ -14,8 +14,8 @@ func00000000000000d4:
 	vadd.vv	v10, v10, v10
 	li	a0, -1
 	vmerge.vim	v10, v10, 6, v0
-	srli	a0, a0, 4
 	vmsltu.vv	v0, v8, v10
+	srli	a0, a0, 4
 	vminu.vx	v8, v10, a0, v0.t
 	ret
 

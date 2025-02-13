@@ -18,23 +18,23 @@ func00000000000000a5:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI1_1)(a0)
 	vmorn.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa5
+	vmfle.vf	v17, v8, fa4
 	vmandn.mm	v0, v16, v17
 	ret
 
 .LCPI2_0:
 	.quad	0x3f571547652b82fe
 func00000000000001a5:
-	fli.d	fa5, 1.0
 	lui	a0, %hi(.LCPI2_0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v24, v16, fa5
-	vmorn.mm	v16, v0, v24
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	fli.d	fa4, 1.0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v24, v16, fa4
+	vmorn.mm	v16, v0, v24
 	vmfle.vf	v17, v8, fa5
 	vmandn.mm	v0, v16, v17
 	ret

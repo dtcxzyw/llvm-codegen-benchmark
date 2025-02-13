@@ -29,11 +29,11 @@ func00000000000001a1:
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v10, 0
-	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmerge.vim	v8, v10, 0, v0
+	vadd.vi	v8, v10, -1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 func0000000000000101:

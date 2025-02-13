@@ -3,8 +3,8 @@ func000000000000001c:
 	vmfne.vv	v16, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v12, v8
-	vmv.v.i	v8, 0
 	vmand.mm	v0, v0, v16
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	vsub.vv	v8, v12, v8
 	ret
@@ -14,8 +14,8 @@ func000000000000001d:
 	vmfne.vv	v16, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v12, v8
-	vmv.v.i	v8, 0
 	vmand.mm	v0, v0, v16
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	vsub.vv	v8, v12, v8
 	ret

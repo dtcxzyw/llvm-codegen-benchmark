@@ -9,9 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000041:
-	mv	a2, a0
+	slli	a2, a0, 48
 	li	a0, 1
-	slli	a2, a2, 48
 	beqz	a2, .LBB1_2
 	sllw	a0, a0, a1
 .LBB1_2:

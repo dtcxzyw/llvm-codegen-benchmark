@@ -1,7 +1,7 @@
 func000000000000001b:
-	andi	a1, a1, 1
 	li	a3, -127
 	srli	a3, a3, 1
+	andi	a1, a1, 1
 	bltu	a2, a3, .LBB0_2
 	mv	a2, a3
 .LBB0_2:

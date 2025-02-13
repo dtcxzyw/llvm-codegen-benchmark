@@ -5,8 +5,8 @@ func0000000000000003:
 	vfmul.vf	v12, v12, fa5
 	fmv.w.x	fa5, zero
 	vmfge.vf	v16, v12, fa5
-	vmv.v.i	v12, 0
 	vmnot.m	v0, v16
+	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 

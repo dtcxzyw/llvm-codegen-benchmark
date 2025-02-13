@@ -14,11 +14,10 @@ func0000000000000006:
 	ret
 
 func0000000000000029:
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vor.vi	v9, v8, 4
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v12
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vor.vi	v9, v8, 4
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

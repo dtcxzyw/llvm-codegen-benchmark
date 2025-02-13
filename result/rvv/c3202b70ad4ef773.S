@@ -5,8 +5,8 @@ func0000000000000001:
 	li	a0, 35
 	vmand.mm	v8, v8, v9
 	vmv.v.x	v10, a0
-	li	a0, 98
 	vmand.mm	v0, v8, v0
+	li	a0, 98
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

@@ -47,8 +47,8 @@ func0000000000000010:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v9, v9, a1
 	lui	a1, 16
-	addi	a1, a1, -1
 	vmsltu.vx	v0, v9, a0
+	addi	a1, a1, -1
 	vmerge.vxm	v10, v8, a1, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10

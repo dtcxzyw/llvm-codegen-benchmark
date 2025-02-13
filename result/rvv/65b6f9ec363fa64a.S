@@ -29,11 +29,11 @@ func0000000000000004:
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
+	fld	fa4, %lo(.LCPI2_0)(a0)
 	vfmacc.vv	v24, v16, v8
 	vmfgt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vmv.v.i	v8, 0
-	vfmerge.vfm	v8, v8, fa5, v0
+	vfmerge.vfm	v8, v8, fa4, v0
 	ret
 
 func0000000000000012:

@@ -23,11 +23,11 @@ func0000000000000064:
 	ret
 
 func0000000000000041:
-	mv	a2, a0
-	li	a0, 1
-	beq	a1, a0, .LBB3_2
-	addi	a0, a2, 1
+	li	a2, 1
+	beq	a1, a2, .LBB3_2
+	addi	a2, a0, 1
 .LBB3_2:
+	mv	a0, a2
 	ret
 
 func0000000000000024:

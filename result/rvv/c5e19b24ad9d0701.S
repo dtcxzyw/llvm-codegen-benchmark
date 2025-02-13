@@ -25,11 +25,11 @@ func000000000000000a:
 .LCPI3_0:
 	.quad	0x3bc79ca10c924223
 func0000000000000008:
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI3_0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vf	v0, v16, fa5
 	fld	fa5, %lo(.LCPI3_0)(a0)
+	fmv.d.x	fa4, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vf	v0, v16, fa4
 	vfmerge.vfm	v16, v16, fa5, v0
 	vfsub.vv	v8, v8, v16
 	ret

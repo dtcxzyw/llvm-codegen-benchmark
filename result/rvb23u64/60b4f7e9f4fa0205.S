@@ -2,11 +2,11 @@
 	.quad	3353953467947191203
 func0000000000000004:
 	sub	a2, a2, a1
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI0_0)
-	srai	a2, a2, 3
-	mul	a0, a0, a2
 	ld	a1, %lo(.LCPI0_0)(a1)
+	srai	a2, a2, 3
+	sext.w	a0, a0
+	mul	a0, a0, a2
 	mul	a0, a0, a1
 	ret
 

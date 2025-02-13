@@ -1,9 +1,9 @@
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v14, -1
 	vmseq.vi	v0, v10, 0
-	vadd.vi	v14, v12, -1, v0.t
-	vadd.vv	v8, v14, v8
+	vmv.v.i	v10, -1
+	vadd.vi	v10, v12, -1, v0.t
+	vadd.vv	v8, v10, v8
 	ret
 
 func00000000000001e1:
@@ -16,16 +16,16 @@ func00000000000001e1:
 
 func0000000000000085:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmseq.vi	v0, v10, 0
-	vadd.vi	v8, v12, 1, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, 1, v0.t
 	ret
 
 func0000000000000098:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmsle.vi	v0, v10, -1
-	vadd.vi	v8, v12, 1, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, 1, v0.t
 	ret
 
 func0000000000000050:
@@ -38,24 +38,24 @@ func0000000000000050:
 
 func00000000000000a9:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmsgt.vi	v0, v10, 0
-	vadd.vi	v8, v12, 1, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, 1, v0.t
 	ret
 
 func0000000000000020:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmsgtu.vi	v0, v10, 15
-	vadd.vi	v8, v12, -16, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, -16, v0.t
 	ret
 
 func0000000000000028:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v14, 4
 	vmsgt.vi	v0, v10, 4
-	vadd.vi	v14, v12, 4, v0.t
-	vadd.vv	v8, v14, v8
+	vmv.v.i	v10, 4
+	vadd.vi	v10, v12, 4, v0.t
+	vadd.vv	v8, v10, v8
 	ret
 
 func00000000000000e0:
@@ -110,15 +110,15 @@ func00000000000001e0:
 
 func0000000000000099:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmsle.vi	v0, v10, -1
-	vadd.vi	v8, v12, 1, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, 1, v0.t
 	ret
 
 func0000000000000199:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v12, v12, v8
 	vmsle.vi	v0, v10, -1
-	vadd.vi	v8, v12, 1, v0.t
+	vadd.vv	v10, v12, v8
+	vadd.vi	v8, v10, 1, v0.t
 	ret
 

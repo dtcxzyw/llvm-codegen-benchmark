@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func000000000000002a:
-	andi	a1, a1, 1
 	andi	a2, a2, 1
+	andi	a1, a1, 1
 	bnez	a2, .LBB1_2
 	li	a2, 107
 	lui	a3, 8
@@ -41,15 +41,15 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	andi	a3, a1, 1
-	andi	a2, a2, 1
-	bnez	a2, .LBB3_2
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB3_2
 	li	a1, -1880
-	bnez	a3, .LBB3_3
+	bnez	a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a1, -1980
-	beqz	a3, .LBB3_4
+	beqz	a2, .LBB3_4
 .LBB3_3:
 	lui	a1, 1048575
 	addi	a1, a1, 216
@@ -60,16 +60,16 @@ func0000000000000008:
 	ret
 
 func0000000000000024:
-	andi	a3, a1, 1
-	andi	a2, a2, 1
-	bnez	a2, .LBB4_2
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB4_2
 	lui	a1, 1048392
-	bnez	a3, .LBB4_3
+	bnez	a2, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
 	li	a1, -29
 	slli	a1, a1, 7
-	beqz	a3, .LBB4_4
+	beqz	a2, .LBB4_4
 .LBB4_3:
 	li	a1, -16
 .LBB4_4:

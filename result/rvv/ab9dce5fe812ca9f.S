@@ -75,11 +75,10 @@ func0000000000000060:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
 	addi	a0, a0, -2
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vnsrl.wi	v8, v12, 0
 	vmerge.vim	v8, v8, -1, v0
 	ret
 

@@ -1,8 +1,8 @@
 func00000000000000a4:
 	mv	a1, a0
 	sext.w	a2, a0
-	lui	a0, 16
 	li	a3, 6
+	lui	a0, 16
 	bgeu	a2, a3, .LBB0_2
 	slli	a1, a1, 8
 	addi	a0, a0, 256

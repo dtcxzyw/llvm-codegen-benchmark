@@ -11,8 +11,8 @@ func00000000000000a1:
 func00000000000001e8:
 	andi	a3, a0, 255
 	lui	a0, 16
-	addi	a0, a0, -55
 	li	a4, 57
+	addi	a0, a0, -55
 	bltu	a4, a3, .LBB1_2
 	add	a0, a0, a2
 	addiw	a0, a0, 7

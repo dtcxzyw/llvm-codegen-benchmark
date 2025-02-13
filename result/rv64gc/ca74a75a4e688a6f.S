@@ -25,9 +25,9 @@ func0000000000000008:
 .LCPI3_0:
 	.quad	3353953467947191203
 func0000000000000084:
-	srai	a2, a2, 3
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
+	srai	a2, a2, 3
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -169,9 +169,9 @@ func0000000000000004:
 .LCPI15_0:
 	.quad	-8198552921648689607
 func00000000000000a5:
-	srai	a2, a2, 3
 	lui	a3, %hi(.LCPI15_0)
 	ld	a3, %lo(.LCPI15_0)(a3)
+	srai	a2, a2, 3
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1

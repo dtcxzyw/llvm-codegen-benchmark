@@ -8,16 +8,16 @@ func0000000000000008:
 func000000000000001a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vv	v12, v8, v10
-	vmv.v.i	v8, 0
 	vmnot.m	v0, v12
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
 func0000000000000016:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vv	v12, v10, v8
-	vmv.v.i	v8, 0
 	vmnot.m	v0, v12
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -59,8 +59,8 @@ func000000000000000e:
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vv	v12, v8, v10
-	vmv.v.i	v8, 0
 	vmnot.m	v0, v12
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

@@ -33,23 +33,23 @@ func00000000000000c2:
 	.quad	0xc0bf400000000000
 func0000000000000024:
 	lui	a1, %hi(.LCPI3_0)
-	lui	a2, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a1)
+	lui	a1, %hi(.LCPI3_1)
+	fld	fa4, %lo(.LCPI3_1)(a1)
 	flt.d	a1, fa0, fa5
-	fld	fa5, %lo(.LCPI3_1)(a2)
 	and	a0, a0, a1
-	flt.d	a1, fa5, fa0
+	flt.d	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
 .LCPI4_0:
 	.quad	0xc0bf400000000000
 func00000000000000c4:
-	fmv.d.x	fa5, zero
-	fle.d	a1, fa5, fa0
-	and	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
+	fmv.d.x	fa4, zero
+	fle.d	a1, fa4, fa0
+	and	a0, a0, a1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

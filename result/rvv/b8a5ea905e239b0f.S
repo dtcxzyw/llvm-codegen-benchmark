@@ -16,10 +16,10 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	flw	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v20, fa5
-	flw	fa5, %lo(.LCPI1_1)(a0)
-	vfmacc.vf	v20, fa5, v16
+	vfmacc.vf	v20, fa4, v16
 	vfmadd.vv	v8, v20, v12
 	ret
 

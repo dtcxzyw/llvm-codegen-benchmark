@@ -9,10 +9,10 @@ func0000000000000008:
 .LCPI1_0:
 	.quad	0x3fd46a7ef9db22d1
 func0000000000000004:
-	fsub.d	fa5, fa0, fa1
 	lui	a1, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a1)
-	flt.d	a1, fa4, fa5
+	fld	fa5, %lo(.LCPI1_0)(a1)
+	fsub.d	fa4, fa0, fa1
+	flt.d	a1, fa5, fa4
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

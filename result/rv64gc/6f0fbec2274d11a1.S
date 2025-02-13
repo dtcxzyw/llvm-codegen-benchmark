@@ -11,15 +11,15 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	andi	a3, a1, 1
-	andi	a2, a2, 1
-	bnez	a2, .LBB1_2
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB1_2
 	li	a1, 370
-	bnez	a3, .LBB1_3
+	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a1, 242
-	beqz	a3, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a1, 498
 .LBB1_4:

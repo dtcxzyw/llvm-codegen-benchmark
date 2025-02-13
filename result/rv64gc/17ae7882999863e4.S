@@ -1,11 +1,12 @@
 .LCPI0_0:
 	.quad	5270498306774157605
 func000000000000004a:
-	addi	a6, a0, -1
+	lui	a1, %hi(.LCPI0_0)
 	lui	a2, 349525
 	lui	a3, 209715
 	lui	a4, 61681
 	lui	a5, 4112
+	ld	a6, %lo(.LCPI0_0)(a1)
 	addiw	a1, a2, 1365
 	addiw	a3, a3, 819
 	addiw	a4, a4, -241
@@ -18,9 +19,8 @@ func000000000000004a:
 	add	a7, a4, a3
 	slli	a4, a5, 32
 	add	a4, a4, a5
-	lui	a5, %hi(.LCPI0_0)
-	ld	a5, %lo(.LCPI0_0)(a5)
-	mulh	a5, a6, a5
+	addi	a5, a0, -1
+	mulh	a5, a5, a6
 	srli	a3, a5, 63
 	srai	a5, a5, 1
 	add	a3, a3, a5
@@ -57,11 +57,12 @@ func000000000000004a:
 .LCPI1_0:
 	.quad	5270498306774157605
 func0000000000000042:
-	addi	a6, a0, -1
+	lui	a1, %hi(.LCPI1_0)
 	lui	a2, 349525
 	lui	a3, 209715
 	lui	a4, 61681
 	lui	a5, 4112
+	ld	a6, %lo(.LCPI1_0)(a1)
 	addiw	a1, a2, 1365
 	addiw	a3, a3, 819
 	addiw	a4, a4, -241
@@ -74,9 +75,8 @@ func0000000000000042:
 	add	a7, a4, a3
 	slli	a4, a5, 32
 	add	a4, a4, a5
-	lui	a5, %hi(.LCPI1_0)
-	ld	a5, %lo(.LCPI1_0)(a5)
-	mulh	a5, a6, a5
+	addi	a5, a0, -1
+	mulh	a5, a5, a6
 	srli	a3, a5, 63
 	srai	a5, a5, 1
 	add	a3, a3, a5

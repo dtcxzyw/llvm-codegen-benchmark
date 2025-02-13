@@ -5,12 +5,10 @@ func00000000000000f8:
 	vwsll.vi	v9, v10, 8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vor.vv	v8, v9, v8
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	vsll.vi	v8, v8, 4
 	ret
 
@@ -21,11 +19,9 @@ func00000000000000e8:
 	vwsll.vi	v9, v10, 8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vor.vv	v8, v8, v9
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 10
-	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v8, v10, 14, v0
+	vmv.v.i	v8, 10
+	vmerge.vim	v8, v8, 14, v0
 	ret
 

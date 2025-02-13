@@ -45,8 +45,8 @@ func000000000000001a:
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
 	lui	a1, %hi(.LCPI4_1)
-	fadd.d	fa5, fa0, fa5
 	fld	fa4, %lo(.LCPI4_1)(a1)
+	fadd.d	fa5, fa0, fa5
 	flt.d	a1, fa5, fa4
 	xori	a1, a1, 1
 	or	a0, a0, a1

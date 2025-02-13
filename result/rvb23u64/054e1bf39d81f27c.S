@@ -7,9 +7,9 @@ func000000000000000c:
 .LCPI1_0:
 	.quad	2170205185142300192
 func0000000000000000:
-	sh2add	a0, a0, a0
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	ret
 

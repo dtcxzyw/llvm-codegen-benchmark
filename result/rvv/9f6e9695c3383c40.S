@@ -14,31 +14,31 @@ func0000000000000006:
 .LCPI1_1:
 	.quad	128102389400760775
 func00000000000002a1:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
-	lui	a0, %hi(.LCPI1_1)
 	vadd.vv	v8, v12, v8
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	ret
 
 .LCPI2_0:
 	.quad	230584300921369395
 func00000000000002a8:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	lui	a0, 790465
 	addiw	a0, a0, -63
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
-	ld	a0, %lo(.LCPI2_0)(a1)
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	ret
 
 func0000000000000201:
@@ -74,17 +74,17 @@ func00000000000000aa:
 .LCPI5_0:
 	.quad	230584300921369395
 func0000000000000288:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	lui	a0, 838861
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
-	ld	a0, %lo(.LCPI5_0)(a1)
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	ret
 
 func0000000000000281:
@@ -102,10 +102,10 @@ func0000000000000281:
 .LCPI7_0:
 	.quad	-8116567392432202711
 func00000000000002aa:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	lui	a0, %hi(.LCPI7_0)
 	ld	a0, %lo(.LCPI7_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, -1
@@ -114,10 +114,10 @@ func00000000000002aa:
 .LCPI8_0:
 	.quad	5675921253449092805
 func00000000000002a4:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	lui	a0, %hi(.LCPI8_0)
 	ld	a0, %lo(.LCPI8_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	vmsleu.vi	v0, v8, 1

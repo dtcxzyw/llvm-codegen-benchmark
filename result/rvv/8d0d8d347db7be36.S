@@ -31,8 +31,8 @@ func0000000000000314:
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 1024
 	vmerge.vim	v12, v12, 1, v0
-	vor.vi	v12, v12, 2
 	vmsltu.vx	v0, v10, a0
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vi	v10, v12, 2
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

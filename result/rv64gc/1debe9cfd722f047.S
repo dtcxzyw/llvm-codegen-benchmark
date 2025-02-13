@@ -77,9 +77,9 @@ func000000000000002c:
 
 func0000000000000024:
 	sext.w	a2, a1
+	lui	a1, 14
+	addiw	a3, a1, -339
 	lui	a1, 16
-	lui	a3, 14
-	addiw	a3, a3, -339
 	beq	a2, a3, .LBB4_2
 	srli	a2, a0, 8
 	addi	a3, a1, -256

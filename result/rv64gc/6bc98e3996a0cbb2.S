@@ -1,11 +1,11 @@
 func0000000000000004:
-	sext.w	a2, a0
-	lui	a0, 524288
-	addiw	a3, a0, -2
-	bltu	a2, a3, .LBB0_2
-	addiw	a1, a0, -1
-.LBB0_2:
+	sext.w	a3, a0
+	lui	a2, 524288
+	addiw	a4, a2, -2
 	mv	a0, a1
+	bltu	a3, a4, .LBB0_2
+	addiw	a0, a2, -1
+.LBB0_2:
 	ret
 
 func0000000000000006:

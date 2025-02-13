@@ -1,8 +1,8 @@
 func000000000000000b:
-	andi	a0, a0, 1
 	srai	a1, a1, 3
 	li	a2, -1
 	srli	a2, a2, 5
+	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:

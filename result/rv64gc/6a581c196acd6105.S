@@ -1,16 +1,16 @@
 func000000000000000a:
-	sext.w	a2, a0
-	sext.w	a3, a1
+	sext.w	a2, a1
 	li	a4, 6
-	mv	a1, a3
-	bge	a4, a3, .LBB0_3
-	bge	a3, a2, .LBB0_4
+	sext.w	a3, a0
+	mv	a1, a2
+	bge	a4, a2, .LBB0_3
+	bge	a2, a3, .LBB0_4
 .LBB0_2:
 	mv	a0, a1
 	ret
 .LBB0_3:
 	li	a1, 6
-	blt	a3, a2, .LBB0_2
+	blt	a2, a3, .LBB0_2
 .LBB0_4:
 	ret
 

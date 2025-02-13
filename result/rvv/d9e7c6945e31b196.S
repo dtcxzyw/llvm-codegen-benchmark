@@ -12,8 +12,8 @@ func0000000000000038:
 	bseti	a0, zero, 35
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v8, a0
-	lui	a0, 524288
 	vmseq.vi	v0, v12, 0
+	lui	a0, 524288
 	vmerge.vvm	v8, v10, v8, v0
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0

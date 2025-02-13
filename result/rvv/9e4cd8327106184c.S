@@ -28,12 +28,12 @@ func0000000000000007:
 .LCPI3_0:
 	.quad	0x3f847ae147ae147b
 func0000000000000003:
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
-	lui	a0, %hi(.LCPI3_0)
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v24
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

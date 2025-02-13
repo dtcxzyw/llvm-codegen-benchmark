@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.word	0x3f2ac083
 func000000000000000b:
-	fli.s	fa5, 0.5
 	lui	a0, %hi(.LCPI0_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmv.v.f	v12, fa5
 	flw	fa5, %lo(.LCPI0_0)(a0)
+	fli.s	fa4, 0.5
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmv.v.f	v12, fa4
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vv	v16, v12, v8
 	vmnot.m	v0, v16

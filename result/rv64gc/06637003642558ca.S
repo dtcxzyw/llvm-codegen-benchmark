@@ -20,9 +20,9 @@ func0000000000000004:
 
 func0000000000000001:
 	sext.w	a0, a0
+	li	a3, 1024
 	add	a1, a1, a2
-	li	a2, 1024
-	blt	a0, a2, .LBB2_2
+	blt	a0, a3, .LBB2_2
 	li	a0, 1024
 .LBB2_2:
 	addw	a0, a0, a1
@@ -30,9 +30,9 @@ func0000000000000001:
 
 func0000000000000000:
 	sext.w	a0, a0
+	li	a3, 1024
 	add	a1, a1, a2
-	li	a2, 1024
-	blt	a0, a2, .LBB3_2
+	blt	a0, a3, .LBB3_2
 	li	a0, 1024
 .LBB3_2:
 	addw	a0, a0, a1

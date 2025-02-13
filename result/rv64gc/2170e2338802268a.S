@@ -25,16 +25,16 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	andi	a2, a0, 1
-	srliw	a0, a1, 16
-	li	a1, 16
-	bltu	a1, a0, .LBB2_2
+	srliw	a2, a1, 16
+	li	a3, 16
+	andi	a1, a0, 1
+	bltu	a3, a2, .LBB2_2
 	li	a0, 4
-	beqz	a2, .LBB2_3
+	beqz	a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	li	a0, -400
-	bnez	a2, .LBB2_4
+	bnez	a1, .LBB2_4
 .LBB2_3:
 	li	a0, 2
 .LBB2_4:

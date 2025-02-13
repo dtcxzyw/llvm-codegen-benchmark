@@ -25,12 +25,12 @@ func0000000000000066:
 .LCPI3_0:
 	.quad	0xc1e0000000000000
 func000000000000006d:
-	fli.d	fa5, inf
 	lui	a1, %hi(.LCPI3_0)
-	flt.d	a2, fa1, fa5
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	flt.d	a1, fa0, fa5
-	andn	a1, a2, a1
+	fli.d	fa4, inf
+	flt.d	a1, fa1, fa4
+	flt.d	a2, fa0, fa5
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

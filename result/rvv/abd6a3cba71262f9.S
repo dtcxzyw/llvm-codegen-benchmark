@@ -53,9 +53,9 @@ func0000000000000000:
 	ret
 
 func000000000000001d:
+	li	a0, 60
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	li	a0, 60
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret
@@ -103,9 +103,9 @@ func000000000000000e:
 	ret
 
 func0000000000000050:
+	li	a0, 3
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	li	a0, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret

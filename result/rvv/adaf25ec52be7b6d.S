@@ -36,11 +36,11 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, %hi(.LCPI3_1)
+	flw	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfmadd.vv	v16, v8, v12
-	flw	fa5, %lo(.LCPI3_1)(a0)
-	vmfge.vf	v8, v16, fa5
+	vmfge.vf	v8, v16, fa4
 	vmnot.m	v0, v8
 	ret
 
@@ -52,11 +52,11 @@ func0000000000000005:
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
+	flw	fa4, %lo(.LCPI4_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfmadd.vv	v16, v8, v12
-	flw	fa5, %lo(.LCPI4_1)(a0)
-	vmfle.vf	v8, v16, fa5
+	vmfle.vf	v8, v16, fa4
 	vmnot.m	v0, v8
 	ret
 

@@ -32,11 +32,11 @@ func0000000000000021:
 .LCPI4_0:
 	.quad	922337203685477580
 func0000000000000301:
-	andi	a1, a1, 248
 	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
+	andi	a1, a1, 248
 	addi	a1, a1, -48
 	snez	a1, a1
-	ld	a2, %lo(.LCPI4_0)(a2)
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -45,11 +45,11 @@ func0000000000000301:
 .LCPI5_0:
 	.quad	-922337203685477580
 func0000000000000701:
-	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
+	andi	a1, a1, 255
 	addi	a1, a1, -57
 	sltiu	a1, a1, -9
-	ld	a2, %lo(.LCPI5_0)(a2)
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

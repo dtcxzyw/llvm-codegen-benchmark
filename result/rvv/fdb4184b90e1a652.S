@@ -36,10 +36,10 @@ func0000000000000030:
 .LCPI3_0:
 	.quad	-6358428717075319875
 func0000000000000040:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v12, v10
 	vmul.vx	v8, v8, a0
 	lui	a0, 184659
 	addi	a0, a0, 957

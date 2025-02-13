@@ -3,9 +3,9 @@ func00000000000001a8:
 	vadd.vv	v10, v10, v12
 	lui	a0, 16
 	addiw	a0, a0, -16
-	vsll.vi	v12, v10, 16
 	vmsgtu.vx	v0, v10, a0
-	vmerge.vvm	v8, v12, v8, v0
+	vsll.vi	v10, v10, 16
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000001:

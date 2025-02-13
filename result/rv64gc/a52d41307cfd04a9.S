@@ -16,8 +16,8 @@ func0000000000000021:
 
 func000000000000002a:
 	andi	a2, a1, 255
-	lui	a1, 524288
 	li	a3, 10
+	lui	a1, 524288
 	beq	a2, a3, .LBB2_2
 	li	a1, -1
 	slli	a1, a1, 63
@@ -41,8 +41,8 @@ func0000000000000026:
 
 func0000000000000181:
 	andi	a2, a1, 255
-	lui	a1, 524288
 	li	a3, 10
+	lui	a1, 524288
 	beq	a2, a3, .LBB4_2
 	li	a1, -1
 	slli	a1, a1, 63
@@ -53,8 +53,8 @@ func0000000000000181:
 
 func000000000000018a:
 	andi	a2, a1, 255
-	lui	a1, 524288
 	li	a3, 10
+	lui	a1, 524288
 	beq	a2, a3, .LBB5_2
 	li	a1, -1
 	slli	a1, a1, 63
@@ -83,11 +83,11 @@ func0000000000000034:
 .LCPI8_0:
 	.quad	922337203685477580
 func000000000000030a:
-	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI8_0)
+	ld	a2, %lo(.LCPI8_0)(a2)
+	andi	a1, a1, 255
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
-	ld	a2, %lo(.LCPI8_0)(a2)
 	sub	a2, a2, a1
 	slt	a0, a2, a0
 	ret
@@ -95,11 +95,11 @@ func000000000000030a:
 .LCPI9_0:
 	.quad	-922337203685477580
 func0000000000000306:
-	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI9_0)
+	ld	a2, %lo(.LCPI9_0)(a2)
+	andi	a1, a1, 255
 	sltiu	a1, a1, 9
 	xori	a1, a1, 1
-	ld	a2, %lo(.LCPI9_0)(a2)
 	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
@@ -107,10 +107,10 @@ func0000000000000306:
 .LCPI10_0:
 	.quad	1844674407370955161
 func0000000000000308:
-	andi	a1, a1, 255
 	lui	a2, %hi(.LCPI10_0)
-	sltiu	a1, a1, 6
 	ld	a2, %lo(.LCPI10_0)(a2)
+	andi	a1, a1, 255
+	sltiu	a1, a1, 6
 	xor	a1, a1, a2
 	xori	a1, a1, 1
 	sltu	a0, a1, a0

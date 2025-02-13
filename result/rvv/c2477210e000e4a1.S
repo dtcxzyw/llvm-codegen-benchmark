@@ -46,8 +46,8 @@ func0000000000000208:
 func0000000000000c0a:
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	vmsgtu.vx	v0, v12, a0
+	vadd.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vi	v0, v8, -1
 	ret
@@ -76,12 +76,12 @@ func0000000000000086:
 
 func0000000000000206:
 	lui	a0, 2575
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	addiw	a0, a0, -325
 	slli	a0, a0, 14
 	addi	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
+	vadd.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v0, v8, -1
 	ret

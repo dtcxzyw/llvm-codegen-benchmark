@@ -19,17 +19,17 @@ func0000000000000041:
 	slli	a5, a5, 32
 	slli	a4, a4, 24
 	or	a4, a4, a5
-	or	a7, t0, a6
-	lui	a6, %hi(.LCPI0_0)
+	or	a6, t0, a6
+	lui	a5, %hi(.LCPI0_0)
+	ld	a5, %lo(.LCPI0_0)(a5)
 	and	a3, a3, a0
 	slli	a0, a0, 56
-	ld	a5, %lo(.LCPI0_0)(a6)
 	slli	a3, a3, 40
 	or	a0, a0, a3
 	mul	a2, a2, a5
 	or	a0, a0, a4
 	add	a1, a1, a2
-	or	a0, a0, a7
+	or	a0, a0, a6
 	xor	a0, a0, a1
 	ret
 

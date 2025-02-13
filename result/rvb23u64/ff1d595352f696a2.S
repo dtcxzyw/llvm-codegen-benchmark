@@ -34,18 +34,18 @@ func00000000000000a1:
 	.quad	5000000000000000000
 func0000000000000208:
 	lui	a3, 227374
+	lui	a4, %hi(.LCPI3_0)
 	addiw	a3, a3, -1329
+	ld	a4, %lo(.LCPI3_0)(a4)
 	slli	a3, a3, 12
 	addi	a3, a3, -1575
 	slli	a3, a3, 18
 	sltu	a3, a2, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
-	lui	a3, %hi(.LCPI3_0)
 	or	a1, a1, a2
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI3_0)(a3)
-	sltu	a0, a1, a0
+	sltu	a0, a4, a0
 	ret
 
 func000000000000032a:
@@ -63,13 +63,13 @@ func000000000000032a:
 	.quad	192153584101141162
 func0000000000000088:
 	addi	a3, a2, 1
+	lui	a4, %hi(.LCPI5_0)
 	czero.eqz	a2, a2, a3
+	ld	a4, %lo(.LCPI5_0)(a4)
 	czero.nez	a1, a1, a3
-	lui	a3, %hi(.LCPI5_0)
 	or	a1, a1, a2
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI5_0)(a3)
-	sltu	a0, a1, a0
+	sltu	a0, a4, a0
 	ret
 
 func0000000000000081:

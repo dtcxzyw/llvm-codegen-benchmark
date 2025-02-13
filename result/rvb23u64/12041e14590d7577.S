@@ -23,19 +23,19 @@ func0000000000000002:
 	lui	a2, %hi(.LCPI1_0)
 	mulhu	a1, a0, a1
 	srli	a1, a1, 3
+	ld	a2, %lo(.LCPI1_0)(a2)
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
 	sub	a0, a0, a1
-	ld	a1, %lo(.LCPI1_0)(a2)
-	mul	a0, a0, a1
+	mul	a0, a0, a2
 	ret
 
 .LCPI2_0:
 	.quad	4835703278458516699
 func0000000000000001:
 	lui	a1, %hi(.LCPI2_0)
-	lui	a2, 244
 	ld	a1, %lo(.LCPI2_0)(a1)
+	lui	a2, 244
 	addiw	a2, a2, 576
 	mulhu	a1, a0, a1
 	srli	a1, a1, 18

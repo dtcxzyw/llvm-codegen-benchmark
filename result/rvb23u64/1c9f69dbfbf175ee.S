@@ -1,12 +1,14 @@
 func0000000000000003:
+	addi	a1, a1, 80
 	mv	a2, a0
-	addi	a0, a1, 80
+	mv	a0, a1
 	mv	a1, a2
 	ret
 
 func0000000000000002:
+	addi	a1, a1, -32
 	mv	a2, a0
-	addi	a0, a1, -32
+	mv	a0, a1
 	mv	a1, a2
 	ret
 

@@ -9,11 +9,11 @@ func000000000000001c:
 .LCPI1_0:
 	.quad	-9187201950435737472
 func0000000000000004:
-	li	a2, 64
-	subw	a2, a2, a1
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	srl	a1, a1, a2
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	li	a3, 64
+	subw	a3, a3, a1
+	srl	a1, a2, a3
 	or	a0, a0, a1
 	ret
 

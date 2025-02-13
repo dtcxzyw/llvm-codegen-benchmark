@@ -9,8 +9,8 @@ func0000000000000004:
 	li	a0, -119
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v10, v8, a0
-	li	a0, -72
 	vmand.mm	v0, v10, v0
+	li	a0, -72
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -14,14 +14,15 @@ func0000000000000002:
 	.quad	0x41dfffffffc00000
 func000000000000000c:
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	fld	fa4, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fadd.d	fa5, fa0, fa5
-	fld	fa0, %lo(.LCPI1_1)(a0)
-	fle.d	a0, fa0, fa5
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	fadd.d	fa4, fa0, fa4
+	fle.d	a0, fa5, fa4
 	bnez	a0, .LBB1_2
-	fmv.d	fa0, fa5
+	fmv.d	fa5, fa4
 .LBB1_2:
+	fmv.d	fa0, fa5
 	ret
 
 .LCPI2_0:

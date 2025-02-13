@@ -19,9 +19,9 @@ func0000000000000006:
 .LCPI2_0:
 	.quad	4835703278458517
 func0000000000000000:
-	srli	a0, a0, 11
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	srli	a0, a0, 11
 	mulhu	a0, a0, a1
 	srli	a0, a0, 9
 	ret

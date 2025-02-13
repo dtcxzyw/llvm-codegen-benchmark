@@ -1,8 +1,8 @@
 func0000000000000074:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -127
 	vmsleu.vi	v0, v10, 3
+	li	a0, -127
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

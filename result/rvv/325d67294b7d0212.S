@@ -17,10 +17,10 @@ func0000000000000004:
 	vmv.v.i	v10, 0
 	li	a0, 256
 	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vmerge.vim	v8, v10, 10, v0
+	vrsub.vi	v8, v10, 4
+	vmerge.vim	v8, v8, 10, v0
 	ret
 

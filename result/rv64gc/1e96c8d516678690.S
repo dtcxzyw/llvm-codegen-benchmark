@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	bnez	a1, .LBB0_2
 	li	a1, 13
 	subw	a1, a1, a2

@@ -10,10 +10,9 @@ func0000000000000028:
 
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v12, 0
 	vmseq.vi	v0, v8, 0
-	vrsub.vi	v12, v10, 0, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 0
+	vrsub.vi	v8, v10, 0, v0.t
 	ret
 
 func0000000000000004:
@@ -28,9 +27,8 @@ func0000000000000004:
 
 func0000000000000064:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v12, 5
 	vmsleu.vi	v0, v8, 3
-	vrsub.vi	v12, v10, 5, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 5
+	vrsub.vi	v8, v10, 5, v0.t
 	ret
 

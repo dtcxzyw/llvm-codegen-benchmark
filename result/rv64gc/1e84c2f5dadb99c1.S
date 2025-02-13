@@ -11,18 +11,18 @@ func00000000000000c6:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
-	li	a2, 2
-	bge	a0, a2, .LBB1_3
-	li	a2, 3
-	blt	a2, a0, .LBB1_4
-.LBB1_2:
+	sext.w	a2, a0
+	li	a3, 2
 	mv	a0, a1
+	bge	a2, a3, .LBB1_3
+	li	a1, 3
+	blt	a1, a2, .LBB1_4
+.LBB1_2:
 	ret
 .LBB1_3:
-	li	a1, 2
-	li	a2, 3
-	bge	a2, a0, .LBB1_2
+	li	a0, 2
+	li	a1, 3
+	bge	a1, a2, .LBB1_2
 .LBB1_4:
 	li	a0, 3
 	ret

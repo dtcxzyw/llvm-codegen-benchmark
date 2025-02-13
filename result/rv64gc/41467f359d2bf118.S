@@ -22,12 +22,12 @@ func0000000000000031:
 .LCPI3_0:
 	.quad	-6148914691236517206
 func0000000000000018:
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	slli	a1, a1, 33
 	slli	a0, a0, 1
 	or	a0, a0, a1
-	lui	a1, %hi(.LCPI3_0)
-	ld	a1, %lo(.LCPI3_0)(a1)
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func000000000000003f:

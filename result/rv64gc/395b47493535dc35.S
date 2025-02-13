@@ -1,7 +1,7 @@
 func0000000000000526:
-	andi	a2, a2, 1
 	sext.w	a0, a0
 	li	a3, 1239
+	andi	a2, a2, 1
 	blt	a3, a0, .LBB0_2
 	li	a3, 107
 	lui	a4, 8

@@ -47,11 +47,11 @@ func0000000000000143:
 	addiw	a0, a0, 1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
-	vmv.v.i	v10, 0
-	vsrl.vi	v8, v8, 9
 	lui	a0, %hi(.LCPI3_0)
-	vmerge.vim	v10, v10, 1, v0
 	ld	a0, %lo(.LCPI3_0)(a0)
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vsrl.vi	v8, v8, 9
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 11
 	vadd.vv	v8, v8, v10

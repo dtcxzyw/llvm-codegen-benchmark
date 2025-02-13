@@ -58,8 +58,8 @@ func0000000000000047:
 
 func0000000000000040:
 	andi	a2, a1, 255
-	lui	a1, 256
 	li	a3, 5
+	lui	a1, 256
 	bltu	a3, a2, .LBB6_2
 	lui	a1, 3
 .LBB6_2:

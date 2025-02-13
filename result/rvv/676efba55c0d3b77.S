@@ -34,10 +34,10 @@ func0000000000000014:
 .LCPI3_0:
 	.quad	2951479051793528259
 func0000000000000004:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 2
 	vmsltu.vv	v0, v8, v10
@@ -101,10 +101,10 @@ func0000000000000034:
 .LCPI9_0:
 	.quad	2951479051793528259
 func0000000000000018:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, %hi(.LCPI9_0)
 	ld	a0, %lo(.LCPI9_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 2
 	vmsltu.vv	v0, v10, v8
@@ -124,10 +124,10 @@ func0000000000000009:
 .LCPI11_0:
 	.quad	2951479051793528259
 func0000000000000019:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, %hi(.LCPI11_0)
 	ld	a0, %lo(.LCPI11_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 2
 	vmsleu.vv	v0, v10, v8

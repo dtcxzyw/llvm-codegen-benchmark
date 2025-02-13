@@ -44,11 +44,11 @@ func000000000000002d:
 .LCPI4_0:
 	.word	0x3d25aee6
 func0000000000000023:
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v12, v8, fa5
 	flw	fa5, %lo(.LCPI4_0)(a0)
+	fmv.w.x	fa4, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v12, v8, fa4
 	vmfge.vf	v13, v8, fa5
 	vmnot.m	v8, v0
 	vmandn.mm	v8, v8, v13

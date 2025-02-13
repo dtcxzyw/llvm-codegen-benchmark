@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	0x3f50624dd2f1a9fc
 func0000000000000104:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v14, v12, 1
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vi	v14, v12, 1
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v8, v12, v14

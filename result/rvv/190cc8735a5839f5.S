@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.word	0x3eaaaaab
 func0000000000000007:
-	fmv.w.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	vsetivli	zero, 16, e32, m4, ta, mu
-	vmfne.vf	v0, v8, fa5
 	flw	fa5, %lo(.LCPI0_0)(a0)
+	fmv.w.x	fa4, zero
+	vsetivli	zero, 16, e32, m4, ta, mu
+	vmfne.vf	v0, v8, fa4
 	vfmv.v.f	v12, fa5
 	fli.s	fa5, 1.0
 	vfrdiv.vf	v12, v8, fa5, v0.t

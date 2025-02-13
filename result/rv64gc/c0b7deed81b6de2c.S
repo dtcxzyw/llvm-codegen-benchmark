@@ -2,11 +2,11 @@
 	.quad	4223091239536077
 func000000000000003f:
 	lui	a3, 16
-	addiw	a3, a3, -15
-	addi	a4, a3, 14
-	and	a2, a2, a4
 	lui	a4, %hi(.LCPI0_0)
+	addiw	a3, a3, -15
 	ld	a4, %lo(.LCPI0_0)(a4)
+	addi	a5, a3, 14
+	and	a2, a2, a5
 	add	a1, a1, a2
 	mulhu	a2, a0, a4
 	sub	a4, a0, a2

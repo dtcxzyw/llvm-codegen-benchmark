@@ -42,8 +42,8 @@ func0000000000000181:
 func0000000000000024:
 	sext.w	a0, a0
 	sext.w	a2, a1
-	li	a1, 1
 	li	a3, 38
+	li	a1, 1
 	beq	a2, a3, .LBB3_2
 	slli	a1, a1, 31
 	addi	a1, a1, 3

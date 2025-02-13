@@ -5,11 +5,11 @@
 func000000000000000c:
 	li	a2, -1
 	beq	a1, a2, .LBB0_2
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI0_1)
@@ -30,11 +30,11 @@ func000000000000000c:
 func000000000000000f:
 	li	a2, -1
 	beq	a1, a2, .LBB1_2
-	not	a1, a1
-	neg	a2, a1
-	and	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	not	a1, a1
+	neg	a3, a1
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI1_1)

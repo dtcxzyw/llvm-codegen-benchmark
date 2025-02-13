@@ -103,11 +103,11 @@ func0000000000000321:
 .LCPI12_0:
 	.quad	922337203685477580
 func000000000000070c:
+	lui	a0, %hi(.LCPI12_0)
+	ld	a0, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, %hi(.LCPI12_0)
 	vmsltu.vv	v12, v14, v10
-	ld	a0, %lo(.LCPI12_0)(a0)
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

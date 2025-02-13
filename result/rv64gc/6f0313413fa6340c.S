@@ -23,8 +23,8 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fdiv.s	fa5, fa0, fa5
 	flw	fa4, %lo(.LCPI1_1)(a0)
+	fdiv.s	fa5, fa0, fa5
 	flt.s	a0, fa4, fa5
 	ret
 

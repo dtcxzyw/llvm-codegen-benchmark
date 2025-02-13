@@ -24,8 +24,8 @@ func00000000000000a6:
 	vadd.vv	v8, v10, v8
 	lui	a0, 524288
 	vadd.vi	v8, v8, -3
-	addi	a0, a0, -1
 	vmsle.vi	v0, v8, 0
+	addi	a0, a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

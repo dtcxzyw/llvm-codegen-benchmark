@@ -9,11 +9,11 @@ func00000000000000e4:
 	addi	a0, a0, 560
 	vmerge.vxm	v10, v10, a0, v0
 	bseti	a0, zero, 32
-	vsll.vi	v11, v10, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vvm	v8, v11, v10, v0
+	vsll.vi	v8, v10, 8
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 
 func00000000000000e1:
@@ -26,10 +26,10 @@ func00000000000000e1:
 	lui	a0, 4
 	addi	a0, a0, 560
 	vmerge.vxm	v10, v10, a0, v0
-	vsll.vi	v11, v10, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vvm	v8, v11, v10, v0
+	vsll.vi	v8, v10, 8
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

@@ -17,12 +17,12 @@ func0000000000000002:
 func000000000000000c:
 	fli.s	fa5, 2.0
 	lui	a0, %hi(.LCPI1_0)
+	flw	fa4, %lo(.LCPI1_0)(a0)
 	fneg.s	fa5, fa5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
-	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 798656
-	vfmul.vf	v8, v8, fa5
+	vfmul.vf	v8, v8, fa4
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret

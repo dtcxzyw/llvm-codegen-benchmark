@@ -19,10 +19,10 @@ func0000000000000028:
 	ret
 
 func0000000000000002:
-	slli	a2, a1, 48
-	lui	a1, 32770
-	srli	a2, a2, 60
+	slli	a1, a1, 48
+	srli	a2, a1, 60
 	li	a3, 4
+	lui	a1, 32770
 	beq	a2, a3, .LBB2_2
 	lui	a1, 2
 .LBB2_2:

@@ -1,6 +1,6 @@
 func0000000000000014:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB0_2
 	li	a2, 128
 	sltu	a1, a1, a2
@@ -22,8 +22,8 @@ func000000000000000a:
 	ret
 
 func0000000000000005:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB2_2
 	li	a2, 5
 	sltu	a1, a2, a1
@@ -38,8 +38,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB3_2
 	li	a2, 1
 	xor	a1, a1, a2
@@ -54,8 +54,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB4_2
 	li	a2, 15
 	slt	a1, a1, a2
@@ -68,8 +68,8 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB5_2
 	li	a2, 8
 	slt	a1, a2, a1

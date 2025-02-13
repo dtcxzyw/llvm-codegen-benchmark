@@ -3,9 +3,9 @@
 func0000000000000005:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	srai	a1, a1, 3
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	srai	a1, a1, 3
 	mul	a0, a1, a0
 	ret
 .LBB0_2:

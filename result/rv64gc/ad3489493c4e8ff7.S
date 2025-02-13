@@ -11,8 +11,8 @@ func0000000000000021:
 
 func0000000000000028:
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	andi	a1, a1, 1
+	srli	a0, a0, 48
 	bnez	a1, .LBB1_2
 	li	a1, 256
 	sltiu	a0, a0, 830

@@ -25,9 +25,9 @@ func0000000000000015:
 	ret
 
 func0000000000000014:
+	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	lui	a0, 8
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -38,9 +38,9 @@ func0000000000000037:
 	ret
 
 func0000000000000003:
+	lui	a0, 2047
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	lui	a0, 2047
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -57,16 +57,16 @@ func000000000000003f:
 	ret
 
 func0000000000000013:
+	lui	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	lui	a0, 1
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000030:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	li	a0, 256
 	vadd.vx	v8, v8, a0
 	ret
 

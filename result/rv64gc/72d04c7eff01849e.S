@@ -11,9 +11,9 @@ func0000000000000053:
 	ret
 
 func0000000000000010:
+	srli	a3, a0, 32
 	andi	a2, a1, 1
-	srli	a1, a0, 32
-	beqz	a1, .LBB1_2
+	beqz	a3, .LBB1_2
 	li	a1, 12
 	bnez	a2, .LBB1_3
 	j	.LBB1_4

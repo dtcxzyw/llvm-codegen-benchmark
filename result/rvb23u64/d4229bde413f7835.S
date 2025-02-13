@@ -17,8 +17,8 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fmul.d	fa5, fa1, fa5
 	fld	fa4, %lo(.LCPI1_1)(a0)
+	fmul.d	fa5, fa1, fa5
 	fmul.d	fa0, fa0, fa4
 	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB1_2
@@ -29,10 +29,10 @@ func0000000000000004:
 .LCPI2_0:
 	.quad	0x3f747ae147ae147b
 func000000000000000c:
-	fli.d	fa5, 4.0
 	lui	a0, %hi(.LCPI2_0)
-	fmul.d	fa5, fa1, fa5
 	fld	fa4, %lo(.LCPI2_0)(a0)
+	fli.d	fa5, 4.0
+	fmul.d	fa5, fa1, fa5
 	fmul.d	fa0, fa0, fa4
 	fle.d	a0, fa5, fa0
 	bnez	a0, .LBB2_2

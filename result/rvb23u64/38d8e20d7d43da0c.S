@@ -50,21 +50,21 @@ func0000000000000061:
 .LCPI7_0:
 	.quad	1844674407370955161
 func0000000000000088:
+	lui	a2, %hi(.LCPI7_0)
+	ld	a2, %lo(.LCPI7_0)(a2)
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI7_0)
-	ld	a1, %lo(.LCPI7_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 .LCPI8_0:
 	.quad	768614336404564650
 func00000000000003a8:
+	lui	a2, %hi(.LCPI8_0)
+	ld	a2, %lo(.LCPI8_0)(a2)
 	addiw	a1, a1, 1
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI8_0)
-	ld	a1, %lo(.LCPI8_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func00000000000001aa:
@@ -105,21 +105,21 @@ func00000000000003f4:
 .LCPI14_0:
 	.quad	-106751991167300
 func0000000000000186:
+	lui	a2, %hi(.LCPI14_0)
+	ld	a2, %lo(.LCPI14_0)(a2)
 	addiw	a1, a1, -1
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI14_0)
-	ld	a1, %lo(.LCPI14_0)(a1)
-	slt	a0, a0, a1
+	slt	a0, a0, a2
 	ret
 
 .LCPI15_0:
 	.quad	106751991167300
 func000000000000018a:
+	lui	a2, %hi(.LCPI15_0)
+	ld	a2, %lo(.LCPI15_0)(a2)
 	addiw	a1, a1, -1
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI15_0)
-	ld	a1, %lo(.LCPI15_0)(a1)
-	slt	a0, a1, a0
+	slt	a0, a2, a0
 	ret
 
 func0000000000000078:
@@ -154,11 +154,11 @@ func00000000000001a6:
 .LCPI20_0:
 	.quad	1844674407370955161
 func0000000000000184:
+	lui	a2, %hi(.LCPI20_0)
+	ld	a2, %lo(.LCPI20_0)(a2)
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI20_0)
-	ld	a1, %lo(.LCPI20_0)(a1)
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000188:

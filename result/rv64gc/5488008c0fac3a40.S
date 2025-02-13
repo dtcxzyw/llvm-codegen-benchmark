@@ -1,7 +1,7 @@
 func0000000000000001:
-	andi	a0, a0, 255
 	andi	a1, a1, 255
 	li	a2, 2
+	andi	a0, a0, 255
 	bgeu	a1, a2, .LBB0_3
 	bgeu	a0, a2, .LBB0_4
 .LBB0_2:

@@ -32,8 +32,8 @@ func0000000000000003:
 func0000000000000001:
 	li	a1, -1
 	lui	a2, %hi(.LCPI2_0)
-	srli	a1, a1, 1
 	ld	a2, %lo(.LCPI2_0)(a2)
+	srli	a1, a1, 1
 	xor	a0, a0, a1
 	lui	a1, 244141
 	mulhu	a2, a0, a2

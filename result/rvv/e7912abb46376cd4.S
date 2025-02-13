@@ -8,10 +8,10 @@ func0000000000000293:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -15
-	srli	a1, a1, 1
 	vmul.vx	v12, v12, a0
 	vnot.v	v12, v12
 	vmsltu.vv	v0, v12, v10
+	srli	a1, a1, 1
 	vmerge.vxm	v8, v8, a1, v0
 	ret
 
@@ -25,10 +25,10 @@ func0000000000000213:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -15
-	srli	a1, a1, 1
 	vmul.vx	v12, v12, a0
 	vnot.v	v12, v12
 	vmsltu.vv	v0, v12, v10
+	srli	a1, a1, 1
 	vmerge.vxm	v8, v8, a1, v0
 	ret
 

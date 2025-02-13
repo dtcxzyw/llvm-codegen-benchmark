@@ -12,10 +12,10 @@ func0000000000000006:
 	vsetivli	zero, 16, e8, m1, ta, mu
 	vmv1r.v	v10, v0
 	vmv1r.v	v0, v8
+	li	a0, 16
 	vor.vi	v9, v9, 4, v0.t
 	vmv1r.v	v0, v10
 	vor.vi	v9, v9, 8, v0.t
-	li	a0, 16
 	vor.vx	v8, v9, a0
 	ret
 

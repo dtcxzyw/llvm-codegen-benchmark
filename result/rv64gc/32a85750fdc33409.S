@@ -38,8 +38,8 @@ func0000000000000107:
 	ret
 
 func0000000000000088:
-	sext.w	a0, a0
 	srli	a2, a2, 32
+	sext.w	a0, a0
 	beqz	a2, .LBB4_2
 	li	a1, 31
 .LBB4_2:

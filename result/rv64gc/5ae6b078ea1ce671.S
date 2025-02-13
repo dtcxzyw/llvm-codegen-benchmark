@@ -48,13 +48,13 @@ func0000000000000015:
 .LCPI5_1:
 	.quad	-49064778989728546
 func0000000000000040:
-	sext.w	a1, a1
 	lui	a2, %hi(.LCPI5_0)
+	lui	a3, %hi(.LCPI5_1)
 	ld	a2, %lo(.LCPI5_0)(a2)
+	ld	a3, %lo(.LCPI5_1)(a3)
+	sext.w	a1, a1
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI5_1)
-	ld	a2, %lo(.LCPI5_1)(a2)
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

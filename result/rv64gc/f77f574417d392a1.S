@@ -9,17 +9,17 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a2, a2, 1
-	bnez	a2, .LBB1_2
-	li	a2, 172
-	bltu	a0, a1, .LBB1_3
+	andi	a3, a2, 1
+	mv	a2, a0
+	bnez	a3, .LBB1_2
+	li	a0, 172
+	bltu	a2, a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a2, 50
-	bgeu	a0, a1, .LBB1_4
+	li	a0, 50
+	bgeu	a2, a1, .LBB1_4
 .LBB1_3:
-	li	a2, 54
+	li	a0, 54
 .LBB1_4:
-	mv	a0, a2
 	ret
 

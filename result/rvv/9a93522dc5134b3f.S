@@ -42,9 +42,9 @@ func000000000000002c:
 	ret
 
 func0000000000000004:
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v8, v8, v10, v0.t
-	li	a0, 64
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -10,9 +10,9 @@ func00000000000001a4:
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	vsra.vi	v10, v10, 3
+	ld	a1, %lo(.LCPI0_0)(a1)
 	vmul.vx	v10, v10, a0
 	lui	a0, 209715
-	ld	a1, %lo(.LCPI0_0)(a1)
 	addiw	a0, a0, 819
 	vmv.v.x	v12, a1
 	slli	a1, a0, 32

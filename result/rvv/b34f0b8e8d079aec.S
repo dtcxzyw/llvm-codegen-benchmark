@@ -3,41 +3,41 @@
 .LCPI0_1:
 	.quad	128102389400760775
 func00000000000002a1:
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, %hi(.LCPI0_1)
+	ld	a1, %lo(.LCPI0_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vadd.vv	v8, v8, v10
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vmacc.vx	v8, a0, v12
-	lui	a0, %hi(.LCPI0_1)
-	ld	a0, %lo(.LCPI0_1)(a0)
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	ret
 
 .LCPI1_0:
 	.quad	230584300921369395
 func00000000000002a8:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
-	vadd.vv	v8, v8, v10
 	lui	a0, 790465
 	addiw	a0, a0, -63
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v12, v12, 3
+	vadd.vv	v8, v8, v10
 	vmacc.vx	v8, a0, v12
-	ld	a0, %lo(.LCPI1_0)(a1)
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	ret
 
 .LCPI2_0:
 	.quad	-8198552921648689607
 func00000000000001aa:
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vmadd.vx	v8, a0, v10
 	vmsgt.vi	v0, v8, -1
 	ret
@@ -45,11 +45,11 @@ func00000000000001aa:
 .LCPI3_0:
 	.quad	-8198552921648689607
 func00000000000001b4:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vmadd.vx	v8, a0, v10
 	vmsleu.vi	v0, v8, 6
 	ret
@@ -81,11 +81,11 @@ func00000000000000b4:
 .LCPI6_0:
 	.quad	5675921253449092805
 func00000000000002a4:
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vadd.vv	v8, v8, v10
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
 	vmacc.vx	v8, a0, v12
 	vmsleu.vi	v0, v8, 1
 	ret

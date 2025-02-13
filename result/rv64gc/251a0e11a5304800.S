@@ -23,10 +23,10 @@ func0000000000000282:
 .LCPI3_0:
 	.quad	0x3f847ae147ae147b
 func0000000000000024:
-	addi	a0, a0, -4
 	lui	a1, %hi(.LCPI3_0)
-	seqz	a0, a0
 	fld	fa5, %lo(.LCPI3_0)(a1)
+	addi	a0, a0, -4
+	seqz	a0, a0
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -70,10 +70,10 @@ func00000000000002d8:
 .LCPI8_0:
 	.quad	0x3fe0000000000000
 func0000000000000148:
-	slti	a0, a0, 2
 	lui	a1, %hi(.LCPI8_0)
-	xori	a0, a0, 1
 	fld	fa5, %lo(.LCPI8_0)(a1)
+	slti	a0, a0, 2
+	xori	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

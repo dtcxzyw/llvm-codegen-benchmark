@@ -10,9 +10,9 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	li	a3, 2
+	andi	a0, a0, 1
 	bne	a2, a3, .LBB1_2
 	li	a1, 14
 .LBB1_2:

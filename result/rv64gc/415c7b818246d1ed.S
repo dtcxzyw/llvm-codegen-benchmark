@@ -1,8 +1,8 @@
 func0000000000000001:
 	sext.w	a2, a0
 	lui	a0, 4
-	addiw	a0, a0, -1472
 	li	a3, 1
+	addiw	a0, a0, -1472
 	beq	a2, a3, .LBB0_2
 	addi	a1, a1, 7
 	andi	a1, a1, -8

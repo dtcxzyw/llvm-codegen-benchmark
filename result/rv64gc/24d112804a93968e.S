@@ -12,21 +12,21 @@ func0000000000000026:
 .LCPI1_0:
 	.quad	-8198552921648689607
 func00000000000000a8:
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI1_0)
 	srli	a1, a1, 3
-	ld	a2, %lo(.LCPI1_0)(a2)
-	mul	a1, a1, a2
+	mul	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
 
 .LCPI2_0:
 	.quad	3777893186295716171
 func0000000000000041:
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 11
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -57,10 +57,10 @@ func00000000000000b4:
 .LCPI5_0:
 	.quad	4835703278458516699
 func0000000000000018:
+	lui	a3, %hi(.LCPI5_0)
+	ld	a3, %lo(.LCPI5_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 15
 	sltu	a0, a0, a1
 	ret
@@ -113,10 +113,10 @@ func0000000000000004:
 .LCPI10_0:
 	.quad	-2912643801112034465
 func00000000000000c4:
+	lui	a3, %hi(.LCPI10_0)
+	ld	a3, %lo(.LCPI10_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI10_0)
-	ld	a2, %lo(.LCPI10_0)(a2)
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 4
 	sltu	a0, a1, a0
 	ret
@@ -124,22 +124,22 @@ func00000000000000c4:
 .LCPI11_0:
 	.quad	5675921253449092805
 func0000000000000068:
+	lui	a3, %hi(.LCPI11_0)
+	ld	a3, %lo(.LCPI11_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI11_0)
 	srli	a1, a1, 3
-	ld	a2, %lo(.LCPI11_0)(a2)
-	mul	a1, a1, a2
+	mul	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
 
 .LCPI12_0:
 	.quad	2361183241434822607
 func0000000000000019:
+	lui	a3, %hi(.LCPI12_0)
+	ld	a3, %lo(.LCPI12_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI12_0)
 	srli	a1, a1, 3
-	ld	a2, %lo(.LCPI12_0)(a2)
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
@@ -159,11 +159,11 @@ func0000000000000008:
 .LCPI14_0:
 	.quad	2361183241434822607
 func0000000000000006:
+	lui	a3, %hi(.LCPI14_0)
+	ld	a3, %lo(.LCPI14_0)(a3)
 	sub	a1, a1, a2
-	lui	a2, %hi(.LCPI14_0)
 	srli	a1, a1, 3
-	ld	a2, %lo(.LCPI14_0)(a2)
-	mulhu	a1, a1, a2
+	mulhu	a1, a1, a3
 	srli	a1, a1, 4
 	slt	a0, a1, a0
 	ret

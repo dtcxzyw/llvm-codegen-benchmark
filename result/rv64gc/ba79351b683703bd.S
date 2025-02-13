@@ -59,13 +59,13 @@ func0000000000000004:
 	ret
 
 func0000000000000066:
-	mv	a1, a0
-	li	a0, 64
-	blt	a1, a0, .LBB6_2
-	addi	a0, a1, 32
+	li	a1, 64
+	blt	a0, a1, .LBB6_2
+	addi	a0, a0, 32
 	li	a1, -127
 	srli	a1, a1, 1
-	and	a0, a0, a1
+	and	a1, a1, a0
 .LBB6_2:
+	mv	a0, a1
 	ret
 

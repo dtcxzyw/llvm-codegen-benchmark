@@ -1,9 +1,9 @@
 func0000000000000081:
-	andi	a0, a0, 1
 	li	a3, -1
 	srli	a3, a3, 1
 	add	a2, a2, a3
 	li	a3, 7
+	andi	a0, a0, 1
 	bgeu	a2, a3, .LBB0_3
 	beqz	a0, .LBB0_4
 .LBB0_2:
@@ -20,9 +20,9 @@ func0000000000000081:
 	ret
 
 func0000000000000481:
-	andi	a0, a0, 1
 	addi	a2, a2, -4
 	li	a3, 10
+	andi	a0, a0, 1
 	bgeu	a2, a3, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:

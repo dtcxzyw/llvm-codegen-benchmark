@@ -10,10 +10,10 @@ func0000000000000086:
 	ret
 
 func0000000000000001:
-	srli	a1, a0, 3
-	lui	a0, 1048573
-	sext.w	a1, a1
+	srli	a0, a0, 3
+	sext.w	a1, a0
 	li	a2, 4
+	lui	a0, 1048573
 	beq	a1, a2, .LBB1_2
 	addiw	a0, a0, -629
 	ret

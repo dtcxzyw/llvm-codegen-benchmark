@@ -1,6 +1,6 @@
 func0000000000000514:
-	andi	a0, a0, 1
 	srli	a3, a1, 16
+	andi	a0, a0, 1
 	beqz	a3, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -11,8 +11,8 @@ func0000000000000514:
 	ret
 
 func0000000000000518:
-	andi	a0, a0, 1
 	li	a3, 16
+	andi	a0, a0, 1
 	bltu	a1, a3, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -24,8 +24,8 @@ func0000000000000518:
 	ret
 
 func0000000000000104:
-	andi	a0, a0, 1
 	srli	a3, a1, 16
+	andi	a0, a0, 1
 	beqz	a3, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
@@ -36,8 +36,8 @@ func0000000000000104:
 	ret
 
 func0000000000000108:
-	andi	a0, a0, 1
 	li	a3, 16
+	andi	a0, a0, 1
 	bltu	a1, a3, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
@@ -49,8 +49,8 @@ func0000000000000108:
 	ret
 
 func0000000000000114:
-	andi	a0, a0, 1
 	srli	a3, a1, 32
+	andi	a0, a0, 1
 	beqz	a3, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

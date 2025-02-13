@@ -45,11 +45,11 @@ func000000000000000f:
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
+	li	a1, -1
+	srli	a1, a1, 32
+	vand.vx	v8, v8, a1
 	vmul.vx	v8, v8, a0
 	ret
 

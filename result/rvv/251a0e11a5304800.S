@@ -24,10 +24,10 @@ func0000000000000282:
 .LCPI3_0:
 	.quad	0x3f847ae147ae147b
 func0000000000000024:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v12, v10, 4
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v12, v10, 4
 	vmflt.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret

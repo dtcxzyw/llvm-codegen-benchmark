@@ -13,9 +13,9 @@ func0000000000000018:
 	addi	a0, a0, -819
 	vmacc.vx	v10, a0, v8
 	lui	a0, 209715
-	vmv.v.i	v8, 0
 	addi	a0, a0, 818
 	vmsgtu.vx	v0, v10, a0
+	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -28,10 +28,10 @@ func0000000000000014:
 	vsra.vi	v10, v10, 6
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	vmv.v.i	v12, 0
 	vnmsub.vx	v10, a0, v8
 	vmsgt.vi	v0, v10, 0
-	vmerge.vim	v8, v12, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 
 func000000000000000c:
@@ -43,9 +43,9 @@ func000000000000000c:
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	vmv.v.i	v12, 0
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, 1
-	vmerge.vim	v8, v12, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

@@ -6,11 +6,11 @@ func0000000000000061:
 	ret
 
 func000000000000006c:
-	mv	a3, a0
-	addi	a0, a2, 64
-	beq	a0, a1, .LBB1_2
-	mv	a0, a3
+	addi	a2, a2, 64
+	beq	a2, a1, .LBB1_2
+	mv	a2, a0
 .LBB1_2:
+	mv	a0, a2
 	ret
 
 func0000000000000001:

@@ -62,9 +62,9 @@ func0000000000000084:
 .LCPI8_0:
 	.quad	0xc3e0000000000000
 func000000000000008c:
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	feq.d	a0, fa0, fa1
-	lui	a1, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a1)
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -72,9 +72,9 @@ func000000000000008c:
 .LCPI9_0:
 	.quad	0xc08f380000000000
 func0000000000000077:
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
 	feq.d	a0, fa0, fa1
-	lui	a1, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a1)
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1

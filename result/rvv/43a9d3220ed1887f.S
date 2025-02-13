@@ -4,8 +4,8 @@ func0000000000000021:
 	li	a0, 19
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 3, v0
-	vmv.v.i	v12, 3
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vmv.v.i	v8, 3
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

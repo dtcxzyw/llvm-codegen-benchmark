@@ -9,34 +9,34 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	mv	a3, a0
-	addi	a0, a2, 1
-	blt	a0, a1, .LBB1_2
-	mv	a0, a3
+	addi	a2, a2, 1
+	blt	a2, a1, .LBB1_2
+	mv	a2, a0
 .LBB1_2:
+	mv	a0, a2
 	ret
 
 func0000000000000008:
-	mv	a3, a0
-	addi	a0, a2, 1
-	bltu	a1, a0, .LBB2_2
-	mv	a0, a3
+	addi	a2, a2, 1
+	bltu	a1, a2, .LBB2_2
+	mv	a2, a0
 .LBB2_2:
+	mv	a0, a2
 	ret
 
 func0000000000000004:
-	mv	a3, a0
-	addi	a0, a2, 1
-	bltu	a0, a1, .LBB3_2
-	mv	a0, a3
+	addi	a2, a2, 1
+	bltu	a2, a1, .LBB3_2
+	mv	a2, a0
 .LBB3_2:
+	mv	a0, a2
 	ret
 
 func0000000000000026:
-	mv	a3, a0
-	addi	a0, a2, 1
-	blt	a0, a1, .LBB4_2
-	mv	a0, a3
+	addi	a2, a2, 1
+	blt	a2, a1, .LBB4_2
+	mv	a2, a0
 .LBB4_2:
+	mv	a0, a2
 	ret
 

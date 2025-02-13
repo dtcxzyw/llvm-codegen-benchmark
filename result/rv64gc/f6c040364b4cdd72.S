@@ -1,9 +1,9 @@
 func0000000000000034:
 	slli	a1, a1, 48
 	andi	a3, a2, 255
+	li	a4, 6
 	srli	a2, a1, 48
-	li	a1, 6
-	beq	a3, a1, .LBB0_2
+	beq	a3, a4, .LBB0_2
 	lui	a1, 6
 	addiw	a1, a1, 560
 	li	a3, 2

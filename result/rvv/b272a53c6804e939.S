@@ -18,19 +18,19 @@ func000000000000000a:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 32
 	vmseq.vi	v0, v10, -1
+	bseti	a0, zero, 32
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 .LCPI3_0:
 	.quad	768614336404564650
 func0000000000000006:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, %hi(.LCPI3_0)
 	vmsle.vi	v0, v10, -1
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

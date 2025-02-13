@@ -1,8 +1,8 @@
 func0000000000000000:
 	or	a1, a1, a2
 	lui	a2, 6
-	andi	a1, a1, 1
 	addiw	a2, a2, 1638
+	andi	a1, a1, 1
 	bltu	a0, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:

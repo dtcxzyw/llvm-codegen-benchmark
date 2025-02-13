@@ -3,11 +3,11 @@
 func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 1047697
-	addiw	a0, a0, 384
-	vmacc.vx	v10, a0, v8
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	lui	a1, 1047697
+	addiw	a1, a1, 384
+	vmacc.vx	v10, a1, v8
 	vmulh.vx	v8, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v8, a0
@@ -24,11 +24,11 @@ func0000000000000021:
 func00000000000000a0:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 1048561
-	addiw	a0, a0, 1440
-	vmacc.vx	v8, a0, v12
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, 1048561
+	addiw	a1, a1, 1440
+	vmacc.vx	v8, a1, v12
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -44,11 +44,11 @@ func00000000000000a0:
 func00000000000000a9:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 14648
-	addiw	a0, a0, 1792
-	vmacc.vx	v10, a0, v8
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, 14648
+	addiw	a1, a1, 1792
+	vmacc.vx	v10, a1, v8
 	vmulh.vx	v8, v10, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -64,11 +64,11 @@ func00000000000000a9:
 func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 1033928
-	addiw	a0, a0, -1792
-	vmacc.vx	v10, a0, v8
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	lui	a1, 1033928
+	addiw	a1, a1, -1792
+	vmacc.vx	v10, a1, v8
 	vmulh.vx	v8, v10, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
@@ -86,12 +86,12 @@ func00000000000000a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 1041423
+	lui	a1, %hi(.LCPI4_0)
+	ld	a1, %lo(.LCPI4_0)(a1)
 	addiw	a0, a0, 1813
 	slli	a0, a0, 11
 	vmacc.vx	v8, a0, v12
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
-	vmulh.vx	v10, v8, a0
+	vmulh.vx	v10, v8, a1
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	lui	a0, 244141

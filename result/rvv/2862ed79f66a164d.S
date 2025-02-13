@@ -17,10 +17,10 @@ func0000000000000021:
 .LCPI2_0:
 	.quad	1844674407370955161
 func000000000000030c:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmsgtu.vi	v10, v10, 5
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 4, e8, mf4, ta, ma
+	vmsgtu.vi	v10, v10, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

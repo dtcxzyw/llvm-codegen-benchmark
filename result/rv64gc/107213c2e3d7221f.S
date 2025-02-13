@@ -30,9 +30,9 @@ func0000000000000002:
 .LCPI2_0:
 	.word	0x40c90fdb
 func000000000000000c:
-	andi	a0, a0, 1
 	lui	a1, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a1)
+	andi	a0, a0, 1
 	beqz	a0, .LBB2_2
 	fadd.s	fa0, fa0, fa5
 .LBB2_2:

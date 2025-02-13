@@ -3,10 +3,10 @@
 func0000000000000014:
 	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI0_0)
+	fld	fa4, %lo(.LCPI0_0)(a0)
 	fsub.d	fa5, fa1, fa5
 	fdiv.d	fa5, fa0, fa5
 	fabs.d	fa5, fa5
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	flt.d	a0, fa4, fa5
 	ret
 
@@ -15,10 +15,10 @@ func0000000000000014:
 func0000000000000012:
 	fli.d	fa5, 0.5
 	lui	a0, %hi(.LCPI1_0)
+	fld	fa4, %lo(.LCPI1_0)(a0)
 	fsub.d	fa5, fa1, fa5
 	fdiv.d	fa5, fa0, fa5
 	fabs.d	fa5, fa5
-	fld	fa4, %lo(.LCPI1_0)(a0)
 	flt.d	a0, fa5, fa4
 	ret
 
@@ -39,10 +39,10 @@ func0000000000000002:
 func0000000000000004:
 	fli.d	fa5, -1.0
 	lui	a0, %hi(.LCPI3_0)
+	fld	fa4, %lo(.LCPI3_0)(a0)
 	fadd.d	fa5, fa1, fa5
 	fdiv.d	fa5, fa0, fa5
 	fabs.d	fa5, fa5
-	fld	fa4, %lo(.LCPI3_0)(a0)
 	flt.d	a0, fa4, fa5
 	ret
 

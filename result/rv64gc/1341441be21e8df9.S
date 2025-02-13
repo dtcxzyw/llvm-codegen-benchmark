@@ -16,17 +16,17 @@ func0000000000000003:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	andi	a3, a1, 1
-	andi	a2, a2, 1
-	bnez	a2, .LBB1_2
+	andi	a3, a2, 1
+	andi	a2, a1, 1
+	bnez	a3, .LBB1_2
 	li	a1, 1
 	j	.LBB1_3
 .LBB1_2:
 	lui	a1, 921600
 	addiw	a1, a1, -1
 .LBB1_3:
-	addi	a3, a3, -1
-	lui	a2, 524288
+	addi	a2, a2, -1
+	lui	a3, 524288
 	addi	a0, a0, -1
 	and	a2, a2, a3
 	lui	a3, 786432

@@ -8,11 +8,10 @@ func0000000000000001:
 	ret
 
 func0000000000000041:
-	vsetivli	zero, 16, e8, m1, ta, mu
-	vor.vv	v9, v9, v10
 	li	a0, 37
+	vsetivli	zero, 16, e8, m1, ta, mu
 	vmseq.vx	v0, v8, a0
-	vor.vi	v9, v9, 4, v0.t
-	vmv.v.v	v8, v9
+	vor.vv	v8, v9, v10
+	vor.vi	v8, v8, 4, v0.t
 	ret
 

@@ -57,11 +57,11 @@ func000000000000000b:
 .LCPI8_0:
 	.quad	-7046029254386353130
 func000000000000000c:
+	lui	a2, %hi(.LCPI8_0)
+	ld	a2, %lo(.LCPI8_0)(a2)
 	xor	a0, a0, a1
-	lui	a1, %hi(.LCPI8_0)
 	seqz	a0, a0
-	ld	a1, %lo(.LCPI8_0)(a1)
-	sub	a0, a1, a0
+	sub	a0, a2, a0
 	ret
 
 func0000000000000007:

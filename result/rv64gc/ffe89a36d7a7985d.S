@@ -21,11 +21,11 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	mv	a1, a0
-	li	a0, 1
-	bgeu	a0, a1, .LBB3_2
-	addiw	a0, a1, -1
+	li	a1, 1
+	bgeu	a1, a0, .LBB3_2
+	addiw	a1, a0, -1
 .LBB3_2:
+	mv	a0, a1
 	ret
 
 func0000000000000104:

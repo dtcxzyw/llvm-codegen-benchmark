@@ -1,7 +1,7 @@
 func000000000000020a:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	lui	a3, 8
+	sext.w	a0, a0
 	bltu	a3, a2, .LBB0_3
 	sext.w	a1, a1
 	bge	a0, a1, .LBB0_4
@@ -17,9 +17,9 @@ func000000000000020a:
 	ret
 
 func0000000000000206:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	lui	a3, 8
+	sext.w	a0, a0
 	bltu	a3, a2, .LBB1_3
 	sext.w	a1, a1
 	bge	a0, a1, .LBB1_4

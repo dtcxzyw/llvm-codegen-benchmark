@@ -1,8 +1,8 @@
 func0000000000000022:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	fli.d	fa5, 1.5
 	vmflt.vv	v0, v16, v24
+	fli.d	fa5, 1.5
 	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vf	v8, v8, fa5
 	vmflt.vv	v0, v8, v16

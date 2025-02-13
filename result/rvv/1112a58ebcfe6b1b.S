@@ -10,8 +10,8 @@ func0000000000000181:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
-	li	a0, 42
 	vmand.mm	v0, v10, v12
+	li	a0, 42
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -30,8 +30,8 @@ func0000000000000141:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0
-	li	a0, 26
 	vmand.mm	v0, v10, v12
+	li	a0, 26
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -6,9 +6,9 @@ func000000000000002c:
 	vandn.vx	v10, v12, a0
 	lui	a0, 32768
 	addiw	a0, a0, 5
-	slli	a0, a0, 10
 	vmseq.vi	v12, v10, 0
 	vmand.mm	v0, v14, v12
+	slli	a0, a0, 10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -30,8 +30,8 @@ func0000000000000001:
 func0000000000000024:
 	sext.w	a2, a0
 	lui	a0, 13
-	addiw	a0, a0, 1288
 	li	a3, 32
+	addiw	a0, a0, 1288
 	bgeu	a2, a3, .LBB3_2
 	or	a0, a0, a1
 .LBB3_2:

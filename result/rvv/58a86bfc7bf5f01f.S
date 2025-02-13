@@ -27,9 +27,9 @@ func0000000000000006:
 	vmerge.vim	v10, v10, 1, v0
 	vsub.vv	v8, v8, v10
 	vmv.v.x	v10, a0
-	li	a0, 1040
 	vadd.vi	v8, v8, 2
 	vmsle.vi	v0, v8, 3
+	li	a0, 1040
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
@@ -39,8 +39,8 @@ func000000000000002a:
 	vmerge.vim	v10, v10, -1, v0
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
-	lui	a0, 1048575
 	vmsgt.vi	v0, v8, 2
+	lui	a0, 1048575
 	vmerge.vim	v8, v10, 1, v0
 	addi	a0, a0, -619
 	vxor.vx	v8, v8, a0

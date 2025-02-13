@@ -1,8 +1,8 @@
 func0000000000000044:
 	sub	a1, a1, a2
 	li	a2, -1
-	srai	a3, a1, 3
 	srli	a2, a2, 4
+	srai	a3, a1, 3
 	mv	a1, a0
 	bgeu	a0, a2, .LBB0_3
 	bltu	a0, a3, .LBB0_4

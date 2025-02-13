@@ -52,13 +52,13 @@ func000000000000004f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	lui	a0, 16
-	vmv.v.i	v14, 0
 	vmsltu.vx	v0, v10, a0
-	vmerge.vim	v10, v14, 1, v0
+	vmv.v.i	v10, 0
+	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
-	vmerge.vim	v12, v14, 1, v0
-	vsub.vv	v8, v8, v12
+	vmerge.vim	v10, v10, 1, v0
 	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v14
 	vadd.vi	v8, v8, 4
 	ret
 

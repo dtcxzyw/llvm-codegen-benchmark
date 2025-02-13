@@ -9,8 +9,8 @@ func0000000000000021:
 
 func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vand.vi	v12, v12, 4
 	vmseq.vi	v0, v10, 0
-	vadd.vi	v8, v12, 4, v0.t
+	vand.vi	v10, v12, 4
+	vadd.vi	v8, v10, 4, v0.t
 	ret
 

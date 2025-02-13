@@ -1,7 +1,7 @@
 func000000000000000a:
 	or	a4, a4, a3
-	srl	a1, a4, a0
 	addi	a3, a0, -64
+	srl	a1, a4, a0
 	bltz	a3, .LBB0_2
 	mv	a0, a1
 	srai	a3, a3, 63

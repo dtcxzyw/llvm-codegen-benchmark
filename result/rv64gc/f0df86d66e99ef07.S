@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a0, a0, 255
 	andi	a1, a1, 1
+	andi	a0, a0, 255
 	bnez	a1, .LBB0_2
 	li	a1, 125
 	xor	a0, a0, a1
@@ -21,8 +21,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 255
 	andi	a1, a1, 1
+	andi	a0, a0, 255
 	bnez	a1, .LBB2_2
 	li	a1, 33
 	sltu	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 255
 	andi	a1, a1, 1
+	andi	a0, a0, 255
 	bnez	a1, .LBB3_2
 	li	a1, 4
 	sltu	a0, a1, a0
@@ -47,8 +47,8 @@ func0000000000000005:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 255
 	andi	a1, a1, 1
+	andi	a0, a0, 255
 	bnez	a1, .LBB4_2
 	li	a1, 3
 	sltu	a0, a1, a0
@@ -59,8 +59,8 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	andi	a0, a0, 255
 	andi	a1, a1, 1
+	andi	a0, a0, 255
 	bnez	a1, .LBB5_2
 	li	a1, 191
 	sltu	a0, a1, a0

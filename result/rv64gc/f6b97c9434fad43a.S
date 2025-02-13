@@ -129,9 +129,9 @@ func00000000000004ca:
 	lui	a0, %hi(.LCPI10_0)
 	lui	a1, %hi(.LCPI10_1)
 	fld	fa5, %lo(.LCPI10_0)(a0)
+	fld	fa4, %lo(.LCPI10_1)(a1)
 	fle.d	a0, fa5, fa1
-	fld	fa5, %lo(.LCPI10_1)(a1)
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 

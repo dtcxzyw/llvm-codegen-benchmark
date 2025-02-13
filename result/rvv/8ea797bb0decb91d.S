@@ -21,10 +21,10 @@ func0000000000000005:
 .LCPI2_0:
 	.quad	-8737931403336103397
 func0000000000000010:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v8
 	vadd.vi	v8, v10, -1
 	ret

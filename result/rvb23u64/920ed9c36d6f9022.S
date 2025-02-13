@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	4835703278458516699
 func0000000000000000:
-	li	a2, 1000
-	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	li	a3, 1000
+	mul	a1, a1, a3
 	mulhu	a0, a0, a2
 	srli	a0, a0, 18
 	add	a0, a0, a1
@@ -13,11 +13,11 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	7429236654343298871
 func0000000000000009:
-	sh2add	a1, a1, a1
 	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1
 	slli	a1, a1, 4
-	ld	a2, %lo(.LCPI1_0)(a2)
 	mulhu	a2, a0, a2
 	sub	a0, a0, a2
 	srli	a0, a0, 1
@@ -41,9 +41,9 @@ func0000000000000005:
 .LCPI3_0:
 	.quad	19342813113834067
 func000000000000000f:
-	srli	a1, a1, 9
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
+	srli	a1, a1, 9
 	mulhu	a1, a1, a2
 	lui	a2, 1571
 	addiw	a2, a2, 667
@@ -56,9 +56,9 @@ func000000000000000f:
 .LCPI4_0:
 	.quad	80595054640975279
 func000000000000000a:
-	srli	a1, a1, 8
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
+	srli	a1, a1, 8
 	mulhu	a1, a1, a2
 	li	a2, -60
 	zext.w	a2, a2

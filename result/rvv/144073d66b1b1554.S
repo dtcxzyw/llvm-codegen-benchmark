@@ -24,11 +24,11 @@ func0000000000000024:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI2_1)(a0)
 	vmand.mm	v16, v24, v0
-	vmfgt.vf	v17, v8, fa5
+	vmfgt.vf	v17, v8, fa4
 	vmand.mm	v0, v16, v17
 	ret
 
@@ -58,11 +58,11 @@ func0000000000000022:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	lui	a0, %hi(.LCPI5_1)
+	fld	fa4, %lo(.LCPI5_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI5_1)(a0)
 	vmand.mm	v16, v24, v0
-	vmflt.vf	v17, v8, fa5
+	vmflt.vf	v17, v8, fa4
 	vmand.mm	v0, v16, v17
 	ret
 
@@ -82,11 +82,11 @@ func00000000000000a4:
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	lui	a0, %hi(.LCPI7_1)
+	fld	fa4, %lo(.LCPI7_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI7_1)(a0)
 	vmand.mm	v16, v24, v0
-	vmfgt.vf	v17, v8, fa5
+	vmfgt.vf	v17, v8, fa4
 	vmand.mm	v0, v16, v17
 	ret
 

@@ -8,9 +8,9 @@ func000000000000001d:
 .LCPI1_0:
 	.quad	-6302637592877692800
 func000000000000001c:
-	bset	a0, zero, a0
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	bset	a0, zero, a0
 	sll	a0, a1, a0
 	ret
 

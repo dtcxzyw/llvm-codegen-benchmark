@@ -5,10 +5,10 @@ func0000000000000008:
 	vand.vx	v10, v10, a0
 	lui	a0, 676096
 	vmseq.vx	v9, v10, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.i	v10, 0
 	vmor.mm	v8, v8, v9
 	vmor.mm	v0, v0, v8
-	vmerge.vim	v8, v10, 1, v0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

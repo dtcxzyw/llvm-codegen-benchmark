@@ -3,20 +3,20 @@ func0000000000000007:
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	vfadd.vv	v16, v16, v24
-	vmv.v.i	v24, 0
 	vmfne.vf	v0, v16, fa5
-	vmerge.vvm	v8, v24, v8, v0
+	vmv.v.i	v16, 0
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	fli.d	fa5, 1.0
-	vfadd.vv	v16, v16, v24
-	vfmv.v.f	v24, fa5
 	fmv.d.x	fa5, zero
+	vfadd.vv	v16, v16, v24
 	vmfgt.vf	v0, v16, fa5
-	vmerge.vvm	v8, v24, v8, v0
+	fli.d	fa5, 1.0
+	vfmv.v.f	v16, fa5
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 
 func000000000000000a:
@@ -24,9 +24,9 @@ func000000000000000a:
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
 	vfadd.vv	v16, v16, v24
-	vmv.v.i	v24, 0
 	vmfle.vf	v0, v16, fa5
-	vmerge.vvm	v8, v24, v8, v0
+	vmv.v.i	v16, 0
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 
 func000000000000000e:
@@ -34,8 +34,8 @@ func000000000000000e:
 	vle64.v	v24, (a0)
 	bseti	a0, zero, 63
 	vfadd.vv	v16, v16, v24
-	vmv.v.x	v24, a0
 	vmfeq.vv	v0, v16, v16
-	vmerge.vvm	v8, v24, v8, v0
+	vmv.v.x	v16, a0
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 

@@ -18,8 +18,8 @@ func0000000000000521:
 func0000000000000626:
 	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 0
 	vmsne.vx	v0, v8, a0
+	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
 	vsub.vv	v8, v8, v10
 	vmsle.vi	v0, v8, -1

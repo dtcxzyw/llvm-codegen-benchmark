@@ -2,8 +2,8 @@
 	.quad	-8194354213138031507
 func0000000000000021:
 	lui	a1, %hi(.LCPI0_0)
-	lui	a2, 281475
 	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a2, 281475
 	mul	a0, a0, a1
 	addiw	a1, a2, -95
 	slli	a2, a2, 4
@@ -54,13 +54,13 @@ func000000000000002a:
 func000000000000002c:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
+	lui	a2, %hi(.LCPI3_1)
+	ld	a2, %lo(.LCPI3_1)(a2)
+	lui	a3, %hi(.LCPI3_2)
+	ld	a3, %lo(.LCPI3_2)(a3)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI3_1)
-	ld	a1, %lo(.LCPI3_1)(a1)
-	add	a0, a0, a1
-	lui	a1, %hi(.LCPI3_2)
+	add	a0, a0, a2
 	rori	a0, a0, 7
-	ld	a1, %lo(.LCPI3_2)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a3, a0
 	ret
 

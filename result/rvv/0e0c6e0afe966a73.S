@@ -9,10 +9,10 @@ func0000000000000028:
 .LCPI1_0:
 	.quad	0x3f1a36e2eb1c432d
 func000000000000004a:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v24, v8, v16
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vv	v24, v8, v16
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret

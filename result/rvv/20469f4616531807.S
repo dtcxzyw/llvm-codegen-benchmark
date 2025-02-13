@@ -11,10 +11,10 @@ func0000000000000004:
 
 func0000000000000003:
 	fmv.w.x	fa5, zero
-	li	a0, -1
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v20, v16, fa5
 	vmnot.m	v0, v20
+	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
 	vfadd.vv	v8, v12, v8
 	ret

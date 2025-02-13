@@ -33,12 +33,12 @@ func00000000000000aa:
 .LCPI3_0:
 	.quad	768614336404564650
 func00000000000000a8:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	lui	a0, %hi(.LCPI3_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v9
-	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	ret

@@ -124,12 +124,12 @@ func000000000000042c:
 func0000000000001941:
 	sext.w	a1, a1
 	sext.w	a2, a2
+	lui	a3, %hi(.LCPI11_0)
+	ld	a3, %lo(.LCPI11_0)(a3)
 	slti	a2, a2, 1
 	sgtz	a1, a1
 	and	a1, a1, a2
-	lui	a2, %hi(.LCPI11_0)
-	ld	a2, %lo(.LCPI11_0)(a2)
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

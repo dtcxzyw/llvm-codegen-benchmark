@@ -3,8 +3,8 @@
 func000000000000002b:
 	sub	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
-	addi	a0, a0, 1
 	ld	a2, %lo(.LCPI0_0)(a2)
+	addi	a0, a0, 1
 	srai	a1, a1, 4
 	slli	a0, a0, 32
 	mul	a1, a1, a2

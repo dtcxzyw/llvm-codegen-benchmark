@@ -25,10 +25,10 @@ func0000000000000012:
 	bnez	a0, .LBB2_2
 	fmv.s	fa0, fa1
 .LBB2_2:
-	fabs.s	fa5, fa0
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	flt.s	a0, fa5, fa4
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	fabs.s	fa4, fa0
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000009:

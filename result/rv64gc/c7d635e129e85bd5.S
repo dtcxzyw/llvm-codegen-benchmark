@@ -45,33 +45,33 @@ func0000000000000012:
 func0000000000000010:
 	slli	a1, a0, 3
 	slli	a0, a0, 6
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	subw	a0, a0, a1
-	lui	a1, %hi(.LCPI5_0)
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	ld	a1, %lo(.LCPI5_0)(a1)
-	mul	a0, a0, a1
+	mul	a0, a0, a2
 	ret
 
 .LCPI6_0:
 	.quad	-4658895280553007687
 func0000000000000000:
 	li	a1, 37
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI6_0)
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	ld	a1, %lo(.LCPI6_0)(a1)
-	mul	a0, a0, a1
+	mul	a0, a0, a2
 	ret
 
 .LCPI7_0:
 	.quad	-4658895280553007687
 func000000000000001c:
-	li	a1, 37
-	mulw	a0, a0, a1
 	lui	a1, %hi(.LCPI7_0)
 	ld	a1, %lo(.LCPI7_0)(a1)
+	li	a2, 37
+	mulw	a0, a0, a2
 	mul	a0, a0, a1
 	ret
 

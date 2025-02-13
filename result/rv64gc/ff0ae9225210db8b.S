@@ -53,10 +53,10 @@ func0000000000000218:
 .LCPI5_0:
 	.quad	0x3fbeb851eb851eb8
 func0000000000000198:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI5_0)
-	snez	a0, a0
 	fld	fa5, %lo(.LCPI5_0)(a1)
+	sext.w	a0, a0
+	snez	a0, a0
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -64,10 +64,10 @@ func0000000000000198:
 .LCPI6_0:
 	.quad	0x41cdcd6500000000
 func0000000000000190:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI6_0)
-	snez	a0, a0
 	fld	fa5, %lo(.LCPI6_0)(a1)
+	sext.w	a0, a0
+	snez	a0, a0
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -86,10 +86,10 @@ func0000000000000098:
 .LCPI8_0:
 	.quad	0x3d06849b86a12b9b
 func0000000000000148:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI8_0)
-	sgtz	a0, a0
 	fld	fa5, %lo(.LCPI8_0)(a1)
+	sext.w	a0, a0
+	sgtz	a0, a0
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -117,10 +117,10 @@ func0000000000000114:
 .LCPI11_0:
 	.quad	0x3ff0000000000000
 func00000000000000d8:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI11_0)
-	slti	a0, a0, 1
 	fld	fa5, %lo(.LCPI11_0)(a1)
+	sext.w	a0, a0
+	slti	a0, a0, 1
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -128,10 +128,10 @@ func00000000000000d8:
 .LCPI12_0:
 	.quad	0x3cb0000000000000
 func00000000000000d6:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI12_0)
-	slti	a0, a0, 1
 	fld	fa5, %lo(.LCPI12_0)(a1)
+	sext.w	a0, a0
+	slti	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -178,10 +178,10 @@ func000000000000014a:
 .LCPI17_0:
 	.quad	0x3ff0000000000000
 func000000000000002a:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI17_0)
-	seqz	a0, a0
 	fld	fa5, %lo(.LCPI17_0)(a1)
+	sext.w	a0, a0
+	seqz	a0, a0
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -268,10 +268,10 @@ func0000000000000342:
 .LCPI26_0:
 	.quad	0x3ff0000000000000
 func0000000000000038:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI26_0)
-	seqz	a0, a0
 	fld	fa5, %lo(.LCPI26_0)(a1)
+	sext.w	a0, a0
+	seqz	a0, a0
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -295,10 +295,10 @@ func000000000000030c:
 .LCPI29_0:
 	.quad	0x3ff0000000000000
 func0000000000000036:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI29_0)
-	seqz	a0, a0
 	fld	fa5, %lo(.LCPI29_0)(a1)
+	sext.w	a0, a0
+	seqz	a0, a0
 	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1

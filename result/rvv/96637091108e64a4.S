@@ -49,8 +49,8 @@ func000000000000002b:
 	li	a0, 120
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
 	vmsgt.vi	v0, v10, 0
+	vor.vv	v8, v12, v8
 	vor.vi	v8, v8, 4, v0.t
 	ret
 

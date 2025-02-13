@@ -21,10 +21,10 @@ func000000000000000c:
 	vfdiv.vv	v8, v8, v16
 	fmv.w.x	fa5, zero
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vmv.v.i	v16, 0
-	vfncvt.f.f.w	v20, v8
-	vmfge.vf	v0, v20, fa5
-	vmerge.vvm	v8, v16, v20, v0
+	vfncvt.f.f.w	v16, v8
+	vmfge.vf	v0, v16, fa5
+	vmv.v.i	v8, 0
+	vmerge.vvm	v8, v8, v16, v0
 	ret
 
 func000000000000000e:
@@ -33,8 +33,8 @@ func000000000000000e:
 	fli.s	fa5, inf
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	vfmv.v.f	v8, fa5
 	vmfeq.vv	v0, v16, v16
+	vfmv.v.f	v8, fa5
 	vmerge.vvm	v8, v8, v16, v0
 	ret
 

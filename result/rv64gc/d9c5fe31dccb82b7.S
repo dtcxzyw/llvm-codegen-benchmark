@@ -7,11 +7,12 @@ func0000000000000003:
 
 func0000000000000000:
 	or	a0, a0, a1
-	andi	a0, a0, 1
-	beqz	a0, .LBB1_2
-	lui	a2, 16
-	addiw	a2, a2, -2
-.LBB1_2:
+	andi	a1, a0, 1
+	bnez	a1, .LBB1_2
 	mv	a0, a2
+	ret
+.LBB1_2:
+	lui	a0, 16
+	addiw	a0, a0, -2
 	ret
 

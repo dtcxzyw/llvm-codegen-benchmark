@@ -4,8 +4,8 @@ func0000000000000021:
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v14, v10, a0
-	li	a0, 32
 	vmseq.vi	v0, v14, 0
+	li	a0, 32
 	vsrl.vx	v10, v10, a0, v0.t
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0

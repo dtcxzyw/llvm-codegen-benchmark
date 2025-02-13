@@ -21,21 +21,20 @@ func0000000000000055:
 	ret
 
 func0000000000000045:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmadd.vv	v8, v9, v8
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 8
-	li	a0, 4
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vmadd.vv	v8, v9, v8
+	li	a0, 4
 	vwmaccus.vx	v10, a0, v8
 	vmv2r.v	v8, v10
 	ret
 
 func0000000000000051:
+	li	a0, 8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmadd.vv	v8, v9, v8
 	vadd.vi	v10, v8, 1
-	li	a0, 8
 	vwmulsu.vx	v8, v10, a0
 	ret
 

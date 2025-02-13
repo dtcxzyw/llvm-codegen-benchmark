@@ -35,10 +35,10 @@ func0000000000000024:
 	.word	0x3f99999a
 func0000000000000022:
 	lui	a0, %hi(.LCPI3_0)
-	lui	a1, 260096
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 260096
 	fmul.s	fa5, fa1, fa5
-	fmv.w.x	fa4, a1
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5

@@ -1,8 +1,8 @@
 func0000000000000004:
-	slli	a2, a0, 48
-	lui	a0, 7168
-	srli	a2, a2, 48
+	slli	a0, a0, 48
+	srli	a2, a0, 48
 	li	a3, 2
+	lui	a0, 7168
 	bltu	a2, a3, .LBB0_2
 	and	a0, a0, a1
 .LBB0_2:

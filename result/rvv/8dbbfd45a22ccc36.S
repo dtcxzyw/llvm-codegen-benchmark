@@ -41,10 +41,10 @@ func0000000000000088:
 func0000000000000094:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	li	a0, 32
-	vsrl.vx	v10, v8, a0
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
+	li	a0, 32
+	vsrl.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 16
 	vmsltu.vx	v0, v8, a0

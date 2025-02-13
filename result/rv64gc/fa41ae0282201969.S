@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.word	0x3c23d70a
 func0000000000000084:
+	lui	a0, %hi(.LCPI0_0)
+	flw	fa5, %lo(.LCPI0_0)(a0)
 	flt.s	a0, fa1, fa0
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -11,10 +11,10 @@ func0000000000000084:
 .LCPI1_0:
 	.word	0xff7fffff
 func00000000000001b0:
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	flt.s	a0, fa0, fa1
-	lui	a1, %hi(.LCPI1_0)
 	xori	a0, a0, 1
-	flw	fa5, %lo(.LCPI1_0)(a1)
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -22,10 +22,10 @@ func00000000000001b0:
 .LCPI2_0:
 	.word	0x7f7fffff
 func0000000000000170:
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	flt.s	a0, fa1, fa0
-	lui	a1, %hi(.LCPI2_0)
 	xori	a0, a0, 1
-	flw	fa5, %lo(.LCPI2_0)(a1)
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -40,9 +40,9 @@ func0000000000000048:
 .LCPI4_0:
 	.word	0x7f7fffff
 func0000000000000090:
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa5, %lo(.LCPI4_0)(a0)
 	flt.s	a0, fa1, fa0
-	lui	a1, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a1)
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

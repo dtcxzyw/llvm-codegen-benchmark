@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	0x412e848000000000
 func0000000000000002:
+	lui	a1, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vle64.v	v24, (a0)
-	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI0_0)
-	vmflt.vf	v0, v8, fa5
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	fmv.d.x	fa4, zero
+	vmflt.vf	v0, v8, fa4
 	vfmv.v.f	v8, fa5
 	vfmul.vv	v8, v16, v24, v0.t
 	ret

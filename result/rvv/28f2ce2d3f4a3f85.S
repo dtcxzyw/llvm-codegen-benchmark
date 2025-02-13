@@ -2,8 +2,8 @@ func0000000000000001:
 	li	a0, 39
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v9, v10, a0
-	li	a0, 34
 	vmand.mm	v0, v0, v9
+	li	a0, 34
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

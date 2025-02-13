@@ -60,16 +60,16 @@ func00000000000000a1:
 	ret
 
 func0000000000000006:
-	slli	a2, a1, 8
-	lui	a1, 10
-	or	a0, a0, a2
+	slli	a1, a1, 8
 	li	a2, 5
-	sext.w	a0, a0
+	or	a0, a0, a1
+	sext.w	a1, a0
 	slli	a2, a2, 9
-	blt	a0, a2, .LBB5_2
-	addiw	a0, a1, 1697
+	lui	a0, 10
+	blt	a1, a2, .LBB5_2
+	addiw	a0, a0, 1697
 	ret
 .LBB5_2:
-	addiw	a0, a1, 417
+	addiw	a0, a0, 417
 	ret
 

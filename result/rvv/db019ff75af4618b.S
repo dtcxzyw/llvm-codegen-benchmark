@@ -3,20 +3,20 @@ func0000000000000049:
 	vmv.v.i	v10, 0
 	lui	a0, 4096
 	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v10, v10, 4
 	vmsltu.vx	v0, v8, a0
-	vor.vi	v10, v10, 8, v0.t
-	vor.vi	v8, v10, 4
+	vsll.vi	v8, v10, 4
+	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v8, v8, 4
 	ret
 
 func0000000000000043:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v10, v10, 4
 	vmseq.vi	v0, v8, 0
-	vor.vi	v10, v10, 8, v0.t
-	vor.vi	v8, v10, 4
+	vsll.vi	v8, v10, 4
+	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v8, v8, 4
 	ret
 
 func0000000000000071:
@@ -24,10 +24,10 @@ func0000000000000071:
 	vmv.v.i	v10, 0
 	li	a0, 255
 	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v10, v10, 4
 	vmsgtu.vx	v0, v8, a0
-	vor.vi	v10, v10, 8, v0.t
-	vor.vi	v8, v10, 4
+	vsll.vi	v8, v10, 4
+	vor.vi	v8, v8, 8, v0.t
+	vor.vi	v8, v8, 4
 	ret
 
 func0000000000000042:

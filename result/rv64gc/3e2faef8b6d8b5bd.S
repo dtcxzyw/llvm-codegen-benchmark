@@ -23,11 +23,11 @@ func0000000000000039:
 	ret
 
 func000000000000003f:
-	srli	a1, a0, 6
-	not	a0, a1
+	srli	a0, a0, 6
 	li	a2, 5
-	bltu	a2, a1, .LBB2_2
-	li	a1, 5
+	not	a1, a0
+	bltu	a2, a0, .LBB2_2
+	li	a0, 5
 .LBB2_2:
 	add	a0, a0, a1
 	addi	a0, a0, 3

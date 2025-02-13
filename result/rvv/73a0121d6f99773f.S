@@ -31,14 +31,15 @@ func000000000000004a:
 .LCPI3_0:
 	.quad	0x3d719799812dea11
 func0000000000000022:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv1r.v	v24, v0
-	vmflt.vv	v0, v16, v8
 	lui	a0, %hi(.LCPI3_0)
-	vmerge.vvm	v8, v16, v8, v0
 	fld	fa5, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vv	v24, v16, v8
+	vmv1r.v	v25, v0
+	vmv1r.v	v0, v24
+	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vf	v16, v8, fa5
-	vmand.mm	v0, v16, v24
+	vmand.mm	v0, v16, v25
 	ret
 
 func000000000000002c:

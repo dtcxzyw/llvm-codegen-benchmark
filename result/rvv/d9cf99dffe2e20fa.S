@@ -30,10 +30,9 @@ func0000000000000006:
 
 func000000000000002a:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 0
 	vmsgt.vi	v0, v8, 0
-	vrsub.vi	v12, v10, 0, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 0
+	vrsub.vi	v8, v10, 0, v0.t
 	ret
 
 func000000000000000a:
@@ -70,10 +69,9 @@ func000000000000006a:
 
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 1
 	vmsle.vi	v0, v8, 0
-	vrsub.vi	v12, v10, 1, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 1
+	vrsub.vi	v8, v10, 1, v0.t
 	ret
 
 func0000000000000074:
@@ -87,10 +85,9 @@ func0000000000000074:
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 0
 	vmsleu.vi	v0, v8, 1
-	vrsub.vi	v12, v10, 0, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 0
+	vrsub.vi	v8, v10, 0, v0.t
 	ret
 
 func0000000000000004:

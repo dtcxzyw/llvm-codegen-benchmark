@@ -81,10 +81,10 @@ func0000000000000077:
 .LCPI6_0:
 	.quad	-3523014627327384477
 func000000000000000c:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
 	lui	a0, %hi(.LCPI6_0)
 	ld	a0, %lo(.LCPI6_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf4	v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

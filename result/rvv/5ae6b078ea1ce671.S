@@ -45,14 +45,14 @@ func0000000000000015:
 .LCPI5_1:
 	.quad	-49064778989728546
 func0000000000000040:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
+	lui	a1, %hi(.LCPI5_1)
+	ld	a1, %lo(.LCPI5_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v12, v10
 	vmadd.vx	v12, a0, v8
-	lui	a0, %hi(.LCPI5_1)
-	ld	a0, %lo(.LCPI5_1)(a0)
-	vadd.vx	v8, v12, a0
+	vadd.vx	v8, v12, a1
 	ret
 
 func0000000000000037:

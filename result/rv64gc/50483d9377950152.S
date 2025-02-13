@@ -14,13 +14,13 @@ func0000000000000002:
 .LCPI1_0:
 	.word	0x3fb8aa3b
 func000000000000000c:
-	lui	a0, 786432
-	fmv.w.x	fa5, a0
 	lui	a0, %hi(.LCPI1_0)
-	fmul.s	fa5, fa0, fa5
-	flw	fa4, %lo(.LCPI1_0)(a0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 786432
+	fmv.w.x	fa4, a0
+	fmul.s	fa4, fa0, fa4
 	lui	a0, 798656
-	fmul.s	fa5, fa5, fa4
+	fmul.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret

@@ -3,8 +3,8 @@ func0000000000000003:
 	vmv1r.v	v10, v0
 	vand.vi	v8, v8, 2
 	vmv.v.i	v12, 0
-	li	a0, 16
 	vmseq.vi	v0, v8, 0
+	li	a0, 16
 	vmerge.vim	v8, v12, 1, v0
 	vmv.v.x	v12, a0
 	li	a0, 48
@@ -20,8 +20,8 @@ func0000000000000002:
 	li	a0, -24
 	vmv.v.i	v12, 0
 	vand.vx	v8, v8, a0
-	li	a0, 72
 	vmseq.vi	v0, v8, 8
+	li	a0, 72
 	vmerge.vim	v12, v12, 1, v0
 	vor.vx	v8, v12, a0
 	li	a0, 74

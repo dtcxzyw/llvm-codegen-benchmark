@@ -55,10 +55,10 @@ func00000000000001e9:
 func000000000000000c:
 	lui	a2, %hi(.LCPI7_0)
 	ld	a2, %lo(.LCPI7_0)(a2)
+	lui	a3, %hi(.LCPI7_1)
+	ld	a3, %lo(.LCPI7_1)(a3)
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI7_1)
-	ld	a2, %lo(.LCPI7_1)(a2)
-	add	a1, a1, a2
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

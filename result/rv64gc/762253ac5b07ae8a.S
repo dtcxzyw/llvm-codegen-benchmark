@@ -18,10 +18,10 @@ func0000000000000061:
 	ret
 
 func0000000000000046:
-	slli	a2, a0, 56
-	li	a0, 1
-	srai	a2, a2, 56
+	slli	a0, a0, 56
+	srai	a2, a0, 56
 	li	a3, 6
+	li	a0, 1
 	blt	a2, a3, .LBB2_2
 	sllw	a0, a0, a1
 .LBB2_2:

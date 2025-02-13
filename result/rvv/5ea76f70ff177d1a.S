@@ -27,11 +27,11 @@ func000000000000002a:
 	.quad	2312618258016476599
 func0000000000000000:
 	lui	a0, 1048574
-	addiw	a1, a0, 40
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a1
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
+	addiw	a2, a0, 40
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v8, v8, a2
 	vsrl.vi	v8, v8, 3
 	vmulhu.vx	v8, v8, a1
 	vsll.vi	v8, v8, 6

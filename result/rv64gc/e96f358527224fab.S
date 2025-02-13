@@ -1,16 +1,16 @@
 func0000000000000021:
-	andi	a0, a0, 255
-	li	a2, 2
-	beq	a0, a2, .LBB0_3
-	li	a2, 8
-	beq	a0, a2, .LBB0_4
-.LBB0_2:
+	andi	a2, a0, 255
+	li	a3, 2
 	mv	a0, a1
+	beq	a2, a3, .LBB0_3
+	li	a1, 8
+	beq	a2, a1, .LBB0_4
+.LBB0_2:
 	ret
 .LBB0_3:
-	li	a1, 4
-	li	a2, 8
-	bne	a0, a2, .LBB0_2
+	li	a0, 4
+	li	a1, 8
+	bne	a2, a1, .LBB0_2
 .LBB0_4:
 	li	a0, 10
 	ret

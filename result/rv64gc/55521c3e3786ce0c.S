@@ -35,22 +35,22 @@ func00000000000001f4:
 .LCPI5_0:
 	.quad	128102389400760775
 func00000000000000a1:
+	lui	a3, %hi(.LCPI5_0)
+	ld	a3, %lo(.LCPI5_0)(a3)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI5_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI5_0)(a2)
-	xor	a0, a0, a1
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 
 .LCPI6_0:
 	.quad	230584300921369395
 func00000000000000a8:
+	lui	a3, %hi(.LCPI6_0)
+	ld	a3, %lo(.LCPI6_0)(a3)
 	add	a1, a1, a2
-	lui	a2, %hi(.LCPI6_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI6_0)(a2)
-	sltu	a0, a1, a0
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000088:

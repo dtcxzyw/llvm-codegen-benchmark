@@ -1,9 +1,8 @@
 func0000000000000018:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 8
 	vmsgtu.vi	v0, v8, 2
-	vsrl.vv	v12, v12, v10, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, 8
+	vsrl.vv	v8, v8, v10, v0.t
 	ret
 
 func000000000000000a:
@@ -17,12 +16,11 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, -1
 	li	a0, 32
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vx	v0, v8, a0
-	vsrl.vv	v12, v12, v10, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v8, -1
+	vsrl.vv	v8, v8, v10, v0.t
 	ret
 
 func0000000000000006:

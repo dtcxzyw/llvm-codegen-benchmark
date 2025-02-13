@@ -18,9 +18,9 @@ func0000000000000028:
 .LCPI2_0:
 	.quad	0x3e50000000000000
 func0000000000000004:
+	lui	a2, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a2)
 	or	a0, a0, a1
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

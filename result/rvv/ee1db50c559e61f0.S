@@ -14,8 +14,8 @@ func0000000000000001:
 	li	a0, 28
 	vmerge.vim	v12, v12, 1, v0
 	vor.vx	v12, v12, a0
-	li	a0, 30
 	vmseq.vv	v0, v10, v12
+	li	a0, 30
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

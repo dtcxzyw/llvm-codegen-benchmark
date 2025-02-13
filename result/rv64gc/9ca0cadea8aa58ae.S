@@ -35,9 +35,9 @@ func0000000000000002:
 .LCPI3_0:
 	.word	0x7f7fffff
 func0000000000000007:
-	andi	a0, a0, 1
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
+	andi	a0, a0, 1
 	beqz	a0, .LBB3_3
 	feq.s	a0, fa0, fa5
 	bnez	a0, .LBB3_4

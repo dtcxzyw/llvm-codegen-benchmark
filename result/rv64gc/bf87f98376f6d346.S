@@ -1,8 +1,8 @@
 func0000000000000046:
 	mv	a1, a0
 	sext.w	a2, a0
-	li	a0, 1
 	li	a3, 32
+	li	a0, 1
 	bge	a2, a3, .LBB0_2
 	sllw	a0, a0, a1
 .LBB0_2:
@@ -31,8 +31,8 @@ func000000000000000a:
 func0000000000000044:
 	mv	a1, a0
 	sext.w	a2, a0
-	li	a0, 1
 	li	a3, 32
+	li	a0, 1
 	bgeu	a2, a3, .LBB3_2
 	sllw	a0, a0, a1
 .LBB3_2:

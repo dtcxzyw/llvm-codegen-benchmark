@@ -18,13 +18,13 @@ func0000000000000005:
 .LCPI1_0:
 	.quad	5675921253449092805
 func0000000000000007:
-	andi	a3, a0, 1
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a2, a2, a1
-	lui	a0, %hi(.LCPI1_0)
+	andi	a1, a0, 1
 	srai	a2, a2, 3
-	ld	a0, %lo(.LCPI1_0)(a0)
-	mul	a0, a2, a0
-	bnez	a3, .LBB1_2
+	mul	a0, a2, a3
+	bnez	a1, .LBB1_2
 	add	a0, a0, a0
 	ret
 .LBB1_2:

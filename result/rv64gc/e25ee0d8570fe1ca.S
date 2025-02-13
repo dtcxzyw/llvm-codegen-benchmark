@@ -31,8 +31,8 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	sext.w	a0, a0
 	andi	a2, a2, 255
+	sext.w	a0, a0
 	bnez	a2, .LBB3_2
 	li	a1, 3
 .LBB3_2:

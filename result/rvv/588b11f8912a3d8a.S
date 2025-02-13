@@ -1,9 +1,9 @@
 func0000000000000001:
 	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v10, 0
 	vmseq.vx	v0, v9, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vmv.v.i	v9, 0
+	vmerge.vvm	v8, v9, v8, v0
 	ret
 
 func0000000000000004:
@@ -51,8 +51,8 @@ func000000000000000c:
 func0000000000000018:
 	li	a0, 96
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v10, 0
 	vmsgtu.vx	v0, v9, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vmv.v.i	v9, 0
+	vmerge.vvm	v8, v9, v8, v0
 	ret
 

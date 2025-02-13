@@ -47,8 +47,8 @@ func0000000000000004:
 
 func0000000000000008:
 	sext.w	a1, a0
-	lui	a0, 512
 	li	a2, 127
+	lui	a0, 512
 	bltu	a2, a1, .LBB6_2
 	lui	a0, 256
 .LBB6_2:

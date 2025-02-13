@@ -2,12 +2,12 @@
 	.quad	1844674407370955161
 func0000000000000104:
 	addi	a1, a1, -48
-	sh2add	a0, a0, a0
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	andi	a1, a1, 255
+	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000002a6:
@@ -39,12 +39,12 @@ func0000000000000708:
 	.quad	1844674407370955161
 func0000000000000348:
 	addi	a1, a1, -48
-	sh2add	a0, a0, a0
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	andi	a1, a1, 255
+	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000668:

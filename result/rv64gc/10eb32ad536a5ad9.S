@@ -18,16 +18,16 @@ func0000000000000002:
 	lui	a1, 522232
 	lui	a2, 152146
 	addiw	a1, a1, -129
-	addiw	a2, a2, 1317
 	slli	a3, a1, 32
 	add	a1, a1, a3
-	slli	a3, a2, 32
-	add	a2, a2, a3
+	lui	a3, %hi(.LCPI2_0)
+	addiw	a2, a2, 1317
+	ld	a3, %lo(.LCPI2_0)(a3)
 	and	a0, a0, a1
-	lui	a1, %hi(.LCPI2_0)
-	add	a0, a0, a2
-	ld	a1, %lo(.LCPI2_0)(a1)
-	and	a0, a0, a1
+	slli	a1, a2, 32
+	add	a1, a1, a2
+	add	a0, a0, a1
+	and	a0, a0, a3
 	ret
 
 func0000000000000001:

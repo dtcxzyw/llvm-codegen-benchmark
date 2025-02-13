@@ -5,8 +5,8 @@ func0000000000000024:
 	lui	a0, 1048318
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 16
-	addi	a0, a0, -3
 	vmand.mm	v0, v0, v12
+	addi	a0, a0, -3
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

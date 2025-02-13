@@ -9,12 +9,12 @@ func0000000000000166:
 .LCPI1_0:
 	.word	0x48976760
 func0000000000000044:
-	fabs.s	fa5, fa1
-	fabs.s	fa4, fa0
 	lui	a0, %hi(.LCPI1_0)
-	fmax.s	fa5, fa4, fa5
-	flw	fa4, %lo(.LCPI1_0)(a0)
-	flt.s	a0, fa4, fa5
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
+	fmax.s	fa4, fa3, fa4
+	flt.s	a0, fa5, fa4
 	ret
 
 .LCPI2_0:

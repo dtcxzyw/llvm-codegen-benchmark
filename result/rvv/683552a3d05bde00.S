@@ -8,8 +8,8 @@ func00000000000001a1:
 	li	a1, 1
 	csrwi	vxrm, 2
 	vmul.vx	v10, v10, a0
-	vaaddu.vx	v12, v10, a1
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vaaddu.vx	v8, v10, a1
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

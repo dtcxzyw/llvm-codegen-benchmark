@@ -14,14 +14,14 @@ func0000000000000003:
 	.word	0x3f7d70a4
 func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfsub.vv	v8, v8, v12
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	vfmul.vf	v12, v16, fa5
-	vfdiv.vv	v8, v8, v12
-	flw	fa5, %lo(.LCPI1_1)(a0)
-	vmfgt.vf	v0, v8, fa5
+	flw	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmul.vf	v16, v16, fa5
+	vfsub.vv	v8, v8, v12
+	vfdiv.vv	v8, v8, v16
+	vmfgt.vf	v0, v8, fa4
 	ret
 
 .LCPI2_0:

@@ -5,9 +5,9 @@ func0000000000000021:
 	li	a0, 64
 	vand.vx	v10, v10, a0
 	lui	a0, 524288
-	vor.vx	v12, v12, a0
 	vmseq.vi	v0, v10, 0
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000001:
@@ -17,8 +17,8 @@ func0000000000000001:
 	lui	a0, 51712
 	vand.vx	v10, v10, a0
 	lui	a0, 6144
-	vor.vx	v12, v12, a0
 	vmseq.vi	v0, v10, 0
-	vmerge.vvm	v8, v12, v8, v0
+	vor.vx	v10, v12, a0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

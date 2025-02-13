@@ -3,13 +3,11 @@ func00000000000000c2:
 	vmv.v.i	v9, 0
 	lui	a0, 244141
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v8, v8, v9
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 0
 	addi	a0, a0, -1536
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vadd.vv	v8, v8, v9
 	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

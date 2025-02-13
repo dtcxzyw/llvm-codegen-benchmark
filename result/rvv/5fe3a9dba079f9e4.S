@@ -17,11 +17,11 @@ func0000000000000000:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
-	li	a0, 20
-	vadd.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI1_0)
-	vsrl.vi	v10, v10, 3
 	ld	a0, %lo(.LCPI1_0)(a0)
+	li	a1, 20
+	vadd.vx	v10, v10, a1
+	vsrl.vi	v10, v10, 3
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 4
 	vadd.vv	v8, v10, v8

@@ -21,11 +21,11 @@ func00000000000001cc:
 .LCPI2_0:
 	.quad	0x7fefffffffffffff
 func000000000000008c:
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 2
-	lui	a0, %hi(.LCPI2_0)
 	vmsne.vi	v14, v12, 0
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v14, v12

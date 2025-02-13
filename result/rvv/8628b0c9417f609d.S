@@ -21,9 +21,9 @@ func000000000000000d:
 	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
-	vfneg.v	v16, v8
 	vmnot.m	v0, v12
-	vmerge.vvm	v8, v16, v8, v0
+	vfneg.v	v12, v8
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func0000000000000004:

@@ -28,10 +28,10 @@ func0000000000000024:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	vmflt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI2_1)(a0)
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa5
+	vmfgt.vf	v0, v16, fa4
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 
@@ -57,10 +57,10 @@ func0000000000000044:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
+	fld	fa4, %lo(.LCPI4_1)(a0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI4_1)(a0)
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa5
+	vmfgt.vf	v0, v16, fa4
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 

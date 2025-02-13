@@ -12,13 +12,12 @@ func000000000000050a:
 	ret
 
 func0000000000000a01:
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v11, v0
 	bseti	a0, zero, 11
-	vmv.v.i	v12, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vxor.vi	v12, v12, 3
 	vmv1r.v	v0, v11

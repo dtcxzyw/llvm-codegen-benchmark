@@ -49,16 +49,16 @@ func000000000000006d:
 	.quad	-6313183731941900
 func000000000000000d:
 	lui	a0, 118
+	lui	a1, %hi(.LCPI3_0)
+	lui	a2, %hi(.LCPI3_1)
 	addiw	a0, a0, 539
+	ld	a1, %lo(.LCPI3_0)(a1)
+	ld	a2, %lo(.LCPI3_1)(a2)
 	bseti	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
-	vmulhu.vx	v10, v8, a0
-	lui	a0, %hi(.LCPI3_1)
-	ld	a0, %lo(.LCPI3_1)(a0)
-	vmv.v.x	v8, a0
+	vmulhu.vx	v10, v8, a1
+	vmv.v.x	v8, a2
 	vsrl.vi	v10, v10, 15
 	li	a0, 100
 	vmacc.vx	v8, a0, v10

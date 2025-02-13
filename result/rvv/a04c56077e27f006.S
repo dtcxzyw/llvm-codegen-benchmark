@@ -3,8 +3,8 @@ func000000000000001d:
 	vadd.vi	v8, v8, 1
 	li	a0, 31
 	vand.vx	v10, v8, a0
-	li	a0, 32
 	vmseq.vi	v0, v10, 0
+	li	a0, 32
 	vmerge.vxm	v10, v10, a0, v0
 	vsub.vv	v8, v8, v10
 	ret
@@ -32,8 +32,8 @@ func000000000000001a:
 	vadd.vi	v8, v8, 1
 	li	a0, 31
 	vand.vx	v10, v8, a0
-	li	a0, 32
 	vmseq.vi	v0, v10, 0
+	li	a0, 32
 	vmerge.vxm	v10, v10, a0, v0
 	vsub.vv	v8, v8, v10
 	ret

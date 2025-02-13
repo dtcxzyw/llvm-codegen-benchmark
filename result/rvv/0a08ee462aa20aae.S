@@ -10,9 +10,9 @@ func0000000000000004:
 	vor.vv	v8, v12, v8
 	vmv.v.x	v12, a0
 	lui	a0, 1552
-	addi	a0, a0, 128
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vi	v0, v10, 2
+	addi	a0, a0, 128
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
 	vor.vv	v8, v10, v8

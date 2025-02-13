@@ -1,7 +1,7 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	fli.s	fa5, -1.0
 	flt.s	a1, fa0, fa5
+	andi	a0, a0, 1
 	beqz	a1, .LBB0_3
 	fli.s	fa0, 1.0
 	beqz	a0, .LBB0_4
@@ -17,9 +17,9 @@ func0000000000000002:
 
 func0000000000000004:
 	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	fli.s	fa0, 1.0
 	flt.s	a1, fa0, fa5
+	andi	a0, a0, 1
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:

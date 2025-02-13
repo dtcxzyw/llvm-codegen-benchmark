@@ -13,9 +13,9 @@ func0000000000000604:
 	vmsne.vi	v14, v12, 7
 	vmseq.vi	v12, v10, 0
 	lui	a0, 786432
+	vmor.mm	v0, v12, v14
 	vmv.v.x	v10, a0
 	lui	a0, 262144
-	vmor.mm	v0, v12, v14
 	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v10, v8
 	ret
@@ -25,8 +25,8 @@ func0000000000000605:
 	vmsne.vi	v14, v12, 0
 	lui	a0, 32
 	vmseq.vx	v12, v10, a0
-	lui	a0, 256
 	vmor.mm	v0, v12, v14
+	lui	a0, 256
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

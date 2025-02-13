@@ -2,12 +2,12 @@
 	.quad	999999999999999999
 func0000000000000a08:
 	sh2add	a1, a1, a1
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
-	lui	a1, %hi(.LCPI0_0)
 	addi	a0, a0, -48
-	ld	a1, %lo(.LCPI0_0)(a1)
-	sltu	a0, a1, a0
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000a06:

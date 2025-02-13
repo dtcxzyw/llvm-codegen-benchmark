@@ -1,55 +1,55 @@
 func0000000000000088:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000084:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func00000000000000f8:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func00000000000000f4:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000064:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000074:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000044:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -64,17 +64,17 @@ func0000000000000078:
 	ret
 
 func0000000000000024:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000004:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -119,9 +119,9 @@ func0000000000000001:
 	ret
 
 func0000000000000068:
+	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 63
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -134,9 +134,9 @@ func0000000000000026:
 	ret
 
 func00000000000000a4:
+	lui	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	lui	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -145,9 +145,9 @@ func00000000000000a4:
 	.quad	384307168202282325
 func0000000000000028:
 	lui	a0, %hi(.LCPI18_0)
+	ld	a0, %lo(.LCPI18_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	ld	a0, %lo(.LCPI18_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -228,9 +228,9 @@ func000000000000002a:
 	ret
 
 func0000000000000034:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -331,9 +331,9 @@ func000000000000008a:
 	ret
 
 func000000000000006a:
+	li	a0, 250
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 250
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -348,9 +348,9 @@ func00000000000000e4:
 	ret
 
 func00000000000000c6:
+	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0
 	ret

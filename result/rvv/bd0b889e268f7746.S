@@ -17,8 +17,8 @@ func00000000000000aa:
 func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	li	a0, -399
 	vmsle.vi	v0, v8, -1
+	li	a0, -399
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 
@@ -56,10 +56,10 @@ func000000000000008a:
 .LCPI6_0:
 	.quad	-8446744073709551617
 func0000000000000028:
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vv	v8, v8, v10
 	lui	a0, %hi(.LCPI6_0)
 	ld	a0, %lo(.LCPI6_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vadd.vv	v8, v8, v10
 	vmsgtu.vx	v0, v8, a0
 	lui	a0, 960284
 	addi	a0, a0, -1545

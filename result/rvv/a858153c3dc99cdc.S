@@ -1,8 +1,8 @@
 func0000000000000075:
+	li	a0, 49
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v9
 	vwaddu.wv	v10, v10, v8
-	li	a0, 49
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	ret

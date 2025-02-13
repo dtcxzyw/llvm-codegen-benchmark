@@ -1,17 +1,17 @@
 func0000000000000005:
-	sext.w	a2, a0
-	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
+	andi	a2, a1, 1
+	sext.w	a1, a0
+	bnez	a2, .LBB0_2
 	lui	a0, 4
 	addiw	a0, a0, -1
-	li	a1, 1
-	beq	a2, a1, .LBB0_3
+	li	a2, 1
+	beq	a1, a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	lui	a0, 16384
 	addiw	a0, a0, -1
-	li	a1, 1
-	bne	a2, a1, .LBB0_4
+	li	a2, 1
+	bne	a1, a2, .LBB0_4
 .LBB0_3:
 	lui	a0, 128
 	addiw	a0, a0, -1
@@ -19,15 +19,15 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	sext.w	a2, a0
-	andi	a1, a1, 1
-	bnez	a1, .LBB1_2
+	andi	a2, a1, 1
+	sext.w	a1, a0
+	bnez	a2, .LBB1_2
 	li	a0, 4
-	beqz	a2, .LBB1_3
+	beqz	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 6
-	bnez	a2, .LBB1_4
+	bnez	a1, .LBB1_4
 .LBB1_3:
 	li	a0, 5
 .LBB1_4:

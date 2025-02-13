@@ -56,10 +56,10 @@ func0000000000000000:
 	.quad	-4454547087429121353
 func0000000000000015:
 	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	sub	a3, a1, a1
 	add	a0, a0, a3
 	lui	a3, 21
-	ld	a2, %lo(.LCPI4_0)(a2)
 	mulhu	a1, a1, a2
 	lui	a2, 1048555
 	addiw	a3, a3, 384

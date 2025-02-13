@@ -4,8 +4,8 @@ func0000000000000264:
 	vadd.vi	v8, v8, 1
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vx	v12, v10, a0
-	li	a0, 32
 	vmand.mm	v0, v14, v12
+	li	a0, 32
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

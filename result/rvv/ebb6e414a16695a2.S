@@ -3,10 +3,10 @@
 func0000000000000aa1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	vadd.vv	v10, v10, v10
 	lui	a0, %hi(.LCPI0_0)
-	lui	a1, 36158
 	ld	a0, %lo(.LCPI0_0)(a0)
+	vadd.vv	v10, v10, v10
+	lui	a1, 36158
 	addiw	a1, a1, -848
 	vmacc.vx	v10, a0, v12
 	slli	a0, a1, 28

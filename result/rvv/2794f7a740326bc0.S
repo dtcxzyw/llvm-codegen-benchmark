@@ -3,9 +3,9 @@ func0000000000000016:
 	vfwcvt.f.x.v	v16, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vv	v12, v16, v8
+	vmnot.m	v0, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
@@ -14,9 +14,9 @@ func000000000000000a:
 	vfwcvt.f.x.v	v16, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfle.vv	v12, v8, v16
+	vmnot.m	v0, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v12
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

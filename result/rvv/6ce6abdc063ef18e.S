@@ -5,8 +5,8 @@ func0000000000000001:
 	vmseq.vi	v10, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a0
-	li	a0, 307
 	vmand.mm	v0, v0, v10
+	li	a0, 307
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -17,8 +17,8 @@ func000000000000000c:
 	vmsne.vi	v10, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a0
-	li	a0, 283
 	vmand.mm	v0, v0, v10
+	li	a0, 283
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

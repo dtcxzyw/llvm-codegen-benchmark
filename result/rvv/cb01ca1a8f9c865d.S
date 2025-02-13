@@ -1,14 +1,14 @@
 func0000000000000028:
+	li	a0, 255
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vzext.vf2	v8, v10, v0.t
-	li	a0, 255
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000021:
+	li	a0, 160
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vzext.vf2	v8, v10, v0.t
-	li	a0, 160
 	vmseq.vx	v0, v8, a0
 	ret
 

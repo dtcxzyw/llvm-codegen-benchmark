@@ -31,12 +31,12 @@ func0000000000000007:
 .LCPI4_0:
 	.word	0x3d4ccccd
 func0000000000000005:
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
-	fli.s	fa5, 1.0
-	lui	a0, %hi(.LCPI4_0)
-	vfrsub.vf	v8, v8, fa5
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	fli.s	fa4, 1.0
+	vfrsub.vf	v8, v8, fa4
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret

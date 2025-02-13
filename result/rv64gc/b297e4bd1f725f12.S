@@ -1,9 +1,9 @@
 func0000000000000061:
-	andi	a0, a0, 255
-	beqz	a0, .LBB0_2
-	li	a1, 4
-.LBB0_2:
+	andi	a2, a0, 255
 	mv	a0, a1
+	beqz	a2, .LBB0_2
+	li	a0, 4
+.LBB0_2:
 	ret
 
 func0000000000000041:

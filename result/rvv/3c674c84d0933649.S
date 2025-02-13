@@ -6,17 +6,17 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vv	v8, v10, v9
-	li	a0, 32
 	vwsll.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret
 
 func000000000000000a:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vv	v8, v10, v9
-	li	a0, 32
 	vwsll.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret
@@ -50,17 +50,17 @@ func0000000000000023:
 	ret
 
 func000000000000002a:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vv	v8, v10, v9
-	li	a0, 32
 	vwsll.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret
 
 func0000000000000022:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmacc.vv	v8, v10, v9
-	li	a0, 32
 	vwsll.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret

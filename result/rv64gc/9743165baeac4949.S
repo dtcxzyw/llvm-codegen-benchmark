@@ -22,8 +22,8 @@ func0000000000000012:
 
 func0000000000000010:
 	sext.w	a2, a1
-	lui	a1, 2048
 	li	a3, 2
+	lui	a1, 2048
 	beq	a2, a3, .LBB2_2
 	li	a1, 2
 .LBB2_2:

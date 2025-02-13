@@ -26,8 +26,8 @@ func0000000000000005:
 	fmv.d.x	fa5, zero
 	vmfle.vf	v7, v24, fa5
 	fli.d	fa5, inf
-	vfmv.v.f	v24, fa5
 	vmnot.m	v0, v7
+	vfmv.v.f	v24, fa5
 	vfneg.v	v24, v16, v0.t
 	vfmul.vv	v8, v8, v24
 	ret

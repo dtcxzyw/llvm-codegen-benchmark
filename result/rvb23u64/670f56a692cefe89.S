@@ -17,14 +17,14 @@ func000000000000000e:
 	ret
 
 func0000000000000008:
-	fmv.d	fa5, fa0
-	fmv.d.x	fa0, zero
-	feq.d	a1, fa1, fa0
+	fmv.d.x	fa5, zero
+	feq.d	a1, fa1, fa5
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	bnez	a0, .LBB2_2
-	fmv.d	fa0, fa5
+	fmv.d	fa5, fa0
 .LBB2_2:
+	fmv.d	fa0, fa5
 	ret
 
 func000000000000000a:

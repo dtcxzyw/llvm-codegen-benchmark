@@ -13,16 +13,16 @@ func0000000000000053:
 	ret
 
 func0000000000000007:
-	andi	a3, a1, 1
-	andi	a1, a2, 255
-	li	a2, 1
-	beq	a1, a2, .LBB1_2
+	andi	a3, a2, 255
+	li	a4, 1
+	andi	a2, a1, 1
+	beq	a3, a4, .LBB1_2
 	li	a1, 1800
-	bnez	a3, .LBB1_3
+	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a1, 944
-	beqz	a3, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a1, 88
 .LBB1_4:

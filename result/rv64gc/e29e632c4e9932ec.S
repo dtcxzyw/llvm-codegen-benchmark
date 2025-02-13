@@ -9,9 +9,9 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
+	li	a3, 4
 	sub	a1, a1, a2
-	li	a2, 4
-	bge	a2, a0, .LBB1_3
+	bge	a3, a0, .LBB1_3
 	bge	a0, a1, .LBB1_4
 .LBB1_2:
 	ret

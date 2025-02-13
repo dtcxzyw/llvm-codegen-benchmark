@@ -1,7 +1,7 @@
 func0000000000000028:
-	andi	a0, a0, 1
 	addiw	a1, a1, -176
 	li	a2, -128
+	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 64
 	addi	a0, a0, -1

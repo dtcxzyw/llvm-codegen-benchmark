@@ -1,6 +1,6 @@
 func0000000000000026:
-	not	a2, a2
 	li	a3, 4
+	not	a2, a2
 	blt	a1, a3, .LBB0_2
 	li	a1, 4
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	not	a2, a2
 	li	a3, 8
+	not	a2, a2
 	blt	a1, a3, .LBB1_2
 	li	a1, 8
 .LBB1_2:

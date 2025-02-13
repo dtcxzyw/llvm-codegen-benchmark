@@ -40,12 +40,11 @@ func0000000000000008:
 
 func0000000000000015:
 	lui	a0, 524288
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vv	v9, v8, v9
 	addiw	a0, a0, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vor.vv	v9, v8, v9
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 

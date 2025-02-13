@@ -9,14 +9,14 @@ func0000000000000298:
 	ret
 
 func0000000000000021:
-	mv	a1, a0
-	li	a0, 516
-	beq	a1, a0, .LBB1_2
-	addi	a0, a1, -1022
+	li	a1, 516
+	beq	a0, a1, .LBB1_2
+	addi	a0, a0, -1022
 	snez	a0, a0
 	addi	a0, a0, -1
-	andi	a0, a0, 1022
+	andi	a1, a0, 1022
 .LBB1_2:
+	mv	a0, a1
 	ret
 
 func0000000000000084:
@@ -57,20 +57,20 @@ func0000000000000294:
 	ret
 
 func0000000000000318:
-	li	a1, 23
-	bltu	a1, a0, .LBB4_2
-	li	a1, 1
+	li	a2, 23
+	mv	a1, a0
+	bltu	a2, a0, .LBB4_2
+	li	a0, 1
 	li	a2, 79
-	bltu	a2, a0, .LBB4_3
+	bltu	a2, a1, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	li	a1, 3
+	li	a0, 3
 	li	a2, 79
-	bgeu	a2, a0, .LBB4_4
+	bgeu	a2, a1, .LBB4_4
 .LBB4_3:
-	li	a1, 4
+	li	a0, 4
 .LBB4_4:
-	mv	a0, a1
 	ret
 
 func0000000000000086:

@@ -15,14 +15,14 @@ func0000000000000008:
 .LCPI1_1:
 	.quad	0x3f50624dd2f1a9fc
 func0000000000000002:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vfcvt.f.xu.v	v8, v8
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v8, v8
 	vfdiv.vf	v8, v8, fa5
-	fld	fa5, %lo(.LCPI1_1)(a0)
-	vmflt.vf	v0, v8, fa5
+	vmflt.vf	v0, v8, fa4
 	ret
 
 .LCPI2_0:
@@ -55,14 +55,14 @@ func0000000000000004:
 .LCPI4_1:
 	.quad	0x3feccccccccccccd
 func000000000000000b:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vfcvt.f.xu.v	v8, v8
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
+	fld	fa4, %lo(.LCPI4_1)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v8, v8
 	vfdiv.vf	v8, v8, fa5
-	fld	fa5, %lo(.LCPI4_1)(a0)
-	vmfgt.vf	v10, v8, fa5
+	vmfgt.vf	v10, v8, fa4
 	vmnot.m	v0, v10
 	ret
 

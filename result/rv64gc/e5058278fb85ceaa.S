@@ -3,8 +3,8 @@
 func0000000000000015:
 	srai	a1, a0, 63
 	lui	a2, %hi(.LCPI0_0)
-	xor	a0, a0, a1
 	ld	a2, %lo(.LCPI0_0)(a2)
+	xor	a0, a0, a1
 	sub	a0, a0, a1
 	srli	a1, a0, 4
 	mulhu	a1, a1, a2

@@ -19,9 +19,9 @@ func00000000000003e1:
 	ret
 
 func0000000000000174:
+	li	a0, -48
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vwaddu.wv	v10, v10, v11
-	li	a0, -48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -40,9 +40,9 @@ func0000000000000021:
 	ret
 
 func0000000000000014:
+	li	a0, 16
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vwaddu.wv	v10, v10, v11
-	li	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma

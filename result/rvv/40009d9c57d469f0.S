@@ -1,8 +1,8 @@
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmin.vv	v14, v12, v10
 	vmsle.vi	v0, v12, -1
-	vmerge.vvm	v10, v14, v10, v0
+	vmin.vv	v12, v12, v10
+	vmerge.vvm	v10, v12, v10, v0
 	vor.vv	v8, v8, v10
 	ret
 

@@ -32,10 +32,10 @@ func0000000000000008:
 .LCPI3_0:
 	.word	0x322bcc77
 func000000000000001b:
-	fabs.s	fa5, fa2
 	lui	a0, %hi(.LCPI3_0)
-	flw	fa4, %lo(.LCPI3_0)(a0)
-	flt.s	a0, fa4, fa5
+	flw	fa5, %lo(.LCPI3_0)(a0)
+	fabs.s	fa4, fa2
+	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB3_2
 	fmv.w.x	fa1, zero
 .LBB3_2:
@@ -45,10 +45,10 @@ func000000000000001b:
 .LCPI4_0:
 	.word	0x322bcc77
 func0000000000000012:
-	fabs.s	fa5, fa2
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa4, %lo(.LCPI4_0)(a0)
-	flt.s	a0, fa5, fa4
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	fabs.s	fa4, fa2
+	flt.s	a0, fa4, fa5
 	beqz	a0, .LBB4_2
 	fmv.w.x	fa1, zero
 .LBB4_2:

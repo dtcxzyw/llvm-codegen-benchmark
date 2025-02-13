@@ -22,8 +22,8 @@ func0000000000000063:
 func0000000000000004:
 	li	a0, -83
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v9, 3
 	vmseq.vx	v0, v8, a0
+	vmv.v.i	v9, 3
 	vmerge.vim	v9, v9, 1, v0
 	vadd.vv	v8, v9, v8
 	ret

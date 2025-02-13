@@ -22,14 +22,14 @@ func00000000000000a4:
 
 func0000000000000084:
 	lui	a0, 14
-	lui	a1, 1048560
 	addi	a0, a0, -339
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v12, a0
+	lui	a0, 1048560
 	vmerge.vvm	v8, v10, v8, v0
-	addi	a0, a1, -1
-	vadd.vx	v8, v8, a0
-	vmsltu.vx	v0, v8, a1
+	addi	a1, a0, -1
+	vadd.vx	v8, v8, a1
+	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000a24:

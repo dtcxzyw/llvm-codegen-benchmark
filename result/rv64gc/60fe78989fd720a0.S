@@ -15,20 +15,20 @@ func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, %hi(.LCPI1_1)
-	fdiv.s	fa5, fa5, fa0
 	flw	fa4, %lo(.LCPI1_1)(a0)
+	fdiv.s	fa5, fa5, fa0
 	flt.s	a0, fa5, fa4
 	ret
 
 .LCPI2_0:
 	.word	0x3fcccccd
 func0000000000000003:
-	lui	a0, 260096
-	fmv.w.x	fa5, a0
 	lui	a0, %hi(.LCPI2_0)
-	fdiv.s	fa5, fa5, fa0
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	fle.s	a0, fa4, fa5
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	fdiv.s	fa4, fa4, fa0
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

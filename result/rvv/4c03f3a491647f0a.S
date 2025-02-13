@@ -6,10 +6,10 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
+	flw	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfadd.vf	v12, v12, fa5, v0.t
-	flw	fa5, %lo(.LCPI0_1)(a0)
-	vmfgt.vf	v0, v12, fa5
+	vmfgt.vf	v0, v12, fa4
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 

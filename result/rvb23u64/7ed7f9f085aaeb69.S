@@ -24,10 +24,10 @@ func0000000000000006:
 .LCPI3_0:
 	.quad	5871781006564002453
 func0000000000000004:
-	slli	a0, a0, 49
 	lui	a1, %hi(.LCPI3_0)
-	srli	a0, a0, 49
 	ld	a1, %lo(.LCPI3_0)(a1)
+	slli	a0, a0, 49
+	srli	a0, a0, 49
 	mul	a0, a0, a1
 	ret
 

@@ -22,11 +22,11 @@ func00000000000000ca:
 	.word	0x7f7fffff
 func00000000000000c4:
 	fmul.s	fa5, fa0, fa1
-	lui	a0, 2048
-	fmv.w.x	fa4, a0
 	lui	a0, %hi(.LCPI2_0)
-	fmax.s	fa5, fa5, fa4
 	flw	fa4, %lo(.LCPI2_0)(a0)
+	lui	a0, 2048
+	fmv.w.x	fa3, a0
+	fmax.s	fa5, fa5, fa3
 	flt.s	a0, fa4, fa5
 	ret
 

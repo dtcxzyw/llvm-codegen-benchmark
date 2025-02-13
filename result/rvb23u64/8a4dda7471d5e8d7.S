@@ -23,11 +23,11 @@ func000000000000318c:
 func0000000000003181:
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
+	lui	a4, %hi(.LCPI2_1)
+	ld	a4, %lo(.LCPI2_1)(a4)
 	xor	a2, a2, a3
-	lui	a3, %hi(.LCPI2_1)
-	ld	a3, %lo(.LCPI2_1)(a3)
 	sext.w	a0, a0
-	xor	a1, a1, a3
+	xor	a1, a1, a4
 	or	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

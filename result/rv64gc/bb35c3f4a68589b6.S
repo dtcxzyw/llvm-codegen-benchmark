@@ -36,8 +36,8 @@ func0000000000000001:
 
 func0000000000000024:
 	mv	a2, a0
-	lui	a0, 64
 	li	a3, 2
+	lui	a0, 64
 	bltu	a2, a3, .LBB4_2
 	or	a0, a0, a1
 .LBB4_2:

@@ -1,15 +1,15 @@
 func0000000000000000:
-	mv	a3, a0
-	add	a0, a1, a2
-	bgeu	a3, a0, .LBB0_3
-	li	a1, 128
-	bgeu	a1, a0, .LBB0_4
+	add	a1, a1, a2
+	bgeu	a0, a1, .LBB0_3
+	li	a0, 128
+	bgeu	a0, a1, .LBB0_4
 .LBB0_2:
+	mv	a0, a1
 	ret
 .LBB0_3:
-	mv	a0, a3
-	li	a1, 128
-	bltu	a1, a3, .LBB0_2
+	mv	a1, a0
+	li	a0, 128
+	bltu	a0, a1, .LBB0_2
 .LBB0_4:
 	li	a0, 128
 	ret

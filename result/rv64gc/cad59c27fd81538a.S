@@ -1,9 +1,9 @@
 func0000000000000003:
-	mv	a2, a0
-	andi	a0, a1, 63
-	bltu	a0, a2, .LBB0_2
-	mv	a0, a2
+	andi	a1, a1, 63
+	bltu	a1, a0, .LBB0_2
+	mv	a1, a0
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000002:

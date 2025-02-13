@@ -13,8 +13,8 @@ func000000000000018c:
 	vmsne.vx	v9, v12, a0
 	li	a0, 115
 	vmsne.vx	v12, v10, a0
-	li	a0, 108
 	vmand.mm	v0, v12, v9
+	li	a0, 108
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret
@@ -25,8 +25,8 @@ func0000000000000034:
 	lui	a0, 1
 	addi	a0, a0, -496
 	vmsltu.vx	v12, v10, a0
-	li	a0, 43
 	vmand.mm	v0, v12, v9
+	li	a0, 43
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

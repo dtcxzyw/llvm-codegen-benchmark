@@ -1,10 +1,10 @@
 func0000000000000002:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	flt.s	a0, fa1, fa0
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa1, fa5
 	bnez	a0, .LBB0_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 .LCPI1_0:
@@ -97,11 +97,11 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	feq.s	a0, fa1, fa0
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa1, fa5
 	beqz	a0, .LBB10_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB10_2:
+	fmv.s	fa0, fa5
 	ret
 

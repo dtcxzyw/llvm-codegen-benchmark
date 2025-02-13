@@ -12,8 +12,8 @@ func0000000000000008:
 
 func0000000000000007:
 	sext.w	a3, a0
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	bnez	a2, .LBB1_2
 	li	a0, 124
 	blt	a1, a3, .LBB1_3

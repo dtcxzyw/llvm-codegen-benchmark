@@ -1,10 +1,9 @@
 func0000000000000007:
 	li	a0, 48
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vor.vv	v8, v8, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, mu
+	vor.vv	v8, v8, v9
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

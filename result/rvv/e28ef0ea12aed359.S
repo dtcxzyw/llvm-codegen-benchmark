@@ -15,9 +15,9 @@ func0000000000000003:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
+	vmnot.m	v0, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 0
-	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 1, v0
 	li	a0, 49
 	vxor.vx	v8, v8, a0
@@ -59,9 +59,9 @@ func0000000000000005:
 	fli.d	fa5, 0.5
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
+	vmnot.m	v0, v16
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.i	v8, 2
-	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 0, v0
 	ret
 

@@ -6,8 +6,8 @@ func00000000000001b8:
 	addiw	a1, a1, -16
 	addiw	a0, a0, 15
 	vadd.vv	v10, v8, v10
-	vmv.v.x	v8, a1
 	vmsgtu.vx	v0, v10, a1
+	vmv.v.x	v8, a1
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

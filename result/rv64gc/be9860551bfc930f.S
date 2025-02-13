@@ -15,13 +15,13 @@ func0000000000000002:
 	ret
 
 func0000000000000008:
-	mv	a2, a0
-	lui	a0, 16
-	addiw	a0, a0, -1
-	bgeu	a1, a0, .LBB2_2
-	slli	a0, a2, 32
-	srli	a0, a0, 32
+	lui	a2, 16
+	addiw	a2, a2, -1
+	bgeu	a1, a2, .LBB2_2
+	slli	a0, a0, 32
+	srli	a2, a0, 32
 .LBB2_2:
+	mv	a0, a2
 	ret
 
 func0000000000000010:

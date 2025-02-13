@@ -2,12 +2,10 @@ func0000000000000086:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 3
 	li	a0, 240
+	vmsle.vi	v0, v10, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 224
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsle.vi	v0, v10, 3
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

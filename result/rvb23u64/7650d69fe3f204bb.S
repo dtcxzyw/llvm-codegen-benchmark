@@ -16,13 +16,13 @@ func0000000000000164:
 	.quad	0x3f571547652b82fe
 func00000000000000a5:
 	lui	a1, %hi(.LCPI1_0)
-	lui	a2, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_0)(a1)
+	lui	a1, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a1)
 	fle.d	a1, fa1, fa5
-	fld	fa5, %lo(.LCPI1_1)(a2)
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -31,12 +31,12 @@ func00000000000000a5:
 	.quad	0x3f571547652b82fe
 func00000000000001a5:
 	fli.d	fa5, 1.0
+	lui	a1, %hi(.LCPI2_0)
+	fld	fa4, %lo(.LCPI2_0)(a1)
 	flt.d	a1, fa1, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

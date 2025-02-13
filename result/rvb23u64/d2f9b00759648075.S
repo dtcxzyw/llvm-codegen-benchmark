@@ -39,13 +39,13 @@ func000000000000008a:
 func0000000000000006:
 	sext.w	a1, a1
 	lui	a2, 2575
+	lui	a3, %hi(.LCPI4_0)
 	addiw	a2, a2, -325
+	ld	a3, %lo(.LCPI4_0)(a3)
 	slli	a2, a2, 13
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI4_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI4_0)(a2)
-	slt	a0, a0, a1
+	slt	a0, a0, a3
 	ret
 
 .LCPI5_0:
@@ -53,11 +53,11 @@ func0000000000000006:
 func0000000000000086:
 	sext.w	a1, a1
 	lui	a2, 244
+	lui	a3, %hi(.LCPI5_0)
+	ld	a3, %lo(.LCPI5_0)(a3)
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI5_0)
 	add	a0, a0, a1
-	ld	a1, %lo(.LCPI5_0)(a2)
-	slt	a0, a0, a1
+	slt	a0, a0, a3
 	ret
 

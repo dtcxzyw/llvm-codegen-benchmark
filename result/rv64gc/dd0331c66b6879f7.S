@@ -15,9 +15,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	or	a1, a1, a2
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	beqz	a1, .LBB1_2
 	li	a1, 26
 	addi	a0, a0, -1
@@ -30,21 +30,21 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	andi	a3, a0, 1
 	or	a1, a1, a2
-	sext.w	a1, a1
-	li	a0, 1239
-	blt	a0, a1, .LBB2_2
-	li	a1, 107
+	sext.w	a2, a1
+	li	a3, 1239
+	andi	a1, a0, 1
+	blt	a3, a2, .LBB2_2
+	li	a2, 107
 	lui	a0, 8
-	beqz	a3, .LBB2_3
+	beqz	a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	li	a1, 1131
+	li	a2, 1131
 	lui	a0, 8
-	bnez	a3, .LBB2_4
+	bnez	a1, .LBB2_4
 .LBB2_3:
-	mv	a0, a1
+	mv	a0, a2
 .LBB2_4:
 	ret
 

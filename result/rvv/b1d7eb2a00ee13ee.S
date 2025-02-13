@@ -35,8 +35,8 @@ func00000000000000c5:
 func0000000000000080:
 	li	a0, 253
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 3
 	vmsgtu.vx	v0, v10, a0
+	vmv.v.i	v12, 3
 	vmerge.vim	v12, v12, 7, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

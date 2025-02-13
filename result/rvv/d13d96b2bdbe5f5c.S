@@ -8,8 +8,8 @@ func00000000000000e1:
 	lui	a0, 4
 	addi	a0, a0, 560
 	vmerge.vxm	v10, v10, a0, v0
-	vsll.vi	v12, v10, 8
 	vmseq.vi	v0, v8, 0
-	vmerge.vvm	v8, v12, v10, v0
+	vsll.vi	v8, v10, 8
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 

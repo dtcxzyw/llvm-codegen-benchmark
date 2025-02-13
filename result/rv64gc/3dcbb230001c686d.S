@@ -1,7 +1,7 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	addw	a1, a1, a2
 	li	a2, 15
+	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 15
 .LBB0_2:
@@ -10,10 +10,11 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	andi	a3, a0, 1
+	mv	a3, a0
 	addw	a0, a1, a2
 	lui	a1, 244
 	addiw	a1, a1, 576
+	andi	a3, a3, 1
 	bgeu	a0, a1, .LBB1_3
 	bnez	a3, .LBB1_4
 .LBB1_2:

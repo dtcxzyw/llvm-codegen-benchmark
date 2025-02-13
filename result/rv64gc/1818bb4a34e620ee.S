@@ -8,8 +8,8 @@ func0000000000000048:
 
 func0000000000000044:
 	sext.w	a2, a0
-	li	a0, 1
 	li	a3, -2
+	li	a0, 1
 	bgeu	a2, a3, .LBB1_2
 	sllw	a0, a0, a1
 .LBB1_2:
@@ -37,8 +37,8 @@ func0000000000000041:
 
 func000000000000000a:
 	sext.w	a2, a0
-	li	a0, 255
 	li	a3, 5
+	li	a0, 255
 	bge	a3, a2, .LBB4_2
 	sllw	a0, a0, a1
 .LBB4_2:

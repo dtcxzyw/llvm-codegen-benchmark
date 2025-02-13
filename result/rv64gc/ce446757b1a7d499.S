@@ -1,11 +1,11 @@
 func0000000000000029:
-	mv	a2, a0
-	sext.w	a1, a1
-	li	a0, 1
-	bgeu	a0, a1, .LBB0_2
-	slli	a0, a2, 48
-	srli	a0, a0, 48
+	sext.w	a2, a1
+	li	a1, 1
+	bgeu	a1, a2, .LBB0_2
+	slli	a0, a0, 48
+	srli	a1, a0, 48
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000003:

@@ -80,9 +80,9 @@ func0000000000000008:
 
 func000000000000002b:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v14, v8, -7
 	vmslt.vv	v0, v10, v12
-	vmerge.vvm	v8, v14, v8, v0
+	vadd.vi	v10, v8, -7
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000034:

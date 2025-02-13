@@ -12,10 +12,10 @@ func0000000000000008:
 func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, 524288
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
 	vmor.mm	v0, v10, v0
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

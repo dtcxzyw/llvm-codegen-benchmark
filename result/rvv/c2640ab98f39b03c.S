@@ -12,9 +12,9 @@ func0000000000000007:
 func0000000000000004:
 	fli.s	fa5, 2.0
 	vsetivli	zero, 16, e32, m4, ta, mu
-	vfrdiv.vf	v20, v16, fa5
 	vmfgt.vf	v0, v16, fa5
-	vfmul.vv	v12, v12, v20, v0.t
+	vfrdiv.vf	v16, v16, fa5
+	vfmul.vv	v12, v12, v16, v0.t
 	vfmul.vv	v8, v12, v8
 	ret
 

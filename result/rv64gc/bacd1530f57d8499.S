@@ -1,13 +1,13 @@
 func0000000000000086:
-	sext.w	a3, a1
-	srliw	a1, a1, 30
-	beqz	a1, .LBB0_3
-	bgez	a3, .LBB0_4
+	srliw	a3, a1, 30
+	sext.w	a1, a1
+	beqz	a3, .LBB0_3
+	bgez	a1, .LBB0_4
 .LBB0_2:
 	ret
 .LBB0_3:
 	li	a2, 32
-	bltz	a3, .LBB0_2
+	bltz	a1, .LBB0_2
 .LBB0_4:
 	mv	a0, a2
 	ret
@@ -62,17 +62,17 @@ func0000000000000026:
 	ret
 
 func0000000000000286:
-	sext.w	a3, a1
-	srliw	a1, a1, 13
-	beqz	a1, .LBB4_3
-	lui	a1, 1
-	bge	a3, a1, .LBB4_4
+	srliw	a3, a1, 13
+	sext.w	a1, a1
+	beqz	a3, .LBB4_3
+	lui	a3, 1
+	bge	a1, a3, .LBB4_4
 .LBB4_2:
 	ret
 .LBB4_3:
 	lui	a2, 2
-	lui	a1, 1
-	blt	a3, a1, .LBB4_2
+	lui	a3, 1
+	blt	a1, a3, .LBB4_2
 .LBB4_4:
 	mv	a0, a2
 	ret

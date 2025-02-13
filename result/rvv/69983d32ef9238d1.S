@@ -9,11 +9,11 @@ func000000000000000b:
 
 func0000000000000063:
 	lui	a0, 104832
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 0
 	addi	a0, a0, 816
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vx	v0, v8, a0
-	vmerge.vim	v8, v10, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	vmv.v.i	v10, 12
 	vsll.vv	v8, v10, v8
 	ret

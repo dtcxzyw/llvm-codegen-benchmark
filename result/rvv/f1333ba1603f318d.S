@@ -62,12 +62,12 @@ func0000000000000022:
 .LCPI5_0:
 	.word	0x358637bd
 func00000000000002dd:
+	lui	a0, %hi(.LCPI5_0)
+	flw	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
-	lui	a0, %hi(.LCPI5_0)
 	vfmin.vv	v8, v8, v12
-	flw	fa5, %lo(.LCPI5_0)(a0)
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret

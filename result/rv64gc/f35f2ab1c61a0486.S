@@ -1,19 +1,19 @@
 func0000000000000001:
-	andi	a0, a0, 1
-	bnez	a0, .LBB0_3
-	sext.w	a0, a1
-	li	a2, -1
-	beq	a0, a2, .LBB0_4
-.LBB0_2:
+	andi	a2, a0, 1
+	bnez	a2, .LBB0_2
 	mv	a0, a1
-	ret
-.LBB0_3:
-	li	a1, 11
-	sext.w	a0, a1
+	sext.w	a1, a1
 	li	a2, -1
-	bne	a0, a2, .LBB0_2
-.LBB0_4:
+	beq	a1, a2, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a0, 11
+	sext.w	a1, a0
+	li	a2, -1
+	bne	a1, a2, .LBB0_4
+.LBB0_3:
 	li	a0, 12
+.LBB0_4:
 	ret
 
 func000000000000000a:

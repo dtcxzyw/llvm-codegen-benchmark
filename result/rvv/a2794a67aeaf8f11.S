@@ -13,8 +13,8 @@ func000000000000000d:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI1_0)
-	vfmul.vv	v16, v16, v24
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	vfmul.vv	v16, v16, v24
 	vfadd.vf	v16, v16, fa5
 	vmflt.vv	v24, v8, v16
 	vmnot.m	v0, v24

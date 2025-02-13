@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	-81929232789475893
 func0000000000000018:
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	xor	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	xor	a1, a1, a2
+	xor	a1, a1, a3
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

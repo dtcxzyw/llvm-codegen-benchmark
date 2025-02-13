@@ -3,8 +3,8 @@
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d
 func0000000000000001:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	bnez	a1, .LBB0_2
 	fli.d	fa0, 0.25
 	li	a1, -6

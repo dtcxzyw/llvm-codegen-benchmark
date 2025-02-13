@@ -12,9 +12,9 @@ func0000000000000146:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgt.vi	v0, v12, 0
 	vmv.v.i	v12, 0
-	bseti	a0, zero, 63
 	vmerge.vim	v12, v12, 1, v0
 	vmsle.vi	v0, v10, -1
+	bseti	a0, zero, 63
 	vrsub.vx	v8, v12, a0, v0.t
 	ret
 

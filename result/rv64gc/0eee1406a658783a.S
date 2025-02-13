@@ -1,7 +1,7 @@
 func0000000000000008:
 	addiw	a2, a1, -300
-	lui	a1, 8
 	li	a3, -100
+	lui	a1, 8
 	bltu	a2, a3, .LBB0_2
 	lui	a1, 4
 	addiw	a1, a1, 73

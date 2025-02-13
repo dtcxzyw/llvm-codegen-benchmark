@@ -9,25 +9,26 @@ func0000000000000012:
 	mul	a2, a2, a3
 	mv	a3, a2
 	bgeu	a1, a2, .LBB0_4
-	andi	a1, a0, 1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	add	a2, a2, a3
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	bgeu	a2, a0, .LBB0_5
+	andi	a0, a0, 1
+	bgeu	a2, a1, .LBB0_5
 .LBB0_2:
-	beqz	a1, .LBB0_6
+	beqz	a0, .LBB0_6
 .LBB0_3:
+	mv	a0, a1
 	ret
 .LBB0_4:
 	mv	a3, a1
-	andi	a1, a0, 1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
 	add	a2, a2, a3
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	bltu	a2, a0, .LBB0_2
+	andi	a0, a0, 1
+	bltu	a2, a1, .LBB0_2
 .LBB0_5:
-	mv	a2, a0
-	bnez	a1, .LBB0_3
+	mv	a2, a1
+	bnez	a0, .LBB0_3
 .LBB0_6:
 	mv	a0, a2
 	ret

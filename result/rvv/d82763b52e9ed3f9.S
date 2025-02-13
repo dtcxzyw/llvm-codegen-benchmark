@@ -89,8 +89,8 @@ func00000000000000e3:
 func00000000000000c5:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv.v.i	v24, 0
 	vmfge.vf	v0, v16, fa5
+	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v24, v16, v8
 	vmnot.m	v0, v24
@@ -99,8 +99,8 @@ func00000000000000c5:
 func00000000000000c3:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv.v.i	v24, 0
 	vmfge.vf	v0, v16, fa5
+	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24

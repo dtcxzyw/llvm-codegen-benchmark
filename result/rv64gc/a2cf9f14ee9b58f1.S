@@ -46,9 +46,9 @@ func000000000000004d:
 .LCPI3_0:
 	.word	0x477fff00
 func0000000000000044:
-	fdiv.s	fa4, fa0, fa1
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
+	fdiv.s	fa4, fa0, fa1
 	flt.s	a1, fa5, fa4
 	bnez	a1, .LBB3_2
 	fmv.s	fa5, fa4

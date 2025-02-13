@@ -69,10 +69,10 @@ func0000000000000036:
 .LCPI8_0:
 	.word	0x7f7fffff
 func000000000000018e:
-	sext.w	a0, a0
 	lui	a1, %hi(.LCPI8_0)
-	snez	a0, a0
 	flw	fa5, %lo(.LCPI8_0)(a1)
+	sext.w	a0, a0
+	snez	a0, a0
 	feq.s	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1

@@ -4,8 +4,8 @@ func0000000000000412:
 	vwsll.vv	v14, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v10, v14, v10
-	vmv.v.i	v12, 0
 	vmsleu.vv	v0, v10, v8
-	vmerge.vim	v8, v12, 1, v0
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
 	ret
 

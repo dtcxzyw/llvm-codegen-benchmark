@@ -24,9 +24,9 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	li	a0, 63
 	vsrl.vx	v10, v8, a0
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 1

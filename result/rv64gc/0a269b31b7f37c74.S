@@ -17,8 +17,8 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	addi	a1, a1, -11
 	li	a2, 10
+	addi	a1, a1, -11
 	bgeu	a0, a2, .LBB1_3
 	bgeu	a1, a0, .LBB1_4
 .LBB1_2:

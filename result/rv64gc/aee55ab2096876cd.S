@@ -3,8 +3,8 @@
 func0000000000000028:
 	sub	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
-	li	a2, -1
 	ld	a1, %lo(.LCPI0_0)(a1)
+	li	a2, -1
 	srai	a0, a0, 4
 	slli	a2, a2, 63
 	mul	a0, a0, a1

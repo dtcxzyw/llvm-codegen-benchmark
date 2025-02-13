@@ -1,10 +1,10 @@
 func0000000000000001:
-	mv	a2, a0
-	slli	a0, a1, 32
-	srli	a0, a0, 32
-	bne	a2, a0, .LBB0_2
-	li	a0, 4
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	bne	a0, a1, .LBB0_2
+	li	a1, 4
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000004:

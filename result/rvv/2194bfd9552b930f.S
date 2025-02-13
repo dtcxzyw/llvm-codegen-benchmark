@@ -31,15 +31,15 @@ func00000000000005f8:
 	.quad	1844674407370955161
 func0000000000000308:
 	li	a0, -48
+	lui	a1, %hi(.LCPI2_0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 10
+	ld	a0, %lo(.LCPI2_0)(a1)
+	li	a1, 10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI2_0)
+	vmul.vx	v8, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -77,15 +77,15 @@ func0000000000000664:
 	.quad	1844674407370955161
 func0000000000000604:
 	li	a0, -48
+	lui	a1, %hi(.LCPI5_0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 10
+	ld	a0, %lo(.LCPI5_0)(a1)
+	li	a1, 10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI5_0)
+	vmul.vx	v8, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -94,15 +94,15 @@ func0000000000000604:
 	.quad	1844674407370955161
 func0000000000000601:
 	li	a0, -48
+	lui	a1, %hi(.LCPI6_0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 10
+	ld	a0, %lo(.LCPI6_0)(a1)
+	li	a1, 10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI6_0)
+	vmul.vx	v8, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v0, v8, a0
 	ret
