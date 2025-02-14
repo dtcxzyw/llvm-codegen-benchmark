@@ -25,9 +25,9 @@ func0000000000000083:
 func0000000000000023:
 	xorl	%eax, %eax
 	negl	%edx
-	sbbl	%eax, %eax
-	orl	$2, %eax
-	addl	%esi, %eax
+	setae	%al
+	leal	(%rax,%rax,2), %eax
+	leal	-1(%rsi,%rax), %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
 

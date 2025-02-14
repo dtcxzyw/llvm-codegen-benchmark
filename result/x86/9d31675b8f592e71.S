@@ -48,13 +48,13 @@ func000000000000002c:
 	retq
 
 func0000000000000024:
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	negl	%esi
-	movl	$0, %eax
-	sbbq	%rax, %rax
-	orq	$1, %rax
+	setae	%al
+	leaq	-1(%rax,%rax), %rcx
+	xorl	%eax, %eax
 	cmpl	$2, %edi
-	cmovbq	%rcx, %rax
+	cmovaeq	%rcx, %rax
 	retq
 
 func00000000000000c6:

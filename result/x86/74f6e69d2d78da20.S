@@ -2,8 +2,8 @@ func0000000000000044:
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
-	sbbq	%rax, %rax
-	orq	$1, %rax
+	setae	%al
+	leaq	-1(%rax,%rax), %rax
 	retq
 
 func0000000000000041:

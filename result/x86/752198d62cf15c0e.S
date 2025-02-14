@@ -51,9 +51,9 @@ func0000000000000101:
 func000000000000000c:
 	xorl	%eax, %eax
 	negl	%edi
-	sbbl	%eax, %eax
-	orl	$2, %eax
-	addl	%esi, %eax
+	setae	%al
+	leal	(%rax,%rax,2), %eax
+	leal	-1(%rsi,%rax), %eax
 	retq
 
 func0000000000000004:

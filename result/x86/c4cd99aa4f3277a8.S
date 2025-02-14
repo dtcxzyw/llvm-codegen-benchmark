@@ -1,8 +1,8 @@
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpb	%sil, %dil
-	sbbq	%rax, %rax
-	orq	$3, %rax
+	setae	%al
+	leaq	-1(,%rax,4), %rax
 	retq
 
 func0000000000000006:

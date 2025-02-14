@@ -9,10 +9,10 @@ func0000000000000001:
 
 func00000000000000c1:
 	decb	%sil
-	movzbl	%sil, %ecx
-	xorl	%eax, %eax
-	btl	%ecx, %edi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	movzbl	%sil, %eax
+	xorl	%ecx, %ecx
+	btl	%eax, %edi
+	setae	%cl
+	leal	-1(%rcx,%rcx), %eax
 	retq
 

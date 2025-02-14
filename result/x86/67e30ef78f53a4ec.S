@@ -35,10 +35,10 @@ func0000000000000004:
 	andb	$1, %dil
 	xorl	%eax, %eax
 	negl	%edx
-	movl	$0, %ecx
-	sbbl	%ecx, %ecx
-	orl	$2, %ecx
-	addl	%esi, %ecx
+	setae	%al
+	leal	(%rax,%rax,2), %eax
+	leal	-1(%rsi,%rax), %ecx
+	xorl	%eax, %eax
 	negb	%dil
 	sbbl	%eax, %eax
 	orl	%ecx, %eax

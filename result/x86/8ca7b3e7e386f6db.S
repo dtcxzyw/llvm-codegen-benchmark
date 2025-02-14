@@ -7,10 +7,10 @@ func0000000000000001:
 	retq
 
 func0000000000000014:
-	movl	%esi, %ecx
-	xorl	%eax, %eax
-	cmpq	%rcx, %rdi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	movl	%esi, %eax
+	xorl	%ecx, %ecx
+	cmpq	%rax, %rdi
+	setae	%cl
+	leal	-1(%rcx,%rcx), %eax
 	retq
 

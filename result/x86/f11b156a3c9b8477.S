@@ -14,8 +14,8 @@ func0000000000000084:
 	cmovael	%edx, %esi
 	xorl	%eax, %eax
 	cmpb	%dil, %sil
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 
 func0000000000000086:

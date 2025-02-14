@@ -28,9 +28,8 @@ func0000000000000007:
 func0000000000000005:
 	xorl	%eax, %eax
 	cmpl	$1, %esi
-	sbbl	%eax, %eax
-	orl	$1, %eax
-	addl	%edi, %eax
+	setae	%al
+	leal	-1(%rdi,%rax,2), %eax
 	retq
 
 func0000000000000033:

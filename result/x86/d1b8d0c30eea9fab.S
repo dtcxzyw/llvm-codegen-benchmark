@@ -22,8 +22,8 @@ func0000000000000061:
 func000000000000004c:
 	xorl	%eax, %eax
 	btq	%rsi, %rdi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 
 func000000000000006c:

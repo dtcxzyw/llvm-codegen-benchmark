@@ -65,11 +65,11 @@ func0000000000000005:
 	retq
 
 func0000000000000003:
-	xorl	%eax, %eax
 	vxorps	%xmm1, %xmm1, %xmm1
+	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 
 .LCPI9_0:

@@ -18,8 +18,8 @@ func0000000000000008:
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 
 func0000000000000001:

@@ -54,9 +54,8 @@ func0000000000000084:
 func00000000000000a6:
 	xorl	%eax, %eax
 	negb	%sil
-	sbbl	%eax, %eax
-	orl	$1, %eax
-	addl	%edi, %eax
+	setae	%al
+	leal	-1(%rdi,%rax,2), %eax
 	shrl	$31, %eax
 	retq
 

@@ -23,11 +23,11 @@ func0000000000000002:
 
 func0000000000000003:
 	vsubsd	%xmm1, %xmm0, %xmm0
-	xorl	%eax, %eax
 	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 
 func000000000000000c:

@@ -127,9 +127,8 @@ func000000000000006b:
 func00000000000000c0:
 	xorl	%eax, %eax
 	negl	%edx
-	sbbq	%rax, %rax
-	orq	$1, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
+	setae	%al
+	addq	%rsi, %rdi
+	leaq	-1(%rdi,%rax,2), %rax
 	retq
 

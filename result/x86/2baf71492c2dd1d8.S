@@ -1,8 +1,8 @@
 func0000000000000a2a:
 	xorl	%eax, %eax
 	cmpl	$128, %edx
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	addl	%esi, %eax
 	setns	%al
 	andb	%dil, %al
@@ -11,9 +11,9 @@ func0000000000000a2a:
 func000000000000008c:
 	xorl	%eax, %eax
 	negl	%edx
-	sbbl	%eax, %eax
-	orl	$2, %eax
-	addl	%esi, %eax
+	setae	%al
+	leal	(%rax,%rax,2), %eax
+	leal	-1(%rsi,%rax), %eax
 	cmpl	$-1, %eax
 	setne	%al
 	andb	%dil, %al
@@ -22,8 +22,8 @@ func000000000000008c:
 func00000000000000aa:
 	xorl	%eax, %eax
 	cmpl	$1, %edx
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	addl	%esi, %eax
 	setns	%al
 	andb	%dil, %al

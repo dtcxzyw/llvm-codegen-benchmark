@@ -1,8 +1,8 @@
 func0000000000000004:
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
-	sbbq	%rcx, %rcx
-	orq	$1, %rcx
+	setae	%al
+	leaq	-1(%rax,%rax), %rcx
 	testb	$1, %dil
 	movl	$3, %eax
 	cmoveq	%rcx, %rax

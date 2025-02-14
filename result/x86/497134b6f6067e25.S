@@ -15,8 +15,8 @@ func0000000000000008:
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
-	sbbq	%rax, %rax
-	orq	$1, %rax
+	setae	%al
+	leaq	-1(%rax,%rax), %rax
 	retq
 
 func000000000000000c:

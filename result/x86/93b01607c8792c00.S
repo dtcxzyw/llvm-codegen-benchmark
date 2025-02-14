@@ -47,18 +47,18 @@ func000000000000000a:
 	retq
 
 func0000000000000004:
-	movzbl	%sil, %ecx
-	xorl	%eax, %eax
-	cmpl	%ecx, %edi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	movzbl	%sil, %eax
+	xorl	%ecx, %ecx
+	cmpl	%eax, %edi
+	setae	%cl
+	leal	-1(%rcx,%rcx), %eax
 	retq
 
 func0000000000000008:
-	movzbl	%sil, %ecx
-	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	movzbl	%sil, %eax
+	xorl	%ecx, %ecx
+	cmpl	%edi, %eax
+	setae	%cl
+	leal	-1(%rcx,%rcx), %eax
 	retq
 

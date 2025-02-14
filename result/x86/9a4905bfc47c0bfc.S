@@ -19,13 +19,13 @@ func0000000000000008:
 	retq
 
 func0000000000000004:
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
-	movl	$0, %eax
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func000000000000000c:

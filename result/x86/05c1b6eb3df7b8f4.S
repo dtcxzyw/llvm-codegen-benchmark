@@ -30,8 +30,8 @@ func000000000000000d:
 func0000000000000008:
 	xorl	%eax, %eax
 	cmpl	$1, %esi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	addq	%rdi, %rax
 	retq
 

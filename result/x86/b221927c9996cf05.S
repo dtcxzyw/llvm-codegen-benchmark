@@ -23,11 +23,10 @@ func0000000000000010:
 	retq
 
 func000000000000000c:
-	xorl	%eax, %eax
 	vxorps	%xmm1, %xmm1, %xmm1
+	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
-	sbbl	%eax, %eax
-	orl	$1, %eax
-	addl	%edi, %eax
+	setae	%al
+	leal	-1(%rdi,%rax,2), %eax
 	retq
 

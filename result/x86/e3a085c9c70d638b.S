@@ -1,8 +1,8 @@
 func0000000000000001:
 	xorl	%eax, %eax
 	negl	%edi
-	sbbl	%eax, %eax
-	orl	$1, %eax
+	setae	%al
+	leal	-1(%rax,%rax), %eax
 	vcvtsi2ss	%eax, %xmm1, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
 	retq
