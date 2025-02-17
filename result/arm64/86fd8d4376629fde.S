@@ -20,8 +20,7 @@ func0000000000000088:
 	mul	x8, x8, x0
 	movk	x9, #11915, lsl #48
 	mul	x8, x8, x9
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -32,8 +31,7 @@ func00000000000000a8:
 	movk	x9, #43691
 	mul	x8, x8, x0
 	mul	x8, x8, x9
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

@@ -14,10 +14,10 @@ func0000000000000024:
 	ret
 
 func0000000000000188:
-	lsr	x8, x0, #32
+	tst	x0, #0xffffffff00000000
+	cset	w8, ne
 	tst	w1, #0xff0000
-	ccmp	x8, #0, #4, ne
-	cset	w0, ne
+	csel	w0, wzr, w8, eq
 	ret
 
 func000000000000002c:

@@ -29,8 +29,8 @@ func000000000000018c:
 	ret
 
 func0000000000000198:
-	lsr	x9, x0, #32
 	cmp	x1, #0
+	and	x9, x0, #0xffffffff00000000
 	mov	w8, #8
 	ccmp	x9, #0, #4, ne
 	csel	x0, x8, xzr, ne

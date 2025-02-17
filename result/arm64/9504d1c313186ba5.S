@@ -25,9 +25,9 @@ func0000000000000184:
 
 func0000000000000008:
 	mov	w8, w1
+	mov	x9, #-4294967296
 	mul	x8, x0, x8
-	ubfx	x8, x8, #30, #32
-	cmp	x8, #0
+	tst	x9, x8, lsl #2
 	cset	w0, ne
 	ret
 

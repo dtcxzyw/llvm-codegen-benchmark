@@ -32,22 +32,19 @@ func0000000000000144:
 	ret
 
 func0000000000000188:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w0, #0, #4, ne
 	cset	w0, ne
 	ret
 
 func000000000000010c:
-	lsr	x8, x0, #32
-	cmp	w0, #0
-	ccmp	x8, #0, #4, ne
+	tst	x0, #0xffffffff00000000
+	ccmp	w0, #0, #4, ne
 	cset	w0, ne
 	ret
 
 func00000000000000d8:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w0, #3, #0, ne
 	cset	w0, lt
 	ret
@@ -68,23 +65,20 @@ func0000000000000026:
 	ret
 
 func0000000000000158:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w0, #0, #8, ne
 	cset	w0, ge
 	ret
 
 func0000000000000301:
-	lsr	x8, x0, #32
-	cmp	w0, #0
-	ccmp	x8, #0, #4, eq
-	cset	w0, ne
+	tst	x0, #0xffffffff00000000
+	ccmp	w0, #0, #0, ne
+	cset	w0, eq
 	ret
 
 func0000000000000198:
-	lsr	x9, x0, #32
 	mov	w8, #65279
-	cmp	x9, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w0, w8, #4, ne
 	cset	w0, ne
 	ret

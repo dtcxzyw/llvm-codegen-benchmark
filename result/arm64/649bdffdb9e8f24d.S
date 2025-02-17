@@ -16,8 +16,7 @@ func0000000000000158:
 	lsl	x9, x9, #1
 	cmp	x9, x8
 	csel	x8, x9, x8, lt
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 

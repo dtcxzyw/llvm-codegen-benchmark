@@ -22,8 +22,7 @@ func00000000000006a8:
 	madd	x8, x2, x8, x0
 	movk	x10, #43691
 	madd	x8, x9, x10, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

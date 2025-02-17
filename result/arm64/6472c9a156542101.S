@@ -31,9 +31,8 @@ func0000000000000e8a:
 
 func000000000000010c:
 	add	x8, x1, x2
-	cmp	w0, #3
-	lsr	x8, x8, #32
-	ccmp	x8, #0, #4, ne
+	tst	x8, #0xffffffff00000000
+	ccmp	w0, #3, #4, ne
 	cset	w0, ne
 	ret
 

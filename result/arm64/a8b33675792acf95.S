@@ -31,8 +31,7 @@ func0000000000000708:
 	sub	w9, w1, #48
 	mul	x8, x0, x8
 	add	x8, x8, w9, uxtb
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

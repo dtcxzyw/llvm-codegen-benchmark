@@ -20,8 +20,7 @@ func0000000000000421:
 	ret
 
 func0000000000003104:
-	lsr	x8, x1, #56
-	cmp	x8, #0
+	tst	x1, #0xff00000000000000
 	lsr	x8, x0, #56
 	ccmp	x2, #0, #4, ne
 	ccmp	x8, #0, #0, ne

@@ -76,9 +76,8 @@ func0000000000000004:
 
 func0000000000000018:
 	add	x8, x0, x0, lsr #63
-	asr	x8, x8, #1
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	mov	x9, #-2305843009213693952
+	tst	x9, x8, asr #1
 	cset	w0, ne
 	ret
 

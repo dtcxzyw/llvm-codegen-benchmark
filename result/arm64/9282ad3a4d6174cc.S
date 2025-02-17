@@ -42,8 +42,7 @@ func0000000000000026:
 	ret
 
 func0000000000000106:
-	lsr	x8, x1, #61
-	cmp	x8, #0
+	tst	x1, #0xe000000000000000
 	ccmp	x0, #0, #8, eq
 	cset	w0, lt
 	ret
@@ -209,8 +208,7 @@ func0000000000000098:
 
 func0000000000000108:
 	orr	x8, x1, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

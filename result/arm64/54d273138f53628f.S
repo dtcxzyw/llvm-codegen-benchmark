@@ -5,10 +5,10 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	lsr	x8, x0, #60
 	tst	x1, #0xfffffffe
-	ccmp	x8, #0, #4, ne
-	cset	w0, ne
+	cset	w8, ne
+	tst	x0, #0xf000000000000000
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000024:

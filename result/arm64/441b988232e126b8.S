@@ -149,8 +149,7 @@ func0000000000000014:
 func0000000000000148:
 	sub	x8, x2, x1
 	add	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

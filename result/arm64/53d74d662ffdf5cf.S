@@ -1,8 +1,8 @@
 func0000000000000188:
-	lsr	x8, x1, #56
-	tst	x2, #0xffff
-	ccmp	x8, #0, #4, ne
+	tst	x1, #0xff00000000000000
 	cset	w8, ne
+	tst	x2, #0xffff
+	csel	w8, wzr, w8, eq
 	and	w0, w0, w8
 	ret
 

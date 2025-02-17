@@ -6,7 +6,8 @@ func0000000000006042:
 	ret
 
 func0000000000006070:
-	orr	x8, x2, x0, lsr #19
+	and	x8, x0, #0xfffffffffff80000
+	orr	x8, x2, x8
 	cmp	x8, #0
 	ccmp	x1, #2, #4, eq
 	cset	w0, eq

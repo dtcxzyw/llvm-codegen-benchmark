@@ -15,11 +15,10 @@ func0000000000000081:
 
 func0000000000000088:
 	sub	x8, x1, x2
+	tst	x0, #0xe000000000000000
 	mov	x9, #9223372036854775800
-	lsr	x10, x0, #61
-	cmp	x8, x9
-	ccmp	x10, #0, #4, lo
-	cset	w0, ne
+	ccmp	x8, x9, #2, ne
+	cset	w0, lo
 	ret
 
 func000000000000008c:
@@ -56,9 +55,8 @@ func0000000000000086:
 
 func0000000000000108:
 	sub	x8, x1, x2
-	lsr	x9, x0, #61
-	cmp	x8, #8
-	ccmp	x9, #0, #4, hi
-	cset	w0, ne
+	tst	x0, #0xe000000000000000
+	ccmp	x8, #8, #0, ne
+	cset	w0, hi
 	ret
 

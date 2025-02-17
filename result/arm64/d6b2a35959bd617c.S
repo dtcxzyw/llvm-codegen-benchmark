@@ -11,8 +11,7 @@ func000000000000000a:
 func0000000000000008:
 	tst	w0, #0x1
 	csel	x8, x1, x2, ne
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

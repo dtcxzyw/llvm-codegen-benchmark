@@ -18,8 +18,7 @@ func000000000000018e:
 	ret
 
 func000000000000030e:
-	lsr	x8, x1, #48
-	cmp	x8, #0
+	tst	x1, #0xffff000000000000
 	cinc	w8, w0, ne
 	lsl	x0, x8, #48
 	ret
@@ -37,29 +36,25 @@ func0000000000000180:
 	ret
 
 func000000000000030f:
-	lsr	x8, x1, #54
-	cmp	x8, #0
+	tst	x1, #0xffc0000000000000
 	cinc	w8, w0, ne
 	lsl	x0, x8, #52
 	ret
 
 func000000000000010f:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	cinc	x8, x0, ne
 	lsl	x0, x8, #3
 	ret
 
 func0000000000000100:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	cinc	x8, x0, ne
 	lsl	x0, x8, #3
 	ret
 
 func0000000000000307:
-	lsr	x8, x1, #54
-	cmp	x8, #0
+	tst	x1, #0xffc0000000000000
 	cinc	w8, w0, ne
 	lsl	x0, x8, #52
 	ret

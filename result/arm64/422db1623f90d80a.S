@@ -20,8 +20,7 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	lsr	x8, x1, #61
-	cmp	x8, #0
+	tst	x1, #0xe000000000000000
 	csinc	w0, w0, wzr, eq
 	ret
 

@@ -1,6 +1,5 @@
 func0000000000000114:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	tst	x2, #0xffffffff00000000
 	cset	w8, ne
 	cmp	w1, #2
 	and	w8, w8, w0

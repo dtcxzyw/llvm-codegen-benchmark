@@ -10,8 +10,7 @@ func00000000000001a8:
 	sub	x8, x1, x2
 	asr	x8, x8, #3
 	sub	x8, x8, x0, asr #3
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

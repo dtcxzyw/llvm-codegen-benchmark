@@ -33,10 +33,10 @@ func0000000000000021:
 
 func000000000000010c:
 	mov	w8, #7
-	lsr	x9, x0, #42
 	bics	wzr, w8, w1
-	ccmp	x9, #0, #0, eq
-	cset	w0, ne
+	cset	w8, ne
+	tst	x0, #0xfffffc0000000000
+	csinc	w0, w8, wzr, eq
 	ret
 
 func000000000000002c:

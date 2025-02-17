@@ -4,8 +4,7 @@ func0000000000000408:
 	mov	w8, #40960
 	csel	x8, x8, x1, hi
 	mul	x8, x0, x8
-	lsr	x8, x8, #56
-	cmp	x8, #0
+	tst	x8, #0xff00000000000000
 	cset	w0, ne
 	ret
 

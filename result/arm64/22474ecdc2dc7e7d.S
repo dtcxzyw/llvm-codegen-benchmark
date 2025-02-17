@@ -1,9 +1,9 @@
 func0000000000000010:
 	mov	x8, #288230376151711743
-	lsr	x9, x0, #58
+	tst	x0, #0xfc00000000000000
+	cset	w9, ne
 	bics	xzr, x8, x0
-	ccmp	x9, #0, #0, ne
-	cset	w0, ne
+	csinc	w0, w9, wzr, ne
 	ret
 
 func0000000000000130:

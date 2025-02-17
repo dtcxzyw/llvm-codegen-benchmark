@@ -3,8 +3,7 @@ func0000000000000008:
 	mov	w8, #40960
 	csel	x8, x8, x2, ne
 	mul	x8, x0, x8
-	lsr	x8, x8, #56
-	cmp	x8, #0
+	tst	x8, #0xff00000000000000
 	cset	w0, ne
 	ret
 
@@ -12,8 +11,7 @@ func0000000000000028:
 	tst	w1, #0x1
 	csel	x8, xzr, x2, ne
 	mul	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

@@ -6,16 +6,14 @@ func000000000000061d:
 	ret
 
 func000000000000043f:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	cinc	x8, x0, ne
 	lsl	x8, x8, #3
 	add	x0, x8, #24
 	ret
 
 func0000000000000400:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	cinc	x8, x0, ne
 	lsl	x8, x8, #3
 	add	x0, x8, #16

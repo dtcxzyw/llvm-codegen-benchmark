@@ -28,8 +28,7 @@ func0000000000000101:
 func00000000000001f8:
 	add	x8, x0, x2, lsr #15
 	add	x8, x8, x1, lsr #15
-	lsr	x8, x8, #48
-	cmp	x8, #0
+	tst	x8, #0xffff000000000000
 	cset	w0, ne
 	ret
 

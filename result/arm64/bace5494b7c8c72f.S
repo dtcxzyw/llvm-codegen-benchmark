@@ -10,8 +10,7 @@ func0000000000000008:
 	ucvtf	d1, x0
 	fmul	d0, d0, d1
 	fcvtzu	x8, d0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

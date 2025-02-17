@@ -19,8 +19,7 @@ func0000000000000006:
 	ret
 
 func0000000000000018:
-	lsr	w8, w2, #16
-	cmp	w8, #0
+	tst	w2, #0xffff0000
 	csel	w0, w0, w1, ne
 	ret
 

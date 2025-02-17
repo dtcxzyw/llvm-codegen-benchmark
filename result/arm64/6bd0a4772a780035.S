@@ -22,9 +22,8 @@ func000000000000002c:
 	ret
 
 func000000000000010c:
-	lsr	x9, x1, #32
+	tst	x1, #0xffffffff00000000
 	mov	w8, #4
-	cmp	x9, #0
 	ccmp	w0, #0, #4, ne
 	cinc	w0, w8, eq
 	ret

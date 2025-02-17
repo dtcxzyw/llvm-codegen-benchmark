@@ -80,9 +80,8 @@ func0000000000000024:
 	ret
 
 func000000000000030c:
-	and	w8, w0, #0xffff
-	orr	w8, w8, w1, lsr #16
-	cmp	w8, #0
+	bfxil	w1, w0, #0, #16
+	cmp	w1, #0
 	cset	w0, ne
 	ret
 

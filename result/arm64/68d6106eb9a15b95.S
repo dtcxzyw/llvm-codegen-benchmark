@@ -7,8 +7,7 @@ func0000000000000041:
 func0000000000000008:
 	sub	w8, w1, #1
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000181:
 func0000000000000108:
 	add	w8, w1, #1
 	mul	x8, x0, x8
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 

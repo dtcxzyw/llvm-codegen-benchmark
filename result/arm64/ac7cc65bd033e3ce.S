@@ -8,8 +8,7 @@ func0000000000000021:
 func0000000000000028:
 	cmp	x2, #0
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

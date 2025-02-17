@@ -8,8 +8,7 @@ func0000000000000001:
 func0000000000000008:
 	sxtw	x8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -73,8 +72,7 @@ func0000000000000004:
 func0000000000000038:
 	sxtw	x8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

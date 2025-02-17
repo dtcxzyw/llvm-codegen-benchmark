@@ -17,8 +17,7 @@ func0000000000000181:
 	ret
 
 func0000000000000148:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	ccmp	w0, #0, #4, ne
 	cset	w0, gt
 	ret

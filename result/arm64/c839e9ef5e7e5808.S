@@ -63,8 +63,7 @@ func0000000000000084:
 	ret
 
 func0000000000000088:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	ccmp	w0, #23, #2, eq
 	cset	w0, hi
 	ret

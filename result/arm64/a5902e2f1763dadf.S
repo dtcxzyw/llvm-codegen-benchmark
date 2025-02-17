@@ -6,9 +6,8 @@ func0000000000000063:
 	ret
 
 func0000000000000023:
-	lsr	x8, x2, #32
+	tst	x2, #0xffffffff00000000
 	orr	w9, w0, w1
-	cmp	x8, #0
 	cset	w8, ne
 	orr	w0, w9, w8, lsl #5
 	ret

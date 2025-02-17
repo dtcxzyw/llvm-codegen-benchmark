@@ -15,10 +15,9 @@ func0000000000001861:
 	ret
 
 func0000000000003074:
-	lsr	x8, x1, #48
-	lsr	x9, x0, #48
-	cmp	x8, #0
-	cinc	x8, x9, ne
+	lsr	x8, x0, #48
+	tst	x1, #0xffff000000000000
+	cinc	x8, x8, ne
 	cmp	x8, #16, lsl #12
 	cset	w0, lo
 	ret

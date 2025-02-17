@@ -8,8 +8,7 @@ func0000000000000001:
 func0000000000000008:
 	and	x8, x1, #0x1
 	asr	x8, x0, x8
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 

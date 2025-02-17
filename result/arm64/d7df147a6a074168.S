@@ -3,8 +3,7 @@ func0000000000000028:
 	add	x9, x1, #1
 	cmp	x8, x9
 	csinc	x8, x8, x1, hi
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 

@@ -20,10 +20,10 @@ func000000000000002c:
 	ret
 
 func000000000000010c:
-	and	w8, w1, #0xf8
-	lsr	x9, x0, #61
-	cmp	w8, #48
-	ccmp	x9, #0, #0, eq
+	mov	w8, #48
+	and	w9, w1, #0xf8
+	tst	x0, #0xe000000000000000
+	ccmp	w9, w8, #0, eq
 	cset	w0, ne
 	ret
 

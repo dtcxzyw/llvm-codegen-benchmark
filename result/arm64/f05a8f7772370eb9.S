@@ -9,9 +9,9 @@ func00000000000000a8:
 
 func00000000000000b8:
 	asr	x8, x0, #2
+	mov	x9, #-288230376151711744
 	add	x8, x8, x0, asr #3
-	ubfx	x8, x8, #57, #6
-	cmp	x8, #0
+	tst	x9, x8, lsl #1
 	cset	w0, ne
 	ret
 

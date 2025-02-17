@@ -25,8 +25,7 @@ func00000000000000a8:
 	movk	x9, #64079, lsl #32
 	movk	x9, #20388, lsl #48
 	mul	x8, x8, x9
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

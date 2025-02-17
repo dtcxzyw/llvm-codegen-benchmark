@@ -1,9 +1,8 @@
 func0000000000000210:
-	lsr	x9, x0, #61
-	lsl	x10, x1, #3
+	lsl	x9, x1, #3
 	mov	x8, #9223372036854775804
-	cmp	x9, #0
-	ccmp	x8, x10, #0, eq
+	tst	x0, #0xe000000000000000
+	ccmp	x8, x9, #0, eq
 	cset	w0, lo
 	ret
 

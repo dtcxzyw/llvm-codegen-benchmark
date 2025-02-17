@@ -8,10 +8,9 @@ func0000000000000007:
 	ret
 
 func0000000000000063:
-	lsr	x8, x2, #53
-	mov	x9, #13510798882111487
-	cmp	x8, #0
-	and	x8, x1, x9
+	mov	x8, #13510798882111487
+	tst	x2, #0xffe0000000000000
+	and	x8, x1, x8
 	cset	w9, ne
 	orr	x8, x8, x0
 	orr	x0, x8, x9, lsl #52

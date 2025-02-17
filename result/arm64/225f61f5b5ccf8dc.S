@@ -21,8 +21,7 @@ func000000000000000a:
 
 func00000000000003c3:
 	add	x8, x1, x2
-	lsr	x8, x8, #48
-	cmp	x8, #0
+	tst	x8, #0xffff000000000000
 	cinc	x0, x0, ne
 	ret
 
@@ -60,8 +59,7 @@ func00000000000000a3:
 
 func00000000000003c1:
 	add	x8, x1, x2
-	lsr	x8, x8, #54
-	cmp	x8, #0
+	tst	x8, #0xffc0000000000000
 	cinc	x0, x0, ne
 	ret
 

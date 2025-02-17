@@ -1,7 +1,6 @@
 func0000000000000028:
 	add	x8, x0, w1, sxth
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

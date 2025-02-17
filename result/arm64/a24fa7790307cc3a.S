@@ -74,8 +74,7 @@ func0000000000000004:
 func0000000000000008:
 	orr	x8, x1, x2
 	sub	x8, x8, x0
-	lsr	x8, x8, #44
-	cmp	x8, #0
+	tst	x8, #0xfffff00000000000
 	cset	w0, ne
 	ret
 

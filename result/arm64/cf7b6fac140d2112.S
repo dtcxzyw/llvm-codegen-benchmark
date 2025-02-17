@@ -10,8 +10,7 @@ func0000000000000088:
 	add	w8, w1, #1
 	sxtw	x8, w8
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -33,8 +32,7 @@ func00000000000000a8:
 	add	w8, w1, #1
 	sxtw	x8, w8
 	mul	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

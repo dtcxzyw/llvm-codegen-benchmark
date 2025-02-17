@@ -6,8 +6,7 @@ func000000000000066f:
 	ret
 
 func0000000000000c27:
-	lsr	x8, x2, #54
-	cmp	x8, #0
+	tst	x2, #0xffc0000000000000
 	add	x8, x1, x0
 	cinc	x8, x8, ne
 	add	x0, x8, #1086

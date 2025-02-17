@@ -9,8 +9,7 @@ func0000000000000004:
 func0000000000000088:
 	orr	x8, x1, #0x2
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

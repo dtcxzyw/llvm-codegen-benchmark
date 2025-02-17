@@ -29,16 +29,14 @@ func00000000000000b4:
 func00000000000000a8:
 	asr	x8, x0, #5
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #58
-	cmp	x8, #0
+	tst	x8, #0xfc00000000000000
 	cset	w0, ne
 	ret
 
 func00000000000001a8:
 	asr	x8, x0, #2
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

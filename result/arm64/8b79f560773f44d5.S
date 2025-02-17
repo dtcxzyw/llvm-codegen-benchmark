@@ -74,8 +74,9 @@ func0000000000000108:
 	ret
 
 func0000000000000210:
-	lsr	w8, w0, #15
-	orr	w8, w8, w1, lsr #16
+	and	w8, w1, #0xffff0000
+	and	w9, w0, #0xffff8000
+	orr	w8, w9, w8
 	cmp	w8, #0
 	cset	w0, ne
 	ret

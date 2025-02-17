@@ -39,12 +39,11 @@ func0000000000000181:
 	ret
 
 func0000000000000104:
-	lsr	x8, x2, #56
-	lsr	w9, w1, #30
-	cmp	x8, #0
-	cset	w8, ne
-	cmp	w9, #3
-	csel	w8, w8, w0, lo
+	lsr	w8, w1, #30
+	tst	x2, #0xff00000000000000
+	cset	w9, ne
+	cmp	w8, #3
+	csel	w8, w9, w0, lo
 	and	w0, w8, #0x1
 	ret
 

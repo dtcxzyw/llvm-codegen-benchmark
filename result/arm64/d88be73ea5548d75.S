@@ -1,10 +1,10 @@
 func0000000000008410:
-	tst	w0, #0xffff8000
-	lsr	x8, x1, #32
-	cset	w9, ne
+	tst	x1, #0xffffffff00000000
+	cset	w8, ne
 	tst	w2, #0xffff0000
-	ccmp	x8, #0, #0, eq
-	csinc	w0, w9, wzr, eq
+	csinc	w8, w8, wzr, eq
+	tst	w0, #0xffff8000
+	csinc	w0, w8, wzr, eq
 	ret
 
 func000000000000130c:

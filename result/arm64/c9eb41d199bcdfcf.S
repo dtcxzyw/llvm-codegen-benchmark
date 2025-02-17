@@ -7,8 +7,7 @@ func00000000000000a1:
 func00000000000000a8:
 	sxtw	x8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -21,8 +20,7 @@ func00000000000000a6:
 func0000000000000028:
 	sbfx	x8, x1, #5, #32
 	mul	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 
@@ -50,8 +48,7 @@ func0000000000000084:
 func0000000000000008:
 	sbfx	x8, x1, #4, #32
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -65,24 +62,21 @@ func0000000000000001:
 func0000000000000018:
 	sbfx	x8, x1, #4, #32
 	mul	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 
 func0000000000000088:
 	sxtw	x8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
 func00000000000000b8:
 	sxtw	x8, w1
 	mul	x8, x8, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

@@ -32,8 +32,7 @@ func0000000000000004:
 
 func0000000000000008:
 	fmov	x8, d0
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 

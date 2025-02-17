@@ -13,10 +13,9 @@ func0000000000000081:
 
 func0000000000000088:
 	mov	x8, #9223372036854775800
-	lsr	x9, x0, #61
-	cmp	x1, x8
-	ccmp	x9, #0, #4, lo
-	cset	w0, ne
+	tst	x0, #0xe000000000000000
+	ccmp	x1, x8, #2, ne
+	cset	w0, lo
 	ret
 
 func000000000000008c:
@@ -152,9 +151,8 @@ func0000000000000086:
 	ret
 
 func0000000000000148:
-	lsr	x8, x0, #60
-	cmp	x1, #0
-	ccmp	x8, #0, #0, ge
-	cset	w0, ne
+	tst	x0, #0xf000000000000000
+	ccmp	x1, #0, #8, eq
+	cset	w0, lt
 	ret
 

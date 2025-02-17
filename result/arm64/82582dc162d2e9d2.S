@@ -5,8 +5,7 @@ func00000000000002d0:
 	ret
 
 func0000000000000910:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w1, w0, #0, eq
 	cset	w0, lo
 	ret

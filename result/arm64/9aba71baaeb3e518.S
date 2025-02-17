@@ -1,8 +1,7 @@
 func0000000000000038:
 	cmp	x0, #0
 	cneg	x8, x0, mi
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 

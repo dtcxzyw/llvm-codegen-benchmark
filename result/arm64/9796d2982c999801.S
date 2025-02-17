@@ -81,11 +81,10 @@ func000000000000014c:
 	ret
 
 func0000000000000088:
-	lsr	x8, x0, #56
-	sub	x9, x1, x2
-	cmp	x8, #0
-	mov	x8, #-119
-	ccmp	x9, x8, #2, ne
+	sub	x8, x1, x2
+	tst	x0, #0xff00000000000000
+	mov	x9, #-119
+	ccmp	x8, x9, #2, ne
 	cset	w0, lo
 	ret
 

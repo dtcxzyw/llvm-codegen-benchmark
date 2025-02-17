@@ -19,16 +19,14 @@ func00000000000002a8:
 	ret
 
 func0000000000000310:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w0, #0, #0, eq
 	cset	w0, ne
 	ret
 
 func0000000000000218:
-	lsr	x8, x0, #32
-	cmp	w0, #0
-	ccmp	x8, #0, #0, eq
+	tst	x0, #0xffffffff00000000
+	ccmp	w0, #0, #0, eq
 	cset	w0, ne
 	ret
 

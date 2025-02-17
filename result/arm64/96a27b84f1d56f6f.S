@@ -18,8 +18,7 @@ func0000000000000041:
 
 func0000000000000048:
 	umull	x8, w0, w1
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

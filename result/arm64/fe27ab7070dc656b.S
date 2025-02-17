@@ -9,8 +9,7 @@ func0000000000000078:
 	lsr	x8, x1, #12
 	lsr	x9, x0, #12
 	add	x8, x9, w8, uxtw
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0x1fffff00000000
 	cset	w0, ne
 	ret
 

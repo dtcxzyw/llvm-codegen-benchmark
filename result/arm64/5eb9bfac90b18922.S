@@ -11,10 +11,11 @@ func0000000000000084:
 func0000000000000118:
 	lsr	w8, w2, #16
 	cmp	w8, #0
-	cset	w8, ne
-	csel	w9, w1, w2, ne
-	lsl	w8, w8, #4
-	cmp	w9, #255
-	csel	w0, w0, w8, hi
+	csel	w8, w1, w2, ne
+	tst	w2, #0xffff0000
+	cset	w9, ne
+	cmp	w8, #255
+	lsl	w9, w9, #4
+	csel	w0, w0, w9, hi
 	ret
 

@@ -43,8 +43,7 @@ func0000000000000208:
 func0000000000000078:
 	add	x8, x0, w1, uxtw
 	add	x8, x8, #1
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

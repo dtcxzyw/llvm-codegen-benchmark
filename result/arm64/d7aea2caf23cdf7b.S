@@ -27,12 +27,11 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	lsr	x9, x0, #32
 	mov	w8, #2
 	tst	w1, #0x1
-	mov	w10, #4
-	csel	w8, w10, w8, ne
-	cmp	x9, #0
+	mov	w9, #4
+	csel	w8, w9, w8, ne
+	tst	x0, #0xffffffff00000000
 	mov	w9, #8
 	csel	w0, w9, w8, ne
 	ret

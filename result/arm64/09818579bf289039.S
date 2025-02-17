@@ -42,8 +42,7 @@ func000000000000014f:
 	ret
 
 func000000000000030f:
-	lsr	x8, x2, #48
-	cmp	x8, #0
+	tst	x2, #0xffff000000000000
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret
@@ -55,8 +54,7 @@ func0000000000000100:
 	ret
 
 func0000000000000307:
-	lsr	x8, x2, #54
-	cmp	x8, #0
+	tst	x2, #0xffc0000000000000
 	add	x8, x0, x1
 	cinc	x0, x8, ne
 	ret

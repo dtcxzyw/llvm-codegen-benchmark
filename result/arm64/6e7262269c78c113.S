@@ -10,8 +10,7 @@ func0000000000000008:
 	mul	x8, x0, x1
 	sxtw	x9, w2
 	mul	x8, x8, x9
-	lsr	x8, x8, #58
-	cmp	x8, #0
+	tst	x8, #0xfc00000000000000
 	cset	w0, ne
 	ret
 
@@ -97,8 +96,7 @@ func00000000000000a8:
 	mul	x8, x0, x1
 	sxtw	x9, w2
 	mul	x8, x8, x9
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 

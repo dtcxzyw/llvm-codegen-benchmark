@@ -92,7 +92,8 @@ func000000000000030c:
 	ret
 
 func0000000000000188:
-	orr	w8, w1, w0, lsr #16
+	and	w8, w0, #0xffff0000
+	orr	w8, w8, w1
 	cmp	w8, #0
 	cset	w0, ne
 	ret

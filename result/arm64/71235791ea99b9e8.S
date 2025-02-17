@@ -1,6 +1,5 @@
 func0000000000000048:
-	lsr	w8, w0, #16
-	cmp	w8, #0
+	tst	w0, #0xffff0000
 	csel	w0, wzr, w0, ne
 	ret
 

@@ -20,9 +20,8 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	lsr	x8, x2, #32
+	tst	x2, #0xffffffff00000000
 	and	w9, w0, w1
-	cmp	x8, #0
 	cset	w8, ne
 	and	w0, w9, w8
 	ret

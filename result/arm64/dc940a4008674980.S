@@ -45,8 +45,7 @@ func0000000000000041:
 	ret
 
 func0000000000000048:
-	lsr	x8, x1, #60
-	cmp	x8, #0
+	tst	x1, #0xf000000000000000
 	cset	w8, ne
 	bic	w0, w8, w0
 	ret

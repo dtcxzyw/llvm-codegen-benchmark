@@ -18,8 +18,7 @@ func00000000000000a8:
 	sub	x8, x1, x2
 	asr	x8, x8, #3
 	add	x8, x8, w0, sxtw
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

@@ -29,8 +29,7 @@ func0000000000000208:
 	cmp	x0, #50
 	csel	x8, x8, x1, lo
 	add	x8, x8, x0
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

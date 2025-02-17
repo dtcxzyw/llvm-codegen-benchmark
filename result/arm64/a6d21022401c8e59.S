@@ -28,8 +28,7 @@ func00000000000001a8:
 	movk	x9, #43691
 	mul	x8, x8, x9
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

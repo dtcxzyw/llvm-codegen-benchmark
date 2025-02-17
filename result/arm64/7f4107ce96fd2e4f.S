@@ -23,8 +23,7 @@ func00000000000000a4:
 func0000000000000188:
 	sub	w8, w1, #48
 	add	x8, x0, w8, uxtb
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

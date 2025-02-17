@@ -34,8 +34,7 @@ func0000000000000048:
 	mov	w8, w2
 	add	x9, x0, x1
 	udiv	x8, x9, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 
@@ -43,8 +42,7 @@ func0000000000000108:
 	mov	w8, w2
 	add	x9, x0, x1
 	udiv	x8, x9, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

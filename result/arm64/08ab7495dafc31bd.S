@@ -47,10 +47,10 @@ func0000000000000302:
 	ret
 
 func0000000000000210:
-	lsr	x8, x0, #32
+	tst	x0, #0xffffffff00000000
+	cset	w8, ne
 	tst	w1, #0xffff8000
-	ccmp	x8, #0, #0, eq
-	cset	w0, ne
+	csinc	w0, w8, wzr, eq
 	ret
 
 func0000000000000282:

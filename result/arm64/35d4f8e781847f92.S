@@ -47,8 +47,7 @@ func00000000000001c2:
 	ret
 
 func0000000000000110:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w1, w2, #0, eq
 	cset	w0, lo
 	ret
@@ -78,8 +77,7 @@ func0000000000000056:
 	ret
 
 func0000000000000190:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w1, w2, #8, eq
 	cset	w0, lt
 	ret
@@ -179,8 +177,7 @@ func0000000000000242:
 	ret
 
 func0000000000000210:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	ccmp	w1, w2, #2, eq
 	cset	w0, hi
 	ret
@@ -217,10 +214,9 @@ func0000000000000312:
 	ret
 
 func000000000000020c:
-	lsr	x8, x2, #32
-	cmp	w0, w1
-	ccmp	x8, #0, #0, ge
-	cset	w0, ne
+	tst	x2, #0xffffffff00000000
+	ccmp	w0, w1, #8, eq
+	cset	w0, lt
 	ret
 
 func0000000000000054:

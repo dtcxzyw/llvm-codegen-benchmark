@@ -7,8 +7,7 @@ func0000000000000001:
 func0000000000000208:
 	sub	x8, x2, x0
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

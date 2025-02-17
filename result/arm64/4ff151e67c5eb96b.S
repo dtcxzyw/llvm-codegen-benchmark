@@ -1,7 +1,6 @@
 func0000000000000023:
-	lsr	x8, x2, #32
+	tst	x2, #0xffffffff00000000
 	mov	w9, #16
-	cmp	x8, #0
 	cset	w8, ne
 	tst	w1, #0x1
 	orr	w8, w0, w8, lsl #5

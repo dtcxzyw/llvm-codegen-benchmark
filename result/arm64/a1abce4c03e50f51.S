@@ -8,8 +8,7 @@ func000000000000002a:
 
 func0000000000000028:
 	fmov	x8, d0
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	ccmp	x0, #0, #0, ne
 	cset	w0, eq
 	ret

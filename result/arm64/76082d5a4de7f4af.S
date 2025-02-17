@@ -24,8 +24,7 @@ func0000000000000208:
 	mul	x8, x1, x8
 	add	x8, x8, w0, uxtb
 	sub	x8, x8, #48
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

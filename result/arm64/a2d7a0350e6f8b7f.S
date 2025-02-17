@@ -101,11 +101,11 @@ func0000000000000024:
 	ret
 
 func0000000000000118:
-	and	w8, w0, #0xff
-	lsr	x9, x1, #53
-	cmp	w8, #57
-	ccmp	x9, #0, #0, ls
-	cset	w0, ne
+	mov	w8, #57
+	and	w9, w0, #0xff
+	tst	x1, #0xffe0000000000000
+	ccmp	w9, w8, #2, eq
+	cset	w0, hi
 	ret
 
 func0000000000000184:

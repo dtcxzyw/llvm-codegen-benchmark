@@ -2,8 +2,7 @@ func0000000000000008:
 	mov	w8, #2147483647
 	cmp	x0, x8
 	csel	x8, x0, x8, lt
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 

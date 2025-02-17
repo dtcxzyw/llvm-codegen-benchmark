@@ -1,20 +1,18 @@
 func0000000000000210:
-	lsr	x8, x0, #60
-	cmp	x8, #0
+	tst	x0, #0xf000000000000000
 	cset	w0, ne
 	ret
 
 func000000000000020c:
-	lsr	x8, x0, #62
-	cmp	x8, #0
+	tst	x0, #0xc000000000000000
 	cset	w0, ne
 	ret
 
 func0000000000000230:
 	mov	x8, #2305843009213693951
-	lsr	x9, x0, #61
+	tst	x0, #0xe000000000000000
+	cset	w9, ne
 	bics	xzr, x8, x0
-	ccmp	x9, #0, #0, ne
-	cset	w0, ne
+	csinc	w0, w9, wzr, ne
 	ret
 

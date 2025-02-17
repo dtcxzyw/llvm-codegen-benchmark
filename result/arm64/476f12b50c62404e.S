@@ -22,8 +22,7 @@ func0000000000000058:
 
 func0000000000000210:
 	orr	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	mov	x8, #4398046510080
 	ccmp	x0, x8, #2, eq
 	cset	w0, hi
@@ -31,10 +30,9 @@ func0000000000000210:
 
 func000000000000020c:
 	orr	x8, x1, x2
-	cmp	x0, #0
-	lsr	x8, x8, #32
-	ccmp	x8, #0, #0, ge
-	cset	w0, ne
+	tst	x8, #0xffffffff00000000
+	ccmp	x0, #0, #8, eq
+	cset	w0, lt
 	ret
 
 func0000000000000318:

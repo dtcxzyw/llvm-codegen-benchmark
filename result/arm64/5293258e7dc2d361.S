@@ -8,11 +8,10 @@ func0000000000001c21:
 	ret
 
 func0000000000000c28:
-	lsr	x8, x0, #32
-	mov	w9, w2
-	add	x10, x1, #1
-	cmp	x8, #0
-	ccmp	x10, x9, #4, eq
+	mov	w8, w2
+	add	x9, x1, #1
+	tst	x0, #0xffffffff00000000
+	ccmp	x9, x8, #4, eq
 	cset	w0, eq
 	ret
 

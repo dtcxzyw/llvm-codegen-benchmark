@@ -97,16 +97,14 @@ func0000000000000018:
 
 func0000000000000078:
 	add	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w8, ne
 	and	w0, w0, w8
 	ret
 
 func0000000000000048:
 	add	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w8, ne
 	and	w0, w0, w8
 	ret

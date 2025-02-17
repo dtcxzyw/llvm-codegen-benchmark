@@ -160,10 +160,9 @@ func0000000000000108:
 	ret
 
 func0000000000000488:
-	lsr	x8, x0, #32
-	sub	x9, x1, #6
-	cmp	x8, #0
-	ccmn	x9, #5, #2, ne
+	sub	x8, x1, #6
+	tst	x0, #0xffffffff00000000
+	ccmn	x8, #5, #2, ne
 	cset	w0, lo
 	ret
 

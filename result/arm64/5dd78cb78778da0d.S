@@ -25,8 +25,7 @@ func0000000000000015:
 
 func000000000000000c:
 	eor	x8, x0, x1
-	lsr	x8, x8, #48
-	cmp	x8, #0
+	tst	x8, #0xffff000000000000
 	cset	w0, ne
 	ret
 

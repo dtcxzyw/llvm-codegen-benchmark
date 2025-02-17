@@ -10,8 +10,7 @@ func0000000000000188:
 	asr	x8, x1, #3
 	asr	x9, x0, #3
 	mul	x8, x9, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -27,8 +26,7 @@ func00000000000001a8:
 	asr	x8, x1, #32
 	asr	x9, x0, #32
 	smull	x8, w9, w8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -36,8 +34,7 @@ func00000000000000a8:
 	asr	x8, x1, #32
 	asr	x9, x0, #32
 	smull	x8, w9, w8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

@@ -13,8 +13,7 @@ func0000000000000144:
 
 func00000000000001f8:
 	madd	x8, x1, x2, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 
@@ -172,8 +171,7 @@ func00000000000001a4:
 
 func0000000000000148:
 	madd	x8, x1, x2, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

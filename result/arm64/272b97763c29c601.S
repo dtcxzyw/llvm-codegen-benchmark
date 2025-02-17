@@ -15,9 +15,8 @@ func0000000000000004:
 	ret
 
 func0000000000000020:
-	lsr	x8, x2, #32
+	tst	x2, #0xffffffff00000000
 	orr	w9, w0, w1
-	cmp	x8, #0
 	cset	w8, ne
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
@@ -32,9 +31,8 @@ func0000000000000010:
 	ret
 
 func0000000000000060:
-	lsr	x8, x2, #61
+	tst	x2, #0xe000000000000000
 	orr	w9, w0, w1
-	cmp	x8, #0
 	cset	w8, ne
 	orr	w8, w9, w8
 	and	w0, w8, #0x1

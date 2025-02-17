@@ -1,6 +1,5 @@
 func0000000000000100:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	tst	x1, #0xffffffff00000000
 	cinc	w8, w0, ne
 	add	w0, w8, #1
 	ret

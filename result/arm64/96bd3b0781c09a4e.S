@@ -59,15 +59,13 @@ func0000000000000050:
 	ret
 
 func0000000000000110:
-	lsr	x8, x0, #62
-	cmp	x8, #0
+	tst	x0, #0xc000000000000000
 	ccmp	x1, x2, #0, eq
 	cset	w0, lo
 	ret
 
 func0000000000000230:
-	lsr	x8, x0, #61
-	cmp	x8, #0
+	tst	x0, #0xe000000000000000
 	ccmp	x1, x2, #2, eq
 	cset	w0, hi
 	ret

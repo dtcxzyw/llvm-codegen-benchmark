@@ -98,9 +98,9 @@ func0000000000000310:
 
 func0000000000000202:
 	mvn	w8, w0
-	lsr	x9, x0, #32
 	tst	x8, #0xfffffffe
-	ccmp	x9, #0, #0, ne
-	cset	w0, ne
+	cset	w8, eq
+	tst	x0, #0xffffffff00000000
+	csinc	w0, w8, wzr, eq
 	ret
 

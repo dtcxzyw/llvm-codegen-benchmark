@@ -66,7 +66,7 @@ func00000000000000d8:
 	sub	x8, x8, x1
 	cmp	x8, x0
 	csel	x8, x8, x0, lo
-	lsr	x0, x8, #31
+	lsr	w0, w8, #31
 	ret
 
 func00000000000001c1:

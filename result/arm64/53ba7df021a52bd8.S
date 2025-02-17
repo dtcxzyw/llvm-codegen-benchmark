@@ -1,8 +1,7 @@
 func00000000000001a8:
 	asr	x8, x0, #3
 	add	x8, x8, x1, asr #3
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

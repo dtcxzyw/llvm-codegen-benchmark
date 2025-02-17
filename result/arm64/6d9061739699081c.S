@@ -2,8 +2,7 @@ func0000000000000008:
 	lsr	x8, x0, x1
 	and	x9, x2, #0x1
 	add	x8, x8, x9
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 

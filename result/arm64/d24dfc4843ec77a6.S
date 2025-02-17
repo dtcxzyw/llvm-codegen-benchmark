@@ -47,8 +47,7 @@ func000000000000014d:
 	ret
 
 func0000000000000083:
-	lsr	w8, w0, #24
-	cmp	w8, #0
+	tst	w0, #0xff000000
 	fccmp	s0, s1, #0, ne
 	cset	w0, lt
 	ret

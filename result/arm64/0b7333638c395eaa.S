@@ -18,8 +18,7 @@ func0000000000000001:
 
 func0000000000000028:
 	add	x8, x0, x0, lsl #1
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -70,8 +69,8 @@ func0000000000000011:
 
 func0000000000000038:
 	add	x8, x0, x0, lsl #1
-	ubfx	x8, x8, #57, #6
-	cmp	x8, #0
+	mov	x9, #-288230376151711744
+	tst	x9, x8, lsl #1
 	cset	w0, ne
 	ret
 

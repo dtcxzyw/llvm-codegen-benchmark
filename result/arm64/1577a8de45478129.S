@@ -1,9 +1,9 @@
 func0000000000000028:
 	fmov	x8, d0
-	lsr	x9, x8, #53
+	tst	x8, #0xffe0000000000000
+	cset	w9, ne
 	tst	x8, #0xfffffffffffff
-	ccmp	x9, #0, #4, eq
-	cset	w0, ne
+	csel	w0, wzr, w9, ne
 	ret
 
 func0000000000000184:

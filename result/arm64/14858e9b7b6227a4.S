@@ -31,9 +31,8 @@ func0000000000000008:
 	ret
 
 func0000000000000010:
-	lsr	x8, x2, #62
+	tst	x2, #0xc000000000000000
 	orr	w9, w0, w1
-	cmp	x8, #0
 	cset	w8, ne
 	orr	w8, w9, w8
 	and	w0, w8, #0x1

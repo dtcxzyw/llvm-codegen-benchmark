@@ -19,9 +19,8 @@ func0000000000000006:
 	ret
 
 func0000000000000063:
-	lsr	x8, x2, #53
+	tst	x2, #0xffe0000000000000
 	mov	x9, #-9223372036854775808
-	cmp	x8, #0
 	cset	w8, ne
 	tst	w1, #0x1
 	csel	x9, x9, xzr, ne

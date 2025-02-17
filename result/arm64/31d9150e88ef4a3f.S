@@ -29,9 +29,8 @@ func0000000000000608:
 
 func0000000000000610:
 	sub	w8, w0, #1
-	and	w8, w0, w8
-	orr	w8, w8, w0, lsr #16
-	cmp	w8, #0
+	orr	w8, w8, #0xffff0000
+	tst	w0, w8
 	cset	w0, ne
 	ret
 

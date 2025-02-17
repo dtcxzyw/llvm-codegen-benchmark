@@ -13,8 +13,7 @@ func0000000000000001:
 func0000000000000028:
 	cmp	x0, x1
 	csel	x8, x0, x1, hi
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -27,8 +26,7 @@ func0000000000000021:
 func0000000000000008:
 	cmp	x0, x1
 	csel	x8, x0, x1, hi
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -87,8 +85,7 @@ func000000000000000c:
 func0000000000000038:
 	cmp	x0, x1
 	csel	x8, x0, x1, hi
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 

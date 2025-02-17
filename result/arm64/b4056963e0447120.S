@@ -29,8 +29,7 @@ func00000000000002a4:
 func00000000000002a8:
 	sub	x8, x0, w1, uxtw
 	sub	x8, x8, #5
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

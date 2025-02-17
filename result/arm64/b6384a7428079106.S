@@ -56,10 +56,9 @@ func0000000000000d8c:
 
 func0000000000000101:
 	add	x8, x2, #1
-	lsr	x9, x1, #32
-	cmp	x0, x8
-	ccmp	x9, #0, #0, ne
-	cset	w0, ne
+	tst	x1, #0xffffffff00000000
+	ccmp	x0, x8, #4, eq
+	cset	w0, eq
 	ret
 
 func0000000000000d81:

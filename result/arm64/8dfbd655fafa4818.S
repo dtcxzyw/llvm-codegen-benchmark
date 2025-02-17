@@ -12,10 +12,9 @@ func0000000000000042:
 
 func0000000000000210:
 	mov	w8, #-2
-	lsr	x9, x1, #32
-	cmp	x0, x8
-	ccmp	x9, #0, #0, ls
-	cset	w0, ne
+	tst	x1, #0xffffffff00000000
+	ccmp	x0, x8, #2, eq
+	cset	w0, hi
 	ret
 
 func0000000000000202:

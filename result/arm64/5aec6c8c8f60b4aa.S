@@ -21,16 +21,14 @@ func0000000000000406:
 func0000000000000908:
 	cmp	x1, x2
 	cinc	x8, x0, hs
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 
 func0000000000000948:
 	cmp	x1, x2
 	cinc	x8, x0, hs
-	lsr	x8, x8, #53
-	cmp	x8, #0
+	tst	x8, #0xffe0000000000000
 	cset	w0, ne
 	ret
 
@@ -60,8 +58,7 @@ func0000000000000404:
 func0000000000000408:
 	cmp	x1, x2
 	cinc	x8, x0, lo
-	lsr	x8, x8, #49
-	cmp	x8, #0
+	tst	x8, #0xfffe000000000000
 	cset	w0, ne
 	ret
 
@@ -97,8 +94,7 @@ func0000000000000161:
 func0000000000000808:
 	cmp	x1, x2
 	cinc	x8, x0, hi
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

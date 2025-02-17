@@ -84,8 +84,8 @@ func0000000000000014:
 
 func0000000000000008:
 	mul	x8, x1, x0
-	ubfx	x8, x8, #56, #3
-	cmp	x8, #0
+	mov	x9, #-2305843009213693952
+	tst	x9, x8, lsl #5
 	cset	w0, ne
 	ret
 

@@ -10,8 +10,7 @@ func0000000000000028:
 	asr	x8, x1, #4
 	udiv	x9, x0, x8
 	msub	x8, x9, x8, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

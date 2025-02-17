@@ -1,8 +1,7 @@
 func0000000000000088:
 	lsr	x8, x1, #2
 	mul	x8, x8, x0
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -23,16 +22,14 @@ func000000000000008c:
 func0000000000000008:
 	lsr	x8, x1, #1
 	mul	x8, x0, x8
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 
 func0000000000000048:
 	lsr	x8, x1, #32
 	mul	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 
@@ -67,8 +64,7 @@ func0000000000000021:
 func0000000000000028:
 	lsr	x8, x1, #2
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

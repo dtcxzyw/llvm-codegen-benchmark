@@ -5,10 +5,9 @@ func000000000000030f:
 	ret
 
 func000000000000060f:
-	lsr	x8, x2, #48
-	add	x9, x0, x1, lsr #48
-	cmp	x8, #0
-	cinc	x0, x9, ne
+	add	x8, x0, x1, lsr #48
+	tst	x2, #0xffff000000000000
+	cinc	x0, x8, ne
 	ret
 
 func0000000000000300:
@@ -18,9 +17,8 @@ func0000000000000300:
 	ret
 
 func0000000000000607:
-	lsr	x8, x2, #54
-	add	x9, x0, x1, lsr #63
-	cmp	x8, #0
-	cinc	x0, x9, ne
+	add	x8, x0, x1, lsr #63
+	tst	x2, #0xffc0000000000000
+	cinc	x0, x8, ne
 	ret
 

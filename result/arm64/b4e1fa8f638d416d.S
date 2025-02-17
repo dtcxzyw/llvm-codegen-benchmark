@@ -1,7 +1,6 @@
 func0000000000000f0c:
-	and	w8, w0, #0xffff
-	add	w9, w1, w2
-	orr	w8, w8, w9, lsr #16
+	add	w8, w1, w2
+	bfxil	w8, w0, #0, #16
 	cmp	w8, #0
 	cset	w0, ne
 	ret

@@ -23,9 +23,8 @@ func00000000000000c7:
 	ret
 
 func0000000000000183:
-	lsr	x8, x1, #48
-	lsr	x9, x0, #48
-	cmp	x8, #0
-	cinc	x0, x9, ne
+	lsr	x8, x0, #48
+	tst	x1, #0xffff000000000000
+	cinc	x0, x8, ne
 	ret
 

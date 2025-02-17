@@ -46,8 +46,7 @@ func0000000000000788:
 	add	x8, x2, x1
 	add	x8, x8, x0
 	add	x8, x8, #76
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 
@@ -157,8 +156,7 @@ func00000000000002a8:
 	add	x8, x2, x1
 	add	x8, x8, x0
 	add	x8, x8, #16
-	lsr	x8, x8, #58
-	cmp	x8, #0
+	tst	x8, #0xfc00000000000000
 	cset	w0, ne
 	ret
 
@@ -266,8 +264,7 @@ func0000000000000208:
 	add	x8, x2, x1
 	add	x8, x8, x0
 	add	x8, x8, #2
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

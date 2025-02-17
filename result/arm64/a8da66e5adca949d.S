@@ -9,8 +9,7 @@ func00000000000000a1:
 func0000000000000088:
 	sub	x8, x1, x2
 	add	x8, x0, x8, asr #2
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	tst	x8, #0xc000000000000000
 	cset	w0, ne
 	ret
 
@@ -23,8 +22,7 @@ func0000000000000081:
 func00000000000000a8:
 	sub	x8, x1, x2
 	add	x8, x0, x8, asr #3
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 
@@ -99,8 +97,7 @@ func00000000000000b1:
 func00000000000000b8:
 	sub	x8, x1, x2
 	add	x8, x0, x8, asr #3
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 

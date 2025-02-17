@@ -48,9 +48,9 @@ func0000000000000014:
 
 func0000000000000008:
 	sxtw	x8, w1
+	mov	x9, #-1152921504606846976
 	mul	x8, x0, x8
-	ubfx	x8, x8, #57, #4
-	cmp	x8, #0
+	tst	x9, x8, lsl #3
 	cset	w0, ne
 	ret
 

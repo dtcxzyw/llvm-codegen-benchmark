@@ -17,8 +17,7 @@ func0000000000000008:
 	movk	x8, #65527, lsl #48
 	and	x8, x1, x8
 	eor	x8, x8, x0
-	lsr	x8, x8, #33
-	cmp	x8, #0
+	tst	x8, #0xfffffffe00000000
 	cset	w0, ne
 	ret
 

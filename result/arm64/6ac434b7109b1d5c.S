@@ -42,8 +42,7 @@ func00000000000000a8:
 	add	x8, x1, #1
 	cmp	x0, x8
 	csinc	x8, x0, x1, hi
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -82,8 +81,7 @@ func0000000000000008:
 	add	x8, x1, #2
 	cmp	x0, x8
 	csel	x8, x0, x8, hi
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -91,8 +89,7 @@ func0000000000000088:
 	add	x8, x1, #1
 	cmp	x0, x8
 	csinc	x8, x0, x1, hi
-	lsr	x8, x8, #58
-	cmp	x8, #0
+	tst	x8, #0xfc00000000000000
 	cset	w0, ne
 	ret
 
@@ -123,8 +120,7 @@ func0000000000000048:
 	add	x8, x1, #1
 	cmp	x0, x8
 	csinc	x8, x0, x1, hi
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 
@@ -132,8 +128,7 @@ func0000000000000038:
 	add	x8, x1, #1
 	cmp	x8, x0
 	csinc	x8, x0, x1, ls
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 
@@ -141,8 +136,7 @@ func0000000000000028:
 	add	x8, x1, #1
 	cmp	x8, x0
 	csinc	x8, x0, x1, ls
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0xf800000000000000
 	cset	w0, ne
 	ret
 

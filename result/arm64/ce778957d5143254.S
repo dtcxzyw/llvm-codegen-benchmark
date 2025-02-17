@@ -53,8 +53,7 @@ func000000000000002c:
 func0000000000000028:
 	and	x8, x1, #0x1
 	sub	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

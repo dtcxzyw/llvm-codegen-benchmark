@@ -23,8 +23,7 @@ func0000000000000008:
 	ret
 
 func0000000000000010:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	cset	w8, ne
 	orr	w8, w8, w2
 	tst	w8, #0x1

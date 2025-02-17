@@ -70,8 +70,7 @@ func00000000000000a3:
 	ret
 
 func00000000000000c3:
-	lsr	x8, x1, #48
-	cmp	x8, #0
+	tst	x1, #0xffff000000000000
 	cinc	x0, x0, ne
 	ret
 
@@ -101,8 +100,7 @@ func0000000000000050:
 	ret
 
 func00000000000000c1:
-	lsr	x8, x1, #54
-	cmp	x8, #0
+	tst	x1, #0xffc0000000000000
 	cinc	x0, x0, ne
 	ret
 

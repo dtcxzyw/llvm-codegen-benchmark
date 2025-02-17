@@ -98,10 +98,9 @@ func0000000000000035:
 	ret
 
 func000000000000010a:
-	lsr	x8, x2, #44
-	cmp	w0, w1
-	ccmp	x8, #0, #0, le
-	cset	w0, ne
+	tst	x2, #0xfffff00000000000
+	ccmp	w0, w1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000025:

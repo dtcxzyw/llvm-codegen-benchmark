@@ -1,7 +1,6 @@
 func0000000000000038:
 	smull	x8, w0, w0
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0x6000000000000000
 	cset	w0, ne
 	ret
 
@@ -19,8 +18,7 @@ func0000000000000021:
 
 func0000000000000078:
 	smull	x8, w0, w0
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	tst	x8, #0x7800000000000000
 	cset	w0, ne
 	ret
 

@@ -193,8 +193,7 @@ func0000000000000294:
 func0000000000000148:
 	cmp	x2, #10
 	csel	x8, x0, x1, gt
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	tst	x8, #0xe000000000000000
 	cset	w0, ne
 	ret
 

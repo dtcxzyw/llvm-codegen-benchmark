@@ -1,7 +1,6 @@
 func0000000000000010:
-	lsr	x9, x0, #58
 	mov	x8, #-65
-	cmp	x9, #0
+	tst	x0, #0xfc00000000000000
 	ccmp	x1, x8, #2, eq
 	cset	w0, hi
 	ret

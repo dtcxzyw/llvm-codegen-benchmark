@@ -1,7 +1,6 @@
 func0000000000000050:
 	sub	x8, x0, #1
-	lsr	x9, x8, #32
-	cmp	x9, #0
+	tst	x8, #0xffffffff00000000
 	ccmn	w8, #1, #4, eq
 	cset	w0, eq
 	ret
@@ -26,9 +25,9 @@ func0000000000000048:
 func0000000000000a02:
 	sub	x8, x0, #2
 	mvn	w9, w8
-	lsr	x8, x8, #32
 	tst	x9, #0xfffffffe
-	ccmp	x8, #0, #0, ne
-	cset	w0, ne
+	cset	w9, eq
+	tst	x8, #0xffffffff00000000
+	csinc	w0, w9, wzr, eq
 	ret
 

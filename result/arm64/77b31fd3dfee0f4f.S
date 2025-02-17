@@ -13,9 +13,8 @@ func0000000000000021:
 
 func000000000000010c:
 	add	x8, x1, x2
-	cmp	w0, #0
-	lsr	x8, x8, #32
-	ccmp	x8, #0, #0, eq
+	tst	x8, #0xffffffff00000000
+	ccmp	w0, #0, #0, eq
 	cset	w0, ne
 	ret
 

@@ -1,7 +1,6 @@
 func00000000000001e1:
 	add	x8, x1, x2
-	lsr	x8, x8, #54
-	cmp	x8, #0
+	tst	x8, #0xffc0000000000000
 	cset	w8, ne
 	sub	x0, x0, x8
 	ret

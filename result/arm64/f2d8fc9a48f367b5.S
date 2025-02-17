@@ -1,9 +1,8 @@
 func0000000000000010:
-	lsr	x9, x1, #32
 	mov	x8, x0
-	mov	x1, x8
-	cmp	x9, #0
+	tst	x1, #0xffffffff00000000
 	cset	w0, ne
+	mov	x1, x8
 	ret
 
 func0000000000000002:

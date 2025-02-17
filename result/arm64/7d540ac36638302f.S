@@ -4,8 +4,7 @@ func0000000000000018:
 	ret
 
 func0000000000000030:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	tst	x0, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

@@ -2,8 +2,7 @@ func0000000000000048:
 	asr	x8, x1, #3
 	cmp	x0, x8
 	csel	x8, x0, x8, hi
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

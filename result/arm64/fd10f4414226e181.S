@@ -74,8 +74,7 @@ func000000000000038a:
 func0000000000000188:
 	mov	w8, #112
 	umaddl	x8, w1, w8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	tst	x8, #0xffffffff00000000
 	cset	w0, ne
 	ret
 

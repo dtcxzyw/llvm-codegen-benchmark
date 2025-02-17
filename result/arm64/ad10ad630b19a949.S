@@ -22,10 +22,10 @@ func0000000000000181:
 	ret
 
 func0000000000000188:
-	lsr	x8, x1, #32
-	tst	w2, #0xff
-	ccmp	x8, #0, #4, ne
+	tst	x1, #0xffffffff00000000
 	cset	w8, ne
+	tst	w2, #0xff
+	csel	w8, wzr, w8, eq
 	and	w0, w0, w8
 	ret
 

@@ -9,8 +9,7 @@ func00000000000002a1:
 func0000000000000288:
 	add	x8, x1, x2, asr #3
 	add	x8, x8, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	tst	x8, #0xf000000000000000
 	cset	w0, ne
 	ret
 

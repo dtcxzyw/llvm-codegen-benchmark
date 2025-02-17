@@ -1,7 +1,6 @@
 func0000000000000008:
-	lsr	x9, x1, #32
 	mov	w8, #8
-	cmp	x9, #0
+	tst	x1, #0xffffffff00000000
 	csel	w0, w8, w0, ne
 	ret
 

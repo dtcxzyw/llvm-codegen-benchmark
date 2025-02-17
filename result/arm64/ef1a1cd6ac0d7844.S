@@ -5,9 +5,9 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
-	lsr	x8, x0, #32
+	tst	x0, #0xffffffff00000000
+	cset	w8, ne
 	tst	x1, x0
-	ccmp	x8, #0, #4, eq
-	cset	w0, ne
+	csel	w0, wzr, w8, ne
 	ret
 
