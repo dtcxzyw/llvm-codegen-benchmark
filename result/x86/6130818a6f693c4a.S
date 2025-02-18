@@ -1,14 +1,14 @@
 func0000000000000004:
-	shlq	$52, %rdi
-	movabsq	$4607182418800017408, %rax
-	subq	%rdi, %rax
+	movzbl	%dil, %eax
+	xorq	$1023, %rax
+	shlq	$52, %rax
 	vmovq	%rax, %xmm0
 	retq
 
 func0000000000000007:
-	shlq	$52, %rdi
-	movabsq	$4607182418800017408, %rax
-	subq	%rdi, %rax
+	movzbl	%dil, %eax
+	xorq	$1023, %rax
+	shlq	$52, %rax
 	vmovq	%rax, %xmm0
 	retq
 

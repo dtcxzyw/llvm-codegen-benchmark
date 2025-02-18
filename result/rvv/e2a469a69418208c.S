@@ -14,10 +14,10 @@ func0000000000000002:
 .LCPI1_0:
 	.quad	0x3ff921fb54442d18
 func0000000000000008:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
+	lui	a0, %hi(.LCPI1_0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vfrsub.vf	v8, v8, fa5
 	vfclass.v	v8, v8
 	li	a0, 129

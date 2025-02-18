@@ -1,13 +1,13 @@
 func0000000000000018:
-	negw	a2, a2
 	remuw	a0, a0, a1
+	negw	a1, a2
 	zext.w	a0, a0
-	sll	a0, a0, a2
+	sll	a0, a0, a1
 	ret
 
 func000000000000001c:
-	negw	a2, a2
 	remuw	a0, a0, a1
-	sll	a0, a0, a2
+	negw	a1, a2
+	sll	a0, a0, a1
 	ret
 

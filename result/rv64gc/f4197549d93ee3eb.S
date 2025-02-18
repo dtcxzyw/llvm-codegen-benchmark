@@ -12,8 +12,8 @@ func000000000000000a:
 	fadd.s	fa5, fa1, fa2
 	lui	a0, 784384
 	fmv.w.x	fa4, a0
-	lui	a0, 260096
 	fdiv.s	fa5, fa4, fa5
+	lui	a0, 260096
 	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
@@ -34,8 +34,8 @@ func0000000000000005:
 	fadd.s	fa5, fa1, fa2
 	lui	a0, 784384
 	fmv.w.x	fa4, a0
-	lui	a0, 260096
 	fdiv.s	fa5, fa4, fa5
+	lui	a0, 260096
 	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4

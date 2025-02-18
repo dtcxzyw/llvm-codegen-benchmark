@@ -1,6 +1,6 @@
 func0000000000000009:
-	addi	a2, a2, 4
 	divw	a0, a0, a1
+	addi	a2, a2, 4
 	mulw	a0, a0, a2
 	ret
 

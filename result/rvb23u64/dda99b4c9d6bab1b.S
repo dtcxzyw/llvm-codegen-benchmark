@@ -59,11 +59,11 @@ func000000000000001e:
 .LCPI8_0:
 	.quad	0x3fa999999999999a
 func000000000000000b:
-	lui	a1, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a1)
-	fcvt.d.lu	fa4, a0
-	fdiv.d	fa4, fa0, fa4
-	flt.d	a0, fa5, fa4
+	fcvt.d.lu	fa5, a0
+	fdiv.d	fa5, fa0, fa5
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa4, %lo(.LCPI8_0)(a0)
+	flt.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

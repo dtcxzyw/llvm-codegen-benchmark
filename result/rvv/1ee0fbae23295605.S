@@ -19,11 +19,11 @@ func0000000000000019:
 .LCPI2_0:
 	.word	0x179abe15
 func000000000000001a:
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfrdiv.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	fli.s	fa4, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfrdiv.vf	v8, v8, fa4
 	vfabs.v	v8, v8
 	vmfle.vf	v0, v8, fa5
 	ret
@@ -31,11 +31,11 @@ func000000000000001a:
 .LCPI3_0:
 	.word	0x6753c21c
 func000000000000001c:
+	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfrdiv.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
-	fli.s	fa4, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfrdiv.vf	v8, v8, fa4
 	vfabs.v	v8, v8
 	vmfge.vf	v0, v8, fa5
 	ret

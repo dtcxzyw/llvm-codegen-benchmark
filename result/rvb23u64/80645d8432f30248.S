@@ -1,6 +1,6 @@
 func0000000000000000:
-	fneg.s	fa5, fa2
-	fdiv.s	fa4, fa0, fa1
-	fmul.s	fa0, fa4, fa5
+	fdiv.s	fa5, fa0, fa1
+	fneg.s	fa4, fa2
+	fmul.s	fa0, fa5, fa4
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000009:
-	addi	a2, a2, 4
 	divw	a0, a0, a1
+	addi	a2, a2, 4
 	mulw	a0, a0, a2
 	ret
 
@@ -11,8 +11,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	addi	a2, a2, 1
 	divw	a0, a0, a1
+	addi	a2, a2, 1
 	mulw	a0, a0, a2
 	ret
 
@@ -29,14 +29,14 @@ func000000000000000d:
 	ret
 
 func0000000000000019:
-	addi	a2, a2, 1
 	divw	a0, a0, a1
+	addi	a2, a2, 1
 	mulw	a0, a0, a2
 	ret
 
 func0000000000000018:
-	addi	a2, a2, 1
 	divw	a0, a0, a1
+	addi	a2, a2, 1
 	mulw	a0, a0, a2
 	ret
 

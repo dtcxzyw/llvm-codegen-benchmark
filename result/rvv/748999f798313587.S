@@ -1,8 +1,8 @@
 func000000000000012a:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 2
 	vdiv.vv	v8, v8, v10
-	vmul.vv	v8, v8, v12
+	vadd.vi	v10, v12, 2
+	vmul.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 0
 	ret
 

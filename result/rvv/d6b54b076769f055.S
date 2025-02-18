@@ -1,9 +1,9 @@
 func0000000000000002:
-	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	vmflt.vf	v0, v16, fa5
 	vfdiv.vv	v12, v8, v16
+	fli.s	fa5, 1.0
+	vmflt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 

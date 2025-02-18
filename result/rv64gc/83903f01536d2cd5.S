@@ -1,12 +1,12 @@
 func00000000000000a6:
 	lui	a0, 268288
-	lui	a1, 253952
 	fmv.w.x	fa5, a0
-	lui	a0, 266240
 	fdiv.s	fa5, fa5, fa1
-	fmv.w.x	fa4, a1
+	lui	a0, 253952
+	lui	a1, 266240
+	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa0, fa5
-	fmv.w.x	fa3, a0
+	fmv.w.x	fa3, a1
 	fle.s	a0, fa4, fa5
 	fle.s	a1, fa5, fa3
 	and	a0, a0, a1

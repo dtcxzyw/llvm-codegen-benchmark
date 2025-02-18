@@ -12,10 +12,10 @@ func0000000000000006:
 
 func0000000000000008:
 	sub	a1, a1, a2
-	lui	a2, 262144
 	divu	a0, a1, a0
-	addiw	a2, a2, -2
-	sltu	a0, a2, a0
+	lui	a1, 262144
+	addiw	a1, a1, -2
+	sltu	a0, a1, a0
 	ret
 
 func000000000000004a:

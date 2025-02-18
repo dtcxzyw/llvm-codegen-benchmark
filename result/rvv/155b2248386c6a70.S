@@ -38,11 +38,11 @@ func0000000000000004:
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
-	lui	a0, %hi(.LCPI2_2)
-	fld	fa3, %lo(.LCPI2_2)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
 	vfdiv.vf	v8, v8, fa4
-	vmfgt.vf	v0, v8, fa3
+	lui	a0, %hi(.LCPI2_2)
+	fld	fa5, %lo(.LCPI2_2)(a0)
+	vmfgt.vf	v0, v8, fa5
 	ret
 

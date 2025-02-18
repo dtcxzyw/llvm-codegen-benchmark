@@ -25,10 +25,10 @@ func0000000000000002:
 	.quad	0x3fb999999999999a
 func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
-	lui	a1, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	fld	fa4, %lo(.LCPI1_1)(a1)
 	fdiv.d	fa5, fa0, fa5
+	lui	a0, %hi(.LCPI1_1)
+	fld	fa4, %lo(.LCPI1_1)(a0)
 	flt.d	a0, fa4, fa5
 	slli	a0, a0, 3
 	lui	a1, %hi(.LCPI1_2)

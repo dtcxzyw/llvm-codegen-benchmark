@@ -1,7 +1,7 @@
 func0000000000000002:
 	fcvt.s.d	fa5, fa1
-	lui	a0, 263168
 	fdiv.s	fa5, fa0, fa5
+	lui	a0, 263168
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -23,8 +23,8 @@ func000000000000000d:
 
 func000000000000000b:
 	fcvt.s.d	fa5, fa1
-	lui	a0, 260096
 	fdiv.s	fa5, fa0, fa5
+	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1

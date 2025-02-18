@@ -19,10 +19,10 @@ func0000000000000250:
 func0000000000000294:
 	lui	a0, 524288
 	addi	a1, a0, -1
-	addi	a0, a0, -8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v14, a1
 	vdivu.vv	v12, v14, v12
+	addi	a0, a0, -8
 	vmslt.vv	v14, v12, v8
 	vmsgt.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8

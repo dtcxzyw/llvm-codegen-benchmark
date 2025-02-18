@@ -1,9 +1,9 @@
 func000000000000014a:
-	sext.w	a2, a0
-	divw	a0, a1, a0
-	sgtz	a0, a0
-	slti	a1, a2, 2
-	xori	a1, a1, 1
+	divw	a1, a1, a0
+	sext.w	a0, a0
+	slti	a0, a0, 2
+	sgtz	a1, a1
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

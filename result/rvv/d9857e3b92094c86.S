@@ -48,8 +48,8 @@ func0000000000000005:
 	flw	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
-	lui	a0, 286124
 	vfdiv.vf	v8, v8, fa4
+	lui	a0, 286124
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

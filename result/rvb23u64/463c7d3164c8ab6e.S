@@ -9,8 +9,8 @@ func0000000000000007:
 
 func0000000000000004:
 	fneg.s	fa5, fa1
-	lui	a1, 219648
 	fdiv.s	fa5, fa5, fa0
+	lui	a1, 219648
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	and	a0, a0, a1

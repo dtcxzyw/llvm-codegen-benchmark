@@ -3,17 +3,17 @@ func0000000000000001:
 	lui	a1, 349525
 	lui	a2, 209715
 	lui	a3, 61681
-	srli	a4, a0, 1
 	addiw	a1, a1, 1365
 	addiw	a2, a2, 819
 	addiw	a3, a3, -241
-	or	a0, a0, a4
 	slli	a4, a1, 32
 	add	a1, a1, a4
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4
+	srli	a4, a0, 1
+	or	a0, a0, a4
 	srli	a4, a0, 2
 	or	a0, a0, a4
 	srli	a4, a0, 4

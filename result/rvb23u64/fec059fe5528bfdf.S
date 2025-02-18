@@ -75,9 +75,9 @@ func0000000000000083:
 .LCPI7_0:
 	.word	0x3f7fffff
 func0000000000000048:
+	fdiv.s	fa4, fa0, fa1
 	lui	a0, %hi(.LCPI7_0)
 	flw	fa5, %lo(.LCPI7_0)(a0)
-	fdiv.s	fa4, fa0, fa1
 	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB7_2
 	fmv.s	fa5, fa4

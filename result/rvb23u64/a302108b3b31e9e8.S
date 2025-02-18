@@ -2,8 +2,8 @@ func00000000000000a6:
 	fli.s	fa5, 2.0
 	fneg.s	fa5, fa5
 	fmul.s	fa5, fa1, fa5
-	fmv.w.x	fa4, zero
 	fdiv.s	fa5, fa0, fa5
+	fmv.w.x	fa4, zero
 	fli.s	fa3, 1.0
 	fle.s	a0, fa4, fa5
 	fle.s	a1, fa5, fa3

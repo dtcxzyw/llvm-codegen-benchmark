@@ -4,21 +4,19 @@ func000000000000000a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a1
 	li	a1, 5
+	vdivu.vv	v10, v11, v10
 	bseti	a1, a1, 33
+	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmulhu.vx	v12, v8, a1
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vdivu.vv	v10, v11, v10
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vv	v14, v8, v12
-	vzext.vf2	v16, v10
-	vsrl.vi	v10, v14, 1
-	vadd.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 30
-	addiw	a0, a0, -1
-	vmul.vx	v10, v10, a0
-	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
-	vdivu.vv	v8, v8, v16
+	vsrl.vi	v14, v14, 1
+	vadd.vv	v12, v14, v12
+	vsrl.vi	v12, v12, 30
+	vmul.vx	v12, v12, a0
+	vnot.v	v12, v12
+	vzext.vf2	v14, v10
+	vadd.vv	v8, v12, v8
+	vdivu.vv	v8, v8, v14
 	ret
 

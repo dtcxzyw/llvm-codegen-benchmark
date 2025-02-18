@@ -31,11 +31,11 @@ func0000000000000003:
 .LCPI4_0:
 	.word	0x7f7fffff
 func0000000000000002:
+	fdiv.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	fdiv.s	fa4, fa1, fa2
-	fadd.s	fa4, fa4, fa0
-	flt.s	a0, fa4, fa5
+	flw	fa4, %lo(.LCPI4_0)(a0)
+	fadd.s	fa5, fa5, fa0
+	flt.s	a0, fa5, fa4
 	ret
 
 func000000000000000b:

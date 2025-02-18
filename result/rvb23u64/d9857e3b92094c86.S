@@ -44,8 +44,8 @@ func0000000000000005:
 	lui	a0, %hi(.LCPI3_1)
 	flw	fa4, %lo(.LCPI3_1)(a0)
 	fmul.s	fa5, fa0, fa5
-	lui	a0, 286124
 	fdiv.s	fa5, fa5, fa4
+	lui	a0, 286124
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1

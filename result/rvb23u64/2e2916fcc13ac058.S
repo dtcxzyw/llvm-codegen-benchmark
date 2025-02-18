@@ -1,7 +1,7 @@
 func0000000000000004:
 	fli.s	fa5, 1.0
-	lui	a0, 278880
 	fdiv.s	fa4, fa5, fa1
+	lui	a0, 278880
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB0_2
