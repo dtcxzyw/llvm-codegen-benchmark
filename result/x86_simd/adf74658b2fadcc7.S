@@ -52,38 +52,38 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 .LCPI2_1:
-	.byte	32
-	.byte	1
-	.byte	2
-	.byte	3
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	7
-	.byte	40
-	.byte	9
-	.byte	10
-	.byte	11
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	15
-	.byte	48
-	.byte	17
-	.byte	18
-	.byte	19
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	23
-	.byte	56
-	.byte	25
-	.byte	26
-	.byte	27
-	.byte	28
-	.byte	29
-	.byte	30
-	.byte	31
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI2_2:
 	.byte	0
 	.byte	255
@@ -93,12 +93,19 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+.LCPI2_3:
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func000000000000000f:
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$248, .LCPI2_2(%rip){1to4}, %ymm1, %ymm2
-	vmovdqa	.LCPI2_1(%rip), %ymm1
-	vpermi2b	%ymm0, %ymm2, %ymm1
-	vmovdqa	%ymm1, %ymm0
+	vpternlogq	$236, .LCPI2_3(%rip){1to4}, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:

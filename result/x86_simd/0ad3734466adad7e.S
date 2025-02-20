@@ -1,41 +1,30 @@
 .LCPI0_0:
-	.byte	32
-	.byte	33
-	.byte	34
-	.byte	1
-	.byte	36
-	.byte	37
-	.byte	38
-	.byte	3
-	.byte	40
-	.byte	41
-	.byte	42
-	.byte	5
-	.byte	44
-	.byte	45
-	.byte	46
-	.byte	7
-	.byte	48
-	.byte	49
-	.byte	50
-	.byte	9
-	.byte	52
-	.byte	53
-	.byte	54
-	.byte	11
-	.byte	56
-	.byte	57
-	.byte	58
-	.byte	13
-	.byte	60
-	.byte	61
-	.byte	62
-	.byte	15
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+.LCPI0_1:
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
 func0000000000000004:
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa	.LCPI0_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpslld	$16, %ymm1, %ymm1
+	vpor	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -58,43 +47,32 @@ func000000000000000f:
 	retq
 
 .LCPI2_0:
-	.byte	32
-	.byte	33
-	.byte	34
-	.byte	1
-	.byte	36
-	.byte	37
-	.byte	38
-	.byte	3
-	.byte	40
-	.byte	41
-	.byte	42
-	.byte	5
-	.byte	44
-	.byte	45
-	.byte	46
-	.byte	7
-	.byte	48
-	.byte	49
-	.byte	50
-	.byte	9
-	.byte	52
-	.byte	53
-	.byte	54
-	.byte	11
-	.byte	56
-	.byte	57
-	.byte	58
-	.byte	13
-	.byte	60
-	.byte	61
-	.byte	62
-	.byte	15
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+.LCPI2_1:
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
 func0000000000000005:
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa	.LCPI2_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpor	%ymm0, %ymm3, %ymm0
+	vpandd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpslld	$16, %ymm1, %ymm1
+	vpor	%ymm0, %ymm1, %ymm0
 	retq
 
 func000000000000000d:

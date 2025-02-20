@@ -6,28 +6,10 @@ func000000000000000f:
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 
-.LCPI1_0:
-	.short	0
-	.short	8
-	.short	2
-	.short	10
-	.short	4
-	.short	12
-	.short	6
-	.short	14
-.LCPI1_1:
-	.byte	0
-	.byte	8
-	.byte	2
-	.byte	10
-	.byte	4
-	.byte	12
-	.byte	6
-	.byte	14
 func0000000000000002:
-	vpmovsxbw	.LCPI1_1(%rip), %xmm2
-	vpermi2w	%xmm0, %xmm1, %xmm2
-	vpmovzxdq	%xmm2, %ymm0
+	vpslld	$16, %xmm0, %xmm0
+	vpblendw	$170, %xmm0, %xmm1, %xmm0
+	vpmovzxdq	%xmm0, %ymm0
 	retq
 
 .LCPI2_0:

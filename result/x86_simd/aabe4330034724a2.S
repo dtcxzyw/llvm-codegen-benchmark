@@ -19,45 +19,11 @@ func0000000000000005:
 	retq
 
 .LCPI2_0:
-	.short	16
-	.short	0
-	.short	1
-	.short	2
-	.short	20
-	.short	4
-	.short	5
-	.short	6
-	.short	24
-	.short	8
-	.short	9
-	.short	10
-	.short	28
-	.short	12
-	.short	13
-	.short	14
-.LCPI2_1:
 	.quad	1711276032
-.LCPI2_2:
-	.byte	16
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	20
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	24
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	28
-	.byte	12
-	.byte	13
-	.byte	14
 func000000000000000c:
-	vpmovsxbw	.LCPI2_2(%rip), %ymm3
-	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpternlogq	$254, .LCPI2_1(%rip){1to4}, %ymm3, %ymm0
+	vpsllq	$16, %ymm1, %ymm1
+	vpblendw	$17, %ymm2, %ymm1, %ymm1
+	vpternlogq	$254, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

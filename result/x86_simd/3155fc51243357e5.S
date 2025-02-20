@@ -19,43 +19,26 @@ func0000000000000008:
 	retq
 
 .LCPI1_0:
+	.byte	255
 	.byte	0
-	.byte	33
-	.byte	34
-	.byte	35
-	.byte	36
-	.byte	37
-	.byte	38
-	.byte	39
-	.byte	2
-	.byte	41
-	.byte	42
-	.byte	43
-	.byte	44
-	.byte	45
-	.byte	46
-	.byte	47
-	.byte	4
-	.byte	49
-	.byte	50
-	.byte	51
-	.byte	52
-	.byte	53
-	.byte	54
-	.byte	55
-	.byte	6
-	.byte	57
-	.byte	58
-	.byte	59
-	.byte	60
-	.byte	61
-	.byte	62
-	.byte	63
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000034:
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa	.LCPI1_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpltuq	%ymm3, %ymm0, %k0
+	vpand	.LCPI1_0(%rip), %xmm1, %xmm1
+	vpmovzxwq	%xmm1, %ymm1
+	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -81,85 +64,51 @@ func0000000000000021:
 	retq
 
 .LCPI3_0:
+	.byte	255
 	.byte	0
-	.byte	33
-	.byte	34
-	.byte	35
-	.byte	36
-	.byte	37
-	.byte	38
-	.byte	39
-	.byte	2
-	.byte	41
-	.byte	42
-	.byte	43
-	.byte	44
-	.byte	45
-	.byte	46
-	.byte	47
-	.byte	4
-	.byte	49
-	.byte	50
-	.byte	51
-	.byte	52
-	.byte	53
-	.byte	54
-	.byte	55
-	.byte	6
-	.byte	57
-	.byte	58
-	.byte	59
-	.byte	60
-	.byte	61
-	.byte	62
-	.byte	63
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000026:
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa	.LCPI3_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpgtq	%ymm0, %ymm3, %k0
+	vpand	.LCPI3_0(%rip), %xmm1, %xmm1
+	vpmovzxwq	%xmm1, %ymm1
+	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI4_0:
+	.byte	255
 	.byte	0
-	.byte	33
-	.byte	34
-	.byte	35
-	.byte	36
-	.byte	37
-	.byte	38
-	.byte	39
-	.byte	2
-	.byte	41
-	.byte	42
-	.byte	43
-	.byte	44
-	.byte	45
-	.byte	46
-	.byte	47
-	.byte	4
-	.byte	49
-	.byte	50
-	.byte	51
-	.byte	52
-	.byte	53
-	.byte	54
-	.byte	55
-	.byte	6
-	.byte	57
-	.byte	58
-	.byte	59
-	.byte	60
-	.byte	61
-	.byte	62
-	.byte	63
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000024:
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa	.LCPI4_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpltuq	%ymm3, %ymm0, %k0
+	vpand	.LCPI4_0(%rip), %xmm1, %xmm1
+	vpmovzxwq	%xmm1, %ymm1
+	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

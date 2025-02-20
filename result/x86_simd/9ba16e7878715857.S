@@ -1,491 +1,107 @@
-.LCPI0_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000e1:
-	vmovdqa	.LCPI0_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpeqd	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI1_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000e4:
-	vmovdqa	.LCPI1_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpltud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000f4:
-	vmovdqa	.LCPI2_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpltud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000e6:
-	vmovdqa	.LCPI3_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI4_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000f8:
-	vmovdqa	.LCPI4_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpnleud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000ec:
-	vmovdqa	.LCPI5_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpneqd	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpneqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI6_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000e5:
-	vmovdqa	.LCPI6_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpleud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI7_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000e8:
-	vmovdqa	.LCPI7_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpnleud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI8_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000ea:
-	vmovdqa	.LCPI8_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpgtd	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI9_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func0000000000000028:
-	vmovdqa	.LCPI9_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpnleud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func0000000000000024:
-	vmovdqa	.LCPI10_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpltud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI11_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func0000000000000021:
-	vmovdqa	.LCPI11_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpeqd	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -499,84 +115,20 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
-.LCPI13_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000a1:
-	vmovdqa	.LCPI13_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpeqd	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI14_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000a6:
-	vmovdqa	.LCPI14_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -608,43 +160,11 @@ func0000000000000121:
 	vzeroupper
 	retq
 
-.LCPI18_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000f5:
-	vmovdqa	.LCPI18_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpleud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -676,84 +196,20 @@ func00000000000001e4:
 	vzeroupper
 	retq
 
-.LCPI22_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func00000000000000f9:
-	vmovdqa	.LCPI22_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpnltud	%ymm0, %ymm3, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpnltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI23_0:
-	.byte	32
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	33
-	.byte	4
-	.byte	5
-	.byte	6
-	.byte	34
-	.byte	8
-	.byte	9
-	.byte	10
-	.byte	35
-	.byte	12
-	.byte	13
-	.byte	14
-	.byte	36
-	.byte	16
-	.byte	17
-	.byte	18
-	.byte	37
-	.byte	20
-	.byte	21
-	.byte	22
-	.byte	38
-	.byte	24
-	.byte	25
-	.byte	26
-	.byte	39
-	.byte	28
-	.byte	29
-	.byte	30
 func0000000000000026:
-	vmovdqa	.LCPI23_0(%rip), %ymm3
-	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k0
+	vpmovzxbd	%xmm2, %ymm2
+	vpslld	$8, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

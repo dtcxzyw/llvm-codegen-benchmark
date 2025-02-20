@@ -89,45 +89,11 @@ func0000000000000000:
 	retq
 
 .LCPI9_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI9_1:
 	.long	4294901760
-.LCPI9_2:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func000000000000001b:
-	vpmovsxbw	.LCPI9_2(%rip), %ymm2
-	vpermi2w	%ymm1, %ymm0, %ymm2
-	vpaddd	.LCPI9_1(%rip){1to8}, %ymm2, %ymm0
+	vpslld	$16, %ymm1, %ymm1
+	vpblendw	$170, %ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI10_0:
@@ -141,45 +107,11 @@ func0000000000000007:
 	retq
 
 .LCPI11_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI11_1:
 	.long	4294901760
-.LCPI11_2:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func0000000000000003:
-	vpmovsxbw	.LCPI11_2(%rip), %ymm2
-	vpermi2w	%ymm1, %ymm0, %ymm2
-	vpaddd	.LCPI11_1(%rip){1to8}, %ymm2, %ymm0
+	vpslld	$16, %ymm1, %ymm1
+	vpblendw	$170, %ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI11_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI12_0:

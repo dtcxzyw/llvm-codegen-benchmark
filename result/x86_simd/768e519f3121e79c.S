@@ -7,29 +7,10 @@ func0000000000000007:
 	vzeroupper
 	retq
 
-.LCPI1_0:
-	.short	0
-	.short	8
-	.short	2
-	.short	10
-	.short	4
-	.short	12
-	.short	6
-	.short	14
-.LCPI1_1:
-	.byte	0
-	.byte	8
-	.byte	2
-	.byte	10
-	.byte	4
-	.byte	12
-	.byte	6
-	.byte	14
 func0000000000000001:
-	vpmovqd	%ymm1, %xmm2
-	vpmovsxbw	.LCPI1_1(%rip), %xmm1
-	vpermi2w	%xmm0, %xmm2, %xmm1
-	vmovdqa	%xmm1, %xmm0
+	vpmovqd	%ymm1, %xmm1
+	vpslld	$16, %xmm0, %xmm0
+	vpblendw	$170, %xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -105,29 +86,10 @@ func0000000000000005:
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.short	0
-	.short	8
-	.short	2
-	.short	10
-	.short	4
-	.short	12
-	.short	6
-	.short	14
-.LCPI10_1:
-	.byte	0
-	.byte	8
-	.byte	2
-	.byte	10
-	.byte	4
-	.byte	12
-	.byte	6
-	.byte	14
 func0000000000000019:
-	vpmovqd	%ymm1, %xmm2
-	vpmovsxbw	.LCPI10_1(%rip), %xmm1
-	vpermi2w	%xmm0, %xmm2, %xmm1
-	vmovdqa	%xmm1, %xmm0
+	vpmovqd	%ymm1, %xmm1
+	vpslld	$16, %xmm0, %xmm0
+	vpblendw	$170, %xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

@@ -1,39 +1,38 @@
 .LCPI0_0:
 	.byte	0
 	.byte	0
-	.byte	34
-	.byte	35
 	.byte	1
-	.byte	1
-	.byte	38
-	.byte	39
 	.byte	2
-	.byte	2
-	.byte	42
-	.byte	43
-	.byte	3
-	.byte	3
-	.byte	46
-	.byte	47
 	.byte	4
 	.byte	4
-	.byte	50
-	.byte	51
 	.byte	5
-	.byte	5
-	.byte	54
-	.byte	55
 	.byte	6
-	.byte	6
-	.byte	58
-	.byte	59
-	.byte	7
-	.byte	7
-	.byte	62
-	.byte	63
+	.byte	8
+	.byte	8
+	.byte	9
+	.byte	10
+	.byte	12
+	.byte	12
+	.byte	13
+	.byte	14
+	.byte	16
+	.byte	16
+	.byte	17
+	.byte	18
+	.byte	20
+	.byte	20
+	.byte	21
+	.byte	22
+	.byte	24
+	.byte	24
+	.byte	25
+	.byte	26
+	.byte	28
+	.byte	28
+	.byte	29
+	.byte	30
 func0000000000000007:
-	vpxor	%xmm1, %xmm1, %xmm1
-	vmovdqa	.LCPI0_0(%rip), %ymm2
-	vpermt2b	%ymm1, %ymm2, %ymm0
+	vpmovzxbd	%xmm0, %ymm0
+	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	retq
 

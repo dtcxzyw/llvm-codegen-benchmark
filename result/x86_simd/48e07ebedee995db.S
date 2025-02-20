@@ -98,170 +98,34 @@ func00000000000000f4:
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI10_1:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func0000000000000024:
-	vpmovsxbw	.LCPI10_1(%rip), %ymm3
-	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpcmpltud	%ymm0, %ymm3, %k0
+	vpslld	$16, %ymm2, %ymm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1
+	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI11_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI11_1:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func0000000000000025:
-	vpmovsxbw	.LCPI11_1(%rip), %ymm3
-	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpcmpleud	%ymm0, %ymm3, %k0
+	vpslld	$16, %ymm2, %ymm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1
+	vpcmpleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI12_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI12_1:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func0000000000000021:
-	vpmovsxbw	.LCPI12_1(%rip), %ymm3
-	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpcmpeqd	%ymm0, %ymm3, %k0
+	vpslld	$16, %ymm2, %ymm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI13_0:
-	.short	0
-	.short	16
-	.short	2
-	.short	18
-	.short	4
-	.short	20
-	.short	6
-	.short	22
-	.short	8
-	.short	24
-	.short	10
-	.short	26
-	.short	12
-	.short	28
-	.short	14
-	.short	30
-.LCPI13_1:
-	.byte	0
-	.byte	16
-	.byte	2
-	.byte	18
-	.byte	4
-	.byte	20
-	.byte	6
-	.byte	22
-	.byte	8
-	.byte	24
-	.byte	10
-	.byte	26
-	.byte	12
-	.byte	28
-	.byte	14
-	.byte	30
 func00000000000000a5:
-	vpmovsxbw	.LCPI13_1(%rip), %ymm3
-	vpermi2w	%ymm2, %ymm1, %ymm3
-	vpcmpleud	%ymm0, %ymm3, %k0
+	vpslld	$16, %ymm2, %ymm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1
+	vpcmpleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
