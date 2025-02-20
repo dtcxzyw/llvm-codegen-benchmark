@@ -84,10 +84,9 @@ func0000000000000005:
 	lui	a0, %hi(.LCPI8_0)
 	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfle.vf	v10, v8, fa5
-	vmnot.m	v0, v10
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmfle.vf	v0, v8, fa5
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	vor.vi	v8, v8, 4
 	ret
 

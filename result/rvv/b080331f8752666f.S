@@ -139,10 +139,9 @@ func0000000000000011:
 func000000000000005b:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmfgt.vf	v12, v10, fa5
-	vmnot.m	v0, v12
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmfgt.vf	v0, v10, fa5
+	vmv.v.i	v10, 1
+	vmerge.vim	v10, v10, 0, v0
 	vadd.vv	v8, v8, v10
 	ret
 

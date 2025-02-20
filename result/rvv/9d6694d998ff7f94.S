@@ -102,11 +102,10 @@ func0000000000000063:
 func000000000000005b:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
-	vmfgt.vf	v10, v12, fa5
-	vmnot.m	v0, v10
+	vmfgt.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmv.v.i	v10, 1
+	vmerge.vim	v10, v10, 0, v0
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -136,11 +135,10 @@ func0000000000000039:
 func0000000000000059:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
-	vmfgt.vf	v10, v12, fa5
-	vmnot.m	v0, v10
+	vmfgt.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmv.v.i	v10, 1
+	vmerge.vim	v10, v10, 0, v0
 	vadd.vv	v8, v8, v10
 	ret
 

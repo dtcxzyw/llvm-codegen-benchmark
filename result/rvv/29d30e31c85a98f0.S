@@ -29,11 +29,10 @@ func000000000000000a:
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfabs.v	v8, v8
-	vmfle.vf	v12, v8, fa5
-	vmnot.m	v0, v12
+	vmfle.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 .LCPI3_0:
@@ -69,10 +68,9 @@ func0000000000000016:
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfabs.v	v8, v8
-	vmfgt.vf	v12, v8, fa5
-	vmnot.m	v0, v12
+	vmfgt.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 

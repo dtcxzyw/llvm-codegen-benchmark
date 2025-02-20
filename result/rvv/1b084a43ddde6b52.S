@@ -2,10 +2,9 @@ func000000000000001a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfabs.v	v8, v8
 	fli.s	fa5, min
-	vmflt.vf	v10, v8, fa5
-	vmnot.m	v0, v10
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmflt.vf	v0, v8, fa5
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 func000000000000003a:
@@ -13,10 +12,9 @@ func000000000000003a:
 	vfabs.v	v8, v8
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
-	vmflt.vf	v10, v8, fa5
-	vmnot.m	v0, v10
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmflt.vf	v0, v8, fa5
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	ret
 
 .LCPI2_0:

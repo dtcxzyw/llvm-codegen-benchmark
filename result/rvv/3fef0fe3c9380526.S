@@ -67,11 +67,10 @@ func0000000000000007:
 func0000000000000003:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v12, v8, fa5
-	vmnot.m	v0, v12
+	vmfge.vf	v0, v8, fa5
 	vsetvli	zero, zero, e8, m1, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 0, v0
 	vor.vi	v8, v8, 2
 	ret
 
