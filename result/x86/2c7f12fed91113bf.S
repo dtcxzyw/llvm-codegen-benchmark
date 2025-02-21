@@ -43,10 +43,9 @@ func0000000000000081:
 	retq
 
 func000000000000008c:
-	movabsq	$-822056740454400000, %rax
-	addq	%rsi, %rax
-	shrq	$38, %rax
-	cmpl	$67086989, %eax
+	shrq	$38, %rsi
+	addl	$-2990625, %esi
+	cmpl	$67086989, %esi
 	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
