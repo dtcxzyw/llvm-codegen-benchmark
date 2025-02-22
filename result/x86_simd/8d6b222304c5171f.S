@@ -1,16 +1,14 @@
 func000000000000000d:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnltps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnltps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 func00000000000000ab:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnltps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnltps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -66,16 +64,14 @@ func000000000000000c:
 func00000000000000ad:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnltps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnltps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000005:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnleps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -89,16 +85,14 @@ func00000000000000a8:
 func0000000000000085:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnleps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 func000000000000000b:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vcmpnltps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnltps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

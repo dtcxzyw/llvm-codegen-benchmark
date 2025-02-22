@@ -42,10 +42,12 @@ func0000000000000002:
 
 .LCPI5_0:
 	.long	0x00800000
+.LCPI5_1:
+	.long	1
 func000000000000001a:
-	vcmpnltps	.LCPI5_0(%rip){1to8}, %ymm0, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
+	vbroadcastss	.LCPI5_0(%rip), %ymm1
+	vcmpnltps	%ymm1, %ymm0, %ymm0
+	vandps	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:
@@ -82,10 +84,11 @@ func000000000000000c:
 	vandps	.LCPI9_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+.LCPI10_0:
+	.long	1
 func0000000000000016:
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpnltps	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
+	vcmpnltps	%ymm0, %ymm1, %ymm0
+	vandps	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

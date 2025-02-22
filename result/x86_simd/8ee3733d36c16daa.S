@@ -26,18 +26,22 @@ func000000000000000e:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+.LCPI3_1:
+	.quad	1
 func000000000000001a:
-	vcmpnltpd	.LCPI3_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vbroadcastsd	.LCPI3_0(%rip), %ymm1
+	vcmpnltpd	%ymm1, %ymm0, %ymm0
+	vandpd	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI4_0:
 	.quad	0x3ff0000000000000
+.LCPI4_1:
+	.quad	1
 func000000000000000a:
-	vcmpnlepd	.LCPI4_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vbroadcastsd	.LCPI4_0(%rip), %ymm1
+	vcmpnlepd	%ymm1, %ymm0, %ymm0
+	vandpd	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

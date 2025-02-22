@@ -10,8 +10,7 @@ func0000000000000012:
 func0000000000000015:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vbroadcastss	.LCPI1_0(%rip), %xmm1 {%k1}
-	vcmpnleps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

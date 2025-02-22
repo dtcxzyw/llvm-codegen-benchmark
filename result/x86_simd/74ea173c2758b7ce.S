@@ -40,10 +40,11 @@ func0000000000000010:
 	vandps	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+.LCPI6_0:
+	.long	1
 func000000000000001a:
-	vcmpnltps	%ymm1, %ymm0, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
+	vcmpnltps	%ymm1, %ymm0, %ymm0
+	vandps	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:
@@ -53,9 +54,10 @@ func000000000000000c:
 	vandps	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+.LCPI8_0:
+	.long	1
 func0000000000000016:
-	vcmpnltps	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
+	vcmpnltps	%ymm0, %ymm1, %ymm0
+	vandps	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

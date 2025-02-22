@@ -1,8 +1,7 @@
 func0000000000000075:
 	vpmovqd	%ymm1, %xmm1
 	vcvtdq2ps	%xmm1, %xmm1
-	vcmpnleps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -23,8 +22,7 @@ func0000000000000054:
 func0000000000000053:
 	vpmovqd	%ymm1, %xmm1
 	vcvtdq2ps	%xmm1, %xmm1
-	vcmpnleps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -45,8 +43,7 @@ func0000000000000072:
 func0000000000000073:
 	vpmovqd	%ymm1, %xmm1
 	vcvtdq2ps	%xmm1, %xmm1
-	vcmpnleps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

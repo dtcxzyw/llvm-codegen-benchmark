@@ -18,8 +18,7 @@ func0000000000000005:
 	vcvtuqq2ps	%ymm2, %xmm2
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm2, %xmm1, %xmm1
-	vcmpnleps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -27,8 +26,7 @@ func0000000000000003:
 	vcvtuqq2ps	%ymm2, %xmm2
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm2, %xmm1, %xmm1
-	vcmpnleps	%xmm1, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

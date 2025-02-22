@@ -90,8 +90,8 @@ func0000000000000004:
 	.long	0x3d4ccccd
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
-	vcmpngeps	.LCPI11_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI11_0(%rip), %xmm1
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -99,8 +99,8 @@ func0000000000000003:
 	.long	0x3d25aee6
 func0000000000000005:
 	vpmovqd	%ymm0, %xmm0
-	vcmpnleps	.LCPI12_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI12_0(%rip), %xmm1
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

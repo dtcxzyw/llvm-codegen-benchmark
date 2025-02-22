@@ -3,8 +3,8 @@
 func0000000000000003:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vmulps	%xmm1, %xmm0, %xmm0
-	vcmpngeps	.LCPI0_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI0_0(%rip), %xmm1
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

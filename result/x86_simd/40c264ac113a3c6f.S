@@ -5,8 +5,8 @@
 func0000000000000015:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
-	vcmpnleps	.LCPI0_1(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI0_1(%rip), %xmm1
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -17,8 +17,8 @@ func0000000000000015:
 func0000000000000055:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vcmpnleps	.LCPI1_1(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI1_1(%rip), %xmm1
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

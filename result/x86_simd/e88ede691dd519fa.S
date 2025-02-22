@@ -10,11 +10,12 @@ func0000000000000028:
 
 .LCPI1_0:
 	.quad	0x7fffffffffffffff
+.LCPI1_1:
+	.quad	1
 func0000000000000036:
 	vandpd	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vcmpnltpd	%ymm1, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vcmpnltpd	%ymm1, %ymm0, %ymm0
+	vandpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

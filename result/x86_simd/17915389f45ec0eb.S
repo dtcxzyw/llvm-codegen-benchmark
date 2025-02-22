@@ -23,8 +23,8 @@ func0000000000000002:
 func0000000000000003:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm0, %xmm1, %xmm0
-	vcmpngeps	.LCPI2_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI2_0(%rip), %xmm1
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

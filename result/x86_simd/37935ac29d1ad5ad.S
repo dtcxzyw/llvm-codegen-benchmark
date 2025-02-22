@@ -33,8 +33,8 @@ func0000000000000002:
 func0000000000000003:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
-	vcmpngeps	.LCPI3_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI3_0(%rip), %xmm1
+	vcmpnleps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -85,8 +85,8 @@ func0000000000000001:
 func0000000000000015:
 	vcvtqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
-	vcmpnleps	.LCPI9_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI9_0(%rip), %xmm1
+	vcmpnleps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -95,8 +95,8 @@ func0000000000000015:
 func000000000000000b:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
-	vcmpngtps	.LCPI10_0(%rip){1to4}, %xmm0, %k0
-	vpmovm2d	%k0, %xmm0
+	vbroadcastss	.LCPI10_0(%rip), %xmm1
+	vcmpnltps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

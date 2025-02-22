@@ -1,8 +1,7 @@
 func000000000000002b:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vcmpnltps	%xmm0, %xmm1, %k0
-	vpmovm2d	%k0, %xmm0
+	vcmpnltps	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

@@ -5,16 +5,18 @@ func0000000000000008:
 	vandpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+.LCPI1_0:
+	.quad	1
 func000000000000001a:
-	vcmpnltpd	%ymm1, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vcmpnltpd	%ymm1, %ymm0, %ymm0
+	vandpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+.LCPI2_0:
+	.quad	1
 func0000000000000016:
-	vcmpnltpd	%ymm0, %ymm1, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vcmpnltpd	%ymm0, %ymm1, %ymm0
+	vandpd	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -52,9 +54,10 @@ func000000000000000e:
 	vandpd	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+.LCPI8_0:
+	.quad	1
 func000000000000000a:
-	vcmpnlepd	%ymm1, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
-	vpsrlq	$63, %ymm0, %ymm0
+	vcmpnlepd	%ymm1, %ymm0, %ymm0
+	vandpd	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 

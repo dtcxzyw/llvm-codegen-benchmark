@@ -102,8 +102,7 @@ func0000000000000011:
 
 func000000000000005b:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnltps	%ymm1, %ymm2, %k0
-	vpmovm2d	%k0, %ymm1
+	vcmpnltps	%ymm1, %ymm2, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
