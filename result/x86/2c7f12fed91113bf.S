@@ -44,7 +44,8 @@ func0000000000000081:
 
 func000000000000008c:
 	shrq	$38, %rsi
-	addl	$-2990625, %esi
+	addl	$64118239, %esi
+	andl	$67108863, %esi
 	cmpl	$67086989, %esi
 	setb	%cl
 	testq	%rdi, %rdi
