@@ -77,9 +77,10 @@ func0000000000000033:
 func000000000000014f:
 	mov	w8, #24
 	cmp	w2, #0
+	mov	w9, #8
 	umaddl	x8, w1, w8, x0
-	cset	w9, gt
-	add	x0, x8, w9, uxtw #3
+	csel	x9, x9, xzr, gt
+	add	x0, x8, x9
 	ret
 
 func000000000000008f:

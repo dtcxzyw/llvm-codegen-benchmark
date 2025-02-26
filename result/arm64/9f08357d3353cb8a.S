@@ -1,19 +1,22 @@
 func0000000000000009:
 	fcmp	s0, s1
-	cset	w8, gt
-	orr	w0, w0, w8, lsl #3
+	mov	w8, #8
+	csel	w8, w8, wzr, gt
+	orr	w0, w8, w0
 	ret
 
 func0000000000000005:
 	fcmp	s0, s1
-	cset	w8, mi
-	orr	w0, w0, w8, lsl #1
+	mov	w8, #2
+	csel	w8, w8, wzr, mi
+	orr	w0, w0, w8
 	ret
 
 func0000000000000019:
 	fcmp	s0, s1
-	cset	w8, ge
-	orr	w0, w0, w8, lsl #1
+	mov	w8, #2
+	csel	w8, w8, wzr, ge
+	orr	w0, w0, w8
 	ret
 
 func0000000000000008:
@@ -34,13 +37,15 @@ func0000000000000017:
 
 func000000000000001b:
 	fcmp	s0, s1
-	cset	w8, pl
-	orr	w0, w0, w8, lsl #6
+	mov	w8, #64
+	csel	w8, w8, wzr, pl
+	orr	w0, w8, w0
 	ret
 
 func0000000000000010:
 	fcmp	s0, s1
-	cset	w8, eq
-	orr	w0, w0, w8, lsl #21
+	mov	w8, #2097152
+	csel	w8, w8, wzr, eq
+	orr	w0, w8, w0
 	ret
 

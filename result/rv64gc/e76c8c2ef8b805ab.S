@@ -1,7 +1,7 @@
 func000000000000003f:
 	lui	a3, 16
 	addiw	a3, a3, -15
-	addi	a4, a3, 14
+	addiw	a4, a3, 14
 	add	a1, a1, a3
 	and	a2, a2, a4
 	sub	a0, a1, a0

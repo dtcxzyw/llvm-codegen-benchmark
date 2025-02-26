@@ -4,9 +4,9 @@ func0000000000000004:
 	mov	x8, #4629700416936869888
 	fmul	d0, d0, d1
 	fmov	d1, x8
+	mov	w8, #2
 	fcmp	d0, d1
-	cset	w8, le
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, gt
 	ret
 
 .LCPI1_0:

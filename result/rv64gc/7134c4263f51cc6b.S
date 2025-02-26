@@ -354,7 +354,7 @@ func0000000000000144:
 .LBB25_2:
 	sraiw	a0, a0, 31
 	andi	a0, a0, 12
-	addi	a0, a0, 18
+	addiw	a0, a0, 18
 	ret
 
 func0000000000000306:
@@ -365,6 +365,6 @@ func0000000000000306:
 	ret
 .LBB26_2:
 	sltiu	a0, a0, 5
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

@@ -30,9 +30,9 @@ func000000000000000a:
 func0000000000000008:
 	mov	w8, #-2
 	cmp	x2, x8
-	cset	w8, hi
+	mov	w8, #8
+	csel	x8, x8, xzr, hi
 	tst	w0, #0x1
-	ubfiz	x8, x8, #3, #32
 	csel	x0, x1, x8, ne
 	ret
 

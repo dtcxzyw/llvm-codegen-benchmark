@@ -33,7 +33,7 @@ func0000000000000031:
 	bnez	a0, .LBB3_2
 	srliw	a0, a2, 23
 	snez	a1, a0
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 .LBB3_2:
 	ori	a0, a1, 4
 	ret

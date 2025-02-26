@@ -6,10 +6,10 @@ func0000000000000046:
 	ret
 
 func000000000000000c:
-	lsr	x8, x0, #3
-	cmp	w8, #0
-	cset	w8, ne
-	lsl	w0, w8, #6
+	lsr	x9, x0, #3
+	mov	w8, #64
+	cmp	w9, #0
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000001:

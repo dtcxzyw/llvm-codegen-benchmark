@@ -18,9 +18,9 @@ func0000000000000002:
 
 func000000000000000b:
 	fmov	s1, #1.00000000
+	mov	w8, #2
 	fcmp	s0, s1
-	cset	w8, gt
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000000a:

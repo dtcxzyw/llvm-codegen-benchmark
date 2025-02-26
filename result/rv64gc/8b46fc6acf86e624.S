@@ -30,7 +30,7 @@ func0000000000000029:
 	srliw	a1, a1, 22
 	beqz	a1, .LBB3_2
 	andi	a0, a2, 1
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 .LBB3_2:
 	ori	a0, a0, 4
 	ret

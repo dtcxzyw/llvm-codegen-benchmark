@@ -12,7 +12,7 @@ func000000000000000c:
 	li	a3, 255
 	andi	a1, a1, 1
 	slli	a3, a3, 32
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	and	a2, a2, a3
 	binvi	a2, a2, 33
 	czero.eqz	a1, a1, a2

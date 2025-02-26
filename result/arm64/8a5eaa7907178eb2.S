@@ -15,9 +15,9 @@ func0000000000000010:
 	ret
 
 func0000000000000029:
+	mov	w8, #64
 	cmp	w0, #0
-	cset	w8, gt
-	lsl	w8, w8, #6
+	csel	w8, w8, wzr, gt
 	sub	w0, w8, w0
 	ret
 

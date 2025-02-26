@@ -9,7 +9,7 @@ func0000000000000001:
 	lui	a1, 16
 	addiw	a1, a1, -768
 	add	a0, a0, a1
-	addi	a1, a1, 767
+	addiw	a1, a1, 767
 	and	a0, a0, a1
 	slli	a1, a0, 1
 	neg	a0, a0

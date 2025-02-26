@@ -3,8 +3,8 @@ func0000000000000001:
 	mov	w8, #55296
 	and	w9, w9, #0x7ffff800
 	cmp	w9, w8
-	cset	w8, eq
-	lsl	w0, w8, #7
+	mov	w8, #128
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000014:

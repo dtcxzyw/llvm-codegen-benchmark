@@ -17,7 +17,7 @@ func0000000000000069:
 	andi	a1, a1, 32
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000049:
@@ -28,6 +28,6 @@ func0000000000000049:
 	andi	a1, a1, 32
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 

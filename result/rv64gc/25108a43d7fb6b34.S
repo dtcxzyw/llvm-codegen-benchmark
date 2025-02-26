@@ -3,8 +3,8 @@ func0000000000000005:
 	bgtz	a0, .LBB0_2
 	li	a0, 1
 .LBB0_2:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000007:
@@ -12,8 +12,8 @@ func0000000000000007:
 	sgtz	a1, a1
 	negw	a1, a1
 	and	a0, a0, a1
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000001:
@@ -21,7 +21,7 @@ func0000000000000001:
 	bgtz	a0, .LBB2_2
 	li	a0, 1
 .LBB2_2:
-	slliw	a0, a0, 6
-	addi	a0, a0, 1
+	slli	a0, a0, 6
+	addiw	a0, a0, 1
 	ret
 

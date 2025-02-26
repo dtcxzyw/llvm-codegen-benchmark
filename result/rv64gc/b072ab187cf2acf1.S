@@ -41,7 +41,7 @@ func0000000000000004:
 	j	.LBB2_4
 .LBB2_2:
 	andi	a0, a2, 1
-	addi	a0, a0, 10
+	addiw	a0, a0, 10
 	beqz	a1, .LBB2_4
 .LBB2_3:
 	li	a0, 13

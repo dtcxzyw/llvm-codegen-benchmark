@@ -31,7 +31,7 @@ func0000000000000005:
 func0000000000000007:
 	add	a0, a0, a1
 	srliw	a0, a0, 28
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 
 func0000000000000034:

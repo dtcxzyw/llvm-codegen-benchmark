@@ -4,7 +4,7 @@ func0000000000000003:
 	li	a3, 16
 	czero.nez	a2, a3, a2
 	li	a3, 105
-	addi	a2, a2, 105
+	addiw	a2, a2, 105
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3
@@ -17,7 +17,7 @@ func0000000000000000:
 	li	a3, 4
 	czero.nez	a2, a3, a2
 	li	a3, 16
-	addi	a2, a2, 8
+	addiw	a2, a2, 8
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

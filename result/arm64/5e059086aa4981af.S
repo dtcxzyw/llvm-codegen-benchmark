@@ -1,15 +1,15 @@
 func000000000000000a:
 	fabs	d1, d1
+	mov	x8, #4294967296
 	fcmp	d1, d0
-	cset	w8, ls
-	lsl	x0, x8, #32
+	csel	x0, x8, xzr, ls
 	ret
 
 func0000000000000014:
 	fabs	d1, d1
+	mov	w8, #32
 	fcmp	d1, d0
-	cset	w8, gt
-	ubfiz	x0, x8, #5, #32
+	csel	x0, x8, xzr, gt
 	ret
 
 func0000000000000002:

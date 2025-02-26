@@ -55,7 +55,7 @@ func0000000000000004:
 	andi	a2, a2, 1
 	li	a3, 12
 	srliw	a0, a0, 14
-	addi	a2, a2, 10
+	addiw	a2, a2, 10
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	li	a2, 13

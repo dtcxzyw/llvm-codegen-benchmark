@@ -5,7 +5,7 @@ func0000000000000013:
 	czero.nez	a1, a2, a1
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 9
+	addiw	a0, a0, 9
 	ret
 
 func0000000000000023:
@@ -15,7 +15,7 @@ func0000000000000023:
 	slli	a1, a1, 5
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000007:
@@ -24,7 +24,7 @@ func0000000000000007:
 	slli	a1, a1, 5
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000053:
@@ -34,6 +34,6 @@ func0000000000000053:
 	slli	a1, a1, 5
 	slli	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 

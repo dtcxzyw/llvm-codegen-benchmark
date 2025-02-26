@@ -9,15 +9,17 @@ func0000000000000010:
 
 func000000000000001c:
 	cmp	w2, #0
-	cset	w8, ne
-	add	w8, w1, w8, lsl #2
+	mov	w8, #4
+	csel	w8, wzr, w8, eq
+	add	w8, w8, w1
 	mul	w0, w8, w0
 	ret
 
 func000000000000001f:
 	cmp	w2, #0
-	cset	w8, ne
-	add	w8, w1, w8, lsl #2
+	mov	w8, #4
+	csel	w8, wzr, w8, eq
+	add	w8, w8, w1
 	mul	w0, w8, w0
 	ret
 

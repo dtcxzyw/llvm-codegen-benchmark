@@ -69,6 +69,6 @@ func000000000000000a:
 	or	a0, a0, a2
 	sext.w	a0, a0
 	slti	a0, a0, 0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 

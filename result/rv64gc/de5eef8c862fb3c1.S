@@ -16,7 +16,7 @@ func0000000000000006:
 	fclass.d	a0, fa0
 	andi	a0, a0, 126
 	snez	a0, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 .LCPI2_0:

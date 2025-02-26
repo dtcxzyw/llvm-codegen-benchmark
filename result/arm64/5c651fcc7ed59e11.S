@@ -25,17 +25,19 @@ func0000000000000014:
 
 func0000000000000015:
 	mov	w8, #3
+	add	w9, w1, w0
 	bics	wzr, w8, w2
-	cset	w8, ne
-	add	w8, w1, w8, lsl #22
-	add	w0, w8, w0
+	mov	w8, #4194304
+	csel	w8, wzr, w8, eq
+	add	w0, w9, w8
 	ret
 
 func000000000000001d:
 	mov	w8, #3
+	add	w9, w1, w0
 	bics	wzr, w8, w2
-	cset	w8, ne
-	add	w8, w1, w8, lsl #22
-	add	w0, w8, w0
+	mov	w8, #4194304
+	csel	w8, wzr, w8, eq
+	add	w0, w9, w8
 	ret
 

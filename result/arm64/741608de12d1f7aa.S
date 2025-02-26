@@ -1,9 +1,9 @@
 func0000000000000021:
-	and	w8, w1, #0xff
-	orr	w8, w0, w8
-	cmp	w8, #0
-	cset	w8, eq
-	lsl	w0, w8, #1
+	and	w9, w1, #0xff
+	mov	w8, #2
+	orr	w9, w0, w9
+	cmp	w9, #0
+	csel	w0, w8, wzr, eq
 	ret
 
 func000000000000018c:

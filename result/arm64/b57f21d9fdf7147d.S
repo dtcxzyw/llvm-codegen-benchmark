@@ -31,9 +31,10 @@ func0000000000000408:
 	ret
 
 func0000000000000608:
+	mov	w8, #16
 	cmp	x1, #0
-	cset	w8, ne
-	add	x8, x0, w8, uxtw #4
+	csel	x8, xzr, x8, eq
+	add	x8, x0, x8
 	cmp	x8, #15
 	cset	w0, hi
 	ret

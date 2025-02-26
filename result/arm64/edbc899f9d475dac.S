@@ -1,6 +1,6 @@
 func0000000000000021:
+	mov	w8, #8
 	cmp	w0, #62
-	cset	w8, eq
-	ubfiz	x0, x8, #3, #32
+	csel	x0, x8, xzr, eq
 	ret
 

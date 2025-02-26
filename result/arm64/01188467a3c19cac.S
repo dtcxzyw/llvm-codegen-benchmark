@@ -20,9 +20,9 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
+	mov	w8, #4
 	cmp	w0, #0
-	cset	w8, ne
-	ubfiz	x0, x8, #2, #32
+	csel	x0, xzr, x8, eq
 	ret
 
 func0000000000000018:

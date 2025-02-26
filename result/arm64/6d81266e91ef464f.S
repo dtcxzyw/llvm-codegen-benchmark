@@ -1,7 +1,7 @@
 func0000000000000009:
+	mov	w8, #2
 	cmp	w1, #55
-	cset	w8, eq
-	ubfiz	x8, x8, #1, #32
+	csel	x8, x8, xzr, eq
 	orr	x0, x8, x0, lsl #2
 	ret
 
@@ -22,9 +22,9 @@ func0000000000000057:
 	ret
 
 func000000000000000f:
+	mov	x8, #-9223372036854775808
 	cmp	w1, #0
-	cset	w8, ne
-	lsl	x8, x8, #63
+	csel	x8, xzr, x8, eq
 	orr	x0, x8, x0, lsl #9
 	ret
 

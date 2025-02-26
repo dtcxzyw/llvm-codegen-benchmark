@@ -12,9 +12,9 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
+	mov	w8, #64
 	tst	w0, #0x8000003f
-	cset	w8, gt
-	lsl	w0, w8, #6
+	csel	w0, w8, wzr, gt
 	ret
 
 func0000000000000001:

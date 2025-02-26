@@ -22,9 +22,9 @@ func0000000000000007:
 	ret
 
 func0000000000000010:
+	mov	w8, #8
 	cmp	w1, #16, lsl #12
-	cset	w8, lo
-	lsl	w8, w8, #3
+	csel	w8, w8, wzr, lo
 	sub	w0, w8, w0
 	ret
 

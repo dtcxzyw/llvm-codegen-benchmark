@@ -20,7 +20,7 @@ func0000000000000002:
 	li	a3, 31
 	slli	a3, a3, 11
 	and	a2, a2, a3
-	addi	a3, a3, 2016
+	addiw	a3, a3, 2016
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

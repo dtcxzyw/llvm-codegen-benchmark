@@ -1,16 +1,16 @@
 func0000000000000605:
+	mov	w8, #4
 	cmp	w0, #0
-	cset	w8, ne
+	csel	w8, wzr, w8, eq
 	cmp	w1, #0
-	cset	w9, ne
-	orr	w0, w9, w8, lsl #2
+	cinc	w0, w8, ne
 	ret
 
 func0000000000000085:
+	mov	w8, #2
 	cmp	w0, #1
-	cset	w8, eq
+	csel	w8, w8, wzr, eq
 	cmp	w1, #1
-	cset	w9, eq
-	orr	w0, w9, w8, lsl #1
+	cinc	w0, w8, eq
 	ret
 

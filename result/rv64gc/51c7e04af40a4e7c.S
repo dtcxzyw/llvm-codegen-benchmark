@@ -5,6 +5,6 @@ func0000000000000029:
 	srli	a0, a1, 6
 .LBB0_2:
 	andi	a0, a0, 207
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 

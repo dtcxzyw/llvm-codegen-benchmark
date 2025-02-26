@@ -1,6 +1,6 @@
 func0000000000000003:
 	andi	a0, a0, 63
-	addi	a0, a0, 64
+	addiw	a0, a0, 64
 	ret
 
 func0000000000000002:

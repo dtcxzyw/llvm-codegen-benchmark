@@ -18,6 +18,6 @@ func0000000000000003:
 	sext.w	a1, a1
 	seqz	a1, a1
 	and	a0, a0, a1
-	addi	a0, a0, 6
+	addiw	a0, a0, 6
 	ret
 

@@ -50,9 +50,9 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
+	mov	w8, #2
 	cmp	w0, w1
-	cset	w8, eq
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000009:
@@ -68,9 +68,9 @@ func000000000000000b:
 	ret
 
 func0000000000000007:
+	mov	w8, #2
 	cmp	w0, w1
-	cset	w8, le
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, gt
 	ret
 
 func0000000000000019:

@@ -1,10 +1,11 @@
 func0000000000000007:
 	tst	w2, #0xff
-	mov	w8, #4
-	cset	w9, ne
+	mov	w8, #8
+	mov	w9, #4
+	csel	w8, wzr, w8, eq
 	tst	w1, #0x1
-	csel	w8, w8, wzr, ne
-	orr	w8, w8, w9, lsl #3
+	csel	w9, w9, wzr, ne
+	orr	w8, w8, w9
 	orr	w0, w8, w0
 	ret
 

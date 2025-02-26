@@ -29,7 +29,7 @@ func0000000000000008:
 	sltu	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func0000000000000004:
@@ -56,7 +56,7 @@ func000000000000004a:
 	slt	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func0000000000000044:
@@ -74,7 +74,7 @@ func000000000000000a:
 	slt	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func000000000000006a:
@@ -83,7 +83,7 @@ func000000000000006a:
 	slt	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func0000000000000046:
@@ -110,7 +110,7 @@ func0000000000000048:
 	sltu	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func0000000000000068:
@@ -119,6 +119,6 @@ func0000000000000068:
 	sltu	a0, a1, a0
 	li	a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 

@@ -56,8 +56,9 @@ func0000000000000050:
 	ret
 
 func0000000000000030:
+	mov	w8, #4
 	tst	x1, #0x3
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #2
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 

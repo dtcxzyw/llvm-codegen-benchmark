@@ -53,7 +53,7 @@ func000000000000000a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	slti	a0, a1, 0
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 .LBB4_2:
 	li	a0, 46

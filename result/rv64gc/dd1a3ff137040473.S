@@ -60,7 +60,7 @@ func000000000000000a:
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000018:

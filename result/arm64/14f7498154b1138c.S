@@ -31,8 +31,9 @@ func000000000000044c:
 
 func0000000000000084:
 	tst	x2, #0x1fffffffffffffff
-	cset	w8, eq
-	add	x8, x1, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, x8, xzr, eq
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, lo
 	ret

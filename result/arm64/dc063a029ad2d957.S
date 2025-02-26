@@ -7,9 +7,10 @@ func0000000000000048:
 	ret
 
 func00000000000000c0:
+	mov	w8, #8
 	cmp	x1, #0
-	cset	w8, ne
-	add	w0, w0, w8, lsl #3
+	csel	w8, wzr, w8, eq
+	add	w0, w0, w8
 	ret
 
 func000000000000014f:

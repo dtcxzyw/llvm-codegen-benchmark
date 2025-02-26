@@ -5,10 +5,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	and	w8, w0, #0xff
-	cmp	w8, #3
-	cset	w8, hi
-	lsl	w0, w8, #1
+	mov	w8, #2
+	tst	w0, #0xfc
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000018:

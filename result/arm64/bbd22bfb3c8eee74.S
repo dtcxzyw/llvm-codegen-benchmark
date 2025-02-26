@@ -11,12 +11,11 @@ func0000000000000006:
 
 func0000000000000007:
 	cmp	w2, #10
-	mov	w9, #128
-	cset	w8, eq
+	mov	w8, #32
+	csel	w8, w8, wzr, eq
 	tst	w1, #0x1
-	lsl	w10, w8, #5
-	bfi	w9, w8, #5, #1
-	csel	w8, w10, w9, ne
+	orr	w9, w8, #0x80
+	csel	w8, w8, w9, ne
 	orr	w0, w8, w0
 	ret
 

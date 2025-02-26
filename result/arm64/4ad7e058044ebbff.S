@@ -20,10 +20,10 @@ func0000000000000002:
 	ret
 
 func0000000000000009:
-	tst	w2, #0xffff0000
-	cset	w8, ne
+	cmp	w2, #16, lsl #12
+	mov	w8, #16
+	csel	w8, wzr, w8, lo
 	tst	w0, #0x1
-	lsl	w8, w8, #4
 	csel	w8, w8, w1, ne
 	orr	w0, w8, #0x4
 	ret

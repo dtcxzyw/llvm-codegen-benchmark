@@ -6,7 +6,7 @@ func0000000000000021:
 .LBB0_2:
 	andi	a0, a1, 255
 	seqz	a0, a0
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func000000000000002a:

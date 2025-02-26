@@ -17,9 +17,9 @@ func0000000000000034:
 
 func0000000000000181:
 	cmp	w2, #0
-	cset	w8, ne
+	mov	w8, #2
+	csel	w8, wzr, w8, eq
 	cmp	w1, #0
-	lsl	w8, w8, #1
 	csel	w0, w8, w0, eq
 	ret
 
@@ -71,10 +71,10 @@ func0000000000000038:
 	ret
 
 func0000000000000094:
-	tst	w2, #0xffff0000
-	cset	w8, ne
+	cmp	w2, #16, lsl #12
+	mov	w8, #16
+	csel	w8, wzr, w8, lo
 	cmp	w1, #256
-	lsl	w8, w8, #4
 	csel	w0, w8, w0, lo
 	ret
 
@@ -113,9 +113,9 @@ func0000000000000084:
 
 func000000000000002c:
 	cmp	w2, #0
-	cset	w8, eq
+	mov	w8, #2
+	csel	w8, w8, wzr, eq
 	cmp	w1, #0
-	lsl	w8, w8, #1
 	csel	w0, w0, w8, eq
 	ret
 

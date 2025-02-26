@@ -11,7 +11,7 @@ func0000000000000050:
 	srliw	a2, a2, 16
 	li	a3, -2
 	seqz	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -47,7 +47,7 @@ func000000000000002b:
 	sraiw	a2, a2, 31
 	li	a3, 12
 	andi	a2, a2, 24
-	addi	a2, a2, 36
+	addiw	a2, a2, 36
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

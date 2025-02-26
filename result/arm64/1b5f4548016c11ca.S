@@ -46,8 +46,9 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	tst	x0, #0xffffffffffff0000
-	cset	w8, ne
-	lsl	w0, w8, #4
+	lsr	x9, x0, #16
+	mov	w8, #16
+	cmp	x9, #0
+	csel	w0, w8, wzr, ne
 	ret
 

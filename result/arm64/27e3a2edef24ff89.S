@@ -19,13 +19,11 @@ func0000000000000101:
 	ret
 
 func0000000000000134:
-	and	w9, w1, #0xff
-	mov	w8, #2
-	cmp	w9, #15
-	cset	w9, hi
+	mov	w8, #4
+	tst	w1, #0xf0
+	csel	w8, wzr, w8, eq
 	tst	w0, #0xfc
-	lsl	w10, w9, #2
-	bfi	w8, w9, #2, #1
-	csel	w0, w10, w8, eq
+	orr	w9, w8, #0x2
+	csel	w0, w8, w9, eq
 	ret
 

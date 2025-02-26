@@ -16,7 +16,7 @@ func0000000000000026:
 	li	a2, 45
 	czero.eqz	a1, a1, a0
 	slti	a0, a0, 0
-	addi	a1, a1, 32
+	addiw	a1, a1, 32
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

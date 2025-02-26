@@ -59,7 +59,7 @@ func0000000000000008:
 	andi	a2, a2, 1
 	li	a3, 57
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 6
+	addiw	a2, a2, 6
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

@@ -10,7 +10,7 @@ func0000000000000002:
 func0000000000000003:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 
 func0000000000000004:

@@ -43,8 +43,9 @@ func0000000000000006:
 
 func0000000000000033:
 	tst	w2, #0xff
-	cset	w8, ne
-	orr	w8, w1, w8, lsl #2
-	orr	w0, w8, w0
+	mov	w8, #4
+	orr	w9, w1, w0
+	csel	w8, wzr, w8, eq
+	orr	w0, w9, w8
 	ret
 

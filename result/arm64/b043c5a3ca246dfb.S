@@ -1,26 +1,30 @@
 func0000000000000030:
 	cmn	x1, x2
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func00000000000001b1:
 	orr	x8, x1, x2
 	cmp	x8, #0
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func00000000000000b0:
 	cmn	x1, x2
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #4
+	mov	w8, #16
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000031:
 	cmn	x1, x2
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #1
+	mov	w8, #2
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000011:

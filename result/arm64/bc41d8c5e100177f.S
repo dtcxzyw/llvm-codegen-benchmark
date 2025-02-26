@@ -43,15 +43,17 @@ func0000000000000008:
 	ret
 
 func0000000000000063:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, ne
-	add	w0, w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	add	w0, w8, w0
 	ret
 
 func0000000000000060:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, ne
-	add	w0, w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	add	w0, w8, w0
 	ret
 
 func000000000000000b:

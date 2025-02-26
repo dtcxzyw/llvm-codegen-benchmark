@@ -23,9 +23,8 @@ func0000000000000008:
 	and	w9, w1, #0xffff
 	mov	w8, #8
 	cmp	w9, #10
-	cset	w9, hi
+	csel	w9, w8, wzr, hi
 	tst	w0, #0x1
-	lsl	w9, w9, #3
 	csel	w0, w9, w8, ne
 	ret
 

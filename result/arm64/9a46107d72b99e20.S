@@ -21,10 +21,11 @@ func0000000000000005:
 	ret
 
 func0000000000000023:
-	and	w8, w1, #0xff
-	cmp	w8, #8
-	cset	w8, hi
-	add	w0, w0, w8, lsl #1
+	and	w9, w1, #0xff
+	mov	w8, #2
+	cmp	w9, #8
+	csel	w8, w8, wzr, hi
+	add	w0, w0, w8
 	ret
 
 func0000000000000021:

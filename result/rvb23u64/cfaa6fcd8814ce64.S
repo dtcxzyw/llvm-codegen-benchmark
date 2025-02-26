@@ -8,14 +8,14 @@ func0000000000000001:
 func000000000000000c:
 	not	a0, a0
 	bexti	a0, a0, 16
-	addi	a0, a0, -14
+	addiw	a0, a0, -14
 	ret
 
 func0000000000000014:
 	andi	a0, a0, 240
 	addi	a0, a0, -240
 	seqz	a0, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func0000000000000018:

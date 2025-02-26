@@ -9,12 +9,12 @@ func00000000000000d8:
 	ret
 
 func00000000000000d4:
-	add	x8, x1, #1
-	cmp	x8, x0
-	csinc	x8, x0, x1, ls
-	cmp	x8, #49
-	cset	w8, hi
-	ubfiz	x0, x8, #3, #32
+	add	x9, x1, #1
+	mov	w8, #8
+	cmp	x9, x0
+	csinc	x9, x0, x1, ls
+	cmp	x9, #50
+	csel	x0, xzr, x8, lo
 	ret
 
 func00000000000000b4:
@@ -38,12 +38,12 @@ func0000000000000018:
 	ret
 
 func00000000000000a8:
-	add	x8, x1, #1
-	cmp	x0, x8
-	csinc	x8, x0, x1, hi
-	lsr	x8, x8, #60
-	cmp	x8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #3, #32
+	add	x9, x1, #1
+	mov	w8, #8
+	cmp	x0, x9
+	csinc	x9, x0, x1, hi
+	lsr	x9, x9, #60
+	cmp	x9, #0
+	csel	x0, xzr, x8, ne
 	ret
 

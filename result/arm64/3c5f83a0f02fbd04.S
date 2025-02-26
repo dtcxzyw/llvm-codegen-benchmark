@@ -64,8 +64,9 @@ func000000000000002b:
 
 func0000000000000010:
 	cmp	x1, w2, uxtw
-	cset	w8, hs
-	add	x0, x0, w8, uxtw #4
+	mov	w8, #16
+	csel	x8, xzr, x8, lo
+	add	x0, x0, x8
 	ret
 
 func000000000000001b:

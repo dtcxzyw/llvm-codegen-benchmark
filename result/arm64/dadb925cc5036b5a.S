@@ -13,8 +13,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
+	mov	w8, #512
 	cmp	x0, x1
-	cset	w8, ne
-	ubfiz	x0, x8, #9, #32
+	csel	x0, xzr, x8, eq
 	ret
 

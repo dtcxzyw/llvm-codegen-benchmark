@@ -8,9 +8,10 @@ func0000000000000010:
 
 func000000000000001d:
 	cmp	x2, #0
-	cset	w8, ne
-	add	x8, x1, x8, lsl #5
-	add	x0, x8, x0
+	mov	w8, #32
+	add	x9, x1, x0
+	csel	x8, xzr, x8, eq
+	add	x0, x9, x8
 	ret
 
 func000000000000001f:

@@ -40,12 +40,12 @@ func00000000000000d1:
 	ret
 
 func0000000000000085:
+	mov	w8, #2
 	cmp	w1, #5
-	mov	w8, #3
-	cset	w9, eq
+	mov	w9, #3
+	csel	w8, w8, wzr, eq
 	cmp	w1, #4
-	lsl	w9, w9, #1
-	csel	w8, w8, w9, eq
+	csel	w8, w9, w8, eq
 	add	w0, w8, w0
 	ret
 

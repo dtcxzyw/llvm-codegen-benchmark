@@ -39,7 +39,7 @@ func000000000000001f:
 	addi	a0, a0, 510
 	slli	a1, a1, 9
 	and	a0, a0, a1
-	addi	a0, a0, 32
+	addiw	a0, a0, 32
 	ret
 
 func000000000000000f:

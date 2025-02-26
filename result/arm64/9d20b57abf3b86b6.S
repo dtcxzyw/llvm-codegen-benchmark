@@ -1,19 +1,22 @@
 func0000000000000009:
 	cmp	x1, x2
-	cset	w8, lo
-	orr	x0, x0, x8, lsl #63
+	mov	x8, #-9223372036854775808
+	csel	x8, x8, xzr, lo
+	orr	x0, x8, x0
 	ret
 
 func0000000000000011:
 	cmp	x1, x2
-	cset	w8, hi
-	orr	x0, x0, x8, lsl #63
+	mov	x8, #-9223372036854775808
+	csel	x8, x8, xzr, hi
+	orr	x0, x0, x8
 	ret
 
 func0000000000000003:
 	cmp	x1, x2
-	cset	w8, eq
-	orr	x0, x0, x8, lsl #1
+	mov	w8, #2
+	csel	x8, x8, xzr, eq
+	orr	x0, x0, x8
 	ret
 
 func0000000000000002:

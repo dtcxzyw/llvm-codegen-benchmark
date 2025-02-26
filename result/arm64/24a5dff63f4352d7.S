@@ -1,17 +1,19 @@
 func0000000000000004:
 	cmp	x2, #0
+	mov	w8, #16
 	and	w9, w1, #0xff
-	cset	w8, ne
-	orr	w8, w9, w8, lsl #4
-	orr	w0, w8, w0
+	csel	w8, wzr, w8, eq
+	orr	w9, w9, w0
+	orr	w0, w8, w9
 	ret
 
 func0000000000000007:
-	mov	w8, #-1310721
 	cmp	x2, #0
-	cset	w9, ne
-	and	w8, w1, w8
-	orr	w8, w8, w9, lsl #18
+	mov	w8, #262144
+	mov	w9, #-1310721
+	csel	w8, wzr, w8, eq
+	and	w9, w1, w9
+	orr	w8, w9, w8
 	orr	w0, w8, w0
 	ret
 

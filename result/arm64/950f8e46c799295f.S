@@ -25,9 +25,10 @@ func0000000000000044:
 	ret
 
 func0000000000000064:
+	mov	w8, #2
 	tst	w1, #0xfe
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #1
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func000000000000006c:

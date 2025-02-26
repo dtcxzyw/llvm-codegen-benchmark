@@ -1,14 +1,17 @@
 func0000000000000003:
+	mov	w8, #32
 	cmp	x1, #3
-	cset	w8, eq
-	bfi	x0, x8, #5, #1
+	and	x9, x0, #0xffffffffffffffdf
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func0000000000000029:
-	cmp	x1, #49
+	mov	w8, #8
+	cmp	x1, #50
 	and	x9, x0, #0xfffffffffffffff0
-	cset	w8, hi
-	orr	x0, x9, x8, lsl #3
+	csel	x8, xzr, x8, lo
+	orr	x0, x9, x8
 	ret
 
 func0000000000000002:

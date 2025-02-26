@@ -46,16 +46,16 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	and	w8, w0, #0xff
-	cmp	w8, w1, uxtb
-	cset	w8, hs
-	ubfiz	x0, x8, #3, #32
+	and	w9, w0, #0xff
+	mov	w8, #8
+	cmp	w9, w1, uxtb
+	csel	x0, xzr, x8, lo
 	ret
 
 func0000000000000001:
-	and	w8, w0, #0xff
-	cmp	w8, w1, uxtb
-	cset	w8, ne
-	ubfiz	x0, x8, #1, #32
+	and	w9, w0, #0xff
+	mov	w8, #2
+	cmp	w9, w1, uxtb
+	csel	x0, xzr, x8, eq
 	ret
 

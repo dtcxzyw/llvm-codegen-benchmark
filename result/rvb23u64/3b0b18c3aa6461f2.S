@@ -2,7 +2,7 @@ func0000000000000005:
 	addi	a0, a0, -1
 	srliw	a0, a0, 5
 	slli	a0, a0, 3
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000001:

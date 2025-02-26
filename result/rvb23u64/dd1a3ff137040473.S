@@ -11,7 +11,7 @@ func0000000000000008:
 	sltiu	a0, a0, 2
 	lui	a1, 1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1654
+	addiw	a0, a0, 1654
 	ret
 
 func0000000000000006:
@@ -47,7 +47,7 @@ func000000000000000a:
 	sext.h	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000018:

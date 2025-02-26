@@ -1,13 +1,13 @@
 func0000000000000028:
 	seqz	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000034:
 	li	a2, 5
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 8
+	addiw	a1, a1, 8
 	sltu	a0, a1, a0
 	ret
 

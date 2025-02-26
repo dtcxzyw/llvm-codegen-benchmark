@@ -3,7 +3,7 @@ func0000000000000007:
 	sext.w	a0, a0
 	addiw	a3, a3, 255
 	and	a2, a2, a3
-	addi	a3, a3, 256
+	addiw	a3, a3, 256
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

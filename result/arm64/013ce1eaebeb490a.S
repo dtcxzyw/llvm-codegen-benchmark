@@ -1,13 +1,15 @@
 func0000000000000007:
+	mov	w8, #4
 	cmp	w1, #0
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #2
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func000000000000001b:
-	mvn	w8, w1
-	lsr	w8, w8, #31
-	add	x0, x0, w8, uxtw #3
+	mov	w8, #8
+	cmp	w1, #0
+	csel	x8, xzr, x8, lt
+	add	x0, x0, x8
 	ret
 
 func0000000000000006:

@@ -7,8 +7,9 @@ func0000000000000068:
 
 func0000000000000066:
 	cmp	x1, x2
-	cset	w8, ge
-	add	x0, x0, x8, lsl #5
+	mov	w8, #32
+	csel	x8, xzr, x8, lt
+	add	x0, x0, x8
 	ret
 
 func0000000000000064:

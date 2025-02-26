@@ -23,7 +23,7 @@ func00000000000002ac:
 	snez	a0, a0
 	sgtz	a1, a1
 	sh1add	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000238:
@@ -44,7 +44,7 @@ func000000000000006c:
 	czero.eqz	a1, a2, a1
 	slli	a0, a0, 5
 	or	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000534:

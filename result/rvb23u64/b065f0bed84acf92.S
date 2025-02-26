@@ -7,7 +7,7 @@ func0000000000000001:
 func0000000000000014:
 	not	a0, a0
 	bexti	a0, a0, 51
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func000000000000000c:

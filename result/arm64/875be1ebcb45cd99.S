@@ -1,13 +1,13 @@
 func0000000000000001:
+	mov	w8, #256
 	cmp	x0, x1
-	cset	w8, eq
-	lsl	w0, w8, #8
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000006:
+	mov	w8, #256
 	cmp	x0, x1
-	cset	w8, lt
-	lsl	w0, w8, #8
+	csel	w0, w8, wzr, lt
 	ret
 
 func000000000000000a:

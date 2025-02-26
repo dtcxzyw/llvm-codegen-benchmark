@@ -25,10 +25,11 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	tst	w2, #0xffff0000
-	cset	w8, ne
+	lsr	w8, w2, #16
+	cmp	w8, #0
+	mov	w8, #16
+	csel	x8, x8, xzr, ne
 	tst	w0, #0x1
-	ubfiz	x8, x8, #4, #32
 	csel	x0, x1, x8, ne
 	ret
 

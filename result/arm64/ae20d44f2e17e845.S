@@ -29,8 +29,8 @@ func0000000000000003:
 
 func000000000000000c:
 	fsub	d0, d0, d1
+	mov	w8, #2
 	fcmp	d0, #0.0
-	cset	w8, ge
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, ge
 	ret
 

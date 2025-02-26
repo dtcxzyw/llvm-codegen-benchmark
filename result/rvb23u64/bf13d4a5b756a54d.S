@@ -4,7 +4,7 @@ func00000000000001a4:
 	li	a2, 64
 	sub	a3, a2, a1
 	czero.nez	a0, a2, a0
-	addi	a0, a0, 56
+	addiw	a0, a0, 56
 	sub	a0, a0, a1
 	sltu	a0, a0, a3
 	ret

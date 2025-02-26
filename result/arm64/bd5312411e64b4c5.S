@@ -14,7 +14,8 @@ func0000000000000007:
 	mov	w8, #27
 	orr	x9, x0, x1
 	tst	w2, w8
-	cset	w8, ne
-	orr	x0, x9, x8, lsl #32
+	mov	x8, #4294967296
+	csel	x8, xzr, x8, eq
+	orr	x0, x9, x8
 	ret
 

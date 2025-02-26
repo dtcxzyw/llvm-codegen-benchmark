@@ -10,24 +10,24 @@ func000000000000001e:
 func0000000000000012:
 	mov	w8, #4981
 	cmp	w2, w8
-	cset	w8, eq
-	lsl	w8, w8, #4
+	mov	w8, #16
+	csel	w8, w8, wzr, eq
 	orr	w8, w8, w1, lsl #5
 	orr	w0, w0, w8
 	ret
 
 func0000000000000013:
+	mov	w8, #8192
 	cmp	w2, #0
-	lsl	w8, w1, #20
-	cset	w9, eq
-	orr	w8, w8, w9, lsl #13
+	csel	w8, w8, wzr, eq
+	orr	w8, w8, w1, lsl #20
 	orr	w0, w8, w0
 	ret
 
 func0000000000000011:
+	mov	w8, #1073741824
 	cmp	w2, #0
-	cset	w8, ne
-	lsl	w8, w8, #30
+	csel	w8, wzr, w8, eq
 	orr	w8, w8, w1, lsl #8
 	orr	w0, w8, w0
 	ret

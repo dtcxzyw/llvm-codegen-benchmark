@@ -4,7 +4,7 @@ func0000000000000049:
 	slli	a1, a1, 4
 	seqz	a0, a0
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000043:
@@ -13,7 +13,7 @@ func0000000000000043:
 	slli	a1, a1, 4
 	seqz	a0, a0
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000071:
@@ -23,7 +23,7 @@ func0000000000000071:
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000042:

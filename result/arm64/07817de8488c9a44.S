@@ -7,10 +7,10 @@ func0000000000000021:
 	ret
 
 func0000000000000081:
-	cmp	x1, #1
-	cset	w8, hi
+	mov	w8, #2
+	cmp	x1, #2
+	csel	w8, wzr, w8, lo
 	cmp	x0, #0
-	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, ne
 	ret
 

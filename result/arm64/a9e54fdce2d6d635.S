@@ -1,8 +1,8 @@
 func0000000000000021:
 	cmp	w2, #0
-	cset	w8, ne
+	mov	w8, #4
+	csel	x8, xzr, x8, eq
 	cmp	w1, #0
-	ubfiz	x8, x8, #2, #32
 	csel	x0, x8, x0, eq
 	ret
 

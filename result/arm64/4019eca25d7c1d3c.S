@@ -37,20 +37,20 @@ func0000000000000014:
 func000000000000001d:
 	cmp	w2, #3
 	mov	w8, #4194304
-	cset	w9, ne
+	csel	w9, wzr, w8, eq
 	tst	w1, #0x1
 	csel	w8, wzr, w8, ne
-	add	w8, w8, w9, lsl #22
+	add	w8, w8, w9
 	add	w0, w8, w0
 	ret
 
 func000000000000001f:
 	cmp	w2, #0
 	mov	w8, #2
-	cset	w9, ne
+	csel	w9, wzr, w8, eq
 	tst	w1, #0x1
 	csel	w8, wzr, w8, ne
-	add	w8, w8, w9, lsl #1
+	add	w8, w8, w9
 	add	w0, w8, w0
 	ret
 

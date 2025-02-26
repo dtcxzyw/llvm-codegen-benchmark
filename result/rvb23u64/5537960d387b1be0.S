@@ -14,7 +14,7 @@ func0000000000000004:
 	czero.nez	a1, a2, a1
 	li	a2, 1
 	sltiu	a0, a0, 256
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -75,7 +75,7 @@ func0000000000000018:
 	czero.nez	a1, a2, a1
 	li	a2, 15
 	sltiu	a0, a0, 200
-	addi	a1, a1, 18
+	addiw	a1, a1, 18
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

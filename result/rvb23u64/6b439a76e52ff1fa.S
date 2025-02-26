@@ -46,6 +46,6 @@ func000000000000000a:
 func000000000000000c:
 	li	a1, 6
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

@@ -9,10 +9,11 @@ func0000000000000004:
 
 func0000000000000007:
 	and	w8, w2, #0xff
+	and	w9, w1, #0xfffffff3
 	cmp	w8, #12
-	and	w8, w1, #0xfffffff3
-	cset	w9, eq
-	orr	w8, w0, w8
-	orr	w0, w8, w9, lsl #3
+	mov	w8, #8
+	orr	w9, w0, w9
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 

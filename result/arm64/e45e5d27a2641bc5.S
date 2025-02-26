@@ -1,7 +1,7 @@
 func0000000000000021:
+	mov	w8, #1073741824
 	cmp	w0, #0
-	cset	w8, ne
-	lsl	w0, w8, #30
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000001:

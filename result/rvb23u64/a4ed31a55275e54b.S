@@ -8,6 +8,6 @@ func0000000000000001:
 	or	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 164
-	addi	a0, a0, 28
+	addiw	a0, a0, 28
 	ret
 

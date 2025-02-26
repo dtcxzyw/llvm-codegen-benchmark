@@ -7,10 +7,10 @@ func000000000000003f:
 	ret
 
 func0000000000000039:
-	slliw	a1, a1, 8
-	slliw	a0, a0, 16
+	slli	a1, a1, 8
+	slli	a0, a0, 16
 	or	a0, a0, a1
-	addi	a0, a0, 59
+	addiw	a0, a0, 59
 	ret
 
 func0000000000000000:
@@ -30,9 +30,9 @@ func000000000000003d:
 	ret
 
 func0000000000000008:
-	slliw	a1, a1, 8
-	slliw	a0, a0, 16
+	slli	a1, a1, 8
+	slli	a0, a0, 16
 	or	a0, a0, a1
-	addi	a0, a0, 53
+	addiw	a0, a0, 53
 	ret
 

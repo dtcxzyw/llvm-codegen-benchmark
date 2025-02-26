@@ -1,19 +1,19 @@
 func0000000000000001:
+	mov	w8, #2
 	cmp	x0, w1, uxtw
-	cset	w8, eq
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000004:
+	mov	w8, #8192
 	cmp	x0, w1, uxtw
-	cset	w8, lo
-	lsl	w0, w8, #13
+	csel	w0, w8, wzr, lo
 	ret
 
 func0000000000000021:
+	mov	w8, #2
 	cmp	x0, w1, uxtw
-	cset	w8, eq
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000024:
@@ -54,8 +54,8 @@ func0000000000000018:
 	ret
 
 func0000000000000026:
+	mov	w8, #32768
 	cmp	x0, w1, uxtw
-	cset	w8, lt
-	lsl	w0, w8, #15
+	csel	w0, w8, wzr, lt
 	ret
 

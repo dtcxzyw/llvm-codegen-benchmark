@@ -1,9 +1,8 @@
 func0000000000000021:
 	and	w8, w0, #0xff
 	cmp	w8, #2
-	cset	w9, eq
+	csel	w9, w8, wzr, eq
 	cmp	w8, #1
-	lsl	w9, w9, #1
 	csinc	w0, w9, wzr, ne
 	ret
 

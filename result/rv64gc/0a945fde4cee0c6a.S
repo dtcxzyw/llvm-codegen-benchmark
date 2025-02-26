@@ -13,7 +13,7 @@ func0000000000000005:
 
 func000000000000000d:
 	andi	a0, a0, 16
-	slliw	a0, a0, 27
-	addi	a0, a0, 4
+	slli	a0, a0, 27
+	addiw	a0, a0, 4
 	ret
 

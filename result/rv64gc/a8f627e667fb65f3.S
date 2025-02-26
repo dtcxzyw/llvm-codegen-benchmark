@@ -50,6 +50,6 @@ func000000000000003f:
 	li	a1, 7
 .LBB0_4:
 	slli	a0, a1, 2
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000000d:
-	slliw	a1, a1, 1
-	addi	a1, a1, 1
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	mul	a0, a0, a1
 	ret
 
@@ -30,8 +30,8 @@ func000000000000000b:
 	ret
 
 func000000000000001f:
-	slliw	a1, a1, 1
-	addi	a1, a1, 1
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	mul	a0, a0, a1
 	ret
 

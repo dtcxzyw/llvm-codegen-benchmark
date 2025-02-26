@@ -23,7 +23,7 @@ func0000000000000001:
 	xor	a0, a0, a1
 	li	a1, 32
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 17
+	addiw	a0, a0, 17
 	ret
 
 func0000000000000021:

@@ -24,7 +24,7 @@ func0000000000000000:
 	srliw	a2, a2, 3
 	li	a3, 31
 	slli	a3, a3, 11
-	addi	a4, a3, 2016
+	addiw	a4, a3, 2016
 	and	a0, a0, a3
 	and	a1, a1, a4
 	or	a0, a0, a2

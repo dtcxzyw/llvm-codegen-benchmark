@@ -4,7 +4,7 @@ func0000000000000028:
 	andn	a0, a1, a0
 	li	a1, 4
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 307
+	addiw	a0, a0, 307
 	ret
 
 func0000000000000181:
@@ -39,7 +39,7 @@ func0000000000000024:
 	and	a0, a0, a1
 	li	a1, 10
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000188:

@@ -13,6 +13,6 @@ func0000000000000061:
 	srlw	a0, a0, a1
 	andi	a0, a0, 1
 	seqz	a0, a0
-	addi	a0, a0, -1220
+	addiw	a0, a0, -1220
 	ret
 

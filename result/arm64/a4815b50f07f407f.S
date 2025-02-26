@@ -1,9 +1,9 @@
 func00000000000000f8:
-	ubfiz	w8, w1, #8, #8
-	orr	w8, w8, w0
-	cmp	w8, #769
-	cset	w8, hi
-	ubfiz	x0, x8, #4, #32
+	ubfiz	w9, w1, #8, #8
+	mov	w8, #16
+	orr	w9, w9, w0
+	cmp	w9, #769
+	csel	x0, x8, xzr, hi
 	ret
 
 func00000000000000e8:

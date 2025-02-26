@@ -46,7 +46,7 @@ func000000000000000a:
 func000000000000000c:
 	sext.w	a1, a1
 	andi	a2, a2, 1
-	addi	a2, a2, 8
+	addiw	a2, a2, 8
 	addi	a1, a1, -4
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

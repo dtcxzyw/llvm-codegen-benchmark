@@ -21,7 +21,7 @@ func0000000000000006:
 func0000000000000014:
 	andi	a0, a0, 255
 	andi	a1, a1, 1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	sltiu	a0, a0, 2
 	czero.eqz	a0, a1, a0
 	ret

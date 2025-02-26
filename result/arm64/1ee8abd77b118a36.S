@@ -2,8 +2,9 @@ func0000000000000007:
 	and	w8, w2, #0xff
 	and	x9, x0, #0xf8000
 	cmp	w8, #107
-	cset	w8, ne
-	orr	x8, x1, x8, lsl #5
+	mov	w8, #32
+	orr	x9, x9, x1
+	csel	x8, xzr, x8, eq
 	orr	x0, x9, x8
 	ret
 

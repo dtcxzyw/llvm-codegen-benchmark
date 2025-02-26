@@ -1,8 +1,8 @@
 func0000000000000605:
+	mov	w8, #2
 	cmp	w0, #0
-	cset	w8, ne
+	csel	w8, wzr, w8, eq
 	cmp	w1, #0
-	cset	w9, ne
-	orr	w0, w9, w8, lsl #1
+	cinc	w0, w8, ne
 	ret
 

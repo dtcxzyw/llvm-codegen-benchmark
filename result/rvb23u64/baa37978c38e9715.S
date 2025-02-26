@@ -35,6 +35,6 @@ func0000000000000029:
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	andi	a0, a0, 207
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 

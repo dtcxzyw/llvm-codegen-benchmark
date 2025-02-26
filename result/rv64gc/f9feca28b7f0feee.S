@@ -14,6 +14,6 @@ func0000000000000024:
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	ret
 

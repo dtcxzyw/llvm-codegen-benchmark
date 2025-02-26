@@ -59,17 +59,19 @@ func000000000000007f:
 
 func0000000000000043:
 	cmp	w2, #0
-	cset	w8, ne
-	add	x8, x1, w8, uxtw #2
-	add	x8, x8, x0
+	mov	w8, #4
+	add	x9, x1, x0
+	csel	x8, xzr, x8, eq
+	add	x8, x9, x8
 	add	x0, x8, #2
 	ret
 
 func0000000000000040:
 	cmp	w2, #0
-	cset	w8, ne
-	add	x8, x1, w8, uxtw #2
-	add	x8, x8, x0
+	mov	w8, #4
+	add	x9, x1, x0
+	csel	x8, xzr, x8, eq
+	add	x8, x9, x8
 	add	x0, x8, #20
 	ret
 

@@ -18,7 +18,7 @@ func0000000000000281:
 	cmp	w2, #256, lsl #12
 	csel	w8, w0, w1, lo
 	tst	w8, #0xfff8
-	cset	w8, eq
-	lsl	w0, w8, #4
+	mov	w8, #16
+	csel	w0, w8, wzr, eq
 	ret
 

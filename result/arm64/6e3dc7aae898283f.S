@@ -24,9 +24,9 @@ func0000000000000014:
 	ret
 
 func000000000000000a:
-	cmp	w0, #2
-	cset	w8, lt
-	lsl	w0, w8, #7
+	mov	w8, #128
+	cmp	w0, #1
+	csel	w0, wzr, w8, gt
 	ret
 
 func0000000000000006:

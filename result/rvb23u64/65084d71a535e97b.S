@@ -4,7 +4,7 @@ func0000000000000007:
 	slli	a2, a2, 11
 	and	a0, a0, a2
 	or	a0, a0, a1
-	addi	a0, a0, 64
+	addiw	a0, a0, 64
 	ret
 
 func0000000000000003:

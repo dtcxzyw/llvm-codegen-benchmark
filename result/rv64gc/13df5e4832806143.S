@@ -6,7 +6,7 @@ func0000000000000009:
 	mv	a0, a1
 .LBB0_2:
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 
 func0000000000000021:
@@ -16,6 +16,6 @@ func0000000000000021:
 	mv	a0, a1
 .LBB1_2:
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 

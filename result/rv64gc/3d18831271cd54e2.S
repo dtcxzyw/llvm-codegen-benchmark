@@ -22,7 +22,7 @@ func000000000000014c:
 	bne	a1, a3, .LBB2_2
 	sext.w	a2, a2
 	sgtz	a0, a2
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 .LBB2_2:
 	ret
 

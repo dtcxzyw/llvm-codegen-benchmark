@@ -1,8 +1,8 @@
 func0000000000000008:
 	mov	w8, #134217728
 	cmp	w2, w8
-	cset	w8, eq
-	orr	w8, w1, w8, lsl #27
+	csel	w8, w2, wzr, eq
+	orr	w8, w8, w1
 	add	w0, w8, w0
 	ret
 

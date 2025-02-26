@@ -18,7 +18,7 @@ func0000000000000005:
 func0000000000000003:
 	li	a3, 1
 	slli	a3, a3, 11
-	addi	a4, a3, 1920
+	addiw	a4, a3, 1920
 	and	a1, a1, a3
 	and	a2, a2, a4
 	or	a0, a0, a1

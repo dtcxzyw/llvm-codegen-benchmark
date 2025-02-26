@@ -32,15 +32,15 @@ func000000000000000c:
 func0000000000000007:
 	adrp	x8, .LCPI4_0
 	ldr	d1, [x8, :lo12:.LCPI4_0]
+	mov	w8, #2
 	fcmp	d0, d1
-	cset	w8, eq
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000005:
 	fmov	d1, #0.50000000
+	mov	w8, #2
 	fcmp	d0, d1
-	cset	w8, ls
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, hi
 	ret
 

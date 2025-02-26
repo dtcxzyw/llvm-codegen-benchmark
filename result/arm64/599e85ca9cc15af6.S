@@ -22,10 +22,10 @@ func0000000000000607:
 
 func00000000000000b3:
 	cmp	w2, #3
+	mov	w8, #4
 	mov	w9, #8
-	cset	w8, eq
+	csel	x8, x8, xzr, eq
 	cmp	w1, #0
-	ubfiz	x8, x8, #2, #32
 	csel	x8, x9, x8, eq
 	add	x0, x0, x8
 	ret

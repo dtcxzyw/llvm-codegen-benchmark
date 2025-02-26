@@ -12,7 +12,7 @@ func0000000000000048:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	add	a0, a0, a1
 	sltu	a0, a2, a0
-	addi	a0, a0, 18
+	addiw	a0, a0, 18
 	ret
 
 func000000000000000a:

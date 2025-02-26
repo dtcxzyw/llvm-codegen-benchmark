@@ -47,8 +47,9 @@ func0000000000000063:
 
 func0000000000000004:
 	cmp	x1, x2
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #4
+	mov	w8, #16
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func000000000000002c:

@@ -5,7 +5,7 @@ func0000000000000003:
 	addiw	a3, a3, -9
 	andi	a2, a2, 4
 	and	a1, a1, a3
-	addi	a3, a3, 8
+	addiw	a3, a3, 8
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1

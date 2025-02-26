@@ -26,7 +26,7 @@ func0000000000000084:
 	li	a2, 2
 	sltiu	a0, a0, 256
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

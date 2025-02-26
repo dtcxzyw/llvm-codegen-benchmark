@@ -38,7 +38,7 @@ func0000000000000034:
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	seqz	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	sltu	a0, a1, a0
 	ret
 

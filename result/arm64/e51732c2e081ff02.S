@@ -26,10 +26,11 @@ func00000000000000c6:
 	ret
 
 func0000000000000118:
-	tst	x2, #0xffffffff00000000
+	lsr	x8, x2, #32
 	lsr	x9, x1, #16
-	cset	w8, ne
-	lsl	w8, w8, #5
+	cmp	x8, #0
+	mov	w8, #32
+	csel	w8, w8, wzr, ne
 	cmp	x9, #0
 	csel	w0, w0, w8, ne
 	ret
@@ -38,9 +39,9 @@ func0000000000000104:
 	mov	x8, #-4294967297
 	lsr	x9, x1, #48
 	cmp	x2, x8
-	cset	w8, hi
+	mov	w8, #32
+	csel	w8, w8, wzr, hi
 	cmp	x9, #0
-	lsl	w8, w8, #5
 	csel	w0, w0, w8, eq
 	ret
 
@@ -48,9 +49,9 @@ func0000000000000284:
 	lsr	x8, x2, #32
 	lsr	x9, x1, #48
 	cmp	x8, #0
-	cset	w8, eq
+	mov	w8, #32
+	csel	w8, w8, wzr, eq
 	cmp	x9, #0
-	lsl	w8, w8, #5
 	csel	w0, w0, w8, eq
 	ret
 

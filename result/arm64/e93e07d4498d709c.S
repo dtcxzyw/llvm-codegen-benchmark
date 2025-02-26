@@ -9,10 +9,10 @@ func0000000000000002:
 func000000000000000c:
 	mov	x8, #4746794007248502784
 	fmov	d1, x8
+	mov	w8, #2
 	fcmp	d0, d1
-	cset	w8, ge
+	csel	w8, w8, wzr, ge
 	tst	w0, #0x1
-	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, ne
 	ret
 

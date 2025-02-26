@@ -5,7 +5,7 @@ func0000000000000049:
 	seqz	a0, a0
 	slli	a0, a0, 3
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000043:
@@ -15,7 +15,7 @@ func0000000000000043:
 	seqz	a0, a0
 	slli	a0, a0, 3
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000071:
@@ -26,7 +26,7 @@ func0000000000000071:
 	xori	a0, a0, 1
 	slli	a0, a0, 3
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000042:
@@ -48,6 +48,6 @@ func0000000000000014:
 	addi	a0, a0, -1
 	andi	a0, a0, 9
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

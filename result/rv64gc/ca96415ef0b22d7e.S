@@ -1,33 +1,33 @@
 func000000000000003f:
 	andi	a1, a1, 255
 	slli	a1, a1, 3
-	slliw	a0, a0, 11
+	slli	a0, a0, 11
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func000000000000003b:
 	andi	a1, a1, 255
 	slli	a1, a1, 16
-	slliw	a0, a0, 24
+	slli	a0, a0, 24
 	or	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000073:
 	andi	a1, a1, 255
 	slli	a1, a1, 1
-	slliw	a0, a0, 2
+	slli	a0, a0, 2
 	or	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000007f:
 	andi	a1, a1, 255
 	slli	a1, a1, 16
-	slliw	a0, a0, 24
+	slli	a0, a0, 24
 	or	a0, a0, a1
-	addi	a0, a0, 256
+	addiw	a0, a0, 256
 	ret
 
 func000000000000004e:
@@ -82,8 +82,8 @@ func0000000000000034:
 func000000000000000f:
 	andi	a1, a1, 255
 	slli	a1, a1, 16
-	slliw	a0, a0, 24
+	slli	a0, a0, 24
 	or	a0, a0, a1
-	addi	a0, a0, 12
+	addiw	a0, a0, 12
 	ret
 

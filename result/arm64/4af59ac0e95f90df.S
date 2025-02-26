@@ -1,10 +1,10 @@
 func0000000000000021:
 	and	w9, w0, #0xf0
-	mov	w8, #3
+	mov	w8, #4
 	cmp	w9, #128
-	cset	w9, eq
+	mov	w9, #3
+	csel	w8, w8, wzr, eq
 	cmp	w0, #233
-	lsl	w9, w9, #2
-	csel	w0, w8, w9, eq
+	csel	w0, w9, w8, eq
 	ret
 

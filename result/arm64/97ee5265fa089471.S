@@ -8,9 +8,9 @@ func0000000000000012:
 
 func0000000000000015:
 	fabs	d1, d1
+	mov	w8, #8
 	fcmp	d1, d0
-	cset	w8, ls
-	lsl	w0, w8, #3
+	csel	w0, wzr, w8, hi
 	ret
 
 func000000000000001a:
@@ -29,8 +29,8 @@ func000000000000001b:
 
 func0000000000000004:
 	fabs	d1, d1
+	mov	w8, #2
 	fcmp	d1, d0
-	cset	w8, gt
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, gt
 	ret
 

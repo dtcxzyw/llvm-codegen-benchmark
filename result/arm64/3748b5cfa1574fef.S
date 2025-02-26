@@ -23,16 +23,18 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
+	mov	w8, #4194304
 	cmp	w1, #3
-	cset	w8, ne
-	add	w8, w0, w8, lsl #22
+	csel	w8, wzr, w8, eq
+	add	w8, w0, w8
 	and	w0, w8, #0xffc00000
 	ret
 
 func0000000000000030:
+	mov	w8, #128
 	cmp	w1, #0
-	cset	w8, ne
-	add	w8, w0, w8, lsl #7
+	csel	w8, wzr, w8, eq
+	add	w8, w0, w8
 	and	w0, w8, #0xffffff80
 	ret
 

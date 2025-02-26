@@ -5,6 +5,6 @@ func0000000000000007:
 	addi	a0, a1, 87
 	ret
 .LBB0_2:
-	addi	a0, a1, 48
+	addiw	a0, a1, 48
 	ret
 

@@ -47,7 +47,7 @@ func000000000000000a:
 	sgtz	a0, a0
 	li	a1, -8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000061:

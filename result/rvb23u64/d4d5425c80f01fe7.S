@@ -6,7 +6,7 @@ func0000000000000001:
 	czero.nez	a2, a3, a2
 	li	a3, 32
 	xor	a0, a0, a1
-	addi	a2, a2, 24
+	addiw	a2, a2, 24
 	czero.eqz	a1, a2, a0
 	czero.nez	a0, a3, a0
 	or	a0, a0, a1

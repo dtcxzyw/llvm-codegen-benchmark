@@ -7,16 +7,16 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, eq
-	ubfiz	x8, x8, #1, #32
+	csel	x8, x8, xzr, eq
 	lsl	x0, x0, x8
 	ret
 
 func0000000000000004:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, eq
-	ubfiz	x8, x8, #1, #32
+	csel	x8, x8, xzr, eq
 	lsl	x0, x0, x8
 	ret
 

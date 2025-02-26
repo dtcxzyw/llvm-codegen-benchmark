@@ -45,6 +45,6 @@ func0000000000000006:
 	mv	a1, a2
 .LBB4_2:
 	srli	a0, a1, 63
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 

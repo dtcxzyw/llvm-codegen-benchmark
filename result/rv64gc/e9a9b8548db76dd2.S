@@ -62,7 +62,7 @@ func000000000000000c:
 	li	a3, 4
 	bne	a1, a3, .LBB4_2
 	andi	a0, a2, 1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 .LBB4_2:
 	ret
 

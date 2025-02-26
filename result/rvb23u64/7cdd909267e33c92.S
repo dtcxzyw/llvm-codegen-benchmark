@@ -2,7 +2,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	li	a1, 96
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 31
+	addiw	a0, a0, 31
 	ret
 
 func000000000000000c:

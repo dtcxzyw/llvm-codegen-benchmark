@@ -19,11 +19,12 @@ func0000000000000004:
 	add	x9, x9, :lo12:.LCPI1_0
 	movk	x8, #16863, lsl #48
 	fmov	d1, x8
+	mov	w8, #8
 	fdiv	d0, d0, d1
 	fmov	d1, #0.50000000
 	fcmp	d0, d1
-	cset	w8, gt
-	ldr	d0, [x9, w8, uxtw #3]
+	csel	x8, x8, xzr, gt
+	ldr	d0, [x9, x8]
 	ret
 
 func0000000000000003:

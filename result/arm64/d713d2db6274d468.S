@@ -48,8 +48,9 @@ func0000000000000007:
 func0000000000000004:
 	mov	w8, #-2144796672
 	cmp	w0, w8
-	cset	w8, ne
-	add	w0, w0, w8, lsl #16
+	mov	w8, #65536
+	csel	w8, wzr, w8, eq
+	add	w0, w8, w0
 	ret
 
 func0000000000000051:

@@ -60,7 +60,7 @@ func000000000000000d:
 	addiw	a2, a2, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a1, a2, 992
+	addiw	a1, a2, 992
 	and	a0, a0, a1
 	ret
 

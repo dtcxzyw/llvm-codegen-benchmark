@@ -46,7 +46,7 @@ func0000000000000024:
 func000000000000002c:
 	sext.w	a1, a1
 	seqz	a1, a1
-	addi	a1, a1, 222
+	addiw	a1, a1, 222
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

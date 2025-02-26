@@ -32,7 +32,7 @@ func000000000000000a:
 	li	a2, 8
 	slti	a1, a1, 65
 	czero.eqz	a1, a2, a1
-	addi	a2, a1, 615
+	addiw	a2, a1, 615
 	addi	a1, a1, 616
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -58,7 +58,7 @@ func0000000000000004:
 	li	a2, 3
 	sltiu	a1, a1, 7
 	czero.nez	a1, a2, a1
-	addi	a2, a1, 8
+	addiw	a2, a1, 8
 	addi	a1, a1, 7
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

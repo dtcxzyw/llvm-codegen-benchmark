@@ -52,7 +52,7 @@ func00000000000000ca:
 	xor	a0, a0, a1
 	li	a1, -4
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func0000000000000146:
@@ -63,6 +63,6 @@ func0000000000000146:
 	xor	a0, a0, a1
 	li	a1, -4
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 

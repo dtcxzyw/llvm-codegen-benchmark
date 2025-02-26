@@ -6,14 +6,14 @@ func0000000000000033:
 	addi	a0, a0, -1
 	andi	a0, a0, 8
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 .LBB0_2:
 	li	a1, 98
 	addi	a0, a0, -1
 	andi	a0, a0, 8
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000007:
@@ -24,14 +24,14 @@ func0000000000000007:
 	addi	a0, a0, -1
 	andi	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 .LBB1_2:
 	li	a1, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 4
 	or	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000006:
@@ -73,6 +73,6 @@ func0000000000000013:
 	slli	a1, a1, 4
 	andi	a0, a0, 8
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

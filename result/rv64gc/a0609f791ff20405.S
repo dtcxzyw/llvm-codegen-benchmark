@@ -1,6 +1,6 @@
 func0000000000000007:
 	srliw	a0, a0, 28
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 
 func0000000000000005:

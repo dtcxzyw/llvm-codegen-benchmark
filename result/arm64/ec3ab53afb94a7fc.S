@@ -1,8 +1,10 @@
 func0000000000000003:
-	mvn	w8, w1
-	tst	x8, #0x3
-	cset	w8, eq
-	bfi	x0, x8, #5, #1
+	mvn	w9, w1
+	mov	w8, #32
+	tst	x9, #0x3
+	and	x9, x0, #0xffffffffffffffdf
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func0000000000000002:

@@ -10,6 +10,6 @@ func0000000000000001:
 	addiw	a1, a1, -1
 	and	a0, a0, a1
 	sltiu	a0, a0, 164
-	addi	a0, a0, 28
+	addiw	a0, a0, 28
 	ret
 

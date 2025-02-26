@@ -6,11 +6,11 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sub	x8, x0, x1
-	lsr	x8, x8, #62
-	cmp	x8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #3, #32
+	sub	x9, x0, x1
+	mov	w8, #8
+	lsr	x9, x9, #62
+	cmp	x9, #0
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000006:
@@ -20,9 +20,9 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
+	mov	w8, #16
 	cmp	x0, x1
-	cset	w8, eq
-	ubfiz	x0, x8, #4, #32
+	csel	x0, x8, xzr, eq
 	ret
 
 func000000000000002a:
@@ -41,10 +41,10 @@ func0000000000000021:
 	ret
 
 func0000000000000008:
-	sub	x8, x0, x1
-	cmp	x8, #16
-	cset	w8, hi
-	ubfiz	x0, x8, #4, #32
+	sub	x9, x0, x1
+	mov	w8, #16
+	cmp	x9, #16
+	csel	x0, x8, xzr, hi
 	ret
 
 func0000000000000026:

@@ -25,7 +25,7 @@ func0000000000000016:
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 16
+	addiw	a2, a2, 16
 	slt	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -46,7 +46,7 @@ func0000000000000014:
 	andi	a2, a2, 1
 	li	a3, 192
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 63
+	addiw	a2, a2, 63
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

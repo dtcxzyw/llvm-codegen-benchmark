@@ -12,12 +12,12 @@ func0000000000000084:
 
 func0000000000000024:
 	and	w9, w1, #0xff
-	mov	w8, #3
+	mov	w8, #2
 	cmp	w9, #2
-	cset	w9, ne
+	mov	w9, #3
+	csel	w8, wzr, w8, eq
 	tst	w0, #0xfe
-	lsl	w9, w9, #1
-	csel	w0, w8, w9, eq
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000000021:

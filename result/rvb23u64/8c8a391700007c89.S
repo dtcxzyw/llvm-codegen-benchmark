@@ -25,7 +25,7 @@ func0000000000000ae1:
 	sext.w	a1, a1
 	slti	a1, a1, 25
 	xori	a1, a1, 1
-	addi	a1, a1, 6
+	addiw	a1, a1, 6
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -22,9 +22,10 @@ func000000000000004f:
 
 func0000000000000043:
 	cmp	w2, #0
+	mov	w8, #4
 	add	x9, x0, x1
-	cset	w8, ne
-	add	x8, x9, w8, uxtw #2
+	csel	x8, xzr, x8, eq
+	add	x8, x9, x8
 	add	x0, x8, #9
 	ret
 
@@ -39,9 +40,10 @@ func000000000000006b:
 
 func000000000000006f:
 	cmp	w2, #3
+	mov	w8, #64
 	add	x9, x0, x1
-	cset	w8, ne
-	add	x8, x9, x8, lsl #6
+	csel	x8, xzr, x8, eq
+	add	x8, x9, x8
 	add	x0, x8, #56
 	ret
 

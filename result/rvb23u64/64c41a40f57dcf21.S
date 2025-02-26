@@ -12,7 +12,7 @@ func0000000000000028:
 	zext.h	a1, a1
 	addi	a1, a1, -193
 	seqz	a1, a1
-	addi	a1, a1, 16
+	addiw	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000034:
 	addi	a1, a1, -197
 	li	a2, 2
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	sltu	a0, a1, a0
 	ret
 

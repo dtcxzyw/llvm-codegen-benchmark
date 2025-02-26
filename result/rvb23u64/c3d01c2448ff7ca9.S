@@ -1,6 +1,6 @@
 func0000000000000001:
 	srli	a0, a0, 63
-	addi	a0, a0, 38
+	addiw	a0, a0, 38
 	ret
 
 func0000000000000000:

@@ -14,7 +14,7 @@ func0000000000000053:
 	slt	a1, a2, a1
 	andi	a0, a0, 1
 	add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000063:

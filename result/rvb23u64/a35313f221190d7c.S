@@ -10,7 +10,7 @@ func0000000000000024:
 	srliw	a0, a0, 20
 	li	a1, -8
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000008:
@@ -26,7 +26,7 @@ func0000000000000008:
 func000000000000000a:
 	addw	a0, a0, a1
 	slti	a0, a0, 0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000078:
@@ -113,6 +113,6 @@ func0000000000000034:
 	sltiu	a0, a0, 7
 	li	a1, 3
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 

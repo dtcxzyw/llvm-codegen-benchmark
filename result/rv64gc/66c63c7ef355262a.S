@@ -27,7 +27,7 @@ func000000000000008c:
 	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1
-	addi	a0, a0, -6
+	addiw	a0, a0, -6
 	ret
 
 func000000000000030c:

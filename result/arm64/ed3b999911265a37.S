@@ -22,9 +22,9 @@ func0000000000000001:
 func0000000000000021:
 	add	w8, w2, #1
 	cmp	w1, w8
-	cset	w8, eq
+	mov	w8, #2
+	csel	w8, w8, wzr, eq
 	tst	w0, #0x1
-	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, eq
 	ret
 

@@ -18,8 +18,8 @@ func0000000000000003:
 
 func0000000000000002:
 	lui	a1, 65536
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
-	addi	a0, a0, 255
+	addiw	a0, a0, 255
 	ret
 

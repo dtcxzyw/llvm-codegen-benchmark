@@ -4,7 +4,7 @@ func0000000000000011:
 	srli	a0, a0, 62
 	or	a0, a0, a1
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 
 func0000000000000001:
@@ -13,6 +13,6 @@ func0000000000000001:
 	srli	a0, a0, 61
 	or	a0, a0, a1
 	andi	a0, a0, 31
-	addi	a0, a0, 64
+	addiw	a0, a0, 64
 	ret
 

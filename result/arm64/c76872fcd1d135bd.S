@@ -7,8 +7,8 @@ func0000000000000002:
 
 func0000000000000004:
 	fsub	s1, s1, s2
+	mov	w8, #8
 	fcmp	s1, s0
-	cset	w8, gt
-	lsl	w0, w8, #3
+	csel	w0, w8, wzr, gt
 	ret
 

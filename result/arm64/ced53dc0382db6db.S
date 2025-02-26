@@ -1,7 +1,8 @@
 func0000000000000015:
 	cmp	w2, #3
-	cset	w8, gt
-	orr	w8, w1, w8, lsl #13
+	mov	w8, #8192
+	csel	w8, w8, wzr, gt
+	orr	w8, w1, w8
 	and	w0, w8, w0
 	ret
 

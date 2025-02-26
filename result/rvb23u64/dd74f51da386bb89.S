@@ -16,6 +16,6 @@ func000000000000002c:
 	seqz	a1, a1
 	andi	a0, a0, 1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 

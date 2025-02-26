@@ -6,9 +6,10 @@ func0000000000000002:
 	adrp	x9, .LCPI0_0
 	add	x9, x9, :lo12:.LCPI0_0
 	fmov	d1, x8
+	mov	w8, #8
 	fcmp	d0, d1
-	cset	w8, mi
-	ldr	d1, [x9, w8, uxtw #3]
+	csel	x8, x8, xzr, mi
+	ldr	d1, [x9, x8]
 	fmul	d0, d1, d0
 	ret
 

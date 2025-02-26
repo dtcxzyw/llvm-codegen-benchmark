@@ -12,36 +12,41 @@ func0000000000000008:
 	ret
 
 func0000000000000020:
-	tst	w2, #0xc0000000
+	lsr	w8, w2, #30
 	orr	w9, w0, w1
-	cset	w8, ne
-	orr	w8, w9, w8, lsl #30
+	cmp	w8, #0
+	mov	w8, #1073741824
+	csel	w8, wzr, w8, eq
+	orr	w8, w9, w8
 	orr	w0, w8, #0x80000000
 	ret
 
 func000000000000000f:
 	cmp	w2, #0
+	mov	w8, #8
 	orr	w9, w0, w1
-	cset	w8, eq
-	orr	w8, w9, w8, lsl #3
+	csel	w8, w8, wzr, eq
+	orr	w8, w9, w8
 	orr	w0, w8, #0x40
 	ret
 
 func0000000000000026:
-	cmp	w2, #1500
+	mov	w10, #32768
+	cmp	w2, #1501
+	mov	w8, #32
 	orr	w9, w0, w1
-	cset	w8, hi
-	orr	w8, w9, w8, lsl #5
-	mov	w9, #32768
-	movk	w9, #515, lsl #16
-	orr	w0, w8, w9
+	movk	w10, #515, lsl #16
+	csel	w8, wzr, w8, lo
+	orr	w9, w9, w10
+	orr	w0, w9, w8
 	ret
 
 func0000000000000027:
 	cmn	w2, #2
+	mov	w8, #8
 	orr	w9, w0, w1
-	cset	w8, lo
-	orr	w8, w9, w8, lsl #3
+	csel	w8, w8, wzr, lo
+	orr	w8, w9, w8
 	orr	w0, w8, #0x4
 	ret
 

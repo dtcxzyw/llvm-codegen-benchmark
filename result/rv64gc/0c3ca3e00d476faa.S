@@ -8,6 +8,6 @@ func0000000000000061:
 	slli	a0, a0, 2
 	srai	a0, a0, 63
 	andi	a0, a0, 94
-	addi	a0, a0, 32
+	addiw	a0, a0, 32
 	ret
 

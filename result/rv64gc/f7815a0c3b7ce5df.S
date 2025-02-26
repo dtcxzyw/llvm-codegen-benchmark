@@ -1,11 +1,11 @@
 func000000000000000f:
-	slliw	a2, a2, 3
+	slli	a2, a2, 3
 	andi	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 33280
 	and	a0, a0, a2
 	or	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func000000000000000e:

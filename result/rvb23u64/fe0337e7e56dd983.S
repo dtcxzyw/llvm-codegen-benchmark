@@ -27,29 +27,29 @@ func000000000000002b:
 	ret
 
 func0000000000000070:
-	slliw	a2, a2, 2
-	addi	a2, a2, 2
+	slli	a2, a2, 2
+	addiw	a2, a2, 2
 	sh1add	a0, a1, a0
 	sh1add	a0, a2, a0
 	ret
 
 func0000000000000073:
-	slliw	a2, a2, 1
-	addi	a2, a2, 1
+	slli	a2, a2, 1
+	addiw	a2, a2, 1
 	sh1add	a0, a1, a0
 	sh1add	a0, a2, a0
 	ret
 
 func000000000000003f:
-	slliw	a2, a2, 1
-	addi	a2, a2, 1
+	slli	a2, a2, 1
+	addiw	a2, a2, 1
 	sh1add	a0, a1, a0
 	sh1add	a0, a2, a0
 	ret
 
 func00000000000000f3:
-	slliw	a2, a2, 1
-	addi	a2, a2, 1
+	slli	a2, a2, 1
+	addiw	a2, a2, 1
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
 	ret

@@ -5,24 +5,24 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	eor	w8, w0, w1
-	cmp	w8, #3
-	cset	w8, ne
-	lsl	w0, w8, #22
+	eor	w9, w0, w1
+	mov	w8, #4194304
+	cmp	w9, #3
+	csel	w0, wzr, w8, eq
 	ret
 
 func000000000000000c:
-	eor	w8, w0, w1
-	cmp	w8, #3
-	cset	w8, ne
-	lsl	w0, w8, #22
+	eor	w9, w0, w1
+	mov	w8, #4194304
+	cmp	w9, #3
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000004:
-	eor	w8, w0, w1
-	cmp	w8, #16, lsl #12
-	cset	w8, lo
-	lsl	w0, w8, #4
+	eor	w9, w0, w1
+	mov	w8, #16
+	cmp	w9, #16, lsl #12
+	csel	w0, w8, wzr, lo
 	ret
 
 func0000000000000018:

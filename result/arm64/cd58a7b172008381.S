@@ -35,8 +35,8 @@ func0000000000000008:
 
 func0000000000000003:
 	fcmp	d0, #0.0
-	cset	w8, ge
-	ubfiz	x0, x8, #13, #32
+	mov	w8, #8192
+	csel	x0, xzr, x8, lt
 	ret
 
 func0000000000000009:

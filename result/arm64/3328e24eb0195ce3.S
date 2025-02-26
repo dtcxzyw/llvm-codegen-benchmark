@@ -46,15 +46,17 @@ func000000000000001b:
 	mov	x9, #-9223372036854775808
 	madd	x8, x1, x8, x0
 	cmp	x2, x9
-	cset	w9, eq
-	add	x0, x8, w9, uxtw #3
+	mov	w9, #8
+	csel	x9, x9, xzr, eq
+	add	x0, x8, x9
 	ret
 
 func00000000000000c0:
 	cmp	x2, #0
-	add	x8, x0, x1, lsl #2
-	cset	w9, ne
-	add	x0, x8, w9, uxtw #3
+	mov	w8, #8
+	add	x9, x0, x1, lsl #2
+	csel	x8, xzr, x8, eq
+	add	x0, x9, x8
 	ret
 
 func000000000000001e:
@@ -78,9 +80,10 @@ func0000000000000040:
 func000000000000001f:
 	mov	w8, #24
 	cmp	x2, #2
+	mov	w9, #16
 	madd	x8, x1, x8, x0
-	cset	w9, eq
-	add	x0, x8, w9, uxtw #4
+	csel	x9, x9, xzr, eq
+	add	x0, x8, x9
 	ret
 
 func0000000000000013:

@@ -48,8 +48,9 @@ func00000000000000c4:
 
 func000000000000008c:
 	cmp	x2, #0
-	cset	w8, ne
-	add	x8, x1, x8, lsl #11
+	mov	w8, #2048
+	csel	x8, xzr, x8, eq
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, ne
 	ret

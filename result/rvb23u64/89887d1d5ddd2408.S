@@ -29,7 +29,7 @@ func0000000000000081:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -233,7 +233,7 @@ func0000000000000c2a:
 func0000000000000201:
 	srliw	a1, a1, 16
 	seqz	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

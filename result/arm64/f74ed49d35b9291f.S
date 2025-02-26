@@ -1,15 +1,15 @@
 func0000000000000061:
 	add	x8, x1, x2
 	cmp	x8, x0
-	cset	w8, eq
-	lsl	w0, w8, #1
+	mov	w8, #2
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000004:
 	add	x8, x1, x2
 	cmp	x8, x0
-	cset	w8, lo
-	lsl	w0, w8, #13
+	mov	w8, #8192
+	csel	w0, w8, wzr, lo
 	ret
 
 func0000000000000008:
@@ -30,7 +30,7 @@ func0000000000000001:
 func0000000000000021:
 	add	x8, x1, x2
 	cmp	x8, x0
-	cset	w8, ne
-	lsl	w0, w8, #1
+	mov	w8, #2
+	csel	w0, wzr, w8, eq
 	ret
 

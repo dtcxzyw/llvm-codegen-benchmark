@@ -3,6 +3,6 @@ func0000000000000001:
 	srliw	a1, a1, 16
 	add	a0, a0, a1
 	bexti	a0, a0, 16
-	addi	a0, a0, 24
+	addiw	a0, a0, 24
 	ret
 

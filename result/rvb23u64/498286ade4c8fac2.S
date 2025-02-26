@@ -7,7 +7,7 @@ func0000000000000002:
 	li	a2, -256
 	flt.d	a3, fa0, fa5
 	czero.eqz	a2, a2, a3
-	addi	a2, a2, 5
+	addiw	a2, a2, 5
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

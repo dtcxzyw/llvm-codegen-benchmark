@@ -19,9 +19,10 @@ func0000000000000070:
 
 func000000000000007f:
 	cmp	w2, #3
+	mov	w8, #2
 	add	x9, x1, x0
-	cset	w8, eq
-	add	x8, x9, w8, uxtw #1
+	csel	x8, x8, xzr, eq
+	add	x8, x9, x8
 	add	x0, x8, #1
 	ret
 

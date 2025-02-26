@@ -1,25 +1,28 @@
 func0000000000000006:
 	and	w8, w1, #0xff
+	orr	w9, w0, w2, lsl #5
 	cmp	w8, #2
-	orr	w8, w0, w2, lsl #5
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #31
+	mov	w8, #-2147483648
+	csel	w8, w8, wzr, eq
+	orr	w0, w8, w9
 	ret
 
 func000000000000001f:
 	and	w8, w2, #0xff
+	orr	w9, w0, w1, lsl #21
 	cmp	w8, #2
-	orr	w8, w0, w1, lsl #21
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #31
+	mov	w8, #-2147483648
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func000000000000001a:
 	and	w8, w2, #0xff
+	orr	w9, w0, w1, lsl #24
 	cmp	w8, #2
-	orr	w8, w0, w1, lsl #24
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #31
+	mov	w8, #-2147483648
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func000000000000001e:
@@ -36,16 +39,18 @@ func000000000000001e:
 
 func0000000000000013:
 	and	w8, w2, #0xff
+	orr	w9, w0, w1, lsl #20
 	cmp	w8, #1
-	orr	w8, w0, w1, lsl #20
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #15
+	mov	w8, #32768
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000011:
 	tst	w2, #0xff
-	orr	w8, w0, w1, lsl #6
-	cset	w9, ne
-	orr	w0, w8, w9, lsl #5
+	mov	w8, #32
+	orr	w9, w0, w1, lsl #6
+	csel	w8, wzr, w8, eq
+	orr	w0, w9, w8
 	ret
 

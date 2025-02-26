@@ -7,7 +7,7 @@ func0000000000000a50:
 .LBB0_2:
 	srliw	a1, a1, 16
 	seqz	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	add	a0, a0, a1
 	ret
 

@@ -18,7 +18,7 @@ func000000000000000f:
 	lui	a1, 16
 	addiw	a1, a1, -128
 	add	a0, a0, a1
-	addi	a1, a1, 127
+	addiw	a1, a1, 127
 	and	a0, a0, a1
 	ret
 

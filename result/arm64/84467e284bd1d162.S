@@ -10,9 +10,10 @@ func0000000000000010:
 
 func000000000000018e:
 	cmp	w2, #769
-	cset	w8, hi
-	add	x8, x1, w8, uxtw #4
-	add	x0, x8, x0
+	mov	w8, #16
+	add	x9, x1, x0
+	csel	x8, x8, xzr, hi
+	add	x0, x9, x8
 	ret
 
 func000000000000001c:
@@ -27,8 +28,9 @@ func000000000000001c:
 
 func000000000000001f:
 	cmp	w2, #0
-	cset	w8, ne
-	add	x8, x1, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, xzr, x8, eq
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #3
 	ret
 
@@ -108,9 +110,10 @@ func000000000000006f:
 
 func00000000000000ae:
 	cmp	w2, #2
-	cset	w8, gt
-	add	x8, x1, w8, uxtw #1
-	add	x0, x8, x0
+	mov	w8, #2
+	add	x9, x1, x0
+	csel	x8, x8, xzr, gt
+	add	x0, x9, x8
 	ret
 
 func000000000000014c:

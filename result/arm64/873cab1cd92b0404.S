@@ -1,9 +1,9 @@
 func0000000000000026:
 	cmp	w2, #2
+	mov	w8, #16
 	mov	w9, #4
-	cset	w8, eq
+	csel	w8, w8, wzr, eq
 	tst	w1, #0x1
-	lsl	w8, w8, #4
 	csel	w8, w9, w8, ne
 	cmp	w0, w8
 	cset	w0, lt
@@ -62,9 +62,9 @@ func00000000000000c1:
 
 func000000000000002c:
 	cmp	w2, #33
-	cset	w8, eq
+	mov	w8, #2
+	csel	w8, w8, wzr, eq
 	tst	w1, #0x1
-	lsl	w8, w8, #1
 	csinc	w8, w8, wzr, eq
 	cmp	w0, w8
 	cset	w0, ne

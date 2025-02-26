@@ -42,8 +42,8 @@ func000000000000000c:
 	tst	w0, #0x1
 	csel	w8, w1, w2, ne
 	cmp	w8, #0
-	cset	w8, ne
-	lsl	w0, w8, #6
+	mov	w8, #64
+	csel	w0, wzr, w8, eq
 	ret
 
 func000000000000000a:

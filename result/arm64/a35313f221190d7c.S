@@ -45,22 +45,22 @@ func000000000000002a:
 	ret
 
 func000000000000000c:
+	mov	w8, #8
 	cmn	w0, w1
-	cset	w8, ne
-	lsl	w0, w8, #3
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000001:
-	add	w8, w0, w1
-	cmp	w8, #1
-	cset	w8, ne
-	lsl	w0, w8, #1
+	add	w9, w0, w1
+	mov	w8, #2
+	cmp	w9, #1
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000021:
+	mov	w8, #4
 	cmn	w0, w1
-	cset	w8, ne
-	lsl	w0, w8, #2
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000014:

@@ -6,7 +6,7 @@ func0000000000000043:
 	addi	a0, a0, -4
 	seqz	a0, a0
 	sh2add	a0, a0, a1
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000051:

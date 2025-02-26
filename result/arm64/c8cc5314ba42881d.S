@@ -8,9 +8,10 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	and	w8, w1, #0xffff
-	cmp	w8, #5
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #3
+	and	w9, w1, #0xffff
+	mov	w8, #8
+	cmp	w9, #5
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 

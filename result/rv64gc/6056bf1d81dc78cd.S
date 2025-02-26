@@ -6,12 +6,12 @@ func000000000000000f:
 func0000000000000007:
 	andi	a0, a0, 255
 	slli	a0, a0, 4
-	addi	a0, a0, 8
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000005:
-	slliw	a0, a0, 24
-	addi	a0, a0, 1041
+	slli	a0, a0, 24
+	addiw	a0, a0, 1041
 	ret
 
 func0000000000000006:
@@ -25,12 +25,12 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	slliw	a0, a0, 31
-	addi	a0, a0, 18
+	slli	a0, a0, 31
+	addiw	a0, a0, 18
 	ret
 
 func000000000000000d:
-	slliw	a0, a0, 27
-	addi	a0, a0, 4
+	slli	a0, a0, 27
+	addiw	a0, a0, 4
 	ret
 

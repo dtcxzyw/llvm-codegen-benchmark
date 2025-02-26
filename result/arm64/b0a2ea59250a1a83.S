@@ -7,8 +7,8 @@ func0000000000000004:
 
 func0000000000000002:
 	fcmp	s0, #0.0
-	cset	w8, mi
-	ubfiz	x0, x8, #2, #32
+	mov	w8, #4
+	csel	x0, x8, xzr, mi
 	ret
 
 func0000000000000007:
@@ -21,9 +21,9 @@ func0000000000000008:
 	mov	w8, #27432
 	movk	w8, #20078, lsl #16
 	fmov	s1, w8
+	mov	w8, #16384
 	fcmp	s0, s1
-	cset	w8, eq
-	ubfiz	x0, x8, #14, #32
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000005:

@@ -45,9 +45,9 @@ func0000000000000188:
 	sext.w	a0, a0
 	bexti	a1, a1, 19
 	lui	a2, 272
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 255
+	addiw	a1, a1, 255
 	sltu	a0, a1, a0
 	ret
 
@@ -63,7 +63,7 @@ func0000000000000026:
 	andi	a1, a1, 2
 	li	a2, 4
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 16
+	addiw	a1, a1, 16
 	slt	a0, a0, a1
 	ret
 

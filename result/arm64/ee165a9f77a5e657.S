@@ -1,10 +1,10 @@
 func0000000000000021:
+	mov	w8, #8
 	cmp	x1, #63
-	mov	w8, #6
-	cset	w9, eq
+	mov	w9, #6
+	csel	x8, x8, xzr, eq
 	cmp	x0, #31
-	ubfiz	x9, x9, #3, #32
-	csel	x0, x8, x9, eq
+	csel	x0, x9, x8, eq
 	ret
 
 func0000000000000141:

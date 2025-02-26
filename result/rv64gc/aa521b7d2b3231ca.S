@@ -40,7 +40,7 @@ func0000000000000004:
 func0000000000000006:
 	srli	a0, a0, 14
 	andi	a0, a0, 2
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000000c:

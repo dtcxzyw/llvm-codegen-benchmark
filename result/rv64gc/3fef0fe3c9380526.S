@@ -54,7 +54,7 @@ func0000000000000003:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
 	xori	a0, a0, 1
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func000000000000000a:

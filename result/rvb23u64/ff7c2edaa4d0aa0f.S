@@ -1,7 +1,7 @@
 func0000000000000003:
 	slli	a0, a0, 58
 	srli	a0, a0, 57
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000000f:
@@ -21,7 +21,7 @@ func000000000000000b:
 func0000000000000007:
 	slli	a0, a0, 56
 	srli	a0, a0, 55
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000002:

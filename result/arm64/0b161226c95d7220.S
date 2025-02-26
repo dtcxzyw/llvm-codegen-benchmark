@@ -6,9 +6,10 @@ func0000000000000074:
 	ret
 
 func0000000000000066:
-	cmp	x1, #1
-	cset	w8, gt
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	cmp	x1, #2
+	csel	x8, xzr, x8, lt
+	add	x0, x0, x8
 	ret
 
 func0000000000000061:

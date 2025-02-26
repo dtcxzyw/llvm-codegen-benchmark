@@ -32,7 +32,7 @@ func0000000000000006:
 	srai	a0, a0, 6
 	srli	a0, a0, 58
 	slli	a0, a0, 1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000024:

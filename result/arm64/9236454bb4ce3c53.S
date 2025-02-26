@@ -8,12 +8,12 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	tst	w1, #0xff
 	sxtb	w9, w0
-	mov	w8, #6
-	cset	w10, ne
-	lsl	w10, w10, #1
+	mov	w8, #2
+	tst	w1, #0xff
+	csel	w8, wzr, w8, eq
 	cmp	w9, #0
-	csel	w0, w10, w8, ge
+	mov	w9, #6
+	csel	w0, w8, w9, ge
 	ret
 

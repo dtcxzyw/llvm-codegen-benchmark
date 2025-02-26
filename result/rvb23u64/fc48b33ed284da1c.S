@@ -6,7 +6,7 @@ func0000000000000007:
 
 func0000000000000004:
 	andi	a1, a1, 255
-	addi	a1, a1, 256
+	addiw	a1, a1, 256
 	sh3add	a0, a1, a0
 	ret
 

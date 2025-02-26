@@ -79,8 +79,9 @@ func0000000000000020:
 func0000000000000006:
 	mov	w8, #65535
 	bics	wzr, w8, w1
-	cset	w8, eq
-	add	w0, w0, w8, lsl #1
+	mov	w8, #2
+	csel	w8, w8, wzr, eq
+	add	w0, w0, w8
 	ret
 
 func0000000000000029:

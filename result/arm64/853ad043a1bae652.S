@@ -1,7 +1,9 @@
 func0000000000000003:
+	mov	w8, #32
 	tst	x1, #0xfffffffffffffffb
-	cset	w8, ne
-	bfi	w0, w8, #5, #1
+	and	w9, w0, #0xffffffdf
+	csel	w8, wzr, w8, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000002:

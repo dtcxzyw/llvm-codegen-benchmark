@@ -18,6 +18,6 @@ func0000000000000009:
 
 func0000000000000007:
 	bexti	a0, a0, 43
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

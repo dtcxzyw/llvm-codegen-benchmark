@@ -51,7 +51,7 @@ func000000000000000e:
 	li	a2, 15
 	slli	a2, a2, 9
 	add	a1, a1, a2
-	addi	a2, a2, 256
+	addiw	a2, a2, 256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

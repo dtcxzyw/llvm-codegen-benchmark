@@ -5,7 +5,7 @@ func0000000000000007:
 	addi	a0, a1, 95
 	ret
 .LBB0_2:
-	addi	a0, a1, 56
+	addiw	a0, a1, 56
 	ret
 
 func0000000000000017:
@@ -15,6 +15,6 @@ func0000000000000017:
 	addi	a0, a1, 87
 	ret
 .LBB1_2:
-	addi	a0, a1, 48
+	addiw	a0, a1, 48
 	ret
 

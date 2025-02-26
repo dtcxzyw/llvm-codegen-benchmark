@@ -42,7 +42,7 @@ func0000000000000283:
 	xori	a1, a1, 1
 	seqz	a0, a0
 	sh2add	a0, a1, a0
-	addi	a0, a0, 72
+	addiw	a0, a0, 72
 	ret
 
 func0000000000000203:

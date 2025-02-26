@@ -30,7 +30,7 @@ func000000000000000c:
 	slli	a3, a3, 33
 	beq	a1, a3, .LBB2_2
 	andi	a0, a2, 1
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 .LBB2_2:
 	ret
 

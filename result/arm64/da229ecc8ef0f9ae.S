@@ -45,13 +45,12 @@ func0000000000000005:
 	ret
 
 func0000000000000013:
-	tst	w1, #0xffff0000
-	mov	w8, #8
-	cset	w9, ne
+	mov	w8, #16
+	cmp	w1, #16, lsl #12
+	csel	w8, wzr, w8, lo
 	tst	w0, #0x1
-	lsl	w10, w9, #4
-	bfi	w8, w9, #4, #1
-	csel	w8, w10, w8, ne
+	orr	w9, w8, #0x8
+	csel	w8, w8, w9, ne
 	orr	w0, w8, #0x4
 	ret
 

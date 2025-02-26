@@ -180,10 +180,10 @@ func0000000000000308:
 	ret
 
 func0000000000000086:
+	mov	w8, #65536
 	cmp	w0, #16, lsl #12
-	cset	w8, lo
+	csel	w8, w8, wzr, lo
 	cmp	w0, #0
-	lsl	w8, w8, #16
 	csel	w0, wzr, w8, lt
 	ret
 

@@ -47,11 +47,11 @@ func0000000000000318:
 	ret
 
 func0000000000000086:
-	lsr	x8, x0, #32
-	cmp	x8, #0
-	cset	w8, eq
+	lsr	x9, x0, #32
+	mov	x8, #4294967296
+	cmp	x9, #0
+	csel	x8, x8, xzr, eq
 	cmp	x0, #0
-	lsl	x8, x8, #32
 	csel	x0, xzr, x8, lt
 	ret
 

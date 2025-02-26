@@ -35,7 +35,7 @@ func00000000000002a1:
 	sext.w	a1, a1
 	slti	a1, a1, 25
 	xori	a1, a1, 1
-	addi	a1, a1, 6
+	addiw	a1, a1, 6
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

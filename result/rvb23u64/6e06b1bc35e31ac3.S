@@ -102,7 +102,7 @@ func000000000000014a:
 	czero.nez	a1, a1, a2
 	li	a2, 152
 	slti	a0, a0, 9
-	addi	a1, a1, 24
+	addiw	a1, a1, 24
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -172,7 +172,7 @@ func0000000000000144:
 	srliw	a0, a0, 19
 	li	a2, 12
 	andi	a1, a1, 24
-	addi	a1, a1, 36
+	addiw	a1, a1, 36
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

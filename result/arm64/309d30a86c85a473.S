@@ -40,9 +40,9 @@ func0000000000000031:
 
 func0000000000000008:
 	cmp	w2, #16, lsl #12
-	cset	w8, lo
+	mov	w8, #65536
+	csel	w8, w8, wzr, lo
 	tst	w1, #0x1
-	lsl	w8, w8, #16
 	csel	w8, wzr, w8, ne
 	orr	w0, w8, w0
 	ret

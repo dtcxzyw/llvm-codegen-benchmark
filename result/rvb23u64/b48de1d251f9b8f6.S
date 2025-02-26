@@ -19,7 +19,7 @@ func0000000000000061:
 	lui	a2, 64
 	addiw	a2, a2, -24
 	add	a1, a1, a2
-	addi	a2, a2, 20
+	addiw	a2, a2, 20
 	and	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -5,10 +5,11 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	and	w8, w1, #0xff
-	cmp	w8, #26
-	cset	w8, lo
-	eor	w0, w0, w8, lsl #5
+	and	w9, w1, #0xff
+	mov	w8, #32
+	cmp	w9, #26
+	csel	w8, w8, wzr, lo
+	eor	w0, w8, w0
 	ret
 
 func0000000000000001:

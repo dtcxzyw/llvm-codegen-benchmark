@@ -50,7 +50,7 @@ func000000000000002a:
 	czero.eqz	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	slti	a0, a0, 0
-	addi	a2, a2, 83
+	addiw	a2, a2, 83
 	addi	a1, a1, 78
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -78,7 +78,7 @@ func0000000000000084:
 	sltiu	a1, a1, 7
 	sltiu	a0, a0, 4
 	czero.nez	a1, a2, a1
-	addi	a2, a1, 8
+	addiw	a2, a1, 8
 	addi	a1, a1, 7
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

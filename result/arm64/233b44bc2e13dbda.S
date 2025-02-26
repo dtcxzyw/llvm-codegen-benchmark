@@ -8,7 +8,8 @@ func0000000000000013:
 
 func000000000000000b:
 	fcmp	s0, #0.0
-	cset	w8, mi
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, mi
+	add	x0, x0, x8
 	ret
 

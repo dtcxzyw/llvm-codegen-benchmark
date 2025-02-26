@@ -25,8 +25,8 @@ func000000000000000c:
 	ret
 
 func0000000000000009:
+	mov	w8, #256
 	cmp	x0, x1
-	cset	w8, hs
-	ubfiz	x0, x8, #8, #32
+	csel	x0, xzr, x8, lo
 	ret
 

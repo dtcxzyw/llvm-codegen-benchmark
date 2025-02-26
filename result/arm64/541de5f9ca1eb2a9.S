@@ -1,8 +1,8 @@
 func0000000000000021:
-	add	w8, w0, w1
-	tst	w8, #0x7
-	cset	w8, ne
-	lsl	w0, w8, #12
+	add	w9, w0, w1
+	mov	w8, #4096
+	tst	w9, #0x7
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000034:

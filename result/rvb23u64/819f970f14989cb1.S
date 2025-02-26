@@ -2,7 +2,7 @@ func0000000000000081:
 	zext.h	a1, a1
 	addi	a1, a1, -38
 	seqz	a1, a1
-	addi	a1, a1, -12
+	addiw	a1, a1, -12
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -8,16 +8,18 @@ func000000000000001f:
 	ret
 
 func000000000000008f:
+	mov	w8, #16
 	cmp	x1, #1
-	cset	w8, hi
-	add	x8, x0, w8, uxtw #4
+	csel	x8, x8, xzr, hi
+	add	x8, x0, x8
 	add	x0, x8, #48
 	ret
 
 func000000000000008b:
+	mov	w8, #16
 	cmp	x1, #3
-	cset	w8, hi
-	add	x8, x0, w8, uxtw #4
+	csel	x8, x8, xzr, hi
+	add	x8, x0, x8
 	sub	x0, x8, #32
 	ret
 
@@ -50,9 +52,10 @@ func000000000000014c:
 	ret
 
 func0000000000000010:
+	mov	w8, #8
 	cmp	x1, #0
-	cset	w8, ne
-	add	x8, x0, w8, uxtw #3
+	csel	x8, xzr, x8, eq
+	add	x8, x0, x8
 	add	x0, x8, #48
 	ret
 

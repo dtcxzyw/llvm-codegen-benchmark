@@ -6,8 +6,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
+	mov	w8, #64
 	cmp	x0, #0
-	cset	w8, ne
-	lsl	w0, w8, #6
+	csel	w0, wzr, w8, eq
 	ret
 

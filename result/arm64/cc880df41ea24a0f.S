@@ -8,9 +8,10 @@ func00000000000000e1:
 	ret
 
 func0000000000000361:
-	mvn	w8, w2
-	lsr	w8, w8, #31
-	add	x8, x1, w8, uxtw #3
+	cmp	w2, #0
+	mov	w8, #8
+	csel	x8, xzr, x8, lt
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, eq
 	ret

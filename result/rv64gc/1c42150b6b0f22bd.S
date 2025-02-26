@@ -13,10 +13,10 @@ func0000000000000038:
 	ret
 
 func000000000000003d:
-	slliw	a1, a1, 3
+	slli	a1, a1, 3
 	andi	a0, a0, 192
 	or	a0, a0, a1
-	addi	a0, a0, 5
+	addiw	a0, a0, 5
 	ret
 
 func0000000000000008:
@@ -27,10 +27,10 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	slliw	a1, a1, 6
+	slli	a1, a1, 6
 	andi	a0, a0, 56
 	or	a0, a0, a1
-	addi	a0, a0, 5
+	addiw	a0, a0, 5
 	ret
 
 func000000000000003c:

@@ -1,9 +1,9 @@
 func0000000000000034:
 	cmp	x0, #0
-	cneg	x8, x0, mi
-	cmp	x8, #16, lsl #12
-	cset	w8, lo
-	lsl	w0, w8, #4
+	mov	w8, #16
+	cneg	x9, x0, mi
+	cmp	x9, #16, lsl #12
+	csel	w0, w8, wzr, lo
 	ret
 
 func0000000000000014:
@@ -20,10 +20,10 @@ func0000000000000014:
 
 func0000000000000004:
 	cmp	x0, #0
-	cneg	x8, x0, mi
-	lsr	x8, x8, #32
-	cmp	x8, #0
-	cset	w8, eq
-	lsl	w0, w8, #5
+	mov	w8, #32
+	cneg	x9, x0, mi
+	lsr	x9, x9, #32
+	cmp	x9, #0
+	csel	w0, w8, wzr, eq
 	ret
 

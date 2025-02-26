@@ -24,8 +24,8 @@ func00000000000000a8:
 	csel	x8, x0, x8, hi
 	lsr	x8, x8, #60
 	cmp	x8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #3, #32
+	mov	w8, #8
+	csel	x0, xzr, x8, ne
 	ret
 
 func00000000000000b4:

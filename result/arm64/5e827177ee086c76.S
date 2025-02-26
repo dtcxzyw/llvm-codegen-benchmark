@@ -1,10 +1,10 @@
 func0000000000000001:
 	and	x9, x1, #0x7f
-	mov	w8, #6
+	mov	w8, #8
 	cmp	x9, #63
-	cset	w9, eq
+	mov	w9, #6
+	csel	x8, x8, xzr, eq
 	tst	w0, #0x1
-	ubfiz	x9, x9, #3, #32
-	csel	x0, x8, x9, ne
+	csel	x0, x9, x8, ne
 	ret
 

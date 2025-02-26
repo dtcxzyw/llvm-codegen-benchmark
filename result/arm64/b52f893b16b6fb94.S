@@ -20,13 +20,12 @@ func0000000000000007:
 	ret
 
 func0000000000000013:
+	mov	w8, #8
 	tst	w1, #0xfe
-	mov	w8, #64
-	cset	w9, eq
+	csel	w8, w8, wzr, eq
 	tst	w0, #0x1
-	lsl	w10, w9, #3
-	bfi	w8, w9, #3, #1
-	csel	w8, w8, w10, ne
+	orr	w9, w8, #0x40
+	csel	w8, w9, w8, ne
 	orr	w0, w8, #0x20
 	ret
 

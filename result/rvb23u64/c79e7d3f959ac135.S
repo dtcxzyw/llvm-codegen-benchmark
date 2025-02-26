@@ -9,7 +9,7 @@ func000000000000001f:
 	lui	a3, 32
 	addiw	a3, a3, -12
 	add	a2, a2, a3
-	addi	a3, a3, 10
+	addiw	a3, a3, 10
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

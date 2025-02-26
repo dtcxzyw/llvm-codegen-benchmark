@@ -1,12 +1,12 @@
 func000000000000000f:
-	slliw	a0, a0, 16
-	addi	a0, a0, 256
+	slli	a0, a0, 16
+	addiw	a0, a0, 256
 	ret
 
 func0000000000000007:
 	slli	a0, a0, 48
 	srli	a0, a0, 45
-	addi	a0, a0, 6
+	addiw	a0, a0, 6
 	ret
 
 func0000000000000005:

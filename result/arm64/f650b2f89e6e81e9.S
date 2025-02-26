@@ -4,7 +4,7 @@ func0000000000000041:
 	lsr	w8, w8, w0
 	and	w8, w8, #0x7ffff800
 	cmp	w8, w9
-	cset	w8, eq
-	lsl	w0, w8, #7
+	mov	w8, #128
+	csel	w0, w8, wzr, eq
 	ret
 

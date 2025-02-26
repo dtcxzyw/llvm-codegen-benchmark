@@ -26,9 +26,10 @@ func000000000000001f:
 
 func0000000000000060:
 	cmp	w2, #2
-	cset	w8, lt
-	add	x8, x1, w8, uxtw #2
-	add	x0, x0, x8
+	mov	w8, #4
+	add	x9, x0, x1
+	csel	x8, x8, xzr, lt
+	add	x0, x9, x8
 	ret
 
 func000000000000001c:

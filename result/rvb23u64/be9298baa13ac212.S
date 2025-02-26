@@ -5,6 +5,6 @@ func0000000000000001:
 
 func0000000000000005:
 	andi	a0, a0, 15
-	addi	a0, a0, 112
+	addiw	a0, a0, 112
 	ret
 

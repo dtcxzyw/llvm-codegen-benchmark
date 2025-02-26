@@ -1,9 +1,9 @@
 func0000000000000001:
 	addi	a0, a0, 2047
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11
-	addi	a0, a0, 1303
+	addiw	a0, a0, 1303
 	ret
 
 func0000000000000007:

@@ -53,7 +53,7 @@ func000000000000000b:
 	andi	a0, a0, -2048
 	addiw	a2, a2, -8
 	sh1add	a1, a1, a2
-	addi	a2, a2, 6
+	addiw	a2, a2, 6
 	and	a1, a1, a2
 	bclri	a0, a0, 11
 	or	a0, a0, a1

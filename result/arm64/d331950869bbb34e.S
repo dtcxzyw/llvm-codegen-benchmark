@@ -37,9 +37,10 @@ func0000000000000007:
 
 func0000000000000013:
 	tst	w2, #0xfc
+	mov	w8, #4
 	and	w9, w1, #0x2
-	cset	w8, eq
-	orr	w8, w0, w8, lsl #2
+	csel	w8, w8, wzr, eq
+	orr	w9, w0, w9
 	orr	w0, w8, w9
 	ret
 

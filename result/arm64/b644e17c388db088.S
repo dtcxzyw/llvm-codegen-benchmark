@@ -8,8 +8,9 @@ func000000000000052a:
 
 func0000000000000261:
 	cmp	x1, x2
-	cset	w8, lo
-	add	x8, x0, w8, uxtw #4
+	mov	w8, #16
+	csel	x8, x8, xzr, lo
+	add	x8, x0, x8
 	cmp	x8, #568
 	cset	w0, eq
 	ret

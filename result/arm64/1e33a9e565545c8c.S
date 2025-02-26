@@ -1,8 +1,9 @@
 func0000000000000184:
 	lsr	w8, w1, w2
 	tst	w8, #0x1
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000106:

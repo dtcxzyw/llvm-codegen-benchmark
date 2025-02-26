@@ -16,7 +16,7 @@ func0000000000000034:
 	sext.w	a0, a0
 	srli	a1, a1, 51
 	andi	a1, a1, 32
-	addi	a1, a1, 31
+	addiw	a1, a1, 31
 	sltu	a0, a1, a0
 	ret
 

@@ -57,9 +57,9 @@ func0000000000000001:
 func000000000000000c:
 	mov	x8, #4746794007248502784
 	fmov	d1, x8
+	mov	w8, #2
 	fcmp	d0, d1
-	cset	w8, ge
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, ge
 	ret
 
 func000000000000000e:

@@ -2,7 +2,7 @@ func0000000000000074:
 	andi	a0, a0, 255
 	li	a1, 3
 	minu	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000004:

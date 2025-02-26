@@ -12,7 +12,7 @@ func000000000000002c:
 	binvi	a0, a0, 33
 	seqz	a0, a0
 	sh2add	a0, a0, a1
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func0000000000000034:

@@ -1,7 +1,7 @@
 func000000000000000c:
 	slli	a1, a1, 33
 	srai	a1, a1, 32
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	sh2add	a0, a1, a0
 	ret
 

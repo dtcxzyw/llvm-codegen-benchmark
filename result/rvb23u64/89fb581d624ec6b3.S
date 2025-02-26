@@ -16,7 +16,7 @@ func0000000000000019:
 	sext.w	a0, a0
 	li	a1, 256
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 18
+	addiw	a0, a0, 18
 	ret
 
 func0000000000000015:
@@ -32,7 +32,7 @@ func0000000000000015:
 func000000000000000d:
 	sext.w	a0, a0
 	slti	a0, a0, 2
-	addi	a0, a0, 10
+	addiw	a0, a0, 10
 	ret
 
 func0000000000000011:

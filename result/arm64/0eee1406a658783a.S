@@ -20,28 +20,32 @@ func0000000000000010:
 	mov	w8, #-65535
 	add	w8, w1, w8
 	cmn	w8, #16, lsl #12
-	cset	w8, lo
-	orr	w0, w0, w8, lsl #4
+	mov	w8, #16
+	csel	w8, w8, wzr, lo
+	orr	w0, w8, w0
 	ret
 
 func0000000000000071:
-	sub	w8, w1, #40
-	cmn	w8, #6
-	cset	w8, lo
-	orr	w0, w0, w8, lsl #5
+	sub	w9, w1, #40
+	mov	w8, #32
+	cmn	w9, #6
+	csel	w8, w8, wzr, lo
+	orr	w0, w8, w0
 	ret
 
 func0000000000000068:
-	sub	w8, w1, #65
-	cmp	w8, #32
-	cset	w8, lo
-	orr	w0, w0, w8, lsl #13
+	sub	w9, w1, #65
+	mov	w8, #8192
+	cmp	w9, #32
+	csel	w8, w8, wzr, lo
+	orr	w0, w8, w0
 	ret
 
 func0000000000000069:
-	sub	w8, w1, #65
-	cmp	w8, #32
-	cset	w8, lo
-	orr	w0, w0, w8, lsl #13
+	sub	w9, w1, #65
+	mov	w8, #8192
+	cmp	w9, #32
+	csel	w8, w8, wzr, lo
+	orr	w0, w8, w0
 	ret
 

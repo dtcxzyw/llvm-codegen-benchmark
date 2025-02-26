@@ -47,7 +47,7 @@ func0000000000000042:
 	li	a3, 1
 	slli	a3, a3, 11
 	seqz	a2, a2
-	addi	a4, a3, 1024
+	addiw	a4, a3, 1024
 	addi	a2, a2, -1
 	and	a1, a1, a3
 	and	a2, a2, a4

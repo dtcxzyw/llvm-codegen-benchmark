@@ -96,9 +96,10 @@ func0000000000000426:
 	ret
 
 func0000000000000081:
+	mov	w8, #2
 	tst	w1, #0xff
-	cset	w8, ne
-	cmn	w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	cmn	w8, w0
 	cset	w0, eq
 	ret
 

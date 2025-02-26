@@ -1,8 +1,8 @@
 func0000000000000004:
 	andi	a2, a0, 1
-	slliw	a0, a1, 1
+	slli	a0, a1, 1
 	bnez	a2, .LBB0_2
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 .LBB0_2:
 	addiw	a0, a0, 2
@@ -10,9 +10,9 @@ func0000000000000004:
 
 func000000000000000d:
 	andi	a2, a0, 1
-	slliw	a0, a1, 1
+	slli	a0, a1, 1
 	bnez	a2, .LBB1_2
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 .LBB1_2:
 	addiw	a0, a0, 2
@@ -20,9 +20,9 @@ func000000000000000d:
 
 func000000000000001f:
 	andi	a2, a0, 1
-	slliw	a0, a1, 6
+	slli	a0, a1, 6
 	bnez	a2, .LBB2_2
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 .LBB2_2:
 	addiw	a0, a0, 176

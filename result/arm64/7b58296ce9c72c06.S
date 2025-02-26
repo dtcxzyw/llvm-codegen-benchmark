@@ -11,7 +11,7 @@ func0000000000000021:
 	orr	x9, x0, x1
 	movk	x8, #16, lsl #32
 	tst	x9, x8
-	cset	w8, ne
-	ubfiz	x0, x8, #31, #32
+	mov	w8, #-2147483648
+	csel	x0, xzr, x8, eq
 	ret
 

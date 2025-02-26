@@ -1,7 +1,8 @@
 func00000000000000e4:
 	cmn	w2, #1
-	cset	w8, eq
-	add	x8, x1, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, eq
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, lo
 	ret
@@ -36,33 +37,37 @@ func00000000000000c4:
 	ret
 
 func0000000000000361:
-	mvn	w8, w2
-	lsr	w8, w8, #31
-	add	x8, x1, w8, uxtw #3
+	cmp	w2, #0
+	mov	w8, #8
+	csel	x8, xzr, x8, lt
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, eq
 	ret
 
 func000000000000036c:
-	mvn	w8, w2
-	lsr	w8, w8, #31
-	add	x8, x1, w8, uxtw #3
+	cmp	w2, #0
+	mov	w8, #8
+	csel	x8, xzr, x8, lt
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, ne
 	ret
 
 func00000000000000e1:
 	cmp	w2, #63
-	cset	w8, eq
-	add	x8, x1, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, x8, xzr, eq
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, eq
 	ret
 
 func0000000000000084:
 	cmp	w2, #0
-	cset	w8, eq
-	add	x8, x1, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, eq
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, lo
 	ret

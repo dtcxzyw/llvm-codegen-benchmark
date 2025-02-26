@@ -5,6 +5,6 @@ func000000000000000d:
 	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	andi	a0, a0, 207
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 

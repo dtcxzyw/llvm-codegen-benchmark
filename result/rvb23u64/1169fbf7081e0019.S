@@ -23,9 +23,9 @@ func0000000000000006:
 	sext.b	a0, a0
 	lui	a1, 8
 	slti	a0, a0, 0
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000000c:

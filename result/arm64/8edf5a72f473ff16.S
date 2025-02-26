@@ -1,19 +1,22 @@
 func0000000000000015:
+	mov	w8, #2
 	cmp	w1, #1
-	cset	w8, gt
-	orr	x0, x0, x8, lsl #1
+	csel	x8, x8, xzr, gt
+	orr	x0, x0, x8
 	ret
 
 func0000000000000003:
+	mov	w8, #32
 	cmp	w1, #3
-	cset	w8, eq
-	orr	x0, x0, x8, lsl #5
+	csel	x8, x8, xzr, eq
+	orr	x0, x8, x0
 	ret
 
 func000000000000000d:
-	mvn	w8, w1
-	lsr	w8, w8, #31
-	orr	x0, x0, x8, lsl #13
+	mov	w8, #8192
+	cmp	w1, #0
+	csel	x8, xzr, x8, lt
+	orr	x0, x0, x8
 	ret
 
 func0000000000000002:
@@ -24,9 +27,10 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
+	mov	x8, #-9223372036854775808
 	cmp	w1, #1
-	cset	w8, hi
-	orr	x0, x0, x8, lsl #63
+	csel	x8, x8, xzr, hi
+	orr	x0, x8, x0
 	ret
 
 func0000000000000031:
@@ -40,15 +44,17 @@ func0000000000000031:
 	ret
 
 func0000000000000009:
+	mov	x8, #4294967296
 	cmp	w1, #8
-	cset	w8, lo
-	orr	x0, x0, x8, lsl #32
+	csel	x8, x8, xzr, lo
+	orr	x0, x8, x0
 	ret
 
 func0000000000000019:
+	mov	x8, #4294967296
 	cmp	w1, #0
-	cset	w8, ne
-	orr	x0, x0, x8, lsl #32
+	csel	x8, xzr, x8, eq
+	orr	x0, x8, x0
 	ret
 
 func0000000000000029:

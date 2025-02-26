@@ -3,7 +3,7 @@ func0000000000000001:
 	binvi	a1, a1, 12
 	li	a2, 2
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 

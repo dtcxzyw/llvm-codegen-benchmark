@@ -9,7 +9,7 @@ func0000000000000008:
 func0000000000000004:
 	sub	x8, x1, x2
 	cmp	x0, x8
-	cset	w8, lo
-	ubfiz	x0, x8, #2, #32
+	mov	w8, #4
+	csel	x0, x8, xzr, lo
 	ret
 

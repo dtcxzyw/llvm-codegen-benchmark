@@ -1,14 +1,16 @@
 func0000000000000010:
 	fmov	s1, #1.00000000
+	mov	w8, #-2147483648
 	fcmp	s0, s1
-	cset	w8, ne
-	orr	w0, w0, w8, lsl #31
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
 
 func0000000000000005:
 	fcmp	s0, #0.0
-	cset	w8, mi
-	orr	w0, w0, w8, lsl #1
+	mov	w8, #2
+	csel	w8, w8, wzr, mi
+	orr	w0, w8, w0
 	ret
 
 func0000000000000011:

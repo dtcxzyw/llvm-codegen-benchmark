@@ -12,8 +12,8 @@ func0000000000000002:
 
 func000000000000000c:
 	fcmp	s0, s1
-	cset	w8, ge
-	lsl	w0, w8, #1
+	mov	w8, #2
+	csel	w0, w8, wzr, ge
 	ret
 
 func0000000000000003:

@@ -93,7 +93,7 @@ func0000000000000318:
 	czero.eqz	a1, a1, a2
 	li	a2, 7
 	sltiu	a0, a0, 240
-	addi	a1, a1, 15
+	addiw	a1, a1, 15
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

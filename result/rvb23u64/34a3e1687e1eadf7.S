@@ -49,7 +49,7 @@ func000000000000002a:
 	li	a3, 4
 	czero.eqz	a2, a3, a2
 	slti	a1, a1, 0
-	addi	a2, a2, 83
+	addiw	a2, a2, 83
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -148,7 +148,7 @@ func0000000000000084:
 	sltiu	a2, a2, 7
 	sltiu	a1, a1, 4
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 8
+	addiw	a2, a2, 8
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

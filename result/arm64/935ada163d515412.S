@@ -40,9 +40,9 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	and	w8, w0, #0xff
-	cmp	w8, #6
-	cset	w8, eq
-	lsl	w0, w8, #2
+	and	w9, w0, #0xff
+	mov	w8, #4
+	cmp	w9, #6
+	csel	w0, w8, wzr, eq
 	ret
 

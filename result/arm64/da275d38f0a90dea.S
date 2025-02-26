@@ -1,9 +1,9 @@
 func0000000000000015:
 	cmp	w2, #4
+	mov	w8, #64
 	mov	w9, #128
-	cset	w8, gt
+	csel	x8, x8, xzr, gt
 	tst	w1, #0x1
-	ubfiz	x8, x8, #6, #32
 	csel	x8, x9, x8, ne
 	orr	x0, x0, x8
 	ret

@@ -53,22 +53,22 @@ func0000000000001086:
 	ret
 
 func000000000000042c:
+	mov	w8, #2
 	cmp	w1, #33
-	cset	w8, eq
+	csel	w8, w8, wzr, eq
 	cmp	w1, #35
-	lsl	w8, w8, #1
 	csinc	w8, w8, wzr, ne
 	cmp	w8, w0
 	cset	w0, ne
 	ret
 
 func0000000000000438:
+	mov	w8, #4
 	cmp	w1, #2
-	mov	w8, #2
-	cset	w9, eq
+	mov	w9, #2
+	csel	w8, w8, wzr, eq
 	cmp	w1, #1
-	lsl	w9, w9, #2
-	csel	w8, w8, w9, eq
+	csel	w8, w9, w8, eq
 	cmp	w8, w0
 	cset	w0, hi
 	ret

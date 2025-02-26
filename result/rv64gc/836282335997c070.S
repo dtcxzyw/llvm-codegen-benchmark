@@ -72,7 +72,7 @@ func000000000000000c:
 	slli	a2, a2, 3
 	li	a3, 31
 	slli	a3, a3, 11
-	addi	a4, a3, 2016
+	addiw	a4, a3, 2016
 	and	a1, a1, a3
 	and	a2, a2, a4
 	or	a0, a0, a1

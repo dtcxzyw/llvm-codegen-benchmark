@@ -15,7 +15,7 @@ func0000000000000000:
 	lui	a3, 1
 	addiw	a3, a3, -16
 	and	a2, a2, a3
-	addi	a3, a3, 12
+	addiw	a3, a3, 12
 	and	a1, a1, a3
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

@@ -1,7 +1,8 @@
 func0000000000000010:
+	mov	w8, #8
 	tst	w1, #0xffff
-	cset	w8, ne
-	add	x8, x0, w8, uxtw #3
+	csel	x8, xzr, x8, eq
+	add	x8, x0, x8
 	add	x0, x8, #16
 	ret
 

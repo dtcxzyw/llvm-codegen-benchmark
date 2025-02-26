@@ -3,9 +3,9 @@ func0000000000000003:
 	lui	a2, 112
 	xor	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 255
+	addiw	a1, a1, 255
 	and	a0, a0, a1
 	ret
 

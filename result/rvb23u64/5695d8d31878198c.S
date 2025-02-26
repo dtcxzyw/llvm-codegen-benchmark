@@ -1,7 +1,7 @@
 func0000000000000007:
 	binvi	a0, a0, 31
 	seqz	a0, a0
-	addi	a0, a0, 18
+	addiw	a0, a0, 18
 	ret
 
 .LCPI1_0:

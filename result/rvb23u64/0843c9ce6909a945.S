@@ -30,7 +30,7 @@ func0000000000000181:
 	xor	a2, a2, a0
 	binvi	a0, a0, 14
 	czero.eqz	a2, a1, a2
-	addi	a2, a2, 1
+	addiw	a2, a2, 1
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

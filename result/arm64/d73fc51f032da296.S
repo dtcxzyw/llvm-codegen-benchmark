@@ -65,9 +65,9 @@ func0000000000000026:
 	ret
 
 func0000000000000028:
-	add	w8, w1, #1
-	cmp	w8, w0
-	cset	w8, hi
-	lsl	w0, w8, #3
+	add	w9, w1, #1
+	mov	w8, #8
+	cmp	w9, w0
+	csel	w0, w8, wzr, hi
 	ret
 

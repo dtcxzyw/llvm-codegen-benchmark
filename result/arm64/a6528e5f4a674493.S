@@ -34,29 +34,30 @@ func000000000000000a:
 	ret
 
 func0000000000000078:
-	add	x8, x0, x1
-	tst	x8, #0xffe0000000000000
-	cset	w8, ne
-	lsl	x0, x8, #52
+	add	x9, x0, x1
+	mov	x8, #4503599627370496
+	lsr	x9, x9, #53
+	cmp	x9, #0
+	csel	x0, x8, xzr, ne
 	ret
 
 func000000000000000c:
+	mov	w8, #4
 	cmn	x0, x1
-	cset	w8, ne
-	ubfiz	x0, x8, #2, #32
+	csel	x0, xzr, x8, eq
 	ret
 
 func000000000000006c:
-	orr	x8, x0, x1
-	cmp	x8, #0
-	cset	w8, ne
-	ubfiz	x0, x8, #3, #32
+	orr	x9, x0, x1
+	mov	w8, #8
+	cmp	x9, #0
+	csel	x0, xzr, x8, eq
 	ret
 
 func000000000000002c:
+	mov	w8, #16
 	cmn	x0, x1
-	cset	w8, ne
-	ubfiz	x0, x8, #4, #32
+	csel	x0, xzr, x8, eq
 	ret
 
 func0000000000000008:

@@ -19,9 +19,9 @@ func0000000000000023:
 
 func0000000000000007:
 	cmp	w2, #1
-	cset	w8, eq
+	mov	w8, #4
+	csel	w8, w8, wzr, eq
 	tst	w1, #0x1
-	lsl	w8, w8, #2
 	csinc	w8, w8, wzr, ne
 	add	w0, w8, w0
 	ret

@@ -9,9 +9,10 @@ func0000000000000088:
 	ret
 
 func00000000000000aa:
+	mov	w8, #8
 	cmp	w1, #0
-	cset	w8, eq
-	add	w8, w0, w8, lsl #3
+	csel	w8, w8, wzr, eq
+	add	w8, w8, w0
 	cmp	w8, #0
 	cset	w0, gt
 	ret

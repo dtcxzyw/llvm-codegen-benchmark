@@ -11,6 +11,6 @@ func0000000000000001:
 func0000000000000014:
 	andi	a0, a0, 512
 	seqz	a0, a0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

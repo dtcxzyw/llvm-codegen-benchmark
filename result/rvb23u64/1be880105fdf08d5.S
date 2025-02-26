@@ -3,7 +3,7 @@ func000000000000000f:
 	srli	a1, a1, 49
 	andi	a0, a0, 127
 	or	a0, a0, a1
-	addi	a0, a0, 128
+	addiw	a0, a0, 128
 	ret
 
 func000000000000000e:

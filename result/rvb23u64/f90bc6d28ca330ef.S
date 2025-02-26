@@ -23,7 +23,7 @@ func0000000000000034:
 func0000000000000074:
 	lui	a2, 8
 	addiw	a2, a2, -456
-	addi	a3, a2, 455
+	addiw	a3, a2, 455
 	and	a1, a1, a3
 	add	a1, a1, a2
 	zext.h	a0, a0

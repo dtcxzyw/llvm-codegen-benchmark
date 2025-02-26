@@ -11,7 +11,7 @@ func0000000000000015:
 	sgtz	a1, a1
 	andi	a0, a0, 120
 	or	a0, a0, a1
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 
 func0000000000000009:

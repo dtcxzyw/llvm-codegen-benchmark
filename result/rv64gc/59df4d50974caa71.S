@@ -71,8 +71,8 @@ func000000000000002f:
 	ret
 
 func000000000000003d:
-	slliw	a0, a0, 3
-	addi	a0, a0, 6
+	slli	a0, a0, 3
+	addiw	a0, a0, 6
 	ret
 
 func0000000000000039:
@@ -80,8 +80,8 @@ func0000000000000039:
 	ret
 
 func0000000000000011:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000020:

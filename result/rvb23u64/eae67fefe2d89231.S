@@ -21,8 +21,8 @@ func0000000000000006:
 	or	a1, a1, a2
 	lui	a2, 65536
 	or	a0, a0, a1
-	addiw	a1, a2, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
-	addi	a0, a0, 255
+	addiw	a0, a0, 255
 	ret
 

@@ -17,6 +17,6 @@ func0000000000000006:
 	slli	a1, a1, 2
 	subw	a0, a0, a1
 	slti	a0, a0, 96
-	addi	a0, a0, 1460
+	addiw	a0, a0, 1460
 	ret
 

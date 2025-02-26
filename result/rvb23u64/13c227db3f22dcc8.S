@@ -8,6 +8,6 @@ func0000000000000014:
 	bexti	a0, a0, 51
 	lui	a1, 2
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

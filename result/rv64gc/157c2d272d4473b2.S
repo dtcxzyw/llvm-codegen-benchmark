@@ -13,7 +13,7 @@ func0000000000000000:
 	lui	a0, 1
 	addiw	a0, a0, -16
 	bnez	a3, .LBB1_2
-	addi	a0, a0, 12
+	addiw	a0, a0, 12
 	and	a0, a0, a1
 	ret
 .LBB1_2:

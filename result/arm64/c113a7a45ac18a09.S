@@ -16,9 +16,10 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
+	mov	w8, #2
 	cmp	x1, #0
-	cset	w8, ne
-	cmp	w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	cmp	w0, w8
 	cset	w0, eq
 	ret
 

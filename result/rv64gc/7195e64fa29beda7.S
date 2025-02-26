@@ -20,7 +20,7 @@ func0000000000000015:
 	sext.w	a0, a0
 	slti	a0, a0, 25
 	xori	a0, a0, 1
-	addi	a0, a0, 6
+	addiw	a0, a0, 6
 	ret
 
 func000000000000000d:
@@ -53,7 +53,7 @@ func0000000000000031:
 	sext.w	a0, a0
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000009:

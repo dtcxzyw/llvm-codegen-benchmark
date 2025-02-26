@@ -8,8 +8,8 @@ func00000000000000fc:
 	ret
 
 func00000000000000ff:
-	slliw	a1, a1, 1
-	addi	a1, a1, 1
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 104
 	ret
@@ -22,8 +22,8 @@ func000000000000002f:
 	ret
 
 func00000000000000f0:
-	slliw	a1, a1, 1
-	addi	a1, a1, 1
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	sh2add	a0, a1, a0
 	addi	a0, a0, -520
 	ret

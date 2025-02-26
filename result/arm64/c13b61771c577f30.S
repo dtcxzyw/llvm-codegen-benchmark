@@ -8,9 +8,9 @@ func0000000000000001:
 
 func0000000000000004:
 	cmp	w2, #16, lsl #12
-	cset	w8, lo
+	mov	w8, #16
+	csel	w8, w8, wzr, lo
 	tst	w0, #0x1
-	lsl	w8, w8, #4
 	csel	w0, w1, w8, ne
 	ret
 

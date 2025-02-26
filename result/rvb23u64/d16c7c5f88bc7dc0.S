@@ -17,6 +17,6 @@ func0000000000000004:
 	sltu	a0, a0, a1
 	li	a1, 4
 	czero.nez	a0, a1, a0
-	addi	a0, a0, -8
+	addiw	a0, a0, -8
 	ret
 

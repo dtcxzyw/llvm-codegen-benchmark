@@ -50,12 +50,12 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	mvn	w9, w1
-	mov	w8, #4
+	mov	w8, #2
+	cmp	w1, #0
+	mov	w9, #4
+	csel	x8, xzr, x8, lt
 	tst	w0, #0x1
-	lsr	w9, w9, #31
-	ubfiz	x9, x9, #1, #32
-	csel	x0, x8, x9, ne
+	csel	x0, x9, x8, ne
 	ret
 
 func0000000000000008:

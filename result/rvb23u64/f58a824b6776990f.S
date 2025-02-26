@@ -5,9 +5,9 @@ func0000000000000021:
 	seqz	a0, a0
 	or	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func000000000000018c:
@@ -15,7 +15,7 @@ func000000000000018c:
 	sext.w	a0, a0
 	li	a1, 129
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 6
+	addiw	a0, a0, 6
 	ret
 
 func00000000000000c6:

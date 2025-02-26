@@ -69,15 +69,17 @@ func0000000000000053:
 	ret
 
 func0000000000000018:
+	mov	w8, #4
 	cmp	w1, #2
-	cset	w8, lt
-	add	x0, x0, w8, uxtw #2
+	csel	x8, x8, xzr, lt
+	add	x0, x8, x0
 	ret
 
 func0000000000000030:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #1
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func000000000000002b:
@@ -113,9 +115,10 @@ func0000000000000010:
 	ret
 
 func0000000000000031:
+	mov	w8, #8
 	cmp	w1, #0
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #3
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000050:

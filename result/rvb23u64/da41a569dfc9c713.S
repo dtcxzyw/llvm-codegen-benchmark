@@ -48,7 +48,7 @@ func0000000000000008:
 	sltiu	a0, a0, 7
 	li	a1, 8
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	ret
 
 func0000000000000018:

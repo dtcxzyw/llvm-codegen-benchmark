@@ -15,9 +15,9 @@ func0000000000000004:
 	ret
 
 func0000000000000024:
-	sub	x8, x1, #1
-	cmp	x0, x8
-	cset	w8, lo
-	ubfiz	x0, x8, #1, #32
+	sub	x9, x1, #1
+	mov	w8, #2
+	cmp	x0, x9
+	csel	x0, x8, xzr, lo
 	ret
 

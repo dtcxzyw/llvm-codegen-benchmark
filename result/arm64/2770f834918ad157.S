@@ -7,16 +7,18 @@ func0000000000000008:
 	ret
 
 func0000000000000060:
+	mov	w8, #8
 	cmp	w1, #0
-	cset	w8, ne
-	add	w8, w0, w8, lsl #3
+	csel	w8, wzr, w8, eq
+	add	w8, w0, w8
 	lsr	w0, w8, #3
 	ret
 
 func0000000000000062:
+	mov	w8, #4
 	cmp	w1, #0
-	cset	w8, ne
-	add	w8, w0, w8, lsl #2
+	csel	w8, wzr, w8, eq
+	add	w8, w0, w8
 	lsr	w0, w8, #2
 	ret
 

@@ -3,8 +3,8 @@ func0000000000000058:
 	lsr	w8, w8, w0
 	lsr	w8, w8, #16
 	cmp	w8, #16
-	cset	w8, hi
-	lsl	w0, w8, #8
+	mov	w8, #256
+	csel	w0, w8, wzr, hi
 	ret
 
 func0000000000000048:
@@ -12,7 +12,7 @@ func0000000000000048:
 	lsr	w8, w8, w0
 	lsr	w8, w8, #16
 	cmp	w8, #16
-	cset	w8, hi
-	lsl	w0, w8, #8
+	mov	w8, #256
+	csel	w0, w8, wzr, hi
 	ret
 

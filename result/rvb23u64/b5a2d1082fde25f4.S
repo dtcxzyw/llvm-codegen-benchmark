@@ -23,7 +23,7 @@ func000000000000001d:
 	mul	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1
-	addi	a1, a2, 992
+	addiw	a1, a2, 992
 	and	a0, a0, a1
 	ret
 

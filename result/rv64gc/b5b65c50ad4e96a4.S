@@ -23,7 +23,7 @@ func0000000000000001:
 	mv	a0, a1
 	bnez	a3, .LBB2_2
 	seqz	a0, a2
-	addi	a0, a0, 92
+	addiw	a0, a0, 92
 .LBB2_2:
 	ret
 

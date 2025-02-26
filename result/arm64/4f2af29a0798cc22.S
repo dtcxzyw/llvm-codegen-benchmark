@@ -9,17 +9,19 @@ func0000000000000004:
 
 func0000000000000007:
 	tst	w2, #0xe00000
-	cset	w8, ne
-	orr	w8, w1, w8, lsl #20
-	orr	w0, w8, w0
+	mov	w8, #1048576
+	orr	w9, w1, w0
+	csel	w8, wzr, w8, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000006:
 	and	w8, w2, #0xfffffff0
+	orr	w9, w1, w0
 	cmp	w8, #16
-	cset	w8, eq
-	orr	w8, w1, w8, lsl #3
-	orr	w0, w8, w0
+	mov	w8, #8
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000005:

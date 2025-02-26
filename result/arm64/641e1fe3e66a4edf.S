@@ -7,11 +7,12 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	and	w8, w1, #0xff
+	and	w9, w1, #0xff
+	mov	x8, #4294967296
+	cmp	w9, #18
 	mov	w9, w0
-	cmp	w8, #18
-	cset	w8, eq
-	orr	x0, x9, x8, lsl #32
+	csel	x8, x8, xzr, eq
+	orr	x0, x8, x9
 	ret
 
 func0000000000000006:

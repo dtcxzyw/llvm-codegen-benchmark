@@ -5,9 +5,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	mvn	w8, w0
-	lsr	w8, w8, #31
-	ubfiz	x0, x8, #13, #32
+	mov	w8, #8192
+	cmp	w0, #0
+	csel	x0, x8, xzr, ge
 	ret
 
 func0000000000000004:

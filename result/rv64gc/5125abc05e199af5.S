@@ -25,7 +25,7 @@ func0000000000000084:
 	j	.LBB1_4
 .LBB1_2:
 	andi	a1, a1, 1
-	addi	a1, a1, 10
+	addiw	a1, a1, 10
 	srliw	a0, a0, 14
 	bnez	a0, .LBB1_4
 .LBB1_3:

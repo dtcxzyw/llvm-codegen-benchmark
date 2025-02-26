@@ -2,7 +2,7 @@ func0000000000000001:
 	tst	w0, #0x1
 	csel	w8, w2, w1, ne
 	tst	w8, #0xfff8
-	cset	w8, eq
-	lsl	w0, w8, #4
+	mov	w8, #16
+	csel	w0, w8, wzr, eq
 	ret
 

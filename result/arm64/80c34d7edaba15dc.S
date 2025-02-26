@@ -15,9 +15,10 @@ func0000000000000030:
 	ret
 
 func0000000000000028:
+	mov	w8, #8
 	cmp	w1, #0
-	cset	w8, gt
-	add	x0, x0, w8, uxtw #3
+	csel	x8, x8, xzr, gt
+	add	x0, x0, x8
 	ret
 
 func0000000000000007:
@@ -68,9 +69,10 @@ func0000000000000033:
 	ret
 
 func0000000000000063:
+	mov	w8, #16
 	cmp	w1, #769
-	cset	w8, hi
-	add	x0, x0, w8, uxtw #4
+	csel	x8, x8, xzr, hi
+	add	x0, x0, x8
 	ret
 
 func0000000000000020:

@@ -41,7 +41,7 @@ func00000000000000f8:
 	sext.w	a2, a2
 	li	a3, 32
 	czero.eqz	a2, a3, a2
-	addi	a2, a2, 31
+	addiw	a2, a2, 31
 	addw	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

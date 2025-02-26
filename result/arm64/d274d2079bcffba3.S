@@ -17,21 +17,23 @@ func0000000000000004:
 
 func0000000000000007:
 	cmp	w2, #1
+	mov	x8, #4611686018427387904
 	mov	w9, #1073741824
-	cset	w8, eq
+	csel	x8, x8, xzr, eq
 	tst	w1, #0x1
 	csel	x9, x9, xzr, ne
 	orr	x9, x0, x9
-	orr	x0, x9, x8, lsl #62
+	orr	x0, x9, x8
 	ret
 
 func0000000000000006:
 	cmp	w2, #7
+	mov	w8, #64
 	mov	w9, #32
-	cset	w8, eq
+	csel	x8, x8, xzr, eq
 	tst	w1, #0x1
 	csel	x9, x9, xzr, ne
 	orr	x9, x0, x9
-	orr	x0, x9, x8, lsl #6
+	orr	x0, x9, x8
 	ret
 

@@ -37,8 +37,9 @@ func00000000000000e1:
 func00000000000000ec:
 	and	w8, w2, #0xff
 	cmp	w8, #2
-	cset	w8, eq
-	add	x8, x1, w8, uxtw #4
+	mov	w8, #16
+	csel	x8, x8, xzr, eq
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, ne
 	ret

@@ -17,23 +17,23 @@ func0000000000000002:
 	ret
 
 func000000000000003f:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000002f:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000000f:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000027:
-	slliw	a0, a0, 2
-	addi	a0, a0, 3
+	slli	a0, a0, 2
+	addiw	a0, a0, 3
 	ret
 
 func0000000000000026:
@@ -43,7 +43,7 @@ func0000000000000026:
 	ret
 
 func000000000000001f:
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

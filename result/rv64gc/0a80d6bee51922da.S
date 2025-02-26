@@ -15,7 +15,7 @@ func0000000000000006:
 	bnez	a0, .LBB1_2
 	sraiw	a0, a1, 31
 	andi	a0, a0, 13
-	addi	a0, a0, 32
+	addiw	a0, a0, 32
 	ret
 .LBB1_2:
 	li	a0, 43

@@ -3,7 +3,7 @@ func0000000000000001:
 	bnez	a0, .LBB0_2
 	xor	a1, a1, a2
 	seqz	a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 .LBB0_2:
 	li	a0, 6

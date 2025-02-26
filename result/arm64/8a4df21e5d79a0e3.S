@@ -9,8 +9,9 @@ func0000000000000018:
 
 func000000000000001c:
 	tst	w2, #0xff
-	cset	w8, ne
-	add	x8, x1, w8, uxtw #1
+	mov	w8, #2
+	csel	x8, xzr, x8, eq
+	add	x8, x1, x8
 	sub	x0, x8, x0
 	ret
 

@@ -1,18 +1,18 @@
 func0000000000000094:
 	lsr	x8, x2, #32
 	cmp	x8, #0
-	cset	w8, eq
+	mov	w8, #32
+	csel	w8, w8, wzr, eq
 	cmp	x1, #16, lsl #12
-	lsl	w8, w8, #5
 	csel	w0, w0, w8, lo
 	ret
 
 func0000000000000294:
 	lsr	x8, x2, #32
 	cmp	x8, #0
-	cset	w8, eq
+	mov	w8, #32
+	csel	w8, w8, wzr, eq
 	cmp	x1, #16, lsl #12
-	lsl	w8, w8, #5
 	csel	w0, w0, w8, lo
 	ret
 

@@ -1,10 +1,11 @@
 func0000000000000295:
-	cmp	w0, #3
-	cset	w8, gt
+	mov	w8, #8192
 	cmp	w1, #3
-	cset	w9, gt
-	lsl	w9, w9, #13
-	orr	w0, w9, w8, lsl #14
+	mov	w9, #16384
+	csel	w8, w8, wzr, gt
+	cmp	w0, #3
+	csel	w9, w9, wzr, gt
+	orr	w0, w9, w8
 	ret
 
 func0000000000000043:
@@ -30,20 +31,23 @@ func0000000000000042:
 	ret
 
 func0000000000000283:
+	mov	w8, #4
 	cmp	w1, #7
-	mov	w8, #72
-	cset	w9, gt
+	mov	w9, #72
+	csel	w8, w8, wzr, gt
 	cmp	w0, #8
-	cinc	w8, w8, eq
-	orr	w0, w8, w9, lsl #2
+	cinc	w9, w9, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000203:
+	lsr	w9, w1, #24
+	mov	w8, #8
+	cmp	w9, #0
+	mov	w9, #4
+	csel	w8, w8, wzr, ne
 	cmp	w0, #0
-	cset	w8, ne
-	tst	w1, #0xff000000
-	cset	w9, ne
-	lsl	w9, w9, #3
-	orr	w0, w9, w8, lsl #2
+	csel	w9, wzr, w9, eq
+	orr	w0, w9, w8
 	ret
 

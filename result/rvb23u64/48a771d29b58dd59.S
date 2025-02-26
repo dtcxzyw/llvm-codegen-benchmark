@@ -1,6 +1,6 @@
 func0000000000000003:
 	srai	a0, a0, 32
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000000:

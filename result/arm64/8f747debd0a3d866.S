@@ -18,9 +18,9 @@ func0000000000000005:
 	ret
 
 func0000000000000011:
-	cmp	w1, #511
-	cset	w8, hi
-	lsl	w8, w8, #1
+	mov	w8, #2
+	cmp	w1, #512
+	csel	w8, wzr, w8, lo
 	bfxil	w8, w0, #18, #1
 	mov	x0, x8
 	ret
@@ -42,9 +42,10 @@ func0000000000000031:
 	ret
 
 func0000000000000014:
+	mov	w8, #8
+	ubfx	w9, w1, #1, #7
 	cmp	w0, #0
-	ubfx	w8, w1, #1, #7
-	cset	w9, gt
-	orr	w0, w8, w9, lsl #3
+	csel	w8, w8, wzr, gt
+	orr	w0, w8, w9
 	ret
 

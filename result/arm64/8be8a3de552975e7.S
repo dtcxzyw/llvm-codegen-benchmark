@@ -7,9 +7,10 @@ func0000000000000015:
 	ret
 
 func0000000000000003:
+	mov	w8, #2
 	tst	w1, #0xffff
-	cset	w8, ne
-	orr	w0, w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
 
 func0000000000000002:
@@ -21,9 +22,9 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
-	and	w8, w1, #0xffff
-	cmp	w8, #1
-	cset	w8, hi
-	orr	w0, w0, w8, lsl #7
+	mov	w8, #-128
+	tst	w1, #0xfffe
+	csel	w8, w8, wzr, ne
+	orr	w0, w8, w0
 	ret
 

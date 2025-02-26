@@ -11,7 +11,7 @@ func0000000000000008:
 	lui	a3, 16
 	addiw	a3, a3, -10
 	add	a2, a2, a3
-	addi	a3, a3, 9
+	addiw	a3, a3, 9
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

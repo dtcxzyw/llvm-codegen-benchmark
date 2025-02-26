@@ -1,7 +1,8 @@
 func0000000000000081:
-	lsr	x8, x0, x1
-	ubfx	x8, x8, #32, #1
-	lsl	w0, w8, #1
+	lsr	x9, x0, x1
+	mov	w8, #2
+	tst	x9, #0x100000000
+	csel	w0, wzr, w8, eq
 	ret
 
 func00000000000000c1:
@@ -12,7 +13,9 @@ func00000000000000c1:
 	ret
 
 func00000000000000e1:
-	lsr	x8, x0, x1
-	ubfiz	w0, w8, #1, #1
+	lsr	x9, x0, x1
+	mov	w8, #2
+	tst	x9, #0x1
+	csel	w0, wzr, w8, eq
 	ret
 

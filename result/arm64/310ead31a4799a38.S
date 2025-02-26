@@ -1,8 +1,8 @@
 func0000000000000021:
 	tst	w2, #0xfff8
-	cset	w8, eq
+	mov	w8, #16
+	csel	w8, w8, wzr, eq
 	cmp	w1, #0
-	lsl	w8, w8, #4
 	csel	w0, w0, w8, eq
 	ret
 

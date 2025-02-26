@@ -16,10 +16,11 @@ func000000000000002b:
 	sxtb	w8, w2
 	mov	w9, #8192
 	cmp	w8, #0
-	cset	w8, gt
+	mov	w8, #4096
+	csel	x8, x8, xzr, gt
 	tst	w1, #0x1
-	orr	x8, x0, x8, lsl #12
 	csel	x9, x9, xzr, ne
+	orr	x9, x0, x9
 	orr	x0, x8, x9
 	ret
 

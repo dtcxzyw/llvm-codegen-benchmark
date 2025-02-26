@@ -50,10 +50,11 @@ func0000000000000141:
 	ret
 
 func0000000000000184:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, ne
-	cmp	w0, w8, lsl #1
-	cset	w0, hi
+	csel	w8, wzr, w8, eq
+	cmp	w8, w0
+	cset	w0, lo
 	ret
 
 func0000000000000028:
@@ -99,10 +100,11 @@ func0000000000000158:
 	ret
 
 func000000000000002a:
+	mov	w8, #128
 	cmp	w1, #1
-	cset	w8, eq
-	cmp	w0, w8, lsl #7
-	cset	w0, lt
+	csel	w8, w8, wzr, eq
+	cmp	w8, w0
+	cset	w0, gt
 	ret
 
 func000000000000002c:

@@ -12,10 +12,10 @@ func0000000000000294:
 
 func0000000000000021:
 	cmp	w2, #4, lsl #12
+	mov	w8, #-2147483648
 	mov	w9, #33554432
-	cset	w8, eq
+	csel	w8, w8, wzr, eq
 	cmp	w2, #10, lsl #12
-	lsl	w8, w8, #31
 	csel	w8, w9, w8, eq
 	tst	w0, #0x1
 	csel	w0, w1, w8, ne

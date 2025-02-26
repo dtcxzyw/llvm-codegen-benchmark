@@ -8,7 +8,7 @@ func0000000000000003:
 	or	a1, a1, a2
 	andi	a0, a0, 1
 	sh3add	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000002:

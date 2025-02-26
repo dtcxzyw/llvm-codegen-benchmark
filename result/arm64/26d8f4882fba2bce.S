@@ -18,10 +18,10 @@ func0000000000000001:
 	ret
 
 func000000000000002c:
-	orr	x8, x0, x1
-	cmp	x8, #0
-	cset	w8, ne
-	ubfiz	x0, x8, #3, #32
+	orr	x9, x0, x1
+	mov	w8, #8
+	cmp	x9, #0
+	csel	x0, xzr, x8, eq
 	ret
 
 func0000000000000004:

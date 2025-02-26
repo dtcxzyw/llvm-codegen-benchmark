@@ -36,13 +36,13 @@ func0000000000000007:
 
 func0000000000000003:
 	fcmp	d0, d1
-	cset	w8, ge
-	ubfiz	x0, x8, #1, #32
+	mov	w8, #2
+	csel	x0, xzr, x8, lt
 	ret
 
 func000000000000000b:
 	fcmp	d0, d1
-	cset	w8, gt
-	ubfiz	x0, x8, #1, #32
+	mov	w8, #2
+	csel	x0, xzr, x8, le
 	ret
 

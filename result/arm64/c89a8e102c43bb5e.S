@@ -1,10 +1,10 @@
 func0000000000000009:
 	mov	w8, #134217728
-	lsl	w9, w0, #5
+	lsr	w9, w0, #2
 	cmp	w1, w8
-	cset	w8, eq
-	and	w9, w9, #0x80
-	orr	w0, w9, w8, lsl #4
+	mov	w8, #16
+	csel	w0, w8, wzr, eq
+	bfi	w0, w9, #7, #1
 	ret
 
 func0000000000000003:
@@ -17,9 +17,9 @@ func0000000000000003:
 	ret
 
 func0000000000000015:
+	mov	w8, #4
 	cmp	w0, #0
-	ubfiz	w8, w1, #3, #4
-	cset	w9, gt
-	orr	w0, w8, w9, lsl #2
+	csel	w0, w8, wzr, gt
+	bfi	w0, w1, #3, #4
 	ret
 

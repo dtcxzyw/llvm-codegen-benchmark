@@ -7,12 +7,12 @@ func0000000000000001:
 func0000000000000007:
 	slli	a0, a0, 61
 	srli	a0, a0, 58
-	addi	a0, a0, 5
+	addiw	a0, a0, 5
 	ret
 
 func0000000000000005:
 	slli	a0, a0, 61
 	srli	a0, a0, 58
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

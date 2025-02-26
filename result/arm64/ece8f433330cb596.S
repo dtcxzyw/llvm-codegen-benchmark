@@ -25,23 +25,26 @@ func000000000000001b:
 
 func0000000000000019:
 	cmp	w2, #1
-	orr	w8, w0, w1, lsl #16
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #7
+	mov	w8, #128
+	orr	w9, w0, w1, lsl #16
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func000000000000001d:
 	cmp	w2, #1
-	orr	w8, w0, w1, lsl #8
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #7
+	mov	w8, #128
+	orr	w9, w0, w1, lsl #8
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func0000000000000013:
 	cmp	w2, #1
-	orr	w8, w0, w1, lsl #20
-	cset	w9, eq
-	orr	w0, w8, w9, lsl #15
+	mov	w8, #32768
+	orr	w9, w0, w1, lsl #20
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 
 func000000000000008f:
@@ -64,8 +67,9 @@ func0000000000000011:
 
 func00000000000000a0:
 	cmp	w2, #255
-	orr	w8, w0, w1, lsl #7
-	cset	w9, gt
-	orr	w0, w8, w9, lsl #15
+	mov	w8, #32768
+	orr	w9, w0, w1, lsl #7
+	csel	w8, w8, wzr, gt
+	orr	w0, w9, w8
 	ret
 

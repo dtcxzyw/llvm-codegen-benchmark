@@ -5,6 +5,6 @@ func0000000000000007:
 	ret
 .LBB0_2:
 	andi	a2, a2, 15
-	addi	a0, a2, 48
+	addiw	a0, a2, 48
 	ret
 

@@ -1,17 +1,19 @@
 func0000000000000008:
 	mov	w8, #33554944
+	orr	w9, w0, w1
 	cmp	w2, w8
-	cset	w8, eq
-	orr	w8, w1, w8, lsl #18
-	orr	w8, w0, w8
+	mov	w8, #262144
+	csel	w8, w8, wzr, eq
+	orr	w8, w9, w8
 	orr	w0, w8, #0x200
 	ret
 
 func000000000000000f:
 	cmp	w2, #0
-	cset	w8, ne
-	orr	w8, w1, w8, lsl #2
-	orr	w8, w8, w0
+	mov	w8, #4
+	orr	w9, w1, w0
+	csel	w8, wzr, w8, eq
+	orr	w8, w9, w8
 	orr	w0, w8, #0x40
 	ret
 
@@ -29,9 +31,10 @@ func000000000000000c:
 
 func000000000000000b:
 	cmp	w2, #0
-	cset	w8, ne
-	orr	w8, w1, w8, lsl #14
-	orr	w8, w0, w8
+	mov	w8, #16384
+	orr	w9, w0, w1
+	csel	w8, wzr, w8, eq
+	orr	w8, w9, w8
 	orr	w0, w8, #0x800
 	ret
 

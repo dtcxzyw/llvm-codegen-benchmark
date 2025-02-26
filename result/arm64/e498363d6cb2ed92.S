@@ -15,10 +15,11 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
+	mov	w8, #2
 	cmp	w1, #8
-	cset	w8, eq
-	lsl	w8, w8, #9
-	orr	w0, w8, w0, lsl #8
+	csel	w8, w8, wzr, eq
+	orr	w8, w0, w8
+	lsl	w0, w8, #8
 	ret
 
 func000000000000000c:

@@ -33,7 +33,7 @@ func0000000000000001:
 func0000000000000008:
 	sext.w	a1, a1
 	andi	a0, a0, 1
-	addi	a0, a0, 16
+	addiw	a0, a0, 16
 	sltu	a0, a1, a0
 	ret
 

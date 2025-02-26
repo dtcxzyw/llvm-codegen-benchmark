@@ -44,10 +44,10 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	and	w8, w0, #0xff
-	cmp	w8, #12
-	cset	w8, lo
-	lsl	w0, w8, #11
+	and	w9, w0, #0xff
+	mov	w8, #2048
+	cmp	w9, #12
+	csel	w0, w8, wzr, lo
 	ret
 
 func0000000000000018:

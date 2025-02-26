@@ -21,10 +21,10 @@ func0000000000000021:
 	ret
 
 func000000000000000c:
-	mul	w8, w0, w1
-	cmp	w8, #0
-	cset	w8, ne
-	lsl	w0, w8, #6
+	mul	w9, w0, w1
+	mov	w8, #64
+	cmp	w9, #0
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000006:

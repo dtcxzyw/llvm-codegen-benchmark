@@ -1,9 +1,9 @@
 func0000000000000087:
+	mov	w8, #4194304
 	cmp	w1, #3
-	cset	w8, ne
+	csel	w9, wzr, w8, eq
 	cmp	w0, #3
-	cset	w9, ne
-	lsl	w9, w9, #22
-	add	w0, w9, w8, lsl #22
+	csel	w8, wzr, w8, eq
+	add	w0, w8, w9
 	ret
 

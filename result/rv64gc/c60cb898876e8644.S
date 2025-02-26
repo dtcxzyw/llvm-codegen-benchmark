@@ -3,7 +3,7 @@ func00000000000001b4:
 	addiw	a2, a2, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a1, a2, 992
+	addiw	a1, a2, 992
 	and	a0, a0, a1
 	sltiu	a0, a0, 1000
 	ret
@@ -13,7 +13,7 @@ func00000000000001d4:
 	addiw	a2, a2, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a1, a2, 992
+	addiw	a1, a2, 992
 	and	a0, a0, a1
 	sltiu	a0, a0, 1000
 	ret
@@ -21,7 +21,7 @@ func00000000000001d4:
 func00000000000001f4:
 	lui	a2, 16
 	addiw	a2, a2, -32
-	addi	a3, a2, 26
+	addiw	a3, a2, 26
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	and	a0, a0, a2

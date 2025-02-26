@@ -57,7 +57,7 @@ func00000000000000b5:
 	sub	a2, a2, a1
 	addiw	a3, a3, -10
 	add	a2, a2, a3
-	addi	a3, a3, 9
+	addiw	a3, a3, 9
 	and	a2, a2, a3
 	sltu	a0, a2, a0
 	xori	a0, a0, 1

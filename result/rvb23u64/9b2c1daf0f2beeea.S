@@ -4,7 +4,7 @@ func0000000000000086:
 	slti	a0, a0, 4
 	li	a1, 16
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 224
+	addiw	a0, a0, 224
 	ret
 
 func0000000000000001:

@@ -7,8 +7,9 @@ func0000000000000002:
 
 func0000000000000003:
 	tst	w1, w2
+	mov	w8, #4
 	and	w9, w0, #0xfffffffe
-	cset	w8, ne
-	orr	w0, w9, w8, lsl #2
+	csel	w8, wzr, w8, eq
+	orr	w0, w8, w9
 	ret
 

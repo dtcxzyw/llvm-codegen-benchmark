@@ -1,7 +1,9 @@
 func0000000000000003:
 	cmp	w1, w2
-	cset	w8, eq
-	bfi	x0, x8, #13, #1
+	mov	w8, #8192
+	and	x9, x0, #0xffffffffffffdfff
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func0000000000000002:

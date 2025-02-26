@@ -19,10 +19,11 @@ func0000000000000004:
 	adrp	x9, .LCPI1_1
 	add	x9, x9, :lo12:.LCPI1_1
 	ldr	d1, [x8, :lo12:.LCPI1_0]
+	mov	w8, #8
 	fmul	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w8, gt
-	ldr	d0, [x9, w8, uxtw #3]
+	csel	x8, x8, xzr, gt
+	ldr	d0, [x9, x8]
 	ret
 
 .LCPI2_0:
@@ -36,8 +37,9 @@ func0000000000000008:
 	adrp	x9, .LCPI2_1
 	add	x9, x9, :lo12:.LCPI2_1
 	ldr	d1, [x8, :lo12:.LCPI2_0]
+	mov	w8, #8
 	fcmp	d0, d1
-	cset	w8, eq
-	ldr	d0, [x9, w8, uxtw #3]
+	csel	x8, x8, xzr, eq
+	ldr	d0, [x9, x8]
 	ret
 

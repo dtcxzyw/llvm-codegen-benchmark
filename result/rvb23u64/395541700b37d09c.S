@@ -65,7 +65,7 @@ func0000000000000181:
 func00000000000000c4:
 	sext.w	a1, a1
 	slti	a1, a1, -1900
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
 

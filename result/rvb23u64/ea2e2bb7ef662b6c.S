@@ -4,8 +4,8 @@ func000000000000000b:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	slliw	a0, a0, 1
-	addi	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000009:
@@ -14,7 +14,7 @@ func0000000000000009:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	slliw	a0, a0, 16
-	addi	a0, a0, 18
+	slli	a0, a0, 16
+	addiw	a0, a0, 18
 	ret
 

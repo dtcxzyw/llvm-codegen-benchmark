@@ -23,9 +23,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
+	mov	w8, #8
 	cmp	w0, w1
-	cset	w8, ge
-	lsl	w0, w8, #3
+	csel	w0, wzr, w8, lt
 	ret
 
 func0000000000000008:
@@ -48,8 +48,8 @@ func0000000000000041:
 	ret
 
 func0000000000000007:
+	mov	w8, #256
 	cmp	w0, w1
-	cset	w8, le
-	lsl	w0, w8, #8
+	csel	w0, wzr, w8, gt
 	ret
 

@@ -17,9 +17,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	mov	w8, #2
 	cmp	x0, x1
-	cset	w8, lo
-	ubfiz	x0, x8, #1, #32
+	csel	x0, x8, xzr, lo
 	ret
 
 func0000000000000008:

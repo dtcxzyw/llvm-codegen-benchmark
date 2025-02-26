@@ -6,10 +6,10 @@ func0000000000000010:
 	ret
 
 func0000000000000015:
+	mov	w8, #4194304
 	cmp	w1, #3
-	lsl	w8, w0, #22
-	cset	w9, ne
-	add	w0, w8, w9, lsl #22
+	csel	w8, wzr, w8, eq
+	add	w0, w8, w0, lsl #22
 	ret
 
 func0000000000000040:
@@ -21,9 +21,9 @@ func0000000000000040:
 	ret
 
 func0000000000000014:
+	mov	w8, #4096
 	cmp	w1, #0
-	cset	w8, ne
-	lsl	w8, w8, #12
+	csel	w8, wzr, w8, eq
 	add	w0, w8, w0, lsl #9
 	ret
 

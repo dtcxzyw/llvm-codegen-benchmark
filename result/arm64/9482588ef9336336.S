@@ -9,9 +9,9 @@ func0000000000000023:
 	ret
 
 func0000000000000007:
+	mov	w8, #32768
 	cmp	x1, #0
-	cset	w8, ne
-	lsl	w8, w8, #15
+	csel	w8, wzr, w8, eq
 	sub	w0, w8, w0
 	ret
 

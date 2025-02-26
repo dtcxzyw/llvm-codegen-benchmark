@@ -3,7 +3,7 @@ func0000000000000054:
 	lui	a2, 16
 	addiw	a2, a2, -10
 	add	a1, a1, a2
-	addi	a2, a2, 9
+	addiw	a2, a2, 9
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

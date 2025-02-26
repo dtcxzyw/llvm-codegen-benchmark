@@ -11,9 +11,10 @@ func0000000000000007:
 
 func0000000000000018:
 	cmp	w2, #4
-	cset	w8, lt
+	mov	w8, #16384
+	csel	w8, w8, wzr, lt
 	tst	w0, #0x1
-	orr	w8, w1, w8, lsl #14
+	orr	w8, w1, w8
 	orr	w9, w8, #0x1000
 	csel	w0, w9, w8, ne
 	ret

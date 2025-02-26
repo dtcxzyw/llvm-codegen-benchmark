@@ -15,7 +15,7 @@ func000000000000000a:
 	ret
 .LBB1_2:
 	slti	a0, a2, 0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000004:

@@ -3,7 +3,7 @@ func0000000000000026:
 	andi	a1, a1, 1
 	li	a2, 5
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 8
+	addiw	a1, a1, 8
 	slt	a0, a1, a0
 	ret
 

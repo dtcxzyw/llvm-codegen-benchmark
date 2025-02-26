@@ -24,11 +24,12 @@ func0000000000000003:
 	ret
 
 func0000000000000009:
-	mov	w8, #32767
-	cmp	w1, #1500
-	movk	w8, #65020, lsl #16
-	cset	w9, hi
-	and	w8, w0, w8
-	orr	w0, w8, w9, lsl #5
+	mov	w9, #32767
+	mov	w8, #32
+	cmp	w1, #1501
+	movk	w9, #65020, lsl #16
+	csel	w8, wzr, w8, lo
+	and	w9, w0, w9
+	orr	w0, w9, w8
 	ret
 

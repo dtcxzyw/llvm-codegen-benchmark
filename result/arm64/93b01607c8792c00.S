@@ -5,15 +5,15 @@ func000000000000002a:
 	ret
 
 func0000000000000018:
+	mov	w8, #2
 	cmp	w0, w1, uxtb
-	cset	w8, ls
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000014:
+	mov	w8, #2
 	cmp	w0, w1, uxtb
-	cset	w8, hs
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, lo
 	ret
 
 func0000000000000021:
@@ -29,9 +29,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	mov	w8, #2
 	cmp	w0, w1, uxtb
-	cset	w8, gt
-	lsl	w0, w8, #1
+	csel	w0, w8, wzr, gt
 	ret
 
 func0000000000000004:

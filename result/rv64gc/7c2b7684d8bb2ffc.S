@@ -2,7 +2,7 @@ func000000000000000f:
 	andi	a1, a1, 32
 	andi	a0, a0, 16
 	or	a0, a0, a1
-	addi	a0, a0, 520
+	addiw	a0, a0, 520
 	ret
 
 func0000000000000003:

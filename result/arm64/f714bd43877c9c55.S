@@ -1,7 +1,7 @@
 func0000000000000001:
+	mov	w8, #2
 	tst	x0, x1
-	cset	w8, ne
-	lsl	w0, w8, #1
+	csel	w0, wzr, w8, eq
 	ret
 
 func000000000000000c:
@@ -11,9 +11,10 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	and	x8, x0, x1
-	tst	x8, #0xffffffff00000000
-	cset	w8, ne
-	lsl	w0, w8, #5
+	and	x9, x0, x1
+	mov	w8, #32
+	lsr	x9, x9, #32
+	cmp	x9, #0
+	csel	w0, wzr, w8, eq
 	ret
 

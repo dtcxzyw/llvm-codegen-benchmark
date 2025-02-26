@@ -4,7 +4,7 @@ func0000000000000013:
 	slli	a1, a1, 4
 	andi	a0, a0, 1
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000007:
@@ -13,7 +13,7 @@ func0000000000000007:
 	slli	a1, a1, 4
 	andi	a0, a0, 1
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000023:
@@ -22,7 +22,7 @@ func0000000000000023:
 	slli	a1, a1, 4
 	andi	a0, a0, 1
 	sh3add	a0, a0, a1
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func0000000000000006:

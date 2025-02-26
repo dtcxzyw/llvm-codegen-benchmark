@@ -19,8 +19,9 @@ func0000000000000010:
 func0000000000000098:
 	sub	w8, w2, #1
 	cmp	w1, w8
-	cset	w8, lt
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, lt
+	add	x0, x0, x8
 	ret
 
 func000000000000001b:

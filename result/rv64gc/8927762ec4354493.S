@@ -48,7 +48,7 @@ func0000000000000283:
 	slli	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
-	addi	a0, a0, 72
+	addiw	a0, a0, 72
 	ret
 
 func0000000000000203:

@@ -2,7 +2,7 @@ func000000000000002a:
 	sext.w	a0, a0
 	addi	a1, a1, -4
 	seqz	a1, a1
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	slt	a0, a1, a0
 	ret
 
@@ -11,7 +11,7 @@ func000000000000002c:
 	addi	a1, a1, -16
 	li	a2, 16
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 32
+	addiw	a1, a1, 32
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

@@ -10,8 +10,9 @@ func0000000000000088:
 func0000000000000084:
 	and	w8, w2, #0xff
 	cmp	w8, #3
-	cset	w8, ne
-	add	x8, x1, w8, uxtw #1
+	mov	w8, #2
+	csel	x8, xzr, x8, eq
+	add	x8, x8, x1
 	cmp	x0, x8
 	cset	w0, lo
 	ret

@@ -22,7 +22,7 @@ func0000000000000084:
 	li	a3, 12
 	seqz	a2, a2
 	czero.nez	a3, a3, a1
-	addi	a2, a2, 10
+	addiw	a2, a2, 10
 	czero.eqz	a1, a2, a1
 	li	a2, 13
 	or	a1, a1, a3

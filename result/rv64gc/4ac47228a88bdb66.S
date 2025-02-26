@@ -6,13 +6,13 @@ func0000000000000004:
 func0000000000000001:
 	slli	a0, a0, 56
 	srli	a0, a0, 60
-	addi	a0, a0, 48
+	addiw	a0, a0, 48
 	ret
 
 func0000000000000000:
 	slli	a0, a0, 59
 	srli	a0, a0, 61
-	addi	a0, a0, -72
+	addiw	a0, a0, -72
 	ret
 
 func000000000000000d:

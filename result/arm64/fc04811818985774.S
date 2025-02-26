@@ -45,7 +45,7 @@ func0000000000000006:
 func000000000000000c:
 	add	x8, x1, x2
 	cmp	x8, x0
-	cset	w8, ne
-	ubfiz	x0, x8, #9, #32
+	mov	w8, #512
+	csel	x0, xzr, x8, eq
 	ret
 

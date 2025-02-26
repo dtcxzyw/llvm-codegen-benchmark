@@ -21,6 +21,6 @@ func0000000000000009:
 func0000000000000007:
 	slli	a0, a0, 20
 	srli	a0, a0, 63
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 

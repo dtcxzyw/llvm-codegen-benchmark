@@ -16,8 +16,9 @@ func0000000000000013:
 
 func0000000000000020:
 	fcmp	d0, d1
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000008:

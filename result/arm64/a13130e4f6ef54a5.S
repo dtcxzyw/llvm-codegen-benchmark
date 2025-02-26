@@ -11,10 +11,10 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
-	and	w8, w0, #0xfffe
-	cmp	w8, #9
-	cset	w8, hi
-	ubfiz	x0, x8, #3, #32
+	and	w9, w0, #0xfffe
+	mov	w8, #8
+	cmp	w9, #9
+	csel	x0, x8, xzr, hi
 	ret
 
 func0000000000000014:

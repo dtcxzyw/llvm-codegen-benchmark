@@ -44,7 +44,7 @@ func00000000000000c1:
 	li	a3, 2
 	slti	a1, a1, 3
 	czero.nez	a1, a3, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
@@ -67,9 +67,9 @@ func0000000000000181:
 	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a1, a1, -99
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	czero.eqz	a1, a3, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

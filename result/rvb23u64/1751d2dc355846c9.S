@@ -4,6 +4,6 @@ func0000000000000001:
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 

@@ -7,8 +7,9 @@ func0000000000000041:
 
 func000000000000006a:
 	cmp	w1, w2
-	cset	w8, gt
-	add	x0, x0, x8, lsl #7
+	mov	w8, #128
+	csel	x8, x8, xzr, gt
+	add	x0, x0, x8
 	ret
 
 func0000000000000068:
@@ -20,14 +21,16 @@ func0000000000000068:
 
 func0000000000000066:
 	cmp	w1, w2
-	cset	w8, lt
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, lt
+	add	x0, x0, x8
 	ret
 
 func0000000000000061:
 	cmp	w1, w2
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000046:

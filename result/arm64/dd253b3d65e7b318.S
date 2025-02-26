@@ -8,12 +8,12 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	mov	w8, #1024
 	cmp	w1, #0
-	and	w9, w0, #0x1
-	cset	w8, ne
-	orr	w8, w9, w8, lsl #10
 	mov	w9, #64510
+	csel	w8, wzr, w8, eq
 	movk	w9, #57599, lsl #16
+	bfxil	w8, w0, #0, #1
 	orr	w0, w8, w9
 	ret
 

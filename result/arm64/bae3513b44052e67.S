@@ -43,8 +43,9 @@ func0000000000000004:
 
 func0000000000000020:
 	cmp	w1, w2
-	cset	w8, hi
-	add	w0, w0, w8, lsl #7
+	mov	w8, #128
+	csel	w8, w8, wzr, hi
+	add	w0, w8, w0
 	ret
 
 func0000000000000018:

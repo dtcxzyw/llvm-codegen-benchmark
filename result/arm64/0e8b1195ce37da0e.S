@@ -1,6 +1,6 @@
 func0000000000000001:
+	mov	w8, #8
 	cmp	x0, x1
-	cset	w8, eq
-	lsl	w0, w8, #3
+	csel	w0, w8, wzr, eq
 	ret
 

@@ -60,9 +60,9 @@ func0000000000000018:
 func0000000000000004:
 	lsr	w8, w2, #6
 	cmp	w8, #1875
-	cset	w8, lo
+	mov	w8, #8
+	csel	w8, w8, wzr, lo
 	tst	w0, #0x1
-	lsl	w8, w8, #3
 	csel	w0, w8, w1, ne
 	ret
 

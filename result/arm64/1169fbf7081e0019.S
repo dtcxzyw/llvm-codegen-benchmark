@@ -34,9 +34,9 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	and	w8, w0, #0xff
-	cmp	w8, #8
-	cset	w8, hi
-	lsl	w0, w8, #1
+	and	w9, w0, #0xff
+	mov	w8, #2
+	cmp	w9, #8
+	csel	w0, w8, wzr, hi
 	ret
 

@@ -9,6 +9,6 @@ func0000000000000007:
 	andi	a0, a0, 15
 	li	a1, 32
 	sllw	a0, a1, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

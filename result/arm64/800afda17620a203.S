@@ -26,11 +26,12 @@ func0000000000000038:
 	ret
 
 func0000000000000034:
-	and	w8, w1, #0xff
-	cmp	w8, #1
-	cset	w8, eq
-	cmp	x0, w8, uxtw #1
-	cset	w0, hi
+	and	w9, w1, #0xff
+	mov	w8, #2
+	cmp	w9, #1
+	csel	x8, x8, xzr, eq
+	cmp	x8, x0
+	cset	w0, lo
 	ret
 
 func0000000000000024:

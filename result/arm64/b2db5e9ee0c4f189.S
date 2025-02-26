@@ -27,8 +27,8 @@ func0000000000000004:
 	csel	x8, x1, x2, ne
 	lsr	x8, x8, #32
 	cmp	x8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #1, #32
+	mov	w8, #2
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000006:

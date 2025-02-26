@@ -5,9 +5,9 @@ func000000000000002a:
 	ret
 
 func0000000000000018:
+	mov	w8, #2
 	cmp	w0, w1, uxth
-	cset	w8, hi
-	ubfiz	x0, x8, #1, #32
+	csel	x0, x8, xzr, hi
 	ret
 
 func0000000000000001:
@@ -18,9 +18,9 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
+	mov	w8, #2
 	cmp	w0, w1, uxth
-	cset	w8, ge
-	ubfiz	x0, x8, #1, #32
+	csel	x0, xzr, x8, lt
 	ret
 
 func0000000000000024:

@@ -1,7 +1,7 @@
 func0000000000000001:
+	mov	w8, #16
 	cmp	x0, x1
-	cset	w8, eq
-	ubfiz	x0, x8, #4, #32
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000004:
@@ -12,9 +12,9 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	sub	x8, x1, x0
-	cmp	x8, #16
-	cset	w8, hi
-	ubfiz	x0, x8, #4, #32
+	sub	x9, x1, x0
+	mov	w8, #16
+	cmp	x9, #16
+	csel	x0, x8, xzr, hi
 	ret
 

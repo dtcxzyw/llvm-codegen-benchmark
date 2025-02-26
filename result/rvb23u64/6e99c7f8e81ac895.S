@@ -4,7 +4,7 @@ func0000000000000021:
 	addiw	a1, a1, -33
 	xor	a1, a1, a0
 	seqz	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	czero.eqz	a0, a1, a0
 	ret
 

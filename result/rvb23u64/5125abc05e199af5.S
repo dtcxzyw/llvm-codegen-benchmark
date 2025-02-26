@@ -19,7 +19,7 @@ func0000000000000084:
 	srliw	a2, a0, 21
 	li	a3, 12
 	srliw	a0, a0, 14
-	addi	a1, a1, 10
+	addiw	a1, a1, 10
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	li	a2, 13

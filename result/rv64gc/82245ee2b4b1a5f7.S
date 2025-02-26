@@ -52,7 +52,7 @@ func000000000000001e:
 	li	a2, 31
 	slli	a1, a1, 8
 	slli	a2, a2, 11
-	addi	a2, a2, 2016
+	addiw	a2, a2, 2016
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

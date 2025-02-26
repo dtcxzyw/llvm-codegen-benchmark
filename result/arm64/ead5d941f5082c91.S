@@ -20,9 +20,9 @@ func00000000000000a0:
 	ret
 
 func0000000000000060:
-	cmp	w0, #3
-	cset	w8, gt
-	lsl	w8, w8, #4
+	mov	w8, #16
+	cmp	w0, #4
+	csel	w8, wzr, w8, lt
 	add	w0, w8, w0, lsl #2
 	ret
 

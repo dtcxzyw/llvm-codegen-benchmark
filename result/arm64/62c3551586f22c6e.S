@@ -5,9 +5,9 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
+	mov	w8, #4
 	cmp	w0, #0
-	cset	w8, eq
-	lsl	w0, w8, #2
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000005:

@@ -9,13 +9,12 @@ func0000000000000003:
 
 func0000000000000009:
 	and	w9, w1, #0xff
-	mov	w8, #16
-	cmp	w9, #2
-	cset	w9, hi
+	mov	w8, #4
+	cmp	w9, #3
+	csel	w8, wzr, w8, lo
 	tst	w0, #0x1
-	lsl	w10, w9, #2
-	bfi	w8, w9, #2, #1
-	csel	w0, w10, w8, ne
+	orr	w9, w8, #0x10
+	csel	w0, w8, w9, ne
 	ret
 
 func0000000000000008:

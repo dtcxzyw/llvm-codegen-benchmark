@@ -78,7 +78,7 @@ func000000000000002b:
 	addi	a1, a1, -1
 	li	a2, 5
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 8
+	addiw	a1, a1, 8
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -108,7 +108,7 @@ func0000000000000158:
 	slti	a1, a1, 3
 	li	a2, 2
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -136,7 +136,7 @@ func0000000000000088:
 	sltiu	a1, a1, 2
 	li	a2, 12
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 16
+	addiw	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 

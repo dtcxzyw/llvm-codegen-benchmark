@@ -1,49 +1,57 @@
 func0000000000000003:
+	mov	w8, #2
 	cmp	x1, #0
-	cset	w8, ne
-	orr	w0, w0, w8, lsl #1
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
 
 func0000000000000009:
-	cmp	x1, #127
-	cset	w8, hi
-	orr	w0, w0, w8, lsl #7
+	mov	w8, #-128
+	cmp	x1, #128
+	csel	w8, wzr, w8, lo
+	orr	w0, w0, w8
 	ret
 
 func0000000000000011:
+	mov	w8, #-128
 	cmp	x1, #127
-	cset	w8, hi
-	orr	w0, w0, w8, lsl #7
+	csel	w8, w8, wzr, hi
+	orr	w0, w8, w0
 	ret
 
 func0000000000000031:
+	mov	w8, #-128
 	cmp	x1, #127
-	cset	w8, hi
-	orr	w0, w0, w8, lsl #7
+	csel	w8, w8, wzr, hi
+	orr	w0, w8, w0
 	ret
 
 func0000000000000002:
+	mov	w8, #64
 	cmp	x1, #0
-	cset	w8, ne
-	orr	w0, w0, w8, lsl #6
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
 
 func0000000000000029:
-	cmp	x1, #127
-	cset	w8, hi
-	orr	w0, w0, w8, lsl #7
+	mov	w8, #-128
+	cmp	x1, #128
+	csel	w8, wzr, w8, lo
+	orr	w0, w0, w8
 	ret
 
 func000000000000000d:
-	lsr	x8, x1, #63
-	eor	w8, w8, #0x1
-	orr	w0, w0, w8, lsl #6
+	mov	w8, #64
+	cmp	x1, #0
+	csel	w8, wzr, w8, lt
+	orr	w0, w0, w8
 	ret
 
 func0000000000000019:
+	mov	w8, #4
 	cmp	x1, #0
-	cset	w8, ne
-	orr	w0, w0, w8, lsl #2
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
 
 func0000000000000015:

@@ -1,8 +1,9 @@
 func0000000000000007:
 	tst	x2, #0x3c000
+	mov	w8, #16384
 	orr	x9, x0, x1
-	cset	w8, eq
-	orr	x0, x9, x8, lsl #14
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func0000000000000004:

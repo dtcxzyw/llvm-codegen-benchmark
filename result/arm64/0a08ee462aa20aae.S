@@ -18,10 +18,11 @@ func0000000000000007:
 	and	w8, w2, #0xff
 	mov	w9, #512
 	cmp	w8, #2
-	cset	w8, eq
+	mov	w8, #131072
+	csel	w8, w8, wzr, eq
 	tst	w1, #0x1
 	csel	w9, w9, wzr, ne
 	orr	w9, w9, w0
-	orr	w0, w9, w8, lsl #17
+	orr	w0, w9, w8
 	ret
 

@@ -195,6 +195,6 @@ func0000000000000144:
 .LBB14_2:
 	sraiw	a0, a0, 31
 	andi	a0, a0, 24
-	addi	a0, a0, 36
+	addiw	a0, a0, 36
 	ret
 

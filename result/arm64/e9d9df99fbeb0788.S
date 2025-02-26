@@ -7,17 +7,17 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	sxtb	w8, w0
-	cmp	w8, w1, sxtb
-	cset	w8, le
-	lsl	w0, w8, #1
+	sxtb	w9, w0
+	mov	w8, #2
+	cmp	w9, w1, sxtb
+	csel	w0, wzr, w8, gt
 	ret
 
 func0000000000000008:
-	and	w8, w0, #0xff
-	cmp	w8, w1, uxtb
-	cset	w8, ls
-	lsl	w0, w8, #1
+	and	w9, w0, #0xff
+	mov	w8, #2
+	cmp	w9, w1, uxtb
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000004:

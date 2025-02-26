@@ -19,7 +19,7 @@ func0000000000000000:
 	andi	a0, a0, 1
 	lui	a2, 1
 	addiw	a2, a2, -2044
-	addi	a3, a2, 1584
+	addiw	a3, a2, 1584
 	and	a1, a1, a3
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

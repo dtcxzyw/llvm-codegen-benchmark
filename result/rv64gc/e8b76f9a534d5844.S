@@ -1,5 +1,5 @@
 func0000000000000001:
 	andi	a0, a0, 1
-	addi	a0, a0, 32
+	addiw	a0, a0, 32
 	ret
 

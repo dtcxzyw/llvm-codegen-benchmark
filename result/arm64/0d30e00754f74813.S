@@ -1,7 +1,8 @@
 func0000000000000006:
+	mov	w8, #2
 	cmp	w1, #0
-	cset	w8, ne
-	orr	x8, x0, x8, lsl #1
+	csel	x8, xzr, x8, eq
+	orr	x8, x8, x0
 	orr	x0, x8, #0x1
 	ret
 

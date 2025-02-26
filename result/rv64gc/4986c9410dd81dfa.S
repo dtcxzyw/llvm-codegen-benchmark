@@ -45,7 +45,7 @@ func0000000000000318:
 func0000000000000034:
 	lui	a2, 16
 	addiw	a2, a2, -16
-	addi	a3, a2, 15
+	addiw	a3, a2, 15
 	and	a0, a0, a2
 	and	a1, a1, a3
 	seqz	a1, a1

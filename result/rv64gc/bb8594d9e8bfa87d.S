@@ -64,7 +64,7 @@ func0000000000000004:
 	mv	a1, a0
 	bnez	a3, .LBB3_2
 	andi	a0, a2, 1
-	addi	a0, a0, 10
+	addiw	a0, a0, 10
 	srliw	a1, a1, 14
 	beqz	a1, .LBB3_3
 	j	.LBB3_4

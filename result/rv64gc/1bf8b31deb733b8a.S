@@ -29,7 +29,7 @@ func000000000000010a:
 	ld	a2, %lo(.LCPI2_0)(a2)
 	sext.w	a0, a0
 	sltu	a1, a2, a1
-	addi	a1, a1, 18
+	addiw	a1, a1, 18
 	slt	a0, a0, a1
 	ret
 
@@ -37,7 +37,7 @@ func0000000000000141:
 	sext.w	a0, a0
 	slti	a1, a1, 0
 	xori	a1, a1, 1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -17,7 +17,7 @@ func0000000000000024:
 func0000000000000006:
 	sub	w8, w1, w2
 	cmp	w8, w0
-	cset	w8, ge
-	ubfiz	x0, x8, #2, #32
+	mov	w8, #4
+	csel	x0, xzr, x8, lt
 	ret
 

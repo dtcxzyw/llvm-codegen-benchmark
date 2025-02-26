@@ -1,14 +1,16 @@
 func0000000000000003:
-	and	x8, x1, #0x300000
-	cmp	x8, #256, lsl #12
-	cset	w8, eq
-	orr	x0, x0, x8, lsl #21
+	and	x9, x1, #0x300000
+	mov	w8, #2097152
+	cmp	x9, #256, lsl #12
+	csel	x8, x8, xzr, eq
+	orr	x0, x0, x8
 	ret
 
 func00000000000000c3:
+	mov	x8, #4294967296
 	tst	x1, #0xffff
-	cset	w8, ne
-	orr	x0, x0, x8, lsl #32
+	csel	x8, xzr, x8, eq
+	orr	x0, x8, x0
 	ret
 
 func0000000000000002:

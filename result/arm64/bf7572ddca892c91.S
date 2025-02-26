@@ -25,11 +25,12 @@ func0000000000000003:
 	.xword	0x3f1a36e2eb1c432d
 func000000000000000c:
 	fsub	d0, d0, d1
+	mov	w8, #8
 	adrp	x9, .LCPI3_0
 	add	x9, x9, :lo12:.LCPI3_0
 	fcmp	d0, #0.0
-	cset	w8, ge
-	ldr	d0, [x9, w8, uxtw #3]
+	csel	x8, x8, xzr, ge
+	ldr	d0, [x9, x8]
 	ret
 
 .LCPI4_0:

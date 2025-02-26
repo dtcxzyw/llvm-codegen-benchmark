@@ -11,6 +11,6 @@ func0000000000000005:
 func0000000000000007:
 	andi	a0, a0, 255
 	slli	a0, a0, 1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

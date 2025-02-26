@@ -1,8 +1,8 @@
 func0000000000000021:
-	orr	w8, w0, w1
-	cmp	w8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #13, #32
+	orr	w9, w0, w1
+	mov	w8, #8192
+	cmp	w9, #0
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000181:

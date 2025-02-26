@@ -37,8 +37,8 @@ func0000000000000014:
 	czero.nez	a1, a3, a1
 	lui	a3, 8
 	addiw	a3, a3, 15
-	addi	a2, a2, 17
-	addi	a1, a1, 12
+	addiw	a2, a2, 17
+	addiw	a1, a1, 12
 	sltu	a0, a0, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

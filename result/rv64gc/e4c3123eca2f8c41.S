@@ -72,6 +72,6 @@ func000000000000000a:
 .LBB6_2:
 	sext.w	a1, a1
 	slti	a0, a1, 0
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 

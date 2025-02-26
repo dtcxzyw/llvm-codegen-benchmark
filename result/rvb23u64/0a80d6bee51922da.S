@@ -15,7 +15,7 @@ func0000000000000006:
 	sraiw	a1, a1, 31
 	li	a2, 43
 	andi	a1, a1, 13
-	addi	a1, a1, 32
+	addiw	a1, a1, 32
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

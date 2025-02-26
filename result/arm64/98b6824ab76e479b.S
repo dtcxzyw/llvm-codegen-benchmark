@@ -55,8 +55,9 @@ func000000000000002b:
 func0000000000000027:
 	and	w8, w1, #0xff
 	cmp	w8, w2, uxtb
-	cset	w8, hs
-	add	x0, x0, w8, uxtw #3
+	mov	w8, #8
+	csel	x8, xzr, x8, lo
+	add	x0, x0, x8
 	ret
 
 func0000000000000007:

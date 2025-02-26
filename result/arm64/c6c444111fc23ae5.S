@@ -6,9 +6,9 @@ func0000000000000007:
 	ret
 
 func0000000000000023:
-	cmp	x0, #3
-	cset	w8, hi
-	ubfiz	x0, x8, #5, #32
+	mov	w8, #32
+	cmp	x0, #4
+	csel	x0, xzr, x8, lo
 	ret
 
 func0000000000000004:

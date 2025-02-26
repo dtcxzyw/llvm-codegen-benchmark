@@ -9,7 +9,7 @@ func000000000000001f:
 
 func0000000000000013:
 	andi	a1, a1, 240
-	addi	a1, a1, 8
+	addiw	a1, a1, 8
 	sh3add	a0, a1, a0
 	addi	a0, a0, 24
 	ret

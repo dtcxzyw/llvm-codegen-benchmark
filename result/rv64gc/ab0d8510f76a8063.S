@@ -10,7 +10,7 @@ func000000000000003d:
 	addiw	a2, a2, -16
 	addiw	a3, a3, 15
 	add	a0, a0, a2
-	addi	a2, a2, 15
+	addiw	a2, a2, 15
 	and	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

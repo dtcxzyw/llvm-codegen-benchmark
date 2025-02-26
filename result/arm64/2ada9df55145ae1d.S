@@ -1,7 +1,8 @@
 func000000000000005d:
 	cmp	w2, #3
-	cset	w8, ne
-	add	w8, w0, w8, lsl #22
+	mov	w8, #4194304
+	csel	w8, wzr, w8, eq
+	add	w8, w0, w8
 	add	w0, w8, w1, lsl #22
 	ret
 

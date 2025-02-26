@@ -6,15 +6,17 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
+	mov	w8, #8
 	cmp	x1, x0
-	cset	w8, ne
-	add	x0, x0, w8, uxtw #3
+	csel	x8, xzr, x8, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000027:
+	mov	w8, #256
 	cmp	x1, x0
-	cset	w8, hs
-	add	x0, x0, x8, lsl #8
+	csel	x8, xzr, x8, lo
+	add	x0, x0, x8
 	ret
 
 func0000000000000004:

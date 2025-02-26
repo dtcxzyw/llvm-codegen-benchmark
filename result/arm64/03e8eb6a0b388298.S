@@ -15,10 +15,10 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	cmp	x1, #1
-	cset	w8, hi
+	mov	w8, #2
+	cmp	x1, #2
+	csel	w8, wzr, w8, lo
 	tst	w0, #0x1
-	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, eq
 	ret
 
@@ -51,10 +51,10 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
+	mov	w8, #2
 	cmp	x1, #1
-	cset	w8, ne
+	csel	w8, wzr, w8, eq
 	tst	w0, #0x1
-	lsl	w8, w8, #1
 	csinc	w0, w8, wzr, eq
 	ret
 

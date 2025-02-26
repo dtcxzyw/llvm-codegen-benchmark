@@ -1,12 +1,12 @@
 func0000000000000001:
 	slli	a0, a0, 56
 	srli	a0, a0, 61
-	addi	a0, a0, -16
+	addiw	a0, a0, -16
 	ret
 
 func0000000000000000:
 	slli	a0, a0, 58
 	srli	a0, a0, 61
-	addi	a0, a0, -72
+	addiw	a0, a0, -72
 	ret
 

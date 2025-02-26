@@ -2,8 +2,8 @@ func00000000000000d4:
 	mov	w8, #12
 	movk	w8, #32768, lsl #16
 	tst	w0, w8
-	cset	w8, eq
-	lsl	w0, w8, #14
+	mov	w8, #16384
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000021:

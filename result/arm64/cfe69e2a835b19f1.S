@@ -9,10 +9,10 @@ func0000000000000018:
 
 func0000000000000014:
 	cmp	x0, x1
-	csel	x8, x0, x1, hi
-	cmp	x8, #49
-	cset	w8, hi
-	ubfiz	x0, x8, #3, #32
+	mov	w8, #8
+	csel	x9, x0, x1, hi
+	cmp	x9, #50
+	csel	x0, xzr, x8, lo
 	ret
 
 func0000000000000034:
@@ -35,10 +35,10 @@ func0000000000000004:
 
 func0000000000000028:
 	cmp	x0, x1
-	csel	x8, x0, x1, hi
-	lsr	x8, x8, #60
-	cmp	x8, #0
-	cset	w8, eq
-	ubfiz	x0, x8, #3, #32
+	mov	w8, #8
+	csel	x9, x0, x1, hi
+	lsr	x9, x9, #60
+	cmp	x9, #0
+	csel	x0, xzr, x8, ne
 	ret
 

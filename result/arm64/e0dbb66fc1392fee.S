@@ -1,8 +1,8 @@
 func0000000000000001:
-	sub	w8, w1, #1
-	cmp	w0, w8
-	cset	w8, eq
-	lsl	w0, w8, #1
+	sub	w9, w1, #1
+	mov	w8, #2
+	cmp	w0, w9
+	csel	w0, w8, wzr, eq
 	ret
 
 func0000000000000008:

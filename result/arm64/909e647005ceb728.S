@@ -13,15 +13,17 @@ func0000000000000006:
 	and	w8, w2, #0x7
 	orr	w9, w0, w1
 	cmp	w8, #2
-	cset	w8, eq
-	orr	w0, w9, w8, lsl #31
+	mov	w8, #-2147483648
+	csel	w8, w8, wzr, eq
+	orr	w0, w8, w9
 	ret
 
 func0000000000000007:
 	and	w8, w2, #0x7
 	orr	w9, w0, w1
 	cmp	w8, #2
-	cset	w8, eq
-	orr	w0, w9, w8, lsl #31
+	mov	w8, #-2147483648
+	csel	w8, w8, wzr, eq
+	orr	w0, w9, w8
 	ret
 

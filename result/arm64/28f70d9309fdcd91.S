@@ -16,16 +16,16 @@ func0000000000000081:
 	ret
 
 func0000000000000281:
+	mov	w8, #2
 	cmp	w0, w1
-	cset	w8, hs
-	lsl	w8, w8, #1
+	csel	w8, wzr, w8, lo
 	csinc	w0, w8, wzr, ne
 	ret
 
 func0000000000000301:
+	mov	w8, #2
 	cmp	w0, w1
-	cset	w8, ls
-	lsl	w8, w8, #1
+	csel	w8, wzr, w8, hi
 	csinc	w0, w8, wzr, ne
 	ret
 

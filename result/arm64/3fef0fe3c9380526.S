@@ -54,7 +54,7 @@ func0000000000000003:
 
 func000000000000000a:
 	fcmp	s0, #0.0
-	cset	w8, ls
-	lsl	w0, w8, #1
+	mov	w8, #2
+	csel	w0, w8, wzr, ls
 	ret
 

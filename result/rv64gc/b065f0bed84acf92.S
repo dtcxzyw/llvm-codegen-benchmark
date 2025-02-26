@@ -9,7 +9,7 @@ func0000000000000014:
 	slli	a1, a1, 51
 	and	a0, a0, a1
 	seqz	a0, a0
-	addi	a0, a0, 4
+	addiw	a0, a0, 4
 	ret
 
 func000000000000000c:
@@ -17,6 +17,6 @@ func000000000000000c:
 	srai	a0, a0, 2
 	srli	a0, a0, 62
 	slli	a0, a0, 1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

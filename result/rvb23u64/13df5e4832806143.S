@@ -7,7 +7,7 @@ func0000000000000009:
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 
 func0000000000000021:
@@ -17,6 +17,6 @@ func0000000000000021:
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	andi	a0, a0, 63
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	ret
 

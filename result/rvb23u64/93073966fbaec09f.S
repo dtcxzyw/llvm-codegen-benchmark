@@ -3,7 +3,7 @@ func0000000000000004:
 	sltiu	a1, a1, 61
 	bseti	a2, zero, 11
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 8
+	addiw	a1, a1, 8
 	and	a0, a0, a1
 	ret
 

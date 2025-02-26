@@ -3,7 +3,7 @@ func0000000000000007:
 	slli	a1, a1, 31
 	xor	a0, a0, a1
 	seqz	a0, a0
-	addi	a0, a0, 18
+	addiw	a0, a0, 18
 	ret
 
 .LCPI1_0:

@@ -15,10 +15,10 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	and	w8, w0, #0xffff
-	cmp	w8, w1, uxth
-	cset	w8, eq
-	ubfiz	x0, x8, #1, #32
+	and	w9, w0, #0xffff
+	mov	w8, #2
+	cmp	w9, w1, uxth
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000001:

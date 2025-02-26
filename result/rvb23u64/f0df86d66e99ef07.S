@@ -30,7 +30,7 @@ func0000000000000005:
 	andi	a1, a1, 1
 	li	a2, 248
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -49,7 +49,7 @@ func0000000000000018:
 	andi	a1, a1, 1
 	li	a2, 32
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 159
+	addiw	a1, a1, 159
 	sltu	a0, a1, a0
 	ret
 

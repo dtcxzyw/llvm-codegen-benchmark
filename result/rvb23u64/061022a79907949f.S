@@ -56,7 +56,7 @@ func0000000000000288:
 	srliw	a1, a1, 28
 	li	a2, 4
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 9
+	addiw	a1, a1, 9
 	sltu	a0, a0, a1
 	ret
 
@@ -88,7 +88,7 @@ func0000000000000308:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	addi	a1, a1, 4
+	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
 

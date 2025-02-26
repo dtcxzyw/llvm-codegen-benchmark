@@ -8,8 +8,9 @@ func0000000000000007:
 
 func0000000000000004:
 	tst	w1, w2
-	cset	w8, eq
-	add	x0, x0, w8, uxtw #2
+	mov	w8, #4
+	csel	x8, x8, xzr, eq
+	add	x0, x0, x8
 	ret
 
 func0000000000000006:

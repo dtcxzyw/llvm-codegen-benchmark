@@ -11,6 +11,6 @@ func0000000000000041:
 	mul	a0, a0, a1
 	rori	a0, a0, 4
 	sltu	a0, a0, a2
-	addi	a0, a0, 28
+	addiw	a0, a0, 28
 	ret
 

@@ -21,7 +21,7 @@ func0000000000000114:
 func0000000000000054:
 	andi	a1, a1, 255
 	seqz	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	andi	a0, a0, 255
 	sltu	a0, a1, a0
 	ret
@@ -62,7 +62,7 @@ func0000000000000061:
 	li	a2, 32
 	addi	a1, a1, -91
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 93
+	addiw	a1, a1, 93
 	andi	a0, a0, 255
 	xor	a0, a0, a1
 	seqz	a0, a0

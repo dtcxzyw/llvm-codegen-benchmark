@@ -20,10 +20,10 @@ func0000000000000006:
 
 func0000000000000004:
 	and	w8, w2, #0xff
-	cmp	w8, #2
-	cset	w8, hi
+	cmp	w8, #3
+	mov	w8, #4
+	csel	w8, wzr, w8, lo
 	tst	w0, #0x1
-	lsl	w8, w8, #2
 	csel	w0, w8, w1, ne
 	ret
 

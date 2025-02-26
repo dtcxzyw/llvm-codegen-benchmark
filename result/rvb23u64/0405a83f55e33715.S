@@ -71,7 +71,7 @@ func0000000000000144:
 	sext.b	a1, a1
 	slti	a1, a1, 0
 	xori	a1, a1, 1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
 
@@ -89,7 +89,7 @@ func0000000000000154:
 	sext.w	a0, a0
 	srli	a1, a1, 5
 	andi	a1, a1, 4
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -143,7 +143,7 @@ func000000000000002a:
 	andi	a1, a1, 255
 	li	a2, 10
 	czero.eqz	a1, a2, a1
-	addi	a1, a1, 16
+	addiw	a1, a1, 16
 	slt	a0, a1, a0
 	ret
 

@@ -32,9 +32,10 @@ func000000000000032a:
 	ret
 
 func000000000000008a:
+	mov	w8, #32
 	cmp	w0, #0
-	cset	w8, ne
-	add	w8, w0, w8, lsl #5
+	csel	w8, wzr, w8, eq
+	add	w8, w8, w0
 	cmp	w8, #16, lsl #12
 	cset	w0, ge
 	ret

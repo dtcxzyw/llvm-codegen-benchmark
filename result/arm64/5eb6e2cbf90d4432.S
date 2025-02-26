@@ -12,16 +12,18 @@ func0000000000000004:
 
 func0000000000000007:
 	cmp	w2, #1
+	mov	x8, #4611686018427387904
 	orr	x9, x0, x1
-	cset	w8, eq
-	orr	x0, x9, x8, lsl #62
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func0000000000000006:
 	cmp	w2, #7
+	mov	w8, #64
 	orr	x9, x0, x1
-	cset	w8, eq
-	orr	x0, x9, x8, lsl #6
+	csel	x8, x8, xzr, eq
+	orr	x0, x9, x8
 	ret
 
 func000000000000002b:

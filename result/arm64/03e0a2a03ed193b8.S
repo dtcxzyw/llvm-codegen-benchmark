@@ -29,9 +29,10 @@ func00000000000000f4:
 
 func00000000000000a6:
 	cmp	w2, #0
+	mov	w8, #16
 	add	w9, w0, w1
-	cset	w8, ne
-	cmp	w9, w8, lsl #4
+	csel	w8, wzr, w8, eq
+	cmp	w9, w8
 	cset	w0, lt
 	ret
 

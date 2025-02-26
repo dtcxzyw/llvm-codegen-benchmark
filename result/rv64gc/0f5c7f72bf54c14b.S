@@ -49,7 +49,7 @@ func000000000000008a:
 	lui	a2, 16
 	addiw	a2, a2, -12
 	add	a1, a1, a2
-	addi	a2, a2, 11
+	addiw	a2, a2, 11
 	and	a1, a1, a2
 	addiw	a0, a0, 4
 	slt	a0, a1, a0

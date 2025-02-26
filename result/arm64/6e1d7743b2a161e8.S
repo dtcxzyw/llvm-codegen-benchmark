@@ -28,8 +28,9 @@ func0000000000000013:
 
 func0000000000000018:
 	cmp	w2, #0
-	add	x8, x0, w1, sxtw #3
-	cset	w9, ne
-	add	x0, x8, w9, uxtw #3
+	mov	w8, #8
+	add	x9, x0, w1, sxtw #3
+	csel	x8, xzr, x8, eq
+	add	x0, x9, x8
 	ret
 
