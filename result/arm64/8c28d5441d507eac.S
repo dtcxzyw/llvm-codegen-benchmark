@@ -5,8 +5,8 @@ func000000000000003f:
 	cnt	v1.8b, v1.8b
 	addv	b0, v0.8b
 	addv	b1, v1.8b
-	fmov	x8, d0
-	fmov	x9, d1
+	fmov	w8, s0
+	fmov	w9, s1
 	add	w0, w9, w8
 	ret
 
