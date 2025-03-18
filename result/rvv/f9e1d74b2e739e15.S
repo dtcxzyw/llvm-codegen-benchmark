@@ -4,8 +4,7 @@ func0000000000000010:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v9, v9, 0
 	vsub.vv	v8, v8, v9
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 
 func0000000000000030:
@@ -14,8 +13,7 @@ func0000000000000030:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v9, v9, 0
 	vsub.vv	v8, v8, v9
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 
 func0000000000000000:

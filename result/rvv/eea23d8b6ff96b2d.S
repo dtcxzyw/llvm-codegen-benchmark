@@ -14,8 +14,7 @@ func000000000000001d:
 	vadd.vi	v10, v10, -1
 	vand.vi	v10, v10, -16
 	vsub.vv	v8, v8, v10
-	li	a0, 16
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -16
 	ret
 
 func000000000000000c:
@@ -25,7 +24,6 @@ func000000000000000c:
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vsub.vv	v8, v8, v10
-	li	a0, 8
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -8
 	ret
 

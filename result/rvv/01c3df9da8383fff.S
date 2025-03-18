@@ -11,7 +11,6 @@ func0000000000000059:
 	vadd.vv	v10, v11, v10
 	vnsrl.wi	v11, v8, 0
 	vsub.vv	v8, v11, v10
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 

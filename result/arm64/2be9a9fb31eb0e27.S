@@ -1,6 +1,6 @@
 func0000000000000001:
-	and	w8, w1, #0x1
-	cmn	w0, w8
+	sbfx	w8, w1, #0, #1
+	cmp	w0, w8
 	cset	w0, eq
 	ret
 

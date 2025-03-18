@@ -20,9 +20,8 @@ func000000000000000d:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwsubu.wv	v8, v8, v11
-	li	a0, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 
 func000000000000000e:
@@ -36,35 +35,31 @@ func000000000000000f:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwsubu.wv	v8, v8, v11
-	li	a0, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 
 func000000000000001c:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwsubu.wv	v8, v8, v11
-	li	a0, 3
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -3
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwsubu.wv	v8, v8, v11
-	li	a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwsubu.wv	v8, v8, v11
-	li	a0, -6
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 6
 	ret
 

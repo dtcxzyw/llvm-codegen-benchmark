@@ -34,10 +34,6 @@ func0000000000000044:
 .LCPI2_1:
 	.quad	0x3feccccccccccccd
 func0000000000000042:
-	addi	sp, sp, -16
-	csrr	a0, vlenb
-	slli	a0, a0, 3
-	sub	sp, sp, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v7, v0
 	lui	a0, %hi(.LCPI2_0)
@@ -46,15 +42,9 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)
 	vfmv.v.f	v24, fa5
-	addi	a0, sp, 16
-	vs8r.v	v24, (a0)
 	vmerge.vvm	v8, v16, v8, v0
 	vmv1r.v	v0, v7
-	vl8r.v	v16, (a0)
-	vmerge.vvm	v8, v16, v8, v0
+	vmerge.vvm	v8, v24, v8, v0
 	vfmin.vf	v8, v8, fa4
-	csrr	a0, vlenb
-	sh3add	sp, a0, sp
-	addi	sp, sp, 16
 	ret
 

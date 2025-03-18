@@ -3,8 +3,7 @@ func000000000000001d:
 	vzext.vf8	v14, v12
 	vor.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func000000000000001c:
@@ -12,7 +11,6 @@ func000000000000001c:
 	vzext.vf8	v14, v12
 	vor.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 

@@ -5,8 +5,7 @@ func000000000000000c:
 	addi	a0, a0, -4
 	vand.vx	v10, v10, a0
 	vsub.vv	v8, v8, v10
-	li	a0, 4
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -4
 	ret
 
 func000000000000000d:

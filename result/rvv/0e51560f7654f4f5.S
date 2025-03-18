@@ -34,9 +34,8 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	li	a0, 1
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -1
 	lui	a0, 1048573
 	addi	a0, a0, -819
 	vmul.vx	v8, v8, a0

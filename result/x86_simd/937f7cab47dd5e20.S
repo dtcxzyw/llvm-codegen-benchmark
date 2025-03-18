@@ -53,7 +53,8 @@ func0000000000000006:
 	addq	%rdx, %rcx
 	vmovq	%rcx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vpackssdw	%xmm1, %xmm0, %xmm0
+	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vpord	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -93,7 +94,8 @@ func0000000000000007:
 	subq	%rax, %rdx
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vpackssdw	%xmm1, %xmm0, %xmm0
+	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vpord	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

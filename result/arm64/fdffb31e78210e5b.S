@@ -1,6 +1,5 @@
 func0000000000000004:
-	and	w8, w2, #0x1
-	neg	w8, w8
+	sbfx	w8, w2, #0, #1
 	eor	w8, w1, w8
 	add	w0, w8, w0
 	ret

@@ -3,8 +3,7 @@ func0000000000000055:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vx	v10, a0, v12
 	vsub.vv	v8, v8, v10
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 
 func0000000000000031:

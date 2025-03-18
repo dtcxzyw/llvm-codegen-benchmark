@@ -6,8 +6,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000081:
-	ubfx	w8, w1, #10, #1
-	cmn	w0, w8
+	sbfx	w8, w1, #10, #1
+	cmp	w0, w8
 	cset	w0, eq
 	ret
 

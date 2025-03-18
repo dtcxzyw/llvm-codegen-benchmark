@@ -4,8 +4,7 @@ func000000000000008f:
 	vsub.vv	v8, v8, v10
 	vsra.vi	v8, v8, 2
 	vsub.vv	v8, v8, v12
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 
 func000000000000008d:

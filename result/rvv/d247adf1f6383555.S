@@ -12,8 +12,7 @@ func000000000000002f:
 	vmulhu.vx	v8, v10, a1
 	vsrl.vi	v8, v8, 3
 	vmul.vx	v8, v8, a0
-	li	a0, -12
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 12
 	ret
 
 func000000000000002d:
@@ -30,8 +29,7 @@ func000000000000002d:
 	vmulhu.vx	v8, v10, a1
 	vsrl.vi	v8, v8, 3
 	vmul.vx	v8, v8, a0
-	li	a0, -12
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 12
 	ret
 
 .LCPI2_0:

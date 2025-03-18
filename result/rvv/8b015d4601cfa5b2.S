@@ -5,8 +5,7 @@ func000000000000007f:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v10, v14, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func000000000000007c:
@@ -16,8 +15,7 @@ func000000000000007c:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v10, v14, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func000000000000007d:
@@ -27,8 +25,7 @@ func000000000000007d:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v10, v14, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func0000000000000055:
@@ -38,7 +35,6 @@ func0000000000000055:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
-	li	a0, 14
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -14
 	ret
 

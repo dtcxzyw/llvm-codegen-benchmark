@@ -27,8 +27,7 @@ func0000000000000015:
 	vnsrl.wi	v12, v10, 0
 	vsub.vv	v8, v8, v9
 	vadd.vv	v8, v8, v12
-	li	a0, -8
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 8
 	ret
 
 func00000000000000f5:

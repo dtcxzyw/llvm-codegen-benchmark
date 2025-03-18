@@ -1,6 +1,5 @@
 func0000000000000005:
-	mov	w8, #1
-	bic	w8, w8, w0
-	neg	w0, w8
+	mvn	w8, w0
+	sbfx	w0, w8, #0, #1
 	ret
 

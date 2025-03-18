@@ -4,7 +4,6 @@ func0000000000000152:
 	vsll.vi	v10, v10, 6
 	vadd.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 

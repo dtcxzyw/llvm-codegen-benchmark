@@ -23,11 +23,10 @@ func00000000000001e1:
 	ret
 
 func00000000000001c8:
-	li	a0, 2
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	vmsgtu.vi	v0, v8, 3
 	ret
 

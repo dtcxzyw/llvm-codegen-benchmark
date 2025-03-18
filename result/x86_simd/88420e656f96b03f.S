@@ -47,7 +47,8 @@ func0000000000000001:
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vpackssdw	%xmm1, %xmm0, %xmm0
+	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 

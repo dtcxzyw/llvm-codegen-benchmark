@@ -5,7 +5,6 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	and	w8, w0, #0x1
-	neg	w0, w8
+	sbfx	w0, w0, #0, #1
 	ret
 

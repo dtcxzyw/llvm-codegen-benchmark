@@ -3,8 +3,7 @@ func000000000000007f:
 	vsll.vi	v12, v12, 8
 	vor.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func000000000000007c:
@@ -12,8 +11,7 @@ func000000000000007c:
 	vsll.vi	v12, v12, 8
 	vor.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func000000000000007d:
@@ -21,8 +19,7 @@ func000000000000007d:
 	vsll.vi	v12, v12, 8
 	vor.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 13
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -13
 	ret
 
 func0000000000000010:
@@ -39,8 +36,7 @@ func0000000000000011:
 	vadd.vv	v12, v12, v12
 	vor.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
-	li	a0, 3
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -3
 	ret
 
 func0000000000000055:
@@ -48,7 +44,6 @@ func0000000000000055:
 	vsll.vi	v12, v12, 24
 	vor.vv	v10, v10, v12
 	vsub.vv	v8, v8, v10
-	li	a0, 14
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -14
 	ret
 

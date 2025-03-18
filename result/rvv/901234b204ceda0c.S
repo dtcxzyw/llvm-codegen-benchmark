@@ -3,8 +3,7 @@ func00000000000000a2:
 	vsra.vi	v12, v12, 3
 	vadd.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	vsrl.vi	v8, v8, 1
 	ret
 

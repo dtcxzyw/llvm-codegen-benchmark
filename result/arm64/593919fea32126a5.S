@@ -12,8 +12,8 @@ func0000000000000081:
 	ret
 
 func00000000000000a1:
-	and	x8, x1, #0x1
-	cmn	x0, x8
+	sbfx	x8, x1, #0, #1
+	cmp	x0, x8
 	cset	w0, eq
 	ret
 

@@ -26,7 +26,6 @@ func0000000000000009:
 	vmulhu.vx	v8, v10, a1
 	vsrl.vi	v8, v8, 3
 	vmul.vx	v8, v8, a0
-	li	a0, -12
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 12
 	ret
 

@@ -11,8 +11,7 @@ func0000000000000054:
 	vsra.vi	v12, v12, 1
 	vsub.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12
-	li	a0, -4
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 4
 	ret
 
 func0000000000000055:
@@ -20,7 +19,6 @@ func0000000000000055:
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 

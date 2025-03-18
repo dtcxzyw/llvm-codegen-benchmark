@@ -36,9 +36,9 @@ func00000000000001a4:
 
 func0000000000000001:
 	and	w8, w2, #0x1
-	and	w9, w1, #0x1
+	sbfx	w9, w1, #0, #1
 	add	w8, w8, w0
-	cmn	w8, w9
+	cmp	w8, w9
 	cset	w0, eq
 	ret
 

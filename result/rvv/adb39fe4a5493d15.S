@@ -22,40 +22,35 @@ func0000000000000188:
 func00000000000000a6:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -1
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, 1
 	vmslt.vv	v0, v10, v8
 	ret
 
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 8
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -8
 	vmslt.vv	v0, v10, v8
 	ret
 
 func000000000000002a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -1
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, 1
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000084:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 3
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -3
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 4
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -4
 	vmsltu.vv	v0, v10, v8
 	ret
 
@@ -90,8 +85,7 @@ func0000000000000005:
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 2
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -2
 	vmslt.vv	v0, v10, v8
 	ret
 
@@ -105,16 +99,14 @@ func0000000000000086:
 func0000000000000184:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 4
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -4
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func00000000000001a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 3
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -3
 	vmsltu.vv	v0, v10, v8
 	ret
 
@@ -143,8 +135,7 @@ func000000000000000a:
 func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -4
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, 4
 	vmsne.vv	v0, v10, v8
 	ret
 
@@ -166,8 +157,7 @@ func0000000000000181:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -4
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, 4
 	vmsltu.vv	v0, v8, v10
 	ret
 
@@ -181,8 +171,7 @@ func00000000000001aa:
 func00000000000001c1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 2
-	vsub.vx	v10, v10, a0
+	vadd.vi	v10, v10, -2
 	vmseq.vv	v0, v10, v8
 	ret
 

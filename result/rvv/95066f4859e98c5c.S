@@ -6,9 +6,8 @@ func0000000000000015:
 	ret
 
 func0000000000000008:
-	li	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vnmsac.vv	v8, v12, v10
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -8
 	ret
 

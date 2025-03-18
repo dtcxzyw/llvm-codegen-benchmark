@@ -68,7 +68,8 @@ func0000000000000020:
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
 	vpunpcklqdq	%xmm1, %xmm2, %xmm1
-	vpackssdw	%xmm0, %xmm1, %xmm0
+	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 
@@ -143,7 +144,8 @@ func0000000000000021:
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
 	vpunpcklqdq	%xmm1, %xmm2, %xmm1
-	vpackssdw	%xmm0, %xmm1, %xmm0
+	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 

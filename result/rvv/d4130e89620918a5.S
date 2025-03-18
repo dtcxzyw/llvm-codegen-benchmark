@@ -7,8 +7,7 @@ func0000000000000008:
 func00000000000002aa:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v8, v10, v8
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	vmsle.vi	v0, v8, -3
 	ret
 

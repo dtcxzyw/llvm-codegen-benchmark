@@ -14,14 +14,12 @@ func000000000000000c:
 func000000000000000e:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsub.vv	v8, v8, v9
-	li	a0, 2
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, -2
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsub.vv	v8, v8, v9
-	li	a0, -1
-	vsub.vx	v8, v8, a0
+	vadd.vi	v8, v8, 1
 	ret
 

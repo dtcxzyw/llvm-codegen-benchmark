@@ -35,7 +35,8 @@ func0000000000000003:
 	subq	%rax, %rdx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
-	vpackssdw	%xmm0, %xmm1, %xmm0
+	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpmovqd	%ymm0, %xmm0
 	vpbroadcastd	.LCPI0_0(%rip), %xmm0 {%k1}
 	vzeroupper
 	retq

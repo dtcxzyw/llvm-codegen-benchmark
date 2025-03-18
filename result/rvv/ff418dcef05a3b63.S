@@ -7,25 +7,25 @@ func0000000000000012:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
+	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
 	addi	a0, sp, 16
 	vs8r.v	v8, (a0)
 	vfabs.v	v24, v8
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
+	sh3add	a0, a0, sp
+	addi	a0, a0, 16
+	vl8r.v	v8, (a0)
+	vmflt.vv	v7, v8, v24
+	csrr	a0, vlenb
+	slli	a0, a0, 4
 	add	a0, a0, sp
 	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v8, v0, v24
+	vs1r.v	v7, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v8, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
+	slli	a0, a0, 4
+	add	a0, a0, sp
 	addi	a0, a0, 16
 	vl1r.v	v0, (a0)
 	addi	a0, sp, 16
@@ -47,25 +47,25 @@ func0000000000000014:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
+	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
 	addi	a0, sp, 16
 	vs8r.v	v8, (a0)
 	vfabs.v	v24, v8
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
+	sh3add	a0, a0, sp
+	addi	a0, a0, 16
+	vl8r.v	v8, (a0)
+	vmflt.vv	v7, v24, v8
+	csrr	a0, vlenb
+	slli	a0, a0, 4
 	add	a0, a0, sp
 	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v8, v24, v0
+	vs1r.v	v7, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v8, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
+	slli	a0, a0, 4
+	add	a0, a0, sp
 	addi	a0, a0, 16
 	vl1r.v	v0, (a0)
 	addi	a0, sp, 16
@@ -87,25 +87,25 @@ func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
+	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
 	addi	a0, sp, 16
 	vs8r.v	v8, (a0)
 	vfabs.v	v24, v8
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
+	sh3add	a0, a0, sp
+	addi	a0, a0, 16
+	vl8r.v	v8, (a0)
+	vmflt.vv	v7, v24, v8
+	csrr	a0, vlenb
+	slli	a0, a0, 4
 	add	a0, a0, sp
 	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v8, v24, v0
+	vs1r.v	v7, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v8, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
+	slli	a0, a0, 4
+	add	a0, a0, sp
 	addi	a0, a0, 16
 	vl1r.v	v0, (a0)
 	addi	a0, sp, 16
@@ -127,25 +127,25 @@ func0000000000000002:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
-	add	a0, a0, sp
+	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
 	addi	a0, sp, 16
 	vs8r.v	v8, (a0)
 	vfabs.v	v24, v8
 	csrr	a0, vlenb
-	sh3add	a0, a0, a0
+	sh3add	a0, a0, sp
+	addi	a0, a0, 16
+	vl8r.v	v8, (a0)
+	vmflt.vv	v7, v8, v24
+	csrr	a0, vlenb
+	slli	a0, a0, 4
 	add	a0, a0, sp
 	addi	a0, a0, 16
-	vl8r.v	v0, (a0)
-	vmflt.vv	v8, v0, v24
+	vs1r.v	v7, (a0)
 	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 16
-	vs1r.v	v8, (a0)
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
+	slli	a0, a0, 4
+	add	a0, a0, sp
 	addi	a0, a0, 16
 	vl1r.v	v0, (a0)
 	addi	a0, sp, 16
