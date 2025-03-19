@@ -1,44 +1,48 @@
 func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v10, 1
+	vmv1r.v	v12, v9
+	vmv1r.v	v13, v8
+	vsrl.vi	v8, v10, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmslt.vv	v0, v8, v9
+	vmslt.vv	v0, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vnot.v	v8, v12
-	vadd.vv	v12, v10, v8, v0.t
-	vmv.v.v	v8, v12
+	vnot.v	v12, v8
+	vadd.vv	v8, v10, v12, v0.t
 	ret
 
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v10, 1
+	vmv1r.v	v12, v9
+	vmv1r.v	v13, v8
+	vsrl.vi	v8, v10, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmslt.vv	v0, v9, v8
+	vmslt.vv	v0, v12, v13
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vnot.v	v8, v12
-	vadd.vv	v12, v10, v8, v0.t
-	vmv.v.v	v8, v12
+	vnot.v	v12, v8
+	vadd.vv	v8, v10, v12, v0.t
 	ret
 
 func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v10, 1
+	vmv1r.v	v12, v9
+	vmv1r.v	v13, v8
+	vsrl.vi	v8, v10, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsltu.vv	v0, v9, v8
+	vmsltu.vv	v0, v12, v13
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vnot.v	v8, v12
-	vadd.vv	v12, v10, v8, v0.t
-	vmv.v.v	v8, v12
+	vnot.v	v12, v8
+	vadd.vv	v8, v10, v12, v0.t
 	ret
 
 func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v10, 1
+	vmv1r.v	v12, v9
+	vmv1r.v	v13, v8
+	vsrl.vi	v8, v10, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsltu.vv	v0, v8, v9
+	vmsltu.vv	v0, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vnot.v	v8, v12
-	vadd.vv	v12, v10, v8, v0.t
-	vmv.v.v	v8, v12
+	vnot.v	v12, v8
+	vadd.vv	v8, v10, v12, v0.t
 	ret
 

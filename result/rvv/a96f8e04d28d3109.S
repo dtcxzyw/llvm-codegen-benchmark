@@ -19,17 +19,17 @@ func0000000000000008:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v12, v12, 1
+	vadd.vi	v14, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
-	vzext.vf2	v14, v12
+	vzext.vf2	v12, v14
 	vadd.vv	v8, v10, v8
 	vsrl.vx	v10, v8, a0
 	vsra.vi	v8, v8, 9
 	vadd.vv	v8, v8, v10
-	vmsltu.vv	v0, v14, v8
+	vmsltu.vv	v0, v12, v8
 	ret
 
 func0000000000000021:
@@ -113,15 +113,15 @@ func0000000000000228:
 	vsub.vv	v8, v8, v10
 	lui	a1, 838861
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vadd.vx	v10, v12, a0
+	vadd.vx	v12, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
 	addiw	a0, a1, -819
-	vzext.vf2	v12, v10
+	vzext.vf2	v10, v12
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
-	vmsltu.vv	v0, v12, v8
+	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000034:

@@ -9,11 +9,11 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
-	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vsll.vx	v12, v10, a0
-	vzext.vf2	v10, v8
-	vor.vv	v10, v10, v12, v0.t
-	vmv.v.v	v8, v10
+	vmv1r.v	v12, v8
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vzext.vf2	v8, v12
+	vor.vv	v8, v8, v10, v0.t
 	ret
 

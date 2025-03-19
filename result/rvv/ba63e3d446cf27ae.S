@@ -31,11 +31,11 @@ func0000000000000302:
 	vand.vi	v10, v10, 3
 	vmsne.vi	v12, v8, 7
 	lui	a0, 786432
-	vmseq.vi	v8, v10, 0
-	vmv.v.x	v10, a0
-	vmor.mm	v0, v8, v12
+	vmseq.vi	v13, v10, 0
+	vmv.v.x	v8, a0
+	vmor.mm	v0, v13, v12
 	lui	a0, 262144
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000102:

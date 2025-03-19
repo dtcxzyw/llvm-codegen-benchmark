@@ -34,17 +34,17 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	lui	a0, 244141
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v12, 0
+	vmv1r.v	v12, v8
+	lui	a0, 244141
+	vmv.v.i	v8, 0
 	addi	a0, a0, -1536
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v12, a0
 	lui	a0, 804435
 	addiw	a0, a0, 1537
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vadd.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vadd.vx	v8, v10, a0, v0.t
 	ret
 
 func0000000000000038:

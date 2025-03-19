@@ -1,6 +1,7 @@
 func0000000000000003:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vwaddu.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwaddu.vv	v8, v11, v10
 	ret
 

@@ -1,15 +1,15 @@
 func0000000000000000:
-	li	a0, 63
 	vsetivli	zero, 16, e16, m2, ta, mu
-	vmv.v.x	v10, a0
-	vzext.vf2	v10, v8, v0.t
-	vmv.v.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 63
+	vmv.v.x	v8, a0
+	vzext.vf2	v8, v10, v0.t
 	ret
 
 func0000000000000001:
 	vsetivli	zero, 16, e16, m2, ta, mu
-	vmv.v.i	v10, 0
-	vzext.vf2	v10, v8, v0.t
-	vmv.v.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v8, 0
+	vzext.vf2	v8, v10, v0.t
 	ret
 

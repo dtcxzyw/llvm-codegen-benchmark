@@ -8,12 +8,12 @@ func0000000000000000:
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v16, v16, fa5
+	vfmul.vf	v24, v16, fa5
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmv.v.f	v24, fa4
+	vfmv.v.f	v16, fa4
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vfwadd.wv	v24, v24, v16
+	vfwadd.wv	v16, v16, v24
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmul.vv	v8, v24, v8
+	vfmul.vv	v8, v16, v8
 	ret
 

@@ -9,8 +9,9 @@ func0000000000000004:
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwmulsu.vv	v10, v9, v8
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwmulsu.vv	v8, v10, v11
+	vwaddu.wv	v8, v8, v11
 	ret
 

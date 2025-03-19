@@ -22,10 +22,10 @@ func0000000000000003:
 	ret
 
 func000000000000001f:
-	li	a0, 8
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwadd.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 8
+	vwadd.vx	v8, v10, a0
 	ret
 
 func0000000000000001:
@@ -39,17 +39,17 @@ func0000000000000001:
 	ret
 
 func000000000000001d:
-	li	a0, -59
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwadd.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, -59
+	vwadd.vx	v8, v10, a0
 	ret
 
 func000000000000000d:
-	li	a0, -285
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwadd.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, -285
+	vwadd.vx	v8, v10, a0
 	ret
 
 func0000000000000007:
@@ -65,17 +65,17 @@ func0000000000000007:
 
 func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v10, -1
+	vmv1r.v	v10, v8
+	vmv.v.i	v8, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000017:
-	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwaddu.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 16
+	vwaddu.vx	v8, v10, a0
 	ret
 
 func0000000000000005:
@@ -88,17 +88,17 @@ func0000000000000005:
 	ret
 
 func0000000000000013:
-	li	a0, 3
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwaddu.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 3
+	vwaddu.vx	v8, v10, a0
 	ret
 
 func000000000000000f:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwadd.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 32
+	vwadd.vx	v8, v10, a0
 	ret
 
 func0000000000000002:

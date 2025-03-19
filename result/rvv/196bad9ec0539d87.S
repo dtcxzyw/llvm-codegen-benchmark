@@ -1,8 +1,8 @@
 func00000000000000e3:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vv	v9, v10, v9
-	vadd.vi	v9, v9, 1
-	vwsubu.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vadd.vv	v8, v10, v9
+	vadd.vi	v10, v8, 1
+	vwsubu.vv	v8, v11, v10
 	ret
 

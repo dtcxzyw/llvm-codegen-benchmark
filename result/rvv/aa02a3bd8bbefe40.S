@@ -27,11 +27,11 @@ func000000000000002a:
 	vand.vx	v10, v10, a0
 	lui	a0, 262144
 	vmsgt.vi	v12, v8, -1
-	vmseq.vx	v8, v10, a0
+	vmseq.vx	v13, v10, a0
 	lui	a0, 176
-	vmv.v.x	v10, a0
-	vmand.mm	v0, v12, v8
+	vmv.v.x	v8, a0
+	vmand.mm	v0, v12, v13
 	addi	a0, a0, 16
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

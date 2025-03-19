@@ -1,19 +1,19 @@
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, -1
-	vmul.vv	v8, v9, v8
+	vmul.vv	v10, v9, v8
 	li	a0, 4
-	vwmulsu.vx	v10, v8, a0
+	vwmulsu.vx	v8, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vrsub.vi	v8, v10, 0
+	vrsub.vi	v8, v8, 0
 	ret
 
 func0000000000000015:
-	lui	a0, 59
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmadd.vv	v8, v9, v8
-	vwmul.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	lui	a0, 59
+	vmadd.vv	v10, v9, v8
+	vwmul.vx	v8, v10, a0
 	ret
 
 func0000000000000005:

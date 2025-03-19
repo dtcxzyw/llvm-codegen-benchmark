@@ -6,11 +6,11 @@ func0000000000000024:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vsrl.vi	v10, v13, 26
 	vadd.vv	v10, v12, v10
-	vsra.vi	v10, v10, 6
+	vsra.vi	v12, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
+	vsext.vf2	v10, v12
 	vsra.vi	v8, v8, 3
-	vmsltu.vv	v0, v8, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000028:
@@ -21,10 +21,10 @@ func0000000000000028:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vsrl.vi	v10, v13, 26
 	vadd.vv	v10, v12, v10
-	vsra.vi	v10, v10, 6
+	vsra.vi	v12, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
+	vsext.vf2	v10, v12
 	vsra.vi	v8, v8, 3
-	vmsltu.vv	v0, v12, v8
+	vmsltu.vv	v0, v10, v8
 	ret
 

@@ -4,10 +4,10 @@ func000000000000000f:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v12, v14, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 16
+	vzext.vf2	v14, v12
+	vwsll.vi	v12, v14, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v10, v14
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret
 
@@ -17,10 +17,10 @@ func000000000000000b:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v12, v14, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 24
+	vzext.vf2	v14, v12
+	vwsll.vi	v12, v14, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
 	ret
 
@@ -30,10 +30,10 @@ func000000000000000e:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v12, v14, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 11
+	vzext.vf2	v14, v12
+	vwsll.vi	v12, v14, 11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
 	ret
 
@@ -43,10 +43,10 @@ func000000000000000c:
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v12, v14, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 6
+	vzext.vf2	v14, v12
+	vwsll.vi	v12, v14, 6
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v10, v14
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret
 

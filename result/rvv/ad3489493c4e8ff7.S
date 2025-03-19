@@ -11,17 +11,17 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv1r.v	v10, v8
+	li	a0, 256
+	vmv.v.x	v8, a0
 	li	a0, 266
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	li	a0, 829
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v10, a0
 	li	a0, 33
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 

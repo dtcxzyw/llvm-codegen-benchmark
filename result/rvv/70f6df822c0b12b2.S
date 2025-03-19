@@ -3,10 +3,10 @@ func0000000000000003:
 	vzext.vf4	v11, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v10, v10, v11
-	vnot.v	v10, v10
+	vnot.v	v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vand.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vand.vv	v8, v8, v10
 	ret
 
 func000000000000000b:
@@ -14,9 +14,9 @@ func000000000000000b:
 	vzext.vf4	v11, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v10, v10, v11
-	vnot.v	v10, v10
+	vnot.v	v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vand.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vand.vv	v8, v8, v10
 	ret
 

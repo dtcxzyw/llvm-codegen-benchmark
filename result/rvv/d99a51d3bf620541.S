@@ -1,7 +1,7 @@
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmv.v.i	v10, 0
-	vsext.vf2	v10, v8, v0.t
-	vmv.v.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v8, 0
+	vsext.vf2	v8, v10, v0.t
 	ret
 

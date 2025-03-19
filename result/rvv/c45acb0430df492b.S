@@ -1,35 +1,35 @@
 func000000000000000a:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v9, v8
+	vzext.vf2	v10, v8
 	li	a0, -32
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv.v.x	v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v10, v10, v9
+	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsrl.vi	v8, v10, 5
+	vsrl.vi	v8, v8, 5
 	ret
 
 func0000000000000003:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v9, v8
+	vzext.vf2	v10, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, -4
+	vmv.v.i	v8, -4
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v10, v10, v9
+	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsrl.vi	v8, v10, 1
+	vsrl.vi	v8, v8, 1
 	ret
 
 func0000000000000002:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v9, v8
+	vzext.vf2	v10, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v10, -16
+	vmv.v.i	v8, -16
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v10, v10, v9
+	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsrl.vi	v8, v10, 2
+	vsrl.vi	v8, v8, 2
 	ret
 
 func0000000000000006:

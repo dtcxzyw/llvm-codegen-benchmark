@@ -9,10 +9,10 @@ func0000000000000188:
 func00000000000000a1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 2
-	vmul.vv	v10, v10, v11
+	vmul.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000126:
@@ -98,10 +98,10 @@ func00000000000001a1:
 func0000000000000006:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, -1
-	vmul.vv	v10, v11, v10
+	vmul.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmslt.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000181:
@@ -115,9 +115,9 @@ func0000000000000181:
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 4
-	vmul.vv	v10, v11, v10
+	vmul.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmsltu.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 

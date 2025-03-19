@@ -1,11 +1,11 @@
 func0000000000000007:
 	vsetivli	zero, 4, e8, mf4, ta, ma
+	vmv1r.v	v10, v8
 	vmseq.vi	v0, v9, 4
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, zero, 32
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000005:

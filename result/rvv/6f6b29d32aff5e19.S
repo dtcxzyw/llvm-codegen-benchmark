@@ -29,7 +29,7 @@ func0000000000000001:
 
 func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v10, v9
-	vmv.v.v	v8, v10
+	vmv1r.v	v10, v9
+	vsext.vf2	v8, v10
 	ret
 

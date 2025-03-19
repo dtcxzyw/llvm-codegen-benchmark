@@ -1,6 +1,7 @@
 func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfwadd.vv	v16, v8, v12
-	vmv8r.v	v8, v16
+	vmv4r.v	v16, v12
+	vmv4r.v	v20, v8
+	vfwadd.vv	v8, v20, v16
 	ret
 

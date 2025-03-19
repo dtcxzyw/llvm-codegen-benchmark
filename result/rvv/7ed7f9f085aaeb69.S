@@ -1,11 +1,11 @@
 func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vi	v8, v8, 1
+	vand.vi	v10, v8, 1
 	li	a0, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	slli	a0, a0, 45
-	vmul.vx	v8, v10, a0
+	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000005:
@@ -22,13 +22,13 @@ func0000000000000006:
 	li	a0, 255
 	lui	a1, 4112
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v8, v8, a0
+	vand.vx	v10, v8, a0
 	addiw	a0, a1, 257
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmul.vx	v8, v10, a0
+	vmul.vx	v8, v8, a0
 	ret
 
 .LCPI3_0:
@@ -38,20 +38,20 @@ func0000000000000004:
 	ld	a0, %lo(.LCPI3_0)(a0)
 	lui	a1, 1048568
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vandn.vx	v8, v8, a1
+	vandn.vx	v10, v8, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmul.vx	v8, v10, a0
+	vzext.vf2	v8, v10
+	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vi	v8, v8, -16
+	vand.vi	v10, v8, -16
 	li	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, a0, 32
-	vmul.vx	v8, v10, a0
+	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000003:

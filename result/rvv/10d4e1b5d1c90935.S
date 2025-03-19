@@ -1,13 +1,13 @@
 func0000000000000302:
 	li	a0, 66
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vand.vi	v8, v8, 2
+	vand.vi	v12, v8, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmsne.vx	v9, v10, a0
+	vand.vx	v8, v10, a0
+	vmsne.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmor.mm	v0, v8, v9
+	vmseq.vi	v8, v12, 0
+	vmor.mm	v0, v8, v10
 	ret
 
 func0000000000000058:

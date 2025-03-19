@@ -3,10 +3,10 @@ func000000000000000f:
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 1
-	vwsll.vi	v12, v10, 16
+	vsrl.vi	v12, v10, 1
+	vwsll.vi	v10, v12, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v10, v8
 	ret
 
 func000000000000000e:
@@ -14,10 +14,10 @@ func000000000000000e:
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 1
-	vwsll.vi	v12, v10, 8
+	vsrl.vi	v12, v10, 1
+	vwsll.vi	v10, v12, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret
 
 func000000000000000c:
@@ -25,10 +25,10 @@ func000000000000000c:
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 7
-	vwsll.vi	v12, v10, 24
+	vsrl.vi	v12, v10, 7
+	vwsll.vi	v10, v12, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret
 
 func000000000000000d:
@@ -36,9 +36,9 @@ func000000000000000d:
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 7
-	vwsll.vi	v12, v10, 24
+	vsrl.vi	v12, v10, 7
+	vwsll.vi	v10, v12, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret
 

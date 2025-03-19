@@ -29,11 +29,11 @@ func000000000000000a:
 
 func000000000000003e:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v11, v10
+	vzext.vf2	v12, v10
 	li	a0, 2
-	vwaddu.vx	v12, v11, a0
+	vwaddu.vx	v10, v12, a0
 	csrwi	vxrm, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vaaddu.vv	v8, v8, v12
+	vaaddu.vv	v8, v8, v10
 	ret
 

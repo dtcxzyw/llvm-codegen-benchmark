@@ -33,16 +33,16 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v12, v8
 	li	a0, -48
 	zext.w	a0, a0
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
+	vadd.vx	v8, v10, a0
 	li	a0, -1
 	srli	a0, a0, 32
-	vand.vx	v10, v10, a0
+	vand.vx	v8, v8, a0
 	li	a0, 10
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwmaccu.vx	v10, a0, v8
-	vmv2r.v	v8, v10
+	vwmaccu.vx	v8, a0, v12
 	ret
 

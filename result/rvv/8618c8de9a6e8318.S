@@ -21,15 +21,15 @@ func000000000000000d:
 
 func0000000000000030:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, -1
+	vadd.vi	v12, v8, -1
 	li	a0, 39
 	slli	a0, a0, 29
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 3
-	vzext.vf2	v12, v10
+	vzext.vf2	v10, v12
 	slli	a0, a0, 32
-	vmacc.vx	v8, a0, v12
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000f:

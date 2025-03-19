@@ -12,14 +12,14 @@ func0000000000000024:
 
 func00000000000000aa:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
+	vzext.vf4	v12, v10
 	li	a0, 23
-	vmv.v.x	v12, a0
+	vmv.v.x	v13, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsle.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwsubu.vv	v14, v12, v11
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vvm	v8, v14, v8, v0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 

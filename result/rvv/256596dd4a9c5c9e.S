@@ -1,8 +1,8 @@
 func0000000000000007:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v9, 1
-	vwsll.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v11, 1
+	vwsll.vv	v8, v11, v10
 	ret
 
 func0000000000000005:
@@ -14,15 +14,15 @@ func0000000000000005:
 
 func0000000000000006:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v9, 1
-	vwsll.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v11, 1
+	vwsll.vv	v8, v11, v10
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmv.v.i	v9, 2
-	vwsll.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v11, 2
+	vwsll.vv	v8, v11, v10
 	ret
 

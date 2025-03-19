@@ -1,11 +1,11 @@
 func00000000000004a4:
 	li	a0, -100
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.x	v12, a0
-	vwmulsu.vv	v14, v12, v11
-	vwaddu.wv	v14, v14, v10
+	vmv.v.x	v14, a0
+	vwmulsu.vv	v12, v14, v11
+	vwaddu.wv	v12, v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vv	v0, v14, v8
+	vmsltu.vv	v0, v12, v8
 	ret
 
 func00000000000001f8:

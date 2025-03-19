@@ -6,14 +6,14 @@ func00000000000003a1:
 	li	a0, -292
 	vsub.vv	v10, v10, v11
 	vsrl.vi	v10, v10, 1
-	vadd.vv	v10, v10, v11
+	vadd.vv	v12, v10, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.x	v12, a0
+	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vsrl.vi	v10, v10, 4
+	vsrl.vi	v12, v12, 4
 	li	a0, 27
-	vwmaccu.vx	v12, a0, v10
+	vwmaccu.vx	v10, a0, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v10, v8
 	ret
 

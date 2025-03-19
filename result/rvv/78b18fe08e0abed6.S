@@ -14,12 +14,12 @@ func0000000000000007:
 
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmerge.vvm	v8, v9, v8, v0
+	vmerge.vvm	v10, v9, v8, v0
 	li	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, a0, 32
-	vmul.vx	v8, v10, a0
+	vmul.vx	v8, v8, a0
 	ret
 
 .LCPI3_0:
@@ -28,10 +28,10 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmerge.vvm	v8, v9, v8, v0
+	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmul.vx	v8, v10, a0
+	vzext.vf2	v8, v10
+	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000005:

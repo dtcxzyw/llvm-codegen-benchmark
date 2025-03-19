@@ -6,10 +6,10 @@ func0000000000000007:
 	lui	a0, 520192
 	addi	a0, a0, 511
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vx	v12, v12, a0
+	vand.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v14, v12
-	vor.vv	v10, v10, v14
+	vzext.vf2	v12, v14
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret
 

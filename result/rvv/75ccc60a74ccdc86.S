@@ -13,12 +13,12 @@ func0000000000000000:
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfmadd.vf	v16, fa5, v12
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v10, v8
-	vfwcvt.f.xu.v	v12, v10
+	vzext.vf2	v12, v8
+	vfwcvt.f.xu.v	v8, v12
 	vsetvli	zero, zero, e32, m4, ta, ma
-	vfmadd.vf	v12, fa4, v16
+	vfmadd.vf	v8, fa4, v16
 	fli.s	fa5, 128.0
 	fneg.s	fa5, fa5
-	vfadd.vf	v8, v12, fa5
+	vfadd.vf	v8, v8, fa5
 	ret
 

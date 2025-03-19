@@ -16,9 +16,9 @@ func0000000000000007:
 	vfmacc.vf	v16, fa4, v12
 	vfmacc.vf	v16, fa3, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vfncvt.rtz.x.f.w	v8, v16
-	vfwcvt.f.x.v	v12, v8
+	vfncvt.rtz.x.f.w	v12, v16
+	vfwcvt.f.x.v	v8, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfne.vv	v0, v16, v12
+	vmfne.vv	v0, v16, v8
 	ret
 

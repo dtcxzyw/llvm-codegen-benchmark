@@ -1,10 +1,10 @@
 func000000000000000f:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vsll.vi	v10, v10, 3
+	vsll.vi	v12, v10, 3
 	li	a0, 248
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
-	vand.vx	v10, v12, a0
+	vzext.vf2	v10, v12
+	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	lui	a0, 1044480
 	vor.vx	v8, v8, a0
@@ -21,11 +21,11 @@ func000000000000000e:
 
 func000000000000000c:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vsll.vi	v10, v10, 5
+	vsll.vi	v12, v10, 5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
+	vzext.vf2	v10, v12
 	li	a0, 256
-	vand.vx	v10, v12, a0
+	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	vor.vi	v8, v8, 8
 	ret

@@ -11,11 +11,11 @@ func00000000000000aa:
 
 func00000000000000c8:
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vnot.v	v10, v10
+	vnot.v	v12, v10
 	li	a0, 10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf8	v12, v10
+	vsext.vf8	v10, v12
 	vmul.vx	v8, v8, a0
-	vmsltu.vv	v0, v12, v8
+	vmsltu.vv	v0, v10, v8
 	ret
 

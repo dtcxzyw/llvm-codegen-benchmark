@@ -5,9 +5,9 @@ func0000000000000072:
 	vadd.vi	v10, v12, 1
 	addi	a0, a0, -3
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vdivu.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vdivu.vv	v8, v8, v10
 	ret
 

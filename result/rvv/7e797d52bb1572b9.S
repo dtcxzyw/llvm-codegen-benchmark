@@ -14,9 +14,9 @@ func000000000000000a:
 	lui	a0, 1048572
 	addi	a0, a0, 66
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vx	v12, v12, a0
-	vfwcvt.f.x.v	v16, v12
+	vadd.vx	v16, v12, a0
+	vfwcvt.f.x.v	v12, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmacc.vf	v8, fa5, v16
+	vfmacc.vf	v8, fa5, v12
 	ret
 

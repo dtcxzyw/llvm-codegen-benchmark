@@ -44,12 +44,12 @@ func0000000000000182:
 	vandn.vx	v9, v9, a0
 	li	a0, -7
 	slli.uw	a0, a0, 29
-	vmslt.vv	v8, v9, v8
+	vmslt.vv	v12, v9, v8
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmseq.vx	v9, v10, a0
-	vmor.mm	v0, v9, v8
+	vand.vx	v8, v10, a0
+	vmseq.vx	v10, v8, a0
+	vmor.mm	v0, v10, v12
 	ret
 
 func00000000000002c2:
@@ -58,11 +58,11 @@ func00000000000002c2:
 	vandn.vx	v9, v9, a0
 	li	a0, -7
 	slli.uw	a0, a0, 29
-	vmsle.vv	v8, v8, v9
+	vmsle.vv	v12, v8, v9
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmseq.vx	v9, v10, a0
-	vmor.mm	v0, v9, v8
+	vand.vx	v8, v10, a0
+	vmseq.vx	v10, v8, a0
+	vmor.mm	v0, v10, v12
 	ret
 

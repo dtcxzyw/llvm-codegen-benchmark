@@ -7,10 +7,10 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 56
+	vwsll.vx	v8, v10, a0
 	ret
 
 func0000000000000007:

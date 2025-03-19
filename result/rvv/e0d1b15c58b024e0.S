@@ -58,11 +58,11 @@ func0000000000000008:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 4
-	vwsubu.vv	v12, v10, v11
+	vzext.vf2	v12, v10
+	vmv.v.i	v13, 4
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsltu.vv	v0, v8, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000006:
@@ -77,14 +77,14 @@ func0000000000000006:
 
 func000000000000000a:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
+	vand.vi	v12, v10, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.i	v12, 15
+	vmv.v.i	v10, 15
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vi	v0, v10, 0
+	vmsne.vi	v0, v12, 0
 	li	a0, 23
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vxm	v10, v12, a0, v0
+	vmerge.vxm	v10, v10, a0, v0
 	vmslt.vv	v0, v8, v10
 	ret
 

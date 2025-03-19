@@ -1,28 +1,32 @@
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v10, v9, 3
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwsll.vi	v8, v10, 3
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000002f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v10, v9, 28
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwsll.vi	v8, v10, 28
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v10, v9, 2
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwsll.vi	v8, v10, 2
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000003f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v10, v9, 3
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwsll.vi	v8, v10, 3
+	vwaddu.wv	v8, v8, v11
 	ret
 

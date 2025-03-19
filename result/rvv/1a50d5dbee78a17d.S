@@ -1,9 +1,9 @@
 func0000000000000000:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vsrl.vi	v12, v12, 4
+	vsrl.vi	v14, v12, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v14, v12
-	vrol.vv	v8, v8, v14
+	vzext.vf4	v12, v14
+	vrol.vv	v8, v8, v12
 	vandn.vv	v8, v8, v10
 	ret
 

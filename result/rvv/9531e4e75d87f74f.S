@@ -11,57 +11,59 @@ func0000000000000007:
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v8
 	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, zero, 32
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000011:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v8
 	vmsleu.vi	v0, v9, 7
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, zero, 32
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000029:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v8
 	vmsgt.vi	v0, v9, -1
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, zero, 32
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000021:
-	lui	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	lui	a0, 32
+	vzext.vf2	v8, v11
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vx	v0, v9, a0
+	vmsgtu.vx	v0, v10, a0
 	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000023:
-	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	li	a0, 63
+	vzext.vf2	v8, v11
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vx	v0, v9, a0
+	vmsgtu.vx	v0, v10, a0
 	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000031:
@@ -86,21 +88,21 @@ func0000000000000019:
 
 func0000000000000013:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v8
 	vmsleu.vi	v0, v9, 5
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	bseti	a0, zero, 32
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000006:
-	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v8
+	li	a0, 16
 	vmseq.vx	v0, v9, a0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vzext.vf2	v10, v8
-	vor.vi	v10, v10, 6, v0.t
-	vmv.v.v	v8, v10
+	vzext.vf2	v8, v10
+	vor.vi	v8, v8, 6, v0.t
 	ret
 

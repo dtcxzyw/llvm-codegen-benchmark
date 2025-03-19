@@ -1,10 +1,10 @@
 func00000000000000a9:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsgt.vi	v0, v9, 0
-	vsub.vv	v8, v8, v10, v0.t
+	vmv1r.v	v11, v8
+	vsub.vv	v11, v8, v10, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v10, v8
-	vmv.v.v	v8, v10
+	vsext.vf2	v8, v11
 	ret
 
 func00000000000001e1:

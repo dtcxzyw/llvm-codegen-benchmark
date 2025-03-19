@@ -19,16 +19,16 @@ func0000000000000001:
 func000000000000004a:
 	lui	a0, 4096
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v8, v8, a0
+	vadd.vx	v10, v8, a0
 	lui	a0, 8192
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 0
+	vmv.v.i	v8, 0
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgt.vx	v0, v8, a0
+	vmsgt.vx	v0, v10, a0
 	li	a0, 20
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000004:
@@ -91,14 +91,14 @@ func0000000000000021:
 func000000000000000a:
 	li	a0, -120
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v8, v8, a0
+	vadd.vx	v10, v8, a0
 	li	a0, 100
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv.v.x	v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgt.vi	v0, v8, 0
+	vmsgt.vi	v0, v10, 0
 	li	a0, 20
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

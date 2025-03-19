@@ -1,7 +1,7 @@
 func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf4	v10, v9
-	vmv.v.v	v8, v10
+	vmv1r.v	v10, v9
+	vzext.vf4	v8, v10
 	ret
 
 func0000000000000034:

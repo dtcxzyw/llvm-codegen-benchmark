@@ -1,8 +1,8 @@
 func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmadd.vv	v8, v12, v16
-	vfwadd.vv	v16, v8, v8
-	vmv8r.v	v8, v16
+	vmv4r.v	v20, v8
+	vfmadd.vv	v20, v12, v16
+	vfwadd.vv	v8, v20, v20
 	ret
 
 .LCPI1_0:

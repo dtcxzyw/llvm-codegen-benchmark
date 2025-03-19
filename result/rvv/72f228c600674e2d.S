@@ -5,10 +5,10 @@ func0000000000000141:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000101:
@@ -18,10 +18,10 @@ func0000000000000101:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000121:
@@ -31,10 +31,10 @@ func0000000000000121:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000c61:
@@ -43,10 +43,10 @@ func0000000000000c61:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000161:
@@ -55,10 +55,10 @@ func0000000000000161:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000c21:
@@ -67,9 +67,9 @@ func0000000000000c21:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v11, 0
 	vmerge.vim	v11, v11, 1, v0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

@@ -10,11 +10,11 @@ func0000000000000000:
 	lui	a0, 524288
 	vsra.vi	v10, v10, 29
 	vsrl.vi	v12, v10, 31
-	vadd.vv	v10, v10, v12
+	vadd.vv	v12, v10, v12
 	addi	a0, a0, -1
-	vnmsub.vx	v10, a0, v8
-	vfwcvt.f.x.v	v12, v10
+	vnmsub.vx	v12, a0, v8
+	vfwcvt.f.x.v	v8, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfdiv.vf	v8, v12, fa5
+	vfdiv.vf	v8, v8, fa5
 	ret
 

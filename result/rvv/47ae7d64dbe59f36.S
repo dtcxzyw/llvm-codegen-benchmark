@@ -6,10 +6,10 @@ func0000000000000045:
 	vnsrl.wi	v8, v10, 0
 	addi	a0, a0, -819
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 7
+	vsrl.vi	v10, v8, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf4	v10, v8
-	vsrl.vi	v8, v10, 1
-	vsub.vv	v8, v10, v8
+	vzext.vf4	v8, v10
+	vsrl.vi	v10, v8, 1
+	vsub.vv	v8, v8, v10
 	ret
 

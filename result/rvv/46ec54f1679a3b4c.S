@@ -39,10 +39,10 @@ func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vmv.v.i	v10, 0
-	vwsubu.vv	v14, v10, v12
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vv	v0, v8, v14
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000008:

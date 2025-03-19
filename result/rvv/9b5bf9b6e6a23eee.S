@@ -2,67 +2,67 @@ func0000000000000028:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v12, v8
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000034:
 	lui	a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000021:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 8
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000008:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, -1
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v12, v8
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000007:
 	li	a0, -49
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsle.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsle.vv	v0, v8, v10
 	ret
 
 func0000000000000005:
 	li	a0, -49
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsleu.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsleu.vv	v0, v8, v10
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, -1
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func000000000000002a:
@@ -70,9 +70,9 @@ func000000000000002a:
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmslt.vv	v0, v12, v8
+	vzext.vf2	v10, v12
+	vmslt.vv	v0, v10, v8
 	ret
 

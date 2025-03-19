@@ -56,15 +56,15 @@ func0000000000000001:
 
 func000000000000000c:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vsext.vf2	v11, v10
+	vsext.vf2	v12, v10
 	li	a0, -48
-	vmv.v.i	v10, 0
+	vmv.v.i	v13, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwsub.vv	v12, v10, v11
+	vwsub.vv	v10, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsne.vv	v0, v8, v12
+	vmsne.vv	v0, v8, v10
 	ret
 
 func0000000000000028:

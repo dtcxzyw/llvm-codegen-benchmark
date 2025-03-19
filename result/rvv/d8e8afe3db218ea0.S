@@ -1,15 +1,15 @@
 func000000000000000f:
-	li	a0, 7
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vwaddu.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 7
+	vwaddu.vx	v8, v10, a0
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, -7
+	vmv1r.v	v10, v8
+	vmv.v.i	v8, -7
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v10
 	ret
 

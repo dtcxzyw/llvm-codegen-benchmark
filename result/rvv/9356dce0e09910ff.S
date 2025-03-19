@@ -1,7 +1,8 @@
 func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vwaddu.vv	v12, v9, v10
-	vwsubu.wv	v12, v12, v8
-	vmv2r.v	v8, v12
+	vmv1r.v	v11, v9
+	vmv1r.v	v12, v8
+	vwaddu.vv	v8, v11, v10
+	vwsubu.wv	v8, v8, v12
 	ret
 

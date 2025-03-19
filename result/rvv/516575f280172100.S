@@ -1,14 +1,14 @@
 func0000000000000426:
 	li	a0, -15
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vv	v8, v8, v9
+	vadd.vv	v12, v8, v9
 	slli	a0, a0, 31
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmseq.vi	v9, v10, 0
+	vand.vx	v8, v10, a0
+	vmseq.vi	v10, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsle.vi	v8, v8, 7
-	vmand.mm	v0, v8, v9
+	vmsle.vi	v8, v12, 7
+	vmand.mm	v0, v8, v10
 	ret
 
 func0000000000000021:

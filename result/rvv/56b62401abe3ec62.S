@@ -13,10 +13,10 @@ func000000000000004a:
 	vnsrl.wi	v13, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v13, 0
-	vadd.vv	v10, v12, v10
+	vadd.vv	v12, v12, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vmslt.vv	v0, v8, v12
+	vzext.vf4	v10, v12
+	vmslt.vv	v0, v8, v10
 	ret
 
 func000000000000000a:
@@ -34,9 +34,9 @@ func0000000000000061:
 	vnsrl.wi	v13, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v13, 0
-	vadd.vv	v10, v12, v10
+	vadd.vv	v12, v12, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf4	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

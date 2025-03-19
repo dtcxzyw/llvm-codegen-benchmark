@@ -1,31 +1,31 @@
 func0000000000000007:
-	lui	a0, 1048568
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vandn.vx	v9, v9, a0
-	vwaddu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	lui	a0, 1048568
+	vandn.vx	v11, v9, a0
+	vwaddu.vv	v8, v11, v10
 	ret
 
 func0000000000000003:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vi	v9, v9, -4
-	vwaddu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vand.vi	v11, v9, -4
+	vwaddu.vv	v8, v11, v10
 	ret
 
 func000000000000000f:
-	lui	a0, 1048572
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vandn.vx	v9, v9, a0
-	vwaddu.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	lui	a0, 1048572
+	vandn.vx	v11, v9, a0
+	vwaddu.vv	v8, v10, v11
 	ret
 
 func000000000000000b:
-	lui	a0, 1048568
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vandn.vx	v9, v9, a0
-	vwaddu.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	lui	a0, 1048568
+	vandn.vx	v11, v9, a0
+	vwaddu.vv	v8, v10, v11
 	ret
 

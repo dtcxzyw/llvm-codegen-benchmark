@@ -5,10 +5,10 @@ func0000000000000221:
 	addi	a0, a0, 1366
 	vmulh.vx	v10, v12, a0
 	vsrl.vi	v11, v10, 31
-	vadd.vv	v10, v10, v11
+	vadd.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000021:
@@ -16,9 +16,9 @@ func0000000000000021:
 	vnsrl.wi	v12, v10, 2
 	vsrl.vi	v10, v12, 31
 	vadd.vv	v10, v12, v10
-	vsra.vi	v10, v10, 1
+	vsra.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

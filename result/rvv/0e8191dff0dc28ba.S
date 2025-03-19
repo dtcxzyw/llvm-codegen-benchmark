@@ -4,11 +4,11 @@ func0000000000000025:
 	li	a0, 32
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
-	vsra.vi	v10, v10, 1
+	vsra.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
+	vzext.vf2	v10, v12
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret
 
 func0000000000000005:
@@ -20,10 +20,10 @@ func0000000000000005:
 	li	a0, 32
 	vsra.vi	v10, v10, 9
 	vsrl.vi	v11, v10, 31
-	vadd.vv	v10, v10, v11
+	vadd.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
+	vzext.vf2	v10, v12
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret
 

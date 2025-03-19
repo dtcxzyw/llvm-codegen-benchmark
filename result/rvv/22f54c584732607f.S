@@ -14,9 +14,9 @@ func0000000000000004:
 	ld	a0, %lo(.LCPI1_0)(a0)
 	li	a1, 55
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vand.vx	v8, v8, a1
+	vand.vx	v10, v8, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v8
-	vmul.vx	v8, v10, a0
+	vzext.vf8	v8, v10
+	vmul.vx	v8, v8, a0
 	ret
 

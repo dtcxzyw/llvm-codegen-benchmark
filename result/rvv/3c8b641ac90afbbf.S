@@ -29,14 +29,14 @@ func0000000000000008:
 
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vsext.vf4	v11, v10
+	vsext.vf4	v12, v10
 	li	a0, -48
-	vmv.v.i	v10, 0
+	vmv.v.i	v13, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwsub.vv	v12, v10, v11
+	vwsub.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

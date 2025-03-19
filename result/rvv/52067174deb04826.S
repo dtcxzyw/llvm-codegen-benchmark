@@ -7,18 +7,18 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	li	a0, 100
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vwmulu.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 100
+	vwmulu.vx	v8, v10, a0
 	ret
 
 func0000000000000005:
-	li	a0, -100
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.x	v9, a0
-	vwmulsu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, -100
+	vmv.v.x	v11, a0
+	vwmulsu.vv	v8, v11, v10
 	ret
 
 func0000000000000002:

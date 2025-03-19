@@ -1,21 +1,21 @@
 func0000000000000009:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmul.vv	v9, v9, v10
-	vwmulsu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmul.vv	v10, v9, v10
+	vwmulsu.vv	v8, v10, v11
 	ret
 
 func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmul.vv	v9, v9, v10
-	vwmulsu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmul.vv	v10, v9, v10
+	vwmulsu.vv	v8, v10, v11
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmul.vv	v9, v9, v10
-	vwmulsu.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmul.vv	v10, v9, v10
+	vwmulsu.vv	v8, v10, v11
 	ret
 

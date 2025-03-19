@@ -6,10 +6,10 @@ func00000000000000df:
 	vnsrl.wi	v10, v8, 0
 	addi	a0, a0, -3
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vmul.vv	v8, v8, v10
 	ret
 
 func000000000000009f:
@@ -20,9 +20,9 @@ func000000000000009f:
 	vnsrl.wi	v10, v8, 0
 	addi	a0, a0, -3
 	vmv.v.x	v11, a0
-	vdivu.vv	v10, v11, v10
+	vdivu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vmul.vv	v8, v8, v10
 	ret
 

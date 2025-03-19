@@ -5,10 +5,10 @@ func0000000000000004:
 	vadd.vv	v11, v10, v11
 	li	a0, -64
 	vand.vx	v11, v11, a0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsll.vv	v8, v8, v10
 	ret
 
 func0000000000000006:
@@ -18,9 +18,9 @@ func0000000000000006:
 	vadd.vv	v11, v10, v11
 	li	a0, -64
 	vand.vx	v11, v11, a0
-	vsub.vv	v10, v10, v11
+	vsub.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsll.vv	v8, v8, v10
 	ret
 

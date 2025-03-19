@@ -9,20 +9,20 @@ func0000000000000004:
 
 func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v10, -8
+	vmv1r.v	v10, v8
+	vmv.v.i	v8, -8
 	li	a0, 8
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwmaccus.vx	v10, a0, v8
-	vmv2r.v	v8, v10
+	vwmaccus.vx	v8, a0, v10
 	ret
 
 func0000000000000007:
-	li	a0, -32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv1r.v	v10, v8
+	li	a0, -32
+	vmv.v.x	v8, a0
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwmaccus.vx	v10, a0, v8
-	vmv2r.v	v8, v10
+	vwmaccus.vx	v8, a0, v10
 	ret
 

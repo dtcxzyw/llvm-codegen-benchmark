@@ -3,10 +3,10 @@ func0000000000000008:
 	vsra.vi	v11, v11, 19
 	vsub.vv	v10, v10, v11
 	li	a0, 64
-	vadd.vx	v10, v10, a0
+	vadd.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsll.vv	v8, v8, v10
 	ret
 
 func000000000000002c:
@@ -14,10 +14,10 @@ func000000000000002c:
 	vsra.vi	v11, v11, 19
 	vsub.vv	v10, v10, v11
 	li	a0, 64
-	vadd.vx	v10, v10, a0
+	vadd.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsll.vv	v8, v8, v10
 	ret
 
 func0000000000000028:
@@ -25,9 +25,9 @@ func0000000000000028:
 	vsra.vi	v11, v11, 19
 	vsub.vv	v10, v10, v11
 	li	a0, 64
-	vadd.vx	v10, v10, a0
+	vadd.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsll.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsll.vv	v8, v8, v10
 	ret
 

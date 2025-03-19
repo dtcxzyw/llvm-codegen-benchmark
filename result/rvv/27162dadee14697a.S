@@ -27,28 +27,28 @@ func000000000000000b:
 	ret
 
 func0000000000000043:
-	li	a0, 57
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v8
+	li	a0, 57
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 42
-	vmv.v.x	v10, a0
+	vmv.v.x	v8, a0
 	li	a0, 50
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
-	vmv2r.v	v8, v10
+	vzext.vf2	v10, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000051:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v8
 	vmsgt.vi	v0, v10, 9
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vnot.v	v10, v10
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
+	vnot.v	v8, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
-	vmv2r.v	v8, v10
+	vzext.vf2	v10, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 

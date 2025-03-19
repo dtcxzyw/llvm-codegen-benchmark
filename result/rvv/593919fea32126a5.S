@@ -14,22 +14,22 @@ func0000000000000081:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v10, v10, 15
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000a1:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vi	v10, v10, 1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000084:

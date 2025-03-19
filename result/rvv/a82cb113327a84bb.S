@@ -2,11 +2,11 @@ func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v8, v8, 25
 	li	a0, 3
-	vand.vi	v8, v8, 1
+	vand.vi	v10, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vzext.vf2	v8, v10
 	slli	a0, a0, 45
-	vmul.vx	v8, v10, a0
+	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000005:
@@ -28,9 +28,9 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	lui	a1, 1048568
-	vandn.vx	v8, v8, a1
+	vandn.vx	v10, v8, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmul.vx	v8, v10, a0
+	vzext.vf2	v8, v10
+	vmul.vx	v8, v8, a0
 	ret
 

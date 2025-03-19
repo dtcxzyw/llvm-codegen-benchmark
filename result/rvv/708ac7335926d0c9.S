@@ -60,11 +60,11 @@ func0000000000000084:
 
 func0000000000000081:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func000000000000002a:
@@ -103,11 +103,11 @@ func00000000000000f8:
 
 func00000000000000a1:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000a4:
@@ -146,11 +146,11 @@ func0000000000000008:
 
 func0000000000000021:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000026:
@@ -171,11 +171,11 @@ func0000000000000028:
 
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf4	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000094:

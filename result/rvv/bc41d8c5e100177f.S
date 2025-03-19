@@ -164,10 +164,10 @@ func0000000000000027:
 func0000000000000022:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmsleu.vi	v0, v9, 1
-	vadd.vi	v8, v8, -3, v0.t
+	vmv1r.v	v10, v8
+	vadd.vi	v10, v8, -3, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmv.v.v	v8, v10
+	vzext.vf2	v8, v10
 	ret
 
 func0000000000000040:

@@ -4,9 +4,9 @@ func0000000000000021:
 	vadd.vx	v12, v11, a0
 	li	a0, 26
 	vmsltu.vx	v0, v12, a0
-	vmerge.vvm	v10, v11, v10, v0
+	vmerge.vvm	v12, v11, v10, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vsub.vv	v8, v12, v8
+	vzext.vf4	v10, v12
+	vsub.vv	v8, v10, v8
 	ret
 

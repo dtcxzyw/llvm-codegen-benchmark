@@ -6,10 +6,10 @@ func0000000000000026:
 	vsra.vi	v10, v10, 3
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
-	vadd.vi	v10, v10, 1
+	vadd.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmslt.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000021:
@@ -18,10 +18,10 @@ func0000000000000021:
 	vsrl.vi	v11, v11, 26
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 6
-	vadd.vi	v10, v10, 1
+	vadd.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func000000000000002a:
@@ -29,10 +29,10 @@ func000000000000002a:
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 1
-	vadd.vi	v10, v10, -1
+	vadd.vi	v12, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmslt.vv	v0, v12, v8
+	vsext.vf2	v10, v12
+	vmslt.vv	v0, v10, v8
 	ret
 
 func000000000000002c:
@@ -41,10 +41,10 @@ func000000000000002c:
 	vsrl.vi	v11, v11, 26
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 6
-	vadd.vi	v10, v10, -1
+	vadd.vi	v12, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmsne.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmsne.vv	v0, v8, v10
 	ret
 
 func0000000000000024:
@@ -53,10 +53,10 @@ func0000000000000024:
 	vsrl.vi	v11, v11, 27
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 5
-	vadd.vi	v10, v10, 1
+	vadd.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmsltu.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000028:
@@ -65,9 +65,9 @@ func0000000000000028:
 	vsrl.vi	v11, v11, 27
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 5
-	vadd.vi	v10, v10, 1
+	vadd.vi	v12, v10, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmsltu.vv	v0, v12, v8
+	vsext.vf2	v10, v12
+	vmsltu.vv	v0, v10, v8
 	ret
 

@@ -9,10 +9,10 @@ func0000000000000001:
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	li	a0, -100
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vfwcvt.f.x.v	v12, v8
+	vadd.vx	v12, v8, a0
+	vfwcvt.f.x.v	v8, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmul.vf	v8, v12, fa5
+	vfmul.vf	v8, v8, fa5
 	vfmul.vf	v8, v8, fa4
 	ret
 

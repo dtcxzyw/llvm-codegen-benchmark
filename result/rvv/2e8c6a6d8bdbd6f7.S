@@ -16,12 +16,12 @@ func00000000000000c1:
 	vmslt.vv	v10, v8, v9
 	vmseq.vv	v8, v8, v9
 	li	a0, 16
-	vmandn.mm	v9, v10, v8
-	vmand.mm	v8, v0, v8
+	vmandn.mm	v10, v10, v8
+	vmand.mm	v11, v0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v10, a0
-	vmor.mm	v0, v8, v9
+	vmv.v.x	v8, a0
+	vmor.mm	v0, v11, v10
 	li	a0, 24
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

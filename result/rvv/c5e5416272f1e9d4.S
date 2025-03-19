@@ -1,24 +1,24 @@
 func00000000000001a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v10, v10, 8
+	vmv1r.v	v12, v8
+	vsll.vi	v8, v10, 8
 	li	a0, -65
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v12, a0
 	lui	a0, 1048568
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vadd.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func00000000000001e1:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v10, v10, 6
+	vmv1r.v	v12, v8
+	vsll.vi	v8, v10, 6
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vi	v0, v8, 6
+	vmseq.vi	v0, v12, 6
 	li	a0, 128
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vadd.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func00000000000000aa:

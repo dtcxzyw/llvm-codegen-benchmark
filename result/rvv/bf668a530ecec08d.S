@@ -8,9 +8,9 @@ func000000000000000f:
 func000000000000000c:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v10, v9
-	vzext.vf2	v9, v8
-	vwaddu.vv	v12, v9, v10
+	vzext.vf2	v11, v8
+	vwaddu.vv	v8, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsll.vi	v8, v12, 24
+	vsll.vi	v8, v8, 24
 	ret
 

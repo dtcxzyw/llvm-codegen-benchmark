@@ -9,10 +9,10 @@ func00000000000000e1:
 	vsrl.vi	v11, v11, 2
 	li	a0, 7
 	vnmsub.vx	v11, a0, v10
-	vadd.vi	v10, v11, 1
+	vadd.vi	v12, v11, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000e8:
@@ -26,9 +26,9 @@ func00000000000000e8:
 	vnmsub.vx	v11, a0, v10
 	lui	a0, 2
 	addi	a0, a0, -1989
-	vadd.vx	v10, v11, a0
+	vadd.vx	v12, v11, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v12, v8
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v10, v8
 	ret
 

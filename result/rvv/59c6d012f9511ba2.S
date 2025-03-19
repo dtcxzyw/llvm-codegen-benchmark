@@ -3,12 +3,12 @@ func0000000000000058:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 0
 	addi	a0, a0, -2032
-	vmseq.vx	v8, v10, a0
+	vmseq.vx	v13, v10, a0
 	li	a0, 128
-	vmv.v.x	v10, a0
-	vmor.mm	v0, v12, v8
+	vmv.v.x	v8, a0
+	vmor.mm	v0, v12, v13
 	li	a0, 130
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000302:

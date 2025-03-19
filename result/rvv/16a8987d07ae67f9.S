@@ -1,61 +1,61 @@
 func0000000000000010:
-	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
+	li	a0, 10
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 
 func0000000000000118:
-	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
+	li	a0, 10
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 
 func00000000000000a5:
-	li	a0, 37
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
+	li	a0, 37
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 
 func00000000000001e0:
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
 	lui	a0, 376095
 	addiw	a0, a0, -1643
-	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 
 func00000000000000b5:
-	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
+	li	a0, 10
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 
 func00000000000000b0:
-	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v14, v8
+	li	a0, 10
 	vmacc.vx	v10, a0, v12
-	vmul.vx	v10, v10, a0
+	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vwaddu.wv	v8, v8, v14
 	ret
 

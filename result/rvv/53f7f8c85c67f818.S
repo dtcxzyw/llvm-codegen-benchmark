@@ -1,12 +1,12 @@
 func000000000000000b:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v9, v8
+	vzext.vf2	v10, v8
 	lui	a0, 16
-	vwsll.vi	v10, v9, 14
+	vwsll.vi	v8, v10, 14
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vor.vx	v10, v10, a0, v0.t
+	vor.vx	v8, v8, a0, v0.t
 	lui	a0, 1
-	vor.vx	v8, v10, a0
+	vor.vx	v8, v8, a0
 	ret
 
 func0000000000000003:

@@ -11,23 +11,23 @@ func0000000000000035:
 
 func0000000000000030:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v11, v10
+	vzext.vf2	v12, v10
 	lui	a0, 4
-	vwsll.vi	v12, v11, 8
+	vwsll.vi	v10, v12, 8
 	addi	a0, a0, -256
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v10, v12, a0
+	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 1
 	ret
 
 func0000000000000037:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v11, v10
+	vzext.vf2	v12, v10
 	lui	a0, 448
-	vwsll.vi	v12, v11, 18
+	vwsll.vi	v10, v12, 18
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vand.vx	v10, v12, a0
+	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	lui	a0, 4096
 	vadd.vx	v8, v8, a0

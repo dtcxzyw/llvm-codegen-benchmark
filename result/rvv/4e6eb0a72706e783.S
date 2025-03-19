@@ -4,9 +4,9 @@ func00000000000000ae:
 	vrsub.vi	v10, v10, 4
 	vmsgt.vx	v0, v11, a0
 	li	a0, -49
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v12, v10, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vsrl.vv	v8, v8, v12
+	vzext.vf2	v10, v12
+	vsrl.vv	v8, v8, v10
 	ret
 

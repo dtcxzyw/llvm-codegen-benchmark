@@ -13,12 +13,12 @@ func0000000000000004:
 func00000000000000ac:
 	li	a0, 16
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v8, v8, 1
+	vand.vi	v14, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vx	v12, v12, a0
-	vmsle.vv	v9, v12, v10
+	vadd.vx	v8, v12, a0
+	vmsle.vv	v12, v8, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v8, v9
+	vmsne.vi	v8, v14, 0
+	vmand.mm	v0, v8, v12
 	ret
 

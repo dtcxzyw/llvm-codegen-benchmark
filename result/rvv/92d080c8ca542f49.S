@@ -69,12 +69,12 @@ func000000000000000c:
 func0000000000000003:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v16, v8, fa5
+	vmfge.vf	v24, v8, fa5
 	fli.d	fa5, 0.5
-	vfmv.v.f	v24, fa5
-	vmnot.m	v0, v16
+	vfmv.v.f	v16, fa5
+	vmnot.m	v0, v24
 	fneg.d	fa5, fa5
-	vfmerge.vfm	v16, v24, fa5, v0
+	vfmerge.vfm	v16, v16, fa5, v0
 	vfadd.vv	v8, v8, v16
 	ret
 

@@ -10,13 +10,13 @@ func000000000000018c:
 func0000000000000184:
 	lui	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v8, v8, -11
+	vadd.vi	v12, v8, -11
 	addiw	a0, a0, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
+	vand.vx	v8, v10, a0
+	vmsne.vi	v10, v8, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsleu.vi	v8, v8, 5
-	vmand.mm	v0, v8, v9
+	vmsleu.vi	v8, v12, 5
+	vmand.mm	v0, v8, v10
 	ret
 

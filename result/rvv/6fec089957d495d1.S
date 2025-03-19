@@ -1,7 +1,8 @@
 func000000000000000f:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vwsll.vi	v10, v9, 1
-	vwaddu.wv	v10, v10, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
+	vwsll.vi	v8, v10, 1
+	vwaddu.wv	v8, v8, v11
 	ret
 

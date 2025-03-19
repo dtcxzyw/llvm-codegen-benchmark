@@ -24,10 +24,10 @@ func000000000000001d:
 
 func0000000000000014:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vsrl.vi	v10, v10, 1
-	vwsll.vi	v12, v10, 2
+	vsrl.vi	v12, v10, 1
+	vwsll.vi	v10, v12, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsub.vv	v8, v8, v12
+	vsub.vv	v8, v8, v10
 	ret
 
 func000000000000001c:

@@ -5,11 +5,11 @@ func0000000000000001:
 	vmulh.vx	v11, v10, a0
 	vsra.vi	v11, v11, 2
 	vsrl.vi	v12, v11, 15
-	vadd.vv	v11, v11, v12
+	vadd.vv	v12, v11, v12
 	li	a0, 10
-	vnmsub.vx	v11, a0, v10
+	vnmsub.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsext.vf2	v12, v11
-	vmseq.vv	v0, v8, v12
+	vsext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

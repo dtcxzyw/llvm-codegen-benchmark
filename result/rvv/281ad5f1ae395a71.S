@@ -6,10 +6,10 @@ func0000000000000021:
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 26
 	vadd.vv	v10, v10, v11
-	vsra.vi	v10, v10, 6
+	vsra.vi	v12, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000121:
@@ -20,9 +20,9 @@ func0000000000000121:
 	vsra.vi	v11, v10, 31
 	vsrl.vi	v11, v11, 26
 	vadd.vv	v10, v10, v11
-	vsra.vi	v10, v10, 6
+	vsra.vi	v12, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 

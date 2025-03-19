@@ -1,15 +1,15 @@
 func0000000000000001:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.i	v9, 0
-	vwsub.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vmv.v.i	v11, 0
+	vwsub.vv	v8, v11, v10
 	ret
 
 func0000000000000003:
-	li	a0, 32
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.x	v9, a0
-	vwsub.vv	v10, v9, v8
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 32
+	vmv.v.x	v11, a0
+	vwsub.vv	v8, v11, v10
 	ret
 

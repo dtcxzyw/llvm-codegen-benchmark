@@ -9,12 +9,12 @@ func0000000000000005:
 
 func0000000000000001:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v9, v8
+	vzext.vf2	v10, v8
 	li	a0, 128
-	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
+	vmv.v.x	v11, a0
+	vwsubu.vv	v8, v11, v10
 	lui	a0, 1048560
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vandn.vx	v8, v10, a0
+	vandn.vx	v8, v8, a0
 	ret
 

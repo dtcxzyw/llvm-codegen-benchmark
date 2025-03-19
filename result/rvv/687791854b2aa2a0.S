@@ -1,11 +1,11 @@
 func0000000000000037:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v9
-	vsll.vi	v10, v10, 8
-	vor.vv	v10, v10, v12
+	vmv1r.v	v12, v8
+	vzext.vf4	v14, v9
+	vsll.vi	v8, v10, 8
+	vor.vv	v8, v8, v14
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
-	vmv2r.v	v8, v10
+	vzext.vf2	v10, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 

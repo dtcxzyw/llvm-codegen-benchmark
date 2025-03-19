@@ -2,29 +2,29 @@ func00000000000000aa:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
-	vsub.vv	v10, v10, v12
+	vsub.vv	v12, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmslt.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmslt.vv	v0, v8, v10
 	ret
 
 func00000000000000b8:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
-	vsub.vv	v10, v10, v12
+	vsub.vv	v12, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsltu.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret
 
 func00000000000000a7:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
-	vsub.vv	v10, v10, v12
+	vsub.vv	v12, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsle.vv	v0, v12, v8
+	vzext.vf2	v10, v12
+	vmsle.vv	v0, v10, v8
 	ret
 

@@ -1,7 +1,8 @@
 func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfwadd.vv	v24, v12, v16
-	vfwadd.wv	v24, v24, v8
-	vmv8r.v	v8, v24
+	vmv4r.v	v20, v12
+	vmv4r.v	v24, v8
+	vfwadd.vv	v8, v20, v16
+	vfwadd.wv	v8, v8, v24
 	ret
 

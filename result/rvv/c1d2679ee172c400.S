@@ -1,38 +1,38 @@
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vi	v9, v9, 15
-	vwsll.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vand.vi	v11, v9, 15
+	vwsll.vv	v8, v10, v11
 	ret
 
 func0000000000000008:
-	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v9, v9, a0
-	vwsll.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 63
+	vand.vx	v11, v9, a0
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000000c:
-	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v9, v9, a0
-	vwsll.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 63
+	vand.vx	v11, v9, a0
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000000e:
-	li	a0, 62
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v9, v9, a0
-	vwsll.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	li	a0, 62
+	vand.vx	v11, v9, a0
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000000b:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vi	v9, v9, 1
-	vwsll.vv	v10, v8, v9
-	vmv2r.v	v8, v10
+	vmv1r.v	v10, v8
+	vand.vi	v11, v9, 1
+	vwsll.vv	v8, v10, v11
 	ret
 

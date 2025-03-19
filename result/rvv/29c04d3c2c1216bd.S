@@ -1,9 +1,9 @@
 func00000000000000e1:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
+	vand.vi	v12, v10, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vzext.vf4	v10, v12
+	vor.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 0
 	ret
 
@@ -11,11 +11,11 @@ func0000000000000081:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf2	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vv	v0, v8, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000aa:
@@ -42,11 +42,11 @@ func000000000000008c:
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 0
-	vwsubu.vv	v12, v10, v11
+	vzext.vf2	v12, v10
+	vmv.v.i	v13, 0
+	vwsubu.vv	v10, v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsne.vv	v0, v8, v12
+	vmsne.vv	v0, v8, v10
 	ret
 
 func00000000000000f4:
@@ -116,10 +116,10 @@ func00000000000000a1:
 
 func00000000000000ec:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vand.vi	v10, v10, 3
+	vand.vi	v12, v10, 3
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vzext.vf4	v10, v12
+	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
 

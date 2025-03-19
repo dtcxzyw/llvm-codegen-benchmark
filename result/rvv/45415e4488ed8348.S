@@ -4,10 +4,10 @@ func00000000000001e1:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v12, v12, a0
 	li	a0, 3
-	vsrl.vi	v12, v12, 1
-	vwmulu.vx	v14, v12, a0
+	vsrl.vi	v14, v12, 1
+	vwmulu.vx	v12, v14, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	vmseq.vv	v0, v14, v8
+	vmseq.vv	v0, v12, v8
 	ret
 

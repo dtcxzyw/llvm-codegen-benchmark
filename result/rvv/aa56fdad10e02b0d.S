@@ -5,10 +5,10 @@ func0000000000000021:
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 9
 	li	a0, 1
-	vmax.vx	v10, v10, a0
+	vmax.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmseq.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmseq.vv	v0, v8, v10
 	ret
 
 func000000000000002c:
@@ -18,9 +18,9 @@ func000000000000002c:
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 5
 	li	a0, 1
-	vmax.vx	v10, v10, a0
+	vmax.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmsne.vv	v0, v8, v12
+	vzext.vf2	v10, v12
+	vmsne.vv	v0, v8, v10
 	ret
 

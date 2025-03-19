@@ -9,11 +9,11 @@ func00000000000000aa:
 
 func0000000000000001:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.i	v12, 0
+	vmv.v.i	v14, 0
 	vwsubu.wv	v8, v8, v11
-	vwsubu.vv	v14, v12, v10
+	vwsubu.vv	v12, v14, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vv	v0, v8, v14
+	vmseq.vv	v0, v8, v12
 	ret
 
 func0000000000000008:

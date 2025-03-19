@@ -1,67 +1,67 @@
 func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vi	v10, v8, 4
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmacc.vv	v11, v10, v9
+	vwsll.vi	v8, v11, 4
 	ret
 
 func0000000000000002:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	li	a0, 32
+	vmacc.vv	v11, v10, v9
+	vwsll.vx	v8, v11, a0
 	ret
 
 func000000000000000a:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	li	a0, 32
+	vmacc.vv	v11, v10, v9
+	vwsll.vx	v8, v11, a0
 	ret
 
 func0000000000000033:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vi	v10, v8, 1
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmacc.vv	v11, v10, v9
+	vwsll.vi	v8, v11, 1
 	ret
 
 func000000000000002b:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vi	v10, v8, 1
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmacc.vv	v11, v10, v9
+	vwsll.vi	v8, v11, 1
 	ret
 
 func000000000000003f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vi	v10, v8, 3
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmacc.vv	v11, v10, v9
+	vwsll.vi	v8, v11, 3
 	ret
 
 func0000000000000023:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vi	v10, v8, 2
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	vmacc.vv	v11, v10, v9
+	vwsll.vi	v8, v11, 2
 	ret
 
 func000000000000002a:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	li	a0, 32
+	vmacc.vv	v11, v10, v9
+	vwsll.vx	v8, v11, a0
 	ret
 
 func0000000000000022:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmacc.vv	v8, v10, v9
-	vwsll.vx	v10, v8, a0
-	vmv2r.v	v8, v10
+	vmv1r.v	v11, v8
+	li	a0, 32
+	vmacc.vv	v11, v10, v9
+	vwsll.vx	v8, v11, a0
 	ret
 
