@@ -1,8 +1,6 @@
 func0000000000000006:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v8, v8, 5
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 5
 	vmsle.vi	v8, v10, 0
 	vmor.mm	v0, v0, v8
 	ret
@@ -26,10 +24,8 @@ func0000000000000086:
 
 func0000000000000046:
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v8, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wx	v10, v8, a0
 	vmsle.vi	v8, v10, 0
 	vmor.mm	v0, v0, v8
 	ret

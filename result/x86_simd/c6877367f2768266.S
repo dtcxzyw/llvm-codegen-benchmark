@@ -3,18 +3,18 @@
 	.byte	254
 	.byte	254
 	.byte	254
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000001104:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -30,18 +30,18 @@ func0000000000001104:
 	.byte	254
 	.byte	254
 	.byte	254
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000005104:
 	vpcmpltub	.LCPI1_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2

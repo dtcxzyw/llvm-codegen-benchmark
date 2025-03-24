@@ -10,10 +10,8 @@ func0000000000000208:
 
 func000000000000010c:
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wx	v9, v10, a0
 	vadd.vi	v8, v8, 1
 	vmsne.vv	v8, v8, v9
 	vmand.mm	v0, v0, v8
@@ -31,10 +29,8 @@ func0000000000000204:
 
 func0000000000000101:
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wx	v9, v10, a0
 	vadd.vi	v8, v8, -1
 	vmseq.vv	v8, v8, v9
 	vmand.mm	v0, v0, v8
@@ -42,10 +38,8 @@ func0000000000000101:
 
 func0000000000000161:
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wx	v9, v10, a0
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v8, v8, v9
 	vmand.mm	v0, v0, v8

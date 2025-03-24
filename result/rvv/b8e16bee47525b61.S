@@ -29,9 +29,9 @@ func000000000000002c:
 	vmseq.vi	v12, v8, 0
 	vmsne.vi	v8, v10, 0
 	vmand.mm	v9, v0, v12
-	vmand.mm	v10, v0, v8
-	vmandn.mm	v8, v9, v8
-	vmor.mm	v0, v10, v8
+	vmandn.mm	v9, v9, v8
+	vmand.mm	v8, v0, v8
+	vmor.mm	v0, v8, v9
 	ret
 
 func000000000000018c:

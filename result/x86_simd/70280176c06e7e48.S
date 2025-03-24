@@ -25,18 +25,18 @@ func0000000000000020:
 	.byte	58
 	.byte	58
 	.byte	58
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func000000000000002e:
 	vpcmpeqb	.LCPI3_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -49,18 +49,18 @@ func000000000000002e:
 	.byte	58
 	.byte	58
 	.byte	58
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func000000000000002f:
 	vpcmpeqb	.LCPI4_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -73,18 +73,18 @@ func000000000000002f:
 	.byte	1
 	.byte	1
 	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000188:
 	vpcmpneqb	.LCPI5_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -97,18 +97,18 @@ func0000000000000188:
 	.byte	254
 	.byte	254
 	.byte	254
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000088:
 	vpcmpltub	.LCPI6_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -121,18 +121,18 @@ func0000000000000088:
 	.byte	254
 	.byte	254
 	.byte	254
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000288:
 	vpcmpltub	.LCPI7_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1

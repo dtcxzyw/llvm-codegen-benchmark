@@ -11,9 +11,8 @@ func0000000000000019:
 	li	a0, 100
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v12
-	vnmsub.vx	v10, a0, v8
-	vmsle.vi	v0, v10, -1
-	vadd.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vnmsac.vx	v8, a0, v10
+	vmsle.vi	v0, v8, -1
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 

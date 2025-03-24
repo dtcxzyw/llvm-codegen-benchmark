@@ -39,10 +39,10 @@ func0000000000004041:
 	lui	a0, 174763
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v10, 0
+	vmseq.vi	v10, v8, 0
 	addi	a0, a0, -1366
-	vmsgtu.vx	v10, v12, a0
-	vmor.mm	v10, v14, v10
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmsgtu.vx	v8, v12, a0
+	vmor.mm	v9, v14, v10
+	vmor.mm	v0, v9, v8
 	ret
 

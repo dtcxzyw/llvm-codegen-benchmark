@@ -3,8 +3,8 @@ func000000000000604c:
 	vmsne.vv	v14, v10, v12
 	vmseq.vi	v12, v10, 0
 	lui	a0, 4096
-	vmor.mm	v10, v12, v14
-	vmsne.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmsne.vx	v10, v8, a0
+	vmor.mm	v8, v14, v10
+	vmor.mm	v0, v8, v12
 	ret
 

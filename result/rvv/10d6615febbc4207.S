@@ -31,20 +31,18 @@ func000000000000000f:
 
 func0000000000000006:
 	li	a0, 37
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, mu
-	vnsrl.wi	v8, v10, 0
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vnsrl.wx	v10, v8, a0
 	li	a0, 256
-	vor.vx	v8, v8, a0, v0.t
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000007:
 	li	a0, 63
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, mu
-	vnsrl.wi	v8, v10, 0
-	vor.vi	v8, v8, 2, v0.t
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vnsrl.wx	v10, v8, a0
+	vor.vi	v10, v10, 2, v0.t
+	vmv.v.v	v8, v10
 	ret
 

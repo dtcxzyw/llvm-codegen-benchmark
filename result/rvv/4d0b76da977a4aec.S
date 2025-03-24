@@ -3,8 +3,8 @@ func000000000000000c:
 	vand.vi	v9, v9, -2
 	vmand.mm	v8, v0, v8
 	vmsne.vi	v9, v9, 10
-	vmand.mm	v10, v0, v9
 	vmandn.mm	v8, v8, v9
-	vmor.mm	v0, v10, v8
+	vmand.mm	v9, v0, v9
+	vmor.mm	v0, v9, v8
 	ret
 

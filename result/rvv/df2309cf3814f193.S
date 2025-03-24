@@ -5,8 +5,7 @@ func000000000000002a:
 	li	a0, 62
 	vsrl.vx	v12, v12, a0
 	vadd.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
-	vsll.vi	v10, v10, 2
+	vand.vi	v10, v10, -4
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
