@@ -73,9 +73,10 @@ func0000000000000011:
 
 func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vi	v0, v10, -1
-	vzext.vf2	v10, v8
-	vmerge.vim	v8, v10, 0, v0
+	vzext.vf2	v12, v8
+	li	a0, 63
+	vsra.vx	v8, v10, a0
+	vandn.vv	v8, v12, v8
 	ret
 
 func0000000000000028:

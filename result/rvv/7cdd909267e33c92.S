@@ -18,8 +18,8 @@ func000000000000000c:
 
 func0000000000000014:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vnot.v	v8, v8
-	vand.vi	v8, v8, 2
+	vmv.v.i	v9, 2
+	vandn.vv	v8, v9, v8
 	ret
 
 func0000000000000018:

@@ -16,9 +16,9 @@ func00000000000008c6:
 
 func00000000000004c6:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v0, v10, -1
-	vadd.vi	v10, v12, -1
-	vmerge.vim	v10, v10, 0, v0
+	vadd.vi	v12, v12, -1
+	vsra.vi	v10, v10, 31
+	vandn.vv	v10, v12, v10
 	vmslt.vv	v0, v8, v10
 	ret
 

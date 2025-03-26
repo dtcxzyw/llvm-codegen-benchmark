@@ -5,8 +5,8 @@ func0000000000000000:
 	vnsrl.wi	v8, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v8, v8, 0
-	vnot.v	v8, v8
-	vand.vi	v8, v8, 1
+	vmv.v.i	v9, 1
+	vandn.vv	v8, v9, v8
 	ret
 
 func000000000000000e:

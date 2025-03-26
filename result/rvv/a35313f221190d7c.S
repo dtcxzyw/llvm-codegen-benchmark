@@ -2,9 +2,9 @@ func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	li	a0, 255
-	vmsle.vi	v0, v8, -1
-	vmv.v.x	v8, a0
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v8, v8, 31
+	vmv.v.x	v10, a0
+	vandn.vv	v8, v10, v8
 	ret
 
 func0000000000000024:

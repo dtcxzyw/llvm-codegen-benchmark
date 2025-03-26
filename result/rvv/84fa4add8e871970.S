@@ -3,8 +3,8 @@ func0000000000000006:
 	vnsrl.wi	v9, v10, 0
 	li	a0, -20
 	vadd.vx	v9, v9, a0
-	vmsle.vi	v0, v9, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v9, v9, 31
+	vandn.vv	v8, v8, v9
 	ret
 
 func0000000000000004:

@@ -45,8 +45,8 @@ func00000000000000a6:
 	vadd.vv	v10, v12, v10
 	li	a0, -25
 	vadd.vx	v10, v10, a0
-	vmsle.vi	v0, v10, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v10, v10, 31
+	vandn.vv	v8, v8, v10
 	ret
 
 func00000000000000aa:

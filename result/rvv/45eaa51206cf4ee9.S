@@ -9,9 +9,9 @@ func00000000000000e1:
 func0000000000000066:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v8, 2
-	vmsle.vi	v0, v8, -1
-	vor.vi	v8, v10, 2
-	vmerge.vim	v8, v8, 0, v0
+	vor.vi	v10, v10, 2
+	vsra.vi	v8, v8, 31
+	vandn.vv	v8, v10, v8
 	ret
 
 func0000000000000021:

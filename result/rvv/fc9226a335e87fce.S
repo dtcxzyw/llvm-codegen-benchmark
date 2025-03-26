@@ -66,10 +66,11 @@ func0000000000000086:
 	vmv.v.i	v10, 0
 	vmsltu.vx	v0, v8, a0
 	li	a0, 32
+	vnot.v	v8, v8
 	vmerge.vim	v10, v10, 1, v0
-	vmsle.vi	v0, v8, -1
-	vsll.vx	v8, v10, a0
-	vmerge.vim	v8, v8, 0, v0
+	vsll.vx	v10, v10, a0
+	vsrl.vi	v8, v8, 31
+	vand.vv	v8, v8, v10
 	ret
 
 func0000000000000108:

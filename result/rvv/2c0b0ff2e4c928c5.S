@@ -166,8 +166,8 @@ func0000000000000085:
 
 func00000000000000ca:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v0, v12, -1
-	vmerge.vim	v10, v10, 0, v0
+	vsra.vi	v12, v12, 31
+	vandn.vv	v10, v10, v12
 	vmslt.vv	v0, v10, v8
 	ret
 
@@ -219,8 +219,8 @@ func000000000000014a:
 
 func00000000000000d8:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v0, v12, -1
-	vmerge.vim	v10, v10, 0, v0
+	vsra.vi	v12, v12, 31
+	vandn.vv	v10, v10, v12
 	vmsltu.vv	v0, v10, v8
 	ret
 

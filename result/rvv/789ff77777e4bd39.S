@@ -1,7 +1,7 @@
 func000000000000000e:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vnot.v	v10, v10
-	vand.vi	v10, v10, 1
+	vmv.v.i	v11, 1
+	vandn.vv	v10, v11, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v12, v10
 	vwsll.vi	v10, v12, 18
@@ -11,8 +11,8 @@ func000000000000000e:
 
 func000000000000000f:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vnot.v	v10, v10
-	vand.vi	v10, v10, 1
+	vmv.v.i	v11, 1
+	vandn.vv	v10, v11, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v12, v10
 	vwsll.vi	v10, v12, 14

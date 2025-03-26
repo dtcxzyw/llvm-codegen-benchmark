@@ -1,7 +1,7 @@
 func0000000000000306:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsle.vi	v0, v9, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v9, v9, 31
+	vandn.vv	v8, v8, v9
 	vnsrl.wi	v9, v10, 0
 	vmslt.vv	v0, v8, v9
 	ret
@@ -99,8 +99,8 @@ func0000000000000084:
 
 func0000000000000301:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsle.vi	v0, v9, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v9, v9, 31
+	vandn.vv	v8, v8, v9
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v0, v8, v9
 	ret

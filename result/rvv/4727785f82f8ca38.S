@@ -3,7 +3,7 @@ func00000000000004c6:
 	vmslt.vv	v0, v8, v10
 	vadd.vi	v10, v10, -1
 	vmerge.vvm	v10, v10, v8, v0
-	vmsle.vi	v0, v8, -1
-	vmerge.vim	v8, v10, 0, v0
+	vsra.vi	v8, v8, 31
+	vandn.vv	v8, v10, v8
 	ret
 

@@ -1,15 +1,15 @@
 func0000000000000000:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v8, v8, 2
-	vnot.v	v8, v8
-	vand.vi	v8, v8, 4
+	vmv.v.i	v9, 4
+	vandn.vv	v8, v9, v8
 	ret
 
 func0000000000000003:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v8, v8, 4
-	vnot.v	v8, v8
 	li	a0, 16
-	vand.vx	v8, v8, a0
+	vmv.v.x	v9, a0
+	vandn.vv	v8, v9, v8
 	ret
 

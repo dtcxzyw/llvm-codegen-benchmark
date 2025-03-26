@@ -3,8 +3,8 @@ func0000000000000006:
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsle.vi	v0, v10, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v10, v10, 31
+	vandn.vv	v8, v8, v10
 	ret
 
 func0000000000000026:
@@ -12,8 +12,8 @@ func0000000000000026:
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsle.vi	v0, v10, -1
-	vmerge.vim	v8, v8, 0, v0
+	vsra.vi	v10, v10, 31
+	vandn.vv	v8, v8, v10
 	ret
 
 func0000000000000021:
