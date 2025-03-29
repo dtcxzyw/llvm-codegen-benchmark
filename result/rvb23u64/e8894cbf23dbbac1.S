@@ -9,7 +9,7 @@ func0000000000000000:
 func000000000000003f:
 	add	a0, a0, a1
 	addi	a0, a0, 248
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000030:

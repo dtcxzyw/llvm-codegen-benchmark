@@ -1,5 +1,5 @@
 func000000000000000f:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sext.w	a1, a1
 	li	a3, 4
 	addi	a2, a2, -3
@@ -10,7 +10,7 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sext.w	a1, a1
 	li	a3, 2
 	czero.eqz	a1, a1, a2

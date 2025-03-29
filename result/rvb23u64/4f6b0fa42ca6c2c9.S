@@ -8,8 +8,8 @@ func0000000000000001:
 	ret
 
 func0000000000000015:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -23,8 +23,8 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
 	sltu	a0, a1, a0
 	ret
 

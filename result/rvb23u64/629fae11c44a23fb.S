@@ -58,7 +58,7 @@ func00000000000000cc:
 
 func0000000000000081:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -17
 	seqz	a1, a1
 	sltiu	a0, a0, 173
@@ -67,7 +67,7 @@ func0000000000000081:
 
 func000000000000010c:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -14
 	sltiu	a0, a0, 2
 	snez	a1, a1

@@ -1,5 +1,5 @@
 func000000000000001f:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 10
 	slli	a2, a2, 2
 	or	a1, a1, a2
@@ -7,7 +7,7 @@ func000000000000001f:
 	ret
 
 func0000000000000016:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 12
 	slli	a2, a2, 4
 	or	a1, a1, a2

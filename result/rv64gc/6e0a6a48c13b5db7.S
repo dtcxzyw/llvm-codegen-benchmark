@@ -4,7 +4,7 @@ func0000000000000015:
 	beqz	a3, .LBB0_2
 	addi	a1, a2, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	add	a0, a0, a1
 .LBB0_2:
@@ -16,7 +16,7 @@ func000000000000001f:
 	beqz	a3, .LBB1_2
 	addi	a1, a2, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	add	a0, a0, a1
 .LBB1_2:

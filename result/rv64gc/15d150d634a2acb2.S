@@ -14,7 +14,7 @@ func0000000000000014:
 	sltiu	a2, a2, 12
 	and	a0, a0, a2
 	bnez	a0, .LBB1_2
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 .LBB1_2:
 	li	a0, 11

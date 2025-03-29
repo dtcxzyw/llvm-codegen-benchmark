@@ -29,7 +29,7 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a1, 29
 	mul	a0, a0, a1
 	addi	a0, a0, 128

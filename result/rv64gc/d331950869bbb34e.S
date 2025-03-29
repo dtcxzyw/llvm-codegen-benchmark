@@ -8,7 +8,7 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a0, a0, 31
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -18,7 +18,7 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a1, a1, 27
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -28,7 +28,7 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB3_2
 	li	a2, 64
 	or	a0, a0, a2
@@ -43,7 +43,7 @@ func0000000000000007:
 	ret
 
 func0000000000000013:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a1, a1, 2
 	sltiu	a2, a2, 4
 	slli	a2, a2, 2

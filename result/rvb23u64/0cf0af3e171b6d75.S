@@ -62,7 +62,7 @@ func0000000000000101:
 
 func0000000000000141:
 	sext.w	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slti	a1, a1, 23
 	addi	a0, a0, -7
 	seqz	a0, a0

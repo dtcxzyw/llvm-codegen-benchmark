@@ -1,6 +1,6 @@
 func00000000000000a7:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	maxu	a2, a2, a3
 	subw	a1, a1, a2

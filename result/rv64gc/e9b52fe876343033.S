@@ -10,7 +10,7 @@ func0000000000000001:
 func0000000000000000:
 	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
-	andi	a1, a2, 255
+	zext.b	a1, a2
 .LBB1_2:
 	slli	a0, a1, 48
 	srli	a0, a0, 48

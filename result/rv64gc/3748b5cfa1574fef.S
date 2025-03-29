@@ -4,12 +4,12 @@ func0000000000000011:
 	bltu	a1, a2, .LBB0_2
 	li	a1, 247
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 .LBB0_2:
 	li	a1, 3
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000005:

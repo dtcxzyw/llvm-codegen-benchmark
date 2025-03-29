@@ -2,11 +2,11 @@ func0000000000000000:
 	slli	a2, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -32
 	addiw	a3, a2, 26

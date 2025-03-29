@@ -1,7 +1,7 @@
 func0000000000000075:
 	andi	a0, a0, 1
 	sh2add	a3, a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sh1add	a2, a3, a2
 	addiw	a2, a2, -48
 	czero.nez	a1, a1, a0
@@ -12,7 +12,7 @@ func0000000000000075:
 func0000000000000030:
 	andi	a0, a0, 1
 	sh2add	a3, a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sh1add	a2, a3, a2
 	addiw	a2, a2, -48
 	czero.nez	a1, a1, a0

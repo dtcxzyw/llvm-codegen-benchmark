@@ -1,12 +1,12 @@
 func00000000000000ac:
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	snez	a0, a0
 	ret
 
 func00000000000000a1:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
@@ -17,7 +17,7 @@ func00000000000000a1:
 
 func00000000000000aa:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	sext.h	a0, a0
 	sgtz	a0, a0
@@ -25,7 +25,7 @@ func00000000000000aa:
 
 func00000000000000a8:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 5
@@ -33,8 +33,8 @@ func00000000000000a8:
 	ret
 
 func00000000000001e1:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 1
@@ -45,7 +45,7 @@ func00000000000001e1:
 
 func00000000000000b8:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 16
@@ -54,7 +54,7 @@ func00000000000000b8:
 
 func00000000000000a4:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	lui	a1, 15
 	zext.h	a0, a0
@@ -64,16 +64,16 @@ func00000000000000a4:
 
 func00000000000000b4:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 5
 	ret
 
 func00000000000003ec:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 6
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	addi	a0, a0, -977
 	snez	a0, a0
@@ -81,7 +81,7 @@ func00000000000003ec:
 
 func00000000000002e1:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	lui	a1, 8
 	zext.h	a0, a0
@@ -91,16 +91,16 @@ func00000000000002e1:
 	ret
 
 func00000000000003f4:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 5
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	sltiu	a0, a0, 1000
 	ret
 
 func00000000000000a6:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	sext.h	a0, a0
 	slti	a0, a0, 1

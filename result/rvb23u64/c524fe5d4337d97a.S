@@ -12,7 +12,7 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	subw	a1, a1, a0
 	slliw	a0, a1, 10
 	ret
@@ -26,7 +26,7 @@ func0000000000000000:
 	ret
 
 func0000000000000007:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	subw	a1, a1, a0
 	slliw	a0, a1, 1
 	ret

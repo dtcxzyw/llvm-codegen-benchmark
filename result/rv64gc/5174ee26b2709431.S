@@ -1,13 +1,13 @@
 func0000000000000028:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000024:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

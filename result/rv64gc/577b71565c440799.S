@@ -1,6 +1,6 @@
 func000000000000048c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a2, a1
@@ -10,7 +10,7 @@ func000000000000048c:
 
 func000000000000058c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	xor	a0, a0, a1

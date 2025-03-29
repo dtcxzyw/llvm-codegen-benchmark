@@ -1,6 +1,6 @@
 func0000000000000002:
 	mv	a2, a0
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	addi	a1, a0, -102
 	seqz	a1, a1
 	and	a1, a1, a2
@@ -11,7 +11,7 @@ func0000000000000002:
 
 func0000000000000018:
 	mv	a2, a0
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	addi	a1, a0, -45
 	snez	a1, a1
 	and	a1, a1, a2

@@ -1,11 +1,11 @@
 func000000000000000c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
 
 func000000000000001c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, 1
 	sh3add	a0, a1, a0
 	ret
@@ -18,7 +18,7 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -1
 	sh2add	a1, a1, a1
 	add	a0, a0, a1

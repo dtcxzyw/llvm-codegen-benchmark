@@ -5,7 +5,7 @@ func000000000000000a:
 
 func000000000000000b:
 	ori	a0, a0, 128
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a0, a0, 7
 	ret
 

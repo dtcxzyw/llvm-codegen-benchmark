@@ -1,6 +1,6 @@
 func0000000000000221:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	li	a2, 3
 	sltiu	a1, a1, 2
 	addi	a0, a0, -4
@@ -10,8 +10,8 @@ func0000000000000221:
 	ret
 
 func0000000000000068:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	lui	a2, 1
 	czero.eqz	a1, a2, a1
 	sltiu	a0, a0, 32
@@ -22,8 +22,8 @@ func0000000000000068:
 	ret
 
 func0000000000000061:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	addi	a1, a1, -123
 	seqz	a1, a1
 	seqz	a0, a0

@@ -1,6 +1,6 @@
 func000000000000002c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -5
 	addi	a0, a0, -54
 	snez	a2, a2
@@ -11,7 +11,7 @@ func000000000000002c:
 
 func000000000000008c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 64
 	addi	a0, a0, -54
 	not	a2, a2
@@ -22,7 +22,7 @@ func000000000000008c:
 
 func0000000000000021:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -1
 	addi	a0, a0, -3
 	snez	a2, a2

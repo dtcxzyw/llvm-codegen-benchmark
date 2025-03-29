@@ -85,7 +85,7 @@ func0000000000000079:
 
 func0000000000000074:
 	andi	a1, a1, 63
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltu	a0, a1, a0
 	ret
 

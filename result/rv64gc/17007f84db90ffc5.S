@@ -1,7 +1,7 @@
 func0000000000000001:
 	slli	a0, a0, 63
 	srai	a0, a0, 63
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	sext.w	a0, a0
 	ret

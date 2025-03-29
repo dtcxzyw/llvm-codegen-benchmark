@@ -3,7 +3,7 @@ func000000000000000c:
 	srai	a1, a1, 63
 	ori	a1, a1, 223
 	and	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	snez	a0, a0
 	ret
 

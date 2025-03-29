@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a1, a1, 255
-	andi	a2, a0, 255
+	zext.b	a1, a1
+	zext.b	a2, a0
 	maxu	a2, a2, a1
 	addi	a1, a1, -255
 	czero.eqz	a2, a2, a1

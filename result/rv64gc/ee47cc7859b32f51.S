@@ -1,7 +1,7 @@
 func0000000000000021:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -249
 	seqz	a2, a2
 	addi	a2, a2, 1
@@ -13,7 +13,7 @@ func0000000000000021:
 
 func0000000000000034:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -249
 	seqz	a2, a2
 	addi	a2, a2, 1
@@ -23,7 +23,7 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	andi	a3, a2, 255
+	zext.b	a3, a2
 	li	a4, 3
 	andi	a2, a1, 1
 	beq	a3, a4, .LBB2_2

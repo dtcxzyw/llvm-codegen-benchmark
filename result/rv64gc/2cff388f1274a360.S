@@ -5,7 +5,7 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 524288
 	slli	a1, a1, 21
 	or	a0, a0, a2

@@ -4,7 +4,7 @@ func0000000000000104:
 	addi	a1, a1, -48
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sltu	a0, a0, a2
@@ -12,7 +12,7 @@ func0000000000000104:
 
 func00000000000002a6:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 63
@@ -20,7 +20,7 @@ func00000000000002a6:
 
 func00000000000002a4:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sltiu	a0, a0, 256
@@ -28,7 +28,7 @@ func00000000000002a4:
 
 func0000000000000708:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srli	a0, a0, 32
@@ -41,7 +41,7 @@ func0000000000000348:
 	addi	a1, a1, -48
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -50,7 +50,7 @@ func0000000000000348:
 func0000000000000668:
 	addi	a1, a1, -48
 	sh2add	a0, a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	lui	a1, 244
 	addiw	a1, a1, 575

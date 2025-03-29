@@ -39,7 +39,7 @@ func0000000000000318:
 
 func0000000000000118:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	lui	a3, 786432
 	addi	a2, a2, -12
 	addiw	a3, a3, 1

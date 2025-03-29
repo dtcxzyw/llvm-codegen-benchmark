@@ -1,5 +1,5 @@
 func0000000000000630:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	bseti	a3, zero, 39
 	and	a2, a2, a3
 	xori	a1, a1, 12
@@ -9,7 +9,7 @@ func0000000000000630:
 	ret
 
 func00000000000000b0:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	not	a2, a2
 	bexti	a2, a2, 20
 	addi	a1, a1, -28

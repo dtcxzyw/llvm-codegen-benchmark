@@ -19,7 +19,7 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	lui	a3, 520191
 	slli	a2, a2, 16
 	and	a1, a1, a3

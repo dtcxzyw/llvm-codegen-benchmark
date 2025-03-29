@@ -7,7 +7,7 @@ func0000000000000022:
 
 func0000000000000036:
 	addi	a1, a1, 192
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sub	a0, a0, a1
 	ret
 

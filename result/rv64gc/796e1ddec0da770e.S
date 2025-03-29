@@ -10,7 +10,7 @@ func0000000000000003:
 
 func0000000000000000:
 	sext.w	a3, a1
-	andi	a1, a2, 255
+	zext.b	a1, a2
 	bltu	a3, a1, .LBB1_2
 	mv	a1, a3
 .LBB1_2:

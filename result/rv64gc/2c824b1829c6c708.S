@@ -1,5 +1,5 @@
 func000000000000000c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	beqz	a1, .LBB0_2
 	slli	a0, a2, 1
 	add	a0, a0, a2
@@ -7,7 +7,7 @@ func000000000000000c:
 	ret
 
 func0000000000000041:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a3, 255
 	bne	a1, a3, .LBB1_2
 	slli	a0, a2, 1
@@ -18,7 +18,7 @@ func0000000000000041:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000004:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a3, 3
 	bgeu	a1, a3, .LBB2_2
 	lui	a0, %hi(.LCPI2_0)
@@ -30,7 +30,7 @@ func0000000000000004:
 .LCPI3_0:
 	.quad	5871781006564002453
 func0000000000000001:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a3, 29
 	bne	a1, a3, .LBB3_2
 	lui	a0, %hi(.LCPI3_0)

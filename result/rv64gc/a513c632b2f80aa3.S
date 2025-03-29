@@ -4,25 +4,25 @@ func0000000000000104:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -4
 	sltiu	a0, a0, -3
 	ret
 
 func0000000000000024:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -2
 	sltiu	a0, a0, 5
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -255
 	seqz	a0, a0
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -5
 	seqz	a0, a0
 	ret
@@ -41,7 +41,7 @@ func000000000000000a:
 	ret
 
 func00000000000001a1:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret

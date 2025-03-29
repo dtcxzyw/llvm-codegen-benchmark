@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	li	a2, 16
 	seqz	a1, a1
 	addiw	a1, a1, 8
@@ -11,7 +11,7 @@ func0000000000000021:
 
 func000000000000002a:
 	sext.b	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 6
 	snez	a1, a1
 	slti	a0, a0, 0

@@ -26,7 +26,7 @@ func000000000000000c:
 
 func0000000000000018:
 	andi	a2, a0, 1
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	sltiu	a0, a0, 161
 	bnez	a2, .LBB2_2
 	addi	a0, a0, -1

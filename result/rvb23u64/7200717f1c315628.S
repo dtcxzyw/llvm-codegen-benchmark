@@ -1,6 +1,6 @@
 func0000000000000c8c:
 	addi	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a2, a0
 	addi	a1, a1, -144
 	snez	a1, a1

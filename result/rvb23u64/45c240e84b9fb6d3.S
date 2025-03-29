@@ -76,7 +76,7 @@ func0000000000000081:
 
 func0000000000000194:
 	bexti	a1, a1, 26
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 51
 	and	a0, a0, a1
 	ret

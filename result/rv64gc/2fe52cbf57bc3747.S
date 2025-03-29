@@ -1,6 +1,6 @@
 func0000000000000021:
 	sext.w	a1, a1
-	andi	a3, a2, 255
+	zext.b	a3, a2
 	li	a4, 12
 	lui	a2, 1
 	beq	a3, a4, .LBB0_2

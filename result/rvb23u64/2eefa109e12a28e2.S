@@ -1,6 +1,6 @@
 func0000000000000546:
 	sext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.h	a1, a1
 	sgtz	a1, a1
@@ -9,7 +9,7 @@ func0000000000000546:
 	ret
 
 func0000000000000421:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	orn	a0, a0, a1
 	zext.h	a0, a0
@@ -18,7 +18,7 @@ func0000000000000421:
 
 func0000000000000428:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addi	a1, a1, -3

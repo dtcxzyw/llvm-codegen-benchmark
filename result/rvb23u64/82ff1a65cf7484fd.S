@@ -1,6 +1,6 @@
 func00000000000000c4:
 	sext.b	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -144
 	slti	a1, a1, -64
 	sltiu	a2, a2, 48
@@ -9,8 +9,8 @@ func00000000000000c4:
 	ret
 
 func0000000000000084:
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a1, a1
+	zext.b	a2, a2
 	addi	a2, a2, -91
 	sltiu	a1, a1, 246
 	sltiu	a2, a2, -26
@@ -19,8 +19,8 @@ func0000000000000084:
 	ret
 
 func000000000000008c:
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a1, a1
+	zext.b	a2, a2
 	addi	a2, a2, -91
 	addi	a1, a1, -95
 	sltiu	a2, a2, -26

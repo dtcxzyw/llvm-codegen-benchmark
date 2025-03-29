@@ -9,7 +9,7 @@ func0000000000000c26:
 	ret
 
 func0000000000000081:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a1, a2
@@ -18,7 +18,7 @@ func0000000000000081:
 	ret
 
 func0000000000000421:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	xori	a0, a0, 46
@@ -27,7 +27,7 @@ func0000000000000421:
 	ret
 
 func0000000000000881:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a1, a2
@@ -36,7 +36,7 @@ func0000000000000881:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	xori	a0, a0, 1
@@ -45,7 +45,7 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a1, a1, a2
@@ -55,7 +55,7 @@ func000000000000002c:
 	ret
 
 func00000000000000ac:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a2, a1
@@ -65,7 +65,7 @@ func00000000000000ac:
 	ret
 
 func0000000000000c21:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	xori	a0, a0, 94

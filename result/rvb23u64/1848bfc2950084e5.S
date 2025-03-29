@@ -4,6 +4,6 @@ func0000000000000003:
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ori	a0, a0, 48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

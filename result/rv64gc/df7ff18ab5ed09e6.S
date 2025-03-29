@@ -3,7 +3,7 @@
 func0000000000000301:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -54
 	sltiu	a1, a1, -6
 	xor	a0, a0, a2
@@ -12,7 +12,7 @@ func0000000000000301:
 	ret
 
 func0000000000000088:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a0, a0, 20
 	addi	a1, a1, -53
 	sltiu	a1, a1, 5
@@ -21,7 +21,7 @@ func0000000000000088:
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -255
 	sltiu	a1, a1, -254
 	seqz	a0, a0
@@ -29,7 +29,7 @@ func0000000000000081:
 	ret
 
 func0000000000000481:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a0, a0, -59
 	addi	a1, a1, -15
 	sltiu	a1, a1, 2

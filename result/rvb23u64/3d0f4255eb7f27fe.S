@@ -8,7 +8,7 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a2, 1
 	sltiu	a0, a0, 127
 	czero.eqz	a1, a1, a0
@@ -23,17 +23,17 @@ func0000000000000046:
 	ret
 
 func0000000000000061:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000041:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a2, 46
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

@@ -13,7 +13,7 @@ func0000000000000041:
 
 func0000000000000074:
 	bset	a0, zero, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 9
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000004:
 	addi	a2, a1, -97
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 6
 	bltu	a2, a3, .LBB0_2
 	mv	a0, a1

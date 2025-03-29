@@ -14,7 +14,7 @@ func000000000000000f:
 
 func000000000000001f:
 	addi	a1, a1, -1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 192

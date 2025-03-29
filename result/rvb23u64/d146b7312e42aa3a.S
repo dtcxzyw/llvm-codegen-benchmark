@@ -6,7 +6,7 @@ func000000000000001f:
 
 func0000000000000017:
 	bset	a1, zero, a1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	ret
 

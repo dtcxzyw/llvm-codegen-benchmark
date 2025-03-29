@@ -21,7 +21,7 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 17
 	and	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 func000000000000002a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 42
 	beq	a2, a3, .LBB0_2
 	mv	a0, a1
@@ -8,7 +8,7 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -16,7 +16,7 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
@@ -24,7 +24,7 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
@@ -33,7 +33,7 @@ func0000000000000028:
 	ret
 
 func0000000000000026:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
@@ -41,7 +41,7 @@ func0000000000000026:
 	ret
 
 func0000000000000024:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:
@@ -49,7 +49,7 @@ func0000000000000024:
 	ret
 
 func0000000000000101:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 30
 	bltu	a3, a2, .LBB6_2
 	mv	a0, a1
@@ -66,7 +66,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000081:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 24
 	bltu	a2, a3, .LBB8_2
 	mv	a0, a1
@@ -75,7 +75,7 @@ func0000000000000081:
 	ret
 
 func000000000000008a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 24
 	bltu	a2, a3, .LBB9_2
 	mv	a0, a1
@@ -84,7 +84,7 @@ func000000000000008a:
 	ret
 
 func000000000000008c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 24
 	bltu	a2, a3, .LBB10_2
 	mv	a0, a1
@@ -93,7 +93,7 @@ func000000000000008c:
 	ret
 
 func0000000000000088:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 24
 	bltu	a2, a3, .LBB11_2
 	mv	a0, a1
@@ -103,7 +103,7 @@ func0000000000000088:
 	ret
 
 func0000000000000038:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB12_2
 	mv	a0, a1
 .LBB12_2:
@@ -112,7 +112,7 @@ func0000000000000038:
 	ret
 
 func0000000000000034:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB13_2
 	mv	a0, a1
 .LBB13_2:
@@ -120,7 +120,7 @@ func0000000000000034:
 	ret
 
 func0000000000000094:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 6
 	bltu	a2, a3, .LBB14_2
 	mv	a0, a1

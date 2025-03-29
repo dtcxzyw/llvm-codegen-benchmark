@@ -1,5 +1,5 @@
 func0000000000000018:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fmv.w.x	fa5, zero
 	seqz	a0, a0
 	feq.s	a1, fa0, fa5
@@ -7,7 +7,7 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 276672
 	addi	a0, a0, -8
 	fmv.w.x	fa5, a1
@@ -17,7 +17,7 @@ func0000000000000014:
 	ret
 
 func0000000000000081:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
 	addi	a0, a0, -1
@@ -26,7 +26,7 @@ func0000000000000081:
 	ret
 
 func0000000000000024:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	feq.s	a1, fa0, fa0
 	xori	a1, a1, 1
 	sltiu	a0, a0, 3
@@ -34,7 +34,7 @@ func0000000000000024:
 	ret
 
 func00000000000000ec:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
 	feq.s	a1, fa0, fa5
@@ -44,7 +44,7 @@ func00000000000000ec:
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
 	seqz	a0, a0

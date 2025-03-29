@@ -1,29 +1,29 @@
 func000000000000001c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
 func000000000000001d:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
 func000000000000000d:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
 func000000000000000c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret

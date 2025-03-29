@@ -1,6 +1,6 @@
 func0000000000000004:
 	snez	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a2, a2, 4
 	or	a0, a0, a1
 	or	a0, a0, a2

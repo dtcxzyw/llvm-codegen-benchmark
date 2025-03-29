@@ -5,7 +5,7 @@ func000000000000007f:
 	ret
 
 func000000000000005e:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 1861
 	sh1add	a1, a1, a2
 	sh3add	a0, a1, a0

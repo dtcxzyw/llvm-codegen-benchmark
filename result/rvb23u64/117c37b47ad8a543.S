@@ -1,5 +1,5 @@
 func0000000000000004:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a1, a0, 32
 	addi	a1, a1, -1
 	or	a0, a0, a1
@@ -7,7 +7,7 @@ func0000000000000004:
 
 func000000000000000a:
 	sext.b	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a2, 16
 	slti	a1, a1, 0
 	addiw	a2, a2, -3

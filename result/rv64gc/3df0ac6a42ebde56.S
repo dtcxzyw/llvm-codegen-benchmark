@@ -1,6 +1,6 @@
 func0000000000000021:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xori	a1, a1, 80
 	xori	a0, a0, 72
 	or	a0, a0, a1

@@ -12,7 +12,7 @@ func0000000000000004:
 	subw	a1, a1, a2
 	sraiw	a1, a1, 31
 	addw	a0, a0, a1
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	mul	a1, a1, a3
 	srli	a1, a1, 11
 	li	a2, 10

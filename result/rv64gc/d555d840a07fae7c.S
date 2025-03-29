@@ -12,8 +12,8 @@ func0000000000000026:
 	ret
 
 func0000000000000028:
-	andi	a3, a0, 255
-	andi	a1, a1, 255
+	zext.b	a3, a0
+	zext.b	a1, a1
 	slli	a0, a2, 1
 	bltu	a1, a3, .LBB1_2
 	addi	a0, a0, 2
@@ -23,8 +23,8 @@ func0000000000000028:
 	ret
 
 func0000000000000034:
-	andi	a1, a1, 255
-	andi	a3, a0, 255
+	zext.b	a1, a1
+	zext.b	a3, a0
 	slli	a0, a2, 1
 	bltu	a3, a1, .LBB2_2
 	addi	a0, a0, 2
@@ -47,8 +47,8 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 255
-	andi	a3, a0, 255
+	zext.b	a1, a1
+	zext.b	a3, a0
 	slli	a0, a2, 1
 	bltu	a3, a1, .LBB4_2
 	addi	a0, a0, 2

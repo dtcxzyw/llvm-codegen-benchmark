@@ -17,7 +17,7 @@ func0000000000000004:
 
 func00000000000001e1:
 	addi	a2, a2, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sh3add	a1, a2, a1
 	addi	a0, a0, 8
 	xor	a0, a0, a1

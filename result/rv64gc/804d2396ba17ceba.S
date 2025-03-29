@@ -5,7 +5,7 @@ func0000000000000001:
 	srai	a0, a0, 56
 	ret
 .LBB0_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 
 func0000000000000000:
@@ -15,6 +15,6 @@ func0000000000000000:
 	srai	a0, a0, 56
 	ret
 .LBB1_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 

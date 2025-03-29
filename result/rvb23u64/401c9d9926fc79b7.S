@@ -22,7 +22,7 @@ func000000000000000e:
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	zext.h	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2

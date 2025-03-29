@@ -1,6 +1,6 @@
 func0000000000000048:
-	andi	a3, a1, 255
-	andi	a4, a2, 255
+	zext.b	a3, a1
+	zext.b	a4, a2
 	sub	a2, a2, a1
 	sltu	a1, a4, a3
 	czero.nez	a2, a2, a1
@@ -9,8 +9,8 @@ func0000000000000048:
 	ret
 
 func0000000000000044:
-	andi	a3, a2, 255
-	andi	a4, a1, 255
+	zext.b	a3, a2
+	zext.b	a4, a1
 	sub	a1, a1, a2
 	sltu	a2, a4, a3
 	czero.nez	a1, a1, a2

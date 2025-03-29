@@ -9,7 +9,7 @@ func000000000000042c:
 
 func000000000000050c:
 	sext.w	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a2, a0
 	snez	a1, a1
 	and	a0, a0, a1

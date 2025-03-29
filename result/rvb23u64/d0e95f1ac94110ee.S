@@ -1,6 +1,6 @@
 func0000000000000b02:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a1, a1, -41
@@ -11,7 +11,7 @@ func0000000000000b02:
 
 func0000000000000a02:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	addi	a0, a0, -4
 	sext.w	a1, a1
@@ -23,7 +23,7 @@ func0000000000000a02:
 
 func0000000000000d10:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sltiu	a0, a0, 100
 	sext.w	a1, a1
@@ -34,7 +34,7 @@ func0000000000000d10:
 
 func0000000000000842:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -44,7 +44,7 @@ func0000000000000842:
 
 func0000000000000848:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
@@ -54,7 +54,7 @@ func0000000000000848:
 
 func0000000000000868:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	addi	a0, a0, -108
 	sext.w	a1, a1
@@ -65,7 +65,7 @@ func0000000000000868:
 
 func0000000000000910:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 2
 	sext.w	a1, a1
@@ -78,7 +78,7 @@ func0000000000000910:
 
 func0000000000000858:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 208
 	addiw	a2, a2, 32
@@ -91,7 +91,7 @@ func0000000000000858:
 
 func0000000000000302:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	binvi	a1, a1, 16
@@ -102,7 +102,7 @@ func0000000000000302:
 
 func0000000000000930:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 930602
 	addiw	a2, a2, -1483
@@ -116,7 +116,7 @@ func0000000000000930:
 
 func0000000000001868:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 272
 	sext.w	a1, a1
@@ -128,7 +128,7 @@ func0000000000001868:
 
 func0000000000001a82:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 272
 	addiw	a2, a2, -1

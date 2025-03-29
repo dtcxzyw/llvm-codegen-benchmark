@@ -73,7 +73,7 @@ func00000000000002a4:
 func000000000000002c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0

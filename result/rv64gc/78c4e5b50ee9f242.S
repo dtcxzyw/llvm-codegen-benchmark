@@ -12,7 +12,7 @@ func000000000000000f:
 func0000000000000004:
 	addw	a0, a0, a1
 	li	a1, 205
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	mul	a1, a2, a1
 	srli	a1, a1, 11
 	li	a2, 10
@@ -23,7 +23,7 @@ func0000000000000004:
 func0000000000000000:
 	addw	a0, a0, a1
 	li	a1, 205
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	mul	a1, a2, a1
 	srli	a1, a1, 11
 	li	a2, 10

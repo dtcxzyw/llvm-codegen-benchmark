@@ -7,7 +7,7 @@ func0000000000000008:
 	srli	a3, a1, 59
 	slli	a1, a1, 5
 	or	a1, a1, a3
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret
@@ -21,7 +21,7 @@ func0000000000000028:
 	srli	a3, a1, 59
 	slli	a1, a1, 5
 	or	a1, a1, a3
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret
@@ -35,7 +35,7 @@ func0000000000000000:
 	srli	a3, a1, 59
 	slli	a1, a1, 5
 	or	a1, a1, a3
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret

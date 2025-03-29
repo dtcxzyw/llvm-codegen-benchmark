@@ -35,7 +35,7 @@ func0000000000000028:
 
 func000000000000000f:
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret

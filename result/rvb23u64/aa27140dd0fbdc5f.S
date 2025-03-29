@@ -1,6 +1,6 @@
 func0000000000000005:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, -16
 	addi	a1, a1, -10
 	seqz	a1, a1
@@ -10,7 +10,7 @@ func0000000000000005:
 	ret
 
 func0000000000000011:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 3
 	andi	a0, a0, 1
 	sh1add	a0, a0, a1

@@ -1,5 +1,5 @@
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	or	a0, a0, a1
@@ -7,7 +7,7 @@ func0000000000000021:
 	ret
 
 func000000000000068c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -15,7 +15,7 @@ func000000000000068c:
 	ret
 
 func0000000000000584:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -24,7 +24,7 @@ func0000000000000584:
 	ret
 
 func000000000000028c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -32,7 +32,7 @@ func000000000000028c:
 	ret
 
 func0000000000000684:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 68
@@ -40,7 +40,7 @@ func0000000000000684:
 	ret
 
 func0000000000000681:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	addi	a0, a0, -65
@@ -49,7 +49,7 @@ func0000000000000681:
 	ret
 
 func000000000000030c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a2, a1
 	addi	a0, a0, -37
@@ -58,7 +58,7 @@ func000000000000030c:
 	ret
 
 func000000000000018c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -67,7 +67,7 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	addi	a0, a0, -255
@@ -77,7 +77,7 @@ func0000000000000181:
 	ret
 
 func0000000000000421:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a2
 	xor	a1, a1, a2
 	xori	a0, a0, 125
@@ -86,7 +86,7 @@ func0000000000000421:
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a2, a1
 	addi	a0, a0, -45
@@ -95,7 +95,7 @@ func0000000000000101:
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -104,7 +104,7 @@ func000000000000002c:
 	ret
 
 func0000000000000284:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 10
@@ -112,7 +112,7 @@ func0000000000000284:
 	ret
 
 func0000000000000281:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a1, a2
 	seqz	a0, a0

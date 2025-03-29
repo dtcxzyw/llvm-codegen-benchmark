@@ -5,7 +5,7 @@ func0000000000000044:
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2
 	addi	a1, a1, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000021:
 	sext.w	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xori	a1, a1, 16
 	or	a1, a1, a2
 	seqz	a1, a1
@@ -8,7 +8,7 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
 	snez	a1, a1

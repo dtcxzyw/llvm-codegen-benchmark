@@ -26,7 +26,7 @@ func000000000000130c:
 
 func0000000000001054:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -2
 	seqz	a1, a1
 	sgtz	a0, a0

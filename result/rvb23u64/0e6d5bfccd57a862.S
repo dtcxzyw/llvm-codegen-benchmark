@@ -12,7 +12,7 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	srliw	a0, a0, 8
 	xor	a0, a0, a1
 	seqz	a0, a0

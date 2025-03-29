@@ -3,7 +3,7 @@
 func000000000000000b:
 	lui	a4, %hi(.LCPI0_0)
 	ld	a4, %lo(.LCPI0_0)(a4)
-	andi	a3, a3, 255
+	zext.b	a3, a3
 	xor	a2, a2, a3
 	mulhu	a3, a2, a4
 	mul	a2, a2, a4
@@ -16,7 +16,7 @@ func000000000000000b:
 func0000000000000003:
 	lui	a4, %hi(.LCPI1_0)
 	ld	a4, %lo(.LCPI1_0)(a4)
-	andi	a3, a3, 255
+	zext.b	a3, a3
 	xor	a2, a2, a3
 	mulhu	a3, a2, a4
 	mul	a2, a2, a4

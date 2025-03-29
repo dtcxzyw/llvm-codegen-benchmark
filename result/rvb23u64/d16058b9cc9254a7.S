@@ -9,7 +9,7 @@ func0000000000000001:
 	ret
 
 func000000000000001d:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -256
 	and	a0, a0, a2
@@ -17,7 +17,7 @@ func000000000000001d:
 	ret
 
 func0000000000000019:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -256
 	and	a0, a0, a2

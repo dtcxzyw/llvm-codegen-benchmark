@@ -2,7 +2,7 @@ func0000000000000021:
 	xori	a1, a1, 40
 	xori	a0, a0, 38
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 
@@ -17,16 +17,16 @@ func00000000000000c6:
 	ret
 
 func000000000000018c:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	addi	a1, a1, -14
 	seqz	a1, a1
 	sltiu	a0, a0, 5
@@ -34,8 +34,8 @@ func0000000000000024:
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	addi	a1, a1, -1
 	sltiu	a0, a0, 11
 	seqz	a1, a1

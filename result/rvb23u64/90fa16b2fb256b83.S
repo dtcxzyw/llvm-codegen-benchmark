@@ -1,42 +1,42 @@
 func000000000000000a:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	ret
 
 func000000000000000b:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	ret
 
 func000000000000003f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 6
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000002f:
 	slli	a1, a1, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	zext.h	a0, a0
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000001f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 4
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	ret
 

@@ -53,7 +53,7 @@ func0000000000000041:
 
 func0000000000000064:
 	subw	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addiw	a0, a0, 8
 	sltu	a0, a0, a1
 	ret

@@ -18,7 +18,7 @@ func000000000000001c:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret

@@ -8,12 +8,12 @@ func0000000000000003:
 func000000000000000b:
 	sh1add	a0, a0, a0
 	addi	a0, a0, 24
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func000000000000001f:
 	sh1add	a0, a0, a0
 	addi	a0, a0, 3
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000028:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	bltu	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -19,8 +19,8 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	bltu	a1, a0, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
@@ -29,13 +29,13 @@ func0000000000000004:
 
 func0000000000000001:
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	bltu	a1, a0, .LBB4_2
 	mv	a0, a1
 .LBB4_2:

@@ -1,7 +1,7 @@
 func000000000000060a:
 	addi	a1, a1, -48
 	sh2add	a0, a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	lui	a1, 16
 	sext.w	a0, a0
@@ -11,7 +11,7 @@ func000000000000060a:
 
 func00000000000003f8:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -22,7 +22,7 @@ func00000000000003f8:
 func0000000000000601:
 	addi	a1, a1, -48
 	sh2add	a0, a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	lui	a1, 524288
 	sext.w	a0, a0
@@ -33,7 +33,7 @@ func0000000000000601:
 
 func0000000000000604:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -42,7 +42,7 @@ func0000000000000604:
 
 func0000000000000608:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -53,7 +53,7 @@ func0000000000000608:
 func00000000000006ac:
 	addi	a1, a1, -48
 	sh2add	a0, a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 1
 	neg	a1, a1
 	xor	a0, a0, a1
@@ -62,7 +62,7 @@ func00000000000006ac:
 
 func0000000000000008:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -72,7 +72,7 @@ func0000000000000008:
 
 func0000000000000668:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	srliw	a0, a0, 16
@@ -81,7 +81,7 @@ func0000000000000668:
 
 func00000000000006aa:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -91,7 +91,7 @@ func00000000000006aa:
 
 func00000000000006a6:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
@@ -101,7 +101,7 @@ func00000000000006a6:
 func000000000000060c:
 	addi	a1, a1, -48
 	sh2add	a0, a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 1
 	neg	a1, a1
 	xor	a0, a0, a1

@@ -6,7 +6,7 @@ func000000000000000f:
 
 func0000000000000000:
 	slli	a1, a1, 4
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	ret
 

@@ -1,5 +1,5 @@
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a3, 255
 	beq	a1, a3, .LBB0_2
 	ori	a0, a2, 256
@@ -7,7 +7,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	beqz	a1, .LBB1_2
 	ori	a0, a2, 1
 .LBB1_2:

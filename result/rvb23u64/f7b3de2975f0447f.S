@@ -50,7 +50,7 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 15
 	slli	a2, a2, 8
 	and	a0, a0, a2

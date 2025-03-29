@@ -16,7 +16,7 @@ func000000000000004a:
 	lui	a2, 8192
 	addiw	a2, a2, -1
 	slt	a1, a2, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 

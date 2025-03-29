@@ -1,6 +1,6 @@
 func0000000000000011:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	bnez	a2, .LBB0_2
 	lui	a2, 1048392
 	li	a3, 67
@@ -19,7 +19,7 @@ func0000000000000011:
 
 func0000000000000005:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	bnez	a2, .LBB1_2
 	li	a2, 1
 	seqz	a1, a1

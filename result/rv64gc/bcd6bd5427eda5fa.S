@@ -1,6 +1,6 @@
 func0000000000000007:
 	andi	a3, a2, 1
-	andi	a2, a1, 255
+	zext.b	a2, a1
 	bnez	a3, .LBB0_2
 	li	a1, 8
 	beqz	a2, .LBB0_3
@@ -15,7 +15,7 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	not	a2, a2
 	ori	a2, a2, -2
 	addi	a1, a1, -2
@@ -27,7 +27,7 @@ func0000000000000004:
 
 func0000000000000011:
 	andi	a3, a2, 1
-	andi	a2, a1, 255
+	zext.b	a2, a1
 	bnez	a3, .LBB2_2
 	li	a1, -55
 	li	a3, 10
@@ -44,7 +44,7 @@ func0000000000000011:
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a3, 10
 	bgeu	a1, a3, .LBB3_2
 	li	a1, 4

@@ -1,6 +1,6 @@
 func00000000000000e4:
 	srli	a0, a0, 32
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 6
 	snez	a0, a0
 	beq	a1, a2, .LBB0_2
@@ -17,7 +17,7 @@ func00000000000000e4:
 	ret
 
 func00000000000000e1:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 6
 	snez	a0, a0
 	beq	a1, a2, .LBB1_2

@@ -24,8 +24,8 @@ func000000000000002c:
 	ret
 
 func0000000000000284:
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	srliw	a0, a0, 24
 	sltu	a1, a1, a2
 	seqz	a0, a0
@@ -34,8 +34,8 @@ func0000000000000284:
 
 func000000000000028c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	sltu	a1, a1, a2
 	addi	a0, a0, -128
 	snez	a0, a0

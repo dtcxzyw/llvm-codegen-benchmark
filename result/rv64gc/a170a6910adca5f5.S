@@ -12,6 +12,6 @@ func0000000000000000:
 	li	a1, 255
 .LBB1_2:
 	negw	a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

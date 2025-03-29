@@ -1,7 +1,7 @@
 func000000000000002c:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
+	zext.b	a2, a2
 	snez	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -11,7 +11,7 @@ func000000000000002c:
 func0000000000000021:
 	andi	a2, a2, 16
 	xor	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a2
 	seqz	a0, a0
 	ret

@@ -5,13 +5,13 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sub	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func0000000000000015:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sub	a0, a0, a1
 	addi	a0, a0, 48
 	ret
@@ -29,7 +29,7 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sub	a0, a0, a1
 	addi	a0, a0, 23
 	ret

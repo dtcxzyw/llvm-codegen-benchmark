@@ -1,5 +1,5 @@
 func000000000000001f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 8
 	or	a0, a0, a1
@@ -12,35 +12,35 @@ func0000000000000017:
 	ret
 
 func0000000000000026:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 18
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 
 func000000000000001d:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 8
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 
 func000000000000003f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 12
 	slliw	a0, a0, 6
 	or	a0, a0, a1
 	ret
 
 func0000000000000019:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 8
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 
 func0000000000000007:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 24
 	or	a0, a0, a1
@@ -53,35 +53,35 @@ func0000000000000004:
 	ret
 
 func0000000000000027:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 12
 	slliw	a0, a0, 18
 	or	a0, a0, a1
 	ret
 
 func000000000000003d:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 24
 	or	a0, a0, a1
 	ret
 
 func000000000000001e:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 8
 	slliw	a0, a0, 4
 	or	a0, a0, a1
 	ret
 
 func000000000000001b:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 24
 	or	a0, a0, a1
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 24
 	or	a0, a0, a1
@@ -94,7 +94,7 @@ func0000000000000006:
 	ret
 
 func0000000000000039:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 1
 	slliw	a0, a0, 2
 	or	a0, a0, a1
@@ -107,7 +107,7 @@ func0000000000000037:
 	ret
 
 func000000000000003e:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 5
 	slliw	a0, a0, 3
 	or	a0, a0, a1
@@ -126,7 +126,7 @@ func000000000000001c:
 	ret
 
 func0000000000000018:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 15
 	slliw	a0, a0, 8
 	or	a0, a0, a1
@@ -145,7 +145,7 @@ func0000000000000010:
 	ret
 
 func000000000000001a:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a1, a1, 16
 	slliw	a0, a0, 8
 	or	a0, a0, a1

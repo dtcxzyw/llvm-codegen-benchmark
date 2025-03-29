@@ -1,6 +1,6 @@
 func000000000000008c:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -10
 	sltiu	a1, a1, 4
@@ -10,7 +10,7 @@ func000000000000008c:
 
 func0000000000000084:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -13
 	sltiu	a1, a1, -12

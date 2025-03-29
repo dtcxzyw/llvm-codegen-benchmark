@@ -4,6 +4,6 @@ func0000000000000003:
 	mv	a1, a2
 .LBB0_2:
 	ori	a0, a1, 48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

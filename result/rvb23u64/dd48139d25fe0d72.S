@@ -1,6 +1,6 @@
 func00000000000002a1:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	addi	a0, a0, -45
 	negw	a2, a1
@@ -10,8 +10,8 @@ func00000000000002a1:
 	ret
 
 func0000000000000201:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	addi	a0, a0, -45
 	negw	a2, a1
@@ -22,7 +22,7 @@ func0000000000000201:
 
 func0000000000000126:
 	sext.b	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	slti	a0, a0, 0
 	negw	a2, a1
@@ -32,8 +32,8 @@ func0000000000000126:
 	ret
 
 func00000000000001a1:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	negw	a2, a1
 	czero.eqz	a1, a1, a0

@@ -37,7 +37,7 @@ func0000000000000098:
 
 func00000000000000f0:
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 63
 	xori	a0, a0, 1
 	ret

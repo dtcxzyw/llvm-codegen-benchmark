@@ -33,7 +33,7 @@ func0000000000000014:
 
 func0000000000000035:
 	li	a3, 94
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

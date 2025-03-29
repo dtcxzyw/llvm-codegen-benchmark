@@ -34,7 +34,7 @@ func0000000000000003:
 	andi	a0, a0, 1
 	slliw	a2, a2, 8
 	lui	a3, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	czero.nez	a2, a2, a0
 	addiw	a3, a3, -256
 	czero.eqz	a0, a3, a0

@@ -6,7 +6,7 @@ func0000000000000042:
 	ret
 
 func0000000000000048:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a1, a0, -127
 	seqz	a1, a1
 	sltiu	a0, a0, 32
@@ -16,7 +16,7 @@ func0000000000000048:
 	ret
 
 func0000000000000068:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a1, a0, -127
 	seqz	a1, a1
 	sltiu	a0, a0, 32

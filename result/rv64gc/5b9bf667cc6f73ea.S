@@ -1,5 +1,5 @@
 func0000000000000004:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa5, a0
 	lui	a0, 276464
 	fmv.w.x	fa4, a0
@@ -10,7 +10,7 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa5, a0
 	lui	a0, 276464
 	fmv.w.x	fa4, a0

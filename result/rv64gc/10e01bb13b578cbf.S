@@ -28,7 +28,7 @@ func0000000000000141:
 func0000000000000041:
 	slli	a1, a1, 3
 	srl	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 

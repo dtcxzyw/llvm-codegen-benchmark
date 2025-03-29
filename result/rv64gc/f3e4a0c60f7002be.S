@@ -10,7 +10,7 @@ func000000000000000b:
 	srli	a0, a0, 59
 	li	a1, -85
 	mul	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func000000000000000d:
@@ -21,7 +21,7 @@ func000000000000000d:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a1, 171
 	mul	a0, a0, a1
 	srli	a0, a0, 9

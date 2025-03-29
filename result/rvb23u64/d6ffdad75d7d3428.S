@@ -19,7 +19,7 @@ func0000000000000003:
 
 func000000000000000f:
 	add	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a1, a0
 	ret
 

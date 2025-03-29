@@ -1,6 +1,6 @@
 func000000000000060a:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 52429
 	add	a0, a0, a1
@@ -12,7 +12,7 @@ func000000000000060a:
 func0000000000000eb4:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 60
@@ -20,7 +20,7 @@ func0000000000000eb4:
 
 func0000000000000a08:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 52429
 	add	a0, a0, a1
@@ -32,7 +32,7 @@ func0000000000000a08:
 func0000000000000eb8:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	srliw	a0, a0, 16
@@ -42,7 +42,7 @@ func0000000000000eb8:
 func0000000000000028:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	srliw	a0, a0, 16
@@ -51,7 +51,7 @@ func0000000000000028:
 
 func0000000000000021:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	addiw	a1, a1, -48
 	neg	a0, a0
@@ -61,7 +61,7 @@ func0000000000000021:
 
 func0000000000000208:
 	li	a2, 85
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 12336
 	add	a0, a0, a1
@@ -72,7 +72,7 @@ func0000000000000208:
 
 func0000000000000601:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 52429
 	addw	a0, a0, a1
@@ -83,7 +83,7 @@ func0000000000000601:
 
 func0000000000000201:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	addiw	a1, a1, -48
 	neg	a0, a0
@@ -94,7 +94,7 @@ func0000000000000201:
 func0000000000000606:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	slti	a0, a0, 10
@@ -103,7 +103,7 @@ func0000000000000606:
 func0000000000000608:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 100
@@ -113,7 +113,7 @@ func0000000000000608:
 func0000000000000218:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 8
@@ -123,7 +123,7 @@ func0000000000000218:
 func0000000000000614:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 69

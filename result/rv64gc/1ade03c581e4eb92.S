@@ -3,7 +3,7 @@ func0000000000000000:
 	bnez	a0, .LBB0_2
 	addi	a1, a2, -29
 .LBB0_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 
 func0000000000000001:
@@ -11,7 +11,7 @@ func0000000000000001:
 	bnez	a0, .LBB1_2
 	addi	a1, a2, -48
 .LBB1_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 
 func0000000000000003:
@@ -19,6 +19,6 @@ func0000000000000003:
 	bnez	a0, .LBB2_2
 	addi	a1, a2, -1
 .LBB2_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 

@@ -8,7 +8,7 @@ func000000000000001e:
 
 func0000000000000008:
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a1, 205
 	mul	a0, a0, a1
 	srli	a0, a0, 11
@@ -16,7 +16,7 @@ func0000000000000008:
 
 func0000000000000000:
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a1, 205
 	mul	a0, a0, a1
 	srli	a0, a0, 11

@@ -1,5 +1,5 @@
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	xori	a1, a1, 3
 	xori	a0, a0, 3

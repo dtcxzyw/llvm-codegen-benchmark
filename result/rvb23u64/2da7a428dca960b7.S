@@ -6,7 +6,7 @@ func0000000000000002:
 	xor	a1, a1, a2
 	mul	a1, a1, a3
 	rori	a1, a1, 59
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000000:
 	xor	a1, a1, a2
 	mul	a1, a1, a3
 	rori	a1, a1, 59
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	ret
 

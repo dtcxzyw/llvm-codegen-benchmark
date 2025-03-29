@@ -1,5 +1,5 @@
 func0000000000000081:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a2, a2, 63
 	srai	a2, a2, 63
 	addi	a1, a1, -75
@@ -14,7 +14,7 @@ func0000000000000081:
 
 func0000000000000224:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	bnez	a2, .LBB1_2
 	lui	a2, 1048392
 	li	a3, 67
@@ -34,7 +34,7 @@ func0000000000000224:
 
 func00000000000000a1:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	andi	a2, a2, 1
 	addi	a2, a2, -1
 	seqz	a1, a1

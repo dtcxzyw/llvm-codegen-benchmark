@@ -1,5 +1,5 @@
 func0000000000000204:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a1, -97
 	addi	a1, a1, -45
 	sltiu	a2, a2, 26
@@ -10,7 +10,7 @@ func0000000000000204:
 
 func0000000000000228:
 	slli	a2, a1, 56
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srai	a2, a2, 56
 	addi	a1, a1, -36
 	sltiu	a1, a1, 28

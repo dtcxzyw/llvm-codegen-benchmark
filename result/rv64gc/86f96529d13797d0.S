@@ -12,7 +12,7 @@ func0000000000000018:
 	andi	a2, a0, 254
 	li	a0, 9
 	bltu	a0, a2, .LBB1_2
-	andi	a0, a1, 255
+	zext.b	a0, a1
 .LBB1_2:
 	ret
 

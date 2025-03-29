@@ -5,7 +5,7 @@ func0000000000000004:
 	andi	a2, a2, 24
 	subw	a2, a2, a1
 	addi	a2, a2, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srlw	a0, a0, a2
 	ret
 
@@ -16,7 +16,7 @@ func000000000000000c:
 	andi	a2, a2, 24
 	subw	a2, a2, a1
 	addi	a2, a2, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srlw	a0, a0, a2
 	ret
 

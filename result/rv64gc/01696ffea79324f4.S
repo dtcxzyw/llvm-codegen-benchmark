@@ -1,5 +1,5 @@
 func000000000000002a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -9,7 +9,7 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -18,7 +18,7 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
@@ -38,7 +38,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000301:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	bltu	a3, a2, .LBB4_2
 	mv	a0, a1
@@ -48,7 +48,7 @@ func0000000000000301:
 	ret
 
 func000000000000030c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	bltu	a3, a2, .LBB5_2
 	mv	a0, a1
@@ -59,7 +59,7 @@ func000000000000030c:
 	ret
 
 func0000000000000034:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	beqz	a2, .LBB6_2
 	mv	a0, a1
 .LBB6_2:
@@ -68,7 +68,7 @@ func0000000000000034:
 	ret
 
 func0000000000000086:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 10
 	bltu	a2, a3, .LBB7_2
 	mv	a0, a1
@@ -88,7 +88,7 @@ func0000000000000158:
 	ret
 
 func000000000000028a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 2
 	bltu	a2, a3, .LBB9_2
 	mv	a0, a1
@@ -99,7 +99,7 @@ func000000000000028a:
 	ret
 
 func0000000000000081:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 26
 	bltu	a2, a3, .LBB10_2
 	mv	a0, a1
@@ -110,7 +110,7 @@ func0000000000000081:
 	ret
 
 func0000000000000024:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 32
 	beq	a2, a3, .LBB11_2
 	mv	a0, a1
@@ -120,7 +120,7 @@ func0000000000000024:
 	ret
 
 func000000000000008a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 10
 	bltu	a2, a3, .LBB12_2
 	mv	a0, a1
@@ -131,7 +131,7 @@ func000000000000008a:
 	ret
 
 func0000000000000101:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 7
 	bltu	a3, a2, .LBB13_2
 	mv	a0, a1
@@ -142,7 +142,7 @@ func0000000000000101:
 	ret
 
 func0000000000000038:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	beq	a2, a3, .LBB14_2
 	mv	a0, a1
@@ -162,7 +162,7 @@ func00000000000000cc:
 	ret
 
 func0000000000000028:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 45
 	beq	a2, a3, .LBB16_2
 	mv	a0, a1
@@ -173,7 +173,7 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	beq	a2, a3, .LBB17_2
 	mv	a0, a1
@@ -183,7 +183,7 @@ func000000000000002c:
 	ret
 
 func0000000000000114:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 2
 	bltu	a3, a2, .LBB18_2
 	mv	a0, a1

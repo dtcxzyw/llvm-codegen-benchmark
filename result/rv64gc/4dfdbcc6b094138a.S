@@ -1,6 +1,6 @@
 func0000000000000024:
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a1, a1
+	zext.b	a2, a2
 	addi	a2, a2, -5
 	seqz	a2, a2
 	sltiu	a1, a1, 64

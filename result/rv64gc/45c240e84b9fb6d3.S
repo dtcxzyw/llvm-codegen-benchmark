@@ -78,7 +78,7 @@ func0000000000000081:
 
 func0000000000000194:
 	slli	a1, a1, 37
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a1, a1, 63
 	sltiu	a0, a0, 51
 	and	a0, a0, a1

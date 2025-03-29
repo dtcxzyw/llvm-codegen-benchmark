@@ -40,7 +40,7 @@ func0000000000000181:
 
 func000000000000010c:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -14
 	sltiu	a0, a0, 2
 	snez	a1, a1

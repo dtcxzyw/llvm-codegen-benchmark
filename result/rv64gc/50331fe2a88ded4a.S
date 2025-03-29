@@ -1,6 +1,6 @@
 func0000000000000018:
 	sext.w	a3, a1
-	andi	a1, a2, 255
+	zext.b	a1, a2
 	sext.w	a0, a0
 	bltu	a3, a1, .LBB0_2
 	mv	a1, a3
@@ -10,7 +10,7 @@ func0000000000000018:
 
 func0000000000000001:
 	sext.w	a3, a1
-	andi	a1, a2, 255
+	zext.b	a1, a2
 	sext.w	a0, a0
 	bltu	a3, a1, .LBB1_2
 	mv	a1, a3
@@ -32,7 +32,7 @@ func0000000000000014:
 
 func0000000000000008:
 	sext.w	a3, a1
-	andi	a1, a2, 255
+	zext.b	a1, a2
 	sext.w	a0, a0
 	bltu	a3, a1, .LBB3_2
 	mv	a1, a3

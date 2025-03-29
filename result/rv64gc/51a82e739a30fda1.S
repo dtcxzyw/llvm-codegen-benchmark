@@ -1,5 +1,5 @@
 func0000000000000013:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -7
 	li	a2, 2
 	bltu	a1, a2, .LBB0_2
@@ -12,7 +12,7 @@ func0000000000000013:
 	ret
 
 func0000000000000093:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -1
 	li	a2, 2
 	bltu	a1, a2, .LBB1_2

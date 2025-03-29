@@ -31,7 +31,7 @@ func0000000000000102:
 
 func0000000000000902:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -11
 	addi	a0, a0, -2
 	sltiu	a1, a1, 4

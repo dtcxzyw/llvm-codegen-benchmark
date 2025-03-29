@@ -5,7 +5,7 @@
 .LCPI0_2:
 	.word	0x3de978d5
 func0000000000000000:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	fcvt.s.wu	fa5, a1
 	lui	a1, %hi(.LCPI0_0)
 	flw	fa4, %lo(.LCPI0_0)(a1)
@@ -15,7 +15,7 @@ func0000000000000000:
 	fmul.s	fa5, fa5, fa4
 	flw	fa4, %lo(.LCPI0_2)(a1)
 	fmadd.s	fa5, fa0, fa3, fa5
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa3, a0
 	fmadd.s	fa0, fa3, fa4, fa5
 	ret
@@ -27,7 +27,7 @@ func0000000000000000:
 .LCPI1_2:
 	.word	0x3de147ae
 func0000000000000001:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	fcvt.s.wu	fa5, a1
 	lui	a1, %hi(.LCPI1_0)
 	flw	fa4, %lo(.LCPI1_0)(a1)
@@ -37,7 +37,7 @@ func0000000000000001:
 	fmul.s	fa5, fa5, fa4
 	flw	fa4, %lo(.LCPI1_2)(a1)
 	fmadd.s	fa5, fa0, fa3, fa5
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa3, a0
 	fmadd.s	fa0, fa3, fa4, fa5
 	ret

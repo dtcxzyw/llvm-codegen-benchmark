@@ -50,7 +50,7 @@ func0000000000000034:
 func0000000000000194:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltu	a0, a2, a0
 	addi	a1, a1, -3
 	snez	a1, a1

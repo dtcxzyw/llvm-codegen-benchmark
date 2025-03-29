@@ -11,7 +11,7 @@ func0000000000000001:
 .LBB0_3:
 	li	a0, 62
 .LBB0_4:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -22,13 +22,13 @@ func0000000000000021:
 	andi	a2, a2, 1
 	addi	a0, a2, -1
 	andi	a0, a0, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LBB1_2:
 	li	a0, 2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -38,12 +38,12 @@ func0000000000000038:
 	bnez	a0, .LBB2_2
 	andi	a0, a2, 1
 	slli	a0, a0, 2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 .LBB2_2:
 	li	a0, 2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -52,12 +52,12 @@ func0000000000000018:
 	bnez	a0, .LBB3_2
 	andi	a0, a2, 1
 	addi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 .LBB3_2:
 	li	a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 

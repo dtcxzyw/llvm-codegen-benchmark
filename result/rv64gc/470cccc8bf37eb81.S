@@ -1,26 +1,26 @@
 func000000000000001d:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, -2
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, -1
 	ret
 
 func000000000000001f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	slli	a0, a0, 2
 	addiw	a0, a0, 4
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	slli	a0, a0, 2
 	addiw	a0, a0, 4

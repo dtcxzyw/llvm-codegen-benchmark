@@ -62,7 +62,7 @@ func0000000000000d8c:
 func000000000000018c:
 	sext.w	a0, a0
 	srlw	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a0, a0, -3
 	snez	a1, a1
 	snez	a0, a0

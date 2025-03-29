@@ -1,13 +1,13 @@
 func0000000000000088:
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1
 	ret
 
 func00000000000001f8:
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret

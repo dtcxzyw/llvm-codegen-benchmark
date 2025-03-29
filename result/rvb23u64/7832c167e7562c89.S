@@ -6,7 +6,7 @@ func0000000000000038:
 	ret
 
 func0000000000000030:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 14
 	addi	a0, a0, -3
 	addiw	a1, a1, 2023

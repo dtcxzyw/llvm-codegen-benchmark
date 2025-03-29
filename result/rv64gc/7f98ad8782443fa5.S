@@ -1,6 +1,6 @@
 func0000000000000001:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -14,13 +14,13 @@ func0000000000000024:
 	li	a0, 16
 	ret
 .LBB1_2:
-	andi	a0, a2, 255
+	zext.b	a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000028:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sltiu	a0, a0, -256
 	addi	a0, a0, -1
@@ -29,7 +29,7 @@ func0000000000000028:
 
 func0000000000000038:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 4096
 	addiw	a2, a2, -2
@@ -40,7 +40,7 @@ func0000000000000038:
 
 func0000000000000021:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1

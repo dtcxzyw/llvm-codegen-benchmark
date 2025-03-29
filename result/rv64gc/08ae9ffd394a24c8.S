@@ -28,7 +28,7 @@ func0000000000000002:
 	ret
 
 func0000000000000031:
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	li	a2, 6
 	bltu	a2, a1, .LBB2_2
 	li	a1, 8

@@ -23,8 +23,8 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
-	andi	a3, a0, 255
-	andi	a1, a1, 255
+	zext.b	a3, a0
+	zext.b	a1, a1
 	srli	a0, a2, 1
 	bgeu	a1, a3, .LBB2_2
 	not	a0, a0
@@ -33,8 +33,8 @@ func0000000000000028:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 255
-	andi	a3, a0, 255
+	zext.b	a1, a1
+	zext.b	a3, a0
 	srli	a0, a2, 1
 	bgeu	a3, a1, .LBB3_2
 	not	a0, a0

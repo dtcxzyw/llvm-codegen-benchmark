@@ -24,7 +24,7 @@ func000000000000002c:
 
 func000000000000030c:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
 	snez	a0, a0

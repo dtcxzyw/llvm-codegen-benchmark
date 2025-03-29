@@ -18,7 +18,7 @@ func0000000000000007:
 	slli	a3, a2, 5
 	add	a1, a1, a2
 	add	a1, a1, a3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a1, a0
 	ret
 

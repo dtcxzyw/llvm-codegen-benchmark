@@ -1,5 +1,5 @@
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 4080
 	addiw	a2, a2, 511
 	and	a0, a0, a2
@@ -17,7 +17,7 @@ func0000000000000001:
 
 func0000000000000061:
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 

@@ -24,7 +24,7 @@ func0000000000000015:
 
 func000000000000001f:
 	or	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	andi	a1, a1, -513
 	slli	a0, a0, 9
 	or	a0, a0, a1
@@ -33,7 +33,7 @@ func000000000000001f:
 func0000000000000017:
 	or	a1, a1, a2
 	lui	a2, 1048568
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addiw	a2, a2, 127
 	and	a1, a1, a2
 	slli	a0, a0, 7

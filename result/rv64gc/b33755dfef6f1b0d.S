@@ -1,7 +1,7 @@
 func0000000000000024:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 253

@@ -4,13 +4,13 @@ func0000000000000044:
 	bltu	a2, a3, .LBB0_2
 	li	a2, 247
 	add	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 3
 	add	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 

@@ -1,5 +1,5 @@
 func000000000000018c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a2, a2
 	xori	a2, a2, 4
 	xori	a1, a1, 11
@@ -9,7 +9,7 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a2, a2
 	lui	a3, 524288
 	xor	a2, a2, a3

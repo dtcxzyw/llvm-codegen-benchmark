@@ -6,7 +6,7 @@ func0000000000000001:
 
 func00000000000000a1:
 	negw	a0, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -8
 	seqz	a0, a0
 	ret

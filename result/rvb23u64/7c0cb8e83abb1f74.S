@@ -1,6 +1,6 @@
 func0000000000000041:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addi	a2, a2, -6
 	addi	a0, a0, -195
 	seqz	a2, a2
@@ -10,8 +10,8 @@ func0000000000000041:
 	ret
 
 func0000000000000044:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addi	a2, a2, -9
 	seqz	a2, a2
 	or	a1, a1, a2

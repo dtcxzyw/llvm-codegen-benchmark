@@ -31,7 +31,7 @@ func0000000000000018:
 	li	a0, 16
 	ret
 .LBB3_2:
-	andi	a0, a2, 255
+	zext.b	a0, a2
 	ret
 
 func0000000000000004:

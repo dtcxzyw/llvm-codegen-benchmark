@@ -1,6 +1,6 @@
 func000000000000007f:
 	addi	a2, a2, -48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
@@ -9,7 +9,7 @@ func000000000000007f:
 
 func00000000000000ff:
 	addi	a2, a2, -48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1

@@ -1,6 +1,6 @@
 func000000000000018c:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -13
 	addi	a1, a1, -14
 	snez	a2, a2
@@ -11,7 +11,7 @@ func000000000000018c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -1
 	snez	a2, a2
 	and	a0, a0, a2

@@ -31,7 +31,7 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 96
 	xori	a0, a0, 1
 	ret

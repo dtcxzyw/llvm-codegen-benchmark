@@ -1,6 +1,6 @@
 func0000000000000081:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -8,7 +8,7 @@ func0000000000000081:
 
 func0000000000000001:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -16,7 +16,7 @@ func0000000000000001:
 
 func0000000000000681:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -24,7 +24,7 @@ func0000000000000681:
 
 func0000000000000688:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 32
@@ -33,7 +33,7 @@ func0000000000000688:
 
 func000000000000068c:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	snez	a0, a0
@@ -41,7 +41,7 @@ func000000000000068c:
 
 func0000000000000686:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 63
@@ -49,7 +49,7 @@ func0000000000000686:
 
 func0000000000000006:
 	slli	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sll	a1, a1, a2
 	or	a0, a0, a1
 	srli	a0, a0, 63

@@ -40,7 +40,7 @@ func0000000000000054:
 
 func0000000000000310:
 	zext.h	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	snez	a0, a0
 	sltiu	a1, a1, 768
 	xori	a1, a1, 1

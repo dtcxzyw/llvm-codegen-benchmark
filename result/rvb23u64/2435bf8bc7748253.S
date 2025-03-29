@@ -14,6 +14,6 @@ func000000000000001b:
 	mul	a0, a0, a1
 	srli	a0, a0, 10
 	ori	a0, a0, 48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

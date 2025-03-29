@@ -1,6 +1,6 @@
 func0000000000000058:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -10
 	addi	a0, a0, -6
 	seqz	a1, a1

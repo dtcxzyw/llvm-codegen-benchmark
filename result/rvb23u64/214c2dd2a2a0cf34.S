@@ -1,6 +1,6 @@
 func0000000000000195:
 	li	a3, 190
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a2, a2, a3
 	lui	a3, 1048570
 	add	a0, a0, a1
@@ -11,7 +11,7 @@ func0000000000000195:
 
 func0000000000000095:
 	li	a3, 188
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -20,7 +20,7 @@ func0000000000000095:
 
 func00000000000001bd:
 	li	a3, 188
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

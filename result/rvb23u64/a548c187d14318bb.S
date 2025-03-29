@@ -1,5 +1,5 @@
 func0000000000000004:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 7
@@ -7,7 +7,7 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 12
@@ -15,7 +15,7 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 3
@@ -23,7 +23,7 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 3
@@ -32,7 +32,7 @@ func0000000000000007:
 
 func0000000000000003:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 1044480
 	czero.eqz	a0, a2, a0

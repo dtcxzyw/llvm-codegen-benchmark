@@ -1,6 +1,6 @@
 func0000000000000034:
 	zext.h	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	lui	a3, 2
 	addi	a2, a2, -6
 	sltiu	a1, a1, 2

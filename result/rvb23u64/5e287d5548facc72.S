@@ -5,7 +5,7 @@ func0000000000000008:
 	ld	a2, %lo(.LCPI0_0)(a2)
 	mul	a1, a1, a2
 	rori	a1, a1, 59
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret
@@ -17,7 +17,7 @@ func0000000000000028:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mul	a1, a1, a2
 	rori	a1, a1, 59
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret
@@ -29,7 +29,7 @@ func0000000000000000:
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mul	a1, a1, a2
 	rori	a1, a1, 59
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a0, a0, a1
 	mul	a0, a0, a2
 	ret

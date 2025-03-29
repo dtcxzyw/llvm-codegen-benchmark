@@ -6,7 +6,7 @@ func0000000000000041:
 	li	a0, 254
 .LBB0_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -18,7 +18,7 @@ func0000000000000078:
 	li	a0, 2
 .LBB1_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000298:
 	li	a0, 1
 .LBB2_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -40,7 +40,7 @@ func00000000000002a1:
 	li	a0, 6
 .LBB3_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -51,7 +51,7 @@ func0000000000000058:
 	li	a0, 5
 .LBB4_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -61,7 +61,7 @@ func0000000000000055:
 	li	a0, 5
 .LBB5_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -73,7 +73,7 @@ func0000000000000198:
 	li	a0, 32
 .LBB6_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -84,7 +84,7 @@ func0000000000000194:
 	li	a0, 127
 .LBB7_2:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -18
 	seqz	a1, a1
 	slli	a1, a1, 32

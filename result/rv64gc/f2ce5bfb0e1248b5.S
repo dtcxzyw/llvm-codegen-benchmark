@@ -1,5 +1,5 @@
 func0000000000000021:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sext.w	a0, a0
 	beqz	a2, .LBB0_2
 	li	a1, 1
@@ -19,7 +19,7 @@ func00000000000000c6:
 	ret
 
 func0000000000000027:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 48
 	sext.w	a0, a0
 	beq	a2, a3, .LBB2_2
@@ -32,7 +32,7 @@ func0000000000000027:
 
 func0000000000000081:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 5
 	negw	a2, a2
 	and	a1, a1, a2
@@ -43,7 +43,7 @@ func0000000000000081:
 
 func000000000000002c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	seqz	a2, a2
 	addi	a2, a2, -1
 	or	a1, a1, a2
@@ -54,7 +54,7 @@ func000000000000002c:
 
 func000000000000002a:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	seqz	a2, a2
 	addi	a2, a2, -1
 	or	a1, a1, a2

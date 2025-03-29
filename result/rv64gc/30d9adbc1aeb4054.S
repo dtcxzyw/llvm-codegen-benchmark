@@ -1,7 +1,7 @@
 func0000000000000042:
 	li	a2, 85
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -85
@@ -10,7 +10,7 @@ func0000000000000042:
 func00000000000001d7:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -480
@@ -19,7 +19,7 @@ func00000000000001d7:
 func0000000000000040:
 	li	a2, 10
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	mul	a0, a0, a2
 	addiw	a0, a0, -480
@@ -27,7 +27,7 @@ func0000000000000040:
 
 func0000000000000043:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -48
@@ -37,7 +37,7 @@ func0000000000000043:
 
 func0000000000000195:
 	li	a2, 21
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -161
@@ -48,7 +48,7 @@ func0000000000000195:
 
 func00000000000000c3:
 	li	a2, 10
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -48

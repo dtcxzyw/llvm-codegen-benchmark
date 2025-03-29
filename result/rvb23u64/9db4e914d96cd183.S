@@ -15,7 +15,7 @@ func0000000000000058:
 	ret
 
 func0000000000000042:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	xori	a2, a2, 5
 	xori	a1, a1, 3
 	or	a1, a1, a2

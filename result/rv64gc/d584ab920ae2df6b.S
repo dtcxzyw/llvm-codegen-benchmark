@@ -11,6 +11,6 @@ func000000000000000c:
 	beqz	a2, .LBB1_2
 	mv	a1, a0
 .LBB1_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 

@@ -13,7 +13,7 @@ func0000000000000000:
 	lui	a1, %hi(.LCPI0_2)
 	fmadd.s	fa5, fa0, fa4, fa5
 	flw	fa4, %lo(.LCPI0_2)(a1)
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 798720
 	fcvt.s.wu	fa3, a0
 	fmadd.s	fa5, fa3, fa4, fa5

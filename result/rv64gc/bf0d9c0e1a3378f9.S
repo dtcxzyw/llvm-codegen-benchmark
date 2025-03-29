@@ -1,6 +1,6 @@
 func0000000000003181:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	snez	a2, a1
 	snez	a3, a0
 	xor	a0, a0, a1
@@ -10,8 +10,8 @@ func0000000000003181:
 	ret
 
 func0000000000002101:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	sltiu	a2, a1, 29
 	sltiu	a3, a0, 29
 	xor	a0, a0, a1

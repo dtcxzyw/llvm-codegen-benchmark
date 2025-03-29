@@ -1,7 +1,7 @@
 func0000000000000000:
 	addi	a0, a0, -27
 	li	a1, 19
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	mul	a1, a2, a1
 	srli	a1, a1, 9
 	li	a2, 27
@@ -12,7 +12,7 @@ func0000000000000000:
 func0000000000000001:
 	addi	a0, a0, -9
 	li	a1, 57
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	mul	a1, a2, a1
 	srli	a1, a1, 9
 	slli	a2, a1, 3
@@ -23,7 +23,7 @@ func0000000000000001:
 func0000000000000003:
 	addi	a0, a0, 10
 	li	a1, 171
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	mul	a1, a2, a1
 	srli	a1, a1, 11
 	slli	a2, a1, 4

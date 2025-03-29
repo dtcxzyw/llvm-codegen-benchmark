@@ -1,11 +1,11 @@
 func0000000000000041:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bset	a1, zero, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000061:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bset	a1, zero, a1
 	addi	a0, a0, -255
 	snez	a0, a0
@@ -24,14 +24,14 @@ func0000000000000046:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a2, -1
 	sllw	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000068:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bset	a1, zero, a1
 	lui	a2, 8
 	sltiu	a0, a0, 16

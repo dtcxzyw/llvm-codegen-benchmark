@@ -1,5 +1,5 @@
 func0000000000000028:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a0, a2, a0
@@ -8,7 +8,7 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	sext.w	a0, a0
 	or	a0, a0, a1
@@ -16,7 +16,7 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a0, a0
 	sext.w	a2, a2
 	slt	a0, a0, a2

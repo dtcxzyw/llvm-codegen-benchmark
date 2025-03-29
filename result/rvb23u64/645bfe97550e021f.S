@@ -1,4 +1,4 @@
 func0000000000000000:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	ret
 

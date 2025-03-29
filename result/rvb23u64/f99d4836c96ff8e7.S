@@ -1,7 +1,7 @@
 func00000000000000aa:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -10,8 +10,8 @@ func00000000000000aa:
 
 func00000000000000b4:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -20,8 +20,8 @@ func00000000000000b4:
 
 func00000000000000a6:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -30,8 +30,8 @@ func00000000000000a6:
 
 func00000000000000b8:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -40,8 +40,8 @@ func00000000000000b8:
 
 func00000000000000ea:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -50,8 +50,8 @@ func00000000000000ea:
 
 func00000000000000b5:
 	sext.w	a0, a0
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3

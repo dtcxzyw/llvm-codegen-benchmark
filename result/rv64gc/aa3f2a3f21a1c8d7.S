@@ -16,7 +16,7 @@ func0000000000000041:
 func0000000000000074:
 	li	a1, 1
 	sll	a0, a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 9
 	ret
 

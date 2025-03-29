@@ -1,6 +1,6 @@
 func0000000000000081:
 	addiw	a1, a1, -100
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a1, a1, 900
 	addi	a0, a0, -1
 	seqz	a0, a0

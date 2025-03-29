@@ -1,7 +1,7 @@
 func0000000000000041:
 	addi	a1, a1, -8
 	srlw	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -66
 	seqz	a0, a0
 	ret

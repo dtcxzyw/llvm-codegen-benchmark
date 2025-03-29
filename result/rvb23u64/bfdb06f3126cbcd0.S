@@ -1,6 +1,6 @@
 func00000000000000a6:
 	addi	a2, a2, -48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	add	a1, a1, a2
 	lui	a2, 65536
 	slt	a2, a0, a2

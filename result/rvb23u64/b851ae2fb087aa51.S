@@ -1,6 +1,6 @@
 func0000000000000000:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	andi	a2, a2, 6
 	srl	a1, a1, a2
 	li	a2, 1

@@ -8,7 +8,7 @@ func0000000000000003:
 
 func0000000000000000:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	maxu	a1, a2, a1
 	addw	a0, a0, a1
 	ret

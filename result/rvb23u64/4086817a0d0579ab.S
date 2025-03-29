@@ -1,6 +1,6 @@
 func000000000000042c:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a1, a1, -2
@@ -11,7 +11,7 @@ func000000000000042c:
 
 func0000000000000488:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
 	sltiu	a1, a1, 16
@@ -20,7 +20,7 @@ func0000000000000488:
 	ret
 
 func0000000000000421:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	xori	a1, a1, 10
 	xori	a0, a0, 3

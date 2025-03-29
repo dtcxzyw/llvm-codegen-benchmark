@@ -1,5 +1,5 @@
 func0000000000000181:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

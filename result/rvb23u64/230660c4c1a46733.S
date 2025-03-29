@@ -1,6 +1,6 @@
 func00000000000000e7:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 171
 	mul	a1, a1, a2
 	srli	a1, a1, 9
@@ -11,7 +11,7 @@ func00000000000000e7:
 
 func00000000000000ea:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 171
 	mul	a1, a1, a2
 	srli	a1, a1, 9
@@ -21,7 +21,7 @@ func00000000000000ea:
 
 func00000000000000e1:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 171
 	mul	a1, a1, a2
 	srli	a1, a1, 9

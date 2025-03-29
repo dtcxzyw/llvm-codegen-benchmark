@@ -8,7 +8,7 @@ func000000000000003d:
 
 func0000000000000015:
 	lui	a3, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	lui	a1, 4388
 	addi	a3, a3, -256
@@ -20,7 +20,7 @@ func0000000000000015:
 
 func0000000000000000:
 	lui	a3, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	lui	a1, 4388
 	addi	a3, a3, -256

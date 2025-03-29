@@ -1,7 +1,7 @@
 func0000000000000000:
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 276464
 	fmv.w.x	fa4, a1
 	fmul.s	fa4, fa1, fa4

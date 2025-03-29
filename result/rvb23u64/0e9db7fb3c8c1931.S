@@ -13,7 +13,7 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a1, a1, a0
 	lui	a0, 4388
 	add	a1, a1, a2
@@ -22,7 +22,7 @@ func0000000000000014:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a1, a1, a0
 	lui	a0, 4388
 	add	a1, a1, a2

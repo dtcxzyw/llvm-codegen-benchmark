@@ -26,7 +26,7 @@ func0000000000000007:
 
 func0000000000000006:
 	lui	a3, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	lui	a1, 1044480
 	addiw	a3, a3, -256

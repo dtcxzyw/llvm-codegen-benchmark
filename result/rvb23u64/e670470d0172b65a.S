@@ -4,14 +4,14 @@ func0000000000000421:
 	or	a1, a1, a2
 	xori	a0, a0, 3
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 
 func0000000000001184:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	sltiu	a2, a2, 246
 	snez	a1, a1
 	sltiu	a0, a0, 230
@@ -22,7 +22,7 @@ func0000000000001184:
 func0000000000001886:
 	sext.b	a0, a0
 	sext.b	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 48
 	max	a0, a2, a0
 	slti	a0, a0, -64
@@ -39,9 +39,9 @@ func00000000000018c6:
 	ret
 
 func000000000000108c:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	sltiu	a2, a2, 230
 	sltiu	a1, a1, 246
 	addi	a0, a0, -95
@@ -51,18 +51,18 @@ func000000000000108c:
 	ret
 
 func0000000000001084:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
+	zext.b	a1, a1
 	maxu	a1, a1, a2
 	maxu	a0, a1, a0
 	sltiu	a0, a0, 22
 	ret
 
 func0000000000002108:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
+	zext.b	a1, a1
 	minu	a1, a1, a2
 	minu	a0, a0, a1
 	sltiu	a0, a0, 29
@@ -70,9 +70,9 @@ func0000000000002108:
 	ret
 
 func000000000000318c:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
@@ -86,16 +86,16 @@ func000000000000042a:
 	xori	a1, a1, 2
 	or	a1, a1, a2
 	slti	a0, a0, 0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000003181:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	snez	a2, a2
 	addi	a1, a1, -97
 	seqz	a0, a0
@@ -105,9 +105,9 @@ func0000000000003181:
 	ret
 
 func000000000000118c:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	sltiu	a2, a2, 252
 	addi	a1, a1, -8
 	addi	a0, a0, -14
@@ -118,9 +118,9 @@ func000000000000118c:
 	ret
 
 func0000000000003028:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
+	zext.b	a2, a2
 	snez	a2, a2
 	addi	a1, a1, -239
 	seqz	a1, a1

@@ -3,8 +3,8 @@
 func0000000000000000:
 	lui	a2, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a2)
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	fli.s	fa4, 0.5
 	fcvt.s.wu	fa3, a1
 	fmul.s	fa5, fa3, fa5

@@ -37,7 +37,7 @@ func0000000000000068:
 
 func0000000000000328:
 	slli	a1, a0, 48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a1, a1, 63
 	sltiu	a0, a0, 3
 	or	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000328:
 
 func0000000000000070:
 	srliw	a1, a0, 8
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a1, a1, -1794
 	sltiu	a0, a0, 7
 	seqz	a1, a1
@@ -54,7 +54,7 @@ func0000000000000070:
 	ret
 
 func0000000000000618:
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	lui	a2, 16
 	addiw	a2, a2, -256
 	and	a0, a0, a2

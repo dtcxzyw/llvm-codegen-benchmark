@@ -9,7 +9,7 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -255
 	snez	a1, a1
 	addi	a1, a1, -1
@@ -19,7 +19,7 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 162
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 32

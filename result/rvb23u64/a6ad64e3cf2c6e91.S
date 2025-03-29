@@ -1,5 +1,5 @@
 func0000000000000081:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	andi	a2, a2, 1
 	li	a3, -2
 	czero.eqz	a2, a3, a2
@@ -11,7 +11,7 @@ func0000000000000081:
 	ret
 
 func0000000000000224:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	andi	a2, a2, 1
 	lui	a3, 183
 	addi	a3, a3, 384
@@ -29,7 +29,7 @@ func0000000000000224:
 
 func00000000000000a1:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	andi	a2, a2, 1
 	addi	a2, a2, -1
 	ori	a2, a2, -4

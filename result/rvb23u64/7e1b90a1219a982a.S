@@ -4,12 +4,12 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, 16
 	ret
 
 func0000000000000006:
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	lui	a2, 4096
 	addi	a1, a1, 2
 	addiw	a2, a2, -256

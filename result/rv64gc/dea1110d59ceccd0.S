@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 .LBB0_2:
 	xori	a0, a2, 1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000000:
@@ -15,6 +15,6 @@ func0000000000000000:
 	ret
 .LBB1_2:
 	not	a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

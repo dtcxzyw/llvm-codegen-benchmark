@@ -4,7 +4,7 @@ func0000000000000018:
 	li	a0, 2
 	ret
 .LBB0_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	lui	a1, 33025
 	slli	a0, a0, 3
 	slli	a1, a1, 4

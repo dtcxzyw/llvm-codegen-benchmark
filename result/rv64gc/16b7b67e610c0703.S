@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	5871781006564002453
 func0000000000000010:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a2, a0, 59
 	slli	a0, a0, 5
 	or	a0, a0, a2
@@ -16,7 +16,7 @@ func0000000000000010:
 .LCPI1_0:
 	.quad	5871781006564002453
 func00000000000000c0:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a2, a0, 59
 	slli	a0, a0, 5
 	or	a0, a0, a2

@@ -1,6 +1,6 @@
 func0000000000000064:
 	addi	a0, a0, -1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a1, a0, 3
 	addi	a0, a0, 1
 	neg	a1, a1
@@ -9,7 +9,7 @@ func0000000000000064:
 
 func000000000000002c:
 	addi	a0, a0, 1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bnez	a0, .LBB1_2
 	li	a0, 255
 	ret
@@ -19,7 +19,7 @@ func000000000000002c:
 
 func00000000000000e4:
 	addi	a0, a0, -1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a1, a0, 3
 	addi	a0, a0, 1
 	neg	a1, a1

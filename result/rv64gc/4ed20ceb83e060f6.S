@@ -1,6 +1,6 @@
 func00000000000000ef:
 	sext.w	a2, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a2, a2, 5
 	add	a1, a1, a2
 	slli	a0, a0, 1
@@ -9,7 +9,7 @@ func00000000000000ef:
 	ret
 
 func000000000000006f:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a3, 9
 	slli	a2, a2, 32
 	slli	a3, a3, 36
@@ -22,7 +22,7 @@ func000000000000006f:
 
 func000000000000000c:
 	slli	a2, a2, 32
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	slli	a0, a0, 4
@@ -32,7 +32,7 @@ func000000000000000c:
 
 func0000000000000000:
 	slli	a2, a2, 32
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	slli	a0, a0, 4
@@ -42,7 +42,7 @@ func0000000000000000:
 
 func000000000000001c:
 	slli	a2, a2, 32
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	slli	a0, a0, 4
@@ -51,7 +51,7 @@ func000000000000001c:
 	ret
 
 func000000000000007f:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a2, a2, 32
 	srli	a3, a2, 29
 	srli	a2, a2, 25
@@ -64,7 +64,7 @@ func000000000000007f:
 
 func00000000000000ff:
 	sext.w	a2, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a3, a2, 3
 	slli	a2, a2, 7
 	slli	a0, a0, 3

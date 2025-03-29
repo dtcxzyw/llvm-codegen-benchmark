@@ -11,7 +11,7 @@ func0000000000000000:
 	flw	fa4, %lo(.LCPI0_1)(a1)
 	lui	a1, %hi(.LCPI0_2)
 	flw	fa3, %lo(.LCPI0_2)(a1)
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa2, a0
 	fmul.s	fa5, fa2, fa5
 	fmadd.s	fa5, fa1, fa4, fa5
@@ -31,7 +31,7 @@ func0000000000000001:
 	flw	fa4, %lo(.LCPI1_1)(a1)
 	lui	a1, %hi(.LCPI1_2)
 	flw	fa3, %lo(.LCPI1_2)(a1)
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	fcvt.s.wu	fa2, a0
 	fmul.s	fa5, fa2, fa5
 	fmadd.s	fa5, fa1, fa4, fa5

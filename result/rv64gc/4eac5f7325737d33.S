@@ -39,13 +39,13 @@ func0000000000000003:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	slliw	a0, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	ret
 .LBB3_2:
 	lui	a0, 16
 	addiw	a0, a0, -256
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	ret
 

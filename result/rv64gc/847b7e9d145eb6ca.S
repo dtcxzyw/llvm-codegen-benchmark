@@ -13,7 +13,7 @@ func00000000000001e1:
 	ret
 
 func00000000000003a1:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	add	a0, a0, a1
 	li	a1, 31
 	add	a0, a0, a2

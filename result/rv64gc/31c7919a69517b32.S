@@ -15,7 +15,7 @@ func000000000000000f:
 
 func000000000000000b:
 	lui	a3, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a0, a0, 32
 	addiw	a3, a3, -256
 	and	a2, a2, a3

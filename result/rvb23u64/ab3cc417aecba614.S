@@ -23,6 +23,6 @@ func0000000000000001:
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 3
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

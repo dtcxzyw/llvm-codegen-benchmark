@@ -16,7 +16,7 @@ func000000000000002c:
 
 func000000000000018c:
 	slli	a0, a0, 48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srli	a0, a0, 48
 	snez	a2, a2
 	and	a1, a1, a2

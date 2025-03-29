@@ -255,7 +255,7 @@ func0000000000000518:
 
 func0000000000000618:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 3
 	sltiu	a1, a1, 21
 	addiw	a2, a2, 768

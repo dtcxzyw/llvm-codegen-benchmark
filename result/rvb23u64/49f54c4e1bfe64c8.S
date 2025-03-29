@@ -7,7 +7,7 @@ func0000000000000021:
 
 func0000000000000038:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 

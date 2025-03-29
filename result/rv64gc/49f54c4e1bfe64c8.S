@@ -9,7 +9,7 @@ func0000000000000021:
 func0000000000000038:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 

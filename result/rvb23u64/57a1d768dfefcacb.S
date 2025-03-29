@@ -33,13 +33,13 @@ func000000000000000c:
 
 func0000000000000008:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000019:
 	zext.h	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

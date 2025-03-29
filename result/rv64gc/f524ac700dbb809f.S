@@ -1,5 +1,5 @@
 func0000000000000030:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 272
 	mul	a1, a1, a2
 	lui	a2, 3
@@ -9,35 +9,35 @@ func0000000000000030:
 	ret
 
 func000000000000003c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 561
 	ret
 
 func000000000000003f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 136
 	ret
 
 func00000000000000bf:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, -736
 	ret
 
 func000000000000007f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 280
 	ret
 
 func000000000000002f:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -1
 	slli	a1, a1, 32
 	srli	a1, a1, 29
@@ -46,7 +46,7 @@ func000000000000002f:
 	ret
 
 func00000000000000bc:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a2, a1, 2
 	slli	a1, a1, 4
 	sub	a1, a1, a2
@@ -55,7 +55,7 @@ func00000000000000bc:
 	ret
 
 func00000000000000ac:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 9
 	addi	a1, a1, -1
 	slli	a2, a2, 36
@@ -66,14 +66,14 @@ func00000000000000ac:
 	ret
 
 func000000000000007c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 132
 	ret
 
 func00000000000000ff:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 784

@@ -30,7 +30,7 @@ func0000000000000001:
 	beqz	a2, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000014:

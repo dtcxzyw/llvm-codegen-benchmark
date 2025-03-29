@@ -18,7 +18,7 @@ func0000000000000001:
 
 func0000000000000003:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 287
 	addi	a1, a1, 31
 	czero.eqz	a2, a2, a0

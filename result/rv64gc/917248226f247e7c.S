@@ -1,6 +1,6 @@
 func000000000000006e:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	slli	a1, a0, 2
@@ -10,7 +10,7 @@ func000000000000006e:
 
 func000000000000006f:
 	slli	a2, a2, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	li	a1, 37
@@ -19,7 +19,7 @@ func000000000000006f:
 
 func000000000000006c:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	li	a1, 1000

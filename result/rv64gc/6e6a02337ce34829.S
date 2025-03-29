@@ -49,7 +49,7 @@ func000000000000018c:
 
 func0000000000000301:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1

@@ -1,5 +1,5 @@
 func0000000000000401:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a1, a1
 	addw	a0, a0, a1
 	addi	a0, a0, 1

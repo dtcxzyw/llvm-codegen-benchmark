@@ -2,7 +2,7 @@
 	.quad	0x7ff0000000000000
 	.quad	0xfff0000000000000
 func0000000000000001:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -45
 	seqz	a0, a0
 	slli	a0, a0, 3

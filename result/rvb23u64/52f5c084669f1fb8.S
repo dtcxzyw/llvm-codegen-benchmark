@@ -1,5 +1,5 @@
 func000000000000068a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -17
@@ -7,7 +7,7 @@ func000000000000068a:
 	ret
 
 func000000000000008a:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -17

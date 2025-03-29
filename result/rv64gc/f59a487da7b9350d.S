@@ -5,6 +5,6 @@ func0000000000000000:
 
 func0000000000000001:
 	xori	a0, a0, 63
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000118c:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	sltiu	a1, a1, 230
 	addi	a2, a0, -95
 	addi	a0, a0, -36

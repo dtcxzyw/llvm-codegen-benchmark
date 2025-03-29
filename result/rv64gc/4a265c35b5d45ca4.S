@@ -1,6 +1,6 @@
 func0000000000000024:
 	lui	a3, 16
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addiw	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
@@ -11,7 +11,7 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	xor	a0, a0, a1
 	xori	a1, a2, 30
 	slli	a0, a0, 48

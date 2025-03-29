@@ -1,5 +1,5 @@
 func0000000000000084:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a0, a0, -1
 	addi	a1, a1, -45
 	czero.eqz	a0, a0, a1

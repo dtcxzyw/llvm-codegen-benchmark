@@ -14,6 +14,6 @@ func0000000000000030:
 	addi	a1, a1, 6
 	mul	a0, a1, a0
 	addi	a0, a0, 7
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

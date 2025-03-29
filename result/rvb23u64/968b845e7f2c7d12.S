@@ -19,6 +19,6 @@ func0000000000000003:
 	slli	a2, a2, 1
 	xor	a0, a0, a1
 	xor	a0, a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

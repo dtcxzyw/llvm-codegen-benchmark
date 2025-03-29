@@ -1,6 +1,6 @@
 func0000000000000008:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 983040
 	sltiu	a1, a1, 32
 	addiw	a2, a2, -8
@@ -17,7 +17,7 @@ func0000000000000008:
 
 func0000000000000001:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 733
 	czero.eqz	a1, a2, a1
 	li	a2, 1154
@@ -29,7 +29,7 @@ func0000000000000001:
 
 func0000000000000004:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 32
 	sltiu	a1, a1, 6
 	czero.nez	a1, a2, a1
@@ -55,7 +55,7 @@ func000000000000000a:
 
 func0000000000000018:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, -19
 	sltiu	a1, a1, 65
 	czero.eqz	a1, a2, a1
@@ -68,7 +68,7 @@ func0000000000000018:
 
 func0000000000000014:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, -8
 	sltiu	a1, a1, 240
 	czero.nez	a1, a2, a1

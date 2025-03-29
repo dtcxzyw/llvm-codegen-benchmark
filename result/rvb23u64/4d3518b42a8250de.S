@@ -1,12 +1,12 @@
 func00000000000000ff:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret
 
 func00000000000000fc:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a1, a0
 	lui	a1, 43
 	addiw	a1, a1, 1016
@@ -14,7 +14,7 @@ func00000000000000fc:
 	ret
 
 func00000000000000f3:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a1, a0
 	lui	a1, 87
 	addiw	a1, a1, 888
@@ -22,7 +22,7 @@ func00000000000000f3:
 	ret
 
 func00000000000000f0:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a0, a1, a0
 	lui	a1, 87
 	addiw	a1, a1, 840
@@ -30,7 +30,7 @@ func00000000000000f0:
 	ret
 
 func00000000000000c0:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 12
 	add	a0, a0, a1
 	addi	a0, a0, -2048

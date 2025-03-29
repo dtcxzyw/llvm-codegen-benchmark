@@ -1,6 +1,6 @@
 func000000000000001b:
 	slli	a2, a2, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	lui	a2, 4080
 	addiw	a2, a2, 511
@@ -21,7 +21,7 @@ func0000000000000013:
 func000000000000001f:
 	slli	a2, a2, 12
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	zext.h	a0, a0
 	or	a0, a0, a1
 	ret

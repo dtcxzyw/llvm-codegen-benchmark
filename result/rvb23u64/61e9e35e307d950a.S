@@ -1,6 +1,6 @@
 func000000000000006f:
-	andi	a2, a2, 255
-	andi	a0, a0, 255
+	zext.b	a2, a2
+	zext.b	a0, a0
 	li	a3, 1596
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -9,8 +9,8 @@ func000000000000006f:
 	ret
 
 func00000000000000ef:
-	andi	a2, a2, 255
-	andi	a0, a0, 255
+	zext.b	a2, a2
+	zext.b	a0, a0
 	li	a3, 1680
 	mul	a2, a2, a3
 	add	a0, a0, a1

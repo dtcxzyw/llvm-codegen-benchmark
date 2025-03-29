@@ -1,6 +1,6 @@
 func0000000000000021:
 	lui	a3, 16
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addiw	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -11,7 +11,7 @@ func0000000000000021:
 
 func0000000000000028:
 	lui	a3, 16
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addiw	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -21,7 +21,7 @@ func0000000000000028:
 
 func0000000000000025:
 	lui	a3, 16
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addiw	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -32,7 +32,7 @@ func0000000000000025:
 
 func000000000000002a:
 	slli	a0, a0, 48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srai	a0, a0, 48
 	or	a1, a1, a2
 	slli	a1, a1, 48
@@ -42,7 +42,7 @@ func000000000000002a:
 
 func0000000000000026:
 	slli	a0, a0, 48
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srai	a0, a0, 48
 	or	a1, a1, a2
 	slli	a1, a1, 48
@@ -52,7 +52,7 @@ func0000000000000026:
 
 func0000000000000024:
 	lui	a3, 16
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addiw	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -62,7 +62,7 @@ func0000000000000024:
 
 func000000000000002c:
 	lui	a3, 16
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addiw	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3

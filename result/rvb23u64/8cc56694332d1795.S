@@ -1,5 +1,5 @@
 func0000000000000004:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -142
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -7,21 +7,21 @@ func0000000000000004:
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 127
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 
 func0000000000000030:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	snez	a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 
 func0000000000000020:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 29
 	orn	a0, a0, a1
 	andi	a0, a0, 1
@@ -35,14 +35,14 @@ func0000000000000028:
 	ret
 
 func0000000000000050:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 192
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 
 func0000000000000060:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 3
 	orn	a0, a0, a1
 	andi	a0, a0, 1

@@ -7,7 +7,7 @@ func0000000000000024:
 
 func000000000000006c:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -15,7 +15,7 @@ func000000000000006c:
 
 func0000000000000061:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -148,7 +148,7 @@ func000000000000006a:
 
 func0000000000000069:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

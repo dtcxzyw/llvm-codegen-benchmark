@@ -70,7 +70,7 @@ func0000000000000006:
 
 func000000000000000b:
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 

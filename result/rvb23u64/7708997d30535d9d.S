@@ -19,13 +19,13 @@ func000000000000000d:
 	ret
 
 func0000000000000007:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	ret
 
 func000000000000000e:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	ret
@@ -46,7 +46,7 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 5
 	or	a0, a0, a1
 	ret

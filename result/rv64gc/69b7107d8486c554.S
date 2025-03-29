@@ -1,5 +1,5 @@
 func000000000000007f:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 8
 	or	a0, a0, a2
 	add	a0, a0, a1
@@ -7,7 +7,7 @@ func000000000000007f:
 	ret
 
 func0000000000000064:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 8
 	or	a0, a0, a2
 	add	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000064:
 	ret
 
 func0000000000000074:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 24
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000074:
 	ret
 
 func0000000000000070:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	add	a0, a0, a1

@@ -1,7 +1,7 @@
 func0000000000004082:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	lui	a3, 1048568
 	sltiu	a2, a2, 244
 	xor	a1, a1, a3
@@ -12,8 +12,8 @@ func0000000000004082:
 	ret
 
 func0000000000001082:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	sext.w	a2, a2
 	lui	a3, 524288
 	xor	a2, a2, a3
@@ -27,9 +27,9 @@ func0000000000001082:
 	ret
 
 func0000000000004088:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 10
 	addi	a1, a1, -95
 	sltiu	a0, a0, 26
@@ -40,7 +40,7 @@ func0000000000004088:
 
 func0000000000001214:
 	slli	a0, a0, 56
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a2, a2
 	srai	a0, a0, 56
 	addi	a2, a2, -128

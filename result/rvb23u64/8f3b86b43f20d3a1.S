@@ -39,7 +39,7 @@ func0000000000000004:
 
 func000000000000000c:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a1

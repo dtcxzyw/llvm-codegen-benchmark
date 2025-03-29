@@ -8,7 +8,7 @@ func0000000000000041:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -21,7 +21,7 @@ func0000000000000078:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -33,7 +33,7 @@ func0000000000000298:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -45,7 +45,7 @@ func00000000000002a1:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -57,7 +57,7 @@ func0000000000000058:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -68,7 +68,7 @@ func0000000000000055:
 	czero.nez	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -81,7 +81,7 @@ func0000000000000198:
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -93,7 +93,7 @@ func0000000000000194:
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a2
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 

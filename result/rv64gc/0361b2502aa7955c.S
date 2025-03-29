@@ -92,7 +92,7 @@ func0000000000000081:
 func0000000000000101:
 	sext.w	a2, a2
 	lui	a3, 6
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addiw	a3, a3, 299
 	addi	a1, a1, -236
 	sltu	a2, a3, a2

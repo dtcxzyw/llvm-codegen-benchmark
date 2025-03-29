@@ -16,7 +16,7 @@ func0000000000000200:
 	addiw	a2, a2, -1537
 	sltu	a1, a2, a1
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	li	a1, 205
 	mul	a0, a0, a1
 	srli	a0, a0, 11

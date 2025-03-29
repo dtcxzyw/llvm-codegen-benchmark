@@ -49,7 +49,7 @@ func0000000000000301:
 
 func0000000000000038:
 	not	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bexti	a1, a1, 15
 	sltiu	a0, a0, 3
 	andn	a0, a1, a0
@@ -57,7 +57,7 @@ func0000000000000038:
 
 func0000000000000034:
 	not	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	bexti	a1, a1, 15
 	sltiu	a0, a0, 3
 	and	a0, a0, a1

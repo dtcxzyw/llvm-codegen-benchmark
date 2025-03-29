@@ -26,7 +26,7 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a2, a2, a1
 	sh1add.uw	a0, a2, a0
 	ret

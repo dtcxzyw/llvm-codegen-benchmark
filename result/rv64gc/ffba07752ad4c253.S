@@ -11,7 +11,7 @@ func0000000000000003:
 	srai	a0, a0, 63
 	andi	a0, a0, 6
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000001:

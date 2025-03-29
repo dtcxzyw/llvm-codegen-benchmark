@@ -4,12 +4,12 @@ func0000000000000001:
 	andi	a2, a1, 1
 	bnez	a0, .LBB0_2
 	li	a0, 2
-	andi	a1, a3, 255
+	zext.b	a1, a3
 	bnez	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 6
-	andi	a1, a3, 255
+	zext.b	a1, a3
 	beqz	a2, .LBB0_4
 .LBB0_3:
 	li	a0, 7
@@ -23,7 +23,7 @@ func0000000000000001:
 
 func0000000000000004:
 	andi	a3, a1, 1
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	bnez	a3, .LBB1_2
 	slli	a2, a2, 63
 	srai	a0, a2, 63

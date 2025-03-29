@@ -65,7 +65,7 @@ func00000000000000cc:
 
 func0000000000000081:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -17
 	seqz	a1, a1
@@ -75,7 +75,7 @@ func0000000000000081:
 
 func000000000000010c:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -14
 	snez	a1, a1

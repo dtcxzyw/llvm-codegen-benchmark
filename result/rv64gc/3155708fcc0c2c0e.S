@@ -4,7 +4,7 @@ func0000000000000024:
 	mv	a1, a2
 .LBB0_2:
 	addi	a0, a1, -71
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 250
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000004:
 	mv	a1, a2
 .LBB1_2:
 	addi	a1, a1, -1
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	sltiu	a0, a0, 3
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000034:
 	mv	a1, a2
 .LBB2_2:
 	addi	a1, a1, -3
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	sltiu	a0, a0, 254
 	ret
 
@@ -33,7 +33,7 @@ func0000000000000001:
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	addi	a0, a0, -31
 	seqz	a0, a0
 	ret

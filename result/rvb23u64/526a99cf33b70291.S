@@ -1,5 +1,5 @@
 func0000000000000174:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, 10
@@ -7,7 +7,7 @@ func0000000000000174:
 	ret
 
 func0000000000000106:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, 15
@@ -15,7 +15,7 @@ func0000000000000106:
 	ret
 
 func0000000000000134:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, -64
@@ -23,7 +23,7 @@ func0000000000000134:
 	ret
 
 func0000000000000104:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, -4
@@ -31,7 +31,7 @@ func0000000000000104:
 	ret
 
 func0000000000000126:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, -4
@@ -39,7 +39,7 @@ func0000000000000126:
 	ret
 
 func0000000000000161:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, 2
@@ -48,7 +48,7 @@ func0000000000000161:
 	ret
 
 func000000000000016c:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, 2
@@ -57,7 +57,7 @@ func000000000000016c:
 	ret
 
 func0000000000000178:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
 	addiw	a0, a0, 5

@@ -1,6 +1,6 @@
 func0000000000000007:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	lui	a2, 16
@@ -12,7 +12,7 @@ func0000000000000007:
 
 func0000000000000001:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	li	a2, 16
@@ -23,7 +23,7 @@ func0000000000000001:
 
 func0000000000000005:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	czero.nez	a0, a1, a0

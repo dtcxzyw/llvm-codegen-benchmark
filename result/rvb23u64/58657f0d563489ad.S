@@ -1,23 +1,23 @@
 func000000000000000f:
 	sext.w	a1, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add.uw	a0, a0, a1
 	ret
 
 func0000000000000007:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sext.w	a0, a0
 	add	a0, a0, a1
 	ret
 
 func000000000000000b:
 	sext.w	a1, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	ret
 

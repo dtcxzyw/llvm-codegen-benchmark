@@ -1,12 +1,12 @@
 func0000000000000181:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -8
 	seqz	a1, a1
 	seqz	a0, a0
@@ -18,7 +18,7 @@ func0000000000000021:
 func000000000000030c:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 6
 	xori	a1, a1, 1
 	xor	a0, a0, a2
@@ -27,14 +27,14 @@ func000000000000030c:
 	ret
 
 func000000000000002c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -10
 	seqz	a1, a1
 	sltiu	a0, a0, -128
@@ -42,7 +42,7 @@ func0000000000000024:
 	ret
 
 func000000000000018c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xori	a1, a1, 1
 	xori	a0, a0, 17
 	or	a0, a0, a1
@@ -50,14 +50,14 @@ func000000000000018c:
 	ret
 
 func000000000000008c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 254
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 2047
 	addi	a1, a1, -7
 	seqz	a1, a1
@@ -66,14 +66,14 @@ func0000000000000028:
 	ret
 
 func000000000000018a:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	snez	a1, a1
 	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000184:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 4
 	snez	a1, a1
 	sltiu	a0, a0, 625
@@ -81,7 +81,7 @@ func0000000000000184:
 	ret
 
 func0000000000000186:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -45
 	snez	a1, a1
 	slti	a0, a0, 0
@@ -89,7 +89,7 @@ func0000000000000186:
 	ret
 
 func0000000000000188:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a0, a0, 8
 	snez	a1, a1
 	xori	a0, a0, 1
@@ -97,14 +97,14 @@ func0000000000000188:
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 48
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000101:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 25
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -112,7 +112,7 @@ func0000000000000101:
 	ret
 
 func0000000000000026:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a1, a1
 	slti	a0, a0, 1
 	or	a0, a0, a1

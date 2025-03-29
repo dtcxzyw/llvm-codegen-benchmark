@@ -25,7 +25,7 @@ func0000000000000011:
 	ret
 
 func0000000000000061:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret

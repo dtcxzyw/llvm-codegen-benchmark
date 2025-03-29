@@ -3,7 +3,7 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	snez	a0, a0
 	ret
 

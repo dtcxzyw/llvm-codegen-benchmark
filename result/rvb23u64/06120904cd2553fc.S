@@ -22,7 +22,7 @@ func000000000000000c:
 
 func0000000000000014:
 	addi	a1, a1, 223
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 93
 	and	a0, a0, a1
 	ret

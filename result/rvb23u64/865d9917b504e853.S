@@ -12,7 +12,7 @@ func0000000000000000:
 
 func0000000000000004:
 	subw	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh2add	a2, a1, a1
 	sh1add	a1, a2, a1
 	add	a0, a0, a1

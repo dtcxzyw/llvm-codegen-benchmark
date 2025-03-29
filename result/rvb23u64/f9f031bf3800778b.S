@@ -31,7 +31,7 @@ func00000000000000a8:
 	ret
 
 func00000000000000e1:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 1
@@ -73,7 +73,7 @@ func00000000000000b4:
 	ret
 
 func00000000000001ec:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 6
 	or	a0, a0, a1
 	zext.h	a0, a0
@@ -92,7 +92,7 @@ func00000000000001e1:
 	ret
 
 func00000000000001f4:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a1, a1, 5
 	or	a0, a0, a1
 	zext.h	a0, a0

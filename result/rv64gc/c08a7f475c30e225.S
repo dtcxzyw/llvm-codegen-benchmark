@@ -13,13 +13,13 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -55
 	seqz	a0, a0
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addi	a0, a0, -65
 	snez	a0, a0
 	ret

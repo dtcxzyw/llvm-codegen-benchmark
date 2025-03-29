@@ -1,6 +1,6 @@
 func0000000000000302:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -35
 	seqz	a1, a1
 	snez	a0, a0
@@ -49,7 +49,7 @@ func0000000000000298:
 	ret
 
 func0000000000000318:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a2, 524288
 	xori	a1, a1, 128
 	xor	a0, a0, a2
@@ -94,7 +94,7 @@ func0000000000000050:
 
 func0000000000000042:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a1, a1, -27
 	addi	a0, a0, -81
 	seqz	a1, a1

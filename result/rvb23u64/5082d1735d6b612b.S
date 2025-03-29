@@ -1,6 +1,6 @@
 func00000000000000f4:
 	sext.w	a3, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	li	a2, 1
@@ -13,7 +13,7 @@ func00000000000000f4:
 
 func00000000000000e4:
 	sext.w	a3, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	li	a2, 1

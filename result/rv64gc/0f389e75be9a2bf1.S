@@ -36,7 +36,7 @@ func000000000000000c:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	bnez	a1, .LBB3_2
-	andi	a1, a2, 255
+	zext.b	a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

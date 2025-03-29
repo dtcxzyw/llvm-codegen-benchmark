@@ -4,7 +4,7 @@ func0000000000000000:
 	li	a1, 10
 	mul	a0, a0, a1
 	srl	a0, a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 .LCPI1_0:

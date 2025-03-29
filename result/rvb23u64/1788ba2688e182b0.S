@@ -1,6 +1,6 @@
 func0000000000000290:
 	sext.w	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sgtz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -8,7 +8,7 @@ func0000000000000290:
 
 func000000000000029f:
 	not	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srliw	a2, a2, 31
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -16,7 +16,7 @@ func000000000000029f:
 
 func0000000000000280:
 	sext.w	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slti	a2, a2, 256
 	xori	a2, a2, 1
 	add	a0, a0, a1
@@ -25,7 +25,7 @@ func0000000000000280:
 
 func000000000000028f:
 	sext.w	a2, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slti	a2, a2, 256
 	xori	a2, a2, 1
 	add	a0, a0, a1

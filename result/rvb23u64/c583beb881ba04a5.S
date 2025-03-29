@@ -32,7 +32,7 @@ func0000000000000026:
 
 func000000000000002c:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 3
 	addi	a3, a1, -4
 	czero.eqz	a1, a1, a3

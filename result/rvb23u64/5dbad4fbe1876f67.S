@@ -3,7 +3,7 @@ func000000000000000a:
 	li	a2, 16
 	subw	a2, a2, a1
 	srlw	a0, a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func000000000000001e:
@@ -11,7 +11,7 @@ func000000000000001e:
 	li	a2, 24
 	subw	a2, a2, a1
 	srlw	a0, a0, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000000:

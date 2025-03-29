@@ -1,5 +1,5 @@
 func0000000000000038:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 770
@@ -8,7 +8,7 @@ func0000000000000038:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

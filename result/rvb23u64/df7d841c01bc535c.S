@@ -1,5 +1,5 @@
 func0000000000000018:
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	snez	a2, a2
 	or	a1, a1, a2
 	li	a2, 48

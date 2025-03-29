@@ -3,7 +3,7 @@ func000000000000000f:
 	addiw	a3, a3, -256
 	and	a2, a2, a3
 	sh1add	a0, a2, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a0, a1, a0
 	ret
 

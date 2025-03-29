@@ -30,7 +30,7 @@ func000000000000000a:
 	ret
 
 func00000000000001f8:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	sltiu	a0, a0, 19
@@ -92,7 +92,7 @@ func0000000000000186:
 	ret
 
 func00000000000001f4:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	sltiu	a0, a0, 256

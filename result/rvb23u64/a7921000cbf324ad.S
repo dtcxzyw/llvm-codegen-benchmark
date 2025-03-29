@@ -3,7 +3,7 @@ func000000000000014c:
 	li	a2, 6
 	sgtz	a1, a1
 	subw	a2, a2, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srl	a0, a2, a1
 	li	a1, 1
 	maxu	a0, a0, a1
@@ -14,7 +14,7 @@ func000000000000028c:
 	li	a2, 61
 	sltiu	a1, a1, 61
 	subw	a2, a2, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srl	a0, a2, a1
 	li	a1, 1
 	maxu	a0, a0, a1
@@ -25,7 +25,7 @@ func000000000000002c:
 	li	a2, 4
 	seqz	a1, a1
 	subw	a2, a2, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	srl	a0, a2, a1
 	li	a1, 1
 	maxu	a0, a0, a1

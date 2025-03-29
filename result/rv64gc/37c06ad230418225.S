@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	1844674407370955162
 func0000000000000061:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 838861
 	addiw	a1, a1, -819
 	slli	a2, a1, 32
@@ -20,7 +20,7 @@ func0000000000000061:
 .LCPI1_1:
 	.quad	368934881474191032
 func0000000000000041:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	lui	a2, %hi(.LCPI1_1)
@@ -34,7 +34,7 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	lui	a1, 699051
 	addiw	a1, a1, -1365
 	slli	a2, a1, 32

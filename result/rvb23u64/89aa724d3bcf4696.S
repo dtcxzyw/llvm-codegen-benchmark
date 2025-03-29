@@ -11,7 +11,7 @@ func0000000000000058:
 func0000000000000842:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a0, a0, -127
 	addi	a1, a1, -254
 	seqz	a1, a1

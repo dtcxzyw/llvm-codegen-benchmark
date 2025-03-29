@@ -1,6 +1,6 @@
 func0000000000000037:
 	slliw	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a3, 16
 	or	a0, a0, a2
 	addiw	a2, a3, -256
@@ -18,7 +18,7 @@ func0000000000000037:
 
 func0000000000000030:
 	slliw	a2, a2, 4
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a3, 16
 	or	a0, a0, a2
 	addiw	a2, a3, -256
@@ -36,7 +36,7 @@ func0000000000000030:
 
 func0000000000000036:
 	slliw	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	lui	a3, 16
 	or	a0, a0, a2
 	addiw	a2, a3, -256

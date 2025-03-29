@@ -5,6 +5,6 @@ func0000000000000000:
 	li	a0, 14
 	ret
 .LBB0_2:
-	andi	a0, a2, 255
+	zext.b	a0, a2
 	ret
 

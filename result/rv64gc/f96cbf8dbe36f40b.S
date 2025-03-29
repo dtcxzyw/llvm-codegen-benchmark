@@ -38,13 +38,13 @@ func0000000000000024:
 	ret
 
 func0000000000000038:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 65
 	xori	a0, a0, 1
 	ret
 
 func0000000000000034:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 91
 	ret
 

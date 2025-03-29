@@ -1,6 +1,6 @@
 func000000000000018c:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -1
 	snez	a1, a1
 	snez	a2, a2
@@ -10,7 +10,7 @@ func000000000000018c:
 
 func000000000000002c:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	seqz	a2, a2
 	addi	a1, a1, -5
 	or	a0, a0, a2
@@ -20,7 +20,7 @@ func000000000000002c:
 
 func0000000000000088:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 233
 	sltiu	a1, a1, 4
 	or	a0, a0, a2
@@ -30,7 +30,7 @@ func0000000000000088:
 
 func0000000000000181:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -5
 	addi	a1, a1, -1
 	snez	a2, a2
@@ -41,7 +41,7 @@ func0000000000000181:
 
 func0000000000000021:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -2
 	addi	a1, a1, -3
 	seqz	a2, a2
@@ -52,7 +52,7 @@ func0000000000000021:
 
 func0000000000000184:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	snez	a2, a2
 	or	a0, a0, a2
 	sltiu	a1, a1, 13
@@ -61,7 +61,7 @@ func0000000000000184:
 
 func0000000000000198:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	snez	a2, a2
 	sltiu	a1, a1, 256
 	or	a0, a0, a2
@@ -71,7 +71,7 @@ func0000000000000198:
 
 func0000000000000024:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	seqz	a2, a2
 	or	a0, a0, a2
 	sltiu	a1, a1, 6
@@ -80,7 +80,7 @@ func0000000000000024:
 
 func000000000000010c:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 25
 	snez	a1, a1
 	xori	a2, a2, 1
@@ -90,7 +90,7 @@ func000000000000010c:
 
 func0000000000000101:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 64
 	seqz	a1, a1
 	xori	a2, a2, 1

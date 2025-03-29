@@ -1,6 +1,6 @@
 func0000000000000015:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	negw	a2, a1
 	czero.nez	a1, a1, a0
@@ -10,7 +10,7 @@ func0000000000000015:
 
 func0000000000000010:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	negw	a2, a1
 	czero.nez	a1, a1, a0
@@ -20,7 +20,7 @@ func0000000000000010:
 
 func0000000000000009:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	negw	a2, a1
 	czero.nez	a1, a1, a0
@@ -30,7 +30,7 @@ func0000000000000009:
 
 func000000000000000d:
 	andi	a0, a0, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	negw	a2, a1
 	czero.nez	a1, a1, a0

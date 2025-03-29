@@ -17,7 +17,7 @@ func0000000000000002:
 	ret
 
 func0000000000000031:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a1, a0, 15
 	czero.eqz	a0, a0, a1
 	ret

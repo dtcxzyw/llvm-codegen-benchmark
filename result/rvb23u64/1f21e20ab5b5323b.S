@@ -8,7 +8,7 @@ func0000000000000001:
 	addi	a2, a2, 39
 	czero.nez	a0, a2, a0
 	or	a0, a0, a3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -22,7 +22,7 @@ func0000000000000021:
 	czero.eqz	a3, a3, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -35,7 +35,7 @@ func0000000000000038:
 	czero.eqz	a3, a3, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000018:
 	czero.eqz	a3, a3, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 

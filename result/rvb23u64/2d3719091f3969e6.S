@@ -1,5 +1,5 @@
 func000000000000018c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a2, a1
 	lui	a3, 559241
 	addiw	a3, a3, -1911

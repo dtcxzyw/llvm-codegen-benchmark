@@ -21,7 +21,7 @@ func0000000000000188:
 
 func000000000000002a:
 	sext.w	a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	slti	a1, a1, 1024
 	not	a1, a1

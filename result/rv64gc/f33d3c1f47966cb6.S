@@ -1,6 +1,6 @@
 func0000000000000058:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -10
 	seqz	a1, a1

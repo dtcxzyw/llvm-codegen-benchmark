@@ -1,5 +1,5 @@
 func000000000000007e:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 1
@@ -7,7 +7,7 @@ func000000000000007e:
 	ret
 
 func0000000000000060:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sh1add	a1, a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1

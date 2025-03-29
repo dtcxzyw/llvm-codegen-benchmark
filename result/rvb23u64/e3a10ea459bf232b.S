@@ -1,6 +1,6 @@
 func0000000000000007:
 	addi	a0, a0, 4
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 
 func0000000000000001:

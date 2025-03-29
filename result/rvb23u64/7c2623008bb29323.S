@@ -1,13 +1,13 @@
 func000000000000003f:
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	sh1add	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 
 func000000000000003c:
-	andi	a2, a2, 255
-	andi	a1, a1, 255
+	zext.b	a2, a2
+	zext.b	a1, a1
 	slli	a2, a2, 4
 	add	a0, a0, a1
 	addw	a0, a0, a2

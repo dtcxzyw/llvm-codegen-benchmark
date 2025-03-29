@@ -29,7 +29,7 @@ func0000000000000141:
 func0000000000000081:
 	slli	a1, a1, 3
 	srlw	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a0, a0
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000041:
 func000000000000018c:
 	slli	a1, a1, 3
 	srlw	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	snez	a0, a0
 	ret
 

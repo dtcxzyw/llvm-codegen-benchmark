@@ -1,6 +1,6 @@
 func0000000000000228:
 	slli	a3, a1, 56
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srai	a3, a3, 56
 	sltiu	a1, a1, 64
 	and	a1, a1, a2
@@ -11,7 +11,7 @@ func0000000000000228:
 	ret
 
 func0000000000000084:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a3, a1, -4
 	addi	a1, a1, -10
 	seqz	a3, a3

@@ -15,14 +15,14 @@ func0000000000000046:
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	feq.d	a1, fa0, fa1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	feq.d	a1, fa0, fa1
 	snez	a0, a0
 	and	a0, a0, a1

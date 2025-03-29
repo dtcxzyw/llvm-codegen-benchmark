@@ -52,7 +52,7 @@ func0000000000000301:
 func0000000000000038:
 	lui	a1, 8
 	and	a1, a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 3
 	seqz	a1, a1
 	not	a0, a0
@@ -62,7 +62,7 @@ func0000000000000038:
 func0000000000000034:
 	lui	a1, 8
 	and	a1, a1, a0
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	seqz	a1, a1
 	sltiu	a0, a0, 3
 	and	a0, a0, a1

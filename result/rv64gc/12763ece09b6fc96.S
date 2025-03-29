@@ -10,7 +10,7 @@ func0000000000000050:
 
 func0000000000000870:
 	addi	a0, a0, -1
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	sltiu	a0, a0, 256
 	addi	a1, a1, -255
 	seqz	a1, a1

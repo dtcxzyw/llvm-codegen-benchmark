@@ -2,7 +2,7 @@ func0000000000000033:
 	slliw	a2, a2, 8
 	slliw	a1, a1, 16
 	or	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func000000000000002f:
 	slliw	a2, a2, 16
 	slliw	a1, a1, 8
 	or	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	or	a0, a0, a1
 	ret
 

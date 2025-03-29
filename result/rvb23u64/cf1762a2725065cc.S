@@ -1,7 +1,7 @@
 func000000000000000f:
 	srli	a2, a2, 8
 	add	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a1, a0
 	ret
 

@@ -23,8 +23,8 @@ func000000000000000c:
 	ret
 
 func0000000000000019:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -31,7 +31,7 @@ func000000000000018c:
 
 func000000000000002c:
 	slli	a0, a0, 48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	addi	a1, a1, -34
 	seqz	a1, a1
@@ -41,7 +41,7 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xori	a1, a1, 10
 	xori	a0, a0, 6
 	or	a0, a0, a1

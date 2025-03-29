@@ -1,6 +1,6 @@
 func0000000000000007:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -1
 	li	a3, -2
 	czero.eqz	a2, a3, a2
@@ -11,7 +11,7 @@ func0000000000000007:
 
 func0000000000000011:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 32
 	sltiu	a2, a2, 6
 	czero.nez	a2, a3, a2
@@ -25,7 +25,7 @@ func0000000000000011:
 
 func0000000000000010:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 32
 	sltiu	a2, a2, 6
 	czero.nez	a2, a3, a2
@@ -53,7 +53,7 @@ func0000000000000029:
 
 func0000000000000004:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1
 	addi	a2, a2, -1
 	seqz	a2, a2
@@ -66,7 +66,7 @@ func0000000000000004:
 
 func0000000000000005:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, -15
 	addi	a2, a2, -1
 	czero.eqz	a2, a3, a2
@@ -80,7 +80,7 @@ func0000000000000005:
 
 func0000000000000020:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 4
 	sltiu	a2, a2, 10
 	xori	a2, a2, 1
@@ -93,7 +93,7 @@ func0000000000000020:
 
 func0000000000000021:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 3
 	sltiu	a2, a2, 10
 	xori	a2, a2, 1
@@ -106,7 +106,7 @@ func0000000000000021:
 
 func0000000000000023:
 	andi	a1, a1, 1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 3
 	sltiu	a2, a2, 10
 	xori	a2, a2, 1

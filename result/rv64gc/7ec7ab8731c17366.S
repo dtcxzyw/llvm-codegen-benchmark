@@ -1,6 +1,6 @@
 func0000000000000000:
 	mv	a2, a0
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	li	a1, 100
 	andi	a2, a2, 1
 	bgeu	a0, a1, .LBB0_3

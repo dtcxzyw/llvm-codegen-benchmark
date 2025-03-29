@@ -4,7 +4,7 @@ func0000000000000003:
 	mv	a0, a1
 	ret
 .LBB0_2:
-	andi	a0, a2, 255
+	zext.b	a0, a2
 	li	a1, 127
 	sub	a0, a1, a0
 	ret

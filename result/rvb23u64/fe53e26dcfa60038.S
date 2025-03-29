@@ -1,7 +1,7 @@
 func000000000000010e:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -127
 	slt	a0, a1, a0
 	sltiu	a1, a2, -126
@@ -12,7 +12,7 @@ func000000000000010e:
 func0000000000000188:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -139
 	sltiu	a2, a2, -134
 	slt	a0, a0, a1
@@ -22,7 +22,7 @@ func0000000000000188:
 func0000000000000d08:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -161
 	sltiu	a2, a2, 63
 	sltu	a0, a0, a1

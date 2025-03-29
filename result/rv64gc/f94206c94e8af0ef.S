@@ -1,6 +1,6 @@
 func0000000000000042:
-	andi	a0, a0, 255
-	andi	a1, a1, 255
+	zext.b	a0, a0
+	zext.b	a1, a1
 	seqz	a1, a1
 	addi	a0, a0, -10
 	seqz	a0, a0
@@ -11,7 +11,7 @@ func0000000000000042:
 
 func0000000000000114:
 	slli	a0, a0, 56
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srai	a0, a0, 56
 	sltiu	a1, a1, 63
 	slti	a0, a0, 0
@@ -23,7 +23,7 @@ func0000000000000114:
 
 func000000000000010c:
 	slli	a0, a0, 56
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srai	a0, a0, 56
 	sltiu	a1, a1, 63
 	slti	a0, a0, -3

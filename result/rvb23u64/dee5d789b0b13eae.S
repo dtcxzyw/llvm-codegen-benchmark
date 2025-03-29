@@ -1,6 +1,6 @@
 func0000000000000020:
 	li	a3, 8
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a3, a3, a0
 	sllw	a1, a1, a3
 	srlw	a0, a2, a0
@@ -8,7 +8,7 @@ func0000000000000020:
 	ret
 
 func0000000000000036:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 8
 	srlw	a2, a2, a1
 	subw	a3, a3, a1
@@ -17,7 +17,7 @@ func0000000000000036:
 	ret
 
 func0000000000000016:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 8
 	srlw	a2, a2, a1
 	subw	a3, a3, a1

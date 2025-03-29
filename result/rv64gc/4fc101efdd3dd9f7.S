@@ -78,7 +78,7 @@ func000000000000006a:
 
 func0000000000000061:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -201,7 +201,7 @@ func0000000000000048:
 
 func0000000000000028:
 	sext.w	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

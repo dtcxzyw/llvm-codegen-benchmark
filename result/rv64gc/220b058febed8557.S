@@ -16,12 +16,12 @@ func0000000000000011:
 	li	a2, 6
 	bltu	a1, a2, .LBB1_2
 	li	a1, -48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, -55
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	add	a0, a0, a1
 	ret
 

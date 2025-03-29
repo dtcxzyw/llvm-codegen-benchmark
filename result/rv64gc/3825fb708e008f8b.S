@@ -3,7 +3,7 @@ func000000000000060a:
 	li	a2, 10
 	mul	a0, a0, a2
 	lui	a2, 16
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	addiw	a2, a2, -1
 	slt	a0, a2, a0
@@ -12,7 +12,7 @@ func000000000000060a:
 func00000000000003f8:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
@@ -24,7 +24,7 @@ func0000000000000601:
 	li	a2, 10
 	mul	a0, a0, a2
 	lui	a2, 524288
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	addiw	a2, a2, -1
 	xor	a0, a0, a2
@@ -34,7 +34,7 @@ func0000000000000601:
 func0000000000000604:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
@@ -43,7 +43,7 @@ func0000000000000604:
 func0000000000000608:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 64
@@ -53,7 +53,7 @@ func0000000000000608:
 func00000000000006ac:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
@@ -63,7 +63,7 @@ func00000000000006ac:
 func0000000000000008:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 128
@@ -73,7 +73,7 @@ func0000000000000008:
 func0000000000000668:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 16
@@ -83,7 +83,7 @@ func0000000000000668:
 func00000000000006aa:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 1001
@@ -93,7 +93,7 @@ func00000000000006aa:
 func00000000000006a6:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
@@ -102,7 +102,7 @@ func00000000000006a6:
 func000000000000060c:
 	addi	a1, a1, -48
 	li	a2, 10
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1

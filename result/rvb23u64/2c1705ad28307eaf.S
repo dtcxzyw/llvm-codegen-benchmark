@@ -1,6 +1,6 @@
 func0000000000000084:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addi	a2, a2, -58
 	sltiu	a0, a0, 230
 	sltiu	a2, a2, -10
@@ -10,7 +10,7 @@ func0000000000000084:
 
 func0000000000000086:
 	sext.b	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -144
 	slti	a1, a1, -64
 	sltiu	a2, a2, 48
@@ -19,8 +19,8 @@ func0000000000000086:
 	ret
 
 func000000000000008c:
-	andi	a0, a0, 255
-	andi	a2, a2, 255
+	zext.b	a0, a0
+	zext.b	a2, a2
 	addi	a2, a2, -91
 	addi	a0, a0, -95
 	sltiu	a2, a2, -26

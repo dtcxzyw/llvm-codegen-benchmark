@@ -172,7 +172,7 @@ func0000000000000284:
 	addiw	a0, a0, 1946
 	sltu	a0, a2, a0
 	addi	a0, a0, -1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 .LBB13_2:
 	ret
 
@@ -184,7 +184,7 @@ func00000000000000c4:
 	addiw	a0, a0, -516
 	slt	a0, a2, a0
 	addi	a0, a0, -1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 .LBB14_2:
 	ret
 

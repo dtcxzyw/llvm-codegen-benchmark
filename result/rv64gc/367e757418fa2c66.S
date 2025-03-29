@@ -8,7 +8,7 @@ func000000000000018a:
 	ret
 
 func0000000000000021:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	xori	a2, a2, 192
 	xori	a1, a1, 1
 	or	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000021:
 
 func000000000000018c:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -144
 	addi	a1, a1, -48
 	snez	a2, a2

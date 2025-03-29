@@ -1,6 +1,6 @@
 func0000000000000081:
 	lui	a3, 16
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addiw	a3, a3, -1
 	addi	a0, a0, -2
 	and	a2, a2, a3
@@ -12,7 +12,7 @@ func0000000000000081:
 
 func000000000000002c:
 	lui	a3, 16
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addiw	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
@@ -23,7 +23,7 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -33,7 +33,7 @@ func0000000000000021:
 
 func000000000000008c:
 	lui	a3, 16
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addiw	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3

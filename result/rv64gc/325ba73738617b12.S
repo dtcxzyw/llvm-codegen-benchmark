@@ -11,6 +11,6 @@ func000000000000000a:
 	slli	a0, a0, 48
 	srai	a0, a0, 63
 	and	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	ret
 

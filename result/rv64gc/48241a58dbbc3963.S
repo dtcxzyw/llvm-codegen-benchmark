@@ -39,7 +39,7 @@ func0000000000000004:
 	ret
 
 func0000000000000034:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sltiu	a0, a0, 1797
 	ret

@@ -4,7 +4,7 @@ func0000000000000004:
 	slli	a0, a0, 56
 	srli	a0, a0, 57
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 10
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000044:
 	slli	a0, a0, 56
 	srli	a0, a0, 58
 	or	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 5
 	ret
 

@@ -1,6 +1,6 @@
 func00000000000000a5:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
@@ -10,7 +10,7 @@ func00000000000000a5:
 
 func00000000000000aa:
 	sext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	sext.h	a1, a1
@@ -19,7 +19,7 @@ func00000000000000aa:
 
 func00000000000000a6:
 	sext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	sext.h	a1, a1
@@ -28,7 +28,7 @@ func00000000000000a6:
 
 func00000000000000a1:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
@@ -38,7 +38,7 @@ func00000000000000a1:
 
 func00000000000000a4:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	zext.h	a1, a1
@@ -47,7 +47,7 @@ func00000000000000a4:
 
 func00000000000000a8:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	zext.h	a1, a1

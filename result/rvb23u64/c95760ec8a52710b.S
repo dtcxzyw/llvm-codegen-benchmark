@@ -8,7 +8,7 @@ func0000000000000084:
 	add	a1, a1, a2
 	sraiw	a0, a0, 31
 	add	a0, a0, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltiu	a0, a0, 10
 	ret
 

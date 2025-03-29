@@ -15,7 +15,7 @@ func000000000000000f:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	addw	a0, a0, a1
 	ret
 

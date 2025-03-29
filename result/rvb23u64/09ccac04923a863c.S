@@ -1,7 +1,7 @@
 func0000000000000361:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -10,7 +10,7 @@ func0000000000000361:
 func000000000000036c:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
@@ -19,7 +19,7 @@ func000000000000036c:
 func0000000000000368:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 17
@@ -29,7 +29,7 @@ func0000000000000368:
 func0000000000000364:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
@@ -38,7 +38,7 @@ func0000000000000364:
 func0000000000000366:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 1
@@ -47,7 +47,7 @@ func0000000000000366:
 func000000000000036a:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sgtz	a0, a0
@@ -56,7 +56,7 @@ func000000000000036a:
 func0000000000000378:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 4
@@ -66,7 +66,7 @@ func0000000000000378:
 func0000000000000261:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	addi	a0, a0, -12
@@ -76,7 +76,7 @@ func0000000000000261:
 func000000000000026a:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 13
@@ -86,7 +86,7 @@ func000000000000026a:
 func0000000000000274:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 65
@@ -95,7 +95,7 @@ func0000000000000274:
 func0000000000000374:
 	slli	a2, a2, 8
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 65
@@ -104,7 +104,7 @@ func0000000000000374:
 func00000000000003e1:
 	slli	a2, a2, 6
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -113,7 +113,7 @@ func00000000000003e1:
 func00000000000003f4:
 	slli	a2, a2, 6
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 32
@@ -122,7 +122,7 @@ func00000000000003f4:
 func0000000000000268:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 4
@@ -132,7 +132,7 @@ func0000000000000268:
 func0000000000000264:
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 22
@@ -140,7 +140,7 @@ func0000000000000264:
 
 func0000000000000318:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	lui	a2, 1
 	or	a0, a0, a1
@@ -152,7 +152,7 @@ func0000000000000318:
 func00000000000003ec:
 	slli	a2, a2, 12
 	or	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	addi	a0, a0, -13
@@ -161,7 +161,7 @@ func00000000000003ec:
 
 func00000000000003f8:
 	slli	a2, a2, 12
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	or	a0, a0, a2
 	lui	a2, 16
 	or	a0, a0, a1

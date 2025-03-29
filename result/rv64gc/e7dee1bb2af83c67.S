@@ -1,5 +1,5 @@
 func000000000000002c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a0, a0, -5
@@ -9,7 +9,7 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	or	a0, a0, a1
@@ -17,7 +17,7 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -127
@@ -27,7 +27,7 @@ func0000000000000021:
 	ret
 
 func000000000000010c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 200
@@ -37,7 +37,7 @@ func000000000000010c:
 	ret
 
 func00000000000000cc:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srai	a1, a1, 48
 	addi	a0, a0, -2
@@ -47,7 +47,7 @@ func00000000000000cc:
 	ret
 
 func0000000000000028:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a0, a0, 16
@@ -57,7 +57,7 @@ func0000000000000028:
 	ret
 
 func0000000000000081:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 2
@@ -66,7 +66,7 @@ func0000000000000081:
 	ret
 
 func0000000000000181:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a0, a0, -42
@@ -76,7 +76,7 @@ func0000000000000181:
 	ret
 
 func0000000000000084:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
@@ -87,7 +87,7 @@ func0000000000000084:
 	ret
 
 func000000000000014c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srai	a1, a1, 48
 	addi	a0, a0, -10
@@ -98,7 +98,7 @@ func000000000000014c:
 	ret
 
 func0000000000000184:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -768
@@ -108,7 +108,7 @@ func0000000000000184:
 	ret
 
 func000000000000008c:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
@@ -119,7 +119,7 @@ func000000000000008c:
 	ret
 
 func0000000000000188:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a0, a0, 2

@@ -1,25 +1,25 @@
 func0000000000000027:
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000038:
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
 func000000000000003f:
 	addi	a1, a1, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000008:
 	addi	a1, a1, -48
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mul	a0, a0, a1
 	zext.w	a0, a0
 	ret

@@ -61,13 +61,13 @@ func0000000000000051:
 	ret
 
 func00000000000000a3:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 127
 	addw	a0, a0, a1
 	ret
 
 func00000000000000a1:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 127
 	addw	a0, a0, a1
 	ret
@@ -82,7 +82,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000c3:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 63
 	xori	a1, a1, 1
 	addw	a0, a0, a1

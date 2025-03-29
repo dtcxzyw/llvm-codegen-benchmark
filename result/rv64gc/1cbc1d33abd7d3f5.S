@@ -1,6 +1,6 @@
 func000000000000003f:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a2, a2, 4
 	add	a0, a0, a2
 	slli	a1, a1, 2
@@ -17,7 +17,7 @@ func000000000000007f:
 	li	a2, 70
 .LBB1_3:
 	add	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -26,7 +26,7 @@ func000000000000007f:
 
 func0000000000000043:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, -1
 	andi	a2, a2, 4
 	add	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000043:
 
 func0000000000000040:
 	andi	a2, a2, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, -1
 	andi	a2, a2, 4
 	add	a0, a0, a1

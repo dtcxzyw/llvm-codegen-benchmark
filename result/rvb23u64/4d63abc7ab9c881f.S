@@ -21,7 +21,7 @@ func00000000000000ff:
 	ret
 
 func00000000000000f5:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	li	a3, 1260
 	mul	a2, a2, a3
 	add	a0, a0, a2

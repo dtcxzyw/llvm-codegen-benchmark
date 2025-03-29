@@ -1,5 +1,5 @@
 func000000000000c204:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
@@ -10,7 +10,7 @@ func000000000000c204:
 	ret
 
 func0000000000004202:
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 26

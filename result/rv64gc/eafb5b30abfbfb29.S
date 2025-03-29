@@ -26,7 +26,7 @@ func0000000000000008:
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 

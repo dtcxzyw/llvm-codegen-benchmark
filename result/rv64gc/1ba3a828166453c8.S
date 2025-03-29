@@ -15,7 +15,7 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a1, a0, 255
+	zext.b	a1, a0
 	beqz	a1, .LBB1_2
 	addi	a1, a0, -1
 	not	a0, a0

@@ -1,5 +1,5 @@
 func0000000000000005:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -45
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
@@ -10,7 +10,7 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -77
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
@@ -20,7 +20,7 @@ func0000000000000007:
 	ret
 
 func0000000000000013:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	sltiu	a2, a2, 10
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -32,7 +32,7 @@ func0000000000000013:
 .LCPI3_0:
 	.quad	-4658895280553007687
 func0000000000000004:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	lui	a3, %hi(.LCPI3_0)
 	addi	a2, a2, -5
 	ld	a3, %lo(.LCPI3_0)(a3)

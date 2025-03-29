@@ -43,7 +43,7 @@ func0000000000000054:
 
 func0000000000000310:
 	slli	a1, a0, 48
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	srli	a1, a1, 48
 	snez	a0, a0
 	sltiu	a1, a1, 768

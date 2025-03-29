@@ -8,7 +8,7 @@ func0000000000000181:
 
 func0000000000000028:
 	sext.w	a1, a1
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	addi	a2, a2, -18
 	sltiu	a1, a1, 2
 	seqz	a2, a2

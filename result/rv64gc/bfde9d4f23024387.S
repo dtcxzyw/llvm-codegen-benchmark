@@ -1,6 +1,6 @@
 func000000000000003f:
-	andi	a1, a1, 255
-	andi	a0, a0, 255
+	zext.b	a1, a1
+	zext.b	a0, a0
 	slli	a2, a1, 24
 	slli	a1, a1, 32
 	sub	a1, a1, a2

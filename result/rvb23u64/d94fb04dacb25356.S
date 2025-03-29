@@ -1,5 +1,5 @@
 func0000000000000001:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 1
 	addi	a1, a1, -9
 	czero.eqz	a2, a2, a1
@@ -8,7 +8,7 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, -1
 	addi	a1, a1, -42
 	czero.eqz	a2, a2, a1
@@ -17,7 +17,7 @@ func0000000000000021:
 	ret
 
 func0000000000000041:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 1
 	addi	a1, a1, -93
 	czero.eqz	a2, a2, a1
@@ -26,7 +26,7 @@ func0000000000000041:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, -87
 	sltiu	a1, a1, 10
 	czero.nez	a2, a2, a1
@@ -35,7 +35,7 @@ func0000000000000024:
 	ret
 
 func0000000000000048:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 1
 	sltiu	a1, a1, 64
 	czero.eqz	a2, a2, a1
@@ -44,7 +44,7 @@ func0000000000000048:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 2
 	addi	a1, a1, -47
 	czero.eqz	a0, a0, a1
@@ -53,7 +53,7 @@ func000000000000000c:
 	ret
 
 func0000000000000044:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 1
 	sltiu	a1, a1, 254
 	czero.nez	a2, a2, a1
@@ -62,7 +62,7 @@ func0000000000000044:
 	ret
 
 func0000000000000061:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a2, a2, 1
 	addi	a1, a1, -10
 	czero.eqz	a2, a2, a1

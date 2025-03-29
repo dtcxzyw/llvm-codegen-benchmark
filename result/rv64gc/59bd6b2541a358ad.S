@@ -1,5 +1,5 @@
 func0000000000000208:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -14,13 +14,13 @@ func0000000000000104:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	mul	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	sltu	a0, a0, a3
 	ret
 
 func0000000000000201:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	neg	a1, a1
@@ -29,7 +29,7 @@ func0000000000000201:
 	ret
 
 func0000000000000206:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -37,7 +37,7 @@ func0000000000000206:
 	ret
 
 func00000000000002a6:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -45,7 +45,7 @@ func00000000000002a6:
 	ret
 
 func00000000000002a4:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -53,7 +53,7 @@ func00000000000002a4:
 	ret
 
 func0000000000000308:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -62,7 +62,7 @@ func0000000000000308:
 	ret
 
 func0000000000000301:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -77,13 +77,13 @@ func0000000000000348:
 	lui	a3, %hi(.LCPI8_0)
 	ld	a3, %lo(.LCPI8_0)(a3)
 	mul	a0, a0, a2
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	add	a0, a0, a1
 	sltu	a0, a3, a0
 	ret
 
 func0000000000000268:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 10
 	mul	a0, a0, a2
 	lui	a2, 244

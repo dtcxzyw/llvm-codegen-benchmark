@@ -1,6 +1,6 @@
 func0000000000000001:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 9
 	addi	a1, a1, -120
 	slli	a2, a2, 32
@@ -13,7 +13,7 @@ func0000000000000001:
 
 func0000000000000014:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 4
 	sltiu	a1, a1, 240
 	sub	a2, a2, a1
@@ -25,7 +25,7 @@ func0000000000000014:
 
 func0000000000000004:
 	andi	a0, a0, 1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	li	a2, 8
 	sltiu	a1, a1, 29
 	czero.nez	a1, a2, a1

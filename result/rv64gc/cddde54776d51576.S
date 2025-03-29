@@ -1,6 +1,6 @@
 func000000000000007f:
 	addi	a2, a2, 3
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	mulw	a1, a1, a2
 	add	a0, a0, a1
 	ret

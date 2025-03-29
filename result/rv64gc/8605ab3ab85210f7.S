@@ -9,7 +9,7 @@ func000000000000000f:
 
 func000000000000000e:
 	slli	a2, a2, 63
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	srli	a2, a2, 57
 	or	a0, a0, a1
 	or	a0, a0, a2

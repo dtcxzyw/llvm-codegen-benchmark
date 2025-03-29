@@ -8,7 +8,7 @@ func0000000000000000:
 
 func0000000000000005:
 	andi	a1, a1, 120
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sub	a0, a1, a0
 	addi	a0, a0, -8
 	ret

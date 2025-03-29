@@ -106,7 +106,7 @@ func0000000000000281:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
 	addi	a1, a1, -1
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

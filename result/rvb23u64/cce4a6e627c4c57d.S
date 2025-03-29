@@ -95,7 +95,7 @@ func000000000000014c:
 
 func0000000000000294:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	sltiu	a1, a1, 17
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
@@ -159,7 +159,7 @@ func0000000000000281:
 
 func00000000000000c1:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	seqz	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1

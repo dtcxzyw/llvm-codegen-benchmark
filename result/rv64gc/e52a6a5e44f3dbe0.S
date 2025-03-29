@@ -5,13 +5,13 @@ func0000000000000005:
 	ret
 .LBB0_2:
 	slli	a2, a2, 8
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000001f:
 	slli	a2, a2, 8
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slli	a0, a0, 63
 	or	a1, a1, a2
 	srai	a0, a0, 63
@@ -20,7 +20,7 @@ func000000000000001f:
 
 func000000000000000d:
 	slli	a2, a2, 8
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	or	a0, a0, a2
 	ret
 

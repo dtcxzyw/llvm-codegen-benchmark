@@ -21,7 +21,7 @@ func000000000000018c:
 	beqz	a2, .LBB2_2
 	mv	a1, a0
 .LBB2_2:
-	andi	a0, a1, 255
+	zext.b	a0, a1
 	snez	a0, a0
 	ret
 

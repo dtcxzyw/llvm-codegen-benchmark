@@ -4,7 +4,7 @@ func0000000000000008:
 	and	a2, a2, a3
 	and	a1, a1, a3
 	mul	a1, a1, a2
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	mulw	a0, a1, a0
 	ret
 

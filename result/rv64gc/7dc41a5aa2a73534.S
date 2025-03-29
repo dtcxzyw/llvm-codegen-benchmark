@@ -1,5 +1,5 @@
 func00000000000002b4:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a2, a2, a1
 	sraiw	a1, a2, 31
 	xor	a2, a2, a1
@@ -11,7 +11,7 @@ func00000000000002b4:
 	ret
 
 func00000000000002b8:
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	subw	a2, a2, a1
 	sraiw	a1, a2, 31
 	xor	a2, a2, a1

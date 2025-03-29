@@ -24,7 +24,7 @@ func000000000000006a:
 
 func0000000000000021:
 	sext.w	a0, a0
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	addi	a0, a0, -69
 	li	a2, -3
 	czero.nez	a0, a2, a0

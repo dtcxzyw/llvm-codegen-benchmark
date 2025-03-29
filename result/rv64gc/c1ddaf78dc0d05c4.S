@@ -1,5 +1,5 @@
 func0000000000000042:
-	andi	a2, a0, 255
+	zext.b	a2, a0
 	sext.w	a1, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56

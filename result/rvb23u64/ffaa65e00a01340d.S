@@ -39,7 +39,7 @@ func000000000000000c:
 func0000000000000015:
 	xori	a1, a1, 255
 	sext.w	a1, a1
-	andi	a0, a0, 255
+	zext.b	a0, a0
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

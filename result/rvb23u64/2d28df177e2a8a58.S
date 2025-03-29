@@ -15,7 +15,7 @@ func000000000000002c:
 
 func000000000000018c:
 	zext.h	a0, a0
-	andi	a2, a2, 255
+	zext.b	a2, a2
 	snez	a2, a2
 	addi	a0, a0, -629
 	and	a1, a1, a2

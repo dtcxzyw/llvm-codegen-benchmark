@@ -1,5 +1,5 @@
 func0000000000000013:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 3
 	li	a2, 8
 	sltiu	a1, a1, 7
@@ -9,7 +9,7 @@ func0000000000000013:
 	ret
 
 func0000000000000007:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 8
 	li	a2, 512
 	czero.eqz	a0, a0, a1
@@ -18,7 +18,7 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 255
+	zext.b	a1, a1
 	slliw	a0, a0, 3
 	li	a2, -8
 	addi	a1, a1, -127
