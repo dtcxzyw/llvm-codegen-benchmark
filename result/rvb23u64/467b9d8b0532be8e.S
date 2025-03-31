@@ -25,11 +25,12 @@ func000000000000000a:
 
 func0000000000000008:
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, 496
-	sraiw	a1, a0, 31
+	slli	a1, a0, 3
+	addi	a1, a1, 496
+	sraiw	a1, a1, 31
 	srliw	a1, a1, 23
-	add	a0, a0, a1
+	sh3add	a0, a0, a1
+	addi	a0, a0, 496
 	sraiw	a0, a0, 9
 	ret
 

@@ -9,11 +9,12 @@ func0000000000000029:
 	ret
 
 func0000000000000001:
-	slli	a0, a0, 3
-	addi	a0, a0, 39
-	sraiw	a1, a0, 31
+	slli	a1, a0, 3
+	addi	a1, a1, 39
+	sraiw	a1, a1, 31
 	srliw	a1, a1, 29
-	addw	a0, a0, a1
+	sh3add	a0, a0, a1
+	addiw	a0, a0, 39
 	andi	a0, a0, -8
 	ret
 
