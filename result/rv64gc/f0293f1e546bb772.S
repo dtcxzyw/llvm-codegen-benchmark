@@ -1,14 +1,15 @@
 func0000000000000000:
-	li	a1, -1
-	beq	a0, a1, .LBB0_2
 	not	a0, a0
-	lui	a1, 349525
-	lui	a2, 209715
-	lui	a3, 61681
-	srli	a4, a0, 1
-	addiw	a1, a1, 1365
-	addiw	a2, a2, 819
-	addiw	a3, a3, -241
+	beqz	a0, .LBB0_2
+	srli	a1, a0, 1
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	addiw	a2, a3, 819
+	addiw	a3, a4, -241
+	srli	a4, a0, 2
 	or	a0, a0, a4
 	slli	a4, a1, 32
 	add	a1, a1, a4
@@ -16,8 +17,6 @@ func0000000000000000:
 	add	a2, a2, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	srli	a4, a0, 2
-	or	a0, a0, a4
 	srli	a4, a0, 4
 	or	a0, a0, a4
 	srli	a4, a0, 8
