@@ -23,11 +23,9 @@ func0000000000000065:
 	ret
 
 func0000000000000040:
-	sext.w	a3, a2
 	addw	a0, a0, a1
-	sltu	a1, a0, a3
-	czero.nez	a1, a2, a1
-	subw	a0, a0, a1
+	subw	a1, a0, a2
+	minu	a0, a0, a1
 	ret
 
 func0000000000000060:
@@ -47,10 +45,8 @@ func0000000000000064:
 	ret
 
 func0000000000000042:
-	sext.w	a3, a2
 	addw	a0, a0, a1
-	sltu	a1, a0, a3
-	czero.nez	a1, a2, a1
-	subw	a0, a0, a1
+	subw	a1, a0, a2
+	minu	a0, a0, a1
 	ret
 

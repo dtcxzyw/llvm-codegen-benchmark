@@ -1,7 +1,6 @@
 func0000000000000012:
-	sltu	a2, a0, a1
-	czero.nez	a1, a1, a2
-	sub	a0, a0, a1
+	sub	a1, a0, a1
+	minu	a0, a0, a1
 	ret
 
 func0000000000000019:
@@ -40,15 +39,13 @@ func0000000000000004:
 	ret
 
 func0000000000000011:
-	sltu	a2, a0, a1
-	czero.nez	a1, a1, a2
-	sub	a0, a0, a1
+	sub	a1, a0, a1
+	minu	a0, a0, a1
 	ret
 
 func0000000000000010:
-	sltu	a2, a0, a1
-	czero.nez	a1, a1, a2
-	sub	a0, a0, a1
+	sub	a1, a0, a1
+	minu	a0, a0, a1
 	ret
 
 func0000000000000018:
