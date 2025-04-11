@@ -15,9 +15,7 @@ func000000000000000c:
 
 func0000000000000071:
 	sext.w	a1, a0
-	sltiu	a1, a1, 32
-	li	a2, -32
-	czero.nez	a1, a2, a1
-	addw	a0, a0, a1
+	addiw	a0, a0, -32
+	minu	a0, a0, a1
 	ret
 

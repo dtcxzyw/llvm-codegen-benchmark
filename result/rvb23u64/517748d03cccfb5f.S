@@ -13,14 +13,11 @@ func0000000000000141:
 
 func0000000000000101:
 	sext.w	a1, a0
-	lui	a2, 244141
-	addiw	a2, a2, -1537
-	sltu	a1, a2, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
-	czero.eqz	a1, a2, a1
+	addw	a0, a0, a2
 	lui	a2, 429094
-	add	a0, a0, a1
+	minu	a0, a0, a1
 	lui	a1, 1
 	addi	a2, a2, 313
 	mul	a0, a0, a2

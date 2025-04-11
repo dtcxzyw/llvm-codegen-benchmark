@@ -1,11 +1,10 @@
 func0000000000000038:
 	andi	a0, a0, 1
-	srliw	a3, a2, 7
+	sext.w	a3, a2
 	lui	a4, 1048555
-	sltiu	a3, a3, 675
 	addi	a4, a4, -384
-	czero.nez	a3, a4, a3
-	addw	a2, a2, a3
+	addw	a2, a2, a4
+	minu	a2, a2, a3
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

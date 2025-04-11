@@ -35,15 +35,12 @@ func000000000000000a:
 
 func0000000000000008:
 	sext.w	a1, a0
-	lui	a2, 244141
-	addiw	a2, a2, -1537
-	sltu	a1, a2, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
-	czero.eqz	a1, a2, a1
+	addw	a0, a0, a2
 	lui	a2, 274878
 	addiw	a2, a2, -381
-	add	a0, a0, a1
+	minu	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2
 	lui	a2, 244

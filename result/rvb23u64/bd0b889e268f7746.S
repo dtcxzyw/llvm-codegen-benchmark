@@ -32,13 +32,10 @@ func00000000000000a6:
 
 func00000000000001b8:
 	add	a0, a0, a1
-	lui	a1, 16
-	lui	a2, 1048560
-	addiw	a1, a1, -16
-	sltu	a1, a1, a0
-	addiw	a2, a2, 15
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	lui	a1, 1048560
+	addiw	a1, a1, 15
+	add	a1, a1, a0
+	minu	a0, a1, a0
 	ret
 
 func000000000000008a:
@@ -52,19 +49,14 @@ func000000000000008a:
 	add	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.quad	-8446744073709551617
 func0000000000000028:
 	add	a0, a0, a1
-	lui	a1, %hi(.LCPI6_0)
-	lui	a2, 960284
-	ld	a1, %lo(.LCPI6_0)(a1)
-	addi	a2, a2, -1545
-	slli.uw	a2, a2, 12
-	addi	a2, a2, -317
-	sltu	a1, a1, a0
-	slli	a2, a2, 19
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	lui	a1, 960284
+	addi	a1, a1, -1545
+	slli.uw	a1, a1, 12
+	addi	a1, a1, -317
+	slli	a1, a1, 19
+	add	a1, a1, a0
+	minu	a0, a1, a0
 	ret
 

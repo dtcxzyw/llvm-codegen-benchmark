@@ -32,18 +32,14 @@ func000000000000002a:
 
 func0000000000000004:
 	sext.w	a1, a0
-	sltiu	a1, a1, 128
-	li	a2, -128
-	czero.nez	a1, a2, a1
-	addw	a0, a0, a1
+	addiw	a0, a0, -128
+	minu	a0, a1, a0
 	ret
 
 func0000000000000024:
 	sext.w	a1, a0
-	sltiu	a1, a1, 2
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	addw	a0, a0, a1
+	addiw	a0, a0, -2
+	minu	a0, a1, a0
 	ret
 
 func0000000000000064:

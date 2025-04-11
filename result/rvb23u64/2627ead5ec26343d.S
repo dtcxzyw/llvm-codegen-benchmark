@@ -1,8 +1,6 @@
 func0000000000000034:
-	sltiu	a1, a0, 3
-	li	a2, -3
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	addi	a1, a0, -3
+	minu	a0, a0, a1
 	ret
 
 func0000000000000066:
@@ -28,10 +26,8 @@ func0000000000000026:
 	ret
 
 func0000000000000004:
-	sltiu	a1, a0, 2
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	addi	a1, a0, -2
+	minu	a0, a0, a1
 	ret
 
 func0000000000000046:
@@ -41,18 +37,13 @@ func0000000000000046:
 	add	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.quad	-8446744073709551616
 func0000000000000024:
-	lui	a1, %hi(.LCPI6_0)
-	lui	a2, 960284
-	ld	a1, %lo(.LCPI6_0)(a1)
-	addi	a2, a2, -1545
-	slli.uw	a2, a2, 12
-	addi	a2, a2, -317
-	sltu	a1, a0, a1
-	slli	a2, a2, 19
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	lui	a1, 960284
+	addi	a1, a1, -1545
+	slli.uw	a1, a1, 12
+	addi	a1, a1, -317
+	slli	a1, a1, 19
+	add	a1, a1, a0
+	minu	a0, a0, a1
 	ret
 

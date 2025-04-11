@@ -56,10 +56,8 @@ func000000000000054a:
 
 func0000000000000701:
 	sext.w	a1, a0
-	sltiu	a1, a1, 32
-	li	a2, -32
-	czero.nez	a1, a2, a1
-	addw	a0, a0, a1
+	addiw	a0, a0, -32
+	minu	a0, a0, a1
 	seqz	a0, a0
 	ret
 
@@ -112,13 +110,10 @@ func0000000000000541:
 
 func0000000000000101:
 	sext.w	a1, a0
-	lui	a2, 244141
-	addiw	a2, a2, -1537
-	sltu	a1, a2, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
-	czero.eqz	a1, a2, a1
-	addw	a0, a0, a1
+	addw	a0, a0, a2
+	minu	a0, a0, a1
 	seqz	a0, a0
 	ret
 

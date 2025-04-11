@@ -1,11 +1,9 @@
 func0000000000000038:
 	subw	a0, a0, a1
 	lui	a1, 1048555
-	srliw	a2, a0, 7
-	sltiu	a2, a2, 675
 	addi	a1, a1, -384
-	czero.nez	a1, a1, a2
-	addw	a0, a0, a1
+	addw	a1, a1, a0
+	minu	a0, a1, a0
 	ret
 
 func0000000000000026:

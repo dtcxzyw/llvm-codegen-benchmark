@@ -1,12 +1,9 @@
 func00000000000001b8:
 	zext.b	a1, a1
-	lui	a2, 16
 	add	a0, a0, a1
 	lui	a1, 1048560
-	addiw	a2, a2, -16
-	sltu	a2, a2, a0
 	addiw	a1, a1, 15
-	czero.eqz	a1, a1, a2
-	add	a0, a0, a1
+	add	a1, a1, a0
+	minu	a0, a1, a0
 	ret
 

@@ -1,8 +1,6 @@
 func0000000000000104:
-	sltiu	a2, a1, 232
-	li	a3, -232
-	czero.nez	a2, a3, a2
-	add	a1, a1, a2
+	addi	a2, a1, -232
+	minu	a1, a2, a1
 	sltu	a0, a1, a0
 	ret
 

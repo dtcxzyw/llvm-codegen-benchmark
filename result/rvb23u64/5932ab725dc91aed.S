@@ -1,15 +1,11 @@
 func0000000000000028:
-	sltiu	a1, a0, 34
-	li	a2, -34
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	addi	a1, a0, -34
+	minu	a0, a1, a0
 	ret
 
 func0000000000000008:
-	sltiu	a1, a0, 232
-	li	a2, -232
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	addi	a1, a0, -232
+	minu	a0, a1, a0
 	ret
 
 func0000000000000026:

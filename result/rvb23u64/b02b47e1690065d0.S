@@ -8,10 +8,9 @@ func000000000000002a:
 
 func0000000000000008:
 	zext.b	a1, a0
-	sltiu	a1, a1, 16
-	li	a2, -16
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
+	addi	a0, a0, -16
+	zext.b	a0, a0
+	minu	a0, a0, a1
 	ret
 
 func0000000000000078:
