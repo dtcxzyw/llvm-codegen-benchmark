@@ -73,8 +73,7 @@ func0000000000000011:
 	ret
 
 func00000000000000ee:
-	fcmp	s1, s1
-	fccmp	s0, s0, #1, vc
+	fcmp	s0, s1
 	cset	w0, vc
 	ret
 

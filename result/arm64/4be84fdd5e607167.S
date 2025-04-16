@@ -27,9 +27,7 @@ func0000000000000077:
 
 func0000000000000011:
 	fsub	s1, s1, s2
-	fcmp	s1, s1
-	cset	w8, vs
-	fcmp	s0, s0
-	csinc	w0, w8, wzr, vc
+	fcmp	s1, s0
+	cset	w0, vs
 	ret
 

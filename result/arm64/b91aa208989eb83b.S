@@ -51,10 +51,8 @@ func0000000000000022:
 	ret
 
 func0000000000000011:
-	fcmp	d0, d0
+	fcmp	d0, d1
 	cset	w8, vs
-	fcmp	d1, d1
-	csinc	w8, w8, wzr, vc
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

@@ -138,12 +138,9 @@ func000000000000077e:
 	ret
 
 func0000000000000eee:
-	fcmp	s2, s2
-	fccmp	s1, s1, #1, vc
-	cset	w8, vc
 	fcmp	s0, s0
-	cset	w9, vc
-	and	w0, w8, w9
+	fccmp	s1, s2, #1, vc
+	cset	w0, vc
 	ret
 
 func00000000000008b8:

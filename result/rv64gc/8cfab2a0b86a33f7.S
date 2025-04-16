@@ -17,8 +17,8 @@ func0000000000000088:
 
 func00000000000000ee:
 	fmv.w.x	fa5, a0
-	feq.s	a0, fa5, fa5
-	feq.s	a1, fa0, fa0
+	feq.s	a0, fa0, fa0
+	feq.s	a1, fa5, fa5
 	and	a0, a0, a1
 	ret
 

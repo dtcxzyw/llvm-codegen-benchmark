@@ -13,9 +13,8 @@ func0000000000000088:
 	ret
 
 func00000000000000ee:
-	fcmp	s0, s0
-	fmov	s0, w0
-	fccmp	s0, s0, #1, vc
+	fmov	s1, w0
+	fcmp	s1, s0
 	cset	w0, vc
 	ret
 

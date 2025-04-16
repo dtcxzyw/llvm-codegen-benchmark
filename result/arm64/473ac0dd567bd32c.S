@@ -81,10 +81,8 @@ func0000000000000055:
 	ret
 
 func0000000000000011:
-	fcmp	s0, s0
-	cset	w8, vs
-	fcmp	s1, s1
-	csinc	w0, w8, wzr, vc
+	fcmp	s0, s1
+	cset	w0, vs
 	ret
 
 func0000000000000037:

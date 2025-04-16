@@ -146,10 +146,8 @@ func0000000000000066:
 	ret
 
 func00000000000000ee:
-	fcmp	d0, d0
+	fcmp	d0, d1
 	cset	w8, vc
-	fcmp	d1, d1
-	csel	w8, wzr, w8, vs
 	and	w0, w8, w0
 	ret
 

@@ -14,9 +14,7 @@ func0000000000000022:
 func0000000000000011:
 	fmov	d2, #0.50000000
 	fmul	d1, d1, d2
-	fcmp	d1, d1
-	cset	w8, vs
-	fcmp	d0, d0
-	csinc	w0, w8, wzr, vc
+	fcmp	d1, d0
+	cset	w0, vs
 	ret
 

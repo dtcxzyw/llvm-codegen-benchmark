@@ -38,10 +38,8 @@ func0000000000000222:
 	ret
 
 func0000000000000111:
-	fcmp	d1, d1
+	fcmp	d1, d2
 	cset	w8, vs
-	fcmp	d2, d2
-	csinc	w8, w8, wzr, vc
 	fcmp	d0, d0
 	csinc	w0, w8, wzr, vc
 	ret

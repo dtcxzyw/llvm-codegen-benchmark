@@ -62,8 +62,7 @@ func00000000000000aa:
 
 func00000000000000ee:
 	fadd	s1, s1, s2
-	fcmp	s1, s1
-	fccmp	s0, s0, #1, vc
+	fcmp	s0, s1
 	cset	w0, vc
 	ret
 
