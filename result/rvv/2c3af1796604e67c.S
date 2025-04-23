@@ -4,8 +4,8 @@ func0000000000000003:
 	lui	a0, 4080
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000007:
@@ -14,8 +14,8 @@ func0000000000000007:
 	lui	a0, 6
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func000000000000001f:
@@ -24,8 +24,8 @@ func000000000000001f:
 	li	a0, 896
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000006:
@@ -44,8 +44,8 @@ func0000000000000017:
 	lui	a0, 4080
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func000000000000001e:

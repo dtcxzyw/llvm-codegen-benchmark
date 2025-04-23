@@ -4,9 +4,11 @@ func00000000000001b8:
 	lui	a0, 8
 	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmsltu.vv	v0, v8, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsltu.vv	v0, v8, v12
 	ret
 
 func00000000000001a4:
@@ -15,9 +17,11 @@ func00000000000001a4:
 	li	a0, 15
 	slli	a0, a0, 8
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmsltu.vv	v0, v10, v8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsltu.vv	v0, v12, v8
 	ret
 
 func00000000000001ea:
@@ -25,9 +29,11 @@ func00000000000001ea:
 	vsll.vi	v12, v12, 6
 	li	a0, 1984
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmslt.vv	v0, v8, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmslt.vv	v0, v8, v12
 	ret
 
 func00000000000001e6:
@@ -35,9 +41,11 @@ func00000000000001e6:
 	vsll.vi	v12, v12, 6
 	li	a0, 1984
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmslt.vv	v0, v10, v8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmslt.vv	v0, v12, v8
 	ret
 
 func00000000000001a6:
@@ -46,9 +54,11 @@ func00000000000001a6:
 	lui	a0, 4
 	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmslt.vv	v0, v10, v8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmslt.vv	v0, v12, v8
 	ret
 
 func00000000000001f8:
@@ -57,8 +67,10 @@ func00000000000001f8:
 	lui	a0, 4
 	addi	a0, a0, -128
 	vand.vx	v12, v12, a0
-	vzext.vf4	v14, v10
-	vor.vv	v10, v12, v14
-	vmsltu.vv	v0, v8, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v12, v12, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsltu.vv	v0, v8, v12
 	ret
 

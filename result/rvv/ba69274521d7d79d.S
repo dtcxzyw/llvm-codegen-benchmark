@@ -3,8 +3,8 @@ func000000000000003f:
 	vwsll.vi	v12, v11, 5
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vor.vv	v8, v8, v12
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000037:
@@ -30,8 +30,8 @@ func000000000000001f:
 	vwsll.vi	v12, v11, 1
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vor.vv	v8, v12, v8
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000010:

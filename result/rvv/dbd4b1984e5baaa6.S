@@ -1,27 +1,29 @@
 .LCPI0_0:
 	.quad	6148914691236517206
 func000000000000000e:
-	li	a0, 32
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a0
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
-	vmulhu.vx	v8, v8, a1
+	vsll.vx	v8, v8, a1
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmulhu.vx	v8, v8, a0
 	ret
 
 .LCPI1_0:
 	.quad	-2972493582642298179
 func000000000000000a:
-	li	a0, 32
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a0
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
-	vmulhu.vx	v8, v8, a1
+	vsll.vx	v8, v8, a1
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 23
 	ret
 

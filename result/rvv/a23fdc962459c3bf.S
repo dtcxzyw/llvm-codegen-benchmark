@@ -1,10 +1,10 @@
 func0000000000000007:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v14, v12
 	lui	a0, 1044480
-	vor.vv	v10, v10, v14
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v10, v10, v12
 	addiw	a1, a0, 255
 	addiw	a0, a0, 511
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8

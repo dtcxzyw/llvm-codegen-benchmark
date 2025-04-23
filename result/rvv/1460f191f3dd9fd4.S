@@ -1,17 +1,17 @@
 func0000000000000008:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
 	li	a0, 205
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 11
 	ret
 
 func000000000000000e:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
 	li	a0, 205
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 11
 	ret
@@ -21,19 +21,19 @@ func000000000000000e:
 func0000000000000018:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vor.vv	v8, v8, v12
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 31
 	ret
 
 func000000000000001e:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, 3
-	vor.vv	v8, v8, v12
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	addiw	a0, a0, -1802
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 20
 	ret

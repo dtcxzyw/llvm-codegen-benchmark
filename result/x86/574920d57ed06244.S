@@ -1,8 +1,7 @@
 func0000000000000003:
-	movzbl	%sil, %ecx
+	movzbl	%sil, %eax
 	andl	$1, %edi
-	leal	(%rdi,%rdi), %eax
-	orl	%ecx, %eax
+	leal	(%rax,%rdi,2), %eax
 	retq
 
 func0000000000000001:

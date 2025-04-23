@@ -3,8 +3,9 @@ func000000000000000f:
 	vadd.vv	v12, v12, v12
 	vand.vi	v12, v12, -4
 	vor.vv	v8, v12, v8
-	vzext.vf8	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001f:
@@ -13,8 +14,9 @@ func000000000000001f:
 	lui	a0, 15
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf8	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001c:
@@ -53,8 +55,9 @@ func000000000000001b:
 	li	a0, 512
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf8	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001e:
@@ -74,7 +77,8 @@ func0000000000000003:
 	addiw	a0, a0, -256
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
-	vzext.vf8	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vzext.vf4	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 

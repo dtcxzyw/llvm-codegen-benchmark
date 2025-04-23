@@ -4,8 +4,9 @@ func000000000000001b:
 	lui	a0, 15
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func0000000000000003:
@@ -14,8 +15,9 @@ func0000000000000003:
 	lui	a0, 126976
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001f:
@@ -24,8 +26,9 @@ func000000000000001f:
 	lui	a0, 15
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func0000000000000007:
@@ -34,8 +37,9 @@ func0000000000000007:
 	li	a0, 1920
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000000b:
@@ -45,8 +49,9 @@ func000000000000000b:
 	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000001c:
@@ -86,7 +91,8 @@ func000000000000000f:
 	lui	a0, 15
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 

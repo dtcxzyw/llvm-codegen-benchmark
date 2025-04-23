@@ -3,9 +3,10 @@ func00000000000001a4:
 	vsll.vi	v12, v12, 16
 	lui	a0, 240
 	vand.vx	v12, v12, a0
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
-	vmsltu.vv	v0, v10, v8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v12, v12, v10
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsltu.vv	v0, v12, v8
 	ret
 
 func00000000000001a6:
@@ -13,8 +14,9 @@ func00000000000001a6:
 	vsll.vi	v12, v12, 16
 	lui	a0, 240
 	vand.vx	v12, v12, a0
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
-	vmslt.vv	v0, v10, v8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v12, v12, v10
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmslt.vv	v0, v12, v8
 	ret
 

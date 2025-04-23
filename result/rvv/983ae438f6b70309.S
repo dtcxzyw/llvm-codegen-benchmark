@@ -7,9 +7,11 @@ func0000000000000003:
 
 func0000000000000001:
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vzext.vf2	v10, v8
+	vmv1r.v	v10, v8
 	li	a0, 256
-	vor.vx	v8, v10, a0
+	vmv.v.x	v8, a0
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000000:

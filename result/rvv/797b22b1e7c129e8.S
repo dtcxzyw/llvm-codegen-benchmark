@@ -1,8 +1,8 @@
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v10, v8
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v10, v8
 	lui	a0, 8
-	vor.vx	v8, v10, a0
+	vwaddu.vx	v8, v10, a0
 	ret
 
 func0000000000000000:

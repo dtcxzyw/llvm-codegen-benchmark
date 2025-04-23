@@ -1,8 +1,9 @@
 func0000000000000020:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v14, v12
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
 	lui	a0, 553506
-	vor.vv	v10, v10, v14
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	addi	a0, a0, -1766
 	vadd.vx	v8, v8, a0
@@ -10,10 +11,11 @@ func0000000000000020:
 	ret
 
 func000000000000002e:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v14, v12
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
 	lui	a0, 1034754
-	vor.vv	v10, v10, v14
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	addi	a0, a0, 1024
 	vadd.vx	v8, v8, a0
@@ -21,10 +23,11 @@ func000000000000002e:
 	ret
 
 func000000000000003e:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v14, v12
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
 	lui	a0, 32
-	vor.vv	v10, v10, v14
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	addi	a0, a0, 2
 	vadd.vx	v8, v8, a0

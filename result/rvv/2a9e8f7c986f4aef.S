@@ -5,7 +5,8 @@ func000000000000000b:
 	lui	a0, 1048560
 	addi	a0, a0, 255
 	vand.vx	v9, v9, a0
-	vzext.vf2	v10, v8
-	vor.vv	v8, v9, v10
+	vsetvli	zero, zero, e16, mf2, ta, ma
+	vwaddu.wv	v9, v9, v8
+	vmv1r.v	v8, v9
 	ret
 
