@@ -1,89 +1,205 @@
 func0000000000000181:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	sext.w	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	neg	a0, a0
-	xor	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sext.w	a0, a0
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	neg	a1, a1
+	xor	a0, a0, a1
 	seqz	a0, a0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 
 func0000000000000184:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	addw	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	addw	a0, a0, a1
 	sltiu	a0, a0, 8
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 
 func00000000000001e1:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	or	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 
 func00000000000001f8:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	addw	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	addw	a0, a0, a1
 	sltiu	a0, a0, 65
 	xori	a0, a0, 1
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 
 func0000000000000188:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	addw	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	addw	a0, a0, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 
 func000000000000018c:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	sext.w	s0, a0
-	mv	a0, a1
-	call	__popcountdi2
-	neg	a0, a0
-	xor	a0, a0, s0
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	addiw	a2, a2, 1365
+	addiw	a3, a3, 819
+	addiw	a4, a4, -241
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sext.w	a0, a0
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	neg	a1, a1
+	xor	a0, a0, a1
 	snez	a0, a0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
 	ret
 

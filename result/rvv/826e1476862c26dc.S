@@ -3,9 +3,7 @@ func0000000000000019:
 	vnsrl.wi	v12, v10, 0
 	vsll.vi	v10, v12, 6
 	vnsrl.wi	v11, v8, 0
-	vor.vv	v10, v10, v11
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v10
+	vwadd.vv	v8, v10, v11
 	ret
 
 func000000000000007d:
@@ -13,9 +11,7 @@ func000000000000007d:
 	vnsrl.wi	v12, v10, 0
 	vsll.vi	v10, v12, 6
 	vnsrl.wi	v11, v8, 0
-	vor.vv	v10, v10, v11
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v10
+	vwadd.vv	v8, v10, v11
 	ret
 
 func0000000000000018:

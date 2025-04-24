@@ -25,10 +25,9 @@ func000000000000003c:
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 8
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vor.vv	v12, v11, v10
+	vwaddu.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v12
-	vmul.vv	v8, v8, v10
+	vmul.vv	v8, v8, v12
 	ret
 
 func000000000000002b:

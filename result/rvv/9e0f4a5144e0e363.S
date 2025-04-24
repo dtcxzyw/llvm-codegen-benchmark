@@ -8,10 +8,8 @@ func0000000000000013:
 	addi	a0, a0, -139
 	vmulhu.vx	v8, v8, a0
 	li	a0, 17
-	vsrl.vi	v8, v8, 8
+	vsrl.vi	v10, v8, 8
 	slli	a0, a0, 8
-	vor.vx	v10, v8, a0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v8, v10
+	vwaddu.vx	v8, v10, a0
 	ret
 

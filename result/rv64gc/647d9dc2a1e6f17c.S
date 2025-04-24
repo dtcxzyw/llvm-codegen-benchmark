@@ -1,54 +1,94 @@
 func000000000000000f:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	srli	a0, a1, 1
-	or	a0, a0, a1
-	srli	a1, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 4
-	or	a0, a0, a1
-	srli	a1, a0, 8
-	or	a0, a0, a1
-	srli	a1, a0, 16
-	or	a0, a0, a1
-	srli	a1, a0, 32
-	or	a0, a0, a1
-	not	a0, a0
-	call	__popcountdi2
-	xori	a0, a0, 63
-	slli	a0, a0, 3
-	add	a0, a0, s0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	slli	a1, a1, 3
+	xori	a1, a1, 504
+	add	a0, a0, a1
 	ret
 
 func0000000000000007:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
-	srli	a0, a1, 1
-	or	a0, a0, a1
-	srli	a1, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 4
-	or	a0, a0, a1
-	srli	a1, a0, 8
-	or	a0, a0, a1
-	srli	a1, a0, 16
-	or	a0, a0, a1
-	srli	a1, a0, 32
-	or	a0, a0, a1
-	not	a0, a0
-	call	__popcountdi2
-	xori	a0, a0, 63
-	slli	a0, a0, 3
-	add	a0, a0, s0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
+	slli	a1, a1, 3
+	xori	a1, a1, 504
+	add	a0, a0, a1
 	ret
 

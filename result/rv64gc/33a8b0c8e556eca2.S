@@ -1,97 +1,158 @@
 func0000000000000061:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
 	beqz	a1, .LBB0_2
-	srli	a0, a1, 1
-	or	a0, a0, a1
-	srli	a1, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 4
-	or	a0, a0, a1
-	srli	a1, a0, 8
-	or	a0, a0, a1
-	srli	a1, a0, 16
-	or	a0, a0, a1
-	srli	a1, a0, 32
-	or	a0, a0, a1
-	not	a0, a0
-	call	__popcountdi2
-	j	.LBB0_3
-.LBB0_2:
-	li	a0, 64
-.LBB0_3:
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
 	sext.w	a0, a0
-	sext.w	s0, s0
-	xor	a0, a0, s0
+	xor	a0, a0, a1
 	seqz	a0, a0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
+	ret
+.LBB0_2:
+	li	a1, 64
+	sext.w	a0, a0
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 
 func0000000000000068:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
 	beqz	a1, .LBB1_2
-	srli	a0, a1, 1
-	or	a0, a0, a1
-	srli	a1, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 4
-	or	a0, a0, a1
-	srli	a1, a0, 8
-	or	a0, a0, a1
-	srli	a1, a0, 16
-	or	a0, a0, a1
-	srli	a1, a0, 32
-	or	a0, a0, a1
-	not	a0, a0
-	call	__popcountdi2
-	j	.LBB1_3
-.LBB1_2:
-	li	a0, 64
-.LBB1_3:
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
 	sext.w	a0, a0
-	sext.w	s0, s0
-	sltu	a0, a0, s0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
+	sltu	a0, a1, a0
+	ret
+.LBB1_2:
+	li	a1, 64
+	sext.w	a0, a0
+	sltu	a0, a1, a0
 	ret
 
 func000000000000006a:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	sd	s0, 0(sp)
-	mv	s0, a0
 	beqz	a1, .LBB2_2
-	srli	a0, a1, 1
-	or	a0, a0, a1
-	srli	a1, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 4
-	or	a0, a0, a1
-	srli	a1, a0, 8
-	or	a0, a0, a1
-	srli	a1, a0, 16
-	or	a0, a0, a1
-	srli	a1, a0, 32
-	or	a0, a0, a1
-	not	a0, a0
-	call	__popcountdi2
-	j	.LBB2_3
-.LBB2_2:
-	li	a0, 64
-.LBB2_3:
+	srli	a2, a1, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a1, a1, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a1, 2
+	or	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a1, 4
+	or	a1, a1, a5
+	srli	a5, a1, 8
+	or	a1, a1, a5
+	srli	a5, a1, 16
+	or	a1, a1, a5
+	srli	a5, a1, 32
+	or	a1, a1, a5
+	not	a1, a1
+	srli	a5, a1, 1
+	and	a2, a2, a5
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a1, a1, a2
+	srli	a2, a1, 4
+	add	a1, a1, a2
+	slli	a2, a3, 32
+	and	a1, a1, a4
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	srli	a1, a1, 56
 	sext.w	a0, a0
-	sext.w	s0, s0
-	slt	a0, a0, s0
-	ld	ra, 8(sp)
-	ld	s0, 0(sp)
-	addi	sp, sp, 16
+	slt	a0, a1, a0
+	ret
+.LBB2_2:
+	li	a1, 64
+	sext.w	a0, a0
+	slt	a0, a1, a0
 	ret
 

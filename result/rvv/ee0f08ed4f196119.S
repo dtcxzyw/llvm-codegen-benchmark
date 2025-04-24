@@ -1,25 +1,24 @@
 func000000000000000f:
+	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vi	v12, v10, 1
+	vwaddu.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v12
-	vsll.vv	v8, v10, v8
+	vsll.vv	v8, v12, v8
 	ret
 
 func0000000000000008:
+	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vi	v12, v10, 1
+	vwaddu.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v12
-	vsll.vv	v8, v10, v8
+	vsll.vv	v8, v12, v8
 	ret
 
 func000000000000000e:
 	lui	a0, 2048
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vx	v12, v10, a0
+	vwaddu.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v10, v12
-	vsll.vv	v8, v10, v8
+	vsll.vv	v8, v12, v8
 	ret
 
