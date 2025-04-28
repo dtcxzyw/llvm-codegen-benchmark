@@ -19,17 +19,15 @@ func0000000000000009:
 
 func0000000000000003:
 	add.uw	a0, a1, a0
-	li	a1, -1
-	slli	a1, a1, 33
-	add	a0, a0, a1
+	bseti	a1, zero, 33
+	sub	a0, a0, a1
 	ret
 
 func000000000000000b:
 	sext.w	a1, a1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 40
-	add	a0, a0, a1
+	bseti	a1, zero, 40
+	sub	a0, a0, a1
 	ret
 
 func0000000000000000:

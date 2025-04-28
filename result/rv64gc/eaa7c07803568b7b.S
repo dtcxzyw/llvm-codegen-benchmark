@@ -26,11 +26,10 @@ func000000000000007c:
 func0000000000000000:
 	slli	a2, a2, 32
 	slli	a0, a0, 5
-	add	a0, a0, a1
-	li	a1, 1
 	srli	a2, a2, 32
-	add	a0, a0, a2
-	slli	a1, a1, 31
 	add	a0, a0, a1
+	add	a0, a0, a2
+	lui	a1, 524288
+	sub	a0, a0, a1
 	ret
 

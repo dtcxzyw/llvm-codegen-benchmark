@@ -19,11 +19,10 @@ func000000000000007b:
 	ret
 
 func000000000000004f:
-	li	a3, 1
+	lui	a3, 524288
 	slli	a1, a1, 32
-	slli	a3, a3, 31
+	sub	a2, a2, a3
 	srli	a1, a1, 32
-	add	a2, a2, a3
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

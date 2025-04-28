@@ -17,18 +17,16 @@ func0000000000000020:
 	ret
 
 func000000000000004a:
-	li	a3, 1
-	slli	a3, a3, 31
-	add	a2, a2, a3
+	lui	a3, 524288
+	sub	a2, a2, a3
 	srli	a2, a2, 32
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000040:
-	li	a3, 1
-	slli	a3, a3, 31
-	add	a2, a2, a3
+	lui	a3, 524288
+	sub	a2, a2, a3
 	srli	a2, a2, 32
 	mul	a1, a2, a1
 	add	a0, a0, a1

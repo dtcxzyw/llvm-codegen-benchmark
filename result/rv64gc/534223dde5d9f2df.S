@@ -195,11 +195,10 @@ func0000000000000079:
 
 func000000000000006a:
 	slli	a1, a1, 32
-	li	a2, -1
+	li	a2, -127
 	srli	a1, a1, 32
-	slli	a2, a2, 63
-	addi	a2, a2, 64
-	add	a1, a1, a2
+	srli	a2, a2, 1
+	sub	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 

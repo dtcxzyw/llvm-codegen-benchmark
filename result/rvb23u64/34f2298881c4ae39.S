@@ -23,11 +23,11 @@ func000000000000008c:
 	ret
 
 func0000000000000081:
-	li	a3, 1
+	li	a3, -1
 	xor	a0, a0, a1
-	bseti	a1, a3, 63
-	add	a1, a1, a2
-	sltiu	a1, a1, 2
+	srli	a3, a3, 1
+	sub	a2, a2, a3
+	sltiu	a1, a2, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

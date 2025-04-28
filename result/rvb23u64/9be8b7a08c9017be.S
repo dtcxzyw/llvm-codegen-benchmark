@@ -6,9 +6,9 @@ func0000000000000424:
 	ret
 
 func0000000000000024:
-	li	a2, 1
-	bseti	a2, a2, 63
-	add	a1, a1, a2
+	li	a2, -1
+	srli	a2, a2, 1
+	sub	a1, a1, a2
 	lui	a2, 244
 	addiw	a2, a2, 577
 	bseti	a2, a2, 63
@@ -25,10 +25,11 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
+	li	a2, -151
+	zext.w	a2, a2
+	sub	a1, a1, a2
 	li	a2, -1
 	slli	a2, a2, 32
-	addi	a3, a2, 151
-	add	a1, a1, a3
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

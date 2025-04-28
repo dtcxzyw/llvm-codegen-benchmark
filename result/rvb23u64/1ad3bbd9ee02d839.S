@@ -47,9 +47,9 @@ func0000000000000018:
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
 	slt	a1, a1, a2
-	li	a2, 1
-	bseti	a2, a2, 63
-	add	a0, a0, a2
+	li	a2, -1
+	srli	a2, a2, 1
+	sub	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
 

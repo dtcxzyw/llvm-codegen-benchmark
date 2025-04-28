@@ -11,9 +11,8 @@ func0000000000000001:
 	addiw	a1, a1, 63
 	slli	a1, a1, 27
 	czero.eqz	a0, a1, a0
-	li	a1, -1
-	slli	a1, a1, 52
-	add	a0, a0, a1
+	bseti	a1, zero, 52
+	sub	a0, a0, a1
 	ret
 
 .LCPI2_0:

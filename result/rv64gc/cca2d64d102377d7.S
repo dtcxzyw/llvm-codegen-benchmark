@@ -45,10 +45,9 @@ func0000000000000024:
 	ret
 
 func0000000000000008:
-	li	a3, 1
-	slli	a3, a3, 31
-	addi	a3, a3, 15
-	add	a2, a2, a3
+	lui	a3, 524288
+	addi	a3, a3, -15
+	sub	a2, a2, a3
 	srli	a2, a2, 31
 	beqz	a2, .LBB6_2
 	mv	a0, a1

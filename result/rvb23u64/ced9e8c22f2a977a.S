@@ -66,8 +66,7 @@ func0000000000000012:
 func000000000000003d:
 	slli	a1, a1, 8
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	add	a0, a0, a1
+	bseti	a1, zero, 32
+	sub	a0, a0, a1
 	ret
 

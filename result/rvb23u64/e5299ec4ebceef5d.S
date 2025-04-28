@@ -6,17 +6,15 @@ func0000000000000061:
 	ret
 
 func0000000000000006:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a0, a1
 	ret
 
 func0000000000000026:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a0, a1
 	ret
@@ -29,25 +27,22 @@ func0000000000000024:
 	ret
 
 func0000000000000066:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a0, a1
 	ret
 
 func000000000000000a:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a1, a0
 	ret
 
 func0000000000000021:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -70,9 +65,8 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	sltu	a0, a1, a0
 	ret
@@ -86,17 +80,15 @@ func0000000000000008:
 	ret
 
 func0000000000000046:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a0, a1
 	ret
 
 func000000000000006a:
-	li	a2, -1
-	slli	a2, a2, 34
-	add	a1, a1, a2
+	bseti	a2, zero, 34
+	sub	a1, a1, a2
 	srai	a1, a1, 32
 	slt	a0, a1, a0
 	ret

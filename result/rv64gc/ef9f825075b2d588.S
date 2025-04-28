@@ -33,10 +33,9 @@ func00000000000000ac:
 func0000000000000008:
 	slli	a1, a0, 1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 60
-	addi	a1, a1, 6
-	add	a0, a0, a1
+	li	a1, -81
+	srli	a1, a1, 4
+	sub	a0, a0, a1
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret
@@ -56,9 +55,8 @@ func00000000000000a8:
 	slli	a1, a0, 1
 	add	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 61
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 3
+	sub	a0, a0, a1
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret

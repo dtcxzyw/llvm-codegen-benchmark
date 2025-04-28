@@ -1,8 +1,7 @@
 func000000000000000f:
 	slli	a0, a0, 32
-	li	a1, -1
-	slli	a1, a1, 53
-	add	a0, a0, a1
+	bseti	a1, zero, 53
+	sub	a0, a0, a1
 	fmv.d.x	fa0, a0
 	ret
 

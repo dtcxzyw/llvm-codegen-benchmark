@@ -22,9 +22,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	li	a2, 1
-	slli	a2, a2, 31
-	add	a1, a1, a2
+	lui	a2, 524288
+	sub	a1, a1, a2
 	lui	a2, 131071
 	slli	a2, a2, 20
 	and	a1, a1, a2

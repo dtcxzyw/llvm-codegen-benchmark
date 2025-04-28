@@ -19,9 +19,8 @@ func00000000000003b8:
 func00000000000001b8:
 	add.uw	a0, a1, a0
 	li	a1, -1
-	slli	a1, a1, 61
-	addi	a1, a1, 1
-	add	a1, a1, a0
+	srli	a1, a1, 3
+	sub	a1, a0, a1
 	minu	a0, a1, a0
 	ret
 

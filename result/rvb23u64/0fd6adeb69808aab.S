@@ -120,10 +120,10 @@ func00000000000000a4:
 
 func0000000000000084:
 	sub	a0, a0, a1
+	bseti	a1, zero, 32
+	sub	a0, a0, a1
 	li	a1, -1
-	slli	a2, a1, 32
 	slli	a1, a1, 33
-	add	a0, a0, a2
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -148,9 +148,8 @@ func0000000000000018:
 func00000000000000a8:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 60
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 4
+	sub	a0, a0, a1
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret
@@ -158,9 +157,8 @@ func00000000000000a8:
 func0000000000000088:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 60
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 4
+	sub	a0, a0, a1
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret

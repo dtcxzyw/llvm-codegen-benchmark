@@ -9,9 +9,8 @@ func00000000000001d2:
 	ret
 
 func0000000000000186:
-	li	a3, -1
-	slli	a3, a3, 32
-	add	a2, a2, a3
+	bseti	a3, zero, 32
+	sub	a2, a2, a3
 	li	a3, 35
 	srai	a2, a2, 32
 	czero.nez	a3, a3, a1
@@ -21,9 +20,8 @@ func0000000000000186:
 	ret
 
 func0000000000000086:
-	li	a3, -1
-	slli	a3, a3, 32
-	add	a2, a2, a3
+	bseti	a3, zero, 32
+	sub	a2, a2, a3
 	li	a3, 2
 	srai	a2, a2, 32
 	czero.nez	a3, a3, a1

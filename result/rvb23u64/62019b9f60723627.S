@@ -21,11 +21,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a2, -1
+	bseti	a2, zero, 55
 	li	a3, -257
-	slli	a2, a2, 55
+	sub	a2, a0, a2
 	srli	a3, a3, 1
-	add	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a1, a1, a3
 	add	a1, a1, a0

@@ -11,11 +11,10 @@ func0000000000000004:
 func000000000000000c:
 	add	a1, a1, a3
 	add	a3, a2, a0
-	li	a0, 1
+	lui	a0, 524288
 	sltu	a2, a3, a2
-	slli	a0, a0, 31
+	sub	a0, a3, a0
 	add	a1, a1, a2
-	add	a0, a0, a3
 	sltu	a2, a0, a3
 	add	a1, a1, a2
 	ret

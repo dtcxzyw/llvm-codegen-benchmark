@@ -5,9 +5,8 @@ func0000000000000014:
 
 func000000000000003c:
 	add	a0, a0, a2
-	li	a1, -1
-	slli	a1, a1, 46
-	add	a0, a0, a1
+	bseti	a1, zero, 46
+	sub	a0, a0, a1
 	ret
 
 func000000000000003f:

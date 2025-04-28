@@ -26,10 +26,9 @@ func0000000000000010:
 	ret
 
 func000000000000002e:
-	li	a3, -1
+	bseti	a3, zero, 32
 	sext.w	a1, a1
-	slli	a3, a3, 32
-	add	a2, a2, a3
+	sub	a2, a2, a3
 	srai	a2, a2, 32
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0

@@ -16,9 +16,8 @@ func00000000000000a8:
 	sub	a0, a0, a1
 	li	a1, -1
 	srai	a0, a0, 3
-	slli	a1, a1, 61
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 3
+	sub	a0, a0, a1
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret

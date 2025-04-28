@@ -33,9 +33,8 @@ func00000000000000d9:
 	ret
 
 func000000000000009b:
-	li	a3, 1
-	slli	a3, a3, 31
-	add	a2, a2, a3
+	lui	a3, 524288
+	sub	a2, a2, a3
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	srli	a1, a1, 32

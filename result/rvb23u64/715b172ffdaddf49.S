@@ -8,10 +8,11 @@ func0000000000000204:
 
 func0000000000000004:
 	add.uw	a0, a1, a0
+	li	a1, -76
+	zext.w	a1, a1
+	sub	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 32
-	addi	a2, a1, 76
-	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 

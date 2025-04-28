@@ -23,11 +23,11 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	li	a1, 1
+	li	a1, -1
 	li	a2, 5
-	bseti	a1, a1, 63
+	srli	a1, a1, 1
 	bseti	a2, a2, 63
-	add	a1, a1, a0
+	sub	a1, a0, a1
 	slt	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret

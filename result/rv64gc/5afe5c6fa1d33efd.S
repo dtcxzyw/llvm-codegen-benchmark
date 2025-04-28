@@ -45,8 +45,7 @@ func000000000000007f:
 func0000000000000070:
 	addiw	a1, a1, 1
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 31
-	add	a0, a0, a1
+	lui	a1, 524288
+	sub	a0, a0, a1
 	ret
 

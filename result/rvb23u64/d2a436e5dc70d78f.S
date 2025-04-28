@@ -21,9 +21,8 @@ func000000000000006f:
 	ret
 
 func000000000000003e:
-	li	a3, -1
-	slli	a3, a3, 32
-	add	a2, a2, a3
+	bseti	a3, zero, 32
+	sub	a2, a2, a3
 	srli	a2, a2, 30
 	add	a1, a1, a2
 	sh2add	a0, a0, a1

@@ -1,11 +1,10 @@
 func000000000000010c:
 	lui	a3, 32
 	add	a0, a0, a1
-	li	a1, -1
+	bseti	a1, zero, 32
 	sll	a2, a3, a2
+	sub	a0, a0, a1
 	add	a0, a0, a2
-	slli	a1, a1, 32
-	add	a0, a0, a1
 	ret
 
 func0000000000000100:

@@ -1,7 +1,6 @@
 func0000000000000021:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	li	a2, 2
 	srai	a1, a1, 32
 	czero.nez	a2, a2, a0
@@ -18,9 +17,8 @@ func0000000000000028:
 	ret
 
 func0000000000000061:
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	li	a2, 35
 	srai	a1, a1, 32
 	czero.nez	a2, a2, a0

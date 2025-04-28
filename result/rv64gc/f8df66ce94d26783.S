@@ -73,9 +73,8 @@ func0000000000000181:
 func000000000000008c:
 	sext.w	a0, a0
 	li	a2, -1
-	slli	a2, a2, 63
-	addi	a2, a2, 1
-	add	a1, a1, a2
+	srli	a2, a2, 1
+	sub	a1, a1, a2
 	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1

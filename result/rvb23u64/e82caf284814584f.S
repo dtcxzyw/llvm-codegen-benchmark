@@ -1,9 +1,10 @@
 func0000000000000008:
 	sh1add	a0, a0, a0
+	li	a1, -3
+	zext.w	a1, a1
+	sub	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 32
-	addi	a2, a1, 3
-	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 

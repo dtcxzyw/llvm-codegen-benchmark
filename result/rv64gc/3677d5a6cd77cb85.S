@@ -1,8 +1,7 @@
 func0000000000000028:
 	li	a2, -1
-	slli	a2, a2, 62
-	addi	a2, a2, 1
-	add	a1, a1, a2
+	srli	a2, a2, 2
+	sub	a1, a1, a2
 	srli	a1, a1, 62
 	sltiu	a1, a1, 3
 	neg	a1, a1

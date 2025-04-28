@@ -3,9 +3,8 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	li	a1, 1
-	slli	a1, a1, 31
-	addi	a1, a1, 12
-	add	a0, a0, a1
+	lui	a1, 524288
+	addi	a1, a1, -12
+	sub	a0, a0, a1
 	ret
 

@@ -8,9 +8,8 @@ func000000000000003d:
 func0000000000000000:
 	andi	a1, a1, -8
 	subw	a1, a1, a0
-	li	a0, -1
 	slli	a1, a1, 32
-	slli	a0, a0, 35
-	add	a0, a0, a1
+	bseti	a0, zero, 35
+	sub	a0, a1, a0
 	ret
 

@@ -92,8 +92,7 @@ func0000000000000006:
 
 func000000000000000e:
 	slli	a0, a0, 58
-	li	a1, -1
-	slli	a1, a1, 58
-	add	a0, a0, a1
+	bseti	a1, zero, 58
+	sub	a0, a0, a1
 	ret
 

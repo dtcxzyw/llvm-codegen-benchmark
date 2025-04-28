@@ -25,9 +25,10 @@ func000000000000008c:
 
 func0000000000000101:
 	sext.w	a0, a0
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	li	a2, -1
 	slli	a2, a2, 32
-	add	a1, a1, a2
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
@@ -127,10 +128,10 @@ func0000000000000c2c:
 
 func0000000000000584:
 	sext.w	a0, a0
+	bseti	a2, zero, 53
+	sub	a1, a1, a2
 	li	a2, -1
-	slli	a3, a2, 53
 	slli	a2, a2, 54
-	add	a1, a1, a3
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0

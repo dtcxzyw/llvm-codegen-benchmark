@@ -120,9 +120,8 @@ func0000000000000106:
 	ret
 
 func000000000000024a:
-	li	a1, 1
-	slli	a1, a1, 31
-	add	a0, a0, a1
+	lui	a1, 524288
+	sub	a0, a0, a1
 	srai	a0, a0, 32
 	slti	a0, a0, 256
 	xori	a0, a0, 1

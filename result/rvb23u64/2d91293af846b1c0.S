@@ -10,11 +10,10 @@ func000000000000002a:
 func0000000000000002:
 	add	a1, a1, a3
 	add	a0, a0, a2
-	li	a3, -1
+	bseti	a3, zero, 32
 	sltu	a2, a0, a2
-	slli	a3, a3, 32
+	sub	a3, a0, a3
 	add	a1, a1, a2
-	add	a3, a3, a0
 	sltu	a0, a3, a0
 	add	a0, a0, a1
 	ret
@@ -22,11 +21,10 @@ func0000000000000002:
 func000000000000007b:
 	add	a1, a1, a3
 	add	a0, a0, a2
-	li	a3, -1
+	bseti	a3, zero, 32
 	sltu	a2, a0, a2
-	slli	a3, a3, 32
+	sub	a3, a0, a3
 	add	a1, a1, a2
-	add	a3, a3, a0
 	sltu	a0, a3, a0
 	add	a0, a0, a1
 	ret
@@ -34,11 +32,10 @@ func000000000000007b:
 func0000000000000062:
 	add	a1, a1, a3
 	add	a0, a0, a2
-	li	a3, -1
+	bseti	a3, zero, 32
 	sltu	a2, a0, a2
-	slli	a3, a3, 32
+	sub	a3, a0, a3
 	add	a1, a1, a2
-	add	a3, a3, a0
 	sltu	a0, a3, a0
 	add	a0, a0, a1
 	ret

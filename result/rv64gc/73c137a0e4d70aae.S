@@ -45,11 +45,10 @@ func0000000000000008:
 	slli	a0, a0, 2
 	lui	a1, 1048340
 	lui	a2, %hi(.LCPI3_0)
-	addiw	a1, a1, -1079
 	ld	a2, %lo(.LCPI3_0)(a2)
+	addiw	a1, a1, -1077
 	srli	a1, a1, 1
-	not	a1, a1
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	mulhu	a0, a0, a2
 	srli	a0, a0, 15
 	ret

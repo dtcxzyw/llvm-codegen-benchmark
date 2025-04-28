@@ -1,8 +1,7 @@
 func000000000000000b:
 	or	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 31
-	add	a0, a0, a1
+	lui	a0, 524288
+	sub	a0, a1, a0
 	sltu	a1, a0, a1
 	ret
 

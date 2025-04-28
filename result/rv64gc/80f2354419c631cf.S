@@ -279,9 +279,9 @@ func0000000000000086:
 func0000000000000024:
 	add	a0, a0, a1
 	li	a1, -1
+	srli	a2, a1, 32
+	sub	a0, a0, a2
 	slli	a1, a1, 32
-	addi	a2, a1, 1
-	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 

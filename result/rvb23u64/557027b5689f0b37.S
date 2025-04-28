@@ -26,9 +26,8 @@ func0000000000000014:
 func0000000000000015:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 32
+	sub	a0, a0, a1
 	ret
 
 func0000000000000030:
@@ -49,9 +48,8 @@ func0000000000000004:
 func000000000000001f:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 32
+	sub	a0, a0, a1
 	ret
 
 func0000000000000020:
@@ -62,24 +60,21 @@ func0000000000000020:
 func0000000000000002:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 32
+	sub	a0, a0, a1
 	ret
 
 func0000000000000012:
 	sub	a0, a0, a1
 	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 1
-	add	a0, a0, a1
+	srli	a1, a1, 32
+	sub	a0, a0, a1
 	ret
 
 func0000000000000008:
 	sub	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 4
-	add	a0, a0, a1
+	li	a1, -4
+	zext.w	a1, a1
+	sub	a0, a0, a1
 	ret
 

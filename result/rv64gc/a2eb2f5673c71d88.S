@@ -47,11 +47,10 @@ func000000000000006d:
 func000000000000000d:
 	lui	a1, 1048340
 	lui	a2, %hi(.LCPI3_0)
-	addiw	a1, a1, -1079
+	addiw	a1, a1, -1077
 	ld	a2, %lo(.LCPI3_0)(a2)
 	srli	a1, a1, 1
-	not	a1, a1
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, %hi(.LCPI3_1)
 	ld	a1, %lo(.LCPI3_1)(a1)
 	mulhu	a0, a0, a2

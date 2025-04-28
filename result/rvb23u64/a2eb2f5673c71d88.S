@@ -43,12 +43,12 @@ func000000000000006d:
 .LCPI3_1:
 	.quad	-6313183731941900
 func000000000000000d:
-	lui	a1, 118
+	lui	a1, 1048340
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
-	addiw	a1, a1, 539
-	bseti	a1, a1, 63
-	add	a0, a0, a1
+	addiw	a1, a1, -1077
+	srli	a1, a1, 1
+	sub	a0, a0, a1
 	mulhu	a0, a0, a2
 	lui	a1, %hi(.LCPI3_1)
 	ld	a1, %lo(.LCPI3_1)(a1)

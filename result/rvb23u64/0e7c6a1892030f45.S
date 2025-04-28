@@ -53,9 +53,8 @@ func0000000000000015:
 func000000000000002d:
 	sext.w	a1, a1
 	add.uw	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 179
-	add	a0, a0, a1
+	li	a1, -179
+	zext.w	a1, a1
+	sub	a0, a0, a1
 	ret
 

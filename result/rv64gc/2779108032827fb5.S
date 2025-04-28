@@ -7,10 +7,9 @@ func000000000000000b:
 
 func000000000000000a:
 	sext.w	a0, a0
-	li	a1, 1
 	slli	a0, a0, 31
-	slli	a1, a1, 31
-	add	a0, a0, a1
+	lui	a1, 524288
+	sub	a0, a0, a1
 	srai	a0, a0, 32
 	ret
 

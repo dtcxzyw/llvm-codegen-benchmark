@@ -1,10 +1,9 @@
 func0000000000000024:
 	sext.w	a0, a0
 	li	a2, -1
-	slli	a2, a2, 63
+	srli	a2, a2, 1
 	addi	a0, a0, -34
-	addi	a2, a2, 1
-	add	a1, a1, a2
+	sub	a1, a1, a2
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1

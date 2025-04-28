@@ -8,9 +8,8 @@ func0000000000000020:
 func0000000000000000:
 	zext.b	a2, a2
 	sll	a1, a2, a1
-	li	a2, -1
 	or	a0, a0, a1
-	slli	a2, a2, 38
-	add	a0, a0, a2
+	bseti	a1, zero, 38
+	sub	a0, a0, a1
 	ret
 

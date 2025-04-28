@@ -85,11 +85,10 @@ func0000000000000075:
 func0000000000000074:
 	sext.w	a2, a2
 	add	a0, a0, a1
-	li	a1, -1
+	li	a1, -179
 	add	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, 179
-	add	a0, a0, a1
+	zext.w	a1, a1
+	sub	a0, a0, a1
 	ret
 
 func000000000000007c:

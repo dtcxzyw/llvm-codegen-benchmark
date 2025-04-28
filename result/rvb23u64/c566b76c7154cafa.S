@@ -25,9 +25,8 @@ func0000000000000037:
 func0000000000000022:
 	slli	a2, a2, 32
 	add	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 44
-	add	a1, a1, a2
+	bseti	a2, zero, 44
+	sub	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

@@ -10,8 +10,7 @@ func0000000000000002:
 	lui	a1, 2255
 	slli	a1, a1, 20
 	czero.eqz	a0, a1, a0
-	li	a1, -1
-	slli	a1, a1, 32
-	add	a0, a0, a1
+	bseti	a1, zero, 32
+	sub	a0, a0, a1
 	ret
 

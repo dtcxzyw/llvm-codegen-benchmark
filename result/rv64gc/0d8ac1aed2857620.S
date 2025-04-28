@@ -1,10 +1,9 @@
 func0000000000000000:
 	zext.b	a2, a2
 	sub	a0, a0, a1
-	li	a1, 1
 	sub	a0, a0, a2
-	slli	a1, a1, 31
-	add	a0, a0, a1
+	lui	a1, 524288
+	sub	a0, a0, a1
 	ret
 
 func0000000000000030:

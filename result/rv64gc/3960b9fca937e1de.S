@@ -180,10 +180,9 @@ func0000000000000029:
 
 func000000000000006a:
 	andi	a1, a1, -64
-	li	a2, -1
-	slli	a2, a2, 63
-	addi	a2, a2, 64
-	add	a0, a0, a2
+	li	a2, -127
+	srli	a2, a2, 1
+	sub	a0, a0, a2
 	slt	a0, a1, a0
 	ret
 

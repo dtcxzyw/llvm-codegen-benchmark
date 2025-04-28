@@ -23,10 +23,9 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	li	a1, 1
-	slli	a1, a1, 31
-	addi	a1, a1, 15
-	add	a0, a0, a1
+	lui	a1, 524288
+	addi	a1, a1, -15
+	sub	a0, a0, a1
 	srli	a0, a0, 31
 	seqz	a0, a0
 	ret

@@ -1,8 +1,7 @@
 func0000000000000004:
-	li	a2, 1
-	slli	a2, a2, 31
-	addi	a2, a2, 16
-	add	a1, a1, a2
+	lui	a2, 524288
+	addi	a2, a2, -16
+	sub	a1, a1, a2
 	srli	a1, a1, 32
 	seqz	a1, a1
 	addiw	a0, a0, 16

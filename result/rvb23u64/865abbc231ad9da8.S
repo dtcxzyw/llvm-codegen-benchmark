@@ -11,11 +11,10 @@ func00000000000002a8:
 	srai	a1, a1, 3
 	sub	a1, a1, a0
 	li	a0, -1
-	slli	a0, a0, 60
-	addi	a0, a0, 1
-	add	a0, a0, a1
-	srli	a0, a0, 60
-	sltiu	a0, a0, 15
+	srli	a0, a0, 4
+	sub	a1, a1, a0
+	srli	a1, a1, 60
+	sltiu	a0, a1, 15
 	ret
 
 func00000000000002a1:
@@ -43,10 +42,9 @@ func0000000000000208:
 	srai	a1, a1, 5
 	sub	a1, a1, a0
 	li	a0, -1
-	slli	a0, a0, 61
-	addi	a0, a0, 1
-	add	a0, a0, a1
-	srli	a0, a0, 61
-	sltiu	a0, a0, 7
+	srli	a0, a0, 3
+	sub	a1, a1, a0
+	srli	a1, a1, 61
+	sltiu	a0, a1, 7
 	ret
 

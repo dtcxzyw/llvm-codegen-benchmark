@@ -35,11 +35,10 @@ func0000000000000040:
 
 func00000000000000c0:
 	mul	a1, a1, a2
-	li	a2, -1
 	add	a0, a0, a1
 	slli	a0, a0, 32
-	slli	a2, a2, 33
-	add	a0, a0, a2
+	bseti	a1, zero, 33
+	sub	a0, a0, a1
 	ret
 
 func00000000000000fc:

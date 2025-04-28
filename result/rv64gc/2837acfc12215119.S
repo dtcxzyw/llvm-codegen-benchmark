@@ -30,10 +30,9 @@ func0000000000000008:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	mul	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 61
-	addi	a1, a1, 2
-	add	a0, a0, a1
+	li	a1, -9
+	srli	a1, a1, 3
+	sub	a0, a0, a1
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret

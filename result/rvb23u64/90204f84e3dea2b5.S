@@ -36,16 +36,15 @@ func000000000000000e:
 	mulhu	a4, a0, a2
 	mul	a1, a1, a2
 	mul	a2, a2, a0
-	li	a0, -1
+	bseti	a0, zero, 55
 	add	a3, a3, a4
 	li	a4, -257
-	slli	a0, a0, 55
-	srli	a4, a4, 1
+	sub	a0, a2, a0
 	add	a1, a1, a3
-	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a4
 	add	a1, a1, a2
+	srli	a4, a4, 1
+	add	a1, a1, a4
 	ret
 
 func000000000000000f:
@@ -68,16 +67,15 @@ func0000000000000008:
 	mulhu	a4, a0, a2
 	mul	a1, a1, a2
 	mul	a2, a2, a0
-	li	a0, -1
+	bseti	a0, zero, 55
 	add	a3, a3, a4
 	li	a4, -257
-	slli	a0, a0, 55
-	srli	a4, a4, 1
+	sub	a0, a2, a0
 	add	a1, a1, a3
-	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a4
 	add	a1, a1, a2
+	srli	a4, a4, 1
+	add	a1, a1, a4
 	ret
 
 func000000000000000a:

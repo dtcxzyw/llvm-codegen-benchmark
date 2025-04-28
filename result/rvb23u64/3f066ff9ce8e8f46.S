@@ -20,9 +20,8 @@ func0000000000000000:
 
 func0000000000000002:
 	add	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 39
-	add	a1, a1, a2
+	bseti	a2, zero, 39
+	sub	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

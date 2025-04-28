@@ -7,9 +7,8 @@ func0000000000000424:
 
 func0000000000000024:
 	li	a2, -1
-	slli	a2, a2, 63
-	addi	a2, a2, 1
-	add	a1, a1, a2
+	srli	a2, a2, 1
+	sub	a1, a1, a2
 	lui	a2, 1048088
 	addiw	a2, a2, -1155
 	srli	a2, a2, 1

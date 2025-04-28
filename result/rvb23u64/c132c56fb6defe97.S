@@ -6,9 +6,8 @@ func000000000000001f:
 
 func000000000000000c:
 	slli	a1, a1, 27
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	lui	a2, 44
 	addiw	a2, a2, 64
 	srai	a1, a1, 32

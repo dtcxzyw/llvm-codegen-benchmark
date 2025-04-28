@@ -34,10 +34,9 @@ func000000000000000c:
 
 func0000000000000002:
 	add	a0, a0, a1
-	lui	a1, 524288
-	addi	a1, a1, -1
-	slli	a1, a1, 32
-	add	a0, a0, a1
+	bseti	a1, zero, 32
+	bseti	a1, a1, 63
+	sub	a0, a0, a1
 	bseti	a0, a0, 63
 	ret
 

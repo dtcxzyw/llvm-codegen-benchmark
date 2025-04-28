@@ -10,9 +10,8 @@ func0000000000000010:
 
 func0000000000000020:
 	li	a3, -1
-	slli	a3, a3, 61
-	addi	a3, a3, 1
-	add	a2, a2, a3
+	srli	a3, a3, 3
+	sub	a2, a2, a3
 	srli	a2, a2, 61
 	sltiu	a2, a2, 7
 	neg	a2, a2

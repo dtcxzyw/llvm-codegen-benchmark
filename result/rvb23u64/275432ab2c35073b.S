@@ -31,10 +31,9 @@ func00000000000001ef:
 
 func00000000000001ed:
 	sh1add	a1, a2, a1
-	li	a2, -1
+	li	a2, -98
 	add.uw	a0, a0, a1
-	slli	a2, a2, 32
-	addi	a1, a2, 98
-	add	a0, a0, a1
+	zext.w	a2, a2
+	sub	a0, a0, a2
 	ret
 

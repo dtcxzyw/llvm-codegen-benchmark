@@ -5,9 +5,8 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	li	a2, 1
-	slli	a2, a2, 31
-	add	a2, a2, a0
+	lui	a2, 524288
+	sub	a2, a0, a2
 	sltu	a0, a2, a0
 	add	a1, a1, a0
 	mv	a0, a2

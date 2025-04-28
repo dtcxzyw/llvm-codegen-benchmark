@@ -9,9 +9,8 @@ func00000000000001ff:
 
 func00000000000001bf:
 	slli	a1, a1, 32
-	li	a2, -1
-	slli	a2, a2, 32
-	add	a1, a1, a2
+	bseti	a2, zero, 32
+	sub	a1, a1, a2
 	srli	a1, a1, 30
 	add	a0, a0, a1
 	addi	a0, a0, 12

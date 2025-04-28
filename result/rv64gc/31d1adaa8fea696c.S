@@ -16,11 +16,10 @@ func0000000000000050:
 	slli	a2, a1, 32
 	slli	a1, a1, 61
 	sub	a1, a1, a2
-	li	a2, 1
 	sub	a1, a1, a0
-	slli	a0, a1, 3
-	slli	a2, a2, 31
-	add	a0, a0, a2
+	slli	a1, a1, 3
+	lui	a0, 524288
+	sub	a0, a1, a0
 	ret
 
 func000000000000007f:
