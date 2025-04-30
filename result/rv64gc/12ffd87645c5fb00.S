@@ -1,85 +1,94 @@
 func0000000000000035:
-	srli	t2, a2, 1
+	slli	a3, a2, 63
+	srli	a1, a1, 1
+	or	t2, a1, a3
+	srli	a2, a2, 1
+	or	a1, t2, a2
+	beqz	a1, .LBB0_3
 	lui	a6, 349525
 	lui	a7, 209715
 	lui	t0, 61681
 	lui	t1, 4112
-	addiw	a4, a6, 1365
-	addiw	a5, a7, 819
-	addiw	a6, t0, -241
-	addiw	a7, t1, 257
-	slli	a3, a4, 32
-	add	a3, a3, a4
+	addiw	a5, a6, 1365
+	addiw	a3, a7, 819
+	addiw	a1, t0, -241
+	addiw	a6, t1, 257
 	slli	a4, a5, 32
-	add	a5, a5, a4
-	slli	a4, a6, 32
-	add	a6, a6, a4
-	slli	a4, a7, 32
-	add	a7, a7, a4
-	bnez	t2, .LBB0_2
-	slli	a2, a2, 63
-	srli	a1, a1, 1
-	or	a1, a1, a2
-	srli	a2, a1, 1
-	or	a1, a1, a2
-	srli	a2, a1, 2
-	or	a1, a1, a2
-	srli	a2, a1, 4
-	or	a1, a1, a2
-	srli	a2, a1, 8
-	or	a1, a1, a2
-	srli	a2, a1, 16
-	or	a1, a1, a2
-	srli	a2, a1, 32
-	or	a1, a1, a2
-	not	a1, a1
-	srli	a2, a1, 1
+	add	a4, a4, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a1, 32
+	add	a1, a1, a5
+	slli	a5, a6, 32
+	add	a6, a6, a5
+	bnez	a2, .LBB0_4
+	srli	a2, t2, 1
+	or	a2, t2, a2
+	srli	a5, a2, 2
+	or	a2, a2, a5
+	srli	a5, a2, 4
+	or	a2, a2, a5
+	srli	a5, a2, 8
+	or	a2, a2, a5
+	srli	a5, a2, 16
+	or	a2, a2, a5
+	srli	a5, a2, 32
+	or	a2, a2, a5
+	not	a2, a2
+	srli	a5, a2, 1
+	and	a4, a4, a5
+	sub	a2, a2, a4
+	and	a4, a2, a3
+	srli	a2, a2, 2
 	and	a2, a2, a3
-	sub	a1, a1, a2
-	and	a2, a1, a5
-	srli	a1, a1, 2
-	and	a1, a1, a5
-	add	a1, a1, a2
-	srli	a2, a1, 4
-	add	a1, a1, a2
-	and	a1, a1, a6
-	mul	a1, a1, a7
+	add	a2, a2, a4
+	srli	a3, a2, 4
+	add	a2, a2, a3
+	and	a1, a1, a2
+	mul	a1, a1, a6
 	srli	a1, a1, 56
 	addi	a1, a1, 64
-	lui	a2, 1048572
-	addi	a2, a2, 66
-	add	a0, a0, a2
 	subw	a0, a0, a1
+	lui	a1, 1048572
+	addi	a1, a1, 66
+	addw	a0, a0, a1
 	ret
-.LBB0_2:
-	srli	a2, a2, 2
-	or	a1, t2, a2
-	srli	a2, a1, 2
-	or	a1, a1, a2
-	srli	a2, a1, 4
-	or	a1, a1, a2
-	srli	a2, a1, 8
-	or	a1, a1, a2
-	srli	a2, a1, 16
-	or	a1, a1, a2
-	srli	a2, a1, 32
-	or	a1, a1, a2
-	not	a1, a1
-	srli	a2, a1, 1
-	and	a2, a2, a3
-	sub	a1, a1, a2
-	and	a2, a1, a5
-	srli	a1, a1, 2
-	and	a1, a1, a5
-	add	a1, a1, a2
-	srli	a2, a1, 4
-	add	a1, a1, a2
-	and	a1, a1, a6
-	mul	a1, a1, a7
-	srli	a1, a1, 56
-	lui	a2, 1048572
-	addi	a2, a2, 66
-	add	a0, a0, a2
+.LBB0_3:
+	li	a1, 128
 	subw	a0, a0, a1
+	lui	a1, 1048572
+	addi	a1, a1, 66
+	addw	a0, a0, a1
+	ret
+.LBB0_4:
+	srli	a5, a2, 1
+	or	a2, a2, a5
+	srli	a5, a2, 2
+	or	a2, a2, a5
+	srli	a5, a2, 4
+	or	a2, a2, a5
+	srli	a5, a2, 8
+	or	a2, a2, a5
+	srli	a5, a2, 16
+	or	a2, a2, a5
+	srli	a5, a2, 32
+	or	a2, a2, a5
+	not	a2, a2
+	srli	a5, a2, 1
+	and	a4, a4, a5
+	sub	a2, a2, a4
+	and	a4, a2, a3
+	srli	a2, a2, 2
+	and	a2, a2, a3
+	add	a2, a2, a4
+	srli	a3, a2, 4
+	add	a2, a2, a3
+	and	a1, a1, a2
+	mul	a1, a1, a6
+	srli	a1, a1, 56
+	subw	a0, a0, a1
+	lui	a1, 1048572
+	addi	a1, a1, 66
+	addw	a0, a0, a1
 	ret
 

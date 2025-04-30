@@ -1,4 +1,6 @@
 func000000000000000d:
+	or	a3, a1, a2
+	beqz	a3, .LBB0_3
 	lui	a6, 349525
 	lui	a7, 209715
 	lui	t0, 61681
@@ -15,7 +17,7 @@ func000000000000000d:
 	add	a6, a6, a4
 	slli	a4, a7, 32
 	add	a4, a4, a7
-	bnez	a2, .LBB0_2
+	bnez	a2, .LBB0_4
 	srli	a2, a1, 1
 	or	a1, a1, a2
 	srli	a2, a1, 2
@@ -44,7 +46,11 @@ func000000000000000d:
 	addi	a1, a1, 64
 	subw	a0, a0, a1
 	ret
-.LBB0_2:
+.LBB0_3:
+	li	a1, 128
+	subw	a0, a0, a1
+	ret
+.LBB0_4:
 	srli	a1, a2, 1
 	or	a1, a1, a2
 	srli	a2, a1, 2

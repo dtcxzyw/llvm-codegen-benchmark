@@ -1,4 +1,6 @@
 func0000000000000019:
+	or	a3, a1, a2
+	beqz	a3, .LBB0_3
 	lui	a6, 349525
 	lui	a7, 209715
 	lui	t0, 61681
@@ -15,7 +17,7 @@ func0000000000000019:
 	add	a6, a6, a4
 	slli	a4, a7, 32
 	add	a4, a4, a7
-	bnez	a2, .LBB0_2
+	bnez	a2, .LBB0_4
 	srli	a2, a1, 1
 	or	a1, a1, a2
 	srli	a2, a1, 2
@@ -45,10 +47,18 @@ func0000000000000019:
 	slli	a0, a0, 49
 	srli	a0, a0, 49
 	seqz	a2, a0
-	add	a0, a0, a2
-	sub	a0, a0, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
-.LBB0_2:
+.LBB0_3:
+	li	a1, 128
+	slli	a0, a0, 49
+	srli	a0, a0, 49
+	seqz	a2, a0
+	subw	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB0_4:
 	srli	a1, a2, 1
 	or	a1, a1, a2
 	srli	a2, a1, 2
@@ -77,7 +87,7 @@ func0000000000000019:
 	slli	a0, a0, 49
 	srli	a0, a0, 49
 	seqz	a2, a0
-	add	a0, a0, a2
-	sub	a0, a0, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
