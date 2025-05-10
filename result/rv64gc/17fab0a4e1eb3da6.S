@@ -9,8 +9,9 @@ func00000000000003e1:
 
 func00000000000003e4:
 	srliw	a2, a2, 24
-	li	a3, 72
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 64
 	sltu	a0, a0, a1

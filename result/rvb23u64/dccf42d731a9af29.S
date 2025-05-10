@@ -8,10 +8,10 @@ func000000000000003f:
 	ret
 
 func00000000000000ff:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
+	sh1add	a2, a2, a2
 	sext.w	a1, a1
-	subw	a2, a2, a3
+	sh2add	a2, a2, a2
+	slliw	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

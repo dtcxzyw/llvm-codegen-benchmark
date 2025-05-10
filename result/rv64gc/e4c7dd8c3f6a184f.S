@@ -12,8 +12,9 @@ func000000000000000b:
 	slli	a0, a1, 48
 	mulhu	a0, a0, a2
 	srli	a0, a0, 10
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	sub	a0, a1, a0
 	ret
 

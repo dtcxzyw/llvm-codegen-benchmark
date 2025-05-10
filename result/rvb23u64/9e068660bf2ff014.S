@@ -1,11 +1,10 @@
 func00000000000001fd:
 	sext.w	a2, a2
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a3
-	lui	a3, 244
-	add	a1, a1, a2
-	addiw	a2, a3, 576
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a2
+	lui	a2, 244
+	addiw	a2, a2, 576
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -9,8 +9,9 @@ func000000000000000e:
 
 func000000000000000f:
 	andi	a1, a1, 3
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	or	a1, a1, a2
 	andi	a0, a0, 15
 	add	a0, a0, a1
 	ret

@@ -25,16 +25,16 @@ func0000000000000004:
 	ret
 
 func0000000000000017:
-	srai	a1, a1, 4
-	li	a2, 36
-	mul	a1, a1, a2
+	srai	a2, a1, 2
+	slli	a1, a1, 1
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000010:
-	srai	a1, a1, 4
-	li	a2, 36
-	mul	a1, a1, a2
+	srai	a2, a1, 2
+	slli	a1, a1, 1
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

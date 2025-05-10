@@ -22,10 +22,10 @@ func000000000000007f:
 	ret
 
 func000000000000003f:
-	li	a2, 5
-	slli	a2, a2, 36
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 304
 	ret
@@ -44,10 +44,10 @@ func000000000000002f:
 	ret
 
 func0000000000000030:
-	li	a2, 5
-	slli	a2, a2, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 29
+	srli	a1, a1, 27
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret
@@ -65,11 +65,12 @@ func0000000000000070:
 
 func0000000000000043:
 	sext.w	a1, a1
-	li	a2, 272
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	lui	a2, 3
-	add	a0, a0, a1
-	addiw	a1, a2, 72
+	addiw	a2, a2, 72
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

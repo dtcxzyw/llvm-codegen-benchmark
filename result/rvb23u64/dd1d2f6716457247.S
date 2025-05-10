@@ -23,9 +23,9 @@ func0000000000000012:
 func000000000000001f:
 	zext.b	a1, a1
 	add	a0, a0, a1
-	slli	a1, a0, 2
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 2
 	ret
 
 .LCPI4_0:

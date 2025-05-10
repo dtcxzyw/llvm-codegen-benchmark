@@ -1,9 +1,9 @@
 func000000000000000f:
 	subw	a2, a2, a1
-	li	a1, 9
 	slli	a2, a2, 32
-	slli	a1, a1, 34
-	mulhu	a1, a2, a1
+	srli	a1, a2, 30
+	srli	a2, a2, 27
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
@@ -18,10 +18,10 @@ func0000000000000100:
 
 func000000000000014f:
 	subw	a2, a2, a1
-	li	a1, 9
 	slli	a2, a2, 32
-	slli	a1, a1, 35
-	mulhu	a1, a2, a1
+	srli	a1, a2, 29
+	srli	a2, a2, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

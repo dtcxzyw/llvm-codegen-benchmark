@@ -237,12 +237,13 @@ func00000000000000c4:
 	ret
 
 func00000000000000cc:
-	li	a3, 10
-	mul	a2, a2, a3
-	li	a3, 5
-	slli	a3, a3, 33
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
+	slli	a3, a1, 33
+	slli	a1, a1, 35
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

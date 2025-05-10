@@ -7,8 +7,9 @@ func000000000000000a:
 
 func0000000000000000:
 	subw	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	srliw	a0, a0, 9
 	ret
 

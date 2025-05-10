@@ -46,8 +46,9 @@ func0000000000000004:
 	bltu	a1, a0, .LBB5_2
 	li	a0, 4
 .LBB5_2:
-	li	a1, 80
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 
 func0000000000000005:

@@ -1,7 +1,8 @@
 func000000000000003a:
-	li	a3, 160
+	slli	a3, a0, 5
+	slli	a0, a0, 7
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -9,9 +10,10 @@ func000000000000003a:
 	ret
 
 func0000000000000038:
-	li	a3, 160
+	slli	a3, a0, 5
+	slli	a0, a0, 7
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1

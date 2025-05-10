@@ -39,8 +39,9 @@ func00000000000000ff:
 	ret
 
 func00000000000000fe:
-	li	a3, 544
-	mul	a1, a1, a3
+	slli	a3, a1, 5
+	slli	a1, a1, 9
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 544

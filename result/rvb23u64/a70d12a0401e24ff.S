@@ -9,8 +9,9 @@ func0000000000000033:
 
 func00000000000000c3:
 	addiw	a1, a1, -1
-	li	a2, 272
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1545
 	sh3add	a0, a1, a0
@@ -18,8 +19,9 @@ func00000000000000c3:
 
 func00000000000000f3:
 	addiw	a1, a1, -1
-	li	a2, 272
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1563
 	sh3add	a0, a1, a0

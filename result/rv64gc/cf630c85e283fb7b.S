@@ -1,7 +1,8 @@
 func0000000000000001:
 	andi	a1, a1, 1
-	li	a2, 160
-	mulw	a0, a0, a2
+	slli	a2, a0, 5
+	slli	a0, a0, 7
+	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

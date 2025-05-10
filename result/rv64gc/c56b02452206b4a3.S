@@ -1,8 +1,10 @@
 func000000000000000f:
 	andi	a1, a1, 1
 	slli	a2, a2, 48
-	lui	a3, 1152
-	mulhu	a2, a2, a3
+	srli	a2, a2, 48
+	slli	a3, a2, 3
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB0_2
 	li	a1, 58
@@ -16,8 +18,10 @@ func000000000000000f:
 func000000000000000e:
 	andi	a1, a1, 1
 	slli	a2, a2, 48
-	lui	a3, 640
-	mulhu	a2, a2, a3
+	srli	a2, a2, 48
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB1_2
 	li	a1, -80

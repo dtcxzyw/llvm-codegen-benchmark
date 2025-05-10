@@ -1,6 +1,7 @@
 func0000000000000000:
-	li	a1, 20
-	mulw	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	addw	a0, a0, a1
 	bgtz	a0, .LBB0_2
 	li	a0, 1
 .LBB0_2:

@@ -1,13 +1,13 @@
 func00000000000000f0:
 	andi	a2, a2, 63
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
 	lui	a3, 1
+	sh1add	a2, a2, a2
 	addi	a3, a3, -496
+	sh2add	a2, a2, a2
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	ret
 
 func00000000000000ff:

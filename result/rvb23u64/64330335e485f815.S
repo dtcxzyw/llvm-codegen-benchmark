@@ -8,9 +8,9 @@ func0000000000000008:
 
 func000000000000000c:
 	mul	a0, a0, a0
-	slli	a1, a0, 1
-	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 1
 	snez	a0, a0
 	ret
 

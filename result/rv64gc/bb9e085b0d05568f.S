@@ -7,16 +7,18 @@ func000000000000001a:
 
 func0000000000000030:
 	andi	a1, a1, -64
-	li	a2, 640
-	mul	a0, a0, a2
+	slli	a2, a0, 7
+	slli	a0, a0, 9
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -640
 	ret
 
 func0000000000000010:
 	andi	a1, a1, -64
-	li	a2, 640
-	mul	a0, a0, a2
+	slli	a2, a0, 7
+	slli	a0, a0, 9
+	add	a0, a0, a2
 	lui	a2, 315
 	add	a0, a0, a1
 	addiw	a1, a2, 1280
@@ -25,8 +27,9 @@ func0000000000000010:
 
 func0000000000000033:
 	andi	a1, a1, -64
-	li	a2, 640
-	mul	a0, a0, a2
+	slli	a2, a0, 7
+	slli	a0, a0, 9
+	add	a0, a0, a2
 	lui	a2, 313
 	add	a0, a0, a1
 	addiw	a1, a2, -128
@@ -35,8 +38,9 @@ func0000000000000033:
 
 func0000000000000012:
 	andi	a1, a1, -64
-	li	a2, 640
-	mul	a0, a0, a2
+	slli	a2, a0, 7
+	slli	a0, a0, 9
+	add	a0, a0, a2
 	lui	a2, 313
 	add	a0, a0, a1
 	addiw	a1, a2, -128

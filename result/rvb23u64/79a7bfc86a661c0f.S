@@ -17,9 +17,9 @@ func00000000000001e1:
 	ret
 
 func0000000000000181:
-	slli	a3, a1, 4
-	slli	a1, a1, 8
-	sub	a1, a1, a3
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 4
 	add	a1, a1, a2
 	addi	a1, a1, 304
 	czero.eqz	a0, a1, a0

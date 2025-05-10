@@ -9,10 +9,10 @@ func000000000000010f:
 	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 37
-	slli	a3, a2, 6
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	subw	a0, a0, a2
 	ret
 

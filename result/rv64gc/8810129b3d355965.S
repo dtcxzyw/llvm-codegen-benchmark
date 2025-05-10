@@ -119,13 +119,15 @@ func0000000000000013:
 	ret
 
 func0000000000000004:
+	slli	a3, a1, 3
+	slli	a1, a1, 5
 	slli	a2, a2, 32
-	li	a3, 40
-	srli	a2, a2, 32
-	mul	a1, a1, a3
+	add	a1, a1, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 27
 	add	a0, a0, a1
-	mul	a1, a2, a3
-	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func000000000000000e:

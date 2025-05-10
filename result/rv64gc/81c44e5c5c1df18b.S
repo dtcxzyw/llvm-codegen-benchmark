@@ -1,7 +1,8 @@
 func00000000000000f5:
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48
@@ -9,8 +10,9 @@ func00000000000000f5:
 
 func00000000000000f7:
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -48

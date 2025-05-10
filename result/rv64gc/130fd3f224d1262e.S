@@ -13,16 +13,18 @@ func0000000000000000:
 	ret
 
 func00000000000000ff:
-	li	a2, 40
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	slli	a0, a0, 5
 	add	a0, a0, a1
 	addi	a0, a0, 52
 	ret
 
 func0000000000000055:
-	li	a2, 40
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	addi	a0, a0, 8

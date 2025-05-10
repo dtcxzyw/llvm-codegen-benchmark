@@ -35,10 +35,10 @@ func0000000000000381:
 	ret
 
 func00000000000001e8:
-	li	a3, 5
-	slli	a3, a3, 35
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 27
+	add	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

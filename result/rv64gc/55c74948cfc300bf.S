@@ -14,8 +14,9 @@ func0000000000000030:
 
 func0000000000000033:
 	sext.w	a2, a2
-	li	a3, 144
-	mul	a0, a0, a3
+	slli	a3, a0, 4
+	slli	a0, a0, 7
+	add	a0, a0, a3
 	slli	a3, a2, 4
 	slli	a2, a2, 6
 	sub	a2, a2, a3

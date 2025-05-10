@@ -102,27 +102,31 @@ func0000000000000064:
 	ret
 
 func0000000000000048:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func000000000000002a:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 
 func0000000000000005:
-	li	a2, 20
-	mul	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000074:
-	li	a2, 18
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

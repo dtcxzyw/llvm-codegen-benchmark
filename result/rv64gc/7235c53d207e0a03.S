@@ -21,10 +21,10 @@ func0000000000000541:
 	ret
 
 func00000000000007e1:
-	li	a3, 5
-	slli	a3, a3, 33
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 31
+	srli	a2, a2, 29
+	add	a2, a2, a3
 	add	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0

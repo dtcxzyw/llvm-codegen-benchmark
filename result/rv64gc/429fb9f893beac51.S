@@ -4,9 +4,10 @@ func0000000000000030:
 	addi	a3, a3, 1
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	li	a3, 40
 	srli	a2, a2, 47
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

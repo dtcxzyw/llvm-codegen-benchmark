@@ -6,15 +6,17 @@ func0000000000000000:
 	ret
 
 func000000000000000b:
-	lui	a3, 4112
-	mulw	a2, a2, a3
+	slli	a3, a2, 16
+	slli	a2, a2, 24
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000000f:
-	li	a3, 80
-	mulw	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 6
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

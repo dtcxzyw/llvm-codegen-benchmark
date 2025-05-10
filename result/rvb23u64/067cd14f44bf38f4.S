@@ -35,14 +35,13 @@ func00000000000000a8:
 	ret
 
 func00000000000000a0:
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
 	lui	a3, 1
+	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	sraiw	a0, a0, 31
 	ret
 

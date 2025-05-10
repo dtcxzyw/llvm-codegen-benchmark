@@ -18,15 +18,17 @@ func000000000000001b:
 	slli	a3, a3, 63
 	beq	a2, a3, .LBB1_2
 	li	a2, 24
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 48
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

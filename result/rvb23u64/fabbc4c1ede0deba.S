@@ -5,10 +5,10 @@ func0000000000000000:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 37
-	slli	a3, a2, 6
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a2, a2, a3
-	addw	a1, a1, a2
+	subw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

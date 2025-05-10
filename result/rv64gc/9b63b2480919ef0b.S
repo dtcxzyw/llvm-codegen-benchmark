@@ -16,8 +16,9 @@ func0000000000000007:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	sext.w	a1, a1
-	li	a0, 40
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a0, 220

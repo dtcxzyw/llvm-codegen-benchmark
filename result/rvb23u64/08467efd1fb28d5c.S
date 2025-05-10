@@ -27,13 +27,12 @@ func00000000000003bb:
 	ret
 
 func00000000000003ff:
-	slli	a3, a1, 3
-	slli	a1, a1, 7
-	sub	a1, a1, a3
-	lui	a3, 1
-	add	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh3add	a1, a1, a2
+	lui	a2, 1
 	sh1add	a0, a0, a1
-	addiw	a1, a3, 857
+	addiw	a1, a2, 857
 	add	a0, a0, a1
 	ret
 
@@ -57,11 +56,10 @@ func0000000000000333:
 	ret
 
 func0000000000000033:
-	slli	a3, a1, 3
-	slli	a1, a1, 7
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh3add	a1, a1, a2
 	slli	a0, a0, 4
-	sub	a1, a1, a3
-	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -160
 	ret

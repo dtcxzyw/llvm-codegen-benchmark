@@ -12,10 +12,9 @@ func000000000000003f:
 	ret
 
 func0000000000000030:
-	slli	a2, a0, 3
-	slli	a0, a0, 7
-	sub	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh3add	a0, a0, a1
 	addi	a0, a0, 160
 	ret
 

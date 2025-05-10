@@ -5,9 +5,9 @@ func0000000000000003:
 	mv	a1, a2
 .LBB0_2:
 	slli	a1, a1, 32
-	li	a2, 5
-	slli	a2, a2, 37
-	mulhu	a1, a1, a2
+	srli	a2, a1, 27
+	srli	a1, a1, 25
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

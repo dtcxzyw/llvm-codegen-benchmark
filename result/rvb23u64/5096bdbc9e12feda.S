@@ -14,10 +14,10 @@ func0000000000000010:
 	ret
 
 func0000000000000019:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
-	srliw	a1, a1, 6
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 34
+	srli	a1, a1, 38
 	subw	a0, a0, a1
 	ret
 

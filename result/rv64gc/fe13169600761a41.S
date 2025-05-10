@@ -54,14 +54,15 @@ func000000000000007f:
 	ret
 
 func0000000000000016:
-	li	a3, 320
-	mul	a1, a1, a3
-	li	a3, 5
+	slli	a3, a1, 6
+	slli	a1, a1, 8
 	slli	a2, a2, 32
-	slli	a3, a3, 35
+	add	a1, a1, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 27
 	add	a0, a0, a1
-	mulhu	a1, a2, a3
-	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000014:

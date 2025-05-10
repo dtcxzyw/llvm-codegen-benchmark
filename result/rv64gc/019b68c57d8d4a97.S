@@ -7,10 +7,11 @@ func000000000000000b:
 	mul	a0, a0, a1
 	srli	a0, a0, 17
 	mul	a1, a0, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 59
-	li	a2, 10
-	mul	a1, a1, a2
+	srli	a2, a1, 10
+	srli	a1, a1, 11
+	andi	a2, a2, 62
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	ori	a0, a0, 48
 	zext.b	a0, a0

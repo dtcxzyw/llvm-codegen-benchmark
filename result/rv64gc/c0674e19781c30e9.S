@@ -4,8 +4,9 @@ func0000000000000007:
 	bltu	a0, a1, .LBB0_2
 	li	a0, 2
 .LBB0_2:
-	li	a1, 20
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	or	a0, a0, a1
 	ret
 
 .LCPI1_0:

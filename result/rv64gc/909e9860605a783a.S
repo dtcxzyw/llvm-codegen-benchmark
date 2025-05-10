@@ -1,7 +1,8 @@
 func000000000000060a:
 	sext.w	a0, a0
-	li	a3, 160
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -16
 	slt	a0, a0, a1
@@ -18,8 +19,9 @@ func0000000000000208:
 
 func000000000000028a:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	slt	a0, a0, a1
@@ -104,8 +106,9 @@ func0000000000000701:
 
 func0000000000000008:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	sltu	a0, a0, a1

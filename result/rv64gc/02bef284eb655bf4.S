@@ -1,8 +1,9 @@
 func000000000000002f:
 	srli	a3, a2, 8
 	lui	a4, 16
-	li	a5, 40
-	mul	a0, a0, a5
+	slli	a5, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a5
 	srliw	a5, a2, 24
 	addi	a4, a4, -256
 	and	a3, a3, a4

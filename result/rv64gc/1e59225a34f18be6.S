@@ -28,8 +28,9 @@ func0000000000000020:
 	ret
 
 func0000000000000000:
-	li	a3, 80
-	mulw	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 6
+	addw	a2, a2, a3
 	lui	a3, 419430
 	addiw	a3, a3, 1639
 	mul	a2, a2, a3

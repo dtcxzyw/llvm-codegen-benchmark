@@ -2,24 +2,27 @@ func000000000000001f:
 	slli	a2, a2, 48
 	beqz	a2, .LBB0_2
 	li	a2, 58
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 52
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000080:
 	slli	a2, a2, 48
-	li	a3, 136
+	slli	a3, a1, 3
+	slli	a1, a1, 7
 	srli	a2, a2, 48
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	sltiu	a2, a2, 5
 	neg	a2, a2
 	andi	a2, a2, -136

@@ -14,9 +14,9 @@ func000000000000008c:
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 5
 	add	a2, a2, a3
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 2
 	subw	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1

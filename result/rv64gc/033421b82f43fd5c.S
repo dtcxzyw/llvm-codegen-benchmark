@@ -1,9 +1,9 @@
 func00000000000000f3:
 	addi	a1, a1, -1
-	li	a2, 17
-	slli	a2, a2, 36
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 24
+	add	a1, a1, a2
 	lui	a2, 3
 	addiw	a2, a2, 232
 	add	a0, a0, a2
@@ -35,10 +35,10 @@ func000000000000007f:
 
 func0000000000000073:
 	addi	a1, a1, -1
-	li	a2, 9
-	slli	a2, a2, 35
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 29
+	srli	a1, a1, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 256
 	ret

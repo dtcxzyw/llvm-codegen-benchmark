@@ -4,9 +4,9 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	li	a1, 257
-	slli	a1, a1, 24
-	slli	a0, a0, 56
-	mulhu	a0, a0, a1
+	zext.b	a0, a0
+	slli	a1, a0, 16
+	slli	a0, a0, 24
+	or	a0, a0, a1
 	ret
 

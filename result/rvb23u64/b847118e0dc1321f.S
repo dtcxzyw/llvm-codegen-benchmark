@@ -50,10 +50,10 @@ func0000000000000074:
 	ld	a1, %lo(.LCPI3_0)(a1)
 	zext.h	a0, a0
 	mulhu	a1, a0, a1
-	slli	a2, a1, 6
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	sltiu	a0, a0, 10
 	ret
 

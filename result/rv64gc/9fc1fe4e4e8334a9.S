@@ -1,6 +1,7 @@
 func000000000000000b:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
@@ -9,8 +10,9 @@ func000000000000000b:
 func00000000000000fb:
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	li	a1, 640
-	mul	a1, a2, a1
+	slli	a1, a2, 7
+	slli	a2, a2, 9
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
@@ -18,8 +20,9 @@ func00000000000000fb:
 func000000000000005b:
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	li	a1, 640
-	mul	a1, a2, a1
+	slli	a1, a2, 7
+	slli	a2, a2, 9
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 32
 	ret

@@ -59,13 +59,13 @@ func0000000000000006:
 
 func000000000000001a:
 	addi	a0, a0, -143
-	slli	a1, a0, 1
-	slli	a0, a0, 5
-	subw	a0, a0, a1
 	lui	a1, 559241
+	sh1add	a0, a0, a0
 	addi	a1, a1, -1911
-	slli	a0, a0, 32
+	sh2add	a0, a0, a0
+	slli	a0, a0, 1
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 37
 	ret

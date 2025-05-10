@@ -25,8 +25,9 @@ func0000000000000000:
 	slli	a2, a2, 32
 	mulhu	a0, a0, a2
 	srli	a0, a0, 35
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	subw	a0, a1, a0
 	ret
 

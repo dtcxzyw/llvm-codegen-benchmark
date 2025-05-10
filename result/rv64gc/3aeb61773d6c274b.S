@@ -8,9 +8,10 @@ func000000000000007f:
 	ret
 
 func000000000000006b:
-	li	a3, 40
+	slli	a3, a0, 3
+	slli	a0, a0, 5
 	slli	a1, a1, 32
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	srli	a1, a1, 30
 	add	a0, a0, a1
@@ -18,9 +19,10 @@ func000000000000006b:
 	ret
 
 func0000000000000078:
-	li	a3, 160
+	slli	a3, a0, 5
+	slli	a0, a0, 7
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -28,9 +30,10 @@ func0000000000000078:
 	ret
 
 func000000000000007b:
-	li	a3, 160
+	slli	a3, a0, 5
+	slli	a0, a0, 7
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -48,9 +51,10 @@ func0000000000000060:
 	ret
 
 func000000000000006f:
-	li	a3, 132
+	slli	a3, a0, 2
+	slli	a0, a0, 7
 	slli	a1, a1, 32
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1

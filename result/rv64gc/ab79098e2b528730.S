@@ -21,9 +21,10 @@ func000000000000003a:
 	ret
 
 func0000000000000030:
-	li	a3, 260
+	slli	a3, a0, 2
+	slli	a0, a0, 8
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1

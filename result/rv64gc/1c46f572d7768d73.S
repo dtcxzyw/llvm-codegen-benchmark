@@ -63,16 +63,13 @@ func000000000000003c:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 80
-	li	a3, 40
-	mul	a1, a1, a3
-	add	a0, a0, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
+	j	.LBB5_3
 .LBB5_2:
 	li	a2, 120
-	li	a3, 40
-	mul	a1, a1, a3
+.LBB5_3:
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

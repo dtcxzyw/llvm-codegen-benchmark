@@ -47,9 +47,10 @@ func00000000000000f6:
 func0000000000000004:
 	slli	a3, a1, 7
 	sh3add	a1, a1, a3
-	li	a3, 272
+	slli	a3, a2, 4
+	slli	a2, a2, 8
 	add	a0, a0, a1
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a2
 	addi	a0, a0, 272
 	ret

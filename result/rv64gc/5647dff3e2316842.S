@@ -8,10 +8,10 @@ func0000000000000064:
 
 func0000000000000061:
 	addi	a2, a2, 2
-	li	a3, 257
-	slli	a3, a3, 34
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
+	srli	a3, a2, 30
+	srli	a2, a2, 22
+	add	a2, a2, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

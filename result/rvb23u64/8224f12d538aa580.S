@@ -23,13 +23,12 @@ func0000000000000040:
 	ret
 
 func0000000000000054:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	lui	a2, 14648
 	add	a0, a0, a1
-	lui	a1, 14648
-	sub	a2, a2, a3
-	add	a0, a0, a2
-	addiw	a1, a1, 1792
+	addiw	a1, a2, 1792
 	mul	a0, a0, a1
 	ret
 
@@ -55,13 +54,12 @@ func0000000000000055:
 	ret
 
 func0000000000000041:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	sub	a2, a2, a3
-	add	a0, a0, a2
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	mul	a0, a0, a1
 	ret
 

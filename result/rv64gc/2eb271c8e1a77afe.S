@@ -18,8 +18,9 @@ func000000000000003f:
 
 func0000000000000030:
 	andi	a1, a1, -2
-	li	a2, 160
-	mul	a0, a0, a2
+	slli	a2, a0, 5
+	slli	a0, a0, 7
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -16
 	ret
@@ -34,8 +35,9 @@ func000000000000001c:
 
 func0000000000000000:
 	andi	a1, a1, -4
-	li	a2, 20
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 28
 	ret
@@ -52,8 +54,9 @@ func0000000000000008:
 	lui	a2, 524288
 	addi	a2, a2, -4
 	and	a1, a1, a2
-	li	a2, 36
-	mul	a0, a0, a2
+	slli	a2, a0, 2
+	slli	a0, a0, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 80
 	ret

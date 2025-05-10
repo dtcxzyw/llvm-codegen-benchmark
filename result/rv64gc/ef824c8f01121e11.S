@@ -32,9 +32,10 @@ func000000000000002f:
 	ld	a2, %lo(.LCPI2_0)(a2)
 	addi	a1, a1, -1
 	mulhu	a1, a1, a2
+	andi	a2, a1, -512
 	srli	a1, a1, 9
-	li	a2, 576
-	mul	a1, a1, a2
+	slli	a1, a1, 6
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

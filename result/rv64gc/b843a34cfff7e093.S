@@ -1,6 +1,7 @@
 func0000000000000061:
-	li	a1, 20
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	andi	a0, a0, -16
 	seqz	a0, a0
 	ret

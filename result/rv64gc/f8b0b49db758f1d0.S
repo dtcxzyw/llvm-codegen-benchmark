@@ -18,14 +18,16 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	lui	a2, 69632
-	mulw	a1, a1, a2
+	slli	a2, a1, 24
+	slli	a1, a1, 28
+	addw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000005:
-	lui	a2, 4112
-	mulw	a1, a1, a2
+	slli	a2, a1, 16
+	slli	a1, a1, 24
+	addw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

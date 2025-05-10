@@ -2,14 +2,16 @@ func000000000000009a:
 	sext.w	a1, a1
 	bltz	a1, .LBB0_2
 	addi	a2, a2, 2
-	li	a1, 40
-	mul	a1, a2, a1
+	slli	a1, a2, 3
+	slli	a2, a2, 5
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 .LBB0_2:
 	addi	a2, a2, 1
-	li	a1, 40
-	mul	a1, a2, a1
+	slli	a1, a2, 3
+	slli	a2, a2, 5
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

@@ -3,8 +3,9 @@ func0000000000000008:
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 

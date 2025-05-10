@@ -22,9 +22,10 @@ func00000000000001b0:
 
 func0000000000000080:
 	addi	a2, a2, 3
-	li	a3, 160
 	srli	a2, a2, 2
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

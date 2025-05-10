@@ -1,6 +1,7 @@
 func0000000000000004:
-	li	a1, 40
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	lui	a1, 1
 	addiw	a0, a0, 16
 	addiw	a1, a1, 1
@@ -8,8 +9,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addiw	a0, a0, 16
 	sgtz	a0, a0
 	ret

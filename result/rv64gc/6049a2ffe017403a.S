@@ -10,11 +10,11 @@ func000000000000003e:
 	ret
 
 func000000000000000c:
-	li	a3, 17
 	slli	a2, a2, 32
 	slli	a0, a0, 3
-	slli	a3, a3, 36
-	mulhu	a2, a2, a3
+	srli	a3, a2, 28
+	srli	a2, a2, 24
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 24

@@ -7,9 +7,10 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	li	a3, 144
+	slli	a3, a2, 4
+	slli	a2, a2, 7
 	slli	a0, a0, 63
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	srai	a0, a0, 63
 	add	a1, a1, a2
 	andi	a0, a0, 72

@@ -11,10 +11,10 @@ func000000000000001e:
 	srli	a0, a0, 39
 	srli	a2, a2, 37
 	add	a0, a0, a1
-	slli	a1, a2, 6
-	slli	a2, a2, 2
-	subw	a2, a2, a1
-	add	a0, a0, a2
+	sh1add	a1, a2, a2
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
+	subw	a0, a0, a1
 	zext.w	a0, a0
 	li	a1, 103
 	mul	a0, a0, a1

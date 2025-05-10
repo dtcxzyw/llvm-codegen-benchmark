@@ -4,8 +4,9 @@ func000000000000000f:
 	li	a1, 4
 	bgeu	a1, a0, .LBB0_4
 .LBB0_2:
-	li	a1, 136
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 7
+	add	a0, a0, a1
 	ret
 .LBB0_3:
 	mv	a0, a1
@@ -13,8 +14,9 @@ func000000000000000f:
 	bltu	a1, a0, .LBB0_2
 .LBB0_4:
 	li	a0, 4
-	li	a1, 136
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 7
+	add	a0, a0, a1
 	ret
 
 func000000000000000e:
@@ -42,8 +44,9 @@ func000000000000000c:
 	li	a1, 4
 	bgeu	a1, a0, .LBB2_4
 .LBB2_2:
-	li	a1, 80
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 .LBB2_3:
 	mv	a0, a1
@@ -51,7 +54,8 @@ func000000000000000c:
 	bltu	a1, a0, .LBB2_2
 .LBB2_4:
 	li	a0, 4
-	li	a1, 80
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 

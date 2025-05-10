@@ -1,6 +1,7 @@
 func000000000000002f:
-	li	a3, 36
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	mul	a1, a1, a2

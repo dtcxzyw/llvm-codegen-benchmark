@@ -1,6 +1,7 @@
 func0000000000000000:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	li	a3, 255
 	add	a1, a1, a2
 	lui	a2, 15625

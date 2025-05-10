@@ -37,7 +37,8 @@ func0000000000000015:
 func0000000000000014:
 	addi	a1, a1, -1
 	mul	a0, a0, a1
-	li	a1, 18
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 4
+	addw	a0, a0, a1
 	ret
 

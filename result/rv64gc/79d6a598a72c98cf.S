@@ -7,9 +7,9 @@ func0000000000000037:
 	ret
 
 func0000000000000036:
-	srai	a1, a1, 32
-	li	a3, 40
-	mul	a1, a1, a3
+	srai	a3, a1, 29
+	srai	a1, a1, 27
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -36,15 +36,15 @@ func0000000000000000:
 	lui	a1, 286331
 	lui	a2, 34953
 	addiw	a1, a1, 627
-	slli	a2, a2, 4
 	mul	a0, a0, a1
 	srli	a0, a0, 46
 	slli	a1, a0, 48
+	slli	a2, a2, 4
 	mulhu	a1, a1, a2
 	srli	a1, a1, 21
-	slli	a2, a1, 6
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 

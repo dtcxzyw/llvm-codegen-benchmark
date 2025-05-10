@@ -1,9 +1,10 @@
 func000000000000001d:
-	li	a2, 257
-	slli	a3, a2, 32
-	slli	a2, a2, 48
-	mul	a1, a1, a3
-	mul	a0, a0, a2
+	slli	a2, a1, 32
+	slli	a1, a1, 40
+	add	a1, a1, a2
+	slli	a2, a0, 48
+	slli	a0, a0, 56
+	add	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

@@ -25,10 +25,10 @@ func00000000000000ff:
 	ret
 
 func000000000000001c:
-	zext.w	a2, a2
 	sext.w	a0, a0
-	li	a3, 1040
-	mul	a2, a2, a3
+	slli.uw	a3, a2, 4
+	slli.uw	a2, a2, 10
+	add	a2, a2, a3
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 268

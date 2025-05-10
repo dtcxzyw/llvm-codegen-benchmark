@@ -16,8 +16,9 @@ func00000000000003c8:
 
 func00000000000003c1:
 	sext.w	a2, a2
-	li	a3, 40
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, -24
 	xor	a0, a0, a1

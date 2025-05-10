@@ -1,12 +1,12 @@
 func0000000000000638:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sh1add	a1, a1, a1
 	lui	a2, 1048555
-	addw	a0, a0, a1
-	addi	a1, a2, -384
-	addw	a1, a1, a0
-	minu	a0, a1, a0
+	sh2add	a1, a1, a1
+	addi	a2, a2, -384
+	sh2add	a0, a1, a0
+	sext.w	a1, a0
+	addw	a0, a0, a2
+	minu	a0, a0, a1
 	ret
 
 func00000000000007b8:

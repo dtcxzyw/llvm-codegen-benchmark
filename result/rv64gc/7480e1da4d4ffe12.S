@@ -5,9 +5,10 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	srliw	a0, a0, 1
-	li	a1, 20
-	mulw	a0, a0, a1
+	srli	a0, a0, 1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	addw	a0, a0, a1
 	ret
 
 func0000000000000005:

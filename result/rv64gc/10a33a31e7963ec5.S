@@ -15,7 +15,8 @@ func0000000000000003:
 	mv	a1, a2
 .LBB1_2:
 	sext.w	a1, a1
-	li	a0, 136
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 7
+	add	a0, a0, a1
 	ret
 

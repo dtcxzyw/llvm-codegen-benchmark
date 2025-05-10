@@ -1,8 +1,9 @@
 func0000000000000064:
 	li	a3, 8
 	bgeu	a1, a3, .LBB0_2
-	li	a0, 80
-	mul	a0, a1, a0
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	add	a0, a0, a1
 	add	a0, a0, a2
 .LBB0_2:
 	ret

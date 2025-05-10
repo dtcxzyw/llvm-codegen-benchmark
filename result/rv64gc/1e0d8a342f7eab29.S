@@ -11,8 +11,9 @@ func000000000000000b:
 .LBB0_2:
 	bnez	a0, .LBB0_6
 .LBB0_3:
-	li	a0, 40
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 .LBB0_4:
 	mv	a3, a2

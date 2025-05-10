@@ -3,8 +3,9 @@ func000000000000000f:
 	mv	a0, a1
 	beqz	a3, .LBB0_2
 	srli	a2, a2, 1
-	li	a1, 80
-	mul	a1, a2, a1
+	slli	a1, a2, 4
+	slli	a2, a2, 6
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 80
 .LBB0_2:

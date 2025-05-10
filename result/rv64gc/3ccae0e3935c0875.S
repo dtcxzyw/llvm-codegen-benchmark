@@ -33,10 +33,12 @@ func0000000000000006:
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
-	srli	a1, a1, 18
+	srai	a1, a1, 16
+	srli	a1, a1, 2
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
@@ -50,10 +52,12 @@ func000000000000000a:
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
-	srli	a1, a1, 18
+	srai	a1, a1, 16
+	srli	a1, a1, 2
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
@@ -68,10 +72,12 @@ func0000000000000008:
 	addiw	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
-	srli	a1, a1, 18
+	srai	a1, a1, 16
+	srli	a1, a1, 2
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48

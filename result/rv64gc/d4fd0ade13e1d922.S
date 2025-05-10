@@ -17,9 +17,10 @@ func00000000000001df:
 	ret
 
 func000000000000019c:
-	li	a3, 1040
+	slli	a3, a1, 4
+	slli	a1, a1, 10
 	sext.w	a0, a0
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1

@@ -15,10 +15,11 @@ func000000000000002a:
 	ret
 
 func0000000000000022:
-	li	a3, 10
+	slli	a3, a2, 1
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	lui	a1, 838861
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	addiw	a1, a1, -819
 	add	a0, a0, a2
 	slli	a2, a1, 32

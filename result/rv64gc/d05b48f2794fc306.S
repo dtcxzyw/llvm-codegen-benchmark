@@ -7,9 +7,10 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	li	a3, 40
+	slli	a3, a1, 3
+	slli	a1, a1, 5
 	srli	a2, a2, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	andi	a2, a2, -8
 	add	a0, a0, a2

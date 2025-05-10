@@ -51,8 +51,9 @@ func0000000000000000:
 	ret
 
 func0000000000000014:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 128
 	ret
@@ -65,8 +66,9 @@ func0000000000000010:
 	ret
 
 func0000000000000030:
-	li	a2, 40
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

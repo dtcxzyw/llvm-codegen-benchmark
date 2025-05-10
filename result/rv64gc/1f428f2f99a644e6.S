@@ -17,8 +17,9 @@ func0000000000000001:
 func0000000000000081:
 	bnez	a0, .LBB2_2
 	sext.w	a2, a2
-	li	a0, 10
-	mul	a0, a2, a0
+	slli	a0, a2, 1
+	slli	a2, a2, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 .LBB2_2:
 	ret

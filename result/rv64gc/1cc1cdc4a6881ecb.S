@@ -15,8 +15,9 @@ func0000000000000090:
 	ret
 
 func00000000000000d0:
-	li	a3, 40
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

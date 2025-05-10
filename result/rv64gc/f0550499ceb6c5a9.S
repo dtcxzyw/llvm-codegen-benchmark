@@ -45,9 +45,10 @@ func000000000000007e:
 
 func0000000000000043:
 	sext.w	a2, a2
-	li	a3, 144
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -80
@@ -65,11 +66,11 @@ func0000000000000042:
 	ret
 
 func000000000000003f:
-	li	a3, 9
 	slli	a2, a2, 32
 	slli	a0, a0, 3
-	slli	a3, a3, 35
-	mulhu	a2, a2, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 26
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8

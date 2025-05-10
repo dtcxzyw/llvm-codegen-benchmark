@@ -9,9 +9,10 @@ func000000000000001c:
 	ret
 
 func000000000000005f:
-	li	a3, 528
+	slli	a3, a2, 4
+	slli	a2, a2, 9
 	slli	a0, a0, 48
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	srli	a0, a0, 47
 	add	a0, a0, a1

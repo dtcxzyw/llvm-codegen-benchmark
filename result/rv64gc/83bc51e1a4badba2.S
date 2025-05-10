@@ -73,8 +73,9 @@ func0000000000000060:
 	sext.w	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1
-	li	a2, 288
-	mul	a1, a1, a2
+	slli	a2, a1, 5
+	slli	a1, a1, 8
+	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

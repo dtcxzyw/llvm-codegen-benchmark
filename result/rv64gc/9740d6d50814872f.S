@@ -1,8 +1,9 @@
 func0000000000000005:
 	li	a1, 64
 	sub	a1, a1, a0
-	li	a0, 40
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 
 func000000000000000f:
@@ -15,8 +16,9 @@ func000000000000000f:
 func0000000000000007:
 	li	a1, 7
 	sub	a1, a1, a0
-	li	a0, 72
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 6
+	add	a0, a0, a1
 	ret
 
 func0000000000000000:

@@ -7,11 +7,11 @@ func00000000000001ff:
 	ret
 
 func00000000000000cc:
-	li	a3, 65
 	slli	a2, a2, 32
 	slli	a0, a0, 2
-	slli	a3, a3, 36
-	mulhu	a2, a2, a3
+	srli	a3, a2, 28
+	srli	a2, a2, 22
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 128

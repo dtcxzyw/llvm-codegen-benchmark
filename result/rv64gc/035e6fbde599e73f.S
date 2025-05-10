@@ -47,8 +47,9 @@ func0000000000000008:
 
 func000000000000006a:
 	sext.w	a0, a0
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 
@@ -61,8 +62,9 @@ func0000000000000004:
 
 func0000000000000044:
 	sext.w	a0, a0
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
@@ -127,8 +129,9 @@ func0000000000000021:
 
 func0000000000000067:
 	sext.w	a0, a0
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -181,16 +184,18 @@ func000000000000002c:
 
 func0000000000000005:
 	sext.w	a0, a0
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000009:
 	sext.w	a0, a0
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

@@ -32,16 +32,18 @@ func0000000000000000:
 	ret
 
 func00000000000000d5:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slliw	a0, a0, 6
 	ret
 
 func00000000000000d7:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slliw	a0, a0, 4

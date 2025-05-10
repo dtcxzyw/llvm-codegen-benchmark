@@ -1,20 +1,20 @@
 func0000000000000015:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
-	lui	a2, 14648
-	addw	a0, a0, a1
-	addiw	a1, a2, 1792
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 14648
+	sext.w	a0, a0
+	addiw	a1, a1, 1792
 	mul	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
-	lui	a2, 244
-	addw	a0, a0, a1
-	addiw	a1, a2, 576
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 244
+	sext.w	a0, a0
+	addiw	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 

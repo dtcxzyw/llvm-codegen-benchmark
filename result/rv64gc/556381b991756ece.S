@@ -17,8 +17,9 @@ func00000000000001df:
 
 func00000000000001ff:
 	slli	a2, a2, 3
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 52
@@ -34,8 +35,9 @@ func0000000000000193:
 
 func00000000000000fe:
 	slli	a2, a2, 1
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 77
@@ -43,8 +45,9 @@ func00000000000000fe:
 
 func00000000000000de:
 	slli	a2, a2, 1
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 77

@@ -29,8 +29,9 @@ func0000000000000368:
 
 func00000000000003e1:
 	sext.w	a2, a2
-	li	a3, 36
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 36
 	xor	a0, a0, a1
@@ -163,10 +164,10 @@ func00000000000001e4:
 	ret
 
 func0000000000000064:
-	li	a3, 5
 	slli	a2, a2, 32
-	slli	a3, a3, 36
-	mulhu	a2, a2, a3
+	srli	a3, a2, 28
+	srli	a2, a2, 26
+	add	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 264
 	sltu	a0, a0, a1

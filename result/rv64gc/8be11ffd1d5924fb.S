@@ -1,9 +1,8 @@
 func0000000000000004:
 	sub	a1, a1, a0
-	li	a0, 9
-	srli	a1, a1, 3
-	slli	a0, a0, 34
-	mul	a0, a1, a0
+	slli	a0, a1, 31
+	slli	a1, a1, 34
+	add	a0, a0, a1
 	ret
 
 func0000000000000000:
@@ -22,9 +21,9 @@ func0000000000000017:
 
 func0000000000000014:
 	sub	a1, a1, a0
-	srli	a1, a1, 3
-	li	a0, 80
-	mul	a0, a1, a0
+	slli	a0, a1, 1
+	slli	a1, a1, 3
+	add	a0, a0, a1
 	ret
 
 func0000000000000006:

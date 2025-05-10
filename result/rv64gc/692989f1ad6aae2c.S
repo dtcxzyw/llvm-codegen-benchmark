@@ -17,8 +17,9 @@ func00000000000002a4:
 	ret
 
 func0000000000000004:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -10
 	sltiu	a0, a0, -9
@@ -41,8 +42,9 @@ func00000000000007a4:
 	ret
 
 func00000000000006a4:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 576
 	sltiu	a0, a0, 128

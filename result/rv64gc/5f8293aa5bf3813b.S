@@ -1,9 +1,9 @@
 func000000000000001b:
-	addi	a1, a1, 1
-	li	a2, 40
-	mul	a1, a1, a2
+	slli	a2, a1, 5
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a0, a0, 72
 	ret
 
 func0000000000000018:

@@ -63,9 +63,10 @@ func000000000000001e:
 	ret
 
 func000000000000001b:
-	li	a1, 40
+	slli	a1, a0, 3
+	slli	a0, a0, 5
 	lui	a2, 838861
-	mul	a0, a0, a1
+	add	a0, a0, a1
 	addiw	a1, a2, -819
 	addi	a0, a0, -40
 	slli	a2, a1, 32
@@ -90,10 +91,11 @@ func0000000000000008:
 .LCPI7_0:
 	.quad	-8198552921648689607
 func0000000000000001:
-	li	a1, 144
+	slli	a1, a0, 4
+	slli	a0, a0, 7
 	lui	a2, %hi(.LCPI7_0)
 	ld	a2, %lo(.LCPI7_0)(a2)
-	mul	a0, a0, a1
+	add	a0, a0, a1
 	addi	a0, a0, -144
 	srli	a0, a0, 4
 	mul	a0, a0, a2

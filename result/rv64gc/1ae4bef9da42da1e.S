@@ -21,16 +21,16 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	lui	a1, 69632
-	mulw	a0, a0, a1
+	slli	a1, a0, 24
+	slli	a0, a0, 28
+	addw	a0, a0, a1
 	ret
 
 func0000000000000002:
-	li	a1, 257
-	slli	a1, a1, 24
-	slli	a0, a0, 56
-	mulhu	a0, a0, a1
-	sext.w	a0, a0
+	zext.b	a1, a0
+	slliw	a0, a0, 24
+	slliw	a1, a1, 16
+	or	a0, a0, a1
 	ret
 
 func0000000000000001:

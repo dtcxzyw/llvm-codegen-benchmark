@@ -8,11 +8,14 @@ func0000000000000060:
 	ret
 
 func000000000000006f:
-	li	a3, 40
+	slli	a3, a0, 3
+	slli	a0, a0, 5
 	zext.b	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret

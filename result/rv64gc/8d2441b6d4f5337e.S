@@ -1,7 +1,8 @@
 func000000000000018c:
-	li	a3, 80
+	slli	a3, a1, 4
+	slli	a1, a1, 6
 	zext.b	a0, a0
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 245

@@ -1,20 +1,18 @@
 func0000000000000031:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
-	lui	a2, 21
-	add	a0, a0, a1
-	addi	a1, a2, 384
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 21
+	addi	a1, a1, 384
 	addw	a0, a0, a1
 	ret
 
 func0000000000000037:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
-	lui	a2, 1048112
-	add	a0, a0, a1
-	addi	a1, a2, -256
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 1048112
+	addi	a1, a1, -256
 	addw	a0, a0, a1
 	ret
 

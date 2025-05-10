@@ -1,8 +1,8 @@
 func000000000000001f:
-	li	a2, 5
 	slli	a1, a1, 32
-	slli	a2, a2, 33
-	mulhu	a1, a1, a2
+	srli	a2, a1, 31
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -48
@@ -37,15 +37,15 @@ func000000000000003f:
 
 func000000000000002f:
 	li	a2, 1
+	slli	a0, a0, 32
 	slli	a2, a2, 32
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
 	and	a1, a1, a2
-	li	a2, 5
-	slli	a0, a0, 32
-	slli	a2, a2, 33
-	mulhu	a0, a0, a2
+	srli	a2, a0, 31
+	srli	a0, a0, 29
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

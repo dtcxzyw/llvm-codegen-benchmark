@@ -34,10 +34,10 @@ func0000000000000003:
 	li	a0, 288
 	ret
 .LBB2_2:
-	li	a0, 9
-	slli	a0, a0, 35
 	slli	a1, a1, 32
-	mulhu	a0, a1, a0
+	srli	a0, a1, 29
+	srli	a1, a1, 26
+	add	a0, a0, a1
 	ret
 
 func0000000000000002:

@@ -1,17 +1,18 @@
 func000000000000001c:
 	srli	a1, a1, 2
-	li	a2, 5
-	slli	a2, a2, 36
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
 	slli	a1, a1, 58
 	srli	a1, a1, 61
-	li	a2, 144
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 7
+	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

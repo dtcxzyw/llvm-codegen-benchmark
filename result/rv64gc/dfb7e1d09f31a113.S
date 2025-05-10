@@ -15,16 +15,18 @@ func0000000000000008:
 	ret
 
 func000000000000062a:
-	li	a3, 160
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	addw	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
 
 func000000000000060a:
-	li	a3, 160
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	addw	a0, a0, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0

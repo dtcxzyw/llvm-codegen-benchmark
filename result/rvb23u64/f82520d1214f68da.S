@@ -16,11 +16,10 @@ func0000000000000017:
 	lui	a2, 1
 	sext.w	a0, a0
 	addiw	a2, a2, -496
+	sh1add	a0, a0, a0
 	mul	a1, a1, a2
-	slli	a2, a0, 2
-	slli	a0, a0, 6
-	sub	a0, a0, a2
-	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	ret
 
 func0000000000000004:

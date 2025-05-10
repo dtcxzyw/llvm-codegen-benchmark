@@ -1,17 +1,19 @@
 func0000000000000050:
 	li	a3, -480
 	mul	a2, a2, a3
-	li	a3, 80
+	slli	a3, a1, 4
+	slli	a1, a1, 6
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret
 
 func00000000000000f0:
-	li	a3, 72
+	slli	a3, a2, 3
+	slli	a2, a2, 6
 	slli	a1, a1, 3
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8
@@ -87,9 +89,10 @@ func00000000000000c2:
 func0000000000000010:
 	li	a3, -408
 	mul	a2, a2, a3
-	li	a3, 136
+	slli	a3, a1, 3
+	slli	a1, a1, 7
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, -136
 	ret

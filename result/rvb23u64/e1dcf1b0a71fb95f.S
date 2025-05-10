@@ -29,8 +29,8 @@ func000000000000000c:
 func000000000000001f:
 	zext.b	a1, a1
 	mul	a0, a0, a1
-	slli	a1, a0, 2
-	slli	a0, a0, 6
-	subw	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	slliw	a0, a0, 2
 	ret
 

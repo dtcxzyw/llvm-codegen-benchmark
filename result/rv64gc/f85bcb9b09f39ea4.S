@@ -51,8 +51,9 @@ func0000000000000441:
 	ret
 
 func000000000000054c:
-	li	a3, 40
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	add	a0, a0, a1
 	add	a2, a2, a0
 	addi	a1, a2, -40
@@ -61,8 +62,9 @@ func000000000000054c:
 	ret
 
 func0000000000000544:
-	li	a3, 40
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	add	a0, a0, a1
 	add	a2, a2, a0
 	addi	a1, a2, -80

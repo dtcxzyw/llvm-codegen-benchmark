@@ -6,8 +6,9 @@ func0000000000000000:
 	beqz	a0, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 10
-	mulw	a2, a1, a2
+	slli	a2, a1, 1
+	slli	a3, a1, 3
+	addw	a2, a2, a3
 	bnez	a0, .LBB0_4
 .LBB0_3:
 	mv	a1, a2

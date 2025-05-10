@@ -7,8 +7,9 @@ func000000000000000d:
 	ret
 
 func000000000000000e:
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	lui	a1, 1
 	addi	a1, a1, -4
 	sllw	a0, a1, a0
@@ -16,8 +17,9 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	li	a1, 1023
 	sllw	a0, a1, a0
 	not	a0, a0

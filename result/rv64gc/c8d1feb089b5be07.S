@@ -25,11 +25,11 @@ func000000000000001c:
 	slli	a2, a2, 34
 	addi	a2, a2, -84
 	add	a1, a1, a2
-	li	a2, 5
 	srli	a1, a1, 2
 	slli	a1, a1, 32
-	slli	a2, a2, 36
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

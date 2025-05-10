@@ -27,10 +27,10 @@ func0000000000000030:
 
 func000000000000000f:
 	addi	a0, a0, -1
-	li	a1, 65
-	slli	a1, a1, 35
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 29
+	srli	a0, a0, 23
+	add	a0, a0, a1
 	addi	a0, a0, 536
 	ret
 

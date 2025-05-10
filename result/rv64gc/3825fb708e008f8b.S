@@ -1,7 +1,8 @@
 func000000000000060a:
 	addi	a1, a1, -48
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	lui	a2, 16
 	zext.b	a1, a1
 	addw	a0, a0, a1
@@ -11,9 +12,10 @@ func000000000000060a:
 
 func00000000000003f8:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
@@ -21,8 +23,9 @@ func00000000000003f8:
 
 func0000000000000601:
 	addi	a1, a1, -48
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	lui	a2, 524288
 	zext.b	a1, a1
 	addw	a0, a0, a1
@@ -33,18 +36,20 @@ func0000000000000601:
 
 func0000000000000604:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
 
 func0000000000000608:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1
@@ -52,9 +57,10 @@ func0000000000000608:
 
 func00000000000006ac:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mulw	a0, a0, a2
+	addw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -62,9 +68,10 @@ func00000000000006ac:
 
 func0000000000000008:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
@@ -72,9 +79,10 @@ func0000000000000008:
 
 func0000000000000668:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	snez	a0, a0
@@ -82,9 +90,10 @@ func0000000000000668:
 
 func00000000000006aa:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 1001
 	xori	a0, a0, 1
@@ -92,18 +101,20 @@ func00000000000006aa:
 
 func00000000000006a6:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 
 func000000000000060c:
 	addi	a1, a1, -48
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	zext.b	a1, a1
-	mulw	a0, a0, a2
+	addw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

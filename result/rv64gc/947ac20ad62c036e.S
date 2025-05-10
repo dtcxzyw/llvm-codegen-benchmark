@@ -8,8 +8,9 @@ func0000000000000000:
 	ret
 
 func00000000000000ff:
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
@@ -37,8 +38,9 @@ func0000000000000003:
 	ret
 
 func00000000000000c0:
-	li	a3, 18
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 18
@@ -55,52 +57,58 @@ func0000000000000040:
 	ret
 
 func0000000000000020:
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 676
 	ret
 
 func000000000000002a:
-	li	a3, 20
+	slli	a3, a2, 2
+	slli	a2, a2, 4
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
 
 func00000000000000f0:
-	li	a3, 544
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 9
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
 
 func00000000000000fa:
-	li	a3, 544
+	slli	a3, a2, 5
+	slli	a2, a2, 9
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -548
 	ret
 
 func00000000000000fb:
-	li	a3, 544
+	slli	a3, a2, 5
+	slli	a2, a2, 9
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 540
 	ret
 
 func00000000000000fc:
-	li	a3, 544
+	slli	a3, a2, 5
+	slli	a2, a2, 9
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4

@@ -27,15 +27,17 @@ func0000000000000024:
 func0000000000000006:
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
-	li	a3, 10
-	mul	a1, a1, a3
+	slli	a3, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	srli	a1, a1, 16
 	snez	a1, a1
 	and	a0, a0, a1

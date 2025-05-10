@@ -22,9 +22,9 @@ func0000000000000054:
 	ret
 
 func0000000000000040:
-	slli	a2, a0, 1
-	slli	a0, a0, 5
-	subw	a0, a0, a2
-	addw	a0, a0, a1
+	sh1add	a0, a0, a0
+	sh2add	a0, a0, a0
+	sh1add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 

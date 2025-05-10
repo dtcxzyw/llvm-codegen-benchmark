@@ -23,7 +23,8 @@ func00000000000000ed:
 	slli	a1, a1, 24
 	or	a0, a0, a2
 	or	a0, a0, a1
-	li	a1, 18
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 4
+	addw	a0, a0, a1
 	ret
 

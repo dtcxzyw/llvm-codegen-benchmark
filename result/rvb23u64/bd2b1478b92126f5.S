@@ -37,21 +37,19 @@ func000000000000000a:
 	ret
 
 func00000000000002aa:
-	slli	a3, a2, 1
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh1add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	slti	a0, a1, 1025
 	xori	a0, a0, 1
 	ret
 
 func00000000000002a6:
-	slli	a3, a2, 1
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh1add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	slti	a0, a1, -1075
 	ret
 

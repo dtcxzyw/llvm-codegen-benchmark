@@ -21,11 +21,14 @@ func0000000000000006:
 	ret
 
 func0000000000000003:
-	andi	a2, a0, 1
-	li	a0, 80
-	bnez	a2, .LBB2_2
-	mul	a0, a1, a0
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	add	a0, a0, a1
+	ret
 .LBB2_2:
+	li	a0, 80
 	ret
 
 func0000000000000001:
@@ -50,8 +53,9 @@ func0000000000000005:
 func0000000000000002:
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
-	li	a0, 160
-	mul	a0, a1, a0
+	slli	a0, a1, 5
+	slli	a1, a1, 7
+	add	a0, a0, a1
 	ret
 .LBB5_2:
 	li	a0, 80

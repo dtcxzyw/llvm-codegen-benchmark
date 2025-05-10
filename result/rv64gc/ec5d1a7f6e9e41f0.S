@@ -40,7 +40,8 @@ func0000000000000000:
 	srliw	a1, a1, 29
 	add	a0, a0, a1
 	srliw	a0, a0, 3
-	li	a1, 144
-	mulw	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 7
+	addw	a0, a0, a1
 	ret
 

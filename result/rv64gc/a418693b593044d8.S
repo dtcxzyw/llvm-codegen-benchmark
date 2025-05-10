@@ -27,9 +27,9 @@ func000000000000000f:
 	mv	a1, a2
 .LBB2_2:
 	slli	a1, a1, 32
-	li	a2, 65
-	slli	a2, a2, 36
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 22
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1032
 	ret

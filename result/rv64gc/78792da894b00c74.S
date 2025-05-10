@@ -31,8 +31,9 @@ func0000000000000002:
 func0000000000000013:
 	add	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 40
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000001:
@@ -75,8 +76,9 @@ func000000000000003f:
 func000000000000002f:
 	add	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, 20
-	mul	a0, a0, a1
+	slli	a1, a0, 2
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000017:

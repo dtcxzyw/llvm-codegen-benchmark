@@ -15,8 +15,9 @@ func0000000000000002:
 	bltu	a0, a1, .LBB1_2
 	li	a0, 255
 .LBB1_2:
-	lui	a1, 4112
-	mulw	a0, a0, a1
+	slliw	a1, a0, 16
+	slliw	a0, a0, 24
+	or	a0, a0, a1
 	ret
 
 func0000000000000000:

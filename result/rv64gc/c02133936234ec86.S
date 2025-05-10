@@ -2,8 +2,9 @@ func0000000000000075:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB0_2
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	zext.b	a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
@@ -14,8 +15,9 @@ func0000000000000030:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB1_2
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	zext.b	a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48

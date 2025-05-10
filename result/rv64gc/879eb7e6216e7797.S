@@ -3,15 +3,17 @@ func0000000000000005:
 	bnez	a1, .LBB0_2
 	lui	a1, 9
 	addi	a1, a1, -864
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a1, 220
 	addi	a1, a1, -1120
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

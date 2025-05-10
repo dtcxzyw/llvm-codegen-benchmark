@@ -6,8 +6,9 @@ func00000000000000cc:
 	ret
 
 func000000000000000c:
-	li	a3, 272
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a3
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	li	a1, 1545

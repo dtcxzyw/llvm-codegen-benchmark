@@ -43,9 +43,10 @@ func00000000000003ff:
 func00000000000003bf:
 	li	a3, 84
 	mul	a1, a1, a3
-	li	a3, 20
+	slli	a3, a0, 2
+	slli	a0, a0, 4
 	add	a1, a1, a2
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 2016
 	ret

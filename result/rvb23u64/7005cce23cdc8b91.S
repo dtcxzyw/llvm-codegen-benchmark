@@ -1,38 +1,37 @@
 func0000000000001e06:
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
 	lui	a3, 1
+	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a0, a0, a2
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
 
 func0000000000001e18:
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
 	lui	a3, 1
+	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1
 	ret
 
 func0000000000001e0a:
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
 	lui	a3, 1
+	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a0, a0, a2
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
@@ -104,13 +103,13 @@ func0000000000000081:
 	ret
 
 func0000000000000801:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
-	lui	a3, 1048555
-	addi	a3, a3, -384
-	addw	a0, a0, a2
-	mulw	a1, a1, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a0, a2, a0
+	lui	a2, 1048555
+	addi	a2, a2, -384
+	sext.w	a0, a0
+	mulw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

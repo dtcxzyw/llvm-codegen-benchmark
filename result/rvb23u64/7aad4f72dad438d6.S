@@ -9,9 +9,9 @@ func0000000000000027:
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 5
 	add	a1, a1, a2
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slliw	a1, a1, 2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret

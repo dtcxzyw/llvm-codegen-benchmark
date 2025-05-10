@@ -1,6 +1,7 @@
 func0000000000000008:
-	li	a2, 40
-	mulw	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	addw	a1, a1, a2
 	slliw	a0, a0, 10
 	sltu	a0, a1, a0
 	ret

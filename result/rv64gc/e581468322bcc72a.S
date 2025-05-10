@@ -1,8 +1,9 @@
 func0000000000000004:
 	li	a3, 8
 	bltu	a1, a3, .LBB0_2
-	li	a0, 80
-	mul	a0, a1, a0
+	slli	a0, a1, 4
+	slli	a1, a1, 6
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -640
 .LBB0_2:

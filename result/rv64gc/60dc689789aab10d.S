@@ -6,12 +6,14 @@ func00000000000000ff:
 
 func000000000000006f:
 	addi	a2, a2, 1
-	li	a3, 20
+	slli	a3, a1, 2
+	slli	a1, a1, 4
+	add	a1, a1, a3
 	slli	a2, a2, 32
-	mul	a1, a1, a3
-	srli	a2, a2, 32
 	add	a0, a0, a1
-	mul	a1, a2, a3
+	srli	a1, a2, 30
+	srli	a2, a2, 28
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 20
 	ret

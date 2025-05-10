@@ -31,14 +31,12 @@ func0000000000001108:
 	ret
 
 func0000000000000001:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	sub	a2, a2, a3
-	add	a1, a1, a2
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	binvi	a0, a0, 63
 	seqz	a0, a0
 	ret
@@ -90,14 +88,12 @@ func0000000000000aaa:
 	ret
 
 func0000000000000aa1:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	sub	a2, a2, a3
-	add	a1, a1, a2
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	addi	a0, a0, 1
 	seqz	a0, a0
 	ret

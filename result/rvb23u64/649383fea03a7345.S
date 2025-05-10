@@ -50,8 +50,9 @@ func0000000000000005:
 
 func0000000000000023:
 	srli	a1, a1, 7
-	li	a2, 1040
-	mul	a0, a0, a2
+	slli	a2, a0, 4
+	slli	a0, a0, 10
+	add	a0, a0, a2
 	lui	a2, 25
 	sltiu	a1, a1, 425
 	addiw	a2, a2, 1600

@@ -34,15 +34,18 @@ func000000000000000d:
 
 func0000000000000000:
 	lui	a2, 838861
+	slli	a3, a0, 3
+	slli	a0, a0, 5
 	addiw	a2, a2, -819
+	add	a0, a0, a3
 	slli	a3, a2, 32
 	add	a2, a2, a3
-	li	a3, 40
-	mul	a0, a0, a3
 	mulhu	a2, a1, a2
+	andi	a3, a2, -32
 	srli	a2, a2, 5
-	mul	a2, a2, a3
-	sub	a0, a0, a1
+	slli	a2, a2, 3
+	sub	a3, a3, a1
+	add	a2, a2, a3
 	add	a0, a0, a2
 	ret
 

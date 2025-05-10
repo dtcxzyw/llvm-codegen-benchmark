@@ -38,9 +38,9 @@ func0000000000000001:
 
 func0000000000000004:
 	sext.w	a0, a0
-	slli	a3, a2, 4
-	slli	a2, a2, 8
-	sub	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	slli	a2, a2, 4
 	add	a1, a1, a2
 	sltiu	a0, a0, 33
 	czero.eqz	a0, a1, a0

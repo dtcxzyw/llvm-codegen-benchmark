@@ -48,9 +48,10 @@ func00000000000000e0:
 	ret
 
 func00000000000000fb:
-	li	a3, 160
+	slli	a3, a0, 5
+	slli	a0, a0, 7
 	sext.w	a1, a1
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	lui	a3, 2
 	slli	a1, a1, 2
 	addiw	a3, a3, 1164

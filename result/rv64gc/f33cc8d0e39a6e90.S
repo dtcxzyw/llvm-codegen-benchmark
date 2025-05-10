@@ -4,9 +4,10 @@ func0000000000000048:
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 5
-	li	a2, 40
-	mul	a1, a1, a2
+	andi	a2, a1, -32
+	srli	a1, a1, 2
+	andi	a1, a1, -8
+	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
@@ -16,9 +17,10 @@ func0000000000000068:
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 5
-	li	a2, 40
-	mul	a1, a1, a2
+	andi	a2, a1, -32
+	srli	a1, a1, 2
+	andi	a1, a1, -8
+	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

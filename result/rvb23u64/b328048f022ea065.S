@@ -15,8 +15,9 @@ func00000000000001bf:
 	ret
 
 func00000000000001fc:
-	li	a3, 544
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 9
+	add	a2, a2, a3
 	add	a0, a0, a2
 	sext.w	a1, a1
 	sh2add	a0, a1, a0

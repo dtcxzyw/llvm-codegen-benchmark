@@ -10,14 +10,16 @@ func000000000000000c:
 func0000000000000000:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	li	a2, 10
-	mul	a0, a0, a2
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000f:
-	li	a1, 80
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret
 

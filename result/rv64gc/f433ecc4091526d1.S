@@ -20,8 +20,9 @@ func0000000000000149:
 	ret
 
 func00000000000001e1:
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 64
 	xor	a0, a0, a1

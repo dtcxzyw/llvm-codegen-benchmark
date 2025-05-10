@@ -15,9 +15,10 @@ func000000000000000f:
 	ret
 
 func0000000000000003:
-	li	a3, 40
+	slli	a3, a2, 3
+	slli	a2, a2, 5
 	slli	a0, a0, 63
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	srai	a0, a0, 63
 	and	a0, a0, a1

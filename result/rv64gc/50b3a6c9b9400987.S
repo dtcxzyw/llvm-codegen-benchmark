@@ -6,12 +6,15 @@ func000000000000003a:
 	ret
 
 func000000000000007a:
-	li	a3, 40
+	slli	a3, a0, 3
+	slli	a0, a0, 5
 	sext.w	a2, a2
-	mul	a0, a0, a3
+	add	a0, a0, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
 	add	a0, a0, a1
-	mul	a1, a2, a3
-	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a0, a0, a2
 	addi	a0, a0, -24
 	ret
 

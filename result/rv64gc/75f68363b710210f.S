@@ -12,8 +12,9 @@ func0000000000000005:
 func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	li	a0, 40
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	addiw	a0, a0, 456
 	ret
 .LBB1_2:

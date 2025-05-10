@@ -55,8 +55,9 @@ func0000000000000278:
 	ret
 
 func00000000000003f8:
-	li	a3, 10
-	mulw	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	addw	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -73,16 +74,18 @@ func0000000000000021:
 	ret
 
 func0000000000000385:
-	li	a3, 40
-	mulw	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	addw	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000388:
-	li	a3, 40
-	mulw	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	addw	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

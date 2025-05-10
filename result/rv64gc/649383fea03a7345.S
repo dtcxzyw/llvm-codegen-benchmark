@@ -58,15 +58,18 @@ func0000000000000023:
 	addiw	a0, a0, 1600
 	ret
 .LBB5_2:
-	li	a1, 1040
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 10
+	add	a0, a0, a1
 	ret
 
 func0000000000000006:
-	mv	a2, a0
+	bnez	a1, .LBB6_2
 	li	a0, 80
-	beqz	a1, .LBB6_2
-	mul	a0, a2, a0
+	ret
 .LBB6_2:
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 

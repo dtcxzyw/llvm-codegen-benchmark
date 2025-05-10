@@ -9,8 +9,9 @@ func0000000000000001:
 func00000000000001e6:
 	sext.w	a1, a1
 	bltz	a1, .LBB1_2
-	li	a1, 80
-	mul	a1, a2, a1
+	slli	a1, a2, 4
+	slli	a2, a2, 6
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 80
 .LBB1_2:

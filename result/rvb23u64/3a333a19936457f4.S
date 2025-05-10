@@ -1,29 +1,28 @@
 func0000000000000606:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
 
 func0000000000000618:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1
 	ret
 
 func000000000000060a:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sh2add	a0, a2, a0
+	sext.w	a0, a0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret

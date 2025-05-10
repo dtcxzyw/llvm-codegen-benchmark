@@ -7,10 +7,11 @@ func0000000000000003:
 
 func0000000000000000:
 	and	a1, a1, a2
-	srli	a1, a1, 7
-	li	a2, 144
-	mul	a1, a1, a2
+	srli	a2, a1, 7
+	andi	a1, a1, -128
+	slli	a2, a2, 4
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000004:

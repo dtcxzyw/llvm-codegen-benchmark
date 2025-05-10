@@ -10,18 +10,15 @@ func000000000000001f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 140
-	add	a0, a0, a2
-	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	ret
+	j	.LBB1_3
 .LBB1_2:
 	li	a2, 70
+.LBB1_3:
 	add	a0, a0, a2
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

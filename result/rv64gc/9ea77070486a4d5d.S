@@ -1,14 +1,16 @@
 func0000000000000014:
-	li	a3, 36
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	addw	a2, a2, a3
 	mul	a1, a1, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
-	li	a3, 36
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
+	addw	a2, a2, a3
 	mul	a1, a1, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1

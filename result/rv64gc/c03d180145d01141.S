@@ -11,9 +11,10 @@ func0000000000000000:
 
 func0000000000000055:
 	slli	a2, a2, 56
-	li	a3, 10
 	srai	a2, a2, 56
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	li	a2, 100
 	mul	a1, a1, a2

@@ -18,10 +18,12 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	addi	a1, a0, 1
-	li	a2, 40
-	mul	a0, a1, a2
-	mulhu	a1, a1, a2
+	addi	a0, a0, 1
+	li	a1, 40
+	slli	a2, a0, 3
+	mulhu	a1, a0, a1
+	slli	a0, a0, 5
+	add	a0, a0, a2
 	snez	a1, a1
 	ret
 

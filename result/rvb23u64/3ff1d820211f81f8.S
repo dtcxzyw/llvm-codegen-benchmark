@@ -40,8 +40,9 @@ func000000000000007c:
 
 func0000000000000030:
 	addiw	a1, a1, -1
-	li	a2, 272
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1542
 	sh3add	a0, a1, a0

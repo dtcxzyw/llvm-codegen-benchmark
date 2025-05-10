@@ -7,8 +7,9 @@ func000000000000003c:
 
 func0000000000000032:
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

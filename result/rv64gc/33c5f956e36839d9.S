@@ -35,12 +35,13 @@ func00000000000000ff:
 
 func00000000000000ef:
 	sext.w	a2, a2
-	li	a3, 40
 	slli	a0, a0, 32
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	slli	a3, a2, 3
+	slli	a2, a2, 5
 	srli	a0, a0, 29
+	add	a2, a2, a3
 	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 104
 	ret
 

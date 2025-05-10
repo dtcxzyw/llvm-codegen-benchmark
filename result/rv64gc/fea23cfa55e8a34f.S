@@ -14,16 +14,18 @@ func0000000000000008:
 
 func000000000000005d:
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addiw	a0, a0, -528
 	ret
 
 func000000000000007d:
 	add	a0, a0, a1
 	addi	a0, a0, -722
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addiw	a0, a0, -8
 	ret
 
@@ -63,8 +65,9 @@ func0000000000000055:
 
 func0000000000000004:
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addiw	a0, a0, -528
 	ret
 

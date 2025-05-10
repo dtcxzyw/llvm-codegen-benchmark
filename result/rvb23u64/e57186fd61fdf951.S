@@ -9,9 +9,9 @@ func0000000000000000:
 	slli	a1, a1, 48
 	srai	a1, a1, 53
 	add	a1, a1, a2
-	slli	a2, a1, 6
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 

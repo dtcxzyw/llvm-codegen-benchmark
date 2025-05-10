@@ -29,10 +29,11 @@ func000000000000060a:
 	ret
 
 func000000000000000a:
-	li	a3, 10
+	slli	a3, a2, 1
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	lui	a1, 1
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	addw	a0, a0, a2
 	addiw	a1, a1, -2001
 	slt	a0, a1, a0
@@ -152,8 +153,9 @@ func00000000000007f8:
 	ret
 
 func00000000000006a1:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	addi	a0, a0, -220

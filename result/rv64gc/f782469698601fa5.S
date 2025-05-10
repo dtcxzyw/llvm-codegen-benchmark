@@ -4,17 +4,14 @@ func0000000000000070:
 	lui	a2, 1
 	beq	a3, a4, .LBB0_2
 	addiw	a2, a2, 936
-	add	a1, a1, a2
-	li	a2, 40
-	mul	a0, a0, a2
-	add	a0, a0, a1
-	addi	a0, a0, -40
-	ret
+	j	.LBB0_3
 .LBB0_2:
 	addiw	a2, a2, 336
+.LBB0_3:
 	add	a1, a1, a2
-	li	a2, 40
-	mul	a0, a0, a2
+	slli	a2, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -40
 	ret

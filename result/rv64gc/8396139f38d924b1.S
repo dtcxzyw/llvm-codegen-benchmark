@@ -26,9 +26,10 @@ func0000000000000000:
 	addi	a2, a2, -819
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	li	a2, 10
 	srli	a1, a1, 35
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	subw	a0, a0, a0
 	subw	a0, a0, a1
 	ret

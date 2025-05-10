@@ -1,8 +1,9 @@
 func0000000000000070:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	sub	a0, a0, a2
 	lui	a2, 838861
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	addiw	a2, a2, -819
 	sub	a0, a0, a1
 	slli	a1, a2, 32

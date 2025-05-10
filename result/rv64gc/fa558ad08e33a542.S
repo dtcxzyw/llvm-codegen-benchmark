@@ -14,7 +14,8 @@ func0000000000000000:
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	li	a1, 40
-	mulw	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	addw	a0, a0, a1
 	ret
 

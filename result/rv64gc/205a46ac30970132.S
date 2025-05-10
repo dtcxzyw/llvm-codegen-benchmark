@@ -10,11 +10,11 @@ func00000000000004a8:
 	ret
 
 func00000000000001f4:
-	li	a2, 5
 	slli	a1, a1, 32
 	slli	a0, a0, 32
-	slli	a2, a2, 33
-	mulhu	a1, a1, a2
+	srli	a2, a1, 31
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	srli	a0, a0, 31
@@ -22,11 +22,11 @@ func00000000000001f4:
 	ret
 
 func00000000000001f8:
-	li	a2, 5
 	slli	a1, a1, 32
 	slli	a0, a0, 32
-	slli	a2, a2, 33
-	mulhu	a1, a1, a2
+	srli	a2, a1, 31
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	srli	a0, a0, 31
@@ -34,10 +34,10 @@ func00000000000001f8:
 	ret
 
 func00000000000003f4:
-	li	a2, 5
 	slli	a1, a1, 32
-	slli	a2, a2, 33
-	mulhu	a1, a1, a2
+	srli	a2, a1, 31
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
 	srli	a0, a0, 32

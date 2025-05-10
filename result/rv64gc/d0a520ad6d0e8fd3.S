@@ -1,9 +1,9 @@
 func0000000000000003:
 	mul	a0, a0, a1
-	li	a1, 9
 	slli	a0, a0, 32
-	slli	a1, a1, 34
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 27
+	add	a0, a0, a1
 	ret
 
 func000000000000001f:

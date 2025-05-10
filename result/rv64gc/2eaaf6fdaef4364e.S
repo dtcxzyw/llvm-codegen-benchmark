@@ -46,11 +46,11 @@ func000000000000001f:
 
 func0000000000000003:
 	andi	a1, a1, 1
-	li	a3, 5
 	slli	a2, a2, 32
-	slli	a3, a3, 35
+	srli	a3, a2, 29
+	srli	a2, a2, 27
 	addi	a1, a1, -1
-	mulhu	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a2
 	andi	a1, a1, 12
 	add	a0, a0, a1
@@ -68,10 +68,11 @@ func000000000000000e:
 
 func000000000000001e:
 	sext.w	a2, a2
-	li	a3, 36
 	slli	a1, a1, 63
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 5
 	srai	a1, a1, 63
+	add	a2, a2, a3
 	add	a0, a0, a2
 	andi	a1, a1, -36
 	add	a0, a0, a1

@@ -1,7 +1,8 @@
 func00000000000002a6:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -528
 	slt	a0, a1, a0
@@ -9,8 +10,9 @@ func00000000000002a6:
 
 func00000000000002aa:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -528
 	slt	a0, a0, a1
@@ -18,8 +20,9 @@ func00000000000002aa:
 
 func000000000000020a:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	slt	a0, a0, a1
@@ -27,8 +30,9 @@ func000000000000020a:
 
 func0000000000000008:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	sltu	a0, a0, a1
@@ -36,8 +40,9 @@ func0000000000000008:
 
 func0000000000000028:
 	sext.w	a0, a0
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	sltu	a0, a0, a1

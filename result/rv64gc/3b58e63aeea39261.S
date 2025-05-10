@@ -14,9 +14,9 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	li	a2, 257
-	slli	a2, a2, 48
-	mul	a1, a1, a2
+	slli	a2, a1, 48
+	slli	a1, a1, 56
+	add	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

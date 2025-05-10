@@ -9,15 +9,17 @@ func0000000000000035:
 func0000000000000010:
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 func0000000000000012:
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 func0000000000000031:
@@ -31,21 +33,24 @@ func0000000000000031:
 func0000000000000034:
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 func0000000000000030:
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 func0000000000000032:
 	addiw	a1, a1, -48
 	add	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 

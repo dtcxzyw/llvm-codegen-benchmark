@@ -28,9 +28,10 @@ func00000000000000ee:
 	ret
 
 func00000000000000fe:
-	li	a3, 36
+	slli	a3, a1, 2
+	slli	a1, a1, 5
 	slli	a0, a0, 2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 24

@@ -16,8 +16,9 @@ func0000000000000564:
 
 func00000000000005e1:
 	sext.w	a2, a2
-	li	a3, 640
-	mul	a2, a2, a3
+	slli	a3, a2, 7
+	slli	a2, a2, 9
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 88
 	addi	a0, a0, 704

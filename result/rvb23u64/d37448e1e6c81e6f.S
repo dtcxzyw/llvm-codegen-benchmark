@@ -12,10 +12,9 @@ func0000000000000005:
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
 	sub	a1, a1, a2
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	ret
 
 .LCPI1_0:
@@ -32,9 +31,8 @@ func0000000000000004:
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
 	sub	a1, a1, a2
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
 	ret
 

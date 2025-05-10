@@ -10,8 +10,9 @@ func0000000000000001:
 
 func0000000000000161:
 	zext.b	a0, a0
-	li	a3, 160
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	snez	a0, a0
 	add	a1, a1, a2
 	addi	a1, a1, 128

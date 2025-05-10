@@ -21,20 +21,18 @@ func000000000000004c:
 
 func000000000000007f:
 	sext.w	a2, a2
-	slli	a3, a2, 3
-	slli	a2, a2, 7
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh3add	a1, a2, a1
 	sh2add	a0, a0, a1
 	addi	a0, a0, 32
 	ret
 
 func000000000000007e:
 	sext.w	a2, a2
-	slli	a3, a2, 3
-	slli	a2, a2, 7
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh3add	a1, a2, a1
 	sh2add	a0, a0, a1
 	addi	a0, a0, 32
 	ret

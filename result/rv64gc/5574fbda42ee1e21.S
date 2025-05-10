@@ -11,12 +11,12 @@ func0000000000000100:
 
 func00000000000000c3:
 	sext.w	a2, a2
-	li	a3, 5
 	slli	a1, a1, 32
 	slti	a2, a2, 0
-	slli	a3, a3, 35
+	srli	a3, a1, 29
+	srli	a1, a1, 27
 	addi	a2, a2, -1
-	mulhu	a1, a1, a3
+	add	a1, a1, a3
 	andi	a2, a2, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -47,10 +47,10 @@ func000000000000002f:
 .LBB3_2:
 	li	a2, 12
 .LBB3_3:
-	li	a3, 5
 	slli	a1, a1, 32
-	slli	a3, a3, 34
-	mulhu	a1, a1, a3
+	srli	a3, a1, 30
+	srli	a1, a1, 28
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

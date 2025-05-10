@@ -9,10 +9,10 @@ func000000000000018c:
 	srliw	a4, a3, 31
 	sraiw	a3, a3, 5
 	add	a3, a3, a4
-	slli	a4, a3, 6
+	sh1add	a3, a3, a3
+	sh2add	a3, a3, a3
 	slli	a3, a3, 2
-	subw	a3, a3, a4
-	addw	a2, a2, a3
+	subw	a2, a2, a3
 	xori	a1, a1, 3
 	or	a1, a1, a2
 	czero.eqz	a0, a0, a1

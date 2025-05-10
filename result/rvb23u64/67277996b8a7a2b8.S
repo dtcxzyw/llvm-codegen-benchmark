@@ -1,5 +1,6 @@
 func0000000000000005:
 	lui	a2, 559241
+	sh1add	a0, a0, a0
 	addiw	a2, a2, -1911
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -8,14 +9,12 @@ func0000000000000005:
 	srli	a3, a2, 63
 	srai	a2, a2, 5
 	add	a2, a2, a3
-	slli	a3, a2, 6
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	sub	a2, a2, a3
-	slli	a3, a0, 2
-	slli	a0, a0, 6
-	add	a1, a1, a2
-	sub	a0, a0, a3
-	add	a0, a0, a1
+	sub	a1, a1, a2
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a1
 	ret
 
 .LCPI1_0:

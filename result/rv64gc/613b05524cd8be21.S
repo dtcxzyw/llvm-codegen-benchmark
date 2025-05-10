@@ -19,9 +19,10 @@ func000000000000000c:
 	ret
 
 func000000000000000e:
-	li	a3, 80
+	slli	a3, a1, 4
+	slli	a1, a1, 6
 	slli	a0, a0, 63
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 576
 	srai	a0, a0, 63

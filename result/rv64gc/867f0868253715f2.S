@@ -55,10 +55,10 @@ func0000000000000e61:
 
 func00000000000005e1:
 	addi	a2, a2, 1
-	li	a3, 80
 	slli	a2, a2, 32
-	srli	a2, a2, 32
-	mul	a2, a2, a3
+	srli	a3, a2, 28
+	srli	a2, a2, 26
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 80
 	xor	a0, a0, a1

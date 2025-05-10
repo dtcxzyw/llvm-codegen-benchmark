@@ -20,8 +20,9 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	srliw	a0, a0, 16
 	addw	a0, a0, a1
 	ret

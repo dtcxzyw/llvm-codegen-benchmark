@@ -8,8 +8,9 @@ func0000000000000003:
 	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 47
-	li	a1, 40
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000002:

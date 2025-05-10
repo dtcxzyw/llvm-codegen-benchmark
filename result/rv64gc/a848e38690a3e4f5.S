@@ -1,7 +1,8 @@
 func000000000000000c:
 	zext.b	a1, a1
-	li	a2, 272
-	mul	a1, a1, a2
+	slli	a2, a1, 4
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -272
 	ret
@@ -51,11 +52,11 @@ func000000000000002c:
 
 func0000000000000028:
 	zext.b	a1, a1
-	li	a2, 9
 	addi	a1, a1, -1
-	slli	a2, a2, 36
 	slli	a1, a1, 32
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 25
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

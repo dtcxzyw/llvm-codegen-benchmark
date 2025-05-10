@@ -19,8 +19,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	lui	a1, 4112
-	mul	a0, a0, a1
+	slli	a1, a0, 16
+	slli	a0, a0, 24
+	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

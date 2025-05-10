@@ -25,8 +25,9 @@ func000000000000000e:
 	li	a1, 4
 	bgeu	a1, a0, .LBB1_4
 .LBB1_2:
-	li	a1, 264
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret
 .LBB1_3:
 	mv	a0, a1
@@ -34,8 +35,9 @@ func000000000000000e:
 	bltu	a1, a0, .LBB1_2
 .LBB1_4:
 	li	a0, 4
-	li	a1, 264
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 8
+	add	a0, a0, a1
 	ret
 
 func000000000000000c:

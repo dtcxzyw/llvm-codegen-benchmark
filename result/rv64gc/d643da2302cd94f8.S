@@ -1,7 +1,8 @@
 func0000000000000009:
 	sub	a2, a2, a0
-	li	a0, 10
-	mul	a0, a1, a0
+	slli	a0, a1, 1
+	slli	a1, a1, 3
+	add	a0, a0, a1
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
 	ret
@@ -16,8 +17,9 @@ func0000000000000184:
 
 func0000000000000084:
 	sub	a2, a2, a0
-	li	a0, 40
-	mul	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
 

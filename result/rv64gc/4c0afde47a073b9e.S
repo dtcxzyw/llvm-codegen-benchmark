@@ -19,8 +19,9 @@ func0000000000000003:
 	andi	a2, a0, 1
 	mv	a0, a1
 	bnez	a2, .LBB2_2
-	li	a1, 10
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	addw	a0, a0, a1
 .LBB2_2:
 	ret
 

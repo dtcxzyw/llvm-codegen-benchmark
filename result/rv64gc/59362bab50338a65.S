@@ -1,8 +1,9 @@
 func0000000000000081:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	addi	a0, a0, -47
 	seqz	a0, a0
@@ -10,9 +11,10 @@ func0000000000000081:
 
 func00000000000002aa:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -528
 	slti	a0, a0, 13
@@ -21,9 +23,10 @@ func00000000000002aa:
 
 func00000000000002a6:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -528
 	slti	a0, a0, 60
@@ -41,9 +44,10 @@ func0000000000000481:
 
 func0000000000000486:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	slti	a0, a0, 0
@@ -51,9 +55,10 @@ func0000000000000486:
 
 func0000000000000686:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	slti	a0, a0, 0
@@ -61,9 +66,10 @@ func0000000000000686:
 
 func000000000000028a:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sgtz	a0, a0
@@ -71,9 +77,10 @@ func000000000000028a:
 
 func00000000000002a4:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -560
 	sltiu	a0, a0, -32
@@ -81,9 +88,10 @@ func00000000000002a4:
 
 func000000000000008a:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	slti	a0, a0, 168
@@ -92,9 +100,10 @@ func000000000000008a:
 
 func0000000000000086:
 	slli	a1, a1, 56
-	li	a2, 10
+	slli	a2, a0, 1
+	slli	a0, a0, 3
 	srai	a1, a1, 56
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	slti	a0, a0, 0

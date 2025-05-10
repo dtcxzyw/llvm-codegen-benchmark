@@ -6,9 +6,9 @@ func000000000000003d:
 	slli	a1, a1, 32
 	mulhu	a1, a2, a1
 	srli	a1, a1, 37
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1

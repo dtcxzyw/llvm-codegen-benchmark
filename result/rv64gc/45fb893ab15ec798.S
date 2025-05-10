@@ -13,9 +13,10 @@ func000000000000001f:
 	ret
 
 func0000000000000000:
-	srliw	a0, a0, 1
-	li	a1, 40
-	mul	a0, a0, a1
+	srli	a0, a0, 1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	addi	a0, a0, 8
 	slli	a0, a0, 32
 	srli	a0, a0, 32

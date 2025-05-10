@@ -29,10 +29,10 @@ func0000000000000001:
 
 func0000000000000007:
 	srli	a0, a0, 2
-	li	a1, 5
-	slli	a1, a1, 36
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 28
+	srli	a0, a0, 26
+	add	a0, a0, a1
 	ret
 
 func0000000000000002:

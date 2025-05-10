@@ -30,8 +30,9 @@ func0000000000000008:
 	ret
 
 func000000000000007f:
-	li	a5, 20
-	mul	a4, a4, a5
+	slli	a5, a4, 2
+	slli	a4, a4, 4
+	add	a4, a4, a5
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
 	mul	a2, a2, a4

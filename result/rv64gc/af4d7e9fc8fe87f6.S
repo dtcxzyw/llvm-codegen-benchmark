@@ -36,9 +36,10 @@ func000000000000007e:
 	ret
 
 func00000000000000af:
-	li	a3, 136
+	slli	a3, a2, 3
+	slli	a2, a2, 7
 	slli	a0, a0, 3
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 216

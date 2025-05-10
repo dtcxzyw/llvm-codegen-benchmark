@@ -1,6 +1,7 @@
 func0000000000000009:
-	lui	a2, 4112
-	mul	a1, a1, a2
+	slli	a2, a1, 16
+	slli	a1, a1, 24
+	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	or	a0, a0, a1

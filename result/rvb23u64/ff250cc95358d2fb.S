@@ -65,12 +65,11 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	lui	a2, 244
-	add	a0, a0, a1
-	addiw	a1, a2, 576
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a0, a1, a0
+	lui	a1, 244
+	addiw	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 

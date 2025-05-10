@@ -31,8 +31,9 @@ func00000000000000c8:
 	ret
 
 func0000000000000012:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

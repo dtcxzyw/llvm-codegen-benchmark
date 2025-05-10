@@ -18,7 +18,8 @@ func0000000000000005:
 	add	a1, a1, a2
 	sraiw	a1, a1, 4
 	addw	a0, a0, a1
-	li	a1, 160
-	mul	a0, a0, a1
+	slli	a1, a0, 5
+	slli	a0, a0, 7
+	add	a0, a0, a1
 	ret
 

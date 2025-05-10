@@ -35,8 +35,9 @@ func0000000000000150:
 	ret
 
 func0000000000000158:
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	negw	a0, a0
 	xor	a0, a0, a1
 	snez	a0, a0

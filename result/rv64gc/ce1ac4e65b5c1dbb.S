@@ -15,8 +15,9 @@ func000000000000003f:
 
 func000000000000002f:
 	andi	a3, a0, 1
-	li	a0, 40
-	mul	a0, a2, a0
+	slli	a0, a2, 3
+	slli	a2, a2, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	bnez	a3, .LBB1_2
 	li	a1, 8

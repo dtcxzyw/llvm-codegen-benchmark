@@ -57,8 +57,9 @@ func0000000000000604:
 	ret
 
 func0000000000000001:
-	li	a3, 72
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 48
 	xor	a0, a0, a1
@@ -81,8 +82,9 @@ func0000000000000208:
 	ret
 
 func0000000000000204:
-	li	a3, 80
-	mul	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 264
 	sltu	a0, a0, a1

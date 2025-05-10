@@ -1,8 +1,8 @@
 func00000000000000f3:
 	addi	a1, a1, -1
-	li	a2, 272
-	zext.w	a1, a1
-	mul	a1, a1, a2
+	slli.uw	a2, a1, 4
+	slli.uw	a1, a1, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1565
 	sh3add	a0, a1, a0

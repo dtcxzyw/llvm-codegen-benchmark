@@ -1,9 +1,9 @@
 func0000000000000003:
 	addi	a0, a0, 2
-	li	a1, 257
-	slli	a1, a1, 34
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 22
+	add	a0, a0, a1
 	ret
 
 func0000000000000073:

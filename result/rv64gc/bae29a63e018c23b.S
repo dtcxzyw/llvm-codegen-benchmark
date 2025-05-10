@@ -1,8 +1,9 @@
 func0000000000000004:
 	srliw	a1, a1, 4
-	li	a2, 36
+	slli	a2, a0, 2
+	slli	a0, a0, 5
 	slli	a1, a1, 4
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

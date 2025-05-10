@@ -24,9 +24,10 @@ func00000000000000ee:
 
 func000000000000005e:
 	add	a1, a1, a2
-	li	a2, 34
 	addiw	a1, a1, -3
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	lui	a2, 5
 	addiw	a2, a2, 574
 	add	a0, a0, a2

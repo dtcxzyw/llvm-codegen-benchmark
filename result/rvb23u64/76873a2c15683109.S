@@ -4,16 +4,16 @@ func0000000000000003:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	srli	a0, a0, 11
-	lui	a2, 139810
-	addiw	a2, a2, 547
 	mulhu	a0, a0, a1
+	lui	a1, 139810
 	srli	a0, a0, 12
-	mul	a2, a2, a0
-	srli	a2, a2, 35
-	slli	a1, a2, 6
-	slli	a2, a2, 2
-	subw	a2, a2, a1
-	addw	a0, a0, a2
+	addiw	a1, a1, 547
+	mul	a1, a1, a0
+	srli	a1, a1, 35
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
+	subw	a0, a0, a1
 	ret
 
 .LCPI1_0:

@@ -30,8 +30,9 @@ func000000000000001b:
 	ret
 
 func0000000000000000:
-	li	a2, 72
-	mulw	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	addw	a1, a1, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 72

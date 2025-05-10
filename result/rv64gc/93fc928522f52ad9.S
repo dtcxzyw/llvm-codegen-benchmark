@@ -15,10 +15,10 @@ func0000000000000004:
 
 func000000000000000b:
 	addi	a0, a0, -1
-	li	a1, 5
-	slli	a1, a1, 34
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 30
+	srli	a0, a0, 28
+	add	a0, a0, a1
 	ret
 
 func000000000000000f:
@@ -26,8 +26,9 @@ func000000000000000f:
 	lui	a1, 512
 	addiw	a1, a1, -8
 	and	a0, a0, a1
-	li	a1, 10
-	mul	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 .LCPI4_0:

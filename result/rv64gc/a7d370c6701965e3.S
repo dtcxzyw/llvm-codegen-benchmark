@@ -41,8 +41,9 @@ func00000000000000bb:
 	ret
 
 func00000000000000bf:
-	li	a3, 20
-	mul	a0, a0, a3
+	slli	a3, a0, 2
+	slli	a0, a0, 4
+	add	a0, a0, a3
 	li	a3, 84
 	mul	a2, a2, a3
 	add	a1, a1, a2

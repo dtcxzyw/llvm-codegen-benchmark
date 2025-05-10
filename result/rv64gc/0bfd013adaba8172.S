@@ -19,15 +19,17 @@ func000000000000001b:
 	li	a3, 3
 	beq	a2, a3, .LBB1_2
 	li	a2, 24
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 12
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -36,15 +38,17 @@ func0000000000000013:
 	sext.w	a2, a2
 	beqz	a2, .LBB2_2
 	li	a2, 520
-	li	a3, 1032
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 10
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, 4
-	li	a3, 1032
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 10
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

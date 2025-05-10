@@ -1,8 +1,9 @@
 func0000000000000005:
 	li	a1, 3
 	subw	a1, a1, a0
-	li	a0, 40
-	mulw	a0, a1, a0
+	slli	a0, a1, 3
+	slli	a1, a1, 5
+	addw	a0, a0, a1
 	ret
 
 func0000000000000000:

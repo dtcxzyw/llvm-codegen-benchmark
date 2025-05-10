@@ -13,10 +13,11 @@ func0000000000000005:
 	ret
 
 func0000000000000006:
-	srliw	a0, a0, 24
-	li	a1, 257
+	srliw	a1, a0, 24
+	srli	a0, a0, 24
 	slli	a1, a1, 48
-	mul	a0, a0, a1
+	slli	a0, a0, 56
+	or	a0, a0, a1
 	ret
 
 .LCPI3_0:

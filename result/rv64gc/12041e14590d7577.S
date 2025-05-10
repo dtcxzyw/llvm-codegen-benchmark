@@ -17,15 +17,16 @@ func0000000000000003:
 	.quad	1844674407370955161
 func0000000000000002:
 	lui	a1, 838861
-	lui	a2, %hi(.LCPI1_0)
 	addiw	a1, a1, -819
-	ld	a2, %lo(.LCPI1_0)(a2)
-	slli	a3, a1, 32
-	add	a1, a1, a3
+	slli	a2, a1, 32
+	add	a1, a1, a2
 	mulhu	a1, a0, a1
+	andi	a2, a1, -8
+	sub	a0, a0, a2
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	srli	a1, a1, 3
-	li	a3, 10
-	mul	a1, a1, a3
+	slli	a1, a1, 1
 	sub	a0, a0, a1
 	mul	a0, a0, a2
 	ret

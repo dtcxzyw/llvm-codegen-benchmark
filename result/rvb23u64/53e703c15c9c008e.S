@@ -60,10 +60,9 @@ func0000000000000005:
 	ret
 
 func0000000000000188:
-	slli	a3, a2, 1
-	slli	a2, a2, 5
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh1add	a1, a2, a1
 	sltu	a0, a0, a1
 	ret
 
@@ -167,10 +166,9 @@ func0000000000000087:
 	ret
 
 func00000000000001a6:
-	slli	a3, a2, 2
-	slli	a2, a2, 6
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh2add	a1, a2, a1
 	slt	a0, a1, a0
 	ret
 

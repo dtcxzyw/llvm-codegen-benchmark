@@ -1,7 +1,7 @@
 func00000000000000d9:
-	li	a3, 5
-	slli	a3, a3, 33
-	mul	a2, a2, a3
+	slli	a3, a2, 33
+	slli	a2, a2, 35
+	add	a2, a2, a3
 	add	a1, a1, a2
 	srli	a1, a1, 32
 	slli	a1, a1, 32

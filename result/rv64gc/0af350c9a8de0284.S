@@ -1,6 +1,7 @@
 func000000000000000c:
-	li	a1, 288
-	mulw	a0, a0, a1
+	slli	a1, a0, 5
+	slli	a0, a0, 8
+	addw	a0, a0, a1
 	ret
 
 func000000000000001c:

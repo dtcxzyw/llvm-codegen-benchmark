@@ -9,9 +9,10 @@ func0000000000000007:
 	srli	a0, a0, 35
 	mul	a1, a0, a2
 	srli	a1, a1, 32
-	li	a2, 10
-	mul	a1, a1, a2
-	subw	a0, a0, a1
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
+	sub	a0, a0, a1
 	ori	a0, a0, 48
 	ret
 

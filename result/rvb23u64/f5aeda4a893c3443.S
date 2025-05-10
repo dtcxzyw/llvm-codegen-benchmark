@@ -21,10 +21,9 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
-	slli	a3, a1, 2
-	slli	a1, a1, 6
-	subw	a1, a1, a3
-	add	a0, a0, a2
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

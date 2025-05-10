@@ -1,25 +1,28 @@
 func00000000000000e0:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	slli	a0, a0, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
 
 func00000000000000e2:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	slli	a0, a0, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -52
 	ret
 
 func00000000000000ef:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	slli	a0, a0, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
@@ -34,18 +37,20 @@ func00000000000000ff:
 	ret
 
 func00000000000000eb:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	slli	a0, a0, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func00000000000000e8:
-	li	a3, 160
+	slli	a3, a1, 5
+	slli	a1, a1, 7
 	slli	a0, a0, 3
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 12
@@ -86,34 +91,40 @@ func00000000000000cf:
 	ret
 
 func00000000000000c0:
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 278
 	ret
 
 func00000000000000f8:
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 278
 	ret
 
 func00000000000000fb:
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 292
 	ret
 
 func00000000000000ea:
-	li	a3, 80
-	mul	a1, a1, a3
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
+	slli	a3, a0, 4
+	slli	a0, a0, 6
 	add	a1, a1, a2
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 184
 	ret

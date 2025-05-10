@@ -37,17 +37,14 @@ func0000000000000013:
 	li	a3, 1
 	beq	a2, a3, .LBB2_2
 	li	a2, 8
-	sext.w	a1, a1
-	li	a3, 40
-	mul	a1, a1, a3
-	add	a0, a0, a2
-	add	a0, a0, a1
-	ret
+	j	.LBB2_3
 .LBB2_2:
 	li	a2, 16
+.LBB2_3:
 	sext.w	a1, a1
-	li	a3, 40
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

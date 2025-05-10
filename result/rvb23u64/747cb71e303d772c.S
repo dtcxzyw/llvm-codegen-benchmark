@@ -15,11 +15,11 @@ func0000000000000001:
 	srliw	a3, a1, 31
 	sraiw	a1, a1, 5
 	add	a1, a1, a3
-	slli	a3, a1, 6
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	subw	a1, a1, a3
-	addw	a1, a1, a2
+	subw	a2, a2, a1
 	andi	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	czero.eqz	a0, a2, a0
 	ret
 

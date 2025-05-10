@@ -1,8 +1,8 @@
 func0000000000000030:
-	li	a2, 5
 	slli	a1, a1, 32
-	slli	a2, a2, 39
-	mulhu	a1, a1, a2
+	srli	a2, a1, 25
+	srli	a1, a1, 23
+	add	a1, a1, a2
 	lui	a2, 313
 	addiw	a2, a2, -768
 	add	a0, a0, a2

@@ -28,17 +28,20 @@ func00000000000000aa:
 	ret
 
 func0000000000000008:
-	li	a3, 20
-	mul	a2, a2, a3
-	li	a3, 40
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
 func00000000000000de:
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	li	a3, -20
 	add	a0, a0, a2
 	mul	a1, a1, a3
@@ -110,8 +113,9 @@ func000000000000005a:
 	ret
 
 func0000000000000000:
-	li	a3, 516
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 9
+	add	a2, a2, a3
 	slli	a3, a1, 10
 	slli	a1, a1, 17
 	add	a0, a0, a2

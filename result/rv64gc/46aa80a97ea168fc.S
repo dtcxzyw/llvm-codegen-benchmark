@@ -1,10 +1,10 @@
 func000000000000007f:
-	li	a3, 9
 	slli	a2, a2, 32
 	sext.w	a0, a0
-	slli	a3, a3, 35
+	srli	a3, a2, 29
+	srli	a2, a2, 26
 	slli	a0, a0, 3
-	mulhu	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8
@@ -33,11 +33,11 @@ func00000000000000ff:
 
 func000000000000001c:
 	sext.w	a0, a0
-	li	a3, 65
 	slli	a2, a2, 32
-	slli	a3, a3, 36
+	srli	a3, a2, 28
+	srli	a2, a2, 22
 	slli	a0, a0, 2
-	mulhu	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 268

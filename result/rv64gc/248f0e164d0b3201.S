@@ -6,8 +6,9 @@ func0000000000000044:
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 35
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
@@ -18,9 +19,10 @@ func0000000000000001:
 	addi	a3, a3, -819
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	li	a3, 10
 	srli	a2, a2, 35
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	subw	a1, a1, a1
 	subw	a1, a1, a2
 	xor	a0, a0, a1

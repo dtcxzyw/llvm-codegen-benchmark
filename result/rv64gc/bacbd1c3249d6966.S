@@ -23,8 +23,9 @@ func000000000000000d:
 
 func000000000000000f:
 	andi	a1, a1, 1
-	li	a3, 18
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	add	a0, a0, a1

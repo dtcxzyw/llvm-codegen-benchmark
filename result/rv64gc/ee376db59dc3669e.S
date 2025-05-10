@@ -12,7 +12,8 @@ func0000000000000000:
 
 func0000000000000003:
 	fcvt.w.d	a0, fa0, rtz
-	li	a1, 18
-	mulw	a0, a0, a1
+	slli	a1, a0, 1
+	slli	a0, a0, 4
+	addw	a0, a0, a1
 	ret
 

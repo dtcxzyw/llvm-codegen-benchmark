@@ -20,8 +20,9 @@ func0000000000000065:
 
 func00000000000000fd:
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -528
@@ -29,8 +30,9 @@ func00000000000000fd:
 
 func00000000000000f5:
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -48
@@ -38,8 +40,9 @@ func00000000000000f5:
 
 func00000000000000e5:
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -528
@@ -47,8 +50,9 @@ func00000000000000e5:
 
 func00000000000000f7:
 	zext.b	a1, a1
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -150

@@ -1,10 +1,10 @@
 func00000000000009e1:
 	li	a3, 1
 	sllw	a2, a3, a2
-	li	a3, 80
 	slli	a2, a2, 32
-	srli	a2, a2, 32
-	mul	a2, a2, a3
+	srli	a3, a2, 28
+	srli	a2, a2, 26
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 80
 	xor	a0, a0, a1

@@ -8,8 +8,9 @@ func0000000000000104:
 	ret
 
 func0000000000000107:
-	li	a3, 40
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	li	a3, -1
 	srli	a3, a3, 32
 	add	a1, a1, a2

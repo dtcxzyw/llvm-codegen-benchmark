@@ -2,8 +2,9 @@ func000000000000000a:
 	sext.w	a2, a0
 	li	a0, 200
 	blt	a0, a2, .LBB0_2
-	li	a0, 20
-	mulw	a0, a1, a0
+	slli	a0, a1, 2
+	slli	a1, a1, 4
+	addw	a0, a0, a1
 .LBB0_2:
 	ret
 

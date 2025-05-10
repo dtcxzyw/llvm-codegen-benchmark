@@ -82,8 +82,9 @@ func000000000000000a:
 	srli	a2, a1, 63
 	srai	a1, a1, 2
 	add	a1, a1, a2
-	li	a2, 10
-	mul	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	sub	a0, a0, a1
 	slti	a0, a0, 5
 	xori	a0, a0, 1

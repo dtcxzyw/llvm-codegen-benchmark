@@ -15,8 +15,9 @@ func00000000000000e1:
 	ret
 
 func0000000000000061:
-	li	a2, 20
-	mulw	a1, a1, a2
+	slli	a2, a1, 2
+	slli	a1, a1, 4
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -79,8 +80,9 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -95,8 +97,9 @@ func00000000000001aa:
 	ret
 
 func0000000000000008:
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
@@ -124,8 +127,9 @@ func00000000000001a6:
 	ret
 
 func0000000000000066:
-	li	a2, 10
-	mulw	a1, a1, a2
+	slli	a2, a1, 1
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret

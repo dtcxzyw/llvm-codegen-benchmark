@@ -1,15 +1,15 @@
 func000000000000000c:
-	lui	a2, 69632
-	mulw	a1, a1, a2
+	slli	a2, a1, 24
+	slli	a1, a1, 28
+	addw	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000005:
-	li	a2, 257
-	slli	a2, a2, 24
-	slli	a1, a1, 56
-	mulhu	a1, a1, a2
-	sext.w	a1, a1
+	zext.b	a2, a1
+	slliw	a1, a1, 24
+	slliw	a2, a2, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

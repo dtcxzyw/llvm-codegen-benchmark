@@ -29,8 +29,9 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	li	a0, 36
-	mul	a0, a1, a0
+	slli	a0, a1, 2
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000064:

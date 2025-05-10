@@ -1,7 +1,8 @@
 func00000000000000e4:
 	addi	a2, a1, 38
-	li	a3, 36
-	mul	a1, a1, a3
+	slli	a3, a1, 2
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3

@@ -30,11 +30,11 @@ func0000000000000014:
 	ld	a3, %lo(.LCPI2_0)(a3)
 	srli	a2, a2, 6
 	mul	a2, a2, a3
-	li	a3, 5
 	add	a1, a1, a2
 	slli	a1, a1, 32
-	slli	a3, a3, 38
-	mulhu	a1, a1, a3
+	srli	a2, a1, 26
+	srli	a1, a1, 24
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

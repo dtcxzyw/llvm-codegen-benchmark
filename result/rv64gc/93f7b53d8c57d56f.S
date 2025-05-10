@@ -1,7 +1,8 @@
 func000000000000019c:
-	li	a3, 80
+	slli	a3, a1, 4
+	slli	a1, a1, 6
 	sext.w	a0, a0
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	add	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1

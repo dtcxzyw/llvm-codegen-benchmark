@@ -17,15 +17,17 @@ func000000000000000b:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, 24
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 12
-	li	a3, 72
-	mul	a1, a1, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

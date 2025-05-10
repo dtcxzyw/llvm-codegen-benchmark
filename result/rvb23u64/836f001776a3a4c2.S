@@ -1,8 +1,9 @@
 func0000000000000015:
 	add	a0, a0, a1
 	addiw	a0, a0, 7
-	li	a1, 544
-	mul	a0, a0, a1
+	slli	a1, a0, 5
+	slli	a0, a0, 9
+	add	a0, a0, a1
 	ret
 
 func0000000000000001:

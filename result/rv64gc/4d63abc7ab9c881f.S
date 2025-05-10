@@ -24,9 +24,10 @@ func00000000000000f5:
 	zext.b	a2, a2
 	li	a3, 1260
 	mul	a2, a2, a3
-	li	a3, 10
+	slli	a3, a1, 1
+	slli	a1, a1, 3
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
@@ -34,9 +35,10 @@ func00000000000000f7:
 	andi	a2, a2, 55
 	li	a3, 1260
 	mul	a2, a2, a3
-	li	a3, 10
+	slli	a3, a1, 1
+	slli	a1, a1, 3
 	add	a0, a0, a2
-	mul	a1, a1, a3
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

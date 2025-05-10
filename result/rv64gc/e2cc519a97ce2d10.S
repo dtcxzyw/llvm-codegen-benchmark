@@ -221,8 +221,9 @@ func0000000000000768:
 	ret
 
 func0000000000000181:
-	li	a3, 144
-	mul	a2, a2, a3
+	slli	a3, a2, 4
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 128
 	addi	a0, a0, 1

@@ -6,9 +6,9 @@ func00000000000001ff:
 	ret
 
 func00000000000000cc:
-	zext.w	a2, a2
-	li	a3, 1040
-	mul	a2, a2, a3
+	slli.uw	a3, a2, 4
+	slli.uw	a2, a2, 10
+	add	a2, a2, a3
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 128

@@ -9,9 +9,10 @@ func000000000000003f:
 
 func000000000000005d:
 	sext.w	a1, a1
-	li	a2, 160
+	slli	a2, a0, 5
+	slli	a0, a0, 7
 	slli	a1, a1, 3
-	mul	a0, a0, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

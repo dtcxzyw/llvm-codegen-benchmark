@@ -6,10 +6,11 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	li	a1, 9
-	slli	a1, a1, 34
 	slli	a0, a0, 33
-	mulhu	a0, a0, a1
+	srli	a0, a0, 33
+	slli	a1, a0, 3
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	addi	a0, a0, 57
 	ret
 

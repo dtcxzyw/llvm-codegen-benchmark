@@ -23,13 +23,12 @@ func0000000000000001:
 
 func00000000000001ea:
 	sext.w	a0, a0
-	slli	a3, a2, 3
-	slli	a2, a2, 7
-	sub	a2, a2, a3
-	li	a3, -8
+	sh1add	a2, a2, a2
+	sh2add	a2, a2, a2
+	sh3add	a1, a2, a1
+	li	a2, -8
 	sgtz	a0, a0
-	add	a1, a1, a2
-	czero.nez	a0, a3, a0
+	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret

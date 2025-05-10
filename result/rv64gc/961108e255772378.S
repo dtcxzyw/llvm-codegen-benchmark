@@ -41,16 +41,13 @@ func0000000000000043:
 	zext.b	a2, a2
 	beqz	a2, .LBB3_2
 	li	a2, -160
-	li	a3, 80
-	mul	a1, a1, a3
-	add	a0, a0, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
+	j	.LBB3_3
 .LBB3_2:
 	li	a2, -80
-	li	a3, 80
-	mul	a1, a1, a3
+.LBB3_3:
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

@@ -9,11 +9,11 @@ func0000000000000000:
 
 func000000000000000f:
 	andi	a1, a1, 1
-	slli.uw	a3, a2, 3
-	slli.uw	a2, a2, 7
-	sub	a2, a2, a3
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
 	li	a3, 24
-	add	a0, a0, a2
+	sh2add	a2, a2, a2
+	sh3add	a0, a2, a0
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	addi	a0, a0, 24

@@ -1,9 +1,11 @@
 func00000000000000df:
 	slli	a2, a2, 32
-	li	a3, 20
-	srli	a2, a2, 32
-	mul	a0, a0, a3
-	mul	a2, a2, a3
+	slli	a3, a0, 2
+	slli	a0, a0, 4
+	add	a0, a0, a3
+	srli	a3, a2, 30
+	srli	a2, a2, 28
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -1

@@ -35,8 +35,9 @@ func0000000000000021:
 
 func0000000000000001:
 	addi	a1, a1, -7
-	li	a2, 1088
-	mul	a1, a1, a2
+	slli	a2, a1, 6
+	slli	a1, a1, 10
+	add	a1, a1, a2
 	addi	a1, a1, -576
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 24

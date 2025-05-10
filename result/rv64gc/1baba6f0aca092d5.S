@@ -28,8 +28,9 @@ func000000000000003f:
 
 func0000000000000000:
 	srli	a2, a2, 2
-	li	a3, 160
-	mul	a2, a2, a3
+	slli	a3, a2, 5
+	slli	a2, a2, 7
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -44,9 +45,9 @@ func0000000000000030:
 
 func000000000000000c:
 	srli	a2, a2, 32
-	li	a3, 5
-	slli	a3, a3, 33
-	mul	a2, a2, a3
+	slli	a3, a2, 33
+	slli	a2, a2, 35
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

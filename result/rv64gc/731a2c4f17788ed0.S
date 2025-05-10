@@ -8,8 +8,9 @@ func0000000000000003:
 
 func000000000000001f:
 	addiw	a0, a0, 1
-	li	a1, 40
-	mul	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	ret
 
 func000000000000000f:
@@ -48,10 +49,10 @@ func0000000000000001:
 
 func0000000000000013:
 	addi	a0, a0, 2
-	li	a1, 5
-	slli	a1, a1, 35
 	slli	a0, a0, 32
-	mulhu	a0, a0, a1
+	srli	a1, a0, 29
+	srli	a0, a0, 27
+	add	a0, a0, a1
 	ret
 
 .LCPI8_0:

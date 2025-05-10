@@ -18,8 +18,9 @@ func000000000000000a:
 	srli	a3, a2, 63
 	srai	a2, a2, 35
 	add	a2, a2, a3
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	subw	a1, a1, a2
 	slt	a0, a1, a0
 	ret

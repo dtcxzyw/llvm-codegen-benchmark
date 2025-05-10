@@ -1,13 +1,15 @@
 func0000000000000086:
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
 
 func0000000000000009:
-	li	a3, 10
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
@@ -36,15 +38,17 @@ func0000000000000184:
 	ret
 
 func0000000000000084:
-	li	a3, 40
-	mul	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
 
 func0000000000000004:
-	li	a3, 20
-	mul	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret

@@ -126,10 +126,10 @@ func0000000000000024:
 
 func000000000000004b:
 	add	a1, a1, a2
-	li	a2, 5
 	slli	a1, a1, 32
-	slli	a2, a2, 36
-	mulhu	a1, a1, a2
+	srli	a2, a1, 28
+	srli	a1, a1, 26
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
@@ -166,8 +166,9 @@ func000000000000001b:
 
 func0000000000000027:
 	addw	a1, a1, a2
-	li	a2, 72
-	mul	a1, a1, a2
+	slli	a2, a1, 3
+	slli	a1, a1, 6
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

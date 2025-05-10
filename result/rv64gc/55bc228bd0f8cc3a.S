@@ -27,9 +27,10 @@ func0000000000000014:
 	addi	a4, a4, -455
 	slli	a4, a4, 32
 	mulhu	a3, a3, a4
-	li	a4, 36
 	srli	a3, a3, 35
-	mul	a3, a3, a4
+	slli	a4, a3, 2
+	slli	a3, a3, 5
+	add	a3, a3, a4
 	subw	a2, a2, a3
 	li	a3, 10
 	bltu	a2, a3, .LBB2_2

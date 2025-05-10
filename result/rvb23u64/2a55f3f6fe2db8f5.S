@@ -36,15 +36,14 @@ func00000000000000d5:
 	ret
 
 func00000000000000f5:
-	slli	a2, a0, 2
-	slli	a0, a0, 6
-	sub	a0, a0, a2
 	lui	a2, 21
+	sh1add	a0, a0, a0
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
 	lui	a2, 981163
+	sh2add	a0, a0, a0
 	slli	a2, a2, 3
-	add	a0, a0, a1
+	sh2add	a0, a0, a1
 	addi	a1, a2, 384
 	add	a0, a0, a1
 	ret

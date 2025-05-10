@@ -5,8 +5,9 @@ func000000000000003f:
 	ret
 
 func0000000000000000:
-	li	a1, 528
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 9
+	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 

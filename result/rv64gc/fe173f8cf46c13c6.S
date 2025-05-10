@@ -27,18 +27,19 @@ func000000000000006f:
 	srai	a3, a2, 23
 	srai	a2, a2, 19
 	sub	a2, a2, a3
-	li	a3, 80
+	slli	a3, a0, 4
+	slli	a0, a0, 6
 	add	a1, a1, a2
-	mul	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 160
 	ret
 
 func000000000000006e:
-	srai	a2, a2, 32
-	li	a3, 20
+	srai	a3, a2, 30
+	srai	a2, a2, 28
 	slli	a0, a0, 2
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4

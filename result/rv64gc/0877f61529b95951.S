@@ -27,10 +27,11 @@ func000000000000000f:
 	addiw	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	li	a4, 40
 	mulhu	a2, a2, a3
 	srli	a2, a2, 6
-	mul	a2, a2, a4
+	slli	a3, a2, 3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

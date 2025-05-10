@@ -60,9 +60,10 @@ func0000000000000003:
 
 func000000000000000b:
 	addi	a0, a0, -36
-	srli	a0, a0, 2
-	li	a1, 20
-	mul	a0, a0, a1
+	andi	a1, a0, -4
+	slli	a0, a0, 2
+	andi	a0, a0, -16
+	add	a0, a0, a1
 	ret
 
 func0000000000000018:
@@ -76,8 +77,9 @@ func0000000000000018:
 func000000000000001a:
 	addi	a0, a0, 1
 	srli	a0, a0, 1
-	li	a1, 80
-	mul	a0, a0, a1
+	slli	a1, a0, 4
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 
 func0000000000000008:

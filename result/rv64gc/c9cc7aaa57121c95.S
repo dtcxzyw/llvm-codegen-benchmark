@@ -3,9 +3,10 @@ func0000000000000018:
 	slli	a3, a1, 48
 	slli	a2, a2, 4
 	mulhu	a2, a3, a2
-	li	a3, 10
 	srli	a2, a2, 19
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
 	addiw	a3, a3, -1
@@ -20,9 +21,10 @@ func0000000000000001:
 	slli	a3, a1, 48
 	slli	a2, a2, 4
 	mulhu	a2, a3, a2
-	li	a3, 10
 	srli	a2, a2, 19
-	mul	a2, a2, a3
+	slli	a3, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
 	addiw	a3, a3, -1

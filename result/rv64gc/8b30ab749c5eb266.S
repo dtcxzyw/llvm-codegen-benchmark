@@ -1,7 +1,8 @@
 func0000000000000190:
-	li	a3, 272
+	slli	a3, a2, 4
+	slli	a2, a2, 8
 	sext.w	a0, a0
-	mul	a2, a2, a3
+	add	a2, a2, a3
 	lui	a3, 3
 	slli	a0, a0, 3
 	addiw	a3, a3, 232

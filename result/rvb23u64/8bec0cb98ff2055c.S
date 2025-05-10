@@ -1,7 +1,7 @@
 func000000000000004a:
-	slli	a2, a1, 2
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 2
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	and	a0, a0, a1

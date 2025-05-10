@@ -32,8 +32,9 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	li	a3, 72
-	mulw	a2, a2, a3
+	slli	a3, a2, 3
+	slli	a2, a2, 6
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	slt	a0, a0, a2
 	ret
@@ -62,8 +63,9 @@ func00000000000000a1:
 	ret
 
 func00000000000000ea:
-	li	a3, 20
-	mulw	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 4
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
