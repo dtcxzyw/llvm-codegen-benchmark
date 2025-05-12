@@ -11,7 +11,7 @@ func0000000000000000:
 
 func0000000000000016:
 	srliw	a2, a2, 3
-	sh3add	a1, a2, a1
+	sh3add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret
 

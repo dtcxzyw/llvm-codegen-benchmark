@@ -7,7 +7,7 @@ func000000000000001f:
 func000000000000001c:
 	zext.b	a1, a1
 	addi	a1, a1, 11
-	srliw	a1, a1, 2
-	sh2add	a0, a1, a0
+	srli	a1, a1, 2
+	sh2add.uw	a0, a1, a0
 	ret
 

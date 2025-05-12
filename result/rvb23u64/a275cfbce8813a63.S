@@ -33,7 +33,7 @@ func000000000000001c:
 func000000000000000b:
 	add	a0, a0, a1
 	srliw	a1, a2, 3
-	sh3add	a0, a1, a0
+	sh3add.uw	a0, a1, a0
 	ret
 
 func0000000000000000:

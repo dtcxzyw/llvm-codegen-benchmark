@@ -25,6 +25,8 @@ func0000000000000014:
 
 func000000000000003f:
 	add	a1, a1, a2
+	slli	a1, a1, 3
+	srli	a1, a1, 3
 	sh3add.uw	a0, a1, a0
 	ret
 

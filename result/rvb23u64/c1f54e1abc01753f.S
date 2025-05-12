@@ -11,6 +11,8 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
+	slli	a1, a1, 3
+	srli	a1, a1, 3
 	sh3add.uw	a0, a1, a0
 	ret
 

@@ -16,6 +16,8 @@ func0000000000000040:
 	ret
 
 func00000000000001bf:
+	slli	a1, a1, 3
+	srli	a1, a1, 3
 	sh3add.uw	a2, a1, a2
 	sh3add.uw	a1, a1, a2
 	sh3add	a0, a0, a1
@@ -23,6 +25,8 @@ func00000000000001bf:
 	ret
 
 func00000000000001bc:
+	slli	a1, a1, 3
+	srli	a1, a1, 3
 	sh3add.uw	a2, a1, a2
 	sh3add.uw	a1, a1, a2
 	sh3add	a0, a0, a1
