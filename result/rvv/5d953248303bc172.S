@@ -38,11 +38,10 @@ func0000000000000001:
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
-	lui	a0, 524288
-	addi	a0, a0, -1
+	bseti	a0, zero, 32
 	vor.vv	v8, v10, v8
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	bseti	a0, a0, 63
+	vsub.vx	v8, v8, a0
 	ret
 
 func0000000000000007:
@@ -59,14 +58,14 @@ func0000000000000007:
 
 func000000000000001b:
 	li	a0, 32
-	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	srli	a0, a1, 32
+	li	a0, -1
+	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
-	slli	a1, a1, 32
-	vadd.vx	v8, v8, a1
+	bseti	a0, zero, 32
+	vsub.vx	v8, v8, a0
 	ret
 
 func000000000000001f:

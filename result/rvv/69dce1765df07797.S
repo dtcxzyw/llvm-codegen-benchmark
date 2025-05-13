@@ -4,9 +4,8 @@ func0000000000000140:
 	li	a0, 32
 	vmadd.vv	v12, v10, v8
 	vsll.vx	v8, v12, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 32
+	vsub.vx	v8, v8, a0
 	ret
 
 func0000000000000350:
@@ -15,8 +14,7 @@ func0000000000000350:
 	vmadd.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
 	vsll.vx	v8, v8, a0
-	li	a0, -1
-	slli	a0, a0, 33
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 33
+	vsub.vx	v8, v8, a0
 	ret
 

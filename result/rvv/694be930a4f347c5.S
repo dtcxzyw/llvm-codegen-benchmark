@@ -1,9 +1,8 @@
 func0000000000000084:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	li	a0, -1
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 32
+	vsub.vx	v8, v8, a0
 	li	a0, -3
 	slli	a0, a0, 31
 	vmsltu.vx	v0, v8, a0

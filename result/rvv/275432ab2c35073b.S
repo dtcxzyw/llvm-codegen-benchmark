@@ -48,13 +48,12 @@ func00000000000001ef:
 func00000000000001ed:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	li	a0, -1
+	li	a0, -98
 	vadd.vv	v10, v10, v12
-	slli	a0, a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
-	addi	a0, a0, 98
+	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v10, a0
+	vsub.vx	v8, v10, a0
 	ret
 

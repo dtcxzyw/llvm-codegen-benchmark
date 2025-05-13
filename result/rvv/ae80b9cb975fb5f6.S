@@ -14,10 +14,9 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	li	a0, -1
-	slli	a0, a0, 32
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v8, a0
+	vsub.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v0, v8, -1
 	ret

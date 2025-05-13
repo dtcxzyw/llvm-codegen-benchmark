@@ -72,10 +72,10 @@ func0000000000000046:
 	ret
 
 func0000000000000066:
-	li	a0, 1
-	bseti	a0, a0, 63
+	li	a0, -1
+	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
+	vsub.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
 

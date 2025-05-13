@@ -12,11 +12,10 @@ func000000000000000c:
 	vadd.vv	v8, v12, v8
 	lui	a0, 32
 	vmv.v.x	v12, a0
-	li	a0, -1
 	vsll.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 32
+	vsub.vx	v8, v8, a0
 	ret
 
 func0000000000000020:

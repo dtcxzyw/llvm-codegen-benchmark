@@ -6,10 +6,9 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	li	a0, -1
-	slli	a0, a0, 32
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v12, v12, a0
+	vsub.vx	v12, v12, a0
 	li	a0, 32
 	vsra.vx	v12, v12, a0
 	vand.vv	v10, v12, v10

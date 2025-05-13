@@ -26,9 +26,8 @@ func000000000000000d:
 	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	slli	a0, a0, 61
-	addi	a0, a0, 1
+	srli	a0, a0, 3
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vadd.vx	v8, v8, a0, v0.t
+	vsub.vx	v8, v8, a0, v0.t
 	ret
 

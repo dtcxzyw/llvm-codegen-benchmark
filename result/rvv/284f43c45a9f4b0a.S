@@ -163,10 +163,9 @@ func00000000000000fd:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	vadd.vv	v8, v10, v8
-	li	a0, -1
+	li	a0, -98
 	vadd.vv	v8, v8, v12
-	slli	a0, a0, 32
-	addi	a0, a0, 98
-	vadd.vx	v8, v8, a0
+	zext.w	a0, a0
+	vsub.vx	v8, v8, a0
 	ret
 

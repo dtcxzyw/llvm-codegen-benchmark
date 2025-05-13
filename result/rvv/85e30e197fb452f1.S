@@ -84,11 +84,11 @@ func0000000000000038:
 	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v8, a0
-	slli	a1, a1, 61
+	srli	a0, a1, 3
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 1
-	addi	a0, a1, 1
-	vadd.vx	v8, v8, a0
+	vsub.vx	v8, v8, a0
+	slli	a1, a1, 61
 	vmsltu.vx	v0, v8, a1
 	ret
 

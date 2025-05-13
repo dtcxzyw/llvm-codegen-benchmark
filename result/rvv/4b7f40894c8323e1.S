@@ -40,10 +40,9 @@ func000000000000000c:
 func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 32
+	bseti	a0, a0, 63
+	vsub.vx	v8, v8, a0
 	bseti	a0, zero, 63
 	vor.vx	v8, v8, a0
 	ret

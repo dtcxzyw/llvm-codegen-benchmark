@@ -78,12 +78,11 @@ func0000000000000025:
 func000000000000007d:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v10, v11
-	li	a0, -1
+	li	a0, -179
 	vwaddu.wv	v8, v8, v10
-	slli	a0, a0, 32
-	addi	a0, a0, 179
+	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vsub.vx	v8, v8, a0
 	ret
 
 func0000000000000014:

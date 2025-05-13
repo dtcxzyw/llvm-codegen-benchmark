@@ -28,8 +28,7 @@ func00000000000001b8:
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
 	li	a0, -1
-	slli	a0, a0, 61
-	addi	a0, a0, 1
-	vadd.vx	v8, v8, a0, v0.t
+	srli	a0, a0, 3
+	vsub.vx	v8, v8, a0, v0.t
 	ret
 

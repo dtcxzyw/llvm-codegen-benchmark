@@ -32,9 +32,7 @@ func0000000000000038:
 	bseti	a0, zero, 59
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
-	li	a0, -1
-	slli	a0, a0, 59
-	vadd.vx	v8, v8, a0, v0.t
+	vsub.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000004:

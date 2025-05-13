@@ -47,8 +47,7 @@ func0000000000000001:
 	vand.vi	v10, v10, -2
 	li	a0, -1
 	vsub.vv	v8, v10, v8
-	slli	a0, a0, 32
-	addi	a0, a0, 1
-	vadd.vx	v8, v8, a0
+	srli	a0, a0, 32
+	vsub.vx	v8, v8, a0
 	ret
 

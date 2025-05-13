@@ -108,10 +108,9 @@ func0000000000000003:
 	ret
 
 func0000000000000008:
-	li	a0, -1
-	slli	a0, a0, 32
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vsub.vx	v8, v8, a0
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v10, v8, a0

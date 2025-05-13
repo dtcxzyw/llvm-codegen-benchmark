@@ -27,10 +27,9 @@ func0000000000000000:
 	vzext.vf2	v10, v8
 	li	a0, 56
 	vwsll.vx	v8, v10, a0
-	li	a0, -1
-	slli	a0, a0, 56
+	bseti	a0, zero, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vsub.vx	v8, v8, a0
 	ret
 
 func000000000000001d:
@@ -38,9 +37,8 @@ func000000000000001d:
 	vzext.vf2	v10, v8
 	li	a0, 32
 	vwsll.vx	v8, v10, a0
-	li	a0, -1
-	slli	a0, a0, 32
+	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vsub.vx	v8, v8, a0
 	ret
 

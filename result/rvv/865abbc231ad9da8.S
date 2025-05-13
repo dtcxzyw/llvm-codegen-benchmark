@@ -12,9 +12,9 @@ func00000000000002a8:
 	vsra.vi	v10, v10, 3
 	li	a0, -1
 	vsub.vv	v8, v10, v8
+	srli	a1, a0, 4
+	vsub.vx	v8, v8, a1
 	slli	a0, a0, 60
-	addi	a1, a0, 1
-	vadd.vx	v8, v8, a1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -44,9 +44,9 @@ func0000000000000208:
 	vsra.vi	v10, v10, 5
 	li	a0, -1
 	vsub.vv	v8, v10, v8
+	srli	a1, a0, 3
+	vsub.vx	v8, v8, a1
 	slli	a0, a0, 61
-	addi	a1, a0, 1
-	vadd.vx	v8, v8, a1
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -47,12 +47,12 @@ func0000000000000014:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
-	lui	a0, 118
+	lui	a0, 1048340
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	addiw	a0, a0, 539
-	bseti	a0, a0, 63
-	vadd.vx	v8, v8, a0
+	addiw	a0, a0, -1077
+	srli	a0, a0, 1
+	vsub.vx	v8, v8, a0
 	vmulhu.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 15
 	ret

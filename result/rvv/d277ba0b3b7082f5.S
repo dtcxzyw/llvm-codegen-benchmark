@@ -30,10 +30,9 @@ func000000000000006d:
 	vadd.vv	v10, v10, v12
 	li	a0, 44
 	vsrl.vx	v10, v10, a0
-	li	a0, -1
 	vadd.vv	v8, v10, v8
-	slli	a0, a0, 42
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 42
+	vsub.vx	v8, v8, a0
 	ret
 
 func000000000000006f:

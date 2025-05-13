@@ -1,8 +1,9 @@
 func0000000000000108:
+	bseti	a0, zero, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vx	v12, v12, a0
 	li	a0, -1
 	slli	a0, a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v12, v12, a0
 	addi	a0, a0, 1
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vv	v12, v8, v10
@@ -49,11 +50,11 @@ func0000000000000310:
 	ret
 
 func0000000000000308:
-	li	a0, -1
-	slli	a1, a0, 51
-	slli	a0, a0, 52
+	bseti	a0, zero, 51
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v12, v12, a1
+	vsub.vx	v12, v12, a0
+	li	a0, -1
+	slli	a0, a0, 52
 	vmsltu.vx	v14, v12, a0
 	vmsne.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12

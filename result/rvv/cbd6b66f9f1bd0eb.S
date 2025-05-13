@@ -16,8 +16,7 @@ func0000000000000000:
 	li	a0, 32
 	vsub.vv	v8, v10, v8
 	vsll.vx	v8, v8, a0
-	li	a0, -1
-	slli	a0, a0, 35
-	vadd.vx	v8, v8, a0
+	bseti	a0, zero, 35
+	vsub.vx	v8, v8, a0
 	ret
 

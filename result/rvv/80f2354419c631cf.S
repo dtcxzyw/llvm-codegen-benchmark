@@ -331,9 +331,9 @@ func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	li	a0, -1
+	srli	a1, a0, 32
+	vsub.vx	v8, v8, a1
 	slli	a0, a0, 32
-	addi	a1, a0, 1
-	vadd.vx	v8, v8, a1
 	vmsltu.vx	v0, v8, a0
 	ret
 

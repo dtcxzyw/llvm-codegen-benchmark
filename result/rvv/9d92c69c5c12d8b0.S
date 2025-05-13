@@ -7,10 +7,10 @@ func0000000000000004:
 
 func0000000000000008:
 	li	a0, -1
-	slli	a0, a0, 61
-	addi	a1, a0, 1
+	srli	a1, a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a1
+	vsub.vx	v8, v8, a1
+	slli	a0, a0, 61
 	vmsltu.vx	v10, v8, a0
 	vmandn.mm	v0, v10, v0
 	ret

@@ -9,9 +9,9 @@ func0000000000000008:
 	vmv.v.i	v10, -1
 	li	a0, -1
 	vsrl.vv	v8, v10, v8
+	srli	a1, a0, 3
+	vsub.vx	v8, v8, a1
 	slli	a0, a0, 61
-	addi	a1, a0, 1
-	vadd.vx	v8, v8, a1
 	vmsltu.vx	v10, v8, a0
 	vmandn.mm	v0, v10, v0
 	ret
