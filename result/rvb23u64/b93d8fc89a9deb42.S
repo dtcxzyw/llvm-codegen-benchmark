@@ -109,19 +109,19 @@ func00000000000001a1:
 	ret
 
 func0000000000000108:
-	slli	a2, a2, 24
+	zext.b	a2, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	srliw	a0, a0, 24
+	or	a0, a0, a2
 	sltiu	a0, a0, 253
 	xori	a0, a0, 1
 	ret
 
 func0000000000000104:
-	slli	a2, a2, 24
+	zext.b	a2, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	srliw	a0, a0, 24
+	or	a0, a0, a2
 	sltiu	a0, a0, 3
 	ret
 

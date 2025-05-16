@@ -67,9 +67,8 @@ func00000000000000a8:
 
 func00000000000000e8:
 	zext.b	a1, a1
-	slli	a1, a1, 16
-	or	a0, a0, a1
 	srliw	a0, a0, 16
+	or	a0, a0, a1
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	ret
@@ -160,17 +159,17 @@ func00000000000000c1:
 	ret
 
 func0000000000000088:
-	slli	a1, a1, 24
-	or	a0, a0, a1
+	zext.b	a1, a1
 	srliw	a0, a0, 24
+	or	a0, a0, a1
 	sltiu	a0, a0, 253
 	xori	a0, a0, 1
 	ret
 
 func0000000000000084:
-	slli	a1, a1, 24
-	or	a0, a0, a1
+	zext.b	a1, a1
 	srliw	a0, a0, 24
+	or	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 

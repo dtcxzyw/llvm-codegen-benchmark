@@ -72,9 +72,8 @@ func00000000000000a4:
 
 func00000000000000e4:
 	zext.b	a2, a2
-	slli	a2, a2, 16
-	or	a1, a1, a2
 	srliw	a1, a1, 16
+	or	a1, a1, a2
 	sltiu	a1, a1, 17
 	and	a0, a0, a1
 	ret

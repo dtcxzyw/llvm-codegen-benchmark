@@ -92,17 +92,17 @@ func00000000000001a1:
 	ret
 
 func0000000000000108:
-	orr	w8, w0, w1
-	orr	w8, w8, w2, lsl #24
-	lsr	w8, w8, #24
+	and	w8, w2, #0xff
+	orr	w9, w0, w1
+	orr	w8, w8, w9, lsr #24
 	cmp	w8, #252
 	cset	w0, hi
 	ret
 
 func0000000000000104:
-	orr	w8, w0, w1
-	orr	w8, w8, w2, lsl #24
-	lsr	w8, w8, #24
+	and	w8, w2, #0xff
+	orr	w9, w0, w1
+	orr	w8, w8, w9, lsr #24
 	cmp	w8, #3
 	cset	w0, lo
 	ret

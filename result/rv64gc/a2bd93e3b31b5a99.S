@@ -22,9 +22,8 @@ func00000000000000a8:
 
 func00000000000000e8:
 	zext.b	a2, a2
-	slli	a2, a2, 16
-	or	a1, a1, a2
 	srliw	a1, a1, 16
+	or	a1, a1, a2
 	li	a2, 16
 	bgeu	a2, a1, .LBB2_2
 	lui	a0, 272

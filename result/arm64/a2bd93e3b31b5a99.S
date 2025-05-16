@@ -15,9 +15,8 @@ func00000000000000a8:
 	ret
 
 func00000000000000e8:
-	ubfiz	w8, w2, #16, #8
-	orr	w8, w8, w1
-	lsr	w8, w8, #16
+	and	w8, w2, #0xff
+	orr	w8, w8, w1, lsr #16
 	cmp	w8, #16
 	mov	w8, #1114111
 	csel	w0, w8, w0, hi

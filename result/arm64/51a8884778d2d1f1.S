@@ -55,9 +55,8 @@ func00000000000000a8:
 	ret
 
 func00000000000000e8:
-	ubfiz	w8, w1, #16, #8
-	orr	w8, w8, w0
-	lsr	w8, w8, #16
+	and	w8, w1, #0xff
+	orr	w8, w8, w0, lsr #16
 	cmp	w8, #16
 	cset	w0, hi
 	ret
@@ -134,15 +133,15 @@ func00000000000000c1:
 	ret
 
 func0000000000000088:
-	orr	w8, w0, w1, lsl #24
-	lsr	w8, w8, #24
+	and	w8, w1, #0xff
+	orr	w8, w8, w0, lsr #24
 	cmp	w8, #252
 	cset	w0, hi
 	ret
 
 func0000000000000084:
-	orr	w8, w0, w1, lsl #24
-	lsr	w8, w8, #24
+	and	w8, w1, #0xff
+	orr	w8, w8, w0, lsr #24
 	cmp	w8, #3
 	cset	w0, lo
 	ret
