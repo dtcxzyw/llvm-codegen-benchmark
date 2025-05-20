@@ -103,9 +103,9 @@ func0000000000000043:
 	.quad	0x3f50624dd2f1a9fc
 func0000000000000052:
 	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpnlepd	%xmm1, %xmm0, %k1
-	vmovsd	.LCPI11_0(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmpnlesd	%xmm1, %xmm0, %k0
+	vcmpltsd	.LCPI11_0(%rip), %xmm0, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 

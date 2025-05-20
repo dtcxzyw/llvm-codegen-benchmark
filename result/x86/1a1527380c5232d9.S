@@ -68,9 +68,9 @@ func0000000000000047:
 	.long	0x41400000
 func00000000000000a4:
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpnleps	%xmm1, %xmm0, %k1
-	vmovss	.LCPI7_0(%rip), %xmm1
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpnless	%xmm1, %xmm0, %k0
+	vcmpgtss	.LCPI7_0(%rip), %xmm0, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -110,10 +110,10 @@ func0000000000000048:
 .LCPI11_0:
 	.long	0x7f7fffff
 func000000000000008d:
-	vmovss	.LCPI11_0(%rip), %xmm1
-	vcmpneqps	%xmm1, %xmm0, %k1
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpnltps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpnltss	%xmm1, %xmm0, %k0
+	vcmpneqss	.LCPI11_0(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

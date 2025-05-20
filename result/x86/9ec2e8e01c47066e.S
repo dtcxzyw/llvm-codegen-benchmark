@@ -2,8 +2,8 @@
 	.long	0x358637bd
 func0000000000000222:
 	vmovss	.LCPI0_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm2, %k0
-	vcmpltps	%xmm3, %xmm1, %k1
+	vcmpltss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm3, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
@@ -15,8 +15,8 @@ func0000000000000222:
 	.long	0x3f800000
 func0000000000000777:
 	vmovss	.LCPI1_0(%rip), %xmm3
-	vcmpneqps	%xmm3, %xmm2, %k0
-	vcmpneqps	%xmm3, %xmm1, %k1
+	vcmpneqss	%xmm3, %xmm2, %k0
+	vcmpneqss	%xmm3, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
@@ -30,8 +30,8 @@ func0000000000000777:
 	.long	0x48976760
 func0000000000000444:
 	vmovss	.LCPI2_0(%rip), %xmm3
-	vcmpltps	%xmm2, %xmm3, %k0
-	vcmpltps	%xmm1, %xmm3, %k1
+	vcmpltss	%xmm2, %xmm3, %k0
+	vcmpltss	%xmm1, %xmm3, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
@@ -40,17 +40,16 @@ func0000000000000444:
 	retq
 
 .LCPI3_0:
-	.long	0xc0a00000
-.LCPI3_1:
 	.long	0x40a00000
+.LCPI3_1:
+	.long	0xc0a00000
 func0000000000000244:
 	vmovss	.LCPI3_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm2, %k0
-	vmovss	.LCPI3_1(%rip), %xmm2
-	vcmpltps	%xmm1, %xmm2, %k1
-	korw	%k0, %k1, %k0
+	vcmpltss	%xmm1, %xmm3, %k0
+	vcmpltss	.LCPI3_1(%rip), %xmm2, %k1
+	korw	%k1, %k0, %k0
 	kmovd	%k0, %ecx
-	vucomiss	%xmm2, %xmm0
+	vucomiss	%xmm3, %xmm0
 	seta	%al
 	orb	%cl, %al
 	retq
@@ -59,8 +58,8 @@ func0000000000000244:
 	.long	0x34000000
 func0000000000000ddd:
 	vmovss	.LCPI4_0(%rip), %xmm3
-	vcmpnltps	%xmm3, %xmm2, %k0
-	vcmpnltps	%xmm3, %xmm1, %k1
+	vcmpnltss	%xmm3, %xmm2, %k0
+	vcmpnltss	%xmm3, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
@@ -70,8 +69,8 @@ func0000000000000ddd:
 
 func0000000000000333:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpnleps	%xmm2, %xmm3, %k0
-	vcmpnleps	%xmm1, %xmm3, %k1
+	vcmpnless	%xmm2, %xmm3, %k0
+	vcmpnless	%xmm1, %xmm3, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
@@ -81,8 +80,8 @@ func0000000000000333:
 
 func0000000000000bbb:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpnltps	%xmm2, %xmm3, %k0
-	vcmpnltps	%xmm1, %xmm3, %k1
+	vcmpnltss	%xmm2, %xmm3, %k0
+	vcmpnltss	%xmm1, %xmm3, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
@@ -94,9 +93,9 @@ func0000000000000bbb:
 	.long	0x3f800000
 func00000000000002a2:
 	vmovss	.LCPI7_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm3, %xmm2, %k0
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm2, %xmm1, %k1
+	vcmpless	%xmm2, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3

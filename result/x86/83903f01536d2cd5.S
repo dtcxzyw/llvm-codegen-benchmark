@@ -8,10 +8,8 @@ func00000000000000a6:
 	vmovss	.LCPI0_0(%rip), %xmm2
 	vdivss	%xmm1, %xmm2, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI0_1(%rip), %xmm1
-	vcmpnleps	%xmm1, %xmm0, %k0
-	vmovss	.LCPI0_2(%rip), %xmm1
-	vcmpnleps	%xmm0, %xmm1, %k1
+	vcmpnless	.LCPI0_1(%rip), %xmm0, %k0
+	vcmpngess	.LCPI0_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -22,9 +20,9 @@ func0000000000000084:
 	vmovss	.LCPI1_0(%rip), %xmm2
 	vdivss	%xmm1, %xmm2, %xmm1
 	vmulss	%xmm0, %xmm1, %xmm0
-	vcmpltps	%xmm0, %xmm2, %k0
+	vcmpltss	%xmm0, %xmm2, %k0
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpltps	%xmm1, %xmm0, %k1
+	vcmpltss	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

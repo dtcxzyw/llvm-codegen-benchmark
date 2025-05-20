@@ -1,8 +1,9 @@
 func0000000000000088:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpeqpd	%xmm2, %xmm0, %k1
-	vcmpeqpd	%xmm2, %xmm1, %k0 {%k1}
+	vcmpeqsd	%xmm2, %xmm0, %k0
+	vcmpeqsd	%xmm2, %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -11,9 +12,9 @@ func0000000000000088:
 func0000000000000087:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpneqpd	%xmm2, %xmm1, %k1
-	vmovsd	.LCPI1_0(%rip), %xmm1
-	vcmpeqpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmpneqsd	%xmm2, %xmm1, %k0
+	vcmpeqsd	.LCPI1_0(%rip), %xmm0, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 

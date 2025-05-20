@@ -35,8 +35,8 @@ func00000000000001b6:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI2_1(%rip), %xmm2
-	vcmpnltpd	%xmm2, %xmm1, %k0
-	vcmpnltpd	%xmm0, %xmm2, %k1
+	vcmpnltsd	%xmm2, %xmm1, %k0
+	vcmpnltsd	%xmm0, %xmm2, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -91,8 +91,8 @@ func0000000000000288:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI6_1(%rip), %xmm2
-	vcmpltpd	%xmm1, %xmm2, %k0
-	vcmpltpd	%xmm0, %xmm2, %k1
+	vcmpltsd	%xmm1, %xmm2, %k0
+	vcmpltsd	%xmm0, %xmm2, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -106,8 +106,8 @@ func00000000000006aa:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI7_1(%rip), %xmm2
-	vcmpnlepd	%xmm2, %xmm1, %k0
-	vcmpnlepd	%xmm2, %xmm0, %k1
+	vcmpnlesd	%xmm2, %xmm1, %k0
+	vcmpnlesd	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -121,8 +121,8 @@ func0000000000000088:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI8_1(%rip), %xmm2
-	vcmpltpd	%xmm1, %xmm2, %k0
-	vcmpltpd	%xmm0, %xmm2, %k1
+	vcmpltsd	%xmm1, %xmm2, %k0
+	vcmpltsd	%xmm0, %xmm2, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -136,8 +136,8 @@ func0000000000000044:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI9_1(%rip), %xmm2
-	vcmpltpd	%xmm2, %xmm1, %k0
-	vcmpltpd	%xmm2, %xmm0, %k1
+	vcmpltsd	%xmm2, %xmm1, %k0
+	vcmpltsd	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -165,8 +165,8 @@ func0000000000000644:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI11_1(%rip), %xmm2
-	vcmpltpd	%xmm2, %xmm1, %k0
-	vcmpltpd	%xmm2, %xmm0, %k1
+	vcmpltsd	%xmm2, %xmm1, %k0
+	vcmpltsd	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -180,8 +180,8 @@ func00000000000000aa:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI12_1(%rip), %xmm2
-	vcmpnlepd	%xmm2, %xmm1, %k0
-	vcmpnlepd	%xmm2, %xmm0, %k1
+	vcmpnlesd	%xmm2, %xmm1, %k0
+	vcmpnlesd	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -195,8 +195,8 @@ func00000000000001ba:
 	vandpd	%xmm2, %xmm1, %xmm1
 	vandpd	%xmm2, %xmm0, %xmm0
 	vmovsd	.LCPI13_1(%rip), %xmm2
-	vcmpnltpd	%xmm2, %xmm1, %k0
-	vcmpnltpd	%xmm2, %xmm0, %k1
+	vcmpnltsd	%xmm2, %xmm1, %k0
+	vcmpnltsd	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

@@ -4,9 +4,9 @@
 	.quad	0x408f400000000000
 func0000000000000082:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm2
-	vmovsd	.LCPI0_1(%rip), %xmm3
-	vcmpltpd	%xmm3, %xmm2, %k1
-	vcmpeqpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmpeqsd	%xmm1, %xmm0, %k0
+	vcmpltsd	.LCPI0_1(%rip), %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

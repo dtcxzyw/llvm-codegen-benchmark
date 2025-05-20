@@ -6,10 +6,8 @@
 	.long	0x179abe15
 func0000000000000394:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI0_1(%rip), %xmm1
-	vcmpleps	%xmm0, %xmm1, %k0
-	vmovss	.LCPI0_2(%rip), %xmm1
-	vcmpleps	%xmm1, %xmm0, %k1
+	vcmpgess	.LCPI0_1(%rip), %xmm0, %k0
+	vcmpless	.LCPI0_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -37,10 +35,8 @@ func0000000000000192:
 	.long	0x3dd67750
 func0000000000000284:
 	vandps	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI2_1(%rip), %xmm1
-	vcmpltps	%xmm0, %xmm1, %k0
-	vmovss	.LCPI2_2(%rip), %xmm1
-	vcmpltps	%xmm1, %xmm0, %k1
+	vcmpgtss	.LCPI2_1(%rip), %xmm0, %k0
+	vcmpltss	.LCPI2_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -53,10 +49,8 @@ func0000000000000284:
 	.long	0x3c23d70a
 func0000000000000384:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI3_1(%rip), %xmm1
-	vcmpleps	%xmm0, %xmm1, %k0
-	vmovss	.LCPI3_2(%rip), %xmm1
-	vcmpltps	%xmm1, %xmm0, %k1
+	vcmpgess	.LCPI3_1(%rip), %xmm0, %k0
+	vcmpltss	.LCPI3_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

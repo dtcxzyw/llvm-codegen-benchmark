@@ -1,7 +1,8 @@
 func000000000000002a:
 	vaddss	%xmm2, %xmm0, %xmm2
-	vcmpleps	%xmm1, %xmm0, %k1
-	vcmpltps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpless	%xmm1, %xmm0, %k0
+	vcmpltss	%xmm2, %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 

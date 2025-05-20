@@ -73,10 +73,8 @@ func00000000000000c4:
 .LCPI7_1:
 	.long	0x00800000
 func00000000000000c8:
-	vmovss	.LCPI7_0(%rip), %xmm1
-	vcmpeqps	%xmm1, %xmm0, %k0
-	vmovss	.LCPI7_1(%rip), %xmm1
-	vcmpnleps	%xmm0, %xmm1, %k1
+	vcmpeqss	.LCPI7_0(%rip), %xmm0, %k0
+	vcmpngess	.LCPI7_1(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

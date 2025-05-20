@@ -33,9 +33,8 @@ func000000000000010e:
 func0000000000000044:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI2_1(%rip), %xmm0
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmpltsd	%xmm2, %xmm0, %k0
+	vcmpltsd	.LCPI2_1(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -62,8 +61,8 @@ func000000000000012a:
 func00000000000001b6:
 	vandpd	.LCPI4_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI4_1(%rip), %xmm2
-	vcmpnltpd	%xmm0, %xmm2, %k0
-	vcmpnltpd	%xmm2, %xmm1, %k1
+	vcmpnltsd	%xmm0, %xmm2, %k0
+	vcmpnltsd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -75,9 +74,8 @@ func00000000000001b6:
 func0000000000000084:
 	vandpd	.LCPI5_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI5_1(%rip), %xmm0
-	vcmpltpd	%xmm1, %xmm0, %k1
+	vcmpltsd	%xmm2, %xmm0, %k0
+	vcmpgtsd	.LCPI5_1(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -145,9 +143,8 @@ func0000000000000110:
 func0000000000000242:
 	vandpd	.LCPI10_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI10_1(%rip), %xmm0
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmpunordsd	%xmm2, %xmm0, %k0
+	vcmpltsd	.LCPI10_1(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -159,8 +156,8 @@ func0000000000000242:
 func0000000000000088:
 	vandpd	.LCPI11_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI11_1(%rip), %xmm2
-	vcmpltpd	%xmm0, %xmm2, %k0
-	vcmpltpd	%xmm1, %xmm2, %k1
+	vcmpltsd	%xmm0, %xmm2, %k0
+	vcmpltsd	%xmm1, %xmm2, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -172,8 +169,8 @@ func0000000000000088:
 func0000000000000288:
 	vandpd	.LCPI12_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI12_1(%rip), %xmm2
-	vcmpltpd	%xmm0, %xmm2, %k0
-	vcmpltpd	%xmm1, %xmm2, %k1
+	vcmpltsd	%xmm0, %xmm2, %k0
+	vcmpltsd	%xmm1, %xmm2, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -185,8 +182,8 @@ func0000000000000288:
 func00000000000002aa:
 	vandpd	.LCPI13_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI13_1(%rip), %xmm2
-	vcmpnlepd	%xmm2, %xmm0, %k0
-	vcmpnlepd	%xmm2, %xmm1, %k1
+	vcmpnlesd	%xmm2, %xmm0, %k0
+	vcmpnlesd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -199,10 +196,8 @@ func00000000000002aa:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000048:
 	vandpd	.LCPI14_0(%rip){1to2}, %xmm1, %xmm1
-	vmovsd	.LCPI14_1(%rip), %xmm2
-	vcmpltpd	%xmm0, %xmm2, %k0
-	vmovsd	.LCPI14_2(%rip), %xmm0
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmpgtsd	.LCPI14_1(%rip), %xmm0, %k0
+	vcmpltsd	.LCPI14_2(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -228,8 +223,8 @@ func0000000000000310:
 func0000000000000244:
 	vandpd	.LCPI16_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI16_1(%rip), %xmm2
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vcmpltpd	%xmm2, %xmm1, %k1
+	vcmpltsd	%xmm2, %xmm0, %k0
+	vcmpltsd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -242,10 +237,8 @@ func0000000000000244:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000150:
 	vandpd	.LCPI17_0(%rip){1to2}, %xmm1, %xmm1
-	vmovsd	.LCPI17_1(%rip), %xmm2
-	vcmpeqpd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI17_2(%rip), %xmm0
-	vcmplepd	%xmm0, %xmm1, %k1
+	vcmpeqsd	.LCPI17_1(%rip), %xmm0, %k0
+	vcmplesd	.LCPI17_2(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -257,9 +250,8 @@ func0000000000000150:
 func0000000000000098:
 	vandpd	.LCPI18_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmplepd	%xmm0, %xmm2, %k0
-	vmovsd	.LCPI18_1(%rip), %xmm0
-	vcmpltpd	%xmm1, %xmm0, %k1
+	vcmplesd	%xmm0, %xmm2, %k0
+	vcmpgtsd	.LCPI18_1(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -271,8 +263,8 @@ func0000000000000098:
 func00000000000000aa:
 	vandpd	.LCPI19_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI19_1(%rip), %xmm2
-	vcmpnlepd	%xmm2, %xmm0, %k0
-	vcmpnlepd	%xmm2, %xmm1, %k1
+	vcmpnlesd	%xmm2, %xmm0, %k0
+	vcmpnlesd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
@@ -284,8 +276,8 @@ func00000000000000aa:
 func00000000000001ba:
 	vandpd	.LCPI20_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI20_1(%rip), %xmm2
-	vcmpnltpd	%xmm2, %xmm0, %k0
-	vcmpnltpd	%xmm2, %xmm1, %k1
+	vcmpnltsd	%xmm2, %xmm0, %k0
+	vcmpnltsd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq

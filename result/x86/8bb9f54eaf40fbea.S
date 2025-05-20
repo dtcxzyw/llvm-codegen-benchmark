@@ -5,10 +5,8 @@
 func0000000000000084:
 	vcvtsi2sd	%edi, %xmm1, %xmm1
 	vsubsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI0_0(%rip), %xmm1
-	vcmpltpd	%xmm0, %xmm1, %k0
-	vmovsd	.LCPI0_1(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k1
+	vcmpgtsd	.LCPI0_0(%rip), %xmm0, %k0
+	vcmpltsd	.LCPI0_1(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

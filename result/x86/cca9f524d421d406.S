@@ -1,78 +1,91 @@
 func0000000000000044:
-	vcmpltpd	%xmm0, %xmm1, %k1
-	vcmpltpd	%xmm2, %xmm1, %k0 {%k1}
+	vcmpltsd	%xmm2, %xmm1, %k0
+	vcmpltsd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func000000000000002b:
-	vcmpnltpd	%xmm0, %xmm1, %k1
-	vcmpltpd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpltsd	%xmm1, %xmm2, %k0
+	vcmpnltsd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000042:
-	vcmpltpd	%xmm1, %xmm0, %k1
-	vcmpltpd	%xmm2, %xmm1, %k0 {%k1}
+	vcmpltsd	%xmm2, %xmm1, %k0
+	vcmpltsd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000024:
-	vcmpltpd	%xmm0, %xmm1, %k1
-	vcmpltpd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpltsd	%xmm1, %xmm2, %k0
+	vcmpltsd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func00000000000000ac:
-	vcmplepd	%xmm0, %xmm1, %k1
-	vcmplepd	%xmm1, %xmm2, %k0 {%k1}
+	vcmplesd	%xmm1, %xmm2, %k0
+	vcmplesd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000077:
-	vcmpneqpd	%xmm1, %xmm0, %k1
-	vcmpneqpd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpneqsd	%xmm1, %xmm2, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000055:
-	vcmpnlepd	%xmm1, %xmm0, %k1
-	vcmpnlepd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpnlesd	%xmm1, %xmm2, %k0
+	vcmpnlesd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func00000000000000aa:
-	vcmplepd	%xmm1, %xmm0, %k1
-	vcmplepd	%xmm1, %xmm2, %k0 {%k1}
+	vcmplesd	%xmm1, %xmm2, %k0
+	vcmplesd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func00000000000000ca:
-	vcmplepd	%xmm1, %xmm0, %k1
-	vcmplepd	%xmm2, %xmm1, %k0 {%k1}
+	vcmplesd	%xmm2, %xmm1, %k0
+	vcmplesd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000022:
-	vcmpltpd	%xmm1, %xmm0, %k1
-	vcmpltpd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpltsd	%xmm1, %xmm2, %k0
+	vcmpltsd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func00000000000000a4:
-	vcmpltpd	%xmm0, %xmm1, %k1
-	vcmplepd	%xmm1, %xmm2, %k0 {%k1}
+	vcmplesd	%xmm1, %xmm2, %k0
+	vcmpltsd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func0000000000000078:
-	vcmpeqpd	%xmm1, %xmm0, %k1
-	vcmpneqpd	%xmm1, %xmm2, %k0 {%k1}
+	vcmpneqsd	%xmm1, %xmm2, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 func00000000000000cc:
-	vcmplepd	%xmm0, %xmm1, %k1
-	vcmplepd	%xmm2, %xmm1, %k0 {%k1}
+	vcmplesd	%xmm2, %xmm1, %k0
+	vcmplesd	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

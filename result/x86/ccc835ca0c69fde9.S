@@ -5,8 +5,8 @@
 func0000000000000022:
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vmovsd	.LCPI0_1(%rip), %xmm2
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vcmpltpd	%xmm2, %xmm1, %k1
+	vcmpltsd	%xmm2, %xmm0, %k0
+	vcmpltsd	%xmm2, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -16,8 +16,8 @@ func0000000000000022:
 func0000000000000011:
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%xmm2, %xmm0, %k0
-	vcmpunordpd	%xmm2, %xmm1, %k1
+	vcmpunordsd	%xmm2, %xmm0, %k0
+	vcmpunordsd	%xmm2, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

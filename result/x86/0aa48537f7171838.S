@@ -6,10 +6,8 @@
 	.long	0x3f800000
 func0000000000000048:
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
-	vmovss	.LCPI0_1(%rip), %xmm2
-	vcmpltps	%xmm2, %xmm0, %k0
-	vmovss	.LCPI0_2(%rip), %xmm0
-	vcmpltps	%xmm1, %xmm0, %k1
+	vcmpltss	.LCPI0_1(%rip), %xmm0, %k0
+	vcmpgtss	.LCPI0_2(%rip), %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -21,8 +19,8 @@ func0000000000000048:
 func0000000000000088:
 	vmulss	.LCPI1_0(%rip), %xmm1, %xmm1
 	vmovss	.LCPI1_1(%rip), %xmm2
-	vcmpltps	%xmm0, %xmm2, %k0
-	vcmpltps	%xmm1, %xmm2, %k1
+	vcmpltss	%xmm0, %xmm2, %k0
+	vcmpltss	%xmm1, %xmm2, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -34,8 +32,8 @@ func0000000000000088:
 func00000000000000ee:
 	vmulss	.LCPI2_0(%rip), %xmm1, %xmm1
 	vmovss	.LCPI2_1(%rip), %xmm2
-	vcmpneqps	%xmm2, %xmm0, %k0
-	vcmpneqps	%xmm2, %xmm1, %k1
+	vcmpneqss	%xmm2, %xmm0, %k0
+	vcmpneqss	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq

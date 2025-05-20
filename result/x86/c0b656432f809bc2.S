@@ -8,9 +8,10 @@ func0000000000000072:
 	vmovsd	.LCPI0_0(%rip), %xmm3
 	vfmadd213sd	.LCPI0_1(%rip), %xmm2, %xmm3
 	vfmadd231sd	.LCPI0_2(%rip), %xmm1, %xmm3
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpltpd	%xmm1, %xmm3, %k1
-	vcmpneqpd	%xmm0, %xmm3, %k0 {%k1}
+	vcmpneqsd	%xmm0, %xmm3, %k0
+	vxorpd	%xmm0, %xmm0, %xmm0
+	vcmpltsd	%xmm0, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

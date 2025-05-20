@@ -3,10 +3,8 @@
 .LCPI0_1:
 	.quad	0x41dfffffffc00000
 func0000000000000902:
-	vmovsd	.LCPI0_0(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k0
-	vmovsd	.LCPI0_1(%rip), %xmm1
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmpltsd	.LCPI0_0(%rip), %xmm0, %k0
+	vcmpgtsd	.LCPI0_1(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomisd	%xmm0, %xmm0
@@ -19,11 +17,10 @@ func0000000000000902:
 .LCPI1_1:
 	.quad	0xc1e0000000000000
 func0000000000001044:
-	vmovsd	.LCPI1_0(%rip), %xmm1
-	vcmpltpd	%xmm0, %xmm1, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
+	vcmpunordsd	%xmm1, %xmm0, %k0
+	vcmpgtsd	.LCPI1_0(%rip), %xmm0, %k1
+	korw	%k1, %k0, %k0
 	kmovd	%k0, %ecx
 	vmovsd	.LCPI1_1(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1

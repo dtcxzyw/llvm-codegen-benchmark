@@ -5,8 +5,8 @@
 func000000000000036c:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI0_1(%rip), %xmm2
-	vcmpnltpd	%xmm0, %xmm2, %k0
-	vcmpnltpd	%xmm2, %xmm1, %k1
+	vcmpnltsd	%xmm0, %xmm2, %k0
+	vcmpnltsd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al
@@ -35,10 +35,8 @@ func0000000000000264:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000090:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
-	vmovsd	.LCPI2_1(%rip), %xmm2
-	vcmpltpd	%xmm0, %xmm2, %k0
-	vmovsd	.LCPI2_2(%rip), %xmm0
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmpgtsd	.LCPI2_1(%rip), %xmm0, %k0
+	vcmpltsd	.LCPI2_2(%rip), %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al
@@ -82,8 +80,8 @@ func0000000000000220:
 func0000000000000374:
 	vandpd	.LCPI5_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI5_1(%rip), %xmm2
-	vcmpnltpd	%xmm2, %xmm0, %k0
-	vcmpnltpd	%xmm2, %xmm1, %k1
+	vcmpnltsd	%xmm2, %xmm0, %k0
+	vcmpnltsd	%xmm2, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al

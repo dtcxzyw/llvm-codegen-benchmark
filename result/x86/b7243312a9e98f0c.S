@@ -35,8 +35,8 @@ func0000000000000088:
 func0000000000000022:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
 	vmovsd	.LCPI2_1(%rip), %xmm2
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vcmpltpd	%xmm2, %xmm1, %k1
+	vcmpltsd	%xmm2, %xmm0, %k0
+	vcmpltsd	%xmm2, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al
@@ -49,9 +49,8 @@ func0000000000000022:
 func00000000000000a2:
 	vandpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmplepd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI3_1(%rip), %xmm0
-	vcmpltpd	%xmm0, %xmm1, %k1
+	vcmplesd	%xmm2, %xmm0, %k0
+	vcmpltsd	.LCPI3_1(%rip), %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al

@@ -6,10 +6,8 @@
 	.quad	0x3ee4f8b588e368f1
 func0000000000000084:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
-	vmovsd	.LCPI0_1(%rip), %xmm1
-	vcmpltpd	%xmm0, %xmm1, %k0
-	vmovsd	.LCPI0_2(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k1
+	vcmpgtsd	.LCPI0_1(%rip), %xmm0, %k0
+	vcmpltsd	.LCPI0_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
@@ -58,10 +56,8 @@ func0000000000000092:
 	.quad	0x3810000000000000
 func00000000000000a6:
 	vandpd	.LCPI3_0(%rip){1to2}, %xmm0, %xmm0
-	vmovsd	.LCPI3_1(%rip), %xmm1
-	vcmpnlepd	%xmm1, %xmm0, %k0
-	vmovsd	.LCPI3_2(%rip), %xmm1
-	vcmpnlepd	%xmm0, %xmm1, %k1
+	vcmpnlesd	.LCPI3_1(%rip), %xmm0, %k0
+	vcmpngesd	.LCPI3_2(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

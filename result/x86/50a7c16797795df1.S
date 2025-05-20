@@ -1,30 +1,28 @@
 .LCPI0_0:
 	.long	0x7fffffff
 .LCPI0_1:
-	.long	0x4333e666
-.LCPI0_2:
 	.long	0x4334199a
+.LCPI0_2:
+	.long	0x4333e666
 func0000000000000024:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI0_1(%rip), %xmm1
-	vcmpltps	%xmm0, %xmm1, %k1
-	vmovss	.LCPI0_2(%rip), %xmm1
-	vcmpltps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltss	.LCPI0_1(%rip), %xmm0, %k0
+	vcmpgtss	.LCPI0_2(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
 .LCPI1_0:
 	.long	0x7fffffff
 .LCPI1_1:
-	.long	0x3f800000
-.LCPI1_2:
 	.long	0x4b189680
+.LCPI1_2:
+	.long	0x3f800000
 func000000000000002c:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI1_1(%rip), %xmm1
-	vcmpleps	%xmm0, %xmm1, %k1
-	vmovss	.LCPI1_2(%rip), %xmm1
-	vcmpltps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltss	.LCPI1_1(%rip), %xmm0, %k0
+	vcmpgess	.LCPI1_2(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -46,15 +44,14 @@ func0000000000000036:
 .LCPI3_0:
 	.long	0x7fffffff
 .LCPI3_1:
-	.long	0x3dd67750
-.LCPI3_2:
 	.long	0x40425c20
+.LCPI3_2:
+	.long	0x3dd67750
 func0000000000000124:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
-	vmovss	.LCPI3_1(%rip), %xmm1
-	vcmpltps	%xmm0, %xmm1, %k1
-	vmovss	.LCPI3_2(%rip), %xmm1
-	vcmpltps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltss	.LCPI3_1(%rip), %xmm0, %k0
+	vcmpgtss	.LCPI3_2(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

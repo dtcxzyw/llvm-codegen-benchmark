@@ -2,25 +2,27 @@
 	.long	0x3f800000
 func00000000000000ac:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI0_0(%rip), %xmm0
-	vcmpleps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpless	%xmm0, %xmm2, %k0
+	vcmpless	.LCPI0_0(%rip), %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func0000000000000044:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltps	%xmm0, %xmm2, %k1
-	vcmpltps	%xmm1, %xmm2, %k0 {%k1}
+	vcmpltss	%xmm1, %xmm2, %k0
+	vcmpltss	%xmm0, %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func0000000000000088:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpeqps	%xmm2, %xmm0, %k1
-	vcmpeqps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpeqss	%xmm2, %xmm1, %k0
+	vcmpeqss	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -29,24 +31,27 @@ func0000000000000088:
 	.long	0x7e7fffff
 func0000000000000022:
 	vmovss	.LCPI3_0(%rip), %xmm2
-	vcmpltps	%xmm2, %xmm0, %k1
-	vcmpltps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpltss	%xmm2, %xmm1, %k0
+	vcmpltss	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func00000000000000cc:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm0, %xmm2, %k1
-	vcmpleps	%xmm1, %xmm2, %k0 {%k1}
+	vcmpless	%xmm1, %xmm2, %k0
+	vcmpless	%xmm0, %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func0000000000000055:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnleps	%xmm2, %xmm0, %k1
-	vcmpnleps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpnless	%xmm2, %xmm1, %k0
+	vcmpnless	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -55,8 +60,9 @@ func0000000000000055:
 	.long	0x358637bd
 func00000000000000aa:
 	vmovss	.LCPI6_0(%rip), %xmm2
-	vcmpleps	%xmm2, %xmm0, %k1
-	vcmpleps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpless	%xmm2, %xmm1, %k0
+	vcmpless	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -65,8 +71,9 @@ func00000000000000aa:
 	.long	0x3f800000
 func0000000000000077:
 	vmovss	.LCPI7_0(%rip), %xmm2
-	vcmpneqps	%xmm2, %xmm0, %k1
-	vcmpneqps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpneqss	%xmm2, %xmm1, %k0
+	vcmpneqss	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -75,8 +82,9 @@ func0000000000000077:
 	.long	0x7f800000
 func0000000000000066:
 	vmovss	.LCPI8_0(%rip), %xmm2
-	vcmpneq_oqps	%xmm2, %xmm0, %k1
-	vcmpneq_oqps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpneq_oqss	%xmm2, %xmm1, %k0
+	vcmpneq_oqss	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -85,37 +93,39 @@ func0000000000000066:
 	.long	0x43b40000
 func00000000000000bb:
 	vmovss	.LCPI9_0(%rip), %xmm2
-	vcmpnltps	%xmm0, %xmm2, %k1
-	vcmpnltps	%xmm1, %xmm2, %k0 {%k1}
+	vcmpnltss	%xmm1, %xmm2, %k0
+	vcmpnltss	%xmm0, %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func00000000000000ca:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm2, %xmm0, %k1
-	vcmpleps	%xmm1, %xmm2, %k0 {%k1}
+	vcmpless	%xmm1, %xmm2, %k0
+	vcmpless	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 .LCPI11_0:
-	.long	0x3dcccccd
-.LCPI11_1:
 	.long	0x3f666666
+.LCPI11_1:
+	.long	0x3dcccccd
 func0000000000000024:
-	vmovss	.LCPI11_0(%rip), %xmm2
-	vcmpltps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI11_1(%rip), %xmm0
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpltss	.LCPI11_0(%rip), %xmm1, %k0
+	vcmpgtss	.LCPI11_1(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func00000000000000ee:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%xmm2, %xmm0, %k1
-	vcmpordps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpordss	%xmm2, %xmm1, %k0
+	vcmpordss	%xmm2, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -123,10 +133,10 @@ func00000000000000ee:
 .LCPI13_0:
 	.long	0x42c80000
 func000000000000008b:
-	vmovss	.LCPI13_0(%rip), %xmm2
-	vcmpnltps	%xmm0, %xmm2, %k1
-	vxorps	%xmm0, %xmm0, %xmm0
-	vcmpeqps	%xmm0, %xmm1, %k0 {%k1}
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpeqss	%xmm2, %xmm1, %k0
+	vcmpngtss	.LCPI13_0(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq

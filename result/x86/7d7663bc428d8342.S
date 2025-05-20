@@ -3,9 +3,10 @@
 func0000000000000072:
 	vcvtsi2sd	%edi, %xmm2, %xmm2
 	vfmadd132sd	.LCPI0_0(%rip), %xmm1, %xmm2
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpltpd	%xmm1, %xmm2, %k1
-	vcmpneqpd	%xmm0, %xmm2, %k0 {%k1}
+	vcmpneqsd	%xmm0, %xmm2, %k0
+	vxorpd	%xmm0, %xmm0, %xmm0
+	vcmpltsd	%xmm0, %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

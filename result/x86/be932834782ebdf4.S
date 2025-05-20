@@ -5,8 +5,9 @@
 func00000000000000aa:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI0_1(%rip), %xmm2
-	vcmpleps	%xmm2, %xmm0, %k1
-	vcmpleps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpless	%xmm2, %xmm0, %k0
+	vcmpless	%xmm2, %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -17,8 +18,9 @@ func00000000000000aa:
 func00000000000001aa:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI1_1(%rip), %xmm2
-	vcmpleps	%xmm2, %xmm1, %k1
-	vcmpleps	%xmm2, %xmm0, %k0 {%k1}
+	vcmpless	%xmm2, %xmm0, %k0
+	vcmpless	%xmm2, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -29,9 +31,9 @@ func00000000000001aa:
 func0000000000000124:
 	vandps	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI2_1(%rip), %xmm0
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpltss	%xmm0, %xmm2, %k0
+	vcmpltss	.LCPI2_1(%rip), %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -42,8 +44,9 @@ func0000000000000124:
 func0000000000000022:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI3_1(%rip), %xmm2
-	vcmpltps	%xmm2, %xmm0, %k1
-	vcmpltps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpltss	%xmm2, %xmm0, %k0
+	vcmpltss	%xmm2, %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -54,8 +57,9 @@ func0000000000000022:
 func0000000000000122:
 	vandps	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI4_1(%rip), %xmm2
-	vcmpltps	%xmm2, %xmm1, %k1
-	vcmpltps	%xmm2, %xmm0, %k0 {%k1}
+	vcmpltss	%xmm2, %xmm0, %k0
+	vcmpltss	%xmm2, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -67,10 +71,9 @@ func0000000000000122:
 	.long	0x41f00000
 func0000000000000024:
 	vandps	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
-	vmovss	.LCPI5_1(%rip), %xmm2
-	vcmpltps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI5_2(%rip), %xmm0
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpgtss	.LCPI5_1(%rip), %xmm0, %k0
+	vcmpltss	.LCPI5_2(%rip), %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -116,8 +119,9 @@ func000000000000006d:
 func00000000000001dd:
 	vandps	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI9_1(%rip), %xmm2
-	vcmpnltps	%xmm2, %xmm0, %k1
-	vcmpnltps	%xmm2, %xmm1, %k0 {%k1}
+	vcmpnltss	%xmm2, %xmm0, %k0
+	vcmpnltss	%xmm2, %xmm1, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	retq
 
@@ -128,8 +132,9 @@ func00000000000001dd:
 func00000000000000dd:
 	vandps	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI10_1(%rip), %xmm2
-	vcmpnltps	%xmm2, %xmm1, %k1
-	vcmpnltps	%xmm2, %xmm0, %k0 {%k1}
+	vcmpnltss	%xmm2, %xmm0, %k0
+	vcmpnltss	%xmm2, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
 

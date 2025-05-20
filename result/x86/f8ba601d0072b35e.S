@@ -2,8 +2,9 @@
 	.long	0x3f800000
 func0000000000000224:
 	vmovss	.LCPI0_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm1, %k1
-	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpltss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm3, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -15,8 +16,9 @@ func0000000000000224:
 	.long	0x3f800000
 func0000000000000888:
 	vmovss	.LCPI1_0(%rip), %xmm3
-	vcmpeqps	%xmm3, %xmm1, %k1
-	vcmpeqps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpeqss	%xmm3, %xmm2, %k0
+	vcmpeqss	%xmm3, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
 	setnp	%dl
@@ -29,16 +31,18 @@ func0000000000000aca:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vucomiss	%xmm3, %xmm1
 	setae	%cl
-	vcmpleps	%xmm3, %xmm2, %k1
-	vcmpleps	%xmm3, %xmm0, %k0 {%k1}
+	vcmpless	%xmm3, %xmm0, %k0
+	vcmpless	%xmm3, %xmm2, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%cl, %al
 	retq
 
 func0000000000000444:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpltps	%xmm1, %xmm3, %k1
-	vcmpltps	%xmm2, %xmm3, %k0 {%k1}
+	vcmpltss	%xmm2, %xmm3, %k0
+	vcmpltss	%xmm1, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
 	seta	%al
@@ -47,8 +51,9 @@ func0000000000000444:
 
 func0000000000000aaa:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpleps	%xmm3, %xmm1, %k1
-	vcmpleps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpless	%xmm3, %xmm2, %k0
+	vcmpless	%xmm3, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
 	setae	%al
@@ -59,8 +64,9 @@ func0000000000000aaa:
 	.long	0x3f800000
 func0000000000000742:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpltps	%xmm1, %xmm3, %k1
-	vcmpneqps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpneqss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm1, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vmovss	.LCPI5_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -72,8 +78,9 @@ func0000000000000742:
 	.long	0x3f000000
 func000000000000044a:
 	vmovss	.LCPI6_0(%rip), %xmm3
-	vcmpltps	%xmm1, %xmm3, %k1
-	vcmpltps	%xmm2, %xmm3, %k0 {%k1}
+	vcmpltss	%xmm2, %xmm3, %k0
+	vcmpltss	%xmm1, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
 	setae	%al
@@ -84,8 +91,9 @@ func000000000000044a:
 	.long	0x3f000000
 func000000000000022c:
 	vmovss	.LCPI7_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm1, %k1
-	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpltss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm3, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm3, %xmm0
 	setae	%al
@@ -96,8 +104,9 @@ func000000000000022c:
 	.long	0x3dcccccd
 func0000000000000222:
 	vmovss	.LCPI8_0(%rip), %xmm3
-	vcmpltps	%xmm3, %xmm1, %k1
-	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpltss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm3, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
 	seta	%al
@@ -106,8 +115,9 @@ func0000000000000222:
 
 func000000000000024a:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpltps	%xmm1, %xmm3, %k1
-	vcmpltps	%xmm3, %xmm2, %k0 {%k1}
+	vcmpltss	%xmm3, %xmm2, %k0
+	vcmpltss	%xmm1, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vucomiss	%xmm0, %xmm3
 	setae	%al
@@ -118,8 +128,9 @@ func000000000000024a:
 	.long	0x3f800000
 func0000000000000cca:
 	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpleps	%xmm1, %xmm3, %k1
-	vcmpleps	%xmm2, %xmm3, %k0 {%k1}
+	vcmpless	%xmm2, %xmm3, %k0
+	vcmpless	%xmm1, %xmm3, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %ecx
 	vmovss	.LCPI10_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1

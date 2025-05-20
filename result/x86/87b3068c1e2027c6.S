@@ -1,25 +1,23 @@
 .LCPI0_0:
-	.quad	0x3fdf5c28f5c28f5c
-.LCPI0_1:
 	.quad	0x3fe051eb851eb852
+.LCPI0_1:
+	.quad	0x3fdf5c28f5c28f5c
 func0000000000000024:
-	vmovsd	.LCPI0_0(%rip), %xmm1
-	vcmpltpd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI0_1(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltsd	.LCPI0_0(%rip), %xmm0, %k0
+	vcmpgtsd	.LCPI0_1(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 .LCPI1_0:
-	.quad	0x3ff0000000000000
-.LCPI1_1:
 	.quad	0x4070000000000000
+.LCPI1_1:
+	.quad	0x3ff0000000000000
 func00000000000000ac:
-	vmovsd	.LCPI1_0(%rip), %xmm1
-	vcmplepd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI1_1(%rip), %xmm1
-	vcmplepd	%xmm1, %xmm0, %k0 {%k1}
+	vcmplesd	.LCPI1_0(%rip), %xmm0, %k0
+	vcmpgesd	.LCPI1_1(%rip), %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
@@ -28,9 +26,9 @@ func00000000000000ac:
 	.quad	0x4059000000000000
 func000000000000002c:
 	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmplepd	%xmm0, %xmm1, %k1
-	vmovsd	.LCPI2_0(%rip), %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmplesd	%xmm0, %xmm1, %k0
+	vcmpltsd	.LCPI2_0(%rip), %xmm0, %k1
+	kandw	%k1, %k0, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq

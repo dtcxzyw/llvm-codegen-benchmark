@@ -1,23 +1,26 @@
 func0000000000000024:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpltps	%xmm0, %xmm2, %k1
-	vcmpltps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltss	%xmm1, %xmm0, %k0
+	vxorps	%xmm1, %xmm1, %xmm1
+	vcmpltss	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func00000000000000ac:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%xmm0, %xmm2, %k1
-	vcmpleps	%xmm1, %xmm0, %k0 {%k1}
+	vcmpless	%xmm1, %xmm0, %k0
+	vxorps	%xmm1, %xmm1, %xmm1
+	vcmpless	%xmm0, %xmm1, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
 
 func00000000000000bd:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnltps	%xmm2, %xmm0, %k1
-	vcmpnltps	%xmm0, %xmm1, %k0 {%k1}
+	vcmpnltss	%xmm0, %xmm1, %k0
+	vxorps	%xmm1, %xmm1, %xmm1
+	vcmpnltss	%xmm1, %xmm0, %k1
+	kandw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	andb	%dil, %al
 	retq
