@@ -24,32 +24,25 @@ func0000000000000006:
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpsrlq	$11, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrq	$1, %xmm1, %rdx
+	vpextrq	$1, %xmm0, %rdx
 	movabsq	$73786976295, %rax
 	mulxq	%rax, %rcx, %rcx
-	vmovd	%ecx, %xmm2
-	vpsrld	$2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpblendw	$3, %xmm2, %xmm3, %xmm2
-	vpextrq	$1, %xmm0, %rdx
-	mulxq	%rax, %rcx, %rcx
-	vmovd	%ecx, %xmm4
-	vpsrld	$2, %xmm4, %xmm4
-	vpblendw	$3, %xmm4, %xmm3, %xmm4
-	vinserti128	$1, %xmm2, %ymm4, %ymm2
-	vmovq	%xmm1, %rdx
-	mulxq	%rax, %rcx, %rcx
 	vmovd	%ecx, %xmm1
-	vpsrld	$2, %xmm1, %xmm1
-	vpblendw	$3, %xmm1, %xmm3, %xmm1
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovd	%ecx, %xmm3
+	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vpsrld	$2, %ymm1, %ymm1
 	vmovq	%xmm0, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovd	%ecx, %xmm0
+	vmovq	%xmm2, %rdx
 	mulxq	%rax, %rax, %rax
-	vmovd	%eax, %xmm0
-	vpsrld	$2, %xmm0, %xmm0
-	vpblendw	$3, %xmm0, %xmm3, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpunpcklqdq	%ymm2, %ymm0, %ymm0
+	vmovd	%eax, %xmm2
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpsrld	$2, %ymm0, %ymm0
+	vpunpcklqdq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:
