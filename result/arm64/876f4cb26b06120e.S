@@ -8,8 +8,8 @@ func000000000000030c:
 func000000000000050a:
 	sxtb	w8, w0
 	and	x9, x0, #0xff
-	cmp	w8, #0
-	ccmp	x1, x9, #0, ge
+	cmn	w8, #1
+	ccmp	x1, x9, #0, gt
 	cset	w0, hi
 	ret
 

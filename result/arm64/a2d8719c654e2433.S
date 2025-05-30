@@ -112,8 +112,8 @@ func0000000000000186:
 
 func00000000000000ca:
 	add	w8, w2, #348
-	cmp	w8, #0
-	ccmp	w0, w1, #0, ge
+	cmn	w8, #1
+	ccmp	w0, w1, #0, gt
 	cset	w0, lt
 	ret
 

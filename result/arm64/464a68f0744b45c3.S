@@ -28,10 +28,10 @@ func00000000000004c1:
 
 func00000000000000ca:
 	orr	w8, w1, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #34465
 	movk	w8, #1, lsl #16
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, gt
 	cset	w0, lt
 	ret
 
@@ -65,8 +65,8 @@ func0000000000000141:
 
 func000000000000014a:
 	orr	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w0, #1, #4, ge
+	cmn	w8, #1
+	ccmp	w0, #1, #4, gt
 	cset	w0, gt
 	ret
 
@@ -79,8 +79,8 @@ func000000000000054a:
 
 func000000000000002a:
 	orr	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w0, #1, #0, ge
+	cmn	w8, #1
+	ccmp	w0, #1, #0, gt
 	cset	w0, eq
 	ret
 

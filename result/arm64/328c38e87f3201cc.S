@@ -10,9 +10,9 @@ func000000000000018f:
 
 func00000000000000af:
 	mov	w8, #9
-	cmp	x1, #0
+	cmn	x1, #1
 	mov	w9, #5
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	add	w8, w0, w8
 	add	w0, w8, #4
 	ret

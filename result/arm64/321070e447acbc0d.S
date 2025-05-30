@@ -14,7 +14,7 @@ func000000000000002a:
 	mov	w8, #2
 	cmp	w10, #1
 	cinc	w8, w8, ne
-	cmp	w9, #0
-	csinc	w0, w8, wzr, lt
+	cmn	w9, #1
+	csinc	w0, w8, wzr, le
 	ret
 

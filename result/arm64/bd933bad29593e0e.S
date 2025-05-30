@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	cmp	w2, #0
-	csinc	w0, w0, w1, lt
+	cmn	w2, #1
+	csinc	w0, w0, w1, le
 	ret
 

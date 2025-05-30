@@ -62,8 +62,8 @@ func0000000000000084:
 
 func000000000000054a:
 	cmp	w1, w2
-	ccmp	w0, #0, #0, lt
-	cset	w0, ge
+	ccmn	w0, #1, #0, lt
+	cset	w0, gt
 	ret
 
 func0000000000000021:
@@ -75,8 +75,8 @@ func0000000000000021:
 
 func000000000000002a:
 	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w0, #0, #4, lt
+	cmn	w8, #1
+	ccmp	w0, #0, #4, le
 	cset	w0, eq
 	ret
 

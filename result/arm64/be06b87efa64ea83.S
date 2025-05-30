@@ -1,7 +1,7 @@
 func00000000000000c1:
-	cmp	w0, #0
+	cmn	w0, #1
 	eor	w9, w1, #0x1
-	cset	w8, ge
+	cset	w8, gt
 	and	w0, w8, w9
 	ret
 

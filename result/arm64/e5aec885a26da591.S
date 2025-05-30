@@ -48,9 +48,8 @@ func000000000000000a:
 	ret
 
 func0000000000000048:
-	mov	w8, #-65537
-	cmp	w0, w8
-	csinv	w0, w1, wzr, ls
+	cmn	w0, #16, lsl #12
+	csinv	w0, w1, wzr, lo
 	ret
 
 func0000000000000021:

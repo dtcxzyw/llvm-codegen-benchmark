@@ -17,9 +17,8 @@ func0000000000000084:
 func0000000000000024:
 	cmp	w2, #0
 	mov	w8, #1073709056
-	mov	w9, #-32767
 	csel	x8, xzr, x8, eq
-	cmp	w1, w9
-	csel	x0, x8, x0, lo
+	cmn	w1, #8, lsl #12
+	csel	x0, x8, x0, ls
 	ret
 

@@ -20,8 +20,8 @@ func0000000000000181:
 	ret
 
 func000000000000018a:
-	cmp	w1, #0
-	ccmp	x2, #0, #4, ge
+	cmn	w1, #1
+	ccmp	x2, #0, #4, gt
 	cset	w8, ne
 	and	w0, w8, w0
 	ret

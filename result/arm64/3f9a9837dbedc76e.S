@@ -17,8 +17,8 @@ func0000000000000d46:
 
 func00000000000004ca:
 	neg	w8, w1
-	cmp	w0, #0
-	ccmp	w0, w8, #8, lt
+	cmn	w0, #1
+	ccmp	w0, w8, #8, le
 	cset	w0, lt
 	ret
 

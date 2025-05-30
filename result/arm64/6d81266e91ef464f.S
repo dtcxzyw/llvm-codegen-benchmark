@@ -16,8 +16,8 @@ func000000000000000d:
 
 func0000000000000057:
 	mov	x8, #-72057594037927936
-	cmp	w1, #0
-	csel	x8, xzr, x8, ge
+	cmn	w1, #1
+	csel	x8, xzr, x8, gt
 	orr	x0, x8, x0, lsl #24
 	ret
 

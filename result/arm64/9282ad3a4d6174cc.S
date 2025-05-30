@@ -101,8 +101,8 @@ func0000000000000038:
 
 func00000000000000ca:
 	cmp	x1, #0
-	ccmp	x0, #0, #8, gt
-	cset	w0, ge
+	ccmn	x0, #1, #4, gt
+	cset	w0, gt
 	ret
 
 func00000000000000c6:

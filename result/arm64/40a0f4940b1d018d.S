@@ -1,7 +1,7 @@
 func000000000000000c:
 	orr	w8, w0, #0x80000000
-	cmp	w1, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w1, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000003:

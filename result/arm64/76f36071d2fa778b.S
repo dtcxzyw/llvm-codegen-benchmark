@@ -56,8 +56,8 @@ func000000000000002c:
 	ret
 
 func000000000000014c:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #0
 	and	w8, w8, w0
 	csel	w0, wzr, w8, eq
@@ -104,8 +104,8 @@ func0000000000000028:
 	ret
 
 func0000000000000146:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #128
 	and	w8, w0, w8
 	csel	w0, wzr, w8, ge

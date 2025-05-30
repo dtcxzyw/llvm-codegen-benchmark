@@ -1,7 +1,7 @@
 func0000000000000061:
 	add	x8, x0, #7
-	cmp	w1, #0
-	csel	x0, x8, x0, ge
+	cmn	w1, #1
+	csel	x0, x8, x0, gt
 	ret
 
 func0000000000000001:

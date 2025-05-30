@@ -47,14 +47,14 @@ func00000000000000c6:
 	ret
 
 func000000000000018a:
-	cmp	x0, #0
-	ccmp	x1, x0, #4, ge
+	cmn	x0, #1
+	ccmp	x1, x0, #4, gt
 	cset	w0, ne
 	ret
 
 func000000000000014c:
 	cmp	x1, x0
-	ccmp	x0, #0, #8, ne
-	cset	w0, ge
+	ccmn	x0, #1, #4, ne
+	cset	w0, gt
 	ret
 

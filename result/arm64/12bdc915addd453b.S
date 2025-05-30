@@ -30,8 +30,8 @@ func00000000000000a8:
 	cmp	w9, #1
 	mov	w9, #2
 	cinc	w9, w9, ne
-	cmp	w8, #0
-	csinc	w8, w9, wzr, lt
+	cmn	w8, #1
+	csinc	w8, w9, wzr, le
 	add	w0, w8, w0
 	ret
 

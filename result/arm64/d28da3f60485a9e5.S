@@ -100,7 +100,7 @@ func0000000000000054:
 	mov	w8, #10
 	sxtb	w9, w0
 	tst	w0, w8
-	ccmp	w9, #0, #0, ne
-	cset	w0, ge
+	ccmn	w9, #1, #0, ne
+	cset	w0, gt
 	ret
 

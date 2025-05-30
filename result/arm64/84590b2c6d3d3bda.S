@@ -32,7 +32,8 @@ func0000000000000019:
 
 func0000000000000002:
 	add	w8, w1, w2
-	subs	w8, w8, w0
-	csinv	w0, w8, wzr, ge
+	sub	w8, w8, w0
+	cmn	w8, #1
+	csinv	w0, w8, wzr, gt
 	ret
 

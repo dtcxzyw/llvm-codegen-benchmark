@@ -69,8 +69,8 @@ func0000000000000061:
 	ret
 
 func0000000000000050:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	and	w8, w8, w1
 	add	w0, w0, w8
 	ret

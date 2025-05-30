@@ -5,8 +5,8 @@ func0000000000000001:
 
 func000000000000000a:
 	sxtb	w8, w1
-	cmp	w8, #0
-	csel	x0, xzr, x0, ge
+	cmn	w8, #1
+	csel	x0, xzr, x0, gt
 	ret
 
 func0000000000000004:

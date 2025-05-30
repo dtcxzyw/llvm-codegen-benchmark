@@ -70,9 +70,9 @@ func0000000000000005:
 
 func0000000000000028:
 	mov	w8, #8
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w9, #16
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	orr	w8, w0, w8
 	orr	w0, w8, #0x4000
 	ret

@@ -36,17 +36,17 @@ func0000000000000020:
 
 func0000000000000028:
 	sxtb	w8, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #4
-	csel	w8, w1, w8, ge
+	csel	w8, w1, w8, gt
 	add	w0, w0, w8
 	ret
 
 func000000000000002a:
 	sxtb	w8, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #4
-	csel	w8, w1, w8, ge
+	csel	w8, w1, w8, gt
 	add	w0, w8, w0
 	ret
 

@@ -20,8 +20,8 @@ func000000000000000a:
 	mov	x8, #-1
 	lsr	x8, x8, x1
 	add	x8, x8, #1
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

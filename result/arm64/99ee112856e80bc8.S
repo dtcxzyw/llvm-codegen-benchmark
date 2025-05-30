@@ -18,8 +18,8 @@ func0000000000000054:
 	sxtb	w9, w0
 	mov	w8, #192
 	and	w10, w0, #0xe0
-	cmp	w9, #0
-	ccmp	w10, w8, #4, lt
+	cmn	w9, #1
+	ccmp	w10, w8, #4, le
 	cset	w0, eq
 	ret
 

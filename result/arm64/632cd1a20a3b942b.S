@@ -148,8 +148,8 @@ func0000000000000101:
 
 func00000000000000ca:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w8, #1
+	ccmp	w1, w2, #0, gt
 	cset	w0, lt
 	ret
 
@@ -169,8 +169,8 @@ func0000000000000106:
 
 func000000000000030a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w8, #1
+	ccmp	w1, w2, #0, gt
 	cset	w0, hi
 	ret
 

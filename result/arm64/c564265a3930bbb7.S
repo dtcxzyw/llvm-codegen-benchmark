@@ -1,7 +1,7 @@
 func00000000000004ca:
 	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w0, #0, gt
 	cset	w0, lt
 	ret
 
@@ -14,15 +14,15 @@ func00000000000000c6:
 
 func00000000000004ea:
 	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w0, #0, gt
 	cset	w0, le
 	ret
 
 func00000000000000ca:
 	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w0, #0, gt
 	cset	w0, lt
 	ret
 

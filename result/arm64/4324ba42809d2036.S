@@ -93,8 +93,8 @@ func0000000000000186:
 
 func000000000000002a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	x1, #0, #0, ge
+	cmn	w8, #1
+	ccmp	x1, #0, #0, gt
 	cset	w0, eq
 	ret
 

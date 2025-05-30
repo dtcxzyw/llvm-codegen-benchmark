@@ -7,8 +7,8 @@ func000000000000014a:
 
 func0000000000000141:
 	cmp	w1, w2
-	ccmp	w2, #0, #8, eq
-	cset	w8, ge
+	ccmn	w2, #1, #4, eq
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

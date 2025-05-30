@@ -23,8 +23,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	tst	w0, #0x1
 	csel	w8, w1, w8, ne
 	and	w0, w8, #0x1

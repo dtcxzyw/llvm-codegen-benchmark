@@ -39,10 +39,10 @@ func0000000000000081:
 
 func000000000000014c:
 	sxth	w9, w1
-	mov	w8, #-28673
+	mov	w8, #-28672
 	cmp	w0, #513
-	ccmp	w8, w9, #8, eq
-	cset	w0, lt
+	ccmp	w9, w8, #0, eq
+	cset	w0, ge
 	ret
 
 func00000000000000c1:
@@ -93,8 +93,8 @@ func0000000000000186:
 func0000000000000141:
 	sxth	w8, w1
 	cmp	w0, #40
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000084:

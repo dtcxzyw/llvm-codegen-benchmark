@@ -11,8 +11,8 @@ func000000000000000a:
 	fcvtzs	w8, s0
 	cmp	w8, w1
 	csel	w8, w8, w1, lt
-	cmp	w0, #0
-	csinv	w9, w0, wzr, ge
+	cmn	w0, #1
+	csinv	w9, w0, wzr, gt
 	cmp	w9, w8
 	cset	w0, gt
 	ret

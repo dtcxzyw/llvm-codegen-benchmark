@@ -71,9 +71,9 @@ func0000000000000108:
 
 func0000000000000148:
 	mov	w8, #9
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w9, #4
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	cmp	x8, x0
 	cset	w0, hi
 	ret

@@ -97,10 +97,10 @@ func000000000000004f:
 	ret
 
 func00000000000000a0:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	x8, #-4
 	add	x9, x0, x1, lsl #2
-	cneg	x8, x8, lt
+	cneg	x8, x8, le
 	add	x0, x9, x8
 	ret
 

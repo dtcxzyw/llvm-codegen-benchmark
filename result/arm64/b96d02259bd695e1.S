@@ -20,8 +20,8 @@ func0000000000000144:
 	add	x8, x1, x2
 	lsr	x8, x8, #32
 	cmp	x8, #0
-	ccmp	w0, #0, #8, eq
-	cset	w0, ge
+	ccmn	w0, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000058c:
@@ -111,8 +111,8 @@ func0000000000000544:
 	add	x9, x1, x2
 	movk	w8, #15258, lsl #16
 	cmp	w0, w8
-	ccmp	x9, #0, #8, lo
-	cset	w0, ge
+	ccmn	x9, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func000000000000010c:

@@ -1,6 +1,6 @@
 func0000000000000026:
-	cmp	x2, #0
-	csinv	x8, x2, xzr, ge
+	cmn	x2, #1
+	csinv	x8, x2, xzr, gt
 	add	x8, x8, x1
 	cmp	x0, x8
 	cset	w0, lt

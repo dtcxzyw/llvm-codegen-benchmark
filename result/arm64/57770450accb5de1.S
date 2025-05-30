@@ -53,8 +53,8 @@ func0000000000000086:
 
 func0000000000000141:
 	mov	w8, #1024
-	cmp	w1, #0
-	csel	w8, w1, w8, ge
+	cmn	w1, #1
+	csel	w8, w1, w8, gt
 	cmp	w0, w8
 	cset	w0, eq
 	ret

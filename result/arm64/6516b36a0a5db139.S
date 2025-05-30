@@ -7,8 +7,8 @@ func000000000000042c:
 
 func000000000000014a:
 	orr	x8, x1, x2
-	cmp	x8, #0
-	ccmp	x0, #0, #4, ge
+	cmn	x8, #1
+	ccmp	x0, #0, #4, gt
 	cset	w0, gt
 	ret
 
@@ -21,8 +21,8 @@ func000000000000002c:
 
 func00000000000000ca:
 	orr	x8, x1, x2
-	cmp	x8, #0
-	ccmp	x0, #0, #0, ge
+	cmn	x8, #1
+	ccmp	x0, #0, #0, gt
 	cset	w0, lt
 	ret
 
@@ -73,7 +73,7 @@ func0000000000000581:
 func0000000000000141:
 	orr	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x0, #0, #8, eq
-	cset	w0, ge
+	ccmn	x0, #1, #4, eq
+	cset	w0, gt
 	ret
 

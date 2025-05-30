@@ -1,7 +1,7 @@
 func000000000000000a:
 	fcvtzs	w8, s0
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

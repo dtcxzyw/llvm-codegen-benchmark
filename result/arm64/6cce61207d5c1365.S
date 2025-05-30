@@ -2,8 +2,8 @@ func000000000000014c:
 	mov	x8, #4611686018427387904
 	cmp	x0, #0
 	add	x8, x1, x8
-	ccmp	x8, #0, #8, ne
-	cset	w0, ge
+	ccmn	x8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func0000000000000421:

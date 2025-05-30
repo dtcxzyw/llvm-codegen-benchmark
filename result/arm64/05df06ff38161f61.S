@@ -8,8 +8,8 @@ func0000000000000021:
 func000000000000002a:
 	and	w8, w1, #0xffff
 	cmp	w8, #10
-	ccmp	w0, #0, #0, eq
-	cset	w0, ge
+	ccmn	w0, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000086:
@@ -28,8 +28,8 @@ func0000000000000026:
 func000000000000008a:
 	and	w8, w1, #0xffff
 	cmp	w8, #10
-	ccmp	w0, #0, #8, lo
-	cset	w0, ge
+	ccmn	w0, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func0000000000000081:

@@ -12,8 +12,8 @@ func000000000000002a:
 	mov	w8, #2
 	tst	w1, #0xff
 	csel	w8, wzr, w8, eq
-	cmp	w9, #0
+	cmn	w9, #1
 	mov	w9, #6
-	csel	w0, w8, w9, ge
+	csel	w0, w8, w9, gt
 	ret
 

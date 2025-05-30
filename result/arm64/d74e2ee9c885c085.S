@@ -90,9 +90,9 @@ func0000000000000184:
 
 func000000000000008a:
 	sub	w8, w2, #1
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w9, #32
-	ccmp	w8, w9, #2, ge
+	ccmp	w8, w9, #2, gt
 	cset	w8, lo
 	and	w0, w0, w8
 	ret

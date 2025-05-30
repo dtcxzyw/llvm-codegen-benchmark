@@ -116,20 +116,20 @@ func0000000000000885:
 
 func000000000000094a:
 	cmp	w0, w2
-	ccmp	w1, #0, #8, gt
-	cset	w0, ge
+	ccmn	w1, #1, #4, gt
+	cset	w0, gt
 	ret
 
 func0000000000000d4a:
 	cmp	w0, w2
-	ccmp	w1, #0, #8, gt
-	cset	w0, ge
+	ccmn	w1, #1, #4, gt
+	cset	w0, gt
 	ret
 
 func000000000000054a:
 	cmp	w0, w2
-	ccmp	w1, #0, #8, gt
-	cset	w0, ge
+	ccmn	w1, #1, #4, gt
+	cset	w0, gt
 	ret
 
 func0000000000000085:

@@ -7,8 +7,8 @@ func0000000000000021:
 
 func0000000000000141:
 	sxtb	w8, w1
-	cmp	w8, #0
-	ccmp	w0, #0, #0, ge
+	cmn	w8, #1
+	ccmp	w0, #0, #0, gt
 	cset	w0, eq
 	ret
 
@@ -22,8 +22,8 @@ func000000000000002c:
 func000000000000008a:
 	and	w8, w1, #0xff
 	cmp	w8, #10
-	ccmp	w0, #0, #8, lo
-	cset	w0, ge
+	ccmn	w0, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func0000000000000026:

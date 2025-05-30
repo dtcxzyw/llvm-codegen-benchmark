@@ -16,8 +16,8 @@ func0000000000000504:
 func000000000000050a:
 	sxth	w8, w0
 	and	x9, x0, #0xffff
-	cmp	w8, #0
-	ccmp	x1, x9, #0, ge
+	cmn	w8, #1
+	ccmp	x1, x9, #0, gt
 	cset	w0, hi
 	ret
 

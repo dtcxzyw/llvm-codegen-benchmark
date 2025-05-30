@@ -1,9 +1,9 @@
 func000000000000000a:
 	sxtb	w9, w1
 	mov	w8, #15
-	cmp	w9, #0
+	cmn	w9, #1
 	mov	w9, #31
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	and	w0, w8, w0
 	ret
 

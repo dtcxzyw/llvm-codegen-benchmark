@@ -128,8 +128,8 @@ func0000000000000204:
 	ret
 
 func0000000000000518:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	tst	w1, #0x30000000
 	orr	w8, w8, w0
 	cset	w9, ne
@@ -149,8 +149,8 @@ func0000000000000504:
 	ret
 
 func0000000000000502:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	tst	w1, #0x10
 	orr	w8, w0, w8
 	cset	w9, eq

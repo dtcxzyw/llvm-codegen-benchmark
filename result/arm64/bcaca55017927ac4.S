@@ -1,9 +1,9 @@
 func000000000000018a:
 	tst	x2, #0x7f
 	cset	w8, ne
-	cmp	w1, #0
+	cmn	w1, #1
 	and	w8, w0, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000018c:
@@ -24,8 +24,8 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #1116
 	and	w8, w8, w0
 	csel	w0, wzr, w8, ne

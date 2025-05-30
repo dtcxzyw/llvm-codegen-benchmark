@@ -92,8 +92,8 @@ func0000000000000038:
 	ret
 
 func000000000000002a:
-	cmp	x0, #0
-	ccmp	x1, x2, #0, ge
+	cmn	x0, #1
+	ccmp	x1, x2, #0, gt
 	cset	w0, eq
 	ret
 
@@ -140,8 +140,8 @@ func00000000000000ac:
 	ret
 
 func000000000000012a:
-	cmp	x0, #0
-	ccmp	x1, x2, #0, ge
+	cmn	x0, #1
+	ccmp	x1, x2, #0, gt
 	cset	w0, hs
 	ret
 

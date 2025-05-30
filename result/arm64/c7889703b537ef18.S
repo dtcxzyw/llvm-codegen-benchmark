@@ -65,8 +65,8 @@ func0000000000000012:
 func000000000000002b:
 	sxth	w9, w1
 	mov	w8, #4
-	cmp	w9, #0
-	cinc	x8, x8, ge
+	cmn	w9, #1
+	cinc	x8, x8, gt
 	add	x0, x0, x8
 	ret
 
@@ -98,9 +98,9 @@ func0000000000000033:
 func0000000000000028:
 	sxth	w9, w1
 	mov	w8, #16
-	cmp	w9, #0
+	cmn	w9, #1
 	mov	w9, #8
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	add	x0, x0, x8
 	ret
 

@@ -1,12 +1,12 @@
 func000000000000016a:
-	cmp	x0, #0
-	ccmp	x1, x0, #8, ge
+	cmn	x0, #1
+	ccmp	x1, x0, #8, gt
 	cset	w0, ge
 	ret
 
 func000000000000014a:
-	cmp	x0, #0
-	ccmp	x1, x0, #4, ge
+	cmn	x0, #1
+	ccmp	x1, x0, #4, gt
 	cset	w0, gt
 	ret
 

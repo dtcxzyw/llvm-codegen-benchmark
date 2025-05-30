@@ -8,8 +8,8 @@ func0000000000000004:
 func000000000000000a:
 	mov	x8, #4611686018427387904
 	add	x8, x1, x8
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

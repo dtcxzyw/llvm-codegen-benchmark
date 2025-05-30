@@ -41,8 +41,8 @@ func0000000000000302:
 	ret
 
 func0000000000000314:
-	cmp	w0, #0
-	ccmp	w1, #0, #4, ge
+	cmn	w0, #1
+	ccmp	w1, #0, #4, gt
 	cset	w0, ne
 	ret
 

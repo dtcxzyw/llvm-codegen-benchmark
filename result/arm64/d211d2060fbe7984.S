@@ -32,7 +32,7 @@ func0000000000000108:
 
 func000000000000002a:
 	cmp	w0, w1
-	ccmp	w0, #0, #8, ne
-	cset	w0, ge
+	ccmn	w0, #1, #4, ne
+	cset	w0, gt
 	ret
 

@@ -80,9 +80,9 @@ func0000000000000040:
 
 func00000000000000af:
 	sxtb	w8, w1
-	cmp	w8, #0
+	cmn	w8, #1
 	add	x8, x0, #3
-	csinc	x8, x8, x0, lt
+	csinc	x8, x8, x0, le
 	add	x0, x8, #1
 	ret
 

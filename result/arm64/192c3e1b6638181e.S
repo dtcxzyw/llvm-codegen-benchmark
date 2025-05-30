@@ -64,8 +64,8 @@ func0000000000000184:
 
 func000000000000014c:
 	tst	w0, #0xff
-	ccmp	w1, #0, #8, ne
-	cset	w0, ge
+	ccmn	w1, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func0000000000000188:
@@ -189,8 +189,8 @@ func0000000000000288:
 func0000000000000146:
 	sxtb	w8, w1
 	cmp	w0, #16, lsl #12
-	ccmp	w8, #0, #8, le
-	cset	w0, ge
+	ccmn	w8, #1, #4, le
+	cset	w0, gt
 	ret
 
 func0000000000000034:

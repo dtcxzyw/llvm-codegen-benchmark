@@ -95,8 +95,8 @@ func000000000000002a:
 	tst	w2, #0xffff
 	cset	w9, eq
 	and	w9, w9, w1
-	cmp	w8, #0
-	csel	w0, wzr, w9, lt
+	cmn	w8, #1
+	csel	w0, wzr, w9, le
 	ret
 
 func000000000000010c:

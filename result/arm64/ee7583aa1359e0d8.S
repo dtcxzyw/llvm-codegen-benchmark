@@ -7,9 +7,9 @@ func0000000000000f0a:
 
 func000000000000054a:
 	mov	w8, #2147483646
-	cmp	w0, #0
+	cmn	w0, #1
 	sub	w8, w8, w0
-	ccmp	w1, w8, #4, ge
+	ccmp	w1, w8, #4, gt
 	cset	w0, gt
 	ret
 
@@ -22,8 +22,8 @@ func0000000000000d4a:
 
 func0000000000000cea:
 	eor	w8, w0, #0x7fffffff
-	cmp	w0, #0
-	ccmp	w1, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w1, w8, #0, gt
 	cset	w0, le
 	ret
 

@@ -143,7 +143,7 @@ func0000000000000141:
 func000000000000014c:
 	sxtb	w8, w2
 	cmp	x0, x1
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 

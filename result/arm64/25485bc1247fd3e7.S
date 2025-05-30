@@ -23,9 +23,9 @@ func0000000000000424:
 
 func00000000000004ca:
 	mov	x8, #-2
-	cmp	x0, #0
+	cmn	x0, #1
 	sub	x8, x8, x2
-	ccmp	x1, x8, #8, lt
+	ccmp	x1, x8, #8, le
 	cset	w0, lt
 	ret
 

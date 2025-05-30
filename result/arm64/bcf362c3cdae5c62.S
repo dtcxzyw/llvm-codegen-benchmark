@@ -74,11 +74,11 @@ func0000000000000029:
 
 func0000000000000014:
 	mov	w8, #64
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w9, #67108864
 	movk	w8, #1024, lsl #16
 	mov	w10, #-202440705
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	and	w9, w0, w10
 	orr	w0, w9, w8
 	ret

@@ -38,8 +38,8 @@ func0000000000000020:
 	ret
 
 func0000000000000028:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	sub	w0, w8, w0
 	ret
 

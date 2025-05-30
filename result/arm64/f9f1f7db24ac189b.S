@@ -20,7 +20,8 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	cmn	w1, w2
-	csel	x0, x0, xzr, ge
+	add	w8, w1, w2
+	cmn	w8, #1
+	csel	x0, x0, xzr, gt
 	ret
 

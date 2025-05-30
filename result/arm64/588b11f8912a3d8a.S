@@ -30,8 +30,8 @@ func0000000000000008:
 
 func000000000000000a:
 	sxtb	w8, w1
-	cmp	w8, #0
-	csinv	w0, w0, wzr, ge
+	cmn	w8, #1
+	csinv	w0, w0, wzr, gt
 	ret
 
 func000000000000000c:

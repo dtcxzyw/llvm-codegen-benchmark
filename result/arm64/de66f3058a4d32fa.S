@@ -11,7 +11,7 @@ func000000000000000a:
 	mov	w8, #256
 	cmp	x1, #256
 	csel	x8, x1, x8, hi
-	cmp	x0, #0
-	csinv	x0, x8, xzr, ge
+	cmn	x0, #1
+	csinv	x0, x8, xzr, gt
 	ret
 

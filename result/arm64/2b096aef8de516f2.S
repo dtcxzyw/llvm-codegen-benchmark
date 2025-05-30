@@ -1,8 +1,8 @@
 func0000000000000141:
 	sxtb	w8, w0
 	tst	w1, #0x200
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000002c:

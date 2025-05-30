@@ -18,8 +18,8 @@ func000000000000008a:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	sub	w9, w9, #16
-	cmp	w8, #0
-	ccmn	w9, #2, #2, ge
+	cmn	w8, #1
+	ccmn	w9, #2, #2, gt
 	cset	w0, lo
 	ret
 

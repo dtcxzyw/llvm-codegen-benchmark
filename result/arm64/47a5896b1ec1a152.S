@@ -19,8 +19,8 @@ func00000000000000c1:
 
 func00000000000000cc:
 	and	w8, w1, #0x1f
-	cmp	w0, #0
-	ccmp	w8, #6, #0, lt
+	cmn	w0, #1
+	ccmp	w8, #6, #0, le
 	cset	w0, ne
 	ret
 

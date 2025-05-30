@@ -2,8 +2,8 @@ func000000000000002a:
 	sub	w8, w1, #1
 	tst	w2, #0x1
 	csinc	w8, w8, w1, eq
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

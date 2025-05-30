@@ -65,8 +65,8 @@ func0000000000000088:
 func0000000000000144:
 	sxtb	w9, w1
 	mov	w8, #2
-	cmp	w9, #0
-	cinc	w8, w8, ge
+	cmn	w9, #1
+	cinc	w8, w8, gt
 	cmp	w0, w8
 	cset	w0, lo
 	ret
@@ -83,8 +83,8 @@ func0000000000000086:
 func0000000000000154:
 	sxtb	w9, w1
 	mov	w8, #5
-	cmp	w9, #0
-	csinc	w8, w8, wzr, lt
+	cmn	w9, #1
+	csinc	w8, w8, wzr, le
 	cmp	w0, w8
 	cset	w0, lo
 	ret

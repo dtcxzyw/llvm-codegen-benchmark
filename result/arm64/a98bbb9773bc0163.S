@@ -23,7 +23,7 @@ func0000000000000421:
 func00000000000004ca:
 	cmp	w2, #113
 	ccmp	w1, #0, #0, ne
-	ccmp	w0, #0, #0, ge
-	cset	w0, ge
+	ccmn	w0, #1, #0, ge
+	cset	w0, gt
 	ret
 

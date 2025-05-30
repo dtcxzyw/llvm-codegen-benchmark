@@ -77,11 +77,10 @@ func0000000000000001:
 
 func0000000000000104:
 	orr	w8, w1, w2
-	mov	w9, #-65535
 	orr	w8, w8, w0
 	sub	w8, w8, #16, lsl #12
-	cmp	w8, w9
-	cset	w0, lo
+	cmn	w8, #16, lsl #12
+	cset	w0, ls
 	ret
 
 func000000000000018a:

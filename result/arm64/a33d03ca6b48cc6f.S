@@ -30,8 +30,9 @@ func0000000000000010:
 
 func0000000000000002:
 	add	w8, w1, w2
-	subs	w8, w0, w8
-	csinv	w0, w8, wzr, ge
+	sub	w8, w0, w8
+	cmn	w8, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000018:

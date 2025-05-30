@@ -43,8 +43,8 @@ func000000000000002c:
 
 func000000000000002a:
 	orr	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #4, lt
+	cmn	w0, #1
+	ccmp	w8, #0, #4, le
 	cset	w0, eq
 	ret
 

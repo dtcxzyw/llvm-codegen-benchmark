@@ -8,16 +8,16 @@ func0000000000000081:
 
 func000000000000014b:
 	mov	x8, #9223372036854775807
-	cmp	x1, #0
-	csel	x8, x1, x8, ge
+	cmn	x1, #1
+	csel	x8, x1, x8, gt
 	cmp	x0, x8
 	cset	w0, ge
 	ret
 
 func0000000000000146:
 	mov	x8, #9223372036854775807
-	cmp	x1, #0
-	csel	x8, x1, x8, ge
+	cmn	x1, #1
+	csel	x8, x1, x8, gt
 	cmp	x0, x8
 	cset	w0, lt
 	ret

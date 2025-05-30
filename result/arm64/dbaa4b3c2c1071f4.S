@@ -13,8 +13,8 @@ func0000000000000048:
 	ret
 
 func0000000000000054:
-	cmp	w1, #0
-	ccmn	w1, #2, #4, lt
+	cmn	w1, #1
+	ccmn	w1, #2, #4, le
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

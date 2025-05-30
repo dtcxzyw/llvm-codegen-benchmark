@@ -1,6 +1,6 @@
 func000000000000000a:
-	cmp	w1, #0
-	cset	w8, ge
+	cmn	w1, #1
+	cset	w8, gt
 	orr	w8, w8, w2
 	tst	w8, #0x1
 	mov	w8, #6

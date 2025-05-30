@@ -16,8 +16,8 @@ func0000000000000188:
 
 func000000000000018a:
 	and	w8, w0, w2, lsr #4
-	cmp	w1, #0
-	cset	w9, ge
+	cmn	w1, #1
+	cset	w9, gt
 	and	w0, w8, w9
 	ret
 

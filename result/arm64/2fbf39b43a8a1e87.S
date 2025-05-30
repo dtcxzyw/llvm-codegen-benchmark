@@ -31,21 +31,21 @@ func000000000000002a:
 func0000000000000146:
 	add	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #0, #8, lt
-	cset	w0, ge
+	ccmn	w8, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func00000000000000ca:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #0, ge
+	cmn	w0, #1
+	ccmp	w8, #0, #0, gt
 	cset	w0, lt
 	ret
 
 func000000000000054a:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #4, ge
+	cmn	w0, #1
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 
@@ -66,8 +66,8 @@ func0000000000000084:
 
 func0000000000000541:
 	cmn	w1, w2
-	ccmp	w0, #0, #8, eq
-	cset	w0, ge
+	ccmn	w0, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000f06:
@@ -94,8 +94,8 @@ func0000000000000548:
 
 func000000000000014a:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #4, ge
+	cmn	w0, #1
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 
@@ -229,8 +229,8 @@ func000000000000042c:
 func0000000000000544:
 	add	w8, w1, w2
 	cmp	w0, #4
-	ccmp	w8, #0, #8, lo
-	cset	w0, ge
+	ccmn	w8, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func0000000000000421:

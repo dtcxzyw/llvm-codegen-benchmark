@@ -101,8 +101,8 @@ func0000000000000230:
 	ret
 
 func00000000000002d4:
-	cmp	x0, #0
-	ccmp	w1, w2, #0, lt
+	cmn	x0, #1
+	ccmp	w1, w2, #0, le
 	cset	w0, ge
 	ret
 

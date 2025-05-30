@@ -37,9 +37,9 @@ func000000000000002a:
 	sxtb	w9, w1
 	cmp	w8, #2
 	cset	w8, eq
-	cmp	w9, #0
+	cmn	w9, #1
 	and	w8, w8, w0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000088:

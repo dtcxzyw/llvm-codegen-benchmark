@@ -126,8 +126,8 @@ func00000000000000c6:
 
 func000000000000014a:
 	fcmp	d0, #0.0
-	ccmp	w0, #0, #0, ls
-	cset	w0, ge
+	ccmn	w0, #1, #0, ls
+	cset	w0, gt
 	ret
 
 func000000000000002a:

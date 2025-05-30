@@ -14,8 +14,8 @@ func000000000000008a:
 	adrp	x8, .LCPI1_0
 	ldr	d1, [x8, :lo12:.LCPI1_0]
 	fcmp	d0, d1
-	ccmp	w0, #0, #0, le
-	cset	w0, ge
+	ccmn	w0, #1, #0, le
+	cset	w0, gt
 	ret
 
 func000000000000004a:

@@ -97,11 +97,10 @@ func000000000000000a:
 	ret
 
 func0000000000000026:
-	mov	x8, #-32767
 	lsl	x9, x0, #16
-	cmp	x0, x8
 	mov	x8, #-2147483647
-	csel	x0, x8, x9, lt
+	cmn	x0, #8, lsl #12
+	csel	x0, x8, x9, le
 	ret
 
 func0000000000000041:

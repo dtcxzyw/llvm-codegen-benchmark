@@ -1,8 +1,8 @@
 func000000000000002a:
 	fmov	x9, d0
 	mov	w8, #1071644672
-	cmp	x9, #0
-	ccmp	x0, x8, #0, ge
+	cmn	x9, #1
+	ccmp	x0, x8, #0, gt
 	cset	w0, eq
 	ret
 

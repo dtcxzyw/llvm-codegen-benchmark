@@ -46,8 +46,8 @@ func0000000000000014:
 func000000000000000a:
 	sxth	w9, w0
 	mov	w8, #4
-	cmp	w9, #0
-	cinc	x0, x8, ge
+	cmn	w9, #1
+	cinc	x0, x8, gt
 	ret
 
 func0000000000000018:

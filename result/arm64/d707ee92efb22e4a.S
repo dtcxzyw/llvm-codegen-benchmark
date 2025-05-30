@@ -31,8 +31,8 @@ func0000000000000044:
 	ret
 
 func0000000000000053:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	add	x0, x0, w8, uxtw #3
 	ret
 

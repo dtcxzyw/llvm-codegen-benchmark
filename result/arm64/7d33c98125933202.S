@@ -117,8 +117,8 @@ func000000000000008a:
 	sxtb	w9, w0
 	mov	w8, #63
 	and	w10, w1, #0xff
-	cmp	w9, #0
-	ccmp	w10, w8, #0, lt
+	cmn	w9, #1
+	ccmp	w10, w8, #0, le
 	cset	w0, lo
 	ret
 
@@ -230,8 +230,8 @@ func0000000000000108:
 func000000000000014c:
 	sxtb	w8, w1
 	tst	w0, #0xff
-	ccmp	w8, #0, #0, eq
-	cset	w0, ge
+	ccmn	w8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000088:
@@ -259,8 +259,8 @@ func000000000000030c:
 func000000000000002a:
 	sxtb	w8, w0
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000034:
@@ -281,8 +281,8 @@ func0000000000000098:
 func000000000000018a:
 	sxtb	w8, w0
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, eq
-	cset	w0, ge
+	ccmn	w8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000104:

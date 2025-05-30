@@ -57,8 +57,8 @@ func0000000000000078:
 func000000000000004a:
 	mov	w8, #5
 	add	w9, w1, #5
-	cmp	x0, #0
-	csel	w0, w8, w9, ge
+	cmn	x0, #1
+	csel	w0, w8, w9, gt
 	ret
 
 func0000000000000061:

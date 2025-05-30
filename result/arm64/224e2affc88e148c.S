@@ -38,9 +38,9 @@ func0000000000000008:
 
 func000000000000000a:
 	sxth	w8, w0
-	cmp	w8, #0
+	cmn	w8, #1
 	and	w8, w1, w2
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 

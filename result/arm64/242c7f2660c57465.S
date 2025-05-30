@@ -1,8 +1,8 @@
 func0000000000000001:
 	lsr	w9, w0, #23
 	mov	w8, #2
-	cmp	w0, #0
-	csel	x0, x9, x8, ge
+	cmn	w0, #1
+	csel	x0, x9, x8, gt
 	ret
 
 func0000000000000021:

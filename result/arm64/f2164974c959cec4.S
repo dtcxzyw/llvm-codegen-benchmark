@@ -18,8 +18,8 @@ func00000000000000cc:
 func00000000000000ca:
 	tst	w1, #0x1
 	csel	w8, wzr, w2, ne
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w0, #0, gt
 	cset	w0, lt
 	ret
 

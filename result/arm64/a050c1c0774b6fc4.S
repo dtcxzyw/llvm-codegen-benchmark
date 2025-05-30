@@ -66,8 +66,8 @@ func0000000000000290:
 	sxth	w8, w0
 	and	w9, w0, #0xffff
 	cmp	w9, w1, uxth
-	ccmp	w8, #0, #0, ls
-	cset	w0, ge
+	ccmn	w8, #1, #0, ls
+	cset	w0, gt
 	ret
 
 func0000000000000102:

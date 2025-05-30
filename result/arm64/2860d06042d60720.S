@@ -20,9 +20,9 @@ func0000000000000008:
 
 func000000000000014a:
 	lsl	w8, w1, #1
-	cmp	w0, #0
+	cmn	w0, #1
 	add	w8, w8, #2
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000021:

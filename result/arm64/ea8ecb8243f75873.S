@@ -1,7 +1,7 @@
 func00000000000000aa:
 	fcmp	d0, d1
-	ccmp	w0, #0, #8, hi
-	cset	w0, ge
+	ccmn	w0, #1, #4, hi
+	cset	w0, gt
 	ret
 
 func000000000000014c:

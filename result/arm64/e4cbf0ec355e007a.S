@@ -26,8 +26,8 @@ func0000000000000101:
 
 func0000000000000141:
 	sxth	w8, w2
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	cmp	w0, #0
 	and	w8, w8, w1
 	csel	w0, wzr, w8, ne

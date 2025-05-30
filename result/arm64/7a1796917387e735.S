@@ -27,16 +27,16 @@ func0000000000000042:
 	ret
 
 func0000000000000314:
-	cmp	w1, #0
-	ccmp	w2, #0, #0, lt
+	cmn	w1, #1
+	ccmp	w2, #0, #0, le
 	cset	w8, ne
 	and	w0, w0, w8
 	ret
 
 func000000000000028c:
 	cmp	w1, #2
-	ccmp	w2, #0, #0, ge
-	cset	w8, ge
+	ccmn	w2, #1, #0, ge
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

@@ -95,9 +95,9 @@ func0000000000000308:
 func000000000000018a:
 	cmp	x2, #0
 	cset	w8, lt
-	cmp	x0, #0
+	cmn	x0, #1
 	orr	w8, w8, w1
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 
@@ -115,9 +115,9 @@ func0000000000000186:
 func0000000000000194:
 	cmp	x2, #1
 	cset	w8, lt
-	cmp	x1, #0
+	cmn	x1, #1
 	orr	w8, w0, w8
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w8, w9
 	ret
 

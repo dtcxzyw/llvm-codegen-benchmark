@@ -30,8 +30,8 @@ func0000000000000021:
 func000000000000014c:
 	sxtb	w8, w1
 	cmp	w0, #0
-	ccmp	w8, #0, #0, eq
-	cset	w0, ge
+	ccmn	w8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func000000000000002c:
@@ -83,8 +83,8 @@ func0000000000000084:
 
 func000000000000002a:
 	tst	w1, #0xff
-	ccmp	w0, #0, #0, ne
-	cset	w0, ge
+	ccmn	w0, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000086:
@@ -178,15 +178,15 @@ func0000000000000104:
 func0000000000000146:
 	sxtb	w8, w1
 	cmp	w0, #0
-	ccmp	w8, #0, #0, ge
-	cset	w0, ge
+	ccmn	w8, #1, #0, ge
+	cset	w0, gt
 	ret
 
 func0000000000000141:
 	sxtb	w8, w1
 	cmp	w0, #0
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000038:

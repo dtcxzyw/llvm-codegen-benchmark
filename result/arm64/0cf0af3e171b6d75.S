@@ -22,9 +22,9 @@ func00000000000000cc:
 	ret
 
 func00000000000000d8:
-	cmp	w0, #0
+	cmn	w0, #1
 	and	w8, w0, #0xf
-	ccmp	w8, #10, #0, ge
+	ccmp	w8, #10, #0, gt
 	cset	w0, hi
 	ret
 

@@ -23,8 +23,8 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	and	w0, w8, w0
 	ret
 

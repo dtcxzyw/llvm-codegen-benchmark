@@ -29,8 +29,8 @@ func000000000000002c:
 
 func000000000000014a:
 	orr	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 
@@ -58,9 +58,9 @@ func0000000000000024:
 
 func000000000000008a:
 	mov	w8, #16960
-	cmp	x1, #0
+	cmn	x1, #1
 	movk	w8, #15, lsl #16
-	ccmp	x2, x8, #2, ge
+	ccmp	x2, x8, #2, gt
 	cset	w8, lo
 	and	w0, w8, w0
 	ret

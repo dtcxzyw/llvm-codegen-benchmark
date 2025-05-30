@@ -52,9 +52,9 @@ func0000000000000428:
 
 func000000000000002a:
 	sub	x8, x0, #1
-	cmp	x0, #0
+	cmn	x0, #1
 	eor	x9, x0, x8
-	ccmp	x9, x8, #0, ge
+	ccmp	x9, x8, #0, gt
 	cset	w0, hi
 	ret
 

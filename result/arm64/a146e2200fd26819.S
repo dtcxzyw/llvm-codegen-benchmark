@@ -34,7 +34,7 @@ func0000000000001214:
 	tst	w1, #0xfc
 	mov	w9, #128
 	ccmp	w2, w9, #4, ne
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 

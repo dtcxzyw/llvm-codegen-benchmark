@@ -49,9 +49,9 @@ func000000000000008c:
 func00000000000000a0:
 	sxth	w8, w2
 	mov	w9, #8
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #16
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	add	x9, x1, x0
 	add	x0, x9, x8
 	ret

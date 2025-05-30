@@ -1,7 +1,7 @@
 func000000000000294c:
 	cmp	w1, #0
-	ccmp	w2, #0, #8, gt
-	ccmp	x0, #0, #4, ge
+	ccmn	w2, #1, #4, gt
+	ccmp	x0, #0, #4, gt
 	cset	w0, ne
 	ret
 
@@ -42,9 +42,9 @@ func000000000000282c:
 	ret
 
 func000000000000114c:
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w8, #32
-	ccmp	w2, w8, #2, ge
+	ccmp	w2, w8, #2, gt
 	ccmp	x0, #0, #4, lo
 	cset	w0, ne
 	ret

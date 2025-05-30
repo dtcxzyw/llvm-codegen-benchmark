@@ -21,9 +21,9 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	mov	w8, #-28673
-	cmp	w8, w1, sxth
-	cset	w8, lt
+	sxth	w8, w1
+	cmn	w8, #7, lsl #12
+	cset	w8, ge
 	eor	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

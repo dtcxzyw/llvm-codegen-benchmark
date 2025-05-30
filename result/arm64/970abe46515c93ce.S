@@ -43,8 +43,8 @@ func0000000000000014:
 
 func000000000000000a:
 	mov	w8, #1
-	cmp	w1, #0
-	cneg	x8, x8, lt
+	cmn	w1, #1
+	cneg	x8, x8, le
 	tst	w0, #0x1
 	csel	x0, xzr, x8, ne
 	ret

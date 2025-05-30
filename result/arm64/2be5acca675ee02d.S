@@ -14,8 +14,8 @@ func000000000000014c:
 
 func00000000000000ca:
 	sxtw	x8, w1
-	cmp	x0, #0
-	ccmp	x0, x8, #0, ge
+	cmn	x0, #1
+	ccmp	x0, x8, #0, gt
 	cset	w0, lt
 	ret
 

@@ -1,6 +1,6 @@
 func00000000000004ca:
-	cmp	x0, #0
-	ccmp	x1, x0, #4, lt
+	cmn	x0, #1
+	ccmp	x1, x0, #4, le
 	cset	w0, le
 	ret
 

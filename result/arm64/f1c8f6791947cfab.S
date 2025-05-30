@@ -23,9 +23,9 @@ func000000000000028a:
 	sxth	w8, w1
 	cmp	w2, #2
 	cset	w9, lo
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w0, w9
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

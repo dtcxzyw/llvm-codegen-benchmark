@@ -28,8 +28,8 @@ func000000000000042c:
 
 func000000000000096a:
 	add	w8, w0, #2
-	cmp	w0, #0
-	ccmp	w1, w8, #8, ge
+	cmn	w0, #1
+	ccmp	w1, w8, #8, gt
 	cset	w0, ge
 	ret
 

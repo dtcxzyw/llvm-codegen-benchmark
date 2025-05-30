@@ -148,8 +148,8 @@ func0000000000000288:
 
 func0000000000000158:
 	cmp	w0, w1
-	ccmp	x2, #0, #8, hi
-	cset	w0, ge
+	ccmn	x2, #1, #4, hi
+	cset	w0, gt
 	ret
 
 func000000000000002c:
@@ -200,8 +200,8 @@ func000000000000008a:
 
 func0000000000000147:
 	cmp	w0, w1
-	ccmp	x2, #0, #8, le
-	cset	w0, ge
+	ccmn	x2, #1, #4, le
+	cset	w0, gt
 	ret
 
 func0000000000000087:

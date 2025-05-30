@@ -43,8 +43,8 @@ func0000000000000282:
 	sxtb	w8, w2
 	and	w9, w0, #0xffff
 	cmp	w9, w1, uxth
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000142:

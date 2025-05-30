@@ -19,8 +19,8 @@ func0000000000000058:
 
 func0000000000000054:
 	tst	x1, #0x1
-	ccmp	x0, #0, #0, ne
-	cset	w0, ge
+	ccmn	x0, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000118:
@@ -69,8 +69,8 @@ func0000000000000182:
 
 func0000000000000314:
 	ubfx	x8, x1, #59, #1
-	cmp	x0, #0
-	csinc	w0, w8, wzr, lt
+	cmn	x0, #1
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000102:
@@ -112,8 +112,8 @@ func0000000000000202:
 
 func0000000000000298:
 	cmp	w1, #6
-	ccmp	x0, #0, #0, eq
-	cset	w0, ge
+	ccmn	x0, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000048:

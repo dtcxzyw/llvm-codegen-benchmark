@@ -1,6 +1,6 @@
 func0000000000000028:
-	cmp	x1, #0
-	csinv	x0, x0, xzr, ge
+	cmn	x1, #1
+	csinv	x0, x0, xzr, gt
 	ret
 
 func0000000000000038:
@@ -10,8 +10,8 @@ func0000000000000038:
 	ret
 
 func0000000000000008:
-	cmp	x1, #0
-	csinv	x0, x0, xzr, ge
+	cmn	x1, #1
+	csinv	x0, x0, xzr, gt
 	ret
 
 func000000000000000a:

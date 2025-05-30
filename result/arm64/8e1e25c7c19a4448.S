@@ -71,8 +71,8 @@ func0000000000000084:
 
 func00000000000000ca:
 	sub	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #1, #0, ge
+	cmn	w0, #1
+	ccmp	w8, #1, #0, gt
 	cset	w0, lt
 	ret
 

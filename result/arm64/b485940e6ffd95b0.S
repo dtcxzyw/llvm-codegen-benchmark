@@ -53,8 +53,8 @@ func00000000000000b0:
 
 func0000000000000502:
 	sxtb	w8, w2
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	cmp	w0, #224
 	cset	w9, eq
 	orr	w9, w9, w1
@@ -87,9 +87,9 @@ func0000000000000098:
 func0000000000000094:
 	tst	w2, #0xff
 	cset	w8, eq
-	cmp	w0, #0
+	cmn	w0, #1
 	orr	w8, w8, w1
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

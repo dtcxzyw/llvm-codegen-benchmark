@@ -66,8 +66,8 @@ func0000000000000c8c:
 func0000000000000d8a:
 	sxtb	w8, w0
 	add	x9, x2, #1
-	cmp	w8, #0
-	ccmp	x9, x1, #4, ge
+	cmn	w8, #1
+	ccmp	x9, x1, #4, gt
 	cset	w0, ne
 	ret
 

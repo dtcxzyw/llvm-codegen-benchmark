@@ -10,10 +10,9 @@ func0000000000000082:
 	ret
 
 func0000000000000402:
-	mov	x8, #-65537
-	cmp	x1, x8
 	mov	x8, #-4294901761
-	cset	w9, hi
+	cmn	x1, #16, lsl #12
+	cset	w9, hs
 	bics	xzr, x8, x1
 	orr	w8, w9, w0
 	cset	w9, eq

@@ -13,8 +13,8 @@ func000000000000008c:
 	ret
 
 func00000000000002aa:
-	cmp	w1, #0
-	ccmp	w1, w2, #2, ge
+	cmn	w1, #1
+	ccmp	w1, w2, #2, gt
 	cset	w8, ls
 	and	w0, w8, w0
 	ret
@@ -27,8 +27,8 @@ func00000000000000cc:
 	ret
 
 func00000000000000ea:
-	cmp	w1, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w1, #1
+	ccmp	w1, w2, #0, gt
 	cset	w8, le
 	and	w0, w8, w0
 	ret
@@ -41,8 +41,8 @@ func000000000000002a:
 	ret
 
 func00000000000000ca:
-	cmp	w1, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w1, #1
+	ccmp	w1, w2, #0, gt
 	cset	w8, lt
 	and	w0, w8, w0
 	ret

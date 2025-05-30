@@ -8,10 +8,9 @@ func000000000000004a:
 
 func0000000000000046:
 	sub	w8, w1, #16
-	mov	w9, #-32767
 	asr	w8, w0, w8
-	cmp	w8, w9
-	cset	w0, lt
+	cmn	w8, #8, lsl #12
+	cset	w0, le
 	ret
 
 func0000000000000044:

@@ -33,9 +33,9 @@ func000000000000004a:
 	sxtb	w8, w0
 	cmp	w2, #0
 	cset	w9, eq
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w1, w9
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 

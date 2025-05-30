@@ -6,9 +6,9 @@ func0000000000000361:
 	ret
 
 func000000000000036c:
-	cmp	w2, #0
+	cmn	w2, #1
 	add	x8, x1, #8
-	ccmp	x0, x8, #4, ge
+	ccmp	x0, x8, #4, gt
 	cset	w0, ne
 	ret
 

@@ -21,22 +21,22 @@ func0000000000000ccc:
 
 func00000000000000ca:
 	add	w8, w0, w2
-	cmp	w0, #0
-	ccmp	w8, w1, #0, ge
+	cmn	w0, #1
+	ccmp	w8, w1, #0, gt
 	cset	w0, lt
 	ret
 
 func00000000000004ca:
 	add	w8, w0, w2
-	cmp	w0, #0
-	ccmp	w8, w1, #0, ge
+	cmn	w0, #1
+	ccmp	w8, w1, #0, gt
 	cset	w0, lt
 	ret
 
 func00000000000008ca:
 	add	w8, w0, w2
-	cmp	w0, #0
-	ccmp	w8, w1, #0, ge
+	cmn	w0, #1
+	ccmp	w8, w1, #0, gt
 	cset	w0, lt
 	ret
 

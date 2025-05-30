@@ -44,8 +44,8 @@ func0000000000000614:
 	and	w8, w2, #0xffff
 	cmp	w8, #2
 	cset	w8, ne
-	cmp	w0, #0
-	cset	w9, ge
+	cmn	w0, #1
+	cset	w9, gt
 	orr	w9, w9, w1
 	orr	w8, w9, w8
 	and	w0, w8, #0x1

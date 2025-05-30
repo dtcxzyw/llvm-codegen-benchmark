@@ -18,7 +18,7 @@ func0000000000000041:
 
 func000000000000006a:
 	add	x8, x1, x2, lsl #4
-	cmp	w0, #0
-	csel	x0, x8, xzr, ge
+	cmn	w0, #1
+	csel	x0, x8, xzr, gt
 	ret
 

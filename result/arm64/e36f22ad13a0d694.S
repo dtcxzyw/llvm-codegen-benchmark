@@ -35,9 +35,9 @@ func0000000000000026:
 func000000000000002a:
 	cmp	w2, #1
 	cset	w8, eq
-	cmp	w0, #0
+	cmn	w0, #1
 	orr	w8, w1, w8
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
@@ -54,8 +54,8 @@ func0000000000000028:
 func00000000000000ca:
 	cmp	w2, #0
 	cset	w8, lt
-	cmp	w0, #0
+	cmn	w0, #1
 	bic	w8, w8, w1
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, le
 	ret
 

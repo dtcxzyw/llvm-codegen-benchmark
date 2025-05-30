@@ -30,9 +30,8 @@ func000000000000000a:
 
 func0000000000000064:
 	lsl	x8, x2, #15
-	mov	w9, #-32767
-	cmp	w1, w9
-	csel	x0, x0, x8, lo
+	cmn	w1, #8, lsl #12
+	csel	x0, x0, x8, ls
 	ret
 
 func0000000000000026:

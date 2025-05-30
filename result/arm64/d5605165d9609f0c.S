@@ -140,8 +140,8 @@ func0000000000000086:
 
 func000000000000030a:
 	sxth	w8, w0
-	cmp	w8, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w8, #1
+	ccmp	w1, w2, #0, gt
 	cset	w0, hi
 	ret
 

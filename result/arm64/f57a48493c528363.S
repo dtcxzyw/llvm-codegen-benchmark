@@ -34,10 +34,9 @@ func0000000000000144:
 
 func0000000000000584:
 	mov	w8, #-28671
-	mov	w9, #-24575
 	add	w8, w2, w8
-	cmp	w8, w9
-	ccmp	w0, w1, #0, hs
+	cmn	w8, #6, lsl #12
+	ccmp	w0, w1, #0, hi
 	cset	w0, ne
 	ret
 

@@ -7,9 +7,9 @@ func0000000000000d81:
 
 func0000000000000f0a:
 	add	w8, w1, w2
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #255
-	ccmp	w8, w9, #0, ge
+	ccmp	w8, w9, #0, gt
 	cset	w0, hi
 	ret
 
@@ -43,9 +43,9 @@ func0000000000000f0c:
 func0000000000000cca:
 	mov	w9, #34465
 	add	w8, w1, w2
-	cmp	w0, #0
+	cmn	w0, #1
 	movk	w9, #1, lsl #16
-	ccmp	w8, w9, #0, ge
+	ccmp	w8, w9, #0, gt
 	cset	w0, lt
 	ret
 
@@ -313,15 +313,15 @@ func00000000000004ca:
 
 func0000000000000d4a:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #0, #4, ge
+	cmn	w0, #1
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 
 func0000000000000e8a:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #4, #2, ge
+	cmn	w0, #1
+	ccmp	w8, #4, #2, gt
 	cset	w0, lo
 	ret
 

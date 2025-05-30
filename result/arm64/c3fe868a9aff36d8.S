@@ -1,7 +1,7 @@
 func000000000000006a:
 	add	w8, w0, w1
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func000000000000002a:

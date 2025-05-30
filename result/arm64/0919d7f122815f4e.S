@@ -26,8 +26,8 @@ func0000000000000021:
 
 func0000000000000141:
 	cmp	w0, #0
-	ccmp	w1, #0, #8, eq
-	cset	w0, ge
+	ccmn	w1, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func00000000000000c1:

@@ -18,14 +18,14 @@ func000000000000002c:
 
 func0000000000000146:
 	tst	x1, x2
-	ccmp	x0, #0, #8, lt
-	cset	w0, ge
+	ccmn	x0, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func00000000000000ca:
 	tst	x1, x2
-	ccmp	x0, #0, #8, lt
-	cset	w0, ge
+	ccmn	x0, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func0000000000000081:

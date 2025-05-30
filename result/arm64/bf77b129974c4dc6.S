@@ -28,8 +28,8 @@ func000000000000294a:
 
 func000000000000282c:
 	cmp	w1, #2
-	ccmp	w2, #0, #8, eq
-	ccmp	w0, #0, #4, ge
+	ccmn	w2, #1, #4, eq
+	ccmp	w0, #0, #4, gt
 	cset	w0, ne
 	ret
 
@@ -364,8 +364,8 @@ func00000000000028c6:
 	cmp	w1, #100
 	mov	w8, #100
 	ccmp	w0, w8, #0, lt
-	ccmp	w2, #0, #8, lt
-	cset	w0, ge
+	ccmn	w2, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func000000000000314a:

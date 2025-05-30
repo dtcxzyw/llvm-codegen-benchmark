@@ -1,7 +1,7 @@
 func0000000000000028:
 	sub	x8, x1, x2
-	cmp	x8, #0
-	csinv	x0, x0, xzr, ge
+	cmn	x8, #1
+	csinv	x0, x0, xzr, gt
 	ret
 
 func0000000000000038:

@@ -19,10 +19,10 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	cmp	x2, #0
+	cmn	x2, #1
 	mov	x8, #78250043525562368
 	mov	x9, #114278840544526336
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	tst	w0, #0x1
 	csel	x0, x1, x8, ne
 	ret

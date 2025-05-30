@@ -130,8 +130,8 @@ func000000000000002c:
 	ret
 
 func0000000000000144:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	cmp	w0, w8
 	cset	w0, lo
 	ret

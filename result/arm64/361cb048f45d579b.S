@@ -1,8 +1,8 @@
 func0000000000000054:
 	tst	w0, #0x1
 	csel	w8, wzr, w1, ne
-	cmp	w8, #0
-	ccmn	w8, #2, #4, lt
+	cmn	w8, #1
+	ccmn	w8, #2, #4, le
 	cset	w0, eq
 	ret
 

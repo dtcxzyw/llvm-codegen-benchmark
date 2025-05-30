@@ -102,8 +102,8 @@ func00000000000000aa:
 	movk	w8, #15139, lsl #16
 	fmov	s1, w8
 	fcmp	s0, s1
-	ccmp	w0, #0, #8, hi
-	cset	w0, ge
+	ccmn	w0, #1, #4, hi
+	cset	w0, gt
 	ret
 
 func0000000000000012:

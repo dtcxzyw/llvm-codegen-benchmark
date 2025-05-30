@@ -7,8 +7,8 @@ func0000000000000006:
 
 func000000000000000a:
 	mov	w8, #-2
-	cmp	x0, #0
-	csel	w0, w0, w8, ge
+	cmn	x0, #1
+	csel	w0, w0, w8, gt
 	ret
 
 func0000000000000044:

@@ -38,8 +38,8 @@ func0000000000000149:
 
 func000000000000014c:
 	cmp	x0, x1
-	ccmp	w2, #0, #0, eq
-	cset	w0, ge
+	ccmn	w2, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000301:

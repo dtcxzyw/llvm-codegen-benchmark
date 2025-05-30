@@ -223,9 +223,9 @@ func0000000000000081:
 
 func0000000000000144:
 	mov	w8, #30
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #18
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	cmp	w0, #128, lsl #12
 	mov	w9, #6
 	csel	w0, w9, w8, lo

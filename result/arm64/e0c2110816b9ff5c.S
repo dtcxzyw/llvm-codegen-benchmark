@@ -17,8 +17,8 @@ func0000000000000021:
 func000000000000002a:
 	and	w8, w2, #0xffff
 	and	w9, w1, #0xffff
-	cmp	w0, #0
-	ccmp	w9, w8, #4, lt
+	cmn	w0, #1
+	ccmp	w9, w8, #4, le
 	cset	w0, eq
 	ret
 

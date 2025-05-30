@@ -15,8 +15,8 @@ func0000000000000013:
 func0000000000000029:
 	mov	w8, #-2
 	sub	w9, w0, #5
-	cmp	w0, #0
-	csel	w0, w9, w8, ge
+	cmn	w0, #1
+	csel	w0, w9, w8, gt
 	ret
 
 func0000000000000011:

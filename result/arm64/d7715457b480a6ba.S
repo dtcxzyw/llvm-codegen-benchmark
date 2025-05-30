@@ -14,9 +14,9 @@ func0000000000000421:
 
 func000000000000018a:
 	and	w8, w2, #0x1
-	cmp	w0, #0
+	cmn	w0, #1
 	sub	w8, w1, w8
-	ccmp	w8, #4, #0, lt
+	ccmp	w8, #4, #0, le
 	cset	w0, ne
 	ret
 

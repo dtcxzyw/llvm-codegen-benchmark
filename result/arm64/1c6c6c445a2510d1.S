@@ -6,7 +6,7 @@ func000000000000002a:
 
 func000000000000006a:
 	sbfiz	x8, x1, #1, #32
-	cmp	w0, #0
-	csinv	x0, x8, xzr, ge
+	cmn	w0, #1
+	csinv	x0, x8, xzr, gt
 	ret
 

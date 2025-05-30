@@ -78,8 +78,8 @@ func0000000000000048:
 
 func000000000000004a:
 	add	x8, x1, #2
-	cmp	x0, #0
-	csinc	x0, x8, xzr, lt
+	cmn	x0, #1
+	csinc	x0, x8, xzr, le
 	ret
 
 func0000000000000064:

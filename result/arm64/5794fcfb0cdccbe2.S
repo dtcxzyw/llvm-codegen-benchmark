@@ -18,10 +18,10 @@ func0000000000000146:
 func000000000000014a:
 	sxtb	w8, w0
 	add	w9, w1, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #51711
 	movk	w8, #15258, lsl #16
-	ccmp	w9, w8, #4, ge
+	ccmp	w9, w8, #4, gt
 	cset	w0, gt
 	ret
 

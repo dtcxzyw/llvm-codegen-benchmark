@@ -1,7 +1,6 @@
 func0000000000000001:
-	mov	w8, #-4097
-	cmp	w0, w8
-	cset	w0, hi
+	cmn	w0, #1, lsl #12
+	cset	w0, hs
 	ret
 
 func000000000000000c:

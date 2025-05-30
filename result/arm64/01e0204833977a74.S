@@ -36,10 +36,10 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #4
 	mov	w9, #6
-	cinc	w8, w8, lt
+	cinc	w8, w8, le
 	tst	w1, #0x1
 	csel	w8, w9, w8, ne
 	tst	w0, #0x1

@@ -1,8 +1,8 @@
 func000000000000004a:
 	sxtb	w8, w0
 	add	x9, x1, x2
-	cmp	w8, #0
-	csel	x0, x9, xzr, ge
+	cmn	w8, #1
+	csel	x0, x9, xzr, gt
 	ret
 
 func0000000000000041:

@@ -4,8 +4,8 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	cmp	w2, #0
-	csel	x0, x1, x0, ge
+	cmn	w2, #1
+	csel	x0, x1, x0, gt
 	ret
 
 func0000000000000004:

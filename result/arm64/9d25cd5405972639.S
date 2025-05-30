@@ -1,6 +1,6 @@
 func0000000000000650:
-	cmp	x1, #0
-	ccmp	x2, #0, #0, ge
+	cmn	x1, #1
+	ccmp	x2, #0, #0, gt
 	cinc	x0, x0, lt
 	ret
 

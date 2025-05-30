@@ -1,7 +1,7 @@
 func000000000000050a:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #1
-	cneg	x8, x8, lt
+	cneg	x8, x8, le
 	tst	w1, #0x1
 	csel	x8, xzr, x8, ne
 	add	x8, x8, x0

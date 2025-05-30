@@ -193,10 +193,9 @@ func000000000000004a:
 	ret
 
 func0000000000000044:
-	mov	w8, #-4097
-	sub	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, hi
+	sub	w8, w0, w1
+	cmn	w8, #1, lsl #12
+	cset	w0, hs
 	ret
 
 func00000000000001f4:

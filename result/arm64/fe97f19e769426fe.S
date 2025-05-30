@@ -151,8 +151,8 @@ func0000000000000186:
 
 func000000000000002a:
 	sub	w8, w1, #2147
-	cmp	w8, #0
-	ccmp	w0, #0, #4, lt
+	cmn	w8, #1
+	ccmp	w0, #0, #4, le
 	cset	w0, eq
 	ret
 

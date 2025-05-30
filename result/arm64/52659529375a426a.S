@@ -6,8 +6,8 @@ func0000000000000008:
 
 func000000000000000a:
 	sub	x8, x1, x2
-	cmp	x0, #0
-	csinv	x0, x8, xzr, ge
+	cmn	x0, #1
+	csinv	x0, x8, xzr, gt
 	ret
 
 func0000000000000001:

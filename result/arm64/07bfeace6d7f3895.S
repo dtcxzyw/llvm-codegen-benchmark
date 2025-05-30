@@ -62,8 +62,8 @@ func0000000000000158:
 
 func0000000000000056:
 	cmp	x0, x1
-	ccmp	w2, #0, #0, lt
-	cset	w0, ge
+	ccmn	w2, #1, #0, lt
+	cset	w0, gt
 	ret
 
 func0000000000000218:

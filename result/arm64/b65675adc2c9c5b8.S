@@ -1,14 +1,14 @@
 func000000000000014a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #4, gt
 	cset	w0, gt
 	ret
 
 func000000000000012a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #0, gt
 	cset	w0, hs
 	ret
 
@@ -35,8 +35,8 @@ func000000000000014c:
 
 func000000000000010a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #0, gt
 	cset	w0, hi
 	ret
 
@@ -62,8 +62,8 @@ func000000000000018c:
 
 func000000000000018a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #4, gt
 	cset	w0, ne
 	ret
 

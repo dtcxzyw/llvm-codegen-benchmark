@@ -14,15 +14,15 @@ func00000000000000ac:
 
 func000000000000018a:
 	add	x8, x1, x2, lsl #3
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 
 func000000000000000a:
 	add	x8, x1, x2, lsl #3
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

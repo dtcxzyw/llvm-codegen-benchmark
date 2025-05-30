@@ -155,8 +155,8 @@ func0000000000000048:
 func0000000000000298:
 	sxtb	w8, w1
 	cmp	x0, #0
-	ccmp	w8, #0, #0, eq
-	cset	w0, ge
+	ccmn	w8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000218:

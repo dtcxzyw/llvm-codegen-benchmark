@@ -38,8 +38,8 @@ func0000000000000024:
 
 func0000000000000141:
 	mov	w8, #3
-	cmp	w1, #0
-	cinc	x9, x8, lt
+	cmn	w1, #1
+	cinc	x9, x8, le
 	cmp	w0, #0
 	csel	x0, x9, x8, eq
 	ret

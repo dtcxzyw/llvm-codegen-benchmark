@@ -28,9 +28,9 @@ func000000000000008c:
 func00000000000000ca:
 	cmp	w2, #1
 	cset	w8, lt
-	cmp	w0, #0
+	cmn	w0, #1
 	orr	w8, w1, w8
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 

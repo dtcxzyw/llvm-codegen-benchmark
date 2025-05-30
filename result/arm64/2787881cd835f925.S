@@ -20,7 +20,7 @@ func0000000000000021:
 
 func0000000000000181:
 	ubfx	w8, w1, #1, #1
-	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	cmn	w0, #1
+	csel	w0, wzr, w8, le
 	ret
 

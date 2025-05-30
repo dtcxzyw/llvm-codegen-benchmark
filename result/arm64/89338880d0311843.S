@@ -80,8 +80,8 @@ func0000000000000024:
 func000000000000002a:
 	mov	w8, #1328
 	and	w9, w1, #0x3ff0
-	cmp	w0, #0
-	ccmp	w9, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w9, w8, #0, gt
 	cset	w0, eq
 	ret
 

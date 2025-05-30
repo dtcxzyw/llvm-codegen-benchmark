@@ -13,8 +13,8 @@ func0000000000000128:
 
 func00000000000004ca:
 	sub	x8, x1, x2
-	cmp	x8, #0
-	ccmp	x8, x0, #0, ge
+	cmn	x8, #1
+	ccmp	x8, x0, #0, gt
 	cset	w0, lt
 	ret
 

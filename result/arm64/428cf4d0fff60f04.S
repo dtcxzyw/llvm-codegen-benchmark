@@ -16,8 +16,8 @@ func000000000000001e:
 	cmp	x10, x11
 	csinc	w10, w12, wzr, hs
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	csinc	w0, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w0, w10, wzr, le
 	ret
 
 func0000000000000042:
@@ -71,9 +71,9 @@ func0000000000000006:
 	lsr	x8, x8, #53
 	cmp	x8, #1023
 	sub	x8, x9, #1
-	ccmp	x9, #0, #8, lo
+	ccmn	x9, #1, #4, lo
 	mov	x9, #4503599627370495
-	ccmp	x8, x9, #0, lt
+	ccmp	x8, x9, #0, le
 	cset	w0, lo
 	ret
 
@@ -84,8 +84,8 @@ func0000000000000002:
 	add	x8, x10, x8
 	lsr	x8, x8, #53
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	cset	w0, ge
+	ccmn	x9, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func00000000000000c3:
@@ -263,8 +263,8 @@ func0000000000000306:
 	ccmp	x10, x11, #0, hs
 	cset	w10, gt
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	csinc	w0, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w0, w10, wzr, le
 	ret
 
 func000000000000031e:
@@ -282,8 +282,8 @@ func000000000000031e:
 	cmp	x10, x12
 	csinc	w10, w11, wzr, le
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	csinc	w0, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w0, w10, wzr, le
 	ret
 
 func0000000000000310:

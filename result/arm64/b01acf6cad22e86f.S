@@ -1,8 +1,8 @@
 func0000000000000141:
 	tst	w1, #0x7
 	cset	w8, eq
-	cmp	x0, #0
-	cset	w9, ge
+	cmn	x0, #1
+	cset	w9, gt
 	eor	w0, w8, w9
 	ret
 
@@ -24,8 +24,8 @@ func0000000000000021:
 	ret
 
 func000000000000014c:
-	cmp	x0, #0
-	cset	w8, ge
+	cmn	x0, #1
+	cset	w8, gt
 	eor	w8, w1, w8
 	and	w0, w8, #0x1
 	ret

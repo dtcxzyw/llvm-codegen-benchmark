@@ -135,7 +135,7 @@ func000000000000014c:
 	sxtb	w8, w1
 	and	w9, w0, #0xffff
 	cmp	w9, #5
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 

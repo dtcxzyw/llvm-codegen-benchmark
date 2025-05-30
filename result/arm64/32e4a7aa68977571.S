@@ -40,8 +40,8 @@ func00000000000000c8:
 
 func0000000000000148:
 	mov	w8, #2
-	cmp	x1, #0
-	cinc	x8, x8, lt
+	cmn	x1, #1
+	cinc	x8, x8, le
 	cmp	x8, x0
 	cset	w0, hi
 	ret

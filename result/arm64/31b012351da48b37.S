@@ -8,8 +8,8 @@ func0000000000000141:
 
 func0000000000000144:
 	mov	x8, #-9223372036854775807
-	cmp	x1, #0
-	cset	w9, ge
+	cmn	x1, #1
+	cset	w9, gt
 	cmp	x1, x8
 	cset	w8, lo
 	tst	w0, #0x1

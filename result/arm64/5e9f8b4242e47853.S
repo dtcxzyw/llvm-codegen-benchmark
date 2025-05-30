@@ -49,8 +49,8 @@ func0000000000000028:
 func0000000000000014:
 	sxtb	w9, w1
 	mov	w8, #1
-	cmp	w9, #0
-	cset	w9, ge
+	cmn	w9, #1
+	cset	w9, gt
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	cinc	w0, w8, eq

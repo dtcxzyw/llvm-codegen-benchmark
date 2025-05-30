@@ -35,8 +35,8 @@ func0000000000000064:
 func000000000000006a:
 	sxth	w8, w0
 	add	w9, w1, #4
-	cmp	w8, #0
-	csel	w0, wzr, w9, ge
+	cmn	w8, #1
+	csel	w0, wzr, w9, gt
 	ret
 
 func0000000000000028:
@@ -56,7 +56,7 @@ func0000000000000024:
 func000000000000004a:
 	sxth	w9, w0
 	mov	w8, #5
-	cmp	w9, #0
-	csinc	w0, w8, w1, ge
+	cmn	w9, #1
+	csinc	w0, w8, w1, gt
 	ret
 

@@ -126,8 +126,8 @@ func000000000000002a:
 func000000000000008a:
 	sxtb	w8, w0
 	and	w9, w1, #0xffff
-	cmp	w8, #0
-	ccmp	w9, #3, #2, ge
+	cmn	w8, #1
+	ccmp	w9, #3, #2, gt
 	cset	w0, lo
 	ret
 

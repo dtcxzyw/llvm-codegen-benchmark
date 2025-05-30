@@ -41,8 +41,8 @@ func0000000000000006:
 func000000000000000a:
 	sxtb	w8, w2
 	and	w9, w0, w1
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w9, w8
 	ret
 

@@ -54,9 +54,9 @@ func0000000000000214:
 	sub	w8, w8, #241
 	cmp	w8, #4
 	cset	w8, lo
-	cmp	w9, #0
+	cmn	w9, #1
 	orr	w8, w8, w1
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

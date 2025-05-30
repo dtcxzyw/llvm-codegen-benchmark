@@ -113,17 +113,17 @@ func0000000000000010:
 
 func000000000000002a:
 	mov	x8, #-21856
-	cmp	x1, #0
+	cmn	x1, #1
 	mov	x9, #-45184
 	movk	x8, #65532, lsl #16
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	add	x0, x0, x8
 	ret
 
 func000000000000002b:
 	mov	w8, #2
-	cmp	x1, #0
-	cinc	x8, x8, lt
+	cmn	x1, #1
+	cinc	x8, x8, le
 	add	x0, x0, x8
 	ret
 

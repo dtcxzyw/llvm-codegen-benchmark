@@ -30,8 +30,8 @@ func0000000000000058:
 func000000000000028c:
 	orr	w8, w1, w2
 	cmp	w0, #2
-	ccmp	w8, #0, #0, ge
-	cset	w0, ge
+	ccmn	w8, #1, #0, ge
+	cset	w0, gt
 	ret
 
 func0000000000000d10:

@@ -473,8 +473,8 @@ func0000000000000510:
 	ret
 
 func0000000000000518:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w0, #0
 	orr	w8, w8, w1
 	cset	w9, ne
@@ -493,8 +493,8 @@ func0000000000000a04:
 	ret
 
 func0000000000000502:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w0, #0
 	orr	w8, w1, w8
 	cset	w9, eq

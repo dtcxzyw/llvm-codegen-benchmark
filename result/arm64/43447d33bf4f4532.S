@@ -17,7 +17,7 @@ func0000000000000108:
 func000000000000010a:
 	add	x8, x0, #1
 	cmp	x1, #2
-	ccmp	x8, #0, #0, hs
-	cset	w0, ge
+	ccmn	x8, #1, #0, hs
+	cset	w0, gt
 	ret
 

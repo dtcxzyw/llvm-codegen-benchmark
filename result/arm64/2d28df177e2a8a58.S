@@ -22,8 +22,8 @@ func000000000000002a:
 	sxth	w9, w0
 	cmp	w8, #2048
 	cset	w8, eq
-	cmp	w9, #0
+	cmn	w9, #1
 	and	w8, w1, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 

@@ -1,5 +1,5 @@
 func0000000000000000:
-	cmp	w0, #0
-	csinv	w0, w0, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w0, wzr, gt
 	ret
 

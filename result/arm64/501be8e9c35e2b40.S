@@ -1,14 +1,14 @@
 func000000000000014a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #4, gt
 	cset	w0, gt
 	ret
 
 func000000000000008a:
 	sxtw	x8, w0
-	cmp	w0, #0
-	ccmp	x1, x8, #2, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #2, gt
 	cset	w0, lo
 	ret
 

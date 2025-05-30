@@ -23,8 +23,8 @@ func0000000000001842:
 	ret
 
 func0000000000000142:
-	cmp	w1, #0
-	ccmp	w0, w2, #0, lt
+	cmn	w1, #1
+	ccmp	w0, w2, #0, le
 	cset	w0, ls
 	ret
 

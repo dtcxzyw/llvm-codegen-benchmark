@@ -12,8 +12,8 @@ func000000000000101e:
 	cmp	x8, #1023
 	mov	x8, #4895412794951729152
 	fmov	d1, x8
-	ccmp	x9, #0, #8, lo
-	csinc	w8, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w8, w10, wzr, le
 	fcmp	d0, d1
 	csel	w0, wzr, w8, pl
 	ret
@@ -31,8 +31,8 @@ func000000000000581e:
 	cmp	x10, x11
 	csinc	w10, w12, wzr, hs
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	csinc	w8, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w8, w10, wzr, le
 	fcmp	d0, d1
 	csel	w0, wzr, w8, gt
 	ret
@@ -51,9 +51,9 @@ func000000000000181e:
 	cmp	x8, #1023
 	mov	x8, #281474974613504
 	movk	x8, #16879, lsl #48
-	ccmp	x9, #0, #8, lo
+	ccmn	x9, #1, #4, lo
 	fmov	d1, x8
-	csinc	w8, w10, wzr, lt
+	csinc	w8, w10, wzr, le
 	fcmp	d0, d1
 	csel	w0, wzr, w8, ge
 	ret

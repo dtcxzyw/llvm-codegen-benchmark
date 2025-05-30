@@ -7,11 +7,12 @@ func0000000000001881:
 	ret
 
 func0000000000002921:
+	cmn	w0, #1
+	cset	w8, gt
 	cmp	x1, x2
-	cset	w8, hs
+	cset	w9, hs
 	cmp	w0, #0
-	cset	w9, ge
-	csel	w0, w8, w9, eq
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000002901:
@@ -65,11 +66,12 @@ func00000000000018c1:
 	ret
 
 func0000000000002961:
+	cmn	w0, #1
+	cset	w8, gt
 	cmp	x1, x2
-	cset	w8, ge
-	cmp	w0, #0
 	cset	w9, ge
-	csel	w0, w8, w9, eq
+	cmp	w0, #0
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000003141:

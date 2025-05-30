@@ -15,8 +15,8 @@ func0000000000000021:
 
 func000000000000014a:
 	fcvtzs	w8, d0
-	cmp	w0, #0
-	ccmp	w8, #0, #4, ge
+	cmn	w0, #1
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 

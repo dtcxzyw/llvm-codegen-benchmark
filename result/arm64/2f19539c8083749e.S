@@ -26,9 +26,9 @@ func000000000000000d:
 	ret
 
 func0000000000000014:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w9, #12
-	cset	w8, ge
+	cset	w8, gt
 	tst	w8, w1
 	mov	w8, #8
 	csel	w8, w9, w8, ne
@@ -36,9 +36,9 @@ func0000000000000014:
 	ret
 
 func0000000000000015:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w9, #16
-	cset	w8, ge
+	cset	w8, gt
 	movk	w9, #11, lsl #16
 	tst	w8, w1
 	mov	w8, #720896

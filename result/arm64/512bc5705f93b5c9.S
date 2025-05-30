@@ -16,8 +16,8 @@ func0000000000000003:
 
 func0000000000000000:
 	fcvtzs	w8, s0
-	cmp	w8, #0
-	csinv	w8, w8, wzr, ge
+	cmn	w8, #1
+	csinv	w8, w8, wzr, gt
 	add	w0, w8, #1
 	ret
 

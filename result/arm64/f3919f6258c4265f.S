@@ -71,8 +71,8 @@ func000000000000001a:
 
 func0000000000000018:
 	sub	w8, w0, #1
-	cmp	w1, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w1, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000020:

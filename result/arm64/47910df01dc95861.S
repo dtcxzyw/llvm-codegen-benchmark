@@ -27,8 +27,8 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	cmp	x1, #0
-	cset	w8, ge
+	cmn	x1, #1
+	cset	w8, gt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

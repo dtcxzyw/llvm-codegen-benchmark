@@ -20,9 +20,9 @@ func0000000000000010:
 func00000000000000a0:
 	sxtb	w8, w2
 	add	w9, w0, w1
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #1
-	cinc	w8, w8, lt
+	cinc	w8, w8, le
 	add	w0, w9, w8
 	ret
 

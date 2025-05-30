@@ -13,7 +13,7 @@ func0000000000000061:
 
 func0000000000000041:
 	lsl	x8, x0, #48
-	cmp	w1, #0
-	csel	x0, x8, xzr, ge
+	cmn	w1, #1
+	csel	x0, x8, xzr, gt
 	ret
 

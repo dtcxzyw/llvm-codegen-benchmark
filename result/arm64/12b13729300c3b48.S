@@ -1,6 +1,6 @@
 func000000000000002a:
-	cmp	w2, #0
-	csel	x8, x0, x1, ge
+	cmn	w2, #1
+	csel	x8, x0, x1, gt
 	cmp	x8, #0
 	cset	w0, gt
 	ret

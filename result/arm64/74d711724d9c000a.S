@@ -107,8 +107,8 @@ func0000000000000144:
 	sxth	w8, w1
 	and	w9, w0, #0xffff
 	cmp	w9, #259
-	ccmp	w8, #0, #0, hs
-	cset	w0, ge
+	ccmn	w8, #1, #0, hs
+	cset	w0, gt
 	ret
 
 func0000000000000181:

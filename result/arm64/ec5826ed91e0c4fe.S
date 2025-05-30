@@ -36,8 +36,8 @@ func0000000000000301:
 
 func000000000000018a:
 	ubfx	w8, w1, #1, #1
-	cmp	x0, #0
-	csel	w0, wzr, w8, lt
+	cmn	x0, #1
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000034:

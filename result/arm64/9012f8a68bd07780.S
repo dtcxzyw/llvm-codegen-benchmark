@@ -30,7 +30,7 @@ func0000000000000004:
 func000000000000000a:
 	fmov	s0, #-1.00000000
 	fmov	s1, #1.00000000
-	cmp	x0, #0
-	fcsel	s0, s1, s0, ge
+	cmn	x0, #1
+	fcsel	s0, s1, s0, gt
 	ret
 

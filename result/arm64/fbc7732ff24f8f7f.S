@@ -114,8 +114,8 @@ func0000000000000114:
 	sxtb	w8, w0
 	and	w9, w1, #0xff
 	sub	w9, w9, #25
-	cmp	w8, #0
-	ccmn	w9, #12, #0, lt
+	cmn	w8, #1
+	ccmn	w9, #12, #0, le
 	cset	w0, lo
 	ret
 

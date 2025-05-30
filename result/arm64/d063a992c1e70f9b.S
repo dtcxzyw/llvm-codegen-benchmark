@@ -48,8 +48,8 @@ func0000000000000030:
 	ret
 
 func0000000000000053:
-	cmp	x2, #0
-	cset	w8, ge
+	cmn	x2, #1
+	cset	w8, gt
 	and	w8, w1, w8
 	add	x0, x0, x8
 	ret

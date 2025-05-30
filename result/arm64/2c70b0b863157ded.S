@@ -32,8 +32,8 @@ func000000000000010c:
 	ret
 
 func00000000000000ca:
-	cmp	w1, #0
-	ccmp	w2, #9, #0, ge
+	cmn	w1, #1
+	ccmp	w2, #9, #0, gt
 	cset	w8, lt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
@@ -90,8 +90,8 @@ func0000000000000084:
 
 func000000000000014a:
 	orr	w8, w1, w2
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

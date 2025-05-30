@@ -86,8 +86,8 @@ func0000000000000085:
 func000000000000014c:
 	sub	w8, w2, #1
 	cmp	w0, w1
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func00000000000000c4:

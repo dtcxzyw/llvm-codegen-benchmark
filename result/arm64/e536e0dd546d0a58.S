@@ -30,9 +30,9 @@ func0000000000000041:
 
 func00000000000002a1:
 	mov	w8, #671088640
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w9, #134217728
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	mov	w9, #576
 	cmp	w0, #0
 	orr	w9, w8, w9

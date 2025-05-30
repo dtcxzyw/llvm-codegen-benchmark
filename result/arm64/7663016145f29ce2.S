@@ -44,8 +44,8 @@ func0000000000000053:
 
 func0000000000000029:
 	sub	x8, x0, #1
-	cmp	x1, #0
-	csinc	x0, x8, x0, ge
+	cmn	x1, #1
+	csinc	x0, x8, x0, gt
 	ret
 
 func0000000000000012:

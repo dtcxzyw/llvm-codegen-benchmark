@@ -51,8 +51,8 @@ func0000000000000310:
 
 func0000000000000314:
 	orr	x8, x1, x2
-	cmp	x0, #0
-	ccmp	x8, #0, #0, lt
+	cmn	x0, #1
+	ccmp	x8, #0, #0, le
 	cset	w0, ne
 	ret
 

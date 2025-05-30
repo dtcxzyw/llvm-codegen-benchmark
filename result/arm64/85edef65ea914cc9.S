@@ -33,8 +33,8 @@ func000000000000018c:
 	ret
 
 func000000000000014c:
-	cmp	w0, #0
-	cset	w8, ge
+	cmn	w0, #1
+	cset	w8, gt
 	and	w0, w1, w8
 	ret
 

@@ -29,8 +29,8 @@ func000000000000010a:
 
 func0000000000000141:
 	mov	w8, #2
-	cmp	x1, #0
-	cinc	w8, w8, ge
+	cmn	x1, #1
+	cinc	w8, w8, gt
 	cmp	w8, w0
 	cset	w0, eq
 	ret

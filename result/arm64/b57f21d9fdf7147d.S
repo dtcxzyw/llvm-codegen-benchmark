@@ -10,8 +10,8 @@ func0000000000000226:
 
 func000000000000052a:
 	sub	x8, x0, #1
-	cmp	x1, #0
-	csinc	x8, x8, x0, ge
+	cmn	x1, #1
+	csinc	x8, x8, x0, gt
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret

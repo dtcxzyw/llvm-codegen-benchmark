@@ -10,8 +10,8 @@ func0000000000000004:
 func000000000000000a:
 	fmov	x9, d0
 	mov	w8, #1
-	cmp	x9, #0
-	cneg	w0, w8, lt
+	cmn	x9, #1
+	cneg	w0, w8, le
 	ret
 
 func0000000000000006:

@@ -24,8 +24,8 @@ func0000000000000008:
 func000000000000000a:
 	add	w9, w0, w1
 	mov	w8, #4
-	cmp	w9, #0
-	cinc	w0, w8, lt
+	cmn	w9, #1
+	cinc	w0, w8, le
 	ret
 
 func0000000000000078:

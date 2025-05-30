@@ -14,10 +14,9 @@ func0000000000000021:
 
 func0000000000000004:
 	add	x8, x1, x0
-	mov	x9, #-8193
 	sub	x8, x2, x8
-	cmp	x8, x9
-	cset	w0, hi
+	cmn	x8, #2, lsl #12
+	cset	w0, hs
 	ret
 
 func0000000000000001:

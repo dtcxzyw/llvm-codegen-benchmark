@@ -69,10 +69,10 @@ func0000000000000481:
 
 func000000000000114a:
 	orr	x8, x1, x0
-	cmp	x8, #0
+	cmn	x8, #1
 	mov	w8, #16960
 	movk	w8, #15, lsl #16
-	ccmp	x2, x8, #2, ge
+	ccmp	x2, x8, #2, gt
 	cset	w0, lo
 	ret
 

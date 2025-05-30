@@ -24,9 +24,9 @@ func0000000000000042:
 	ret
 
 func000000000000004c:
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w8, #65536
-	ccmp	w2, w8, #0, lt
+	ccmp	w2, w8, #0, le
 	cset	w8, ne
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

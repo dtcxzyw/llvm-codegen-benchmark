@@ -24,11 +24,11 @@ func000000000000002c:
 	ret
 
 func000000000000014a:
-	cmp	x2, #0
-	cset	w8, ge
-	cmp	x1, #0
+	cmn	x2, #1
+	cset	w8, gt
+	cmn	x1, #1
 	and	w8, w0, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000002a:
@@ -74,9 +74,9 @@ func0000000000000184:
 func00000000000000ca:
 	cmp	x2, #0
 	cset	w8, lt
-	cmp	x1, #0
+	cmn	x1, #1
 	and	w8, w0, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000028c:
@@ -125,15 +125,15 @@ func000000000000008a:
 	movk	w8, #15, lsl #16
 	cmp	x2, x8
 	cset	w8, lo
-	cmp	x1, #0
+	cmn	x1, #1
 	and	w8, w0, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000144:
-	cmp	x2, #0
+	cmn	x2, #1
 	mov	w9, #16960
-	cset	w8, ge
+	cset	w8, gt
 	movk	w9, #15, lsl #16
 	and	w8, w0, w8
 	cmp	x1, x9

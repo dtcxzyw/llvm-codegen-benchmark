@@ -92,9 +92,9 @@ func0000000000000581:
 
 func000000000000002a:
 	sub	x8, x1, x2
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #72
-	ccmp	x8, x9, #0, ge
+	ccmp	x8, x9, #0, gt
 	cset	w0, eq
 	ret
 
@@ -143,8 +143,8 @@ func0000000000000188:
 
 func00000000000000ca:
 	sub	x8, x1, x2
-	cmp	w0, #0
-	ccmp	x8, #0, #0, ge
+	cmn	w0, #1
+	ccmp	x8, #0, #0, gt
 	cset	w0, lt
 	ret
 

@@ -152,8 +152,8 @@ func0000000000000502:
 
 func0000000000000254:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	x1, x2, #2, lt
+	cmn	w8, #1
+	ccmp	x1, x2, #2, le
 	cset	w0, hs
 	ret
 

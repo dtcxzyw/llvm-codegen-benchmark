@@ -5,7 +5,7 @@ func000000000000000a:
 
 func0000000000000000:
 	sub	w8, w0, w1
-	cmp	w8, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w8, #1
+	csinv	w0, w8, wzr, gt
 	ret
 

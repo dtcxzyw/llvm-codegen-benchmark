@@ -2,8 +2,8 @@ func00000000000004ca:
 	sub	w8, w1, #1
 	tst	w2, #0x1
 	csinc	w8, w8, w1, eq
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w0, #0, gt
 	cset	w0, lt
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000546:
 	tst	w2, #0x1
 	csinc	w8, w8, w1, ne
 	cmp	w8, w0
-	ccmp	w8, #0, #8, lt
-	cset	w0, ge
+	ccmn	w8, #1, #4, lt
+	cset	w0, gt
 	ret
 

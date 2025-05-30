@@ -7,8 +7,8 @@ func000000000000042c:
 
 func000000000000282c:
 	cmp	w1, #0
-	ccmp	w2, #0, #8, eq
-	ccmp	x0, #0, #4, ge
+	ccmn	w2, #1, #4, eq
+	ccmp	x0, #0, #4, gt
 	cset	w0, ne
 	ret
 

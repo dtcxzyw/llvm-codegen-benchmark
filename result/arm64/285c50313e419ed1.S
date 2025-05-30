@@ -10,7 +10,7 @@ func0000000000000006:
 func000000000000000a:
 	fmov	x9, d0
 	mov	w8, #3
-	cmp	x9, #0
-	cinc	x0, x8, lt
+	cmn	x9, #1
+	cinc	x0, x8, le
 	ret
 

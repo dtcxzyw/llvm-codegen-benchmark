@@ -13,8 +13,8 @@ func0000000000000021:
 
 func000000000000002a:
 	mov	x8, #-1
-	cmp	x0, #0
-	csinc	x0, x8, x1, lt
+	cmn	x0, #1
+	csinc	x0, x8, x1, le
 	ret
 
 func0000000000000038:

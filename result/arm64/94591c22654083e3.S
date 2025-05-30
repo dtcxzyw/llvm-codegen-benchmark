@@ -60,8 +60,8 @@ func0000000000000026:
 	ret
 
 func0000000000000141:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	cmp	w8, w0
 	cset	w0, eq
 	ret
@@ -102,9 +102,9 @@ func0000000000000088:
 	ret
 
 func0000000000000158:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #127
-	csel	w8, w1, w8, ge
+	csel	w8, w1, w8, gt
 	cmp	w8, w0
 	cset	w0, hi
 	ret

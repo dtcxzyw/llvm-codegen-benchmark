@@ -72,8 +72,8 @@ func0000000000000081:
 	ret
 
 func00000000000000aa:
-	cmp	x0, #0
-	ccmp	w1, w2, #0, lt
+	cmn	x0, #1
+	ccmp	w1, w2, #0, le
 	cset	w0, ls
 	ret
 

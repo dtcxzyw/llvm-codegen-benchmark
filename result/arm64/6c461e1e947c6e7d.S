@@ -12,9 +12,9 @@ func0000000000000026:
 
 func000000000000000a:
 	add	x8, x0, x0, lsl #1
-	cmp	x0, #0
+	cmn	x0, #1
 	lsl	x8, x8, #1
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, gt
 	ret
 
 func0000000000000044:

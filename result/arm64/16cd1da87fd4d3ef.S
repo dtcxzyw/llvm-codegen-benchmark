@@ -156,9 +156,9 @@ func0000000000000304:
 
 func000000000000008a:
 	mov	w8, #16960
-	cmp	w1, #0
+	cmn	w1, #1
 	movk	w8, #15, lsl #16
-	ccmp	w2, w8, #2, ge
+	ccmp	w2, w8, #2, gt
 	cset	w8, lo
 	and	w0, w8, w0
 	ret

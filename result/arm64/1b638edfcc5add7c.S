@@ -104,9 +104,9 @@ func0000000000000079:
 	ret
 
 func0000000000000288:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #4096
-	csel	w8, w1, w8, ge
+	csel	w8, w1, w8, gt
 	cmp	x0, x8
 	cset	w0, hi
 	ret

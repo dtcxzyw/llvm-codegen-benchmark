@@ -20,8 +20,8 @@ func00000000000000ec:
 	ret
 
 func00000000000000ca:
-	cmp	w1, #0
-	ccmp	w1, w2, #0, ge
+	cmn	w1, #1
+	ccmp	w1, w2, #0, gt
 	cset	w8, lt
 	and	w0, w0, w8
 	ret

@@ -15,11 +15,11 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	cmp	w1, #0
-	cset	w8, ge
-	cmp	w2, #0
+	cmn	w1, #1
+	cset	w8, gt
+	cmn	w2, #1
 	and	w8, w0, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000024:

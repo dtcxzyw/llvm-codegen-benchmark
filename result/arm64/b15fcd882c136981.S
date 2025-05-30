@@ -124,8 +124,8 @@ func000000000000008c:
 func000000000000002a:
 	sxth	w8, w0
 	and	w9, w1, #0xffff
-	cmp	w8, #0
-	ccmp	w9, #1, #0, ge
+	cmn	w8, #1
+	ccmp	w9, #1, #0, gt
 	cset	w0, eq
 	ret
 

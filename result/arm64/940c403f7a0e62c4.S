@@ -1,7 +1,7 @@
 func0000000000000001:
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w8, #20
-	cset	w9, ge
+	cset	w9, gt
 	tst	w9, w0
 	csel	x0, x8, xzr, ne
 	ret

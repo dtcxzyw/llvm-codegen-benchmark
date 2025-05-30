@@ -95,8 +95,8 @@ func000000000000018c:
 
 func000000000000018a:
 	add	w8, w1, w2
-	cmp	w0, #0
-	ccmp	w8, #4, #0, lt
+	cmn	w0, #1
+	ccmp	w8, #4, #0, le
 	cset	w0, ne
 	ret
 

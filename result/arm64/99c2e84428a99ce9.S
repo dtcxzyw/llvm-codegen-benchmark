@@ -19,8 +19,8 @@ func0000000000000028:
 
 func000000000000002a:
 	ubfx	w8, w1, #30, #1
-	cmp	w0, #0
-	csinc	w0, w8, wzr, lt
+	cmn	w0, #1
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000026:

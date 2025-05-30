@@ -1,7 +1,7 @@
 func000000000000314a:
 	orr	w8, w1, w0
-	cmp	w8, #0
-	ccmp	w0, w1, #4, ge
+	cmn	w8, #1
+	ccmp	w0, w1, #4, gt
 	cset	w0, ne
 	ret
 

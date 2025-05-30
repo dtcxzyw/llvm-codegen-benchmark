@@ -7,8 +7,8 @@ func0000000000000c2c:
 
 func0000000000001c2a:
 	add	x8, x2, w0, uxtw #2
-	cmp	w0, #0
-	ccmp	x8, x1, #0, ge
+	cmn	w0, #1
+	ccmp	x8, x1, #0, gt
 	cset	w0, eq
 	ret
 

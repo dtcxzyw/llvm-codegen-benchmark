@@ -22,9 +22,9 @@ func0000000000000021:
 	ret
 
 func000000000000014c:
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w8, #2147483647
-	cset	w9, ge
+	cset	w9, gt
 	cmp	w0, #43
 	cset	w10, ne
 	eor	w9, w10, w9

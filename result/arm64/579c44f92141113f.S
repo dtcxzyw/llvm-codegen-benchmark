@@ -31,8 +31,8 @@ func0000000000000181:
 func000000000000002a:
 	sxtb	w8, w0
 	tst	w1, #0x40
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000024:

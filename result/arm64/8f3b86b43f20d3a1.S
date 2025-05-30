@@ -32,8 +32,8 @@ func000000000000000c:
 
 func000000000000000a:
 	and	w8, w1, #0x3ff
-	cmp	w0, #0
-	csinv	w0, w8, wzr, lt
+	cmn	w0, #1
+	csinv	w0, w8, wzr, le
 	ret
 
 func0000000000000008:

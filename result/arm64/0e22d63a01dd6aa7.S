@@ -18,9 +18,9 @@ func000000000000008a:
 	lsr	x8, x2, #32
 	cmp	x8, #0
 	cset	w8, eq
-	cmp	x0, #0
+	cmn	x0, #1
 	and	w8, w1, w8
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000021:

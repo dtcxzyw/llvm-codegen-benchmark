@@ -1,7 +1,7 @@
 func000000000000050a:
 	asr	x8, x2, #5
-	cmp	w0, #0
-	ccmp	x8, x1, #0, ge
+	cmn	w0, #1
+	ccmp	x8, x1, #0, gt
 	cset	w0, hi
 	ret
 

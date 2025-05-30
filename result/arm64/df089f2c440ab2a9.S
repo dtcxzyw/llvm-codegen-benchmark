@@ -1,6 +1,6 @@
 func000000000000000a:
-	cmp	x2, #0
-	cset	w8, ge
+	cmn	x2, #1
+	cset	w8, gt
 	tst	w1, w8
 	csinv	x0, x0, xzr, ne
 	ret

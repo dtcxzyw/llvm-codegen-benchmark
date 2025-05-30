@@ -33,8 +33,8 @@ func000000000000068c:
 
 func000000000000014a:
 	sub	w8, w2, #8
-	cmp	w8, #0
-	ccmp	x0, x1, #4, ge
+	cmn	w8, #1
+	ccmp	x0, x1, #4, gt
 	cset	w0, gt
 	ret
 

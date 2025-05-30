@@ -1,7 +1,7 @@
 func00000000000000ca:
 	add	w8, w2, #1
-	cmp	w0, #0
-	ccmp	w1, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w1, w8, #0, gt
 	cset	w0, lt
 	ret
 
@@ -120,8 +120,8 @@ func0000000000000084:
 
 func00000000000004aa:
 	sub	w8, w2, #1
-	cmp	w0, #0
-	ccmp	w1, w8, #2, ge
+	cmn	w0, #1
+	ccmp	w1, w8, #2, gt
 	cset	w0, ls
 	ret
 

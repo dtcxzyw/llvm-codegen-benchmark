@@ -28,14 +28,14 @@ func0000000000000024:
 
 func000000000000004a:
 	lsl	w8, w0, #1
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func000000000000000a:
 	lsl	w8, w0, #1
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000026:
@@ -56,7 +56,7 @@ func0000000000000066:
 
 func000000000000002a:
 	lsl	w8, w0, #1
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 

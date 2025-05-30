@@ -1,8 +1,8 @@
 func000000000000000a:
 	sxth	w9, w1
 	mov	w8, #64
-	cmp	w9, #0
-	cset	w9, ge
+	cmn	w9, #1
+	cset	w9, gt
 	tst	w0, w9
 	csel	w0, w8, wzr, ne
 	ret

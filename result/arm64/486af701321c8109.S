@@ -1,6 +1,6 @@
 func0000000000000228:
-	cmp	w0, #0
-	ccmp	w1, w0, #0, lt
+	cmn	w0, #1
+	ccmp	w1, w0, #0, le
 	cset	w0, lo
 	ret
 

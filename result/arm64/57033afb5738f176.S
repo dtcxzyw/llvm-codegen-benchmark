@@ -18,8 +18,8 @@ func00000000000000cc:
 	ret
 
 func000000000000016a:
-	cmp	w2, #0
-	ccmp	w0, w1, #8, ge
+	cmn	w2, #1
+	ccmp	w0, w1, #8, gt
 	cset	w0, ge
 	ret
 

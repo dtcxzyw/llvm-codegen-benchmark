@@ -26,15 +26,15 @@ func0000000000000038:
 func00000000000000d4:
 	sxtb	w9, w1
 	mov	w8, #32
-	cmp	w9, #0
-	ccmp	x0, x8, #0, lt
+	cmn	w9, #1
+	ccmp	x0, x8, #0, le
 	cset	w0, lo
 	ret
 
 func00000000000000d8:
 	sxtb	w8, w1
-	cmp	w8, #0
-	ccmp	x0, #1, #2, lt
+	cmn	w8, #1
+	ccmp	x0, #1, #2, le
 	cset	w0, hi
 	ret
 

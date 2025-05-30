@@ -40,15 +40,15 @@ func0000000000000544:
 	sxtb	w8, w0
 	sub	w9, w1, #4
 	cmp	w9, #3
-	ccmp	w8, #0, #8, lo
-	cset	w0, ge
+	ccmn	w8, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func000000000000054c:
 	sxtb	w8, w0
 	cmp	w1, #1
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func0000000000000024:

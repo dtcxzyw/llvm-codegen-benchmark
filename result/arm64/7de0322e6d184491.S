@@ -59,9 +59,8 @@ func0000000000000029:
 	ret
 
 func0000000000000022:
-	mov	w8, #-131073
-	cmp	w2, w8
-	csel	w8, w1, w2, hi
+	cmn	w2, #32, lsl #12
+	csel	w8, w1, w2, hs
 	add	w0, w0, w8
 	ret
 

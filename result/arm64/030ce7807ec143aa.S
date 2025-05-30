@@ -123,9 +123,9 @@ func0000000000000024:
 	ret
 
 func000000000000018a:
-	mov	w8, #-24577
-	cmp	w8, w0, sxth
-	ccmp	w1, #4, #4, lt
+	sxth	w8, w0
+	cmn	w8, #6, lsl #12
+	ccmp	w1, #4, #4, ge
 	cset	w0, ne
 	ret
 

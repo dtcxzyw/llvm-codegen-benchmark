@@ -1,7 +1,7 @@
 func000000000000000a:
 	fmov	x8, d0
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

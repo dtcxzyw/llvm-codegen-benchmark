@@ -25,8 +25,8 @@ func0000000000000008:
 
 func000000000000000a:
 	and	w8, w1, #0x7fffffff
-	cmp	x0, #0
-	csel	w0, wzr, w8, ge
+	cmn	x0, #1
+	csel	w0, wzr, w8, gt
 	ret
 
 func0000000000000018:

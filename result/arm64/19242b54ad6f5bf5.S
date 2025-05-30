@@ -7,8 +7,8 @@ func000000000000018c:
 
 func000000000000014c:
 	sxtb	w8, w0
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w1, w8
 	ret
 

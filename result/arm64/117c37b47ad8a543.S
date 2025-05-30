@@ -8,7 +8,7 @@ func000000000000000a:
 	sxtb	w9, w0
 	mov	w8, #65533
 	and	w10, w0, #0xff
-	cmp	w9, #0
-	csel	w0, w10, w8, ge
+	cmn	w9, #1
+	csel	w0, w10, w8, gt
 	ret
 

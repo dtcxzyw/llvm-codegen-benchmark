@@ -3,8 +3,8 @@ func0000000000000144:
 	orr	w9, w1, w0
 	movk	w8, #21845, lsl #16
 	cmp	w0, w8
-	ccmp	w9, #0, #8, lo
-	cset	w0, ge
+	ccmn	w9, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func000000000000008c:

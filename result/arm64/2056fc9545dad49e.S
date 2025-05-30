@@ -16,8 +16,8 @@ func0000000000000006:
 func000000000000000a:
 	sub	w9, w0, w1
 	mov	w8, #1
-	cmp	w9, #0
-	cneg	x0, x8, lt
+	cmn	w9, #1
+	cneg	x0, x8, le
 	ret
 
 func0000000000000008:

@@ -1,7 +1,7 @@
 func000000000000014a:
 	mov	w8, w2
-	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #4, gt
 	cset	w0, gt
 	ret
 
@@ -42,8 +42,8 @@ func000000000000028a:
 
 func000000000000002a:
 	mov	w8, w2
-	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	cmn	w0, #1
+	ccmp	x1, x8, #0, gt
 	cset	w0, eq
 	ret
 

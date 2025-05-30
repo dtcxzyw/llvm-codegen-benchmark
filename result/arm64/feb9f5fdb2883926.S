@@ -24,7 +24,7 @@ func0000000000000128:
 
 func000000000000014a:
 	cmp	w0, w1
-	ccmp	w2, #0, #8, gt
-	cset	w0, ge
+	ccmn	w2, #1, #4, gt
+	cset	w0, gt
 	ret
 

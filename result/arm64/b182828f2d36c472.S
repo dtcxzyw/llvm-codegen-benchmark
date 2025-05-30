@@ -72,18 +72,18 @@ func000000000000008b:
 
 func0000000000000149:
 	sxtb	w8, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #23
-	csel	x8, x8, x1, ge
+	csel	x8, x8, x1, gt
 	cmp	x0, x8
 	cset	w0, hs
 	ret
 
 func0000000000000148:
 	sxtb	w8, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #23
-	csel	x8, x8, x1, ge
+	csel	x8, x8, x1, gt
 	cmp	x0, x8
 	cset	w0, hi
 	ret

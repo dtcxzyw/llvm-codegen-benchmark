@@ -6,8 +6,8 @@ func0000000000000010:
 	ret
 
 func000000000000003f:
-	cmp	w1, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w1, #1
+	csinv	w8, w1, wzr, gt
 	add	x8, x0, x8
 	add	x0, x8, #4
 	ret

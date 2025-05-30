@@ -7,8 +7,8 @@ func000000000000014c:
 
 func000000000000014a:
 	fcvtzs	w8, s0
-	cmp	w0, #0
-	ccmp	w1, w8, #4, ge
+	cmn	w0, #1
+	ccmp	w1, w8, #4, gt
 	cset	w0, gt
 	ret
 

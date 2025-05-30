@@ -39,8 +39,8 @@ func0000000000000110:
 	ret
 
 func0000000000000294:
-	cmp	w0, #0
-	cset	w8, ge
+	cmn	w0, #1
+	cset	w8, gt
 	cmp	w0, w1
 	and	w8, w8, w2
 	csinc	w0, w8, wzr, le

@@ -141,8 +141,8 @@ func0000000000000318:
 	ret
 
 func0000000000000141:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmn	w1, #1
 	orr	w8, w8, w0
 	cset	w9, eq

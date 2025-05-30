@@ -71,24 +71,24 @@ func0000000000000094:
 	ret
 
 func000000000000014a:
-	cmp	w2, #0
-	cset	w8, ge
-	cmp	w1, #0
+	cmn	w2, #1
+	cset	w8, gt
+	cmn	w1, #1
 	and	w8, w8, w0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000018a:
 	cmp	w2, #0
 	cset	w8, ne
-	cmp	w1, #0
+	cmn	w1, #1
 	and	w8, w8, w0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000141:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #1
 	and	w8, w8, w0
 	csel	w0, wzr, w8, ne
@@ -152,8 +152,8 @@ func00000000000000cc:
 	ret
 
 func0000000000000146:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #33
 	and	w8, w8, w0
 	csel	w0, wzr, w8, ge

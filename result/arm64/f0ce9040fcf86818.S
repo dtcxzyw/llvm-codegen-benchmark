@@ -72,8 +72,8 @@ func000000000000014c:
 	mov	w8, #5
 	mvn	w9, w1
 	tst	x9, x8
-	ccmp	x0, #0, #0, eq
-	cset	w0, ge
+	ccmn	x0, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func000000000000010c:

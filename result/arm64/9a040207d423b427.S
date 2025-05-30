@@ -10,8 +10,8 @@ func000000000000001e:
 	cmp	x10, x11
 	csinc	w10, w12, wzr, hs
 	cmp	x8, #1023
-	ccmp	x9, #0, #8, lo
-	csinc	w8, w10, wzr, lt
+	ccmn	x9, #1, #4, lo
+	csinc	w8, w10, wzr, le
 	and	w0, w8, w0
 	ret
 

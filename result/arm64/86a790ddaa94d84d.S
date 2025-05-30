@@ -20,14 +20,14 @@ func0000000000000181:
 
 func0000000000000146:
 	tst	w1, w2
-	ccmp	w0, #0, #8, lt
-	cset	w0, ge
+	ccmn	w0, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func00000000000000ca:
 	tst	w1, w2
-	ccmp	w0, #0, #8, lt
-	cset	w0, ge
+	ccmn	w0, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func000000000000018c:

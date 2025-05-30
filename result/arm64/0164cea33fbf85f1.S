@@ -10,7 +10,7 @@ func0000000000000001:
 func000000000000000a:
 	tst	w1, #0x1
 	csinv	w8, w2, wzr, ne
-	cmp	w0, #0
-	csinc	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinc	w0, w8, wzr, gt
 	ret
 

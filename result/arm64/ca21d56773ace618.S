@@ -1,6 +1,6 @@
 func00000000000000ca:
-	cmp	w1, #0
-	ccmp	w0, w1, #0, ge
+	cmn	w1, #1
+	ccmp	w0, w1, #0, gt
 	cset	w0, lt
 	ret
 

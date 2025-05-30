@@ -68,8 +68,8 @@ func000000000000002a:
 	bics	wzr, w8, w0
 	mov	w8, #-19
 	csel	w8, w8, wzr, eq
-	cmp	w9, #0
-	csinc	w0, w8, wzr, lt
+	cmn	w9, #1
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000318:

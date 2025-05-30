@@ -1,13 +1,13 @@
 func0000000000000142:
 	fcmp	d0, d0
-	ccmp	x0, #0, #0, vc
-	cset	w0, ge
+	ccmn	x0, #1, #0, vc
+	cset	w0, gt
 	ret
 
 func000000000000014e:
 	fcmp	d0, #0.0
-	ccmp	x0, #0, #0, eq
-	cset	w0, ge
+	ccmn	x0, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000282:

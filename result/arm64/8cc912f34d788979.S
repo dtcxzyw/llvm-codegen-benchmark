@@ -1,8 +1,8 @@
 func00000000000000ca:
 	mov	w8, #1000
-	cmp	w0, #0
+	cmn	w0, #1
 	sub	w8, w8, w1
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, gt
 	cset	w0, lt
 	ret
 

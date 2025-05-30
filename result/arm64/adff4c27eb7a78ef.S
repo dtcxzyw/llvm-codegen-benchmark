@@ -18,8 +18,8 @@ func0000000000000050:
 
 func0000000000000094:
 	add	w8, w1, #2
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000043:

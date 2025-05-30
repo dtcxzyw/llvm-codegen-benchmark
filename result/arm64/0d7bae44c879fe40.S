@@ -267,8 +267,8 @@ func0000000000000108:
 	ret
 
 func000000000000002a:
-	cmp	w0, #0
-	ccmp	w1, w2, #4, lt
+	cmn	w0, #1
+	ccmp	w1, w2, #4, le
 	cset	w0, eq
 	ret
 
@@ -334,8 +334,8 @@ func0000000000000144:
 	ret
 
 func000000000000016a:
-	cmp	w0, #0
-	ccmp	w1, w2, #0, lt
+	cmn	w0, #1
+	ccmp	w1, w2, #0, le
 	cset	w0, ge
 	ret
 
@@ -346,9 +346,8 @@ func0000000000000294:
 	ret
 
 func0000000000000184:
-	mov	w8, #-24575
-	cmp	w0, w8
-	ccmp	w1, w2, #0, hs
+	cmn	w0, #6, lsl #12
+	ccmp	w1, w2, #0, hi
 	cset	w0, ne
 	ret
 
@@ -365,8 +364,8 @@ func000000000000028c:
 	ret
 
 func000000000000008a:
-	cmp	w0, #0
-	ccmp	w1, w2, #0, lt
+	cmn	w0, #1
+	ccmp	w1, w2, #0, le
 	cset	w0, lo
 	ret
 

@@ -1,10 +1,9 @@
 func0000000000000004:
 	tst	w2, #0x1
 	mov	w8, #1024
-	mov	x9, #-1048575
 	csinc	x8, x8, xzr, eq
-	cmp	x1, x9
-	csel	x0, x0, x8, lo
+	cmn	x1, #256, lsl #12
+	csel	x0, x0, x8, ls
 	ret
 
 func0000000000000008:

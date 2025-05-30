@@ -65,13 +65,13 @@ func0000000000003021:
 func000000000000058a:
 	cmp	w1, #0
 	ccmn	w2, #1, #0, ne
-	ccmp	w0, #0, #8, eq
-	cset	w0, ge
+	ccmn	w0, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000002941:
-	cmp	w1, #0
-	ccmp	w2, #0, #4, ge
+	cmn	w1, #1
+	ccmp	w2, #0, #4, gt
 	ccmp	w0, #1, #0, gt
 	cset	w0, eq
 	ret
@@ -162,9 +162,9 @@ func000000000000302c:
 	ret
 
 func0000000000002946:
-	cmp	w1, #0
+	cmn	w1, #1
 	mov	w8, #33
-	ccmp	w2, #0, #4, ge
+	ccmp	w2, #0, #4, gt
 	ccmp	w0, w8, #0, gt
 	cset	w0, lt
 	ret
@@ -279,10 +279,10 @@ func0000000000003154:
 
 func000000000000114a:
 	orr	w8, w1, w0
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #16960
 	movk	w8, #15, lsl #16
-	ccmp	w2, w8, #2, ge
+	ccmp	w2, w8, #2, gt
 	cset	w0, lo
 	ret
 
@@ -374,8 +374,8 @@ func00000000000018c6:
 
 func000000000000282a:
 	orr	w8, w2, w0
-	cmp	w8, #0
-	ccmp	w1, #4, #0, ge
+	cmn	w8, #1
+	ccmp	w1, #4, #0, gt
 	cset	w0, eq
 	ret
 

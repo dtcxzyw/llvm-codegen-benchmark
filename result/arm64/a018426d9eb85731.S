@@ -192,9 +192,9 @@ func0000000000000214:
 	sxtb	w8, w0
 	tst	w2, #0xfc
 	cset	w9, eq
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w9, w1
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

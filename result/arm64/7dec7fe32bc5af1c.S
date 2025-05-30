@@ -12,9 +12,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	mov	x8, #-65537
-	cmp	x0, x8
-	ccmp	x1, #0, #4, hi
+	cmn	x0, #16, lsl #12
+	ccmp	x1, #0, #4, hs
 	cset	w0, ne
 	ret
 

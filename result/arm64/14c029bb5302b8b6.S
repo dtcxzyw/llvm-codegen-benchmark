@@ -25,15 +25,16 @@ func0000000000000004:
 	ret
 
 func000000000000002a:
-	cmn	x1, x2
-	cset	w8, ge
+	add	x8, x1, x2
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 
 func000000000000000a:
 	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, ge
+	cmn	x8, #1
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

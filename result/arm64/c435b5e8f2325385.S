@@ -19,10 +19,9 @@ func0000000000000428:
 	ret
 
 func0000000000000128:
-	mov	w8, #-32769
-	add	w9, w0, #8, lsl #12
-	cmp	w0, w8
-	ccmp	w9, w1, #0, hi
+	add	w8, w0, #8, lsl #12
+	cmn	w0, #8, lsl #12
+	ccmp	w8, w1, #0, hs
 	cset	w0, hs
 	ret
 

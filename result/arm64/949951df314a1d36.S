@@ -66,8 +66,8 @@ func0000000000000146:
 	ret
 
 func00000000000000c6:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w0, #0
 	cset	w9, lt
 	orn	w8, w8, w1
@@ -75,10 +75,8 @@ func00000000000000c6:
 	ret
 
 func0000000000000094:
-	mov	w8, #57343
-	movk	w8, #65519, lsl #16
-	cmp	w2, w8
-	cset	w8, hi
+	cmn	w2, #258, lsl #12
+	cset	w8, hs
 	cmp	w0, #128
 	cset	w9, lo
 	orn	w8, w8, w1

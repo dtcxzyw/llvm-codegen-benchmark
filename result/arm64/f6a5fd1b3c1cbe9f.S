@@ -18,15 +18,15 @@ func000000000000018a:
 	sxtb	w8, w0
 	cmp	w1, #4
 	cset	w9, ne
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w8, w9
 	ret
 
 func000000000000014c:
 	sxtb	w8, w1
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	cmp	w0, #4
 	cset	w9, ne
 	eor	w0, w9, w8
@@ -44,8 +44,8 @@ func000000000000002a:
 	sxtb	w8, w0
 	cmp	w1, #6
 	cset	w9, eq
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w8, w9
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000028:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #1
-	cneg	x8, x8, lt
+	cneg	x8, x8, le
 	tst	w1, #0x1
 	csel	x8, xzr, x8, ne
 	add	x0, x8, x0
@@ -38,10 +38,10 @@ func0000000000000010:
 	ret
 
 func000000000000002b:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #60
 	mov	w9, #36
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	tst	w1, #0x1
 	mov	w9, #12
 	csel	x8, x9, x8, ne

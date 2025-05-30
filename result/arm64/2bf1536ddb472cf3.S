@@ -6,9 +6,9 @@ func0000000000000001:
 
 func000000000000000c:
 	mov	w8, #2147483647
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #8388607
-	csel	w0, w9, w8, ge
+	csel	w0, w9, w8, gt
 	ret
 
 func0000000000000014:

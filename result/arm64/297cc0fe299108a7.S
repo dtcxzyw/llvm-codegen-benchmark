@@ -7,8 +7,8 @@ func0000000000000c34:
 
 func0000000000000e8a:
 	add	x8, x2, #1
-	cmp	w0, #0
-	ccmp	x8, x1, #2, ge
+	cmn	w0, #1
+	ccmp	x8, x1, #2, gt
 	cset	w0, lo
 	ret
 
@@ -71,8 +71,8 @@ func000000000000010c:
 func0000000000000546:
 	add	x8, x2, #1
 	cmp	x8, x0
-	ccmp	w1, #0, #8, lt
-	cset	w0, ge
+	ccmn	w1, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func0000000000000cd4:
@@ -92,8 +92,8 @@ func0000000000000c26:
 
 func000000000000010a:
 	add	x8, x2, #1
-	cmp	w0, #0
-	ccmp	x8, x1, #0, ge
+	cmn	w0, #1
+	ccmp	x8, x1, #0, gt
 	cset	w0, hi
 	ret
 

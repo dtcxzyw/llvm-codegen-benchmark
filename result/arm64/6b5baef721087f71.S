@@ -30,8 +30,8 @@ func000000000000308c:
 
 func000000000000294a:
 	cmp	w1, #0
-	ccmp	w2, #0, #8, gt
-	ccmp	w0, #0, #4, ge
+	ccmn	w2, #1, #4, gt
+	ccmp	w0, #0, #4, gt
 	cset	w0, gt
 	ret
 

@@ -21,8 +21,8 @@ func0000000000000168:
 
 func00000000000000ca:
 	sxtw	x8, w2
-	cmp	x0, #0
-	ccmp	x1, x8, #0, ge
+	cmn	x0, #1
+	ccmp	x1, x8, #0, gt
 	cset	w0, lt
 	ret
 

@@ -83,8 +83,8 @@ func000000000000002a:
 	sub	w9, w1, #1
 	mov	w8, #62
 	and	w10, w0, #0xff
-	cmp	w9, #0
-	ccmp	w10, w8, #0, ge
+	cmn	w9, #1
+	ccmp	w10, w8, #0, gt
 	cset	w0, eq
 	ret
 

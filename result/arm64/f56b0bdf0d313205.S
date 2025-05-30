@@ -208,10 +208,10 @@ func0000000000000058:
 
 func0000000000000114:
 	mov	w8, #-1073741824
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #-1073741823
 	add	w8, w1, w8
-	ccmp	w8, w9, #0, lt
+	ccmp	w8, w9, #0, le
 	cset	w0, lo
 	ret
 
@@ -328,8 +328,8 @@ func0000000000000b10:
 func0000000000000282:
 	sub	w8, w1, #1
 	cmp	w0, #0
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func000000000000028c:

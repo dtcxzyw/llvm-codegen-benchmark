@@ -10,8 +10,8 @@ func0000000000000424:
 func000000000000054c:
 	sxtb	w8, w0
 	cmp	w1, #1
-	ccmp	w8, #0, #0, eq
-	cset	w0, ge
+	ccmn	w8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000484:

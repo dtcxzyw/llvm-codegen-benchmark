@@ -60,8 +60,8 @@ func000000000000010c:
 func000000000000002a:
 	sxth	w8, w0
 	tst	w1, #0x800
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000026:

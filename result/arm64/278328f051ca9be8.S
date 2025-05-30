@@ -9,9 +9,9 @@ func0000000000000066:
 	ret
 
 func0000000000000026:
-	cmp	w2, #0
+	cmn	w2, #1
 	lsl	x9, x0, #2
-	cset	w8, ge
+	cset	w8, gt
 	orr	w8, w1, w8
 	tst	w8, #0x1
 	csinv	x0, x9, xzr, ne

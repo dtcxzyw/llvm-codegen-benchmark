@@ -95,8 +95,8 @@ func0000000000000068:
 	ret
 
 func0000000000000001:
-	cmp	w1, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w1, #1
+	csinv	w8, w1, wzr, gt
 	cmp	x0, x8
 	cset	w0, eq
 	ret

@@ -97,15 +97,15 @@ func0000000000000101:
 func000000000000002a:
 	sxtb	w8, w0
 	tst	w1, #0x7
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000018a:
 	sxtb	w8, w0
 	tst	w1, #0x78
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func00000000000000c1:

@@ -7,8 +7,8 @@ func0000000000000001:
 
 func000000000000000a:
 	and	w8, w1, #0x1
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func000000000000000c:

@@ -1,8 +1,8 @@
 func00000000000004ca:
 	add	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w0, #0, #0, ge
-	cset	w0, ge
+	ccmn	w0, #1, #0, ge
+	cset	w0, gt
 	ret
 
 func00000000000000c4:
@@ -15,17 +15,17 @@ func00000000000000c4:
 
 func00000000000000c8:
 	add	w8, w1, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #255
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, gt
 	cset	w0, hi
 	ret
 
 func00000000000004c8:
 	add	w8, w1, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #255
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, gt
 	cset	w0, hi
 	ret
 
@@ -72,9 +72,9 @@ func0000000000000021:
 
 func00000000000000d8:
 	add	w8, w1, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #39
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, gt
 	cset	w0, hi
 	ret
 

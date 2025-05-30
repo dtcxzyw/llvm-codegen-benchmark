@@ -7,8 +7,8 @@ func000000000000010c:
 
 func0000000000000294:
 	add	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w0, w8, #0, lt
+	cmn	w8, #1
+	ccmp	w0, w8, #0, le
 	cset	w0, gt
 	ret
 

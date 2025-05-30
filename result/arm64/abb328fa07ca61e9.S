@@ -9,8 +9,8 @@ func0000000000000084:
 
 func0000000000000541:
 	cmn	w0, w1
-	ccmp	w2, #0, #8, eq
-	cset	w0, ge
+	ccmn	w2, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000001084:

@@ -41,8 +41,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	cmp	w1, #0
-	cset	w8, ge
+	cmn	w1, #1
+	cset	w8, gt
 	orn	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

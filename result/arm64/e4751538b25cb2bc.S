@@ -19,15 +19,15 @@ func0000000000000081:
 	ret
 
 func00000000000000c1:
-	cmp	w1, #0
-	ccmp	x0, #0, #0, ge
+	cmn	w1, #1
+	ccmp	x0, #0, #0, gt
 	cset	w0, eq
 	ret
 
 func000000000000002a:
 	cmp	w1, #4, lsl #12
-	ccmp	x0, #0, #8, ne
-	cset	w0, ge
+	ccmn	x0, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func000000000000002c:

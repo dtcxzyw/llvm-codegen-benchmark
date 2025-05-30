@@ -56,8 +56,8 @@ func0000000000000a82:
 	sxtb	w8, w1
 	sub	w9, w2, #1
 	cmp	w9, w0
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000202:

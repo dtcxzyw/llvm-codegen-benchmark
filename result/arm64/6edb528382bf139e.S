@@ -85,8 +85,8 @@ func0000000000002821:
 
 func000000000000298a:
 	cmp	w2, #0
-	ccmp	w0, #0, #8, gt
-	ccmp	x1, #0, #4, ge
+	ccmn	w0, #1, #4, gt
+	ccmp	x1, #0, #4, gt
 	cset	w0, ne
 	ret
 

@@ -49,7 +49,7 @@ func0000000000000104:
 
 func00000000000000a8:
 	fcmp	d0, d1
-	ccmp	x0, #0, #8, eq
-	cset	w0, ge
+	ccmn	x0, #1, #4, eq
+	cset	w0, gt
 	ret
 

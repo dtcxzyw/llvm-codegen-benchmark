@@ -10,8 +10,8 @@ func0000000000000021:
 
 func0000000000000141:
 	mov	w8, #2
-	cmp	w1, #0
-	cinc	w8, w8, lt
+	cmn	w1, #1
+	cinc	w8, w8, le
 	tst	w0, #0xff
 	csel	w0, w8, wzr, eq
 	ret

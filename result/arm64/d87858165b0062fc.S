@@ -8,8 +8,8 @@ func000000000000000c:
 
 func000000000000000a:
 	sxth	w8, w1
-	cmp	w8, #0
-	csinv	x0, x0, xzr, ge
+	cmn	w8, #1
+	csinv	x0, x0, xzr, gt
 	ret
 
 func0000000000000004:

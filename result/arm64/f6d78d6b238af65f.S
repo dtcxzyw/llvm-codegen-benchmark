@@ -54,7 +54,7 @@ func000000000000018a:
 	cmp	x2, #0
 	cset	w9, ne
 	and	w9, w0, w9
-	cmp	w8, #0
-	csel	w0, wzr, w9, lt
+	cmn	w8, #1
+	csel	w0, wzr, w9, le
 	ret
 

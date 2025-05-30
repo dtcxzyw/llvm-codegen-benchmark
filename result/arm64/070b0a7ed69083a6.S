@@ -23,17 +23,16 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	mov	x8, #-65537
-	cmp	x0, x8
+	cmn	x0, #16, lsl #12
 	eor	w8, w1, #0x1
-	cset	w9, hi
+	cset	w9, hs
 	and	w0, w9, w8
 	ret
 
 func000000000000000a:
-	cmp	x0, #0
+	cmn	x0, #1
 	eor	w8, w1, #0x1
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 

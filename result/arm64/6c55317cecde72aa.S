@@ -73,8 +73,8 @@ func0000000000000019:
 func0000000000000014:
 	sxtb	w9, w1
 	mov	w8, #1
-	cmp	w9, #0
-	cinc	w8, w8, ge
+	cmn	w9, #1
+	cinc	w8, w8, gt
 	orr	w0, w8, w0
 	ret
 

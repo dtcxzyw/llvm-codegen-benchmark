@@ -19,8 +19,8 @@ func000000000000018a:
 	and	w9, w1, #0xfffffffe
 	cmp	w9, #4
 	cset	w9, ne
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w8, w9
 	ret
 
@@ -29,8 +29,8 @@ func000000000000014c:
 	and	w9, w1, #0xfffffffe
 	cmp	w9, #4
 	cset	w9, ne
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w9, w8
 	ret
 
@@ -48,8 +48,8 @@ func000000000000002a:
 	and	w9, w1, #0xfffffffe
 	cmp	w9, #6
 	cset	w9, eq
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w8, w9
 	ret
 

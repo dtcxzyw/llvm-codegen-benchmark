@@ -8,8 +8,8 @@ func000000000000018c:
 
 func000000000000014c:
 	tst	w1, #0xff
-	ccmp	w2, #0, #0, eq
-	cset	w8, ge
+	ccmn	w2, #1, #0, eq
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

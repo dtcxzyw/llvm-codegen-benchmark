@@ -193,8 +193,8 @@ func0000000000000012:
 
 func000000000000002a:
 	mov	w8, #65536
-	cmp	w1, #0
-	cinc	w8, w8, ge
+	cmn	w1, #1
+	cinc	w8, w8, gt
 	add	w0, w8, w0
 	ret
 

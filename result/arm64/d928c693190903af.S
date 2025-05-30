@@ -79,8 +79,8 @@ func0000000000006041:
 	ret
 
 func0000000000006281:
-	cmp	w1, #0
-	ccmp	w2, #2, #0, lt
+	cmn	w1, #1
+	ccmp	w2, #2, #0, le
 	ccmp	w0, #0, #0, ne
 	cset	w0, eq
 	ret

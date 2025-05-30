@@ -5,8 +5,9 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	subs	x8, x0, x1
-	csinv	x8, x8, xzr, ge
+	sub	x8, x0, x1
+	cmn	x8, #1
+	csinv	x8, x8, xzr, gt
 	add	x0, x8, #1
 	ret
 

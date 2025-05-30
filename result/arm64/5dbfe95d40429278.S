@@ -48,8 +48,8 @@ func0000000000000698:
 func0000000000000146:
 	add	x8, x1, x2
 	cmp	x0, #0
-	ccmp	x8, #0, #8, lt
-	cset	w0, ge
+	ccmn	x8, #1, #4, lt
+	cset	w0, gt
 	ret
 
 func00000000000004ca:

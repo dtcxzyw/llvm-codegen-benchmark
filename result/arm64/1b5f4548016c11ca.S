@@ -14,8 +14,8 @@ func0000000000000004:
 
 func000000000000000a:
 	mov	w8, #4
-	cmp	x0, #0
-	cinc	w0, w8, lt
+	cmn	x0, #1
+	cinc	w0, w8, le
 	ret
 
 func000000000000000c:

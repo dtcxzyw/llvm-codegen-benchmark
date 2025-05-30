@@ -144,8 +144,8 @@ func0000000000000086:
 	ret
 
 func00000000000000ca:
-	cmp	w0, #0
-	ccmp	w0, w1, #8, lt
+	cmn	w0, #1
+	ccmp	w0, w1, #8, le
 	cset	w0, lt
 	ret
 

@@ -48,9 +48,9 @@ func0000000000000019:
 	ret
 
 func0000000000000029:
-	cmp	w2, #0
+	cmn	w2, #1
 	sub	w9, w0, #2
-	cset	w8, ge
+	cset	w8, gt
 	tst	w8, w1
 	csel	w0, w9, w0, ne
 	ret

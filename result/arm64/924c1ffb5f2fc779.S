@@ -36,15 +36,15 @@ func0000000000000010:
 func0000000000000014:
 	mov	w8, #12
 	mov	w9, w0
-	cmp	x1, #0
-	csel	x0, x8, x9, ge
+	cmn	x1, #1
+	csel	x0, x8, x9, gt
 	ret
 
 func0000000000000015:
 	mov	w8, #12
 	mov	w9, w0
-	cmp	x1, #0
-	csel	x0, x8, x9, ge
+	cmn	x1, #1
+	csel	x0, x8, x9, gt
 	ret
 
 func0000000000000030:

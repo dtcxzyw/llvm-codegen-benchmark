@@ -69,8 +69,8 @@ func0000000000000084:
 	ret
 
 func0000000000000146:
-	cmp	x2, #0
-	csinc	x8, x1, xzr, lt
+	cmn	x2, #1
+	csinc	x8, x1, xzr, le
 	cmp	x0, x8
 	cset	w0, lt
 	ret

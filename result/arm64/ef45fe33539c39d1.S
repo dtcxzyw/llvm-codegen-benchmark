@@ -6,16 +6,16 @@ func000000000000204c:
 	ret
 
 func000000000000628c:
-	cmp	w0, #0
-	ccmp	w1, #0, #0, lt
+	cmn	w0, #1
+	ccmp	w1, #0, #0, le
 	ccmn	w0, #4, #4, ne
 	cset	w0, ne
 	ret
 
 func0000000000005194:
 	cmp	w0, #2
-	ccmp	w1, #0, #0, ge
-	ccmp	w0, #0, #4, ge
+	ccmn	w1, #1, #0, ge
+	ccmp	w0, #0, #4, gt
 	cset	w0, gt
 	ret
 

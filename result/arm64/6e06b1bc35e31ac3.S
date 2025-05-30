@@ -130,9 +130,9 @@ func00000000000000d4:
 
 func0000000000000144:
 	mov	w8, #60
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #36
-	csel	x8, x9, x8, ge
+	csel	x8, x9, x8, gt
 	cmp	w0, #128, lsl #12
 	mov	w9, #12
 	csel	x0, x9, x8, lo

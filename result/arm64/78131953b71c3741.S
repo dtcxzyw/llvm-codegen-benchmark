@@ -120,8 +120,8 @@ func0000000000000284:
 func00000000000000ca:
 	mov	w8, #132
 	and	w9, w0, #0xffffff7f
-	cmp	w0, #0
-	ccmp	w9, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w9, w8, #0, gt
 	cset	w0, lt
 	ret
 

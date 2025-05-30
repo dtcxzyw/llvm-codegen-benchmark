@@ -15,7 +15,7 @@ func0000000000000081:
 
 func00000000000000c1:
 	tst	w0, #0xff
-	ccmp	x1, #0, #0, ne
-	cset	w0, ge
+	ccmn	x1, #1, #0, ne
+	cset	w0, gt
 	ret
 

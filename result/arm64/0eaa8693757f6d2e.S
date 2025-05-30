@@ -100,8 +100,8 @@ func0000000000000141:
 	ret
 
 func000000000000014a:
-	cmp	x1, #0
-	ccmp	w0, #0, #0, lt
+	cmn	x1, #1
+	ccmp	w0, #0, #0, le
 	cset	w0, gt
 	ret
 
@@ -145,8 +145,8 @@ func00000000000000c1:
 	ret
 
 func00000000000000ca:
-	cmp	x1, #0
-	ccmp	w0, #0, #4, ge
+	cmn	x1, #1
+	ccmp	w0, #0, #4, gt
 	cset	w0, gt
 	ret
 

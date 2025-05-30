@@ -1,6 +1,6 @@
 func000000000000000a:
-	cmp	w1, #0
-	cset	w8, ge
+	cmn	w1, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 
@@ -29,8 +29,8 @@ func0000000000000006:
 	ret
 
 func000000000000004a:
-	cmp	w1, #0
-	cset	w8, ge
+	cmn	w1, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

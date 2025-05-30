@@ -1,7 +1,7 @@
 func0000000000000006:
 	mov	w8, #-1
-	cmp	w1, #0
-	csinv	w0, w8, w0, ge
+	cmn	w1, #1
+	csinv	w0, w8, w0, gt
 	ret
 
 func0000000000000004:

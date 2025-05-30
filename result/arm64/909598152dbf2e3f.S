@@ -1,6 +1,6 @@
 func00000000000000a5:
-	cmp	w2, #0
-	csinv	w8, w1, wzr, ge
+	cmn	w2, #1
+	csinv	w8, w1, wzr, gt
 	add	w8, w8, w0
 	add	w0, w8, #1
 	ret

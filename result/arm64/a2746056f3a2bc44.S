@@ -13,8 +13,8 @@ func0000000000000021:
 
 func000000000000014a:
 	orr	w8, w1, w2
-	cmp	w8, #0
-	csinv	w0, w0, wzr, ge
+	cmn	w8, #1
+	csinv	w0, w0, wzr, gt
 	ret
 
 func000000000000002c:

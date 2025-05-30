@@ -78,8 +78,8 @@ func0000000000000024:
 	ret
 
 func0000000000000144:
-	cmp	x2, #0
-	csinv	x8, x1, xzr, ge
+	cmn	x2, #1
+	csinv	x8, x1, xzr, gt
 	cmp	x0, x8
 	cset	w0, lo
 	ret

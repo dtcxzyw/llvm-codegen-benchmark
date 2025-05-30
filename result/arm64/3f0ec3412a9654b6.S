@@ -354,16 +354,16 @@ func0000000000001098:
 func000000000000a082:
 	cmp	w1, #0
 	ccmp	w0, #0, #4, ne
-	ccmp	w2, #0, #0, ne
-	cset	w0, ge
+	ccmn	w2, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000001094:
 	mov	w8, #1073741824
 	cmp	w1, w8
 	ccmp	w2, #0, #4, ne
-	ccmp	w0, #0, #0, ne
-	cset	w0, ge
+	ccmn	w0, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000001202:

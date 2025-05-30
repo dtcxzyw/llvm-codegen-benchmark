@@ -47,8 +47,8 @@ func0000000000000081:
 func000000000000014c:
 	sxth	w8, w1
 	cmp	x0, #0
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func00000000000000cc:

@@ -1,7 +1,7 @@
 func00000000000004ca:
 	mov	w8, w1
-	cmp	x0, #0
-	ccmp	x0, x8, #0, ge
+	cmn	x0, #1
+	ccmp	x0, x8, #0, gt
 	cset	w0, lt
 	ret
 
@@ -49,8 +49,8 @@ func000000000000008c:
 
 func00000000000002aa:
 	mov	w8, w1
-	cmp	x0, #0
-	ccmp	x0, x8, #2, ge
+	cmn	x0, #1
+	ccmp	x0, x8, #2, gt
 	cset	w0, ls
 	ret
 
@@ -70,8 +70,8 @@ func0000000000000424:
 
 func00000000000000ca:
 	mov	w8, w1
-	cmp	x0, #0
-	ccmp	x0, x8, #0, ge
+	cmn	x0, #1
+	ccmp	x0, x8, #0, gt
 	cset	w0, lt
 	ret
 
@@ -91,8 +91,8 @@ func000000000000032c:
 
 func000000000000068a:
 	mov	w8, w1
-	cmp	x0, #0
-	ccmp	x0, x8, #2, ge
+	cmn	x0, #1
+	ccmp	x0, x8, #2, gt
 	cset	w0, lo
 	ret
 

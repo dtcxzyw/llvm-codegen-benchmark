@@ -6,9 +6,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	cmp	x2, #0
+	cmn	x2, #1
 	mov	w9, #4
-	csinv	x8, x1, xzr, ge
+	csinv	x8, x1, xzr, gt
 	tst	w0, #0x1
 	csel	x0, x9, x8, ne
 	ret

@@ -9,8 +9,8 @@ func0000000000000026:
 func00000000000000aa:
 	lsl	x9, x0, #1
 	mov	x8, #-1
-	cmp	x0, #0
-	csinc	x0, x8, x9, lt
+	cmn	x0, #1
+	csinc	x0, x8, x9, le
 	ret
 
 func00000000000000f8:

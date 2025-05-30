@@ -21,9 +21,9 @@ func0000000000000014:
 
 func000000000000000a:
 	mov	w8, #278
-	cmp	x0, #0
+	cmn	x0, #1
 	mov	w9, #406
-	csel	w0, w9, w8, ge
+	csel	w0, w9, w8, gt
 	ret
 
 func0000000000000008:

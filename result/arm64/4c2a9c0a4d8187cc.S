@@ -38,9 +38,9 @@ func0000000000000108:
 
 func000000000000014a:
 	mov	w8, #4
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w9, #6
-	cinc	w8, w8, lt
+	cinc	w8, w8, le
 	tst	w1, #0x1
 	csel	w8, w9, w8, ne
 	cmp	w0, #99

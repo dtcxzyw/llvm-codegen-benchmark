@@ -1,8 +1,8 @@
 func0000000000000021:
 	mov	w8, #40960
 	and	w9, w1, #0xf000
-	cmp	w0, #0
-	ccmp	w9, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w9, w8, #0, gt
 	cset	w0, eq
 	ret
 

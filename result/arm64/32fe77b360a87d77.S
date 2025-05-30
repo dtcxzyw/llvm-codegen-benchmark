@@ -9,9 +9,9 @@ func0000000000000181:
 	mov	w8, #536870911
 	cmp	w1, w8
 	cset	w8, ne
-	cmp	w2, #0
+	cmn	w2, #1
 	and	w8, w8, w0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000021:

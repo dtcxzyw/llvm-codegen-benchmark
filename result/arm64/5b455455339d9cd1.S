@@ -52,9 +52,9 @@ func000000000000048c:
 
 func000000000000010a:
 	and	w8, w1, #0xffff
-	cmp	w0, #0
+	cmn	w0, #1
 	sub	w8, w8, #40
-	ccmn	w8, #20, #2, ge
+	ccmn	w8, #20, #2, gt
 	cset	w0, lo
 	ret
 

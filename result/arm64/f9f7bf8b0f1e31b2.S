@@ -13,7 +13,7 @@ func000000000000042a:
 	tst	w1, #0xffff
 	mov	w9, #2048
 	ccmp	w2, w9, #0, eq
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 

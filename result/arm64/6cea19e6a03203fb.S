@@ -41,9 +41,9 @@ func0000000000000042:
 func0000000000000314:
 	cmp	x2, #0
 	cset	w8, ne
-	cmp	w0, #0
+	cmn	w0, #1
 	and	w8, w8, w1
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000202:

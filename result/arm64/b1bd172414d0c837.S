@@ -171,8 +171,8 @@ func0000000000000f2c:
 
 func0000000000000c2a:
 	add	x8, x2, #1
-	cmp	w0, #0
-	ccmp	x8, x1, #4, lt
+	cmn	w0, #1
+	ccmp	x8, x1, #4, le
 	cset	w0, eq
 	ret
 

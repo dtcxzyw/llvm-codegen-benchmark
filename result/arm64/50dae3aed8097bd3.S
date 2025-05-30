@@ -25,8 +25,8 @@ func0000000000000544:
 func000000000000070a:
 	sxth	w8, w0
 	and	w9, w2, #0xffff
-	cmp	w8, #0
-	ccmp	w1, w9, #0, ge
+	cmn	w8, #1
+	ccmp	w1, w9, #0, gt
 	cset	w0, hi
 	ret
 

@@ -17,8 +17,8 @@ func0000000000000008:
 
 func000000000000000a:
 	sxtb	w8, w1
-	cmp	w8, #0
-	csinc	w0, w0, wzr, lt
+	cmn	w8, #1
+	csinc	w0, w0, wzr, le
 	ret
 
 func0000000000000006:

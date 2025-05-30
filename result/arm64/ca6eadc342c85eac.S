@@ -61,8 +61,8 @@ func000000000000018a:
 	sxtb	w8, w0
 	tst	w1, #0xff
 	cset	w9, ne
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	eor	w0, w8, w9
 	ret
 

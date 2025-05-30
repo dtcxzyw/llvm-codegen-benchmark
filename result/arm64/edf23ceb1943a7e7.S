@@ -44,9 +44,9 @@ func000000000000004c:
 func000000000000028c:
 	cmp	w2, #1
 	cset	w8, lt
-	cmp	w0, #0
+	cmn	w0, #1
 	bic	w8, w8, w1
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000210:

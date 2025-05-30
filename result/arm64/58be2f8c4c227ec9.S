@@ -64,9 +64,9 @@ func00000000000000a4:
 func00000000000000a0:
 	sxtb	w8, w2
 	add	w9, w0, w1
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #2
-	cinc	w8, w8, ge
+	cinc	w8, w8, gt
 	add	w0, w9, w8
 	ret
 

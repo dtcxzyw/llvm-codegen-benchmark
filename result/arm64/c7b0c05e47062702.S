@@ -10,8 +10,8 @@ func00000000000001ca:
 func000000000000000a:
 	lsl	w8, w1, #2
 	sub	w8, w8, #8
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

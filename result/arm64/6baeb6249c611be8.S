@@ -19,8 +19,8 @@ func0000000000000885:
 
 func0000000000000948:
 	subs	w8, w0, w1
-	ccmp	w8, #0, #8, hi
-	cset	w0, ge
+	ccmn	w8, #1, #4, hi
+	cset	w0, gt
 	ret
 
 func00000000000008c8:

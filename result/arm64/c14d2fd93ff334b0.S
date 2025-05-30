@@ -1,7 +1,7 @@
 func0000000000000021:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #167772160
-	ccmp	w1, w8, #0, ge
+	ccmp	w1, w8, #0, gt
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

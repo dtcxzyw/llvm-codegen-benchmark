@@ -257,8 +257,8 @@ func000000000000032c:
 	ret
 
 func000000000000002a:
-	cmp	w0, #0
-	ccmp	x1, x2, #4, lt
+	cmn	w0, #1
+	ccmp	x1, x2, #4, le
 	cset	w0, eq
 	ret
 

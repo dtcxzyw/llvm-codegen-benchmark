@@ -22,14 +22,14 @@ func00000000000018cc:
 
 func0000000000002981:
 	cmp	w1, #0
-	ccmp	w2, #0, #8, ne
-	ccmp	w0, #0, #0, ge
+	ccmn	w2, #1, #4, ne
+	ccmp	w0, #0, #0, gt
 	cset	w0, eq
 	ret
 
 func000000000000054c:
-	cmp	w1, #0
-	ccmp	w2, #0, #0, ge
+	cmn	w1, #1
+	ccmp	w2, #0, #0, gt
 	ccmp	w0, #0, #4, eq
 	cset	w0, ne
 	ret
@@ -52,8 +52,8 @@ func0000000000003154:
 func0000000000002946:
 	cmn	w1, #129
 	mov	w8, #128
-	ccmp	w2, #0, #8, gt
-	ccmp	w0, w8, #0, ge
+	ccmn	w2, #1, #4, gt
+	ccmp	w0, w8, #0, gt
 	cset	w0, lt
 	ret
 

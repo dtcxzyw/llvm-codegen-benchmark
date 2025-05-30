@@ -91,9 +91,9 @@ func0000000000000026:
 func00000000000000ca:
 	cmp	w0, #0
 	cset	w8, lt
-	cmp	w2, #0
+	cmn	w2, #1
 	orr	w8, w8, w1
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

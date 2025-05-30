@@ -41,8 +41,8 @@ func0000000000000068:
 
 func00000000000000a8:
 	fcmp	d0, #0.0
-	ccmp	x0, #0, #8, eq
-	cset	w0, ge
+	ccmn	x0, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func00000000000000c4:

@@ -67,8 +67,8 @@ func000000000000014c:
 
 func000000000000014a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	w1, w2, #0, lt
+	cmn	w8, #1
+	ccmp	w1, w2, #0, le
 	cset	w0, gt
 	ret
 
@@ -177,8 +177,8 @@ func00000000000000e1:
 
 func000000000000002a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	w1, w2, #4, lt
+	cmn	w8, #1
+	ccmp	w1, w2, #4, le
 	cset	w0, eq
 	ret
 

@@ -191,8 +191,8 @@ func0000000000000038:
 
 func000000000000042a:
 	mov	w8, w2
-	cmp	w0, #0
-	ccmp	x1, x8, #4, lt
+	cmn	w0, #1
+	ccmp	x1, x8, #4, le
 	cset	w0, eq
 	ret
 

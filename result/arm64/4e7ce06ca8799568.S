@@ -20,8 +20,8 @@ func0000000000000008:
 
 func0000000000000014:
 	sxtb	w8, w1
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w8, w0
 	ret
 

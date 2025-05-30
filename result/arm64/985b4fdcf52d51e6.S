@@ -62,8 +62,8 @@ func0000000000000026:
 	ret
 
 func00000000000000c1:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #0
 	bic	w8, w8, w0
 	csel	w0, wzr, w8, ne

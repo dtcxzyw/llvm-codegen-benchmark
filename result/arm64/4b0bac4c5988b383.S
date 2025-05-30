@@ -73,8 +73,8 @@ func0000000000000f2c:
 func0000000000001c2a:
 	mov	w8, w2
 	add	x9, x1, #1
-	cmp	w0, #0
-	ccmp	x9, x8, #4, lt
+	cmn	w0, #1
+	ccmp	x9, x8, #4, le
 	cset	w0, eq
 	ret
 

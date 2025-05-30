@@ -18,8 +18,8 @@ func0000000000000042:
 func0000000000000298:
 	sxtb	w8, w2
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, eq
-	cset	w8, ge
+	ccmn	w8, #1, #0, eq
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

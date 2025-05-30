@@ -10,9 +10,9 @@ func0000000000000042:
 func0000000000000054:
 	tst	w2, #0xff
 	cset	w8, eq
-	cmp	w1, #0
+	cmn	w1, #1
 	orr	w8, w0, w8
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w8, w9
 	ret
 

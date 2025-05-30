@@ -17,8 +17,8 @@ func000000000000008c:
 func000000000000014c:
 	sub	x8, x1, x2
 	cmp	w0, #0
-	ccmp	x8, #0, #0, eq
-	cset	w0, ge
+	ccmn	x8, #1, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000094:

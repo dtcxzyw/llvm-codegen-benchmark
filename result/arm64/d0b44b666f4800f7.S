@@ -57,8 +57,8 @@ func000000000000042a:
 	and	w10, w2, #0xff
 	cmp	w8, #2
 	ccmp	w10, #2, #0, eq
-	ccmp	w9, #0, #8, eq
-	cset	w0, ge
+	ccmn	w9, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000488:

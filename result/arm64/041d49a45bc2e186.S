@@ -106,8 +106,8 @@ func0000000000000008:
 
 func000000000000004a:
 	add	w8, w1, #2
-	cmp	w0, #0
-	csinv	w0, w8, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w8, wzr, gt
 	ret
 
 func0000000000000046:

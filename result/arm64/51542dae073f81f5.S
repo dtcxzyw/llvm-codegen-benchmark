@@ -32,8 +32,8 @@ func0000000000000021:
 	ret
 
 func000000000000000a:
-	cmp	w0, #0
-	csinv	w0, w1, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w1, wzr, gt
 	ret
 
 func0000000000000044:
@@ -42,7 +42,7 @@ func0000000000000044:
 	ret
 
 func000000000000006a:
-	cmp	w0, #0
-	csinv	w0, w1, wzr, ge
+	cmn	w0, #1
+	csinv	w0, w1, wzr, gt
 	ret
 

@@ -71,8 +71,8 @@ func0000000000000070:
 	ret
 
 func0000000000000298:
-	cmp	x2, #0
-	cset	w8, ge
+	cmn	x2, #1
+	cset	w8, gt
 	cmp	w1, #0
 	orr	w8, w8, w0
 	cset	w9, ne

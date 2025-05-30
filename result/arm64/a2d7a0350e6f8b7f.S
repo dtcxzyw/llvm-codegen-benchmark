@@ -163,15 +163,15 @@ func0000000000000221:
 
 func000000000000030a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	x1, #30, #2, lt
+	cmn	w8, #1
+	ccmp	x1, #30, #2, le
 	cset	w0, hi
 	ret
 
 func000000000000008a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmn	x1, #12, #0, lt
+	cmn	w8, #1
+	ccmn	x1, #12, #0, le
 	cset	w0, lo
 	ret
 
@@ -207,23 +207,23 @@ func0000000000000104:
 
 func000000000000002a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	x1, #0, #4, lt
+	cmn	w8, #1
+	ccmp	x1, #0, #4, le
 	cset	w0, eq
 	ret
 
 func000000000000028a:
 	sxtb	w9, w0
 	mov	w8, #63
-	cmp	w9, #0
-	ccmp	x1, x8, #0, lt
+	cmn	w9, #1
+	ccmp	x1, x8, #0, le
 	cset	w0, lo
 	ret
 
 func000000000000018a:
 	sxtb	w8, w0
-	cmp	w8, #0
-	ccmp	x1, #0, #0, lt
+	cmn	w8, #1
+	ccmp	x1, #0, #0, le
 	cset	w0, ne
 	ret
 

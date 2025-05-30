@@ -51,8 +51,8 @@ func000000000000001e:
 	lsr	w10, w10, #24
 	csinc	w8, w12, wzr, hs
 	cmp	w10, #127
-	ccmp	w9, #0, #8, lo
-	csinc	w0, w8, wzr, lt
+	ccmn	w9, #1, #4, lo
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000006:
@@ -63,8 +63,8 @@ func0000000000000006:
 	lsr	w10, w10, #24
 	cmp	w10, #127
 	sub	w10, w9, #1
-	ccmp	w9, #0, #8, lo
-	ccmp	w10, w8, #0, lt
+	ccmn	w9, #1, #4, lo
+	ccmp	w10, w8, #0, le
 	cset	w0, lo
 	ret
 
@@ -110,8 +110,8 @@ func0000000000000002:
 	sub	w9, w9, #2048, lsl #12
 	lsr	w9, w9, #24
 	cmp	w9, #127
-	ccmp	w8, #0, #8, lo
-	cset	w0, ge
+	ccmn	w8, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func0000000000000306:
@@ -126,8 +126,8 @@ func0000000000000306:
 	ccmp	w10, w8, #0, hs
 	cset	w8, gt
 	cmp	w11, #127
-	ccmp	w9, #0, #8, lo
-	csinc	w0, w8, wzr, lt
+	ccmn	w9, #1, #4, lo
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000019:

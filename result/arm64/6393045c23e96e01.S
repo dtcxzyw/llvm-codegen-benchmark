@@ -26,8 +26,8 @@ func000000000000004c:
 func0000000000000054:
 	sxth	w8, w0
 	tst	w0, #0x7ffe
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 
 func0000000000000310:

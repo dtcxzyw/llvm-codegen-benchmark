@@ -27,8 +27,8 @@ func0000000000000006:
 
 func000000000000000a:
 	fcvtzs	w8, s0
-	cmp	w8, #0
-	csinv	w8, w8, wzr, ge
+	cmn	w8, #1
+	csinv	w8, w8, wzr, gt
 	cmp	w0, w1
 	csel	w9, w0, w1, lt
 	cmp	w8, w9

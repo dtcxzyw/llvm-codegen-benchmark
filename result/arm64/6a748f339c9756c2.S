@@ -7,8 +7,8 @@ func000000000000016a:
 
 func00000000000004ca:
 	lsl	w8, w1, #1
-	cmp	w0, #0
-	ccmp	w0, w8, #0, ge
+	cmn	w0, #1
+	ccmp	w0, w8, #0, gt
 	cset	w0, lt
 	ret
 

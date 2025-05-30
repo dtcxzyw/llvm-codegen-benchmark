@@ -90,8 +90,8 @@ func0000000000000194:
 func0000000000000154:
 	sxth	w8, w2
 	cmp	w0, w1
-	ccmp	w8, #0, #8, lo
-	cset	w0, ge
+	ccmn	w8, #1, #4, lo
+	cset	w0, gt
 	ret
 
 func000000000000002b:
@@ -103,8 +103,8 @@ func000000000000002b:
 func000000000000014a:
 	sxth	w8, w2
 	cmp	w0, w1
-	ccmp	w8, #0, #8, gt
-	cset	w0, ge
+	ccmn	w8, #1, #4, gt
+	cset	w0, gt
 	ret
 
 func0000000000000081:

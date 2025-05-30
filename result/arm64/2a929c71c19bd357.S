@@ -33,8 +33,8 @@ func000000000000008a:
 	sxtb	w8, w0
 	and	w9, w1, #0xff
 	cmp	w9, #241
-	ccmp	w8, #0, #0, hs
-	cset	w0, ge
+	ccmn	w8, #1, #0, hs
+	cset	w0, gt
 	ret
 
 func0000000000000081:

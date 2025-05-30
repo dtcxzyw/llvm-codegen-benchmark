@@ -23,9 +23,9 @@ func0000000000000202:
 
 func0000000000000502:
 	sxtb	w8, w2
-	cmp	w8, #0
+	cmn	w8, #1
 	and	w8, w1, #0xf0
-	cset	w9, ge
+	cset	w9, gt
 	cmp	w8, #224
 	cset	w8, eq
 	orr	w8, w8, w0

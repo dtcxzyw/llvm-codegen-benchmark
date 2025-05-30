@@ -104,8 +104,8 @@ func0000000000000101:
 
 func0000000000000141:
 	cmp	x0, x1
-	ccmp	x2, #0, #8, eq
-	cset	w0, ge
+	ccmn	x2, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000014c:

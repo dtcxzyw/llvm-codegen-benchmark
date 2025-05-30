@@ -17,8 +17,8 @@ func0000000000000d81:
 func0000000000001e8a:
 	mov	w8, w2
 	add	x9, x1, #1
-	cmp	w0, #0
-	ccmp	x9, x8, #2, ge
+	cmn	w0, #1
+	ccmp	x9, x8, #2, gt
 	cset	w0, lo
 	ret
 
@@ -81,8 +81,8 @@ func0000000000000e8c:
 func0000000000001d8a:
 	mov	w8, w2
 	add	x9, x1, #1
-	cmp	w0, #0
-	ccmp	x9, x8, #4, ge
+	cmn	w0, #1
+	ccmp	x9, x8, #4, gt
 	cset	w0, ne
 	ret
 

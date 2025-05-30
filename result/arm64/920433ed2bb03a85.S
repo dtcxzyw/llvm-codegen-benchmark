@@ -27,7 +27,7 @@ func000000000000001a:
 	sub	w9, w1, w0
 	mov	w8, #-1
 	add	w10, w9, #1
-	cmp	w10, #0
-	csinc	w0, w8, w9, lt
+	cmn	w10, #1
+	csinc	w0, w8, w9, le
 	ret
 

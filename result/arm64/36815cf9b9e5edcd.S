@@ -14,9 +14,9 @@ func000000000000002a:
 	movk	w9, #481, lsl #16
 	cmp	w2, w9
 	cset	w9, eq
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w9, w0
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
@@ -36,9 +36,9 @@ func000000000000018a:
 	sxth	w8, w1
 	cmp	w2, #0
 	cset	w9, ne
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w9, w0
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

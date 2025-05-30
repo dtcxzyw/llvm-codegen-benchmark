@@ -1,8 +1,8 @@
 func000000000000014a:
 	orr	w9, w0, w1
 	mov	w8, #-1
-	cmp	w9, #0
-	cneg	w0, w8, lt
+	cmn	w9, #1
+	cneg	w0, w8, le
 	ret
 
 func000000000000002c:

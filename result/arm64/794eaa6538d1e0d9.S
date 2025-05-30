@@ -1,7 +1,7 @@
 func000000000000000c:
 	sub	w8, w2, w1
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

@@ -20,8 +20,8 @@ func000000000000048a:
 	and	w10, w0, #0xff
 	mov	w8, #63
 	sub	w10, w10, #161
-	cmp	w9, #0
-	ccmp	w10, w8, #0, lt
+	cmn	w9, #1
+	ccmp	w10, w8, #0, le
 	cset	w0, lo
 	ret
 

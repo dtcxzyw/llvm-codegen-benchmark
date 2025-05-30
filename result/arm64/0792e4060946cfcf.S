@@ -108,7 +108,7 @@ func0000000000000118:
 func0000000000000054:
 	sxth	w8, w0
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, ge
+	ccmn	w8, #1, #0, ne
+	cset	w0, gt
 	ret
 

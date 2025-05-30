@@ -42,7 +42,7 @@ func000000000000000c:
 
 func000000000000000a:
 	sxth	w8, w1
-	cmp	w8, #0
-	csel	w0, wzr, w0, ge
+	cmn	w8, #1
+	csel	w0, wzr, w0, gt
 	ret
 

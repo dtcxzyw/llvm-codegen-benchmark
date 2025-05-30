@@ -7,15 +7,15 @@ func00000000000004cc:
 
 func00000000000004ca:
 	add	w8, w0, w1
-	cmp	w8, #0
-	ccmp	w8, w2, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w2, #0, gt
 	cset	w0, lt
 	ret
 
 func00000000000000ca:
 	add	w8, w0, w1
-	cmp	w8, #0
-	ccmp	w8, w2, #0, ge
+	cmn	w8, #1
+	ccmp	w8, w2, #0, gt
 	cset	w0, lt
 	ret
 

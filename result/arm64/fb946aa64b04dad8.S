@@ -98,8 +98,8 @@ func0000000000000681:
 func0000000000000141:
 	orr	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #0, #8, eq
-	cset	w0, ge
+	ccmn	w8, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000024:

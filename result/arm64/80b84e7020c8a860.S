@@ -45,10 +45,10 @@ func0000000000000030:
 	ret
 
 func0000000000000028:
-	cmp	w2, #0
+	cmn	w2, #1
 	mov	w8, #8
 	mov	w9, #16
-	csel	w8, w9, w8, ge
+	csel	w8, w9, w8, gt
 	tst	w0, #0x1
 	orr	w8, w1, w8
 	orr	w9, w8, #0x4000

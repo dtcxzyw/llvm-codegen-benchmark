@@ -72,9 +72,9 @@ func0000000000000090:
 
 func00000000000000a8:
 	sxtb	w8, w1
-	cmp	w8, #0
+	cmn	w8, #1
 	mov	w8, #192
-	ccmp	w2, w8, #4, lt
+	ccmp	w2, w8, #4, le
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

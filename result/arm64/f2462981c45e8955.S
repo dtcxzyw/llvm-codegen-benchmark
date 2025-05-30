@@ -15,8 +15,8 @@ func000000000000014c:
 	ret
 
 func0000000000000141:
-	cmp	w2, #0
-	cset	w8, ge
+	cmn	w2, #1
+	cset	w8, gt
 	cmp	w1, #8
 	and	w8, w8, w0
 	csinc	w0, w8, wzr, ne
@@ -67,9 +67,9 @@ func000000000000002a:
 func000000000000018a:
 	cmn	w2, #1
 	cset	w8, ne
-	cmp	w1, #0
+	cmn	w1, #1
 	and	w8, w8, w0
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, le
 	ret
 
 func00000000000000c1:

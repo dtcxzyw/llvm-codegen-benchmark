@@ -42,8 +42,8 @@ func0000000000003181:
 
 func000000000000294c:
 	orr	w8, w1, w2
-	cmp	w8, #0
-	ccmp	x0, #0, #4, ge
+	cmn	w8, #1
+	ccmp	x0, #0, #4, gt
 	cset	w0, ne
 	ret
 

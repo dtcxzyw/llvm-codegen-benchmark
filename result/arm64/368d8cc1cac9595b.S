@@ -174,9 +174,9 @@ func0000000000000618:
 func00000000000000a8:
 	cmp	x2, #0
 	cset	w8, eq
-	cmp	w1, #0
+	cmn	w1, #1
 	orr	w8, w0, w8
-	cset	w9, ge
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

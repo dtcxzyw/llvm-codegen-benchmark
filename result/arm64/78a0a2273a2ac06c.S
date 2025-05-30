@@ -22,9 +22,9 @@ func0000000000000018:
 	ret
 
 func000000000000000a:
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w8, #-8
-	cset	w9, ge
+	cset	w9, gt
 	tst	w9, w1
 	csel	w0, w8, w0, ne
 	ret

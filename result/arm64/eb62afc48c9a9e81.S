@@ -6,8 +6,8 @@ func000000000000000c:
 
 func0000000000000001:
 	add	w8, w1, w2
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	and	w0, w0, w8
 	ret
 

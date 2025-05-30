@@ -1,6 +1,6 @@
 func000000000000000c:
-	cmp	w1, #0
-	cset	w8, ge
+	cmn	w1, #1
+	cset	w8, gt
 	bic	w0, w8, w0
 	ret
 

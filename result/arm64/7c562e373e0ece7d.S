@@ -21,8 +21,8 @@ func0000000000000201:
 
 func0000000000000281:
 	sxtb	w8, w2
-	cmp	w8, #0
-	cset	w8, ge
+	cmn	w8, #1
+	cset	w8, gt
 	tst	w0, #0xff
 	orr	w8, w1, w8
 	cset	w9, eq
@@ -65,9 +65,9 @@ func000000000000004a:
 	and	w9, w2, #0xff
 	cmp	w9, #2
 	cset	w9, eq
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w9, w1
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 
@@ -139,9 +139,9 @@ func000000000000030a:
 	and	w9, w2, #0xff
 	cmp	w9, #46
 	cset	w9, ne
-	cmp	w8, #0
+	cmn	w8, #1
 	orr	w8, w9, w1
-	cset	w9, ge
+	cset	w9, gt
 	and	w0, w9, w8
 	ret
 

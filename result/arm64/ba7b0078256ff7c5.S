@@ -1,7 +1,7 @@
 func000000000000000a:
 	sub	w8, w1, w2
-	cmp	w8, #0
-	csinv	w0, w0, wzr, ge
+	cmn	w8, #1
+	csinv	w0, w0, wzr, gt
 	ret
 
 func0000000000000001:

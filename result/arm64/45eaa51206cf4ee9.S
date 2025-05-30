@@ -30,7 +30,7 @@ func0000000000000061:
 func00000000000000e6:
 	lsl	w9, w0, #1
 	mov	w8, #-1
-	cmp	w0, #0
-	csinc	w0, w8, w9, lt
+	cmn	w0, #1
+	csinc	w0, w8, w9, le
 	ret
 

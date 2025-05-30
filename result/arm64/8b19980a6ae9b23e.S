@@ -1,6 +1,6 @@
 func0000000000000014:
-	cmp	w0, #0
-	cset	w8, ge
+	cmn	w0, #1
+	cset	w8, gt
 	orr	w8, w8, w2
 	tst	w8, #0x1
 	csel	w0, w0, w1, ne

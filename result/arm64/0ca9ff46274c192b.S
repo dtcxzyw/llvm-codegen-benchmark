@@ -44,8 +44,8 @@ func000000000000002a:
 	sxth	w8, w0
 	and	w9, w2, #0xffff
 	and	w10, w1, #0xffff
-	cmp	w8, #0
-	ccmp	w10, w9, #0, ge
+	cmn	w8, #1
+	ccmp	w10, w9, #0, gt
 	cset	w0, eq
 	ret
 
@@ -62,8 +62,8 @@ func000000000000014c:
 	sxth	w8, w2
 	and	w9, w0, #0xffff
 	cmp	w9, w1, uxth
-	ccmp	w8, #0, #8, ne
-	cset	w0, ge
+	ccmn	w8, #1, #4, ne
+	cset	w0, gt
 	ret
 
 func000000000000012c:

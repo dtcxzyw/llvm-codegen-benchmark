@@ -6,7 +6,7 @@ func000000000000014a:
 
 func0000000000000141:
 	cmp	w0, #23
-	ccmp	w1, #0, #8, eq
-	cset	w0, ge
+	ccmn	w1, #1, #4, eq
+	cset	w0, gt
 	ret
 

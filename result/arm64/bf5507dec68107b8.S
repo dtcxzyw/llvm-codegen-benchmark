@@ -9,9 +9,9 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	cmp	w0, #0
+	cmn	w0, #1
 	mov	w8, #536870911
-	csinv	w9, w0, wzr, ge
+	csinv	w9, w0, wzr, gt
 	add	w10, w9, #1
 	cmp	w10, w8
 	csinc	w0, w8, w9, hs
