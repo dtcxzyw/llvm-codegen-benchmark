@@ -5,8 +5,7 @@ func00000000000000ac:
 	fcmp	s0, s1
 	fccmp	s0, s2, #8, ls
 	cset	w8, ge
-	and	w8, w0, w8
-	and	w0, w8, #0x1
+	and	w0, w0, w8
 	ret
 
 func00000000000000ca:
@@ -18,7 +17,6 @@ func00000000000000ca:
 	fmov	s1, #1.00000000
 	fccmp	s0, s1, #2, ge
 	cset	w8, ls
-	and	w8, w0, w8
-	and	w0, w8, #0x1
+	and	w0, w0, w8
 	ret
 
