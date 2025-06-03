@@ -1,6 +1,6 @@
 func00000000000004ca:
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	bge	a1, a3, .LBB0_2
 	addi	a3, a2, 1
 .LBB0_2:

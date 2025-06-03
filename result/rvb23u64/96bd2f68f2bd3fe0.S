@@ -7,7 +7,7 @@ func000000000000000f:
 
 func0000000000000007:
 	lui	a2, 131072
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	zext.w	a0, a0
 	mul	a0, a0, a1

@@ -8,7 +8,7 @@ func0000000000000003:
 func0000000000000007:
 	sub	a1, a1, a2
 	lui	a2, 2048
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

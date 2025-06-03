@@ -15,7 +15,7 @@ func0000000000000034:
 func0000000000000074:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	sltiu	a0, a0, 96
 	li	a1, -100

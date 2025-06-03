@@ -4,7 +4,7 @@ func0000000000000015:
 	and	a1, a1, a3
 	lui	a3, 1048409
 	srli	a2, a2, 48
-	addiw	a3, a3, 131
+	addi	a3, a3, 131
 	or	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1
@@ -16,7 +16,7 @@ func000000000000001f:
 	and	a1, a1, a3
 	lui	a3, 115
 	srli	a2, a2, 48
-	addiw	a3, a3, -744
+	addi	a3, a3, -744
 	or	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1
@@ -25,7 +25,7 @@ func000000000000001f:
 func0000000000000000:
 	slli	a2, a2, 48
 	lui	a3, 1048574
-	addiw	a3, a3, 128
+	addi	a3, a3, 128
 	and	a1, a1, a3
 	slli	a3, a0, 5
 	srli	a2, a2, 48
@@ -40,7 +40,7 @@ func0000000000000010:
 	and	a1, a1, a3
 	lui	a3, 163
 	srli	a2, a2, 48
-	addiw	a3, a3, -1005
+	addi	a3, a3, -1005
 	or	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1

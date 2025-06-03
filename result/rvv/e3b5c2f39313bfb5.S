@@ -2,7 +2,7 @@
 	.quad	384307168202282325
 func0000000000000208:
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
@@ -28,7 +28,7 @@ func0000000000000008:
 	vsra.vi	v12, v12, 7
 	vadd.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -37,7 +37,7 @@ func00000000000002aa:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
 	lui	a0, 978671
-	addiw	a0, a0, -273
+	addi	a0, a0, -273
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -49,7 +49,7 @@ func00000000000002b4:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
 	lui	a0, 978671
-	addiw	a0, a0, -273
+	addi	a0, a0, -273
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -61,7 +61,7 @@ func00000000000000aa:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -73,7 +73,7 @@ func00000000000000b4:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -85,7 +85,7 @@ func0000000000000206:
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
@@ -97,7 +97,7 @@ func000000000000020a:
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
@@ -109,7 +109,7 @@ func00000000000000a4:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -121,7 +121,7 @@ func00000000000001a4:
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 4
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
@@ -133,7 +133,7 @@ func0000000000000226:
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12
@@ -145,7 +145,7 @@ func000000000000022a:
 	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v12

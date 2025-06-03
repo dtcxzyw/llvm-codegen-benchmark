@@ -8,7 +8,7 @@ func0000000000000026:
 	slt	a0, a0, a1
 	ret
 .LBB0_2:
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	slt	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func0000000000000028:
 	sext.w	a0, a0
 	andi	a3, a1, 1
 	lui	a1, 256
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	bnez	a3, .LBB3_2
 	subw	a1, a1, a2
 .LBB3_2:

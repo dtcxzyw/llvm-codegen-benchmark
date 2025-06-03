@@ -99,7 +99,7 @@ func0000000000000c24:
 
 func0000000000000a2b:
 	lui	a0, 244
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -110,7 +110,7 @@ func0000000000000a2b:
 
 func0000000000000a2c:
 	lui	a0, 244
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -121,7 +121,7 @@ func0000000000000a2c:
 
 func0000000000000a21:
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0

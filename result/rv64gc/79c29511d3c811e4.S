@@ -2,7 +2,7 @@ func0000000000000021:
 	fmv.x.d	a1, fa0
 	lui	a2, 524032
 	not	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a2

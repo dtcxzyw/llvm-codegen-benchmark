@@ -30,7 +30,7 @@ func0000000000000181:
 	li	a2, 1073
 	sh3add	a1, a2, a1
 	lui	a2, 2
-	addiw	a2, a2, 396
+	addi	a2, a2, 396
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

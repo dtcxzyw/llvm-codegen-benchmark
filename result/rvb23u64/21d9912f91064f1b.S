@@ -21,7 +21,7 @@ func000000000000000c:
 func000000000000000a:
 	sll	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	slt	a0, a1, a0
 	ret
 

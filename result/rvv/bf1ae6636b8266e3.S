@@ -93,7 +93,7 @@ func000000000000003c:
 	vsll.vi	v10, v10, 6
 	lui	a0, 10126
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -537
+	addi	a0, a0, -537
 	slli	a0, a0, 12
 	addi	a0, a0, -448
 	vadd.vx	v8, v8, a0
@@ -104,7 +104,7 @@ func000000000000001f:
 	vsll.vi	v10, v10, 6
 	lui	a0, 10126
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -537
+	addi	a0, a0, -537
 	slli	a0, a0, 12
 	addi	a0, a0, -448
 	vadd.vx	v8, v8, a0

@@ -35,7 +35,7 @@ func000000000000002c:
 func0000000000000034:
 	add	a0, a0, a1
 	lui	a1, 1048555
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	sltu	a0, a0, a1
 	neg	a0, a0
 	ret

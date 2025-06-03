@@ -66,7 +66,7 @@ func0000000000000066:
 	vsub.vv	v10, v10, v12
 	lui	a0, 488
 	vmin.vv	v8, v10, v8
-	addiw	a0, a0, 1152
+	addi	a0, a0, 1152
 	vmslt.vx	v0, v8, a0
 	ret
 

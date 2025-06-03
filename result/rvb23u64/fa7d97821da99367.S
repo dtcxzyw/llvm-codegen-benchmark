@@ -15,7 +15,7 @@ func0000000000000021:
 	slli	a1, a1, 5
 	srl	a0, a0, a1
 	zext.h	a0, a0
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

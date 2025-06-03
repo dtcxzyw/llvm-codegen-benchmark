@@ -7,7 +7,7 @@ func0000000000000084:
 	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v8, v12, v0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -3,7 +3,7 @@ func00000000000001c1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v8, a0
 	lui	a0, 16124
-	addiw	a0, a0, -274
+	addi	a0, a0, -274
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	vmv.v.x	v10, a0

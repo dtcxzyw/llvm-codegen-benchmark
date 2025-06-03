@@ -54,14 +54,14 @@ func000000000000002c:
 	lui	a3, 16384
 	lui	a1, 4
 	beq	a0, a3, .LBB4_2
-	addiw	a0, a1, -1792
+	addi	a0, a1, -1792
 	bnez	a2, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	addiw	a0, a1, -1756
+	addi	a0, a1, -1756
 	beqz	a2, .LBB4_4
 .LBB4_3:
-	addiw	a0, a1, -1764
+	addi	a0, a1, -1764
 .LBB4_4:
 	ret
 

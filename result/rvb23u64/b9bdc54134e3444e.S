@@ -27,7 +27,7 @@ func000000000000030a:
 func0000000000000526:
 	sext.w	a2, a1
 	lui	a3, 1
-	addiw	a3, a3, -496
+	addi	a3, a3, -496
 	slt	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -52,13 +52,13 @@ func000000000000036a:
 func000000000000032a:
 	sext.w	a2, a1
 	lui	a3, 1047978
-	addiw	a3, a3, -836
+	addi	a3, a3, -836
 	slt	a2, a2, a3
 	lui	a3, 523342
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 525234
-	addiw	a3, a3, -1428
+	addi	a3, a3, -1428
 	or	a0, a0, a1
 	sext.w	a1, a0
 	slt	a1, a3, a1

@@ -42,13 +42,13 @@ func0000000000000004:
 	andi	a3, a2, 1
 	lui	a2, 4096
 	bnez	a3, .LBB4_2
-	addiw	a2, a2, 65
+	addi	a2, a2, 65
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ori	a0, a0, 258
 	ret
 .LBB4_2:
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ori	a0, a0, 258

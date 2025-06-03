@@ -71,7 +71,7 @@ func0000000000000181:
 
 func0000000000000044:
 	lui	a2, 512
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	lui	a3, 1048064
 	and	a1, a1, a3

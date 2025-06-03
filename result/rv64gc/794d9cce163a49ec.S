@@ -12,7 +12,7 @@ func000000000000003f:
 	lui	a3, 1048448
 	slli	a1, a1, 32
 	slli	a0, a0, 18
-	addiw	a3, a3, -33
+	addi	a3, a3, -33
 	slli	a3, a3, 13
 	addi	a3, a3, 1023
 	and	a2, a2, a3
@@ -33,7 +33,7 @@ func000000000000003b:
 	slli	a2, a2, 47
 	lui	a3, 262144
 	slli	a0, a0, 62
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slli	a3, a3, 17
 	and	a1, a1, a3
 	or	a0, a0, a2
@@ -72,7 +72,7 @@ func000000000000003c:
 	slli	a2, a2, 17
 	lui	a3, 1048568
 	slli	a0, a0, 30
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

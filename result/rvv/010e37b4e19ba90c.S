@@ -2,7 +2,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
 	lui	a0, 1
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	vand.vx	v8, v8, a0
 	li	a0, 27
 	slli	a0, a0, 7
@@ -13,7 +13,7 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
 	lui	a0, 16
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 4
 	ret
@@ -22,7 +22,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
 	lui	a0, 1048560
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret

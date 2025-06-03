@@ -3,7 +3,7 @@ func0000000000000004:
 	lui	a0, 61681
 	flt.s	a1, fa5, fa0
 	neg	a1, a1
-	addiw	a0, a0, -241
+	addi	a0, a0, -241
 	and	a0, a0, a1
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000007:
 	lui	a0, 61681
 	feq.s	a1, fa0, fa5
 	addi	a1, a1, -1
-	addiw	a0, a0, -241
+	addi	a0, a0, -241
 	and	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000002:
 	lui	a0, 61681
 	flt.s	a1, fa0, fa5
 	neg	a1, a1
-	addiw	a0, a0, -241
+	addi	a0, a0, -241
 	and	a0, a0, a1
 	ret
 
@@ -37,7 +37,7 @@ func000000000000000a:
 	lui	a0, 61681
 	fle.s	a1, fa0, fa5
 	neg	a1, a1
-	addiw	a0, a0, -241
+	addi	a0, a0, -241
 	and	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func0000000000000008:
 	lui	a0, 61681
 	feq.s	a1, fa0, fa5
 	neg	a1, a1
-	addiw	a0, a0, -241
+	addi	a0, a0, -241
 	and	a0, a0, a1
 	ret
 

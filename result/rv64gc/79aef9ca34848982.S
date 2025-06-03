@@ -5,7 +5,7 @@ func0000000000000001:
 .LBB0_2:
 	not	a0, a0
 	lui	a1, 135168
-	addiw	a1, a1, -1026
+	addi	a1, a1, -1026
 	and	a0, a0, a1
 	ret
 

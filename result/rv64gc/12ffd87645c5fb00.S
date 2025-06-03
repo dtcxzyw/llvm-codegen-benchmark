@@ -9,10 +9,10 @@ func0000000000000035:
 	lui	a7, 209715
 	lui	t0, 61681
 	lui	t1, 4112
-	addiw	a5, a6, 1365
-	addiw	a3, a7, 819
-	addiw	a1, t0, -241
-	addiw	a6, t1, 257
+	addi	a5, a6, 1365
+	addi	a3, a7, 819
+	addi	a1, t0, -241
+	addi	a6, t1, 257
 	slli	a4, a5, 32
 	add	a4, a4, a5
 	slli	a5, a3, 32

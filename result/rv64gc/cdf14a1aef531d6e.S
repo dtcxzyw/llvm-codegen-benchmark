@@ -16,7 +16,7 @@ func0000000000000003:
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	lui	a1, 4
-	addiw	a2, a1, 333
+	addi	a2, a1, 333
 .LBB2_2:
 	sub	a0, a2, a0
 	ret

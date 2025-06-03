@@ -7,7 +7,7 @@ func0000000000000007:
 func0000000000000006:
 	minu	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 1044480
 	and	a0, a0, a1
@@ -16,7 +16,7 @@ func0000000000000006:
 func0000000000000002:
 	minu	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 1048574
 	and	a0, a0, a1

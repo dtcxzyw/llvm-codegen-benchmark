@@ -37,7 +37,7 @@ func00000000000000e4:
 
 func00000000000000f4:
 	lui	a2, 4
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bgeu	a0, a2, .LBB4_2
 	li	a0, 12
 	ret

@@ -12,7 +12,7 @@ func0000000000000021:
 	or	a0, a0, a1
 	lui	a1, 196384
 	sext.w	a0, a0
-	addiw	a1, a1, 274
+	addi	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -23,7 +23,7 @@ func0000000000000034:
 	or	a1, a1, a0
 	lui	a0, 8
 	sext.w	a1, a1
-	addiw	a2, a0, 1132
+	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1131
 .LBB2_2:
@@ -33,7 +33,7 @@ func0000000000000024:
 	or	a1, a1, a0
 	lui	a0, 8
 	sext.w	a1, a1
-	addiw	a2, a0, 1132
+	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB3_2
 	li	a0, 1131
 .LBB3_2:
@@ -70,11 +70,11 @@ func0000000000000038:
 	li	a1, 1560
 	bltu	a1, a0, .LBB7_2
 	lui	a0, 16
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	ret
 .LBB7_2:
 	lui	a0, 2048
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	ret
 
 func000000000000002c:

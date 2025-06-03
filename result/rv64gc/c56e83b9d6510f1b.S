@@ -11,7 +11,7 @@ func000000000000014a:
 	sext.w	a1, a1
 	lui	a2, 244141
 	srai	a0, a0, 56
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	slt	a1, a2, a1
 	slti	a0, a0, 0
 	not	a0, a0

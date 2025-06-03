@@ -21,7 +21,7 @@ func0000000000000008:
 	vmsgtu.vx	v0, v12, a0
 	lui	a0, 1048575
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vand.vx	v8, v8, a0
 	ret
 

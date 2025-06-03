@@ -95,7 +95,7 @@ func0000000000000330:
 	andi	a0, a0, 3
 	lui	a2, 1
 	snez	a0, a0
-	addiw	a2, a2, 420
+	addi	a2, a2, 420
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -103,7 +103,7 @@ func0000000000000330:
 func0000000000000310:
 	sext.w	a1, a0
 	lui	a2, 3
-	addiw	a2, a2, -1888
+	addi	a2, a2, -1888
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

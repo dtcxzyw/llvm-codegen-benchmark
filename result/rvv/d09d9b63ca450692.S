@@ -4,9 +4,9 @@ func0000000000000004:
 	vadd.vv	v8, v10, v8
 	lui	a0, 1048575
 	vadd.vv	v8, v8, v12
-	addiw	a1, a0, 10
+	addi	a1, a0, 10
 	vadd.vx	v8, v8, a1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
 

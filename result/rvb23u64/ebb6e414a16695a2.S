@@ -6,7 +6,7 @@ func0000000000000aa1:
 	srai	a2, a2, 3
 	mul	a2, a2, a3
 	lui	a3, 36158
-	addiw	a3, a3, -848
+	addi	a3, a3, -848
 	sh1add	a1, a1, a2
 	slli	a2, a3, 28
 	add	a0, a0, a1

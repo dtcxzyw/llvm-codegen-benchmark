@@ -19,7 +19,7 @@ func000000000000000d:
 func0000000000000004:
 	slli	a0, a0, 4
 	lui	a1, 32
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	sll	a0, a1, a0
 	not	a0, a0
 	ret

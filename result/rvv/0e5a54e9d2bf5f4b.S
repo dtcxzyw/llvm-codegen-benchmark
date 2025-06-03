@@ -13,7 +13,7 @@ func000000000000001e:
 	vadd.vv	v8, v10, v8
 	lui	a0, 8
 	vadd.vi	v8, v8, 1
-	addiw	a0, a0, -202
+	addi	a0, a0, -202
 	vminu.vx	v8, v8, a0
 	ret
 

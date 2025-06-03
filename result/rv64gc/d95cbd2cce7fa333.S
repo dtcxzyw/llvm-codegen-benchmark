@@ -17,7 +17,7 @@ func000000000000003f:
 	lui	a1, 123738
 	slli	a2, a2, 24
 	or	a0, a0, a2
-	addiw	a1, a1, 1981
+	addi	a1, a1, 1981
 	mul	a0, a0, a1
 	ret
 

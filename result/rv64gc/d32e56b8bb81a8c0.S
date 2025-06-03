@@ -111,7 +111,7 @@ func0000000000000144:
 	lui	a1, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a1)
 	lui	a1, 2
-	addiw	a1, a1, 1807
+	addi	a1, a1, 1807
 	sltu	a0, a0, a1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1

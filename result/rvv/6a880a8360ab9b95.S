@@ -16,7 +16,7 @@ func0000000000000184:
 
 func0000000000000081:
 	lui	a0, 24
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmand.mm	v10, v0, v12

@@ -7,10 +7,10 @@ func000000000000001b:
 
 func0000000000000004:
 	lui	a2, 127
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	add	a1, a1, a2
 	lui	a2, 128
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -40,9 +40,8 @@ func000000000000000b:
 
 func000000000000001f:
 	slli	a1, a1, 1
-	li	a2, 1
+	bseti	a2, zero, 33
 	addi	a1, a1, 320
-	slli	a2, a2, 33
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	add	a0, a0, a1

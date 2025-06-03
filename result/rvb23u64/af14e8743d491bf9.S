@@ -78,8 +78,7 @@ func000000000000000a:
 
 func0000000000000018:
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 35
+	bseti	a1, zero, 35
 	addi	a1, a1, -16
 	and	a0, a0, a1
 	snez	a0, a0

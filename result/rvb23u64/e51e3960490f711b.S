@@ -21,7 +21,7 @@ func0000000000000010:
 	lui	a1, 200
 	max	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, -702
+	addi	a1, a1, -702
 	add	a0, a0, a1
 	ret
 

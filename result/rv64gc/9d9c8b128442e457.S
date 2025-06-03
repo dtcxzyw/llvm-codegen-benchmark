@@ -14,7 +14,7 @@ func0000000000000042:
 func0000000000000050:
 	lui	a1, 512
 	li	a2, 27
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	slli	a2, a2, 11
 	and	a1, a1, a0
 	xor	a1, a1, a2
@@ -24,7 +24,7 @@ func0000000000000050:
 	and	a1, a1, a2
 	bnez	a1, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB1_2:
 	ret
 

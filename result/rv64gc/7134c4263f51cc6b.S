@@ -32,18 +32,18 @@ func0000000000000294:
 	li	a0, 33
 	bltu	a1, a0, .LBB2_2
 	lui	a0, 262144
-	addiw	a0, a0, 369
+	addi	a0, a0, 369
 	li	a2, 17
 	bltu	a1, a2, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	lui	a0, 131072
-	addiw	a0, a0, 361
+	addi	a0, a0, 361
 	li	a2, 17
 	bgeu	a1, a2, .LBB2_4
 .LBB2_3:
 	lui	a0, 65536
-	addiw	a0, a0, 353
+	addi	a0, a0, 353
 .LBB2_4:
 	ret
 
@@ -71,13 +71,13 @@ func000000000000030a:
 	bltu	a3, a2, .LBB4_2
 	li	a0, 1007
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a2, a1, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
 	li	a0, 1518
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bge	a2, a1, .LBB4_4
 .LBB4_3:
 	li	a0, 2030
@@ -324,7 +324,7 @@ func0000000000000026:
 	seqz	a0, a0
 	lui	a1, 4
 	addi	a0, a0, -1
-	addiw	a1, a1, 3
+	addi	a1, a1, 3
 	and	a0, a0, a1
 	ret
 
@@ -333,16 +333,16 @@ func0000000000000081:
 	li	a0, 10
 	lui	a2, 1
 	bltu	a1, a0, .LBB24_2
-	addiw	a0, a2, -782
+	addi	a0, a2, -782
 	li	a3, 8
 	beq	a1, a3, .LBB24_3
 	j	.LBB24_4
 .LBB24_2:
-	addiw	a0, a2, -735
+	addi	a0, a2, -735
 	li	a3, 8
 	bne	a1, a3, .LBB24_4
 .LBB24_3:
-	addiw	a0, a2, -819
+	addi	a0, a2, -819
 .LBB24_4:
 	ret
 

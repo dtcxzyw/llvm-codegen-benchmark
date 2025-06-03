@@ -21,10 +21,10 @@ func0000000000000004:
 	lui	a2, 786432
 	beqz	a3, .LBB2_2
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 .LBB2_2:
 	lui	a3, 196608
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

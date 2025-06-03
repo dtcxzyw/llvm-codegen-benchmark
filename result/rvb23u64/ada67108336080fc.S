@@ -31,11 +31,11 @@ func000000000000082c:
 func0000000000000184:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	xor	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -160
+	addi	a2, a2, -160
 	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

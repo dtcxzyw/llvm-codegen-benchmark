@@ -27,7 +27,7 @@ func00000000000000ca:
 	slli	a1, a1, 33
 	lui	a2, 349525
 	srli	a1, a1, 32
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	slt	a0, a1, a0
@@ -38,7 +38,7 @@ func00000000000000cb:
 	slli	a1, a1, 33
 	lui	a2, 349525
 	srli	a1, a1, 32
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	slt	a0, a0, a1
@@ -88,7 +88,7 @@ func00000000000000c6:
 	slli	a1, a1, 33
 	lui	a2, 349525
 	srli	a1, a1, 32
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	slt	a0, a0, a1
@@ -99,7 +99,7 @@ func00000000000000d8:
 	slli	a1, a1, 33
 	lui	a2, 349525
 	srli	a1, a1, 32
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0

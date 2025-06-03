@@ -16,7 +16,7 @@ func00000000000001a4:
 func00000000000000a8:
 	slli	a1, a1, 32
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, %hi(.LCPI1_0)
@@ -32,7 +32,7 @@ func00000000000001a8:
 	sext.w	a1, a1
 	srai	a0, a0, 2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -46,7 +46,7 @@ func00000000000000a1:
 	srai	a0, a0, 3
 	lui	a2, 349525
 	srli	a1, a1, 32
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -60,7 +60,7 @@ func00000000000000aa:
 	srai	a0, a0, 3
 	lui	a2, 838861
 	srli	a1, a1, 32
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -74,7 +74,7 @@ func00000000000000b4:
 	srai	a0, a0, 3
 	lui	a2, 838861
 	srli	a1, a1, 32
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -87,7 +87,7 @@ func00000000000000a4:
 	srai	a0, a0, 3
 	lui	a2, 699051
 	srli	a1, a1, 32
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2

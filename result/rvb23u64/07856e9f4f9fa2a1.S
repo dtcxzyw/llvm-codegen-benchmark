@@ -24,7 +24,7 @@ func0000000000000002:
 
 func0000000000000001:
 	lui	a2, 804435
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	maxu	a1, a1, a2
 	sub	a0, a1, a0
 	ret

@@ -4,7 +4,7 @@ func0000000000000003:
 	lui	a0, 442489
 	vsrl.vi	v8, v10, 30
 	vxor.vv	v8, v8, v10
-	addiw	a0, a0, -1691
+	addi	a0, a0, -1691
 	vmul.vx	v8, v8, a0
 	ret
 

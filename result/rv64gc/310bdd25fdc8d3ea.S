@@ -1,7 +1,7 @@
 func0000000000000012:
 	srl	a0, a0, a1
 	lui	a1, 838861
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000010:
 	srl	a0, a0, a1
 	lui	a1, 838861
 	lui	a2, %hi(.LCPI1_0)
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	ld	a2, %lo(.LCPI1_0)(a2)
 	add	a1, a1, a3

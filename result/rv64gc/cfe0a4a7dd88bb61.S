@@ -18,7 +18,7 @@ func0000000000000000:
 	j	.LBB1_4
 .LBB1_2:
 	lui	a2, 135168
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bnez	a0, .LBB1_4
 .LBB1_3:
 	mv	a2, a1

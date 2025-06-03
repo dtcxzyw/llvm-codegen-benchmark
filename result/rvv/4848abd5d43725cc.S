@@ -3,7 +3,7 @@ func0000000000000000:
 	vor.vv	v10, v10, v12
 	lui	a0, 40975
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, 63
+	addi	a0, a0, 63
 	slli	a0, a0, 14
 	addi	a0, a0, -1213
 	vand.vx	v8, v8, a0

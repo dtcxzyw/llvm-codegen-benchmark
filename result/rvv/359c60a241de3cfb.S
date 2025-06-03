@@ -13,7 +13,7 @@ func0000000000000061:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -25,7 +25,7 @@ func0000000000000028:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -37,7 +37,7 @@ func0000000000000034:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -49,7 +49,7 @@ func0000000000000024:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -97,7 +97,7 @@ func0000000000000021:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 618391
-	addiw	a0, a0, -105
+	addi	a0, a0, -105
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -125,7 +125,7 @@ func000000000000002c:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -181,7 +181,7 @@ func0000000000000038:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 978671
-	addiw	a0, a0, -273
+	addi	a0, a0, -273
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -193,7 +193,7 @@ func000000000000002a:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -205,7 +205,7 @@ func000000000000006a:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -217,7 +217,7 @@ func0000000000000067:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 957395
-	addiw	a0, a0, 1959
+	addi	a0, a0, 1959
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -261,7 +261,7 @@ func0000000000000066:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -273,7 +273,7 @@ func0000000000000026:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 1
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -285,7 +285,7 @@ func0000000000000025:
 	vzext.vf2	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

@@ -6,7 +6,7 @@ func000000000000001f:
 	ld	a3, %lo(.LCPI0_0)(a3)
 	sub	a0, a0, a2
 	sext.w	a1, a1
-	addiw	a4, a4, -15
+	addi	a4, a4, -15
 	mulhu	a3, a2, a3
 	sub	a2, a2, a3
 	srli	a2, a2, 1

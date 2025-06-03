@@ -1,6 +1,6 @@
 func0000000000000000:
 	lui	a0, 192515
-	addiw	a0, a0, -467
+	addi	a0, a0, -467
 	bseti	a0, a0, 60
 	bseti	a0, a0, 61
 	vsetivli	zero, 4, e64, m2, ta, ma

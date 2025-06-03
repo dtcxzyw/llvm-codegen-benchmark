@@ -123,7 +123,7 @@ func0000000000000146:
 
 func000000000000014b:
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	slt	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
@@ -142,7 +142,7 @@ func00000000000000ca:
 
 func0000000000000141:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	slt	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

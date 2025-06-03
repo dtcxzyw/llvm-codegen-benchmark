@@ -2,7 +2,7 @@ func0000000000000024:
 	sext.w	a2, a1
 	srliw	a1, a1, 3
 	lui	a3, 8
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	sltu	a2, a2, a3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2

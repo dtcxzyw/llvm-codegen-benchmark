@@ -49,7 +49,7 @@ func000000000000002a:
 	vsext.vf2	v12, v10
 	lui	a0, 6
 	vmul.vv	v8, v8, v12
-	addiw	a0, a0, 973
+	addi	a0, a0, 973
 	vmsgt.vx	v0, v8, a0
 	ret
 

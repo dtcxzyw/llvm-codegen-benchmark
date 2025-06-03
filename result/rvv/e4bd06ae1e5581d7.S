@@ -30,7 +30,7 @@ func0000000000000008:
 
 func0000000000000018:
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0

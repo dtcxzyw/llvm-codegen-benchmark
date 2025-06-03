@@ -64,7 +64,7 @@ func0000000000000027:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v8, v8, 3
 	lui	a0, 128
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v12
 	ret
@@ -89,7 +89,7 @@ func000000000000001d:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v12

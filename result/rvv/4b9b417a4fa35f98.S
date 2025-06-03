@@ -3,7 +3,7 @@ func0000000000000028:
 	vsll.vi	v8, v8, 4
 	lui	a0, 5461
 	vor.vi	v8, v8, 6
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	vmsgtu.vx	v0, v8, a0
 	ret
 

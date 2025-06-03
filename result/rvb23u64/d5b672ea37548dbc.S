@@ -13,7 +13,7 @@ func0000000000000000:
 	li	a3, 257
 	czero.eqz	a0, a3, a0
 	lui	a3, 2
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

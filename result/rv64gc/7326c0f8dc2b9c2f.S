@@ -38,7 +38,7 @@ func0000000000000006:
 	bge	a0, a1, .LBB2_4
 .LBB2_2:
 	lui	a0, 1
-	addiw	a0, a0, -7
+	addi	a0, a0, -7
 	slt	a0, a1, a0
 	ret
 .LBB2_3:
@@ -47,7 +47,7 @@ func0000000000000006:
 .LBB2_4:
 	mv	a1, a0
 	lui	a0, 1
-	addiw	a0, a0, -7
+	addi	a0, a0, -7
 	slt	a0, a1, a0
 	ret
 

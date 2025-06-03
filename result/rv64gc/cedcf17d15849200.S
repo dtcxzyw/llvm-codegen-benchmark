@@ -21,7 +21,7 @@ func000000000000008c:
 	lui	a3, 16
 	xor	a0, a0, a1
 	srli	a2, a2, 48
-	addiw	a3, a3, -5
+	addi	a3, a3, -5
 	sltu	a1, a2, a3
 	snez	a0, a0
 	or	a0, a0, a1

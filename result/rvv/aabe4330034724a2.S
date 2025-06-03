@@ -49,7 +49,7 @@ func0000000000000004:
 
 func000000000000001f:
 	lui	a0, 128
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 19

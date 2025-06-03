@@ -2,7 +2,7 @@ func00000000000000b4:
 	sh1add	a0, a1, a0
 	lui	a1, 16
 	zext.h	a0, a0
-	addiw	a1, a1, -30
+	addi	a1, a1, -30
 	sltu	a0, a0, a1
 	ret
 

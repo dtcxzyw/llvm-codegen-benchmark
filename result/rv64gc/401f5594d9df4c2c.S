@@ -60,7 +60,7 @@ func0000000000000034:
 	andi	a1, a1, 1
 	bnez	a1, .LBB5_2
 	lui	a1, 65857
-	addiw	a1, a1, 161
+	addi	a1, a1, 161
 	srliw	a0, a0, 1
 	sltiu	a0, a0, 1561
 	slli	a0, a0, 13
@@ -68,7 +68,7 @@ func0000000000000034:
 	ret
 .LBB5_2:
 	lui	a1, 98625
-	addiw	a1, a1, 161
+	addi	a1, a1, 161
 	srliw	a0, a0, 1
 	sltiu	a0, a0, 1561
 	slli	a0, a0, 13

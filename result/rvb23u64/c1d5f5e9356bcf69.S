@@ -2,7 +2,7 @@ func000000000000000f:
 	sh2add	a2, a2, a2
 	lui	a3, 149797
 	slli	a2, a2, 2
-	addiw	a3, a3, -1756
+	addi	a3, a3, -1756
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

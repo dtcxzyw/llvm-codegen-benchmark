@@ -23,7 +23,7 @@ func0000000000000001:
 	li	a3, 15
 	beq	a2, a3, .LBB2_2
 	lui	a0, 65536
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	or	a0, a0, a1
 	ret
 .LBB2_2:

@@ -61,7 +61,7 @@ func0000000000000286:
 	sext.w	a0, a0
 	lui	a1, 16
 	li	a2, 2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a1, a1, a0
 	slti	a0, a0, 256
 	czero.nez	a1, a1, a0

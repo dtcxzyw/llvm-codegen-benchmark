@@ -8,7 +8,7 @@ func000000000000000b:
 func0000000000000063:
 	sext.w	a0, a0
 	lui	a1, 104832
-	addiw	a1, a1, 816
+	addi	a1, a1, 816
 	xor	a0, a0, a1
 	snez	a0, a0
 	li	a1, 12

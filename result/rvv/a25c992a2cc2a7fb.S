@@ -1,7 +1,7 @@
 func000000000000018c:
 	lui	a0, 1
-	addiw	a1, a0, -991
-	addiw	a0, a0, -1279
+	addi	a1, a0, -991
+	addi	a0, a0, -1279
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v10, v8, a1
 	vmsne.vx	v11, v8, a0
@@ -10,11 +10,11 @@ func000000000000018c:
 
 func00000000000000cc:
 	lui	a0, 42
-	addiw	a0, a0, 769
+	addi	a0, a0, 769
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v10, v8, a0
 	lui	a0, 1048534
-	addiw	a0, a0, -767
+	addi	a0, a0, -767
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

@@ -32,7 +32,7 @@ func0000000000000010:
 
 func0000000000000013:
 	lui	a3, 512
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	and	a2, a2, a3
 	li	a3, 27
 	slli	a3, a3, 11

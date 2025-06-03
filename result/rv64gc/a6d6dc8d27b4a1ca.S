@@ -47,7 +47,7 @@ func0000000000000008:
 	li	a2, 124
 	bgeu	a2, a0, .LBB5_2
 	lui	a0, 4
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	ret
 .LBB5_2:
 	srliw	a0, a1, 3

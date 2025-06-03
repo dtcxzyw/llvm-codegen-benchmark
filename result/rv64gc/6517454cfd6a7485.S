@@ -10,7 +10,7 @@ func000000000000000c:
 	slli	a2, a2, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a1, a1, a2
@@ -20,7 +20,7 @@ func000000000000000c:
 
 func0000000000000018:
 	lui	a3, 16
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	and	a2, a2, a3
 	sltiu	a2, a2, 36
 	xori	a2, a2, 1

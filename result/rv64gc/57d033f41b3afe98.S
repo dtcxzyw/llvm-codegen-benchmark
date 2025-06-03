@@ -1,12 +1,12 @@
 func000000000000002a:
 	lui	a2, 65279
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
 	add	a0, a0, a1
 	lui	a1, 16128
-	addiw	a1, a1, -1009
+	addi	a1, a1, -1009
 	slt	a0, a1, a0
 	ret
 
@@ -68,7 +68,7 @@ func0000000000000004:
 .LBB6_2:
 	add	a0, a0, a1
 	lui	a1, 1048575
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -79,7 +79,7 @@ func0000000000000074:
 .LBB7_2:
 	add	a0, a0, a1
 	lui	a1, 256
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

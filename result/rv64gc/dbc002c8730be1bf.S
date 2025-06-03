@@ -26,7 +26,7 @@ func0000000000000021:
 	or	a1, a1, a2
 	bnez	a1, .LBB2_2
 	lui	a0, 244141
-	addiw	a0, a0, -1535
+	addi	a0, a0, -1535
 .LBB2_2:
 	ret
 

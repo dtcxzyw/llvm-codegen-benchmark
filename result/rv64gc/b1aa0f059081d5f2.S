@@ -16,7 +16,7 @@ func0000000000000024:
 	addi	a0, a0, -45
 	snez	a0, a0
 	addi	a0, a0, -1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	xor	a0, a0, a1
 .LBB1_2:
 	ret

@@ -42,7 +42,7 @@ func0000000000000406:
 
 func0000000000000404:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 12
 	sext.w	a1, a1
@@ -51,8 +51,7 @@ func0000000000000404:
 	ret
 
 func0000000000000c01:
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -8
 	add	a1, a1, a2
 	srli	a1, a1, 2

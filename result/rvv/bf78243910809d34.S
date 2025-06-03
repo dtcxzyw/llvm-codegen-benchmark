@@ -102,7 +102,7 @@ func0000000000000174:
 
 func0000000000000868:
 	lui	a0, 4
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -113,7 +113,7 @@ func0000000000000868:
 
 func0000000000000874:
 	lui	a0, 4
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -142,7 +142,7 @@ func0000000000000c21:
 
 func0000000000000a21:
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -153,7 +153,7 @@ func0000000000000a21:
 
 func0000000000000a26:
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0

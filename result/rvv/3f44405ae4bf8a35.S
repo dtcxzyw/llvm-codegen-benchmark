@@ -41,8 +41,7 @@ func0000000000000378:
 func0000000000000304:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v9
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -8
 	csrwi	vxrm, 2
 	vaaddu.vx	v10, v10, a0
@@ -54,8 +53,7 @@ func0000000000000304:
 func0000000000000308:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v9
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -8
 	csrwi	vxrm, 2
 	vaaddu.vx	v10, v10, a0

@@ -15,7 +15,7 @@ func000000000000000a:
 	czero.nez	a1, a2, a1
 	lui	a2, 2
 	slt	a0, a1, a0
-	addiw	a1, a2, 1810
+	addi	a1, a2, 1810
 	czero.eqz	a0, a1, a0
 	ret
 

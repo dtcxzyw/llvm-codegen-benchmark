@@ -13,7 +13,7 @@ func000000000000003f:
 	or	a0, a0, a1
 	lui	a1, 4096
 	slli	a2, a2, 40
-	addiw	a1, a1, 257
+	addi	a1, a1, 257
 	or	a0, a0, a2
 	bseti	a1, a1, 56
 	or	a0, a0, a1

@@ -21,7 +21,7 @@ func0000000000000004:
 func000000000000000f:
 	srliw	a1, a1, 9
 	lui	a2, 69
-	addiw	a2, a2, -1149
+	addi	a2, a2, -1149
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -30,7 +30,7 @@ func000000000000000f:
 func0000000000000000:
 	srliw	a1, a1, 9
 	lui	a2, 69
-	addiw	a2, a2, -1149
+	addi	a2, a2, -1149
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1

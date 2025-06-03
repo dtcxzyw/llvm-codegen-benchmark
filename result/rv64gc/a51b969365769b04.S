@@ -58,7 +58,7 @@ func0000000000000026:
 	mv	a1, a2
 .LBB5_2:
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

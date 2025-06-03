@@ -44,9 +44,8 @@ func000000000000000e:
 	ret
 
 func0000000000000010:
-	li	a3, 1
+	bseti	a3, zero, 35
 	slli	a0, a0, 4
-	slli	a3, a3, 35
 	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1

@@ -2,7 +2,7 @@ func000000000000000b:
 	slliw	a1, a1, 24
 	or	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 
@@ -26,7 +26,7 @@ func000000000000001e:
 	slli	a1, a1, 6
 	or	a0, a0, a1
 	lui	a1, 14
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	or	a0, a0, a1
 	ret
 
@@ -49,7 +49,7 @@ func000000000000001b:
 	slliw	a1, a1, 25
 	or	a0, a0, a1
 	lui	a1, 4608
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 

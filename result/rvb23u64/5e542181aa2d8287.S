@@ -7,7 +7,7 @@ func000000000000007b:
 
 func0000000000000003:
 	lui	a1, 1036757
-	addiw	a1, a1, 1811
+	addi	a1, a1, 1811
 	mul	a0, a0, a1
 	bseti	a1, zero, 50
 	add	a0, a0, a1

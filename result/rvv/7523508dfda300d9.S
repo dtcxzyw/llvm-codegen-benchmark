@@ -28,8 +28,7 @@ func0000000000000081:
 func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	li	a0, 1
-	slli	a0, a0, 37
+	bseti	a0, zero, 37
 	addi	a0, a0, -64
 	vand.vx	v8, v8, a0
 	vmsne.vi	v10, v8, 0

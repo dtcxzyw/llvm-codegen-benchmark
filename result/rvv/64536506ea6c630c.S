@@ -17,7 +17,7 @@ func0000000000000038:
 	vmv.v.i	v10, 0
 	lui	a0, 16
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	li	a0, 16

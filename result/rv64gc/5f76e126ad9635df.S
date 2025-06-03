@@ -24,7 +24,7 @@ func0000000000000028:
 func0000000000000001:
 	mv	a2, a0
 	lui	a0, 11
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	beqz	a2, .LBB2_2
 	or	a0, a0, a1
 .LBB2_2:

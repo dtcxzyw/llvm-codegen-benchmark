@@ -22,7 +22,7 @@ func000000000000000b:
 func0000000000000000:
 	slli	a1, a1, 2
 	lui	a2, 1048572
-	addiw	a2, a2, 28
+	addi	a2, a2, 28
 	and	a1, a1, a2
 	addi	a2, a2, 196
 	and	a0, a0, a2

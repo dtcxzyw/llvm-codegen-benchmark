@@ -3,7 +3,7 @@ func0000000000000184:
 	lui	a3, 1048562
 	add	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	srliw	a2, a2, 13
 	xor	a1, a1, a3
 	sltiu	a2, a2, 129
@@ -17,7 +17,7 @@ func0000000000000086:
 	addiw	a2, a2, -3
 	lui	a3, 3
 	sltiu	a2, a2, 10
-	addiw	a3, a3, 1364
+	addi	a3, a3, 1364
 	slt	a1, a1, a3
 	and	a0, a0, a2
 	and	a0, a0, a1
@@ -29,7 +29,7 @@ func0000000000000084:
 	addi	a3, a3, -424
 	addw	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	sltu	a1, a1, a3
 	sltiu	a2, a2, 27
 	and	a0, a0, a1
@@ -42,7 +42,7 @@ func0000000000000484:
 	addi	a3, a3, 1024
 	addw	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	sltiu	a1, a1, 27
 	sltu	a2, a2, a3
 	and	a0, a0, a1

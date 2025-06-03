@@ -56,7 +56,7 @@ func000000000000000d:
 func0000000000000002:
 	add	a0, a0, a1
 	lui	a1, 171
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a1, a1, 12
 	addi	a1, a1, -1365
 	mul	a1, a0, a1
@@ -69,7 +69,7 @@ func0000000000000002:
 func000000000000000e:
 	add	a0, a0, a1
 	lui	a1, 171
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a1, a1, 12
 	addi	a1, a1, -1365
 	mul	a1, a0, a1
@@ -96,7 +96,7 @@ func0000000000000008:
 func000000000000000f:
 	add	a0, a0, a1
 	lui	a1, 171
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a1, a1, 12
 	addi	a1, a1, -1365
 	mul	a1, a0, a1

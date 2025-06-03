@@ -18,7 +18,7 @@ func0000000000000007:
 	ori	a0, a0, 3
 	lui	a1, 718
 	sext.w	a0, a0
-	addiw	a1, a1, -1183
+	addi	a1, a1, -1183
 	mul	a0, a0, a1
 	ret
 

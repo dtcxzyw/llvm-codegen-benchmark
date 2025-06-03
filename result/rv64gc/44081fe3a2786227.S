@@ -9,7 +9,7 @@ func0000000000000001:
 	srli	a2, a2, 48
 	addi	a2, a2, -8
 	seqz	a1, a2
-	addiw	a0, a0, 1230
+	addi	a0, a0, 1230
 	or	a0, a0, a1
 	ret
 

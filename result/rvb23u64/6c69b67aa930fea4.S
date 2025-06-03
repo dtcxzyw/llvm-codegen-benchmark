@@ -78,7 +78,7 @@ func0000000000000018:
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	lui	a3, 8
-	addiw	a3, a3, -512
+	addi	a3, a3, -512
 	or	a1, a1, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0

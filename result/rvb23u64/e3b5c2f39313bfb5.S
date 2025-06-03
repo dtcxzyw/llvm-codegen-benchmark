@@ -3,7 +3,7 @@
 func0000000000000208:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI0_0)
@@ -26,7 +26,7 @@ func0000000000000008:
 	srai	a2, a2, 7
 	add	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	sltu	a0, a1, a0
 	ret
 
@@ -34,7 +34,7 @@ func00000000000002aa:
 	sub	a1, a1, a2
 	srai	a0, a0, 3
 	lui	a2, 978671
-	addiw	a2, a2, -273
+	addi	a2, a2, -273
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -47,7 +47,7 @@ func00000000000002b4:
 	sub	a1, a1, a2
 	srai	a0, a0, 3
 	lui	a2, 978671
-	addiw	a2, a2, -273
+	addi	a2, a2, -273
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -59,7 +59,7 @@ func00000000000000aa:
 	sub	a1, a1, a2
 	srai	a0, a0, 4
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -72,7 +72,7 @@ func00000000000000b4:
 	sub	a1, a1, a2
 	srai	a0, a0, 4
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -83,7 +83,7 @@ func00000000000000b4:
 func0000000000000206:
 	srai	a2, a2, 3
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -95,7 +95,7 @@ func0000000000000206:
 func000000000000020a:
 	srai	a2, a2, 3
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -108,7 +108,7 @@ func00000000000000a4:
 	sub	a1, a1, a2
 	srai	a0, a0, 4
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -120,7 +120,7 @@ func00000000000001a4:
 	sub	a1, a1, a2
 	srai	a0, a0, 4
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -131,7 +131,7 @@ func00000000000001a4:
 func0000000000000226:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -143,7 +143,7 @@ func0000000000000226:
 func000000000000022a:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

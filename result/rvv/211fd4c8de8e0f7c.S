@@ -20,11 +20,11 @@ func000000000000007b:
 
 func0000000000000079:
 	lui	a0, 2153
-	addiw	a0, a0, 547
+	addi	a0, a0, 547
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 718
-	addiw	a0, a0, -1183
+	addi	a0, a0, -1183
 	vmacc.vx	v12, a0, v10
 	li	a0, 32
 	vsrl.vx	v10, v12, a0

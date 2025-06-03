@@ -12,7 +12,7 @@ func0000000000000040:
 	srli	a1, a0, 24
 	bnez	a1, .LBB1_2
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 .LBB1_2:
 	add	a0, a0, a2
 	ret

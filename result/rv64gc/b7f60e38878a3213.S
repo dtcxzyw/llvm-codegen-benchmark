@@ -31,8 +31,8 @@ func000000000000008c:
 func0000000000000181:
 	sext.w	a1, a1
 	lui	a3, 65536
-	addiw	a4, a3, 1022
-	addiw	a3, a3, 16
+	addi	a4, a3, 1022
+	addi	a3, a3, 16
 	snez	a1, a1
 	and	a2, a2, a4
 	xor	a2, a2, a3
@@ -84,7 +84,7 @@ func0000000000000298:
 func0000000000000294:
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltiu	a1, a1, 8
 	and	a2, a2, a3
 	seqz	a2, a2

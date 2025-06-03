@@ -15,7 +15,7 @@ func0000000000000021:
 func0000000000000034:
 	srli	a0, a0, 9
 	lui	a1, 16
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	and	a0, a0, a1
 	addi	a0, a0, -36
 	sltiu	a0, a0, 1408

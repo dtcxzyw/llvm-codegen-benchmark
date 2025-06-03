@@ -17,7 +17,7 @@ func0000000000000003:
 func0000000000000023:
 	slliw	a1, a1, 24
 	lui	a2, 320
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	lui	a2, 64
 	or	a1, a1, a2

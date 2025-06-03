@@ -26,7 +26,7 @@ func0000000000000006:
 
 func000000000000000a:
 	lui	a0, 6
-	addiw	a0, a0, 973
+	addi	a0, a0, 973
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	li	a0, 255

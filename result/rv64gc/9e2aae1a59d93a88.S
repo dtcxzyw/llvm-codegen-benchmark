@@ -9,6 +9,6 @@ func0000000000000018:
 	ret
 .LBB0_2:
 	lui	a0, 8
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	ret
 

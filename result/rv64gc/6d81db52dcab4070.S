@@ -21,7 +21,7 @@ func000000000000002f:
 	slli	a1, a1, 5
 	sub	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, -1464
+	addi	a2, a2, -1464
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -3,7 +3,7 @@ func0000000000000003:
 	slli	a1, a1, 5
 	or	a0, a0, a1
 	lui	a1, 16416
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func000000000000000b:
 	srli	a1, a1, 42
 	or	a0, a0, a1
 	lui	a1, 2056
-	addiw	a1, a1, 224
+	addi	a1, a1, 224
 	or	a0, a0, a1
 	ret
 

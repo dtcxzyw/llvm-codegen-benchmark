@@ -9,12 +9,12 @@ func0000000000000020:
 	ret
 .LBB0_2:
 	lui	a0, 560295
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 	ret
 
 func000000000000000e:
 	lui	a3, 131072
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a0, a0, a2

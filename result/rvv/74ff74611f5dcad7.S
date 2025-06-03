@@ -4,7 +4,7 @@ func0000000000004608:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vi	v13, v10, 0
 	lui	a0, 1
-	addiw	a0, a0, -432
+	addi	a0, a0, -432
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v8, v12, v10
 	vmor.mm	v0, v8, v13

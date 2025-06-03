@@ -30,7 +30,7 @@ func0000000000000108:
 	lui	a3, 1048514
 	srliw	a1, a1, 19
 	addi	a4, a3, -1049
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	sltiu	a1, a1, 125
 	addw	a2, a2, a4
 	xori	a1, a1, 1

@@ -5,7 +5,7 @@ func0000000000000404:
 	lui	a1, 2441
 	srli	a2, a2, 32
 	add	a0, a0, a2
-	addiw	a1, a1, 1664
+	addi	a1, a1, 1664
 	sltu	a0, a0, a1
 	ret
 

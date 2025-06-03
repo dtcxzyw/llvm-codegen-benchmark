@@ -2,7 +2,7 @@ func0000000000000015:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -19,7 +19,7 @@ func0000000000000001:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -36,7 +36,7 @@ func0000000000000011:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0

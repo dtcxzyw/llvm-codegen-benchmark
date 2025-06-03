@@ -86,7 +86,7 @@ func0000000000000052:
 	li	a3, 15
 	bgeu	a2, a3, .LBB10_2
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 .LBB10_2:
 	add	a0, a0, a1
 	ret

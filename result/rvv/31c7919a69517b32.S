@@ -19,7 +19,7 @@ func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
 	li	a0, 32
 	vor.vv	v10, v10, v12
@@ -32,7 +32,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 16
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vsll.vi	v8, v8, 3

@@ -4,9 +4,9 @@ func0000000000000011:
 	lui	a3, 209715
 	lui	a4, 61681
 	srai	a2, a2, 3
-	addiw	a1, a1, 1365
-	addiw	a3, a3, 819
-	addiw	a4, a4, -241
+	addi	a1, a1, 1365
+	addi	a3, a3, 819
+	addi	a4, a4, -241
 	add	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -34,7 +34,7 @@ func0000000000000011:
 	srli	a0, a0, 2
 	and	a0, a0, a2
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
@@ -51,9 +51,9 @@ func0000000000000015:
 	lui	a3, 209715
 	lui	a4, 61681
 	srai	a2, a2, 3
-	addiw	a1, a1, 1365
-	addiw	a3, a3, 819
-	addiw	a4, a4, -241
+	addi	a1, a1, 1365
+	addi	a3, a3, 819
+	addi	a4, a4, -241
 	add	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -81,7 +81,7 @@ func0000000000000015:
 	srli	a0, a0, 2
 	and	a0, a0, a2
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1

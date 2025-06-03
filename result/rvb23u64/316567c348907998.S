@@ -19,9 +19,8 @@ func000000000000002c:
 
 func000000000000018c:
 	srli	a1, a1, 1
-	li	a2, 1
+	bseti	a2, zero, 33
 	slli.uw	a1, a1, 1
-	slli	a2, a2, 33
 	addi	a2, a2, -2
 	xor	a1, a1, a2
 	snez	a1, a1

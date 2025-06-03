@@ -52,7 +52,7 @@ func0000000000000026:
 func0000000000000025:
 	lui	a3, 16
 	sltu	a0, a1, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
 	seqz	a1, a2

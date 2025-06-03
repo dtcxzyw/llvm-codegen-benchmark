@@ -27,8 +27,8 @@ func0000000000002108:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a4, a3, -71
-	addiw	a3, a3, -8
+	addi	a4, a3, -71
+	addi	a3, a3, -8
 	sltu	a2, a2, a4
 	sltu	a1, a1, a3
 	and	a1, a1, a2
@@ -41,8 +41,8 @@ func0000000000002102:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a4, a3, -49
-	addiw	a3, a3, -7
+	addi	a4, a3, -49
+	addi	a3, a3, -7
 	addi	a0, a0, -13
 	sltu	a2, a2, a4
 	sltu	a1, a1, a3

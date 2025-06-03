@@ -37,7 +37,7 @@ func0000000000000018:
 func0000000000000010:
 	sub	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	sub	a0, a2, a0
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1

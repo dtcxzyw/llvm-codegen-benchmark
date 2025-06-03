@@ -21,7 +21,7 @@ func000000000000000f:
 	srliw	a1, a1, 16
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -15
+	addi	a1, a1, -15
 	add	a0, a0, a1
 	ret
 

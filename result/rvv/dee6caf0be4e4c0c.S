@@ -2,7 +2,7 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
@@ -14,7 +14,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
@@ -26,7 +26,7 @@ func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
@@ -39,7 +39,7 @@ func00000000000000e1:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	vsrl.vi	v10, v10, 4
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -77,7 +77,7 @@ func0000000000000074:
 	vadd.vi	v10, v10, -8
 	lui	a0, 699051
 	vsrl.vi	v10, v10, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

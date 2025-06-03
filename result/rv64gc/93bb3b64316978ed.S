@@ -8,7 +8,7 @@ func0000000000000006:
 	srai	a1, a1, 26
 	add	a1, a1, a2
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	srli	a0, a0, 63
@@ -20,7 +20,7 @@ func0000000000000006:
 	.quad	307445734561825861
 func0000000000000001:
 	lui	a1, 978671
-	addiw	a1, a1, -273
+	addi	a1, a1, -273
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
@@ -45,7 +45,7 @@ func0000000000000008:
 	srai	a1, a1, 18
 	add	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	sltiu	a0, a0, 100

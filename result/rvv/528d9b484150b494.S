@@ -1,8 +1,8 @@
 func0000000000000718:
 	lui	a0, 16
 	lui	a1, 1048560
-	addiw	a0, a0, -16
-	addiw	a1, a1, 15
+	addi	a0, a0, -16
+	addi	a1, a1, 15
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.x	v12, a0

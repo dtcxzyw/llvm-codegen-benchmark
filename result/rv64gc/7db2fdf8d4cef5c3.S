@@ -24,7 +24,7 @@ func0000000000000204:
 	lui	a3, 2
 	add	a1, a1, a3
 	lui	a3, 1
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	li	a3, 7
 	slli	a3, a3, 60

@@ -47,10 +47,10 @@ func0000000000000021:
 func0000000000000078:
 	srli	a0, a0, 10
 	lui	a1, 13
-	addiw	a1, a1, 1984
+	addi	a1, a1, 1984
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -64
+	addi	a1, a1, -64
 	and	a0, a0, a1
 	sltiu	a0, a0, 192
 	xori	a0, a0, 1

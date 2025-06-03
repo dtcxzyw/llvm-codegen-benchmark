@@ -11,7 +11,7 @@ func000000000000002b:
 	add	a1, a1, a2
 	lui	a2, 2575
 	add	a0, a0, a1
-	addiw	a1, a2, -325
+	addi	a1, a2, -325
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	slli	a1, a1, 13

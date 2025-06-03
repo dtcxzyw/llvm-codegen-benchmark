@@ -21,12 +21,11 @@ func000000000000003f:
 	ret
 
 func000000000000003c:
-	li	a0, 1
+	bseti	a0, zero, 35
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, -8
-	slli	a0, a0, 35
-	vadd.vv	v8, v10, v8
 	addi	a0, a0, -8
+	vadd.vv	v8, v10, v8
 	vand.vx	v10, v12, a0
 	vadd.vv	v8, v10, v8
 	li	a0, 40

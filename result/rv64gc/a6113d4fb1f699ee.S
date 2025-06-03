@@ -60,7 +60,7 @@ func0000000000000006:
 func000000000000000a:
 	bgtz	a1, .LBB9_2
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	add	a0, a0, a2
 .LBB9_2:
 	ret

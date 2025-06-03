@@ -82,7 +82,7 @@ func0000000000000c68:
 
 func0000000000000a2a:
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	slt	a1, a2, a1
 	add	a0, a0, a1
 	slti	a0, a0, 1801

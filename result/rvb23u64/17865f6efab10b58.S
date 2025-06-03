@@ -1,7 +1,7 @@
 func0000000000000000:
 	fcvt.w.d	a0, fa0, rtz
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0

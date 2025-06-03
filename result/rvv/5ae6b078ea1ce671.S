@@ -25,7 +25,7 @@ func0000000000000035:
 
 func0000000000000075:
 	lui	a0, 36
-	addiw	a0, a0, -1359
+	addi	a0, a0, -1359
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -79,7 +79,7 @@ func0000000000000070:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	lui	a0, 65
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -99,7 +99,7 @@ func0000000000000038:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	lui	a0, 8
-	addiw	a0, a0, 448
+	addi	a0, a0, 448
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

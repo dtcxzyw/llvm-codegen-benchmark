@@ -26,7 +26,7 @@ func0000000000000004:
 	vmv1r.v	v10, v8
 	vsext.vf2	v12, v9
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmul.vx	v8, v12, a0
 	lui	a0, 244

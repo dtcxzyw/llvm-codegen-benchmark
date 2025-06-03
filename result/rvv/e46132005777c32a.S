@@ -1,10 +1,10 @@
 func000000000000001f:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v10, v10, a0, v0.t
 	lui	a0, 65536
-	addiw	a0, a0, -225
+	addi	a0, a0, -225
 	slli	a0, a0, 4
 	vmadd.vx	v8, a0, v10
 	ret

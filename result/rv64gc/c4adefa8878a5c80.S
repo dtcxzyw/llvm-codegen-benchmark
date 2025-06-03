@@ -81,13 +81,13 @@ func0000000000000438:
 	li	a2, 2
 	beq	a1, a2, .LBB5_2
 	lui	a2, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	beqz	a1, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bnez	a1, .LBB5_4
 .LBB5_3:
@@ -101,13 +101,13 @@ func0000000000000428:
 	li	a2, 2
 	beq	a1, a2, .LBB6_2
 	lui	a2, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	beqz	a1, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bnez	a1, .LBB6_4
 .LBB6_3:

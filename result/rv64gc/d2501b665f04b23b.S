@@ -56,12 +56,12 @@ func0000000000000294:
 	li	a2, 40
 	lui	a1, 1
 	bltu	a0, a2, .LBB4_2
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	li	a2, 19
 	bltu	a0, a2, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	addiw	a1, a1, 334
+	addi	a1, a1, 334
 	li	a2, 19
 	bgeu	a0, a2, .LBB4_4
 .LBB4_3:

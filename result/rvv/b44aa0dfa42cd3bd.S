@@ -14,7 +14,7 @@ func0000000000000010:
 	lui	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
-	addiw	a0, a0, 112
+	addi	a0, a0, 112
 	vmv.v.x	v12, a0
 	vmadd.vv	v8, v10, v12
 	ret

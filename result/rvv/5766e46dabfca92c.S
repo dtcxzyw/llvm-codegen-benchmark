@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	li	a0, 56

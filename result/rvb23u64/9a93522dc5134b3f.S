@@ -77,7 +77,7 @@ func0000000000000008:
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a4
 	add	a0, a0, a1
-	addiw	a3, a3, 2
+	addi	a3, a3, 2
 	sltu	a0, a3, a0
 	ret
 

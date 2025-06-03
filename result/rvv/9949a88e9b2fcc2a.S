@@ -24,7 +24,7 @@ func0000000000000006:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v12
 	lui	a0, 274878
-	addiw	a0, a0, -381
+	addi	a0, a0, -381
 	slli	a0, a0, 13
 	addi	a0, a0, -1290
 	vmerge.vxm	v8, v8, a0, v0

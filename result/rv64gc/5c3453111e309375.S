@@ -12,7 +12,7 @@ func0000000000000003:
 	add	a0, a0, a1
 	lui	a1, 3
 	zext.b	a0, a0
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	add	a0, a0, a1
 	ret
 

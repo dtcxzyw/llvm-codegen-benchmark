@@ -10,7 +10,7 @@ func0000000000000007:
 	vsll.vi	v10, v10, 8
 	lui	a0, 1
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

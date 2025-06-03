@@ -21,7 +21,7 @@ func0000000000000004:
 func0000000000000204:
 	lui	a2, 244
 	lui	a3, %hi(.LCPI2_0)
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	ld	a3, %lo(.LCPI2_0)(a3)
 	lui	a4, %hi(.LCPI2_1)
 	ld	a4, %lo(.LCPI2_1)(a4)

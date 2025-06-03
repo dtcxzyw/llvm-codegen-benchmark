@@ -11,7 +11,7 @@ func000000000000000c:
 	vsll.vv	v10, v10, v12
 	lui	a0, 1048560
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret

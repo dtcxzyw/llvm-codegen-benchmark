@@ -1,6 +1,6 @@
 func0000000000000005:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
 	mul	a2, a2, a0
@@ -40,14 +40,14 @@ func000000000000000f:
 	sh1add	a1, a1, a1
 	sh1add	a3, a0, a0
 	mulhu	a0, a0, a2
-	li	a2, -1
+	bseti	a2, zero, 36
 	add	a1, a1, a0
-	slli	a0, a2, 36
-	srli	a2, a2, 28
-	addi	a0, a0, 16
-	add	a0, a0, a3
-	sltu	a3, a0, a3
+	li	a0, -1
+	addi	a2, a2, -16
+	srli	a4, a0, 28
+	sub	a0, a3, a2
+	sltu	a2, a0, a3
+	add	a1, a1, a4
 	add	a1, a1, a2
-	add	a1, a1, a3
 	ret
 

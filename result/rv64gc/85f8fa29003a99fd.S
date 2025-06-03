@@ -21,11 +21,11 @@ func0000000000000007:
 func000000000000000c:
 	add	a0, a0, a1
 	lui	a1, 61681
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	and	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2

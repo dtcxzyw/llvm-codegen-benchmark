@@ -42,7 +42,7 @@ func0000000000000118:
 	zext.b	a2, a2
 	lui	a3, 786432
 	addi	a2, a2, -12
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	snez	a2, a2
 	sltu	a1, a1, a3
 	or	a0, a0, a1

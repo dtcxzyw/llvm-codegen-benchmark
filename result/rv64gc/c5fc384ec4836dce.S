@@ -3,7 +3,7 @@ func0000000000000024:
 	lui	a1, 1048575
 	srai	a0, a0, 48
 	addi	a0, a0, -1938
-	addiw	a1, a1, 221
+	addi	a1, a1, 221
 	sltu	a0, a0, a1
 	ret
 

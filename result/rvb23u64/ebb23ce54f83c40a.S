@@ -3,7 +3,7 @@ func0000000000000010:
 	addi	a3, a3, -843
 	addw	a2, a2, a3
 	lui	a3, 175
-	addiw	a3, a3, -587
+	addi	a3, a3, -587
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

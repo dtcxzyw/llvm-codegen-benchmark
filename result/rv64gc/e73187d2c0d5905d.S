@@ -90,7 +90,7 @@ func0000000000000021:
 
 func000000000000002a:
 	lui	a1, 262144
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bge	a1, a0, .LBB11_2
 	lui	a0, 524288
 	addiw	a0, a0, -1
@@ -108,7 +108,7 @@ func0000000000000004:
 
 func000000000000000a:
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bge	a1, a0, .LBB13_2
 	lui	a0, 524288
 	addiw	a0, a0, -1
@@ -119,10 +119,10 @@ func000000000000000a:
 
 func0000000000000026:
 	lui	a1, 1048568
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bge	a0, a1, .LBB14_2
 	lui	a0, 524288
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	ret
 .LBB14_2:
 	slli	a0, a0, 16

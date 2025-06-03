@@ -3,7 +3,7 @@ func0000000000000106:
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 32768
 	vmsle.vi	v10, v12, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
@@ -22,7 +22,7 @@ func0000000000000021:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmseq.vx	v10, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0

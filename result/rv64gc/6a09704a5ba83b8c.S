@@ -42,7 +42,7 @@ func000000000000070a:
 	lui	a2, 16
 	srai	a0, a0, 56
 	sext.w	a1, a1
-	addiw	a2, a2, -561
+	addi	a2, a2, -561
 	sltu	a1, a2, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

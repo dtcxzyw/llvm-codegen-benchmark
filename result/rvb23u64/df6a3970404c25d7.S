@@ -14,7 +14,7 @@ func000000000000001e:
 	sh3add	a0, a0, a3
 	lui	a3, 1
 	addi	a2, a2, -2
-	addiw	a3, a3, -1400
+	addi	a3, a3, -1400
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

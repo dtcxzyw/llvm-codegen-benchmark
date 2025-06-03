@@ -42,7 +42,7 @@ func0000000000000284:
 
 func00000000000000c4:
 	lui	a3, 49
-	addiw	a3, a3, 1984
+	addi	a3, a3, 1984
 	slt	a2, a2, a3
 	sltu	a0, a0, a1
 	and	a0, a0, a2

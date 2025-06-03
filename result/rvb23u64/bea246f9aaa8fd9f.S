@@ -1,6 +1,6 @@
 func000000000000000b:
 	lui	a3, 15
-	addiw	a3, a3, -640
+	addi	a3, a3, -640
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	sh3add.uw	a0, a2, a0
@@ -9,7 +9,7 @@ func000000000000000b:
 func000000000000001b:
 	sext.w	a2, a2
 	lui	a3, 15
-	addiw	a3, a3, -640
+	addi	a3, a3, -640
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	sh3add	a0, a2, a0

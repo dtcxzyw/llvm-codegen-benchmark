@@ -8,7 +8,7 @@ func000000000000001f:
 
 func0000000000000017:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1
@@ -16,7 +16,7 @@ func0000000000000017:
 
 func0000000000000005:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

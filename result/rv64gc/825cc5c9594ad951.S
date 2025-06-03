@@ -1,6 +1,6 @@
 func000000000000007c:
 	lui	a3, 8
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -9,7 +9,7 @@ func000000000000007c:
 
 func000000000000007f:
 	lui	a3, 8
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

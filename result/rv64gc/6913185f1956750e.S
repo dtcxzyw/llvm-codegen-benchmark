@@ -5,8 +5,8 @@ func000000000000000c:
 	and	a0, a0, a1
 	lui	a1, 3
 	and	a2, a2, a3
-	addiw	a3, a4, 1365
-	addiw	a1, a1, 819
+	addi	a3, a4, 1365
+	addi	a1, a1, 819
 	srli	a4, a2, 1
 	and	a3, a3, a4
 	sub	a2, a2, a3

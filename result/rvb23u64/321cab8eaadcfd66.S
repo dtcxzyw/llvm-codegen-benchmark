@@ -65,7 +65,7 @@ func0000000000000681:
 	lui	a3, 48
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	or	a1, a1, a2
 	xor	a0, a0, a3
 	srliw	a1, a1, 16

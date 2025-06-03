@@ -169,7 +169,7 @@ func0000000000000024:
 func0000000000000146:
 	sext.w	a2, a1
 	lui	a3, 1
-	addiw	a3, a3, -496
+	addi	a3, a3, -496
 	slt	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

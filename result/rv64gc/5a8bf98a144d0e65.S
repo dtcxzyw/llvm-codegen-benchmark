@@ -35,7 +35,7 @@ func0000000000000074:
 	sext.w	a2, a2
 	bgeu	a1, a2, .LBB4_2
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB4_2:
 	ret
 
@@ -44,7 +44,7 @@ func0000000000000004:
 	sext.w	a2, a2
 	bgeu	a1, a2, .LBB5_2
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB5_2:
 	ret
 

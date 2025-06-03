@@ -71,7 +71,7 @@ func00000000000004c6:
 	sext.w	a2, a0
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a3, a1, 1
+	addi	a3, a1, 1
 	slt	a0, a0, a3
 	slt	a1, a2, a1
 	and	a0, a0, a1

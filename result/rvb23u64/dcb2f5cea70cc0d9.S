@@ -18,8 +18,7 @@ func0000000000000010:
 
 func000000000000000f:
 	minu	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 34
+	bseti	a1, zero, 34
 	addi	a1, a1, -4
 	sh2add	a0, a0, a1
 	ret
@@ -32,8 +31,7 @@ func0000000000000005:
 
 func0000000000000000:
 	minu	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 35
+	bseti	a1, zero, 35
 	addi	a1, a1, -8
 	sh2add	a0, a0, a1
 	ret

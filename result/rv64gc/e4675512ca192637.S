@@ -9,7 +9,7 @@ func0000000000000302:
 
 func0000000000000042:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	and	a0, a0, a2
 	seqz	a2, a0

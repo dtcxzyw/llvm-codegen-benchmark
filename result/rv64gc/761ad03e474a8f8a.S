@@ -3,11 +3,11 @@ func0000000000000030:
 	not	a1, a1
 	lui	a3, 5
 	and	a1, a1, a2
-	addiw	a2, a3, 1365
+	addi	a2, a3, 1365
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -30,11 +30,11 @@ func000000000000001f:
 	not	a1, a1
 	lui	a3, 5
 	and	a1, a1, a2
-	addiw	a2, a3, 1365
+	addi	a2, a3, 1365
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -60,11 +60,11 @@ func000000000000003b:
 	not	a1, a1
 	lui	a3, 5
 	and	a1, a1, a2
-	addiw	a2, a3, 1365
+	addi	a2, a3, 1365
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -85,11 +85,11 @@ func000000000000003f:
 	not	a1, a1
 	lui	a3, 5
 	and	a1, a1, a2
-	addiw	a2, a3, 1365
+	addi	a2, a3, 1365
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2

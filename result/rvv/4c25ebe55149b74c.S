@@ -15,7 +15,7 @@ func000000000000020f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
 	lui	a0, 16
-	addiw	a0, a0, 255
+	addi	a0, a0, 255
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v10, 0

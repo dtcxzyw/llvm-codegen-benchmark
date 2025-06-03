@@ -4,7 +4,7 @@ func000000000000001f:
 	lui	a0, 128
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vsll.vi	v8, v8, 19
 	vor.vv	v8, v10, v8
@@ -16,7 +16,7 @@ func000000000000001d:
 	lui	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v10, v10, a0
 	li	a0, 32
 	vsll.vx	v8, v8, a0

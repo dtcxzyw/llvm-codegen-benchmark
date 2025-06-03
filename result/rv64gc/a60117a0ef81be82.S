@@ -41,7 +41,7 @@ func000000000000003b:
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	lui	a1, 69640
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

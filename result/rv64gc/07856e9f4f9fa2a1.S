@@ -30,7 +30,7 @@ func0000000000000002:
 
 func0000000000000001:
 	lui	a2, 804435
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	bltu	a2, a1, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

@@ -115,7 +115,7 @@ func0000000000000024:
 func000000000000008a:
 	lui	a3, 244
 	slti	a1, a1, 0
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	xori	a1, a1, 1
 	sltu	a2, a2, a3
 	and	a0, a0, a1
@@ -126,7 +126,7 @@ func0000000000000144:
 	slti	a2, a2, 0
 	andn	a0, a0, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

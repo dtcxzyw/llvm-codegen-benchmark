@@ -24,7 +24,7 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a1, 3662
-	addiw	a1, a1, 449
+	addi	a1, a1, 449
 	sltu	a1, a0, a1
 	czero.nez	a0, a0, a1
 	ret
@@ -32,8 +32,8 @@ func0000000000000004:
 func000000000000000a:
 	lui	a1, 14649
 	lui	a2, 14648
-	addiw	a1, a1, -1305
-	addiw	a2, a2, 1792
+	addi	a1, a1, -1305
+	addi	a2, a2, 1792
 	slt	a1, a1, a0
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

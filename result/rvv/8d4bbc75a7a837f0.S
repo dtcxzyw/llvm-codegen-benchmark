@@ -11,7 +11,7 @@ func000000000000003f:
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12
 	vsrl.vi	v12, v12, 15
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	vmul.vx	v12, v12, a0
 	vsub.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10

@@ -117,7 +117,7 @@ func0000000000000034:
 	vsll.vi	v8, v8, 2
 	lui	a0, 29
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 288
+	addi	a0, a0, 288
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -133,7 +133,7 @@ func000000000000002f:
 	vadd.vv	v10, v10, v10
 	lui	a0, 16
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -151,7 +151,7 @@ func0000000000000024:
 	vsll.vx	v10, v10, a0
 	lui	a0, 1048332
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -577
+	addi	a0, a0, -577
 	vadd.vx	v8, v8, a0
 	ret
 

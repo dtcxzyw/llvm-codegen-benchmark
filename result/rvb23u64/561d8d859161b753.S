@@ -12,7 +12,7 @@ func0000000000000030:
 func0000000000000035:
 	sub	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, 999
+	addi	a1, a1, 999
 	add	a0, a0, a1
 	ret
 

@@ -10,7 +10,7 @@ func00000000000003e1:
 
 func00000000000001f8:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
 	add.uw	a0, a0, a1
@@ -21,7 +21,7 @@ func00000000000001f8:
 
 func00000000000003f8:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
 	add.uw	a0, a0, a1
@@ -32,7 +32,7 @@ func00000000000003f8:
 
 func00000000000001f4:
 	lui	a2, 477
-	addiw	a2, a2, -667
+	addi	a2, a2, -667
 	slli	a2, a2, 11
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
@@ -44,7 +44,7 @@ func00000000000001f4:
 
 func00000000000001e1:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
 	zext.w	a0, a0

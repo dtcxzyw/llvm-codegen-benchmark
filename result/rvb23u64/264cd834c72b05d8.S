@@ -3,7 +3,7 @@ func0000000000000404:
 	sext.b	a0, a0
 	sh1add	a0, a1, a0
 	lui	a1, 227374
-	addiw	a1, a1, -1329
+	addi	a1, a1, -1329
 	addi	a0, a0, -48
 	slli	a1, a1, 12
 	addi	a1, a1, -1575

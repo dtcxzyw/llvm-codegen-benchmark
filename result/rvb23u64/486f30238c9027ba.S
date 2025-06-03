@@ -4,7 +4,7 @@ func0000000000000000:
 	lui	a3, 8176
 	and	a2, a2, a3
 	lui	a3, 786930
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	czero.eqz	a0, a2, a0
 	slli	a3, a3, 16
 	addi	a2, a3, 127

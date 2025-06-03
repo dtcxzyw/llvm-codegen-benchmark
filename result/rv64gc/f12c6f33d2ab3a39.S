@@ -2,12 +2,12 @@ func0000000000000110:
 	li	a3, 184
 	mul	a0, a0, a3
 	lui	a3, 2
-	addiw	a3, a3, -832
+	addi	a3, a3, -832
 	mul	a2, a2, a3
 	lui	a3, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a1, a3, 400
+	addi	a1, a3, 400
 	add	a0, a0, a1
 	ret
 
@@ -15,12 +15,12 @@ func0000000000000330:
 	li	a3, 184
 	mul	a0, a0, a3
 	lui	a3, 2
-	addiw	a3, a3, -832
+	addi	a3, a3, -832
 	mul	a2, a2, a3
 	lui	a3, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a1, a3, 344
+	addi	a1, a3, 344
 	add	a0, a0, a1
 	ret
 
@@ -38,13 +38,13 @@ func00000000000003f0:
 
 func00000000000001d0:
 	lui	a3, 34
-	addiw	a3, a3, 128
+	addi	a3, a3, 128
 	mul	a2, a2, a3
 	lui	a3, 1
-	addiw	a3, a3, 260
+	addi	a3, a3, 260
 	mul	a0, a0, a3
 	lui	a3, 544
-	addiw	a3, a3, 20
+	addi	a3, a3, 20
 	add	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

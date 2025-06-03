@@ -6,7 +6,7 @@ func0000000000000002:
 	fabs.d	fa4, fa0
 	lui	a0, 1
 	flt.d	a1, fa4, fa5
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 2
 	ret

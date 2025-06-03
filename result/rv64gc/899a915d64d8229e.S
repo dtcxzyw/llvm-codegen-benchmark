@@ -39,7 +39,7 @@ func0000000000000c28:
 func0000000000000c68:
 	srli	a1, a1, 47
 	lui	a2, 32
-	addiw	a2, a2, -12
+	addi	a2, a2, -12
 	xor	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 32

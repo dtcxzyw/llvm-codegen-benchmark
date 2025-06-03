@@ -3,7 +3,7 @@ func000000000000003f:
 	slli	a0, a0, 6
 	or	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a0, a0, a1
 	ret
 

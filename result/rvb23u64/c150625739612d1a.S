@@ -3,7 +3,7 @@ func000000000000000e:
 	lui	a1, 522248
 	addi	a0, a0, 128
 	zext.w	a0, a0
-	addiw	a1, a1, -127
+	addi	a1, a1, -127
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	ret
@@ -13,7 +13,7 @@ func0000000000000002:
 	lui	a1, 235184
 	addi	a0, a0, 3
 	zext.w	a0, a0
-	addiw	a1, a1, 1725
+	addi	a1, a1, 1725
 	mul	a0, a0, a1
 	srli	a0, a0, 47
 	ret

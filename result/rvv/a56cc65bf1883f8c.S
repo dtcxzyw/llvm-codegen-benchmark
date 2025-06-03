@@ -7,7 +7,7 @@ func0000000000000010:
 	vmerge.vim	v10, v10, 1, v0
 	vxor.vi	v10, v10, 5
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 24
+	addi	a0, a0, 24
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000000c:
 	lui	a2, 524296
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
@@ -18,7 +18,7 @@ func0000000000000034:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mulhu	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	srli	a1, a1, 18
 	mul	a1, a1, a2
 	add	a0, a0, a2
@@ -27,7 +27,7 @@ func0000000000000034:
 
 func0000000000000035:
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
@@ -40,7 +40,7 @@ func0000000000000035:
 
 func0000000000000000:
 	lui	a2, 526344
-	addiw	a2, a2, 129
+	addi	a2, a2, 129
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
@@ -61,8 +61,8 @@ func0000000000000015:
 	lui	a3, 21
 	mulhu	a1, a1, a2
 	lui	a2, 1048555
-	addiw	a3, a3, 384
-	addiw	a2, a2, -384
+	addi	a3, a3, 384
+	addi	a2, a2, -384
 	srli	a1, a1, 16
 	mul	a1, a1, a3
 	add	a0, a0, a2

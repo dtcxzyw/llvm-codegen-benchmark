@@ -21,7 +21,7 @@ func00000000000006a8:
 	vsra.vi	v10, v10, 3
 	lui	a1, 699051
 	vmacc.vx	v8, a0, v12
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -1
@@ -36,7 +36,7 @@ func0000000000000208:
 	vsra.vi	v10, v10, 4
 	lui	a1, 838861
 	vmacc.vx	v8, a0, v12
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v10, a0, v8

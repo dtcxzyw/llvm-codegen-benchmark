@@ -39,7 +39,7 @@ func0000000000000008:
 
 func0000000000000000:
 	lui	a3, 240
-	addiw	a3, a3, -7
+	addi	a3, a3, -7
 	slli	a3, a3, 12
 	addi	a3, a3, -1
 	and	a2, a2, a3

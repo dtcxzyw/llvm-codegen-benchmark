@@ -203,7 +203,7 @@ func000000000000008a:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	sltu	a2, a2, a3
 	slti	a1, a1, 0
 	andn	a1, a2, a1

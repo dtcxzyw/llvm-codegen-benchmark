@@ -47,7 +47,7 @@ func0000000000000008:
 	czero.nez	a1, a2, a1
 	lui	a2, 209715
 	addw	a0, a0, a1
-	addiw	a1, a2, 819
+	addi	a1, a2, 819
 	sltu	a0, a1, a0
 	ret
 

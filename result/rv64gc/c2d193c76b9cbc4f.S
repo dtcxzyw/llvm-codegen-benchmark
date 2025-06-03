@@ -7,7 +7,7 @@ func000000000000000c:
 
 func0000000000000001:
 	lui	a3, 4096
-	addiw	a4, a3, 255
+	addi	a4, a3, 255
 	and	a2, a2, a4
 	xor	a2, a2, a3
 	seqz	a2, a2

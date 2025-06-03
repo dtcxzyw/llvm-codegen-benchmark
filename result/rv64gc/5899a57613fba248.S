@@ -2,7 +2,7 @@ func0000000000000001:
 	addi	a0, a0, 4
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -16,8 +16,8 @@ func0000000000000001:
 func0000000000000000:
 	lui	a1, 8
 	lui	a2, 16
-	addiw	a1, a1, -8
-	addiw	a2, a2, -256
+	addi	a1, a1, -8
+	addi	a2, a2, -256
 	add	a0, a0, a1
 	srli	a1, a0, 8
 	srliw	a3, a0, 24
@@ -34,7 +34,7 @@ func0000000000000006:
 	addi	a0, a0, 4
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -49,7 +49,7 @@ func0000000000000003:
 	addi	a0, a0, 1
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -64,7 +64,7 @@ func0000000000000007:
 	addi	a0, a0, 8
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -79,7 +79,7 @@ func0000000000000004:
 	addi	a0, a0, 1
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -94,7 +94,7 @@ func0000000000000002:
 	addi	a0, a0, -4
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0

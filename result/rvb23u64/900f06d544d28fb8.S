@@ -1,6 +1,5 @@
 func0000000000000028:
-	li	a2, 1
-	slli	a2, a2, 36
+	bseti	a2, zero, 36
 	addi	a2, a2, -64
 	sltu	a1, a2, a1
 	or	a0, a0, a1
@@ -18,7 +17,7 @@ func0000000000000026:
 
 func000000000000000a:
 	lui	a2, 1024
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

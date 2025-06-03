@@ -2,8 +2,8 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 1044480
-	addiw	a1, a0, 255
-	addiw	a0, a0, 511
+	addi	a1, a0, 255
+	addi	a0, a0, 511
 	vand.vx	v10, v10, a1
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8

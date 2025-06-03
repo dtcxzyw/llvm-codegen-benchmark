@@ -1,6 +1,6 @@
 func000000000000003c:
 	lui	a2, 4608
-	addiw	a2, a2, 81
+	addi	a2, a2, 81
 	slli	a2, a2, 22
 	addi	a2, a2, 1459
 	mulhu	a2, a1, a2

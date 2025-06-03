@@ -44,7 +44,7 @@ func0000000000000010:
 	lui	a0, 36
 	vsra.vi	v12, v12, 8
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, -1359
+	addi	a0, a0, -1359
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -62,7 +62,7 @@ func0000000000000011:
 	lui	a0, 1048573
 	vsra.vi	v12, v12, 15
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, 77
+	addi	a0, a0, 77
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12
 	ret

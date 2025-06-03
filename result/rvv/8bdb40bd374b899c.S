@@ -3,7 +3,7 @@ func00000000000000c1:
 	vsra.vi	v10, v10, 2
 	lui	a0, 699051
 	vadd.vi	v8, v8, 1
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -16,7 +16,7 @@ func0000000000000081:
 	vsra.vi	v10, v10, 4
 	lui	a0, 748983
 	vadd.vi	v8, v8, 1
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

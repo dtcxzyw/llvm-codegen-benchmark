@@ -10,7 +10,7 @@ func00000000000000af:
 	add	a1, a1, a2
 	lui	a2, 7
 	addi	a1, a1, 1
-	addiw	a2, a2, -856
+	addi	a2, a2, -856
 	slli	a1, a1, 32
 	srli	a1, a1, 29
 	add	a0, a0, a2

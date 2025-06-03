@@ -20,7 +20,7 @@ func0000000000000021:
 
 func0000000000000022:
 	lui	a0, 14
-	addiw	a0, a0, 1638
+	addi	a0, a0, 1638
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

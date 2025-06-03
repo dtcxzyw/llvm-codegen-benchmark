@@ -5,7 +5,7 @@ func0000000000000108:
 	maxu	a1, a1, a2
 	lui	a2, 6
 	minu	a0, a0, a1
-	addiw	a1, a2, 299
+	addi	a1, a2, 299
 	sltu	a0, a1, a0
 	ret
 

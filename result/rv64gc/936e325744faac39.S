@@ -23,7 +23,7 @@ func0000000000000000:
 	slliw	a1, a1, 19
 	or	a0, a0, a1
 	lui	a1, 32
-	addiw	a1, a1, 25
+	addi	a1, a1, 25
 	or	a0, a0, a1
 	ret
 

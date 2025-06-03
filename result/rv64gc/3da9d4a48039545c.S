@@ -76,7 +76,7 @@ func0000000000000037:
 	add	a0, a0, a1
 	lui	a1, 930062
 	srli	a2, a2, 32
-	addiw	a1, a1, -1681
+	addi	a1, a1, -1681
 	add	a0, a0, a2
 	slli	a1, a1, 7
 	add	a0, a0, a1

@@ -8,7 +8,7 @@ func000000000000000f:
 	xor	a1, a1, a2
 	lui	a2, 41
 	sh1add	a0, a1, a0
-	addiw	a1, a2, 682
+	addi	a1, a2, 682
 	add	a0, a0, a1
 	ret
 

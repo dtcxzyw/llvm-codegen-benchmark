@@ -19,7 +19,7 @@ func0000000000000008:
 	mv	a2, a0
 	lui	a0, 1048570
 	li	a3, 7
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 	bltu	a3, a2, .LBB1_2
 	andi	a1, a1, 1
 	addi	a1, a1, -1
@@ -83,12 +83,12 @@ func0000000000000014:
 	andi	a2, a1, 1
 	lui	a1, 1
 	bnez	a2, .LBB6_2
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	li	a2, 19
 	bltu	a0, a2, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
-	addiw	a1, a1, 334
+	addi	a1, a1, 334
 	li	a2, 19
 	bgeu	a0, a2, .LBB6_4
 .LBB6_3:

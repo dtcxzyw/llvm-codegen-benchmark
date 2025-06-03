@@ -39,7 +39,7 @@ func000000000000008c:
 	lui	a3, 4
 	snez	a1, a1
 	srli	a2, a2, 48
-	addiw	a3, a3, -383
+	addi	a3, a3, -383
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2

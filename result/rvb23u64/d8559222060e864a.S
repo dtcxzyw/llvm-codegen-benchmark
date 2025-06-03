@@ -38,7 +38,7 @@ func0000000000000048:
 	subw	a1, a1, a2
 	lui	a2, 345623
 	sltiu	a1, a1, 2
-	addiw	a2, a2, -660
+	addi	a2, a2, -660
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1

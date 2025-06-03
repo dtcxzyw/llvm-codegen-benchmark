@@ -32,7 +32,7 @@ func00000000000000a1:
 
 func00000000000000a6:
 	lui	a3, 2
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	blt	a2, a3, .LBB3_2
 	mv	a2, a3
 .LBB3_2:

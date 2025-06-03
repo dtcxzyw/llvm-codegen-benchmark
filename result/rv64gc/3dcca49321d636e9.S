@@ -41,7 +41,7 @@ func000000000000002a:
 	sext.w	a1, a1
 	mul	a0, a0, a1
 	lui	a1, 6
-	addiw	a1, a1, 973
+	addi	a1, a1, 973
 	slt	a0, a1, a0
 	ret
 

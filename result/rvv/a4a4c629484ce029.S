@@ -2,7 +2,7 @@ func00000000000000cc:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
 	lui	a0, 4096
-	addiw	a0, a0, 272
+	addi	a0, a0, 272
 	vmv.v.x	v8, a0
 	vsrl.vv	v8, v8, v10
 	vand.vi	v8, v8, 1
@@ -14,7 +14,7 @@ func000000000000004c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
 	lui	a0, 32
-	addiw	a0, a0, -48
+	addi	a0, a0, -48
 	vmv.v.x	v8, a0
 	vsrl.vv	v8, v8, v10
 	vand.vi	v8, v8, 1
@@ -29,7 +29,7 @@ func00000000000000c4:
 	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v8, v10, -2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret

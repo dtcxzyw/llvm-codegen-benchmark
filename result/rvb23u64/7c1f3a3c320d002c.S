@@ -2,7 +2,7 @@ func0000000000000009:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -12,7 +12,7 @@ func000000000000000b:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -22,7 +22,7 @@ func0000000000000008:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	addw	a0, a0, a1
@@ -43,7 +43,7 @@ func0000000000000000:
 	add	a1, a1, a2
 	lui	a2, 69
 	srliw	a1, a1, 9
-	addiw	a2, a2, -1149
+	addi	a2, a2, -1149
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -53,7 +53,7 @@ func0000000000000001:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1

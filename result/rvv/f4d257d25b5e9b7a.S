@@ -14,7 +14,7 @@ func0000000000000000:
 
 func0000000000000018:
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -26,7 +26,7 @@ func0000000000000018:
 
 func000000000000001e:
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -32,7 +32,7 @@ func000000000000005f:
 	srliw	a1, a1, 3
 	add	a0, a0, a1
 	lui	a1, 9
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 
@@ -41,7 +41,7 @@ func000000000000007f:
 	srliw	a1, a1, 6
 	sh3add	a0, a1, a0
 	lui	a1, 9
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 
@@ -50,7 +50,7 @@ func00000000000000f3:
 	srliw	a1, a1, 1
 	sh2add	a0, a1, a0
 	lui	a1, 225
-	addiw	a1, a1, 1280
+	addi	a1, a1, 1280
 	add	a0, a0, a1
 	ret
 

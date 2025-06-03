@@ -6,7 +6,7 @@ func0000000000000003:
 	srli	a4, a4, 49
 	lui	a3, 5
 	or	a1, a1, a4
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	slli	a4, a1, 48
 	srli	a4, a4, 50
 	or	a1, a1, a4
@@ -20,7 +20,7 @@ func0000000000000003:
 	srli	a4, a1, 1
 	and	a3, a3, a4
 	lui	a4, 3
-	addiw	a4, a4, 819
+	addi	a4, a4, 819
 	sub	a1, a1, a3
 	and	a3, a1, a4
 	srli	a1, a1, 2
@@ -39,11 +39,11 @@ func0000000000000003:
 	not	a0, a0
 	lui	a2, 5
 	and	a0, a0, a1
-	addiw	a1, a2, 1365
+	addi	a1, a2, 1365
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a0, a0, a1
 	and	a1, a0, a2
 	srli	a0, a0, 2

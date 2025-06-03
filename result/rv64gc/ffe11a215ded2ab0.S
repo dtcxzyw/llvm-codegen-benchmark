@@ -11,7 +11,7 @@ func0000000000000001:
 	mv	a2, a0
 	andi	a1, a1, 128
 	lui	a0, 11
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	beqz	a1, .LBB1_2
 	or	a0, a0, a2
 .LBB1_2:

@@ -9,7 +9,7 @@ func0000000000000042:
 
 func0000000000000318:
 	lui	a0, 2
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v9, v10, a0
 	vmor.mm	v9, v9, v0
@@ -75,7 +75,7 @@ func0000000000000298:
 
 func0000000000000182:
 	lui	a0, 24
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v9, v10, a0
 	vmor.mm	v9, v9, v0

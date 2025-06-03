@@ -1,11 +1,11 @@
 func0000000000000028:
 	lui	a2, 4
 	beqz	a1, .LBB0_2
-	addiw	a1, a2, 1344
+	addi	a1, a2, 1344
 	sltu	a0, a1, a0
 	ret
 .LBB0_2:
-	addiw	a1, a2, 320
+	addi	a1, a2, 320
 	sltu	a0, a1, a0
 	ret
 

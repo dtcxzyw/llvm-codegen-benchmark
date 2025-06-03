@@ -26,7 +26,7 @@ func000000000000007c:
 	mul	a1, a1, a2
 	lui	a2, 218
 	add	a0, a0, a1
-	addiw	a1, a2, -376
+	addi	a1, a2, -376
 	add	a0, a0, a1
 	ret
 
@@ -35,7 +35,7 @@ func00000000000000fc:
 	mul	a1, a1, a2
 	lui	a2, 218
 	add	a0, a0, a1
-	addiw	a1, a2, 600
+	addi	a1, a2, 600
 	add	a0, a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func00000000000000ff:
 	mul	a1, a1, a2
 	lui	a2, 178
 	add	a0, a0, a1
-	addiw	a1, a2, 350
+	addi	a1, a2, 350
 	add	a0, a0, a1
 	ret
 

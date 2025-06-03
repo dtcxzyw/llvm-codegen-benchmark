@@ -40,7 +40,7 @@ func0000000000000784:
 	lui	a0, 1
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 1
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	vmsltu.vx	v0, v8, a0
 	ret
 

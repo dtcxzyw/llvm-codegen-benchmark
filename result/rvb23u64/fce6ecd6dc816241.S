@@ -1,6 +1,6 @@
 func000000000000003f:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	srli	a1, a1, 5
 	add	a0, a0, a1
@@ -12,7 +12,7 @@ func000000000000001f:
 	srli	a1, a1, 51
 	add	a0, a0, a1
 	lui	a1, 448
-	addiw	a1, a1, 28
+	addi	a1, a1, 28
 	add	a0, a0, a1
 	ret
 

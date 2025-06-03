@@ -74,7 +74,7 @@ func000000000000000c:
 func0000000000000006:
 	mulw	a0, a0, a1
 	lui	a1, 256
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret
 

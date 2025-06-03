@@ -3,7 +3,7 @@ func000000000000001f:
 	addi	a3, a3, -32
 	and	a2, a2, a3
 	lui	a3, 41
-	addiw	a3, a3, 682
+	addi	a3, a3, 682
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 1

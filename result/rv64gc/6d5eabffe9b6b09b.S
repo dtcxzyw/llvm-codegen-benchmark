@@ -3,7 +3,7 @@ func000000000000028c:
 	lui	a2, 27392
 	and	a1, a1, a0
 	slli	a0, a0, 44
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	srli	a0, a0, 44
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -21,7 +21,7 @@ func0000000000000294:
 
 func0000000000000314:
 	lui	a1, 16
-	addiw	a1, a1, -512
+	addi	a1, a1, -512
 	and	a1, a1, a0
 	andi	a0, a0, 254
 	sltiu	a1, a1, 1281
@@ -42,7 +42,7 @@ func0000000000000298:
 
 func0000000000000318:
 	lui	a1, 16
-	addiw	a1, a1, -512
+	addi	a1, a1, -512
 	and	a1, a1, a0
 	andi	a0, a0, 254
 	sltiu	a1, a1, 1281

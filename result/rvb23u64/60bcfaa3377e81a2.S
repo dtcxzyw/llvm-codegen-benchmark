@@ -18,7 +18,7 @@ func0000000000000008:
 
 func000000000000000a:
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	bseti	a2, zero, 11
 	czero.nez	a0, a0, a1

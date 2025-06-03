@@ -21,7 +21,7 @@ func0000000000000009:
 	addi	a1, a1, -64
 	czero.eqz	a1, a2, a1
 	lui	a2, 3
-	addiw	a2, a2, 1027
+	addi	a2, a2, 1027
 	add	a1, a1, a2
 	slliw	a0, a0, 20
 	or	a0, a0, a1

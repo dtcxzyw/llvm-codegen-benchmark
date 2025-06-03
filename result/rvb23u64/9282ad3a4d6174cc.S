@@ -56,7 +56,7 @@ func0000000000000106:
 func000000000000014a:
 	lui	a2, 5960
 	lui	a3, %hi(.LCPI8_0)
-	addiw	a2, a2, 1903
+	addi	a2, a2, 1903
 	ld	a3, %lo(.LCPI8_0)(a3)
 	slli	a2, a2, 12
 	addi	a2, a2, -1049
@@ -70,7 +70,7 @@ func000000000000014a:
 func0000000000000118:
 	lui	a2, 5960
 	lui	a3, %hi(.LCPI9_0)
-	addiw	a2, a2, 1903
+	addi	a2, a2, 1903
 	ld	a3, %lo(.LCPI9_0)(a3)
 	slli	a2, a2, 12
 	addi	a2, a2, -1049
@@ -104,7 +104,7 @@ func0000000000000154:
 func0000000000000038:
 	snez	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 1904
+	addi	a2, a2, 1904
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret

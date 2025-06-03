@@ -30,10 +30,10 @@ func0000000000000006:
 
 func0000000000000008:
 	lui	a0, 4
-	addiw	a1, a0, 1344
+	addi	a1, a0, 1344
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a1
-	addiw	a0, a0, 320
+	addi	a0, a0, 320
 	vmerge.vxm	v10, v10, a0, v0
 	vmsltu.vv	v0, v10, v8
 	ret

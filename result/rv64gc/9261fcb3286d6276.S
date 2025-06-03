@@ -1,7 +1,7 @@
 func000000000000000f:
 	lui	a2, 8
 	slli	a0, a0, 40
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	slli	a1, a1, 16
 	srli	a0, a0, 40

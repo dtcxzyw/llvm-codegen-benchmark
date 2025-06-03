@@ -4,7 +4,7 @@ func00000000000001e1:
 	czero.nez	a1, a2, a1
 	lui	a2, 5
 	add	a0, a0, a1
-	addiw	a1, a2, -1968
+	addi	a1, a2, -1968
 	add	a0, a0, a1
 	ret
 

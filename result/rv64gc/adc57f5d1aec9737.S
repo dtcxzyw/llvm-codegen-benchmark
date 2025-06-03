@@ -3,7 +3,7 @@ func0000000000000066:
 	slliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, 513
+	addi	a1, a1, 513
 	slt	a0, a0, a1
 	ret
 

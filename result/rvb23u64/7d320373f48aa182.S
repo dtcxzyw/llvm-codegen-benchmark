@@ -7,7 +7,7 @@ func0000000000000002:
 
 func0000000000000000:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11
@@ -34,8 +34,7 @@ func000000000000000e:
 
 func000000000000001f:
 	addi	a0, a0, 21
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -16
 	and	a0, a0, a1
 	add	a0, a0, a1

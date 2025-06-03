@@ -4,7 +4,7 @@ func0000000000000000:
 	lui	a2, 2048
 	and	a1, a1, a2
 	lui	a2, 1046784
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -21,10 +21,10 @@ func000000000000000b:
 	slliw	a2, a2, 24
 	or	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	lui	a2, 1044480
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -34,7 +34,7 @@ func000000000000000e:
 	or	a0, a0, a1
 	lui	a1, 16
 	or	a0, a0, a2
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a0, a0, a1
 	ret
 

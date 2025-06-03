@@ -1,6 +1,6 @@
 func0000000000000004:
 	lui	a0, 69905
-	addiw	a0, a0, 273
+	addi	a0, a0, 273
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 838861
@@ -24,7 +24,7 @@ func0000000000000003:
 func0000000000000007:
 	lui	a0, 16
 	lui	a1, 4080
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	slli	a0, a1, 32

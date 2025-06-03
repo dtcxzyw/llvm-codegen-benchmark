@@ -18,7 +18,7 @@ func0000000000000010:
 	add	a1, a1, a0
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 1864
+	addi	a1, a1, 1864
 	add	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000004:
 	vzext.vf2	v12, v10
 	lui	a0, 4096
 	vxor.vv	v8, v8, v12
-	addiw	a0, a0, 403
+	addi	a0, a0, 403
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -23,7 +23,7 @@ func0000000000000003:
 	vzext.vf2	v12, v10
 	lui	a0, 442489
 	vxor.vv	v8, v8, v12
-	addiw	a0, a0, -1691
+	addi	a0, a0, -1691
 	vmul.vx	v8, v8, a0
 	ret
 

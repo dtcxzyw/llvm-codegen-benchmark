@@ -24,9 +24,9 @@ func0000000000000208:
 	mv	a0, a1
 .LBB2_2:
 	lui	a1, 524288
-	addiw	a2, a1, 32
+	addi	a2, a1, 32
 	add	a0, a0, a2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 

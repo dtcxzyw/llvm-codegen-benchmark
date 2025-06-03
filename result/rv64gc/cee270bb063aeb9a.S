@@ -142,7 +142,7 @@ func0000000000000028:
 func0000000000000023:
 	sext.w	a2, a2
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	bgeu	a3, a2, .LBB17_2
 	li	a1, 1023
 .LBB17_2:
@@ -170,7 +170,7 @@ func0000000000000050:
 func0000000000000021:
 	sext.w	a2, a2
 	lui	a3, 878478
-	addiw	a3, a3, 1991
+	addi	a3, a3, 1991
 	bgeu	a3, a2, .LBB20_2
 	li	a1, -306
 .LBB20_2:

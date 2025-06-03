@@ -2,7 +2,7 @@ func000000000000006f:
 	add	a0, a0, a2
 	zext.w	a1, a1
 	lui	a2, 175448
-	addiw	a2, a2, 43
+	addi	a2, a2, 43
 	mul	a1, a1, a2
 	lui	a2, 15
 	addi	a2, a2, -704
@@ -15,7 +15,7 @@ func0000000000000000:
 	add	a0, a0, a2
 	zext.w	a1, a1
 	lui	a2, 235184
-	addiw	a2, a2, 1725
+	addi	a2, a2, 1725
 	mul	a1, a1, a2
 	lui	a2, 8
 	addi	a2, a2, -664

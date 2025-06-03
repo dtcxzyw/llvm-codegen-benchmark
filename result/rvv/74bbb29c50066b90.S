@@ -118,7 +118,7 @@ func0000000000000008:
 	lui	a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	addiw	a0, a0, 448
+	addi	a0, a0, 448
 	vadd.vx	v8, v8, a0
 	ret
 

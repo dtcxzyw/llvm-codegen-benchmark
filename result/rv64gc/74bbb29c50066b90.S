@@ -118,7 +118,7 @@ func0000000000000008:
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a0, a0, a1
-	addiw	a1, a2, 448
+	addi	a1, a2, 448
 	add	a0, a0, a1
 	ret
 

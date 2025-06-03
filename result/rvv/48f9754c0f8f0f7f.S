@@ -2,7 +2,7 @@ func0000000000000541:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgt.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
@@ -39,7 +39,7 @@ func000000000000002c:
 	vor.vv	v10, v10, v12
 	lui	a0, 8
 	vmseq.vi	v12, v10, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

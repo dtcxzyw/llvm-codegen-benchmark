@@ -21,7 +21,7 @@ func0000000000000030:
 	addi	a1, a1, 1586
 	sh2add.uw	a0, a1, a0
 	lui	a1, 305
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	add	a0, a0, a1
 	ret
 

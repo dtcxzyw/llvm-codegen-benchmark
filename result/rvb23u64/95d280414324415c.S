@@ -32,7 +32,7 @@ func000000000000008c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, -9
+	addi	a3, a3, -9
 	snez	a1, a1
 	sltu	a2, a2, a3
 	and	a0, a0, a1

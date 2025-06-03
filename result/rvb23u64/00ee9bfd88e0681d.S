@@ -18,7 +18,7 @@ func00000000000001e4:
 	addi	a2, a2, -10
 	add.uw	a1, a2, a1
 	lui	a2, 8
-	addiw	a2, a2, -1309
+	addi	a2, a2, -1309
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

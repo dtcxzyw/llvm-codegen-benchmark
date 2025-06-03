@@ -6,7 +6,7 @@ func0000000000000001:
 	mulhu	a0, a0, a1
 	lui	a1, 43691
 	srli	a0, a0, 37
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	sh1add	a1, a1, a1

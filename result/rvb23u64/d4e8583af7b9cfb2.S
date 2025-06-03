@@ -5,11 +5,10 @@ func0000000000000001:
 
 func000000000000001e:
 	slli	a0, a0, 1
-	li	a1, -1
+	bseti	a1, zero, 33
 	addi	a0, a0, 2
-	slli	a1, a1, 33
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a1, a1, -2
+	orn	a0, a0, a1
 	ret
 
 func0000000000000004:
@@ -33,7 +32,7 @@ func0000000000000000:
 	slli	a0, a0, 3
 	lui	a1, 64
 	addi	a0, a0, -8
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	or	a0, a0, a1
 	ret
 

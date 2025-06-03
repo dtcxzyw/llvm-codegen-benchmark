@@ -25,7 +25,7 @@ func000000000000000d:
 
 func0000000000000000:
 	lui	a3, 1048575
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

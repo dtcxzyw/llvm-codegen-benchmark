@@ -12,7 +12,7 @@ func000000000000004c:
 	lui	a3, 320
 	and	a1, a1, a3
 	lui	a3, 32
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	xor	a2, a2, a3
 	binvi	a1, a1, 20
 	seqz	a2, a2

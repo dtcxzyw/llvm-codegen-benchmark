@@ -8,9 +8,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	li	a2, 1
+	bseti	a2, zero, 40
 	srli	a0, a0, 40
-	slli	a2, a2, 40
 	addi	a2, a2, -1280
 	add	a1, a1, a2
 	addi	a2, a2, 1024
@@ -41,8 +40,7 @@ func0000000000000007:
 	ret
 
 func0000000000000000:
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	srli	a1, a1, 1

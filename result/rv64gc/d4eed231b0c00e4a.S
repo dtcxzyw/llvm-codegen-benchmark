@@ -3,7 +3,7 @@ func0000000000000008:
 	addi	a3, a3, 1024
 	addw	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2
@@ -14,7 +14,7 @@ func0000000000000048:
 	addi	a3, a3, 1024
 	addw	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2

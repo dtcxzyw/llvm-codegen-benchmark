@@ -70,7 +70,7 @@ func0000000000000006:
 	vadd.vi	v10, v10, 2
 	lui	a0, 12
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 847
+	addi	a0, a0, 847
 	vmslt.vx	v0, v8, a0
 	ret
 

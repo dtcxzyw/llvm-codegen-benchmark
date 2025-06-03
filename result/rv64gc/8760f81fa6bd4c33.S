@@ -2,7 +2,7 @@ func0000000000000009:
 	lui	a1, 8
 	lui	a2, 524296
 	addi	a1, a1, -1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	addw	a1, a1, a0
 	mul	a2, a1, a2
 	srli	a2, a2, 32

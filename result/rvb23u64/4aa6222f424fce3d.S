@@ -16,7 +16,7 @@ func000000000000002a:
 	li	a3, -1024
 	sext.w	a1, a1
 	czero.nez	a0, a3, a0
-	addiw	a3, a2, 1131
+	addi	a3, a2, 1131
 	slt	a1, a3, a1
 	addi	a0, a0, 1131
 	czero.nez	a0, a0, a1

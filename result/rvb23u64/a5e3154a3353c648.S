@@ -12,7 +12,7 @@ func000000000000002c:
 	srli	a2, a2, 40
 	xor	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 27
 	slli	a2, a2, 11

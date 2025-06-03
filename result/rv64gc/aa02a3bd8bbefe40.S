@@ -35,7 +35,7 @@ func000000000000002a:
 	or	a1, a1, a0
 	lui	a0, 176
 	bnez	a1, .LBB2_2
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 .LBB2_2:
 	ret
 

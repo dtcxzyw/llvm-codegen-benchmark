@@ -10,7 +10,7 @@ func00000000000000af:
 	lui	a2, 7
 	addi	a1, a1, 1
 	sh3add.uw	a0, a1, a0
-	addiw	a1, a2, -856
+	addi	a1, a2, -856
 	add	a0, a0, a1
 	ret
 

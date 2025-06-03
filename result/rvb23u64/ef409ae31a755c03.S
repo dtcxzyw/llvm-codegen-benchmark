@@ -30,7 +30,7 @@ func000000000000000f:
 	sext.w	a1, a1
 	or	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, -1802
+	addi	a1, a1, -1802
 	mul	a0, a0, a1
 	ret
 
@@ -38,7 +38,7 @@ func000000000000000e:
 	sext.w	a1, a1
 	or	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bseti	a1, a1, 32
 	bseti	a1, a1, 48
 	mul	a0, a0, a1

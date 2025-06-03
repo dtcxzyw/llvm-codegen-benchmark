@@ -10,7 +10,7 @@ func0000000000000061:
 func0000000000000026:
 	sext.w	a0, a0
 	lui	a2, 7
-	addiw	a2, a2, 1793
+	addi	a2, a2, 1793
 	blt	a0, a2, .LBB1_2
 	li	a0, 15
 	slli	a0, a0, 9
@@ -49,7 +49,7 @@ func0000000000000021:
 func0000000000000004:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bltu	a0, a2, .LBB5_2
 	lui	a0, 256
 	ret

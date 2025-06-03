@@ -28,7 +28,7 @@ func000000000000000d:
 	lui	a0, 1048575
 	vsrl.vi	v10, v10, 3
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	ret
 

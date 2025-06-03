@@ -77,9 +77,8 @@ func0000000000000015:
 func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	li	a0, 1
+	bseti	a0, zero, 40
 	vsll.vi	v8, v8, 8
-	slli	a0, a0, 40
 	addi	a0, a0, -1280
 	vadd.vx	v8, v8, a0
 	ret

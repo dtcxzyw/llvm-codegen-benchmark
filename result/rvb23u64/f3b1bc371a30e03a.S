@@ -25,7 +25,7 @@ func0000000000000013:
 func0000000000000003:
 	sub	a0, a0, a1
 	lui	a1, 524
-	addiw	a1, a1, 1179
+	addi	a1, a1, 1179
 	minu	a0, a0, a1
 	li	a1, 1000
 	mul	a0, a0, a1

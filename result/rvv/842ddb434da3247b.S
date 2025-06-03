@@ -22,7 +22,7 @@ func0000000000000004:
 
 func000000000000000a:
 	lui	a0, 24390
-	addiw	a0, a0, -1440
+	addi	a0, a0, -1440
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vminu.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10

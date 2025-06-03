@@ -32,7 +32,7 @@ func000000000000001b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 163151
-	addiw	a0, a0, -1201
+	addi	a0, a0, -1201
 	vmul.vx	v10, v10, a0
 	li	a0, 32
 	vsrl.vx	v10, v10, a0

@@ -40,7 +40,7 @@ func00000000000000a6:
 	lui	a1, 3
 	czero.eqz	a2, a3, a2
 	addw	a0, a0, a2
-	addiw	a1, a1, 1487
+	addi	a1, a1, 1487
 	slt	a0, a0, a1
 	ret
 

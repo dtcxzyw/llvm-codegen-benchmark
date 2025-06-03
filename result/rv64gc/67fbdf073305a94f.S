@@ -28,7 +28,7 @@ func0000000000003084:
 func000000000000318c:
 	sltiu	a2, a2, -1
 	lui	a3, 74565
-	addiw	a3, a3, 1656
+	addi	a3, a3, 1656
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	xor	a1, a1, a3
@@ -42,7 +42,7 @@ func000000000000318c:
 func0000000000003021:
 	lui	a3, 131072
 	or	a0, a0, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	snez	a1, a2
 	seqz	a0, a0
@@ -61,7 +61,7 @@ func00000000000004d4:
 func0000000000001021:
 	lui	a3, 262144
 	or	a0, a0, a1
-	addiw	a1, a3, -55
+	addi	a1, a3, -55
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1

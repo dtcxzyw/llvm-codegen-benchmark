@@ -7,8 +7,7 @@ func000000000000001f:
 func000000000000000b:
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 38
+	bseti	a1, zero, 38
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	ret
@@ -35,7 +34,7 @@ func0000000000000005:
 	zext.w	a1, a1
 	mul	a0, a0, a1
 	lui	a1, 122
-	addiw	a1, a1, 288
+	addi	a1, a1, 288
 	add	a0, a0, a1
 	ret
 
@@ -74,7 +73,7 @@ func000000000000001e:
 	sext.w	a1, a1
 	lui	a2, 522248
 	mul	a0, a0, a1
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	slli	a2, a1, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -124,7 +123,7 @@ func0000000000000002:
 	zext.w	a1, a1
 	mul	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, 448
+	addi	a1, a1, 448
 	add	a0, a0, a1
 	ret
 

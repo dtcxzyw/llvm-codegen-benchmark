@@ -21,7 +21,7 @@ func0000000000000006:
 	ld	a1, %lo(.LCPI1_0)(a1)
 	mulhu	a0, a0, a1
 	lui	a1, 210
-	addiw	a1, a1, -1167
+	addi	a1, a1, -1167
 	slli	a1, a1, 12
 	srli	a0, a0, 26
 	addi	a1, a1, 1881
@@ -37,7 +37,7 @@ func0000000000000004:
 	srli	a0, a0, 2
 	mulhu	a0, a0, a1
 	lui	a1, 205
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a1, a1, 12
 	srli	a0, a0, 2
 	addi	a1, a1, -819

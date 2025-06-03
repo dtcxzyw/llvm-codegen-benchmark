@@ -19,7 +19,7 @@ func000000000000000a:
 func0000000000000000:
 	mulw	a1, a1, a2
 	lui	a2, 525314
-	addiw	a2, a2, 17
+	addi	a2, a2, 17
 	mul	a2, a1, a2
 	srli	a2, a2, 32
 	add	a1, a1, a2

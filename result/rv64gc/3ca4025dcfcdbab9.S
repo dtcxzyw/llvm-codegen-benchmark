@@ -1,6 +1,6 @@
 func0000000000000038:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	bltu	a2, a1, .LBB0_2
 	addi	a0, a1, -1
 .LBB0_2:

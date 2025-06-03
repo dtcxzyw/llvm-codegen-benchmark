@@ -2,7 +2,7 @@ func000000000000001f:
 	lui	a3, 917506
 	slli	a1, a1, 32
 	sext.w	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slli	a3, a3, 19
 	addi	a3, a3, 7
 	and	a2, a2, a3

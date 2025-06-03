@@ -4,7 +4,7 @@ func0000000000000008:
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	lui	a3, 599186
-	addiw	a3, a3, 1171
+	addi	a3, a3, 1171
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	mul	a3, a3, a0

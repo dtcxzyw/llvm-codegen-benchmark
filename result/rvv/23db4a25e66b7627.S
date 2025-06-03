@@ -33,7 +33,7 @@ func0000000000000898:
 	vmsltu.vv	v0, v10, v12
 	lui	a0, 25600
 	vmerge.vvm	v8, v14, v8, v0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

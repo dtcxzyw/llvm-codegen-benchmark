@@ -20,7 +20,7 @@ func0000000000000003:
 	slli	a3, a2, 32
 	add.uw	a2, a2, a3
 	lui	a3, 2048
-	addiw	a3, a3, 128
+	addi	a3, a3, 128
 	bseti	a3, a3, 39
 	bseti	a3, a3, 55
 	and	a1, a1, a3

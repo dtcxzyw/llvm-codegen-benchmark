@@ -33,7 +33,7 @@ func0000000000000020:
 
 func0000000000000030:
 	lui	a2, 2
-	addiw	a2, a2, 1015
+	addi	a2, a2, 1015
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1

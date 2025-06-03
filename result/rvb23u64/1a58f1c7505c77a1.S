@@ -16,7 +16,7 @@ func000000000000000c:
 	subw	a1, a1, a2
 	lui	a2, 18
 	sh1add	a0, a1, a0
-	addiw	a1, a2, 992
+	addi	a1, a2, 992
 	add	a0, a0, a1
 	ret
 

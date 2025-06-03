@@ -71,7 +71,7 @@ func0000000000000d8c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 10
-	addiw	a0, a0, -960
+	addi	a0, a0, -960
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

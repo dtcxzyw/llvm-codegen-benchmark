@@ -34,7 +34,7 @@ func0000000000000021:
 func0000000000000019:
 	srliw	a1, a1, 1
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a0, a0, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

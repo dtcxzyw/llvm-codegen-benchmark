@@ -12,8 +12,7 @@ func000000000000003c:
 	li	a0, 23
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -8
 	vand.vx	v12, v12, a0
 	vsub.vv	v8, v10, v8

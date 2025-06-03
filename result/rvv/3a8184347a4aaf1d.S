@@ -24,7 +24,7 @@ func0000000000000001:
 
 func0000000000000013:
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vrsub.vi	v10, v8, 0
@@ -33,7 +33,7 @@ func0000000000000013:
 
 func0000000000000003:
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vrsub.vi	v10, v8, 0

@@ -2,7 +2,7 @@ func0000000000000003:
 	andi	a2, a2, 1
 	lui	a3, 1048544
 	addi	a2, a2, -1
-	addiw	a3, a3, -9
+	addi	a3, a3, -9
 	andi	a2, a2, 4
 	and	a1, a1, a3
 	addiw	a3, a3, 8

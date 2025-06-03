@@ -29,7 +29,7 @@ func000000000000022a:
 	addi	a1, a1, 15
 	andi	a1, a1, -16
 	addw	a0, a0, a1
-	addiw	a1, a2, 1792
+	addi	a1, a2, 1792
 	slt	a0, a1, a0
 	ret
 

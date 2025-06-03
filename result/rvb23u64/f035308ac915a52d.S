@@ -135,8 +135,7 @@ func0000000000000e98:
 func0000000000000084:
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -4
 	sltu	a1, a1, a2
 	and	a0, a0, a1

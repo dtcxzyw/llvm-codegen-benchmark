@@ -87,7 +87,7 @@ func0000000000000146:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	min	a1, a1, a2
 	slt	a0, a1, a0
 	ret
@@ -107,7 +107,7 @@ func0000000000000108:
 	sext.w	a0, a0
 	sext.w	a2, a1
 	lui	a3, 272
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a3, a2
 	lui	a3, 16
 	addi	a3, a3, -3

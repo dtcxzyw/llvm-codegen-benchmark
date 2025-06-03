@@ -103,7 +103,7 @@ func0000000000000202:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -816
+	addi	a2, a2, -816
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -143,7 +143,7 @@ func0000000000000308:
 	zext.h	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -222
-	addiw	a2, a2, -173
+	addi	a2, a2, -173
 	snez	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
@@ -180,7 +180,7 @@ func0000000000000118:
 	zext.h	a1, a1
 	lui	a2, 1
 	sltiu	a1, a1, 3
-	addiw	a2, a2, 73
+	addi	a2, a2, 73
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1

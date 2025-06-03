@@ -11,7 +11,7 @@ func0000000000000003:
 func0000000000000002:
 	or	a1, a1, a2
 	lui	a2, 12
-	addiw	a2, a2, 1016
+	addi	a2, a2, 1016
 	and	a1, a1, a2
 	lui	a2, 262141
 	slli	a2, a2, 2

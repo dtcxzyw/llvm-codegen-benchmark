@@ -4,7 +4,7 @@ func000000000000060a:
 	sh1add	a0, a1, a0
 	lui	a1, 52429
 	addiw	a0, a0, -48
-	addiw	a1, a1, -821
+	addi	a1, a1, -821
 	slt	a0, a1, a0
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000a08:
 	sh1add	a0, a1, a0
 	lui	a1, 52429
 	addiw	a0, a0, -48
-	addiw	a1, a1, -821
+	addi	a1, a1, -821
 	sltu	a0, a1, a0
 	ret
 
@@ -61,7 +61,7 @@ func0000000000000208:
 	lui	a2, 12336
 	add	a0, a0, a1
 	addiw	a0, a0, -1
-	addiw	a1, a2, 771
+	addi	a1, a2, 771
 	sltu	a0, a1, a0
 	ret
 
@@ -71,7 +71,7 @@ func0000000000000601:
 	sh1add	a0, a1, a0
 	lui	a1, 52429
 	sext.w	a0, a0
-	addiw	a1, a1, -772
+	addi	a1, a1, -772
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

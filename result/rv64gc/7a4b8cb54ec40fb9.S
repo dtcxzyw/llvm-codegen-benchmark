@@ -136,7 +136,7 @@ func0000000000000318:
 	bgeu	a2, a0, .LBB8_2
 .LBB8_4:
 	lui	a0, 8
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	ret
 
 func0000000000000084:
@@ -167,11 +167,11 @@ func000000000000014a:
 	mv	a0, a1
 	ret
 .LBB10_3:
-	addiw	a1, a2, 1544
+	addi	a1, a2, 1544
 	li	a3, 8
 	bge	a3, a0, .LBB10_2
 .LBB10_4:
-	addiw	a0, a2, 1533
+	addi	a0, a2, 1533
 	ret
 
 func0000000000000024:
@@ -209,18 +209,18 @@ func0000000000000294:
 func00000000000000c6:
 	sext.w	a2, a0
 	lui	a0, 198
-	addiw	a3, a0, -1008
+	addi	a3, a0, -1008
 	mv	a0, a1
 	blt	a2, a3, .LBB13_3
 	lui	a1, 132
-	addiw	a1, a1, -672
+	addi	a1, a1, -672
 	blt	a2, a1, .LBB13_4
 .LBB13_2:
 	ret
 .LBB13_3:
 	li	a0, 160
 	lui	a1, 132
-	addiw	a1, a1, -672
+	addi	a1, a1, -672
 	bge	a2, a1, .LBB13_2
 .LBB13_4:
 	li	a0, 208

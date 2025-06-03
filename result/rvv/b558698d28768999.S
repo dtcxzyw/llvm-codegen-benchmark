@@ -24,7 +24,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 21
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
 

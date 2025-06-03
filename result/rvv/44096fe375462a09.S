@@ -26,8 +26,7 @@ func000000000000001f:
 	ret
 
 func0000000000000013:
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0

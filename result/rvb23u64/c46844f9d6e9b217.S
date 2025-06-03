@@ -50,7 +50,7 @@ func0000000000000204:
 	add	a0, a0, a1
 	lui	a1, 64
 	add	a0, a0, a2
-	addiw	a1, a1, -7
+	addi	a1, a1, -7
 	sltu	a0, a0, a1
 	ret
 

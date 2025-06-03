@@ -32,7 +32,7 @@ func0000000000000000:
 	addi	a1, a1, 2
 	lui	a2, 175448
 	zext.w	a1, a1
-	addiw	a2, a2, 43
+	addi	a2, a2, 43
 	mul	a1, a1, a2
 	lui	a2, 16
 	srli	a1, a1, 40
@@ -60,7 +60,7 @@ func000000000000002f:
 	addi	a1, a1, -128
 	lui	a2, 426088
 	srliw	a1, a1, 2
-	addiw	a2, a2, 105
+	addi	a2, a2, 105
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	slli	a2, a1, 7
@@ -73,7 +73,7 @@ func000000000000000f:
 	add	a1, a1, a2
 	lui	a2, 426088
 	srliw	a1, a1, 2
-	addiw	a2, a2, 105
+	addi	a2, a2, 105
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	slli	a2, a1, 7

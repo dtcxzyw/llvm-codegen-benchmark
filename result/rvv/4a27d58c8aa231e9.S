@@ -1,12 +1,12 @@
 func0000000000000004:
 	lui	a0, 1048575
-	addiw	a1, a0, 10
+	addi	a1, a0, 10
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v10, v8, a1
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 10
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

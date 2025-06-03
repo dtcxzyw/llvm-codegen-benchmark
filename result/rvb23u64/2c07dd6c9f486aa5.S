@@ -60,7 +60,7 @@ func0000000000000604:
 	sext.w	a1, a1
 	lui	a3, 131072
 	xor	a2, a2, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	snez	a2, a2
 	xor	a1, a1, a3
 	seqz	a1, a1

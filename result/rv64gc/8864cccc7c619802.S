@@ -7,7 +7,7 @@ func0000000000000001:
 	addi	a0, a0, -585
 	mulw	a0, a1, a0
 	lui	a1, 149797
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
 

@@ -170,7 +170,7 @@ func0000000000000301:
 	sltiu	a1, a1, 49
 	lui	a2, 349525
 	xori	a1, a1, 1
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -195,7 +195,7 @@ func0000000000000088:
 func0000000000000114:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a1, a2, a1
 	sltiu	a0, a0, 48
 	or	a0, a0, a1

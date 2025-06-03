@@ -9,7 +9,7 @@ func0000000000000031:
 	lui	a1, 921600
 	addi	a0, a0, -2
 	snez	a0, a0
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	or	a0, a0, a1
 	ret
 

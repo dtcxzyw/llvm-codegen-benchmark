@@ -11,7 +11,7 @@ func0000000000000021:
 	srli	a2, a2, 32
 	xor	a0, a0, a2
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a2, a2, 20
 	and	a1, a1, a2
 	or	a0, a0, a1

@@ -2,7 +2,7 @@ func0000000000000010:
 	andi	a2, a2, 1
 	lui	a3, 1048571
 	sext.w	a1, a1
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	czero.nez	a2, a3, a2
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
@@ -43,7 +43,7 @@ func000000000000001f:
 func0000000000000000:
 	andi	a2, a2, 1
 	lui	a3, 5
-	addiw	a3, a3, 960
+	addi	a3, a3, 960
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a2
 	add.uw	a0, a1, a0

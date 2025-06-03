@@ -33,7 +33,7 @@ func00000000000000a8:
 	or	a1, a1, a2
 	lui	a2, 5
 	sub	a1, a1, a0
-	addiw	a0, a2, -480
+	addi	a0, a2, -480
 	sltu	a0, a0, a1
 	ret
 

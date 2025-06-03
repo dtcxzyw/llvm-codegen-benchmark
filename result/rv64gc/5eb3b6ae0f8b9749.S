@@ -2,7 +2,7 @@ func0000000000000005:
 	sext.w	a2, a1
 	lui	a1, 1048574
 	beqz	a2, .LBB0_2
-	addiw	a0, a1, -810
+	addi	a0, a1, -810
 	ret
 .LBB0_2:
 	addi	a1, a1, -809
@@ -22,7 +22,7 @@ func0000000000000004:
 	sext.w	a2, a1
 	lui	a1, 1048574
 	beqz	a2, .LBB2_2
-	addiw	a0, a1, -810
+	addi	a0, a1, -810
 	ret
 .LBB2_2:
 	addi	a1, a1, -809
@@ -68,7 +68,7 @@ func0000000000000020:
 	li	a3, 1
 	lui	a1, 648056
 	bltu	a3, a2, .LBB7_2
-	addiw	a0, a1, -1608
+	addi	a0, a1, -1608
 	ret
 .LBB7_2:
 	addi	a1, a1, -1607

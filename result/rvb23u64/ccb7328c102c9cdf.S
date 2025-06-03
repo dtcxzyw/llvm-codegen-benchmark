@@ -20,7 +20,7 @@ func0000000000000086:
 	lui	a1, 262144
 	srli	a2, a2, 34
 	addw	a0, a0, a2
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret
 

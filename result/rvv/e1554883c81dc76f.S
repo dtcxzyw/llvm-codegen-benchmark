@@ -51,7 +51,7 @@ func00000000000000a6:
 
 func0000000000000186:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
@@ -86,7 +86,7 @@ func0000000000000104:
 
 func0000000000000086:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10

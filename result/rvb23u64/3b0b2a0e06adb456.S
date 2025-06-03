@@ -42,7 +42,7 @@ func0000000000000003:
 func0000000000000010:
 	slli	a0, a0, 16
 	lui	a1, 786432
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	or	a0, a0, a1
 	ret
 

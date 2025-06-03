@@ -2,7 +2,7 @@ func0000000000000001:
 	sext.w	a2, a2
 	lui	a3, 4096
 	not	a0, a0
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	xor	a2, a2, a3
 	seqz	a2, a2
 	and	a0, a0, a1

@@ -6,7 +6,7 @@ func0000000000000007:
 	mulhu	a1, a1, a2
 	lui	a2, 16
 	srli	a1, a1, 31
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -19,7 +19,7 @@ func0000000000000006:
 	mulhu	a1, a1, a2
 	lui	a2, 16
 	srli	a1, a1, 39
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

@@ -13,7 +13,7 @@ func0000000000000001:
 	and	a1, a1, a3
 	beqz	a1, .LBB1_2
 	lui	a0, 1041824
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	and	a0, a0, a2
 	lui	a1, 6144
 	or	a0, a0, a1

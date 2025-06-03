@@ -48,7 +48,7 @@ func0000000000000014:
 	lui	a0, 8
 	vmul.vv	v8, v8, v12
 	vsll.vi	v8, v8, 3
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

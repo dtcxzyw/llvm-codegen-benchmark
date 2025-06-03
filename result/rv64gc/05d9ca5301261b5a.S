@@ -31,7 +31,7 @@ func0000000000000003:
 	slli	a0, a0, 5
 	sub	a0, a0, a3
 	lui	a3, 1
-	addiw	a3, a3, -1712
+	addi	a3, a3, -1712
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

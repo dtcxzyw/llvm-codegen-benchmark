@@ -35,7 +35,7 @@ func0000000000000005:
 	slli	a1, a1, 56
 	lui	a2, 4
 	srli	a1, a1, 40
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

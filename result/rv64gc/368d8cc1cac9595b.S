@@ -132,10 +132,10 @@ func0000000000000418:
 func000000000000050c:
 	sext.w	a0, a0
 	lui	a3, 262144
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	slt	a2, a3, a2
 	lui	a3, 786432
-	addiw	a3, a3, 2
+	addi	a3, a3, 2
 	or	a1, a1, a2
 	slt	a0, a0, a3
 	or	a0, a0, a1

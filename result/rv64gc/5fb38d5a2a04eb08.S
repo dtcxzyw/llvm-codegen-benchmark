@@ -1,6 +1,6 @@
 func0000000000000020:
 	lui	a2, 1280
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	bgeu	a2, a0, .LBB0_2
 	lui	a1, 256
 .LBB0_2:

@@ -31,9 +31,8 @@ func0000000000000081:
 
 func0000000000000008:
 	sub	a0, a0, a1
-	li	a1, 1
+	bseti	a1, zero, 35
 	srli	a0, a0, 3
-	slli	a1, a1, 35
 	slli.uw	a0, a0, 3
 	addi	a1, a1, -8
 	xor	a0, a0, a1

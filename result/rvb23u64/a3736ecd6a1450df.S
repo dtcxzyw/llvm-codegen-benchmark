@@ -11,7 +11,7 @@ func0000000000000001:
 	sext.w	a2, a0
 	lui	a3, 8
 	addi	a4, a3, 1301
-	addiw	a3, a3, 1299
+	addi	a3, a3, 1299
 	addw	a1, a1, a4
 	xor	a2, a2, a3
 	czero.nez	a1, a1, a2

@@ -10,7 +10,7 @@ func0000000000000021:
 
 func000000000000002a:
 	lui	a2, 65536
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a2, a2, a1
 	czero.eqz	a1, a1, a2

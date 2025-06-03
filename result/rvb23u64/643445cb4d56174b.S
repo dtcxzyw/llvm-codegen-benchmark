@@ -37,7 +37,7 @@ func00000000000004c6:
 	max	a1, a1, a2
 	lui	a2, 262144
 	max	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a0, a2
 	ret
 

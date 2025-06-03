@@ -15,7 +15,7 @@ func0000000000000061:
 
 func0000000000000034:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	addi	a1, a1, -1
 	and	a0, a0, a2
@@ -25,7 +25,7 @@ func0000000000000034:
 func0000000000000074:
 	lui	a2, 8
 	slli	a0, a0, 48
-	addiw	a2, a2, -456
+	addi	a2, a2, -456
 	addiw	a3, a2, 455
 	and	a1, a1, a3
 	add	a1, a1, a2

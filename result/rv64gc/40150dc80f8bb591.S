@@ -4,7 +4,7 @@ func0000000000000008:
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	lui	a1, 298
-	addiw	a1, a1, 95
+	addi	a1, a1, 95
 	slli	a1, a1, 13
 	addi	a1, a1, 1023
 	sltu	a0, a1, a0
@@ -16,7 +16,7 @@ func0000000000000004:
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	lui	a1, 3662
-	addiw	a1, a1, 449
+	addi	a1, a1, 449
 	sltu	a0, a0, a1
 	ret
 
@@ -79,7 +79,7 @@ func0000000000000028:
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	lui	a1, 12
-	addiw	a1, a1, 848
+	addi	a1, a1, 848
 	sltu	a0, a1, a0
 	ret
 

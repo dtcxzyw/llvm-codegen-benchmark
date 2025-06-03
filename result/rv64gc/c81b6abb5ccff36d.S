@@ -24,7 +24,7 @@ func000000000000007f:
 
 func000000000000001c:
 	lui	a2, 32
-	addiw	a2, a2, -12
+	addi	a2, a2, -12
 	add	a1, a1, a2
 	addiw	a2, a2, 10
 	and	a1, a1, a2
@@ -35,7 +35,7 @@ func000000000000001c:
 func0000000000000010:
 	addi	a1, a1, 7
 	lui	a2, 4
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -1

@@ -3,7 +3,7 @@ func000000000000048c:
 	li	a2, -1488
 	sh3add	a0, a2, a0
 	lui	a2, 3
-	addiw	a2, a2, 63
+	addi	a2, a2, 63
 	srliw	a0, a0, 4
 	xor	a1, a1, a2
 	sltiu	a0, a0, 1893
@@ -15,7 +15,7 @@ func000000000000008c:
 	sext.w	a1, a0
 	lui	a2, 1032192
 	addi	a3, a2, -1
-	addiw	a2, a2, 511
+	addi	a2, a2, 511
 	addw	a0, a0, a3
 	sltu	a0, a0, a2
 	snez	a1, a1

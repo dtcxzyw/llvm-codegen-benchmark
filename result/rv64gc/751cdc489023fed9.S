@@ -10,7 +10,7 @@ func0000000000000008:
 	li	a2, 63
 	bgeu	a2, a1, .LBB1_2
 	lui	a0, 262144
-	addiw	a0, a0, 369
+	addi	a0, a0, 369
 .LBB1_2:
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000006:
 	slli	a1, a1, 56
 	bgez	a1, .LBB2_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB2_2:
 	ret
 

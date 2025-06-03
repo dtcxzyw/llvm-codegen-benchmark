@@ -30,7 +30,7 @@ func0000000000000006:
 	lui	a2, 244
 	add	a0, a0, a1
 	sraiw	a0, a0, 31
-	addiw	a1, a2, 576
+	addi	a1, a2, 576
 	and	a0, a0, a1
 	ret
 

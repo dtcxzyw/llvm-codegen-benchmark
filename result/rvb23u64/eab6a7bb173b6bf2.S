@@ -31,7 +31,7 @@ func0000000000000130:
 	slli	a0, a0, 11
 	lui	a2, 32
 	add	a0, a0, a1
-	addiw	a2, a2, 20
+	addi	a2, a2, 20
 	add	a0, a0, a2
 	ret
 

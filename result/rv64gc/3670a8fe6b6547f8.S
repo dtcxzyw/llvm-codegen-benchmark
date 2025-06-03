@@ -50,7 +50,7 @@ func0000000000000028:
 
 func0000000000000009:
 	lui	a2, 1048561
-	addiw	a2, a2, 1440
+	addi	a2, a2, 1440
 	add	a2, a2, a1
 	sltu	a1, a1, a2
 	addi	a1, a1, -1

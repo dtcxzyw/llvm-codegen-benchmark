@@ -1,7 +1,6 @@
 func0000000000000001:
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 35
+	bseti	a1, zero, 35
 	addi	a1, a1, -8
 	add	a0, a0, a1
 	srli	a0, a0, 3

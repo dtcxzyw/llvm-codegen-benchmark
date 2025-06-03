@@ -2,7 +2,7 @@ func00000000000000c1:
 	sub	a1, a1, a2
 	lui	a2, 1
 	andi	a0, a0, 15
-	addiw	a2, a2, -15
+	addi	a2, a2, -15
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

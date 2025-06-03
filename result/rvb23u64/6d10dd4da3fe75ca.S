@@ -27,7 +27,7 @@ func0000000000000001:
 
 func0000000000000026:
 	lui	a3, 1
-	addiw	a3, a3, -96
+	addi	a3, a3, -96
 	max	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0
@@ -67,7 +67,7 @@ func000000000000002a:
 
 func000000000000000c:
 	lui	a3, 1045696
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	max	a2, a2, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1

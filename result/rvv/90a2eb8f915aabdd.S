@@ -3,7 +3,7 @@ func0000000000000008:
 	vor.vv	v10, v10, v12
 	lui	a0, 61440
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsrl.vi	v8, v8, 4
 	slli	a0, a0, 24
 	addi	a0, a0, 15
@@ -15,7 +15,7 @@ func000000000000000e:
 	vor.vv	v10, v10, v12
 	lui	a0, 61440
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsrl.vi	v8, v8, 4
 	slli	a0, a0, 24
 	addi	a0, a0, 15

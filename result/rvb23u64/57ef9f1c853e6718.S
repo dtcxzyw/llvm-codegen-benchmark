@@ -39,7 +39,7 @@ func0000000000000005:
 func0000000000000000:
 	slli	a0, a0, 56
 	lui	a1, 65536
-	addiw	a1, a1, -691
+	addi	a1, a1, -691
 	slli	a1, a1, 8
 	mulhu	a0, a0, a1
 	addi	a0, a0, 2047

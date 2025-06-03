@@ -24,7 +24,7 @@ func0000000000000014:
 func0000000000000056:
 	sh3add	a0, a1, a0
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2

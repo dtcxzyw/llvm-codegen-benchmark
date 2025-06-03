@@ -1,7 +1,7 @@
 func0000000000000000:
 	add	a1, a1, a2
 	lui	a2, 64
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1048512
 	and	a1, a1, a2
@@ -38,7 +38,7 @@ func0000000000000028:
 func0000000000000010:
 	add	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 63
+	addi	a2, a2, 63
 	add	a1, a1, a2
 	andi	a1, a1, -2048
 	bclri	a1, a1, 11

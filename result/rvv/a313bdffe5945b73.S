@@ -98,7 +98,7 @@ func0000000000000694:
 	vzext.vf2	v14, v12
 	lui	a0, 16
 	vmsltu.vv	v12, v8, v14
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret

@@ -4,8 +4,8 @@ func0000000000000061:
 	srliw	a0, a0, 5
 	lui	a1, 42950
 	lui	a2, 838861
-	addiw	a1, a1, -1339
-	addiw	a2, a2, -819
+	addi	a1, a1, -1339
+	addi	a2, a2, -819
 	mul	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2
@@ -26,7 +26,7 @@ func0000000000000041:
 	lui	a1, 335544
 	lui	a2, 838861
 	addi	a1, a1, 1311
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	slli	a1, a2, 32

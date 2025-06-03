@@ -6,14 +6,14 @@ func0000000000000033:
 	li	a0, 12
 	add	a0, a0, a2
 	lui	a1, 7
-	addiw	a1, a1, -872
+	addi	a1, a1, -872
 	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a0, 10
 	add	a0, a0, a2
 	lui	a1, 7
-	addiw	a1, a1, -872
+	addi	a1, a1, -872
 	add	a0, a0, a1
 	ret
 

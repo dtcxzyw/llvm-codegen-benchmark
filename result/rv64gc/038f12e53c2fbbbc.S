@@ -32,12 +32,12 @@ func000000000000000e:
 	or	a0, a0, a2
 	bnez	a1, .LBB3_2
 	lui	a1, 319552
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 .LBB3_2:
 	lui	a1, 385088
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 
@@ -48,12 +48,12 @@ func000000000000001e:
 	or	a0, a0, a2
 	bnez	a1, .LBB4_2
 	lui	a1, 319552
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 .LBB4_2:
 	lui	a1, 385088
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 

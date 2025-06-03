@@ -36,7 +36,7 @@ func0000000000000086:
 	sext.w	a0, a0
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	add	a1, a1, a2
 	addiw	a2, a2, 3
 	and	a1, a1, a2

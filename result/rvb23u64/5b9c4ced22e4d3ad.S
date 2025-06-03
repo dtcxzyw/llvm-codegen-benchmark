@@ -39,10 +39,10 @@ func000000000000070a:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 633
-	addiw	a2, a2, -768
+	addi	a2, a2, -768
 	slt	a1, a2, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -51,10 +51,10 @@ func000000000000030a:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 633
-	addiw	a2, a2, -768
+	addi	a2, a2, -768
 	slt	a1, a2, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -63,7 +63,7 @@ func000000000000054a:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 37
-	addiw	a2, a2, -1552
+	addi	a2, a2, -1552
 	slti	a0, a0, 4
 	slt	a1, a2, a1
 	xori	a0, a0, 1

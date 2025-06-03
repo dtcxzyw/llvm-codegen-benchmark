@@ -129,7 +129,7 @@ func0000000000000148:
 	li	a1, 1014
 	czero.eqz	a0, a1, a0
 	lui	a1, 3
-	addiw	a1, a1, 677
+	addi	a1, a1, 677
 	add	a0, a0, a1
 	ret
 
@@ -148,7 +148,7 @@ func0000000000000306:
 	lui	a2, 1048568
 	sltu	a1, a2, a1
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	li	a1, 2

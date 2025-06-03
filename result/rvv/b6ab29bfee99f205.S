@@ -45,7 +45,7 @@ func0000000000000018:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	lui	a1, 251
-	addiw	a1, a1, 434
+	addi	a1, a1, 434
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a1
 	vmulhu.vx	v10, v8, a0

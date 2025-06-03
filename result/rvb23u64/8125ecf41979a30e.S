@@ -13,7 +13,7 @@ func000000000000001e:
 
 func000000000000000a:
 	lui	a1, 315653
-	addiw	a1, a1, -702
+	addi	a1, a1, -702
 	mul	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 32
@@ -24,7 +24,7 @@ func000000000000000a:
 func000000000000001c:
 	sh1add	a0, a0, a0
 	lui	a1, 522248
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	slli	a2, a1, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

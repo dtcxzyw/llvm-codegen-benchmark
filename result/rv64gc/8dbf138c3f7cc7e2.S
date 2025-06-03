@@ -14,7 +14,7 @@ func000000000000000d:
 	andi	a1, a1, 1
 	sll	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	add	a0, a0, a1
 	ret
 

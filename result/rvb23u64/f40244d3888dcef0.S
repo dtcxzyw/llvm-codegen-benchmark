@@ -13,7 +13,7 @@ func0000000000000004:
 	li	a2, 1
 	lui	a3, 244
 	maxu	a1, a1, a2
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	sltu	a0, a0, a3
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

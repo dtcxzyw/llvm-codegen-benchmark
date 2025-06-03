@@ -28,7 +28,7 @@ func000000000000004a:
 	srai	a1, a1, 32
 	slt	a0, a1, a0
 	lui	a1, 1
-	addiw	a1, a1, -27
+	addi	a1, a1, -27
 	czero.eqz	a0, a1, a0
 	ret
 

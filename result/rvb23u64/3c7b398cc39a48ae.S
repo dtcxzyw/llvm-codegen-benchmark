@@ -24,7 +24,7 @@ func0000000000000184:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, -1423
+	addi	a3, a3, -1423
 	sltiu	a1, a1, -80
 	xor	a2, a2, a3
 	snez	a2, a2

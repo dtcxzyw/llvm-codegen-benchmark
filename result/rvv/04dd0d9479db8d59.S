@@ -3,7 +3,7 @@ func0000000000000042:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v10, v8, a0
 	lui	a0, 1
-	addiw	a0, a0, -591
+	addi	a0, a0, -591
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -33,7 +33,7 @@ func0000000000000050:
 
 func0000000000000182:
 	lui	a0, 1048400
-	addiw	a0, a0, 1398
+	addi	a0, a0, 1398
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v10, v8, a0
 	vmseq.vi	v11, v8, 1

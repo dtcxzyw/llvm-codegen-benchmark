@@ -7,7 +7,7 @@ func0000000000000018:
 func0000000000000008:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1023
+	addi	a2, a2, -1023
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -29,7 +29,7 @@ func0000000000000529:
 	lui	a3, 8
 	slti	a4, a1, 1240
 	czero.eqz	a2, a2, a4
-	addiw	a4, a3, 1131
+	addi	a4, a3, 1131
 	slt	a1, a4, a1
 	addi	a2, a2, 1131
 	czero.nez	a2, a2, a1

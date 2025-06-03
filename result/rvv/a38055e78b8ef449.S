@@ -2,8 +2,8 @@ func0000000000000118:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -8
 	lui	a0, 1048560
-	addiw	a1, a0, -17
-	addiw	a0, a0, 23
+	addi	a1, a0, -17
+	addi	a0, a0, 23
 	vadd.vx	v10, v10, a1
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
@@ -23,7 +23,7 @@ func0000000000000208:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -4
 	lui	a0, 1048568
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vadd.vx	v10, v10, a1
 	lui	a1, 1
 	vmsltu.vx	v12, v10, a0

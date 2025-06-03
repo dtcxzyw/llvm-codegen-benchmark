@@ -84,7 +84,7 @@ func00000000000000d4:
 	vsext.vf2	v14, v12
 	lui	a0, 16
 	vmslt.vv	v12, v10, v14
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

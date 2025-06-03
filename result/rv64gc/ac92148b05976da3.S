@@ -75,7 +75,7 @@ func0000000000000014:
 	mv	a0, a1
 .LBB10_2:
 	lui	a1, 1
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -84,7 +84,7 @@ func0000000000000026:
 	mv	a0, a1
 .LBB11_2:
 	lui	a1, 488
-	addiw	a1, a1, 1152
+	addi	a1, a1, 1152
 	slt	a0, a0, a1
 	ret
 

@@ -6,7 +6,7 @@ func0000000000000155:
 	vmacc.vx	v12, a0, v10
 	lui	a0, 1048563
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -80
+	addi	a0, a0, -80
 	vadd.vx	v8, v8, a0
 	ret
 

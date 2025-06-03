@@ -42,11 +42,11 @@ func00000000000000a8:
 
 func0000000000000104:
 	lui	a0, 950920
-	addiw	a1, a0, -1025
+	addi	a1, a0, -1025
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	vmacc.vv	v12, v10, v8
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vmsltu.vx	v0, v12, a0
 	ret
 
@@ -116,17 +116,17 @@ func0000000000000094:
 	vmv.v.i	v12, 2
 	lui	a0, 4
 	vmacc.vv	v12, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v12, a0
 	ret
 
 func0000000000000098:
 	lui	a0, 1048572
-	addiw	a1, a0, 1
+	addi	a1, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	vmacc.vv	v12, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v12, a0
 	ret
 

@@ -55,7 +55,7 @@ func0000000000000144:
 func0000000000000181:
 	lui	a3, 4
 	slli	a1, a1, 3
-	addiw	a3, a3, 272
+	addi	a3, a3, 272
 	add	a2, a2, a3
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -242,7 +242,7 @@ func0000000000000165:
 func0000000000000189:
 	lui	a3, 2
 	slli	a1, a1, 3
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	add	a2, a2, a3
 	add	a0, a0, a1
 	sltu	a0, a0, a2

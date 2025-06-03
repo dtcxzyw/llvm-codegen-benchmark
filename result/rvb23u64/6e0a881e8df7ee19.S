@@ -60,7 +60,7 @@ func0000000000000038:
 func0000000000000000:
 	slli	a1, a1, 56
 	lui	a2, 65536
-	addiw	a2, a2, -1357
+	addi	a2, a2, -1357
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
@@ -71,7 +71,7 @@ func0000000000000000:
 func000000000000000c:
 	slli	a1, a1, 56
 	lui	a2, 65536
-	addiw	a2, a2, -1715
+	addi	a2, a2, -1715
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

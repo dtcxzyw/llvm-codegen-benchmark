@@ -16,7 +16,7 @@ func000000000000003e:
 	vsrl.vi	v12, v10, 30
 	lui	a0, 442489
 	vxor.vv	v10, v12, v10
-	addiw	a0, a0, -1691
+	addi	a0, a0, -1691
 	vmadd.vx	v10, a0, v8
 	vadd.vi	v8, v10, 2
 	ret

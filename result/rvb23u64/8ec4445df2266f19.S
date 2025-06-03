@@ -15,7 +15,7 @@ func000000000000001a:
 	subw	a0, a0, a1
 	lui	a1, 1048568
 	addiw	a0, a0, -9
-	addiw	a1, a1, 767
+	addi	a1, a1, 767
 	max	a0, a0, a1
 	ret
 

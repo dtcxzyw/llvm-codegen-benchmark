@@ -9,7 +9,7 @@ func0000000000000000:
 func0000000000000001:
 	sext.w	a0, a0
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	min	a0, a0, a1
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
@@ -35,7 +35,7 @@ func0000000000000004:
 func0000000000000003:
 	sext.w	a0, a0
 	lui	a1, 272
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	min	a0, a0, a1
 	sh2add	a0, a0, a0
 	sext.w	a0, a0

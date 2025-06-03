@@ -3,7 +3,7 @@ func000000000000000f:
 	lui	a2, 699051
 	srli	a3, a1, 30
 	srli	a1, a1, 28
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a1, a1, a3
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -21,7 +21,7 @@ func000000000000000d:
 	lui	a2, 699051
 	srli	a3, a1, 30
 	srli	a1, a1, 28
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a1, a1, a3
 	slli	a3, a2, 32
 	add	a2, a2, a3

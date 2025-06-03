@@ -25,7 +25,7 @@ func0000000000000050:
 	lui	a0, 244
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	ret

@@ -2,7 +2,7 @@ func000000000000000f:
 	andi	a1, a1, 1
 	andi	a2, a2, 1
 	lui	a3, 1
-	addiw	a3, a3, -1906
+	addi	a3, a3, -1906
 	czero.eqz	a2, a3, a2
 	li	a3, 2001
 	addi	a2, a2, 939

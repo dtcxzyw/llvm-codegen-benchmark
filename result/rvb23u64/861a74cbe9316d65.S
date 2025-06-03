@@ -61,7 +61,7 @@ func0000000000000144:
 	czero.nez	a3, a3, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a3
-	addiw	a1, a2, 905
+	addi	a1, a2, 905
 	sltu	a0, a0, a1
 	ret
 

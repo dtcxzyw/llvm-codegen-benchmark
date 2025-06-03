@@ -106,9 +106,9 @@ func000000000000014a:
 	lui	a3, 3
 	czero.nez	a1, a2, a1
 	slti	a2, a0, 7
-	addiw	a4, a3, 1544
+	addi	a4, a3, 1544
 	slti	a0, a0, 9
-	addiw	a3, a3, 1533
+	addi	a3, a3, 1533
 	addi	a1, a1, 2047
 	czero.nez	a4, a4, a2
 	addi	a1, a1, 601

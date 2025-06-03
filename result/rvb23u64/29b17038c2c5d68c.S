@@ -8,7 +8,7 @@ func000000000000000c:
 	mulw	a1, a1, a2
 	lui	a2, 12
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 672
+	addi	a1, a2, 672
 	add	a0, a0, a1
 	ret
 

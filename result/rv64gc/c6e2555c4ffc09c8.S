@@ -1,7 +1,7 @@
 func0000000000000001:
 	slli	a1, a1, 63
 	lui	a2, 786432
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a3, a2, 62
 	add	a2, a2, a3
 	lui	a3, 262144

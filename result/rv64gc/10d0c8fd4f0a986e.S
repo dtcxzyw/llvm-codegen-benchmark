@@ -232,7 +232,7 @@ func0000000000000066:
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	slt	a0, a0, a1
 	ret
 
@@ -302,7 +302,7 @@ func0000000000000014:
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 804435
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	sltu	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000002a:
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 1048064
@@ -23,7 +23,7 @@ func0000000000000006:
 
 func0000000000000022:
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 1048064

@@ -33,7 +33,7 @@ func00000000000001f8:
 	addi	a1, a1, 1
 	mulw	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	sltu	a0, a1, a0
 	ret
 

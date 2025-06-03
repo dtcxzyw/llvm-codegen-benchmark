@@ -4,7 +4,7 @@ func00000000000001ef:
 	sub	a1, a1, a3
 	lui	a3, 1
 	zext.b	a0, a0
-	addiw	a3, a3, -496
+	addi	a3, a3, -496
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -26,7 +26,7 @@ func00000000000000f5:
 	sub	a1, a1, a3
 	lui	a3, 21
 	zext.b	a0, a0
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

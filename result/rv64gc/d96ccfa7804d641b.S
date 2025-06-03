@@ -2,7 +2,7 @@ func0000000000000085:
 	sext.w	a1, a0
 	bnez	a1, .LBB0_2
 	lui	a0, 965810
-	addiw	a0, a0, -712
+	addi	a0, a0, -712
 	ret
 .LBB0_2:
 	addi	a0, a0, -1075
@@ -15,7 +15,7 @@ func0000000000000084:
 	sext.w	a1, a0
 	bnez	a1, .LBB1_2
 	lui	a0, 192535
-	addiw	a0, a0, 1788
+	addi	a0, a0, 1788
 	ret
 .LBB1_2:
 	addi	a0, a0, -1077
@@ -39,7 +39,7 @@ func0000000000000087:
 	sext.w	a1, a0
 	bnez	a1, .LBB3_2
 	lui	a0, 1045667
-	addiw	a0, a0, -599
+	addi	a0, a0, -599
 	ret
 .LBB3_2:
 	addi	a0, a0, -152

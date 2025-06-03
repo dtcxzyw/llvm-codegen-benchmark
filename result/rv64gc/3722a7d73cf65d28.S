@@ -2,7 +2,7 @@ func0000000000000146:
 	slli	a0, a0, 48
 	lui	a3, 1024162
 	srai	a0, a0, 48
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	add	a2, a2, a3
 	slt	a1, a1, a2
 	slti	a0, a0, 10

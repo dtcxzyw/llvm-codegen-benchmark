@@ -22,7 +22,7 @@ func0000000000000541:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 1
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret

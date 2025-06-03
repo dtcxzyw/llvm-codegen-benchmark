@@ -4,7 +4,7 @@ func0000000000000002:
 	srli	a3, a0, 8
 	srliw	a4, a0, 24
 	srli	a1, a1, 48
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	or	a0, a0, a1
 	and	a3, a3, a2
 	slliw	a1, a0, 24

@@ -18,7 +18,7 @@ func0000000000000000:
 	lui	a1, 67109
 	or	a0, a0, a2
 	zext.w	a0, a0
-	addiw	a1, a1, -557
+	addi	a1, a1, -557
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret

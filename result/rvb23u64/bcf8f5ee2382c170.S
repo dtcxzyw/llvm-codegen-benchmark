@@ -1,6 +1,5 @@
 func0000000000000013:
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -4
 	sh2add	a1, a1, a2
 	srli	a1, a1, 2
@@ -43,9 +42,8 @@ func0000000000000014:
 
 func0000000000000038:
 	slli	a1, a1, 1
-	li	a2, 1
+	bseti	a2, zero, 33
 	addi	a1, a1, 1032
-	slli	a2, a2, 33
 	addi	a2, a2, -248
 	and	a1, a1, a2
 	add	a0, a0, a1

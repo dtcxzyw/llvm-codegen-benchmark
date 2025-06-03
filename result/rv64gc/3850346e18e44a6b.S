@@ -24,13 +24,13 @@ func0000000000000009:
 	li	a2, 64
 	beq	a1, a2, .LBB2_2
 	lui	a1, 2
-	addiw	a1, a1, 1027
+	addi	a1, a1, 1027
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	ret
 .LBB2_2:
 	lui	a1, 3
-	addiw	a1, a1, 1027
+	addi	a1, a1, 1027
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	ret

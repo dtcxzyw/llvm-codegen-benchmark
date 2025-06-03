@@ -1,7 +1,7 @@
 func0000000000000033:
 	andi	a1, a1, 1
 	lui	a3, 2
-	addiw	a3, a3, 368
+	addi	a3, a3, 368
 	mul	a0, a0, a3
 	add	a2, a2, a0
 	bnez	a1, .LBB0_2

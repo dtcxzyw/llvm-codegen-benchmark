@@ -24,7 +24,7 @@ func000000000000001f:
 	srli	a0, a0, 2
 	vand.vx	v8, v8, a0
 	lui	a0, 64
-	addiw	a0, a0, -4
+	addi	a0, a0, -4
 	vadd.vx	v8, v8, a0
 	ret
 

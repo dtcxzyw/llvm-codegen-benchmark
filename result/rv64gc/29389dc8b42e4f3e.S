@@ -5,7 +5,7 @@ func000000000000000c:
 .LBB0_2:
 	sext.w	a1, a0
 	lui	a2, 596523
-	addiw	a2, a2, 965
+	addi	a2, a2, 965
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000002:
 .LBB1_2:
 	sext.w	a0, a0
 	lui	a1, 174763
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 35

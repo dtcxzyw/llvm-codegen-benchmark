@@ -4,7 +4,7 @@ func000000000000000c:
 	and	a0, a0, a1
 	lui	a1, 61681
 	neg	a0, a0
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 
@@ -23,7 +23,7 @@ func0000000000000008:
 	and	a0, a0, a1
 	lui	a1, 2
 	addi	a0, a0, -1
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	and	a0, a0, a1
 	ret
 

@@ -10,7 +10,7 @@ func0000000000000106:
 	czero.eqz	a1, a2, a1
 	lui	a2, 1048458
 	add	a0, a0, a1
-	addiw	a1, a2, 1504
+	addi	a1, a2, 1504
 	add	a0, a0, a1
 	ret
 

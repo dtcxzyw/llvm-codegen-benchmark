@@ -9,7 +9,7 @@ func0000000000000014:
 	li	a2, 17
 	bgeu	a1, a2, .LBB1_2
 	lui	a0, 65536
-	addiw	a0, a0, 353
+	addi	a0, a0, 353
 .LBB1_2:
 	ret
 

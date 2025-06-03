@@ -13,14 +13,14 @@ func0000000000000009:
 	bltu	a1, a2, .LBB1_2
 	li	a1, 16
 	lui	a2, 1048572
-	addiw	a2, a2, -921
+	addi	a2, a2, -921
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 24
 	lui	a2, 1048572
-	addiw	a2, a2, -921
+	addi	a2, a2, -921
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

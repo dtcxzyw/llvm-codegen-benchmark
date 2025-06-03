@@ -21,7 +21,7 @@ func00000000000000ff:
 	vsll.vi	v10, v10, 6
 	lui	a0, 5142
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -32,7 +32,7 @@ func000000000000007f:
 	vsll.vi	v10, v10, 6
 	lui	a0, 5142
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0

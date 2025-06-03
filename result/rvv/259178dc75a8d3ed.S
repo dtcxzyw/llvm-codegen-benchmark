@@ -19,7 +19,7 @@ func0000000000000068:
 	vsra.vi	v8, v8, 3
 	lui	a1, 699051
 	srli	a0, a0, 32
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	vand.vx	v10, v10, a0
 	slli	a0, a1, 32
 	add	a0, a0, a1

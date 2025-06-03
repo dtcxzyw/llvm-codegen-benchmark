@@ -25,7 +25,7 @@ func0000000000000041:
 	sext.w	a0, a0
 	beqz	a0, .LBB3_2
 	lui	a0, 907461
-	addiw	a0, a0, 265
+	addi	a0, a0, 265
 	ret
 .LBB3_2:
 	addw	a0, a1, a2

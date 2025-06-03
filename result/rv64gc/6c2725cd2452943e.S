@@ -36,7 +36,7 @@ func0000000000000064:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a1, a2, a1
 	negw	a1, a1
 	andi	a1, a1, 10

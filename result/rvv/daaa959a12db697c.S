@@ -4,7 +4,7 @@ func000000000000001f:
 	li	a0, 32
 	vwsll.vx	v12, v14, a0
 	lui	a0, 1048510
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	bclri	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0

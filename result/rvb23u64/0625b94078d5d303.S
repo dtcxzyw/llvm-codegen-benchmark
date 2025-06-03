@@ -26,7 +26,7 @@ func0000000000000003:
 func0000000000000000:
 	subw	a0, a0, a1
 	lui	a1, 2575
-	addiw	a1, a1, -325
+	addi	a1, a1, -325
 	slli	a1, a1, 13
 	mul	a0, a0, a1
 	ret

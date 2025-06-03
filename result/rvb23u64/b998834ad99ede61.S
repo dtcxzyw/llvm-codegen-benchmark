@@ -2,7 +2,7 @@ func0000000000000001:
 	slli	a1, a1, 63
 	lui	a2, 1047560
 	srli	a1, a1, 49
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func0000000000000006:
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a0, a0, a1
 	ret
 

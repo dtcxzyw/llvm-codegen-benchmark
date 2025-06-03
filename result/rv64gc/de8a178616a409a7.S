@@ -8,7 +8,7 @@ func0000000000000028:
 	ret
 .LBB0_2:
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltu	a0, a2, a0
@@ -43,14 +43,14 @@ func0000000000000038:
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltu	a0, a2, a0
 	ret
 .LBB3_2:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltu	a0, a2, a0

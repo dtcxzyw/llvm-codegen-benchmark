@@ -32,7 +32,7 @@ func0000000000000007:
 
 func0000000000000031:
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	li	a2, 2
 	czero.eqz	a1, a2, a1
@@ -42,7 +42,7 @@ func0000000000000031:
 
 func0000000000000033:
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	li	a2, 2
 	czero.eqz	a1, a2, a1

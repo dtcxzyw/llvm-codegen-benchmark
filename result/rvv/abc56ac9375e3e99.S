@@ -21,7 +21,7 @@ func0000000000000003:
 	vadd.vv	v8, v8, v10
 	vand.vx	v8, v8, a0
 	lui	a0, 2
-	addiw	a0, a0, 1015
+	addi	a0, a0, 1015
 	vmul.vx	v8, v8, a0
 	ret
 

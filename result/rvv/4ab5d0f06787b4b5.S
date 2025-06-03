@@ -1,6 +1,6 @@
 func000000000000000d:
 	lui	a0, 1048574
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmerge.vim	v12, v12, 1, v0
@@ -12,7 +12,7 @@ func000000000000000d:
 
 func0000000000000005:
 	lui	a0, 1048574
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmerge.vim	v12, v12, 1, v0

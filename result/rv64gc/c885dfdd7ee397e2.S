@@ -2,7 +2,7 @@ func00000000000000a5:
 	lui	a3, 16
 	zext.b	a2, a2
 	slli	a1, a1, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
 	and	a1, a1, a3
@@ -36,7 +36,7 @@ func00000000000000a1:
 	lui	a3, 16
 	zext.b	a2, a2
 	slli	a1, a1, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
 	and	a1, a1, a3
@@ -48,7 +48,7 @@ func00000000000000a4:
 	lui	a3, 16
 	zext.b	a2, a2
 	slli	a1, a1, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
 	and	a1, a1, a3
@@ -59,7 +59,7 @@ func00000000000000a8:
 	lui	a3, 16
 	zext.b	a2, a2
 	slli	a1, a1, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a0, a0, a3
 	and	a1, a1, a3

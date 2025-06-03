@@ -35,8 +35,7 @@ func000000000000003f:
 
 func0000000000000060:
 	sh2add	a0, a1, a0
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -4
 	and	a1, a1, a2
 	add	a0, a0, a1

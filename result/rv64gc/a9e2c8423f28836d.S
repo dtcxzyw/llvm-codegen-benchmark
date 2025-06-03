@@ -11,11 +11,11 @@ func0000000000000021:
 func000000000000042a:
 	sext.w	a0, a0
 	lui	a3, 16
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	and	a2, a2, a3
 	lui	a3, 14
 	addiw	a1, a1, -1
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	xor	a2, a2, a3
 	seqz	a2, a2
 	slt	a0, a0, a1

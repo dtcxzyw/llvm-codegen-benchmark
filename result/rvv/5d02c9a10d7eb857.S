@@ -40,7 +40,7 @@ func0000000000000004:
 	vsub.vv	v8, v12, v8
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048575
-	addiw	a0, a0, 1616
+	addi	a0, a0, 1616
 	vmsltu.vx	v0, v8, a0
 	ret
 

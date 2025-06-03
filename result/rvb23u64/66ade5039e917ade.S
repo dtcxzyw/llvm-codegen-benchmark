@@ -68,7 +68,7 @@ func0000000000000014:
 	subw	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
-	addiw	a1, a1, -19
+	addi	a1, a1, -19
 	sltu	a0, a0, a1
 	ret
 
@@ -76,7 +76,7 @@ func0000000000000018:
 	subw	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	sltu	a0, a1, a0
 	ret
 

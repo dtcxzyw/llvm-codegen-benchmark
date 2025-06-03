@@ -24,7 +24,7 @@ func0000000000000000:
 	lui	a2, 589824
 	andn	a1, a1, a2
 	lui	a2, 397312
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	czero.nez	a0, a2, a0
 	lui	a2, 524288
 	or	a1, a1, a2

@@ -22,7 +22,7 @@ func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
 	lui	a0, 4
-	addiw	a0, a0, -2047
+	addi	a0, a0, -2047
 	vmsltu.vx	v0, v8, a0
 	ret
 

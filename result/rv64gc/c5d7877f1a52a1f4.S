@@ -43,7 +43,7 @@ func0000000000000013:
 func000000000000001f:
 	sext.w	a2, a2
 	lui	a3, 256
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a1, a1, a3
 	and	a1, a1, a2
 	slli	a1, a1, 3

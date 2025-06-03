@@ -3,7 +3,7 @@ func0000000000000065:
 	sext.w	a1, a1
 	add	a0, a0, a2
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37
@@ -19,7 +19,7 @@ func0000000000000064:
 	sext.w	a1, a1
 	add	a0, a0, a2
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37
@@ -35,7 +35,7 @@ func0000000000000060:
 	sext.w	a1, a1
 	add	a0, a0, a2
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37

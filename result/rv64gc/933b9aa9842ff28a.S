@@ -15,7 +15,7 @@ func0000000000000060:
 	add	a1, a1, a2
 	lui	a2, 610
 	srli	a0, a0, 32
-	addiw	a2, a2, 1452
+	addi	a2, a2, 1452
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

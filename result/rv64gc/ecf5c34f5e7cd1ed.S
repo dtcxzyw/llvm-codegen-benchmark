@@ -34,7 +34,7 @@ func0000000000000005:
 	srai	a0, a0, 32
 	lui	a2, 420
 	add	a0, a0, a1
-	addiw	a1, a2, 1103
+	addi	a1, a2, 1103
 	add	a0, a0, a1
 	ret
 

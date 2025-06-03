@@ -30,7 +30,7 @@ func000000000000004c:
 func0000000000000054:
 	sext.h	a1, a0
 	lui	a2, 8
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slti	a1, a1, 0
 	and	a0, a0, a2
 	seqz	a0, a0
@@ -58,7 +58,7 @@ func0000000000000308:
 func0000000000000118:
 	zext.h	a1, a0
 	lui	a2, 16
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	addi	a0, a0, -48
 	snez	a0, a0

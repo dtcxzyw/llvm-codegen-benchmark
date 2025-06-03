@@ -5,7 +5,7 @@ func0000000000000054:
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 65536
-	addiw	a2, a2, -225
+	addi	a2, a2, -225
 	srli	a1, a1, 43
 	slli	a2, a2, 4
 	mul	a1, a1, a2
@@ -19,7 +19,7 @@ func000000000000007c:
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 65536
-	addiw	a2, a2, -225
+	addi	a2, a2, -225
 	srli	a1, a1, 43
 	slli	a2, a2, 4
 	mul	a1, a1, a2

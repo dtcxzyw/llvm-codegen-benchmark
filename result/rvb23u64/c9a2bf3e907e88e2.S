@@ -8,7 +8,7 @@ func0000000000000003:
 
 func0000000000000010:
 	lui	a3, 72
-	addiw	a3, a3, -1453
+	addi	a3, a3, -1453
 	sltu	a2, a3, a2
 	li	a3, 200
 	czero.nez	a1, a1, a2

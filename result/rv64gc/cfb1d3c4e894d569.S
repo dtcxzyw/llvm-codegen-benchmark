@@ -42,7 +42,7 @@ func0000000000000008:
 	beqz	a0, .LBB3_4
 .LBB3_2:
 	lui	a0, 262144
-	addiw	a0, a0, -5
+	addi	a0, a0, -5
 	sltu	a0, a0, a1
 	ret
 .LBB3_3:
@@ -50,7 +50,7 @@ func0000000000000008:
 	bnez	a0, .LBB3_2
 .LBB3_4:
 	lui	a0, 262144
-	addiw	a0, a0, -5
+	addi	a0, a0, -5
 	sltu	a0, a0, a3
 	ret
 

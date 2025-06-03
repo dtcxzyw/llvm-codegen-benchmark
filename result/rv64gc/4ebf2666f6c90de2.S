@@ -34,7 +34,7 @@ func0000000000000165:
 
 func00000000000001e8:
 	lui	a1, 2
-	addiw	a1, a1, 792
+	addi	a1, a1, 792
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

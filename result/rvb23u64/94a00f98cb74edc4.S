@@ -21,7 +21,7 @@ func0000000000000068:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 244138
-	addiw	a2, a2, 752
+	addi	a2, a2, 752
 	minu	a1, a1, a2
 	li	a2, 1250
 	sh3add	a1, a2, a1
@@ -32,7 +32,7 @@ func0000000000000021:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -1023
+	addi	a2, a2, -1023
 	minu	a1, a1, a2
 	addiw	a1, a1, -16
 	xor	a0, a0, a1

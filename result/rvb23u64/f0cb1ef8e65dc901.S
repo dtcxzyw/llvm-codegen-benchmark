@@ -16,7 +16,7 @@ func0000000000000004:
 	li	a1, 16
 	sll	a0, a1, a0
 	lui	a1, 4
-	addiw	a1, a1, -2047
+	addi	a1, a1, -2047
 	sltu	a0, a0, a1
 	ret
 

@@ -76,7 +76,7 @@ func00000000000000d4:
 	sext.w	a2, a2
 	slt	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

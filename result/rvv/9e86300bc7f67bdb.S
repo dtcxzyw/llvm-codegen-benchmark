@@ -17,7 +17,7 @@ func000000000000018a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	lui	a0, 1172
-	addiw	a0, a0, -511
+	addi	a0, a0, -511
 	bseti	a0, a0, 63
 	vmsgt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
@@ -189,7 +189,7 @@ func0000000000000108:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
 	lui	a0, 1
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -220,8 +220,8 @@ func0000000000000081:
 
 func0000000000000314:
 	lui	a0, 1
-	addiw	a1, a0, -1097
-	addiw	a0, a0, -1096
+	addi	a1, a0, -1097
+	addi	a0, a0, -1096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a1
 	vmsltu.vx	v10, v8, a0
@@ -284,7 +284,7 @@ func0000000000000026:
 
 func0000000000000088:
 	lui	a0, 1
-	addiw	a0, a0, -1931
+	addi	a0, a0, -1931
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	li	a0, 2047
@@ -296,7 +296,7 @@ func0000000000000144:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v12, v10, 7
 	lui	a0, 8
-	addiw	a0, a0, -767
+	addi	a0, a0, -767
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -312,7 +312,7 @@ func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 0
 	lui	a0, 256
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -351,7 +351,7 @@ func0000000000000286:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v12, v10, 1
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -389,7 +389,7 @@ func000000000000030a:
 
 func0000000000000306:
 	lui	a0, 1
-	addiw	a0, a0, -1096
+	addi	a0, a0, -1096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
 	vmsle.vi	v10, v8, -1

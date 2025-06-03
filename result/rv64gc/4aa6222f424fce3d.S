@@ -18,13 +18,13 @@ func000000000000002a:
 	bnez	a0, .LBB1_2
 	li	a0, 107
 	lui	a2, 8
-	addiw	a2, a2, 1131
+	addi	a2, a2, 1131
 	blt	a2, a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	li	a0, 1131
 	lui	a2, 8
-	addiw	a2, a2, 1131
+	addi	a2, a2, 1131
 	bge	a2, a1, .LBB1_4
 .LBB1_3:
 	lui	a0, 8

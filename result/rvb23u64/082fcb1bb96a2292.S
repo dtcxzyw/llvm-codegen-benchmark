@@ -17,8 +17,8 @@ func0000000000000024:
 	lui	a3, 7
 	addi	a1, a1, -86
 	czero.eqz	a1, a2, a1
-	addiw	a2, a3, -1855
-	addiw	a3, a3, -1945
+	addi	a2, a3, -1855
+	addi	a3, a3, -1945
 	sltiu	a0, a0, 5
 	or	a2, a2, a1
 	add	a1, a1, a3

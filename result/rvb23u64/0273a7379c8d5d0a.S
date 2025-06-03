@@ -3,8 +3,8 @@ func0000000000000005:
 	andi	a1, a1, 1
 	lui	a3, 1048560
 	lui	a4, 16
-	addiw	a3, a3, 15
-	addiw	a4, a4, -16
+	addi	a3, a3, 15
+	addi	a4, a4, -16
 	add	a2, a2, a3
 	czero.nez	a4, a4, a1
 	czero.eqz	a1, a2, a1

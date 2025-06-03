@@ -18,7 +18,7 @@ func000000000000000e:
 	addi	a0, a0, -47
 	lui	a1, 1047936
 	bset	a0, zero, a0
-	addiw	a1, a1, -961
+	addi	a1, a1, -961
 	slli	a1, a1, 20
 	addi	a1, a1, 1212
 	and	a0, a0, a1
@@ -29,7 +29,7 @@ func0000000000000004:
 	li	a1, 63
 	sll	a0, a1, a0
 	lui	a1, 1048064
-	addiw	a1, a1, 32
+	addi	a1, a1, 32
 	and	a0, a0, a1
 	ret
 

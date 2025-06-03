@@ -2,7 +2,7 @@ func0000000000000013:
 	slli	a2, a2, 50
 	lui	a3, 2
 	srai	a2, a2, 63
-	addiw	a3, a3, 368
+	addi	a3, a3, 368
 	andi	a2, a2, -4
 	mul	a1, a1, a3
 	add	a0, a0, a1

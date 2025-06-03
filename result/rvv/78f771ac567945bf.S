@@ -19,7 +19,7 @@ func000000000000000b:
 	vsub.vv	v8, v8, v10
 	lui	a0, 244
 	vmax.vx	v8, v8, zero
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vadd.vx	v8, v8, a0
 	ret
 

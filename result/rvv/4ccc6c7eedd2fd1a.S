@@ -4,7 +4,7 @@ func00000000000000ca:
 	lui	a0, 699051
 	vsra.vi	v8, v8, 3
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -19,7 +19,7 @@ func00000000000000c1:
 	lui	a0, 838861
 	vsra.vi	v8, v8, 2
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

@@ -2,7 +2,7 @@ func0000000000000001:
 	sub	a1, a1, a0
 	lui	a0, 16
 	srli	a2, a1, 8
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	srliw	a3, a1, 24
 	and	a2, a2, a0
 	and	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000000:
 	sub	a1, a1, a0
 	lui	a0, 16
 	srli	a2, a1, 8
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	srliw	a3, a1, 24
 	and	a2, a2, a0
 	and	a0, a0, a1

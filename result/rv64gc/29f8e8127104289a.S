@@ -50,14 +50,14 @@ func0000000000000029:
 	li	a2, 1571
 	bltu	a1, a2, .LBB4_2
 	lui	a1, 65857
-	addiw	a1, a1, 161
+	addi	a1, a1, 161
 	andi	a0, a0, 1
 	slli	a0, a0, 13
 	or	a0, a0, a1
 	ret
 .LBB4_2:
 	lui	a1, 98625
-	addiw	a1, a1, 161
+	addi	a1, a1, 161
 	andi	a0, a0, 1
 	slli	a0, a0, 13
 	or	a0, a0, a1

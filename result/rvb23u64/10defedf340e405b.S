@@ -5,7 +5,7 @@ func0000000000000000:
 	addi	a2, a2, 30
 	czero.nez	a1, a2, a1
 	lui	a2, 2
-	addiw	a2, a2, -31
+	addi	a2, a2, -31
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret

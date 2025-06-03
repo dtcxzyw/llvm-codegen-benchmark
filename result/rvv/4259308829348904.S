@@ -3,7 +3,7 @@ func0000000000000028:
 	vzext.vf8	v12, v10
 	vsra.vi	v8, v8, 2
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -15,7 +15,7 @@ func0000000000000024:
 	vzext.vf8	v12, v10
 	vsra.vi	v8, v8, 2
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -27,7 +27,7 @@ func0000000000000068:
 	vzext.vf8	v12, v10
 	vsra.vi	v8, v8, 6
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -39,7 +39,7 @@ func0000000000000026:
 	vzext.vf8	v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -51,7 +51,7 @@ func0000000000000061:
 	vzext.vf8	v12, v10
 	vsra.vi	v8, v8, 5
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

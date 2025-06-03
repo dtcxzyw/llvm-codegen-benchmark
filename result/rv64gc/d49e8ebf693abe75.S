@@ -16,7 +16,7 @@ func0000000000000012:
 
 func000000000000003f:
 	lui	a3, 16
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	addiw	a4, a3, 14
 	add	a1, a1, a3
 	and	a2, a2, a4

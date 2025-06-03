@@ -75,7 +75,7 @@ func000000000000003c:
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	lui	a1, 10126
-	addiw	a1, a1, -537
+	addi	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448
 	add	a0, a0, a1
@@ -85,7 +85,7 @@ func000000000000001f:
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	lui	a1, 10126
-	addiw	a1, a1, -537
+	addi	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448
 	add	a0, a0, a1

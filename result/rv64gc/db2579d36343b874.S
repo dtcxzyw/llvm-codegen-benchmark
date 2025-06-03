@@ -50,7 +50,7 @@ func0000000000000042:
 	zext.b	a2, a2
 	lui	a3, 2
 	seqz	a2, a2
-	addiw	a3, a3, 65
+	addi	a3, a3, 65
 	addi	a0, a0, -1
 	addi	a2, a2, -1
 	andi	a0, a0, 65

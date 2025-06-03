@@ -2,11 +2,11 @@ func0000000000000031:
 	rev8	a2, a2
 	lui	a3, 15
 	srli	a4, a2, 44
-	addiw	a3, a3, 240
+	addi	a3, a3, 240
 	and	a3, a3, a4
 	lui	a4, 3
 	srli	a2, a2, 52
-	addiw	a4, a4, 819
+	addi	a4, a4, 819
 	andi	a2, a2, -241
 	or	a2, a2, a3
 	and	a3, a2, a4
@@ -29,11 +29,11 @@ func0000000000000011:
 	rev8	a2, a2
 	lui	a3, 15
 	srli	a4, a2, 44
-	addiw	a3, a3, 240
+	addi	a3, a3, 240
 	and	a3, a3, a4
 	lui	a4, 3
 	srli	a2, a2, 52
-	addiw	a4, a4, 819
+	addi	a4, a4, 819
 	andi	a2, a2, -241
 	or	a2, a2, a3
 	and	a3, a2, a4

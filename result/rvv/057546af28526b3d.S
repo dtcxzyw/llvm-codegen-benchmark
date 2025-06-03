@@ -3,7 +3,7 @@ func000000000000000a:
 	vsrl.vi	v8, v8, 3
 	vmv.v.i	v10, -2
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v8
@@ -15,7 +15,7 @@ func000000000000000b:
 	vsrl.vi	v8, v8, 2
 	vmv.v.i	v10, -2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v8
@@ -26,7 +26,7 @@ func000000000000000e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 1

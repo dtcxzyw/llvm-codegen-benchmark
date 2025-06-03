@@ -15,7 +15,7 @@ func0000000000000298:
 	li	a2, 64
 	bltu	a0, a2, .LBB1_3
 	lui	a2, 65536
-	addiw	a2, a2, 63
+	addi	a2, a2, 63
 	bltu	a2, a0, .LBB1_4
 .LBB1_2:
 	mv	a0, a1
@@ -23,7 +23,7 @@ func0000000000000298:
 .LBB1_3:
 	li	a1, 1
 	lui	a2, 65536
-	addiw	a2, a2, 63
+	addi	a2, a2, 63
 	bgeu	a2, a0, .LBB1_2
 .LBB1_4:
 	lui	a0, 1024

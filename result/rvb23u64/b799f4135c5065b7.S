@@ -2,7 +2,7 @@ func0000000000000011:
 	srli	a3, a2, 63
 	add	a2, a2, a3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	srli	a2, a2, 1
 	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1

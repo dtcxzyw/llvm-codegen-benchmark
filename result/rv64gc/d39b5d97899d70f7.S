@@ -27,11 +27,11 @@ func0000000000000002:
 	andi	a2, a1, 1
 	lui	a1, 1048538
 	bnez	a2, .LBB2_2
-	addiw	a1, a1, 224
+	addi	a1, a1, 224
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	addiw	a1, a1, 192
+	addi	a1, a1, 192
 	add	a0, a0, a1
 	ret
 

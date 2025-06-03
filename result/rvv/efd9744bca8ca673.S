@@ -51,7 +51,7 @@ func000000000000002c:
 
 func0000000000000028:
 	lui	a0, 8
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmseq.vi	v9, v10, 0

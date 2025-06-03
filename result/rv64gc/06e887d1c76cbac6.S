@@ -8,7 +8,7 @@ func0000000000000101:
 func0000000000000084:
 	sub	a0, a0, a1
 	lui	a1, 262144
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

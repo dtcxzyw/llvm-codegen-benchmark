@@ -22,7 +22,7 @@ func0000000000000015:
 func0000000000000003:
 	bnez	a2, .LBB3_2
 	lui	a1, 1
-	addiw	a1, a1, 1025
+	addi	a1, a1, 1025
 .LBB3_2:
 	or	a0, a0, a1
 	ret

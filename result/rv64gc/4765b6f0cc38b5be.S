@@ -1,24 +1,24 @@
 func0000000000000004:
 	srli	a1, a1, 1
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	and	a1, a1, a2
 	lui	a2, 209715
 	add	a0, a0, a1
 	srli	a0, a0, 2
-	addiw	a1, a2, 819
+	addi	a1, a2, 819
 	and	a0, a0, a1
 	ret
 
 func0000000000000006:
 	srli	a1, a1, 2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	and	a1, a1, a2
 	lui	a2, 28784
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	addiw	a1, a2, 1799
+	addi	a1, a2, 1799
 	and	a0, a0, a1
 	ret
 
@@ -33,36 +33,36 @@ func0000000000000002:
 func0000000000000005:
 	srli	a1, a1, 1
 	lui	a2, 17476
-	addiw	a2, a2, 1092
+	addi	a2, a2, 1092
 	and	a1, a1, a2
 	lui	a2, 12336
 	add	a0, a0, a1
 	srli	a0, a0, 2
-	addiw	a1, a2, 771
+	addi	a1, a2, 771
 	and	a0, a0, a1
 	ret
 
 func000000000000000e:
 	srli	a1, a1, 2
 	lui	a2, 12336
-	addiw	a2, a2, 771
+	addi	a2, a2, 771
 	and	a1, a1, a2
 	lui	a2, 112
 	add	a0, a0, a1
 	srli	a0, a0, 8
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	and	a0, a0, a2
 	ret
 
 func000000000000000f:
 	srli	a1, a1, 2
 	lui	a2, 771
-	addiw	a2, a2, 48
+	addi	a2, a2, 48
 	and	a1, a1, a2
 	lui	a2, 112
 	add	a0, a0, a1
 	srli	a0, a0, 4
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	and	a0, a0, a2
 	ret
 

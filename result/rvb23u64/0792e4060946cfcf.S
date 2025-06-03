@@ -113,7 +113,7 @@ func0000000000000118:
 	zext.b	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	addi	a0, a0, -1
 	sltu	a1, a1, a2
 	snez	a0, a0

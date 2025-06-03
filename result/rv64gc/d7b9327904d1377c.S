@@ -2,8 +2,8 @@ func0000000000000781:
 	slli	a0, a0, 3
 	lui	a2, 4
 	add	a0, a0, a1
-	addiw	a3, a2, 240
-	addiw	a2, a2, 272
+	addi	a3, a2, 240
+	addi	a2, a2, 272
 	add	a0, a0, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
@@ -14,7 +14,7 @@ func0000000000000789:
 	slli	a0, a0, 3
 	lui	a2, 2
 	add	a0, a0, a1
-	addiw	a2, a2, 8
+	addi	a2, a2, 8
 	addi	a0, a0, 8
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -32,10 +32,10 @@ func0000000000000004:
 func0000000000000608:
 	add	a0, a0, a1
 	lui	a2, 7
-	addiw	a2, a2, 1676
+	addi	a2, a2, 1676
 	add	a0, a0, a2
 	lui	a2, 23
-	addiw	a2, a2, 1676
+	addi	a2, a2, 1676
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

@@ -33,12 +33,12 @@ func0000000000000002:
 func0000000000000010:
 	bltu	a2, a1, .LBB5_2
 	lui	a1, 2
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 .LBB5_2:
 	lui	a1, 18
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 

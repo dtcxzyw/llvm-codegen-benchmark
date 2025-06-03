@@ -3,7 +3,7 @@ func0000000000000021:
 	lui	a2, 916990
 	lui	a3, 279653
 	addi	a2, a2, -33
-	addiw	a3, a3, -940
+	addi	a3, a3, -940
 	and	a2, a2, a1
 	sext.w	a2, a2
 	xor	a2, a2, a3

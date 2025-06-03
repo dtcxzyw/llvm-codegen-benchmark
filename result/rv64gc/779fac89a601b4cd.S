@@ -34,7 +34,7 @@ func0000000000000024:
 	mv	a0, a1
 .LBB4_2:
 	lui	a1, 262144
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -110,7 +110,7 @@ func0000000000000034:
 	mv	a0, a1
 .LBB13_2:
 	lui	a1, 230
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

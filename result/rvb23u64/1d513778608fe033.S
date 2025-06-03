@@ -2,7 +2,7 @@ func0000000000000021:
 	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 852192
-	addiw	a2, a2, -275
+	addi	a2, a2, -275
 	sext.w	a1, a1
 	xor	a1, a1, a2
 	li	a2, -7

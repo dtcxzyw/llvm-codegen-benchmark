@@ -13,7 +13,7 @@ func0000000000000014:
 func0000000000000004:
 	add	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	add	a1, a1, a2
 	maxu	a0, a0, a1
 	ret

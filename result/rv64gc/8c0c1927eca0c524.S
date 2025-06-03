@@ -10,7 +10,7 @@ func00000000000000ec:
 func000000000000030c:
 	sext.w	a0, a0
 	lui	a2, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a2, a2, a1
 	snez	a2, a2
@@ -21,7 +21,7 @@ func000000000000030c:
 func000000000000010c:
 	sext.w	a0, a0
 	lui	a2, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a2, a2, a1
 	snez	a2, a2

@@ -26,7 +26,7 @@ func00000000000000a1:
 	.quad	768614336404564650
 func00000000000000a8:
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, %hi(.LCPI2_0)
@@ -41,7 +41,7 @@ func00000000000000a8:
 	.quad	768614336404564650
 func0000000000000088:
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, %hi(.LCPI3_0)
@@ -55,7 +55,7 @@ func0000000000000088:
 func0000000000000084:
 	srai	a1, a1, 4
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -66,7 +66,7 @@ func0000000000000084:
 func0000000000000081:
 	srai	a1, a1, 4
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -126,7 +126,7 @@ func0000000000000034:
 func000000000000008a:
 	srai	a1, a1, 4
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -157,7 +157,7 @@ func0000000000000026:
 	srai	a1, a1, 13
 	add	a1, a1, a2
 	lui	a2, 961553
-	addiw	a2, a2, 721
+	addi	a2, a2, 721
 	slli	a2, a2, 12
 	add	a0, a0, a1
 	addi	a1, a2, -647
@@ -167,7 +167,7 @@ func0000000000000026:
 func00000000000000b1:
 	srai	a1, a1, 3
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -207,14 +207,14 @@ func0000000000000008:
 	add	a1, a1, a2
 	lui	a2, 244
 	add	a0, a0, a1
-	addiw	a1, a2, 576
+	addi	a1, a2, 576
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000086:
 	srai	a1, a1, 3
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -253,7 +253,7 @@ func000000000000000a:
 func000000000000008c:
 	srai	a1, a1, 3
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -265,7 +265,7 @@ func000000000000008c:
 func00000000000000a6:
 	srai	a1, a1, 3
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2

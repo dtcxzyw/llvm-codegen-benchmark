@@ -59,7 +59,7 @@ func000000000000014c:
 	slli	a1, a1, 48
 	lui	a2, 1048569
 	srai	a1, a1, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	addi	a0, a0, -513
 	slt	a1, a2, a1
 	snez	a0, a0
@@ -100,7 +100,7 @@ func0000000000000086:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a1, a1, a2
 	slti	a0, a0, 5
 	or	a0, a0, a1
@@ -142,7 +142,7 @@ func0000000000000084:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	sltu	a1, a1, a2
 	sltiu	a0, a0, -3
 	or	a0, a0, a1
@@ -221,7 +221,7 @@ func00000000000000c4:
 	slli	a1, a1, 48
 	lui	a2, 1047552
 	srai	a1, a1, 48
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	slti	a1, a1, 0
 	sltu	a0, a0, a2
 	or	a0, a0, a1

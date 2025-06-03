@@ -37,10 +37,10 @@ func0000000000000021:
 	vmseq.vi	v8, v8, 1
 	lui	a0, 1
 	vmand.mm	v0, v8, v9
-	addiw	a1, a0, -1872
+	addi	a1, a0, -1872
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1
-	addiw	a0, a0, -1856
+	addi	a0, a0, -1856
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -61,10 +61,10 @@ func000000000000002c:
 	vmsne.vi	v8, v8, 0
 	lui	a0, 4
 	vmand.mm	v0, v8, v9
-	addiw	a1, a0, -1788
+	addi	a1, a0, -1788
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1
-	addiw	a0, a0, -1752
+	addi	a0, a0, -1752
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -79,7 +79,7 @@ func000000000000008c:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	lui	a0, 1044480
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

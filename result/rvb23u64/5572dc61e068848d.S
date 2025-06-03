@@ -17,7 +17,7 @@ func0000000000000858:
 	addi	a2, a2, -1968
 	add	a1, a1, a2
 	lui	a2, 2621
-	addiw	a2, a2, 1803
+	addi	a2, a2, 1803
 	roriw	a1, a1, 4
 	sltu	a1, a1, a2
 	snez	a0, a0

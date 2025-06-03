@@ -2,7 +2,7 @@ func0000000000000003:
 	lui	a3, 1920
 	and	a2, a2, a3
 	lui	a3, 1046656
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	sext.w	a1, a1
 	and	a0, a0, a3

@@ -19,7 +19,7 @@ func0000000000000428:
 	lui	a3, 512
 	or	a0, a0, a1
 	li	a1, 27
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	slli	a1, a1, 11
 	srliw	a0, a0, 16
 	and	a2, a2, a3

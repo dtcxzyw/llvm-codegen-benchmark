@@ -16,12 +16,12 @@ func0000000000000003:
 	srliw	a0, a1, 2
 	bnez	a2, .LBB1_2
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a1, 4
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret
 

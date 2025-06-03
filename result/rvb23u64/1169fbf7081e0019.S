@@ -33,7 +33,7 @@ func000000000000000c:
 	li	a1, -256
 	czero.eqz	a0, a1, a0
 	lui	a1, 4
-	addiw	a1, a1, -485
+	addi	a1, a1, -485
 	add	a0, a0, a1
 	ret
 

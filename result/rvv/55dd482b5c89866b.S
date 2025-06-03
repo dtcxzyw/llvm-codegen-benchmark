@@ -32,7 +32,7 @@ func0000000000000075:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v10, v8, v9
 	lui	a0, 1048540
-	addiw	a0, a0, 1359
+	addi	a0, a0, 1359
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

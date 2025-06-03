@@ -3,9 +3,9 @@ func0000000000008090:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 1
-	addiw	a4, a3, -816
+	addi	a4, a3, -816
 	seqz	a1, a1
-	addiw	a3, a3, -1640
+	addi	a3, a3, -1640
 	sltu	a2, a4, a2
 	sltu	a0, a3, a0
 	or	a0, a0, a2
@@ -77,11 +77,11 @@ func0000000000004082:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 4
-	addiw	a3, a3, -1280
+	addi	a3, a3, -1280
 	xor	a1, a1, a3
 	lui	a3, 2
 	sltiu	a2, a2, 31
-	addiw	a3, a3, 784
+	addi	a3, a3, 784
 	xor	a0, a0, a3
 	seqz	a1, a1
 	seqz	a0, a0
@@ -95,7 +95,7 @@ func0000000000004088:
 	zext.h	a2, a2
 	lui	a3, 2
 	sltiu	a2, a2, 5
-	addiw	a3, a3, 12
+	addi	a3, a3, 12
 	sltiu	a0, a0, 4
 	xor	a1, a1, a3
 	seqz	a1, a1

@@ -19,7 +19,7 @@ func000000000000000c:
 	mv	a2, a0
 	sext.w	a1, a1
 	lui	a0, 1048560
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	bnez	a1, .LBB2_2
 	and	a0, a0, a2
 .LBB2_2:
@@ -28,7 +28,7 @@ func000000000000000c:
 func000000000000000a:
 	sext.w	a1, a1
 	lui	a2, 7
-	addiw	a2, a2, 1326
+	addi	a2, a2, 1326
 	slt	a1, a2, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

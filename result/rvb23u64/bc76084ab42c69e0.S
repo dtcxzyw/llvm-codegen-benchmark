@@ -48,10 +48,10 @@ func0000000000000004:
 	sltiu	a1, a1, 64
 	and	a0, a0, a1
 	lui	a1, 6
-	addiw	a1, a1, -257
+	addi	a1, a1, -257
 	czero.eqz	a0, a1, a0
 	lui	a1, 2
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	add	a0, a0, a1
 	ret
 

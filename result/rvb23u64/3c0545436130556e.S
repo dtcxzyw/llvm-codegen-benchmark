@@ -17,7 +17,7 @@ func0000000000000005:
 func0000000000000009:
 	lui	a1, 1048570
 	lui	a2, 52429
-	addiw	a1, a1, -1540
+	addi	a1, a1, -1540
 	add	a0, a0, a1
 	slli	a1, a0, 48
 	slli	a2, a2, 4
@@ -31,7 +31,7 @@ func0000000000000009:
 func0000000000000008:
 	lui	a1, 1048571
 	lui	a2, 52429
-	addiw	a1, a1, -1347
+	addi	a1, a1, -1347
 	add	a0, a0, a1
 	slli	a1, a0, 48
 	slli	a2, a2, 4

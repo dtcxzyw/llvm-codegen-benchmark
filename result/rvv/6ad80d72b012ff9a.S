@@ -76,7 +76,7 @@ func0000000000000023:
 	lui	a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 7
-	addiw	a0, a0, 1151
+	addi	a0, a0, 1151
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 107
 	vmerge.vxm	v8, v8, a0, v0

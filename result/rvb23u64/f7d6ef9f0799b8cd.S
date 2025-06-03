@@ -13,10 +13,10 @@ func0000000000000000:
 	andi	a2, a2, 1020
 	or	a0, a0, a2
 	lui	a2, 135168
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	czero.nez	a1, a2, a1
 	lui	a2, 786432
-	addiw	a2, a2, 1026
+	addi	a2, a2, 1026
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -4,7 +4,7 @@ func0000000000000000:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, 1
-	addiw	a2, a2, 903
+	addi	a2, a2, 903
 	sh1add	a0, a0, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 10
@@ -44,7 +44,7 @@ func0000000000000008:
 	lui	a1, 118
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
-	addiw	a1, a1, 539
+	addi	a1, a1, 539
 	bseti	a1, a1, 63
 	sh2add	a0, a0, a1
 	mulhu	a0, a0, a2
@@ -55,7 +55,7 @@ func000000000000000a:
 	slli	a0, a0, 10
 	lui	a1, 699051
 	addi	a0, a0, -8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -66,7 +66,7 @@ func000000000000001e:
 	slli	a0, a0, 3
 	lui	a1, 559241
 	addi	a0, a0, 29
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1

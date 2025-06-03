@@ -66,7 +66,7 @@ func00000000000003f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
@@ -78,7 +78,7 @@ func000000000000038a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0

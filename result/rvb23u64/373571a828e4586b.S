@@ -15,7 +15,7 @@ func000000000000008a:
 	sltiu	a2, a2, 10
 	and	a0, a0, a2
 	lui	a2, 1048573
-	addiw	a2, a2, -473
+	addi	a2, a2, -473
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret
@@ -33,7 +33,7 @@ func0000000000000098:
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	lui	a3, 4
-	addiw	a3, a3, 274
+	addi	a3, a3, 274
 	sltiu	a1, a1, 64
 	sltu	a2, a2, a3
 	and	a0, a0, a2

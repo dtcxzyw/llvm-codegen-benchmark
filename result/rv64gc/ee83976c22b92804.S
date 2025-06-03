@@ -3,7 +3,7 @@ func0000000000000007:
 	mv	a0, a1
 .LBB0_2:
 	lui	a1, 25
-	addiw	a1, a1, 543
+	addi	a1, a1, 543
 	mul	a0, a0, a1
 	ret
 

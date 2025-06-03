@@ -7,8 +7,8 @@ func000000000000000f:
 func000000000000000c:
 	andi	a1, a1, 1
 	lui	a2, 8
-	addiw	a3, a2, 16
-	addiw	a2, a2, 7
+	addi	a3, a2, 16
+	addi	a2, a2, 7
 	czero.nez	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1

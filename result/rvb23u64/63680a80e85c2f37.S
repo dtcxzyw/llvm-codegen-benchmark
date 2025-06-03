@@ -32,7 +32,7 @@ func00000000000000e4:
 func00000000000000f4:
 	addiw	a1, a1, 11
 	lui	a2, 4
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	li	a2, 12
 	czero.nez	a1, a1, a0

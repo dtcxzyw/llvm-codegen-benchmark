@@ -5,7 +5,7 @@ func0000000000000032:
 	lui	a6, 4080
 	slli	a7, a1, 59
 	or	a0, a0, a2
-	addiw	a2, a3, -256
+	addi	a2, a3, -256
 	srli	a3, a0, 40
 	srli	a5, a0, 56
 	srli	a4, a0, 24

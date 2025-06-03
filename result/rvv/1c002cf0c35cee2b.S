@@ -32,7 +32,7 @@ func000000000000000a:
 
 func0000000000000004:
 	lui	a0, 227374
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	slli	a0, a0, 12
 	addi	a0, a0, -1575
 	slli	a0, a0, 18

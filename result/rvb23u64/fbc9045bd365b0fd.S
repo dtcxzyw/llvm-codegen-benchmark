@@ -37,7 +37,7 @@ func0000000000000102:
 func0000000000000302:
 	sext.w	a0, a0
 	lui	a2, 114
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	addi	a0, a0, -1152
 	and	a1, a1, a2
 	snez	a1, a1

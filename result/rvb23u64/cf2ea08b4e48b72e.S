@@ -1,7 +1,7 @@
 func0000000000000000:
 	sext.w	a0, a0
 	lui	a1, 1048574
-	addiw	a1, a1, 1990
+	addi	a1, a1, 1990
 	minu	a0, a0, a1
 	lui	a1, 2
 	addi	a1, a1, -1991

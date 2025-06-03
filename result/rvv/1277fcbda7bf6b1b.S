@@ -10,7 +10,7 @@ func0000000000000004:
 	lui	a0, 244
 	vsra.vi	v12, v12, 18
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsub.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
 	ret

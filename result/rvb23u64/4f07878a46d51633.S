@@ -26,7 +26,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 524288
-	addiw	a3, a2, 2
+	addi	a3, a2, 2
 	addiw	a2, a2, -3
 	max	a1, a1, a3
 	addiw	a1, a1, -2

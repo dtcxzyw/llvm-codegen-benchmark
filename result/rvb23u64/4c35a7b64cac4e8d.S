@@ -1,7 +1,6 @@
 func000000000000003f:
 	slli	a0, a0, 4
-	li	a1, 1
-	slli	a1, a1, 36
+	bseti	a1, zero, 36
 	addi	a1, a1, -48
 	add	a0, a0, a1
 	addi	a1, a1, 32
@@ -34,7 +33,7 @@ func000000000000003d:
 	slli	a0, a0, 4
 	lui	a1, 512
 	addi	a0, a0, 143
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, -136
 	ret
@@ -47,8 +46,7 @@ func0000000000000010:
 	ret
 
 func0000000000000001:
-	li	a1, 1
-	slli	a1, a1, 35
+	bseti	a1, zero, 35
 	addi	a1, a1, -8
 	sh3add	a0, a0, a1
 	srli	a0, a0, 3
@@ -66,7 +64,7 @@ func0000000000000037:
 func0000000000000003:
 	slli	a0, a0, 11
 	lui	a1, 2
-	addiw	a1, a1, 79
+	addi	a1, a1, 79
 	add	a0, a0, a1
 	andi	a0, a0, -1976
 	addi	a0, a0, 8

@@ -20,7 +20,7 @@ func000000000000000d:
 	lui	a0, 524288
 	vmerge.vim	v10, v10, 1, v0
 	vsll.vv	v8, v8, v10
-	addiw	a0, a0, 64
+	addi	a0, a0, 64
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -4,7 +4,7 @@ func00000000000001a1:
 	vsra.vi	v10, v10, 3
 	lui	a0, 699051
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -39,7 +39,7 @@ func00000000000001a9:
 	vsra.vi	v10, v10, 3
 	lui	a0, 838861
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -52,7 +52,7 @@ func00000000000001a8:
 	vsra.vi	v10, v10, 3
 	lui	a0, 838861
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -65,7 +65,7 @@ func00000000000001a4:
 	vsra.vi	v10, v10, 3
 	lui	a0, 838861
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

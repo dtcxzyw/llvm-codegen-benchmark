@@ -4,7 +4,7 @@ func0000000000000042:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addi	a1, a1, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a1
 	vmseq.vx	v10, v8, a0

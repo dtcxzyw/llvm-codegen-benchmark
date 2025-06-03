@@ -109,7 +109,7 @@ func00000000000000f0:
 	slli	a2, a2, 5
 	lui	a3, 256
 	addi	a2, a2, 55
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -36,7 +36,7 @@ func0000000000000006:
 	ret
 .LBB2_2:
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret

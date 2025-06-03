@@ -6,8 +6,7 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	li	a3, 1
-	slli	a3, a3, 36
+	bseti	a3, zero, 36
 	addi	a3, a3, -16
 	sub	a2, a2, a1
 	add	a2, a2, a3

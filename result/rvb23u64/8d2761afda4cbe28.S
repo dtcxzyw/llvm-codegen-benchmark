@@ -18,7 +18,7 @@ func0000000000000298:
 	lui	a3, 65536
 	or	a1, a1, a2
 	lui	a2, 1024
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	sltu	a0, a3, a0
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

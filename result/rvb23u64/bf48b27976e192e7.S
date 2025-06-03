@@ -35,7 +35,7 @@ func000000000000042a:
 	addiw	a2, a2, -1
 	slt	a0, a0, a2
 	lui	a2, 14
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

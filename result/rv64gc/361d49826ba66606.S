@@ -33,7 +33,7 @@ func0000000000000038:
 	lui	a2, 1048574
 	addi	a3, a2, -1805
 	addw	a1, a1, a3
-	addiw	a2, a2, -1806
+	addi	a2, a2, -1806
 	bgeu	a1, a2, .LBB4_2
 	li	a0, 609
 .LBB4_2:
@@ -43,7 +43,7 @@ func0000000000000024:
 	lui	a2, 1048304
 	addw	a1, a1, a2
 	lui	a2, 1048305
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	bgeu	a1, a2, .LBB5_2
 	lui	a0, 272
 .LBB5_2:
@@ -53,7 +53,7 @@ func0000000000000008:
 	lui	a2, 1048574
 	addi	a3, a2, 1342
 	addw	a1, a1, a3
-	addiw	a2, a2, 1292
+	addi	a2, a2, 1292
 	bgeu	a1, a2, .LBB6_2
 	li	a0, 63
 .LBB6_2:
@@ -63,7 +63,7 @@ func000000000000004a:
 	lui	a2, 4096
 	addw	a1, a1, a2
 	lui	a2, 8192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
@@ -72,7 +72,7 @@ func000000000000004a:
 func0000000000000061:
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	xor	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1
@@ -92,7 +92,7 @@ func000000000000000a:
 	li	a2, 1979
 	bge	a2, a1, .LBB10_2
 	lui	a0, 1048575
-	addiw	a0, a0, 216
+	addi	a0, a0, 216
 .LBB10_2:
 	ret
 

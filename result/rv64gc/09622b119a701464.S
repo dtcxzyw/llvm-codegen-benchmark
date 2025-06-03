@@ -15,11 +15,11 @@ func0000000000000068:
 	andi	a2, a1, 1
 	lui	a1, 1
 	bnez	a2, .LBB2_2
-	addiw	a1, a1, -1793
+	addi	a1, a1, -1793
 	sltu	a0, a1, a0
 	ret
 .LBB2_2:
-	addiw	a1, a1, -1537
+	addi	a1, a1, -1537
 	sltu	a0, a1, a0
 	ret
 
@@ -27,12 +27,12 @@ func0000000000000065:
 	andi	a2, a1, 1
 	lui	a1, 1
 	bnez	a2, .LBB3_2
-	addiw	a1, a1, 254
+	addi	a1, a1, 254
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 .LBB3_2:
-	addiw	a1, a1, 510
+	addi	a1, a1, 510
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

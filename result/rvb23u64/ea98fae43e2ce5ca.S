@@ -120,10 +120,10 @@ func0000000000000298:
 func0000000000000118:
 	zext.b	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 238

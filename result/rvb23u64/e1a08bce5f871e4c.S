@@ -3,7 +3,7 @@ func0000000000000000:
 	addi	a1, a1, 480
 	addw	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 904
+	addi	a1, a1, 904
 	minu	a0, a0, a1
 	li	a1, 100
 	maxu	a0, a0, a1

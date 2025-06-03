@@ -3,7 +3,7 @@ func0000000000000008:
 	lui	a0, 16
 	srli	a1, a1, 1
 	sext.w	a1, a1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	max	a0, a1, a0
 	ret
 

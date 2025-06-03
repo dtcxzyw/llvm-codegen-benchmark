@@ -18,7 +18,7 @@ func0000000000000002:
 func0000000000000011:
 	bgeu	a2, a1, .LBB2_2
 	lui	a0, 1024
-	addiw	a0, a0, -27
+	addi	a0, a0, -27
 	slli	a0, a0, 10
 	ret
 .LBB2_2:

@@ -81,7 +81,7 @@ func0000000000000004:
 	srli	a0, a0, 16
 	lui	a1, 1
 	sext.w	a0, a0
-	addiw	a1, a1, 199
+	addi	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 

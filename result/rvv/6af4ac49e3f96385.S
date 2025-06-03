@@ -3,7 +3,7 @@ func0000000000000005:
 	vsext.vf2	v12, v10
 	lui	a0, 8
 	vsub.vv	v8, v12, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmul.vx	v8, v8, a0
 	ret
 

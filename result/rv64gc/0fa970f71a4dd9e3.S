@@ -25,7 +25,7 @@ func0000000000000050:
 	slli	a2, a2, 6
 	sub	a2, a2, a3
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	add	a1, a1, a2
 	mul	a1, a1, a3
 	sext.w	a0, a0

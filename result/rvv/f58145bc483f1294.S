@@ -20,7 +20,7 @@ func000000000000003f:
 
 func0000000000000015:
 	lui	a0, 1
-	addiw	a0, a0, -2017
+	addi	a0, a0, -2017
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v8, a0
 	vmerge.vvm	v8, v12, v8, v0

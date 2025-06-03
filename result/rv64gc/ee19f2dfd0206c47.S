@@ -22,7 +22,7 @@ func0000000000000080:
 	addw	a0, a0, a1
 	lui	a1, 24414
 	lui	a2, 1024162
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	sltu	a1, a1, a0
 	negw	a1, a1
 	addi	a2, a2, -256

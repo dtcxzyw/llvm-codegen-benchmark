@@ -21,7 +21,7 @@ func0000000000000002:
 func0000000000000014:
 	sext.w	a0, a0
 	lui	a2, 2048
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	bge	a2, a0, .LBB2_2
 	lui	a0, 524288
 	addi	a1, a0, -256

@@ -72,7 +72,7 @@ func000000000000000a:
 func0000000000000002:
 	andi	a1, a1, 1
 	lui	a3, 32
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	add	a2, a2, a3
 	lui	a3, 1048544
 	and	a2, a2, a3

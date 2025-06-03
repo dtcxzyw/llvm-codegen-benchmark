@@ -6,8 +6,7 @@ func0000000000000008:
 
 func000000000000000f:
 	slli	a0, a0, 4
-	li	a1, 1
-	slli	a1, a1, 36
+	bseti	a1, zero, 36
 	addi	a1, a1, -48
 	add	a0, a0, a1
 	addi	a1, a1, 32
@@ -59,8 +58,7 @@ func0000000000000002:
 	ret
 
 func000000000000000b:
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -32
 	sh1add	a0, a0, a1
 	and	a0, a0, a1

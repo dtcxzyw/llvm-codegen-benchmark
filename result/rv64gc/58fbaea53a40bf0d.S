@@ -8,11 +8,11 @@ func0000000000000007:
 	feq.s	a0, fa0, fa1
 	beqz	a0, .LBB1_2
 	lui	a0, 8
-	addiw	a0, a0, 10
+	addi	a0, a0, 10
 	ret
 .LBB1_2:
 	lui	a0, 9
-	addiw	a0, a0, 10
+	addi	a0, a0, 10
 	ret
 
 func0000000000000004:

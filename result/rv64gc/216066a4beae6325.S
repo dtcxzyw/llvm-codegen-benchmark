@@ -151,7 +151,7 @@ func0000000000000018:
 	lui	a2, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a2, a2, -24
+	addi	a2, a2, -24
 	sltu	a0, a2, a0
 	ret
 

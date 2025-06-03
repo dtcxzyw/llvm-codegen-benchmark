@@ -44,7 +44,7 @@ func0000000000000031:
 func0000000000000015:
 	sext.w	a1, a1
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	bge	a3, a1, .LBB4_2
 	li	a1, 8
 	or	a0, a0, a1

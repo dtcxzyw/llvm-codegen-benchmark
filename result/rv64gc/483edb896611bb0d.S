@@ -4,7 +4,7 @@ func0000000000000010:
 	addi	a2, a2, -2
 	bgeu	a2, a0, .LBB0_2
 	lui	a0, 65536
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB0_2:
 	slli	a0, a1, 32
@@ -21,7 +21,7 @@ func0000000000000002:
 
 func0000000000000011:
 	lui	a2, 73
-	addiw	a2, a2, 992
+	addi	a2, a2, 992
 	bgeu	a0, a2, .LBB2_2
 	slli	a1, a1, 32
 	srli	a2, a1, 32
@@ -40,7 +40,7 @@ func0000000000000030:
 
 func00000000000000a8:
 	lui	a2, 209715
-	addiw	a2, a2, 820
+	addi	a2, a2, 820
 	sltu	a0, a0, a2
 	addi	a0, a0, -1
 	and	a0, a0, a1

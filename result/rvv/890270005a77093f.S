@@ -3,7 +3,7 @@ func0000000000000314:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 8192
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 255
 	vmerge.vim	v10, v12, 0, v0

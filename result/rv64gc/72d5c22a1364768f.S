@@ -18,7 +18,7 @@ func000000000000001c:
 
 func0000000000000000:
 	lui	a2, 4096
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sll	a1, a2, a1
 	or	a0, a0, a1
 	ret

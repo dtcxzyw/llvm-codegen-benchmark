@@ -12,7 +12,7 @@ func0000000000000044:
 	or	a1, a1, a2
 	lui	a2, 244
 	sub	a0, a0, a1
-	addiw	a1, a2, 576
+	addi	a1, a2, 576
 	sltu	a0, a0, a1
 	ret
 

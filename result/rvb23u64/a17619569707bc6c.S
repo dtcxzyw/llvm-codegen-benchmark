@@ -10,7 +10,7 @@ func000000000000003f:
 	add	a0, a0, a1
 	lui	a1, 9
 	slli	a3, a2, 8
-	addiw	a1, a1, 844
+	addi	a1, a1, 844
 	sh1add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -33,7 +33,7 @@ func00000000000001e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v8, 16
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmseq.vx	v0, v8, a0
 	lui	a0, 16
 	vadd.vx	v8, v10, a0

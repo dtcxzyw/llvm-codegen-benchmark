@@ -21,7 +21,7 @@ func000000000000c0b0:
 	vmsne.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
 	lui	a0, 8
-	addiw	a0, a0, 3
+	addi	a0, a0, 3
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v8, v14, v10
 	vmor.mm	v0, v8, v12
@@ -95,7 +95,7 @@ func0000000000001090:
 	vmseq.vi	v12, v10, 0
 	lui	a0, 1
 	vmor.mm	v10, v12, v14
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
@@ -154,7 +154,7 @@ func0000000000004088:
 	vmsleu.vi	v14, v12, 1
 	lui	a0, 1
 	vmsleu.vi	v12, v8, 2
-	addiw	a0, a0, -1122
+	addi	a0, a0, -1122
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v9, v14, v12
 	vmor.mm	v0, v9, v8
@@ -196,7 +196,7 @@ func000000000000108c:
 	vmseq.vi	v12, v10, 0
 	lui	a0, 24
 	vmor.mm	v10, v12, v14
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vmslt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

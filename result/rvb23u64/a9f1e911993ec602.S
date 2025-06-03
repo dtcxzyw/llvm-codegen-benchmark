@@ -53,7 +53,7 @@ func0000000000000026:
 	sext.w	a1, a0
 	slliw	a0, a0, 1
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -1
@@ -66,7 +66,7 @@ func0000000000000066:
 	sext.w	a1, a0
 	slliw	a0, a0, 1
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -1

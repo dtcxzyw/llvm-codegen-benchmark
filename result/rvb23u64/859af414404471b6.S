@@ -16,7 +16,7 @@ func0000000000000021:
 func0000000000000004:
 	lui	a2, 524288
 	add	a1, a1, a2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	li	a2, 100
 	czero.nez	a0, a0, a1
@@ -31,9 +31,9 @@ func0000000000000061:
 
 func0000000000000024:
 	lui	a2, 1048574
-	addiw	a3, a2, 19
+	addi	a3, a2, 19
 	add	a1, a1, a3
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	ret

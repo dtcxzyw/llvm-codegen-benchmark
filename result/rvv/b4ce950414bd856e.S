@@ -18,7 +18,7 @@ func0000000000000064:
 	li	a0, 21
 	vwaddu.vx	v10, v12, a0
 	lui	a0, 32
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10

@@ -6,7 +6,7 @@ func0000000000000021:
 	lui	a2, 1
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	or	a0, a0, a2
 	li	a2, 1
 	beq	a1, a2, .LBB0_3
@@ -164,19 +164,19 @@ func0000000000000081:
 	li	a0, 10
 	lui	a2, 1
 	bltu	a1, a0, .LBB8_2
-	addiw	a0, a2, -782
+	addi	a0, a2, -782
 	bnez	a3, .LBB8_3
 	j	.LBB8_4
 .LBB8_2:
-	addiw	a0, a2, -735
+	addi	a0, a2, -735
 	beqz	a3, .LBB8_4
 .LBB8_3:
-	addiw	a0, a2, -819
+	addi	a0, a2, -819
 .LBB8_4:
 	li	a3, 5
 	beq	a1, a3, .LBB8_6
 	ret
 .LBB8_6:
-	addiw	a0, a2, -849
+	addi	a0, a2, -849
 	ret
 

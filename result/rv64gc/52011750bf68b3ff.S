@@ -17,13 +17,13 @@ func000000000000000a:
 	sext.w	a0, a0
 	bnez	a1, .LBB1_2
 	lui	a1, 488
-	addiw	a1, a1, 1152
+	addi	a1, a1, 1152
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 .LBB1_2:
 	lui	a1, 4883
-	addiw	a1, a1, -768
+	addi	a1, a1, -768
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

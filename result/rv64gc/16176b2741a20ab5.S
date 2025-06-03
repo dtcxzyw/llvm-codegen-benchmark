@@ -39,7 +39,7 @@ func0000000000000038:
 	xor	a0, a0, a1
 	subw	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, -1366
+	addi	a1, a1, -1366
 	sltu	a0, a1, a0
 	ret
 

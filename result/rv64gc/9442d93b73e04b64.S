@@ -3,7 +3,7 @@ func000000000000000a:
 	subw	a0, a0, a1
 	lui	a1, 526344
 	mulw	a0, a0, a2
-	addiw	a1, a1, 129
+	addi	a1, a1, 129
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

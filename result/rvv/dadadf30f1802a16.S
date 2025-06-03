@@ -3,7 +3,7 @@ func00000000000000e0:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vx	v12, v10, a0
 	lui	a0, 26510
-	addiw	a0, a0, -537
+	addi	a0, a0, -537
 	slli	a0, a0, 13
 	addi	a0, a0, -837
 	vsetvli	zero, zero, e64, m2, ta, ma

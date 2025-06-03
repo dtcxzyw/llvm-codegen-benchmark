@@ -13,7 +13,7 @@ func0000000000000021:
 func0000000000000001:
 	beq	a0, a1, .LBB2_2
 	lui	a0, 560295
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 .LBB2_2:
 	ret
 

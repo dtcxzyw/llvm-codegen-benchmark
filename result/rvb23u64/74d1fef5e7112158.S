@@ -11,7 +11,7 @@ func0000000000000008:
 func0000000000000004:
 	srli	a0, a0, 32
 	lui	a1, 439805
-	addiw	a1, a1, -1429
+	addi	a1, a1, -1429
 	mul	a0, a0, a1
 	srli	a0, a0, 54
 	ret

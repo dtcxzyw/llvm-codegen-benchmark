@@ -43,7 +43,7 @@ func0000000000000029:
 	lui	a2, 98625
 	slli	a0, a0, 13
 	or	a0, a0, a1
-	addiw	a1, a2, 161
+	addi	a1, a2, 161
 	add	a0, a0, a1
 	ret
 

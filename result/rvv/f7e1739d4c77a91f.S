@@ -28,7 +28,7 @@ func0000000000000000:
 	vsrl.vi	v10, v10, 1
 	lui	a0, 1
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -13
+	addi	a0, a0, -13
 	vminu.vx	v8, v8, a0
 	ret
 

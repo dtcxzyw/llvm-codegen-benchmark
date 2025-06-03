@@ -52,7 +52,7 @@ func0000000000000058:
 	sext.w	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -3
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0

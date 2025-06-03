@@ -5,10 +5,10 @@ func0000000000002910:
 	addi	a2, a2, 1493
 	addw	a1, a1, a2
 	lui	a2, 37
-	addiw	a2, a2, -1971
+	addi	a2, a2, -1971
 	sltu	a1, a1, a2
 	lui	a2, 302
-	addiw	a2, a2, 583
+	addi	a2, a2, 583
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

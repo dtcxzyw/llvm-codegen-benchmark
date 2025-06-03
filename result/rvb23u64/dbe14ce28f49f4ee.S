@@ -1,7 +1,7 @@
 func0000000000000001:
 	lui	a2, 1
 	andi	a0, a0, -2048
-	addiw	a2, a2, -17
+	addi	a2, a2, -17
 	and	a1, a1, a2
 	bclri	a0, a0, 11
 	or	a0, a0, a1

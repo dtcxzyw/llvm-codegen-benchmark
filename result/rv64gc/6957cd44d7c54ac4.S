@@ -25,7 +25,7 @@ func000000000000018c:
 
 func0000000000000181:
 	lui	a2, 1024
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a2, a2, 12
 	addi	a2, a2, -2047
 	and	a1, a1, a2

@@ -98,7 +98,7 @@ func0000000000000268:
 	add	a0, a0, a2
 	lui	a2, 244
 	add	a0, a0, a1
-	addiw	a1, a2, 575
+	addi	a1, a2, 575
 	sltu	a0, a1, a0
 	ret
 

@@ -22,7 +22,7 @@ func0000000000000001:
 	slli	a0, a0, 42
 	lui	a1, 1048332
 	srli	a0, a0, 43
-	addiw	a1, a1, 1619
+	addi	a1, a1, 1619
 	mul	a0, a0, a1
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000002:
 	slli	a0, a0, 16
 	lui	a1, 16
 	srli	a0, a0, 48
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bseti	a1, a1, 32
 	bseti	a1, a1, 48
 	mul	a0, a0, a1

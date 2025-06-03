@@ -41,7 +41,7 @@ func0000000000000001:
 
 func0000000000000003:
 	lui	a2, 64
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sub	a1, a2, a1
 	bltu	a0, a1, .LBB5_2
 	mv	a0, a1

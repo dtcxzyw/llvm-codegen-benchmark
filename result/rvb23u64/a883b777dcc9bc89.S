@@ -16,7 +16,7 @@ func0000000000000008:
 func000000000000000c:
 	srlw	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 63
+	addi	a2, a2, 63
 	xor	a1, a1, a2
 	snez	a1, a1
 	xori	a0, a0, 1

@@ -3,7 +3,7 @@
 func0000000000000012:
 	srai	a0, a0, 3
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI0_0)
@@ -20,7 +20,7 @@ func0000000000000012:
 func0000000000000016:
 	srai	a0, a0, 2
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_0)
@@ -37,7 +37,7 @@ func0000000000000016:
 func0000000000000010:
 	srai	a0, a0, 2
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI2_0)

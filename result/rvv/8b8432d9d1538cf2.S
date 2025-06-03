@@ -40,10 +40,10 @@ func0000000000000028:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vi	v0, v10, 0
 	lui	a0, 1048575
-	addiw	a1, a0, 33
+	addi	a1, a0, 33
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a1
-	addiw	a0, a0, 36
+	addi	a0, a0, 36
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
 	ret
@@ -186,7 +186,7 @@ func0000000000000020:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 36
-	addiw	a0, a0, 1856
+	addi	a0, a0, 1856
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10
 	ret

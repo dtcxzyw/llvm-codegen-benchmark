@@ -18,7 +18,7 @@ func0000000000000032:
 
 func0000000000000022:
 	lui	a3, 49
-	addiw	a3, a3, -1495
+	addi	a3, a3, -1495
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

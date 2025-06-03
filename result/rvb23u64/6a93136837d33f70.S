@@ -8,7 +8,7 @@ func000000000000018c:
 func00000000000001e1:
 	sh3add.uw	a1, a2, a1
 	lui	a2, 1595
-	addiw	a2, a2, -700
+	addi	a2, a2, -700
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

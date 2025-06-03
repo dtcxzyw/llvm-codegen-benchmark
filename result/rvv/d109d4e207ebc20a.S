@@ -3,7 +3,7 @@ func0000000000000010:
 	vmv.v.i	v10, 0
 	lui	a0, 2048
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vv	v8, v8, v10
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

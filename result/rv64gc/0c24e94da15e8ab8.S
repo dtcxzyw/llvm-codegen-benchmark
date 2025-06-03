@@ -14,7 +14,7 @@ func00000000000000c6:
 	slti	a2, a2, 2
 	or	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 1807
+	addi	a2, a2, 1807
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

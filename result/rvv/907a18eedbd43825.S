@@ -263,7 +263,7 @@ func0000000000000024:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vx	v10, v10, a0
 	lui	a0, 1048512
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -275,7 +275,7 @@ func000000000000030a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v10, v10, a0
 	lui	a0, 633
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -304,7 +304,7 @@ func00000000000000d4:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmslt.vx	v10, v10, a0
 	lui	a0, 1024
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -316,7 +316,7 @@ func0000000000000294:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v10, v10, a0
 	lui	a0, 2048
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

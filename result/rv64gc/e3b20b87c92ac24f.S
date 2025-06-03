@@ -28,10 +28,10 @@ func0000000000000061:
 	lui	a1, 32
 	beq	a0, a1, .LBB2_2
 	lui	a0, 16
-	addiw	a0, a0, 1100
+	addi	a0, a0, 1100
 	ret
 .LBB2_2:
 	lui	a0, 144
-	addiw	a0, a0, 1100
+	addi	a0, a0, 1100
 	ret
 

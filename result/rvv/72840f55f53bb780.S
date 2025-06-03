@@ -31,7 +31,7 @@ func0000000000000045:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
 	lui	a0, 957395
-	addiw	a0, a0, 1959
+	addi	a0, a0, 1959
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

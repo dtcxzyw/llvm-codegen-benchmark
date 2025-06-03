@@ -27,7 +27,7 @@ func0000000000000003:
 	slli	a0, a0, 63
 	lui	a2, 256
 	srai	a0, a0, 63
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	andi	a0, a0, 127
 	or	a1, a1, a2
 	or	a0, a0, a1

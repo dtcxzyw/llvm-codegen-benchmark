@@ -95,7 +95,7 @@ func0000000000000034:
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	lui	a1, 29
-	addiw	a1, a1, 288
+	addi	a1, a1, 288
 	add	a0, a0, a1
 	ret
 
@@ -109,7 +109,7 @@ func000000000000002f:
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	add	a0, a0, a1
 	ret
 
@@ -123,7 +123,7 @@ func0000000000000024:
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a1, a1, -577
+	addi	a1, a1, -577
 	add	a0, a0, a1
 	ret
 

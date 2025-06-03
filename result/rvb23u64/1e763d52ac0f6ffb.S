@@ -2,7 +2,7 @@ func0000000000000001:
 	sext.w	a0, a0
 	zext.w	a2, a1
 	lui	a3, 65028
-	addiw	a3, a3, -127
+	addi	a3, a3, -127
 	mul	a2, a2, a3
 	srli	a2, a2, 35
 	slli	a3, a2, 7
@@ -16,7 +16,7 @@ func0000000000000014:
 	sext.w	a0, a0
 	zext.w	a2, a1
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	srli	a2, a2, 37
 	sh2add	a2, a2, a2
@@ -30,7 +30,7 @@ func0000000000000015:
 	sext.w	a0, a0
 	srliw	a2, a1, 9
 	lui	a3, 69
-	addiw	a3, a3, -1149
+	addi	a3, a3, -1149
 	mul	a2, a2, a3
 	lui	a3, 244141
 	srli	a2, a2, 39

@@ -10,7 +10,7 @@ func00000000000002f8:
 	lui	a3, 32
 	subw	a1, a1, a2
 	add.uw	a0, a1, a0
-	addiw	a3, a3, -31
+	addi	a3, a3, -31
 	sltu	a0, a3, a0
 	ret
 

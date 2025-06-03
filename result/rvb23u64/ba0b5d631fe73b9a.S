@@ -46,7 +46,7 @@ func0000000000000038:
 	lui	a3, 1048573
 	or	a1, a1, a2
 	subw	a0, a0, a1
-	addiw	a1, a3, 1619
+	addi	a1, a3, 1619
 	sltu	a0, a1, a0
 	ret
 
@@ -59,7 +59,7 @@ func0000000000000034:
 	lui	a3, 3
 	or	a1, a1, a2
 	subw	a0, a0, a1
-	addiw	a1, a3, -1620
+	addi	a1, a3, -1620
 	sltu	a0, a0, a1
 	ret
 

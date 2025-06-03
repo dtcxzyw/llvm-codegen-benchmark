@@ -39,7 +39,7 @@ func00000000000001d4:
 	subw	a2, a2, a1
 	lui	a1, 24414
 	srl	a0, a0, a2
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	sltu	a0, a0, a1
 	ret
 

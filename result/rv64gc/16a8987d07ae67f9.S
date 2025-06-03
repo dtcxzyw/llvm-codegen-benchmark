@@ -35,7 +35,7 @@ func00000000000000a5:
 func00000000000001e0:
 	lui	a3, 376095
 	slli	a0, a0, 32
-	addiw	a3, a3, -1643
+	addi	a3, a3, -1643
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	mul	a1, a1, a3

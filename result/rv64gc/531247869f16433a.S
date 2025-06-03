@@ -41,7 +41,7 @@ func0000000000000008:
 	sext.w	a2, a2
 	mul	a1, a1, a2
 	lui	a2, 1953
-	addiw	a2, a2, 512
+	addi	a2, a2, 512
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

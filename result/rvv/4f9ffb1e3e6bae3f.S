@@ -28,7 +28,7 @@ func0000000000000204:
 	ld	a1, %lo(.LCPI2_0)(a1)
 	lui	a2, %hi(.LCPI2_1)
 	ld	a2, %lo(.LCPI2_1)(a2)
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vadd.vx	v8, v8, a1

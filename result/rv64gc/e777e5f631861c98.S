@@ -21,7 +21,7 @@ func0000000000000081:
 
 func0000000000000481:
 	lui	a2, 1044480
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	seqz	a0, a0

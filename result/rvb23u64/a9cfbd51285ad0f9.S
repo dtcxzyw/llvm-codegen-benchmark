@@ -3,7 +3,7 @@ func0000000000000050:
 	li	a3, -1000
 	mul	a0, a0, a3
 	lui	a3, 21094
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -21,10 +21,10 @@ func0000000000000055:
 func0000000000000044:
 	sext.w	a2, a2
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	lui	a3, 1048332
-	addiw	a3, a3, -576
+	addi	a3, a3, -576
 	add	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1

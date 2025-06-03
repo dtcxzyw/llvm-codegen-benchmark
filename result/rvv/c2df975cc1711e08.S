@@ -12,7 +12,7 @@ func000000000000000e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v10, v10, v12
 	lui	a0, 442489
-	addiw	a0, a0, -1691
+	addi	a0, a0, -1691
 	vmacc.vx	v8, a0, v10
 	ret
 

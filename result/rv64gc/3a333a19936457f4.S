@@ -44,7 +44,7 @@ func000000000000008a:
 	mul	a0, a0, a2
 	lui	a2, 12
 	addw	a0, a0, a1
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	slt	a0, a2, a0
 	ret
 
@@ -55,7 +55,7 @@ func00000000000002aa:
 	mul	a0, a0, a2
 	lui	a2, 12
 	addw	a0, a0, a1
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	slt	a0, a2, a0
 	ret
 
@@ -73,7 +73,7 @@ func00000000000007f4:
 	lui	a1, 2
 	mul	a2, a2, a3
 	addw	a0, a0, a2
-	addiw	a1, a1, 1809
+	addi	a1, a1, 1809
 	sltu	a0, a0, a1
 	ret
 

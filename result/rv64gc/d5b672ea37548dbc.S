@@ -12,7 +12,7 @@ func0000000000000000:
 	lui	a3, 2
 	slli	a0, a0, 63
 	srai	a1, a1, 63
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	srai	a0, a0, 63
 	and	a1, a1, a3
 	or	a1, a1, a2

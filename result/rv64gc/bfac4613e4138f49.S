@@ -10,7 +10,7 @@ func0000000000000009:
 	subw	a1, a1, a2
 	sext.w	a2, a0
 	lui	a3, 667231
-	addiw	a3, a3, 859
+	addi	a3, a3, 859
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -24,7 +24,7 @@ func0000000000000008:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 39
@@ -36,7 +36,7 @@ func0000000000000001:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	lui	a2, 274878
-	addiw	a2, a2, -381
+	addi	a2, a2, -381
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 50

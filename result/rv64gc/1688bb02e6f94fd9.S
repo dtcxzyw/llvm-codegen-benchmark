@@ -28,7 +28,7 @@ func000000000000001a:
 	lui	a1, 450624
 	slli	a2, a2, 13
 	or	a0, a0, a2
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 
@@ -54,7 +54,7 @@ func000000000000001e:
 	lui	a1, 4096
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	addiw	a1, a1, 240
+	addi	a1, a1, 240
 	or	a0, a0, a1
 	ret
 
@@ -63,7 +63,7 @@ func0000000000000016:
 	or	a0, a0, a1
 	lui	a1, 4096
 	or	a0, a0, a2
-	addiw	a1, a1, 240
+	addi	a1, a1, 240
 	or	a0, a0, a1
 	ret
 
@@ -118,7 +118,7 @@ func000000000000003d:
 	lui	a1, 768
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	or	a0, a0, a1
 	ret
 

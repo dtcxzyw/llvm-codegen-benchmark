@@ -2,7 +2,7 @@ func0000000000000010:
 	andi	a0, a0, 1
 	zext.w	a3, a2
 	lui	a4, 335544
-	addiw	a4, a4, 1311
+	addi	a4, a4, 1311
 	mul	a3, a3, a4
 	li	a4, -50
 	srli	a3, a3, 36
@@ -27,7 +27,7 @@ func000000000000001d:
 	srli	a3, a3, 47
 	mul	a3, a3, a4
 	lui	a4, 1048544
-	addiw	a4, a4, 30
+	addi	a4, a4, 30
 	subw	a2, a2, a3
 	add.uw	a1, a2, a1
 	czero.eqz	a0, a4, a0

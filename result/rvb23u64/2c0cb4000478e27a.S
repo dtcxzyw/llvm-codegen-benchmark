@@ -34,7 +34,7 @@ func0000000000000d98:
 	addi	a1, a1, 20
 	sltu	a1, a2, a1
 	lui	a2, 320757
-	addiw	a2, a2, 842
+	addi	a2, a2, 842
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1

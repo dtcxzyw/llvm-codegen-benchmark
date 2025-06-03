@@ -10,10 +10,10 @@ func0000000000000009:
 	or	a1, a1, a2
 	lui	a2, 838861
 	slliw	a1, a1, 2
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	and	a1, a1, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

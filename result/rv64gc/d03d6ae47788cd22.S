@@ -11,11 +11,11 @@ func0000000000001fe4:
 
 func0000000000000886:
 	lui	a3, 1048563
-	addiw	a3, a3, -420
+	addi	a3, a3, -420
 	mul	a2, a2, a3
 	lui	a3, 10
 	add	a1, a1, a2
-	addiw	a2, a3, -946
+	addi	a2, a3, -946
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63
@@ -104,10 +104,10 @@ func0000000000000aaa:
 	lui	a3, 244
 	add	a1, a1, a2
 	lui	a2, 244141
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	addiw	a1, a2, -1537
+	addi	a1, a2, -1537
 	slt	a0, a1, a0
 	ret
 

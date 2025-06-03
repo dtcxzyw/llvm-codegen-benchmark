@@ -22,7 +22,7 @@ func0000000000000941:
 	addw	a1, a1, a2
 	lui	a2, 8192
 	andi	a0, a0, 127
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -32,7 +32,7 @@ func000000000000048c:
 	addiw	a1, a1, -7
 	lui	a2, 4
 	sltiu	a1, a1, 2
-	addiw	a2, a2, 48
+	addi	a2, a2, 48
 	and	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000c2c:
 	sext.w	a1, a1
 	lui	a2, 256
 	addi	a1, a1, -3
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	seqz	a1, a1
 	and	a0, a0, a2
 	snez	a0, a0

@@ -25,7 +25,7 @@ func0000000000000005:
 	slli	a1, a1, 32
 	lui	a2, 1048555
 	srli	a1, a1, 32
-	addiw	a2, a2, -384
+	addi	a2, a2, -384
 	mul	a0, a0, a2
 	sub	a0, a0, a1
 	ret

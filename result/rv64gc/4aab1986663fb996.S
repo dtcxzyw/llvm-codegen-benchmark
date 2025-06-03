@@ -6,11 +6,11 @@ func0000000000000003:
 	j	.LBB0_3
 .LBB0_2:
 	lui	a1, 2
-	addiw	a1, a1, -1920
+	addi	a1, a1, -1920
 .LBB0_3:
 	or	a1, a1, a2
 	lui	a2, 1032192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a2, a2, 13
 	addi	a2, a2, 1911
 	and	a0, a0, a2

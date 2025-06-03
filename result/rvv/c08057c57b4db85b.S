@@ -42,7 +42,7 @@ func0000000000000185:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 20
 	lui	a0, 1
-	addiw	a0, a0, 192
+	addi	a0, a0, 192
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vmsleu.vv	v0, v8, v12

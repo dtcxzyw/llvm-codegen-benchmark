@@ -22,7 +22,7 @@ func00000000000000cc:
 	slli	a2, a2, 12
 	or	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	sext.w	a1, a1
 	and	a0, a0, a2
 	xor	a0, a0, a1

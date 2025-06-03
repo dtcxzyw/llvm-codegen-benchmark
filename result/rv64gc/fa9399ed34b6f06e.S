@@ -63,7 +63,7 @@ func0000000000000001:
 func0000000000000046:
 	srl	a0, a0, a1
 	lui	a1, 31
-	addiw	a1, a1, -1975
+	addi	a1, a1, -1975
 	slt	a0, a0, a1
 	ret
 

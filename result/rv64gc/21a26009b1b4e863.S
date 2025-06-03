@@ -28,7 +28,7 @@ func0000000000000000:
 	or	a0, a0, a2
 	ret
 .LBB1_2:
-	addiw	a2, a0, 4
+	addi	a2, a0, 4
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	or	a0, a0, a2

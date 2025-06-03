@@ -28,8 +28,7 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	li	a2, 1
-	slli	a2, a2, 41
+	bseti	a2, zero, 41
 	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 3

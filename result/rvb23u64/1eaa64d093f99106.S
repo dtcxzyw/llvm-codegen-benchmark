@@ -10,7 +10,7 @@ func000000000000007c:
 	add	a0, a0, a1
 	lui	a1, 17
 	add	a0, a0, a2
-	addiw	a1, a1, 972
+	addi	a1, a1, 972
 	add	a0, a0, a1
 	ret
 

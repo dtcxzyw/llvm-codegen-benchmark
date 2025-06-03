@@ -13,8 +13,7 @@ func000000000000006d:
 	ret
 
 func0000000000000061:
-	li	a1, 1
-	slli	a1, a1, 36
+	bseti	a1, zero, 36
 	addi	a1, a1, -60
 	add.uw	a0, a0, a1
 	srli	a0, a0, 4

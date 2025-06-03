@@ -30,7 +30,7 @@ func0000000000000210:
 
 func0000000000000213:
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bltu	a1, a2, .LBB2_2
 	li	a2, 184
 	li	a3, 513
@@ -48,7 +48,7 @@ func0000000000000213:
 
 func0000000000000a51:
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bltu	a1, a2, .LBB3_2
 	lui	a2, 1
 	li	a3, 513
@@ -66,7 +66,7 @@ func0000000000000a51:
 
 func0000000000000a53:
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bltu	a1, a2, .LBB4_2
 	lui	a2, 1
 	li	a3, 513

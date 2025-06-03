@@ -3,7 +3,7 @@ func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 1048332
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmacc.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -13,7 +13,7 @@ func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmacc.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -23,7 +23,7 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmacc.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret

@@ -5,7 +5,7 @@ func0000000000000091:
 	ld	a3, %lo(.LCPI0_0)(a3)
 	lui	a4, 4080
 	lui	a5, 16
-	addiw	a5, a5, -256
+	addi	a5, a5, -256
 	mul	a2, a2, a3
 	mulhu	a1, a1, a3
 	add	a1, a1, a2

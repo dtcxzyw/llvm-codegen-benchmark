@@ -24,7 +24,7 @@ func0000000000000021:
 
 func0000000000000074:
 	lui	a3, 16
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1

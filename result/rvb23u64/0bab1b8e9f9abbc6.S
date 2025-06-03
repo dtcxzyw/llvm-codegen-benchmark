@@ -38,7 +38,7 @@ func0000000000000004:
 func0000000000000002:
 	zext.h	a0, a0
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bseti	a1, a1, 32
 	bseti	a1, a1, 48
 	mul	a0, a0, a1

@@ -9,10 +9,10 @@ func000000000000000f:
 	srli	a1, a1, 29
 	add	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, 8
+	addi	a1, a1, 8
 	add	a0, a0, a1
 	lui	a1, 65536
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 22
 	and	a0, a0, a1
 	ret

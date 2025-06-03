@@ -10,7 +10,7 @@ func0000000000000005:
 	lui	a1, 67592
 	addi	a0, a0, -16
 	slli	a0, a0, 32
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000015:
 	lui	a1, 83656
 	addi	a0, a0, 576
 	slli	a0, a0, 32
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

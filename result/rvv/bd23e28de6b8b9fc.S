@@ -2,7 +2,7 @@ func00000000000000c1:
 	lui	a0, 244
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v8, v8, 0
-	addiw	a0, a0, 577
+	addi	a0, a0, 577
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v9, v10, a0
 	vmand.mm	v0, v8, v9

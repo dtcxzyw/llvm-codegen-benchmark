@@ -8,7 +8,7 @@ func0000000000000001:
 	lui	a2, 4112
 	addi	a1, a1, 128
 	addw	a0, a0, a1
-	addiw	a1, a2, 257
+	addi	a1, a2, 257
 	sltu	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000021:
 	lui	a2, 349525
 	addi	a1, a1, -1366
 	addw	a0, a0, a1
-	addiw	a1, a2, 1365
+	addi	a1, a2, 1365
 	sltu	a0, a0, a1
 	ret
 

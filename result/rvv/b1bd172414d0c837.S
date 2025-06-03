@@ -207,7 +207,7 @@ func0000000000000f18:
 
 func00000000000000a1:
 	lui	a0, 1
-	addiw	a0, a0, 192
+	addi	a0, a0, 192
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmsleu.vv	v9, v12, v10

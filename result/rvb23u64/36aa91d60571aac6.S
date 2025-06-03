@@ -18,9 +18,9 @@ func0000000000000006:
 	li	a3, -2
 	lui	a4, 1048573
 	czero.nez	a2, a3, a2
-	addiw	a3, a4, -627
+	addi	a3, a4, -627
 	addi	a1, a1, -2
-	addiw	a4, a4, -625
+	addi	a4, a4, -625
 	add	a2, a2, a3
 	czero.nez	a3, a4, a1
 	czero.eqz	a1, a2, a1

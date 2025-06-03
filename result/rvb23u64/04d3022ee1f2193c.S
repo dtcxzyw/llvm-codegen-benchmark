@@ -8,7 +8,7 @@ func00000000000000ef:
 
 func000000000000002c:
 	lui	a2, 1048575
-	addiw	a2, a2, 976
+	addi	a2, a2, 976
 	add.uw	a1, a1, a2
 	srli	a1, a1, 3
 	sh2add	a1, a1, a1
@@ -21,7 +21,7 @@ func000000000000002f:
 	slli.uw	a1, a1, 2
 	lui	a2, 256
 	addi	a1, a1, -8
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	andi	a1, a1, -8
 	add	a0, a0, a2
 	add	a0, a0, a1

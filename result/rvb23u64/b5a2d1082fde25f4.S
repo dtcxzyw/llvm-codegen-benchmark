@@ -18,8 +18,8 @@ func000000000000003f:
 func000000000000001d:
 	lui	a2, 16
 	lui	a3, 4
-	addiw	a2, a2, -1000
-	addiw	a3, a3, 576
+	addi	a2, a2, -1000
+	addi	a3, a3, 576
 	mul	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1

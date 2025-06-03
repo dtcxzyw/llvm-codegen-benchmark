@@ -156,7 +156,7 @@ func000000000000056c:
 	addiw	a2, a2, -7
 	slt	a1, a2, a1
 	lui	a2, 8
-	addiw	a2, a2, -766
+	addi	a2, a2, -766
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	snez	a0, a0
@@ -169,7 +169,7 @@ func000000000000054c:
 	addiw	a2, a2, -7
 	slt	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, -766
+	addi	a2, a2, -766
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1

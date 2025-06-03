@@ -47,7 +47,7 @@ func000000000000002a:
 	mv	a1, a0
 	sext.w	a2, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	blt	a0, a2, .LBB5_2
 	slliw	a0, a1, 1
 .LBB5_2:

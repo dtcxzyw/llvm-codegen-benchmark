@@ -3,9 +3,9 @@ func0000000000000002:
 	lui	a0, 285
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v0, v8, fa5
-	addiw	a1, a0, 1417
+	addi	a1, a0, 1417
 	vmv.v.x	v8, a1
-	addiw	a0, a0, 1441
+	addi	a0, a0, 1441
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

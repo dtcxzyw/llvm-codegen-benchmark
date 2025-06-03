@@ -24,7 +24,7 @@ func0000000000000008:
 	vadd.vv	v10, v10, v12
 	lui	a0, 1221
 	vsub.vv	v8, v10, v8
-	addiw	a0, a0, -1217
+	addi	a0, a0, -1217
 	vmsgtu.vx	v0, v8, a0
 	ret
 

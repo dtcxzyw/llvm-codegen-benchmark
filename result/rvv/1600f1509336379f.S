@@ -48,7 +48,7 @@ func000000000000000c:
 	vadd.vx	v8, v8, a0
 	vand.vx	v8, v8, a0
 	lui	a0, 32
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmv.v.x	v10, a0
 	vsll.vv	v8, v10, v8
 	vnot.v	v8, v8

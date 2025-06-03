@@ -10,7 +10,7 @@ func0000000000000021:
 func000000000000002a:
 	sext.w	a0, a0
 	lui	a2, 8192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a2, a0, .LBB1_2
 	li	a0, 4
 	ret
@@ -31,7 +31,7 @@ func0000000000000024:
 	sext.w	a2, a0
 	lui	a0, 13
 	li	a3, 32
-	addiw	a0, a0, 1288
+	addi	a0, a0, 1288
 	bgeu	a2, a3, .LBB3_2
 	or	a0, a0, a1
 .LBB3_2:

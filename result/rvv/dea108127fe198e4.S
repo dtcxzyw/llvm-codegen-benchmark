@@ -9,7 +9,7 @@ func0000000000000024:
 	vmsne.vi	v10, v8, 0
 	vadd.vx	v8, v8, a0
 	lui	a0, 64
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

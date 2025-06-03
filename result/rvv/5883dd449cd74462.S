@@ -31,7 +31,7 @@ func000000000000000a:
 	lui	a0, 31250
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmv.v.x	v12, a0
 	vmadd.vv	v8, v10, v12
 	ret
@@ -42,7 +42,7 @@ func0000000000000008:
 	lui	a0, 12875
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
-	addiw	a0, a0, -1625
+	addi	a0, a0, -1625
 	slli	a0, a0, 13
 	addi	a0, a0, -1
 	vmv.v.x	v12, a0

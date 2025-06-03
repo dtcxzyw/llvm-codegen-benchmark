@@ -2,7 +2,7 @@ func0000000000000043:
 	sext.w	a1, a1
 	lui	a2, 33825
 	snez	a1, a1
-	addiw	a2, a2, 133
+	addi	a2, a2, 133
 	slli	a1, a1, 5
 	or	a0, a0, a1
 	zext.w	a1, a0

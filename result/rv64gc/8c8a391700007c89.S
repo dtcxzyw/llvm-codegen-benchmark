@@ -1,7 +1,7 @@
 func0000000000000ce1:
 	sext.w	a1, a1
 	lui	a2, 104832
-	addiw	a2, a2, 816
+	addi	a2, a2, 816
 	xor	a1, a1, a2
 	snez	a1, a1
 	xor	a0, a0, a1

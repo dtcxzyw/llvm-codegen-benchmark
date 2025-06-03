@@ -3,10 +3,10 @@ func0000000000000014:
 	andi	a0, a0, 15
 	sltu	a0, a0, a1
 	lui	a1, 1048534
-	addiw	a1, a1, -768
+	addi	a1, a1, -768
 	czero.eqz	a0, a1, a0
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	add	a0, a0, a1
 	ret
 

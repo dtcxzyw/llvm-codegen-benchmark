@@ -13,7 +13,7 @@ func0000000000000110:
 	lui	a4, 2
 	sltu	a1, a4, a1
 	addi	a4, a3, -1697
-	addiw	a3, a3, -1696
+	addi	a3, a3, -1696
 	addw	a2, a2, a4
 	sltu	a2, a2, a3
 	or	a0, a0, a1

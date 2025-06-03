@@ -30,7 +30,7 @@ func0000000000000027:
 
 func0000000000000007:
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bseti	a2, a2, 38
 	bseti	a2, a2, 63
 	mulh	a2, a1, a2

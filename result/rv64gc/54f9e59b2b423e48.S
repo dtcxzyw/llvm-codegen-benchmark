@@ -13,7 +13,7 @@ func0000000000000302:
 	srli	a2, a2, 32
 	xor	a0, a0, a2
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a2, a2, 20
 	snez	a0, a0
 	and	a1, a1, a2
@@ -27,7 +27,7 @@ func0000000000000042:
 	srli	a2, a2, 32
 	xor	a0, a0, a2
 	lui	a2, 3
-	addiw	a2, a2, -1503
+	addi	a2, a2, -1503
 	xor	a1, a1, a2
 	seqz	a0, a0
 	seqz	a1, a1

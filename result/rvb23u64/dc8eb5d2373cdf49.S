@@ -1,7 +1,7 @@
 func0000000000000014:
 	andi	a0, a0, 96
 	lui	a1, 1048573
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	czero.nez	a0, a1, a0
 	lui	a1, 3
 	add	a0, a0, a1

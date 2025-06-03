@@ -5,7 +5,7 @@ func0000000000000000:
 	addi	a3, a3, 703
 	addw	a2, a2, a3
 	lui	a3, 8
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	addi	a3, a3, -725
 	mul	a1, a1, a2
 	srli	a2, a1, 63

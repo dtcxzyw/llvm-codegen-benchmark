@@ -41,21 +41,21 @@ func0000000000000010:
 func0000000000000054:
 	add	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	slt	a0, a1, a0
 	ret
 
 func0000000000000028:
 	add	a0, a0, a1
 	lui	a1, 804435
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000068:
 	add	a0, a0, a1
 	lui	a1, 1048555
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	sltu	a0, a0, a1
 	ret
 

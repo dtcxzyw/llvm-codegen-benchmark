@@ -12,7 +12,7 @@ func0000000000000010:
 	ret
 .LBB1_2:
 	lui	a1, 1
-	addiw	a1, a1, -1984
+	addi	a1, a1, -1984
 	or	a0, a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func0000000000000009:
 	srli	a1, a1, 12
 	beqz	a1, .LBB5_2
 	lui	a1, 80
-	addiw	a1, a1, 1299
+	addi	a1, a1, 1299
 	or	a0, a0, a1
 	ret
 .LBB5_2:

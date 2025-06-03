@@ -18,7 +18,7 @@ func0000000000000005:
 	addiw	a1, a1, -65
 	lui	a3, 272
 	czero.eqz	a1, a1, a2
-	addiw	a3, a3, -65
+	addi	a3, a3, -65
 	czero.nez	a2, a3, a2
 	li	a3, -65
 	or	a1, a1, a2

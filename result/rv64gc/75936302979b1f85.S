@@ -55,7 +55,7 @@ func0000000000000006:
 	sext.w	a2, a2
 	bnez	a2, .LBB6_2
 	lui	a1, 268352
-	addiw	a1, a1, 1170
+	addi	a1, a1, 1170
 .LBB6_2:
 	mul	a0, a0, a1
 	ret

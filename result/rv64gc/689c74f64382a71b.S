@@ -34,7 +34,7 @@ func0000000000000001:
 
 func0000000000000026:
 	lui	a3, 1048574
-	addiw	a3, a3, -1808
+	addi	a3, a3, -1808
 	add	a2, a2, a3
 	slt	a1, a1, a2
 	or	a0, a0, a1
@@ -81,7 +81,7 @@ func0000000000000029:
 
 func000000000000002b:
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	add	a2, a2, a3
 	slt	a1, a1, a2
 	xori	a1, a1, 1

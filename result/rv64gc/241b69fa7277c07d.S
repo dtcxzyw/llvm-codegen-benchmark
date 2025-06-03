@@ -37,7 +37,7 @@ func0000000000000015:
 
 func0000000000000000:
 	lui	a2, 240
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	li	a3, 1

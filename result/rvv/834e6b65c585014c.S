@@ -15,12 +15,12 @@ func0000000000000000:
 
 func0000000000000015:
 	lui	a0, 439129
-	addiw	a0, a0, -1189
+	addi	a0, a0, -1189
 	slli	a0, a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 2
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vmadd.vx	v8, a0, v10
 	ret
 

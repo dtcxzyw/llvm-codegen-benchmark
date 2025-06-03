@@ -47,13 +47,13 @@ func000000000000030c:
 
 func000000000000030a:
 	lui	a2, 262144
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	and	a1, a1, a2
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	lui	a2, 633
-	addiw	a2, a2, -768
+	addi	a2, a2, -768
 	slt	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -61,7 +61,7 @@ func000000000000030a:
 func0000000000000184:
 	srliw	a1, a1, 4
 	lui	a2, 6221
-	addiw	a2, a2, 677
+	addi	a2, a2, 677
 	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 4

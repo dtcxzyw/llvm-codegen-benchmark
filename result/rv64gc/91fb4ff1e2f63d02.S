@@ -68,7 +68,7 @@ func0000000000000001:
 	sext.w	a2, a2
 	add	a1, a1, a2
 	lui	a2, 1048570
-	addiw	a2, a2, 396
+	addi	a2, a2, 396
 	add	a1, a1, a2
 	sext.w	a0, a0
 	xor	a0, a0, a1

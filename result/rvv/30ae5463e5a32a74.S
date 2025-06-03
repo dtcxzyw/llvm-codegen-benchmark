@@ -45,14 +45,13 @@ func00000000000000c4:
 	vadd.vx	v10, v10, a0
 	lui	a0, 262144
 	vsrl.vi	v10, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func00000000000000c1:
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0

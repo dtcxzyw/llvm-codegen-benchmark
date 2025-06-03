@@ -25,7 +25,7 @@ func00000000000001ff:
 	sext.w	a2, a2
 	lui	a1, 3
 	sh2add	a0, a2, a0
-	addiw	a1, a1, 1196
+	addi	a1, a1, 1196
 	add	a0, a0, a1
 	ret
 

@@ -16,7 +16,7 @@ func000000000000000a:
 	slt	a0, a1, a0
 	lui	a1, 2
 	neg	a0, a0
-	addiw	a1, a1, 1810
+	addi	a1, a1, 1810
 	and	a0, a0, a1
 	ret
 

@@ -72,7 +72,7 @@ func0000000000000006:
 
 func000000000000001e:
 	lui	a3, 48
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	add	a2, a2, a3
 	add	a0, a0, a1
 	bltu	a0, a2, .LBB9_2

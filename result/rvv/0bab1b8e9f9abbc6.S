@@ -44,7 +44,7 @@ func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf4	v10, v8
 	lui	a0, 16
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	bseti	a0, a0, 32
 	bseti	a0, a0, 48
 	vmul.vx	v8, v10, a0

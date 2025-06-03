@@ -14,7 +14,7 @@ func0000000000000070:
 	andi	a2, a2, 63
 	lui	a3, 21504
 	sltiu	a2, a2, 17
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	xori	a2, a2, 1
 	xor	a1, a1, a3
 	seqz	a1, a1

@@ -64,10 +64,10 @@ func0000000000000035:
 
 func000000000000003c:
 	lui	a2, 15
-	addiw	a2, a2, -1904
+	addi	a2, a2, -1904
 	mul	a1, a1, a2
 	lui	a2, 29
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	sub	a0, a0, a2
 	sub	a0, a1, a0
 	ret

@@ -2,11 +2,11 @@ func000000000000003f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmul.vx	v10, v12, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -14,11 +14,11 @@ func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmul.vx	v10, v12, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -58,7 +58,7 @@ func000000000000007f:
 
 func0000000000000035:
 	lui	a0, 1048574
-	addiw	a0, a0, 819
+	addi	a0, a0, 819
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 1
@@ -69,7 +69,7 @@ func0000000000000035:
 
 func0000000000000015:
 	lui	a0, 2
-	addiw	a0, a0, -969
+	addi	a0, a0, -969
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	li	a0, -637

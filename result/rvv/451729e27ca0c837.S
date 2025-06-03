@@ -27,7 +27,7 @@ func0000000000000194:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 262144
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsrl.vi	v10, v10, 3
 	vand.vx	v10, v10, a0
 	vsrl.vi	v8, v8, 3

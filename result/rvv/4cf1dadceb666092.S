@@ -28,7 +28,7 @@ func0000000000000024:
 
 func0000000000000068:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
 	vmsltu.vv	v12, v8, v10
@@ -39,7 +39,7 @@ func0000000000000074:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv.v.i	v12, 0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vrsub.vx	v12, v10, a0, v0.t
 	vmsltu.vv	v0, v12, v8
 	ret

@@ -28,7 +28,7 @@ func0000000000000044:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, 24
-	addiw	a0, a0, 1696
+	addi	a0, a0, 1696
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v12, v10, fa5
 	vmsltu.vx	v10, v8, a0
@@ -91,7 +91,7 @@ func00000000000000ac:
 	lui	a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vf	v12, v10, fa5
-	addiw	a0, a0, 1807
+	addi	a0, a0, 1807
 	vmsne.vx	v10, v8, a0
 	vmandn.mm	v0, v10, v12
 	ret

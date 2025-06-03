@@ -3,7 +3,7 @@ func0000000000000104:
 	sext.w	a2, a2
 	lui	a3, 48
 	srliw	a0, a0, 16
-	addiw	a3, a3, -497
+	addi	a3, a3, -497
 	sltiu	a0, a0, 17
 	sltu	a2, a3, a2
 	and	a0, a0, a1

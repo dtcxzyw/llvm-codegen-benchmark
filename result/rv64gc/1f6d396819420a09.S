@@ -52,7 +52,7 @@ func0000000000000014:
 .LBB5_2:
 	sext.w	a1, a1
 	lui	a0, 1
-	addiw	a0, a0, -515
+	addi	a0, a0, -515
 	sltu	a0, a1, a0
 	ret
 
@@ -63,7 +63,7 @@ func0000000000000018:
 .LBB6_2:
 	sext.w	a1, a1
 	lui	a0, 12
-	addiw	a0, a0, 848
+	addi	a0, a0, 848
 	sltu	a0, a0, a1
 	ret
 

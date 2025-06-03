@@ -23,7 +23,7 @@ func000000000000000b:
 	vmv.v.i	v9, 0
 	lui	a0, 2575
 	vmerge.vim	v9, v9, 1, v0
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10

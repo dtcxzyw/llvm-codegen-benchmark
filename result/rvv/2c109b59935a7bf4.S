@@ -59,7 +59,7 @@ func00000000000003f4:
 
 func000000000000000a:
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -70,11 +70,11 @@ func000000000000000a:
 
 func00000000000003f8:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	slli	a0, a0, 13
@@ -146,7 +146,7 @@ func0000000000000208:
 
 func00000000000002aa:
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

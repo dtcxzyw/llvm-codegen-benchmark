@@ -5,7 +5,7 @@ func0000000000000000:
 	bclri	a1, a1, 16
 	addw	a1, a1, a2
 	lui	a2, 1048528
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -17,7 +17,7 @@ func0000000000000001:
 	lui	a2, 1044480
 	srli	a1, a1, 36
 	add	a1, a1, a2
-	addiw	a2, a2, 13
+	addi	a2, a2, 13
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

@@ -20,8 +20,8 @@ func00000000000001c0:
 	lui	a3, 34
 	add	a0, a0, a1
 	lui	a1, 544
-	addiw	a3, a3, 128
-	addiw	a1, a1, 24
+	addi	a3, a3, 128
+	addi	a1, a1, 24
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

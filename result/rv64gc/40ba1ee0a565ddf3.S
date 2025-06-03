@@ -1,7 +1,7 @@
 func0000000000000021:
 	srli	a0, a0, 23
 	lui	a1, 8192
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	sub	a1, a1, a0
 	lui	a0, 4096
 	and	a0, a0, a1

@@ -11,7 +11,7 @@ func0000000000000004:
 	vadd.vi	v10, v10, -12
 	lui	a0, 4096
 	vminu.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vminu.vx	v8, v8, a0
 	ret
 

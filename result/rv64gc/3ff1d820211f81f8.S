@@ -53,7 +53,7 @@ func0000000000000030:
 	slli	a1, a1, 8
 	add	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 48
+	addi	a2, a2, 48
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -70,7 +70,7 @@ func000000000000001c:
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, 360
+	addi	a1, a1, 360
 	add	a0, a0, a1
 	ret
 

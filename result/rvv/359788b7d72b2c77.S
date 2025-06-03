@@ -16,7 +16,7 @@ func0000000000000002:
 	vmv.v.i	v11, 1
 	lui	a0, 16128
 	vwsll.vv	v8, v11, v10
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	slli	a0, a0, 14
 	addi	a0, a0, 15
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -48,7 +48,7 @@ func0000000000000003:
 	vmv.v.i	v11, 1
 	lui	a0, 8192
 	vwsll.vv	v8, v11, v10
-	addiw	a0, a0, 432
+	addi	a0, a0, 432
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	ret

@@ -4,7 +4,7 @@ func000000000000000b:
 	or	a0, a0, a2
 	lui	a2, 1323
 	lui	a4, 1046322
-	addiw	a3, a2, 2002
+	addi	a3, a2, 2002
 	addi	a2, a4, 51
 	slli	a2, a2, 12
 	addi	a2, a2, 1209
@@ -33,7 +33,7 @@ func000000000000000a:
 	sd	ra, 8(sp)
 	or	a0, a0, a2
 	lui	a2, 477
-	addiw	a2, a2, -667
+	addi	a2, a2, -667
 	slli	a2, a2, 11
 	li	a3, 0
 	call	__udivti3

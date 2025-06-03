@@ -31,7 +31,7 @@ func0000000000000020:
 
 func0000000000000012:
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	sltu	a1, a1, a2
 	li	a2, 1
 	czero.nez	a0, a0, a1

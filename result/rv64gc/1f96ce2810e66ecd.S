@@ -4,7 +4,7 @@ func0000000000000108:
 	addi	a3, a3, 384
 	add	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	srliw	a2, a2, 4
 	sltiu	a2, a2, 1893
 	and	a1, a1, a2
@@ -18,7 +18,7 @@ func0000000000000908:
 	addi	a3, a3, 384
 	add	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -1116
+	addi	a3, a3, -1116
 	srliw	a2, a2, 4
 	sltiu	a2, a2, 1893
 	and	a1, a1, a2

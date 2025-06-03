@@ -35,7 +35,7 @@ func0000000000000006:
 func0000000000000008:
 	mulw	a0, a0, a1
 	lui	a1, 2197
-	addiw	a1, a1, 1087
+	addi	a1, a1, 1087
 	sltu	a0, a1, a0
 	li	a1, -2
 	czero.nez	a0, a1, a0
@@ -57,7 +57,7 @@ func0000000000000061:
 	seqz	a0, a0
 	or	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -96
+	addi	a1, a1, -96
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -2000
 	ret

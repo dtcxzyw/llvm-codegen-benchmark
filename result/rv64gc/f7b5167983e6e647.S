@@ -11,7 +11,7 @@ func0000000000000005:
 func000000000000000f:
 	andi	a3, a0, 1
 	lui	a0, 16
-	addiw	a0, a0, -55
+	addi	a0, a0, -55
 	bnez	a3, .LBB1_2
 	zext.b	a1, a2
 	add	a0, a0, a1

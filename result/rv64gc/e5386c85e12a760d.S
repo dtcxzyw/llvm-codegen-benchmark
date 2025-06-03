@@ -9,7 +9,7 @@ func000000000000001f:
 	zext.b	a2, a2
 	lui	a3, 1048574
 	slli	a2, a2, 15
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

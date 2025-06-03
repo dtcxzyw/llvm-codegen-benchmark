@@ -40,7 +40,7 @@ func0000000000000024:
 	sext.w	a2, a0
 	lui	a0, 5
 	li	a3, 16
-	addiw	a0, a0, 1028
+	addi	a0, a0, 1028
 	bltu	a2, a3, .LBB4_2
 	add	a0, a0, a1
 	addiw	a0, a0, 96
@@ -66,7 +66,7 @@ func00000000000000d4:
 	sext.w	a2, a0
 	lui	a0, 5
 	li	a3, 16
-	addiw	a0, a0, 1028
+	addi	a0, a0, 1028
 	bltu	a2, a3, .LBB6_2
 	add	a0, a0, a1
 	addiw	a0, a0, 96

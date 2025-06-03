@@ -21,7 +21,7 @@ func0000000000000e46:
 	lui	a0, 699051
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -38,7 +38,7 @@ func0000000000000e01:
 	lui	a0, 699051
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -55,7 +55,7 @@ func0000000000000e04:
 	lui	a0, 699051
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v12, v8, 0
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetvli	zero, zero, e64, m2, ta, ma

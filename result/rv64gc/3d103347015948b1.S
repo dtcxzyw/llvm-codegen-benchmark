@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	addi	a0, a0, -126
 	seqz	a0, a0
@@ -8,14 +8,14 @@ func0000000000000001:
 
 func0000000000000061:
 	lui	a1, 1
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000000c:
 	lui	a1, 16
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	addi	a0, a0, -512
 	snez	a0, a0

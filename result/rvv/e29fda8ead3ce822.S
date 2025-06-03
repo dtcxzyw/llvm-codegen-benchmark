@@ -5,7 +5,7 @@ func0000000000000003:
 	slli	a0, a0, 4
 	vand.vx	v12, v12, a0
 	lui	a0, 16
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vor.vv	v8, v12, v8
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
@@ -26,7 +26,7 @@ func0000000000000007:
 	lui	a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 14
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vand.vx	v12, v12, a0
 	lui	a0, 508
 	vor.vv	v8, v12, v8
@@ -88,7 +88,7 @@ func0000000000000000:
 	li	a0, 255
 	vand.vx	v10, v10, a0
 	lui	a0, 256
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12

@@ -12,7 +12,7 @@ func0000000000000018:
 func0000000000000000:
 	andi	a2, a2, -8
 	lui	a3, 244141
-	addiw	a3, a3, -1560
+	addi	a3, a3, -1560
 	sub	a2, a3, a2
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2

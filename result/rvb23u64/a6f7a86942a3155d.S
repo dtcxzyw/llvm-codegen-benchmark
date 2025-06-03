@@ -120,7 +120,7 @@ func0000000000000281:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	lui	a3, 16
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	and	a2, a2, a3
 	li	a3, 27
 	slli	a3, a3, 11
@@ -150,7 +150,7 @@ func0000000000000301:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	addi	a2, a2, -256
 	seqz	a2, a2

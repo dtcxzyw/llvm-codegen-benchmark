@@ -14,7 +14,7 @@ func000000000000001d:
 	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 1048409
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vmacc.vx	v8, a0, v12
 	ret
 
@@ -23,7 +23,7 @@ func000000000000003f:
 	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v12
 	ret
 

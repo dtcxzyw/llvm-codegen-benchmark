@@ -5,9 +5,9 @@ func00000000000001e1:
 	vandn.vx	v12, v12, a0
 	vadd.vv	v12, v10, v12
 	vmv.v.i	v10, -1
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	vmsgtu.vx	v0, v12, a1
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

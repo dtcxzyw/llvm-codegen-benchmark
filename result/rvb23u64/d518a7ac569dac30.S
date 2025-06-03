@@ -3,7 +3,7 @@ func0000000000000005:
 	sext.w	a0, a0
 	mul	a0, a0, a1
 	lui	a1, 122
-	addiw	a1, a1, 288
+	addi	a1, a1, 288
 	add	a0, a0, a1
 	ret
 

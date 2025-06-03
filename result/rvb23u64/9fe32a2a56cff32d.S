@@ -1,7 +1,7 @@
 func000000000000000c:
 	srli	a1, a1, 12
 	lui	a2, 28
-	addiw	a2, a2, 512
+	addi	a2, a2, 512
 	slli	a1, a1, 59
 	mulhu	a1, a1, a2
 	addw	a0, a0, a1

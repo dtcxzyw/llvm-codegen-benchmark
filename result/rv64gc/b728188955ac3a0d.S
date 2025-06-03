@@ -5,7 +5,7 @@ func0000000000000001:
 	sraiw	a4, a0, 8
 	slli	t0, a0, 56
 	srli	a2, a1, 40
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a2, a2, a3
 	and	a0, a0, a3
 	srli	a3, a1, 56
@@ -34,7 +34,7 @@ func0000000000000000:
 	sraiw	a4, a0, 8
 	slli	t0, a0, 56
 	srli	a2, a1, 40
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a2, a2, a3
 	and	a0, a0, a3
 	srli	a3, a1, 56

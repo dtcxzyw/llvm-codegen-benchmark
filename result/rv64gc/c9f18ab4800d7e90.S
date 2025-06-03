@@ -1,17 +1,17 @@
 func0000000000000294:
 	sext.w	a2, a2
 	lui	a4, 1
-	addiw	a3, a4, 1
+	addi	a3, a4, 1
 	bltu	a2, a3, .LBB0_2
 	li	a3, 1
 	slli	a3, a3, 11
-	addiw	a4, a4, -2047
+	addi	a4, a4, -2047
 	andi	a0, a0, 1
 	bltu	a2, a4, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a3, 1024
-	addiw	a4, a4, -2047
+	addi	a4, a4, -2047
 	andi	a0, a0, 1
 	bgeu	a2, a4, .LBB0_4
 .LBB0_3:
@@ -50,18 +50,18 @@ func000000000000014a:
 	lui	a4, 3
 	blt	a3, a2, .LBB2_2
 	lui	a3, 1
-	addiw	a3, a3, -1450
+	addi	a3, a3, -1450
 	li	a5, 8
 	andi	a0, a0, 1
 	blt	a5, a2, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addiw	a3, a4, 1542
+	addi	a3, a4, 1542
 	li	a5, 8
 	andi	a0, a0, 1
 	bge	a5, a2, .LBB2_4
 .LBB2_3:
-	addiw	a3, a4, 1530
+	addi	a3, a4, 1530
 .LBB2_4:
 	beqz	a0, .LBB2_6
 	mv	a0, a1

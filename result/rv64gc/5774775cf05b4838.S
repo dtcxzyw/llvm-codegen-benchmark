@@ -10,7 +10,7 @@ func000000000000001c:
 	addi	a1, a1, 1
 	lui	a2, 17
 	slli	a1, a1, 51
-	addiw	a2, a2, 1072
+	addi	a2, a2, 1072
 	srli	a1, a1, 51
 	add	a0, a0, a2
 	add	a0, a0, a1

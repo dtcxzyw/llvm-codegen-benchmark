@@ -13,7 +13,7 @@ func000000000000000f:
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	lui	a1, 512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret
 

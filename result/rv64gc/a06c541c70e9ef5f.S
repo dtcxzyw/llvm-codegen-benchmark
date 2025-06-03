@@ -8,7 +8,7 @@ func0000000000000026:
 func0000000000000021:
 	beqz	a1, .LBB1_2
 	lui	a0, 2056
-	addiw	a0, a0, 4
+	addi	a0, a0, 4
 	or	a0, a0, a2
 .LBB1_2:
 	ret

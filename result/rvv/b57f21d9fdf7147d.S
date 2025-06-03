@@ -25,7 +25,7 @@ func0000000000000408:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 1003101
-	addiw	a0, a0, 1085
+	addi	a0, a0, 1085
 	slli	a0, a0, 12
 	addi	a0, a0, 315
 	slli	a0, a0, 17

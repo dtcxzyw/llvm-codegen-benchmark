@@ -61,7 +61,7 @@ func0000000000000026:
 func0000000000000008:
 	lui	a3, 1
 	srli	a1, a1, 12
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sub	a3, a3, a2
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1

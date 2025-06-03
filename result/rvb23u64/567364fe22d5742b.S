@@ -10,7 +10,7 @@ func0000000000000042:
 func0000000000000302:
 	snez	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a1, a1, a2

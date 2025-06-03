@@ -1,7 +1,7 @@
 func00000000000000c1:
 	addi	a1, a1, 1
 	lui	a2, 32
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	addiw	a0, a0, 8
 	xor	a0, a0, a1
@@ -72,7 +72,7 @@ func0000000000000044:
 func00000000000001e6:
 	addi	a1, a1, 1
 	lui	a2, 1024
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	addiw	a0, a0, 32
 	slt	a0, a0, a1

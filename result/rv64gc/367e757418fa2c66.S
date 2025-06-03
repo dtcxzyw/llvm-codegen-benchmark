@@ -31,7 +31,7 @@ func000000000000018c:
 func0000000000000184:
 	lui	a3, 16
 	srliw	a1, a1, 13
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltiu	a1, a1, 129
 	and	a2, a2, a3
 	xor	a2, a2, a3
@@ -54,7 +54,7 @@ func000000000000002c:
 func0000000000000181:
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	seqz	a1, a1
 	and	a2, a2, a3
 	addi	a2, a2, -1536

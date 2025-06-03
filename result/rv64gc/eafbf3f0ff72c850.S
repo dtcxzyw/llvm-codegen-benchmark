@@ -11,7 +11,7 @@ func0000000000000014:
 	lui	a1, 208896
 	slli	a0, a0, 33
 	srli	a0, a0, 33
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

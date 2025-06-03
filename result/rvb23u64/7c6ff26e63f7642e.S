@@ -28,7 +28,7 @@ func0000000000000099:
 func00000000000000a9:
 	addw	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 906
+	addi	a2, a2, 906
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

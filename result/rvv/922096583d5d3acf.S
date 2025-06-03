@@ -20,7 +20,7 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	vadd.vx	v8, v8, a1
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 18

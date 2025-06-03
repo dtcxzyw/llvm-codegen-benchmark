@@ -2,7 +2,7 @@ func0000000000000005:
 	andi	a0, a0, 1
 	srai	a1, a1, 4
 	lui	a2, 748983
-	addiw	a2, a2, -585
+	addi	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3
 	li	a3, 1

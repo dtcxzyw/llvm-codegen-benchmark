@@ -10,7 +10,7 @@ func000000000000008c:
 	zext.h	a0, a0
 	addiw	a1, a1, -1
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	addi	a0, a0, -1
 	sltu	a1, a1, a2
 	snez	a0, a0

@@ -90,7 +90,7 @@ func0000000000000081:
 func000000000000018c:
 	sext.w	a1, a1
 	lui	a3, 4096
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a1, a1, a3
 	zext.b	a2, a2
 	addi	a2, a2, -15
@@ -103,7 +103,7 @@ func000000000000018c:
 func000000000000010c:
 	sext.w	a1, a1
 	lui	a3, 4096
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a1, a1, a3
 	zext.b	a2, a2
 	sltiu	a2, a2, 160

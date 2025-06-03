@@ -141,7 +141,7 @@ func0000000000000064:
 func000000000000006a:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	add	a1, a1, a2
 	addiw	a2, a2, 2
 	and	a1, a1, a2

@@ -24,7 +24,7 @@ func000000000000002f:
 	slli	a1, a1, 32
 	lui	a2, 256
 	srli	a1, a1, 30
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	addi	a1, a1, -8
 	andi	a1, a1, -8
 	add	a0, a0, a2

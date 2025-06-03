@@ -1,7 +1,7 @@
 func0000000000000081:
 	lui	a3, 16
 	zext.b	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	addi	a0, a0, -2
 	and	a2, a2, a3
 	and	a1, a1, a3
@@ -13,7 +13,7 @@ func0000000000000081:
 func000000000000002c:
 	lui	a3, 16
 	zext.b	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	xor	a1, a1, a2
@@ -34,7 +34,7 @@ func0000000000000021:
 func000000000000008c:
 	lui	a3, 16
 	zext.b	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	sltu	a1, a1, a2

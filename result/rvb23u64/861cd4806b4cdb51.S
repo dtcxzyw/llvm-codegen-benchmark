@@ -58,7 +58,7 @@ func000000000000000a:
 	lui	a2, 2
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, 1807
+	addi	a1, a2, 1807
 	slt	a0, a1, a0
 	ret
 

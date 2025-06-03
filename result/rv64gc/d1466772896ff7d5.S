@@ -32,7 +32,7 @@ func000000000000002b:
 	lui	a3, 367720
 	add	a1, a1, a2
 	srliw	a1, a1, 2
-	addiw	a2, a3, -807
+	addi	a2, a3, -807
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000023:
 	lui	a3, 367720
 	add	a1, a1, a2
 	srliw	a1, a1, 2
-	addiw	a2, a3, -807
+	addi	a2, a3, -807
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1

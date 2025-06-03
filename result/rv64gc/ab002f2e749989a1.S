@@ -79,7 +79,7 @@ func0000000000000070:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 21504
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	sltiu	a1, a1, 17
 	xor	a2, a2, a3
 	seqz	a2, a2

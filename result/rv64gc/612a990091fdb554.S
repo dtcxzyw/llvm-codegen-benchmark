@@ -46,7 +46,7 @@ func0000000000000c84:
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -89,7 +89,7 @@ func0000000000000c81:
 func0000000000000d8a:
 	sext.w	a0, a0
 	lui	a3, 1
-	addiw	a3, a3, 344
+	addi	a3, a3, 344
 	slti	a0, a0, 2
 	add	a2, a2, a3
 	xor	a1, a1, a2

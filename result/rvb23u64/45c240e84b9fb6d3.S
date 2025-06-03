@@ -39,7 +39,7 @@ func000000000000018c:
 
 func0000000000000281:
 	lui	a2, 16
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	andi	a0, a0, 2047
 	or	a0, a0, a1
@@ -61,7 +61,7 @@ func0000000000000294:
 	and	a0, a0, a2
 	lui	a2, 21094
 	maxu	a0, a0, a1
-	addiw	a1, a2, -1024
+	addi	a1, a2, -1024
 	sltu	a0, a0, a1
 	ret
 

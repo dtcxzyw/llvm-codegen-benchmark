@@ -1,8 +1,7 @@
 func0000000000000000:
-	li	a0, 1
+	bseti	a0, zero, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	slli	a0, a0, 33
 	vadd.vv	v8, v8, v8
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0

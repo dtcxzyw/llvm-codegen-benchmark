@@ -24,7 +24,7 @@ func0000000000000020:
 	xori	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -14,7 +14,7 @@ func0000000000000001:
 
 func0000000000000002:
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	vsetvli	zero, zero, e32, m1, ta, ma

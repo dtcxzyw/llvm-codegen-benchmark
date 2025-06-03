@@ -34,7 +34,7 @@ func0000000000000000:
 	mul	a0, a0, a1
 	lui	a1, 4080
 	srli	a0, a0, 8
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	and	a0, a0, a1
 	ret
 

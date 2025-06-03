@@ -9,7 +9,7 @@ func0000000000000010:
 
 func0000000000000142:
 	lui	a3, 1819
-	addiw	a3, a3, -43
+	addi	a3, a3, -43
 	slli	a3, a3, 12
 	addi	a3, a3, -1651
 	slli	a3, a3, 15
@@ -30,7 +30,7 @@ func000000000000004e:
 
 func000000000000014e:
 	lui	a3, 45475
-	addiw	a3, a3, -1085
+	addi	a3, a3, -1085
 	slli	a3, a3, 12
 	addi	a3, a3, -315
 	slli	a3, a3, 17

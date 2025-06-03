@@ -1,7 +1,6 @@
 func0000000000000000:
 	zext.w	a2, a2
-	li	a3, 1
-	slli	a3, a3, 36
+	bseti	a3, zero, 36
 	addi	a3, a3, -128
 	and	a1, a1, a3
 	mul	a1, a1, a2

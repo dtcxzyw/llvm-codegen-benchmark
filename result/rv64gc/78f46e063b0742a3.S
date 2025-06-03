@@ -20,7 +20,7 @@ func0000000000000008:
 	slli	a1, a0, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -130
+	addi	a2, a2, -130
 	bgeu	a2, a1, .LBB2_2
 	li	a0, 1
 	ret

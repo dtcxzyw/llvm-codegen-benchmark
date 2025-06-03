@@ -2,7 +2,7 @@ func0000000000000318:
 	zext.b	a0, a0
 	sext.w	a2, a1
 	lui	a3, 559241
-	addiw	a3, a3, -1911
+	addi	a3, a3, -1911
 	mul	a2, a2, a3
 	lui	a3, 978671
 	srli	a2, a2, 32
@@ -15,7 +15,7 @@ func0000000000000318:
 	mul	a1, a1, a3
 	lui	a3, 17476
 	addi	a2, a2, -1912
-	addiw	a3, a3, 1092
+	addi	a3, a3, 1092
 	addi	a0, a0, -5
 	add	a1, a1, a2
 	slliw	a2, a1, 30

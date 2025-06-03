@@ -12,8 +12,8 @@ func000000000000001d:
 func000000000000000e:
 	lui	a0, 2032
 	lui	a1, 522248
-	addiw	a0, a0, 127
-	addiw	a1, a1, -128
+	addi	a0, a0, 127
+	addi	a1, a1, -128
 	slli	a2, a0, 32
 	add	a0, a0, a2
 	slli	a2, a1, 32
@@ -55,7 +55,7 @@ func000000000000000f:
 	srli	a0, a0, 32
 	vand.vx	v10, v8, a0
 	lui	a0, 1
-	addiw	a0, a0, -9
+	addi	a0, a0, -9
 	vmv.v.x	v8, a0
 	li	a0, 24
 	vmacc.vx	v8, a0, v10

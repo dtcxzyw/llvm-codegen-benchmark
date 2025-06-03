@@ -13,7 +13,7 @@ func000000000000000e:
 	srliw	a2, a2, 26
 	add	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 776
+	addi	a2, a2, 776
 	sraiw	a1, a1, 6
 	slli	a1, a1, 3
 	add	a0, a0, a2

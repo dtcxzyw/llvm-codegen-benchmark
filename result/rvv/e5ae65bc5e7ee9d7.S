@@ -19,7 +19,7 @@ func0000000000000022:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	vadd.vv	v8, v8, v10
 	slli	a1, a0, 32
 	add	a0, a0, a1

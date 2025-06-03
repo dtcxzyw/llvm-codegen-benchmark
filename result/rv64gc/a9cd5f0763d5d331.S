@@ -15,7 +15,7 @@ func0000000000000081:
 func0000000000000001:
 	bnez	a0, .LBB2_2
 	lui	a0, 268352
-	addiw	a0, a0, 1170
+	addi	a0, a0, 1170
 	ret
 .LBB2_2:
 	srli	a0, a1, 16

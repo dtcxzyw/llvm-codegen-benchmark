@@ -3,8 +3,8 @@ func0000000000000294:
 	sext.w	a2, a2
 	lui	a3, 1
 	li	a4, 1024
-	addiw	a5, a3, 1
-	addiw	a3, a3, -2047
+	addi	a5, a3, 1
+	addi	a3, a3, -2047
 	sltu	a5, a2, a5
 	sltu	a2, a2, a3
 	li	a3, 384
@@ -41,11 +41,11 @@ func000000000000014a:
 	lui	a3, 1048573
 	lui	a4, 3
 	slti	a5, a2, 7
-	addiw	a3, a3, 1104
+	addi	a3, a3, 1104
 	czero.eqz	a3, a3, a5
-	addiw	a5, a4, 1542
+	addi	a5, a4, 1542
 	slti	a2, a2, 9
-	addiw	a4, a4, 1530
+	addi	a4, a4, 1530
 	czero.nez	a4, a4, a2
 	add	a3, a3, a5
 	czero.eqz	a2, a3, a2

@@ -25,7 +25,7 @@ func0000000000000030:
 	slli	a0, a0, 20
 	vmul.vx	v8, v8, a0
 	lui	a0, 2
-	addiw	a0, a0, 1015
+	addi	a0, a0, 1015
 	vmacc.vx	v8, a0, v10
 	ret
 

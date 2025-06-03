@@ -3,7 +3,7 @@ func0000000000000004:
 	seqz	a2, a2
 	or	a1, a1, a2
 	lui	a2, 512
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	lui	a2, 786432

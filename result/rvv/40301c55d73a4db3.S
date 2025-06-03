@@ -165,7 +165,7 @@ func000000000000028c:
 
 func0000000000000528:
 	lui	a0, 7
-	addiw	a0, a0, 1328
+	addi	a0, a0, 1328
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmand.mm	v10, v12, v0

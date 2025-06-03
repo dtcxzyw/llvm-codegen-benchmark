@@ -15,7 +15,7 @@ func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 4
 	lui	a0, 863533
-	addiw	a0, a0, 723
+	addi	a0, a0, 723
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -1

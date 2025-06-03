@@ -1,6 +1,6 @@
 func000000000000001b:
 	lui	a0, 349525
-	addiw	a0, a0, 1366
+	addi	a0, a0, 1366
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v8, a0
 	li	a0, 32
@@ -38,7 +38,7 @@ func0000000000000002:
 
 func0000000000000003:
 	lui	a0, 4112
-	addiw	a0, a0, 257
+	addi	a0, a0, 257
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -50,7 +50,7 @@ func0000000000000003:
 
 func0000000000000000:
 	lui	a0, 19235
-	addiw	a0, a0, -367
+	addi	a0, a0, -367
 	slli	a0, a0, 12
 	addi	a0, a0, -479
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -79,7 +79,7 @@ func0000000000000012:
 
 func000000000000000a:
 	lui	a0, 2
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v8, a0
 	li	a0, 32

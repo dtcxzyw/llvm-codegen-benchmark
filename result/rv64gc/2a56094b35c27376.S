@@ -3,7 +3,7 @@ func0000000000000002:
 	li	a3, 62
 	beq	a2, a3, .LBB0_2
 	lui	a2, 262144
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

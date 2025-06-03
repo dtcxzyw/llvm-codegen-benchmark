@@ -78,7 +78,7 @@ func000000000000003f:
 	add	a1, a1, a2
 	lui	a2, 4
 	add	a0, a0, a1
-	addiw	a1, a2, -1498
+	addi	a1, a2, -1498
 	add	a0, a0, a1
 	ret
 
@@ -86,7 +86,7 @@ func0000000000000020:
 	add	a1, a1, a2
 	lui	a2, 4
 	add	a0, a0, a1
-	addiw	a1, a2, -1487
+	addi	a1, a2, -1487
 	add	a0, a0, a1
 	ret
 

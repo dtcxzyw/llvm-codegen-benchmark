@@ -13,7 +13,7 @@ func000000000000030b:
 
 func0000000000000040:
 	lui	a0, 67584
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	slli	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v10, a0

@@ -17,7 +17,7 @@ func000000000000000f:
 	srli	a1, a1, 59
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -1248
+	addi	a1, a1, -1248
 	add	a0, a0, a1
 	ret
 

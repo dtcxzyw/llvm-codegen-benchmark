@@ -9,10 +9,10 @@ func0000000000000000:
 	lui	a1, 209715
 	lui	a3, 61681
 	lui	a2, 4112
-	addiw	a4, a0, 1365
-	addiw	a1, a1, 819
-	addiw	a3, a3, -241
-	addiw	a2, a2, 257
+	addi	a4, a0, 1365
+	addi	a1, a1, 819
+	addi	a3, a3, -241
+	addi	a2, a2, 257
 	slli	a0, a4, 32
 	add	a0, a0, a4
 	slli	a4, a1, 32

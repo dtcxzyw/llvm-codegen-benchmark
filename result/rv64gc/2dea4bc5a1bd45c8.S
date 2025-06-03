@@ -11,7 +11,7 @@ func0000000000000003:
 	sub	a1, a1, a0
 	lui	a0, 262144
 	srli	a1, a1, 4
-	addiw	a0, a0, -4
+	addi	a0, a0, -4
 	and	a0, a0, a1
 	ret
 

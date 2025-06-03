@@ -11,7 +11,7 @@ func0000000000000020:
 
 func0000000000000038:
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

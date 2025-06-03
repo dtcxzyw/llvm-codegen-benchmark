@@ -35,7 +35,7 @@ func0000000000000000:
 
 func0000000000000035:
 	lui	a0, 1048574
-	addiw	a0, a0, -1841
+	addi	a0, a0, -1841
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 32
@@ -44,12 +44,12 @@ func0000000000000035:
 
 func0000000000000015:
 	lui	a0, 1046001
-	addiw	a0, a0, 325
+	addi	a0, a0, 325
 	slli	a0, a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vadd.vx	v8, v8, a0
 	ret

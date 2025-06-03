@@ -4,7 +4,7 @@ func000000000000006e:
 	negw	a2, a2
 	and	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 1196
+	addi	a2, a2, 1196
 	sext.w	a1, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -16,7 +16,7 @@ func000000000000006c:
 	negw	a2, a2
 	and	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 1188
+	addi	a2, a2, 1188
 	sext.w	a1, a1
 	add	a0, a0, a2
 	add	a0, a0, a1

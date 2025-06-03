@@ -23,7 +23,7 @@ func0000000000000018:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	lui	a2, 65
-	addiw	a2, a2, 427
+	addi	a2, a2, 427
 	sltu	a0, a2, a0
 	li	a2, 2
 	czero.nez	a1, a1, a0

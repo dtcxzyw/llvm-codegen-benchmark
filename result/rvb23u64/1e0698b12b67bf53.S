@@ -19,7 +19,7 @@ func000000000000003f:
 
 func000000000000000f:
 	lui	a1, 2048
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	sh2add	a0, a0, a1
 	and	a0, a0, a1
 	ret
@@ -28,7 +28,7 @@ func000000000000002f:
 	slli	a0, a0, 3
 	lui	a1, 2048
 	addi	a0, a0, 23
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

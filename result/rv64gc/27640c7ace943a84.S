@@ -11,7 +11,7 @@ func0000000000000024:
 func0000000000000004:
 	lui	a3, 1032192
 	addi	a4, a3, -1
-	addiw	a3, a3, 511
+	addi	a3, a3, 511
 	addw	a2, a2, a4
 	sltu	a2, a2, a3
 	xori	a1, a1, 1

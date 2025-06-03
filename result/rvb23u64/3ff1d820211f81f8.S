@@ -58,7 +58,7 @@ func000000000000001c:
 	addiw	a1, a1, 1
 	sh3add	a0, a1, a0
 	lui	a1, 4
-	addiw	a1, a1, 360
+	addi	a1, a1, 360
 	add	a0, a0, a1
 	ret
 

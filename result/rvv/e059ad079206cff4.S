@@ -15,7 +15,7 @@ func0000000000000014:
 	vrsub.vi	v10, v8, 0
 	lui	a0, 9095
 	vmax.vv	v8, v8, v10
-	addiw	a0, a0, -217
+	addi	a0, a0, -217
 	slli	a0, a0, 12
 	addi	a0, a0, -63
 	slli	a0, a0, 15

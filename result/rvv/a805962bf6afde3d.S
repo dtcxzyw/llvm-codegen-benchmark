@@ -7,20 +7,20 @@ func0000000000000008:
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 31
 	vsrl.vi	v10, v10, 15
-	addiw	a0, a0, -1976
+	addi	a0, a0, -1976
 	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000000:
 	lui	a0, 524296
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 15
-	addiw	a1, a1, 4
+	addi	a1, a1, 4
 	vmacc.vx	v8, a1, v10
 	ret
 
@@ -33,7 +33,7 @@ func000000000000000c:
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 244
 	vsrl.vi	v10, v10, 18
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -59,7 +59,7 @@ func000000000000000f:
 	vsrl.vi	v10, v10, 18
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 1571
-	addiw	a0, a0, 667
+	addi	a0, a0, 667
 	vsrl.vi	v10, v10, 24
 	slli	a0, a0, 9
 	vmacc.vx	v8, a0, v10

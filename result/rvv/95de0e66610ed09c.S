@@ -15,7 +15,7 @@ func00000000000000a9:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 315653
-	addiw	a0, a0, -702
+	addi	a0, a0, -702
 	vmacc.vx	v10, a0, v8
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma

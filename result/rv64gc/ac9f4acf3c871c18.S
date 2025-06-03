@@ -11,7 +11,7 @@ func0000000000000001:
 	srai	a0, a0, 13
 	add	a0, a0, a1
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	mul	a0, a0, a1
 	sub	a0, a2, a0
 .LBB0_2:
@@ -30,7 +30,7 @@ func0000000000000003:
 	srai	a0, a0, 13
 	add	a0, a0, a1
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	mul	a0, a0, a1
 	sub	a0, a2, a0
 .LBB1_2:
@@ -49,7 +49,7 @@ func0000000000000000:
 	srai	a0, a0, 28
 	add	a0, a0, a1
 	lui	a1, 477
-	addiw	a1, a1, -667
+	addi	a1, a1, -667
 	slli	a1, a1, 11
 	mul	a0, a0, a1
 	sub	a0, a2, a0

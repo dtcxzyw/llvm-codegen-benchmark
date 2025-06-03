@@ -14,10 +14,10 @@ func000000000000003f:
 
 func000000000000001d:
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a0, a0, a2
 	lui	a2, 930062
-	addiw	a2, a2, -1681
+	addi	a2, a2, -1681
 	add.uw	a0, a1, a0
 	slli	a2, a2, 7
 	add	a0, a0, a2
@@ -32,7 +32,7 @@ func0000000000000037:
 
 func0000000000000035:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a0, a0, a2
 	add.uw	a0, a1, a0
 	addi	a0, a0, -1

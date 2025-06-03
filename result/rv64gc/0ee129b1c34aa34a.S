@@ -1,6 +1,6 @@
 func0000000000000026:
 	lui	a3, 10
-	addiw	a3, a3, -960
+	addi	a3, a3, -960
 	add	a2, a2, a3
 	slt	a1, a1, a2
 	neg	a1, a1

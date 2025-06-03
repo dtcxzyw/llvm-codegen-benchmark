@@ -4,7 +4,7 @@ func000000000000001f:
 	li	a0, 12
 	lui	a1, 699051
 	vmacc.vx	v10, a0, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vmulhu.vx	v8, v10, a1
@@ -19,7 +19,7 @@ func000000000000001d:
 	li	a0, 12
 	lui	a1, 699051
 	vmacc.vx	v10, a0, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vmulhu.vx	v8, v10, a1
@@ -34,7 +34,7 @@ func0000000000000000:
 	lui	a2, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	vmacc.vx	v10, a1, v8
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -50,7 +50,7 @@ func0000000000000015:
 	lui	a2, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	vmacc.vx	v10, a1, v8
 	slli	a3, a2, 32
 	add	a2, a2, a3

@@ -32,11 +32,11 @@ func0000000000000181:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
 	lui	a0, 2
-	addiw	a1, a0, 400
+	addi	a1, a0, 400
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a1
-	addiw	a1, a0, 392
-	addiw	a0, a0, 396
+	addi	a1, a0, 392
+	addi	a0, a0, 396
 	vmerge.vxm	v10, v10, a1, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v0, v8, 0
@@ -51,7 +51,7 @@ func0000000000000024:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vx	v0, v9, a0
 	bseti	a0, a1, 43
-	addiw	a1, a1, 8
+	addi	a1, a1, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	bseti	a0, a1, 43

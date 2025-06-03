@@ -4,7 +4,7 @@ func000000000000001d:
 	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v14
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmul.vv	v8, v8, v12
 	slli	a0, a0, 21
 	vand.vx	v10, v10, a0

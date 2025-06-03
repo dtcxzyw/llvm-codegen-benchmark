@@ -8,7 +8,7 @@ func00000000000001ef:
 
 func00000000000000a9:
 	lui	a1, 315653
-	addiw	a1, a1, -702
+	addi	a1, a1, -702
 	mul	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 32

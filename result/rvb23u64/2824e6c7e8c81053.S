@@ -19,7 +19,7 @@ func00000000000000d5:
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 1120
+	addi	a1, a2, 1120
 	add	a0, a0, a1
 	ret
 

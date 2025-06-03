@@ -8,7 +8,7 @@ func000000000000003f:
 	andi	a0, a0, 508
 	lui	a1, 18
 	slli	a0, a0, 9
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	add	a0, a0, a1
 	ret
 

@@ -23,7 +23,7 @@ func0000000000000019:
 	addiw	a0, a0, -127
 	lui	a2, 16
 	slti	a1, a1, 0
-	addiw	a2, a2, -130
+	addi	a2, a2, -130
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -41,7 +41,7 @@ func0000000000000007:
 func0000000000000029:
 	sext.w	a0, a0
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	min	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
@@ -73,7 +73,7 @@ func0000000000000020:
 	addw	a0, a0, a2
 	lui	a2, 4096
 	sltiu	a1, a1, -2
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

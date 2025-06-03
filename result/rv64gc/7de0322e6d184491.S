@@ -85,7 +85,7 @@ func0000000000000029:
 func0000000000000022:
 	sext.w	a3, a2
 	lui	a4, 1048544
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	bltu	a4, a3, .LBB10_2
 	mv	a1, a2
 .LBB10_2:

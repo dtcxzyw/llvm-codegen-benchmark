@@ -152,7 +152,7 @@ func000000000000012a:
 	slliw	a0, a0, 6
 	or	a0, a0, a1
 	lui	a1, 272
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

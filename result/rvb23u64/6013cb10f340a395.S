@@ -107,8 +107,8 @@ func000000000000014a:
 	slti	a4, a1, 2
 	slti	a1, a1, 7
 	czero.eqz	a2, a2, a4
-	addiw	a4, a3, 1544
-	addiw	a3, a3, 1533
+	addi	a4, a3, 1544
+	addi	a3, a3, 1533
 	czero.nez	a4, a4, a1
 	addi	a2, a2, 2047
 	addi	a2, a2, 601
@@ -143,8 +143,8 @@ func0000000000000081:
 	sltiu	a4, a1, 10
 	addi	a1, a1, -8
 	czero.nez	a2, a2, a4
-	addiw	a4, a3, -819
-	addiw	a3, a3, -849
+	addi	a4, a3, -819
+	addi	a3, a3, -849
 	czero.nez	a4, a4, a1
 	addi	a2, a2, 2047
 	addi	a2, a2, 1314

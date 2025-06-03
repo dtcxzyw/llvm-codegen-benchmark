@@ -1,9 +1,8 @@
 func000000000000003f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v8, -1
-	li	a0, 1
+	bseti	a0, zero, 34
 	vwsll.vi	v8, v10, 2
-	slli	a0, a0, 34
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v8, 15
 	addi	a0, a0, -8

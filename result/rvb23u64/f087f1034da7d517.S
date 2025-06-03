@@ -15,7 +15,7 @@ func0000000000000000:
 	addi	a2, a2, 7
 	lui	a3, 4
 	andi	a2, a2, -8
-	addiw	a3, a3, -1472
+	addi	a3, a3, -1472
 	add	a2, a2, a3
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

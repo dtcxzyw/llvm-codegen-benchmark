@@ -43,7 +43,7 @@ func00000000000000a6:
 
 func0000000000000186:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	slt	a0, a0, a2
@@ -75,7 +75,7 @@ func0000000000000104:
 
 func0000000000000086:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	slt	a0, a0, a2

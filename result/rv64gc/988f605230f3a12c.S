@@ -27,7 +27,7 @@ func0000000000000184:
 	slli	a1, a1, 35
 	lui	a2, 8
 	srli	a1, a1, 63
-	addiw	a2, a2, 565
+	addi	a2, a2, 565
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

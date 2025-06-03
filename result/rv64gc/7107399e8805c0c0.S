@@ -39,7 +39,7 @@ func000000000000001b:
 	slli	a0, a0, 48
 	lui	a1, 128
 	srli	a0, a0, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 3
 	addi	a0, a0, 1

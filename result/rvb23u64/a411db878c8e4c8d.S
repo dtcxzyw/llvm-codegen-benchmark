@@ -3,7 +3,7 @@ func0000000000000010:
 	addi	a2, a2, 751
 	addw	a1, a1, a2
 	lui	a2, 636291
-	addiw	a2, a2, 1849
+	addi	a2, a2, 1849
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2

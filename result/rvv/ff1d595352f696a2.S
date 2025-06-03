@@ -5,13 +5,13 @@ func0000000000000408:
 	lui	a0, 2
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000c68:
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v10, v12, v10, v0
@@ -31,7 +31,7 @@ func00000000000000a1:
 	.quad	5000000000000000000
 func0000000000000208:
 	lui	a0, 227374
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	slli	a0, a0, 12
 	addi	a0, a0, -1575
 	slli	a0, a0, 18
@@ -50,7 +50,7 @@ func000000000000032a:
 	lui	a0, 244
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgt.vx	v0, v8, a0
 	ret
 
@@ -80,7 +80,7 @@ func0000000000000338:
 	lui	a0, 36
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1359
+	addi	a0, a0, -1359
 	vmsgtu.vx	v0, v8, a0
 	ret
 

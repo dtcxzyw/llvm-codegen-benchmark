@@ -88,7 +88,7 @@ func0000000000003484:
 	addw	a1, a1, a2
 	lui	a2, 24414
 	sltiu	a1, a1, 10
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

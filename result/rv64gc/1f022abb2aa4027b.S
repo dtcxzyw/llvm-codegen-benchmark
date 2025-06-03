@@ -14,7 +14,7 @@ func000000000000002f:
 
 func000000000000000d:
 	lui	a1, 1024
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 17
 	andi	a0, a0, -32
@@ -23,7 +23,7 @@ func000000000000000d:
 
 func000000000000006f:
 	lui	a1, 256
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 18
 	andi	a0, a0, -4
@@ -32,7 +32,7 @@ func000000000000006f:
 
 func000000000000000f:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 10
 	andi	a0, a0, -4

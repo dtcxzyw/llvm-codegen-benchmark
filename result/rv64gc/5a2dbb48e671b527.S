@@ -21,9 +21,9 @@ func0000000000000018:
 	andi	a1, a0, 1
 	lui	a0, 1
 	bnez	a1, .LBB1_2
-	addiw	a0, a0, 1588
+	addi	a0, a0, 1588
 	ret
 .LBB1_2:
-	addiw	a0, a0, 1573
+	addi	a0, a0, 1573
 	ret
 

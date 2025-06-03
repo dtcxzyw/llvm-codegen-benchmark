@@ -58,7 +58,7 @@ func0000000000000048:
 	lui	a2, 16
 	srli	a0, a0, 48
 	seqz	a1, a1
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

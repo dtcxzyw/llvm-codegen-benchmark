@@ -6,7 +6,7 @@ func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 1
 	lui	a1, 209715
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
 	vadd.vv	v10, v12, v10
@@ -23,7 +23,7 @@ func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 1
 	lui	a1, 209715
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
 	vadd.vv	v10, v12, v10

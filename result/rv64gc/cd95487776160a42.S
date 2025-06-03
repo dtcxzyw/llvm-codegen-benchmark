@@ -5,7 +5,7 @@ func000000000000020a:
 	add	a0, a0, a2
 	lui	a2, 16
 	addw	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	ret
 

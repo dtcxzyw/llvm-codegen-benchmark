@@ -28,7 +28,7 @@ func000000000000000f:
 	li	a0, 32
 	vwsll.vx	v10, v12, a0
 	lui	a0, 917506
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 19
 	addi	a0, a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma

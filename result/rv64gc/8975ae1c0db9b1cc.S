@@ -1,6 +1,6 @@
 func0000000000000048:
 	lui	a1, 16
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	sltu	a1, a1, a0
 	neg	a1, a1
 	or	a0, a0, a1

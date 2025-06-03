@@ -3,10 +3,10 @@ func0000000000000075:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 1048332
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmacc.vx	v12, a0, v10
 	lui	a0, 160
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmadd.vx	v8, a0, v12
 	ret
 
@@ -15,10 +15,10 @@ func0000000000000055:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmacc.vx	v12, a0, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmadd.vx	v8, a0, v12
 	ret
 
@@ -27,10 +27,10 @@ func0000000000000044:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmacc.vx	v12, a0, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmadd.vx	v8, a0, v12
 	ret
 
@@ -39,10 +39,10 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmacc.vx	v12, a0, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmadd.vx	v8, a0, v12
 	ret
 

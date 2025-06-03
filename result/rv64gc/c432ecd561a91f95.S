@@ -33,12 +33,12 @@ func000000000000002a:
 	sub	a1, a1, a2
 	bgtz	a1, .LBB4_2
 	lui	a1, 1048522
-	addiw	a1, a1, 1632
+	addi	a1, a1, 1632
 	add	a0, a0, a1
 	ret
 .LBB4_2:
 	lui	a1, 1048565
-	addiw	a1, a1, -1824
+	addi	a1, a1, -1824
 	add	a0, a0, a1
 	ret
 

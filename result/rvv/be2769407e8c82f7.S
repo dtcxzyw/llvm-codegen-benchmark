@@ -49,7 +49,7 @@ func00000000000000a8:
 
 func0000000000000461:
 	lui	a0, 13
-	addiw	a0, a0, 1151
+	addi	a0, a0, 1151
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	li	a0, 100

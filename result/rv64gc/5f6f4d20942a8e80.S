@@ -44,7 +44,7 @@ func0000000000000008:
 .LBB4_2:
 	sext.w	a1, a1
 	lui	a0, 158203
-	addiw	a0, a0, 512
+	addi	a0, a0, 512
 	sltu	a0, a0, a1
 	ret
 

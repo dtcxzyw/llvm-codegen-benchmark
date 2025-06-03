@@ -1,7 +1,7 @@
 func0000000000000002:
 	srliw	a1, a1, 16
 	lui	a2, 12
-	addiw	a2, a2, 168
+	addi	a2, a2, 168
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

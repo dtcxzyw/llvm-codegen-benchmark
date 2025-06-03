@@ -62,7 +62,7 @@ func0000000000000084:
 	lui	a2, 16
 	srli	a0, a0, 48
 	sltiu	a1, a1, 31
-	addiw	a2, a2, -46
+	addi	a2, a2, -46
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

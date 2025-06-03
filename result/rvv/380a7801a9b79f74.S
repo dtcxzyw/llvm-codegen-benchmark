@@ -2,14 +2,14 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 524296
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 16
 	vmul.vv	v10, v8, v12
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 15
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	vnmsub.vx	v8, a1, v10
 	ret
 

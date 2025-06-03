@@ -46,7 +46,7 @@ func0000000000000026:
 func0000000000000025:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	sltu	a0, a1, a0

@@ -192,7 +192,7 @@ func000000000000008a:
 	sext.w	a0, a0
 	subw	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	sgtz	a0, a0
 	and	a0, a0, a1

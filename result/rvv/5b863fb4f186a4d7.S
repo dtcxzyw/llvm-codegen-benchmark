@@ -1,6 +1,6 @@
 func0000000000000007:
 	lui	a0, 8
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v12, v10, a0
 	vdivu.vv	v10, v12, v10

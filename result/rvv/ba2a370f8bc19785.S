@@ -7,7 +7,7 @@ func0000000000000080:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v10, a0
 	lui	a0, %hi(.LCPI0_0)
-	addiw	a1, a1, 1339
+	addi	a1, a1, 1339
 	ld	a0, %lo(.LCPI0_0)(a0)
 	slli	a1, a1, 1
 	vmadd.vx	v12, a1, v10

@@ -2,8 +2,8 @@ func0000000000000001:
 	sext.w	a0, a0
 	lui	a1, 310689
 	lui	a2, 1048568
-	addiw	a1, a1, 759
-	addiw	a2, a2, 787
+	addi	a1, a1, 759
+	addi	a2, a2, 787
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 40

@@ -37,7 +37,7 @@ func0000000000000006:
 func0000000000000008:
 	mulw	a0, a0, a1
 	lui	a1, 2197
-	addiw	a1, a1, 1087
+	addi	a1, a1, 1087
 	bltu	a1, a0, .LBB5_2
 	li	a0, 8
 	ret

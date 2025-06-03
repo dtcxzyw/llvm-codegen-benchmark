@@ -30,7 +30,7 @@ func0000000000000009:
 	subw	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 51
-	addiw	a1, a2, 197
+	addi	a1, a2, 197
 	mul	a0, a0, a1
 	srli	a0, a0, 20
 	ret

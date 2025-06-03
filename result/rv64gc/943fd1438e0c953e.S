@@ -3,11 +3,11 @@ func0000000000000014:
 	andi	a1, a1, 15
 	bltu	a1, a0, .LBB0_2
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	ret
 .LBB0_2:
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	ret
 
 func0000000000000001:

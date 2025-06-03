@@ -4,8 +4,8 @@ func0000000000000003:
 	lui	a2, 209715
 	lui	a3, 61681
 	andi	a0, a0, 85
-	addiw	a2, a2, 819
-	addiw	a3, a3, -241
+	addi	a2, a2, 819
+	addi	a3, a3, -241
 	sub	a1, a1, a0
 	slli	a0, a2, 32
 	add	a0, a0, a2
@@ -18,7 +18,7 @@ func0000000000000003:
 	srli	a1, a0, 4
 	add	a0, a0, a1
 	lui	a1, 4112
-	addiw	a1, a1, 257
+	addi	a1, a1, 257
 	and	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -32,8 +32,8 @@ func000000000000000b:
 	lui	a2, 209715
 	lui	a3, 61681
 	andi	a0, a0, 85
-	addiw	a2, a2, 819
-	addiw	a3, a3, -241
+	addi	a2, a2, 819
+	addi	a3, a3, -241
 	sub	a1, a1, a0
 	slli	a0, a2, 32
 	add	a0, a0, a2
@@ -46,7 +46,7 @@ func000000000000000b:
 	srli	a1, a0, 4
 	add	a0, a0, a1
 	lui	a1, 4112
-	addiw	a1, a1, 257
+	addi	a1, a1, 257
 	and	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2

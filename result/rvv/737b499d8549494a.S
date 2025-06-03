@@ -14,7 +14,7 @@ func0000000000000000:
 	vsrl.vi	v12, v12, 1
 	vadd.vv	v8, v12, v8
 	vsrl.vi	v8, v8, 15
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	vnmsub.vx	v8, a0, v10
 	ret
 

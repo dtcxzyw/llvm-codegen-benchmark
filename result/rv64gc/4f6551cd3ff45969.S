@@ -2,14 +2,14 @@ func000000000000001f:
 	andi	a1, a1, 256
 	beqz	a1, .LBB0_2
 	lui	a1, 1
-	addiw	a1, a1, 560
+	addi	a1, a1, 560
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1985
 	ret
 .LBB0_2:
 	lui	a1, 2
-	addiw	a1, a1, 508
+	addi	a1, a1, 508
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1985

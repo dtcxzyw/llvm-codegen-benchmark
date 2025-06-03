@@ -49,7 +49,7 @@ func00000000000000f5:
 	mul	a0, a0, a2
 	lui	a2, 788
 	slli	a1, a1, 56
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	mulhu	a1, a1, a2
 	lui	a2, 1048164
 	addi	a2, a2, 382
@@ -75,7 +75,7 @@ func0000000000000030:
 	addi	a2, a2, 1572
 	mul	a0, a0, a2
 	lui	a2, 65462
-	addiw	a2, a2, -2031
+	addi	a2, a2, -2031
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	lui	a2, 32896

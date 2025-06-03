@@ -4,7 +4,7 @@ func0000000000000078:
 	csrwi	vxrm, 2
 	vaaddu.vv	v8, v8, v10
 	lui	a0, 8192
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v12, a0
 	lui	a0, 1034240
 	vandn.vx	v8, v8, a0

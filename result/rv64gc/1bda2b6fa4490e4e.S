@@ -32,7 +32,7 @@ func0000000000000208:
 func00000000000000c8:
 	sext.w	a2, a2
 	lui	a3, 32885
-	addiw	a3, a3, -1200
+	addi	a3, a3, -1200
 	beq	a2, a3, .LBB3_2
 	li	a2, 12
 	sub	a0, a0, a1
@@ -49,7 +49,7 @@ func0000000000000406:
 	li	a3, 506
 	bltu	a3, a2, .LBB4_2
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	sub	a0, a0, a1
 	slt	a0, a2, a0
 	ret

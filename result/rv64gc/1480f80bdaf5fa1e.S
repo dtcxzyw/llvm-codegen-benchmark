@@ -4,16 +4,16 @@ func0000000000000004:
 	srli	a1, a1, 24
 	bnez	a0, .LBB0_2
 	lui	a0, 2048
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	beqz	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	lui	a0, 1024
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	bnez	a1, .LBB0_4
 .LBB0_3:
 	lui	a0, 256
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB0_4:
 	ret
 

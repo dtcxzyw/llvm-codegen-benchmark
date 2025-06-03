@@ -10,7 +10,7 @@ func0000000000000000:
 	slli	a1, a1, 5
 	lui	a2, 4096
 	neg	a1, a1
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

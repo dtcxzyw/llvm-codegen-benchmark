@@ -7,17 +7,17 @@ func000000000000001b:
 
 func0000000000000004:
 	lui	a2, 127
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	add	a1, a1, a2
 	lui	a2, 128
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000018:
 	lui	a2, 2048
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a2, a2, 14
 	add	a1, a1, a2
 	li	a2, 1

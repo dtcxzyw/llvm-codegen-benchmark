@@ -5,7 +5,7 @@ func0000000000000085:
 	addi	a2, a2, 260
 	mulw	a0, a0, a2
 	lui	a2, 965810
-	addiw	a2, a2, -712
+	addi	a2, a2, -712
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -18,7 +18,7 @@ func0000000000000084:
 	addi	a2, a2, 261
 	mulw	a0, a0, a2
 	lui	a2, 192535
-	addiw	a2, a2, 1788
+	addi	a2, a2, 1788
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -39,7 +39,7 @@ func0000000000000087:
 	addi	a2, a2, 1089
 	mulw	a0, a0, a2
 	lui	a2, 1045667
-	addiw	a2, a2, -599
+	addi	a2, a2, -599
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

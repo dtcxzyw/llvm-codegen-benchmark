@@ -23,7 +23,7 @@ func0000000000000288:
 	vsra.vx	v10, v12, a0
 	lui	a0, 1953
 	vmul.vv	v8, v10, v8
-	addiw	a0, a0, 512
+	addi	a0, a0, 512
 	vmsgtu.vx	v0, v8, a0
 	ret
 

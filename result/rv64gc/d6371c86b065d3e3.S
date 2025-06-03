@@ -37,7 +37,7 @@ func0000000000000001:
 	j	.LBB2_4
 .LBB2_2:
 	lui	a0, 272
-	addiw	a0, a0, -65
+	addi	a0, a0, -65
 	beqz	a1, .LBB2_4
 .LBB2_3:
 	li	a0, -65

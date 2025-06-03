@@ -49,7 +49,7 @@ func0000000000000081:
 func00000000000000cc:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	addi	a1, a1, -12
 	snez	a1, a1

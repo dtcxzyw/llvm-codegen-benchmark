@@ -23,7 +23,7 @@ func0000000000000037:
 	addi	a0, a0, 64
 	lui	a1, 8192
 	srli	a0, a0, 3
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, 8
 	ret

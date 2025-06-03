@@ -2,7 +2,7 @@ func0000000000000001:
 	li	a0, 255
 	lui	a1, 838861
 	slli	a0, a0, 32
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	slli	a0, a1, 32

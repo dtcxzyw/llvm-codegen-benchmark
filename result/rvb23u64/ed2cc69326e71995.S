@@ -29,7 +29,7 @@ func0000000000000030:
 	srai	a1, a1, 4
 	lui	a3, 838861
 	sh1add	a0, a2, a0
-	addiw	a2, a3, -819
+	addi	a2, a3, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -41,7 +41,7 @@ func0000000000000025:
 	srai	a0, a0, 4
 	lui	a3, 699051
 	sh1add	a1, a2, a1
-	addiw	a2, a3, -1365
+	addi	a2, a3, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -50,7 +50,7 @@ func0000000000000025:
 
 func0000000000000020:
 	lui	a3, 36
-	addiw	a3, a3, -1359
+	addi	a3, a3, -1359
 	mul	a2, a2, a3
 	srai	a3, a1, 63
 	srli	a3, a3, 62
@@ -66,7 +66,7 @@ func0000000000000000:
 	lui	a3, 244
 	lui	a4, %hi(.LCPI5_0)
 	ld	a4, %lo(.LCPI5_0)(a4)
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a0, a0, a2
 	mulh	a1, a1, a4

@@ -19,7 +19,7 @@ func00000000000001c1:
 	li	a0, 1
 	vwaddu.vx	v10, v12, a0
 	lui	a0, 32
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vadd.vi	v8, v8, 2

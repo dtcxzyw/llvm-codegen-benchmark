@@ -4,7 +4,7 @@ func0000000000000070:
 	add	a0, a0, a1
 	lui	a1, 12
 	slli	a2, a2, 1
-	addiw	a1, a1, 672
+	addi	a1, a1, 672
 	andi	a2, a2, -4
 	add	a0, a0, a1
 	add	a0, a0, a2

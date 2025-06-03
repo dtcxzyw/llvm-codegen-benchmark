@@ -88,7 +88,7 @@ func0000000000000081:
 
 func0000000000000068:
 	lui	a3, 4841
-	addiw	a3, a3, -611
+	addi	a3, a3, -611
 	slli	a3, a3, 11
 	mul	a2, a2, a3
 	sub	a0, a0, a1
@@ -97,7 +97,7 @@ func0000000000000068:
 
 func00000000000001aa:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	sub	a0, a0, a1
 	slt	a0, a2, a0
@@ -120,7 +120,7 @@ func000000000000008b:
 
 func000000000000008c:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	sub	a0, a0, a1
 	xor	a0, a0, a2

@@ -16,10 +16,10 @@ func000000000000020a:
 
 func0000000000000004:
 	lui	a2, 15
-	addiw	a2, a2, -1904
+	addi	a2, a2, -1904
 	mul	a1, a1, a2
 	lui	a2, 44
-	addiw	a2, a2, -1616
+	addi	a2, a2, -1616
 	sub	a0, a0, a2
 	sub	a1, a1, a0
 	sltiu	a0, a1, 32

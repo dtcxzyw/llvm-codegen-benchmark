@@ -4,14 +4,14 @@ func0000000000000003:
 	li	a1, 5
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a1, 7
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

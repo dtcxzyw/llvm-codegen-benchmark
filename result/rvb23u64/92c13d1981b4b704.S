@@ -1,7 +1,7 @@
 func000000000000003d:
 	zext.w	a1, a1
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	sh2add	a1, a1, a1

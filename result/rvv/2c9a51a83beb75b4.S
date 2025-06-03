@@ -38,10 +38,10 @@ func000000000000000c:
 
 func0000000000000015:
 	lui	a0, 6
-	addiw	a1, a0, 1269
+	addi	a1, a0, 1269
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v12, v10, a1
-	addiw	a0, a0, -810
+	addi	a0, a0, -810
 	vadd.vx	v12, v10, a0, v0.t
 	vadd.vv	v8, v12, v8
 	ret

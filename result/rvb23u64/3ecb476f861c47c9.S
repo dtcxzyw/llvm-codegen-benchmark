@@ -1,7 +1,7 @@
 func0000000000000021:
 	lui	a2, 1047552
 	lui	a3, 1016
-	addiw	a2, a2, 127
+	addi	a2, a2, 127
 	and	a3, a3, a1
 	and	a1, a1, a2
 	lui	a2, 88

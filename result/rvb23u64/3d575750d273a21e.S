@@ -40,8 +40,7 @@ func0000000000000028:
 
 func0000000000000030:
 	addi	a1, a1, 1
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -32
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -116,7 +115,7 @@ func0000000000000010:
 func0000000000000003:
 	addi	a1, a1, 16
 	lui	a2, 131072
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 4

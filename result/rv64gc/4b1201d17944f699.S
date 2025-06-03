@@ -7,10 +7,10 @@ func000000000000000a:
 	lui	a4, 61681
 	lui	a5, 4112
 	ld	a6, %lo(.LCPI0_0)(a1)
-	addiw	a1, a2, 1365
-	addiw	a3, a3, 819
-	addiw	a4, a4, -241
-	addiw	a5, a5, 257
+	addi	a1, a2, 1365
+	addi	a3, a3, 819
+	addi	a4, a4, -241
+	addi	a5, a5, 257
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	slli	a2, a3, 32
@@ -64,10 +64,10 @@ func000000000000008a:
 	lui	a4, 61681
 	lui	a5, 4112
 	ld	a6, %lo(.LCPI1_0)(a1)
-	addiw	a1, a2, 1365
-	addiw	a3, a3, 819
-	addiw	a4, a4, -241
-	addiw	a5, a5, 257
+	addi	a1, a2, 1365
+	addi	a3, a3, 819
+	addi	a4, a4, -241
+	addi	a5, a5, 257
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	slli	a2, a3, 32

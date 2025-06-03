@@ -44,7 +44,7 @@ func000000000000002f:
 	srli	a3, a2, 8
 	lui	a4, 16
 	srliw	a5, a2, 24
-	addiw	a4, a4, -256
+	addi	a4, a4, -256
 	and	a3, a3, a4
 	and	a4, a4, a2
 	slliw	a2, a2, 24
@@ -62,7 +62,7 @@ func000000000000003f:
 	srli	a3, a2, 8
 	lui	a4, 16
 	srliw	a5, a2, 24
-	addiw	a4, a4, -256
+	addi	a4, a4, -256
 	and	a3, a3, a4
 	and	a4, a4, a2
 	slliw	a2, a2, 24

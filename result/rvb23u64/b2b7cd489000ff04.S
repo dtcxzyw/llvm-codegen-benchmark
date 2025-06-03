@@ -25,7 +25,7 @@ func0000000000000008:
 	lui	a1, 10923
 	addiw	a0, a0, 1
 	andi	a0, a0, -2
-	addiw	a1, a1, -1366
+	addi	a1, a1, -1366
 	sltu	a0, a1, a0
 	ret
 

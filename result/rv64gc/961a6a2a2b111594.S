@@ -35,7 +35,7 @@ func000000000000002a:
 	slli	a1, a1, 32
 	lui	a2, 477
 	srli	a1, a1, 32
-	addiw	a2, a2, -667
+	addi	a2, a2, -667
 	slli	a2, a2, 11
 	sub	a2, a2, a1
 	slt	a0, a0, a2
@@ -45,7 +45,7 @@ func0000000000000027:
 	slli	a1, a1, 32
 	lui	a2, 477
 	srli	a1, a1, 32
-	addiw	a2, a2, -667
+	addi	a2, a2, -667
 	slli	a2, a2, 11
 	sub	a2, a2, a1
 	slt	a0, a0, a2

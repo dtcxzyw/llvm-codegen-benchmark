@@ -7,8 +7,7 @@ func000000000000003f:
 
 func000000000000003c:
 	sh3add.uw	a1, a2, a1
-	li	a2, 1
-	slli	a2, a2, 35
+	bseti	a2, zero, 35
 	addi	a2, a2, -32
 	and	a0, a0, a2
 	add	a0, a0, a1

@@ -9,7 +9,7 @@ func0000000000000024:
 func0000000000000081:
 	lui	a3, 488281
 	xor	a0, a0, a1
-	addiw	a1, a3, 1023
+	addi	a1, a3, 1023
 	add	a1, a1, a2
 	sltiu	a1, a1, -2
 	seqz	a0, a0

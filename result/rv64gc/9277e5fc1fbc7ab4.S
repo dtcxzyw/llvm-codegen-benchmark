@@ -12,7 +12,7 @@ func00000000000000e1:
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 2064
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	addi	a0, a0, -514
 	seqz	a0, a0
@@ -39,7 +39,7 @@ func0000000000000021:
 	lui	a1, 14
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, 333
+	addi	a1, a1, 333
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

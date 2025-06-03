@@ -18,7 +18,7 @@ func0000000000000001:
 	mv	a3, a0
 	sext.w	a0, a2
 	lui	a2, 8
-	addiw	a2, a2, -1262
+	addi	a2, a2, -1262
 	andi	a3, a3, 1
 	bge	a0, a2, .LBB1_3
 	beqz	a3, .LBB1_4

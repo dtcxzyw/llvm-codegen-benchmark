@@ -42,7 +42,7 @@ func0000000000000d0c:
 func00000000000000e1:
 	sext.w	a0, a0
 	lui	a3, 49
-	addiw	a3, a3, -704
+	addi	a3, a3, -704
 	add	a2, a2, a3
 	slt	a1, a2, a1
 	xori	a1, a1, 1
@@ -53,7 +53,7 @@ func00000000000000e1:
 func00000000000000ec:
 	sext.w	a0, a0
 	lui	a3, 49
-	addiw	a3, a3, -704
+	addi	a3, a3, -704
 	add	a2, a2, a3
 	slt	a1, a2, a1
 	xori	a1, a1, 1

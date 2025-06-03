@@ -87,7 +87,7 @@ func000000000000004c:
 	lui	a1, 320
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, -928
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

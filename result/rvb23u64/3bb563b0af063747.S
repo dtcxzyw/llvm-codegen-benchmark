@@ -36,21 +36,21 @@ func0000000000000000:
 func00000000000000d0:
 	sh2add	a0, a1, a0
 	lui	a1, 15
-	addiw	a1, a1, -1900
+	addi	a1, a1, -1900
 	add	a0, a0, a1
 	ret
 
 func00000000000000df:
 	sh2add	a0, a1, a0
 	lui	a1, 15
-	addiw	a1, a1, -1900
+	addi	a1, a1, -1900
 	add	a0, a0, a1
 	ret
 
 func00000000000000d3:
 	sh2add	a0, a1, a0
 	lui	a1, 15
-	addiw	a1, a1, -1900
+	addi	a1, a1, -1900
 	add	a0, a0, a1
 	ret
 

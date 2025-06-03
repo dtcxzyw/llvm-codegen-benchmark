@@ -18,7 +18,7 @@ func0000000000000006:
 	lui	a0, 16
 	fmul.s	fa5, fa0, fa5
 	fcvt.w.s	a1, fa5, rtz
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a1, a0
 	ret
 

@@ -83,7 +83,7 @@ func0000000000000104:
 	lui	a0, 2441
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, 1664
+	addi	a0, a0, 1664
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -101,7 +101,7 @@ func00000000000001f8:
 	lui	a0, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vmsgtu.vx	v0, v8, a0
 	ret
 

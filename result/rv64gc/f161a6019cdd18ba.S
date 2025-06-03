@@ -22,7 +22,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 1048575
-	addiw	a0, a0, 707
+	addi	a0, a0, 707
 	ret
 .LBB2_2:
 	lui	a0, 1

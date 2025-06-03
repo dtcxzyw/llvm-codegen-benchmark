@@ -1,7 +1,7 @@
 func0000000000000010:
 	zext.h	a2, a2
 	lui	a3, 14
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	xor	a2, a2, a3
 	li	a3, -8
 	czero.eqz	a2, a3, a2
@@ -13,7 +13,7 @@ func0000000000000010:
 func000000000000001f:
 	zext.h	a2, a2
 	lui	a3, 14
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	xor	a2, a2, a3
 	li	a3, -8
 	czero.eqz	a2, a3, a2
@@ -49,7 +49,7 @@ func000000000000008c:
 	lui	a3, 2
 	add	a1, a1, a2
 	sh1add	a0, a0, a1
-	addiw	a1, a3, -1274
+	addi	a1, a3, -1274
 	add	a0, a0, a1
 	ret
 

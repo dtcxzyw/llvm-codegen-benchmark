@@ -8,7 +8,7 @@ func00000000000001e1:
 func00000000000000d1:
 	add	a1, a1, a2
 	lui	a2, 1048555
-	addiw	a2, a2, -384
+	addi	a2, a2, -384
 	sltu	a1, a1, a2
 	sub	a0, a0, a1
 	ret

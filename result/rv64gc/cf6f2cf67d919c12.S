@@ -37,11 +37,11 @@ func0000000000000014:
 	sext.w	a0, a0
 	bltu	a0, a1, .LBB4_2
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	ret
 .LBB4_2:
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	ret
 
 func0000000000000005:
@@ -50,7 +50,7 @@ func0000000000000005:
 	sltu	a0, a1, a0
 	lui	a1, 61681
 	neg	a0, a0
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 

@@ -5,7 +5,7 @@ func0000000000000021:
 	czero.nez	a1, a2, a1
 	lui	a2, 419424
 	snez	a0, a0
-	addiw	a2, a2, 129
+	addi	a2, a2, 129
 	slli	a0, a0, 10
 	or	a1, a1, a2
 	or	a0, a0, a1

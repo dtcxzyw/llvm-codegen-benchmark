@@ -70,7 +70,7 @@ func0000000000000304:
 	lui	a2, 1
 	srliw	a0, a0, 12
 	srli	a1, a1, 32
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -81,7 +81,7 @@ func0000000000000301:
 	slli	a1, a1, 32
 	lui	a2, 1
 	srli	a1, a1, 32
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -92,7 +92,7 @@ func0000000000000306:
 	slli	a1, a1, 32
 	lui	a2, 1
 	srli	a1, a1, 32
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	slti	a0, a0, 0
 	and	a0, a0, a1

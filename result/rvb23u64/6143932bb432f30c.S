@@ -1,6 +1,5 @@
 func0000000000000007:
-	li	a2, 1
-	slli	a2, a2, 40
+	bseti	a2, zero, 40
 	addi	a2, a2, -1280
 	add	a1, a1, a2
 	addi	a2, a2, 1024
@@ -42,8 +41,7 @@ func0000000000000003:
 
 func000000000000000d:
 	addi	a1, a1, 112
-	li	a2, 1
-	slli	a2, a2, 37
+	bseti	a2, zero, 37
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	or	a0, a0, a1

@@ -101,7 +101,7 @@ func000000000000008a:
 	vadd.vv	v10, v10, v12
 	lui	a0, 244141
 	vmsgt.vi	v12, v10, -1
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

@@ -1,7 +1,7 @@
 func0000000000000006:
 	fcvt.w.s	a0, fa0, rtz
 	lui	a1, 745654
-	addiw	a1, a1, 183
+	addi	a1, a1, 183
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -18,7 +18,7 @@ func0000000000000006:
 func0000000000000014:
 	fcvt.w.s	a0, fa0, rtz
 	lui	a1, 745654
-	addiw	a1, a1, 183
+	addi	a1, a1, 183
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -42,7 +42,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 2913
 	roriw	a0, a0, 3
-	addiw	a1, a1, -1183
+	addi	a1, a1, -1183
 	sltu	a0, a0, a1
 	ret
 

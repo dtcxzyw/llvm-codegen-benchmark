@@ -72,12 +72,12 @@ func000000000000000c:
 	andi	a2, a0, 1
 	lui	a0, 1
 	bnez	a2, .LBB6_2
-	addiw	a0, a0, -2024
+	addi	a0, a0, -2024
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 .LBB6_2:
-	addiw	a0, a0, -2032
+	addi	a0, a0, -2032
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

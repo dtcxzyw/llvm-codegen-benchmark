@@ -10,7 +10,7 @@ func00000000000000a1:
 	addi	a0, a0, -59
 	mul	a0, a0, a2
 	roriw	a0, a0, 2
-	addiw	a1, a1, 1092
+	addi	a1, a1, 1092
 	sltu	a0, a0, a1
 	ret
 
@@ -26,7 +26,7 @@ func00000000000000ac:
 	addi	a0, a0, -59
 	mul	a0, a0, a2
 	roriw	a0, a0, 2
-	addiw	a1, a1, 1091
+	addi	a1, a1, 1091
 	sltu	a0, a1, a0
 	ret
 

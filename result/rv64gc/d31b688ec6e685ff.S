@@ -49,7 +49,7 @@ func0000000000000033:
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -1264
+	addi	a2, a2, -1264
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

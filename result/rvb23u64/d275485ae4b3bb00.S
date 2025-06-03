@@ -20,7 +20,7 @@ func0000000000000004:
 
 func0000000000000008:
 	lui	a2, 1048571
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	czero.eqz	a0, a0, a1

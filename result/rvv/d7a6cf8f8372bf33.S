@@ -25,12 +25,12 @@ func00000000000001fe:
 
 func0000000000000088:
 	lui	a0, 1009952
-	addiw	a0, a0, 779
+	addi	a0, a0, 779
 	slli	a0, a0, 14
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 1046001
-	addiw	a0, a0, 325
+	addi	a0, a0, 325
 	slli	a0, a0, 13
 	vmacc.vx	v10, a0, v8
 	li	a0, 32
@@ -39,22 +39,22 @@ func0000000000000088:
 
 func00000000000001ea:
 	lui	a0, 1
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	lui	a0, 2
-	addiw	a0, a0, 1841
+	addi	a0, a0, 1841
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 18
 	ret
 
 func00000000000000aa:
 	lui	a0, 1
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 2
-	addiw	a0, a0, 1841
+	addi	a0, a0, 1841
 	vmacc.vx	v10, a0, v8
 	vsrl.vi	v8, v10, 11
 	ret

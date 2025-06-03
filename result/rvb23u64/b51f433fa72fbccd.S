@@ -15,9 +15,8 @@ func0000000000000038:
 func0000000000000028:
 	slli	a1, a1, 5
 	sub	a2, a2, a0
-	li	a0, 1
+	bseti	a0, zero, 37
 	add	a1, a1, a2
-	slli	a0, a0, 37
 	addi	a1, a1, -32
 	addi	a0, a0, -128
 	and	a0, a0, a1

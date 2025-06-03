@@ -16,7 +16,7 @@ func000000000000000c:
 	lui	a3, 3
 	add	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a1, a3, 72
+	addi	a1, a3, 72
 	add	a0, a0, a1
 	ret
 
@@ -33,7 +33,7 @@ func00000000000000ff:
 func00000000000000fe:
 	lui	a3, 1
 	slli	a0, a0, 1
-	addiw	a3, a3, -608
+	addi	a3, a3, -608
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1

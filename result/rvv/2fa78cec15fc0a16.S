@@ -1,6 +1,6 @@
 func0000000000000048:
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 3
@@ -36,7 +36,7 @@ func0000000000000068:
 
 func0000000000000064:
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	li	a0, 5
@@ -57,13 +57,13 @@ func0000000000000001:
 
 func0000000000000024:
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 14
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	lui	a0, 1046001
-	addiw	a0, a0, 325
+	addi	a0, a0, 325
 	slli	a0, a0, 13
 	vmul.vx	v8, v10, a0
 	vmerge.vim	v8, v8, 0, v0

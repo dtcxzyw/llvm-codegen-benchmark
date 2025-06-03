@@ -16,7 +16,7 @@ func0000000000000002:
 func0000000000000001:
 	sext.w	a0, a0
 	lui	a1, 1048572
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	max	a0, a0, a1
 	ret
 

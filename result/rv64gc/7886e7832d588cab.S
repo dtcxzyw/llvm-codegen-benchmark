@@ -2,7 +2,7 @@ func0000000000000003:
 	slli	a1, a1, 63
 	lui	a2, 1044480
 	srli	a1, a1, 39
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -11,7 +11,7 @@ func000000000000000f:
 	slli	a1, a1, 60
 	lui	a2, 1048336
 	srli	a1, a1, 44
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

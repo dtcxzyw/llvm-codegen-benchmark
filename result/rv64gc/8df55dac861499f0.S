@@ -4,7 +4,7 @@ func0000000000000155:
 	li	a3, 1000
 	mul	a1, a1, a3
 	lui	a3, 1048563
-	addiw	a3, a3, -80
+	addi	a3, a3, -80
 	add	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

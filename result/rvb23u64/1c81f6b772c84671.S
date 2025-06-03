@@ -11,7 +11,7 @@ func000000000000002a:
 	add	a1, a1, a2
 	lui	a2, 163
 	slli	a1, a1, 43
-	addiw	a2, a2, -1005
+	addi	a2, a2, -1005
 	srli	a1, a1, 43
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -22,7 +22,7 @@ func000000000000000a:
 	add	a1, a1, a2
 	lui	a2, 163
 	slli	a1, a1, 43
-	addiw	a2, a2, -1005
+	addi	a2, a2, -1005
 	srli	a1, a1, 43
 	mul	a0, a0, a2
 	add	a0, a0, a1

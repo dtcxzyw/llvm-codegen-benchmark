@@ -8,7 +8,7 @@ func0000000000000015:
 
 func0000000000000001:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -17,7 +17,7 @@ func0000000000000001:
 
 func000000000000001f:
 	lui	a0, 1
-	addiw	a0, a0, -496
+	addi	a0, a0, -496
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -26,7 +26,7 @@ func000000000000001f:
 
 func0000000000000000:
 	lui	a0, 148
-	addiw	a0, a0, -1408
+	addi	a0, a0, -1408
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma

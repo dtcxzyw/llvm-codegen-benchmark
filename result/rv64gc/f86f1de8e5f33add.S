@@ -50,7 +50,7 @@ func0000000000000584:
 	or	a0, a0, a2
 	addi	a2, a1, -1697
 	addw	a0, a0, a2
-	addiw	a1, a1, -1696
+	addi	a1, a1, -1696
 	sltu	a0, a0, a1
 	ret
 

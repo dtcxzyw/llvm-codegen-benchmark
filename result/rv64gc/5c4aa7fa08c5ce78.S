@@ -127,7 +127,7 @@ func0000000000000146:
 
 func000000000000014b:
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	blt	a3, a2, .LBB16_2
 	mv	a1, a2
 .LBB16_2:
@@ -144,7 +144,7 @@ func00000000000000ca:
 
 func0000000000000141:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	blt	a3, a2, .LBB18_2
 	mv	a1, a2
 .LBB18_2:

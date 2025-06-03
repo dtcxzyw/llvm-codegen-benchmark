@@ -48,7 +48,7 @@ func000000000000000a:
 	fcvt.w.d	a1, fa0, rtz
 	addw	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	slt	a0, a1, a0
 	ret
 

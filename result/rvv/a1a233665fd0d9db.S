@@ -5,7 +5,7 @@ func0000000000000044:
 	vsll.vx	v10, v12, a0
 	vsra.vx	v10, v10, a0
 	lui	a0, 1033928
-	addiw	a0, a0, -1792
+	addi	a0, a0, -1792
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000054:
 	vsll.vx	v10, v12, a0
 	vsra.vx	v10, v10, a0
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vmacc.vx	v8, a0, v10
 	ret
 

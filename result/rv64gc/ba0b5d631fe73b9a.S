@@ -50,7 +50,7 @@ func0000000000000038:
 .LBB5_2:
 	subw	a0, a0, a2
 	lui	a1, 1048573
-	addiw	a1, a1, 1619
+	addi	a1, a1, 1619
 	sltu	a0, a1, a0
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000034:
 .LBB6_2:
 	subw	a0, a0, a2
 	lui	a1, 3
-	addiw	a1, a1, -1620
+	addi	a1, a1, -1620
 	sltu	a0, a0, a1
 	ret
 

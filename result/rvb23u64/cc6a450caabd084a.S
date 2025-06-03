@@ -6,10 +6,10 @@ func0000000000000005:
 func0000000000000007:
 	andi	a0, a0, 4
 	lui	a1, 23
-	addiw	a1, a1, 1792
+	addi	a1, a1, 1792
 	czero.eqz	a0, a1, a0
 	lui	a1, 4000
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	add	a0, a0, a1
 	ret
 

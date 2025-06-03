@@ -50,14 +50,14 @@ func000000000000000c:
 	sext.w	a0, a1
 	lui	a1, 2
 	beqz	a0, .LBB4_2
-	addiw	a0, a1, 400
+	addi	a0, a1, 400
 	beqz	a2, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	addiw	a0, a1, 392
+	addi	a0, a1, 392
 	bnez	a2, .LBB4_4
 .LBB4_3:
-	addiw	a0, a1, 396
+	addi	a0, a1, 396
 .LBB4_4:
 	ret
 

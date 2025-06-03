@@ -46,7 +46,7 @@ func0000000000000014:
 .LBB2_2:
 	li	a0, 12
 	lui	a3, 8
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	bgeu	a2, a3, .LBB2_5
 	j	.LBB2_6
 .LBB2_3:
@@ -56,7 +56,7 @@ func0000000000000014:
 .LBB2_4:
 	li	a0, 15
 	lui	a3, 8
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	bltu	a2, a3, .LBB2_6
 .LBB2_5:
 	mv	a0, a1

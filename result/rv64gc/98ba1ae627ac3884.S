@@ -8,7 +8,7 @@ func0000000000000002:
 func0000000000000000:
 	slli	a1, a1, 3
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1048575
 	and	a1, a1, a2
@@ -26,7 +26,7 @@ func0000000000000001:
 func000000000000003f:
 	slli	a1, a1, 3
 	lui	a2, 2
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 255
 	and	a1, a1, a2

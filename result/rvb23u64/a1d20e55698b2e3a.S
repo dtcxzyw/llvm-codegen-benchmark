@@ -50,7 +50,7 @@ func000000000000002a:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	lui	a1, 523342
-	addiw	a1, a1, -1428
+	addi	a1, a1, -1428
 	or	a0, a0, a2
 	sext.w	a2, a0
 	slt	a1, a1, a2

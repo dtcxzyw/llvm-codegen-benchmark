@@ -49,7 +49,7 @@ func00000000000001e4:
 	andi	a2, a2, 1
 	lui	a3, 8
 	addi	a2, a2, -1
-	addiw	a3, a3, 16
+	addi	a3, a3, 16
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 8
@@ -60,8 +60,8 @@ func0000000000000181:
 	andi	a2, a2, 1
 	lui	a3, 8
 	addi	a2, a2, -1
-	addiw	a4, a3, 16
-	addiw	a3, a3, 7
+	addi	a4, a3, 16
+	addi	a3, a3, 7
 	and	a2, a2, a4
 	add	a1, a1, a3
 	add	a1, a1, a2
@@ -73,8 +73,8 @@ func0000000000000188:
 	andi	a2, a2, 1
 	lui	a3, 8
 	addi	a2, a2, -1
-	addiw	a4, a3, 16
-	addiw	a3, a3, 7
+	addi	a4, a3, 16
+	addi	a3, a3, 7
 	and	a2, a2, a4
 	add	a1, a1, a3
 	add	a1, a1, a2

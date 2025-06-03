@@ -26,7 +26,7 @@ func000000000000002b:
 func0000000000000026:
 	sext.w	a1, a1
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	ret
@@ -34,7 +34,7 @@ func0000000000000026:
 func000000000000002c:
 	sext.w	a1, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

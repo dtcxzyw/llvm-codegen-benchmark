@@ -33,7 +33,7 @@ func0000000000000007:
 
 func0000000000000031:
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	beqz	a1, .LBB4_2
 	li	a1, 3
@@ -46,7 +46,7 @@ func0000000000000031:
 
 func0000000000000033:
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	beqz	a1, .LBB5_2
 	li	a1, 3

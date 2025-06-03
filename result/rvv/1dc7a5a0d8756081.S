@@ -5,7 +5,7 @@ func0000000000000035:
 	vandn.vx	v12, v12, a0
 	lui	a0, 160
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000015:
 	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000034:
 	vandn.vx	v12, v12, a0
 	lui	a0, 163
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000004:
 	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -49,7 +49,7 @@ func0000000000000000:
 	vandn.vx	v12, v12, a0
 	lui	a0, 115
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -60,8 +60,7 @@ func0000000000000010:
 	slli	a0, a0, 32
 	addi	a0, a0, 127
 	vand.vx	v12, v12, a0
-	li	a0, 1
-	slli	a0, a0, 56
+	bseti	a0, zero, 56
 	vadd.vv	v10, v10, v12
 	addi	a0, a0, -10
 	vmadd.vx	v8, a0, v10

@@ -75,7 +75,7 @@ func0000000000000146:
 func0000000000000154:
 	slti	a1, a1, 1
 	lui	a2, 88
-	addiw	a2, a2, -448
+	addi	a2, a2, -448
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -90,7 +90,7 @@ func000000000000010c:
 
 func0000000000000318:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a1, a2, a1
 	sltu	a0, a2, a0
 	and	a0, a0, a1

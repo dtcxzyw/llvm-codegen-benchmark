@@ -17,7 +17,7 @@ func00000000000000e1:
 
 func000000000000006c:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a0, a0, a1
 	binvi	a0, a0, 63
 	snez	a0, a0
@@ -25,7 +25,7 @@ func000000000000006c:
 
 func00000000000000ec:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a0, a0, a1
 	lui	a1, 1048064
 	srli	a1, a1, 12

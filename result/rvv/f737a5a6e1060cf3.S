@@ -5,7 +5,7 @@ func00000000000001a4:
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
@@ -13,7 +13,7 @@ func00000000000001a4:
 	ld	a1, %lo(.LCPI0_0)(a1)
 	vmul.vx	v10, v10, a0
 	lui	a0, 209715
-	addiw	a0, a0, 819
+	addi	a0, a0, 819
 	vmv.v.x	v12, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1

@@ -3,7 +3,7 @@ func0000000000000001:
 	slliw	a0, a1, 20
 	bnez	a2, .LBB0_2
 	lui	a1, 80
-	addiw	a1, a1, 1299
+	addi	a1, a1, 1299
 	or	a0, a0, a1
 	ret
 .LBB0_2:

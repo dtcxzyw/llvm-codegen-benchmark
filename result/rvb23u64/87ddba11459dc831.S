@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a2, 16
-	addiw	a2, a2, -1664
+	addi	a2, a2, -1664
 	and	a1, a1, a2
 	srliw	a0, a0, 8
 	or	a0, a0, a1

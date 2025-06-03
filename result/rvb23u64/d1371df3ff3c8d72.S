@@ -4,7 +4,7 @@ func0000000000000020:
 	lui	a2, 67109
 	add	a0, a0, a1
 	zext.w	a0, a0
-	addiw	a1, a2, -557
+	addi	a1, a2, -557
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret
@@ -39,7 +39,7 @@ func000000000000001a:
 	lui	a2, 67109
 	add	a0, a0, a1
 	zext.w	a0, a0
-	addiw	a1, a2, -557
+	addi	a1, a2, -557
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret

@@ -16,7 +16,7 @@ func0000000000000102:
 	addiw	a1, a1, -1440
 	lui	a2, 1
 	sltiu	a1, a1, 25
-	addiw	a2, a2, -1791
+	addi	a2, a2, -1791
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -65,7 +65,7 @@ func0000000000000208:
 func0000000000000048:
 	lui	a2, 786432
 	addw	a1, a1, a2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

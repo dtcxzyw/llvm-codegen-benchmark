@@ -3,7 +3,7 @@ func0000000000000048:
 	srai	a0, a0, 7
 	lui	a2, 838861
 	slli	a1, a1, 30
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	srai	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -16,7 +16,7 @@ func0000000000000044:
 	srai	a0, a0, 7
 	lui	a2, 838861
 	slli	a1, a1, 30
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	srai	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -29,7 +29,7 @@ func0000000000000068:
 	srai	a0, a0, 3
 	lui	a2, 838861
 	slli	a1, a1, 27
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	srai	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -42,7 +42,7 @@ func0000000000000064:
 	srai	a0, a0, 3
 	lui	a2, 838861
 	slli	a1, a1, 27
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	srai	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3

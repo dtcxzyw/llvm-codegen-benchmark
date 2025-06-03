@@ -7,7 +7,7 @@ func0000000000000004:
 	lui	a3, 20
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	addiw	a1, a3, -1717
+	addi	a1, a3, -1717
 	sltu	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000a0a:
 	lui	a3, 21
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	addiw	a1, a3, 383
+	addi	a1, a3, 383
 	slt	a0, a1, a0
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000aa6:
 	lui	a3, 3
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	addiw	a1, a3, -1485
+	addi	a1, a3, -1485
 	slt	a0, a0, a1
 	ret
 
@@ -70,7 +70,7 @@ func0000000000001ff4:
 	lui	a3, 2
 	add	a1, a1, a2
 	addw	a0, a0, a1
-	addiw	a1, a3, 1809
+	addi	a1, a3, 1809
 	sltu	a0, a0, a1
 	ret
 
@@ -84,7 +84,7 @@ func0000000000000aaa:
 	lui	a3, 4096
 	add	a1, a1, a2
 	addw	a0, a0, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a0, a3, a0
 	ret
 

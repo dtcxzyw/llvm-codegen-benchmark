@@ -3,7 +3,7 @@ func000000000000060a:
 	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	vsrl.vi	v8, v8, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -19,7 +19,7 @@ func0000000000000601:
 	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	vsrl.vi	v8, v8, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -35,7 +35,7 @@ func0000000000000604:
 	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	vsrl.vi	v8, v8, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -51,7 +51,7 @@ func000000000000060c:
 	vsrl.vi	v10, v10, 4
 	lui	a0, 838861
 	vsrl.vi	v8, v8, 4
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -67,7 +67,7 @@ func0000000000000607:
 	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
 	vsrl.vi	v8, v8, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

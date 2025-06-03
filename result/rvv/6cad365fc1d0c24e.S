@@ -25,7 +25,7 @@ func000000000000001d:
 	vadd.vv	v10, v10, v12
 	lui	a0, 61440
 	vsll.vi	v10, v10, 8
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	slli	a1, a0, 8

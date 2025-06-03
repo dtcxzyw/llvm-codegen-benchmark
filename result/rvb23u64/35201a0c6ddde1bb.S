@@ -28,7 +28,7 @@ func0000000000000007:
 	zext.w	a2, a2
 	lui	a3, 209715
 	sub	a2, a2, a1
-	addiw	a1, a3, 819
+	addi	a1, a3, 819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	and	a1, a1, a2

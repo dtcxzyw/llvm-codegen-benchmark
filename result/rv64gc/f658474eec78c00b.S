@@ -22,7 +22,7 @@ func0000000000000043:
 	or	a1, a1, a2
 	lui	a2, 256
 	snez	a0, a0
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	addi	a0, a0, -1
 	andi	a0, a0, 127
 	or	a1, a1, a2

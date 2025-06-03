@@ -45,7 +45,7 @@ func0000000000000010:
 	slli	a2, a2, 48
 	lui	a3, 1
 	srli	a2, a2, 48
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

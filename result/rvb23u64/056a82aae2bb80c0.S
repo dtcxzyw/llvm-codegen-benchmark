@@ -3,7 +3,7 @@ func0000000000000009:
 	li	a1, 53
 	lui	a2, 194181
 	maxu	a0, a0, a1
-	addiw	a1, a2, -1061
+	addi	a1, a2, -1061
 	addi	a0, a0, -27
 	zext.w	a2, a0
 	mul	a1, a1, a2
@@ -23,7 +23,7 @@ func0000000000000008:
 	li	a1, 25
 	lui	a2, 322639
 	maxu	a0, a0, a1
-	addiw	a1, a2, -945
+	addi	a1, a2, -945
 	addi	a0, a0, -13
 	zext.w	a2, a0
 	mul	a1, a1, a2

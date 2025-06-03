@@ -21,7 +21,7 @@ func0000000000000042:
 	slli	a2, a2, 11
 	and	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	seqz	a1, a1
 	addi	a0, a0, -512

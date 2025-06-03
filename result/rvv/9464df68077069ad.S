@@ -320,7 +320,7 @@ func0000000000000144:
 
 func0000000000000089:
 	lui	a0, 732
-	addiw	a0, a0, 1729
+	addi	a0, a0, 1729
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
 	vmsleu.vv	v12, v10, v8

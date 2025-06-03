@@ -8,7 +8,7 @@ func0000000000000024:
 	sext.w	a1, a0
 	negw	a2, a0
 	lui	a3, 524288
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a1, a1, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

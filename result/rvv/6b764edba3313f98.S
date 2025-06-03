@@ -6,7 +6,7 @@ func000000000000001f:
 	vmv.v.x	v10, a0
 	lui	a0, 262144
 	vzext.vf2	v12, v14
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmacc.vv	v10, v8, v12
 	slli	a0, a0, 21
 	vand.vx	v8, v10, a0

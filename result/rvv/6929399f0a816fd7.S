@@ -4,7 +4,7 @@ func0000000000000003:
 	vmseq.vi	v0, v10, 0
 	vand.vx	v10, v12, a0
 	lui	a0, 1040624
-	addiw	a0, a0, 32
+	addi	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vor.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0

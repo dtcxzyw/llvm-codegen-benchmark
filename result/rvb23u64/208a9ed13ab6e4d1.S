@@ -18,7 +18,7 @@ func000000000000003c:
 func0000000000000035:
 	lui	a2, 157827
 	slli	a1, a1, 53
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	mulhu	a1, a1, a2
 	lui	a2, 965733
 	addi	a2, a2, -2047

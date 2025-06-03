@@ -11,7 +11,7 @@ func000000000000000c:
 	zext.b	a1, a1
 	sext.w	a0, a0
 	lui	a2, 281475
-	addiw	a2, a2, -95
+	addi	a2, a2, -95
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 60

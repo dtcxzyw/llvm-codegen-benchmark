@@ -1,7 +1,7 @@
 func00000000000001c1:
 	addi	a0, a0, -65
 	lui	a1, 16124
-	addiw	a1, a1, -274
+	addi	a1, a1, -274
 	srl	a0, a1, a0
 	andi	a0, a0, 1
 	seqz	a0, a0

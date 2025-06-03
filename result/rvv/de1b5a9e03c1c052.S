@@ -27,7 +27,7 @@ func0000000000000586:
 	vmseq.vi	v14, v12, 0
 	lui	a0, 8
 	vmsle.vi	v12, v8, -1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmand.mm	v8, v12, v14
 	vmsne.vx	v9, v10, a0
 	vmandn.mm	v8, v8, v9

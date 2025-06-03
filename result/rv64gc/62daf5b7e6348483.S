@@ -15,7 +15,7 @@ func0000000000000088:
 .LBB1_2:
 	mulw	a0, a0, a1
 	lui	a1, 122
-	addiw	a1, a1, 288
+	addi	a1, a1, 288
 	sltu	a0, a1, a0
 	ret
 

@@ -12,7 +12,7 @@ func0000000000000302:
 	slli	a0, a0, 48
 	lui	a3, 1
 	srli	a0, a0, 48
-	addiw	a3, a3, 80
+	addi	a3, a3, 80
 	and	a2, a2, a3
 	addi	a0, a0, -64
 	addi	a2, a2, -64

@@ -117,7 +117,7 @@ func0000000000000028:
 
 func0000000000000141:
 	lui	a2, 4096
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -284,7 +284,7 @@ func0000000000000308:
 
 func0000000000000101:
 	lui	a2, 49
-	addiw	a2, a2, -1495
+	addi	a2, a2, -1495
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -315,7 +315,7 @@ func0000000000000198:
 
 func0000000000000106:
 	lui	a2, 244
-	addiw	a2, a2, 575
+	addi	a2, a2, 575
 	sltu	a1, a2, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1

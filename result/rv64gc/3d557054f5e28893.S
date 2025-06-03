@@ -3,14 +3,14 @@ func0000000000000000:
 	mv	a0, a1
 	beqz	a3, .LBB0_3
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bge	a0, a1, .LBB0_4
 .LBB0_2:
 	ret
 .LBB0_3:
 	mv	a0, a2
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	blt	a2, a1, .LBB0_2
 .LBB0_4:
 	mv	a0, a1

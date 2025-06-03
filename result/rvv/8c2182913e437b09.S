@@ -66,7 +66,7 @@ func0000000000000048:
 	lui	a0, 2
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
-	addiw	a0, a0, -33
+	addi	a0, a0, -33
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma

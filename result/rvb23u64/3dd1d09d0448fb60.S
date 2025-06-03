@@ -4,11 +4,11 @@ func000000000000006c:
 	lui	a3, 15
 	subw	a2, a2, a1
 	srli	a1, a0, 44
-	addiw	a3, a3, 240
+	addi	a3, a3, 240
 	and	a1, a1, a3
 	lui	a3, 3
 	srli	a0, a0, 52
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	andi	a0, a0, -241
 	or	a0, a0, a1
 	and	a1, a0, a3
@@ -30,11 +30,11 @@ func0000000000000064:
 	lui	a3, 15
 	subw	a2, a2, a1
 	srli	a1, a0, 44
-	addiw	a3, a3, 240
+	addi	a3, a3, 240
 	and	a1, a1, a3
 	lui	a3, 3
 	srli	a0, a0, 52
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	andi	a0, a0, -241
 	or	a0, a0, a1
 	and	a1, a0, a3

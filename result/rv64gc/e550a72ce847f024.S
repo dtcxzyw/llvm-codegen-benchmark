@@ -2,12 +2,12 @@ func0000000000000021:
 	zext.b	a2, a0
 	lui	a0, 1
 	bnez	a2, .LBB0_2
-	addiw	a0, a0, -2027
+	addi	a0, a0, -2027
 	ret
 .LBB0_2:
 	zext.b	a1, a1
 	seqz	a1, a1
-	addiw	a0, a0, -2020
+	addi	a0, a0, -2020
 	or	a0, a0, a1
 	ret
 

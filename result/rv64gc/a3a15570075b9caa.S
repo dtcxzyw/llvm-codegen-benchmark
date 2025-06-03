@@ -72,7 +72,7 @@ func0000000000000009:
 func0000000000000002:
 	andi	a2, a0, 1
 	lui	a0, 1
-	addiw	a0, a0, 296
+	addi	a0, a0, 296
 	beqz	a2, .LBB7_2
 	li	a2, 4
 	sllw	a1, a2, a1

@@ -6,7 +6,7 @@ func0000000000000061:
 
 func0000000000000041:
 	lui	a1, 9
-	addiw	a1, a1, 63
+	addi	a1, a1, 63
 	bext	a0, a1, a0
 	seqz	a0, a0
 	ret

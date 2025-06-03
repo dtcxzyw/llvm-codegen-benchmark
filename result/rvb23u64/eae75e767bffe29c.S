@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a0, a0, 15
 	lui	a1, 7
-	addiw	a1, a1, -1642
+	addi	a1, a1, -1642
 	bext	a0, a1, a0
 	ret
 

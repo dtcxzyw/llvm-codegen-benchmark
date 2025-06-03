@@ -15,7 +15,7 @@ func000000000000000f:
 	addi	a1, a1, -109
 	lui	a2, 8257
 	zext.w	a3, a1
-	addiw	a2, a2, -2031
+	addi	a2, a2, -2031
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	subw	a3, a1, a2

@@ -11,7 +11,7 @@ func0000000000000404:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, -816
+	addi	a3, a3, -816
 	seqz	a1, a1
 	sltu	a2, a3, a2
 	or	a0, a0, a1

@@ -145,9 +145,9 @@ func0000000000000081:
 	lui	a3, 1
 	sltiu	a4, a0, 10
 	czero.nez	a2, a2, a4
-	addiw	a4, a3, -819
+	addi	a4, a3, -819
 	addi	a0, a0, -5
-	addiw	a3, a3, -849
+	addi	a3, a3, -849
 	czero.eqz	a4, a4, a1
 	addi	a2, a2, 2047
 	addi	a2, a2, 1314

@@ -21,7 +21,7 @@ func0000000000000086:
 func00000000000000a8:
 	srai	a0, a0, 4
 	lui	a1, 675749
-	addiw	a1, a1, -91
+	addi	a1, a1, -91
 	slli	a2, a1, 36
 	add	a1, a1, a2
 	mul	a0, a0, a1

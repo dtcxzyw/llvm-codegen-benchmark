@@ -87,7 +87,7 @@ func0000000000000028:
 	slli	a2, a2, 48
 	lui	a3, 6
 	srli	a2, a2, 49
-	addiw	a3, a3, 332
+	addi	a3, a3, 332
 	xor	a2, a2, a3
 	seqz	a2, a2
 	sltu	a0, a1, a0

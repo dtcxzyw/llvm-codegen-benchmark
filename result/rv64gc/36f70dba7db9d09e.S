@@ -6,7 +6,7 @@ func0000000000000b02:
 	snez	a1, a1
 	and	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -2032
+	addi	a2, a2, -2032
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -117,8 +117,8 @@ func0000000000002308:
 	srliw	a2, a2, 4
 	lui	a3, 3
 	sltiu	a2, a2, 1893
-	addiw	a4, a3, 63
-	addiw	a3, a3, -1116
+	addi	a4, a3, 63
+	addi	a3, a3, -1116
 	xor	a1, a1, a4
 	snez	a1, a1
 	and	a1, a1, a2
@@ -169,7 +169,7 @@ func0000000000006288:
 	sext.w	a2, a2
 	lui	a3, 262144
 	snez	a2, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a1, a3, a1
 	and	a1, a1, a2
 	sltu	a0, a0, a3

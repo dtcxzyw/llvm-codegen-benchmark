@@ -41,7 +41,7 @@ func0000000000000504:
 	srliw	a1, a1, 11
 	lui	a3, 272
 	addi	a1, a1, -27
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	seqz	a1, a1
 	slt	a2, a3, a2
 	or	a0, a0, a2

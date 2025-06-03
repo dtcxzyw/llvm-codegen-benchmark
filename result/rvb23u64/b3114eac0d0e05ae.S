@@ -3,7 +3,7 @@
 func000000000000000a:
 	andi	a0, a0, 1
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI0_0)
@@ -22,7 +22,7 @@ func000000000000000a:
 func0000000000000008:
 	andi	a0, a0, 1
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI1_0)

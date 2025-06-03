@@ -33,7 +33,7 @@ func000000000000001c:
 	lbu	a1, 0(a1)
 	slli	a1, a1, 3
 	lui	a2, 7
-	addiw	a2, a2, 712
+	addi	a2, a2, 712
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func000000000000001c:
 	li	a1, 32
 	slli	a1, a1, 3
 	lui	a2, 7
-	addiw	a2, a2, 712
+	addi	a2, a2, 712
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

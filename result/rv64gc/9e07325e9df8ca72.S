@@ -2,10 +2,10 @@ func0000000000000003:
 	sext.w	a1, a0
 	lui	a0, 139808
 	beqz	a1, .LBB0_2
-	addiw	a0, a0, 321
+	addi	a0, a0, 321
 	ret
 .LBB0_2:
-	addiw	a0, a0, 65
+	addi	a0, a0, 65
 	ret
 
 func0000000000000031:

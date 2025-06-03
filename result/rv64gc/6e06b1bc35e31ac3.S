@@ -68,15 +68,15 @@ func00000000000000ca:
 func0000000000000108:
 	sext.w	a1, a0
 	lui	a2, 32768
-	addiw	a0, a2, 35
+	addi	a0, a2, 35
 	bltu	a0, a1, .LBB6_2
 	li	a0, 536
-	addiw	a2, a2, 39
+	addi	a2, a2, 39
 	bltu	a2, a1, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
 	li	a0, 600
-	addiw	a2, a2, 39
+	addi	a2, a2, 39
 	bgeu	a2, a1, .LBB6_4
 .LBB6_3:
 	li	a0, 664

@@ -4,7 +4,7 @@ func0000000000000003:
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, 65281
-	addiw	a4, a4, -16
+	addi	a4, a4, -16
 	and	a2, a2, a3
 	slli	a3, a4, 32
 	add	a3, a3, a4
@@ -26,7 +26,7 @@ func000000000000000f:
 	lui	a3, 240
 	slli	a4, a3, 32
 	add	a4, a4, a3
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	and	a2, a2, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4

@@ -24,7 +24,7 @@ func0000000000000008:
 	mv	a0, a1
 	ret
 .LBB1_3:
-	addiw	a1, a2, 4
+	addi	a1, a2, 4
 	bnez	a0, .LBB1_2
 .LBB1_4:
 	lui	a0, 128

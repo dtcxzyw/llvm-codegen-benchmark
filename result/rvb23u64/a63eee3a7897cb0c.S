@@ -1,6 +1,6 @@
 func000000000000000c:
 	lui	a2, 4100
-	addiw	a2, a2, 17
+	addi	a2, a2, 17
 	bseti	a2, a2, 34
 	bseti	a2, a2, 44
 	bseti	a2, a2, 54
@@ -18,7 +18,7 @@ func000000000000000c:
 
 func000000000000000f:
 	lui	a2, 8193
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bseti	a2, a2, 38
 	bseti	a2, a2, 51
 	mulhu	a2, a1, a2

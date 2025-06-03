@@ -87,7 +87,7 @@ func000000000000008a:
 
 func00000000000000d2:
 	lui	a3, 2
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	add	a2, a2, a3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1

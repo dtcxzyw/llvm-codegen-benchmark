@@ -9,7 +9,7 @@ func0000000000000014:
 	zext.h	a0, a0
 	lui	a1, 1048573
 	sltiu	a0, a0, 2
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	czero.eqz	a0, a1, a0
 	lui	a1, 3
 	add	a0, a0, a1
@@ -19,10 +19,10 @@ func0000000000000008:
 	zext.h	a0, a0
 	lui	a1, 1048569
 	sltiu	a0, a0, 102
-	addiw	a1, a1, 154
+	addi	a1, a1, 154
 	czero.eqz	a0, a1, a0
 	lui	a1, 8
-	addiw	a1, a1, 871
+	addi	a1, a1, 871
 	add	a0, a0, a1
 	ret
 

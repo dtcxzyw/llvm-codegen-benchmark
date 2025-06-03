@@ -8,7 +8,7 @@ func0000000000000004:
 func0000000000000003:
 	sllw	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -64
+	addi	a1, a1, -64
 	and	a0, a0, a1
 	ret
 

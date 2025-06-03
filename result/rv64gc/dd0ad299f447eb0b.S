@@ -4,7 +4,7 @@ func000000000000000e:
 	lui	a3, 16
 	srliw	a4, a0, 24
 	or	a1, a1, a0
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	and	a1, a1, a3
 	or	a2, a2, a4
@@ -20,7 +20,7 @@ func000000000000000c:
 	lui	a3, 16
 	srliw	a4, a0, 24
 	or	a1, a1, a0
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	and	a1, a1, a3
 	or	a2, a2, a4
@@ -35,7 +35,7 @@ func000000000000000b:
 	srli	a2, a0, 8
 	lui	a3, 16
 	or	a1, a1, a0
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	srliw	a4, a1, 24
 	and	a1, a1, a3
@@ -52,7 +52,7 @@ func000000000000000f:
 	srliw	a3, a0, 24
 	slliw	a4, a0, 24
 	slli	a1, a1, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	or	a0, a0, a1
 	srli	a1, a0, 8
 	and	a0, a0, a2
@@ -68,7 +68,7 @@ func0000000000000008:
 	srli	a2, a0, 8
 	lui	a3, 16
 	or	a1, a1, a0
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	srliw	a4, a1, 24
 	and	a1, a1, a3

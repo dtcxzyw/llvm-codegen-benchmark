@@ -4,7 +4,7 @@ func000000000000003f:
 	vand.vx	v12, v12, a0
 	lui	a0, 9
 	vadd.vv	v10, v12, v10
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vmacc.vx	v8, a0, v10
 	ret
 

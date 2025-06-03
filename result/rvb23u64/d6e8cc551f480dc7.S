@@ -1,7 +1,7 @@
 func0000000000000001:
 	andi	a0, a0, 1
 	lui	a2, 488281
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	ret

@@ -23,7 +23,7 @@ func0000000000000007:
 	ld	a3, %lo(.LCPI1_0)(a3)
 	lui	a4, 21
 	add	a1, a1, a2
-	addiw	a4, a4, 384
+	addi	a4, a4, 384
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 13
@@ -40,7 +40,7 @@ func0000000000000005:
 	lui	a4, 2575
 	ld	a3, %lo(.LCPI2_0)(a3)
 	add	a1, a1, a2
-	addiw	a4, a4, -325
+	addi	a4, a4, -325
 	slli	a4, a4, 13
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
@@ -58,7 +58,7 @@ func0000000000000000:
 	ld	a3, %lo(.LCPI3_0)(a3)
 	lui	a4, 21
 	add	a1, a1, a2
-	addiw	a4, a4, 384
+	addi	a4, a4, 384
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 13

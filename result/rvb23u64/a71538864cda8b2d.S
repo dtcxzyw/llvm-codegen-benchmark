@@ -29,7 +29,7 @@ func0000000000000008:
 	max	a1, a1, a2
 	lui	a2, 4
 	addw	a0, a0, a1
-	addiw	a1, a2, -320
+	addi	a1, a2, -320
 	sltu	a0, a1, a0
 	ret
 

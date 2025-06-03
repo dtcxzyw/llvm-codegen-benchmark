@@ -19,7 +19,7 @@ func0000000000000005:
 	srli	a1, a1, 21
 	add	a0, a0, a1
 	lui	a1, 163
-	addiw	a1, a1, -1005
+	addi	a1, a1, -1005
 	mul	a0, a0, a1
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000004:
 	srli	a1, a1, 21
 	add	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a1, a1, 1619
+	addi	a1, a1, 1619
 	mul	a0, a0, a1
 	ret
 
@@ -48,7 +48,7 @@ func000000000000000f:
 	srli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 175922
-	addiw	a1, a1, -571
+	addi	a1, a1, -571
 	mul	a0, a0, a1
 	ret
 

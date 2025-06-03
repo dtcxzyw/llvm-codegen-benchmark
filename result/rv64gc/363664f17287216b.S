@@ -17,7 +17,7 @@ func00000000000007e1:
 	slli	a2, a2, 2
 	add	a0, a1, a2
 	lui	a1, 3
-	addiw	a1, a1, -1808
+	addi	a1, a1, -1808
 	add	a0, a0, a1
 	ret
 .LBB1_2:

@@ -1,6 +1,6 @@
 func0000000000000021:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	li	a3, 10
 	bltu	a1, a3, .LBB0_2
@@ -46,7 +46,7 @@ func000000000000000f:
 
 func0000000000000009:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1

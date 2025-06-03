@@ -12,7 +12,7 @@ func0000000000000003:
 	li	a1, 1
 	sll	a0, a1, a0
 	lui	a1, 31
-	addiw	a1, a1, 780
+	addi	a1, a1, 780
 	and	a0, a0, a1
 	ret
 

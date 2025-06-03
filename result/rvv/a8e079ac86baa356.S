@@ -77,7 +77,7 @@ func000000000000002c:
 
 func000000000000010c:
 	lui	a0, 4
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmv.v.i	v12, 0
@@ -88,7 +88,7 @@ func000000000000010c:
 
 func000000000000008f:
 	lui	a0, 32
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	vmv.v.i	v12, 0

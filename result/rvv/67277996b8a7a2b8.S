@@ -1,6 +1,6 @@
 func0000000000000005:
 	lui	a0, 559241
-	addiw	a0, a0, -1911
+	addi	a0, a0, -1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 63
@@ -27,7 +27,7 @@ func0000000000000000:
 	lui	a0, 21
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vnmsac.vx	v8, a0, v12
 	vmacc.vx	v8, a0, v10
 	ret

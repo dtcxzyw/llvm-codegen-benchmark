@@ -2,7 +2,7 @@ func0000000000000007:
 	sext.w	a2, a2
 	or	a1, a1, a2
 	lui	a2, 1044480
-	addiw	a2, a2, 255
+	addi	a2, a2, 255
 	and	a1, a1, a2
 	addiw	a2, a2, 256
 	and	a0, a0, a2
@@ -13,7 +13,7 @@ func0000000000000003:
 	or	a1, a1, a2
 	lui	a2, 262144
 	slli	a1, a1, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srli	a1, a1, 32
 	or	a0, a0, a1
 	slli	a2, a2, 17
@@ -26,7 +26,7 @@ func0000000000000000:
 	or	a1, a1, a2
 	lui	a2, 4080
 	slli	a3, a3, 32
-	addiw	a2, a2, 255
+	addi	a2, a2, 255
 	addi	a3, a3, 255
 	and	a1, a1, a3
 	slli	a3, a2, 32

@@ -12,7 +12,7 @@ func0000000000000002:
 	lui	a1, 128
 	beqz	a2, .LBB1_2
 	lui	a1, 129
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 .LBB1_2:
 	or	a0, a0, a1
 	ret

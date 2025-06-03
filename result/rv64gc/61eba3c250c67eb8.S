@@ -21,7 +21,7 @@ func0000000000000023:
 	li	a2, 16
 	bgeu	a2, a1, .LBB2_2
 	lui	a0, 1024
-	addiw	a0, a0, -192
+	addi	a0, a0, -192
 	ret
 .LBB2_2:
 	slliw	a0, a0, 6

@@ -23,7 +23,7 @@ func0000000000003181:
 	snez	a2, a2
 	and	a1, a1, a2
 	lui	a2, 65536
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

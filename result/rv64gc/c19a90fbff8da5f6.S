@@ -1,7 +1,7 @@
 func0000000000000021:
 	zext.b	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -9
+	addi	a2, a2, -9
 	and	a1, a1, a2
 	xori	a1, a1, 2
 	or	a0, a0, a1
@@ -45,8 +45,8 @@ func000000000000030c:
 func0000000000000024:
 	zext.b	a0, a0
 	lui	a2, 16
-	addiw	a3, a2, -4
-	addiw	a2, a2, -260
+	addi	a3, a2, -4
+	addi	a2, a2, -260
 	and	a1, a1, a3
 	xor	a1, a1, a2
 	seqz	a1, a1

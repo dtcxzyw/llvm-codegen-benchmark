@@ -1,6 +1,6 @@
 func0000000000000008:
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 12
@@ -10,7 +10,7 @@ func0000000000000008:
 
 func0000000000000005:
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 12
@@ -37,7 +37,7 @@ func0000000000000021:
 
 func0000000000000078:
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vsrl.vi	v12, v12, 12

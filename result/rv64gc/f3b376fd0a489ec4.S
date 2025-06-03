@@ -40,7 +40,7 @@ func000000000000001c:
 	srli	a2, a2, 4
 	lui	a3, 1
 	slli	a0, a0, 4
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -127,7 +127,7 @@ func000000000000008c:
 	zext.b	a0, a0
 	addiw	a1, a1, -32
 	lui	a2, 272
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

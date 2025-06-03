@@ -50,7 +50,7 @@ func000000000000002c:
 	sext.w	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	snez	a1, a1
 	xor	a2, a2, a3
 	seqz	a2, a2
@@ -63,7 +63,7 @@ func0000000000000084:
 	slli	a2, a2, 48
 	lui	a3, 1048482
 	srli	a2, a2, 56
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	sltiu	a2, a2, 255
 	sltu	a1, a1, a3
 	or	a1, a1, a2

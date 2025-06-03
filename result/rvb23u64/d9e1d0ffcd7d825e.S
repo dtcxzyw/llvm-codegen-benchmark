@@ -2,7 +2,7 @@ func000000000000000a:
 	li	a2, 47
 	lui	a3, 838861
 	bseti	a2, a2, 63
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	sub	a2, a2, a1
 	slli	a1, a3, 32
 	add	a1, a1, a3
@@ -38,7 +38,7 @@ func0000000000000048:
 	li	a2, 47
 	lui	a3, 838861
 	bseti	a2, a2, 32
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	sub	a2, a2, a1
 	slli	a1, a3, 32
 	add	a1, a1, a3

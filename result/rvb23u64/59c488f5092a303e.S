@@ -3,7 +3,7 @@ func0000000000000002:
 	lui	a3, 4
 	czero.nez	a0, a3, a0
 	lui	a3, 1048568
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	or	a0, a0, a1
 	and	a2, a2, a3
 	or	a0, a0, a2

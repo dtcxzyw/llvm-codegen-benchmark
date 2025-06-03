@@ -4,7 +4,7 @@ func0000000000000011:
 	addw	a1, a1, a2
 	lui	a2, 2
 	or	a0, a0, a1
-	addiw	a1, a2, 181
+	addi	a1, a2, 181
 	or	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000012:
 	lui	a1, 1046528
 	addw	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, -1000
+	addi	a1, a1, -1000
 	or	a0, a0, a1
 	ret
 
@@ -32,7 +32,7 @@ func0000000000000010:
 	addw	a1, a1, a2
 	lui	a2, 102400
 	or	a0, a0, a1
-	addiw	a1, a2, 34
+	addi	a1, a2, 34
 	or	a0, a0, a1
 	ret
 

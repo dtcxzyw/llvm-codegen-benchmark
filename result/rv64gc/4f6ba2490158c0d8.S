@@ -20,7 +20,7 @@ func0000000000000041:
 func0000000000000061:
 	or	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 80
+	addi	a1, a1, 80
 	and	a0, a0, a1
 	addi	a0, a0, -64
 	seqz	a0, a0

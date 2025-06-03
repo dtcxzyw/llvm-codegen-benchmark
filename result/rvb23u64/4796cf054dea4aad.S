@@ -32,7 +32,7 @@ func0000000000000002:
 func000000000000000c:
 	lui	a3, 1
 	andi	a0, a0, 63
-	addiw	a3, a3, -64
+	addi	a3, a3, -64
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

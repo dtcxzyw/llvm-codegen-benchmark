@@ -3,7 +3,7 @@ func00000000000000e5:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 160
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12
@@ -14,7 +14,7 @@ func00000000000000a5:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048409
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12
@@ -25,7 +25,7 @@ func0000000000000081:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048332
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12
@@ -36,7 +36,7 @@ func0000000000000080:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048409
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12
@@ -47,7 +47,7 @@ func00000000000000a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12
@@ -58,7 +58,7 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
 	vadd.vv	v8, v8, v12

@@ -50,7 +50,7 @@ func0000000000000067:
 
 func0000000000000078:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB5_2
 	mv	a1, a2
@@ -60,7 +60,7 @@ func0000000000000078:
 
 func0000000000000065:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB6_2
 	mv	a1, a2

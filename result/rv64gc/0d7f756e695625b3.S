@@ -19,9 +19,9 @@ func0000000000000018:
 	li	a2, 160
 	lui	a0, 16
 	bltu	a2, a1, .LBB2_2
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	ret
 .LBB2_2:
-	addiw	a0, a0, -98
+	addi	a0, a0, -98
 	ret
 

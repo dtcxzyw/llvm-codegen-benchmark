@@ -1,7 +1,7 @@
 func0000000000000021:
 	sext.w	a2, a0
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bne	a2, a1, .LBB0_2
 	li	a0, 1
 	ret

@@ -8,7 +8,7 @@ func0000000000000004:
 	.quad	-9187201950435737472
 func0000000000000000:
 	lui	a3, 522232
-	addiw	a3, a3, -129
+	addi	a3, a3, -129
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI1_0)

@@ -9,7 +9,7 @@ func0000000000003c89:
 
 func0000000000003d04:
 	lui	a2, 2
-	addiw	a2, a2, -1060
+	addi	a2, a2, -1060
 	add	a2, a2, a1
 	addi	a1, a1, 1360
 	sltu	a2, a2, a0

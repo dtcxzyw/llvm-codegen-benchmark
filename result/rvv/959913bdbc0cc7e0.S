@@ -7,7 +7,7 @@ func0000000000000004:
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 244
 	vsrl.vi	v12, v12, 18
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsub.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
 	ret

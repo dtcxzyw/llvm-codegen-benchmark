@@ -57,8 +57,8 @@ func0000000000000003:
 	lui	a3, 1048402
 	add	a0, a0, a1
 	lui	a1, 349
-	addiw	a3, a3, -1728
-	addiw	a1, a1, -640
+	addi	a3, a3, -1728
+	addi	a1, a1, -640
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

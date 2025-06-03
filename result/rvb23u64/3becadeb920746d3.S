@@ -54,7 +54,7 @@ func0000000000000018:
 	lui	a1, 1
 	slli	a0, a0, 52
 	srli	a0, a0, 52
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	sltu	a0, a1, a0
 	ret
 
@@ -78,10 +78,10 @@ func000000000000006c:
 func0000000000000074:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, 1192
+	addi	a1, a1, 1192
 	sltu	a0, a0, a1
 	ret
 

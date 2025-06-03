@@ -34,11 +34,11 @@ func000000000000002b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vi	v0, v10, 0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 1221
-	addiw	a0, a0, -1216
+	addi	a0, a0, -1216
 	vmerge.vxm	v10, v10, a0, v0
 	vmul.vv	v8, v10, v8
 	ret

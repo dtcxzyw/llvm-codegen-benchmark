@@ -29,7 +29,7 @@ func0000000000000213:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v10, a0
 	li	a0, 58
 	vmerge.vxm	v12, v12, a0, v0
@@ -44,7 +44,7 @@ func0000000000000a51:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v10, a0
 	li	a0, 64
 	vmerge.vxm	v12, v12, a0, v0
@@ -59,7 +59,7 @@ func0000000000000a53:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v10, a0
 	li	a0, 64
 	vmerge.vxm	v12, v12, a0, v0

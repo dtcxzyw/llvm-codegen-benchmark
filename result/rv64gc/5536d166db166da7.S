@@ -23,7 +23,7 @@ func000000000000000a:
 func0000000000000008:
 	sext.w	a2, a2
 	lui	a3, 24414
-	addiw	a3, a3, 256
+	addi	a3, a3, 256
 	sltu	a2, a3, a2
 	or	a1, a1, a2
 	and	a0, a0, a1

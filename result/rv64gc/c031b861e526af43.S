@@ -11,7 +11,7 @@ func0000000000000028:
 
 func0000000000000181:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -21,18 +21,18 @@ func0000000000000181:
 
 func000000000000018c:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	bnez	a0, .LBB2_2
 	lui	a0, 912318
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	ret
 .LBB2_2:
 	lui	a0, 910098
-	addiw	a0, a0, 1723
+	addi	a0, a0, 1723
 	ret
 
 func0000000000000024:

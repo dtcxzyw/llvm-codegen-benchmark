@@ -1,7 +1,7 @@
 func0000000000000030:
 	zext.h	a2, a2
 	lui	a3, 14
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	xor	a2, a2, a3
 	li	a3, -8
 	sext.w	a1, a1
@@ -14,7 +14,7 @@ func0000000000000030:
 func000000000000003f:
 	zext.h	a2, a2
 	lui	a3, 14
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	xor	a2, a2, a3
 	li	a3, -8
 	sext.w	a1, a1

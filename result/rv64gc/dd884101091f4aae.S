@@ -28,7 +28,7 @@ func000000000000000a:
 func0000000000000081:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -40,7 +40,7 @@ func0000000000000081:
 func00000000000000a8:
 	srai	a2, a2, 4
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -51,7 +51,7 @@ func00000000000000a8:
 func00000000000000a4:
 	srai	a2, a2, 4
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -70,7 +70,7 @@ func000000000000002a:
 func00000000000000c6:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -81,7 +81,7 @@ func00000000000000c6:
 func000000000000008a:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -92,7 +92,7 @@ func000000000000008a:
 func00000000000000aa:
 	srai	a2, a2, 3
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -103,7 +103,7 @@ func00000000000000aa:
 func00000000000000e4:
 	srai	a2, a2, 3
 	lui	a3, 838861
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

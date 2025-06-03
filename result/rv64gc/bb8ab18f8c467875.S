@@ -6,7 +6,7 @@ func0000000000000003:
 func0000000000000007:
 	srli	a0, a0, 1
 	lui	a1, 2048
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	and	a0, a0, a1
 	ret
 

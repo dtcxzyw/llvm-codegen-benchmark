@@ -150,7 +150,7 @@ func0000000000000506:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 244
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgtu.vx	v12, v10, a0
 	vmsle.vi	v10, v8, -1
 	vmor.mm	v0, v10, v12

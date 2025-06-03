@@ -21,7 +21,7 @@ func00000000000000a8:
 
 func0000000000000064:
 	lui	a3, 1
-	addiw	a3, a3, -1651
+	addi	a3, a3, -1651
 	add.uw	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a2, a0

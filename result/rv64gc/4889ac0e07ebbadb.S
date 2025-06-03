@@ -71,7 +71,7 @@ func0000000000000088:
 	and	a1, a1, a2
 	beqz	a1, .LBB5_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB5_2:
 	ret
 

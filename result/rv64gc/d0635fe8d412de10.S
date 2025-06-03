@@ -60,7 +60,7 @@ func0000000000000040:
 func0000000000000083:
 	sext.w	a2, a2
 	lui	a3, 272
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a3, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

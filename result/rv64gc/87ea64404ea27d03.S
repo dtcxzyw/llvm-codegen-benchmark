@@ -29,7 +29,7 @@ func0000000000000075:
 	slli	a1, a0, 2
 	slli	a0, a0, 6
 	sub	a0, a0, a1
-	addiw	a1, a2, 1120
+	addi	a1, a2, 1120
 	add	a0, a0, a1
 	ret
 

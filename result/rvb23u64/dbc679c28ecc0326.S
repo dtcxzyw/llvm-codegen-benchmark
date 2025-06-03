@@ -7,7 +7,7 @@ func0000000000000000:
 	lui	a1, 262144
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	and	a0, a0, a1
 	ret
 

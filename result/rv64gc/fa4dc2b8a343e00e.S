@@ -16,7 +16,7 @@ func0000000000000281:
 	slli	a1, a1, 32
 	lui	a2, 6
 	srli	a1, a1, 32
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	sltiu	a1, a1, 29
 	and	a0, a0, a2
 	seqz	a0, a0

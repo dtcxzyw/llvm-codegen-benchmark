@@ -34,7 +34,7 @@ func0000000000000041:
 func0000000000000021:
 	bnez	a0, .LBB5_2
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	add	a0, a0, a1
 .LBB5_2:
 	ret

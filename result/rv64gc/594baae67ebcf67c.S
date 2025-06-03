@@ -34,7 +34,7 @@ func0000000000000002:
 	andi	a1, a1, 1
 	beqz	a2, .LBB2_2
 	lui	a2, 929792
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	andi	a0, a0, 1020
@@ -42,7 +42,7 @@ func0000000000000002:
 	ret
 .LBB2_2:
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	andi	a0, a0, 1020

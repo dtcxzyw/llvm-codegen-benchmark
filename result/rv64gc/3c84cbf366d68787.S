@@ -2,7 +2,7 @@ func0000000000000005:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 1048572
-	addiw	a1, a1, -193
+	addi	a1, a1, -193
 	and	a0, a0, a1
 	ret
 
@@ -10,7 +10,7 @@ func0000000000000007:
 	slli	a1, a1, 10
 	or	a0, a0, a1
 	lui	a1, 1048575
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000000:
 	slli	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 1048568
-	addiw	a1, a1, 510
+	addi	a1, a1, 510
 	and	a0, a0, a1
 	ret
 

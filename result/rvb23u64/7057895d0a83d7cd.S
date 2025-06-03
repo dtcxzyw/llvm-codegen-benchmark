@@ -4,7 +4,7 @@ func000000000000014a:
 	lui	a2, 24390
 	mul	a0, a0, a1
 	mul	a1, a1, a1
-	addiw	a2, a2, -1440
+	addi	a2, a2, -1440
 	minu	a1, a1, a2
 	slt	a0, a0, a1
 	ret

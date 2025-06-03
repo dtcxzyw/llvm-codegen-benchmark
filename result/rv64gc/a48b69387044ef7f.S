@@ -11,7 +11,7 @@ func0000000000000007:
 
 func0000000000000037:
 	lui	a2, 171
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a2, a2, 12
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
@@ -33,7 +33,7 @@ func0000000000000017:
 
 func0000000000000034:
 	lui	a2, 171
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a2, a2, 12
 	addi	a2, a2, -1365
 	mul	a1, a1, a2

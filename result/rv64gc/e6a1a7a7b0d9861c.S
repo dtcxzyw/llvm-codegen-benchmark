@@ -7,7 +7,7 @@ func000000000000001c:
 
 func000000000000001f:
 	lui	a2, 1
-	addiw	a2, a2, -64
+	addi	a2, a2, -64
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 288

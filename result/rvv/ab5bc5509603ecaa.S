@@ -178,7 +178,7 @@ func0000000000000028:
 
 func0000000000000101:
 	lui	a0, 4
-	addiw	a0, a0, 31
+	addi	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
 	vmand.mm	v10, v0, v12
@@ -201,14 +201,14 @@ func0000000000000186:
 	vmsne.vi	v12, v10, 0
 	lui	a0, 262144
 	vmand.mm	v10, v0, v12
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmslt.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
 
 func00000000000000c6:
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v12, v10, a0
 	vmand.mm	v10, v12, v0

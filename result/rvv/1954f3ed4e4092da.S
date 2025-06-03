@@ -3,7 +3,7 @@ func0000000000000018:
 	vmv1r.v	v10, v0
 	vsrl.vi	v12, v8, 1
 	lui	a0, 8192
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	lui	a0, 1034240
 	vandn.vx	v8, v12, a0

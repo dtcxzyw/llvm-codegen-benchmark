@@ -47,7 +47,7 @@ func000000000000008a:
 	czero.eqz	a0, a2, a0
 	lui	a2, 2
 	or	a0, a0, a1
-	addiw	a1, a2, 1807
+	addi	a1, a2, 1807
 	slt	a0, a1, a0
 	ret
 

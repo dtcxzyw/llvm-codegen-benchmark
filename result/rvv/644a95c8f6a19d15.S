@@ -20,7 +20,7 @@ func0000000000000020:
 	vsra.vi	v10, v10, 2
 	lui	a0, 176
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, -1846
+	addi	a0, a0, -1846
 	vadd.vx	v8, v8, a0
 	ret
 

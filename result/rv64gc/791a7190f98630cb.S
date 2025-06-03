@@ -7,16 +7,18 @@ func0000000000000003:
 	ret
 .LBB0_2:
 	lui	a0, 16384
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 	ret
 
 func0000000000000001:
 	and	a1, a1, a2
 	andi	a1, a1, 1
-	beqz	a1, .LBB1_2
-	lui	a0, 4
-.LBB1_2:
+	bnez	a1, .LBB1_2
 	addiw	a0, a0, -1
+	ret
+.LBB1_2:
+	lui	a0, 4
+	addi	a0, a0, -1
 	ret
 
 func0000000000000000:

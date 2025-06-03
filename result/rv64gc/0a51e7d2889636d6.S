@@ -5,7 +5,7 @@ func0000000000000000:
 	li	a0, 8
 .LBB0_2:
 	lui	a1, 419430
-	addiw	a1, a1, 1639
+	addi	a1, a1, 1639
 	mul	a1, a0, a1
 	srli	a1, a1, 33
 	slli	a2, a1, 2

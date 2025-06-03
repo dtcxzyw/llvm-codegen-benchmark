@@ -46,7 +46,7 @@ func00000000000000fb:
 	sh3add	a0, a0, a1
 	lui	a1, 2
 	sh2add	a0, a0, a2
-	addiw	a1, a1, 1164
+	addi	a1, a1, 1164
 	add	a0, a0, a1
 	ret
 

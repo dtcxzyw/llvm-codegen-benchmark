@@ -3,7 +3,7 @@ func0000000000000000:
 	addi	a2, a2, -256
 	mul	a1, a1, a2
 	lui	a2, 274878
-	addiw	a2, a2, -381
+	addi	a2, a2, -381
 	add	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2

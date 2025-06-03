@@ -4,7 +4,7 @@ func00000000000000b4:
 	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -30
+	addi	a1, a1, -30
 	sltu	a0, a0, a1
 	ret
 

@@ -7,7 +7,7 @@ func000000000000000d:
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsrl.vi	v10, v10, 11
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 67109

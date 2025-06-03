@@ -17,7 +17,7 @@ func0000000000000034:
 	lui	a2, 1048575
 	and	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 12
 	ret

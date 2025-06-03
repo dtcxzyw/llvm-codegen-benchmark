@@ -41,23 +41,23 @@ func000000000000000a:
 	li	a4, 1
 	lui	a0, 1048575
 	blt	a4, a2, .LBB2_2
-	addiw	a0, a0, 2007
+	addi	a0, a0, 2007
 	andi	a3, a3, 1
 	lui	a2, 1048573
 	bnez	a1, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addiw	a0, a0, 1448
+	addi	a0, a0, 1448
 	andi	a3, a3, 1
 	lui	a2, 1048573
 	beqz	a1, .LBB2_4
 .LBB2_3:
-	addiw	a0, a2, -1544
+	addi	a0, a2, -1544
 .LBB2_4:
 	bnez	a3, .LBB2_6
 	ret
 .LBB2_6:
-	addiw	a0, a2, -1533
+	addi	a0, a2, -1533
 	ret
 
 func0000000000000004:

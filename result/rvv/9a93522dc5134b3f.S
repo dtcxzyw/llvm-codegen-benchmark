@@ -68,7 +68,7 @@ func0000000000000008:
 	vmv.v.x	v12, a0
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vmsgtu.vx	v0, v8, a0
 	ret
 

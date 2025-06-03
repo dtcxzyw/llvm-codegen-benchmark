@@ -4,7 +4,7 @@ func0000000000000021:
 	addi	a2, a2, -1057
 	mul	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1981
+	addi	a2, a2, -1981
 	addi	a0, a0, -2048
 	zext.h	a1, a1
 	sltu	a1, a1, a2
@@ -22,7 +22,7 @@ func0000000000000081:
 	srli	a1, a1, 50
 	or	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	zext.h	a1, a1
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 28

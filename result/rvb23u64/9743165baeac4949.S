@@ -24,7 +24,7 @@ func0000000000000010:
 	sext.w	a1, a1
 	lui	a2, 2048
 	addi	a1, a1, -2
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2
 	slliw	a0, a0, 6

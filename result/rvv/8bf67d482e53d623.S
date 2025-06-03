@@ -4,8 +4,7 @@ func0000000000000030:
 	vadd.vx	v12, v12, a0
 	li	a0, -128
 	vand.vx	v10, v10, a0
-	li	a0, 1
-	slli	a0, a0, 36
+	bseti	a0, zero, 36
 	addi	a0, a0, -128
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
@@ -18,11 +17,10 @@ func0000000000000000:
 	vadd.vx	v12, v12, a0
 	li	a0, -128
 	vand.vx	v12, v12, a0
-	li	a0, 1
-	slli	a0, a0, 36
+	bseti	a0, zero, 36
 	addi	a0, a0, -128
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v12, v8
-	vadd.vv	v8, v8, v10
+	vadd.vv	v10, v12, v10
+	vadd.vv	v8, v10, v8
 	ret
 

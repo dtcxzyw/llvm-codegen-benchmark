@@ -38,7 +38,7 @@ func0000000000000024:
 	zext.h	a0, a0
 	seqz	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

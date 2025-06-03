@@ -28,7 +28,7 @@ func0000000000000014:
 func0000000000000018:
 	srli	a1, a1, 11
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	bseti	a2, zero, 11
 	czero.eqz	a2, a2, a1

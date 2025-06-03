@@ -12,7 +12,7 @@ func0000000000000020:
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI0_1)
 	ld	a3, %lo(.LCPI0_1)(a3)
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	mulh	a0, a0, a3
@@ -34,7 +34,7 @@ func0000000000000021:
 	srai	a1, a1, 39
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI1_1)
-	addiw	a2, a2, -779
+	addi	a2, a2, -779
 	ld	a3, %lo(.LCPI1_1)(a3)
 	slli	a2, a2, 14
 	mul	a1, a1, a2

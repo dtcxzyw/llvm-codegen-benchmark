@@ -2,10 +2,10 @@ func0000000000000001:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -28,10 +28,10 @@ func0000000000000008:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -53,10 +53,10 @@ func0000000000000041:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -79,10 +79,10 @@ func0000000000000054:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -104,10 +104,10 @@ func0000000000000046:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -129,10 +129,10 @@ func0000000000000044:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -154,10 +154,10 @@ func000000000000004a:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2
@@ -179,10 +179,10 @@ func0000000000000014:
 	sext.w	a0, a0
 	srli	a2, a1, 1
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2

@@ -22,13 +22,13 @@ func0000000000000006:
 	li	a2, -1024
 	bge	a0, a2, .LBB2_2
 	lui	a0, 1048332
-	addiw	a0, a0, -576
+	addi	a0, a0, -576
 	ret
 .LBB2_2:
 	slli	a1, a1, 63
 	lui	a0, 244
 	srai	a1, a1, 63
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	and	a0, a0, a1
 	ret
 

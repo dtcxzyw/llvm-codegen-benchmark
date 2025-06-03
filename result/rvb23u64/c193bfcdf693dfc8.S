@@ -1,7 +1,7 @@
 func000000000000000c:
 	mul	a0, a0, a1
 	lui	a1, 44
-	addiw	a1, a1, 1480
+	addi	a1, a1, 1480
 	mul	a0, a0, a1
 	ret
 

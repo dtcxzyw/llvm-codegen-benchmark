@@ -3,7 +3,7 @@ func0000000000000003:
 	and	a0, a0, a3
 	lui	a3, 16
 	zext.b	a1, a1
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -14,7 +14,7 @@ func0000000000000002:
 	and	a0, a0, a3
 	lui	a3, 4088
 	andi	a1, a1, 16
-	addiw	a3, a3, -1809
+	addi	a3, a3, -1809
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

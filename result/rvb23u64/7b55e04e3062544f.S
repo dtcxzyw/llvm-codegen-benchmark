@@ -20,7 +20,7 @@ func000000000000001c:
 	slli	a0, a0, 7
 	sub	a0, a0, a3
 	lui	a3, 1
-	addiw	a3, a3, 1992
+	addi	a3, a3, 1992
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	add	a0, a0, a1

@@ -5,7 +5,7 @@ func0000000000000005:
 	mv	a0, a1
 .LBB0_2:
 	lui	a1, 2
-	addiw	a1, a1, -992
+	addi	a1, a1, -992
 	mul	a0, a0, a1
 	ret
 

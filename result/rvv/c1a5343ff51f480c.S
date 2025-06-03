@@ -7,7 +7,7 @@ func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 524408
-	addiw	a1, a1, -15
+	addi	a1, a1, -15
 	vsub.vv	v14, v10, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12

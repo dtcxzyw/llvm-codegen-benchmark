@@ -37,7 +37,7 @@ func0000000000000078:
 	or	a0, a0, a1
 	lui	a1, 4
 	or	a0, a0, a2
-	addiw	a1, a1, -12
+	addi	a1, a1, -12
 	sltu	a0, a1, a0
 	ret
 

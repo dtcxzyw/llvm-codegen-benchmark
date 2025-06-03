@@ -1,7 +1,7 @@
 func0000000000000541:
 	or	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -36,7 +36,7 @@ func000000000000002c:
 	or	a1, a1, a2
 	lui	a2, 8
 	seqz	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1

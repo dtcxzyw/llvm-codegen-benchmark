@@ -22,7 +22,7 @@ func0000000000000aa8:
 	li	a0, 21
 	lui	a1, 699051
 	vmul.vx	v10, v10, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -1

@@ -3,7 +3,7 @@ func00000000000000d4:
 	vnsrl.wi	v11, v12, 0
 	lui	a0, 2
 	vmslt.vv	v10, v10, v11
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

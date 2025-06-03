@@ -68,7 +68,7 @@ func000000000000002a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 65536
-	addiw	a3, a3, 32
+	addi	a3, a3, 32
 	and	a2, a2, a3
 	binvi	a2, a2, 28
 	seqz	a2, a2

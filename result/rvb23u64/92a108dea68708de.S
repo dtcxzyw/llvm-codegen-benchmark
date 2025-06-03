@@ -3,7 +3,7 @@ func0000000000000001:
 	sext.w	a1, a1
 	lui	a2, 559241
 	negw	a3, a1
-	addiw	a2, a2, -1911
+	addi	a2, a2, -1911
 	max	a1, a1, a3
 	mul	a3, a1, a2
 	srli	a3, a3, 32

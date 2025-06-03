@@ -29,7 +29,7 @@ func0000000000000074:
 	li	a3, 276
 	subw	a3, a3, a1
 	lui	a1, 4096
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	and	a1, a1, a2
 	czero.eqz	a2, a3, a1
 	czero.nez	a0, a0, a1

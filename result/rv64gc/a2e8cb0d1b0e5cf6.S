@@ -60,7 +60,7 @@ func0000000000003184:
 	snez	a1, a1
 	and	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -105,7 +105,7 @@ func0000000000003084:
 	sext.w	a2, a2
 	lui	a3, 16
 	srliw	a1, a1, 13
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltiu	a1, a1, 129
 	sltiu	a0, a0, -32
 	xor	a2, a2, a3
@@ -177,11 +177,11 @@ func00000000000010ca:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 3
-	addiw	a3, a3, 1364
+	addi	a3, a3, 1364
 	slt	a1, a1, a3
 	lui	a3, 1048573
 	sltiu	a2, a2, 10
-	addiw	a3, a3, -473
+	addi	a3, a3, -473
 	slt	a0, a3, a0
 	and	a0, a0, a1
 	and	a0, a0, a2

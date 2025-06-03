@@ -3,7 +3,7 @@ func0000000000000000:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v10, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	vadd.vv	v10, v12, v10
 	slli	a1, a0, 32
 	vsrl.vv	v8, v10, v8

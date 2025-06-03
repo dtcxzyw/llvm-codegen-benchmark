@@ -7,7 +7,7 @@ func0000000000000055:
 	vsrl.vi	v10, v10, 6
 	vwmaccsu.vx	v8, a0, v10
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret

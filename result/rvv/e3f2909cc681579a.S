@@ -8,8 +8,7 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	li	a0, 1
-	slli	a0, a0, 38
+	bseti	a0, zero, 38
 	addi	a0, a0, -129
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -49,8 +48,7 @@ func000000000000000a:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -4
 	csrwi	vxrm, 2
 	vaaddu.vx	v8, v10, a0

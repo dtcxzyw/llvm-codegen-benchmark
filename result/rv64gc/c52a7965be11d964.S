@@ -5,7 +5,7 @@ func0000000000000024:
 	srai	a0, a0, 48
 	add	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -358
+	addi	a1, a1, -358
 	sltu	a0, a0, a1
 	ret
 
@@ -25,7 +25,7 @@ func0000000000000028:
 	srai	a0, a0, 48
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -1418
+	addi	a1, a1, -1418
 	sltu	a0, a1, a0
 	ret
 

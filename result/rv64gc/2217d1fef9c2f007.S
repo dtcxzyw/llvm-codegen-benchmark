@@ -16,7 +16,7 @@ func0000000000000081:
 
 func0000000000000181:
 	lui	a3, 16
-	addiw	a3, a3, -64
+	addi	a3, a3, -64
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2
 	sext.w	a1, a1

@@ -31,7 +31,7 @@ func0000000000000018:
 
 func000000000000000c:
 	lui	a1, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	beqz	a0, .LBB3_2
 	li	a0, 3

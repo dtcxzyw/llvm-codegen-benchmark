@@ -4,7 +4,7 @@ func0000000000000003:
 	mul	a0, a0, a1
 	lui	a1, 163151
 	zext.w	a0, a0
-	addiw	a1, a1, -1201
+	addi	a1, a1, -1201
 	mul	a0, a0, a1
 	ret
 

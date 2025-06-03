@@ -16,7 +16,7 @@ func0000000000000001:
 	slli	a1, a1, 48
 	beqz	a1, .LBB2_2
 	lui	a0, 2
-	addiw	a0, a0, -1279
+	addi	a0, a0, -1279
 .LBB2_2:
 	ret
 

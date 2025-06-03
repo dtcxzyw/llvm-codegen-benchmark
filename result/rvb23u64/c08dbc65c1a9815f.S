@@ -4,7 +4,7 @@ func000000000000000a:
 	mv	a3, a2
 	mv	a1, a0
 	lui	a0, 298023
-	addiw	a2, a0, 917
+	addi	a2, a0, 917
 	slli	a2, a2, 13
 	mv	a0, a3
 	li	a3, 0

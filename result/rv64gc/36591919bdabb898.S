@@ -5,7 +5,7 @@ func000000000000002c:
 
 func0000000000000034:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	li	a3, 6
 	bltu	a0, a3, .LBB1_2

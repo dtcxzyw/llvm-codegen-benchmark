@@ -58,11 +58,11 @@ func0000000000000008:
 	li	a2, 255
 	bgeu	a2, a0, .LBB6_2
 	lui	a0, 1047056
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	ret
 .LBB6_2:
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	and	a0, a0, a1
 	ret
 

@@ -15,7 +15,7 @@ func000000000000000f:
 	add	a1, a1, a2
 	lui	a2, 21
 	add.uw	a0, a1, a0
-	addiw	a1, a2, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 

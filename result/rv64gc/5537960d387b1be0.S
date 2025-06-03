@@ -31,18 +31,18 @@ func0000000000000014:
 	sext.w	a1, a0
 	bnez	a2, .LBB2_2
 	lui	a0, 262144
-	addiw	a0, a0, 369
+	addi	a0, a0, 369
 	li	a2, 17
 	bltu	a1, a2, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
 	lui	a0, 131072
-	addiw	a0, a0, 361
+	addi	a0, a0, 361
 	li	a2, 17
 	bgeu	a1, a2, .LBB2_4
 .LBB2_3:
 	lui	a0, 65536
-	addiw	a0, a0, 353
+	addi	a0, a0, 353
 .LBB2_4:
 	ret
 

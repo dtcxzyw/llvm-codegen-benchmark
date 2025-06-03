@@ -23,7 +23,7 @@ func0000000000000041:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 907461
-	addiw	a2, a2, 265
+	addi	a2, a2, 265
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

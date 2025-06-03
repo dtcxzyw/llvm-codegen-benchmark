@@ -3,7 +3,7 @@ func00000000000000e1:
 	vsll.vi	v10, v10, 8
 	lui	a0, 16
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 4
 	ret
@@ -70,7 +70,7 @@ func00000000000000c1:
 	vor.vv	v8, v10, v8
 	vand.vx	v8, v8, a0
 	lui	a0, 672
-	addiw	a0, a0, 413
+	addi	a0, a0, 413
 	slli	a0, a0, 24
 	vmseq.vx	v0, v8, a0
 	ret

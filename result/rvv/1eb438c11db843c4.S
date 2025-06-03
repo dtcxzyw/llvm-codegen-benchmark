@@ -59,7 +59,7 @@ func0000000000000118:
 	lui	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmor.mm	v10, v0, v12
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
@@ -95,7 +95,7 @@ func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a0
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmor.mm	v10, v0, v12
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

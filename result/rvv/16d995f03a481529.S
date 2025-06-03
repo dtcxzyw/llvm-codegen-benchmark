@@ -141,7 +141,7 @@ func000000000000010c:
 
 func00000000000000cc:
 	lui	a0, 3
-	addiw	a0, a0, -9
+	addi	a0, a0, -9
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v9, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma

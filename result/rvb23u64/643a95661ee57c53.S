@@ -28,7 +28,7 @@ func0000000000000061:
 func0000000000000006:
 	czero.eqz	a1, a1, a2
 	lui	a3, 4096
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -38,7 +38,7 @@ func0000000000000018:
 	slti	a2, a2, -2048
 	lui	a3, 1047599
 	czero.nez	a1, a1, a2
-	addiw	a3, a3, 1792
+	addi	a3, a3, 1792
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1

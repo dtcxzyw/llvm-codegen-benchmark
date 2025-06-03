@@ -20,7 +20,7 @@ func0000000000000017:
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	lui	a0, 14648
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -34,7 +34,7 @@ func000000000000003f:
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	lui	a0, 34360
-	addiw	a0, a0, -1071
+	addi	a0, a0, -1071
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -60,7 +60,7 @@ func0000000000000003:
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	lui	a0, 26844
-	addiw	a0, a0, -1861
+	addi	a0, a0, -1861
 	vmul.vx	v8, v8, a0
 	ret
 

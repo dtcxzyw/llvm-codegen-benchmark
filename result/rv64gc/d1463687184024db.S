@@ -14,7 +14,7 @@ func0000000000002848:
 	slli	a1, a1, 8
 	lui	a2, 16
 	or	a0, a0, a1
-	addiw	a1, a2, -255
+	addi	a1, a2, -255
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a2, a0, 63

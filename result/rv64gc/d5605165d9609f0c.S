@@ -35,7 +35,7 @@ func000000000000010c:
 	lui	a3, 16
 	sext.w	a1, a1
 	sext.w	a2, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	sltu	a1, a2, a1
 	xor	a0, a0, a3

@@ -59,7 +59,7 @@ func000000000000002c:
 	slli	a2, a2, 48
 	lui	a3, 3
 	srli	a2, a2, 48
-	addiw	a3, a3, -403
+	addi	a3, a3, -403
 	xor	a0, a0, a1
 	xor	a2, a2, a3
 	seqz	a1, a2

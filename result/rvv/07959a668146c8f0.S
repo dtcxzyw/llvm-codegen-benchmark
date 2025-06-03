@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a0, 16
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

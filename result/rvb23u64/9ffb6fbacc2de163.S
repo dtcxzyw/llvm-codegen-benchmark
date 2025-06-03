@@ -10,10 +10,10 @@ func0000000000000004:
 	zext.b	a2, a2
 	lui	a3, 914960
 	addi	a2, a2, -2
-	addiw	a3, a3, 129
+	addi	a3, a3, 129
 	czero.nez	a2, a3, a2
 	lui	a3, 135168
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

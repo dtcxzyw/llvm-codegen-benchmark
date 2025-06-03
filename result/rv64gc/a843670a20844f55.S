@@ -46,7 +46,7 @@ func0000000000000230:
 	slli	a2, a2, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	addi	a1, a1, -1
 	sltu	a2, a2, a3
 	snez	a1, a1

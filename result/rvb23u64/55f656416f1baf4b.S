@@ -27,7 +27,7 @@ func000000000000002a:
 
 func0000000000000074:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	addw	a0, a0, a1
 	sltu	a0, a0, a2

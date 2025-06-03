@@ -4,7 +4,7 @@ func0000000000000021:
 	li	a2, 256
 	bne	a1, a2, .LBB0_2
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 .LBB0_2:
 	ret
 

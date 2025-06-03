@@ -21,7 +21,7 @@ func00000000000001e3:
 func0000000000000020:
 	lui	a3, 1
 	srli	a2, a2, 12
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sub	a3, a3, a0
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2

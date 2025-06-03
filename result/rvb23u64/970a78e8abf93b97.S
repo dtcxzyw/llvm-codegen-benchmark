@@ -6,8 +6,7 @@ func0000000000000001:
 
 func00000000000000c1:
 	addi	a0, a0, 63
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0
@@ -15,8 +14,7 @@ func00000000000000c1:
 
 func00000000000000d1:
 	addi	a0, a0, 63
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0

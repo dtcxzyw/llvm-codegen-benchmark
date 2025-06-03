@@ -15,7 +15,7 @@ func000000000000002a:
 	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vi	v8, v12, 1, v0.t
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret
 

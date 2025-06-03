@@ -11,7 +11,7 @@ func0000000000000006:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 7
-	addiw	a0, a0, 1328
+	addi	a0, a0, 1328
 	vminu.vx	v8, v8, a0
 	ret
 

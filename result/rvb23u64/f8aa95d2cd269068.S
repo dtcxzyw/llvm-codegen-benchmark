@@ -15,7 +15,7 @@ func0000000000000004:
 
 func000000000000002c:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -33,7 +33,7 @@ func0000000000000009:
 
 func0000000000000026:
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	slt	a1, a2, a1
 	and	a0, a0, a1

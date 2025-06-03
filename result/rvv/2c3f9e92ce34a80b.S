@@ -45,7 +45,7 @@ func0000000000000d0c:
 
 func00000000000000e1:
 	lui	a0, 49
-	addiw	a0, a0, -704
+	addi	a0, a0, -704
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmsle.vv	v9, v10, v12
@@ -56,7 +56,7 @@ func00000000000000e1:
 
 func00000000000000ec:
 	lui	a0, 49
-	addiw	a0, a0, -704
+	addi	a0, a0, -704
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmsle.vv	v9, v10, v12

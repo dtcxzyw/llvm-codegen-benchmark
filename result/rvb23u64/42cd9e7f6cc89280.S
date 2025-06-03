@@ -33,7 +33,7 @@ func000000000000028c:
 	slli	a1, a1, 44
 	lui	a2, 27392
 	srli	a1, a1, 44
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	snez	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
@@ -144,7 +144,7 @@ func0000000000000141:
 func0000000000000034:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0

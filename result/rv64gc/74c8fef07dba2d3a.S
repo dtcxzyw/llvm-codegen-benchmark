@@ -22,7 +22,7 @@ func0000000000000002:
 	addi	a1, a1, -1
 	addw	a0, a0, a1
 	lui	a1, 524296
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

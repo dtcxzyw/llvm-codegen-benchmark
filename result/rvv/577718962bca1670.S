@@ -73,7 +73,7 @@ func0000000000000004:
 	lui	a0, 66052
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	slli	a1, a0, 28
 	add	a0, a0, a1
 	vmv.v.x	v10, a0

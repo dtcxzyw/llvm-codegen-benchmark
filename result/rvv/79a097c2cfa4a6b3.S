@@ -18,7 +18,7 @@ func0000000000000000:
 	vsrl.vx	v10, v10, a0
 	lui	a0, 24414
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000048:
 	vsrl.vx	v10, v10, a0
 	lui	a0, 6
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 778
+	addi	a0, a0, 778
 	vmul.vx	v8, v8, a0
 	ret
 

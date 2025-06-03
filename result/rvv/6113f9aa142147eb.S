@@ -79,7 +79,7 @@ func00000000000000c6:
 
 func0000000000000181:
 	lui	a0, 131072
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0

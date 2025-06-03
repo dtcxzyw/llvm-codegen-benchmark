@@ -26,7 +26,7 @@ func0000000000000088:
 	lui	a3, 1
 	srli	a0, a0, 48
 	srli	a2, a2, 50
-	addiw	a3, a3, -2045
+	addi	a3, a3, -2045
 	xor	a2, a2, a3
 	sltiu	a0, a0, 4
 	seqz	a2, a2

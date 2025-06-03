@@ -15,7 +15,7 @@ func0000000000000003:
 	ret
 .LBB1_2:
 	lui	a0, 32
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	and	a0, a0, a2
 	addi	a0, a0, 2047
 	addi	a0, a0, 1754

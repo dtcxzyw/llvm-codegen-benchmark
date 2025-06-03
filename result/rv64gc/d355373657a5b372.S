@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a3, 16
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a3, a3, a2
 	beqz	a3, .LBB0_2
 	mv	a1, a2

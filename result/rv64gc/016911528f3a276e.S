@@ -18,7 +18,7 @@ func0000000000000005:
 	andi	a2, a0, 1
 	bnez	a3, .LBB1_2
 	lui	a0, 272
-	addiw	a0, a0, -65
+	addi	a0, a0, -65
 	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:

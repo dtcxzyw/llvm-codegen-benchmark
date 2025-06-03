@@ -6,7 +6,7 @@ func00000000000000e5:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a1, 299593
-	addiw	a1, a1, 585
+	addi	a1, a1, 585
 	vmv.v.x	v12, a0
 	slli	a0, a1, 33
 	add	a0, a0, a1
@@ -19,7 +19,7 @@ func00000000000000e4:
 	vsra.vi	v10, v10, 2
 	vmv.v.i	v12, 8
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10

@@ -3,8 +3,8 @@ func0000000000000041:
 	add	a0, a0, a1
 	lui	a1, 4080
 	lui	a4, 16
-	addiw	a3, a3, 1339
-	addiw	a4, a4, -256
+	addi	a3, a3, 1339
+	addi	a4, a4, -256
 	slli	a3, a3, 1
 	mul	a2, a2, a3
 	add	a0, a0, a2

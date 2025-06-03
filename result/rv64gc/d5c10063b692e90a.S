@@ -80,13 +80,13 @@ func0000000000000008:
 	bnez	a2, .LBB7_2
 	li	a0, 536
 	lui	a2, 32768
-	addiw	a2, a2, 39
+	addi	a2, a2, 39
 	bltu	a2, a1, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
 	li	a0, 600
 	lui	a2, 32768
-	addiw	a2, a2, 39
+	addi	a2, a2, 39
 	bgeu	a2, a1, .LBB7_4
 .LBB7_3:
 	li	a0, 664

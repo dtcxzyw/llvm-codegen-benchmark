@@ -11,7 +11,7 @@ func000000000000002b:
 	vadd.vv	v9, v9, v10
 	lui	a0, 2575
 	vadd.vv	v10, v9, v8
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	slli	a0, a0, 13

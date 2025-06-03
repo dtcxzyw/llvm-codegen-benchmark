@@ -11,7 +11,7 @@ func000000000000000a:
 	vsub.vv	v8, v8, v10
 	lui	a0, 2
 	vsrl.vi	v8, v8, 5
-	addiw	a0, a0, 1890
+	addi	a0, a0, 1890
 	vminu.vx	v8, v8, a0
 	ret
 

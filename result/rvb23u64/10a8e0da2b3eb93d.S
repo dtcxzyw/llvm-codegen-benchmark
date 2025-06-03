@@ -3,7 +3,7 @@ func0000000000000094:
 	lui	a4, 24
 	addw	a1, a1, a2
 	negw	a2, a3
-	addiw	a4, a4, -1103
+	addi	a4, a4, -1103
 	max	a2, a3, a2
 	sltu	a2, a2, a4
 	czero.eqz	a1, a1, a2

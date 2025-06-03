@@ -119,7 +119,7 @@ func00000000000000a4:
 	lui	a0, 1
 	vadd.vi	v10, v10, -1
 	vand.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -139,7 +139,7 @@ func0000000000000024:
 	lui	a0, 1
 	vadd.vi	v10, v10, -1
 	vand.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -159,7 +159,7 @@ func0000000000000074:
 	lui	a0, 1
 	vadd.vi	v10, v10, -1
 	vand.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -169,7 +169,7 @@ func00000000000000b4:
 	lui	a0, 1
 	vadd.vi	v10, v10, -1
 	vand.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

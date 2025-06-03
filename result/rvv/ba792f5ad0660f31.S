@@ -23,7 +23,7 @@ func0000000000000008:
 	lui	a0, 786432
 	vadd.vi	v8, v8, -1
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -63,7 +63,7 @@ func00000000000002f4:
 	lui	a0, 1
 	vadd.vi	v8, v8, -1
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -74,7 +74,7 @@ func00000000000002a4:
 	lui	a0, 1
 	vadd.vi	v8, v8, -1
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -96,7 +96,7 @@ func00000000000000a4:
 	lui	a0, 1
 	vadd.vi	v8, v8, -1
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -118,7 +118,7 @@ func00000000000000f4:
 	lui	a0, 1
 	vadd.vi	v8, v8, -1
 	vand.vv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

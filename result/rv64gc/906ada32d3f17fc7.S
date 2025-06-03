@@ -11,7 +11,7 @@ func0000000000000088:
 	lui	a2, 8
 	subw	a1, a1, a0
 	addiw	a1, a1, -4
-	addiw	a0, a2, -768
+	addi	a0, a2, -768
 	sltu	a0, a0, a1
 	ret
 

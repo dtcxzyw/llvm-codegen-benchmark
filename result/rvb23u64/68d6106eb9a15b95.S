@@ -52,7 +52,7 @@ func0000000000000004:
 	zext.w	a1, a1
 	mul	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -1383
+	addi	a1, a1, -1383
 	sltu	a0, a0, a1
 	ret
 

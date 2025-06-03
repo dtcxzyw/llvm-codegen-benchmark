@@ -11,9 +11,9 @@ func0000000000000021:
 	andi	a1, a0, 64
 	lui	a0, 8
 	beqz	a1, .LBB1_2
-	addiw	a0, a0, 493
+	addi	a0, a0, 493
 	ret
 .LBB1_2:
-	addiw	a0, a0, 420
+	addi	a0, a0, 420
 	ret
 

@@ -32,7 +32,7 @@ func000000000000000c:
 	lui	a2, 1044464
 	or	a0, a0, a1
 	slliw	a0, a0, 1
-	addiw	a1, a2, -258
+	addi	a1, a2, -258
 	and	a0, a0, a1
 	ret
 

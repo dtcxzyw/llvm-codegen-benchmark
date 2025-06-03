@@ -9,7 +9,7 @@ func0000000000000013:
 
 func0000000000000007:
 	lui	a1, 64
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	beq	a0, a1, .LBB1_2
 	li	a0, 16
 	ret

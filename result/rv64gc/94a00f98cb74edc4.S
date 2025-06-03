@@ -23,13 +23,13 @@ func0000000000000029:
 func0000000000000068:
 	sext.w	a1, a1
 	lui	a2, 244138
-	addiw	a2, a2, 752
+	addi	a2, a2, 752
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
 	lui	a2, 2
-	addiw	a2, a2, 1808
+	addi	a2, a2, 1808
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -37,7 +37,7 @@ func0000000000000068:
 func0000000000000021:
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -1023
+	addi	a2, a2, -1023
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2

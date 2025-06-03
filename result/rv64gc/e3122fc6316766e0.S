@@ -31,7 +31,7 @@ func0000000000000005:
 	bnez	a3, .LBB3_2
 	slliw	a0, a2, 24
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 .LBB3_2:
 	ret

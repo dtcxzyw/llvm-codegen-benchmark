@@ -16,7 +16,7 @@ func0000000000000068:
 	srai	a0, a0, 3
 	lui	a2, 699051
 	slli	a1, a1, 32
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	srli	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3

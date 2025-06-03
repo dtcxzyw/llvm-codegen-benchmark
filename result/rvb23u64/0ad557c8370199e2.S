@@ -1,7 +1,7 @@
 func0000000000000003:
 	slli	a1, a1, 4
 	lui	a2, 16
-	addiw	a2, a2, -1664
+	addi	a2, a2, -1664
 	and	a1, a1, a2
 	srliw	a0, a0, 8
 	or	a0, a0, a1
@@ -17,7 +17,7 @@ func000000000000000d:
 func000000000000000c:
 	slli	a1, a1, 3
 	lui	a2, 16
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	srliw	a0, a0, 3
 	or	a0, a0, a1
@@ -41,7 +41,7 @@ func0000000000000000:
 func0000000000000009:
 	slli	a1, a1, 2
 	lui	a2, 262144
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	srliw	a0, a0, 27
 	or	a0, a0, a1

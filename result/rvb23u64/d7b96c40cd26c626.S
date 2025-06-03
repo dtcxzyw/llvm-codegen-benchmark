@@ -52,7 +52,7 @@ func00000000000000c0:
 	srliw	a1, a1, 9
 	lui	a2, 244141
 	slli	a1, a1, 9
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	add	a0, a0, a1
 	ret

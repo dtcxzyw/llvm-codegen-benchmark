@@ -38,7 +38,7 @@ func0000000000000008:
 	subw	a1, a1, a0
 	lui	a0, 30
 	addiw	a1, a1, 1000
-	addiw	a0, a0, -1880
+	addi	a0, a0, -1880
 	sltu	a0, a0, a1
 	ret
 

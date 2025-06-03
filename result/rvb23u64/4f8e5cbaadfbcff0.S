@@ -55,7 +55,7 @@ func0000000000000084:
 	zext.b	a1, a1
 	lui	a2, 16
 	sltiu	a1, a1, 31
-	addiw	a2, a2, -46
+	addi	a2, a2, -46
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

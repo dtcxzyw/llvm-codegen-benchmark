@@ -2,8 +2,8 @@ func0000000000000000:
 	addiw	a0, a0, 150
 	lui	a1, 111848
 	lui	a2, 559241
-	addiw	a1, a1, 437
-	addiw	a2, a2, -1911
+	addi	a1, a1, 437
+	addi	a2, a2, -1911
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 32
@@ -35,7 +35,7 @@ func0000000000000002:
 func0000000000000004:
 	addiw	a0, a0, 30
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a2, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2

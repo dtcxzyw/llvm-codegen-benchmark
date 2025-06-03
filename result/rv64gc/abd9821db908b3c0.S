@@ -8,7 +8,7 @@ func000000000000005d:
 	sraiw	a1, a2, 31
 	lui	a3, 349525
 	xor	a2, a2, a1
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	subw	a2, a2, a1
 	srliw	a1, a2, 1
 	or	a1, a1, a2
@@ -24,7 +24,7 @@ func000000000000005d:
 	srli	a2, a1, 1
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2

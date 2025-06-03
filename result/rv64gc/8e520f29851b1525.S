@@ -28,7 +28,7 @@ func000000000000002a:
 	bnez	a3, .LBB2_2
 	sext.w	a0, a2
 	lui	a1, 1
-	addiw	a1, a1, -496
+	addi	a1, a1, -496
 	slt	a0, a1, a0
 	lui	a1, 1048575
 	negw	a0, a0

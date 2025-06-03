@@ -51,7 +51,7 @@ func0000000000000029:
 func0000000000000020:
 	sext.w	a2, a2
 	lui	a3, 12
-	addiw	a3, a3, -1152
+	addi	a3, a3, -1152
 	sltu	a2, a3, a2
 	li	a3, 1
 	czero.nez	a3, a3, a2

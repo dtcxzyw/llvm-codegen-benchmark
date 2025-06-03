@@ -6,11 +6,11 @@ func0000000000000003:
 
 func0000000000000000:
 	lui	a0, 6
-	addiw	a0, a0, 1604
+	addi	a0, a0, 1604
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 7
-	addiw	a0, a0, 1604
+	addi	a0, a0, 1604
 	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v8, v10
 	li	a0, 32

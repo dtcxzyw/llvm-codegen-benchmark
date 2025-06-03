@@ -12,7 +12,7 @@ func0000000000000003:
 	lui	a3, 1048560
 	and	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1
@@ -32,7 +32,7 @@ func000000000000000d:
 	lui	a4, 349525
 	or	a1, a1, a2
 	addi	a2, a3, -1366
-	addiw	a3, a4, 1365
+	addi	a3, a4, 1365
 	slli	a4, a2, 32
 	add.uw	a2, a2, a4
 	slli	a4, a3, 32
@@ -48,7 +48,7 @@ func0000000000000009:
 	lui	a4, 349525
 	or	a1, a1, a2
 	addi	a2, a3, -1366
-	addiw	a3, a4, 1365
+	addi	a3, a4, 1365
 	slli	a4, a2, 32
 	add.uw	a2, a2, a4
 	slli	a4, a3, 32

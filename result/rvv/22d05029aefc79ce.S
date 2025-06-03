@@ -10,7 +10,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 7
 	lui	a0, 65536
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vand.vx	v8, v8, a0
 	ret
 

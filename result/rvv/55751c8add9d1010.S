@@ -41,7 +41,7 @@ func0000000000000018:
 	vmsltu.vx	v0, v10, a0
 	vmv.v.x	v10, a0
 	lui	a0, 1
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

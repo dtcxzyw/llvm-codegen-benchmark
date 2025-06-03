@@ -29,7 +29,7 @@ func000000000000000a:
 	vfcvt.rtz.x.f.v	v10, v10
 	lui	a0, 2575
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -39,7 +39,7 @@ func000000000000002a:
 	vfcvt.rtz.x.f.v	v10, v10
 	lui	a0, 244
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgt.vx	v0, v8, a0
 	ret
 

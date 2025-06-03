@@ -19,7 +19,7 @@ func0000000000000006:
 func000000000000000a:
 	sext.w	a3, a0
 	lui	a4, 8
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	slt	a3, a4, a3
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2

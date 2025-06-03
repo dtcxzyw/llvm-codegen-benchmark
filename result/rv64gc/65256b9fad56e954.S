@@ -11,11 +11,11 @@ func00000000000001e1:
 func0000000000000061:
 	lui	a2, 1
 	beqz	a0, .LBB1_2
-	addiw	a0, a2, -2024
+	addi	a0, a2, -2024
 	add	a0, a0, a1
 	ret
 .LBB1_2:
-	addiw	a0, a2, -2032
+	addi	a0, a2, -2032
 	add	a0, a0, a1
 	ret
 

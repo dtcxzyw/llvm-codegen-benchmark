@@ -30,7 +30,7 @@ func0000000000000006:
 func0000000000000004:
 	srli	a2, a2, 1
 	lui	a3, 1
-	addiw	a3, a3, -895
+	addi	a3, a3, -895
 	sltu	a1, a1, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

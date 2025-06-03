@@ -2,13 +2,13 @@ func0000000000000042:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 460583
-	addiw	a3, a3, 1138
+	addi	a3, a3, 1138
 	xor	a2, a2, a3
 	lui	a3, 1044480
-	addiw	a3, a3, 256
+	addi	a3, a3, 256
 	czero.eqz	a2, a3, a2
 	lui	a3, 271140
-	addiw	a3, a3, 304
+	addi	a3, a3, 304
 	add	a2, a2, a3
 	xor	a1, a1, a2
 	seqz	a1, a1

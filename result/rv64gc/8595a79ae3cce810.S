@@ -9,7 +9,7 @@ func0000000000000009:
 	srli	a1, a1, 32
 	lui	a2, 1048320
 	snez	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a1, a1, 20
 	and	a0, a0, a2
 	or	a0, a0, a1

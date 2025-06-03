@@ -22,7 +22,7 @@ func0000000000000002:
 	srli	a0, a0, 32
 	beqz	a3, .LBB2_2
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 .LBB2_2:
 	add	a0, a0, a1
 	ret

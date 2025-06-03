@@ -4,7 +4,7 @@ func0000000000000026:
 	sext.w	a0, a0
 	bnez	a1, .LBB0_2
 	lui	a1, 7
-	addiw	a1, a1, 1328
+	addi	a1, a1, 1328
 .LBB0_2:
 	slt	a0, a1, a0
 	ret

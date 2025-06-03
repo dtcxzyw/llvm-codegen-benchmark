@@ -134,7 +134,7 @@ func0000000000000821:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	lui	a2, 234243
-	addiw	a2, a2, 1368
+	addi	a2, a2, 1368
 	seqz	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -196,7 +196,7 @@ func0000000000000f18:
 func00000000000000a1:
 	sext.w	a0, a0
 	lui	a3, 1
-	addiw	a3, a3, 192
+	addi	a3, a3, 192
 	add	a2, a2, a3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1

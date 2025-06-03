@@ -48,7 +48,7 @@ func000000000000000c:
 	sext.w	a1, a1
 	beqz	a1, .LBB6_2
 	lui	a1, 261632
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 .LBB6_2:
 	ret

@@ -28,10 +28,10 @@ func0000000000000002:
 	addi	a1, a1, 2047
 	lui	a2, 512
 	addi	a1, a1, 1
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	and	a1, a1, a2
 	lui	a2, 524288
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func0000000000000006:
 	xori	a1, a1, 4
 	or	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, -1000
+	addi	a1, a1, -1000
 	or	a0, a0, a1
 	ret
 

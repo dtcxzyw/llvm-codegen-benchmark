@@ -30,7 +30,7 @@ func000000000000000c:
 func0000000000000004:
 	zext.h	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

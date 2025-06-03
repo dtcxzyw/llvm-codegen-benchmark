@@ -139,7 +139,7 @@ func000000000000102a:
 	srli	a1, a1, 1
 	lui	a2, 14
 	sext.w	a1, a1
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	slti	a1, a1, 2
 	xor	a0, a0, a2
 	seqz	a0, a0

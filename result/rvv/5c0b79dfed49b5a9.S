@@ -14,7 +14,7 @@ func000000000000000c:
 
 func0000000000000004:
 	lui	a0, 4
-	addiw	a0, a0, -385
+	addi	a0, a0, -385
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
 	vmand.mm	v8, v0, v8

@@ -11,7 +11,7 @@ func000000000000010c:
 func0000000000000101:
 	sext.w	a0, a0
 	lui	a2, 65536
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

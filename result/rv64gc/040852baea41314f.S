@@ -79,7 +79,7 @@ func0000000000000008:
 	sext.w	a0, a0
 	or	a1, a1, a2
 	lui	a2, 122
-	addiw	a2, a2, 287
+	addi	a2, a2, 287
 	sltu	a0, a2, a0
 	slli	a0, a0, 16
 	or	a0, a0, a1

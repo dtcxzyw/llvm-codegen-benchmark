@@ -17,7 +17,7 @@ func0000000000000010:
 
 func0000000000000015:
 	lui	a0, 1048572
-	addiw	a0, a0, 1301
+	addi	a0, a0, 1301
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vx	v8, a0, v10
 	li	a0, 1024

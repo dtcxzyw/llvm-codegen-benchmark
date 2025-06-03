@@ -41,7 +41,7 @@ func0000000000000904:
 func0000000000000889:
 	sub	a2, a0, a1
 	lui	a3, 732
-	addiw	a3, a3, 1729
+	addi	a3, a3, 1729
 	sltu	a2, a2, a3
 	sltu	a0, a0, a1
 	andn	a0, a2, a0

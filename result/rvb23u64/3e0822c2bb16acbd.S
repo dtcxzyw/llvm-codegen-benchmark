@@ -2,7 +2,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	srai	a1, a1, 4
 	lui	a2, 748983
-	addiw	a2, a2, -585
+	addi	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3
 	li	a3, 1
@@ -23,7 +23,7 @@ func0000000000000000:
 	srai	a1, a1, 18
 	add	a1, a1, a2
 	lui	a2, 274878
-	addiw	a2, a2, -381
+	addi	a2, a2, -381
 	slli	a2, a2, 13
 	addi	a2, a2, -1290
 	czero.nez	a1, a1, a0

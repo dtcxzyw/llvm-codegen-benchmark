@@ -6,7 +6,7 @@ func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsrl.vi	v12, v12, 18
 	vnmsub.vx	v12, a0, v10
 	li	a0, 1000
@@ -21,7 +21,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsrl.vi	v12, v12, 18
 	vnmsub.vx	v12, a0, v10
 	li	a0, 1000
@@ -30,7 +30,7 @@ func000000000000000c:
 
 func000000000000000f:
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 10
@@ -46,7 +46,7 @@ func000000000000000f:
 	.quad	1844674407370955161
 func000000000000000a:
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI3_0)
@@ -61,7 +61,7 @@ func000000000000000a:
 
 func000000000000000e:
 	lui	a0, 789516
-	addiw	a0, a0, 193
+	addi	a0, a0, 193
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 170

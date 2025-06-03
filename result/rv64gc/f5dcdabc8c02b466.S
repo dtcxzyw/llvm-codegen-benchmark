@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	xor	a1, a1, a0
 	seqz	a1, a1
@@ -10,7 +10,7 @@ func0000000000000002:
 
 func0000000000000003:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a2, a0, a1
 	li	a3, 78
 	bne	a2, a3, .LBB1_2

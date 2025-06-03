@@ -78,7 +78,7 @@ func0000000000000002:
 func000000000000001f:
 	slli	a0, a0, 2
 	lui	a1, 5
-	addiw	a1, a1, 508
+	addi	a1, a1, 508
 	add	a0, a0, a1
 	ret
 

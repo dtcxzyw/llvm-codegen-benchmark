@@ -22,7 +22,7 @@ func0000000000000004:
 	bseti	a0, zero, 63
 	vandn.vx	v8, v8, a0
 	lui	a0, 122
-	addiw	a0, a0, 288
+	addi	a0, a0, 288
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -6,7 +6,7 @@ func000000000000000f:
 	and	a2, a2, a3
 	and	a1, a1, a3
 	lui	a3, 61681
-	addiw	a3, a3, -241
+	addi	a3, a3, -241
 	add	a1, a1, a2
 	slli	a2, a3, 32
 	add	a0, a0, a1

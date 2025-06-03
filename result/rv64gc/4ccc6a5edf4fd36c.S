@@ -1,7 +1,7 @@
 func0000000000000028:
 	sext.w	a0, a0
 	lui	a2, 2
-	addiw	a2, a2, -2046
+	addi	a2, a2, -2046
 	sltiu	a0, a0, 32
 	and	a1, a1, a2
 	seqz	a1, a1
@@ -29,11 +29,11 @@ func0000000000000021:
 	or	a0, a0, a1
 	bnez	a0, .LBB2_2
 	lui	a0, 262172
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	ret
 .LBB2_2:
 	lui	a0, 262144
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	ret
 
 func000000000000018c:

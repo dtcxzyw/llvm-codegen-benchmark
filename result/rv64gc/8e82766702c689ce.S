@@ -4,7 +4,7 @@ func000000000000000f:
 	li	a1, 5
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, 193
 	ret
@@ -12,7 +12,7 @@ func000000000000000f:
 	li	a1, 7
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, 193
 	ret

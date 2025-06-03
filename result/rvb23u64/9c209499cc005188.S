@@ -13,7 +13,7 @@ func0000000000000009:
 
 func0000000000000063:
 	lui	a3, 131072
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a1, a1, a2

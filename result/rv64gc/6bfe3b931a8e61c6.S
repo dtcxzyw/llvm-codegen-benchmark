@@ -2,7 +2,7 @@ func0000000000000010:
 	slli	a2, a2, 48
 	lui	a3, 14
 	srli	a2, a2, 48
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	beq	a2, a3, .LBB0_2
 	li	a2, 16
 	add	a0, a0, a1
@@ -18,7 +18,7 @@ func000000000000001f:
 	slli	a2, a2, 48
 	lui	a3, 14
 	srli	a2, a2, 48
-	addiw	a3, a3, -1807
+	addi	a3, a3, -1807
 	beq	a2, a3, .LBB1_2
 	li	a2, 16
 	add	a0, a0, a1
@@ -56,13 +56,13 @@ func000000000000008c:
 	li	a4, 8
 	lui	a2, 2
 	bltu	a4, a3, .LBB4_2
-	addiw	a2, a2, -1304
+	addi	a2, a2, -1304
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 .LBB4_2:
-	addiw	a2, a2, -1274
+	addi	a2, a2, -1274
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	add	a0, a0, a2

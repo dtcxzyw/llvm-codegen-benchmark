@@ -24,7 +24,7 @@ func00000000000000b4:
 	vsub.vv	v12, v8, v10
 	vmsltu.vv	v0, v8, v10
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v12, v12, a0, v0.t
 	vmv.v.v	v8, v12
 	ret

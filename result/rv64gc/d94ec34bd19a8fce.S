@@ -4,7 +4,7 @@ func0000000000000032:
 	srai	a1, a1, 3
 	lui	a2, 838861
 	srai	a0, a0, 3
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a3, a3, a2
 	mul	a2, a1, a3
@@ -33,7 +33,7 @@ func0000000000000036:
 	srai	a1, a1, 3
 	lui	a2, 699051
 	srai	a0, a0, 3
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a3, a3, a2
 	mul	a2, a1, a3

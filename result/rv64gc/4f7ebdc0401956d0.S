@@ -61,10 +61,10 @@ func0000000000000001:
 func000000000000006a:
 	sext.w	a0, a0
 	lui	a2, 81
-	addiw	a2, a2, 1556
+	addi	a2, a2, 1556
 	bge	a2, a0, .LBB6_2
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	ret
 .LBB6_2:
 	slli	a0, a1, 1

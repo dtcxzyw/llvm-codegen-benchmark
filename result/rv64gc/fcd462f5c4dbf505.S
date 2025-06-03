@@ -16,7 +16,7 @@ func0000000000000024:
 	add	a1, a1, a3
 	addi	a1, a1, -1
 	and	a0, a0, a1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	ret
 

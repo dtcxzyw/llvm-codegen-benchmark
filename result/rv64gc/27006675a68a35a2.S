@@ -3,7 +3,7 @@ func000000000000001c:
 	srli	a1, a1, 47
 	add	a0, a0, a1
 	lui	a1, 7
-	addiw	a1, a1, 966
+	addi	a1, a1, 966
 	add	a0, a0, a1
 	ret
 

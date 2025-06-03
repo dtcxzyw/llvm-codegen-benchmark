@@ -10,7 +10,7 @@ func0000000000000001:
 	li	a1, 2
 	czero.nez	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -6
+	addi	a1, a1, -6
 	add	a0, a0, a1
 	ret
 

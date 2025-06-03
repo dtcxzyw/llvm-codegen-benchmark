@@ -31,7 +31,7 @@ func000000000000000a:
 	slli	a1, a1, 48
 	lui	a2, 8192
 	srli	a1, a1, 56
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	czero.nez	a0, a1, a0
 	ret

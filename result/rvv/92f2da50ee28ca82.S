@@ -48,7 +48,7 @@ func000000000000000f:
 	vsra.vi	v8, v8, 5
 	vsrl.vx	v12, v10, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	vsra.vi	v10, v10, 4
 	vadd.vv	v10, v10, v12
 	vsll.vx	v10, v10, a0

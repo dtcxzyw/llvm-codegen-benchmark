@@ -33,7 +33,7 @@ func0000000000000190:
 
 func0000000000000180:
 	lui	a3, 1
-	addiw	a3, a3, -2024
+	addi	a3, a3, -2024
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	sh3add.uw	a0, a0, a1

@@ -10,7 +10,7 @@ func000000000000004a:
 	lui	a2, 4096
 	addw	a1, a1, a2
 	lui	a2, 8192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a2, a1, .LBB1_2
 	li	a0, 4
 .LBB1_2:

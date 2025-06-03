@@ -104,7 +104,7 @@ func000000000000028c:
 	srliw	a0, a0, 6
 	lui	a2, 15
 	sltiu	a0, a0, 961
-	addiw	a2, a2, -1217
+	addi	a2, a2, -1217
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

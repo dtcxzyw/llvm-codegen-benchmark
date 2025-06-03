@@ -109,7 +109,7 @@ func0000000000000198:
 	slli	a2, a2, 8
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -24
+	addi	a1, a1, -24
 	sltu	a0, a1, a0
 	ret
 
@@ -137,7 +137,7 @@ func00000000000003f8:
 	slli	a2, a2, 18
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -561
+	addi	a1, a1, -561
 	sltu	a0, a1, a0
 	ret
 
@@ -147,7 +147,7 @@ func0000000000000161:
 	lui	a1, 472728
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -1435
+	addi	a1, a1, -1435
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -4,7 +4,7 @@ func0000000000000004:
 	vmv.v.i	v10, 0
 	lui	a0, 1048063
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, 1535
+	addi	a0, a0, 1535
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -15,7 +15,7 @@ func0000000000000005:
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	lui	a0, 128
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmerge.vim	v10, v10, 1, v0
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10

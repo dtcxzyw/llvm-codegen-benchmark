@@ -15,7 +15,7 @@ func0000000000000088:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v10, v10, 2, v0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -100,7 +100,7 @@ func000000000000000c:
 func000000000000003b:
 	sub	a0, a0, a1
 	lui	a1, 32
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	add	a0, a0, a1
 	ret
 

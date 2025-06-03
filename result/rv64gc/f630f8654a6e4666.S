@@ -9,7 +9,7 @@ func0000000000000004:
 	srli	a0, a0, 32
 	lui	a2, 2
 	seqz	a0, a0
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	addi	a0, a0, -1
 	and	a1, a1, a2
 	and	a0, a0, a1
@@ -38,7 +38,7 @@ func000000000000000a:
 
 func0000000000000018:
 	lui	a2, 79063
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	bgeu	a2, a0, .LBB5_2
 	lui	a0, 32768
 	ret

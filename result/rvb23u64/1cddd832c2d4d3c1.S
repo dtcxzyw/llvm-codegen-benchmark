@@ -20,7 +20,7 @@ func0000000000000910:
 	addiw	a1, a1, -58
 	lui	a2, 2
 	sltiu	a1, a1, -10
-	addiw	a2, a2, -1639
+	addi	a2, a2, -1639
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -30,7 +30,7 @@ func0000000000000908:
 	addiw	a1, a1, -59
 	lui	a2, 16
 	sltiu	a1, a1, -3
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

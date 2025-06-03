@@ -17,7 +17,7 @@ func0000000000000778:
 func00000000000007f8:
 	sext.w	a1, a1
 	lui	a2, 49
-	addiw	a2, a2, 196
+	addi	a2, a2, 196
 	add	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a1

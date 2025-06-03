@@ -2,14 +2,14 @@ func0000000000000001:
 	lui	a3, 256
 	beq	a1, a3, .LBB0_2
 	lui	a0, 1047808
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	and	a0, a0, a2
 .LBB0_2:
 	ret
 
 func0000000000000006:
 	lui	a3, 1048575
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	blt	a1, a3, .LBB1_2
 	slli	a0, a2, 52
 	srli	a0, a0, 52

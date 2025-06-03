@@ -1,11 +1,10 @@
 func0000000000000030:
 	li	a0, 127
-	li	a1, 1
+	bseti	a1, zero, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vadd.vx	v8, v8, a0
 	li	a0, -128
-	slli	a1, a1, 36
 	addi	a1, a1, -128
 	vand.vx	v10, v10, a1
 	vand.vx	v8, v8, a0

@@ -25,7 +25,7 @@ func000000000000001d:
 	srli	a2, a2, 47
 	mul	a2, a2, a3
 	lui	a3, 1048544
-	addiw	a3, a3, 30
+	addi	a3, a3, 30
 	subw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

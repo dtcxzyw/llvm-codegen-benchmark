@@ -28,7 +28,7 @@ func00000000000001e6:
 
 func00000000000001e4:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a0, a0, a3
 	bltu	a0, a1, .LBB2_2

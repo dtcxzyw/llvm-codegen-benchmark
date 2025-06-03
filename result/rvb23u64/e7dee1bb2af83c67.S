@@ -71,7 +71,7 @@ func0000000000000084:
 	zext.b	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1461
+	addi	a2, a2, -1461
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 251
 	or	a0, a0, a1
@@ -100,7 +100,7 @@ func000000000000008c:
 	zext.b	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -68
+	addi	a2, a2, -68
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1

@@ -5,7 +5,7 @@ func0000000000000007:
 	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmv.v.x	v12, a0
-	addiw	a0, a0, 4
+	addi	a0, a0, 4
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v8, v12, v8
 	lui	a0, 4

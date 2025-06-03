@@ -1,7 +1,7 @@
 func0000000000000009:
 	mulw	a0, a0, a1
 	lui	a1, 67109
-	addiw	a1, a1, -557
+	addi	a1, a1, -557
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 40
@@ -24,7 +24,7 @@ func0000000000000000:
 func0000000000000001:
 	mulw	a0, a0, a1
 	lui	a1, 274878
-	addiw	a1, a1, -381
+	addi	a1, a1, -381
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 44

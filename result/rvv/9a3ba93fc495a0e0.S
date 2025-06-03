@@ -10,7 +10,7 @@ func0000000000000021:
 	vor.vv	v10, v10, v12
 	vmseq.vi	v0, v8, 0
 	lui	a0, 1
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

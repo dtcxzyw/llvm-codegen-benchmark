@@ -89,7 +89,7 @@ func0000000000000cc6:
 func0000000000000546:
 	sext.w	a1, a0
 	lui	a2, 1
-	addiw	a2, a2, -496
+	addi	a2, a2, -496
 	slt	a1, a2, a1
 	lui	a2, 1048575
 	addi	a2, a2, 496

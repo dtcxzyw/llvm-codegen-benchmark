@@ -9,7 +9,7 @@ func000000000000000c:
 	andi	a2, a2, -1025
 	lui	a3, 1
 	sext.w	a2, a2
-	addiw	a3, a3, -2032
+	addi	a3, a3, -2032
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1

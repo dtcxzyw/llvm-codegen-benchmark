@@ -4,7 +4,7 @@ func0000000000000002:
 	neg	a1, a1
 	and	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -26,14 +26,14 @@ func0000000000000000:
 	lui	a1, 277496
 	bge	a1, a0, .LBB2_3
 	lui	a1, 277512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bge	a0, a1, .LBB2_4
 .LBB2_2:
 	ret
 .LBB2_3:
 	lui	a0, 277496
 	lui	a1, 277512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	blt	a0, a1, .LBB2_2
 .LBB2_4:
 	mv	a0, a1

@@ -13,8 +13,7 @@ func000000000000001b:
 	ret
 
 func000000000000001f:
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a2
@@ -29,8 +28,7 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -32
 	and	a2, a2, a3
 	add	a0, a0, a2

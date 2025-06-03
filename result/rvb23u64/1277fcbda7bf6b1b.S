@@ -8,7 +8,7 @@ func0000000000000004:
 	srai	a2, a2, 18
 	add	a2, a2, a3
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	sltu	a0, a1, a0

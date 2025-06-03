@@ -3,7 +3,7 @@ func0000000000000007:
 	czero.nez	a0, a0, a2
 	lui	a2, 25
 	or	a0, a0, a1
-	addiw	a1, a2, 543
+	addi	a1, a2, 543
 	mul	a0, a0, a1
 	ret
 

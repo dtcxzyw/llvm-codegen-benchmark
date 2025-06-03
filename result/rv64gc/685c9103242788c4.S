@@ -3,7 +3,7 @@ func00000000000003e4:
 	srliw	a3, a2, 2
 	lui	a4, 349525
 	slli	a3, a3, 1
-	addiw	a4, a4, 1365
+	addi	a4, a4, 1365
 	or	a2, a2, a3
 	srliw	a3, a2, 3
 	slli	a3, a3, 1
@@ -21,7 +21,7 @@ func00000000000003e4:
 	srli	a3, a2, 1
 	and	a3, a3, a4
 	lui	a4, 209715
-	addiw	a4, a4, 819
+	addi	a4, a4, 819
 	andi	a2, a2, -2
 	sub	a2, a2, a3
 	and	a3, a2, a4

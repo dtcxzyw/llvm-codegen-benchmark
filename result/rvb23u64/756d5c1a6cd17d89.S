@@ -43,7 +43,7 @@ func00000000000000aa:
 	lui	a2, 176
 	lui	a3, 1048400
 	addi	a2, a2, -1428
-	addiw	a3, a3, 1427
+	addi	a3, a3, 1427
 	addw	a2, a2, a1
 	slt	a1, a3, a1
 	czero.eqz	a2, a2, a1

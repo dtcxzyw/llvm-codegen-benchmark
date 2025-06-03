@@ -26,7 +26,7 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v8, v8, a0
 	lui	a0, 1036757
-	addiw	a0, a0, 1811
+	addi	a0, a0, 1811
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -35,7 +35,7 @@ func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v8, v8, a0
 	lui	a0, 45426
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 

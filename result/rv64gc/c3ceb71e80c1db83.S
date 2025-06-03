@@ -22,7 +22,7 @@ func0000000000000006:
 func0000000000000005:
 	bnez	a2, .LBB3_2
 	lui	a1, 930062
-	addiw	a1, a1, -1681
+	addi	a1, a1, -1681
 	slli	a1, a1, 7
 .LBB3_2:
 	add	a0, a0, a1

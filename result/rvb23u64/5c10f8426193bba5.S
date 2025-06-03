@@ -8,8 +8,7 @@ func0000000000000004:
 
 func0000000000000018:
 	sext.w	a1, a1
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	slti	a1, a1, 1

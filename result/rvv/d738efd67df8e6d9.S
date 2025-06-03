@@ -7,7 +7,7 @@ func0000000000000404:
 	vwaddu.wv	v8, v8, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 1664
+	addi	a0, a0, 1664
 	vmsltu.vx	v0, v8, a0
 	ret
 

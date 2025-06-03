@@ -9,14 +9,14 @@ func0000000000000501:
 func0000000000000708:
 	lui	a1, 32
 	lui	a2, 1048544
-	addiw	a1, a1, -31
-	addiw	a2, a2, 30
+	addi	a1, a1, -31
+	addi	a2, a2, 30
 	sltu	a1, a1, a0
 	neg	a1, a1
 	and	a1, a1, a2
 	lui	a2, 16
 	add	a0, a0, a1
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a0, a2, a0
 	ret
 

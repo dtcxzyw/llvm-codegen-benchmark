@@ -47,7 +47,7 @@ func0000000000000024:
 	vor.vv	v8, v8, v10
 	lui	a0, 524288
 	vadd.vx	v8, v8, a0
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

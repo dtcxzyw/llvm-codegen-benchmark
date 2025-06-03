@@ -86,7 +86,7 @@ func000000000000004a:
 func0000000000000018:
 	sext.w	a2, a0
 	lui	a0, 1024
-	addiw	a3, a0, 127
+	addi	a3, a0, 127
 	mv	a0, a1
 	bgeu	a3, a2, .LBB11_2
 	li	a0, 127

@@ -75,7 +75,7 @@ func0000000000000288:
 	sext.w	a1, a0
 	lui	a2, 520192
 	srliw	a0, a0, 24
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1

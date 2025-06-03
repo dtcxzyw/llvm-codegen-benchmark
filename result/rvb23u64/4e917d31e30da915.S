@@ -21,7 +21,7 @@ func000000000000000e:
 func0000000000000006:
 	slli	a0, a0, 56
 	lui	a1, 30667
-	addiw	a1, a1, 1329
+	addi	a1, a1, 1329
 	slli	a1, a1, 8
 	mulhu	a0, a0, a1
 	srli	a0, a0, 27

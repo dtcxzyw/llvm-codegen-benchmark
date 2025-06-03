@@ -5,7 +5,7 @@ func00000000000000a4:
 	srai	a0, a0, 63
 	ld	a2, %lo(.LCPI0_0)(a2)
 	lui	a3, 524464
-	addiw	a3, a3, -1733
+	addi	a3, a3, -1733
 	add	a0, a0, a3
 	mulh	a1, a1, a2
 	srli	a2, a1, 63

@@ -86,7 +86,7 @@ func000000000000003b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
 	li	a0, 32
 	vsll.vx	v10, v10, a0

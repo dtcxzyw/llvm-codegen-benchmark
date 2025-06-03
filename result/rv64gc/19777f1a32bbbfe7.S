@@ -19,7 +19,7 @@ func00000000000000e4:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	slli	a2, a2, 16
 	mulhu	a1, a1, a2
 	sext.w	a1, a1

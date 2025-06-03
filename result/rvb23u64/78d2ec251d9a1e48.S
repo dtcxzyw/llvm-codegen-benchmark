@@ -25,7 +25,7 @@ func0000000000000c21:
 
 func0000000000000c74:
 	lui	a2, 32
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	and	a1, a1, a2
 	snez	a1, a1
 	addw	a0, a0, a1
@@ -34,7 +34,7 @@ func0000000000000c74:
 
 func0000000000000c78:
 	lui	a2, 32
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	and	a1, a1, a2
 	snez	a1, a1
 	addw	a0, a0, a1
@@ -73,7 +73,7 @@ func0000000000000a2a:
 func0000000000000c01:
 	sext.w	a0, a0
 	lui	a2, 4
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	and	a1, a1, a2
 	addi	a1, a1, -32
 	seqz	a1, a1

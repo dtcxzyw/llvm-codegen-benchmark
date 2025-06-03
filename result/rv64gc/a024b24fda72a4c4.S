@@ -2,7 +2,7 @@ func0000000000000001:
 	slli	a1, a1, 32
 	lui	a2, 15
 	srli	a1, a1, 32
-	addiw	a2, a2, 31
+	addi	a2, a2, 31
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -46,7 +46,7 @@ func0000000000000018:
 	slli	a1, a1, 32
 	lui	a2, 512
 	srli	a1, a1, 32
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

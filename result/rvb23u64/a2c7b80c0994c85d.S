@@ -22,7 +22,7 @@ func0000000000000021:
 	zext.h	a2, a2
 	lui	a3, 20480
 	binvi	a2, a2, 2
-	addiw	a3, a3, 1280
+	addi	a3, a3, 1280
 	binvi	a2, a2, 13
 	xor	a1, a1, a3
 	or	a1, a1, a2

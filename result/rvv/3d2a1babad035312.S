@@ -45,7 +45,7 @@ func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1
-	addiw	a0, a0, -1097
+	addi	a0, a0, -1097
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
@@ -54,7 +54,7 @@ func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1
-	addiw	a0, a0, -1096
+	addi	a0, a0, -1096
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0
 	ret
@@ -82,7 +82,7 @@ func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1
-	addiw	a0, a0, 903
+	addi	a0, a0, 903
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0
 	ret
@@ -91,7 +91,7 @@ func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1221
-	addiw	a0, a0, -1216
+	addi	a0, a0, -1216
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret

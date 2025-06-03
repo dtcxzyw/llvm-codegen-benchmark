@@ -7,10 +7,10 @@ func0000000000000046:
 
 func0000000000000026:
 	lui	a2, 16
-	addiw	a2, a2, 21
+	addi	a2, a2, 21
 	max	a1, a1, a2
 	lui	a2, 1048560
-	addiw	a2, a2, -127
+	addi	a2, a2, -127
 	add	a1, a1, a2
 	slt	a0, a0, a1
 	ret

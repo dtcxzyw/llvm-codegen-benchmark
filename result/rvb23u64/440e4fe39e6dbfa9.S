@@ -19,7 +19,7 @@ func00000000000000a4:
 	addi	a1, a1, 1493
 	addw	a0, a0, a1
 	lui	a1, 37
-	addiw	a1, a1, -1971
+	addi	a1, a1, -1971
 	sltu	a0, a0, a1
 	ret
 
@@ -29,7 +29,7 @@ func00000000000000a8:
 	add	a0, a0, a1
 	addi	a1, a2, -632
 	addw	a0, a0, a1
-	addiw	a1, a2, -584
+	addi	a1, a2, -584
 	sltu	a0, a0, a1
 	ret
 

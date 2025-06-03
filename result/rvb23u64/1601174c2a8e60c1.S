@@ -72,7 +72,7 @@ func000000000000002a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 64
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	and	a2, a2, a3
 	seqz	a2, a2
 	slt	a0, a1, a0
@@ -242,7 +242,7 @@ func00000000000002a1:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a3, 1
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	sltu	a0, a1, a0
 	and	a2, a2, a3
 	seqz	a1, a2

@@ -12,7 +12,7 @@ func000000000000000c:
 
 func0000000000000018:
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	sltiu	a0, a0, 10
 	xori	a0, a0, 1

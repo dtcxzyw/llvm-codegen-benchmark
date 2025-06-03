@@ -143,12 +143,12 @@ func0000000000000058:
 	sext.w	a0, a0
 	bnez	a1, .LBB12_2
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret
 .LBB12_2:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret
 

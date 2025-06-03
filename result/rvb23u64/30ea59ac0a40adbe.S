@@ -12,10 +12,10 @@ func0000000000000204:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 1048574
-	addiw	a3, a3, 959
+	addi	a3, a3, 959
 	add	a2, a2, a3
 	lui	a3, 4
-	addiw	a3, a3, -1280
+	addi	a3, a3, -1280
 	xor	a1, a1, a3
 	sltiu	a2, a2, 31
 	seqz	a1, a1

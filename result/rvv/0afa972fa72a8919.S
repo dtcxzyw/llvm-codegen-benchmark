@@ -19,7 +19,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0
 	lui	a0, 131072
-	addiw	a0, a0, -5
+	addi	a0, a0, -5
 	vmsne.vx	v0, v8, a0
 	ret
 

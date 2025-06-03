@@ -12,7 +12,7 @@ func0000000000000021:
 	lui	a3, 1016
 	andn	a2, a2, a3
 	lui	a3, 20480
-	addiw	a3, a3, 1280
+	addi	a3, a3, 1280
 	binvi	a1, a1, 2
 	sext.w	a2, a2
 	xor	a2, a2, a3

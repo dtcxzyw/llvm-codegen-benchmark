@@ -10,7 +10,7 @@ func0000000000000021:
 	andi	a1, a1, 1
 	lui	a0, 1
 	addi	a1, a1, -1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	or	a0, a0, a1
 	li	a1, 1
 	bne	a2, a1, .LBB0_4
@@ -123,24 +123,24 @@ func000000000000014a:
 	andi	a1, a1, 1
 	lui	a0, 1
 	bnez	a1, .LBB6_2
-	addiw	a0, a0, -2007
+	addi	a0, a0, -2007
 	li	a3, 6
 	lui	a1, 3
 	blt	a3, a2, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
-	addiw	a0, a0, -1448
+	addi	a0, a0, -1448
 	li	a3, 6
 	lui	a1, 3
 	bge	a3, a2, .LBB6_4
 .LBB6_3:
-	addiw	a0, a1, 1544
+	addi	a0, a1, 1544
 .LBB6_4:
 	li	a3, 8
 	blt	a3, a2, .LBB6_6
 	ret
 .LBB6_6:
-	addiw	a0, a1, 1533
+	addi	a0, a1, 1533
 	ret
 
 func0000000000000024:

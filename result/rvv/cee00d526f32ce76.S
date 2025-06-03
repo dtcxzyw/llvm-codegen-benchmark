@@ -20,13 +20,13 @@ func00000000000000ff:
 	lui	a0, 123738
 	vor.vv	v8, v8, v12
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, 1981
+	addi	a0, a0, 1981
 	vmul.vx	v8, v8, a0
 	ret
 
 func00000000000000f0:
 	lui	a0, 123738
-	addiw	a0, a0, 1981
+	addi	a0, a0, 1981
 	slli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v10, a0

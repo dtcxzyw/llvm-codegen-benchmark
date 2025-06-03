@@ -38,7 +38,7 @@ func000000000000003d:
 	li	a0, 126
 	vadd.vx	v8, v8, a0
 	lui	a0, 16
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vand.vx	v8, v8, a0
 	vadd.vi	v8, v8, -1
 	ret
@@ -47,10 +47,9 @@ func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
 	lui	a0, 1
-	addiw	a0, a0, -34
+	addi	a0, a0, -34
 	vadd.vx	v8, v8, a0
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	vadd.vi	v8, v8, -1

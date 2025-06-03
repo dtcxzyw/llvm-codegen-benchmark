@@ -22,7 +22,7 @@ func000000000000000a:
 func0000000000000000:
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 1212
+	addi	a1, a1, 1212
 	add	a0, a0, a1
 	ret
 

@@ -26,7 +26,7 @@ func000000000000022a:
 	lui	a2, 244
 	addw	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a2, a2, 575
+	addi	a2, a2, 575
 	slt	a2, a2, a0
 	addi	a1, a1, -576
 	czero.eqz	a1, a1, a2

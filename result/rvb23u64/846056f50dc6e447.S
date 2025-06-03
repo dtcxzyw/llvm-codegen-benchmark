@@ -20,7 +20,7 @@ func00000000000000a1:
 func00000000000000a8:
 	sub	a2, a2, a1
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI1_0)
@@ -36,7 +36,7 @@ func00000000000000a8:
 func0000000000000088:
 	sub	a2, a2, a1
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI2_0)
@@ -51,7 +51,7 @@ func0000000000000084:
 	sub	a2, a2, a1
 	lui	a1, 838861
 	srai	a2, a2, 4
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -63,7 +63,7 @@ func0000000000000081:
 	sub	a2, a2, a1
 	lui	a1, 838861
 	srai	a2, a2, 4
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -101,7 +101,7 @@ func000000000000008a:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 4
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -127,7 +127,7 @@ func00000000000000b1:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -140,7 +140,7 @@ func0000000000000086:
 	sub	a2, a2, a1
 	lui	a1, 349525
 	srai	a2, a2, 3
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -152,7 +152,7 @@ func000000000000008c:
 	sub	a2, a2, a1
 	lui	a1, 838861
 	srai	a2, a2, 3
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
@@ -165,7 +165,7 @@ func00000000000000a6:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2

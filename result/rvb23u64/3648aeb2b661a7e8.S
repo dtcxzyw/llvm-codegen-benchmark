@@ -4,7 +4,7 @@ func0000000000000002:
 	sub	a0, a0, a1
 	lui	a1, 699051
 	li	a2, 56
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI0_0)

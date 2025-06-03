@@ -5,7 +5,7 @@ func0000000000000164:
 	lui	a1, 699051
 	vsra.vi	v8, v8, 2
 	vmv.v.x	v12, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
@@ -19,7 +19,7 @@ func0000000000000161:
 	vmv.v.i	v12, 2
 	lui	a0, 699051
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10

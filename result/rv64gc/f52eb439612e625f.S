@@ -19,7 +19,7 @@ func0000000000000074:
 	slli	a1, a1, 48
 	lui	a2, 1
 	srli	a1, a1, 48
-	addiw	a2, a2, -690
+	addi	a2, a2, -690
 	sub	a2, a2, a0
 	sltu	a0, a2, a1
 	ret

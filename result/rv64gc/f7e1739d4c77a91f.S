@@ -30,7 +30,7 @@ func0000000000000000:
 	srli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -13
+	addi	a1, a1, -13
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

@@ -3,7 +3,7 @@ func00000000000000f0:
 	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 8192
 	vand.vi	v10, v8, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vv	v8, v10, v8
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

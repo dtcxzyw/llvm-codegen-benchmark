@@ -13,7 +13,7 @@ func00000000000000f4:
 
 func00000000000000a4:
 	lui	a2, 4
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	addi	a0, a0, -8
 	sltu	a0, a0, a1

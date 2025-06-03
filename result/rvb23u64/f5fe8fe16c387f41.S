@@ -41,7 +41,7 @@ func0000000000000003:
 	lui	a2, 175448
 	addi	a1, a1, 2
 	zext.w	a1, a1
-	addiw	a2, a2, 43
+	addi	a2, a2, 43
 	mul	a1, a1, a2
 	srli	a1, a1, 40
 	addw	a0, a0, a1
@@ -53,7 +53,7 @@ func0000000000000018:
 	lui	a2, 142180
 	addi	a1, a1, 136
 	zext.w	a1, a1
-	addiw	a2, a2, -833
+	addi	a2, a2, -833
 	mul	a1, a1, a2
 	srli	a1, a1, 35
 	addw	a0, a0, a1
@@ -65,7 +65,7 @@ func0000000000000019:
 	lui	a2, 142180
 	addi	a1, a1, 136
 	zext.w	a1, a1
-	addiw	a2, a2, -833
+	addi	a2, a2, -833
 	mul	a1, a1, a2
 	srli	a1, a1, 35
 	addw	a0, a0, a1
@@ -77,7 +77,7 @@ func0000000000000000:
 	sh2add	a1, a1, a1
 	addi	a1, a1, 99
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	addw	a0, a0, a1
@@ -92,7 +92,7 @@ func0000000000000028:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	addw	a0, a0, a1
@@ -107,7 +107,7 @@ func0000000000000078:
 	add	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	addw	a0, a0, a1

@@ -5,7 +5,7 @@ func0000000000000010:
 	vadd.vv	v8, v12, v8
 	vzext.vf2	v12, v10
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	vsrl.vv	v8, v8, v12
 	add	a0, a0, a1

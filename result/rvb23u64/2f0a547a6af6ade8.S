@@ -12,7 +12,7 @@ func0000000000000002:
 func0000000000000003:
 	srli	a1, a1, 8
 	lui	a2, 2048
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	bseti	a2, a2, 39
 	bseti	a2, a2, 55
 	and	a1, a1, a2

@@ -2,8 +2,8 @@ func000000000000001c:
 	mul	a0, a0, a1
 	lui	a1, 522248
 	lui	a2, 2048
-	addiw	a1, a1, -128
-	addiw	a2, a2, 128
+	addi	a1, a1, -128
+	addi	a2, a2, 128
 	add	a0, a0, a1
 	slli	a1, a1, 32
 	bseti	a2, a2, 39

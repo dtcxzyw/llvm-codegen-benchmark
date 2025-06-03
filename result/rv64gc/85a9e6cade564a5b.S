@@ -5,7 +5,7 @@ func00000000000000f4:
 	slli	a1, a1, 8
 	or	a1, a1, a2
 	sext.w	a1, a1
-	addiw	a2, a0, 1132
+	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 1131
 .LBB0_2:
@@ -19,10 +19,10 @@ func00000000000000f8:
 	li	a1, 1560
 	bltu	a1, a0, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	ret
 .LBB1_2:
 	lui	a0, 2048
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	ret
 

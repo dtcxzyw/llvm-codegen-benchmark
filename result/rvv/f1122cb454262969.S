@@ -3,7 +3,7 @@ func0000000000000007:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	vor.vv	v10, v10, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000005:
 	vmulhu.vx	v8, v8, a1
 	lui	a0, 244141
 	vsrl.vi	v8, v8, 11
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v8, a0, v10
 	ret
 

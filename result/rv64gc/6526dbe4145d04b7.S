@@ -12,7 +12,7 @@ func0000000000000000:
 	lui	a1, 16
 	and	a2, a2, a3
 	or	a0, a0, a2
-	addiw	a1, a1, -64
+	addi	a1, a1, -64
 	xor	a0, a0, a1
 	ret
 

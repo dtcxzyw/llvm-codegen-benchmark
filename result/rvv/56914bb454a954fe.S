@@ -2,7 +2,7 @@ func0000000000000042:
 	lui	a0, 171
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v12, v8, 0
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v10, a0
 	vmseq.vi	v10, v8, 0

@@ -14,7 +14,7 @@ func0000000000000002:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	lui	a3, 524288
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

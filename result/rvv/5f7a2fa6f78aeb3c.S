@@ -53,7 +53,7 @@ func0000000000000014:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
@@ -76,7 +76,7 @@ func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
@@ -85,7 +85,7 @@ func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 633
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret

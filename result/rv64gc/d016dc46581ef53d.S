@@ -2,7 +2,7 @@ func0000000000000210:
 	sub	a2, a2, a1
 	lui	a3, 2
 	sub	a0, a0, a1
-	addiw	a1, a3, 1808
+	addi	a1, a3, 1808
 	sltu	a2, a1, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2

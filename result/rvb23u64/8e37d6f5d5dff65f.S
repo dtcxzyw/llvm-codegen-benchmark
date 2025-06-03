@@ -45,7 +45,7 @@ func0000000000000011:
 	sext.w	a2, a2
 	lui	a3, 1048320
 	slli	a0, a0, 44
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
 	srli	a0, a0, 44
@@ -64,7 +64,7 @@ func000000000000000c:
 func0000000000000015:
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	slt	a2, a3, a2
 	lui	a3, 129024
 	slli	a1, a1, 41

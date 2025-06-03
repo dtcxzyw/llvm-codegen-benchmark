@@ -31,7 +31,7 @@ func000000000000001f:
 	mulw	a1, a1, a2
 	lui	a2, 305
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 976
+	addi	a1, a2, 976
 	add	a0, a0, a1
 	ret
 
@@ -40,7 +40,7 @@ func0000000000000013:
 	mulw	a1, a1, a2
 	lui	a2, 320
 	sh2add	a0, a1, a0
-	addiw	a1, a2, -928
+	addi	a1, a2, -928
 	add	a0, a0, a1
 	ret
 

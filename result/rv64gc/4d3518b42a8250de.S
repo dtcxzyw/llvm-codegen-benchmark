@@ -10,7 +10,7 @@ func00000000000000fc:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	lui	a1, 43
-	addiw	a1, a1, 1016
+	addi	a1, a1, 1016
 	add	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func00000000000000f3:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	lui	a1, 87
-	addiw	a1, a1, 888
+	addi	a1, a1, 888
 	add	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func00000000000000f0:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	lui	a1, 87
-	addiw	a1, a1, 840
+	addi	a1, a1, 840
 	add	a0, a0, a1
 	ret
 

@@ -12,7 +12,7 @@ func0000000000000007:
 	slli	a1, a1, 24
 	or	a0, a0, a1
 	lui	a1, 235216
-	addiw	a1, a1, -328
+	addi	a1, a1, -328
 	xor	a0, a0, a1
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000006:
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 65541
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	xor	a0, a0, a1
 	ret
 

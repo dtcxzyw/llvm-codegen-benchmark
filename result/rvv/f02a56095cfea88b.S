@@ -4,7 +4,7 @@ func0000000000000040:
 	lui	a0, 256
 	vsll.vv	v10, v10, v14
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	ret
 

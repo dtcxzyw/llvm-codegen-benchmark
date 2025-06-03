@@ -2,7 +2,7 @@ func000000000000003f:
 	lui	a3, 133
 	slli	a2, a2, 56
 	slli	a0, a0, 1
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -67,7 +67,7 @@ func000000000000000c:
 
 func0000000000000068:
 	lui	a3, 23
-	addiw	a3, a3, 1716
+	addi	a3, a3, 1716
 	add	a2, a2, a3
 	sltu	a1, a2, a1
 	or	a0, a0, a1

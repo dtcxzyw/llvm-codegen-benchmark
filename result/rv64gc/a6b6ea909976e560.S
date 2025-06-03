@@ -28,7 +28,7 @@ func0000000000000008:
 	lui	a1, 16
 	addi	a0, a0, 128
 	srli	a0, a0, 3
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	ret
 

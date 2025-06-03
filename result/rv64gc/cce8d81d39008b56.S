@@ -40,7 +40,7 @@ func0000000000000008:
 	slli	a0, a0, 48
 	lui	a2, 16
 	srli	a0, a0, 48
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -4,7 +4,7 @@ func000000000000000d:
 	srli	a0, a0, 48
 	add	a0, a0, a1
 	lui	a1, 1048560
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	add	a0, a0, a1
 	ret
 

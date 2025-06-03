@@ -75,7 +75,7 @@ func0000000000000008:
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 32768
-	addiw	a2, a2, 35
+	addi	a2, a2, 35
 	sltu	a1, a2, a1
 	li	a2, -64
 	czero.nez	a1, a2, a1

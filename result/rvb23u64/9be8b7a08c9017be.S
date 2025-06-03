@@ -10,7 +10,7 @@ func0000000000000024:
 	srli	a2, a2, 1
 	sub	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 577
+	addi	a2, a2, 577
 	bseti	a2, a2, 63
 	sltu	a1, a1, a2
 	seqz	a0, a0

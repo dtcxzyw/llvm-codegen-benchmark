@@ -48,7 +48,7 @@ func0000000000000026:
 func0000000000000078:
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	bltu	a2, a1, .LBB6_2
 	mv	a0, a1
 .LBB6_2:
@@ -57,7 +57,7 @@ func0000000000000078:
 func0000000000000028:
 	add	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -176
+	addi	a2, a2, -176
 	bltu	a2, a1, .LBB7_2
 	mv	a0, a1
 .LBB7_2:

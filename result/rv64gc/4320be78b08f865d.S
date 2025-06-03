@@ -13,7 +13,7 @@ func0000000000000001:
 
 func0000000000000006:
 	lui	a1, 4
-	addiw	a2, a1, -1384
+	addi	a2, a1, -1384
 	mv	a1, a0
 	bgeu	a0, a2, .LBB1_3
 	blez	a1, .LBB1_4

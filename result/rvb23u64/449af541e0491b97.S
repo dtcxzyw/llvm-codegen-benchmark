@@ -32,7 +32,7 @@ func0000000000000084:
 	zext.h	a2, a2
 	lui	a3, 16
 	slli	a1, a1, 48
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	srli	a1, a1, 53
 	sltu	a2, a2, a3
 	and	a0, a0, a2

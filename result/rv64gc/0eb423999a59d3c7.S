@@ -10,7 +10,7 @@ func000000000000000c:
 
 func0000000000000014:
 	lui	a1, 512
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

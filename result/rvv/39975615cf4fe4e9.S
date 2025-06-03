@@ -6,7 +6,7 @@ func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	vadd.vx	v10, v10, a1
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 18

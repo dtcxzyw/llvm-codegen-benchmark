@@ -5,7 +5,7 @@ func0000000000000094:
 	lui	a3, 838861
 	add	a1, a1, a4
 	add	a0, a0, a2
-	addiw	a2, a3, -819
+	addi	a2, a3, -819
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2

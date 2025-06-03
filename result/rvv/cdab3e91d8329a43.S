@@ -2,7 +2,7 @@ func0000000000000350:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v12, v8, v12
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vmsgtu.vx	v0, v12, a0
 	lui	a0, 983055
 	slli	a0, a0, 4

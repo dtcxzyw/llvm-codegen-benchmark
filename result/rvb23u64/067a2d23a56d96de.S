@@ -1,7 +1,7 @@
 func0000000000000185:
 	andi	a0, a0, 1
 	lui	a3, 32
-	addiw	a3, a3, -31
+	addi	a3, a3, -31
 	sltu	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

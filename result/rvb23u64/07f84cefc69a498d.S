@@ -12,7 +12,7 @@ func000000000000000a:
 func0000000000000008:
 	addw	a0, a0, a1
 	lui	a1, 488281
-	addiw	a1, a1, 1023
+	addi	a1, a1, 1023
 	sltu	a0, a1, a0
 	ret
 

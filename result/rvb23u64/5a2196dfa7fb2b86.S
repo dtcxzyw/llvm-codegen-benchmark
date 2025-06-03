@@ -30,7 +30,7 @@ func0000000000000002:
 	add.uw	a1, a2, a1
 	lui	a2, 150
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 
@@ -38,7 +38,7 @@ func000000000000000e:
 	add.uw	a1, a2, a1
 	lui	a2, 163
 	sh2add	a0, a1, a0
-	addiw	a1, a2, -1280
+	addi	a1, a2, -1280
 	add	a0, a0, a1
 	ret
 

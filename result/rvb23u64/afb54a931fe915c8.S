@@ -3,7 +3,7 @@ func0000000000000002:
 	sext.w	a2, a2
 	lui	a3, 524288
 	addi	a2, a2, -120
-	addiw	a4, a3, 4
+	addi	a4, a3, 4
 	czero.eqz	a0, a0, a2
 	czero.nez	a2, a4, a2
 	or	a0, a0, a2

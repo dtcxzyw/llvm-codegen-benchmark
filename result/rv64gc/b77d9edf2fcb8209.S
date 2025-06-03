@@ -34,7 +34,7 @@ func000000000000004a:
 	li	a1, 1
 	sllw	a0, a1, a0
 	lui	a1, 524288
-	addiw	a1, a1, 3
+	addi	a1, a1, 3
 	and	a0, a0, a1
 	sgtz	a0, a0
 	ret

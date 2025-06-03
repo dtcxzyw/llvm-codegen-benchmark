@@ -12,7 +12,7 @@ func0000000000000104:
 
 func00000000000000ac:
 	lui	a0, 1048332
-	addiw	a0, a0, -576
+	addi	a0, a0, -576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	vmsne.vv	v12, v8, v10

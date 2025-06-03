@@ -8,7 +8,7 @@ func0000000000000010:
 
 func0000000000000050:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	sltu	a1, a1, a2
 	li	a2, 9
 	czero.nez	a1, a2, a1
@@ -64,7 +64,7 @@ func0000000000000021:
 
 func0000000000000019:
 	lui	a2, 1048575
-	addiw	a2, a2, 496
+	addi	a2, a2, 496
 	slt	a1, a1, a2
 	lui	a2, 211
 	addi	a2, a2, -256
@@ -103,7 +103,7 @@ func000000000000001b:
 
 func0000000000000028:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	li	a2, -4
 	czero.nez	a1, a2, a1

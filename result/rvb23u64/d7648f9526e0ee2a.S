@@ -32,8 +32,7 @@ func0000000000000013:
 
 func0000000000000018:
 	addi	a1, a1, 112
-	li	a2, 1
-	slli	a2, a2, 37
+	bseti	a2, zero, 37
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	slli	a0, a0, 34

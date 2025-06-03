@@ -25,7 +25,7 @@ func0000000000000006:
 func0000000000000001:
 	slliw	a0, a0, 20
 	lui	a1, 241
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	or	a0, a0, a1
 	ret
 

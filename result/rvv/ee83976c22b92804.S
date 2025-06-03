@@ -3,7 +3,7 @@ func0000000000000007:
 	vmseq.vi	v0, v12, 0
 	lui	a0, 25
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 543
+	addi	a0, a0, 543
 	vmul.vx	v8, v8, a0
 	ret
 

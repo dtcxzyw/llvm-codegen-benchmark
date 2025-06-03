@@ -21,7 +21,7 @@ func0000000000000024:
 	sext.w	a2, a2
 	lui	a3, 16
 	seqz	a2, a2
-	addiw	a3, a3, -10
+	addi	a3, a3, -10
 	sltu	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

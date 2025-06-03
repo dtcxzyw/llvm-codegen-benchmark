@@ -15,12 +15,12 @@ func0000000000000004:
 func0000000000000005:
 	sext.w	a4, a2
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	andi	a0, a0, 1
 	mv	a3, a2
 	beqz	a4, .LBB1_2
 	lui	a3, 135168
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 .LBB1_2:
 	or	a1, a1, a3
 	addi	a0, a0, -1

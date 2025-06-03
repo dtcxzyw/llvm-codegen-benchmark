@@ -3,7 +3,7 @@ func0000000000000001:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	sh1add	a2, a2, a2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	add	a1, a1, a2
 	slli	a2, a0, 32
 	srai	a1, a1, 3
@@ -17,7 +17,7 @@ func0000000000000019:
 	sub	a1, a1, a0
 	lui	a0, 748983
 	sub	a2, a2, a3
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	add	a1, a1, a2
 	slli	a2, a0, 33
 	srai	a1, a1, 3
@@ -30,7 +30,7 @@ func0000000000000039:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	sh1add	a2, a2, a2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a2, a2, 4
 	add	a1, a1, a2
 	slli	a2, a0, 32
@@ -44,7 +44,7 @@ func0000000000000021:
 	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a1, a1, a0
 	slli	a0, a2, 32
 	srai	a1, a1, 3

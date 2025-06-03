@@ -24,7 +24,7 @@ func0000000000000007:
 	or	a2, a2, a3
 	lui	a3, 983040
 	slliw	a1, a1, 16
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	slliw	a2, a2, 8
 	or	a1, a1, a2
 	and	a0, a0, a3

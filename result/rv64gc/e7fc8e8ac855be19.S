@@ -21,8 +21,8 @@ func000000000000001f:
 	lui	a3, 4
 	or	a0, a0, a1
 	lui	a1, 2056
-	addiw	a3, a3, -256
-	addiw	a1, a1, 224
+	addi	a3, a3, -256
+	addi	a1, a1, 224
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -102,7 +102,7 @@ func0000000000000005:
 func000000000000000b:
 	slliw	a2, a2, 1
 	lui	a3, 1048568
-	addiw	a3, a3, 254
+	addi	a3, a3, 254
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -133,7 +133,7 @@ func000000000000000f:
 	lui	a1, 985096
 	and	a2, a2, a3
 	or	a0, a0, a2
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

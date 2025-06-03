@@ -30,7 +30,7 @@ func0000000000000080:
 	lui	a3, 5
 	sext.w	a1, a1
 	sltiu	a2, a2, 3
-	addiw	a3, a3, 960
+	addi	a3, a3, 960
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

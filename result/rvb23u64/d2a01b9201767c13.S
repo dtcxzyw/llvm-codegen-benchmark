@@ -36,7 +36,7 @@ func0000000000000021:
 
 func00000000000000ca:
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a2, a2, a3
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
@@ -46,7 +46,7 @@ func00000000000000ca:
 
 func00000000000000c6:
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a2, a2, a3
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2

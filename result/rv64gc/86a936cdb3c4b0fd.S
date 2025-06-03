@@ -105,7 +105,7 @@ func0000000000000004:
 	neg	a1, a1
 .LBB10_2:
 	lui	a0, 24414
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	sltu	a0, a1, a0
 	ret
 
@@ -115,7 +115,7 @@ func0000000000000014:
 	neg	a1, a1
 .LBB11_2:
 	lui	a0, 45475
-	addiw	a0, a0, -1085
+	addi	a0, a0, -1085
 	slli	a0, a0, 12
 	addi	a0, a0, -315
 	slli	a0, a0, 17

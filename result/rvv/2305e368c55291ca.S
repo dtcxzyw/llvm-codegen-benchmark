@@ -5,7 +5,7 @@ func00000000000000df:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmv.v.x	v12, a1
-	addiw	a1, a2, -1365
+	addi	a1, a2, -1365
 	vmacc.vx	v12, a0, v8
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -21,7 +21,7 @@ func000000000000008a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmv.v.x	v12, a1
-	addiw	a1, a2, -1365
+	addi	a1, a2, -1365
 	vmacc.vx	v12, a0, v8
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -37,7 +37,7 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmv.v.x	v12, a1
-	addiw	a1, a2, -1365
+	addi	a1, a2, -1365
 	vmacc.vx	v12, a0, v8
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -53,7 +53,7 @@ func000000000000005d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmv.v.x	v12, a1
-	addiw	a1, a2, -1365
+	addi	a1, a2, -1365
 	vmacc.vx	v12, a0, v8
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -69,7 +69,7 @@ func00000000000000dd:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmv.v.x	v12, a1
-	addiw	a1, a2, -1365
+	addi	a1, a2, -1365
 	vmacc.vx	v12, a0, v8
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -85,7 +85,7 @@ func0000000000000058:
 	li	a0, 12
 	lui	a1, 699051
 	vmacc.vx	v12, a0, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vmulhu.vx	v8, v12, a1
@@ -100,7 +100,7 @@ func00000000000000d5:
 	li	a0, 12
 	lui	a1, 699051
 	vmacc.vx	v12, a0, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vmulhu.vx	v8, v12, a1

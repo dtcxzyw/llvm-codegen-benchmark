@@ -16,7 +16,7 @@ func0000000000000014:
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
 	vsrl.vi	v10, v10, 4
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	vmul.vv	v8, v10, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1

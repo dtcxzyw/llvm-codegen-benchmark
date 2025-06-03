@@ -59,7 +59,7 @@ func00000000000000f4:
 	srli	a1, a1, 3
 	or	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	sltu	a0, a0, a1
 	ret
 
@@ -68,7 +68,7 @@ func00000000000000d4:
 	srli	a1, a1, 3
 	or	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	sltu	a0, a0, a1
 	ret
 

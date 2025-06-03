@@ -15,7 +15,7 @@ func0000000000000086:
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
 	lui	a2, 5
-	addiw	a2, a2, -481
+	addi	a2, a2, -481
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

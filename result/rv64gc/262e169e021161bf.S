@@ -100,16 +100,16 @@ func0000000000000018:
 	sext.w	a2, a1
 	bnez	a3, .LBB6_2
 	lui	a1, 81
-	addiw	a1, a1, 1557
+	addi	a1, a1, 1557
 	lui	a3, 65
-	addiw	a3, a3, 427
+	addi	a3, a3, 427
 	bgeu	a3, a2, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
 	lui	a1, 78
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 	lui	a3, 65
-	addiw	a3, a3, 427
+	addi	a3, a3, 427
 	bltu	a3, a2, .LBB6_4
 .LBB6_3:
 	mv	a1, a0

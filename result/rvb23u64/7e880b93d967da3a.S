@@ -24,7 +24,7 @@ func0000000000000011:
 	srai	a1, a1, 15
 	add	a1, a1, a2
 	lui	a2, 1048573
-	addiw	a2, a2, 77
+	addi	a2, a2, 77
 	mul	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -85

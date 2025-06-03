@@ -23,7 +23,7 @@ func00000000000000a8:
 	lui	a0, %hi(.LCPI1_0)
 	lui	a1, 748983
 	ld	a0, %lo(.LCPI1_0)(a0)
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	slli	a2, a1, 33
 	add	a1, a1, a2
 	lui	a2, %hi(.LCPI1_1)
@@ -54,7 +54,7 @@ func00000000000000a4:
 	vsra.vi	v8, v8, 3
 	vmv.v.i	v10, -13
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v8
@@ -66,7 +66,7 @@ func00000000000000b4:
 	vsra.vi	v8, v8, 4
 	vmv.v.i	v10, 1
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v8

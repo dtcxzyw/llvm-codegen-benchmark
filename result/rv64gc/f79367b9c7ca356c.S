@@ -1,6 +1,6 @@
 func0000000000000028:
 	lui	a2, 3
-	addiw	a2, a2, -1005
+	addi	a2, a2, -1005
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 8
@@ -15,7 +15,7 @@ func0000000000000060:
 
 func0000000000000023:
 	lui	a2, 1048555
-	addiw	a2, a2, -384
+	addi	a2, a2, -384
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63

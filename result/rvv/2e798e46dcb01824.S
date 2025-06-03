@@ -47,7 +47,7 @@ func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v12, v12, a0
@@ -59,7 +59,7 @@ func00000000000000e6:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v12, v12, a0
@@ -71,7 +71,7 @@ func00000000000000ea:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v12, v12, a0

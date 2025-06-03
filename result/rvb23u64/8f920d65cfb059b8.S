@@ -35,7 +35,7 @@ func0000000000000029:
 
 func0000000000000028:
 	lui	a2, 244
-	addiw	a2, a2, 575
+	addi	a2, a2, 575
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

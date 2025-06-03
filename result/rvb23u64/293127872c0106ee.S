@@ -17,7 +17,7 @@ func000000000000014e:
 
 func000000000000001e:
 	lui	a3, 1
-	addiw	a3, a3, 5
+	addi	a3, a3, 5
 	xor	a2, a2, a3
 	seqz	a2, a2
 	sh1add	a0, a2, a0

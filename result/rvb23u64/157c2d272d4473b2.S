@@ -5,7 +5,7 @@ func0000000000000001:
 	czero.eqz	a0, a2, a0
 	lui	a2, 16
 	or	a0, a0, a1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	ret
 
@@ -13,7 +13,7 @@ func0000000000000000:
 	andi	a0, a0, 1
 	addi	a2, a2, 19
 	lui	a3, 1
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	addiw	a3, a3, 12
 	and	a1, a1, a3

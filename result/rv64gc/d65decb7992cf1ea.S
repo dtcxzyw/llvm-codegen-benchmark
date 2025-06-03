@@ -5,7 +5,7 @@ func0000000000000155:
 	slli	a0, a0, 3
 	add	a0, a0, a3
 	lui	a3, 1048563
-	addiw	a3, a3, -80
+	addi	a3, a3, -80
 	add	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
@@ -35,13 +35,13 @@ func0000000000000375:
 
 func0000000000000310:
 	lui	a3, 2
-	addiw	a3, a3, 112
+	addi	a3, a3, 112
 	mul	a2, a2, a3
 	lui	a3, 1048574
-	addiw	a3, a3, -112
+	addi	a3, a3, -112
 	mul	a0, a0, a3
 	lui	a3, 65
-	addiw	a3, a3, -512
+	addi	a3, a3, -512
 	add	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
@@ -49,10 +49,10 @@ func0000000000000310:
 
 func0000000000000175:
 	lui	a3, 1
-	addiw	a3, a3, -1200
+	addi	a3, a3, -1200
 	mul	a1, a1, a3
 	lui	a3, 2
-	addiw	a3, a3, -1716
+	addi	a3, a3, -1716
 	mul	a0, a0, a3
 	lui	a3, 32
 	add	a1, a1, a2

@@ -17,7 +17,7 @@ func00000000000004c1:
 	srli	a2, a2, 48
 	xor	a0, a0, a2
 	lui	a2, 1048568
-	addiw	a2, a2, 1262
+	addi	a2, a2, 1262
 	seqz	a0, a0
 	slt	a1, a1, a2
 	or	a0, a0, a1

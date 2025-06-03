@@ -9,7 +9,7 @@ func000000000000004c:
 func0000000000000118:
 	lui	a0, 524288
 	addi	a1, a0, -1
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	vmsltu.vx	v12, v10, a0
@@ -96,8 +96,8 @@ func000000000000010c:
 	lui	a1, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	addiw	a1, a1, 1
-	addiw	a0, a0, 1
+	addi	a1, a1, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v12, v10, a1
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
@@ -166,11 +166,11 @@ func0000000000000b02:
 
 func0000000000000308:
 	lui	a0, 1048575
-	addiw	a0, a0, 7
+	addi	a0, a0, 7
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 1048574
-	addiw	a0, a0, 7
+	addi	a0, a0, 7
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v12, v10
@@ -197,7 +197,7 @@ func0000000000000918:
 
 func0000000000000208:
 	lui	a0, 1048568
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	lui	a1, 1
@@ -225,7 +225,7 @@ func00000000000001b0:
 
 func0000000000000130:
 	lui	a0, 524288
-	addiw	a1, a0, 64
+	addi	a1, a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	li	a1, 253

@@ -6,7 +6,7 @@ func000000000000000f:
 	srli	a2, a2, 1
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	add	a1, a1, a2
 	slli	a2, a3, 32
 	add	a2, a2, a3
@@ -22,7 +22,7 @@ func000000000000000b:
 	srli	a2, a2, 1
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	add	a1, a1, a2
 	slli	a2, a3, 32
 	add	a2, a2, a3

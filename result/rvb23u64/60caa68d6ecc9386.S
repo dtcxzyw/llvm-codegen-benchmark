@@ -1,6 +1,6 @@
 func0000000000000024:
 	lui	a3, 838861
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mulhu	a2, a2, a3
@@ -11,7 +11,7 @@ func0000000000000024:
 
 func0000000000000004:
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mulhu	a2, a2, a3

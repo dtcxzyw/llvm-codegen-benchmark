@@ -91,7 +91,7 @@ func0000000000000018:
 	beqz	a0, .LBB6_2
 .LBB6_4:
 	lui	a0, 8
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	ret
 
 func000000000000000a:

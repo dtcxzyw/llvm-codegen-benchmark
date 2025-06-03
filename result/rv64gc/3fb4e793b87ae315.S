@@ -12,7 +12,7 @@ func00000000000002f8:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	addiw	a3, a3, -31
+	addi	a3, a3, -31
 	sltu	a0, a3, a0
 	ret
 

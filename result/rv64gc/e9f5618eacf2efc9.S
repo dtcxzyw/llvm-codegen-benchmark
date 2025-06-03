@@ -22,7 +22,7 @@ func00000000000001e5:
 	addi	a1, a1, 3
 	lui	a2, 718
 	lui	a3, %hi(.LCPI2_0)
-	addiw	a2, a2, -1183
+	addi	a2, a2, -1183
 	ld	a3, %lo(.LCPI2_0)(a3)
 	mul	a1, a1, a2
 	srli	a1, a1, 32

@@ -4,7 +4,7 @@ func0000000000000001:
 	li	a3, 389
 	czero.nez	a2, a3, a2
 	lui	a3, 1
-	addiw	a3, a3, -2002
+	addi	a3, a3, -2002
 	addi	a2, a2, -1871
 	xor	a1, a1, a3
 	czero.eqz	a2, a2, a1

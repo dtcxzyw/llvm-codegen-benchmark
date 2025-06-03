@@ -5,7 +5,7 @@ func00000000000000ea:
 	lui	a1, 305
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, 1028
+	addi	a1, a1, 1028
 	add	a0, a0, a1
 	ret
 
@@ -16,7 +16,7 @@ func000000000000002a:
 	lui	a1, 320
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, -876
+	addi	a1, a1, -876
 	add	a0, a0, a1
 	ret
 

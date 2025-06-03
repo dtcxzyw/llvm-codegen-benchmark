@@ -48,7 +48,7 @@ func0000000000000194:
 	lui	a3, 20480
 	xor	a1, a1, a3
 	lui	a3, 4
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	snez	a1, a1
 	sltiu	a2, a2, 1280

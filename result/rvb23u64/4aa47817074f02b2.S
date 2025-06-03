@@ -61,7 +61,7 @@ func0000000000000100:
 	sext.w	a2, a2
 	lui	a3, 5
 	sltiu	a2, a2, 3
-	addiw	a3, a3, 960
+	addi	a3, a3, 960
 	czero.nez	a2, a3, a2
 	add	a0, a0, a2
 	add.uw	a0, a1, a0

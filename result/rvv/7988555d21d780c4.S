@@ -8,7 +8,7 @@ func0000000000000378:
 
 func00000000000001aa:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	vzext.vf2	v12, v10

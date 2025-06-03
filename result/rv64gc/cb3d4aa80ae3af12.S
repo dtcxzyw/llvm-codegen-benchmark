@@ -42,7 +42,7 @@ func0000000000000130:
 	lui	a1, 320
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, -932
+	addi	a1, a1, -932
 	add	a0, a0, a1
 	ret
 

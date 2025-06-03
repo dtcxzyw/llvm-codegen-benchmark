@@ -2,14 +2,14 @@ func0000000000000108:
 	lui	a2, 1048575
 	lui	a3, 15
 	addi	a2, a2, -235
-	addiw	a4, a3, -234
+	addi	a4, a3, -234
 	add	a1, a1, a2
 	add	a0, a0, a2
 	zext.h	a1, a1
 	addi	a0, a0, 1579
 	sltu	a1, a1, a4
 	zext.h	a0, a0
-	addiw	a2, a3, 1345
+	addi	a2, a3, 1345
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

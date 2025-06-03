@@ -1,10 +1,10 @@
 func000000000000000c:
 	lui	a0, 3840
-	addiw	a0, a0, 240
+	addi	a0, a0, 240
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 240
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
@@ -31,7 +31,7 @@ func0000000000000008:
 
 func000000000000000e:
 	lui	a0, 139810
-	addiw	a0, a0, 546
+	addi	a0, a0, 546
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 314573

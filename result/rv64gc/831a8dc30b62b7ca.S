@@ -3,7 +3,7 @@ func000000000000000a:
 	li	a2, 8
 	bge	a2, a1, .LBB0_2
 	lui	a0, 5
-	addiw	a0, a0, -481
+	addi	a0, a0, -481
 .LBB0_2:
 	ret
 
@@ -26,7 +26,7 @@ func0000000000000006:
 	sub	a1, a1, a2
 	bgtz	a1, .LBB3_2
 	lui	a0, 512
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB3_2:
 	ret
 
@@ -35,7 +35,7 @@ func0000000000000028:
 	li	a2, 7
 	bgeu	a2, a1, .LBB4_2
 	lui	a0, 1048570
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 .LBB4_2:
 	ret
 

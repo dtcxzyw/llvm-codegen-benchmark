@@ -6,7 +6,7 @@ func000000000000006f:
 
 func00000000000000ef:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a3, a1, a2
 	mulhu	a1, a1, a2
 	slli	a1, a1, 12

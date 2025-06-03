@@ -2,7 +2,7 @@
 	.quad	230584300921369395
 func00000000000000a4:
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)

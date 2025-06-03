@@ -1,12 +1,12 @@
 func000000000000003c:
 	lui	a0, 4608
-	addiw	a0, a0, 81
+	addi	a0, a0, 81
 	slli	a0, a0, 22
 	addi	a0, a0, 1459
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 512
-	addiw	a0, a0, -9
+	addi	a0, a0, -9
 	vsub.vv	v14, v10, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12

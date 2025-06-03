@@ -10,7 +10,7 @@ func0000000000000000:
 
 func0000000000000030:
 	lui	a3, 1048574
-	addiw	a3, a3, -112
+	addi	a3, a3, -112
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -32,7 +32,7 @@ func0000000000000015:
 
 func0000000000000035:
 	lui	a3, 1048574
-	addiw	a3, a3, -1841
+	addi	a3, a3, -1841
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

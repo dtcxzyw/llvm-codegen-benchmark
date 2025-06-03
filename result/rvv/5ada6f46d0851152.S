@@ -26,7 +26,7 @@ func000000000000000e:
 	lui	a0, 4096
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v14
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

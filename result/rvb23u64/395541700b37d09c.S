@@ -127,10 +127,10 @@ func0000000000000086:
 	sext.w	a1, a1
 	lui	a2, 1048555
 	sltiu	a1, a1, -300
-	addiw	a2, a2, -384
+	addi	a2, a2, -384
 	czero.nez	a1, a2, a1
 	lui	a2, 6019
-	addiw	a2, a2, 551
+	addi	a2, a2, 551
 	slli	a2, a2, 7
 	add	a1, a1, a2
 	slt	a0, a0, a1

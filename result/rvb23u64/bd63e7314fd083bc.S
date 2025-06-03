@@ -3,7 +3,7 @@ func0000000000000001:
 	sraiw	a1, a1, 13
 	lui	a2, 335544
 	li	a3, 100
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a1
 	srli	a3, a2, 63

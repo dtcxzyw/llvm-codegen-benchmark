@@ -8,7 +8,7 @@ func000000000000001c:
 	ctzw	a1, a1
 	sh3add	a0, a1, a0
 	lui	a1, 7
-	addiw	a1, a1, 712
+	addi	a1, a1, 712
 	add	a0, a0, a1
 	ret
 

@@ -41,7 +41,7 @@ func0000000000000004:
 func000000000000001f:
 	lui	a3, 128
 	slli	a1, a1, 19
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

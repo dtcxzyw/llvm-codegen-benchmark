@@ -10,7 +10,7 @@ func0000000000000010:
 	andi	a1, a1, 508
 	add	a0, a0, a1
 	lui	a1, 5
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	add	a0, a0, a1
 	ret
 

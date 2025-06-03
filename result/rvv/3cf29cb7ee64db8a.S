@@ -64,7 +64,7 @@ func0000000000000188:
 
 func0000000000000044:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v14, a0
 	vsll.vv	v12, v14, v12

@@ -2,7 +2,7 @@ func0000000000000083:
 	sext.w	a1, a1
 	slliw	a2, a2, 3
 	lui	a3, 131072
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	xor	a1, a1, a3
 	li	a3, -16
 	czero.eqz	a2, a2, a1
@@ -29,7 +29,7 @@ func0000000000000015:
 	sext.w	a1, a1
 	slliw	a2, a2, 23
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	slt	a1, a3, a1
 	lui	a3, 129024
 	czero.nez	a2, a2, a1

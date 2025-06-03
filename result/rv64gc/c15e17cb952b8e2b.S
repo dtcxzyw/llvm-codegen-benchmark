@@ -25,7 +25,7 @@ func000000000000002c:
 	slli	a1, a0, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -897
+	addi	a2, a2, -897
 	and	a0, a0, a2
 	seqz	a0, a0
 	snez	a1, a1
@@ -65,7 +65,7 @@ func0000000000000188:
 	slli	a1, a0, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	sltiu	a1, a1, 42
 	addi	a0, a0, -256

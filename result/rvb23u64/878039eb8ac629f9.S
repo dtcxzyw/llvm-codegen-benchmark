@@ -4,7 +4,7 @@ func0000000000000012:
 	andi	a0, a0, 1
 	srai	a2, a2, 3
 	lui	a3, 838861
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI0_0)

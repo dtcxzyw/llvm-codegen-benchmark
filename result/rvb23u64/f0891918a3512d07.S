@@ -3,7 +3,7 @@ func0000000000000003:
 	and	a0, a0, a3
 	lui	a3, 4
 	srliw	a1, a1, 12
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -14,7 +14,7 @@ func0000000000000002:
 	srliw	a1, a1, 8
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000001:
 	and	a0, a0, a3
 	lui	a3, 4
 	srliw	a1, a1, 18
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

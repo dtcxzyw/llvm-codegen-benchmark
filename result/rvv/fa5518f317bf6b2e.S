@@ -32,7 +32,7 @@ func00000000000001f8:
 	vwaddu.wv	v8, v8, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -29,7 +29,7 @@ func0000000000000004:
 	lui	a0, 9766
 	vor.vv	v10, v12, v10
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmsltu.vx	v0, v8, a0
 	ret
 

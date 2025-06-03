@@ -15,7 +15,7 @@ func0000000000000088:
 	lui	a3, 122
 	or	a1, a1, a2
 	mulw	a0, a0, a1
-	addiw	a1, a3, 288
+	addi	a1, a3, 288
 	sltu	a0, a1, a0
 	ret
 

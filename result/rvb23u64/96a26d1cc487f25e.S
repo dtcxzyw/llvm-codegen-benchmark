@@ -41,7 +41,7 @@ func0000000000000000:
 func0000000000000023:
 	slli	a2, a2, 5
 	lui	a3, 2
-	addiw	a3, a3, -32
+	addi	a3, a3, -32
 	add	a2, a2, a3
 	and	a2, a2, a3
 	or	a0, a0, a1

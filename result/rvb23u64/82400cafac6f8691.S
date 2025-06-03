@@ -13,7 +13,7 @@ func000000000000000e:
 func000000000000001e:
 	addw	a1, a1, a2
 	lui	a2, 296942
-	addiw	a2, a2, -507
+	addi	a2, a2, -507
 	mul	a2, a2, a1
 	srli	a3, a2, 63
 	srai	a2, a2, 37

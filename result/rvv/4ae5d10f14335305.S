@@ -16,7 +16,7 @@ func0000000000000006:
 	lui	a0, 131072
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsrl.vi	v8, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	ret
 

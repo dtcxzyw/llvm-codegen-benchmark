@@ -16,7 +16,7 @@ func00000000000000ca:
 func0000000000000088:
 	add	a1, a1, a0
 	lui	a2, 1
-	addiw	a2, a2, -1931
+	addi	a2, a2, -1931
 	sltu	a1, a1, a2
 	li	a2, 2047
 	sltu	a0, a2, a0

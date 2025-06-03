@@ -3,7 +3,7 @@ func00000000000001e8:
 	li	a4, 16
 	bgeu	a4, a3, .LBB0_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB0_2:
 	slliw	a2, a2, 8
@@ -16,7 +16,7 @@ func00000000000001f8:
 	li	a4, 16
 	bgeu	a4, a3, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 	ret
 .LBB1_2:
 	slliw	a2, a2, 6

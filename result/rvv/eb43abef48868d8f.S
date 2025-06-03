@@ -39,7 +39,7 @@ func0000000000000054:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmsgt.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v8, 0

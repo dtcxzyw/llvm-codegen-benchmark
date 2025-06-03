@@ -4,11 +4,11 @@ func0000000000000004:
 	and	a0, a0, a1
 	beqz	a0, .LBB0_2
 	lui	a0, 501882
-	addiw	a0, a0, -630
+	addi	a0, a0, -630
 	ret
 .LBB0_2:
 	lui	a0, 498884
-	addiw	a0, a0, 1305
+	addi	a0, a0, 1305
 	ret
 
 func0000000000000001:

@@ -36,10 +36,9 @@ func0000000000000087:
 func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v12, 2
-	li	a0, 1
+	bseti	a0, zero, 35
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vi	v8, v8, 8, v0.t
-	slli	a0, a0, 35
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10

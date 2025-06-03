@@ -95,7 +95,7 @@ func000000000000002a:
 func000000000000000a:
 	sext.w	a1, a1
 	lui	a2, 2
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB9_2
 	mv	a1, a2

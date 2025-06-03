@@ -43,7 +43,7 @@ func0000000000000015:
 	sext.w	a1, a1
 	andi	a2, a2, 511
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	slt	a1, a3, a1
 	li	a3, 8
 	czero.nez	a2, a2, a1

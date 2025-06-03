@@ -1,8 +1,8 @@
 func000000000000038d:
 	lui	a2, 16
 	lui	a3, 1048560
-	addiw	a2, a2, -16
-	addiw	a3, a3, 15
+	addi	a2, a2, -16
+	addi	a3, a3, 15
 	sltu	a2, a2, a1
 	neg	a2, a2
 	and	a2, a2, a3

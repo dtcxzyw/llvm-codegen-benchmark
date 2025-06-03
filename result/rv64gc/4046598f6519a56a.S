@@ -5,7 +5,7 @@ func0000000000000010:
 
 func0000000000000000:
 	lui	a1, 15
-	addiw	a1, a1, 207
+	addi	a1, a1, 207
 	srl	a0, a1, a0
 	ret
 

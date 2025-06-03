@@ -178,7 +178,7 @@ func000000000000018c:
 
 func0000000000000189:
 	lui	a3, 1
-	addiw	a3, a3, -1472
+	addi	a3, a3, -1472
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 1152

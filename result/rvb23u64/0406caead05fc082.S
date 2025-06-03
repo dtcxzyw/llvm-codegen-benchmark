@@ -30,7 +30,7 @@ func0000000000000024:
 	andi	a1, a1, 31
 	lui	a2, 2
 	addi	a1, a1, -28
-	addiw	a2, a2, -31
+	addi	a2, a2, -31
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

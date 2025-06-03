@@ -12,7 +12,7 @@ func0000000000000065:
 	slli	a2, a2, 43
 	lui	a3, 163
 	srli	a1, a1, 21
-	addiw	a3, a3, -1005
+	addi	a3, a3, -1005
 	slli	a3, a3, 21
 	mulhu	a2, a2, a3
 	add	a0, a0, a1

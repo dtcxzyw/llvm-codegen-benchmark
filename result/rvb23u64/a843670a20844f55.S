@@ -41,7 +41,7 @@ func0000000000000230:
 	zext.b	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	addi	a1, a1, -1
 	sltu	a2, a2, a3
 	snez	a1, a1

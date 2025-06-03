@@ -7,7 +7,7 @@ func000000000000000b:
 
 func000000000000000e:
 	lui	a1, 65536
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	minu	a0, a0, a1
 	slliw	a0, a0, 4
 	ret

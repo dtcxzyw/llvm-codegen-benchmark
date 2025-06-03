@@ -21,7 +21,7 @@ func000000000000000d:
 	li	a2, 2
 	blt	a1, a2, .LBB2_2
 	lui	a0, 12
-	addiw	a0, a0, 4
+	addi	a0, a0, 4
 	ret
 .LBB2_2:
 	ori	a0, a0, 4

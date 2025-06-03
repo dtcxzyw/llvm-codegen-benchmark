@@ -34,7 +34,7 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a2, 227374
-	addiw	a2, a2, -1329
+	addi	a2, a2, -1329
 	slli	a2, a2, 12
 	addi	a2, a2, -1575
 	slli	a2, a2, 18
@@ -57,7 +57,7 @@ func000000000000001c:
 
 func0000000000000011:
 	lui	a2, 586
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

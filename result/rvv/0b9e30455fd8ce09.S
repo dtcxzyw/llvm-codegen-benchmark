@@ -40,11 +40,11 @@ func0000000000000061:
 
 func000000000000006c:
 	lui	a0, 429
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 2048
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	vand.vx	v8, v8, a0
 	lui	a0, 1024
 	vmsne.vx	v0, v8, a0

@@ -56,7 +56,7 @@ func0000000000000cca:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 24
-	addiw	a2, a2, 1697
+	addi	a2, a2, 1697
 	slt	a1, a1, a2
 	slti	a0, a0, 0
 	andn	a0, a1, a0
@@ -129,7 +129,7 @@ func0000000000000546:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
@@ -201,7 +201,7 @@ func0000000000000e84:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 52429
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 10
 	and	a0, a0, a1
@@ -211,7 +211,7 @@ func00000000000000c4:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 52429
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	slt	a1, a1, a2
 	sltiu	a0, a0, 10
 	and	a0, a0, a1

@@ -33,7 +33,7 @@ func0000000000000004:
 	ret
 .LBB2_2:
 	lui	a2, 524288
-	addiw	a2, a2, 992
+	addi	a2, a2, 992
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -21,7 +21,7 @@ func000000000000002a:
 	srli	a1, a1, 1
 	sub	a1, a1, a0
 	lui	a0, 1048088
-	addiw	a0, a0, -1153
+	addi	a0, a0, -1153
 	srli	a0, a0, 1
 	slt	a0, a0, a1
 	ret

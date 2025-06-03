@@ -45,7 +45,7 @@ func0000000000000063:
 func0000000000000060:
 	sub	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	snez	a1, a1
 	add	a0, a0, a1

@@ -39,7 +39,7 @@ func000000000000000e:
 func0000000000000005:
 	lui	a2, 64
 	slli	a0, a0, 32
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sub	a1, a2, a1
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB4_2

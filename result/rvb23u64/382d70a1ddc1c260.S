@@ -16,7 +16,7 @@ func0000000000000014:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	lui	a2, 745654
-	addiw	a2, a2, 183
+	addi	a2, a2, 183
 	or	a0, a0, a1
 	sext.w	a1, a0
 	mul	a1, a1, a2

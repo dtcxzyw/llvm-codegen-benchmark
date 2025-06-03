@@ -12,10 +12,10 @@ func0000000000000181:
 func000000000000018c:
 	zext.h	a1, a1
 	lui	a3, 8
-	addiw	a3, a3, 6
+	addi	a3, a3, 6
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	xor	a1, a1, a3
 	snez	a2, a2
 	and	a0, a0, a2
@@ -58,10 +58,10 @@ func0000000000000184:
 	slli	a2, a2, 48
 	lui	a3, 1
 	srli	a2, a2, 50
-	addiw	a3, a3, -2045
+	addi	a3, a3, -2045
 	xor	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	sltu	a0, a0, a3
 	snez	a2, a2
 	and	a0, a0, a1

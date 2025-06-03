@@ -30,7 +30,7 @@ func0000000000000000:
 	lui	a3, 524288
 	czero.nez	a0, a3, a0
 	lui	a3, 921600
-	addiw	a3, a3, -1026
+	addi	a3, a3, -1026
 	czero.nez	a1, a3, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

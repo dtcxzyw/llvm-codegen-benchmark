@@ -16,7 +16,7 @@ func0000000000000000:
 	slli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	lui	a0, 256
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vor.vv	v10, v10, v12
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8

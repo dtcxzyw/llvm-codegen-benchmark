@@ -31,10 +31,10 @@ func0000000000000001:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmseq.vv	v0, v8, v9
 	lui	a0, 3
-	addiw	a1, a0, -488
+	addi	a1, a0, -488
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1
-	addiw	a0, a0, -480
+	addi	a0, a0, -480
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

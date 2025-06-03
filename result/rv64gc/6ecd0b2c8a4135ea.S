@@ -25,7 +25,7 @@ func0000000000000c21:
 
 func0000000000000d04:
 	lui	a3, 2
-	addiw	a3, a3, -1060
+	addi	a3, a3, -1060
 	add	a2, a2, a3
 	sltu	a2, a2, a0
 	sltu	a0, a0, a1

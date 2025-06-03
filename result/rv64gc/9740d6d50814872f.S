@@ -25,7 +25,7 @@ func0000000000000000:
 	lui	a1, 8192
 	sub	a1, a1, a0
 	lui	a0, 1036757
-	addiw	a0, a0, 1811
+	addi	a0, a0, 1811
 	mul	a0, a1, a0
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000004:
 	slli	a1, a1, 36
 	sub	a1, a1, a0
 	lui	a0, 45426
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	mul	a0, a1, a0
 	ret
 

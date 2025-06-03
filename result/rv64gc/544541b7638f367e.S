@@ -44,7 +44,7 @@ func000000000000005f:
 	lui	a2, 1048560
 	add	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	srliw	a1, a1, 11
 	slli	a1, a1, 2
 	add	a0, a0, a2

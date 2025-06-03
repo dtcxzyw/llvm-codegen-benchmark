@@ -77,8 +77,7 @@ func0000000000000006:
 
 func0000000000000098:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 37
+	bseti	a0, zero, 37
 	addi	a0, a0, -512
 	and	a0, a0, a1
 	snez	a0, a0
@@ -86,8 +85,7 @@ func0000000000000098:
 
 func0000000000000094:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 37
+	bseti	a0, zero, 37
 	addi	a0, a0, -256
 	and	a0, a0, a1
 	seqz	a0, a0

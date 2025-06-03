@@ -5,12 +5,12 @@ func000000000000003e:
 	or	a0, a0, a1
 	bnez	a3, .LBB0_2
 	lui	a1, 319552
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a1, 385088
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func000000000000000f:
 	or	a0, a0, a1
 	lui	a1, 176
 	beqz	a3, .LBB3_2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 .LBB3_2:
 	or	a0, a0, a1
 	ret

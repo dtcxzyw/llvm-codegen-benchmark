@@ -19,7 +19,7 @@ func0000000000000001:
 	li	a2, -2048
 	czero.nez	a0, a2, a0
 	lui	a2, 1040385
-	addiw	a2, a2, -1473
+	addi	a2, a2, -1473
 	add	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 19

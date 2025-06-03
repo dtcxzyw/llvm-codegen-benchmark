@@ -96,7 +96,7 @@ func00000000000000a1:
 func000000000000052a:
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a4, a3, 1131
+	addi	a4, a3, 1131
 	slt	a2, a4, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2

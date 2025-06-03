@@ -28,7 +28,7 @@ func000000000000000f:
 	addi	a0, a0, 512
 	lui	a1, 64
 	srli	a0, a0, 4
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	ret
 

@@ -15,13 +15,13 @@ func0000000000000005:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	lui	a3, 786432
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	czero.nez	a2, a3, a2
 	lui	a3, 921600
-	addiw	a3, a3, -1026
+	addi	a3, a3, -1026
 	czero.nez	a0, a3, a0
 	lui	a3, 135168
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	add	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

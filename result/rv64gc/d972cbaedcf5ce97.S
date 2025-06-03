@@ -23,7 +23,7 @@ func0000000000000021:
 	and	a1, a1, a2
 	beqz	a1, .LBB2_2
 	lui	a0, 268352
-	addiw	a0, a0, 1170
+	addi	a0, a0, 1170
 .LBB2_2:
 	ret
 

@@ -21,11 +21,11 @@ func000000000000003f:
 func000000000000001d:
 	slli	a1, a1, 32
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a0, a0, a2
 	lui	a2, 930062
 	srli	a1, a1, 32
-	addiw	a2, a2, -1681
+	addi	a2, a2, -1681
 	add	a0, a0, a1
 	slli	a2, a2, 7
 	add	a0, a0, a2
@@ -44,7 +44,7 @@ func0000000000000035:
 	slli	a1, a1, 32
 	lui	a2, 244141
 	srli	a1, a1, 32
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -1

@@ -106,7 +106,7 @@ func0000000000000426:
 	andi	a1, a1, -34
 	addw	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, 1487
+	addi	a1, a1, 1487
 	slt	a0, a0, a1
 	ret
 

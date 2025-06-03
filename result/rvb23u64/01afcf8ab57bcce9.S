@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a1, 61035
-	addiw	a1, a1, 640
+	addi	a1, a1, 640
 	mul	a0, a0, a1
 	li	a1, 5
 	max	a0, a0, a1
@@ -20,7 +20,7 @@ func0000000000000000:
 	lui	a1, 2
 	sh2add	a0, a0, a0
 	slli	a0, a0, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	max	a0, a0, a1
 	ret
 

@@ -35,7 +35,7 @@ func0000000000000044:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
 	lui	a1, 24
-	addiw	a1, a1, 1696
+	addi	a1, a1, 1696
 	flt.d	a2, fa0, fa5
 	sltu	a0, a0, a1
 	and	a0, a0, a2
@@ -95,7 +95,7 @@ func00000000000000ac:
 	lui	a1, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a1)
 	lui	a1, 2
-	addiw	a1, a1, 1807
+	addi	a1, a1, 1807
 	xor	a0, a0, a1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1

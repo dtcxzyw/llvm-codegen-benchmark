@@ -12,7 +12,7 @@ func0000000000000009:
 func0000000000000011:
 	sext.w	a3, a2
 	lui	a4, 1048320
-	addiw	a5, a4, -1
+	addi	a5, a4, -1
 	sltu	a3, a5, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

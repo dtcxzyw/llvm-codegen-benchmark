@@ -10,7 +10,7 @@ func0000000000000060:
 
 func00000000000000a1:
 	lui	a1, 804435
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	sltu	a1, a0, a1
 	add	a0, a0, a1
 	ret

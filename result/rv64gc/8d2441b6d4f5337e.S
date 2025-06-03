@@ -15,7 +15,7 @@ func00000000000001cf:
 	lui	a3, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a1, a3, -184
+	addi	a1, a3, -184
 	add	a0, a0, a1
 	ret
 

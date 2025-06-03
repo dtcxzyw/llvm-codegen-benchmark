@@ -2,7 +2,7 @@ func0000000000000330:
 	li	a3, 123
 	mul	a2, a2, a3
 	lui	a3, 4
-	addiw	a3, a3, -1500
+	addi	a3, a3, -1500
 	add	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1

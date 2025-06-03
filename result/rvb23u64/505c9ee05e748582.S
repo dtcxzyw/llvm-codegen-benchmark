@@ -12,7 +12,7 @@ func0000000000000108:
 	slli	a1, a1, 36
 	lui	a2, 258
 	srli	a1, a1, 43
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltiu	a1, a1, 27
 	sltu	a0, a0, a2
 	or	a0, a0, a1
@@ -40,7 +40,7 @@ func0000000000000298:
 	zext.h	a1, a1
 	lui	a2, 524304
 	binvi	a1, a1, 15
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	snez	a1, a1
 	slt	a0, a2, a0
 	or	a0, a0, a1
@@ -61,7 +61,7 @@ func0000000000000314:
 	zext.h	a1, a1
 	lui	a2, 524304
 	binvi	a1, a1, 15
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	snez	a1, a1
 	slt	a0, a2, a0
 	or	a0, a0, a1

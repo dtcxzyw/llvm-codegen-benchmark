@@ -21,7 +21,7 @@ func00000000000000cc:
 	zext.b	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slt	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

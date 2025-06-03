@@ -5,8 +5,8 @@ func00000000000001a4:
 	lui	a1, 209715
 	lui	a2, 838861
 	ld	a0, %lo(.LCPI0_0)(a0)
-	addiw	a1, a1, 819
-	addiw	a2, a2, -819
+	addi	a1, a1, 819
+	addi	a2, a2, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	slli	a3, a2, 32

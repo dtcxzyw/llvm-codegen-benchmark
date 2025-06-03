@@ -13,7 +13,7 @@ func0000000000000000:
 	vsrl.vi	v12, v12, 1
 	lui	a0, 227374
 	vadd.vv	v10, v12, v10
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	vsrl.vi	v10, v10, 3
 	slli	a0, a0, 12
 	addi	a0, a0, -1575

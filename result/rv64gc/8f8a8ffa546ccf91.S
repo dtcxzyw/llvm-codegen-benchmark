@@ -5,7 +5,7 @@ func0000000000000608:
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	addi	a0, a0, 16
-	addiw	a1, a1, 811
+	addi	a1, a1, 811
 	sltu	a0, a1, a0
 	ret
 

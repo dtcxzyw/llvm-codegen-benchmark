@@ -15,7 +15,7 @@ func0000000000000000:
 .LBB1_2:
 	lui	a1, 262144
 .LBB1_3:
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	andi	a0, a0, 1
 	slli	a0, a0, 15
 	or	a0, a0, a1

@@ -15,7 +15,7 @@ func0000000000000004:
 	lui	a2, 1048575
 	sltu	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sub	a2, a2, a1
 	li	a1, 10
 	czero.eqz	a2, a2, a0

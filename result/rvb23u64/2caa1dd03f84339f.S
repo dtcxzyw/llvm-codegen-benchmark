@@ -4,7 +4,7 @@ func0000000000000032:
 	subw	a0, a0, a1
 	lui	a1, 335544
 	zext.w	a0, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 37
 	ret
@@ -24,12 +24,12 @@ func0000000000000030:
 func00000000000000a2:
 	sext.w	a1, a1
 	lui	a2, 1048540
-	addiw	a2, a2, 1359
+	addi	a2, a2, 1359
 	sltu	a1, a1, a2
 	lui	a2, 235184
 	subw	a0, a0, a1
 	zext.w	a0, a0
-	addiw	a1, a2, 1725
+	addi	a1, a2, 1725
 	mul	a0, a0, a1
 	srli	a0, a0, 47
 	ret
@@ -40,7 +40,7 @@ func0000000000000022:
 	subw	a0, a0, a1
 	lui	a1, 335544
 	zext.w	a0, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 37
 	ret
@@ -51,7 +51,7 @@ func0000000000000020:
 	subw	a0, a0, a1
 	lui	a1, 335544
 	zext.w	a0, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 37
 	ret

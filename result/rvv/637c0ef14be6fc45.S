@@ -39,7 +39,7 @@ func0000000000000055:
 	li	a0, 365
 	vmacc.vx	v8, a0, v12
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -47,10 +47,10 @@ func0000000000000041:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmacc.vx	v8, a0, v12
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v8, a0
 	ret
 

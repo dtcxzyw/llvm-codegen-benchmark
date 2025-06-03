@@ -12,7 +12,7 @@ func0000000000000284:
 	vcpop.v	v10, v10
 	lui	a0, 1
 	vmsleu.vi	v12, v10, 1
-	addiw	a0, a0, -511
+	addi	a0, a0, -511
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

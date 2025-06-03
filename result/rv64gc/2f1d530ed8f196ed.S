@@ -5,7 +5,7 @@ func000000000000048c:
 	or	a0, a0, a1
 	lui	a1, 3
 	addi	a2, a2, 384
-	addiw	a1, a1, 63
+	addi	a1, a1, 63
 	add	a2, a2, a0
 	sext.w	a0, a0
 	srliw	a2, a2, 4
@@ -20,7 +20,7 @@ func000000000000008c:
 	lui	a2, 1032192
 	srai	a0, a0, 63
 	addi	a3, a2, -1
-	addiw	a2, a2, 511
+	addi	a2, a2, 511
 	and	a0, a0, a1
 	sext.w	a1, a0
 	addw	a0, a0, a3

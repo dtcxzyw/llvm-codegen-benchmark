@@ -12,7 +12,7 @@ func0000000000000015:
 	vzext.vf2	v14, v12
 	lui	a0, 21
 	vsub.vv	v8, v14, v8
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmacc.vx	v8, a0, v10
 	ret
 

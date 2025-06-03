@@ -4,11 +4,11 @@ func00000000000000aa:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 140
-	addiw	a0, a0, -68
+	addi	a0, a0, -68
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	lui	a0, 176
-	addiw	a0, a0, -1428
+	addi	a0, a0, -1428
 	vmerge.vxm	v8, v8, a0, v0
 	vadd.vv	v8, v10, v8
 	ret

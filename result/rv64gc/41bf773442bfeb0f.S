@@ -18,7 +18,7 @@ func00000000000000ec:
 	lui	a2, 272
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret

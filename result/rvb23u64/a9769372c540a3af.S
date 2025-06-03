@@ -5,7 +5,7 @@ func0000000000000155:
 	sh2add	a0, a2, a0
 	lui	a2, 1048563
 	sh1add	a0, a1, a0
-	addiw	a1, a2, -80
+	addi	a1, a2, -80
 	add	a0, a0, a1
 	ret
 

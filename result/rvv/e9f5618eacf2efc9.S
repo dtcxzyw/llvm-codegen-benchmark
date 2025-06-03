@@ -25,11 +25,11 @@ func00000000000001ef:
 func00000000000001e5:
 	lui	a0, 2153
 	lui	a1, 718
-	addiw	a0, a0, 547
+	addi	a0, a0, 547
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, %hi(.LCPI2_0)
-	addiw	a1, a1, -1183
+	addi	a1, a1, -1183
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vmacc.vx	v12, a1, v10
 	li	a1, 32

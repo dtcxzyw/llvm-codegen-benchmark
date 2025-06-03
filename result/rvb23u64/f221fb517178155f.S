@@ -38,7 +38,7 @@ func0000000000000029:
 	li	a3, -1024
 	lui	a4, 8
 	czero.nez	a2, a3, a2
-	addiw	a3, a4, 1131
+	addi	a3, a4, 1131
 	addi	a2, a2, 1131
 	slt	a1, a3, a1
 	czero.nez	a2, a2, a1
@@ -130,7 +130,7 @@ func0000000000000021:
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	lui	a3, 878478
-	addiw	a3, a3, 1991
+	addi	a3, a3, 1991
 	sltu	a1, a3, a1
 	li	a3, -306
 	addi	a2, a2, 59

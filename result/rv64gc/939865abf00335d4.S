@@ -23,7 +23,7 @@ func0000000000000012:
 	slli	a2, a2, 37
 	add	a1, a1, a2
 	lui	a2, 313
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	srai	a1, a1, 30
 	add	a0, a0, a2
 	add	a0, a0, a1

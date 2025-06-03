@@ -52,7 +52,7 @@ func0000000000000006:
 
 func0000000000000011:
 	lui	a3, 14
-	addiw	a3, a3, 1638
+	addi	a3, a3, 1638
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

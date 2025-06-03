@@ -29,7 +29,7 @@ func000000000000000a:
 func0000000000000004:
 	andi	a3, a1, 1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bnez	a3, .LBB3_2
 	mv	a2, a1
 .LBB3_2:

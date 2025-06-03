@@ -23,7 +23,7 @@ func000000000000001d:
 	vnmsub.vx	v11, a0, v10
 	lui	a0, 1048544
 	vwaddu.wv	v8, v8, v11
-	addiw	a0, a0, 30
+	addi	a0, a0, 30
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	ret

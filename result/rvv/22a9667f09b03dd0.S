@@ -31,7 +31,7 @@ func0000000000000018:
 	vmul.vx	v10, v10, a0
 	vdiv.vv	v8, v10, v8
 	lui	a0, 6
-	addiw	a0, a0, 423
+	addi	a0, a0, 423
 	vmsgtu.vx	v0, v8, a0
 	ret
 

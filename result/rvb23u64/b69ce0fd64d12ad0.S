@@ -3,7 +3,7 @@ func0000000000000024:
 	czero.eqz	a1, a2, a1
 	lui	a2, 244
 	sub	a0, a0, a1
-	addiw	a1, a2, 576
+	addi	a1, a2, 576
 	sltu	a0, a0, a1
 	ret
 

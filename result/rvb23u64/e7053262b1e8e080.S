@@ -5,7 +5,7 @@ func0000000000000002:
 	maxu	a0, a0, a1
 	addi	a0, a0, -13
 	zext.w	a1, a0
-	addiw	a2, a2, -945
+	addi	a2, a2, -945
 	mul	a1, a1, a2
 	srli	a1, a1, 34
 	sh1add	a2, a1, a1

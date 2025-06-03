@@ -23,7 +23,7 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	lui	a0, 1
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v10, v8
 	ret

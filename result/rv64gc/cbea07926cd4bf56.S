@@ -18,7 +18,7 @@ func000000000000c082:
 func000000000000c0b0:
 	seqz	a1, a1
 	lui	a3, 8
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	xor	a0, a0, a3
 	or	a0, a0, a2
 	snez	a0, a0
@@ -139,7 +139,7 @@ func0000000000004088:
 	sltiu	a2, a2, 2
 	lui	a3, 1
 	sltiu	a0, a0, 3
-	addiw	a3, a3, -1122
+	addi	a3, a3, -1122
 	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a2
@@ -179,7 +179,7 @@ func000000000000108c:
 	seqz	a1, a1
 	or	a1, a1, a2
 	lui	a2, 24
-	addiw	a2, a2, 1697
+	addi	a2, a2, 1697
 	slt	a0, a0, a2
 	or	a0, a0, a1
 	ret

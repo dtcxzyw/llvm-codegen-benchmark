@@ -26,7 +26,7 @@ func0000000000000033:
 	slli	a2, a2, 39
 	bgez	a2, .LBB3_2
 	lui	a1, 4
-	addiw	a1, a1, -1764
+	addi	a1, a1, -1764
 .LBB3_2:
 	add	a0, a0, a1
 	ret

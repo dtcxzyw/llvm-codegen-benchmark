@@ -15,7 +15,7 @@ func0000000000000041:
 	lui	a1, 1044738
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a1, a1, 240
+	addi	a1, a1, 240
 	or	a0, a0, a1
 	ret
 

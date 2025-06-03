@@ -19,7 +19,7 @@ func0000000000000154:
 
 func0000000000000119:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a0, a1
@@ -42,7 +42,7 @@ func000000000000010c:
 
 func0000000000000114:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a0, a1
@@ -62,7 +62,7 @@ func0000000000000018:
 
 func0000000000000158:
 	lui	a2, 4096
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a1, a0
@@ -70,7 +70,7 @@ func0000000000000158:
 
 func0000000000000118:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a1, a0
@@ -102,7 +102,7 @@ func0000000000000159:
 
 func00000000000001f8:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a1, a0
@@ -110,7 +110,7 @@ func00000000000001f8:
 
 func00000000000001f9:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a0, a1

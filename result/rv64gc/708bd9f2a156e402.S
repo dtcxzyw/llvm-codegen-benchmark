@@ -9,9 +9,9 @@ func000000000000018f:
 	lui	a5, 209715
 	lui	a1, 61681
 	or	a2, a2, a3
-	addiw	a3, a4, 1365
-	addiw	a4, a5, 819
-	addiw	a1, a1, -241
+	addi	a3, a4, 1365
+	addi	a4, a5, 819
+	addi	a1, a1, -241
 	srli	a5, a2, 2
 	or	a2, a2, a5
 	slli	a5, a3, 32
@@ -36,7 +36,7 @@ func000000000000018f:
 	srli	a2, a2, 2
 	and	a2, a2, a4
 	lui	a4, 4112
-	addiw	a4, a4, 257
+	addi	a4, a4, 257
 	add	a2, a2, a3
 	srli	a3, a2, 4
 	add	a2, a2, a3

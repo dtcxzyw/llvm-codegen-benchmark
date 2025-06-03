@@ -3,7 +3,7 @@ func0000000000000007:
 	sllw	a0, a1, a0
 	lui	a1, 135168
 	andi	a0, a0, 14
-	addiw	a1, a1, -1026
+	addi	a1, a1, -1026
 	xor	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000002:
 	sllw	a0, a1, a0
 	lui	a1, 1
 	not	a0, a0
-	addiw	a1, a1, -57
+	addi	a1, a1, -57
 	and	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000006:
 	sllw	a0, a1, a0
 	lui	a1, 240
 	not	a0, a0
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	and	a0, a0, a1
 	ret
 

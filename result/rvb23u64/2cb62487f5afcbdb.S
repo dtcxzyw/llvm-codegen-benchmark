@@ -14,7 +14,7 @@ func000000000000001e:
 	lui	a1, 419430
 	addi	a0, a0, 80
 	zext.w	a0, a0
-	addiw	a1, a1, 1639
+	addi	a1, a1, 1639
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret
@@ -24,7 +24,7 @@ func0000000000000000:
 	lui	a1, 149797
 	addi	a0, a0, -4
 	zext.w	a2, a0
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a0, a0, a1

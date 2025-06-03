@@ -76,7 +76,7 @@ func0000000000000028:
 	lui	a2, 2
 	sltiu	a0, a0, 8
 	srli	a1, a1, 48
-	addiw	a2, a2, 769
+	addi	a2, a2, 769
 	xor	a1, a1, a2
 	seqz	a1, a1
 	not	a0, a0
@@ -168,7 +168,7 @@ func000000000000008c:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -12
+	addi	a2, a2, -12
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

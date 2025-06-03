@@ -13,7 +13,7 @@ func0000000000000034:
 	lui	a0, 1015808
 	vandn.vx	v8, v12, a0, v0.t
 	lui	a0, 230
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

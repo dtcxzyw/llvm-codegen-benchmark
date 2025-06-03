@@ -101,7 +101,7 @@ func0000000000000012:
 	add	a1, a1, a2
 	lui	a2, 313
 	add	a0, a0, a1
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 

@@ -25,13 +25,13 @@ func00000000000000ad:
 	sext.w	a2, a2
 	bgtz	a2, .LBB2_2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 .LBB2_2:
 	lui	a2, 1221
-	addiw	a2, a2, -1216
+	addi	a2, a2, -1216
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret

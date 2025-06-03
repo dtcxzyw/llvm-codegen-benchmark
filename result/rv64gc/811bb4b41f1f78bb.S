@@ -119,7 +119,7 @@ func0000000000000012:
 	ret
 .LBB10_2:
 	lui	a1, 1044480
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	add	a0, a0, a1
 	ret
 
@@ -135,7 +135,7 @@ func0000000000000032:
 	ret
 .LBB11_2:
 	lui	a1, 1044480
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	add	a0, a0, a1
 	ret
 

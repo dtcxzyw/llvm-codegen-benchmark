@@ -26,7 +26,7 @@ func0000000000000010:
 func0000000000000013:
 	andi	a1, a1, 1
 	lui	a3, 2
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	li	a3, 126
 	czero.nez	a2, a3, a2
@@ -41,10 +41,10 @@ func0000000000000013:
 func0000000000000053:
 	andi	a1, a1, 1
 	lui	a3, 2
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	lui	a3, 1048575
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	lui	a3, 1
 	add	a2, a2, a3

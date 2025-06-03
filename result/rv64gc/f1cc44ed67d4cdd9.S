@@ -2,7 +2,7 @@ func0000000000000011:
 	sraiw	a1, a0, 31
 	lui	a2, 559241
 	xor	a0, a0, a1
-	addiw	a2, a2, -1911
+	addi	a2, a2, -1911
 	subw	a0, a0, a1
 	addiw	a0, a0, 30
 	mul	a1, a0, a2

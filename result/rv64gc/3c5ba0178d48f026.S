@@ -52,7 +52,7 @@ func0000000000000298:
 func0000000000000294:
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	sltiu	a1, a1, 16
 	and	a2, a2, a3
 	seqz	a2, a2

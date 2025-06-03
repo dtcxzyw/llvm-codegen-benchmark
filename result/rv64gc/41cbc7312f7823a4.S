@@ -1,8 +1,8 @@
 func0000000000000161:
 	lui	a2, 838861
 	lui	a3, 629146
-	addiw	a2, a2, -819
-	addiw	a3, a3, -1638
+	addi	a2, a2, -819
+	addi	a3, a3, -1638
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32

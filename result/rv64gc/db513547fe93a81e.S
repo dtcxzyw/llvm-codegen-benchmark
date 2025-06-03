@@ -4,7 +4,7 @@ func0000000000000226:
 	sub	a1, a1, a2
 	lui	a2, 699051
 	sub	a4, a4, a3
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a1, a1, a4
 	slli	a3, a2, 32
 	srai	a1, a1, 3

@@ -11,7 +11,7 @@ func0000000000000006:
 	lui	a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v8, 0
-	addiw	a0, a0, -1384
+	addi	a0, a0, -1384
 	vminu.vx	v8, v8, a0
 	li	a0, 100
 	vmerge.vxm	v8, v8, a0, v0

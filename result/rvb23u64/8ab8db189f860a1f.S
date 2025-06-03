@@ -22,7 +22,7 @@ func000000000000000f:
 func0000000000000007:
 	andi	a1, a1, 1
 	lui	a3, 1048560
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	czero.eqz	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1

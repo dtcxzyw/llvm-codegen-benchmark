@@ -21,7 +21,7 @@ func0000000000000000:
 	slli	a1, a1, 8
 	addw	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	add	a0, a0, a1
 	ret
 
@@ -29,7 +29,7 @@ func00000000000000fd:
 	slli	a1, a1, 6
 	addw	a0, a0, a1
 	lui	a1, 1048573
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 

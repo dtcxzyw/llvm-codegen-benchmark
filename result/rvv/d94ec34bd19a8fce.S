@@ -5,7 +5,7 @@ func0000000000000032:
 	vsra.vi	v10, v10, 3
 	lui	a0, 838861
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
@@ -24,7 +24,7 @@ func0000000000000036:
 	vsra.vi	v10, v10, 3
 	lui	a0, 699051
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)

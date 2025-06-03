@@ -1,6 +1,6 @@
 func000000000000001f:
 	lui	a2, 8
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 24

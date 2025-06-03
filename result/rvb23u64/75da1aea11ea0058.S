@@ -1,6 +1,6 @@
 func0000000000000008:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	minu	a2, a2, a3
 	add	a0, a0, a2
 	zext.w	a1, a1

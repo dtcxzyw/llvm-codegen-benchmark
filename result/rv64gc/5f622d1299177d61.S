@@ -19,7 +19,7 @@ func0000000000000021:
 
 func0000000000000281:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	addi	a1, a1, -256
 	seqz	a1, a1
@@ -116,10 +116,10 @@ func0000000000000094:
 	srliw	a1, a1, 3
 	lui	a2, 4
 	slli	a1, a1, 3
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

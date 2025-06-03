@@ -19,8 +19,7 @@ func0000000000000007:
 
 func000000000000000f:
 	sext.w	a0, a0
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -4
 	add	a0, a0, a1
 	slli	a0, a0, 31

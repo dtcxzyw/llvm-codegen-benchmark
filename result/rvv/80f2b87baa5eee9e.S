@@ -14,7 +14,7 @@ func0000000000000009:
 	vadd.vx	v8, v8, a0
 	lui	a0, 163
 	vsra.vi	v8, v8, 21
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000001:
 	vadd.vx	v8, v8, a0
 	lui	a0, 163
 	vsra.vi	v8, v8, 21
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
 

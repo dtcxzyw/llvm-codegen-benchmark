@@ -4,7 +4,7 @@ func0000000000000006:
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 322639
-	addiw	a2, a2, -945
+	addi	a2, a2, -945
 	or	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2
@@ -20,7 +20,7 @@ func000000000000000a:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	lui	a2, 149797
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	or	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2
@@ -37,13 +37,13 @@ func000000000000000a:
 func0000000000000008:
 	sext.w	a2, a1
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	sltu	a2, a3, a2
 	lui	a3, 274878
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 244
-	addiw	a3, a3, -381
+	addi	a3, a3, -381
 	or	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a3

@@ -5,7 +5,7 @@ func00000000000000f3:
 	srli	a1, a1, 24
 	add	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 232
+	addi	a2, a2, 232
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -47,7 +47,7 @@ func0000000000000070:
 	addi	a1, a1, -1
 	lui	a2, 6
 	slli	a1, a1, 33
-	addiw	a2, a2, -1952
+	addi	a2, a2, -1952
 	srli	a1, a1, 29
 	add	a0, a0, a2
 	add	a0, a0, a1

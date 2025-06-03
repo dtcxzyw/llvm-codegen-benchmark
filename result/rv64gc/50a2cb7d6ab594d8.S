@@ -7,7 +7,7 @@ func0000000000000001:
 	srli	a2, a0, 8
 	srliw	t1, a0, 24
 	lui	t0, 61681
-	addiw	t5, a6, -256
+	addi	t5, a6, -256
 	and	a1, a1, t5
 	or	t2, a1, a3
 	lui	a6, 209715
@@ -18,9 +18,9 @@ func0000000000000001:
 	lui	t3, 349525
 	and	a3, a0, a7
 	slli	t1, t1, 32
-	addiw	a5, t0, -241
-	addiw	a4, a6, 819
-	addiw	a2, t3, 1365
+	addi	a5, t0, -241
+	addi	a4, a6, 819
+	addi	a2, t3, 1365
 	slli	a3, a3, 24
 	or	a6, a3, t1
 	slli	a1, a5, 32

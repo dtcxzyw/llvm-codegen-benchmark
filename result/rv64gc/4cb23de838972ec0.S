@@ -4,7 +4,7 @@ func0000000000000104:
 	srli	a2, a2, 56
 	or	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -16,7 +16,7 @@ func0000000000000008:
 	srli	a2, a2, 56
 	or	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000108:
 	srli	a2, a2, 56
 	or	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -40,7 +40,7 @@ func0000000000000004:
 	srli	a2, a2, 56
 	or	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -52,7 +52,7 @@ func0000000000000068:
 	srli	a2, a2, 56
 	or	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1

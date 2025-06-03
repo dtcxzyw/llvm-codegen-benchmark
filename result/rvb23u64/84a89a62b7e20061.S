@@ -17,7 +17,7 @@ func0000000000000001:
 	li	a3, 1874
 	czero.nez	a2, a3, a2
 	lui	a3, 1
-	addiw	a3, a3, 1177
+	addi	a3, a3, 1177
 	addi	a1, a1, -7
 	add	a2, a2, a3
 	czero.eqz	a0, a0, a1

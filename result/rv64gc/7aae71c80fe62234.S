@@ -82,10 +82,10 @@ func0000000000000034:
 func0000000000000068:
 	sext.w	a0, a0
 	lui	a2, 2
-	addiw	a2, a2, 1808
+	addi	a2, a2, 1808
 	bgeu	a2, a0, .LBB9_2
 	lui	a0, 256
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	ret
 .LBB9_2:
 	slliw	a0, a1, 10
@@ -102,7 +102,7 @@ func0000000000000064:
 func000000000000000a:
 	sext.w	a0, a0
 	lui	a2, 2048
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	bge	a2, a0, .LBB11_2
 	lui	a0, 524288
 	addiw	a0, a0, -256

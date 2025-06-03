@@ -61,7 +61,7 @@ func0000000000000798:
 	lui	a2, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a2, a2, -24
+	addi	a2, a2, -24
 	sltu	a0, a2, a0
 	ret
 
@@ -91,7 +91,7 @@ func00000000000007f4:
 	lui	a2, 5
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, -2017
+	addi	a1, a2, -2017
 	sltu	a0, a0, a1
 	ret
 
@@ -102,7 +102,7 @@ func00000000000007f8:
 	lui	a2, 5
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, -2018
+	addi	a1, a2, -2018
 	sltu	a0, a1, a0
 	ret
 

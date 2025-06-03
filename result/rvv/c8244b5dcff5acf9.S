@@ -30,7 +30,7 @@ func000000000000002c:
 	lui	a0, 262144
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vand.vi	v8, v8, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v9, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma

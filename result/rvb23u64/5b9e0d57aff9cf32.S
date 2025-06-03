@@ -7,7 +7,7 @@ func0000000000000010:
 
 func0000000000000000:
 	lui	a3, 1048332
-	addiw	a3, a3, -576
+	addi	a3, a3, -576
 	mul	a2, a2, a3
 	sub	a0, a0, a1
 	add	a0, a0, a2
@@ -22,7 +22,7 @@ func0000000000000020:
 
 func0000000000000015:
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	mul	a2, a2, a3
 	sub	a1, a1, a0
 	sub	a0, a2, a1
@@ -37,7 +37,7 @@ func0000000000000014:
 
 func0000000000000035:
 	lui	a3, 2
-	addiw	a3, a3, -529
+	addi	a3, a3, -529
 	mul	a2, a2, a3
 	sub	a1, a1, a0
 	sub	a0, a2, a1

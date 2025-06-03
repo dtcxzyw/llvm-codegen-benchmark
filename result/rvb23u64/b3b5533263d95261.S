@@ -11,8 +11,7 @@ func000000000000000f:
 
 func000000000000000b:
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 38
+	bseti	a1, zero, 38
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	ret
@@ -25,7 +24,7 @@ func0000000000000008:
 func0000000000000005:
 	mul	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -193
+	addi	a1, a1, -193
 	add	a0, a0, a1
 	ret
 
@@ -63,7 +62,7 @@ func0000000000000001:
 func000000000000000e:
 	mul	a0, a0, a1
 	lui	a1, 522248
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	slli	a2, a1, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

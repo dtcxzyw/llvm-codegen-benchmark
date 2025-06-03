@@ -4,9 +4,9 @@ func000000000000000d:
 	sub	a0, a0, a1
 	lui	a1, 838861
 	srai	a2, a2, 3
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	srai	a0, a0, 3
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	slli	a4, a1, 32

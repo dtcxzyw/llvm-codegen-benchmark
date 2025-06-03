@@ -131,7 +131,7 @@ func0000000000000208:
 	zext.b	a0, a0
 	sext.w	a2, a2
 	lui	a3, 49134
-	addiw	a3, a3, -778
+	addi	a3, a3, -778
 	sltiu	a0, a0, 130
 	sltu	a2, a2, a3
 	or	a0, a0, a1

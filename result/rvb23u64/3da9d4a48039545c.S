@@ -59,7 +59,7 @@ func0000000000000037:
 	sext.w	a0, a0
 	lui	a2, 930062
 	add	a0, a0, a1
-	addiw	a1, a2, -1681
+	addi	a1, a2, -1681
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	ret

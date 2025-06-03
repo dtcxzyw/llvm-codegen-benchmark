@@ -4,7 +4,7 @@ func0000000000000526:
 	li	a3, -1024
 	lui	a4, 8
 	czero.nez	a2, a3, a2
-	addiw	a3, a4, 1131
+	addi	a3, a4, 1131
 	addi	a2, a2, 1131
 	slt	a3, a3, a0
 	czero.nez	a2, a2, a3

@@ -38,7 +38,7 @@ func0000000000000190:
 func0000000000000180:
 	lui	a3, 1
 	slli	a0, a0, 32
-	addiw	a3, a3, -2024
+	addi	a3, a3, -2024
 	srli	a0, a0, 29
 	mul	a1, a1, a3
 	add	a0, a0, a2

@@ -4,7 +4,7 @@ func00000000000000c9:
 	subw	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -16,7 +16,7 @@ func00000000000000cb:
 	subw	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -38,12 +38,12 @@ func00000000000000c3:
 func000000000000028b:
 	sext.w	a2, a2
 	lui	a3, 1048540
-	addiw	a3, a3, 1359
+	addi	a3, a3, 1359
 	sltu	a2, a2, a3
 	lui	a3, 235184
 	subw	a1, a1, a2
 	zext.w	a1, a1
-	addiw	a2, a3, 1725
+	addi	a2, a3, 1725
 	mul	a1, a1, a2
 	srli	a1, a1, 47
 	addw	a0, a0, a1
@@ -55,7 +55,7 @@ func0000000000000089:
 	subw	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -67,7 +67,7 @@ func000000000000008b:
 	subw	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1
@@ -79,7 +79,7 @@ func0000000000000081:
 	subw	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	addw	a0, a0, a1

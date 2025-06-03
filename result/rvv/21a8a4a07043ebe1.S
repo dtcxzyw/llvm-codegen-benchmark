@@ -14,7 +14,7 @@ func0000000000000188:
 	lui	a0, 256
 	vor.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

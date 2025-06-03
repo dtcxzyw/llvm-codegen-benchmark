@@ -77,7 +77,7 @@ func000000000000006a:
 	mv	a0, a1
 	bge	a3, a2, .LBB10_2
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB10_2:
 	ret
 

@@ -22,7 +22,7 @@ func00000000000000f0:
 	add	a0, a0, a1
 	lui	a1, 10126
 	add	a0, a0, a2
-	addiw	a1, a1, -537
+	addi	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448
 	add	a0, a0, a1
@@ -33,7 +33,7 @@ func000000000000007f:
 	add	a0, a0, a1
 	lui	a1, 10126
 	add	a0, a0, a2
-	addiw	a1, a1, -537
+	addi	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448
 	add	a0, a0, a1

@@ -13,7 +13,7 @@ func0000000000000000:
 	mv	a3, a0
 	addw	a0, a1, a2
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	andi	a3, a3, 1
 	bgeu	a0, a1, .LBB1_3
 	bnez	a3, .LBB1_4

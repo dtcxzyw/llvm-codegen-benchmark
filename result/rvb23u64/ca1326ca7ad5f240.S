@@ -1,7 +1,7 @@
 func0000000000000005:
 	add	a0, a0, a1
 	lui	a1, 526344
-	addiw	a1, a1, 129
+	addi	a1, a1, 129
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulh	a1, a0, a1
@@ -25,7 +25,7 @@ func0000000000000001:
 	srai	a1, a1, 25
 	add	a1, a1, a2
 	lui	a2, 21094
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

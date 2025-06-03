@@ -68,7 +68,7 @@ func0000000000000004:
 	lui	a3, 1048318
 	sltu	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -3
+	addi	a3, a3, -3
 	and	a1, a1, a2
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1

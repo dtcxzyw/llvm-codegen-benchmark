@@ -31,7 +31,7 @@ func0000000000000061:
 func00000000000000e6:
 	sext.w	a1, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	ret
@@ -39,7 +39,7 @@ func00000000000000e6:
 func0000000000000008:
 	zext.w	a1, a1
 	lui	a2, 4841
-	addiw	a2, a2, -611
+	addi	a2, a2, -611
 	slli	a2, a2, 11
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
@@ -48,7 +48,7 @@ func0000000000000008:
 func000000000000006a:
 	zext.w	a1, a1
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a1, a1, a2
 	slt	a0, a1, a0
 	ret
@@ -56,7 +56,7 @@ func000000000000006a:
 func0000000000000068:
 	zext.w	a1, a1
 	lui	a2, 1318
-	addiw	a2, a2, 1472
+	addi	a2, a2, 1472
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -64,7 +64,7 @@ func0000000000000068:
 func00000000000000c1:
 	sext.w	a1, a1
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2

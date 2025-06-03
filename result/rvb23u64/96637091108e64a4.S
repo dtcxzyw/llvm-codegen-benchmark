@@ -2,7 +2,7 @@ func0000000000000007:
 	sext.w	a2, a2
 	lui	a3, 16
 	snez	a2, a2
-	addiw	a3, a3, -1664
+	addi	a3, a3, -1664
 	slli	a2, a2, 20
 	and	a1, a1, a3
 	or	a0, a0, a1
@@ -14,7 +14,7 @@ func0000000000000004:
 	lui	a3, 32768
 	and	a1, a1, a3
 	lui	a3, 65536
-	addiw	a3, a3, 353
+	addi	a3, a3, 353
 	xor	a2, a2, a3
 	seqz	a2, a2
 	slli	a2, a2, 21
@@ -28,7 +28,7 @@ func000000000000001b:
 	srli	a2, a2, 31
 	and	a2, a2, a3
 	lui	a3, 128
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	and	a1, a1, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -66,7 +66,7 @@ func0000000000000033:
 	sext.w	a2, a2
 	lui	a3, 4096
 	snez	a2, a2
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	slli	a2, a2, 24
 	and	a1, a1, a3
 	or	a0, a0, a1

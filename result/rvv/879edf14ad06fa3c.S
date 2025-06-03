@@ -2,7 +2,7 @@ func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 3
 	lui	a0, 262144
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v8, v12

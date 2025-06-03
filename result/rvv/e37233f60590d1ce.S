@@ -20,7 +20,7 @@ func00000000000003c0:
 	vadd.vv	v8, v10, v8
 	lui	a0, 5142
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -32,7 +32,7 @@ func00000000000001df:
 	vadd.vv	v8, v10, v8
 	lui	a0, 5142
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -44,7 +44,7 @@ func0000000000000000:
 	vadd.vv	v8, v10, v8
 	lui	a0, 5142
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0

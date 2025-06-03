@@ -5,7 +5,7 @@ func000000000000019d:
 	vadd.vx	v10, v12, a0
 	lui	a0, 1048409
 	vsrl.vi	v10, v10, 21
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -16,7 +16,7 @@ func00000000000001bf:
 	vadd.vx	v10, v12, a0
 	lui	a0, 115
 	vsrl.vi	v10, v10, 21
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 

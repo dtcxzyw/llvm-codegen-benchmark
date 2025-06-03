@@ -4,7 +4,7 @@ func0000000000000012:
 	mv	a2, a0
 	srai	a1, a1, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a3, a0, 32
 	add	a3, a3, a0
 	lui	a0, %hi(.LCPI0_0)
@@ -31,7 +31,7 @@ func0000000000000010:
 	mv	a2, a0
 	srai	a1, a1, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a3, a0, 32
 	add	a3, a3, a0
 	lui	a0, %hi(.LCPI1_0)

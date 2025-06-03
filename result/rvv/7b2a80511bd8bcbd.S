@@ -53,7 +53,7 @@ func00000000000007f8:
 	lui	a0, 4
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, -12
+	addi	a0, a0, -12
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -17,7 +17,7 @@ func0000000000000011:
 	vmsltu.vv	v0, v12, v10
 	vzext.vf2	v10, v8
 	lui	a0, 1024
-	addiw	a0, a0, -27
+	addi	a0, a0, -27
 	slli	a0, a0, 10
 	vmerge.vxm	v8, v10, a0, v0
 	ret

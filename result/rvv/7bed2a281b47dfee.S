@@ -40,7 +40,7 @@ func0000000000000055:
 	lui	a0, 1
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 2
-	addiw	a0, a0, 11
+	addi	a0, a0, 11
 	vadd.vx	v8, v8, a0
 	ret
 

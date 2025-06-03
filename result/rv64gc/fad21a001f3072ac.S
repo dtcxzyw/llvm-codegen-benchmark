@@ -4,7 +4,7 @@ func00000000000000f4:
 	lui	a0, 8
 	or	a1, a1, a2
 	sext.w	a1, a1
-	addiw	a2, a0, 1132
+	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 1131
 .LBB0_2:
@@ -15,7 +15,7 @@ func00000000000000c1:
 	or	a0, a0, a1
 	lui	a1, 8
 	sext.w	a0, a0
-	addiw	a1, a1, 109
+	addi	a1, a1, 109
 	beq	a0, a1, .LBB1_2
 	li	a0, 4
 	ret
@@ -42,11 +42,11 @@ func00000000000000f8:
 	li	a1, 1560
 	bltu	a1, a0, .LBB3_2
 	lui	a0, 16
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	ret
 .LBB3_2:
 	lui	a0, 2048
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	ret
 
 func00000000000000a1:
@@ -67,9 +67,9 @@ func0000000000000006:
 	slli	a2, a2, 9
 	lui	a0, 10
 	blt	a1, a2, .LBB5_2
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	ret
 .LBB5_2:
-	addiw	a0, a0, 417
+	addi	a0, a0, 417
 	ret
 

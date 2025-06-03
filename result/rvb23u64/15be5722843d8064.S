@@ -148,7 +148,7 @@ func00000000000001e4:
 	mul	a1, a1, a2
 	lui	a2, 64
 	add	a0, a0, a1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	sltu	a0, a0, a2
 	ret
 

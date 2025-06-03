@@ -30,7 +30,7 @@ func0000000000000021:
 func000000000000002a:
 	sext.w	a0, a0
 	lui	a2, 32
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	bge	a2, a0, .LBB3_2
 	lui	a0, 64
 	ret

@@ -1,6 +1,6 @@
 func000000000000006a:
 	lui	a2, 6
-	addiw	a2, a2, 973
+	addi	a2, a2, 973
 	slt	a0, a2, a0
 	li	a2, 255
 	czero.nez	a1, a1, a0

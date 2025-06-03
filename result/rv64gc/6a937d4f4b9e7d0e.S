@@ -18,7 +18,7 @@ func0000000000000018:
 	lui	a2, 171
 	slli	a0, a0, 32
 	srli	a1, a1, 32
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	srli	a0, a0, 32
 	slli	a2, a2, 12
 	addi	a2, a2, -1365
@@ -34,7 +34,7 @@ func0000000000000001:
 	lui	a2, 146
 	slli	a0, a0, 32
 	srli	a1, a1, 32
-	addiw	a2, a2, -1493
+	addi	a2, a2, -1493
 	srli	a0, a0, 32
 	slli	a2, a2, 12
 	addi	a2, a2, 965

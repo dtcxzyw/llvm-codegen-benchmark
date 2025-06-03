@@ -39,7 +39,7 @@ func0000000000000028:
 	li	a2, 16
 	bgeu	a2, a1, .LBB4_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB4_2:
 	ret
 
@@ -58,7 +58,7 @@ func000000000000002a:
 	or	a1, a1, a2
 	lui	a2, 8
 	sext.w	a1, a1
-	addiw	a2, a2, 1131
+	addi	a2, a2, 1131
 	bge	a2, a1, .LBB7_2
 	lui	a0, 8
 .LBB7_2:

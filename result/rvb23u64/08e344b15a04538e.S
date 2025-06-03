@@ -1,7 +1,7 @@
 func000000000000000a:
 	addw	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	slt	a0, a1, a0
 	ret
 

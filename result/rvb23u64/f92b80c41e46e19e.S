@@ -1,7 +1,7 @@
 func0000000000000006:
 	addw	a1, a1, a2
 	lui	a2, 419430
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	mul	a2, a2, a1
 	srli	a3, a2, 63
 	srai	a2, a2, 36

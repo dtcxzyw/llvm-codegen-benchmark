@@ -69,7 +69,7 @@ func000000000000004a:
 
 func0000000000000064:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	bgeu	a1, a3, .LBB10_2
 	addi	a0, a2, 1
 .LBB10_2:
@@ -102,7 +102,7 @@ func0000000000000041:
 
 func0000000000000004:
 	lui	a3, 2048
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	bgeu	a1, a3, .LBB15_2
 	addi	a0, a2, 1
 .LBB15_2:

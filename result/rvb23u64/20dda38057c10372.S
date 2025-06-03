@@ -9,7 +9,7 @@ func0000000000000000:
 	srai	a3, a3, 13
 	add	a3, a3, a4
 	lui	a4, 21
-	addiw	a4, a4, 384
+	addi	a4, a4, 384
 	mul	a3, a3, a4
 	sub	a2, a2, a3
 	czero.nez	a2, a2, a0

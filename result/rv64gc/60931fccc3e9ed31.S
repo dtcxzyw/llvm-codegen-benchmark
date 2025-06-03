@@ -47,7 +47,7 @@ func0000000000000014:
 	srli	a1, a0, 32
 	bnez	a1, .LBB8_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB8_2:
 	ret
 

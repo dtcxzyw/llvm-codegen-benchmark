@@ -21,7 +21,7 @@ func0000000000000388:
 	vadd.vi	v10, v10, 1
 	lui	a0, 2
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -130,7 +130,7 @@ func00000000000003f4:
 	vadd.vi	v10, v10, 1
 	lui	a0, 1
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret

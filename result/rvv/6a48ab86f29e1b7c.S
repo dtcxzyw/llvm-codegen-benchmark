@@ -7,7 +7,7 @@ func0000000000000015:
 
 func0000000000000011:
 	lui	a0, 1048573
-	addiw	a0, a0, 77
+	addi	a0, a0, 77
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmacc.vx	v8, a0, v10
 	lui	a0, 524288

@@ -10,7 +10,7 @@ func000000000000000b:
 
 func0000000000000003:
 	lui	a1, 98
-	addiw	a1, a1, -488
+	addi	a1, a1, -488
 	srl	a0, a1, a0
 	ret
 

@@ -3,7 +3,7 @@ func000000000000001f:
 	or	a0, a0, a1
 	lui	a1, 16
 	slli	a2, a2, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	or	a0, a0, a2
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
@@ -21,7 +21,7 @@ func0000000000000018:
 	or	a0, a0, a1
 	lui	a1, 16
 	slli	a2, a2, 4
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	or	a0, a0, a2
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
@@ -39,7 +39,7 @@ func000000000000001e:
 	or	a0, a0, a1
 	lui	a1, 16
 	slli	a2, a2, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	or	a0, a0, a2
 	srli	a2, a0, 8
 	srliw	a3, a0, 24

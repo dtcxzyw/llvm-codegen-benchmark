@@ -15,7 +15,7 @@ func0000000000000001:
 	lui	a1, 804872
 	slli	a2, a2, 26
 	czero.eqz	a0, a2, a0
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	add	a0, a0, a1
 	ret
 

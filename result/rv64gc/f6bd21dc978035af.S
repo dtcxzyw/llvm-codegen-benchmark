@@ -5,7 +5,7 @@ func0000000000000000:
 	xor	a1, a1, a3
 	sub	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	srai	a2, a2, 63
 	xor	a0, a0, a2
 	sub	a0, a0, a2

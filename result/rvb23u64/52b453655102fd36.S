@@ -7,9 +7,8 @@ func0000000000000024:
 
 func0000000000000028:
 	sub	a1, a1, a2
-	li	a2, 1
+	bseti	a2, zero, 33
 	srli	a1, a1, 2
-	slli	a2, a2, 33
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltu	a0, a0, a1

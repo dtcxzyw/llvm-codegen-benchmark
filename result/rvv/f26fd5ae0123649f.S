@@ -3,7 +3,7 @@ func000000000000000b:
 	vadd.vi	v10, v8, -1
 	li	a0, 1
 	vwaddu.vx	v8, v10, a0
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -16,7 +16,7 @@ func0000000000000003:
 	addi	a0, a0, -1
 	vwaddu.vx	v8, v10, a0
 	lui	a0, 512
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

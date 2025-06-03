@@ -18,7 +18,7 @@ func0000000000000055:
 	li	a0, 10
 	vmacc.vx	v8, a0, v10
 	lui	a0, 1048563
-	addiw	a0, a0, -80
+	addi	a0, a0, -80
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -37,7 +37,7 @@ func0000000000000054:
 	li	a0, -365
 	vmacc.vx	v8, a0, v10
 	lui	a0, 176
-	addiw	a0, a0, -1429
+	addi	a0, a0, -1429
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -45,10 +45,10 @@ func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	lui	a0, 36
-	addiw	a0, a0, -1359
+	addi	a0, a0, -1359
 	vmacc.vx	v8, a0, v10
 	lui	a0, 1048400
-	addiw	a0, a0, 1427
+	addi	a0, a0, 1427
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -75,7 +75,7 @@ func0000000000000030:
 	li	a0, 448
 	vmacc.vx	v8, a0, v10
 	lui	a0, 1
-	addiw	a0, a0, -736
+	addi	a0, a0, -736
 	vadd.vx	v8, v8, a0
 	ret
 

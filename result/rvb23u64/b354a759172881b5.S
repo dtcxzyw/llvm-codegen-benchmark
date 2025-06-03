@@ -8,7 +8,7 @@ func00000000000003f8:
 	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a0, a0, a1
 	lui	a1, 32
-	addiw	a4, a4, -15
+	addi	a4, a4, -15
 	mulhu	a3, a2, a3
 	sub	a2, a2, a3
 	srli	a2, a2, 1
@@ -16,7 +16,7 @@ func00000000000003f8:
 	srli	a2, a2, 15
 	mul	a2, a2, a4
 	add	a0, a0, a2
-	addiw	a1, a1, -31
+	addi	a1, a1, -31
 	sltu	a0, a1, a0
 	ret
 

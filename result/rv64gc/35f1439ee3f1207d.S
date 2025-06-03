@@ -75,7 +75,7 @@ func000000000000018c:
 	sext.w	a2, a0
 	snez	a1, a1
 	lui	a0, 4096
-	addiw	a3, a0, 7
+	addi	a3, a0, 7
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a1, a1, a2
@@ -84,7 +84,7 @@ func000000000000018c:
 	srli	a0, a0, 32
 	ret
 .LBB7_2:
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 
 func000000000000008c:
@@ -97,7 +97,7 @@ func000000000000008c:
 	ret
 .LBB8_2:
 	lui	a0, 16
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	ret
 
 func000000000000002c:

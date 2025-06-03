@@ -2,7 +2,7 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
 	lui	a0, 782271
-	addiw	a0, a0, -65
+	addi	a0, a0, -65
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	li	a1, -1
@@ -16,7 +16,7 @@ func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
 	lui	a0, 618391
-	addiw	a0, a0, -105
+	addi	a0, a0, -105
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	li	a1, -1
@@ -30,7 +30,7 @@ func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	li	a1, -1
@@ -69,7 +69,7 @@ func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

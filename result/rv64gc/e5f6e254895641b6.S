@@ -8,7 +8,7 @@ func000000000000002c:
 
 func0000000000000021:
 	lui	a2, 1
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	and	a1, a1, a2
 	xori	a1, a1, 64
 	or	a0, a0, a1

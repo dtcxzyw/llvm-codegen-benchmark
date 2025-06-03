@@ -36,12 +36,12 @@ func0000000000000008:
 	ret
 .LBB5_2:
 	lui	a0, 1
-	addiw	a0, a0, -1984
+	addi	a0, a0, -1984
 	ret
 
 func0000000000000014:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	bltu	a0, a1, .LBB6_2
 	li	a0, 10
 	ret

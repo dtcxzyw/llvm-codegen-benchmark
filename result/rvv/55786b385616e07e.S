@@ -28,7 +28,7 @@ func00000000000001a4:
 	vmv.v.i	v10, 0
 	lui	a0, 1048575
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vadd.vv	v8, v8, v10
 	vadd.vx	v8, v8, a0
 	li	a0, -2048

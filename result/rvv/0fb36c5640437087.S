@@ -131,7 +131,7 @@ func0000000000000044:
 	vmv.v.i	v10, 0
 	lui	a0, 9095
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, -217
+	addi	a0, a0, -217
 	vadd.vv	v8, v8, v10
 	slli	a0, a0, 12
 	addi	a0, a0, -63

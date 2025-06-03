@@ -25,7 +25,7 @@ func0000000000000102:
 
 func0000000000000218:
 	lui	a0, 24
-	addiw	a0, a0, 1696
+	addi	a0, a0, 1696
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
 	vmor.mm	v10, v0, v12

@@ -70,7 +70,7 @@ func000000000000005e:
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	lui	a1, 256
-	addiw	a1, a1, 24
+	addi	a1, a1, 24
 	add	a0, a0, a1
 	ret
 

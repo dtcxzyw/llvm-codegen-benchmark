@@ -25,7 +25,7 @@ func0000000000000006:
 	srai	a2, a2, 26
 	add	a2, a2, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	lui	a3, 976563
 	sub	a1, a1, a2

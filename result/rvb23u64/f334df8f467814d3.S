@@ -20,8 +20,7 @@ func0000000000000010:
 
 func000000000000003c:
 	addi	a2, a2, 63
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	sub	a0, a1, a0

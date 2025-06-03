@@ -16,7 +16,7 @@ func0000000000000028:
 	add	a1, a1, a2
 	lui	a2, 1
 	addi	a1, a1, 8
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

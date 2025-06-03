@@ -44,7 +44,7 @@ func00000000000001f8:
 	vandn.vx	v10, v10, a0
 	lui	a0, 16
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vadd.vx	v8, v8, a0
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -94,7 +94,7 @@ func00000000000001a4:
 	vand.vx	v10, v10, a0
 	lui	a0, 1048575
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 1
 	ret
@@ -121,7 +121,7 @@ func00000000000000a8:
 
 func00000000000001e4:
 	lui	a0, 1
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
 	vadd.vv	v8, v8, v10

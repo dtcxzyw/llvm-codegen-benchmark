@@ -9,7 +9,7 @@ func000000000000003d:
 
 func0000000000000030:
 	lui	a0, 4
-	addiw	a0, a0, 110
+	addi	a0, a0, 110
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 2

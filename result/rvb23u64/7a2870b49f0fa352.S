@@ -20,7 +20,7 @@ func0000000000000141:
 func000000000000018c:
 	lui	a3, 61681
 	xor	a0, a0, a1
-	addiw	a1, a3, -241
+	addi	a1, a3, -241
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	and	a1, a1, a2

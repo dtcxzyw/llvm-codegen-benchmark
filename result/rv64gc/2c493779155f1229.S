@@ -14,7 +14,7 @@ func0000000000000084:
 	slli	a1, a1, 48
 	lui	a2, 2
 	srli	a1, a1, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:

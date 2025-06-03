@@ -43,7 +43,7 @@ func000000000000001b:
 	slli	a2, a2, 2
 	lui	a3, 4
 	add	a0, a0, a1
-	addiw	a1, a3, -256
+	addi	a1, a3, -256
 	and	a1, a1, a2
 	andi	a0, a0, 63
 	or	a0, a0, a1

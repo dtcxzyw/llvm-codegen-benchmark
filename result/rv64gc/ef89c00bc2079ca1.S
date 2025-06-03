@@ -18,7 +18,7 @@ func0000000000000031:
 	addi	a3, a3, -1
 	bgeu	a3, a2, .LBB2_2
 	lui	a1, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 .LBB2_2:
 	or	a0, a0, a1
 	ret

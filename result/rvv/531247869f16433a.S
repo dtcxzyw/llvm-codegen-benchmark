@@ -47,7 +47,7 @@ func0000000000000008:
 	vsext.vf2	v12, v10
 	lui	a0, 1953
 	vmul.vv	v8, v8, v12
-	addiw	a0, a0, 512
+	addi	a0, a0, 512
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret

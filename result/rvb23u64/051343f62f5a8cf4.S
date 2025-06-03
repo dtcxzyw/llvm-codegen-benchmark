@@ -1,7 +1,7 @@
 func0000000000000007:
 	lui	a2, 16
 	slli	a0, a0, 63
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	mul	a1, a1, a2
 	lui	a2, 1044480
 	srai	a0, a0, 63
@@ -14,7 +14,7 @@ func0000000000000000:
 	sh1add	a1, a1, a1
 	lui	a2, 6
 	slliw	a1, a1, 3
-	addiw	a2, a2, 20
+	addi	a2, a2, 20
 	bseti	a1, a1, 13
 	bseti	a1, a1, 14
 	czero.eqz	a2, a2, a0

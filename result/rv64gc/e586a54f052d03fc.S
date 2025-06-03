@@ -33,7 +33,7 @@ func0000000000000000:
 func0000000000000004:
 	srliw	a2, a1, 3
 	lui	a3, 93207
-	addiw	a3, a3, -1001
+	addi	a3, a3, -1001
 	mul	a2, a2, a3
 	li	a3, 360
 	subw	a1, a1, a1

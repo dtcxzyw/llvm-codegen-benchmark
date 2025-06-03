@@ -33,7 +33,7 @@ func0000000000000080:
 	ret
 .LBB3_2:
 	lui	a2, 36
-	addiw	a2, a2, 1856
+	addi	a2, a2, 1856
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

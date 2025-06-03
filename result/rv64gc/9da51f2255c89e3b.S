@@ -26,7 +26,7 @@ func000000000000002c:
 	lui	a2, 1048572
 	slli	a1, a1, 4
 	add	a0, a0, a1
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	add	a0, a0, a2
 	ret
 

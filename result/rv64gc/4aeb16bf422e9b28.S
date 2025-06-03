@@ -12,7 +12,7 @@ func000000000000002a:
 	slli	a0, a0, 63
 	lui	a2, 244
 	srai	a0, a0, 63
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	and	a0, a0, a2
 	add	a0, a0, a1
 	sgtz	a0, a0
@@ -51,7 +51,7 @@ func00000000000000aa:
 	slli	a0, a0, 63
 	lui	a2, 244141
 	srai	a0, a0, 63
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	and	a0, a0, a2
 	add	a0, a0, a1
 	sgtz	a0, a0

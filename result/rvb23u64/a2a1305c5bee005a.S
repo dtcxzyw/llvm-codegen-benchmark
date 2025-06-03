@@ -3,7 +3,7 @@ func0000000000000000:
 	fcvt.wu.d	a1, fa0, rtz
 	lui	a2, 16
 	czero.nez	a1, a1, a0
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

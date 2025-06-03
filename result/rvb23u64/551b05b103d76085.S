@@ -32,7 +32,7 @@ func0000000000000018:
 
 func0000000000000030:
 	lui	a3, 8
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1

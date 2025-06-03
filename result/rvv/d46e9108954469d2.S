@@ -49,7 +49,7 @@ func0000000000000005:
 	lui	a0, 21
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -68,7 +68,7 @@ func000000000000000f:
 	lui	a0, 351844
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1143
+	addi	a0, a0, -1143
 	vmul.vx	v8, v8, a0
 	ret
 

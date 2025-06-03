@@ -3,7 +3,7 @@ func000000000000000c:
 	slli	a2, a2, 4
 	add	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, 1704
+	addi	a2, a2, 1704
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a2

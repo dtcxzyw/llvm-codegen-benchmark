@@ -15,12 +15,12 @@ func0000000000000003:
 	andi	a0, a1, 128
 	beqz	a2, .LBB1_2
 	lui	a1, 12
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a1, 4
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	or	a0, a0, a1
 	ret
 

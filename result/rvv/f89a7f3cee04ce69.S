@@ -1,6 +1,6 @@
 func0000000000000008:
 	lui	a0, 352
-	addiw	a0, a0, -1791
+	addi	a0, a0, -1791
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma

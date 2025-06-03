@@ -44,7 +44,7 @@ func00000000000000d4:
 	add	a1, a1, a2
 	lui	a2, 262144
 	add	a0, a0, a1
-	addiw	a1, a2, -1225
+	addi	a1, a2, -1225
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

@@ -22,7 +22,7 @@ func0000000000000048:
 	addi	a0, a0, 1
 	lui	a1, 1044481
 	srli	a2, a0, 12
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	seqz	a2, a2
 	and	a0, a0, a1
 	seqz	a0, a0

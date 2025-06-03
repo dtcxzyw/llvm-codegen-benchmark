@@ -5,7 +5,7 @@ func0000000000000007:
 	vsll.vi	v8, v8, 5
 	vand.vx	v10, v10, a0
 	lui	a0, 16384
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

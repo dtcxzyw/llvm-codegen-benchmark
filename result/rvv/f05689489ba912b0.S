@@ -15,7 +15,7 @@ func000000000000001b:
 	vsrl.vx	v10, v10, a0
 	vsrl.vx	v8, v8, a0
 	lui	a0, 163151
-	addiw	a0, a0, -1201
+	addi	a0, a0, -1201
 	vmacc.vx	v8, a0, v10
 	ret
 

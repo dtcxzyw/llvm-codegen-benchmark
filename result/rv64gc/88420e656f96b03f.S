@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulh	a1, a0, a1

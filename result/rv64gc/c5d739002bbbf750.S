@@ -13,7 +13,7 @@ func0000000000000043:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -15
+	addi	a2, a2, -15
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slli	a1, a1, 3

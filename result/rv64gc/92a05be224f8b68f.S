@@ -48,7 +48,7 @@ func0000000000000064:
 	ret
 .LBB4_2:
 	lui	a0, 262144
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	and	a0, a0, a1
 	addi	a0, a0, 16
 	ret

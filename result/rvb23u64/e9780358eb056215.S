@@ -46,7 +46,7 @@ func0000000000000008:
 func000000000000000a:
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, 464
+	addi	a2, a2, 464
 	maxu	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0

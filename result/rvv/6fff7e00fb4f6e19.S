@@ -5,7 +5,7 @@ func0000000000000002:
 	lui	a0, 1048568
 	vandn.vx	v10, v10, a0
 	lui	a0, 4
-	addiw	a0, a0, 47
+	addi	a0, a0, 47
 	vrsub.vx	v10, v10, a0
 	vsrl.vv	v8, v8, v10
 	ret
@@ -17,7 +17,7 @@ func0000000000000006:
 	lui	a0, 1048568
 	vandn.vx	v10, v10, a0
 	lui	a0, 4
-	addiw	a0, a0, 35
+	addi	a0, a0, 35
 	vrsub.vx	v10, v10, a0
 	vsrl.vv	v8, v8, v10
 	ret

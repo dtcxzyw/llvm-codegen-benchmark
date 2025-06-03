@@ -9,7 +9,7 @@ func000000000000000b:
 
 func000000000000000e:
 	lui	a1, 65536
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

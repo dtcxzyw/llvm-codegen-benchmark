@@ -14,7 +14,7 @@ func0000000000000002:
 	lui	a2, 135168
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ori	a0, a0, 256
@@ -25,7 +25,7 @@ func0000000000000042:
 	or	a1, a1, a2
 	lui	a2, 397312
 	seqz	a0, a0
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	lui	a2, 524288

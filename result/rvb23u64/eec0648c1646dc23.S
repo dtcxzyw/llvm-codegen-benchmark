@@ -37,8 +37,7 @@ func0000000000000007:
 
 func0000000000000000:
 	slli	a0, a0, 5
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -2
 	sll	a0, a1, a0
 	ret

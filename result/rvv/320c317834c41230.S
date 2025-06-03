@@ -12,7 +12,7 @@ func0000000000000008:
 
 func0000000000000002:
 	lui	a0, 560295
-	addiw	a1, a0, -1024
+	addi	a1, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v9, v10, a1
 	vmor.mm	v0, v9, v0

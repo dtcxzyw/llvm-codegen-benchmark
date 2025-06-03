@@ -33,7 +33,7 @@ func0000000000000282:
 	ret
 .LBB2_2:
 	lui	a0, 6019
-	addiw	a0, a0, 551
+	addi	a0, a0, 551
 	slli	a0, a0, 7
 	ret
 

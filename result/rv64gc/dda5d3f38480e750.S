@@ -13,7 +13,7 @@ func0000000000000001:
 	mul	a2, a2, a3
 	lui	a3, 1221
 	addw	a1, a1, a2
-	addiw	a2, a3, -1216
+	addi	a2, a3, -1216
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

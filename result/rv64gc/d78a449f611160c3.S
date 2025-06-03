@@ -19,10 +19,10 @@ func000000000000002c:
 	andi	a0, a0, 7
 	beqz	a0, .LBB2_2
 	lui	a0, 48
-	addiw	a0, a0, 68
+	addi	a0, a0, 68
 	ret
 .LBB2_2:
 	lui	a0, 32
-	addiw	a0, a0, 68
+	addi	a0, a0, 68
 	ret
 

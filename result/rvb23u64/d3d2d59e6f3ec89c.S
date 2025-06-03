@@ -2,7 +2,7 @@ func0000000000000006:
 	andi	a0, a0, 1
 	sraiw	a2, a2, 13
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	czero.eqz	a1, a1, a0
 	mul	a3, a3, a2
 	srli	a4, a3, 63

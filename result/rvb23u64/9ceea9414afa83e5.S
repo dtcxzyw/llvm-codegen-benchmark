@@ -13,7 +13,7 @@ func0000000000000084:
 	lui	a3, 57
 	or	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a0, a0, a3
 	ret
 

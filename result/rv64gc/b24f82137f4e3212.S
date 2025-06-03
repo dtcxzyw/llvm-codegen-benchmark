@@ -12,7 +12,7 @@ func000000000000000f:
 	lui	a1, 2
 	andi	a2, a2, -8
 	add	a0, a0, a2
-	addiw	a1, a1, 792
+	addi	a1, a1, 792
 	add	a0, a0, a1
 	ret
 

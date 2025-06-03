@@ -32,7 +32,7 @@ func0000000000000201:
 	sltiu	a2, a2, 128
 	and	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

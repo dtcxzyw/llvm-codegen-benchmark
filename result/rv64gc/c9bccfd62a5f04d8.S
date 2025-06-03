@@ -19,7 +19,7 @@ func0000000000000026:
 func0000000000000021:
 	lui	a2, 16
 	slli	a1, a1, 56
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srai	a1, a1, 56
 	and	a0, a0, a2
 	neg	a1, a1
@@ -31,7 +31,7 @@ func0000000000000021:
 func0000000000000001:
 	lui	a2, 16
 	slli	a1, a1, 56
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srai	a1, a1, 56
 	and	a0, a0, a2
 	neg	a1, a1
@@ -43,7 +43,7 @@ func0000000000000001:
 func000000000000000c:
 	lui	a2, 16
 	slli	a1, a1, 56
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srai	a1, a1, 56
 	and	a0, a0, a2
 	neg	a1, a1

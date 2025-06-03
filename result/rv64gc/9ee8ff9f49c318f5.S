@@ -23,7 +23,7 @@ func000000000000000f:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	addiw	a1, a2, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 

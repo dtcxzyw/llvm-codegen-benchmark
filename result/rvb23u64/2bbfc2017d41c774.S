@@ -8,7 +8,7 @@ func000000000000000a:
 func0000000000000044:
 	sub	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

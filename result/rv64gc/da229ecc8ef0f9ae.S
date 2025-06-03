@@ -39,12 +39,12 @@ func0000000000000006:
 	sext.w	a1, a1
 	lui	a2, 524288
 	seqz	a1, a1
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	lui	a2, 262144
 	addi	a0, a0, -1
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	andi	a0, a0, 16
 	or	a0, a0, a2
 	or	a0, a0, a1

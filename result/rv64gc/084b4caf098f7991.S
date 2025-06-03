@@ -16,7 +16,7 @@ func0000000000000038:
 	li	a2, 16
 	bgeu	a2, a1, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB1_2:
 	ret
 

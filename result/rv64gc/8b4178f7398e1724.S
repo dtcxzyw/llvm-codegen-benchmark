@@ -8,7 +8,7 @@ func0000000000000012:
 	slli	a6, a6, 54
 	add	a6, a6, a1
 	lui	a4, 4080
-	addiw	a1, a7, -256
+	addi	a1, a7, -256
 	and	a3, a3, a1
 	or	a3, a3, a5
 	srli	a5, a0, 8

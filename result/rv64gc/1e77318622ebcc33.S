@@ -30,7 +30,7 @@ func0000000000000318:
 	andi	a2, a2, 252
 	lui	a3, 12
 	sltiu	a2, a2, 196
-	addiw	a3, a3, 768
+	addi	a3, a3, 768
 	xori	a2, a2, 1
 	sltu	a1, a3, a1
 	or	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000038:
 func000000000000018c:
 	sext.w	a1, a1
 	lui	a3, 4096
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	lui	a3, 16
 	xor	a1, a1, a3

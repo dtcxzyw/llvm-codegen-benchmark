@@ -2,7 +2,7 @@ func000000000000000a:
 	fadd.d	fa5, fa0, fa1
 	lui	a0, 16
 	fcvt.w.d	a1, fa5, rtz
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a0, a1
 	ret
 

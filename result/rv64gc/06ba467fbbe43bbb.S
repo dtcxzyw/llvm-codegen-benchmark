@@ -52,7 +52,7 @@ func0000000000000008:
 	li	a3, 32
 	bltu	a2, a3, .LBB6_2
 	lui	a1, 13
-	addiw	a1, a1, 1288
+	addi	a1, a1, 1288
 .LBB6_2:
 	or	a0, a0, a1
 	ret

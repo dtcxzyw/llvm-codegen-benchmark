@@ -159,7 +159,7 @@ func0000000000000294:
 
 func0000000000000081:
 	lui	a0, 4883
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -187,7 +187,7 @@ func0000000000000286:
 
 func0000000000000288:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

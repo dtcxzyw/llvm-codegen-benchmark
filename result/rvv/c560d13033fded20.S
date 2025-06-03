@@ -14,7 +14,7 @@ func0000000000000015:
 	vsra.vx	v10, v12, a0
 	lui	a0, 21
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 

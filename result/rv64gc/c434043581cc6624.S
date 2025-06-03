@@ -69,7 +69,7 @@ func0000000000000040:
 	add	a0, a0, a1
 	lui	a1, 313
 	add	a0, a0, a2
-	addiw	a1, a1, -768
+	addi	a1, a1, -768
 	add	a0, a0, a1
 	ret
 

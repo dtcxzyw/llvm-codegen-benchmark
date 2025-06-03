@@ -2,7 +2,7 @@ func0000000000000025:
 	sh1add	a2, a1, a1
 	sh2add	a1, a2, a1
 	lui	a2, 419430
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	sext.w	a1, a1
 	mul	a1, a1, a2
 	srli	a2, a1, 63

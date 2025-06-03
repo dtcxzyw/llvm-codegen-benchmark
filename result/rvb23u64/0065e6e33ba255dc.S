@@ -83,7 +83,7 @@ func000000000000008a:
 	mul	a0, a0, a1
 	lui	a1, 8
 	lui	a2, 524288
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a1, a1, a0
 	slli	a0, a0, 16
 	addiw	a2, a2, -1

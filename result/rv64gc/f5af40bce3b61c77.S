@@ -8,7 +8,7 @@ func0000000000000010:
 
 func0000000000000050:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	bltu	a1, a2, .LBB1_2
 	li	a1, 10
 	addw	a0, a0, a1
@@ -75,7 +75,7 @@ func0000000000000021:
 
 func0000000000000019:
 	lui	a2, 1048575
-	addiw	a2, a2, 496
+	addi	a2, a2, 496
 	blt	a1, a2, .LBB8_2
 	lui	a1, 9
 	addi	a1, a1, -864
@@ -116,7 +116,7 @@ func000000000000001b:
 
 func0000000000000028:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a2, a1, .LBB13_2
 	li	a1, 7
 	addw	a0, a0, a1

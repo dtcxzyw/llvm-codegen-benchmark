@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a1, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	min	a0, a0, a1
 	slli	a1, a0, 3
 	srai	a1, a1, 63
@@ -12,7 +12,7 @@ func0000000000000002:
 
 func0000000000000006:
 	lui	a1, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	min	a0, a0, a1
 	slli	a1, a0, 3
 	srai	a1, a1, 63

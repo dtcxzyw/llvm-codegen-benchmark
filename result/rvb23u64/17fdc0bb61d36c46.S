@@ -9,7 +9,7 @@ func00000000000000d4:
 	sext.w	a1, a0
 	addi	a0, a0, 64
 	lui	a2, 1
-	addiw	a3, a2, -64
+	addi	a3, a2, -64
 	addi	a2, a2, 64
 	slt	a1, a3, a1
 	czero.nez	a2, a2, a1

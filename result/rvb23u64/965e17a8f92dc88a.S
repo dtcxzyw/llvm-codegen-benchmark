@@ -1,6 +1,6 @@
 func000000000000003f:
 	lui	a3, 262144
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a2
 	sh3add	a0, a1, a0

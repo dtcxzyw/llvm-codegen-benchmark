@@ -31,7 +31,7 @@ func0000000000000001:
 func000000000000000a:
 	addiw	a1, a1, 1
 	lui	a2, 10
-	addiw	a2, a2, -961
+	addi	a2, a2, -961
 	blt	a2, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:

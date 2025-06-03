@@ -29,10 +29,10 @@ func0000000000000194:
 	li	a3, -1024
 	czero.nez	a2, a3, a2
 	lui	a3, 14
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 13
-	addiw	a3, a3, 2047
+	addi	a3, a3, 2047
 	slt	a0, a2, a0
 	slt	a1, a1, a3
 	or	a0, a0, a1

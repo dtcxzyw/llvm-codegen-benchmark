@@ -18,7 +18,7 @@ func0000000000000013:
 	sext.w	a0, a0
 	sh2add	a0, a0, a1
 	lui	a1, 150
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	add	a0, a0, a1
 	ret
 

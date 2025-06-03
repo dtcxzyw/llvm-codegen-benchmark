@@ -41,7 +41,7 @@ func0000000000000009:
 	vmulh.vx	v8, v8, a0
 	lui	a0, 838861
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	vsrl.vx	v12, v8, a1
 	slli	a1, a0, 32
 	vsra.vi	v8, v8, 1
@@ -57,7 +57,7 @@ func0000000000000005:
 	lui	a1, 986895
 	vsra.vi	v10, v10, 3
 	vsrl.vx	v12, v8, a0
-	addiw	a0, a1, 241
+	addi	a0, a1, 241
 	vadd.vv	v8, v8, v12
 	slli	a1, a0, 32
 	vsra.vi	v8, v8, 1

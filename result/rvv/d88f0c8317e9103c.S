@@ -20,7 +20,7 @@ func0000000000000018:
 
 func0000000000000014:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v9, v9, a0
 	vmsltu.vv	v0, v8, v9

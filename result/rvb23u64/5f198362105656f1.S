@@ -49,10 +49,10 @@ func000000000000000c:
 func0000000000000003:
 	andi	a1, a1, 1
 	lui	a2, 1048402
-	addiw	a2, a2, -1728
+	addi	a2, a2, -1728
 	czero.nez	a1, a2, a1
 	lui	a2, 378
-	addiw	a2, a2, -352
+	addi	a2, a2, -352
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

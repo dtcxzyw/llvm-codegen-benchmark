@@ -3,7 +3,7 @@ func000000000000004e:
 	vsra.vi	v12, v12, 2
 	lui	a0, 699051
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	vsra.vi	v8, v8, 3
 	slli	a1, a0, 32
 	add	a0, a0, a1

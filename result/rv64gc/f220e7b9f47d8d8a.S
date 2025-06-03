@@ -2,7 +2,7 @@
 	.quad	384307168202282325
 func000000000000002b:
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a4, a4, a3
 	lui	a3, %hi(.LCPI0_0)
@@ -28,7 +28,7 @@ func000000000000002b:
 	.quad	768614336404564650
 func0000000000000023:
 	lui	a3, 699051
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a4, a4, a3
 	lui	a3, %hi(.LCPI1_0)

@@ -45,7 +45,7 @@ func0000000000000308:
 	bexti	a1, a1, 24
 	addiw	a0, a0, -1
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -53,7 +53,7 @@ func0000000000000308:
 func0000000000000118:
 	addiw	a1, a1, -1
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	bexti	a0, a0, 25
 	or	a0, a0, a1
@@ -88,7 +88,7 @@ func0000000000000048:
 func0000000000000858:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	addi	a0, a0, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2

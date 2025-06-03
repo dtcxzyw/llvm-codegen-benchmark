@@ -9,13 +9,13 @@ func0000000000000000:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 6
-	addiw	a1, a1, 1604
+	addi	a1, a1, 1604
 	or	a0, a0, a1
 	ori	a0, a0, 32
 	ret
 .LBB1_2:
 	lui	a1, 7
-	addiw	a1, a1, 1604
+	addi	a1, a1, 1604
 	or	a0, a0, a1
 	ori	a0, a0, 32
 	ret

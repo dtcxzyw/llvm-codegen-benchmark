@@ -28,10 +28,10 @@ func0000000000000061:
 
 func000000000000006c:
 	lui	a1, 429
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a0, a0, a1
 	lui	a1, 2048
-	addiw	a1, a1, -512
+	addi	a1, a1, -512
 	and	a0, a0, a1
 	binvi	a0, a0, 22
 	snez	a0, a0

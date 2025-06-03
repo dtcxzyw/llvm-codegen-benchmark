@@ -5,7 +5,7 @@ func0000000000000004:
 	srli	a0, a0, 3
 	vand.vx	v10, v10, a0
 	lui	a0, 1
-	addiw	a0, a0, -96
+	addi	a0, a0, -96
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 4
 	li	a0, 16

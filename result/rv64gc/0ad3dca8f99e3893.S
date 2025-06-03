@@ -1,7 +1,7 @@
 func0000000000000c74:
 	add	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 512
 	srli	a1, a1, 12
@@ -12,7 +12,7 @@ func0000000000000c74:
 func0000000000000074:
 	add	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 512
 	srli	a1, a1, 12

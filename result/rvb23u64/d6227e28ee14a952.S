@@ -35,7 +35,7 @@ func0000000000000038:
 	addiw	a0, a0, 1
 	lui	a1, 2
 	li	a2, 609
-	addiw	a1, a1, 1805
+	addi	a1, a1, 1805
 	sltu	a1, a1, a0
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

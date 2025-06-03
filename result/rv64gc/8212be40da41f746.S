@@ -11,7 +11,7 @@ func0000000000000003:
 	li	a1, 1
 	sll	a0, a1, a0
 	lui	a1, 193
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 27
 	and	a0, a0, a1
 	ret

@@ -13,7 +13,7 @@ func0000000000000000:
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -44,7 +44,7 @@ func0000000000000002:
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:

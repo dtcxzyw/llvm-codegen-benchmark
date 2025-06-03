@@ -3,7 +3,7 @@ func0000000000000028:
 	slti	a2, a2, 9
 	lui	a3, 5
 	czero.eqz	a1, a1, a2
-	addiw	a3, a3, -481
+	addi	a3, a3, -481
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	negw	a2, a1
@@ -17,7 +17,7 @@ func0000000000000029:
 	slti	a2, a2, 9
 	lui	a3, 5
 	czero.eqz	a1, a1, a2
-	addiw	a3, a3, -481
+	addi	a3, a3, -481
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	negw	a2, a1

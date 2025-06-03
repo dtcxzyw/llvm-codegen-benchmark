@@ -14,7 +14,7 @@ func0000000000000142:
 	lui	a3, 512
 	sltu	a1, a1, a2
 	li	a2, 27
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	slli	a2, a2, 11
 	and	a0, a0, a3
 	xor	a0, a0, a2

@@ -13,7 +13,7 @@ func0000000000000161:
 func0000000000000001:
 	sub	a2, a2, a1
 	lui	a1, 838861
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mulhu	a1, a2, a1

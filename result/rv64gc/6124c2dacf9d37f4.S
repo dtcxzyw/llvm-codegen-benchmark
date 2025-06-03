@@ -34,7 +34,7 @@ func0000000000000035:
 	add	a1, a1, a2
 	lui	a2, 3
 	sub	a0, a0, a1
-	addiw	a1, a2, -703
+	addi	a1, a2, -703
 	mul	a0, a0, a1
 	ret
 

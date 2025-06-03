@@ -11,7 +11,7 @@ func00000000000000e1:
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

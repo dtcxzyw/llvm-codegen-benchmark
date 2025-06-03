@@ -19,7 +19,7 @@ func000000000000000a:
 	addiw	a2, a2, -1
 	bge	a1, a2, .LBB2_2
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 .LBB2_2:
 	ret
 

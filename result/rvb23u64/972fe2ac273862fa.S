@@ -1,8 +1,7 @@
 func0000000000000030:
 	addi	a1, a1, 127
-	li	a2, 1
+	bseti	a2, zero, 36
 	addi	a0, a0, 127
-	slli	a2, a2, 36
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	andi	a0, a0, -128

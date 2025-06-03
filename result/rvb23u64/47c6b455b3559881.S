@@ -19,7 +19,7 @@ func0000000000001b18:
 func0000000000001842:
 	sext.w	a0, a0
 	lui	a3, 16
-	addiw	a3, a3, 696
+	addi	a3, a3, 696
 	add	a2, a2, a3
 	xor	a1, a1, a2
 	seqz	a1, a1

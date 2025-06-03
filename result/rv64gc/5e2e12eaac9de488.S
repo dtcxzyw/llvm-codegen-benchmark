@@ -43,7 +43,7 @@ func0000000000000004:
 	lui	a1, 10
 	beqz	a2, .LBB4_2
 	lui	a1, 5
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 .LBB4_2:
 	add	a0, a0, a1
 	ret
@@ -52,11 +52,11 @@ func0000000000000018:
 	slli	a2, a1, 56
 	lui	a1, 17
 	bltz	a2, .LBB5_2
-	addiw	a1, a1, 272
+	addi	a1, a1, 272
 	add	a0, a0, a1
 	ret
 .LBB5_2:
-	addiw	a1, a1, 276
+	addi	a1, a1, 276
 	add	a0, a0, a1
 	ret
 

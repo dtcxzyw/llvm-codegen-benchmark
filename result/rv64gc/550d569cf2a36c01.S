@@ -1,6 +1,6 @@
 func0000000000000013:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	bltu	a1, a2, .LBB0_2
@@ -14,7 +14,7 @@ func0000000000000013:
 
 func0000000000000023:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	bltu	a2, a1, .LBB1_2
@@ -56,7 +56,7 @@ func000000000000002b:
 
 func0000000000000010:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	bltu	a1, a2, .LBB4_2
@@ -70,7 +70,7 @@ func0000000000000010:
 
 func0000000000000007:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	xor	a1, a1, a2

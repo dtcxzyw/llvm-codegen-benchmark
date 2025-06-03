@@ -30,7 +30,7 @@ func0000000000000077:
 	lui	a0, 1034754
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vadd.vx	v8, v8, a0
 	ret
 

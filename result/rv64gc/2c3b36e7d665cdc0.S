@@ -41,7 +41,7 @@ func000000000000001f:
 func000000000000000f:
 	add	a1, a1, a0
 	lui	a0, 30
-	addiw	a2, a0, -1214
+	addi	a2, a0, -1214
 	mul	a0, a1, a2
 	mulhu	a1, a1, a2
 	ret

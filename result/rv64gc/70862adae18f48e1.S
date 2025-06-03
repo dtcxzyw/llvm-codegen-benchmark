@@ -21,7 +21,7 @@ func0000000000000000:
 	addi	a0, a0, 7
 	lui	a1, 244141
 	andi	a0, a0, -8
-	addiw	a1, a1, -1560
+	addi	a1, a1, -1560
 	sub	a0, a1, a0
 	ret
 

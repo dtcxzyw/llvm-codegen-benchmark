@@ -10,7 +10,7 @@ func0000000000000181:
 	lui	a1, 16
 	andi	a0, a0, 2
 	seqz	a0, a0
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	xor	a0, a0, a1
 	ret
 

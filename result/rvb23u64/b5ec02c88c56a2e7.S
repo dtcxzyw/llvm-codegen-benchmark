@@ -3,7 +3,7 @@ func000000000000007b:
 	sh1add	a0, a0, a0
 	mul	a1, a1, a2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sh3add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -16,7 +16,7 @@ func000000000000002b:
 	sh1add	a0, a0, a0
 	mul	a1, a1, a2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sh3add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -29,7 +29,7 @@ func0000000000000069:
 	sh1add	a0, a0, a0
 	mul	a1, a1, a2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sh3add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -42,7 +42,7 @@ func000000000000006b:
 	sh2add	a0, a0, a0
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	sh3add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3

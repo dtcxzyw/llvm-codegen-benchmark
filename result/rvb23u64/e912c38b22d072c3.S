@@ -12,7 +12,7 @@ func000000000000000f:
 	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a0, a0, a1
 	lui	a1, 61681
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	and	a2, a2, a3
 	slli	a3, a1, 32
 	add	a0, a0, a2

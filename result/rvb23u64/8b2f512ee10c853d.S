@@ -348,7 +348,7 @@ func0000000000000878:
 func000000000000012a:
 	sext.w	a1, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	xor	a1, a1, a2
 	seqz	a1, a1
 	addw	a0, a0, a1

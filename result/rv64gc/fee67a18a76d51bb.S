@@ -22,10 +22,10 @@ func000000000000001f:
 func000000000000001d:
 	or	a0, a0, a1
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	mul	a0, a0, a1
 	lui	a1, 989319
-	addiw	a1, a1, -503
+	addi	a1, a1, -503
 	slli	a1, a1, 8
 	add	a0, a0, a1
 	ret

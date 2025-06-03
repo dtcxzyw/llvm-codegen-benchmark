@@ -12,7 +12,7 @@ func000000000000007d:
 	mul	a1, a1, a3
 	subw	a2, a2, a1
 	add.uw	a0, a2, a0
-	addiw	a4, a4, 30
+	addi	a4, a4, 30
 	add	a0, a0, a4
 	ret
 

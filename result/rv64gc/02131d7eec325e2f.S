@@ -13,7 +13,7 @@ func000000000000008c:
 	addi	a1, a1, -496
 	addw	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	xor	a1, a1, a2
 	sltiu	a0, a0, -240
 	snez	a1, a1
@@ -23,7 +23,7 @@ func000000000000008c:
 func0000000000000184:
 	lui	a1, 16
 	lui	a2, 1048562
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	add	a2, a2, a0
 	and	a0, a0, a1
 	srliw	a2, a2, 13

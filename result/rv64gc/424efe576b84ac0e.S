@@ -6,7 +6,7 @@ func000000000000020a:
 	add	a2, a2, a3
 	add	a0, a0, a2
 	addiw	a0, a0, -48
-	addiw	a1, a1, -2001
+	addi	a1, a1, -2001
 	slt	a0, a1, a0
 	ret
 
@@ -20,7 +20,7 @@ func000000000000060a:
 	addi	a1, a1, 16
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	slt	a0, a3, a0
 	ret
 
@@ -31,7 +31,7 @@ func0000000000001aa1:
 	lui	a1, 1
 	add	a2, a2, a3
 	addw	a0, a0, a2
-	addiw	a1, a1, 1452
+	addi	a1, a1, 1452
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

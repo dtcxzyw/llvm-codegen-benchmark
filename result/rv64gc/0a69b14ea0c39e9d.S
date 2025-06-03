@@ -15,7 +15,7 @@ func0000000000000005:
 	slli	a1, a1, 63
 	lui	a3, 244
 	srai	a1, a1, 63
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	and	a1, a1, a3
 	sub	a0, a2, a0
 	add	a0, a0, a1

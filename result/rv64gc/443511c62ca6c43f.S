@@ -1,7 +1,7 @@
 func0000000000000302:
 	or	a1, a1, a2
 	lui	a2, 1048560
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

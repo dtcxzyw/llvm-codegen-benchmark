@@ -2,7 +2,7 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmor.mm	v10, v0, v10
 	lui	a0, 1
-	addiw	a0, a0, -432
+	addi	a0, a0, -432
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -37,7 +37,7 @@ func0000000000000018:
 
 func0000000000000030:
 	lui	a0, 8
-	addiw	a0, a0, 3
+	addi	a0, a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v9, v10, a0
 	vmor.mm	v8, v0, v8

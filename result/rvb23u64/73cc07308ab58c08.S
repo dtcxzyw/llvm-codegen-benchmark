@@ -12,7 +12,7 @@ func0000000000000084:
 	addw	a1, a1, a3
 	addw	a0, a0, a3
 	minu	a0, a0, a1
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	sltu	a0, a0, a2
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000108:
 	addw	a1, a1, a3
 	addw	a0, a0, a3
 	minu	a0, a0, a1
-	addiw	a1, a2, -2048
+	addi	a1, a2, -2048
 	sltu	a0, a0, a1
 	ret
 

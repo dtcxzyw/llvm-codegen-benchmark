@@ -38,7 +38,7 @@ func0000000000000042:
 func0000000000000202:
 	srli	a2, a2, 47
 	lui	a3, 32
-	addiw	a3, a3, -11
+	addi	a3, a3, -11
 	xor	a2, a2, a3
 	li	a3, -3
 	slli	a3, a3, 48

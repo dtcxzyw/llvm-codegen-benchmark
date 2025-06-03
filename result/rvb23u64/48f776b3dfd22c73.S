@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a0, a0, 1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	maxu	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 3

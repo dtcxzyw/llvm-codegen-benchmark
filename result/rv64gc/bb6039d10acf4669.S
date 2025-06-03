@@ -17,7 +17,7 @@ func000000000000000c:
 	subw	a2, a2, a1
 	lui	a1, 2048
 	sllw	a0, a0, a2
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	and	a0, a0, a1
 	ret
 

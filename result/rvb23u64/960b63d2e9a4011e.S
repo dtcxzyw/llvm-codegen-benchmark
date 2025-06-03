@@ -3,8 +3,8 @@ func0000000000000055:
 	lui	a3, 5
 	add	a0, a0, a1
 	lui	a1, 21
-	addiw	a3, a3, 1120
-	addiw	a1, a1, 384
+	addi	a3, a3, 1120
+	addi	a1, a1, 384
 	mul	a2, a2, a3
 	mul	a0, a0, a1
 	add	a0, a0, a2
@@ -16,7 +16,7 @@ func0000000000000010:
 	add	a0, a0, a1
 	lui	a1, 59605
 	mul	a2, a2, a3
-	addiw	a1, a1, -1455
+	addi	a1, a1, -1455
 	slli	a1, a1, 12
 	mul	a0, a0, a1
 	add	a0, a0, a2

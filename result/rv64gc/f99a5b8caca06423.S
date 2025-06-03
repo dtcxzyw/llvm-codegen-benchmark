@@ -1,7 +1,7 @@
 func000000000000000b:
 	lui	a3, 16
 	slli	a1, a1, 32
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	add	a2, a2, a3
 	and	a2, a2, a3
 	or	a0, a0, a1

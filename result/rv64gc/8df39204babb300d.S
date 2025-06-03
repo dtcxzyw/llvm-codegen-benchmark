@@ -22,7 +22,7 @@ func0000000000000002:
 	j	.LBB1_4
 .LBB1_2:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	beqz	a1, .LBB1_4
 .LBB1_3:
 	li	a0, 255

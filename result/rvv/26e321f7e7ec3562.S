@@ -4,7 +4,7 @@ func000000000000000d:
 	lui	a2, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	addiw	a0, a2, -1365
+	addi	a0, a2, -1365
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v10, a1, v8
 	slli	a2, a0, 32
@@ -22,7 +22,7 @@ func000000000000001d:
 	lui	a1, 699051
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v10, a0, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vsetvli	zero, zero, e64, m2, ta, ma

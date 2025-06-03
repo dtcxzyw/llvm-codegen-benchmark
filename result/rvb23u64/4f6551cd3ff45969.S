@@ -1,10 +1,10 @@
 func000000000000001f:
 	andi	a1, a1, 256
 	lui	a2, 1048575
-	addiw	a2, a2, 52
+	addi	a2, a2, 52
 	czero.eqz	a1, a2, a1
 	lui	a2, 3
-	addiw	a2, a2, 444
+	addi	a2, a2, 444
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

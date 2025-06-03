@@ -30,7 +30,7 @@ func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
 	lui	a0, 1
-	addiw	a1, a0, 1092
+	addi	a1, a0, 1092
 	vmv.v.x	v12, a1
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 0, v0

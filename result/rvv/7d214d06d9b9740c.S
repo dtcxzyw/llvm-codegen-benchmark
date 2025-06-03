@@ -28,7 +28,7 @@ func000000000000001f:
 	lui	a0, 1048510
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v14, v10
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	bclri	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v12, a0

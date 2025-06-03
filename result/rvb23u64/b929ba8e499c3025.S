@@ -66,7 +66,7 @@ func000000000000007f:
 func00000000000000f0:
 	sh2add	a0, a1, a0
 	lui	a1, 87
-	addiw	a1, a1, 840
+	addi	a1, a1, 840
 	add	a0, a0, a1
 	ret
 

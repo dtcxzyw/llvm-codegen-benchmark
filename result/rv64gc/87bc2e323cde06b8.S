@@ -24,7 +24,7 @@ func0000000000000001:
 	srliw	a0, a0, 4
 	or	a0, a0, a1
 	lui	a1, 2621
-	addiw	a1, a1, 1803
+	addi	a1, a1, 1803
 	sltu	a0, a0, a1
 	addi	a0, a0, 365
 	ret

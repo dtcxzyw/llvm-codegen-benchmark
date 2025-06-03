@@ -17,7 +17,7 @@ func000000000000006f:
 	vadd.vi	v10, v8, 12
 	lui	a0, 699051
 	li	a1, 365
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	vmv.v.x	v8, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -32,8 +32,8 @@ func000000000000006d:
 	vadd.vi	v10, v8, 12
 	lui	a0, 699051
 	lui	a1, 1048574
-	addiw	a0, a0, -1365
-	addiw	a1, a1, -203
+	addi	a0, a0, -1365
+	addi	a1, a1, -203
 	vmv.v.x	v8, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -51,7 +51,7 @@ func000000000000000d:
 	lui	a0, 1048340
 	lui	a1, %hi(.LCPI3_0)
 	lui	a2, %hi(.LCPI3_1)
-	addiw	a0, a0, -1077
+	addi	a0, a0, -1077
 	ld	a1, %lo(.LCPI3_0)(a1)
 	ld	a2, %lo(.LCPI3_1)(a2)
 	srli	a0, a0, 1

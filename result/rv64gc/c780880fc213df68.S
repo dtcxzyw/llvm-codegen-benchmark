@@ -5,10 +5,10 @@ func0000000000000042:
 	lui	t0, 61681
 	lui	t1, 4112
 	or	a3, a1, a2
-	addiw	a4, a6, 1365
-	addiw	a5, a7, 819
-	addiw	a7, t0, -241
-	addiw	a6, t1, 257
+	addi	a4, a6, 1365
+	addi	a5, a7, 819
+	addi	a7, t0, -241
+	addi	a6, t1, 257
 	srli	a2, a3, 2
 	or	t0, a3, a2
 	slli	a3, a4, 32
@@ -53,10 +53,10 @@ func0000000000000002:
 	lui	t0, 61681
 	lui	t1, 4112
 	or	a3, a1, a2
-	addiw	a4, a6, 1365
-	addiw	a5, a7, 819
-	addiw	a7, t0, -241
-	addiw	a6, t1, 257
+	addi	a4, a6, 1365
+	addi	a5, a7, 819
+	addi	a7, t0, -241
+	addi	a6, t1, 257
 	srli	a2, a3, 2
 	or	t0, a3, a2
 	slli	a3, a4, 32
@@ -101,10 +101,10 @@ func00000000000000c2:
 	lui	t0, 61681
 	lui	t1, 4112
 	or	a3, a1, a2
-	addiw	a4, a6, 1365
-	addiw	a5, a7, 819
-	addiw	a7, t0, -241
-	addiw	a6, t1, 257
+	addi	a4, a6, 1365
+	addi	a5, a7, 819
+	addi	a7, t0, -241
+	addi	a6, t1, 257
 	srli	a2, a3, 2
 	or	t0, a3, a2
 	slli	a3, a4, 32

@@ -9,7 +9,7 @@ func0000000000000184:
 	and	a1, a1, a2
 	bnez	a1, .LBB0_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB0_2:
 	ret
 

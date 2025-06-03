@@ -12,7 +12,7 @@ func0000000000000014:
 	add	a1, a1, a2
 	slli	a2, a2, 3
 	sub	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	sltiu	a1, a1, 6
 	neg	a1, a1

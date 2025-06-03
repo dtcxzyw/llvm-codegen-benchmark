@@ -143,7 +143,7 @@ func0000000000000078:
 
 func0000000000000007:
 	lui	a3, 24414
-	addiw	a3, a3, 256
+	addi	a3, a3, 256
 	add	a2, a2, a3
 	slt	a1, a2, a1
 	xori	a1, a1, 1

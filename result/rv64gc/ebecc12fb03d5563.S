@@ -2,7 +2,7 @@ func0000000000000003:
 	andi	a1, a1, -2
 	lui	a2, 1048574
 	sext.w	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	addi	a1, a1, -2
 	seqz	a1, a1
 	slli	a1, a1, 13

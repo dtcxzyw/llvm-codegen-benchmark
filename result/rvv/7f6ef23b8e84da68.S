@@ -85,7 +85,7 @@ func0000000000000084:
 	li	a0, 21
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 4096
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
@@ -128,7 +128,7 @@ func000000000000008c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 1
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

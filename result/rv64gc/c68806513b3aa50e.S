@@ -24,7 +24,7 @@ func00000000000000c0:
 	lui	a1, 313
 	srli	a3, a2, 25
 	srli	a2, a2, 23
-	addiw	a1, a1, -768
+	addi	a1, a1, -768
 	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

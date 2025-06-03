@@ -81,7 +81,7 @@ func0000000000000081:
 	seqz	a1, a1
 	and	a1, a1, a2
 	lui	a2, 17
-	addiw	a2, a2, -624
+	addi	a2, a2, -624
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -157,7 +157,7 @@ func0000000000000184:
 	sext.w	a2, a2
 	lui	a3, 524287
 	addi	a2, a2, -83
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	snez	a2, a2
 	sltu	a1, a1, a3
 	and	a1, a1, a2

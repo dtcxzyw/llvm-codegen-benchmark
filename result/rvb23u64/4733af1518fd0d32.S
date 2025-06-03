@@ -19,7 +19,7 @@ func0000000000000000:
 func0000000000000003:
 	srliw	a0, a0, 5
 	lui	a1, 42950
-	addiw	a1, a1, -1339
+	addi	a1, a1, -1339
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	ret

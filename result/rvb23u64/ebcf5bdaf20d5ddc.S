@@ -55,9 +55,9 @@ func0000000000001184:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a4, a3, -10
+	addi	a4, a3, -10
 	addi	a1, a1, -45
-	addiw	a3, a3, -26
+	addi	a3, a3, -26
 	sltu	a2, a2, a4
 	snez	a1, a1
 	sltu	a0, a0, a3

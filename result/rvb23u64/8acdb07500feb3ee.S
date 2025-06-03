@@ -25,10 +25,10 @@ func0000000000000008:
 	zext.b	a0, a0
 	lui	a1, 983040
 	sltiu	a0, a0, 32
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	czero.eqz	a0, a1, a0
 	lui	a1, 131072
-	addiw	a1, a1, 361
+	addi	a1, a1, 361
 	add	a0, a0, a1
 	ret
 

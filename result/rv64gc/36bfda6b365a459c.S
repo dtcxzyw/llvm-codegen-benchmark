@@ -118,7 +118,7 @@ func00000000000001f4:
 func0000000000000048:
 	add	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

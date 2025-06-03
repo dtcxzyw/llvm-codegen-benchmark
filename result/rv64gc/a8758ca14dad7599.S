@@ -22,7 +22,7 @@ func0000000000000018:
 func0000000000000029:
 	sext.w	a4, a2
 	lui	a3, 1
-	addiw	a3, a3, -496
+	addi	a3, a3, -496
 	blt	a3, a4, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
@@ -45,7 +45,7 @@ func0000000000000005:
 func0000000000000019:
 	sext.w	a3, a2
 	lui	a4, 1047978
-	addiw	a4, a4, -836
+	addi	a4, a4, -836
 	blt	a3, a4, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

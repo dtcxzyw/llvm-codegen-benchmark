@@ -16,8 +16,8 @@ func0000000000000001:
 func000000000000000a:
 	lui	a0, 522232
 	lui	a1, 152146
-	addiw	a0, a0, -129
-	addiw	a1, a1, 1317
+	addi	a0, a0, -129
+	addi	a1, a1, 1317
 	slli	a2, a0, 32
 	add	a0, a0, a2
 	slli	a2, a1, 32
@@ -28,7 +28,7 @@ func000000000000000a:
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vadd.vx	v8, v8, a1
 	lui	a1, 106914
-	addiw	a1, a1, -1510
+	addi	a1, a1, -1510
 	vand.vx	v8, v8, a0
 	slli	a0, a1, 32
 	add	a0, a0, a1
@@ -39,7 +39,7 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, -8
 	lui	a0, 16
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048560
 	vand.vx	v8, v8, a0
@@ -55,8 +55,7 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
-	li	a0, 1
-	slli	a0, a0, 35
+	bseti	a0, zero, 35
 	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -73,7 +72,7 @@ func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048574
 	srli	a0, a0, 1

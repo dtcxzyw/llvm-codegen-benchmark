@@ -2,7 +2,7 @@ func0000000000000017:
 	addiw	a0, a0, -1
 	lui	a1, 335544
 	negw	a2, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	max	a0, a0, a2
 	zext.w	a2, a0
 	mul	a1, a1, a2

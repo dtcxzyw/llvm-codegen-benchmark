@@ -9,7 +9,7 @@ func0000000000000002:
 
 func0000000000000003:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1
@@ -27,7 +27,7 @@ func0000000000000015:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltiu	a1, a1, 1023
 	addi	a1, a1, -1
@@ -37,7 +37,7 @@ func0000000000000008:
 
 func0000000000000009:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltiu	a1, a1, 25
 	addi	a1, a1, -1

@@ -29,7 +29,7 @@ func0000000000000000:
 	li	a1, 200
 	sllw	a0, a1, a0
 	lui	a1, 29
-	addiw	a1, a1, 1216
+	addi	a1, a1, 1216
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

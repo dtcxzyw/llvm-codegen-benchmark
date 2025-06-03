@@ -4,7 +4,7 @@ func00000000000001ef:
 	li	a0, 60
 	vmul.vx	v8, v10, a0
 	lui	a0, 1
-	addiw	a0, a0, -496
+	addi	a0, a0, -496
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v10, v14
@@ -29,7 +29,7 @@ func00000000000000f5:
 	li	a0, 60
 	vmul.vx	v8, v10, a0
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmacc.vx	v8, a0, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v10, v14

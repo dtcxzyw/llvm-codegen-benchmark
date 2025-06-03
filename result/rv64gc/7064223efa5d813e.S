@@ -15,7 +15,7 @@ func0000000000000009:
 	neg	a1, a1
 	and	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

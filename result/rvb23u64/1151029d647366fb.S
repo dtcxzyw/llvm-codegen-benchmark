@@ -119,7 +119,7 @@ func00000000000021e1:
 func0000000000003001:
 	sext.w	a2, a2
 	lui	a3, 1048509
-	addiw	a3, a3, 432
+	addi	a3, a3, 432
 	xor	a2, a2, a3
 	snez	a2, a2
 	addw	a1, a1, a2

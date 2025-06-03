@@ -44,7 +44,7 @@ func0000000000000188:
 func0000000000000186:
 	sext.w	a1, a1
 	lui	a3, 1046135
-	addiw	a3, a3, -1663
+	addi	a3, a3, -1663
 	slti	a1, a1, 4
 	xor	a2, a2, a3
 	snez	a2, a2

@@ -9,7 +9,7 @@ func0000000000000060:
 	add.uw	a1, a2, a1
 	lui	a2, 610
 	add.uw	a0, a0, a1
-	addiw	a1, a2, 1452
+	addi	a1, a2, 1452
 	add	a0, a0, a1
 	ret
 

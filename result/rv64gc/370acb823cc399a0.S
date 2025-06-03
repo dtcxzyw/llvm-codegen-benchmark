@@ -3,7 +3,7 @@ func0000000000000144:
 	or	a0, a0, a1
 	lui	a1, 349525
 	sext.w	a0, a0
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	sltu	a1, a2, a1

@@ -21,7 +21,7 @@ func00000000000001a6:
 	add	a1, a1, a2
 	lui	a2, 1048574
 	subw	a0, a0, a1
-	addiw	a1, a2, -516
+	addi	a1, a2, -516
 	slt	a0, a0, a1
 	addi	a0, a0, -1
 	zext.b	a0, a0

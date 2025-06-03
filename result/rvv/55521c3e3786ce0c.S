@@ -146,7 +146,7 @@ func00000000000000a4:
 	vadd.vv	v10, v10, v12
 	lui	a0, 16
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -223,7 +223,7 @@ func00000000000001e6:
 	vadd.vv	v10, v10, v12
 	lui	a0, 16
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 7
+	addi	a0, a0, 7
 	vmslt.vx	v0, v8, a0
 	ret
 
@@ -275,7 +275,7 @@ func0000000000000108:
 	vadd.vv	v10, v10, v12
 	lui	a0, 2384
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 761
+	addi	a0, a0, 761
 	slli	a0, a0, 9
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -292,7 +292,7 @@ func0000000000000184:
 	vadd.vv	v10, v10, v12
 	lui	a0, 1048575
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -339,7 +339,7 @@ func0000000000000018:
 	vadd.vv	v10, v10, v12
 	lui	a0, 2575
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0

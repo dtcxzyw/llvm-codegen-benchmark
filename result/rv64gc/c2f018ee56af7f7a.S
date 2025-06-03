@@ -4,7 +4,7 @@ func0000000000000004:
 	lui	a2, 699051
 	srai	a1, a1, 3
 	srli	a0, a0, 32
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	mul	a0, a1, a0
 	slli	a1, a2, 32
 	add	a1, a1, a2

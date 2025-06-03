@@ -3,7 +3,7 @@ func000000000000001e:
 	lui	a3, 128
 	slliw	a1, a1, 11
 	addi	a2, a2, -6
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	snez	a2, a2
 	addi	a2, a2, -1
 	and	a2, a2, a3
@@ -66,7 +66,7 @@ func000000000000008f:
 	sext.w	a2, a2
 	lui	a3, 2197
 	slliw	a1, a1, 8
-	addiw	a3, a3, 1087
+	addi	a3, a3, 1087
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

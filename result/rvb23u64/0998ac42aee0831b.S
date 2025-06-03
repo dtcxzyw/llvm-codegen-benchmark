@@ -2,7 +2,7 @@ func0000000000000000:
 	srliw	a3, a2, 2
 	lui	a4, 367720
 	zext.w	a2, a2
-	addiw	a4, a4, -807
+	addi	a4, a4, -807
 	mul	a3, a3, a4
 	lui	a4, 941363
 	addi	a4, a4, -1249
@@ -19,7 +19,7 @@ func0000000000000014:
 	srliw	a3, a2, 2
 	lui	a4, 367720
 	zext.w	a2, a2
-	addiw	a4, a4, -807
+	addi	a4, a4, -807
 	mul	a3, a3, a4
 	lui	a4, 941363
 	addi	a4, a4, -1249

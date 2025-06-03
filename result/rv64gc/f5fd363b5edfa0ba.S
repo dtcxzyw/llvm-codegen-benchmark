@@ -8,7 +8,7 @@ func000000000000010c:
 func00000000000001e1:
 	addw	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

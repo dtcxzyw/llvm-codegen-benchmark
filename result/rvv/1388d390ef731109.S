@@ -54,7 +54,7 @@ func0000000000000021:
 
 func0000000000000011:
 	lui	a0, 227374
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	slli	a0, a0, 12
 	addi	a0, a0, -1575
 	slli	a0, a0, 18
@@ -86,7 +86,7 @@ func0000000000000029:
 
 func0000000000000051:
 	lui	a0, 1819
-	addiw	a0, a0, -43
+	addi	a0, a0, -43
 	slli	a0, a0, 12
 	addi	a0, a0, -1651
 	slli	a0, a0, 15

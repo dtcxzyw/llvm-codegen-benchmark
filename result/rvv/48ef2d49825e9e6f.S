@@ -7,7 +7,7 @@ func0000000000000010:
 	vor.vv	v10, v10, v12
 	lui	a0, 235216
 	lui	a1, %hi(.LCPI0_0)
-	addiw	a0, a0, -328
+	addi	a0, a0, -328
 	ld	a1, %lo(.LCPI0_0)(a1)
 	lui	a2, %hi(.LCPI0_1)
 	ld	a2, %lo(.LCPI0_1)(a2)

@@ -1,11 +1,11 @@
 func000000000000003f:
 	zext.w	a1, a1
 	lui	a2, 2575
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	slli	a2, a2, 13
 	mul	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -13,11 +13,11 @@ func000000000000003f:
 func000000000000001d:
 	zext.w	a1, a1
 	lui	a2, 2575
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	slli	a2, a2, 13
 	mul	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -56,10 +56,10 @@ func000000000000007f:
 func0000000000000035:
 	zext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -1650
+	addi	a2, a2, -1650
 	mul	a1, a1, a2
 	lui	a2, 1048574
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -69,7 +69,7 @@ func0000000000000015:
 	li	a2, -637
 	mul	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -969
+	addi	a2, a2, -969
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

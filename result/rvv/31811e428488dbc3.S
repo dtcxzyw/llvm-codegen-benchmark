@@ -19,7 +19,7 @@ func0000000000000006:
 	vzext.vf2	v12, v8
 	lui	a0, 65541
 	vor.vv	v8, v10, v12
-	addiw	a0, a0, 768
+	addi	a0, a0, 768
 	vxor.vx	v8, v8, a0
 	ret
 

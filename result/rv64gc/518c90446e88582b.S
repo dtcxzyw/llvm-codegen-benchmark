@@ -1,7 +1,7 @@
 func0000000000000004:
 	sext.w	a2, a2
 	lui	a3, 32768
-	addiw	a3, a3, 57
+	addi	a3, a3, 57
 	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a1, a1, a2
@@ -55,7 +55,7 @@ func0000000000000010:
 	ret
 .LBB4_2:
 	lui	a1, 65
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	or	a0, a0, a1
 	ret
 

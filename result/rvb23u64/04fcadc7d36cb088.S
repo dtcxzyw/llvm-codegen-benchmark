@@ -9,7 +9,7 @@ func0000000000000318:
 func0000000000000302:
 	zext.h	a0, a0
 	lui	a3, 1
-	addiw	a3, a3, 80
+	addi	a3, a3, 80
 	addi	a0, a0, -64
 	and	a2, a2, a3
 	addi	a2, a2, -64

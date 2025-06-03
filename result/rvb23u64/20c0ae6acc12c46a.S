@@ -13,7 +13,7 @@ func000000000000018c:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	lui	a3, 3
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	xor	a1, a1, a3
 	snez	a1, a1
 	czero.eqz	a2, a0, a2

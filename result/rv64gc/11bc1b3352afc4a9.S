@@ -12,7 +12,7 @@ func000000000000000a:
 	or	a3, a3, a5
 	lui	a5, 16
 	srliw	a1, a1, 24
-	addiw	a5, a5, -256
+	addi	a5, a5, -256
 	and	a4, a4, a5
 	and	a5, a5, a0
 	slli	a0, a0, 56

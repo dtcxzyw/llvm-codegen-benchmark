@@ -11,7 +11,7 @@ func0000000000000000:
 func000000000000001c:
 	sext.w	a1, a1
 	lui	a2, 12
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -19,7 +19,7 @@ func000000000000001c:
 func000000000000000c:
 	zext.w	a1, a1
 	lui	a2, 3072
-	addiw	a2, a2, 5
+	addi	a2, a2, 5
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

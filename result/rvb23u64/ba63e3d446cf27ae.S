@@ -1,7 +1,7 @@
 func0000000000000058:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, -2032
+	addi	a2, a2, -2032
 	snez	a0, a0
 	and	a1, a1, a2
 	xor	a1, a1, a2
@@ -17,7 +17,7 @@ func0000000000000042:
 	lui	a2, 4095
 	andn	a1, a1, a2
 	lui	a2, 32768
-	addiw	a2, a2, 57
+	addi	a2, a2, 57
 	sext.w	a1, a1
 	xor	a0, a0, a2
 	xor	a1, a1, a2

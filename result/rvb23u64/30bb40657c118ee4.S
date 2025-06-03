@@ -50,7 +50,7 @@ func0000000000000026:
 	sext.w	a0, a0
 	lui	a1, 4
 	li	a2, 1
-	addiw	a1, a1, 3
+	addi	a1, a1, 3
 	czero.eqz	a1, a1, a0
 	slti	a0, a0, 0
 	czero.nez	a1, a1, a0

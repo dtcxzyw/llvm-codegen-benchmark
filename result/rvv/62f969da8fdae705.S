@@ -205,11 +205,11 @@ func000000000000294a:
 
 func0000000000001101:
 	lui	a0, 8192
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v12, v10, a0
 	vmand.mm	v10, v12, v14
 	vmseq.vi	v11, v8, 0

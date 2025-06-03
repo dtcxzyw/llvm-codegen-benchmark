@@ -3,12 +3,12 @@ func0000000000006302:
 	sext.w	a1, a1
 	lui	a2, 312854
 	lui	a3, 361878
-	addiw	a2, a2, 544
-	addiw	a3, a3, -1504
+	addi	a2, a2, 544
+	addi	a3, a3, -1504
 	xor	a2, a2, a1
 	xor	a1, a1, a3
 	lui	a3, 444055
-	addiw	a3, a3, -405
+	addi	a3, a3, -405
 	xor	a0, a0, a3
 	snez	a2, a2
 	snez	a1, a1

@@ -3,7 +3,7 @@ func0000000000000041:
 	lui	a1, 4080
 	lui	a3, 16
 	add	a0, a0, a2
-	addiw	a2, a3, -256
+	addi	a2, a3, -256
 	srliw	a3, a0, 24
 	and	a4, a0, a1
 	srli	a5, a0, 24

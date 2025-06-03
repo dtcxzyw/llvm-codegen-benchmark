@@ -28,7 +28,7 @@ func0000000000000006:
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	lui	a0, 1
-	addiw	a1, a0, 1092
+	addi	a1, a0, 1092
 	vmv.v.x	v10, a1
 	vmerge.vim	v10, v10, 0, v0
 	vor.vv	v8, v8, v10

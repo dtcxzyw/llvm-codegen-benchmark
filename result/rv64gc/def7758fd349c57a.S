@@ -7,7 +7,7 @@ func000000000000000c:
 	mv	a0, a1
 	ret
 .LBB0_3:
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	bnez	a3, .LBB0_2
 .LBB0_4:
 	ret
@@ -21,7 +21,7 @@ func0000000000000001:
 	mv	a0, a1
 	ret
 .LBB1_3:
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	bnez	a3, .LBB1_2
 .LBB1_4:
 	ret

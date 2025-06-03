@@ -14,7 +14,7 @@ func0000000000000065:
 	mul	a1, a1, a2
 	lui	a2, 1048570
 	add	a0, a0, a1
-	addiw	a1, a2, 66
+	addi	a1, a2, 66
 	add	a0, a0, a1
 	ret
 

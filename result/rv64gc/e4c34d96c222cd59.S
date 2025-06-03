@@ -6,7 +6,7 @@ func0000000000000064:
 	or	a1, a1, a2
 	slli	a2, a0, 8
 	slli	a0, a0, 48
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	srli	a0, a0, 56
 	or	a0, a0, a2
 	and	a1, a1, a3
@@ -22,7 +22,7 @@ func0000000000000004:
 	or	a1, a1, a2
 	slli	a2, a0, 8
 	slli	a0, a0, 48
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	srli	a0, a0, 56
 	or	a0, a0, a2
 	and	a1, a1, a3
@@ -38,7 +38,7 @@ func0000000000000008:
 	or	a1, a1, a2
 	slli	a2, a0, 8
 	slli	a0, a0, 48
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	srli	a0, a0, 56
 	or	a0, a0, a2
 	and	a1, a1, a3

@@ -34,7 +34,7 @@ func000000000000001b:
 	vmul.vv	v8, v8, v10
 	lui	a0, 25
 	vsrl.vi	v8, v8, 26
-	addiw	a0, a0, -1890
+	addi	a0, a0, -1890
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -53,7 +53,7 @@ func0000000000000019:
 	sext.w	a1, a1
 	lui	a2, 1048575
 	snez	a1, a1
-	addiw	a2, a2, 2047
+	addi	a2, a2, 2047
 	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -90,10 +90,10 @@ func0000000000000014:
 	sext.w	a2, a1
 	lui	a1, 16384
 	bgez	a2, .LBB9_2
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 .LBB9_2:
 	lui	a2, 999152
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -101,10 +101,10 @@ func0000000000000014:
 func000000000000000d:
 	sext.w	a1, a1
 	lui	a2, 73
-	addiw	a2, a2, 992
+	addi	a2, a2, 992
 	slt	a1, a1, a2
 	lui	a2, 1048575
-	addiw	a2, a2, 2047
+	addi	a2, a2, 2047
 	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1

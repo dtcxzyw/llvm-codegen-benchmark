@@ -49,7 +49,7 @@ func0000000000000003:
 	sext.w	a2, a2
 	lui	a3, 786432
 	seqz	a2, a2
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	addi	a0, a0, -1
 	addi	a2, a2, -1
 	andi	a0, a0, 16

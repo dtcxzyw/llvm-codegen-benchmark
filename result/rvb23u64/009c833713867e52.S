@@ -24,7 +24,7 @@ func000000000000003a:
 	li	a1, 1542
 	sh3add	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000030:
 	li	a1, 1542
 	sh3add	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret
 

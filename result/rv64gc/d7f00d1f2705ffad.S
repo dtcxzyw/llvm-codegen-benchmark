@@ -26,7 +26,7 @@ func0000000000000010:
 	slli	a2, a2, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -511
+	addi	a3, a3, -511
 	sltu	a2, a3, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

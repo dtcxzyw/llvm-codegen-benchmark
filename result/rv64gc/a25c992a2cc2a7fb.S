@@ -1,7 +1,7 @@
 func000000000000018c:
 	lui	a1, 1
-	addiw	a2, a1, -991
-	addiw	a1, a1, -1279
+	addi	a2, a1, -991
+	addi	a1, a1, -1279
 	xor	a2, a2, a0
 	xor	a0, a0, a1
 	snez	a1, a2
@@ -12,8 +12,8 @@ func000000000000018c:
 func00000000000000cc:
 	lui	a1, 42
 	lui	a2, 1048534
-	addiw	a1, a1, 769
-	addiw	a2, a2, -767
+	addi	a1, a1, 769
+	addi	a2, a2, -767
 	slt	a1, a0, a1
 	xor	a0, a0, a2
 	snez	a0, a0

@@ -3,7 +3,7 @@ func0000000000000021:
 	zext.b	a2, a2
 	lui	a3, 308966
 	xori	a2, a2, 4
-	addiw	a3, a3, 1121
+	addi	a3, a3, 1121
 	xor	a1, a1, a3
 	or	a1, a1, a2
 	seqz	a1, a1

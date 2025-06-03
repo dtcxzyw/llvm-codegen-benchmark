@@ -166,7 +166,7 @@ func0000000000000210:
 	addi	a0, a0, 383
 	vmsgtu.vx	v10, v12, a0
 	lui	a0, 488281
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

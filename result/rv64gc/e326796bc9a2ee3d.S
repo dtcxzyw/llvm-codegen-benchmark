@@ -2,7 +2,7 @@ func000000000000002f:
 	sub	a2, a2, a0
 	lui	a3, 838861
 	srli	a2, a2, 4
-	addiw	a3, a3, -819
+	addi	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

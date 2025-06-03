@@ -9,10 +9,10 @@ func0000000000000003:
 	andi	a1, a1, 223
 	or	a0, a0, a1
 	lui	a1, 916990
-	addiw	a1, a1, -33
+	addi	a1, a1, -33
 	and	a0, a0, a1
 	lui	a1, 514
-	addiw	a1, a1, 32
+	addi	a1, a1, 32
 	or	a0, a0, a1
 	ret
 

@@ -12,7 +12,7 @@ func0000000000000004:
 	vadd.vv	v10, v10, v12
 	vmacc.vx	v10, a0, v8
 	lui	a0, 176
-	addiw	a0, a0, -1846
+	addi	a0, a0, -1846
 	vadd.vx	v8, v10, a0
 	ret
 

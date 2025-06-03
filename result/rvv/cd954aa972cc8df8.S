@@ -41,7 +41,7 @@ func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
 	lui	a0, 675749
-	addiw	a0, a0, -91
+	addi	a0, a0, -91
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	vmadd.vx	v10, a0, v8

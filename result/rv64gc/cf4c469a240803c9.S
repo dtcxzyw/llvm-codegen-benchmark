@@ -51,7 +51,7 @@ func0000000000000008:
 	srli	a1, a1, 12
 	beqz	a1, .LBB7_2
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	sub	a0, a0, a2
 .LBB7_2:
 	ret

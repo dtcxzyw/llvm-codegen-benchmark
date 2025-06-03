@@ -85,7 +85,7 @@ func0000000000000301:
 	andi	a1, a1, 248
 	lui	a2, 52429
 	addi	a1, a1, -48
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	snez	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -97,7 +97,7 @@ func0000000000000701:
 	zext.b	a1, a1
 	lui	a2, 996147
 	addi	a1, a1, -57
-	addiw	a2, a2, 820
+	addi	a2, a2, 820
 	sltiu	a1, a1, -9
 	xor	a0, a0, a2
 	seqz	a0, a0

@@ -24,7 +24,7 @@ func0000000000000006:
 
 func0000000000000004:
 	lui	a3, 1
-	addiw	a3, a3, -895
+	addi	a3, a3, -895
 	bltu	a1, a3, .LBB4_2
 	srli	a0, a2, 1
 .LBB4_2:

@@ -15,10 +15,10 @@ func0000000000000008:
 	bnez	a2, .LBB1_2
 	addi	a1, a1, 15
 	andi	a1, a1, -8
-	addiw	a0, a0, 54
+	addi	a0, a0, 54
 	add	a0, a0, a1
 	ret
 .LBB1_2:
-	addiw	a0, a0, 86
+	addi	a0, a0, 86
 	ret
 

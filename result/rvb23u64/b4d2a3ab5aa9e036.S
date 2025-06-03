@@ -29,8 +29,7 @@ func0000000000000001:
 func0000000000000007:
 	lui	a1, 262143
 	and	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 37
+	bseti	a1, zero, 37
 	addi	a1, a1, -32
 	add	a0, a0, a1
 	srli	a0, a0, 5

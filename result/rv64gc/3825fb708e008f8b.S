@@ -6,7 +6,7 @@ func000000000000060a:
 	lui	a2, 16
 	zext.b	a1, a1
 	addw	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	ret
 

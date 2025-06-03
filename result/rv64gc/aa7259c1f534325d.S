@@ -55,7 +55,7 @@ func0000000000000181:
 func0000000000000039:
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a1, a1, a3
 	addi	a2, a2, -1
 	slli	a2, a2, 32

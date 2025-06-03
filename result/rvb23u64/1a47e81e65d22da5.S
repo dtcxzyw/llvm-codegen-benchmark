@@ -2,7 +2,7 @@ func0000000000000019:
 	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -14,7 +14,7 @@ func0000000000000011:
 	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -26,7 +26,7 @@ func0000000000000001:
 	sh1add	a2, a2, a2
 	sh3add	a1, a2, a1
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3

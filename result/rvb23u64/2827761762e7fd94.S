@@ -2,7 +2,7 @@ func0000000000000004:
 	addiw	a1, a0, 99
 	sext.w	a0, a0
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 37

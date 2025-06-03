@@ -3,8 +3,7 @@ func0000000000000007:
 	vand.vi	v10, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v8, v8, 4
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

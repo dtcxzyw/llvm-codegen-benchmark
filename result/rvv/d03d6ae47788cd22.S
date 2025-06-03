@@ -10,11 +10,11 @@ func0000000000001fe4:
 
 func0000000000000886:
 	lui	a0, 1048563
-	addiw	a0, a0, -420
+	addi	a0, a0, -420
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 10
-	addiw	a0, a0, -946
+	addi	a0, a0, -946
 	vmadd.vx	v10, a0, v8
 	vmsle.vi	v0, v10, -1
 	ret
@@ -78,10 +78,10 @@ func0000000000000aaa:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmadd.vx	v10, a0, v8
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vmsgt.vx	v0, v10, a0
 	ret
 

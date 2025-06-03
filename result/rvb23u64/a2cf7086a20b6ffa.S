@@ -1,7 +1,7 @@
 func000000000000002e:
 	bset	a1, zero, a1
 	lui	a2, 15
-	addiw	a2, a2, -640
+	addi	a2, a2, -640
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 64

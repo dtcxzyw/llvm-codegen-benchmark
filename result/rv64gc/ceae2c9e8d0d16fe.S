@@ -1,7 +1,7 @@
 func0000000000000001:
 	srliw	a1, a0, 9
 	lui	a2, 69
-	addiw	a2, a2, -1149
+	addi	a2, a2, -1149
 	mul	a1, a1, a2
 	lui	a2, 244141
 	addi	a2, a2, -1536
@@ -15,7 +15,7 @@ func0000000000000001:
 	slliw	a2, a0, 26
 	srliw	a0, a0, 6
 	or	a0, a0, a2
-	addiw	a1, a1, 199
+	addi	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 

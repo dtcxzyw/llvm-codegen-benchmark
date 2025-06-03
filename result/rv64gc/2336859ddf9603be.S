@@ -11,7 +11,7 @@ func0000000000000021:
 func0000000000000026:
 	sext.w	a3, a1
 	lui	a1, 128
-	addiw	a4, a1, -2048
+	addi	a4, a1, -2048
 	and	a2, a2, a4
 	lui	a1, 524288
 	beq	a2, a4, .LBB1_3
@@ -20,7 +20,7 @@ func0000000000000026:
 	mv	a0, a1
 	ret
 .LBB1_3:
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	bltz	a3, .LBB1_2
 .LBB1_4:
 	ret

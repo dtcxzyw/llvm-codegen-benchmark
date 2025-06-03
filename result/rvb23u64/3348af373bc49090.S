@@ -1,14 +1,14 @@
 func0000000000000005:
 	addw	a0, a0, a1
 	lui	a1, 1048555
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	mul	a0, a0, a1
 	ret
 
 func0000000000000015:
 	addw	a0, a0, a1
 	lui	a1, 1027482
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	mul	a0, a0, a1
 	ret
 

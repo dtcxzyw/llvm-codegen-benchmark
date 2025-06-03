@@ -29,7 +29,7 @@ func0000000000000188:
 func000000000000002c:
 	lui	a2, 16
 	addi	a0, a0, -4
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	addi	a1, a1, -1280
 	snez	a1, a1
@@ -39,7 +39,7 @@ func000000000000002c:
 
 func0000000000000021:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	xori	a1, a1, 1280
 	xori	a0, a0, 3

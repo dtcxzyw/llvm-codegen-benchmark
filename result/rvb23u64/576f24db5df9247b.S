@@ -19,7 +19,7 @@ func0000000000000009:
 func000000000000000d:
 	or	a1, a1, a2
 	lui	a2, 3584
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	and	a1, a1, a2
 	slliw	a0, a0, 24
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func000000000000000d:
 func0000000000000006:
 	or	a1, a1, a2
 	lui	a2, 1046536
-	addiw	a2, a2, 255
+	addi	a2, a2, 255
 	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

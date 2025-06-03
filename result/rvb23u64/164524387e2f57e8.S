@@ -24,7 +24,7 @@ func0000000000000020:
 	add	a2, a1, a0
 	lui	a3, 1
 	srli	a2, a2, 12
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sub	a3, a3, a0
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2

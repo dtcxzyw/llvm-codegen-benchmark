@@ -23,7 +23,7 @@ func000000000000000f:
 func0000000000000075:
 	addw	a0, a0, a1
 	lui	a1, 1048540
-	addiw	a1, a1, 1359
+	addi	a1, a1, 1359
 	mul	a0, a0, a1
 	add	a0, a0, a1
 	ret

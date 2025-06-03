@@ -4,8 +4,8 @@ func00000000000004e5:
 	lui	a3, 299593
 	sub	a0, a0, a1
 	lui	a1, 748983
-	addiw	a3, a3, 585
-	addiw	a1, a1, -585
+	addi	a3, a3, 585
+	addi	a1, a1, -585
 	slli	a4, a3, 33
 	add	a3, a3, a4
 	slli	a4, a1, 33
@@ -26,9 +26,9 @@ func00000000000004e4:
 	lui	a3, 349525
 	sub	a0, a0, a1
 	lui	a1, 699051
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	srai	a0, a0, 2
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	slli	a4, a1, 32

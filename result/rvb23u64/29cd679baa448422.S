@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a0
 	binvi	a2, a2, 13
 	czero.nez	a1, a1, a2

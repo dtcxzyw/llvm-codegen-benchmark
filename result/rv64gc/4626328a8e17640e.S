@@ -17,7 +17,7 @@ func00000000000001c1:
 
 func00000000000001e1:
 	lui	a2, 1
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	lui	a3, 1023
 	and	a1, a1, a3

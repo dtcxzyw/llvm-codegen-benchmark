@@ -22,7 +22,7 @@ func0000000000000003:
 	slli	a1, a0, 32
 	add.uw	a0, a0, a1
 	lui	a1, 2048
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	bseti	a1, a1, 39
 	bseti	a1, a1, 55
 	vand.vx	v10, v10, a1

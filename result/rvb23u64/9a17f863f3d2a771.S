@@ -17,7 +17,7 @@ func000000000000010c:
 func000000000000002c:
 	zext.b	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	addi	a0, a0, -9
 	and	a1, a1, a2
 	xor	a1, a1, a2

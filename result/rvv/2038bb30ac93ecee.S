@@ -22,7 +22,7 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a0, 3662
-	addiw	a0, a0, 449
+	addi	a0, a0, 449
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vmerge.vim	v8, v8, 0, v0
@@ -30,11 +30,11 @@ func0000000000000004:
 
 func000000000000000a:
 	lui	a0, 14649
-	addiw	a0, a0, -1305
+	addi	a0, a0, -1305
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 14648
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

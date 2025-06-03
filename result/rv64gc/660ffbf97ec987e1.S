@@ -1,6 +1,6 @@
 func0000000000000013:
 	lui	a3, 349525
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	and	a2, a2, a3
 	lui	a3, 209715
 	add	a1, a1, a2
@@ -12,7 +12,7 @@ func0000000000000013:
 
 func000000000000001b:
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	and	a2, a2, a3
 	lui	a3, 28784
 	add	a1, a1, a2
@@ -24,7 +24,7 @@ func000000000000001b:
 
 func0000000000000017:
 	lui	a3, 17476
-	addiw	a3, a3, 1092
+	addi	a3, a3, 1092
 	and	a2, a2, a3
 	lui	a3, 12336
 	add	a1, a1, a2
@@ -36,7 +36,7 @@ func0000000000000017:
 
 func000000000000001f:
 	lui	a3, 771
-	addiw	a3, a3, 48
+	addi	a3, a3, 48
 	and	a2, a2, a3
 	lui	a3, 112
 	add	a1, a1, a2

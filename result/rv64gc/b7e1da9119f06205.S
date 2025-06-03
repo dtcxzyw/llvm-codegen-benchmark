@@ -16,7 +16,7 @@ func0000000000000054:
 	li	a3, 1000
 	mul	a1, a1, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	sub	a0, a1, a0
 	add	a0, a0, a2
@@ -37,7 +37,7 @@ func0000000000000010:
 	li	a3, 1000
 	mul	a1, a1, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	sub	a0, a1, a0
 	add	a0, a0, a2
@@ -47,7 +47,7 @@ func0000000000000055:
 	li	a3, -60
 	mul	a1, a1, a3
 	lui	a3, 1048575
-	addiw	a3, a3, 496
+	addi	a3, a3, 496
 	mul	a2, a2, a3
 	sub	a0, a1, a0
 	add	a0, a0, a2
@@ -55,10 +55,10 @@ func0000000000000055:
 
 func00000000000000d5:
 	lui	a3, 1
-	addiw	a3, a3, -199
+	addi	a3, a3, -199
 	mul	a2, a2, a3
 	lui	a3, 1048574
-	addiw	a3, a3, 1382
+	addi	a3, a3, 1382
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	sub	a0, a1, a0

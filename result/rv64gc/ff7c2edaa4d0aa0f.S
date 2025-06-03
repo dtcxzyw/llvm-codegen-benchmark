@@ -14,7 +14,7 @@ func000000000000000f:
 func000000000000000b:
 	slli	a0, a0, 1
 	lui	a1, 262144
-	addiw	a2, a1, -4
+	addi	a2, a1, -4
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

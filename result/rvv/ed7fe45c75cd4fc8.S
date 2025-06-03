@@ -15,8 +15,7 @@ func000000000000001e:
 	ret
 
 func0000000000000016:
-	li	a0, 1
-	slli	a0, a0, 38
+	bseti	a0, zero, 38
 	addi	a0, a0, -129
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -42,7 +41,7 @@ func0000000000000014:
 
 func000000000000001c:
 	lui	a0, 522248
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma

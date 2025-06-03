@@ -1,12 +1,9 @@
 func0000000000000000:
 	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
-	addi	a2, a2, -1
-	add	a0, a0, a2
-	ret
-.LBB0_2:
+	beqz	a1, .LBB0_2
 	lui	a2, 64
-	addiw	a2, a2, -1
+.LBB0_2:
+	addi	a2, a2, -1
 	add	a0, a0, a2
 	ret
 
@@ -23,13 +20,10 @@ func000000000000000c:
 
 func0000000000000008:
 	andi	a1, a1, 1
-	bnez	a1, .LBB2_2
-	addi	a2, a2, 1
-	add	a0, a0, a2
-	ret
-.LBB2_2:
+	beqz	a1, .LBB2_2
 	lui	a2, 2
-	addiw	a2, a2, 1
+.LBB2_2:
+	addi	a2, a2, 1
 	add	a0, a0, a2
 	ret
 

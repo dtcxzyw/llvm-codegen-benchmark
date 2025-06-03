@@ -97,8 +97,8 @@ func0000000000001081:
 	sext.w	a1, a1
 	lui	a2, 1
 	li	a3, 2
-	addiw	a4, a2, 705
-	addiw	a2, a2, -895
+	addi	a4, a2, 705
+	addi	a2, a2, -895
 	sltu	a4, a1, a4
 	sub	a3, a3, a4
 	sltu	a1, a1, a2

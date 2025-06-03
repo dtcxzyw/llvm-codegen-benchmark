@@ -7,14 +7,14 @@ func0000000000000001:
 func0000000000000028:
 	addi	a0, a0, 6
 	lui	a1, 5461
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000034:
 	addi	a0, a0, 3
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 
@@ -26,10 +26,10 @@ func0000000000000014:
 
 func0000000000000004:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	lui	a1, 512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 

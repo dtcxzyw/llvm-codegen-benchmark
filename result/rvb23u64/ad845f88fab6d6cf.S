@@ -6,7 +6,7 @@ func0000000000000024:
 
 func0000000000000004:
 	lui	a1, 16
-	addiw	a1, a1, -33
+	addi	a1, a1, -33
 	and	a0, a0, a1
 	addi	a0, a0, -65
 	sltiu	a0, a0, 26

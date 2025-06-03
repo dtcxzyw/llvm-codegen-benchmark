@@ -27,7 +27,7 @@ func0000000000000004:
 	lui	a1, 122
 	or	a0, a0, a2
 	bclri	a0, a0, 63
-	addiw	a1, a1, 288
+	addi	a1, a1, 288
 	sltu	a0, a0, a1
 	ret
 

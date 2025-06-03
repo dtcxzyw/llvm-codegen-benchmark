@@ -26,7 +26,7 @@ func0000000000000024:
 	lui	a3, 262136
 	czero.eqz	a2, a3, a2
 	lui	a3, 1048568
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a1, a1, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

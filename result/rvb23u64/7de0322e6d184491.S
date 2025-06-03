@@ -90,7 +90,7 @@ func0000000000000029:
 func0000000000000022:
 	sext.w	a3, a2
 	lui	a4, 1048544
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	sltu	a3, a4, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

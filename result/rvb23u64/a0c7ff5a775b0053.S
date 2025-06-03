@@ -5,7 +5,7 @@ func0000000000002884:
 	maxu	a0, a0, a1
 	lui	a1, 15
 	sub	a0, a0, a2
-	addiw	a1, a1, -1439
+	addi	a1, a1, -1439
 	sltu	a0, a0, a1
 	ret
 
@@ -35,7 +35,7 @@ func00000000000000ca:
 	max	a0, a0, a1
 	lui	a1, 4096
 	subw	a0, a0, a2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

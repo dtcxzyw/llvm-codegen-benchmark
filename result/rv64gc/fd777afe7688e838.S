@@ -105,7 +105,7 @@ func00000000000000df:
 	slli	a0, a0, 2
 	lui	a2, 15
 	add	a0, a0, a1
-	addiw	a1, a2, -1904
+	addi	a1, a2, -1904
 	add	a0, a0, a1
 	ret
 
@@ -114,7 +114,7 @@ func0000000000000010:
 	slli	a0, a0, 2
 	lui	a2, 15
 	add	a0, a0, a1
-	addiw	a1, a2, -1904
+	addi	a1, a2, -1904
 	add	a0, a0, a1
 	ret
 
@@ -123,7 +123,7 @@ func00000000000000dc:
 	slli	a0, a0, 2
 	lui	a2, 15
 	add	a0, a0, a1
-	addiw	a1, a2, -1904
+	addi	a1, a2, -1904
 	add	a0, a0, a1
 	ret
 
@@ -132,7 +132,7 @@ func0000000000000013:
 	slli	a0, a0, 2
 	lui	a2, 15
 	add	a0, a0, a1
-	addiw	a1, a2, -1904
+	addi	a1, a2, -1904
 	add	a0, a0, a1
 	ret
 

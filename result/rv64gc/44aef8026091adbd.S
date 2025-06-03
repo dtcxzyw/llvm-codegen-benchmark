@@ -12,7 +12,7 @@ func0000000000000194:
 
 func0000000000000042:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
@@ -25,7 +25,7 @@ func0000000000000042:
 
 func0000000000000110:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
@@ -49,7 +49,7 @@ func00000000000001d4:
 
 func0000000000000150:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3

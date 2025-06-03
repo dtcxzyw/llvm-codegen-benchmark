@@ -10,7 +10,7 @@ func0000000000000001:
 
 func0000000000000003:
 	lui	a0, 52111
-	addiw	a0, a0, 1060
+	addi	a0, a0, 1060
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v8, v8, a0
 	ret

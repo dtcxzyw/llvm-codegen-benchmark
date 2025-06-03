@@ -1,7 +1,7 @@
 func0000000000000021:
 	lui	a2, 16
 	andi	a0, a0, -1024
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	sext.w	a0, a0
 	and	a1, a1, a2
 	xori	a1, a1, 256

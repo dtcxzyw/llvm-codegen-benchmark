@@ -17,7 +17,7 @@ func0000000000000008:
 
 func0000000000000068:
 	lui	a0, 2
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a1
 	vrsub.vx	v8, v8, a0

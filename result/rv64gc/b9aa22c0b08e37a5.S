@@ -2,7 +2,7 @@ func0000000000000021:
 	slli	a0, a0, 48
 	lui	a2, 11
 	srli	a1, a0, 48
-	addiw	a0, a2, -1912
+	addi	a0, a2, -1912
 	beq	a1, a0, .LBB0_2
 	li	a0, 14
 	li	a2, 129

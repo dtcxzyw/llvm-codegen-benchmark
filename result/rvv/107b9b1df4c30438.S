@@ -49,7 +49,7 @@ func000000000000000c:
 func0000000000000004:
 	lui	a0, 3
 	bseti	a1, a0, 43
-	addiw	a0, a0, 8
+	addi	a0, a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a1
 	bseti	a0, a0, 43

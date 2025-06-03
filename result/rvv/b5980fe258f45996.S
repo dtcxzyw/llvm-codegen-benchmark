@@ -3,7 +3,7 @@ func000000000000002c:
 	vadd.vv	v10, v10, v11
 	lui	a0, 838861
 	vrsub.vi	v12, v10, 11
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	slli	a1, a0, 32

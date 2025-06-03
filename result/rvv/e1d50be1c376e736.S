@@ -20,7 +20,7 @@ func000000000000000e:
 
 func000000000000000c:
 	lui	a0, 3840
-	addiw	a0, a0, 240
+	addi	a0, a0, 240
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12

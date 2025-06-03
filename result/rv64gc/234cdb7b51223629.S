@@ -24,7 +24,7 @@ func000000000000008a:
 
 func0000000000000104:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a3, a1, a2
 	lui	a4, 8
 	bltu	a4, a3, .LBB2_2
@@ -32,7 +32,7 @@ func0000000000000104:
 .LBB2_2:
 	and	a0, a0, a2
 	lui	a1, 3
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

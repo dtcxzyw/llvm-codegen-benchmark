@@ -3,14 +3,14 @@ func0000000000000025:
 	sext.w	a1, a1
 	beqz	a2, .LBB0_2
 	lui	a2, 2441
-	addiw	a2, a2, 1664
+	addi	a2, a2, 1664
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a2, 1978
-	addiw	a2, a2, -1888
+	addi	a2, a2, -1888
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -21,14 +21,14 @@ func0000000000000029:
 	sext.w	a1, a1
 	beqz	a2, .LBB1_2
 	lui	a2, 1951
-	addiw	a2, a2, 704
+	addi	a2, a2, 704
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a2, 1978
-	addiw	a2, a2, -1888
+	addi	a2, a2, -1888
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

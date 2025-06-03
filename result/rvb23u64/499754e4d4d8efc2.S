@@ -1,7 +1,7 @@
 func0000000000000009:
 	add	a0, a0, a1
 	lui	a1, 65279
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	min	a0, a0, a1
 	ret
 

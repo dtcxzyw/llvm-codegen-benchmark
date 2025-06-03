@@ -17,7 +17,7 @@ func000000000000002f:
 	add	a0, a0, a1
 	lui	a1, 235184
 	zext.w	a0, a0
-	addiw	a1, a1, 1725
+	addi	a1, a1, 1725
 	mul	a0, a0, a1
 	srli	a0, a0, 47
 	addi	a0, a0, 6
@@ -46,7 +46,7 @@ func000000000000000d:
 	add	a0, a0, a1
 	lui	a1, 235184
 	zext.w	a0, a0
-	addiw	a1, a1, 1725
+	addi	a1, a1, 1725
 	mul	a0, a0, a1
 	srli	a0, a0, 47
 	sh2add	a0, a0, a0

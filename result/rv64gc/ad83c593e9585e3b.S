@@ -108,7 +108,7 @@ func0000000000000104:
 func00000000000000c1:
 	sub	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -15
+	addi	a2, a2, -15
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -140,7 +140,7 @@ func000000000000058a:
 func0000000000000306:
 	sub	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1096
+	addi	a2, a2, -1096
 	sltu	a1, a2, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1

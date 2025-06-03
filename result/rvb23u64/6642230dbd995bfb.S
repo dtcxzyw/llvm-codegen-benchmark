@@ -34,7 +34,7 @@ func0000000000000c21:
 func0000000000000484:
 	sext.w	a0, a0
 	lui	a2, 786432
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 9
@@ -118,7 +118,7 @@ func000000000000002c:
 func000000000000048c:
 	sext.w	a0, a0
 	lui	a2, 1047552
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	snez	a0, a0

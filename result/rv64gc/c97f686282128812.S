@@ -6,7 +6,7 @@ func0000000000000000:
 	slliw	a1, a1, 1
 	or	a1, a1, a4
 	srliw	a4, a0, 24
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	and	a3, a3, a0
 	or	a2, a2, a4
@@ -25,7 +25,7 @@ func0000000000000002:
 	slliw	a1, a1, 1
 	or	a1, a1, a4
 	srliw	a4, a0, 24
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	and	a3, a3, a0
 	or	a2, a2, a4

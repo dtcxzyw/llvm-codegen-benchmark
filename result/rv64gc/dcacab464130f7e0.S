@@ -356,7 +356,7 @@ func000000000000028b:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, -1261
+	addi	a3, a3, -1261
 	slt	a0, a0, a1
 	sltu	a1, a2, a3
 	not	a0, a0

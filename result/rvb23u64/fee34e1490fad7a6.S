@@ -30,7 +30,7 @@ func0000000000000003:
 	sext.w	a2, a2
 	lui	a3, 1
 	andi	a0, a0, -1589
-	addiw	a3, a3, -2044
+	addi	a3, a3, -2044
 	bclri	a0, a0, 11
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1

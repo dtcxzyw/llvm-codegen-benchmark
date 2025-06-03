@@ -35,7 +35,7 @@ func000000000000002a:
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a0, a2
 	ret
 .LBB3_2:
@@ -47,7 +47,7 @@ func0000000000000026:
 	andi	a1, a1, 1
 	bnez	a1, .LBB4_2
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	ret
 .LBB4_2:

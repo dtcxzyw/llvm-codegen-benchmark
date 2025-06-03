@@ -11,7 +11,7 @@ func0000000000000001:
 
 func000000000000000c:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
 	snez	a1, a1

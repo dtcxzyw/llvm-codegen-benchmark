@@ -12,7 +12,7 @@ func00000000000004c4:
 	sext.b	a1, a1
 	lui	a2, 52429
 	addi	a1, a1, -48
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	sltiu	a1, a1, 10
 	slt	a0, a0, a2
 	and	a0, a0, a1

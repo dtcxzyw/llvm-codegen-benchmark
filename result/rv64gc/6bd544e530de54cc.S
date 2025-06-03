@@ -1,6 +1,6 @@
 func0000000000000084:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a1, a1, -5
@@ -11,7 +11,7 @@ func0000000000000084:
 
 func0000000000000081:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a1, a1, -17
@@ -22,8 +22,8 @@ func0000000000000081:
 
 func0000000000000484:
 	lui	a2, 16
-	addiw	a3, a2, -1
-	addiw	a2, a2, -6
+	addi	a3, a2, -1
+	addi	a2, a2, -6
 	and	a0, a0, a3
 	and	a1, a1, a3
 	addi	a1, a1, -15
@@ -34,7 +34,7 @@ func0000000000000484:
 
 func0000000000000481:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a1, a1, -11

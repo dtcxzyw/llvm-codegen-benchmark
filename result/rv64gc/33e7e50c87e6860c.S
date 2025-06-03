@@ -33,14 +33,14 @@ func000000000000001e:
 	li	a3, 3
 	beq	a2, a3, .LBB3_2
 	lui	a2, 319552
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	slliw	a1, a1, 19
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 .LBB3_2:
 	lui	a2, 385088
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	slliw	a1, a1, 19
 	or	a0, a0, a1
 	or	a0, a0, a2

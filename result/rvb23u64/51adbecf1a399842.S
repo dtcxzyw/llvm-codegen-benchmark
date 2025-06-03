@@ -53,7 +53,7 @@ func000000000000010c:
 	sext.w	a2, a2
 	lui	a3, 244141
 	sltu	a2, a2, a1
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	xor	a1, a1, a3
 	snez	a1, a1
 	and	a0, a0, a2

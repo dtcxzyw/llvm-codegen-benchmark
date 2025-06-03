@@ -24,13 +24,13 @@ func0000000000000021:
 	sext.w	a0, a0
 	beq	a1, a2, .LBB2_2
 	lui	a1, 485047
-	addiw	a1, a1, 622
+	addi	a1, a1, 622
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LBB2_2:
 	lui	a1, 439895
-	addiw	a1, a1, 622
+	addi	a1, a1, 622
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -38,7 +38,7 @@ func0000000000000021:
 func0000000000000038:
 	sext.w	a0, a0
 	lui	a2, 8
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	and	a1, a1, a2
 	snez	a1, a1
 	addi	a1, a1, 1

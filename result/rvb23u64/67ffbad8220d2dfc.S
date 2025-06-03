@@ -29,7 +29,7 @@ func0000000000000038:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltiu	a0, a0, 181
 	xor	a1, a1, a2
 	snez	a1, a1

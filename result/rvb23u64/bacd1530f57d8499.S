@@ -15,7 +15,7 @@ func0000000000000294:
 	sext.w	a1, a1
 	lui	a3, 1
 	li	a4, 384
-	addiw	a3, a3, -2047
+	addi	a3, a3, -2047
 	sltu	a3, a1, a3
 	sltiu	a1, a1, 1025
 	czero.nez	a2, a2, a3

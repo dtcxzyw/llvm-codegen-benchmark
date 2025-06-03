@@ -89,7 +89,7 @@ func00000000000000a4:
 	lui	a1, 16
 	srai	a2, a2, 4
 	add	a0, a0, a2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 

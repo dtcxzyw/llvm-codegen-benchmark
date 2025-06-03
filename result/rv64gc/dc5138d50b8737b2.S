@@ -47,7 +47,7 @@ func00000000000000ff:
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -1658
+	addi	a1, a1, -1658
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 2

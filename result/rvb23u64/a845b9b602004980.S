@@ -11,7 +11,7 @@ func000000000000002a:
 	zext.h	a0, a0
 	sub	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

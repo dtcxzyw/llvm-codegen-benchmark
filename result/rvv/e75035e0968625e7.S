@@ -18,7 +18,7 @@ func000000000000000f:
 
 func000000000000000c:
 	lui	a0, 4
-	addiw	a0, a0, 110
+	addi	a0, a0, 110
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
 	vmv.v.i	v12, 2

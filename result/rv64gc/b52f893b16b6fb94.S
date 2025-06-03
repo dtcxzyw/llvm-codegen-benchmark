@@ -13,7 +13,7 @@ func0000000000000007:
 	zext.b	a1, a1
 	beqz	a1, .LBB1_2
 	lui	a1, 1
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	j	.LBB1_3
 .LBB1_2:
 	li	a1, 2

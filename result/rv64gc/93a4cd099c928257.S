@@ -17,7 +17,7 @@ func0000000000000001:
 	sext.w	a3, a0
 	slli	a0, a2, 5
 	lui	a2, 524288
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	add	a0, a0, a1
 	beq	a3, a2, .LBB1_2
 	li	a1, 24

@@ -48,7 +48,7 @@ func000000000000002a:
 	slli	a1, a1, 48
 	lui	a2, 1
 	srli	a1, a1, 49
-	addiw	a2, a2, -2040
+	addi	a2, a2, -2040
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 4

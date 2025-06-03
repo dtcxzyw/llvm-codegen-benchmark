@@ -3,7 +3,7 @@ func000000000000001f:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 24
@@ -18,7 +18,7 @@ func000000000000000a:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 24
@@ -33,7 +33,7 @@ func0000000000000008:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 24
@@ -48,7 +48,7 @@ func000000000000001d:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 24
@@ -63,7 +63,7 @@ func0000000000000018:
 	vadd.vi	v10, v8, -12
 	lui	a0, 699051
 	vmv.v.i	v8, 12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
@@ -77,7 +77,7 @@ func0000000000000000:
 	vadd.vi	v10, v8, -12
 	lui	a0, 699051
 	vmv.v.i	v8, 12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v10, v10, a0
@@ -91,7 +91,7 @@ func0000000000000015:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 24
@@ -106,7 +106,7 @@ func000000000000000b:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 20

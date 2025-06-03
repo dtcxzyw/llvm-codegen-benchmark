@@ -21,7 +21,7 @@ func000000000000002c:
 func0000000000000038:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	sltiu	a0, a0, 102
 	xori	a0, a0, 1
@@ -55,7 +55,7 @@ func0000000000000041:
 func0000000000000034:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	sltiu	a0, a0, 1000
 	ret
@@ -63,7 +63,7 @@ func0000000000000034:
 func0000000000000054:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	sltiu	a0, a0, 1000
 	ret
@@ -87,7 +87,7 @@ func000000000000006c:
 func0000000000000078:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	sltiu	a0, a0, 6
 	xori	a0, a0, 1
@@ -103,7 +103,7 @@ func0000000000000008:
 	addw	a0, a0, a1
 	lui	a1, 1
 	andi	a0, a0, -8
-	addiw	a1, a1, -1384
+	addi	a1, a1, -1384
 	sltu	a0, a1, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000005:
 	lui	a1, 13
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	mul	a1, a0, a1
 	srliw	a2, a1, 21
 	srli	a1, a1, 21
@@ -23,7 +23,7 @@ func0000000000000001:
 	add	a1, a1, a2
 	lui	a2, 16
 	sub	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 

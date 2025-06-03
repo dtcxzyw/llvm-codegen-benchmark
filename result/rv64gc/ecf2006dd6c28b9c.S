@@ -85,11 +85,11 @@ func0000000000000088:
 	and	a0, a0, a1
 	bnez	a0, .LBB7_2
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	ret
 .LBB7_2:
 	lui	a0, 8
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	ret
 
 func0000000000000141:
@@ -181,7 +181,7 @@ func000000000000002a:
 	or	a1, a1, a0
 	lui	a0, 176
 	bnez	a1, .LBB15_2
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 .LBB15_2:
 	ret
 
@@ -214,7 +214,7 @@ func00000000000000ca:
 	lui	a2, 8
 	slt	a1, a1, a2
 	lui	a2, 1048568
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	and	a0, a0, a1
 	li	a1, 4

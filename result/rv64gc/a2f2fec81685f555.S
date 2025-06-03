@@ -8,7 +8,7 @@ func0000000000000010:
 func0000000000000090:
 	addiw	a2, a2, -1938
 	lui	a3, 1048575
-	addiw	a3, a3, 221
+	addi	a3, a3, 221
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

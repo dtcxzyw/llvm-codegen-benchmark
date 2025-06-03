@@ -56,7 +56,7 @@ func0000000000000002:
 	ret
 .LBB5_2:
 	lui	a1, 8193
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	or	a0, a0, a1
 	ret
 

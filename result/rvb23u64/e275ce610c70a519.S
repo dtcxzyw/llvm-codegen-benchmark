@@ -6,7 +6,7 @@ func0000000000000006:
 func0000000000000000:
 	or	a0, a0, a1
 	lui	a1, 10240
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	or	a0, a0, a1
 	ret
 

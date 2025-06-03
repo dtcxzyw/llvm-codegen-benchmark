@@ -66,7 +66,7 @@ func0000000000000011:
 func0000000000000013:
 	lui	a2, 16
 	slli	a0, a0, 2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	li	a2, 16
 	czero.nez	a0, a0, a1

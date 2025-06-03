@@ -62,11 +62,11 @@ func0000000000000014:
 	li	a3, 40
 	lui	a0, 1
 	bltu	a1, a3, .LBB5_2
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	bnez	a2, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
-	addiw	a0, a0, 334
+	addi	a0, a0, 334
 	beqz	a2, .LBB5_4
 .LBB5_3:
 	li	a0, 17

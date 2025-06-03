@@ -1,6 +1,6 @@
 func0000000000000028:
 	lui	a2, 1280
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	bgeu	a2, a0, .LBB0_2
 	lui	a0, 256
 	ret
@@ -49,7 +49,7 @@ func0000000000000018:
 
 func0000000000000034:
 	lui	a2, 2560
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	bgeu	a0, a2, .LBB5_2
 	lui	a0, 2
 	ret

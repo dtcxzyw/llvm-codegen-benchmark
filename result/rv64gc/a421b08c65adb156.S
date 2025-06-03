@@ -36,7 +36,7 @@ func0000000000000021:
 func0000000000000c34:
 	sext.w	a2, a1
 	lui	a3, 13
-	addiw	a3, a3, 2047
+	addi	a3, a3, 2047
 	sext.w	a0, a0
 	bne	a2, a3, .LBB3_2
 	lui	a1, 14
@@ -52,7 +52,7 @@ func0000000000000024:
 	sext.w	a2, a1
 	addiw	a1, a1, 1
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -65,7 +65,7 @@ func0000000000000c21:
 	sext.w	a2, a1
 	addiw	a1, a1, 1
 	lui	a3, 20
-	addiw	a3, a3, 120
+	addi	a3, a3, 120
 	xor	a2, a2, a3
 	seqz	a2, a2
 	addi	a2, a2, -1

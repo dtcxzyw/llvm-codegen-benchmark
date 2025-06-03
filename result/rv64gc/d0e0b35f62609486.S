@@ -48,7 +48,7 @@ func0000000000000284:
 	slli	a0, a0, 48
 	lui	a2, 16
 	srli	a0, a0, 48
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltiu	a1, a1, 36
 	sltiu	a0, a0, 100
@@ -59,7 +59,7 @@ func0000000000000028:
 	slli	a0, a0, 48
 	lui	a2, 64
 	srli	a0, a0, 48
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltiu	a0, a0, 25
 	addi	a1, a1, -4
@@ -82,7 +82,7 @@ func0000000000000281:
 	slli	a0, a0, 48
 	lui	a2, 16
 	srli	a0, a0, 48
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0

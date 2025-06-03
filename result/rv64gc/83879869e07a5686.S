@@ -12,7 +12,7 @@ func0000000000000003:
 	slli	a2, a2, 7
 	mul	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 88

@@ -29,12 +29,12 @@ func0000000000000004:
 	li	a0, 33
 	vsra.vx	v10, v10, a0
 	lui	a0, 24076
-	addiw	a0, a0, 179
+	addi	a0, a0, 179
 	slli	a0, a0, 7
 	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 1024500
-	addiw	a0, a0, -179
+	addi	a0, a0, -179
 	vsub.vv	v8, v10, v8
 	slli	a0, a0, 7
 	vadd.vx	v8, v8, a0

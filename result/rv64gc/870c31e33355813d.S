@@ -1,12 +1,12 @@
 func0000000000000021:
 	andi	a4, a2, 1
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	sext.w	a0, a0
 	mv	a3, a2
 	bnez	a4, .LBB0_2
 	lui	a3, 135168
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 .LBB0_2:
 	or	a1, a1, a3
 	seqz	a0, a0

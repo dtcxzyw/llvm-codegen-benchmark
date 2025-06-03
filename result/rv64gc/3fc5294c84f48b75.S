@@ -23,7 +23,7 @@ func000000000000000c:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 4096
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	or	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1
@@ -54,7 +54,7 @@ func000000000000000f:
 	add	a2, a2, a3
 	lui	a3, 16
 	andi	a1, a1, 31
-	addiw	a3, a3, -512
+	addi	a3, a3, -512
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -65,7 +65,7 @@ func000000000000000e:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 2048
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	or	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1

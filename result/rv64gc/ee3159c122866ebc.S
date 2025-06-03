@@ -21,11 +21,11 @@ func0000000000000042:
 	lui	a0, 524288
 	seqz	a1, a2
 	addi	a1, a1, -1
-	addiw	a0, a0, 64
+	addi	a0, a0, 64
 	and	a0, a0, a1
 .LBB1_2:
 	lui	a1, 262144
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	or	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000061:
 	lui	a1, 131087
-	addiw	a1, a1, -1152
+	addi	a1, a1, -1152
 	srl	a0, a1, a0
 	andi	a0, a0, 1
 	seqz	a0, a0
@@ -8,7 +8,7 @@ func0000000000000061:
 
 func000000000000004c:
 	lui	a1, 16385
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	slli	a1, a1, 12
 	srl	a0, a1, a0
 	andi	a0, a0, 1
@@ -16,7 +16,7 @@ func000000000000004c:
 
 func0000000000000041:
 	lui	a1, 11703
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	slli	a1, a1, 16
 	addi	a1, a1, -1173
 	srl	a0, a1, a0

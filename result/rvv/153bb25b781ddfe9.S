@@ -9,12 +9,12 @@ func000000000000000f:
 
 func000000000000000d:
 	lui	a0, 512
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 1024
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vv	v10, v12, v10
 	slli	a0, a0, 12
 	vand.vx	v10, v10, a0
@@ -27,7 +27,7 @@ func000000000000000b:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	lui	a1, 209715
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32

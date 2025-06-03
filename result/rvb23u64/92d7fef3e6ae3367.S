@@ -25,7 +25,7 @@ func0000000000000038:
 	li	a2, 40
 	subw	a2, a2, a1
 	lui	a1, 26510
-	addiw	a1, a1, -537
+	addi	a1, a1, -537
 	slli	a1, a1, 13
 	addi	a1, a1, -837
 	mul	a0, a0, a1

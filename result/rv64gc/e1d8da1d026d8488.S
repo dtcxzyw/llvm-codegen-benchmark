@@ -8,12 +8,12 @@ func0000000000000000:
 	ret
 .LBB0_3:
 	lui	a1, 18
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	and	a2, a2, a1
 	beqz	a0, .LBB0_2
 .LBB0_4:
 	lui	a0, 24
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	and	a0, a0, a2
 	ret
 

@@ -154,7 +154,7 @@ func0000000000000048:
 func0000000000000208:
 	sltu	a1, a2, a1
 	lui	a2, 1
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -410,7 +410,7 @@ func0000000000000330:
 func0000000000000112:
 	lui	a3, 122070
 	sltu	a0, a0, a1
-	addiw	a1, a3, 1280
+	addi	a1, a3, 1280
 	sltu	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

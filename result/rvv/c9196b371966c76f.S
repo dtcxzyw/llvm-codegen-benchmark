@@ -10,7 +10,7 @@ func000000000000005d:
 	vnmsub.vx	v10, a0, v12
 	lui	a0, 1048544
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, 30
+	addi	a0, a0, 30
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

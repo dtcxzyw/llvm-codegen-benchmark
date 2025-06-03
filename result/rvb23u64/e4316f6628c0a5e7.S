@@ -58,7 +58,7 @@ func00000000000000d5:
 	sext.w	a1, a0
 	addiw	a0, a0, 1
 	lui	a2, 7
-	addiw	a2, a2, 1326
+	addi	a2, a2, 1326
 	slt	a1, a2, a1
 	czero.nez	a0, a0, a1
 	ret
@@ -67,7 +67,7 @@ func0000000000000043:
 	sext.w	a1, a0
 	lui	a2, 1048572
 	addi	a3, a2, -64
-	addiw	a2, a2, -63
+	addi	a2, a2, -63
 	addw	a0, a0, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

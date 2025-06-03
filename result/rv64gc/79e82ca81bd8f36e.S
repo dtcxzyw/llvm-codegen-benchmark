@@ -1,6 +1,6 @@
 func0000000000000009:
 	lui	a3, 96
-	addiw	a3, a3, -6
+	addi	a3, a3, -6
 	bgeu	a2, a3, .LBB0_3
 	add	a1, a1, a2
 	bgeu	a1, a0, .LBB0_4

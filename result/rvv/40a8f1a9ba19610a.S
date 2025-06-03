@@ -3,7 +3,7 @@ func0000000000000011:
 	vsub.vv	v10, v10, v12
 	lui	a0, 21
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000015:
 	vsub.vv	v10, v10, v12
 	lui	a0, 163
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000014:
 	vsub.vv	v10, v10, v12
 	lui	a0, 1048332
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmul.vx	v8, v8, a0
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000000:
 	vsub.vv	v10, v10, v12
 	lui	a0, 163
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vmul.vx	v8, v8, a0
 	ret
 

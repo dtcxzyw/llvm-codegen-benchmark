@@ -34,7 +34,7 @@ func0000000000000008:
 	andi	a1, a1, 1
 	beqz	a1, .LBB3_2
 	lui	a0, 16
-	addiw	a0, a0, 39
+	addi	a0, a0, 39
 .LBB3_2:
 	ret
 

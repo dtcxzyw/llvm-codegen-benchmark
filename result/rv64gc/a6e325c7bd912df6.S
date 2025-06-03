@@ -3,7 +3,7 @@ func0000000000000010:
 	lui	a2, 10
 	beqz	a3, .LBB0_2
 	lui	a2, 5
-	addiw	a2, a2, 512
+	addi	a2, a2, 512
 .LBB0_2:
 	add	a1, a1, a2
 	slli	a0, a0, 2

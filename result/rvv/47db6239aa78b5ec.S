@@ -3,7 +3,7 @@ func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
 	lui	a0, 140
-	addiw	a0, a0, -68
+	addi	a0, a0, -68
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

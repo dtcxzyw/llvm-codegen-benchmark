@@ -34,7 +34,7 @@ func0000000000000030:
 
 func0000000000000010:
 	lui	a0, 2048
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -52,7 +52,7 @@ func0000000000000028:
 
 func0000000000000008:
 	lui	a0, 3662
-	addiw	a0, a0, 449
+	addi	a0, a0, 449
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -62,7 +62,7 @@ func0000000000000008:
 
 func000000000000000c:
 	lui	a0, 1
-	addiw	a0, a0, -1096
+	addi	a0, a0, -1096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

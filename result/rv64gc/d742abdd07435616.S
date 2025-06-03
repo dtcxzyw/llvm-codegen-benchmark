@@ -132,10 +132,10 @@ func0000000000000148:
 	or	a1, a1, a0
 	lui	a0, 3
 	beqz	a1, .LBB12_2
-	addiw	a0, a0, 1691
+	addi	a0, a0, 1691
 	ret
 .LBB12_2:
-	addiw	a0, a0, 677
+	addi	a0, a0, 677
 	ret
 
 func0000000000000281:
@@ -153,7 +153,7 @@ func0000000000000306:
 	lui	a2, 1048568
 	sltu	a1, a2, a1
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	bnez	a0, .LBB14_2

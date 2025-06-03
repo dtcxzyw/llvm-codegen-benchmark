@@ -89,8 +89,7 @@ func0000000000000004:
 	ret
 
 func0000000000000098:
-	li	a0, 1
-	slli	a0, a0, 37
+	bseti	a0, zero, 37
 	addi	a0, a0, -512
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -98,8 +97,7 @@ func0000000000000098:
 	ret
 
 func0000000000000094:
-	li	a0, 1
-	slli	a0, a0, 37
+	bseti	a0, zero, 37
 	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

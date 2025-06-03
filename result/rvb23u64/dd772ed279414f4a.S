@@ -5,7 +5,7 @@ func000000000000004a:
 	subw	a2, a2, a1
 	lui	a1, 1048568
 	min	a0, a0, a2
-	addiw	a1, a1, 1261
+	addi	a1, a1, 1261
 	slt	a0, a1, a0
 	ret
 

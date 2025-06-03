@@ -4,7 +4,7 @@ func0000000000000000:
 	czero.eqz	a0, a1, a0
 	lui	a1, 8
 	or	a0, a0, a2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	min	a0, a0, a1
 	ret
 

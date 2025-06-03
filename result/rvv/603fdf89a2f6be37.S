@@ -13,7 +13,7 @@ func0000000000000000:
 
 func000000000000002a:
 	lui	a0, 3
-	addiw	a0, a0, -703
+	addi	a0, a0, -703
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vx	v8, a0, v10
 	lui	a0, 32

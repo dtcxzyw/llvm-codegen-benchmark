@@ -26,7 +26,7 @@ func0000000000000004:
 	srli	a0, a0, 32
 	vmv.v.x	v12, a0
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v8, v8, v10
 	vand.vv	v8, v8, v12

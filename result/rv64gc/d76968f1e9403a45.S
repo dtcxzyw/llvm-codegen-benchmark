@@ -3,13 +3,13 @@ func0000000000000144:
 	bnez	a0, .LBB0_2
 	subw	a1, a2, a1
 	lui	a0, 15
-	addiw	a0, a0, -1439
+	addi	a0, a0, -1439
 	sltu	a0, a1, a0
 	ret
 .LBB0_2:
 	subw	a1, a1, a2
 	lui	a0, 15
-	addiw	a0, a0, -1439
+	addi	a0, a0, -1439
 	sltu	a0, a1, a0
 	ret
 
@@ -64,13 +64,13 @@ func000000000000000a:
 	bnez	a0, .LBB5_2
 	subw	a1, a2, a1
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a0, a1
 	ret
 .LBB5_2:
 	subw	a1, a1, a2
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a0, a1
 	ret
 

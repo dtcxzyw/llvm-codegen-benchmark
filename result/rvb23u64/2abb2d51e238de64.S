@@ -3,7 +3,7 @@ func0000000000000000:
 	lui	a2, 339406
 	rori	a1, a1, 33
 	add	a0, a0, a1
-	addiw	a1, a2, 1833
+	addi	a1, a2, 1833
 	add	a0, a0, a1
 	ret
 

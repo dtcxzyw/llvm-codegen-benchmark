@@ -5,7 +5,7 @@ func000000000000006a:
 	slli	a2, a2, 4
 	czero.eqz	a1, a2, a1
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	mul	a0, a0, a2

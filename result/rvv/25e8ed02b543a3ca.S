@@ -156,7 +156,7 @@ func0000000000000078:
 
 func0000000000000007:
 	lui	a0, 24414
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsle.vv	v12, v8, v10

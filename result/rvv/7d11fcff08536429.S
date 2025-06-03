@@ -4,7 +4,7 @@ func00000000000000a1:
 	vmv.v.i	v12, -1
 	lui	a0, 699051
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
@@ -30,7 +30,7 @@ func00000000000000a8:
 	vmv.v.i	v12, -1
 	lui	a0, 699051
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
@@ -43,7 +43,7 @@ func00000000000000ac:
 	vmv.v.i	v12, -1
 	lui	a0, 748983
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
@@ -56,7 +56,7 @@ func00000000000000a9:
 	vmv.v.i	v12, -1
 	lui	a0, 699051
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10

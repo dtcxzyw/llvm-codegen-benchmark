@@ -6,7 +6,7 @@ func0000000000000021:
 	lui	a2, 8
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.nez	a0, a2, a0
 	addi	a0, a0, 2
 	ret

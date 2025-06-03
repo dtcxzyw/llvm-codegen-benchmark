@@ -42,7 +42,7 @@ func0000000000000181:
 
 func000000000000028c:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	sltiu	a1, a1, 80
 	srli	a0, a0, 4

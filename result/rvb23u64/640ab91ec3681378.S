@@ -26,10 +26,10 @@ func0000000000000021:
 func0000000000000288:
 	sext.w	a2, a2
 	lui	a3, 5273
-	addiw	a3, a3, 1793
+	addi	a3, a3, 1793
 	sltu	a2, a2, a3
 	lui	a3, 15820
-	addiw	a3, a3, 1279
+	addi	a3, a3, 1279
 	and	a1, a1, a2
 	sltu	a0, a3, a0
 	and	a0, a0, a1
@@ -40,7 +40,7 @@ func0000000000000034:
 	seqz	a2, a2
 	and	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

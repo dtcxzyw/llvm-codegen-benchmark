@@ -7,7 +7,7 @@ func000000000000000a:
 
 func000000000000000c:
 	lui	a0, 15
-	addiw	a0, a0, 31
+	addi	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmsne.vv	v0, v10, v8
@@ -42,7 +42,7 @@ func0000000000000014:
 
 func0000000000000001:
 	lui	a0, 15
-	addiw	a0, a0, 31
+	addi	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

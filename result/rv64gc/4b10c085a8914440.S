@@ -48,7 +48,7 @@ func0000000000000141:
 func00000000000000aa:
 	sext.w	a1, a0
 	lui	a2, 32
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	bge	a2, a1, .LBB5_2
 	lui	a0, 64
 	ret
@@ -61,7 +61,7 @@ func0000000000000006:
 	sext.w	a1, a0
 	bgtz	a1, .LBB6_2
 	lui	a0, 480
-	addiw	a0, a0, 528
+	addi	a0, a0, 528
 	ret
 .LBB6_2:
 	slli	a0, a0, 7

@@ -1,7 +1,7 @@
 func0000000000000021:
 	lui	a3, 16
 	andi	a2, a2, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	addi	a2, a2, -1
 	and	a0, a0, a3
 	andi	a2, a2, 2

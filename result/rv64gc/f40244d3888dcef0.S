@@ -13,7 +13,7 @@ func0000000000000014:
 func0000000000000004:
 	sext.w	a0, a0
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	bltu	a0, a2, .LBB1_2
 	li	a0, 1
 	ret

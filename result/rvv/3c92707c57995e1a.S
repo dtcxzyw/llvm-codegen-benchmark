@@ -47,7 +47,7 @@ func0000000000000006:
 
 func000000000000000a:
 	lui	a0, 122070
-	addiw	a0, a0, 1279
+	addi	a0, a0, 1279
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v9, v10, a0
 	vmandn.mm	v10, v9, v0

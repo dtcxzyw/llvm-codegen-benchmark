@@ -7,7 +7,7 @@ func0000000000000001:
 	j	.LBB0_4
 .LBB0_2:
 	lui	a1, 4
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	beqz	a2, .LBB0_4
 .LBB0_3:
 	li	a1, 2

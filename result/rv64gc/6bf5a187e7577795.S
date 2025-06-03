@@ -39,7 +39,7 @@ func0000000000000018:
 
 func0000000000000010:
 	lui	a3, 44
-	addiw	a3, a3, -1616
+	addi	a3, a3, -1616
 	add	a2, a2, a3
 	sltiu	a2, a2, 32
 	or	a0, a0, a1

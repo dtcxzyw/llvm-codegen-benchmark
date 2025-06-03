@@ -14,7 +14,7 @@ func0000000000000028:
 	vmaxu.vx	v10, v10, a0
 	lui	a0, 244
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -16,13 +16,13 @@ func0000000000000001:
 
 func0000000000000000:
 	lui	a3, 788488
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	and	a2, a2, a3
 	lui	a3, 1046536
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	and	a1, a1, a3
 	lui	a3, 1048568
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1

@@ -6,7 +6,7 @@ func000000000000001c:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	vand.vx	v8, v8, a0
 	ret
 

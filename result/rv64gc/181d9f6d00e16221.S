@@ -2,7 +2,7 @@
 	.quad	4223091239536077
 func0000000000000046:
 	lui	a3, 16
-	addiw	a4, a3, -16
+	addi	a4, a3, -16
 	bltu	a4, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -13,7 +13,7 @@ func0000000000000046:
 	srli	a4, a4, 1
 	add	a1, a1, a4
 	srli	a1, a1, 15
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	mul	a1, a1, a3
 	sub	a2, a2, a1
 	slli	a2, a2, 16

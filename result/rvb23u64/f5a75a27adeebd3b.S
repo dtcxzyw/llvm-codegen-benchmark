@@ -17,7 +17,7 @@ func0000000000000130:
 	sh2add	a1, a2, a1
 	lui	a2, 313
 	sh3add	a0, a0, a1
-	addiw	a1, a2, -768
+	addi	a1, a2, -768
 	add	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func0000000000000330:
 	sh2add	a1, a2, a1
 	lui	a2, 320
 	sh2add	a0, a0, a1
-	addiw	a1, a2, -924
+	addi	a1, a2, -924
 	add	a0, a0, a1
 	ret
 

@@ -5,7 +5,7 @@ func0000000000000003:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 65281
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
 	add	a0, a0, a1
@@ -32,7 +32,7 @@ func000000000000000f:
 	lui	a0, 240
 	slli	a1, a0, 32
 	add	a1, a1, a0
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vand.vx	v12, v12, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1

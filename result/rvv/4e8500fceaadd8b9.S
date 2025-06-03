@@ -29,7 +29,7 @@ func0000000000000008:
 	lui	a0, 51
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 8
-	addiw	a0, a0, 811
+	addi	a0, a0, 811
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -4,7 +4,7 @@ func00000000000004aa:
 	addi	a3, a3, -2
 	addw	a2, a2, a3
 	lui	a3, 524304
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	mul	a3, a2, a3
 	srli	a3, a3, 32
 	add	a2, a2, a3

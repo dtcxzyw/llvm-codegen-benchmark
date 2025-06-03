@@ -8,7 +8,7 @@ func00000000000000a1:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 17476
-	addiw	a1, a1, 1092
+	addi	a1, a1, 1092
 	sltu	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func00000000000000ac:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 17476
-	addiw	a1, a1, 1091
+	addi	a1, a1, 1091
 	sltu	a0, a1, a0
 	ret
 

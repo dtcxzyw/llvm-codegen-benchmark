@@ -66,7 +66,7 @@ func0000000000000007:
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	lui	a0, 1
-	addiw	a0, a0, -1816
+	addi	a0, a0, -1816
 	ret
 .LBB5_2:
 	sext.w	a1, a1

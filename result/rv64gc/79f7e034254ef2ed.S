@@ -58,7 +58,7 @@ func0000000000000064:
 	li	a2, 16
 	bltu	a1, a2, .LBB7_2
 	lui	a0, 2441
-	addiw	a0, a0, 1663
+	addi	a0, a0, 1663
 	ret
 .LBB7_2:
 	addiw	a0, a0, 10

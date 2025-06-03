@@ -22,7 +22,7 @@ func000000000000003d:
 	slli	a2, a2, 3
 	sub	a2, a2, a3
 	lui	a3, 61440
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	add	a1, a1, a2
 	slli	a3, a3, 24
 	srli	a1, a1, 4

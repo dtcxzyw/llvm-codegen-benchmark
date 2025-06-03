@@ -20,7 +20,7 @@ func0000000000000042:
 	sext.w	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -256
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	seqz	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -137,7 +137,7 @@ func0000000000000294:
 	slli	a2, a2, 31
 	xor	a1, a1, a2
 	lui	a2, 524304
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	snez	a1, a1
 	slt	a0, a2, a0
 	or	a0, a0, a1

@@ -2,7 +2,7 @@ func0000000000000003:
 	li	a2, 15
 	lui	a3, 1048512
 	slli	a2, a2, 9
-	addiw	a3, a3, 511
+	addi	a3, a3, 511
 	and	a3, a3, a1
 	add	a1, a1, a2
 	and	a1, a1, a2

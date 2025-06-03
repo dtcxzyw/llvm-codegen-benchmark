@@ -15,7 +15,7 @@ func0000000000000068:
 	zext.b	a0, a0
 	beqz	a1, .LBB1_2
 	lui	a1, 1
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	sltiu	a0, a0, 32
 	xori	a0, a0, 1
 	slli	a0, a0, 10

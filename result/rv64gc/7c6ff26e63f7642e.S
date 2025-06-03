@@ -26,7 +26,7 @@ func0000000000000099:
 func00000000000000a9:
 	addw	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 906
+	addi	a2, a2, 906
 	blt	a2, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

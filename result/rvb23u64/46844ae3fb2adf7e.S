@@ -56,7 +56,7 @@ func0000000000000014:
 	sltiu	a1, a1, 240
 	czero.eqz	a1, a2, a1
 	lui	a2, 64
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	and	a0, a0, a1
 	ret

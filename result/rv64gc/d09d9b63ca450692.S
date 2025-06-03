@@ -5,7 +5,7 @@ func0000000000000004:
 	add	a0, a0, a2
 	addi	a0, a0, -2048
 	addi	a0, a0, -2038
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 

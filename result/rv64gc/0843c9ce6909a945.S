@@ -3,18 +3,18 @@ func0000000000000294:
 	li	a0, 33
 	bltu	a1, a0, .LBB0_2
 	lui	a0, 262144
-	addiw	a0, a0, 369
+	addi	a0, a0, 369
 	li	a2, 17
 	bltu	a1, a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	lui	a0, 131072
-	addiw	a0, a0, 361
+	addi	a0, a0, 361
 	li	a2, 17
 	bgeu	a1, a2, .LBB0_4
 .LBB0_3:
 	lui	a0, 65536
-	addiw	a0, a0, 353
+	addi	a0, a0, 353
 .LBB0_4:
 	ret
 

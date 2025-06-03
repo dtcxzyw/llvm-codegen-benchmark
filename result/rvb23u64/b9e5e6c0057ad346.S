@@ -52,7 +52,7 @@ func0000000000000144:
 
 func0000000000000181:
 	lui	a3, 4
-	addiw	a3, a3, 272
+	addi	a3, a3, 272
 	add	a2, a2, a3
 	sh3add	a0, a1, a0
 	xor	a0, a0, a2

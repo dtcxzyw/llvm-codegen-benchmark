@@ -44,7 +44,7 @@ func000000000000002e:
 	ret
 .LBB3_2:
 	lui	a2, 2
-	addiw	a2, a2, -864
+	addi	a2, a2, -864
 	add	a1, a1, a2
 	li	a2, 104
 	mul	a0, a0, a2

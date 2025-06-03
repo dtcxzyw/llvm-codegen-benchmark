@@ -6,7 +6,7 @@ func0000000000000000:
 
 func0000000000000005:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 12
 	slli	a0, a0, 11
@@ -35,10 +35,9 @@ func0000000000000006:
 
 func0000000000000007:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	srli	a0, a0, 4
 	addi	a1, a1, -256
 	and	a0, a0, a1

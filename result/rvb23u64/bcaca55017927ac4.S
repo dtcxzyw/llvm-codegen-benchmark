@@ -42,7 +42,7 @@ func0000000000000021:
 func0000000000000184:
 	sext.w	a0, a0
 	lui	a3, 32
-	addiw	a3, a3, -48
+	addi	a3, a3, -48
 	sltiu	a0, a0, 6
 	and	a2, a2, a3
 	snez	a2, a2

@@ -55,7 +55,7 @@ func0000000000000026:
 	seqz	a0, a0
 	lui	a1, 4
 	addi	a0, a0, -1
-	addiw	a1, a1, 3
+	addi	a1, a1, 3
 	and	a0, a0, a1
 	ret
 

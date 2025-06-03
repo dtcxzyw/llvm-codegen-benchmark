@@ -32,7 +32,7 @@ func0000000000000080:
 
 func000000000000001b:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	beq	a2, a3, .LBB2_2
 	li	a2, 88

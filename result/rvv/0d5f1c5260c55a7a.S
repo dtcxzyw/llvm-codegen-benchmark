@@ -156,7 +156,7 @@ func0000000000000188:
 
 func000000000000018a:
 	lui	a0, 4059
-	addiw	a0, a0, -769
+	addi	a0, a0, -769
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	li	a0, 23

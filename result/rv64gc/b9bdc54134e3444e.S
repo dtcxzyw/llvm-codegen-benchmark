@@ -25,7 +25,7 @@ func000000000000030a:
 func0000000000000526:
 	sext.w	a3, a1
 	lui	a2, 1
-	addiw	a2, a2, -496
+	addi	a2, a2, -496
 	blt	a2, a3, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
@@ -48,13 +48,13 @@ func000000000000036a:
 func000000000000032a:
 	sext.w	a2, a1
 	lui	a3, 1047978
-	addiw	a3, a3, -836
+	addi	a3, a3, -836
 	blt	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
 	sext.w	a1, a0
 	lui	a2, 523342
-	addiw	a2, a2, -1428
+	addi	a2, a2, -1428
 	slt	a1, a2, a1
 	lui	a2, 525234
 	negw	a1, a1

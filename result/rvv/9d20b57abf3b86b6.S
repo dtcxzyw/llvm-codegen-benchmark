@@ -24,7 +24,7 @@ func0000000000000002:
 	lui	a0, 8192
 	vmv.v.x	v10, a0
 	lui	a0, 8193
-	addiw	a0, a0, -2048
+	addi	a0, a0, -2048
 	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v8, v10
 	ret

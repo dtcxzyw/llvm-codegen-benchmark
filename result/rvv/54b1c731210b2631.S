@@ -1,9 +1,8 @@
 func0000000000000110:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
-	li	a0, 1
+	bseti	a0, zero, 36
 	vmsltu.vv	v12, v8, v10
-	slli	a0, a0, 36
 	addi	a0, a0, -48
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12

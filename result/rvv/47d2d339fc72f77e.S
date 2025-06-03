@@ -42,7 +42,7 @@ func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 6019
-	addiw	a0, a0, 551
+	addi	a0, a0, 551
 	slli	a0, a0, 7
 	vmerge.vxm	v12, v12, a0, v0
 	vsub.vv	v8, v8, v10
@@ -54,7 +54,7 @@ func0000000000000078:
 	vmv.v.i	v12, 0
 	lui	a0, 9
 	vmerge.vim	v12, v12, 1, v0
-	addiw	a0, a0, -340
+	addi	a0, a0, -340
 	vor.vx	v12, v12, a0
 	vsub.vv	v8, v8, v10
 	vmsltu.vv	v0, v12, v8

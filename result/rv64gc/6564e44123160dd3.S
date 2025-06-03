@@ -10,7 +10,7 @@ func000000000000000b:
 	andi	a0, a0, 248
 	or	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000000:
 
 func000000000000000f:
 	lui	a2, 1048320
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	and	a1, a1, a2
 	slliw	a0, a0, 20
 	or	a0, a0, a1
@@ -73,7 +73,7 @@ func000000000000000d:
 func000000000000000c:
 	lui	a2, 1044672
 	slliw	a0, a0, 20
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	lui	a2, 64
 	or	a0, a0, a2

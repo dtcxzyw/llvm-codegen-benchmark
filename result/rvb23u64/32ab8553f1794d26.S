@@ -6,7 +6,7 @@ func000000000000001e:
 	lui	a0, 3855
 	addi	a1, a1, 68
 	zext.w	a1, a1
-	addiw	a0, a0, 241
+	addi	a0, a0, 241
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	ret

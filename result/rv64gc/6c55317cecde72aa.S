@@ -48,11 +48,11 @@ func0000000000000018:
 	zext.b	a2, a1
 	lui	a1, 40
 	beqz	a2, .LBB5_2
-	addiw	a1, a1, 320
+	addi	a1, a1, 320
 	or	a0, a0, a1
 	ret
 .LBB5_2:
-	addiw	a1, a1, 640
+	addi	a1, a1, 640
 	or	a0, a0, a1
 	ret
 

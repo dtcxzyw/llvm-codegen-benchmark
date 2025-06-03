@@ -55,7 +55,7 @@ func0000000000000013:
 func0000000000000051:
 	andi	a2, a2, 1
 	lui	a3, 1048575
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	lui	a3, 1
 	sltiu	a1, a1, 513
@@ -70,7 +70,7 @@ func0000000000000051:
 func0000000000000053:
 	andi	a2, a2, 1
 	lui	a3, 1048575
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	lui	a3, 1
 	sltiu	a1, a1, 513

@@ -4,7 +4,7 @@ func0000000000000018:
 	lui	a1, 514
 	slli	a2, a2, 32
 	or	a0, a0, a2
-	addiw	a1, a1, -1912
+	addi	a1, a1, -1912
 	or	a0, a0, a1
 	ret
 

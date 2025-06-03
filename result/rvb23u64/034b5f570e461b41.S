@@ -88,7 +88,7 @@ func0000000000000081:
 func000000000000018c:
 	sext.w	a1, a1
 	lui	a3, 4096
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a1, a1, a3
 	zext.b	a2, a2
 	addi	a2, a2, -15
@@ -104,7 +104,7 @@ func000000000000010c:
 	sltiu	a2, a2, 160
 	andn	a0, a0, a2
 	lui	a2, 4096
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

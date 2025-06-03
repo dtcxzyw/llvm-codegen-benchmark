@@ -51,7 +51,7 @@ func00000000000000ff:
 	lui	a1, 15
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, -1904
+	addi	a1, a1, -1904
 	add	a0, a0, a1
 	ret
 
@@ -61,7 +61,7 @@ func00000000000000fc:
 	lui	a1, 15
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, -1904
+	addi	a1, a1, -1904
 	add	a0, a0, a1
 	ret
 
@@ -71,7 +71,7 @@ func00000000000000c3:
 	lui	a1, 15
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, -1904
+	addi	a1, a1, -1904
 	add	a0, a0, a1
 	ret
 
@@ -81,7 +81,7 @@ func00000000000000cf:
 	lui	a1, 4
 	mul	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, -1500
+	addi	a1, a1, -1500
 	add	a0, a0, a1
 	ret
 

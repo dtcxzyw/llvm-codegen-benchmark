@@ -31,7 +31,7 @@ func0000000000000010:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	sltu	a2, a3, a2
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

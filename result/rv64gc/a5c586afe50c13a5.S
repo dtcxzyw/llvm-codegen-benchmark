@@ -20,16 +20,16 @@ func0000000000000021:
 	zext.b	a0, a1
 	lui	a1, 699325
 	beqz	a0, .LBB1_2
-	addiw	a0, a1, -1022
+	addi	a0, a1, -1022
 	li	a3, 255
 	beq	a2, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addiw	a0, a1, -1024
+	addi	a0, a1, -1024
 	li	a3, 255
 	bne	a2, a3, .LBB1_4
 .LBB1_3:
-	addiw	a0, a1, -1023
+	addi	a0, a1, -1023
 .LBB1_4:
 	ret
 

@@ -22,7 +22,7 @@ func000000000000002f:
 	li	a2, 5
 	minu	a1, a1, a2
 	lui	a2, 6
-	addiw	a2, a2, 864
+	addi	a2, a2, 864
 	addi	a1, a1, -2
 	slli.uw	a1, a1, 7
 	add	a0, a0, a2

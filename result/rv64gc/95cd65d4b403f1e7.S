@@ -37,7 +37,7 @@ func00000000000001f0:
 	add	a0, a0, a2
 	lui	a2, 1
 	add	a0, a0, a1
-	addiw	a1, a2, 284
+	addi	a1, a2, 284
 	add	a0, a0, a1
 	ret
 

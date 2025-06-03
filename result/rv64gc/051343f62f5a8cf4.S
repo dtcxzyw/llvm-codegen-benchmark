@@ -1,7 +1,7 @@
 func0000000000000007:
 	lui	a2, 16
 	slli	a0, a0, 63
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	mul	a1, a1, a2
 	lui	a2, 1044480
 	srai	a0, a0, 63
@@ -19,7 +19,7 @@ func0000000000000000:
 	or	a0, a0, a1
 	ret
 .LBB1_2:
-	addiw	a0, a0, 20
+	addi	a0, a0, 20
 	ret
 
 func0000000000000001:

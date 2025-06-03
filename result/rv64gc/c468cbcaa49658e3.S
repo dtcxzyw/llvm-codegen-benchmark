@@ -1,12 +1,12 @@
 func0000000000000003:
 	lui	a1, 1033135
-	addiw	a1, a1, 1535
+	addi	a1, a1, 1535
 	srli	a1, a1, 1
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	lui	a1, 7720
-	addiw	a1, a1, 1280
+	addi	a1, a1, 1280
 	add	a0, a0, a1
 	ret
 

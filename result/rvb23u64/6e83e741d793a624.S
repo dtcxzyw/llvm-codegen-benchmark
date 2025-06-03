@@ -89,7 +89,7 @@ func0000000000000006:
 func0000000000000005:
 	slliw	a2, a2, 1
 	lui	a3, 1048568
-	addiw	a3, a3, 254
+	addi	a3, a3, 254
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

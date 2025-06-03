@@ -4,7 +4,7 @@ func0000000000000842:
 	xori	a1, a1, 6
 	or	a0, a0, a1
 	lui	a1, 128
-	addiw	a1, a1, 268
+	addi	a1, a1, 268
 	sext.w	a0, a0
 	xor	a1, a1, a2
 	seqz	a0, a0
@@ -174,7 +174,7 @@ func000000000000504c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	addi	a1, a1, -3
 	slt	a2, a2, a0
 	seqz	a1, a1

@@ -50,7 +50,7 @@ func0000000000000008:
 	and	a1, a1, a2
 	beqz	a1, .LBB4_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB4_2:
 	ret
 

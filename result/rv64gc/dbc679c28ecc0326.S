@@ -8,7 +8,7 @@ func0000000000000000:
 	andi	a0, a0, -2048
 	or	a0, a0, a2
 	lui	a1, 262144
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 	and	a0, a0, a1
 	ret
 

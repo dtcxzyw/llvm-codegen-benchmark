@@ -28,7 +28,7 @@ func0000000000000043:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v10, v0
 	lui	a0, 32
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v12, v8, 1, v0

@@ -33,7 +33,7 @@ func0000000000000020:
 
 func0000000000000012:
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	bgeu	a1, a2, .LBB5_2
 	li	a0, 1
 .LBB5_2:

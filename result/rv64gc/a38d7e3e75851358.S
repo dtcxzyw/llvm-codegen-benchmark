@@ -11,7 +11,7 @@ func0000000000000085:
 
 func00000000000000a0:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	blt	a3, a2, .LBB1_2
 	li	a2, 6
 	subw	a0, a1, a0

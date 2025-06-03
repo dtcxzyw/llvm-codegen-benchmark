@@ -12,7 +12,7 @@ func0000000000000006:
 	snez	a2, a2
 	lui	a3, 1
 	slli	a2, a2, 12
-	addiw	a3, a3, 1092
+	addi	a3, a3, 1092
 	czero.nez	a1, a3, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

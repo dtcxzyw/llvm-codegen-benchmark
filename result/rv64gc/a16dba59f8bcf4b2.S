@@ -41,7 +41,7 @@ func00000000000001a0:
 	slli	a1, a1, 4
 	subw	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, 184
+	addi	a2, a2, 184
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a2

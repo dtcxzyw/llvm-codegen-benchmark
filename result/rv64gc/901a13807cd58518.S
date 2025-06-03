@@ -5,7 +5,7 @@ func000000000000000f:
 	ld	a3, %lo(.LCPI0_0)(a3)
 	lui	a4, 16
 	sub	a1, a1, a2
-	addiw	a4, a4, -15
+	addi	a4, a4, -15
 	mulhu	a3, a2, a3
 	sub	a2, a2, a3
 	srli	a2, a2, 1

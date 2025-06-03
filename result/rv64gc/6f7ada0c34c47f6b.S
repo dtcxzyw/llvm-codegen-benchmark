@@ -3,7 +3,7 @@ func000000000000002a:
 	srliw	a0, a0, 11
 	lui	a2, 272
 	addi	a0, a0, -27
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	snez	a0, a0
 	slt	a1, a2, a1
 	and	a0, a0, a1

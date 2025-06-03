@@ -3,7 +3,7 @@ func0000000000000000:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -40,7 +40,7 @@ func0000000000000007:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	vsrl.vi	v8, v8, 4
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -52,7 +52,7 @@ func0000000000000003:
 	lui	a1, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -1365
+	addi	a0, a1, -1365
 	vsrl.vi	v8, v8, 3
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -63,7 +63,7 @@ func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 2
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0

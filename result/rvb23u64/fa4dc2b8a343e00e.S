@@ -16,7 +16,7 @@ func0000000000000281:
 	zext.w	a1, a1
 	lui	a2, 6
 	sltiu	a1, a1, 29
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	and	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

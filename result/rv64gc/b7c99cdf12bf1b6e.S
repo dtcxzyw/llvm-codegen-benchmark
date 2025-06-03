@@ -10,7 +10,7 @@ func00000000000001c4:
 	slli	a1, a0, 8
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000004:
 	slli	a1, a0, 8
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 

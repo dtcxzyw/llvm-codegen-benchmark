@@ -104,7 +104,7 @@ func0000000000000141:
 
 func0000000000000146:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	slt	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

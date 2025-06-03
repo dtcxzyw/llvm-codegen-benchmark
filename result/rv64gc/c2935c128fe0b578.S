@@ -18,7 +18,7 @@ func0000000000000018:
 func0000000000000004:
 	sext.w	a2, a1
 	lui	a3, 32
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -29,7 +29,7 @@ func0000000000000004:
 func0000000000000029:
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
@@ -39,7 +39,7 @@ func0000000000000029:
 func0000000000000028:
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	blt	a1, a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

@@ -16,7 +16,7 @@ func0000000000000003:
 	lui	a3, 1048560
 	and	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1
@@ -40,7 +40,7 @@ func000000000000000d:
 	lui	a4, 349525
 	or	a1, a1, a2
 	ld	a2, %lo(.LCPI3_0)(a3)
-	addiw	a3, a4, 1365
+	addi	a3, a4, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	and	a1, a1, a2
@@ -56,7 +56,7 @@ func0000000000000009:
 	lui	a4, 349525
 	or	a1, a1, a2
 	ld	a2, %lo(.LCPI4_0)(a3)
-	addiw	a3, a4, 1365
+	addi	a3, a4, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	and	a1, a1, a2

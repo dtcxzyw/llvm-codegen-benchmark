@@ -116,7 +116,7 @@ func0000000000000101:
 func0000000000000009:
 	sext.w	a2, a2
 	lui	a3, 2
-	addiw	a3, a3, -1728
+	addi	a3, a3, -1728
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	add	a0, a0, a3

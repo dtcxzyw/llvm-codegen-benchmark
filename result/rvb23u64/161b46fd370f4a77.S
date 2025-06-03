@@ -3,7 +3,7 @@ func0000000000000002:
 	lui	a3, 128
 	and	a2, a2, a3
 	lui	a3, 4088
-	addiw	a3, a3, -1809
+	addi	a3, a3, -1809
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -13,7 +13,7 @@ func0000000000000003:
 	slli	a2, a1, 56
 	lui	a3, 16
 	srli	a2, a2, 40
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

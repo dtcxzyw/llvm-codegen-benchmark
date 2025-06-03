@@ -31,7 +31,7 @@ func00000000000003df:
 	slli	a0, a0, 2
 	lui	a2, 233
 	add	a0, a0, a1
-	addiw	a1, a2, -1792
+	addi	a1, a2, -1792
 	add	a0, a0, a1
 	ret
 
@@ -40,7 +40,7 @@ func0000000000000310:
 	slli	a0, a0, 2
 	lui	a2, 233
 	add	a0, a0, a1
-	addiw	a1, a2, -1792
+	addi	a1, a2, -1792
 	add	a0, a0, a1
 	ret
 
@@ -49,7 +49,7 @@ func00000000000003dc:
 	slli	a0, a0, 2
 	lui	a2, 233
 	add	a0, a0, a1
-	addiw	a1, a2, -1792
+	addi	a1, a2, -1792
 	add	a0, a0, a1
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000313:
 	slli	a0, a0, 2
 	lui	a2, 233
 	add	a0, a0, a1
-	addiw	a1, a2, -1792
+	addi	a1, a2, -1792
 	add	a0, a0, a1
 	ret
 

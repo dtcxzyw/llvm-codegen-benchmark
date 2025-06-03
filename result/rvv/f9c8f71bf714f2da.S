@@ -3,7 +3,7 @@ func000000000000001e:
 	vsub.vv	v10, v10, v12
 	lui	a0, 349525
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -19,7 +19,7 @@ func000000000000001f:
 	vsub.vv	v10, v10, v12
 	lui	a0, 349525
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
@@ -35,7 +35,7 @@ func000000000000001c:
 	vsub.vv	v10, v10, v12
 	lui	a0, 349525
 	vsra.vi	v10, v10, 2
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0

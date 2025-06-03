@@ -9,7 +9,7 @@ func0000000000000001:
 func0000000000000061:
 	andi	a3, a0, 1
 	lui	a0, 1
-	addiw	a0, a0, -295
+	addi	a0, a0, -295
 	beqz	a3, .LBB1_2
 	add	a1, a2, a0
 .LBB1_2:
@@ -41,7 +41,7 @@ func000000000000000a:
 	addi	a1, a2, 1
 .LBB4_2:
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a0, a1
 	ret
 

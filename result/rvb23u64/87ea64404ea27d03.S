@@ -21,7 +21,7 @@ func0000000000000075:
 	lui	a1, 842976
 	sh1add	a0, a0, a0
 	sh2add	a0, a0, a0
-	addiw	a1, a1, 1120
+	addi	a1, a1, 1120
 	sh2add	a0, a0, a1
 	ret
 

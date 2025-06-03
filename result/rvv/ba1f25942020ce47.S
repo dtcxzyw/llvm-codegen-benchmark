@@ -10,7 +10,7 @@ func0000000000000001:
 	vsrl.vx	v14, v12, a1
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v12, a0, v10
 	vsra.vx	v10, v12, a1
 	vadd.vv	v8, v10, v8

@@ -5,7 +5,7 @@ func000000000000001f:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 1024
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 21
 	vand.vx	v8, v8, a0
 	ret

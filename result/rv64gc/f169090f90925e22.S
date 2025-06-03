@@ -29,7 +29,7 @@ func0000000000000003:
 
 func0000000000000008:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	li	a4, 26
 	bltu	a2, a4, .LBB3_2

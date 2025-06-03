@@ -3,7 +3,7 @@ func0000000000000484:
 	zext.h	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -256
-	addiw	a2, a2, -511
+	addi	a2, a2, -511
 	sltu	a1, a1, a2
 	sltiu	a0, a0, -2047
 	and	a0, a0, a1

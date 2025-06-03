@@ -12,7 +12,7 @@ func0000000000000001:
 	bnez	a1, .LBB0_2
 .LBB0_4:
 	lui	a1, 262144
-	addiw	a1, a1, -961
+	addi	a1, a1, -961
 	and	a0, a0, a1
 	ret
 

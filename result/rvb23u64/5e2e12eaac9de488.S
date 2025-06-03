@@ -34,7 +34,7 @@ func0000000000000013:
 func0000000000000004:
 	zext.b	a1, a1
 	lui	a2, 1048571
-	addiw	a2, a2, 512
+	addi	a2, a2, 512
 	czero.eqz	a1, a2, a1
 	lui	a2, 10
 	add	a0, a0, a2
@@ -47,7 +47,7 @@ func0000000000000018:
 	slti	a1, a1, 0
 	czero.nez	a1, a2, a1
 	lui	a2, 17
-	addiw	a2, a2, 276
+	addi	a2, a2, 276
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -18,7 +18,7 @@ func0000000000006070:
 
 func0000000000004210:
 	lui	a3, 1
-	addiw	a4, a3, -2
+	addi	a4, a3, -2
 	sltu	a2, a4, a2
 	sltu	a1, a4, a1
 	or	a1, a1, a2

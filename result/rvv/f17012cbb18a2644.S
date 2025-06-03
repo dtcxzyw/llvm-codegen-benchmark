@@ -10,7 +10,7 @@ func0000000000000005:
 	lui	a0, 1048332
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -576
+	addi	a0, a0, -576
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000000:
 	lui	a0, 1
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -496
+	addi	a0, a0, -496
 	vmacc.vx	v8, a0, v10
 	ret
 

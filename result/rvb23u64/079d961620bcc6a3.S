@@ -10,7 +10,7 @@ func0000000000000002:
 	andi	a1, a1, -64
 	sh2add	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000003:
 	andi	a1, a1, -64
 	sh2add	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func000000000000000c:
 	andi	a1, a1, -64
 	sh2add	a0, a0, a1
 	lui	a1, 100
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 	add	a0, a0, a1
 	ret
 
@@ -37,7 +37,7 @@ func000000000000000e:
 	andi	a1, a1, -64
 	sh2add	a0, a0, a1
 	lui	a1, 175
-	addiw	a1, a1, 896
+	addi	a1, a1, 896
 	add	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func000000000000000f:
 	andi	a1, a1, -64
 	sh2add	a0, a0, a1
 	lui	a1, 341
-	addiw	a1, a1, 640
+	addi	a1, a1, 640
 	add	a0, a0, a1
 	ret
 

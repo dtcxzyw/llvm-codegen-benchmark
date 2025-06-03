@@ -2,7 +2,7 @@ func00000000000000c4:
 	sub	a2, a2, a1
 	lui	a1, 838861
 	srai	a2, a2, 3
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -14,7 +14,7 @@ func00000000000000a6:
 	sub	a2, a2, a1
 	lui	a1, 748983
 	srai	a2, a2, 3
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	slli	a3, a1, 33
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -26,7 +26,7 @@ func0000000000000084:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -38,7 +38,7 @@ func00000000000000c1:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -51,7 +51,7 @@ func0000000000000081:
 	sub	a2, a2, a1
 	lui	a1, 748983
 	srai	a2, a2, 4
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	slli	a3, a1, 33
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -64,7 +64,7 @@ func00000000000000e4:
 	sub	a2, a2, a1
 	lui	a1, 748983
 	srai	a2, a2, 3
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	slli	a3, a1, 33
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -76,7 +76,7 @@ func00000000000000a8:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -88,7 +88,7 @@ func00000000000000a4:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -100,7 +100,7 @@ func0000000000000088:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -125,7 +125,7 @@ func00000000000000ec:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -138,7 +138,7 @@ func00000000000000e6:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -150,7 +150,7 @@ func00000000000000a1:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
@@ -163,7 +163,7 @@ func00000000000000c9:
 	sub	a2, a2, a1
 	lui	a1, 699051
 	srai	a2, a2, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1

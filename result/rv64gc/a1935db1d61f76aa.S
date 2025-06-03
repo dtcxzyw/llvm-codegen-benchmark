@@ -45,9 +45,9 @@ func0000000000000021:
 
 func0000000000000088:
 	lui	a3, 4
-	addiw	a4, a3, 332
+	addi	a4, a3, 332
 	bltu	a2, a4, .LBB6_2
-	addiw	a1, a3, 333
+	addi	a1, a3, 333
 .LBB6_2:
 	sltu	a0, a1, a0
 	ret

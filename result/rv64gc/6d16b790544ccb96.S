@@ -16,7 +16,7 @@ func0000000000000006:
 func0000000000000024:
 	addiw	a1, a0, -16
 	lui	a2, 4
-	addiw	a2, a2, -15
+	addi	a2, a2, -15
 	bltu	a1, a2, .LBB2_2
 	li	a0, 1000
 .LBB2_2:

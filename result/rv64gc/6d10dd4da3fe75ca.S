@@ -35,7 +35,7 @@ func0000000000000001:
 
 func0000000000000026:
 	lui	a3, 1
-	addiw	a3, a3, -96
+	addi	a3, a3, -96
 	blt	a3, a2, .LBB4_2
 	mv	a2, a3
 .LBB4_2:
@@ -86,7 +86,7 @@ func000000000000002a:
 
 func000000000000000c:
 	lui	a3, 1045696
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	blt	a3, a2, .LBB10_2
 	mv	a2, a3
 .LBB10_2:

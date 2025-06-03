@@ -54,7 +54,7 @@ func0000000000000014:
 	li	a2, 50
 	czero.nez	a1, a2, a1
 	lui	a2, 1
-	addiw	a2, a2, 334
+	addi	a2, a2, 334
 	add	a1, a1, a2
 	li	a2, 17
 	slli	a2, a2, 8

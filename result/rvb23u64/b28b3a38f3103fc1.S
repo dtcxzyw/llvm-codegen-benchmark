@@ -43,7 +43,7 @@ func00000000000000c6:
 	fcvt.w.d	a1, fa0, rtz
 	max	a0, a0, a1
 	lui	a1, 5
-	addiw	a1, a1, -479
+	addi	a1, a1, -479
 	slt	a0, a0, a1
 	ret
 

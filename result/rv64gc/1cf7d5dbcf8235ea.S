@@ -42,7 +42,7 @@ func0000000000000004:
 func0000000000000008:
 	add	a0, a0, a1
 	lui	a1, 262144
-	addiw	a1, a1, -64
+	addi	a1, a1, -64
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

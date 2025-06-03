@@ -358,8 +358,8 @@ func0000000000000094:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 104858
-	addiw	a3, a2, -1639
-	addiw	a2, a2, -1638
+	addi	a3, a2, -1639
+	addi	a2, a2, -1638
 	sltu	a1, a1, a3
 	sltu	a0, a0, a2
 	and	a0, a0, a1
@@ -468,7 +468,7 @@ func00000000000000d4:
 	sext.w	a1, a1
 	lui	a2, 2
 	slti	a1, a1, 2
-	addiw	a2, a2, 1807
+	addi	a2, a2, 1807
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

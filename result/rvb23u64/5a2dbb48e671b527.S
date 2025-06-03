@@ -20,7 +20,7 @@ func0000000000000018:
 	lui	a1, 1
 	andi	a0, a0, 1
 	czero.nez	a0, a2, a0
-	addiw	a1, a1, 1573
+	addi	a1, a1, 1573
 	add	a0, a0, a1
 	ret
 

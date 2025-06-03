@@ -14,7 +14,7 @@ func0000000000000014:
 	slli	a1, a0, 48
 	lui	a2, 1
 	srli	a1, a1, 50
-	addiw	a2, a2, 1147
+	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
 	sh2add	a1, a1, a1
@@ -29,7 +29,7 @@ func0000000000000018:
 	slli	a1, a0, 48
 	lui	a2, 1
 	srli	a1, a1, 50
-	addiw	a2, a2, 1147
+	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
 	sh2add	a1, a1, a1
@@ -48,7 +48,7 @@ func000000000000000c:
 	mul	a0, a0, a1
 	lui	a1, 3
 	zext.h	a0, a0
-	addiw	a1, a1, 818
+	addi	a1, a1, 818
 	sltu	a0, a1, a0
 	ret
 

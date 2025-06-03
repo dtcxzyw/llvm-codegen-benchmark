@@ -10,7 +10,7 @@ func0000000000000001:
 	lui	a0, 21
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
 	vmerge.vvm	v10, v12, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -29,7 +29,7 @@ func0000000000000003:
 	lui	a0, 21
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
 	vmerge.vvm	v10, v12, v8, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -46,7 +46,7 @@ func0000000000000000:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 477
-	addiw	a0, a0, -667
+	addi	a0, a0, -667
 	vsra.vi	v12, v12, 28
 	vadd.vv	v12, v12, v14
 	slli	a0, a0, 11

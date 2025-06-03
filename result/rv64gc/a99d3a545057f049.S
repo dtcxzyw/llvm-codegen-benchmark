@@ -2,11 +2,11 @@ func0000000000000034:
 	andi	a2, a1, 1
 	lui	a1, 143
 	bnez	a2, .LBB0_2
-	addiw	a1, a1, -1340
+	addi	a1, a1, -1340
 	sltu	a0, a0, a1
 	ret
 .LBB0_2:
-	addiw	a1, a1, -1328
+	addi	a1, a1, -1328
 	sltu	a0, a0, a1
 	ret
 

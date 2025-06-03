@@ -29,7 +29,7 @@ func0000000000000005:
 	sext.w	a0, a2
 	bnez	a3, .LBB3_2
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 .LBB3_2:
 	add	a0, a0, a1
 	ret

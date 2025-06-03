@@ -148,13 +148,13 @@ func0000000000000038:
 	andi	a2, a1, 1
 	beq	a3, a4, .LBB9_2
 	lui	a1, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	bnez	a2, .LBB9_3
 	j	.LBB9_4
 .LBB9_2:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	beqz	a2, .LBB9_4
 .LBB9_3:
@@ -169,13 +169,13 @@ func0000000000000028:
 	andi	a2, a1, 1
 	beq	a3, a4, .LBB10_2
 	lui	a1, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	bnez	a2, .LBB10_3
 	j	.LBB10_4
 .LBB10_2:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	beqz	a2, .LBB10_4
 .LBB10_3:

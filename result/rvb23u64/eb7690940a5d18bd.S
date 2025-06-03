@@ -2,7 +2,7 @@ func0000000000000009:
 	sh1add	a1, a1, a1
 	lui	a2, 67109
 	sext.w	a1, a1
-	addiw	a2, a2, -557
+	addi	a2, a2, -557
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 38
@@ -15,7 +15,7 @@ func0000000000000008:
 	addi	a2, a2, 1408
 	mulw	a1, a1, a2
 	lui	a2, 528416
-	addiw	a2, a2, 1033
+	addi	a2, a2, 1033
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000001:
 	sh1add	a1, a1, a1
 	lui	a2, 67109
 	sext.w	a1, a1
-	addiw	a2, a2, -557
+	addi	a2, a2, -557
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 38

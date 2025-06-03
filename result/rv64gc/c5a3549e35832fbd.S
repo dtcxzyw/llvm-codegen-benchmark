@@ -1,15 +1,15 @@
 func00000000000000aa:
 	sext.w	a0, a0
 	lui	a2, 1048400
-	addiw	a2, a2, 1427
+	addi	a2, a2, 1427
 	blt	a2, a0, .LBB0_2
 	lui	a0, 140
-	addiw	a0, a0, -68
+	addi	a0, a0, -68
 	add	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a0, 176
-	addiw	a0, a0, -1428
+	addi	a0, a0, -1428
 	add	a0, a0, a1
 	ret
 

@@ -46,7 +46,7 @@ func0000000000000001:
 func0000000000000061:
 	zext.b	a1, a1
 	lui	a3, 1
-	addiw	a3, a3, -496
+	addi	a3, a3, -496
 	addi	a1, a1, -43
 	mul	a2, a2, a3
 	czero.eqz	a2, a2, a1

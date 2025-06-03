@@ -32,7 +32,7 @@ func0000000000000501:
 	addiw	a1, a1, -54
 	lui	a2, 104858
 	sltiu	a1, a1, -6
-	addiw	a2, a2, -1639
+	addi	a2, a2, -1639
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -81,7 +81,7 @@ func0000000000000481:
 	addi	a2, a2, 575
 	addw	a1, a1, a2
 	lui	a2, 488
-	addiw	a2, a2, 1151
+	addi	a2, a2, 1151
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

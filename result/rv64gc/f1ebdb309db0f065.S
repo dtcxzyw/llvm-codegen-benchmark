@@ -21,7 +21,7 @@ func0000000000000041:
 	zext.b	a0, a0
 	sext.w	a2, a2
 	lui	a3, 1048568
-	addiw	a3, a3, 1536
+	addi	a3, a3, 1536
 	addi	a0, a0, -1
 	xor	a2, a2, a3
 	seqz	a2, a2

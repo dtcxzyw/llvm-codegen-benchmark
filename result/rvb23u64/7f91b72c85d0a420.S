@@ -25,11 +25,11 @@ func0000000000000004:
 	add	a1, a1, a2
 	lui	a2, 24076
 	sub	a0, a0, a0
-	addiw	a2, a2, 179
+	addi	a2, a2, 179
 	slli	a2, a2, 7
 	mul	a1, a1, a2
 	lui	a2, 1024500
-	addiw	a2, a2, -179
+	addi	a2, a2, -179
 	slli	a2, a2, 7
 	add	a0, a0, a2
 	sub	a0, a0, a1

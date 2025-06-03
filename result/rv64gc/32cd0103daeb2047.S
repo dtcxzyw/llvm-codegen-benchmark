@@ -2,16 +2,16 @@ func00000000000000b4:
 	andi	a2, a1, 1
 	lui	a1, 143
 	bnez	a2, .LBB0_2
-	addiw	a1, a1, -1340
+	addi	a1, a1, -1340
 	lui	a2, 1
-	addiw	a2, a2, 616
+	addi	a2, a2, 616
 	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 .LBB0_2:
-	addiw	a1, a1, -1328
+	addi	a1, a1, -1328
 	lui	a2, 1
-	addiw	a2, a2, 616
+	addi	a2, a2, 616
 	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret

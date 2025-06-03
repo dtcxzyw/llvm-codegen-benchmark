@@ -1,6 +1,6 @@
 func0000000000000421:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	sext.w	a1, a1

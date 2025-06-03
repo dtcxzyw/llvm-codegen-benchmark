@@ -3,7 +3,7 @@ func000000000000001d:
 	vzext.vf2	v14, v12
 	lui	a0, 262144
 	vmul.vv	v8, v8, v14
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 21
 	vand.vx	v10, v10, a0
 	vsub.vv	v8, v8, v10

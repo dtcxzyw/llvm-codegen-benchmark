@@ -21,7 +21,7 @@ func0000000000000002:
 	or	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0
-	addiw	a1, a3, -557
+	addi	a1, a3, -557
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret

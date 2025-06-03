@@ -2,8 +2,7 @@ func000000000000001e:
 	li	a0, 23
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 1
-	slli	a0, a0, 36
+	bseti	a0, zero, 36
 	addi	a0, a0, -16
 	vand.vx	v10, v10, a0
 	li	a0, 24

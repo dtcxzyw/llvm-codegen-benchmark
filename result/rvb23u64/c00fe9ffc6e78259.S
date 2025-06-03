@@ -149,7 +149,7 @@ func000000000000028c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 27392
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -313,7 +313,7 @@ func0000000000000104:
 	srliw	a1, a1, 16
 	lui	a2, 1048560
 	snez	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -377,7 +377,7 @@ func0000000000000088:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltiu	a0, a0, 4
 	sltu	a1, a1, a2
 	xori	a0, a0, 1

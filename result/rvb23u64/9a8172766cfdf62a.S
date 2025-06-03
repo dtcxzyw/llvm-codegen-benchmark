@@ -10,7 +10,7 @@ func000000000000000e:
 	lui	a1, 5
 	addi	a0, a0, -65
 	bset	a0, zero, a0
-	addiw	a1, a1, -976
+	addi	a1, a1, -976
 	and	a0, a0, a1
 	ret
 

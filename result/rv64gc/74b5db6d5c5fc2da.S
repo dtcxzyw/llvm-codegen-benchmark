@@ -14,12 +14,12 @@ func0000000000000002:
 	li	a2, 2
 	beq	a1, a2, .LBB1_2
 	lui	a1, 921600
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a1, 787984
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

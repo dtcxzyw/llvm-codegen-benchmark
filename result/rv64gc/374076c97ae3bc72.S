@@ -2,7 +2,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 83
 	slliw	a0, a0, 20
-	addiw	a1, a1, 1283
+	addi	a1, a1, 1283
 	or	a0, a0, a1
 	ret
 

@@ -30,7 +30,7 @@ func0000000000000108:
 
 func0000000000000068:
 	lui	a2, 32
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	addi	a1, a1, 24
 	sext.w	a0, a0

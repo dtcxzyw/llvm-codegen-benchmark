@@ -1,7 +1,7 @@
 func0000000000000009:
 	add	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	blt	a2, a1, .LBB0_2
 	mv	a1, a2
 .LBB0_2:

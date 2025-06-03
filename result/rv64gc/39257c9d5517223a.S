@@ -12,7 +12,7 @@ func0000000000000008:
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI0_1)
 	ld	a3, %lo(.LCPI0_1)(a3)
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	mulh	a0, a0, a3

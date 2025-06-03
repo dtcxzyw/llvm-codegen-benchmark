@@ -13,7 +13,7 @@ func000000000000000c:
 	sext.w	a1, a1
 	beqz	a1, .LBB1_2
 	lui	a1, 1048560
-	addiw	a1, a1, -1289
+	addi	a1, a1, -1289
 	and	a0, a0, a1
 	ret
 .LBB1_2:
@@ -68,11 +68,11 @@ func0000000000000014:
 	li	a3, 240
 	lui	a1, 64
 	bltu	a2, a3, .LBB6_2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 .LBB6_2:
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret
 

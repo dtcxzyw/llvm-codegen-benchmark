@@ -9,7 +9,7 @@ func0000000000000005:
 	add	a2, a2, a3
 	lui	a3, 21
 	slli	a0, a0, 63
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	srai	a0, a0, 63
 	and	a0, a0, a3
 	mul	a2, a2, a3
@@ -28,7 +28,7 @@ func0000000000000007:
 	add	a2, a2, a3
 	lui	a3, 21
 	slli	a0, a0, 63
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	srai	a0, a0, 63
 	and	a0, a0, a3
 	mul	a2, a2, a3
@@ -47,7 +47,7 @@ func0000000000000004:
 	add	a2, a2, a3
 	lui	a3, 477
 	slli	a0, a0, 63
-	addiw	a3, a3, -667
+	addi	a3, a3, -667
 	srai	a0, a0, 63
 	slli	a3, a3, 11
 	and	a0, a0, a3

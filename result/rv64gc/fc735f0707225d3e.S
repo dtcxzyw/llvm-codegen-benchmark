@@ -7,7 +7,7 @@ func0000000000000000:
 
 func0000000000000006:
 	lui	a1, 725937
-	addiw	a1, a1, 945
+	addi	a1, a1, 945
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 35
@@ -23,7 +23,7 @@ func0000000000000004:
 
 func0000000000000002:
 	lui	a1, 493448
-	addiw	a1, a1, -1927
+	addi	a1, a1, -1927
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 35

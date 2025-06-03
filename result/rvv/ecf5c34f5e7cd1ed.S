@@ -42,7 +42,7 @@ func0000000000000005:
 	vsra.vx	v8, v8, a0
 	lui	a0, 420
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 1103
+	addi	a0, a0, 1103
 	vadd.vx	v8, v8, a0
 	ret
 

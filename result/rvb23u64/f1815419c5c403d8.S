@@ -6,7 +6,7 @@ func0000000000000001:
 	li	a2, 1728
 	sh2add	a1, a2, a1
 	lui	a2, 2
-	addiw	a2, a2, -1279
+	addi	a2, a2, -1279
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

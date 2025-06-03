@@ -22,7 +22,7 @@ func0000000000000002:
 	slli	a0, a0, 63
 	slli	a2, a2, 4
 	addi	a1, a1, -1
-	addiw	a3, a3, 65
+	addi	a3, a3, 65
 	srai	a0, a0, 63
 	and	a1, a1, a3
 	or	a1, a1, a2

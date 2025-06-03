@@ -1,7 +1,6 @@
 func000000000000003c:
 	sh2add	a0, a2, a0
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1

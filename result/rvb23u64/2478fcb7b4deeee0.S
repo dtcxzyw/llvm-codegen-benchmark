@@ -13,7 +13,7 @@ func000000000000001b:
 	slli	a0, a0, 34
 	lui	a1, 349525
 	srli	a0, a0, 32
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	mul	a0, a0, a1
 	srli	a0, a0, 32
 	addiw	a0, a0, 1

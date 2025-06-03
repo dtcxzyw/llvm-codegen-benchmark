@@ -57,7 +57,7 @@ func0000000000000020:
 func000000000000001d:
 	sub	a1, a1, a2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	slli	a3, a0, 1

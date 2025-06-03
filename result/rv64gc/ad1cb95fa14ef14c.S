@@ -3,7 +3,7 @@ func0000000000000094:
 	xor	a4, a0, a3
 	subw	a4, a4, a3
 	lui	a3, 24
-	addiw	a3, a3, -1103
+	addi	a3, a3, -1103
 	bgeu	a4, a3, .LBB0_2
 	add	a1, a1, a2
 	addiw	a0, a1, -48

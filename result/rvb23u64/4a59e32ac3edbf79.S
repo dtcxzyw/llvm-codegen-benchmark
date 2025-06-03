@@ -3,7 +3,7 @@ func0000000000000146:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	slt	a1, a1, a3
 	slt	a2, a4, a2
 	czero.nez	a2, a2, a0

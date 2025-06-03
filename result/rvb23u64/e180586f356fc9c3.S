@@ -12,7 +12,7 @@ func00000000000001e1:
 
 func00000000000001f8:
 	lui	a4, 244141
-	addiw	a4, a4, -1536
+	addi	a4, a4, -1536
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
 	mul	a2, a2, a4
@@ -26,7 +26,7 @@ func00000000000001f8:
 
 func00000000000001f4:
 	lui	a4, 477
-	addiw	a4, a4, -667
+	addi	a4, a4, -667
 	slli	a4, a4, 11
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4

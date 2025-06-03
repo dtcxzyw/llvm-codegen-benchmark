@@ -35,7 +35,7 @@ func0000000000000010:
 	vmsgtu.vx	v0, v10, a0
 	vzext.vf2	v10, v8
 	lui	a0, 65536
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
@@ -65,7 +65,7 @@ func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v8
 	lui	a0, 73
-	addiw	a0, a0, 992
+	addi	a0, a0, 992
 	vmsltu.vx	v0, v10, a0
 	vmv.v.x	v8, a0
 	vzext.vf2	v8, v12, v0.t
@@ -81,7 +81,7 @@ func000000000000000d:
 
 func0000000000000028:
 	lui	a0, 209715
-	addiw	a0, a0, 820
+	addi	a0, a0, 820
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vzext.vf2	v10, v8

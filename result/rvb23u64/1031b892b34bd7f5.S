@@ -5,7 +5,7 @@ func000000000000002a:
 	or	a1, a1, a2
 	li	a2, -1024
 	czero.nez	a0, a2, a0
-	addiw	a2, a3, 1131
+	addi	a2, a3, 1131
 	sext.w	a1, a1
 	addi	a0, a0, 1131
 	slt	a1, a2, a1

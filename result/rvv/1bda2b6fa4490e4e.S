@@ -47,7 +47,7 @@ func0000000000000406:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmerge.vim	v12, v12, 1, v0

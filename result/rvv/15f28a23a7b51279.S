@@ -71,7 +71,7 @@ func00000000000028c6:
 	vmslt.vx	v14, v10, a0
 	vmslt.vx	v10, v8, a0
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgt.vx	v8, v12, a0
 	vmor.mm	v9, v14, v10
 	vmor.mm	v0, v9, v8

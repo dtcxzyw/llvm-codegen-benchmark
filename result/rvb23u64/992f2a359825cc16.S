@@ -34,7 +34,7 @@ func0000000000000019:
 	czero.eqz	a0, a0, a2
 	lui	a2, 1048332
 	or	a0, a0, a1
-	addiw	a1, a2, -576
+	addi	a1, a2, -576
 	add	a0, a0, a1
 	ret
 
@@ -46,25 +46,25 @@ func0000000000000005:
 
 func0000000000000028:
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 1048332
 	or	a0, a0, a1
-	addiw	a1, a2, -576
+	addi	a1, a2, -576
 	add	a0, a0, a1
 	ret
 
 func0000000000000029:
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 243896
 	or	a0, a0, a1
-	addiw	a1, a2, 1984
+	addi	a1, a2, 1984
 	add	a0, a0, a1
 	ret
 

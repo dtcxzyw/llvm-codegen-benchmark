@@ -28,11 +28,11 @@ func0000000000000008:
 	srai	a2, a2, 25
 	add	a2, a2, a3
 	lui	a3, 21094
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	lui	a3, 15820
 	sub	a1, a1, a2
-	addiw	a2, a3, 1279
+	addi	a2, a3, 1279
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret
@@ -47,7 +47,7 @@ func000000000000000a:
 	srai	a2, a2, 26
 	add	a2, a2, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	sgtz	a1, a1
@@ -64,7 +64,7 @@ func0000000000000006:
 	srai	a2, a2, 26
 	add	a2, a2, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	slti	a1, a1, 0

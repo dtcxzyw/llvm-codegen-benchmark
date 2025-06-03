@@ -16,7 +16,7 @@ func0000000000000041:
 
 func0000000000000028:
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v8, -1

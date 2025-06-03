@@ -3,7 +3,7 @@
 func0000000000000012:
 	sub	a0, a0, a1
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a2, a2, a1
 	lui	a1, %hi(.LCPI0_0)
@@ -23,7 +23,7 @@ func0000000000000012:
 func0000000000000016:
 	sub	a0, a0, a1
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a2, a2, a1
 	lui	a1, %hi(.LCPI1_0)
@@ -43,7 +43,7 @@ func0000000000000016:
 func0000000000000010:
 	sub	a0, a0, a1
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a2, a2, a1
 	lui	a1, %hi(.LCPI2_0)

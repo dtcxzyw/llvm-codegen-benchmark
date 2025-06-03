@@ -29,7 +29,7 @@ func000000000000000f:
 	lui	a3, 240
 	slli	a4, a3, 32
 	add	a4, a4, a3
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	and	a2, a2, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4

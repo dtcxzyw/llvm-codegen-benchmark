@@ -15,7 +15,7 @@ func0000000000000195:
 	lui	a3, 256
 	add	a2, a2, a3
 	lui	a3, 1048409
-	addiw	a3, a3, 131
+	addi	a3, a3, 131
 	srli	a2, a2, 21
 	mul	a2, a2, a3
 	sub	a0, a1, a0

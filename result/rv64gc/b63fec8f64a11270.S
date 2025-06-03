@@ -15,7 +15,7 @@ func0000000000000007:
 func000000000000000d:
 	lui	a2, 8
 	srli	a0, a0, 19
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	and	a1, a1, a2
 	andi	a0, a0, 192
 	or	a0, a0, a1

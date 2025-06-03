@@ -19,7 +19,7 @@ func0000000000000013:
 func000000000000001c:
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 361
+	addi	a1, a1, 361
 	add	a0, a0, a1
 	ret
 

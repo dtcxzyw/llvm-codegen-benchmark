@@ -20,7 +20,7 @@ func000000000000000b:
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -96
+	addi	a1, a1, -96
 	add	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000000:
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -132
+	addi	a1, a1, -132
 	add	a0, a0, a1
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000008:
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -132
+	addi	a1, a1, -132
 	add	a0, a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func0000000000000038:
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	lui	a1, 100
-	addiw	a1, a1, -1408
+	addi	a1, a1, -1408
 	add	a0, a0, a1
 	ret
 

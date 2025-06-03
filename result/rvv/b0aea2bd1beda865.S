@@ -10,14 +10,14 @@ func0000000000000078:
 
 func0000000000000002:
 	lui	a0, 211812
-	addiw	a0, a0, -1061
+	addi	a0, a0, -1061
 	slli	a0, a0, 12
 	addi	a0, a0, -1411
 	slli	a0, a0, 15
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 2441
-	addiw	a0, a0, 1664
+	addi	a0, a0, 1664
 	vmacc.vx	v10, a0, v8
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -40,7 +40,7 @@ func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 315653
-	addiw	a0, a0, -702
+	addi	a0, a0, -702
 	vmacc.vx	v10, a0, v8
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -66,7 +66,7 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 1
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vmacc.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 12

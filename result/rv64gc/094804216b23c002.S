@@ -14,7 +14,7 @@ func00000000000001e1:
 
 func0000000000000001:
 	lui	a3, 8
-	addiw	a3, a3, 7
+	addi	a3, a3, 7
 	add	a2, a2, a3
 	beq	a1, a2, .LBB2_2
 	addi	a0, a1, 1

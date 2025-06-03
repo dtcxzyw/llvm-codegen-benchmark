@@ -3,7 +3,7 @@ func0000000000000021:
 	andi	a1, a1, 958
 	lui	a2, 786432
 	snez	a1, a1
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	czero.nez	a0, a2, a0
 	slli	a1, a1, 4
 	or	a0, a0, a1

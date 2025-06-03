@@ -1,7 +1,7 @@
 func0000000000000025:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a1, a0
@@ -11,7 +11,7 @@ func0000000000000025:
 func0000000000000008:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a1, a0
@@ -38,7 +38,7 @@ func0000000000000026:
 func0000000000000021:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	xor	a0, a0, a1
@@ -48,7 +48,7 @@ func0000000000000021:
 func0000000000000024:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a0, a1
@@ -57,7 +57,7 @@ func0000000000000024:
 func0000000000000001:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	xor	a0, a0, a1
@@ -67,7 +67,7 @@ func0000000000000001:
 func000000000000002c:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	xor	a0, a0, a1
@@ -77,7 +77,7 @@ func000000000000002c:
 func000000000000000c:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	xor	a0, a0, a1
@@ -87,7 +87,7 @@ func000000000000000c:
 func0000000000000028:
 	lui	a3, 16
 	or	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a1, a0

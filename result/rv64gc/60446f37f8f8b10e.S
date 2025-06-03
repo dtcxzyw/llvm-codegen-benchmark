@@ -8,7 +8,7 @@ func000000000000001f:
 	or	a1, a1, a2
 	lui	a2, 4080
 	add	a0, a0, a1
-	addiw	a1, a2, 255
+	addi	a1, a2, 255
 	and	a0, a0, a1
 	ret
 

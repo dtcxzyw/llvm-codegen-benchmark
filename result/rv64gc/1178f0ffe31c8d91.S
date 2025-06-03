@@ -15,7 +15,7 @@ func0000000000000038:
 func0000000000000000:
 	sub	a0, a0, a1
 	lui	a1, 1040384
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 

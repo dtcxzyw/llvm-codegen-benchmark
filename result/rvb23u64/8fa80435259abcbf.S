@@ -25,7 +25,7 @@ func000000000000001b:
 	slli	a1, a1, 7
 	sub	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	li	a3, 2
 	czero.eqz	a2, a3, a2

@@ -19,7 +19,7 @@ func000000000000001f:
 	lui	a1, 64
 	addi	a0, a0, 10
 	andi	a0, a0, -8
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	add	a0, a0, a1
 	ret
 

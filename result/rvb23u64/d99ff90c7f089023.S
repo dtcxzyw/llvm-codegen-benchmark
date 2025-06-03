@@ -28,7 +28,7 @@ func000000000000002c:
 func0000000000000021:
 	mulw	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1424
+	addi	a1, a1, -1424
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

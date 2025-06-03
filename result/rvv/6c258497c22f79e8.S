@@ -14,7 +14,7 @@ func000000000000000d:
 	vzext.vf4	v12, v9
 	lui	a0, 8
 	vwsll.vi	v10, v12, 8
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vzext.vf8	v12, v8

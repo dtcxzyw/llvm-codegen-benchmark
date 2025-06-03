@@ -20,14 +20,14 @@ func0000000000000006:
 	li	a4, 4
 	lui	a3, 1048573
 	beq	a2, a4, .LBB1_2
-	addiw	a2, a3, -629
+	addi	a2, a3, -629
 	bnez	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addiw	a2, a3, -627
+	addi	a2, a3, -627
 	beqz	a1, .LBB1_4
 .LBB1_3:
-	addiw	a2, a3, -625
+	addi	a2, a3, -625
 .LBB1_4:
 	slli	a2, a2, 5
 	add	a0, a0, a2

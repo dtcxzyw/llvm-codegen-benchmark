@@ -31,7 +31,7 @@ func000000000000003d:
 	slli	a0, a0, 1
 	lui	a1, 16
 	addi	a0, a0, 126
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	and	a0, a0, a1
 	addi	a0, a0, -1
 	ret

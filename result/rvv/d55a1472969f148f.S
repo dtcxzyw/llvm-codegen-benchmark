@@ -22,7 +22,7 @@ func0000000000000058:
 
 func0000000000000302:
 	lui	a0, 1048560
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vand.vx	v8, v8, a0

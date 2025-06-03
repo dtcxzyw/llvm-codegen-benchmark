@@ -18,10 +18,10 @@ func000000000000008a:
 	srli	a1, a1, 4
 	lui	a2, 81
 	sext.w	a1, a1
-	addiw	a2, a2, 1556
+	addi	a2, a2, 1556
 	bge	a2, a1, .LBB2_2
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 .LBB2_2:
 	ret
 

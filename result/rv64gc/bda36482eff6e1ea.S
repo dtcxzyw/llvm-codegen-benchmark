@@ -53,7 +53,7 @@ func000000000000c40c:
 	zext.b	a2, a2
 	lui	a3, 272
 	snez	a2, a2
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	slti	a0, a0, 0
 	sltu	a1, a3, a1
 	or	a0, a0, a2

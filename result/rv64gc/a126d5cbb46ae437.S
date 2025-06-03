@@ -23,7 +23,7 @@ func0000000000000012:
 func000000000000001b:
 	sext.w	a0, a0
 	lui	a1, 1
-	addiw	a1, a1, 906
+	addi	a1, a1, 906
 	xor	a0, a0, a1
 	flt.s	a1, fa1, fa0
 	seqz	a0, a0

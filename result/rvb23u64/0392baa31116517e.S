@@ -16,7 +16,7 @@ func0000000000000008:
 	add.uw	a0, a2, a0
 	lui	a2, 30
 	add.uw	a0, a1, a0
-	addiw	a1, a2, -96
+	addi	a1, a2, -96
 	sltu	a0, a1, a0
 	ret
 

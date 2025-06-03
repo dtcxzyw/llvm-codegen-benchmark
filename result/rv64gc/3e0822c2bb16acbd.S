@@ -3,7 +3,7 @@ func0000000000000001:
 	bnez	a0, .LBB0_2
 	srai	a1, a1, 4
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a2, a0, 33
 	add	a0, a0, a2
 	mul	a0, a1, a0
@@ -26,7 +26,7 @@ func0000000000000000:
 	ret
 .LBB1_2:
 	lui	a0, 274878
-	addiw	a0, a0, -381
+	addi	a0, a0, -381
 	slli	a0, a0, 13
 	addi	a0, a0, -1290
 	ret

@@ -9,7 +9,7 @@ func0000000000000001:
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	lui	a2, 87381
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	roriw	a1, a1, 2
 	sltu	a1, a1, a2
 	li	a2, 12

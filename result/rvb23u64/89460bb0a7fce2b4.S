@@ -29,7 +29,7 @@ func0000000000000021:
 func0000000000000004:
 	mul	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1023
+	addi	a2, a2, -1023
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

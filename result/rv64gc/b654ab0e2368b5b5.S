@@ -7,7 +7,7 @@ func0000000000000001:
 	srli	a4, a0, 23
 	srli	a0, a0, 7
 	or	a1, a1, a2
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	srli	a2, a2, 56
 	and	a4, a4, a7
 	srliw	a0, a0, 24
@@ -35,7 +35,7 @@ func0000000000000000:
 	lui	a4, 16
 	slli	a5, a0, 8
 	lui	a6, 4080
-	addiw	a4, a4, -256
+	addi	a4, a4, -256
 	and	a7, a3, a4
 	slli	a4, a0, 56
 	slli	a1, a1, 8

@@ -2,12 +2,12 @@ func0000000000000004:
 	lui	a0, 1048575
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	addiw	a1, a0, 33
+	addi	a1, a0, 33
 	vmv.v.x	v10, a1
-	addiw	a1, a0, 36
+	addi	a1, a0, 36
 	vmerge.vxm	v10, v10, a1, v0
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmsltu.vx	v0, v8, a0
 	ret
 

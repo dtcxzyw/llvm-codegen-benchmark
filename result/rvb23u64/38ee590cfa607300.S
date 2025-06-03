@@ -42,7 +42,7 @@ func0000000000000049:
 func0000000000000003:
 	sext.w	a1, a1
 	lui	a2, 786432
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ori	a0, a0, 16

@@ -20,7 +20,7 @@ func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 4
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v10, a0
 	vzext.vf2	v10, v8
 	vmerge.vim	v8, v10, 12, v0

@@ -14,7 +14,7 @@ func0000000000000003:
 func0000000000000000:
 	slli	a0, a0, 56
 	lui	a1, 440584
-	addiw	a1, a1, 985
+	addi	a1, a1, 985
 	slli	a1, a1, 8
 	mulhu	a0, a0, a1
 	sext.w	a0, a0

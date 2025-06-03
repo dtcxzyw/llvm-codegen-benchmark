@@ -52,11 +52,11 @@ func0000000000000010:
 	srai	a2, a2, 26
 	add	a2, a2, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	lui	a3, 488281
 	sub	a1, a1, a2
-	addiw	a2, a3, 1023
+	addi	a2, a3, 1023
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

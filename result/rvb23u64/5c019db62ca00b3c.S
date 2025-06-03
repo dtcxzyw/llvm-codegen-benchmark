@@ -4,7 +4,7 @@ func0000000000000003:
 	andi	a2, a2, 4
 	or	a0, a0, a2
 	lui	a2, 65536
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -15,7 +15,7 @@ func0000000000000000:
 	andi	a2, a2, 1020
 	or	a0, a0, a2
 	lui	a2, 135168
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ori	a0, a0, 2

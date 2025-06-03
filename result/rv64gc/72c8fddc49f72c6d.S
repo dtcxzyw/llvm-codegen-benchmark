@@ -19,25 +19,25 @@ func000000000000001f:
 
 func000000000000000c:
 	lui	a2, 4
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
 	add	a0, a0, a1
 	lui	a1, 9
-	addiw	a1, a1, -624
+	addi	a1, a1, -624
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
 	lui	a2, 1
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 688
+	addi	a1, a1, 688
 	add	a0, a0, a1
 	ret
 

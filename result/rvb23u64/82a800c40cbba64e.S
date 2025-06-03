@@ -28,7 +28,7 @@ func0000000000000006:
 
 func0000000000000002:
 	lui	a1, 3
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	and	a0, a0, a1
 	srli	a1, a0, 6
 	srli	a0, a0, 4

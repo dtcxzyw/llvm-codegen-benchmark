@@ -2,7 +2,7 @@ func000000000000003c:
 	andi	a1, a1, -4
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 1324
+	addi	a1, a1, 1324
 	add	a0, a0, a1
 	ret
 
@@ -10,7 +10,7 @@ func000000000000001c:
 	andi	a1, a1, -4
 	add	a0, a0, a1
 	lui	a1, 5
-	addiw	a1, a1, -1740
+	addi	a1, a1, -1740
 	add	a0, a0, a1
 	ret
 

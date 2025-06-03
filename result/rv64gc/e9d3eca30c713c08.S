@@ -20,7 +20,7 @@ func0000000000000084:
 	addi	a2, a2, 1552
 	addw	a1, a1, a2
 	lui	a2, 256
-	addiw	a2, a2, 528
+	addi	a2, a2, 528
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -50,7 +50,7 @@ func000000000000000a:
 func00000000000000ac:
 	addw	a1, a1, a2
 	lui	a2, 13838
-	addiw	a2, a2, -1281
+	addi	a2, a2, -1281
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

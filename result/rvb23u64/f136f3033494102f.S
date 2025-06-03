@@ -12,7 +12,7 @@ func0000000000000004:
 	lui	a2, 64
 	add	a0, a0, a1
 	addi	a0, a0, 4
-	addiw	a2, a2, -7
+	addi	a2, a2, -7
 	sltu	a0, a0, a2
 	ret
 

@@ -41,7 +41,7 @@ func0000000000000c01:
 func0000000000000c78:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	addw	a0, a0, a1
@@ -52,7 +52,7 @@ func0000000000000c78:
 func0000000000000c61:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1

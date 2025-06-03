@@ -28,7 +28,7 @@ func000000000000000b:
 func000000000000000f:
 	slli	a0, a0, 49
 	lui	a1, 49152
-	addiw	a1, a1, 19
+	addi	a1, a1, 19
 	slli	a1, a1, 15
 	mulhu	a0, a0, a1
 	sext.w	a0, a0

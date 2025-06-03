@@ -6,11 +6,11 @@ func0000000000000021:
 	or	a0, a0, a1
 	bnez	a0, .LBB0_2
 	lui	a0, 262172
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	ret
 .LBB0_2:
 	lui	a0, 262144
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	ret
 
 func0000000000000181:
@@ -24,7 +24,7 @@ func0000000000000181:
 	or	a0, a0, a1
 	bnez	a0, .LBB1_2
 	lui	a0, 1048569
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	ret
 .LBB1_2:
 	li	a0, -74

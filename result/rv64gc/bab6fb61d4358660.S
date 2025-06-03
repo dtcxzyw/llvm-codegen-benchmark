@@ -3,7 +3,7 @@ func000000000000000f:
 	addiw	a1, a1, 8
 	lui	a2, 349525
 	srliw	a3, a1, 1
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	or	a1, a1, a3
 	srliw	a3, a1, 2
 	or	a1, a1, a3
@@ -17,7 +17,7 @@ func000000000000000f:
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a1, a1, a2
 	and	a2, a1, a3
 	srli	a1, a1, 2

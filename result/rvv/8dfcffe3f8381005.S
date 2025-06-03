@@ -16,7 +16,7 @@ func0000000000000060:
 
 func00000000000000a1:
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v10, 0

@@ -27,7 +27,7 @@ func0000000000000421:
 	vzext.vf2	v14, v12
 	lui	a0, 349525
 	vmseq.vv	v12, v10, v14
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmseq.vx	v10, v8, a0

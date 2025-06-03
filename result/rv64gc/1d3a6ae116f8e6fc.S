@@ -1,10 +1,10 @@
 func0000000000000003:
 	lui	a1, 1
-	addiw	a2, a1, -15
+	addi	a2, a1, -15
 	bltu	a0, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:
-	addiw	a1, a1, -14
+	addi	a1, a1, -14
 	sub	a0, a1, a0
 	ret
 

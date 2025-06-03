@@ -3,7 +3,7 @@ func0000000000000102:
 	andi	a2, a2, -2048
 	lui	a3, 2
 	bclri	a2, a2, 11
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	seqz	a1, a1
 	and	a1, a1, a2

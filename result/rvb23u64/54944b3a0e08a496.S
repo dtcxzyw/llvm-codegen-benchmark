@@ -2,7 +2,7 @@ func0000000000000065:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	minu	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

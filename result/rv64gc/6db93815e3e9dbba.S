@@ -9,7 +9,7 @@ func0000000000000020:
 
 func0000000000000038:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a0, a0, a2
 	srl	a0, a0, a1
 	ret

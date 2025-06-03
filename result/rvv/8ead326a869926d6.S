@@ -89,7 +89,7 @@ func0000000000000008:
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 2, v0
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

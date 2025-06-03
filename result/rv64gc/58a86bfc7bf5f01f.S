@@ -36,7 +36,7 @@ func000000000000002a:
 	addw	a0, a0, a1
 	lui	a1, 1048575
 	slti	a0, a0, 3
-	addiw	a1, a1, -620
+	addi	a1, a1, -620
 	or	a0, a0, a1
 	ret
 

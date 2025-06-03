@@ -19,9 +19,8 @@ func000000000000001f:
 
 func0000000000000013:
 	sext.w	a2, a2
-	li	a3, 1
+	bseti	a3, zero, 34
 	slli	a0, a0, 34
-	slli	a3, a3, 34
 	addi	a3, a3, -16
 	and	a1, a1, a3
 	or	a0, a0, a2

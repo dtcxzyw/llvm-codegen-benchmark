@@ -1,7 +1,7 @@
 func0000000000000003:
 	andi	a1, a1, 127
 	lui	a2, 4
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

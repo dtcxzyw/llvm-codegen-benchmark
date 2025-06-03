@@ -2,7 +2,7 @@ func0000000000000001:
 	lui	a2, 1044479
 	andn	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, 33
+	addi	a2, a2, 33
 	xor	a1, a1, a2
 	li	a2, 1
 	czero.eqz	a0, a0, a1

@@ -23,7 +23,7 @@ func000000000000000b:
 
 func0000000000000061:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -79,7 +79,7 @@ func0000000000000022:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	sltu	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -88,7 +88,7 @@ func0000000000000021:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	sltu	a1, a1, a2
 	addw	a0, a0, a1
 	ret

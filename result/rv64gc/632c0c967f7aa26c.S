@@ -27,12 +27,12 @@ func0000000000000024:
 	li	a4, 86
 	lui	a2, 7
 	beq	a3, a4, .LBB2_2
-	addiw	a2, a2, -1941
+	addi	a2, a2, -1941
 	li	a3, 5
 	bgeu	a1, a3, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addiw	a2, a2, -1945
+	addi	a2, a2, -1945
 	li	a3, 5
 	bltu	a1, a3, .LBB2_4
 .LBB2_3:

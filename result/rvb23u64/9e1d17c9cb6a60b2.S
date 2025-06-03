@@ -20,7 +20,7 @@ func0000000000000034:
 	andi	a3, a2, 7
 	or	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

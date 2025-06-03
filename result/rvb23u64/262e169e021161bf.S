@@ -72,13 +72,13 @@ func0000000000000018:
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	lui	a3, 3
-	addiw	a3, a3, 1045
+	addi	a3, a3, 1045
 	czero.nez	a2, a3, a2
 	lui	a3, 65
-	addiw	a3, a3, 427
+	addi	a3, a3, 427
 	sltu	a1, a3, a1
 	lui	a3, 78
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	add	a2, a2, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

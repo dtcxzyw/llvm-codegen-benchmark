@@ -14,7 +14,7 @@ func0000000000000001:
 func000000000000000c:
 	sub	a0, a0, a1
 	lui	a1, 32
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -57,7 +57,7 @@ func0000000000000061:
 func0000000000000014:
 	sub	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

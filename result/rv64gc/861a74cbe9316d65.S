@@ -68,13 +68,13 @@ func0000000000000144:
 	bnez	a0, .LBB5_2
 	sub	a1, a2, a1
 	lui	a0, 1
-	addiw	a0, a0, 905
+	addi	a0, a0, 905
 	sltu	a0, a1, a0
 	ret
 .LBB5_2:
 	sub	a1, a1, a2
 	lui	a0, 1
-	addiw	a0, a0, 905
+	addi	a0, a0, 905
 	sltu	a0, a1, a0
 	ret
 

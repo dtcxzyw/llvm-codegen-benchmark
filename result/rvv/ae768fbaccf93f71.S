@@ -55,7 +55,7 @@ func00000000000000c2:
 
 func0000000000000010:
 	lui	a0, 67584
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	slli	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v10, a0
@@ -80,7 +80,7 @@ func00000000000000a1:
 
 func0000000000000087:
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

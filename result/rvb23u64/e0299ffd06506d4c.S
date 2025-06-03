@@ -16,10 +16,9 @@ func0000000000000042:
 
 func0000000000000052:
 	srli	a2, a0, 4
-	li	a3, 1
+	bseti	a3, zero, 36
 	sltu	a0, a0, a1
 	slli.uw	a1, a2, 4
-	slli	a3, a3, 36
 	addi	a3, a3, -16
 	xor	a1, a1, a3
 	seqz	a1, a1

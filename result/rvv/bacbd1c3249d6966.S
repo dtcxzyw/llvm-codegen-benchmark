@@ -10,7 +10,7 @@ func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 7699
-	addiw	a0, a0, 896
+	addi	a0, a0, 896
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10
 	ret

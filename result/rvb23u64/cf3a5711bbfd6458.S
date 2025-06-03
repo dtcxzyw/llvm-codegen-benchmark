@@ -12,7 +12,7 @@ func0000000000000007:
 
 func0000000000000006:
 	lui	a1, 132
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 	slli	a0, a0, 56
 	mulhu	a0, a0, a1
 	ret

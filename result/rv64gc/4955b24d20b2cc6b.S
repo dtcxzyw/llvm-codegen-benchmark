@@ -1,12 +1,12 @@
 func0000000000000000:
 	lui	a1, 16
-	addiw	a1, a1, -65
+	addi	a1, a1, -65
 	and	a0, a0, a1
 	ret
 
 func0000000000000003:
 	lui	a1, 16
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 

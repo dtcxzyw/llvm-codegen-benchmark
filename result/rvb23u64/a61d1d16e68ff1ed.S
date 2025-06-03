@@ -9,7 +9,7 @@ func0000000000000048:
 
 func000000000000006f:
 	lui	a2, 298023
-	addiw	a2, a2, 917
+	addi	a2, a2, 917
 	slli	a2, a2, 14
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

@@ -56,7 +56,7 @@ func0000000000000060:
 	add	a1, a1, a2
 	lui	a2, 376095
 	slli	a0, a0, 32
-	addiw	a2, a2, -1643
+	addi	a2, a2, -1643
 	mul	a1, a1, a2
 	srli	a0, a0, 32
 	add	a0, a0, a1
@@ -87,7 +87,7 @@ func000000000000007f:
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	lui	a2, 24414
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1

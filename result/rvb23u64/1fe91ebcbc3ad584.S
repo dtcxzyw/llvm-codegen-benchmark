@@ -3,7 +3,7 @@ func0000000000000005:
 	addw	a1, a1, a2
 	lui	a2, 599186
 	li	a3, 7
-	addiw	a2, a2, 1171
+	addi	a2, a2, 1171
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a1
 	srli	a2, a2, 32
@@ -22,7 +22,7 @@ func0000000000000001:
 	addw	a1, a1, a2
 	lui	a2, 599186
 	li	a3, 7
-	addiw	a2, a2, 1171
+	addi	a2, a2, 1171
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a1
 	srli	a2, a2, 32

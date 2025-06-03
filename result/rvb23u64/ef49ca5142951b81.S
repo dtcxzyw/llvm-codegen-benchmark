@@ -33,7 +33,7 @@ func0000000000000081:
 	addiw	a1, a1, -56
 	lui	a2, 262144
 	andi	a0, a0, 7
-	addiw	a2, a2, -55
+	addi	a2, a2, -55
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -59,7 +59,7 @@ func0000000000000584:
 	addi	a2, a2, -203
 	addw	a0, a0, a2
 	lui	a2, 8
-	addiw	a2, a2, 565
+	addi	a2, a2, 565
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

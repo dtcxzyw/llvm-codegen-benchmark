@@ -13,7 +13,7 @@ func000000000000004c:
 	slli	a0, a0, 7
 	sub	a0, a0, a3
 	lui	a3, 1
-	addiw	a3, a3, 1992
+	addi	a3, a3, 1992
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -100,7 +100,7 @@ func0000000000000040:
 	sext.w	a2, a2
 	lui	a3, 1
 	slli	a0, a0, 3
-	addiw	a3, a3, -2024
+	addi	a3, a3, -2024
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

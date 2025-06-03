@@ -46,7 +46,7 @@ func0000000000000060:
 	lui	a2, 610
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	addiw	a1, a2, 1452
+	addi	a1, a2, 1452
 	add	a0, a0, a1
 	ret
 

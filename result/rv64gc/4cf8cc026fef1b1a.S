@@ -31,7 +31,7 @@ func000000000000000f:
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a2, a2, 2
 	add	a0, a0, a2
 	ret

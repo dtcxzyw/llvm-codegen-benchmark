@@ -8,7 +8,7 @@ func0000000000000006:
 	addi	a0, a0, -65
 	lui	a1, 5380
 	bset	a0, zero, a0
-	addiw	a1, a1, 401
+	addi	a1, a1, 401
 	and	a0, a0, a1
 	ret
 

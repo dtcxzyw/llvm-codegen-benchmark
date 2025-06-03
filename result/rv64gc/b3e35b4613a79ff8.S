@@ -17,13 +17,13 @@ func0000000000000007:
 	slli	a1, a1, 14
 	bnez	a3, .LBB1_2
 	lui	a2, 262722
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a2, 20489
-	addiw	a2, a2, 129
+	addi	a2, a2, 129
 	slli	a2, a2, 6
 	or	a0, a0, a2
 	or	a0, a0, a1

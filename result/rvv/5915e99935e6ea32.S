@@ -85,7 +85,7 @@ func0000000000000101:
 	lui	a0, 6
 	vmseq.vx	v10, v10, a0
 	lui	a0, 65536
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

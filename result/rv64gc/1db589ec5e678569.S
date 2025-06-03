@@ -16,7 +16,7 @@ func0000000000000001:
 
 func000000000000000a:
 	lui	a2, 1046232
-	addiw	a2, a2, 1021
+	addi	a2, a2, 1021
 	srli	a2, a2, 1
 	not	a2, a2
 	slt	a1, a2, a1

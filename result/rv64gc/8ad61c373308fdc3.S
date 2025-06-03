@@ -22,7 +22,7 @@ func0000000000000008:
 	slli	a1, a1, 16
 	bgeu	a1, a0, .LBB1_2
 	lui	a0, 148
-	addiw	a0, a0, -1408
+	addi	a0, a0, -1408
 	ret
 .LBB1_2:
 	lui	a1, %hi(.LCPI1_0)

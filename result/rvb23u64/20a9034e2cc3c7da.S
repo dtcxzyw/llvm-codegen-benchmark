@@ -19,7 +19,7 @@ func000000000000001e:
 	srli	a3, a3, 51
 	lui	a5, 119
 	or	a2, a2, a4
-	addiw	a4, a5, -762
+	addi	a4, a5, -762
 	mul	a1, a1, a4
 	mulhu	a5, a0, a4
 	mul	a0, a0, a4

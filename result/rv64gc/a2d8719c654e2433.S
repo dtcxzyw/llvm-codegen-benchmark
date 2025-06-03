@@ -74,7 +74,7 @@ func000000000000082a:
 	lui	a3, 4096
 	addw	a2, a2, a3
 	lui	a3, 8192
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a0, a0, a1
 	slt	a1, a3, a2
 	seqz	a0, a0

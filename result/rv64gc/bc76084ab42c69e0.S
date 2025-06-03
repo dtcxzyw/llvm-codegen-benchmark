@@ -53,11 +53,11 @@ func0000000000000004:
 	and	a0, a0, a1
 	bnez	a0, .LBB5_2
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	ret
 .LBB5_2:
 	lui	a0, 8
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	ret
 
 func0000000000000018:

@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a0, 1044480
-	addiw	a0, a0, 255
+	addi	a0, a0, 255
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	lui	a0, 520192
@@ -16,7 +16,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 17
 	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v12

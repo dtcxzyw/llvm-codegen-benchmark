@@ -21,7 +21,7 @@ func0000000000000020:
 	ret
 .LBB2_2:
 	lui	a1, 4
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -34,7 +34,7 @@ func0000000000000023:
 	ret
 .LBB3_2:
 	lui	a1, 4
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

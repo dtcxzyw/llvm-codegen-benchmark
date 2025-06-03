@@ -12,7 +12,7 @@ func000000000000000f:
 	vand.vx	v10, v10, a0
 	lui	a0, 512
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

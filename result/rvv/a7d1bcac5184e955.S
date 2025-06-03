@@ -63,7 +63,7 @@ func0000000000000186:
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 1046135
 	vmsle.vi	v10, v12, 3
-	addiw	a0, a0, -1663
+	addi	a0, a0, -1663
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

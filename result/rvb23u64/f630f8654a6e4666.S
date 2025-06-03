@@ -5,7 +5,7 @@ func0000000000000001:
 
 func0000000000000004:
 	lui	a2, 2
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	czero.eqz	a0, a1, a0
@@ -34,7 +34,7 @@ func0000000000000018:
 	lui	a2, 258048
 	and	a1, a1, a2
 	lui	a2, 79063
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	sltu	a0, a2, a0
 	lui	a2, 32768
 	czero.nez	a1, a1, a0

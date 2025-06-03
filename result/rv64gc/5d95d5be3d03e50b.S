@@ -20,7 +20,7 @@ func00000000000000a1:
 	lui	a2, 21
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -28,8 +28,8 @@ func0000000000000002:
 	li	a3, -2
 	lui	a4, 1048573
 	czero.nez	a2, a3, a2
-	addiw	a3, a4, -627
-	addiw	a4, a4, -625
+	addi	a3, a4, -627
+	addi	a4, a4, -625
 	add	a2, a2, a3
 	czero.eqz	a3, a4, a1
 	czero.nez	a1, a2, a1

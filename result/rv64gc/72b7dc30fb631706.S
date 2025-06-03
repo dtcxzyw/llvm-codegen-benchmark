@@ -83,7 +83,7 @@ func00000000000000f8:
 func00000000000000ca:
 	slt	a1, a1, a2
 	lui	a2, 1048544
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srli	a2, a2, 1
 	slt	a0, a2, a0
 	or	a0, a0, a1

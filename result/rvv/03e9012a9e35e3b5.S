@@ -2,7 +2,7 @@ func000000000000004a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 48
@@ -16,7 +16,7 @@ func000000000000004b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 349525
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 48

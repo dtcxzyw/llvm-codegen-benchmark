@@ -55,7 +55,7 @@ func0000000000000023:
 	li	a2, 424
 	bgeu	a2, a1, .LBB5_2
 	lui	a0, 25
-	addiw	a0, a0, 1600
+	addi	a0, a0, 1600
 	ret
 .LBB5_2:
 	slli	a1, a0, 4

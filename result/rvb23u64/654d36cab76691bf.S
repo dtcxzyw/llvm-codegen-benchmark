@@ -30,7 +30,7 @@ func000000000000014c:
 	andi	a1, a1, 513
 	lui	a2, 1048569
 	addi	a1, a1, -513
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	snez	a1, a1
 	slt	a0, a2, a0
 	or	a0, a0, a1

@@ -32,11 +32,11 @@ func0000000000000008:
 	andi	a2, a1, 1
 	lui	a1, 4
 	bnez	a2, .LBB4_2
-	addiw	a1, a1, 1344
+	addi	a1, a1, 1344
 	sltu	a0, a1, a0
 	ret
 .LBB4_2:
-	addiw	a1, a1, 320
+	addi	a1, a1, 320
 	sltu	a0, a1, a0
 	ret
 

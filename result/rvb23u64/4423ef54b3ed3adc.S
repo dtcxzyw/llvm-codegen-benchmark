@@ -12,7 +12,7 @@ func0000000000000184:
 	snez	a2, a2
 	and	a0, a0, a2
 	lui	a2, 4
-	addiw	a2, a2, -385
+	addi	a2, a2, -385
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -22,7 +22,7 @@ func0000000000000024:
 	seqz	a2, a2
 	and	a0, a0, a2
 	lui	a2, 4
-	addiw	a2, a2, -385
+	addi	a2, a2, -385
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -57,7 +57,7 @@ func0000000000000181:
 	sext.w	a2, a2
 	lui	a3, 131072
 	seqz	a1, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a0, a0, a1
@@ -86,7 +86,7 @@ func000000000000028c:
 	sext.w	a2, a2
 	lui	a3, 524288
 	snez	a1, a1
-	addiw	a3, a3, 309
+	addi	a3, a3, 309
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -149,7 +149,7 @@ func0000000000000034:
 	seqz	a2, a2
 	and	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -159,7 +159,7 @@ func0000000000000194:
 	snez	a2, a2
 	and	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

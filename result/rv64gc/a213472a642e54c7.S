@@ -1,6 +1,6 @@
 func0000000000000021:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	seqz	a2, a2
@@ -12,7 +12,7 @@ func0000000000000021:
 
 func000000000000002c:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	seqz	a2, a2
@@ -23,7 +23,7 @@ func000000000000002c:
 
 func0000000000000181:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	snez	a2, a2
@@ -34,8 +34,8 @@ func0000000000000181:
 
 func000000000000018c:
 	lui	a3, 16
-	addiw	a4, a3, -1
-	addiw	a3, a3, -2
+	addi	a4, a3, -1
+	addi	a3, a3, -2
 	and	a1, a1, a4
 	and	a2, a2, a4
 	snez	a2, a2
@@ -47,7 +47,7 @@ func000000000000018c:
 
 func0000000000000024:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	seqz	a2, a2
@@ -73,7 +73,7 @@ func0000000000000084:
 	lui	a3, 16
 	slli	a0, a0, 48
 	srli	a2, a2, 48
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	srli	a0, a0, 53
 	sltu	a2, a2, a3
 	and	a1, a1, a2
@@ -83,7 +83,7 @@ func0000000000000084:
 
 func0000000000000108:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	sltiu	a2, a2, 71
@@ -96,8 +96,8 @@ func0000000000000108:
 
 func0000000000000088:
 	lui	a3, 16
-	addiw	a4, a3, -1
-	addiw	a3, a3, -8
+	addi	a4, a3, -1
+	addi	a3, a3, -8
 	and	a0, a0, a4
 	and	a2, a2, a4
 	sltu	a2, a2, a3
@@ -133,7 +133,7 @@ func000000000000002a:
 
 func000000000000010c:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	sltiu	a2, a2, 768
@@ -145,11 +145,11 @@ func000000000000010c:
 
 func0000000000000081:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	lui	a3, 4
-	addiw	a3, a3, -383
+	addi	a3, a3, -383
 	sltu	a2, a2, a3
 	and	a0, a0, a2
 	seqz	a1, a1
@@ -158,12 +158,12 @@ func0000000000000081:
 
 func0000000000000184:
 	lui	a3, 16
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	and	a0, a0, a4
 	and	a2, a2, a4
 	lui	a4, 2
-	addiw	a4, a4, 12
-	addiw	a3, a3, -4
+	addi	a4, a4, 12
+	addi	a3, a3, -4
 	xor	a2, a2, a4
 	sltu	a0, a0, a3
 	snez	a2, a2

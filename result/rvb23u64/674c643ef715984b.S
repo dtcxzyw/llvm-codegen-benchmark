@@ -3,7 +3,7 @@ func0000000000000003:
 	lui	a2, 4080
 	srli	a1, a1, 8
 	add	a0, a0, a1
-	addiw	a1, a2, 255
+	addi	a1, a2, 255
 	and	a0, a0, a1
 	ret
 
@@ -12,7 +12,7 @@ func000000000000000f:
 	lui	a2, 16
 	srli	a1, a1, 8
 	add	a0, a0, a1
-	addiw	a1, a2, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func000000000000000b:
 	lui	a2, 8
 	srli	a1, a1, 5
 	add	a0, a0, a1
-	addiw	a1, a2, -993
+	addi	a1, a2, -993
 	and	a0, a0, a1
 	ret
 

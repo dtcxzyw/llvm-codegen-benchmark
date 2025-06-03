@@ -23,7 +23,7 @@ func0000000000000002:
 func0000000000000054:
 	sub	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	slt	a0, a1, a0
 	ret
 

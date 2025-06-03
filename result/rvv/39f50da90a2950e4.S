@@ -270,7 +270,7 @@ func0000000000000058:
 	vsub.vv	v10, v10, v12
 	lui	a0, 256
 	vminu.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 

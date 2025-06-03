@@ -88,7 +88,7 @@ func0000000000000014:
 func000000000000000d:
 	sext.w	a1, a1
 	lui	a2, 73
-	addiw	a2, a2, 992
+	addi	a2, a2, 992
 	slt	a1, a1, a2
 	slli	a1, a1, 11
 	bclri	a0, a0, 11

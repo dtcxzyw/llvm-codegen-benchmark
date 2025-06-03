@@ -3,7 +3,7 @@ func000000000000042c:
 	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -536
+	addi	a2, a2, -536
 	sext.w	a1, a1
 	xor	a1, a1, a2
 	seqz	a1, a1

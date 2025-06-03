@@ -17,7 +17,7 @@ func000000000000001e:
 	slli	a1, a1, 48
 	lui	a2, 1048544
 	srli	a1, a1, 44
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	and	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, 8

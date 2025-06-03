@@ -17,7 +17,7 @@ func0000000000000040:
 
 func0000000000000041:
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a1, a0, 14
 	addi	a1, a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma

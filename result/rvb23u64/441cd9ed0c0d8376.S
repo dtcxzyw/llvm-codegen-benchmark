@@ -1,6 +1,6 @@
 func000000000000006e:
 	lui	a2, 349525
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	addw	a0, a0, a1
@@ -8,7 +8,7 @@ func000000000000006e:
 
 func000000000000000c:
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -18,7 +18,7 @@ func000000000000000c:
 
 func0000000000000008:
 	lui	a2, 1
-	addiw	a2, a2, 302
+	addi	a2, a2, 302
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	addw	a0, a0, a1
@@ -54,7 +54,7 @@ func000000000000006c:
 
 func000000000000006f:
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	srli	a1, a1, 23
 	addw	a0, a0, a1

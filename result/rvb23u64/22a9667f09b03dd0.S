@@ -29,7 +29,7 @@ func0000000000000018:
 	slli	a1, a1, 2
 	div	a0, a1, a0
 	lui	a1, 6
-	addiw	a1, a1, 423
+	addi	a1, a1, 423
 	sltu	a0, a1, a0
 	ret
 

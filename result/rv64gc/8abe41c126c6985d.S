@@ -3,10 +3,10 @@ func0000000000000004:
 	li	a2, 1519
 	lui	a0, 2
 	bltu	a1, a2, .LBB0_2
-	addiw	a0, a0, 1596
+	addi	a0, a0, 1596
 	ret
 .LBB0_2:
-	addiw	a0, a0, 1592
+	addi	a0, a0, 1592
 	ret
 
 func0000000000000026:
@@ -43,7 +43,7 @@ func0000000000000074:
 	li	a1, 1048
 	bltu	a0, a1, .LBB5_2
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB5_2:
 	li	a0, 1023
@@ -54,7 +54,7 @@ func0000000000000008:
 	li	a1, 506
 	bltu	a1, a0, .LBB6_2
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	ret
 .LBB6_2:
 	li	a0, 1

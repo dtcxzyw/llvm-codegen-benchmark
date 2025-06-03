@@ -2,10 +2,10 @@ func0000000000000000:
 	srliw	a1, a0, 9
 	srli	a0, a0, 10
 	lui	a2, 341
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	and	a0, a0, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a1, a1, a0
 	and	a0, a1, a2
 	srli	a1, a1, 2
@@ -26,10 +26,10 @@ func0000000000000001:
 	srliw	a1, a0, 8
 	srli	a0, a0, 9
 	lui	a2, 1365
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	and	a0, a0, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a1, a1, a0
 	and	a0, a1, a2
 	srli	a1, a1, 2

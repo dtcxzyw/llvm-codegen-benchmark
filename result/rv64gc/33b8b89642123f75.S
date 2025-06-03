@@ -2,8 +2,8 @@ func0000000000000003:
 	srliw	a0, a0, 5
 	lui	a1, 42950
 	lui	a2, 13
-	addiw	a1, a1, -1339
-	addiw	a2, a2, -819
+	addi	a1, a1, -1339
+	addi	a2, a2, -819
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	mul	a1, a0, a2

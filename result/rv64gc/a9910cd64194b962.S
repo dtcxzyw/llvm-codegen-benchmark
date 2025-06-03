@@ -23,7 +23,7 @@ func0000000000000026:
 func0000000000000024:
 	sext.w	a0, a0
 	lui	a3, 4
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	bltu	a0, a3, .LBB3_2
 	li	a0, 1000
 	ret
@@ -34,10 +34,10 @@ func0000000000000024:
 func000000000000000c:
 	sext.w	a0, a0
 	lui	a3, 14
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	bne	a0, a3, .LBB4_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 	ret
 .LBB4_2:
 	or	a0, a1, a2

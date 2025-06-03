@@ -18,8 +18,8 @@ func0000000000000042:
 	sext.w	a1, a1
 	lui	a0, 1044192
 	lui	a2, 851887
-	addiw	a0, a0, -1329
-	addiw	a2, a2, -514
+	addi	a0, a0, -1329
+	addi	a2, a2, -514
 	xor	a0, a0, a1
 	xor	a1, a1, a2
 	seqz	a0, a0

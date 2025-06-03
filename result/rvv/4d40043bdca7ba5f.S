@@ -56,7 +56,7 @@ func0000000000000009:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	lui	a1, 3
-	addiw	a1, a1, -204
+	addi	a1, a1, -204
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	vmulh.vx	v8, v8, a0

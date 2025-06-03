@@ -18,7 +18,7 @@ func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v8
 	lui	a0, 1
-	addiw	a0, a0, -1931
+	addi	a0, a0, -1931
 	vmsltu.vx	v12, v10, a0
 	li	a0, 2047
 	vmsgtu.vx	v10, v8, a0

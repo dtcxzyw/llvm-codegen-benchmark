@@ -18,7 +18,7 @@ func0000000000000155:
 	vsll.vi	v12, v12, 13
 	lui	a0, 1
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, -1518
+	addi	a0, a0, -1518
 	vmacc.vx	v8, a0, v10
 	lui	a0, 32
 	vadd.vx	v8, v8, a0
@@ -29,7 +29,7 @@ func0000000000000175:
 	vsll.vi	v12, v12, 13
 	lui	a0, 2
 	vadd.vv	v8, v12, v8
-	addiw	a0, a0, 1841
+	addi	a0, a0, 1841
 	vmacc.vx	v8, a0, v10
 	lui	a0, 32
 	vadd.vx	v8, v8, a0

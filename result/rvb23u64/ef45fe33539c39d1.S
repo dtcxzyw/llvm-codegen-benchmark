@@ -49,14 +49,14 @@ func0000000000004104:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 12
-	addiw	a2, a2, -1152
+	addi	a2, a2, -1152
 	sltu	a1, a2, a1
 	lui	a2, 1
-	addiw	a2, a2, 513
+	addi	a2, a2, 513
 	sltu	a2, a0, a2
 	or	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

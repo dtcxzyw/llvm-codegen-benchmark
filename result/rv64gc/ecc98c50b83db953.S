@@ -34,7 +34,7 @@ func0000000000000361:
 
 func0000000000000374:
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	sub	a2, a2, a0
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2

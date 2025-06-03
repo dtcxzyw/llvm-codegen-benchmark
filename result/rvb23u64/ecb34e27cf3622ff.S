@@ -2,7 +2,7 @@ func000000000000001a:
 	sh1add	a0, a0, a0
 	lui	a1, 699051
 	slli	a0, a0, 2
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	addi	a0, a0, -12
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -14,7 +14,7 @@ func000000000000000b:
 	sh1add	a0, a0, a0
 	lui	a1, 699051
 	slli	a0, a0, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	addi	a0, a0, -24
 	slli	a2, a1, 32
 	srli	a0, a0, 3
@@ -37,7 +37,7 @@ func0000000000000014:
 	li	a1, 153
 	lui	a2, 838861
 	mul	a0, a0, a1
-	addiw	a1, a2, -819
+	addi	a1, a2, -819
 	addi	a0, a0, 2
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -62,7 +62,7 @@ func000000000000001b:
 	sh2add	a0, a0, a0
 	lui	a1, 838861
 	slli	a0, a0, 3
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	addi	a0, a0, -40
 	slli	a2, a1, 32
 	srli	a0, a0, 3
@@ -74,7 +74,7 @@ func0000000000000008:
 	sh1add	a0, a0, a0
 	lui	a1, 699051
 	slli	a0, a0, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	addi	a0, a0, -24
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -99,7 +99,7 @@ func000000000000000a:
 	li	a1, -10
 	lui	a2, 838861
 	mul	a0, a0, a1
-	addiw	a1, a2, -819
+	addi	a1, a2, -819
 	addi	a0, a0, 2
 	slli	a2, a1, 32
 	add	a1, a1, a2

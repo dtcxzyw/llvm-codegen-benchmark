@@ -50,10 +50,10 @@ func0000000000000023:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 13
-	addiw	a0, a0, 1151
+	addi	a0, a0, 1151
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 25
-	addiw	a0, a0, 1600
+	addi	a0, a0, 1600
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -17,7 +17,7 @@ func0000000000000004:
 	lui	a0, 64
 	vadd.vv	v8, v12, v8
 	vadd.vi	v8, v8, 4
-	addiw	a0, a0, -7
+	addi	a0, a0, -7
 	vmsltu.vx	v0, v8, a0
 	ret
 

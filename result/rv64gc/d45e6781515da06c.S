@@ -35,10 +35,10 @@ func0000000000000302:
 func0000000000000102:
 	zext.b	a0, a0
 	lui	a2, 71356
-	addiw	a2, a2, 879
+	addi	a2, a2, 879
 	add	a1, a1, a2
 	lui	a2, 142713
-	addiw	a2, a2, 1602
+	addi	a2, a2, 1602
 	addi	a0, a0, -2
 	sltu	a1, a1, a2
 	seqz	a0, a0
@@ -72,7 +72,7 @@ func0000000000001842:
 func0000000000000118:
 	zext.b	a0, a0
 	lui	a2, 524288
-	addiw	a3, a2, 64
+	addi	a3, a2, 64
 	addi	a0, a0, -159
 	add	a1, a1, a3
 	sltu	a1, a1, a2

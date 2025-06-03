@@ -1,8 +1,8 @@
 func0000000000000718:
 	lui	a2, 1048560
 	lui	a3, 16
-	addiw	a2, a2, 15
-	addiw	a3, a3, -16
+	addi	a2, a2, 15
+	addi	a3, a3, -16
 	add	a2, a2, a1
 	sltu	a1, a3, a1
 	czero.eqz	a2, a2, a1

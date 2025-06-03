@@ -8,7 +8,7 @@ func0000000000000005:
 	add	a1, a1, a2
 	lui	a2, 79
 	subw	a1, a1, a0
-	addiw	a0, a2, 443
+	addi	a0, a2, 443
 	xor	a0, a0, a1
 	ret
 

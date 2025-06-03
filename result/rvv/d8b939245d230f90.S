@@ -97,7 +97,7 @@ func0000000000000404:
 	vsll.vx	v10, v12, a0
 	lui	a0, 2441
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 1664
+	addi	a0, a0, 1664
 	vmsltu.vx	v0, v8, a0
 	ret
 

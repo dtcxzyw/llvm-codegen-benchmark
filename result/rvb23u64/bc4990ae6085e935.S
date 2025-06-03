@@ -3,7 +3,7 @@ func0000000000000003:
 	lui	a1, 335544
 	addi	a0, a0, -322
 	zext.w	a2, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 39
 	sh2add	a1, a1, a1
@@ -17,7 +17,7 @@ func000000000000000b:
 	addi	a0, a0, 3
 	lui	a1, 149797
 	zext.w	a2, a0
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1
@@ -34,7 +34,7 @@ func0000000000000001:
 	addi	a0, a0, 1
 	lui	a1, 335544
 	zext.w	a2, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	sh2add	a1, a1, a1
@@ -48,7 +48,7 @@ func0000000000000005:
 	addi	a0, a0, 1
 	lui	a1, 335544
 	zext.w	a2, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	sh2add	a1, a1, a1
@@ -62,7 +62,7 @@ func000000000000000d:
 	addi	a0, a0, 1
 	lui	a1, 335544
 	zext.w	a2, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	sh2add	a1, a1, a1

@@ -1,8 +1,8 @@
 func0000000000000018:
 	lui	a0, 28784
 	lui	a1, 4112
-	addiw	a0, a0, 1799
-	addiw	a1, a1, 257
+	addi	a0, a0, 1799
+	addi	a1, a1, 257
 	slli	a2, a0, 32
 	add	a0, a0, a2
 	slli	a2, a1, 32

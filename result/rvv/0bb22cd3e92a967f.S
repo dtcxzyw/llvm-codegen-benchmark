@@ -7,7 +7,7 @@ func000000000000000c:
 	vmulhu.vx	v12, v10, a0
 	lui	a0, 244
 	vsrl.vi	v12, v12, 18
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsub.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 0
@@ -16,7 +16,7 @@ func000000000000000c:
 
 func000000000000000d:
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma

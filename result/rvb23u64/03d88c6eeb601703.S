@@ -45,7 +45,7 @@ func00000000000000aa:
 	mul	a1, a1, a2
 	lui	a2, 490
 	addw	a0, a0, a1
-	addiw	a1, a2, -1018
+	addi	a1, a2, -1018
 	slt	a0, a1, a0
 	ret
 
@@ -54,7 +54,7 @@ func000000000000000a:
 	sh1add	a0, a1, a0
 	lui	a1, 16
 	sext.w	a0, a0
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
@@ -64,7 +64,7 @@ func00000000000001f8:
 	mul	a1, a1, a2
 	lui	a2, 244141
 	addw	a0, a0, a1
-	addiw	a1, a2, -1537
+	addi	a1, a2, -1537
 	sltu	a0, a1, a0
 	ret
 

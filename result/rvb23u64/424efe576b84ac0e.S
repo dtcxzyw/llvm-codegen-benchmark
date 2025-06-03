@@ -4,7 +4,7 @@ func000000000000020a:
 	lui	a2, 1
 	add	a0, a0, a1
 	addiw	a0, a0, -48
-	addiw	a1, a2, -2001
+	addi	a1, a2, -2001
 	slt	a0, a1, a0
 	ret
 
@@ -18,7 +18,7 @@ func000000000000060a:
 	addi	a1, a1, 16
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	slt	a0, a3, a0
 	ret
 
@@ -27,7 +27,7 @@ func0000000000001aa1:
 	sh1add	a1, a2, a1
 	lui	a2, 1
 	addw	a0, a0, a1
-	addiw	a1, a2, 1452
+	addi	a1, a2, 1452
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

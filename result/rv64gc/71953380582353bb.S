@@ -9,7 +9,7 @@ func00000000000000c4:
 func00000000000000a6:
 	neg	a1, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	slt	a0, a0, a1
 	ret

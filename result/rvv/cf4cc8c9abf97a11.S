@@ -4,7 +4,7 @@ func0000000000000020:
 	lui	a0, 1027482
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v8, v10
@@ -21,7 +21,7 @@ func0000000000000028:
 	lui	a0, 1047697
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8

@@ -12,7 +12,7 @@ func0000000000000003:
 	vsub.vv	v10, v10, v12
 	lui	a0, 4096
 	vsrl.vi	v10, v10, 9
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret

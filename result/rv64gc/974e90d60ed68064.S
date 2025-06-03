@@ -4,7 +4,7 @@ func0000000000000020:
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	lui	a1, 210
-	addiw	a1, a1, -1167
+	addi	a1, a1, -1167
 	slli	a1, a1, 12
 	addi	a1, a1, 1881
 	mul	a0, a0, a1

@@ -63,9 +63,8 @@ func0000000000000015:
 
 func0000000000000005:
 	sub	a0, a0, a1
-	li	a1, 1
+	bseti	a1, zero, 40
 	slli	a0, a0, 8
-	slli	a1, a1, 40
 	addi	a1, a1, -1280
 	add	a0, a0, a1
 	ret

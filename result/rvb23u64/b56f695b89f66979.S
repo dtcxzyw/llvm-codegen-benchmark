@@ -25,11 +25,11 @@ func0000000000000014:
 	sext.w	a1, a1
 	lui	a2, 131072
 	sltiu	a1, a1, 33
-	addiw	a3, a2, 8
+	addi	a3, a2, 8
 	czero.nez	a1, a3, a1
 	lui	a3, 65536
-	addiw	a2, a2, 361
-	addiw	a3, a3, 353
+	addi	a2, a2, 361
+	addi	a3, a3, 353
 	add	a1, a1, a2
 	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0

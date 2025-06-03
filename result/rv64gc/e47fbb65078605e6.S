@@ -27,7 +27,7 @@ func0000000000000008:
 func00000000000000aa:
 	subw	a1, a1, a2
 	lui	a2, 1048400
-	addiw	a2, a2, 1424
+	addi	a2, a2, 1424
 	bge	a2, a1, .LBB3_2
 	lui	a0, 176
 	addi	a0, a0, -1425

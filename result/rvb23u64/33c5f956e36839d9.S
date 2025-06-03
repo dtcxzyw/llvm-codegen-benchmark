@@ -8,7 +8,7 @@ func00000000000000f0:
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a1, a3, -1968
+	addi	a1, a3, -1968
 	add	a0, a0, a1
 	ret
 

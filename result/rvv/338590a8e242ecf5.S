@@ -29,7 +29,7 @@ func0000000000000154:
 	vmacc.vx	v10, a0, v12
 	vmadd.vx	v10, a0, v8
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v10, a0
 	ret
 

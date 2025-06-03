@@ -22,7 +22,7 @@ func000000000000001d:
 	slli	a0, a0, 63
 	lui	a4, 1048544
 	srai	a0, a0, 63
-	addiw	a4, a4, 30
+	addi	a4, a4, 30
 	and	a0, a0, a4
 	lui	a4, 524408
 	addi	a4, a4, 113

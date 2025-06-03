@@ -10,7 +10,7 @@ func000000000000108c:
 
 func000000000000a50c:
 	lui	a0, 262144
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v9, v12, a0
 	vmsgt.vx	v12, v10, a0

@@ -39,8 +39,8 @@ func000000000000000a:
 	lui	a4, 1048573
 	slti	a2, a2, 2
 	czero.eqz	a2, a3, a2
-	addiw	a3, a4, -1544
-	addiw	a4, a4, -1533
+	addi	a3, a4, -1544
+	addi	a4, a4, -1533
 	czero.eqz	a3, a3, a1
 	addi	a2, a2, -2048
 	addi	a2, a2, -600

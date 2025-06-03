@@ -13,7 +13,7 @@ func0000000000000000:
 	vmv.v.i	v12, 0
 	lui	a0, 522232
 	vmerge.vim	v12, v12, 1, v0
-	addiw	a0, a0, -129
+	addi	a0, a0, -129
 	vsub.vv	v10, v10, v12
 	slli	a1, a0, 32
 	vadd.vi	v10, v10, 2

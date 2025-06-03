@@ -43,7 +43,7 @@ func0000000000000030:
 func0000000000000048:
 	sh2add	a0, a1, a0
 	lui	a1, 313
-	addiw	a1, a1, -124
+	addi	a1, a1, -124
 	add	a0, a0, a1
 	ret
 

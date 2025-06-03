@@ -22,7 +22,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 315653
-	addiw	a0, a0, -702
+	addi	a0, a0, -702
 	vmacc.vx	v10, a0, v8
 	li	a0, 32
 	vsrl.vx	v8, v10, a0
@@ -30,7 +30,7 @@ func000000000000000a:
 
 func000000000000001c:
 	lui	a0, 522248
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma

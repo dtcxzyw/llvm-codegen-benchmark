@@ -14,7 +14,7 @@ func0000000000000004:
 	li	a3, 256
 	czero.nez	a2, a3, a2
 	lui	a3, 63424
-	addiw	a3, a3, -462
+	addi	a3, a3, -462
 	or	a0, a0, a2
 	bseti	a2, a3, 31
 	bseti	a2, a2, 55

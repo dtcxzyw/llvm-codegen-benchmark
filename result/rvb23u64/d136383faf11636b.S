@@ -1,7 +1,7 @@
 func0000000000000004:
 	zext.w	a0, a0
 	lui	a1, 235184
-	addiw	a1, a1, 1725
+	addi	a1, a1, 1725
 	mul	a0, a0, a1
 	lui	a1, 36
 	srli	a0, a0, 47
@@ -13,7 +13,7 @@ func0000000000000004:
 func0000000000000006:
 	zext.w	a0, a0
 	lui	a1, 351844
-	addiw	a1, a1, -1143
+	addi	a1, a1, -1143
 	mul	a0, a0, a1
 	srli	a0, a0, 57
 	li	a1, 103

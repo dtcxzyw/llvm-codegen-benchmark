@@ -8,7 +8,7 @@ func0000000000000000:
 func000000000000000f:
 	zext.b	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	addiw	a3, a2, 26
 	mul	a0, a0, a3
 	add	a0, a0, a1

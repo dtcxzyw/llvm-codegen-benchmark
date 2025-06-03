@@ -4,7 +4,7 @@ func0000000000000005:
 	bnez	a3, .LBB0_2
 	srai	a0, a2, 32
 	lui	a1, 140
-	addiw	a1, a1, -68
+	addi	a1, a1, -68
 	add	a0, a0, a1
 .LBB0_2:
 	ret

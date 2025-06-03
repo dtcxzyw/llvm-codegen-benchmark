@@ -6,7 +6,7 @@ func0000000000000021:
 func0000000000000024:
 	zext.h	a0, a0
 	lui	a1, 16
-	addiw	a1, a1, -258
+	addi	a1, a1, -258
 	sltu	a0, a0, a1
 	ret
 

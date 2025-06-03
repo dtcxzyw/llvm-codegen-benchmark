@@ -59,7 +59,7 @@ func00000000000028c6:
 	lui	a3, 8
 	min	a0, a1, a0
 	lui	a1, 1048568
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a2, a3, a2
 	slt	a0, a0, a1
 	or	a0, a0, a2

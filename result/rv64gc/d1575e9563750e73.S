@@ -18,7 +18,7 @@ func000000000000000c:
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	lui	a1, 65536
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

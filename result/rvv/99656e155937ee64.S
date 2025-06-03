@@ -6,7 +6,7 @@ func0000000000000004:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 2
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	lui	a0, 6

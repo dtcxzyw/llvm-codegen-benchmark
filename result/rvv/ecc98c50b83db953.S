@@ -27,7 +27,7 @@ func0000000000000361:
 
 func0000000000000374:
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v12, v8, a0
 	vminu.vv	v10, v10, v12

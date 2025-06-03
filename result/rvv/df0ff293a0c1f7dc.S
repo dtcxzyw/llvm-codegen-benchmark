@@ -17,7 +17,7 @@ func0000000000000000:
 func000000000000000a:
 	lui	a0, 2
 	lui	a1, %hi(.LCPI1_0)
-	addiw	a0, a0, -193
+	addi	a0, a0, -193
 	ld	a1, %lo(.LCPI1_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
@@ -31,7 +31,7 @@ func000000000000001e:
 	lui	a1, 526344
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	addiw	a0, a1, 129
+	addi	a0, a1, 129
 	vmacc.vv	v12, v10, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000014:
 	lui	a0, 31250
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmacc.vv	v12, v10, v8
@@ -58,7 +58,7 @@ func0000000000000014:
 func0000000000000010:
 	lui	a0, 12875
 	lui	a1, %hi(.LCPI4_0)
-	addiw	a0, a0, -1625
+	addi	a0, a0, -1625
 	ld	a1, %lo(.LCPI4_0)(a1)
 	slli	a0, a0, 13
 	addi	a0, a0, -1

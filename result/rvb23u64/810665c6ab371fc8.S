@@ -334,7 +334,7 @@ func0000000000000301:
 func000000000000030c:
 	sext.w	a0, a0
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	xor	a0, a0, a3
 	sext.w	a2, a2
 	sltiu	a2, a2, 160

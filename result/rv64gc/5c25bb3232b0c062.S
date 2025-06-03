@@ -9,7 +9,7 @@ func000000000000000b:
 	andi	a2, a2, 1
 	beqz	a2, .LBB1_2
 	lui	a1, 1
-	addiw	a1, a1, -2024
+	addi	a1, a1, -2024
 .LBB1_2:
 	add	a0, a0, a1
 	ret

@@ -3,7 +3,7 @@ func0000000000000030:
 	sh3add	a1, a2, a1
 	lui	a2, 1048572
 	sub	a0, a0, a1
-	addiw	a1, a2, -240
+	addi	a1, a2, -240
 	add	a0, a0, a1
 	ret
 

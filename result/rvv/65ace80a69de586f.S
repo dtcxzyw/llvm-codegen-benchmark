@@ -8,7 +8,7 @@ func0000000000000019:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10
@@ -28,7 +28,7 @@ func000000000000001b:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10
@@ -48,7 +48,7 @@ func0000000000000018:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 477
-	addiw	a0, a0, -667
+	addi	a0, a0, -667
 	slli	a0, a0, 11
 	vsra.vi	v12, v12, 28
 	vadd.vv	v12, v12, v14

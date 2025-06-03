@@ -41,7 +41,7 @@ func00000000000001e4:
 func0000000000000004:
 	add	a1, a1, a2
 	lui	a2, 64
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1048512
 	and	a1, a1, a2

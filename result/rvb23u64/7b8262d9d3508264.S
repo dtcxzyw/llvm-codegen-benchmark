@@ -49,7 +49,7 @@ func0000000000000003:
 	li	a3, 16
 	czero.nez	a0, a3, a0
 	lui	a3, 786432
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -5,7 +5,7 @@ func00000000000001c3:
 	add	a0, a0, a1
 	slli	a1, a2, 3
 	slli	a2, a2, 6
-	addiw	a3, a3, -1964
+	addi	a3, a3, -1964
 	sub	a2, a2, a1
 	add	a0, a0, a3
 	add	a0, a0, a2

@@ -40,8 +40,7 @@ func0000000000000064:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	vadd.vi	v10, v10, 2
 	addi	a0, a0, -4
 	vand.vx	v10, v10, a0

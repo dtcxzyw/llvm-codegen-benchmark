@@ -47,7 +47,7 @@ func00000000000000cc:
 	sext.w	a3, a1
 	lui	a4, 4096
 	slti	a3, a3, 0
-	addiw	a4, a4, 7
+	addi	a4, a4, 7
 	xor	a2, a2, a4
 	snez	a2, a2
 	and	a2, a2, a3

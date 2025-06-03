@@ -10,7 +10,7 @@ func0000000000000006:
 	add	a0, a0, a1
 	lui	a1, 64
 	addw	a0, a0, a2
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	slt	a0, a0, a1
 	ret
 
@@ -97,7 +97,7 @@ func00000000000006aa:
 	add	a0, a0, a1
 	lui	a1, 12
 	addw	a0, a0, a2
-	addiw	a1, a1, 3
+	addi	a1, a1, 3
 	slt	a0, a1, a0
 	ret
 
@@ -139,7 +139,7 @@ func000000000000000a:
 	add	a0, a0, a1
 	lui	a1, 272
 	addw	a0, a0, a2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

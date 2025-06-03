@@ -21,7 +21,7 @@ func0000000000000004:
 func000000000000000f:
 	addi	a0, a0, 7
 	lui	a1, 8192
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

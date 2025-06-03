@@ -66,7 +66,7 @@ func0000000000000021:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	lui	a3, 1048568
-	addiw	a3, a3, 767
+	addi	a3, a3, 767
 	addi	a0, a0, -1
 	xor	a2, a2, a3
 	seqz	a0, a0

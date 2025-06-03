@@ -4,11 +4,11 @@ func000000000000002b:
 	lui	a7, 209715
 	lui	t0, 61681
 	srli	a3, a0, 1
-	addiw	a4, a6, 1365
+	addi	a4, a6, 1365
 	and	t1, a2, a4
 	and	a3, a3, a4
 	lui	a6, 4112
-	addiw	a5, a7, 819
+	addi	a5, a7, 819
 	addi	a4, t0, -241
 	addi	a2, a6, 257
 	sub	a1, a1, t1
@@ -40,11 +40,11 @@ func0000000000000003:
 	lui	a7, 209715
 	lui	t0, 61681
 	srli	a3, a0, 1
-	addiw	a4, a6, 1365
+	addi	a4, a6, 1365
 	and	t1, a2, a4
 	and	a3, a3, a4
 	lui	a6, 4112
-	addiw	a5, a7, 819
+	addi	a5, a7, 819
 	addi	a4, t0, -241
 	addi	a2, a6, 257
 	sub	a1, a1, t1

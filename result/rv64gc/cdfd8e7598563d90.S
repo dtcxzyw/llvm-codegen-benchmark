@@ -2,7 +2,7 @@ func0000000000000001:
 	fmv.x.w	a0, fa0
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0
@@ -17,7 +17,7 @@ func0000000000000000:
 	fmv.x.w	a0, fa0
 	lui	a1, 16
 	srli	a2, a0, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srliw	a3, a0, 24
 	and	a2, a2, a1
 	and	a1, a1, a0

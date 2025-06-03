@@ -4,10 +4,10 @@ func00000000000000e8:
 	zext.h	a2, a2
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	czero.eqz	a0, a3, a0
 	add	a0, a0, a1
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a0, a2, a0
 	ret
 

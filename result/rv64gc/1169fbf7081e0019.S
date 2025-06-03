@@ -26,7 +26,7 @@ func0000000000000006:
 	slli	a0, a0, 56
 	bltz	a0, .LBB3_2
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB3_2:
 	li	a0, 1
@@ -36,10 +36,10 @@ func000000000000000c:
 	zext.b	a1, a0
 	lui	a0, 4
 	beqz	a1, .LBB4_2
-	addiw	a0, a0, -741
+	addi	a0, a0, -741
 	ret
 .LBB4_2:
-	addiw	a0, a0, -485
+	addi	a0, a0, -485
 	ret
 
 func0000000000000008:

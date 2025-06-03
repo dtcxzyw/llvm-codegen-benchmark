@@ -17,7 +17,7 @@ func00000000000000f0:
 	lui	a3, 8
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
-	addiw	a1, a3, 44
+	addi	a1, a3, 44
 	add	a0, a0, a1
 	ret
 

@@ -57,7 +57,7 @@ func0000000000000006:
 	neg	a1, a0
 	max	a0, a0, a1
 	lui	a1, 2384
-	addiw	a1, a1, 761
+	addi	a1, a1, 761
 	slli	a1, a1, 9
 	slt	a0, a0, a1
 	ret
@@ -66,7 +66,7 @@ func0000000000000014:
 	neg	a1, a0
 	max	a0, a0, a1
 	lui	a1, 298023
-	addiw	a1, a1, 917
+	addi	a1, a1, 917
 	slli	a1, a1, 12
 	sltu	a0, a0, a1
 	ret

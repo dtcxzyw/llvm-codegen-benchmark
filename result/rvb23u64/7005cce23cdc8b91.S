@@ -55,7 +55,7 @@ func000000000000008a:
 	lui	a3, 12
 	add	a1, a1, a2
 	addw	a0, a0, a1
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	slt	a0, a3, a0
 	ret
 
@@ -77,7 +77,7 @@ func0000000000001ff4:
 	sh2add	a0, a2, a0
 	lui	a2, 2
 	addw	a0, a0, a1
-	addiw	a1, a2, 1809
+	addi	a1, a2, 1809
 	sltu	a0, a0, a1
 	ret
 

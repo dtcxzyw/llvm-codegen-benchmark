@@ -32,7 +32,7 @@ func000000000000a528:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v8, a0
 	lui	a0, 7
-	addiw	a0, a0, 1328
+	addi	a0, a0, 1328
 	vmsltu.vx	v13, v10, a0
 	vmand.mm	v10, v13, v12
 	vmsleu.vi	v11, v8, 5

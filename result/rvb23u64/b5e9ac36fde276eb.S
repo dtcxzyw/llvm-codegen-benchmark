@@ -82,7 +82,7 @@ func0000000000000302:
 	addiw	a1, a1, -2
 	lui	a2, 14
 	xor	a1, a1, a0
-	addiw	a2, a2, -1025
+	addi	a2, a2, -1025
 	snez	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

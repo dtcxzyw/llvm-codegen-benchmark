@@ -3,7 +3,7 @@ func00000000000000a6:
 	vsrl.vi	v10, v10, 1
 	lui	a0, 8
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0
 	ret
@@ -13,7 +13,7 @@ func00000000000000aa:
 	vsrl.vi	v10, v10, 31
 	lui	a0, 262144
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	ret

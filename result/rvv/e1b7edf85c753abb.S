@@ -1,6 +1,5 @@
 func0000000000000007:
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -4
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0

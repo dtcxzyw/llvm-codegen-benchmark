@@ -4,7 +4,7 @@ func0000000000000000:
 	mv	a1, a2
 .LBB0_2:
 	lui	a0, 272
-	addiw	a0, a0, 48
+	addi	a0, a0, 48
 	or	a0, a0, a1
 	ret
 

@@ -26,7 +26,7 @@ func00000000000002aa:
 	add	a0, a0, a1
 	lui	a1, 12
 	addw	a0, a0, a2
-	addiw	a1, a1, 1932
+	addi	a1, a1, 1932
 	slt	a0, a1, a0
 	ret
 
@@ -35,7 +35,7 @@ func00000000000002a6:
 	add	a0, a0, a1
 	lui	a1, 1048564
 	addw	a0, a0, a2
-	addiw	a1, a1, -1930
+	addi	a1, a1, -1930
 	slt	a0, a0, a1
 	ret
 
@@ -52,7 +52,7 @@ func0000000000000086:
 	add	a0, a0, a1
 	lui	a1, 1
 	addw	a0, a0, a2
-	addiw	a1, a1, 30
+	addi	a1, a1, 30
 	slt	a0, a0, a1
 	ret
 

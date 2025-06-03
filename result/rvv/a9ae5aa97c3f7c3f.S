@@ -12,7 +12,7 @@ func000000000000002a:
 
 func000000000000003f:
 	lui	a0, 163151
-	addiw	a0, a0, -1201
+	addi	a0, a0, -1201
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
 	li	a0, -1

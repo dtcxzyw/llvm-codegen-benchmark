@@ -33,10 +33,10 @@ func00000000000000d0:
 func0000000000000090:
 	lui	a2, 16
 	lui	a3, 2
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a1
 	srliw	a1, a1, 11
-	addiw	a3, a3, 1792
+	addi	a3, a3, 1792
 	sltiu	a1, a1, 3
 	xor	a2, a2, a3
 	seqz	a2, a2

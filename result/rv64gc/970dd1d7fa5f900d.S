@@ -21,9 +21,9 @@ func0000000000000021:
 
 func000000000000002c:
 	lui	a4, 16
-	addiw	a3, a4, -1
+	addi	a3, a4, -1
 	and	a2, a2, a3
-	addiw	a4, a4, -2
+	addi	a4, a4, -2
 	beq	a2, a4, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
@@ -45,7 +45,7 @@ func0000000000000028:
 
 func0000000000000081:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	li	a4, 173
 	bltu	a2, a4, .LBB4_2
@@ -59,9 +59,9 @@ func0000000000000081:
 func0000000000000024:
 	lui	a3, 16
 	lui	a4, 7
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
-	addiw	a4, a4, -512
+	addi	a4, a4, -512
 	beq	a2, a4, .LBB5_2
 	mv	a0, a1
 .LBB5_2:

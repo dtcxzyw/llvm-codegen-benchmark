@@ -19,7 +19,7 @@ func00000000000007b8:
 	lui	a2, 244141
 	addw	a0, a0, a1
 	lui	a1, 804435
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a2, a2, a0
 	negw	a2, a2
 	addi	a1, a1, 1536
@@ -33,7 +33,7 @@ func000000000000022a:
 	lui	a2, 244
 	addw	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a2, a2, 575
+	addi	a2, a2, 575
 	slt	a2, a2, a0
 	negw	a2, a2
 	addi	a1, a1, -576

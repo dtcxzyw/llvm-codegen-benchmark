@@ -33,7 +33,7 @@ func0000000000000054:
 	slli	a1, a0, 48
 	lui	a2, 8
 	srai	a1, a1, 48
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a0, a0, a2
 	slti	a1, a1, 0
 	seqz	a0, a0
@@ -64,7 +64,7 @@ func0000000000000118:
 	slli	a1, a0, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	addi	a0, a0, -48
 	snez	a0, a0

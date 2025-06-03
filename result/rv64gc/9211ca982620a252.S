@@ -11,7 +11,7 @@ func000000000000001f:
 	slli	a2, a2, 20
 	or	a0, a0, a2
 	lui	a2, 1045520
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -28,7 +28,7 @@ func000000000000001b:
 	slliw	a2, a2, 31
 	or	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -64
+	addi	a2, a2, -64
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -62,7 +62,7 @@ func000000000000000e:
 	slli	a2, a2, 16
 	or	a0, a0, a2
 	lui	a2, 788496
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

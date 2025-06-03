@@ -1,7 +1,7 @@
 func0000000000000318:
 	lui	a0, 1
-	addiw	a1, a0, -991
-	addiw	a0, a0, -1279
+	addi	a1, a0, -991
+	addi	a0, a0, -1279
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v10, v8, a1
 	vmsne.vx	v11, v8, a0

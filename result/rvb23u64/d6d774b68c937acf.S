@@ -32,7 +32,7 @@ func000000000000000a:
 func0000000000000004:
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

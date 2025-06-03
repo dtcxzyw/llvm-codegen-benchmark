@@ -36,7 +36,7 @@ func000000000000004e:
 	slli	a1, a1, 21
 	or	a0, a0, a1
 	lui	a1, 528896
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func000000000000007b:
 	slli	a1, a1, 21
 	or	a0, a0, a1
 	lui	a1, 4608
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
@@ -65,7 +65,7 @@ func0000000000000030:
 	slli	a1, a1, 15
 	or	a0, a0, a1
 	lui	a1, 786432
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 
@@ -75,7 +75,7 @@ func0000000000000034:
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 8192
-	addiw	a1, a1, 71
+	addi	a1, a1, 71
 	or	a0, a0, a1
 	ret
 

@@ -84,7 +84,7 @@ func000000000000004a:
 func0000000000000064:
 	addi	a2, a2, 1
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -124,7 +124,7 @@ func0000000000000041:
 func0000000000000004:
 	addi	a2, a2, 1
 	lui	a3, 2048
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

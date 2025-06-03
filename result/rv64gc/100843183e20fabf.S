@@ -43,7 +43,7 @@ func000000000000002a:
 	mv	a0, a1
 .LBB4_2:
 	lui	a1, 262144
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	slt	a0, a1, a0
 	ret
 

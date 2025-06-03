@@ -1,6 +1,6 @@
 func00000000000000c8:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a2, a0, a1
 	li	a3, 256
 	bltu	a2, a3, .LBB0_2

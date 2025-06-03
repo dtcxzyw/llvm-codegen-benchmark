@@ -2,7 +2,7 @@ func000000000000000f:
 	zext.b	a1, a1
 	lui	a2, 1048574
 	slli	a1, a1, 9
-	addiw	a2, a2, 511
+	addi	a2, a2, 511
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -53,7 +53,7 @@ func000000000000000e:
 func0000000000000004:
 	slliw	a1, a1, 24
 	lui	a2, 528384
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

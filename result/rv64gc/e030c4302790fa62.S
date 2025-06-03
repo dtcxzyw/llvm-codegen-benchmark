@@ -7,7 +7,7 @@ func0000000000000302:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 17476
-	addiw	a2, a2, 1092
+	addi	a2, a2, 1092
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -38,7 +38,7 @@ func000000000000004c:
 	srliw	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 104858
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	sltu	a1, a1, a2
 	slti	a0, a0, 19
 	or	a0, a0, a1
@@ -54,10 +54,10 @@ func0000000000000068:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 17476
-	addiw	a2, a2, 1092
+	addi	a2, a2, 1092
 	sltu	a1, a1, a2
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -71,7 +71,7 @@ func0000000000000058:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 10486
-	addiw	a2, a2, -983
+	addi	a2, a2, -983
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -81,7 +81,7 @@ func0000000000000330:
 	sext.w	a0, a0
 	srliw	a2, a1, 5
 	lui	a3, 8216
-	addiw	a3, a3, 289
+	addi	a3, a3, 289
 	mul	a2, a2, a3
 	lui	a3, 8
 	addi	a3, a3, -96
@@ -100,7 +100,7 @@ func0000000000000042:
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	lui	a2, 349525
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

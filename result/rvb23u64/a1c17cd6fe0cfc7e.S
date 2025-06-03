@@ -23,7 +23,7 @@ func0000000000000024:
 	andi	a1, a1, 7
 	lui	a2, 16
 	seqz	a1, a1
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	sltiu	a0, a0, 1025
 	and	a0, a0, a1

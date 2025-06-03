@@ -15,10 +15,10 @@ func0000000000000546:
 func0000000000000541:
 	lui	a2, 244141
 	lui	a3, 804435
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	slt	a2, a2, a1
 	neg	a2, a2
-	addiw	a3, a3, 1536
+	addi	a3, a3, 1536
 	and	a2, a2, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1

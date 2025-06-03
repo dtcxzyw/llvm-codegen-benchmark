@@ -11,7 +11,7 @@ func000000000000000f:
 	vzext.vf2	v12, v10
 	lui	a0, 244141
 	vsub.vv	v8, v12, v8
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmul.vx	v8, v8, a0
 	ret
 

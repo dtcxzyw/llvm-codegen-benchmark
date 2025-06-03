@@ -80,7 +80,7 @@ func0000000000000030:
 	lui	a3, 522240
 	bgeu	a3, a2, .LBB9_2
 	lui	a1, 8
-	addiw	a1, a1, -512
+	addi	a1, a1, -512
 .LBB9_2:
 	or	a0, a0, a1
 	ret
@@ -88,7 +88,7 @@ func0000000000000030:
 func0000000000000011:
 	sext.w	a2, a2
 	lui	a3, 1048320
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sltu	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -115,7 +115,7 @@ func0000000000000029:
 func0000000000000015:
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	bge	a3, a2, .LBB13_2
 	lui	a1, 129024
 .LBB13_2:

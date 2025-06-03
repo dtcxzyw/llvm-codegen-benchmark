@@ -129,12 +129,12 @@ func0000000000000060:
 	li	a2, 1
 	bltu	a2, a1, .LBB13_2
 	lui	a1, 174
-	addiw	a1, a1, 1728
+	addi	a1, a1, 1728
 	add	a0, a0, a1
 	ret
 .LBB13_2:
 	lui	a1, 349
-	addiw	a1, a1, -640
+	addi	a1, a1, -640
 	add	a0, a0, a1
 	ret
 
@@ -154,11 +154,11 @@ func000000000000002a:
 	li	a3, 8
 	lui	a1, 1048468
 	blt	a3, a2, .LBB15_2
-	addiw	a1, a1, 544
+	addi	a1, a1, 544
 	add	a0, a0, a1
 	ret
 .LBB15_2:
-	addiw	a1, a1, 608
+	addi	a1, a1, 608
 	add	a0, a0, a1
 	ret
 

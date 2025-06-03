@@ -21,7 +21,7 @@ func0000000000000002:
 func0000000000000003:
 	sext.w	a1, a1
 	lui	a2, 14
-	addiw	a2, a2, -339
+	addi	a2, a2, -339
 	beq	a1, a2, .LBB1_2
 	srli	a1, a0, 8
 	lui	a2, 16

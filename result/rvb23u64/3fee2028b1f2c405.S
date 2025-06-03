@@ -23,14 +23,14 @@ func000000000000001f:
 func0000000000000005:
 	slli	a0, a0, 36
 	lui	a1, 67400
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000003f:
 	slli	a0, a0, 36
 	lui	a1, 67592
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret
 

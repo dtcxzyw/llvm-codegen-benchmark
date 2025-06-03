@@ -19,14 +19,14 @@ func000000000000000c:
 	lui	a1, 1
 	addi	a0, a0, 1310
 	zext.h	a0, a0
-	addiw	a1, a1, -1476
+	addi	a1, a1, -1476
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000006:
 	sext.h	a1, a0
 	lui	a2, 6
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 16
@@ -42,7 +42,7 @@ func0000000000000006:
 func000000000000000a:
 	sext.h	a1, a0
 	lui	a2, 6
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 16
@@ -59,7 +59,7 @@ func000000000000000a:
 func0000000000000008:
 	sext.h	a1, a0
 	lui	a2, 6
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 16

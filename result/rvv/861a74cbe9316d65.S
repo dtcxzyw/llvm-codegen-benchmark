@@ -29,7 +29,7 @@ func0000000000000158:
 	vsub.vv	v12, v10, v8
 	lui	a0, 25600
 	vsub.vv	v12, v8, v10, v0.t
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v12, a0
 	ret
 
@@ -45,7 +45,7 @@ func0000000000000144:
 	vsub.vv	v12, v10, v8
 	lui	a0, 1
 	vsub.vv	v12, v8, v10, v0.t
-	addiw	a0, a0, 905
+	addi	a0, a0, 905
 	vmsltu.vx	v0, v12, a0
 	ret
 

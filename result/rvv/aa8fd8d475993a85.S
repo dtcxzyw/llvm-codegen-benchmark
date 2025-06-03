@@ -19,7 +19,7 @@ func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulh.vx	v10, v10, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsra.vi	v10, v10, 6
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11

@@ -42,8 +42,7 @@ func0000000000000378:
 
 func0000000000000304:
 	sext.w	a0, a0
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -8
 	add.uw	a1, a1, a2
 	srli	a1, a1, 1
@@ -53,8 +52,7 @@ func0000000000000304:
 
 func0000000000000308:
 	sext.w	a0, a0
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -8
 	add.uw	a1, a1, a2
 	srli	a1, a1, 1

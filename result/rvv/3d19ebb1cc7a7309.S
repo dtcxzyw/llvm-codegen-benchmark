@@ -3,7 +3,7 @@ func0000000000000208:
 	vmsleu.vi	v10, v10, -10
 	lui	a0, 1
 	vmor.mm	v10, v0, v10
-	addiw	a0, a0, -432
+	addi	a0, a0, -432
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

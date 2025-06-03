@@ -98,7 +98,7 @@ func0000000000000005:
 	lui	a3, 131072
 	slliw	a1, a1, 31
 	addi	a2, a2, -6
-	addiw	a3, a3, -6
+	addi	a3, a3, -6
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 6
 	or	a0, a0, a1

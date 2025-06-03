@@ -25,11 +25,11 @@ func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v8, v10
 	lui	a0, 989319
-	addiw	a0, a0, -503
+	addi	a0, a0, -503
 	slli	a0, a0, 8
 	vmv.v.x	v8, a0
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmacc.vx	v8, a0, v10
 	ret
 

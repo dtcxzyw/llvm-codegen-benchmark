@@ -2,7 +2,7 @@ func0000000000000004:
 	andi	a2, a2, 1024
 	beqz	a2, .LBB0_2
 	lui	a1, 397312
-	addiw	a1, a1, -1026
+	addi	a1, a1, -1026
 .LBB0_2:
 	or	a0, a0, a1
 	lui	a1, 524288

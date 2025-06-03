@@ -11,7 +11,7 @@ func000000000000000f:
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 16383
 	slli	a1, a1, 8
@@ -29,10 +29,10 @@ func000000000000001f:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 1024
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 12
 	and	a0, a0, a1
 	ret

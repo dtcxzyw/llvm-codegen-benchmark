@@ -4,7 +4,7 @@ func0000000000000005:
 	lui	a1, %hi(.LCPI0_0)
 	lui	a2, 559241
 	ld	a1, %lo(.LCPI0_0)(a1)
-	addiw	a2, a2, -1911
+	addi	a2, a2, -1911
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	srli	a3, a0, 4
@@ -31,7 +31,7 @@ func000000000000000f:
 	srli	a0, a0, 9
 	mulhu	a0, a0, a2
 	lui	a2, 1571
-	addiw	a2, a2, 667
+	addi	a2, a2, 667
 	slli	a2, a2, 9
 	srli	a1, a1, 24
 	mul	a1, a1, a2

@@ -57,7 +57,7 @@ func0000000000000078:
 	srli	a0, a0, 32
 	addi	a0, a0, 7
 	andi	a0, a0, -8
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	sltu	a0, a1, a0
 	ret
 

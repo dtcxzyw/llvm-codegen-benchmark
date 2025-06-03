@@ -19,7 +19,7 @@ func0000000000000005:
 func0000000000000001:
 	srai	a0, a0, 21
 	lui	a1, 163
-	addiw	a1, a1, -1005
+	addi	a1, a1, -1005
 	mul	a0, a0, a1
 	ret
 

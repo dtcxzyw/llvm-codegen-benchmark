@@ -3,10 +3,10 @@ func0000000000000006:
 	slti	a2, a2, -1024
 	lui	a3, 1048332
 	czero.nez	a1, a1, a2
-	addiw	a3, a3, -576
+	addi	a3, a3, -576
 	czero.eqz	a2, a3, a2
 	lui	a3, 1047599
-	addiw	a3, a3, 1792
+	addi	a3, a3, 1792
 	or	a1, a1, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0

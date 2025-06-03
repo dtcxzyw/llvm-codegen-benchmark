@@ -34,10 +34,10 @@ func0000000000000010:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 257
-	addiw	a0, a0, 144
+	addi	a0, a0, 144
 	ret
 .LBB2_2:
 	lui	a0, 308
-	addiw	a0, a0, 348
+	addi	a0, a0, 348
 	ret
 

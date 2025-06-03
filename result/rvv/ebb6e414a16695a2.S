@@ -7,7 +7,7 @@ func0000000000000aa1:
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vadd.vv	v10, v10, v10
 	lui	a1, 36158
-	addiw	a1, a1, -848
+	addi	a1, a1, -848
 	vmacc.vx	v10, a0, v12
 	slli	a0, a1, 28
 	vadd.vv	v8, v10, v8

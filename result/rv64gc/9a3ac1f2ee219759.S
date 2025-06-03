@@ -36,7 +36,7 @@ func000000000000001b:
 
 func0000000000000003:
 	lui	a3, 1
-	addiw	a3, a3, 904
+	addi	a3, a3, 904
 	sub	a2, a3, a2
 	bltu	a2, a1, .LBB4_2
 	mv	a2, a1

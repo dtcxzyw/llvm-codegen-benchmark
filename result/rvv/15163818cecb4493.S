@@ -11,7 +11,7 @@ func00000000000000a8:
 	vsra.vi	v8, v8, 2
 	vmv.v.i	v10, -1
 	lui	a0, 838861
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -127

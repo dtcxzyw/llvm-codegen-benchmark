@@ -3,7 +3,7 @@ func0000000000000000:
 	lui	a3, 1047552
 	and	a1, a1, a3
 	lui	a3, 512
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048064
 	and	a2, a2, a3

@@ -8,7 +8,7 @@ func0000000000000067:
 func000000000000000c:
 	sext.w	a1, a1
 	lui	a2, 32885
-	addiw	a2, a2, -1200
+	addi	a2, a2, -1200
 	beq	a1, a2, .LBB1_2
 	li	a1, 12
 	add	a0, a0, a1

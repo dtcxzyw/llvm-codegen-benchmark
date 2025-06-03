@@ -24,7 +24,7 @@ func0000000000000002:
 
 func000000000000000d:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sll	a2, a3, a2
 	not	a2, a2
 	or	a0, a0, a1
@@ -33,7 +33,7 @@ func000000000000000d:
 
 func0000000000000008:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sll	a2, a3, a2
 	not	a2, a2
 	or	a0, a0, a1

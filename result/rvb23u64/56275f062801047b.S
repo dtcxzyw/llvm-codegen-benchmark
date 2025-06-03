@@ -1,8 +1,7 @@
 func000000000000001f:
 	slli	a0, a0, 2
-	li	a1, 1
+	bseti	a1, zero, 34
 	addi	a0, a0, 7
-	slli	a1, a1, 34
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret

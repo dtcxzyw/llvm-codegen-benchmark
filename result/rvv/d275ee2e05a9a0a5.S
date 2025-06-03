@@ -35,7 +35,7 @@ func0000000000000005:
 	li	a0, 32
 	vwsll.vx	v8, v10, a0
 	lui	a0, 4013
-	addiw	a0, a0, -1535
+	addi	a0, a0, -1535
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v8, v8, a0
 	ret

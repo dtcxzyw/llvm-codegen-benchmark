@@ -17,7 +17,7 @@ func0000000000000003:
 	mulhu	a0, a0, a1
 	lui	a1, 16
 	srli	a0, a0, 47
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sub	a0, a1, a0
 	ret
 

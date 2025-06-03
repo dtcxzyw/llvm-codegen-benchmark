@@ -8,7 +8,7 @@ func0000000000000000:
 
 func0000000000000001:
 	lui	a1, 5
-	addiw	a2, a1, 223
+	addi	a2, a1, 223
 	and	a1, a1, a0
 	and	a0, a0, a2
 	srli	a1, a1, 8

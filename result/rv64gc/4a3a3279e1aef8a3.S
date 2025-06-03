@@ -44,7 +44,7 @@ func0000000000000081:
 	sext.w	a2, a2
 	lui	a3, 4096
 	sltiu	a2, a2, 9
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	not	a2, a2
 	xor	a0, a0, a3
 	seqz	a0, a0

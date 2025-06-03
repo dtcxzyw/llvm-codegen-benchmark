@@ -45,7 +45,7 @@ func00000000000002a1:
 func0000000000000066:
 	sext.w	a1, a1
 	lui	a2, 128
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	xor	a1, a1, a2
 	li	a2, 64
 	not	a0, a0

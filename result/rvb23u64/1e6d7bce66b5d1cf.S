@@ -26,7 +26,7 @@ func0000000000000318:
 func0000000000000330:
 	lui	a3, 16
 	srli	a1, a1, 19
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	snez	a1, a1
 	and	a2, a2, a3
 	snez	a2, a2
@@ -37,7 +37,7 @@ func0000000000000330:
 func0000000000000070:
 	lui	a3, 16
 	srli	a1, a1, 19
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	snez	a1, a1
 	and	a2, a2, a3
 	addi	a2, a2, -2

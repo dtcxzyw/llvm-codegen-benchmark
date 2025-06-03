@@ -37,7 +37,7 @@ func000000000000018c:
 	vmv.v.x	v8, a0
 	lui	a0, 8192
 	vmand.mm	v0, v10, v12
-	addiw	a0, a0, 20
+	addi	a0, a0, 20
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

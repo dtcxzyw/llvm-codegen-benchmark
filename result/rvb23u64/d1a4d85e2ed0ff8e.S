@@ -70,8 +70,7 @@ func0000000000000009:
 	ret
 
 func000000000000000b:
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -32
 	sh1add	a0, a0, a1
 	ret

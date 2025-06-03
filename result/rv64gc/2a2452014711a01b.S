@@ -4,7 +4,7 @@ func0000000000000620:
 	lui	a3, 1
 	srli	a1, a1, 48
 	snez	a2, a2
-	addiw	a3, a3, 8
+	addi	a3, a3, 8
 	sltu	a1, a3, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

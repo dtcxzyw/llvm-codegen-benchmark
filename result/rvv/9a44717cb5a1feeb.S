@@ -116,7 +116,7 @@ func0000000000000044:
 	vand.vi	v10, v10, -4
 	lui	a0, 16
 	vsub.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

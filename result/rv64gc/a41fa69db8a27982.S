@@ -16,7 +16,7 @@ func000000000000000c:
 	mv	a0, a1
 	ret
 .LBB1_3:
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	beqz	a3, .LBB1_2
 .LBB1_4:
 	ret

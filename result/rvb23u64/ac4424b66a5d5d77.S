@@ -46,7 +46,7 @@ func00000000000000ec:
 	add	a1, a1, a2
 	lui	a2, 2
 	add	a0, a0, a1
-	addiw	a1, a2, 277
+	addi	a1, a2, 277
 	add	a0, a0, a1
 	ret
 
@@ -56,7 +56,7 @@ func00000000000000f0:
 	lui	a2, 3
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	addiw	a1, a2, -334
+	addi	a1, a2, -334
 	add	a0, a0, a1
 	ret
 

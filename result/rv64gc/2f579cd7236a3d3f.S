@@ -76,7 +76,7 @@ func000000000000008c:
 	sext.w	a2, a2
 	lui	a3, 3
 	srliw	a0, a0, 4
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a1, a1, a2

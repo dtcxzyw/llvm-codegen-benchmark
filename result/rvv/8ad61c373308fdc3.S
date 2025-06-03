@@ -27,7 +27,7 @@ func0000000000000008:
 	vmulhu.vx	v8, v8, a0
 	lui	a0, 148
 	vsrl.vi	v8, v8, 11
-	addiw	a0, a0, -1408
+	addi	a0, a0, -1408
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

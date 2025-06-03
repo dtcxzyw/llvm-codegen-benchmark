@@ -3,7 +3,7 @@ func00000000000000c4:
 	slti	a2, a2, 6
 	and	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

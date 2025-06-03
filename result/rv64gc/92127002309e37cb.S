@@ -77,7 +77,7 @@ func0000000000000066:
 	mv	a1, a0
 .LBB9_2:
 	lui	a0, 488
-	addiw	a0, a0, 1152
+	addi	a0, a0, 1152
 	slt	a0, a1, a0
 	ret
 

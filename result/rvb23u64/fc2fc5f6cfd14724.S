@@ -130,7 +130,7 @@ func0000000000000081:
 	lui	a1, 283893
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -1723
+	addi	a1, a1, -1723
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -182,7 +182,7 @@ func0000000000000198:
 	lui	a1, 1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -24
+	addi	a1, a1, -24
 	sltu	a0, a1, a0
 	ret
 

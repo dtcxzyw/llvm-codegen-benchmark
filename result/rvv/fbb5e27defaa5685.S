@@ -63,7 +63,7 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 10
-	addiw	a0, a0, -961
+	addi	a0, a0, -961
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret

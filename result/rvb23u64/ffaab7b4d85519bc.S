@@ -16,7 +16,7 @@ func0000000000000001:
 	lui	a3, 786432
 	czero.nez	a1, a3, a1
 	lui	a3, 262144
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	or	a1, a1, a2
 	xor	a0, a0, a3
 	seqz	a0, a0
@@ -54,7 +54,7 @@ func0000000000000041:
 	lui	a3, 128
 	czero.nez	a1, a3, a1
 	lui	a3, 16
-	addiw	a3, a3, -14
+	addi	a3, a3, -14
 	or	a1, a1, a2
 	xor	a0, a0, a3
 	seqz	a0, a0

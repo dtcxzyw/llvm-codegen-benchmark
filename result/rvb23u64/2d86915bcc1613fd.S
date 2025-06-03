@@ -5,7 +5,7 @@ func0000000000000061:
 	mul	a0, a0, a1
 	lui	a1, 104858
 	roriw	a0, a0, 1
-	addiw	a1, a1, -1638
+	addi	a1, a1, -1638
 	sltu	a0, a0, a1
 	ret
 
@@ -15,7 +15,7 @@ func0000000000000001:
 	addi	a1, a1, -257
 	mulw	a0, a0, a1
 	lui	a1, 4112
-	addiw	a1, a1, 258
+	addi	a1, a1, 258
 	sltu	a0, a0, a1
 	ret
 
@@ -26,7 +26,7 @@ func000000000000000c:
 	mul	a0, a0, a1
 	lui	a1, 104858
 	roriw	a0, a0, 1
-	addiw	a1, a1, -1639
+	addi	a1, a1, -1639
 	sltu	a0, a1, a0
 	ret
 
@@ -36,7 +36,7 @@ func000000000000006c:
 	addi	a1, a1, -1365
 	mulw	a0, a0, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	sltu	a0, a1, a0
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000021:
 	mul	a0, a0, a1
 	lui	a1, 174763
 	roriw	a0, a0, 1
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	sltu	a0, a0, a1
 	ret
 
@@ -57,7 +57,7 @@ func0000000000000041:
 	addi	a1, a1, -1365
 	mulw	a0, a0, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	sltu	a0, a0, a1
 	ret
 

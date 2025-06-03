@@ -32,7 +32,7 @@ func0000000000000009:
 	mulhu	a0, a0, a1
 	lui	a1, 1048400
 	srli	a0, a0, 34
-	addiw	a1, a1, 1427
+	addi	a1, a1, 1427
 	add	a0, a0, a1
 	ret
 
@@ -75,7 +75,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 5369
 	srliw	a0, a0, 7
-	addiw	a1, a1, -1191
+	addi	a1, a1, -1191
 	mul	a0, a0, a1
 	srli	a0, a0, 36
 	addi	a0, a0, -1

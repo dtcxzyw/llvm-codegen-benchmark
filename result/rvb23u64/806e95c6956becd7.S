@@ -27,7 +27,7 @@ func0000000000000050:
 	andi	a0, a0, -2032
 	lui	a1, 1
 	sext.w	a0, a0
-	addiw	a1, a1, -2032
+	addi	a1, a1, -2032
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -35,12 +35,12 @@ func0000000000000050:
 func0000000000000848:
 	lui	a1, 16
 	lui	a2, 1048574
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	addi	a2, a2, -42
 	and	a1, a1, a0
 	addw	a0, a0, a2
 	lui	a2, 2
-	addiw	a2, a2, 96
+	addi	a2, a2, 96
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 5
@@ -50,7 +50,7 @@ func0000000000000848:
 func0000000000000048:
 	lui	a1, 16
 	lui	a2, 1048304
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	addw	a2, a2, a0
 	and	a0, a0, a1
 	xor	a0, a0, a1
@@ -74,7 +74,7 @@ func0000000000000b10:
 	snez	a1, a1
 	addi	a3, a2, -61
 	addw	a0, a0, a3
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

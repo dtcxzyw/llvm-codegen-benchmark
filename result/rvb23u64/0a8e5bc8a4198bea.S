@@ -39,7 +39,7 @@ func00000000000001c1:
 func0000000000000181:
 	sh3add	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, 240
+	addi	a2, a2, 240
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -48,7 +48,7 @@ func0000000000000181:
 func0000000000000184:
 	sh2add	a1, a1, a2
 	lui	a2, 12
-	addiw	a2, a2, 672
+	addi	a2, a2, 672
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

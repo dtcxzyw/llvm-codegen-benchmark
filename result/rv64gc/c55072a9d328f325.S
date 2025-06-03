@@ -10,14 +10,14 @@ func0000000000000005:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	lui	a2, 319552
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	zext.b	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 .LBB1_2:
 	lui	a2, 385088
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	zext.b	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2

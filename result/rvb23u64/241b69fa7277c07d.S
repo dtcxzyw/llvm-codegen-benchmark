@@ -33,11 +33,10 @@ func0000000000000015:
 
 func0000000000000000:
 	lui	a2, 240
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a3, a2, 32
 	add	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 56
+	bseti	a3, zero, 56
 	and	a1, a1, a2
 	addi	a3, a3, -10
 	mul	a1, a1, a3

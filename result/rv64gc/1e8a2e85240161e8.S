@@ -3,7 +3,7 @@ func0000000000000001:
 	lui	a1, 559241
 	lui	a2, 43691
 	addi	a1, a1, -1911
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 37

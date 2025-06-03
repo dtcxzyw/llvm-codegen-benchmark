@@ -1,7 +1,6 @@
 func00000000000000ff:
 	addi	a2, a2, 7
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a1

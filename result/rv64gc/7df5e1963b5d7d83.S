@@ -12,7 +12,7 @@ func0000000000000062:
 	snez	a1, a1
 	or	a0, a0, a1
 	lui	a1, 921600
-	addiw	a1, a1, -1026
+	addi	a1, a1, -1026
 	or	a0, a0, a1
 	ret
 

@@ -32,7 +32,7 @@ func0000000000000005:
 func0000000000000007:
 	sext.w	a1, a1
 	lui	a2, 208
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	xor	a1, a1, a2
 	li	a2, -20
 	czero.nez	a1, a2, a1

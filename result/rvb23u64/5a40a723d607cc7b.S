@@ -29,17 +29,16 @@ func000000000000003d:
 	slli	a0, a0, 1
 	lui	a1, 16
 	addi	a0, a0, 126
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	and	a0, a0, a1
 	addi	a0, a0, -1
 	ret
 
 func000000000000000d:
 	lui	a1, 1
-	addiw	a1, a1, -34
+	addi	a1, a1, -34
 	sh1add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -16
 	and	a0, a0, a1
 	addi	a0, a0, -1

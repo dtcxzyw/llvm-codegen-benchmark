@@ -281,7 +281,7 @@ func0000000000000304:
 	sltiu	a1, a1, 4
 	lui	a2, 15
 	xori	a1, a1, 1
-	addiw	a2, a2, 2047
+	addi	a2, a2, 2047
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -289,7 +289,7 @@ func0000000000000304:
 func0000000000000106:
 	sext.w	a0, a0
 	lui	a2, 351844
-	addiw	a2, a2, -1143
+	addi	a2, a2, -1143
 	slli	a2, a2, 12
 	addi	a2, a2, -989
 	slli	a2, a2, 3

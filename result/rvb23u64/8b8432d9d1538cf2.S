@@ -89,7 +89,7 @@ func0000000000000030:
 func000000000000002b:
 	sext.w	a1, a1
 	lui	a2, 2
-	addiw	a2, a2, 1807
+	addi	a2, a2, 1807
 	slt	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 4
@@ -148,7 +148,7 @@ func0000000000000020:
 	sext.w	a1, a1
 	lui	a2, 36
 	sltiu	a1, a1, 7
-	addiw	a2, a2, 1728
+	addi	a2, a2, 1728
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 128

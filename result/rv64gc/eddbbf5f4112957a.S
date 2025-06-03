@@ -45,7 +45,7 @@ func0000000000000008:
 	sub	a1, a1, a2
 	lui	a2, 244
 	add	a0, a0, a1
-	addiw	a1, a2, 575
+	addi	a1, a2, 575
 	sltu	a0, a1, a0
 	ret
 
@@ -109,7 +109,7 @@ func0000000000000084:
 	sub	a1, a1, a2
 	lui	a2, 1
 	add	a0, a0, a1
-	addiw	a1, a2, 905
+	addi	a1, a2, 905
 	sltu	a0, a0, a1
 	ret
 
@@ -150,7 +150,7 @@ func00000000000001f8:
 	sub	a1, a1, a2
 	lui	a2, 32
 	add	a0, a0, a1
-	addiw	a2, a2, -31
+	addi	a2, a2, -31
 	sltu	a0, a2, a0
 	ret
 

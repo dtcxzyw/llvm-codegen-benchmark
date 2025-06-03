@@ -9,7 +9,7 @@ func0000000000000008:
 
 func000000000000000f:
 	lui	a0, 423516
-	addiw	a0, a0, 1939
+	addi	a0, a0, 1939
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmul.vx	v8, v8, a0
 	bseti	a0, zero, 32

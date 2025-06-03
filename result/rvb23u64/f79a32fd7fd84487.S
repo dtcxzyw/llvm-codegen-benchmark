@@ -207,7 +207,7 @@ func0000000000000024:
 	lui	a2, 419430
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, 1638
+	addi	a1, a2, 1638
 	sltu	a0, a0, a1
 	ret
 

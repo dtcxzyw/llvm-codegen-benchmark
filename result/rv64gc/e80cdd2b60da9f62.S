@@ -29,7 +29,7 @@ func0000000000000061:
 	zext.b	a0, a0
 	beqz	a0, .LBB3_2
 	lui	a0, 1
-	addiw	a0, a0, 220
+	addi	a0, a0, 220
 	add	a0, a0, a2
 	ret
 .LBB3_2:

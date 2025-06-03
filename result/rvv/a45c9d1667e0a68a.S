@@ -29,7 +29,7 @@ func0000000000000084:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
 

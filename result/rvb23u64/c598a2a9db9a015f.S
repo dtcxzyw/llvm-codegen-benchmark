@@ -3,7 +3,7 @@ func00000000000000b7:
 	sraiw	a0, a0, 16
 	subw	a0, a0, a1
 	lui	a1, 1048568
-	addiw	a1, a1, 150
+	addi	a1, a1, 150
 	add	a0, a0, a1
 	ret
 

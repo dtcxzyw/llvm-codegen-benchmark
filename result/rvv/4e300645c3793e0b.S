@@ -1,6 +1,6 @@
 func0000000000000004:
 	lui	a0, 1
-	addiw	a0, a0, -1952
+	addi	a0, a0, -1952
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 96

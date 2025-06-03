@@ -35,7 +35,7 @@ func00000000000001c0:
 	lui	a0, 65
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -79,7 +79,7 @@ func00000000000000e0:
 	lui	a0, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 448
+	addi	a0, a0, 448
 	vadd.vx	v8, v8, a0
 	ret
 

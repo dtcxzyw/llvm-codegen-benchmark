@@ -12,12 +12,12 @@ func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a2, .LBB1_2
 	lui	a2, 262168
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	beqz	a0, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	lui	a2, 262144
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	bnez	a0, .LBB1_4
 .LBB1_3:
 	mv	a1, a2

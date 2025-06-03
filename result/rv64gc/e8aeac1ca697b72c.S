@@ -15,7 +15,7 @@ func0000000000000011:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	lui	a2, 749608
-	addiw	a2, a2, 1993
+	addi	a2, a2, 1993
 	mul	a0, a0, a2
 	sraiw	a1, a1, 1
 	srli	a2, a0, 63

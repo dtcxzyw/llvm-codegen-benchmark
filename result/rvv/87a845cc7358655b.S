@@ -14,7 +14,7 @@ func00000000000001e1:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 19
 	lui	a0, 128
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v12

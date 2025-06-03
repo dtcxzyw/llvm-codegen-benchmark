@@ -53,7 +53,7 @@ func0000000000000114:
 	li	a3, 10
 	lui	a1, 1
 	bgeu	a3, a2, .LBB4_2
-	addiw	a1, a1, 224
+	addi	a1, a1, 224
 .LBB4_2:
 	sltu	a0, a1, a0
 	ret

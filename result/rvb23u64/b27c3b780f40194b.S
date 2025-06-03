@@ -3,10 +3,10 @@ func0000000000000001:
 	lui	a3, 1048568
 	czero.nez	a2, a3, a2
 	lui	a3, 13
-	addiw	a3, a3, 5
+	addi	a3, a3, 5
 	add	a2, a2, a3
 	lui	a3, 1
-	addiw	a3, a3, -2024
+	addi	a3, a3, -2024
 	and	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000000:
 	lui	a3, 131072
 	czero.nez	a2, a3, a2
 	lui	a3, 655352
-	addiw	a3, a3, -253
+	addi	a3, a3, -253
 	or	a2, a2, a3
 	lui	a3, 524288
 	addiw	a3, a3, -1021

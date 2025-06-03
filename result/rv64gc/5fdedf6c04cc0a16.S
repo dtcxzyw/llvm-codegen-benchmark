@@ -3,7 +3,7 @@ func0000000000000035:
 	lui	a3, 335544
 	add	a0, a0, a1
 	lui	a1, 1048570
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	addi	a1, a1, -974
 	mul	a2, a2, a3
 	srli	a3, a2, 63
@@ -26,7 +26,7 @@ func0000000000000000:
 func0000000000000015:
 	sext.w	a2, a2
 	lui	a3, 419430
-	addiw	a3, a3, 1639
+	addi	a3, a3, 1639
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 33

@@ -24,7 +24,7 @@ func0000000000000001:
 	vadd.vv	v10, v8, v10
 	lui	a0, 2575
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vadd.vx	v8, v8, a0
 	ret

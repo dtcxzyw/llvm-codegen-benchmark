@@ -11,7 +11,7 @@ func000000000000028f:
 	sext.w	a2, a2
 	lui	a3, 24
 	andi	a1, a1, 1
-	addiw	a3, a3, 1695
+	addi	a3, a3, 1695
 	slt	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

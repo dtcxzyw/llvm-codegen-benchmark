@@ -65,7 +65,7 @@ func0000000000000011:
 
 func0000000000000013:
 	lui	a2, 16
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bgeu	a1, a2, .LBB8_2
 	li	a0, 16
 	ret

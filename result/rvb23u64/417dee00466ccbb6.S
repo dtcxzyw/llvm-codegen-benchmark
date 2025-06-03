@@ -1,6 +1,6 @@
 func0000000000000020:
 	lui	a3, 1048571
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	add	a2, a2, a4
 	lui	a4, 10
 	sltu	a2, a2, a3

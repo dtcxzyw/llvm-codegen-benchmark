@@ -31,7 +31,7 @@ func0000000000000004:
 func0000000000000028:
 	add	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addi	a1, a1, -1537
 	sltu	a0, a1, a0
 	li	a1, -9
 	czero.nez	a0, a1, a0

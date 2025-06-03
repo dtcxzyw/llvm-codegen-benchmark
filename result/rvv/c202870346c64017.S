@@ -4,7 +4,7 @@ func0000000000000000:
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
 	lui	a0, 24414
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vmadd.vx	v8, a0, v10
 	ret
 

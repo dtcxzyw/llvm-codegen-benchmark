@@ -3,7 +3,7 @@ func0000000000000181:
 	slli	a2, a2, 3
 	add	a0, a0, a2
 	lui	a2, 4
-	addiw	a2, a2, 272
+	addi	a2, a2, 272
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -69,7 +69,7 @@ func00000000000001e8:
 	andi	a2, a2, 1016
 	add	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

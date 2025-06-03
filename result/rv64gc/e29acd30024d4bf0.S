@@ -14,7 +14,7 @@ func0000000000000002:
 	lui	a3, 2
 	xor	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	snez	a1, a1
 	addi	a1, a1, -1
 	and	a2, a2, a3

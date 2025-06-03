@@ -26,7 +26,7 @@ func0000000000000006:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10

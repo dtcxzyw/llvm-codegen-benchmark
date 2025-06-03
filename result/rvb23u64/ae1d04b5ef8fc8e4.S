@@ -50,7 +50,7 @@ func000000000000002a:
 func0000000000000066:
 	addw	a1, a1, a2
 	lui	a2, 24
-	addiw	a2, a2, 1697
+	addi	a2, a2, 1697
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

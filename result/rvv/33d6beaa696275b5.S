@@ -10,7 +10,7 @@ func0000000000000055:
 
 func0000000000000075:
 	lui	a0, 36
-	addiw	a0, a0, -1359
+	addi	a0, a0, -1359
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10
 	vsetvli	zero, zero, e64, m2, ta, ma

@@ -18,7 +18,7 @@ func000000000000000c:
 	andi	a1, a0, 64
 	lui	a0, 64
 	beqz	a1, .LBB2_2
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 .LBB2_2:
 	ret
 

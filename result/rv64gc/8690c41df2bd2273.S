@@ -87,7 +87,7 @@ func0000000000000d0b:
 	addi	a2, a2, 1
 	slt	a0, a2, a0
 	lui	a2, 39
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	xori	a0, a0, 1
 	sltu	a1, a2, a1
 	or	a0, a0, a1

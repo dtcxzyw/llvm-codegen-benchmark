@@ -77,7 +77,7 @@ func00000000000000f4:
 	lui	a0, 244141
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -87,7 +87,7 @@ func00000000000000d4:
 	lui	a0, 244141
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vmsltu.vx	v0, v8, a0
 	ret
 

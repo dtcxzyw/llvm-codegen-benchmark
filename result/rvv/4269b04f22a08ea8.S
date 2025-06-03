@@ -50,13 +50,13 @@ func0000000000000008:
 	vsll.vi	v10, v10, 30
 	lui	a0, 45426
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, 383
+	addi	a0, a0, 383
 	vmul.vx	v8, v8, a0
 	ret
 
 func0000000000000010:
 	lui	a0, 123738
-	addiw	a0, a0, 1981
+	addi	a0, a0, 1981
 	slli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
@@ -67,7 +67,7 @@ func000000000000001e:
 	vsll.vi	v10, v10, 8
 	lui	a0, 16
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	bseti	a0, a0, 32
 	bseti	a0, a0, 48
 	vmul.vx	v8, v8, a0

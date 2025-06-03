@@ -19,7 +19,7 @@ func000000000000001e:
 	li	a3, 2
 	beq	a2, a3, .LBB1_2
 	lui	a2, 1
-	addiw	a2, a2, -1392
+	addi	a2, a2, -1392
 	add	a1, a1, a2
 	slli	a2, a0, 3
 	slli	a0, a0, 7

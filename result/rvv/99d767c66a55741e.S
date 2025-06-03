@@ -70,7 +70,7 @@ func0000000000000004:
 
 func0000000000000184:
 	lui	a0, 64
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
 	vadd.vi	v8, v8, -1

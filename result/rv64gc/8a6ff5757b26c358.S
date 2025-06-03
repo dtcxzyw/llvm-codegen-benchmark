@@ -64,7 +64,7 @@ func0000000000000061:
 func0000000000000050:
 	sext.w	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, -1261
+	addi	a3, a3, -1261
 	sltu	a2, a2, a3
 	negw	a2, a2
 	and	a1, a1, a2

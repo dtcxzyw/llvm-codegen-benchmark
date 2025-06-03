@@ -2,7 +2,7 @@ func000000000000001f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v14, v8
 	lui	a0, 917506
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 19
 	addi	a0, a0, 7
 	vand.vx	v8, v12, a0

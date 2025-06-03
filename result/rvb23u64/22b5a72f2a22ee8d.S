@@ -40,7 +40,7 @@ func0000000000000004:
 	andi	a1, a1, -8
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -64,7 +64,7 @@ func000000000000000a:
 	andi	a1, a1, -4
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
@@ -81,7 +81,7 @@ func000000000000002a:
 	andi	a1, a1, -16
 	addw	a0, a0, a1
 	lui	a1, 23
-	addiw	a1, a1, 1792
+	addi	a1, a1, 1792
 	slt	a0, a1, a0
 	ret
 
@@ -92,7 +92,7 @@ func00000000000001aa:
 	and	a1, a1, a2
 	lui	a2, 23
 	addw	a0, a0, a1
-	addiw	a1, a2, 1792
+	addi	a1, a2, 1792
 	slt	a0, a1, a0
 	ret
 
@@ -111,7 +111,7 @@ func0000000000000186:
 	and	a1, a1, a2
 	lui	a2, 2
 	addw	a0, a0, a1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slt	a0, a0, a2
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000210:
 	lui	a0, 44
-	addiw	a0, a0, -1616
+	addi	a0, a0, -1616
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	li	a0, 32
@@ -15,7 +15,7 @@ func0000000000000208:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 1048547
-	addiw	a0, a0, -288
+	addi	a0, a0, -288
 	vmseq.vx	v12, v10, a0
 	li	a0, 32
 	vmor.mm	v10, v12, v0
@@ -25,11 +25,11 @@ func0000000000000208:
 
 func0000000000000202:
 	lui	a0, 1048574
-	addiw	a0, a0, 184
+	addi	a0, a0, 184
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 2
-	addiw	a0, a0, -176
+	addi	a0, a0, -176
 	vmsleu.vi	v12, v10, 5
 	vmor.mm	v10, v12, v0
 	vmseq.vx	v11, v8, a0

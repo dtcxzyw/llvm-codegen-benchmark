@@ -63,7 +63,7 @@ func0000000000000064:
 func0000000000000066:
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	max	a1, a1, a2
 	lui	a2, 1048560
 	addi	a2, a2, 1

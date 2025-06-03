@@ -21,7 +21,7 @@ func0000000000000012:
 	lui	a2, 12
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	addiw	a1, a2, 128
+	addi	a1, a2, 128
 	add	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000032:
 	lui	a2, 12
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	addiw	a1, a2, 1920
+	addi	a1, a2, 1920
 	add	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func000000000000001c:
 	lui	a2, 74
 	slli	a1, a1, 3
 	add	a0, a0, a1
-	addiw	a1, a2, -96
+	addi	a1, a2, -96
 	add	a0, a0, a1
 	ret
 

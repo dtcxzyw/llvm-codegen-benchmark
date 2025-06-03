@@ -8,7 +8,7 @@ func0000000000000001:
 func0000000000000021:
 	mv	a2, a0
 	lui	a0, 70179
-	addiw	a0, a0, 839
+	addi	a0, a0, 839
 	bnez	a2, .LBB1_2
 	addw	a0, a0, a1
 .LBB1_2:

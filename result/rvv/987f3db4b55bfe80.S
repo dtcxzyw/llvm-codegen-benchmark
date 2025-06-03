@@ -13,9 +13,9 @@ func0000000000000008:
 	vadd.vi	v8, v8, 15
 	lui	a0, 1
 	vand.vi	v8, v8, -8
-	addiw	a1, a0, 54
+	addi	a1, a0, 54
 	vadd.vx	v8, v8, a1
-	addiw	a0, a0, 86
+	addi	a0, a0, 86
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

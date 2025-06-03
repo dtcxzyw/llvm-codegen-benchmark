@@ -22,7 +22,7 @@ func00000000000000a8:
 	slli	a2, a2, 24
 	or	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srliw	a1, a1, 16
 	sltiu	a1, a1, 17
 	czero.eqz	a0, a0, a1
@@ -34,7 +34,7 @@ func00000000000000e8:
 	slli	a2, a2, 16
 	or	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srliw	a1, a1, 16
 	sltiu	a1, a1, 17
 	czero.eqz	a0, a0, a1
@@ -53,7 +53,7 @@ func000000000000002a:
 	slli	a2, a2, 8
 	lui	a3, 8
 	or	a1, a1, a2
-	addiw	a2, a3, 1131
+	addi	a2, a3, 1131
 	sext.w	a1, a1
 	slt	a1, a2, a1
 	czero.nez	a0, a0, a1

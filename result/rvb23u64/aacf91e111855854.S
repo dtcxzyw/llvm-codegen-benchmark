@@ -42,7 +42,7 @@ func000000000000000a:
 	slli	a1, a1, 1
 	lui	a2, 1048568
 	addiw	a1, a1, -4
-	addiw	a3, a2, 254
+	addi	a3, a2, 254
 	and	a1, a1, a3
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -51,7 +51,7 @@ func000000000000000a:
 func000000000000000b:
 	lui	a2, 1
 	andi	a0, a0, -2048
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	sh1add	a1, a1, a2
 	addiw	a2, a2, 6
 	and	a1, a1, a2

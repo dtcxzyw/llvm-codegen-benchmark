@@ -10,7 +10,7 @@ func0000000000000041:
 	or	a0, a0, a1
 	lui	a1, 1
 	zext.h	a0, a0
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
 
@@ -26,7 +26,7 @@ func00000000000000c1:
 	or	a0, a0, a1
 	lui	a1, 1
 	zext.h	a0, a0
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
 

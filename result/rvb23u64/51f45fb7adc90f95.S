@@ -3,7 +3,7 @@ func0000000000000003:
 	li	a1, -24
 	czero.nez	a0, a1, a0
 	lui	a1, 285
-	addiw	a1, a1, 1440
+	addi	a1, a1, 1440
 	add	a0, a0, a1
 	ret
 

@@ -4,7 +4,7 @@ func000000000000007c:
 	mulw	a2, a2, a3
 	lui	a3, 305
 	add	a0, a0, a1
-	addiw	a1, a3, 976
+	addi	a1, a3, 976
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -16,7 +16,7 @@ func000000000000004c:
 	mulw	a2, a2, a3
 	lui	a3, 320
 	add	a0, a0, a1
-	addiw	a1, a3, -928
+	addi	a1, a3, -928
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -57,7 +57,7 @@ func00000000000001ff:
 	mulw	a2, a2, a3
 	lui	a3, 3
 	add	a0, a0, a1
-	addiw	a1, a3, 1160
+	addi	a1, a3, 1160
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

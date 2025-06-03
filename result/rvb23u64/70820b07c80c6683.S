@@ -15,7 +15,7 @@ func0000000000000003:
 	slli	a1, a0, 4
 	lui	a2, 67109
 	add	a0, a0, a1
-	addiw	a1, a2, -557
+	addi	a1, a2, -557
 	zext.w	a2, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 37

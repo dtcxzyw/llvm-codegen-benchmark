@@ -5,7 +5,7 @@ func000000000000000f:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	srli	a2, a2, 31
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -19,7 +19,7 @@ func000000000000000e:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	srli	a2, a2, 32
 	and	a2, a2, a3
 	or	a0, a0, a1

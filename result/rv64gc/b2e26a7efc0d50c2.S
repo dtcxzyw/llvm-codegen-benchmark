@@ -15,7 +15,7 @@ func000000000000000c:
 func0000000000000021:
 	or	a1, a1, a2
 	lui	a2, 512
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	and	a1, a1, a2
 	li	a2, 27
 	slli	a2, a2, 11

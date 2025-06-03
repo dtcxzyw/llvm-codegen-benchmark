@@ -2,10 +2,10 @@ func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
 	lui	a0, 5
-	addiw	a0, a0, -2043
+	addi	a0, a0, -2043
 	vmv.v.x	v12, a0
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	vmsltu.vv	v10, v12, v8

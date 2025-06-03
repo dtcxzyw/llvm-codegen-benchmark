@@ -16,7 +16,7 @@ func00000000000001f8:
 	mul	a2, a2, a3
 	lui	a3, 244141
 	addw	a1, a1, a2
-	addiw	a2, a3, -1537
+	addi	a2, a3, -1537
 	bltu	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -37,7 +37,7 @@ func000000000000008a:
 	mul	a2, a2, a3
 	lui	a3, 244
 	addw	a1, a1, a2
-	addiw	a2, a3, 575
+	addi	a2, a3, 575
 	blt	a2, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

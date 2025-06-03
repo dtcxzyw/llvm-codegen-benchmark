@@ -9,7 +9,7 @@ func0000000000000002:
 	vadd.vv	v10, v10, v8
 	vsrl.vx	v12, v10, a0
 	lui	a0, 14648
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	vsrl.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8

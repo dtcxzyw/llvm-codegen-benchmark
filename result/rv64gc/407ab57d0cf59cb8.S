@@ -20,7 +20,7 @@ func0000000000000006:
 	fmv.w.x	fa5, a0
 	fmul.s	fa5, fa0, fa5
 	fcvt.w.s	a0, fa5, rtz
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a0, a1
 	ret
 

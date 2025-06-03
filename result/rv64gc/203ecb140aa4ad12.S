@@ -3,7 +3,7 @@ func000000000000004c:
 	andi	a1, a1, -399
 	addw	a0, a0, a1
 	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 39
@@ -17,7 +17,7 @@ func0000000000000054:
 	andi	a1, a1, -360
 	addw	a0, a0, a1
 	lui	a1, 745654
-	addiw	a1, a1, 183
+	addi	a1, a1, 183
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

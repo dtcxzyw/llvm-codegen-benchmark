@@ -3,10 +3,10 @@ func0000000000000070:
 	li	a4, 105
 	lui	a2, 1
 	beq	a3, a4, .LBB0_2
-	addiw	a2, a2, 936
+	addi	a2, a2, 936
 	j	.LBB0_3
 .LBB0_2:
-	addiw	a2, a2, 336
+	addi	a2, a2, 336
 .LBB0_3:
 	add	a1, a1, a2
 	slli	a2, a0, 3

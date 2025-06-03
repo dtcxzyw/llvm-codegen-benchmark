@@ -10,7 +10,7 @@ func0000000000000054:
 func0000000000000018:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -21,7 +21,7 @@ func000000000000000a:
 	bclri	a1, a1, 29
 	lui	a2, 65536
 	bclri	a1, a1, 30
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a3, a1
 	slt	a2, a2, a3
 	czero.nez	a1, a1, a2

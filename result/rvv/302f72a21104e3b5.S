@@ -3,8 +3,8 @@ func0000000000000000:
 	vand.vi	v8, v8, 1
 	lui	a0, 1
 	vmsne.vi	v8, v8, 0
-	addiw	a1, a0, -368
-	addiw	a0, a0, -400
+	addi	a1, a0, -368
+	addi	a0, a0, -400
 	vmor.mm	v0, v0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1

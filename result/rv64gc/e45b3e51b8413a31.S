@@ -6,13 +6,13 @@ func0000000000000001:
 	ret
 .LBB0_2:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a0, a0, a1
 	ret
 
 func000000000000002a:
 	lui	a1, 274878
-	addiw	a1, a1, -381
+	addi	a1, a1, -381
 	slli	a1, a1, 13
 	addi	a1, a1, -1290
 	bge	a1, a0, .LBB1_2
@@ -21,25 +21,25 @@ func000000000000002a:
 	ret
 .LBB1_2:
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 
 func0000000000000068:
 	lui	a1, 5960
-	addiw	a1, a1, 1903
+	addi	a1, a1, 1903
 	slli	a1, a1, 12
 	addi	a1, a1, -1049
 	bgeu	a1, a0, .LBB2_2
 	lui	a0, 45475
-	addiw	a0, a0, -1085
+	addi	a0, a0, -1085
 	slli	a0, a0, 12
 	addi	a0, a0, -315
 	slli	a0, a0, 17
 	ret
 .LBB2_2:
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 
@@ -70,7 +70,7 @@ func0000000000000008:
 	li	a1, 44
 	lui	a2, 95325
 	mul	a1, a0, a1
-	addiw	a2, a2, 372
+	addi	a2, a2, 372
 	slli	a3, a2, 30
 	add	a2, a2, a3
 	sltu	a0, a2, a0
@@ -88,7 +88,7 @@ func000000000000000a:
 	ret
 .LBB6_2:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a0, a0, a1
 	ret
 

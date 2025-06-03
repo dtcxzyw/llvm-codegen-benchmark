@@ -10,7 +10,7 @@ func000000000000008c:
 
 func0000000000000181:
 	lui	a2, 16
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a2, a2, a1
 	sext.w	a1, a1
 	addi	a1, a1, -2
@@ -41,7 +41,7 @@ func0000000000000081:
 
 func000000000000018c:
 	lui	a2, 16
-	addiw	a2, a2, -257
+	addi	a2, a2, -257
 	and	a2, a2, a1
 	sext.w	a1, a1
 	addi	a1, a1, -273

@@ -34,7 +34,7 @@ func000000000000008f:
 	czero.nez	a1, a1, a2
 	lui	a2, 7
 	sh1add.uw	a0, a1, a0
-	addiw	a1, a2, -740
+	addi	a1, a2, -740
 	add	a0, a0, a1
 	ret
 

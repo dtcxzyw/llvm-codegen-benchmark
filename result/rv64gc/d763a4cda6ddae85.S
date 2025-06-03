@@ -2,7 +2,7 @@ func00000000000000fc:
 	slliw	a1, a1, 1
 	lui	a2, 2
 	slli	a1, a1, 2
-	addiw	a2, a2, 1292
+	addi	a2, a2, 1292
 	ori	a1, a1, 1792
 	add	a0, a0, a2
 	add	a0, a0, a1

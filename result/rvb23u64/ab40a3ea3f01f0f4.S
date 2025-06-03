@@ -20,7 +20,7 @@ func0000000000000084:
 	addiw	a1, a1, -1
 	maxu	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	sltu	a0, a0, a1
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000284:
 	sext.w	a0, a0
 	addiw	a1, a1, -32
 	lui	a2, 4096
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
@@ -46,10 +46,10 @@ func0000000000000184:
 	sext.w	a0, a0
 	addiw	a1, a1, -160
 	lui	a2, 272
-	addiw	a2, a2, -160
+	addi	a2, a2, -160
 	sltu	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1

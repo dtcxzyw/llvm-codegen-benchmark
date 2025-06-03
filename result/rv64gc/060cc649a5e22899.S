@@ -28,7 +28,7 @@ func0000000000000003:
 
 func0000000000000008:
 	lui	a3, 1
-	addiw	a3, a3, -895
+	addi	a3, a3, -895
 	bgeu	a2, a3, .LBB2_3
 	lui	a1, 256
 	bgeu	a0, a1, .LBB2_4

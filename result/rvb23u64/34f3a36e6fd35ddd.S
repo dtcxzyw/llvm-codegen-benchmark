@@ -7,7 +7,7 @@ func0000000000000002:
 func0000000000000000:
 	add.uw	a0, a1, a0
 	lui	a1, 804435
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	maxu	a0, a0, a1
 	ret
 

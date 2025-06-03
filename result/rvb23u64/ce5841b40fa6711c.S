@@ -4,8 +4,8 @@ func000000000000000c:
 	slli.uw	a1, a1, 6
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a3, a3, 52
-	addiw	a1, a1, 508
+	addi	a3, a3, 52
+	addi	a1, a1, 508
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

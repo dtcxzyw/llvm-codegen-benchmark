@@ -34,10 +34,10 @@ func0000000000000006:
 	slli	a2, a2, 48
 	lui	a3, 1
 	srli	a2, a2, 48
-	addiw	a3, a3, 769
+	addi	a3, a3, 769
 	bne	a2, a3, .LBB3_2
 	lui	a1, 1048575
-	addiw	a1, a1, -757
+	addi	a1, a1, -757
 .LBB3_2:
 	slli	a1, a1, 5
 	add	a0, a0, a1

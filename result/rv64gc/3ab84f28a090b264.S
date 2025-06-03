@@ -26,7 +26,7 @@ func00000000000000d0:
 
 func00000000000000d2:
 	lui	a3, 12
-	addiw	a3, a3, 672
+	addi	a3, a3, 672
 	add	a2, a2, a3
 	sltu	a1, a2, a1
 	xori	a1, a1, 1

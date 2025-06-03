@@ -5,7 +5,7 @@ func000000000000000a:
 	vmv1r.v	v9, v0
 	vsra.vi	v10, v10, 4
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)

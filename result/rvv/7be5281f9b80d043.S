@@ -65,7 +65,7 @@ func000000000000000e:
 	vsll.vx	v10, v10, a0
 	lui	a0, 1
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vor.vx	v8, v8, a0
 	ret
 

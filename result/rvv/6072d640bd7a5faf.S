@@ -3,7 +3,7 @@ func0000000000000014:
 	vsra.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v12
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000010:
 	vsra.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 160
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmacc.vx	v8, a0, v12
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000044:
 	vadd.vv	v8, v8, v10
 	vsra.vx	v10, v12, a0
 	lui	a0, 1033928
-	addiw	a0, a0, -1792
+	addi	a0, a0, -1792
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -31,7 +31,7 @@ func0000000000000004:
 	vsra.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v12
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000054:
 	vadd.vv	v8, v8, v10
 	vsra.vx	v10, v12, a0
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vmacc.vx	v8, a0, v10
 	ret
 

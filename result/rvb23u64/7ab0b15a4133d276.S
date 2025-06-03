@@ -18,7 +18,7 @@ func0000000000000005:
 func0000000000000029:
 	sext.w	a3, a2
 	lui	a4, 65536
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	slt	a3, a4, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

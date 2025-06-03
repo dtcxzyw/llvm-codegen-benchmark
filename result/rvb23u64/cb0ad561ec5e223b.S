@@ -138,7 +138,7 @@ func0000000000000184:
 func00000000000001e9:
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

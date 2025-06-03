@@ -7,7 +7,7 @@ func0000000000000004:
 	czero.eqz	a0, a3, a0
 	or	a0, a0, a1
 	zext.w	a0, a0
-	addiw	a1, a2, -557
+	addi	a1, a2, -557
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret

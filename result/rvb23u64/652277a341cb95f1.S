@@ -5,7 +5,7 @@ func00000000000001e1:
 	lui	a2, 14
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	addiw	a1, a2, -1024
+	addi	a1, a2, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -68,7 +68,7 @@ func00000000000000c1:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, 109
+	addi	a1, a1, 109
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

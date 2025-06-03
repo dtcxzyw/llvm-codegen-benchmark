@@ -13,7 +13,7 @@ func0000000000000018:
 	lui	a2, 1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 9
 	andi	a1, a1, -8

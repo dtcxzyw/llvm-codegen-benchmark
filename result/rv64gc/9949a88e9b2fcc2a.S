@@ -22,7 +22,7 @@ func0000000000000008:
 func0000000000000006:
 	bge	a1, a2, .LBB3_2
 	lui	a0, 274878
-	addiw	a0, a0, -381
+	addi	a0, a0, -381
 	slli	a0, a0, 13
 	addi	a0, a0, -1290
 .LBB3_2:

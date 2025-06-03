@@ -8,7 +8,7 @@ func0000000000000030:
 	lui	a3, 148
 	srli	a1, a1, 17
 	add	a1, a1, a2
-	addiw	a2, a3, -1408
+	addi	a2, a3, -1408
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -8,7 +8,7 @@ func000000000000004c:
 func0000000000000118:
 	lui	a2, 524288
 	addi	a3, a2, -1
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -91,8 +91,8 @@ func000000000000010c:
 	lui	a2, 786432
 	lui	a3, 524288
 	add	a1, a1, a2
-	addiw	a3, a3, 1
-	addiw	a2, a2, 1
+	addi	a3, a3, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a3
 	slt	a0, a0, a2
 	or	a0, a0, a1
@@ -153,7 +153,7 @@ func0000000000000308:
 	addi	a1, a1, -2048
 	lui	a2, 1048574
 	addi	a1, a1, -2041
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -177,7 +177,7 @@ func0000000000000918:
 
 func0000000000000208:
 	lui	a2, 1048568
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	lui	a3, 1
 	sltu	a1, a1, a2
@@ -203,7 +203,7 @@ func00000000000001b0:
 func0000000000000130:
 	lui	a2, 524288
 	sltiu	a0, a0, 254
-	addiw	a3, a2, 64
+	addi	a3, a2, 64
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	xori	a0, a0, 1

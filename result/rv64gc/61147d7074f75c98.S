@@ -49,12 +49,12 @@ func0000000000000004:
 func000000000000000a:
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	sext.w	a0, a0
 	bltu	a1, a3, .LBB3_2
 	mv	a1, a3
 .LBB3_2:
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slt	a0, a2, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1

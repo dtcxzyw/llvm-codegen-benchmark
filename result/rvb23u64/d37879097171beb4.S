@@ -5,7 +5,7 @@ func0000000000000002:
 	add	a2, a2, a3
 	lui	a3, 596523
 	czero.nez	a1, a1, a0
-	addiw	a3, a3, 965
+	addi	a3, a3, 965
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	sext.w	a1, a0
@@ -23,7 +23,7 @@ func0000000000000000:
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	lui	a2, 174763
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	or	a0, a0, a1
 	sext.w	a0, a0
 	mul	a0, a0, a2

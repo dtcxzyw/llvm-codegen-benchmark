@@ -11,7 +11,7 @@ func0000000000000063:
 	slli.uw	a1, a1, 17
 	lui	a2, 521
 	add	a0, a0, a1
-	addiw	a1, a2, -2048
+	addi	a1, a2, -2048
 	add	a0, a0, a1
 	ret
 
@@ -20,7 +20,7 @@ func000000000000007f:
 	sext.w	a1, a1
 	lui	a2, 544
 	sh3add	a0, a1, a0
-	addiw	a2, a2, 24
+	addi	a2, a2, 24
 	add	a0, a0, a2
 	ret
 

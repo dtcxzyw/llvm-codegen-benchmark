@@ -15,7 +15,7 @@ func0000000000000004:
 	addi	a0, a0, -1
 	lui	a1, 8
 	slli	a2, a0, 48
-	addiw	a1, a1, 787
+	addi	a1, a1, 787
 	srli	a2, a2, 49
 	mul	a1, a2, a1
 	srli	a1, a1, 22

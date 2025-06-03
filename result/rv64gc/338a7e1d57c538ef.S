@@ -16,7 +16,7 @@ func000000000000001e:
 	slliw	a1, a1, 11
 	slli	a0, a0, 4
 	lui	a2, 8128
-	addiw	a2, a2, 2032
+	addi	a2, a2, 2032
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

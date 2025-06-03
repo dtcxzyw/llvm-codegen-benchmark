@@ -7,7 +7,7 @@ func0000000000000007:
 func0000000000000003:
 	sh3add.uw	a0, a1, a0
 	lui	a1, 65536
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 22
 	and	a0, a0, a1
 	ret

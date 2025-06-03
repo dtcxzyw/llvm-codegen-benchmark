@@ -2,7 +2,7 @@ func00000000000000e1:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	addi	a0, a0, -4
 	seqz	a0, a0
@@ -58,7 +58,7 @@ func00000000000000c1:
 	srli	a1, a1, 8
 	and	a0, a0, a1
 	lui	a1, 672
-	addiw	a1, a1, 413
+	addi	a1, a1, 413
 	slli	a1, a1, 24
 	xor	a0, a0, a1
 	seqz	a0, a0

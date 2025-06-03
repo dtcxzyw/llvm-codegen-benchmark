@@ -20,7 +20,7 @@ func0000000000000384:
 func0000000000000188:
 	lui	a0, 2749
 	lui	a1, %hi(.LCPI2_0)
-	addiw	a0, a0, -905
+	addi	a0, a0, -905
 	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a0, a0, 14
 	addi	a0, a0, 1122

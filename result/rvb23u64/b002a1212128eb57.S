@@ -61,8 +61,8 @@ func0000000000000000:
 	lui	a3, 1048387
 	add	a0, a0, a1
 	lui	a1, 378
-	addiw	a3, a3, 176
-	addiw	a1, a1, -357
+	addi	a3, a3, 176
+	addi	a1, a1, -357
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

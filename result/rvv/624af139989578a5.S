@@ -37,7 +37,7 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a0, 227374
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	slli	a0, a0, 12
 	addi	a0, a0, -1575
 	slli	a0, a0, 18
@@ -62,7 +62,7 @@ func000000000000001c:
 
 func0000000000000011:
 	lui	a0, 586
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0

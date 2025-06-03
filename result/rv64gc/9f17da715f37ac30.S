@@ -4,7 +4,7 @@ func0000000000000001:
 	xor	a0, a0, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	and	a0, a0, a1
 	ret
 

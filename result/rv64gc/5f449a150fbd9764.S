@@ -11,7 +11,7 @@ func000000000000018c:
 	zext.b	a1, a1
 	sext.w	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	snez	a1, a1
 	xor	a2, a2, a3
 	snez	a2, a2

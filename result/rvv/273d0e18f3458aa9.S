@@ -10,7 +10,7 @@ func0000000000000000:
 	vsext.vf2	v12, v10
 	lui	a0, 1
 	vminu.vv	v8, v8, v12
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	ret
 

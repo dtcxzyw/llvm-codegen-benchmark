@@ -5,7 +5,7 @@ func000000000000000d:
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	lui	a1, 34953
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	srli	a0, a0, 37
 	mul	a1, a1, a0
 	srli	a1, a1, 33

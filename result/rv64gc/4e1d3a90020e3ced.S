@@ -1,10 +1,10 @@
 func0000000000000000:
 	lui	a1, 378310
-	addiw	a1, a1, -932
+	addi	a1, a1, -932
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	lui	a2, 1044464
-	addiw	a2, a2, -257
+	addi	a2, a2, -257
 	xor	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2

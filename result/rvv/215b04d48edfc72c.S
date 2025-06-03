@@ -2,7 +2,7 @@ func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	lui	a0, 488281
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 
@@ -34,7 +34,7 @@ func000000000000002a:
 
 func0000000000000028:
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 983055

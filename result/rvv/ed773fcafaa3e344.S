@@ -19,7 +19,7 @@ func000000000000000a:
 	vadd.vv	v10, v10, v12
 	lui	a0, 244
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsub.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0
 	ret

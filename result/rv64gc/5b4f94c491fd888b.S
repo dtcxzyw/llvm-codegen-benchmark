@@ -65,7 +65,7 @@ func0000000000000074:
 	and	a1, a1, a3
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, -528
+	addi	a1, a2, -528
 	sltu	a0, a0, a1
 	ret
 

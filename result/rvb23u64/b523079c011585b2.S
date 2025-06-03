@@ -6,7 +6,7 @@ func0000000000000006:
 func0000000000000008:
 	srliw	a1, a0, 16
 	lui	a2, 17
-	addiw	a2, a2, 11
+	addi	a2, a2, 11
 	czero.eqz	a1, a2, a1
 	xor	a0, a0, a1
 	ret

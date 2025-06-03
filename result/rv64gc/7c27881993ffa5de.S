@@ -56,7 +56,7 @@ func0000000000000017:
 	slliw	a2, a2, 24
 	or	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 240
@@ -66,10 +66,10 @@ func0000000000000016:
 	slliw	a2, a2, 24
 	or	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, 240
+	addi	a2, a2, 240
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -78,7 +78,7 @@ func000000000000001c:
 	slliw	a2, a2, 16
 	or	a0, a0, a2
 	lui	a2, 788496
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	lui	a2, 1024
 	or	a0, a0, a2
@@ -89,7 +89,7 @@ func0000000000000014:
 	slliw	a2, a2, 24
 	or	a0, a0, a2
 	lui	a2, 788496
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	lui	a2, 1024
 	or	a0, a0, a2

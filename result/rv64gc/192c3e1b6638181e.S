@@ -204,7 +204,7 @@ func0000000000000281:
 	zext.b	a1, a1
 	lui	a2, 26214
 	sltiu	a1, a1, 52
-	addiw	a2, a2, 1638
+	addi	a2, a2, 1638
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -243,7 +243,7 @@ func0000000000000146:
 	slli	a1, a1, 56
 	lui	a2, 16
 	srai	a1, a1, 56
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	slt	a0, a0, a2
@@ -299,7 +299,7 @@ func0000000000000301:
 	zext.b	a1, a1
 	lui	a2, 52429
 	sltiu	a1, a1, 8
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0

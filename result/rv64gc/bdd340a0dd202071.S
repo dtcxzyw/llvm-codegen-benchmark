@@ -42,7 +42,7 @@ func0000000000000084:
 	srliw	a1, a1, 30
 	lui	a2, 262144
 	seqz	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	xor	a0, a0, a1
 	ret

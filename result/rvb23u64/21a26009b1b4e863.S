@@ -19,7 +19,7 @@ func0000000000000000:
 	li	a3, 46
 	lui	a4, 524288
 	czero.eqz	a2, a3, a2
-	addiw	a3, a4, 4
+	addi	a3, a4, 4
 	czero.eqz	a3, a3, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a3

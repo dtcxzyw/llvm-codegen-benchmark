@@ -8,7 +8,7 @@ func0000000000000000:
 	slliw	a0, a0, 1
 	or	a0, a0, a5
 	srliw	a5, a2, 24
-	addiw	a4, a4, -256
+	addi	a4, a4, -256
 	and	a3, a3, a4
 	and	a4, a4, a2
 	slliw	a2, a2, 24

@@ -98,7 +98,7 @@ func0000000000000061:
 	vzext.vf2	v11, v10
 	lui	a0, 16
 	vwaddu.wv	v8, v8, v11
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v0, v8, a0
 	ret

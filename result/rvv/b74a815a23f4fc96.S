@@ -9,7 +9,7 @@ func0000000000000081:
 
 func0000000000000181:
 	lui	a0, 256
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 20

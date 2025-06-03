@@ -31,7 +31,7 @@ func00000000000000c1:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	lui	a2, 432128
-	addiw	a4, a2, 1
+	addi	a4, a2, 1
 	lui	a2, 524288
 	bge	a3, a4, .LBB2_3
 	beq	a0, a2, .LBB2_4
@@ -67,7 +67,7 @@ func0000000000000141:
 .LBB4_2:
 	sext.w	a2, a2
 	lui	a0, 8192
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slt	a0, a0, a2
 	neg	a0, a0
 	and	a0, a0, a1

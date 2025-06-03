@@ -7,7 +7,7 @@ func0000000000000001:
 func0000000000000000:
 	and	a0, a0, a1
 	lui	a1, 5
-	addiw	a1, a1, -1979
+	addi	a1, a1, -1979
 	and	a0, a0, a1
 	ret
 

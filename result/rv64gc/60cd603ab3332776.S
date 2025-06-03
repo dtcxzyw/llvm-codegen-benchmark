@@ -20,7 +20,7 @@ func0000000000000318:
 	zext.b	a1, a1
 	sext.w	a2, a2
 	lui	a3, 3
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a0, a0, a2

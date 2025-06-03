@@ -40,7 +40,7 @@ func0000000000000161:
 	vsll.vx	v12, v12, a0
 	lui	a0, 16
 	vor.vv	v10, v12, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vor.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret

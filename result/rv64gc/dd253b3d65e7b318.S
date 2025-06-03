@@ -12,7 +12,7 @@ func0000000000000006:
 	andi	a0, a0, 1
 	lui	a2, 921600
 	snez	a1, a1
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	slli	a1, a1, 10
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000005:
 	li	a2, 9
 	beq	a1, a2, .LBB2_2
 	lui	a1, 4
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	andi	a0, a0, -241
 	or	a0, a0, a1
 	addi	a0, a0, 128
@@ -39,17 +39,17 @@ func0000000000000004:
 	sext.w	a2, a1
 	lui	a1, 2
 	beqz	a2, .LBB3_2
-	addiw	a1, a1, -1471
+	addi	a1, a1, -1471
 	lui	a2, 1048574
-	addiw	a2, a2, 1150
+	addi	a2, a2, 1150
 	and	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, 128
 	ret
 .LBB3_2:
-	addiw	a1, a1, -1535
+	addi	a1, a1, -1535
 	lui	a2, 1048574
-	addiw	a2, a2, 1150
+	addi	a2, a2, 1150
 	and	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, 128

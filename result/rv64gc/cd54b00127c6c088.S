@@ -47,7 +47,7 @@ func0000000000000033:
 	sext.w	a2, a2
 	beqz	a2, .LBB5_2
 	lui	a1, 4
-	addiw	a1, a1, -1764
+	addi	a1, a1, -1764
 .LBB5_2:
 	add	a0, a0, a1
 	ret

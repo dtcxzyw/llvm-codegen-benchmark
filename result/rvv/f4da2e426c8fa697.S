@@ -17,7 +17,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmand.mm	v10, v0, v10
 	lui	a0, 16
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

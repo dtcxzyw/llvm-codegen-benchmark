@@ -3,7 +3,7 @@ func000000000000001b:
 	zext.b	a1, a1
 	or	a0, a0, a2
 	lui	a2, 4080
-	addiw	a2, a2, 511
+	addi	a2, a2, 511
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

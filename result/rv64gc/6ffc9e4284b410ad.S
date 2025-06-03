@@ -46,7 +46,7 @@ func00000000000000c0:
 	addi	a3, a3, 1572
 	mul	a1, a1, a3
 	lui	a3, 16375
-	addiw	a3, a3, -1933
+	addi	a3, a3, -1933
 	slli	a3, a3, 10
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
@@ -56,7 +56,7 @@ func00000000000000c0:
 func0000000000000030:
 	lui	a3, 28770
 	slli	a2, a2, 56
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	mulhu	a2, a2, a3
 	lui	a3, 65518
 	addi	a3, a3, -720

@@ -31,7 +31,7 @@ func0000000000000038:
 	lui	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v0, v12, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v10, a0, v0
 	vmsltu.vv	v0, v10, v8

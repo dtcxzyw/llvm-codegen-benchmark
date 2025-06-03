@@ -4,7 +4,7 @@ func000000000000001b:
 	mul	a0, a0, a1
 	lui	a1, 1272
 	srli	a0, a0, 20
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	add	a0, a0, a1
 	ret
 

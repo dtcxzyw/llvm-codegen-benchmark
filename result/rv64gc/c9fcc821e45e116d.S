@@ -12,7 +12,7 @@ func0000000000000007:
 	srli	a1, a1, 48
 	or	a0, a0, a1
 	lui	a1, 123738
-	addiw	a1, a1, 1981
+	addi	a1, a1, 1981
 	mul	a0, a0, a1
 	ret
 

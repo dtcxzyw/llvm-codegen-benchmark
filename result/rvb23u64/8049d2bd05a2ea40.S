@@ -22,7 +22,7 @@ func0000000000000005:
 func0000000000000002:
 	bset	a0, zero, a0
 	lui	a1, 1
-	addiw	a1, a1, -57
+	addi	a1, a1, -57
 	and	a0, a0, a1
 	ret
 

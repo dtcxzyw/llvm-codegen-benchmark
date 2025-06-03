@@ -27,21 +27,21 @@ func0000000000000021:
 
 func0000000000000034:
 	lui	a1, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	sltiu	a0, a0, 24
 	ret
 
 func0000000000000038:
 	lui	a1, 1
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func000000000000002c:
 	lui	a1, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

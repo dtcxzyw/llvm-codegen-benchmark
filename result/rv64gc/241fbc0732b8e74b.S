@@ -38,7 +38,7 @@ func00000000000001e6:
 	lui	a1, 16
 	srli	a2, a2, 32
 	add	a0, a0, a2
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	slt	a0, a0, a1
 	ret
 

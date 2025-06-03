@@ -13,7 +13,7 @@ func0000000000000001:
 func000000000000006c:
 	sll	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -21,7 +21,7 @@ func000000000000006c:
 func000000000000000c:
 	sll	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

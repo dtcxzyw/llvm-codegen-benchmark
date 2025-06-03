@@ -16,7 +16,7 @@ func00000000000000a8:
 func00000000000001ca:
 	addiw	a1, a1, 32
 	lui	a2, 512
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a0, a0, a2
 	slt	a0, a1, a0
 	ret

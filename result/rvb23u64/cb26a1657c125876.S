@@ -18,10 +18,10 @@ func0000000000000004:
 func0000000000000005:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	lui	a3, 7699
-	addiw	a3, a3, 896
+	addi	a3, a3, 896
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2

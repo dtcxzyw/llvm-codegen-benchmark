@@ -11,7 +11,7 @@ func000000000000002a:
 	sext.h	a1, a1
 	sext.w	a2, a2
 	lui	a3, 7699
-	addiw	a3, a3, 896
+	addi	a3, a3, 896
 	slti	a1, a1, 0
 	xor	a2, a2, a3
 	xori	a1, a1, 1
@@ -44,7 +44,7 @@ func0000000000000084:
 	sext.w	a2, a2
 	lui	a3, 1048482
 	slli	a1, a1, 48
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	srli	a1, a1, 54
 	sltu	a2, a2, a3
 	or	a0, a0, a2

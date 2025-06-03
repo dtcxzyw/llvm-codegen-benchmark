@@ -11,7 +11,7 @@ func0000000000000000:
 
 func000000000000000a:
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 16
@@ -33,7 +33,7 @@ func000000000000001e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsrl.vi	v8, v8, 4
 	slli	a0, a0, 24
 	addi	a0, a0, 15
@@ -42,7 +42,7 @@ func000000000000001e:
 
 func000000000000001a:
 	lui	a0, 2
-	addiw	a0, a0, 1841
+	addi	a0, a0, 1841
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vsrl.vi	v8, v8, 18

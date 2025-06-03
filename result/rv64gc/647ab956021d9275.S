@@ -2,7 +2,7 @@ func0000000000000001:
 	sub	a1, a1, a0
 	lui	a0, 349525
 	srliw	a2, a1, 1
-	addiw	a0, a0, 1365
+	addi	a0, a0, 1365
 	or	a1, a1, a2
 	srliw	a2, a1, 2
 	or	a1, a1, a2
@@ -16,7 +16,7 @@ func0000000000000001:
 	srli	a2, a1, 1
 	and	a0, a0, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a1, a1, a0
 	and	a0, a1, a2
 	srli	a1, a1, 2

@@ -50,7 +50,7 @@ func0000000000000630:
 
 func00000000000000b0:
 	lui	a0, 131072
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
@@ -62,7 +62,7 @@ func0000000000000204:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v12, v10, 1
 	lui	a0, 1
-	addiw	a0, a0, -1122
+	addi	a0, a0, -1122
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8
@@ -86,7 +86,7 @@ func0000000000000620:
 
 func0000000000000528:
 	lui	a0, 262144
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v12, v10, a0
 	vmsgt.vx	v10, v8, a0

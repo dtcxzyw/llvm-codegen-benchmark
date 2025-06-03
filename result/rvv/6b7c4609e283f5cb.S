@@ -11,7 +11,7 @@ func0000000000000007:
 	vadd.vv	v10, v10, v10
 	lui	a0, 1
 	vmaxu.vv	v8, v10, v8
-	addiw	a0, a0, -2008
+	addi	a0, a0, -2008
 	vmul.vx	v8, v8, a0
 	ret
 

@@ -5,13 +5,13 @@ func0000000000000408:
 	lui	a3, 2
 	or	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a1, a3, 1808
+	addi	a1, a3, 1808
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000c68:
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltu	a4, a3, a2
 	czero.nez	a2, a2, a4
 	czero.eqz	a1, a1, a4
@@ -35,7 +35,7 @@ func00000000000000a1:
 func0000000000000208:
 	lui	a3, 227374
 	lui	a4, %hi(.LCPI3_0)
-	addiw	a3, a3, -1329
+	addi	a3, a3, -1329
 	ld	a4, %lo(.LCPI3_0)(a4)
 	slli	a3, a3, 12
 	addi	a3, a3, -1575
@@ -55,7 +55,7 @@ func000000000000032a:
 	lui	a3, 244
 	or	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a1, a3, 575
+	addi	a1, a3, 575
 	slt	a0, a1, a0
 	ret
 
@@ -89,7 +89,7 @@ func0000000000000338:
 	lui	a3, 36
 	or	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a1, a3, -1359
+	addi	a1, a3, -1359
 	sltu	a0, a1, a0
 	ret
 

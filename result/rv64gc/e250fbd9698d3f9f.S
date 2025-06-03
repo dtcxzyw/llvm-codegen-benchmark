@@ -1,7 +1,7 @@
 func0000000000000007:
 	or	a0, a0, a1
 	lui	a1, 838861
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
@@ -21,7 +21,7 @@ func0000000000000003:
 	lui	a1, 488
 	mulhu	a2, a0, a2
 	srli	a2, a2, 19
-	addiw	a1, a1, 1152
+	addi	a1, a1, 1152
 	mul	a1, a2, a1
 	sub	a0, a0, a1
 	ret

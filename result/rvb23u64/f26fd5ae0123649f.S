@@ -8,7 +8,7 @@ func000000000000000b:
 func0000000000000003:
 	addi	a0, a0, 8
 	lui	a1, 2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add.uw	a0, a0, a1
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11

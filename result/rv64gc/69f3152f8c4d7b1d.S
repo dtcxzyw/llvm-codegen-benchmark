@@ -62,7 +62,7 @@ func000000000000000a:
 	slli	a1, a1, 1
 	lui	a2, 1048568
 	addiw	a1, a1, -4
-	addiw	a2, a2, 254
+	addi	a2, a2, 254
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -82,7 +82,7 @@ func000000000000000f:
 	lui	a2, 4
 	addi	a1, a1, 2047
 	addi	a1, a1, 257
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

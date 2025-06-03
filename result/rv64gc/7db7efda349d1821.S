@@ -2,7 +2,7 @@ func0000000000000009:
 	srli	a2, a1, 8
 	lui	a3, 16
 	srliw	a4, a1, 24
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	slli	a4, a1, 24
@@ -26,7 +26,7 @@ func0000000000000000:
 	srli	a2, a1, 8
 	lui	a3, 16
 	srliw	a4, a1, 24
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	slli	a4, a1, 24

@@ -7,7 +7,7 @@ func0000000000000048:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, -33
+	addi	a2, a2, -33
 	and	a1, a1, a2
 	addi	a1, a1, -65
 	sltiu	a1, a1, 26

@@ -4,7 +4,7 @@ func0000000000000001:
 	and	a1, a1, a2
 	beqz	a1, .LBB0_2
 	lui	a0, 17
-	addiw	a0, a0, -629
+	addi	a0, a0, -629
 .LBB0_2:
 	ret
 
@@ -14,7 +14,7 @@ func000000000000000c:
 	and	a1, a1, a2
 	beqz	a1, .LBB1_2
 	lui	a0, 2081
-	addiw	a0, a0, -986
+	addi	a0, a0, -986
 .LBB1_2:
 	ret
 

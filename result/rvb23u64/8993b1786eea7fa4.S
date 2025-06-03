@@ -8,7 +8,7 @@ func0000000000000000:
 	mulhu	a0, a0, a1
 	lui	a1, 10486
 	srli	a0, a0, 35
-	addiw	a1, a1, -983
+	addi	a1, a1, -983
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	sh2add	a1, a1, a1
@@ -24,7 +24,7 @@ func0000000000000002:
 	add	a0, a0, a1
 	lui	a1, 4315
 	addi	a2, a2, 1349
-	addiw	a1, a1, 523
+	addi	a1, a1, 523
 	slli	a2, a2, 32
 	slli	a0, a0, 32
 	mulhu	a0, a0, a2

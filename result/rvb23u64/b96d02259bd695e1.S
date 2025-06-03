@@ -135,7 +135,7 @@ func0000000000000084:
 	sext.w	a0, a0
 	add	a1, a1, a2
 	lui	a2, 65536
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 257
 	and	a0, a0, a1
@@ -146,7 +146,7 @@ func0000000000000544:
 	add	a1, a1, a2
 	lui	a2, 244141
 	slti	a1, a1, 0
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	xori	a1, a1, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

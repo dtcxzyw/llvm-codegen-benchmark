@@ -1,8 +1,8 @@
 func0000000000000037:
 	lui	a2, 699051
 	lui	a3, 349525
-	addiw	a2, a2, -1365
-	addiw	a3, a3, 1365
+	addi	a2, a2, -1365
+	addi	a3, a3, 1365
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32
@@ -18,8 +18,8 @@ func0000000000000037:
 func0000000000000035:
 	lui	a2, 699051
 	lui	a3, 349525
-	addiw	a2, a2, -1365
-	addiw	a3, a3, 1365
+	addi	a2, a2, -1365
+	addi	a3, a3, 1365
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32

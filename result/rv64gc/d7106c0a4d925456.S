@@ -13,7 +13,7 @@ func000000000000006c:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 25056
-	addiw	a2, a2, 1823
+	addi	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
@@ -32,7 +32,7 @@ func0000000000000044:
 	sll	a1, a2, a1
 	lui	a2, 1
 	andi	a1, a1, -2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -42,7 +42,7 @@ func0000000000000054:
 	sll	a1, a2, a1
 	lui	a2, 1
 	andi	a1, a1, -2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -51,7 +51,7 @@ func0000000000000041:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 2
-	addiw	a2, a2, 1537
+	addi	a2, a2, 1537
 	and	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

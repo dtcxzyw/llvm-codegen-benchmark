@@ -19,7 +19,7 @@ func0000000000000020:
 	li	a0, 256
 	vmv.v.x	v10, a0
 	lui	a0, 4
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vand.vx	v10, v12, a0, v0.t
 	vadd.vv	v8, v8, v10
 	ret
@@ -31,7 +31,7 @@ func0000000000000023:
 	li	a0, 256
 	vmv.v.x	v10, a0
 	lui	a0, 4
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vand.vx	v10, v12, a0, v0.t
 	vadd.vv	v8, v8, v10
 	ret

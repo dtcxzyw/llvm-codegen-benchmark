@@ -9,7 +9,7 @@ func000000000000000e:
 	lui	a1, 16
 	vmulhu.vx	v12, v8, a0
 	lui	a0, 524408
-	addiw	a1, a1, -15
+	addi	a1, a1, -15
 	vsub.vv	v14, v8, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12

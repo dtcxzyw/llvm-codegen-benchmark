@@ -2,7 +2,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 16
 	addi	a0, a0, 1
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1
@@ -18,7 +18,7 @@ func0000000000000000:
 	add	a0, a0, a1
 	lui	a1, 16
 	addi	a0, a0, 32
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1

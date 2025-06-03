@@ -7,7 +7,7 @@ func00000000000003f8:
 	vmulhu.vx	v14, v12, a0
 	lui	a0, 16
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	vsub.vv	v12, v12, v14
 	vsrl.vi	v12, v12, 1
 	vadd.vv	v12, v12, v14
@@ -17,7 +17,7 @@ func00000000000003f8:
 	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret

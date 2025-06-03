@@ -9,7 +9,7 @@ func0000000000000000:
 	ret
 .LBB0_2:
 	lui	a2, 2
-	addiw	a2, a2, 1808
+	addi	a2, a2, 1808
 	and	a0, a0, a1
 	slli	a0, a0, 63
 	srai	a0, a0, 63

@@ -1,7 +1,7 @@
 func0000000000000001:
 	lui	a2, 16
 	neg	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
 	xor	a0, a0, a1
@@ -18,7 +18,7 @@ func00000000000000a6:
 func00000000000000a1:
 	lui	a2, 16
 	neg	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
 	xor	a0, a0, a1
@@ -60,7 +60,7 @@ func0000000000000086:
 	lui	a1, 4
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a0, a1
 	ret
 

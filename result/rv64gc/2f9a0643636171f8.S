@@ -8,7 +8,7 @@ func0000000000000001:
 	or	a1, a1, a2
 	lui	a2, 34767
 	or	a0, a0, a1
-	addiw	a1, a2, 98
+	addi	a1, a2, 98
 	xor	a0, a0, a1
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000002:
 	or	a1, a1, a2
 	lui	a2, 34767
 	or	a0, a0, a1
-	addiw	a1, a2, 98
+	addi	a1, a2, 98
 	xor	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000003:
 	or	a1, a1, a2
 	lui	a2, 670492
 	or	a0, a0, a1
-	addiw	a1, a2, -1338
+	addi	a1, a2, -1338
 	xor	a0, a0, a1
 	ret
 

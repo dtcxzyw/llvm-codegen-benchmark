@@ -4,7 +4,7 @@ func0000000000000021:
 	lui	a2, 20480
 	xor	a1, a1, a2
 	lui	a2, 15360
-	addiw	a2, a2, 512
+	addi	a2, a2, 512
 	snez	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

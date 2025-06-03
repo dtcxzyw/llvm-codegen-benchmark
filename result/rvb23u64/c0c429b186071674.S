@@ -6,7 +6,7 @@ func000000000000001d:
 
 func000000000000001b:
 	lui	a2, 4
-	addiw	a2, a2, 423
+	addi	a2, a2, 423
 	mul	a1, a1, a2
 	srli	a1, a1, 31
 	add	a0, a0, a1
@@ -84,7 +84,7 @@ func0000000000000004:
 
 func0000000000000000:
 	lui	a2, 4112
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -94,7 +94,7 @@ func0000000000000000:
 
 func0000000000000018:
 	lui	a2, 298023
-	addiw	a2, a2, 917
+	addi	a2, a2, 917
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -102,7 +102,7 @@ func0000000000000018:
 
 func000000000000001f:
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

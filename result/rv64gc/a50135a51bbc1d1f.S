@@ -4,7 +4,7 @@ func0000000000000001:
 	lui	a2, 16
 	srliw	a3, a0, 24
 	and	a4, a0, a1
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	srli	a5, a0, 24
 	and	a1, a1, a5
 	srli	a5, a0, 40
@@ -33,7 +33,7 @@ func0000000000000000:
 	lui	a2, 16
 	srliw	a3, a0, 24
 	and	a4, a0, a1
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	srli	a5, a0, 24
 	and	a1, a1, a5
 	srli	a5, a0, 40

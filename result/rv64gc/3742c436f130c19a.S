@@ -29,7 +29,7 @@ func000000000000000a:
 	lui	a2, 31250
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a0, a0, a2
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000008:
 	slli	a0, a0, 32
 	lui	a2, 12875
 	slli	a1, a1, 32
-	addiw	a2, a2, -1625
+	addi	a2, a2, -1625
 	mulhu	a0, a0, a1
 	slli	a2, a2, 13
 	addi	a2, a2, -1

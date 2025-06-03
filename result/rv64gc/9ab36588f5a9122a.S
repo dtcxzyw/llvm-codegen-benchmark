@@ -9,7 +9,7 @@ func0000000000000069:
 	slli	a6, a6, 54
 	add	a6, a6, a1
 	lui	a5, 4080
-	addiw	a1, a7, -256
+	addi	a1, a7, -256
 	and	a4, a4, a1
 	or	a3, a3, a4
 	srli	a4, a0, 8

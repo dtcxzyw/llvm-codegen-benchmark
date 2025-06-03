@@ -49,7 +49,7 @@ func0000000000000186:
 	sext.w	a1, a1
 	lui	a2, 1046135
 	slti	a1, a1, 4
-	addiw	a2, a2, -1663
+	addi	a2, a2, -1663
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1

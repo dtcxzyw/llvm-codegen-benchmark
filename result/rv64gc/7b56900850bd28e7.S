@@ -20,7 +20,7 @@ func0000000000000048:
 func0000000000000004:
 	andi	a1, a1, -64
 	lui	a2, 3
-	addiw	a2, a2, -1984
+	addi	a2, a2, -1984
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

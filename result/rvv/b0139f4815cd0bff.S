@@ -19,7 +19,7 @@ func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 28784
-	addiw	a0, a0, 1799
+	addi	a0, a0, 1799
 	vadd.vv	v10, v10, v12
 	vand.vx	v10, v10, a1
 	slli	a1, a0, 32

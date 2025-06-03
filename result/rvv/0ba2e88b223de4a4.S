@@ -42,7 +42,7 @@ func0000000000000021:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v0, v12, a0
 	lui	a0, 804435
-	addiw	a0, a0, 1537
+	addi	a0, a0, 1537
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vx	v8, v10, a0, v0.t
 	ret

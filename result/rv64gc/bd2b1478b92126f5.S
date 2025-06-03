@@ -2,10 +2,10 @@ func0000000000000008:
 	lui	a3, 244
 	sub	a1, a1, a0
 	lui	a0, 1221
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	addiw	a0, a0, -1217
+	addi	a0, a0, -1217
 	sltu	a0, a0, a1
 	ret
 
@@ -29,10 +29,10 @@ func000000000000000a:
 	lui	a3, 244141
 	sub	a1, a1, a0
 	lui	a0, 4883
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	addiw	a0, a0, -769
+	addi	a0, a0, -769
 	slt	a0, a0, a1
 	ret
 

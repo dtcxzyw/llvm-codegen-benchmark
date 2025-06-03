@@ -9,7 +9,7 @@ func00000000000007f4:
 
 func0000000000000008:
 	lui	a3, 1024
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sh3add	a2, a2, a3
 	lui	a3, 1047552
 	and	a2, a2, a3
@@ -37,7 +37,7 @@ func0000000000000788:
 func0000000000000288:
 	slli	a2, a2, 10
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	andi	a2, a2, -2048
 	bclri	a2, a2, 11

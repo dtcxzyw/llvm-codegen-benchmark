@@ -2,7 +2,7 @@ func0000000000000000:
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	lui	a4, 541201
-	addiw	a4, a4, -1981
+	addi	a4, a4, -1981
 	mul	a3, a3, a4
 	srli	a3, a3, 32
 	add	a2, a2, a3

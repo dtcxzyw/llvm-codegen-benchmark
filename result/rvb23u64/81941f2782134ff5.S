@@ -1,7 +1,7 @@
 func0000000000000018:
 	zext.h	a0, a0
 	lui	a1, 32
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	add	a0, a0, a1
 	srli	a0, a0, 1
 	ret

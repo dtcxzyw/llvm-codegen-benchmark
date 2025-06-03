@@ -3,7 +3,7 @@ func0000000000000070:
 	sub	a0, a0, a2
 	lui	a2, 838861
 	slli	a1, a1, 5
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	sub	a0, a0, a1
 	slli	a1, a2, 32
 	addi	a0, a0, -160

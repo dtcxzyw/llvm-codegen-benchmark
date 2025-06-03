@@ -24,7 +24,7 @@ func000000000000007b:
 	lui	a2, 3
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addiw	a1, a2, -414
+	addi	a1, a2, -414
 	add	a0, a0, a1
 	ret
 

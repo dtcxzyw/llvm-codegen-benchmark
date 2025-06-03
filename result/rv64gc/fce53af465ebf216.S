@@ -1,7 +1,7 @@
 func0000000000000584:
 	lui	a2, 16385
 	addi	a0, a0, -2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a2, a2, 12
 	and	a1, a1, a2
 	snez	a1, a1

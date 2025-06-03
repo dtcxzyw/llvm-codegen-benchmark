@@ -32,7 +32,7 @@ func000000000000000e:
 	slli	a2, a2, 19
 	or	a0, a0, a2
 	lui	a2, 385088
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	add	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -45,7 +45,7 @@ func000000000000001e:
 	slli	a2, a2, 5
 	or	a0, a0, a2
 	lui	a2, 385088
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	add	a1, a1, a2
 	or	a0, a0, a1
 	ret

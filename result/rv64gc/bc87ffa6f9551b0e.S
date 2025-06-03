@@ -5,7 +5,7 @@ func0000000000000003:
 	lui	a0, 596523
 	lui	a2, 87381
 	addi	a0, a0, 965
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	slli	a0, a0, 32
 	mulhu	a0, a1, a0
 	srli	a0, a0, 43

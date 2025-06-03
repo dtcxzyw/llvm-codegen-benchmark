@@ -4,7 +4,7 @@ func0000000000000035:
 	lui	a0, 1048064
 	vandn.vx	v12, v12, a0
 	lui	a0, 33
-	addiw	a0, a0, 1489
+	addi	a0, a0, 1489
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -15,7 +15,7 @@ func000000000000003f:
 	lui	a0, 1048064
 	vandn.vx	v12, v12, a0
 	lui	a0, 115
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -26,7 +26,7 @@ func0000000000000015:
 	lui	a0, 1048064
 	vandn.vx	v12, v12, a0
 	lui	a0, 1048332
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmadd.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret

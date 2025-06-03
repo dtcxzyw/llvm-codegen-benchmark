@@ -33,7 +33,7 @@ func000000000000004c:
 func000000000000004a:
 	srai	a1, a1, 32
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret

@@ -12,7 +12,7 @@ func0000000000000020:
 	sh1add	a1, a2, a1
 	lui	a2, 559241
 	sext.w	a3, a1
-	addiw	a2, a2, -1911
+	addi	a2, a2, -1911
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	add	a1, a1, a2

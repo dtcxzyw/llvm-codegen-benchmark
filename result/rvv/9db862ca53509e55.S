@@ -4,7 +4,7 @@ func0000000000000001:
 	li	a0, 24
 	lui	a1, 699051
 	vand.vv	v8, v10, v8
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	vmul.vx	v8, v8, a0
 	slli	a0, a1, 32
 	vsra.vi	v8, v8, 3

@@ -14,7 +14,7 @@ func00000000000000a8:
 	srai	a1, a1, 63
 	andi	a1, a1, -1000
 	addw	a0, a0, a1
-	addiw	a1, a2, -1614
+	addi	a1, a2, -1614
 	sltu	a0, a1, a0
 	ret
 

@@ -86,7 +86,7 @@ func0000000000000404:
 	add	a0, a0, a1
 	lui	a1, 2441
 	add	a0, a0, a2
-	addiw	a1, a1, 1664
+	addi	a1, a1, 1664
 	sltu	a0, a0, a1
 	ret
 

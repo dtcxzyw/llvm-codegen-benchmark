@@ -12,7 +12,7 @@ func0000000000000000:
 	beqz	a2, .LBB0_4
 .LBB0_3:
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 .LBB0_4:
 	bgeu	a0, a1, .LBB0_6
 	ret

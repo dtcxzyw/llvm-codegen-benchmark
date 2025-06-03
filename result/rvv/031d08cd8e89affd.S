@@ -3,8 +3,7 @@ func00000000000000f0:
 	vsll.vi	v12, v12, 3
 	li	a0, 127
 	vadd.vx	v12, v12, a0
-	li	a0, 1
-	slli	a0, a0, 36
+	bseti	a0, zero, 36
 	addi	a0, a0, -128
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
@@ -26,7 +25,7 @@ func00000000000000ff:
 	li	a0, 55
 	vadd.vx	v12, v12, a0
 	lui	a0, 256
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v8, v12
@@ -62,9 +61,8 @@ func0000000000000050:
 func00000000000000fc:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 2
-	li	a0, 1
+	bseti	a0, zero, 35
 	vadd.vi	v12, v12, 7
-	slli	a0, a0, 35
 	addi	a0, a0, -8
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8

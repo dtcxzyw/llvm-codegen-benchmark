@@ -2,7 +2,7 @@ func00000000000000a6:
 	slli	a1, a0, 1
 	srai	a0, a0, 63
 	lui	a2, 488281
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -10,7 +10,7 @@ func00000000000000a6:
 func00000000000000a8:
 	slli	a1, a0, 16
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a0, a2, a0
 	lui	a2, 983055
 	neg	a0, a0
@@ -22,11 +22,11 @@ func00000000000000a8:
 func00000000000000aa:
 	slli	a1, a0, 1
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	slt	a0, a2, a0
 	lui	a2, 1048332
 	neg	a0, a0
-	addiw	a2, a2, -576
+	addi	a2, a2, -576
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret

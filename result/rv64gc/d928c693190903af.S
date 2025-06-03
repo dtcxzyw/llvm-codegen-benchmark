@@ -17,7 +17,7 @@ func000000000000604c:
 	seqz	a1, a1
 	or	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -2032
+	addi	a2, a2, -2032
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -211,7 +211,7 @@ func000000000000098c:
 	slti	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 524288
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -235,7 +235,7 @@ func0000000000000d02:
 	sext.w	a2, a2
 	lui	a3, 244141
 	addi	a2, a2, -59
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	addi	a0, a0, -1
 	seqz	a2, a2
 	sltu	a1, a1, a3

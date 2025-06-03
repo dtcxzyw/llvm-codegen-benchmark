@@ -18,7 +18,7 @@ func0000000000000003:
 
 func0000000000000011:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a3, a1, a2
 	li	a4, 3
 	bltu	a4, a3, .LBB2_2
@@ -29,7 +29,7 @@ func0000000000000011:
 
 func0000000000000010:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a3, a1, a2
 	li	a4, 3
 	bltu	a4, a3, .LBB3_2

@@ -71,7 +71,7 @@ func000000000000302c:
 	lui	a3, 524288
 	snez	a0, a0
 	snez	a2, a2
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a2

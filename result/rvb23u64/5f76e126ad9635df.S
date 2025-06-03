@@ -23,7 +23,7 @@ func0000000000000028:
 
 func0000000000000001:
 	lui	a2, 11
-	addiw	a2, a2, 1023
+	addi	a2, a2, 1023
 	or	a1, a1, a2
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

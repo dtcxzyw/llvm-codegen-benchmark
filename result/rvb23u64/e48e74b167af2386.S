@@ -9,7 +9,7 @@ func0000000000000000:
 func0000000000000002:
 	addiw	a0, a0, 8
 	lui	a1, 233017
-	addiw	a1, a1, -455
+	addi	a1, a1, -455
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 33

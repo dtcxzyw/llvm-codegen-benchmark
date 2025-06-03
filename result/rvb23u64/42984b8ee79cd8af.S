@@ -2,10 +2,10 @@ func0000000000000025:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 464
-	addiw	a3, a3, -544
+	addi	a3, a3, -544
 	czero.eqz	a2, a3, a2
 	lui	a3, 1978
-	addiw	a3, a3, -1888
+	addi	a3, a3, -1888
 	add	a2, a2, a3
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
@@ -16,10 +16,10 @@ func0000000000000029:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 1048550
-	addiw	a3, a3, -1504
+	addi	a3, a3, -1504
 	czero.eqz	a2, a3, a2
 	lui	a3, 1978
-	addiw	a3, a3, -1888
+	addi	a3, a3, -1888
 	add	a2, a2, a3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1

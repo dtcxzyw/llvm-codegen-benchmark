@@ -3,7 +3,7 @@ func0000000000000041:
 	vzext.vf8	v12, v10
 	lui	a0, 1
 	vor.vv	v8, v8, v12
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	vand.vx	v8, v8, a0
 	li	a0, 27
 	slli	a0, a0, 7
@@ -15,7 +15,7 @@ func0000000000000021:
 	vzext.vf4	v11, v10
 	lui	a0, 16
 	vwaddu.wv	v8, v8, v11
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 4

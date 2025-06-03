@@ -12,7 +12,7 @@ func0000000000000d81:
 	addi	a2, a2, 8
 	xor	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	seqz	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1

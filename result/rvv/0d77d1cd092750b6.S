@@ -3,7 +3,7 @@ func0000000000000006:
 	vzext.vf2	v11, v10
 	lui	a0, 4
 	vwaddu.wv	v8, v8, v11
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vminu.vx	v8, v8, a0
 	ret

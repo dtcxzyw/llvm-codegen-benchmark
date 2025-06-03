@@ -32,7 +32,7 @@ func000000000000006f:
 	addi	a2, a2, 1
 	lui	a3, 32
 	slli	a1, a1, 32
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	srli	a1, a1, 32
 	and	a2, a2, a3
 	add	a0, a0, a1

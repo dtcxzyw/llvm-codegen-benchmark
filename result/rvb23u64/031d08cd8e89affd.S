@@ -1,8 +1,7 @@
 func00000000000000f0:
 	slli	a2, a2, 3
-	li	a3, 1
+	bseti	a3, zero, 36
 	addi	a2, a2, 127
-	slli	a3, a3, 36
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -21,7 +20,7 @@ func00000000000000ff:
 	slli	a2, a2, 5
 	lui	a3, 256
 	addi	a2, a2, 55
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

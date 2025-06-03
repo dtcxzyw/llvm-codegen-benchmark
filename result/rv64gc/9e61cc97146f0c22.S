@@ -30,7 +30,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	lui	a0, 12800
-	addiw	a0, a0, 7
+	addi	a0, a0, 7
 	ret
 .LBB3_2:
 	slli	a0, a1, 19

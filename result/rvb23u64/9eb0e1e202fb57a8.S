@@ -8,7 +8,7 @@ func0000000000000003:
 func0000000000000001:
 	andi	a0, a0, 1
 	lui	a1, 8192
-	addiw	a1, a1, 63
+	addi	a1, a1, 63
 	slli	a1, a1, 27
 	czero.eqz	a0, a1, a0
 	bseti	a1, zero, 52

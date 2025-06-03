@@ -38,7 +38,7 @@ func00000000000001f4:
 func0000000000000188:
 	addi	a1, a1, 3
 	lui	a2, 32
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	addiw	a0, a0, -4
 	sltu	a0, a0, a1
@@ -54,7 +54,7 @@ func0000000000000008:
 func00000000000001f8:
 	addi	a1, a1, 31
 	lui	a2, 1024
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	addiw	a0, a0, 1
 	sltu	a0, a0, a1
@@ -63,7 +63,7 @@ func00000000000001f8:
 func00000000000001ea:
 	addi	a1, a1, 15
 	lui	a2, 1024
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1

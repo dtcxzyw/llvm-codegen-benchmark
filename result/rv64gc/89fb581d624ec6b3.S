@@ -30,10 +30,10 @@ func0000000000000015:
 	li	a2, 48
 	lui	a0, 24
 	blt	a2, a1, .LBB3_2
-	addiw	a0, a0, 280
+	addi	a0, a0, 280
 	ret
 .LBB3_2:
-	addiw	a0, a0, 408
+	addi	a0, a0, 408
 	ret
 
 func000000000000000d:

@@ -22,7 +22,7 @@ func0000000000000002:
 	sext.w	a1, a1
 	bnez	a2, .LBB1_2
 	lui	a2, 929792
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2
@@ -31,7 +31,7 @@ func0000000000000002:
 	ret
 .LBB1_2:
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2

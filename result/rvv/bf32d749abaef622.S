@@ -29,7 +29,7 @@ func0000000000000684:
 	vsll.vi	v8, v8, 2
 	lui	a0, 29
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 288
+	addi	a0, a0, 288
 	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
@@ -40,7 +40,7 @@ func0000000000000204:
 	vsll.vi	v10, v10, 2
 	lui	a0, 44
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1616
+	addi	a0, a0, -1616
 	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
@@ -51,7 +51,7 @@ func0000000000000084:
 	vsll.vi	v8, v8, 2
 	lui	a0, 29
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 288
+	addi	a0, a0, 288
 	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
@@ -70,10 +70,10 @@ func0000000000000484:
 	lui	a1, 1048332
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	addiw	a0, a1, -577
+	addi	a0, a1, -577
 	vadd.vv	v8, v8, v10
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -576
+	addi	a0, a1, -576
 	vmsltu.vx	v0, v8, a0
 	ret
 

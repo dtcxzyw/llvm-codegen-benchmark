@@ -58,7 +58,7 @@ func0000000000000008:
 	lui	a1, 1048575
 	addi	a2, a1, -1920
 	addw	a0, a0, a2
-	addiw	a1, a1, -1456
+	addi	a1, a1, -1456
 	sltu	a0, a0, a1
 	ret
 
@@ -97,7 +97,7 @@ func0000000000000086:
 func0000000000000184:
 	addiw	a0, a0, 1
 	lui	a1, 1
-	addiw	a1, a1, 199
+	addi	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 

@@ -51,7 +51,7 @@ func0000000000000155:
 	lui	a3, 1048572
 	add	a0, a0, a2
 	lui	a2, 32
-	addiw	a3, a3, 1301
+	addi	a3, a3, 1301
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -62,7 +62,7 @@ func0000000000000175:
 	lui	a3, 3
 	add	a0, a0, a2
 	lui	a2, 32
-	addiw	a3, a3, -1850
+	addi	a3, a3, -1850
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -73,7 +73,7 @@ func00000000000001d5:
 	lui	a3, 1
 	add	a0, a0, a2
 	lui	a2, 32
-	addiw	a3, a3, 1697
+	addi	a3, a3, 1697
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1

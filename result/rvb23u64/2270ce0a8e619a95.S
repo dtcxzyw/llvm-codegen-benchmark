@@ -9,8 +9,7 @@ func0000000000000003:
 
 func0000000000000000:
 	slli	a1, a1, 5
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -2
 	sll	a1, a2, a1
 	andn	a0, a0, a1

@@ -8,10 +8,10 @@ func0000000000000301:
 func000000000000004c:
 	sext.w	a0, a0
 	lui	a3, 48
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	lui	a3, 32
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	binvi	a0, a0, 20
 	snez	a0, a0
 	xor	a2, a2, a3
@@ -35,7 +35,7 @@ func0000000000000041:
 	sext.w	a0, a0
 	zext.h	a2, a2
 	lui	a3, 4
-	addiw	a3, a3, 889
+	addi	a3, a3, 889
 	seqz	a0, a0
 	xor	a2, a2, a3
 	seqz	a2, a2

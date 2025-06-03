@@ -21,7 +21,7 @@ func0000000000000015:
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
 	vsra.vi	v10, v10, 4
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v10, a0, v8
@@ -33,7 +33,7 @@ func0000000000000014:
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
 	vsra.vi	v10, v10, 3
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v10, a0, v8
@@ -54,7 +54,7 @@ func0000000000000004:
 	vsra.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1846
+	addi	a0, a0, -1846
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 1048560

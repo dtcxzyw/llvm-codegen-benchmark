@@ -7,7 +7,7 @@ func0000000000000001:
 	vor.vv	v8, v10, v8
 	vand.vx	v8, v8, a0
 	lui	a0, 328821
-	addiw	a0, a0, -428
+	addi	a0, a0, -428
 	vmseq.vx	v0, v8, a0
 	ret
 

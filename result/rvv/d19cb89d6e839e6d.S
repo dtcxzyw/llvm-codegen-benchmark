@@ -1,6 +1,6 @@
 func0000000000000385:
 	lui	a0, 32
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
 	vsll.vi	v8, v8, 16

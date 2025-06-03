@@ -4,8 +4,8 @@ func0000000000000000:
 	lui	a2, 1
 	add	a1, a1, a3
 	lui	a3, 942
-	addiw	a2, a2, -1317
-	addiw	a3, a3, 1599
+	addi	a2, a2, -1317
+	addi	a3, a3, 1599
 	mul	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

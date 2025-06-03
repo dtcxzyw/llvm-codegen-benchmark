@@ -17,7 +17,7 @@ func0000000000000003:
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	lui	a0, 163151
-	addiw	a0, a0, -1201
+	addi	a0, a0, -1201
 	vmul.vx	v8, v8, a0
 	ret
 

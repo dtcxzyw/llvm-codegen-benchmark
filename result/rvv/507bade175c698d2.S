@@ -18,7 +18,7 @@ func0000000000000195:
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048409
 	vsrl.vi	v12, v12, 21
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vmadd.vx	v12, a0, v10
 	vsub.vv	v8, v12, v8
 	ret

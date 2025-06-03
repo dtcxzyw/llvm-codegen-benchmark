@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 .LBB0_2:
 	lui	a0, 526336
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	and	a0, a0, a2
 	lui	a1, 258048
 	or	a0, a0, a1
@@ -18,7 +18,7 @@ func0000000000000000:
 	ret
 .LBB1_2:
 	lui	a0, 2
-	addiw	a0, a0, -1343
+	addi	a0, a0, -1343
 	or	a0, a0, a2
 	andi	a0, a0, -257
 	ret

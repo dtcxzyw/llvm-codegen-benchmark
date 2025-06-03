@@ -21,7 +21,7 @@ func0000000000000184:
 	xor	a1, a1, a2
 	lui	a2, 227374
 	snez	a1, a1
-	addiw	a2, a2, -1329
+	addi	a2, a2, -1329
 	slli	a2, a2, 12
 	addi	a2, a2, -1575
 	slli	a2, a2, 18

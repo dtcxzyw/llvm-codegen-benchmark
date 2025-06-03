@@ -13,7 +13,7 @@ func0000000000000002:
 	li	a3, 114
 	lui	a1, 4096
 	bne	a2, a3, .LBB1_2
-	addiw	a0, a1, 256
+	addi	a0, a1, 256
 	ret
 .LBB1_2:
 	or	a0, a0, a1

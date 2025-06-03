@@ -15,7 +15,7 @@ func0000000000000001:
 
 func0000000000000008:
 	lui	a3, 1
-	addiw	a3, a3, 4
+	addi	a3, a3, 4
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

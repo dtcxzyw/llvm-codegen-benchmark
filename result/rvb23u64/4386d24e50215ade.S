@@ -6,7 +6,7 @@ func0000000000000003:
 	czero.nez	a0, a2, a0
 	lui	a2, 419424
 	or	a0, a0, a1
-	addiw	a1, a2, 129
+	addi	a1, a2, 129
 	or	a0, a0, a1
 	ret
 

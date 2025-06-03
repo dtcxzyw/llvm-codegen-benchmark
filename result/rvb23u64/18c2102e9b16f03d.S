@@ -30,7 +30,7 @@ func0000000000000026:
 	lui	a1, 142180
 	addi	a0, a0, 136
 	zext.w	a0, a0
-	addiw	a1, a1, -833
+	addi	a1, a1, -833
 	mul	a0, a0, a1
 	srli	a0, a0, 35
 	ret

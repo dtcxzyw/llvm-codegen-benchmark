@@ -7,7 +7,7 @@ func0000000000000006:
 func0000000000000005:
 	srli	a1, a1, 32
 	lui	a2, 524544
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -21,7 +21,7 @@ func0000000000000007:
 func0000000000000001:
 	srli	a1, a1, 27
 	lui	a2, 8192
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -29,7 +29,7 @@ func0000000000000001:
 func0000000000000000:
 	srli	a1, a1, 27
 	lui	a2, 512
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

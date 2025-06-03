@@ -36,7 +36,7 @@ func000000000000018e:
 
 func0000000000000020:
 	lui	a2, 4096
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	seqz	a1, a1
 	add	a0, a0, a1

@@ -91,7 +91,7 @@ func0000000000000078:
 
 func0000000000000027:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsle.vv	v12, v10, v8

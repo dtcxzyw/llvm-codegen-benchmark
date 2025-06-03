@@ -1,7 +1,7 @@
 func000000000000021e:
 	sext.w	a1, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, 205
@@ -13,7 +13,7 @@ func000000000000021e:
 func0000000000000200:
 	sext.w	a1, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	add	a0, a0, a1
 	zext.b	a0, a0

@@ -5,7 +5,7 @@ func0000000000000155:
 	slli	a1, a1, 3
 	add	a1, a1, a3
 	lui	a3, 1048563
-	addiw	a3, a3, -80
+	addi	a3, a3, -80
 	add	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1

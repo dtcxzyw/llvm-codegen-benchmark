@@ -8,7 +8,7 @@ func0000000000000884:
 	czero.nez	a0, a0, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -1439
+	addi	a1, a1, -1439
 	sltu	a0, a0, a1
 	ret
 
@@ -47,7 +47,7 @@ func00000000000000ca:
 	czero.nez	a0, a0, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

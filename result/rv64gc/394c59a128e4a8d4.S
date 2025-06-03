@@ -10,7 +10,7 @@ func000000000000000f:
 	ret
 .LBB0_2:
 	lui	a2, 2
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	slliw	a0, a0, 2
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -33,7 +33,7 @@ func000000000000000e:
 	lui	a3, 32
 	slliw	a0, a0, 5
 	slli	a2, a2, 7
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

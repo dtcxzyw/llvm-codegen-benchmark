@@ -35,7 +35,7 @@ func000000000000002c:
 func0000000000000281:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 32
@@ -101,7 +101,7 @@ func0000000000000141:
 func000000000000028c:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	addi	a0, a0, -7
 	and	a1, a1, a2
 	seqz	a1, a1

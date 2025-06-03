@@ -16,7 +16,7 @@ func0000000000000014:
 	srliw	a1, a1, 1
 	lui	a2, 104858
 	slli	a1, a1, 1
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1

@@ -69,7 +69,7 @@ func0000000000000034:
 	lui	a0, 256
 	vmv.v.x	v10, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmerge.vxm	v10, v10, a0, v0
 	vmsltu.vv	v0, v8, v10
 	ret

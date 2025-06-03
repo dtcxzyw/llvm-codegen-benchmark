@@ -2,7 +2,7 @@ func0000000000000017:
 	li	a1, 21
 	lui	a2, 5
 	slli	a1, a1, 10
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	add	a0, a0, a1
 	slli	a1, a0, 48
 	srli	a1, a1, 50

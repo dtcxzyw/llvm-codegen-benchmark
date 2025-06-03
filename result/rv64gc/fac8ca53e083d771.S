@@ -4,7 +4,7 @@ func000000000000001b:
 	srli	a1, a1, 50
 	or	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, 192
+	addi	a1, a1, 192
 	or	a0, a0, a1
 	ret
 

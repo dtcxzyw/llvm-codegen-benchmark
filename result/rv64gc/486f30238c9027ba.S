@@ -5,7 +5,7 @@ func0000000000000000:
 	and	a2, a2, a3
 	lui	a3, 786930
 	srai	a0, a0, 63
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a2
 	slli	a3, a3, 16
 	addi	a2, a3, 127

@@ -5,7 +5,7 @@ func0000000000000061:
 	lui	a2, 777976
 	lui	a3, %hi(.LCPI0_0)
 	add	a0, a0, a1
-	addiw	a1, a2, -1057
+	addi	a1, a2, -1057
 	ld	a2, %lo(.LCPI0_0)(a3)
 	slli	a3, a1, 35
 	add	a1, a1, a3

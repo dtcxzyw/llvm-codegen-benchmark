@@ -8,9 +8,9 @@ func0000000000000001:
 .LBB0_2:
 	ret
 .LBB0_3:
-	addiw	a0, a1, 576
+	addi	a0, a1, 576
 	beqz	a2, .LBB0_2
 .LBB0_4:
-	addiw	a0, a1, 64
+	addi	a0, a1, 64
 	ret
 

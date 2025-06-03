@@ -3,7 +3,7 @@ func0000000000000021:
 	li	a2, 12
 	beq	a0, a2, .LBB0_2
 	lui	a0, 196608
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB0_2:
 	lui	a0, 286720

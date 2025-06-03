@@ -15,7 +15,7 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 1
 	lui	a0, 1048575
-	addiw	a0, a0, -617
+	addi	a0, a0, -617
 	vrsub.vx	v8, v8, a0
 	ret
 

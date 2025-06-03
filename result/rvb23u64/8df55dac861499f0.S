@@ -4,7 +4,7 @@ func0000000000000155:
 	mul	a1, a1, a3
 	lui	a3, 1048563
 	sh2add	a2, a2, a2
-	addiw	a3, a3, -80
+	addi	a3, a3, -80
 	sh2add	a1, a2, a1
 	add	a0, a0, a3
 	add	a0, a0, a1

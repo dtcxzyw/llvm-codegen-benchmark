@@ -2,7 +2,7 @@ func0000000000000000:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 419430
-	addiw	a2, a2, 1639
+	addi	a2, a2, 1639
 	addiw	a1, a1, -457
 	mul	a1, a1, a2
 	srli	a2, a1, 63

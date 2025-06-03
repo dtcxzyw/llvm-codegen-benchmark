@@ -4,7 +4,7 @@ func0000000000000078:
 	vand.vi	v14, v10, 1
 	lui	a0, 8192
 	vadd.vv	v10, v14, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v8, v8, 0, v0

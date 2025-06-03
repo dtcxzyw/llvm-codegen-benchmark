@@ -21,7 +21,7 @@ func0000000000000128:
 	lui	a1, 699051
 	srli	a0, a0, 32
 	vsra.vi	v8, v8, 3
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	vand.vx	v10, v12, a0
 	slli	a0, a1, 32
 	add	a0, a0, a1

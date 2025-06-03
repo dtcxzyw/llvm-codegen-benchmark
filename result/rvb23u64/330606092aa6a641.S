@@ -1,8 +1,7 @@
 func0000000000000048:
 	sub	a2, a2, a1
-	li	a1, 1
+	bseti	a1, zero, 33
 	addi	a2, a2, -12
-	slli	a1, a1, 33
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	sltu	a0, a2, a0

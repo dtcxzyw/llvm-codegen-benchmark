@@ -16,7 +16,7 @@ func0000000000000001:
 
 func000000000000000a:
 	lui	a2, 1172
-	addiw	a2, a2, -511
+	addi	a2, a2, -511
 	bseti	a2, a2, 63
 	slt	a1, a2, a1
 	and	a0, a0, a1

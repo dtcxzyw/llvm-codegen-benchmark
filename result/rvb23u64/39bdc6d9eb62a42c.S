@@ -18,14 +18,14 @@ func000000000000000c:
 	subw	a1, a1, a2
 	lui	a2, 18
 	sh1add	a0, a1, a0
-	addiw	a1, a2, 992
+	addi	a1, a2, 992
 	add	a0, a0, a1
 	ret
 
 func000000000000000e:
 	addiw	a1, a1, 1
 	lui	a2, 349525
-	addiw	a2, a2, 1366
+	addi	a2, a2, 1366
 	mul	a2, a2, a1
 	srli	a3, a2, 63
 	srli	a2, a2, 32

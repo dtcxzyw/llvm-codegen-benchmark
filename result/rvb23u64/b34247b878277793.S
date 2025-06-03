@@ -11,7 +11,7 @@ func0000000000000010:
 	mul	a1, a1, a2
 	lui	a2, 12
 	add	a0, a0, a1
-	addiw	a1, a2, 400
+	addi	a1, a2, 400
 	add	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000030:
 	mul	a1, a1, a2
 	lui	a2, 12
 	add	a0, a0, a1
-	addiw	a1, a2, 344
+	addi	a1, a2, 344
 	add	a0, a0, a1
 	ret
 
@@ -49,10 +49,10 @@ func00000000000000fb:
 func00000000000000d0:
 	add	a0, a0, a2
 	lui	a2, 1
-	addiw	a2, a2, 260
+	addi	a2, a2, 260
 	mul	a1, a1, a2
 	lui	a2, 544
-	addiw	a2, a2, 20
+	addi	a2, a2, 20
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -22,7 +22,7 @@ func0000000000000015:
 	slli	a2, a2, 41
 	lui	a3, 1048332
 	srli	a2, a2, 43
-	addiw	a3, a3, 1619
+	addi	a3, a3, 1619
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

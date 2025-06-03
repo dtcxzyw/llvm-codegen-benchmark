@@ -3,7 +3,7 @@ func0000000000000004:
 	slliw	a1, a1, 1
 	bgeu	a1, a2, .LBB0_2
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB0_2:
 	ret
 

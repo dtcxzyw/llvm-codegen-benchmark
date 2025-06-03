@@ -16,7 +16,7 @@ func0000000000000001:
 func000000000000000c:
 	sext.w	a1, a1
 	lui	a2, 1048560
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a0, a0, a2
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -25,7 +25,7 @@ func000000000000000c:
 func000000000000000a:
 	sext.w	a1, a1
 	lui	a2, 7
-	addiw	a2, a2, 1326
+	addi	a2, a2, 1326
 	slt	a1, a2, a1
 	zext.h	a0, a0
 	czero.nez	a0, a0, a1

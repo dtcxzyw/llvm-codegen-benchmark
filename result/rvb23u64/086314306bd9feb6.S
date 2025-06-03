@@ -9,7 +9,7 @@ func0000000000000080:
 
 func000000000000018d:
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltu	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3

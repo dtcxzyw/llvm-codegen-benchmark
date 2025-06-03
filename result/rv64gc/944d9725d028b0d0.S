@@ -3,7 +3,7 @@ func0000000000000007:
 	lui	a1, 274878
 	lui	a2, 2
 	addi	a1, a1, -381
-	addiw	a2, a2, 197
+	addi	a2, a2, 197
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 50
@@ -21,7 +21,7 @@ func0000000000000005:
 	lui	a1, 286331
 	lui	a2, 9
 	addi	a1, a1, 627
-	addiw	a2, a2, -1911
+	addi	a2, a2, -1911
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 46
@@ -53,7 +53,7 @@ func0000000000000001:
 	sub	a1, a1, a2
 	lui	a2, 16
 	add	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 

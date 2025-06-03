@@ -3,7 +3,7 @@ func0000000000000d84:
 	vmv.v.i	v12, 1
 	lui	a0, 25056
 	vsll.vv	v10, v12, v10
-	addiw	a0, a0, 1823
+	addi	a0, a0, 1823
 	vand.vx	v10, v10, a0
 	lui	a0, 8
 	vmsne.vi	v9, v10, 0
@@ -17,7 +17,7 @@ func0000000000000984:
 	vmv.v.i	v12, 1
 	lui	a0, 32
 	vsll.vv	v10, v12, v10
-	addiw	a0, a0, -48
+	addi	a0, a0, -48
 	vand.vx	v10, v10, a0
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma

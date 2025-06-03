@@ -2,7 +2,7 @@ func0000000000000028:
 	sext.h	a1, a1
 	addw	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -359
+	addi	a1, a1, -359
 	sltu	a0, a1, a0
 	ret
 
@@ -10,7 +10,7 @@ func0000000000000024:
 	sext.h	a1, a1
 	addw	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -358
+	addi	a1, a1, -358
 	sltu	a0, a0, a1
 	ret
 
@@ -67,7 +67,7 @@ func0000000000000004:
 	sext.h	a1, a1
 	addw	a0, a0, a1
 	lui	a1, 39
-	addiw	a1, a1, -1932
+	addi	a1, a1, -1932
 	sltu	a0, a0, a1
 	ret
 

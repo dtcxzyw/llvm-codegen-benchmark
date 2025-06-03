@@ -11,7 +11,7 @@ func0000000000000001:
 	beqz	a1, .LBB1_2
 	addi	a0, a2, 40
 	lui	a1, 1
-	addiw	a1, a1, -33
+	addi	a1, a1, -33
 	and	a0, a0, a1
 .LBB1_2:
 	ret

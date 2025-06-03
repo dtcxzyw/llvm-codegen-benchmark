@@ -2,7 +2,7 @@ func0000000000000021:
 	zext.h	a0, a0
 	lui	a1, 11
 	li	a2, -8
-	addiw	a1, a1, -1912
+	addi	a1, a1, -1912
 	xor	a1, a1, a0
 	czero.eqz	a1, a2, a1
 	li	a2, 18

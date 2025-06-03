@@ -88,7 +88,7 @@ func00000000000000a0:
 func00000000000000c0:
 	sext.w	a1, a1
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	sltu	a1, a2, a1
 	addw	a0, a0, a1
 	ret

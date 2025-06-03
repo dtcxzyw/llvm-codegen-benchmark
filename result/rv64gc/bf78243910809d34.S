@@ -100,7 +100,7 @@ func0000000000000c21:
 
 func0000000000000a21:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	slt	a2, a3, a2
 	add	a1, a1, a2
 	xor	a0, a0, a1
@@ -109,7 +109,7 @@ func0000000000000a21:
 
 func0000000000000a26:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	slt	a2, a3, a2
 	add	a1, a1, a2
 	slt	a0, a0, a1

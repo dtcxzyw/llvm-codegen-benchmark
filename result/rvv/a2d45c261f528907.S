@@ -17,11 +17,11 @@ func000000000000002c:
 	li	a0, 30
 	vmseq.vx	v10, v10, a0
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	lui	a0, 12
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

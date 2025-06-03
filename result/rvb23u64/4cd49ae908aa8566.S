@@ -14,7 +14,7 @@ func0000000000000001:
 	czero.nez	a0, a3, a0
 	lui	a3, 1048565
 	slliw	a1, a1, 12
-	addiw	a3, a3, -37
+	addi	a3, a3, -37
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

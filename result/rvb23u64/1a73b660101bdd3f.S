@@ -3,7 +3,7 @@ func0000000000000003:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	or	a0, a0, a2
 	and	a0, a0, a1
 	li	a1, -16

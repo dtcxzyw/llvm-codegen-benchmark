@@ -3,7 +3,7 @@ func0000000000000006:
 	li	a2, 2
 	bge	a1, a2, .LBB0_2
 	lui	a0, 1123
-	addiw	a0, a0, -1485
+	addi	a0, a0, -1485
 .LBB0_2:
 	ret
 

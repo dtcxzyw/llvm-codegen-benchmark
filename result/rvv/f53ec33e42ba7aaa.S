@@ -1,6 +1,6 @@
 func00000000000004ca:
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmslt.vx	v0, v10, a0
 	vmv.v.x	v10, a0

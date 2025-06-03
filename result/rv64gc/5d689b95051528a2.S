@@ -8,7 +8,7 @@ func0000000000000004:
 
 func0000000000000038:
 	lui	a2, 1048571
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	neg	a1, a1
@@ -33,7 +33,7 @@ func0000000000000008:
 
 func0000000000000018:
 	lui	a2, 524288
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a2, a2, 20
 	add	a1, a1, a2
 	addi	a2, a2, -1

@@ -4,7 +4,7 @@ func0000000000000021:
 	or	a1, a1, a2
 	bnez	a1, .LBB0_2
 	lui	a0, 17
-	addiw	a0, a0, -629
+	addi	a0, a0, -629
 .LBB0_2:
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000181:
 	and	a1, a1, a2
 	beqz	a1, .LBB1_2
 	lui	a0, 2081
-	addiw	a0, a0, -986
+	addi	a0, a0, -986
 .LBB1_2:
 	ret
 
@@ -49,7 +49,7 @@ func0000000000000184:
 	zext.b	a2, a2
 	lui	a3, 524287
 	addi	a2, a2, -83
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	snez	a2, a2
 	sltu	a1, a1, a3
 	and	a1, a1, a2

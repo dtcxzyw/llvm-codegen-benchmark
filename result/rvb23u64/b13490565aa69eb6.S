@@ -17,7 +17,7 @@ func0000000000000055:
 	sh2add	a1, a1, a1
 	lui	a2, 1048563
 	sh1add	a0, a1, a0
-	addiw	a1, a2, -80
+	addi	a1, a2, -80
 	add	a0, a0, a1
 	ret
 
@@ -35,17 +35,17 @@ func0000000000000054:
 	mul	a1, a1, a2
 	lui	a2, 176
 	add	a0, a0, a1
-	addiw	a1, a2, -1429
+	addi	a1, a2, -1429
 	add	a0, a0, a1
 	ret
 
 func0000000000000010:
 	add	a0, a0, a2
 	lui	a2, 36
-	addiw	a2, a2, -1359
+	addi	a2, a2, -1359
 	mul	a1, a1, a2
 	lui	a2, 1048400
-	addiw	a2, a2, 1427
+	addi	a2, a2, 1427
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

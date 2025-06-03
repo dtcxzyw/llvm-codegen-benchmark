@@ -60,11 +60,10 @@ func000000000000001b:
 
 func000000000000001e:
 	add	a0, a0, a1
-	li	a1, -1
+	bseti	a1, zero, 33
 	slli	a0, a0, 1
-	slli	a1, a1, 33
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a1, a1, -2
+	orn	a0, a0, a1
 	ret
 
 func000000000000001d:

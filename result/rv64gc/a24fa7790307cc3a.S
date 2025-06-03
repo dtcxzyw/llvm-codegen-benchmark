@@ -47,7 +47,7 @@ func00000000000000a8:
 	or	a1, a1, a2
 	lui	a2, 5
 	sub	a1, a1, a0
-	addiw	a0, a2, -480
+	addi	a0, a2, -480
 	sltu	a0, a0, a1
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000004:
 	or	a1, a1, a2
 	lui	a2, 9766
 	sub	a1, a1, a0
-	addiw	a0, a2, -1536
+	addi	a0, a2, -1536
 	sltu	a0, a1, a0
 	ret
 

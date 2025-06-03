@@ -11,7 +11,7 @@ func0000000000000015:
 	zext.w	a2, a2
 	sub	a0, a2, a0
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

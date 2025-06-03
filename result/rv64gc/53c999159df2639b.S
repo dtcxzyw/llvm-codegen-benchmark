@@ -27,7 +27,7 @@ func00000000000000cc:
 	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 96
+	addi	a2, a2, 96
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 112
@@ -39,7 +39,7 @@ func00000000000000ff:
 	slli	a2, a2, 20
 	mulhu	a1, a1, a2
 	lui	a2, 11
-	addiw	a2, a2, 1815
+	addi	a2, a2, 1815
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	lui	a1, 8

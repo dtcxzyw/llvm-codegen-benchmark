@@ -1,7 +1,7 @@
 func00000000000000c8:
 	sext.w	a3, a0
 	lui	a2, 1
-	addiw	a4, a2, 1
+	addi	a4, a2, 1
 	bltu	a3, a4, .LBB0_2
 	add	a0, a1, a2
 .LBB0_2:

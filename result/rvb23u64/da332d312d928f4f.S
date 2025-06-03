@@ -36,7 +36,7 @@ func000000000000006f:
 	sext.b	a1, a1
 	lui	a2, 8
 	slti	a1, a1, 0
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8
@@ -46,8 +46,8 @@ func000000000000006c:
 	sext.b	a1, a1
 	lui	a2, 8
 	slti	a1, a1, 0
-	addiw	a3, a2, 16
-	addiw	a2, a2, 7
+	addi	a3, a2, 16
+	addi	a2, a2, 7
 	czero.nez	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1

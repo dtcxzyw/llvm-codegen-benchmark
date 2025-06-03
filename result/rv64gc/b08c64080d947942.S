@@ -34,7 +34,7 @@ func0000000000000050:
 
 func0000000000000308:
 	lui	a1, 524288
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	and	a1, a1, a0
 	snez	a1, a1
 	sltiu	a0, a0, 16
@@ -43,7 +43,7 @@ func0000000000000308:
 
 func0000000000000068:
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a1, a1, a0
 	addi	a1, a1, -4
 	seqz	a1, a1

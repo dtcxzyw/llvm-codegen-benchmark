@@ -3,7 +3,7 @@ func0000000000000004:
 	sext.w	a1, a1
 	bnez	a2, .LBB0_2
 	lui	a2, 1
-	addiw	a2, a2, -1952
+	addi	a2, a2, -1952
 	bnez	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:

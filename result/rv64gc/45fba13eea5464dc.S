@@ -6,7 +6,7 @@ func0000000000000001:
 .LBB0_2:
 	srai	a0, a2, 1
 	lui	a1, 1
-	addiw	a1, a1, 616
+	addi	a1, a1, 616
 	add	a0, a0, a1
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000005:
 .LBB1_2:
 	srai	a0, a2, 32
 	lui	a1, 176
-	addiw	a1, a1, -1428
+	addi	a1, a1, -1428
 	add	a0, a0, a1
 	ret
 

@@ -159,7 +159,7 @@ func0000000000000086:
 	ret
 .LBB15_2:
 	lui	a1, 6019
-	addiw	a1, a1, 551
+	addi	a1, a1, 551
 	slli	a1, a1, 7
 	slt	a0, a0, a1
 	ret

@@ -37,7 +37,7 @@ func00000000000000a4:
 	srai	a1, a1, 63
 	add	a0, a0, a1
 	lui	a1, 524464
-	addiw	a1, a1, -1733
+	addi	a1, a1, -1733
 	add	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 32

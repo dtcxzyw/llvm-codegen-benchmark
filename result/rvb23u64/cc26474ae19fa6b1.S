@@ -43,7 +43,7 @@ func0000000000000068:
 
 func0000000000000024:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	srli	a2, a2, 12
 	add	a1, a1, a2
@@ -52,7 +52,7 @@ func0000000000000024:
 
 func0000000000000008:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	srli	a2, a2, 12
 	add	a1, a1, a2

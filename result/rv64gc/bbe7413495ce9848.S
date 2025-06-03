@@ -4,7 +4,7 @@ func0000000000000082:
 	srliw	a1, a1, 16
 	xor	a2, a2, a3
 	lui	a3, 12
-	addiw	a3, a3, 168
+	addi	a3, a3, 168
 	seqz	a2, a2
 	xor	a1, a1, a3
 	or	a0, a0, a2
@@ -140,10 +140,10 @@ func0000000000000518:
 func0000000000000504:
 	sext.w	a1, a1
 	lui	a3, 16384
-	addiw	a3, a3, -32
+	addi	a3, a3, -32
 	and	a2, a2, a3
 	lui	a3, 272
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a1, a3, a1
 	addi	a2, a2, -864
 	seqz	a2, a2

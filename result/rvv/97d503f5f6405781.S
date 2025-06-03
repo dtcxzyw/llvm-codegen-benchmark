@@ -14,7 +14,7 @@ func0000000000000088:
 	vmv.v.i	v11, 8
 	lui	a0, 1
 	vwsll.vv	v8, v11, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -25,7 +25,7 @@ func0000000000000184:
 	vmv.v.i	v11, 8
 	lui	a0, 1
 	vwsll.vv	v8, v11, v10
-	addiw	a0, a0, -39
+	addi	a0, a0, -39
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	ret

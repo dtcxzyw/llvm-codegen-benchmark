@@ -9,10 +9,10 @@ func0000000000000001:
 func0000000000000000:
 	andi	a0, a0, 1
 	lui	a3, 786432
-	addiw	a3, a3, 1280
+	addi	a3, a3, 1280
 	and	a2, a2, a3
 	lui	a3, 921600
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	or	a1, a1, a2
 	czero.nez	a2, a3, a0
 	czero.eqz	a0, a1, a0

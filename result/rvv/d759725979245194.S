@@ -4,7 +4,7 @@ func000000000000000a:
 	vmv.v.i	v10, -2
 	lui	a0, 748983
 	vsra.vi	v8, v8, 3
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v8

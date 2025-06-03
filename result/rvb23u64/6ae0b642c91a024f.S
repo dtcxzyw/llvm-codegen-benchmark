@@ -97,7 +97,7 @@ func0000000000000081:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, 705
+	addi	a3, a3, 705
 	sltu	a2, a2, a3
 	li	a3, 2
 	sub	a3, a3, a2

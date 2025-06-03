@@ -32,7 +32,7 @@ func0000000000000061:
 func0000000000000006:
 	bnez	a2, .LBB4_2
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 .LBB4_2:
 	add	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func0000000000000018:
 	li	a3, -2048
 	bge	a2, a3, .LBB5_2
 	lui	a1, 1047599
-	addiw	a1, a1, 1792
+	addi	a1, a1, 1792
 .LBB5_2:
 	add	a0, a0, a1
 	ret

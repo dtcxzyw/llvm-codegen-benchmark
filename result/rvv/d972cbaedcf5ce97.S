@@ -22,7 +22,7 @@ func0000000000000021:
 	vmseq.vi	v12, v10, 0
 	lui	a0, 268352
 	vmand.mm	v0, v14, v12
-	addiw	a0, a0, 1170
+	addi	a0, a0, 1170
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

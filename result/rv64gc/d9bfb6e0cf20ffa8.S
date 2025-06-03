@@ -42,7 +42,7 @@ func000000000000008a:
 	subw	a1, a0, a1
 .LBB4_2:
 	lui	a0, 2
-	addiw	a0, a0, 1807
+	addi	a0, a0, 1807
 	slt	a0, a0, a1
 	ret
 

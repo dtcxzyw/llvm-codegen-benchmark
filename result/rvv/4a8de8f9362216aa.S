@@ -15,7 +15,7 @@ func0000000000000013:
 	vadd.vv	v10, v10, v12
 	lui	a0, 209715
 	vsrl.vi	v10, v10, 2
-	addiw	a0, a0, 819
+	addi	a0, a0, 819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0

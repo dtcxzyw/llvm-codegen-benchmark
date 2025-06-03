@@ -8,7 +8,7 @@ func0000000000000005:
 	slli	a1, a1, 43
 	lui	a2, 1048332
 	srli	a1, a1, 43
-	addiw	a2, a2, 1619
+	addi	a2, a2, 1619
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

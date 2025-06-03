@@ -33,16 +33,16 @@ func000000000000000c:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, 1131
+	addi	a3, a3, 1131
 	czero.eqz	a2, a3, a2
 	lui	a3, 3
-	addiw	a3, a3, 1045
+	addi	a3, a3, 1045
 	czero.nez	a1, a3, a1
 	lui	a3, 49
-	addiw	a3, a3, -704
+	addi	a3, a3, -704
 	add	a2, a2, a3
 	lui	a3, 78
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	add	a1, a1, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -56,7 +56,7 @@ func0000000000000014:
 	li	a3, 3
 	czero.nez	a1, a3, a1
 	lui	a3, 32
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sltu	a2, a2, a3
 	li	a3, 4
 	addiw	a1, a1, 12

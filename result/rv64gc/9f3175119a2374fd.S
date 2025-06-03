@@ -10,7 +10,7 @@ func0000000000000021:
 func000000000000002c:
 	lui	a2, 16
 	andi	a0, a0, 15
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	addi	a0, a0, -4
 	and	a1, a1, a2
 	seqz	a1, a1

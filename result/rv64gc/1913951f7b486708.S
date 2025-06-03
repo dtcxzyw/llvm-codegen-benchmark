@@ -36,7 +36,7 @@ func0000000000000084:
 	addiw	a1, a1, -1
 	lui	a2, 262144
 	srliw	a0, a0, 30
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	xor	a0, a0, a1

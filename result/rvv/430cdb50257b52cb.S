@@ -1,6 +1,6 @@
 func0000000000001042:
 	lui	a0, 753
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vsrl.vv	v10, v12, v10

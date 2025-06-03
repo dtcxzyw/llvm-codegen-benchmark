@@ -1,6 +1,6 @@
 func0000000000000007:
 	lui	a0, 512
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	lui	a1, 524288
@@ -15,13 +15,13 @@ func0000000000000001:
 	vadd.vi	v8, v8, 7
 	lui	a0, 8
 	vand.vi	v8, v8, -8
-	addiw	a0, a0, -40
+	addi	a0, a0, -40
 	vmaxu.vx	v8, v8, a0
 	ret
 
 func0000000000000005:
 	lui	a0, 4096
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	lui	a1, 1044480

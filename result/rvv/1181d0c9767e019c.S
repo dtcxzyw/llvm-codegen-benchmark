@@ -60,7 +60,7 @@ func0000000000000028:
 
 func0000000000000037:
 	lui	a0, 488281
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vsll.vv	v10, v12, v10

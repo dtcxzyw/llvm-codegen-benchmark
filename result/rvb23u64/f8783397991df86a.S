@@ -5,7 +5,7 @@ func000000000000002c:
 	andn	a2, a2, a3
 	lui	a3, 32768
 	snez	a1, a1
-	addiw	a3, a3, 5
+	addi	a3, a3, 5
 	slli	a3, a3, 10
 	seqz	a2, a2
 	and	a1, a1, a2

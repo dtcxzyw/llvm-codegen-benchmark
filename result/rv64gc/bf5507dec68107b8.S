@@ -21,7 +21,7 @@ func0000000000000003:
 	or	a0, a0, a1
 	lui	a1, 131072
 	addiw	a0, a0, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -32,7 +32,7 @@ func0000000000000006:
 	li	a1, 19
 	bge	a1, a0, .LBB2_3
 	lui	a1, 122
-	addiw	a1, a1, 287
+	addi	a1, a1, 287
 	bge	a0, a1, .LBB2_4
 .LBB2_2:
 	addi	a0, a0, 1
@@ -40,7 +40,7 @@ func0000000000000006:
 .LBB2_3:
 	li	a0, 19
 	lui	a1, 122
-	addiw	a1, a1, 287
+	addi	a1, a1, 287
 	blt	a0, a1, .LBB2_2
 .LBB2_4:
 	addi	a0, a1, 1

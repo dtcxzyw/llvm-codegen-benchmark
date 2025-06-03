@@ -12,7 +12,7 @@ func0000000000000003:
 	vmv.v.x	v10, a0
 	vdivu.vv	v8, v10, v8
 	lui	a0, 2
-	addiw	a0, a0, 1806
+	addi	a0, a0, 1806
 	vadd.vx	v8, v8, a0
 	ret
 

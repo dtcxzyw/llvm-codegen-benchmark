@@ -9,7 +9,7 @@ func000000000000000a:
 	lui	a1, 65536
 	bclri	a0, a0, 29
 	bclri	a0, a0, 30
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

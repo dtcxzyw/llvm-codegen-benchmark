@@ -6,7 +6,7 @@ func0000000000000010:
 
 func0000000000000002:
 	lui	a2, 297243
-	addiw	a2, a2, 1055
+	addi	a2, a2, 1055
 	slli	a2, a2, 1
 	xor	a1, a1, a2
 	seqz	a1, a1

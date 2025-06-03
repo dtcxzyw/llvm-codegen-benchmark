@@ -4,7 +4,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 4
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)

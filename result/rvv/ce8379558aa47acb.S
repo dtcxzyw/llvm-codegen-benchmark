@@ -11,7 +11,7 @@ func0000000000000061:
 	vzext.vf8	v12, v10
 	lui	a0, 65279
 	vmul.vv	v8, v8, v12
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 	vmseq.vx	v0, v8, a0
 	ret
 
@@ -20,7 +20,7 @@ func000000000000006c:
 	vzext.vf8	v12, v10
 	lui	a0, 65279
 	vmul.vv	v8, v8, v12
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 	vmsne.vx	v0, v8, a0
 	ret
 

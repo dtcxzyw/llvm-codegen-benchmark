@@ -31,7 +31,7 @@ func0000000000000438:
 	or	a1, a1, a2
 	lui	a2, 1
 	sext.w	a1, a1
-	addiw	a2, a2, -1021
+	addi	a2, a2, -1021
 	sltiu	a0, a0, 5
 	xor	a1, a1, a2
 	seqz	a1, a1

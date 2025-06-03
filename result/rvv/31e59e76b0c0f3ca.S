@@ -32,7 +32,7 @@ func0000000000000001:
 	lui	a0, 804435
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
@@ -49,7 +49,7 @@ func0000000000000007:
 	lui	a0, 17
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
-	addiw	a0, a0, -1063
+	addi	a0, a0, -1063
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

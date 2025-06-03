@@ -103,7 +103,7 @@ func0000000000000188:
 	addiw	a2, a2, 12
 	slt	a1, a1, a2
 	lui	a2, 524288
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

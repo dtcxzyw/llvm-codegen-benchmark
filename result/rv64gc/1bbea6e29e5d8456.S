@@ -7,7 +7,7 @@ func000000000000000c:
 func0000000000000026:
 	addw	a0, a0, a1
 	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addi	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -32,7 +32,7 @@ func000000000000002c:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 10486
-	addiw	a1, a1, -984
+	addi	a1, a1, -984
 	sltu	a0, a1, a0
 	ret
 
@@ -48,14 +48,14 @@ func0000000000000021:
 	srliw	a0, a0, 4
 	or	a0, a0, a1
 	lui	a1, 2621
-	addiw	a1, a1, 1803
+	addi	a1, a1, 1803
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000006:
 	addw	a0, a0, a1
 	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addi	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -71,7 +71,7 @@ func0000000000000006:
 func0000000000000028:
 	addw	a0, a0, a1
 	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addi	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -114,7 +114,7 @@ func0000000000000004:
 func000000000000000a:
 	addw	a0, a0, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	mul	a1, a0, a1
 	srli	a2, a1, 63
 	srli	a1, a1, 32

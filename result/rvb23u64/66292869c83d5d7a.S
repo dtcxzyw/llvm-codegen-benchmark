@@ -1,7 +1,7 @@
 func0000000000000001:
 	sext.b	a0, a0
 	lui	a1, 20678
-	addiw	a1, a1, -737
+	addi	a1, a1, -737
 	xor	a0, a0, a1
 	ret
 

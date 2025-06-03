@@ -53,7 +53,7 @@ func0000000000000114:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v8, v8, 1
@@ -103,7 +103,7 @@ func0000000000000e84:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 1
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v9, v10, a0
 	li	a0, 256
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -115,7 +115,7 @@ func0000000000000501:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 2
-	addiw	a0, a0, 1807
+	addi	a0, a0, 1807
 	vmsgtu.vx	v9, v10, a0
 	li	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma

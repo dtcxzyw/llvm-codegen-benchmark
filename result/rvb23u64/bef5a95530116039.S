@@ -31,7 +31,7 @@ func0000000000000000:
 	subw	a0, a0, a1
 	lui	a1, 4841
 	zext.w	a0, a0
-	addiw	a1, a1, -611
+	addi	a1, a1, -611
 	slli	a1, a1, 11
 	mul	a0, a0, a1
 	ret

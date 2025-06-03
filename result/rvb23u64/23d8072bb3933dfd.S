@@ -16,7 +16,7 @@ func0000000000000000:
 	andi	a1, a1, -64
 	sh2add.uw	a0, a0, a1
 	lui	a1, 313
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -25,7 +25,7 @@ func0000000000000013:
 	sext.w	a0, a0
 	sh2add	a0, a0, a1
 	lui	a1, 225
-	addiw	a1, a1, 1280
+	addi	a1, a1, 1280
 	add	a0, a0, a1
 	ret
 

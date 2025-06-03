@@ -12,12 +12,12 @@ func0000000000000004:
 	andi	a2, a2, 1
 	lui	a1, 7
 	bnez	a2, .LBB1_2
-	addiw	a1, a1, -1851
+	addi	a1, a1, -1851
 	li	a2, 5
 	bgeu	a3, a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addiw	a1, a1, -1855
+	addi	a1, a1, -1855
 	li	a2, 5
 	bltu	a3, a2, .LBB1_4
 .LBB1_3:

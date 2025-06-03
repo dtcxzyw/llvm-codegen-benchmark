@@ -24,7 +24,7 @@ func0000000000000015:
 	add	a0, a0, a1
 	lui	a1, 176
 	add	a0, a0, a2
-	addiw	a1, a1, -1428
+	addi	a1, a1, -1428
 	add	a0, a0, a1
 	ret
 

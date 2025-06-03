@@ -1,6 +1,6 @@
 func000000000000000a:
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -64,7 +64,7 @@ func0000000000000008:
 	lui	a1, 24414
 	srli	a0, a0, 26
 	sext.w	a0, a0
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	sltu	a0, a1, a0
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000018:
 	lui	a1, 244
 	srli	a0, a0, 26
 	sext.w	a0, a0
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	sltu	a0, a1, a0
 	ret
 

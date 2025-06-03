@@ -15,8 +15,7 @@ func0000000000000080:
 	ret
 
 func00000000000000f0:
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -8
 	sh2add	a1, a1, a2
 	addi	a2, a2, 4

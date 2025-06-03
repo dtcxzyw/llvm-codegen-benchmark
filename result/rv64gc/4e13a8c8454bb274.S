@@ -2,7 +2,7 @@ func000000000000000a:
 	li	a2, 100
 	subw	a2, a2, a1
 	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mulw	a0, a2, a0
 	mul	a0, a0, a1
 	srli	a1, a0, 63
@@ -14,7 +14,7 @@ func0000000000000008:
 	li	a2, 100
 	subw	a2, a2, a1
 	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mulw	a0, a2, a0
 	mul	a0, a0, a1
 	srli	a1, a0, 63

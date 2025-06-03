@@ -20,7 +20,7 @@ func0000000000000184:
 func000000000000002c:
 	zext.h	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	addi	a0, a0, -4
 	and	a1, a1, a2
 	seqz	a1, a1
@@ -31,7 +31,7 @@ func000000000000002c:
 func000000000000018c:
 	zext.h	a0, a0
 	lui	a2, 4096
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	binvi	a1, a1, 16
 	or	a0, a0, a1

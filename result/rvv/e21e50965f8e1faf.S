@@ -31,7 +31,7 @@ func0000000000000010:
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmacc.vx	v8, a0, v10
 	ret

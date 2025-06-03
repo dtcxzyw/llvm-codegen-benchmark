@@ -69,7 +69,7 @@ func0000000000000404:
 func0000000000000481:
 	addw	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, 34
+	addi	a1, a1, 34
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -85,7 +85,7 @@ func0000000000000086:
 	add	a0, a0, a1
 	lui	a1, 2441
 	addiw	a0, a0, 1
-	addiw	a1, a1, 1664
+	addi	a1, a1, 1664
 	slt	a0, a0, a1
 	ret
 

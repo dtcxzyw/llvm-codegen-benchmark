@@ -26,7 +26,7 @@ func000000000000002c:
 func0000000000000184:
 	lui	a2, 25056
 	srliw	a0, a0, 15
-	addiw	a2, a2, 1823
+	addi	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

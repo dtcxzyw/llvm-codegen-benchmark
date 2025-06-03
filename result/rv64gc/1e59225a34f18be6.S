@@ -2,7 +2,7 @@ func0000000000000025:
 	li	a3, 13
 	mulw	a2, a2, a3
 	lui	a3, 419430
-	addiw	a3, a3, 1639
+	addi	a3, a3, 1639
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 33
@@ -16,7 +16,7 @@ func0000000000000020:
 	addi	a3, a3, 1408
 	mulw	a2, a2, a3
 	lui	a3, 528416
-	addiw	a3, a3, 1033
+	addi	a3, a3, 1033
 	mul	a3, a2, a3
 	srli	a3, a3, 32
 	add	a2, a2, a3
@@ -32,7 +32,7 @@ func0000000000000000:
 	slli	a2, a2, 6
 	addw	a2, a2, a3
 	lui	a3, 419430
-	addiw	a3, a3, 1639
+	addi	a3, a3, 1639
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 34

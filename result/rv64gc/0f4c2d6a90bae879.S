@@ -43,7 +43,7 @@ func000000000000000a:
 	addi	a3, a3, 1536
 	mul	a2, a2, a3
 	addw	a0, a0, a2
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	slt	a0, a1, a0
 	ret
 

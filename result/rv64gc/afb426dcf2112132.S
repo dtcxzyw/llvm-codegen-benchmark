@@ -17,7 +17,7 @@ func00000000000002d8:
 func00000000000000c8:
 	lui	a1, 2
 	fmv.w.x	fa5, zero
-	addiw	a1, a1, 1809
+	addi	a1, a1, 1809
 	slt	a0, a0, a1
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1

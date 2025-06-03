@@ -62,7 +62,7 @@ func0000000000000018:
 	vand.vi	v12, v12, 1
 	lui	a0, 29
 	vmsne.vi	v0, v12, 0
-	addiw	a0, a0, 1216
+	addi	a0, a0, 1216
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmerge.vvm	v10, v12, v10, v0

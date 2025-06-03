@@ -2,7 +2,7 @@ func0000000000000021:
 	zext.b	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	addi	a1, a1, -255
 	xor	a2, a2, a3
 	seqz	a1, a1

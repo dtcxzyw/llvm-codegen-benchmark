@@ -14,7 +14,7 @@ func0000000000000033:
 	srli	a1, a1, 61
 	mul	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 720
+	addi	a2, a2, 720
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -25,7 +25,7 @@ func0000000000000030:
 	srli	a1, a1, 61
 	mul	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, 724
+	addi	a2, a2, 724
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

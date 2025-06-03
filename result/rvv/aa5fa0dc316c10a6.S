@@ -1,7 +1,7 @@
 func0000000000000000:
 	lui	a0, 4
 	li	a1, 5
-	addiw	a0, a0, 423
+	addi	a0, a0, 423
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 524288
@@ -21,7 +21,7 @@ func0000000000000000:
 func0000000000000015:
 	lui	a0, 4
 	li	a1, 5
-	addiw	a0, a0, 423
+	addi	a0, a0, 423
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 524288
@@ -41,7 +41,7 @@ func0000000000000015:
 func0000000000000035:
 	lui	a0, 4
 	li	a1, 5
-	addiw	a0, a0, 423
+	addi	a0, a0, 423
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 524288

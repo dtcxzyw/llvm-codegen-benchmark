@@ -16,7 +16,7 @@ func00000000000000a8:
 	li	a2, 16
 	bgeu	a2, a1, .LBB1_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB1_2:
 	ret
 
@@ -27,7 +27,7 @@ func00000000000000e8:
 	li	a2, 16
 	bgeu	a2, a1, .LBB2_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB2_2:
 	ret
 
@@ -49,7 +49,7 @@ func00000000000001f8:
 	li	a2, 16
 	bgeu	a2, a1, .LBB4_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB4_2:
 	ret
 

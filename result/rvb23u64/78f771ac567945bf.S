@@ -16,7 +16,7 @@ func000000000000000b:
 	sub	a0, a0, a1
 	lui	a1, 244
 	max	a0, a0, zero
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	add	a0, a0, a1
 	ret
 

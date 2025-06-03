@@ -4,7 +4,7 @@ func0000000000000102:
 	sltiu	a2, a2, 2
 	and	a0, a0, a2
 	lui	a2, 11
-	addiw	a2, a2, -956
+	addi	a2, a2, -956
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1

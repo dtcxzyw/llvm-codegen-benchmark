@@ -29,7 +29,7 @@ func0000000000000121:
 
 func0000000000000061:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srai	a2, a1, 63
 	srli	a2, a2, 48

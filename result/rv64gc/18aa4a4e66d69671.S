@@ -30,7 +30,7 @@ func0000000000000068:
 	add	a1, a1, a2
 	lui	a2, 815559
 	subw	a0, a0, a1
-	addiw	a1, a2, 455
+	addi	a1, a2, 455
 	addiw	a0, a0, 9
 	mul	a0, a0, a1
 	srli	a1, a0, 63

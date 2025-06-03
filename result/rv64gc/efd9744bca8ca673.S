@@ -4,7 +4,7 @@ func0000000000000181:
 	lui	a2, 8
 	srli	a0, a0, 48
 	srli	a1, a1, 63
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -50,7 +50,7 @@ func0000000000000028:
 	slli	a0, a0, 48
 	lui	a2, 8
 	srli	a0, a0, 48
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	and	a1, a1, a2
 	sltiu	a0, a0, 2
 	seqz	a1, a1

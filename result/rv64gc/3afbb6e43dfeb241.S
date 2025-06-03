@@ -11,7 +11,7 @@ func0000000000000010:
 	add	a1, a1, a2
 	lui	a2, 1
 	sub	a0, a1, a0
-	addiw	a1, a2, 1408
+	addi	a1, a2, 1408
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

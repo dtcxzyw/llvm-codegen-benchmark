@@ -11,7 +11,7 @@ func00000000000000f2:
 	lui	a2, 313
 	slli	a1, a1, 7
 	add	a0, a0, a1
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000052:
 	lui	a2, 313
 	slli	a1, a1, 7
 	add	a0, a0, a1
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 
@@ -31,7 +31,7 @@ func00000000000000d2:
 	add	a0, a0, a2
 	lui	a2, 313
 	sh2add	a0, a1, a0
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 

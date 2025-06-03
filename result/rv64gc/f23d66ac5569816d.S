@@ -49,7 +49,7 @@ func0000000000000042:
 	sext.w	a2, a2
 	lui	a3, 256
 	snez	a2, a2
-	addiw	a3, a3, -128
+	addi	a3, a3, -128
 	addi	a2, a2, -1
 	and	a2, a2, a3
 	or	a0, a0, a1

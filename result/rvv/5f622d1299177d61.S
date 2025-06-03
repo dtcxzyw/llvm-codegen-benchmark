@@ -26,7 +26,7 @@ func0000000000000021:
 
 func0000000000000281:
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	li	a0, 256
@@ -139,10 +139,10 @@ func0000000000000094:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 4
-	addiw	a0, a0, -2047
+	addi	a0, a0, -2047
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 1
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

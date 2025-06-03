@@ -81,7 +81,7 @@ func0000000000000006:
 	addi	a1, a2, 2
 .LBB9_2:
 	lui	a0, 12
-	addiw	a0, a0, 847
+	addi	a0, a0, 847
 	slt	a0, a1, a0
 	ret
 

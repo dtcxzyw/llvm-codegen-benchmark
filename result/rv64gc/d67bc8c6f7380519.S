@@ -16,7 +16,7 @@ func0000000000000000:
 	or	a2, a2, a4
 	lui	a4, 16
 	slli	a1, a1, 57
-	addiw	a4, a4, -256
+	addi	a4, a4, -256
 	and	a5, a5, a4
 	srli	a1, a1, 56
 	or	a1, a1, a5

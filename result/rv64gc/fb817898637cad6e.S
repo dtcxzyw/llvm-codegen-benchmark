@@ -35,7 +35,7 @@ func0000000000000004:
 	srli	a1, a1, 24
 	bnez	a1, .LBB4_2
 	lui	a0, 256
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 .LBB4_2:
 	ret
 

@@ -15,7 +15,7 @@ func00000000000001f8:
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	addw	a1, a1, a2
 	sltu	a2, a3, a1
 	czero.nez	a1, a1, a2
@@ -38,7 +38,7 @@ func000000000000008a:
 	li	a3, 1000
 	mul	a2, a2, a3
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	addw	a1, a1, a2
 	slt	a2, a3, a1
 	czero.nez	a1, a1, a2

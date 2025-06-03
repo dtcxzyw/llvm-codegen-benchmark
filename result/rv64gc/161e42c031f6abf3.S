@@ -29,7 +29,7 @@ func0000000000000010:
 
 func0000000000000013:
 	lui	a3, 2
-	addiw	a4, a3, 1
+	addi	a4, a3, 1
 	andi	a3, a1, 1
 	bltu	a2, a4, .LBB2_2
 	li	a1, 184
@@ -46,7 +46,7 @@ func0000000000000013:
 
 func0000000000000053:
 	lui	a3, 2
-	addiw	a4, a3, 1
+	addi	a4, a3, 1
 	andi	a3, a1, 1
 	bltu	a2, a4, .LBB3_2
 	lui	a1, 1

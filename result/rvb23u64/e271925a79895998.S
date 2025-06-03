@@ -29,7 +29,7 @@ func00000000000002aa:
 	addw	a0, a0, a1
 	lui	a1, 1048400
 	lui	a2, 1048540
-	addiw	a1, a1, 1427
+	addi	a1, a1, 1427
 	addi	a2, a2, 1360
 	slt	a1, a1, a0
 	czero.nez	a1, a2, a1

@@ -1,6 +1,6 @@
 func0000000000000014:
 	lui	a3, 559241
-	addiw	a3, a3, -1911
+	addi	a3, a3, -1911
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mulhu	a2, a2, a3
@@ -20,7 +20,7 @@ func0000000000000030:
 	lui	a3, 148
 	srli	a2, a2, 17
 	add	a1, a1, a2
-	addiw	a2, a3, -1408
+	addi	a2, a3, -1408
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -35,7 +35,7 @@ func0000000000000015:
 	lui	a3, 1033928
 	srli	a2, a2, 10
 	add	a1, a1, a2
-	addiw	a2, a3, -1792
+	addi	a2, a3, -1792
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

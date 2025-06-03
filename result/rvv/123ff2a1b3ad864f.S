@@ -9,7 +9,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1048569
-	addiw	a0, a0, -1017
+	addi	a0, a0, -1017
 	srli	a0, a0, 3
 	vsub.vx	v8, v8, a0
 	vsll.vi	v8, v8, 3
@@ -19,7 +19,7 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 1048569
-	addiw	a0, a0, -1017
+	addi	a0, a0, -1017
 	srli	a0, a0, 3
 	vsub.vx	v8, v8, a0
 	vsll.vi	v8, v8, 3

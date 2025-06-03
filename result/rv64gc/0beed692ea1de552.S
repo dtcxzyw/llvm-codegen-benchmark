@@ -33,7 +33,7 @@ func0000000000000848:
 	addi	a3, a3, -448
 	addw	a2, a2, a3
 	lui	a3, 3
-	addiw	a3, a3, -384
+	addi	a3, a3, -384
 	xor	a1, a1, a3
 	sltiu	a2, a2, 48
 	seqz	a1, a1

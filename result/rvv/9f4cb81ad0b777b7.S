@@ -1,12 +1,12 @@
 func0000000000000015:
 	lui	a0, 1024
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 21
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	lui	a0, 115
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000000:
 	vand.vx	v12, v12, a0
 	lui	a0, 1048409
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, 131
+	addi	a0, a0, 131
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -26,7 +26,7 @@ func0000000000000011:
 	vand.vx	v12, v12, a0
 	lui	a0, 160
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000014:
 	vand.vx	v12, v12, a0
 	lui	a0, 160
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -46,7 +46,7 @@ func0000000000000004:
 	vand.vx	v12, v12, a0
 	lui	a0, 1048332
 	vsub.vv	v8, v8, v12
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmacc.vx	v8, a0, v10
 	ret
 

@@ -19,7 +19,7 @@ func000000000000000e:
 	slliw	a2, a2, 11
 	or	a0, a0, a2
 	lui	a2, 128
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

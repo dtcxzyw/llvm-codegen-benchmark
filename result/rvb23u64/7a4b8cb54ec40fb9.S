@@ -111,7 +111,7 @@ func0000000000000318:
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a3, a0
 	lui	a3, 8
-	addiw	a3, a3, -512
+	addi	a3, a3, -512
 	or	a0, a0, a1
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a3, a2
@@ -136,9 +136,9 @@ func000000000000014a:
 	sext.w	a0, a0
 	lui	a2, 3
 	slti	a3, a0, 7
-	addiw	a4, a2, 1544
+	addi	a4, a2, 1544
 	slti	a0, a0, 9
-	addiw	a2, a2, 1533
+	addi	a2, a2, 1533
 	czero.eqz	a1, a1, a3
 	czero.nez	a3, a4, a3
 	or	a1, a1, a3
@@ -179,8 +179,8 @@ func00000000000000c6:
 	sext.w	a0, a0
 	lui	a2, 198
 	lui	a3, 132
-	addiw	a2, a2, -1008
-	addiw	a3, a3, -672
+	addi	a2, a2, -1008
+	addi	a3, a3, -672
 	slt	a2, a0, a2
 	slt	a0, a0, a3
 	li	a3, 160

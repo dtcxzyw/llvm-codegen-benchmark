@@ -11,7 +11,7 @@ func0000000000000001:
 	addw	a0, a0, a1
 	lui	a1, 16
 	lui	a2, 1048568
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	xor	a1, a1, a0
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -37,7 +37,7 @@ func000000000000002a:
 func0000000000000061:
 	addw	a0, a0, a1
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	xor	a1, a1, a0
 	czero.eqz	a0, a0, a1
 	ret

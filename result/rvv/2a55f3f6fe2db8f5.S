@@ -5,7 +5,7 @@ func0000000000000055:
 	li	a0, 1000
 	vmacc.vx	v10, a0, v8
 	lui	a0, 1048563
-	addiw	a0, a0, -80
+	addi	a0, a0, -80
 	vadd.vx	v8, v10, a0
 	ret
 
@@ -40,7 +40,7 @@ func00000000000000d5:
 
 func00000000000000f5:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	li	a0, 60
@@ -56,7 +56,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 2
-	addiw	a0, a0, 96
+	addi	a0, a0, 96
 	vmacc.vx	v10, a0, v8
 	li	a0, 112
 	vadd.vx	v8, v10, a0
@@ -67,7 +67,7 @@ func00000000000000cc:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 2
-	addiw	a0, a0, 96
+	addi	a0, a0, 96
 	vmacc.vx	v10, a0, v8
 	li	a0, 112
 	vadd.vx	v8, v10, a0

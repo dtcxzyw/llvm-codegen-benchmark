@@ -11,7 +11,7 @@ func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB1_2:
 	subw	a1, a1, a2

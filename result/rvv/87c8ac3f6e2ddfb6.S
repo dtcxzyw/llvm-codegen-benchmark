@@ -11,8 +11,7 @@ func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v12
 	vadd.vv	v8, v8, v8
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -4
 	vmerge.vxm	v8, v8, a0, v0
 	ret

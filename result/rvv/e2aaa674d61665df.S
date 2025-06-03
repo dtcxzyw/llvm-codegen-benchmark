@@ -5,7 +5,7 @@ func0000000000000000:
 	li	a1, 48
 	lui	a2, 699051
 	vmv.v.x	v10, a0
-	addiw	a0, a2, -1365
+	addi	a0, a2, -1365
 	vmacc.vx	v10, a1, v8
 	slli	a2, a0, 32
 	add	a0, a0, a2
@@ -21,7 +21,7 @@ func0000000000000005:
 	li	a1, 24
 	lui	a2, 699051
 	vmv.v.x	v10, a0
-	addiw	a0, a2, -1365
+	addi	a0, a2, -1365
 	vmacc.vx	v10, a1, v8
 	slli	a2, a0, 32
 	add	a0, a0, a2

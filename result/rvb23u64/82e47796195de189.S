@@ -8,7 +8,7 @@ func00000000000000d0:
 	add	a0, a0, a2
 	lui	a2, 3
 	add	a0, a0, a1
-	addiw	a1, a2, -1601
+	addi	a1, a2, -1601
 	add	a0, a0, a1
 	ret
 
@@ -45,7 +45,7 @@ func00000000000000ff:
 	add	a0, a0, a2
 	lui	a2, 178
 	add	a0, a0, a1
-	addiw	a1, a2, 230
+	addi	a1, a2, 230
 	add	a0, a0, a1
 	ret
 
@@ -53,7 +53,7 @@ func00000000000000ea:
 	sh2add	a0, a0, a2
 	lui	a2, 305
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 1028
+	addi	a1, a2, 1028
 	add	a0, a0, a1
 	ret
 
@@ -61,7 +61,7 @@ func00000000000000ec:
 	sh2add	a0, a0, a2
 	lui	a2, 305
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 1028
+	addi	a1, a2, 1028
 	add	a0, a0, a1
 	ret
 
@@ -69,7 +69,7 @@ func000000000000002a:
 	sh2add	a0, a0, a2
 	lui	a2, 320
 	sh2add	a0, a1, a0
-	addiw	a1, a2, -876
+	addi	a1, a2, -876
 	add	a0, a0, a1
 	ret
 
@@ -77,7 +77,7 @@ func000000000000002c:
 	sh2add	a0, a0, a2
 	lui	a2, 320
 	sh2add	a0, a1, a0
-	addiw	a1, a2, -876
+	addi	a1, a2, -876
 	add	a0, a0, a1
 	ret
 

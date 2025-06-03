@@ -1,7 +1,7 @@
 func0000000000000018:
 	sext.w	a3, a2
 	lui	a4, 559241
-	addiw	a4, a4, -1911
+	addi	a4, a4, -1911
 	mul	a3, a3, a4
 	lui	a4, 978671
 	srli	a3, a3, 32
@@ -18,7 +18,7 @@ func0000000000000018:
 	slliw	a3, a2, 30
 	srliw	a2, a2, 2
 	or	a2, a2, a3
-	addiw	a3, a4, 1092
+	addi	a3, a4, 1092
 	sltu	a2, a3, a2
 	or	a1, a1, a2
 	slli	a1, a1, 63

@@ -11,7 +11,7 @@ func00000000000003b8:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	lui	a1, 1048544
-	addiw	a1, a1, 30
+	addi	a1, a1, 30
 	add	a1, a1, a0
 	minu	a0, a1, a0
 	ret

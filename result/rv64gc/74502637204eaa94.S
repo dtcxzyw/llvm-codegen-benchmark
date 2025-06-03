@@ -3,7 +3,7 @@ func000000000000000e:
 	lui	a1, 65536
 	addi	a0, a0, 63
 	srli	a0, a0, 3
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 
@@ -12,7 +12,7 @@ func000000000000001e:
 	lui	a1, 8
 	addi	a0, a0, 63
 	srli	a0, a0, 3
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

@@ -104,7 +104,7 @@ func00000000000000cc:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, 8
+	addi	a2, a2, 8
 	slt	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -173,7 +173,7 @@ func0000000000000146:
 	sext.b	a0, a0
 	sext.w	a1, a1
 	lui	a2, 488281
-	addiw	a2, a2, 1021
+	addi	a2, a2, 1021
 	slt	a1, a2, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
@@ -183,7 +183,7 @@ func000000000000014a:
 	sext.b	a0, a0
 	sext.w	a1, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	slt	a1, a2, a1
 	slti	a0, a0, 0
 	andn	a0, a1, a0
@@ -337,7 +337,7 @@ func000000000000030a:
 	sext.b	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -561
+	addi	a2, a2, -561
 	sltu	a1, a2, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

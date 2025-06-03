@@ -3,7 +3,7 @@ func0000000000000003:
 	subw	a0, a0, a1
 	lui	a1, 349525
 	zext.w	a0, a0
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	mul	a0, a0, a1
 	ret
 
@@ -13,7 +13,7 @@ func000000000000007f:
 	sh2add	a0, a1, a0
 	lui	a1, 244
 	sext.w	a0, a0
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000008:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 40
@@ -18,7 +18,7 @@ func000000000000000b:
 	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 20

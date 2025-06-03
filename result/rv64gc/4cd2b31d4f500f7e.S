@@ -10,10 +10,10 @@ func000000000000004c:
 	lui	a3, 256
 	xor	a0, a0, a3
 	lui	a3, 48
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	lui	a3, 32
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	snez	a0, a0
 	xor	a2, a2, a3
 	seqz	a2, a2
@@ -38,7 +38,7 @@ func0000000000000041:
 	slli	a2, a2, 48
 	lui	a3, 4
 	srli	a2, a2, 48
-	addiw	a3, a3, 889
+	addi	a3, a3, 889
 	seqz	a0, a0
 	xor	a2, a2, a3
 	seqz	a2, a2

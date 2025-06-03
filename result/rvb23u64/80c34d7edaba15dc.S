@@ -106,10 +106,10 @@ func0000000000000060:
 	sext.w	a1, a1
 	lui	a2, 1048402
 	sltiu	a1, a1, 2
-	addiw	a2, a2, -1728
+	addi	a2, a2, -1728
 	czero.eqz	a1, a2, a1
 	lui	a2, 349
-	addiw	a2, a2, -640
+	addi	a2, a2, -640
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -128,7 +128,7 @@ func000000000000002a:
 	slti	a1, a1, 9
 	czero.eqz	a1, a2, a1
 	lui	a2, 1048468
-	addiw	a2, a2, 608
+	addi	a2, a2, 608
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

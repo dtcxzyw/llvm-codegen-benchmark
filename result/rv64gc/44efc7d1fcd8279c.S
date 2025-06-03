@@ -40,7 +40,7 @@ func000000000000001b:
 func0000000000000013:
 	lui	a3, 1
 	slliw	a1, a1, 12
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

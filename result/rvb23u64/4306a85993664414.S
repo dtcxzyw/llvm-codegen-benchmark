@@ -101,7 +101,7 @@ func0000000000000205:
 	sext.w	a2, a2
 	sh2add	a1, a2, a1
 	lui	a2, 1048544
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

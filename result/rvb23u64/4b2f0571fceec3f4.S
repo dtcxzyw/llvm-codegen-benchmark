@@ -6,14 +6,14 @@ func0000000000000005:
 	lui	a2, 244
 	mulhu	a1, a0, a1
 	srli	a1, a1, 18
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 
 func0000000000000000:
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
@@ -25,7 +25,7 @@ func0000000000000000:
 
 func000000000000000f:
 	lui	a1, 838861
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
@@ -44,7 +44,7 @@ func000000000000000c:
 	mulhu	a1, a2, a1
 	lui	a2, 72014
 	srli	a1, a1, 9
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -57,7 +57,7 @@ func0000000000000008:
 	srli	a2, a0, 9
 	mulhu	a1, a2, a1
 	lui	a2, 1571
-	addiw	a2, a2, 667
+	addi	a2, a2, 667
 	srli	a1, a1, 11
 	slli	a2, a2, 9
 	mul	a1, a1, a2

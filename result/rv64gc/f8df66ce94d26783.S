@@ -30,7 +30,7 @@ func0000000000000d81:
 	addi	a1, a1, -63
 	lui	a2, 831468
 	snez	a1, a1
-	addiw	a2, a2, -1346
+	addi	a2, a2, -1346
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

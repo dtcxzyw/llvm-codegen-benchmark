@@ -7,7 +7,7 @@ func000000000000001e:
 	lui	a0, 8192
 	vadd.vx	v10, v10, a0
 	lui	a0, 508
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	slli	a0, a0, 11
 	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8

@@ -26,7 +26,7 @@ func0000000000000006:
 	slli	a1, a1, 57
 	lui	a2, 14
 	srli	a1, a1, 49
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	add	a1, a1, a2
 	or	a0, a0, a1
 	ret

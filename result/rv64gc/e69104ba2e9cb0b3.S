@@ -3,7 +3,7 @@
 func000000000000005b:
 	srai	a2, a1, 2
 	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a3, a3, a1
 	lui	a1, %hi(.LCPI0_0)

@@ -14,7 +14,7 @@ func0000000000000026:
 
 func0000000000000036:
 	lui	a4, 119
-	addiw	a4, a4, -762
+	addi	a4, a4, -762
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
 	mul	a2, a2, a4

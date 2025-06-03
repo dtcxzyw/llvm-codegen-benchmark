@@ -12,7 +12,7 @@ func0000000000000021:
 	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -219
+	addi	a1, a1, -219
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -56,7 +56,7 @@ func0000000000000061:
 	lui	a1, 1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -76,7 +76,7 @@ func0000000000000034:
 	lui	a1, 3
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

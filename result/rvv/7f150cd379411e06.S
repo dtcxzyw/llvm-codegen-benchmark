@@ -71,7 +71,7 @@ func000000000000004a:
 
 func0000000000000064:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsltu.vx	v0, v10, a0
 	vadd.vi	v8, v12, 1, v0.t
@@ -104,7 +104,7 @@ func0000000000000041:
 
 func0000000000000004:
 	lui	a0, 2048
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsltu.vx	v0, v10, a0
 	vadd.vi	v8, v12, 1, v0.t
@@ -112,7 +112,7 @@ func0000000000000004:
 
 func0000000000000018:
 	lui	a0, 258048
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 253952

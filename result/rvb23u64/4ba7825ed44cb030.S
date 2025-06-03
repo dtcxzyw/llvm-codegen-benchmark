@@ -80,10 +80,10 @@ func0000000000000029:
 	sext.w	a0, a0
 	andi	a1, a1, 64
 	lui	a2, 1048550
-	addiw	a2, a2, -1504
+	addi	a2, a2, -1504
 	czero.eqz	a1, a2, a1
 	lui	a2, 1978
-	addiw	a2, a2, -1888
+	addi	a2, a2, -1888
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
@@ -93,10 +93,10 @@ func0000000000000025:
 	sext.w	a0, a0
 	andi	a1, a1, 64
 	lui	a2, 464
-	addiw	a2, a2, -544
+	addi	a2, a2, -544
 	czero.eqz	a1, a2, a1
 	lui	a2, 1978
-	addiw	a2, a2, -1888
+	addi	a2, a2, -1888
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

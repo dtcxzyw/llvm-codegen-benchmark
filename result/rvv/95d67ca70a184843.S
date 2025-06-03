@@ -16,7 +16,7 @@ func000000000000006f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.vx	v10, v8, a0
 	lui	a0, 262144
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsrl.vi	v8, v10, 3
 	vand.vx	v8, v8, a0
@@ -31,7 +31,7 @@ func000000000000006d:
 	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsrl.vi	v8, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	vadd.vi	v8, v8, -8
 	ret

@@ -28,7 +28,7 @@ func0000000000004048:
 	addw	a1, a1, a2
 	lui	a2, 4
 	sltu	a0, a1, a0
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -6,19 +6,19 @@ func0000000000000008:
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_2
 	lui	a0, 560295
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 .LBB0_2:
 	ret
 
 func0000000000000002:
 	lui	a3, 560295
-	addiw	a4, a3, -1024
+	addi	a4, a3, -1024
 	xor	a2, a2, a4
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
-	addiw	a0, a3, -1025
+	addi	a0, a3, -1025
 .LBB1_2:
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000018:
 	andi	a1, a1, 1
 	beqz	a1, .LBB3_2
 	lui	a0, 488281
-	addiw	a0, a0, 1022
+	addi	a0, a0, 1022
 .LBB3_2:
 	ret
 

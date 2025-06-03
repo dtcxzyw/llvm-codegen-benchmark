@@ -126,7 +126,7 @@ func0000000000000008:
 	vzext.vf2	v14, v12
 	lui	a0, 8
 	vmadd.vv	v14, v10, v8
-	addiw	a0, a0, 448
+	addi	a0, a0, 448
 	vadd.vx	v8, v14, a0
 	ret
 

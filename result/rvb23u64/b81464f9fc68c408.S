@@ -28,7 +28,7 @@ func0000000000000005:
 
 func0000000000000000:
 	lui	a2, 1048454
-	addiw	a2, a2, -288
+	addi	a2, a2, -288
 	add	a1, a1, a2
 	srai	a1, a1, 63
 	add	a0, a0, a1

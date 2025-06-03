@@ -42,7 +42,7 @@ func00000000000000e8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 10
 	lui	a0, 2
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret

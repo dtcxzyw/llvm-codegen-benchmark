@@ -46,7 +46,7 @@ func0000000000000061:
 	li	a3, 43
 	beq	a1, a3, .LBB4_2
 	lui	a0, 1
-	addiw	a0, a0, -496
+	addi	a0, a0, -496
 	mul	a0, a2, a0
 .LBB4_2:
 	ret

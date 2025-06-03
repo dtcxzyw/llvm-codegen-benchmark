@@ -3,11 +3,11 @@ func0000000000000003:
 	andi	a2, a1, 1
 	lui	a1, 1
 	bnez	a2, .LBB0_2
-	addiw	a1, a1, -368
+	addi	a1, a1, -368
 	add	a0, a0, a1
 	ret
 .LBB0_2:
-	addiw	a1, a1, -400
+	addi	a1, a1, -400
 	add	a0, a0, a1
 	ret
 
@@ -28,11 +28,11 @@ func000000000000000b:
 	andi	a2, a1, 1
 	lui	a1, 1
 	bnez	a2, .LBB2_2
-	addiw	a1, a1, -1296
+	addi	a1, a1, -1296
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	addiw	a1, a1, -1292
+	addi	a1, a1, -1292
 	add	a0, a0, a1
 	ret
 

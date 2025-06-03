@@ -6,7 +6,7 @@ func0000000000000001:
 	addi	a2, a3, -1640
 	add	a1, a1, a2
 	roriw	a1, a1, 1
-	addiw	a2, a3, -1639
+	addi	a2, a3, -1639
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -3,7 +3,7 @@ func0000000000000028:
 	srliw	a0, a0, 16
 	lui	a2, 272
 	sltiu	a0, a0, 17
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
@@ -20,7 +20,7 @@ func0000000000000038:
 	srliw	a0, a0, 16
 	lui	a2, 16
 	sltiu	a0, a0, 17
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
@@ -31,7 +31,7 @@ func0000000000000034:
 	or	a0, a0, a1
 	lui	a1, 16
 	sltiu	a2, a2, 128
-	addiw	a1, a1, -3
+	addi	a1, a1, -3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

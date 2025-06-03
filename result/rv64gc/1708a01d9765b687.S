@@ -35,7 +35,7 @@ func0000000000000004:
 
 func000000000000000c:
 	lui	a2, 8
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	bltu	a2, a1, .LBB4_2
 	mv	a1, a2
 .LBB4_2:

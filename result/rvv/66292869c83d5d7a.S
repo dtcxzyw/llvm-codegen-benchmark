@@ -4,7 +4,7 @@ func0000000000000001:
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	lui	a0, 20678
-	addiw	a0, a0, -737
+	addi	a0, a0, -737
 	vxor.vx	v8, v8, a0
 	ret
 

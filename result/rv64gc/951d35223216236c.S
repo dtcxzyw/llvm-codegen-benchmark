@@ -35,7 +35,7 @@ func0000000000000304:
 	lui	a2, 15
 	sltiu	a0, a0, 4
 	addiw	a1, a1, -1
-	addiw	a2, a2, 2047
+	addi	a2, a2, 2047
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

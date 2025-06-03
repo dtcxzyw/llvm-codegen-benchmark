@@ -12,7 +12,7 @@ func000000000000000c:
 
 func0000000000000004:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	sltiu	a1, a1, 1025
 	and	a0, a0, a1

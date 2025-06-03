@@ -8,7 +8,7 @@ func0000000000000006:
 func0000000000000002:
 	negw	a1, a1
 	lui	a2, 1046576
-	addiw	a2, a2, 771
+	addi	a2, a2, 771
 	slli	a2, a2, 30
 	andn	a0, a0, a2
 	srl	a0, a0, a1

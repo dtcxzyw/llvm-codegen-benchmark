@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a1, 3
-	addiw	a1, a1, 519
+	addi	a1, a1, 519
 	add	a0, a0, a1
 	ret
 

@@ -25,11 +25,11 @@ func000000000000001b:
 	flt.d	a2, fa0, fa5
 	lui	a1, 65
 	bnez	a2, .LBB2_2
-	addiw	a1, a1, -1704
+	addi	a1, a1, -1704
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	addiw	a1, a1, -1712
+	addi	a1, a1, -1712
 	add	a0, a0, a1
 	ret
 

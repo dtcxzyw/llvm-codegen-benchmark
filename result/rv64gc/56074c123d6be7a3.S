@@ -29,7 +29,7 @@ func0000000000000000:
 	andi	a1, a1, 1
 	beqz	a1, .LBB3_2
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sub	a2, a1, a0
 .LBB3_2:
 	add	a0, a0, a2

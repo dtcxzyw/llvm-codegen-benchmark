@@ -121,7 +121,7 @@ func0000000000000050:
 func000000000000002b:
 	sext.w	a1, a1
 	lui	a2, 7
-	addiw	a2, a2, 1326
+	addi	a2, a2, 1326
 	slt	a1, a2, a1
 	slliw	a0, a0, 16
 	czero.nez	a0, a0, a1

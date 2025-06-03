@@ -126,7 +126,7 @@ func0000000000000024:
 
 func000000000000008a:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmand.mm	v10, v0, v12
@@ -139,7 +139,7 @@ func0000000000000144:
 	vmsgt.vi	v12, v10, -1
 	lui	a0, 244
 	vmand.mm	v10, v0, v12
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

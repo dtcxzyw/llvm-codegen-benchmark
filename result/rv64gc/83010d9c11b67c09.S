@@ -16,7 +16,7 @@ func0000000000000053:
 	slli	a1, a1, 13
 	add	a0, a0, a1
 	lui	a1, 1048574
-	addiw	a1, a1, 4
+	addi	a1, a1, 4
 	add	a0, a0, a1
 	ret
 

@@ -4,7 +4,7 @@ func0000000000000002:
 	flt.d	a1, fa0, fa5
 	czero.nez	a0, a0, a1
 	lui	a1, 143
-	addiw	a1, a1, -1328
+	addi	a1, a1, -1328
 	add	a0, a0, a1
 	ret
 
@@ -27,10 +27,10 @@ func0000000000000003:
 	fli.d	fa5, 4.0
 	lui	a0, 1020016
 	fle.d	a1, fa5, fa0
-	addiw	a0, a0, -785
+	addi	a0, a0, -785
 	czero.eqz	a0, a0, a1
 	lui	a1, 476760
-	addiw	a1, a1, -1932
+	addi	a1, a1, -1932
 	add	a0, a0, a1
 	ret
 

@@ -19,10 +19,10 @@ func0000000000000061:
 func0000000000000051:
 	lui	a1, 16
 	lui	a2, 10
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	lui	a1, 1048572
-	addiw	a2, a2, -255
+	addi	a2, a2, -255
 	sltu	a2, a0, a2
 	czero.nez	a1, a1, a2
 	lui	a2, 1048569

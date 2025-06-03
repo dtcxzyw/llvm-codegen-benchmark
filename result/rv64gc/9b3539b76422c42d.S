@@ -14,7 +14,7 @@ func000000000000001e:
 	add	a0, a0, a1
 	lui	a1, 1
 	add	a0, a0, a2
-	addiw	a1, a1, 172
+	addi	a1, a1, 172
 	add	a0, a0, a1
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000032:
 	add	a0, a0, a1
 	lui	a1, 313
 	add	a0, a0, a2
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -60,7 +60,7 @@ func0000000000000022:
 	add	a0, a0, a1
 	lui	a1, 313
 	add	a0, a0, a2
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -70,7 +70,7 @@ func0000000000000012:
 	add	a0, a0, a1
 	lui	a1, 313
 	add	a0, a0, a2
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -80,7 +80,7 @@ func0000000000000002:
 	add	a0, a0, a1
 	lui	a1, 313
 	add	a0, a0, a2
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
@@ -88,7 +88,7 @@ func0000000000000030:
 	add	a0, a0, a1
 	lui	a1, 150
 	add	a0, a0, a2
-	addiw	a1, a1, 772
+	addi	a1, a1, 772
 	add	a0, a0, a1
 	ret
 

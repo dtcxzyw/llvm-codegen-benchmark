@@ -3,7 +3,7 @@ func0000000000000019:
 	lui	a2, 838861
 	srai	a3, a0, 3
 	srai	a1, a1, 3
-	addiw	a0, a2, -819
+	addi	a0, a2, -819
 	slli	a2, a0, 32
 	add	a2, a2, a0
 	mul	a0, a1, a2
@@ -20,7 +20,7 @@ func000000000000001b:
 	lui	a2, 699051
 	srai	a3, a0, 3
 	srai	a1, a1, 3
-	addiw	a0, a2, -1365
+	addi	a0, a2, -1365
 	slli	a2, a0, 32
 	add	a2, a2, a0
 	mul	a0, a1, a2

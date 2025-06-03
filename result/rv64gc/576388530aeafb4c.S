@@ -13,14 +13,14 @@ func0000000000000002:
 	andi	a3, a2, 1
 	lui	a2, 1048575
 	bnez	a3, .LBB1_2
-	addiw	a3, a2, 670
+	addi	a3, a2, 670
 	beqz	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addiw	a3, a2, 650
+	addi	a3, a2, 650
 	bnez	a1, .LBB1_4
 .LBB1_3:
-	addiw	a3, a2, 675
+	addi	a3, a2, 675
 .LBB1_4:
 	slli	a3, a3, 5
 	add	a0, a0, a3

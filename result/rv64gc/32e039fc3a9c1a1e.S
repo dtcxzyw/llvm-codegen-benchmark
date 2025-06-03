@@ -20,7 +20,7 @@ func0000000000000003:
 
 func0000000000000001:
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	srl	a1, a2, a1

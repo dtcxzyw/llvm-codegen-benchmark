@@ -105,7 +105,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	sub	a1, a1, a2
 	lui	a2, 2048
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

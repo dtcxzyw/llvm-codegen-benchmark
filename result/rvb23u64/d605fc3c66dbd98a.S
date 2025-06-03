@@ -26,10 +26,10 @@ func0000000000000282:
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	lui	a1, 1048555
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	czero.nez	a0, a1, a0
 	lui	a1, 6019
-	addiw	a1, a1, 551
+	addi	a1, a1, 551
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	ret

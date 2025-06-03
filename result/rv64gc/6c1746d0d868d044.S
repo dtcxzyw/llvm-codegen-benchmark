@@ -27,7 +27,7 @@ func00000000000001d5:
 	slli	a2, a2, 5
 	sub	a2, a2, a3
 	lui	a3, 842976
-	addiw	a3, a3, 1120
+	addi	a3, a3, 1120
 	add	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 6

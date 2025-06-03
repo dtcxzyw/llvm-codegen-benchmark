@@ -66,7 +66,7 @@ func0000000000000521:
 	sext.w	a1, a1
 	lui	a2, 16
 	sgtz	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.eqz	a1, a2, a1
 	negw	a0, a0
 	xor	a0, a0, a1
@@ -223,7 +223,7 @@ func00000000000000a6:
 func0000000000000c2a:
 	sext.w	a1, a1
 	lui	a2, 8789
-	addiw	a2, a2, 255
+	addi	a2, a2, 255
 	sltu	a1, a2, a1
 	not	a1, a1
 	addw	a0, a0, a1

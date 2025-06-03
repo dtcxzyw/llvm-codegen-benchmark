@@ -21,7 +21,7 @@ func0000000000000001:
 	vsrl.vi	v8, v8, 22
 	lui	a0, 786432
 	vandn.vx	v8, v8, a0
-	addiw	a0, a0, 64
+	addi	a0, a0, 64
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -14,7 +14,7 @@ func000000000000000c:
 	and	a3, t1, t0
 	or	a6, a4, a3
 	srli	a4, a0, 24
-	addiw	a3, a7, -256
+	addi	a3, a7, -256
 	and	a2, t2, a3
 	or	a7, a2, t3
 	and	a2, a1, t0
@@ -65,7 +65,7 @@ func0000000000000000:
 	and	a3, t1, t0
 	or	a6, a4, a3
 	srli	a4, a0, 24
-	addiw	a3, a7, -256
+	addi	a3, a7, -256
 	and	a2, t2, a3
 	or	a7, a2, t3
 	and	a2, a1, t0

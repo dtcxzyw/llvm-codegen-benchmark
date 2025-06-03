@@ -12,10 +12,10 @@ func0000000000000011:
 func0000000000000001:
 	addw	a1, a1, a2
 	lui	a2, 349525
-	addiw	a3, a2, 1366
+	addi	a3, a2, 1366
 	mul	a1, a1, a3
 	sext.w	a3, a0
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	mul	a2, a2, a3
 	srli	a3, a1, 63
 	srli	a1, a1, 32

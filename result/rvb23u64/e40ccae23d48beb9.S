@@ -46,7 +46,7 @@ func0000000000000c8c:
 	sext.w	a0, a0
 	srl	a1, a1, a2
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

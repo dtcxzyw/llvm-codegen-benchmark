@@ -28,7 +28,7 @@ func00000000000000eb:
 	lui	a2, 1
 	srli	a0, a0, 32
 	add	a0, a0, a1
-	addiw	a1, a2, 368
+	addi	a1, a2, 368
 	add	a0, a0, a1
 	ret
 

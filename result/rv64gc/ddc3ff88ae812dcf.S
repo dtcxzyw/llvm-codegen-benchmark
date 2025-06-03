@@ -3,7 +3,7 @@ func0000000000000684:
 	addi	a2, a1, -1
 	and	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	sext.w	a1, a1
 	seqz	a1, a1
 	sltu	a0, a0, a2

@@ -4,7 +4,7 @@ func0000000000000021:
 	li	a0, 24
 	lui	a1, 699051
 	vwaddu.wv	v10, v10, v13
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vv	v8, v10, v8
 	vmul.vx	v8, v8, a0

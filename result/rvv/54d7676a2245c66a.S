@@ -6,7 +6,7 @@ func0000000000000001:
 
 func0000000000000008:
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
@@ -34,7 +34,7 @@ func0000000000000014:
 
 func0000000000000004:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10

@@ -15,13 +15,13 @@ func0000000000000026:
 	sext.w	a1, a1
 	beq	a2, a3, .LBB1_2
 	lui	a2, 174763
-	addiw	a2, a2, -1366
+	addi	a2, a2, -1366
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
 .LBB1_2:
 	lui	a2, 87381
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

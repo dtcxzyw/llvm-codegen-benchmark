@@ -5,7 +5,7 @@ func0000000000000168:
 	li	a3, 16
 	bgeu	a3, a2, .LBB0_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB0_2:
 	or	a0, a0, a1
@@ -18,7 +18,7 @@ func00000000000001e8:
 	li	a3, 16
 	bgeu	a3, a2, .LBB1_2
 	lui	a0, 272
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	ret
 .LBB1_2:
 	or	a0, a0, a1
@@ -31,7 +31,7 @@ func00000000000001f8:
 	li	a3, 16
 	bgeu	a3, a2, .LBB2_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 	ret
 .LBB2_2:
 	or	a0, a0, a1

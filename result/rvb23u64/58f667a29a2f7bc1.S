@@ -13,7 +13,7 @@ func0000000000000006:
 	lui	a1, 1047552
 	ori	a0, a0, 12
 	bseti	a0, a0, 51
-	addiw	a1, a1, 12
+	addi	a1, a1, 12
 	and	a0, a0, a1
 	ret
 

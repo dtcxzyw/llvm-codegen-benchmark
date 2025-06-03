@@ -2,7 +2,7 @@ func00000000000000e1:
 	andi	a0, a0, 1
 	lui	a3, 32
 	slli	a4, a2, 16
-	addiw	a3, a3, -31
+	addi	a3, a3, -31
 	sltu	a2, a3, a2
 	lui	a3, 983055
 	slli	a3, a3, 5

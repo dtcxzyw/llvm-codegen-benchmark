@@ -8,7 +8,7 @@ func0000000000000006:
 	addi	a0, a0, 63
 	lui	a1, 262144
 	srli	a0, a0, 3
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func0000000000000004:
 	addi	a0, a0, 3
 	lui	a1, 65536
 	srli	a0, a0, 3
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

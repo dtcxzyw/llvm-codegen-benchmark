@@ -3,7 +3,7 @@ func00000000000001ff:
 	addi	a3, a3, 128
 	mul	a2, a2, a3
 	lui	a3, 544
-	addiw	a3, a3, 20
+	addi	a3, a3, 20
 	addw	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

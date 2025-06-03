@@ -1,7 +1,7 @@
 func000000000000003f:
 	srli	a2, a2, 16
 	lui	a3, 16
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	addiw	a4, a3, 14
 	add	a1, a1, a3
 	and	a2, a2, a4

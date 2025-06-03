@@ -42,7 +42,7 @@ func0000000000000018:
 	lui	a2, 1048564
 	czero.nez	a1, a2, a1
 	lui	a2, 16
-	addiw	a2, a2, -193
+	addi	a2, a2, -193
 	add	a1, a1, a2
 	and	a0, a0, a1
 	sltiu	a0, a0, 257

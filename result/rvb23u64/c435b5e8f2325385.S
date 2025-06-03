@@ -32,7 +32,7 @@ func0000000000000128:
 	lui	a3, 8
 	addw	a0, a0, a3
 	lui	a3, 1048568
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	sltu	a1, a3, a2

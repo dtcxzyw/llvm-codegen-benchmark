@@ -11,8 +11,8 @@ func0000000000000055:
 	lui	a3, 1
 	add	a0, a0, a1
 	lui	a1, 6
-	addiw	a3, a3, -2017
-	addiw	a1, a1, -810
+	addi	a3, a3, -2017
+	addi	a1, a1, -810
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

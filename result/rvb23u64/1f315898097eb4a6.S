@@ -26,7 +26,7 @@ func0000000000000188:
 	zext.h	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -2
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

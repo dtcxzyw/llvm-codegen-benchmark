@@ -16,7 +16,7 @@ func0000000000000000:
 	lui	a0, 235216
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	addiw	a0, a0, -328
+	addi	a0, a0, -328
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vxor.vv	v10, v10, v12

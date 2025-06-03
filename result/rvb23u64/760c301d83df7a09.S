@@ -4,7 +4,7 @@ func0000000000000055:
 	lui	a0, 1048570
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	addiw	a0, a0, -974
+	addi	a0, a0, -974
 	add	a0, a0, a1
 	ret
 

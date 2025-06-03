@@ -10,7 +10,7 @@ func000000000000000b:
 
 func000000000000000e:
 	lui	a0, 65536
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vminu.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

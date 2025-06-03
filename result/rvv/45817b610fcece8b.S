@@ -27,7 +27,7 @@ func0000000000000048:
 	vsub.vv	v10, v10, v12
 	lui	a0, 16
 	vmsltu.vv	v12, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret

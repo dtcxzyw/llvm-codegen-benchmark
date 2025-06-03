@@ -8,7 +8,7 @@ func0000000000000000:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
 	vmul.vx	v12, v12, a0
@@ -18,7 +18,7 @@ func0000000000000000:
 
 func0000000000000001:
 	lui	a0, 559241
-	addiw	a0, a0, -1911
+	addi	a0, a0, -1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, 63

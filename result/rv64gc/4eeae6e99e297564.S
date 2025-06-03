@@ -5,8 +5,8 @@ func0000000000000002:
 	xor	a0, a0, a2
 	sub	a0, a0, a2
 	lui	a2, 34953
-	addiw	a1, a1, -1911
-	addiw	a2, a2, -1911
+	addi	a1, a1, -1911
+	addi	a2, a2, -1911
 	slli	a1, a1, 12
 	addi	a1, a1, -1911
 	mul	a0, a0, a1

@@ -3,7 +3,7 @@ func000000000000000c:
 	xor	a0, a0, a1
 	subw	a0, a0, a1
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -20,7 +20,7 @@ func000000000000000c:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 17476
-	addiw	a1, a1, 1092
+	addi	a1, a1, 1092
 	sltu	a0, a1, a0
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000001:
 	xor	a0, a0, a1
 	subw	a0, a0, a1
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -46,7 +46,7 @@ func0000000000000001:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 17476
-	addiw	a1, a1, 1093
+	addi	a1, a1, 1093
 	sltu	a0, a0, a1
 	ret
 

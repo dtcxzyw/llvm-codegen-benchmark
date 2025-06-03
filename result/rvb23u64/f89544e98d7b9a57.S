@@ -1,6 +1,6 @@
 func0000000000000c68:
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltu	a4, a3, a1
 	czero.nez	a1, a1, a4
 	czero.eqz	a0, a0, a4

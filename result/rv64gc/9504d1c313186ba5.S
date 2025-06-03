@@ -12,7 +12,7 @@ func0000000000000188:
 	mul	a0, a0, a1
 	lui	a1, 244141
 	slli	a0, a0, 7
-	addiw	a1, a1, -1560
+	addi	a1, a1, -1560
 	sltu	a0, a1, a0
 	ret
 

@@ -2,12 +2,12 @@ func00000000000000a8:
 	slli	a1, a1, 63
 	lui	a3, 1048544
 	srai	a1, a1, 63
-	addiw	a3, a3, 30
+	addi	a3, a3, 30
 	and	a1, a1, a3
 	lui	a3, 16
 	add	a1, a1, a2
 	lui	a2, 983055
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltu	a1, a3, a1
 	neg	a1, a1
 	slli	a2, a2, 4

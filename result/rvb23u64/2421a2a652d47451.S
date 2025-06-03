@@ -13,7 +13,7 @@ func0000000000000d14:
 
 func0000000000000547:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	add	a2, a2, a3
 	slt	a0, a0, a2
 	xori	a0, a0, 1

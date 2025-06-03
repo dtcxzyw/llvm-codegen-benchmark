@@ -3,7 +3,7 @@ func0000000000000842:
 	or	a1, a1, a2
 	lui	a2, 16
 	sext.w	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a2, a2, a1
 	xor	a0, a0, a1
 	seqz	a1, a2
@@ -16,7 +16,7 @@ func0000000000000a8c:
 	or	a1, a1, a2
 	lui	a2, 272
 	sext.w	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a1, a0
 	slt	a1, a2, a1
 	or	a0, a0, a1

@@ -13,7 +13,7 @@ func00000000000000e4:
 	addi	a1, a1, -2048
 	lui	a2, 1048575
 	addiw	a1, a1, -2048
-	addiw	a2, a2, 993
+	addi	a2, a2, 993
 	sltu	a1, a1, a2
 	addiw	a0, a0, 8
 	neg	a1, a1

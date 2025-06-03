@@ -11,7 +11,7 @@ func0000000000000003:
 	sext.w	a1, a1
 	lui	a2, 1048575
 	seqz	a1, a1
-	addiw	a2, a2, 496
+	addi	a2, a2, 496
 	slli	a1, a1, 9
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -38,7 +38,7 @@ func0000000000000019:
 	sext.w	a1, a1
 	lui	a2, 1048572
 	snez	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slli	a1, a1, 14
 	and	a0, a0, a2
 	or	a0, a0, a1

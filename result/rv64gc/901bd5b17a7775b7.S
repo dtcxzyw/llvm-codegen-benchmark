@@ -46,11 +46,11 @@ func0000000000000061:
 	li	a1, 2
 	beq	a0, a1, .LBB5_2
 	lui	a0, 16
-	addiw	a0, a0, 1100
+	addi	a0, a0, 1100
 	ret
 .LBB5_2:
 	lui	a0, 144
-	addiw	a0, a0, 1100
+	addi	a0, a0, 1100
 	ret
 
 func0000000000000006:
@@ -112,7 +112,7 @@ func000000000000000a:
 func0000000000000018:
 	addiw	a1, a0, -2027
 	lui	a0, 1048575
-	addiw	a2, a0, 2047
+	addi	a2, a0, 2047
 	lui	a0, 1
 	bltu	a1, a2, .LBB13_2
 	li	a0, 1

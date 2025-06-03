@@ -17,7 +17,7 @@ func0000000000000821:
 	vmv.v.i	v12, 1
 	lui	a0, 32
 	vsll.vv	v10, v12, v10
-	addiw	a0, a0, 5
+	addi	a0, a0, 5
 	vand.vx	v10, v10, a0
 	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma

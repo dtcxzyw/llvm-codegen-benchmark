@@ -23,7 +23,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0
 	lui	a0, 4
-	addiw	a0, a0, 110
+	addi	a0, a0, 110
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 2
 	vsll.vv	v8, v10, v8

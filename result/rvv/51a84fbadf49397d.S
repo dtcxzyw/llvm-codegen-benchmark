@@ -4,7 +4,7 @@ func00000000000000e8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 1024
-	addiw	a0, a0, -27
+	addi	a0, a0, -27
 	slli	a0, a0, 10
 	vmerge.vxm	v10, v10, a0, v0
 	vmsltu.vv	v0, v10, v8

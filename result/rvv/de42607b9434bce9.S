@@ -16,7 +16,7 @@ func000000000000007b:
 	li	a0, -1
 	lui	a1, 163151
 	srli	a0, a0, 32
-	addiw	a1, a1, -1201
+	addi	a1, a1, -1201
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmul.vx	v10, v10, a1
@@ -47,7 +47,7 @@ func0000000000000000:
 	vmul.vx	v10, v10, a1
 	lui	a1, 24414
 	vsrl.vx	v10, v10, a0
-	addiw	a0, a1, 256
+	addi	a0, a1, 256
 	vmadd.vx	v8, a0, v10
 	ret
 

@@ -62,13 +62,13 @@ func0000000000000624:
 func0000000000000224:
 	sext.w	a2, a2
 	lui	a3, 1048563
-	addiw	a3, a3, -1888
+	addi	a3, a3, -1888
 	sltu	a2, a2, a3
 	lui	a3, 1048560
 	addi	a3, a3, 2
 	addw	a1, a1, a3
 	lui	a3, 1048574
-	addiw	a3, a3, 2
+	addi	a3, a3, 2
 	and	a0, a0, a2
 	sltu	a1, a1, a3
 	and	a0, a0, a1
@@ -98,7 +98,7 @@ func0000000000000484:
 	sext.w	a1, a1
 	addiw	a2, a2, -2
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a2, a3
 	sltu	a1, a1, a3
 	and	a0, a0, a1

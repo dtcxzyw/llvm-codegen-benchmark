@@ -7,7 +7,7 @@ func0000000000000003:
 	slli	a2, a2, 11
 	add	a1, a1, a2
 	lui	a2, 33825
-	addiw	a2, a2, 133
+	addi	a2, a2, 133
 	or	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2

@@ -7,7 +7,7 @@ func000000000000000f:
 	and	a0, a0, a2
 	lui	a2, 10240
 	sll	a0, a1, a0
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a0, a0, a2
 	ret
 

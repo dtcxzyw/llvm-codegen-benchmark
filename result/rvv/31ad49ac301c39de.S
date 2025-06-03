@@ -3,7 +3,7 @@ func0000000000000001:
 	vnsrl.wi	v12, v10, 3
 	lui	a0, 1048573
 	vmseq.vi	v0, v12, 2
-	addiw	a0, a0, -625
+	addi	a0, a0, -625
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

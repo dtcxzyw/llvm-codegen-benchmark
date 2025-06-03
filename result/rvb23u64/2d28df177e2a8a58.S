@@ -1,7 +1,7 @@
 func000000000000002c:
 	zext.h	a0, a0
 	lui	a3, 256
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	li	a3, 11
 	slli	a3, a3, 8

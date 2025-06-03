@@ -3,7 +3,7 @@ func000000000000000e:
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	lui	a1, 31
-	addiw	a1, a1, -1976
+	addi	a1, a1, -1976
 	mul	a0, a0, a1
 	ret
 

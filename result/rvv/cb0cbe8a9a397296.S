@@ -35,7 +35,7 @@ func00000000000003f8:
 	lui	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret

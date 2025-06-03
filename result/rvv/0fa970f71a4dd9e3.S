@@ -25,7 +25,7 @@ func0000000000000050:
 	li	a0, 60
 	vmacc.vx	v10, a0, v12
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v14

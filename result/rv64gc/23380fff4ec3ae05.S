@@ -3,7 +3,7 @@ func0000000000000003:
 	zext.b	a1, a0
 	bnez	a2, .LBB0_2
 	lui	a0, 4096
-	addiw	a0, a0, 128
+	addi	a0, a0, 128
 	li	a2, 114
 	beq	a1, a2, .LBB0_3
 	j	.LBB0_4
@@ -21,7 +21,7 @@ func0000000000000002:
 	li	a2, 114
 	lui	a0, 4096
 	bne	a1, a2, .LBB1_2
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 .LBB1_2:
 	ret
 

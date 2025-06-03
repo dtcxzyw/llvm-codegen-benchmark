@@ -16,7 +16,7 @@ func0000000000000002:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bgeu	a1, a2, .LBB2_2
 	slli	a0, a0, 32
 	srli	a2, a0, 32

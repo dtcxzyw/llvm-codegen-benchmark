@@ -23,7 +23,7 @@ func00000000000001e1:
 	sh3add	a1, a2, a1
 	lui	a2, 4
 	addi	a1, a1, 8
-	addiw	a2, a2, 272
+	addi	a2, a2, 272
 	add	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

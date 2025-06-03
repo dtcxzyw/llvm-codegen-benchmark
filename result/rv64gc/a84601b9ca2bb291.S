@@ -57,7 +57,7 @@ func00000000000000e8:
 func00000000000000ea:
 	sext.w	a0, a0
 	lui	a2, 8
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	bge	a2, a0, .LBB6_2
 	lui	a0, 32767
 	slli	a0, a0, 36

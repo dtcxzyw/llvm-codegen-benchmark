@@ -59,7 +59,7 @@ func0000000000000104:
 func000000000000000a:
 	slli	a1, a1, 1
 	lui	a2, 1024162
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	add	a0, a0, a2
 	slt	a0, a1, a0
 	ret
@@ -67,7 +67,7 @@ func000000000000000a:
 func0000000000000106:
 	slli	a1, a1, 1
 	lui	a2, 24414
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	add	a0, a0, a2
 	slt	a0, a0, a1
 	ret

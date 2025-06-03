@@ -8,7 +8,7 @@ func0000000000000302:
 
 func0000000000000048:
 	lui	a0, 256
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a0
 	li	a0, 32

@@ -2,7 +2,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vv	v10, v8, v9
 	lui	a0, 1048573
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	bclri	a0, a0, 53
 	bclri	a0, a0, 54
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -10,7 +10,7 @@ func0000000000000001:
 	lui	a0, 981696
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

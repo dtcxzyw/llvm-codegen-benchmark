@@ -17,7 +17,7 @@ func00000000000001ef:
 
 func00000000000001ff:
 	lui	a3, 1
-	addiw	a3, a3, -608
+	addi	a3, a3, -608
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	sext.w	a0, a0

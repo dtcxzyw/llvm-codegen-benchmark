@@ -16,7 +16,7 @@ func0000000000000002:
 func0000000000000018:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1

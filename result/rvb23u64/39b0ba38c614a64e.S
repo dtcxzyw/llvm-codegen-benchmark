@@ -54,7 +54,7 @@ func0000000000000424:
 	sext.w	a1, a1
 	lui	a2, 16
 	addi	a1, a1, -48
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

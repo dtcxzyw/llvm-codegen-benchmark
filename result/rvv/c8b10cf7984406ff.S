@@ -3,7 +3,7 @@ func000000000000000e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v10, v10, a0
 	lui	a0, 4
-	addiw	a0, a0, 35
+	addi	a0, a0, 35
 	vrsub.vx	v10, v10, a0
 	bseti	a0, zero, 48
 	vor.vx	v8, v8, a0

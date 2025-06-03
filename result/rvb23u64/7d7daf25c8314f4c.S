@@ -149,7 +149,7 @@ func00000000000005e1:
 	lui	a2, 1047952
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, -256
+	addi	a1, a2, -256
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

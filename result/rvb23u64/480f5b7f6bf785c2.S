@@ -12,7 +12,7 @@ func0000000000000001:
 	andi	a1, a0, 1024
 	bclri	a0, a0, 28
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

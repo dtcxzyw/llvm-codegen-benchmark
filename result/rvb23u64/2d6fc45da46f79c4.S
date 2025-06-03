@@ -12,7 +12,7 @@ func0000000000000021:
 	addi	a2, a2, 1
 	mulw	a1, a2, a1
 	lui	a2, 958698
-	addiw	a2, a2, 235
+	addi	a2, a2, 235
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2

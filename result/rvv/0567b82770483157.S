@@ -29,7 +29,7 @@ func0000000000000021:
 	lui	a1, 838861
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a2, %hi(.LCPI1_1)
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	ld	a2, %lo(.LCPI1_1)(a2)
 	vmv.v.x	v10, a0
 	slli	a0, a1, 32

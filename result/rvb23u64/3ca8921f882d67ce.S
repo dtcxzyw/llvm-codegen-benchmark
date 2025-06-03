@@ -3,7 +3,7 @@ func0000000000000025:
 	li	a2, 53
 	lui	a3, 194181
 	maxu	a1, a1, a2
-	addiw	a2, a3, -1061
+	addi	a2, a3, -1061
 	addi	a1, a1, -27
 	zext.w	a3, a1
 	mul	a2, a2, a3
@@ -24,7 +24,7 @@ func0000000000000020:
 	li	a2, 25
 	lui	a3, 322639
 	maxu	a1, a1, a2
-	addiw	a2, a3, -945
+	addi	a2, a3, -945
 	addi	a1, a1, -13
 	zext.w	a3, a1
 	subw	a1, a1, a1

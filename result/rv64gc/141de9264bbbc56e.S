@@ -18,7 +18,7 @@ func000000000000007f:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	lui	a1, 56
-	addiw	a1, a1, 4
+	addi	a1, a1, 4
 	add	a0, a0, a1
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000073:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	lui	a1, 48
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 	add	a0, a0, a1
 	ret
 

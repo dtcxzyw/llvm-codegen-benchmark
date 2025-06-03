@@ -87,7 +87,7 @@ func0000000000000108:
 	vadd.vv	v8, v8, v10
 	lui	a0, 2384
 	vmerge.vim	v10, v12, 1, v0
-	addiw	a0, a0, 761
+	addi	a0, a0, 761
 	vadd.vv	v8, v8, v10
 	slli	a0, a0, 9
 	vmsgtu.vx	v0, v8, a0
@@ -99,7 +99,7 @@ func0000000000000101:
 	vadd.vv	v8, v8, v10
 	lui	a0, 2384
 	vmerge.vim	v10, v12, 1, v0
-	addiw	a0, a0, 761
+	addi	a0, a0, 761
 	vadd.vv	v8, v8, v10
 	slli	a0, a0, 9
 	vmseq.vx	v0, v8, a0

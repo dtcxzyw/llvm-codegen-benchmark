@@ -37,7 +37,7 @@ func0000000000000004:
 	lui	a1, 1048575
 	and	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

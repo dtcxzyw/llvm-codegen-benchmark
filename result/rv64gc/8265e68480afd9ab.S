@@ -10,8 +10,8 @@ func000000000000001e:
 func000000000000001c:
 	lui	a1, 2032
 	lui	a2, 522248
-	addiw	a1, a1, 127
-	addiw	a2, a2, -128
+	addi	a1, a1, 127
+	addi	a2, a2, -128
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	slli	a3, a2, 32

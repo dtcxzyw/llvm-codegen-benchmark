@@ -2,17 +2,17 @@ func0000000000000004:
 	andi	a3, a2, 1
 	lui	a2, 1048575
 	bnez	a3, .LBB0_2
-	addiw	a3, a2, 33
+	addi	a3, a2, 33
 	add	a0, a0, a1
 	add	a0, a0, a3
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a0, a0, a2
 	ret
 .LBB0_2:
-	addiw	a3, a2, 36
+	addi	a3, a2, 36
 	add	a0, a0, a1
 	add	a0, a0, a3
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a0, a0, a2
 	ret
 

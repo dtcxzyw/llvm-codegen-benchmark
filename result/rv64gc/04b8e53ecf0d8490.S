@@ -30,7 +30,7 @@ func0000000000000006:
 	andi	a0, a0, 1
 	beqz	a0, .LBB3_2
 	lui	a0, 2
-	addiw	a1, a0, -920
+	addi	a1, a0, -920
 	add	a1, a1, a2
 .LBB3_2:
 	srli	a0, a1, 12

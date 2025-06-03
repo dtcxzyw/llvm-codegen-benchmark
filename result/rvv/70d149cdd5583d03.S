@@ -8,7 +8,7 @@ func0000000000000044:
 
 func0000000000000004:
 	lui	a0, 1048432
-	addiw	a0, a0, -257
+	addi	a0, a0, -257
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vror.vi	v8, v8, 16

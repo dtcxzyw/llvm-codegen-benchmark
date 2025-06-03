@@ -4,7 +4,7 @@ func00000000000001e4:
 	vsra.vi	v8, v8, 2
 	lui	a0, 699051
 	vsub.vv	v10, v14, v10
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -17,7 +17,7 @@ func00000000000000e4:
 	vsra.vi	v8, v8, 2
 	lui	a0, 699051
 	vsub.vv	v10, v14, v10
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

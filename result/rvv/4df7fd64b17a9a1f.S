@@ -3,7 +3,7 @@ func000000000000000e:
 	vsll.vi	v8, v8, 3
 	lui	a0, 192515
 	vadd.vi	v10, v8, -8
-	addiw	a0, a0, -467
+	addi	a0, a0, -467
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v8, v10
 	bseti	a0, a0, 60
@@ -17,7 +17,7 @@ func000000000000001e:
 	vsll.vi	v8, v8, 3
 	lui	a0, 36992
 	vadd.vi	v10, v8, -16
-	addiw	a0, a0, 1798
+	addi	a0, a0, 1798
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v8, v10
 	slli	a1, a0, 32

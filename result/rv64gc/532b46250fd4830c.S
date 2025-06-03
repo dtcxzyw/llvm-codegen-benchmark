@@ -87,7 +87,7 @@ func0000000000000010:
 	slli	a2, a2, 63
 	lui	a3, 878909
 	srai	a2, a2, 63
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	and	a2, a2, a3
 	sltu	a1, a2, a1
 	or	a0, a0, a1

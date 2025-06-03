@@ -22,7 +22,7 @@ func0000000000000050:
 	and	a1, a1, a2
 	bnez	a1, .LBB1_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB1_2:
 	ret
 
@@ -31,12 +31,12 @@ func0000000000000110:
 	sext.w	a1, a1
 	lui	a3, 272
 	sltiu	a1, a1, 2047
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a3, a2
 	or	a1, a1, a2
 	beqz	a1, .LBB2_2
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 .LBB2_2:
 	ret
 

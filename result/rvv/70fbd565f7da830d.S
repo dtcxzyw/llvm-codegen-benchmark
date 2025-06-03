@@ -61,7 +61,7 @@ func0000000000000054:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 244
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgt.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -71,7 +71,7 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -81,7 +81,7 @@ func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

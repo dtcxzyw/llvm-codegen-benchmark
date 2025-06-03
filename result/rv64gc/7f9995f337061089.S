@@ -44,7 +44,7 @@ func0000000000000002:
 func000000000000000a:
 	andi	a3, a1, 1
 	lui	a1, 1
-	addiw	a1, a1, 296
+	addi	a1, a1, 296
 	beqz	a3, .LBB5_2
 	addw	a1, a1, a2
 .LBB5_2:

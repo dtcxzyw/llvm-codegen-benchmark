@@ -7,7 +7,7 @@ func000000000000000c:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 52429
-	addiw	a1, a1, -820
+	addi	a1, a1, -820
 	sltu	a0, a1, a0
 	ret
 
@@ -17,7 +17,7 @@ func0000000000000001:
 	addi	a1, a1, -1365
 	mulw	a0, a0, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	sltu	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000021:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 10486
-	addiw	a1, a1, -983
+	addi	a1, a1, -983
 	sltu	a0, a0, a1
 	ret
 

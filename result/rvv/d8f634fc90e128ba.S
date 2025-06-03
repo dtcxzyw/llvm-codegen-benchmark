@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a0, 15
-	addiw	a0, a0, 31
+	addi	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

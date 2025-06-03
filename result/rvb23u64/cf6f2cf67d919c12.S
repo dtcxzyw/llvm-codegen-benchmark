@@ -36,10 +36,10 @@ func0000000000000014:
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	lui	a1, 1048534
-	addiw	a1, a1, -768
+	addi	a1, a1, -768
 	czero.eqz	a0, a1, a0
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	add	a0, a0, a1
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000005:
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	lui	a1, 61681
-	addiw	a1, a1, -241
+	addi	a1, a1, -241
 	czero.eqz	a0, a1, a0
 	ret
 

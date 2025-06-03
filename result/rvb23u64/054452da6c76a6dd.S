@@ -27,7 +27,7 @@ func0000000000000281:
 func0000000000000086:
 	add	a1, a1, a2
 	lui	a2, 10
-	addiw	a2, a2, -946
+	addi	a2, a2, -946
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63

@@ -2,7 +2,7 @@ func0000000000000007:
 	lui	a3, 16
 	andi	a1, a1, 96
 	srliw	a0, a0, 8
-	addiw	a3, a3, -1664
+	addi	a3, a3, -1664
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

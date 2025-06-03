@@ -66,7 +66,7 @@ func0000000000000146:
 func00000000000000ca:
 	sext.w	a3, a1
 	lui	a4, 4096
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	sext.w	a0, a0
 	blt	a3, a4, .LBB6_2
 	mv	a1, a2

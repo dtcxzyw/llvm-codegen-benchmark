@@ -13,7 +13,7 @@ func00000000000002cc:
 
 func0000000000000212:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	and	a0, a0, a3
@@ -37,7 +37,7 @@ func0000000000000294:
 
 func0000000000000108:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a0, a0, a3
 	and	a2, a2, a3
@@ -48,7 +48,7 @@ func0000000000000108:
 
 func0000000000000210:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
@@ -72,7 +72,7 @@ func00000000000001ce:
 
 func000000000000014a:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	and	a0, a0, a3
@@ -84,7 +84,7 @@ func000000000000014a:
 
 func000000000000010a:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3
@@ -96,7 +96,7 @@ func000000000000010a:
 
 func0000000000000308:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3

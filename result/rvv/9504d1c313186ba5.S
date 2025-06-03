@@ -12,7 +12,7 @@ func0000000000000188:
 	lui	a0, 244141
 	vmul.vv	v8, v8, v12
 	vsll.vi	v8, v8, 7
-	addiw	a0, a0, -1560
+	addi	a0, a0, -1560
 	vmsgtu.vx	v0, v8, a0
 	ret
 

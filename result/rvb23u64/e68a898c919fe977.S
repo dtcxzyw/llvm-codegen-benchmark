@@ -19,7 +19,7 @@ func0000000000000608:
 	lui	a1, 51
 	add	a0, a0, a2
 	addi	a0, a0, 16
-	addiw	a1, a1, 811
+	addi	a1, a1, 811
 	sltu	a0, a1, a0
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000604:
 	lui	a2, 1048575
 	add	a0, a0, a1
 	addi	a0, a0, -1873
-	addiw	a1, a2, 2047
+	addi	a1, a2, 2047
 	sltu	a0, a0, a1
 	ret
 

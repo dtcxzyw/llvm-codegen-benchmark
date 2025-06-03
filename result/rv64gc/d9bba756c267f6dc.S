@@ -2,7 +2,7 @@ func0000000000000078:
 	srli	a2, a2, 2
 	lui	a3, 349525
 	sext.w	a1, a1
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -17,7 +17,7 @@ func0000000000000070:
 	srli	a2, a2, 2
 	lui	a3, 349525
 	sext.w	a1, a1
-	addiw	a3, a3, 1365
+	addi	a3, a3, 1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

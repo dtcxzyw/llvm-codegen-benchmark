@@ -55,7 +55,7 @@ func0000000000000023:
 	add	a0, a0, a2
 	lui	a2, 25
 	sltiu	a1, a1, 425
-	addiw	a2, a2, 1600
+	addi	a2, a2, 1600
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

@@ -38,7 +38,7 @@ func0000000000000014:
 	mv	a0, a1
 .LBB5_2:
 	lui	a1, 88
-	addiw	a1, a1, -448
+	addi	a1, a1, -448
 	sltu	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000000:
 	bnez	a0, .LBB0_2
 	sext.w	a0, a1
 	lui	a2, 174763
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 33

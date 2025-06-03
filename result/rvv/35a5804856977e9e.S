@@ -23,7 +23,7 @@ func000000000000008c:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	lui	a0, 1044480
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

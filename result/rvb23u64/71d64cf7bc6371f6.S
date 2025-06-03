@@ -27,7 +27,7 @@ func000000000000002b:
 func0000000000000063:
 	sext.w	a2, a2
 	lui	a3, 32768
-	addiw	a3, a3, 15
+	addi	a3, a3, 15
 	sltu	a2, a3, a2
 	li	a3, 256
 	czero.eqz	a2, a3, a2

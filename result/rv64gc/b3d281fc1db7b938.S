@@ -24,17 +24,17 @@ func0000000000000001:
 
 func0000000000000038:
 	lui	a2, 1048544
-	addiw	a2, a2, 30
+	addi	a2, a2, 30
 	add	a1, a1, a2
 	lui	a2, 1048560
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000068:
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -7,7 +7,7 @@ func0000000000000066:
 
 func0000000000000020:
 	lui	a3, 1048574
-	addiw	a3, a3, -112
+	addi	a3, a3, -112
 	mul	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 8

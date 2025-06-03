@@ -1,11 +1,11 @@
 func0000000000000000:
 	lui	a0, 1048332
-	addiw	a0, a0, -576
+	addi	a0, a0, -576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	lui	a0, 244
 	vsub.vv	v10, v12, v10
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -21,40 +21,40 @@ func0000000000000030:
 
 func0000000000000055:
 	lui	a0, 2
-	addiw	a0, a0, -529
+	addi	a0, a0, -529
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	lui	a0, 1
 	vsub.vv	v10, v12, v10
-	addiw	a0, a0, 931
+	addi	a0, a0, 931
 	vmadd.vx	v8, a0, v10
 	ret
 
 func00000000000000f5:
 	lui	a0, 2
-	addiw	a0, a0, -529
+	addi	a0, a0, -529
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	lui	a0, 1
 	vsub.vv	v8, v12, v8
-	addiw	a0, a0, 931
+	addi	a0, a0, 931
 	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000075:
 	lui	a0, 1048574
-	addiw	a0, a0, -1841
+	addi	a0, a0, -1841
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	lui	a0, 2
 	vsub.vv	v8, v12, v8
-	addiw	a0, a0, -745
+	addi	a0, a0, -745
 	vmacc.vx	v8, a0, v10
 	ret
 
 func00000000000000d5:
 	lui	a0, 3
-	addiw	a0, a0, -493
+	addi	a0, a0, -493
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vsub.vv	v8, v12, v8

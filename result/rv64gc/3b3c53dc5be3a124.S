@@ -19,7 +19,7 @@ func000000000000003a:
 	lui	a1, 305
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, 976
+	addi	a1, a1, 976
 	add	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func000000000000000a:
 	lui	a1, 320
 	slli	a2, a2, 2
 	add	a0, a0, a2
-	addiw	a1, a1, -928
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

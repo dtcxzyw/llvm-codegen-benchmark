@@ -20,11 +20,11 @@ func0000000000000028:
 func0000000000000301:
 	sext.w	a1, a1
 	lui	a2, 122
-	addiw	a2, a2, 288
+	addi	a2, a2, 288
 	sltu	a1, a2, a1
 	lui	a2, 244
 	neg	a1, a1
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -51,7 +51,7 @@ func0000000000000024:
 func0000000000000034:
 	sext.w	a1, a1
 	lui	a2, 8192
-	addiw	a2, a2, 19
+	addi	a2, a2, 19
 	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a1, a1, -1
@@ -119,7 +119,7 @@ func0000000000000106:
 	li	a2, 506
 	bltu	a2, a1, .LBB12_2
 	lui	a1, 1
-	addiw	a1, a1, 904
+	addi	a1, a1, 904
 	slt	a0, a1, a0
 	ret
 .LBB12_2:

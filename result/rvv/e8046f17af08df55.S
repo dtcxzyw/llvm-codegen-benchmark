@@ -31,7 +31,7 @@ func000000000000000c:
 	vadd.vv	v10, v10, v12
 	lui	a0, 1
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	ret
 

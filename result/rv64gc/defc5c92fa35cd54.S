@@ -7,7 +7,7 @@ func000000000000000a:
 
 func0000000000000184:
 	lui	a1, 10486
-	addiw	a1, a1, -983
+	addi	a1, a1, -983
 	mulw	a0, a0, a1
 	sltu	a0, a0, a1
 	ret
@@ -24,7 +24,7 @@ func0000000000000188:
 	addi	a1, a1, -703
 	mulw	a0, a0, a1
 	lui	a1, 36
-	addiw	a1, a1, -1635
+	addi	a1, a1, -1635
 	sltu	a0, a1, a0
 	ret
 
@@ -33,7 +33,7 @@ func0000000000000104:
 	addi	a1, a1, -688
 	mulw	a0, a0, a1
 	lui	a1, 121643
-	addiw	a1, a1, 688
+	addi	a1, a1, 688
 	sltu	a0, a0, a1
 	ret
 

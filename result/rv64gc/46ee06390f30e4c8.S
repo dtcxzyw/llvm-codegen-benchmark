@@ -59,7 +59,7 @@ func0000000000000012:
 	lui	a1, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a1)
 	lui	a1, 312854
-	addiw	a1, a1, 544
+	addi	a1, a1, 544
 	xor	a0, a0, a1
 	seqz	a0, a0
 	flt.d	a1, fa0, fa5

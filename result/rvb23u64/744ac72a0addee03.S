@@ -60,7 +60,7 @@ func0000000000000034:
 func0000000000000074:
 	sext.w	a1, a1
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -106,7 +106,7 @@ func0000000000000008:
 func000000000000006a:
 	sext.w	a1, a1
 	lui	a2, 1048575
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

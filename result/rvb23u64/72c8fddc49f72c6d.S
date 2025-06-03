@@ -15,17 +15,17 @@ func000000000000001f:
 
 func000000000000000c:
 	lui	a2, 4
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	minu	a1, a1, a2
 	lui	a2, 9
-	addiw	a2, a2, -624
+	addi	a2, a2, -624
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
 	lui	a2, 1
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	minu	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1110

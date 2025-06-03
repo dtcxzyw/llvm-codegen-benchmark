@@ -109,7 +109,7 @@ func0000000000000081:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, 705
+	addi	a3, a3, 705
 	sltu	a2, a2, a3
 	li	a3, 2
 	sub	a3, a3, a2
@@ -125,13 +125,13 @@ func0000000000000024:
 	andi	a2, a1, 1
 	beq	a3, a4, .LBB8_2
 	lui	a1, 48
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	bnez	a2, .LBB8_3
 	j	.LBB8_4
 .LBB8_2:
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sext.w	a0, a0
 	beqz	a2, .LBB8_4
 .LBB8_3:

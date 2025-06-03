@@ -69,7 +69,7 @@ func0000000000000282:
 	andi	a2, a2, 7
 	lui	a3, 16
 	addi	a2, a2, -3
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	seqz	a2, a2
 	slt	a1, a3, a1
 	and	a1, a1, a2
@@ -79,7 +79,7 @@ func0000000000000282:
 func0000000000000182:
 	sext.w	a1, a1
 	lui	a3, 1
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	seqz	a2, a2
 	slti	a1, a1, 4

@@ -17,7 +17,7 @@ func0000000000000081:
 	not	a1, a1
 	lui	a2, 16
 	bexti	a1, a1, 27
-	addiw	a2, a2, -258
+	addi	a2, a2, -258
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

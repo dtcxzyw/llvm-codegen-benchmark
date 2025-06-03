@@ -2,7 +2,7 @@ func00000000000000a6:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -28,7 +28,7 @@ func00000000000000ac:
 	slliw	a1, a0, 30
 	srliw	a0, a0, 2
 	or	a0, a0, a1
-	addiw	a1, a2, -984
+	addi	a1, a2, -984
 	sltu	a0, a1, a0
 	ret
 
@@ -45,7 +45,7 @@ func00000000000000a1:
 	slliw	a1, a0, 28
 	srliw	a0, a0, 4
 	or	a0, a0, a1
-	addiw	a1, a2, 1803
+	addi	a1, a2, 1803
 	sltu	a0, a0, a1
 	ret
 
@@ -53,7 +53,7 @@ func0000000000000006:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -70,7 +70,7 @@ func00000000000000a8:
 	add	a1, a1, a2
 	lui	a2, 599186
 	addw	a0, a0, a1
-	addiw	a1, a2, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -101,7 +101,7 @@ func0000000000000021:
 	lui	a2, 349525
 	addi	a1, a1, -1366
 	addw	a0, a0, a1
-	addiw	a1, a2, 1365
+	addi	a1, a2, 1365
 	sltu	a0, a0, a1
 	ret
 

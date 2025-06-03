@@ -216,7 +216,7 @@ func00000000000000b8:
 func000000000000000a:
 	sub	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a1, a1, -576
+	addi	a1, a1, -576
 	add	a0, a0, a1
 	sgtz	a0, a0
 	ret

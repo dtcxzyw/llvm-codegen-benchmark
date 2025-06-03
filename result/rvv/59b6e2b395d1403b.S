@@ -2,7 +2,7 @@ func0000000000000009:
 	lui	a0, 838861
 	lui	a1, 209715
 	addi	a0, a0, -820
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	slli	a2, a0, 32
 	add.uw	a0, a0, a2
 	slli	a2, a1, 32
@@ -33,7 +33,7 @@ func0000000000000001:
 	lui	a0, 838861
 	lui	a1, 209715
 	addi	a0, a0, -820
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	slli	a2, a0, 32
 	add.uw	a0, a0, a2
 	slli	a2, a1, 32

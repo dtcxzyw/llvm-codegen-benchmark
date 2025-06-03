@@ -1,7 +1,7 @@
 func0000000000000058:
 	lui	a1, 1
 	andi	a2, a0, 577
-	addiw	a1, a1, -2032
+	addi	a1, a1, -2032
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -29,7 +29,7 @@ func0000000000000042:
 
 func0000000000000068:
 	lui	a1, 12
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -56,12 +56,12 @@ func0000000000000070:
 func0000000000000618:
 	zext.b	a1, a0
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	lui	a2, 3
 	sltiu	a1, a1, 21
 	xori	a1, a1, 1
-	addiw	a2, a2, 768
+	addi	a2, a2, 768
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1

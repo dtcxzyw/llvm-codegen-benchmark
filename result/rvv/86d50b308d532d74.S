@@ -3,7 +3,7 @@ func00000000000000aa:
 	vmul.vv	v10, v10, v10
 	lui	a0, 1048527
 	vmul.vv	v8, v10, v8
-	addiw	a0, a0, 703
+	addi	a0, a0, 703
 	srli	a0, a0, 1
 	vmsgt.vx	v0, v8, a0
 	ret

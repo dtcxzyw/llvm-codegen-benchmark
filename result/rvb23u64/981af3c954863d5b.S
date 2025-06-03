@@ -1,6 +1,6 @@
 func0000000000000018:
 	lui	a2, 1
-	addiw	a2, a2, 904
+	addi	a2, a2, 904
 	sub	a1, a2, a1
 	sub	a2, a2, a0
 	minu	a0, a2, a1

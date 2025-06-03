@@ -3,7 +3,7 @@ func0000000000000d84:
 	sll	a1, a2, a1
 	lui	a2, 25056
 	srliw	a0, a0, 15
-	addiw	a2, a2, 1823
+	addi	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -15,7 +15,7 @@ func0000000000000984:
 	li	a2, 1
 	sll	a1, a2, a1
 	lui	a2, 32
-	addiw	a2, a2, -48
+	addi	a2, a2, -48
 	and	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 6

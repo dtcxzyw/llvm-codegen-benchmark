@@ -3,7 +3,7 @@ func0000000000000e04:
 	slli	a2, a2, 2
 	add	a1, a1, a2
 	lui	a2, 150
-	addiw	a2, a2, 768
+	addi	a2, a2, 768
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -13,7 +13,7 @@ func0000000000000604:
 	srli	a2, a2, 30
 	add	a1, a1, a2
 	lui	a2, 305
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

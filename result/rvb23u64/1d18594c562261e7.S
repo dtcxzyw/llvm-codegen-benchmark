@@ -79,8 +79,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000081:
-	li	a1, 1
-	slli	a1, a1, 34
+	bseti	a1, zero, 34
 	addi	a1, a1, -512
 	and	a0, a0, a1
 	seqz	a0, a0
@@ -88,7 +87,7 @@ func0000000000000081:
 
 func0000000000000001:
 	lui	a1, 512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 21
 	and	a0, a0, a1
 	seqz	a0, a0

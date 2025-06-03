@@ -3,7 +3,7 @@ func0000000000000001:
 	vmv1r.v	v12, v8
 	vadd.vv	v8, v10, v10
 	lui	a0, 16
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
@@ -37,8 +37,7 @@ func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v8
 	vsll.vi	v8, v10, 4
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -84,7 +83,7 @@ func000000000000000b:
 	vmv1r.v	v12, v8
 	vsll.vi	v8, v10, 19
 	lui	a0, 4096
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 19
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

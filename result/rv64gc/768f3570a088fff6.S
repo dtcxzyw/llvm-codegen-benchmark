@@ -1,7 +1,7 @@
 func000000000000001e:
 	srli	a1, a1, 32
 	lui	a0, 175922
-	addiw	a0, a0, -571
+	addi	a0, a0, -571
 	mul	a0, a1, a0
 	srli	a0, a0, 24
 	ret

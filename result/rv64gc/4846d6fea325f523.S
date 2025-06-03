@@ -12,7 +12,7 @@ func0000000000000449:
 	slli	a2, a2, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -5
+	addi	a3, a3, -5
 	sltu	a2, a2, a3
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
@@ -24,7 +24,7 @@ func0000000000000401:
 	slli	a2, a2, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -5
+	addi	a3, a3, -5
 	sltu	a2, a2, a3
 	addw	a1, a1, a2
 	xor	a0, a0, a1

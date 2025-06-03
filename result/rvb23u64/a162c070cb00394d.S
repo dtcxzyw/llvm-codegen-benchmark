@@ -9,7 +9,7 @@ func0000000000000001:
 
 func0000000000000003:
 	lui	a1, 52111
-	addiw	a1, a1, 1060
+	addi	a1, a1, 1060
 	sub	a0, a1, a0
 	ret
 

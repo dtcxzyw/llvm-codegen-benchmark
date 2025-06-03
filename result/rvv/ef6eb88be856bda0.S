@@ -38,7 +38,7 @@ func0000000000000004:
 	vadd.vv	v10, v10, v12
 	vremu.vv	v8, v10, v8
 	lui	a0, 2
-	addiw	a0, a0, -40
+	addi	a0, a0, -40
 	vmsltu.vx	v0, v8, a0
 	ret
 

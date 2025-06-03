@@ -33,7 +33,7 @@ func0000000000000024:
 	vmseq.vi	v0, v12, 1
 	lui	a0, 262144
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -106,7 +106,7 @@ func0000000000000034:
 	vmseq.vi	v0, v12, 0
 	lui	a0, 230
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -137,7 +137,7 @@ func00000000000000c6:
 
 func0000000000000101:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

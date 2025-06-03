@@ -29,7 +29,7 @@ func0000000000000005:
 
 func0000000000000063:
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v10, v12, v10, v0
@@ -38,7 +38,7 @@ func0000000000000063:
 
 func0000000000000010:
 	lui	a0, 227374
-	addiw	a0, a0, -1329
+	addi	a0, a0, -1329
 	slli	a0, a0, 12
 	addi	a0, a0, -1575
 	slli	a0, a0, 18

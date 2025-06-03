@@ -31,7 +31,7 @@ func000000000000001c:
 	add	a1, a1, a2
 	lui	a2, 699051
 	slliw	a1, a1, 1
-	addiw	a2, a2, -1366
+	addi	a2, a2, -1366
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -61,7 +61,7 @@ func000000000000000f:
 	add	a1, a1, a2
 	lui	a2, 4
 	slli	a1, a1, 2
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

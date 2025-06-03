@@ -32,16 +32,14 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	li	a1, 1
-	slli	a1, a1, 35
+	bseti	a1, zero, 35
 	addi	a1, a1, -32
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000011:
-	li	a1, 1
-	slli	a1, a1, 33
+	bseti	a1, zero, 33
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0

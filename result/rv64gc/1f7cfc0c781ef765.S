@@ -60,7 +60,7 @@ func0000000000000028:
 
 func0000000000000018:
 	lui	a1, 16384
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

@@ -69,7 +69,7 @@ func0000000000000024:
 	vzext.vf2	v14, v12
 	lui	a0, 1
 	vmseq.vv	v12, v10, v14
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

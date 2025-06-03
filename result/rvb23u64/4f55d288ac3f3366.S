@@ -1,7 +1,7 @@
 func000000000000000a:
 	lui	a2, 4
 	li	a3, 5
-	addiw	a2, a2, 423
+	addi	a2, a2, 423
 	bseti	a3, a3, 33
 	mul	a1, a1, a2
 	mulhu	a2, a1, a3

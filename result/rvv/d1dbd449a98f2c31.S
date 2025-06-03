@@ -19,13 +19,13 @@ func0000000000000000:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, 3072
-	addiw	a1, a1, 5
+	addi	a1, a1, 5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulhu.vx	v10, v8, a0
 	lui	a0, 12
 	vsrl.vi	v10, v10, 12
-	addiw	a0, a0, 1961
+	addi	a0, a0, 1961
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -35,13 +35,13 @@ func000000000000000c:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	lui	a1, 3072
-	addiw	a1, a1, 5
+	addi	a1, a1, 5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulhu.vx	v10, v8, a0
 	lui	a0, 4
 	vsrl.vi	v10, v10, 11
-	addiw	a0, a0, -1271
+	addi	a0, a0, -1271
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -57,7 +57,7 @@ func000000000000000f:
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 6592
 	vsrl.vi	v10, v10, 13
-	addiw	a0, a0, -832
+	addi	a0, a0, -832
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -67,14 +67,14 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulhu.vx	v10, v8, a0
 	li	a0, 34
 	vsrl.vx	v10, v10, a0
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vnmsac.vx	v8, a0, v10
 	ret

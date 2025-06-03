@@ -138,7 +138,7 @@ func0000000000000028:
 func0000000000000023:
 	sext.w	a2, a2
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	sltu	a2, a3, a2
 	li	a3, 1023
 	czero.nez	a1, a1, a2
@@ -170,7 +170,7 @@ func0000000000000050:
 func0000000000000021:
 	sext.w	a2, a2
 	lui	a3, 878478
-	addiw	a3, a3, 1991
+	addi	a3, a3, 1991
 	sltu	a2, a3, a2
 	li	a3, -306
 	czero.nez	a1, a1, a2

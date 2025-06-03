@@ -25,7 +25,7 @@ func000000000000036c:
 	vadd.vi	v10, v8, 4
 	lui	a0, 10
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -960
+	addi	a0, a0, -960
 	vmsne.vx	v0, v8, a0
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000371:
 	vadd.vi	v10, v8, 4
 	lui	a0, 10
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -960
+	addi	a0, a0, -960
 	vmseq.vx	v0, v8, a0
 	ret
 

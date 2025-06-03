@@ -35,7 +35,7 @@ func00000000000000a8:
 	bnez	a0, .LBB2_2
 	addiw	a1, a1, -3
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	sltu	a0, a0, a1
 	addi	a0, a0, 9
 	ret
@@ -43,7 +43,7 @@ func00000000000000a8:
 	li	a0, 3
 	subw	a1, a0, a1
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	sltu	a0, a0, a1
 	addi	a0, a0, 9
 	ret

@@ -36,7 +36,7 @@ func000000000000008c:
 	slli	a2, a2, 48
 	lui	a3, 1
 	srli	a2, a2, 48
-	addiw	a3, a3, -9
+	addi	a3, a3, -9
 	snez	a1, a1
 	sltu	a2, a2, a3
 	and	a0, a0, a1

@@ -33,7 +33,7 @@ func000000000000006c:
 func000000000000004c:
 	lui	a0, 699051
 	lui	a1, %hi(.LCPI2_0)
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a2, a0, 32
 	ld	a1, %lo(.LCPI2_0)(a1)
 	add	a0, a0, a2
@@ -48,7 +48,7 @@ func000000000000004c:
 func0000000000000041:
 	lui	a0, 748983
 	lui	a1, %hi(.LCPI3_0)
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a2, a0, 33
 	ld	a1, %lo(.LCPI3_0)(a1)
 	add	a0, a0, a2

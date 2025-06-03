@@ -3,7 +3,7 @@ func0000000000000002:
 	xor	a0, a0, a1
 	lui	a1, 209715
 	xor	a0, a0, a2
-	addiw	a1, a1, 819
+	addi	a1, a1, 819
 	and	a0, a0, a1
 	ret
 

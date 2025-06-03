@@ -3,7 +3,7 @@ func000000000000007d:
 	sub	a0, a0, a1
 	lui	a1, 1048544
 	add	a0, a0, a2
-	addiw	a1, a1, 30
+	addi	a1, a1, 30
 	add	a0, a0, a1
 	ret
 

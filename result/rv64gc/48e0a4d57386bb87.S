@@ -9,8 +9,8 @@ func0000000000000002:
 	lui	a3, 2
 	or	a0, a0, a1
 	lui	a1, 7
-	addiw	a3, a3, 783
-	addiw	a1, a1, 991
+	addi	a3, a3, 783
+	addi	a1, a1, 991
 	and	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2

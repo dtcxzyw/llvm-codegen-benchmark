@@ -82,7 +82,7 @@ func00000000000001d8:
 func000000000000008a:
 	mul	a0, a0, a1
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bge	a1, a0, .LBB9_2
 	lui	a0, 524288
 	addiw	a0, a0, -1

@@ -2,7 +2,7 @@ func0000000000000001:
 	or	a0, a0, a1
 	lui	a1, 1934
 	slliw	a0, a0, 24
-	addiw	a1, a1, 196
+	addi	a1, a1, 196
 	or	a0, a0, a1
 	ret
 

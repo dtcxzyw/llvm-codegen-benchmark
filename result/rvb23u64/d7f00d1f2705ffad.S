@@ -25,7 +25,7 @@ func0000000000000002:
 func0000000000000010:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -511
+	addi	a3, a3, -511
 	sltu	a2, a3, a2
 	li	a3, 1
 	or	a1, a1, a2

@@ -11,7 +11,7 @@ func0000000000000004:
 	addi	a2, a2, 23
 	addw	a1, a1, a2
 	lui	a2, 1048320
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	andn	a0, a1, a0
 	ret

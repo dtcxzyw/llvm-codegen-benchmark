@@ -3,7 +3,7 @@ func000000000000001c:
 	addi	a1, a1, -1
 	sh1add	a0, a1, a0
 	lui	a1, 7
-	addiw	a1, a1, 968
+	addi	a1, a1, 968
 	add	a0, a0, a1
 	ret
 

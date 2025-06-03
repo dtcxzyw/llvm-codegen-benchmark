@@ -7,7 +7,7 @@ func0000000000000003:
 	sext.w	a1, a1
 	or	a0, a0, a1
 	lui	a1, 1048560
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	and	a0, a0, a1
 	ret
 

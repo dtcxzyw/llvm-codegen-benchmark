@@ -46,7 +46,7 @@ func0000000000000011:
 func000000000000003d:
 	addw	a0, a0, a1
 	lui	a1, 1048573
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 

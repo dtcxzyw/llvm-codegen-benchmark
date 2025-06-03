@@ -21,7 +21,7 @@ func00000000000000cc:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 2
-	addiw	a0, a0, -2
+	addi	a0, a0, -2
 	vmslt.vx	v9, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vi	v8, v8, 0

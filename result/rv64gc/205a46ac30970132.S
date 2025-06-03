@@ -48,10 +48,10 @@ func00000000000007f8:
 	sext.w	a1, a1
 	lui	a2, 244
 	sext.w	a0, a0
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	lui	a2, 2575
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	add	a0, a0, a1
 	slli	a2, a2, 13
 	sltu	a0, a2, a0
@@ -60,7 +60,7 @@ func00000000000007f8:
 func00000000000006aa:
 	sext.w	a1, a1
 	lui	a2, 804435
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1

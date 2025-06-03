@@ -4,7 +4,7 @@ func0000000000000004:
 	addi	a1, a1, -792
 	addw	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 1809
+	addi	a1, a1, 1809
 	sltu	a0, a0, a1
 	ret
 

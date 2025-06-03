@@ -12,7 +12,7 @@ func0000000000000021:
 func0000000000000026:
 	sext.w	a1, a1
 	lui	a3, 128
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	and	a2, a2, a3
 	xor	a2, a2, a3
 	li	a3, 64

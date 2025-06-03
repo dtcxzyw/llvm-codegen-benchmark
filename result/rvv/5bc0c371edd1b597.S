@@ -2,7 +2,7 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v8, v12, v10
 	vmand.mm	v0, v0, v8

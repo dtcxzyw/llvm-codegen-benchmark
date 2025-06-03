@@ -4,7 +4,7 @@ func0000000000000002:
 	lui	a1, 34767
 	and	a2, a2, a3
 	or	a0, a0, a2
-	addiw	a1, a1, 98
+	addi	a1, a1, 98
 	xor	a0, a0, a1
 	ret
 

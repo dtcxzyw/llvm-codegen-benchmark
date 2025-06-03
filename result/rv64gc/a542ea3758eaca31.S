@@ -11,7 +11,7 @@ func0000000000000006:
 	li	a1, 500
 	mul	a0, a0, a1
 	lui	a1, 7
-	addiw	a1, a1, 1328
+	addi	a1, a1, 1328
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

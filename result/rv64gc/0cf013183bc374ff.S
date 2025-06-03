@@ -2,7 +2,7 @@ func0000000000000004:
 	srl	a0, a0, a1
 	lui	a1, 244141
 	sext.w	a0, a0
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	sltu	a0, a0, a1
 	li	a1, 10
 	sub	a0, a1, a0
@@ -12,7 +12,7 @@ func0000000000000104:
 	srl	a0, a0, a1
 	lui	a1, 24414
 	sext.w	a0, a0
-	addiw	a1, a1, 256
+	addi	a1, a1, 256
 	sltu	a0, a0, a1
 	xori	a0, a0, 9
 	ret

@@ -15,7 +15,7 @@ func0000000000000001:
 	slli	a5, a5, 46
 	or	a5, a7, a5
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a4
 	or	a1, a1, a3
 	slli	a3, a0, 6
@@ -46,7 +46,7 @@ func0000000000000007:
 	slli	a6, a6, 48
 	and	a4, a4, a6
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a5
 	or	a1, a1, a3
 	slli	a3, a0, 58
@@ -79,7 +79,7 @@ func0000000000000004:
 	slli	a6, a6, 48
 	and	a4, a4, a6
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a5
 	or	a1, a1, a3
 	slli	a3, a0, 59
@@ -112,7 +112,7 @@ func0000000000000000:
 	slli	a6, a6, 48
 	and	a4, a4, a6
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a5
 	or	a1, a1, a3
 	slli	a3, a0, 59
@@ -145,7 +145,7 @@ func0000000000000006:
 	slli	a6, a6, 48
 	and	a4, a4, a6
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a2, a2, a5
 	or	a1, a1, a3
 	slli	a3, a0, 59

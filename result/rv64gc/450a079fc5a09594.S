@@ -7,7 +7,7 @@ func0000000000000002:
 	ret
 .LBB0_2:
 	lui	a1, 18
-	addiw	a1, a1, 1272
+	addi	a1, a1, 1272
 	mul	a0, a0, a1
 	ret
 

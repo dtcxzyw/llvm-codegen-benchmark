@@ -42,7 +42,7 @@ func000000000000032a:
 	slt	a1, a1, a2
 	lui	a2, 1048400
 	subw	a0, a0, a1
-	addiw	a1, a2, 1427
+	addi	a1, a2, 1427
 	slt	a0, a1, a0
 	ret
 
@@ -50,7 +50,7 @@ func000000000000052a:
 	slt	a1, a2, a1
 	lui	a2, 1048400
 	subw	a0, a0, a1
-	addiw	a1, a2, 1427
+	addi	a1, a2, 1427
 	slt	a0, a1, a0
 	ret
 

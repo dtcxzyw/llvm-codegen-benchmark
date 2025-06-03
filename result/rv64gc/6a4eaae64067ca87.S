@@ -11,11 +11,11 @@ func0000000000000003:
 func0000000000000002:
 	sext.w	a1, a1
 	lui	a3, 256
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	and	a2, a2, a3
 	lui	a3, 917504
 	seqz	a1, a1
-	addiw	a3, a3, -129
+	addi	a3, a3, -129
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	and	a0, a0, a3

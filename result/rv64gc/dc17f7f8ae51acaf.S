@@ -151,7 +151,7 @@ func000000000000006c:
 func0000000000000066:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	slt	a0, a0, a1
 	ret
 
@@ -176,7 +176,7 @@ func000000000000006a:
 func0000000000000014:
 	add	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

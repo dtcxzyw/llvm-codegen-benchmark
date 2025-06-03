@@ -20,7 +20,7 @@ func0000000000000081:
 	and	a1, a1, a2
 	lui	a2, 16
 	srli	a0, a0, 48
-	addiw	a2, a2, -258
+	addi	a2, a2, -258
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

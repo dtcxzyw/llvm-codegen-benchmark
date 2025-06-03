@@ -26,7 +26,7 @@ func0000000000000042:
 	vand.vx	v10, v10, a0
 	lui	a0, 3
 	vmseq.vv	v12, v8, v14
-	addiw	a0, a0, -1503
+	addi	a0, a0, -1503
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v0, v8, v12
 	ret

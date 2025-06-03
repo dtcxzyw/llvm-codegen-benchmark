@@ -16,7 +16,7 @@ func0000000000000153:
 func0000000000000051:
 	addw	a1, a1, a2
 	lui	a2, 12
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	slt	a1, a2, a1
 	xor	a0, a0, a1
 	andi	a0, a0, 1
@@ -25,7 +25,7 @@ func0000000000000051:
 func0000000000000151:
 	addw	a1, a1, a2
 	lui	a2, 12
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	slt	a1, a2, a1
 	xor	a0, a0, a1
 	andi	a0, a0, 1

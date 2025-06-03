@@ -31,7 +31,7 @@ func0000000000000061:
 func0000000000000106:
 	sext.w	a2, a2
 	lui	a3, 4096
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	bltu	a2, a3, .LBB3_2
 	lui	a1, 4096
 .LBB3_2:

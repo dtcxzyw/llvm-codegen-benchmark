@@ -87,7 +87,7 @@ func000000000000114a:
 	lui	a0, 244
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmsltu.vx	v10, v12, a0
 	vmsgt.vi	v11, v8, -1
 	vmand.mm	v0, v11, v10

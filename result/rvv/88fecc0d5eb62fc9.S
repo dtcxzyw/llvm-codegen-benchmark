@@ -12,7 +12,7 @@ func0000000000000034:
 	vmin.vv	v10, v10, v12
 	lui	a0, 4
 	vmul.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -37,7 +37,7 @@ func0000000000000014:
 	vmin.vv	v10, v10, v12
 	lui	a0, 8
 	vmul.vv	v8, v8, v10
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

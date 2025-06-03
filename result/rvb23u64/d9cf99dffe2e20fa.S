@@ -57,7 +57,7 @@ func0000000000000044:
 	sext.w	a0, a0
 	lui	a2, 1048560
 	subw	a1, a2, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret

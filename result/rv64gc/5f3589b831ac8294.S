@@ -1,7 +1,7 @@
 func000000000000014c:
 	lui	a3, 16
 	sext.w	a1, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	slt	a1, a2, a1
@@ -12,8 +12,8 @@ func000000000000014c:
 func0000000000000021:
 	lui	a3, 16
 	sext.w	a0, a0
-	addiw	a4, a3, -1
-	addiw	a3, a3, -512
+	addi	a4, a3, -1
+	addi	a3, a3, -512
 	and	a1, a1, a4
 	and	a2, a2, a4
 	xor	a0, a0, a2
@@ -25,7 +25,7 @@ func0000000000000021:
 func000000000000056c:
 	lui	a3, 16
 	sext.w	a1, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a2, a2, a3
 	slt	a1, a1, a2
@@ -37,7 +37,7 @@ func000000000000056c:
 func0000000000000108:
 	lui	a3, 16
 	sext.w	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	sltu	a0, a2, a0
@@ -49,11 +49,11 @@ func0000000000000108:
 func0000000000000028:
 	lui	a3, 16
 	sext.w	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	lui	a3, 12
-	addiw	a3, a3, 664
+	addi	a3, a3, 664
 	sltu	a0, a2, a0
 	xor	a1, a1, a3
 	seqz	a1, a1
@@ -63,7 +63,7 @@ func0000000000000028:
 func0000000000000039:
 	lui	a3, 16
 	sext.w	a0, a0
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a2, a2, a3
 	sltu	a0, a0, a2

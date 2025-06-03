@@ -18,7 +18,7 @@ func0000000000000008:
 	ret
 .LBB1_2:
 	lui	a0, 1
-	addiw	a0, a0, 1654
+	addi	a0, a0, 1654
 	ret
 
 func0000000000000006:
@@ -74,7 +74,7 @@ func0000000000000018:
 	ret
 .LBB7_2:
 	lui	a0, 6019
-	addiw	a0, a0, 551
+	addi	a0, a0, 551
 	slli	a0, a0, 7
 	ret
 

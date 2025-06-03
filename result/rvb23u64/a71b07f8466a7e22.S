@@ -38,7 +38,7 @@ func0000000000000318:
 
 func0000000000000294:
 	lui	a3, 262144
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	slt	a2, a3, a2
 	or	a0, a0, a2
 	slt	a1, a3, a1
@@ -64,7 +64,7 @@ func0000000000000070:
 
 func0000000000000210:
 	lui	a3, 1
-	addiw	a4, a3, -2
+	addi	a4, a3, -2
 	sltu	a1, a3, a1
 	sltu	a2, a4, a2
 	or	a0, a0, a1
@@ -88,7 +88,7 @@ func0000000000000198:
 func000000000000018c:
 	lui	a3, 244
 	slti	a1, a1, 100
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	slt	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

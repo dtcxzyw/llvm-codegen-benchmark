@@ -49,7 +49,7 @@ func00000000000000e4:
 
 func0000000000000088:
 	lui	a3, 131072
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1

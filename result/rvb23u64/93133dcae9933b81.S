@@ -78,7 +78,7 @@ func000000000000008c:
 	andi	a1, a1, -129
 	lui	a2, 1
 	addi	a1, a1, -2048
-	addiw	a2, a2, -460
+	addi	a2, a2, -460
 	addiw	a1, a1, -1615
 	xor	a0, a0, a2
 	sltiu	a1, a1, -8

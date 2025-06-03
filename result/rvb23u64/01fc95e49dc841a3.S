@@ -76,7 +76,7 @@ func000000000000003f:
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, -1802
+	addi	a1, a1, -1802
 	mul	a0, a0, a1
 	ret
 
@@ -85,7 +85,7 @@ func000000000000003e:
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bseti	a1, a1, 32
 	bseti	a1, a1, 48
 	mul	a0, a0, a1

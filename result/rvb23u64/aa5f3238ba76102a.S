@@ -32,7 +32,7 @@ func0000000000000013:
 	li	a3, -4
 	czero.eqz	a2, a3, a2
 	lui	a3, 2
-	addiw	a3, a3, 368
+	addi	a3, a3, 368
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -118,7 +118,7 @@ func00000000000000a0:
 func0000000000000083:
 	sext.w	a2, a2
 	lui	a3, 24414
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	sltu	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

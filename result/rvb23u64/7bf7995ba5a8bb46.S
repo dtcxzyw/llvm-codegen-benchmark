@@ -26,7 +26,7 @@ func000000000000048c:
 	addi	a2, a2, 1024
 	add	a0, a0, a2
 	lui	a2, 13838
-	addiw	a2, a2, -1281
+	addi	a2, a2, -1281
 	xor	a1, a1, a2
 	srliw	a0, a0, 4
 	sltiu	a0, a0, 511

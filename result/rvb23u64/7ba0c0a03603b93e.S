@@ -71,7 +71,7 @@ func0000000000000054:
 	sub	a2, a2, a1
 	lui	a1, 4
 	slti	a2, a2, 509
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	xori	a2, a2, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

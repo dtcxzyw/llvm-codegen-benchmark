@@ -8,7 +8,7 @@ func0000000000000048:
 func0000000000000026:
 	sext.w	a1, a0
 	lui	a2, 1048568
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	bge	a1, a2, .LBB1_2
 	lui	a0, 1048568
 .LBB1_2:

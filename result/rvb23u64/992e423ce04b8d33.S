@@ -3,7 +3,7 @@ func0000000000000008:
 	addw	a1, a1, a2
 	lui	a2, 87381
 	maxu	a0, a1, a0
-	addiw	a1, a2, 1365
+	addi	a1, a2, 1365
 	sltu	a0, a1, a0
 	ret
 

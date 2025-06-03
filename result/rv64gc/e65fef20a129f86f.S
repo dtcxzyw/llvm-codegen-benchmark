@@ -24,7 +24,7 @@ func0000000000000008:
 func0000000000000184:
 	mul	a1, a2, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

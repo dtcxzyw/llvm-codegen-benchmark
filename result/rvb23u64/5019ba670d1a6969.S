@@ -13,7 +13,7 @@ func0000000000000184:
 	or	a0, a0, a2
 	addi	a2, a1, -1697
 	addw	a0, a0, a2
-	addiw	a1, a1, -1696
+	addi	a1, a1, -1696
 	sltu	a0, a0, a1
 	ret
 
@@ -33,7 +33,7 @@ func00000000000001a4:
 	lui	a2, 49134
 	addi	a1, a1, -1082
 	addw	a0, a0, a1
-	addiw	a1, a2, -778
+	addi	a1, a2, -778
 	sltu	a0, a0, a1
 	ret
 

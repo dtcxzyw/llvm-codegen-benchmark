@@ -12,7 +12,7 @@ func0000000000000b0c:
 	lui	a0, 131072
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v14, v10, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmseq.vx	v10, v12, a0
 	li	a0, 5
 	slli	a0, a0, 29

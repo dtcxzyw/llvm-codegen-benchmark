@@ -3,7 +3,7 @@ func000000000000003f:
 	or	a0, a0, a1
 	lui	a1, 244
 	or	a0, a0, a2
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func000000000000003c:
 func0000000000000038:
 	or	a0, a0, a1
 	lui	a1, 123738
-	addiw	a1, a1, 1981
+	addi	a1, a1, 1981
 	slli	a1, a1, 24
 	mul	a0, a0, a1
 	ret

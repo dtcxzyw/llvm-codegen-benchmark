@@ -31,7 +31,7 @@ func0000000000000008:
 	mul	a0, a1, a0
 	lui	a1, 2197
 	mulw	a0, a0, a2
-	addiw	a1, a1, 1087
+	addi	a1, a1, 1087
 	sltu	a0, a1, a0
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000003:
 	addi	a1, a1, -12
 	seqz	a1, a1
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 64
+	addi	a1, a2, 64
 	or	a0, a0, a1
 	ret
 

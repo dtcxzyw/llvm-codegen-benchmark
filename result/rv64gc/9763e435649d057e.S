@@ -20,8 +20,8 @@ func0000000000000051:
 	sext.w	a1, a1
 	lui	a2, 16
 	srli	a0, a0, 2
-	addiw	a3, a2, -1
-	addiw	a2, a2, -2
+	addi	a3, a2, -1
+	addi	a2, a2, -2
 	slt	a1, a3, a1
 	and	a0, a0, a2
 	or	a0, a0, a1

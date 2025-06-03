@@ -22,7 +22,7 @@ func00000000000000f8:
 	vsrl.vi	v13, v13, 15
 	vnmsub.vx	v13, a0, v12
 	lui	a0, 32
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0

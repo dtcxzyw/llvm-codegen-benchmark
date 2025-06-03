@@ -4,7 +4,7 @@ func000000000000001f:
 	lui	a2, 41
 	sext.w	a1, a1
 	sh1add	a0, a1, a0
-	addiw	a1, a2, 682
+	addi	a1, a2, 682
 	add	a0, a0, a1
 	ret
 

@@ -10,7 +10,7 @@ func0000000000000004:
 	slli	a0, a0, 48
 	lui	a1, 16
 	srli	a0, a0, 48
-	addiw	a1, a1, -5
+	addi	a1, a1, -5
 	sltu	a0, a0, a1
 	neg	a0, a0
 	ret

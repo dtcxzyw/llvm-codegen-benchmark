@@ -20,7 +20,7 @@ func000000000000001b:
 	add	a0, a0, a2
 	lui	a2, 1
 	addi	a1, a1, -1
-	addiw	a2, a2, -2017
+	addi	a2, a2, -2017
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 31

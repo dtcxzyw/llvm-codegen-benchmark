@@ -1,7 +1,6 @@
 func000000000000003b:
 	sext.w	a0, a0
-	li	a1, 1
-	slli	a1, a1, 38
+	bseti	a1, zero, 38
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	srli	a0, a0, 6
@@ -9,8 +8,7 @@ func000000000000003b:
 	ret
 
 func000000000000001b:
-	li	a1, 1
-	slli	a1, a1, 38
+	bseti	a1, zero, 38
 	addi	a1, a1, -129
 	add.uw	a0, a0, a1
 	srli	a0, a0, 6

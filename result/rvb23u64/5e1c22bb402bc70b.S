@@ -36,7 +36,7 @@ func0000000000000118:
 	andi	a1, a1, 10
 	lui	a2, 16
 	snez	a1, a1
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

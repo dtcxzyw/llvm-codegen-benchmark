@@ -23,10 +23,10 @@ func00000000000000ad:
 	sext.w	a2, a2
 	lui	a3, 1047599
 	sgtz	a2, a2
-	addiw	a3, a3, 1792
+	addi	a3, a3, 1792
 	czero.nez	a2, a3, a2
 	lui	a3, 1221
-	addiw	a3, a3, -1216
+	addi	a3, a3, -1216
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1

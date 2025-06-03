@@ -17,7 +17,7 @@ func00000000000000a0:
 	mul	a2, a2, a1
 	add	a0, a0, a2
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37
@@ -45,7 +45,7 @@ func00000000000000a5:
 	mul	a2, a2, a1
 	add	a0, a0, a2
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37

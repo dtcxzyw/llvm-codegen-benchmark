@@ -1,6 +1,6 @@
 func0000000000000061:
 	lui	a1, 8
-	addiw	a1, a1, 259
+	addi	a1, a1, 259
 	bext	a0, a1, a0
 	seqz	a0, a0
 	addi	a0, a0, 1

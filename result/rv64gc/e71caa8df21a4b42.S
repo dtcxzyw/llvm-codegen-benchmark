@@ -9,7 +9,7 @@ func0000000000000000:
 	lui	a1, 244141
 	mulhu	a2, a0, a2
 	srli	a2, a2, 26
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	mul	a1, a2, a1
 	sub	a0, a0, a1
 	ret

@@ -6,7 +6,7 @@ func0000000000000001:
 	or	a0, a0, a1
 	ret
 .LBB0_2:
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	ret
 
 func0000000000000000:

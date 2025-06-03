@@ -23,7 +23,7 @@ func0000000000000188:
 	sext.h	a1, a1
 	slt	a1, a1, a2
 	lui	a2, 1048560
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

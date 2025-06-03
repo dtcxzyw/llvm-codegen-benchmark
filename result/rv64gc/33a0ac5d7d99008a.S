@@ -93,7 +93,7 @@ func000000000000048c:
 func0000000000000081:
 	addiw	a1, a1, -56
 	lui	a2, 262144
-	addiw	a2, a2, -55
+	addi	a2, a2, -55
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -125,7 +125,7 @@ func0000000000000104:
 	addiw	a1, a1, -1
 	lui	a2, 262144
 	sltiu	a0, a0, 3
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -168,7 +168,7 @@ func0000000000000584:
 	addi	a2, a2, -203
 	addw	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, 565
+	addi	a2, a2, 565
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

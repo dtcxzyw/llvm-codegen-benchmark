@@ -8,7 +8,7 @@ func0000000000000026:
 	slt	a1, a0, a1
 	lui	a2, 244
 	neg	a1, a1
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

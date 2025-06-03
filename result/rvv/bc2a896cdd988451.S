@@ -10,7 +10,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret

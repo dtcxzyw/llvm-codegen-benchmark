@@ -1,6 +1,5 @@
 func000000000000001b:
-	li	a2, 1
-	slli	a2, a2, 37
+	bseti	a2, zero, 37
 	addi	a2, a2, -32
 	add	a1, a1, a2
 	srli	a1, a1, 2
@@ -17,8 +16,7 @@ func0000000000000003:
 	ret
 
 func000000000000001c:
-	li	a2, 1
-	slli	a2, a2, 36
+	bseti	a2, zero, 36
 	addi	a2, a2, -336
 	sh2add	a1, a1, a2
 	srli	a1, a1, 4
@@ -28,8 +26,7 @@ func000000000000001c:
 	ret
 
 func0000000000000018:
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -64
 	add	a1, a1, a2
 	srli	a1, a1, 2
@@ -37,8 +34,7 @@ func0000000000000018:
 	ret
 
 func000000000000001f:
-	li	a2, 1
-	slli	a2, a2, 35
+	bseti	a2, zero, 35
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	srli	a1, a1, 3

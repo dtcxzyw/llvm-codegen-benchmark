@@ -68,7 +68,7 @@ func00000000000000c6:
 	sext.w	a2, a2
 	lui	a3, 2
 	slti	a2, a2, 65
-	addiw	a3, a3, 1809
+	addi	a3, a3, 1809
 	slt	a1, a1, a3
 	czero.eqz	a2, a1, a2
 	and	a0, a0, a1

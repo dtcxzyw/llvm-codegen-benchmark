@@ -2,10 +2,10 @@ func0000000000000003:
 	andi	a1, a0, 1
 	lui	a0, 285
 	bnez	a1, .LBB0_2
-	addiw	a0, a0, 1416
+	addi	a0, a0, 1416
 	ret
 .LBB0_2:
-	addiw	a0, a0, 1440
+	addi	a0, a0, 1440
 	ret
 
 func0000000000000001:

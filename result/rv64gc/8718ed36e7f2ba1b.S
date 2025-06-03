@@ -40,7 +40,7 @@ func0000000000000842:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 131072
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	xor	a2, a2, a3
 	xor	a1, a1, a3
 	xor	a0, a0, a3

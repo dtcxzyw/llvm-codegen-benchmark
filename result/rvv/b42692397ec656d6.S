@@ -4,7 +4,7 @@ func0000000000000009:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, 4
-	addiw	a1, a1, -1604
+	addi	a1, a1, -1604
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	vmulh.vx	v10, v8, a0

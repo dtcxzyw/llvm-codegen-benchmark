@@ -22,7 +22,7 @@ func0000000000000024:
 
 func0000000000000101:
 	lui	a0, 1
-	addiw	a0, a0, -2033
+	addi	a0, a0, -2033
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
@@ -33,14 +33,14 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
 
 func00000000000000c1:
 	lui	a0, 1048575
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
@@ -68,7 +68,7 @@ func0000000000000106:
 func000000000000014a:
 	lui	a0, 5960
 	lui	a1, %hi(.LCPI8_0)
-	addiw	a0, a0, 1903
+	addi	a0, a0, 1903
 	ld	a1, %lo(.LCPI8_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049
@@ -83,7 +83,7 @@ func000000000000014a:
 func0000000000000118:
 	lui	a0, 5960
 	lui	a1, %hi(.LCPI9_0)
-	addiw	a0, a0, 1903
+	addi	a0, a0, 1903
 	ld	a1, %lo(.LCPI9_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049
@@ -123,7 +123,7 @@ func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	lui	a0, 1
-	addiw	a0, a0, 1904
+	addi	a0, a0, 1904
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

@@ -2,7 +2,7 @@ func0000000000000014:
 	lui	a1, 65534
 	lui	a2, 349525
 	and	a0, a0, a1
-	addiw	a1, a2, 1365
+	addi	a1, a2, 1365
 	srli	a2, a0, 1
 	or	a2, a2, a0
 	srli	a3, a2, 2
@@ -19,7 +19,7 @@ func0000000000000014:
 	srli	a3, a2, 1
 	and	a1, a1, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a2, a2, a1
 	and	a1, a2, a3
 	srli	a2, a2, 2
@@ -29,9 +29,9 @@ func0000000000000014:
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	lui	a2, 4112
-	addiw	a3, a3, -241
+	addi	a3, a3, -241
 	and	a1, a1, a3
-	addiw	a2, a2, 257
+	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
 	addi	a1, a1, -8

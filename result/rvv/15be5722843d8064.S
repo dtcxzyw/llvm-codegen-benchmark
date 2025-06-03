@@ -67,7 +67,7 @@ func0000000000000018:
 	lui	a0, 25600
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -149,7 +149,7 @@ func00000000000001e4:
 	lui	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vmsltu.vx	v0, v8, a0
 	ret
 

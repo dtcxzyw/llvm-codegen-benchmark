@@ -12,7 +12,7 @@ func0000000000000008:
 	sltu	a0, a1, a0
 	lui	a1, 4
 	neg	a0, a0
-	addiw	a1, a1, 439
+	addi	a1, a1, 439
 	and	a0, a0, a1
 	ret
 

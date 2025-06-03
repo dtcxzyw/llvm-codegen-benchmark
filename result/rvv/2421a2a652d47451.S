@@ -16,7 +16,7 @@ func0000000000000d14:
 
 func0000000000000547:
 	lui	a0, 21
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmsle.vv	v14, v12, v8

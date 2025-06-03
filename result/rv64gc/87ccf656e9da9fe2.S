@@ -89,12 +89,12 @@ func0000000000000014:
 	andi	a0, a0, 1
 	bltu	a2, a3, .LBB7_2
 	lui	a2, 65857
-	addiw	a2, a2, 161
+	addi	a2, a2, 161
 	beqz	a0, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
 	lui	a2, 98625
-	addiw	a2, a2, 161
+	addi	a2, a2, 161
 	bnez	a0, .LBB7_4
 .LBB7_3:
 	mv	a1, a2

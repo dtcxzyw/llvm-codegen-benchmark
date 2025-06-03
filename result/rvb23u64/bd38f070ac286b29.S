@@ -58,7 +58,7 @@ func0000000000000034:
 func0000000000000004:
 	addw	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -31
+	addi	a2, a2, -31
 	sltu	a1, a1, a2
 	czero.eqz	a0, a0, a1
 	ret

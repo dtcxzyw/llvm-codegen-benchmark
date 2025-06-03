@@ -3,7 +3,7 @@ func0000000000000005:
 	lui	a4, 335544
 	add	a1, a1, a2
 	li	a2, 100
-	addiw	a4, a4, 1311
+	addi	a4, a4, 1311
 	mul	a3, a3, a4
 	srli	a4, a3, 63
 	srai	a3, a3, 37
@@ -28,7 +28,7 @@ func0000000000000004:
 	lui	a4, 335544
 	add	a1, a1, a2
 	li	a2, 100
-	addiw	a4, a4, 1311
+	addi	a4, a4, 1311
 	mul	a3, a3, a4
 	srli	a4, a3, 63
 	srai	a3, a3, 37

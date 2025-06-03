@@ -49,7 +49,7 @@ func0000000000000000:
 func0000000000000030:
 	lui	a2, 28770
 	slli	a1, a1, 56
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	mulhu	a1, a1, a2
 	lui	a2, 65462
 	addi	a2, a2, -2031

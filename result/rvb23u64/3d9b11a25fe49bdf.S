@@ -43,7 +43,7 @@ func000000000000001b:
 
 func000000000000000f:
 	lui	a3, 64
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sub	a3, a3, a2
 	minu	a1, a1, a3
 	add	a0, a0, a1
@@ -86,7 +86,7 @@ func0000000000000000:
 
 func0000000000000008:
 	lui	a3, 2
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sub	a3, a3, a2
 	minu	a1, a3, a1
 	add	a0, a0, a1

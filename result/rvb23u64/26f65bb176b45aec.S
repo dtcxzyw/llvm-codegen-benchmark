@@ -2,7 +2,7 @@ func0000000000000034:
 	lui	a1, 4
 	add	a0, a0, a1
 	zext.h	a0, a0
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

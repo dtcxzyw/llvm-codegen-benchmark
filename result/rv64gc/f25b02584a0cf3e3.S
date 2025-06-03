@@ -2,7 +2,7 @@ func0000000000000082:
 	slli	a2, a0, 48
 	lui	a3, 16
 	srli	a2, a2, 48
-	addiw	a3, a3, -17
+	addi	a3, a3, -17
 	and	a0, a0, a3
 	addi	a2, a2, -35
 	addi	a0, a0, -47

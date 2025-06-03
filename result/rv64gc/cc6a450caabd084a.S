@@ -8,10 +8,10 @@ func0000000000000007:
 	andi	a0, a0, 4
 	beqz	a0, .LBB1_2
 	lui	a0, 4024
-	addiw	a0, a0, -2048
+	addi	a0, a0, -2048
 	ret
 .LBB1_2:
 	lui	a0, 4000
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	ret
 

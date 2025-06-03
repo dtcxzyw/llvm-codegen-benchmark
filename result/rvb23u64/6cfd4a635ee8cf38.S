@@ -9,7 +9,7 @@ func000000000000002b:
 	add	a1, a1, a2
 	lui	a2, 2575
 	add	a0, a0, a1
-	addiw	a1, a2, -325
+	addi	a1, a2, -325
 	zext.w	a0, a0
 	slli	a1, a1, 13
 	mul	a0, a0, a1

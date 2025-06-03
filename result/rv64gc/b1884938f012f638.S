@@ -1,6 +1,6 @@
 func00000000000000a1:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
@@ -37,7 +37,7 @@ func0000000000000008:
 
 func0000000000000184:
 	lui	a3, 977
-	addiw	a3, a3, -1792
+	addi	a3, a3, -1792
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000184:
 
 func0000000000000188:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -93,7 +93,7 @@ func00000000000000a8:
 
 func0000000000000088:
 	lui	a3, 1027482
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
@@ -101,7 +101,7 @@ func0000000000000088:
 
 func0000000000000081:
 	lui	a3, 1046001
-	addiw	a3, a3, 325
+	addi	a3, a3, 325
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -111,7 +111,7 @@ func0000000000000081:
 
 func000000000000008a:
 	lui	a3, 1046001
-	addiw	a3, a3, 325
+	addi	a3, a3, 325
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -120,7 +120,7 @@ func000000000000008a:
 
 func000000000000008c:
 	lui	a3, 1046001
-	addiw	a3, a3, 325
+	addi	a3, a3, 325
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -130,7 +130,7 @@ func000000000000008c:
 
 func0000000000000087:
 	lui	a3, 1046001
-	addiw	a3, a3, 325
+	addi	a3, a3, 325
 	slli	a3, a3, 13
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -155,7 +155,7 @@ func00000000000001f8:
 
 func00000000000001f4:
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -186,7 +186,7 @@ func000000000000018a:
 
 func000000000000000a:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0
@@ -201,7 +201,7 @@ func0000000000000148:
 
 func0000000000000086:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a0, a1
@@ -209,7 +209,7 @@ func0000000000000086:
 
 func000000000000008b:
 	lui	a3, 244
-	addiw	a3, a3, 576
+	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a0, a1

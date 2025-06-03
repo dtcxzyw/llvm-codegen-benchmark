@@ -27,7 +27,7 @@ func0000000000000001:
 	lui	a1, 1048540
 	lui	a2, 235184
 	addi	a1, a1, 1359
-	addiw	a2, a2, 1725
+	addi	a2, a2, 1725
 	add	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2

@@ -42,7 +42,7 @@ func0000000000000070:
 func0000000000000035:
 	lui	a3, 21
 	zext.b	a1, a1
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

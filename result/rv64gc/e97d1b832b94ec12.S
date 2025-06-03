@@ -1,7 +1,7 @@
 func00000000000000fe:
 	lui	a3, 1
 	sext.w	a0, a0
-	addiw	a3, a3, -608
+	addi	a3, a3, -608
 	slli	a0, a0, 1
 	mul	a1, a1, a3
 	add	a0, a0, a2
@@ -25,12 +25,12 @@ func00000000000000ee:
 func00000000000000cc:
 	lui	a3, 2
 	sext.w	a0, a0
-	addiw	a4, a3, 176
+	addi	a4, a3, 176
 	slli	a0, a0, 4
 	mul	a1, a1, a4
 	add	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a1, a3, 208
+	addi	a1, a3, 208
 	add	a0, a0, a1
 	ret
 

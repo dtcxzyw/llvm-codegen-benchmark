@@ -28,8 +28,8 @@ func0000000000000018:
 
 func0000000000000030:
 	lui	a0, 8
-	addiw	a1, a0, 31
-	addiw	a0, a0, 3
+	addi	a1, a0, 31
+	addi	a0, a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
 	vmsne.vx	v9, v10, a0

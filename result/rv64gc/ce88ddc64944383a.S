@@ -3,12 +3,12 @@ func000000000000000c:
 	not	a2, a2
 	lui	a4, 5
 	and	a2, a2, a3
-	addiw	a3, a4, 1365
+	addi	a3, a4, 1365
 	srli	a4, a2, 1
 	and	a3, a3, a4
 	lui	a4, 3
 	and	a1, a1, a0
-	addiw	a4, a4, 819
+	addi	a4, a4, 819
 	sub	a2, a2, a3
 	and	a3, a2, a4
 	srli	a2, a2, 2

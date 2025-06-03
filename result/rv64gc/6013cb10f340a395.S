@@ -123,25 +123,25 @@ func000000000000014a:
 	li	a3, 1
 	lui	a0, 1
 	blt	a3, a1, .LBB6_2
-	addiw	a0, a0, -2007
+	addi	a0, a0, -2007
 	andi	a2, a2, 1
 	li	a4, 6
 	lui	a3, 3
 	blt	a4, a1, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
-	addiw	a0, a0, -1448
+	addi	a0, a0, -1448
 	andi	a2, a2, 1
 	li	a4, 6
 	lui	a3, 3
 	bge	a4, a1, .LBB6_4
 .LBB6_3:
-	addiw	a0, a3, 1544
+	addi	a0, a3, 1544
 .LBB6_4:
 	bnez	a2, .LBB6_6
 	ret
 .LBB6_6:
-	addiw	a0, a3, 1533
+	addi	a0, a3, 1533
 	ret
 
 func0000000000000294:
@@ -167,22 +167,22 @@ func0000000000000081:
 	li	a0, 10
 	lui	a1, 1
 	bltu	a3, a0, .LBB8_2
-	addiw	a0, a1, -782
+	addi	a0, a1, -782
 	li	a4, 8
 	andi	a2, a2, 1
 	beq	a3, a4, .LBB8_3
 	j	.LBB8_4
 .LBB8_2:
-	addiw	a0, a1, -735
+	addi	a0, a1, -735
 	li	a4, 8
 	andi	a2, a2, 1
 	bne	a3, a4, .LBB8_4
 .LBB8_3:
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 .LBB8_4:
 	bnez	a2, .LBB8_6
 	ret
 .LBB8_6:
-	addiw	a0, a1, -849
+	addi	a0, a1, -849
 	ret
 

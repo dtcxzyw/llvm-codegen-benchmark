@@ -22,7 +22,7 @@ func0000000000000000:
 	srai	a0, a0, 4
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, -344
+	addi	a1, a1, -344
 	mul	a0, a0, a1
 	ret
 

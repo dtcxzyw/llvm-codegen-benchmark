@@ -16,7 +16,7 @@ func0000000000002084:
 	lui	a3, 16
 	slli	a0, a0, 48
 	sltiu	a2, a2, 71
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	srli	a0, a0, 53
 	xori	a2, a2, 1
 	sltu	a1, a1, a3
@@ -31,7 +31,7 @@ func0000000000002088:
 	zext.h	a2, a2
 	lui	a3, 16
 	sltiu	a2, a2, 71
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	not	a2, a2
 	sltu	a1, a1, a3
 	sltiu	a0, a0, 32
@@ -44,10 +44,10 @@ func0000000000001084:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a4, a3, -49
+	addi	a4, a3, -49
 	sltu	a2, a2, a4
-	addiw	a4, a3, -7
-	addiw	a3, a3, -21
+	addi	a4, a3, -7
+	addi	a3, a3, -21
 	sltu	a1, a1, a4
 	and	a1, a1, a2
 	sltu	a0, a0, a3
@@ -121,11 +121,11 @@ func0000000000001184:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a4, a3, -5
+	addi	a4, a3, -5
 	sltu	a2, a2, a4
 	lui	a4, 2
-	addiw	a4, a4, 12
-	addiw	a3, a3, -4
+	addi	a4, a4, 12
+	addi	a3, a3, -4
 	xor	a1, a1, a4
 	sltu	a0, a0, a3
 	snez	a1, a1

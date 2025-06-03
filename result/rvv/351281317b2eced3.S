@@ -10,7 +10,7 @@ func0000000000000000:
 	vsrl.vi	v12, v12, 1
 	vadd.vv	v10, v12, v10
 	vsrl.vi	v10, v10, 27
-	addiw	a0, a0, 1061
+	addi	a0, a0, 1061
 	vnmsac.vx	v8, a0, v10
 	ret
 

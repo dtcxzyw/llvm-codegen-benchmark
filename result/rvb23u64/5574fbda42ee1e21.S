@@ -25,7 +25,7 @@ func0000000000000023:
 	zext.w	a1, a1
 	czero.eqz	a2, a3, a2
 	lui	a3, 2
-	addiw	a3, a3, 368
+	addi	a3, a3, 368
 	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1

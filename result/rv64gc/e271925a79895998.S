@@ -37,7 +37,7 @@ func00000000000002f4:
 func00000000000002aa:
 	addw	a0, a0, a1
 	lui	a1, 1048400
-	addiw	a1, a1, 1427
+	addi	a1, a1, 1427
 	blt	a1, a0, .LBB3_2
 	lui	a1, 140
 	addi	a1, a1, -68

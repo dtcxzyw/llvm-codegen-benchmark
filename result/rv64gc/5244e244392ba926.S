@@ -8,11 +8,11 @@ func0000000000000006:
 	ret
 .LBB0_3:
 	lui	a1, 1048332
-	addiw	a1, a1, -576
+	addi	a1, a1, -576
 	beqz	a0, .LBB0_2
 .LBB0_4:
 	lui	a0, 1047599
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	ret
 
 func0000000000000001:

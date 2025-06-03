@@ -34,7 +34,7 @@ func0000000000000079:
 	add	a1, a1, a2
 	lui	a2, 1
 	sub	a1, a1, a0
-	addiw	a0, a2, 64
+	addi	a0, a2, 64
 	add	a0, a0, a1
 	srai	a0, a0, 2
 	ret

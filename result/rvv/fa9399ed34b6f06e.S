@@ -85,7 +85,7 @@ func0000000000000046:
 	vzext.vf2	v12, v10
 	lui	a0, 31
 	vsrl.vv	v8, v8, v12
-	addiw	a0, a0, -1975
+	addi	a0, a0, -1975
 	vmslt.vx	v0, v8, a0
 	ret
 

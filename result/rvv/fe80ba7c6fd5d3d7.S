@@ -4,7 +4,7 @@ func0000000000003024:
 	vmseq.vi	v10, v10, 0
 	lui	a0, 4
 	vmand.mm	v10, v10, v11
-	addiw	a0, a0, -385
+	addi	a0, a0, -385
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

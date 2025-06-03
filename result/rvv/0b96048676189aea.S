@@ -29,12 +29,12 @@ func0000000000000008:
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	lui	a0, 21094
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vsra.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 15820
-	addiw	a0, a0, 1279
+	addi	a0, a0, 1279
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v0
 	ret
@@ -51,7 +51,7 @@ func000000000000000a:
 	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vmsgt.vi	v8, v10, 0
 	vmand.mm	v0, v0, v8
@@ -69,7 +69,7 @@ func0000000000000006:
 	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v8, v10, -1
 	vmand.mm	v0, v0, v8

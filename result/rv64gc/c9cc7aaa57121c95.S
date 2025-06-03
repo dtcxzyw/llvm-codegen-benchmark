@@ -9,7 +9,7 @@ func0000000000000018:
 	add	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
@@ -27,7 +27,7 @@ func0000000000000001:
 	add	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	addi	a1, a1, -8
 	seqz	a1, a1
@@ -44,7 +44,7 @@ func000000000000000c:
 	sub	a1, a1, a2
 	slli	a2, a2, 2
 	sub	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	addi	a1, a1, -1
 	snez	a1, a1
@@ -55,14 +55,14 @@ func0000000000000014:
 	slli	a2, a1, 48
 	lui	a3, 1
 	srli	a2, a2, 50
-	addiw	a3, a3, 1147
+	addi	a3, a3, 1147
 	mul	a2, a2, a3
 	li	a3, 100
 	srli	a2, a2, 17
 	mul	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	sltiu	a1, a1, 60
 	and	a0, a0, a1

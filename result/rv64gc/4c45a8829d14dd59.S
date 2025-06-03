@@ -4,13 +4,13 @@ func0000000000000029:
 	bnez	a2, .LBB0_2
 	li	a0, 107
 	lui	a2, 8
-	addiw	a2, a2, 1131
+	addi	a2, a2, 1131
 	blt	a2, a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 1131
 	lui	a2, 8
-	addiw	a2, a2, 1131
+	addi	a2, a2, 1131
 	bge	a2, a1, .LBB0_4
 .LBB0_3:
 	lui	a0, 8

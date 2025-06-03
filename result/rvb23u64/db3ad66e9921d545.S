@@ -29,7 +29,7 @@ func000000000000001e:
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
 	lui	a1, 61440
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	srli	a0, a0, 4
 	slli	a1, a1, 24
 	addi	a1, a1, 15

@@ -23,11 +23,11 @@ func0000000000000008:
 	li	a1, 101
 	bltu	a1, a0, .LBB2_2
 	lui	a0, 1
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 	ret
 .LBB2_2:
 	lui	a0, 8
-	addiw	a0, a0, 871
+	addi	a0, a0, 871
 	ret
 
 func0000000000000004:

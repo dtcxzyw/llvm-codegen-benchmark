@@ -3,7 +3,7 @@ func0000000000000684:
 	cpopw	a1, a1
 	lui	a2, 4096
 	sltiu	a1, a1, 2
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

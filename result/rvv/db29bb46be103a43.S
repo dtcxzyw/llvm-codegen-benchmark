@@ -1,10 +1,10 @@
 func000000000000001c:
 	lui	a0, 522248
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 2048
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	bseti	a1, a1, 39
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0

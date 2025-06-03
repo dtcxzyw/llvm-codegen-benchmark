@@ -11,9 +11,9 @@ func0000000000000104:
 	lui	a2, 950920
 	srli	a1, a1, 32
 	mul	a0, a0, a1
-	addiw	a1, a2, -1025
+	addi	a1, a2, -1025
 	add	a0, a0, a1
-	addiw	a1, a2, -1024
+	addi	a1, a2, -1024
 	sltu	a0, a0, a1
 	ret
 

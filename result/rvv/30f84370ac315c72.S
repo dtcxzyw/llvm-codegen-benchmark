@@ -30,7 +30,7 @@ func00000000000000ff:
 	li	a0, 60
 	vmadd.vx	v10, a0, v8
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v10, a0
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000054:
 	li	a0, 60
 	vmadd.vx	v10, a0, v8
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmul.vx	v8, v10, a0
 	ret
 

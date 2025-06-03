@@ -21,7 +21,7 @@ func00000000000006a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 790465
-	addiw	a0, a0, -63
+	addi	a0, a0, -63
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
@@ -88,7 +88,7 @@ func00000000000005a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 4
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v10
@@ -101,7 +101,7 @@ func0000000000000624:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v8
@@ -114,7 +114,7 @@ func00000000000004a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v10
@@ -127,7 +127,7 @@ func00000000000006aa:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v8
@@ -140,7 +140,7 @@ func0000000000000606:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v8
@@ -153,7 +153,7 @@ func00000000000006a6:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v8
@@ -165,8 +165,8 @@ func00000000000006a6:
 func00000000000005a1:
 	lui	a0, 349525
 	lui	a1, 699051
-	addiw	a0, a0, 1365
-	addiw	a1, a1, -1365
+	addi	a0, a0, 1365
+	addi	a1, a1, -1365
 	slli	a2, a0, 32
 	add	a0, a0, a2
 	slli	a2, a1, 32

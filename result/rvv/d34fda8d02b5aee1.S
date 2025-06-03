@@ -1,7 +1,7 @@
 func000000000000008c:
 	lui	a0, 1048064
-	addiw	a1, a0, -1
-	addiw	a0, a0, 511
+	addi	a1, a0, -1
+	addi	a0, a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a1
 	vmsltu.vx	v12, v10, a0
@@ -11,7 +11,7 @@ func000000000000008c:
 
 func0000000000000086:
 	lui	a0, 488281
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a0
 	vmsleu.vi	v12, v10, -3

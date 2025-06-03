@@ -41,22 +41,22 @@ func000000000000000c:
 	andi	a3, a1, 1
 	beqz	a2, .LBB2_3
 	lui	a1, 65
-	addiw	a1, a1, 427
+	addi	a1, a1, 427
 	andi	a2, a0, 1
 	beqz	a3, .LBB2_4
 .LBB2_2:
 	lui	a0, 78
-	addiw	a0, a0, 512
+	addi	a0, a0, 512
 	beqz	a2, .LBB2_5
 	j	.LBB2_6
 .LBB2_3:
 	lui	a1, 49
-	addiw	a1, a1, -704
+	addi	a1, a1, -704
 	andi	a2, a0, 1
 	bnez	a3, .LBB2_2
 .LBB2_4:
 	lui	a0, 81
-	addiw	a0, a0, 1557
+	addi	a0, a0, 1557
 	bnez	a2, .LBB2_6
 .LBB2_5:
 	mv	a0, a1
@@ -66,7 +66,7 @@ func000000000000000c:
 func0000000000000014:
 	sext.w	a2, a2
 	lui	a3, 32
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	andi	a3, a1, 1
 	bltu	a2, a4, .LBB3_3
 	li	a1, 21

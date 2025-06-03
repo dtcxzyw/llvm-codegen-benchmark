@@ -1,7 +1,7 @@
 func0000000000000018:
 	andi	a3, a1, 1
 	lui	a1, 16
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	beqz	a3, .LBB0_3
 	bgeu	a1, a2, .LBB0_4
 .LBB0_2:

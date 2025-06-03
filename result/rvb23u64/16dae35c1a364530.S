@@ -16,7 +16,7 @@ func000000000000000d:
 	addi	a0, a0, 2
 	lui	a1, 1
 	slli.uw	a0, a0, 3
-	addiw	a1, a1, -2040
+	addi	a1, a1, -2040
 	sub	a0, a1, a0
 	ret
 

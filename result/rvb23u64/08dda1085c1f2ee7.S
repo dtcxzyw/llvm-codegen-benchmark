@@ -81,8 +81,8 @@ func0000000000000094:
 	sext.w	a0, a0
 	addiw	a1, a1, -1
 	lui	a2, 104858
-	addiw	a3, a2, -1639
-	addiw	a2, a2, -1638
+	addi	a3, a2, -1639
+	addi	a2, a2, -1638
 	sltu	a1, a1, a3
 	sltu	a0, a0, a2
 	and	a0, a0, a1
@@ -170,7 +170,7 @@ func0000000000000701:
 	addiw	a1, a1, -99
 	lui	a2, 1044208
 	sltiu	a1, a1, -7
-	addiw	a2, a2, 1213
+	addi	a2, a2, 1213
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

@@ -18,7 +18,7 @@ func0000000000000028:
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 804435
-	addiw	a1, a1, 1536
+	addi	a1, a1, 1536
 	sltu	a0, a0, a1
 	ret
 

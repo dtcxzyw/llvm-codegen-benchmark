@@ -52,7 +52,7 @@ func000000000000002a:
 .LBB4_2:
 	sext.w	a0, a1
 	lui	a2, 523342
-	addiw	a2, a2, -1428
+	addi	a2, a2, -1428
 	slt	a0, a2, a0
 	lui	a2, 525234
 	negw	a0, a0

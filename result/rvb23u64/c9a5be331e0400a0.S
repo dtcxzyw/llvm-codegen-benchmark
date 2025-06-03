@@ -1,6 +1,6 @@
 func0000000000000004:
 	lui	a1, 272
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	or	a0, a0, a1
 	ret
 

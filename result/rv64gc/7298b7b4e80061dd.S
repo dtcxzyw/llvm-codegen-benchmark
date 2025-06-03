@@ -13,7 +13,7 @@ func0000000000000035:
 	lui	a0, 3
 	srli	a2, a2, 32
 	add	a1, a1, a2
-	addiw	a0, a0, -1172
+	addi	a0, a0, -1172
 	mul	a0, a1, a0
 	ret
 

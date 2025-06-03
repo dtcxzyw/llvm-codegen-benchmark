@@ -10,7 +10,7 @@ func0000000000000001:
 func0000000000000061:
 	andi	a0, a0, 1
 	lui	a3, 1
-	addiw	a3, a3, -295
+	addi	a3, a3, -295
 	add	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -46,7 +46,7 @@ func000000000000000a:
 	czero.eqz	a0, a2, a0
 	lui	a2, 262144
 	or	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a0, a2, a0
 	ret
 

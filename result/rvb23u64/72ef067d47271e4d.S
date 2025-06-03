@@ -68,7 +68,7 @@ func0000000000000a82:
 	slli	a2, a2, 6
 	or	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	addi	a0, a0, -864
 	sext.w	a1, a1
 	slt	a1, a2, a1

@@ -4,7 +4,7 @@ func0000000000000010:
 	lui	a2, 3
 	slli	a1, a1, 3
 	add	a0, a0, a1
-	addiw	a1, a2, 232
+	addi	a1, a2, 232
 	add	a0, a0, a1
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000063:
 	lui	a2, 521
 	srli	a1, a1, 15
 	add	a0, a0, a1
-	addiw	a1, a2, -2048
+	addi	a1, a2, -2048
 	add	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func000000000000007f:
 	lui	a2, 544
 	slli	a1, a1, 3
 	add	a0, a0, a1
-	addiw	a2, a2, 24
+	addi	a2, a2, 24
 	add	a0, a0, a2
 	ret
 

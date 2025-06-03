@@ -3,7 +3,7 @@ func0000000000000001:
 	zext.w	a3, a3
 	andn	a2, a2, a3
 	lui	a3, 32768
-	addiw	a3, a3, 5
+	addi	a3, a3, 5
 	slli	a3, a3, 10
 	seqz	a2, a2
 	and	a1, a1, a2
@@ -18,7 +18,7 @@ func000000000000000c:
 	snez	a2, a2
 	and	a1, a1, a2
 	lui	a2, 32768
-	addiw	a2, a2, 5
+	addi	a2, a2, 5
 	slli	a2, a2, 10
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

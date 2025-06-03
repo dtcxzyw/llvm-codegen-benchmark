@@ -32,7 +32,7 @@ func0000000000000060:
 	add	a0, a0, a2
 	lui	a2, 610
 	add.uw	a0, a1, a0
-	addiw	a1, a2, 1452
+	addi	a1, a2, 1452
 	add	a0, a0, a1
 	ret
 

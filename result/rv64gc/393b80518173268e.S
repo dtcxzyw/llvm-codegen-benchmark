@@ -11,7 +11,7 @@ func0000000000000007:
 func0000000000000005:
 	andi	a2, a0, 1
 	lui	a0, 64
-	addiw	a0, a0, 34
+	addi	a0, a0, 34
 	bnez	a2, .LBB1_2
 	slliw	a1, a1, 26
 	or	a0, a0, a1

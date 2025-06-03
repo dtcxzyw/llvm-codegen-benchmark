@@ -41,11 +41,11 @@ func000000000000000a:
 	mv	a0, a2
 	ret
 .LBB2_3:
-	addiw	a2, a1, -1544
+	addi	a2, a1, -1544
 	li	a3, 8
 	bge	a3, a0, .LBB2_2
 .LBB2_4:
-	addiw	a0, a1, -1533
+	addi	a0, a1, -1533
 	ret
 
 func0000000000000004:

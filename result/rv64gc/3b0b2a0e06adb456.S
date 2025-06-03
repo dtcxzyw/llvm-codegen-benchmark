@@ -32,7 +32,7 @@ func0000000000000009:
 func000000000000001d:
 	slliw	a0, a0, 26
 	lui	a1, 64
-	addiw	a1, a1, 34
+	addi	a1, a1, 34
 	or	a0, a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func0000000000000003:
 func0000000000000010:
 	slli	a0, a0, 16
 	lui	a1, 786432
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	or	a0, a0, a1
 	ret
 

@@ -10,7 +10,7 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v8, a0
 	lui	a0, %hi(.LCPI0_1)
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	ld	a0, %lo(.LCPI0_1)(a0)
 	vsrl.vx	v12, v10, a1
 	vsra.vi	v10, v10, 25
@@ -21,7 +21,7 @@ func0000000000000021:
 	vsrl.vx	v12, v8, a1
 	vsra.vi	v8, v8, 20
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vnmsub.vx	v8, a0, v10
 	vsub.vv	v8, v8, v10
 	ret
@@ -40,7 +40,7 @@ func0000000000000020:
 	lui	a0, 2575
 	vsra.vx	v12, v10, a2
 	lui	a2, %hi(.LCPI1_1)
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	ld	a2, %lo(.LCPI1_1)(a2)
 	slli	a0, a0, 13
 	vsrl.vx	v10, v10, a1

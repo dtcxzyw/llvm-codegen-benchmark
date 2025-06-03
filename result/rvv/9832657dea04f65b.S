@@ -10,7 +10,7 @@ func000000000000000c:
 	lui	a0, 21
 	vsrl.vi	v10, v10, 16
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	ret
 

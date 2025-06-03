@@ -54,7 +54,7 @@ func00000000000000fd:
 func0000000000000000:
 	slli	a2, a2, 56
 	lui	a3, 65536
-	addiw	a3, a3, -691
+	addi	a3, a3, -691
 	slli	a3, a3, 8
 	mulhu	a2, a2, a3
 	add	a0, a0, a1

@@ -3,7 +3,7 @@ func0000000000000000:
 	mv	a0, a1
 	bnez	a3, .LBB0_2
 	lui	a0, 512
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	add	a0, a0, a2
 	lui	a1, 1048064
 	and	a0, a0, a1

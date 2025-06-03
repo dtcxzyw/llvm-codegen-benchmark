@@ -33,10 +33,10 @@ func0000000000000001:
 	andi	a1, a1, 1
 	andi	a2, a2, 1
 	lui	a3, 131072
-	addiw	a3, a3, -6
+	addi	a3, a3, -6
 	czero.eqz	a2, a3, a2
 	lui	a3, 262144
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	czero.eqz	a1, a3, a1
 	addi	a2, a2, 6
 	addi	a1, a1, 2

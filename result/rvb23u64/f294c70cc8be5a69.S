@@ -38,7 +38,7 @@ func0000000000000010:
 func000000000000003f:
 	add	a0, a0, a1
 	lui	a1, 4
-	addiw	a1, a1, -1713
+	addi	a1, a1, -1713
 	add	a0, a0, a1
 	slli	a0, a0, 4
 	lui	a1, 112

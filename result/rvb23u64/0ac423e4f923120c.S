@@ -20,7 +20,7 @@ func0000000000000007:
 
 func0000000000000003:
 	lui	a2, 32768
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	add	a1, a1, a2
 	addiw	a2, a2, 1
 	and	a1, a1, a2

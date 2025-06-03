@@ -21,7 +21,7 @@ func0000000000000021:
 func000000000000018c:
 	lui	a3, 16
 	sext.w	a1, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	snez	a1, a1
 	and	a2, a2, a3
 	xor	a2, a2, a3

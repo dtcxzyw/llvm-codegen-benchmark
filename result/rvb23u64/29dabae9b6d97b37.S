@@ -20,7 +20,7 @@ func0000000000000004:
 	lui	a3, 851968
 	andn	a1, a1, a3
 	lui	a3, 135168
-	addiw	a3, a3, -1026
+	addi	a3, a3, -1026
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -42,7 +42,7 @@ func0000000000000062:
 	sext.w	a2, a2
 	lui	a3, 8
 	sltiu	a2, a2, 144
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	and	a1, a1, a3
 	czero.nez	a2, a4, a2
 	or	a0, a0, a1

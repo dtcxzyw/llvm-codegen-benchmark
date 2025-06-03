@@ -17,7 +17,7 @@ func0000000000000043:
 
 func0000000000000003:
 	lui	a3, 1
-	addiw	a3, a3, -2044
+	addi	a3, a3, -2044
 	and	a2, a2, a3
 	seqz	a2, a2
 	addi	a2, a2, -1

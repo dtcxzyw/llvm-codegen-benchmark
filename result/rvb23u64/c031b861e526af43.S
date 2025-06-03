@@ -9,7 +9,7 @@ func0000000000000028:
 
 func0000000000000181:
 	lui	a2, 131072
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -20,15 +20,15 @@ func0000000000000181:
 func000000000000018c:
 	lui	a2, 131072
 	snez	a0, a0
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	lui	a2, 1046356
 	snez	a1, a1
 	and	a0, a0, a1
 	lui	a1, 912318
-	addiw	a2, a2, 1739
+	addi	a2, a2, 1739
 	czero.eqz	a0, a2, a0
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 

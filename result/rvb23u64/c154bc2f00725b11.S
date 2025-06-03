@@ -15,7 +15,7 @@ func0000000000000034:
 	lui	a2, 4
 	sext.w	a0, a0
 	bclri	a1, a1, 11
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	li	a2, 12
 	czero.nez	a0, a0, a1

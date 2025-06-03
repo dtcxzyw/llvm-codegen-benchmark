@@ -13,7 +13,7 @@ func000000000000002c:
 	sext.w	a1, a1
 	lui	a3, 131072
 	xor	a2, a2, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	seqz	a2, a2
 	xor	a1, a1, a3
 	snez	a1, a1
@@ -25,7 +25,7 @@ func00000000000000cb:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	lui	a3, 7
-	addiw	a3, a3, 1344
+	addi	a3, a3, 1344
 	slt	a3, a1, a3
 	slt	a1, a1, a2
 	andn	a1, a3, a1

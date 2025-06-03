@@ -7,8 +7,7 @@ func0000000000000000:
 
 func0000000000000030:
 	addi	a2, a2, 127
-	li	a3, 1
-	slli	a3, a3, 36
+	bseti	a3, zero, 36
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -30,8 +29,7 @@ func0000000000000005:
 
 func000000000000003c:
 	addi	a2, a2, 3
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -40,8 +38,7 @@ func000000000000003c:
 
 func000000000000003f:
 	addi	a2, a2, 3
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -64,7 +61,7 @@ func0000000000000014:
 
 func000000000000000f:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	srli	a2, a2, 16
 	slli.uw	a2, a2, 16

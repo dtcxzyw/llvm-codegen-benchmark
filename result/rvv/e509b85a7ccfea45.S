@@ -30,7 +30,7 @@ func0000000000000055:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 3
-	addiw	a0, a0, -703
+	addi	a0, a0, -703
 	vmadd.vx	v10, a0, v8
 	lui	a0, 32
 	vadd.vx	v8, v10, a0
@@ -42,7 +42,7 @@ func000000000000005d:
 	li	a0, 24
 	vmadd.vx	v10, a0, v8
 	lui	a0, 1045149
-	addiw	a0, a0, 1384
+	addi	a0, a0, 1384
 	vadd.vx	v8, v10, a0
 	ret
 

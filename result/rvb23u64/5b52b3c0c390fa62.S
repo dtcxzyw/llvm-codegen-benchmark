@@ -29,7 +29,7 @@ func0000000000000003:
 func0000000000000002:
 	sext.w	a0, a0
 	lui	a1, 1048574
-	addiw	a1, a1, 1990
+	addi	a1, a1, 1990
 	minu	a0, a0, a1
 	li	a1, 1550
 	sh2add	a0, a1, a0

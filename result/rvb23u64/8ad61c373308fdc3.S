@@ -26,7 +26,7 @@ func0000000000000008:
 	srli	a0, a0, 9
 	mulhu	a0, a0, a1
 	lui	a1, 148
-	addiw	a1, a1, -1408
+	addi	a1, a1, -1408
 	srli	a0, a0, 11
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2

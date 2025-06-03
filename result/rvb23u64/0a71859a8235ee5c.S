@@ -11,7 +11,7 @@ func0000000000000008:
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	lui	a1, 4
-	addiw	a1, a1, 439
+	addi	a1, a1, 439
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000007:
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	lui	a1, 8
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	czero.eqz	a0, a1, a0
 	ret
 

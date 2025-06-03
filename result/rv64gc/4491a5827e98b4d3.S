@@ -41,7 +41,7 @@ func000000000000004a:
 	lui	a3, 4096
 	addw	a2, a2, a3
 	lui	a3, 8192
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	blt	a3, a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:

@@ -40,7 +40,7 @@ func0000000000000018:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
 	lui	a2, 251
-	addiw	a2, a2, 434
+	addi	a2, a2, 434
 	mul	a0, a0, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 18

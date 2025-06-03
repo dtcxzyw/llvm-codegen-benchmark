@@ -22,7 +22,7 @@ func0000000000000003:
 	bnez	a3, .LBB2_2
 	zext.b	a0, a2
 	lui	a1, 16
-	addiw	a1, a1, -48
+	addi	a1, a1, -48
 	add	a0, a0, a1
 .LBB2_2:
 	ret

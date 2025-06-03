@@ -56,14 +56,14 @@ func000000000000006c:
 func0000000000000028:
 	addi	a1, a1, 7
 	lui	a2, 4
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func00000000000000e4:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 524287
 	and	a1, a1, a2
@@ -73,7 +73,7 @@ func00000000000000e4:
 func00000000000000e1:
 	addi	a1, a1, 511
 	lui	a2, 262144
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

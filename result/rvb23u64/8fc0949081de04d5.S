@@ -25,7 +25,7 @@ func000000000000000a:
 	fcvt.l.d	a1, fa0, rtz
 	add	a0, a0, a1
 	lui	a1, 2575
-	addiw	a1, a1, -325
+	addi	a1, a1, -325
 	slli	a1, a1, 13
 	slt	a0, a1, a0
 	ret
@@ -34,7 +34,7 @@ func000000000000002a:
 	fcvt.l.d	a1, fa0, rtz
 	add	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	slt	a0, a1, a0
 	ret
 

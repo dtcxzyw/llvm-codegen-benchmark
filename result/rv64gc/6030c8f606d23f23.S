@@ -14,7 +14,7 @@ func0000000000000008:
 	sub	a1, a1, a2
 	divu	a0, a1, a0
 	lui	a1, 262144
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	sltu	a0, a1, a0
 	ret
 

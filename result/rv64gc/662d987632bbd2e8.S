@@ -2,14 +2,14 @@ func000000000000001c:
 	sext.w	a2, a2
 	beqz	a2, .LBB0_2
 	lui	a2, 1
-	addiw	a2, a2, 560
+	addi	a2, a2, 560
 	slli	a0, a0, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 .LBB0_2:
 	lui	a2, 2
-	addiw	a2, a2, 508
+	addi	a2, a2, 508
 	slli	a0, a0, 6
 	add	a0, a0, a1
 	add	a0, a0, a2

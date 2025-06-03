@@ -13,7 +13,7 @@ func0000000000000121:
 func000000000000012a:
 	addiw	a1, a1, 8
 	lui	a2, 233017
-	addiw	a2, a2, -455
+	addi	a2, a2, -455
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 33
@@ -25,7 +25,7 @@ func000000000000012a:
 func0000000000000126:
 	addiw	a1, a1, 8
 	lui	a2, 233017
-	addiw	a2, a2, -455
+	addi	a2, a2, -455
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 33
@@ -38,7 +38,7 @@ func0000000000000006:
 	li	a2, 1200
 	sh2add	a1, a2, a1
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	sext.w	a1, a1
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -46,7 +46,7 @@ func0000000000000006:
 	add	a1, a1, a2
 	lui	a2, 604
 	addw	a0, a0, a1
-	addiw	a1, a2, -1351
+	addi	a1, a2, -1351
 	slt	a0, a0, a1
 	ret
 

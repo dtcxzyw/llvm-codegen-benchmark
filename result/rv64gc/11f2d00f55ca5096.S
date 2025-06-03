@@ -7,7 +7,7 @@ func0000000000000014:
 	sltiu	a0, a0, 255
 	neg	a0, a0
 	and	a0, a0, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 

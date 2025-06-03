@@ -32,7 +32,7 @@ func0000000000000061:
 
 func000000000000006c:
 	lui	a0, 25056
-	addiw	a0, a0, 1823
+	addi	a0, a0, 1823
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vsrl.vv	v8, v10, v8
@@ -61,7 +61,7 @@ func0000000000000044:
 	lui	a0, 1
 	vsll.vv	v8, v10, v8
 	vand.vi	v8, v8, -2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -81,7 +81,7 @@ func0000000000000054:
 	lui	a0, 1
 	vsll.vv	v8, v10, v8
 	vand.vi	v8, v8, -2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -6,7 +6,7 @@ func000000000000001b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
 	lui	a0, 2
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	vsrl.vi	v10, v10, 11
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 1

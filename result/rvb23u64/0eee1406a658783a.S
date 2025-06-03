@@ -2,7 +2,7 @@ func0000000000000008:
 	addiw	a1, a1, -300
 	lui	a2, 1048572
 	sltiu	a1, a1, -100
-	addiw	a2, a2, 73
+	addi	a2, a2, 73
 	czero.nez	a1, a2, a1
 	lui	a2, 8
 	add	a1, a1, a2

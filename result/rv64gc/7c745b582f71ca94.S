@@ -5,10 +5,10 @@ func0000000000000003:
 	lui	a3, 209715
 	lui	a5, 61681
 	lui	a2, 4112
-	addiw	a4, a4, 1365
-	addiw	a3, a3, 819
-	addiw	a5, a5, -241
-	addiw	a6, a2, 257
+	addi	a4, a4, 1365
+	addi	a3, a3, 819
+	addi	a5, a5, -241
+	addi	a6, a2, 257
 	slli	a2, a4, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32

@@ -7,7 +7,7 @@ func000000000000002c:
 	addi	a2, a2, -2024
 	add	a0, a0, a2
 	lui	a2, 3495
-	addiw	a2, a2, 1037
+	addi	a2, a2, 1037
 	roriw	a0, a0, 2
 	sltu	a0, a0, a2
 	snez	a1, a1
@@ -23,7 +23,7 @@ func000000000000002a:
 	addi	a2, a2, -1366
 	addw	a0, a0, a2
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	sltu	a0, a0, a2
 	slti	a1, a1, 4
 	andn	a0, a0, a1
@@ -32,7 +32,7 @@ func000000000000002a:
 func0000000000000146:
 	sext.w	a1, a0
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a2, a2, a1
 	srli	a3, a2, 63
 	srai	a2, a2, 37

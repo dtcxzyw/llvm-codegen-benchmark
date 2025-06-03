@@ -33,7 +33,7 @@ func0000000000000005:
 	slli	a0, a0, 40
 	vand.vx	v10, v10, a0
 	lui	a0, 4080
-	addiw	a0, a0, 255
+	addi	a0, a0, 255
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret

@@ -8,7 +8,7 @@ func00000000000000a4:
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	lui	a0, 524464
-	addiw	a0, a0, -1733
+	addi	a0, a0, -1733
 	vsra.vi	v10, v10, 13
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10

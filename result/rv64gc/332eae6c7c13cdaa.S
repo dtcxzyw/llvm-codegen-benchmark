@@ -68,7 +68,7 @@ func00000000000000ac:
 	slli	a1, a1, 10
 	addw	a0, a0, a1
 	lui	a1, 13838
-	addiw	a1, a1, -1281
+	addi	a1, a1, -1281
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

@@ -38,7 +38,7 @@ func0000000000000004:
 	li	a3, 1501
 	bltu	a1, a3, .LBB5_2
 	lui	a0, 8
-	addiw	a0, a0, 34
+	addi	a0, a0, 34
 	or	a0, a0, a2
 .LBB5_2:
 	ret

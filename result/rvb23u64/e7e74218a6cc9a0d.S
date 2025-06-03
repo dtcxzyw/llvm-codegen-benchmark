@@ -10,7 +10,7 @@ func0000000000000002:
 	li	a1, 14
 	subw	a1, a1, a0
 	lui	a0, 174763
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 33

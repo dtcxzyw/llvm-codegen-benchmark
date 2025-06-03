@@ -4,7 +4,7 @@ func0000000000000110:
 	addi	a0, a0, -2048
 	lui	a3, 1048575
 	addiw	a0, a0, -2048
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a0, a0, a3
 	sltu	a1, a1, a2
 	or	a0, a0, a1

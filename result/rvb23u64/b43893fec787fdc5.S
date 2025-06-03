@@ -53,7 +53,7 @@ func000000000000006a:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	lui	a2, 8
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slt	a0, a2, a0
 	lui	a2, 32767
 	slli	a2, a2, 36

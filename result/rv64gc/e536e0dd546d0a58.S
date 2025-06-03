@@ -55,10 +55,10 @@ func00000000000002a1:
 func0000000000000066:
 	sext.w	a2, a1
 	lui	a1, 128
-	addiw	a3, a1, -2048
+	addi	a3, a1, -2048
 	lui	a1, 524288
 	bne	a2, a3, .LBB4_2
-	addiw	a1, a1, 64
+	addi	a1, a1, 64
 .LBB4_2:
 	not	a0, a0
 	srli	a0, a0, 28

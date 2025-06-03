@@ -3,7 +3,7 @@ func00000000000001e1:
 	mul	a0, a0, a1
 	lui	a1, 65279
 	mul	a0, a0, a2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -13,7 +13,7 @@ func00000000000001ec:
 	mul	a0, a0, a1
 	lui	a1, 65279
 	mul	a0, a0, a2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

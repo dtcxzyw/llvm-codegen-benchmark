@@ -9,7 +9,7 @@ func000000000000006c:
 func000000000000004c:
 	and	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
 	snez	a1, a1

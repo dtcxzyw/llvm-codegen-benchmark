@@ -13,7 +13,7 @@ func0000000000000001:
 	lui	a3, 16
 	slli	a1, a1, 5
 	srl	a1, a2, a1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a1, a3
 	beq	a2, a3, .LBB1_2
 	mv	a0, a1

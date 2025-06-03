@@ -11,11 +11,11 @@ func0000000000000021:
 func0000000000000001:
 	slli	a1, a0, 53
 	lui	a2, 983040
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	lui	a2, 921600
 	srai	a1, a1, 63
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

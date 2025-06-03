@@ -9,7 +9,7 @@ func0000000000000318:
 
 func0000000000000302:
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	xor	a0, a0, a3
 	sext.w	a2, a2
 	addi	a2, a2, -1

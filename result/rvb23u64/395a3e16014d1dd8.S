@@ -2,8 +2,7 @@ func000000000000000b:
 	zext.w	a1, a1
 	zext.w	a0, a0
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 38
+	bseti	a1, zero, 38
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	ret

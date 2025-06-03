@@ -1,6 +1,6 @@
 func0000000000000002:
 	lui	a3, 1
-	addiw	a3, a3, -2046
+	addi	a3, a3, -2046
 	and	a2, a2, a3
 	addi	a2, a2, -2
 	snez	a2, a2

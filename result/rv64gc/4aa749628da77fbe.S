@@ -3,7 +3,7 @@ func000000000000000c:
 	and	a0, a0, a1
 	bnez	a0, .LBB0_2
 	lui	a0, 8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	ret
 .LBB0_2:
 	li	a0, 4

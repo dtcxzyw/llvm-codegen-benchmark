@@ -50,13 +50,13 @@ func0000000000000029:
 	bnez	a2, .LBB3_2
 	li	a2, 107
 	lui	a3, 8
-	addiw	a3, a3, 1131
+	addi	a3, a3, 1131
 	blt	a3, a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a2, 1131
 	lui	a3, 8
-	addiw	a3, a3, 1131
+	addi	a3, a3, 1131
 	bge	a3, a1, .LBB3_4
 .LBB3_3:
 	lui	a2, 8
@@ -159,7 +159,7 @@ func0000000000000050:
 func0000000000000021:
 	sext.w	a1, a1
 	lui	a3, 878478
-	addiw	a3, a3, 1991
+	addi	a3, a3, 1991
 	bgeu	a3, a1, .LBB10_2
 	li	a1, -306
 	addw	a0, a0, a1

@@ -3,7 +3,7 @@ func000000000000000a:
 	sub	a2, a2, a1
 	lui	a0, 699051
 	srai	a2, a2, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	mul	a0, a2, a0
@@ -18,7 +18,7 @@ func000000000000000e:
 	sub	a2, a2, a1
 	lui	a0, 699051
 	srai	a2, a2, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	mul	a0, a2, a0

@@ -80,7 +80,7 @@ func0000000000000014:
 	sltiu	a2, a2, 1571
 	czero.nez	a2, a3, a2
 	lui	a3, 98625
-	addiw	a3, a3, 161
+	addi	a3, a3, 161
 	add	a2, a2, a3
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

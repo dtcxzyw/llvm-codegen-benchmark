@@ -13,11 +13,11 @@ func0000000000000602:
 func0000000000000082:
 	slli	a0, a0, 48
 	lui	a3, 16
-	addiw	a3, a3, -3
+	addi	a3, a3, -3
 	and	a2, a2, a3
 	lui	a3, 1
 	srli	a0, a0, 48
-	addiw	a3, a3, -1020
+	addi	a3, a3, -1020
 	addi	a0, a0, -1282
 	xor	a2, a2, a3
 	seqz	a0, a0

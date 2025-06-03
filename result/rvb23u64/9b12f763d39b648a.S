@@ -23,7 +23,7 @@ func000000000000001e:
 	sub	a2, a2, a1
 	lui	a1, 44
 	sh2add	a0, a2, a0
-	addiw	a1, a1, -1616
+	addi	a1, a1, -1616
 	add	a0, a0, a1
 	ret
 

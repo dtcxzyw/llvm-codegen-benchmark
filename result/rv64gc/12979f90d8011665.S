@@ -4,7 +4,7 @@ func0000000000000086:
 	srli	a5, a2, 56
 	srli	t1, a2, 24
 	lui	a7, 4080
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a4, t0, a3
 	or	a6, a4, a5
 	srli	a5, a2, 8
@@ -34,7 +34,7 @@ func0000000000000008:
 	srli	a5, a2, 56
 	srli	t1, a2, 24
 	lui	a7, 4080
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a4, t0, a3
 	or	a6, a4, a5
 	srli	a5, a2, 8
@@ -64,7 +64,7 @@ func0000000000000088:
 	srli	a5, a2, 56
 	srli	t1, a2, 24
 	lui	a7, 4080
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a4, t0, a3
 	or	a6, a4, a5
 	srli	a5, a2, 8
@@ -94,7 +94,7 @@ func0000000000000084:
 	srli	a5, a2, 56
 	srli	t1, a2, 24
 	lui	a7, 4080
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	and	a4, t0, a3
 	or	a6, a4, a5
 	srli	a5, a2, 8

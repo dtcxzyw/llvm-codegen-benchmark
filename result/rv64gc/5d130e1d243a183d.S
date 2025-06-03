@@ -9,7 +9,7 @@ func000000000000000f:
 	slli	a1, a0, 4
 	add	a0, a0, a1
 	lui	a1, 12483
-	addiw	a1, a1, 195
+	addi	a1, a1, 195
 	and	a0, a0, a1
 	slli	a1, a0, 2
 	or	a0, a0, a1

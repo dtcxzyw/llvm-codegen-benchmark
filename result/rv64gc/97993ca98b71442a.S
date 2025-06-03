@@ -10,7 +10,7 @@ func000000000000000f:
 	lui	a1, 256
 	add	a0, a0, a1
 	lui	a1, 262144
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 21
 	and	a0, a0, a1
 	ret
@@ -33,7 +33,7 @@ func000000000000000e:
 	mul	a0, a0, a1
 	lui	a1, 522248
 	lui	a2, %hi(.LCPI4_0)
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	ld	a2, %lo(.LCPI4_0)(a2)
 	add	a0, a0, a1
 	slli	a1, a1, 32

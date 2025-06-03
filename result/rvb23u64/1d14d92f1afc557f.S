@@ -23,7 +23,7 @@ func0000000000000028:
 func0000000000000024:
 	zext.h	a1, a1
 	lui	a2, 8
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	li	a2, 6
 	czero.nez	a1, a2, a1

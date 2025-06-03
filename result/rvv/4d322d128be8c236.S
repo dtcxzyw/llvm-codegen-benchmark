@@ -28,7 +28,7 @@ func000000000000001e:
 	lui	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vor.vx	v8, v8, a0
 	ret
 
@@ -40,7 +40,7 @@ func000000000000000b:
 	lui	a0, 67392
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vor.vx	v8, v8, a0
 	ret
 

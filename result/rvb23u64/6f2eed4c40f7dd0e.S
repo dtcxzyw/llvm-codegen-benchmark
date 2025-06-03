@@ -130,7 +130,7 @@ func0000000000000048:
 	zext.h	a1, a1
 	mulw	a0, a0, a1
 	lui	a1, 174763
-	addiw	a1, a1, -1366
+	addi	a1, a1, -1366
 	sltu	a0, a1, a0
 	ret
 

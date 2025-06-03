@@ -1,6 +1,6 @@
 func0000000000000126:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -977
@@ -10,7 +10,7 @@ func0000000000000126:
 
 func000000000000012a:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -785
@@ -20,7 +20,7 @@ func000000000000012a:
 
 func0000000000000004:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, -1
@@ -30,7 +30,7 @@ func0000000000000004:
 
 func0000000000000374:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, 4
@@ -40,7 +40,7 @@ func0000000000000374:
 
 func0000000000000378:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, 2
@@ -50,7 +50,7 @@ func0000000000000378:
 
 func0000000000000366:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, 4
@@ -60,7 +60,7 @@ func0000000000000366:
 
 func000000000000036a:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addiw	a1, a1, 4

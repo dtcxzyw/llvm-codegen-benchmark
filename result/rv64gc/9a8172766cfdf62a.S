@@ -12,7 +12,7 @@ func000000000000000e:
 	addi	a0, a0, -65
 	sll	a0, a1, a0
 	lui	a1, 5
-	addiw	a1, a1, -976
+	addi	a1, a1, -976
 	and	a0, a0, a1
 	ret
 

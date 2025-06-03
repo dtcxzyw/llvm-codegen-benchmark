@@ -11,7 +11,7 @@ func0000000000000003:
 	slli	a0, a0, 48
 	mulhu	a0, a0, a2
 	srli	a0, a0, 16
-	addiw	a1, a1, 353
+	addi	a1, a1, 353
 	add	a0, a0, a1
 	ret
 

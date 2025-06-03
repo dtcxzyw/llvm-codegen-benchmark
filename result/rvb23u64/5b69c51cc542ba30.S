@@ -1,10 +1,10 @@
 func0000000000000007:
 	bexti	a0, a0, 14
 	lui	a1, 3
-	addiw	a1, a1, -588
+	addi	a1, a1, -588
 	czero.nez	a0, a1, a0
 	lui	a1, 32
-	addiw	a1, a1, 1228
+	addi	a1, a1, 1228
 	add	a0, a0, a1
 	ret
 

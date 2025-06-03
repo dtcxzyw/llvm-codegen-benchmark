@@ -3,7 +3,7 @@ func0000000000000064:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -27,7 +27,7 @@ func0000000000000024:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -51,7 +51,7 @@ func0000000000000044:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -75,7 +75,7 @@ func0000000000000066:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -99,7 +99,7 @@ func000000000000006b:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -124,7 +124,7 @@ func0000000000000068:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -148,7 +148,7 @@ func000000000000006a:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -172,7 +172,7 @@ func0000000000000048:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -196,7 +196,7 @@ func0000000000000028:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -220,7 +220,7 @@ func0000000000000065:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -245,7 +245,7 @@ func0000000000000008:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24
@@ -269,7 +269,7 @@ func0000000000000004:
 	lui	a3, 16
 	srliw	a4, a1, 24
 	srli	a5, a0, 8
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a2, a2, a4
 	srliw	a4, a0, 24

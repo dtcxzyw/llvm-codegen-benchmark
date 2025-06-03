@@ -12,7 +12,7 @@ func0000000000000008:
 
 func000000000000000c:
 	lui	a0, 240
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -28,7 +28,7 @@ func00000000000001f8:
 	vadd.vv	v8, v8, v8
 	lui	a0, 15
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1440
+	addi	a0, a0, -1440
 	vmsgtu.vx	v0, v8, a0
 	ret
 

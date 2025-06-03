@@ -24,7 +24,7 @@ func0000000000000108:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -7
+	addi	a2, a2, -7
 	sltu	a2, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 173

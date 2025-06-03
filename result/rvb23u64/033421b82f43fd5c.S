@@ -16,8 +16,7 @@ func00000000000000ff:
 
 func000000000000007f:
 	slli	a1, a1, 4
-	li	a2, 1
-	slli	a2, a2, 36
+	bseti	a2, zero, 36
 	addi	a2, a2, -16
 	add	a1, a1, a2
 	srli	a1, a1, 4
@@ -38,7 +37,7 @@ func0000000000000070:
 	addi	a1, a1, -1
 	lui	a2, 6
 	slli	a1, a1, 33
-	addiw	a2, a2, -1952
+	addi	a2, a2, -1952
 	srli	a1, a1, 29
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -46,8 +45,7 @@ func0000000000000070:
 
 func00000000000000bf:
 	slli	a1, a1, 4
-	li	a2, 1
-	slli	a2, a2, 36
+	bseti	a2, zero, 36
 	addi	a2, a2, -16
 	add	a1, a1, a2
 	srli	a1, a1, 4

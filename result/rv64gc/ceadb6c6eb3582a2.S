@@ -10,7 +10,7 @@ func000000000000008c:
 func0000000000000021:
 	lui	a3, 16
 	xor	a0, a0, a1
-	addiw	a1, a3, -256
+	addi	a1, a3, -256
 	and	a1, a1, a2
 	xori	a1, a1, 256
 	sext.w	a0, a0

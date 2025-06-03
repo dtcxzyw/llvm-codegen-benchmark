@@ -19,7 +19,7 @@ func0000000000000081:
 func0000000000000181:
 	sext.w	a1, a1
 	lui	a3, 16
-	addiw	a3, a3, -64
+	addi	a3, a3, -64
 	snez	a1, a1
 	and	a2, a2, a3
 	czero.eqz	a0, a0, a2

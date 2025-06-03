@@ -15,7 +15,7 @@ func000000000000004c:
 	mv	a1, a2
 .LBB1_2:
 	lui	a2, 786432
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret

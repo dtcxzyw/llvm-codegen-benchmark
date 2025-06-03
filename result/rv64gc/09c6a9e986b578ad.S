@@ -40,14 +40,14 @@ func000000000000001b:
 func000000000000000a:
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret
 
 func000000000000000b:
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	add	a0, a0, a1
 	ret
 

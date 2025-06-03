@@ -50,12 +50,12 @@ func0000000000000010:
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8
 	lui	a0, 488281
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v8, v0
 	ret

@@ -3,7 +3,7 @@ func0000000000000021:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -235
+	addi	a2, a2, -235
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

@@ -40,7 +40,7 @@ func000000000000000a:
 	lui	a2, 149797
 	subw	a0, a0, a1
 	srliw	a0, a0, 3
-	addiw	a1, a2, -1755
+	addi	a1, a2, -1755
 	mul	a0, a0, a1
 	srli	a0, a0, 32
 	ret

@@ -43,7 +43,7 @@ func0000000000000021:
 
 func0000000000000026:
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	bge	a0, a2, .LBB6_2
 	addi	a2, a1, 1
 .LBB6_2:

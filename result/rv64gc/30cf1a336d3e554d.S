@@ -13,7 +13,7 @@ func0000000000000002:
 	lui	a2, 921600
 	srli	a1, a1, 63
 	addi	a0, a0, -1
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	andi	a0, a0, 1024
 	or	a1, a1, a2
 	or	a0, a0, a1

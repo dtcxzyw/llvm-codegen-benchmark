@@ -22,7 +22,7 @@ func0000000000000000:
 func000000000000006f:
 	lui	a3, 115
 	srli	a1, a1, 21
-	addiw	a3, a3, -744
+	addi	a3, a3, -744
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -31,7 +31,7 @@ func000000000000006f:
 func0000000000000065:
 	lui	a3, 163
 	srli	a1, a1, 21
-	addiw	a3, a3, -1005
+	addi	a3, a3, -1005
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -40,7 +40,7 @@ func0000000000000065:
 func0000000000000020:
 	lui	a3, 33
 	srli	a1, a1, 21
-	addiw	a3, a3, 1489
+	addi	a3, a3, 1489
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -57,7 +57,7 @@ func000000000000004a:
 func0000000000000060:
 	lui	a3, 423516
 	srli	a1, a1, 32
-	addiw	a3, a3, 1939
+	addi	a3, a3, 1939
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -8,7 +8,7 @@ func000000000000018c:
 func000000000000010c:
 	sub	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 1808
+	addi	a2, a2, 1808
 	sltu	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -24,7 +24,7 @@ func000000000000014a:
 	sub	a1, a1, a2
 	lui	a2, 1
 	min	a0, a0, a1
-	addiw	a1, a2, 903
+	addi	a1, a2, 903
 	slt	a0, a1, a0
 	ret
 

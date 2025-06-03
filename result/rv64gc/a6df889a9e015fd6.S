@@ -66,12 +66,12 @@ func0000000000000314:
 	lui	a2, 128
 	bltu	a2, a1, .LBB5_2
 	lui	a1, 32
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 .LBB5_2:
-	addiw	a1, a2, -1
+	addi	a1, a2, -1
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

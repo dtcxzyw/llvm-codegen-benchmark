@@ -1,6 +1,6 @@
 func0000000000000024:
 	lui	a1, 1048386
-	addiw	a1, a1, -944
+	addi	a1, a1, -944
 	and	a1, a1, a0
 	addi	a0, a0, -1
 	srli	a0, a0, 19
@@ -13,7 +13,7 @@ func0000000000000081:
 	lui	a2, 512
 	add	a1, a1, a0
 	andi	a0, a0, 3
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

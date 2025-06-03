@@ -69,7 +69,7 @@ func0000000000000c24:
 
 func0000000000000a2b:
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	slt	a2, a3, a2
 	add	a1, a1, a2
 	slt	a0, a1, a0
@@ -78,7 +78,7 @@ func0000000000000a2b:
 
 func0000000000000a2c:
 	lui	a3, 244
-	addiw	a3, a3, 575
+	addi	a3, a3, 575
 	slt	a2, a3, a2
 	add	a1, a1, a2
 	xor	a0, a0, a1
@@ -87,7 +87,7 @@ func0000000000000a2c:
 
 func0000000000000a21:
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	slt	a2, a3, a2
 	add	a1, a1, a2
 	xor	a0, a0, a1

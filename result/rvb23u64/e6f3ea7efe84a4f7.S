@@ -11,7 +11,7 @@ func00000000000000aa:
 	addw	a1, a1, a2
 	lui	a2, 1048400
 	lui	a3, 140
-	addiw	a2, a2, 1427
+	addi	a2, a2, 1427
 	addi	a3, a3, -68
 	slt	a2, a2, a1
 	addw	a1, a1, a3

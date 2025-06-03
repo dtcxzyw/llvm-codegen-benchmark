@@ -32,7 +32,7 @@ func0000000000000000:
 	lui	a2, 804435
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mulh	a0, a0, a3
@@ -47,7 +47,7 @@ func0000000000000008:
 	lui	a2, 804435
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mulh	a0, a0, a3
@@ -60,7 +60,7 @@ func000000000000000b:
 	li	a2, -40
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -72,7 +72,7 @@ func000000000000001b:
 	sh2add	a1, a1, a1
 	lui	a2, 838861
 	sh3add	a0, a1, a0
-	addiw	a1, a2, -819
+	addi	a1, a2, -819
 	srai	a0, a0, 3
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -85,7 +85,7 @@ func0000000000000018:
 	lui	a2, 244141
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mulh	a0, a0, a3

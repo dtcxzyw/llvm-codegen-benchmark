@@ -33,7 +33,7 @@ func000000000000002a:
 	sext.w	a0, a0
 	max	a0, a0, a1
 	lui	a1, 262144
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	slt	a0, a1, a0
 	ret
 

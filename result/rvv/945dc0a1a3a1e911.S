@@ -3,7 +3,7 @@ func000000000000006c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v8, v8, a0
 	lui	a0, 335544
-	addiw	a0, a0, 1311
+	addi	a0, a0, 1311
 	vmul.vx	v8, v8, a0
 	li	a0, 37
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -17,7 +17,7 @@ func000000000000006f:
 	lui	a1, 10486
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v8, v8, a0
-	addiw	a1, a1, -983
+	addi	a1, a1, -983
 	vmul.vx	v8, v8, a1
 	lui	a1, 1
 	vsetvli	zero, zero, e32, m1, ta, ma

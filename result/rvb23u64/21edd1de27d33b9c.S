@@ -61,7 +61,7 @@ func000000000000008a:
 	zext.b	a1, a1
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
@@ -139,7 +139,7 @@ func0000000000000088:
 	zext.b	a1, a1
 	addw	a0, a0, a1
 	lui	a1, 52429
-	addiw	a1, a1, -821
+	addi	a1, a1, -821
 	sltu	a0, a1, a0
 	ret
 

@@ -19,7 +19,7 @@ func0000000000000058:
 	vor.vv	v10, v10, v12
 	lui	a0, 8
 	vmseq.vi	v12, v10, 0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -30,8 +30,7 @@ func0000000000000210:
 	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v12, v10, a0
-	li	a0, 1
-	slli	a0, a0, 42
+	bseti	a0, zero, 42
 	addi	a0, a0, -1024
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10

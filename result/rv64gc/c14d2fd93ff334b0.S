@@ -23,7 +23,7 @@ func0000000000000081:
 	andi	a2, a2, 7
 	lui	a3, 262144
 	seqz	a2, a2
-	addiw	a3, a3, -55
+	addi	a3, a3, -55
 	sltu	a1, a1, a3
 	and	a0, a0, a2
 	and	a0, a0, a1
@@ -32,7 +32,7 @@ func0000000000000081:
 func0000000000000184:
 	sext.w	a1, a1
 	lui	a3, 32
-	addiw	a3, a3, -48
+	addi	a3, a3, -48
 	sltiu	a1, a1, 11
 	and	a2, a2, a3
 	snez	a2, a2

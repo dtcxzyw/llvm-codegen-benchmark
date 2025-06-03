@@ -34,7 +34,7 @@ func00000000000000a0:
 	addi	a3, a3, -1284
 	add	a2, a2, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	zext.w	a2, a2
 	mul	a2, a2, a3
 	srli	a2, a2, 37
@@ -50,7 +50,7 @@ func00000000000001e0:
 	addi	a3, a3, -1284
 	add	a2, a2, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	zext.w	a2, a2
 	mul	a2, a2, a3
 	srli	a2, a2, 37

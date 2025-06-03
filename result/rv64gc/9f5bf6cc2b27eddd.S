@@ -6,7 +6,7 @@ func0000000000000003:
 	and	a0, a0, a1
 	bnez	a2, .LBB0_2
 	lui	a1, 262181
-	addiw	a1, a1, -897
+	addi	a1, a1, -897
 	slli	a1, a1, 14
 	addi	a1, a1, 1
 	or	a0, a0, a1
@@ -27,7 +27,7 @@ func0000000000000003:
 func0000000000000002:
 	andi	a1, a1, 1
 	lui	a2, 917504
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	li	a2, 1
 	slli	a1, a1, 29

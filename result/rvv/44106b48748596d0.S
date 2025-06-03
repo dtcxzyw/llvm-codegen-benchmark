@@ -13,7 +13,7 @@ func0000000000000000:
 
 func0000000000000020:
 	lui	a0, 1009952
-	addiw	a0, a0, 779
+	addi	a0, a0, 779
 	slli	a0, a0, 14
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12

@@ -4,7 +4,7 @@ func0000000000000017:
 	lui	a0, 1034754
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

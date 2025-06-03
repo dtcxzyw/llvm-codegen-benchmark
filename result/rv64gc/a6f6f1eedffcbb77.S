@@ -34,14 +34,14 @@ func0000000000000001:
 	mv	a2, a1
 	bge	a1, a3, .LBB2_3
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	bne	a1, a3, .LBB2_4
 .LBB2_2:
 	ret
 .LBB2_3:
 	mv	a2, a3
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	beq	a1, a3, .LBB2_2
 .LBB2_4:
 	mv	a0, a2

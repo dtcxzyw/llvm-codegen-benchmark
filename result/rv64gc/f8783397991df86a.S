@@ -9,7 +9,7 @@ func000000000000002c:
 	and	a1, a1, a2
 	beqz	a1, .LBB0_2
 	lui	a0, 32768
-	addiw	a0, a0, 5
+	addi	a0, a0, 5
 	slli	a0, a0, 10
 .LBB0_2:
 	ret

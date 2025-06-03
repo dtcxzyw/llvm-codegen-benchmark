@@ -25,7 +25,7 @@ func0000000000000029:
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	lui	a4, 1
-	addiw	a4, a4, -496
+	addi	a4, a4, -496
 	slt	a3, a4, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
@@ -48,7 +48,7 @@ func0000000000000019:
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	lui	a4, 1047978
-	addiw	a4, a4, -836
+	addi	a4, a4, -836
 	slt	a3, a3, a4
 	lui	a4, 525234
 	addi	a4, a4, 1427

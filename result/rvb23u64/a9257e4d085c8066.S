@@ -9,7 +9,7 @@ func0000000000000006:
 func0000000000000000:
 	andi	a1, a1, 1
 	lui	a3, 1
-	addiw	a3, a3, -1744
+	addi	a3, a3, -1744
 	mulw	a2, a2, a3
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

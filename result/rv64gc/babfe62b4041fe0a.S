@@ -35,7 +35,7 @@ func0000000000000081:
 
 func000000000000002a:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	sext.w	a0, a0
 	bne	a2, a3, .LBB3_2

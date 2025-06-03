@@ -1,8 +1,8 @@
 func000000000000000d:
 	lui	a2, 209715
 	lui	a3, 838861
-	addiw	a2, a2, 819
-	addiw	a3, a3, -819
+	addi	a2, a2, 819
+	addi	a3, a3, -819
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32
@@ -17,8 +17,8 @@ func000000000000000d:
 func000000000000000f:
 	lui	a2, 209715
 	lui	a3, 838861
-	addiw	a2, a2, 819
-	addiw	a3, a3, -819
+	addi	a2, a2, 819
+	addi	a3, a3, -819
 	slli	a4, a2, 32
 	add	a2, a2, a4
 	slli	a4, a3, 32

@@ -21,7 +21,7 @@ func0000000000000015:
 	slliw	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 6
-	addiw	a1, a1, -810
+	addi	a1, a1, -810
 	add	a0, a0, a1
 	ret
 

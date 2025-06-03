@@ -9,14 +9,14 @@ func00000000000000ff:
 func000000000000003a:
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 731
+	addi	a1, a1, 731
 	add	a0, a0, a1
 	ret
 
 func000000000000003b:
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, 733
+	addi	a1, a1, 733
 	add	a0, a0, a1
 	ret
 

@@ -14,7 +14,7 @@ func0000000000000003:
 	rev8	a2, a0
 	lui	a3, 14
 	srli	a2, a2, 32
-	addiw	a3, a3, -339
+	addi	a3, a3, -339
 	xor	a1, a1, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

@@ -20,7 +20,7 @@ func0000000000000034:
 	lui	a2, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, -515
+	addi	a1, a2, -515
 	sltu	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000038:
 	lui	a2, 12
 	or	a0, a0, a1
 	sext.w	a0, a0
-	addiw	a1, a2, 848
+	addi	a1, a2, 848
 	sltu	a0, a1, a0
 	ret
 

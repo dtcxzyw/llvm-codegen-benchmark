@@ -7,7 +7,7 @@ func0000000000000003:
 	lui	a1, 12
 	mulhu	a2, a0, a2
 	srli	a2, a2, 12
-	addiw	a1, a1, 1961
+	addi	a1, a1, 1961
 	mul	a1, a2, a1
 	sub	a0, a0, a1
 	ret

@@ -6,7 +6,7 @@ func0000000000000093:
 	add	a0, a0, a3
 	add	a0, a0, a1
 	srli	a0, a0, 32
-	addiw	a1, a2, 1311
+	addi	a1, a2, 1311
 	mul	a0, a0, a1
 	ret
 

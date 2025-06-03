@@ -30,9 +30,8 @@ func0000000000000050:
 func00000000000000ff:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 7
-	li	a0, 1
+	bseti	a0, zero, 35
 	vsll.vi	v10, v10, 3
-	slli	a0, a0, 35
 	addi	a0, a0, -8
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8

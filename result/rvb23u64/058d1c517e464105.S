@@ -140,7 +140,7 @@ func0000000000000186:
 	zext.b	a1, a1
 	lui	a2, 3
 	snez	a1, a1
-	addiw	a2, a2, -9
+	addi	a2, a2, -9
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

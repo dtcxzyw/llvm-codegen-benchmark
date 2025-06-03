@@ -50,7 +50,7 @@ func0000000000000155:
 	lui	a0, 1048573
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 13
-	addiw	a0, a0, 702
+	addi	a0, a0, 702
 	vmadd.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8
 	lui	a0, 32

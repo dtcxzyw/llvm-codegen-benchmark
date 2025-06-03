@@ -15,7 +15,7 @@ func0000000000000003:
 func0000000000000001:
 	andi	a0, a0, 1
 	lui	a2, 1048575
-	addiw	a2, a2, 56
+	addi	a2, a2, 56
 	czero.eqz	a0, a2, a0
 	add.uw	a0, a1, a0
 	ret

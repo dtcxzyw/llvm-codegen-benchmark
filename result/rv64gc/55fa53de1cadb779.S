@@ -5,7 +5,7 @@ func0000000000000021:
 	or	a0, a0, a1
 	lui	a1, 196384
 	sext.w	a0, a0
-	addiw	a1, a1, 274
+	addi	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
 	addi	a0, a0, -1

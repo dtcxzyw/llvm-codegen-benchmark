@@ -19,7 +19,7 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI1_0)
 	lui	a1, 838861
 	ld	a0, %lo(.LCPI1_0)(a0)
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma

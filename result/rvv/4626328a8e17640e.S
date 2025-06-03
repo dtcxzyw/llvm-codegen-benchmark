@@ -10,8 +10,7 @@ func0000000000000004:
 func00000000000001c1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 7
-	li	a0, 1
-	slli	a0, a0, 33
+	bseti	a0, zero, 33
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
@@ -19,7 +18,7 @@ func00000000000001c1:
 
 func00000000000001e1:
 	lui	a0, 1
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	lui	a1, 1023

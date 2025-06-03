@@ -17,7 +17,7 @@ func0000000000000006:
 	lui	a0, 65541
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	addiw	a0, a0, 768
+	addi	a0, a0, 768
 	vxor.vx	v8, v8, a0
 	ret
 

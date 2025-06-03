@@ -17,7 +17,7 @@ func00000000000000f0:
 	vsll.vi	v10, v10, 6
 	lui	a0, 5142
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -28,7 +28,7 @@ func0000000000000077:
 	vsll.vi	v10, v10, 6
 	lui	a0, 5142
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -39,7 +39,7 @@ func0000000000000000:
 	vsll.vi	v10, v10, 6
 	lui	a0, 5142
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 175
+	addi	a0, a0, 175
 	slli	a0, a0, 13
 	addi	a0, a0, 2041
 	vadd.vx	v8, v8, a0
@@ -50,7 +50,7 @@ func0000000000000070:
 	vadd.vv	v10, v10, v10
 	lui	a0, 20
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 598
+	addi	a0, a0, 598
 	vadd.vx	v8, v8, a0
 	ret
 

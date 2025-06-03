@@ -12,7 +12,7 @@ func0000000000000088:
 	vzext.vf2	v12, v10
 	lui	a0, 2
 	vmsltu.vv	v10, v8, v12
-	addiw	a0, a0, -257
+	addi	a0, a0, -257
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
@@ -46,7 +46,7 @@ func0000000000000128:
 	vzext.vf2	v12, v10
 	lui	a0, 4
 	vmsleu.vv	v10, v12, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

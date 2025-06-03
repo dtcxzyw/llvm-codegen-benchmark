@@ -33,7 +33,7 @@ func0000000000000008:
 func0000000000000004:
 	sub	a2, a2, a1
 	lui	a1, 16
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	bgeu	a2, a1, .LBB4_2
 	li	a0, 4
 .LBB4_2:

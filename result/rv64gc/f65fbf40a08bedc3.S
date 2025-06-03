@@ -8,7 +8,7 @@ func000000000000002c:
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 360
+	addi	a1, a1, 360
 	add	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func000000000000000e:
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, -1928
+	addi	a1, a1, -1928
 	add	a0, a0, a1
 	ret
 

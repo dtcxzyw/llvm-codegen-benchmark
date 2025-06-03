@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a1, 512
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a1, a1, a0
 	lui	a2, 1048064
 	and	a1, a1, a2
@@ -18,8 +18,7 @@ func0000000000000004:
 
 func00000000000001a1:
 	addi	a1, a0, 3
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	xor	a0, a0, a1

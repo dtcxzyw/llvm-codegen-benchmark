@@ -3,7 +3,7 @@ func0000000000000037:
 	lui	a1, 131072
 	srli	a0, a0, 3
 	addi	a0, a0, 30
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

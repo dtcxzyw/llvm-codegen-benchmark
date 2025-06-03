@@ -10,7 +10,7 @@ func000000000000000a:
 	ld	a3, %lo(.LCPI0_1)(a3)
 	mulhu	a1, a0, a1
 	srli	a1, a1, 16
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	mulhu	a0, a0, a3

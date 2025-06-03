@@ -5,7 +5,7 @@ func000000000000001b:
 	lui	a0, 1272
 	vmul.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 20
-	addiw	a0, a0, 768
+	addi	a0, a0, 768
 	vadd.vx	v8, v8, a0
 	ret
 

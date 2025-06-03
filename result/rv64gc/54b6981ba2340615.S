@@ -4,7 +4,7 @@ func0000000000000000:
 
 func0000000000000007:
 	lui	a1, 2
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	or	a0, a0, a1
 	ret
 

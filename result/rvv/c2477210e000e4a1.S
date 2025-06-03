@@ -35,7 +35,7 @@ func0000000000000088:
 
 func0000000000000208:
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	vmerge.vim	v10, v10, 5, v0
@@ -76,7 +76,7 @@ func0000000000000086:
 
 func0000000000000206:
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 14
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma

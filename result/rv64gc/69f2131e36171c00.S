@@ -13,7 +13,7 @@ func0000000000000001:
 func0000000000000000:
 	slli	a1, a1, 2
 	lui	a2, 1048575
-	addiw	a2, a2, 3
+	addi	a2, a2, 3
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

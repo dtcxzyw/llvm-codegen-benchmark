@@ -8,7 +8,7 @@ func0000000000000028:
 	ret
 .LBB0_3:
 	lui	a1, 5
-	addiw	a1, a1, -481
+	addi	a1, a1, -481
 	bnez	a0, .LBB0_2
 .LBB0_4:
 	negw	a0, a1
@@ -24,7 +24,7 @@ func0000000000000029:
 	ret
 .LBB1_3:
 	lui	a1, 5
-	addiw	a1, a1, -481
+	addi	a1, a1, -481
 	bnez	a0, .LBB1_2
 .LBB1_4:
 	negw	a0, a1

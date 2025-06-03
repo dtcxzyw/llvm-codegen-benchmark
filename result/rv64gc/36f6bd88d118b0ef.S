@@ -25,7 +25,7 @@ func0000000000000002:
 	addiw	a1, a1, -161
 	lui	a2, 225
 	slli	a1, a1, 1
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -35,7 +35,7 @@ func0000000000000022:
 	addiw	a1, a1, -161
 	lui	a2, 25
 	slli	a1, a1, 1
-	addiw	a2, a2, 128
+	addi	a2, a2, 128
 	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000032:
 	addiw	a1, a1, -160
 	lui	a2, 225
 	slli	a1, a1, 1
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1

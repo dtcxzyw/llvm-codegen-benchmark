@@ -97,13 +97,13 @@ func0000000000000038:
 	sext.w	a1, a1
 	bnez	a2, .LBB6_2
 	lui	a2, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	beqz	a1, .LBB6_3
 	j	.LBB6_4
 .LBB6_2:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bnez	a1, .LBB6_4
 .LBB6_3:
@@ -117,13 +117,13 @@ func0000000000000028:
 	sext.w	a1, a1
 	bnez	a2, .LBB7_2
 	lui	a2, 48
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	beqz	a1, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a0, a0
 	bnez	a1, .LBB7_4
 .LBB7_3:

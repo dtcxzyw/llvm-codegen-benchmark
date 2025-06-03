@@ -19,7 +19,7 @@ func0000000000000006:
 	ret
 .LBB1_2:
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 24
 	slli	a0, a0, 32
 	srli	a0, a0, 32

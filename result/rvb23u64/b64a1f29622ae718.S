@@ -1,7 +1,7 @@
 func0000000000000008:
 	sext.w	a2, a2
 	lui	a3, 8192
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	xor	a2, a2, a3
 	seqz	a2, a2
 	slli	a2, a2, 18

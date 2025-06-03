@@ -1,7 +1,7 @@
 func0000000000000184:
 	addi	a2, a2, 21
 	lui	a3, 32
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2

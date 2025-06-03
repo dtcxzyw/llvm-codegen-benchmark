@@ -5,7 +5,7 @@ func0000000000000024:
 	vsra.vi	v8, v8, 1
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -19,7 +19,7 @@ func00000000000000e4:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -33,7 +33,7 @@ func00000000000000e8:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -47,7 +47,7 @@ func0000000000000064:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -61,7 +61,7 @@ func0000000000000068:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -75,7 +75,7 @@ func0000000000000061:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -89,7 +89,7 @@ func0000000000000021:
 	vsra.vi	v8, v8, 3
 	lui	a0, 748983
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -103,7 +103,7 @@ func0000000000000028:
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
 	vsext.vf2	v10, v12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

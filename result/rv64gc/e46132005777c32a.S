@@ -2,10 +2,10 @@ func000000000000001f:
 	slli	a2, a2, 63
 	lui	a3, 21
 	srai	a2, a2, 63
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	and	a2, a2, a3
 	lui	a3, 65536
-	addiw	a3, a3, -225
+	addi	a3, a3, -225
 	slli	a3, a3, 4
 	add	a1, a1, a2
 	mul	a0, a0, a3

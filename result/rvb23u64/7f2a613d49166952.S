@@ -4,7 +4,7 @@ func00000000000000e1:
 	or	a0, a0, a1
 	lui	a1, 14
 	sext.w	a0, a0
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -50,7 +50,7 @@ func00000000000001ec:
 	or	a0, a0, a1
 	lui	a1, 272
 	sext.w	a0, a0
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

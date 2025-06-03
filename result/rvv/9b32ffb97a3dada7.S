@@ -3,7 +3,7 @@
 func0000000000000002:
 	lui	a0, 2
 	lui	a1, %hi(.LCPI0_0)
-	addiw	a0, a0, 1808
+	addi	a0, a0, 1808
 	ld	a1, %lo(.LCPI0_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmin.vx	v8, v8, a0

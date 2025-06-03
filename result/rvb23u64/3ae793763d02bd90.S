@@ -26,9 +26,9 @@ func0000000000000604:
 	sub	a2, a2, a1
 	lui	a1, 64
 	add	a0, a0, a2
-	addiw	a2, a1, -4
+	addi	a2, a1, -4
 	add	a0, a0, a2
-	addiw	a1, a1, -15
+	addi	a1, a1, -15
 	sltu	a0, a0, a1
 	ret
 

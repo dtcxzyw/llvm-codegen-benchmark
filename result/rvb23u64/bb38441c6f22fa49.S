@@ -1,6 +1,6 @@
 func0000000000000025:
 	lui	a3, 9
-	addiw	a3, a3, -1396
+	addi	a3, a3, -1396
 	mul	a2, a2, a3
 	srai	a2, a2, 16
 	add	a0, a0, a1
@@ -9,7 +9,7 @@ func0000000000000025:
 
 func0000000000000024:
 	lui	a3, 1
-	addiw	a3, a3, -96
+	addi	a3, a3, -96
 	mul	a2, a2, a3
 	srai	a2, a2, 63
 	add	a0, a0, a1

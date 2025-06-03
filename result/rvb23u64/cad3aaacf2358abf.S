@@ -23,7 +23,7 @@ func0000000000000001:
 
 func0000000000000018:
 	lui	a2, 4096
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	and	a1, a1, a2
 	lui	a2, 128
 	sltu	a1, a2, a1

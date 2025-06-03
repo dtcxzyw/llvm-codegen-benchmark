@@ -34,7 +34,7 @@ func0000000000000084:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -511
+	addi	a2, a2, -511
 	sltu	a1, a1, a2
 	sltiu	a0, a0, -2047
 	and	a0, a0, a1
@@ -107,7 +107,7 @@ func0000000000000281:
 	zext.h	a1, a1
 	lui	a2, 26214
 	sltiu	a1, a1, 52
-	addiw	a2, a2, 1638
+	addi	a2, a2, 1638
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -309,7 +309,7 @@ func0000000000000034:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 2

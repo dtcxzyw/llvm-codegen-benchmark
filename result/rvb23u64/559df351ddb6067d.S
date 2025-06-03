@@ -11,7 +11,7 @@ func0000000000000000:
 	subw	a1, a1, a2
 	lui	a2, 9
 	min	a0, a1, a0
-	addiw	a1, a2, -320
+	addi	a1, a2, -320
 	min	a0, a0, a1
 	ret
 

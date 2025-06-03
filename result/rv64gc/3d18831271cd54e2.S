@@ -126,14 +126,14 @@ func0000000000000294:
 	li	a3, 1571
 	bltu	a2, a3, .LBB10_2
 	lui	a2, 65857
-	addiw	a2, a2, 161
+	addi	a2, a2, 161
 	srliw	a1, a1, 1
 	li	a3, 1561
 	bgeu	a1, a3, .LBB10_3
 	j	.LBB10_4
 .LBB10_2:
 	lui	a2, 98625
-	addiw	a2, a2, 161
+	addi	a2, a2, 161
 	srliw	a1, a1, 1
 	li	a3, 1561
 	bltu	a1, a3, .LBB10_4
@@ -169,7 +169,7 @@ func0000000000000284:
 	beqz	a1, .LBB13_2
 	sext.w	a2, a2
 	lui	a0, 3
-	addiw	a0, a0, 1946
+	addi	a0, a0, 1946
 	sltu	a0, a2, a0
 	addi	a0, a0, -1
 	zext.b	a0, a0
@@ -181,7 +181,7 @@ func00000000000000c4:
 	beqz	a1, .LBB14_2
 	sext.w	a2, a2
 	lui	a0, 1048574
-	addiw	a0, a0, -516
+	addi	a0, a0, -516
 	slt	a0, a2, a0
 	addi	a0, a0, -1
 	zext.b	a0, a0

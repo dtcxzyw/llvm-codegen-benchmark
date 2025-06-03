@@ -17,7 +17,7 @@ func0000000000000008:
 	lui	a2, 16
 	addw	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -27,7 +27,7 @@ func0000000000000000:
 	lui	a2, 32
 	addw	a1, a1, a2
 	lui	a2, 4096
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

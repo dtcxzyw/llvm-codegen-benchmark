@@ -307,7 +307,7 @@ func0000000000000039:
 	srli	a2, a2, 32
 	sltu	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	not	a0, a0
 	seqz	a1, a1

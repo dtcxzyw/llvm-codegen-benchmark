@@ -6,7 +6,7 @@ func0000000000000000:
 	srli	a1, a1, 32
 .LBB0_2:
 	lui	a2, 1047808
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -16,14 +16,14 @@ func0000000000000003:
 	bnez	a1, .LBB1_2
 	sext.w	a2, a2
 	lui	a1, 1048560
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 256
 	lui	a1, 1048560
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret

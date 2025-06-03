@@ -28,7 +28,7 @@ func0000000000000184:
 	add	a0, a0, a1
 	lui	a1, 16
 	addi	a0, a0, 2
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
@@ -202,7 +202,7 @@ func000000000000000a:
 func00000000000000a6:
 	add	a0, a0, a1
 	lui	a1, 176
-	addiw	a1, a1, -1428
+	addi	a1, a1, -1428
 	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
@@ -317,7 +317,7 @@ func00000000000000c8:
 func00000000000001e4:
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 12
 	seqz	a0, a0

@@ -38,7 +38,7 @@ func00000000000000ca:
 	or	a1, a1, a2
 	lui	a2, 24
 	sext.w	a1, a1
-	addiw	a2, a2, 1697
+	addi	a2, a2, 1697
 	slti	a1, a1, 0
 	slt	a0, a0, a2
 	andn	a0, a0, a1

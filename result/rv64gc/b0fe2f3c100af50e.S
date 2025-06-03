@@ -1,6 +1,6 @@
 func000000000000000c:
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	xor	a2, a2, a3
 	snez	a2, a2

@@ -8,7 +8,7 @@ func0000000000000041:
 func0000000000000061:
 	or	a0, a0, a1
 	lui	a1, 512
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	and	a0, a0, a1
 	li	a1, 27
 	slli	a1, a1, 11

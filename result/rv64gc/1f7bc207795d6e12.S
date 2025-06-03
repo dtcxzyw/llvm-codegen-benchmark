@@ -3,7 +3,7 @@ func00000000000000a1:
 	or	a1, a1, a2
 	bnez	a1, .LBB0_2
 	lui	a0, 1
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 .LBB0_2:
 	ret
 

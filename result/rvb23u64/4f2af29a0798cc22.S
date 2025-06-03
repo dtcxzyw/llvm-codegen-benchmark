@@ -30,7 +30,7 @@ func0000000000000005:
 	andi	a2, a2, -2
 	lui	a3, 262144
 	sext.w	a2, a2
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	addi	a2, a2, -2
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 2
@@ -42,7 +42,7 @@ func0000000000000062:
 	andi	a2, a2, 240
 	lui	a3, 8
 	sltiu	a2, a2, 144
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

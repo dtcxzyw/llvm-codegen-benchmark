@@ -27,7 +27,7 @@ func0000000000000061:
 func0000000000000021:
 	or	a1, a1, a2
 	lui	a0, 256
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	and	a0, a0, a1
 	ret
 

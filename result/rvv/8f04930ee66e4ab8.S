@@ -17,7 +17,7 @@ func0000000000000023:
 	lui	a0, 8
 	vmerge.vim	v10, v10, 1, v0
 	vsll.vv	v8, v8, v10
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v8, v8, a0
 	ret
 

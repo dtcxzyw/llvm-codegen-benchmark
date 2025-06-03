@@ -14,14 +14,14 @@ func0000000000006070:
 	vmseq.vi	v12, v10, 2
 	lui	a0, 128
 	vmor.mm	v10, v12, v14
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
 
 func0000000000004210:
 	lui	a0, 1
-	addiw	a1, a0, -2
+	addi	a1, a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v14, v12, a1
 	vmsgtu.vx	v12, v10, a1
@@ -48,7 +48,7 @@ func0000000000005290:
 	vmsgt.vx	v14, v12, a0
 	vmsgt.vx	v12, v10, a0
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmor.mm	v10, v12, v14
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

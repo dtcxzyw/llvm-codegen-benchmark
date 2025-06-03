@@ -16,12 +16,12 @@ func00000000000000a0:
 	sext.w	a3, a2
 	lui	a2, 1048575
 	bgtz	a3, .LBB1_2
-	addiw	a2, a2, 33
+	addi	a2, a2, 33
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 .LBB1_2:
-	addiw	a2, a2, 36
+	addi	a2, a2, 36
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -58,7 +58,7 @@ func000000000000001c:
 func00000000000000af:
 	sext.w	a2, a2
 	lui	a3, 2
-	addiw	a3, a3, 1807
+	addi	a3, a3, 1807
 	slt	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -125,7 +125,7 @@ func0000000000000080:
 	ret
 .LBB10_2:
 	lui	a2, 36
-	addiw	a2, a2, 1856
+	addi	a2, a2, 1856
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -142,7 +142,7 @@ func0000000000000018:
 func0000000000000087:
 	sext.w	a2, a2
 	lui	a3, 24414
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	sltu	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -153,7 +153,7 @@ func0000000000000015:
 	sext.w	a2, a2
 	lui	a3, 1
 	seqz	a2, a2
-	addiw	a3, a3, -2017
+	addi	a3, a3, -2017
 	addi	a2, a2, -1
 	and	a2, a2, a3
 	add	a0, a0, a1

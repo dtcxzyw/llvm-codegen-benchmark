@@ -5,7 +5,7 @@ func000000000000000a:
 	andi	a1, a1, 1
 	srai	a2, a2, 4
 	lui	a3, 748983
-	addiw	a3, a3, -585
+	addi	a3, a3, -585
 	slli	a4, a3, 33
 	add	a3, a3, a4
 	li	a4, 1

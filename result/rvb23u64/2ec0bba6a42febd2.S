@@ -38,7 +38,7 @@ func0000000000000042:
 	slliw	a1, a1, 8
 	or	a1, a1, a2
 	lui	a2, 419527
-	addiw	a2, a2, -159
+	addi	a2, a2, -159
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -49,7 +49,7 @@ func0000000000000254:
 	slliw	a1, a1, 6
 	or	a1, a1, a2
 	lui	a2, 272
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

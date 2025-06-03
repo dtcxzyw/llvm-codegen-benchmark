@@ -1,7 +1,7 @@
 func0000000000000015:
 	lui	a2, 1
 	sh1add	a0, a0, a0
-	addiw	a2, a2, -496
+	addi	a2, a2, -496
 	mul	a1, a1, a2
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
@@ -43,50 +43,50 @@ func000000000000003f:
 
 func0000000000000034:
 	lui	a2, 115
-	addiw	a2, a2, -744
+	addi	a2, a2, -744
 	mul	a1, a1, a2
 	lui	a2, 160
-	addiw	a2, a2, -1177
+	addi	a2, a2, -1177
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000014:
 	lui	a2, 163
-	addiw	a2, a2, -1005
+	addi	a2, a2, -1005
 	mul	a1, a1, a2
 	lui	a2, 115
-	addiw	a2, a2, -744
+	addi	a2, a2, -744
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000030:
 	lui	a2, 160
-	addiw	a2, a2, -1177
+	addi	a2, a2, -1177
 	mul	a1, a1, a2
 	lui	a2, 1048332
-	addiw	a2, a2, 1619
+	addi	a2, a2, 1619
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000004:
 	lui	a2, 1048332
-	addiw	a2, a2, 1619
+	addi	a2, a2, 1619
 	mul	a1, a1, a2
 	lui	a2, 33
-	addiw	a2, a2, 1489
+	addi	a2, a2, 1489
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000010:
 	lui	a2, 33
-	addiw	a2, a2, 1489
+	addi	a2, a2, 1489
 	mul	a1, a1, a2
 	lui	a2, 1048409
-	addiw	a2, a2, 131
+	addi	a2, a2, 131
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -101,7 +101,7 @@ func000000000000000f:
 func0000000000000017:
 	lui	a2, 1
 	sh1add	a0, a0, a0
-	addiw	a2, a2, -496
+	addi	a2, a2, -496
 	mul	a1, a1, a2
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
@@ -109,10 +109,10 @@ func0000000000000017:
 
 func000000000000001d:
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	lui	a2, 2575
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	slli	a2, a2, 13
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -120,7 +120,7 @@ func000000000000001d:
 
 func0000000000000038:
 	lui	a2, 423516
-	addiw	a2, a2, 1939
+	addi	a2, a2, 1939
 	mul	a1, a1, a2
 	lui	a2, 4001
 	slli	a2, a2, 8
@@ -131,20 +131,20 @@ func0000000000000038:
 
 func000000000000000c:
 	lui	a2, 16
-	addiw	a2, a2, 177
+	addi	a2, a2, 177
 	mul	a1, a1, a2
 	lui	a2, 412
-	addiw	a2, a2, -1503
+	addi	a2, a2, -1503
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000035:
 	lui	a2, 1
-	addiw	a2, a2, -1650
+	addi	a2, a2, -1650
 	mul	a1, a1, a2
 	lui	a2, 1048574
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

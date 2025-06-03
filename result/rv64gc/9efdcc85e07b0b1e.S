@@ -23,7 +23,7 @@ func000000000000000a:
 
 func000000000000002a:
 	lui	a2, 4096
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a1, a0

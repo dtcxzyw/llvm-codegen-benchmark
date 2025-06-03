@@ -102,7 +102,7 @@ func0000000000000017:
 	lui	a0, 930062
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	addiw	a0, a0, -1681
+	addi	a0, a0, -1681
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	slli	a0, a0, 7

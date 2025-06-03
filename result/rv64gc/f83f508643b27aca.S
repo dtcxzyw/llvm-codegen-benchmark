@@ -21,10 +21,10 @@ func0000000000000001:
 	ret
 .LBB1_3:
 	lui	a1, 1048552
-	addiw	a1, a1, -1695
+	addi	a1, a1, -1695
 	beqz	a0, .LBB1_2
 .LBB1_4:
 	lui	a0, 24
-	addiw	a0, a0, 1695
+	addi	a0, a0, 1695
 	ret
 

@@ -22,11 +22,11 @@ func0000000000000000:
 
 func000000000000000e:
 	lui	a2, 2032
-	addiw	a2, a2, 127
+	addi	a2, a2, 127
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, 522248
-	addiw	a3, a3, -128
+	addi	a3, a3, -128
 	and	a1, a1, a2
 	slli	a2, a3, 32
 	mul	a0, a1, a0

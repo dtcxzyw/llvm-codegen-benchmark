@@ -1,7 +1,7 @@
 func0000000000000001:
 	sext.w	a1, a1
 	lui	a2, 12300
-	addiw	a2, a2, 43
+	addi	a2, a2, 43
 	bne	a1, a2, .LBB0_2
 	li	a0, 23
 .LBB0_2:
@@ -10,7 +10,7 @@ func0000000000000001:
 func0000000000000014:
 	sext.w	a1, a1
 	lui	a2, 2
-	addiw	a2, a2, -511
+	addi	a2, a2, -511
 	bgeu	a1, a2, .LBB1_2
 	li	a0, 192
 .LBB1_2:

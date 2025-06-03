@@ -14,7 +14,7 @@ func0000000000000000:
 	srli	a0, a0, 4
 	mulhu	a2, a0, a2
 	srli	a2, a2, 10
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a1, a2, a1
 	sub	a0, a0, a1
 	ret

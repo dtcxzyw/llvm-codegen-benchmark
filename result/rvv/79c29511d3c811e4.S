@@ -5,7 +5,7 @@ func0000000000000021:
 	vand.vx	v10, v10, a0
 	vmseq.vx	v12, v10, a0
 	lui	a0, 524032
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

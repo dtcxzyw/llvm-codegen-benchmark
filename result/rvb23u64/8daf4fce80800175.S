@@ -1,7 +1,7 @@
 func000000000000000b:
 	add	a1, a1, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	and	a1, a1, a2
 	and	a0, a0, a2
 	add	a0, a0, a1
@@ -10,7 +10,7 @@ func000000000000000b:
 func000000000000000f:
 	add	a1, a1, a2
 	lui	a2, 28784
-	addiw	a2, a2, 1799
+	addi	a2, a2, 1799
 	and	a1, a1, a2
 	and	a0, a0, a2
 	add	a0, a0, a1
@@ -35,10 +35,10 @@ func0000000000000001:
 func0000000000000003:
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	lui	a2, 32768
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -46,7 +46,7 @@ func0000000000000003:
 func0000000000000007:
 	add	a1, a1, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	and	a1, a1, a2
 	and	a0, a0, a2
 	add	a0, a0, a1

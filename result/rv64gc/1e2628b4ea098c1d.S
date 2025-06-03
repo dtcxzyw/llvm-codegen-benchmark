@@ -4,7 +4,7 @@ func000000000000003f:
 	or	a1, a1, a2
 	lui	a2, 4080
 	or	a0, a0, a1
-	addiw	a1, a2, 511
+	addi	a1, a2, 511
 	and	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func000000000000003b:
 	or	a1, a1, a2
 	lui	a2, 1044480
 	or	a0, a0, a1
-	addiw	a1, a2, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

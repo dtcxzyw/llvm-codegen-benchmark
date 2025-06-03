@@ -9,7 +9,7 @@ func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 13
-	addiw	a0, a0, 1151
+	addi	a0, a0, 1151
 	vmsgtu.vx	v0, v8, a0
 	li	a0, 100
 	vmerge.vxm	v8, v12, a0, v0

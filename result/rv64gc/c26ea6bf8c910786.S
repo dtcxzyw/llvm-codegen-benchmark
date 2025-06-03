@@ -2,9 +2,9 @@
 	.quad	-11252131312498201
 func0000000000000004:
 	lui	a1, 4
-	addiw	a2, a1, 9
+	addi	a2, a1, 9
 	add	a0, a0, a2
-	addiw	a1, a1, 10
+	addi	a1, a1, 10
 	bgeu	a0, a1, .LBB0_2
 	li	a0, 1
 	ret

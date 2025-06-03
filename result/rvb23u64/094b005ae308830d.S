@@ -1,7 +1,7 @@
 func0000000000000001:
 	zext.b	a1, a1
 	lui	a3, 262144
-	addiw	a3, a3, -136
+	addi	a3, a3, -136
 	addi	a1, a1, -93
 	and	a2, a2, a3
 	czero.eqz	a2, a2, a1

@@ -132,7 +132,7 @@ func0000000000000684:
 	addiw	a1, a1, -48
 	lui	a2, 52429
 	sltiu	a1, a1, 10
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -142,7 +142,7 @@ func00000000000004c4:
 	addiw	a1, a1, -48
 	lui	a2, 52429
 	sltiu	a1, a1, 10
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -264,7 +264,7 @@ func0000000000000304:
 	addi	a2, a2, -1775
 	addw	a1, a1, a2
 	lui	a2, 5
-	addiw	a2, a2, 546
+	addi	a2, a2, 546
 	sltiu	a0, a0, 2
 	sltu	a1, a1, a2
 	xori	a0, a0, 1

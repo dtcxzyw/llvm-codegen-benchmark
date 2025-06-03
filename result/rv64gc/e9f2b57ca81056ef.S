@@ -23,11 +23,11 @@ func0000000000000006:
 	sext.w	a2, a1
 	lui	a1, 1048458
 	beqz	a2, .LBB2_2
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	addiw	a1, a1, 1504
+	addi	a1, a1, 1504
 	add	a0, a0, a1
 	ret
 

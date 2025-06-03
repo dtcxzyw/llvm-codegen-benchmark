@@ -16,7 +16,7 @@ func0000000000000008:
 	sext.w	a2, a2
 	lui	a3, 128
 	sltiu	a2, a2, 3
-	addiw	a4, a3, 4
+	addi	a4, a3, 4
 	czero.eqz	a4, a4, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a4

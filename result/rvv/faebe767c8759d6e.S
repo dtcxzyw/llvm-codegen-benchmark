@@ -1,6 +1,5 @@
 func000000000000003b:
-	li	a0, 1
-	slli	a0, a0, 38
+	bseti	a0, zero, 38
 	addi	a0, a0, -129
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -12,8 +11,7 @@ func000000000000003b:
 	ret
 
 func000000000000001b:
-	li	a0, 1
-	slli	a0, a0, 38
+	bseti	a0, zero, 38
 	addi	a0, a0, -129
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0

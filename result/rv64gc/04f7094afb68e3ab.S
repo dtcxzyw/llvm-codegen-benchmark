@@ -6,7 +6,7 @@ func0000000000000001:
 	srli	a3, a1, 56
 	srli	a4, a1, 24
 	lui	a5, 4080
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a3
 	srli	a3, a1, 8
@@ -36,7 +36,7 @@ func0000000000000008:
 	lui	a6, 16
 	beqz	a2, .LBB1_2
 	srli	a2, a1, 40
-	addiw	a3, a6, -256
+	addi	a3, a6, -256
 	srli	a4, a1, 56
 	srli	a5, a1, 24
 	lui	a0, 4080
@@ -71,7 +71,7 @@ func0000000000000004:
 	srli	a3, a1, 56
 	srli	a4, a1, 24
 	lui	a5, 4080
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a3
 	srli	a3, a1, 8
@@ -106,7 +106,7 @@ func000000000000000c:
 	srli	a3, a1, 56
 	srli	a4, a1, 24
 	lui	a5, 4080
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	or	a0, a0, a3
 	srli	a3, a1, 8

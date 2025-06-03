@@ -30,7 +30,7 @@ func0000000000000094:
 
 func0000000000000030:
 	lui	a0, 258048
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 253952

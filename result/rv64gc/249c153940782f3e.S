@@ -10,7 +10,7 @@ func0000000000000018:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_3
 	lui	a1, 65536
-	addiw	a1, a1, 63
+	addi	a1, a1, 63
 	bltu	a1, a0, .LBB1_4
 .LBB1_2:
 	mv	a0, a2
@@ -18,7 +18,7 @@ func0000000000000018:
 .LBB1_3:
 	li	a2, 1
 	lui	a1, 65536
-	addiw	a1, a1, 63
+	addi	a1, a1, 63
 	bgeu	a1, a0, .LBB1_2
 .LBB1_4:
 	lui	a0, 1024

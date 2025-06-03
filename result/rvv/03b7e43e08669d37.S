@@ -1,6 +1,6 @@
 func0000000000000028:
 	lui	a0, 5
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
@@ -21,7 +21,7 @@ func0000000000000004:
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 10
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vrsub.vx	v8, v10, a0, v0.t
 	ret
 

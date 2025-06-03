@@ -2,7 +2,7 @@ func0000000000000001:
 	sext.w	a3, a2
 	lui	a4, 559241
 	or	a0, a0, a1
-	addiw	a1, a4, -1911
+	addi	a1, a4, -1911
 	slli	a0, a0, 63
 	mul	a1, a3, a1
 	srli	a1, a1, 32

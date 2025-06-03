@@ -20,7 +20,7 @@ func000000000000082c:
 	addi	a2, a2, 1
 	xor	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 27
 	seqz	a0, a0
@@ -34,7 +34,7 @@ func000000000000042c:
 	addi	a2, a2, 1
 	xor	a0, a0, a2
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 27
 	seqz	a0, a0

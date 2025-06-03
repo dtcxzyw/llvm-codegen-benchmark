@@ -9,8 +9,7 @@ func0000000000000010:
 
 func000000000000003a:
 	addi	a2, a2, 3
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	sub	a0, a1, a0

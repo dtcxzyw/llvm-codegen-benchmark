@@ -20,7 +20,7 @@ func0000000000000002:
 .LBB1_3:
 	addw	a0, a0, a1
 	lui	a1, 310689
-	addiw	a1, a1, 759
+	addi	a1, a1, 759
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 40

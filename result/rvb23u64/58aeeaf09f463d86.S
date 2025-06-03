@@ -15,8 +15,8 @@ func0000000000000001:
 func000000000000000a:
 	lui	a1, 522232
 	lui	a2, 152146
-	addiw	a1, a1, -129
-	addiw	a2, a2, 1317
+	addi	a1, a1, -129
+	addi	a2, a2, 1317
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	slli	a3, a2, 32
@@ -26,7 +26,7 @@ func000000000000000a:
 	ld	a1, %lo(.LCPI1_0)(a1)
 	add	a0, a0, a2
 	lui	a2, 106914
-	addiw	a2, a2, -1510
+	addi	a2, a2, -1510
 	and	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2
@@ -36,7 +36,7 @@ func000000000000000a:
 func0000000000000000:
 	andi	a0, a0, -8
 	lui	a1, 16
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	add	a0, a0, a1
 	lui	a1, 1048560
 	and	a0, a0, a1
@@ -61,7 +61,7 @@ func000000000000000f:
 func000000000000000d:
 	andi	a0, a0, -2
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 1048574
 	srli	a1, a1, 1

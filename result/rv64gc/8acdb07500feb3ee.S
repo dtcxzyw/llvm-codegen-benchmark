@@ -25,11 +25,11 @@ func0000000000000008:
 	li	a1, 31
 	bltu	a1, a0, .LBB3_2
 	lui	a0, 65536
-	addiw	a0, a0, 353
+	addi	a0, a0, 353
 	ret
 .LBB3_2:
 	lui	a0, 131072
-	addiw	a0, a0, 361
+	addi	a0, a0, 361
 	ret
 
 func0000000000000014:

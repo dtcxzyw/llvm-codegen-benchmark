@@ -3,7 +3,7 @@ func000000000000004c:
 	vmv.v.i	v9, 1
 	lui	a0, 32
 	vwsll.vv	v10, v9, v8
-	addiw	a0, a0, -48
+	addi	a0, a0, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v10, a0
 	vmsne.vi	v10, v8, 0
@@ -30,7 +30,7 @@ func00000000000000c4:
 	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v8, v10, -2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
@@ -42,7 +42,7 @@ func00000000000000d4:
 	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v8, v10, -2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret

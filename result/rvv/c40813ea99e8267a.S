@@ -78,7 +78,7 @@ func00000000000000a6:
 	vsra.vx	v10, v10, a0
 	lui	a0, 176
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1428
+	addi	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	vmsle.vi	v0, v8, -1
 	ret

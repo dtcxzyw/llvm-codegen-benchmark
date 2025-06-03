@@ -13,7 +13,7 @@ func0000000000000061:
 	andi	a2, a2, 1
 	lui	a3, 131072
 	addi	a2, a2, -1
-	addiw	a3, a3, 32
+	addi	a3, a3, 32
 	addi	a0, a0, -1
 	and	a2, a2, a3
 	seqz	a0, a0

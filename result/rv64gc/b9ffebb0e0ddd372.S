@@ -8,7 +8,7 @@ func0000000000000008:
 	mul	a0, a1, a0
 	lui	a1, 1
 	slliw	a0, a0, 2
-	addiw	a1, a1, -16
+	addi	a1, a1, -16
 	sltu	a0, a1, a0
 	ret
 

@@ -42,7 +42,7 @@ func0000000000000031:
 	lui	a2, 8
 	slli	a1, a1, 15
 	sltiu	a0, a0, 144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

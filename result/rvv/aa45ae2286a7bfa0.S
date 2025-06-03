@@ -3,7 +3,7 @@ func000000000000000f:
 	vmv1r.v	v12, v9
 	vmv1r.v	v13, v8
 	lui	a0, 1040384
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12

@@ -18,7 +18,7 @@ func0000000000000001:
 
 func000000000000000a:
 	lui	a0, 1172
-	addiw	a0, a0, -511
+	addi	a0, a0, -511
 	bseti	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v10, v8, a0

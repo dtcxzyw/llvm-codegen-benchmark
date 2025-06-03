@@ -3,7 +3,7 @@ func0000000000000004:
 	vadd.vi	v12, v8, -1
 	lui	a0, 262144
 	vsub.vv	v12, v10, v8, v0.t
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsltu.vx	v0, v12, a0
 	ret
 

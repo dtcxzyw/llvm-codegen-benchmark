@@ -34,7 +34,7 @@ func0000000000000001:
 	li	a0, -264
 	lui	a1, 838861
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	vsra.vi	v8, v8, 4
 	slli	a1, a0, 32
 	add	a0, a0, a1

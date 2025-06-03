@@ -17,7 +17,7 @@ func0000000000000009:
 	sub	a2, a2, a1
 	lui	a1, 838861
 	lui	a3, %hi(.LCPI1_0)
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	ld	a3, %lo(.LCPI1_0)(a3)
 	slli	a4, a1, 32
 	add	a1, a1, a4
@@ -35,7 +35,7 @@ func0000000000000005:
 	lui	a1, 986895
 	srli	a3, a0, 63
 	srai	a2, a2, 3
-	addiw	a1, a1, 241
+	addi	a1, a1, 241
 	add	a0, a0, a3
 	slli	a3, a1, 32
 	add	a1, a1, a3

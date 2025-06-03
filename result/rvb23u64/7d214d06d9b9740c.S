@@ -18,7 +18,7 @@ func000000000000000f:
 func000000000000001f:
 	lui	a3, 1048510
 	zext.b	a1, a1
-	addiw	a3, a3, 1023
+	addi	a3, a3, 1023
 	slli	a1, a1, 18
 	bclri	a3, a3, 32
 	and	a2, a2, a3

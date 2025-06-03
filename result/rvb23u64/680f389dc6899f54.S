@@ -35,8 +35,7 @@ func0000000000000086:
 
 func0000000000000084:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 35
+	bseti	a0, zero, 35
 	addi	a0, a0, -16
 	and	a0, a0, a1
 	seqz	a0, a0
@@ -44,8 +43,7 @@ func0000000000000084:
 
 func0000000000000094:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -1024
 	and	a0, a0, a1
 	seqz	a0, a0

@@ -62,7 +62,7 @@ func00000000000004cc:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v9
 	lui	a0, 32
-	addiw	a0, a0, 1152
+	addi	a0, a0, 1152
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v9, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma

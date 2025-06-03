@@ -64,7 +64,7 @@ func0000000000000074:
 func0000000000000026:
 	sub	a1, a1, a2
 	lui	a2, 21
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -72,7 +72,7 @@ func0000000000000026:
 func000000000000002a:
 	sub	a1, a1, a2
 	lui	a2, 633
-	addiw	a2, a2, -768
+	addi	a2, a2, -768
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

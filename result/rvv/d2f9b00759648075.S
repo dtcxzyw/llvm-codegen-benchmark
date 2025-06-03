@@ -41,7 +41,7 @@ func0000000000000006:
 	lui	a0, 2575
 	lui	a1, %hi(.LCPI4_0)
 	ld	a1, %lo(.LCPI4_0)(a1)
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmadd.vx	v12, a0, v8
 	vmslt.vx	v0, v12, a1

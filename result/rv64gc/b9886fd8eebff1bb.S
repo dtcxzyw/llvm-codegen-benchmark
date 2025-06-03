@@ -4,7 +4,7 @@ func0000000000000061:
 	lui	a1, 1048569
 	seqz	a0, a0
 	addi	a0, a0, -1
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret
 

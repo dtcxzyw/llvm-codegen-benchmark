@@ -14,7 +14,7 @@ func0000000000000001:
 .LBB1_2:
 	or	a0, a0, a2
 	lui	a1, 1044002
-	addiw	a1, a1, 514
+	addi	a1, a1, 514
 	and	a0, a0, a1
 	ret
 

@@ -46,7 +46,7 @@ func0000000000000040:
 	subw	a1, a1, a2
 	lui	a2, 18
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 788
+	addi	a1, a2, 788
 	add	a0, a0, a1
 	ret
 

@@ -88,7 +88,7 @@ func00000000000000ca:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v14, v10, v12
 	lui	a0, 1048544
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	srli	a0, a0, 1
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14

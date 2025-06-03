@@ -3,7 +3,7 @@ func0000000000000007:
 	li	a4, 12
 	lui	a2, 262144
 	bne	a3, a4, .LBB0_2
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 .LBB0_2:
 	or	a0, a0, a2
 	andi	a1, a1, 1

@@ -5,7 +5,7 @@ func0000000000000048:
 	lui	a2, 244141
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	addiw	a1, a2, -1560
+	addi	a1, a2, -1560
 	sltu	a0, a1, a0
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000008:
 	lui	a2, 244141
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	addiw	a1, a2, -1560
+	addi	a1, a2, -1560
 	sltu	a0, a1, a0
 	ret
 
@@ -26,7 +26,7 @@ func0000000000000088:
 	minu	a1, a1, a2
 	lui	a2, 244141
 	mul	a0, a0, a1
-	addiw	a1, a2, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a1, a0
 	ret
 

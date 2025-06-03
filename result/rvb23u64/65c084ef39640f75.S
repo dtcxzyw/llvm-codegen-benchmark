@@ -125,7 +125,7 @@ func0000000000000008:
 	subw	a1, a1, a2
 	lui	a2, 122
 	mulw	a0, a1, a0
-	addiw	a1, a2, 288
+	addi	a1, a2, 288
 	sltu	a0, a1, a0
 	ret
 

@@ -79,7 +79,7 @@ func00000000000001e1:
 func0000000000000001:
 	add	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, 688
+	addi	a2, a2, 688
 	add	a1, a1, a2
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -212,7 +212,7 @@ func0000000000000641:
 
 func0000000000000609:
 	lui	a3, 1
-	addiw	a3, a3, -1472
+	addi	a3, a3, -1472
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 1152

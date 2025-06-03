@@ -40,7 +40,7 @@ func000000000000008a:
 	add	a0, a0, a1
 	lui	a1, 1
 	addiw	a0, a0, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
@@ -55,7 +55,7 @@ func0000000000000088:
 	add	a0, a0, a1
 	lui	a1, 1
 	addiw	a0, a0, -29
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	sltu	a0, a1, a0
 	ret
 
@@ -81,7 +81,7 @@ func00000000000000a8:
 	add	a0, a0, a1
 	lui	a1, 8
 	addiw	a0, a0, 5
-	addiw	a1, a1, -9
+	addi	a1, a1, -9
 	sltu	a0, a1, a0
 	ret
 
@@ -108,7 +108,7 @@ func00000000000000f8:
 	add	a0, a0, a1
 	lui	a1, 2
 	addiw	a0, a0, -161
-	addiw	a1, a1, -982
+	addi	a1, a1, -982
 	sltu	a0, a1, a0
 	ret
 

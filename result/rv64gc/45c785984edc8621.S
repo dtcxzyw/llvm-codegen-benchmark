@@ -32,14 +32,14 @@ func0000000000000002:
 	andi	a1, a2, 1
 	lui	a2, 1048573
 	bnez	a1, .LBB2_2
-	addiw	a1, a2, -629
+	addi	a1, a2, -629
 	bnez	a3, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addiw	a1, a2, -627
+	addi	a1, a2, -627
 	beqz	a3, .LBB2_4
 .LBB2_3:
-	addiw	a1, a2, -625
+	addi	a1, a2, -625
 .LBB2_4:
 	slli	a1, a1, 5
 	add	a0, a0, a1

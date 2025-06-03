@@ -17,13 +17,13 @@ func00000000000000ff:
 	or	a0, a0, a2
 	lui	a2, 123738
 	or	a0, a0, a1
-	addiw	a1, a2, 1981
+	addi	a1, a2, 1981
 	mul	a0, a0, a1
 	ret
 
 func00000000000000f0:
 	lui	a0, 123738
-	addiw	a0, a0, 1981
+	addi	a0, a0, 1981
 	slli	a0, a0, 24
 	mul	a0, a0, a1
 	ret

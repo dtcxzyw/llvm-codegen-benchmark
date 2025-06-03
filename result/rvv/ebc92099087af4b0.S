@@ -38,7 +38,7 @@ func0000000000000041:
 
 func0000000000000054:
 	lui	a0, 4
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
@@ -46,7 +46,7 @@ func0000000000000054:
 
 func0000000000000058:
 	lui	a0, 4
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0

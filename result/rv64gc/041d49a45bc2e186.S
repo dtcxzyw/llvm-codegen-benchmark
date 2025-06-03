@@ -174,7 +174,7 @@ func0000000000000018:
 	li	a2, 1560
 	bltu	a2, a0, .LBB21_2
 	lui	a0, 2
-	addiw	a0, a0, 1052
+	addi	a0, a0, 1052
 	ret
 .LBB21_2:
 	addiw	a0, a1, 956

@@ -21,7 +21,7 @@ func0000000000000006:
 .LBB1_2:
 	addi	a0, a0, 2
 	lui	a1, 349525
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	mul	a0, a0, a1
 	srli	a0, a0, 32
 	ret

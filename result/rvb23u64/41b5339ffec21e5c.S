@@ -6,7 +6,7 @@ func0000000000000408:
 	addi	a2, a2, 1024
 	addw	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, -1116
+	addi	a2, a2, -1116
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -19,7 +19,7 @@ func0000000000000448:
 	addi	a2, a2, 1024
 	addw	a1, a1, a2
 	lui	a2, 3
-	addiw	a2, a2, -1116
+	addi	a2, a2, -1116
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -40,7 +40,7 @@ func0000000000000c08:
 	snez	a2, a2
 	and	a0, a0, a2
 	lui	a2, 262144
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

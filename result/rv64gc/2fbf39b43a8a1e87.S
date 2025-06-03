@@ -21,7 +21,7 @@ func0000000000000e81:
 	addw	a1, a1, a2
 	lui	a2, 427847
 	sltiu	a1, a1, 24
-	addiw	a2, a2, 1345
+	addi	a2, a2, 1345
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -107,7 +107,7 @@ func000000000000018c:
 	addw	a1, a1, a2
 	lui	a2, 5
 	addi	a1, a1, -1
-	addiw	a2, a2, -480
+	addi	a2, a2, -480
 	snez	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
@@ -336,7 +336,7 @@ func0000000000000484:
 	addw	a1, a1, a2
 	lui	a2, 24414
 	sltiu	a1, a1, 10
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -356,7 +356,7 @@ func0000000000000554:
 	add	a1, a1, a2
 	lui	a2, 16
 	srliw	a1, a1, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	seqz	a1, a1
 	slt	a0, a2, a0
 	and	a0, a0, a1

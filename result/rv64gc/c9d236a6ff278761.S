@@ -21,7 +21,7 @@ func000000000000001e:
 	add	a1, a1, a2
 	lui	a2, 1
 	andi	a1, a1, 248
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	slli	a1, a1, 8
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -39,7 +39,7 @@ func0000000000000019:
 	add	a1, a1, a2
 	lui	a2, 1048324
 	slli	a1, a1, 58
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srli	a1, a1, 44
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -49,7 +49,7 @@ func000000000000000b:
 	add	a1, a1, a2
 	lui	a2, 1044544
 	slli	a1, a1, 58
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	srli	a1, a1, 40
 	and	a0, a0, a2
 	or	a0, a0, a1

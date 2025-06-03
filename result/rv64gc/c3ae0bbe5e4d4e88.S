@@ -24,7 +24,7 @@ func0000000000000040:
 	sll	a1, a2, a1
 	lui	a2, 4
 	add	a0, a0, a1
-	addiw	a1, a2, -1472
+	addi	a1, a2, -1472
 	add	a0, a0, a1
 	ret
 

@@ -19,7 +19,7 @@ func0000000000000101:
 	zext.h	a0, a0
 	lui	a2, 14
 	sltiu	a1, a1, 2
-	addiw	a2, a2, 333
+	addi	a2, a2, 333
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0

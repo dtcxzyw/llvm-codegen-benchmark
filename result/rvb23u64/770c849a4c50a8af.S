@@ -4,7 +4,7 @@ func0000000000000006:
 	addi	a2, a2, 1
 	and	a1, a1, a2
 	lui	a2, 322639
-	addiw	a2, a2, -945
+	addi	a2, a2, -945
 	add	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2
@@ -18,7 +18,7 @@ func000000000000000a:
 	sext.w	a1, a0
 	lui	a2, 149797
 	slti	a1, a1, -4
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	zext.w	a1, a0
@@ -39,7 +39,7 @@ func0000000000000008:
 	addi	a2, a2, 1536
 	addw	a0, a0, a2
 	lui	a2, 274878
-	addiw	a2, a2, -381
+	addi	a2, a2, -381
 	minu	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2
@@ -54,7 +54,7 @@ func000000000000002a:
 	sext.w	a1, a0
 	lui	a2, 149797
 	slti	a1, a1, -4
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	zext.w	a1, a0

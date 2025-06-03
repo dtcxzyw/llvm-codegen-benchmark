@@ -162,7 +162,7 @@ func0000000000000081:
 func0000000000000086:
 	sext.w	a3, a2
 	lui	a4, 419430
-	addiw	a4, a4, 1638
+	addi	a4, a4, 1638
 	sext.w	a0, a0
 	bltu	a3, a4, .LBB15_2
 	mv	a1, a2

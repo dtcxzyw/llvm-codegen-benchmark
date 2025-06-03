@@ -197,8 +197,8 @@ func0000000000000314:
 	lui	a3, 21094
 	addiw	a2, a2, -1024
 	and	a1, a1, a2
-	addiw	a2, a3, -1024
-	addiw	a3, a3, -1025
+	addi	a2, a3, -1024
+	addi	a3, a3, -1025
 	sltu	a1, a1, a2
 	sltu	a0, a3, a0
 	and	a0, a0, a1

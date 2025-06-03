@@ -13,11 +13,11 @@ func0000000000000100:
 
 func0000000000000154:
 	lui	a3, 8185
-	addiw	a3, a3, 547
+	addi	a3, a3, 547
 	slli	a3, a3, 7
 	mul	a2, a2, a3
 	lui	a3, 32768
-	addiw	a3, a3, -1875
+	addi	a3, a3, -1875
 	slli	a3, a3, 5
 	add	a0, a0, a2
 	mul	a1, a1, a3

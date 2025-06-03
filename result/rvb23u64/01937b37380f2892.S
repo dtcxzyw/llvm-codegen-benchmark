@@ -8,7 +8,7 @@ func0000000000000302:
 
 func0000000000000048:
 	lui	a3, 256
-	addiw	a3, a3, -32
+	addi	a3, a3, -32
 	xor	a2, a2, a3
 	seqz	a2, a2
 	sltiu	a1, a1, 32

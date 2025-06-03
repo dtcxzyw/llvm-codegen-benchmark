@@ -15,7 +15,7 @@ func0000000000000007:
 	vsll.vi	v10, v10, 24
 	lui	a0, 235216
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, -328
+	addi	a0, a0, -328
 	vxor.vx	v8, v8, a0
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000006:
 	vsll.vi	v10, v10, 16
 	lui	a0, 65541
 	vor.vv	v8, v10, v8
-	addiw	a0, a0, 768
+	addi	a0, a0, 768
 	vxor.vx	v8, v8, a0
 	ret
 

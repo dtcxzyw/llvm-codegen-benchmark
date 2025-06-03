@@ -25,7 +25,7 @@ func00000000000000ff:
 
 func00000000000000fe:
 	lui	a3, 1
-	addiw	a3, a3, -608
+	addi	a3, a3, -608
 	mul	a1, a1, a3
 	add	a1, a1, a2
 	sh1add	a0, a0, a1

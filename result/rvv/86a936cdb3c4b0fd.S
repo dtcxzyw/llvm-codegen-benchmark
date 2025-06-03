@@ -64,7 +64,7 @@ func0000000000000028:
 	vrsub.vx	v10, v8, a0
 	lui	a0, 131072
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -90,7 +90,7 @@ func0000000000000004:
 	vrsub.vi	v10, v8, 0
 	lui	a0, 24414
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -99,7 +99,7 @@ func0000000000000014:
 	vrsub.vi	v10, v8, 0
 	lui	a0, 45475
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -1085
+	addi	a0, a0, -1085
 	slli	a0, a0, 12
 	addi	a0, a0, -315
 	slli	a0, a0, 17

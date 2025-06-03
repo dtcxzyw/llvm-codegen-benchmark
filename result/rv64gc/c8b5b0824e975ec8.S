@@ -33,7 +33,7 @@ func00000000000001e1:
 	lui	a2, 16
 	add	a1, a1, a2
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	addi	a0, a0, -1

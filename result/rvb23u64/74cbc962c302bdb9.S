@@ -3,13 +3,13 @@ func0000000000000001:
 	lui	a2, 1024000
 	or	a0, a0, a1
 	lui	a1, 981696
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sext.w	a0, a0
 	slli	a2, a2, 16
 	addi	a2, a2, 1341
 	slli	a2, a2, 12
 	czero.eqz	a0, a2, a0
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret
 

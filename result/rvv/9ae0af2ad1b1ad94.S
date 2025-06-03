@@ -56,7 +56,7 @@ func0000000000000101:
 	vand.vi	v10, v10, 7
 	lui	a0, 4
 	vmseq.vi	v12, v10, 0
-	addiw	a0, a0, 31
+	addi	a0, a0, 31
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v8, v0, v10
 	vmand.mm	v0, v8, v12

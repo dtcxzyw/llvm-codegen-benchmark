@@ -16,7 +16,7 @@ func0000000000000000:
 func0000000000000020:
 	lui	a0, 1046001
 	lui	a1, %hi(.LCPI1_0)
-	addiw	a0, a0, 325
+	addi	a0, a0, 325
 	ld	a1, %lo(.LCPI1_0)(a1)
 	slli	a0, a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma

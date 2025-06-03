@@ -5,7 +5,7 @@ func0000000000000001:
 	vzext.vf2	v12, v9
 	vmv.v.i	v8, 0
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vmerge.vxm	v8, v8, a0, v0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v12, v8, v0

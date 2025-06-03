@@ -36,7 +36,7 @@ func00000000000000af:
 func0000000000000003:
 	addi	a1, a1, 16
 	lui	a2, 131072
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -12
@@ -45,7 +45,7 @@ func0000000000000003:
 func00000000000000c0:
 	addi	a1, a1, 1
 	lui	a2, 32
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 40

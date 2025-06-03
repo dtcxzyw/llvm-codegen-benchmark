@@ -14,7 +14,7 @@ func0000000000000007:
 	mv	a1, a0
 .LBB1_2:
 	lui	a0, 1
-	addiw	a0, a0, -2008
+	addi	a0, a0, -2008
 	mul	a0, a1, a0
 	ret
 

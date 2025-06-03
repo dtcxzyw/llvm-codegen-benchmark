@@ -15,7 +15,7 @@ func0000000000000008:
 
 func000000000000000c:
 	lui	a0, 65536
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vnmsac.vv	v8, v10, v12

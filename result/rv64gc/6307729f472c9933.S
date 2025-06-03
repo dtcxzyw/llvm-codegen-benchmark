@@ -23,7 +23,7 @@ func0000000000000002:
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	lui	a2, 262144
-	addiw	a2, a2, 176
+	addi	a2, a2, 176
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

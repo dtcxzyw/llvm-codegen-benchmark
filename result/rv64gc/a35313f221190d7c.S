@@ -18,11 +18,11 @@ func0000000000000024:
 func0000000000000008:
 	addw	a0, a0, a1
 	lui	a1, 24414
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	sltu	a0, a1, a0
 	lui	a1, 1024162
 	neg	a0, a0
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret
 
@@ -78,7 +78,7 @@ func0000000000000021:
 func0000000000000014:
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB9_2
 	li	a0, 4
 	ret

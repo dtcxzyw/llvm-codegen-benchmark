@@ -8,14 +8,14 @@ func0000000000000000:
 
 func000000000000000c:
 	lui	a1, 1046192
-	addiw	a1, a1, -761
+	addi	a1, a1, -761
 	slli	a1, a1, 10
 	mul	a0, a0, a1
 	ret
 
 func000000000000000f:
 	lui	a1, 175922
-	addiw	a1, a1, -571
+	addi	a1, a1, -571
 	mul	a0, a0, a1
 	ret
 

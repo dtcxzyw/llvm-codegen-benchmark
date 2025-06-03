@@ -30,7 +30,7 @@ func0000000000000038:
 	addi	a3, a2, -1805
 	addw	a1, a1, a3
 	li	a3, 609
-	addiw	a2, a2, -1806
+	addi	a2, a2, -1806
 	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
@@ -41,7 +41,7 @@ func0000000000000024:
 	lui	a2, 1048304
 	addw	a1, a1, a2
 	lui	a2, 1048305
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	sltu	a1, a1, a2
 	lui	a2, 272
 	czero.nez	a0, a0, a1
@@ -54,7 +54,7 @@ func0000000000000008:
 	addi	a3, a2, 1342
 	addw	a1, a1, a3
 	li	a3, 63
-	addiw	a2, a2, 1292
+	addi	a2, a2, 1292
 	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
@@ -65,7 +65,7 @@ func000000000000004a:
 	lui	a2, 4096
 	addw	a1, a1, a2
 	lui	a2, 8192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	slt	a1, a2, a1
 	czero.nez	a0, a0, a1
 	ret
@@ -73,7 +73,7 @@ func000000000000004a:
 func0000000000000061:
 	sext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	xor	a1, a1, a2
 	czero.eqz	a0, a0, a1
 	ret
@@ -91,7 +91,7 @@ func000000000000000a:
 	addiw	a1, a1, -1900
 	lui	a2, 1048575
 	slti	a1, a1, 1980
-	addiw	a2, a2, 216
+	addi	a2, a2, 216
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

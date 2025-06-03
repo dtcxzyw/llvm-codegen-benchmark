@@ -40,10 +40,10 @@ func0000000000000008:
 	li	a2, 52
 	lui	a0, 4
 	bltu	a2, a1, .LBB4_2
-	addiw	a0, a0, -138
+	addi	a0, a0, -138
 	ret
 .LBB4_2:
-	addiw	a0, a0, -10
+	addi	a0, a0, -10
 	ret
 
 func000000000000000c:

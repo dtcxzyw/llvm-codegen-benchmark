@@ -15,11 +15,11 @@ func0000000000000006:
 	li	a3, 1047
 	lui	a1, 1048571
 	beq	a2, a3, .LBB1_2
-	addiw	a1, a1, 352
+	addi	a1, a1, 352
 	add	a0, a0, a1
 	ret
 .LBB1_2:
-	addiw	a1, a1, 1664
+	addi	a1, a1, 1664
 	add	a0, a0, a1
 	ret
 

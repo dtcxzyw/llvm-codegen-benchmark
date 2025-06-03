@@ -9,7 +9,7 @@ func0000000000000008:
 
 func0000000000000001:
 	lui	a3, 1
-	addiw	a3, a3, 904
+	addi	a3, a3, 904
 	sub	a2, a3, a2
 	minu	a1, a2, a1
 	add	a0, a0, a1

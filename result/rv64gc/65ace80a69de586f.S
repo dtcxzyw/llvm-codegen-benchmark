@@ -8,7 +8,7 @@ func0000000000000019:
 	srai	a2, a2, 13
 	add	a2, a2, a3
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	bltz	a1, .LBB0_2
@@ -26,7 +26,7 @@ func000000000000001b:
 	srai	a2, a2, 13
 	add	a2, a2, a3
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	bltz	a1, .LBB1_2
@@ -44,7 +44,7 @@ func0000000000000018:
 	srai	a2, a2, 28
 	add	a2, a2, a3
 	lui	a3, 477
-	addiw	a3, a3, -667
+	addi	a3, a3, -667
 	slli	a3, a3, 11
 	mul	a2, a2, a3
 	sub	a1, a1, a2

@@ -13,7 +13,7 @@ func0000000000000302:
 	vmseq.vi	v12, v10, 0
 	lui	a0, 1048572
 	vmor.mm	v0, v12, v14
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

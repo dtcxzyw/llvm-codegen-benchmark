@@ -7,7 +7,7 @@ func0000000000000006:
 	ld	a2, %lo(.LCPI0_0)(a2)
 	and	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	add	a0, a0, a1
 	mulhu	a0, a0, a2
 	srli	a0, a0, 18

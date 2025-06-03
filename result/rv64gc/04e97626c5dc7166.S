@@ -5,10 +5,10 @@ func0000000000000044:
 	lui	t0, 61681
 	lui	t1, 4112
 	srli	a3, t2, 1
-	addiw	a1, a6, 1365
-	addiw	a4, a7, 819
-	addiw	a5, t0, -241
-	addiw	a2, t1, 257
+	addi	a1, a6, 1365
+	addi	a4, a7, 819
+	addi	a5, t0, -241
+	addi	a2, t1, 257
 	or	a6, t2, a3
 	slli	a3, a1, 32
 	add	a1, a1, a3

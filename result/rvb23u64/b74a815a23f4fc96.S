@@ -9,7 +9,7 @@ func0000000000000081:
 
 func0000000000000181:
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 20
 	li	a2, 1

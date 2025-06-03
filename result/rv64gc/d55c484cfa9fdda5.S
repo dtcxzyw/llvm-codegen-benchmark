@@ -5,7 +5,7 @@ func0000000000000009:
 	lui	a3, 838861
 	or	a1, a1, a2
 	slliw	a1, a1, 2
-	addiw	a2, a3, -820
+	addi	a2, a3, -820
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -31,7 +31,7 @@ func000000000000000d:
 	or	a1, a1, a2
 	lui	a2, 262144
 	slli	a1, a1, 2
-	addiw	a2, a2, -32
+	addi	a2, a2, -32
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

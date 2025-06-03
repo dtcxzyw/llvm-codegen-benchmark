@@ -70,14 +70,14 @@ func0000000000000038:
 	li	a2, 512
 	beq	a1, a2, .LBB6_2
 	lui	a1, 4
-	addiw	a1, a1, -193
+	addi	a1, a1, -193
 	and	a0, a0, a1
 	sltiu	a0, a0, 257
 	xori	a0, a0, 1
 	ret
 .LBB6_2:
 	lui	a1, 16
-	addiw	a1, a1, -193
+	addi	a1, a1, -193
 	and	a0, a0, a1
 	sltiu	a0, a0, 257
 	xori	a0, a0, 1

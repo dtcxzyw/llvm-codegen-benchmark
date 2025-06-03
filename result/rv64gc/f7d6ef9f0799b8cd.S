@@ -14,17 +14,17 @@ func0000000000000000:
 	or	a0, a0, a2
 	bnez	a1, .LBB1_2
 	lui	a1, 135168
-	addiw	a1, a1, -2046
+	addi	a1, a1, -2046
 	or	a0, a0, a1
 	lui	a1, 786432
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 2
 	or	a0, a0, a1
 	lui	a1, 786432
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 

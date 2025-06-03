@@ -20,7 +20,7 @@ func000000000000000f:
 	vxor.vv	v10, v10, v8
 	vmv.v.i	v8, 1
 	lui	a0, 442489
-	addiw	a0, a0, -1691
+	addi	a0, a0, -1691
 	vmacc.vx	v8, a0, v10
 	ret
 

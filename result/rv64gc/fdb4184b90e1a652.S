@@ -2,11 +2,11 @@ func000000000000003f:
 	slli	a1, a1, 32
 	lui	a2, 2575
 	srli	a1, a1, 32
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	slli	a2, a2, 13
 	mul	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -15,11 +15,11 @@ func000000000000001d:
 	slli	a1, a1, 32
 	lui	a2, 2575
 	srli	a1, a1, 32
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	slli	a2, a2, 13
 	mul	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -64,7 +64,7 @@ func0000000000000035:
 	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	lui	a2, 1048574
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -75,7 +75,7 @@ func0000000000000015:
 	srli	a1, a1, 32
 	mul	a1, a1, a2
 	lui	a2, 2
-	addiw	a2, a2, -969
+	addi	a2, a2, -969
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

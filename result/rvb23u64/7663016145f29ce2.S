@@ -61,7 +61,7 @@ func0000000000000005:
 	seqz	a1, a1
 	sub	a0, a0, a1
 	lui	a1, 1048572
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	add	a0, a0, a1
 	ret
 
@@ -85,7 +85,7 @@ func0000000000000020:
 
 func0000000000000033:
 	lui	a2, 122070
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	ret
@@ -124,7 +124,7 @@ func0000000000000021:
 	slli	a2, a2, 32
 	czero.nez	a1, a2, a1
 	lui	a2, 509272
-	addiw	a2, a2, 384
+	addi	a2, a2, 384
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

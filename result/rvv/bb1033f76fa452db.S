@@ -3,7 +3,7 @@ func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 1048320
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmerge.vim	v12, v12, 1, v0
 	vmsltu.vx	v0, v10, a0
 	vmerge.vvm	v8, v12, v8, v0
@@ -31,11 +31,11 @@ func0000000000000001:
 
 func0000000000000006:
 	lui	a0, 1048574
-	addiw	a1, a0, 1640
+	addi	a1, a0, 1640
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	li	a1, 17
-	addiw	a0, a0, 1370
+	addi	a0, a0, 1370
 	vmerge.vxm	v12, v12, a0, v0
 	vmslt.vx	v0, v10, a1
 	vmerge.vvm	v8, v12, v8, v0
@@ -43,8 +43,8 @@ func0000000000000006:
 
 func000000000000000a:
 	lui	a0, 1048575
-	addiw	a1, a0, 675
-	addiw	a0, a0, 670
+	addi	a1, a0, 675
+	addi	a0, a0, 670
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	vmerge.vxm	v12, v12, a0, v0

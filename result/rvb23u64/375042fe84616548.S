@@ -53,7 +53,7 @@ func0000000000000142:
 	or	a0, a0, a1
 	lui	a1, 230437
 	sext.w	a0, a0
-	addiw	a1, a1, 83
+	addi	a1, a1, 83
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -71,7 +71,7 @@ func00000000000001b0:
 	or	a0, a0, a1
 	lui	a1, 2441
 	sext.w	a0, a0
-	addiw	a1, a1, 1663
+	addi	a1, a1, 1663
 	sltu	a0, a1, a0
 	ret
 

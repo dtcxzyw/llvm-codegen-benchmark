@@ -36,7 +36,7 @@ func0000000000000021:
 
 func00000000000000ca:
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	blt	a2, a3, .LBB5_2
 	mv	a1, a3
 .LBB5_2:
@@ -45,7 +45,7 @@ func00000000000000ca:
 
 func00000000000000c6:
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	blt	a2, a3, .LBB6_2
 	mv	a1, a3
 .LBB6_2:

@@ -4,7 +4,7 @@ func0000000000000031:
 	sub	a1, a1, a0
 	lui	a0, 748983
 	sub	a2, a2, a3
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	add	a1, a1, a2
 	slli	a2, a0, 33
 	srli	a1, a1, 3

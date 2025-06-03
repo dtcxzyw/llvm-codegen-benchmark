@@ -63,7 +63,7 @@ func00000000000000f8:
 	srli	a1, a1, 48
 	mul	a0, a0, a1
 	lui	a1, 79063
-	addiw	a1, a1, -2048
+	addi	a1, a1, -2048
 	sltu	a0, a1, a0
 	ret
 

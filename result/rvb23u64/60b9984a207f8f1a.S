@@ -4,7 +4,7 @@ func0000000000000102:
 	lui	a2, 272
 	xor	a1, a1, a2
 	lui	a2, 1048305
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
@@ -35,7 +35,7 @@ func0000000000000048:
 	lui	a2, 272
 	xor	a1, a1, a2
 	lui	a2, 1048305
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

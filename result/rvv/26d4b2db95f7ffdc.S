@@ -3,7 +3,7 @@ func0000000000000014:
 	vmul.vv	v8, v10, v8
 	lui	a0, 8
 	vsll.vi	v8, v8, 3
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret

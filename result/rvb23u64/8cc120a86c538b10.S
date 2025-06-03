@@ -8,7 +8,7 @@ func0000000000000018:
 func0000000000000014:
 	fmv.x.w	a0, fa0
 	lui	a1, 208896
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

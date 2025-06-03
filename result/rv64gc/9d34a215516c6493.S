@@ -2,7 +2,7 @@ func00000000000000ef:
 	li	a3, 5
 	sub	a3, a3, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a3, a3, a2
 	and	a1, a1, a2
 	sub	a1, a1, a3

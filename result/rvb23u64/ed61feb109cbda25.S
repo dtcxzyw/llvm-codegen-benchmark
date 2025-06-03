@@ -28,10 +28,10 @@ func0000000000000180:
 	sext.w	a1, a1
 	lui	a2, 1048402
 	sltiu	a1, a1, 2
-	addiw	a2, a2, -1728
+	addi	a2, a2, -1728
 	czero.eqz	a1, a2, a1
 	lui	a2, 392
-	addiw	a2, a2, 1840
+	addi	a2, a2, 1840
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -40,10 +40,10 @@ func0000000000000183:
 	sext.w	a1, a1
 	lui	a2, 1048402
 	sltiu	a1, a1, 2
-	addiw	a2, a2, -1728
+	addi	a2, a2, -1728
 	czero.eqz	a1, a2, a1
 	lui	a2, 378
-	addiw	a2, a2, -352
+	addi	a2, a2, -352
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -138,7 +138,7 @@ func0000000000000080:
 	sext.w	a1, a1
 	lui	a2, 5
 	sltiu	a1, a1, 3
-	addiw	a2, a2, 960
+	addi	a2, a2, 960
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 68

@@ -4,7 +4,7 @@ func0000000000000193:
 	lui	a1, 335544
 	slti	a2, a2, 1570
 	zext.w	a0, a0
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	add	a0, a0, a2
@@ -41,9 +41,9 @@ func0000000000000513:
 	lui	a3, 1048540
 	add	a0, a0, a1
 	lui	a1, 235184
-	addiw	a3, a3, 1359
+	addi	a3, a3, 1359
 	zext.w	a0, a0
-	addiw	a1, a1, 1725
+	addi	a1, a1, 1725
 	sltu	a2, a2, a3
 	mul	a0, a0, a1
 	srli	a0, a0, 47

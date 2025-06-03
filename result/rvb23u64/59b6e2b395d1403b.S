@@ -3,7 +3,7 @@ func0000000000000009:
 	lui	a2, 838861
 	lui	a3, 209715
 	addi	a2, a2, -820
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	slli	a4, a2, 32
 	add.uw	a2, a2, a4
 	slli	a4, a3, 32
@@ -30,7 +30,7 @@ func0000000000000001:
 	lui	a2, 838861
 	lui	a3, 209715
 	addi	a2, a2, -820
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	slli	a4, a2, 32
 	add.uw	a2, a2, a4
 	slli	a4, a3, 32

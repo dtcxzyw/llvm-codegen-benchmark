@@ -12,7 +12,7 @@ func0000000000001210:
 	addiw	a2, a2, -1938
 	minu	a1, a1, a2
 	lui	a2, 1048575
-	addiw	a2, a2, 221
+	addi	a2, a2, 221
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

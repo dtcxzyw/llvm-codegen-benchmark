@@ -16,7 +16,7 @@ func0000000000000007:
 	li	a0, 128
 	vmv.v.x	v12, a0
 	lui	a0, 2
-	addiw	a0, a0, -1920
+	addi	a0, a0, -1920
 	vmerge.vxm	v12, v12, a0, v0
 	vand.vi	v10, v10, 8
 	vor.vv	v10, v12, v10

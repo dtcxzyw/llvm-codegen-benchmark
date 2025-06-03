@@ -13,7 +13,7 @@ func00000000000004c4:
 	slli	a1, a1, 56
 	lui	a2, 52429
 	srai	a1, a1, 56
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	addi	a1, a1, -48
 	sltiu	a1, a1, 10
 	slt	a0, a0, a2

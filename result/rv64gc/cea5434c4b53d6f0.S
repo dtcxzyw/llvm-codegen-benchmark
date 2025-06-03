@@ -1,7 +1,7 @@
 func0000000000000021:
 	lui	a3, 16
 	li	a4, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	slli	a4, a4, 11
 	beq	a1, a4, .LBB0_2
@@ -13,7 +13,7 @@ func0000000000000021:
 
 func0000000000000024:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a1, a1, a3
 	li	a4, 9
 	bltu	a1, a4, .LBB1_2

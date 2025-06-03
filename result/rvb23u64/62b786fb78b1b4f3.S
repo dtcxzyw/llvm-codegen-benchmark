@@ -1,7 +1,7 @@
 func0000000000000000:
 	lui	a2, 4
 	li	a3, 5
-	addiw	a2, a2, 423
+	addi	a2, a2, 423
 	bseti	a3, a3, 33
 	mul	a1, a1, a2
 	mulhu	a2, a1, a3
@@ -18,7 +18,7 @@ func0000000000000000:
 func0000000000000001:
 	lui	a2, 4
 	li	a3, 5
-	addiw	a2, a2, 423
+	addi	a2, a2, 423
 	bseti	a3, a3, 33
 	mul	a1, a1, a2
 	mulhu	a2, a1, a3

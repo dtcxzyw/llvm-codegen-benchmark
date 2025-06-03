@@ -3,7 +3,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 16
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	li	a0, -40
 	vadd.vx	v8, v8, a0
@@ -18,8 +18,7 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	li	a0, 1
-	slli	a0, a0, 36
+	bseti	a0, zero, 36
 	addi	a1, a0, -48
 	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -41,7 +40,7 @@ func0000000000000005:
 	.quad	9187201950435737470
 func000000000000000a:
 	lui	a0, 152146
-	addiw	a0, a0, 1317
+	addi	a0, a0, 1317
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
@@ -49,7 +48,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 106914
-	addiw	a0, a0, -1510
+	addi	a0, a0, -1510
 	vand.vx	v8, v8, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -85,7 +84,7 @@ func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 512
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	li	a0, -136
 	vadd.vx	v8, v8, a0

@@ -15,7 +15,7 @@ func0000000000000000:
 	lui	a3, 524288
 	and	a2, a2, a3
 	lui	a3, 921600
-	addiw	a3, a3, -1026
+	addi	a3, a3, -1026
 	czero.nez	a3, a3, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a3

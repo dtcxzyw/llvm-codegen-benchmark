@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a2, 4100
-	addiw	a2, a2, 17
+	addi	a2, a2, 17
 	bseti	a2, a2, 34
 	bseti	a2, a2, 44
 	bseti	a2, a2, 54
@@ -25,7 +25,7 @@ func0000000000000006:
 	add	a2, a2, a3
 	lui	a3, 16
 	srli	a2, a2, 15
-	addiw	a3, a3, -15
+	addi	a3, a3, -15
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	slli	a1, a1, 16
@@ -34,7 +34,7 @@ func0000000000000006:
 
 func0000000000000007:
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a2, a1, a2

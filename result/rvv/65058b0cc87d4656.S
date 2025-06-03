@@ -25,8 +25,7 @@ func00000000000000d8:
 	ret
 
 func0000000000000002:
-	li	a0, 1
-	slli	a0, a0, 41
+	bseti	a0, zero, 41
 	addi	a0, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

@@ -26,7 +26,7 @@ func00000000000000a1:
 
 func00000000000000a6:
 	lui	a3, 2
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	min	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 2

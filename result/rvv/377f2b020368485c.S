@@ -46,7 +46,7 @@ func000000000000000c:
 	vsext.vf2	v14, v12
 	lui	a0, 2
 	vmadd.vv	v14, v10, v8
-	addiw	a0, a0, -40
+	addi	a0, a0, -40
 	vadd.vx	v8, v14, a0
 	ret
 

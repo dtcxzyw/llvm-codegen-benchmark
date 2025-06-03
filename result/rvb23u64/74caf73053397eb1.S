@@ -32,7 +32,7 @@ func0000000000000020:
 	subw	a2, a2, a1
 	lui	a1, 815559
 	addiw	a2, a2, 9
-	addiw	a1, a1, 455
+	addi	a1, a1, 455
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 33

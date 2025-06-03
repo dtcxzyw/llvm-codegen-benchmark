@@ -14,7 +14,7 @@ func0000000000000028:
 	vsra.vi	v8, v8, 3
 	lui	a1, 838861
 	vsrl.vx	v10, v10, a0
-	addiw	a0, a1, -819
+	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -26,7 +26,7 @@ func0000000000000024:
 	vsrl.vi	v10, v10, 1
 	vsra.vi	v8, v8, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

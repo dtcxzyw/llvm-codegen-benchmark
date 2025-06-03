@@ -11,7 +11,7 @@ func0000000000000078:
 	vrsub.vi	v10, v8, 0
 	lui	a0, 244
 	vmax.vv	v8, v8, v10
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0
 	ret

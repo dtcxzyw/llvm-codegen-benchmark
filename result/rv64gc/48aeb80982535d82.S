@@ -51,7 +51,7 @@ func000000000000000c:
 	slli	a2, a2, 48
 	lui	a3, 5
 	srli	a2, a2, 48
-	addiw	a3, a3, -1719
+	addi	a3, a3, -1719
 	beq	a2, a3, .LBB6_2
 	mv	a1, a0
 .LBB6_2:

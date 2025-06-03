@@ -57,7 +57,7 @@ func000000000000000a:
 	slli	a1, a1, 32
 	lui	a2, 244141
 	srli	a1, a1, 32
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	slti	a0, a0, 0
@@ -67,10 +67,10 @@ func000000000000000a:
 func00000000000003f8:
 	sext.w	a1, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a0, a0, a2
 	lui	a2, 2575
-	addiw	a2, a2, -325
+	addi	a2, a2, -325
 	add	a0, a0, a1
 	slli	a2, a2, 13
 	sltu	a0, a2, a0
@@ -139,7 +139,7 @@ func0000000000000208:
 func00000000000002aa:
 	sext.w	a1, a1
 	lui	a2, 804435
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	slti	a0, a0, 100

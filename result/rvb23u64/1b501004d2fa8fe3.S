@@ -7,7 +7,7 @@ func0000000000000002:
 .LBB0_2:
 	fcvt.w.s	a1, fa5, rtz
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

@@ -41,7 +41,7 @@ func000000000000002a:
 	slli	a1, a1, 48
 	lui	a2, 5
 	srli	a1, a1, 49
-	addiw	a2, a2, -1755
+	addi	a2, a2, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 17
 	slt	a0, a1, a0

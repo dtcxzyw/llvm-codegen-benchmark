@@ -41,7 +41,7 @@ func0000000000000026:
 	mv	a0, a1
 .LBB4_2:
 	lui	a1, 786432
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	slt	a0, a0, a1
 	ret
 
@@ -90,7 +90,7 @@ func0000000000000021:
 	mv	a0, a1
 .LBB9_2:
 	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addi	a1, a1, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

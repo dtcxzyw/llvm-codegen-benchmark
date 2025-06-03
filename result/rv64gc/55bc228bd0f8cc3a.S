@@ -3,7 +3,7 @@ func000000000000000c:
 	addi	a3, a3, -1365
 	mulw	a2, a2, a3
 	lui	a3, 349525
-	addiw	a3, a3, 1366
+	addi	a3, a3, 1366
 	bltu	a2, a3, .LBB0_2
 	mv	a1, a0
 .LBB0_2:
@@ -15,7 +15,7 @@ func0000000000000001:
 	addi	a3, a3, -819
 	mulw	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 820
+	addi	a3, a3, 820
 	bltu	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

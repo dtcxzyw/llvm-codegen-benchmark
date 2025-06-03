@@ -9,7 +9,7 @@ func0000000000000004:
 	srai	a1, a1, 63
 	add	a0, a0, a1
 	lui	a1, 1046001
-	addiw	a1, a1, 325
+	addi	a1, a1, 325
 	slli	a1, a1, 13
 	mul	a0, a0, a1
 	ret

@@ -9,7 +9,7 @@ func0000000000000040:
 	vsub.vv	v10, v12, v10
 	lui	a0, 4096
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -4
+	addi	a0, a0, -4
 	vadd.vx	v8, v8, a0
 	ret
 

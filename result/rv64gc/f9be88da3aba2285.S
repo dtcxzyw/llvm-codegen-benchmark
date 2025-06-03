@@ -8,7 +8,7 @@ func000000000000000f:
 	srli	a1, a1, 32
 	sub	a1, a1, a0
 	lui	a0, 244141
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	mul	a0, a1, a0
 	ret
 

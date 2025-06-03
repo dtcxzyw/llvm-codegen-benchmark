@@ -3,7 +3,7 @@ func0000000000000061:
 	lui	a1, 786432
 	addi	a0, a0, -1
 	seqz	a0, a0
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 

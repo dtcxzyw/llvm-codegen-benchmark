@@ -43,7 +43,7 @@ func000000000000003f:
 
 func0000000000000030:
 	lui	a3, 2
-	addiw	a3, a3, -832
+	addi	a3, a3, -832
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

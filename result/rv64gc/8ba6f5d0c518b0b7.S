@@ -2,7 +2,7 @@ func000000000000001f:
 	slli	a1, a0, 48
 	lui	a2, 1
 	srli	a1, a1, 50
-	addiw	a2, a2, 1147
+	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
 	li	a2, 100
@@ -16,7 +16,7 @@ func0000000000000017:
 	slli	a1, a0, 48
 	lui	a2, 1
 	srli	a1, a1, 50
-	addiw	a2, a2, 1147
+	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
 	li	a2, 100

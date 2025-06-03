@@ -3,7 +3,7 @@ func000000000000000c:
 	addi	a3, a3, -1365
 	mulw	a2, a2, a3
 	lui	a3, 349525
-	addiw	a3, a3, 1366
+	addi	a3, a3, 1366
 	sltu	a2, a2, a3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
@@ -15,7 +15,7 @@ func0000000000000001:
 	addi	a3, a3, -819
 	mulw	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 820
+	addi	a3, a3, 820
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -25,7 +25,7 @@ func0000000000000001:
 func0000000000000014:
 	zext.w	a3, a2
 	lui	a4, 233017
-	addiw	a4, a4, -455
+	addi	a4, a4, -455
 	mul	a3, a3, a4
 	srli	a3, a3, 35
 	sh3add	a3, a3, a3
@@ -40,7 +40,7 @@ func0000000000000014:
 func0000000000000018:
 	zext.w	a3, a2
 	lui	a4, 149797
-	addiw	a4, a4, -1755
+	addi	a4, a4, -1755
 	mul	a3, a3, a4
 	srli	a3, a3, 32
 	subw	a4, a2, a3

@@ -35,7 +35,7 @@ func0000000000000030:
 	mulhu	a1, a2, a1
 	lui	a2, 72014
 	srli	a1, a1, 9
-	addiw	a2, a2, -2048
+	addi	a2, a2, -2048
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -48,7 +48,7 @@ func0000000000000020:
 	srli	a2, a0, 9
 	mulhu	a1, a2, a1
 	lui	a2, 1571
-	addiw	a2, a2, 667
+	addi	a2, a2, 667
 	srli	a1, a1, 11
 	slli	a2, a2, 9
 	mul	a1, a1, a2

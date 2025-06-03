@@ -1,7 +1,7 @@
 func0000000000000146:
 	sext.h	a0, a0
 	lui	a3, 1024162
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	add	a2, a2, a3
 	slt	a1, a1, a2
 	slti	a0, a0, 10

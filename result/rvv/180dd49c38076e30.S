@@ -21,7 +21,7 @@ func0000000000000000:
 	vand.vi	v12, v12, 1
 	lui	a0, 244
 	vmsne.vi	v0, v12, 0
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10

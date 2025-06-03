@@ -9,7 +9,7 @@ func0000000000000018:
 func0000000000000028:
 	sext.w	a3, a0
 	lui	a4, 8
-	addiw	a4, a4, -1262
+	addi	a4, a4, -1262
 	blt	a4, a3, .LBB1_2
 	neg	a1, a2
 .LBB1_2:

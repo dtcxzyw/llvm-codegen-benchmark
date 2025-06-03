@@ -25,7 +25,7 @@ func000000000000002a:
 	sext.w	a3, a1
 	lui	a4, 8
 	addi	a3, a3, -1
-	addiw	a4, a4, -1
+	addi	a4, a4, -1
 	seqz	a3, a3
 	slt	a2, a4, a2
 	and	a2, a2, a3

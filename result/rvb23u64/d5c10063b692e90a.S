@@ -80,7 +80,7 @@ func0000000000000008:
 	li	a2, -64
 	czero.nez	a1, a2, a1
 	lui	a2, 32768
-	addiw	a2, a2, 39
+	addi	a2, a2, 39
 	sltu	a0, a2, a0
 	li	a2, 664
 	addi	a1, a1, 600

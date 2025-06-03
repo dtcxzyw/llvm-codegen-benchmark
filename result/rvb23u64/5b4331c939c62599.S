@@ -1,7 +1,7 @@
 func0000000000000003:
 	or	a0, a0, a1
 	lui	a1, 1048514
-	addiw	a1, a1, -512
+	addi	a1, a1, -512
 	and	a0, a0, a1
 	bseti	a0, a0, 13
 	ret

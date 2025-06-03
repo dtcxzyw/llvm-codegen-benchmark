@@ -11,14 +11,14 @@ func0000000000000002:
 	srli	a1, a1, 48
 	or	a0, a0, a1
 	lui	a1, 32272
-	addiw	a1, a1, -2017
+	addi	a1, a1, -2017
 	and	a0, a0, a1
 	ret
 
 func0000000000000000:
 	slli	a0, a0, 48
 	lui	a1, 123768
-	addiw	a1, a1, -1615
+	addi	a1, a1, -1615
 	slli	a1, a1, 16
 	mulhu	a0, a0, a1
 	slli	a0, a0, 34

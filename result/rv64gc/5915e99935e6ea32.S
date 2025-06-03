@@ -53,7 +53,7 @@ func0000000000000028:
 func000000000000002a:
 	lui	a2, 16
 	slti	a0, a0, 2044
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	addi	a1, a1, -410
 	seqz	a1, a1
@@ -73,7 +73,7 @@ func0000000000000101:
 
 func0000000000000024:
 	lui	a2, 16
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	sltiu	a1, a1, 1025
 	seqz	a0, a0

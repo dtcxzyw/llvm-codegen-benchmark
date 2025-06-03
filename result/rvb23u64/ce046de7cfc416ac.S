@@ -133,7 +133,7 @@ func0000000000000210:
 	srliw	a1, a1, 7
 	lui	a2, 488281
 	sltiu	a1, a1, 675
-	addiw	a2, a2, 1023
+	addi	a2, a2, 1023
 	xori	a1, a1, 1
 	sltu	a0, a2, a0
 	or	a0, a0, a1

@@ -14,7 +14,7 @@ func000000000000006f:
 
 func000000000000007b:
 	lui	a3, 131072
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	and	a2, a2, a3
 	sh3add	a0, a0, a1
 	add	a0, a0, a2

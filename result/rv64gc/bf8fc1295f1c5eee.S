@@ -42,7 +42,7 @@ func0000000000000513:
 	lui	a3, 1048540
 	add	a0, a0, a1
 	lui	a1, 235184
-	addiw	a3, a3, 1359
+	addi	a3, a3, 1359
 	slli	a0, a0, 32
 	addi	a1, a1, 1725
 	sltu	a2, a2, a3

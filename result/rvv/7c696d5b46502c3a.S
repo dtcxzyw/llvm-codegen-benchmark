@@ -9,7 +9,7 @@ func000000000000000b:
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 244141
 	vsrl.vi	v10, v10, 11
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
@@ -25,7 +25,7 @@ func0000000000000003:
 	vmulhu.vx	v10, v8, a0
 	lui	a0, 244
 	vsrl.vi	v10, v10, 18
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0

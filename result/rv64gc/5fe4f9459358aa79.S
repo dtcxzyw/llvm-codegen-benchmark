@@ -49,7 +49,7 @@ func000000000000002e:
 	addi	a1, a1, -576
 	lui	a2, 1
 	slli	a1, a1, 48
-	addiw	a2, a2, -767
+	addi	a2, a2, -767
 	srli	a1, a1, 50
 	mul	a1, a1, a2
 	srli	a1, a1, 4

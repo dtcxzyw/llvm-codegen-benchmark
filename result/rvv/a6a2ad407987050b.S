@@ -17,7 +17,7 @@ func000000000000003f:
 	li	a0, 40
 	vwsll.vx	v12, v14, a0
 	lui	a0, 4096
-	addiw	a0, a0, 257
+	addi	a0, a0, 257
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

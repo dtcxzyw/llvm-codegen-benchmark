@@ -25,10 +25,10 @@ func0000000000000007:
 
 func0000000000000006:
 	lui	a2, 16
-	addiw	a2, a2, -129
+	addi	a2, a2, -129
 	and	a1, a1, a2
 	lui	a2, 9
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	beq	a1, a2, .LBB3_2
 	lui	a1, 5859
 	addi	a1, a1, 1536

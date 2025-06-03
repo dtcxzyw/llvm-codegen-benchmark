@@ -430,7 +430,7 @@ func000000000000114a:
 	sext.w	a2, a2
 	lui	a3, 244
 	or	a0, a0, a1
-	addiw	a1, a3, 576
+	addi	a1, a3, 576
 	sext.w	a0, a0
 	sltu	a1, a2, a1
 	slti	a0, a0, 0
@@ -539,7 +539,7 @@ func0000000000002984:
 	snez	a1, a1
 	and	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

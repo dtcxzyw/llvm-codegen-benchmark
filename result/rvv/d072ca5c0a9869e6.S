@@ -25,7 +25,7 @@ func00000000000000f8:
 	vwsll.vi	v10, v12, 24
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret

@@ -5,7 +5,7 @@ func0000000000000003:
 	lui	a1, 8256
 .LBB0_2:
 	lui	a2, 5
-	addiw	a2, a2, 223
+	addi	a2, a2, 223
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -15,14 +15,14 @@ func0000000000000002:
 	beqz	a1, .LBB1_2
 	li	a1, 1026
 	lui	a2, 262144
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 1024
 	lui	a2, 262144
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

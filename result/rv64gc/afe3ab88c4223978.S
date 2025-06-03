@@ -34,7 +34,7 @@ func000000000000001d:
 func000000000000001f:
 	addiw	a0, a0, 1
 	lui	a1, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	sub	a0, a1, a0
 	ret
 

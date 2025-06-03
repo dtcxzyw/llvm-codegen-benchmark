@@ -177,7 +177,7 @@ func0000000000000034:
 	andi	a1, a1, 8
 	lui	a2, 1
 	seqz	a1, a1
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

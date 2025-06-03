@@ -43,7 +43,7 @@ func000000000000003e:
 func000000000000001e:
 	add	a0, a0, a1
 	lui	a1, 30
-	addiw	a1, a1, -1214
+	addi	a1, a1, -1214
 	mul	a2, a0, a1
 	mulhu	a0, a0, a1
 	slli	a0, a0, 13

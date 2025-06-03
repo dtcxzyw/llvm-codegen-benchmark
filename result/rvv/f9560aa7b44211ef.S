@@ -4,7 +4,7 @@ func0000000000000000:
 	lui	a0, 1
 	vmsne.vi	v10, v10, 0
 	vmand.mm	v0, v0, v10
-	addiw	a0, a0, 770
+	addi	a0, a0, 770
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret

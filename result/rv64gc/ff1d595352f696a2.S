@@ -5,13 +5,13 @@ func0000000000000408:
 .LBB0_2:
 	add	a0, a0, a1
 	lui	a1, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000c68:
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	bltu	a3, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
@@ -33,7 +33,7 @@ func00000000000000a1:
 	.quad	5000000000000000000
 func0000000000000208:
 	lui	a3, 227374
-	addiw	a3, a3, -1329
+	addi	a3, a3, -1329
 	slli	a3, a3, 12
 	addi	a3, a3, -1575
 	slli	a3, a3, 18
@@ -52,7 +52,7 @@ func000000000000032a:
 .LBB4_2:
 	add	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	slt	a0, a1, a0
 	ret
 
@@ -85,7 +85,7 @@ func0000000000000338:
 .LBB7_2:
 	add	a0, a0, a1
 	lui	a1, 36
-	addiw	a1, a1, -1359
+	addi	a1, a1, -1359
 	sltu	a0, a1, a0
 	ret
 

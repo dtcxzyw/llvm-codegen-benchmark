@@ -1,7 +1,7 @@
 func0000000000000020:
 	sext.w	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	sltu	a2, a2, a3
 	or	a1, a1, a2
 	andi	a1, a1, 1
@@ -51,7 +51,7 @@ func000000000000000b:
 	ret
 .LBB3_2:
 	lui	a1, 6019
-	addiw	a1, a1, 551
+	addi	a1, a1, 551
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	ret

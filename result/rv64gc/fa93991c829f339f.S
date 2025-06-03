@@ -4,7 +4,7 @@ func0000000000000048:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -15,7 +15,7 @@ func0000000000000044:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -26,7 +26,7 @@ func0000000000000041:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -38,7 +38,7 @@ func0000000000000001:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -50,7 +50,7 @@ func0000000000000004:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -61,7 +61,7 @@ func0000000000000014:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -72,7 +72,7 @@ func0000000000000008:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -83,7 +83,7 @@ func0000000000000018:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -94,7 +94,7 @@ func0000000000000019:
 	srli	a1, a1, 56
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

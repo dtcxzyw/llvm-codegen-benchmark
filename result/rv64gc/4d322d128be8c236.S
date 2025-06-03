@@ -19,7 +19,7 @@ func000000000000001e:
 	srli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func000000000000000b:
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	lui	a1, 67392
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

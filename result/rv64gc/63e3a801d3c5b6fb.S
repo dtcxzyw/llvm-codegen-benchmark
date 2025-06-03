@@ -19,7 +19,7 @@ func0000000000000004:
 	lui	a1, 64
 	slli	a2, a2, 14
 	or	a0, a0, a2
-	addiw	a1, a1, 4
+	addi	a1, a1, 4
 	or	a0, a0, a1
 	ret
 

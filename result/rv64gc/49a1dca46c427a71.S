@@ -7,7 +7,7 @@ func0000000000000181:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 10486
-	addiw	a2, a2, -984
+	addi	a2, a2, -984
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -23,10 +23,10 @@ func0000000000000198:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 17476
-	addiw	a2, a2, 1091
+	addi	a2, a2, 1091
 	sltu	a1, a2, a1
 	lui	a2, 244141
-	addiw	a2, a2, -1537
+	addi	a2, a2, -1537
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
@@ -40,7 +40,7 @@ func0000000000000028:
 	srliw	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 104858
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	sltiu	a0, a0, 10
 	sltu	a1, a1, a2
 	not	a0, a0
@@ -56,7 +56,7 @@ func0000000000000034:
 	or	a1, a1, a2
 	lui	a2, 17476
 	srliw	a0, a0, 4
-	addiw	a2, a2, 1093
+	addi	a2, a2, 1093
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 225
 	and	a0, a0, a1

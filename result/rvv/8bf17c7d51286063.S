@@ -29,7 +29,7 @@ func0000000000000100:
 func00000000000001e0:
 	lui	a0, 298023
 	li	a1, 32
-	addiw	a0, a0, 917
+	addi	a0, a0, 917
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vsrl.vx	v12, v12, a1
@@ -40,7 +40,7 @@ func00000000000001e0:
 func0000000000000180:
 	lui	a0, 298023
 	li	a1, 32
-	addiw	a0, a0, 917
+	addi	a0, a0, 917
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	slli	a0, a0, 32

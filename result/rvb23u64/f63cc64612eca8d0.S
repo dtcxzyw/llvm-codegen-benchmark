@@ -9,11 +9,11 @@ func0000000000000118:
 func0000000000000102:
 	addiw	a1, a1, -1440
 	lui	a2, 8
-	addiw	a2, a2, -1025
+	addi	a2, a2, -1025
 	and	a0, a0, a2
 	lui	a2, 1
 	sltiu	a1, a1, 25
-	addiw	a2, a2, -1791
+	addi	a2, a2, -1791
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -40,7 +40,7 @@ func0000000000000048:
 	lui	a2, 786432
 	seqz	a1, a1
 	addw	a0, a0, a2
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -65,7 +65,7 @@ func00000000000028c6:
 	slt	a1, a1, a3
 	slt	a0, a0, a3
 	lui	a3, 8
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	slt	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

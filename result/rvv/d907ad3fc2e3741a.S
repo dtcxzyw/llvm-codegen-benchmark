@@ -10,7 +10,7 @@ func0000000000000001:
 	vmulhu.vx	v8, v8, a0
 	lui	a0, 1
 	vsrl.vi	v8, v8, 3
-	addiw	a0, a0, -496
+	addi	a0, a0, -496
 	vnmsub.vx	v8, a0, v10
 	ret
 
@@ -26,7 +26,7 @@ func0000000000000000:
 	vmulhu.vx	v8, v8, a0
 	lui	a0, 7699
 	vsrl.vi	v8, v8, 11
-	addiw	a0, a0, 896
+	addi	a0, a0, 896
 	vnmsub.vx	v8, a0, v10
 	ret
 

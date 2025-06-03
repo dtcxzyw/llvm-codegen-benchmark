@@ -18,7 +18,7 @@ func0000000000000010:
 
 func0000000000000015:
 	lui	a2, 1048572
-	addiw	a2, a2, 1301
+	addi	a2, a2, 1301
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1024

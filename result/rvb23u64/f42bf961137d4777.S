@@ -70,7 +70,7 @@ func0000000000000188:
 	sext.w	a0, a0
 	lui	a3, 524288
 	addi	a4, a3, 8
-	addiw	a3, a3, 4
+	addi	a3, a3, 4
 	addw	a2, a2, a4
 	sltu	a2, a2, a3
 	slt	a0, a0, a1

@@ -14,8 +14,7 @@ func0000000000000008:
 
 func0000000000000030:
 	slli	a2, a2, 2
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	sh2add	a0, a1, a0
@@ -24,8 +23,7 @@ func0000000000000030:
 
 func000000000000003c:
 	slli	a2, a2, 2
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	sh2add	a0, a1, a0
@@ -34,8 +32,7 @@ func000000000000003c:
 
 func0000000000000038:
 	slli	a2, a2, 2
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	sh2add	a0, a1, a0

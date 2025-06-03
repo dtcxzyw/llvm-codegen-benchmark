@@ -81,7 +81,7 @@ func000000000000002a:
 func0000000000000106:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -258
+	addi	a3, a3, -258
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -93,7 +93,7 @@ func0000000000000106:
 func0000000000000101:
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -258
+	addi	a3, a3, -258
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -116,7 +116,7 @@ func0000000000000081:
 func000000000000008a:
 	zext.h	a2, a2
 	lui	a3, 8
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

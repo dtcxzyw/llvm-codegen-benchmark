@@ -85,7 +85,7 @@ func0000000000000019:
 
 func00000000000000d8:
 	lui	a2, 512
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 21
 	sltu	a0, a1, a0
@@ -181,7 +181,7 @@ func0000000000000028:
 
 func0000000000000005:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 12
 	sltu	a0, a1, a0

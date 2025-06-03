@@ -146,9 +146,8 @@ func0000000000000e98:
 func0000000000000084:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	li	a0, 1
+	bseti	a0, zero, 33
 	vmsltu.vv	v14, v12, v8
-	slli	a0, a0, 33
 	addi	a0, a0, -4
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8

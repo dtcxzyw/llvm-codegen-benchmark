@@ -10,7 +10,7 @@ func0000000000000008:
 	slliw	a0, a0, 30
 	or	a0, a0, a1
 	lui	a1, 10486
-	addiw	a1, a1, -984
+	addi	a1, a1, -984
 	sltu	a0, a1, a0
 	ret
 

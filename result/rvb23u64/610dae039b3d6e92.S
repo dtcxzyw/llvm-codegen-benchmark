@@ -15,7 +15,7 @@ func0000000000000008:
 	sllw	a1, a1, a2
 	lui	a2, 512
 	add	a0, a0, a1
-	addiw	a1, a2, -1024
+	addi	a1, a2, -1024
 	and	a0, a0, a1
 	ret
 

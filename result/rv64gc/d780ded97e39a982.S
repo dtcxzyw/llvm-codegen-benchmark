@@ -18,7 +18,7 @@ func0000000000000020:
 	slli	a1, a1, 2
 	lui	a2, 5
 	addi	a1, a1, -4
-	addiw	a2, a2, 1536
+	addi	a2, a2, 1536
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a2

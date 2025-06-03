@@ -1,7 +1,7 @@
 func0000000000000024:
 	lui	a2, 4
 	li	a3, 5
-	addiw	a2, a2, 423
+	addi	a2, a2, 423
 	mul	a1, a1, a2
 	bseti	a2, a3, 33
 	mulhu	a2, a1, a2

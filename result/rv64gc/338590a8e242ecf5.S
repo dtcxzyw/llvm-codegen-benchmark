@@ -47,7 +47,7 @@ func0000000000000154:
 	slli	a1, a1, 6
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a1, a3, 576
+	addi	a1, a3, 576
 	mul	a0, a0, a1
 	ret
 

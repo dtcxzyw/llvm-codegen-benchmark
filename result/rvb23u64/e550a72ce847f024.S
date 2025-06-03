@@ -3,7 +3,7 @@ func0000000000000021:
 	zext.b	a1, a1
 	lui	a2, 1
 	seqz	a1, a1
-	addiw	a2, a2, -2027
+	addi	a2, a2, -2027
 	ori	a1, a1, 28
 	bseti	a1, a1, 11
 	czero.nez	a2, a2, a0

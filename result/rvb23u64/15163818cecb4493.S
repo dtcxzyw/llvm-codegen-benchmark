@@ -9,7 +9,7 @@ func00000000000000a1:
 func00000000000000a8:
 	srai	a0, a0, 2
 	lui	a1, 838861
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	li	a2, -127

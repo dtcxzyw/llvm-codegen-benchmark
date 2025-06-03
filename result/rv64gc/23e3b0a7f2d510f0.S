@@ -31,7 +31,7 @@ func0000000000000184:
 
 func0000000000000024:
 	lui	a3, 14
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	and	a2, a2, a3
 	li	a3, 27
 	slli	a3, a3, 11

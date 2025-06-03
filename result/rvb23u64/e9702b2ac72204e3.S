@@ -45,7 +45,7 @@ func0000000000000009:
 func0000000000000018:
 	andi	a2, a2, 1
 	lui	a3, 29
-	addiw	a3, a3, 1216
+	addi	a3, a3, 1216
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

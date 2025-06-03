@@ -14,8 +14,7 @@ func000000000000000c:
 
 func0000000000000030:
 	slli	a1, a1, 3
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -256
 	and	a1, a1, a2
 	add	a0, a0, a1

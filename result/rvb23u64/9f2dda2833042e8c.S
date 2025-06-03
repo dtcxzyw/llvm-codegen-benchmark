@@ -16,7 +16,7 @@ func000000000000004a:
 	lui	a1, 4096
 	addw	a0, a0, a1
 	lui	a1, 8192
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	li	a1, 20
 	czero.eqz	a0, a1, a0
@@ -50,7 +50,7 @@ func000000000000000c:
 func0000000000000028:
 	lui	a1, 1048551
 	addi	a2, a1, -1631
-	addiw	a1, a1, -1632
+	addi	a1, a1, -1632
 	addw	a0, a0, a2
 	sltu	a0, a0, a1
 	li	a1, 23

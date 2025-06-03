@@ -1,11 +1,11 @@
 func0000000000000042:
 	sext.w	a1, a1
 	lui	a3, 48
-	addiw	a4, a3, -256
+	addi	a4, a3, -256
 	and	a2, a2, a4
 	lui	a4, 32
-	addiw	a4, a4, 1024
-	addiw	a3, a3, 512
+	addi	a4, a4, 1024
+	addi	a3, a3, 512
 	xor	a1, a1, a3
 	xor	a2, a2, a4
 	seqz	a1, a1
@@ -19,7 +19,7 @@ func0000000000000058:
 	lui	a3, 256
 	xor	a1, a1, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	snez	a1, a1
 	addi	a2, a2, -1536
@@ -31,13 +31,13 @@ func0000000000000058:
 func0000000000000068:
 	sext.w	a1, a1
 	lui	a3, 65408
-	addiw	a3, a3, 255
+	addi	a3, a3, 255
 	and	a2, a2, a3
 	lui	a3, 62720
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a1, a1, a3
 	lui	a3, 62848
-	addiw	a3, a3, 13
+	addi	a3, a3, 13
 	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a0, a0, a1

@@ -10,7 +10,7 @@ func0000000000000084:
 	subw	a0, a0, a1
 	lui	a1, 1048568
 	addw	a0, a0, a1
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

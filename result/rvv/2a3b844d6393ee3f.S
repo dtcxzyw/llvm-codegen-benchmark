@@ -24,7 +24,7 @@ func0000000000000068:
 	lui	a0, 1571
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v14, v10
-	addiw	a0, a0, 667
+	addi	a0, a0, 667
 	slli	a0, a0, 9
 	vmadd.vx	v8, a0, v10
 	ret

@@ -35,7 +35,7 @@ func0000000000000010:
 	lui	a1, 1048568
 	addi	a2, a1, 512
 	addw	a0, a0, a2
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	sltu	a0, a0, a1
 	ret
 

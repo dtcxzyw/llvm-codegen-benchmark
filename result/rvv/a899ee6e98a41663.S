@@ -23,7 +23,7 @@ func0000000000000024:
 
 func00000000000000b8:
 	lui	a0, 1048571
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	vmsltu.vx	v0, v10, a0

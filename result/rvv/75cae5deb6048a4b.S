@@ -49,7 +49,7 @@ func0000000000000110:
 	lui	a0, 1048320
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 256
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

@@ -8,10 +8,10 @@ func0000000000000005:
 	srai	a2, a2, 13
 	add	a2, a2, a3
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	mul	a2, a2, a3
 	lui	a3, 1048540
-	addiw	a3, a3, 1360
+	addi	a3, a3, 1360
 	sub	a1, a1, a2
 	srai	a1, a1, 63
 	add	a0, a0, a3

@@ -10,7 +10,7 @@ func0000000000000007:
 func0000000000000003:
 	lui	a3, 240
 	andi	a1, a1, 1
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	slli	a1, a1, 13
 	slli	a3, a3, 12
 	addi	a3, a3, -1

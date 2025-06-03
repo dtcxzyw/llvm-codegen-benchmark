@@ -21,7 +21,7 @@ func000000000000000c:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	and	a1, a1, a2
 	addi	a1, a1, -16
 	snez	a1, a1

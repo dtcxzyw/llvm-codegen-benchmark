@@ -2,7 +2,7 @@ func000000000000006a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 6
-	addiw	a0, a0, 973
+	addi	a0, a0, 973
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	li	a0, 255

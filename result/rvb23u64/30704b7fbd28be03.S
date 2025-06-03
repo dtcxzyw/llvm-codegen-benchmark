@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a1, a1, 1
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	andi	a2, a2, -2048
 	bclri	a2, a2, 11
@@ -12,8 +12,7 @@ func0000000000000000:
 func000000000000000c:
 	andi	a1, a1, 1
 	addi	a2, a2, 15
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	czero.nez	a1, a2, a1

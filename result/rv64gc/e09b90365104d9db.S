@@ -8,7 +8,7 @@ func0000000000000005:
 	ret
 .LBB0_2:
 	lui	a0, 965810
-	addiw	a0, a0, -712
+	addi	a0, a0, -712
 	ret
 
 func0000000000000004:
@@ -21,7 +21,7 @@ func0000000000000004:
 	ret
 .LBB1_2:
 	lui	a0, 192535
-	addiw	a0, a0, 1788
+	addi	a0, a0, 1788
 	ret
 
 func0000000000000003:
@@ -43,6 +43,6 @@ func0000000000000007:
 	ret
 .LBB3_2:
 	lui	a0, 1045667
-	addiw	a0, a0, -599
+	addi	a0, a0, -599
 	ret
 

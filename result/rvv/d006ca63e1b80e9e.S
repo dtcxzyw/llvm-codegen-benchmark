@@ -5,7 +5,7 @@ func0000000000000024:
 	vsra.vi	v8, v8, 3
 	lui	a1, 699051
 	vsll.vi	v10, v10, 29
-	addiw	a1, a1, -1365
+	addi	a1, a1, -1365
 	vsra.vx	v10, v10, a0
 	slli	a0, a1, 32
 	add	a0, a0, a1

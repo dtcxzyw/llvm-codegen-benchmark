@@ -31,7 +31,7 @@ func00000000000001b8:
 	addw	a0, a0, a1
 	lui	a1, 244141
 	lui	a2, 804435
-	addiw	a1, a1, -1537
+	addi	a1, a1, -1537
 	sltu	a1, a1, a0
 	negw	a1, a1
 	addi	a2, a2, 1536
@@ -43,7 +43,7 @@ func000000000000002a:
 	addw	a0, a0, a1
 	lui	a1, 244
 	lui	a2, 1048332
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	slt	a1, a1, a0
 	negw	a1, a1
 	addi	a2, a2, -576
@@ -86,7 +86,7 @@ func0000000000000008:
 	addw	a0, a0, a1
 	lui	a1, 244
 	lui	a2, 1048332
-	addiw	a1, a1, 575
+	addi	a1, a1, 575
 	sltu	a1, a1, a0
 	negw	a1, a1
 	addi	a2, a2, -576

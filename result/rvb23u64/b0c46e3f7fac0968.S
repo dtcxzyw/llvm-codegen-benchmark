@@ -19,7 +19,7 @@ func0000000000000044:
 
 func000000000000006c:
 	lui	a3, 65536
-	addiw	a3, a3, -128
+	addi	a3, a3, -128
 	and	a2, a2, a3
 	mul	a1, a1, a2
 	xor	a0, a0, a1

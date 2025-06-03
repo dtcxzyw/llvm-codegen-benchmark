@@ -17,7 +17,7 @@ func0000000000000000:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 131072
-	addiw	a1, a1, 32
+	addi	a1, a1, 32
 	or	a0, a0, a1
 	ori	a0, a0, 16
 	ret
@@ -39,7 +39,7 @@ func0000000000000001:
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
 	lui	a1, 4
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	or	a0, a0, a1
 	ori	a0, a0, 128
 	ret

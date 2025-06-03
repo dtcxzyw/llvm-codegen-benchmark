@@ -21,7 +21,7 @@ func0000000000000023:
 	slliw	a0, a0, 6
 	lui	a2, 1024
 	sltiu	a1, a1, 17
-	addiw	a2, a2, -192
+	addi	a2, a2, -192
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

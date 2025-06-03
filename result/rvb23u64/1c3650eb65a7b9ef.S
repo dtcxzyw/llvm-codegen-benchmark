@@ -135,7 +135,7 @@ func0000000000000081:
 	li	a3, 2
 	sub	a3, a3, a2
 	lui	a2, 1
-	addiw	a2, a2, -895
+	addi	a2, a2, -895
 	sltu	a1, a1, a2
 	czero.nez	a1, a3, a1
 	xor	a0, a0, a1

@@ -9,7 +9,7 @@ func00000000000003b0:
 	add	a1, a1, a2
 	lui	a2, 2
 	add	a0, a0, a1
-	addiw	a1, a2, 276
+	addi	a1, a2, 276
 	add	a0, a0, a1
 	ret
 
@@ -20,7 +20,7 @@ func0000000000000330:
 	lui	a2, 8
 	add	a1, a1, a3
 	add	a0, a0, a1
-	addiw	a2, a2, 26
+	addi	a2, a2, 26
 	add	a0, a0, a2
 	ret
 

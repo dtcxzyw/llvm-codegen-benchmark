@@ -25,7 +25,7 @@ func0000000000000007:
 func0000000000000001:
 	andi	a2, a0, 1
 	lui	a0, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	and	a0, a0, a1
 	bnez	a2, .LBB2_2
 	li	a1, -44

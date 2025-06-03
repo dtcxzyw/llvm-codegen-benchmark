@@ -52,7 +52,7 @@ func0000000000000042:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 560295
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
@@ -61,7 +61,7 @@ func00000000000000f0:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret

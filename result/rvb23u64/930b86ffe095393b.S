@@ -4,7 +4,7 @@ func000000000000007c:
 	lui	a3, 305
 	sh2add	a1, a2, a1
 	sh2add	a0, a0, a1
-	addiw	a1, a3, 976
+	addi	a1, a3, 976
 	add	a0, a0, a1
 	ret
 
@@ -14,7 +14,7 @@ func000000000000004c:
 	lui	a3, 320
 	sh2add	a1, a2, a1
 	sh2add	a0, a0, a1
-	addiw	a1, a3, -928
+	addi	a1, a3, -928
 	add	a0, a0, a1
 	ret
 

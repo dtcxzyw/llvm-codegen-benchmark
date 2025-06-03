@@ -10,7 +10,7 @@ func0000000000000017:
 	lui	a2, 16
 	add	a0, a0, a1
 	addi	a0, a0, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 
@@ -29,7 +29,7 @@ func000000000000001f:
 	slli	a1, a1, 3
 	sub	a0, a0, a1
 	addi	a0, a0, 49
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000007:
 	lui	a2, 16
 	sub	a0, a0, a1
 	addi	a0, a0, 13
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 

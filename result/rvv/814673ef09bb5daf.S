@@ -4,7 +4,7 @@ func0000000000000018:
 	vmv.v.i	v10, 0
 	lui	a0, 9
 	vmerge.vim	v10, v10, 1, v0
-	addiw	a0, a0, -340
+	addi	a0, a0, -340
 	vor.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret

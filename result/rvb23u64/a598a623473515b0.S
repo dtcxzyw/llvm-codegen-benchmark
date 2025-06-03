@@ -38,7 +38,7 @@ func00000000000000c0:
 	add	a1, a1, a2
 	lui	a2, 8
 	sub	a0, a1, a0
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	add	a0, a0, a2
 	ret
 

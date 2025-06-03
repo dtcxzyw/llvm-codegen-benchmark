@@ -2,7 +2,7 @@
 	.quad	3353953467947191203
 func000000000000002a:
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	blt	a2, a3, .LBB0_2
 	mv	a2, a3
 .LBB0_2:
@@ -22,7 +22,7 @@ func000000000000002a:
 
 func0000000000000020:
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	blt	a2, a3, .LBB1_2
 	mv	a2, a3
 .LBB1_2:

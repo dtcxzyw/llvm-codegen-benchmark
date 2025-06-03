@@ -234,7 +234,7 @@ func000000000000014a:
 func0000000000000148:
 	sext.w	a2, a2
 	lui	a3, 2441
-	addiw	a3, a3, 1664
+	addi	a3, a3, 1664
 	slt	a2, a3, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2
@@ -316,7 +316,7 @@ func00000000000000c5:
 func0000000000000198:
 	sext.w	a2, a2
 	lui	a3, 320757
-	addiw	a3, a3, 842
+	addi	a3, a3, 842
 	xor	a2, a2, a3
 	snez	a2, a2
 	sltu	a0, a1, a0

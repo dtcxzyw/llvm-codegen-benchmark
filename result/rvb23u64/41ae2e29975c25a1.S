@@ -2,7 +2,7 @@ func0000000000000001:
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 12300
-	addiw	a2, a2, 44
+	addi	a2, a2, 44
 	xor	a1, a1, a2
 	li	a2, 24
 	czero.nez	a1, a2, a1
@@ -16,7 +16,7 @@ func0000000000000014:
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 4
-	addiw	a2, a2, -1023
+	addi	a2, a2, -1023
 	sltu	a1, a1, a2
 	li	a2, 944
 	czero.nez	a1, a2, a1

@@ -54,11 +54,11 @@ func000000000000000c:
 	vmv1r.v	v9, v0
 	vmseq.vi	v0, v8, 0
 	lui	a0, 2
-	addiw	a1, a0, 400
+	addi	a1, a0, 400
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a1
-	addiw	a1, a0, 392
-	addiw	a0, a0, 396
+	addi	a1, a0, 392
+	addi	a0, a0, 396
 	vmerge.vxm	v10, v10, a1, v0
 	vmv.v.x	v12, a0
 	vmv1r.v	v0, v9

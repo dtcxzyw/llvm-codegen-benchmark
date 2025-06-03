@@ -19,8 +19,7 @@ func0000000000000061:
 	ret
 
 func0000000000000081:
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a1, a1, a2

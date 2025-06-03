@@ -4,7 +4,7 @@ func00000000000001e1:
 	lui	a1, 196384
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addiw	a1, a1, 274
+	addi	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -17,7 +17,7 @@ func00000000000001e4:
 	lui	a0, 8
 	or	a1, a1, a2
 	sext.w	a1, a1
-	addiw	a2, a0, 1132
+	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB1_2
 	li	a0, 1131
 .LBB1_2:

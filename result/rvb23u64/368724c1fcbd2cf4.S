@@ -53,7 +53,7 @@ func000000000000028c:
 	lui	a2, 524032
 	and	a1, a1, a2
 	lui	a2, 27392
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -116,7 +116,7 @@ func0000000000000294:
 func0000000000000314:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	and	a1, a1, a2
 	sltiu	a1, a1, 1281
 	xori	a1, a1, 1

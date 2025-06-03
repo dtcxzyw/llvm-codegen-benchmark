@@ -19,7 +19,7 @@ func0000000000006070:
 func0000000000004210:
 	maxu	a1, a1, a2
 	lui	a2, 1
-	addiw	a3, a2, -2
+	addi	a3, a2, -2
 	sltu	a1, a3, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1

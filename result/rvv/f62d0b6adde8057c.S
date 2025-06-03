@@ -4,7 +4,7 @@ func000000000000000a:
 	li	a0, 63
 	lui	a1, 748983
 	vmv.v.x	v10, a0
-	addiw	a0, a1, -585
+	addi	a0, a1, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	li	a1, -57

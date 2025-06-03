@@ -18,7 +18,7 @@ func0000000000000006:
 func0000000000000024:
 	addiw	a1, a0, -16
 	lui	a2, 4
-	addiw	a2, a2, -15
+	addi	a2, a2, -15
 	sltu	a1, a1, a2
 	li	a2, 1000
 	czero.nez	a2, a2, a1

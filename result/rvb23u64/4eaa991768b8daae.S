@@ -2,7 +2,7 @@ func0000000000000001:
 	add	a1, a1, a2
 	lui	a2, 16
 	srli	a1, a1, 4
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	lui	a2, 65520
 	and	a0, a0, a2
@@ -13,7 +13,7 @@ func000000000000000d:
 	add	a1, a1, a2
 	lui	a2, 61440
 	srli	a1, a1, 4
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2

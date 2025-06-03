@@ -4,7 +4,7 @@ func000000000000000c:
 	add	a1, a1, a2
 	lui	a2, 8
 	add.uw	a0, a1, a0
-	addiw	a1, a2, 1704
+	addi	a1, a2, 1704
 	add	a0, a0, a1
 	ret
 

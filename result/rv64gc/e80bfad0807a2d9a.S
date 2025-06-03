@@ -20,14 +20,14 @@ func0000000000000004:
 	andi	a1, a1, 1
 	lui	a0, 7
 	bnez	a1, .LBB1_2
-	addiw	a1, a0, -1941
-	addiw	a0, a0, -1851
+	addi	a1, a0, -1941
+	addi	a0, a0, -1851
 	li	a3, 5
 	bgeu	a2, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addiw	a1, a0, -1945
-	addiw	a0, a0, -1855
+	addi	a1, a0, -1945
+	addi	a0, a0, -1855
 	li	a3, 5
 	bltu	a2, a3, .LBB1_4
 .LBB1_3:

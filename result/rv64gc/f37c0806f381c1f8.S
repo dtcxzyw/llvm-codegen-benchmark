@@ -24,7 +24,7 @@ func0000000000000042:
 func0000000000000058:
 	lui	a3, 4096
 	xor	a0, a0, a1
-	addiw	a3, a3, 3
+	addi	a3, a3, 3
 	and	a2, a2, a3
 	seqz	a1, a2
 	snez	a0, a0

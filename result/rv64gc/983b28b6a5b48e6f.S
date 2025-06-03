@@ -46,13 +46,13 @@ func0000000000000073:
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 225
-	addiw	a1, a1, 1284
+	addi	a1, a1, 1284
 	add	a0, a0, a1
 	ret
 
 func0000000000000003:
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 17
 	andi	a1, a1, -8
@@ -72,7 +72,7 @@ func000000000000002f:
 	slli	a1, a1, 2
 	lui	a2, 256
 	addi	a1, a1, -8
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	andi	a1, a1, -8
 	add	a0, a0, a2
 	add	a0, a0, a1

@@ -1,6 +1,6 @@
 func00000000000001ed:
 	lui	a2, 24
-	addiw	a2, a2, 1696
+	addi	a2, a2, 1696
 	mul	a1, a1, a2
 	lui	a2, 512
 	add	a1, a1, a2
@@ -25,7 +25,7 @@ func000000000000000f:
 
 func00000000000000a0:
 	lui	a2, 20
-	addiw	a2, a2, 1523
+	addi	a2, a2, 1523
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a1, a1, a2
@@ -35,7 +35,7 @@ func00000000000000a0:
 
 func00000000000000a1:
 	lui	a2, 4
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a1, a1, a2
@@ -45,7 +45,7 @@ func00000000000000a1:
 
 func00000000000001ef:
 	lui	a2, 5793
-	addiw	a2, a2, -1792
+	addi	a2, a2, -1792
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a1, a1, a2

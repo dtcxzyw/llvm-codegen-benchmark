@@ -3,7 +3,7 @@ func0000000000000061:
 	or	a1, a1, a2
 	lui	a2, 33825
 	snez	a0, a0
-	addiw	a2, a2, 133
+	addi	a2, a2, 133
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	zext.w	a1, a0

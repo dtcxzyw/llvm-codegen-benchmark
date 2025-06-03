@@ -2,7 +2,7 @@ func000000000000000c:
 	srliw	a1, a1, 6
 	sh3add	a0, a1, a0
 	lui	a1, 65
-	addiw	a1, a1, -520
+	addi	a1, a1, -520
 	add	a0, a0, a1
 	ret
 

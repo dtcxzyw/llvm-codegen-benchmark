@@ -2,7 +2,7 @@ func0000000000000005:
 	andi	a0, a0, 2047
 	lui	a1, 349525
 	addi	a0, a0, -1
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	srliw	a2, a0, 1
 	or	a0, a0, a2
 	srliw	a2, a0, 2
@@ -17,7 +17,7 @@ func0000000000000005:
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a0, a0, a1
 	and	a1, a0, a2
 	srli	a0, a0, 2
@@ -38,7 +38,7 @@ func0000000000000001:
 	andi	a0, a0, -2
 	lui	a1, 349525
 	addiw	a0, a0, 8
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	srliw	a2, a0, 1
 	or	a0, a0, a2
 	srliw	a2, a0, 2
@@ -53,7 +53,7 @@ func0000000000000001:
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addiw	a2, a2, 819
+	addi	a2, a2, 819
 	sub	a0, a0, a1
 	and	a1, a0, a2
 	srli	a0, a0, 2

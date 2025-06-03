@@ -111,7 +111,7 @@ func0000000000000c68:
 
 func0000000000000a2a:
 	lui	a0, 122
-	addiw	a0, a0, 288
+	addi	a0, a0, 288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	vmv.v.i	v10, 0
@@ -160,7 +160,7 @@ func000000000000046c:
 
 func000000000000086c:
 	lui	a0, 4
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0

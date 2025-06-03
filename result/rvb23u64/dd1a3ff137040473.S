@@ -54,10 +54,10 @@ func0000000000000018:
 	zext.h	a0, a0
 	lui	a1, 1048555
 	sltiu	a0, a0, 301
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	czero.eqz	a0, a1, a0
 	lui	a1, 6019
-	addiw	a1, a1, 551
+	addi	a1, a1, 551
 	slli	a1, a1, 7
 	add	a0, a0, a1
 	ret

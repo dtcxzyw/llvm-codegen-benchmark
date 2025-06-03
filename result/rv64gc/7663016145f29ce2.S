@@ -73,7 +73,7 @@ func0000000000000005:
 	seqz	a1, a1
 	sub	a0, a0, a1
 	lui	a1, 1048572
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	add	a0, a0, a1
 	ret
 
@@ -100,7 +100,7 @@ func0000000000000033:
 	seqz	a1, a1
 	lui	a2, 122070
 	addi	a1, a1, -1
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -141,7 +141,7 @@ func0000000000000021:
 	li	a2, 124
 	bltu	a2, a1, .LBB17_2
 	lui	a1, 509272
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	add	a0, a0, a1
 	ret
 .LBB17_2:

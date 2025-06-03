@@ -2,7 +2,7 @@ func000000000000000f:
 	add.uw	a1, a2, a1
 	lui	a2, 128
 	slli	a1, a1, 19
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -45,7 +45,7 @@ func0000000000000007:
 
 func000000000000000e:
 	lui	a3, 128
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	or	a1, a1, a2
 	slli	a1, a1, 5

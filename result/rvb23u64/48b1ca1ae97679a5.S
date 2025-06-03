@@ -29,7 +29,7 @@ func0000000000000003:
 	czero.eqz	a0, a2, a0
 	lui	a2, 256
 	or	a0, a0, a1
-	addiw	a1, a2, -128
+	addi	a1, a2, -128
 	or	a0, a0, a1
 	ret
 

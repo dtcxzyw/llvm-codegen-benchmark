@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a3, 1024
-	addiw	a3, a3, 321
+	addi	a3, a3, 321
 	and	a2, a2, a3
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

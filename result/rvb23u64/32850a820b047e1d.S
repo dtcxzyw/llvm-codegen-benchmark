@@ -5,7 +5,7 @@ func00000000000000f0:
 	lui	a3, 4
 	add	a0, a0, a2
 	sh3add	a0, a1, a0
-	addiw	a1, a3, 1328
+	addi	a1, a3, 1328
 	add	a0, a0, a1
 	ret
 

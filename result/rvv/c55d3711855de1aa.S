@@ -13,7 +13,7 @@ func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsrl.vx	v8, v8, a0
 	lui	a0, 423516
-	addiw	a0, a0, 1939
+	addi	a0, a0, 1939
 	vmul.vx	v8, v8, a0
 	bseti	a0, zero, 32
 	vadd.vx	v8, v8, a0, v0.t

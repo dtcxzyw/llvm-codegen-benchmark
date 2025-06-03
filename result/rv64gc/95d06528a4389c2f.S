@@ -2,11 +2,11 @@ func0000000000000000:
 	andi	a2, a1, 1
 	lui	a1, 8
 	bnez	a2, .LBB0_2
-	addiw	a1, a1, -7
+	addi	a1, a1, -7
 	sub	a0, a1, a0
 	ret
 .LBB0_2:
-	addiw	a1, a1, -11
+	addi	a1, a1, -11
 	sub	a0, a1, a0
 	ret
 

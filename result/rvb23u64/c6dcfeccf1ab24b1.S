@@ -2,7 +2,7 @@ func0000000000000410:
 	lui	a3, 786432
 	lui	a4, 262144
 	sltu	a1, a4, a1
-	addiw	a4, a3, -1
+	addi	a4, a3, -1
 	add	a2, a2, a4
 	sltu	a2, a2, a3
 	or	a0, a0, a1
@@ -14,7 +14,7 @@ func0000000000000808:
 	srli	a1, a1, 5
 	or	a0, a0, a2
 	lui	a2, 1048547
-	addiw	a2, a2, -257
+	addi	a2, a2, -257
 	srli	a2, a2, 5
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -23,10 +23,10 @@ func0000000000000808:
 
 func0000000000000208:
 	lui	a3, 2
-	addiw	a3, a3, -48
+	addi	a3, a3, -48
 	xor	a2, a2, a3
 	lui	a3, 1048574
-	addiw	a3, a3, 42
+	addi	a3, a3, 42
 	add	a1, a1, a3
 	seqz	a2, a2
 	or	a0, a0, a2

@@ -13,7 +13,7 @@ func0000000000000002:
 	vmseq.vi	v0, v10, 0
 	vand.vx	v10, v12, a0
 	lui	a0, 786930
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 16
 	addi	a0, a0, 127
 	vand.vx	v8, v8, a0

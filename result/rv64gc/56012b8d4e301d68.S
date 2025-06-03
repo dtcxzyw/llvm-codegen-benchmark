@@ -11,7 +11,7 @@ func0000000000000001:
 func0000000000000003:
 	srai	a0, a0, 1
 	lui	a1, 1048575
-	addiw	a1, a1, -617
+	addi	a1, a1, -617
 	sub	a0, a1, a0
 	ret
 

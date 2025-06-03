@@ -17,11 +17,11 @@ func0000000000000006:
 func0000000000000004:
 	srli	a1, a1, 1
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	and	a1, a1, a2
 	slli	a2, a3, 32
 	add	a0, a0, a1

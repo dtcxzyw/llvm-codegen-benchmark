@@ -20,7 +20,7 @@ func00000000000003ff:
 	add	a0, a0, a1
 	lui	a1, 5142
 	add	a0, a0, a2
-	addiw	a1, a1, 175
+	addi	a1, a1, 175
 	slli	a1, a1, 13
 	addi	a1, a1, 2041
 	add	a0, a0, a1
@@ -31,7 +31,7 @@ func00000000000001fc:
 	add	a0, a0, a1
 	lui	a1, 5142
 	add	a0, a0, a2
-	addiw	a1, a1, 175
+	addi	a1, a1, 175
 	slli	a1, a1, 13
 	addi	a1, a1, 2041
 	add	a0, a0, a1

@@ -6,7 +6,7 @@ func0000000000000000:
 .LBB0_2:
 	sext.w	a0, a2
 	lui	a1, 541201
-	addiw	a1, a1, -1981
+	addi	a1, a1, -1981
 	mul	a0, a0, a1
 	srli	a0, a0, 32
 	add	a0, a0, a2

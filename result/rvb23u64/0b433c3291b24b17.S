@@ -21,7 +21,7 @@ func000000000000007e:
 	slliw	a1, a1, 5
 	or	a1, a1, a2
 	lui	a2, 319554
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

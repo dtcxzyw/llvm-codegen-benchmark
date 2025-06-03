@@ -62,7 +62,7 @@ func0000000000003021:
 	lui	a3, 15
 	snez	a2, a2
 	xori	a1, a1, 34
-	addiw	a3, a3, 390
+	addi	a3, a3, 390
 	xor	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0

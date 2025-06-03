@@ -1,6 +1,6 @@
 func000000000000000a:
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmin.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
@@ -8,7 +8,7 @@ func000000000000000a:
 
 func0000000000000006:
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmin.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10

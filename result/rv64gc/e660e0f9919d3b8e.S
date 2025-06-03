@@ -13,7 +13,7 @@ func0000000000000002:
 	addi	a1, a1, -129
 	addw	a0, a0, a1
 	lui	a1, 526344
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	xor	a0, a0, a1
 	ret
 

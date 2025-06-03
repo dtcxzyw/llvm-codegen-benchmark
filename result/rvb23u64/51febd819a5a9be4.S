@@ -104,10 +104,10 @@ func0000000000000010:
 func000000000000002a:
 	slti	a1, a1, 0
 	lui	a2, 1048534
-	addiw	a2, a2, -1248
+	addi	a2, a2, -1248
 	czero.eqz	a1, a2, a1
 	lui	a2, 1048565
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

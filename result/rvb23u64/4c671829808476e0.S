@@ -26,7 +26,7 @@ func000000000000000a:
 	bclri	a1, a1, 29
 	lui	a2, 65536
 	bclri	a1, a1, 30
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sext.w	a3, a1
 	slt	a2, a2, a3
 	czero.nez	a1, a1, a2

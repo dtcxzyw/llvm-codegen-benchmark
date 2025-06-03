@@ -8,14 +8,14 @@ func0000000000000141:
 	addi	a1, a1, -585
 	mulw	a0, a0, a1
 	lui	a1, 149797
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000101:
 	sext.w	a2, a1
 	lui	a3, 244141
-	addiw	a3, a3, -1537
+	addi	a3, a3, -1537
 	bltu	a3, a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -26,7 +26,7 @@ func0000000000000101:
 	srliw	a0, a0, 6
 	or	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 199
+	addi	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 

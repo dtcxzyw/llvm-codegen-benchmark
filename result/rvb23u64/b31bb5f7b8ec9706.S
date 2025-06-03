@@ -1,6 +1,6 @@
 func0000000000000003:
 	lui	a1, 1
-	addiw	a2, a1, 7
+	addi	a2, a1, 7
 	add	a0, a0, a2
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11

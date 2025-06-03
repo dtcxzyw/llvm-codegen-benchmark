@@ -35,7 +35,7 @@ func00000000000000a4:
 	vsub.vv	v10, v10, v12
 	lui	a0, 384
 	vmsleu.vv	v12, v10, v8
-	addiw	a0, a0, -23
+	addi	a0, a0, -23
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v12
 	ret

@@ -22,7 +22,7 @@ func0000000000000008:
 
 func000000000000000e:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sll	a2, a3, a2
 	mul	a0, a0, a1
 	and	a0, a0, a2

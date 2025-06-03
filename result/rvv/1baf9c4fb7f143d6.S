@@ -14,7 +14,7 @@ func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 17
 	lui	a0, 262144
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 17
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0

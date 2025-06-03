@@ -17,7 +17,7 @@ func0000000000000030:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	lui	a2, 189
-	addiw	a2, a2, -176
+	addi	a2, a2, -176
 	add	a0, a0, a2
 	li	a2, 123
 	mul	a1, a1, a2
@@ -25,7 +25,7 @@ func0000000000000030:
 	ret
 .LBB1_2:
 	lui	a2, 378
-	addiw	a2, a2, -352
+	addi	a2, a2, -352
 	add	a0, a0, a2
 	li	a2, 123
 	mul	a1, a1, a2

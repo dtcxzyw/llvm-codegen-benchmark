@@ -26,7 +26,7 @@ func000000000000000c:
 	srli	a2, a2, 2
 	and	a1, a1, a2
 	lui	a2, 64
-	addiw	a2, a2, -4
+	addi	a2, a2, -4
 	sub	a0, a0, a2
 	sub	a0, a1, a0
 	ret

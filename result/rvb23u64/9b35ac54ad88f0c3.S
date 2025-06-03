@@ -1,7 +1,7 @@
 func0000000000000061:
 	addi	a1, a1, 2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
@@ -14,7 +14,7 @@ func0000000000000061:
 func0000000000000041:
 	addi	a1, a1, 2
 	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
@@ -28,7 +28,7 @@ func00000000000003c1:
 	addi	a1, a1, 80
 	lui	a2, 838861
 	srli	a1, a1, 4
-	addiw	a2, a2, -819
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2

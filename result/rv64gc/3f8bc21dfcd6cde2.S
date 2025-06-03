@@ -8,7 +8,7 @@ func0000000000000008:
 
 func000000000000000b:
 	lui	a3, 8
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	seqz	a2, a2
 	or	a0, a0, a1

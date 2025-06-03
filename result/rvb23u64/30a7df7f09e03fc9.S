@@ -26,7 +26,7 @@ func000000000000028a:
 	subw	a0, a0, a1
 	lui	a1, 65536
 	addw	a0, a0, a2
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

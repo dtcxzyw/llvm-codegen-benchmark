@@ -72,7 +72,7 @@ func0000000000000301:
 	lui	a2, 2
 	srli	a0, a0, 48
 	sltiu	a1, a1, 6
-	addiw	a2, a2, -1639
+	addi	a2, a2, -1639
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0

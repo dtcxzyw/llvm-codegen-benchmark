@@ -1,7 +1,7 @@
 func000000000000000d:
 	addiw	a1, a1, 299
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 39
@@ -15,7 +15,7 @@ func000000000000000d:
 func0000000000000020:
 	addiw	a1, a1, -1
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 39
@@ -29,7 +29,7 @@ func0000000000000020:
 func0000000000000024:
 	addiw	a1, a1, -13
 	lui	a2, 174763
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 33
@@ -55,7 +55,7 @@ func0000000000000000:
 func0000000000000025:
 	addiw	a1, a1, -1
 	lui	a2, 713032
-	addiw	a2, a2, -1311
+	addi	a2, a2, -1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 37
@@ -102,7 +102,7 @@ func0000000000000005:
 	addi	a1, a1, 2047
 	lui	a2, 752574
 	addiw	a1, a1, 1953
-	addiw	a2, a2, 733
+	addi	a2, a2, 733
 	mul	a2, a1, a2
 	srli	a2, a2, 32
 	add	a1, a1, a2

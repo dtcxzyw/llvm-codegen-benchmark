@@ -61,7 +61,7 @@ func0000000000000007:
 	sext.w	a1, a1
 	lui	a2, 1
 	sh1add	a1, a1, a1
-	addiw	a2, a2, -1816
+	addi	a2, a2, -1816
 	slli	a1, a1, 3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

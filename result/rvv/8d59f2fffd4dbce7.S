@@ -97,8 +97,7 @@ func0000000000000068:
 func0000000000000011:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -4
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

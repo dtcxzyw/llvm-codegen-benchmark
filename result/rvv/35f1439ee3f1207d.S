@@ -92,7 +92,7 @@ func000000000000018c:
 	vmsne.vx	v8, v8, a1
 	li	a1, -1
 	srli	a1, a1, 32
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmand.mm	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1
@@ -107,7 +107,7 @@ func000000000000008c:
 	vmand.mm	v0, v11, v10
 	vmv.v.i	v8, 2
 	lui	a0, 16
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

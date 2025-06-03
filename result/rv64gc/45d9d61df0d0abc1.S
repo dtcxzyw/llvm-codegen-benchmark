@@ -19,7 +19,7 @@ func0000000000000024:
 func0000000000000025:
 	addiw	a0, a0, 53
 	lui	a1, 322639
-	addiw	a1, a1, -945
+	addi	a1, a1, -945
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srli	a0, a0, 36
@@ -50,7 +50,7 @@ func0000000000000005:
 func0000000000000020:
 	addiw	a0, a0, -1
 	lui	a1, 349525
-	addiw	a1, a1, 1366
+	addi	a1, a1, 1366
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srli	a0, a0, 32

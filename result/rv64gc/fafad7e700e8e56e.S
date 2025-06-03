@@ -20,7 +20,7 @@ func0000000000001208:
 	sext.w	a0, a0
 	addiw	a2, a2, -1938
 	lui	a3, 1048575
-	addiw	a3, a3, 221
+	addi	a3, a3, 221
 	sltu	a2, a2, a3
 	or	a1, a1, a2
 	sltu	a0, a0, a3
@@ -52,7 +52,7 @@ func0000000000000202:
 	addi	a3, a3, -1845
 	addw	a2, a2, a3
 	lui	a3, 44
-	addiw	a3, a3, -2018
+	addi	a3, a3, -2018
 	xor	a0, a0, a3
 	sltiu	a2, a2, 11
 	or	a1, a1, a2

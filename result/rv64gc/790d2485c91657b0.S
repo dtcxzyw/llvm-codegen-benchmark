@@ -35,7 +35,7 @@ func000000000000000c:
 	slli	a1, a1, 48
 	lui	a2, 11
 	srli	a1, a1, 48
-	addiw	a2, a2, -238
+	addi	a2, a2, -238
 	xor	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1
@@ -47,7 +47,7 @@ func0000000000000061:
 	slli	a1, a1, 48
 	lui	a2, 16
 	srli	a1, a1, 48
-	addiw	a2, a2, -253
+	addi	a2, a2, -253
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slli	a1, a1, 1

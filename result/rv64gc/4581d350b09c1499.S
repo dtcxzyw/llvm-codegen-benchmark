@@ -36,7 +36,7 @@ func0000000000000081:
 	slli	a0, a0, 48
 	lui	a2, 16
 	srli	a0, a0, 48
-	addiw	a2, a2, -128
+	addi	a2, a2, -128
 	and	a1, a1, a2
 	addi	a1, a1, -128
 	seqz	a1, a1

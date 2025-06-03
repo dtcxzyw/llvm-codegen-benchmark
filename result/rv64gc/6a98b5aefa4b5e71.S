@@ -8,7 +8,7 @@ func0000000000000004:
 	srai	a1, a1, 26
 	add	a1, a1, a2
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret
@@ -23,7 +23,7 @@ func0000000000000000:
 	srai	a1, a1, 7
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1000
+	addi	a2, a2, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -39,7 +39,7 @@ func0000000000000005:
 	srai	a1, a1, 25
 	add	a1, a1, a2
 	lui	a2, 14648
-	addiw	a2, a2, 1792
+	addi	a2, a2, 1792
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

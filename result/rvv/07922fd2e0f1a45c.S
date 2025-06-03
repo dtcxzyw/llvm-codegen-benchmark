@@ -44,7 +44,7 @@ func0000000000000000:
 	vsrl.vx	v12, v8, a1
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v12
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsub.vx	v8, a0, v10
 	ret
 

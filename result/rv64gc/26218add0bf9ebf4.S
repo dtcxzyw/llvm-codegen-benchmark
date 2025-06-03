@@ -5,7 +5,7 @@ func0000000000000001:
 	bnez	a2, .LBB0_2
 	andi	a1, a1, 1
 	lui	a0, 1
-	addiw	a0, a0, 269
+	addi	a0, a0, 269
 	xor	a0, a0, a1
 .LBB0_2:
 	ret

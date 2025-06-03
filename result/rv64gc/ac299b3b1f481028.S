@@ -1,6 +1,6 @@
 func0000000000000008:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048575
 	and	a2, a2, a3
@@ -10,7 +10,7 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048575
 	and	a2, a2, a3
@@ -101,7 +101,7 @@ func000000000000000a:
 func00000000000001e6:
 	addi	a2, a2, 3
 	lui	a3, 32
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0

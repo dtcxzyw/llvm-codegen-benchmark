@@ -1,11 +1,11 @@
 func00000000000000b4:
 	lui	a0, 143
-	addiw	a1, a0, -1340
+	addi	a1, a0, -1340
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a1
 	lui	a1, 1
-	addiw	a0, a0, -1328
-	addiw	a1, a1, 616
+	addi	a0, a0, -1328
+	addi	a1, a1, 616
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v10

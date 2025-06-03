@@ -6,7 +6,7 @@ func000000000000028a:
 	vadd.vv	v8, v8, v12
 	vmv.v.i	v12, -2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10

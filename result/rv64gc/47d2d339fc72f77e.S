@@ -56,7 +56,7 @@ func0000000000000026:
 	ret
 .LBB4_2:
 	lui	a2, 6019
-	addiw	a2, a2, 551
+	addi	a2, a2, 551
 	slli	a2, a2, 7
 	sub	a0, a0, a1
 	slt	a0, a0, a2
@@ -65,7 +65,7 @@ func0000000000000026:
 func0000000000000078:
 	andi	a2, a2, 1
 	lui	a3, 9
-	addiw	a3, a3, -340
+	addi	a3, a3, -340
 	or	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a2, a0

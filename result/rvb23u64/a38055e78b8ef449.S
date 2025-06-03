@@ -1,8 +1,8 @@
 func0000000000000118:
 	andi	a1, a1, -8
 	lui	a2, 1048560
-	addiw	a3, a2, -17
-	addiw	a2, a2, 23
+	addi	a3, a2, -17
+	addi	a2, a2, 23
 	add	a1, a1, a3
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -20,7 +20,7 @@ func0000000000000b02:
 func0000000000000208:
 	andi	a1, a1, -4
 	lui	a2, 1048568
-	addiw	a3, a2, -1
+	addi	a3, a2, -1
 	add	a1, a1, a3
 	lui	a3, 1
 	sltu	a1, a1, a2

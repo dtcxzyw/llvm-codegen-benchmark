@@ -3,7 +3,7 @@ func000000000000030c:
 	andi	a1, a1, 248
 	lui	a2, 52429
 	xori	a1, a1, 48
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	snez	a0, a0

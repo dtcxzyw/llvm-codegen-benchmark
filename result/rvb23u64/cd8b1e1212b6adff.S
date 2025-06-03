@@ -11,7 +11,7 @@ func00000000000004aa:
 	mul	a0, a0, a2
 	lui	a2, 490
 	addw	a0, a0, a1
-	addiw	a1, a2, -1018
+	addi	a1, a2, -1018
 	slt	a0, a1, a0
 	ret
 

@@ -1,6 +1,5 @@
 func0000000000000004:
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	minu	a1, a2, a1

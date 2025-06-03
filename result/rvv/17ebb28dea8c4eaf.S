@@ -12,7 +12,7 @@ func000000000000000e:
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12
 	vsrl.vi	v12, v12, 15
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	vnmsub.vx	v12, a0, v8
 	vmul.vv	v10, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma

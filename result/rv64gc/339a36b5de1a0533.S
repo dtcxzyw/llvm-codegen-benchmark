@@ -129,7 +129,7 @@ func0000000000000005:
 
 func00000000000000a6:
 	lui	a3, 1048574
-	addiw	a3, a3, -1808
+	addi	a3, a3, -1808
 	add	a2, a2, a3
 	add	a0, a0, a1
 	slt	a0, a0, a2
@@ -137,7 +137,7 @@ func00000000000000a6:
 
 func00000000000000aa:
 	lui	a3, 2
-	addiw	a3, a3, 1808
+	addi	a3, a3, 1808
 	add	a2, a2, a3
 	add	a0, a0, a1
 	slt	a0, a2, a0

@@ -54,7 +54,7 @@ func0000000000000026:
 	vmulh.vx	v8, v8, a0
 	lui	a0, 961553
 	vsra.vx	v10, v10, a1
-	addiw	a0, a0, 721
+	addi	a0, a0, 721
 	slli	a0, a0, 12
 	vsrl.vx	v12, v8, a1
 	vsra.vi	v8, v8, 13
@@ -68,7 +68,7 @@ func0000000000000026:
 	.quad	384307168202282325
 func00000000000001a8:
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI5_0)
@@ -85,7 +85,7 @@ func00000000000001b1:
 	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -98,7 +98,7 @@ func00000000000001a1:
 	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

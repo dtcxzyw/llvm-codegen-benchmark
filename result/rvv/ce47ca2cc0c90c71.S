@@ -39,7 +39,7 @@ func0000000000000018:
 	vandn.vx	v10, v10, a0
 	lui	a0, 1
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 12
 	ret

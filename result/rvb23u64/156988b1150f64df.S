@@ -2,7 +2,7 @@ func000000000000000a:
 	li	a1, 26
 	mul	a0, a0, a1
 	lui	a1, 6
-	addiw	a1, a1, 1639
+	addi	a1, a1, 1639
 	addi	a0, a0, 24
 	sext.h	a0, a0
 	mul	a0, a0, a1

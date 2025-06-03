@@ -27,7 +27,7 @@ func00000000000001ef:
 func00000000000001ec:
 	lui	a3, 298023
 	slli	a0, a0, 32
-	addiw	a3, a3, 917
+	addi	a3, a3, 917
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -8,7 +8,7 @@ func0000000000000001:
 
 func0000000000000061:
 	lui	a0, 20384
-	addiw	a0, a0, -73
+	addi	a0, a0, -73
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vxor.vv	v10, v10, v12
@@ -17,7 +17,7 @@ func0000000000000061:
 
 func0000000000000021:
 	lui	a0, 20384
-	addiw	a0, a0, -73
+	addi	a0, a0, -73
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v12, v12, a0
 	vxor.vv	v10, v10, v12

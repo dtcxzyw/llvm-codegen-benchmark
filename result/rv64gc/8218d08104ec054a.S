@@ -22,22 +22,22 @@ func0000000000000053:
 	srliw	a0, a0, 14
 	beqz	a0, .LBB2_2
 	lui	a0, 43
-	addiw	a0, a0, 272
+	addi	a0, a0, 272
 	ret
 .LBB2_2:
 	lui	a0, 47
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	ret
 
 func0000000000000007:
 	sext.w	a0, a0
 	beqz	a0, .LBB3_2
 	lui	a0, 43
-	addiw	a0, a0, 272
+	addi	a0, a0, 272
 	ret
 .LBB3_2:
 	lui	a0, 47
-	addiw	a0, a0, -512
+	addi	a0, a0, -512
 	ret
 
 func000000000000002b:
@@ -90,7 +90,7 @@ func0000000000000050:
 func000000000000001b:
 	sext.w	a1, a0
 	lui	a0, 16
-	addiw	a2, a0, 1
+	addi	a2, a0, 1
 	lui	a0, 4
 	blt	a1, a2, .LBB9_2
 	lui	a0, 68

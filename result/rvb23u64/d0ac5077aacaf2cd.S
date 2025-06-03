@@ -49,7 +49,7 @@ func000000000000002a:
 	sext.w	a1, a0
 	slliw	a0, a0, 1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	slt	a1, a2, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

@@ -19,7 +19,7 @@ func0000000000000013:
 	li	a2, -14
 	bgeu	a1, a2, .LBB2_2
 	lui	a0, 57344
-	addiw	a0, a0, -14
+	addi	a0, a0, -14
 	ret
 .LBB2_2:
 	slli	a1, a0, 24

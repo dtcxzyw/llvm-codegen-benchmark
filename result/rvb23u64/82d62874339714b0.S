@@ -9,7 +9,7 @@ func0000000000000009:
 	slli	a1, a1, 48
 	lui	a2, 1536
 	srli	a1, a1, 43
-	addiw	a2, a2, 31
+	addi	a2, a2, 31
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

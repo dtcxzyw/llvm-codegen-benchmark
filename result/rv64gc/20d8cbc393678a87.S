@@ -3,10 +3,10 @@ func0000000000000002:
 	flt.d	a1, fa0, fa5
 	lui	a0, 143
 	bnez	a1, .LBB0_2
-	addiw	a0, a0, -1340
+	addi	a0, a0, -1340
 	ret
 .LBB0_2:
-	addiw	a0, a0, -1328
+	addi	a0, a0, -1328
 	ret
 
 func0000000000000004:
@@ -37,11 +37,11 @@ func0000000000000003:
 	fle.d	a0, fa5, fa0
 	beqz	a0, .LBB3_2
 	lui	a0, 448199
-	addiw	a0, a0, 1379
+	addi	a0, a0, 1379
 	ret
 .LBB3_2:
 	lui	a0, 476760
-	addiw	a0, a0, -1932
+	addi	a0, a0, -1932
 	ret
 
 func0000000000000007:

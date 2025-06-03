@@ -27,7 +27,7 @@ func000000000000000e:
 	vmv.v.i	v10, 1
 	vadd.vx	v11, v8, a0
 	lui	a0, 1047936
-	addiw	a0, a0, -961
+	addi	a0, a0, -961
 	vwsll.vv	v8, v10, v11
 	slli	a0, a0, 20
 	addi	a0, a0, 1212
@@ -42,7 +42,7 @@ func0000000000000004:
 	vmv.v.x	v11, a0
 	lui	a0, 1048064
 	vwsll.vv	v8, v11, v10
-	addiw	a0, a0, 32
+	addi	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	ret

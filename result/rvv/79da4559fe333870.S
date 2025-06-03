@@ -30,7 +30,7 @@ func000000000000006f:
 
 func0000000000000005:
 	lui	a0, 1
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 12
@@ -43,7 +43,7 @@ func0000000000000005:
 func0000000000000065:
 	lui	a0, 2153
 	lui	a1, %hi(.LCPI4_0)
-	addiw	a0, a0, 547
+	addi	a0, a0, 547
 	ld	a1, %lo(.LCPI4_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0

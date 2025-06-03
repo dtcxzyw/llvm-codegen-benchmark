@@ -1,6 +1,6 @@
 func0000000000000146:
 	lui	a1, 2
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	bltu	a0, a1, .LBB0_2
 	lui	a1, 1048574
 	addi	a1, a1, 2
@@ -15,7 +15,7 @@ func0000000000000146:
 
 func0000000000000042:
 	lui	a1, 2
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	bltu	a0, a1, .LBB1_2
 	lui	a1, 1048574
 	addi	a1, a1, 2

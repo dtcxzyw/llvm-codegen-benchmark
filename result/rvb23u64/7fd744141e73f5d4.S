@@ -17,7 +17,7 @@ func00000000000000a7:
 
 func00000000000000a3:
 	lui	a3, 209715
-	addiw	a3, a3, 820
+	addi	a3, a3, 820
 	sltu	a2, a2, a3
 	zext.w	a1, a1
 	czero.nez	a1, a1, a2

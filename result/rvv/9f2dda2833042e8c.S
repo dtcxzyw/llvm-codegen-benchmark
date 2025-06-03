@@ -39,8 +39,8 @@ func0000000000000004:
 	vadd.vx	v8, v8, a0
 	lui	a0, 1
 	vmsltu.vx	v0, v8, a1
-	addiw	a1, a0, -432
-	addiw	a0, a0, -496
+	addi	a1, a0, -432
+	addi	a0, a0, -496
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a1
 	vmerge.vxm	v8, v8, a0, v0

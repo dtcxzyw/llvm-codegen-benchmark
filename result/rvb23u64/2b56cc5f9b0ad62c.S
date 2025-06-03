@@ -34,7 +34,7 @@ func00000000000006f8:
 	lui	a2, 2
 	add	a0, a0, a1
 	addiw	a0, a0, -161
-	addiw	a1, a2, -982
+	addi	a1, a2, -982
 	sltu	a0, a1, a0
 	ret
 

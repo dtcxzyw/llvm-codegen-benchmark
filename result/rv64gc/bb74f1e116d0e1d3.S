@@ -35,7 +35,7 @@ func0000000000000008:
 func0000000000000002:
 	srli	a1, a1, 47
 	lui	a2, 32
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

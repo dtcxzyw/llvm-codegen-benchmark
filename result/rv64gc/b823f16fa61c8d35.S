@@ -29,7 +29,7 @@ func0000000000000001:
 	lui	a2, 62
 	snez	a0, a0
 	addi	a0, a0, -1
-	addiw	a2, a2, -2024
+	addi	a2, a2, -2024
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

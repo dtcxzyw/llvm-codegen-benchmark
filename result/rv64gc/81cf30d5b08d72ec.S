@@ -28,13 +28,13 @@ func0000000000000028:
 
 func0000000000000008:
 	lui	a1, 3662
-	addiw	a1, a1, 449
+	addi	a1, a1, 449
 	sltu	a0, a0, a1
 	ret
 
 func000000000000000c:
 	lui	a1, 1
-	addiw	a1, a1, -1096
+	addi	a1, a1, -1096
 	slt	a0, a0, a1
 	ret
 

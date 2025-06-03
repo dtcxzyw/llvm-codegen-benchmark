@@ -30,7 +30,7 @@ func000000000000002a:
 	sext.w	a0, a0
 	zext.h	a2, a2
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	xor	a2, a2, a3
 	lui	a3, 524288
 	czero.eqz	a1, a1, a2

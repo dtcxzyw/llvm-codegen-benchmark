@@ -1,6 +1,6 @@
 func0000000000000001:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	xor	a0, a0, a1
@@ -30,7 +30,7 @@ func0000000000000004:
 
 func000000000000000c:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	xor	a0, a0, a1
@@ -81,7 +81,7 @@ func0000000000000014:
 	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -19
+	addi	a1, a1, -19
 	sltu	a0, a0, a1
 	ret
 
@@ -90,7 +90,7 @@ func0000000000000018:
 	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	sltu	a0, a1, a0
 	ret
 

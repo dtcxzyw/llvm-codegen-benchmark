@@ -5,7 +5,7 @@ func0000000000003024:
 	seqz	a1, a1
 	and	a1, a1, a2
 	lui	a2, 4
-	addiw	a2, a2, -385
+	addi	a2, a2, -385
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func000000000000068c:
 	lui	a3, 524288
 	snez	a0, a0
 	addiw	a4, a3, -1
-	addiw	a3, a3, 309
+	addi	a3, a3, 309
 	xor	a2, a2, a4
 	sltu	a1, a1, a3
 	seqz	a2, a2

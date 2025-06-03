@@ -12,7 +12,7 @@ func00000000000000c1:
 
 func0000000000000718:
 	lui	a0, 32
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret

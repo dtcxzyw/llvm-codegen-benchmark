@@ -3,7 +3,7 @@ func0000000000000003:
 	slli	a0, a0, 48
 	lui	a2, 2
 	slli	a1, a1, 4
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	mulhu	a0, a0, a1
 	srli	a0, a0, 19
 	mul	a1, a0, a2

@@ -25,7 +25,7 @@ func0000000000000015:
 	slti	a0, a0, 49
 	czero.eqz	a0, a1, a0
 	lui	a1, 24
-	addiw	a1, a1, 408
+	addi	a1, a1, 408
 	add	a0, a0, a1
 	ret
 

@@ -2,7 +2,7 @@ func0000000000000000:
 	srliw	a2, a1, 2
 	lui	a3, 367720
 	slli	a1, a1, 32
-	addiw	a3, a3, -807
+	addi	a3, a3, -807
 	mul	a2, a2, a3
 	lui	a3, 941363
 	addi	a3, a3, -1249

@@ -30,7 +30,7 @@ func0000000000000006:
 	sub	a1, a1, a2
 	bnez	a0, .LBB3_2
 	lui	a0, 1
-	addiw	a0, a0, 904
+	addi	a0, a0, 904
 	slt	a0, a0, a1
 	ret
 .LBB3_2:

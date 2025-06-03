@@ -78,8 +78,8 @@ func0000000000000183:
 	add	a0, a0, a1
 	lui	a1, 349
 	sltiu	a2, a2, 2
-	addiw	a3, a3, -1728
-	addiw	a1, a1, -640
+	addi	a3, a3, -1728
+	addi	a1, a1, -640
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -91,8 +91,8 @@ func0000000000000180:
 	add	a0, a0, a1
 	lui	a1, 378
 	sltiu	a2, a2, 2
-	addiw	a3, a3, 176
-	addiw	a1, a1, -352
+	addi	a3, a3, 176
+	addi	a1, a1, -352
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

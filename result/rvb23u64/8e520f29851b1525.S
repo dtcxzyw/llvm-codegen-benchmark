@@ -24,7 +24,7 @@ func000000000000002a:
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	lui	a4, 1
-	addiw	a4, a4, -496
+	addi	a4, a4, -496
 	slt	a3, a4, a3
 	lui	a4, 1048575
 	addi	a4, a4, 496

@@ -38,7 +38,7 @@ func0000000000000001:
 	vadd.vv	v10, v10, v12
 	lui	a0, 748983
 	vsub.vv	v8, v8, v10
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	vsra.vi	v8, v8, 1
 	slli	a1, a0, 33
 	add	a0, a0, a1

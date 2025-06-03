@@ -31,7 +31,7 @@ func000000000000002a:
 	addi	a3, a2, -960
 	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
-	addiw	a1, a2, -963
+	addi	a1, a2, -963
 	slt	a0, a1, a0
 	ret
 

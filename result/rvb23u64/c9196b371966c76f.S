@@ -10,7 +10,7 @@ func000000000000005d:
 	lui	a3, 1048544
 	subw	a1, a1, a2
 	add.uw	a0, a1, a0
-	addiw	a3, a3, 30
+	addi	a3, a3, 30
 	add	a0, a0, a3
 	ret
 

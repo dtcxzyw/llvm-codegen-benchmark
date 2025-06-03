@@ -8,7 +8,7 @@ func000000000000002c:
 func000000000000006c:
 	addi	a1, a1, 1
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a1, a1, a2
 	addi	a1, a1, -24
 	snez	a1, a1
@@ -17,7 +17,7 @@ func000000000000006c:
 
 func0000000000000061:
 	lui	a2, 64
-	addiw	a2, a2, -24
+	addi	a2, a2, -24
 	add	a1, a1, a2
 	addiw	a2, a2, 20
 	and	a1, a1, a2

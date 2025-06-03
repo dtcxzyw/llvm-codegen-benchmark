@@ -13,10 +13,10 @@ func0000000000000000:
 
 func0000000000000015:
 	lui	a1, 2
-	addiw	a1, a1, 1808
+	addi	a1, a1, 1808
 	mul	a0, a0, a1
 	lui	a1, 439129
-	addiw	a1, a1, -1189
+	addi	a1, a1, -1189
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

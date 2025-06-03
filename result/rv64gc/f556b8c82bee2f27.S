@@ -70,7 +70,7 @@ func0000000000000055:
 
 func00000000000000d8:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048574
 	srli	a3, a3, 1
@@ -83,7 +83,7 @@ func00000000000000d8:
 
 func00000000000000d0:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048574
 	srli	a3, a3, 1
@@ -96,7 +96,7 @@ func00000000000000d0:
 
 func00000000000000d4:
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	add	a2, a2, a3
 	lui	a3, 1048574
 	srli	a3, a3, 1

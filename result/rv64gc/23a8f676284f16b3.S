@@ -6,7 +6,7 @@ func0000000000000018:
 	srliw	a0, a0, 2
 	or	a0, a0, a1
 	lui	a1, 52429
-	addiw	a1, a1, -820
+	addi	a1, a1, -820
 	sltu	a0, a1, a0
 	ret
 

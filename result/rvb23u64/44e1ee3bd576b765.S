@@ -31,7 +31,7 @@ func0000000000000021:
 	andi	a2, a2, 1
 	or	a1, a1, a2
 	lui	a2, 921600
-	addiw	a2, a2, -1026
+	addi	a2, a2, -1026
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

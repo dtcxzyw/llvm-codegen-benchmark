@@ -18,7 +18,7 @@ func00000000000001e1:
 
 func0000000000000005:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1048575
 	and	a1, a1, a2
@@ -36,7 +36,7 @@ func0000000000000004:
 
 func0000000000000008:
 	lui	a2, 16
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	add	a1, a1, a2
 	lui	a2, 1048560
 	and	a1, a1, a2

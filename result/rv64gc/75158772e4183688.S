@@ -3,7 +3,7 @@ func0000000000000003:
 	bnez	a0, .LBB0_2
 	sraiw	a0, a2, 13
 	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a1, a0, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 37

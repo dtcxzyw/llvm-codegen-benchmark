@@ -33,7 +33,7 @@ func000000000000002f:
 	add	a1, a1, a2
 	lui	a2, 7
 	sh3add.uw	a0, a1, a0
-	addiw	a1, a2, -856
+	addi	a1, a2, -856
 	add	a0, a0, a1
 	ret
 
@@ -59,7 +59,7 @@ func000000000000001f:
 	addw	a1, a1, a2
 	lui	a2, 5
 	sh1add	a0, a1, a0
-	addiw	a1, a2, 922
+	addi	a1, a2, 922
 	add	a0, a0, a1
 	ret
 

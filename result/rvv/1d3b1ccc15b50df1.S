@@ -89,7 +89,7 @@ func0000000000000005:
 	vadd.vv	v8, v12, v8
 	lui	a0, 524288
 	vsub.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vadd.vx	v8, v8, a0
 	ret
 

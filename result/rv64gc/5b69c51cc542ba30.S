@@ -2,11 +2,11 @@ func0000000000000007:
 	slli	a0, a0, 49
 	bgez	a0, .LBB0_2
 	lui	a0, 32
-	addiw	a0, a0, 1228
+	addi	a0, a0, 1228
 	ret
 .LBB0_2:
 	lui	a0, 35
-	addiw	a0, a0, 640
+	addi	a0, a0, 640
 	ret
 
 func0000000000000005:

@@ -7,8 +7,7 @@ func0000000000000021:
 
 func0000000000000034:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 35
+	bseti	a0, zero, 35
 	addi	a0, a0, -32
 	and	a0, a0, a1
 	seqz	a0, a0
@@ -16,8 +15,7 @@ func0000000000000034:
 
 func000000000000000c:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -8
 	and	a0, a0, a1
 	snez	a0, a0
@@ -25,8 +23,7 @@ func000000000000000c:
 
 func0000000000000001:
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 34
+	bseti	a0, zero, 34
 	addi	a0, a0, -64
 	and	a0, a0, a1
 	seqz	a0, a0

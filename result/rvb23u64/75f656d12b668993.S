@@ -53,7 +53,7 @@ func0000000000000026:
 
 func0000000000000034:
 	lui	a2, 1048564
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	czero.nez	a1, a2, a1
 	lui	a2, 256
 	add	a1, a1, a2

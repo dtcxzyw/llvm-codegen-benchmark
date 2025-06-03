@@ -81,7 +81,7 @@ func000000000000012c:
 	zext.h	a1, a1
 	sltu	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	snez	a0, a0

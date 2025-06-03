@@ -2,7 +2,7 @@ func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v10, v8
 	lui	a0, 192515
-	addiw	a0, a0, -467
+	addi	a0, a0, -467
 	bseti	a0, a0, 60
 	bseti	a0, a0, 61
 	vmv.v.x	v8, a0
@@ -19,7 +19,7 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v10, v8
 	lui	a0, 753
-	addiw	a0, a0, -1025
+	addi	a0, a0, -1025
 	vmv.v.x	v8, a0
 	vsrl.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma

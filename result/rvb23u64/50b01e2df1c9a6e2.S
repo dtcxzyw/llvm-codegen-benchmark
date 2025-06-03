@@ -3,7 +3,7 @@ func000000000000000c:
 	negw	a1, a0
 	max	a0, a0, a1
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -18,7 +18,7 @@ func000000000000000c:
 	add	a0, a0, a1
 	lui	a1, 17476
 	roriw	a0, a0, 2
-	addiw	a1, a1, 1092
+	addi	a1, a1, 1092
 	sltu	a0, a1, a0
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000001:
 	negw	a1, a0
 	max	a0, a0, a1
 	lui	a1, 559241
-	addiw	a1, a1, -1911
+	addi	a1, a1, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -42,7 +42,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 17476
 	roriw	a0, a0, 2
-	addiw	a1, a1, 1093
+	addi	a1, a1, 1093
 	sltu	a0, a0, a1
 	ret
 

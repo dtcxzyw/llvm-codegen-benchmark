@@ -10,7 +10,7 @@ func0000000000000005:
 	li	a1, 1152
 	sh3add	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	and	a0, a0, a1
 	ret
 

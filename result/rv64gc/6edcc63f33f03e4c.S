@@ -7,7 +7,7 @@ func0000000000000010:
 func0000000000000003:
 	srai	a1, a1, 32
 	lui	a2, 44
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 24
@@ -16,7 +16,7 @@ func0000000000000003:
 func0000000000000013:
 	srai	a1, a1, 32
 	lui	a2, 44
-	addiw	a2, a2, 64
+	addi	a2, a2, 64
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 24

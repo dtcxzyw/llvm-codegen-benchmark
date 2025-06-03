@@ -23,7 +23,7 @@ func00000000000001ef:
 func00000000000001ff:
 	lui	a3, 1
 	sext.w	a0, a0
-	addiw	a3, a3, -608
+	addi	a3, a3, -608
 	slli	a0, a0, 1
 	mul	a1, a1, a3
 	add	a0, a0, a2

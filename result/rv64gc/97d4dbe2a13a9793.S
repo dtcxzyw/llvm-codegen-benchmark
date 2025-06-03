@@ -13,7 +13,7 @@ func0000000000000082:
 	sext.w	a0, a0
 	lui	a3, 560295
 	xor	a2, a2, a0
-	addiw	a3, a3, -1025
+	addi	a3, a3, -1025
 	xor	a0, a0, a3
 	seqz	a2, a2
 	or	a1, a1, a2
@@ -38,7 +38,7 @@ func000000000000050c:
 	slt	a2, a2, a0
 	or	a1, a1, a2
 	lui	a2, 786432
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	slt	a0, a0, a2
 	or	a0, a0, a1
 	ret

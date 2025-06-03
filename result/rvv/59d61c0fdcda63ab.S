@@ -47,7 +47,7 @@ func0000000000000078:
 	lui	a0, 504
 	vsrl.vi	v10, v10, 10
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 1023
+	addi	a0, a0, 1023
 	vmsgtu.vx	v0, v8, a0
 	ret
 

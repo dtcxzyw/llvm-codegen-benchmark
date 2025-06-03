@@ -13,7 +13,7 @@ func0000000000000008:
 	lui	a3, 524296
 	andn	a1, a1, a3
 	lui	a3, 1048544
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sltu	a2, a3, a2
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

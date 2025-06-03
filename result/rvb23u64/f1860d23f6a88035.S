@@ -8,7 +8,7 @@ func0000000000000001:
 func0000000000000014:
 	andi	a0, a0, 6
 	lui	a1, 1048573
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	czero.nez	a0, a1, a0
 	lui	a1, 3
 	add	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000014:
 func000000000000000c:
 	andi	a0, a0, 1024
 	lui	a1, 32
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1
 	ret

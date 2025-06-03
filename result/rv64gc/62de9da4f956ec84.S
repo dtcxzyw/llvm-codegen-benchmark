@@ -2,7 +2,7 @@ func0000000000000042:
 	andi	a1, a1, 4
 	lui	a2, 8
 	seqz	a1, a1
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -50,11 +50,11 @@ func0000000000000602:
 func0000000000000502:
 	andi	a1, a1, 56
 	lui	a2, 4
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	and	a0, a0, a2
 	lui	a2, 1
 	sltiu	a1, a1, 40
-	addiw	a2, a2, 868
+	addi	a2, a2, 868
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1

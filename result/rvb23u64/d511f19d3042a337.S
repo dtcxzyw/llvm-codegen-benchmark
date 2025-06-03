@@ -14,7 +14,7 @@ func000000000000001a:
 	slli	a1, a1, 16
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	max	a0, a0, a1
 	ret
 

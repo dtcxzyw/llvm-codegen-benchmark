@@ -11,7 +11,7 @@ func0000000000000006:
 func0000000000000001:
 	subw	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	and	a0, a0, a1
 	addi	a0, a0, -3
 	seqz	a0, a0
@@ -32,14 +32,14 @@ func000000000000002c:
 	addi	a1, a1, -1366
 	addw	a0, a0, a1
 	lui	a1, 349525
-	addiw	a1, a1, 1364
+	addi	a1, a1, 1364
 	sltu	a0, a1, a0
 	ret
 
 func000000000000000a:
 	subw	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	and	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0

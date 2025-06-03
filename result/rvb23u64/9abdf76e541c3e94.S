@@ -46,7 +46,7 @@ func00000000000000c3:
 
 func0000000000000043:
 	lui	a3, 1
-	addiw	a3, a3, -1488
+	addi	a3, a3, -1488
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
@@ -84,7 +84,7 @@ func0000000000000000:
 	lui	a3, 8
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
-	addiw	a1, a3, 1280
+	addi	a1, a3, 1280
 	add	a0, a0, a1
 	ret
 

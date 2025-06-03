@@ -6,7 +6,7 @@ func0000000000000007:
 
 func0000000000000000:
 	lui	a2, 8192
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1040384
 	and	a1, a1, a2

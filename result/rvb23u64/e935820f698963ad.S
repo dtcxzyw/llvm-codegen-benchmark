@@ -1,7 +1,7 @@
 func0000000000000804:
 	sub	a3, a0, a1
 	lui	a4, 1
-	addiw	a4, a4, 904
+	addi	a4, a4, 904
 	sub	a4, a4, a2
 	minu	a2, a4, a3
 	add	a1, a1, a2

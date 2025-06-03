@@ -1,7 +1,7 @@
 func0000000000000004:
 	addiw	a0, a0, 50
 	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 37
@@ -17,7 +17,7 @@ func0000000000000000:
 	addi	a1, a1, 2008
 	addw	a0, a0, a1
 	lui	a1, 612866
-	addiw	a1, a1, 1385
+	addi	a1, a1, 1385
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -25,7 +25,7 @@ func0000000000000000:
 	sraiw	a0, a0, 11
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

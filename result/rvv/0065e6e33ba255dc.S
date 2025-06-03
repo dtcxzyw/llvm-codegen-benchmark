@@ -92,7 +92,7 @@ func000000000000008a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
 	lui	a0, 8
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 524288
 	vsll.vi	v8, v8, 16

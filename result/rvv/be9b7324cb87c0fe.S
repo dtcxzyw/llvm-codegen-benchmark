@@ -2,7 +2,7 @@ func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v8, v8, v8
 	lui	a0, 488281
-	addiw	a0, a0, 1024
+	addi	a0, a0, 1024
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 

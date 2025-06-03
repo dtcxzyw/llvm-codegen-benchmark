@@ -6,7 +6,7 @@ func0000000000000007:
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	addi	a2, a3, -496
-	addiw	a3, a3, -1911
+	addi	a3, a3, -1911
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	subw	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000007:
 func000000000000000f:
 	lui	a1, 210
 	lui	a2, 2
-	addiw	a1, a1, -1167
+	addi	a1, a1, -1167
 	addi	a2, a2, 1808
 	slli	a1, a1, 12
 	addi	a1, a1, 1881

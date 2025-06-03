@@ -7,7 +7,7 @@ func0000000000000001:
 	slli	a1, a1, 63
 	lui	a0, 244141
 	srai	a1, a1, 63
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	and	a0, a0, a1
 	ret
 

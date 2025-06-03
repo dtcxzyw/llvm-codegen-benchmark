@@ -70,7 +70,7 @@ func0000000000000030:
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	lui	a1, 786432
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

@@ -42,8 +42,8 @@ func000000000000002c:
 	lui	a3, 4
 	binvi	a1, a1, 26
 	czero.eqz	a1, a2, a1
-	addiw	a2, a3, -1756
-	addiw	a3, a3, -1764
+	addi	a2, a3, -1756
+	addi	a3, a3, -1764
 	add	a1, a1, a2
 	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0

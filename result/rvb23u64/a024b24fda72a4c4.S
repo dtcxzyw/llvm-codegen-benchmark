@@ -1,7 +1,7 @@
 func0000000000000001:
 	zext.w	a1, a1
 	lui	a2, 15
-	addiw	a2, a2, 31
+	addi	a2, a2, 31
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -42,7 +42,7 @@ func0000000000000038:
 func0000000000000018:
 	zext.w	a1, a1
 	lui	a2, 512
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

@@ -32,7 +32,7 @@ func0000000000000848:
 	li	a3, -1592
 	sh3add	a2, a3, a2
 	lui	a3, 3
-	addiw	a3, a3, -384
+	addi	a3, a3, -384
 	sext.w	a2, a2
 	xor	a1, a1, a3
 	sltiu	a2, a2, 48

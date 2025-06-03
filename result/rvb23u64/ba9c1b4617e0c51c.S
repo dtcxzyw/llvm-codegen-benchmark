@@ -24,7 +24,7 @@ func000000000000006c:
 func000000000000006f:
 	addi	a2, a2, 1
 	lui	a3, 32
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	and	a2, a2, a3
 	add.uw	a0, a1, a0
 	add	a0, a0, a2

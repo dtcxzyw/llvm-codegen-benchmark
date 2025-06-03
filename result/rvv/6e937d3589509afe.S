@@ -2,7 +2,7 @@ func000000000000000e:
 	lui	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.wv	v8, v8, v10
-	addiw	a0, a0, -1976
+	addi	a0, a0, -1976
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret

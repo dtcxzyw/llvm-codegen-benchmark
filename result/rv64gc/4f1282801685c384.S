@@ -8,7 +8,7 @@ func0000000000000007:
 func0000000000000005:
 	srliw	a0, a0, 3
 	lui	a1, 1048332
-	addiw	a1, a1, 1619
+	addi	a1, a1, 1619
 	mul	a0, a0, a1
 	ret
 

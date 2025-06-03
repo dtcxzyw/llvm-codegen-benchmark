@@ -26,7 +26,7 @@ func0000000000000008:
 	sext.w	a0, a0
 	maxu	a0, a0, a1
 	lui	a1, 87381
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	sltu	a0, a1, a0
 	ret
 

@@ -21,11 +21,11 @@ func0000000000000087:
 	sext.w	a2, a1
 	lui	a1, 1
 	beqz	a2, .LBB1_2
-	addiw	a1, a1, -1872
+	addi	a1, a1, -1872
 	add	a0, a0, a1
 	ret
 .LBB1_2:
-	addiw	a1, a1, -1856
+	addi	a1, a1, -1856
 	add	a0, a0, a1
 	ret
 

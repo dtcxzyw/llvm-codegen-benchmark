@@ -39,7 +39,7 @@ func00000000000000e1:
 func0000000000000024:
 	sext.w	a0, a0
 	lui	a2, 5
-	addiw	a2, a2, 1028
+	addi	a2, a2, 1028
 	sltiu	a0, a0, 16
 	add	a3, a1, a2
 	or	a1, a1, a2
@@ -65,7 +65,7 @@ func00000000000000f4:
 func00000000000000d4:
 	sext.w	a0, a0
 	lui	a2, 5
-	addiw	a2, a2, 1028
+	addi	a2, a2, 1028
 	sltiu	a0, a0, 16
 	add	a3, a1, a2
 	or	a1, a1, a2

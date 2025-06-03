@@ -12,7 +12,7 @@ func0000000000000014:
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	lui	a1, 9095
-	addiw	a1, a1, -217
+	addi	a1, a1, -217
 	slli	a1, a1, 12
 	addi	a1, a1, -63
 	slli	a1, a1, 15

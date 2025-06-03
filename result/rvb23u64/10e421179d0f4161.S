@@ -37,7 +37,7 @@ func00000000000001e6:
 	add	a0, a0, a1
 	lui	a1, 16
 	add.uw	a0, a2, a0
-	addiw	a1, a1, 7
+	addi	a1, a1, 7
 	slt	a0, a0, a1
 	ret
 
@@ -45,7 +45,7 @@ func0000000000000008:
 	add	a0, a0, a1
 	lui	a1, 51
 	add.uw	a0, a2, a0
-	addiw	a1, a1, 811
+	addi	a1, a1, 811
 	sltu	a0, a1, a0
 	ret
 
@@ -54,7 +54,7 @@ func0000000000000204:
 	add	a0, a0, a1
 	lui	a1, 64
 	add	a0, a0, a2
-	addiw	a1, a1, -7
+	addi	a1, a1, -7
 	sltu	a0, a0, a1
 	ret
 

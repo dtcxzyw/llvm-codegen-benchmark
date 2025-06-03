@@ -3,7 +3,7 @@
 func0000000000000006:
 	lui	a2, 349525
 	lui	a3, %hi(.LCPI0_0)
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a4, a2, 32
 	add	a2, a2, a4
@@ -15,7 +15,7 @@ func0000000000000006:
 
 func0000000000000004:
 	lui	a2, 349525
-	addiw	a2, a2, 1365
+	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	and	a1, a1, a2

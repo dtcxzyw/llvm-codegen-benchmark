@@ -91,7 +91,7 @@ func0000000000000d0b:
 	vadd.vi	v12, v12, 1
 	lui	a0, 39
 	vmsle.vv	v14, v8, v12
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8
 	ret

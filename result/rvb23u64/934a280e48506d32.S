@@ -22,7 +22,7 @@ func0000000000000002:
 	andi	a1, a1, 1
 	andi	a2, a2, 1
 	lui	a3, 1
-	addiw	a4, a3, 1092
+	addi	a4, a3, 1092
 	czero.nez	a1, a3, a1
 	czero.nez	a2, a4, a2
 	or	a0, a0, a1

@@ -1,7 +1,7 @@
 func0000000000000005:
 	sext.h	a2, a2
 	lui	a3, 6
-	addiw	a3, a3, -1593
+	addi	a3, a3, -1593
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srli	a2, a2, 23
@@ -14,7 +14,7 @@ func0000000000000005:
 func0000000000000000:
 	sext.h	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, 1147
+	addi	a3, a3, 1147
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srli	a2, a2, 21

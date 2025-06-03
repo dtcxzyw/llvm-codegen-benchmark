@@ -11,7 +11,7 @@ func00000000000000a4:
 
 func00000000000000a1:
 	lui	a0, 804435
-	addiw	a0, a0, 1537
+	addi	a0, a0, 1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 244141
@@ -28,7 +28,7 @@ func0000000000000064:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v9
 	lui	a0, 1
-	addiw	a0, a0, 8
+	addi	a0, a0, 8
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0

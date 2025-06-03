@@ -2,8 +2,8 @@ func0000000000000040:
 	lui	a3, 2
 	add	a0, a0, a1
 	lui	a1, 12
-	addiw	a3, a3, -832
-	addiw	a1, a1, 400
+	addi	a3, a3, -832
+	addi	a1, a1, 400
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -13,8 +13,8 @@ func00000000000000c0:
 	lui	a3, 2
 	add	a0, a0, a1
 	lui	a1, 12
-	addiw	a3, a3, -832
-	addiw	a1, a1, 344
+	addi	a3, a3, -832
+	addi	a1, a1, 344
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -27,7 +27,7 @@ func00000000000000c3:
 	lui	a1, 3
 	add	a2, a2, a3
 	add	a0, a0, a2
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	add	a0, a0, a1
 	ret
 
@@ -65,7 +65,7 @@ func00000000000000f0:
 	lui	a3, 276
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a1, a3, 688
+	addi	a1, a3, 688
 	add	a0, a0, a1
 	ret
 
@@ -76,7 +76,7 @@ func00000000000000f2:
 	lui	a3, 276
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a1, a3, 688
+	addi	a1, a3, 688
 	add	a0, a0, a1
 	ret
 

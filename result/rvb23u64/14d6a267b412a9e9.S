@@ -8,8 +8,7 @@ func000000000000003b:
 
 func000000000000007f:
 	addi	a2, a2, 7
-	li	a3, 1
-	slli	a3, a3, 34
+	bseti	a3, zero, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a2
@@ -18,8 +17,7 @@ func000000000000007f:
 	ret
 
 func0000000000000060:
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -32
 	add	a2, a2, a3
 	and	a2, a2, a3
@@ -44,7 +42,7 @@ func0000000000000010:
 	addi	a2, a2, 16
 	lui	a3, 131072
 	sext.w	a1, a1
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -52,8 +50,7 @@ func0000000000000010:
 
 func000000000000006f:
 	addi	a2, a2, 63
-	li	a3, 1
-	slli	a3, a3, 33
+	bseti	a3, zero, 33
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	add	a0, a0, a2

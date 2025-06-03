@@ -4,7 +4,7 @@ func0000000000000001:
 	vmul.vx	v8, v8, a0
 	lui	a0, 1048276
 	vsrl.vi	v8, v8, 18
-	addiw	a0, a0, -655
+	addi	a0, a0, -655
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000003:
 
 func000000000000001b:
 	lui	a0, 175922
-	addiw	a0, a0, -571
+	addi	a0, a0, -571
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 24

@@ -10,7 +10,7 @@ func000000000000000c:
 	srai	a1, a1, 48
 	add	a0, a0, a1
 	lui	a1, 1
-	addiw	a1, a1, 36
+	addi	a1, a1, 36
 	add	a0, a0, a1
 	ret
 

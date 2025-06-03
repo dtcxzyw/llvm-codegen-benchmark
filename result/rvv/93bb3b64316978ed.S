@@ -10,7 +10,7 @@ func0000000000000006:
 	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, -1
 	ret
@@ -24,7 +24,7 @@ func0000000000000001:
 	lui	a1, 978671
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a2, %hi(.LCPI1_1)
-	addiw	a1, a1, -273
+	addi	a1, a1, -273
 	ld	a2, %lo(.LCPI1_1)(a2)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
@@ -45,7 +45,7 @@ func0000000000000008:
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsra.vi	v10, v10, 18
 	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8

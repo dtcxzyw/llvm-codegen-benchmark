@@ -5,7 +5,7 @@ func0000000000000084:
 	addi	a3, a2, 1023
 	sltiu	a1, a1, -256
 	addw	a0, a0, a3
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -20,7 +20,7 @@ func0000000000000007:
 	andi	a1, a1, -2048
 	or	a0, a0, a1
 	lui	a1, 10112
-	addiw	a1, a1, 1952
+	addi	a1, a1, 1952
 	or	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func000000000000000f:
 	slli	a1, a1, 2
 	or	a0, a0, a1
 	lui	a1, 12
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

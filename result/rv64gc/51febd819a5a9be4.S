@@ -125,12 +125,12 @@ func0000000000000010:
 func000000000000002a:
 	bgez	a1, .LBB15_2
 	lui	a1, 1048523
-	addiw	a1, a1, -1376
+	addi	a1, a1, -1376
 	add	a0, a0, a1
 	ret
 .LBB15_2:
 	lui	a1, 1048565
-	addiw	a1, a1, -128
+	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 

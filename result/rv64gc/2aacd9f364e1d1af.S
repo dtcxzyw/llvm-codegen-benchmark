@@ -2,7 +2,7 @@ func00000000000006a6:
 	subw	a2, a2, a1
 	lui	a1, 8
 	addw	a0, a0, a2
-	addiw	a1, a1, -150
+	addi	a1, a1, -150
 	slt	a0, a0, a1
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000086:
 	subw	a2, a2, a1
 	lui	a1, 262144
 	addw	a0, a0, a2
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret
 
@@ -69,7 +69,7 @@ func0000000000000004:
 	subw	a2, a2, a1
 	lui	a1, 244
 	addw	a0, a0, a2
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	sltu	a0, a0, a1
 	ret
 

@@ -32,7 +32,7 @@ func000000000000018c:
 	addi	a2, a2, -32
 	xor	a1, a1, a2
 	lui	a2, 985835
-	addiw	a2, a2, -1267
+	addi	a2, a2, -1267
 	snez	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0

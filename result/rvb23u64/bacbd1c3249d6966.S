@@ -11,7 +11,7 @@ func000000000000000d:
 	sh1add	a2, a2, a2
 	lui	a3, 7699
 	sh2add	a2, a2, a2
-	addiw	a3, a3, 896
+	addi	a3, a3, 896
 	slli	a2, a2, 2
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

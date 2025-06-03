@@ -1,7 +1,7 @@
 func0000000000000018:
 	add.uw	a0, a1, a0
 	lui	a1, 1
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 12
 	ret
@@ -9,7 +9,7 @@ func0000000000000018:
 func000000000000001e:
 	add.uw	a0, a1, a0
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	srli	a0, a0, 16
 	ret

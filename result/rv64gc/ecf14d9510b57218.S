@@ -6,7 +6,7 @@ func0000000000000108:
 	mv	a1, a2
 .LBB0_2:
 	lui	a2, 6
-	addiw	a2, a2, 299
+	addi	a2, a2, 299
 	sltu	a1, a2, a1
 	sltu	a0, a2, a0
 	and	a0, a0, a1

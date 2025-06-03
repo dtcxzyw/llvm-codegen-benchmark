@@ -19,14 +19,14 @@ func0000000000000004:
 	lui	a0, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	addiw	a0, a0, -15
+	addi	a0, a0, -15
 	sltu	a0, a0, a1
 	ret
 
 func00000000000000a1:
 	sub	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

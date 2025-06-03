@@ -45,7 +45,7 @@ func0000000000000004:
 func0000000000000002:
 	slliw	a1, a1, 1
 	lui	a2, 1048568
-	addiw	a2, a2, 254
+	addi	a2, a2, 254
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

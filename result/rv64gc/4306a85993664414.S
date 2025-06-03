@@ -114,7 +114,7 @@ func0000000000000205:
 	slli	a2, a2, 2
 	add	a1, a1, a2
 	lui	a2, 1048544
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

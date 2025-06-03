@@ -33,7 +33,7 @@ func0000000000000118:
 	andi	a1, a1, 7
 	lui	a2, 524288
 	snez	a1, a1
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -151,7 +151,7 @@ func0000000000000048:
 func0000000000000328:
 	bexti	a1, a1, 1
 	lui	a2, 98
-	addiw	a2, a2, -1408
+	addi	a2, a2, -1408
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

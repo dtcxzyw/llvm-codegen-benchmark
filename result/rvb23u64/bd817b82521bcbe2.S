@@ -13,7 +13,7 @@ func0000000000000085:
 
 func0000000000000084:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	addi	a3, a1, -1
 	czero.eqz	a3, a3, a1

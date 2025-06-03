@@ -46,7 +46,7 @@ func0000000000000003:
 func0000000000000038:
 	sext.w	a0, a0
 	lui	a1, 68719
-	addiw	a1, a1, 1954
+	addi	a1, a1, 1954
 	mul	a0, a0, a1
 	srli	a0, a0, 16
 	ret

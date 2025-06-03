@@ -28,7 +28,7 @@ func000000000000002e:
 	li	a3, 104
 	mul	a0, a0, a3
 	lui	a3, 2
-	addiw	a3, a3, -984
+	addi	a3, a3, -984
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

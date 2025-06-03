@@ -50,7 +50,7 @@ func0000000000000010:
 	addi	a2, a2, 7
 	lui	a3, 32
 	andi	a2, a2, -8
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1

@@ -9,7 +9,7 @@ func0000000000000005:
 	srai	a2, a2, 13
 	add	a2, a2, a3
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -27,7 +27,7 @@ func0000000000000007:
 	srai	a2, a2, 13
 	add	a2, a2, a3
 	lui	a3, 21
-	addiw	a3, a3, 384
+	addi	a3, a3, 384
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -45,7 +45,7 @@ func0000000000000004:
 	srai	a2, a2, 28
 	add	a2, a2, a3
 	lui	a3, 477
-	addiw	a3, a3, -667
+	addi	a3, a3, -667
 	slli	a3, a3, 11
 	czero.eqz	a0, a3, a0
 	mul	a2, a2, a3

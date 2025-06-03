@@ -12,7 +12,7 @@ func0000000000000002:
 
 func0000000000000006:
 	lui	a1, 1
-	addiw	a1, a1, 2032
+	addi	a1, a1, 2032
 	maxu	a0, a0, a1
 	addi	a0, a0, 16
 	ret

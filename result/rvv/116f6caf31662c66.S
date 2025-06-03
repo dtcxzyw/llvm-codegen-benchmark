@@ -4,7 +4,7 @@ func0000000000000001:
 	li	a0, 64
 	lui	a1, 64
 	vand.vx	v10, v10, a0
-	addiw	a0, a1, 1024
+	addi	a0, a1, 1024
 	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	vmerge.vxm	v10, v10, a1, v0

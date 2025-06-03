@@ -1,11 +1,11 @@
 func000000000000002a:
 	lui	a0, 65279
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vminu.vx	v10, v10, a0
 	lui	a0, 16128
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, -1009
+	addi	a0, a0, -1009
 	vmsgt.vx	v0, v8, a0
 	ret
 
@@ -57,7 +57,7 @@ func0000000000000004:
 	vminu.vx	v10, v10, a0
 	lui	a0, 1048575
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -67,7 +67,7 @@ func0000000000000074:
 	vminu.vx	v10, v10, a0
 	lui	a0, 256
 	vadd.vv	v8, v10, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

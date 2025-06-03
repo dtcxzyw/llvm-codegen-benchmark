@@ -29,7 +29,7 @@ func0000000000000000:
 	vadd.vi	v8, v8, 7
 	lui	a0, 244141
 	vand.vi	v8, v8, -8
-	addiw	a0, a0, -1560
+	addi	a0, a0, -1560
 	vrsub.vx	v8, v8, a0
 	ret
 

@@ -17,10 +17,10 @@ func0000000000000004:
 	mul	a1, a1, a0
 	addw	a1, a1, a2
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	bltu	a1, a2, .LBB1_2
 	lui	a0, 5
-	addiw	a0, a0, -480
+	addi	a0, a0, -480
 .LBB1_2:
 	ret
 
@@ -31,7 +31,7 @@ func0000000000000086:
 	lui	a2, 244
 	add	a0, a0, a1
 	sraiw	a0, a0, 31
-	addiw	a1, a2, 576
+	addi	a1, a2, 576
 	and	a0, a0, a1
 	ret
 

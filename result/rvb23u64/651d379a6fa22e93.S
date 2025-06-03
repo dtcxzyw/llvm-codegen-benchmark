@@ -3,10 +3,10 @@ func0000000000000004:
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	lui	a1, 2998
-	addiw	a1, a1, -1935
+	addi	a1, a1, -1935
 	czero.eqz	a0, a1, a0
 	lui	a1, 498884
-	addiw	a1, a1, 1305
+	addi	a1, a1, 1305
 	add	a0, a0, a1
 	ret
 

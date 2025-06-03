@@ -3,7 +3,7 @@ func0000000000000007:
 	vmv1r.v	v14, v8
 	vor.vv	v8, v10, v12
 	lui	a0, 1048560
-	addiw	a0, a0, 255
+	addi	a0, a0, 255
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v14

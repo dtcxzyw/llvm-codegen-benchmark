@@ -41,7 +41,7 @@ func0000000000000014:
 	vsext.vf2	v12, v10
 	lui	a0, 1
 	vmin.vv	v8, v8, v12
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

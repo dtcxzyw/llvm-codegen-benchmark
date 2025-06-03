@@ -2,7 +2,7 @@ func00000000000002e1:
 	addiw	a0, a0, -1
 	lui	a1, 349525
 	srliw	a2, a0, 1
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	or	a2, a2, a0
 	srliw	a3, a2, 2
 	or	a2, a2, a3
@@ -16,7 +16,7 @@ func00000000000002e1:
 	srli	a3, a2, 1
 	and	a1, a1, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a2, a2, a1
 	and	a1, a2, a3
 	srli	a2, a2, 2
@@ -42,7 +42,7 @@ func0000000000000261:
 	addiw	a0, a0, 8
 	lui	a1, 349525
 	srliw	a2, a0, 1
-	addiw	a1, a1, 1365
+	addi	a1, a1, 1365
 	or	a2, a2, a0
 	srliw	a3, a2, 2
 	or	a2, a2, a3
@@ -56,7 +56,7 @@ func0000000000000261:
 	srli	a3, a2, 1
 	and	a1, a1, a3
 	lui	a3, 209715
-	addiw	a3, a3, 819
+	addi	a3, a3, 819
 	sub	a2, a2, a1
 	and	a1, a2, a3
 	srli	a2, a2, 2

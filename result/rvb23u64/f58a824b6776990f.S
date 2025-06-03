@@ -53,7 +53,7 @@ func0000000000000181:
 	snez	a1, a1
 	or	a0, a0, a1
 	lui	a1, 1048569
-	addiw	a1, a1, 1866
+	addi	a1, a1, 1866
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -74
 	ret

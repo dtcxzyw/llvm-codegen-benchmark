@@ -118,7 +118,7 @@ func0000000000000084:
 	vsrl.vi	v10, v10, 3
 	lui	a0, 64
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -7
+	addi	a0, a0, -7
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -4,8 +4,8 @@ func0000000000000003:
 	li	a0, 128
 	lui	a1, 2
 	vmv.v.x	v12, a0
-	addiw	a0, a1, -1920
-	addiw	a1, a1, -1912
+	addi	a0, a1, -1920
+	addi	a1, a1, -1912
 	vmerge.vxm	v12, v12, a0, v0
 	bseti	a0, a1, 39
 	vor.vv	v10, v12, v10

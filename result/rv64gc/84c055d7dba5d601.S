@@ -25,7 +25,7 @@ func0000000000000001:
 func0000000000000002:
 	srliw	a1, a0, 8
 	lui	a2, 4581
-	addiw	a2, a2, 1223
+	addi	a2, a2, 1223
 	mul	a1, a1, a2
 	lui	a2, 14648
 	srli	a1, a1, 42
@@ -36,7 +36,7 @@ func0000000000000002:
 
 func0000000000000003:
 	lui	a1, 175
-	addiw	a1, a1, 647
+	addi	a1, a1, 647
 	slli	a1, a1, 12
 	addi	a1, a1, -1077
 	mul	a1, a0, a1

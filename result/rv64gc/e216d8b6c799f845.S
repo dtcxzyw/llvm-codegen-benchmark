@@ -4,7 +4,7 @@ func0000000000000004:
 	and	a2, a2, a3
 	lui	a3, 32768
 	sext.w	a2, a2
-	addiw	a3, a3, 57
+	addi	a3, a3, 57
 	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a1, a1, a2

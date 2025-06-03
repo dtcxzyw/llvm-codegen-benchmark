@@ -1,6 +1,6 @@
 func0000000000000008:
 	lui	a1, 1048560
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	add	a0, a0, a1
 	sltiu	a0, a0, 62
 	ret

@@ -1,7 +1,7 @@
 func00000000000001a8:
 	add	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltu	a2, a2, a1
 	slli	a1, a1, 16
 	czero.nez	a1, a1, a2

@@ -1,7 +1,7 @@
 func000000000000000f:
 	sext.w	a2, a2
 	lui	a3, 4128
-	addiw	a3, a3, 772
+	addi	a3, a3, 772
 	beq	a2, a3, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -12,7 +12,7 @@ func000000000000000f:
 func000000000000000b:
 	sext.w	a2, a2
 	lui	a3, 14
-	addiw	a3, a3, -339
+	addi	a3, a3, -339
 	beq	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

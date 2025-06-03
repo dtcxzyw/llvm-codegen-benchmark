@@ -45,7 +45,7 @@ func0000000000000008:
 	sext.w	a2, a2
 	lui	a3, 13
 	sltiu	a2, a2, 32
-	addiw	a3, a3, 1288
+	addi	a3, a3, 1288
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

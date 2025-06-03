@@ -2,7 +2,7 @@ func0000000000000228:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	addi	a1, a1, -12
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	srai	a1, a1, 2
 	slli	a2, a0, 32
 	add	a0, a0, a2
@@ -15,7 +15,7 @@ func0000000000000328:
 	sub	a1, a1, a0
 	lui	a0, 838861
 	addi	a1, a1, 40
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	srai	a1, a1, 3
 	slli	a2, a0, 32
 	add	a0, a0, a2

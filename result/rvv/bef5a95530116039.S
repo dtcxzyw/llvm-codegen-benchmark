@@ -39,7 +39,7 @@ func0000000000000000:
 	lui	a0, 4841
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
-	addiw	a0, a0, -611
+	addi	a0, a0, -611
 	slli	a0, a0, 11
 	vmul.vx	v8, v8, a0
 	ret

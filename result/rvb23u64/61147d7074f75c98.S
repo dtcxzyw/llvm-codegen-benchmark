@@ -34,8 +34,8 @@ func000000000000000a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16
-	addiw	a3, a2, -1
-	addiw	a2, a2, -2
+	addi	a3, a2, -1
+	addi	a2, a2, -2
 	minu	a1, a1, a3
 	slt	a0, a2, a0
 	czero.nez	a0, a1, a0

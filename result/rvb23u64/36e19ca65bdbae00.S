@@ -24,7 +24,7 @@ func0000000000000004:
 	subw	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
-	addiw	a1, a1, -3
+	addi	a1, a1, -3
 	sltu	a0, a1, a0
 	ret
 

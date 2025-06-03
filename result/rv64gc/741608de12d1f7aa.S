@@ -15,9 +15,9 @@ func000000000000018c:
 	and	a1, a1, a0
 	lui	a0, 1
 	bnez	a1, .LBB1_2
-	addiw	a0, a0, -1126
+	addi	a0, a0, -1126
 	ret
 .LBB1_2:
-	addiw	a0, a0, -453
+	addi	a0, a0, -453
 	ret
 

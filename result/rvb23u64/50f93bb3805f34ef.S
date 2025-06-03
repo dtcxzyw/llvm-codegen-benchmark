@@ -2,7 +2,7 @@ func0000000000000006:
 	and	a1, a1, a2
 	lui	a2, 699051
 	sh1add	a1, a1, a1
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a1, a1, 3
 	slli	a3, a2, 32
 	srai	a1, a1, 3

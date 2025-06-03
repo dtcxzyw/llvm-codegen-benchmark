@@ -39,17 +39,17 @@ func000000000000000a:
 	vmv1r.v	v10, v0
 	vmv1r.v	v0, v9
 	lui	a0, 1048575
-	addiw	a1, a0, 2007
+	addi	a1, a0, 2007
 	vmv.v.x	v12, a1
 	lui	a1, 1048573
-	addiw	a0, a0, 1448
+	addi	a0, a0, 1448
 	vmerge.vxm	v12, v12, a0, v0
-	addiw	a0, a1, -1544
+	addi	a0, a1, -1544
 	vmv1r.v	v0, v10
 	vmerge.vxm	v10, v12, a0, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgt.vi	v0, v8, 8
-	addiw	a0, a1, -1533
+	addi	a0, a1, -1533
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v10, a0, v0
 	ret

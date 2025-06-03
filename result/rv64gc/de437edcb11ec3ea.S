@@ -33,7 +33,7 @@ func00000000000001c8:
 
 func00000000000001f8:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	addiw	a3, a2, 15
 	and	a1, a1, a3
 	add	a0, a0, a2
@@ -102,7 +102,7 @@ func00000000000000a8:
 
 func00000000000001e4:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a2
 	add	a0, a0, a1

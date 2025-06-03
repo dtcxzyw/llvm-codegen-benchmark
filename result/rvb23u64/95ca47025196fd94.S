@@ -27,7 +27,7 @@ func000000000000006c:
 
 func0000000000000000:
 	lui	a2, 1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 12
 	add	a0, a0, a1
@@ -35,7 +35,7 @@ func0000000000000000:
 
 func000000000000000c:
 	lui	a2, 8
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	add	a1, a1, a2
 	srli	a1, a1, 15
 	add	a0, a0, a1

@@ -18,7 +18,7 @@ func0000000000000d01:
 
 func0000000000000c21:
 	lui	a3, 4
-	addiw	a3, a3, 272
+	addi	a3, a3, 272
 	add	a2, a2, a3
 	xor	a0, a0, a2
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000c21:
 func0000000000000d04:
 	lui	a3, 1
 	add	a2, a2, a3
-	addiw	a3, a3, 1
+	addi	a3, a3, 1
 	sltu	a1, a2, a1
 	sltu	a0, a0, a3
 	and	a0, a0, a1

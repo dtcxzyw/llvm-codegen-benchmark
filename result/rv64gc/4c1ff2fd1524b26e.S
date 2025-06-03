@@ -14,7 +14,7 @@ func0000000000000074:
 	srli	a2, a2, 32
 	add	a2, a2, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

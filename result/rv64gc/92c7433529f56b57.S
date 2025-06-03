@@ -48,7 +48,7 @@ func000000000000000d:
 	lui	a1, 768
 	srli	a2, a2, 48
 	or	a0, a0, a2
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	or	a0, a0, a1
 	ret
 

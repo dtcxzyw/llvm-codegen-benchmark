@@ -8,7 +8,7 @@ func0000000000000001:
 
 func0000000000000074:
 	lui	a1, 2
-	addiw	a1, a1, -1638
+	addi	a1, a1, -1638
 	mul	a0, a0, a1
 	zext.h	a0, a0
 	sltu	a0, a0, a1
@@ -21,13 +21,13 @@ func0000000000000061:
 
 func0000000000000014:
 	lui	a1, 13
-	addiw	a1, a1, -819
+	addi	a1, a1, -819
 	mul	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	and	a0, a0, a1
 	lui	a1, 3
-	addiw	a1, a1, 820
+	addi	a1, a1, 820
 	sltu	a0, a0, a1
 	ret
 

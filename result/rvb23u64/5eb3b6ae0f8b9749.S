@@ -2,7 +2,7 @@ func0000000000000005:
 	sext.w	a1, a1
 	lui	a2, 1048574
 	addi	a3, a2, -809
-	addiw	a2, a2, -810
+	addi	a2, a2, -810
 	addw	a0, a0, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000004:
 	sext.w	a1, a1
 	lui	a2, 1048574
 	addi	a3, a2, -809
-	addiw	a2, a2, -810
+	addi	a2, a2, -810
 	addw	a0, a0, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
@@ -68,7 +68,7 @@ func0000000000000020:
 	lui	a2, 648056
 	sltiu	a1, a1, 2
 	addi	a3, a2, -1607
-	addiw	a2, a2, -1608
+	addi	a2, a2, -1608
 	addw	a0, a0, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

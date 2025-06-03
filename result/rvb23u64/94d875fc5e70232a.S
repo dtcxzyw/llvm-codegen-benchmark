@@ -2,7 +2,7 @@ func0000000000000005:
 	slliw	a2, a2, 24
 	or	a1, a1, a2
 	lui	a2, 61681
-	addiw	a2, a2, -241
+	addi	a2, a2, -241
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	ret

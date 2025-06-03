@@ -2,7 +2,7 @@ func000000000000000a:
 	slliw	a1, a1, 1
 	sext.w	a0, a0
 	lui	a2, 233017
-	addiw	a2, a2, -455
+	addi	a2, a2, -455
 	mul	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 33

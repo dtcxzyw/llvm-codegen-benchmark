@@ -7,7 +7,7 @@ func000000000000000f:
 	and	a1, a1, a3
 	and	a0, a0, a3
 	lui	a2, 28784
-	addiw	a2, a2, 1799
+	addi	a2, a2, 1799
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2
@@ -23,7 +23,7 @@ func000000000000000b:
 	and	a1, a1, a3
 	and	a0, a0, a3
 	lui	a2, 28784
-	addiw	a2, a2, 1799
+	addi	a2, a2, 1799
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2

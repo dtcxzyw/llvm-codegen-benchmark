@@ -9,7 +9,7 @@ func0000000000000002:
 
 func0000000000000000:
 	lui	a0, 514
-	addiw	a0, a0, -1912
+	addi	a0, a0, -1912
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vx	v12, v12, a0
 	vand.vv	v10, v12, v10

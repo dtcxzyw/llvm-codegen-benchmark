@@ -35,7 +35,7 @@ func0000000000000001:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v0, v14, 0
 	lui	a0, 62
-	addiw	a0, a0, -2024
+	addi	a0, a0, -2024
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vor.vx	v8, v8, a0, v0.t
 	ret

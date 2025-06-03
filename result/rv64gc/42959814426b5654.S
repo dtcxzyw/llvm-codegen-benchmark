@@ -1,7 +1,7 @@
 func0000000000000004:
 	lui	a1, 4
 	li	a2, 1
-	addiw	a1, a1, 423
+	addi	a1, a1, 423
 	slli	a2, a2, 33
 	mul	a0, a0, a1
 	addi	a2, a2, 5
@@ -21,7 +21,7 @@ func0000000000000004:
 func0000000000000034:
 	lui	a1, 4
 	li	a2, 1
-	addiw	a1, a1, 423
+	addi	a1, a1, 423
 	slli	a2, a2, 33
 	mul	a0, a0, a1
 	addi	a2, a2, 5

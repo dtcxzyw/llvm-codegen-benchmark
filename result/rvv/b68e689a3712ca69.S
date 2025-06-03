@@ -3,7 +3,7 @@ func0000000000000010:
 	vsub.vv	v8, v8, v10
 	lui	a0, 699051
 	vsrl.vi	v8, v8, 2
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
@@ -18,7 +18,7 @@ func0000000000000011:
 	vsub.vv	v8, v8, v10
 	lui	a0, 838861
 	vsrl.vi	v8, v8, 3
-	addiw	a0, a0, -819
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

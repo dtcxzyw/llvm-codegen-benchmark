@@ -8,7 +8,7 @@ func0000000000000054:
 
 func00000000000000f4:
 	lui	a2, 64
-	addiw	a2, a2, -40
+	addi	a2, a2, -40
 	sub	a2, a2, a1
 	srli	a2, a2, 2
 	sltu	a0, a2, a0

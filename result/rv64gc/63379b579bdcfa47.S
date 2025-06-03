@@ -3,7 +3,7 @@ func0000000000000031:
 	snez	a2, a2
 	or	a1, a1, a2
 	lui	a2, 1048064
-	addiw	a2, a2, -3
+	addi	a2, a2, -3
 	andi	a1, a1, 1
 	slli	a1, a1, 21
 	and	a0, a0, a2
@@ -15,7 +15,7 @@ func0000000000000005:
 	lui	a3, 32
 	xor	a2, a2, a3
 	lui	a3, 1044736
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
@@ -35,7 +35,7 @@ func0000000000000004:
 	lui	a1, 8256
 .LBB2_2:
 	lui	a2, 1039296
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

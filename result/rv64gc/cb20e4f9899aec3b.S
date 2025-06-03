@@ -21,7 +21,7 @@ func0000000000000006:
 	seqz	a2, a2
 	lui	a3, 1
 	addi	a2, a2, -1
-	addiw	a4, a3, 1092
+	addi	a4, a3, 1092
 	addi	a1, a1, -1
 	and	a2, a2, a4
 	or	a0, a0, a2

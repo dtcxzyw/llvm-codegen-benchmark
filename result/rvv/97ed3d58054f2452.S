@@ -10,7 +10,7 @@ func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vi	v0, v12, 0
 	lui	a0, 786930
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	slli	a0, a0, 16
 	addi	a0, a0, 127
 	vand.vx	v10, v10, a0

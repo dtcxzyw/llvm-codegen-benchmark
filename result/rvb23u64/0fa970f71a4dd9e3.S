@@ -22,7 +22,7 @@ func0000000000000050:
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
 	lui	a2, 244
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1

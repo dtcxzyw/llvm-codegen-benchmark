@@ -7,7 +7,7 @@ func0000000000000003:
 	mulhu	a0, a0, a1
 	lui	a1, 139810
 	srli	a0, a0, 12
-	addiw	a1, a1, 547
+	addi	a1, a1, 547
 	mul	a1, a1, a0
 	srli	a1, a1, 35
 	sh1add	a1, a1, a1
@@ -27,7 +27,7 @@ func0000000000000000:
 	srli	a1, a0, 3
 	slli	a0, a0, 29
 	srli	a0, a0, 32
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	mul	a0, a0, a2
 	srli	a0, a0, 37
 	sh2add	a0, a0, a0

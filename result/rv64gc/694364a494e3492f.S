@@ -44,10 +44,10 @@ func0000000000000021:
 	sext.w	a1, a0
 	lui	a0, 1
 	beqz	a1, .LBB3_2
-	addiw	a0, a0, -1872
+	addi	a0, a0, -1872
 	ret
 .LBB3_2:
-	addiw	a0, a0, -1856
+	addi	a0, a0, -1856
 	ret
 
 func0000000000000084:
@@ -67,10 +67,10 @@ func000000000000002c:
 	and	a1, a1, a0
 	lui	a0, 4
 	bnez	a1, .LBB5_2
-	addiw	a0, a0, -1788
+	addi	a0, a0, -1788
 	ret
 .LBB5_2:
-	addiw	a0, a0, -1752
+	addi	a0, a0, -1752
 	ret
 
 func000000000000008c:
@@ -86,7 +86,7 @@ func000000000000008c:
 	ret
 .LBB6_2:
 	lui	a0, 1044480
-	addiw	a0, a0, 2
+	addi	a0, a0, 2
 	ret
 
 func000000000000018c:

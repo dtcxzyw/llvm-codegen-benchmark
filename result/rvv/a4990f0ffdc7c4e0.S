@@ -66,7 +66,7 @@ func000000000000030a:
 	addi	a0, a0, -1537
 	vmsgtu.vx	v10, v10, a0
 	lui	a0, 633
-	addiw	a0, a0, -768
+	addi	a0, a0, -768
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

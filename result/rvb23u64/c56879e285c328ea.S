@@ -12,14 +12,14 @@ func00000000000002a8:
 	addi	a1, a1, 827
 	addw	a0, a0, a1
 	lui	a1, 1048570
-	addiw	a1, a1, 826
+	addi	a1, a1, 826
 	sltu	a0, a0, a1
 	ret
 
 func00000000000003a1:
 	addw	a0, a0, a1
 	lui	a1, 32
-	addiw	a1, a1, -3
+	addi	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -27,7 +27,7 @@ func00000000000003a1:
 func00000000000002a1:
 	addw	a0, a0, a1
 	lui	a1, 32
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

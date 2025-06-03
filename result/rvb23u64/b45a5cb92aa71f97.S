@@ -31,7 +31,7 @@ func000000000000000d:
 	zext.h	a1, a1
 	add	a0, a0, a1
 	lui	a1, 1048560
-	addiw	a1, a1, 15
+	addi	a1, a1, 15
 	add	a0, a0, a1
 	ret
 
@@ -51,7 +51,7 @@ func0000000000000005:
 	srli	a1, a1, 44
 	add	a0, a0, a1
 	lui	a1, 1048332
-	addiw	a1, a1, -576
+	addi	a1, a1, -576
 	add	a0, a0, a1
 	ret
 

@@ -5,7 +5,7 @@ func0000000000000000:
 	srliw	a3, a3, 30
 	add	a1, a1, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	sraiw	a1, a1, 2
 	srli	a3, a2, 63
@@ -22,7 +22,7 @@ func0000000000000021:
 	srliw	a3, a3, 30
 	add	a1, a1, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	sraiw	a1, a1, 2
 	srli	a3, a2, 63
@@ -39,7 +39,7 @@ func0000000000000065:
 	srliw	a3, a3, 30
 	add	a1, a1, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	sraiw	a1, a1, 2
 	srli	a3, a2, 63
@@ -56,7 +56,7 @@ func0000000000000025:
 	srliw	a3, a3, 30
 	add	a1, a1, a3
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	sraiw	a1, a1, 2
 	srli	a3, a2, 63

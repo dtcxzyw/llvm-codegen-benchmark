@@ -4,7 +4,7 @@ func0000000000000016:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	vmacc.vx	v12, a1, v10
 	slli	a1, a0, 32
 	vsrl.vi	v10, v12, 3

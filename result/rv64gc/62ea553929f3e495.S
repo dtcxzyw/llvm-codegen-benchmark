@@ -10,7 +10,7 @@ func0000000000000026:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a2, 1048572
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 .LBB1_2:
 	sub	a2, a2, a0
 	slti	a0, a2, 3

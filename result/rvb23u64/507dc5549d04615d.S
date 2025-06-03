@@ -12,7 +12,7 @@ func0000000000000001:
 	sext.w	a1, a0
 	sraiw	a0, a0, 8
 	lui	a2, 32
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xor	a1, a1, a2
 	li	a2, 254
 	czero.eqz	a0, a0, a1

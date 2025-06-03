@@ -3,7 +3,7 @@ func0000000000000003:
 	lui	a0, 126
 	bnez	a1, .LBB0_2
 	lui	a0, 2008
-	addiw	a0, a0, 512
+	addi	a0, a0, 512
 .LBB0_2:
 	ret
 

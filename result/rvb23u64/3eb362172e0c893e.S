@@ -50,7 +50,7 @@ func000000000000002c:
 	sext.w	a0, a0
 	zext.h	a2, a2
 	lui	a3, 3
-	addiw	a3, a3, -403
+	addi	a3, a3, -403
 	xor	a0, a0, a1
 	xor	a2, a2, a3
 	seqz	a1, a2

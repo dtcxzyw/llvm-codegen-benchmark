@@ -32,7 +32,7 @@ func0000000000000004:
 	sub	a1, a1, a0
 	lui	a0, 1048575
 	addi	a1, a1, -1240
-	addiw	a0, a0, 1616
+	addi	a0, a0, 1616
 	sltu	a0, a1, a0
 	ret
 

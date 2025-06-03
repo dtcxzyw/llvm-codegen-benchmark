@@ -20,10 +20,10 @@ func0000000000000318:
 	lui	a3, 3120
 	sltu	a1, a3, a1
 	lui	a3, 16
-	addiw	a3, a3, -1024
+	addi	a3, a3, -1024
 	and	a2, a2, a3
 	lui	a3, 12
-	addiw	a3, a3, 768
+	addi	a3, a3, 768
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

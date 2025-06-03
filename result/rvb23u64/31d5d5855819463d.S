@@ -9,15 +9,14 @@ func000000000000000e:
 func000000000000000f:
 	addi	a1, a1, 65
 	lui	a2, 512
-	addiw	a2, a2, -64
+	addi	a2, a2, -64
 	and	a1, a1, a2
 	mul	a0, a0, a1
 	ret
 
 func000000000000000c:
 	addi	a1, a1, 127
-	li	a2, 1
-	slli	a2, a2, 36
+	bseti	a2, zero, 36
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	mul	a0, a0, a1

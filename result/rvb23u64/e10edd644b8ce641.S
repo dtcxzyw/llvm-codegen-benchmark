@@ -18,10 +18,10 @@ func0000000000000013:
 	sext.w	a0, a0
 	li	a1, 1
 	max	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	add	a0, a0, a1
+	bseti	a1, zero, 35
 	slli	a0, a0, 4
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	ret
 
 func000000000000001f:

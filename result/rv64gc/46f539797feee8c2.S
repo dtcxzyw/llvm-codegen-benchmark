@@ -10,7 +10,7 @@ func000000000000014c:
 func000000000000028c:
 	lui	a2, 16
 	sext.w	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	sltu	a1, a1, a0
 	xor	a0, a0, a2

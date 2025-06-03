@@ -6,7 +6,7 @@ func0000000000000002:
 	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	lui	a1, 262152
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

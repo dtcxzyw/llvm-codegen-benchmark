@@ -11,7 +11,7 @@ func0000000000000000:
 	beqz	a0, .LBB0_2
 .LBB0_4:
 	lui	a0, 1048575
-	addiw	a0, a0, 2047
+	addi	a0, a0, 2047
 	and	a0, a0, a2
 	ret
 

@@ -12,7 +12,7 @@ func0000000000000142:
 	zext.h	a1, a1
 	lui	a2, 16
 	sltu	a1, a1, a0
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -85,7 +85,7 @@ func0000000000000102:
 	zext.h	a0, a0
 	lui	a2, 16
 	sltu	a1, a0, a1
-	addiw	a2, a2, -512
+	addi	a2, a2, -512
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1

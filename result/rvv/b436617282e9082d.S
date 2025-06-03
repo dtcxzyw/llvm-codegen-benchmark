@@ -41,7 +41,7 @@ func0000000000000008:
 
 func000000000000001e:
 	lui	a0, 3
-	addiw	a0, a0, 1408
+	addi	a0, a0, 1408
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmul.vv	v8, v10, v8

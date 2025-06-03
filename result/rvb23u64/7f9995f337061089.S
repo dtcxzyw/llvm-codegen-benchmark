@@ -36,7 +36,7 @@ func0000000000000002:
 func000000000000000a:
 	andi	a1, a1, 1
 	lui	a3, 1
-	addiw	a3, a3, 296
+	addi	a3, a3, 296
 	addw	a2, a2, a3
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1

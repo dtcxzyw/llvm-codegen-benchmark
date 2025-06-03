@@ -23,10 +23,10 @@ func000000000000000a:
 	srai	a0, a0, 13
 	add	a0, a0, a1
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	mul	a0, a0, a1
 	lui	a1, 1030267
-	addiw	a1, a1, -1537
+	addi	a1, a1, -1537
 	srli	a1, a1, 1
 	slt	a0, a1, a0
 	ret

@@ -33,7 +33,7 @@ func00000000000001ec:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
 	lui	a0, 298023
-	addiw	a0, a0, 917
+	addi	a0, a0, 917
 	vmacc.vx	v10, a0, v12
 	li	a0, -1
 	vadd.vv	v8, v10, v8

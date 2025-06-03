@@ -13,7 +13,7 @@ func0000000000000000:
 
 func000000000000000c:
 	lui	a0, 10486
-	addiw	a0, a0, -983
+	addi	a0, a0, -983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 31

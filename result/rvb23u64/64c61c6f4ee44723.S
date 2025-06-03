@@ -1,7 +1,7 @@
 func0000000000000010:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -5
+	addi	a2, a2, -5
 	sltu	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -23,7 +23,7 @@ func0000000000000004:
 func0000000000000011:
 	zext.h	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	sltu	a1, a1, a2
 	subw	a0, a0, a1
 	ret

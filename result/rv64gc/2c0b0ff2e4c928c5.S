@@ -35,7 +35,7 @@ func0000000000000026:
 func0000000000000146:
 	sext.w	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	sext.w	a0, a0
 	bge	a3, a2, .LBB3_2
 	li	a1, 2030

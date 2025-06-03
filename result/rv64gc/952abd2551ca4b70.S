@@ -4,7 +4,7 @@ func0000000000000009:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	slli	a3, a0, 29
 	slliw	a0, a0, 21
@@ -20,7 +20,7 @@ func0000000000000001:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	slli	a3, a0, 31
 	srli	a0, a0, 1
@@ -37,7 +37,7 @@ func0000000000000005:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	srli	a3, a0, 56
 	srli	a0, a0, 32
@@ -53,7 +53,7 @@ func0000000000000004:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	srli	a3, a0, 56
 	srli	a0, a0, 32
@@ -69,7 +69,7 @@ func0000000000000008:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	slli	a3, a0, 30
 	slliw	a0, a0, 22
@@ -85,7 +85,7 @@ func0000000000000000:
 	lui	a3, 4080
 	and	a2, a2, a3
 	lui	a3, 16
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	slli	a3, a0, 3
 	srli	a0, a0, 29

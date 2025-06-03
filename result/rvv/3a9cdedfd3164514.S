@@ -36,7 +36,7 @@ func00000000000001e1:
 	vmul.vv	v10, v10, v12
 	lui	a0, 65279
 	vmul.vv	v8, v10, v8
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 	vmseq.vx	v0, v8, a0
 	ret
 
@@ -45,7 +45,7 @@ func00000000000001ec:
 	vmul.vv	v10, v10, v12
 	lui	a0, 65279
 	vmul.vv	v8, v10, v8
-	addiw	a0, a0, 16
+	addi	a0, a0, 16
 	vmsne.vx	v0, v8, a0
 	ret
 

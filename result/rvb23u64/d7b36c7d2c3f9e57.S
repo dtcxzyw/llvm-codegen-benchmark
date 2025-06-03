@@ -7,8 +7,7 @@ func00000000000000c4:
 	ret
 
 func00000000000000c1:
-	li	a2, 1
-	slli	a2, a2, 34
+	bseti	a2, zero, 34
 	addi	a2, a2, -4
 	add.uw	a1, a1, a2
 	slli	a1, a1, 30
@@ -19,8 +18,7 @@ func00000000000000c1:
 
 func00000000000001c1:
 	sext.w	a1, a1
-	li	a2, 1
-	slli	a2, a2, 33
+	bseti	a2, zero, 33
 	addi	a2, a2, -8
 	add	a1, a1, a2
 	slli	a1, a1, 31

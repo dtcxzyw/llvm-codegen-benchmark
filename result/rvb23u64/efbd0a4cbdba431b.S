@@ -28,7 +28,7 @@ func0000000000000013:
 	addi	a0, a0, -1
 	lui	a1, 149797
 	zext.w	a2, a0
-	addiw	a1, a1, -1755
+	addi	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

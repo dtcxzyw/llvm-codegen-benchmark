@@ -1,6 +1,6 @@
 func0000000000000007:
 	lui	a1, 256
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a0, a0, a1
 	lui	a1, 16
 	add	a0, a0, a1
@@ -12,7 +12,7 @@ func0000000000000002:
 	and	a1, a1, a0
 	add	a1, a1, a2
 	lui	a2, 1047560
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

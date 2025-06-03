@@ -4,9 +4,9 @@ func0000000000000024:
 	li	a2, 2
 	lui	a0, 1
 	bltu	a1, a2, .LBB0_2
-	addiw	a0, a0, -1768
+	addi	a0, a0, -1768
 	ret
 .LBB0_2:
-	addiw	a0, a0, -1784
+	addi	a0, a0, -1784
 	ret
 

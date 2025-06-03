@@ -133,7 +133,7 @@ func000000000000002a:
 	sext.b	a0, a0
 	zext.h	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 16
+	addi	a2, a2, 16
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 4

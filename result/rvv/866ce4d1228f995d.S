@@ -38,7 +38,7 @@ func00000000000001e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
 	lui	a0, 32
-	addiw	a0, a0, -64
+	addi	a0, a0, -64
 	vand.vx	v10, v10, a0
 	li	a0, 64
 	vadd.vx	v8, v8, a0
@@ -50,7 +50,7 @@ func00000000000001c1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
 	lui	a0, 32
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vi	v8, v8, 8
 	vmseq.vv	v0, v8, v10

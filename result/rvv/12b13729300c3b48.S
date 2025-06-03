@@ -23,7 +23,7 @@ func0000000000000034:
 	vmseq.vi	v0, v12, 0
 	lui	a0, 230
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 

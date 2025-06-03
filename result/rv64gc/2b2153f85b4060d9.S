@@ -1,6 +1,6 @@
 func00000000000001f4:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	mul	a0, a0, a2
 	and	a1, a1, a3
@@ -10,7 +10,7 @@ func00000000000001f4:
 
 func0000000000000004:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	mul	a0, a0, a2
 	and	a1, a1, a3
@@ -20,7 +20,7 @@ func0000000000000004:
 
 func0000000000000008:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	mul	a0, a0, a2
@@ -31,7 +31,7 @@ func0000000000000008:
 
 func00000000000001c4:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	mul	a0, a0, a2
 	and	a1, a1, a3
@@ -41,7 +41,7 @@ func00000000000001c4:
 
 func0000000000000014:
 	lui	a3, 16
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	mul	a0, a0, a2
 	and	a1, a1, a3

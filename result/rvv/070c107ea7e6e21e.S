@@ -26,7 +26,7 @@ func0000000000000000:
 func0000000000000195:
 	lui	a0, 2153
 	li	a1, 32
-	addiw	a0, a0, 547
+	addi	a0, a0, 547
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, %hi(.LCPI2_0)

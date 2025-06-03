@@ -1,7 +1,7 @@
 func00000000000000c1:
 	sext.w	a0, a0
 	lui	a2, 244
-	addiw	a2, a2, 577
+	addi	a2, a2, 577
 	seqz	a0, a0
 	slt	a1, a1, a2
 	and	a0, a0, a1

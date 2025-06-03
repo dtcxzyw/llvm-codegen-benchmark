@@ -5,7 +5,7 @@ func00000000000000a1:
 	lui	a0, 1
 	vor.vv	v10, v12, v10
 	vmseq.vi	v0, v10, 0
-	addiw	a0, a0, 1025
+	addi	a0, a0, 1025
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

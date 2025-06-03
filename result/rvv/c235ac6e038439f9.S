@@ -12,7 +12,7 @@ func0000000000000004:
 	lui	a1, 349525
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	addiw	a0, a1, 1365
+	addi	a0, a1, 1365
 	vor.vv	v8, v12, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1

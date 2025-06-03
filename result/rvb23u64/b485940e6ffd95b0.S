@@ -143,7 +143,7 @@ func0000000000000210:
 	sltiu	a2, a2, 249
 	or	a1, a1, a2
 	lui	a2, 21094
-	addiw	a2, a2, -1025
+	addi	a2, a2, -1025
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

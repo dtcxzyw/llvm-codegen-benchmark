@@ -35,7 +35,7 @@ func0000000000000018:
 
 func0000000000000004:
 	lui	a0, 24
-	addiw	a0, a0, 1697
+	addi	a0, a0, 1697
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
 	vmand.mm	v8, v8, v9

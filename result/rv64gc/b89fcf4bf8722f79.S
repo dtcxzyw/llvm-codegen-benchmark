@@ -31,7 +31,7 @@ func0000000000000007:
 func000000000000000c:
 	addi	a2, a2, 128
 	lui	a3, 4096
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -39,7 +39,7 @@ func000000000000000c:
 
 func0000000000000001:
 	lui	a3, 2
-	addiw	a3, a3, -32
+	addi	a3, a3, -32
 	add	a2, a2, a3
 	and	a2, a2, a3
 	or	a0, a0, a1

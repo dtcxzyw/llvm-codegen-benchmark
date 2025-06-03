@@ -132,7 +132,7 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
 	lui	a0, 1048428
-	addiw	a0, a0, 1408
+	addi	a0, a0, 1408
 	vadd.vx	v10, v10, a0
 	vmsne.vv	v0, v10, v8
 	ret

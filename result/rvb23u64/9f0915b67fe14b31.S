@@ -31,7 +31,7 @@ func0000000000000141:
 	sext.b	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 52429
-	addiw	a2, a2, -820
+	addi	a2, a2, -820
 	slti	a0, a0, 56
 	xor	a1, a1, a2
 	seqz	a1, a1

@@ -4,7 +4,7 @@ func000000000000000b:
 	slli	a1, a1, 16
 	or	a1, a1, a2
 	lui	a2, 16
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -23,7 +23,7 @@ func000000000000000f:
 	slli	a2, a2, 16
 	lui	a3, 16
 	zext.b	a0, a0
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

@@ -26,7 +26,7 @@ func0000000000000003:
 	vand.vx	v10, v10, a0
 	lui	a0, 1
 	vor.vv	v8, v8, v10
-	addiw	a0, a0, 1092
+	addi	a0, a0, 1092
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

@@ -28,7 +28,7 @@ func000000000000001b:
 	mul	a0, a0, a1
 	lui	a1, 25
 	srli	a0, a0, 26
-	addiw	a1, a1, -1890
+	addi	a1, a1, -1890
 	add	a0, a0, a1
 	ret
 

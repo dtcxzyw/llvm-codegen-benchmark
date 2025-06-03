@@ -1,6 +1,6 @@
 func0000000000000050:
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vsll.vi	v12, v12, 16

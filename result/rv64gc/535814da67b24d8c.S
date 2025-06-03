@@ -25,9 +25,9 @@ func0000000000000061:
 func0000000000000051:
 	lui	a1, 16
 	lui	a2, 10
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	and	a0, a0, a1
-	addiw	a2, a2, -255
+	addi	a2, a2, -255
 	lui	a1, 1048569
 	bltu	a0, a2, .LBB2_2
 	lui	a1, 1048565

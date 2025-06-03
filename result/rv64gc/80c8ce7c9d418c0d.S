@@ -33,10 +33,10 @@ func0000000000000026:
 func0000000000000008:
 	mulw	a1, a1, a2
 	lui	a2, 1
-	addiw	a2, a2, -96
+	addi	a2, a2, -96
 	bgeu	a2, a1, .LBB4_2
 	lui	a0, 61
-	addiw	a0, a0, 144
+	addi	a0, a0, 144
 .LBB4_2:
 	ret
 

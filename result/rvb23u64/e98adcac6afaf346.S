@@ -15,7 +15,7 @@ func0000000000000042:
 	add	a1, a1, a2
 	lui	a2, 2621
 	roriw	a1, a1, 4
-	addiw	a2, a2, 1803
+	addi	a2, a2, 1803
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -30,7 +30,7 @@ func0000000000000058:
 	add	a1, a1, a2
 	lui	a2, 10486
 	roriw	a1, a1, 2
-	addiw	a2, a2, -984
+	addi	a2, a2, -984
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

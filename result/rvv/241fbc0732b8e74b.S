@@ -41,7 +41,7 @@ func00000000000001e6:
 	vand.vx	v10, v12, a0
 	lui	a0, 16
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 7
+	addi	a0, a0, 7
 	vmslt.vx	v0, v8, a0
 	ret
 

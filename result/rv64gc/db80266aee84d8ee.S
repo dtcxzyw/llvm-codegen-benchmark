@@ -6,7 +6,7 @@ func0000000000000003:
 func0000000000000000:
 	slli	a0, a0, 1
 	lui	a1, 19474
-	addiw	a1, a1, -585
+	addi	a1, a1, -585
 	xor	a0, a0, a1
 	ret
 

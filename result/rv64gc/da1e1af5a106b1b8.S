@@ -5,7 +5,7 @@ func00000000000001ef:
 	lui	a3, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a1, a3, -440
+	addi	a1, a3, -440
 	add	a0, a0, a1
 	ret
 

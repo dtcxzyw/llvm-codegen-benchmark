@@ -46,11 +46,11 @@ func0000000000000042:
 	seqz	a2, a2
 	lui	a3, 42
 	addi	a2, a2, -1
-	addiw	a3, a3, -4
+	addi	a3, a3, -4
 	and	a2, a2, a3
 	lui	a3, 9
 	addi	a0, a0, -1
-	addiw	a3, a3, -940
+	addi	a3, a3, -940
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1

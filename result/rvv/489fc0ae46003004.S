@@ -4,7 +4,7 @@ func000000000000054a:
 	vmul.vv	v10, v10, v8
 	vmul.vv	v8, v8, v8
 	lui	a0, 24390
-	addiw	a0, a0, -1440
+	addi	a0, a0, -1440
 	vminu.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8
 	ret

@@ -8,7 +8,7 @@ func0000000000000041:
 
 func000000000000004c:
 	lui	a3, 131072
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
 	li	a3, 5

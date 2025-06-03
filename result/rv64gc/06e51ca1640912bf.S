@@ -1,7 +1,7 @@
 func0000000000000318:
 	lui	a2, 1
-	addiw	a3, a2, -991
-	addiw	a2, a2, -1279
+	addi	a3, a2, -991
+	addi	a2, a2, -1279
 	xor	a3, a3, a1
 	xor	a1, a1, a2
 	snez	a2, a3

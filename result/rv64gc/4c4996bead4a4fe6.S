@@ -186,7 +186,7 @@ func000000000000004a:
 func0000000000000044:
 	subw	a0, a0, a1
 	lui	a1, 1048575
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret
 
@@ -194,7 +194,7 @@ func00000000000001f4:
 	subw	a1, a1, a0
 	lui	a0, 262144
 	addiw	a1, a1, 100
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	sltu	a0, a1, a0
 	ret
 

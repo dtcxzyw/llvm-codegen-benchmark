@@ -21,7 +21,7 @@ func0000000000000007:
 	feq.d	a1, fa0, fa1
 	bnez	a1, .LBB3_2
 	lui	a0, 32768
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 .LBB3_2:
 	ret
 

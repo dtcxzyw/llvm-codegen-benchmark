@@ -14,7 +14,7 @@ func000000000000007f:
 	lui	a3, 3
 	slli	a2, a2, 62
 	sext.w	a0, a0
-	addiw	a3, a3, 1616
+	addi	a3, a3, 1616
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

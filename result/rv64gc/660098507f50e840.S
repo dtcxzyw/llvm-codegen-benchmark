@@ -2,7 +2,7 @@ func0000000000000001:
 	sub	a1, a1, a0
 	lui	a0, 16
 	addi	a1, a1, 48
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	and	a0, a0, a1
 	addi	a0, a0, -40
 	ret

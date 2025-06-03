@@ -33,7 +33,7 @@ func0000000000000001:
 	lui	a0, 1
 	vand.vx	v12, v12, a0
 	lui	a0, 1048575
-	addiw	a0, a0, -129
+	addi	a0, a0, -129
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	vor.vv	v8, v8, v12

@@ -13,7 +13,7 @@ func0000000000000021:
 
 func000000000000002a:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	vmsgt.vi	v0, v8, 0
@@ -28,11 +28,11 @@ func0000000000000008:
 
 func0000000000000028:
 	lui	a0, 1048544
-	addiw	a0, a0, 30
+	addi	a0, a0, 30
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	lui	a0, 16
-	addiw	a0, a0, -16
+	addi	a0, a0, -16
 	vmsgtu.vx	v0, v8, a0
 	ret
 

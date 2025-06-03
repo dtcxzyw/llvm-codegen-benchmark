@@ -26,8 +26,8 @@ func0000000000000000:
 func0000000000000002:
 	lui	a3, 520200
 	lui	a4, 2032
-	addiw	a3, a3, -256
-	addiw	a4, a4, 127
+	addi	a3, a3, -256
+	addi	a4, a4, 127
 	slli	a5, a3, 32
 	add	a3, a3, a5
 	slli	a5, a4, 32
@@ -50,9 +50,8 @@ func0000000000000006:
 
 func000000000000000e:
 	slli	a2, a2, 54
-	li	a3, 1
+	bseti	a3, zero, 34
 	srli	a2, a2, 20
-	slli	a3, a3, 34
 	addi	a3, a3, -256
 	and	a1, a1, a3
 	or	a0, a0, a2

@@ -71,7 +71,7 @@ func0000000000000024:
 .LBB7_2:
 	sext.w	a0, a0
 	lui	a1, 419430
-	addiw	a1, a1, 1638
+	addi	a1, a1, 1638
 	sltu	a0, a0, a1
 	ret
 

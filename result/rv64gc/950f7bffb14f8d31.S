@@ -52,7 +52,7 @@ func000000000000002c:
 
 func000000000000006c:
 	lui	a1, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, -8
 	snez	a0, a0

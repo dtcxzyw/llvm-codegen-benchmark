@@ -9,10 +9,10 @@ func0000000000000104:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
 	lui	a0, 950920
-	addiw	a1, a0, -1025
+	addi	a1, a0, -1025
 	vmv.v.x	v10, a1
 	vmacc.vv	v10, v8, v12
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vmsltu.vx	v0, v10, a0
 	ret
 

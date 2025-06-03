@@ -7,7 +7,7 @@ func0000000000000004:
 	orn	a0, a0, a2
 	lui	a2, 256
 	srli	a1, a1, 24
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

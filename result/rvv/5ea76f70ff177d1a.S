@@ -2,7 +2,7 @@ func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 2
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -14,7 +14,7 @@ func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
 	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -29,7 +29,7 @@ func0000000000000000:
 	lui	a0, 1048574
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
-	addiw	a2, a0, 40
+	addi	a2, a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a2
 	vsrl.vi	v8, v8, 3
@@ -45,7 +45,7 @@ func000000000000002f:
 	lui	a1, 526344
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addiw	a0, a1, 129
+	addi	a0, a1, 129
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	li	a1, -129

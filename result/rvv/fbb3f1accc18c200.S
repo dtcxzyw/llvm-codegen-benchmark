@@ -26,7 +26,7 @@ func000000000000001e:
 	vzext.vf4	v12, v10
 	lui	a0, 16
 	vwsll.vi	v10, v12, 8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v10, v8
 	bseti	a0, a0, 32

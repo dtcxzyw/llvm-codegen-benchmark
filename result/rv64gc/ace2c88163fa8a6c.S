@@ -12,7 +12,7 @@ func0000000000000026:
 	srli	a2, a2, 48
 	subw	a2, a2, a1
 	lui	a1, 4
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret

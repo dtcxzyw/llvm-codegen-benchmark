@@ -14,7 +14,7 @@ func00000000000000f8:
 
 func00000000000000f4:
 	lui	a2, 16
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	addi	a1, a1, 16
 	sltu	a0, a1, a0

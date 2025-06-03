@@ -7,7 +7,7 @@ func0000000000000181:
 	addi	a2, a2, -1912
 	add	a1, a1, a2
 	lui	a2, 17476
-	addiw	a2, a2, 1093
+	addi	a2, a2, 1093
 	addi	a0, a0, -2
 	roriw	a1, a1, 2
 	sltu	a1, a1, a2

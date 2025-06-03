@@ -33,7 +33,7 @@ func0000000000000080:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 36
-	addiw	a0, a0, 1856
+	addi	a0, a0, 1856
 	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

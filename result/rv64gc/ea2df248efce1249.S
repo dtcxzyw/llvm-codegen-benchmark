@@ -46,7 +46,7 @@ func0000000000000006:
 	lui	a3, 1048575
 	and	a1, a1, a3
 	lui	a3, 1
-	addiw	a3, a3, -64
+	addi	a3, a3, -64
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1

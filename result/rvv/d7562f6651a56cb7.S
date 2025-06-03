@@ -2,7 +2,7 @@ func0000000000000061:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vi	v0, v8, 4
 	lui	a0, 1
-	addiw	a0, a0, -295
+	addi	a0, a0, -295
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 
@@ -35,7 +35,7 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vi	v0, v8, 0
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

@@ -4,7 +4,7 @@ func000000000000001b:
 	vadd.vx	v10, v10, a0
 	lui	a0, 262144
 	vsrl.vi	v10, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
@@ -37,7 +37,7 @@ func0000000000000019:
 	vadd.vx	v10, v10, a0
 	lui	a0, 262144
 	vsrl.vi	v10, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
@@ -59,7 +59,7 @@ func0000000000000018:
 	vadd.vx	v10, v10, a0
 	lui	a0, 262144
 	vsrl.vi	v10, v10, 3
-	addiw	a0, a0, -8
+	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret

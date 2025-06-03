@@ -75,7 +75,7 @@ func000000000000008c:
 	slli	a1, a1, 24
 	czero.nez	a0, a1, a0
 	lui	a1, 1044480
-	addiw	a1, a1, 2
+	addi	a1, a1, 2
 	add	a0, a0, a1
 	ret
 

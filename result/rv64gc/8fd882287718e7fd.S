@@ -33,12 +33,12 @@ func000000000000002b:
 	sext.w	a1, a1
 	bgtz	a1, .LBB3_2
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a1, a0
 	ret
 .LBB3_2:
 	lui	a1, 1221
-	addiw	a1, a1, -1216
+	addi	a1, a1, -1216
 	mul	a0, a1, a0
 	ret
 

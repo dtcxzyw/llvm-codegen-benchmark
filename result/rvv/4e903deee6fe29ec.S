@@ -51,7 +51,7 @@ func0000000000000188:
 
 func0000000000000186:
 	lui	a0, 1046135
-	addiw	a0, a0, -1663
+	addi	a0, a0, -1663
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

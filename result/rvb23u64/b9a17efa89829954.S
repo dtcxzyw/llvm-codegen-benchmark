@@ -27,7 +27,7 @@ func0000000000000008:
 func0000000000000018:
 	zext.h	a2, a2
 	lui	a3, 5
-	addiw	a3, a3, -1719
+	addi	a3, a3, -1719
 	xor	a2, a2, a3
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
@@ -38,7 +38,7 @@ func0000000000000018:
 func0000000000000003:
 	zext.h	a2, a2
 	lui	a3, 1
-	addiw	a3, a3, -2002
+	addi	a3, a3, -2002
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

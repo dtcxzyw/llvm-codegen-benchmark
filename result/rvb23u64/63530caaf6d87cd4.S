@@ -23,7 +23,7 @@ func0000000000000005:
 func0000000000000000:
 	andi	a0, a0, 1
 	lui	a3, 1046530
-	addiw	a3, a3, -848
+	addi	a3, a3, -848
 	and	a2, a2, a3
 	addi	a2, a2, 832
 	czero.nez	a1, a1, a0

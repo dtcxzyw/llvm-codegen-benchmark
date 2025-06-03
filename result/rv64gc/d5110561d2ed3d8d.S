@@ -15,7 +15,7 @@ func0000000000000000:
 func0000000000000018:
 	srli	a1, a1, 11
 	lui	a2, 61440
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000018:
 func000000000000001e:
 	srli	a1, a1, 11
 	lui	a2, 61440
-	addiw	a2, a2, 15
+	addi	a2, a2, 15
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2

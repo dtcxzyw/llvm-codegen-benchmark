@@ -58,7 +58,7 @@ func0000000000000060:
 	vmv1r.v	v12, v8
 	lui	a0, 376095
 	vwaddu.wv	v10, v10, v9
-	addiw	a0, a0, -1643
+	addi	a0, a0, -1643
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -92,7 +92,7 @@ func000000000000007f:
 	vmv1r.v	v12, v8
 	lui	a0, 24414
 	vwaddu.wv	v10, v10, v9
-	addiw	a0, a0, 256
+	addi	a0, a0, 256
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

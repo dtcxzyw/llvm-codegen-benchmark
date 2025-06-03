@@ -37,7 +37,7 @@ func000000000000000f:
 	slli	a0, a0, 1
 	lui	a1, 64
 	addi	a0, a0, 2
-	addiw	a1, a1, -32
+	addi	a1, a1, -32
 	and	a0, a0, a1
 	ret
 
@@ -56,7 +56,7 @@ func000000000000000b:
 
 func0000000000000000:
 	lui	a1, 8
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	sh3add	a0, a0, a1
 	lui	a1, 1048568
 	and	a0, a0, a1
@@ -67,7 +67,7 @@ func0000000000000003:
 	lui	a1, 5
 	add	a0, a0, a1
 	lui	a1, 65536
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slli	a1, a1, 12
 	and	a0, a0, a1
 	ret

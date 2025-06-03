@@ -24,7 +24,7 @@ func0000000000000001:
 	add	a0, a0, a1
 	lui	a1, 1048555
 	zext.b	a0, a0
-	addiw	a1, a1, -384
+	addi	a1, a1, -384
 	mul	a0, a0, a1
 	ret
 

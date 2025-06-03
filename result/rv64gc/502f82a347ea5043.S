@@ -3,7 +3,7 @@
 func00000000000000d7:
 	srli	a2, a2, 3
 	lui	a3, 675749
-	addiw	a3, a3, -91
+	addi	a3, a3, -91
 	slli	a4, a3, 36
 	add	a3, a3, a4
 	lui	a4, %hi(.LCPI0_0)
@@ -46,7 +46,7 @@ func00000000000000c0:
 	srai	a2, a2, 3
 	lui	a3, 699051
 	srai	a1, a1, 3
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -86,7 +86,7 @@ func00000000000000d4:
 	srai	a2, a2, 3
 	lui	a3, 699051
 	srai	a1, a1, 3
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3
@@ -100,7 +100,7 @@ func00000000000000d5:
 	srai	a2, a2, 3
 	lui	a3, 699051
 	srai	a1, a1, 3
-	addiw	a3, a3, -1365
+	addi	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

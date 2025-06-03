@@ -2,7 +2,7 @@ func000000000000000c:
 	andi	a1, a1, 3
 	sh3add	a0, a1, a0
 	lui	a1, 4
-	addiw	a1, a1, 240
+	addi	a1, a1, 240
 	add	a0, a0, a1
 	ret
 

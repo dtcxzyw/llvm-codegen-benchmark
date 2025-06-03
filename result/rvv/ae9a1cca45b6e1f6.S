@@ -8,12 +8,12 @@ func0000000000000044:
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	lui	a0, 21094
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vsra.vi	v12, v12, 25
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10
 	lui	a0, 1047697
-	addiw	a0, a0, 384
+	addi	a0, a0, 384
 	vmadd.vx	v8, a0, v12
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000040:
 	li	a0, 34
 	vsra.vx	v12, v12, a0
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vadd.vv	v12, v12, v14
 	vnmsub.vx	v12, a0, v10

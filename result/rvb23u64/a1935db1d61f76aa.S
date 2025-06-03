@@ -42,8 +42,8 @@ func0000000000000021:
 
 func0000000000000088:
 	lui	a3, 4
-	addiw	a4, a3, 332
-	addiw	a3, a3, 333
+	addi	a4, a3, 332
+	addi	a3, a3, 333
 	sltu	a2, a2, a4
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2

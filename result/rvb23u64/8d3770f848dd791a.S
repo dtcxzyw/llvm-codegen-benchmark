@@ -68,7 +68,7 @@ func0000000000000304:
 	zext.w	a1, a1
 	lui	a2, 1
 	srliw	a0, a0, 12
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -78,7 +78,7 @@ func0000000000000301:
 	sext.w	a0, a0
 	zext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -88,7 +88,7 @@ func0000000000000306:
 	sext.w	a0, a0
 	zext.w	a1, a1
 	lui	a2, 1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	slti	a0, a0, 0
 	and	a0, a0, a1

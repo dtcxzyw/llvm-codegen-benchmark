@@ -173,7 +173,7 @@ func0000000000000885:
 	sext.w	a2, a2
 	sltu	a0, a2, a0
 	lui	a2, 16
-	addiw	a2, a2, -63
+	addi	a2, a2, -63
 	sltu	a1, a1, a2
 	andn	a0, a1, a0
 	ret

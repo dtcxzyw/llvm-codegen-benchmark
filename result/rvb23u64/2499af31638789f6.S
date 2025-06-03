@@ -50,7 +50,7 @@ func0000000000000070:
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	lui	a1, 13
-	addiw	a1, a1, -616
+	addi	a1, a1, -616
 	add	a0, a0, a1
 	ret
 

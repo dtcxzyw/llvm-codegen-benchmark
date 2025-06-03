@@ -4,7 +4,7 @@ func0000000000000033:
 	li	a3, -4
 	czero.nez	a0, a3, a0
 	lui	a3, 2
-	addiw	a3, a3, 368
+	addi	a3, a3, 368
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

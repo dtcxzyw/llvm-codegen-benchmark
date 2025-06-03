@@ -19,7 +19,7 @@ func0000000000000004:
 	li	a0, 257
 	vmerge.vxm	v12, v12, a0, v0
 	lui	a0, 63424
-	addiw	a0, a0, -461
+	addi	a0, a0, -461
 	vor.vv	v8, v12, v8
 	bseti	a0, a0, 31
 	bseti	a0, a0, 55

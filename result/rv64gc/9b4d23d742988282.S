@@ -4,7 +4,7 @@ func0000000000000425:
 	sext.w	a2, a2
 	lui	a3, 878478
 	lui	a4, %hi(.LCPI0_0)
-	addiw	a3, a3, 1991
+	addi	a3, a3, 1991
 	ld	a4, %lo(.LCPI0_0)(a4)
 	sltu	a2, a3, a2
 	add	a0, a0, a1

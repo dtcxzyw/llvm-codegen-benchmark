@@ -38,7 +38,7 @@ func000000000000000f:
 func000000000000000c:
 	srli	a1, a1, 28
 	lui	a2, 25
-	addiw	a2, a2, -1890
+	addi	a2, a2, -1890
 	add	a0, a0, a2
 	mul	a0, a0, a1
 	ret

@@ -3,7 +3,7 @@ func000000000000012a:
 	slli	a0, a0, 7
 	or	a0, a0, a1
 	lui	a1, 4096
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 

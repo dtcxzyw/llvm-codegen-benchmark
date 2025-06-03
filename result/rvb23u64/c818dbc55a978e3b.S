@@ -8,7 +8,7 @@ func0000000000000001:
 	srai	a1, a1, 26
 	add	a1, a1, a2
 	lui	a2, 244141
-	addiw	a2, a2, -1536
+	addi	a2, a2, -1536
 	mul	a2, a2, a1
 	sub	a0, a0, a2
 	srai	a0, a0, 63

@@ -16,7 +16,7 @@ func0000000000000054:
 	vsra.vi	v12, v12, 3
 	vadd.vv	v10, v8, v10
 	lui	a0, 748983
-	addiw	a0, a0, -585
+	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmacc.vx	v10, a0, v12

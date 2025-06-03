@@ -17,7 +17,7 @@ func0000000000000112:
 	sub	a2, a1, a0
 	lui	a3, 122070
 	sltu	a0, a0, a1
-	addiw	a1, a3, 1280
+	addi	a1, a3, 1280
 	sltu	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

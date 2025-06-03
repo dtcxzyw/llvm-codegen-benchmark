@@ -12,7 +12,7 @@ func000000000000001e:
 
 func000000000000003e:
 	lui	a3, 119
-	addiw	a3, a3, -762
+	addi	a3, a3, -762
 	mulhu	a4, a2, a3
 	mul	a2, a2, a3
 	add	a0, a0, a2

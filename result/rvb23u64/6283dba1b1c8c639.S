@@ -2,7 +2,7 @@ func0000000000000004:
 	lui	a1, 838861
 	lui	a2, 104858
 	addi	a1, a1, -819
-	addiw	a2, a2, -1638
+	addi	a2, a2, -1638
 	mul	a1, a1, a0
 	roriw	a1, a1, 1
 	sltu	a2, a1, a2

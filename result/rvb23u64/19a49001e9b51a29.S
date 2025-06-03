@@ -20,8 +20,8 @@ func0000000000000048:
 	zext.h	a0, a0
 	lui	a1, 16
 	lui	a2, 8
-	addiw	a1, a1, -2
-	addiw	a2, a2, 1
+	addi	a1, a1, -2
+	addi	a2, a2, 1
 	xor	a1, a1, a0
 	seqz	a1, a1
 	sltu	a0, a0, a2

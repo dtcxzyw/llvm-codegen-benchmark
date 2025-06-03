@@ -5,7 +5,7 @@ func0000000000000021:
 	addi	a2, a2, -33
 	and	a2, a2, a1
 	sext.w	a2, a2
-	addiw	a3, a3, -940
+	addi	a3, a3, -940
 	beq	a2, a3, .LBB0_2
 	mv	a0, a1
 .LBB0_2:

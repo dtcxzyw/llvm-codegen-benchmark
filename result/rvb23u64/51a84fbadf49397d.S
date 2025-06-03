@@ -3,7 +3,7 @@ func00000000000000e8:
 	zext.w	a2, a2
 	lui	a3, 1024
 	czero.nez	a2, a2, a1
-	addiw	a3, a3, -27
+	addi	a3, a3, -27
 	slli	a3, a3, 10
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2

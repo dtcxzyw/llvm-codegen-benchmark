@@ -14,7 +14,7 @@ func000000000000004a:
 	add	a1, a1, a2
 	lui	a2, 8
 	sraw	a0, a1, a0
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slt	a0, a2, a0
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000046:
 	add	a1, a1, a2
 	lui	a2, 1048568
 	sraw	a0, a1, a0
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slt	a0, a0, a2
 	ret
 

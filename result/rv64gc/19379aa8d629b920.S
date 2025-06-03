@@ -115,7 +115,7 @@ func0000000000000621:
 func00000000000000e8:
 	sext.w	a2, a2
 	lui	a3, 275748
-	addiw	a3, a3, 818
+	addi	a3, a3, 818
 	sext.w	a0, a0
 	beq	a2, a3, .LBB10_2
 	li	a2, 8

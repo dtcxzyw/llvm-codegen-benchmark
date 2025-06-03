@@ -28,7 +28,7 @@ func000000000000001b:
 
 func0000000000000003:
 	lui	a3, 1
-	addiw	a3, a3, 904
+	addi	a3, a3, 904
 	sub	a3, a3, a2
 	minu	a1, a3, a1
 	add	a0, a0, a1

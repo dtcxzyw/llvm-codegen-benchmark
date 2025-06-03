@@ -93,7 +93,7 @@ func0000000000000141:
 
 func0000000000000146:
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
 	vmerge.vvm	v10, v12, v10, v0

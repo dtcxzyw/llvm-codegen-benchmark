@@ -57,7 +57,7 @@ func0000000000000281:
 
 func0000000000000301:
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 5
@@ -91,8 +91,8 @@ func0000000000000314:
 	lui	a2, 524288
 	lui	a3, 21094
 	addiw	a2, a2, -1024
-	addiw	a4, a3, -1025
-	addiw	a3, a3, -1024
+	addi	a4, a3, -1025
+	addi	a3, a3, -1024
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a1, a4, a1

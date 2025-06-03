@@ -1,7 +1,7 @@
 func0000000000000083:
 	sext.w	a1, a1
 	lui	a3, 131072
-	addiw	a3, a3, -2
+	addi	a3, a3, -2
 	bne	a1, a3, .LBB0_2
 	li	a1, -16
 	or	a0, a0, a1
@@ -32,7 +32,7 @@ func00000000000000c2:
 func0000000000000015:
 	sext.w	a1, a1
 	lui	a3, 8
-	addiw	a3, a3, -641
+	addi	a3, a3, -641
 	bge	a3, a1, .LBB3_2
 	lui	a1, 129024
 	or	a0, a0, a1

@@ -21,11 +21,11 @@ func00000000000001b4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 160
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmul.vx	v8, v8, a0
 	lui	a0, 115
 	vsrl.vi	v10, v10, 21
-	addiw	a0, a0, -744
+	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -34,11 +34,11 @@ func00000000000001b0:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 1048332
-	addiw	a0, a0, 1619
+	addi	a0, a0, 1619
 	vmul.vx	v8, v8, a0
 	lui	a0, 160
 	vsrl.vi	v10, v10, 21
-	addiw	a0, a0, -1177
+	addi	a0, a0, -1177
 	vmacc.vx	v8, a0, v10
 	ret
 

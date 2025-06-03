@@ -2,7 +2,7 @@ func000000000000000f:
 	addi	a0, a0, -97
 	lui	a1, 10240
 	bset	a0, zero, a0
-	addiw	a1, a1, -4
+	addi	a1, a1, -4
 	and	a0, a0, a1
 	ret
 

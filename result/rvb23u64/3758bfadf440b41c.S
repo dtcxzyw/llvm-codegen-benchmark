@@ -16,7 +16,7 @@ func0000000000000002:
 
 func0000000000000029:
 	lui	a3, 4096
-	addiw	a3, a3, -2048
+	addi	a3, a3, -2048
 	and	a2, a2, a3
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

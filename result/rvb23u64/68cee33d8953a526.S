@@ -51,7 +51,7 @@ func0000000000000199:
 func00000000000000a9:
 	sext.w	a1, a0
 	lui	a2, 1
-	addiw	a2, a2, -496
+	addi	a2, a2, -496
 	slt	a1, a2, a1
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1

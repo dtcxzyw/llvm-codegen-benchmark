@@ -14,7 +14,7 @@ func0000000000000009:
 	vsrl.vi	v10, v8, 9
 	lui	a0, 4096
 	vsll.vi	v8, v8, 17
-	addiw	a0, a0, -32
+	addi	a0, a0, -32
 	vand.vx	v10, v10, a0
 	lui	a0, 393216
 	vand.vx	v8, v8, a0
@@ -26,7 +26,7 @@ func0000000000000001:
 	vsrl.vi	v10, v8, 4
 	lui	a0, 16
 	vsll.vi	v8, v8, 16
-	addiw	a0, a0, -256
+	addi	a0, a0, -256
 	vand.vx	v10, v10, a0
 	lui	a0, 65520
 	vand.vx	v8, v8, a0
@@ -38,7 +38,7 @@ func0000000000000005:
 	vsrl.vi	v10, v8, 4
 	lui	a0, 61440
 	vsll.vi	v8, v8, 8
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	slli	a0, a0, 24
 	addi	a0, a0, 15
 	vand.vx	v10, v10, a0

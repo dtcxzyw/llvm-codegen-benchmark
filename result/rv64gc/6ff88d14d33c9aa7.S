@@ -114,7 +114,7 @@ func0000000000000054:
 	sub	a1, a1, a2
 	lui	a2, 4
 	slti	a1, a1, 509
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0

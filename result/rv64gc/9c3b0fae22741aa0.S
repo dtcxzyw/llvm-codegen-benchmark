@@ -51,7 +51,7 @@ func0000000000000374:
 	lui	a2, 3
 	srliw	a1, a1, 8
 	addw	a0, a0, a1
-	addiw	a1, a2, 1946
+	addi	a1, a2, 1946
 	sltu	a0, a0, a1
 	ret
 

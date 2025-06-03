@@ -9,11 +9,11 @@ func0000000000000007:
 
 func0000000000000001:
 	lui	a2, 2032
-	addiw	a2, a2, 127
+	addi	a2, a2, 127
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	lui	a3, 520200
-	addiw	a3, a3, -256
+	addi	a3, a3, -256
 	and	a1, a1, a2
 	slli	a2, a1, 8
 	slli	a1, a1, 10

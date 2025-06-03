@@ -101,7 +101,7 @@ func000000000000000a:
 func0000000000000018:
 	addiw	a0, a0, -2027
 	lui	a1, 1048575
-	addiw	a1, a1, 2047
+	addi	a1, a1, 2047
 	sltu	a0, a0, a1
 	li	a1, -2048
 	czero.nez	a0, a1, a0

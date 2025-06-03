@@ -244,7 +244,7 @@ func00000000000001f8:
 	vsll.vi	v10, v10, 5
 	lui	a0, 1
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -261,7 +261,7 @@ func0000000000000104:
 	vsll.vx	v10, v10, a0
 	lui	a0, 2441
 	vadd.vv	v8, v8, v10
-	addiw	a0, a0, 1664
+	addi	a0, a0, 1664
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -28,7 +28,7 @@ func0000000000000208:
 func00000000000000c8:
 	sext.w	a2, a2
 	lui	a3, 32885
-	addiw	a3, a3, -1200
+	addi	a3, a3, -1200
 	xor	a2, a2, a3
 	li	a3, -4
 	czero.eqz	a2, a3, a2
@@ -41,7 +41,7 @@ func0000000000000406:
 	sext.w	a2, a2
 	lui	a3, 1
 	sltiu	a2, a2, 507
-	addiw	a3, a3, 903
+	addi	a3, a3, 903
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 1
 	sub	a0, a0, a1

@@ -14,7 +14,7 @@ func0000000000000000:
 func0000000000000003:
 	andi	a1, a1, 1
 	lui	a3, 4
-	addiw	a3, a3, 333
+	addi	a3, a3, 333
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

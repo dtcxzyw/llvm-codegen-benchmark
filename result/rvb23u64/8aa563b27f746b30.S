@@ -9,7 +9,7 @@ func0000000000000003:
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	subw	a0, a0, a1
-	addiw	a1, a3, -1911
+	addi	a1, a3, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 17
 	sh1add	a1, a1, a1

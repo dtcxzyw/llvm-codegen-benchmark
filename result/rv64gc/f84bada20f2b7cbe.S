@@ -66,7 +66,7 @@ func000000000000002b:
 	slli	a1, a1, 63
 	lui	a3, 1048332
 	srai	a1, a1, 63
-	addiw	a3, a3, -576
+	addi	a3, a3, -576
 	and	a1, a1, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0
@@ -77,7 +77,7 @@ func0000000000000021:
 	slli	a1, a1, 63
 	lui	a3, 804435
 	srai	a1, a1, 63
-	addiw	a3, a3, 1536
+	addi	a3, a3, 1536
 	and	a1, a1, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1

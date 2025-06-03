@@ -69,7 +69,7 @@ func0000000000000194:
 func000000000000028c:
 	sext.w	a0, a0
 	lui	a2, 64
-	addiw	a2, a2, -256
+	addi	a2, a2, -256
 	and	a1, a1, a2
 	li	a2, 3
 	slli	a2, a2, 11
@@ -108,7 +108,7 @@ func0000000000000294:
 func0000000000000081:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, -8
+	addi	a2, a2, -8
 	and	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 2

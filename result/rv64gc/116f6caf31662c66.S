@@ -8,7 +8,7 @@ func0000000000000001:
 	mv	a0, a1
 	ret
 .LBB0_3:
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	bnez	a0, .LBB0_2
 .LBB0_4:
 	mv	a0, a2

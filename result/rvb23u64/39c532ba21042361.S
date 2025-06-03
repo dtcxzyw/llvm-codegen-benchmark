@@ -2,7 +2,7 @@ func000000000000003d:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	srli	a2, a2, 39
 	sh2add	a2, a2, a2
@@ -17,7 +17,7 @@ func0000000000000035:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	lui	a3, 1048540
 	srli	a2, a2, 39
@@ -32,7 +32,7 @@ func0000000000000034:
 	andi	a1, a1, 1
 	zext.w	a2, a2
 	lui	a3, 335544
-	addiw	a3, a3, 1311
+	addi	a3, a3, 1311
 	mul	a2, a2, a3
 	lui	a3, 1048540
 	srli	a2, a2, 39

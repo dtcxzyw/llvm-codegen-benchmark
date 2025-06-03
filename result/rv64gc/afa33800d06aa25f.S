@@ -171,7 +171,7 @@ func0000000000000910:
 	sext.w	a1, a1
 	sltu	a1, a2, a1
 	lui	a2, 1048552
-	addiw	a2, a2, -1696
+	addi	a2, a2, -1696
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -209,7 +209,7 @@ func0000000000000858:
 	or	a1, a1, a2
 	lui	a2, 208
 	sext.w	a1, a1
-	addiw	a2, a2, 32
+	addi	a2, a2, 32
 	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
@@ -250,10 +250,10 @@ func0000000000000930:
 	or	a1, a1, a2
 	lui	a2, 930602
 	sext.w	a1, a1
-	addiw	a2, a2, -1483
+	addi	a2, a2, -1483
 	sltu	a1, a2, a1
 	lui	a2, 49134
-	addiw	a2, a2, -778
+	addi	a2, a2, -778
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -263,7 +263,7 @@ func0000000000000a82:
 	or	a1, a1, a2
 	lui	a2, 272
 	sext.w	a1, a1
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	addi	a0, a0, -864
 	slt	a1, a2, a1
 	seqz	a0, a0

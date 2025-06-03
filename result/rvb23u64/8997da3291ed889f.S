@@ -22,7 +22,7 @@ func0000000000000002:
 	sh1add	a1, a2, a1
 	lui	a2, 12
 	sh2add	a0, a1, a0
-	addiw	a1, a2, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	ret
 

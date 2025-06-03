@@ -43,7 +43,7 @@ func0000000000000003:
 
 func0000000000000007:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v14, a0
 	vsll.vv	v12, v14, v12
@@ -53,7 +53,7 @@ func0000000000000007:
 
 func0000000000000005:
 	lui	a0, 16
-	addiw	a0, a0, -1
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v14, a0
 	vsll.vv	v12, v14, v12

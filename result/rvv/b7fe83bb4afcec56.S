@@ -11,7 +11,7 @@ func0000000000000008:
 	lui	a2, 879
 	vmulh.vx	v10, v8, a0
 	lui	a0, %hi(.LCPI0_1)
-	addiw	a2, a2, -384
+	addi	a2, a2, -384
 	ld	a0, %lo(.LCPI0_1)(a0)
 	vsrl.vx	v12, v10, a1
 	vsra.vi	v10, v10, 20
@@ -36,7 +36,7 @@ func000000000000002a:
 	lui	a2, 14648
 	vmulh.vx	v10, v8, a0
 	lui	a0, %hi(.LCPI1_1)
-	addiw	a2, a2, 1792
+	addi	a2, a2, 1792
 	ld	a0, %lo(.LCPI1_1)(a0)
 	vadd.vv	v10, v10, v8
 	vsrl.vx	v12, v10, a1

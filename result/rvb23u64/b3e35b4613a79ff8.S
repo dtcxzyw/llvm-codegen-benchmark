@@ -16,7 +16,7 @@ func0000000000000007:
 	czero.eqz	a1, a3, a1
 	lui	a3, 262722
 	addi	a2, a2, -12
-	addiw	a3, a3, 64
+	addi	a3, a3, 64
 	seqz	a2, a2
 	or	a0, a0, a1
 	slli	a2, a2, 14

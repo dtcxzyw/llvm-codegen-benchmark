@@ -2,7 +2,7 @@ func0000000000000035:
 	addiw	a1, a1, 10
 	add	a0, a0, a1
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000031:
 	addiw	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 21
-	addiw	a1, a1, 384
+	addi	a1, a1, 384
 	mul	a0, a0, a1
 	ret
 

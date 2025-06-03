@@ -13,7 +13,7 @@ func0000000000000021:
 func00000000000000c1:
 	sext.w	a1, a1
 	lui	a2, 395996
-	addiw	a2, a2, 547
+	addi	a2, a2, 547
 	bge	a1, a2, .LBB1_3
 	sext.w	a1, a0
 	lui	a2, 524288

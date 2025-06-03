@@ -1,6 +1,6 @@
 func000000000000006f:
 	lui	a3, 3
-	addiw	a3, a3, 1360
+	addi	a3, a3, 1360
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sh3add.uw	a0, a0, a1
@@ -61,7 +61,7 @@ func0000000000000010:
 
 func0000000000000000:
 	lui	a3, 1
-	addiw	a3, a3, -2024
+	addi	a3, a3, -2024
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sh3add.uw	a0, a0, a1

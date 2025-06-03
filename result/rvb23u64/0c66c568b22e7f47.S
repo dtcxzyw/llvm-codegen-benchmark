@@ -1,6 +1,6 @@
 func00000000000003e1:
 	lui	a3, 16
-	addiw	a3, a3, -8
+	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 24
@@ -31,7 +31,7 @@ func0000000000000204:
 	slli	a2, a2, 7
 	add	a1, a1, a2
 	lui	a2, 6
-	addiw	a2, a2, 640
+	addi	a2, a2, 640
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func0000000000000208:
 	slli	a2, a2, 7
 	add	a1, a1, a2
 	lui	a2, 6
-	addiw	a2, a2, 640
+	addi	a2, a2, 640
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

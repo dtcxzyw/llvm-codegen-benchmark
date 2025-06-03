@@ -18,7 +18,7 @@ func00000000000000f0:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	lui	a1, 10
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	slli	a0, a0, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -26,7 +26,7 @@ func00000000000000f0:
 	ret
 .LBB1_2:
 	lui	a1, 8
-	addiw	a1, a1, 48
+	addi	a1, a1, 48
 	slli	a0, a0, 2
 	add	a0, a0, a2
 	add	a0, a0, a1

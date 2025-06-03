@@ -12,11 +12,11 @@ func00000000000003b8:
 	lui	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	addiw	a0, a0, -31
+	addi	a0, a0, -31
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmsgtu.vx	v0, v8, a0
 	lui	a0, 1048544
-	addiw	a0, a0, 30
+	addi	a0, a0, 30
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 

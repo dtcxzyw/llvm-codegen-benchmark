@@ -17,11 +17,11 @@ func0000000000000003:
 func0000000000000002:
 	lui	a1, 522232
 	lui	a2, 152146
-	addiw	a1, a1, -129
+	addi	a1, a1, -129
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	lui	a3, %hi(.LCPI2_0)
-	addiw	a2, a2, 1317
+	addi	a2, a2, 1317
 	ld	a3, %lo(.LCPI2_0)(a3)
 	and	a0, a0, a1
 	slli	a1, a2, 32

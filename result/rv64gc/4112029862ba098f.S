@@ -19,7 +19,7 @@ func0000000000000007:
 
 func000000000000001f:
 	lui	a2, 171
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	slli	a2, a2, 12
 	addi	a2, a2, -1365
 	mul	a2, a1, a2

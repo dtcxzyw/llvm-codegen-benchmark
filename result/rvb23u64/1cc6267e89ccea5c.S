@@ -7,7 +7,7 @@ func0000000000000028:
 
 func000000000000018a:
 	lui	a1, 1172
-	addiw	a1, a1, -511
+	addi	a1, a1, -511
 	bseti	a1, a1, 63
 	slt	a1, a1, a0
 	and	a0, a0, a1
@@ -67,8 +67,8 @@ func0000000000000034:
 func0000000000000024:
 	lui	a1, 1048386
 	lui	a2, 128
-	addiw	a1, a1, -944
-	addiw	a2, a2, 1
+	addi	a1, a1, -944
+	addi	a2, a2, 1
 	and	a1, a1, a0
 	seqz	a1, a1
 	sltu	a0, a0, a2
@@ -77,7 +77,7 @@ func0000000000000024:
 
 func0000000000000038:
 	lui	a1, 256
-	addiw	a1, a1, -1024
+	addi	a1, a1, -1024
 	and	a1, a1, a0
 	srli	a0, a0, 20
 	seqz	a1, a1

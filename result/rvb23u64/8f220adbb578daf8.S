@@ -2,7 +2,7 @@ func0000000000000000:
 	zext.b	a1, a1
 	lui	a2, 36149
 	add	a0, a0, a1
-	addiw	a1, a2, -1387
+	addi	a1, a2, -1387
 	zext.w	a2, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 32

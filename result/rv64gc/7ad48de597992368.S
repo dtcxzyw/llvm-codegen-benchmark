@@ -4,7 +4,7 @@ func0000000000000141:
 	lui	a3, 16
 	addi	a0, a0, 1
 	srli	a1, a1, 56
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a1, a1, a3
 	seqz	a2, a1
@@ -20,7 +20,7 @@ func0000000000000041:
 	lui	a3, 16
 	addi	a0, a0, 1
 	srli	a1, a1, 56
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	or	a1, a1, a2
 	and	a1, a1, a3
 	seqz	a2, a1

@@ -1,6 +1,6 @@
 func000000000000000f:
 	lui	a3, 1048512
-	addiw	a3, a3, 511
+	addi	a3, a3, 511
 	and	a2, a2, a3
 	li	a3, 15
 	slli	a3, a3, 9
@@ -62,7 +62,7 @@ func000000000000000d:
 	lui	a3, 1048568
 	slliw	a0, a0, 8
 	and	a2, a2, a3
-	addiw	a3, a3, 254
+	addi	a3, a3, 254
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

@@ -3,7 +3,7 @@ func0000000000002908:
 	addiw	a0, a0, -1938
 	minu	a0, a0, a1
 	lui	a1, 1048575
-	addiw	a1, a1, 221
+	addi	a1, a1, 221
 	sltu	a0, a0, a1
 	ret
 
@@ -13,7 +13,7 @@ func0000000000000108:
 	addw	a1, a1, a3
 	addw	a0, a0, a3
 	minu	a0, a0, a1
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	sltu	a0, a0, a2
 	ret
 

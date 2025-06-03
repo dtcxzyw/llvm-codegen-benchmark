@@ -6,7 +6,7 @@ func000000000000000c:
 	addi	a0, a0, 1310
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -1476
+	addi	a1, a1, -1476
 	sltu	a0, a1, a0
 	ret
 
@@ -56,7 +56,7 @@ func0000000000000026:
 	slli	a1, a0, 48
 	lui	a2, 1
 	srai	a1, a1, 48
-	addiw	a2, a2, 1147
+	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 19

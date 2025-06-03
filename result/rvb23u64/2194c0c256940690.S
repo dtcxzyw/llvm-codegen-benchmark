@@ -38,7 +38,7 @@ func0000000000000008:
 	zext.w	a2, a2
 	or	a1, a1, a2
 	lui	a2, 1571
-	addiw	a2, a2, 667
+	addi	a2, a2, 667
 	slli	a2, a2, 9
 	mul	a0, a0, a2
 	add	a0, a0, a1

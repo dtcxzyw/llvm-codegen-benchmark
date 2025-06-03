@@ -3,7 +3,7 @@ func00000000000000a1:
 	slli	a3, a3, 56
 	and	a2, a2, a3
 	lui	a3, 1048572
-	addiw	a3, a3, 2
+	addi	a3, a3, 2
 	seqz	a2, a2
 	add	a1, a1, a3
 	sub	a1, a1, a2

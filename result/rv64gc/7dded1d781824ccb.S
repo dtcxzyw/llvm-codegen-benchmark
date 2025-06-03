@@ -4,7 +4,7 @@ func0000000000000002:
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	lui	a1, 146
-	addiw	a1, a1, -1493
+	addi	a1, a1, -1493
 	slli	a1, a1, 12
 	addi	a1, a1, 965
 	mul	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000000:
 	xor	a0, a0, a1
 	sub	a0, a0, a1
 	lui	a1, 146
-	addiw	a1, a1, -1493
+	addi	a1, a1, -1493
 	slli	a1, a1, 12
 	addi	a1, a1, 965
 	mul	a0, a0, a1

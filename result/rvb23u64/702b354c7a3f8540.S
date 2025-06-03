@@ -9,7 +9,7 @@ func0000000000000004:
 	zext.h	a0, a0
 	maxu	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -258
+	addi	a1, a1, -258
 	sltu	a0, a0, a1
 	ret
 

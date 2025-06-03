@@ -46,7 +46,7 @@ func0000000000000018:
 	andi	a2, a2, 1
 	bnez	a2, .LBB6_2
 	lui	a1, 29
-	addiw	a1, a1, 1216
+	addi	a1, a1, 1216
 .LBB6_2:
 	sltu	a0, a0, a1
 	ret

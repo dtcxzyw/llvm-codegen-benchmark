@@ -38,7 +38,7 @@ func0000000000000000:
 	andi	a0, a0, 1
 	slliw	a2, a2, 3
 	lui	a3, 5
-	addiw	a3, a3, 1028
+	addi	a3, a3, 1028
 	or	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

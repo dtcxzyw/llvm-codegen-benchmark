@@ -8,7 +8,7 @@ func000000000000007d:
 	mulhu	a3, a3, a4
 	lui	a4, 1048544
 	addi	a1, a1, -15
-	addiw	a4, a4, 30
+	addi	a4, a4, 30
 	srli	a3, a3, 47
 	mul	a1, a3, a1
 	subw	a2, a2, a1

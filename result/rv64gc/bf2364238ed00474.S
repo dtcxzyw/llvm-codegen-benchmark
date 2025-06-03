@@ -12,7 +12,7 @@ func0000000000000000:
 	addi	a0, a0, 511
 	lui	a1, 65279
 	srli	a0, a0, 9
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -41,7 +41,7 @@ func0000000000000008:
 	sub	a0, a0, a1
 	lui	a1, 16
 	srli	a0, a0, 32
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:

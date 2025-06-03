@@ -61,7 +61,7 @@ func0000000000000024:
 func000000000000004a:
 	sext.w	a0, a0
 	lui	a2, 1
-	addiw	a2, a2, 296
+	addi	a2, a2, 296
 	sgtz	a0, a0
 	addw	a1, a1, a2
 	czero.eqz	a1, a1, a0

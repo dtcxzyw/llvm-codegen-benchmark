@@ -18,7 +18,7 @@ func0000000000000003:
 	ret
 .LBB1_2:
 	lui	a0, 16
-	addiw	a0, a0, -3
+	addi	a0, a0, -3
 	ret
 
 func0000000000000001:

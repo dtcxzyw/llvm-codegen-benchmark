@@ -3,7 +3,7 @@ func0000000000000001:
 	srliw	a0, a0, 13
 	or	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, 768
+	addi	a1, a1, 768
 	and	a0, a0, a1
 	ret
 

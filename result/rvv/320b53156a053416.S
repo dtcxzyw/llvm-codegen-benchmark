@@ -5,7 +5,7 @@ func0000000000000005:
 	lui	a0, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	addiw	a0, a0, -992
+	addi	a0, a0, -992
 	vmul.vx	v8, v8, a0
 	ret
 

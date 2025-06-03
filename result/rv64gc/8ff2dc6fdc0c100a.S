@@ -36,7 +36,7 @@ func0000000000000006:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	lui	a0, 1
-	addiw	a0, a0, 64
+	addi	a0, a0, 64
 	ret
 .LBB4_2:
 	addi	a0, a1, 64

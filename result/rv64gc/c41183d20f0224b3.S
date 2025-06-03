@@ -10,7 +10,7 @@ func0000000000000014:
 	lui	a2, 4
 	srliw	a1, a1, 3
 	slli	a1, a1, 3
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

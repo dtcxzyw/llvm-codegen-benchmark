@@ -1,10 +1,10 @@
 func0000000000000033:
 	srai	a1, a1, 32
 	lui	a2, 39
-	addiw	a2, a2, -1988
+	addi	a2, a2, -1988
 	mul	a1, a1, a2
 	lui	a2, 7
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -12,10 +12,10 @@ func0000000000000033:
 func0000000000000073:
 	srai	a1, a1, 32
 	lui	a2, 39
-	addiw	a2, a2, -1988
+	addi	a2, a2, -1988
 	mul	a1, a1, a2
 	lui	a2, 7
-	addiw	a2, a2, 1280
+	addi	a2, a2, 1280
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

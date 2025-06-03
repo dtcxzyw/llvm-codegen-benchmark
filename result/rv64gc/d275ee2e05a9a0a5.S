@@ -26,7 +26,7 @@ func0000000000000005:
 	andi	a0, a0, -16
 	lui	a1, 4013
 	slli	a0, a0, 32
-	addiw	a1, a1, -1535
+	addi	a1, a1, -1535
 	or	a0, a0, a1
 	ret
 

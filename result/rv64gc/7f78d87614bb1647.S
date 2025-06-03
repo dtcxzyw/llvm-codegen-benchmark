@@ -76,7 +76,7 @@ func000000000000007b:
 	lui	a1, 1
 	srli	a2, a2, 32
 	sub	a0, a0, a2
-	addiw	a1, a1, 368
+	addi	a1, a1, 368
 	add	a0, a0, a1
 	ret
 

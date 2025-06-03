@@ -3,10 +3,10 @@
 func0000000000000004:
 	lui	a1, 4
 	lui	a2, %hi(.LCPI0_0)
-	addiw	a3, a1, 9
+	addi	a3, a1, 9
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a3
-	addiw	a1, a1, 10
+	addi	a1, a1, 10
 	sltu	a1, a0, a1
 	mulhu	a0, a0, a2
 	li	a2, 1

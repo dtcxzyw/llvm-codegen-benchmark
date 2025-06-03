@@ -33,7 +33,7 @@ func0000000000000030:
 	mul	a1, a1, a2
 	lui	a2, 3
 	add	a0, a0, a1
-	addiw	a1, a2, 724
+	addi	a1, a2, 724
 	add	a0, a0, a1
 	ret
 

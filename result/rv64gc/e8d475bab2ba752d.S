@@ -10,7 +10,7 @@ func0000000000000058:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 10486
-	addiw	a2, a2, -983
+	addi	a2, a2, -983
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1

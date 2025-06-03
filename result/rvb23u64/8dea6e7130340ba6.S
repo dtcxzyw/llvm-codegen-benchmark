@@ -6,7 +6,7 @@ func0000000000000332:
 	slli	a2, a2, 4
 	czero.nez	a1, a2, a1
 	lui	a2, 335544
-	addiw	a2, a2, 1311
+	addi	a2, a2, 1311
 	addw	a0, a0, a1
 	mul	a0, a0, a2
 	srli	a1, a0, 63

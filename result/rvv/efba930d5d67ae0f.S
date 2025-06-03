@@ -57,7 +57,7 @@ func000000000000001d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 2
-	addiw	a0, a0, -529
+	addi	a0, a0, -529
 	vmadd.vx	v8, a0, v10
 	ret
 

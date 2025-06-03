@@ -30,7 +30,7 @@ func0000000000000010:
 	slli	a1, a1, 48
 	lui	a2, 6
 	srli	a1, a1, 48
-	addiw	a2, a2, 289
+	addi	a2, a2, 289
 	beq	a1, a2, .LBB2_2
 	li	a1, 512
 	add	a0, a0, a1

@@ -16,7 +16,7 @@ func0000000000000001:
 func0000000000000003:
 	andi	a0, a0, 223
 	lui	a1, 4096
-	addiw	a1, a1, -54
+	addi	a1, a1, -54
 	add	a0, a0, a1
 	ret
 

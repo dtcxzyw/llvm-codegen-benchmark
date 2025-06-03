@@ -20,7 +20,7 @@ func0000000000000484:
 	srai	a2, a2, 3
 	sltu	a1, a1, a2
 	lui	a2, 256
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

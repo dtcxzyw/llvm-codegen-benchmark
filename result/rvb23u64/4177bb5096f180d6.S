@@ -1,7 +1,7 @@
 func0000000000000061:
 	andi	a1, a1, 1
 	lui	a2, 917504
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a2, a2, 24
 	czero.nez	a1, a2, a1
 	bseti	a2, zero, 53
@@ -13,7 +13,7 @@ func0000000000000061:
 func000000000000006c:
 	andi	a1, a1, 1
 	lui	a2, 917504
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	slli	a2, a2, 24
 	czero.nez	a1, a2, a1
 	bseti	a2, zero, 53

@@ -5,7 +5,7 @@ func0000000000000006:
 	vmv.v.x	v10, a0
 	vdiv.vv	v8, v10, v8
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vmslt.vx	v0, v8, a0
 	ret
 

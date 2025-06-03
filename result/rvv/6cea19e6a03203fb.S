@@ -1,6 +1,6 @@
 func0000000000000318:
 	lui	a0, 1
-	addiw	a0, a0, -991
+	addi	a0, a0, -991
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v9, v10, a0
 	vmand.mm	v9, v0, v9
@@ -29,7 +29,7 @@ func0000000000000302:
 
 func0000000000000102:
 	lui	a0, 2
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
 	vmand.mm	v9, v0, v9

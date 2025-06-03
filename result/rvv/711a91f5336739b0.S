@@ -24,7 +24,7 @@ func0000000000000005:
 	vsll.vx	v8, v8, a0
 	vsra.vx	v8, v8, a0
 	lui	a0, 176
-	addiw	a0, a0, -1428
+	addi	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	ret
 

@@ -46,7 +46,7 @@ func00000000000007f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmulu.vx	v10, v9, a0
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	vwaddu.wv	v10, v10, v8
 	slli	a0, a0, 13
 	vsetvli	zero, zero, e64, m2, ta, ma

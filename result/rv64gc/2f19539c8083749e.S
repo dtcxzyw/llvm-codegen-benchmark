@@ -44,7 +44,7 @@ func0000000000000015:
 	and	a2, a2, a1
 	lui	a1, 176
 	beqz	a2, .LBB4_2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 .LBB4_2:
 	or	a0, a0, a1
 	ret

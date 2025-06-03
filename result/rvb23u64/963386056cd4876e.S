@@ -30,9 +30,9 @@ func000000000000000a:
 	andi	a1, a1, 1
 	lui	a3, 1048573
 	czero.nez	a2, a2, a1
-	addiw	a4, a3, -1544
+	addi	a4, a3, -1544
 	slti	a0, a0, 9
-	addiw	a3, a3, -1533
+	addi	a3, a3, -1533
 	czero.eqz	a1, a4, a1
 	or	a1, a1, a2
 	czero.eqz	a1, a1, a0

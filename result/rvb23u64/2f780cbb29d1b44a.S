@@ -5,7 +5,7 @@ func000000000000002a:
 	slli	a3, a3, 11
 	xor	a0, a0, a3
 	lui	a3, 272
-	addiw	a3, a3, -1
+	addi	a3, a3, -1
 	snez	a0, a0
 	slt	a2, a3, a2
 	andn	a0, a0, a1

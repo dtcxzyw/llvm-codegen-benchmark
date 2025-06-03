@@ -143,7 +143,7 @@ func0000000000000085:
 func0000000000000038:
 	zext.b	a1, a1
 	lui	a2, 16
-	addiw	a2, a2, -1
+	addi	a2, a2, -1
 	czero.nez	a1, a2, a1
 	sltu	a0, a1, a0
 	ret

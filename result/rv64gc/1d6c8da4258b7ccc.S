@@ -5,10 +5,10 @@ func000000000000084c:
 	lui	a3, 256
 	xor	a0, a0, a3
 	lui	a3, 32
-	addiw	a3, a3, 1024
+	addi	a3, a3, 1024
 	xor	a2, a2, a3
 	lui	a3, 48
-	addiw	a3, a3, 512
+	addi	a3, a3, 512
 	xor	a1, a1, a3
 	seqz	a2, a2
 	seqz	a1, a1
@@ -51,7 +51,7 @@ func0000000000004041:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 174763
-	addiw	a3, a3, -1366
+	addi	a3, a3, -1366
 	seqz	a1, a1
 	seqz	a0, a0
 	sltu	a2, a3, a2

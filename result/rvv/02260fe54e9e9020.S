@@ -1,6 +1,6 @@
 func0000000000000015:
 	lui	a0, 163
-	addiw	a0, a0, -1005
+	addi	a0, a0, -1005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	vsrl.vi	v10, v10, 16
@@ -24,7 +24,7 @@ func000000000000003d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	lui	a0, 61440
-	addiw	a0, a0, 15
+	addi	a0, a0, 15
 	vsrl.vi	v10, v10, 4
 	slli	a0, a0, 24
 	addi	a0, a0, 15

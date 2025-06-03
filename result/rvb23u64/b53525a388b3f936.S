@@ -11,7 +11,7 @@ func0000000000000041:
 func000000000000004c:
 	bset	a1, zero, a1
 	lui	a2, 4059
-	addiw	a2, a2, -769
+	addi	a2, a2, -769
 	and	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1

@@ -30,7 +30,7 @@ func0000000000000028:
 .LBB2_2:
 	sext.w	a1, a1
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	sltu	a0, a0, a1
 	addi	a0, a0, 9
 	ret

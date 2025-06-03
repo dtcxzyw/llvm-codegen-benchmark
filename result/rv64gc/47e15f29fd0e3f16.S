@@ -13,7 +13,7 @@ func0000000000000084:
 	slli	a1, a1, 48
 	lui	a2, 1
 	srli	a1, a1, 48
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	addi	a1, a1, -3
 	sltiu	a1, a1, 10
 	sltu	a0, a0, a2
@@ -78,7 +78,7 @@ func0000000000000424:
 func0000000000000108:
 	sext.w	a0, a0
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	sltiu	a0, a0, 16
 	and	a1, a1, a2
 	addi	a1, a1, -16

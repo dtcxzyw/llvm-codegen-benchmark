@@ -3,7 +3,7 @@ func0000000000000006:
 	lui	a2, 699051
 	slli	a3, a1, 3
 	slli	a1, a1, 5
-	addiw	a2, a2, -1365
+	addi	a2, a2, -1365
 	sub	a1, a1, a3
 	slli	a3, a2, 32
 	srai	a1, a1, 3

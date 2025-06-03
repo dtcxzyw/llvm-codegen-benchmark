@@ -161,7 +161,7 @@ func0000000000000018:
 	srliw	a0, a0, 1
 	lui	a2, 2
 	sltiu	a0, a0, 1561
-	addiw	a2, a2, 1052
+	addi	a2, a2, 1052
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

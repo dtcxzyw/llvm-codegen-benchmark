@@ -29,7 +29,7 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	lui	a0, 524
-	addiw	a0, a0, 1179
+	addi	a0, a0, 1179
 	vminu.vx	v8, v8, a0
 	li	a0, 1000
 	vmul.vx	v8, v8, a0

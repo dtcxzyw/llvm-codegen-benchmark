@@ -14,7 +14,7 @@ func0000000000000003:
 	lui	a0, 65536
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
-	addiw	a0, a0, -128
+	addi	a0, a0, -128
 	vand.vx	v8, v8, a0
 	vmul.vv	v8, v8, v10
 	ret

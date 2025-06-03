@@ -3,7 +3,7 @@ func00000000000004c1:
 	addiw	a2, a2, 1
 	slt	a0, a2, a0
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 27
 	slli	a2, a2, 11
@@ -44,7 +44,7 @@ func0000000000000cc1:
 	addiw	a2, a2, 1
 	slt	a0, a2, a0
 	lui	a2, 16
-	addiw	a2, a2, -1024
+	addi	a2, a2, -1024
 	and	a1, a1, a2
 	li	a2, 27
 	slli	a2, a2, 11

@@ -12,7 +12,7 @@ func0000000000000055:
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	lui	a1, 21181
-	addiw	a1, a1, 713
+	addi	a1, a1, 713
 	slli	a1, a1, 13
 	mul	a0, a0, a2
 	addi	a1, a1, 537

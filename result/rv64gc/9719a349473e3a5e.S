@@ -8,11 +8,11 @@ func0000000000000001:
 	bnez	a0, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	addiw	a1, a2, -1278
+	addi	a1, a2, -1278
 	slli	a0, a0, 48
 	beqz	a0, .LBB0_4
 .LBB0_3:
-	addiw	a1, a2, -1279
+	addi	a1, a2, -1279
 .LBB0_4:
 	mv	a0, a1
 	ret

@@ -6,7 +6,7 @@ func0000000000000003:
 	srli	a3, a1, 9
 	mulhu	a2, a3, a2
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	srli	a2, a2, 11
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000001:
 	srli	a3, a1, 9
 	mulhu	a2, a3, a2
 	lui	a3, 244141
-	addiw	a3, a3, -1536
+	addi	a3, a3, -1536
 	srli	a2, a2, 11
 	mul	a2, a2, a3
 	add	a0, a0, a1

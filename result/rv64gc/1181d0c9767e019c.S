@@ -54,7 +54,7 @@ func0000000000000028:
 
 func0000000000000037:
 	lui	a2, 488281
-	addiw	a2, a2, 1024
+	addi	a2, a2, 1024
 	sll	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, -1

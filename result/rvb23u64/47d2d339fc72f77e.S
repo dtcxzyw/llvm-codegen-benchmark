@@ -36,10 +36,10 @@ func0000000000000006:
 func0000000000000026:
 	andi	a2, a2, 1
 	lui	a3, 1048555
-	addiw	a3, a3, -384
+	addi	a3, a3, -384
 	czero.nez	a2, a3, a2
 	lui	a3, 6019
-	addiw	a3, a3, 551
+	addi	a3, a3, 551
 	slli	a3, a3, 7
 	add	a2, a2, a3
 	sub	a0, a0, a1
@@ -49,7 +49,7 @@ func0000000000000026:
 func0000000000000078:
 	andi	a2, a2, 1
 	lui	a3, 9
-	addiw	a3, a3, -340
+	addi	a3, a3, -340
 	or	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a2, a0

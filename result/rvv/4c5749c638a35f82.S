@@ -1,9 +1,9 @@
 func0000000000000008:
 	lui	a0, 244
-	addiw	a1, a0, 576
+	addi	a1, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -42,7 +42,7 @@ func00000000000001f4:
 
 func0000000000000086:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmslt.vx	v0, v8, a0
@@ -53,13 +53,13 @@ func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 1
-	addiw	a0, a0, 905
+	addi	a0, a0, 905
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func00000000000000ac:
 	lui	a0, 1048555
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	vrsub.vi	v8, v8, 0
@@ -102,12 +102,12 @@ func00000000000000a8:
 
 func0000000000000001:
 	lui	a0, 1046192
-	addiw	a0, a0, -761
+	addi	a0, a0, -761
 	slli	a0, a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 2384
-	addiw	a0, a0, 761
+	addi	a0, a0, 761
 	slli	a0, a0, 9
 	vmseq.vx	v0, v8, a0
 	ret
@@ -132,7 +132,7 @@ func0000000000000006:
 
 func00000000000000aa:
 	lui	a0, 21094
-	addiw	a0, a0, -1024
+	addi	a0, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmsgt.vi	v0, v8, -1
@@ -158,17 +158,17 @@ func00000000000001aa:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vmsgt.vx	v0, v8, a0
 	ret
 
 func000000000000008a:
 	lui	a0, 804435
-	addiw	a0, a0, 1536
+	addi	a0, a0, 1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 244141
-	addiw	a0, a0, -1537
+	addi	a0, a0, -1537
 	vmsgt.vx	v0, v8, a0
 	ret
 
@@ -193,7 +193,7 @@ func0000000000000108:
 
 func000000000000000c:
 	lui	a0, 1046192
-	addiw	a0, a0, -761
+	addi	a0, a0, -761
 	slli	a0, a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
@@ -203,7 +203,7 @@ func000000000000000c:
 
 func0000000000000026:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmslt.vx	v0, v8, a0
@@ -264,7 +264,7 @@ func000000000000010a:
 
 func00000000000001e1:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
@@ -280,11 +280,11 @@ func000000000000018a:
 
 func0000000000000098:
 	lui	a0, 244
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 2575
-	addiw	a0, a0, -325
+	addi	a0, a0, -325
 	slli	a0, a0, 13
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
@@ -343,17 +343,17 @@ func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 244
-	addiw	a0, a0, 575
+	addi	a0, a0, 575
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000014:
 	lui	a0, 1048574
-	addiw	a0, a0, -1808
+	addi	a0, a0, -1808
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	lui	a0, 2
-	addiw	a0, a0, -1192
+	addi	a0, a0, -1192
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -12,7 +12,7 @@ func0000000000000194:
 	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000094:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, 244
-	addiw	a1, a1, 576
+	addi	a1, a1, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulh.vx	v10, v8, a0
@@ -31,7 +31,7 @@ func0000000000000094:
 	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1536
+	addi	a0, a0, -1536
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000084:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	lui	a1, 1027482
-	addiw	a1, a1, 1024
+	addi	a1, a1, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulh.vx	v10, v8, a0
@@ -50,7 +50,7 @@ func0000000000000084:
 	lui	a0, 879
 	vsra.vi	v10, v10, 20
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -384
+	addi	a0, a0, -384
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -60,7 +60,7 @@ func0000000000000080:
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
 	lui	a1, 1048561
-	addiw	a1, a1, 1440
+	addi	a1, a1, 1440
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulh.vx	v10, v8, a0
@@ -69,7 +69,7 @@ func0000000000000080:
 	lui	a0, 16
 	vsra.vi	v10, v10, 7
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, -1000
+	addi	a0, a0, -1000
 	vmacc.vx	v8, a0, v10
 	ret
 
@@ -90,7 +90,7 @@ func0000000000000195:
 	lui	a0, 14648
 	vsra.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, 1792
+	addi	a0, a0, 1792
 	vnmsac.vx	v8, a0, v10
 	ret
 
@@ -100,7 +100,7 @@ func0000000000000095:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
 	lui	a1, 1033928
-	addiw	a1, a1, -1792
+	addi	a1, a1, -1792
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulh.vx	v10, v8, a0
@@ -109,7 +109,7 @@ func0000000000000095:
 	lui	a0, 244
 	vsra.vi	v10, v10, 18
 	vadd.vv	v10, v10, v12
-	addiw	a0, a0, 576
+	addi	a0, a0, 576
 	vnmsac.vx	v8, a0, v10
 	ret
 

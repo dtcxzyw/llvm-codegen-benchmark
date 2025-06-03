@@ -4,7 +4,7 @@ func0000000000000001:
 	mv	a0, a1
 .LBB0_2:
 	lui	a1, 1047560
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000008:
 	mv	a0, a1
 .LBB2_2:
 	lui	a1, 1048575
-	addiw	a1, a1, 2047
+	addi	a1, a1, 2047
 	and	a0, a0, a1
 	ret
 

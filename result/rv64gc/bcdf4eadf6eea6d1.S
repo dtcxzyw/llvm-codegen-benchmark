@@ -1,7 +1,7 @@
 func000000000000001f:
 	sext.w	a1, a1
 	lui	a2, 3
-	addiw	a2, a2, -1503
+	addi	a2, a2, -1503
 	beq	a1, a2, .LBB0_2
 	li	a1, 80
 	add	a0, a0, a1

@@ -11,10 +11,10 @@ func000000000000a50c:
 	sext.w	a0, a0
 	max	a1, a1, a2
 	lui	a2, 262144
-	addiw	a2, a2, -2
+	addi	a2, a2, -2
 	slt	a1, a2, a1
 	lui	a2, 786432
-	addiw	a2, a2, 2
+	addi	a2, a2, 2
 	slt	a0, a0, a2
 	or	a0, a0, a1
 	ret

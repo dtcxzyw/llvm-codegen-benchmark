@@ -32,7 +32,7 @@ func0000000000000000:
 func0000000000000002:
 	slliw	a0, a0, 8
 	lui	a1, 3888
-	addiw	a1, a1, 128
+	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret
 

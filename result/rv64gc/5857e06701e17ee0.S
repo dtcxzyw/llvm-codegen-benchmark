@@ -4,7 +4,7 @@ func00000000000001e1:
 	lui	a1, 65279
 	srli	a2, a2, 48
 	mul	a0, a0, a2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -15,7 +15,7 @@ func00000000000001ec:
 	lui	a1, 65279
 	srli	a2, a2, 48
 	mul	a0, a0, a2
-	addiw	a1, a1, 16
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

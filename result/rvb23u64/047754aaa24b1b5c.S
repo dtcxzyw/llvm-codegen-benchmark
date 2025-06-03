@@ -24,7 +24,7 @@ func0000000000000024:
 	andi	a1, a1, 7
 	lui	a2, 1
 	seqz	a1, a1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -32,7 +32,7 @@ func0000000000000024:
 func000000000000018c:
 	zext.h	a0, a0
 	lui	a2, 65
-	addiw	a2, a2, -2047
+	addi	a2, a2, -2047
 	addi	a0, a0, -24
 	and	a1, a1, a2
 	snez	a1, a1
@@ -45,7 +45,7 @@ func000000000000008c:
 	andi	a1, a1, 127
 	lui	a2, 16
 	snez	a1, a1
-	addiw	a2, a2, -12
+	addi	a2, a2, -12
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

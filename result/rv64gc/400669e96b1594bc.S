@@ -104,7 +104,7 @@ func00000000000001e1:
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	lui	a2, 3
-	addiw	a2, a2, -648
+	addi	a2, a2, -648
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -142,7 +142,7 @@ func0000000000000008:
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	lui	a2, 8
-	addiw	a2, a2, 7
+	addi	a2, a2, 7
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

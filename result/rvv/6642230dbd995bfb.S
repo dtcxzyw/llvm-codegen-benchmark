@@ -40,7 +40,7 @@ func0000000000000c21:
 
 func0000000000000484:
 	lui	a0, 786432
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	vmsltu.vx	v9, v10, a0
@@ -138,7 +138,7 @@ func000000000000002c:
 
 func000000000000048c:
 	lui	a0, 1047552
-	addiw	a1, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	vmsltu.vx	v9, v10, a0

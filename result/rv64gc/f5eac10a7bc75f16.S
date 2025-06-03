@@ -11,7 +11,7 @@ func0000000000000004:
 	lui	a1, 10
 	beqz	a2, .LBB1_2
 	lui	a1, 5
-	addiw	a1, a1, 512
+	addi	a1, a1, 512
 .LBB1_2:
 	add	a0, a0, a1
 	ret

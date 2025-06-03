@@ -8,7 +8,7 @@ func0000000000000005:
 	sub	a0, a0, a1
 	lui	a1, 32
 	addi	a0, a0, 1
-	addiw	a1, a1, -8
+	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000918:
 	li	a3, -1488
 	sh3add	a1, a3, a1
 	lui	a3, 3
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	srliw	a1, a1, 4
 	xor	a2, a2, a3
 	sltiu	a1, a1, 1893
@@ -17,7 +17,7 @@ func0000000000000118:
 	li	a3, -1488
 	sh3add	a1, a3, a1
 	lui	a3, 3
-	addiw	a3, a3, 63
+	addi	a3, a3, 63
 	srliw	a1, a1, 4
 	xor	a2, a2, a3
 	sltiu	a1, a1, 1893

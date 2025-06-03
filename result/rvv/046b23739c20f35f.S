@@ -50,7 +50,7 @@ func000000000000003b:
 	lui	a0, 69640
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	addiw	a0, a0, 1
+	addi	a0, a0, 1
 	vor.vx	v8, v8, a0
 	ret
 

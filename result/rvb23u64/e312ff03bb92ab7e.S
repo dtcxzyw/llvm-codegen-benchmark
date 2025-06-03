@@ -1,7 +1,7 @@
 func0000000000000150:
 	slli	a2, a1, 16
 	lui	a3, 16
-	addiw	a3, a3, -16
+	addi	a3, a3, -16
 	sltu	a1, a3, a1
 	lui	a3, 983055
 	slli	a3, a3, 4

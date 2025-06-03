@@ -37,7 +37,7 @@ func0000000000000004:
 	andi	a0, a0, -2048
 	lui	a1, 1
 	bclri	a0, a0, 11
-	addiw	a1, a1, 1
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

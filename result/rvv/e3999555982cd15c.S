@@ -19,10 +19,10 @@ func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 1
 	lui	a0, 1048555
-	addiw	a0, a0, -385
+	addi	a0, a0, -385
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048534
-	addiw	a0, a0, -769
+	addi	a0, a0, -769
 	vmsltu.vx	v0, v8, a0
 	ret
 

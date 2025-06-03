@@ -4,7 +4,7 @@ func0000000000000002:
 	flt.d	a1, fa0, fa5
 	czero.nez	a0, a0, a1
 	lui	a1, 285
-	addiw	a1, a1, 1441
+	addi	a1, a1, 1441
 	add	a0, a0, a1
 	ret
 

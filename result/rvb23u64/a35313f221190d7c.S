@@ -16,10 +16,10 @@ func0000000000000024:
 func0000000000000008:
 	addw	a0, a0, a1
 	lui	a1, 24414
-	addiw	a1, a1, 255
+	addi	a1, a1, 255
 	sltu	a0, a1, a0
 	lui	a1, 1024162
-	addiw	a1, a1, -256
+	addi	a1, a1, -256
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -71,7 +71,7 @@ func0000000000000021:
 func0000000000000014:
 	addw	a0, a0, a1
 	lui	a1, 16
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	li	a1, 2
 	czero.nez	a0, a1, a0

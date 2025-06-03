@@ -15,7 +15,7 @@ func00000000000000aa:
 
 func00000000000001f8:
 	lui	a2, 16
-	addiw	a2, a2, -16
+	addi	a2, a2, -16
 	addiw	a3, a2, 15
 	and	a1, a1, a3
 	add	a0, a0, a2

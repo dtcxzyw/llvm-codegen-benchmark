@@ -66,11 +66,11 @@ func000000000000006a:
 	sext.w	a0, a0
 	sh1add	a1, a1, a1
 	lui	a2, 81
-	addiw	a2, a2, 1556
+	addi	a2, a2, 1556
 	slt	a0, a2, a0
 	lui	a2, 244
 	sext.w	a1, a1
-	addiw	a2, a2, 576
+	addi	a2, a2, 576
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
