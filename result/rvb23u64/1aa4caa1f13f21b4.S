@@ -3,9 +3,8 @@ func0000000000000004:
 	slli	a2, a2, 4
 	slli	a1, a1, 48
 	mulhu	a1, a1, a2
-	srli	a1, a1, 23
-	srliw	a1, a1, 3
-	sh3add.uw	a0, a1, a0
+	srliw	a1, a1, 26
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000007:

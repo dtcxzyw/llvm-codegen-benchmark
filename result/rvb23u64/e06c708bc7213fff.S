@@ -14,8 +14,7 @@ func0000000000000000:
 
 func000000000000000f:
 	srliw	a1, a1, 8
-	slli	a1, a1, 1
-	add	a0, a0, a1
+	sh1add	a0, a1, a0
 	addi	a0, a0, 30
 	ret
 
@@ -31,8 +30,7 @@ func000000000000001f:
 
 func0000000000000003:
 	srliw	a1, a1, 1
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	lui	a1, 225
 	addi	a1, a1, 1280
 	add	a0, a0, a1
@@ -40,8 +38,7 @@ func0000000000000003:
 
 func0000000000000013:
 	srliw	a1, a1, 1
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	lui	a1, 213
 	addi	a1, a1, -896
 	add	a0, a0, a1

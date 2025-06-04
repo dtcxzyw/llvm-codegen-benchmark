@@ -1,8 +1,7 @@
 func000000000000000f:
 	subw	a1, a1, a2
 	srliw	a1, a1, 8
-	slli	a1, a1, 1
-	add	a0, a0, a1
+	sh1add	a0, a1, a0
 	addi	a0, a0, 30
 	ret
 

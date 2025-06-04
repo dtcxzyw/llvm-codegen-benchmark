@@ -1,8 +1,7 @@
 func000000000000003b:
 	sh2add	a0, a0, a1
 	srliw	a1, a2, 5
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	addi	a0, a0, 48
 	ret
 

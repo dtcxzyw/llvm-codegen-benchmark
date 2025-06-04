@@ -17,23 +17,20 @@ func000000000000001f:
 
 func000000000000000f:
 	srliw	a2, a2, 24
-	slli	a2, a2, 2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000002:
 	srliw	a2, a2, 24
-	slli	a2, a2, 2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000003:
 	srliw	a2, a2, 24
-	slli	a2, a2, 2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000000e:

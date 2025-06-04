@@ -46,10 +46,9 @@ func000000000000004f:
 	lui	a2, 1048575
 	add	a1, a1, a2
 	lui	a2, 8
-	addi	a2, a2, 8
 	srliw	a1, a1, 10
-	slli	a1, a1, 3
+	sh3add	a0, a1, a0
+	addi	a2, a2, 8
 	add	a0, a0, a2
-	add	a0, a0, a1
 	ret
 

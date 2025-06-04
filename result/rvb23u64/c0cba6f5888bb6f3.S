@@ -8,8 +8,7 @@ func0000000000000001:
 
 func0000000000000064:
 	srliw	a2, a2, 8
-	slli	a2, a2, 1
-	add	a1, a1, a2
+	sh1add	a1, a2, a1
 	sltu	a0, a1, a0
 	ret
 

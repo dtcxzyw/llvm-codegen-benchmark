@@ -1,7 +1,6 @@
 func000000000000001f:
 	srliw	a1, a1, 14
-	slli	a1, a1, 1
-	add	a0, a0, a1
+	sh1add	a0, a1, a0
 	addiw	a0, a0, 32
 	ret
 

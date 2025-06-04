@@ -23,7 +23,6 @@ func0000000000000007:
 func0000000000000034:
 	addi	a1, a1, 31
 	srliw	a1, a1, 5
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	ret
 

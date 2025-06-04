@@ -1,8 +1,7 @@
 func000000000000001b:
 	addi	a1, a1, 1
 	srliw	a1, a1, 6
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000004:
@@ -34,8 +33,7 @@ func0000000000000003:
 func000000000000000b:
 	addi	a1, a1, -1
 	srliw	a1, a1, 6
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000001f:
@@ -57,8 +55,7 @@ func0000000000000013:
 	lui	a2, 1048575
 	add	a1, a1, a2
 	srliw	a1, a1, 10
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000008:

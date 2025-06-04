@@ -27,8 +27,8 @@ func000000000000002a:
 func0000000000000066:
 	sext.w	a0, a0
 	srliw	a2, a2, 4
-	slli	a2, a2, 2
-	addw	a1, a1, a2
+	sh2add	a1, a2, a1
+	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
 

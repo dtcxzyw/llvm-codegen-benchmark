@@ -6,8 +6,7 @@ func000000000000000b:
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srliw	a1, a1, 6
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	ret
 
 .LCPI1_0:

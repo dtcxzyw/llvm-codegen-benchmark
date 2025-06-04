@@ -1,7 +1,7 @@
 func0000000000000000:
-	srli	a1, a0, 28
-	andi	a1, a1, 8
-	addw	a0, a0, a1
+	srliw	a1, a0, 31
+	sh3add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 
 func0000000000000003:
@@ -11,8 +11,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	srli	a1, a0, 29
-	andi	a1, a1, 4
-	addw	a0, a0, a1
+	srliw	a1, a0, 31
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 

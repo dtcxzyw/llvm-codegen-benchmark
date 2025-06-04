@@ -9,8 +9,7 @@ func0000000000000070:
 
 func000000000000007f:
 	srliw	a2, a2, 6
-	slli	a2, a2, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh3add	a0, a2, a0
 	ret
 

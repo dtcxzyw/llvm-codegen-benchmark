@@ -108,10 +108,9 @@ func000000000000004f:
 	ret
 
 func00000000000000a0:
-	srli	a2, a2, 28
-	andi	a2, a2, 8
+	srliw	a2, a2, 31
 	sh2add	a0, a1, a0
-	add	a0, a0, a2
+	sh3add	a0, a2, a0
 	addi	a0, a0, -4
 	ret
 
@@ -133,11 +132,10 @@ func0000000000000018:
 	ret
 
 func000000000000006b:
-	srli	a2, a2, 29
+	srliw	a2, a2, 31
 	sh2add	a1, a1, a1
-	andi	a2, a2, 4
 	sh2add	a0, a1, a0
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addi	a0, a0, 4
 	ret
 

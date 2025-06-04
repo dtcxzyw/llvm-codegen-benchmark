@@ -14,8 +14,7 @@ func0000000000000005:
 
 func000000000000000c:
 	srliw	a2, a2, 5
-	slli	a2, a2, 2
-	add	a1, a1, a2
+	sh2add	a1, a2, a1
 	mulw	a0, a1, a0
 	ret
 

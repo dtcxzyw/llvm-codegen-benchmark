@@ -49,11 +49,10 @@ func0000000000000066:
 	xor	a1, a1, a2
 	li	a2, 64
 	not	a0, a0
+	srliw	a0, a0, 31
 	czero.nez	a1, a2, a1
-	lui	a2, 524288
-	srli	a0, a0, 28
-	andi	a0, a0, 8
-	or	a0, a0, a2
+	sh3add	a0, a0, a1
+	lui	a1, 524288
 	or	a0, a0, a1
 	ret
 
