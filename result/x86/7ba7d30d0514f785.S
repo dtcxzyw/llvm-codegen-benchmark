@@ -7,9 +7,8 @@ func0000000000000226:
 
 func00000000000000a6:
 	subl	%edx, %esi
-	leal	(,%rdi,8), %eax
+	leal	(%rsi,%rdi,8), %eax
 	subl	%edi, %eax
-	addl	%esi, %eax
 	cmpl	$8, %eax
 	setl	%al
 	retq

@@ -5,9 +5,8 @@ func000000000000003c:
 	retq
 
 func0000000000000010:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
 	subl	%edi, %eax
 	retq
 
@@ -30,9 +29,8 @@ func0000000000000015:
 	retq
 
 func0000000000000011:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
 	subl	%edi, %eax
 	retq
 
@@ -43,9 +41,8 @@ func000000000000003d:
 	retq
 
 func0000000000000014:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
 	subl	%edi, %eax
 	retq
 

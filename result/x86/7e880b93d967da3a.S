@@ -6,9 +6,9 @@ func0000000000000015:
 	shrq	$63, %rax
 	sarq	%rdx
 	addq	%rax, %rdx
-	leaq	(,%rdx,8), %rax
+	leaq	(%rdi,%rdx,8), %rax
 	subq	%rdx, %rax
-	leaq	-2(%rdi,%rax), %rax
+	addq	$-2, %rax
 	retq
 
 func0000000000000011:

@@ -14,9 +14,8 @@ func000000000000000c:
 	retq
 
 func0000000000000004:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func000000000000000d:

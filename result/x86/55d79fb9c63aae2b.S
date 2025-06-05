@@ -1,27 +1,24 @@
 func00000000000002a1:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rsi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rsi, %rdi
-	addq	%rax, %rdi
-	movabsq	$128102389400760775, %rax
-	cmpq	%rax, %rdi
+	addq	%rdi, %rax
+	movabsq	$128102389400760775, %rcx
+	cmpq	%rcx, %rax
 	sete	%al
 	retq
 
 func00000000000002aa:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rsi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rsi, %rax
 	addq	%rdi, %rax
 	setns	%al
 	retq
 
 func00000000000002b4:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rsi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rsi, %rdi
-	addq	%rax, %rdi
-	cmpq	$7, %rdi
+	addq	%rdi, %rax
+	cmpq	$7, %rax
 	setb	%al
 	retq
 

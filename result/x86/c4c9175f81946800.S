@@ -1,11 +1,10 @@
 func0000000000000055:
 	sarq	$3, %rdx
-	movabsq	$-8198552921648689607, %rcx
-	imulq	%rdx, %rcx
-	addq	%rdi, %rcx
-	leaq	(,%rsi,8), %rax
+	movabsq	$-8198552921648689607, %rax
+	imulq	%rdx, %rax
+	addq	%rdi, %rax
+	leaq	(%rax,%rsi,8), %rax
 	subq	%rsi, %rax
-	addq	%rcx, %rax
 	retq
 
 func0000000000000044:

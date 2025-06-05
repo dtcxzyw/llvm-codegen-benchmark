@@ -100,9 +100,8 @@ func0000000000000088:
 	retq
 
 func0000000000000086:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq

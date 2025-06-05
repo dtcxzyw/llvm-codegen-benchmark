@@ -154,9 +154,9 @@ func0000000000000006:
 	retq
 
 func00000000000002aa:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	6(%rax,%rdi), %eax
+	addl	$6, %eax
 	cmpl	$1024, %eax
 	setge	%al
 	retq

@@ -6,9 +6,9 @@ func0000000000000042:
 	retq
 
 func0000000000000056:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	leal	-7(%rax,%rsi), %eax
+	addl	$-7, %eax
 	cltq
 	addq	%rdi, %rax
 	retq

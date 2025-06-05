@@ -11,8 +11,8 @@ func0000000000000055:
 	retq
 
 func0000000000000040:
-	addq	%rdx, %rdx
-	subq	%rsi, %rdx
-	leaq	1(%rdx,%rdi), %rax
+	leaq	(%rdi,%rdx,2), %rax
+	subq	%rsi, %rax
+	incq	%rax
 	retq
 

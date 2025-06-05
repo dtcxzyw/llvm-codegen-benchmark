@@ -8,12 +8,11 @@ func0000000000000050:
 
 func0000000000000150:
 	sarl	$16, %edx
-	leal	(%rdx,%rdx,2), %ecx
-	shll	$3, %ecx
-	subl	%edx, %ecx
-	imull	$38134234, %esi, %eax
-	addl	%edi, %eax
-	addl	%ecx, %eax
+	leal	(%rdx,%rdx,2), %eax
+	imull	$38134234, %esi, %ecx
+	addl	%edi, %ecx
+	leal	(%rcx,%rax,8), %eax
+	subl	%edx, %eax
 	retq
 
 func0000000000000110:

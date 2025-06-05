@@ -1,7 +1,6 @@
 func0000000000000040:
-	leal	(,%rdx,8), %ecx
+	leal	(%rdi,%rdx,8), %ecx
 	subl	%edx, %ecx
-	addl	%edi, %ecx
 	shrq	$3, %rsi
 	imull	$954437177, %esi, %eax
 	addl	%ecx, %eax

@@ -7,9 +7,8 @@ func000000000000000c:
 	retq
 
 func0000000000000008:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
 	cmpl	$8, %eax
 	setae	%al
 	andb	%dil, %al

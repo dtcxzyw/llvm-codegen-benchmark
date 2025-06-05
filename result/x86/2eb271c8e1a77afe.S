@@ -31,9 +31,9 @@ func0000000000000000:
 
 func000000000000000c:
 	andl	$7, %esi
-	leal	(,%rdi,8), %eax
+	leal	(%rsi,%rdi,8), %eax
 	subl	%edi, %eax
-	leal	7(%rsi,%rax), %eax
+	addl	$7, %eax
 	retq
 
 func0000000000000008:

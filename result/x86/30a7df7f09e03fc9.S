@@ -15,33 +15,29 @@ func000000000000068a:
 	retq
 
 func0000000000000008:
-	shll	$3, %edx
-	subl	%esi, %edx
-	addl	%edi, %edx
-	cmpl	$3, %edx
+	leal	(%rdi,%rdx,8), %eax
+	subl	%esi, %eax
+	cmpl	$3, %eax
 	setae	%al
 	retq
 
 func000000000000028a:
-	addl	%edx, %edx
-	subl	%esi, %edx
-	addl	%edi, %edx
-	cmpl	$268435456, %edx
+	leal	(%rdi,%rdx,2), %eax
+	subl	%esi, %eax
+	cmpl	$268435456, %eax
 	setge	%al
 	retq
 
 func00000000000002aa:
-	addl	%edx, %edx
-	subl	%esi, %edx
-	addl	%edi, %edx
+	leal	(%rdi,%rdx,2), %eax
+	cmpl	%esi, %eax
 	setns	%al
 	retq
 
 func0000000000000004:
-	addl	%edx, %edx
-	subl	%esi, %edx
-	addl	%edi, %edx
-	cmpl	$3, %edx
+	leal	(%rdi,%rdx,2), %eax
+	subl	%esi, %eax
+	cmpl	$3, %eax
 	setb	%al
 	retq
 

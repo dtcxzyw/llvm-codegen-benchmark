@@ -23,9 +23,8 @@ func000000000000005e:
 	retq
 
 func00000000000000de:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rsi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rsi, %rax
 	leaq	68(%rdi,%rax,4), %rax
 	retq
 

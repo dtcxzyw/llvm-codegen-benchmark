@@ -11,9 +11,9 @@ func000000000000003f:
 
 func000000000000001b:
 	subq	%rdx, %rsi
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rsi, %rax
-	leaq	2(%rdi,%rax), %rax
+	addq	$2, %rax
 	retq
 
 func000000000000002b:

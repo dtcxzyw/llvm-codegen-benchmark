@@ -128,9 +128,8 @@ func000000000000005d:
 	retq
 
 func00000000000000d4:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
-	leal	-8(%rdi,%rax), %eax
+	leal	-8(%rax,%rdi), %eax
 	retq
 

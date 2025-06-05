@@ -1,8 +1,7 @@
 func000000000000002a:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rsi,%rdx,8), %rax
 	subq	%rdx, %rax
 	addq	%rdi, %rax
-	addq	%rsi, %rax
 	movabsq	$2635249153387078803, %rcx
 	movq	%rax, %rdx
 	mulxq	%rcx, %rcx, %rcx

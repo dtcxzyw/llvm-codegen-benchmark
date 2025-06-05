@@ -1,9 +1,8 @@
 func0000000000000054:
 	movzwl	%dx, %ecx
 	addq	%rsi, %rcx
-	leaq	(,%rcx,8), %rax
+	leaq	(%rdi,%rcx,8), %rax
 	subq	%rcx, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000040:

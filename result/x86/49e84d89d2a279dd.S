@@ -1,8 +1,8 @@
 func0000000000000004:
 	addl	%edx, %esi
-	leal	(,%rdi,8), %eax
+	leal	(%rsi,%rdi,8), %eax
 	subl	%edi, %eax
-	leal	-8(%rax,%rsi), %eax
+	addl	$-8, %eax
 	retq
 
 func0000000000000000:

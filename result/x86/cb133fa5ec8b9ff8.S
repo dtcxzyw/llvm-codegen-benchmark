@@ -39,9 +39,8 @@ func0000000000000014:
 
 func0000000000000005:
 	subl	%edx, %esi
-	leal	(,%rdi,8), %eax
+	leal	(%rsi,%rdi,8), %eax
 	subl	%edi, %eax
-	addl	%esi, %eax
 	retq
 
 func0000000000000004:

@@ -17,10 +17,10 @@ func00000000000000ff:
 	retq
 
 func0000000000000035:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rdi,4), %eax
+	addl	%eax, %eax
+	leal	(%rax,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	(%rdi,%rdi,4), %ecx
-	leal	(%rax,%rcx,2), %eax
 	retq
 
 func00000000000000bf:

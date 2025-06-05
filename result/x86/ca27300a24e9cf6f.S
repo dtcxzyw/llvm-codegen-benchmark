@@ -8,8 +8,7 @@ func0000000000000015:
 func0000000000000014:
 	movzbl	%dl, %ecx
 	subl	%esi, %ecx
-	leal	(,%rcx,8), %eax
+	leal	(%rdi,%rcx,8), %eax
 	subl	%ecx, %eax
-	addl	%edi, %eax
 	retq
 

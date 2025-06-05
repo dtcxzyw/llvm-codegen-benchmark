@@ -14,9 +14,8 @@ func0000000000000004:
 func0000000000000014:
 	sarl	$16, %esi
 	leal	(%rsi,%rsi,2), %eax
-	shll	$3, %eax
+	leal	(%rdi,%rax,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000010:

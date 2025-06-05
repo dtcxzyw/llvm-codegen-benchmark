@@ -8,9 +8,8 @@ func0000000000000000:
 
 func000000000000002a:
 	addq	%rdx, %rsi
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	shrq	%rax
 	retq
 

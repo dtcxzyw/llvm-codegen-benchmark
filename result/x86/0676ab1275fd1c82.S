@@ -1,15 +1,13 @@
 func000000000000004c:
 	addl	%edx, %esi
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func00000000000000cd:
 	addl	%edx, %esi
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000000:

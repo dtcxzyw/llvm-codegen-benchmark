@@ -1,9 +1,8 @@
 func0000000000000040:
 	leal	(%rdx,%rdx,2), %eax
-	shll	$3, %eax
+	leal	(%rdi,%rax,8), %eax
 	subl	%edx, %eax
 	addl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000074:

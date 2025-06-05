@@ -49,8 +49,7 @@ func000000000000001f:
 
 func000000000000000d:
 	movzbl	%sil, %ecx
-	leal	(,%rcx,8), %eax
+	leal	(%rdi,%rcx,8), %eax
 	subl	%ecx, %eax
-	addl	%edi, %eax
 	retq
 

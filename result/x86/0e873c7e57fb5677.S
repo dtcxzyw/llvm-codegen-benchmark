@@ -53,9 +53,8 @@ func00000000000003ff:
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	(%rsi,%rsi,4), %rcx
 	addq	%rax, %rcx
-	leaq	(,%rdi,8), %rax
+	leaq	(%rcx,%rdi,8), %rax
 	subq	%rdi, %rax
-	addq	%rcx, %rax
 	retq
 
 func0000000000000050:

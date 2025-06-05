@@ -32,8 +32,7 @@ func0000000000000010:
 	sarl	$2, %ecx
 	addl	%eax, %ecx
 	addl	%esi, %ecx
-	leal	(,%rcx,8), %eax
+	leal	(%rdi,%rcx,8), %eax
 	subl	%ecx, %eax
-	addl	%edi, %eax
 	retq
 

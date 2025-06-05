@@ -8,9 +8,8 @@ func000000000000006f:
 func0000000000000060:
 	testl	%esi, %esi
 	cmovnsl	%esi, %edi
-	leal	(,%rdx,8), %eax
+	leal	(%rdi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000064:

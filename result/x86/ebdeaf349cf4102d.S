@@ -1,7 +1,6 @@
 func0000000000000000:
-	leal	(,%rdx,8), %eax
+	leal	(%rdi,%rdx,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000035:
@@ -17,21 +16,18 @@ func0000000000000034:
 	retq
 
 func0000000000000005:
-	leal	(%rdx,%rdx), %eax
+	leal	(%rdi,%rdx,2), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000010:
-	leal	(%rdx,%rdx), %eax
+	leal	(%rdi,%rdx,2), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000015:
-	leal	(%rdx,%rdx), %eax
+	leal	(%rdi,%rdx,2), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000020:
@@ -41,14 +37,12 @@ func0000000000000020:
 	retq
 
 func0000000000000001:
-	leal	(%rdx,%rdx), %eax
+	leal	(%rdi,%rdx,2), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000014:
-	leal	(%rdx,%rdx), %eax
+	leal	(%rdi,%rdx,2), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	retq
 

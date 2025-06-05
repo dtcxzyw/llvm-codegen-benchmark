@@ -1,8 +1,7 @@
 func0000000000000015:
-	leaq	(,%rdx,8), %rax
-	subq	%rdx, %rax
-	leaq	(%rsi,%rax), %rcx
-	leaq	-2(%rsi,%rax), %rax
+	leaq	(%rsi,%rdx,8), %rcx
+	subq	%rdx, %rcx
+	leaq	-2(%rcx), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq

@@ -2,9 +2,8 @@ func0000000000000055:
 	sarq	$3, %rsi
 	andl	$1, %edx
 	subq	%rdx, %rsi
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000054:

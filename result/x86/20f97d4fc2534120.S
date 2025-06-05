@@ -1,10 +1,9 @@
 func00000000000000ff:
 	movzbl	%dl, %eax
-	leal	(%rax,%rax,2), %ecx
-	addl	%edi, %ecx
-	leal	(,%rsi,8), %eax
+	leal	(%rax,%rax,2), %eax
+	addl	%edi, %eax
+	leal	(%rax,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%ecx, %eax
 	retq
 
 func00000000000000f5:

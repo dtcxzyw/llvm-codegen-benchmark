@@ -2,12 +2,11 @@ func0000000000000aa1:
 	sarq	$3, %rdx
 	movabsq	$-8198552921648689607, %rax
 	imulq	%rdx, %rax
-	leaq	(,%rsi,8), %rcx
-	subq	%rsi, %rcx
-	addq	%rax, %rcx
-	addq	%rdi, %rcx
-	movabsq	$128102389400760775, %rax
-	cmpq	%rax, %rcx
+	leaq	(%rax,%rsi,8), %rax
+	subq	%rsi, %rax
+	addq	%rdi, %rax
+	movabsq	$128102389400760775, %rcx
+	cmpq	%rcx, %rax
 	sete	%al
 	retq
 

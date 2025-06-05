@@ -7,12 +7,11 @@ func000000000000001f:
 	retq
 
 func0000000000000010:
-	leal	7(%rsi), %ecx
+	leal	7(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %ecx
-	leal	(,%rdx,8), %eax
+	cmovel	%esi, %eax
+	leal	(%rax,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%ecx, %eax
 	retq
 
 func0000000000000014:

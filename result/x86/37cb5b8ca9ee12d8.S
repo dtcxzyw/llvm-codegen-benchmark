@@ -1,9 +1,9 @@
 func0000000000000155:
 	addl	%edx, %esi
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rdi,4), %eax
+	leal	(%rax,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	(%rdi,%rdi,4), %ecx
-	leal	1(%rax,%rcx), %eax
+	incl	%eax
 	retq
 
 func0000000000000150:

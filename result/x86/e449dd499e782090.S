@@ -1,9 +1,8 @@
 func0000000000000050:
 	shrq	$3, %rdx
 	addq	%rsi, %rdx
-	leaq	(,%rdx,8), %rax
+	leaq	(%rdi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000000:

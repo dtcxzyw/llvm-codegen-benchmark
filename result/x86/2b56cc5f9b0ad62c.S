@@ -102,9 +102,9 @@ func00000000000002a1:
 	retq
 
 func0000000000000188:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	7(%rdi,%rax), %eax
+	addl	$7, %eax
 	cmpl	$8, %eax
 	setae	%al
 	retq

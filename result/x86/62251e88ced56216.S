@@ -1,8 +1,8 @@
 func0000000000000075:
 	movzwl	%si, %eax
-	leal	(,%rdi,8), %ecx
-	subl	%edi, %ecx
-	leal	1(%rax,%rcx), %eax
+	leal	(%rax,%rdi,8), %eax
+	subl	%edi, %eax
+	incl	%eax
 	retq
 
 func0000000000000035:

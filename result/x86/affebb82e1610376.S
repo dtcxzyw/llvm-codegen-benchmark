@@ -1,9 +1,8 @@
 func0000000000000100:
 	shrq	$3, %rdx
-	imull	$954437177, %edx, %ecx
-	leal	(,%rsi,8), %eax
+	imull	$954437177, %edx, %eax
+	leal	(%rax,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq
 

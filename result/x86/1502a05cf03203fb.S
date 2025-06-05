@@ -1,12 +1,10 @@
 func0000000000000000:
-	leaq	(%rdx,%rdx,2), %rcx
-	shlq	$3, %rcx
+	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rsi,%rax,8), %rcx
 	subq	%rdx, %rcx
-	addq	%rsi, %rcx
 	leaq	(%rcx,%rcx,2), %rax
-	shlq	$3, %rax
+	leaq	(%rdi,%rax,8), %rax
 	subq	%rcx, %rax
-	addq	%rdi, %rax
 	retq
 
 func00000000000000ff:

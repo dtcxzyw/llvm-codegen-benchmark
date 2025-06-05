@@ -1,14 +1,12 @@
 func0000000000000017:
 	movslq	%edx, %rax
-	shlq	$2, %rax
+	leaq	(%rdi,%rax,4), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000014:
 	movslq	%edx, %rax
-	shlq	$3, %rax
+	leaq	(%rdi,%rax,8), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	retq
 

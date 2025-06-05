@@ -12,10 +12,9 @@ func0000000000000000:
 	retq
 
 func0000000000000015:
-	leaq	(,%rdx,8), %rax
+	addq	%rsi, %rdi
+	leaq	(%rdi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 
 func0000000000000020:

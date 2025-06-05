@@ -1,7 +1,7 @@
 func000000000000006a:
-	leal	(,%rdi,8), %eax
+	leal	(%rsi,%rdi,8), %eax
 	subl	%edi, %eax
-	leal	1(%rsi,%rax), %eax
+	incl	%eax
 	retq
 
 func0000000000000000:

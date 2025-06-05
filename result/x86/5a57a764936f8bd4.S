@@ -24,9 +24,8 @@ func0000000000000000:
 
 func0000000000000014:
 	addl	%edx, %esi
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	cltq
 	retq
 

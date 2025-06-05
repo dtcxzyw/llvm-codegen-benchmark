@@ -8,10 +8,9 @@ func0000000000000010:
 func0000000000000050:
 	sarl	$16, %edx
 	leal	(%rdx,%rdx,2), %eax
-	shll	$3, %eax
+	addl	%esi, %edi
+	leal	(%rdi,%rax,8), %eax
 	subl	%edx, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
 	retq
 
 func0000000000000004:

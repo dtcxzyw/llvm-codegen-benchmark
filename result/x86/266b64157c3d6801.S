@@ -1,24 +1,24 @@
 func00000000000000d4:
-	addq	%rdx, %rdx
-	subq	%rsi, %rdx
-	leaq	-2(%rdx,%rdi), %rax
+	leaq	(%rdi,%rdx,2), %rax
+	subq	%rsi, %rax
+	addq	$-2, %rax
 	retq
 
 func00000000000000f4:
-	shlq	$3, %rdx
-	subq	%rsi, %rdx
-	leaq	8(%rdx,%rdi), %rax
+	leaq	(%rdi,%rdx,8), %rax
+	subq	%rsi, %rax
+	addq	$8, %rax
 	retq
 
 func00000000000000d0:
-	shlq	$2, %rdx
-	subq	%rsi, %rdx
-	leaq	-8(%rdx,%rdi), %rax
+	leaq	(%rdi,%rdx,4), %rax
+	subq	%rsi, %rax
+	addq	$-8, %rax
 	retq
 
 func0000000000000000:
-	shlq	$3, %rdx
-	subq	%rsi, %rdx
-	leaq	-8(%rdx,%rdi), %rax
+	leaq	(%rdi,%rdx,8), %rax
+	subq	%rsi, %rax
+	addq	$-8, %rax
 	retq
 

@@ -7,10 +7,9 @@ func0000000000000040:
 	retq
 
 func0000000000000000:
-	movl	%edx, %eax
-	leaq	(,%rsi,8), %rcx
-	subq	%rax, %rcx
+	movl	%edx, %ecx
 	movl	%edi, %eax
-	addq	%rcx, %rax
+	leaq	(%rax,%rsi,8), %rax
+	subq	%rcx, %rax
 	retq
 

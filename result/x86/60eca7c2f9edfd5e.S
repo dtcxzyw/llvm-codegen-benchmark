@@ -1,7 +1,6 @@
 func00000000000006a1:
-	leaq	(,%rdx,8), %rax
+	leaq	(%rdi,%rdx,8), %rax
 	subq	%rdx, %rax
-	addq	%rdi, %rax
 	sarq	$3, %rsi
 	movabsq	$-8198552921648689607, %rcx
 	imulq	%rsi, %rcx

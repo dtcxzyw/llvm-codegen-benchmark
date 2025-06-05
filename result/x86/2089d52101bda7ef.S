@@ -1,12 +1,12 @@
 func0000000000000080:
-	shll	$3, %edx
-	subl	%esi, %edx
-	leal	8(%rdx,%rdi), %eax
+	leal	(%rdi,%rdx,8), %eax
+	subl	%esi, %eax
+	addl	$8, %eax
 	retq
 
 func0000000000000000:
-	addl	%edx, %edx
-	subl	%esi, %edx
-	leal	8(%rdx,%rdi), %eax
+	leal	(%rdi,%rdx,2), %eax
+	subl	%esi, %eax
+	addl	$8, %eax
 	retq
 

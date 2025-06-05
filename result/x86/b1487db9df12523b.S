@@ -5,15 +5,15 @@ func0000000000000010:
 	retq
 
 func0000000000000055:
-	shll	$2, %edx
-	subl	%esi, %edx
-	leal	4(%rdx,%rdi), %eax
+	leal	(%rdi,%rdx,4), %eax
+	subl	%esi, %eax
+	addl	$4, %eax
 	retq
 
 func0000000000000040:
-	shll	$2, %edx
-	subl	%esi, %edx
-	leal	-65(%rdx,%rdi), %eax
+	leal	(%rdi,%rdx,4), %eax
+	subl	%esi, %eax
+	addl	$-65, %eax
 	retq
 
 func0000000000000000:

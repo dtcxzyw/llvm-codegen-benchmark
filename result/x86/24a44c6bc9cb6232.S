@@ -6,9 +6,8 @@ func0000000000000005:
 
 func0000000000000000:
 	vcvttsd2si	%xmm0, %ecx
-	leal	(,%rcx,8), %eax
+	leal	(%rdi,%rcx,8), %eax
 	subl	%ecx, %eax
-	addl	%edi, %eax
 	retq
 
 func0000000000000004:

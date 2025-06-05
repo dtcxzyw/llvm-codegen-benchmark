@@ -1,15 +1,15 @@
 func00000000000001d4:
 	movl	%edx, %eax
-	addq	%rax, %rax
+	leaq	(%rdi,%rax,2), %rax
 	subq	%rsi, %rax
-	leaq	-2(%rax,%rdi), %rax
+	addq	$-2, %rax
 	retq
 
 func00000000000000f4:
 	movl	%edx, %eax
-	shlq	$2, %rax
+	leaq	(%rdi,%rax,4), %rax
 	subq	%rsi, %rax
-	leaq	4(%rax,%rdi), %rax
+	addq	$4, %rax
 	retq
 
 func00000000000000d4:
@@ -28,8 +28,8 @@ func00000000000001f4:
 
 func00000000000001d0:
 	movl	%edx, %eax
-	shlq	$2, %rax
+	leaq	(%rdi,%rax,4), %rax
 	subq	%rsi, %rax
-	leaq	-8(%rax,%rdi), %rax
+	addq	$-8, %rax
 	retq
 

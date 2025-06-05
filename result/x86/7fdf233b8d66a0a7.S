@@ -19,9 +19,8 @@ func0000000000000150:
 	imull	$42123, %esi, %ecx
 	addl	%eax, %ecx
 	leal	(%rdi,%rdi,2), %eax
-	shll	$3, %eax
+	leal	(%rcx,%rax,8), %eax
 	subl	%edi, %eax
-	addl	%ecx, %eax
 	retq
 
 func0000000000000144:
@@ -52,9 +51,8 @@ func00000000000003ff:
 	leal	(%rdx,%rdx,2), %eax
 	leal	(%rsi,%rsi,4), %ecx
 	addl	%eax, %ecx
-	leal	(,%rdi,8), %eax
+	leal	(%rcx,%rdi,8), %eax
 	subl	%edi, %eax
-	addl	%ecx, %eax
 	retq
 
 func0000000000000350:

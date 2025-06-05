@@ -16,9 +16,8 @@ func00000000000000fe:
 
 func0000000000000054:
 	addl	%edx, %esi
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%edi, %eax
 	imull	$86400, %eax, %eax
 	retq
 

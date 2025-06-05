@@ -1,15 +1,13 @@
 func0000000000000050:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
-	leal	-5(%rdi,%rax), %eax
+	leal	-5(%rax,%rdi), %eax
 	retq
 
 func0000000000000110:
-	leal	(,%rdx,8), %eax
+	leal	(%rsi,%rdx,8), %eax
 	subl	%edx, %eax
-	addl	%esi, %eax
-	leal	-1(%rdi,%rax), %eax
+	leal	-1(%rax,%rdi), %eax
 	retq
 
 func0000000000000000:

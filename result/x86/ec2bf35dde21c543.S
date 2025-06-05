@@ -4,21 +4,21 @@ func0000000000000000:
 	retq
 
 func0000000000000014:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	3(%rdi,%rax), %eax
+	addl	$3, %eax
 	retq
 
 func0000000000000004:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	-8(%rdi,%rax), %eax
+	addl	$-8, %eax
 	retq
 
 func0000000000000010:
-	leal	(,%rsi,8), %eax
+	leal	(%rdi,%rsi,8), %eax
 	subl	%esi, %eax
-	leal	-7(%rdi,%rax), %eax
+	addl	$-7, %eax
 	retq
 
 func0000000000000015:

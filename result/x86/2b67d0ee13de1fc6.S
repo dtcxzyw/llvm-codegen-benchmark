@@ -1,8 +1,7 @@
 func00000000000000f4:
 	shlq	$3, %rdx
-	leaq	(,%rsi,4), %rax
+	leaq	(%rdi,%rsi,4), %rax
 	subq	%rdx, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000056:
@@ -13,9 +12,8 @@ func0000000000000056:
 
 func0000000000000002:
 	shlq	$9, %rdx
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rdx, %rax
-	addq	%rdi, %rax
 	retq
 
 func00000000000000d6:

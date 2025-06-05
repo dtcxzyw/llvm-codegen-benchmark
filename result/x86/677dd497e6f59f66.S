@@ -1,7 +1,7 @@
 func0000000000000068:
-	shlq	$2, %rdx
-	subq	%rsi, %rdx
-	leaq	4(%rdi,%rdx), %rax
+	leaq	(%rdi,%rdx,4), %rax
+	subq	%rsi, %rax
+	addq	$4, %rax
 	retq
 
 func0000000000000028:

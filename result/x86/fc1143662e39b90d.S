@@ -1,17 +1,15 @@
 func0000000000000015:
 	andl	$1, %edx
 	subq	%rdx, %rsi
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000010:
 	andl	$1, %edx
 	subq	%rdx, %rsi
-	leaq	(,%rsi,8), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	subq	%rsi, %rax
-	addq	%rdi, %rax
 	retq
 
 func0000000000000014:

@@ -7,12 +7,11 @@ func000000000000026f:
 	retq
 
 func0000000000000260:
-	leal	7(%rdi), %ecx
+	leal	7(%rdi), %eax
 	testl	%edi, %edi
-	cmovnsl	%edi, %ecx
-	leal	(,%rsi,8), %eax
+	cmovnsl	%edi, %eax
+	leal	(%rax,%rsi,8), %eax
 	subl	%esi, %eax
-	addl	%ecx, %eax
 	retq
 
 func0000000000000264:

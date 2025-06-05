@@ -10,8 +10,8 @@ func000000000000006c:
 	retq
 
 func000000000000002c:
-	shlq	$3, %rdx
-	subq	%rsi, %rdx
-	leaq	-8(%rdi,%rdx), %rax
+	leaq	(%rdi,%rdx,8), %rax
+	subq	%rsi, %rax
+	addq	$-8, %rax
 	retq
 
