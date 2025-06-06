@@ -39,8 +39,7 @@ func000000000000002c:
 func000000000000007b:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
-	srli	a2, a2, 48
-	slli	a2, a2, 42
+	srli	a2, a2, 6
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -37,8 +37,8 @@ func000000000000007f:
 	ret
 
 func000000000000005d:
-	zext.h	a1, a1
-	slli	a1, a1, 42
+	slli	a1, a1, 48
+	srli	a1, a1, 6
 	slli	a0, a0, 48
 	or	a0, a0, a1
 	ret

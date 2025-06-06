@@ -1,12 +1,11 @@
 func000000000000001f:
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
-	li	a2, 1
-	slli	a2, a2, 34
-	slli	a1, a1, 40
-	or	a0, a0, a2
+	slli	a1, a1, 48
+	slli	a0, a0, 48
+	srli	a1, a1, 8
+	srli	a0, a0, 48
+	or	a0, a0, a1
+	li	a1, 1
+	slli	a1, a1, 34
 	or	a0, a0, a1
 	ret
 

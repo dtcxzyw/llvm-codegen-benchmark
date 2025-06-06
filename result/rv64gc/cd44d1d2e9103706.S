@@ -16,8 +16,7 @@ func000000000000001f:
 func000000000000000f:
 	addi	a0, a0, 1
 	slli	a0, a0, 49
-	srli	a0, a0, 49
-	slli	a0, a0, 34
+	srli	a0, a0, 15
 	ret
 
 func0000000000000003:
