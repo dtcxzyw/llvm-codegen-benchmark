@@ -15,39 +15,14 @@
 	.short	86
 	.short	86
 	.short	86
-.LCPI0_1:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-.LCPI0_2:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
 func0000000000000001:
 	vpmovsxbw	%xmm0, %ymm0
 	vpmullw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm1
-	vpaddb	%xmm1, %xmm0, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtb	%xmm0, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper

@@ -1,8 +1,6 @@
 func0000000000000000:
+	andnl	%edx, %edi, %eax
 	andl	%edi, %esi
-	movl	%edi, %eax
-	notb	%al
-	andb	%dl, %al
-	orb	%sil, %al
+	orl	%esi, %eax
 	retq
 
