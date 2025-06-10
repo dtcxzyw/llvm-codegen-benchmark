@@ -15,9 +15,8 @@ func0000000000000003:
 	slli.uw	a1, a1, 16
 	addi	a1, a1, -1073
 	mul	a0, a0, a1
-	li	a1, -1
 	srli	a0, a0, 49
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	li	a1, -1
+	add.uw	a0, a1, a0
 	ret
 

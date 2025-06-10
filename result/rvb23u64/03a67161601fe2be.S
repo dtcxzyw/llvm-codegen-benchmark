@@ -59,10 +59,9 @@ func000000000000006d:
 	ret
 
 func000000000000002c:
-	lui	a3, 81007
-	slli	a3, a3, 3
+	lui	a3, 648056
 	addi	a3, a3, -1607
-	add	a2, a2, a3
+	add.uw	a2, a3, a2
 	srli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

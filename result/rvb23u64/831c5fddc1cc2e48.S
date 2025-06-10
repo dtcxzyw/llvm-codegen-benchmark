@@ -25,8 +25,7 @@ func0000000000000016:
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	li	a1, -48
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func00000000000000c0:
@@ -39,7 +38,6 @@ func0000000000000014:
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	li	a1, -48
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 

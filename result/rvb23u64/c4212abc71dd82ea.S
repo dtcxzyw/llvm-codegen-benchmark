@@ -2,8 +2,8 @@ func000000000000001f:
 	slli.uw	a1, a1, 1
 	li	a2, -48
 	sh2add	a1, a1, a1
+	add.uw	a0, a2, a0
 	zext.w	a2, a2
-	add	a0, a0, a2
 	addi	a2, a2, 46
 	and	a0, a0, a2
 	add	a0, a0, a1

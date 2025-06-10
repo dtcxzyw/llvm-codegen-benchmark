@@ -65,8 +65,7 @@ func0000000000000007:
 
 func0000000000000011:
 	li	a1, -2
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	slli	a0, a0, 2
 	srli	a0, a0, 2
 	ret

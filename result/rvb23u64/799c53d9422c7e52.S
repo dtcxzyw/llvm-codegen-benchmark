@@ -37,12 +37,11 @@ func000000000000006d:
 	srli	a2, a0, 63
 	srai	a0, a0, 17
 	add	a0, a0, a2
-	lui	a2, 262144
+	lui	a2, 1048575
 	sh2add	a1, a1, a1
-	addi	a2, a2, -1225
 	sh2add	a0, a1, a0
-	slli	a2, a2, 2
-	add	a0, a0, a2
+	addi	a1, a2, -804
+	add.uw	a0, a1, a0
 	ret
 
 .LCPI3_0:

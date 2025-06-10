@@ -1,31 +1,28 @@
 func0000000000000000:
 	srli	a2, a2, 2
 	add	a0, a0, a1
-	lui	a1, 81007
+	lui	a1, 648056
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	addi	a1, a1, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func000000000000003c:
 	srli	a2, a2, 2
 	add	a0, a0, a1
-	lui	a1, 81007
+	lui	a1, 648056
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	addi	a1, a1, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000014:
 	srli	a2, a2, 2
 	add	a0, a0, a1
-	lui	a1, 81007
+	lui	a1, 648056
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	addi	a1, a1, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func000000000000003f:
@@ -64,19 +61,17 @@ func0000000000000015:
 func000000000000003d:
 	srli	a2, a2, 2
 	add	a0, a0, a1
-	lui	a1, 81007
+	lui	a1, 648056
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	addi	a1, a1, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000040:
 	srli	a2, a2, 2
 	add	a0, a0, a1
-	li	a1, -64
 	add	a0, a0, a2
-	zext.w	a1, a1
-	add	a0, a0, a1
+	li	a1, -64
+	add.uw	a0, a1, a0
 	ret
 

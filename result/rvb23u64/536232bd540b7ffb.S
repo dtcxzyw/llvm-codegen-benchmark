@@ -17,10 +17,9 @@ func000000000000000d:
 
 func000000000000000f:
 	andi	a0, a0, 31
-	li	a1, -1
 	bset	a0, zero, a0
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	li	a1, -1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000000:

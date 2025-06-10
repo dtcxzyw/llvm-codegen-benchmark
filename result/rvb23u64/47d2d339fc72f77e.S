@@ -38,10 +38,9 @@ func0000000000000026:
 	lui	a3, 1048555
 	addi	a3, a3, -384
 	czero.nez	a2, a3, a2
-	lui	a3, 6019
-	addi	a3, a3, 551
-	slli	a3, a3, 7
-	add	a2, a2, a3
+	lui	a3, 770449
+	addi	a3, a3, 896
+	add.uw	a2, a3, a2
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret

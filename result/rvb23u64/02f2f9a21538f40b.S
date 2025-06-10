@@ -10,10 +10,9 @@ func000000000000002a:
 func0000000000000002:
 	srai	a1, a1, 63
 	add	a0, a0, a1
-	lui	a1, 488281
-	slli	a1, a1, 1
+	lui	a1, 976562
 	addi	a1, a1, 2047
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	srai	a1, a0, 63
 	srli	a1, a1, 62
 	add	a0, a0, a1

@@ -34,10 +34,9 @@ func0000000000000063:
 	li	a2, 13
 	sltiu	a1, a1, 72
 	czero.eqz	a1, a2, a1
-	li	a2, -72
-	zext.w	a2, a2
-	add	a0, a0, a2
 	add	a0, a0, a1
+	li	a1, -72
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000053:
@@ -45,10 +44,9 @@ func0000000000000053:
 	li	a2, -13
 	sltiu	a1, a1, 46
 	czero.nez	a1, a2, a1
-	li	a2, -33
-	zext.w	a2, a2
-	add	a0, a0, a2
 	add	a0, a0, a1
+	li	a1, -33
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000028:

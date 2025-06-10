@@ -31,7 +31,7 @@ func0000000000000002:
 func0000000000000001:
 	zext.h	a1, a1
 	or	a0, a0, a1
-	bseti	a0, a0, 28
-	bseti	a0, a0, 31
+	lui	a1, 589824
+	add.uw	a0, a1, a0
 	ret
 

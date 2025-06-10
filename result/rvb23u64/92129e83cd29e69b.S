@@ -1,6 +1,6 @@
 func0000000000000374:
 	lui	a3, 1048561
-	add	a2, a2, a3
+	add.uw	a2, a3, a2
 	srliw	a2, a2, 5
 	slli	a2, a2, 5
 	add	a0, a0, a2

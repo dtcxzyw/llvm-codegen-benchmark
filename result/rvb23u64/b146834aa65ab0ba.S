@@ -18,8 +18,7 @@ func00000000000000e1:
 func00000000000000a1:
 	slli	a2, a2, 32
 	li	a3, -1
-	srli	a3, a3, 32
-	or	a2, a2, a3
+	add.uw	a2, a3, a2
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

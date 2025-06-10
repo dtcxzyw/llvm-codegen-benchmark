@@ -28,9 +28,8 @@ func0000000000000282:
 	lui	a1, 1048555
 	addi	a1, a1, -384
 	czero.nez	a0, a1, a0
-	lui	a1, 6019
-	addi	a1, a1, 551
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	lui	a1, 770449
+	addi	a1, a1, 896
+	add.uw	a0, a1, a0
 	ret
 

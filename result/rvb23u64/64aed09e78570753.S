@@ -31,29 +31,26 @@ func0000000000000030:
 
 func0000000000000010:
 	add	a1, a1, a2
-	lui	a2, 81007
+	lui	a2, 648056
 	add	a0, a0, a1
-	slli	a2, a2, 3
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func000000000000003c:
 	add	a1, a1, a2
-	lui	a2, 81007
+	lui	a2, 648056
 	add	a0, a0, a1
-	slli	a2, a2, 3
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000014:
 	add	a1, a1, a2
-	lui	a2, 81007
+	lui	a2, 648056
 	add	a0, a0, a1
-	slli	a2, a2, 3
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000005:
@@ -162,11 +159,10 @@ func0000000000000037:
 
 func000000000000001f:
 	add	a1, a1, a2
-	lui	a2, 81007
+	lui	a2, 648056
 	add	a0, a0, a1
-	slli	a2, a2, 3
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000038:

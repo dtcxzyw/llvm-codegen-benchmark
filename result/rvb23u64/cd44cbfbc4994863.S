@@ -49,8 +49,7 @@ func0000000000000001:
 func00000000000000c8:
 	add	a2, a2, a1
 	li	a3, -1
-	srli	a3, a3, 32
-	add	a2, a2, a3
+	add.uw	a2, a3, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	add	a0, a0, a1

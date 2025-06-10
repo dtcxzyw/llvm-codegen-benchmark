@@ -61,11 +61,10 @@ func000000000000000d:
 	srli	a2, a1, 63
 	srai	a1, a1, 17
 	add	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, -1225
-	slli	a2, a2, 2
-	add	a0, a0, a2
+	lui	a2, 1048575
 	add	a0, a0, a1
+	addi	a1, a2, -804
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000015:

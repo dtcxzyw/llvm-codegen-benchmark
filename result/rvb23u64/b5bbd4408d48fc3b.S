@@ -13,9 +13,8 @@ func0000000000000007:
 	srli	a0, a0, 50
 	addi	a1, a1, 1147
 	mul	a0, a0, a1
-	li	a1, -1
 	srli	a0, a0, 17
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	li	a1, -1
+	add.uw	a0, a1, a0
 	ret
 

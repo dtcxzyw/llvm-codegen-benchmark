@@ -7,7 +7,7 @@ func0000000000000002:
 
 func000000000000003c:
 	lui	a3, 1048561
-	add	a2, a2, a3
+	add.uw	a2, a3, a2
 	srliw	a2, a2, 5
 	slli	a2, a2, 5
 	sh2add	a0, a1, a0

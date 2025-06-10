@@ -20,15 +20,13 @@ func000000000000003c:
 
 func0000000000000014:
 	li	a2, -2
-	zext.w	a2, a2
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	mul	a0, a0, a1
 	ret
 
 func000000000000001c:
 	li	a2, -2
-	zext.w	a2, a2
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	mul	a0, a0, a1
 	ret
 

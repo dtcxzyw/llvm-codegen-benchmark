@@ -10,8 +10,7 @@ func0000000000000021:
 
 func0000000000000061:
 	li	a1, -1
-	srli	a1, a1, 32
-	add	a1, a1, a0
+	add.uw	a1, a1, a0
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

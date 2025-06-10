@@ -42,11 +42,10 @@ func00000000000000c3:
 
 func00000000000000d4:
 	add	a1, a1, a2
-	lui	a2, 262144
+	lui	a2, 1048575
 	add	a0, a0, a1
-	addi	a1, a2, -1225
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	addi	a1, a2, -804
+	add.uw	a0, a1, a0
 	ret
 
 func00000000000000ff:
@@ -75,9 +74,8 @@ func0000000000000050:
 
 func0000000000000014:
 	add	a1, a1, a2
-	li	a2, -32
 	add	a0, a0, a1
-	zext.w	a2, a2
-	add	a0, a0, a2
+	li	a1, -32
+	add.uw	a0, a1, a0
 	ret
 

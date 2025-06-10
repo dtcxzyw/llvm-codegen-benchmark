@@ -8,8 +8,8 @@ func0000000000000008:
 
 func00000000000000f8:
 	li	a2, -48
+	add.uw	a1, a2, a1
 	zext.w	a2, a2
-	add	a1, a1, a2
 	addi	a2, a2, 46
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -19,8 +19,8 @@ func00000000000000f8:
 
 func00000000000000f4:
 	li	a2, -48
+	add.uw	a1, a2, a1
 	zext.w	a2, a2
-	add	a1, a1, a2
 	addi	a2, a2, 46
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -66,7 +66,7 @@ func000000000000000a:
 
 func00000000000001e1:
 	lui	a2, 1048561
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	srliw	a1, a1, 5
 	slli	a1, a1, 5
 	or	a0, a0, a1

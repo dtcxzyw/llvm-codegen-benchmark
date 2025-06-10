@@ -12,10 +12,9 @@ func0000000000000001:
 
 func0000000000000007:
 	sub	a1, a1, a0
-	li	a0, -1
 	srai	a1, a1, 5
-	srli	a0, a0, 32
-	add	a0, a0, a1
+	li	a0, -1
+	add.uw	a0, a0, a1
 	ret
 
 func0000000000000004:

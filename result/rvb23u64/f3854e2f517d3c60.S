@@ -43,8 +43,7 @@ func0000000000000003:
 func000000000000001c:
 	sub	a0, a0, a1
 	lui	a1, 1048575
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	srli	a0, a0, 10
 	ret
 

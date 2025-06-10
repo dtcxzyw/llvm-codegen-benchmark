@@ -8,8 +8,7 @@ func0000000000000001:
 
 func0000000000000000:
 	li	a1, -2048
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	srai	a0, a0, 29
 	andi	a0, a0, -8
 	ret

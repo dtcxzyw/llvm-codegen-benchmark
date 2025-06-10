@@ -6,9 +6,8 @@ func000000000000001f:
 
 func0000000000000003:
 	add	a0, a0, a1
-	li	a1, -32
 	zext.b	a0, a0
-	zext.w	a1, a1
-	add	a0, a0, a1
+	li	a1, -32
+	add.uw	a0, a1, a0
 	ret
 

@@ -35,8 +35,8 @@ func0000000000000012:
 
 func0000000000000026:
 	li	a3, -8
+	add.uw	a2, a3, a2
 	zext.w	a3, a3
-	add	a2, a2, a3
 	addi	a3, a3, 6
 	and	a2, a2, a3
 	mul	a1, a1, a2

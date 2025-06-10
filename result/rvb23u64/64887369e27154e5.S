@@ -44,7 +44,7 @@ func0000000000000060:
 
 func000000000000004f:
 	lui	a2, 1048575
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	lui	a2, 8
 	srliw	a1, a1, 10
 	sh3add	a0, a1, a0

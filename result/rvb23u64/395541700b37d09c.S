@@ -129,10 +129,9 @@ func0000000000000086:
 	sltiu	a1, a1, -300
 	addi	a2, a2, -384
 	czero.nez	a1, a2, a1
-	lui	a2, 6019
-	addi	a2, a2, 551
-	slli	a2, a2, 7
-	add	a1, a1, a2
+	lui	a2, 770449
+	addi	a2, a2, 896
+	add.uw	a1, a2, a1
 	slt	a0, a0, a1
 	ret
 

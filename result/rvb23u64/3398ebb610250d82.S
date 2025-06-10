@@ -80,9 +80,8 @@ func0000000000000000:
 
 func000000000000002a:
 	slli	a1, a1, 29
-	li	a2, 7
-	slli	a2, a2, 29
-	add	a1, a1, a2
+	lui	a2, 917504
+	add.uw	a1, a2, a1
 	srai	a1, a1, 32
 	sh3add	a0, a1, a0
 	ret

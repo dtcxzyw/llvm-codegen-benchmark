@@ -2,11 +2,10 @@ func0000000000000010:
 	sext.w	a2, a2
 	slli	a1, a1, 6
 	add	a1, a1, a2
-	lui	a2, 81007
-	slli	a2, a2, 3
+	lui	a2, 648056
 	add	a0, a0, a1
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func00000000000000d4:
@@ -21,11 +20,10 @@ func00000000000000df:
 	sext.w	a2, a2
 	slli	a1, a1, 6
 	add	a1, a1, a2
-	lui	a2, 81007
-	slli	a2, a2, 3
+	lui	a2, 648056
 	add	a0, a0, a1
 	addi	a1, a2, -1607
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000055:

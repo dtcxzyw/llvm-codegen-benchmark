@@ -32,8 +32,7 @@ func0000000000000030:
 	slli	a1, a1, 8
 	sh2add	a0, a0, a1
 	li	a1, -2
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func00000000000000ff:

@@ -88,8 +88,8 @@ func0000000000000030:
 
 func000000000000002b:
 	li	a3, -8
+	add.uw	a2, a3, a2
 	zext.w	a3, a3
-	add	a2, a2, a3
 	addi	a3, a3, 6
 	and	a2, a2, a3
 	sh3add	a0, a1, a0

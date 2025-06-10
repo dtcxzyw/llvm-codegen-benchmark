@@ -11,7 +11,6 @@ func0000000000000001:
 func0000000000000003:
 	ctz	a0, a0
 	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 

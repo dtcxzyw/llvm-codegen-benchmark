@@ -25,17 +25,15 @@ func0000000000000010:
 	ret
 
 func000000000000003c:
-	sub	a0, a1, a0
-	li	a1, -4
-	zext.w	a1, a1
-	add	a0, a0, a1
+	sub	a1, a1, a0
+	li	a0, -4
+	add.uw	a0, a0, a1
 	ret
 
 func0000000000000003:
-	sub	a0, a1, a0
-	li	a1, -16
-	zext.w	a1, a1
-	add	a0, a0, a1
+	sub	a1, a1, a0
+	li	a0, -16
+	add.uw	a0, a0, a1
 	ret
 
 func0000000000000002:
@@ -49,10 +47,9 @@ func0000000000000020:
 	ret
 
 func000000000000000a:
-	sub	a0, a1, a0
-	li	a1, -4
-	zext.w	a1, a1
-	add	a0, a0, a1
+	sub	a1, a1, a0
+	li	a0, -4
+	add.uw	a0, a0, a1
 	ret
 
 func000000000000003f:

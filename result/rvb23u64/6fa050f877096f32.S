@@ -4,10 +4,9 @@ func0000000000000000:
 	czero.nez	a3, a2, a1
 	czero.eqz	a1, a2, a1
 	li	a2, -1
-	srli	a2, a2, 32
 	add	a0, a0, a3
 	addi	a0, a0, 8
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000000:
 	add	a0, a0, a1
 	li	a1, -53
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000030:
@@ -28,8 +27,7 @@ func0000000000000035:
 func0000000000000015:
 	add	a0, a0, a1
 	li	a1, -1075
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000014:
@@ -42,8 +40,7 @@ func0000000000000014:
 func0000000000000010:
 	add	a0, a0, a1
 	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func000000000000003e:
@@ -84,8 +81,7 @@ func0000000000000033:
 func000000000000001d:
 	add	a0, a0, a1
 	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000039:
@@ -101,8 +97,7 @@ func0000000000000038:
 func0000000000000003:
 	add	a0, a0, a1
 	li	a1, -48
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000028:
@@ -113,8 +108,7 @@ func0000000000000028:
 func0000000000000020:
 	add	a0, a0, a1
 	li	a1, -2
-	zext.w	a1, a1
-	add	a0, a0, a1
+	add.uw	a0, a1, a0
 	ret
 
 func0000000000000034:

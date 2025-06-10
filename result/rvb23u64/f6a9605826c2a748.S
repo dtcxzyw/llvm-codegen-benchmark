@@ -27,8 +27,7 @@ func000000000000004c:
 
 func00000000000001cc:
 	li	a2, -65
-	zext.w	a2, a2
-	add	a1, a1, a2
+	add.uw	a1, a2, a1
 	bext	a0, a0, a1
 	ret
 
