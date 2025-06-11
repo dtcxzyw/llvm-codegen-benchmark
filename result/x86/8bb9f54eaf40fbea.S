@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.quad	0x3fdfffff94a03595
 func0000000000000084:
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vcmpgtsd	.LCPI0_0(%rip), %xmm0, %k0
 	vcmpltsd	.LCPI0_1(%rip), %xmm0, %k1

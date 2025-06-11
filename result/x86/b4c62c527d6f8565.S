@@ -3,7 +3,7 @@ func0000000000000031:
 	movl	$8, %eax
 	movl	$2, %ecx
 	cmovael	%eax, %ecx
-	vcvtsi2sd	%ecx, %xmm0, %xmm0
+	vcvtsi2sd	%ecx, %xmm15, %xmm0
 	retq
 
 func0000000000000003:
@@ -11,6 +11,6 @@ func0000000000000003:
 	testl	%edi, %edi
 	sete	%al
 	leal	1(%rax,%rax,8), %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

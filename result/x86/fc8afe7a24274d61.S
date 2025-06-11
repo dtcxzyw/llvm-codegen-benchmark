@@ -1,5 +1,5 @@
 func0000000000000002:
-	vcvtsi2sd	%edi, %xmm2, %xmm2
+	vcvtsi2sd	%edi, %xmm15, %xmm2
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmulsd	%xmm2, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -8,7 +8,7 @@ func0000000000000002:
 	retq
 
 func0000000000000005:
-	vcvtsi2sd	%edi, %xmm2, %xmm2
+	vcvtsi2sd	%edi, %xmm15, %xmm2
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmulsd	%xmm2, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -17,7 +17,7 @@ func0000000000000005:
 	retq
 
 func0000000000000004:
-	vcvtsi2sd	%edi, %xmm2, %xmm2
+	vcvtsi2sd	%edi, %xmm15, %xmm2
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmulsd	%xmm2, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1

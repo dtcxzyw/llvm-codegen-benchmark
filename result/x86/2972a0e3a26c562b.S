@@ -9,7 +9,7 @@ func0000000000000002:
 	shrq	$63, %rax
 	sarq	$18, %rdx
 	addq	%rax, %rdx
-	vcvtsi2sd	%rdx, %xmm0, %xmm0
+	vcvtsi2sd	%rdx, %xmm15, %xmm0
 	vdivsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 
@@ -24,7 +24,7 @@ func0000000000000000:
 	shrq	$63, %rax
 	sarq	$18, %rdx
 	addq	%rax, %rdx
-	vcvtsi2sd	%rdx, %xmm0, %xmm0
+	vcvtsi2sd	%rdx, %xmm15, %xmm0
 	vdivsd	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 

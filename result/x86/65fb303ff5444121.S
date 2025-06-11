@@ -3,7 +3,7 @@
 func0000000000000002:
 	orl	%esi, %edi
 	movzwl	%di, %eax
-	vcvtsi2ss	%eax, %xmm1, %xmm1
+	vcvtsi2ss	%eax, %xmm15, %xmm1
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vdivss	%xmm1, %xmm0, %xmm0
 	retq

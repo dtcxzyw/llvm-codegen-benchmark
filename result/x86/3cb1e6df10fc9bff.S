@@ -12,7 +12,7 @@ func0000000000000002:
 	subq	%rcx, %rax
 	notq	%rax
 	addq	%rdx, %rax
-	vcvtusi2sd	%rax, %xmm0, %xmm0
+	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 
 func000000000000001a:
@@ -29,6 +29,6 @@ func000000000000001a:
 	subq	%rcx, %rax
 	notq	%rax
 	addq	%rdx, %rax
-	vcvtusi2sd	%rax, %xmm0, %xmm0
+	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 

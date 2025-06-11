@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.long	0x3f800000
 func0000000000000003:
-	vcvtusi2ss	%rdi, %xmm2, %xmm2
+	vcvtusi2ss	%rdi, %xmm15, %xmm2
 	vfmadd213ss	%xmm1, %xmm0, %xmm2
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vdivss	%xmm0, %xmm2, %xmm0

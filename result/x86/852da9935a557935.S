@@ -5,7 +5,7 @@ func0000000000000001:
 	sbbl	%eax, %eax
 	orl	%edx, %eax
 	addl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,6 +13,6 @@ func0000000000000000:
 	testb	$1, %sil
 	cmovnel	%edx, %eax
 	addl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

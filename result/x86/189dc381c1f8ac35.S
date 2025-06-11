@@ -3,6 +3,6 @@ func0000000000000000:
 	testl	%edi, %edi
 	cmovnsl	%edi, %eax
 	sarl	$5, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

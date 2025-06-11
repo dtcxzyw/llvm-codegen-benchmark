@@ -1,5 +1,5 @@
 func0000000000000003:
-	vcvtusi2sd	%esi, %xmm0, %xmm0
+	vcvtusi2sd	%esi, %xmm15, %xmm0
 	vmovq	%xmm0, %rax
 	movabsq	$9223372032559808512, %rcx
 	andq	%rax, %rcx

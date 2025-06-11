@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.long	0x40000000
 func0000000000000014:
-	vcvtsi2ss	%edi, %xmm2, %xmm2
+	vcvtsi2ss	%edi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -16,7 +16,7 @@ func0000000000000014:
 .LCPI1_1:
 	.long	0x3c23d70a
 func0000000000000015:
-	vcvtsi2ss	%edi, %xmm2, %xmm2
+	vcvtsi2ss	%edi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0

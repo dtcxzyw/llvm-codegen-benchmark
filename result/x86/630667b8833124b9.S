@@ -1,12 +1,12 @@
 func0000000000000001:
 	andl	$1, %esi
 	subl	%esi, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
 	andl	$1, %esi
 	subl	%esi, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 

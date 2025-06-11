@@ -8,7 +8,7 @@ func0000000000000000:
 	shrq	$63, %rax
 	sarq	$18, %rdx
 	addq	%rax, %rdx
-	vcvtusi2sd	%rdx, %xmm0, %xmm0
+	vcvtusi2sd	%rdx, %xmm15, %xmm0
 	vdivsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 

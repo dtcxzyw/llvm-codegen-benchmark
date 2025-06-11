@@ -3,6 +3,6 @@ func000000000000001b:
 	orl	%edi, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

@@ -7,7 +7,7 @@ func000000000000000a:
 	adcl	$0, %esi
 	subl	%edi, %esi
 	addl	$-16318, %esi
-	vcvtsi2sd	%esi, %xmm0, %xmm1
+	vcvtsi2sd	%esi, %xmm15, %xmm1
 	vmovsd	.LCPI0_0(%rip), %xmm0
 	vfmadd213sd	.LCPI0_1(%rip), %xmm1, %xmm0
 	retq

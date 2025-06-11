@@ -3,6 +3,6 @@ func0000000000000004:
 	addl	%edi, %eax
 	movzwl	%si, %ecx
 	subl	%ecx, %eax
-	vcvtsi2ss	%eax, %xmm0, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	retq
 

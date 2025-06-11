@@ -2,7 +2,7 @@
 	.long	0x49742400
 func0000000000000001:
 	subq	%rsi, %rdi
-	vcvtsi2ss	%rdi, %xmm0, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	vdivss	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 
@@ -10,7 +10,7 @@ func0000000000000001:
 	.long	0x49742400
 func0000000000000000:
 	subq	%rsi, %rdi
-	vcvtsi2ss	%rdi, %xmm0, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	vdivss	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 

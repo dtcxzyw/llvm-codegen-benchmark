@@ -5,7 +5,7 @@ func0000000000000000:
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	vxorpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
 	retq
 

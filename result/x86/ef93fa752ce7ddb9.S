@@ -3,7 +3,7 @@ func0000000000000000:
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
-	vcvtsi2sd	%eax, %xmm1, %xmm1
+	vcvtsi2sd	%eax, %xmm15, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm0
 	retq
 

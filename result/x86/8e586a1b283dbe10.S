@@ -1,20 +1,20 @@
 func0000000000000000:
 	subq	%rsi, %rdi
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %rax
 	retq
 
 func0000000000000004:
 	subq	%rsi, %rdi
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %rax
 	retq
 
 func0000000000000001:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %rax
 	retq

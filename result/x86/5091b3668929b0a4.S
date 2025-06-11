@@ -3,6 +3,6 @@ func0000000000000000:
 	shll	$15, %esi
 	andl	$-272236544, %esi
 	xorq	%rsi, %rdi
-	vcvtusi2ss	%rdi, %xmm0, %xmm0
+	vcvtusi2ss	%rdi, %xmm15, %xmm0
 	retq
 

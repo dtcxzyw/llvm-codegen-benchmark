@@ -1,7 +1,7 @@
 func0000000000000012:
 	testq	%rdi, %rdi
 	je	.LBB0_1
-	vcvtusi2ss	%rdi, %xmm2, %xmm2
+	vcvtusi2ss	%rdi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	seta	%al
@@ -17,7 +17,7 @@ func0000000000000012:
 func0000000000000015:
 	testq	%rdi, %rdi
 	je	.LBB1_1
-	vcvtusi2ss	%rdi, %xmm2, %xmm2
+	vcvtusi2ss	%rdi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setb	%al

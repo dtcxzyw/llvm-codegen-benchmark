@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.quad	0xbfc0000000000000
 func000000000000000b:
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vmovsd	.LCPI0_0(%rip), %xmm2
 	vfmadd213sd	.LCPI0_1(%rip), %xmm1, %xmm2
 	vucomisd	%xmm0, %xmm2
@@ -15,7 +15,7 @@ func000000000000000b:
 .LCPI1_1:
 	.quad	0xbddb7cdfd9d7bdbb
 func0000000000000004:
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vmovsd	.LCPI1_0(%rip), %xmm2
 	vfmadd213sd	.LCPI1_1(%rip), %xmm1, %xmm2
 	vucomisd	%xmm0, %xmm2

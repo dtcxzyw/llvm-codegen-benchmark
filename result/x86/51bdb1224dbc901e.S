@@ -1,7 +1,7 @@
 func0000000000000004:
 	shrq	$3, %rdi
 	imull	$-1431655765, %edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,6 +13,6 @@ func0000000000000000:
 	shrq	$63, %rax
 	shrq	$5, %rdx
 	addl	%eax, %edx
-	vcvtsi2sd	%edx, %xmm0, %xmm0
+	vcvtsi2sd	%edx, %xmm15, %xmm0
 	retq
 

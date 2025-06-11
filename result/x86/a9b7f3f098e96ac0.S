@@ -7,7 +7,7 @@
 func0000000000000000:
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vfmadd213sd	.LCPI0_1(%rip), %xmm0, %xmm1
-	vcvtsi2sd	%edi, %xmm2, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	vfmadd132sd	.LCPI0_2(%rip), %xmm1, %xmm0
 	vcvttpd2dq	%xmm0, %xmm0
 	vcvtdq2pd	%xmm0, %xmm0

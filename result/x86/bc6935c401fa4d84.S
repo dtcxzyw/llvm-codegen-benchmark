@@ -3,7 +3,7 @@ func0000000000000000:
 	negl	%eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000001:
@@ -11,6 +11,6 @@ func0000000000000001:
 	negl	%eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

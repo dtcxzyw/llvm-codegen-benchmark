@@ -5,6 +5,6 @@ func0000000000000021:
 	seta	%al
 	andl	$1, %edi
 	subl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm2, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

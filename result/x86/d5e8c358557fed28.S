@@ -10,7 +10,7 @@ func0000000000000000:
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
 	vfmadd231ss	.LCPI0_1(%rip), %xmm0, %xmm1
 	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm2, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	vfmadd132ss	.LCPI0_2(%rip), %xmm1, %xmm0
 	vaddss	.LCPI0_3(%rip), %xmm0, %xmm0
 	retq

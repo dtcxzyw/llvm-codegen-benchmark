@@ -3,6 +3,6 @@ func000000000000000f:
 	shll	$8, %eax
 	orl	%esi, %edi
 	orl	%eax, %edi
-	vcvtsi2ss	%edi, %xmm0, %xmm0
+	vcvtsi2ss	%edi, %xmm15, %xmm0
 	retq
 

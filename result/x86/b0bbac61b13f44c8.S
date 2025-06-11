@@ -4,6 +4,6 @@ func0000000000000001:
 	shrq	$41, %rax
 	imull	$24000, %eax, %eax
 	subl	%eax, %edi
-	vcvtsi2ss	%edi, %xmm0, %xmm0
+	vcvtsi2ss	%edi, %xmm15, %xmm0
 	retq
 

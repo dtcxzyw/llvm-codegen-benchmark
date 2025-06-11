@@ -3,6 +3,6 @@ func00000000000000af:
 	imull	%esi, %esi
 	imull	%edi, %edi
 	addl	%esi, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 

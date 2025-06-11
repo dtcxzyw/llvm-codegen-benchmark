@@ -2,7 +2,7 @@
 	.long	0xbf000000
 func0000000000000001:
 	subl	%edx, %esi
-	vcvtsi2ss	%esi, %xmm0, %xmm0
+	vcvtsi2ss	%esi, %xmm15, %xmm0
 	testl	%edi, %edi
 	sete	%al
 	kmovd	%eax, %k1

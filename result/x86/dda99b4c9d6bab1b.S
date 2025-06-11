@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000
 func0000000000000002:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -9,7 +9,7 @@ func0000000000000002:
 	retq
 
 func0000000000000005:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -17,7 +17,7 @@ func0000000000000005:
 	retq
 
 func0000000000000008:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpeqsd	%xmm1, %xmm0, %k0
@@ -27,7 +27,7 @@ func0000000000000008:
 .LCPI3_0:
 	.quad	0x3fe0000000000000
 func0000000000000013:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI3_0(%rip), %xmm0
 	setb	%al
@@ -36,7 +36,7 @@ func0000000000000013:
 .LCPI4_0:
 	.quad	0x3fe0000000000000
 func0000000000000003:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI4_0(%rip), %xmm0
 	setb	%al
@@ -45,14 +45,14 @@ func0000000000000003:
 .LCPI5_0:
 	.quad	0x3ff0000000000000
 func0000000000000004:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI5_0(%rip), %xmm0
 	seta	%al
 	retq
 
 func0000000000000014:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -60,7 +60,7 @@ func0000000000000014:
 	retq
 
 func000000000000001e:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
@@ -69,14 +69,14 @@ func000000000000001e:
 .LCPI8_0:
 	.quad	0x3fa999999999999a
 func000000000000000b:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI8_0(%rip), %xmm0
 	setbe	%al
 	retq
 
 func000000000000000e:
-	vcvtusi2sd	%rdi, %xmm1, %xmm1
+	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al

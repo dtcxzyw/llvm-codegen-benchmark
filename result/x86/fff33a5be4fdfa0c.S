@@ -9,7 +9,7 @@ func0000000000000000:
 	vdivss	%xmm1, %xmm3, %xmm1
 	vmulss	%xmm2, %xmm0, %xmm2
 	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm4, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	vfmadd213ss	%xmm2, %xmm1, %xmm0
 	retq
 

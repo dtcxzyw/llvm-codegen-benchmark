@@ -5,7 +5,7 @@ func0000000000000001:
 	sete	%al
 	kmovd	%eax, %k1
 	vmovss	.LCPI0_0(%rip), %xmm0 {%k1} {z}
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vaddss	%xmm1, %xmm0, %xmm0
 	retq
 

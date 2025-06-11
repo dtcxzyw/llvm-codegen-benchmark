@@ -2,7 +2,7 @@
 	.quad	0x412e848000000000
 func0000000000000012:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	seta	%al
@@ -12,7 +12,7 @@ func0000000000000012:
 	.quad	0x41cdcd6500000000
 func000000000000001b:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
@@ -22,7 +22,7 @@ func000000000000001b:
 	.quad	0x41cdcd6500000000
 func000000000000001c:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setae	%al
@@ -32,7 +32,7 @@ func000000000000001c:
 	.quad	0x41cdcd6500000000
 func0000000000000013:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	.LCPI3_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setb	%al
@@ -42,7 +42,7 @@ func0000000000000013:
 	.quad	0x412e848000000000
 func0000000000000014:
 	subq	%rsi, %rdi
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	.LCPI4_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al

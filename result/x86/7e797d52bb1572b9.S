@@ -5,7 +5,7 @@
 func000000000000000a:
 	subl	%esi, %edi
 	addl	$-16318, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vmovsd	.LCPI0_0(%rip), %xmm0
 	vfmadd213sd	.LCPI0_1(%rip), %xmm1, %xmm0
 	retq

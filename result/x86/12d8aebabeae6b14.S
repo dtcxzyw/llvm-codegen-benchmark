@@ -3,6 +3,6 @@ func0000000000000000:
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
 	addq	%rdi, %rax
-	vcvtusi2sd	%rax, %xmm0, %xmm0
+	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 

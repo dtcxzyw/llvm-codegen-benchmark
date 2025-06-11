@@ -10,7 +10,7 @@ func0000000000000000:
 	vaddsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vmovsd	.LCPI0_1(%rip), %xmm1
 	vfmadd213sd	.LCPI0_2(%rip), %xmm0, %xmm1
-	vcvtsi2sd	%edi, %xmm2, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	vfmadd132sd	.LCPI0_3(%rip), %xmm1, %xmm0
 	retq
 

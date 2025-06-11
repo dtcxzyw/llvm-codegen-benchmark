@@ -3,6 +3,6 @@ func0000000000000003:
 	movl	$3, %eax
 	cmovgel	%edi, %eax
 	addl	$-3, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

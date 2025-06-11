@@ -7,7 +7,7 @@ func0000000000000001:
 	sarq	$7, %rdx
 	addq	%rax, %rdx
 	addq	%rdi, %rdx
-	vcvtsi2sd	%rdx, %xmm0, %xmm0
+	vcvtsi2sd	%rdx, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -19,6 +19,6 @@ func0000000000000000:
 	sarq	$7, %rdx
 	addq	%rax, %rdx
 	addq	%rdi, %rdx
-	vcvtsi2sd	%rdx, %xmm0, %xmm0
+	vcvtsi2sd	%rdx, %xmm15, %xmm0
 	retq
 

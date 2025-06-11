@@ -4,7 +4,7 @@ func0000000000000002:
 	testl	%eax, %eax
 	cmovnsl	%eax, %edi
 	sarl	$5, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,6 +13,6 @@ func0000000000000000:
 	shrl	$31, %eax
 	leal	1(%rdi,%rax), %eax
 	sarl	%eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

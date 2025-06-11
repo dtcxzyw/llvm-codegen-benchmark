@@ -11,7 +11,7 @@ func0000000000000002:
 .LCPI2_0:
 	.quad	0x43e0000000000000
 func0000000000000005:
-	vcvtusi2sd	%rdi, %xmm0, %xmm0
+	vcvtusi2sd	%rdi, %xmm15, %xmm0
 	vmovsd	.LCPI2_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setb	%al

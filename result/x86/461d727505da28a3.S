@@ -3,7 +3,7 @@
 func0000000000000000:
 	movl	$100000, %eax
 	subl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 
@@ -12,7 +12,7 @@ func0000000000000000:
 func0000000000000001:
 	movl	$524288, %eax
 	subl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	vmulsd	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 

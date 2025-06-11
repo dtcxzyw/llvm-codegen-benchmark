@@ -3,7 +3,7 @@ func000000000000000a:
 	cmpl	$2, %edi
 	setl	%al
 	leal	-1(%rax,%rax), %eax
-	vcvtsi2ss	%eax, %xmm0, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000001:
@@ -11,6 +11,6 @@ func0000000000000001:
 	negl	%edi
 	setae	%al
 	leal	-1(%rax,%rax), %eax
-	vcvtsi2ss	%eax, %xmm0, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	retq
 

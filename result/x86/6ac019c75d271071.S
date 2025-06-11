@@ -3,7 +3,7 @@ func000000000000000b:
 	subl	%esi, %eax
 	subl	%edi, %esi
 	cmovll	%eax, %esi
-	vcvtsi2sd	%esi, %xmm0, %xmm0
+	vcvtsi2sd	%esi, %xmm15, %xmm0
 	retq
 
 func0000000000000003:
@@ -11,6 +11,6 @@ func0000000000000003:
 	movl	%edi, %eax
 	negl	%eax
 	cmovsl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

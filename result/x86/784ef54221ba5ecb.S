@@ -2,7 +2,7 @@
 	.long	0x3f800000
 func0000000000000001:
 	subl	%esi, %edi
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vsubss	%xmm0, %xmm1, %xmm0
@@ -12,7 +12,7 @@ func0000000000000001:
 	.long	0x3f800000
 func0000000000000000:
 	subl	%esi, %edi
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
 	vmovss	.LCPI1_0(%rip), %xmm1
 	vsubss	%xmm0, %xmm1, %xmm0

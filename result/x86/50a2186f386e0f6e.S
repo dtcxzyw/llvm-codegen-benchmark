@@ -1,6 +1,6 @@
 func000000000000001c:
 	movl	%edi, %eax
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setp	%cl
 	setne	%dl
@@ -12,7 +12,7 @@ func000000000000001c:
 
 func000000000000001d:
 	movl	%edi, %eax
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setp	%cl
 	setne	%dl

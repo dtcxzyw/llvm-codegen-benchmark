@@ -1,14 +1,14 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000
 func0000000000000004:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI0_0(%rip), %xmm0
 	seta	%al
 	retq
 
 func0000000000000003:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -18,14 +18,14 @@ func0000000000000003:
 .LCPI2_0:
 	.quad	0x3fe8000000000000
 func000000000000000b:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI2_0(%rip), %xmm0
 	setbe	%al
 	retq
 
 func0000000000000005:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -33,7 +33,7 @@ func0000000000000005:
 	retq
 
 func0000000000000008:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpeqsd	%xmm1, %xmm0, %k0
@@ -41,7 +41,7 @@ func0000000000000008:
 	retq
 
 func0000000000000002:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -49,7 +49,7 @@ func0000000000000002:
 	retq
 
 func000000000000000e:
-	vcvtsi2sd	%rdi, %xmm1, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setnp	%al

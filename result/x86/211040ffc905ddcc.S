@@ -1,5 +1,5 @@
 func0000000000000007:
-	vcvtsi2sd	%esi, %xmm1, %xmm1
+	vcvtsi2sd	%esi, %xmm15, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setp	%al
 	setne	%cl

@@ -2,7 +2,7 @@
 	.long	0x3b368d31
 func0000000000000000:
 	incl	%edi
-	vcvtsi2ss	%edi, %xmm0, %xmm0
+	vcvtsi2ss	%edi, %xmm15, %xmm0
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 
@@ -10,7 +10,7 @@ func0000000000000000:
 	.long	0x3c23d70a
 func0000000000000001:
 	decl	%edi
-	vcvtsi2ss	%edi, %xmm0, %xmm0
+	vcvtsi2ss	%edi, %xmm15, %xmm0
 	vmulss	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 

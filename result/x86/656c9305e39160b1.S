@@ -7,7 +7,7 @@ func0000000000000000:
 	vmovss	.LCPI0_1(%rip), %xmm2
 	vdivss	%xmm0, %xmm2, %xmm2
 	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm3, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	vfmadd213ss	%xmm1, %xmm2, %xmm0
 	retq
 

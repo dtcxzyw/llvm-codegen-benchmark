@@ -6,6 +6,6 @@ func0000000000000035:
 	cmovnel	%eax, %ecx
 	subl	%ecx, %edi
 	addl	$-16318, %edi
-	vcvtsi2sd	%edi, %xmm0, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 

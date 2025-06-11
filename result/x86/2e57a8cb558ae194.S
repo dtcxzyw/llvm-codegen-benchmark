@@ -4,6 +4,6 @@ func0000000000000001:
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
 	shrq	$4, %rax
-	vcvtsi2sd	%rax, %xmm0, %xmm0
+	vcvtsi2sd	%rax, %xmm15, %xmm0
 	retq
 

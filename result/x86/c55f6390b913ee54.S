@@ -7,6 +7,6 @@ func0000000000000001:
 	sarq	$7, %rdx
 	addq	%rax, %rdx
 	imulq	$1000, %rdx, %rax
-	vcvtsi2sd	%rax, %xmm0, %xmm0
+	vcvtsi2sd	%rax, %xmm15, %xmm0
 	retq
 

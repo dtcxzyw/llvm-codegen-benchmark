@@ -4,7 +4,7 @@ func0000000000000009:
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	subl	%eax, %edi
-	vcvtsi2sd	%edi, %xmm2, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 
 func0000000000000008:
@@ -13,6 +13,6 @@ func0000000000000008:
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	subl	%eax, %edi
-	vcvtsi2sd	%edi, %xmm2, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 

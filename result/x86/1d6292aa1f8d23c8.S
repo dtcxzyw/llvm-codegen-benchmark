@@ -2,7 +2,7 @@ func0000000000000001:
 	vcvttsd2usi	%xmm1, %eax
 	cmpl	$1, %eax
 	adcl	$0, %eax
-	vcvtusi2sd	%eax, %xmm2, %xmm1
+	vcvtusi2sd	%eax, %xmm15, %xmm1
 	testl	%edi, %edi
 	sete	%al
 	kmovd	%eax, %k1

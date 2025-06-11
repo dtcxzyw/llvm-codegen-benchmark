@@ -3,7 +3,7 @@ func0000000000000001:
 	cmpl	$1, %edi
 	sete	%al
 	leal	-1(%rax,%rax), %eax
-	vcvtsi2sd	%eax, %xmm1, %xmm1
+	vcvtsi2sd	%eax, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 

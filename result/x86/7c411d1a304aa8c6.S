@@ -1,5 +1,5 @@
 func0000000000000001:
-	vcvtsi2ss	%esi, %xmm1, %xmm1
+	vcvtsi2ss	%esi, %xmm15, %xmm1
 	testl	%edi, %edi
 	sete	%al
 	kmovd	%eax, %k1
@@ -8,7 +8,7 @@ func0000000000000001:
 	retq
 
 func000000000000000a:
-	vcvtsi2ss	%esi, %xmm1, %xmm1
+	vcvtsi2ss	%esi, %xmm15, %xmm1
 	cmpl	$2, %edi
 	setge	%al
 	kmovd	%eax, %k1

@@ -2,7 +2,7 @@ func0000000000000002:
 	sarq	%rdi
 	movabsq	$-6148914691236517205, %rax
 	imulq	%rdi, %rax
-	vcvtusi2sd	%rax, %xmm0, %xmm0
+	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,13 +13,13 @@ func0000000000000000:
 	shrq	$63, %rax
 	sarq	$18, %rdx
 	addq	%rax, %rdx
-	vcvtusi2sd	%rdx, %xmm0, %xmm0
+	vcvtusi2sd	%rdx, %xmm15, %xmm0
 	retq
 
 func0000000000000003:
 	sarq	$3, %rdi
 	movabsq	$-6148914691236517205, %rax
 	imulq	%rdi, %rax
-	vcvtsi2sd	%rax, %xmm0, %xmm0
+	vcvtsi2sd	%rax, %xmm15, %xmm0
 	retq
 

@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.quad	0x3cb0000000000000
 func0000000000000002:
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
 	vmovsd	.LCPI0_1(%rip), %xmm1
@@ -12,7 +12,7 @@ func0000000000000002:
 	retq
 
 func0000000000000007:
-	vcvtsi2sd	%edi, %xmm1, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
 	movb	$63, %cl

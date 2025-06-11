@@ -4,7 +4,7 @@ func0000000000000001:
 	addl	%esi, %eax
 	sarl	%eax
 	addl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -15,6 +15,6 @@ func0000000000000000:
 	sarq	$50, %rax
 	addl	%ecx, %eax
 	addl	%edi, %eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

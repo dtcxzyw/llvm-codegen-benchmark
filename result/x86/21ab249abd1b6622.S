@@ -5,7 +5,7 @@
 func0000000000000000:
 	vfmadd132ss	.LCPI0_0(%rip), %xmm1, %xmm0
 	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm2, %xmm1
+	vcvtsi2ss	%eax, %xmm15, %xmm1
 	vfmadd231ss	.LCPI0_1(%rip), %xmm1, %xmm0
 	retq
 
@@ -16,7 +16,7 @@ func0000000000000000:
 func0000000000000001:
 	vfmadd132ss	.LCPI1_0(%rip), %xmm1, %xmm0
 	movzbl	%dil, %eax
-	vcvtsi2ss	%eax, %xmm2, %xmm1
+	vcvtsi2ss	%eax, %xmm15, %xmm1
 	vfmadd231ss	.LCPI1_1(%rip), %xmm1, %xmm0
 	retq
 

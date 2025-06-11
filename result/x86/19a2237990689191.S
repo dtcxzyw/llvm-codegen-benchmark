@@ -4,6 +4,6 @@ func0000000000000002:
 	shrl	$31, %eax
 	leal	1(%rdi,%rax), %eax
 	sarl	%eax
-	vcvtsi2ss	%eax, %xmm0, %xmm0
+	vcvtsi2ss	%eax, %xmm15, %xmm0
 	retq
 

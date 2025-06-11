@@ -4,7 +4,7 @@ func0000000000000002:
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,6 +13,6 @@ func0000000000000000:
 	shrl	$31, %eax
 	addl	%edi, %eax
 	sarl	%eax
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.long	0x37800000
 func000000000000000a:
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmovss	.LCPI0_0(%rip), %xmm2
 	vmulss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm2, %xmm0, %xmm0
@@ -12,7 +12,7 @@ func000000000000000a:
 .LCPI1_0:
 	.long	0x37800000
 func000000000000000c:
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmovss	.LCPI1_0(%rip), %xmm2
 	vmulss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm2, %xmm0, %xmm0
@@ -23,7 +23,7 @@ func000000000000000c:
 .LCPI2_0:
 	.long	0x37800000
 func0000000000000008:
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmovss	.LCPI2_0(%rip), %xmm2
 	vmulss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm2, %xmm0, %xmm0
@@ -34,7 +34,7 @@ func0000000000000008:
 .LCPI3_0:
 	.long	0x30000000
 func0000000000000002:
-	vcvtsi2ss	%edi, %xmm1, %xmm1
+	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmovss	.LCPI3_0(%rip), %xmm2
 	vmulss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm2, %xmm0, %xmm0

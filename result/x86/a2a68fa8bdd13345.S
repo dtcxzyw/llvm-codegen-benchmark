@@ -3,7 +3,7 @@ func0000000000000002:
 	imull	%edx, %eax
 	cltd
 	idivl	%edi
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -11,6 +11,6 @@ func0000000000000000:
 	imull	%edx, %eax
 	cltd
 	idivl	%edi
-	vcvtsi2sd	%eax, %xmm0, %xmm0
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

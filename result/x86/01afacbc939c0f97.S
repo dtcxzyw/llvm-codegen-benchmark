@@ -3,7 +3,7 @@
 func0000000000000004:
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0
-	vcvtusi2sd	%edi, %xmm2, %xmm1
+	vcvtusi2sd	%edi, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 

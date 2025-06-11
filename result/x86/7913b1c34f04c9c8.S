@@ -4,7 +4,7 @@ func0000000000000001:
 	cltd
 	idivl	%ecx
 	addl	%edi, %edx
-	vcvtsi2ss	%edx, %xmm0, %xmm0
+	vcvtsi2ss	%edx, %xmm15, %xmm0
 	retq
 
 func0000000000000000:
@@ -13,6 +13,6 @@ func0000000000000000:
 	cltd
 	idivl	%ecx
 	addl	%edi, %edx
-	vcvtsi2ss	%edx, %xmm0, %xmm0
+	vcvtsi2ss	%edx, %xmm15, %xmm0
 	retq
 
