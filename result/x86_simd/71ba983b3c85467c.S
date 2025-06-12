@@ -51,9 +51,9 @@ func0000000000000003:
 .LCPI2_0:
 	.quad	72340172838076673
 func0000000000000002:
-	vpbroadcastq	.LCPI2_0(%rip), %ymm1
-	vpaddb	%xmm1, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
-	vpmullq	%ymm1, %ymm0, %ymm0
+	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
