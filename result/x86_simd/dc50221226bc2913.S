@@ -11,8 +11,7 @@ func0000000000000003:
 	vpmovd2m	%xmm0, %k2
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
-	vpbroadcastq	.LCPI0_1(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm0, %ymm1, %ymm0
+	vporq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k2}
 	vporq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 

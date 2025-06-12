@@ -94,8 +94,9 @@ func0000000000000086:
 	vpbroadcastq	.LCPI5_0(%rip), %ymm1
 	vpcmpltuq	%ymm1, %ymm0, %k1
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
-	vpsraq	$63, %ymm0, %ymm0
-	vpandn	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsrlq	$31, %ymm0, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:

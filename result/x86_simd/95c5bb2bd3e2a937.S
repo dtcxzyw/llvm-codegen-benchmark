@@ -117,11 +117,10 @@ func0000000000000146:
 	vmovdqa	%ymm2, %ymm0
 	retq
 
-.LCPI8_0:
-	.long	1
 func000000000000014a:
-	vpsrad	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm0, %ymm0
-	vpternlogd	$14, .LCPI8_0(%rip){1to8}, %ymm1, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpcmpgtd	%ymm2, %ymm0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0 {%k1}
 	retq
 

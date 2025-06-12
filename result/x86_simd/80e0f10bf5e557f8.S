@@ -27,8 +27,7 @@ func0000000000000010:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm2, %k2
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k2} {z}
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k2}
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
@@ -43,8 +42,7 @@ func0000000000000015:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpcmpneqd	.LCPI2_0(%rip){1to8}, %ymm2, %k2
-	vpbroadcastd	.LCPI2_1(%rip), %ymm1 {%k2} {z}
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k2}
 	vpaddd	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
@@ -56,8 +54,7 @@ func000000000000001f:
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vptestmd	%ymm2, %ymm2, %k2
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1
-	vmovdqa32	%ymm1, %ymm2 {%k2} {z}
-	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0 {%k2}
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

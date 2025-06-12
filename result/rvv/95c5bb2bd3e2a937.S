@@ -90,10 +90,11 @@ func0000000000000146:
 	ret
 
 func000000000000014a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v10, v10, 31
-	vor.vi	v10, v10, 1
-	vsra.vi	v8, v8, 31
-	vandn.vv	v8, v10, v8
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgt.vi	v0, v10, -1
+	vmv.v.i	v10, 1
+	vsra.vi	v12, v8, 31
+	vnot.v	v8, v12
+	vandn.vv	v8, v10, v12, v0.t
 	ret
 

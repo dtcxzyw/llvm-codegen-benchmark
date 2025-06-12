@@ -37,8 +37,7 @@ func0000000000000014:
 	vpmovw2m	%xmm1, %k1
 	vptestnmd	%ymm2, %ymm2, %k2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1
-	vmovdqa32	%ymm1, %ymm2 {%k1} {z}
-	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k2}
 	retq
 
@@ -68,12 +67,11 @@ func000000000000001a:
 	.long	4290772992
 func0000000000000015:
 	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k0
-	vpcmpneqd	.LCPI4_0(%rip){1to8}, %ymm2, %k1
-	knotb	%k0, %k2
-	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k2} {z}
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI4_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltw	%xmm3, %xmm1, %k1
+	vpcmpneqd	.LCPI4_0(%rip){1to8}, %ymm2, %k2
+	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI4_2(%rip){1to8}, %ymm0, %ymm0 {%k2}
 	retq
 
 .LCPI5_0:

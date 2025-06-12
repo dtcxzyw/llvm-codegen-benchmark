@@ -6,8 +6,10 @@ func000000000000194a:
 	vmslt.vx	v13, v8, a0
 	li	a0, 60
 	vmsgt.vx	v8, v10, a0
-	vmor.mm	v8, v12, v8
-	vmand.mm	v0, v13, v8
+	vmand.mm	v9, v13, v12
+	vmand.mm	v8, v13, v8
+	vmandn.mm	v8, v8, v12
+	vmor.mm	v0, v9, v8
 	ret
 
 func0000000000000426:

@@ -40,8 +40,7 @@ func000000000000002b:
 	vpmovd2m	%xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm1, %xmm2, %k2
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm0, %ymm1, %ymm0
-	vporq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k2}
+	vorpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 

@@ -23,9 +23,8 @@ func0000000000000007:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k2
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm0, %ymm1, %ymm0
-	vpord	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k2}
+	vorps	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:
@@ -53,9 +52,8 @@ func0000000000000004:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k2
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vorps	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k2}
+	vorps	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
@@ -66,8 +64,7 @@ func0000000000000033:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vptestmb	%xmm2, %xmm2, %k2
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vorps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k2}
+	vorps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 

@@ -6,9 +6,8 @@ func0000000000000007:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vptestnmq	%ymm2, %ymm2, %k2
-	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k1} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vporq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k2}
+	vorpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k2}
 	retq
 
 .LCPI1_0:
@@ -17,12 +16,11 @@ func0000000000000007:
 	.quad	4096
 func0000000000000006:
 	vpslld	$31, %xmm1, %xmm1
-	vpmovd2m	%xmm1, %k0
-	vptestmq	%ymm2, %ymm2, %k1
-	knotw	%k0, %k2
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vporq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm1, %k1
+	vptestmq	%ymm2, %ymm2, %k2
+	vorpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k2}
 	retq
 
 .LCPI2_0:
@@ -35,9 +33,8 @@ func0000000000000063:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm2, %k2
-	vpbroadcastq	.LCPI2_1(%rip), %ymm1 {%k1} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vporq	.LCPI2_2(%rip){1to4}, %ymm0, %ymm0 {%k2}
+	vorpd	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI2_2(%rip){1to4}, %ymm0, %ymm0 {%k2}
 	retq
 
 .LCPI3_0:
@@ -46,12 +43,11 @@ func0000000000000063:
 	.quad	64
 func0000000000000004:
 	vpslld	$31, %xmm1, %xmm1
-	vpmovd2m	%xmm1, %k0
-	vptestmq	%ymm2, %ymm2, %k1
-	knotw	%k0, %k2
-	vpbroadcastq	.LCPI3_0(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm1, %ymm0, %ymm0
-	vporq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm1, %k1
+	vptestmq	%ymm2, %ymm2, %k2
+	vorpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0 {%k2}
 	retq
 
 .LCPI4_0:
@@ -60,11 +56,10 @@ func0000000000000004:
 	.quad	-9223372036854775808
 func0000000000000005:
 	vpslld	$31, %xmm2, %xmm2
-	vpmovd2m	%xmm2, %k0
-	knotw	%k0, %k1
-	vpbroadcastq	.LCPI4_0(%rip), %ymm2 {%k1} {z}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm2, %k1
+	vorpd	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	vptestmq	%ymm1, %ymm1, %k1
-	vporq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 

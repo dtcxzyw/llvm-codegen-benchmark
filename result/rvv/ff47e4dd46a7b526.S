@@ -3,8 +3,10 @@ func000000000000018c:
 	vmsne.vi	v9, v10, 4
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v8, v8, 11
-	vmor.mm	v8, v8, v9
-	vmand.mm	v0, v0, v8
+	vmand.mm	v10, v0, v8
+	vmand.mm	v9, v0, v9
+	vmandn.mm	v8, v9, v8
+	vmor.mm	v0, v10, v8
 	ret
 
 func0000000000000181:
@@ -14,7 +16,9 @@ func0000000000000181:
 	li	a0, 45
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
-	vmor.mm	v8, v8, v9
-	vmand.mm	v0, v0, v8
+	vmand.mm	v9, v0, v9
+	vmandn.mm	v9, v9, v8
+	vmand.mm	v8, v0, v8
+	vmor.mm	v0, v8, v9
 	ret
 

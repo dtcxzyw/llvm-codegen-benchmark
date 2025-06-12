@@ -21,11 +21,9 @@ func0000000000000004:
 func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v10, v10, 1
+	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsll.vi	v12, v12, 30
-	vor.vv	v8, v8, v12
+	vor.vx	v8, v8, a0, v0.t
 	bseti	a0, zero, 62
 	vmv1r.v	v0, v10
 	vor.vx	v8, v8, a0, v0.t
@@ -34,11 +32,9 @@ func0000000000000007:
 func0000000000000006:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v10, v10, 7
+	li	a0, 32
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsll.vi	v12, v12, 5
-	vor.vv	v8, v8, v12
+	vor.vx	v8, v8, a0, v0.t
 	li	a0, 64
 	vmv1r.v	v0, v10
 	vor.vx	v8, v8, a0, v0.t

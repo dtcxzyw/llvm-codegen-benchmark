@@ -22,8 +22,7 @@ func0000000000000003:
 	vpsllw	$15, %xmm1, %xmm0
 	vpmovw2m	%xmm0, %k2
 	vpslld	$20, %ymm2, %ymm0
-	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k2} {z}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0 {%k2}
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 

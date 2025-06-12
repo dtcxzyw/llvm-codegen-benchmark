@@ -5,11 +5,9 @@ func0000000000000000:
 	lui	a0, 1536
 	vmv.v.x	v8, a0
 	lui	a0, 1024
-	vmerge.vxm	v8, v8, a0, v0
-	lui	a0, 512
-	vor.vx	v12, v8, a0
+	vmerge.vxm	v12, v8, a0, v0
 	vmv1r.v	v0, v10
-	vmerge.vvm	v8, v12, v8, v0
+	vmerge.vvm	v8, v8, v12, v0
 	ret
 
 func0000000000000001:

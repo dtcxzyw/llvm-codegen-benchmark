@@ -3,18 +3,18 @@
 	.byte	45
 	.byte	45
 	.byte	45
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 func0000000000000004:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}

@@ -89,7 +89,8 @@ func0000000000000006:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vmovdqu16	.LCPI2_0(%rip), %ymm1 {%k1} {z}
-	vpsraw	$15, %ymm0, %ymm0
-	vpandn	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsrlw	$7, %ymm0, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 

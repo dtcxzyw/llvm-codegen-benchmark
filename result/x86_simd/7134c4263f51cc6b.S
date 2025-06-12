@@ -328,8 +328,9 @@ func0000000000000086:
 	vpbroadcastd	.LCPI20_0(%rip), %ymm1
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
-	vpsrad	$31, %ymm0, %ymm0
-	vpandn	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsrld	$15, %ymm0, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI21_0:
