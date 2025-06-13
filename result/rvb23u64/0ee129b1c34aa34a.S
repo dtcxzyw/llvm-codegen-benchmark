@@ -49,9 +49,8 @@ func0000000000000001:
 func0000000000000068:
 	addi	a2, a2, 12
 	sltu	a1, a2, a1
-	li	a2, 10
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -10
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 10
 	ret
 

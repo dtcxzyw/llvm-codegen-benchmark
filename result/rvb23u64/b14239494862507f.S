@@ -23,10 +23,9 @@ func0000000000000008:
 
 func0000000000000004:
 	fli.s	fa5, 1.0
-	li	a1, 5
-	flt.s	a2, fa5, fa0
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
-	or	a0, a0, a1
+	flt.s	a1, fa5, fa0
+	addi	a0, a0, -5
+	czero.nez	a0, a0, a1
+	addi	a0, a0, 5
 	ret
 

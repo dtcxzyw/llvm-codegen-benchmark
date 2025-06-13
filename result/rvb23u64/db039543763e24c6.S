@@ -5,12 +5,11 @@ func0000000000000061:
 	ret
 
 func0000000000000008:
-	neg	a1, a0
-	sltiu	a0, a0, 129
-	li	a2, -128
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	sltiu	a1, a0, 129
+	li	a2, 128
+	sub	a2, a2, a0
+	czero.eqz	a0, a2, a1
+	addi	a0, a0, -128
 	ret
 
 func0000000000000068:
@@ -38,12 +37,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	li	a1, 21
-	sltiu	a2, a0, -13
-	sub	a1, a1, a0
-	li	a0, 35
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	sltiu	a1, a0, -13
+	li	a2, -14
+	sub	a2, a2, a0
+	czero.nez	a0, a2, a1
+	addi	a0, a0, 35
 	ret
 

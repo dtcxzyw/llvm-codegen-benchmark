@@ -13,10 +13,9 @@ func00000000000000c4:
 
 func0000000000000028:
 	binvi	a2, a2, 63
-	li	a3, 2
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -2
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
 
@@ -76,10 +75,9 @@ func0000000000000086:
 
 func0000000000000098:
 	sltiu	a2, a2, 4
-	li	a3, 5
-	czero.nez	a3, a3, a2
+	addi	a1, a1, -5
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 5
 	sltu	a0, a0, a1
 	ret
 

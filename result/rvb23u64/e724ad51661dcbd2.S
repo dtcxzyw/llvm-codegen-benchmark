@@ -8,28 +8,25 @@ func0000000000000001:
 
 func0000000000000014:
 	sext.w	a1, a1
-	li	a2, 1
 	sltiu	a1, a1, 7
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000006:
 	sext.w	a1, a1
-	li	a2, 1
 	slti	a1, a1, 7
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000004:
 	srliw	a1, a1, 25
-	li	a2, 1
 	sltiu	a1, a1, 3
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 

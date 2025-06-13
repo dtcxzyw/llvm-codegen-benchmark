@@ -10,12 +10,11 @@ func0000000000000018:
 func0000000000000004:
 	sext.w	a1, a1
 	li	a2, 16
-	li	a3, 15
 	minu	a2, a1, a2
-	czero.nez	a3, a3, a1
+	addi	a2, a2, -15
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 15
 	ret
 
 func0000000000000019:
@@ -30,11 +29,10 @@ func0000000000000019:
 func0000000000000005:
 	sext.w	a1, a1
 	li	a2, 12
-	li	a3, 1
 	minu	a2, a1, a2
-	czero.nez	a3, a3, a1
+	addi	a2, a2, -1
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 

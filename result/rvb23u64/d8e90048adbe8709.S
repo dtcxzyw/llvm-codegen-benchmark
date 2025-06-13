@@ -19,11 +19,10 @@ func0000000000000024:
 func0000000000000004:
 	andi	a0, a0, 1
 	addiw	a1, a1, -18
-	li	a2, 232
 	sltiu	a1, a1, 4
 	xori	a1, a1, 213
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -232
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 232
 	ret
 

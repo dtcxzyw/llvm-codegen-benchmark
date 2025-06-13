@@ -1,21 +1,19 @@
 func000000000000006a:
 	sext.w	a1, a0
 	slliw	a0, a0, 1
-	li	a2, 64
 	sgtz	a1, a1
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -64
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 64
 	ret
 
 func0000000000000004:
 	sext.w	a1, a0
 	slliw	a0, a0, 1
-	li	a2, 250
 	sltiu	a1, a1, 250
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -250
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 250
 	ret
 
 func0000000000000064:
@@ -30,11 +28,10 @@ func0000000000000064:
 func0000000000000024:
 	sext.w	a1, a0
 	slliw	a0, a0, 10
-	li	a2, 1024
 	sltiu	a1, a1, 5
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -1024
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 1024
 	ret
 
 func000000000000004a:

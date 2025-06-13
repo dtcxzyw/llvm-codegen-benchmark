@@ -9,11 +9,10 @@ func0000000000000003:
 
 func0000000000000002:
 	zext.b	a2, a2
-	li	a3, 1024
 	addi	a2, a2, -62
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -1024
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 1024
 	or	a0, a0, a1
 	ret
 
@@ -40,11 +39,10 @@ func000000000000000c:
 
 func0000000000000014:
 	sext.b	a2, a2
-	li	a3, 68
 	slti	a2, a2, 0
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -68
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 68
 	or	a0, a0, a1
 	ret
 

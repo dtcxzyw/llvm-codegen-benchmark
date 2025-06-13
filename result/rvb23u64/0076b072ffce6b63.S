@@ -10,12 +10,11 @@ func00000000000000a1:
 func00000000000000f8:
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	li	a2, 14
 	sext.w	a1, a1
 	sltiu	a1, a1, 16
+	addi	a0, a0, -14
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 14
 	ret
 
 func00000000000000a8:

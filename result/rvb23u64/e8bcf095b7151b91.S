@@ -3,10 +3,9 @@ func0000000000000009:
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
-	li	a2, -22
+	addi	a0, a0, 22
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, -22
 	ret
 
 .LCPI1_0:
@@ -14,11 +13,10 @@ func0000000000000009:
 func0000000000000004:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	li	a1, 2
-	flt.d	a2, fa5, fa0
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
-	or	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	addi	a0, a0, -2
+	czero.nez	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 
 func0000000000000008:
@@ -45,11 +43,10 @@ func000000000000000c:
 func0000000000000002:
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
-	li	a1, 2
-	flt.d	a2, fa0, fa5
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
-	or	a0, a0, a1
+	flt.d	a1, fa0, fa5
+	addi	a0, a0, -2
+	czero.nez	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 
 func0000000000000003:
@@ -72,10 +69,9 @@ func000000000000000d:
 
 func000000000000000b:
 	fmv.d.x	fa5, zero
-	li	a1, 185
-	flt.d	a2, fa5, fa0
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	addi	a0, a0, -185
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 185
 	ret
 

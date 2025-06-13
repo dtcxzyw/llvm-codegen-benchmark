@@ -32,20 +32,18 @@ func000000000000001b:
 
 func0000000000000012:
 	sltiu	a2, a2, -1025
-	li	a3, 33
+	addi	a1, a1, -33
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 33
 	ret
 
 func0000000000000053:
 	sltiu	a2, a2, 23
-	li	a3, 32
+	addi	a1, a1, -32
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 
 func0000000000000023:
@@ -56,11 +54,10 @@ func0000000000000023:
 
 func0000000000000013:
 	sltiu	a2, a2, 23
-	li	a3, 32
+	addi	a1, a1, -32
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 
 func0000000000000063:

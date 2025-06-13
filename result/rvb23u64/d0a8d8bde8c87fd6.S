@@ -10,9 +10,8 @@ func0000000000000002:
 	fmv.s	fa5, fa4
 .LBB0_2:
 	fcvt.w.s	a1, fa5, rtz
-	li	a2, 255
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, -255
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 255
 	ret
 

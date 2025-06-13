@@ -16,22 +16,20 @@ func0000000000000008:
 
 func0000000000000074:
 	andi	a1, a1, 1
-	li	a3, 4
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -4
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
+	addi	a0, a0, 4
 	srli	a0, a0, 15
 	seqz	a0, a0
 	ret
 
 func0000000000000078:
 	andi	a1, a1, 1
-	li	a3, 4
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -4
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
+	addi	a0, a0, 4
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
@@ -54,11 +52,10 @@ func0000000000000001:
 
 func0000000000000068:
 	andi	a1, a1, 1
-	li	a3, 2
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -2
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
+	addi	a0, a0, 2
 	sltiu	a0, a0, 24
 	xori	a0, a0, 1
 	ret
@@ -103,21 +100,19 @@ func0000000000000044:
 
 func0000000000000028:
 	andi	a1, a1, 1
-	li	a3, 1
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -1
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
+	addi	a0, a0, 1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
 
 func000000000000000c:
 	andi	a1, a1, 1
-	li	a3, 10
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -10
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 10
 	neg	a0, a0
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -125,10 +120,9 @@ func000000000000000c:
 
 func0000000000000021:
 	andi	a1, a1, 1
-	li	a3, -48
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, 48
+	czero.nez	a1, a2, a1
+	addi	a1, a1, -48
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -136,11 +130,10 @@ func0000000000000021:
 
 func0000000000000024:
 	andi	a1, a1, 1
-	li	a3, 11
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -11
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
+	addi	a0, a0, 11
 	sltiu	a0, a0, 64
 	ret
 

@@ -1,14 +1,12 @@
 func0000000000000007:
 	andi	a2, a2, 6
 	andi	a1, a1, 1
-	li	a3, 8
-	sub	a3, a3, a1
-	li	a1, 6
+	li	a3, 2
 	addi	a2, a2, -6
-	czero.eqz	a3, a3, a2
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	sub	a3, a3, a1
+	czero.eqz	a1, a3, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 6
 	ret
 
 func0000000000000004:
@@ -16,12 +14,10 @@ func0000000000000004:
 	andi	a2, a2, 63
 	li	a3, -2
 	czero.nez	a1, a3, a1
-	li	a3, 2
-	addi	a1, a1, 3
-	czero.nez	a3, a3, a2
+	addi	a1, a1, 1
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 2
 	ret
 
 func0000000000000005:

@@ -18,10 +18,9 @@ func0000000000000018:
 	and	a1, a1, a2
 	lui	a2, 9
 	sltu	a1, a2, a1
-	li	a2, 144
+	addi	a0, a0, -144
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 144
 	ret
 
 func000000000000000c:

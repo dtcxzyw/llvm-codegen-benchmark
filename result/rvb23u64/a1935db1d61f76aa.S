@@ -58,10 +58,9 @@ func0000000000000086:
 	ret
 
 func0000000000000034:
-	li	a3, 64
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -64
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 64
 	sltu	a0, a0, a1
 	ret
 
@@ -96,10 +95,9 @@ func0000000000000108:
 
 func0000000000000141:
 	slti	a2, a2, 3
-	li	a3, 1
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -113,10 +111,9 @@ func0000000000000025:
 
 func0000000000000106:
 	sltiu	a2, a2, 2
-	li	a3, 1
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret
 

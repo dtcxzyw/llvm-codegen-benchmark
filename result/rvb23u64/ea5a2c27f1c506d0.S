@@ -3,11 +3,10 @@ func0000000000000000:
 	andi	a2, a2, 1
 	li	a3, 20
 	czero.eqz	a2, a3, a2
-	li	a3, 40
-	czero.eqz	a3, a3, a0
+	addi	a2, a2, -40
 	czero.nez	a0, a2, a0
-	or	a0, a0, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 40
 	ret
 
 func000000000000000f:

@@ -8,10 +8,9 @@ func0000000000000061:
 func0000000000000021:
 	not	a1, a1
 	binvi	a0, a0, 63
-	li	a2, 30
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, -30
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 30
 	ret
 
 func0000000000000064:

@@ -1,11 +1,9 @@
 func0000000000000090:
-	addi	a2, a2, -15
 	srli	a1, a1, 11
-	li	a3, -2
-	czero.eqz	a3, a3, a1
+	addi	a2, a2, -13
 	czero.nez	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 
 func00000000000000e1:
@@ -31,13 +29,11 @@ func00000000000001a8:
 	ret
 
 func0000000000000010:
-	addi	a2, a2, 32
 	srli	a1, a1, 32
-	li	a3, 31
-	czero.eqz	a3, a3, a1
+	addi	a2, a2, 1
 	czero.nez	a1, a2, a1
-	or	a1, a1, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 31
 	ret
 
 func0000000000000098:

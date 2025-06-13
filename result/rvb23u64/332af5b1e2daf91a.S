@@ -26,11 +26,10 @@ func0000000000000008:
 
 func0000000000000004:
 	add	a1, a1, a2
-	li	a2, 40
 	sltiu	a1, a1, 79
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -40
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 40
 	ret
 
 func0000000000000078:
@@ -53,11 +52,10 @@ func0000000000000074:
 
 func0000000000000014:
 	add	a1, a1, a2
-	li	a2, 1
 	sltiu	a1, a1, 508
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000006:

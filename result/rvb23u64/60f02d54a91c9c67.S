@@ -8,11 +8,10 @@ func00000000000000cf:
 
 func000000000000014f:
 	sext.w	a2, a2
-	li	a3, 968
 	slti	a2, a2, 2
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -968
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 968
 	add.uw	a0, a1, a0
 	addi	a0, a0, 80
 	ret

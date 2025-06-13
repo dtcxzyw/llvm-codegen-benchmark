@@ -4,10 +4,9 @@ func000000000000000c:
 	li	a2, -1
 	srli	a2, a2, 1
 	minu	a0, a0, a2
-	li	a2, 30
+	addi	a0, a0, -30
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 30
 	ret
 
 func000000000000000e:
@@ -16,9 +15,8 @@ func000000000000000e:
 	li	a2, -1
 	srli	a2, a2, 4
 	minu	a0, a0, a2
-	li	a2, 6
+	addi	a0, a0, -6
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 6
 	ret
 

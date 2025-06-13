@@ -40,11 +40,10 @@ func0000000000000301:
 func0000000000000526:
 	lui	a3, 12
 	slt	a2, a3, a2
-	li	a3, 1
-	czero.nez	a3, a3, a2
+	addi	a1, a1, -1
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 1
 	slti	a0, a0, 640
 	ret
 

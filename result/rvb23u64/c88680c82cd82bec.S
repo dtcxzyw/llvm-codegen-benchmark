@@ -7,22 +7,18 @@ func0000000000000061:
 
 func0000000000000066:
 	andi	a0, a0, -64
-	li	a1, -32
-	xori	a2, a0, -32
+	xori	a1, a0, -32
 	slti	a0, a0, -32
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a1, a1, 32
+	czero.nez	a0, a1, a0
+	addi	a0, a0, -32
 	ret
 
 func0000000000000021:
 	andi	a0, a0, 63
-	li	a1, 62
-	li	a2, 63
-	sub	a1, a1, a0
-	addi	a0, a0, -63
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a0, -63
+	not	a0, a0
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 63
 	ret
 

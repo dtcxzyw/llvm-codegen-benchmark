@@ -3,9 +3,8 @@ func0000000000000000:
 	sext.w	a1, a1
 	li	a2, 100
 	min	a1, a1, a2
-	li	a2, 90
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -90
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 90
 	ret
 

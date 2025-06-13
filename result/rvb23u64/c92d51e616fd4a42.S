@@ -33,11 +33,10 @@ func0000000000000019:
 
 func0000000000000051:
 	sltiu	a2, a2, 96
-	li	a3, 48
-	czero.nez	a3, a3, a2
+	addi	a1, a1, -48
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
 	sub	a0, a0, a1
+	addi	a0, a0, -48
 	ret
 
 func0000000000000006:

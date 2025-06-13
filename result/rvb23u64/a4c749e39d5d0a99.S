@@ -1,10 +1,9 @@
 func0000000000000061:
 	slliw	a0, a0, 3
 	bexti	a1, a1, 12
-	li	a2, 8
+	addi	a0, a0, -8
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 
 func0000000000000001:
@@ -19,10 +18,9 @@ func0000000000000021:
 	slliw	a0, a0, 1
 	addi	a2, a2, -256
 	and	a1, a1, a2
-	li	a2, -22
 	addi	a1, a1, -256
-	czero.eqz	a2, a2, a1
+	addi	a0, a0, 22
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, -22
 	ret
 

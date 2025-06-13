@@ -16,10 +16,9 @@ func0000000000000024:
 
 func000000000000002c:
 	andi	a2, a2, 1
-	li	a3, -129
+	addi	a1, a1, 129
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, -129
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

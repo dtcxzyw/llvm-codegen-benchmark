@@ -22,12 +22,11 @@ func000000000000000c:
 func0000000000000003:
 	andi	a1, a1, 1
 	addi	a2, a2, 33
-	li	a3, 32
 	zext.w	a2, a2
-	czero.eqz	a3, a3, a1
+	addi	a2, a2, -32
 	czero.nez	a1, a2, a1
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 
 func0000000000000008:
@@ -49,11 +48,10 @@ func000000000000000d:
 func000000000000000f:
 	andi	a1, a1, 1
 	addi	a2, a2, 15
-	li	a3, 32
 	andi	a2, a2, 504
-	czero.eqz	a3, a3, a1
+	addi	a2, a2, -32
 	czero.nez	a1, a2, a1
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 

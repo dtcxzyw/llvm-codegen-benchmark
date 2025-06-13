@@ -1,9 +1,8 @@
 func000000000000004c:
 	andi	a2, a2, 1
-	li	a3, 1
-	czero.nez	a4, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a2, a2, a4
+	addi	a3, a1, -1
+	czero.nez	a2, a3, a2
+	addi	a2, a2, 1
 	neg	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -12,10 +11,9 @@ func000000000000004c:
 
 func0000000000000041:
 	andi	a2, a2, 1
-	li	a3, 1
-	czero.nez	a4, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a2, a2, a4
+	addi	a3, a1, -1
+	czero.nez	a2, a3, a2
+	addi	a2, a2, 1
 	neg	a1, a1
 	xor	a1, a1, a2
 	seqz	a1, a1

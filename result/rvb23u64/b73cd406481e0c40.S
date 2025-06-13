@@ -31,10 +31,9 @@ func00000000000001e6:
 	addi	a0, a0, 129
 	addiw	a2, a2, -128
 	and	a0, a0, a2
-	li	a2, 128
 	slti	a1, a1, 127
-	czero.eqz	a2, a2, a1
+	addi	a0, a0, -128
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 128
 	ret
 

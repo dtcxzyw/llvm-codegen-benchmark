@@ -4,21 +4,19 @@ func000000000000002c:
 	bexti	a2, a2, 11
 	snez	a1, a1
 	and	a1, a1, a2
-	li	a2, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000021:
 	andi	a2, a2, -2
 	xori	a2, a2, 16
 	or	a1, a1, a2
-	li	a2, 32
 	sext.w	a1, a1
+	addi	a0, a0, -32
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 
 func0000000000000081:
@@ -40,10 +38,9 @@ func0000000000000028:
 	seqz	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
-	li	a2, 255
+	addi	a0, a0, -255
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 255
 	ret
 
 func000000000000018c:

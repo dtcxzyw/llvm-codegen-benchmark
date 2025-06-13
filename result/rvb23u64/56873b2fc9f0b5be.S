@@ -5,10 +5,8 @@ func000000000000000c:
 	sext.w	a2, a2
 	snez	a2, a2
 	and	a0, a0, a2
-	li	a2, 38
-	addi	a1, a1, 94
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, 56
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 38
 	ret
 

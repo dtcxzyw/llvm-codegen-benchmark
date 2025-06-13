@@ -1,18 +1,13 @@
 func0000000000000007:
-	addi	a0, a0, 1
-	li	a2, 1
-	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000020:
-	addi	a0, a0, 1
 	sltiu	a1, a1, 256
-	li	a2, 256
+	addi	a0, a0, -255
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 256
 	ret
 
 func0000000000000061:
@@ -34,11 +29,9 @@ func000000000000002b:
 
 func0000000000000013:
 	sltiu	a1, a1, 16
-	addi	a0, a0, 16
-	li	a2, 48
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -32
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 48
 	ret
 
 .LCPI5_0:
@@ -60,10 +53,7 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	addi	a0, a0, 4
-	li	a2, 4
-	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 4
 	ret
 

@@ -15,12 +15,10 @@ func0000000000000180:
 
 func0000000000000080:
 	sext.w	a2, a2
-	li	a3, 10
+	addi	a1, a1, -10
 	sltiu	a2, a2, 2
-	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
-	li	a2, 3
-	or	a1, a1, a3
+	li	a2, -7
 	subw	a0, a2, a0
 	subw	a0, a0, a1
 	ret

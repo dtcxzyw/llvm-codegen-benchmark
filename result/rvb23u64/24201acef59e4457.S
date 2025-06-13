@@ -32,22 +32,20 @@ func0000000000000032:
 
 func0000000000000007:
 	sext.w	a2, a2
-	li	a3, 8
 	addi	a2, a2, -1
+	addi	a1, a1, -8
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	subw	a0, a0, a1
+	addiw	a0, a0, -8
 	ret
 
 func0000000000000011:
 	sext.w	a2, a2
-	li	a3, 1
 	sltiu	a2, a2, 3
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
-	subw	a0, a0, a1
+	not	a1, a1
+	addw	a0, a0, a1
 	ret
 
 func0000000000000019:

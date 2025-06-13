@@ -16,11 +16,10 @@ func0000000000000003:
 
 func0000000000000008:
 	fli.d	fa5, inf
-	li	a1, 4
-	feq.d	a2, fa0, fa5
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	feq.d	a1, fa0, fa5
+	addi	a0, a0, -4
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 4
 	ret
 
 .LCPI3_0:
@@ -35,11 +34,10 @@ func000000000000000a:
 
 func0000000000000004:
 	fli.d	fa5, 1.0
-	li	a1, 10
-	flt.d	a2, fa5, fa0
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	addi	a0, a0, -10
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 10
 	ret
 
 func0000000000000007:

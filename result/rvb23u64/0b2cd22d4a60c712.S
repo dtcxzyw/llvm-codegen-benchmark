@@ -9,10 +9,9 @@ func0000000000000061:
 	xor	a0, a0, a2
 	li	a2, -9
 	czero.eqz	a0, a2, a0
-	li	a2, -7
+	addi	a0, a0, 7
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, -7
 	ret
 
 func00000000000002aa:

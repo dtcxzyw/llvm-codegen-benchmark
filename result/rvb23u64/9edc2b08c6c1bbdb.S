@@ -50,10 +50,9 @@ func0000000000000021:
 func0000000000000008:
 	or	a1, a1, a0
 	srliw	a0, a0, 16
-	li	a2, 63
 	sltiu	a0, a0, 17
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, -63
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 63
 	ret
 

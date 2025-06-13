@@ -15,12 +15,10 @@ func000000000000001f:
 
 func000000000000014f:
 	sltiu	a2, a2, 23
-	li	a3, 32
+	addi	a1, a1, -32
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, 40
 	ret
 
 func000000000000008f:
@@ -32,21 +30,17 @@ func000000000000008f:
 
 func000000000000004f:
 	sltiu	a2, a2, 23
-	li	a3, 32
+	addi	a1, a1, -32
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, 40
 	ret
 
 func000000000000004b:
 	sltiu	a2, a2, 23
-	li	a3, 32
+	addi	a1, a1, -32
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, 40
 	ret
 

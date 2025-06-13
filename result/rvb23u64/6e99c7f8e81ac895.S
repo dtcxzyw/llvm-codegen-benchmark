@@ -13,10 +13,9 @@ func0000000000000028:
 	li	a1, 10
 	addi	a2, a0, -11
 	czero.nez	a1, a1, a2
-	li	a2, 12
 	sltiu	a0, a0, 12
-	czero.nez	a2, a2, a0
+	addiw	a1, a1, -12
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 12
 	ret
 

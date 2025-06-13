@@ -10,10 +10,9 @@ func000000000000000f:
 
 func000000000000000b:
 	zext.w	a1, a1
-	li	a3, 8
-	czero.nez	a3, a3, a2
+	addi	a1, a1, -8
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 

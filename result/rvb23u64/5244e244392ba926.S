@@ -47,13 +47,12 @@ func0000000000000008:
 func0000000000000014:
 	andi	a0, a0, 1
 	sltiu	a2, a2, 64
-	li	a3, 1
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	lui	a3, 1024
-	or	a1, a1, a2
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a3, a0
-	or	a0, a0, a1
+	lui	a2, 1024
+	addi	a1, a1, 1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 

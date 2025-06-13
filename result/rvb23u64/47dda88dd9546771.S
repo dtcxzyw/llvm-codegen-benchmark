@@ -1,23 +1,19 @@
 func0000000000000001:
 	andi	a1, a1, 1
-	li	a3, -1
+	li	a3, -9
 	srli	a3, a3, 1
 	add	a2, a2, a3
-	li	a3, 4
-	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	addi	a1, a1, 4
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000021:
 	andi	a1, a1, 1
-	addi	a2, a2, -4
-	li	a3, 5
-	czero.nez	a3, a3, a1
+	addi	a2, a2, -9
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	addi	a1, a1, 5
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -43,11 +39,9 @@ func000000000000002a:
 
 func0000000000000004:
 	andi	a1, a1, 1
-	addi	a2, a2, -2
-	li	a3, 10
-	czero.nez	a3, a3, a1
+	addi	a2, a2, -12
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	addi	a1, a1, 10
 	sltu	a0, a0, a1
 	ret
 

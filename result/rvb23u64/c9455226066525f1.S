@@ -33,19 +33,17 @@ func000000000000000d:
 	lui	a2, 1048574
 	addi	a2, a2, -1485
 	addw	a1, a1, a2
-	li	a2, 51
-	czero.nez	a2, a2, a0
+	addi	a1, a1, -51
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 51
 	ret
 
 func0000000000000001:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	li	a2, 1
 	addiw	a1, a1, -1
-	czero.nez	a2, a2, a0
+	addi	a1, a1, -1
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 

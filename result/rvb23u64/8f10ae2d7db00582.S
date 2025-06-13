@@ -6,20 +6,18 @@ func0000000000000006:
 
 func0000000000000024:
 	addiw	a0, a0, -10
-	li	a1, 5
-	sltiu	a2, a0, 20
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	sltiu	a1, a0, 20
+	addi	a0, a0, -5
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 5
 	ret
 
 func0000000000000004:
 	addiw	a0, a0, -3
-	li	a1, 3
-	sltiu	a2, a0, 4
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	sltiu	a1, a0, 4
+	addi	a0, a0, -3
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 3
 	ret
 
 func0000000000000008:

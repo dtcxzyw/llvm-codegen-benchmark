@@ -17,10 +17,9 @@ func0000000000000001:
 
 func0000000000000008:
 	sltiu	a1, a1, 8
-	li	a2, 511
-	czero.eqz	a2, a2, a1
+	addi	a0, a0, -511
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 511
 	ret
 
 func000000000000000c:

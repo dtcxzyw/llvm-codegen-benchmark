@@ -1,11 +1,10 @@
 func0000000000000481:
 	sext.w	a0, a0
 	addiw	a1, a1, -3
-	li	a2, 6
-	sltiu	a3, a1, 12
-	czero.nez	a2, a2, a3
-	czero.eqz	a1, a1, a3
-	or	a1, a1, a2
+	sltiu	a2, a1, 12
+	addi	a1, a1, -6
+	czero.eqz	a1, a1, a2
+	addi	a1, a1, 6
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

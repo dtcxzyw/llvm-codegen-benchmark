@@ -18,21 +18,19 @@ func0000000000000184:
 
 func0000000000000012:
 	addi	a2, a2, -114
-	li	a3, 11
 	sltiu	a2, a2, 26
+	addi	a1, a1, -11
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 11
 	sh2add	a0, a1, a0
 	ret
 
 func0000000000000093:
 	addi	a2, a2, -114
-	li	a3, 11
 	sltiu	a2, a2, 26
+	addi	a1, a1, -11
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 11
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret

@@ -9,12 +9,11 @@ func0000000000000081:
 
 func0000000000000088:
 	zext.b	a2, a2
-	li	a3, 2
 	addi	a2, a2, -92
+	addi	a1, a1, -2
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 2
 	srli	a0, a0, 30
 	snez	a0, a0
 	ret

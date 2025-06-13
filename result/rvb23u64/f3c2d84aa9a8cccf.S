@@ -20,11 +20,10 @@ func0000000000000010:
 
 func0000000000000042:
 	addiw	a0, a0, -1
-	li	a1, 112
-	addi	a2, a0, -63
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	addi	a1, a0, -63
+	addi	a0, a0, -112
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 112
 	zext.w	a0, a0
 	ret
 

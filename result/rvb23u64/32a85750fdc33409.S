@@ -37,11 +37,9 @@ func0000000000000107:
 func0000000000000088:
 	sext.w	a0, a0
 	srli	a2, a2, 32
-	li	a3, 31
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -31
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
-	sext.w	a1, a1
+	addiw	a1, a1, 31
 	sltu	a0, a0, a1
 	ret
 

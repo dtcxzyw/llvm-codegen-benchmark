@@ -1,10 +1,9 @@
 func0000000000000049:
 	addiw	a0, a0, -3
-	li	a1, 6
-	sltiu	a2, a0, 12
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	sltiu	a1, a0, 12
+	addi	a0, a0, -6
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 6
 	ret
 
 func0000000000000008:

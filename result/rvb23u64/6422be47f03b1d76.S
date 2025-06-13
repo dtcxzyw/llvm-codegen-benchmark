@@ -7,14 +7,13 @@ func000000000000000a:
 	addi	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3
-	li	a3, 1
+	lui	a3, %hi(.LCPI0_0)
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI0_0)
-	czero.eqz	a3, a3, a0
-	ld	a2, %lo(.LCPI0_0)(a2)
-	czero.nez	a0, a1, a0
-	or	a0, a0, a3
+	addi	a2, a1, -1
+	ld	a3, %lo(.LCPI0_0)(a3)
+	czero.nez	a0, a2, a0
 	add	a0, a0, a1
-	minu	a0, a0, a2
+	addi	a0, a0, 1
+	minu	a0, a0, a3
 	ret
 

@@ -23,11 +23,10 @@ func0000000000000013:
 	ret
 
 func0000000000000007:
-	li	a3, 1392
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -1392
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 1392
 	ret
 
 func0000000000000022:

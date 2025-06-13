@@ -17,9 +17,8 @@ func0000000000000018:
 	zext.w	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	li	a2, 72
-	czero.nez	a2, a2, a0
+	addi	a1, a1, -72
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 72
 	ret
 

@@ -21,11 +21,10 @@ func000000000000006a:
 func000000000000002a:
 	sext.w	a1, a0
 	addiw	a0, a0, -1
-	li	a2, 15
 	sgtz	a1, a1
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -15
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 15
 	ret
 
 func0000000000000024:

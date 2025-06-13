@@ -4,10 +4,9 @@ func0000000000000085:
 	li	a0, 2047
 	slli	a0, a0, 52
 	and	a0, a0, a1
-	li	a1, 1074
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a1, a2, -1074
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 1074
 	ret
 
 func0000000000000087:
@@ -16,9 +15,8 @@ func0000000000000087:
 	li	a0, 2047
 	slli	a0, a0, 52
 	and	a0, a0, a1
-	li	a1, 1091
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a1, a2, -1091
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 1091
 	ret
 

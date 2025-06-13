@@ -8,10 +8,9 @@ func0000000000000004:
 
 func000000000000000a:
 	add	a0, a0, a1
-	li	a1, 30
-	sgtz	a2, a0
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	sgtz	a1, a0
+	addi	a0, a0, -30
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 30
 	ret
 

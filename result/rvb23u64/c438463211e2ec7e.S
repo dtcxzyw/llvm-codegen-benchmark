@@ -27,11 +27,10 @@ func0000000000000002:
 
 func000000000000000b:
 	fmv.w.x	fa5, zero
-	li	a1, 1
-	flt.s	a2, fa5, fa0
-	czero.eqz	a1, a1, a2
-	czero.nez	a0, a0, a2
-	or	a0, a0, a1
+	flt.s	a1, fa5, fa0
+	addi	a0, a0, -1
+	czero.nez	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000007:

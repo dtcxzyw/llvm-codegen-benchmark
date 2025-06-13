@@ -8,11 +8,10 @@ func0000000000000040:
 func0000000000000042:
 	srliw	a1, a0, 16
 	srliw	a0, a0, 12
-	li	a2, 15
 	sltiu	a1, a1, 17
+	addi	a0, a0, -15
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 15
 	ret
 
 func0000000000000008:

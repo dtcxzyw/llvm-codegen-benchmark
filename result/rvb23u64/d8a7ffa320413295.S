@@ -1,21 +1,19 @@
 func0000000000000007:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
-	li	a2, -8
 	addiw	a1, a1, -8
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, 8
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, -8
 	ret
 
 func000000000000000f:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
-	li	a2, 64
 	addiw	a1, a1, 16
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -64
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 64
 	ret
 
 func000000000000000d:
@@ -42,10 +40,9 @@ func0000000000000003:
 func000000000000000e:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	li	a2, 256
 	addiw	a1, a1, 256
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -256
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 256
 	ret
 

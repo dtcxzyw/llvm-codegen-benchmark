@@ -31,11 +31,10 @@ func0000000000000004:
 
 func0000000000000018:
 	addiw	a1, a1, -1
-	li	a2, 3
-	slti	a3, a1, 0
-	czero.nez	a1, a1, a3
-	czero.eqz	a2, a2, a3
-	or	a1, a1, a2
+	slti	a2, a1, 0
+	addi	a1, a1, -3
+	czero.nez	a1, a1, a2
+	addi	a1, a1, 3
 	slli	a2, a1, 3
 	slli	a1, a1, 6
 	sub	a1, a1, a2

@@ -1,9 +1,8 @@
 func0000000000000003:
 	andi	a2, a1, 1
-	li	a3, 32
-	czero.eqz	a3, a3, a2
+	addi	a0, a0, -32
 	czero.nez	a0, a0, a2
-	or	a0, a0, a3
+	addi	a0, a0, 32
 	andi	a1, a1, -33
 	or	a0, a0, a1
 	ret

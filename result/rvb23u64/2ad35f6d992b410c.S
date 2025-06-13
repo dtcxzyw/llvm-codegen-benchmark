@@ -1,20 +1,18 @@
 func0000000000000002:
 	sext.w	a2, a0
 	add	a0, a0, a1
-	li	a1, 16
+	addi	a0, a0, -16
 	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	zext.w	a0, a0
 	ret
 
 func00000000000000c3:
 	sext.w	a2, a0
 	addw	a0, a0, a1
-	li	a1, 16
+	addi	a0, a0, -16
 	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 
 func0000000000000042:

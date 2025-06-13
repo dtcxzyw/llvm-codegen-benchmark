@@ -1,10 +1,9 @@
 func0000000000000040:
 	srli	a2, a2, 11
-	li	a3, -2
-	czero.eqz	a3, a3, a2
+	addi	a0, a0, 2
 	czero.nez	a0, a0, a2
-	or	a0, a0, a3
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	ret
 
 func00000000000000ad:

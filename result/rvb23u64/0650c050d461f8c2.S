@@ -8,22 +8,19 @@ func000000000000003f:
 
 func000000000000002f:
 	sext.w	a2, a2
-	li	a3, 16
+	addi	a1, a1, -16
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 16
 	sh2add.uw	a0, a1, a0
 	addi	a0, a0, 8
 	ret
 
 func000000000000003c:
 	sext.w	a2, a2
-	li	a3, 2
 	addi	a2, a2, -3
+	addi	a1, a1, -2
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
-	sext.w	a1, a1
+	addiw	a1, a1, 2
 	sh3add	a0, a1, a0
 	addi	a0, a0, 24
 	ret

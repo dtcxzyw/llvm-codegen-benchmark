@@ -6,11 +6,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	addi	a0, a0, 47
-	li	a2, 47
-	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 47
 	ret
 
 func0000000000000006:

@@ -3,12 +3,10 @@ func000000000000005f:
 	sext.w	a1, a1
 	negw	a2, a1
 	max	a1, a1, a2
-	li	a2, 32
 	clzw	a1, a1
+	li	a2, 31
 	sub	a2, a2, a1
-	li	a1, 1
-	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 

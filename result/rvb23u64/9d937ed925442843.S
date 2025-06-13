@@ -7,11 +7,10 @@ func0000000000000018:
 
 func0000000000000013:
 	zext.h	a2, a2
-	li	a3, 4
 	sltiu	a2, a2, 2
+	addi	a1, a1, -4
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 4
 	mul	a0, a0, a1
 	ret
 

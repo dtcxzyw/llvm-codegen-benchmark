@@ -1,10 +1,8 @@
 func0000000000000041:
-	addi	a1, a0, 1
-	addi	a0, a0, -23
-	li	a2, 25
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a0, -23
+	addi	a0, a0, -24
+	czero.eqz	a0, a0, a1
+	addi	a0, a0, 25
 	ret
 
 func0000000000000004:

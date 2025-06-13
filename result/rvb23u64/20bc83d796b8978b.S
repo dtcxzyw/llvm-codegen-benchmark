@@ -9,13 +9,12 @@ func0000000000000041:
 func0000000000000001:
 	and	a1, a1, a2
 	lui	a2, 1
+	sext.w	a1, a1
 	addi	a2, a2, 1
 	sllw	a0, a2, a0
-	li	a2, 63
-	sext.w	a1, a1
+	addi	a0, a0, -63
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 63
 	ret
 
 func0000000000000061:

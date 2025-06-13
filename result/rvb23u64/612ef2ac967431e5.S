@@ -1,70 +1,63 @@
 func00000000000003a1:
-	li	a3, 32
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -32
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -31
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000003e1:
-	li	a3, 8
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -8
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -7
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000002a1:
 	not	a3, a2
-	li	a4, -5
-	czero.nez	a4, a4, a2
+	addi	a3, a3, 5
 	czero.eqz	a2, a3, a2
-	or	a2, a2, a4
 	add	a1, a1, a2
+	addi	a1, a1, -5
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000341:
-	li	a3, 32
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -32
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -31
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000301:
-	li	a3, 4
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -4
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000321:
-	li	a3, 8
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -8
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -7
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000241:
-	li	a3, 4
-	czero.nez	a3, a3, a2
-	or	a2, a2, a3
+	addi	a3, a2, -4
+	czero.eqz	a2, a3, a2
 	sub	a1, a1, a2
-	addi	a1, a1, 1
+	addi	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

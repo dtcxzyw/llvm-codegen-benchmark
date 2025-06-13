@@ -18,19 +18,17 @@ func0000000000000028:
 
 func0000000000000001:
 	andi	a1, a1, 63
-	li	a2, 30
 	addi	a1, a1, -32
+	addi	a0, a0, -30
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 30
 	ret
 
 func0000000000000004:
 	slli	a1, a1, 3
-	li	a2, 32
 	sltiu	a1, a1, 23
+	addi	a0, a0, -32
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 

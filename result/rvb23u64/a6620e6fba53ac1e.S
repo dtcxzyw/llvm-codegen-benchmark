@@ -45,10 +45,9 @@ func0000000000000031:
 
 func0000000000000011:
 	srliw	a2, a2, 26
-	li	a3, 4
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -4
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
 	subw	a0, a0, a1
+	addiw	a0, a0, -4
 	ret
 

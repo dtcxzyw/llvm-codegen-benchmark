@@ -7,12 +7,10 @@ func0000000000000294:
 	addi	a3, a3, -2047
 	sltu	a5, a2, a5
 	sltu	a2, a2, a3
-	li	a3, 384
-	czero.nez	a4, a4, a5
-	czero.eqz	a3, a3, a2
-	addi	a4, a4, 1024
-	czero.nez	a2, a4, a2
-	or	a2, a2, a3
+	czero.nez	a3, a4, a5
+	addiw	a3, a3, 640
+	czero.nez	a2, a3, a2
+	addi	a2, a2, 384
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

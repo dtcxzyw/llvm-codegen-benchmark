@@ -10,10 +10,10 @@ func0000000000000061:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	li	a3, 8
-	subw	a2, a3, a2
-	czero.nez	a3, a3, a1
-	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	subw	a3, a3, a2
+	addi	a3, a3, -8
+	czero.eqz	a1, a3, a1
+	addi	a1, a1, 8
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -23,10 +23,9 @@ func0000000000000067:
 	andi	a1, a1, 1
 	li	a3, 6
 	subw	a3, a3, a2
-	li	a2, 5
-	czero.nez	a2, a2, a1
+	addi	a3, a3, -5
 	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a1, a1, 5
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -35,10 +34,9 @@ func0000000000000021:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	negw	a2, a2
-	li	a3, 1
-	czero.nez	a3, a3, a1
+	addi	a2, a2, -1
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	addi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

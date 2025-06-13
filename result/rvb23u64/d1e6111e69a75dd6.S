@@ -7,12 +7,11 @@ func000000000000000a:
 
 func00000000000000a4:
 	add	a1, a1, a2
-	li	a2, 3
 	addiw	a1, a1, 1
 	sltiu	a1, a1, 3
+	addi	a0, a0, -3
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 3
 	ret
 
 func0000000000000001:
@@ -24,22 +23,20 @@ func0000000000000001:
 
 func0000000000000086:
 	add	a1, a1, a2
-	li	a2, 6
 	addiw	a1, a1, -3
 	slti	a1, a1, -99
+	addi	a0, a0, -6
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 6
 	ret
 
 func000000000000008a:
 	add	a1, a1, a2
-	li	a2, 5
 	addiw	a1, a1, -3
 	slti	a1, a1, 100
+	addi	a0, a0, -5
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 5
 	ret
 
 func00000000000000a6:
@@ -51,11 +48,10 @@ func00000000000000a6:
 
 func00000000000000aa:
 	add	a1, a1, a2
-	li	a2, 2
 	addiw	a1, a1, 6
 	slti	a1, a1, 1024
+	addi	a0, a0, -2
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 

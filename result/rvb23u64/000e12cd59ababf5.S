@@ -16,10 +16,9 @@ func0000000000000006:
 
 func0000000000000005:
 	addi	a1, a0, -10
-	li	a2, 9
+	addi	a0, a0, -9
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
-	neg	a0, a0
+	li	a1, -9
+	sub	a0, a1, a0
 	ret
 

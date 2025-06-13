@@ -1,11 +1,10 @@
 func0000000000000058:
 	addi	a1, a0, -1
-	sltiu	a0, a0, 7
-	li	a2, 3
 	srli	a1, a1, 1
-	czero.nez	a2, a2, a0
+	sltiu	a0, a0, 7
+	addi	a1, a1, -3
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 3
 	ret
 
 func00000000000000c8:
@@ -17,11 +16,10 @@ func00000000000000c8:
 
 func00000000000000d4:
 	addi	a1, a0, 3
-	sltiu	a0, a0, 16
-	li	a2, 4
 	srli	a1, a1, 2
-	czero.eqz	a2, a2, a0
+	sltiu	a0, a0, 16
+	addi	a1, a1, -4
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 4
 	ret
 

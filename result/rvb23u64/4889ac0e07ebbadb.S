@@ -23,10 +23,9 @@ func0000000000000181:
 	addi	a2, a2, -1
 	seqz	a2, a2
 	and	a1, a1, a2
-	li	a2, 8
+	addi	a0, a0, -8
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 
 func0000000000000306:
@@ -36,10 +35,9 @@ func0000000000000306:
 	slti	a1, a1, 513
 	xori	a2, a2, 1
 	and	a1, a1, a2
-	li	a2, 5
+	addi	a0, a0, -5
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 5
 	ret
 
 func00000000000000ca:
@@ -74,10 +72,9 @@ func00000000000000c1:
 	slti	a1, a1, 0
 	seqz	a2, a2
 	and	a1, a1, a2
-	li	a2, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 
 func000000000000002a:
@@ -87,10 +84,9 @@ func000000000000002a:
 	slti	a1, a1, 30
 	seqz	a2, a2
 	andn	a1, a2, a1
-	li	a2, 30
+	addi	a0, a0, -30
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 30
 	ret
 
 func0000000000000141:
@@ -101,10 +97,9 @@ func0000000000000141:
 	xori	a2, a2, 1
 	seqz	a1, a1
 	and	a1, a1, a2
-	li	a2, 30
+	addi	a0, a0, -30
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 30
 	ret
 
 func0000000000000026:
@@ -114,10 +109,9 @@ func0000000000000026:
 	slti	a1, a1, 30
 	seqz	a2, a2
 	and	a1, a1, a2
-	li	a2, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000081:
@@ -127,10 +121,9 @@ func0000000000000081:
 	addi	a2, a2, -1
 	seqz	a2, a2
 	and	a1, a1, a2
-	li	a2, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 
 func000000000000018c:
@@ -139,10 +132,9 @@ func000000000000018c:
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
-	li	a2, -22
+	addi	a0, a0, 22
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, -22
 	ret
 
 func00000000000000c6:

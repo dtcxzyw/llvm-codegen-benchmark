@@ -15,12 +15,10 @@ func0000000000000013:
 
 func000000000000004f:
 	sext.w	a2, a2
-	li	a3, 16
 	sltiu	a2, a2, 2
+	addi	a1, a1, -16
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 4
+	addi	a0, a0, 20
 	ret
 

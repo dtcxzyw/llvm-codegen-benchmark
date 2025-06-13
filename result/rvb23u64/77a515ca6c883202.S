@@ -15,22 +15,20 @@ func0000000000000001:
 
 func00000000000000a4:
 	slli	a1, a1, 1
-	li	a2, 16
 	addiw	a1, a1, 999
 	sltiu	a1, a1, 15
+	addi	a0, a0, -16
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 
 func0000000000000004:
 	slli	a1, a1, 2
-	li	a2, 16
 	addiw	a1, a1, 399
 	sltiu	a1, a1, 15
+	addi	a0, a0, -16
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 
 func00000000000001ca:
@@ -45,11 +43,10 @@ func00000000000001ca:
 
 func0000000000000084:
 	slli	a1, a1, 3
-	li	a2, 16
 	addiw	a1, a1, 63
 	sltiu	a1, a1, 64
+	addi	a0, a0, -16
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 

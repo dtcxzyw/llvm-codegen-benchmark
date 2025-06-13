@@ -3,24 +3,21 @@ func0000000000000021:
 	andi	a1, a1, 16
 	li	a2, -10
 	czero.eqz	a1, a2, a1
-	li	a2, 78
-	addi	a1, a1, 79
-	czero.nez	a2, a2, a0
+	addiw	a1, a1, 1
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 78
 	ret
 
 func0000000000000024:
 	sext.w	a0, a0
 	andi	a1, a1, -7
-	li	a2, 190
 	sext.w	a1, a1
-	sltiu	a0, a0, 3
 	seqz	a1, a1
 	xori	a1, a1, 175
-	czero.eqz	a2, a2, a0
+	sltiu	a0, a0, 3
+	addi	a1, a1, -190
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 190
 	ret
 
 func0000000000000181:
@@ -28,11 +25,9 @@ func0000000000000181:
 	andi	a1, a1, 16
 	li	a2, 61
 	czero.eqz	a1, a2, a1
-	li	a2, 584
 	addi	a0, a0, -4
-	addi	a1, a1, 636
-	czero.nez	a2, a2, a0
+	addi	a1, a1, 52
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 584
 	ret
 

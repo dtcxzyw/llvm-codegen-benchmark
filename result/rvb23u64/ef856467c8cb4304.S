@@ -1,9 +1,8 @@
 func0000000000000061:
 	addi	a1, a1, -1
-	li	a2, 16
+	addi	a0, a0, -16
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 
 func0000000000000001:

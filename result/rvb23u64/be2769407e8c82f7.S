@@ -16,10 +16,9 @@ func00000000000000c1:
 	ret
 
 func00000000000000c8:
+	addi	a1, a1, -8
 	czero.eqz	a1, a1, a2
-	li	a3, 8
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 8
 	addi	a0, a0, 5
 	sltu	a0, a1, a0
 	ret
@@ -47,11 +46,10 @@ func00000000000000a8:
 
 func0000000000000461:
 	srli	a2, a2, 7
-	li	a3, 100
+	addi	a1, a1, -100
 	sltiu	a2, a2, 425
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 100
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -98,10 +96,9 @@ func0000000000000301:
 	ret
 
 func0000000000000084:
+	addi	a1, a1, -1
 	czero.eqz	a1, a1, a2
-	li	a3, 1
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
+	addi	a1, a1, 1
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
 	ret

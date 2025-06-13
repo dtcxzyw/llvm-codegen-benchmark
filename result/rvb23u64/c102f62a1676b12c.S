@@ -17,10 +17,9 @@ func0000000000000002:
 func0000000000000018:
 	snez	a2, a2
 	or	a1, a1, a2
-	li	a2, 34
 	andi	a1, a1, 1
+	addi	a0, a0, -34
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 34
 	ret
 

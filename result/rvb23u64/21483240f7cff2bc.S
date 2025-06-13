@@ -17,7 +17,9 @@ func000000000000004c:
 
 func0000000000000108:
 	sltiu	a2, a2, 23
+	addi	a1, a1, -23
 	czero.nez	a1, a1, a2
+	addi	a1, a1, 23
 	or	a0, a0, a1
 	srli	a0, a0, 32
 	snez	a0, a0

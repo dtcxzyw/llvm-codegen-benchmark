@@ -12,10 +12,9 @@ func0000000000000008:
 	sext.w	a2, a1
 	sltiu	a2, a2, -2
 	czero.eqz	a1, a1, a2
-	li	a2, 16
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -16
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 16
 	ret
 
 func000000000000000a:
@@ -23,9 +22,8 @@ func000000000000000a:
 	sext.w	a2, a1
 	slti	a2, a2, 360
 	czero.eqz	a1, a1, a2
-	li	a2, 359
-	czero.eqz	a2, a2, a0
+	addi	a1, a1, -359
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 359
 	ret
 

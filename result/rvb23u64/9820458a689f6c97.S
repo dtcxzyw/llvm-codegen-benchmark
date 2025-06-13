@@ -13,11 +13,9 @@ func00000000000000a1:
 
 func0000000000000024:
 	srliw	a0, a0, 23
-	li	a1, -149
-	addi	a2, a0, -150
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a0, -1
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, -149
 	ret
 
 func0000000000000021:

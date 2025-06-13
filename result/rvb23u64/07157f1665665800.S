@@ -1,13 +1,12 @@
 func0000000000000004:
 	addiw	a1, a1, 1
 	lui	a2, 262144
+	sltiu	a1, a1, 16
 	addi	a2, a2, -4
 	and	a0, a0, a2
-	li	a2, 4
-	sltiu	a1, a1, 16
+	addi	a0, a0, -4
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 4
 	ret
 
 func000000000000004a:
@@ -26,9 +25,8 @@ func000000000000000a:
 	andi	a0, a0, 511
 	addi	a2, a2, -641
 	slt	a1, a2, a1
-	li	a2, 8
+	addi	a0, a0, -8
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 

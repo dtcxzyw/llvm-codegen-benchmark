@@ -9,10 +9,9 @@ func0000000000000028:
 
 func0000000000000024:
 	bexti	a2, a2, 32
-	li	a3, 1
-	czero.nez	a3, a3, a2
+	addi	a1, a1, -1
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

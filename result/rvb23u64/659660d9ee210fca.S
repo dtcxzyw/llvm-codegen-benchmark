@@ -1,10 +1,9 @@
 func00000000000000a1:
 	negw	a1, a1
 	binvi	a0, a0, 63
-	li	a2, 31
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, -31
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 31
 	ret
 
 func00000000000001a4:

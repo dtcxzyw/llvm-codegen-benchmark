@@ -29,12 +29,11 @@ func0000000000000088:
 
 func0000000000000208:
 	srli	a2, a2, 3
-	li	a3, 5
 	sltiu	a2, a2, 625
+	addi	a1, a1, -5
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 5
 	sltiu	a0, a0, -9
 	xori	a0, a0, 1
 	ret
@@ -80,11 +79,10 @@ func0000000000000206:
 
 func0000000000000224:
 	sltiu	a2, a2, 26
-	li	a3, 11
+	addi	a1, a1, -11
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
 	add	a0, a0, a1
+	addi	a0, a0, 11
 	sltiu	a0, a0, 64
 	ret
 

@@ -12,13 +12,12 @@ func0000000000000024:
 func000000000000002a:
 	sext.b	a1, a0
 	andi	a0, a0, 3
-	li	a2, 1
 	addi	a0, a0, -1
-	slti	a1, a1, 0
 	seqz	a0, a0
 	xori	a0, a0, 3
-	czero.nez	a2, a2, a1
+	slti	a1, a1, 0
+	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 

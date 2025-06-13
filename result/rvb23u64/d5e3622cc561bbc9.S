@@ -1,11 +1,9 @@
 func0000000000000015:
 	sext.w	a2, a2
-	addi	a1, a1, 31
-	li	a3, -118
+	addi	a1, a1, 149
 	czero.eqz	a1, a1, a2
-	czero.nez	a2, a3, a2
-	or	a1, a1, a2
-	subw	a0, a1, a0
+	subw	a1, a1, a0
+	addiw	a0, a1, -118
 	ret
 
 func0000000000000010:

@@ -5,12 +5,11 @@ func00000000000000b4:
 func0000000000000064:
 	zext.h	a1, a1
 	addiw	a0, a0, 26
-	li	a2, 700
 	addi	a1, a1, -6
 	sltiu	a1, a1, 4
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -700
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 700
 	ret
 
 func0000000000000024:

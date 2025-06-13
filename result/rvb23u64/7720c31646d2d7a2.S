@@ -7,10 +7,9 @@ func0000000000000001:
 func0000000000000006:
 	sext.b	a0, a0
 	bclri	a1, a1, 63
-	li	a2, 23
 	slti	a0, a0, 0
-	czero.nez	a2, a2, a0
+	addi	a1, a1, -23
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	addi	a0, a0, 23
 	ret
 

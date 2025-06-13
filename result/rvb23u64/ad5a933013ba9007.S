@@ -22,11 +22,10 @@ func0000000000000001:
 func000000000000000f:
 	andi	a1, a1, 1
 	not	a2, a2
-	li	a3, -32
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
-	addw	a0, a0, a1
+	addi	a2, a2, 32
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	ret
 
 func0000000000000008:
@@ -45,22 +44,18 @@ func0000000000000004:
 
 func0000000000000007:
 	andi	a1, a1, 1
-	addi	a2, a2, -88
-	li	a3, 8
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -96
+	czero.nez	a1, a2, a1
 	subw	a0, a0, a1
+	addiw	a0, a0, -8
 	ret
 
 func0000000000000000:
 	andi	a1, a1, 1
-	addi	a2, a2, -1
-	li	a3, 6
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -7
+	czero.nez	a1, a2, a1
 	subw	a0, a0, a1
+	addiw	a0, a0, -6
 	ret
 
 func000000000000000e:

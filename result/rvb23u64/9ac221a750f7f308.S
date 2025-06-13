@@ -1,9 +1,8 @@
 func0000000000000008:
 	srli	a0, a0, 8
-	li	a2, 20
-	czero.nez	a2, a2, a1
+	addi	a0, a0, -20
 	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	addi	a0, a0, 20
 	ret
 
 func000000000000000a:
@@ -11,10 +10,9 @@ func000000000000000a:
 	srli	a0, a0, 12
 	slli	a2, a2, 11
 	xor	a1, a1, a2
-	li	a2, 15
+	addi	a0, a0, -15
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	addi	a0, a0, 15
 	ret
 
 func000000000000000b:

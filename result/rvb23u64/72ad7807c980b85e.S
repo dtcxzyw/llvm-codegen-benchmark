@@ -11,10 +11,9 @@ func0000000000000021:
 func0000000000000061:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
-	li	a3, 128
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -128
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 128
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -36,10 +35,9 @@ func0000000000000001:
 func000000000000006c:
 	andi	a1, a1, 1
 	bset	a2, zero, a2
-	li	a3, 128
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -128
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 128
 	and	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

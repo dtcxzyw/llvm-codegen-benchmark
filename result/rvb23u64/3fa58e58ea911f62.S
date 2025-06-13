@@ -17,12 +17,11 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	sub	a2, a1, a0
-	slt	a0, a0, a1
-	li	a1, 1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	slt	a2, a0, a1
+	not	a0, a0
+	add	a0, a0, a1
+	czero.eqz	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000045:
@@ -30,30 +29,27 @@ func0000000000000045:
 	ret
 
 func0000000000000048:
-	sub	a2, a0, a1
-	sltu	a0, a1, a0
-	li	a1, 1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	sltu	a2, a1, a0
+	not	a1, a1
+	add	a0, a0, a1
+	czero.eqz	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000008:
-	sub	a2, a0, a1
-	sltu	a0, a1, a0
-	li	a1, 1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	sltu	a2, a1, a0
+	not	a1, a1
+	add	a0, a0, a1
+	czero.eqz	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000004:
-	sub	a2, a1, a0
-	sltu	a0, a0, a1
-	li	a1, 1
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	sltu	a2, a0, a1
+	not	a0, a0
+	add	a0, a0, a1
+	czero.eqz	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 
 func0000000000000049:

@@ -17,11 +17,10 @@ func0000000000000044:
 
 func0000000000000008:
 	andi	a1, a1, 1
-	li	a3, 1
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
-	sub	a0, a0, a1
+	addi	a2, a2, -1
+	czero.nez	a1, a2, a1
+	not	a1, a1
+	add	a0, a0, a1
 	sltiu	a0, a0, 3
 	xori	a0, a0, 1
 	ret
@@ -34,31 +33,28 @@ func000000000000002a:
 
 func0000000000000024:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -32
+	czero.nez	a1, a2, a1
 	sub	a0, a0, a1
+	addi	a0, a0, -32
 	sltiu	a0, a0, 32
 	ret
 
 func0000000000000004:
 	andi	a1, a1, 1
-	li	a3, -72
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, 72
+	czero.nez	a1, a2, a1
 	sub	a0, a0, a1
+	addi	a0, a0, 72
 	sltiu	a0, a0, 5
 	ret
 
 func0000000000000048:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	addi	a2, a2, -32
+	czero.nez	a1, a2, a1
 	sub	a0, a0, a1
+	addi	a0, a0, -32
 	sltiu	a0, a0, 32
 	xori	a0, a0, 1
 	ret

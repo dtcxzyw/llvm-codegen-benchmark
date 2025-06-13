@@ -24,14 +24,12 @@ func0000000000000024:
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	zext.b	a2, a2
-	li	a3, -2
 	addi	a2, a2, -3
+	li	a3, -2
 	czero.eqz	a2, a3, a2
-	li	a3, 24
-	addi	a2, a2, 16
-	czero.eqz	a3, a3, a1
+	addi	a2, a2, -8
 	czero.nez	a1, a2, a1
-	or	a1, a1, a3
+	addi	a1, a1, 24
 	sltu	a0, a0, a1
 	ret
 

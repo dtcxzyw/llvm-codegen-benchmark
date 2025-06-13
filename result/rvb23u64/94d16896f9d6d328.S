@@ -1,29 +1,26 @@
 func00000000000001c4:
 	sltiu	a0, a0, 5
-	li	a3, 28
-	czero.nez	a3, a3, a0
+	addi	a2, a2, -28
 	czero.eqz	a0, a2, a0
-	or	a0, a0, a3
 	add	a0, a0, a1
+	addi	a0, a0, 28
 	ret
 
 func00000000000001c6:
 	slli	a2, a2, 3
 	slti	a0, a0, 0
-	li	a3, 8
-	czero.nez	a3, a3, a0
+	addi	a2, a2, -8
 	czero.eqz	a0, a2, a0
-	or	a0, a0, a3
 	add	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 
 func00000000000001ca:
 	slli	a2, a2, 3
 	sgtz	a0, a0
-	li	a3, 8
-	czero.nez	a3, a3, a0
+	addi	a2, a2, -8
 	czero.eqz	a0, a2, a0
-	or	a0, a0, a3
 	add	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 

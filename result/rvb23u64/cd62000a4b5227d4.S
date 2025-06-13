@@ -42,12 +42,11 @@ func0000000000000053:
 
 func0000000000000040:
 	sext.w	a2, a2
-	li	a3, 24
 	sltiu	a2, a2, 4
-	czero.eqz	a3, a3, a2
+	addi	a1, a1, -24
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 24
 	zext.w	a0, a0
 	ret
 

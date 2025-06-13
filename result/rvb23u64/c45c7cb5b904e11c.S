@@ -7,13 +7,12 @@ func00000000000000a8:
 
 func00000000000000a5:
 	sext.w	a3, a2
-	li	a4, 30
+	addi	a2, a2, -30
 	sgtz	a3, a3
-	czero.nez	a4, a4, a3
 	czero.eqz	a2, a2, a3
-	or	a2, a2, a4
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a0, a0, a2
+	addiw	a0, a0, 30
 	ret
 
 func00000000000000ad:

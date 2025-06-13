@@ -28,12 +28,9 @@ func000000000000000a:
 
 func000000000000000f:
 	andi	a1, a1, 1
-	addi	a2, a2, 128
-	li	a3, 128
-	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
 	add	a0, a0, a1
+	addi	a0, a0, 128
 	ret
 
 func0000000000000004:
