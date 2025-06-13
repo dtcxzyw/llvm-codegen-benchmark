@@ -1,6 +1,5 @@
 func000000000000098c:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	ccmp	x1, x0, #8, ge
 	cset	w0, lt
 	ret

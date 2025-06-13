@@ -24,14 +24,12 @@ func0000000000000048:
 	ret
 
 func0000000000000026:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	csel	w0, wzr, w0, lt
 	ret
 
 func000000000000002a:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	csel	w0, wzr, w0, gt
 	ret
 

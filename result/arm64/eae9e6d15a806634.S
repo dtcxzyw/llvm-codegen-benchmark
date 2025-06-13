@@ -31,9 +31,8 @@ func000000000000002a:
 	ret
 
 func00000000000000ab:
-	neg	w8, w2
-	sub	w9, w0, w1
-	cmp	w9, w8
+	sub	w8, w0, w1
+	cmn	w8, w2
 	cset	w0, ge
 	ret
 
@@ -45,9 +44,8 @@ func00000000000001b8:
 	ret
 
 func00000000000000aa:
-	neg	w8, w2
-	sub	w9, w0, w1
-	cmp	w9, w8
+	sub	w8, w0, w1
+	cmn	w8, w2
 	cset	w0, gt
 	ret
 
@@ -66,9 +64,8 @@ func0000000000000001:
 	ret
 
 func00000000000000a6:
-	neg	w8, w2
-	sub	w9, w0, w1
-	cmp	w9, w8
+	sub	w8, w0, w1
+	cmn	w8, w2
 	cset	w0, lt
 	ret
 

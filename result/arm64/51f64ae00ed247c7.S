@@ -5,8 +5,7 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	csneg	x0, x0, x1, gt
 	ret
 

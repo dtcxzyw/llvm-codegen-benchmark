@@ -14,8 +14,7 @@ func0000000000000067:
 	ret
 
 func000000000000002a:
-	neg	w8, w1
-	cmp	w0, w8
+	cmn	w0, w1
 	cset	w0, lt
 	ret
 

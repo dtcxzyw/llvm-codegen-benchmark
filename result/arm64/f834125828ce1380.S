@@ -33,9 +33,8 @@ func000000000000006c:
 	ret
 
 func0000000000000066:
-	neg	x8, x1
-	cmp	x8, x0, asr #2
-	cset	w0, gt
+	cmn	x1, x0, asr #2
+	cset	w0, lt
 	ret
 
 func0000000000000024:

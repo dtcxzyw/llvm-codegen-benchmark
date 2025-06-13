@@ -1,7 +1,6 @@
 func00000000000000a6:
 	mul	w8, w0, w1
-	neg	w9, w2
-	cmp	w8, w9
+	cmn	w8, w2
 	cset	w0, lt
 	ret
 

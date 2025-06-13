@@ -13,8 +13,7 @@ func0000000000000004:
 	ret
 
 func0000000000000026:
-	neg	x8, x2
-	cmp	x1, x8
+	cmn	x1, x2
 	csel	x0, x0, xzr, lt
 	ret
 

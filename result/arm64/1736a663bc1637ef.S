@@ -46,8 +46,7 @@ func000000000000000a:
 	ret
 
 func0000000000000026:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	cset	w8, lt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

@@ -21,8 +21,7 @@ func0000000000000004:
 	ret
 
 func0000000000000026:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	cset	w0, lt
 	ret
 
@@ -174,8 +173,7 @@ func000000000000004a:
 	ret
 
 func0000000000000027:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	cset	w0, le
 	ret
 
@@ -192,8 +190,7 @@ func000000000000002c:
 	ret
 
 func000000000000002b:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	cset	w0, ge
 	ret
 

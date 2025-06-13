@@ -1,7 +1,6 @@
 func000000000000002a:
-	neg	w8, w0
-	cmp	w8, w1
-	cset	w0, gt
+	cmn	w1, w0
+	cset	w0, lt
 	ret
 
 func0000000000000001:

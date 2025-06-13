@@ -1,6 +1,5 @@
 func000000000000004c:
-	neg	w8, w1
-	cmp	w2, w8
+	cmn	w2, w1
 	csneg	w8, w2, w1, lt
 	tst	w0, #0x1
 	csneg	w8, w8, w1, ne

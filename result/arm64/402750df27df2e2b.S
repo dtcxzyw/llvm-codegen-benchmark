@@ -131,16 +131,14 @@ func0000000000000044:
 	ret
 
 func000000000000008a:
-	neg	x8, x2
-	sub	x9, x0, x1
-	cmp	x9, x8
+	sub	x8, x0, x1
+	cmn	x8, x2
 	cset	w0, gt
 	ret
 
 func00000000000000a6:
-	neg	x8, x2
-	sub	x9, x0, x1
-	cmp	x9, x8
+	sub	x8, x0, x1
+	cmn	x8, x2
 	cset	w0, lt
 	ret
 

@@ -18,8 +18,7 @@ func00000000000000a8:
 	ret
 
 func00000000000000aa:
-	neg	x8, x1, asr #48
-	cmp	x0, x8
+	cmn	x0, x1, asr #48
 	cset	w0, gt
 	ret
 
@@ -29,8 +28,7 @@ func00000000000000ac:
 	ret
 
 func00000000000000a6:
-	neg	x8, x1, asr #2
-	cmp	x0, x8
+	cmn	x0, x1, asr #2
 	cset	w0, lt
 	ret
 
@@ -41,8 +39,7 @@ func00000000000000a4:
 	ret
 
 func0000000000000026:
-	neg	x8, x1, asr #1
-	cmp	x0, x8
+	cmn	x0, x1, asr #1
 	cset	w0, lt
 	ret
 

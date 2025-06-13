@@ -103,8 +103,7 @@ func000000000000000b:
 	ret
 
 func0000000000000126:
-	neg	w8, w1
-	cmp	w0, w8
+	cmn	w0, w1
 	cset	w0, lt
 	ret
 
@@ -134,8 +133,7 @@ func0000000000000009:
 	ret
 
 func000000000000002b:
-	neg	w8, w1
-	cmp	w0, w8
+	cmn	w0, w1
 	cset	w0, ge
 	ret
 

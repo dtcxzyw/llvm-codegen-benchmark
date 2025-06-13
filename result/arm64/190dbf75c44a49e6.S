@@ -119,8 +119,7 @@ func0000000000000028:
 	ret
 
 func0000000000000027:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	cset	w0, ge
 	ret
 

@@ -7,15 +7,13 @@ func0000000000000006:
 	ret
 
 func000000000000002a:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	cset	w8, gt
 	and	w0, w8, w0
 	ret
 
 func000000000000002b:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	cset	w8, ge
 	and	w0, w8, w0
 	ret

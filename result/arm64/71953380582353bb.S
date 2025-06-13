@@ -8,10 +8,9 @@ func00000000000000c4:
 
 func00000000000000a6:
 	mov	w8, #16960
-	neg	x9, x1
 	movk	w8, #15, lsl #16
 	mul	x8, x0, x8
-	cmp	x8, x9
+	cmn	x8, x1
 	cset	w0, lt
 	ret
 

@@ -7,8 +7,7 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	neg	w8, w2
-	cmp	w1, w8
+	cmn	w1, w2
 	csneg	w8, w1, w2, lt
 	add	w0, w0, w8
 	ret

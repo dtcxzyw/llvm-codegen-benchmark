@@ -6,8 +6,7 @@ func00000000000004a9:
 	ret
 
 func00000000000004cb:
-	neg	x8, x1
-	cmp	x0, x8
+	cmn	x0, x1
 	ccmp	x0, x1, #0, ge
 	cset	w0, lt
 	ret

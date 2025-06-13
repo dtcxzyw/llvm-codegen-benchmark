@@ -76,8 +76,7 @@ func000000000000000a:
 
 func00000000000001a7:
 	add	x8, x1, x2
-	neg	x8, x8
-	cmp	x0, x8
+	cmn	x0, x8
 	cset	w0, le
 	ret
 

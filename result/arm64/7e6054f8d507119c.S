@@ -20,9 +20,8 @@ func000000000000008a:
 	ret
 
 func00000000000000aa:
-	neg	w8, w1
-	cmp	w8, w0, lsl #1
-	cset	w0, lt
+	cmn	w1, w0, lsl #1
+	cset	w0, gt
 	ret
 
 func00000000000000f4:

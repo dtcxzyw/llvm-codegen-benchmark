@@ -34,9 +34,7 @@ func0000000000000008:
 	ret
 
 func0000000000000027:
-	mov	x8, #0
-	sub	x8, x8, w1, sxtw
-	cmp	x0, x8
+	cmn	x0, w1, sxtw
 	cset	w0, le
 	ret
 
@@ -46,9 +44,7 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	mov	x8, #0
-	sub	x8, x8, w1, sxtw
-	cmp	x0, x8
+	cmn	x0, w1, sxtw
 	cset	w0, lt
 	ret
 

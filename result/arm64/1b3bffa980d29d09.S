@@ -1,6 +1,5 @@
 func000000000000004c:
-	neg	x8, x2
-	cmp	x1, x8
+	cmn	x1, x2
 	cset	w8, lt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
@@ -41,8 +40,7 @@ func0000000000000010:
 	ret
 
 func000000000000004e:
-	neg	x8, x2
-	cmp	x1, x8
+	cmn	x1, x2
 	cset	w8, le
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
@@ -56,8 +54,7 @@ func0000000000000002:
 	ret
 
 func0000000000000054:
-	neg	x8, x2
-	cmp	x1, x8
+	cmn	x1, x2
 	cset	w8, gt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

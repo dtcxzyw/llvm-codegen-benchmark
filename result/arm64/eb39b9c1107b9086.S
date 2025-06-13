@@ -15,10 +15,9 @@ func0000000000000108:
 	ret
 
 func0000000000000086:
-	neg	w8, w1
-	add	w9, w1, w0
-	cmp	w0, w8
-	csel	w0, wzr, w9, lt
+	add	w8, w1, w0
+	cmn	w0, w1
+	csel	w0, wzr, w8, lt
 	ret
 
 func00000000000000aa:

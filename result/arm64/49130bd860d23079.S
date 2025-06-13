@@ -5,9 +5,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	neg	w8, w1
-	cmp	w8, w0
-	csneg	w0, w0, w1, ge
+	cmn	w0, w1
+	csneg	w0, w0, w1, le
 	ret
 
 func000000000000000a:

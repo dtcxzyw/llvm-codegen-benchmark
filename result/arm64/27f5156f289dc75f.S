@@ -32,22 +32,19 @@ func000000000000000a:
 
 func0000000000000126:
 	lsr	x8, x1, #32
-	neg	w8, w8
-	cmp	w0, w8
+	cmn	w0, w8
 	cset	w0, lt
 	ret
 
 func000000000000022b:
 	lsr	x8, x1, #2
-	neg	w8, w8
-	cmp	w0, w8
+	cmn	w0, w8
 	cset	w0, ge
 	ret
 
 func0000000000000226:
 	lsr	x8, x1, #2
-	neg	w8, w8
-	cmp	w0, w8
+	cmn	w0, w8
 	cset	w0, lt
 	ret
 
