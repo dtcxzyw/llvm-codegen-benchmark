@@ -7,16 +7,16 @@ func00000000000000a1:
 	retq
 
 func00000000000000a6:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%edx, %esi
 	andl	$-4096, %esi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
 
 func00000000000000aa:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%edx, %esi
 	andl	$-4096, %esi
 	cmpl	%esi, %edi
 	setg	%al

@@ -7,10 +7,11 @@ func000000000000000a:
 	retq
 
 func0000000000000000:
-	notl	%edi
-	leal	(%rdi,%rsi), %ecx
-	movl	%ecx, %eax
+	movl	%edi, %eax
+	notl	%eax
+	addl	%esi, %eax
+	subl	%esi, %edi
 	sarl	$31, %eax
-	andl	%ecx, %eax
+	andnl	%eax, %edi, %eax
 	retq
 

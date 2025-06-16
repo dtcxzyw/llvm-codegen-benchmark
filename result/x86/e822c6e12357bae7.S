@@ -14,10 +14,10 @@ func0000000000000003:
 	retq
 
 func0000000000000030:
+	subq	%rdi, %rsi
 	notq	%rsi
-	leaq	(%rsi,%rdi), %rax
-	andq	$-8, %rax
-	addq	$32, %rax
+	andq	$-8, %rsi
+	leaq	32(%rsi), %rax
 	retq
 
 func0000000000000020:

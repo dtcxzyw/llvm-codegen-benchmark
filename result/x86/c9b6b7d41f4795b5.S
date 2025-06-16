@@ -1,7 +1,7 @@
 func0000000000000000:
+	subl	%esi, %edx
 	notl	%edx
-	leal	(%rdx,%rsi), %eax
-	andl	$-2, %eax
-	addl	%edi, %eax
+	andl	$-2, %edx
+	leal	(%rdx,%rdi), %eax
 	retq
 

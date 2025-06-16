@@ -13,9 +13,9 @@ func0000000000000003:
 	ret
 
 func0000000000000030:
-	mvn	x8, x1
-	add	x8, x8, x0
-	and	x8, x8, #0xfffffffffffffff8
+	mov	x8, #-8
+	sub	x9, x1, x0
+	bic	x8, x8, x9
 	add	x0, x8, #32
 	ret
 

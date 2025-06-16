@@ -6,8 +6,8 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	mvn	w8, w0
-	add	w8, w1, w8
-	and	w0, w8, #0xffff
+	mov	w8, #65535
+	sub	w9, w0, w1
+	bic	w0, w8, w9
 	ret
 

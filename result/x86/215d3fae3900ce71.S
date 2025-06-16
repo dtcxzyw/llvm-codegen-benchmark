@@ -11,14 +11,16 @@ func0000000000000005:
 	retq
 
 func0000000000000004:
-	notl	%esi
-	leal	(%rsi,%rdi), %eax
+	movl	%esi, %eax
+	subl	%edi, %eax
+	notl	%eax
 	andl	$3, %eax
 	retq
 
 func0000000000000003:
-	notl	%esi
-	leal	(%rsi,%rdi), %eax
+	movl	%esi, %eax
+	subl	%edi, %eax
+	notl	%eax
 	andl	$63, %eax
 	retq
 

@@ -1,9 +1,9 @@
 func0000000000000000:
-	notq	%rdx
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
-	leaq	(%rsi,%rdx), %rax
-	andq	$-4, %rax
-	addq	$4, %rax
+	subq	%rsi, %rdx
+	notq	%rdx
+	andq	$-4, %rdx
+	leaq	4(%rdx), %rax
 	retq
 

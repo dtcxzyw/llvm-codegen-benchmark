@@ -7,8 +7,8 @@ func00000000000000a3:
 
 func0000000000000003:
 	add	a1, a1, a2
+	subw	a0, a0, a1
 	not	a0, a0
-	add	a0, a0, a1
 	slli.uw	a0, a0, 1
 	ret
 

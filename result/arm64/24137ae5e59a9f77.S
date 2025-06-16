@@ -11,8 +11,8 @@ func0000000000000019:
 	ret
 
 func0000000000000000:
-	mvn	w8, w1
-	add	w8, w0, w8
-	and	w0, w8, #0xffffffe0
+	mov	w8, #-32
+	sub	w9, w1, w0
+	bic	w0, w8, w9
 	ret
 

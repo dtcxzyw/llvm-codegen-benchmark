@@ -1,18 +1,18 @@
 func0000000000000020:
-	mvn	w8, w1
-	mov	w9, #16
-	add	w8, w2, w8
-	sub	w9, w9, w0
-	and	w8, w8, #0xffff
+	sub	w8, w1, w2
+	mov	w9, #65535
+	mov	w10, #16
+	bic	w8, w9, w8
+	sub	w9, w10, w0
 	lsr	w0, w8, w9
 	ret
 
 func0000000000000022:
-	mvn	w8, w1
-	mov	w9, #16
-	add	w8, w2, w8
-	sub	w9, w9, w0
-	and	w8, w8, #0xffff
+	sub	w8, w1, w2
+	mov	w9, #65535
+	mov	w10, #16
+	bic	w8, w9, w8
+	sub	w9, w10, w0
 	lsr	w0, w8, w9
 	ret
 

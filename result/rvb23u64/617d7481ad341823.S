@@ -30,9 +30,9 @@ func0000000000000026:
 	ret
 
 func000000000000000c:
-	not	a1, a1
-	add	a1, a1, a2
-	andi	a1, a1, -8
+	sub	a1, a1, a2
+	li	a2, -8
+	andn	a1, a2, a1
 	add	a0, a0, a1
 	ret
 

@@ -12,8 +12,8 @@ func0000000000000008:
 	retq
 
 func0000000000000004:
+	subl	%edi, %esi
 	notl	%esi
-	addl	%edi, %esi
 	movzwl	%si, %eax
 	cmpl	$256, %eax
 	setb	%al

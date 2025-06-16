@@ -21,8 +21,8 @@ func0000000000000028:
 
 func0000000000000000:
 	leal	(%rsi,%rdx), %eax
+	subl	%edi, %eax
 	notl	%eax
-	addl	%edi, %eax
 	andl	$-2147483648, %eax
 	retq
 

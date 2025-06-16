@@ -8,10 +8,10 @@ func0000000000000043:
 	ret
 
 func0000000000000060:
-	bset	a2, zero, a2
-	addi	a2, a2, -1
-	add	a1, a1, a2
-	and	a0, a0, a1
+	li	a3, -1
+	sll	a2, a3, a2
+	sub	a2, a2, a1
+	andn	a0, a0, a2
 	ret
 
 func0000000000000040:

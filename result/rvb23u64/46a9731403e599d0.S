@@ -1,16 +1,17 @@
 func000000000000010f:
+	subw	a2, a2, a1
 	not	a2, a2
-	add	a1, a1, a2
-	slli.uw	a1, a1, 3
+	slli.uw	a1, a2, 3
 	sh3add	a1, a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func000000000000000f:
-	not	a2, a2
-	add	a1, a1, a2
-	zext.w	a1, a1
+	sub	a2, a2, a1
+	li	a1, -1
+	srli	a1, a1, 32
+	andn	a1, a1, a2
 	li	a2, 176
 	mul	a1, a1, a2
 	add	a0, a0, a1

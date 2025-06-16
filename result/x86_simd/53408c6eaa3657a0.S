@@ -92,9 +92,8 @@ func0000000000000007:
 .LCPI6_0:
 	.long	1
 func0000000000000001:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpandnd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

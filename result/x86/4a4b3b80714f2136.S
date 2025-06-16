@@ -1,8 +1,8 @@
 func00000000000000e1:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%esi, %edx
-	andl	$3, %edx
-	cmpq	%rdx, %rdi
+	andl	$3, %esi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 
@@ -15,10 +15,10 @@ func0000000000000001:
 	retq
 
 func0000000000000081:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%esi, %edx
-	andl	$3, %edx
-	cmpq	%rdx, %rdi
+	andl	$3, %esi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 

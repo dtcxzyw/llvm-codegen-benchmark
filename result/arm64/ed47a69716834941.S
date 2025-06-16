@@ -1,6 +1,6 @@
 func0000000000000000:
-	mvn	w8, w2
-	sub	w9, w0, w1
-	add	w0, w9, w8
+	sub	w8, w1, w0
+	add	w8, w2, w8
+	mvn	w0, w8
 	ret
 

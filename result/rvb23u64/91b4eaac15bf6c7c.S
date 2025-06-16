@@ -11,9 +11,9 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	not	a0, a0
-	addw	a0, a0, a1
-	andi	a0, a0, -4
+	subw	a0, a0, a1
+	li	a1, -4
+	andn	a0, a1, a0
 	ret
 
 func000000000000000d:
@@ -35,9 +35,9 @@ func0000000000000008:
 	ret
 
 func0000000000000002:
-	not	a0, a0
-	add	a0, a0, a1
-	andi	a0, a0, 1023
+	sub	a0, a0, a1
+	li	a1, 1023
+	andn	a0, a1, a0
 	ret
 
 func000000000000000f:

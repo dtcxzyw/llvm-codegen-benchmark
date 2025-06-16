@@ -1,6 +1,6 @@
 func000000000000000c:
+	subw	a1, a1, a2
 	not	a1, a1
-	add	a1, a1, a2
 	sh2add.uw	a0, a1, a0
 	ret
 

@@ -73,16 +73,14 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 func0000000000000008:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpandnd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
 	.long	1
 func0000000000000004:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpandd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpandnd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

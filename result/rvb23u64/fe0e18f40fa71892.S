@@ -15,8 +15,8 @@ func0000000000000033:
 	ret
 
 func0000000000000023:
+	subw	a1, a1, a2
 	not	a1, a1
-	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 

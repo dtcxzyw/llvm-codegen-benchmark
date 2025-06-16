@@ -6,9 +6,9 @@ func000000000000000f:
 	ret
 
 func000000000000002f:
+	subw	a1, a1, a0
 	not	a1, a1
-	add	a0, a0, a1
-	slli.uw	a0, a0, 2
+	slli.uw	a0, a1, 2
 	addi	a0, a0, 4
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000000:
-	not	a0, a0
-	add	a0, a0, a1
+	subw	a0, a0, a1
 	lui	a1, 699051
+	not	a0, a0
 	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 32

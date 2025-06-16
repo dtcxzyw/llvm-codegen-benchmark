@@ -1,7 +1,7 @@
 func0000000000000038:
-	mvn	x8, x2
-	add	x8, x1, x8
-	and	x8, x8, #0x7ffffffffffffffe
+	sub	x8, x2, x1
+	mov	x9, #9223372036854775806
+	bic	x8, x9, x8
 	cmp	x8, x0
 	cset	w0, hi
 	ret

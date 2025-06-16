@@ -1,6 +1,7 @@
 func0000000000000000:
-	notl	%esi
-	leal	(%rdi,%rsi), %eax
+	movq	%rsi, %rax
+	subl	%edi, %eax
+	notl	%eax
 	andl	$1, %eax
 	retq
 

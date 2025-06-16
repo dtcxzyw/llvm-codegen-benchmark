@@ -11,9 +11,9 @@ func0000000000000019:
 	ret
 
 func0000000000000000:
-	not	a1, a1
-	add	a0, a0, a1
-	srliw	a0, a0, 5
-	slli	a0, a0, 5
+	sub	a1, a1, a0
+	li	a0, -32
+	zext.w	a0, a0
+	andn	a0, a0, a1
 	ret
 

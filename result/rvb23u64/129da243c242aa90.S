@@ -1,13 +1,13 @@
 func0000000000000003:
+	subw	a1, a1, a0
 	not	a1, a1
-	add	a0, a0, a1
-	slli.uw	a0, a0, 2
+	slli.uw	a0, a1, 2
 	ret
 
 func000000000000000b:
+	subw	a1, a1, a0
 	not	a1, a1
-	add	a0, a0, a1
-	slli.uw	a0, a0, 4
+	slli.uw	a0, a1, 4
 	ret
 
 func0000000000000002:

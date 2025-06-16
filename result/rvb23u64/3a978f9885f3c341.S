@@ -1,7 +1,8 @@
 func0000000000000008:
-	not	a1, a1
-	add	a1, a1, a2
-	zext.h	a1, a1
+	subw	a1, a1, a2
+	lui	a2, 16
+	addi	a2, a2, -1
+	andn	a1, a2, a1
 	srlw	a0, a1, a0
 	ret
 

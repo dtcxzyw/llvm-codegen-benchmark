@@ -11,9 +11,9 @@ func0000000000000023:
 	ret
 
 func0000000000000103:
+	subw	a1, a1, a0
 	not	a1, a1
-	add	a0, a0, a1
-	slli.uw	a0, a0, 3
+	slli.uw	a0, a1, 3
 	ret
 
 func0000000000000102:

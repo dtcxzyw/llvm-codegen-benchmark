@@ -1,9 +1,9 @@
 func0000000000000000:
 	add	x8, x2, x1
-	mvn	x9, x1
+	mov	x9, #-8
 	cmp	x8, x0
 	csel	x8, x8, x0, hi
-	add	x8, x8, x9
-	and	x0, x8, #0xfffffffffffffff8
+	sub	x8, x1, x8
+	bic	x0, x9, x8
 	ret
 

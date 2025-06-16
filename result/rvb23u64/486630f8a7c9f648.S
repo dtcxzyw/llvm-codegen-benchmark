@@ -6,15 +6,15 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
-	not	a1, a1
-	add	a0, a0, a1
-	andi	a0, a0, -8
+	sub	a1, a1, a0
+	li	a0, -8
+	andn	a0, a0, a1
 	ret
 
 func0000000000000001:
-	not	a1, a1
-	add	a0, a0, a1
-	andi	a0, a0, 15
+	sub	a1, a1, a0
+	li	a0, 15
+	andn	a0, a0, a1
 	ret
 
 func000000000000000c:
@@ -30,8 +30,8 @@ func000000000000000d:
 	ret
 
 func0000000000000005:
-	not	a1, a1
-	add	a0, a0, a1
-	andi	a0, a0, 1
+	sub	a1, a1, a0
+	li	a0, 1
+	andn	a0, a0, a1
 	ret
 

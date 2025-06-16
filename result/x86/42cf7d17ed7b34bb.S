@@ -1,8 +1,8 @@
 func0000000000000000:
+	subl	%edi, %esi
 	notl	%esi
-	leal	(%rsi,%rdi), %eax
-	andl	$-2, %eax
-	addl	$2, %eax
+	andl	$-2, %esi
+	leal	2(%rsi), %eax
 	retq
 
 func0000000000000017:
@@ -13,9 +13,9 @@ func0000000000000017:
 	retq
 
 func0000000000000003:
+	subl	%edi, %esi
 	notl	%esi
-	leal	(%rsi,%rdi), %eax
-	andl	$1023, %eax
-	incl	%eax
+	andl	$1023, %esi
+	leal	1(%rsi), %eax
 	retq
 

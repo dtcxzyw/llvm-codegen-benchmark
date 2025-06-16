@@ -10,9 +10,8 @@ func0000000000000043:
 func0000000000000060:
 	movq	$-1, %rax
 	shlxq	%rdx, %rax, %rax
-	notq	%rax
-	addq	%rsi, %rax
-	andq	%rdi, %rax
+	subq	%rsi, %rax
+	andnq	%rdi, %rax, %rax
 	retq
 
 func0000000000000040:

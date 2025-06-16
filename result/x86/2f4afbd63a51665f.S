@@ -8,9 +8,11 @@ func0000000000000020:
 	retq
 
 func000000000000002a:
-	notl	%edi
-	addl	%esi, %edi
 	movl	%edi, %eax
+	notl	%eax
+	addl	%esi, %eax
+	subl	%esi, %edi
+	notl	%edi
 	sarl	$31, %eax
 	andnl	%edi, %eax, %eax
 	incl	%eax

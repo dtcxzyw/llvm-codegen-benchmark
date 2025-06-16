@@ -9,19 +9,17 @@ func00000000000000a1:
 
 func00000000000000a6:
 	sext.w	a0, a0
-	not	a1, a1
-	addw	a1, a1, a2
-	andi	a1, a1, -2048
-	bclri	a1, a1, 11
+	subw	a1, a1, a2
+	lui	a2, 1048575
+	andn	a1, a2, a1
 	slt	a0, a0, a1
 	ret
 
 func00000000000000aa:
 	sext.w	a0, a0
-	not	a1, a1
-	addw	a1, a1, a2
-	andi	a1, a1, -2048
-	bclri	a1, a1, 11
+	subw	a1, a1, a2
+	lui	a2, 1048575
+	andn	a1, a2, a1
 	slt	a0, a1, a0
 	ret
 

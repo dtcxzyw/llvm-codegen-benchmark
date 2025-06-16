@@ -15,9 +15,9 @@ func0000000000000003:
 	ret
 
 func0000000000000030:
-	not	a1, a1
-	add	a0, a0, a1
-	andi	a0, a0, -8
+	sub	a1, a1, a0
+	li	a0, -8
+	andn	a0, a0, a1
 	addi	a0, a0, 32
 	ret
 

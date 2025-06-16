@@ -1,18 +1,20 @@
 func000000000000000c:
-	add	x8, x1, #24
-	mvn	x8, x8
-	add	x8, x0, x8
-	and	x0, x8, #0xfffffffffffffff8
+	sub	x9, x1, x0
+	mov	x8, #-8
+	add	x9, x9, #24
+	bic	x0, x8, x9
 	ret
 
 func0000000000000008:
-	sub	w0, w0, w1
+	mvn	w8, w0
+	add	w8, w8, w1
+	mvn	w0, w8
 	ret
 
 func0000000000000000:
-	add	x8, x1, #8
-	mvn	x8, x8
-	add	x8, x0, x8
-	and	x0, x8, #0xfffffffffffffff8
+	sub	x9, x1, x0
+	mov	x8, #-8
+	add	x9, x9, #8
+	bic	x0, x8, x9
 	ret
 

@@ -1,19 +1,22 @@
 func0000000000000008:
-	leal	(%rsi,%rdx), %eax
-	notl	%edi
-	addl	%edi, %eax
+	movq	%rdi, %rax
+	addl	%edx, %esi
+	subl	%esi, %eax
+	notl	%eax
 	andl	$1, %eax
 	retq
 
 func0000000000000000:
-	leal	(%rsi,%rdx), %eax
-	notl	%edi
-	addl	%edi, %eax
+	movq	%rdi, %rax
+	addl	%edx, %esi
+	subl	%esi, %eax
+	notl	%eax
 	retq
 
 func000000000000000c:
-	leal	(%rsi,%rdx), %eax
-	notl	%edi
-	addl	%edi, %eax
+	movq	%rdi, %rax
+	addl	%edx, %esi
+	subl	%esi, %eax
+	notl	%eax
 	retq
 

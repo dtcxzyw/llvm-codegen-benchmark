@@ -6,9 +6,9 @@ func0000000000000007:
 	retq
 
 func0000000000000003:
+	subl	%esi, %edx
 	notl	%edx
-	addl	%edx, %esi
-	andl	$15, %esi
-	leaq	(%rdi,%rsi,4), %rax
+	andl	$15, %edx
+	leaq	(%rdi,%rdx,4), %rax
 	retq
 

@@ -1,19 +1,20 @@
 func000000000000000c:
+	subq	%rdi, %rsi
 	leaq	24(%rsi), %rax
 	notq	%rax
-	addq	%rdi, %rax
 	andq	$-8, %rax
 	retq
 
 func0000000000000008:
-	movq	%rdi, %rax
-	subl	%esi, %eax
+	notl	%edi
+	leal	(%rdi,%rsi), %eax
+	notl	%eax
 	retq
 
 func0000000000000000:
+	subq	%rdi, %rsi
 	leaq	8(%rsi), %rax
 	notq	%rax
-	addq	%rdi, %rax
 	andq	$-8, %rax
 	retq
 

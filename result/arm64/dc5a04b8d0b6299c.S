@@ -8,7 +8,9 @@ func000000000000000a:
 
 func0000000000000000:
 	mvn	w8, w0
+	sub	w9, w0, w1
 	add	w8, w1, w8
-	and	w0, w8, w8, asr #31
+	asr	w8, w8, #31
+	bic	w0, w8, w9
 	ret
 

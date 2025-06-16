@@ -7,17 +7,17 @@ func00000000000000a1:
 	ret
 
 func00000000000000a6:
-	mvn	w8, w1
-	add	w8, w2, w8
-	and	w8, w8, #0xfffff000
+	sub	w8, w1, w2
+	mov	w9, #-4096
+	bic	w8, w9, w8
 	cmp	w0, w8
 	cset	w0, lt
 	ret
 
 func00000000000000aa:
-	mvn	w8, w1
-	add	w8, w2, w8
-	and	w8, w8, #0xfffff000
+	sub	w8, w1, w2
+	mov	w9, #-4096
+	bic	w8, w9, w8
 	cmp	w0, w8
 	cset	w0, gt
 	ret

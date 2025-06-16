@@ -22,10 +22,11 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
-	not	a1, a1
-	add	a0, a0, a1
+	sub	a1, a1, a0
+	li	a0, -1
+	srli	a0, a0, 32
+	andn	a0, a0, a1
 	lui	a1, 486296
-	zext.w	a0, a0
 	addi	a1, a1, 475
 	mul	a0, a0, a1
 	srli	a0, a0, 38

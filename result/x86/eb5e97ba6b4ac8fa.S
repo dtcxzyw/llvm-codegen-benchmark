@@ -1,7 +1,8 @@
 func0000000000000015:
-	leal	(%rsi,%rdx), %eax
-	notl	%edi
-	addl	%edi, %eax
+	movl	%edi, %eax
+	addl	%edx, %esi
+	subl	%esi, %eax
+	notl	%eax
 	andl	$-4096, %eax
 	retq
 

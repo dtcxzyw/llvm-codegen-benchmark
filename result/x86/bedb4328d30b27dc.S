@@ -1,9 +1,8 @@
 func0000000000000020:
 	movq	$-1, %rax
 	shlxq	%rdx, %rax, %rax
-	notq	%rax
-	addq	%rsi, %rax
-	andq	%rdi, %rax
+	subq	%rsi, %rax
+	andnq	%rdi, %rax, %rax
 	retq
 
 func0000000000000003:
@@ -18,9 +17,8 @@ func0000000000000003:
 func0000000000000022:
 	movq	$-1, %rax
 	shlxq	%rdx, %rax, %rax
-	notq	%rax
-	addq	%rsi, %rax
-	andq	%rdi, %rax
+	subq	%rsi, %rax
+	andnq	%rdi, %rax, %rax
 	retq
 
 func0000000000000000:

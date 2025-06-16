@@ -123,9 +123,10 @@ func0000000000000061:
 	ret
 
 func0000000000000141:
-	not	a2, a2
-	add	a1, a1, a2
-	zext.w	a1, a1
+	sub	a2, a2, a1
+	li	a1, -1
+	srli	a1, a1, 32
+	andn	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -181,9 +182,10 @@ func0000000000000101:
 	ret
 
 func0000000000000201:
-	not	a2, a2
-	add	a1, a1, a2
-	zext.w	a1, a1
+	sub	a2, a2, a1
+	li	a1, -1
+	srli	a1, a1, 32
+	andn	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -195,9 +197,10 @@ func0000000000000074:
 	ret
 
 func0000000000000208:
-	not	a2, a2
-	add	a1, a1, a2
-	zext.w	a1, a1
+	sub	a2, a2, a1
+	li	a1, -1
+	srli	a1, a1, 32
+	andn	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

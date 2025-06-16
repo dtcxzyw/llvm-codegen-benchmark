@@ -11,9 +11,9 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	mvn	w8, w1
-	add	w8, w8, w0
-	and	w0, w8, #0x3
+	mov	w8, #3
+	sub	w9, w1, w0
+	bic	w0, w8, w9
 	ret
 
 func000000000000000b:

@@ -34,8 +34,9 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	notl	%edi
-	leal	(%rsi,%rdi), %eax
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	notl	%eax
 	andl	$3, %eax
 	retq
 

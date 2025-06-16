@@ -1,7 +1,10 @@
 func0000000000000004:
+	movl	%edx, %eax
+	notl	%eax
+	addl	%esi, %eax
+	subl	%esi, %edx
 	notl	%edx
-	leal	(%rdx,%rsi), %eax
-	movzwl	%ax, %ecx
+	movzwl	%dx, %ecx
 	cmpl	$256, %ecx
 	cmovael	%edi, %eax
 	retq

@@ -5,14 +5,15 @@ func000000000000000b:
 	retq
 
 func000000000000001b:
+	subl	%edi, %esi
 	notl	%esi
-	addl	%edi, %esi
 	movzwl	%si, %eax
 	retq
 
 func0000000000000001:
-	notl	%esi
-	leal	(%rsi,%rdi), %eax
+	movl	%esi, %eax
+	subl	%edi, %eax
+	notl	%eax
 	andl	$63, %eax
 	retq
 

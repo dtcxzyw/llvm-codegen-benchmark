@@ -8,9 +8,10 @@ func0000000000000038:
 
 func000000000000003c:
 	add	a1, a1, a2
-	not	a1, a1
-	add	a0, a0, a1
-	zext.w	a0, a0
+	li	a2, -1
+	sub	a1, a1, a0
+	srli	a2, a2, 32
+	andn	a0, a2, a1
 	ret
 
 func0000000000000028:
@@ -23,10 +24,9 @@ func0000000000000028:
 
 func0000000000000000:
 	add	a1, a1, a2
-	not	a1, a1
-	add	a0, a0, a1
-	srliw	a0, a0, 31
-	slli	a0, a0, 31
+	sub	a1, a1, a0
+	bseti	a0, zero, 31
+	andn	a0, a0, a1
 	ret
 
 func0000000000000030:

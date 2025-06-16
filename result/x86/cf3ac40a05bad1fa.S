@@ -11,8 +11,8 @@ func0000000000000005:
 	retq
 
 func000000000000000d:
+	subl	%edi, %esi
 	notl	%esi
-	addl	%edi, %esi
 	movzwl	%si, %eax
 	retq
 
@@ -23,14 +23,15 @@ func000000000000000c:
 	retq
 
 func0000000000000008:
+	subl	%edi, %esi
 	notl	%esi
-	addl	%edi, %esi
 	movzbl	%sil, %eax
 	retq
 
 func0000000000000004:
-	notl	%esi
-	leal	(%rsi,%rdi), %eax
+	movl	%esi, %eax
+	subl	%edi, %eax
+	notl	%eax
 	andl	$1, %eax
 	retq
 

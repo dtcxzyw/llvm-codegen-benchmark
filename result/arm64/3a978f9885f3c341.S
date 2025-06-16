@@ -1,7 +1,7 @@
 func0000000000000008:
-	mvn	w8, w1
-	add	w8, w2, w8
-	and	w8, w8, #0xffff
+	sub	w8, w1, w2
+	mov	w9, #65535
+	bic	w8, w9, w8
 	lsr	w0, w8, w0
 	ret
 

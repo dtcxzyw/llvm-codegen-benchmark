@@ -30,9 +30,9 @@ func0000000000000087:
 	ret
 
 func0000000000000014:
+	subw	a2, a2, a1
 	not	a2, a2
-	add	a1, a1, a2
-	srliw	a1, a1, 6
+	srliw	a1, a2, 6
 	sh3add	a0, a1, a0
 	ret
 

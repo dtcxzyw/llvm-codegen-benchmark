@@ -1,6 +1,6 @@
 func0000000000000020:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%edx, %esi
 	movzwl	%si, %eax
 	movb	$16, %cl
 	subb	%dil, %cl
@@ -8,8 +8,8 @@ func0000000000000020:
 	retq
 
 func0000000000000022:
+	subl	%edx, %esi
 	notl	%esi
-	addl	%edx, %esi
 	movzwl	%si, %eax
 	movb	$16, %cl
 	subb	%dil, %cl

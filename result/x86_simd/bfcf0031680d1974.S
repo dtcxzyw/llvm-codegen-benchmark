@@ -3,9 +3,10 @@
 .LCPI0_1:
 	.zero	4,2
 func0000000000000003:
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm0, %xmm0
-	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vpandnd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	retq
 
 .LCPI1_0:

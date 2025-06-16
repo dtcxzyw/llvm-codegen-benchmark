@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	not	a1, a1
-	addw	a0, a0, a1
-	andi	a0, a0, -2
+	subw	a1, a1, a0
+	li	a0, -2
+	andn	a0, a0, a1
 	ret
 

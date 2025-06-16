@@ -33,8 +33,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	mvn	w8, w0
-	add	w8, w1, w8
+	sub	w8, w0, w1
+	mvn	w8, w8
 	and	x0, x8, #0x3
 	ret
 

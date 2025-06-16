@@ -6,8 +6,9 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	not	a0, a0
-	add	a0, a0, a1
-	zext.h	a0, a0
+	sub	a0, a0, a1
+	lui	a1, 16
+	addi	a1, a1, -1
+	andn	a0, a1, a0
 	ret
 

@@ -1,9 +1,8 @@
 .LCPI0_0:
 	.quad	3
 func00000000000000e1:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpandnq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -25,9 +24,8 @@ func0000000000000001:
 .LCPI2_0:
 	.quad	3
 func0000000000000081:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpandnq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

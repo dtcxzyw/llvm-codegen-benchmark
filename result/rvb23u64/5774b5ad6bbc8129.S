@@ -15,9 +15,10 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	not	a1, a1
-	add	a0, a0, a1
-	zext.w	a0, a0
+	sub	a1, a1, a0
+	li	a0, -1
+	srli	a0, a0, 32
+	andn	a0, a0, a1
 	ret
 
 func0000000000000010:
@@ -81,15 +82,17 @@ func000000000000000e:
 	ret
 
 func000000000000001a:
-	not	a1, a1
-	add	a0, a0, a1
-	zext.w	a0, a0
+	sub	a1, a1, a0
+	li	a0, -1
+	srli	a0, a0, 32
+	andn	a0, a0, a1
 	ret
 
 func0000000000000018:
-	not	a1, a1
-	add	a0, a0, a1
-	zext.w	a0, a0
+	sub	a1, a1, a0
+	li	a0, -1
+	srli	a0, a0, 32
+	andn	a0, a0, a1
 	ret
 
 func0000000000000008:

@@ -6,9 +6,10 @@ func0000000000000001:
 	retq
 
 func0000000000000000:
-	leaq	(%rsi,%rdx), %rax
-	notq	%rdi
-	addq	%rdi, %rax
+	movq	%rdi, %rax
+	addq	%rdx, %rsi
+	subq	%rsi, %rax
+	notq	%rax
 	andq	$-2, %rax
 	retq
 

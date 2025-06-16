@@ -1,7 +1,6 @@
 func0000000000000000:
-	notq	%rdx
-	leaq	(%rdx,%rdi), %rax
 	negq	%rsi
-	andq	%rsi, %rax
+	subq	%rdi, %rdx
+	andnq	%rsi, %rdx, %rax
 	retq
 

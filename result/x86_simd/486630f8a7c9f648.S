@@ -11,17 +11,15 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	-8
 func0000000000000008:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpandnq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:
 	.quad	15
 func0000000000000001:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpandnq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -45,8 +43,7 @@ func000000000000000d:
 .LCPI5_0:
 	.quad	1
 func0000000000000005:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpandnq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 

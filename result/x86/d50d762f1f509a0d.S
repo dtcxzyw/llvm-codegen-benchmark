@@ -14,8 +14,8 @@ func000000000000003c:
 
 func000000000000002c:
 	leaq	(%rsi,%rdx), %rax
+	subq	%rdi, %rax
 	notq	%rax
-	addq	%rdi, %rax
 	andq	$-8, %rax
 	retq
 

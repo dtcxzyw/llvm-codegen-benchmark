@@ -13,9 +13,8 @@ func00000000000000a1:
 .LCPI1_0:
 	.long	4294963200
 func00000000000000a6:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpandnd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -24,9 +23,8 @@ func00000000000000a6:
 .LCPI2_0:
 	.long	4294963200
 func00000000000000aa:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpandnd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

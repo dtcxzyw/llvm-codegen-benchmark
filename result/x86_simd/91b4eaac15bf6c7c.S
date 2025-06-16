@@ -56,9 +56,8 @@ func0000000000000005:
 .LCPI2_0:
 	.long	4294967292
 func0000000000000004:
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpandnd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -91,9 +90,8 @@ func0000000000000008:
 .LCPI6_0:
 	.long	1023
 func0000000000000002:
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpandnd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

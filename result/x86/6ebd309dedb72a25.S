@@ -1,6 +1,6 @@
 func0000000000000000:
-	subl	%edi, %edx
-	notl	%esi
-	leal	(%rsi,%rdx), %eax
+	subl	%edx, %edi
+	leal	(%rsi,%rdi), %eax
+	notl	%eax
 	retq
 

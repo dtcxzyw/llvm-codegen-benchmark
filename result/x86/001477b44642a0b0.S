@@ -26,9 +26,9 @@ func0000000000000004:
 	retq
 
 func000000000000000c:
+	subq	%rdx, %rsi
 	notq	%rsi
-	leaq	(%rsi,%rdx), %rax
-	andq	$-8, %rax
-	addq	%rdi, %rax
+	andq	$-8, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq
 
