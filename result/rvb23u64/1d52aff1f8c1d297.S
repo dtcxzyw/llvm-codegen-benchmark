@@ -1,8 +1,7 @@
 func00000000000000fb:
 	clzw	a2, a2
-	li	a3, 32
-	subw	a3, a3, a2
 	add	a0, a0, a1
-	add.uw	a0, a3, a0
+	sub	a0, a0, a2
+	addi	a0, a0, 32
 	ret
 

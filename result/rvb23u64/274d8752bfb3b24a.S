@@ -1,7 +1,7 @@
 func000000000000001f:
 	li	a2, 64
 	subw	a2, a2, a1
-	add.uw	a0, a2, a0
+	add	a0, a0, a2
 	ret
 
 func0000000000000003:
@@ -25,7 +25,7 @@ func000000000000000f:
 func000000000000001c:
 	li	a2, 6
 	subw	a2, a2, a1
-	add.uw	a0, a2, a0
+	add	a0, a0, a2
 	ret
 
 func0000000000000000:

@@ -1,8 +1,7 @@
 func000000000000005f:
 	clzw	a1, a1
 	srli	a1, a1, 2
-	li	a2, 8
-	subw	a2, a2, a1
-	add.uw	a0, a2, a0
+	sub	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 

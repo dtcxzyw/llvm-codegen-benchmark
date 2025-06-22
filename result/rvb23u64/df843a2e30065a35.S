@@ -9,6 +9,6 @@ func0000000000000077:
 	addi	a3, a3, -15
 	mul	a2, a2, a3
 	subw	a1, a1, a2
-	add.uw	a0, a1, a0
+	add	a0, a0, a1
 	ret
 

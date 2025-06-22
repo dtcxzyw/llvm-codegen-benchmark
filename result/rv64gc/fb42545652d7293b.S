@@ -27,8 +27,6 @@ func0000000000000037:
 	bltu	a2, a1, .LBB2_2
 	mv	a2, a1
 .LBB2_2:
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	add	a0, a0, a2
 	ret
 
@@ -52,8 +50,6 @@ func0000000000000034:
 	bltu	a2, a1, .LBB4_2
 	mv	a2, a1
 .LBB4_2:
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	add	a0, a0, a2
 	ret
 
@@ -64,8 +60,6 @@ func000000000000003f:
 	bltu	a1, a2, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 

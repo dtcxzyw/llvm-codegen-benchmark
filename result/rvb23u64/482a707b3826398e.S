@@ -11,7 +11,7 @@ func00000000000003f8:
 	srli	a3, a3, 47
 	mul	a1, a1, a3
 	subw	a2, a2, a1
-	add.uw	a0, a2, a0
+	add	a0, a0, a2
 	addi	a4, a4, -31
 	sltu	a0, a4, a0
 	ret

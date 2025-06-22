@@ -8,6 +8,6 @@ func0000000000000007:
 	li	a3, 293
 	mul	a2, a2, a3
 	subw	a1, a1, a2
-	sh3add.uw	a0, a1, a0
+	sh3add	a0, a1, a0
 	ret
 

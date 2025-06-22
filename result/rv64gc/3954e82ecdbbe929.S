@@ -8,8 +8,7 @@ func000000000000001f:
 	slli	a3, a2, 2
 	subw	a1, a1, a2
 	subw	a1, a1, a3
-	slli	a1, a1, 32
-	srli	a1, a1, 29
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
@@ -24,8 +23,7 @@ func0000000000000013:
 	slli	a3, a2, 1
 	subw	a1, a1, a2
 	subw	a1, a1, a3
-	slli	a1, a1, 32
-	srli	a1, a1, 29
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

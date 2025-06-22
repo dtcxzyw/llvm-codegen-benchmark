@@ -8,11 +8,11 @@ func000000000000007d:
 	mulhu	a3, a3, a4
 	lui	a4, 1048544
 	addi	a1, a1, -15
+	addi	a4, a4, 30
 	srli	a3, a3, 47
 	mul	a1, a1, a3
 	subw	a2, a2, a1
-	add.uw	a0, a2, a0
-	addi	a4, a4, 30
 	add	a0, a0, a4
+	add	a0, a0, a2
 	ret
 

@@ -11,7 +11,7 @@ func0000000000000007:
 	li	a3, 1009
 	mul	a2, a2, a3
 	subw	a1, a1, a2
-	sh3add.uw	a0, a1, a0
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000001f:
@@ -22,6 +22,6 @@ func000000000000001f:
 	srli	a2, a2, 33
 	sh1add	a2, a2, a2
 	subw	a1, a1, a2
-	sh2add.uw	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 

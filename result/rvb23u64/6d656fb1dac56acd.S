@@ -1,7 +1,6 @@
 func000000000000003e:
 	lui	a2, 2
 	subw	a2, a2, a1
-	zext.w	a2, a2
 	mul	a0, a0, a2
 	srli	a0, a0, 13
 	ret

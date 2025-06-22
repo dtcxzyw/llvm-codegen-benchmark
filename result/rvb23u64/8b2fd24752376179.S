@@ -8,7 +8,7 @@ func0000000000000004:
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
 	subw	a1, a1, a2
-	add.uw	a0, a1, a0
+	add	a0, a0, a1
 	ret
 
 func0000000000000007:
@@ -22,6 +22,6 @@ func0000000000000007:
 	addi	a3, a3, -15
 	mul	a2, a2, a3
 	subw	a1, a1, a2
-	add.uw	a0, a1, a0
+	add	a0, a0, a1
 	ret
 

@@ -9,7 +9,7 @@ func000000000000007b:
 	li	a3, 32
 	subw	a3, a3, a2
 	add	a0, a0, a1
-	add.uw	a0, a3, a0
+	add	a0, a0, a3
 	ret
 
 func000000000000001f:
@@ -30,7 +30,7 @@ func0000000000000070:
 	li	a3, 4
 	subw	a3, a3, a2
 	add	a0, a0, a1
-	add.uw	a0, a3, a0
+	add	a0, a0, a3
 	ret
 
 func000000000000002b:
@@ -75,6 +75,6 @@ func000000000000007f:
 	li	a3, 24
 	subw	a3, a3, a2
 	add	a0, a0, a1
-	add.uw	a0, a3, a0
+	add	a0, a0, a3
 	ret
 

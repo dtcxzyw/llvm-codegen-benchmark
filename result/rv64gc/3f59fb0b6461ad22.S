@@ -1,12 +1,12 @@
 func000000000000001d:
 	srliw	a1, a1, 1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	mul	a0, a0, a1
 	ret
 
 func000000000000001c:
 	srliw	a1, a1, 1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	mul	a0, a0, a1
 	ret
 

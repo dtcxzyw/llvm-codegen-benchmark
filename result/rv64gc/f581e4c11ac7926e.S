@@ -10,8 +10,6 @@ func000000000000000f:
 func000000000000007b:
 	li	a3, 32
 	subw	a3, a3, a2
-	slli	a3, a3, 32
-	srli	a3, a3, 32
 	add	a0, a0, a1
 	add	a0, a0, a3
 	ret
@@ -33,8 +31,6 @@ func000000000000001b:
 func0000000000000070:
 	li	a3, 4
 	subw	a3, a3, a2
-	slli	a3, a3, 32
-	srli	a3, a3, 32
 	add	a0, a0, a1
 	add	a0, a0, a3
 	ret
@@ -87,8 +83,6 @@ func0000000000000033:
 func000000000000007f:
 	li	a3, 24
 	subw	a3, a3, a2
-	slli	a3, a3, 32
-	srli	a3, a3, 32
 	add	a0, a0, a1
 	add	a0, a0, a3
 	ret

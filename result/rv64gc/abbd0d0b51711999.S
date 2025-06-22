@@ -10,8 +10,7 @@ func000000000000000f:
 func000000000000007c:
 	li	a2, 4
 	subw	a2, a2, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 29
+	slli	a2, a2, 3
 	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
@@ -19,8 +18,7 @@ func000000000000007c:
 func000000000000007f:
 	li	a2, 2
 	subw	a2, a2, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 31
+	slli	a2, a2, 1
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret

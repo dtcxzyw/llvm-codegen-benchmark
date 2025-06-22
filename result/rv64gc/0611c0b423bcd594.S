@@ -25,7 +25,7 @@ func0000000000000075:
 	blt	a3, a2, .LBB2_2
 	li	a2, 3
 .LBB2_2:
-	addi	a2, a2, 10
+	addiw	a2, a2, 10
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

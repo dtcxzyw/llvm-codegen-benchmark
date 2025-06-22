@@ -31,9 +31,7 @@ func0000000000000001:
 
 func000000000000001d:
 	li	a1, 64
-	subw	a1, a1, a0
-	slli	a1, a1, 32
-	srli	a0, a1, 32
+	subw	a0, a1, a0
 	addi	a0, a0, -12
 	ret
 

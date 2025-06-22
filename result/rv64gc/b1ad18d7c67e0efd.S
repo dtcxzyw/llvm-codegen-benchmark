@@ -26,14 +26,11 @@ func000000000000005f:
 	add	a1, a1, a2
 	lui	a2, 4112
 	addi	a3, a3, -241
-	addi	a2, a2, 257
 	and	a1, a1, a3
+	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 26
-	li	a2, 8
-	subw	a2, a2, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 32
-	add	a0, a0, a2
+	sub	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 

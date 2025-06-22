@@ -10,6 +10,6 @@ func000000000000001f:
 	mul	a3, a3, a4
 	subw	a2, a2, a3
 	sub	a0, a0, a1
-	add.uw	a0, a2, a0
+	add	a0, a0, a2
 	ret
 

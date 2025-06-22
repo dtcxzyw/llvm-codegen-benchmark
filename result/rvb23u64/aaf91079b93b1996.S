@@ -9,7 +9,7 @@ func000000000000000c:
 func000000000000001e:
 	sext.w	a1, a1
 	max	a1, a1, zero
-	addi	a1, a1, 5
+	addiw	a1, a1, 5
 	mul	a0, a0, a1
 	ret
 
@@ -33,7 +33,7 @@ func000000000000001d:
 	sext.w	a1, a1
 	li	a2, 3
 	max	a1, a1, a2
-	addi	a1, a1, 10
+	addiw	a1, a1, 10
 	mul	a0, a0, a1
 	ret
 

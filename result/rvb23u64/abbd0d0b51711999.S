@@ -8,14 +8,14 @@ func000000000000000f:
 func000000000000007c:
 	li	a2, 4
 	subw	a2, a2, a1
-	sh3add.uw	a0, a2, a0
+	sh3add	a0, a2, a0
 	addi	a0, a0, 32
 	ret
 
 func000000000000007f:
 	li	a2, 2
 	subw	a2, a2, a1
-	sh1add.uw	a0, a2, a0
+	sh1add	a0, a2, a0
 	addi	a0, a0, 4
 	ret
 

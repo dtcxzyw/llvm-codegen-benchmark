@@ -11,8 +11,6 @@ func0000000000000010:
 	srli	a3, a3, 36
 	mul	a3, a3, a4
 	subw	a2, a2, a3
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -33,8 +31,6 @@ func000000000000001d:
 	srli	a3, a3, 47
 	mul	a3, a3, a4
 	subw	a2, a2, a3
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

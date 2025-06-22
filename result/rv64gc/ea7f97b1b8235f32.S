@@ -1,8 +1,6 @@
 func00000000000001c0:
 	li	a3, 4
 	subw	a3, a3, a2
-	slli	a3, a3, 32
-	srli	a3, a3, 32
 	add	a0, a0, a1
 	add	a0, a0, a3
 	addi	a0, a0, -1
@@ -11,8 +9,6 @@ func00000000000001c0:
 func00000000000001fe:
 	li	a3, 24
 	subw	a3, a3, a2
-	slli	a3, a3, 32
-	srli	a3, a3, 32
 	add	a0, a0, a1
 	add	a0, a0, a3
 	addi	a0, a0, -8

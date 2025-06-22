@@ -8,8 +8,6 @@ func0000000000000010:
 	li	a3, 50
 	mul	a2, a2, a3
 	subw	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	add	a0, a0, a1
 	addi	a0, a0, -50
 	ret
@@ -27,8 +25,6 @@ func000000000000001d:
 	lui	a3, 1048544
 	addi	a3, a3, 30
 	subw	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	add	a0, a0, a3
 	add	a0, a0, a1
 	ret

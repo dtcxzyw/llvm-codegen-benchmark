@@ -16,9 +16,7 @@ func000000000000001f:
 	mulhu	a4, a1, a4
 	subw	a2, a2, a3
 	sub	a1, a1, a4
-	slli	a2, a2, 32
 	srli	a1, a1, 1
-	srli	a2, a2, 32
 	add	a1, a1, a4
 	srli	a1, a1, 15
 	mul	a1, a1, a5

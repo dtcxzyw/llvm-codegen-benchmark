@@ -8,9 +8,9 @@ func000000000000005d:
 	srli	a2, a2, 47
 	mul	a2, a2, a3
 	lui	a3, 1048544
-	subw	a1, a1, a2
-	add.uw	a0, a1, a0
 	addi	a3, a3, 30
+	subw	a1, a1, a2
 	add	a0, a0, a3
+	add	a0, a0, a1
 	ret
 
