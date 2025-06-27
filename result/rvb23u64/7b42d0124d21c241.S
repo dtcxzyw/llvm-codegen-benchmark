@@ -13,7 +13,7 @@ func0000000000000038:
 	sext.w	a2, a2
 	li	a3, 14
 	czero.eqz	a2, a3, a2
-	addiw	a2, a2, 111
+	addi	a2, a2, 111
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -24,7 +24,7 @@ func0000000000000039:
 	addi	a2, a2, -200
 	li	a3, -8
 	czero.eqz	a2, a3, a2
-	addiw	a2, a2, 10
+	addi	a2, a2, 10
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

@@ -5,8 +5,9 @@ func000000000000194a:
 	slti	a0, a0, -1085
 	slti	a1, a1, 61
 	xori	a1, a1, 1
-	or	a1, a1, a2
+	czero.eqz	a2, a0, a2
 	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000426:

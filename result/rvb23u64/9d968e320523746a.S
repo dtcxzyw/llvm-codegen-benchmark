@@ -36,11 +36,13 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
+	andi	a1, a1, 1
 	fli.d	fa5, 1.0
-	fle.d	a2, fa5, fa0
-	or	a1, a1, a2
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	fle.d	a2, fa5, fa0
+	czero.eqz	a1, a0, a1
+	and	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000000e:

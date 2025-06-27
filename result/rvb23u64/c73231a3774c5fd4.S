@@ -3,7 +3,7 @@ func0000000000000014:
 	andi	a2, a2, 1
 	li	a3, -128
 	czero.nez	a2, a3, a2
-	addiw	a2, a2, 256
+	addi	a2, a2, 256
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -22,7 +22,7 @@ func0000000000000005:
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
-	ori	a2, a2, 1
+	addiw	a2, a2, 1
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -33,7 +33,7 @@ func0000000000000001:
 	andi	a2, a2, 1
 	li	a3, -3
 	czero.nez	a2, a3, a2
-	addiw	a2, a2, 4
+	addi	a2, a2, 4
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -44,7 +44,7 @@ func0000000000000006:
 	andi	a2, a2, 1
 	li	a3, 2
 	czero.nez	a2, a3, a2
-	ori	a2, a2, 13
+	addiw	a2, a2, 13
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -54,7 +54,7 @@ func0000000000000007:
 	andi	a2, a2, 1
 	li	a3, -4
 	czero.nez	a2, a3, a2
-	addiw	a2, a2, 12
+	addi	a2, a2, 12
 	slt	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1

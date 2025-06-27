@@ -22,21 +22,25 @@ func0000000000000002:
 	ret
 
 func000000000000000d:
+	andi	a1, a1, 1
 	fli.s	fa5, 1.0
+	xori	a0, a0, 1
 	flt.s	a2, fa0, fa5
 	xori	a2, a2, 1
-	or	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a1, a0, a1
+	and	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000007:
+	andi	a1, a1, 1
 	fli.s	fa5, 1.0
+	xori	a0, a0, 1
 	feq.s	a2, fa0, fa5
 	xori	a2, a2, 1
-	or	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a1, a0, a1
+	and	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000000b:
@@ -48,11 +52,13 @@ func000000000000000b:
 	ret
 
 func0000000000000008:
+	andi	a1, a1, 1
 	fli.s	fa5, 1.0
-	feq.s	a2, fa0, fa5
-	or	a1, a1, a2
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	feq.s	a2, fa0, fa5
+	czero.eqz	a1, a0, a1
+	and	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000000e:
@@ -69,11 +75,13 @@ func000000000000000a:
 	ret
 
 func0000000000000005:
+	andi	a1, a1, 1
 	fli.s	fa5, 0.5
+	xori	a0, a0, 1
 	fle.s	a2, fa0, fa5
 	xori	a2, a2, 1
-	or	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a1, a0, a1
+	and	a0, a0, a2
+	or	a0, a0, a1
 	ret
 

@@ -1,26 +1,26 @@
 func0000000000000194:
 	binvi	a2, a0, 39
-	snez	a2, a2
-	or	a1, a1, a2
-	li	a2, 1
-	bseti	a2, a2, 39
-	sltu	a0, a0, a2
+	li	a3, 1
+	bseti	a3, a3, 39
+	sltu	a0, a0, a3
+	czero.eqz	a2, a0, a2
 	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func000000000000018c:
 	addi	a2, a0, -216
 	addi	a0, a0, -144
-	snez	a2, a2
-	or	a1, a1, a2
 	snez	a0, a0
+	czero.eqz	a2, a0, a2
 	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000034:
-	seqz	a2, a0
-	or	a1, a1, a2
-	sltiu	a0, a0, 4
-	and	a0, a0, a1
+	sltiu	a2, a0, 4
+	czero.nez	a0, a2, a0
+	and	a1, a1, a2
+	or	a0, a0, a1
 	ret
 
