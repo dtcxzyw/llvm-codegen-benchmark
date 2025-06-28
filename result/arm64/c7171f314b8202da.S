@@ -1,7 +1,7 @@
 func0000000000000007:
 	mov	w8, #1
 	bfi	w8, w0, #1, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:

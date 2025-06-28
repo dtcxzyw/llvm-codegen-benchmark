@@ -2,7 +2,7 @@ func0000000000000001:
 	and	w8, w1, #0x2
 	mvn	w9, w0
 	bfxil	w8, w9, #0, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:

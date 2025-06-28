@@ -5,11 +5,11 @@ func000000000000001f:
 
 func0000000000000006:
 	bfi	w1, w0, #6, #26
-	mov	x0, x1
+	mov	w0, w1
 	ret
 
 func0000000000000004:
 	bfi	w1, w0, #6, #26
-	mov	x0, x1
+	mov	w0, w1
 	ret
 

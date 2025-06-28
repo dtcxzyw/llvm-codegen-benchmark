@@ -16,12 +16,12 @@ func0000000000000007:
 	lsr	w8, w1, #7
 	and	w8, w8, #0xe
 	bfi	w8, w0, #4, #2
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000003:
 	ubfx	w8, w1, #29, #1
 	bfi	w8, w0, #1, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

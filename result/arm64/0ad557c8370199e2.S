@@ -31,7 +31,7 @@ func0000000000000009:
 	lsl	w8, w1, #2
 	and	w8, w8, #0x3fffffe0
 	bfxil	w8, w0, #27, #5
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:

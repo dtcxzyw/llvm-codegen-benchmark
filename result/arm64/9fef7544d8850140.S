@@ -1,7 +1,7 @@
 func0000000000000005:
 	add	w8, w1, #1
 	bfi	w8, w0, #30, #2
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000001f:

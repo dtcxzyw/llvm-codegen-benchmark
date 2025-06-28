@@ -3,6 +3,6 @@ func0000000000000001:
 	tst	w1, #0x1
 	csel	w8, w8, wzr, ne
 	bfxil	w8, w0, #0, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

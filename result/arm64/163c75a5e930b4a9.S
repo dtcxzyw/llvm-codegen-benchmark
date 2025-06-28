@@ -3,7 +3,7 @@ func000000000000001f:
 	mov	w8, #128
 	add	w9, w9, #22
 	bfxil	w8, w9, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:

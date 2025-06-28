@@ -8,6 +8,6 @@ func0000000000000000:
 	lsr	x8, x8, #39
 	msub	w8, w8, w9, w0
 	add	x0, x1, x2
-	mov	x1, x8
+	mov	w1, w8
 	ret
 

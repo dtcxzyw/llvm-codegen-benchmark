@@ -1,6 +1,6 @@
 func0000000000000000:
-	mov	x8, x0
+	mov	w8, w0
 	add	w0, w1, w2
-	mov	x1, x8
+	mov	w1, w8
 	ret
 

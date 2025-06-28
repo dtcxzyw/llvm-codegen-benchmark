@@ -1,7 +1,7 @@
 func000000000000001f:
 	ubfiz	w8, w0, #1, #1
 	bfi	w8, w0, #2, #6
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:

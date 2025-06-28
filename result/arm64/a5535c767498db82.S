@@ -3,7 +3,7 @@ func0000000000000001:
 	sub	w9, w0, #1
 	and	w8, w8, #0x38
 	bfxil	w8, w9, #0, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000009:
@@ -18,7 +18,7 @@ func0000000000000007:
 	add	w9, w0, #4
 	and	w8, w8, #0x3ffe000
 	bfxil	w8, w9, #0, #13
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:

@@ -7,6 +7,6 @@ func0000000000000007:
 func0000000000000005:
 	and	w8, w1, #0xf0000000
 	bfxil	w8, w0, #0, #26
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

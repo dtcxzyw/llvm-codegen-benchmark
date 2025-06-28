@@ -1,7 +1,7 @@
 func0000000000000001:
 	and	w8, w1, #0x1
 	bfi	w8, w0, #1, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:

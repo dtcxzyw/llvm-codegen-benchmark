@@ -16,6 +16,6 @@ func0000000000000003:
 	eor	w8, w1, #0x1
 	and	w8, w8, #0xff
 	bfi	w8, w0, #10, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

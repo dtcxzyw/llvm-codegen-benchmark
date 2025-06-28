@@ -2,7 +2,7 @@ func0000000000000033:
 	lsl	w8, w1, #16
 	orr	w8, w8, w2, lsl #8
 	bfxil	w8, w0, #0, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000003f:
@@ -16,7 +16,7 @@ func000000000000002f:
 	lsl	w8, w1, #8
 	orr	w8, w8, w2, lsl #16
 	bfxil	w8, w0, #0, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:
@@ -30,7 +30,7 @@ func000000000000000f:
 	lsl	w8, w1, #15
 	orr	w8, w8, w2, lsl #20
 	bfxil	w8, w0, #0, #4
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000003b:

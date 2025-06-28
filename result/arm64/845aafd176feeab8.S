@@ -43,7 +43,7 @@ func000000000000000d:
 	cmp	w1, #1
 	csel	w8, wzr, w8, lt
 	bfxil	w8, w0, #0, #15
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000002:

@@ -18,13 +18,13 @@ func0000000000000009:
 	movk	w9, #1, lsl #16
 	and	w8, w8, w9
 	bfi	w8, w0, #7, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000b:
 	orr	w8, w1, w2
 	bfi	w8, w0, #17, #5
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:
@@ -35,13 +35,13 @@ func0000000000000007:
 func000000000000000d:
 	orr	w8, w1, w2
 	bfi	w8, w0, #7, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:
 	orr	w8, w1, w2
 	and	w8, w8, #0xff
 	bfi	w8, w0, #8, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

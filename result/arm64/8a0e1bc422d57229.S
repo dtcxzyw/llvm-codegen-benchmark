@@ -1,7 +1,7 @@
 func0000000000000039:
 	orr	w8, w1, w2, lsl #1
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000003f:
@@ -13,25 +13,25 @@ func000000000000003f:
 func000000000000003d:
 	orr	w8, w1, w2, lsl #1
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000002d:
 	orr	w8, w1, w2, lsl #16
 	bfi	w8, w0, #24, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000009:
 	orr	w8, w1, w2, lsl #3
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:
 	orr	w8, w1, w2, lsl #16
 	bfi	w8, w0, #24, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000002f:

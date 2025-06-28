@@ -3,7 +3,7 @@ func0000000000000001:
 	csel	w8, w0, w2, ne
 	and	w8, w8, #0x2
 	bfxil	w8, w0, #0, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:

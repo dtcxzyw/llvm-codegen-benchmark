@@ -6,6 +6,6 @@ func0000000000000019:
 func000000000000000d:
 	ubfx	w8, w1, #5, #3
 	bfi	w8, w0, #3, #2
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

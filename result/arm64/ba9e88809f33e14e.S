@@ -14,13 +14,13 @@ func0000000000000003:
 	mov	w8, #208
 	add	w9, w0, #1
 	bfxil	w8, w9, #0, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:
 	mov	w8, #16
 	add	w9, w0, #1
 	bfxil	w8, w9, #0, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

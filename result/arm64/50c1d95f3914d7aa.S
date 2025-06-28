@@ -7,6 +7,6 @@ func0000000000000001:
 func0000000000000011:
 	lsr	x8, x1, #16
 	bfxil	w8, w0, #0, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

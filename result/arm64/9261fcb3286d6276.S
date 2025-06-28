@@ -2,7 +2,7 @@ func000000000000000f:
 	lsl	w8, w1, #16
 	and	w8, w8, #0x7f000000
 	bfxil	w8, w0, #0, #24
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:

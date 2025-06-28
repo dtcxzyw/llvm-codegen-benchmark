@@ -14,7 +14,7 @@ func0000000000000007:
 	add	w8, w1, #4048, lsl #12
 	and	w8, w8, #0xff0000
 	bfxil	w8, w0, #0, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000002:

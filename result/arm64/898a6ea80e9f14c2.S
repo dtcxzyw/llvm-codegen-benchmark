@@ -1,7 +1,7 @@
 func0000000000000004:
-	mov	x8, x0
+	mov	w8, w0
 	cmp	w1, #768
 	cset	w0, lo
-	mov	x1, x8
+	mov	w1, w8
 	ret
 

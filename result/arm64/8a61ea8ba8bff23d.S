@@ -11,7 +11,7 @@ func000000000000001f:
 	add	w8, w8, #4048, lsl #12
 	and	w8, w8, #0xff0000
 	bfxil	w8, w0, #0, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:
@@ -28,6 +28,6 @@ func000000000000000b:
 	add	w8, w8, #3, lsl #12
 	and	w8, w8, #0xff00
 	bfxil	w8, w0, #0, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

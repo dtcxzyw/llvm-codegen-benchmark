@@ -16,7 +16,7 @@ func0000000000000003:
 	and	w9, w1, w9
 	orr	w8, w9, w8
 	bfxil	w8, w0, #0, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000002:

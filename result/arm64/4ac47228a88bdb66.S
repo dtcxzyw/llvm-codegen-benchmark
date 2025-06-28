@@ -6,13 +6,13 @@ func0000000000000004:
 func0000000000000001:
 	mov	w8, #48
 	bfxil	w8, w0, #4, #4
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:
 	mov	w8, #-72
 	bfxil	w8, w0, #2, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000d:

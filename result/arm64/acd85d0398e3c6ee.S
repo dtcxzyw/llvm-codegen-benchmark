@@ -4,7 +4,7 @@ func0000000000000003:
 	and	w8, w8, #0xfffc1fff
 	orr	w8, w9, w8
 	bfxil	w8, w0, #0, #9
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:

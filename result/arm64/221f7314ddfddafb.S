@@ -11,6 +11,6 @@ func0000000000000046:
 	cmp	w1, #1
 	csel	w8, w8, wzr, hi
 	bfxil	w8, w0, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

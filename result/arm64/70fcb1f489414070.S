@@ -1,7 +1,7 @@
 func0000000000000017:
 	mov	w8, #-32
 	bfxil	w8, w0, #4, #4
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000015:

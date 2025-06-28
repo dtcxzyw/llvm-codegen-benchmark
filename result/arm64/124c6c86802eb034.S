@@ -1,13 +1,13 @@
 func0000000000000009:
 	orr	w8, w1, w2
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:
 	orr	w8, w1, w2
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000f:
@@ -19,13 +19,13 @@ func000000000000000f:
 func000000000000000d:
 	orr	w8, w1, w2
 	bfi	w8, w0, #16, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000005:
 	orr	w8, w1, w2
 	bfi	w8, w0, #24, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000006:

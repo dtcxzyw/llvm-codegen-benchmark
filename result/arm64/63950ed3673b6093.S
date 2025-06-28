@@ -11,13 +11,13 @@ func0000000000000005:
 func0000000000000007:
 	and	w8, w1, #0x3f
 	bfi	w8, w0, #6, #6
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000003:
 	and	w8, w1, #0x3f
 	bfi	w8, w0, #6, #6
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:

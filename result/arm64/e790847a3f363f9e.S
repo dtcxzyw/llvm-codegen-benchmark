@@ -1,7 +1,7 @@
 func0000000000000001:
 	asr	w8, w1, #20
 	bfxil	w8, w0, #0, #5
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000003:

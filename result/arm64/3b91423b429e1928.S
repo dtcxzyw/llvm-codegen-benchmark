@@ -16,6 +16,6 @@ func0000000000000005:
 	add	w8, w9, w8
 	and	w8, w8, #0x7fff8000
 	bfxil	w8, w0, #0, #15
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

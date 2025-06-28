@@ -18,6 +18,6 @@ func0000000000000005:
 	lsr	w8, w0, #2
 	and	w8, w8, #0xfe0
 	bfxil	w8, w0, #1, #5
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

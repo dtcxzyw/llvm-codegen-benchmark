@@ -3,7 +3,7 @@ func0000000000000001:
 	orr	w9, w1, w0
 	movk	w8, #3, lsl #16
 	bfxil	w8, w9, #0, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000003:

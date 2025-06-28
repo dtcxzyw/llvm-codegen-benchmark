@@ -8,7 +8,7 @@ func0000000000000001:
 func000000000000000d:
 	ubfiz	w8, w0, #1, #2
 	bfxil	w8, w0, #4, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:

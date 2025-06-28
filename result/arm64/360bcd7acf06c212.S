@@ -7,7 +7,7 @@ func000000000000000f:
 	lsr	x8, x1, #32
 	lsr	w9, w0, #4
 	bfi	w8, w9, #4, #4
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:

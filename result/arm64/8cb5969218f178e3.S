@@ -9,6 +9,6 @@ func0000000000000001:
 	lsl	w8, w1, #16
 	and	w8, w8, #0x80000000
 	bfi	w8, w0, #13, #15
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

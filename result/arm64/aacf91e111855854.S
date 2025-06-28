@@ -3,7 +3,7 @@ func0000000000000009:
 	add	w8, w8, #448
 	and	w8, w8, #0x1c0
 	bfxil	w8, w0, #0, #3
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000011:
@@ -11,7 +11,7 @@ func0000000000000011:
 	add	w8, w8, #2
 	and	w8, w8, #0xe
 	bfxil	w8, w0, #0, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:
@@ -19,7 +19,7 @@ func0000000000000001:
 	add	w8, w8, #14
 	and	w8, w8, #0xe
 	bfxil	w8, w0, #0, #1
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:
@@ -35,7 +35,7 @@ func000000000000001f:
 	add	w8, w8, #16
 	and	w8, w8, #0x30
 	bfxil	w8, w0, #0, #4
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000a:

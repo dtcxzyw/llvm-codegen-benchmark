@@ -1,7 +1,7 @@
 func0000000000000007:
 	ubfx	w8, w0, #15, #1
 	bfi	w8, w0, #1, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000f:
@@ -15,6 +15,6 @@ func000000000000000d:
 	and	w8, w0, #0xffff
 	lsl	w8, w8, #13
 	bfxil	w8, w0, #3, #13
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

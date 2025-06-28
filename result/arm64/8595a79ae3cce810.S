@@ -20,7 +20,7 @@ func0000000000000011:
 	cmp	x1, #7
 	csel	w8, w8, wzr, hi
 	bfxil	w8, w0, #0, #31
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000002:
@@ -44,7 +44,7 @@ func0000000000000019:
 	cmp	x1, #0
 	csel	w8, wzr, w8, eq
 	bfxil	w8, w0, #0, #31
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000d:
@@ -53,6 +53,6 @@ func000000000000000d:
 	mov	w9, #-1073741824
 	csel	w8, w9, w8, lt
 	bfxil	w8, w0, #0, #24
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

@@ -11,19 +11,19 @@ func0000000000000004:
 func0000000000000017:
 	lsl	w8, w1, #16
 	bfi	w8, w0, #8, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000001f:
 	ubfiz	w8, w1, #9, #16
 	bfi	w8, w0, #1, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000005f:
 	lsl	w8, w1, #16
 	bfi	w8, w0, #8, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000019:
@@ -49,6 +49,6 @@ func0000000000000077:
 func0000000000000007:
 	lsl	w8, w1, #24
 	bfi	w8, w0, #16, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

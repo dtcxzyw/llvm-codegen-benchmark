@@ -14,7 +14,7 @@ func0000000000000005:
 	lsr	x8, x1, #32
 	lsr	w9, w0, #10
 	bfi	w8, w9, #10, #16
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000009:

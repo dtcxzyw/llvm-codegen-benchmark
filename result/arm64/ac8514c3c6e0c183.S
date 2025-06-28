@@ -25,6 +25,6 @@ func0000000000000009:
 func0000000000000001:
 	and	w8, w1, #0xff
 	bfi	w8, w0, #8, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

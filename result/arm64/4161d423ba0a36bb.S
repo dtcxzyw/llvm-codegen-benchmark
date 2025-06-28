@@ -3,6 +3,6 @@ func0000000000000003:
 	mov	w8, #-2147483648
 	csel	w8, wzr, w8, eq
 	bfxil	w8, w0, #0, #31
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

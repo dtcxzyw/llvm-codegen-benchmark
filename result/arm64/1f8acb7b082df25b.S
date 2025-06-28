@@ -11,7 +11,7 @@ func0000000000000009:
 	cmp	x1, #128
 	csel	w8, wzr, w8, lo
 	bfxil	w8, w0, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000011:
@@ -19,7 +19,7 @@ func0000000000000011:
 	cmp	x1, #127
 	csel	w8, w8, wzr, hi
 	bfxil	w8, w0, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000031:
@@ -27,7 +27,7 @@ func0000000000000031:
 	cmp	x1, #127
 	csel	w8, w8, wzr, hi
 	bfxil	w8, w0, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000029:
@@ -35,7 +35,7 @@ func0000000000000029:
 	cmp	x1, #128
 	csel	w8, wzr, w8, lo
 	bfxil	w8, w0, #0, #7
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000000d:

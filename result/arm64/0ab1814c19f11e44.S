@@ -14,6 +14,6 @@ func0000000000000001:
 	mov	w8, #-2147483648
 	orr	w9, w0, w1
 	bfxil	w8, w9, #1, #31
-	mov	x0, x8
+	mov	w0, w8
 	ret
 

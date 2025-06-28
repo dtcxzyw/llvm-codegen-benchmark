@@ -1,7 +1,7 @@
 func0000000000000005:
 	mov	w8, #1048576
 	bfxil	w8, w0, #0, #20
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000001:
@@ -12,13 +12,13 @@ func0000000000000001:
 func0000000000000007:
 	mov	w8, #1191182336
 	bfxil	w8, w0, #0, #24
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000003:
 	mov	w8, #1191182336
 	bfxil	w8, w0, #0, #24
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000000:

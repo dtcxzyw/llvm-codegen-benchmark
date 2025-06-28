@@ -18,6 +18,6 @@ func0000000000000011:
 func0000000000000009:
 	orr	w8, w0, w1
 	bfi	w2, w8, #4, #28
-	mov	x0, x2
+	mov	w0, w2
 	ret
 

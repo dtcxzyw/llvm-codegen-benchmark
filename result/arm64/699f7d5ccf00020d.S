@@ -1,13 +1,13 @@
 func000000000000001f:
 	ubfiz	w8, w1, #16, #8
 	bfi	w8, w0, #8, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000017:
 	lsl	w8, w1, #24
 	bfi	w8, w0, #16, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000007f:
@@ -24,13 +24,13 @@ func000000000000001d:
 func000000000000005f:
 	lsl	w8, w1, #24
 	bfi	w8, w0, #3, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func0000000000000007:
 	lsl	w8, w1, #25
 	bfi	w8, w0, #9, #8
-	mov	x0, x8
+	mov	w0, w8
 	ret
 
 func000000000000003f:

@@ -12,7 +12,7 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	mov	x0, x2
+	mov	w0, w2
 	bfi	w0, w1, #8, #24
 	ret
 
