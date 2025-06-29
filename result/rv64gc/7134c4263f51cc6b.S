@@ -133,21 +133,21 @@ func00000000000000c1:
 	ret
 
 func00000000000000d4:
-	mv	a1, a0
-	sext.w	a0, a0
+	sext.w	a1, a0
 	lui	a2, 4096
-	blt	a0, a2, .LBB9_2
-	li	a0, 8
-	srliw	a1, a1, 16
-	beqz	a1, .LBB9_3
+	blt	a1, a2, .LBB9_2
+	li	a1, 8
+	srliw	a0, a0, 16
+	beqz	a0, .LBB9_3
 	j	.LBB9_4
 .LBB9_2:
-	li	a0, 6
-	srliw	a1, a1, 16
-	bnez	a1, .LBB9_4
+	li	a1, 6
+	srliw	a0, a0, 16
+	bnez	a0, .LBB9_4
 .LBB9_3:
-	li	a0, 4
+	li	a1, 4
 .LBB9_4:
+	mv	a0, a1
 	ret
 
 func0000000000000141:
@@ -261,21 +261,21 @@ func00000000000000c6:
 	ret
 
 func0000000000000308:
-	mv	a1, a0
-	sext.w	a0, a0
+	sext.w	a1, a0
 	li	a2, 511
-	bltu	a2, a0, .LBB19_2
-	li	a0, 2
-	srliw	a1, a1, 14
-	bnez	a1, .LBB19_3
+	bltu	a2, a1, .LBB19_2
+	li	a1, 2
+	srliw	a0, a0, 14
+	bnez	a0, .LBB19_3
 	j	.LBB19_4
 .LBB19_2:
-	li	a0, 11
-	srliw	a1, a1, 14
-	beqz	a1, .LBB19_4
+	li	a1, 11
+	srliw	a0, a0, 14
+	beqz	a0, .LBB19_4
 .LBB19_3:
-	li	a0, 1
+	li	a1, 1
 .LBB19_4:
+	mv	a0, a1
 	ret
 
 func0000000000000086:

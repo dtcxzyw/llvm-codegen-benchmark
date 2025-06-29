@@ -50,23 +50,23 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	andi	a2, a1, 1
-	mv	a1, a0
-	bnez	a2, .LBB4_2
-	li	a0, 203
-	slli	a0, a0, 49
-	srli	a1, a1, 31
-	beqz	a1, .LBB4_3
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_2
+	li	a1, 203
+	slli	a1, a1, 49
+	srli	a0, a0, 31
+	beqz	a0, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	li	a0, 235
-	slli	a0, a0, 49
-	srli	a1, a1, 31
-	bnez	a1, .LBB4_4
+	li	a1, 235
+	slli	a1, a1, 49
+	srli	a0, a0, 31
+	bnez	a0, .LBB4_4
 .LBB4_3:
-	li	a0, 251
-	slli	a0, a0, 49
+	li	a1, 251
+	slli	a1, a1, 49
 .LBB4_4:
+	mv	a0, a1
 	ret
 
 func0000000000000008:

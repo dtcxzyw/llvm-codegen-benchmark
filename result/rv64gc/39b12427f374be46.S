@@ -1,21 +1,21 @@
 func0000000000000001:
 	mv	a3, a0
-	andi	a0, a2, 1
-	andi	a2, a1, 1
-	bnez	a0, .LBB0_2
+	andi	a2, a2, 1
+	andi	a1, a1, 1
+	bnez	a2, .LBB0_2
 	li	a0, 2
-	zext.b	a1, a3
-	bnez	a2, .LBB0_3
+	zext.b	a2, a3
+	bnez	a1, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
 	li	a0, 6
-	zext.b	a1, a3
-	beqz	a2, .LBB0_4
+	zext.b	a2, a3
+	beqz	a1, .LBB0_4
 .LBB0_3:
 	li	a0, 7
 .LBB0_4:
-	li	a2, 79
-	beq	a1, a2, .LBB0_6
+	li	a1, 79
+	beq	a2, a1, .LBB0_6
 	ret
 .LBB0_6:
 	li	a0, 8

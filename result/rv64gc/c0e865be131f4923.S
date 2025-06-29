@@ -11,20 +11,20 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	mv	a2, a0
-	sext.w	a0, a1
-	lui	a1, 2
-	beqz	a0, .LBB1_2
-	addi	a0, a1, 400
-	andi	a2, a2, 16
-	bnez	a2, .LBB1_3
+	sext.w	a1, a1
+	lui	a2, 2
+	beqz	a1, .LBB1_2
+	addi	a1, a2, 400
+	andi	a0, a0, 16
+	bnez	a0, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addi	a0, a1, 392
-	andi	a2, a2, 16
-	beqz	a2, .LBB1_4
+	addi	a1, a2, 392
+	andi	a0, a0, 16
+	beqz	a0, .LBB1_4
 .LBB1_3:
-	addi	a0, a1, 396
+	addi	a1, a2, 396
 .LBB1_4:
+	mv	a0, a1
 	ret
 
