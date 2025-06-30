@@ -1,8 +1,7 @@
 func0000000000000008:
 	cmn	x2, x1
 	cset	w8, hs
-	and	w8, w0, w8
-	and	w0, w8, #0x1
+	and	w0, w0, w8
 	ret
 
 func0000000000000005:
