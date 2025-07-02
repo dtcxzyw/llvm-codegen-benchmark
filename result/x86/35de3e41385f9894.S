@@ -3,20 +3,21 @@ func000000000000000c:
 	imulq	$-2004318071, %rax, %rcx
 	shrq	$32, %rcx
 	addl	%ecx, %eax
+	sarl	$5, %eax
 	movl	%eax, %ecx
 	shrl	$31, %ecx
-	sarl	$5, %eax
-	addl	%ecx, %eax
-	cltq
-	imulq	$-2004318071, %rax, %rcx
-	shrq	$32, %rcx
 	addl	%eax, %ecx
-	movl	%ecx, %edx
+	movslq	%ecx, %rcx
+	imulq	$-2004318071, %rcx, %rax
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	sarl	$5, %eax
+	movl	%eax, %edx
 	shrl	$31, %edx
-	sarl	$5, %ecx
-	addl	%edx, %ecx
-	imull	$60, %ecx, %ecx
-	subl	%ecx, %eax
+	addl	%eax, %edx
+	imull	$60, %edx, %edx
+	xorl	%eax, %eax
+	cmpl	%edx, %ecx
 	cmovnel	%edi, %eax
 	testb	$1, %sil
 	cmovnel	%edi, %eax

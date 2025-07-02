@@ -1,6 +1,5 @@
 func0000000000000000:
-	eor	w8, w2, #0x1
-	and	w8, w1, w8
+	bic	w8, w1, w2
 	and	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

@@ -12,7 +12,7 @@ func0000000000000002:
 	add	a1, a1, a3
 	slli	a3, a1, 6
 	slli	a1, a1, 2
-	sub	a1, a1, a3
+	subw	a1, a1, a3
 	addw	a1, a1, a2
 	srai	a0, a0, 63
 	and	a0, a0, a1

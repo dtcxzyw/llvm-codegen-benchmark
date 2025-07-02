@@ -3,11 +3,11 @@ func000000000000018c:
 	imulq	$-2004318071, %rcx, %rax
 	shrq	$32, %rax
 	addl	%ecx, %eax
+	sarl	$5, %eax
 	movl	%eax, %edx
 	shrl	$31, %edx
-	sarl	$5, %eax
-	addl	%edx, %eax
-	imull	$60, %eax, %edx
+	addl	%eax, %edx
+	imull	$60, %edx, %edx
 	xorl	%eax, %eax
 	cmpl	%edx, %ecx
 	cmovnel	%edi, %eax

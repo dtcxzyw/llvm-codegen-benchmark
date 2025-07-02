@@ -1,7 +1,6 @@
 func0000000000000114:
 	sub	w8, w1, #1
-	and	w8, w1, w8
-	cmp	w8, #0
+	tst	w1, w8
 	cset	w8, eq
 	and	w0, w0, w8
 	ret
@@ -15,8 +14,7 @@ func0000000000000014:
 
 func00000000000000b4:
 	sub	w8, w1, #1
-	and	w8, w1, w8
-	cmp	w8, #0
+	tst	w1, w8
 	cset	w8, eq
 	and	w0, w0, w8
 	ret
@@ -30,8 +28,7 @@ func0000000000000034:
 
 func00000000000001b4:
 	sub	w8, w1, #1
-	and	w8, w1, w8
-	cmp	w8, #0
+	tst	w1, w8
 	cset	w8, eq
 	and	w0, w0, w8
 	ret
@@ -46,8 +43,7 @@ func0000000000000001:
 
 func0000000000000134:
 	sub	w8, w1, #1
-	and	w8, w1, w8
-	cmp	w8, #0
+	tst	w1, w8
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

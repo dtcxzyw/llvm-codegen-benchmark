@@ -1,12 +1,12 @@
 func000000000000000a:
 	movslq	%esi, %rax
 	imulq	$1717986919, %rax, %rcx
-	movq	%rcx, %rdx
-	shrq	$63, %rdx
 	sarq	$34, %rcx
-	addl	%edx, %ecx
-	addl	%ecx, %ecx
-	leal	(%rcx,%rcx,4), %ecx
+	movl	%ecx, %edx
+	shrl	$31, %edx
+	addl	%ecx, %edx
+	addl	%edx, %edx
+	leal	(%rdx,%rdx,4), %ecx
 	subl	%ecx, %eax
 	cmpl	$5, %eax
 	setge	%al

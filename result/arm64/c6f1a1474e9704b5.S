@@ -1,9 +1,8 @@
 func000000000000168a:
 	sub	w8, w0, #1
-	cmp	x0, #0
-	and	w8, w0, w8
-	ccmp	w8, #0, #0, gt
-	cset	w0, eq
+	tst	w0, w8
+	ccmp	x0, #0, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000026:
