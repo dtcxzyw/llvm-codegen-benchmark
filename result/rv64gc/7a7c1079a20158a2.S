@@ -1,7 +1,6 @@
 func0000000000000081:
 	or	a0, a0, a1
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	seqz	a0, a0
 	ret
 

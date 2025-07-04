@@ -10,7 +10,6 @@ func0000000000000003:
 
 func00000000000000c3:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	snez	a1, a1
 	slli	a1, a1, 32
 	or	a0, a0, a1

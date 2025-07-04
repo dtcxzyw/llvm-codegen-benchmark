@@ -8,7 +8,6 @@ func0000000000000081:
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	slli	a0, a0, 4
-	srli	a0, a0, 4
 	seqz	a0, a0
 	ret
 

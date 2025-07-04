@@ -48,7 +48,6 @@ func000000000000018c:
 func0000000000000281:
 	zext.b	a0, a0
 	slli	a1, a1, 37
-	srli	a1, a1, 37
 	seqz	a1, a1
 	sltiu	a0, a0, 4
 	or	a0, a0, a1

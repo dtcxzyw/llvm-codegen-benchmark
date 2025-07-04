@@ -59,7 +59,6 @@ func0000000000000126:
 
 func0000000000000c2a:
 	slli	a1, a1, 51
-	srli	a1, a1, 51
 	snez	a1, a1
 	addw	a0, a0, a1
 	sgtz	a0, a0

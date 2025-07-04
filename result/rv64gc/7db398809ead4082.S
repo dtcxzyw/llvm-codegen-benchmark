@@ -22,7 +22,6 @@ func0000000000000010:
 
 func00000000000000c3:
 	slli	a1, a1, 51
-	srli	a1, a1, 51
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret

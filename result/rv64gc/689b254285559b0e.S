@@ -25,7 +25,6 @@ func000000000000010c:
 func0000000000000081:
 	subw	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

@@ -13,7 +13,6 @@ func000000000000048c:
 	addiw	a1, a1, -132
 	slli	a0, a0, 45
 	sltiu	a1, a1, -8
-	srli	a0, a0, 45
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
