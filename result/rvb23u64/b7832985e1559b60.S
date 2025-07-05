@@ -62,7 +62,7 @@ func000000000000014c:
 
 func0000000000000081:
 	lui	a1, 65535
-	zext.h	a2, a0
+	slli	a2, a0, 48
 	slli	a1, a1, 4
 	and	a0, a0, a1
 	xor	a0, a0, a1

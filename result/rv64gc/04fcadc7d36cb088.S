@@ -1,7 +1,6 @@
 func0000000000000318:
-	slli	a1, a1, 48
 	slli	a2, a2, 38
-	srli	a1, a1, 48
+	slli	a1, a1, 48
 	srli	a2, a2, 63
 	and	a0, a0, a2
 	snez	a1, a1
@@ -34,9 +33,8 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	slli	a1, a1, 48
 	lui	a3, 1
-	srli	a1, a1, 48
+	slli	a1, a1, 48
 	and	a2, a2, a3
 	seqz	a2, a2
 	and	a0, a0, a2

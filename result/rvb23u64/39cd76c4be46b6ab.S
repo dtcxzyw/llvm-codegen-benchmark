@@ -9,8 +9,8 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	zext.h	a0, a0
 	sext.w	a2, a2
+	slli	a0, a0, 48
 	addi	a2, a2, -1
 	seqz	a0, a0
 	seqz	a2, a2

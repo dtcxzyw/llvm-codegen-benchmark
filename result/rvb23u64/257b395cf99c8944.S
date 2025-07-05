@@ -9,7 +9,7 @@ func0000000000000074:
 	ret
 
 func0000000000000021:
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	andi	a2, a2, 14
 	snez	a0, a0
 	or	a1, a1, a2

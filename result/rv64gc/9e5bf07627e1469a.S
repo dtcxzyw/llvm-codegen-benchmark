@@ -25,7 +25,6 @@ func000000000000001c:
 
 func0000000000000010:
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 15
@@ -65,7 +64,6 @@ func0000000000000015:
 
 func000000000000001f:
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	seqz	a2, a2
 	xori	a2, a2, 3
 	add	a0, a0, a1

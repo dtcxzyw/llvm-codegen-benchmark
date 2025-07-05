@@ -51,7 +51,6 @@ func000000000000002a:
 func0000000000000188:
 	slli	a1, a0, 34
 	srli	a0, a0, 61
-	srli	a1, a1, 34
 	snez	a1, a1
 	sltiu	a0, a0, 7
 	andn	a0, a1, a0

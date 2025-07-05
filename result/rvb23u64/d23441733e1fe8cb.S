@@ -21,14 +21,12 @@ func0000000000000145:
 func0000000000000021:
 	xor	a0, a0, a1
 	slli	a0, a0, 4
-	srli	a0, a0, 4
 	seqz	a0, a0
 	ret
 
 func0000000000000081:
 	xor	a0, a0, a1
 	slli	a0, a0, 4
-	srli	a0, a0, 4
 	seqz	a0, a0
 	ret
 
@@ -73,7 +71,6 @@ func0000000000000004:
 func0000000000000181:
 	xor	a0, a0, a1
 	slli	a0, a0, 3
-	srli	a0, a0, 3
 	seqz	a0, a0
 	ret
 

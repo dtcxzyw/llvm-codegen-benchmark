@@ -2,7 +2,6 @@ func00000000000000ac:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	snez	a0, a0
 	ret
 
@@ -68,7 +67,6 @@ func0000000000000081:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -109,7 +107,6 @@ func0000000000000021:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

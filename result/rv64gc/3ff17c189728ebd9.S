@@ -1,7 +1,6 @@
 func0000000000000a8c:
-	slli	a0, a0, 48
 	addi	a2, a2, -1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	sltu	a1, a1, a2
@@ -10,9 +9,8 @@ func0000000000000a8c:
 	ret
 
 func000000000000028c:
-	slli	a0, a0, 48
 	addi	a2, a2, -1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	sltu	a1, a1, a2

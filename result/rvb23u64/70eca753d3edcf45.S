@@ -42,7 +42,6 @@ func0000000000000081:
 	add	a0, a0, a2
 	subw	a1, a1, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	seqz	a0, a1
 	ret
 
@@ -50,7 +49,6 @@ func000000000000008c:
 	add	a0, a0, a2
 	subw	a1, a1, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	snez	a0, a1
 	ret
 

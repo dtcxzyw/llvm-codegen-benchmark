@@ -24,7 +24,6 @@ func0000000000000021:
 func000000000000000c:
 	negw	a0, a0
 	slli	a0, a0, 52
-	srli	a0, a0, 52
 	snez	a0, a0
 	ret
 

@@ -21,8 +21,10 @@ func0000000000000042:
 	ret
 
 func0000000000000048:
-	srliw	a0, a0, 12
-	addi	a1, a0, -7
+	srliw	a1, a0, 12
+	srli	a0, a0, 12
+	addi	a1, a1, -7
+	slli	a0, a0, 44
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -1,7 +1,6 @@
 func0000000000000001:
-	slli	a0, a0, 48
 	or	a1, a1, a2
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a0, a0
 	addi	a0, a0, -1
 	lui	a2, 257

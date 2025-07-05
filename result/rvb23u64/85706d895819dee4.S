@@ -1,6 +1,5 @@
 func000000000000018f:
 	slli	a1, a1, 52
-	srli	a1, a1, 52
 	snez	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 2
@@ -8,7 +7,6 @@ func000000000000018f:
 
 func000000000000018d:
 	slli	a1, a1, 52
-	srli	a1, a1, 52
 	snez	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -1

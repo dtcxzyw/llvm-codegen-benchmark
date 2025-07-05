@@ -9,7 +9,6 @@ func0000000000000001:
 	li	a0, 64
 .LBB1_2:
 	slli	a0, a0, 4
-	srli	a0, a0, 4
 	seqz	a0, a0
 	ret
 

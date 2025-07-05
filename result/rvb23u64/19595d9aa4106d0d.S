@@ -10,7 +10,6 @@ func000000000000002c:
 
 func000000000000018f:
 	slli	a2, a2, 52
-	srli	a2, a2, 52
 	snez	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

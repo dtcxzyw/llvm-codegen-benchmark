@@ -9,23 +9,23 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	zext.h	a0, a0
 	andi	a1, a1, 6
+	slli	a0, a0, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	zext.h	a0, a0
 	srli	a1, a1, 12
+	slli	a0, a0, 48
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	zext.h	a0, a0
 	andi	a1, a1, 1
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

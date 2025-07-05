@@ -52,7 +52,6 @@ func0000000000000184:
 func000000000000018c:
 	zext.b	a0, a0
 	slli	a1, a1, 35
-	srli	a1, a1, 35
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

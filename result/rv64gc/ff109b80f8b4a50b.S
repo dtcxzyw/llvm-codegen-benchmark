@@ -1,6 +1,5 @@
 func0000000000000043:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a1, a1
 	slli	a1, a1, 4
 	or	a0, a0, a1

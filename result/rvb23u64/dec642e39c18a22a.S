@@ -1,8 +1,8 @@
 func000000000000002c:
-	zext.h	a1, a0
-	andi	a0, a0, 1
-	seqz	a0, a0
-	snez	a1, a1
+	andi	a1, a0, 1
+	slli	a0, a0, 48
+	seqz	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000028:
 	ret
 
 func000000000000018c:
-	zext.h	a0, a0
-	srli	a1, a0, 11
+	slli	a0, a0, 48
+	srli	a1, a0, 59
 	addi	a1, a1, -27
 	snez	a1, a1
 	snez	a0, a0

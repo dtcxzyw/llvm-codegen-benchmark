@@ -160,7 +160,6 @@ func0000000000000301:
 func0000000000000034:
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a1, a1
 	sltiu	a0, a0, 16
 	or	a0, a0, a1

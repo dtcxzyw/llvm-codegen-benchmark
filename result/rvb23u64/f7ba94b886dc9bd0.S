@@ -36,7 +36,6 @@ func0000000000000028:
 
 func000000000000008c:
 	slli	a2, a2, 33
-	srli	a2, a2, 33
 	snez	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

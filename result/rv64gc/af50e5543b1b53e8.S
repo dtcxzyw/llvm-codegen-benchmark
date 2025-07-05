@@ -1,7 +1,6 @@
 func000000000000048c:
-	slli	a0, a0, 48
 	addiw	a1, a1, -4
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltiu	a1, a1, -2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -20,9 +19,8 @@ func000000000000008c:
 	ret
 
 func000000000000058c:
-	slli	a0, a0, 48
 	sext.w	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	addi	a1, a1, -6
 	snez	a1, a1
 	snez	a0, a0

@@ -12,7 +12,6 @@ func000000000000018c:
 	sext.w	a1, a1
 	slli	a0, a0, 33
 	addi	a1, a1, -1
-	srli	a0, a0, 33
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

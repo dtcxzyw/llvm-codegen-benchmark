@@ -1,6 +1,5 @@
 func0000000000000001:
 	slli	a0, a0, 49
-	srli	a0, a0, 49
 	seqz	a0, a0
 	ret
 
@@ -25,7 +24,6 @@ func0000000000000014:
 
 func0000000000000041:
 	slli	a0, a0, 50
-	srli	a0, a0, 50
 	seqz	a0, a0
 	ret
 

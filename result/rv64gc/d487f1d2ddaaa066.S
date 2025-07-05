@@ -27,7 +27,6 @@ func0000000000000021:
 func000000000000002c:
 	mul	a0, a0, a1
 	slli	a0, a0, 49
-	srli	a0, a0, 49
 	snez	a0, a0
 	ret
 

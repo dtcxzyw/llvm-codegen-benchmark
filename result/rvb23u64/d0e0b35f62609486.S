@@ -7,24 +7,24 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	zext.h	a0, a0
 	andi	a1, a1, 2047
+	slli	a0, a0, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	zext.h	a0, a0
 	andi	a1, a1, 1
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000030c:
-	zext.h	a0, a0
 	zext.b	a1, a1
+	slli	a0, a0, 48
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -32,8 +32,8 @@ func000000000000030c:
 	ret
 
 func0000000000000181:
-	zext.h	a0, a0
 	bexti	a1, a1, 26
+	slli	a0, a0, 48
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

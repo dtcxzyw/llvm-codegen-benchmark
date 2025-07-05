@@ -20,8 +20,8 @@ func0000000000000188:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	mul	a0, a1, a0
-	slli	a0, a0, 2
-	srli	a0, a0, 31
+	srli	a0, a0, 29
+	slli	a0, a0, 31
 	snez	a0, a0
 	ret
 

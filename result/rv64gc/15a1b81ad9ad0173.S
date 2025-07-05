@@ -1,7 +1,6 @@
 func0000000000000021:
-	slli	a0, a0, 48
 	lui	a2, 132
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	and	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
@@ -43,10 +42,8 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	slli	a0, a0, 48
 	slli	a1, a1, 44
-	srli	a0, a0, 48
-	srli	a1, a1, 44
+	slli	a0, a0, 48
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

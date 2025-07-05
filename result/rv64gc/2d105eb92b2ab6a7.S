@@ -1,7 +1,6 @@
 func000000000000002c:
-	slli	a0, a0, 48
 	sext.w	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1
@@ -28,9 +27,8 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	slli	a0, a0, 48
 	sext.w	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1

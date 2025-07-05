@@ -1,7 +1,6 @@
 func0000000000000058:
 	mul	a0, a0, a1
 	slli	a0, a0, 34
-	srli	a0, a0, 34
 	snez	a0, a0
 	ret
 

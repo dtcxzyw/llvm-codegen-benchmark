@@ -21,7 +21,6 @@ func000000000000002c:
 func000000000000018c:
 	slli	a2, a2, 48
 	xor	a0, a0, a1
-	srli	a2, a2, 48
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -47,7 +46,6 @@ func0000000000000109:
 
 func0000000000000184:
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	snez	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

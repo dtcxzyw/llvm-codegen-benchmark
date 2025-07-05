@@ -1,5 +1,5 @@
 func0000000000000302:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	addi	a0, a0, -36
 	snez	a1, a1
 	seqz	a0, a0
@@ -23,14 +23,14 @@ func0000000000000202:
 	ret
 
 func0000000000000102:
-	zext.h	a0, a0
 	sltiu	a1, a1, 2
+	slli	a0, a0, 48
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	addi	a0, a0, -92
 	seqz	a1, a1
 	snez	a0, a0
@@ -44,21 +44,21 @@ func0000000000000318:
 	ret
 
 func0000000000000048:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	sltiu	a0, a0, 64
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000310:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	sltiu	a0, a0, 17
 	snez	a1, a1
 	xori	a0, a0, 1

@@ -34,7 +34,6 @@ func0000000000000059:
 func000000000000004c:
 	xor	a0, a0, a1
 	slli	a0, a0, 35
-	srli	a0, a0, 35
 	snez	a0, a0
 	ret
 

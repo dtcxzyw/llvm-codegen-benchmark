@@ -1,6 +1,6 @@
 func000000000000002c:
-	zext.h	a0, a0
 	andi	a1, a1, 4
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

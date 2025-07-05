@@ -3,7 +3,6 @@ func000000000000042c:
 	addiw	a2, a2, -1
 	slli	a1, a1, 52
 	xor	a0, a0, a2
-	srli	a1, a1, 52
 	seqz	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1

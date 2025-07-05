@@ -25,8 +25,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	zext.h	a0, a0
 	bexti	a1, a1, 9
+	slli	a0, a0, 48
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

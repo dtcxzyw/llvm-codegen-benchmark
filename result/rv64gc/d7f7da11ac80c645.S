@@ -1,8 +1,7 @@
 func000000000000082c:
-	slli	a0, a0, 48
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
@@ -10,30 +9,27 @@ func000000000000082c:
 	ret
 
 func0000000000000081:
-	slli	a0, a0, 48
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000481:
-	slli	a0, a0, 48
 	sext.w	a1, a1
 	addiw	a2, a2, -10
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000e81:
-	slli	a0, a0, 48
 	sext.w	a1, a1
 	addiw	a2, a2, 3
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -1,10 +1,10 @@
 func0000000000000021:
 	slli	a0, a0, 48
 	lui	a1, 16
-	srli	a0, a0, 48
+	srli	a2, a0, 48
 	addi	a1, a1, -33
-	xor	a1, a1, a0
 	seqz	a0, a0
+	xor	a1, a1, a2
 	seqz	a1, a1
 	addiw	a1, a1, 2
 	addi	a0, a0, -1

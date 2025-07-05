@@ -1,14 +1,12 @@
 func00000000000000a1:
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
 func00000000000000e1:
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -23,7 +21,6 @@ func00000000000000f4:
 func00000000000000ac:
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	snez	a0, a0
 	ret
 

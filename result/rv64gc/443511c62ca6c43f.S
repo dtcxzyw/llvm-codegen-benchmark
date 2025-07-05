@@ -30,7 +30,6 @@ func0000000000000858:
 	lui	a2, 524032
 	slli	a1, a1, 12
 	xor	a0, a0, a2
-	srli	a1, a1, 12
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

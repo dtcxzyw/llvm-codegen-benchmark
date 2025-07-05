@@ -12,7 +12,6 @@ func0000000000000001:
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	slli	a0, a0, 41
-	srli	a0, a0, 41
 	seqz	a0, a0
 	ret
 

@@ -35,13 +35,11 @@ func000000000000002a:
 
 func0000000000000008:
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	seqz	a0, a0
 	ret
 
 func0000000000000028:
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	seqz	a0, a0
 	ret
 
@@ -53,7 +51,6 @@ func0000000000000001:
 
 func0000000000000007:
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	snez	a0, a0
 	ret
 

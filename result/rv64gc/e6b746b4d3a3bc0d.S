@@ -8,9 +8,8 @@ func0000000000000021:
 	ret
 
 func000000000000008c:
-	slli	a0, a0, 48
 	zext.b	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltiu	a1, a1, 252
 	snez	a0, a0
 	and	a0, a0, a1
@@ -26,9 +25,8 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	slli	a0, a0, 48
 	zext.b	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	addi	a1, a1, -40
 	seqz	a1, a1
 	snez	a0, a0
@@ -47,9 +45,8 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	slli	a0, a0, 48
 	zext.b	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	addi	a1, a1, -46
 	snez	a1, a1
 	seqz	a0, a0
@@ -91,9 +88,8 @@ func0000000000000038:
 	ret
 
 func00000000000000c1:
-	slli	a0, a0, 48
 	slli	a1, a1, 56
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	srai	a1, a1, 56
 	slti	a1, a1, 1
 	seqz	a0, a0

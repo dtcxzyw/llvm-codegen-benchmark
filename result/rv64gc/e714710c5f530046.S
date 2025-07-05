@@ -16,7 +16,6 @@ func000000000000018c:
 
 func000000000000002c:
 	slli	a1, a1, 34
-	srli	a1, a1, 34
 	seqz	a1, a1
 	srli	a0, a0, 62
 	and	a0, a0, a1

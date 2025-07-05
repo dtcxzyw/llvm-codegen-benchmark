@@ -9,8 +9,8 @@ func0000000000000118:
 	ret
 
 func000000000000002c:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	seqz	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
@@ -60,8 +60,8 @@ func000000000000010c:
 	ret
 
 func0000000000000181:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	snez	a2, a2
 	seqz	a1, a1
 	and	a1, a1, a2
@@ -70,7 +70,7 @@ func0000000000000181:
 
 func000000000000018c:
 	sext.w	a1, a1
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2

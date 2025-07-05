@@ -8,9 +8,9 @@ func0000000000001a88:
 	ret
 
 func0000000000001b02:
-	zext.h	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, 2
+	slli	a0, a0, 48
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -28,9 +28,9 @@ func0000000000000acc:
 	ret
 
 func0000000000000102:
-	zext.h	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, -1
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1

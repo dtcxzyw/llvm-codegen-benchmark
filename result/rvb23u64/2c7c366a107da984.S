@@ -1,22 +1,22 @@
 func0000000000000042:
-	zext.h	a0, a0
 	andi	a1, a1, 64
+	slli	a0, a0, 48
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	zext.h	a0, a0
 	andi	a1, a1, 4
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000302:
-	zext.h	a0, a0
 	bexti	a1, a1, 11
+	slli	a0, a0, 48
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -46,7 +46,7 @@ func0000000000000318:
 	xori	a1, a1, 16
 	xori	a0, a0, 16
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	snez	a0, a0
 	ret
 

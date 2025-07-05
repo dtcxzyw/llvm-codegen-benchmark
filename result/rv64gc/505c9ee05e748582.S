@@ -29,7 +29,6 @@ func000000000000018c:
 func000000000000004c:
 	sext.w	a0, a0
 	slli	a1, a1, 35
-	srli	a1, a1, 35
 	seqz	a1, a1
 	slti	a0, a0, 1
 	or	a0, a0, a1
@@ -74,9 +73,8 @@ func0000000000000314:
 func0000000000000202:
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 33
-	sltiu	a0, a0, 65
 	seqz	a1, a1
+	sltiu	a0, a0, 65
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

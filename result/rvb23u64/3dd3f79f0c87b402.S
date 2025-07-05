@@ -68,7 +68,6 @@ func0000000000000281:
 func000000000000008c:
 	sext.w	a0, a0
 	slli	a1, a1, 45
-	srli	a1, a1, 45
 	snez	a1, a1
 	sltiu	a0, a0, -8
 	or	a0, a0, a1
@@ -110,7 +109,6 @@ func000000000000010c:
 func000000000000028c:
 	sext.w	a0, a0
 	slli	a1, a1, 12
-	srli	a1, a1, 12
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1

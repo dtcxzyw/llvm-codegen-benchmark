@@ -20,7 +20,6 @@ func0000000000000087:
 
 func0000000000000084:
 	slli	a2, a2, 49
-	srli	a2, a2, 49
 	snez	a2, a2
 	slli	a2, a2, 48
 	or	a1, a1, a2

@@ -7,7 +7,6 @@ func0000000000000084:
 func0000000000000081:
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
-	srli	a0, a0, 3
 	seqz	a0, a0
 	ret
 

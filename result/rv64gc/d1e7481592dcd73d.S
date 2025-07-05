@@ -20,7 +20,6 @@ func0000000000000306:
 func0000000000000046:
 	sext.w	a0, a0
 	slli	a2, a2, 41
-	srli	a2, a2, 41
 	seqz	a2, a2
 	or	a1, a1, a2
 	slti	a0, a0, 0
@@ -48,7 +47,6 @@ func0000000000000042:
 func0000000000000041:
 	sext.w	a0, a0
 	slli	a2, a2, 41
-	srli	a2, a2, 41
 	seqz	a2, a2
 	or	a1, a1, a2
 	seqz	a0, a0

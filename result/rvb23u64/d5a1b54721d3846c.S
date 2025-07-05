@@ -33,8 +33,8 @@ func0000000000000006:
 
 func0000000000000008:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
-	srli	a1, a1, 16
+	srli	a1, a1, 15
+	slli	a1, a1, 16
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

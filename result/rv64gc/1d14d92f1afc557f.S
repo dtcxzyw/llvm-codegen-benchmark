@@ -1,6 +1,5 @@
 func0000000000000021:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	snez	a1, a1
 	slli	a1, a1, 2
 	or	a0, a0, a1
@@ -8,7 +7,6 @@ func0000000000000021:
 
 func0000000000000001:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	snez	a1, a1
 	slli	a1, a1, 3
 	or	a0, a0, a1

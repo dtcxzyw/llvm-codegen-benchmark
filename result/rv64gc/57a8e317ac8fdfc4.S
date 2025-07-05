@@ -1,11 +1,10 @@
 func0000000000000042:
-	slli	a0, a0, 48
 	sext.w	a1, a1
-	srli	a2, a0, 48
-	srai	a0, a0, 48
-	xor	a0, a0, a1
+	slli	a0, a0, 48
+	srai	a2, a0, 48
+	xor	a1, a1, a2
+	seqz	a1, a1
 	seqz	a0, a0
-	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 

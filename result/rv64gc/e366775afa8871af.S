@@ -39,7 +39,6 @@ func0000000000000081:
 func0000000000000101:
 	slli	a0, a0, 34
 	fmv.w.x	fa5, zero
-	srli	a0, a0, 34
 	seqz	a0, a0
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1

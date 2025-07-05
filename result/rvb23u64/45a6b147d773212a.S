@@ -2,7 +2,7 @@ func0000000000000021:
 	andi	a0, a0, 1
 	slli	a0, a0, 5
 	srl	a0, a1, a0
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

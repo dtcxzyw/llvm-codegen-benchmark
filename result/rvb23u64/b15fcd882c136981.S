@@ -9,7 +9,7 @@ func000000000000018c:
 func0000000000000021:
 	xori	a1, a1, 32
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -158,8 +158,8 @@ func0000000000000301:
 	ret
 
 func000000000000014c:
-	zext.h	a0, a0
 	sext.h	a1, a1
+	slli	a0, a0, 48
 	slti	a1, a1, 10
 	xori	a1, a1, 1
 	snez	a0, a0

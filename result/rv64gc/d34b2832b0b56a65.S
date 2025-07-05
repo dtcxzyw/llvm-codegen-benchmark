@@ -1,7 +1,9 @@
 func0000000000000041:
 	sext.w	a0, a0
-	srliw	a1, a1, 2
-	seqz	a2, a1
+	srliw	a2, a1, 2
+	srli	a1, a1, 2
+	slli	a1, a1, 34
+	seqz	a1, a1
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -9,8 +11,10 @@ func0000000000000041:
 
 func0000000000000001:
 	sext.w	a0, a0
-	srliw	a1, a1, 6
-	seqz	a2, a1
+	srliw	a2, a1, 6
+	srli	a1, a1, 6
+	slli	a1, a1, 38
+	seqz	a1, a1
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -39,7 +39,7 @@ func0000000000000181:
 
 func0000000000000034:
 	sext.w	a1, a1
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	seqz	a2, a2
 	sltiu	a1, a1, 16
 	or	a1, a1, a2

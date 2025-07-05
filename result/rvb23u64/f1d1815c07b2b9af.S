@@ -11,7 +11,6 @@ func00000000000000c7:
 func000000000000014c:
 	slli	a0, a0, 33
 	fli.s	fa5, min
-	srli	a0, a0, 33
 	snez	a0, a0
 	fle.s	a1, fa0, fa5
 	and	a0, a0, a1

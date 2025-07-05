@@ -1,6 +1,5 @@
 func0000000000000001:
 	slli	a0, a0, 35
-	srli	a0, a0, 35
 	seqz	a0, a0
 	ret
 
@@ -69,7 +68,6 @@ func0000000000000046:
 
 func0000000000000181:
 	slli	a0, a0, 36
-	srli	a0, a0, 36
 	seqz	a0, a0
 	ret
 
@@ -80,7 +78,6 @@ func0000000000000186:
 
 func0000000000000081:
 	slli	a0, a0, 34
-	srli	a0, a0, 34
 	seqz	a0, a0
 	ret
 

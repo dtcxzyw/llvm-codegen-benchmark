@@ -25,7 +25,6 @@ func0000000000000024:
 
 func000000000000000c:
 	slli	a1, a1, 3
-	srli	a1, a1, 3
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

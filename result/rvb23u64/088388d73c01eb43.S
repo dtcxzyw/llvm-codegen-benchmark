@@ -2,7 +2,6 @@ func0000000000000101:
 	zext.w	a1, a1
 	mul	a0, a0, a1
 	slli	a0, a0, 9
-	srli	a0, a0, 9
 	seqz	a0, a0
 	ret
 

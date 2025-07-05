@@ -21,7 +21,7 @@ func0000000000000630:
 
 func0000000000000604:
 	sext.w	a1, a1
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	snez	a2, a2
 	addi	a1, a1, 1
 	seqz	a1, a1

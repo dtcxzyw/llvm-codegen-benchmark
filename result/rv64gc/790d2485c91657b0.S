@@ -16,7 +16,6 @@ func0000000000000064:
 
 func0000000000000021:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	snez	a1, a1
 	addi	a1, a1, -1
 	andi	a1, a1, -3
@@ -72,7 +71,6 @@ func0000000000000068:
 
 func000000000000002c:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a1, a1
 	addi	a1, a1, -1
 	andi	a1, a1, -6

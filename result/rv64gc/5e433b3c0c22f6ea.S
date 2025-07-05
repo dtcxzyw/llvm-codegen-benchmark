@@ -1,7 +1,6 @@
 func000000000000002c:
-	slli	a0, a0, 48
 	andi	a1, a1, 4
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

@@ -38,7 +38,6 @@ func0000000000000181:
 func0000000000000188:
 	slli	a1, a1, 48
 	srli	a0, a0, 56
-	srli	a1, a1, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -79,7 +78,6 @@ func0000000000000034:
 func0000000000000028:
 	slli	a1, a1, 37
 	srli	a0, a0, 30
-	srli	a1, a1, 37
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

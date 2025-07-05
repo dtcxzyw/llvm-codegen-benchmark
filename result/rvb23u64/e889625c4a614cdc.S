@@ -15,7 +15,7 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	bclri	a2, a2, 63
+	slli	a2, a2, 1
 	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0

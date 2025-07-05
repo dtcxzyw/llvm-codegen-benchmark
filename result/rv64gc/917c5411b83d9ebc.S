@@ -36,9 +36,8 @@ func0000000000000054:
 func0000000000000314:
 	sext.w	a0, a0
 	slli	a2, a2, 41
-	srli	a2, a2, 41
-	slti	a0, a0, 0
 	snez	a2, a2
+	slti	a0, a0, 0
 	and	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -29,14 +29,12 @@ func0000000000000119:
 func0000000000000101:
 	xor	a0, a0, a1
 	slli	a0, a0, 35
-	srli	a0, a0, 35
 	seqz	a0, a0
 	ret
 
 func000000000000010c:
 	xor	a0, a0, a1
 	slli	a0, a0, 35
-	srli	a0, a0, 35
 	snez	a0, a0
 	ret
 

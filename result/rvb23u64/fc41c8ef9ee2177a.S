@@ -1,5 +1,5 @@
 func0000000000000001:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	and	a0, a0, a1
 	neg	a0, a0
@@ -7,7 +7,7 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	and	a0, a0, a1
 	lui	a1, 1044477

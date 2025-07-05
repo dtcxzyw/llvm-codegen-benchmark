@@ -12,7 +12,6 @@ func00000000000000e1:
 	ld	a1, %lo(.LCPI1_0)(a1)
 	mulhu	a0, a0, a1
 	slli	a0, a0, 38
-	srli	a0, a0, 38
 	seqz	a0, a0
 	ret
 

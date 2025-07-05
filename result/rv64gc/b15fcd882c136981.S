@@ -12,7 +12,6 @@ func0000000000000021:
 	xori	a1, a1, 32
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -200,9 +199,8 @@ func0000000000000301:
 	ret
 
 func000000000000014c:
-	slli	a0, a0, 48
 	slli	a1, a1, 48
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	srai	a1, a1, 48
 	slti	a1, a1, 10
 	xori	a1, a1, 1

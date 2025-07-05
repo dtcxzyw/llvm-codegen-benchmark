@@ -1,6 +1,6 @@
 func0000000000000a8c:
-	zext.h	a0, a0
 	addi	a2, a2, -1
+	slli	a0, a0, 48
 	zext.w	a2, a2
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -8,8 +8,8 @@ func0000000000000a8c:
 	ret
 
 func000000000000028c:
-	zext.h	a0, a0
 	addi	a2, a2, -1
+	slli	a0, a0, 48
 	zext.w	a2, a2
 	sltu	a1, a1, a2
 	snez	a0, a0

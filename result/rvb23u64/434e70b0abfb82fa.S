@@ -21,7 +21,7 @@ func0000000000000021:
 	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -51,7 +51,7 @@ func0000000000000181:
 
 func0000000000000186:
 	sext.h	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
@@ -102,8 +102,8 @@ func000000000000008c:
 	ret
 
 func0000000000000141:
-	zext.h	a0, a0
 	sext.h	a1, a1
+	slli	a0, a0, 48
 	slti	a1, a1, -14
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -203,7 +203,7 @@ func0000000000000108:
 
 func000000000000002a:
 	sext.h	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
@@ -230,7 +230,7 @@ func0000000000000026:
 
 func000000000000018a:
 	sext.h	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

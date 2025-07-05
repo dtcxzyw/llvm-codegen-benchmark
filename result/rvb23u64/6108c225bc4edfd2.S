@@ -13,7 +13,6 @@ func0000000000000361:
 	srli	a0, a0, 7
 	mulhu	a0, a0, a3
 	slli	a0, a0, 38
-	srli	a0, a0, 38
 	seqz	a0, a0
 	ret
 

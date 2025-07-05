@@ -3,7 +3,7 @@ func0000000000000021:
 	xori	a1, a1, 1536
 	xori	a0, a0, 10
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

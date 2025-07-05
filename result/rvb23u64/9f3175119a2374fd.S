@@ -21,7 +21,6 @@ func000000000000002c:
 func0000000000000181:
 	slli	a1, a1, 44
 	andi	a0, a0, 8
-	srli	a1, a1, 44
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

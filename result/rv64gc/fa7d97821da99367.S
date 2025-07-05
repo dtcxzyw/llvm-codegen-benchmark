@@ -3,7 +3,6 @@ func0000000000000421:
 	slli	a1, a1, 5
 	srl	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

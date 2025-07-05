@@ -35,7 +35,6 @@ func0000000000000061:
 
 func0000000000000041:
 	slli	a1, a1, 40
-	srli	a1, a1, 40
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -46,7 +45,6 @@ func000000000000006c:
 
 func000000000000004c:
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

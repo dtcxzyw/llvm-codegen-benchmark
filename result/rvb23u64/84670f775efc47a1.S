@@ -27,7 +27,6 @@ func000000000000042a:
 
 func000000000000002c:
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	snez	a0, a0
 	ret
 

@@ -1,14 +1,14 @@
 func0000000000000184:
-	zext.h	a0, a0
 	addiw	a1, a1, -65
+	slli	a0, a0, 48
 	sltiu	a1, a1, 26
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000584:
-	zext.h	a0, a0
 	addiw	a1, a1, -65
+	slli	a0, a0, 48
 	sltiu	a1, a1, 26
 	snez	a0, a0
 	and	a0, a0, a1
@@ -71,8 +71,8 @@ func0000000000000424:
 	ret
 
 func0000000000000141:
-	zext.h	a0, a0
 	addiw	a1, a1, -3
+	slli	a0, a0, 48
 	sgtz	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -88,8 +88,8 @@ func0000000000000081:
 	ret
 
 func000000000000042c:
-	zext.h	a0, a0
 	sext.w	a1, a1
+	slli	a0, a0, 48
 	addi	a1, a1, -1
 	seqz	a1, a1
 	snez	a0, a0

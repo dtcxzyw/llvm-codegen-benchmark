@@ -1,6 +1,6 @@
 func0000000000000318:
-	zext.h	a1, a1
 	bexti	a2, a2, 25
+	slli	a1, a1, 48
 	and	a0, a0, a2
 	snez	a1, a1
 	or	a0, a0, a1
@@ -30,8 +30,8 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	zext.h	a1, a1
 	not	a2, a2
+	slli	a1, a1, 48
 	bexti	a2, a2, 12
 	and	a0, a0, a2
 	snez	a1, a1

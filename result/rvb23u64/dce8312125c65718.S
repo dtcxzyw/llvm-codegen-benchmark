@@ -27,7 +27,6 @@ func0000000000000301:
 	slli	a1, a1, 53
 	and	a1, a1, a0
 	slli	a0, a0, 12
-	srli	a0, a0, 12
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

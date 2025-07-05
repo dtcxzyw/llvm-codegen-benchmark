@@ -72,7 +72,6 @@ func0000000000000081:
 	lui	a1, 65535
 	slli	a2, a0, 48
 	slli	a1, a1, 4
-	srli	a2, a2, 48
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	snez	a0, a0

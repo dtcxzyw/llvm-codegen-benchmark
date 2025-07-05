@@ -1,7 +1,6 @@
 func000000000000018c:
-	slli	a0, a0, 48
 	addi	a1, a1, -1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -22,9 +21,8 @@ func0000000000000088:
 	ret
 
 func000000000000098c:
-	slli	a0, a0, 48
 	addi	a1, a1, 2
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -42,9 +40,8 @@ func0000000000000d81:
 	ret
 
 func0000000000000d8c:
-	slli	a0, a0, 48
 	addi	a1, a1, -3
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

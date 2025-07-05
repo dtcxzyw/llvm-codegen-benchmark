@@ -46,7 +46,7 @@ func0000000000000015:
 	ret
 
 func000000000000001f:
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	seqz	a2, a2
 	xori	a2, a2, 3
 	add	a0, a0, a1

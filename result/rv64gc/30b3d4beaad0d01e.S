@@ -1,6 +1,5 @@
 func0000000000000004:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a1, a1
 	slliw	a0, a0, 1
 	addi	a1, a1, -1

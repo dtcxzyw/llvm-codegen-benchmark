@@ -4,7 +4,6 @@ func0000000000000181:
 	mv	a1, a0
 .LBB0_2:
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a0, a1
 	ret
 

@@ -41,7 +41,6 @@ func0000000000000301:
 	lui	a1, 520192
 	and	a1, a1, a0
 	slli	a0, a0, 41
-	srli	a0, a0, 41
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

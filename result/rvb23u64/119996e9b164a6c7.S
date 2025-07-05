@@ -33,7 +33,7 @@ func000000000000002c:
 
 func000000000000000c:
 	subw	a1, a1, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a0, a1
 	ret
 

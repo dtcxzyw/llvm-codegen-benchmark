@@ -1,6 +1,5 @@
 func0000000000000c61:
 	slli	a1, a1, 52
-	srli	a1, a1, 52
 	snez	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0

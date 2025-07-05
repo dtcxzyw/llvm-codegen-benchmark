@@ -7,23 +7,23 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	zext.h	a0, a0
 	addi	a1, a1, -36
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000008c:
-	zext.h	a0, a0
 	sltiu	a1, a1, 7
+	slli	a0, a0, 48
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
-	zext.h	a0, a0
 	addi	a1, a1, -3
+	slli	a0, a0, 48
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -47,8 +47,8 @@ func0000000000000024:
 	ret
 
 func0000000000000081:
-	zext.h	a0, a0
 	sltiu	a1, a1, -47
+	slli	a0, a0, 48
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -60,8 +60,8 @@ func000000000000018c:
 	ret
 
 func0000000000000301:
-	zext.h	a0, a0
 	sltiu	a1, a1, 14
+	slli	a0, a0, 48
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1

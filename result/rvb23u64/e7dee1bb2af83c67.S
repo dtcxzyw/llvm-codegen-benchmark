@@ -1,6 +1,6 @@
 func000000000000002c:
 	zext.b	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	addi	a0, a0, -5
 	snez	a0, a0
@@ -43,7 +43,7 @@ func00000000000000cc:
 
 func0000000000000028:
 	zext.b	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1
@@ -60,7 +60,7 @@ func0000000000000081:
 
 func0000000000000181:
 	zext.b	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	addi	a0, a0, -42
 	seqz	a0, a0
@@ -108,7 +108,7 @@ func000000000000008c:
 
 func0000000000000188:
 	zext.b	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1

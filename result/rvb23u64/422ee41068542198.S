@@ -68,7 +68,7 @@ func0000000000000024:
 
 func000000000000002a:
 	sext.b	a0, a0
-	bclri	a1, a1, 63
+	slli	a1, a1, 1
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -95,7 +95,7 @@ func000000000000030a:
 
 func000000000000018a:
 	sext.b	a0, a0
-	bclri	a1, a1, 63
+	slli	a1, a1, 1
 	snez	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

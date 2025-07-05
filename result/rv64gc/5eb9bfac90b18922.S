@@ -9,7 +9,9 @@ func0000000000000084:
 	srliw	a1, a2, 24
 	beqz	a1, .LBB0_2
 .LBB0_4:
-	seqz	a0, a3
+	srli	a2, a2, 16
+	slli	a2, a2, 48
+	seqz	a0, a2
 	slli	a0, a0, 4
 	ret
 
@@ -17,16 +19,18 @@ func0000000000000118:
 	srliw	a3, a2, 16
 	beqz	a3, .LBB1_3
 	sext.w	a1, a1
-	li	a2, 255
-	bgeu	a2, a1, .LBB1_4
+	li	a3, 255
+	bgeu	a3, a1, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	sext.w	a1, a2
-	li	a2, 255
-	bltu	a2, a1, .LBB1_2
+	li	a3, 255
+	bltu	a3, a1, .LBB1_2
 .LBB1_4:
-	snez	a0, a3
+	srli	a2, a2, 16
+	slli	a2, a2, 48
+	snez	a0, a2
 	slli	a0, a0, 4
 	ret
 

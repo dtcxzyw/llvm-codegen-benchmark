@@ -62,16 +62,15 @@ func0000000000000081:
 func000000000000002c:
 	sext.w	a0, a0
 	slli	a1, a1, 41
-	srli	a1, a1, 41
-	addi	a0, a0, -255
 	snez	a1, a1
+	addi	a0, a0, -255
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000d8c:
 	sext.w	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

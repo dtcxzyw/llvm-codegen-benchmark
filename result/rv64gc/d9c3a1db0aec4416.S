@@ -38,7 +38,6 @@ func00000000000000ec:
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	slli	a0, a0, 12
-	srli	a0, a0, 12
 	snez	a0, a0
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000018c:
 	sext.w	a1, a1
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	snez	a2, a2
 	or	a0, a0, a2
 	snez	a1, a1

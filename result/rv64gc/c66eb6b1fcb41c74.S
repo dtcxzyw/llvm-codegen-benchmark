@@ -41,11 +41,10 @@ func0000000000000181:
 func0000000000000034:
 	sext.w	a1, a1
 	slli	a2, a2, 48
-	srli	a2, a2, 48
-	sltiu	a1, a1, 16
 	seqz	a2, a2
+	sltiu	a1, a1, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000002c:

@@ -1,6 +1,5 @@
 func000000000000004c:
 	slli	a1, a1, 44
-	srli	a1, a1, 44
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

@@ -8,9 +8,10 @@ func0000000000000118:
 	ret
 
 func000000000000058b:
-	zext.h	a2, a2
+	zext.h	a3, a2
 	sext.w	a1, a1
-	slt	a1, a1, a2
+	slli	a2, a2, 48
+	slt	a1, a1, a3
 	snez	a2, a2
 	xori	a1, a1, 1
 	and	a0, a0, a2

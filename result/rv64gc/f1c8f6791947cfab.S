@@ -11,9 +11,8 @@ func0000000000000108:
 	ret
 
 func0000000000000021:
-	slli	a1, a1, 48
 	sext.w	a2, a2
-	srli	a1, a1, 48
+	slli	a1, a1, 48
 	seqz	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1

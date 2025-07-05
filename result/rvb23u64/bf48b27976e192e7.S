@@ -1,7 +1,7 @@
 func0000000000000025:
-	zext.h	a1, a1
 	sext.w	a0, a0
 	addiw	a2, a2, 8
+	slli	a1, a1, 48
 	sltu	a0, a0, a2
 	seqz	a1, a1
 	andn	a0, a1, a0

@@ -35,7 +35,6 @@ func000000000000044c:
 
 func0000000000000084:
 	slli	a2, a2, 3
-	srli	a2, a2, 3
 	seqz	a2, a2
 	sh3add	a1, a2, a1
 	sltu	a0, a1, a0

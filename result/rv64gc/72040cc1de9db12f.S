@@ -1,7 +1,6 @@
 func0000000000000181:
-	slli	a0, a0, 48
 	andi	a1, a1, 127
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -46,7 +45,6 @@ func0000000000000021:
 	xori	a0, a0, 6
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -54,7 +52,6 @@ func0000000000000188:
 	slli	a0, a0, 48
 	slli	a1, a1, 49
 	srli	a0, a0, 48
-	srli	a1, a1, 49
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	not	a0, a0

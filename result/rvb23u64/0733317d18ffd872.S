@@ -8,7 +8,7 @@ func000000000000002c:
 func0000000000000021:
 	czero.nez	a0, a0, a1
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

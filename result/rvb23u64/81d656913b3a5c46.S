@@ -7,7 +7,6 @@ func0000000000000078:
 
 func0000000000000061:
 	slli	a0, a0, 49
-	srli	a0, a0, 49
 	seqz	a0, a0
 	ret
 

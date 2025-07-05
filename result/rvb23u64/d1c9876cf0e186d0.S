@@ -21,13 +21,13 @@ func000000000000001a:
 	ret
 
 func0000000000000010:
-	bclri	a1, a1, 63
+	slli	a1, a1, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func000000000000000e:
-	bclri	a1, a1, 63
+	slli	a1, a1, 1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

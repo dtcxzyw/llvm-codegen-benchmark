@@ -9,7 +9,6 @@ func000000000000000c:
 func000000000000002c:
 	mul	a1, a1, a2
 	slli	a1, a1, 49
-	srli	a1, a1, 49
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

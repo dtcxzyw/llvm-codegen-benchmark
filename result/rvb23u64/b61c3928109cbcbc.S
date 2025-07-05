@@ -17,8 +17,8 @@ func0000000000000084:
 	ret
 
 func0000000000000024:
-	zext.h	a0, a0
 	addi	a1, a1, 1
+	slli	a0, a0, 48
 	zext.h	a1, a1
 	sltiu	a1, a1, 3
 	seqz	a0, a0

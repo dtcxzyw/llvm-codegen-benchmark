@@ -59,10 +59,12 @@ func000000000000002a:
 
 func0000000000000024:
 	andi	a0, a0, 1
-	srliw	a1, a1, 20
-	or	a2, a2, a1
-	seqz	a1, a1
+	srliw	a3, a1, 20
+	srli	a1, a1, 20
+	or	a2, a2, a3
+	slli	a1, a1, 52
 	sext.w	a2, a2
+	seqz	a1, a1
 	czero.eqz	a1, a1, a0
 	seqz	a2, a2
 	czero.nez	a0, a2, a0

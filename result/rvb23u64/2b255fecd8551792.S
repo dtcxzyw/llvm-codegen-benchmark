@@ -216,7 +216,7 @@ func000000000000028a:
 
 func0000000000000186:
 	sext.w	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1

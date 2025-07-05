@@ -1,6 +1,6 @@
 func0000000000000018:
 	add	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	snez	a0, a0
 	ret
 

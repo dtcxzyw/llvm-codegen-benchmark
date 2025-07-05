@@ -1,7 +1,7 @@
 func00000000000000ac:
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	snez	a0, a0
 	ret
 
@@ -60,7 +60,7 @@ func00000000000000a4:
 func0000000000000081:
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 
@@ -96,7 +96,7 @@ func00000000000000a6:
 func0000000000000021:
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

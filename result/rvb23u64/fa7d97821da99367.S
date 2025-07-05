@@ -2,7 +2,7 @@ func0000000000000421:
 	seqz	a1, a1
 	slli	a1, a1, 5
 	srl	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a0, a0
 	ret
 

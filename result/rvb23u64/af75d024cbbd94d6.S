@@ -1,6 +1,6 @@
 func0000000000000181:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	snez	a2, a2
 	seqz	a1, a1
 	and	a1, a1, a2
@@ -61,7 +61,7 @@ func0000000000000024:
 
 func0000000000000188:
 	sext.w	a1, a1
-	zext.h	a2, a2
+	slli	a2, a2, 48
 	snez	a2, a2
 	sltiu	a1, a1, 3
 	andn	a1, a2, a1

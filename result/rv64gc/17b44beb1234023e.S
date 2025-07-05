@@ -63,7 +63,6 @@ func000000000000004a:
 
 func000000000000000c:
 	slli	a0, a0, 10
-	srli	a0, a0, 10
 	snez	a0, a0
 	ret
 
@@ -74,7 +73,6 @@ func0000000000000046:
 
 func0000000000000011:
 	slli	a0, a0, 2
-	srli	a0, a0, 2
 	seqz	a0, a0
 	ret
 

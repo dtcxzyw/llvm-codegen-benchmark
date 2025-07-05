@@ -21,7 +21,6 @@ func000000000000002c:
 	addi	a2, a2, 8
 	slli	a1, a1, 3
 	xor	a0, a0, a2
-	srli	a1, a1, 3
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1

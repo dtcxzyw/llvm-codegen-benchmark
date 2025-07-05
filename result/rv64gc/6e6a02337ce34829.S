@@ -1,16 +1,14 @@
 func0000000000000021:
-	slli	a0, a0, 48
 	andi	a1, a1, 1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000002c:
-	slli	a0, a0, 48
 	andi	a1, a1, 1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -43,14 +41,12 @@ func000000000000018c:
 	andi	a1, a1, 128
 	or	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	snez	a0, a0
 	ret
 
 func0000000000000301:
-	slli	a0, a0, 48
 	zext.b	a1, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
 	seqz	a0, a0

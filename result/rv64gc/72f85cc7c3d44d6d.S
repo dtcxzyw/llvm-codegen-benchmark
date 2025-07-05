@@ -1,7 +1,6 @@
 func0000000000000181:
-	slli	a0, a0, 48
 	xor	a1, a1, a2
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -16,33 +15,29 @@ func0000000000000084:
 	ret
 
 func000000000000008c:
-	slli	a0, a0, 48
-	srli	a0, a0, 48
 	sltu	a1, a1, a2
+	slli	a0, a0, 48
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000081:
-	slli	a0, a0, 48
-	srli	a0, a0, 48
 	sltu	a1, a1, a2
+	slli	a0, a0, 48
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	slli	a0, a0, 48
-	srli	a0, a0, 48
 	sltu	a1, a2, a1
+	slli	a0, a0, 48
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000a1:
-	slli	a0, a0, 48
 	sltu	a1, a2, a1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -68,9 +63,8 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
-	slli	a0, a0, 48
 	xor	a1, a1, a2
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

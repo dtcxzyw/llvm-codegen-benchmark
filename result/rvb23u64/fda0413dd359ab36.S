@@ -21,7 +21,6 @@ func0000000000000021:
 
 func0000000000000001:
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	seqz	a1, a1
 	andn	a0, a1, a0
 	ret
@@ -46,7 +45,6 @@ func000000000000002a:
 
 func000000000000000c:
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

@@ -28,8 +28,8 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	seqz	a2, a2
 	snez	a1, a1
 	or	a1, a1, a2

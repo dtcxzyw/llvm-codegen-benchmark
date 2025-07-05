@@ -1,8 +1,7 @@
 func0000000000000041:
-	li	a0, -1
-	srli	a0, a0, 26
-	andn	a0, a0, a1
-	seqz	a0, a0
+	not	a1, a1
+	slli	a1, a1, 26
+	seqz	a0, a1
 	ret
 
 func000000000000004c:

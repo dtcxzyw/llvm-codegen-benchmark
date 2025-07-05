@@ -34,9 +34,8 @@ func000000000000028c:
 	sext.w	a0, a0
 	slli	a1, a1, 44
 	lui	a2, 27392
-	srli	a1, a1, 44
-	addi	a2, a2, 1
 	snez	a1, a1
+	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

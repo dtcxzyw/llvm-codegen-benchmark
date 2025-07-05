@@ -6,7 +6,6 @@ func0000000000000241:
 	add	a0, a0, a1
 	not	a0, a0
 	slli	a0, a0, 26
-	srli	a0, a0, 26
 	seqz	a0, a0
 	ret
 

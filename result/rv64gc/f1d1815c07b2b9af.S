@@ -12,9 +12,8 @@ func00000000000000c7:
 func000000000000014c:
 	slli	a0, a0, 33
 	lui	a1, 2048
-	srli	a0, a0, 33
-	fmv.w.x	fa5, a1
 	snez	a0, a0
+	fmv.w.x	fa5, a1
 	fle.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

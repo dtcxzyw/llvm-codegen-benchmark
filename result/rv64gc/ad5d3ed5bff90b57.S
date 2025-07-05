@@ -28,7 +28,6 @@ func000000000000000c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	seqz	a0, a1
 	addi	a0, a0, 213
 	ret

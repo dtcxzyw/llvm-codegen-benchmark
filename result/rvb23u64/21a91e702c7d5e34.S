@@ -17,7 +17,7 @@ func000000000000008c:
 func000000000000002c:
 	sext.w	a0, a0
 	xor	a1, a1, a2
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

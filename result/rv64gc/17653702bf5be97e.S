@@ -42,7 +42,6 @@ func000000000000000e:
 
 func0000000000000008:
 	slli	a0, a0, 33
-	srli	a0, a0, 33
 	seqz	a0, a0
 	ret
 

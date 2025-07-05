@@ -17,7 +17,7 @@ func0000000000000031:
 	ret
 
 func0000000000000028:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	sltiu	a0, a0, 21
 	and	a0, a0, a1

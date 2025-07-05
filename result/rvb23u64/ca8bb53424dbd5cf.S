@@ -7,9 +7,9 @@ func0000000000000021:
 	ret
 
 func000000000000010c:
-	zext.h	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1

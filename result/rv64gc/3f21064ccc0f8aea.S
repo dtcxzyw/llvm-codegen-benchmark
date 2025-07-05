@@ -35,7 +35,6 @@ func0000000000000101:
 	srliw	a2, a1, 16
 	slli	a1, a1, 48
 	sltu	a0, a2, a0
-	srli	a1, a1, 48
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

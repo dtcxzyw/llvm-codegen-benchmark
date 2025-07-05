@@ -1,9 +1,8 @@
 func0000000000000181:
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	addi	a0, a0, -6
 	seqz	a1, a1
+	addi	a0, a0, -6
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

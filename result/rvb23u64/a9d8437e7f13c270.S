@@ -84,7 +84,7 @@ func0000000000000130:
 
 func000000000000030c:
 	sext.h	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1
@@ -122,7 +122,7 @@ func000000000000004c:
 
 func0000000000000054:
 	sext.h	a0, a0
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -153,7 +153,7 @@ func0000000000000318:
 	xori	a1, a1, 16
 	xori	a0, a0, 16
 	or	a0, a0, a1
-	zext.h	a0, a0
+	slli	a0, a0, 48
 	snez	a0, a0
 	ret
 

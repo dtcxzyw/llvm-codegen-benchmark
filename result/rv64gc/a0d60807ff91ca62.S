@@ -1,7 +1,7 @@
 func0000000000000188:
 	mul	a0, a1, a0
-	slli	a0, a0, 7
-	srli	a0, a0, 31
+	srli	a0, a0, 24
+	slli	a0, a0, 31
 	snez	a0, a0
 	ret
 
@@ -27,8 +27,8 @@ func00000000000001f8:
 
 func0000000000000088:
 	mul	a0, a1, a0
-	slli	a0, a0, 2
-	srli	a0, a0, 31
+	srli	a0, a0, 29
+	slli	a0, a0, 31
 	snez	a0, a0
 	ret
 

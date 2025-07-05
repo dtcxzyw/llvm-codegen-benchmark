@@ -32,11 +32,11 @@ func000000000000010c:
 func000000000000002c:
 	sext.w	a0, a0
 	slli	a1, a1, 49
-	srli	a1, a1, 49
-	snez	a2, a1
-	xor	a0, a0, a1
+	srli	a2, a1, 49
+	snez	a1, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -51,9 +51,9 @@ func000000000000018c:
 func00000000000000cc:
 	sext.w	a0, a0
 	slli	a1, a1, 44
-	srli	a1, a1, 44
-	snez	a2, a1
-	slt	a0, a1, a0
-	and	a0, a0, a2
+	srli	a2, a1, 44
+	snez	a1, a1
+	slt	a0, a2, a0
+	and	a0, a0, a1
 	ret
 

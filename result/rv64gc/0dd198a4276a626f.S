@@ -10,26 +10,23 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a0, a0, 48
 	andi	a1, a1, 6
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	slli	a0, a0, 48
-	srli	a0, a0, 48
 	srli	a1, a1, 12
+	slli	a0, a0, 48
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	slli	a0, a0, 48
 	andi	a1, a1, 1
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

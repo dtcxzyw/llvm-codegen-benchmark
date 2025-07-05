@@ -17,14 +17,14 @@ func0000000000000021:
 	ret
 
 func000000000000018a:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	slti	a0, a0, 0
 	andn	a0, a1, a0
 	ret
 
 func000000000000002c:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -86,14 +86,14 @@ func0000000000000101:
 	ret
 
 func0000000000000181:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	zext.h	a1, a1
+	slli	a1, a1, 48
 	seqz	a1, a1
 	sltiu	a0, a0, 16
 	and	a0, a0, a1

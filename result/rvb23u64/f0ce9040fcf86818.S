@@ -76,7 +76,6 @@ func000000000000022c:
 
 func000000000000008c:
 	slli	a1, a1, 16
-	srli	a1, a1, 16
 	snez	a1, a1
 	sltiu	a0, a0, -8
 	or	a0, a0, a1

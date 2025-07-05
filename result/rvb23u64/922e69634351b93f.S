@@ -32,8 +32,8 @@ func0000000000000610:
 	ret
 
 func0000000000000084:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	addi	a2, a2, -51
 	seqz	a1, a1
 	seqz	a2, a2
@@ -42,8 +42,8 @@ func0000000000000084:
 	ret
 
 func0000000000000202:
-	zext.h	a0, a0
 	sext.w	a2, a2
+	slli	a0, a0, 48
 	sltiu	a2, a2, 2
 	or	a1, a1, a2
 	seqz	a0, a0
@@ -51,8 +51,8 @@ func0000000000000202:
 	ret
 
 func0000000000000604:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	snez	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1

@@ -45,18 +45,18 @@ func0000000000000019:
 	srli	a1, a1, 56
 	addi	a1, a1, 64
 	slli	a0, a0, 49
-	srli	a0, a0, 49
-	seqz	a2, a0
+	srli	a2, a0, 49
+	seqz	a0, a0
+	add	a0, a0, a2
 	subw	a0, a0, a1
-	addw	a0, a0, a2
 	ret
 .LBB0_3:
 	li	a1, 128
 	slli	a0, a0, 49
-	srli	a0, a0, 49
-	seqz	a2, a0
+	srli	a2, a0, 49
+	seqz	a0, a0
+	add	a0, a0, a2
 	subw	a0, a0, a1
-	addw	a0, a0, a2
 	ret
 .LBB0_4:
 	srli	a1, a2, 1
@@ -85,9 +85,9 @@ func0000000000000019:
 	mul	a1, a1, a4
 	srli	a1, a1, 56
 	slli	a0, a0, 49
-	srli	a0, a0, 49
-	seqz	a2, a0
+	srli	a2, a0, 49
+	seqz	a0, a0
+	add	a0, a0, a2
 	subw	a0, a0, a1
-	addw	a0, a0, a2
 	ret
 

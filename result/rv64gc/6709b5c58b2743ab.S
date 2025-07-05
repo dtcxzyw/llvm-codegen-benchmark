@@ -35,7 +35,6 @@ func0000000000000481:
 	addi	a1, a1, -255
 	slli	a0, a0, 16
 	sltiu	a1, a1, 2
-	srli	a0, a0, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

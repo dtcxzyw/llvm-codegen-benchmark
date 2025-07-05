@@ -1,7 +1,6 @@
 func0000000000000029:
 	slli	a2, a2, 48
 	sltu	a0, a0, a1
-	srli	a2, a2, 48
 	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -10,7 +9,6 @@ func0000000000000029:
 func000000000000002b:
 	slli	a2, a2, 48
 	slt	a0, a0, a1
-	srli	a2, a2, 48
 	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -29,7 +27,6 @@ func0000000000000027:
 func0000000000000021:
 	slli	a2, a2, 48
 	xor	a0, a0, a1
-	srli	a2, a2, 48
 	seqz	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
