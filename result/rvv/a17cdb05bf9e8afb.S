@@ -1,9 +1,9 @@
 func000000000000000d:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v8
-	bseti	a0, zero, 32
-	vmv.v.x	v8, a0
 	li	a0, 32
+	bseti	a1, zero, 32
+	vmv.v.x	v8, a1
 	vsll.vx	v8, v10, a0, v0.t
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12

@@ -1,10 +1,10 @@
 func0000000000000041:
 	li	a0, -257
+	li	a1, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	li	a0, 33
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vv	v8, v12, v10
 	li	a0, 64

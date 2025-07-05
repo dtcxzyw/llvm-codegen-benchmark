@@ -5,8 +5,8 @@ func000000000000004a:
 	lui	a0, 8192
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v10, a0
-	vmv.v.i	v10, 0
 	li	a0, 127
+	vmv.v.i	v10, 0
 	vand.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

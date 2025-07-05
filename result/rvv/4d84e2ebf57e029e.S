@@ -23,14 +23,14 @@ func000000000000000c:
 	ret
 
 .LCPI2_0:
-	.word	0x3f7fffef
-.LCPI2_1:
 	.word	0x358637bd
+.LCPI2_1:
+	.word	0x3f7fffef
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, %hi(.LCPI2_1)
-	flw	fa4, %lo(.LCPI2_1)(a0)
+	flw	fa5, %lo(.LCPI2_1)(a0)
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa4, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmv.v.f	v12, fa5
 	vfmax.vf	v12, v8, fa4, v0.t
@@ -38,9 +38,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
+	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmv.v.i	v12, 0
-	fli.s	fa5, 1.0
 	vfmin.vf	v12, v8, fa5, v0.t
 	vmv.v.v	v8, v12
 	ret

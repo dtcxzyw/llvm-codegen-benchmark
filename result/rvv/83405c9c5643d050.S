@@ -8,12 +8,11 @@ func0000000000000001:
 
 func0000000000000038:
 	li	a0, -48
+	li	a1, 64
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vx	v12, v8, a0
-	li	a0, 64
-	vmsgtu.vx	v0, v8, a0
-	li	a0, -87
-	vadd.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vmsgtu.vx	v0, v8, a1
+	li	a1, -87
+	vadd.vx	v8, v8, a0
+	vadd.vx	v8, v10, a1, v0.t
 	ret
 

@@ -16,10 +16,10 @@ func0000000000000066:
 	ret
 
 func0000000000000006:
+	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v8, 9
 	vmv.v.i	v8, 0
-	li	a0, 100
 	vmul.vx	v8, v10, a0, v0.t
 	ret
 

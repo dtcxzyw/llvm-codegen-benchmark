@@ -1,10 +1,10 @@
 func0000000000000001:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
-	vmv.v.i	v13, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vsetvli	zero, zero, e16, m1, ta, mu
+	vmv.v.i	v13, 0
 	vwsubu.vv	v10, v13, v12, v0.t
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v8, v10

@@ -1,14 +1,13 @@
 func00000000000000a4:
 	li	a0, -37
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v12, 0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v0, v10, 6
 	li	a0, -36
+	vmsleu.vi	v0, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vadd.vx	v12, v8, a0, v0.t
-	vmv.v.v	v8, v12
+	vmv.v.i	v10, 0
+	vadd.vx	v10, v8, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000064:

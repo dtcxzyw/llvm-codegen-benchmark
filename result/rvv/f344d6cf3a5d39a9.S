@@ -8,12 +8,12 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	bseti	a0, zero, 31
+	li	a0, -128
+	bseti	a1, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vx	v0, v8, a0
+	vmslt.vx	v0, v8, a1
 	vsetvli	zero, zero, e8, mf4, ta, mu
 	vmv.v.i	v8, -1
-	li	a0, -128
 	vxor.vx	v8, v10, a0, v0.t
 	ret
 

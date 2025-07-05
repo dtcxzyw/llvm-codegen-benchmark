@@ -35,11 +35,11 @@ func0000000000000064:
 
 func0000000000000001:
 	lui	a0, 2
+	bseti	a1, zero, 33
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vor.vx	v10, v10, a0, v0.t
-	bseti	a0, zero, 33
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	lui	a0, 4
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v10, v10, a0, v0.t

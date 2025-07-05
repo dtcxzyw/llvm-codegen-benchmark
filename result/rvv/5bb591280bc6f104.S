@@ -35,10 +35,10 @@ func0000000000000018:
 
 func0000000000000041:
 	lui	a0, 256
+	lui	a1, 1
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
-	lui	a0, 1
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	lui	a0, 512
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10

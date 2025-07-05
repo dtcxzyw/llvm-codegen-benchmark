@@ -13,8 +13,8 @@ func0000000000000019:
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmslt.vx	v0, v10, a0
-	vmv.v.i	v10, 1
 	bseti	a0, zero, 63
+	vmv.v.i	v10, 1
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -26,8 +26,8 @@ func000000000000001b:
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmslt.vx	v0, v10, a0
-	vmv.v.i	v10, 0
 	li	a0, -1
+	vmv.v.i	v10, 0
 	srli	a0, a0, 1
 	vxor.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10

@@ -13,36 +13,36 @@ func0000000000000004:
 	ret
 
 func0000000000000020:
-	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsgtu.vx	v0, v10, a0
-	li	a0, 256
-	vmv.v.x	v10, a0
 	lui	a0, 4
+	li	a1, 32
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsgtu.vx	v0, v10, a1
+	li	a1, 256
 	addi	a0, a0, -16
+	vmv.v.x	v10, a1
 	vand.vx	v10, v12, a0, v0.t
 	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000023:
-	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsgtu.vx	v0, v10, a0
-	li	a0, 256
-	vmv.v.x	v10, a0
 	lui	a0, 4
+	li	a1, 32
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsgtu.vx	v0, v10, a1
+	li	a1, 256
 	addi	a0, a0, -16
+	vmv.v.x	v10, a1
 	vand.vx	v10, v12, a0, v0.t
 	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000053:
-	li	a0, 96
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsltu.vx	v0, v10, a0
-	li	a0, 48
-	vmv.v.x	v10, a0
 	li	a0, 127
+	li	a1, 96
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsltu.vx	v0, v10, a1
+	li	a1, 48
+	vmv.v.x	v10, a1
 	vand.vx	v10, v12, a0, v0.t
 	vadd.vv	v8, v8, v10
 	ret

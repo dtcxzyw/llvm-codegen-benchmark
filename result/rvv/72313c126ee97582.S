@@ -14,11 +14,11 @@ func0000000000000004:
 	ret
 
 func0000000000000038:
-	li	a0, 96
-	vsetivli	zero, 16, e8, m1, ta, mu
-	vmv.v.i	v9, 0
-	vmsgtu.vx	v0, v8, a0
 	li	a0, -87
+	li	a1, 96
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsgtu.vx	v0, v8, a1
+	vmv.v.i	v9, 0
 	vadd.vx	v9, v8, a0, v0.t
 	vmv.v.v	v8, v9
 	ret

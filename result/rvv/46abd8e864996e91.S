@@ -50,15 +50,13 @@ func00000000000000e1:
 	ret
 
 func00000000000000a8:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v14, v8
 	li	a0, -48
-	vadd.vx	v8, v12, a0
-	li	a0, 64
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsgtu.vx	v0, v14, a0
-	li	a0, -87
+	li	a1, 64
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmsgtu.vx	v0, v8, a1
+	li	a1, -87
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vadd.vx	v8, v10, a0, v0.t
+	vadd.vx	v8, v12, a0
+	vadd.vx	v8, v10, a1, v0.t
 	ret
 

@@ -15,10 +15,10 @@ func0000000000000000:
 func0000000000000034:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsll.vi	v10, v10, 9
-	li	a0, 51
-	vmv.v.x	v12, a0
 	lui	a0, 1048574
+	li	a1, 51
 	addi	a0, a0, -1485
+	vmv.v.x	v12, a1
 	vadd.vx	v12, v10, a0, v0.t
 	vadd.vv	v8, v12, v8
 	ret

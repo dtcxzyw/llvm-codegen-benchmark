@@ -9,13 +9,13 @@ func0000000000000043:
 	ret
 
 func0000000000000002:
-	lui	a0, 4
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vx	v0, v12, a0
 	lui	a0, 64
+	lui	a1, 4
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmseq.vx	v0, v12, a1
+	li	a1, 512
 	vor.vx	v10, v10, a0, v0.t
-	li	a0, 512
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v8, a1
 	vor.vv	v8, v8, v10
 	ret
 

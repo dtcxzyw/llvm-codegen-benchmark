@@ -28,9 +28,9 @@ func0000000000000085:
 	ret
 
 func0000000000000010:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v0, v8, 2
-	lui	a0, 524288
 	addi	a0, a0, 2
 	vadd.vx	v8, v10, a0, v0.t
 	lui	a0, 1047844
@@ -39,9 +39,9 @@ func0000000000000010:
 	ret
 
 func0000000000000013:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v0, v8, 2
-	lui	a0, 524288
 	addi	a0, a0, 2
 	vadd.vx	v8, v10, a0, v0.t
 	lui	a0, 1047844

@@ -1,13 +1,13 @@
 func0000000000000118:
-	li	a0, -1
-	srli	a0, a0, 32
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	li	a0, 32
+	li	a1, -1
+	srli	a1, a1, 32
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsgtu.vx	v0, v8, a1
+	lui	a1, 16
 	vsrl.vx	v8, v8, a0, v0.t
-	lui	a0, 16
-	addi	a0, a0, -1
-	vmsgtu.vx	v0, v8, a0
+	addi	a1, a1, -1
+	vmsgtu.vx	v0, v8, a1
 	ret
 
 func0000000000000318:

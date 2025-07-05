@@ -1,12 +1,11 @@
 func0000000000000064:
 	li	a0, 64
+	li	a1, 26
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vx	v12, v10, a0
-	li	a0, 26
-	vmsltu.vx	v0, v8, a0
-	li	a0, 96
-	vor.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vmsltu.vx	v0, v8, a1
+	li	a1, 96
+	vadd.vx	v8, v10, a0
+	vor.vx	v8, v10, a1, v0.t
 	ret
 
 func0000000000000061:
@@ -18,13 +17,12 @@ func0000000000000061:
 
 func00000000000000e4:
 	li	a0, 55
+	lui	a1, 655360
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vx	v12, v10, a0
-	lui	a0, 655360
-	vmsltu.vx	v0, v8, a0
-	li	a0, 48
-	vor.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vmsltu.vx	v0, v8, a1
+	li	a1, 48
+	vadd.vx	v8, v10, a0
+	vor.vx	v8, v10, a1, v0.t
 	ret
 
 func00000000000000e1:
@@ -48,13 +46,14 @@ func0000000000000024:
 
 func00000000000000f4:
 	lui	a0, 5
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsleu.vi	v0, v8, 15
 	addi	a0, a0, 1120
-	vadd.vx	v8, v10, a0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vadd.vx	v12, v10, a0
 	li	a0, 21
+	vmsleu.vi	v0, v8, 15
 	slli	a0, a0, 10
-	vor.vx	v8, v10, a0, v0.t
+	vor.vx	v12, v10, a0, v0.t
+	vmv.v.v	v8, v12
 	ret
 
 func00000000000000d4:

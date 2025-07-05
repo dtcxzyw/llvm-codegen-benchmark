@@ -15,12 +15,12 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	bseti	a0, zero, 32
+	li	a0, 16
+	bseti	a1, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
+	vmsltu.vx	v0, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v8, -1
-	li	a0, 16
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 
@@ -33,13 +33,13 @@ func0000000000000024:
 	ret
 
 func0000000000000038:
-	lui	a0, 5
-	addi	a0, a0, -1
+	li	a0, -20
+	lui	a1, 5
+	addi	a1, a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v8, 0
-	li	a0, -20
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 
@@ -76,11 +76,11 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
+	li	a0, -63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v8, 0
-	li	a0, -63
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

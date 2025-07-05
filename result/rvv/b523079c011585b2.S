@@ -5,11 +5,11 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	lui	a0, 16
-	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 17
+	lui	a1, 16
+	addi	a1, a1, -1
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vx	v0, v8, a1
 	addi	a0, a0, 11
 	vxor.vx	v8, v8, a0, v0.t
 	ret

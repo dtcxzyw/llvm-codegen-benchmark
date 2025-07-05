@@ -26,10 +26,10 @@ func0000000000000008:
 func00000000000000aa:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsub.vv	v10, v10, v12
-	lui	a0, 1048400
-	addi	a0, a0, 1424
-	vmsgt.vx	v0, v10, a0
 	lui	a0, 176
+	lui	a1, 1048400
+	addi	a1, a1, 1424
+	vmsgt.vx	v0, v10, a1
 	addi	a0, a0, -1425
 	vadd.vx	v8, v10, a0, v0.t
 	ret

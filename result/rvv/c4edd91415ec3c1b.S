@@ -12,10 +12,10 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	li	a0, 192
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsgt.vx	v0, v8, a0
 	li	a0, -63
+	li	a1, 192
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsgt.vx	v0, v8, a1
 	srli	a0, a0, 1
 	vand.vx	v8, v10, a0, v0.t
 	ret

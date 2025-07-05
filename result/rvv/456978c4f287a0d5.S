@@ -6,8 +6,8 @@ func0000000000000000:
 	fli.s	fa4, 8.0
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmul.vf	v12, v8, fa4
+	fli.s	fa4, 1.0
 	vfmv.v.f	v8, fa5
-	fli.s	fa5, 1.0
-	vfrdiv.vf	v8, v12, fa5, v0.t
+	vfrdiv.vf	v8, v12, fa4, v0.t
 	ret
 

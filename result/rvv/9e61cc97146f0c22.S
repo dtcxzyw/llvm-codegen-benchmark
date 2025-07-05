@@ -31,8 +31,8 @@ func0000000000000001:
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsll.vi	v10, v8, 16
-	vmv.v.i	v8, 0
 	lui	a0, 65536
+	vmv.v.i	v8, 0
 	vor.vx	v8, v10, a0, v0.t
 	ret
 

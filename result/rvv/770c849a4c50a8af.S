@@ -1,7 +1,7 @@
 func0000000000000006:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v8, -1
-	lui	a0, 524288
 	addi	a0, a0, 1
 	vadd.vx	v8, v8, a0, v0.t
 	lui	a0, 322639
@@ -28,17 +28,17 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	lui	a0, 244141
-	addi	a0, a0, -1537
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 804435
+	lui	a1, 244141
+	addi	a1, a1, -1537
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vx	v0, v8, a1
+	lui	a1, 274878
 	addi	a0, a0, 1536
 	vadd.vx	v8, v8, a0, v0.t
-	lui	a0, 274878
-	addi	a0, a0, -381
-	vmulhu.vx	v10, v8, a0
 	lui	a0, 244
+	addi	a1, a1, -381
+	vmulhu.vx	v10, v8, a1
 	vsrl.vi	v10, v10, 18
 	addi	a0, a0, 576
 	vnmsac.vx	v8, a0, v10

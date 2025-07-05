@@ -9,9 +9,9 @@ func0000000000000028:
 	ret
 
 func00000000000000a8:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 15
-	lui	a0, 16
 	addi	a0, a0, -6
 	vadd.vx	v8, v8, a0, v0.t
 	vsetvli	zero, zero, e16, m1, ta, ma

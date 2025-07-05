@@ -23,11 +23,11 @@ func0000000000000061:
 
 func0000000000000041:
 	li	a0, 512
+	lui	a1, 20480
 	vsetivli	zero, 8, e16, m1, ta, mu
 	vor.vx	v10, v10, a0, v0.t
-	lui	a0, 20480
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	bseti	a0, zero, 11
 	vsetvli	zero, zero, e16, m1, ta, mu
 	vor.vx	v10, v10, a0, v0.t

@@ -22,9 +22,9 @@ func0000000000000024:
 	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v10, v8, a0
+	li	a0, -7
 	vmsleu.vi	v0, v10, 1
 	vmv.v.i	v10, 0
-	li	a0, -7
 	srli	a0, a0, 1
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
@@ -33,9 +33,9 @@ func0000000000000024:
 func00000000000000e4:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v10, v8, -3
+	li	a0, 62
 	vmsleu.vi	v0, v10, 4
 	vmv.v.i	v10, 0
-	li	a0, 62
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

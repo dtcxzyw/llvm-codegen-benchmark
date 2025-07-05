@@ -1,6 +1,6 @@
 func0000000000000024:
-	fmv.w.x	fa5, zero
 	lui	a0, 277312
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmflt.vf	v0, v12, fa5
 	fmv.w.x	fa5, a0
@@ -9,8 +9,8 @@ func0000000000000024:
 	ret
 
 func0000000000000022:
-	fmv.w.x	fa5, zero
 	lui	a0, 277312
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmflt.vf	v0, v12, fa5
 	fmv.w.x	fa5, a0

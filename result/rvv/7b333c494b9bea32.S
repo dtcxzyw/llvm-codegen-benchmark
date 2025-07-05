@@ -38,11 +38,11 @@ func0000000000000064:
 	ret
 
 func0000000000000024:
-	li	a0, 153
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v10, 0
-	vmsltu.vx	v0, v8, a0
 	li	a0, 152
+	li	a1, 153
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsltu.vx	v0, v8, a1
+	vmv.v.i	v10, 0
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
@@ -56,11 +56,11 @@ func000000000000000a:
 	ret
 
 func000000000000002a:
+	li	a0, 36
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 10
-	li	a0, 26
-	vmv.v.x	v10, a0
-	li	a0, 36
+	li	a1, 26
+	vmv.v.x	v10, a1
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

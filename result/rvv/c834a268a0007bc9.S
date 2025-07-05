@@ -23,8 +23,8 @@ func0000000000000005:
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, -14
 	li	a0, 48
+	vmv.v.i	v8, -14
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

@@ -14,9 +14,9 @@ func000000000000000c:
 	ret
 
 func00000000000000ca:
+	li	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v10, 0
-	li	a0, 1
 	csrwi	vxrm, 2
 	vaaddu.vx	v8, v12, a0, v0.t
 	ret

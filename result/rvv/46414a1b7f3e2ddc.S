@@ -16,9 +16,9 @@ func0000000000000026:
 	vmv1r.v	v10, v9
 	vmv1r.v	v11, v8
 	vzext.vf4	v8, v10
+	lui	a0, 15
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsle.vi	v0, v11, -1
-	lui	a0, 15
 	addi	a0, a0, 1792
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vx	v8, v8, a0, v0.t

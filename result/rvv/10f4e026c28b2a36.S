@@ -92,9 +92,9 @@ func000000000000004a:
 	ret
 
 func0000000000000046:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
-	lui	a0, 524288
 	addi	a0, a0, -1
 	vadd.vx	v8, v12, a0, v0.t
 	ret
@@ -133,10 +133,10 @@ func0000000000000064:
 	ret
 
 func0000000000000054:
-	lui	a0, 320
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v10, a0
 	lui	a0, 64
+	lui	a1, 320
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsltu.vx	v0, v10, a1
 	addi	a0, a0, 1
 	vadd.vx	v8, v12, a0, v0.t
 	ret

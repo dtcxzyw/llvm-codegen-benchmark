@@ -43,8 +43,8 @@ func0000000000000022:
 .LCPI4_1:
 	.quad	0x4056800000000000
 func0000000000000025:
-	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
+	fmv.d.x	fa5, zero
 	fld	fa4, %lo(.LCPI4_0)(a0)
 	lui	a0, %hi(.LCPI4_1)
 	fld	fa3, %lo(.LCPI4_1)(a0)

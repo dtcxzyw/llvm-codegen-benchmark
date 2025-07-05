@@ -8,8 +8,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	fmv.w.x	fa5, zero
 	lui	a0, 277312
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmflt.vf	v0, v16, fa5
 	fmv.w.x	fa5, a0

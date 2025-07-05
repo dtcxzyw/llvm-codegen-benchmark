@@ -8,13 +8,12 @@ func0000000000000001:
 
 func0000000000000021:
 	li	a0, 511
+	lui	a1, 4
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vand.vx	v10, v10, a0
-	lui	a0, 4
-	vmseq.vx	v0, v8, a0
-	lui	a0, 524288
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vmseq.vx	v0, v8, a1
+	lui	a1, 524288
+	vand.vx	v8, v10, a0
+	vor.vx	v8, v8, a1, v0.t
 	ret
 
 func000000000000002a:

@@ -15,9 +15,9 @@ func0000000000000260:
 	ret
 
 func0000000000000264:
+	lui	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
-	lui	a0, 1
 	addi	a0, a0, -496
 	vadd.vx	v10, v10, a0, v0.t
 	li	a0, -10

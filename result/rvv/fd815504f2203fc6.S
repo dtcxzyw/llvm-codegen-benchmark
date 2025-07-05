@@ -13,8 +13,8 @@ func0000000000000008:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v0
-	vmseq.vi	v0, v10, 0
 	li	a0, 5
+	vmseq.vi	v0, v10, 0
 	slli	a0, a0, 55
 	vandn.vx	v8, v8, a0, v0.t
 	li	a0, 17

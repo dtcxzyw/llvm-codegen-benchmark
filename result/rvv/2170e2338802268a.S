@@ -80,12 +80,12 @@ func0000000000000014:
 	vmv1r.v	v10, v0
 	li	a0, 127
 	vmv.v.i	v12, 0
+	li	a1, -32
 	vmsltu.vx	v0, v8, a0
 	li	a0, -126
 	vmerge.vim	v12, v12, 1, v0
 	vmv.v.x	v8, a0
-	li	a0, -32
 	vmv1r.v	v0, v10
-	vor.vx	v8, v12, a0, v0.t
+	vor.vx	v8, v12, a1, v0.t
 	ret
 

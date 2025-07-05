@@ -20,11 +20,11 @@ func00000000000001e1:
 
 func0000000000000001:
 	li	a0, 20
+	li	a1, 17
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.x	v12, a0
-	li	a0, 17
 	vmerge.vim	v12, v12, 12, v0
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	vadd.vv	v8, v10, v12
 	li	a0, 240
 	vadd.vx	v8, v8, a0, v0.t

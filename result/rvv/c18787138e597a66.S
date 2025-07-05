@@ -1,12 +1,11 @@
 func00000000000000e4:
 	li	a0, 55
+	li	a1, -96
 	vsetivli	zero, 16, e8, m1, ta, mu
-	vadd.vx	v10, v9, a0
-	li	a0, -96
-	vmsltu.vx	v0, v8, a0
-	li	a0, 48
-	vor.vx	v10, v9, a0, v0.t
-	vmv.v.v	v8, v10
+	vmsltu.vx	v0, v8, a1
+	li	a1, 48
+	vadd.vx	v8, v9, a0
+	vor.vx	v8, v9, a1, v0.t
 	ret
 
 func0000000000000024:

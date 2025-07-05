@@ -11,10 +11,10 @@ func0000000000000061:
 
 func0000000000000001:
 	lui	a0, 786432
+	lui	a1, 262144
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v12, v10, a0
-	lui	a0, 262144
-	addi	a0, a0, 64
+	addi	a0, a1, 64
 	vmerge.vvm	v10, v12, v10, v0
 	vmseq.vx	v0, v8, a0
 	lui	a0, 524288
@@ -45,12 +45,12 @@ func0000000000000078:
 
 func0000000000000041:
 	lui	a0, 128
+	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v12, v10, a0
-	lui	a0, 16
-	addi	a0, a0, -14
+	addi	a1, a1, -14
 	vmerge.vvm	v10, v12, v10, v0
-	vmseq.vx	v0, v8, a0
+	vmseq.vx	v0, v8, a1
 	lui	a0, 256
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10

@@ -2,9 +2,9 @@ func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	li	a0, 165
+	li	a1, 700
 	vmerge.vxm	v10, v10, a0, v0
-	li	a0, 700
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
 	li	a0, 317
 	vadd.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10

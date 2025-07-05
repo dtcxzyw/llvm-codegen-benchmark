@@ -50,11 +50,11 @@ func0000000000000068:
 	ret
 
 func0000000000000028:
+	li	a0, 29
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vi	v0, v8, 8
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v8, 0
-	li	a0, 29
 	vrsub.vx	v8, v10, a0, v0.t
 	ret
 

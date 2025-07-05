@@ -3,8 +3,8 @@ func0000000000000001:
 	vand.vi	v10, v8, -4
 	li	a0, 40
 	vmseq.vx	v0, v10, a0
-	vmv.v.i	v10, 0
 	li	a0, -39
+	vmv.v.i	v10, 0
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

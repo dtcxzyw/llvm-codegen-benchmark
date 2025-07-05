@@ -1,7 +1,7 @@
 func0000000000000026:
+	li	a0, 13
 	vsetivli	zero, 16, e16, m2, ta, mu
 	vmsle.vi	v0, v8, -1
-	li	a0, 13
 	slli	a0, a0, 11
 	vadd.vx	v8, v8, a0, v0.t
 	ret

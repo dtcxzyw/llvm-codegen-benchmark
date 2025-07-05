@@ -32,9 +32,9 @@ func0000000000000198:
 	ret
 
 func0000000000000018:
+	lui	a0, 976563
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, -1
-	lui	a0, 976563
 	addi	a0, a0, -2048
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vx	v9, v9, a0, v0.t

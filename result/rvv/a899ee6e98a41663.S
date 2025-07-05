@@ -26,11 +26,11 @@ func00000000000000b8:
 	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	li	a1, -20
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v9, 0
-	li	a0, -20
-	vadd.vx	v9, v8, a0, v0.t
+	vadd.vx	v9, v8, a1, v0.t
 	vmv.v.v	v8, v9
 	ret
 

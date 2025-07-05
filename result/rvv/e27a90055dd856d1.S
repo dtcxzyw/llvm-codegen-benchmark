@@ -39,13 +39,13 @@ func0000000000000014:
 func0000000000000042:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
-	lui	a0, 12
-	vmseq.vx	v0, v10, a0
 	lui	a0, 256
+	lui	a1, 12
+	vmseq.vx	v0, v10, a1
+	lui	a1, 512
 	vor.vx	v8, v8, a0, v0.t
-	lui	a0, 512
 	vmv1r.v	v0, v12
-	vor.vx	v8, v8, a0, v0.t
+	vor.vx	v8, v8, a1, v0.t
 	ret
 
 func0000000000000071:

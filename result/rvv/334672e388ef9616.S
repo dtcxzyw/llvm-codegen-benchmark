@@ -9,9 +9,9 @@ func0000000000000000:
 func000000000000003f:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v10, v10, v8
-	li	a0, 52
-	vadd.vx	v8, v10, a0
 	li	a0, 48
+	li	a1, 52
+	vadd.vx	v8, v10, a1
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

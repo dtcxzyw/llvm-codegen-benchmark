@@ -27,11 +27,11 @@ func00000000000001a6:
 	ret
 
 func00000000000001f4:
-	li	a0, 384
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v8, a0
 	lui	a0, 512
+	li	a1, 384
 	addi	a0, a0, 192
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsltu.vx	v0, v8, a1
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vadd.vx	v10, v8, a0, v0.t

@@ -14,9 +14,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v10, 0
-	lui	a0, 524288
 	addi	a0, a0, -8
 	vand.vx	v8, v12, a0, v0.t
 	ret

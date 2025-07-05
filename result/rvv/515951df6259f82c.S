@@ -63,10 +63,10 @@ func0000000000000008:
 func00000000000000e4:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v10, v10, v12
-	li	a0, 23
-	slli	a0, a0, 7
-	vmsltu.vx	v0, v8, a0
 	lui	a0, 12
+	li	a1, 23
+	slli	a1, a1, 7
+	vmsltu.vx	v0, v8, a1
 	addi	a0, a0, 320
 	vadd.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10

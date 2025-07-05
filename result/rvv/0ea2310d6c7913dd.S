@@ -8,13 +8,13 @@ func0000000000000021:
 	ret
 
 func0000000000000421:
-	lui	a0, 12
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vx	v0, v10, a0
 	lui	a0, 256
+	lui	a1, 12
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmseq.vx	v0, v10, a1
+	lui	a1, 1
 	vor.vx	v12, v12, a0, v0.t
-	lui	a0, 1
-	vmseq.vx	v0, v10, a0
+	vmseq.vx	v0, v10, a1
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 

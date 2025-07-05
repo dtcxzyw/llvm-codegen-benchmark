@@ -1,9 +1,9 @@
 func0000000000000003:
-	lui	a0, 74
-	addi	a0, a0, 1896
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.x	v10, a0
 	li	a0, 258
+	lui	a1, 74
+	addi	a1, a1, 1896
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.x	v10, a1
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
