@@ -39,7 +39,8 @@
 func0000000000000005:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpabsd	%ymm0, %ymm0
+	vpminud	%ymm1, %ymm0, %ymm2
+	vpmaxud	%ymm1, %ymm0, %ymm0
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
