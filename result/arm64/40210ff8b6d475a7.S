@@ -1,7 +1,6 @@
 func0000000000000007:
 	and	x8, x1, #0xff
-	orr	x8, x8, x0, lsl #8
-	mvn	x0, x8
+	eon	x0, x8, x0, lsl #8
 	ret
 
 func0000000000000005:

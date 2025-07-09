@@ -15,8 +15,7 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	orr	x8, x0, x1, lsl #32
-	mvn	x0, x8
+	eon	x0, x0, x1, lsl #32
 	ret
 
 func0000000000000001:

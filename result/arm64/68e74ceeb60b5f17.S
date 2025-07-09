@@ -11,14 +11,13 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	bfi	w1, w0, #8, #24
-	mvn	w0, w1
+	and	w8, w1, #0xff
+	eon	w0, w8, w0, lsl #8
 	ret
 
 func000000000000000b:
 	and	w8, w1, #0xff
-	orr	w8, w8, w0, lsl #1
-	mvn	w0, w8
+	eon	w0, w8, w0, lsl #1
 	ret
 
 func0000000000000009:

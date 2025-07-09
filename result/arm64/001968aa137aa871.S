@@ -16,7 +16,6 @@ func000000000000000f:
 
 func000000000000000b:
 	orr	w8, w1, w2, lsl #16
-	orr	w8, w8, w0
-	mvn	w0, w8
+	eon	w0, w8, w0
 	ret
 

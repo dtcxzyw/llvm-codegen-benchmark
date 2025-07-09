@@ -4,8 +4,7 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	orr	w8, w0, w1
-	mvn	w0, w8
+	eon	w0, w0, w1
 	ret
 
 func0000000000000007:

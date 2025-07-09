@@ -24,8 +24,7 @@ func0000000000000002:
 	ret
 
 func0000000000000058:
-	orr	w8, w1, w2
-	mvn	w8, w8
+	eon	w8, w1, w2
 	tst	x8, #0x7ff00000
 	cset	w8, ne
 	orr	w8, w8, w0

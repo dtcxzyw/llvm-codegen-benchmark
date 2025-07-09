@@ -1,6 +1,5 @@
 func000000000000008a:
-	orr	w8, w0, w1
-	mvn	w8, w8
+	eon	w8, w0, w1
 	lsr	w0, w8, #31
 	ret
 
@@ -11,8 +10,7 @@ func0000000000000081:
 	ret
 
 func00000000000000ca:
-	orr	w8, w0, w1
-	mvn	w8, w8
+	eon	w8, w0, w1
 	lsr	w0, w8, #31
 	ret
 

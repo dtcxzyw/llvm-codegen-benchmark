@@ -27,8 +27,7 @@ func000000000000007d:
 	ret
 
 func0000000000000074:
-	orr	w8, w1, w2, lsl #1
-	mvn	w8, w8
+	eon	w8, w1, w2, lsl #1
 	add	w0, w0, w8
 	ret
 
