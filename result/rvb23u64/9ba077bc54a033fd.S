@@ -1,6 +1,5 @@
 func0000000000000084:
-	or	a1, a1, a2
-	not	a1, a1
+	xnor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

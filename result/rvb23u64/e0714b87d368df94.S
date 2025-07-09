@@ -1,8 +1,7 @@
 func0000000000000001:
 	slli	a1, a1, 4
 	andi	a0, a0, 15
-	or	a0, a0, a1
-	not	a0, a0
+	xnor	a0, a0, a1
 	ret
 
 func0000000000000005:
