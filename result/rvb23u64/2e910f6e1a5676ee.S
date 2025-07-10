@@ -100,10 +100,9 @@ func00000000000000ac:
 
 func00000000000000e1:
 	srli	a6, a4, 63
-	slli	a4, a4, 1
-	sh1add	a5, a5, a6
-	or	a2, a2, a4
-	or	a3, a3, a5
+	sh1add	a2, a4, a2
+	sh1add	a4, a5, a6
+	or	a3, a3, a4
 	xor	a0, a0, a2
 	xor	a1, a1, a3
 	or	a0, a0, a1

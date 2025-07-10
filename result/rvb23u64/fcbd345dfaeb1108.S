@@ -113,11 +113,10 @@ func0000000000000081:
 
 func00000000000000e1:
 	srli	a5, a4, 63
-	slli	a4, a4, 1
-	or	a2, a2, a4
+	sh1add	a2, a4, a2
 	or	a3, a3, a5
-	xor	a1, a1, a3
 	xor	a0, a0, a2
+	xor	a1, a1, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

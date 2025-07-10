@@ -79,13 +79,11 @@ func00000000000001e4:
 	retq
 
 func00000000000000e1:
-	movq	%r8, %rax
-	shrq	$63, %rax
-	addq	%r8, %r8
-	orq	%rdx, %r8
-	orq	%rcx, %rax
-	xorq	%rsi, %rax
-	xorq	%rdi, %r8
+	leaq	(%rdx,%r8,2), %rax
+	shrq	$63, %r8
+	orq	%rcx, %r8
+	xorq	%rdi, %rax
+	xorq	%rsi, %r8
 	orq	%rax, %r8
 	sete	%al
 	retq

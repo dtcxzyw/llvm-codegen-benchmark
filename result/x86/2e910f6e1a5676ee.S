@@ -71,12 +71,11 @@ func00000000000000ac:
 
 func00000000000000e1:
 	shldq	$1, %r8, %r9
-	addq	%r8, %r8
-	orq	%rdx, %r8
 	orq	%rcx, %r9
+	leaq	(%rdx,%r8,2), %rax
+	xorq	%rdi, %rax
 	xorq	%rsi, %r9
-	xorq	%rdi, %r8
-	orq	%r9, %r8
+	orq	%rax, %r9
 	sete	%al
 	retq
 
