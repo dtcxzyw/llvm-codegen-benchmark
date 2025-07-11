@@ -6,8 +6,7 @@ func0000000000000016:
 
 func0000000000000014:
 	mov	w8, #94
-	mov	w9, #94
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	add	x0, x0, w8, sxtw #2
 	ret
 

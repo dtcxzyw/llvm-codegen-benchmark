@@ -43,8 +43,7 @@ func0000000000000000:
 
 func000000000000003d:
 	mov	w8, #25
-	mov	w9, #25
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	mul	w0, w8, w0
 	ret
 

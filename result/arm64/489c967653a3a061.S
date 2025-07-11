@@ -23,9 +23,8 @@ func0000000000000004:
 
 func000000000000000f:
 	mov	w8, #25
-	mov	w9, #25
 	tst	w0, #0x1
-	madd	w8, w2, w8, w9
+	madd	w8, w2, w8, w8
 	csel	w0, w8, w1, ne
 	ret
 

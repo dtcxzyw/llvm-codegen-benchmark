@@ -1,8 +1,7 @@
 func00000000000000e1:
 	mov	w8, #10
-	mov	w9, #10
-	madd	w8, w1, w8, w9
 	add	x9, x0, #1
+	madd	w8, w1, w8, w8
 	cmp	x9, x8
 	cset	w0, eq
 	ret

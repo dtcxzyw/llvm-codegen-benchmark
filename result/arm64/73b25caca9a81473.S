@@ -6,20 +6,17 @@ func0000000000000011:
 
 func0000000000000030:
 	mov	w8, #6
-	mov	w9, #6
-	madd	w0, w0, w8, w9
+	madd	w0, w0, w8, w8
 	ret
 
 func0000000000000010:
 	mov	w8, #40
-	mov	w9, #40
-	madd	w0, w0, w8, w9
+	madd	w0, w0, w8, w8
 	ret
 
 func0000000000000020:
 	mov	w8, #10
-	mov	w9, #10
-	madd	w0, w0, w8, w9
+	madd	w0, w0, w8, w8
 	ret
 
 func0000000000000000:

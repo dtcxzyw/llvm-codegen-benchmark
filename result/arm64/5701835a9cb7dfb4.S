@@ -16,8 +16,7 @@ func0000000000000001:
 
 func0000000000000021:
 	mov	w8, #10
-	mov	w9, #10
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	x0, x8
 	cset	w0, eq
 	ret

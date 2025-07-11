@@ -16,9 +16,8 @@ func0000000000000035:
 func0000000000000030:
 	and	w9, w1, #0x1
 	mov	w8, #3600
-	mov	w10, #3600
 	add	w9, w0, w9
-	madd	w0, w9, w8, w10
+	madd	w0, w9, w8, w8
 	ret
 
 func0000000000000010:

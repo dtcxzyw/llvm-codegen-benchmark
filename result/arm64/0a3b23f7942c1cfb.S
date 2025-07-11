@@ -46,16 +46,14 @@ func0000000000000001:
 
 func00000000000000e5:
 	mov	w8, #6
-	mov	w9, #6
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	w8, w0
 	cset	w0, ls
 	ret
 
 func00000000000001f5:
 	mov	w8, #6
-	mov	w9, #6
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	w8, w0
 	cset	w0, ls
 	ret
@@ -131,16 +129,14 @@ func00000000000001a6:
 
 func000000000000014a:
 	mov	w8, #6
-	mov	w9, #6
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	w8, w0
 	cset	w0, gt
 	ret
 
 func00000000000001f4:
 	mov	w8, #11
-	mov	w9, #11
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	w8, w0
 	cset	w0, lo
 	ret

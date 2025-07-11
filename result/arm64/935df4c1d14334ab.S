@@ -9,9 +9,8 @@ func000000000000000d:
 func000000000000000f:
 	mov	w8, #25
 	and	w9, w2, #0x7f
-	mov	w10, #25
-	madd	w8, w9, w8, w10
 	tst	w0, #0x1
+	madd	w8, w9, w8, w8
 	csel	w0, w8, w1, ne
 	ret
 

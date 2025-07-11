@@ -12,7 +12,6 @@ func0000000000000015:
 
 func0000000000000001:
 	mov	w8, #12
-	mov	w9, #12
-	madd	w0, w0, w8, w9
+	madd	w0, w0, w8, w8
 	ret
 

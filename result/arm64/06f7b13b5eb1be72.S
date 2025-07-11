@@ -1,7 +1,6 @@
 func000000000000000b:
 	mov	w8, #10
-	mov	w9, #10
-	madd	w8, w2, w8, w9
+	madd	w8, w2, w8, w8
 	add	x8, x1, w8, sxtw
 	add	x0, x8, x0
 	ret

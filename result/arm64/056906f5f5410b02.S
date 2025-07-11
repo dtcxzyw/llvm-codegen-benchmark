@@ -11,12 +11,11 @@ func000000000000001d:
 func0000000000000008:
 	mov	w8, #43691
 	sub	w9, w0, #24
-	mov	w10, #24
 	movk	w8, #43690, lsl #16
 	umull	x8, w9, w8
 	mov	w9, #24
 	lsr	x8, x8, #36
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 
 func000000000000001f:
@@ -43,12 +42,11 @@ func000000000000003d:
 func000000000000001c:
 	mov	w8, #43691
 	sub	w9, w0, #6
-	mov	w10, #6
 	movk	w8, #43690, lsl #16
 	umull	x8, w9, w8
 	mov	w9, #6
 	lsr	x8, x8, #34
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 
 func000000000000000a:

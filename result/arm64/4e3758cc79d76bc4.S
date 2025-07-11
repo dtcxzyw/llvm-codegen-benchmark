@@ -9,24 +9,21 @@ func0000000000000055:
 func00000000000000d5:
 	sub	w8, w2, w1
 	mov	w9, #6
-	mov	w10, #6
 	add	w8, w8, w0
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 
 func0000000000000044:
 	sub	w8, w2, w1
 	mov	w9, #-137
-	mov	w10, #-137
 	add	w8, w8, w0
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 
 func0000000000000004:
 	sub	w8, w2, w1
 	mov	w9, #-137
-	mov	w10, #-137
 	add	w8, w8, w0
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 

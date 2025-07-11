@@ -22,11 +22,10 @@ func0000000000000005:
 func000000000000000f:
 	mov	w8, #34079
 	mov	w9, #400
-	mov	w10, #400
 	movk	w8, #20971, lsl #16
 	umull	x8, w0, w8
 	lsr	x8, x8, #39
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 
 func000000000000000d:
@@ -42,10 +41,9 @@ func000000000000000d:
 func000000000000000c:
 	mov	w8, #60495
 	mov	w9, #52
-	mov	w10, #52
 	movk	w8, #20164, lsl #16
 	umull	x8, w0, w8
 	lsr	x8, x8, #36
-	madd	w0, w8, w9, w10
+	madd	w0, w8, w9, w9
 	ret
 

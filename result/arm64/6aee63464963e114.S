@@ -1,7 +1,6 @@
 func0000000000000015:
 	mov	w8, #100
-	mov	w9, #100
-	madd	w8, w0, w8, w9
+	madd	w8, w0, w8, w8
 	sbfiz	x0, x8, #4, #32
 	ret
 

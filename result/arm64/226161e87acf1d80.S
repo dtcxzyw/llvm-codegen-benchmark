@@ -1,9 +1,8 @@
 func000000000000007a:
 	mov	w8, #400
-	mov	w9, #400
 	tst	w1, #0x1
-	madd	w8, w2, w8, w9
 	mov	w9, #34079
+	madd	w8, w2, w8, w8
 	movk	w9, #20971, lsl #16
 	csel	w8, w8, wzr, ne
 	add	w8, w0, w8

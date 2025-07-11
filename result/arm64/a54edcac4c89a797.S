@@ -1,9 +1,8 @@
 func000000000000007f:
 	ubfiz	w9, w1, #8, #8
 	mov	w8, #12
-	mov	w10, #12
 	orr	w9, w9, w0
-	madd	w0, w9, w8, w10
+	madd	w0, w9, w8, w8
 	ret
 
 func0000000000000075:

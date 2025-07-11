@@ -74,8 +74,7 @@ func0000000000000002:
 
 func000000000000000d:
 	mov	x8, #-48
-	mov	x9, #-48
-	madd	x0, x0, x8, x9
+	madd	x0, x0, x8, x8
 	ret
 
 func000000000000000e:

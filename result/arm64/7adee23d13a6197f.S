@@ -97,8 +97,7 @@ func00000000000001eb:
 
 func0000000000000146:
 	mov	w8, #6
-	mov	w9, #6
-	madd	w8, w1, w8, w9
+	madd	w8, w1, w8, w8
 	cmp	w0, w8
 	cset	w0, lt
 	ret
