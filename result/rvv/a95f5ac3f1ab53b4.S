@@ -4,10 +4,11 @@ func0000000000000314:
 	lui	a0, 4096
 	vmslt.vx	v0, v10, a0
 	lui	a0, 16
-	vmv.v.i	v8, 8
-	vmerge.vim	v8, v8, 6, v0
-	vmsltu.vx	v0, v10, a0
-	vmerge.vim	v8, v8, 4, v0
+	vmv.v.i	v9, 8
+	vmsltu.vx	v8, v10, a0
+	vmerge.vim	v9, v9, 6, v0
+	vmv.v.v	v0, v8
+	vmerge.vim	v8, v9, 4, v0
 	ret
 
 func0000000000000081:
@@ -26,12 +27,13 @@ func0000000000000c18:
 	li	a0, 2047
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 16
-	vmv.v.i	v8, 0
+	vmv.v.i	v9, 0
 	addi	a0, a0, -1
-	vmerge.vim	v8, v8, 1, v0
-	vmsgtu.vx	v0, v10, a0
-	vor.vi	v8, v8, 2
-	vmerge.vim	v8, v8, 4, v0
+	vmsgtu.vx	v8, v10, a0
+	vmerge.vim	v9, v9, 1, v0
+	vor.vi	v9, v9, 2
+	vmv.v.v	v0, v8
+	vmerge.vim	v8, v9, 4, v0
 	ret
 
 func0000000000000086:

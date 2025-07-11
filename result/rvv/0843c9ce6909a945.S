@@ -1,19 +1,20 @@
 func0000000000000294:
 	li	a0, 254
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vand.vx	v10, v8, a0
+	li	a0, 17
+	vmsltu.vx	v8, v10, a0
 	li	a0, 33
-	vmsltu.vx	v0, v8, a0
+	vmsltu.vx	v0, v10, a0
 	lui	a0, 262144
 	addi	a0, a0, 369
 	vmv.v.x	v10, a0
 	lui	a0, 131072
 	addi	a0, a0, 361
 	vmerge.vxm	v10, v10, a0, v0
-	li	a0, 17
-	vmsltu.vx	v0, v8, a0
 	lui	a0, 65536
 	addi	a0, a0, 353
+	vmv1r.v	v0, v8
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
