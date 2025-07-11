@@ -111,10 +111,10 @@ func0000000000000007:
 	vpbroadcastq	.LCPI7_0(%rip), %zmm6
 	vpandq	%zmm6, %zmm5, %zmm5
 	vpbroadcastq	.LCPI7_1(%rip), %zmm7
-	vpcmpneqq	%zmm7, %zmm5, %k1
+	vpcmpeqq	%zmm7, %zmm5, %k1
 	vpandq	%zmm6, %zmm4, %zmm4
-	vpcmpneqq	%zmm7, %zmm4, %k2
-	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
-	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
+	vpcmpeqq	%zmm7, %zmm4, %k2
+	vmovapd	%zmm2, %zmm0 {%k2}
+	vmovapd	%zmm3, %zmm1 {%k1}
 	retq
 

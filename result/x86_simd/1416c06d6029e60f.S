@@ -65,18 +65,19 @@ func0000000000000008:
 .LCPI4_0:
 	.quad	9223372036854775807
 .LCPI4_1:
-	.quad	9218868437227405311
+	.quad	9218868437227405312
 .LCPI4_2:
 	.quad	0x7ff8000000000000
 func0000000000000009:
 	vpbroadcastq	.LCPI4_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm3, %zmm3
 	vpbroadcastq	.LCPI4_1(%rip), %zmm5
-	vpcmpgtq	%zmm5, %zmm3, %k1
+	vpcmpgtq	%zmm3, %zmm5, %k1
 	vpandq	%zmm4, %zmm2, %zmm2
-	vpcmpgtq	%zmm5, %zmm2, %k2
+	vpcmpgtq	%zmm2, %zmm5, %k2
 	vbroadcastsd	.LCPI4_2(%rip), %zmm2
-	vmovapd	%zmm2, %zmm0 {%k2}
-	vmovapd	%zmm2, %zmm1 {%k1}
+	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
+	vmovapd	%zmm1, %zmm2 {%k1}
+	vmovapd	%zmm2, %zmm1
 	retq
 
