@@ -1,5 +1,5 @@
 func000000000000003e:
-	slliw	a2, a2, 8
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	lui	a1, 16
 	or	a2, a2, a0
