@@ -8,10 +8,8 @@ func0000000000000038:
 	retq
 
 func0000000000000021:
-	movl	%esi, %eax
-	negl	%eax
-	cmovsl	%esi, %eax
-	cmpl	$4, %eax
+	addl	$4, %esi
+	testl	$-9, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
