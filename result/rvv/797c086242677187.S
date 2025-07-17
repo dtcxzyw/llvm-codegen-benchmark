@@ -1,26 +1,22 @@
 func0000000000000638:
 	li	a0, 60
-	vsetivli	zero, 8, e32, m2, ta, mu
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, 21
-	addi	a0, a0, 383
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 1048555
 	addi	a0, a0, -384
-	vadd.vx	v8, v8, a0, v0.t
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	ret
 
 func00000000000007b8:
 	lui	a0, 244
 	addi	a0, a0, 576
-	vsetivli	zero, 8, e32, m2, ta, mu
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, 244141
-	addi	a0, a0, -1537
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 804435
 	addi	a0, a0, 1536
-	vadd.vx	v8, v8, a0, v0.t
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	ret
 
 func000000000000022a:

@@ -1,9 +1,8 @@
 func0000000000000104:
-	li	a0, 231
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsgtu.vx	v0, v10, a0
 	li	a0, -232
-	vadd.vx	v10, v10, a0, v0.t
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v12, v10, a0
+	vminu.vv	v10, v12, v10
 	vmsltu.vv	v0, v10, v8
 	ret
 

@@ -7,9 +7,9 @@ func000000000000002a:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 16, e8, m1, ta, mu
-	vmsgtu.vi	v0, v8, 15
-	vadd.vi	v8, v8, -16, v0.t
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vadd.vi	v9, v8, -16
+	vminu.vv	v8, v9, v8
 	ret
 
 func0000000000000078:

@@ -15,11 +15,10 @@ func00000000000000c4:
 	ret
 
 func0000000000000101:
-	li	a0, 17
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v10, a0
 	li	a0, -18
-	vadd.vx	v10, v10, a0, v0.t
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v12, v10, a0
+	vminu.vv	v10, v12, v10
 	vmseq.vv	v0, v10, v8
 	ret
 

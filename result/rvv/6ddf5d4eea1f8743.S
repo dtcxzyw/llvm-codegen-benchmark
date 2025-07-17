@@ -1,9 +1,8 @@
 func00000000000000e1:
-	li	a0, 31
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	li	a0, -32
-	vadd.vx	v8, v8, a0, v0.t
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	vrsub.vi	v8, v8, 0
 	ret
 
@@ -28,14 +27,12 @@ func00000000000000a9:
 
 func00000000000000a0:
 	lui	a0, 72014
-	lui	a1, 976562
-	addi	a1, a1, 2047
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a1
-	lui	a1, 976563
 	addi	a0, a0, -2048
-	vadd.vx	v8, v8, a0, v0.t
-	addi	a0, a1, -2048
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	lui	a0, 976563
+	vminu.vv	v8, v10, v8
+	addi	a0, a0, -2048
 	vrsub.vx	v8, v8, a0
 	ret
 

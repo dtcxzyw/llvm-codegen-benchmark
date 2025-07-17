@@ -55,11 +55,10 @@ func000000000000054a:
 	ret
 
 func0000000000000701:
-	li	a0, 31
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	li	a0, -32
-	vadd.vx	v8, v8, a0, v0.t
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 0
 	ret
 
@@ -109,12 +108,10 @@ func0000000000000541:
 
 func0000000000000101:
 	lui	a0, 804435
-	lui	a1, 244141
-	addi	a1, a1, -1537
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a1
 	addi	a0, a0, 1536
-	vadd.vx	v8, v8, a0, v0.t
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 0
 	ret
 

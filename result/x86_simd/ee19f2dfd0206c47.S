@@ -23,13 +23,11 @@ func0000000000000065:
 	retq
 
 .LCPI2_0:
-	.long	99999999
-.LCPI2_1:
 	.long	4194967296
 func0000000000000080:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

@@ -19,12 +19,10 @@ func00000000000000c4:
 	retq
 
 .LCPI2_0:
-	.long	17
-.LCPI2_1:
 	.long	4294967278
 func0000000000000101:
-	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm2
+	vpminud	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

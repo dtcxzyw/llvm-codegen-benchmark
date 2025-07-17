@@ -81,15 +81,13 @@ func00000000000004c1:
 	retq
 
 .LCPI6_0:
-	.long	190
-.LCPI6_1:
 	.long	4294967106
-.LCPI6_2:
+.LCPI6_1:
 	.long	63
 func0000000000000694:
-	vpcmpnltud	.LCPI6_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	vpcmpltud	.LCPI6_2(%rip){1to8}, %ymm0, %k0
+	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
+	vpcmpltud	.LCPI6_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -9,13 +9,13 @@ func000000000000002c:
 	retq
 
 func0000000000000026:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000027:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000012:

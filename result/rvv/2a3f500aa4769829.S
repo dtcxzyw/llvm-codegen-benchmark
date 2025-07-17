@@ -6,8 +6,7 @@ func00000000000000b8:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv.v.x	v10, a1
 	vadd.vx	v10, v8, a0, v0.t
-	vmsgtu.vx	v0, v10, a1
-	vadd.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vadd.vx	v8, v10, a0
+	vminu.vv	v8, v8, v10
 	ret
 

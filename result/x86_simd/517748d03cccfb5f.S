@@ -16,19 +16,17 @@ func0000000000000141:
 	retq
 
 .LCPI1_0:
-	.long	999999999
-.LCPI1_1:
 	.long	3294967296
-.LCPI1_2:
+.LCPI1_1:
 	.long	1757569337
-.LCPI1_3:
+.LCPI1_2:
 	.long	4294
 func0000000000000101:
-	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	vpmulld	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
+	vpmulld	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vprord	$6, %ymm0, %ymm0
-	vpcmpleud	.LCPI1_3(%rip){1to8}, %ymm0, %k0
+	vpcmpleud	.LCPI1_2(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

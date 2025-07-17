@@ -32,14 +32,12 @@ func00000000000000a6:
 	ret
 
 func00000000000001b8:
-	vsetivli	zero, 4, e64, m2, ta, mu
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 16
-	addi	a0, a0, -16
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 1048560
 	addi	a0, a0, 15
-	vadd.vx	v8, v8, a0, v0.t
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	ret
 
 func000000000000008a:
@@ -53,19 +51,15 @@ func000000000000008a:
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 
-.LCPI6_0:
-	.quad	-8446744073709551617
 func0000000000000028:
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, mu
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vmsgtu.vx	v0, v8, a0
 	lui	a0, 960284
 	addi	a0, a0, -1545
 	slli.uw	a0, a0, 12
 	addi	a0, a0, -317
 	slli	a0, a0, 19
-	vadd.vx	v8, v8, a0, v0.t
+	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	ret
 

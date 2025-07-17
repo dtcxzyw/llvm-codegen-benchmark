@@ -30,19 +30,16 @@ func000000000000002a:
 	ret
 
 func0000000000000004:
-	li	a0, 128
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
 	li	a0, -128
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v8, 1
 	vadd.vi	v10, v8, -2
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000064:

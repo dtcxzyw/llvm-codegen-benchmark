@@ -15,9 +15,9 @@ func000000000000002a:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 16, e16, m2, ta, mu
-	vmsgtu.vi	v0, v8, 3
-	vadd.vi	v8, v8, -4, v0.t
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vadd.vi	v10, v8, -4
+	vminu.vv	v8, v10, v8
 	ret
 
 func0000000000000078:
@@ -29,8 +29,8 @@ func0000000000000078:
 	ret
 
 func0000000000000038:
-	vsetivli	zero, 16, e16, m2, ta, mu
-	vmsgtu.vi	v0, v8, 3
-	vadd.vi	v8, v8, -4, v0.t
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vadd.vi	v10, v8, -4
+	vminu.vv	v8, v10, v8
 	ret
 

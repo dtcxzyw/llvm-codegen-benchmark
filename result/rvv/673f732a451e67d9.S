@@ -47,12 +47,10 @@ func00000000000004c1:
 	ret
 
 func0000000000000694:
-	li	a0, 190
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
 	li	a0, -190
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	li	a0, 63
 	vmsltu.vx	v0, v8, a0
 	ret

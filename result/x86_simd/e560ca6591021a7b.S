@@ -1,22 +1,18 @@
 .LCPI0_0:
-	.quad	33
-.LCPI0_1:
 	.quad	-34
 func00000000000000a1:
-	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
-	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm1
+	vpminuq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:
 	.quad	-40
-.LCPI1_1:
-	.quad	39
 func0000000000000020:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
-	vpcmpnleuq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
-	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
+	vpaddq	%ymm1, %ymm0, %ymm2
+	vpminuq	%ymm0, %ymm2, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 

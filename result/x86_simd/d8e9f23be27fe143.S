@@ -78,12 +78,10 @@ func000000000000054a:
 	retq
 
 .LCPI7_0:
-	.long	31
-.LCPI7_1:
 	.long	4294967264
 func0000000000000701:
-	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI7_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -152,12 +150,10 @@ func0000000000000541:
 	retq
 
 .LCPI13_0:
-	.long	999999999
-.LCPI13_1:
 	.long	3294967296
 func0000000000000101:
-	vpcmpnleud	.LCPI13_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI13_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

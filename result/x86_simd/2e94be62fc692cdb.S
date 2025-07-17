@@ -25,12 +25,10 @@ func00000000000000a8:
 	retq
 
 .LCPI3_0:
-	.long	254
-.LCPI3_1:
 	.long	4294967041
 func0000000000000020:
-	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm2
+	vpminud	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 

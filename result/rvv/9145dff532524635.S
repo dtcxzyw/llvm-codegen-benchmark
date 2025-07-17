@@ -10,9 +10,8 @@ func0000000000000011:
 func0000000000000042:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, 8
-	vmsltu.vv	v0, v8, v10
 	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func000000000000006d:

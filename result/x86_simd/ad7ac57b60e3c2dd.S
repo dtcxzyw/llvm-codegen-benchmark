@@ -60,23 +60,6 @@ func000000000000002a:
 	retq
 
 .LCPI2_0:
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-.LCPI2_1:
 	.short	65532
 	.short	65532
 	.short	65532
@@ -94,8 +77,8 @@ func000000000000002a:
 	.short	65532
 	.short	65532
 func0000000000000008:
-	vpcmpnleuw	.LCPI2_0(%rip), %ymm0, %k1
-	vpaddw	.LCPI2_1(%rip), %ymm0, %ymm0 {%k1}
+	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm1
+	vpminuw	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:
@@ -138,23 +121,6 @@ func0000000000000078:
 	retq
 
 .LCPI4_0:
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-.LCPI4_1:
 	.short	65532
 	.short	65532
 	.short	65532
@@ -172,7 +138,7 @@ func0000000000000078:
 	.short	65532
 	.short	65532
 func0000000000000038:
-	vpcmpnleuw	.LCPI4_0(%rip), %ymm0, %k1
-	vpaddw	.LCPI4_1(%rip), %ymm0, %ymm0 {%k1}
+	vpaddw	.LCPI4_0(%rip), %ymm0, %ymm1
+	vpminuw	%ymm0, %ymm1, %ymm0
 	retq
 

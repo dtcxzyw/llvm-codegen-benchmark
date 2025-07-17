@@ -4,8 +4,8 @@ func0000000000000063:
 	retq
 
 func0000000000000026:
-	vpcmpnltuq	%ymm1, %ymm0, %k1
-	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpminuq	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000016:
@@ -14,8 +14,8 @@ func0000000000000016:
 	retq
 
 func0000000000000024:
-	vpcmpnltuq	%ymm1, %ymm0, %k1
-	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpminuq	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000022:

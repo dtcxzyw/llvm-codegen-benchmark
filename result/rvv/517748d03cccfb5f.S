@@ -12,16 +12,14 @@ func0000000000000141:
 
 func0000000000000101:
 	lui	a0, 804435
-	lui	a1, 244141
-	addi	a1, a1, -1537
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a1
-	lui	a1, 429094
 	addi	a0, a0, 1536
-	vadd.vx	v8, v8, a0, v0.t
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	lui	a0, 429094
+	addi	a0, a0, 313
+	vminu.vv	v8, v10, v8
+	vmul.vx	v8, v8, a0
 	lui	a0, 1
-	addi	a1, a1, 313
-	vmul.vx	v8, v8, a1
 	vror.vi	v8, v8, 6
 	addi	a0, a0, 198
 	vmsleu.vx	v0, v8, a0

@@ -14,16 +14,14 @@ func000000000000002c:
 
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vv	v0, v8, v10
 	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000027:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vv	v0, v8, v10
 	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000012:

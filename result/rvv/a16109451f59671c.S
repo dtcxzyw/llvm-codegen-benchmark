@@ -6,9 +6,8 @@ func0000000000000063:
 
 func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v0, v8, v10
 	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000016:
@@ -20,9 +19,8 @@ func0000000000000016:
 
 func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v0, v8, v10
 	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vminu.vv	v8, v8, v10
 	ret
 
 func0000000000000022:

@@ -4,8 +4,8 @@ func0000000000000019:
 	retq
 
 func0000000000000012:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000005:
@@ -24,13 +24,13 @@ func0000000000000018:
 	retq
 
 func0000000000000051:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000053:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000029:
@@ -39,8 +39,8 @@ func0000000000000029:
 	retq
 
 func0000000000000010:
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 func0000000000000028:

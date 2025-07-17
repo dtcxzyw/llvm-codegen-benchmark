@@ -10,8 +10,8 @@ func0000000000000011:
 	.long	8
 func0000000000000042:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

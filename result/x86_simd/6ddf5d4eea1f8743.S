@@ -1,10 +1,8 @@
 .LCPI0_0:
-	.long	31
-.LCPI0_1:
 	.long	4294967264
 func00000000000000e1:
-	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
@@ -36,15 +34,13 @@ func00000000000000a9:
 	retq
 
 .LCPI3_0:
-	.long	3999999999
-.LCPI3_1:
 	.long	294967296
-.LCPI3_2:
+.LCPI3_1:
 	.long	4000000000
 func00000000000000a0:
-	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	vpbroadcastd	.LCPI3_2(%rip), %ymm1
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm0, %ymm1, %ymm0
+	vpbroadcastd	.LCPI3_1(%rip), %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

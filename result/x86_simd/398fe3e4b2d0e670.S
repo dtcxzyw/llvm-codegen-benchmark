@@ -34,21 +34,17 @@ func000000000000002a:
 	retq
 
 .LCPI4_0:
-	.long	128
-.LCPI4_1:
 	.long	4294967168
 func0000000000000004:
-	vpcmpnltud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
-	.long	2
-.LCPI5_1:
 	.long	4294967294
 func0000000000000024:
-	vpcmpnltud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm1
+	vpminud	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:

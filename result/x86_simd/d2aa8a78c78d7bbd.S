@@ -14,15 +14,13 @@ func0000000000000108:
 	retq
 
 .LCPI1_0:
-	.zero	16,99
-.LCPI1_1:
 	.zero	16,156
-.LCPI1_2:
+.LCPI1_1:
 	.zero	16,11
 func0000000000000101:
-	vpcmpnleub	.LCPI1_0(%rip), %xmm0, %k1
-	vpaddb	.LCPI1_1(%rip), %xmm0, %xmm0 {%k1}
-	vpcmpeqb	.LCPI1_2(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm1
+	vpminub	%xmm0, %xmm1, %xmm0
+	vpcmpeqb	.LCPI1_1(%rip), %xmm0, %xmm0
 	retq
 
 .LCPI2_0:
