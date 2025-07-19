@@ -1,5 +1,5 @@
 func0000000000000001:
-	vcvtsi2sd	%edi, %xmm15, %xmm0
+	vcvtsi2sd	%rdi, %xmm15, %xmm0
 	vmovq	%xmm0, %rax
 	retq
 

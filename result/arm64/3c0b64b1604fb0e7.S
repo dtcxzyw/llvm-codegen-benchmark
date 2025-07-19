@@ -1,5 +1,5 @@
 func0000000000000001:
-	scvtf	d0, w0
+	scvtf	d0, x0
 	fmov	x0, d0
 	ret
 

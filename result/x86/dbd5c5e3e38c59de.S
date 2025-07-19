@@ -1,6 +1,6 @@
 func000000000000001f:
-	addl	%esi, %edi
-	vcvtsi2ss	%edi, %xmm15, %xmm0
+	addq	%rsi, %rdi
+	vcvtusi2ss	%rdi, %xmm15, %xmm0
 	retq
 
 func0000000000000010:

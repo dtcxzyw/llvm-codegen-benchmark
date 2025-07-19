@@ -9,8 +9,7 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2ps	%xmm1, %xmm1
+	vcvtuqq2ps	%ymm1, %xmm1
 	vaddps	%xmm1, %xmm1, %xmm1
 	vmulps	%xmm0, %xmm1, %xmm0
 	vzeroupper

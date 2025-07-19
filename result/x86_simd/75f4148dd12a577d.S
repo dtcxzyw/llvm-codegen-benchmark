@@ -1,8 +1,7 @@
 .LCPI0_0:
 	.long	0x3f800000
 func0000000000000007:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2ps	%xmm1, %xmm1
+	vcvtuqq2ps	%ymm1, %xmm1
 	vbroadcastss	.LCPI0_0(%rip), %xmm2
 	vdivps	%xmm0, %xmm2, %xmm0
 	vmulps	%xmm1, %xmm0, %xmm0

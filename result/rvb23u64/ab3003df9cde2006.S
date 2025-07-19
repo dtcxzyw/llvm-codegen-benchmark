@@ -7,10 +7,10 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	fcvt.s.w	fa0, a0
+	fcvt.s.l	fa0, a0
 	ret
 
 func0000000000000003:
-	fcvt.s.w	fa0, a0
+	fcvt.s.l	fa0, a0
 	ret
 

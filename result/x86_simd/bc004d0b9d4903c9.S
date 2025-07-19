@@ -1,6 +1,5 @@
 func000000000000000f:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2ps	%xmm1, %xmm1
+	vcvtuqq2ps	%ymm1, %xmm1
 	vcvtdq2ps	%xmm0, %xmm0
 	vsubps	%xmm1, %xmm0, %xmm0
 	vzeroupper

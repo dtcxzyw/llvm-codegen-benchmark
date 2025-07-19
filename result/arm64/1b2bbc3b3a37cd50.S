@@ -5,7 +5,7 @@ func0000000000000000:
 	ret
 
 func0000000000000007:
-	ucvtf	s2, w0
+	ucvtf	s2, x0
 	fdiv	s1, s2, s1
 	fmul	s0, s0, s1
 	ret

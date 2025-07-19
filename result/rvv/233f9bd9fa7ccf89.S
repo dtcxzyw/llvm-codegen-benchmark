@@ -1,18 +1,14 @@
 func0000000000000007:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vfwcvt.f.xu.v	v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v8, v8
 	fli.d	fa5, 1.0
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vfrdiv.vf	v8, v8, fa5
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vfwcvt.f.xu.v	v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v8, v8
 	fli.d	fa5, 1.0
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vfrdiv.vf	v8, v8, fa5
 	ret
 

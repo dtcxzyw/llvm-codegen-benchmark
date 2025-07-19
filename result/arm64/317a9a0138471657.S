@@ -4,7 +4,7 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	scvtf	s1, w0
+	scvtf	s1, x0
 	fsub	s0, s1, s0
 	ret
 

@@ -1,13 +1,11 @@
 func0000000000000004:
 	vpsrlq	$32, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vcvtudq2pd	%xmm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	retq
 
 func0000000000000007:
 	vpsrlq	$33, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2pd	%xmm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	retq
 
 func0000000000000000:
@@ -24,8 +22,7 @@ func0000000000000009:
 
 func0000000000000005:
 	vpsrlq	$32, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2pd	%xmm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	retq
 
 func0000000000000008:

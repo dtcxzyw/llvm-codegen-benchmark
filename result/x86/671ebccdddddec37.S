@@ -7,9 +7,9 @@ func0000000000000022:
 	vmovss	.LCPI0_1(%rip), %xmm2
 	vucomiss	%xmm1, %xmm2
 	seta	%cl
+	andb	%dil, %cl
 	vucomiss	%xmm0, %xmm2
 	seta	%al
-	andb	%dil, %al
 	andb	%cl, %al
 	retq
 

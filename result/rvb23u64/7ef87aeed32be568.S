@@ -5,7 +5,7 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	fcvt.s.w	fa5, a0
+	fcvt.s.l	fa5, a0
 	fli.s	fa4, 1.0
 	fadd.s	fa0, fa5, fa4
 	ret

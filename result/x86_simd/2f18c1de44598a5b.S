@@ -47,7 +47,7 @@ func0000000000000000:
 .LCPI1_0:
 	.long	0x3b808081
 func0000000000000004:
-	vcvtdq2ps	%ymm0, %ymm0
+	vcvtudq2ps	%ymm0, %ymm0
 	vmulps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

@@ -7,9 +7,9 @@ func0000000000000044:
 	vmovss	.LCPI0_1(%rip), %xmm2
 	vucomiss	%xmm2, %xmm1
 	seta	%cl
+	orb	%dil, %cl
 	vucomiss	%xmm2, %xmm0
 	seta	%al
-	orb	%dil, %al
 	orb	%cl, %al
 	retq
 
@@ -22,9 +22,9 @@ func0000000000000055:
 	vmovss	.LCPI1_1(%rip), %xmm2
 	vucomiss	%xmm1, %xmm2
 	setb	%cl
+	orb	%dil, %cl
 	vucomiss	%xmm0, %xmm2
 	setb	%al
-	orb	%dil, %al
 	orb	%cl, %al
 	retq
 
@@ -37,9 +37,9 @@ func00000000000000dd:
 	vmovss	.LCPI2_1(%rip), %xmm2
 	vucomiss	%xmm1, %xmm2
 	setbe	%cl
+	orb	%dil, %cl
 	vucomiss	%xmm0, %xmm2
 	setbe	%al
-	orb	%dil, %al
 	orb	%cl, %al
 	retq
 

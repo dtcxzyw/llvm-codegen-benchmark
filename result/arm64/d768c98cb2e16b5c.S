@@ -4,7 +4,6 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	and	w8, w0, #0xffff
-	ucvtf	d0, w8
+	ucvtf	d0, w0
 	ret
 

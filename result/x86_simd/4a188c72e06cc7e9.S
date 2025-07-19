@@ -23,24 +23,21 @@ func0000000000000008:
 	retq
 
 func0000000000000078:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000054:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000074:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -55,24 +52,21 @@ func0000000000000018:
 	retq
 
 func0000000000000058:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000072:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000077:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2pd	%xmm1, %ymm1
+	vcvtuqq2pd	%ymm1, %ymm1
 	vcmpneqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

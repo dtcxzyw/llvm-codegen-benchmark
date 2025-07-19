@@ -7,14 +7,14 @@ func0000000000000000:
 .LCPI1_0:
 	.xword	0x43e69eec5d27e300
 func0000000000000001:
-	scvtf	d0, w0
+	scvtf	d0, x0
 	adrp	x8, .LCPI1_0
 	ldr	d1, [x8, :lo12:.LCPI1_0]
 	fdiv	d0, d1, d0
 	ret
 
 func0000000000000003:
-	scvtf	d0, w0
+	scvtf	d0, x0
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
 	ret

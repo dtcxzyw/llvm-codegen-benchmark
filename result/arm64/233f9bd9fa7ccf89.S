@@ -1,11 +1,11 @@
 func0000000000000007:
-	ucvtf	d0, w0
+	ucvtf	d0, x0
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
 	ret
 
 func0000000000000005:
-	ucvtf	d0, w0
+	ucvtf	d0, x0
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
 	ret

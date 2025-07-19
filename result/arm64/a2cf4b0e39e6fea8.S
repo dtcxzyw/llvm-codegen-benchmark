@@ -1,5 +1,5 @@
 func0000000000000007:
-	ucvtf	s0, w0
+	ucvtf	s0, x0
 	mov	w8, #1109393408
 	fmov	s1, w8
 	mov	w8, #4059

@@ -1,8 +1,7 @@
 .LCPI0_0:
 	.long	0x40c90fda
 func0000000000000007:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2ps	%xmm1, %xmm1
+	vcvtuqq2ps	%ymm1, %xmm1
 	vmulps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vdivps	%xmm0, %xmm1, %xmm0
 	vzeroupper
@@ -11,8 +10,7 @@ func0000000000000007:
 .LCPI1_0:
 	.long	0x40800000
 func0000000000000005:
-	vpmovqd	%ymm1, %xmm1
-	vcvtdq2ps	%xmm1, %xmm1
+	vcvtuqq2ps	%ymm1, %xmm1
 	vmulps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vdivps	%xmm0, %xmm1, %xmm0
 	vzeroupper

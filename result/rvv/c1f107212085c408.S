@@ -1,22 +1,25 @@
 func0000000000000004:
 	li	a0, 32
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v10, v8, a0
-	vfcvt.f.xu.v	v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vx	v10, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vfncvt.f.xu.w	v8, v10
 	ret
 
 func0000000000000007:
 	li	a0, 33
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v10, v8, a0
-	vfcvt.f.xu.v	v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vx	v10, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vfncvt.f.xu.w	v8, v10
 	ret
 
 func0000000000000005:
 	li	a0, 32
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v10, v8, a0
-	vfcvt.f.xu.v	v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vx	v10, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vfncvt.f.xu.w	v8, v10
 	ret
 
 func0000000000000000:

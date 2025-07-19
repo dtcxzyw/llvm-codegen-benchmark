@@ -4,18 +4,18 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	sub	w8, w0, w1
-	scvtf	d0, w8
+	sub	x8, x0, x1
+	scvtf	d0, x8
 	ret
 
 func000000000000000f:
-	sub	w8, w0, w1
-	scvtf	d0, w8
+	sub	x8, x0, x1
+	scvtf	d0, x8
 	ret
 
 func000000000000000d:
-	sub	w8, w0, w1
-	scvtf	d0, w8
+	sub	x8, x0, x1
+	scvtf	d0, x8
 	ret
 
 func0000000000000000:

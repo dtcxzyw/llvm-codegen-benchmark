@@ -23,26 +23,20 @@ func0000000000000008:
 	ret
 
 func0000000000000078:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmfeq.vv	v0, v8, v10
 	ret
 
 func0000000000000054:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmflt.vv	v0, v10, v8
 	ret
 
 func0000000000000074:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmflt.vv	v0, v10, v8
 	ret
 
@@ -55,26 +49,20 @@ func0000000000000018:
 	ret
 
 func0000000000000058:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmfeq.vv	v0, v8, v10
 	ret
 
 func0000000000000072:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmflt.vv	v0, v8, v10
 	ret
 
 func0000000000000077:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vmfne.vv	v0, v8, v10
 	ret
 

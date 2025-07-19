@@ -1,5 +1,5 @@
 func0000000000000007:
-	vcvtsi2ss	%edi, %xmm15, %xmm2
+	vcvtusi2ss	%rdi, %xmm15, %xmm2
 	vdivss	%xmm1, %xmm0, %xmm0
 	vaddss	%xmm2, %xmm0, %xmm0
 	retq

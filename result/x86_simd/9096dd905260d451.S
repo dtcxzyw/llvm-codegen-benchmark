@@ -1,8 +1,7 @@
 .LCPI0_0:
 	.long	0x40400000
 func0000000000000007:
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2ps	%xmm0, %xmm0
+	vcvtuqq2ps	%ymm0, %xmm0
 	vdivps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

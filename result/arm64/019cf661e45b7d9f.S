@@ -1,6 +1,6 @@
 func0000000000000007:
 	fdiv	s0, s0, s1
-	ucvtf	s1, w0
+	ucvtf	s1, x0
 	fadd	s0, s0, s1
 	ret
 

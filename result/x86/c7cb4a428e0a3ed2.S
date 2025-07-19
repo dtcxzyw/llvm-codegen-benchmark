@@ -7,9 +7,9 @@ func00000000000000aa:
 	vmovsd	.LCPI0_1(%rip), %xmm2
 	vucomisd	%xmm1, %xmm2
 	setae	%cl
+	andb	%dil, %cl
 	vucomisd	%xmm0, %xmm2
 	setae	%al
-	andb	%dil, %al
 	andb	%cl, %al
 	retq
 
@@ -22,9 +22,9 @@ func0000000000000022:
 	vmovsd	.LCPI1_1(%rip), %xmm2
 	vucomisd	%xmm1, %xmm2
 	seta	%cl
+	andb	%dil, %cl
 	vucomisd	%xmm0, %xmm2
 	seta	%al
-	andb	%dil, %al
 	andb	%cl, %al
 	retq
 

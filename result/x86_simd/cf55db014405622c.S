@@ -43,7 +43,7 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	vcvtdq2ps	%ymm1, %ymm1
+	vcvtudq2ps	%ymm1, %ymm1
 	vmulps	%ymm1, %ymm0, %ymm0
 	retq
 

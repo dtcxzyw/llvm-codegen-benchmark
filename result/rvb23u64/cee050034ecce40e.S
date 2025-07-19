@@ -9,12 +9,12 @@ func0000000000000000:
 func0000000000000001:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.w	fa4, a0
+	fcvt.d.l	fa4, a0
 	fdiv.d	fa0, fa5, fa4
 	ret
 
 func0000000000000003:
-	fcvt.d.w	fa5, a0
+	fcvt.d.l	fa5, a0
 	fli.d	fa4, 1.0
 	fdiv.d	fa0, fa4, fa5
 	ret

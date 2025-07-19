@@ -1,5 +1,5 @@
 func0000000000000018:
-	scvtf	d1, w0
+	scvtf	d1, x0
 	fcmp	d0, d1
 	cset	w0, eq
 	ret

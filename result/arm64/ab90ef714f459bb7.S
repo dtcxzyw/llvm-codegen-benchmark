@@ -3,11 +3,11 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	ucvtf	s0, w0
+	ucvtf	s0, x0
 	ret
 
 func0000000000000007:
-	ucvtf	s0, w0
+	ucvtf	s0, x0
 	ret
 
 func0000000000000003:
@@ -15,7 +15,7 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
-	ucvtf	s0, w0
+	ucvtf	s0, x0
 	ret
 
 func0000000000000001:

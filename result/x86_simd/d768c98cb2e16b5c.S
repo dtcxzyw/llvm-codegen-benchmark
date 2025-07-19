@@ -5,6 +5,6 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	vcvtdq2pd	%ymm0, %zmm0
+	vcvtudq2pd	%ymm0, %zmm0
 	retq
 

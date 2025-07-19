@@ -12,7 +12,7 @@ func0000000000000000:
 func0000000000000001:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.w	fa4, a0
+	fcvt.d.l	fa4, a0
 	fdiv.d	fa0, fa5, fa4
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000001:
 func0000000000000003:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.d.w	fa4, a0
+	fcvt.d.l	fa4, a0
 	fdiv.d	fa0, fa5, fa4
 	ret
 

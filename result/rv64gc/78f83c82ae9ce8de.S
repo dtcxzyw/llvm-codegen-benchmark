@@ -1,5 +1,5 @@
 func0000000000000018:
-	fcvt.d.w	fa5, a0
+	fcvt.d.l	fa5, a0
 	feq.d	a0, fa0, fa5
 	ret
 

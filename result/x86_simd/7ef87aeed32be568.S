@@ -10,8 +10,7 @@ func0000000000000000:
 .LCPI1_0:
 	.long	0x3f800000
 func0000000000000001:
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2ps	%xmm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vaddps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

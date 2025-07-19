@@ -11,14 +11,12 @@ func0000000000000002:
 	retq
 
 func0000000000000001:
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2ps	%xmm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vzeroupper
 	retq
 
 func0000000000000003:
-	vpmovqd	%ymm0, %xmm0
-	vcvtdq2ps	%xmm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vzeroupper
 	retq
 

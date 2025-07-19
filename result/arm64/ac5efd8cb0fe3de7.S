@@ -1,5 +1,5 @@
 func0000000000000075:
-	ucvtf	s1, w1
+	ucvtf	s1, x1
 	fcmp	s0, s1
 	cset	w8, hi
 	orr	w8, w0, w8
@@ -7,7 +7,7 @@ func0000000000000075:
 	ret
 
 func0000000000000073:
-	ucvtf	s1, w1
+	ucvtf	s1, x1
 	fcmp	s0, s1
 	cset	w8, lt
 	orr	w8, w0, w8

@@ -5,7 +5,7 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	ubfx	w8, w0, #16, #8
+	lsr	w8, w0, #16
 	ucvtf	s1, w8
 	fmul	s0, s0, s1
 	ret
