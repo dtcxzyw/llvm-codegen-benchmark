@@ -1,5 +1,5 @@
 func000000000000000c:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0
@@ -7,7 +7,7 @@ func000000000000000c:
 	ret
 
 func000000000000008c:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0

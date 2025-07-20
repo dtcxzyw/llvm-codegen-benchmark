@@ -1,6 +1,6 @@
 func0000000000000009:
 	sext.w	a0, a0
-	subw	a2, a1, a2
+	sub	a2, a1, a2
 	addiw	a2, a2, 262
 	sext.w	a1, a1
 	sltu	a1, a1, a2

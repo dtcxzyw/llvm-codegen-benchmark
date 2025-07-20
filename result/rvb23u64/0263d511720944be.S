@@ -1,5 +1,5 @@
 func0000000000000029:
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	mul	a1, a1, a2
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 30
@@ -9,7 +9,7 @@ func0000000000000029:
 	ret
 
 func0000000000000000:
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	mul	a1, a1, a2
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 24

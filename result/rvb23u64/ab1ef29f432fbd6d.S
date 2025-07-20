@@ -1,6 +1,6 @@
 func00000000000000a1:
 	sext.w	a0, a0
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 1
 	andi	a2, a2, -4
 	xor	a0, a0, a2
@@ -25,7 +25,7 @@ func00000000000000aa:
 
 func0000000000000018:
 	sext.w	a0, a0
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	zext.b	a2, a2
 	sltu	a0, a2, a0
@@ -33,7 +33,7 @@ func0000000000000018:
 
 func0000000000000001:
 	sext.w	a0, a0
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	zext.b	a2, a2
 	xor	a0, a0, a2
@@ -42,7 +42,7 @@ func0000000000000001:
 
 func0000000000000181:
 	sext.w	a0, a0
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 1
 	andi	a1, a2, -64
 	xor	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000181:
 
 func00000000000000b5:
 	sext.w	a0, a0
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 16
 	addi	a1, a1, -10
 	add	a1, a1, a2

@@ -21,7 +21,7 @@ func0000000000000005:
 
 func0000000000000020:
 	sltiu	a2, a2, 8
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

@@ -30,7 +30,7 @@ func0000000000000063:
 	sext.w	a1, a1
 	seqz	a1, a1
 	srliw	a0, a0, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 
@@ -45,7 +45,7 @@ func000000000000000f:
 func00000000000000a3:
 	sext.w	a1, a1
 	sltiu	a1, a1, 880
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 320
 	srliw	a0, a0, 5
 	add	a0, a0, a1

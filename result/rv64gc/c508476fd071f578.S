@@ -41,12 +41,12 @@ func0000000000000035:
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	srli	a2, a2, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a2, 64
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
@@ -92,7 +92,7 @@ func0000000000000070:
 	and	a2, a2, a7
 	mul	a2, a2, a6
 	srli	a2, a2, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
@@ -138,7 +138,7 @@ func000000000000007d:
 	and	a2, a2, a7
 	mul	a2, a2, a6
 	srli	a2, a2, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
@@ -185,12 +185,12 @@ func000000000000003d:
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	srli	a2, a2, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 .LBB3_2:
 	li	a2, 64
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 

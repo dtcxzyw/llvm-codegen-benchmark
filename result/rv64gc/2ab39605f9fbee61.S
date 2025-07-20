@@ -10,7 +10,7 @@ func000000000000002a:
 func0000000000000141:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	xor	a0, a0, a1
@@ -20,7 +20,7 @@ func0000000000000141:
 func0000000000000144:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	sltu	a0, a0, a1
@@ -29,7 +29,7 @@ func0000000000000144:
 func000000000000014b:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slt	a0, a0, a1

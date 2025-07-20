@@ -5,7 +5,7 @@ func0000000000000366:
 .LBB0_2:
 	sext.w	a1, a0
 	slti	a1, a1, 3
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 12
 	addw	a0, a0, a1
 	ret
@@ -57,7 +57,7 @@ func000000000000032a:
 	addi	a2, a2, -1428
 	slt	a1, a2, a1
 	lui	a2, 525234
-	negw	a1, a1
+	neg	a1, a1
 	addi	a2, a2, 1427
 	and	a1, a1, a2
 	addw	a0, a0, a1

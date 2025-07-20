@@ -1,6 +1,6 @@
 func0000000000000032:
 	li	a2, 11
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 838861
 	addi	a1, a1, -819
 	srl	a0, a0, a2
@@ -18,7 +18,7 @@ func0000000000000032:
 func0000000000000030:
 	li	a2, 11
 	lui	a3, 838861
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, %hi(.LCPI1_0)
 	addi	a3, a3, -819
 	srl	a0, a0, a2
@@ -34,7 +34,7 @@ func0000000000000030:
 	.quad	-6067343680855748867
 func0000000000000073:
 	li	a2, 1075
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, %hi(.LCPI2_0)
 	ld	a1, %lo(.LCPI2_0)(a1)
 	srl	a0, a0, a2

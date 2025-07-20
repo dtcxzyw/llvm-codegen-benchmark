@@ -4,7 +4,7 @@ func00000000000000a2:
 	li	a2, 64
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 56
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000020:
 	li	a2, 64
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 56
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func00000000000000c3:
 	sltiu	a1, a1, 64
 	li	a2, -64
 	czero.eqz	a1, a2, a1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 127
 	ret
 

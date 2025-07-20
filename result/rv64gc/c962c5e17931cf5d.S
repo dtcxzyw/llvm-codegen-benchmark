@@ -1,5 +1,5 @@
 func000000000000002a:
-	negw	a3, a2
+	neg	a3, a2
 	sraiw	a2, a2, 31
 	slli	a0, a0, 63
 	and	a2, a2, a3
@@ -9,7 +9,7 @@ func000000000000002a:
 	ret
 
 func00000000000000ab:
-	negw	a3, a2
+	neg	a3, a2
 	sraiw	a2, a2, 31
 	slli	a0, a0, 63
 	and	a2, a2, a3

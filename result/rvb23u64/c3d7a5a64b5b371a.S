@@ -1,6 +1,6 @@
 func0000000000000026:
 	sext.w	a2, a1
-	negw	a3, a1
+	neg	a3, a1
 	srliw	a3, a3, 3
 	slti	a2, a2, 1
 	subw	a1, a1, a3

@@ -4,7 +4,7 @@ func0000000000000004:
 	and	a2, a2, a3
 	add	a0, a0, a2
 	and	a1, a1, a3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.s.w	fa0, a0
 	ret
 

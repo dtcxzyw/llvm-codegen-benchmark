@@ -12,7 +12,7 @@ func000000000000002c:
 	ret
 
 func0000000000000001:
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 63
 	seqz	a1, a1
 	and	a0, a0, a1

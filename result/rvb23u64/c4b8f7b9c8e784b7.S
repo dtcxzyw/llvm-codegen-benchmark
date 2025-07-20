@@ -6,7 +6,7 @@ func0000000000000121:
 	ret
 
 func000000000000000a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -19,32 +19,32 @@ func0000000000000021:
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
 
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
 
 func0000000000000004:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 
 func0000000000000006:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 
 func0000000000000026:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 2
 	ret

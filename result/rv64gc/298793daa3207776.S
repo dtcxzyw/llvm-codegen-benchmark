@@ -7,7 +7,7 @@ func0000000000000001:
 	srli	a2, a2, 36
 	slli	a3, a2, 5
 	slli	a2, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -21,13 +21,13 @@ func000000000000002c:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 4
 	slli	a3, a2, 5
 	add	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

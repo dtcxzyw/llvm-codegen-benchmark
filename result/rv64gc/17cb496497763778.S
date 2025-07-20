@@ -11,7 +11,7 @@ func0000000000000000:
 	slli	a2, a0, 7
 	slli	a0, a0, 9
 	slli	a1, a1, 2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000010:
 	slli	a2, a0, 1
 	slli	a0, a0, 3
 	slli	a1, a1, 2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -53,7 +53,7 @@ func00000000000000ff:
 	slli	a2, a0, 1
 	slli	a0, a0, 3
 	slli	a1, a1, 2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -62,7 +62,7 @@ func00000000000000fe:
 	slli	a2, a0, 13
 	slli	a0, a0, 15
 	slli	a1, a1, 14
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

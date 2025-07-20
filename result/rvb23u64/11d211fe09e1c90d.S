@@ -3,7 +3,7 @@ func0000000000000520:
 	zext.w	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func00000000000005a0:
 	zext.w	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

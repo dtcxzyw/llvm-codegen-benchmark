@@ -21,7 +21,7 @@ func0000000000000001:
 	srli	a2, a2, 35
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
-	subw	a1, a1, a1
+	sub	a1, a1, a1
 	subw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

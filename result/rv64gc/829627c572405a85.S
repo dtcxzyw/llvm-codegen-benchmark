@@ -5,7 +5,7 @@ func00000000000001e9:
 	li	a1, 1
 	bgeu	a1, a2, .LBB0_2
 	li	a1, 32
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 .LBB0_2:

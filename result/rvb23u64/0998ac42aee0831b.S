@@ -9,7 +9,7 @@ func0000000000000000:
 	zext.w	a4, a4
 	srli	a3, a3, 39
 	mul	a2, a2, a4
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	srli	a2, a2, 47
 	add	a1, a1, a2
 	addw	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000014:
 	zext.w	a4, a4
 	srli	a3, a3, 39
 	mul	a2, a2, a4
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	srli	a2, a2, 47
 	add	a1, a1, a2
 	addw	a0, a0, a1

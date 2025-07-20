@@ -90,7 +90,7 @@ func00000000000001d5:
 	mul	a2, a2, a6
 	srli	a2, a2, 56
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 190
 	ret
 

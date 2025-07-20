@@ -18,7 +18,7 @@ func000000000000006e:
 
 func0000000000000040:
 	slli	a3, a2, 1
-	negw	a2, a2
+	neg	a2, a2
 	subw	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

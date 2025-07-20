@@ -13,7 +13,7 @@ func0000000000000406:
 
 func0000000000000404:
 	slli	a2, a2, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addw	a1, a1, a2
 	sltiu	a0, a1, 3
 	ret
@@ -33,7 +33,7 @@ func0000000000000401:
 
 func0000000000000604:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	slli	a0, a0, 2
 	seqz	a0, a0
@@ -67,7 +67,7 @@ func0000000000000006:
 
 func0000000000000408:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	slli	a0, a0, 2
 	snez	a0, a0

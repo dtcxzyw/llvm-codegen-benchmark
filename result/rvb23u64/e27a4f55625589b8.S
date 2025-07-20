@@ -1,7 +1,7 @@
 func0000000000000001:
 	sltu	a0, a0, a2
-	subw	a1, a1, a3
-	subw	a1, a1, a0
+	sub	a1, a1, a3
+	sub	a1, a1, a0
 	zext.w	a1, a1
 	li	a0, 0
 	ret

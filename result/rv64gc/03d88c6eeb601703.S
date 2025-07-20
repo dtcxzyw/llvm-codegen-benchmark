@@ -1,7 +1,7 @@
 func0000000000000186:
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
@@ -9,7 +9,7 @@ func0000000000000186:
 func0000000000000198:
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
@@ -19,7 +19,7 @@ func0000000000000198:
 func000000000000018a:
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -36,7 +36,7 @@ func00000000000001a1:
 
 func0000000000000001:
 	slli	a2, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	addi	a0, a0, -1
 	seqz	a0, a0
@@ -130,7 +130,7 @@ func00000000000000a8:
 
 func0000000000000081:
 	slli	a2, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	addi	a0, a0, -3
 	seqz	a0, a0
@@ -156,7 +156,7 @@ func0000000000000004:
 func000000000000002a:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -248,7 +248,7 @@ func00000000000000a4:
 func00000000000001ec:
 	slli	a2, a1, 3
 	slli	a1, a1, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

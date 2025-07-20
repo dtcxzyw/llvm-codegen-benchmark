@@ -7,7 +7,7 @@ func0000000000000034:
 
 func0000000000000000:
 	slli	a1, a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a1, a1, 7
 	srliw	a0, a1, 3
 	slli	a0, a0, 3

@@ -1,6 +1,6 @@
 func000000000000001c:
 	andi	a1, a1, 15
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
 
@@ -12,7 +12,7 @@ func000000000000001d:
 
 func0000000000000011:
 	andi	a1, a1, 124
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -4
 	ret
 

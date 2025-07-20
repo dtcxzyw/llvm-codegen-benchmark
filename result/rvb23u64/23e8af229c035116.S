@@ -3,7 +3,7 @@ func000000000000002c:
 	andi	a1, a1, 1
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 6
 	ret
 
@@ -22,7 +22,7 @@ func000000000000002f:
 	andi	a1, a1, 1
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 2
 	ret
 

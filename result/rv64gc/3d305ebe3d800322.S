@@ -22,7 +22,7 @@ func000000000000000f:
 	slli	a3, a2, 8
 	slli	a2, a2, 10
 	slli	a0, a0, 1
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addi	a2, a2, 1846
 	slli	a2, a2, 32
 	srli	a2, a2, 31
@@ -55,7 +55,7 @@ func0000000000000000:
 func000000000000000e:
 	slli	a3, a2, 4
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	slli	a3, a0, 4
 	slli	a0, a0, 6
 	sub	a0, a0, a3

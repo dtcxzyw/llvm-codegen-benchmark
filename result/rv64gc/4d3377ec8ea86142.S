@@ -11,19 +11,19 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 48
 	or	a0, a0, a1
 	ret
 
 func000000000000000e:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 52
 	or	a0, a0, a1
 	ret
@@ -35,7 +35,7 @@ func0000000000000002:
 	ret
 
 func0000000000000007:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 56
 	or	a0, a0, a1
 	ret

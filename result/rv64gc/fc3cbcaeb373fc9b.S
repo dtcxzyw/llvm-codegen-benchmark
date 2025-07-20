@@ -1,5 +1,5 @@
 func0000000000000055:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 2
 	addi	a2, a2, -1922
 	mul	a1, a1, a2
@@ -8,7 +8,7 @@ func0000000000000055:
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 2
 	addi	a2, a2, -1922
 	mul	a1, a1, a2
@@ -18,7 +18,7 @@ func0000000000000000:
 	ret
 
 func0000000000000050:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 2
 	addi	a2, a2, -1922
 	mul	a1, a1, a2
@@ -27,7 +27,7 @@ func0000000000000050:
 	ret
 
 func0000000000000040:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 1048575
 	addi	a2, a2, -1256
 	mul	a1, a1, a2

@@ -77,7 +77,7 @@ func0000000000000084:
 func0000000000000521:
 	sext.w	a1, a1
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	negw	a0, a0
@@ -129,7 +129,7 @@ func000000000000032a:
 func0000000000000a2a:
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	slti	a0, a0, 0

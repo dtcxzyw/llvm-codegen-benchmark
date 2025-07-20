@@ -26,7 +26,7 @@ func0000000000000008:
 
 func0000000000000000:
 	slli	a3, a2, 6
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a3
 	sraiw	a0, a0, 2

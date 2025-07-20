@@ -32,7 +32,7 @@ func0000000000000081:
 	srli	a2, a2, 32
 	add	a2, a2, a3
 	slli	a3, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	addi	a1, a1, -2
 	seqz	a1, a1
@@ -50,7 +50,7 @@ func0000000000000024:
 	srli	a2, a2, 32
 	add	a2, a2, a3
 	slli	a3, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	addi	a1, a1, -1
 	seqz	a1, a1
@@ -71,7 +71,7 @@ func000000000000014a:
 	add	a2, a2, a3
 	slli	a3, a2, 5
 	slli	a2, a2, 1
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	sgtz	a1, a1
 	sgtz	a0, a0
@@ -87,8 +87,8 @@ func0000000000000021:
 	srli	a2, a2, 32
 	add	a2, a2, a3
 	slli	a3, a2, 1
-	subw	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a2
+	sub	a1, a1, a3
 	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -1,7 +1,7 @@
 func000000000000000a:
 	slli	a2, a2, 35
 	srli	a2, a2, 35
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -16,7 +16,7 @@ func00000000000000a1:
 
 func0000000000000086:
 	slli	a2, a2, 34
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 262144
 	srli	a2, a2, 34
 	addw	a0, a0, a2
@@ -25,7 +25,7 @@ func0000000000000086:
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a0, a0, 128
 	addw	a0, a0, a1
 	addi	a0, a0, -127
@@ -33,7 +33,7 @@ func0000000000000001:
 	ret
 
 func00000000000000aa:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a0, a0, 504
 	addw	a0, a0, a1
 	slti	a0, a0, 3

@@ -1,6 +1,6 @@
 func0000000000000026:
 	li	a2, -2
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slti	a0, a1, -32
@@ -21,7 +21,7 @@ func0000000000000001:
 
 func0000000000000061:
 	li	a2, -128
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a1, a1, 1

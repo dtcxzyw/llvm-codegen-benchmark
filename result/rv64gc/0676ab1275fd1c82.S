@@ -1,14 +1,14 @@
 func000000000000004c:
 	add	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func00000000000000cd:
 	add	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
@@ -23,7 +23,7 @@ func0000000000000040:
 	add	a1, a1, a2
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

@@ -5,14 +5,14 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 30
 	neg	a0, a0
 	ret
 
 func0000000000000001:
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 30
 	neg	a0, a0

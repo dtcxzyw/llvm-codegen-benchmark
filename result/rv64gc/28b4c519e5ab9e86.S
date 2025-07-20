@@ -1,7 +1,7 @@
 func0000000000000198:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	srliw	a2, a1, 7
 	li	a3, 674

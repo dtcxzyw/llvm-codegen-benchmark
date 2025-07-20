@@ -1,7 +1,7 @@
 func000000000000003f:
 	andi	a1, a1, 7
 	sh1add	a0, a0, a0
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a1, a1, 22
 	andi	a0, a1, 127
 	ret

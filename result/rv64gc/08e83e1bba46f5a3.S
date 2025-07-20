@@ -3,7 +3,7 @@ func0000000000000000:
 	li	a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000010:
 	addi	a2, a2, 9
 	and	a1, a1, a2
 	li	a2, 16
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -25,7 +25,7 @@ func0000000000000008:
 	addi	a2, a2, 1
 	and	a1, a1, a2
 	li	a2, 16
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000002:
 	li	a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -45,7 +45,7 @@ func0000000000000012:
 	addi	a2, a2, 9
 	and	a1, a1, a2
 	li	a2, 16
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -56,7 +56,7 @@ func000000000000000a:
 	addi	a2, a2, 1
 	and	a1, a1, a2
 	li	a2, 16
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 

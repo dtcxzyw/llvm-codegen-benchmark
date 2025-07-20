@@ -3,7 +3,7 @@ func0000000000000021:
 	mulhu	a5, a1, a3
 	mul	a2, a2, a3
 	mul	a1, a1, a3
-	negw	a3, a0
+	neg	a3, a0
 	add	a4, a4, a5
 	add	a2, a2, a4
 	xor	a1, a1, a2
@@ -17,7 +17,7 @@ func0000000000000020:
 	mulhu	a5, a1, a3
 	mul	a2, a2, a3
 	mul	a1, a1, a3
-	negw	a3, a0
+	neg	a3, a0
 	add	a4, a4, a5
 	add	a2, a2, a4
 	xor	a1, a1, a2

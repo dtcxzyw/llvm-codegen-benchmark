@@ -32,7 +32,7 @@ func0000000000000361:
 	slli	a3, a3, 59
 	addi	a3, a3, 1
 	slt	a2, a2, a3
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 48
 	add	a1, a1, a2
 	xor	a0, a0, a1

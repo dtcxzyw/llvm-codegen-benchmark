@@ -5,7 +5,7 @@ func0000000000000008:
 	j	.LBB0_3
 .LBB0_2:
 	li	a2, 1
-	subw	a1, a2, a1
+	sub	a1, a2, a1
 .LBB0_3:
 	addw	a0, a0, a1
 	lui	a1, 599186

@@ -66,7 +66,7 @@ func0000000000000701:
 func0000000000000cc8:
 	sext.w	a1, a0
 	slti	a1, a1, -305
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 305
 	addw	a0, a0, a1
 	sltiu	a0, a0, -22
@@ -76,7 +76,7 @@ func0000000000000cc8:
 func0000000000000cca:
 	sext.w	a1, a0
 	slti	a1, a1, -305
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 305
 	addw	a0, a0, a1
 	slti	a0, a0, 309
@@ -94,7 +94,7 @@ func0000000000000546:
 	addi	a2, a2, -496
 	slt	a1, a2, a1
 	lui	a2, 1048575
-	negw	a1, a1
+	neg	a1, a1
 	addi	a2, a2, 496
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -117,7 +117,7 @@ func0000000000000101:
 	addi	a2, a2, -1537
 	sltu	a1, a2, a1
 	lui	a2, 804435
-	negw	a1, a1
+	neg	a1, a1
 	addi	a2, a2, 1536
 	and	a1, a1, a2
 	addw	a0, a0, a1

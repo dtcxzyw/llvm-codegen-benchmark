@@ -31,7 +31,7 @@ func000000000000002a:
 	addi	a1, a1, -496
 	slt	a0, a1, a0
 	lui	a1, 1048575
-	negw	a0, a0
+	neg	a0, a0
 	addi	a1, a1, 496
 	and	a0, a0, a1
 	addw	a0, a0, a2

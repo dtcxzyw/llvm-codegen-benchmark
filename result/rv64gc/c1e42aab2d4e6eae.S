@@ -46,7 +46,7 @@ func000000000000001c:
 	and	a0, a0, a4
 	mul	a0, a0, a5
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 12
 	sll	a0, a1, a0
 	ret
@@ -99,7 +99,7 @@ func000000000000001f:
 	and	a0, a0, a4
 	mul	a0, a0, a5
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
@@ -153,13 +153,13 @@ func000000000000000e:
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
 .LBB2_2:
 	li	a0, 64
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret

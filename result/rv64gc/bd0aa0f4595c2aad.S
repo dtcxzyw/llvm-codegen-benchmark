@@ -2,7 +2,7 @@ func00000000000000ff:
 	andi	a2, a2, 63
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a1, a1, a3

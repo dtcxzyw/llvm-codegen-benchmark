@@ -1,6 +1,6 @@
 func0000000000000000:
 	add	a2, a2, a1
-	negw	a3, a1
+	neg	a3, a1
 	sll	a3, a2, a3
 	srl	a1, a2, a1
 	srli	a2, a0, 47
@@ -11,7 +11,7 @@ func0000000000000000:
 
 func0000000000000001:
 	add	a2, a2, a1
-	negw	a3, a1
+	neg	a3, a1
 	sll	a3, a2, a3
 	srl	a1, a2, a1
 	srli	a2, a0, 47

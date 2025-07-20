@@ -22,7 +22,7 @@ func0000000000000018:
 	slti	a2, a2, 0
 	addi	a1, a1, 73
 	czero.eqz	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, -73
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000020:
 	sltiu	a2, a2, 3
 	addi	a1, a1, -10
 	czero.nez	a1, a1, a2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 10
 	ret
 
@@ -55,7 +55,7 @@ func0000000000000011:
 	srliw	a2, a2, 26
 	addi	a1, a1, -4
 	czero.nez	a1, a1, a2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 4
 	ret
 

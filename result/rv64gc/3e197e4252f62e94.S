@@ -1,6 +1,6 @@
 func000000000000000a:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -11,7 +11,7 @@ func000000000000000a:
 
 func000000000000000b:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

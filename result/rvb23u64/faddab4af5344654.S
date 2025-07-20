@@ -7,7 +7,7 @@ func0000000000000003:
 	srli	a1, a1, 36
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
@@ -20,7 +20,7 @@ func0000000000000001:
 	srli	a1, a1, 38
 	addi	a2, a2, -1096
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -500
 	ret
 

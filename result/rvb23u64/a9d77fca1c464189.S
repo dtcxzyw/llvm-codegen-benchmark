@@ -1,7 +1,7 @@
 func0000000000000321:
 	sext.w	a2, a1
 	slti	a2, a2, 2
-	negw	a2, a2
+	neg	a2, a2
 	or	a0, a0, a2
 	addw	a0, a0, a1
 	addi	a0, a0, -8
@@ -20,7 +20,7 @@ func0000000000000341:
 func0000000000000301:
 	sext.w	a2, a1
 	slti	a2, a2, 2
-	negw	a2, a2
+	neg	a2, a2
 	or	a0, a0, a2
 	addw	a0, a0, a1
 	addi	a0, a0, -8

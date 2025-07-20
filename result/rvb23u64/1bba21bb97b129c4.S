@@ -2,7 +2,7 @@ func0000000000000000:
 	zext.b	a2, a1
 	slli	a1, a1, 31
 	slli	a2, a2, 16
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	subw	a0, a0, a2
 	ret
 
@@ -16,7 +16,7 @@ func000000000000000d:
 func0000000000000005:
 	zext.b	a1, a1
 	slli	a1, a1, 8
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 

@@ -1,5 +1,5 @@
 func00000000000000af:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a1, a1, a1
 	mul	a0, a0, a0
 	add	a0, a0, a1

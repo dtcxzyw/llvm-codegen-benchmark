@@ -1,13 +1,13 @@
 func000000000000007b:
 	addi	a0, a0, 129
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 16
 	ret
 
 func0000000000000000:
 	slli	a1, a0, 16
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a1, 128
 	srliw	a0, a0, 8
 	ret
@@ -25,7 +25,7 @@ func0000000000000078:
 	addi	a0, a0, 27
 	slli	a1, a0, 9
 	slli	a0, a0, 12
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -1535
 	srliw	a0, a0, 1
 	ret

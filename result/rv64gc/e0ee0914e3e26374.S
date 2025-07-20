@@ -4,7 +4,7 @@ func000000000000000a:
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	slti	a0, a0, 3
 	xori	a0, a0, 1
@@ -16,7 +16,7 @@ func000000000000020a:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	slti	a0, a0, 2
 	xori	a0, a0, 1
@@ -28,7 +28,7 @@ func000000000000028a:
 	blt	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

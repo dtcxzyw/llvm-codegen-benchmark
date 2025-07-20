@@ -18,7 +18,7 @@ func0000000000000037:
 func0000000000000083:
 	sext.w	a2, a2
 	sltiu	a2, a2, 20
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 2
 	sh2add.uw	a0, a1, a0
 	ret

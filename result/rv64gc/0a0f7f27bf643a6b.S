@@ -10,7 +10,7 @@ func0000000000000010:
 
 func0000000000000038:
 	li	a3, 256
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	mul	a1, a3, a1
 	addw	a0, a0, a1
 	lui	a1, 1044480
@@ -19,7 +19,7 @@ func0000000000000038:
 
 func000000000000003f:
 	li	a3, 255
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	mul	a1, a3, a1
 	add	a0, a0, a1
 	slli	a0, a0, 49

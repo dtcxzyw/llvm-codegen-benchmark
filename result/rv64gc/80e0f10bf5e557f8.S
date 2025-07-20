@@ -51,8 +51,8 @@ func000000000000004f:
 	srliw	a2, a2, 16
 	andi	a0, a0, 1
 	seqz	a2, a2
-	subw	a1, a1, a0
-	subw	a0, a1, a2
+	sub	a1, a1, a0
+	sub	a0, a1, a2
 	addiw	a0, a0, 4
 	ret
 

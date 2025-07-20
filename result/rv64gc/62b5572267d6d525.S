@@ -61,7 +61,7 @@ func000000000000001b:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 48
 	mulw	a0, a1, a0
 	ret

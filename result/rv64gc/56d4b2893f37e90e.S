@@ -31,7 +31,7 @@ func000000000000000b:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a2
 	zext.b	a0, a0
 	ret

@@ -1,7 +1,7 @@
 func0000000000000486:
 	zext.b	a1, a1
 	sltiu	a1, a1, 6
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 224
 	add	a0, a0, a1
 	slli	a0, a0, 56
@@ -12,7 +12,7 @@ func0000000000000486:
 func0000000000000498:
 	zext.b	a1, a1
 	sltiu	a1, a1, 6
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 224
 	add	a0, a0, a1
 	zext.b	a0, a0
@@ -23,7 +23,7 @@ func0000000000000498:
 func0000000000000494:
 	zext.b	a1, a1
 	sltiu	a1, a1, 6
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 224
 	add	a0, a0, a1
 	zext.b	a0, a0
@@ -43,7 +43,7 @@ func0000000000000c81:
 func0000000000000481:
 	zext.b	a1, a1
 	sltiu	a1, a1, 26
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 224
 	add	a0, a0, a1
 	zext.b	a0, a0
@@ -53,7 +53,7 @@ func0000000000000481:
 func000000000000048c:
 	zext.b	a1, a1
 	sltiu	a1, a1, 26
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 224
 	add	a0, a0, a1
 	zext.b	a0, a0

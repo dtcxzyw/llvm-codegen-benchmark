@@ -1,6 +1,6 @@
 func0000000000000016:
 	li	a3, 2
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	mulw	a1, a1, a3
 	slli	a1, a1, 2
 	add	a0, a0, a1

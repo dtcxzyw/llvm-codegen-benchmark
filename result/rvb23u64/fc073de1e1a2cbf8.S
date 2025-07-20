@@ -4,7 +4,7 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh3add.uw	a0, a1, a0
 	ret
 
@@ -19,22 +19,22 @@ func000000000000000c:
 	ret
 
 func0000000000000063:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000043:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000040:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 
 func000000000000000b:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli.uw	a1, a1, 4
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
@@ -46,7 +46,7 @@ func000000000000006c:
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 

@@ -7,7 +7,7 @@ func000000000000000c:
 	ret
 
 func000000000000008c:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, -2
 	slli	a2, a2, 32
 	srli	a2, a2, 29

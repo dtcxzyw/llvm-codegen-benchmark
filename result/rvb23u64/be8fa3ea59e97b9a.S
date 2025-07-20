@@ -1,7 +1,7 @@
 func0000000000000003:
 	sh2add	a1, a0, a0
 	slli	a0, a0, 6
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 342392
 	zext.w	a0, a0
 	addi	a1, a1, 669

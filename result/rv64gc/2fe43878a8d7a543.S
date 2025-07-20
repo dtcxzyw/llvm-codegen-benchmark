@@ -5,7 +5,7 @@ func0000000000000155:
 	add	a1, a1, a2
 	addi	a1, a1, 30
 	slli	a2, a1, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	subw	a0, a2, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000000:
 func0000000000000355:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	li	a2, 75
 	mul	a1, a1, a2

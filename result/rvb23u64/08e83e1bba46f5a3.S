@@ -2,7 +2,7 @@ func0000000000000000:
 	addi	a1, a1, 4
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000010:
 	add	a1, a1, a2
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000008:
 	add	a1, a1, a2
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000002:
 	addi	a1, a1, 4
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -40,7 +40,7 @@ func0000000000000012:
 	add	a1, a1, a2
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 
@@ -50,7 +50,7 @@ func000000000000000a:
 	add	a1, a1, a2
 	li	a2, 16
 	zext.h	a1, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srlw	a0, a1, a2
 	ret
 

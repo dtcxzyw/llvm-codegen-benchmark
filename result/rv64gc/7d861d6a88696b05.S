@@ -10,7 +10,7 @@ func0000000000000001:
 
 func0000000000000088:
 	slli	a1, a1, 63
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	lui	a0, 524288
 	srai	a1, a1, 63
 	andi	a1, a1, 7
@@ -22,7 +22,7 @@ func0000000000000088:
 func00000000000001e1:
 	andi	a1, a1, 1
 	slli	a1, a1, 1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	addw	a1, a1, a2
 	addi	a0, a1, -128
 	seqz	a0, a0

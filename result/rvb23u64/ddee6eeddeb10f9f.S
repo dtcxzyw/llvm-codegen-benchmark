@@ -1,5 +1,5 @@
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a0, a0, a1
 	lui	a1, 4
 	add	a0, a0, a1
@@ -7,7 +7,7 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a0, a0, a1
 	lui	a1, 2
 	add	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000028:
 	ret
 
 func0000000000000020:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a0, a0, a1
 	addi	a0, a0, 128
 	sraiw	a0, a0, 4

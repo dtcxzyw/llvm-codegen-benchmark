@@ -1,7 +1,7 @@
 func0000000000000606:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
@@ -10,7 +10,7 @@ func0000000000000606:
 func0000000000000618:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 7
@@ -21,7 +21,7 @@ func0000000000000618:
 func000000000000060a:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0

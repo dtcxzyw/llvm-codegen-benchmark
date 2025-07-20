@@ -15,7 +15,7 @@ func000000000000001d:
 
 func000000000000001f:
 	andi	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 12
 	li	a1, 7
 	sll	a0, a1, a0

@@ -1,5 +1,5 @@
 func00000000000000c0:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	addi	a1, a1, 31
 	slli	a1, a1, 32

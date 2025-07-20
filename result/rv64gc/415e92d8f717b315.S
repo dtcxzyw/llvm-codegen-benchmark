@@ -3,7 +3,7 @@ func0000000000000001:
 	lui	a2, 596523
 	xor	a0, a0, a1
 	addi	a2, a2, 965
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a2, a2, 32
 	slli	a1, a0, 32
 	mulhu	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000000:
 	lui	a2, 596523
 	xor	a0, a0, a1
 	addi	a2, a2, 965
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a2, a2, 32
 	slli	a1, a0, 32
 	mulhu	a1, a1, a2
@@ -35,7 +35,7 @@ func0000000000000003:
 	lui	a2, 335544
 	xor	a0, a0, a1
 	addi	a2, a2, 1311
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a2, a2, 32
 	slli	a1, a0, 32
 	mulhu	a1, a1, a2

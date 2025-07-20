@@ -11,7 +11,7 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 49
 	addi	a2, a2, -444
 	xor	a1, a1, a2
@@ -19,7 +19,7 @@ func0000000000000007:
 	ret
 
 func000000000000000f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 158
 	addi	a2, a2, 839
 	xor	a1, a1, a2
@@ -27,7 +27,7 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 158
 	addi	a2, a2, 839
 	xor	a1, a1, a2
@@ -35,7 +35,7 @@ func000000000000000c:
 	ret
 
 func0000000000000005:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 98
 	addi	a2, a2, -825
 	xor	a1, a1, a2
@@ -43,7 +43,7 @@ func0000000000000005:
 	ret
 
 func000000000000000b:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 11
 	addi	a2, a2, 351
 	xor	a1, a1, a2
@@ -51,7 +51,7 @@ func000000000000000b:
 	ret
 
 func0000000000000009:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 11
 	addi	a2, a2, 351
 	xor	a1, a1, a2

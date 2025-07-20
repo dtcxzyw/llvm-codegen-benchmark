@@ -4,7 +4,7 @@
 	.quad	0x3fd34413509f79ff
 func000000000000000a:
 	sext.w	a2, a1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)

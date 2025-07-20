@@ -8,7 +8,7 @@ func0000000000000000:
 	srli	a1, a1, 57
 	mul	a1, a1, a2
 	lui	a2, 34360
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	addi	a1, a2, -1071
 	mul	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000020:
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	lui	a2, 17476
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	addi	a1, a2, 1093
 	mul	a0, a0, a1
@@ -44,7 +44,7 @@ func000000000000006a:
 	srli	a1, a1, 45
 	mul	a1, a1, a2
 	lui	a2, 10486
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	addi	a1, a2, -983
 	mul	a0, a0, a1

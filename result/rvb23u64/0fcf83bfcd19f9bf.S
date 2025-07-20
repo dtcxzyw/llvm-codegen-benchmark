@@ -19,7 +19,7 @@ func0000000000000045:
 func0000000000000055:
 	sh2add	a3, a2, a2
 	slli	a2, a2, 16
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
@@ -96,7 +96,7 @@ func00000000000000f0:
 
 func0000000000000054:
 	sh2add	a2, a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

@@ -18,7 +18,7 @@ func000000000000000c:
 
 func0000000000000004:
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
@@ -61,7 +61,7 @@ func0000000000000007:
 func0000000000000008:
 	sh2add	a2, a1, a1
 	slli	a1, a1, 16
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

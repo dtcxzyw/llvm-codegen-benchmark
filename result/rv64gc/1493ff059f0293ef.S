@@ -1,5 +1,5 @@
 func000000000000000a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	li	a1, 255
 	bltu	a0, a1, .LBB0_2
@@ -8,7 +8,7 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	li	a1, 3
 	bltu	a0, a1, .LBB1_2
@@ -17,7 +17,7 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	li	a1, 128
 	bltu	a0, a1, .LBB2_2

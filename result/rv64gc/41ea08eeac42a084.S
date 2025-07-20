@@ -1,7 +1,7 @@
 func000000000000000a:
 	sext.w	a0, a0
 	sgtz	a0, a0
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	andi	a0, a0, 31
 	ret

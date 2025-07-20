@@ -15,7 +15,7 @@ func0000000000000050:
 	addi	a3, a3, -1
 	sltu	a2, a2, a3
 	li	a3, 2
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	sllw	a0, a0, a1
@@ -27,7 +27,7 @@ func0000000000000018:
 	lui	a3, 16
 	slt	a2, a2, a3
 	li	a3, 2
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	sllw	a0, a0, a1

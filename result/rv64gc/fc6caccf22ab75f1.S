@@ -19,7 +19,7 @@ func0000000000000018:
 
 func000000000000000a:
 	slti	a0, a0, 255
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	srliw	a0, a0, 24
 	slli	a0, a0, 24

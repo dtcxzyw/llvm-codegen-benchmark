@@ -21,7 +21,7 @@ func00000000000000a0:
 	slti	a2, a2, 0
 	xori	a2, a2, 1
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 2
 	ret
 

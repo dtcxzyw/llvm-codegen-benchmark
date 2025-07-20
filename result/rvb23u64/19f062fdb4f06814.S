@@ -5,13 +5,13 @@ func0000000000000019:
 	ret
 
 func0000000000000011:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 3
 	neg	a0, a0
 	ret
 
 func000000000000000b:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 15
 	li	a1, 16
 	sub	a0, a1, a0

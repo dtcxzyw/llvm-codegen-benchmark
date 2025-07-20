@@ -1,7 +1,7 @@
 func00000000000001e9:
 	sext.w	a1, a1
 	li	a2, 32
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	negw	a0, a1
 	max	a0, a1, a0
 	zext.h	a2, a2

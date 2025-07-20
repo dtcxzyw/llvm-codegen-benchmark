@@ -33,7 +33,7 @@ func0000000000000010:
 
 func0000000000000020:
 	sltiu	a1, a0, 101
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, -101
 	add	a0, a0, a1
 	ret

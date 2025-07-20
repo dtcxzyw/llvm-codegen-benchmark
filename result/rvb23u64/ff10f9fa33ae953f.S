@@ -20,7 +20,7 @@ func0000000000000004:
 	slli	a0, a0, 33
 	andn	a1, a1, a2
 	srli	a0, a0, 33
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 

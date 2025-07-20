@@ -40,7 +40,7 @@ func0000000000000001:
 	addi	a1, a1, -13
 	seqz	a1, a1
 	and	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 189
 	ret
 

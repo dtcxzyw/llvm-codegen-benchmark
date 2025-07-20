@@ -1,7 +1,7 @@
 func000000000000003a:
 	andi	a1, a1, 1
 	li	a3, 4
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	li	a2, -49
 	zext.w	a2, a2
 	czero.nez	a3, a3, a1

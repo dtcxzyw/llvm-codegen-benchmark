@@ -15,7 +15,7 @@ func0000000000000013:
 	lui	a3, 244
 	addi	a3, a3, 576
 	sltu	a2, a2, a3
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -32,7 +32,7 @@ func0000000000000063:
 func0000000000000028:
 	sext.w	a2, a0
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -48,7 +48,7 @@ func0000000000000007:
 func0000000000000012:
 	sext.w	a2, a0
 	sltiu	a2, a2, 9
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -65,7 +65,7 @@ func0000000000000051:
 func0000000000000029:
 	sext.w	a2, a0
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

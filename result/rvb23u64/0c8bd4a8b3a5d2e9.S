@@ -8,14 +8,14 @@ func000000000000001b:
 
 func0000000000000001:
 	andi	a1, a1, -64
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 64
 	ret
 
 func0000000000000000:
 	addi	a1, a1, 27
 	andi	a1, a1, -4
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 

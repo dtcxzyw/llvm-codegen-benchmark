@@ -10,7 +10,7 @@ func0000000000000004:
 	add	a1, a1, a0
 	srliw	a1, a1, 1
 	srliw	a0, a0, 1
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

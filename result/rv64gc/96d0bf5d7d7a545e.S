@@ -1,5 +1,5 @@
 func0000000000000000:
-	negw	a2, a2
+	neg	a2, a2
 	add	a0, a0, a1
 	and	a0, a0, a2
 	slli	a0, a0, 32
@@ -7,7 +7,7 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
-	negw	a2, a2
+	neg	a2, a2
 	add	a0, a0, a1
 	and	a0, a0, a2
 	slli	a0, a0, 32

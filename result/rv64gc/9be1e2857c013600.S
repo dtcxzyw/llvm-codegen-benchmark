@@ -8,8 +8,8 @@ func000000000000003d:
 	srli	a1, a1, 37
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a1, a1, a2
+	sub	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1
 	srli	a0, a0, 11

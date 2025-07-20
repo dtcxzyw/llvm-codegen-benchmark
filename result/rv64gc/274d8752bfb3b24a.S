@@ -6,7 +6,7 @@ func000000000000001f:
 
 func0000000000000003:
 	li	a2, 64
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -14,7 +14,7 @@ func0000000000000003:
 
 func000000000000000b:
 	li	a2, 16
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -34,7 +34,7 @@ func000000000000001c:
 
 func0000000000000000:
 	li	a2, 63
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 26
 	add	a0, a0, a2
@@ -59,7 +59,7 @@ func0000000000000004:
 
 func0000000000000008:
 	li	a2, 72
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2

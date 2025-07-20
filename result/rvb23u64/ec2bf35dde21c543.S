@@ -6,21 +6,21 @@ func0000000000000000:
 
 func0000000000000014:
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 3
 	ret
 
 func0000000000000004:
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -8
 	ret
 
 func0000000000000010:
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -7
 	ret
@@ -55,7 +55,7 @@ func0000000000000001:
 func000000000000003f:
 	sh1add	a2, a1, a1
 	slli	a1, a1, 7
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 22
 	ret
@@ -63,7 +63,7 @@ func000000000000003f:
 func000000000000003d:
 	slli	a2, a1, 2
 	slli	a1, a1, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 1047932
 	add	a0, a0, a1
 	addi	a1, a2, -1692
@@ -106,7 +106,7 @@ func0000000000000017:
 
 func0000000000000018:
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
 

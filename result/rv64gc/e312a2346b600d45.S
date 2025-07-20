@@ -63,7 +63,7 @@ func0000000000000026:
 	add	a1, a1, a2
 	li	a2, 100
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	slti	a0, a0, 0

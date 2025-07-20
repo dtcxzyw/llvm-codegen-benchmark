@@ -1,5 +1,5 @@
 func0000000000000608:
-	negw	a2, a2
+	neg	a2, a2
 	sll	a1, a1, a2
 	add	a0, a0, a1
 	sltiu	a0, a0, 2
@@ -8,7 +8,7 @@ func0000000000000608:
 
 func0000000000000201:
 	li	a3, -53
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	sll	a1, a1, a3
 	neg	a0, a0
 	xor	a0, a0, a1

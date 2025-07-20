@@ -10,7 +10,7 @@ func0000000000000019:
 	slli	a1, a1, 1
 	subw	a0, a0, a1
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 5
 	addw	a0, a0, a1
 	ret

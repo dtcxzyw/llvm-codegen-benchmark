@@ -15,7 +15,7 @@ func00000000000001d1:
 	sllw	a2, a3, a2
 	sltiu	a1, a1, 256
 	ori	a2, a2, 1
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

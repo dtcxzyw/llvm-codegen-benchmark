@@ -6,7 +6,7 @@ func0000000000000018:
 	srli	a2, a2, 19
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
@@ -21,7 +21,7 @@ func0000000000000001:
 	srli	a2, a2, 19
 	sh2add	a2, a2, a2
 	slli	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	addi	a1, a1, -8
 	seqz	a1, a1
@@ -35,7 +35,7 @@ func000000000000000c:
 	mulhu	a2, a3, a2
 	srli	a2, a2, 18
 	sh2add	a2, a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	addi	a1, a1, -1
 	snez	a1, a1
@@ -52,7 +52,7 @@ func0000000000000014:
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 60
 	and	a0, a0, a1

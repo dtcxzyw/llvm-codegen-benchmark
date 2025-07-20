@@ -1,6 +1,6 @@
 func000000000000000a:
 	zext.b	a2, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 526344
 	mulw	a0, a0, a2
 	addi	a1, a1, 129

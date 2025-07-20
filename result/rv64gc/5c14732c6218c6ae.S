@@ -6,7 +6,7 @@ func0000000000000025:
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 37
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -477
 	ret
 

@@ -1,6 +1,6 @@
 func00000000000001aa:
 	li	a2, 32
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1
 	mulw	a0, a2, a0
 	addi	a1, a1, -541
@@ -9,7 +9,7 @@ func00000000000001aa:
 
 func00000000000000aa:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	mulw	a0, a2, a0
 	sgtz	a0, a0
 	ret

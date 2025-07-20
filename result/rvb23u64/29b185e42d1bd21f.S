@@ -13,7 +13,7 @@ func000000000000000f:
 func000000000000000a:
 	zext.b	a0, a0
 	li	a1, 23
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 

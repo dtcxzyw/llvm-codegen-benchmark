@@ -2,7 +2,7 @@ func0000000000000798:
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add	a1, a1, a2
 	srliw	a0, a1, 7
 	sltiu	a0, a0, 675
@@ -13,7 +13,7 @@ func000000000000078a:
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addw	a1, a1, a2
 	slti	a0, a1, 0
 	xori	a0, a0, 1

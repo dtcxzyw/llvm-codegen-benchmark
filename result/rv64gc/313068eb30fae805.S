@@ -14,7 +14,7 @@ func000000000000007f:
 	or	a0, a0, a1
 	slli	a1, a0, 3
 	slli	a0, a0, 6
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
 

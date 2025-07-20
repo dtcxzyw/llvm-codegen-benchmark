@@ -21,7 +21,7 @@ func0000000000000043:
 func000000000000005b:
 	slli	a3, a2, 3
 	slli	a0, a0, 2
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addiw	a3, a3, 7
 	slli	a3, a3, 2
 	add	a0, a0, a1
@@ -42,7 +42,7 @@ func000000000000005a:
 	slli	a3, a2, 1
 	slli	a2, a2, 3
 	slli	a0, a0, 2
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addiw	a2, a2, 6
 	slli	a2, a2, 2
 	add	a0, a0, a1

@@ -26,7 +26,7 @@ func000000000000018c:
 	ret
 
 func000000000000014a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 0
@@ -170,7 +170,7 @@ func000000000000058c:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a1, a1, 1
 	xori	a0, a0, 6
 	or	a0, a0, a1
@@ -199,7 +199,7 @@ func000000000000008a:
 	ret
 
 func0000000000000421:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 879
 	addi	a2, a2, -384
 	xor	a1, a1, a2

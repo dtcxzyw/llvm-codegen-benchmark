@@ -1,6 +1,6 @@
 func000000000000000f:
 	slli	a2, a1, 8
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	add	a0, a0, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48

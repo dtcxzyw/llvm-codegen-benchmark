@@ -1,5 +1,5 @@
 func0000000000000018:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 63
 	snez	a0, a0
 	ret

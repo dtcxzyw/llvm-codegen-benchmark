@@ -1,5 +1,5 @@
 func0000000000000002:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 5
 	sext.h	a0, a0
 	addi	a1, a1, -1755

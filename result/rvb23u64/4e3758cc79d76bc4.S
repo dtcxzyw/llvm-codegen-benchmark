@@ -7,7 +7,7 @@ func0000000000000055:
 	ret
 
 func00000000000000d5:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	sh1add	a0, a0, a0
 	slli	a0, a0, 1
@@ -15,7 +15,7 @@ func00000000000000d5:
 	ret
 
 func0000000000000044:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	li	a1, -137
 	mul	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000044:
 	ret
 
 func0000000000000004:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	li	a1, -137
 	mul	a0, a0, a1

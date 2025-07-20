@@ -6,7 +6,7 @@ func00000000000001ec:
 
 func00000000000001e1:
 	li	a2, 8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srlw	a0, a0, a2
 	zext.b	a0, a0
 	seqz	a0, a0
@@ -54,14 +54,14 @@ func000000000000006c:
 
 func0000000000000041:
 	li	a2, 30
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srlw	a0, a0, a2
 	andi	a0, a0, 3
 	seqz	a0, a0
 	ret
 
 func00000000000001a1:
-	negw	a1, a1
+	neg	a1, a1
 	srlw	a0, a0, a1
 	seqz	a0, a0
 	ret

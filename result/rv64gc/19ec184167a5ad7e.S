@@ -41,7 +41,7 @@ func00000000000000fb:
 	mul	a0, a0, a4
 	srli	a0, a0, 56
 	li	a1, 64
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 1
 	addiw	a0, a0, 1
 	ret
@@ -89,7 +89,7 @@ func00000000000000f9:
 	mul	a0, a0, a4
 	srli	a0, a0, 56
 	li	a1, 67
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	addi	a0, a0, -1
 	ret
@@ -138,14 +138,14 @@ func0000000000000079:
 	mul	a0, a0, a1
 	srli	a0, a0, 56
 	li	a1, 67
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	addi	a0, a0, -1
 	ret
 .LBB2_2:
 	li	a0, 64
 	li	a1, 67
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	addi	a0, a0, -1
 	ret

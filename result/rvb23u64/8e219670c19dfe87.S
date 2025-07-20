@@ -7,7 +7,7 @@ func000000000000001e:
 func000000000000000a:
 	sh2add	a1, a1, a1
 	li	a2, 47
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 

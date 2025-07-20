@@ -1,5 +1,5 @@
 func0000000000000003:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	not	a1, a1
 	slli	a1, a1, 48
 	srli	a1, a1, 55

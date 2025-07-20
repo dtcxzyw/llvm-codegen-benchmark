@@ -1,7 +1,7 @@
 func000000000000001a:
 	sext.w	a2, a2
 	slti	a2, a2, 2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 2
@@ -12,7 +12,7 @@ func000000000000001a:
 func0000000000000018:
 	sext.w	a2, a2
 	slti	a2, a2, 2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 2

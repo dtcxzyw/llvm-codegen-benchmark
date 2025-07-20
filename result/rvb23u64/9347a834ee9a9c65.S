@@ -1,6 +1,6 @@
 func0000000000000201:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	sext.w	a0, a0
 	xor	a0, a0, a1
@@ -9,7 +9,7 @@ func0000000000000201:
 
 func0000000000000221:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -2
 	sext.w	a0, a0
 	xor	a0, a0, a1

@@ -1,5 +1,5 @@
 func0000000000000003:
-	negw	a0, a0
+	neg	a0, a0
 	lui	a1, 699051
 	slli	a0, a0, 32
 	addi	a1, a1, -1365
@@ -11,7 +11,7 @@ func0000000000000003:
 
 func000000000000000b:
 	li	a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 335544
 	zext.w	a1, a1
 	addi	a0, a0, 1311

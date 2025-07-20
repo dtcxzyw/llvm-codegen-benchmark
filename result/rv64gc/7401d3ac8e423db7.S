@@ -28,7 +28,7 @@ func00000000000003ff:
 	add	a1, a1, a2
 	slli	a2, a0, 1
 	slli	a0, a0, 3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 8
 	ret
@@ -39,7 +39,7 @@ func0000000000000150:
 	add	a1, a1, a2
 	slli	a2, a0, 1
 	slli	a0, a0, 3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret

@@ -4,7 +4,7 @@ func0000000000000000:
 	li	a0, 3
 	ret
 .LBB0_2:
-	subw	a0, a1, a2
+	sub	a0, a1, a2
 	addiw	a0, a0, -3
 	ret
 

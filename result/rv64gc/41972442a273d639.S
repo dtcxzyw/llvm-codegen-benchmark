@@ -30,7 +30,7 @@ func0000000000000015:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 
@@ -66,7 +66,7 @@ func0000000000000010:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

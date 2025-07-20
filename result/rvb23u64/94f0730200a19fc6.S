@@ -18,7 +18,7 @@ func0000000000000021:
 	slli	a3, a1, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 32
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 1
 	add	a1, a1, a2
 	srliw	a1, a1, 4

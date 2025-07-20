@@ -10,7 +10,7 @@ func0000000000000017:
 	srli	a1, a1, 17
 	slli	a2, a1, 5
 	slli	a1, a1, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 1
 	addi	a2, a2, 423
 	add	a0, a0, a2

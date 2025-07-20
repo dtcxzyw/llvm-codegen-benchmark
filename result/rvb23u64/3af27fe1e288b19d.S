@@ -1,6 +1,6 @@
 func0000000000000003:
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 349525
 	zext.w	a0, a0
 	addi	a1, a1, 1366

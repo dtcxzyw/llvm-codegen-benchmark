@@ -1,5 +1,5 @@
 func0000000000000a81:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1
@@ -7,7 +7,7 @@ func0000000000000a81:
 	ret
 
 func0000000000000a8a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000a8a:
 	ret
 
 func0000000000000aaa:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000aaa:
 	ret
 
 func0000000000000aa6:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1
@@ -41,7 +41,7 @@ func0000000000000aa1:
 	ret
 
 func0000000000000026:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1
@@ -59,7 +59,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	addi	a0, a0, 1
 	mulw	a0, a0, a1

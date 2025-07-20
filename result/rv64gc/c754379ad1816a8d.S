@@ -1,5 +1,5 @@
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 60
 	srai	a1, a1, 63
 	neg	a0, a0

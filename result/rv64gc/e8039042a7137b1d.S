@@ -37,7 +37,7 @@ func00000000000000a1:
 
 func0000000000000004:
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 24
 	seqz	a0, a0
 	ret

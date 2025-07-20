@@ -2,7 +2,7 @@ func0000000000000000:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
@@ -10,7 +10,7 @@ func000000000000000d:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
@@ -27,7 +27,7 @@ func000000000000000c:
 	bnez	a1, .LBB3_2
 	li	a2, 1
 .LBB3_2:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 3
 	ret
 

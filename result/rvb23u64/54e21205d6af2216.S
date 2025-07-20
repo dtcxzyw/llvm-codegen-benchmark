@@ -1,33 +1,33 @@
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slliw	a1, a1, 16
 	zext.h	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slliw	a1, a1, 1
 	andi	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slliw	a1, a1, 2
 	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slliw	a1, a1, 1
 	andi	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 1048560
 	slliw	a1, a1, 8
 	and	a0, a0, a2

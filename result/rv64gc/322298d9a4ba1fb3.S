@@ -17,7 +17,7 @@ func0000000000000014:
 	srli	a1, a1, 12
 	slli	a2, a1, 6
 	slli	a1, a1, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 10
@@ -43,7 +43,7 @@ func0000000000000018:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1

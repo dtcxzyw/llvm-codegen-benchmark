@@ -10,7 +10,7 @@ func000000000000000f:
 	andi	a2, a2, 62
 	slli	a0, a0, 3
 	add	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	ori	a0, a1, 48
 	zext.b	a0, a0
 	ret

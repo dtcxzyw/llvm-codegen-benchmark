@@ -2,8 +2,8 @@ func000000000000001f:
 	sext.w	a2, a2
 	andi	a1, a1, 1
 	seqz	a2, a2
-	subw	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a1
+	sub	a0, a0, a2
 	addiw	a0, a0, 4
 	ret
 
@@ -53,9 +53,9 @@ func0000000000000015:
 func000000000000004f:
 	andi	a2, a2, 1
 	srliw	a1, a1, 16
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 4
 	ret
 

@@ -1,5 +1,5 @@
 func0000000000000014:
-	negw	a1, a1
+	neg	a1, a1
 	slli	a1, a1, 33
 	slli	a0, a0, 1
 	sub	a0, a1, a0

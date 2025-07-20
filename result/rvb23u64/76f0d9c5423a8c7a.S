@@ -10,7 +10,7 @@ func0000000000000030:
 	sext.w	a3, a0
 	slt	a2, a3, a2
 	czero.nez	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000050:
 	sext.w	a3, a0
 	slt	a2, a3, a2
 	czero.nez	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000040:
 	sext.w	a3, a0
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

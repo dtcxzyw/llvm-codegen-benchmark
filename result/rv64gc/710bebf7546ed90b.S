@@ -10,7 +10,7 @@ func0000000000000010:
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -4
 	ret
 
@@ -26,7 +26,7 @@ func0000000000000000:
 	slli	a1, a1, 24
 	or	a1, a1, a3
 	or	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -24
 	ret
 

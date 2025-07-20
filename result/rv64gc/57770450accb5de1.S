@@ -54,7 +54,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	sext.w	a2, a1
 	sltiu	a2, a2, 3
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	xor	a0, a0, a1

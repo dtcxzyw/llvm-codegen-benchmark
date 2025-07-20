@@ -94,7 +94,7 @@ func0000000000000051:
 	bnez	a1, .LBB6_2
 	sext.w	a2, a2
 	sltiu	a1, a2, 6
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 3
 	addw	a0, a0, a1
 	ret

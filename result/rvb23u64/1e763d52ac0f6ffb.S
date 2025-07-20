@@ -6,7 +6,7 @@ func0000000000000001:
 	mul	a2, a2, a3
 	srli	a2, a2, 35
 	slli	a3, a2, 7
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0

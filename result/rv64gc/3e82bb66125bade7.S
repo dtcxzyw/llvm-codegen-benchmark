@@ -22,14 +22,14 @@ func0000000000000000:
 func000000000000000f:
 	slli	a1, a0, 2
 	slli	a0, a0, 4
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 12
 	ret
 
 func0000000000000004:
 	slli	a1, a0, 1
 	slli	a0, a0, 9
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 510
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000003:
 func0000000000000001:
 	slli	a1, a0, 1
 	slli	a0, a0, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
 

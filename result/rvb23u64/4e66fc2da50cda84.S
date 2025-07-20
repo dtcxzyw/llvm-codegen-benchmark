@@ -13,7 +13,7 @@ func0000000000000002:
 	sh2add	a1, a1, a1
 	sh3add	a1, a1, a1
 	slli	a1, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	mul	a0, a0, a2
 	srliw	a1, a0, 31
 	srli	a0, a0, 16

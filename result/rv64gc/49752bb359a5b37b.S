@@ -22,7 +22,7 @@ func0000000000000010:
 	addi	a2, a2, -1
 	sltu	a1, a1, a2
 	li	a2, 2
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sll	a0, a0, a2
 	ret
 

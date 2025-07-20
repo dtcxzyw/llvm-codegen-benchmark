@@ -1,6 +1,6 @@
 func0000000000000000:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -11,13 +11,13 @@ func000000000000001b:
 
 func0000000000000008:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
 func000000000000000a:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -43,19 +43,19 @@ func000000000000000b:
 
 func000000000000001a:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
 func0000000000000004:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
 func0000000000000018:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -66,7 +66,7 @@ func0000000000000003:
 
 func0000000000000002:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000007:
 
 func0000000000000014:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -93,7 +93,7 @@ func0000000000000005:
 
 func0000000000000010:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 

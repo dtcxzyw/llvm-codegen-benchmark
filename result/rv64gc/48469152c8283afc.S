@@ -10,7 +10,7 @@ func0000000000000002:
 	mulhu	a0, a0, a2
 	srli	a0, a0, 33
 	slli	a2, a0, 1
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	subw	a0, a0, a2
 	ret
 

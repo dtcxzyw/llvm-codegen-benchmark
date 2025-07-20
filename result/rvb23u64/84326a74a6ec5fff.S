@@ -1,7 +1,7 @@
 func00000000000000c9:
 	sext.w	a2, a2
 	slti	a2, a2, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
@@ -13,7 +13,7 @@ func00000000000000c9:
 func00000000000000cb:
 	sext.w	a2, a2
 	slti	a2, a2, 1570
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
@@ -25,7 +25,7 @@ func00000000000000cb:
 func00000000000000c3:
 	sext.w	a2, a2
 	slti	a2, a2, -11
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a1, a1, 32
@@ -41,7 +41,7 @@ func000000000000028b:
 	addi	a3, a3, 1359
 	sltu	a2, a2, a3
 	lui	a3, 235184
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a2, a3, 1725
 	mul	a1, a1, a2
@@ -52,7 +52,7 @@ func000000000000028b:
 func0000000000000089:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
@@ -64,7 +64,7 @@ func0000000000000089:
 func000000000000008b:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
@@ -76,7 +76,7 @@ func000000000000008b:
 func0000000000000081:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311

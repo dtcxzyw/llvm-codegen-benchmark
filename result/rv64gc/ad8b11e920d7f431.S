@@ -76,7 +76,7 @@ func0000000000000065:
 	srli	a1, a1, 56
 .LBB0_5:
 	sext.w	a2, a0
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1048572
 	seqz	a2, a2
 	add	a0, a0, a2

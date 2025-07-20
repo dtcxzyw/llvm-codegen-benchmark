@@ -32,7 +32,7 @@ func000000000000001d:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	negw	a1, a1
+	neg	a1, a1
 	sllw	a1, a3, a1
 	srai	a0, a0, 63
 	or	a0, a0, a1
@@ -73,7 +73,7 @@ func000000000000001e:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	negw	a1, a1
+	neg	a1, a1
 	sllw	a0, a0, a1
 .LBB1_2:
 	ret
@@ -113,7 +113,7 @@ func000000000000001f:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	negw	a1, a1
+	neg	a1, a1
 	sllw	a0, a0, a1
 .LBB2_2:
 	ret

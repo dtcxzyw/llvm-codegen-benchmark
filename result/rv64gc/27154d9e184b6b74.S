@@ -8,7 +8,7 @@ func00000000000000a1:
 func00000000000000a4:
 	addiw	a1, a1, -731
 	sltiu	a1, a1, 2
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 9
 	addw	a0, a0, a1
 	ret

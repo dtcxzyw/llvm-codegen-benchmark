@@ -20,7 +20,7 @@ func0000000000000fe1:
 func0000000000000f04:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 144
 	slli	a1, a1, 32

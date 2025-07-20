@@ -4,7 +4,7 @@ func000000000000000f:
 	lui	a3, 149808
 	mulhu	a2, a2, a3
 	srli	a2, a2, 16
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	slli	a3, a3, 48
 	srli	a3, a3, 49
 	add	a2, a2, a3

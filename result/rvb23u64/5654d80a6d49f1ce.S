@@ -4,7 +4,7 @@ func0000000000000035:
 	sub	a3, a3, a2
 	li	a2, 23
 	czero.eqz	a1, a3, a1
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

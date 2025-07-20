@@ -11,7 +11,7 @@ func0000000000000010:
 	bne	a3, a4, .LBB1_2
 	li	a2, 30
 .LBB1_2:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

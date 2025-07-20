@@ -14,7 +14,7 @@ func0000000000000004:
 func0000000000000a0a:
 	slli	a3, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
@@ -28,7 +28,7 @@ func0000000000000a0a:
 func0000000000000a06:
 	slli	a3, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 1
 	addi	a3, a3, -496
 	mul	a2, a2, a3

@@ -1,5 +1,5 @@
 func0000000000000006:
-	negw	a1, a1
+	neg	a1, a1
 	rev8	a0, a0
 	lui	a2, 61681
 	srli	a3, a0, 36
@@ -28,7 +28,7 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	negw	a1, a1
+	neg	a1, a1
 	rev8	a0, a0
 	lui	a2, 61681
 	srli	a3, a0, 36

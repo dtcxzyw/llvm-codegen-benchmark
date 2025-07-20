@@ -2,7 +2,7 @@ func000000000000001a:
 	slli	a0, a0, 49
 	srli	a0, a0, 59
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 48
 	lui	a0, 135312
 	mulhu	a0, a1, a0

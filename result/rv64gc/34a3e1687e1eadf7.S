@@ -71,7 +71,7 @@ func0000000000000141:
 	bnez	a1, .LBB5_2
 	sext.w	a2, a2
 	slti	a0, a2, 1
-	negw	a0, a0
+	neg	a0, a0
 	ori	a0, a0, -3
 .LBB5_2:
 	ret

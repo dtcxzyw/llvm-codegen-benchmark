@@ -7,7 +7,7 @@ func000000000000001a:
 	ret
 
 func000000000000001e:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	sub	a0, a0, a1
 	addi	a0, a0, 4

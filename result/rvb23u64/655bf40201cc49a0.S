@@ -10,7 +10,7 @@ func0000000000000005:
 	lui	a2, 244
 	addi	a2, a2, 576
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 1000
 	mulw	a0, a0, a1
 	ret

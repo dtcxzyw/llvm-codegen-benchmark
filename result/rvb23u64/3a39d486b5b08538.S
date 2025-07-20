@@ -4,7 +4,7 @@ func0000000000000025:
 	mul	a1, a1, a2
 	li	a2, 2
 	sraiw	a1, a1, 20
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000024:
 	mul	a1, a1, a2
 	li	a2, 2
 	sraiw	a1, a1, 20
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

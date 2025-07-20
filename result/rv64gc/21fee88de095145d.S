@@ -2,9 +2,9 @@ func0000000000000c2a:
 	sext.w	a3, a1
 	sext.w	a4, a0
 	slt	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	sgtz	a0, a0
 	ret
@@ -13,7 +13,7 @@ func0000000000000c21:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	slt	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a0, a0, a3
 	sext.w	a0, a0
 	subw	a2, a2, a1
@@ -25,9 +25,9 @@ func0000000000000c0a:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	slt	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a0, a0, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 2
 	xori	a0, a0, 1
@@ -37,7 +37,7 @@ func0000000000000801:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sltu	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a0, a0, a3
 	sext.w	a0, a0
 	subw	a2, a2, a1

@@ -1,6 +1,6 @@
 func0000000000000061:
 	sext.w	a2, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slliw	a0, a0, 1
 	xor	a0, a0, a2
 	seqz	a0, a0

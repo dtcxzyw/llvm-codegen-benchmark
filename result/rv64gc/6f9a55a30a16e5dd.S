@@ -23,7 +23,7 @@ func0000000000000002:
 	bnez	a0, .LBB2_2
 	andi	a0, a1, 63
 	li	a1, 61
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

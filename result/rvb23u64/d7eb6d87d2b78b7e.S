@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a1, a1, 1
 	li	a3, 1
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	lui	a2, 599186
 	addi	a2, a2, 1171
 	addi	a3, a3, 6
@@ -19,7 +19,7 @@ func0000000000000000:
 func0000000000000008:
 	andi	a1, a1, 1
 	li	a3, 1
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	lui	a2, 599186
 	addi	a2, a2, 1171
 	addi	a3, a3, 6

@@ -1,5 +1,5 @@
 func0000000000000388:
-	negw	a2, a2
+	neg	a2, a2
 	srl	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -7,7 +7,7 @@ func0000000000000388:
 
 func0000000000000088:
 	li	a3, -54
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	srl	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -34,7 +34,7 @@ func00000000000003c1:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	negw	a1, a1
+	neg	a1, a1
 	sllw	a0, a0, a1
 .LBB0_2:
 	ret
@@ -84,7 +84,7 @@ func00000000000005c4:
 	bltu	a1, a2, .LBB1_2
 .LBB1_4:
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret

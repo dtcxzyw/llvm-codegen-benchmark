@@ -30,7 +30,7 @@ func0000000000000004:
 	fmadd.d	fa5, fa0, fa5, fa1
 	fcvt.w.d	a1, fa5, rtz
 	andi	a0, a0, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 99
 	ret
 

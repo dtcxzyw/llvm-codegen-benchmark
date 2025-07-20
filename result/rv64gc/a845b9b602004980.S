@@ -99,7 +99,7 @@ func0000000000000024:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 16
 	seqz	a0, a0
 	ret

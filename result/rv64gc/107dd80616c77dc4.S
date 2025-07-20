@@ -25,7 +25,7 @@ func0000000000000011:
 func0000000000000040:
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
-	negw	a2, a2
+	neg	a2, a2
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -64,7 +64,7 @@ func000000000000001c:
 func00000000000000a1:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -72,7 +72,7 @@ func00000000000000a1:
 func00000000000000a4:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret

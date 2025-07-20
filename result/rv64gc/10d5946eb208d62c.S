@@ -1,13 +1,13 @@
 func0000000000000080:
 	srli	a1, a1, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
 
 func0000000000000050:
 	srli	a1, a1, 32
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -24,7 +24,7 @@ func0000000000000051:
 
 func0000000000000052:
 	srli	a1, a1, 32
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

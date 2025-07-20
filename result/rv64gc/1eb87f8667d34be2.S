@@ -22,13 +22,13 @@ func0000000000000027:
 
 func0000000000000020:
 	srli	a1, a1, 32
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
 func0000000000000021:
 	srli	a1, a1, 32
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 

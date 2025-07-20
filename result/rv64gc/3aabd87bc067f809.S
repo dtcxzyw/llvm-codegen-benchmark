@@ -8,7 +8,7 @@ func0000000000000015:
 	srli	a0, a0, 35
 	slli	a2, a0, 4
 	slli	a0, a0, 2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -12
 	ret
@@ -21,7 +21,7 @@ func0000000000000000:
 	srli	a2, a2, 32
 	slli	a3, a2, 5
 	slli	a2, a2, 2
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -4

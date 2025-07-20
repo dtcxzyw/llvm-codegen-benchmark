@@ -1,7 +1,7 @@
 func000000000000002f:
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a2, a1, 29
 	srli	a1, a1, 27
@@ -13,7 +13,7 @@ func000000000000002f:
 func000000000000000f:
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a2, a1, 31
 	srli	a1, a1, 29

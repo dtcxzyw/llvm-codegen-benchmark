@@ -6,13 +6,13 @@ func0000000000000003:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srliw	a2, a2, 4
 	sh3add	a3, a2, a2
 	sh1add	a2, a3, a2
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 19
 	czero.nez	a0, a2, a0
 	ret

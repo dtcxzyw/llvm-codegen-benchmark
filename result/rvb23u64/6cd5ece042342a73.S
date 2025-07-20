@@ -23,7 +23,7 @@ func00000000000000a1:
 func0000000000000008:
 	addi	a0, a0, -108
 	slli	a1, a0, 6
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 1048574
 	addiw	a1, a1, -46
 	addi	a0, a0, 1292

@@ -17,7 +17,7 @@ func0000000000000014:
 	and	a1, a1, a2
 	slli	a2, a0, 2
 	slli	a0, a0, 6
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

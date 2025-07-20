@@ -26,7 +26,7 @@ func000000000000002b:
 	slli	a3, a1, 48
 	mulhu	a2, a3, a2
 	srli	a2, a2, 16
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 49
 	add	a1, a1, a2

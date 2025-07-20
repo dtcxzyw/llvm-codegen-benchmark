@@ -75,7 +75,7 @@ func000000000000004d:
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	slli	a1, a0, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -8
 	ret
 

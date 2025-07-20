@@ -1,7 +1,7 @@
 func0000000000000040:
 	zext.b	a2, a2
 	li	a3, 1000
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mul	a1, a3, a2
 	addw	a0, a0, a1
 	ret
@@ -9,7 +9,7 @@ func0000000000000040:
 func0000000000000015:
 	zext.b	a2, a2
 	lui	a3, 8
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mul	a1, a3, a2
 	addw	a0, a0, a1
 	ret
@@ -17,7 +17,7 @@ func0000000000000015:
 func000000000000003f:
 	zext.b	a2, a2
 	li	a3, 1024
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mul	a1, a3, a2
 	addw	a0, a0, a1
 	ret
@@ -25,7 +25,7 @@ func000000000000003f:
 func0000000000000010:
 	zext.b	a2, a2
 	li	a3, 1024
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mul	a1, a3, a2
 	addw	a0, a0, a1
 	ret
@@ -33,7 +33,7 @@ func0000000000000010:
 func0000000000000004:
 	zext.b	a2, a2
 	lui	a3, 4
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mul	a1, a3, a2
 	addw	a0, a0, a1
 	ret

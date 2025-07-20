@@ -1,6 +1,6 @@
 func000000000000002f:
 	zext.h	a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli.uw	a1, a1, 3
 	sh2add	a1, a1, a1
 	add	a0, a0, a1
@@ -9,7 +9,7 @@ func000000000000002f:
 
 func000000000000000f:
 	zext.h	a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli.uw	a1, a1, 1
 	sh1add	a1, a1, a1
 	add	a0, a0, a1

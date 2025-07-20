@@ -8,7 +8,7 @@ func0000000000000291:
 func0000000000000285:
 	zext.b	a0, a0
 	seqz	a0, a0
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -5
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000016:
 	li	a2, 100
 	srli	a0, a0, 17
 	mul	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 48
 	lui	a0, 1648
 	mulhu	a0, a1, a0

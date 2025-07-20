@@ -11,7 +11,7 @@ func000000000000003c:
 	addi	a3, a3, -9
 	srli	a2, a2, 20
 	mul	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2
 	addw	a0, a0, a1

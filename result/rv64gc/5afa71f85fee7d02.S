@@ -35,7 +35,7 @@ func000000000000000b:
 func0000000000000003:
 	addi	a1, a0, -1
 	li	a2, 1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	lui	a0, 30667
 	addi	a0, a0, 1329
 	and	a1, a1, a2

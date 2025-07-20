@@ -14,7 +14,7 @@ func0000000000000150:
 	sraiw	a2, a2, 16
 	sh3add	a3, a2, a2
 	slli	a2, a2, 5
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	lui	a3, 9310
 	addi	a3, a3, 474
 	mul	a1, a1, a3

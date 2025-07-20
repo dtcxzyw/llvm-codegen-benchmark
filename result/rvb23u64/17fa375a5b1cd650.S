@@ -3,7 +3,7 @@ func0000000000000001:
 	li	a3, 17
 	min	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 15
 	ret
 
@@ -12,7 +12,7 @@ func000000000000000b:
 	li	a3, 17
 	min	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 15
 	ret
 

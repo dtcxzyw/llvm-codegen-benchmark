@@ -11,7 +11,7 @@ func0000000000000003:
 	lui	a2, 9
 	addi	a2, a2, -340
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 

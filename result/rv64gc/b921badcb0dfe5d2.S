@@ -1,6 +1,6 @@
 func0000000000000003:
 	add	a2, a2, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	addi	a2, a2, 1311
 	slli	a1, a1, 32

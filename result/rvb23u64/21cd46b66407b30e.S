@@ -27,7 +27,7 @@ func0000000000000004:
 	add	a2, a2, a3
 	srli	a2, a2, 1
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 63
 	ret
 

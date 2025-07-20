@@ -1,7 +1,7 @@
 func000000000000001e:
 	addi	a0, a0, 68
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 986895
 	addi	a0, a0, 241
 	addi	a1, a1, 68
@@ -63,7 +63,7 @@ func000000000000001a:
 	addi	a0, a0, -143
 	slli	a1, a0, 1
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 559241
 	addi	a1, a1, -1911
 	slli	a0, a0, 32

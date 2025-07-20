@@ -35,7 +35,7 @@ func00000000000000aa:
 
 func0000000000000086:
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	slti	a0, a0, 4
 	ret

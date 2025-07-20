@@ -25,7 +25,7 @@ func0000000000000201:
 
 func0000000000000288:
 	srli	a1, a1, 5
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 5
 	slli	a0, a0, 5
 	snez	a0, a0

@@ -29,7 +29,7 @@ func0000000000000014:
 func0000000000000610:
 	sext.w	a2, a1
 	li	a3, 4
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	seqz	a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
@@ -40,7 +40,7 @@ func0000000000000610:
 func000000000000061f:
 	sext.w	a2, a1
 	li	a3, 4
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	seqz	a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3

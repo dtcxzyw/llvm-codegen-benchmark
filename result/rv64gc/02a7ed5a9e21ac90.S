@@ -1,5 +1,5 @@
 func000000000000000c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	andi	a0, a0, 1
 	slli	a1, a1, 32

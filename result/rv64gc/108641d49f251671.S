@@ -1,6 +1,6 @@
 func0000000000000341:
 	srli	a2, a2, 6
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	xor	a0, a0, a2
@@ -16,7 +16,7 @@ func0000000000000461:
 
 func0000000000000401:
 	srli	a2, a2, 3
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	xor	a0, a0, a2

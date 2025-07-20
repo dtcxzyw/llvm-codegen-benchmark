@@ -17,7 +17,7 @@ func0000000000000098:
 func0000000000000299:
 	addw	a0, a0, a1
 	slti	a1, a0, 50
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 100
 	add	a0, a0, a1
 	addiw	a0, a0, 1900
@@ -26,7 +26,7 @@ func0000000000000299:
 func0000000000000399:
 	addw	a0, a0, a1
 	slti	a1, a0, -305
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 305
 	add	a0, a0, a1
 	addiw	a0, a0, 308
@@ -39,7 +39,7 @@ func00000000000002a9:
 	addi	a1, a1, 906
 	addi	a2, a2, -907
 	slt	a1, a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	add	a0, a0, a2
 	addw	a0, a0, a1

@@ -57,7 +57,7 @@ func0000000000000041:
 	slli	a2, a2, 6
 	add	a0, a0, a1
 	lui	a1, 21
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 384
 	addw	a0, a0, a1
@@ -82,7 +82,7 @@ func00000000000000ff:
 func00000000000000c0:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 4

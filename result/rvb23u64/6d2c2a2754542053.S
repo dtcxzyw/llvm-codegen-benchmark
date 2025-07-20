@@ -20,7 +20,7 @@ func0000000000000012:
 
 func000000000000000a:
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 15
 	ret
 

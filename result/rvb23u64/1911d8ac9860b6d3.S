@@ -9,7 +9,7 @@ func0000000000000000:
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a0, a0, 31
 	ret
 

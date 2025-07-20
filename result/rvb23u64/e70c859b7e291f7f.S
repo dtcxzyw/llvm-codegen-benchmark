@@ -1,6 +1,6 @@
 func0000000000000041:
 	zext.h	a2, a2
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -15,7 +15,7 @@ func00000000000000e1:
 
 func0000000000000059:
 	andi	a2, a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
@@ -23,14 +23,14 @@ func0000000000000059:
 
 func0000000000000054:
 	andi	a2, a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	sltu	a0, a0, a2
 	ret
 
 func0000000000000058:
 	andi	a2, a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	ret
@@ -58,14 +58,14 @@ func0000000000000021:
 
 func0000000000000044:
 	andi	a2, a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	sltu	a0, a0, a2
 	ret
 
 func0000000000000008:
 	andi	a2, a2, -8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	ret

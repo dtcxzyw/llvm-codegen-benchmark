@@ -16,7 +16,7 @@ func0000000000000006:
 func0000000000000008:
 	sext.w	a1, a1
 	sltu	a0, a1, a0
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 43
 	ret
 
@@ -31,7 +31,7 @@ func0000000000000001:
 func0000000000000004:
 	sext.w	a1, a1
 	sltu	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 15
 	ret
 

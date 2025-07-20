@@ -11,7 +11,7 @@ func000000000000003f:
 	andi	a1, a1, 7
 	sh1add	a2, a0, a0
 	slli	a0, a0, 7
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 22
 	ret
@@ -41,7 +41,7 @@ func0000000000000000:
 func000000000000000c:
 	andi	a1, a1, 7
 	slli	a2, a0, 3
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	add	a0, a1, a2
 	addiw	a0, a0, 7
 	ret

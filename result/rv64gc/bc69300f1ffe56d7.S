@@ -10,7 +10,7 @@ func00000000000004ca:
 func0000000000001cc8:
 	addw	a0, a0, a1
 	slti	a1, a0, -305
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 305
 	addw	a0, a0, a1
 	sltiu	a0, a0, -22
@@ -20,7 +20,7 @@ func0000000000001cc8:
 func0000000000001cca:
 	addw	a0, a0, a1
 	slti	a1, a0, -305
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 305
 	addw	a0, a0, a1
 	slti	a0, a0, 309

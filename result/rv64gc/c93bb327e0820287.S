@@ -1,7 +1,7 @@
 func0000000000000053:
 	sext.w	a1, a0
 	slti	a1, a1, 65
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, -65
 	addw	a0, a0, a1
 	ret
@@ -19,7 +19,7 @@ func0000000000000040:
 func0000000000000033:
 	sext.w	a1, a0
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 5
 	addw	a0, a0, a1
 	ret

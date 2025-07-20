@@ -14,7 +14,7 @@ func0000000000000384:
 
 func0000000000000008:
 	li	a3, 16
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	zext.w	a3, a3
 	sub	a0, a0, a1
 	sltu	a0, a3, a0

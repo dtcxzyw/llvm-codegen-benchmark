@@ -6,7 +6,7 @@ func000000000000001f:
 	mulhu	a2, a2, a3
 	srli	a2, a2, 34
 	slli	a3, a2, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000013:
 	mulhu	a2, a2, a3
 	srli	a2, a2, 33
 	slli	a3, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	slli	a1, a1, 3
 	add	a0, a0, a1

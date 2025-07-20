@@ -1,7 +1,7 @@
 func0000000000000008:
 	add	a0, a0, a1
 	lui	a1, 699051
-	negw	a0, a0
+	neg	a0, a0
 	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 32
@@ -12,7 +12,7 @@ func0000000000000008:
 func0000000000000002:
 	add	a0, a0, a1
 	lui	a1, 335544
-	negw	a0, a0
+	neg	a0, a0
 	addi	a1, a1, 1311
 	slli	a0, a0, 32
 	slli	a1, a1, 32
@@ -23,7 +23,7 @@ func0000000000000002:
 func0000000000000000:
 	add	a0, a0, a1
 	lui	a1, 699051
-	negw	a0, a0
+	neg	a0, a0
 	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 32

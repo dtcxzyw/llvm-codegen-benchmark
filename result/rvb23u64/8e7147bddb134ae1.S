@@ -1,6 +1,6 @@
 func0000000000000025:
 	li	a2, -61
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 19
 	addi	a1, a1, 1089
 	mul	a1, a1, a2

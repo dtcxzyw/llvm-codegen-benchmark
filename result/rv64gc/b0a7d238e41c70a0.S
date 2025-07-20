@@ -1,7 +1,7 @@
 func0000000000000001:
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 554580
 	addi	a1, a1, 801
 	mul	a0, a0, a1
@@ -16,7 +16,7 @@ func0000000000000001:
 func0000000000000021:
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 978671
 	addi	a1, a1, -273
 	mul	a0, a0, a1
@@ -31,7 +31,7 @@ func0000000000000021:
 func000000000000002c:
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 978671
 	addi	a1, a1, -273
 	mul	a0, a0, a1
@@ -48,7 +48,7 @@ func0000000000000034:
 	lui	a2, 596523
 	xor	a0, a0, a1
 	addi	a2, a2, 965
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a2, a2, 32
 	slli	a1, a0, 32
 	mulhu	a1, a1, a2
@@ -65,7 +65,7 @@ func0000000000000038:
 	lui	a2, 335544
 	xor	a0, a0, a1
 	addi	a2, a2, 1311
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a2, a2, 32
 	slli	a1, a0, 32
 	mulhu	a1, a1, a2

@@ -6,7 +6,7 @@ func0000000000000000:
 	bge	a2, a1, .LBB0_4
 .LBB0_2:
 	sgtz	a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -16,7 +16,7 @@ func0000000000000000:
 .LBB0_4:
 	mv	a2, a1
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -29,7 +29,7 @@ func0000000000000021:
 	bge	a2, a1, .LBB1_4
 .LBB1_2:
 	sgtz	a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -39,7 +39,7 @@ func0000000000000021:
 .LBB1_4:
 	mv	a2, a1
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret

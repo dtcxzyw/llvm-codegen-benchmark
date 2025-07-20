@@ -20,7 +20,7 @@ func0000000000000005:
 	srli	a2, a2, 47
 	addi	a3, a3, -15
 	mul	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slliw	a1, a1, 16
 	or	a0, a0, a1
 	ret

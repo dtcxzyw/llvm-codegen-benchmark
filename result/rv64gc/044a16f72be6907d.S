@@ -6,21 +6,21 @@ func00000000000000a1:
 	ret
 
 func0000000000000008:
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	addw	a1, a1, a2
 	sltiu	a0, a1, 801
 	xori	a0, a0, 1
 	ret
 
 func00000000000012aa:
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	addw	a1, a1, a2
 	slti	a0, a1, 0
 	xori	a0, a0, 1
 	ret
 
 func00000000000002aa:
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	addw	a1, a1, a2
 	slti	a0, a1, 0
 	xori	a0, a0, 1

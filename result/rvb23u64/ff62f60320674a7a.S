@@ -19,7 +19,7 @@ func000000000000004f:
 func0000000000000012:
 	clzw	a0, a0
 	li	a1, 31
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func000000000000006f:
 func000000000000000a:
 	clzw	a0, a0
 	li	a1, 30
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 

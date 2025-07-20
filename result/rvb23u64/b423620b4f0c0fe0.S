@@ -12,7 +12,7 @@ func000000000000000a:
 
 func0000000000000010:
 	srli	a1, a1, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	slli	a0, a0, 32
 	ret
 
@@ -43,7 +43,7 @@ func000000000000000e:
 
 func0000000000000014:
 	srli	a1, a1, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	slli	a0, a0, 32
 	ret
 

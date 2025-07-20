@@ -31,7 +31,7 @@ func0000000000000001:
 	srliw	a2, a2, 30
 	add	a1, a1, a2
 	srliw	a1, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sh2add	a0, a0, a0
 	slliw	a0, a0, 4
 	ret

@@ -1,5 +1,5 @@
 func0000000000000421:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 31
 	seqz	a1, a1
 	seqz	a0, a0

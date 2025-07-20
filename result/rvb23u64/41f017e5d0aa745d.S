@@ -7,7 +7,7 @@ func0000000000000002:
 
 func0000000000000001:
 	slli	a0, a0, 3
-	negw	a0, a0
+	neg	a0, a0
 	sraiw	a0, a0, 3
 	ret
 

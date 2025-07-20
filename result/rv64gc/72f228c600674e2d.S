@@ -2,7 +2,7 @@ func0000000000000141:
 	zext.b	a2, a2
 	addi	a2, a2, -85
 	seqz	a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1
@@ -13,7 +13,7 @@ func0000000000000101:
 	zext.b	a2, a2
 	addi	a2, a2, -91
 	seqz	a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1

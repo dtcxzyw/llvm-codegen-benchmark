@@ -14,7 +14,7 @@ func0000000000000008:
 
 func000000000000000f:
 	add	a0, a0, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -29,7 +29,7 @@ func000000000000000c:
 
 func0000000000000000:
 	add	a0, a0, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	slli	a2, a2, 33
 	srli	a2, a2, 33
 	add	a0, a0, a2

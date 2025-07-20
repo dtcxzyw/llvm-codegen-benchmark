@@ -9,7 +9,7 @@ func0000000000000000:
 	fcvt.w.s	a1, fa0, rtz
 	slli	a2, a1, 5
 	slli	a1, a1, 7
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

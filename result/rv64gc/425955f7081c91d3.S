@@ -13,7 +13,7 @@ func0000000000000005:
 	srli	a1, a1, 37
 	slli	a2, a1, 6
 	slli	a1, a1, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

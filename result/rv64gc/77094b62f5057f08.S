@@ -1,5 +1,5 @@
 func0000000000000001:
-	negw	a0, a0
+	neg	a0, a0
 	fcvt.s.w	fa5, a0
 	lui	a0, 258048
 	fmv.w.x	fa4, a0
@@ -7,7 +7,7 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	negw	a0, a0
+	neg	a0, a0
 	fcvt.s.w	fa5, a0
 	lui	a0, 258048
 	fmv.w.x	fa4, a0

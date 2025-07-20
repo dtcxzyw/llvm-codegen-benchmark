@@ -18,7 +18,7 @@ func000000000000000b:
 
 func000000000000000a:
 	slli	a1, a0, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 32
 	srli	a0, a1, 32
 	or	a0, a0, a1
@@ -47,7 +47,7 @@ func0000000000000010:
 	slli	a0, a0, 6
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	mul	a0, a0, a2

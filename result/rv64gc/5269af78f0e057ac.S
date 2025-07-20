@@ -1,5 +1,5 @@
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -8
 	addiw	a0, a0, 1
 	blt	a0, a1, .LBB0_2
@@ -9,7 +9,7 @@ func000000000000002a:
 
 func0000000000000008:
 	mv	a3, a0
-	subw	a0, a1, a2
+	sub	a0, a1, a2
 	addiw	a0, a0, -2
 	addiw	a3, a3, 3
 	blt	a0, a3, .LBB1_2
@@ -18,7 +18,7 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	addiw	a0, a0, 1
 	blt	a0, a1, .LBB2_2

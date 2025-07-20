@@ -19,7 +19,7 @@ func000000000000000c:
 	ret
 
 func000000000000018a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -20
 	slti	a1, a1, 43
 	xori	a1, a1, 1
@@ -27,14 +27,14 @@ func000000000000018a:
 	ret
 
 func00000000000000a4:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 4
 	sltiu	a1, a1, 1025
 	and	a0, a0, a1
 	ret
 
 func0000000000000186:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, 3
 	addiw	a1, a1, -8
 	slli	a2, a2, 11
@@ -49,7 +49,7 @@ func00000000000001aa:
 	ret
 
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 101
 	slti	a1, a1, 6
 	xori	a1, a1, 1

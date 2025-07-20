@@ -1,5 +1,5 @@
 func00000000000001e1:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 64
 	andi	a0, a0, 63
 	seqz	a0, a0
@@ -12,7 +12,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000041:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 7
 	seqz	a0, a0
 	ret

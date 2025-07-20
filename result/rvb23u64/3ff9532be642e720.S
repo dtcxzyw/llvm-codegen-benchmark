@@ -1,12 +1,12 @@
 func0000000000000044:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srlw	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000045:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	sltu	a0, a1, a0
@@ -15,7 +15,7 @@ func0000000000000045:
 
 func00000000000000c6:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	slt	a0, a0, a1
@@ -23,7 +23,7 @@ func00000000000000c6:
 
 func00000000000000cb:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	slt	a0, a0, a1
@@ -32,7 +32,7 @@ func00000000000000cb:
 
 func00000000000000ca:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	slt	a0, a1, a0
@@ -40,7 +40,7 @@ func00000000000000ca:
 
 func00000000000000c7:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	slt	a0, a1, a0

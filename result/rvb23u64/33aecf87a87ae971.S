@@ -16,7 +16,7 @@ func000000000000001d:
 	ret
 
 func0000000000000014:
-	negw	a1, a1
+	neg	a1, a1
 	slli	a1, a1, 24
 	subw	a0, a1, a0
 	ret

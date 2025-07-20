@@ -1,6 +1,6 @@
 func000000000000003a:
 	li	a2, 64
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	srl	a2, a1, a2
 	sll	a0, a1, a0
@@ -9,7 +9,7 @@ func000000000000003a:
 
 func000000000000000a:
 	li	a2, 56
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	srl	a2, a1, a2
 	sll	a0, a1, a0
@@ -18,7 +18,7 @@ func000000000000000a:
 
 func000000000000001a:
 	li	a2, 63
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	srl	a2, a1, a2
 	sll	a0, a1, a0

@@ -116,14 +116,14 @@ func0000000000000046:
 	ret
 
 func0000000000000074:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 15
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000078:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 15
 	snez	a1, a1
 	and	a0, a0, a1

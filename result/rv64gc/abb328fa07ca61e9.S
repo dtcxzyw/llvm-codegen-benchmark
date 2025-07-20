@@ -9,7 +9,7 @@ func0000000000000084:
 
 func0000000000000541:
 	srliw	a2, a2, 31
-	negw	a1, a1
+	neg	a1, a1
 	slli	a2, a2, 31
 	xor	a0, a0, a1
 	sext.w	a0, a0

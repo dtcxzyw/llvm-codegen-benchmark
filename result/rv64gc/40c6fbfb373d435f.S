@@ -13,7 +13,7 @@ func0000000000000000:
 	bltu	a1, a2, .LBB1_2
 	lui	a1, 2560
 .LBB1_2:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

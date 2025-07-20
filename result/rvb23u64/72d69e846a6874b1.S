@@ -1,6 +1,6 @@
 func0000000000000010:
 	slli	a1, a1, 20
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
@@ -16,13 +16,13 @@ func0000000000000001:
 
 func0000000000000000:
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
 func0000000000000030:
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

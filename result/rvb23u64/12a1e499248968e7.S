@@ -13,7 +13,7 @@ func0000000000000005:
 	addi	a3, a3, 384
 	addi	a2, a2, -1911
 	mul	a1, a1, a3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2

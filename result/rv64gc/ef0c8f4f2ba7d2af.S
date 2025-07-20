@@ -1,7 +1,7 @@
 func0000000000000009:
 	add	a1, a1, a2
 	srliw	a2, a0, 24
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a0, 8
 	or	a0, a0, a2
 	xor	a0, a0, a1
@@ -13,7 +13,7 @@ func0000000000000009:
 func0000000000000000:
 	add	a1, a1, a2
 	srliw	a2, a0, 28
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a0, 4
 	or	a0, a0, a2
 	xor	a0, a0, a1

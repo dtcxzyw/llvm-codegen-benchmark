@@ -12,7 +12,7 @@ func0000000000000010:
 func0000000000000015:
 	andi	a0, a0, 1
 	slli	a2, a1, 4
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, 11
 	czero.eqz	a0, a1, a0
 	add	a0, a0, a2

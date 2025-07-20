@@ -1,7 +1,7 @@
 func00000000000000fc:
 	zext.b	a2, a2
 	slli	a3, a1, 8
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	lui	a1, 16
 	addi	a1, a1, -1
 	add	a2, a2, a3

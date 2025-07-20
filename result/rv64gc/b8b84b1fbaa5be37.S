@@ -20,7 +20,7 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 3
 	snez	a1, a1
 	or	a0, a0, a1

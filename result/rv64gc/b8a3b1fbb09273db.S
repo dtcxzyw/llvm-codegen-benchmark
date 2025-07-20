@@ -12,7 +12,7 @@ func000000000000002b:
 
 func0000000000000000:
 	add	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

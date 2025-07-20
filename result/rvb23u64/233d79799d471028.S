@@ -38,7 +38,7 @@ func0000000000000002:
 func000000000000000a:
 	slli	a1, a0, 3
 	slli	a0, a0, 6
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000007:
 func0000000000000001:
 	addi	a0, a0, 571
 	slli	a1, a0, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 3
 	ret
 

@@ -18,7 +18,7 @@ func0000000000000013:
 func0000000000000011:
 	zext.h	a1, a1
 	sltiu	a1, a1, 100
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 
@@ -100,7 +100,7 @@ func0000000000000029:
 func0000000000000028:
 	sext.h	a1, a1
 	sgtz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
 

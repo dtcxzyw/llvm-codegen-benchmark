@@ -26,7 +26,7 @@ func000000000000000d:
 	srli	a1, a1, 48
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -57,7 +57,7 @@ func0000000000000004:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	slli	a2, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
@@ -74,7 +74,7 @@ func000000000000001f:
 	srli	a1, a1, 48
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

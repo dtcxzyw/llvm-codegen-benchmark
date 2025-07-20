@@ -38,7 +38,7 @@ func000000000000005d:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret

@@ -3,14 +3,14 @@ func000000000000003f:
 	slli	a0, a0, 7
 	srli	a1, a1, 48
 	slli	a2, a1, 7
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	subw	a0, a2, a1
 	ret
 
 func0000000000000015:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slliw	a0, a0, 2
 	ret
 
@@ -37,7 +37,7 @@ func000000000000003e:
 	srli	a1, a1, 48
 	slli	a2, a1, 13
 	slli	a1, a1, 15
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 14
 	addw	a0, a0, a1
 	ret

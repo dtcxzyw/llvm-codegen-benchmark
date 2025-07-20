@@ -21,7 +21,7 @@ func000000000000001c:
 	sext.w	a2, a2
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 6
 	ret
 
@@ -49,7 +49,7 @@ func0000000000000065:
 	sext.w	a2, a2
 	slti	a2, a2, 1
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 2
 	ret
 
@@ -162,7 +162,7 @@ func0000000000000185:
 	sltiu	a2, a2, 17
 	xori	a2, a2, 1
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 12
 	ret
 

@@ -5,7 +5,7 @@ func00000000000001ef:
 	slli	a0, a0, 3
 	addi	a1, a1, 130
 	srliw	a1, a1, 8
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

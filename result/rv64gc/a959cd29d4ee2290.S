@@ -1,7 +1,7 @@
 func0000000000000000:
 	add	a0, a0, a1
 	li	a1, 22
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -9,7 +9,7 @@ func0000000000000000:
 func000000000000001a:
 	add	a0, a0, a1
 	li	a1, 64
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -23,7 +23,7 @@ func000000000000001b:
 func0000000000000004:
 	add	a0, a0, a1
 	li	a1, 128
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -36,7 +36,7 @@ func0000000000000005:
 
 func000000000000000a:
 	add	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

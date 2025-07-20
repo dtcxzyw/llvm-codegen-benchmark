@@ -10,7 +10,7 @@ func0000000000000003:
 func0000000000000002:
 	addiw	a0, a0, 4
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	addi	a0, a0, -4
 	slli	a0, a0, 32

@@ -8,7 +8,7 @@ func000000000000000f:
 	srli	a1, a1, 52
 	addi	a2, a2, 1440
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
 	ret
@@ -23,7 +23,7 @@ func0000000000000003:
 	srli	a1, a1, 34
 	sh1add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sh1add	a0, a0, a0
 	slliw	a0, a0, 1
 	ret

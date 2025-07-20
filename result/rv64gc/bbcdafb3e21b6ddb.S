@@ -5,7 +5,7 @@ func0000000000000000:
 	and	a0, a0, a1
 	sext.w	a1, a0
 	beqz	a1, .LBB0_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -27,7 +27,7 @@ func0000000000000002:
 	and	a0, a0, a1
 	sext.w	a1, a0
 	beqz	a1, .LBB1_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329

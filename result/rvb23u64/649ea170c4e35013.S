@@ -43,7 +43,7 @@ func0000000000000155:
 
 func00000000000000c0:
 	sh1add	a2, a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1

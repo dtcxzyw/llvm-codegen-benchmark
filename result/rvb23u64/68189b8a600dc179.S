@@ -30,7 +30,7 @@ func000000000000002a:
 func0000000000000028:
 	slli	a1, a1, 35
 	srli	a1, a1, 35
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 29
 	snez	a0, a0
 	ret

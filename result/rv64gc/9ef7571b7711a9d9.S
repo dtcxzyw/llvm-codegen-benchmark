@@ -23,7 +23,7 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 47
 	srli	a1, a1, 48
 	sltu	a0, a0, a1

@@ -21,7 +21,7 @@ func00000000000001d5:
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a1, a2, 612
 	addw	a0, a0, a1
 	ret

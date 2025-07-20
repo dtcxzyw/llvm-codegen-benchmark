@@ -22,7 +22,7 @@ func0000000000000424:
 
 func000000000000058c:
 	slli	a0, a0, 48
-	negw	a2, a2
+	neg	a2, a2
 	srli	a0, a0, 48
 	xor	a1, a1, a2
 	sext.w	a1, a1

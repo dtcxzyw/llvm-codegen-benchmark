@@ -1,6 +1,6 @@
 func000000000000001c:
 	slli	a2, a0, 8
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	zext.h	a2, a2
 	zext.h	a1, a1
 	divuw	a0, a2, a1

@@ -9,7 +9,7 @@ func0000000000000001:
 func00000000000000a8:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a1, a1, -9
 	sltiu	a0, a1, -16
 	ret

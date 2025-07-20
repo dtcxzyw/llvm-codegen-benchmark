@@ -34,7 +34,7 @@ func0000000000000006:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	slti	a0, a0, -4
 	ret
@@ -50,7 +50,7 @@ func000000000000000a:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	slti	a0, a0, 5
 	xori	a0, a0, 1
@@ -67,7 +67,7 @@ func0000000000000008:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1

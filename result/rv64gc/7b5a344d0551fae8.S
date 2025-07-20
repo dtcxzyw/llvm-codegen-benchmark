@@ -26,7 +26,7 @@ func0000000000000002:
 func0000000000000048:
 	sext.w	a1, a1
 	sltiu	a1, a1, 16
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -16
 	add	a0, a0, a1
 	slli	a0, a0, 32

@@ -1,6 +1,6 @@
 func0000000000000000:
 	andi	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 1900
 	li	a1, 365
 	mulw	a0, a0, a1

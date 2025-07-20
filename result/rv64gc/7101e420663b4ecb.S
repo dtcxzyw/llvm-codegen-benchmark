@@ -7,13 +7,13 @@ func000000000000001f:
 
 func0000000000000015:
 	slli	a1, a1, 6
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
 func000000000000000d:
 	slli	a1, a1, 2
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -27,19 +27,19 @@ func000000000000001d:
 
 func0000000000000004:
 	slli	a1, a1, 7
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
 func0000000000000005:
 	slli	a1, a1, 1
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
 func0000000000000014:
 	slli	a1, a1, 24
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 

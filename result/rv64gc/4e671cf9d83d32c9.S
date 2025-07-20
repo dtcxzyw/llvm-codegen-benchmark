@@ -4,7 +4,7 @@ func0000000000000010:
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000007:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -16
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000000:
 	blt	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -4
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000001:
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 63
 	ret
 
@@ -54,7 +54,7 @@ func0000000000000018:
 	blt	a1, a2, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 
@@ -64,7 +64,7 @@ func0000000000000008:
 	blt	a1, a2, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

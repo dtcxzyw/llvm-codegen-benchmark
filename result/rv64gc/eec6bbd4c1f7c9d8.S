@@ -1,7 +1,7 @@
 func0000000000000000:
 	addi	a1, a0, 15
 	andi	a1, a1, -16
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -17,7 +17,7 @@ func0000000000000002:
 	lui	a2, 4
 	addi	a2, a2, -8
 	and	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

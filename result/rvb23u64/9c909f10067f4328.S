@@ -118,7 +118,7 @@ func0000000000000070:
 
 func0000000000000030:
 	sh1add	a2, a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sh1add	a1, a1, a1
 	addw	a0, a0, a1
 	ret

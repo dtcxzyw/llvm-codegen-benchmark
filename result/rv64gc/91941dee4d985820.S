@@ -22,7 +22,7 @@ func0000000000000080:
 	add	a2, a2, a3
 	sraiw	a2, a2, 2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 31
 	ret
 

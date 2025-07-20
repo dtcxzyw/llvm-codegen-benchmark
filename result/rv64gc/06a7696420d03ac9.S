@@ -12,7 +12,7 @@ func000000000000000a:
 func0000000000000002:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 29
 	add	a1, a1, a2

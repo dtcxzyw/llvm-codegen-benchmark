@@ -2,14 +2,14 @@ func0000000000000008:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa0, fa5
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 15
 	ret
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa5, fa0
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 15
 	ret
 
@@ -22,14 +22,14 @@ func0000000000000001:
 func0000000000000002:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa0, fa5
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 15
 	ret
 
 func000000000000000c:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 7
 	ret
 
@@ -39,7 +39,7 @@ func000000000000000d:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	flt.s	a0, fa0, fa5
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 7
 	ret
 

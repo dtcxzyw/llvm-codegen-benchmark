@@ -1,6 +1,6 @@
 func000000000000006a:
 	slli	a2, a0, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	zext.w	a0, a1
@@ -31,7 +31,7 @@ func000000000000007a:
 
 func0000000000000020:
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 3
 	zext.w	a0, a0
 	ret

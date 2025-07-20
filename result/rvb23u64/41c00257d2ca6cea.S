@@ -1,7 +1,7 @@
 func0000000000000060:
 	sext.w	a1, a1
 	slti	a1, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 1900
 	li	a1, 365
 	mulw	a0, a0, a1

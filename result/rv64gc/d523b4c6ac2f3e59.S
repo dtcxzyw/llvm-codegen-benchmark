@@ -9,7 +9,7 @@ func00000000000000ea:
 func0000000000000181:
 	andi	a1, a1, 1
 	li	a3, 8
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	addw	a0, a0, a1
@@ -30,7 +30,7 @@ func0000000000000081:
 func000000000000008a:
 	andi	a1, a1, 1
 	li	a3, 16
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	addw	a0, a0, a1
@@ -40,7 +40,7 @@ func000000000000008a:
 func00000000000001a8:
 	andi	a1, a1, 1
 	li	a3, 32
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	addw	a0, a0, a1

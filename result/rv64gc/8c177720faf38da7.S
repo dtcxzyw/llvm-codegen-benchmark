@@ -4,7 +4,7 @@ func000000000000001c:
 	srli	a2, a2, 41
 	or	a2, a2, a3
 	li	a3, 126
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	srlw	a1, a2, a3
 	or	a0, a0, a1
 	ret

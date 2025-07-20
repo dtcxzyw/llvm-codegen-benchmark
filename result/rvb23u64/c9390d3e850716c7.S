@@ -12,7 +12,7 @@ func00000000000001ff:
 	ret
 
 func000000000000003f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli.uw	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 16

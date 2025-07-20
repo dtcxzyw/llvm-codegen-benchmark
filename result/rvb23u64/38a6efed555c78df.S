@@ -7,7 +7,7 @@ func000000000000007f:
 
 func000000000000000f:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli.uw	a1, a2, 3
 	slli.uw	a2, a2, 6
 	sub	a2, a2, a1
@@ -17,7 +17,7 @@ func000000000000000f:
 
 func0000000000000003:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1
 	zext.w	a2, a2
 	addi	a1, a1, -1472
@@ -36,7 +36,7 @@ func000000000000003f:
 
 func000000000000002f:
 	li	a2, -3
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli.uw	a1, a2, 5
 	add	a0, a0, a1
 	addi	a0, a0, 8

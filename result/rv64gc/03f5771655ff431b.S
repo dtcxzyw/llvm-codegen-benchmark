@@ -31,7 +31,7 @@ func000000000000006b:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 63
 	andi	a0, a0, 64
 	seqz	a0, a0

@@ -48,14 +48,14 @@ func0000000000000035:
 	mul	a1, a1, a6
 	srli	a1, a1, 56
 	addi	a1, a1, 64
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1048572
 	addi	a1, a1, 66
 	addw	a0, a0, a1
 	ret
 .LBB0_3:
 	li	a1, 128
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1048572
 	addi	a1, a1, 66
 	addw	a0, a0, a1
@@ -86,7 +86,7 @@ func0000000000000035:
 	and	a1, a1, a2
 	mul	a1, a1, a6
 	srli	a1, a1, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1048572
 	addi	a1, a1, 66
 	addw	a0, a0, a1

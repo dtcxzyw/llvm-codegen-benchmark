@@ -1,7 +1,7 @@
 func0000000000000181:
 	sext.w	a1, a1
 	slti	a1, a1, 2
-	negw	a1, a1
+	neg	a1, a1
 	or	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

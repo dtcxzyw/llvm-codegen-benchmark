@@ -1,5 +1,5 @@
 func000000000000010a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 3
 	addi	a1, a1, -3
 	seqz	a1, a1
@@ -7,7 +7,7 @@ func000000000000010a:
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 3
 	addi	a1, a1, -3
 	seqz	a1, a1
@@ -15,28 +15,28 @@ func0000000000000008:
 	ret
 
 func0000000000000061:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 63
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000163:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 7
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000161:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 7
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000063:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 63
 	snez	a1, a1
 	add	a0, a0, a1

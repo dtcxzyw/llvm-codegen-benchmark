@@ -15,7 +15,7 @@ func0000000000000526:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	slt	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	subw	a1, a1, a2
 	slt	a0, a1, a0
@@ -26,7 +26,7 @@ func000000000000052a:
 	sext.w	a3, a1
 	sext.w	a4, a2
 	slt	a3, a4, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	subw	a1, a1, a2
 	slt	a0, a0, a1

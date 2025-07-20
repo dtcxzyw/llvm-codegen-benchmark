@@ -82,7 +82,7 @@ func0000000000000021:
 	srli	a2, a2, 32
 	add	a2, a2, a3
 	sh1add	a2, a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1

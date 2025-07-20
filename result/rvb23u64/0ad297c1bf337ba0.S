@@ -6,7 +6,7 @@ func0000000000000000:
 
 func0000000000000015:
 	slli	a1, a0, 6
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, -62
 	ret
 

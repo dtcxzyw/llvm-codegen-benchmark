@@ -16,7 +16,7 @@ func00000000000000e1:
 
 func0000000000000161:
 	zext.b	a2, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1

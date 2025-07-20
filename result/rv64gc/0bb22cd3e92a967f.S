@@ -21,8 +21,8 @@ func000000000000000d:
 	andi	a3, a2, -8
 	srli	a2, a2, 2
 	andi	a2, a2, -2
-	subw	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a3
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

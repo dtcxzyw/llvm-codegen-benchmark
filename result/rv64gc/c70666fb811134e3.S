@@ -19,7 +19,7 @@ func0000000000000000:
 func0000000000000050:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 153
 	mul	a0, a0, a1
@@ -44,7 +44,7 @@ func00000000000000fd:
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret
@@ -55,7 +55,7 @@ func000000000000000d:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	slli	a1, a0, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -8
 	ret
 
@@ -66,7 +66,7 @@ func00000000000000c0:
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret

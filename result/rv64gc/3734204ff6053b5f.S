@@ -8,7 +8,7 @@ func0000000000000006:
 	srli	a1, a1, 37
 	mul	a1, a1, a2
 	li	a2, 103
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	slli	a2, a2, 32
 	mulhu	a0, a0, a2

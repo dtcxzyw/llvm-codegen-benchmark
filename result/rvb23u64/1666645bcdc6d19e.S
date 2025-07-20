@@ -11,7 +11,7 @@ func000000000000000a:
 	lui	a2, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a2)
 	lui	a2, 1048572
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a2, 66
 	add	a0, a0, a1
 	fcvt.d.w	fa3, a0

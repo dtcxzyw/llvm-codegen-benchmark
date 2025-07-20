@@ -1,7 +1,7 @@
 func0000000000000006:
 	andi	a0, a0, 63
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 48
 	lui	a0, 266320
 	mulhu	a0, a1, a0

@@ -1,7 +1,7 @@
 func0000000000000006:
 	andi	a1, a1, 2047
 	li	a2, 1075
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	srli	a1, a1, 12
 	and	a0, a0, a1
@@ -13,7 +13,7 @@ func0000000000000006:
 func000000000000000e:
 	andi	a1, a1, 2047
 	li	a2, 1063
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	srli	a1, a1, 12
 	and	a0, a0, a1

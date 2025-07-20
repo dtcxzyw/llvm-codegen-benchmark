@@ -1,6 +1,6 @@
 func0000000000000009:
 	andi	a0, a0, 1
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a4, a3, 31
 	add	a3, a3, a4
 	sraiw	a3, a3, 1
@@ -12,7 +12,7 @@ func0000000000000009:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a4, a3, 31
 	add	a3, a3, a4
 	sraiw	a3, a3, 1

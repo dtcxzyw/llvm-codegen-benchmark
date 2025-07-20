@@ -7,7 +7,7 @@ func0000000000000008:
 
 func0000000000000004:
 	sltiu	a0, a0, 64
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	zext.b	a0, a0
 	ret

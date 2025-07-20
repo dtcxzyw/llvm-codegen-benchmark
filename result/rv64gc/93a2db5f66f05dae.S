@@ -13,7 +13,7 @@ func000000000000015f:
 func000000000000015c:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 1

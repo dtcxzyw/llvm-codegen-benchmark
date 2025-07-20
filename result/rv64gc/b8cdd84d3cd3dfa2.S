@@ -4,7 +4,7 @@ func0000000000000260:
 	blt	a4, a3, .LBB0_2
 	addi	a1, a2, -1
 .LBB0_2:
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

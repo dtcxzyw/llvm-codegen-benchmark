@@ -13,7 +13,7 @@ func0000000000000030:
 func0000000000000015:
 	slli	a2, a1, 32
 	lui	a3, 699051
-	subw	a1, a1, a1
+	sub	a1, a1, a1
 	addi	a3, a3, -1365
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
@@ -21,7 +21,7 @@ func0000000000000015:
 	sh1add	a2, a2, a2
 	slli	a2, a2, 2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, -12
 	ret
 
@@ -41,7 +41,7 @@ func000000000000000c:
 func0000000000000004:
 	slli	a2, a1, 32
 	lui	a3, 699051
-	subw	a1, a1, a1
+	sub	a1, a1, a1
 	addi	a3, a3, -1365
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
@@ -49,7 +49,7 @@ func0000000000000004:
 	sh1add	a2, a2, a2
 	slli	a2, a2, 2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, -11
 	ret
 
@@ -61,7 +61,7 @@ func0000000000000000:
 	srli	a1, a1, 32
 	slli	a2, a1, 5
 	slli	a1, a1, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -4
 	ret

@@ -1,5 +1,5 @@
 func0000000000000002:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -14,7 +14,7 @@ func0000000000000000:
 	addi	a0, a0, -1
 	ret
 .LBB1_2:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

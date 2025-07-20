@@ -40,7 +40,7 @@ func0000000000000001:
 	srli	a2, a1, 63
 	add	a1, a1, a2
 	srli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 63
 	seqz	a0, a0
 	ret

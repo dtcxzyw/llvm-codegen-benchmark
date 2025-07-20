@@ -9,7 +9,7 @@ func000000000000000e:
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	lui	a2, 2185
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	slli	a2, a2, 20
 	mulhu	a0, a0, a2
@@ -27,7 +27,7 @@ func000000000000001e:
 	srli	a1, a1, 45
 	mul	a1, a1, a2
 	lui	a2, 5243
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	slli	a2, a2, 20
 	mulhu	a0, a0, a2
@@ -45,7 +45,7 @@ func0000000000000006:
 	srli	a1, a1, 45
 	mul	a1, a1, a2
 	lui	a2, 5243
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	slli	a2, a2, 20
 	mulhu	a0, a0, a2

@@ -56,7 +56,7 @@ func0000000000000854:
 	ret
 
 func0000000000000318:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	not	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -83,7 +83,7 @@ func0000000000000902:
 	ret
 
 func0000000000000b18:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a1, a1, 22
 	xori	a0, a0, 9
 	or	a0, a0, a1

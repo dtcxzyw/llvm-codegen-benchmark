@@ -32,13 +32,13 @@ func000000000000000c:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 8
 	sllw	a0, a1, a0
 	ret
 .LBB0_2:
 	li	a0, 32
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 8
 	sllw	a0, a1, a0
 	ret
@@ -75,7 +75,7 @@ func000000000000001e:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -112,7 +112,7 @@ func000000000000001f:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -149,7 +149,7 @@ func000000000000001d:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
@@ -189,14 +189,14 @@ func000000000000000e:
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
 .LBB4_2:
 	li	a0, 32
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
@@ -236,14 +236,14 @@ func000000000000002e:
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
 .LBB5_2:
 	li	a0, 32
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
@@ -327,13 +327,13 @@ func000000000000002f:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
 .LBB7_2:
 	li	a0, 32
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -417,13 +417,13 @@ func000000000000002d:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
 .LBB9_2:
 	li	a0, 32
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
@@ -461,7 +461,7 @@ func0000000000000017:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	li	a0, 1
 	sllw	a0, a0, a2
 	ret
@@ -500,13 +500,13 @@ func000000000000000d:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
 .LBB11_2:
 	li	a0, 32
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret
@@ -543,7 +543,7 @@ func000000000000001c:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 2
 	sllw	a0, a1, a0
 	ret
@@ -581,7 +581,7 @@ func0000000000000015:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	li	a0, -1
 	sllw	a0, a0, a2
 	ret

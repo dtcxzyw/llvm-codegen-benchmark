@@ -43,7 +43,7 @@ func0000000000000018:
 	addi	a4, a4, -1755
 	mul	a3, a3, a4
 	srli	a3, a3, 32
-	subw	a4, a2, a3
+	sub	a4, a2, a3
 	srliw	a4, a4, 1
 	add	a3, a3, a4
 	srli	a3, a3, 2

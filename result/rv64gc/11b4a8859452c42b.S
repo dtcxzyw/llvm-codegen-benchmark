@@ -41,7 +41,7 @@ func0000000000000075:
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 190
 	ret
 

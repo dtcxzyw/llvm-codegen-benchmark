@@ -4,7 +4,7 @@ func0000000000000024:
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 8
 	ret
 

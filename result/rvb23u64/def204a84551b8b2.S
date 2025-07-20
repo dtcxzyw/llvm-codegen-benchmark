@@ -14,7 +14,7 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 31
 	ret
 

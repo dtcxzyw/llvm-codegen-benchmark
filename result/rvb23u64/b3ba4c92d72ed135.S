@@ -1,5 +1,5 @@
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fli.d	fa5, 0.5
 	fcvt.d.w	fa4, a0
 	fneg.d	fa5, fa5

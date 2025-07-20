@@ -1,6 +1,6 @@
 func000000000000007f:
 	li	a3, 5
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	slli	a3, a3, 48
 	srli	a3, a3, 48
 	sub	a1, a1, a3

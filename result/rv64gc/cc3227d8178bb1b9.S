@@ -1,6 +1,6 @@
 func0000000000000002:
 	li	a2, 258
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a1, a2, 32
 	srli	a1, a1, 32
 	bltu	a0, a1, .LBB0_2

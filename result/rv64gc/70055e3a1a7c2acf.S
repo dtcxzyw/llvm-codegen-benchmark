@@ -41,8 +41,8 @@ func000000000000000a:
 
 func0000000000000001:
 	slli	a3, a2, 1
-	subw	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a2
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0
@@ -108,7 +108,7 @@ func000000000000020a:
 	slli	a2, a2, 6
 	add	a0, a0, a1
 	lui	a1, 21
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, 383
 	slt	a0, a1, a0
@@ -117,7 +117,7 @@ func000000000000020a:
 func0000000000000206:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	slti	a0, a0, 0
@@ -192,7 +192,7 @@ func0000000000000221:
 	sext.w	a0, a0
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	subw	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -201,7 +201,7 @@ func0000000000000221:
 func0000000000000201:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	negw	a0, a0
 	xor	a0, a0, a1

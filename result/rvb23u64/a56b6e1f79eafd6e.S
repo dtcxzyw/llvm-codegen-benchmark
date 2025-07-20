@@ -1,6 +1,6 @@
 func0000000000000161:
 	srliw	a2, a2, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -9,7 +9,7 @@ func0000000000000161:
 
 func0000000000000074:
 	srliw	a2, a2, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
@@ -17,7 +17,7 @@ func0000000000000074:
 
 func0000000000000261:
 	srliw	a2, a2, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000261:
 
 func0000000000000061:
 	srliw	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1

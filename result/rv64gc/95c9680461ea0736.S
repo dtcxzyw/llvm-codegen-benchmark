@@ -8,7 +8,7 @@ func00000000000004d4:
 	add	a1, a1, a2
 	li	a2, 100
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a1, a0, 31
 	andi	a1, a1, 100
 	addw	a0, a0, a1

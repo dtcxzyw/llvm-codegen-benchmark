@@ -1,5 +1,5 @@
 func0000000000000408:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 2
 	add	a0, a0, a2
 	addiw	a0, a0, 1
@@ -8,21 +8,21 @@ func0000000000000408:
 	ret
 
 func000000000000000a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -7
 	sgtz	a0, a0
 	ret
 
 func00000000000002a6:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 190
 	slti	a0, a0, 1
 	ret
 
 func0000000000000688:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 2
 	add	a0, a0, a2
 	addiw	a0, a0, 1
@@ -31,14 +31,14 @@ func0000000000000688:
 	ret
 
 func000000000000022a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -5
 	sgtz	a0, a0
 	ret
 
 func0000000000000201:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 512
 	addw	a0, a0, a2
 	addi	a1, a1, 47
@@ -53,7 +53,7 @@ func00000000000002aa:
 	ret
 
 func0000000000000221:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 1
 	negw	a0, a0
 	xor	a0, a0, a2
@@ -61,7 +61,7 @@ func0000000000000221:
 	ret
 
 func000000000000000c:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, -2
 	negw	a0, a0
 	xor	a0, a0, a2
@@ -69,7 +69,7 @@ func000000000000000c:
 	ret
 
 func0000000000000021:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 1
 	negw	a0, a0
 	xor	a0, a0, a2
@@ -77,28 +77,28 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	sgtz	a0, a0
 	ret
 
 func000000000000028a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -2
 	sgtz	a0, a0
 	ret
 
 func0000000000000001:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addw	a0, a0, a2
 	addi	a0, a0, -4
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	sltiu	a0, a0, 101
@@ -106,7 +106,7 @@ func0000000000000008:
 	ret
 
 func00000000000006aa:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	slti	a0, a0, 2
@@ -114,7 +114,7 @@ func00000000000006aa:
 	ret
 
 func000000000000060a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	slti	a0, a0, 2
@@ -122,7 +122,7 @@ func000000000000060a:
 	ret
 
 func0000000000000004:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 112
 	add	a0, a0, a2
 	addi	a1, a1, 16
@@ -132,7 +132,7 @@ func0000000000000004:
 	ret
 
 func000000000000068a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	slti	a0, a0, 2
@@ -140,14 +140,14 @@ func000000000000068a:
 	ret
 
 func0000000000000606:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 3
 	slti	a0, a0, 1
 	ret
 
 func0000000000000206:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1048100
 	add	a0, a0, a2
 	addi	a1, a1, 1376
@@ -156,21 +156,21 @@ func0000000000000206:
 	ret
 
 func00000000000002a4:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 256
 	sltiu	a0, a0, 769
 	ret
 
 func00000000000006a4:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 256
 	sltiu	a0, a0, 769
 	ret
 
 func000000000000040a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 3
 	slti	a0, a0, 9

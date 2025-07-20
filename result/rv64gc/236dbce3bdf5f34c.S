@@ -30,7 +30,7 @@ func00000000000007ec:
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

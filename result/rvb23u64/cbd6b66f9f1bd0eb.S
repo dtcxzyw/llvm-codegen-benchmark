@@ -7,7 +7,7 @@ func000000000000003d:
 
 func0000000000000000:
 	andi	a1, a1, -8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 32
 	bseti	a0, zero, 35
 	sub	a0, a1, a0

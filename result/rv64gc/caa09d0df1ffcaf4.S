@@ -20,7 +20,7 @@ func0000000000000000:
 	addi	a2, a2, 256
 	srli	a1, a1, 57
 	mul	a1, a1, a2
-	subw	a0, a0, a0
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000010:
 	addi	a2, a2, 256
 	srli	a1, a1, 57
 	mul	a1, a1, a2
-	subw	a0, a0, a0
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -69,7 +69,7 @@ func0000000000000008:
 	addi	a2, a2, -496
 	srli	a1, a1, 43
 	mul	a1, a1, a2
-	subw	a0, a0, a0
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -83,7 +83,7 @@ func0000000000000019:
 	addi	a2, a2, 1808
 	srli	a1, a1, 45
 	mul	a1, a1, a2
-	subw	a0, a0, a0
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 

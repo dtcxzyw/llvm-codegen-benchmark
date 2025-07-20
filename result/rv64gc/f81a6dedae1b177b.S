@@ -1,7 +1,7 @@
 func0000000000000201:
 	sext.w	a2, a1
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	addi	a0, a0, 1
@@ -14,7 +14,7 @@ func0000000000000086:
 	blt	a2, a1, .LBB1_2
 	li	a1, 16
 .LBB1_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -4
 	slti	a0, a0, 17
 	ret
@@ -25,7 +25,7 @@ func0000000000000098:
 	blt	a2, a1, .LBB2_2
 	li	a1, 16
 .LBB2_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 917504
 	addi	a1, a1, -4
 	add	a0, a0, a1
@@ -39,7 +39,7 @@ func0000000000000084:
 	blt	a2, a1, .LBB3_2
 	li	a1, -2
 .LBB3_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	sltiu	a0, a0, -3
 	ret
@@ -49,7 +49,7 @@ func000000000000008a:
 	bgtz	a1, .LBB4_2
 	li	a1, 1
 .LBB4_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 7
 	slti	a0, a0, 8
 	xori	a0, a0, 1

@@ -4,7 +4,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000081:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	slli	a0, a0, 52
@@ -12,7 +12,7 @@ func0000000000000081:
 	ret
 
 func0000000000000041:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	andi	a0, a0, 15
 	seqz	a0, a0

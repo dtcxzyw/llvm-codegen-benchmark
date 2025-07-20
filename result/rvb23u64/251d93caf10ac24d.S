@@ -1,5 +1,5 @@
 func0000000000000013:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero
@@ -8,7 +8,7 @@ func0000000000000013:
 	ret
 
 func0000000000000003:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero
@@ -17,7 +17,7 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa5, fa0
 	fli.d	fa4, 1.0

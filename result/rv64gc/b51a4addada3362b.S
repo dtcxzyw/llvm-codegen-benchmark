@@ -1,6 +1,6 @@
 func000000000000001e:
 	slli	a1, a0, 5
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 32897
 	addi	a1, a1, 126
 	slli	a1, a1, 48
@@ -24,7 +24,7 @@ func0000000000000014:
 func000000000000001c:
 	addi	a0, a0, 257
 	slli	a1, a0, 7
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 32897
 	addi	a1, a1, 1
 	slli	a1, a1, 48

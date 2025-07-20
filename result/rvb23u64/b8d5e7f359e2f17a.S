@@ -31,7 +31,7 @@ func000000000000000e:
 func0000000000000009:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 

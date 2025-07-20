@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
 func000000000000000b:
-	negw	a2, a1
+	neg	a2, a1
 	lui	a3, 30667
 	lui	a4, %hi(.LCPI0_0)
 	addi	a4, a4, %lo(.LCPI0_0)
 	and	a1, a1, a2
-	negw	a2, a0
+	neg	a2, a0
 	addi	a3, a3, 1329
 	and	a0, a0, a2
 	mul	a1, a1, a3
@@ -25,12 +25,12 @@ func000000000000000b:
 .LCPI1_0:
 	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
 func000000000000001f:
-	negw	a2, a1
+	neg	a2, a1
 	lui	a3, 30667
 	lui	a4, %hi(.LCPI1_0)
 	addi	a4, a4, %lo(.LCPI1_0)
 	and	a1, a1, a2
-	negw	a2, a0
+	neg	a2, a0
 	addi	a3, a3, 1329
 	and	a0, a0, a2
 	mul	a1, a1, a3
@@ -49,12 +49,12 @@ func000000000000001f:
 .LCPI2_0:
 	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
 func000000000000001e:
-	negw	a2, a1
+	neg	a2, a1
 	lui	a3, 30667
 	lui	a4, %hi(.LCPI2_0)
 	addi	a4, a4, %lo(.LCPI2_0)
 	and	a1, a1, a2
-	negw	a2, a0
+	neg	a2, a0
 	addi	a3, a3, 1329
 	and	a0, a0, a2
 	mul	a1, a1, a3
@@ -80,7 +80,7 @@ func0000000000000014:
 	addi	a3, a3, %lo(.LCPI3_0)
 	li	a4, 32
 	beqz	a5, .LBB3_2
-	negw	a4, a1
+	neg	a4, a1
 	and	a1, a1, a4
 	lui	a4, 30667
 	addi	a4, a4, 1329
@@ -91,7 +91,7 @@ func0000000000000014:
 .LBB3_2:
 	sext.w	a1, a2
 	beqz	a1, .LBB3_4
-	negw	a0, a2
+	neg	a0, a2
 	and	a0, a0, a2
 	lui	a1, 30667
 	addi	a1, a1, 1329

@@ -6,7 +6,7 @@ func0000000000000003:
 
 func0000000000000002:
 	sraiw	a0, a0, 19
-	negw	a0, a0
+	neg	a0, a0
 	zext.w	a0, a0
 	ret
 

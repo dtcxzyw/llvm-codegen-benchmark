@@ -1,6 +1,6 @@
 func0000000000000045:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 127
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000061:
 
 func0000000000000000:
 	add	a1, a1, a2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 6
 	ret
 

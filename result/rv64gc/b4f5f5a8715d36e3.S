@@ -4,7 +4,7 @@ func000000000000003f:
 	mul	a1, a1, a2
 	slli	a2, a0, 2
 	slli	a0, a0, 6
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -102,7 +102,7 @@ func0000000000000034:
 func0000000000000010:
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 1
 	addi	a2, a2, -496
 	mul	a0, a0, a2
@@ -115,7 +115,7 @@ func000000000000003e:
 	mul	a1, a1, a2
 	slli	a2, a0, 2
 	slli	a0, a0, 6
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

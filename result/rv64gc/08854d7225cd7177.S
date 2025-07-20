@@ -3,7 +3,7 @@ func0000000000000000:
 	bnez	a0, .LBB0_2
 	slli	a0, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

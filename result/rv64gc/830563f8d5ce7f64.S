@@ -2,7 +2,7 @@ func0000000000000031:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
 	slli	a0, a0, 63
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	lui	a3, 1048555
 	srai	a0, a0, 63
 	addi	a3, a3, -384

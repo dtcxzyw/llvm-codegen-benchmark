@@ -17,7 +17,7 @@ func000000000000002b:
 	ret
 
 func0000000000000051:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

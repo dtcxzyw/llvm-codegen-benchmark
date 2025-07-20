@@ -1,11 +1,11 @@
 func0000000000000064:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a1, a2, a1
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000061:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -20,7 +20,7 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

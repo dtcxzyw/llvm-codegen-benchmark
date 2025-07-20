@@ -10,7 +10,7 @@ func0000000000000186:
 	ret
 
 func0000000000000014:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 14
 	seqz	a0, a0
 	ret
@@ -141,7 +141,7 @@ func000000000000010a:
 	ret
 
 func0000000000000144:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 12
 	seqz	a0, a0
 	ret
@@ -153,7 +153,7 @@ func00000000000001a1:
 	ret
 
 func0000000000000044:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 12
 	seqz	a0, a0
 	ret

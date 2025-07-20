@@ -1,5 +1,5 @@
 func0000000000000007:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 7
 	slli	a1, a0, 1
 	slli	a0, a0, 3
@@ -7,7 +7,7 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	lui	a1, 5840
 	mulhu	a0, a0, a1

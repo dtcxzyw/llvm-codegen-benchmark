@@ -1,5 +1,5 @@
 func0000000000000018:
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, -1
 	srl	a2, a3, a2
 	sll	a1, a2, a1
@@ -7,7 +7,7 @@ func0000000000000018:
 	ret
 
 func0000000000000008:
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, -1
 	srl	a2, a3, a2
 	sll	a1, a2, a1

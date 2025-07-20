@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 30
 	slli	a0, a0, 30
 	seqz	a0, a0
@@ -40,7 +40,7 @@ func0000000000000008:
 	ret
 
 func0000000000000086:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 31
 	ret
 

@@ -5,7 +5,7 @@ func000000000000000a:
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

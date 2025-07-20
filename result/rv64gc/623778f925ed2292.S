@@ -18,7 +18,7 @@ func0000000000000000:
 	andi	a1, a1, 1
 	li	a2, 896
 	slli	a1, a1, 2
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

@@ -5,7 +5,7 @@ func000000000000001d:
 	ret
 
 func0000000000000001:
-	negw	a0, a0
+	neg	a0, a0
 	zext.w	a0, a0
 	neg	a0, a0
 	ret

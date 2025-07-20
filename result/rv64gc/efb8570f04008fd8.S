@@ -3,7 +3,7 @@
 func0000000000000000:
 	zext.b	a0, a0
 	beqz	a0, .LBB0_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -24,7 +24,7 @@ func0000000000000001:
 	lui	a1, 1048561
 	addi	a1, a1, -57
 	and	a0, a0, a1
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329

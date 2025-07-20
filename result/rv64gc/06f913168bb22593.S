@@ -1,5 +1,5 @@
 func0000000000001ea6:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 8
 	addw	a0, a0, a1
 	addi	a1, a2, -150

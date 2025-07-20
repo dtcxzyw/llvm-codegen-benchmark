@@ -5,7 +5,7 @@ func0000000000000007:
 	li	a0, 49
 .LBB0_2:
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	addiw	a0, a0, 4
 	ret

@@ -16,7 +16,7 @@ func0000000000000001:
 
 func0000000000000009:
 	slli	a1, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 5
 	neg	a0, a0
 	ret

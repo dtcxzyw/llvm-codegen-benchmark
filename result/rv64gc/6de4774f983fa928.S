@@ -7,7 +7,7 @@ func00000000000003e1:
 	li	a0, -2
 	ret
 .LBB0_2:
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret

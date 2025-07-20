@@ -33,7 +33,7 @@ func000000000000001e:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	negw	a1, a1
+	neg	a1, a1
 	sllw	a0, a0, a1
 .LBB0_2:
 	ret
@@ -76,7 +76,7 @@ func000000000000000e:
 	bnez	a0, .LBB1_4
 .LBB1_2:
 	li	a0, 33
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -126,7 +126,7 @@ func000000000000002e:
 	bnez	a0, .LBB2_4
 .LBB2_2:
 	li	a0, 33
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret

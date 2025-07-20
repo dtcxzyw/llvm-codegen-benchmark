@@ -1,6 +1,6 @@
 func0000000000000010:
 	slli	a3, a2, 3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
 	addiw	a0, a0, 3
@@ -8,7 +8,7 @@ func0000000000000010:
 
 func0000000000000050:
 	slli	a3, a2, 3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a3
 	add	a0, a0, a1
 	addiw	a0, a0, 6

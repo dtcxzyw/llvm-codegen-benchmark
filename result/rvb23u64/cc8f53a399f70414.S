@@ -1,13 +1,13 @@
 func000000000000001b:
 	li	a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	bset	a1, zero, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000000b:
 	li	a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	bset	a1, zero, a2
 	and	a0, a0, a1
 	zext.b	a0, a0
@@ -15,7 +15,7 @@ func000000000000000b:
 
 func0000000000000003:
 	li	a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	bset	a1, zero, a2
 	and	a0, a0, a1
 	zext.b	a0, a0
@@ -23,7 +23,7 @@ func0000000000000003:
 
 func0000000000000019:
 	li	a2, 8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	sllw	a1, a1, a2
 	and	a0, a0, a1

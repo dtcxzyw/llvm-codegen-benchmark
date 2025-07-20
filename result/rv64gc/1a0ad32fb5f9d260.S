@@ -1,7 +1,7 @@
 func0000000000000005:
 	slli	a1, a0, 5
 	slli	a0, a0, 8
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 64
 	ret
 

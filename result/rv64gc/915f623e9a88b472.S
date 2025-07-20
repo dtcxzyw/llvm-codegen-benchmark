@@ -1,6 +1,6 @@
 func0000000000000304:
 	li	a2, 40
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	sext.w	a0, a0
 	sltiu	a0, a0, 10
@@ -8,14 +8,14 @@ func0000000000000304:
 
 func0000000000000004:
 	li	a2, -54
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	sext.w	a0, a0
 	sltiu	a0, a0, 10
 	ret
 
 func0000000000000308:
-	negw	a1, a1
+	neg	a1, a1
 	srl	a0, a0, a1
 	lui	a1, 244141
 	sext.w	a0, a0
@@ -24,7 +24,7 @@ func0000000000000308:
 	ret
 
 func0000000000000318:
-	negw	a1, a1
+	neg	a1, a1
 	srl	a0, a0, a1
 	lui	a1, 24414
 	sext.w	a0, a0

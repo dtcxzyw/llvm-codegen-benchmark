@@ -40,7 +40,7 @@ func000000000000001d:
 	and	a0, a0, a3
 	mul	a0, a0, a4
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
@@ -87,7 +87,7 @@ func000000000000001e:
 	and	a0, a0, a3
 	mul	a0, a0, a4
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
@@ -135,13 +135,13 @@ func000000000000000f:
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
 .LBB2_2:
 	li	a0, 64
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
@@ -189,13 +189,13 @@ func000000000000000e:
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
 .LBB3_2:
 	li	a0, 64
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
@@ -242,7 +242,7 @@ func000000000000001c:
 	and	a0, a0, a3
 	mul	a0, a0, a4
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 12
 	sll	a0, a1, a0
 	ret
@@ -289,7 +289,7 @@ func000000000000001f:
 	and	a0, a0, a3
 	mul	a0, a0, a4
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sll	a0, a1, a0
 	ret
@@ -338,14 +338,14 @@ func000000000000000c:
 	mul	a0, a0, a1
 	srli	a0, a0, 56
 	li	a1, 60
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 16
 	sll	a0, a0, a1
 	ret
 .LBB6_2:
 	li	a0, 64
 	li	a1, 60
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 16
 	sll	a0, a0, a1
 	ret
@@ -393,13 +393,13 @@ func000000000000000d:
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
 .LBB7_2:
 	li	a0, 64
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
@@ -447,7 +447,7 @@ func0000000000000015:
 	and	a0, a0, a3
 	mul	a0, a0, a4
 	srli	a0, a0, 56
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, -1
 	sll	a0, a0, a1
 	ret

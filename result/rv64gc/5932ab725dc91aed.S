@@ -56,7 +56,7 @@ func000000000000000a:
 
 func0000000000000074:
 	sltiu	a1, a0, 100
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 1900
 	add	a0, a0, a1
 	ret
@@ -65,7 +65,7 @@ func0000000000000066:
 	li	a1, -19
 	srli	a1, a1, 1
 	slt	a1, a0, a1
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 10
 	add	a0, a0, a1
 	ret

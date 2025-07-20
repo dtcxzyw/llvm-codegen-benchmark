@@ -13,7 +13,7 @@ func0000000000000003:
 func0000000000000002:
 	andi	a0, a0, 31
 	li	a1, 30
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	zext.w	a0, a1
 	ret
 

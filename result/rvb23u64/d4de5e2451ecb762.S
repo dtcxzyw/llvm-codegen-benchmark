@@ -7,7 +7,7 @@ func000000000000002a:
 
 func0000000000000004:
 	srliw	a1, a1, 6
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 24
 	seqz	a0, a0
 	ret

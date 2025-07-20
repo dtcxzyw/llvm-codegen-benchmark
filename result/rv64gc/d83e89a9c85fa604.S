@@ -3,7 +3,7 @@ func0000000000000035:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000024:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000004:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -30,7 +30,7 @@ func0000000000000005:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func0000000000000025:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000034:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -57,7 +57,7 @@ func0000000000000015:
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

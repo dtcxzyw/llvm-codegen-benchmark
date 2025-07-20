@@ -3,7 +3,7 @@ func0000000000000024:
 	slli	a4, a2, 14
 	xor	a1, a1, a2
 	or	a3, a3, a4
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	srliw	a2, a1, 21
 	slli	a1, a1, 11
 	or	a1, a1, a2
@@ -15,7 +15,7 @@ func0000000000000000:
 	slli	a4, a1, 18
 	xor	a1, a1, a2
 	or	a3, a3, a4
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	srliw	a2, a1, 11
 	slli	a1, a1, 21
 	or	a1, a1, a2

@@ -26,7 +26,7 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	slli	a0, a0, 2
 	seqz	a0, a0
@@ -38,7 +38,7 @@ func000000000000008a:
 	ret
 
 func0000000000000086:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 31
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 1
 	slli	a0, a0, 1
 	snez	a0, a0

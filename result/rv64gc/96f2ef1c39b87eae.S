@@ -33,13 +33,13 @@ func0000000000000006:
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
 	li	a2, 31
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a1, 32
 	li	a2, 31
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 
@@ -76,7 +76,7 @@ func000000000000001e:
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
 	li	a2, 38
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 
@@ -113,7 +113,7 @@ func0000000000000014:
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
 	li	a2, 30
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 
@@ -150,7 +150,7 @@ func0000000000000016:
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
 	li	a2, 30
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 

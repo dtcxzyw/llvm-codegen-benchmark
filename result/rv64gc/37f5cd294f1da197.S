@@ -5,7 +5,7 @@ func000000000000002a:
 	li	a2, 17
 .LBB0_2:
 	add	a0, a0, a1
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srliw	a0, a2, 4
 	ret
 

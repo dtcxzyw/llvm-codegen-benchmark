@@ -34,7 +34,7 @@ func00000000000001ff:
 func00000000000001a5:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	li	a3, 75
 	add	a1, a1, a2
 	mul	a1, a1, a3

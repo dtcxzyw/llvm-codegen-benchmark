@@ -16,7 +16,7 @@ func0000000000000000:
 	srliw	a3, a3, 29
 	sgtz	a2, a2
 	add	a1, a1, a3
-	negw	a2, a2
+	neg	a2, a2
 	sraiw	a1, a1, 3
 	and	a0, a0, a2
 	addw	a0, a0, a1

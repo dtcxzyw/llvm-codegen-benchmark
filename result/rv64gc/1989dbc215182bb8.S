@@ -5,7 +5,7 @@ func0000000000000008:
 	mv	a2, a0
 .LBB0_2:
 	sgtz	a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -17,7 +17,7 @@ func000000000000000d:
 	mv	a2, a0
 .LBB1_2:
 	sgtz	a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret

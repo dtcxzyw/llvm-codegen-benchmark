@@ -16,7 +16,7 @@ func0000000000000028:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 12
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 3
 	or	a0, a0, a1
 	ret

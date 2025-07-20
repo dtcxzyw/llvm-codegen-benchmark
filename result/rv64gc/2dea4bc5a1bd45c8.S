@@ -16,7 +16,7 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srli	a0, a1, 5
 	slli	a0, a0, 58
 	ret

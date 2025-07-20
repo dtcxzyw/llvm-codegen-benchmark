@@ -1,11 +1,11 @@
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000034:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 2
 	slli	a0, a0, 2
@@ -13,14 +13,14 @@ func0000000000000034:
 	ret
 
 func000000000000000c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	andi	a0, a0, 3
 	snez	a0, a0
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	andi	a0, a0, 1
 	seqz	a0, a0
@@ -54,7 +54,7 @@ func0000000000000028:
 	ret
 
 func00000000000000b8:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 2045

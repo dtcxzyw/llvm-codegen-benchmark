@@ -20,7 +20,7 @@ func0000000000000030:
 	lui	a3, 8
 	or	a1, a1, a2
 	or	a0, a0, a4
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a3, 4
 	addw	a0, a0, a1
 	ret
@@ -46,7 +46,7 @@ func0000000000000000:
 	or	a0, a0, a3
 	or	a1, a1, a2
 	or	a0, a0, a4
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -24
 	ret
 

@@ -1,5 +1,5 @@
 func000000000000002d:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -7,7 +7,7 @@ func000000000000002d:
 	ret
 
 func000000000000002c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -15,7 +15,7 @@ func000000000000002c:
 	ret
 
 func000000000000000c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2
@@ -23,7 +23,7 @@ func000000000000000c:
 	ret
 
 func000000000000002f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

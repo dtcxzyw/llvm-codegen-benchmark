@@ -84,7 +84,7 @@ func0000000000000066:
 func00000000000001e4:
 	sext.w	a2, a1
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
@@ -93,7 +93,7 @@ func00000000000001e4:
 func00000000000001e8:
 	sext.w	a2, a1
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addiw	a1, a1, 1
 	sltu	a0, a1, a0
@@ -102,7 +102,7 @@ func00000000000001e8:
 func00000000000001e1:
 	sext.w	a2, a1
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addiw	a1, a1, 1
 	xor	a0, a0, a1

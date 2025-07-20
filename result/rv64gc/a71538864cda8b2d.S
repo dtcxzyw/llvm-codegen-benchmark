@@ -10,7 +10,7 @@ func00000000000000a1:
 func00000000000000a6:
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 23
 	ret
@@ -18,7 +18,7 @@ func00000000000000a6:
 func000000000000008a:
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -26,7 +26,7 @@ func000000000000008a:
 func0000000000000008:
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	lui	a2, 4
 	addw	a0, a0, a1
 	addi	a1, a2, -320
@@ -36,7 +36,7 @@ func0000000000000008:
 func00000000000000a4:
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	subw	a1, a1, a2
 	sltiu	a0, a1, 256
 	ret

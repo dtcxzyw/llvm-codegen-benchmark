@@ -1,7 +1,7 @@
 func0000000000000064:
 	sext.w	a1, a1
 	sltiu	a1, a1, 33
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 48
 	addw	a0, a0, a1
 	ret
@@ -9,7 +9,7 @@ func0000000000000064:
 func0000000000000024:
 	sext.w	a1, a1
 	sltiu	a1, a1, 33
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -48
 	addw	a0, a0, a1
 	ret
@@ -101,7 +101,7 @@ func000000000000002c:
 func0000000000000006:
 	sext.w	a1, a1
 	slti	a1, a1, 3
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 200
 	addw	a0, a0, a1
 	ret
@@ -132,7 +132,7 @@ func0000000000000068:
 func0000000000000034:
 	sext.w	a1, a1
 	sltiu	a1, a1, 1280
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -24
 	addw	a0, a0, a1
 	ret

@@ -10,7 +10,7 @@ func0000000000000181:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -4
 	srliw	a0, a0, 31
 	slli	a0, a0, 31
@@ -18,7 +18,7 @@ func0000000000000001:
 	ret
 
 func000000000000018c:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -10
 	srliw	a0, a0, 2
 	slli	a0, a0, 2

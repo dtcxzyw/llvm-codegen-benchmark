@@ -3,7 +3,7 @@ func000000000000003f:
 	addi	a2, a2, -192
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 2
 	ret
 

@@ -18,7 +18,7 @@ func0000000000000020:
 
 func0000000000000015:
 	add	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 8
 	ret
 

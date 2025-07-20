@@ -21,7 +21,7 @@ func0000000000000008:
 	srli	a0, a0, 36
 	slli	a1, a0, 3
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 24
 	ret
 
@@ -34,7 +34,7 @@ func000000000000001f:
 	mulhu	a0, a0, a1
 	srli	a0, a0, 35
 	slli	a1, a0, 4
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 15
 	ret
 
@@ -61,7 +61,7 @@ func000000000000001c:
 	srli	a0, a0, 34
 	slli	a1, a0, 1
 	slli	a0, a0, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
 

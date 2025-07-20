@@ -21,7 +21,7 @@ func0000000000000032:
 	bge	a2, a4, .LBB1_3
 	bgez	a2, .LBB1_4
 .LBB1_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -29,7 +29,7 @@ func0000000000000032:
 	mv	a3, a4
 	bltz	a2, .LBB1_2
 .LBB1_4:
-	subw	a0, a0, a3
+	sub	a0, a0, a3
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

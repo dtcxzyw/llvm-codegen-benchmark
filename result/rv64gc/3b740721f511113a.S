@@ -1,5 +1,5 @@
 func0000000000000002:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 5
 	slli	a0, a0, 48
 	addi	a1, a1, -1755
@@ -11,7 +11,7 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 48
 	srli	a1, a1, 63
 	add	a0, a0, a1

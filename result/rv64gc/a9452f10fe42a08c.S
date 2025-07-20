@@ -12,8 +12,8 @@ func000000000000001e:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	slli	a2, a1, 7
-	subw	a1, a1, a0
-	subw	a2, a2, a1
+	sub	a1, a1, a0
+	sub	a2, a2, a1
 	srliw	a0, a2, 15
 	ret
 

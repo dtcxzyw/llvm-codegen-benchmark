@@ -5,7 +5,7 @@ func0000000000000004:
 	li	a2, 588
 	srli	a1, a1, 24
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	lui	a1, 37456
 	mulhu	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000006:
 	li	a2, 1260
 	srli	a1, a1, 20
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	lui	a1, 104864
 	mulhu	a0, a0, a1

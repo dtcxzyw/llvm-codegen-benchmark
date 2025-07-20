@@ -20,7 +20,7 @@ func000000000000000a:
 	addi	a0, a0, 128
 	andi	a1, a0, -256
 	srliw	a0, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 64
 	ret
 

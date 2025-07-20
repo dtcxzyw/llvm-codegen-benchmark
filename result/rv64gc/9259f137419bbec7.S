@@ -5,7 +5,7 @@ func0000000000000003:
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	negw	a0, a1
+	neg	a0, a1
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -26,7 +26,7 @@ func0000000000000000:
 .LBB1_2:
 	sext.w	a0, a1
 	beqz	a0, .LBB1_4
-	negw	a0, a1
+	neg	a0, a1
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -48,7 +48,7 @@ func0000000000000001:
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	negw	a0, a1
+	neg	a0, a1
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329

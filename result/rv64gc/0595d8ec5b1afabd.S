@@ -23,7 +23,7 @@ func0000000000000006:
 	srli	a2, a2, 30
 	slli	a3, a2, 31
 	add	a0, a0, a2
-	subw	a0, a0, a3
+	sub	a0, a0, a3
 	slli	a0, a0, 32
 	slli	a1, a1, 62
 	or	a0, a0, a1

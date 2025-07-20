@@ -21,7 +21,7 @@ func0000000000000001:
 	srli	a1, a1, 32
 	srli	a2, a2, 32
 	add	a1, a1, a3
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	srliw	a0, a2, 31
 	sraiw	a2, a2, 1
 	add	a0, a0, a2

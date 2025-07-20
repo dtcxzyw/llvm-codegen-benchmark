@@ -14,7 +14,7 @@ func0000000000000006:
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.b	a0, a0
 	slti	a0, a0, 5
 	ret

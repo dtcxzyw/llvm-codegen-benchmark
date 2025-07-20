@@ -30,7 +30,7 @@ func000000000000006b:
 	addi	a0, a0, -143
 	slli	a1, a0, 1
 	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 559241
 	addi	a1, a1, -1911
 	slli	a0, a0, 32

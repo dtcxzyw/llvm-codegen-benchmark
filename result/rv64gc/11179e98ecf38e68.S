@@ -1,6 +1,6 @@
 func0000000000000000:
 	slli	a2, a0, 48
-	negw	a3, a1
+	neg	a3, a1
 	andi	a1, a1, 15
 	srli	a2, a2, 48
 	andi	a3, a3, 15

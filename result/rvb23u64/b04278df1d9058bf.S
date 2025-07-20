@@ -1,23 +1,23 @@
 func0000000000000006:
 	li	a2, 8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sraw	a0, a0, a2
 	ret
 
 func0000000000000002:
 	li	a2, 48
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sraw	a0, a0, a2
 	ret
 
 func0000000000000003:
-	negw	a1, a1
+	neg	a1, a1
 	sraw	a0, a0, a1
 	ret
 
 func0000000000000000:
 	li	a2, 14
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sraw	a0, a0, a2
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	negw	a1, a1
+	neg	a1, a1
 	sraw	a0, a0, a1
 	ret
 

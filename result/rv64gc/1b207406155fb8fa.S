@@ -20,7 +20,7 @@ func0000000000000080:
 	slli	a3, a2, 1
 	slli	a2, a2, 3
 	slli	a0, a0, 1
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	slli	a2, a2, 32
 	srli	a2, a2, 31
 	add	a0, a0, a1

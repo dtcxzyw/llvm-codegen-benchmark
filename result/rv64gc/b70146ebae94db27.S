@@ -1,5 +1,5 @@
 func0000000000000000:
-	negw	a0, a0
+	neg	a0, a0
 	sraiw	a0, a0, 4
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000004:
 	addi	a2, a2, -60
 	addi	a1, a1, -59
 	czero.eqz	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -59
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000007:
 	sext.w	a2, a1
 	addi	a1, a1, -11
 	czero.eqz	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -11
 	ret
 

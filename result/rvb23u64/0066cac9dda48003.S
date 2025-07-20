@@ -1,7 +1,7 @@
 func0000000000000000:
 	sh1add	a2, a2, a2
 	srliw	a1, a1, 1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sh1add	a1, a1, a1
 	subw	a0, a0, a1
 	ret
@@ -12,7 +12,7 @@ func00000000000000ff:
 	mul	a1, a1, a3
 	sh1add	a3, a2, a2
 	slli	a2, a2, 5
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

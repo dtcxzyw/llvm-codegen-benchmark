@@ -39,7 +39,7 @@ func00000000000000ac:
 	ret
 
 func00000000000000a1:
-	negw	a0, a0
+	neg	a0, a0
 	zext.b	a0, a0
 	seqz	a0, a0
 	ret

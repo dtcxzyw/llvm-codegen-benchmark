@@ -91,7 +91,7 @@ func00000000000001e6:
 	sext.w	a0, a0
 	lui	a2, 16
 	slt	a0, a0, a2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 2
 	ret
 

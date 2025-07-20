@@ -1,5 +1,5 @@
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, 7
@@ -8,7 +8,7 @@ func0000000000000021:
 	ret
 
 func00000000000000aa:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	lui	a2, 21
 	srai	a0, a0, 63
@@ -19,14 +19,14 @@ func00000000000000aa:
 	ret
 
 func0000000000000026:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a0, a0, 1
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
 
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	lui	a2, 10
 	srai	a0, a0, 63
@@ -38,7 +38,7 @@ func000000000000002a:
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, 18
@@ -48,7 +48,7 @@ func0000000000000001:
 	ret
 
 func00000000000000a1:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, 12

@@ -20,7 +20,7 @@ func0000000000000424:
 
 func000000000000058c:
 	zext.h	a0, a0
-	negw	a2, a2
+	neg	a2, a2
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	xori	a0, a0, 23

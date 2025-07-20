@@ -38,7 +38,7 @@ func000000000000003c:
 	srli	a1, a1, 56
 	slli	a2, a1, 3
 	slli	a1, a1, 12
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

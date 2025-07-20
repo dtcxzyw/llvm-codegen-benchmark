@@ -15,7 +15,7 @@ func0000000000000035:
 func0000000000000000:
 	slli	a2, a1, 8
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 1516
 	ret
 

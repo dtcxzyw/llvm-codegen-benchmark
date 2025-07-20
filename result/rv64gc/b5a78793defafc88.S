@@ -1,7 +1,7 @@
 func00000000000000f4:
 	sext.w	a1, a0
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 128
 	sltiu	a0, a0, 256
 	ret
@@ -32,7 +32,7 @@ func0000000000000326:
 func000000000000032a:
 	sext.w	a1, a0
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 11
 	addw	a0, a0, a1
 	slti	a0, a0, 12

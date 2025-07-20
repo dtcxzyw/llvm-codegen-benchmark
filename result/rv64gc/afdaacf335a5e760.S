@@ -1,6 +1,6 @@
 func000000000000002d:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 335544
 	addi	a1, a1, 1311
 	slli	a2, a2, 32
@@ -18,7 +18,7 @@ func000000000000002d:
 
 func000000000000002f:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 335544
 	addi	a1, a1, 1311
 	slli	a2, a2, 32

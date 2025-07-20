@@ -83,7 +83,7 @@ func0000000000000044:
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 6
 	sltiu	a1, a1, 59
 	xori	a1, a1, 1

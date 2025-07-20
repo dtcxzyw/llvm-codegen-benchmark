@@ -1,5 +1,5 @@
 func0000000000000000:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, 1200
 	sh2add	a1, a1, a2
 	sraiw	a2, a1, 31
@@ -10,7 +10,7 @@ func0000000000000000:
 	ret
 
 func0000000000000021:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a1, a2, 1118
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 22
@@ -20,7 +20,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	srliw	a1, a2, 31
 	add	a1, a1, a2
@@ -29,7 +29,7 @@ func0000000000000001:
 	ret
 
 func0000000000000020:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 815559
 	addiw	a2, a2, 9
 	addi	a1, a1, 455

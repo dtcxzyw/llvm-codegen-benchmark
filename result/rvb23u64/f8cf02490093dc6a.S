@@ -50,7 +50,7 @@ func00000000000003f4:
 	mul	a2, a2, a3
 	slli	a3, a1, 2
 	slli	a1, a1, 5
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 1047932
 	addi	a3, a3, -1692
 	add	a1, a1, a2
@@ -61,7 +61,7 @@ func00000000000003f4:
 func00000000000003ff:
 	sh1add	a3, a2, a2
 	slli	a2, a2, 5
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	li	a3, 150
 	mul	a1, a1, a3
 	add	a1, a1, a2
@@ -108,7 +108,7 @@ func0000000000000375:
 	mul	a2, a2, a3
 	slli	a3, a1, 2
 	slli	a1, a1, 5
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 7
 	addi	a3, a3, 1708
 	add	a1, a1, a2
@@ -130,7 +130,7 @@ func00000000000003d7:
 func0000000000000001:
 	slli	a3, a1, 1
 	slli	a1, a1, 8
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 16
 	addi	a3, a3, -1020
 	mul	a2, a2, a3

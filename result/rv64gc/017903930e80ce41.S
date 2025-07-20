@@ -17,7 +17,7 @@ func000000000000003d:
 	slli	a1, a1, 3
 	add	a1, a1, a2
 	li	a2, 528
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 
@@ -29,14 +29,14 @@ func0000000000000039:
 
 func0000000000000011:
 	slli	a2, a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add	a0, a2, a1
 	addiw	a0, a0, 3
 	ret
 
 func0000000000000010:
 	slli	a2, a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add	a0, a2, a1
 	addiw	a0, a0, 3
 	ret

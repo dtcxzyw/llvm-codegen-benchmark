@@ -1,6 +1,6 @@
 func00000000000000bd:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 335544
 	zext.w	a2, a2
 	addi	a1, a1, 1311

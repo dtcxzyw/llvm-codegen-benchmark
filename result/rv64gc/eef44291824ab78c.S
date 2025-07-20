@@ -16,7 +16,7 @@ func000000000000000a:
 func0000000000000008:
 	andi	a1, a1, 1
 	li	a2, 4
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sllw	a0, a0, a2
 	sltiu	a0, a0, 1033
 	xori	a0, a0, 1
@@ -25,7 +25,7 @@ func0000000000000008:
 func0000000000000006:
 	andi	a1, a1, 1
 	li	a2, 4
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sllw	a0, a0, a2
 	slti	a0, a0, 0
 	ret

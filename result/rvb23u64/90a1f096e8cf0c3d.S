@@ -1,6 +1,6 @@
 func0000000000000007:
 	li	a1, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 255
 	sllw	a0, a0, a1
 	zext.b	a0, a0
@@ -8,7 +8,7 @@ func0000000000000007:
 
 func000000000000000f:
 	li	a1, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 255
 	sllw	a0, a0, a1
 	andi	a0, a0, 254
@@ -16,7 +16,7 @@ func000000000000000f:
 
 func0000000000000001:
 	li	a1, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, -1
 	sllw	a0, a0, a1
 	zext.b	a0, a0
@@ -24,14 +24,14 @@ func0000000000000001:
 
 func0000000000000000:
 	li	a1, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 255
 	sllw	a0, a0, a1
 	zext.b	a0, a0
 	ret
 
 func000000000000000c:
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, -256
 	sllw	a0, a1, a0
 	lui	a1, 4080
@@ -40,7 +40,7 @@ func000000000000000c:
 
 func0000000000000003:
 	li	a1, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	bset	a0, zero, a1
 	andi	a0, a0, 148
 	ret

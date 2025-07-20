@@ -8,7 +8,7 @@ func0000000000000000:
 	srli	a1, a1, 57
 	mul	a1, a1, a2
 	lui	a2, 26844
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	addi	a1, a2, -1861
 	mul	a0, a0, a1

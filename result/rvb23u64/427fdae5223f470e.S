@@ -13,7 +13,7 @@ func00000000000001e1:
 	ret
 
 func0000000000000061:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000061:
 	ret
 
 func0000000000000861:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1

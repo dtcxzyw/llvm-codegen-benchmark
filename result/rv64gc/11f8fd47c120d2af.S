@@ -31,7 +31,7 @@ func0000000000000025:
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	ret
 

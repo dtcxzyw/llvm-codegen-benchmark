@@ -2,7 +2,7 @@ func000000000000000c:
 	li	a2, 16
 	slli	a3, a0, 8
 	slli	a0, a0, 48
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1
 	srli	a0, a0, 56
 	addi	a1, a1, -241
@@ -33,7 +33,7 @@ func0000000000000004:
 	li	a2, 16
 	slli	a3, a0, 8
 	slli	a0, a0, 48
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1
 	srli	a0, a0, 56
 	addi	a1, a1, -241

@@ -1,7 +1,7 @@
 func0000000000000000:
 	zext.b	a1, a1
 	slli	a2, a0, 5
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	lui	a0, 648056
 	add	a1, a1, a2
 	addi	a0, a0, -1607

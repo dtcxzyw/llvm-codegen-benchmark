@@ -4,7 +4,7 @@ func000000000000000e:
 	sllw	a0, a1, a2
 	ret
 .LBB0_2:
-	negw	a0, a2
+	neg	a0, a2
 	srlw	a0, a1, a0
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000008:
 	sllw	a0, a1, a2
 	ret
 .LBB1_2:
-	negw	a0, a2
+	neg	a0, a2
 	srlw	a0, a1, a0
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000000:
 	sllw	a0, a1, a2
 	ret
 .LBB2_2:
-	negw	a0, a2
+	neg	a0, a2
 	srlw	a0, a1, a0
 	ret
 

@@ -14,7 +14,7 @@ func0000000000000000:
 
 func000000000000001b:
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 277453
 	addi	a0, a0, -1361
 	slli	a1, a1, 32

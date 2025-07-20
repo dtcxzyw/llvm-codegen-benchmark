@@ -6,7 +6,7 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -4
 	srliw	a0, a0, 31
 	slli	a0, a0, 31

@@ -7,7 +7,7 @@ func00000000000004c1:
 	ret
 
 func00000000000004ca:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 10
 	sraiw	a2, a0, 31
 	addi	a3, a1, -960
@@ -18,7 +18,7 @@ func00000000000004ca:
 	ret
 
 func00000000000014c1:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a1, a0, 31
 	andi	a1, a1, 12
 	addw	a0, a0, a1

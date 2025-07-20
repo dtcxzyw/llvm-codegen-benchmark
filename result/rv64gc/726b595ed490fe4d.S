@@ -1,6 +1,6 @@
 func000000000000000a:
 	srli	a1, a1, 2
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 3
 	blt	a1, a0, .LBB0_2
 	mv	a1, a0

@@ -2,7 +2,7 @@ func0000000000000075:
 	slli	a1, a1, 48
 	slli	a2, a0, 3
 	srli	a1, a1, 48
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	add	a0, a1, a2
 	addiw	a0, a0, 1
 	ret

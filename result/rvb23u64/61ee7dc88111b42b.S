@@ -11,7 +11,7 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a1, a2, 256
 	sh2add	a0, a1, a0
 	ret

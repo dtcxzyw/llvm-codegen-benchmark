@@ -18,7 +18,7 @@ func0000000000000000:
 	sext.w	a3, a0
 	sext.w	a0, a2
 	sgtz	a0, a0
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	blt	a0, a3, .LBB1_2
@@ -30,7 +30,7 @@ func0000000000000006:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	sgtz	a3, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
 	blt	a0, a1, .LBB2_2
@@ -42,7 +42,7 @@ func0000000000000002:
 	sext.w	a0, a0
 	sext.w	a3, a2
 	sgtz	a3, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	addw	a1, a1, a2
 	blt	a0, a1, .LBB3_2

@@ -1,5 +1,5 @@
 func0000000000000017:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -8
 	ret
 
@@ -10,12 +10,12 @@ func0000000000000000:
 	ret
 
 func0000000000000020:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -4
 	ret
 
 func0000000000000030:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -4
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000021:
 	ret
 
 func0000000000000015:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -1138
 	ret
 

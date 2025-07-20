@@ -3,7 +3,7 @@ func00000000000000ac:
 	addi	a0, a0, -1
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1
 	slli	a0, a0, 48

@@ -27,7 +27,7 @@ func0000000000000006:
 	bnez	a0, .LBB2_2
 	lui	a0, 524288
 	slt	a0, a1, a0
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 12
 	ret
 .LBB2_2:

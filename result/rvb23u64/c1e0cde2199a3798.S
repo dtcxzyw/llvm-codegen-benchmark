@@ -5,7 +5,7 @@ func0000000000000007:
 	mulhu	a1, a2, a1
 	srli	a1, a1, 17
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 2
 	zext.h	a0, a0
 	ret

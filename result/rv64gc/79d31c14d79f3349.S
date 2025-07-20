@@ -7,7 +7,7 @@ func0000000000000021:
 
 func0000000000000014:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000014:
 
 func0000000000000001:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1
@@ -31,7 +31,7 @@ func0000000000000061:
 
 func0000000000000004:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
@@ -39,7 +39,7 @@ func0000000000000004:
 
 func0000000000000041:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1
@@ -48,7 +48,7 @@ func0000000000000041:
 
 func0000000000000044:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
@@ -56,7 +56,7 @@ func0000000000000044:
 
 func0000000000000048:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
@@ -64,7 +64,7 @@ func0000000000000048:
 
 func000000000000004c:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	xor	a0, a0, a1
@@ -73,7 +73,7 @@ func000000000000004c:
 
 func0000000000000054:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a0, a0, a1

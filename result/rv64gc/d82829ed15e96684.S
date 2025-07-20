@@ -9,7 +9,7 @@ func000000000000000f:
 	srli	a1, a1, 52
 	addi	a2, a2, 1440
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 1
 	addw	a0, a0, a1
 	ret
@@ -24,7 +24,7 @@ func0000000000000003:
 	srli	a1, a1, 34
 	slli	a2, a1, 3
 	slli	a1, a1, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	slli	a1, a0, 1
 	slli	a0, a0, 3

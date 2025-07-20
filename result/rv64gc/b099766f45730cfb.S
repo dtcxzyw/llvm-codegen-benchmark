@@ -36,7 +36,7 @@ func00000000000001c0:
 func000000000000003f:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -46,7 +46,7 @@ func000000000000003f:
 func00000000000000bf:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1

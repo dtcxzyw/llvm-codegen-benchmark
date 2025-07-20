@@ -1,13 +1,13 @@
 func0000000000000204:
 	slli	a2, a2, 6
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	sltiu	a0, a0, 56
 	ret
 
 func00000000000002aa:
 	slli	a2, a2, 4
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	slti	a0, a0, 4
 	xori	a0, a0, 1

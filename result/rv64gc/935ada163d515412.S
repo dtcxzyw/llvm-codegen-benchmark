@@ -39,7 +39,7 @@ func0000000000000024:
 	zext.b	a0, a0
 	addi	a0, a0, -241
 	sltiu	a0, a0, 3
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 7
 	ret
 

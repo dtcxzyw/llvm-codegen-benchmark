@@ -1,5 +1,5 @@
 func0000000000000101:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 35
 	seqz	a0, a0
 	ret
@@ -29,13 +29,13 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 35
 	seqz	a0, a0
 	ret
 
 func0000000000000181:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 35
 	seqz	a0, a0
 	ret

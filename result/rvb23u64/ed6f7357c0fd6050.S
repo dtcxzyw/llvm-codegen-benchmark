@@ -1,5 +1,5 @@
 func0000000000000028:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 526344
 	mulw	a0, a1, a0
 	addi	a1, a2, 129

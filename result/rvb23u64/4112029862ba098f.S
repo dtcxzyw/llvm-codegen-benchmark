@@ -4,7 +4,7 @@ func0000000000000007:
 	addi	a3, a3, 1413
 	mul	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 9

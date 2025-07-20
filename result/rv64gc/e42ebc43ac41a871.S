@@ -1,5 +1,5 @@
 func0000000000000008:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -46
 	srli	a1, a1, 48
@@ -7,7 +7,7 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -2
 	srli	a1, a1, 48
@@ -15,7 +15,7 @@ func0000000000000006:
 	ret
 
 func0000000000000084:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -2
 	srli	a1, a1, 48
@@ -23,7 +23,7 @@ func0000000000000084:
 	ret
 
 func0000000000000086:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -3
 	srli	a1, a1, 48
@@ -39,7 +39,7 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -3
 	srli	a1, a1, 48
@@ -47,7 +47,7 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -3
 	srli	a1, a1, 48
@@ -56,7 +56,7 @@ func0000000000000001:
 	ret
 
 func0000000000000081:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 48
 	addiw	a0, a0, -3
 	srli	a1, a1, 48

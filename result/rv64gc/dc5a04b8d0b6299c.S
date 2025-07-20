@@ -1,5 +1,5 @@
 func000000000000000a:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, -128
 	li	a1, 127
 	blt	a0, a1, .LBB0_2

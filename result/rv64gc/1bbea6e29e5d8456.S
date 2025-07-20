@@ -15,7 +15,7 @@ func0000000000000026:
 	sraiw	a1, a1, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
@@ -63,7 +63,7 @@ func0000000000000006:
 	sraiw	a1, a1, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
@@ -79,7 +79,7 @@ func0000000000000028:
 	sraiw	a1, a1, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 7
 	xori	a0, a0, 1

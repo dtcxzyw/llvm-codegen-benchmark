@@ -2,7 +2,7 @@ func00000000000000aa:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 288
@@ -24,7 +24,7 @@ func0000000000000008:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 101
@@ -35,7 +35,7 @@ func00000000000000a1:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	addi	a0, a0, -8
@@ -46,7 +46,7 @@ func00000000000000a4:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 12
@@ -56,7 +56,7 @@ func00000000000000a6:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 0

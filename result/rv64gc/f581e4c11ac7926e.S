@@ -1,6 +1,6 @@
 func000000000000000f:
 	li	a3, 64
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	slli	a3, a3, 32
 	srli	a3, a3, 32
 	add	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000070:
 	ret
 
 func000000000000002b:
-	negw	a2, a2
+	neg	a2, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	slli	a2, a2, 32
@@ -46,7 +46,7 @@ func000000000000002b:
 
 func0000000000000000:
 	li	a3, 16
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	slli	a3, a3, 32
 	srli	a3, a3, 32
 	add	a0, a0, a1

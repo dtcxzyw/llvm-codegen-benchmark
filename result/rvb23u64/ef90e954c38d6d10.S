@@ -2,7 +2,7 @@ func0000000000000000:
 	srl	a1, a1, a2
 	lui	a2, 2
 	srliw	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a1, a2, -1638
 	mulw	a0, a0, a1
 	ret

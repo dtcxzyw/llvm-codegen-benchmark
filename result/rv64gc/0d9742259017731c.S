@@ -40,7 +40,7 @@ func0000000000000001:
 func0000000000000024:
 	zext.b	a1, a1
 	sltiu	a1, a1, 127
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -64
 	addw	a0, a0, a1
 	ret
@@ -86,7 +86,7 @@ func0000000000000068:
 func0000000000000074:
 	zext.b	a1, a1
 	sltiu	a1, a1, 70
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 100
 	addw	a0, a0, a1
 	ret

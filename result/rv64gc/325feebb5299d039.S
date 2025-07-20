@@ -1,12 +1,12 @@
 func0000000000000018:
-	negw	a1, a1
+	neg	a1, a1
 	li	a2, 1
 	sllw	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 
 func000000000000001c:
-	negw	a1, a1
+	neg	a1, a1
 	li	a2, 1
 	sllw	a1, a2, a1
 	addw	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000010:
 
 func0000000000000004:
 	li	a2, 21
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, -1
 	sllw	a1, a1, a2
 	addw	a0, a0, a1
@@ -29,7 +29,7 @@ func0000000000000004:
 
 func0000000000000009:
 	li	a2, 21
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	li	a1, 1
 	sllw	a1, a1, a2
 	addw	a0, a0, a1

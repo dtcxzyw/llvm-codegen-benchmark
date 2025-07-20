@@ -1,6 +1,6 @@
 func0000000000000029:
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a1, 64
 	srliw	a0, a0, 22
 	ret

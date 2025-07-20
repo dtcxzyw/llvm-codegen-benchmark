@@ -1,6 +1,6 @@
 func00000000000000aa:
 	zext.h	a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	slti	a0, a0, 288
@@ -18,7 +18,7 @@ func0000000000000001:
 
 func0000000000000008:
 	zext.h	a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	sltiu	a0, a0, 101
@@ -27,7 +27,7 @@ func0000000000000008:
 
 func00000000000000a1:
 	zext.h	a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	addi	a0, a0, -8
@@ -36,7 +36,7 @@ func00000000000000a1:
 
 func00000000000000a4:
 	zext.h	a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	sltiu	a0, a0, 12
@@ -44,7 +44,7 @@ func00000000000000a4:
 
 func00000000000000a6:
 	zext.h	a2, a2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	zext.h	a1, a1
 	addw	a0, a0, a1
 	slti	a0, a0, 0

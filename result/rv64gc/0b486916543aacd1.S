@@ -23,7 +23,7 @@ func0000000000000021:
 func0000000000000004:
 	sext.w	a0, a0
 	sltiu	a0, a0, 3
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -41,7 +41,7 @@ func0000000000000024:
 func000000000000000a:
 	sext.w	a0, a0
 	sgtz	a0, a0
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

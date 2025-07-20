@@ -16,7 +16,7 @@ func0000000000000008:
 func0000000000000010:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	ret

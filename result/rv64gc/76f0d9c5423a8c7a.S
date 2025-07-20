@@ -4,7 +4,7 @@ func0000000000000024:
 	sltu	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -15,7 +15,7 @@ func0000000000000030:
 	slt	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -26,7 +26,7 @@ func0000000000000050:
 	slt	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -37,7 +37,7 @@ func0000000000000040:
 	sltu	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -57,7 +57,7 @@ func0000000000000020:
 	sltu	a2, a3, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

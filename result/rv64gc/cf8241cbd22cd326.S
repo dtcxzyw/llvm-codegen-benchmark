@@ -1,5 +1,5 @@
 func0000000000000084:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a0, a0, 13
 	srliw	a1, a1, 4
 	sltiu	a1, a1, 625
@@ -8,7 +8,7 @@ func0000000000000084:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a1, a1, 1
 	xori	a0, a0, 3
 	or	a0, a0, a1
@@ -18,7 +18,7 @@ func0000000000000021:
 
 func0000000000000101:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 2
 	addi	a0, a0, -32
 	slli	a1, a1, 2

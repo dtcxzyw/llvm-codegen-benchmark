@@ -14,7 +14,7 @@ func0000000000000043:
 
 func000000000000005b:
 	slli	a3, a2, 3
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addiw	a3, a3, 7
 	sh2add	a1, a3, a1
 	sh2add	a0, a0, a1

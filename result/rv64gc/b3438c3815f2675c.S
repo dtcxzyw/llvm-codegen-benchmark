@@ -13,14 +13,14 @@ func0000000000000181:
 	ret
 
 func0000000000000008:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1
 	ret
 
 func0000000000000108:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1

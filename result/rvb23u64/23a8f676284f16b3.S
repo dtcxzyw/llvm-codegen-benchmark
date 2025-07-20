@@ -31,7 +31,7 @@ func0000000000000028:
 	srli	a1, a1, 46
 	addi	a2, a2, -1440
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 4
 	sltiu	a0, a0, 625
 	ret

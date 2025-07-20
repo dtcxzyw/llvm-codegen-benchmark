@@ -1,8 +1,8 @@
 func0000000000000003:
 	slli	a2, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 174763
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 33
@@ -12,7 +12,7 @@ func0000000000000003:
 func000000000000007f:
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 244
 	addw	a0, a0, a1
 	addi	a1, a2, 576

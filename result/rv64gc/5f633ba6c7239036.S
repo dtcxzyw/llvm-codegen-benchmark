@@ -9,7 +9,7 @@ func000000000000001f:
 	srli	a2, a2, 37
 	slli	a3, a2, 6
 	slli	a2, a2, 2
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a0, a0, a2
 	mul	a1, a0, a1
 	slli	a1, a1, 48

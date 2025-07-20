@@ -5,13 +5,13 @@ func00000000000000e1:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 2
 	slli	a3, a2, 3
 	add	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

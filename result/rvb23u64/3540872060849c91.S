@@ -11,7 +11,7 @@ func00000000000000c8:
 	addw	a0, a0, a1
 	slt	a1, a0, a3
 	czero.nez	a1, a2, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

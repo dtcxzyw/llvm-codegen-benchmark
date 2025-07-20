@@ -6,7 +6,7 @@ func000000000000001c:
 	ret
 
 func000000000000000f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh1add.uw	a0, a1, a0
 	addi	a0, a0, 20
 	ret
@@ -31,7 +31,7 @@ func000000000000007f:
 	ret
 
 func000000000000004f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 8
 	ret
@@ -43,7 +43,7 @@ func000000000000003f:
 	ret
 
 func000000000000000c:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 40
 	ret

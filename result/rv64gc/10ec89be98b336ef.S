@@ -4,7 +4,7 @@ func0000000000000009:
 	xor	a1, a1, a0
 	slli	a0, a0, 11
 	or	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 7
 	slliw	a1, a1, 25
 	or	a0, a0, a1
@@ -16,7 +16,7 @@ func0000000000000000:
 	xor	a1, a1, a0
 	slli	a0, a0, 18
 	or	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 11
 	slliw	a1, a1, 21
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000010:
 	xor	a1, a1, a0
 	slli	a0, a0, 11
 	or	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 7
 	slliw	a1, a1, 25
 	or	a0, a0, a1

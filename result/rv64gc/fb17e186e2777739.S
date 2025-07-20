@@ -20,7 +20,7 @@ func0000000000000031:
 	snez	a2, a2
 	and	a1, a1, a2
 	lui	a2, 1048544
-	negw	a1, a1
+	neg	a1, a1
 	addi	a2, a2, 64
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -38,7 +38,7 @@ func0000000000000030:
 	sext.w	a2, a2
 	snez	a2, a2
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 

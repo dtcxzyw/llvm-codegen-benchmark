@@ -11,13 +11,13 @@ func0000000000000005:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 
 func000000000000000d:
 	andi	a1, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -7
 	ret
 
@@ -31,13 +31,13 @@ func0000000000000001:
 func0000000000000004:
 	slli	a1, a1, 33
 	srli	a1, a1, 33
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
 func0000000000000008:
 	andi	a1, a1, 60
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -16
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000001081:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -12
 	addi	a0, a0, -12
 	sltiu	a1, a1, 3
@@ -10,7 +10,7 @@ func0000000000001081:
 
 func0000000000001024:
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -8
 	addi	a0, a0, -6
 	sltiu	a1, a1, 7
@@ -27,7 +27,7 @@ func000000000000018c:
 	ret
 
 func0000000000000081:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sext.h	a2, a1
 	xor	a1, a1, a2
 	xori	a0, a0, 108
@@ -37,7 +37,7 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 524288
 	xnor	a1, a1, a2
 	orn	a0, a1, a0

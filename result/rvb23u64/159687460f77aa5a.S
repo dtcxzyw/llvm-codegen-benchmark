@@ -34,7 +34,7 @@ func0000000000000018:
 	srliw	a2, a0, 31
 	add	a0, a0, a2
 	sraiw	a0, a0, 1
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

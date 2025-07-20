@@ -84,7 +84,7 @@ func0000000000000005:
 	and	a2, a2, a3
 	or	a0, a0, a2
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 

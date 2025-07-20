@@ -2,7 +2,7 @@ func000000000000000e:
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	li	a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srl	a0, a0, a1
 	ret
 .LBB0_2:
@@ -17,7 +17,7 @@ func0000000000000006:
 	beqz	a1, .LBB1_2
 	li	a2, -1074
 .LBB1_2:
-	negw	a1, a2
+	neg	a1, a2
 	srl	a0, a0, a1
 	ret
 

@@ -15,7 +15,7 @@ func0000000000000010:
 	czero.eqz	a0, a3, a0
 	slli	a3, a2, 3
 	add	a0, a0, a1
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	addw	a0, a0, a3
 	ret
 

@@ -24,7 +24,7 @@ func0000000000000019:
 func000000000000001b:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	ret
@@ -32,7 +32,7 @@ func000000000000001b:
 func0000000000000003:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	ret
@@ -40,7 +40,7 @@ func0000000000000003:
 func000000000000001f:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	ret
@@ -63,7 +63,7 @@ func0000000000000004:
 func0000000000000007:
 	slli	a2, a1, 3
 	slli	a1, a1, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	ret

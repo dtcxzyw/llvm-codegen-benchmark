@@ -17,7 +17,7 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	andi	a1, a1, 504
 	add	a0, a0, a1
 	ret
@@ -29,12 +29,12 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000003:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	andi	a1, a1, 15
 	add	a0, a0, a1
 	ret

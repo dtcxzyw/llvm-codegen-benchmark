@@ -128,7 +128,7 @@ func00000000000000c1:
 	ret
 .LBB8_2:
 	slti	a0, a0, 16
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	ret
 

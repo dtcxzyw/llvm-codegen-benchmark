@@ -9,7 +9,7 @@ func000000000000003f:
 func0000000000000004:
 	andi	a1, a1, 15
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -9
 	ret
 

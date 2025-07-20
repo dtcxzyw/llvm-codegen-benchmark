@@ -110,7 +110,7 @@ func000000000000050a:
 	ret
 
 func0000000000000028:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 6
 	sltiu	a0, a0, 125
 	xori	a0, a0, 1

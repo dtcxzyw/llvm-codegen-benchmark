@@ -1,7 +1,7 @@
 .LCPI0_0:
 	.quad	0x4059000000000000
 func0000000000000001:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI0_0)
@@ -12,7 +12,7 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	0x3fe0000000000000
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa0, fa5
 	lui	a0, %hi(.LCPI1_0)

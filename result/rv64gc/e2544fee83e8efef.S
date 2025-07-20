@@ -3,7 +3,7 @@ func0000000000000055:
 	srliw	a2, a2, 29
 	add	a1, a1, a2
 	andi	a1, a1, -8
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 340
 	ret
 

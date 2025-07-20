@@ -5,7 +5,7 @@ func0000000000000005:
 	srli	a1, a1, 60
 	add	a1, a1, a0
 	andi	a1, a1, 240
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.b	a0, a0
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000001:
 	srli	a1, a1, 62
 	add	a1, a1, a0
 	andi	a1, a1, 252
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.b	a0, a0
 	ret
 

@@ -32,7 +32,7 @@ func0000000000000005:
 func0000000000000001:
 	addi	a0, a0, 571
 	slli	a1, a0, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 3
 	ret
 

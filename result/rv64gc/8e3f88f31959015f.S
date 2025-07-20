@@ -1,6 +1,6 @@
 func000000000000000a:
 	slli	a0, a0, 48
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srai	a0, a0, 48
 	slli	a1, a1, 48
 	srai	a1, a1, 48
@@ -9,7 +9,7 @@ func000000000000000a:
 
 func0000000000000006:
 	slli	a0, a0, 48
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srai	a0, a0, 48
 	slli	a1, a1, 48
 	srai	a1, a1, 48

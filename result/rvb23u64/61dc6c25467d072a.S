@@ -30,7 +30,7 @@ func00000000000002a1:
 
 func0000000000000284:
 	add	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 256
 	sltiu	a0, a0, 769
 	ret

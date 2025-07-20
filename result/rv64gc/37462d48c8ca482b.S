@@ -21,7 +21,7 @@ func0000000000000003:
 	ret
 
 func0000000000000013:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, 1
 	andi	a1, a1, 3
 	slli	a1, a1, 3

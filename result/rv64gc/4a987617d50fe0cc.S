@@ -6,7 +6,7 @@ func0000000000000001:
 	blt	a3, a4, .LBB0_2
 	mv	a3, a4
 .LBB0_2:
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

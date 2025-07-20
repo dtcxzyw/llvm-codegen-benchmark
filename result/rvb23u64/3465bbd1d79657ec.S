@@ -7,14 +7,14 @@ func0000000000000019:
 
 func0000000000000010:
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 33
 	srli	a0, a0, 36
 	ret
 
 func0000000000000018:
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 47
 	srli	a0, a0, 48
 	ret
@@ -29,7 +29,7 @@ func0000000000000011:
 
 func0000000000000001:
 	sh1add	a1, a2, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 1
 	ret
 

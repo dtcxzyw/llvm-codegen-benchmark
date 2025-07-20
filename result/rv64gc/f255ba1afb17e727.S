@@ -31,7 +31,7 @@ func000000000000005e:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -69,7 +69,7 @@ func000000000000001e:
 	and	a0, a0, a2
 	mul	a0, a0, a1
 	srli	a0, a0, 24
-	negw	a0, a0
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -109,14 +109,14 @@ func000000000000002e:
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a0, 32
 	li	a1, 33
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	li	a0, 1
 	sllw	a0, a0, a1
 	ret

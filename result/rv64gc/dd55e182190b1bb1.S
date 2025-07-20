@@ -10,7 +10,7 @@ func0000000000000000:
 	add	a0, a0, a2
 	slli	a2, a0, 4
 	slli	a0, a0, 2
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 .LBB0_2:

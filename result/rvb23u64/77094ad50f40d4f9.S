@@ -20,7 +20,7 @@ func0000000000000194:
 	and	a1, a1, a3
 	li	a3, 16
 	sh1add	a1, a2, a1
-	subw	a3, a3, a0
+	sub	a3, a3, a0
 	srlw	a0, a1, a3
 	sltiu	a0, a0, 512
 	ret

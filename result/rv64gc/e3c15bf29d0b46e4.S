@@ -1,12 +1,12 @@
 func000000000000000e:
 	zext.b	a1, a0
 	slli	a0, a0, 8
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a1, a0, 48
 	lui	a2, 16656
 	mulhu	a1, a1, a2
 	srli	a1, a1, 16
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 49
 	add	a0, a0, a1
@@ -16,7 +16,7 @@ func000000000000000e:
 func0000000000000004:
 	zext.b	a1, a0
 	slli	a0, a0, 8
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1
 	slli	a0, a0, 48
 	srli	a0, a0, 50

@@ -32,7 +32,7 @@ func0000000000000007:
 
 func0000000000000010:
 	sltu	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -8
 	addw	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 func0000000000000021:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 524288
 	xor	a0, a0, a1
 	orn	a0, a0, a2

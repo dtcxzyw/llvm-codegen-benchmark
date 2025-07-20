@@ -8,7 +8,7 @@ func000000000000156a:
 func0000000000003081:
 	sext.w	a2, a1
 	li	a3, 8
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	seqz	a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
@@ -20,7 +20,7 @@ func0000000000003081:
 func000000000000108a:
 	sext.w	a2, a1
 	li	a3, 16
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	seqz	a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3

@@ -1,6 +1,6 @@
 func0000000000000035:
 	slli	a2, a2, 51
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 1048400
 	srli	a2, a2, 55
 	add	a1, a1, a2
@@ -10,7 +10,7 @@ func0000000000000035:
 
 func0000000000000034:
 	slli	a2, a2, 51
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 1048400
 	srli	a2, a2, 55
 	add	a1, a1, a2
@@ -20,7 +20,7 @@ func0000000000000034:
 
 func0000000000000030:
 	slli	a2, a2, 51
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 1048400
 	srli	a2, a2, 55
 	add	a1, a1, a2

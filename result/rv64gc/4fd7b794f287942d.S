@@ -3,7 +3,7 @@
 func0000000000000000:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB0_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -23,7 +23,7 @@ func0000000000000000:
 func0000000000000006:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB1_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329
@@ -43,7 +43,7 @@ func0000000000000006:
 func0000000000000002:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB2_2
-	negw	a1, a0
+	neg	a1, a0
 	and	a0, a0, a1
 	lui	a1, 30667
 	addi	a1, a1, 1329

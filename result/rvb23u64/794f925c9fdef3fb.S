@@ -1,5 +1,5 @@
 func000000000000000c:
-	negw	a2, a2
+	neg	a2, a2
 	slli	a0, a0, 63
 	sll	a1, a1, a2
 	srai	a0, a0, 63
@@ -8,7 +8,7 @@ func000000000000000c:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	negw	a2, a2
+	neg	a2, a2
 	sll	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret

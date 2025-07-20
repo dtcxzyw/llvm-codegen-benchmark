@@ -11,7 +11,7 @@ func0000000000000001:
 func0000000000000088:
 	andi	a1, a1, 1
 	li	a3, 7
-	subw	a2, a2, a0
+	sub	a2, a2, a0
 	lui	a0, 524288
 	czero.eqz	a1, a3, a1
 	addw	a1, a1, a2

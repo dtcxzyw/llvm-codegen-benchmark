@@ -12,7 +12,7 @@ func000000000000000f:
 
 func000000000000000a:
 	srliw	a0, a0, 1
-	negw	a0, a0
+	neg	a0, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -32,7 +32,7 @@ func000000000000000b:
 func0000000000000002:
 	srliw	a0, a0, 1
 	li	a1, 100
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

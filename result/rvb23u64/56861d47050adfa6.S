@@ -3,7 +3,7 @@ func000000000000001c:
 	lui	a3, 256
 	czero.nez	a0, a3, a0
 	or	a0, a0, a1
-	negw	a1, a2
+	neg	a1, a2
 	sllw	a0, a0, a1
 	ret
 

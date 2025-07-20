@@ -14,7 +14,7 @@ func0000000000000008:
 	blt	a1, a2, .LBB1_2
 	li	a1, 24
 .LBB1_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 12
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000000:
 	blt	a1, a2, .LBB2_2
 	li	a1, 13
 .LBB2_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
 

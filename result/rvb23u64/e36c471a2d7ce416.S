@@ -24,7 +24,7 @@ func0000000000000011:
 	srliw	a3, a2, 31
 	add	a2, a2, a3
 	sraiw	a2, a2, 1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

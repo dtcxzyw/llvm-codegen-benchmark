@@ -11,7 +11,7 @@ func000000000000000a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	slt	a0, a2, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	ret
 .LBB1_2:
@@ -22,7 +22,7 @@ func0000000000000008:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	sltu	a0, a2, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	ret
 .LBB2_2:

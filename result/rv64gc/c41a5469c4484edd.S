@@ -13,7 +13,7 @@ func000000000000001e:
 func00000000000000ac:
 	sext.w	a2, a1
 	slti	a2, a2, 12
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 4

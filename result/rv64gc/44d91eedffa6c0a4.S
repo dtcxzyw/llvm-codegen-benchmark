@@ -18,9 +18,9 @@ func00000000000000fe:
 func0000000000000054:
 	add	a1, a1, a2
 	lui	a2, 21
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	slli	a1, a1, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a2, 384
 	mulw	a0, a1, a0
 	ret
@@ -59,7 +59,7 @@ func0000000000000051:
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a0, 2
 	slli	a0, a0, 4
 	subw	a0, a0, a1
@@ -77,7 +77,7 @@ func00000000000000fc:
 	add	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 244
 	add	a0, a0, a1
 	addi	a1, a2, 576

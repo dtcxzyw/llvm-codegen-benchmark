@@ -1,6 +1,6 @@
 func0000000000000010:
 	sext.w	a3, a0
-	subw	a0, a2, a1
+	sub	a0, a2, a1
 	addiw	a0, a0, 1
 	bge	a0, a3, .LBB0_3
 	li	a1, 2
@@ -17,7 +17,7 @@ func0000000000000010:
 
 func0000000000000000:
 	sext.w	a3, a0
-	subw	a0, a2, a1
+	sub	a0, a2, a1
 	addiw	a0, a0, 1
 	bge	a0, a3, .LBB1_3
 	blez	a0, .LBB1_4

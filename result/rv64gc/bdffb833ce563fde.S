@@ -1,6 +1,6 @@
 func0000000000000011:
 	li	a2, 258
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a1, a2, 32
 	srli	a1, a1, 32
 	bltu	a0, a1, .LBB0_2
@@ -11,7 +11,7 @@ func0000000000000011:
 
 func0000000000000014:
 	lui	a2, 2
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a1, a2, 32
 	srli	a1, a1, 32
 	bltu	a1, a0, .LBB1_2
@@ -23,7 +23,7 @@ func0000000000000014:
 
 func0000000000000001:
 	lui	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	slli	a1, a2, 32
 	srli	a1, a1, 32
 	bltu	a0, a1, .LBB2_2

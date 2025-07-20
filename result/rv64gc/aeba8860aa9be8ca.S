@@ -15,14 +15,14 @@ func00000000000003aa:
 
 func00000000000003a6:
 	or	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -13
 	slti	a0, a0, 13
 	ret
 
 func0000000000000208:
 	or	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -12
 	sltiu	a0, a0, 13
 	xori	a0, a0, 1
@@ -37,7 +37,7 @@ func0000000000000206:
 
 func000000000000038a:
 	or	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -8
 	sgtz	a0, a0
 	ret

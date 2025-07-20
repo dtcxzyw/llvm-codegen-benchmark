@@ -3,7 +3,7 @@ func0000000000000020:
 	li	a3, 25
 	maxu	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 13
 	ret
 

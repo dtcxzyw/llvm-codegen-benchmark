@@ -5,7 +5,7 @@ func0000000000000030:
 	ret
 
 func0000000000000010:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slliw	a0, a1, 1
 	ret
 

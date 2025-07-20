@@ -1,6 +1,6 @@
 func000000000000002c:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	addi	a2, a2, 1311
 	slli	a1, a1, 32
@@ -14,7 +14,7 @@ func000000000000002c:
 
 func000000000000000c:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a1, a1, 32
@@ -29,7 +29,7 @@ func000000000000000c:
 
 func000000000000002d:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 235184
 	addi	a2, a2, 1725
 	slli	a1, a1, 32

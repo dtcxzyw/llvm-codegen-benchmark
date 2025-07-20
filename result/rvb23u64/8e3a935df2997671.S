@@ -2,7 +2,7 @@ func000000000000000c:
 	li	a2, 16
 	rev8	a0, a0
 	lui	a3, 15
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srli	a1, a0, 44
 	addi	a3, a3, 240
 	and	a1, a1, a3
@@ -28,7 +28,7 @@ func0000000000000004:
 	li	a2, 16
 	rev8	a0, a0
 	lui	a3, 15
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srli	a1, a0, 44
 	addi	a3, a3, 240
 	and	a1, a1, a3

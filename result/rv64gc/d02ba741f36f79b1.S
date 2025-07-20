@@ -8,14 +8,14 @@ func000000000000003f:
 func0000000000000000:
 	mul	a0, a1, a0
 	slli	a1, a0, 4
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 15
 	ret
 
 func0000000000000001:
 	mul	a0, a1, a0
 	slli	a1, a0, 3
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 3
 	ret
 

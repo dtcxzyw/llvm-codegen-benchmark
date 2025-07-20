@@ -10,7 +10,7 @@ func000000000000003c:
 	srli	a2, a2, 20
 	slli	a3, a2, 21
 	sh3add	a2, a2, a2
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	add	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2

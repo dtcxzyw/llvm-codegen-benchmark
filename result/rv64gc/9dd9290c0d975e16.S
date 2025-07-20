@@ -14,7 +14,7 @@ func0000000000000001:
 
 func00000000000002a4:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a1, a1, -7
 	sltiu	a0, a1, -8
 	ret
@@ -29,7 +29,7 @@ func0000000000000004:
 
 func00000000000006a4:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 256
 	sltiu	a0, a0, 769
 	ret

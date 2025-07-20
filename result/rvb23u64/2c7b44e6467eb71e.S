@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a0, a0, 1
 	sraiw	a3, a1, 31
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srliw	a3, a3, 30
 	add	a3, a3, a1
 	andi	a3, a3, -4

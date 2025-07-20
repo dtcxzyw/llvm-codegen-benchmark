@@ -48,7 +48,7 @@ func00000000000000a4:
 func0000000000000509:
 	sext.w	a2, a2
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 12
 	add	a1, a1, a2
 	sltu	a0, a0, a1

@@ -7,14 +7,14 @@ func00000000000001a6:
 
 func0000000000000006:
 	andi	a2, a2, -8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addw	a1, a1, a2
 	slti	a0, a1, 8
 	ret
 
 func00000000000001a4:
 	zext.b	a2, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addw	a1, a1, a2
 	sltiu	a0, a1, 256
 	ret

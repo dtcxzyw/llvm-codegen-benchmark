@@ -6,7 +6,7 @@ func000000000000002a:
 	ret
 
 func0000000000000000:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, -12
 	li	a1, 1
@@ -14,7 +14,7 @@ func0000000000000000:
 	ret
 
 func000000000000006a:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	li	a1, 1
@@ -22,7 +22,7 @@ func000000000000006a:
 	ret
 
 func0000000000000060:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	li	a1, 1
@@ -30,7 +30,7 @@ func0000000000000060:
 	ret
 
 func0000000000000068:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 1
 	li	a1, 1

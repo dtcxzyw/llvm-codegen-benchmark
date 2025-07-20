@@ -1,6 +1,6 @@
 func0000000000000010:
 	sltu	a1, a2, a1
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -37,7 +37,7 @@ func0000000000000015:
 
 func0000000000000028:
 	sltu	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -60,7 +60,7 @@ func0000000000000019:
 
 func000000000000000c:
 	slt	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -77,7 +77,7 @@ func0000000000000011:
 
 func0000000000000008:
 	sltu	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

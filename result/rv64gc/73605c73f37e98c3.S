@@ -9,7 +9,7 @@ func0000000000000005:
 func0000000000000029:
 	sext.w	a1, a1
 	sgtz	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	negw	a0, a0
 	ret
@@ -19,7 +19,7 @@ func0000000000000018:
 	lui	a2, 1048568
 	addi	a2, a2, 1262
 	slt	a1, a1, a2
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	negw	a0, a0
 	ret

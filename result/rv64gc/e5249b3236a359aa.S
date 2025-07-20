@@ -1,5 +1,5 @@
 func00000000000002f4:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sraiw	a2, a1, 31
 	xor	a1, a1, a2
 	subw	a1, a1, a2

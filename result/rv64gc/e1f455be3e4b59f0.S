@@ -12,7 +12,7 @@ func000000000000000a:
 	lui	a2, 4096
 	slti	a0, a0, 255
 	add	a1, a1, a2
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	srliw	a0, a0, 24
 	slli	a0, a0, 24

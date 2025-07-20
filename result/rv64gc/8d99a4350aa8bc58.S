@@ -9,7 +9,7 @@ func0000000000000026:
 	sraiw	a2, a2, 2
 	add	a2, a2, a3
 	slli	a3, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	bltz	a1, .LBB0_2
 	mv	a0, a1
@@ -27,7 +27,7 @@ func0000000000000006:
 	sraiw	a2, a2, 2
 	add	a2, a2, a3
 	slli	a3, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	bltz	a1, .LBB1_2
 	mv	a0, a1

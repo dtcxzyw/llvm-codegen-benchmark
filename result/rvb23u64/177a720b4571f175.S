@@ -18,7 +18,7 @@ func000000000000000f:
 	addi	a2, a2, -2031
 	mul	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 6
@@ -36,7 +36,7 @@ func0000000000000004:
 	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	li	a3, 39

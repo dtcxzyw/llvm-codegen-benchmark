@@ -5,7 +5,7 @@ func0000000000000007:
 	srli	a2, a2, 18
 	sh1add	a3, a2, a2
 	sh2add	a2, a3, a2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	li	a2, 1184
 	mul	a1, a1, a2
@@ -21,7 +21,7 @@ func0000000000000004:
 	srli	a2, a2, 20
 	li	a3, 42
 	mul	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	sh1add	a0, a1, a0
 	ret

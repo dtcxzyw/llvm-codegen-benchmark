@@ -1,7 +1,7 @@
 func0000000000000028:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret

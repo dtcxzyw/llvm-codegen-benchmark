@@ -10,7 +10,7 @@ func0000000000000000:
 	add	a3, a3, a4
 	slli	a4, a3, 3
 	add	a2, a2, a3
-	subw	a2, a2, a4
+	sub	a2, a2, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

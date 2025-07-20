@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.quad	0x3fd34413509f79ff
 func000000000000000a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	lui	a1, %hi(.LCPI0_1)

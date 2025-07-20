@@ -3,7 +3,7 @@ func0000000000000002:
 	lui	a2, 4
 	srli	a1, a1, 49
 	addi	a2, a2, 47
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 
@@ -12,7 +12,7 @@ func0000000000000006:
 	lui	a2, 4
 	srli	a1, a1, 49
 	addi	a2, a2, 35
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	srl	a0, a0, a2
 	ret
 

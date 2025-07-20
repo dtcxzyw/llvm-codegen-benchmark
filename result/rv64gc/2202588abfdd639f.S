@@ -58,7 +58,7 @@ func0000000000000185:
 func0000000000000091:
 	addiw	a1, a1, -69
 	sltiu	a1, a1, 2
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -3
 	addw	a0, a0, a1
 	ret

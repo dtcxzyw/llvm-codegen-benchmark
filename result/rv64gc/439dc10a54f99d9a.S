@@ -48,7 +48,7 @@ func000000000000001e:
 
 func000000000000000c:
 	srli	a1, a1, 2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	slli	a0, a0, 32
 	ret
 

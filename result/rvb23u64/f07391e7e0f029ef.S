@@ -1,23 +1,23 @@
 func0000000000000003:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	sh2add.uw	a0, a2, a0
 	ret
 
 func0000000000000024:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, -4
 	add	a0, a0, a2
 	ret
 
 func0000000000000027:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, -4
 	add	a0, a0, a2
 	ret
 
 func000000000000002b:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	not	a1, a1
 	sh2add.uw	a0, a1, a0
 	ret
@@ -29,14 +29,14 @@ func000000000000002f:
 	ret
 
 func0000000000000053:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	slli.uw	a1, a2, 4
 	add	a0, a0, a1
 	ret
 
 func000000000000006b:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	sh3add.uw	a0, a2, a0
 	ret
@@ -48,19 +48,19 @@ func0000000000000017:
 	ret
 
 func0000000000000060:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	add.uw	a0, a2, a0
 	ret
 
 func0000000000000028:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, -8
 	add.uw	a0, a2, a0
 	ret
 
 func0000000000000063:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	slli.uw	a1, a2, 6
 	sh2add.uw	a1, a2, a1
@@ -68,25 +68,25 @@ func0000000000000063:
 	ret
 
 func0000000000000000:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, 1
 	sh2add.uw	a0, a2, a0
 	ret
 
 func0000000000000007:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, 3
 	sh3add	a0, a2, a0
 	ret
 
 func000000000000002c:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addiw	a2, a2, -17
 	sh1add	a0, a2, a0
 	ret
 
 func0000000000000013:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a2, a2, -10
 	add.uw	a0, a2, a0
 	ret

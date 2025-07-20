@@ -1,12 +1,12 @@
 func0000000000000006:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	ret
 
 func0000000000000184:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 20
@@ -22,7 +22,7 @@ func000000000000000c:
 	ret
 
 func0000000000000108:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 2
@@ -39,21 +39,21 @@ func0000000000000001:
 	ret
 
 func0000000000000086:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	ret
 
 func000000000000000a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sgtz	a0, a0
 	ret
 
 func0000000000000008:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 8
@@ -61,7 +61,7 @@ func0000000000000008:
 	ret
 
 func0000000000000188:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 13
@@ -69,7 +69,7 @@ func0000000000000188:
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltiu	a0, a0, 4

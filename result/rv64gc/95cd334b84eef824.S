@@ -15,7 +15,7 @@ func0000000000000061:
 	ret
 
 func0000000000000001:
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 63
 	bnez	a1, .LBB2_2
 	li	a0, 63

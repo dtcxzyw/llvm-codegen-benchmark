@@ -14,7 +14,7 @@ func000000000000000f:
 func0000000000000003:
 	slli	a2, a2, 8
 	zext.b	a1, a1
-	negw	a2, a2
+	neg	a2, a2
 	zext.h	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

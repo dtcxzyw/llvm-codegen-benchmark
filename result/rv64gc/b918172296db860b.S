@@ -13,7 +13,7 @@ func000000000000005a:
 	ret
 
 func000000000000000b:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1

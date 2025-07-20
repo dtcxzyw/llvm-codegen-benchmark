@@ -1,5 +1,5 @@
 func0000000000000003:
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	li	a1, 25
 	mul	a0, a0, a1

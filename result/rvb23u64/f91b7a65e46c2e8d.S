@@ -1,12 +1,12 @@
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 1
 	addi	a0, a0, 128
 	zext.w	a0, a0
 	ret
 
 func000000000000002f:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 3
 	addiw	a0, a0, 8
 	ret

@@ -1,5 +1,5 @@
 func0000000000000030:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1

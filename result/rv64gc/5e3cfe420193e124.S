@@ -1,7 +1,7 @@
 func0000000000000006:
 	sext.w	a0, a0
 	slti	a0, a0, 215
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 41
 	srli	a0, a0, 41
@@ -36,7 +36,7 @@ func000000000000000a:
 func0000000000000014:
 	sext.w	a0, a0
 	sltiu	a0, a0, 264
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

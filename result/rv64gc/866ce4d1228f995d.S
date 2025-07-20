@@ -1,5 +1,5 @@
 func00000000000000e1:
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 7
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -7,7 +7,7 @@ func00000000000000e1:
 	ret
 
 func0000000000000061:
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 15
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -15,7 +15,7 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 3
 	addi	a0, a0, 1
 	xor	a0, a0, a1

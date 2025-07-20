@@ -6,15 +6,15 @@ func0000000000000095:
 	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 32
-	subw	a3, a1, a2
+	sub	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	li	a3, 27
-	subw	a1, a1, a1
+	sub	a1, a1, a1
 	srli	a2, a2, 4
 	mul	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, -27
 	ret
 
@@ -26,11 +26,11 @@ func0000000000000090:
 	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	li	a3, 13
-	subw	a1, a1, a1
+	sub	a1, a1, a1
 	srli	a2, a2, 34
 	mul	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, -13
 	ret
 

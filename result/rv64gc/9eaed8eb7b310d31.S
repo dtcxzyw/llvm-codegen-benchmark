@@ -16,26 +16,26 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 10
 	slli	a0, a0, 10
 	snez	a0, a0
 	ret
 
 func0000000000000061:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 34
 	seqz	a0, a0
 	ret
 
 func000000000000000c:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 3
 	snez	a0, a0
 	ret
 
 func0000000000000021:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 1
 	seqz	a0, a0
 	ret
@@ -57,30 +57,30 @@ func0000000000000028:
 	ret
 
 func0000000000000014:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 1
 	slli	a0, a0, 1
 	sltiu	a0, a0, 6
 	ret
 
 func000000000000006c:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 
 func000000000000002c:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 1
 	ret
 
 func0000000000000038:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 61
 	srli	a0, a0, 63
 	ret
 
 func0000000000000034:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 3
 	slli	a0, a0, 3
 	seqz	a0, a0

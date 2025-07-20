@@ -8,7 +8,7 @@ func00000000000000e1:
 
 func0000000000000074:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -17,7 +17,7 @@ func0000000000000074:
 
 func0000000000000061:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -35,7 +35,7 @@ func00000000000001e1:
 
 func0000000000000161:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -45,7 +45,7 @@ func0000000000000161:
 
 func0000000000000121:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -55,7 +55,7 @@ func0000000000000121:
 
 func0000000000000104:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -64,7 +64,7 @@ func0000000000000104:
 
 func000000000000016c:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1
@@ -74,7 +74,7 @@ func000000000000016c:
 
 func0000000000000124:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, -1
@@ -83,7 +83,7 @@ func0000000000000124:
 
 func0000000000000174:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a0, a0, 1

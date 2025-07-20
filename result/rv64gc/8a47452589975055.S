@@ -2,7 +2,7 @@ func000000000000003a:
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	li	a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srl	a0, a0, a1
 	addi	a0, a0, 9
 	ret

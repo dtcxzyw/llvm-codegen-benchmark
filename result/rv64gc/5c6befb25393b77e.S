@@ -10,7 +10,7 @@ func000000000000004c:
 func0000000000000061:
 	slli	a1, a0, 12
 	slli	a0, a0, 31
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 13
 	seqz	a0, a0
 	ret

@@ -4,7 +4,7 @@ func0000000000000106:
 	srlw	a0, a1, a0
 	ret
 .LBB0_2:
-	negw	a0, a0
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 

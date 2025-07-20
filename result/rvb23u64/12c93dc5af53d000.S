@@ -2,7 +2,7 @@ func000000000000003f:
 	zext.h	a1, a1
 	sh1add	a2, a1, a1
 	slli	a1, a1, 7
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 22
 	ret
@@ -35,7 +35,7 @@ func000000000000003a:
 func0000000000000010:
 	zext.h	a1, a1
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
 

@@ -12,7 +12,7 @@ func000000000000000e:
 	srai	a2, a2, 37
 	add	a1, a1, a2
 	mul	a1, a1, a3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1
 	slli	a0, a0, 48

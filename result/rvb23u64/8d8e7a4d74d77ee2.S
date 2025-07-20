@@ -1,10 +1,10 @@
 func0000000000000002:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srl	a0, a0, a1
 	ret
 
 func000000000000000a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srl	a0, a0, a1
 	ret
 

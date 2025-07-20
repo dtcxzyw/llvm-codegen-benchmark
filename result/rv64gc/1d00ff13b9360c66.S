@@ -4,7 +4,7 @@ func000000000000006d:
 	slt	a2, a2, a3
 	lui	a3, 1048400
 	addi	a3, a3, 1733
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a3
 	addw	a0, a0, a1
@@ -16,7 +16,7 @@ func000000000000006c:
 	slt	a2, a2, a3
 	lui	a3, 1048400
 	addi	a3, a3, 1733
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a3
 	addw	a0, a0, a1

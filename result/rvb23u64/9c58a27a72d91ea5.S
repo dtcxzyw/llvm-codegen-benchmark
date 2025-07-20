@@ -7,7 +7,7 @@ func0000000000000003:
 	srli	a1, a1, 52
 	addi	a2, a2, 1440
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
 	ret
@@ -21,7 +21,7 @@ func0000000000000002:
 	srli	a1, a1, 37
 	mul	a1, a1, a2
 	lui	a2, 2441
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a1, a2, 1664
 	mulw	a0, a0, a1
 	ret

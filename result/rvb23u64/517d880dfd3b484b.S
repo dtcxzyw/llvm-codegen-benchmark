@@ -1,6 +1,6 @@
 func0000000000000008:
 	li	a2, 8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a0, a2, a0
 	ret
 
@@ -12,7 +12,7 @@ func000000000000001f:
 
 func0000000000000003:
 	li	a2, 15
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a0, a2, a0
 	ret
 
@@ -29,13 +29,13 @@ func000000000000000f:
 
 func000000000000000b:
 	li	a2, 31
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sh3add.uw	a0, a2, a0
 	ret
 
 func0000000000000000:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	lui	a1, 1
 	zext.w	a2, a2
 	addi	a1, a1, -1472

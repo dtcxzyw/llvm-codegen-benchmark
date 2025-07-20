@@ -52,7 +52,7 @@ func0000000000000008:
 func0000000000000043:
 	sext.w	a2, a1
 	sltiu	a2, a2, 1024
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 30
@@ -62,7 +62,7 @@ func0000000000000043:
 func0000000000000047:
 	sext.w	a2, a1
 	sltiu	a2, a2, 42
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slli	a1, a1, 2

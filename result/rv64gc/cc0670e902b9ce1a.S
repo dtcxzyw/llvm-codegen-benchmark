@@ -9,7 +9,7 @@ func00000000000001e1:
 func0000000000000001:
 	sext.w	a0, a0
 	srliw	a2, a2, 6
-	negw	a1, a1
+	neg	a1, a1
 	subw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

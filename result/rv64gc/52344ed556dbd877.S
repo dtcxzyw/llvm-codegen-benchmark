@@ -15,7 +15,7 @@ func00000000000002ad:
 func0000000000000610:
 	sext.w	a3, a2
 	li	a4, 4
-	subw	a4, a4, a2
+	sub	a4, a4, a2
 	seqz	a2, a3
 	addi	a2, a2, -1
 	and	a2, a2, a4
@@ -26,7 +26,7 @@ func0000000000000610:
 func000000000000061c:
 	sext.w	a3, a2
 	li	a4, 4
-	subw	a4, a4, a2
+	sub	a4, a4, a2
 	seqz	a2, a3
 	addi	a2, a2, -1
 	and	a2, a2, a4

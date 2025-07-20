@@ -41,7 +41,7 @@ func000000000000003e:
 	mul	a0, a0, a4
 	srli	a0, a0, 56
 	li	a1, 64
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 1
 	ret
 
@@ -89,13 +89,13 @@ func000000000000001e:
 	mul	a0, a0, a1
 	srli	a0, a0, 56
 	li	a1, 67
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	ret
 .LBB1_2:
 	li	a0, 64
 	li	a1, 67
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 2
 	ret
 

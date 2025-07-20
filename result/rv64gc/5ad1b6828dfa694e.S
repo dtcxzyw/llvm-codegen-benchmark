@@ -31,7 +31,7 @@ func00000000000005e4:
 	addi	a3, a3, 257
 	mul	a2, a2, a3
 	srliw	a2, a2, 26
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 8
 	sltu	a0, a1, a0
 	ret

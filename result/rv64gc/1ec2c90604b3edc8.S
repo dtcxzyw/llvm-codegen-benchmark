@@ -11,7 +11,7 @@ func0000000000000031:
 	snez	a2, a2
 	and	a1, a1, a2
 	lui	a2, 1048544
-	negw	a1, a1
+	neg	a1, a1
 	addi	a2, a2, -165
 	and	a1, a1, a2
 	addw	a0, a0, a1

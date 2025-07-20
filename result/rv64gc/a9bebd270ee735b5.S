@@ -16,7 +16,7 @@ func0000000000000004:
 func000000000000000c:
 	zext.b	a0, a0
 	slli	a1, a1, 4
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 240
 	xor	a0, a0, a1
 	snez	a0, a0

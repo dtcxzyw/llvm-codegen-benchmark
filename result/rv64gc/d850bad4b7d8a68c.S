@@ -4,7 +4,7 @@ func0000000000000093:
 	sltu	a3, a4, a3
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 30
 	add	a0, a0, a1
@@ -16,7 +16,7 @@ func00000000000000c3:
 	slt	a3, a4, a3
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a2, a1, 29
 	srli	a1, a1, 27
@@ -30,7 +30,7 @@ func00000000000000c0:
 	slt	a3, a4, a3
 	addi	a3, a3, -1
 	and	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 29
 	add	a0, a0, a1

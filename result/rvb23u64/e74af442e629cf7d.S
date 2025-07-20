@@ -1,19 +1,19 @@
 func0000000000000128:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	srai	a0, a0, 2
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000024:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	srai	a0, a0, 2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000028:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	srai	a0, a0, 2
 	sltu	a0, a1, a0
@@ -32,7 +32,7 @@ func00000000000000e8:
 	ret
 
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	srai	a0, a0, 32
 	slt	a0, a1, a0

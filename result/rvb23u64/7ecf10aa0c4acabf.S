@@ -14,7 +14,7 @@ func00000000000000a1:
 	mul	a1, a1, a3
 	lui	a3, 17476
 	addi	a2, a2, -273
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -59
 	mul	a0, a0, a2
 	roriw	a0, a0, 2
@@ -38,7 +38,7 @@ func00000000000000ac:
 	mul	a1, a1, a3
 	lui	a3, 17476
 	addi	a2, a2, -273
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -59
 	mul	a0, a0, a2
 	roriw	a0, a0, 2

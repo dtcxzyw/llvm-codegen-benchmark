@@ -15,7 +15,7 @@ func0000000000000039:
 	slli	a2, a0, 1
 	slli	a0, a0, 8
 	sraiw	a1, a1, 1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -25,7 +25,7 @@ func000000000000002d:
 	add	a1, a1, a2
 	slli	a2, a0, 8
 	sraiw	a1, a1, 1
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	addw	a0, a0, a1
 	ret
 

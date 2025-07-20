@@ -8,7 +8,7 @@ func0000000000000004:
 	srli	a1, a1, 35
 	slli	a2, a1, 4
 	slli	a1, a1, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -48,7 +48,7 @@ func0000000000000007:
 	mulhu	a1, a2, a1
 	srli	a1, a1, 33
 	slli	a2, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 

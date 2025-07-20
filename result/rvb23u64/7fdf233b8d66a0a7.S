@@ -32,7 +32,7 @@ func0000000000000150:
 	sh3add	a3, a0, a0
 	slli	a0, a0, 5
 	add	a1, a1, a2
-	subw	a0, a0, a3
+	sub	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
@@ -78,7 +78,7 @@ func00000000000003ff:
 	sh2add	a1, a1, a1
 	add	a1, a1, a2
 	slli	a2, a0, 3
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	addw	a0, a0, a1
 	ret
 

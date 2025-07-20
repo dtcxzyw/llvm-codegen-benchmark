@@ -32,7 +32,7 @@ func000000000000001f:
 	mulhu	a0, a0, a1
 	srli	a0, a0, 35
 	slli	a1, a0, 4
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, 15
 	ret
 

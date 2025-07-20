@@ -14,7 +14,7 @@ func000000000000001a:
 
 func000000000000000a:
 	slli	a2, a1, 11
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	addi	a1, a2, 2047
 	divw	a0, a1, a0
 	ret

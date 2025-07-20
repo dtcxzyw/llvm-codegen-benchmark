@@ -11,7 +11,7 @@ func0000000000000199:
 	slti	a1, a1, -305
 	czero.eqz	a1, a2, a1
 	li	a2, 308
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func00000000000000a9:
 	czero.nez	a1, a2, a1
 	lui	a2, 16
 	addi	a2, a2, -1
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 
@@ -42,7 +42,7 @@ func00000000000001a9:
 	li	a2, -60
 	sgtz	a1, a1
 	czero.eqz	a1, a2, a1
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -51,7 +51,7 @@ func000000000000009b:
 	li	a2, 6
 	slli	a1, a1, 30
 	srli	a1, a1, 61
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 
@@ -60,7 +60,7 @@ func0000000000000099:
 	li	a2, 7
 	slli	a1, a1, 30
 	srli	a1, a1, 61
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

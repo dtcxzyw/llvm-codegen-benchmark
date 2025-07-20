@@ -1,5 +1,5 @@
 func0000000000000421:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a1, a1, 6
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -232,7 +232,7 @@ func000000000000008c:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 524288
 	xor	a1, a1, a2
 	orn	a0, a1, a0

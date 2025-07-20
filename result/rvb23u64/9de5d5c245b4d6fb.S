@@ -13,7 +13,7 @@ func000000000000000e:
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1
 	slli	a0, a0, 48

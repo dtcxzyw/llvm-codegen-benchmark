@@ -9,8 +9,8 @@ func0000000000000042:
 
 func0000000000000056:
 	slli	a3, a2, 3
-	subw	a2, a2, a1
-	subw	a3, a3, a2
+	sub	a2, a2, a1
+	sub	a3, a3, a2
 	addiw	a3, a3, -7
 	add	a0, a0, a3
 	ret

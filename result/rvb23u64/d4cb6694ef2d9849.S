@@ -1,5 +1,5 @@
 func000000000000003f:
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 15
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
@@ -7,7 +7,7 @@ func000000000000003f:
 	ret
 
 func000000000000003e:
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 15
 	add	a1, a1, a2
 	sh2add	a0, a0, a1

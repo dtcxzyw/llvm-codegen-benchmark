@@ -1,6 +1,6 @@
 func0000000000000004:
 	andi	a1, a1, -64
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, 64
 	sltiu	a0, a0, 64
 	ret

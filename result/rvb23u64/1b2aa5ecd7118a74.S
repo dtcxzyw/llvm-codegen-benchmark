@@ -17,7 +17,7 @@ func0000000000000081:
 	ret
 
 func0000000000000041:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -34,7 +34,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000061:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1

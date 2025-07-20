@@ -1,5 +1,5 @@
 func000000000000003f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -7,7 +7,7 @@ func000000000000003f:
 	ret
 
 func000000000000003e:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1

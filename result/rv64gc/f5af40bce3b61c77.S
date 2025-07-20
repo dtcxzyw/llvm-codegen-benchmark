@@ -103,7 +103,7 @@ func000000000000002b:
 
 func0000000000000013:
 	sltiu	a1, a1, 10
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 50
 	addw	a0, a0, a1
 	ret

@@ -5,7 +5,7 @@ func0000000000000003:
 	li	a0, 49
 .LBB0_2:
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slliw	a0, a0, 3
 	ret
@@ -17,7 +17,7 @@ func0000000000000002:
 	li	a0, 255
 .LBB1_2:
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slliw	a0, a0, 24
 	ret
@@ -66,7 +66,7 @@ func0000000000000007:
 	li	a0, 255
 .LBB4_2:
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	slliw	a0, a0, 16
 	ret

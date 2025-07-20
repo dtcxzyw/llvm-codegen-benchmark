@@ -6,7 +6,7 @@ func0000000000000007:
 	srli	a1, a1, 18
 	sh1add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 14
 	zext.h	a0, a0
 	ret

@@ -11,7 +11,7 @@ func0000000000000019:
 	srai	a2, a2, 48
 	lui	a3, 1048572
 	slt	a2, a2, a3
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -48,7 +48,7 @@ func0000000000000029:
 	slli	a2, a2, 48
 	srai	a2, a2, 48
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

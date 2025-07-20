@@ -10,7 +10,7 @@ func0000000000000008:
 	srli	a1, a1, 34
 	sh1add	a2, a1, a1
 	sh2add	a1, a2, a1
-	subw	a0, a0, a0
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 

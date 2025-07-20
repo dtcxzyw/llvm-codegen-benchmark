@@ -7,7 +7,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000e1:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 3
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
@@ -15,7 +15,7 @@ func00000000000000e1:
 	ret
 
 func0000000000000061:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 7
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
@@ -52,7 +52,7 @@ func0000000000000041:
 	ret
 
 func0000000000000064:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.b	a1, a1
 	addiw	a0, a0, 8
 	sltu	a0, a0, a1

@@ -10,7 +10,7 @@ func0000000000000007:
 func0000000000000002:
 	andi	a0, a0, 1
 	li	a2, 13
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.w	a2, a2
 	addi	a2, a2, -4
 	czero.nez	a0, a2, a0
@@ -19,7 +19,7 @@ func0000000000000002:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	negw	a1, a1
+	neg	a1, a1
 	zext.w	a1, a1
 	czero.nez	a0, a1, a0
 	ret

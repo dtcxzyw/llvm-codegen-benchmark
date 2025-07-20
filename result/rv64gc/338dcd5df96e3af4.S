@@ -1,5 +1,5 @@
 func0000000000000038:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 1048555
 	srliw	a2, a0, 7
 	sltiu	a2, a2, 675
@@ -26,7 +26,7 @@ func00000000000000a6:
 func0000000000000024:
 	subw	a0, a0, a1
 	sltiu	a1, a0, 3
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, -3
 	addw	a0, a0, a1
 	ret

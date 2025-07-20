@@ -32,7 +32,7 @@ func00000000000003aa:
 	mul	a1, a1, a2
 	lui	a2, 1
 	srliw	a1, a1, 24
-	subw	a3, a3, a1
+	sub	a3, a3, a1
 	mulw	a0, a3, a0
 	addi	a1, a2, -541
 	slt	a0, a1, a0

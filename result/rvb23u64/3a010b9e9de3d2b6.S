@@ -2,14 +2,14 @@ func000000000000000f:
 	andi	a1, a1, 192
 	addi	a1, a1, -192
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 
 func0000000000000008:
 	not	a1, a1
 	bexti	a1, a1, 14
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 2
 	zext.w	a0, a0
 	ret

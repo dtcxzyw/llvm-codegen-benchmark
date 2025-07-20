@@ -52,7 +52,7 @@ func0000000000000010:
 func0000000000000040:
 	sext.w	a1, a1
 	sltiu	a1, a1, 192
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
 

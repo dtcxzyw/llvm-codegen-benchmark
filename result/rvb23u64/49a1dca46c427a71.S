@@ -63,7 +63,7 @@ func0000000000000021:
 	addi	a3, a3, 1808
 	srli	a2, a2, 45
 	mul	a2, a2, a3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	xori	a0, a0, 2
 	or	a0, a0, a1
 	sext.w	a0, a0

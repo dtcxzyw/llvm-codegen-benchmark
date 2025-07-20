@@ -63,7 +63,7 @@ func00000000000003dd:
 	mul	a2, a2, a3
 	slli	a3, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	lui	a3, 8
 	addi	a3, a3, -1604
 	add	a0, a0, a2
@@ -98,7 +98,7 @@ func00000000000003f0:
 func0000000000000000:
 	slli	a3, a2, 4
 	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	slli	a3, a1, 3
 	slli	a1, a1, 5
 	add	a0, a0, a2

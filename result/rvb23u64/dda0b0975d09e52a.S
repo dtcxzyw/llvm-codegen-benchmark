@@ -1,6 +1,6 @@
 func00000000000001e1:
 	sext.w	a0, a0
-	negw	a1, a1
+	neg	a1, a1
 	li	a2, -1
 	sltiu	a0, a0, 2
 	sllw	a1, a2, a1

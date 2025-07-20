@@ -72,14 +72,14 @@ func0000000000000001:
 
 func0000000000000074:
 	andi	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 128
 	sltiu	a0, a0, 256
 	ret
 
 func0000000000000004:
 	andi	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	sltiu	a0, a0, 2
 	ret

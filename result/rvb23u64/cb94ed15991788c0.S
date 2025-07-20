@@ -1,7 +1,7 @@
 func000000000000000a:
 	andi	a1, a1, 2047
 	zext.h	a0, a0
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000001:
 	zext.b	a0, a0
-	negw	a1, a1
+	neg	a1, a1
 	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -28,7 +28,7 @@ func0000000000000078:
 
 func000000000000000c:
 	zext.b	a0, a0
-	negw	a1, a1
+	neg	a1, a1
 	zext.b	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

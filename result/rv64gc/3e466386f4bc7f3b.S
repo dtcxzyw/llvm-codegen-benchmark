@@ -12,7 +12,7 @@ func0000000000000011:
 	slli	a2, a2, 30
 	sraiw	a2, a2, 31
 	and	a1, a1, a2
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 

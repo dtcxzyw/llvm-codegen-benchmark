@@ -1,7 +1,7 @@
 func000000000000000a:
 	slli	a1, a1, 35
 	srli	a1, a1, 35
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 8
 	sgtz	a0, a0
 	ret
@@ -17,7 +17,7 @@ func0000000000000004:
 func0000000000000006:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 3
 	slti	a0, a0, 0
 	ret

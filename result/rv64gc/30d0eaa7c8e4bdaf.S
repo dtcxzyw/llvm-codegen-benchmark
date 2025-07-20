@@ -1,13 +1,13 @@
 func0000000000000001:
 	sltu	a0, a0, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	li	a0, 0
 	ret
 
 func0000000000000005:
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 3
 	li	a1, 0
 	ret

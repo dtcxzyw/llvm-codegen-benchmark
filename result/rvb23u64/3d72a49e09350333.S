@@ -20,7 +20,7 @@ func0000000000000031:
 	and	a2, a2, a4
 	li	a4, 16
 	sh1add	a2, a3, a2
-	subw	a4, a4, a1
+	sub	a4, a4, a1
 	srlw	a1, a2, a4
 	subw	a0, a1, a0
 	ret
@@ -47,7 +47,7 @@ func0000000000000011:
 	and	a2, a2, a4
 	li	a4, 16
 	sh1add	a2, a3, a2
-	subw	a4, a4, a1
+	sub	a4, a4, a1
 	srlw	a1, a2, a4
 	subw	a0, a1, a0
 	ret

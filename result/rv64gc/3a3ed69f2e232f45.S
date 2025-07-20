@@ -1,6 +1,6 @@
 func0000000000000015:
 	slti	a1, a1, 255
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	srliw	a1, a1, 24
 	slli	a1, a1, 24

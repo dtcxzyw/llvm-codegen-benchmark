@@ -20,7 +20,7 @@ func00000000000000a1:
 func0000000000000088:
 	sext.w	a0, a0
 	slli	a3, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	subw	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
@@ -118,7 +118,7 @@ func0000000000000086:
 	sext.w	a0, a0
 	slli	a3, a2, 1
 	slli	a2, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret

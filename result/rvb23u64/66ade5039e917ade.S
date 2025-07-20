@@ -6,19 +6,19 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	slti	a0, a0, 0
 	ret
 
 func000000000000000a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	sgtz	a0, a0
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 20
 	ret
@@ -37,35 +37,35 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	slti	a0, a0, 29
 	xori	a0, a0, 1
 	ret
 
 func0000000000000028:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 32
 	xori	a0, a0, 1
 	ret
 
 func0000000000000024:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 62
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret
 
 func0000000000000014:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
 	addi	a1, a1, -19
@@ -73,7 +73,7 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
 	addi	a1, a1, -8
@@ -81,14 +81,14 @@ func0000000000000018:
 	ret
 
 func0000000000000048:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	ret
 
 func0000000000000044:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	sltiu	a0, a0, 4
 	ret

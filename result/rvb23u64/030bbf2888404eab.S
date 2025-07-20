@@ -17,7 +17,7 @@ func0000000000000004:
 func0000000000000010:
 	zext.h	a2, a2
 	sltiu	a2, a2, 127
-	negw	a2, a2
+	neg	a2, a2
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret

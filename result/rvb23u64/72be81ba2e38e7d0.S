@@ -20,7 +20,7 @@ func0000000000000002:
 func000000000000002a:
 	addi	a0, a0, 128
 	slli	a1, a0, 16
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 24
 	ret
 
@@ -39,7 +39,7 @@ func000000000000007b:
 func000000000000007a:
 	addi	a0, a0, 129
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 16
 	ret
 

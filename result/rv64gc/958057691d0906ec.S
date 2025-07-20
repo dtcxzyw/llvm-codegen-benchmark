@@ -14,7 +14,7 @@ func0000000000000384:
 
 func0000000000000008:
 	li	a3, 16
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	slli	a3, a3, 32
 	srli	a3, a3, 32
 	sub	a1, a1, a0

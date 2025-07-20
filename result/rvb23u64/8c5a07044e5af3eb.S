@@ -13,7 +13,7 @@ func0000000000000355:
 func00000000000003ff:
 	sh1add	a3, a2, a2
 	slli	a2, a2, 5
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	li	a3, 77
 	add	a0, a0, a2
 	mul	a1, a1, a3

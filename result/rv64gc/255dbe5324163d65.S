@@ -3,7 +3,7 @@ func0000000000000055:
 	addi	a1, a1, -528
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -12,7 +12,7 @@ func00000000000000d4:
 	addi	a1, a1, 378
 	slli	a2, a1, 1
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -28,7 +28,7 @@ func000000000000005d:
 	add	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -960
 	ret

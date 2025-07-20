@@ -1,7 +1,7 @@
 func0000000000000006:
 	sext.w	a0, a0
 	slti	a0, a0, 2
-	negw	a0, a0
+	neg	a0, a0
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret

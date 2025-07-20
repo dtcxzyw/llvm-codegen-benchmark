@@ -1,5 +1,5 @@
 func0000000000000020:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addiw	a0, a1, -1023
 	li	a1, -6
 	max	a0, a0, a1

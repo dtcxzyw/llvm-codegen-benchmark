@@ -41,7 +41,7 @@ func0000000000000010:
 	slli	a3, a2, 2
 	slli	a2, a2, 4
 	sext.w	a1, a1
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a1

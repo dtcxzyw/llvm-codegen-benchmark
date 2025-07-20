@@ -7,7 +7,7 @@ func0000000000000013:
 func000000000000001a:
 	slli	a1, a1, 38
 	srli	a1, a1, 38
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -27,7 +27,7 @@ func0000000000000005:
 func0000000000000002:
 	slli	a1, a1, 52
 	srli	a1, a1, 52
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

@@ -1,5 +1,5 @@
 func000000000000005e:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 2
@@ -12,7 +12,7 @@ func000000000000001e:
 	ret
 
 func000000000000000e:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 16

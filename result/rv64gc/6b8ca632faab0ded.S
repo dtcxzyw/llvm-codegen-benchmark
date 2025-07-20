@@ -5,7 +5,7 @@ func0000000000000000:
 	li	a1, 100
 .LBB0_2:
 	sgtz	a2, a1
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	mulw	a0, a0, a1
 	ret
@@ -17,7 +17,7 @@ func0000000000000001:
 	lui	a1, 8
 .LBB1_2:
 	sgtz	a2, a1
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	mulw	a0, a1, a0
 	ret

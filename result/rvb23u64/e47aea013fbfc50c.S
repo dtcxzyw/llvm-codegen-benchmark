@@ -1,6 +1,6 @@
 func000000000000003f:
 	li	a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	andi	a0, a1, 3
 	addi	a0, a0, 1
 	ret

@@ -10,7 +10,7 @@ func000000000000000c:
 func000000000000001e:
 	sext.w	a2, a1
 	sgtz	a2, a2
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	addiw	a1, a1, 5
 	mul	a0, a0, a1

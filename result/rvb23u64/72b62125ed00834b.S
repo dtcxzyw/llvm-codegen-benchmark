@@ -19,7 +19,7 @@ func000000000000001f:
 	srli	a2, a2, 36
 	slli	a3, a2, 6
 	sh1add	a2, a2, a2
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	sh3add	a0, a1, a0
 	addi	a0, a0, 160

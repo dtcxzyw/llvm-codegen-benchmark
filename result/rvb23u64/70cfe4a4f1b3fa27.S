@@ -18,13 +18,13 @@ func000000000000000c:
 
 func0000000000000000:
 	sraiw	a2, a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	sh3add.uw	a0, a2, a0
 	ret
 
 func0000000000000008:
 	sraiw	a2, a2, 3
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	add.uw	a0, a2, a0
 	ret
 

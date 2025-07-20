@@ -98,7 +98,7 @@ func0000000000000a51:
 	ret
 .LBB6_2:
 	sltiu	a1, a1, 6
-	negw	a1, a1
+	neg	a1, a1
 	andi	a1, a1, 3
 	addw	a0, a0, a1
 	ret

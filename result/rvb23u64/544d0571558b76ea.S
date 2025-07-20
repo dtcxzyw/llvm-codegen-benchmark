@@ -5,7 +5,7 @@ func000000000000000d:
 	li	a3, 1
 	max	a2, a2, a3
 	min	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 1
 	ret
 
@@ -16,7 +16,7 @@ func0000000000000009:
 	li	a3, 1
 	max	a2, a2, a3
 	min	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 1
 	ret
 

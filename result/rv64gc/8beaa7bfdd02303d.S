@@ -5,7 +5,7 @@ func0000000000000010:
 	sltu	a1, a2, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
-	negw	a1, a1
+	neg	a1, a1
 	and	a1, a1, a2
 	lui	a2, 67109
 	addi	a2, a2, -557

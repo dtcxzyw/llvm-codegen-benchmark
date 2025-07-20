@@ -42,7 +42,7 @@ func00000000000001d5:
 	and	a0, a0, a4
 	mul	a0, a0, a1
 	srli	a0, a0, 56
-	subw	a1, a3, a7
+	sub	a1, a3, a7
 	addw	a0, a0, a1
 	ret
 

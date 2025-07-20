@@ -4,7 +4,7 @@ func000000000000000a:
 	bltu	a1, a2, .LBB0_2
 	li	a1, 24
 .LBB0_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 10
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000000:
 	bltu	a1, a2, .LBB1_2
 	li	a1, 624
 .LBB1_2:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
 

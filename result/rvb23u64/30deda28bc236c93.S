@@ -1,6 +1,6 @@
 func0000000000000000:
 	minu	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	add.uw	a0, a1, a0
 	ret
 

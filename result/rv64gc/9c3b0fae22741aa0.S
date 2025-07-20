@@ -10,7 +10,7 @@ func0000000000000346:
 func00000000000003f8:
 	slli	a2, a1, 2
 	slli	a1, a1, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 2

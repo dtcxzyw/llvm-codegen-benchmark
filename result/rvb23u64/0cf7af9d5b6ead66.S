@@ -45,7 +45,7 @@ func00000000000000fd:
 	mul	a1, a1, a2
 	slli	a2, a0, 2
 	slli	a0, a0, 5
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	lui	a2, 1047932
 	add	a0, a0, a1
 	addi	a1, a2, -1692
@@ -55,7 +55,7 @@ func00000000000000fd:
 func00000000000000ff:
 	sh1add	a2, a1, a1
 	slli	a1, a1, 5
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, 150
 	mul	a0, a0, a2
 	add	a0, a0, a1
@@ -143,7 +143,7 @@ func00000000000000dd:
 	mul	a1, a1, a2
 	slli	a2, a0, 2
 	slli	a0, a0, 5
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	lui	a2, 7
 	add	a0, a0, a1
 	addi	a1, a2, 1708

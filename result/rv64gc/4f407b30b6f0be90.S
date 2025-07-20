@@ -5,7 +5,7 @@ func0000000000000001:
 	li	a2, 17
 .LBB0_2:
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 15
 	seqz	a0, a0
 	ret
@@ -32,7 +32,7 @@ func00000000000000a1:
 	li	a2, 17
 .LBB2_2:
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	andi	a0, a0, 15
 	seqz	a0, a0
 	ret

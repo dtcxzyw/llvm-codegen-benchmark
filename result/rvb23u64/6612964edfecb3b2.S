@@ -1,5 +1,5 @@
 func000000000000000a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a0, a0, a1
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 30
@@ -8,7 +8,7 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	lui	a2, 335544
 	mulw	a0, a1, a0
 	addi	a1, a2, 1311
@@ -19,7 +19,7 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	mul	a0, a0, a1
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 24

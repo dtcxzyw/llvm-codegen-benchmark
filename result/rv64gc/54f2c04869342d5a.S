@@ -13,7 +13,7 @@ func0000000000000008:
 	srli	a1, a0, 25
 	srli	a0, a0, 43
 	sltiu	a0, a0, 5
-	negw	a0, a0
+	neg	a0, a0
 	and	a0, a0, a1
 	andi	a0, a0, 63
 	ret

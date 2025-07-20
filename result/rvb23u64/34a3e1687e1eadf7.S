@@ -59,7 +59,7 @@ func0000000000000141:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 1
-	negw	a2, a2
+	neg	a2, a2
 	ori	a2, a2, -3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

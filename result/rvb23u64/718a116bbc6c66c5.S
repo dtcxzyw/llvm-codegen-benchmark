@@ -1,6 +1,6 @@
 func0000000000000018:
 	andi	a0, a0, 1
-	negw	a1, a1
+	neg	a1, a1
 	li	a2, 10
 	sllw	a1, a2, a1
 	lui	a2, 10

@@ -1,6 +1,6 @@
 func0000000000000198:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 7
 	sltiu	a0, a0, 675
 	xori	a0, a0, 1
@@ -184,14 +184,14 @@ func0000000000000041:
 
 func0000000000000084:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 16
 	seqz	a0, a0
 	ret
 
 func00000000000001a4:
 	add	a1, a1, a2
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	srliw	a0, a1, 16
 	seqz	a0, a0
 	ret

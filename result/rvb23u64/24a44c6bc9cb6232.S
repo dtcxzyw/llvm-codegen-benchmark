@@ -8,7 +8,7 @@ func0000000000000005:
 func0000000000000000:
 	fcvt.w.d	a1, fa0, rtz
 	slli	a2, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 

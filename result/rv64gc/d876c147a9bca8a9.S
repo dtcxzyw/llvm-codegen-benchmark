@@ -8,7 +8,7 @@ func0000000000000025:
 	srai	a1, a1, 37
 	add	a1, a1, a2
 	srli	a2, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000005:
 	srai	a1, a1, 37
 	add	a1, a1, a2
 	srli	a2, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000000:
 	srai	a1, a1, 37
 	add	a1, a1, a2
 	srli	a2, a1, 2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 

@@ -2,7 +2,7 @@ func000000000000002f:
 	addi	a1, a1, -1
 	slli	a2, a0, 8
 	srliw	a1, a1, 1
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	addw	a0, a0, a1
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000020:
 	addi	a1, a1, -1
 	slli	a2, a0, 8
 	srliw	a1, a1, 1
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	addw	a0, a0, a1
 	ret
 

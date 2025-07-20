@@ -11,7 +11,7 @@ func000000000000000f:
 
 func0000000000000003:
 	slli	a2, a2, 8
-	negw	a2, a2
+	neg	a2, a2
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	or	a0, a0, a1

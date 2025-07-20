@@ -67,14 +67,14 @@ func0000000000000004:
 func0000000000000015:
 	zext.b	a1, a1
 	sh3add	a0, a0, a0
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -9
 	ret
 
 func0000000000000055:
 	zext.b	a1, a1
 	sh2add	a0, a0, a0
-	subw	a0, a1, a0
+	sub	a0, a1, a0
 	addiw	a0, a0, -4
 	ret
 

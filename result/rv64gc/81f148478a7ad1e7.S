@@ -4,7 +4,7 @@ func0000000000000009:
 	sltu	a1, a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -26
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000008:
 	sltu	a1, a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, -12
 	ret
 

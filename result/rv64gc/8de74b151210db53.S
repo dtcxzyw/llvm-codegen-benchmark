@@ -6,7 +6,7 @@ func000000000000002c:
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a0, a2
+	sub	a3, a0, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 4

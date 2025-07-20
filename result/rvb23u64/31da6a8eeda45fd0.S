@@ -1,7 +1,7 @@
 func0000000000000006:
 	zext.h	a0, a0
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 2913
 	zext.w	a1, a1
 	addi	a0, a0, -1183

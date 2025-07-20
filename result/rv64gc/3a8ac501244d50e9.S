@@ -18,7 +18,7 @@ func0000000000000601:
 func000000000000002a:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

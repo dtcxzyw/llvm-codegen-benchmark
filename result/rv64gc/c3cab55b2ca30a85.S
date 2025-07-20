@@ -17,7 +17,7 @@ func000000000000000a:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a0, a2, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	ret
 .LBB1_2:
@@ -30,7 +30,7 @@ func0000000000000008:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a0, a2, a1
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 3
 	ret
 .LBB2_2:

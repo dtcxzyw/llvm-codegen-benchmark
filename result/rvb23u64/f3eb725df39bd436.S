@@ -1,5 +1,5 @@
 func0000000000000001:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 16
 	zext.h	a0, a0
 	addi	a1, a1, -1
@@ -8,7 +8,7 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	addi	a0, a0, -31
 	srli	a0, a0, 5
@@ -16,7 +16,7 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	zext.h	a0, a0
 	addi	a0, a0, -1
 	sltiu	a0, a0, 256

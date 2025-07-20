@@ -26,7 +26,7 @@ func0000000000000406:
 
 func0000000000000404:
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 2
 	slli	a0, a0, 2
 	seqz	a0, a0
@@ -34,7 +34,7 @@ func0000000000000404:
 
 func0000000000000004:
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 2
 	slli	a0, a0, 2
 	seqz	a0, a0
@@ -49,7 +49,7 @@ func0000000000000001:
 
 func0000000000000006:
 	add	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 31
 	ret
 

@@ -1,7 +1,7 @@
 func00000000000028a4:
 	sext.w	a2, a2
 	sltiu	a2, a2, 256
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 128
@@ -11,7 +11,7 @@ func00000000000028a4:
 func0000000000000884:
 	sext.w	a2, a2
 	sltiu	a2, a2, 10
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -7

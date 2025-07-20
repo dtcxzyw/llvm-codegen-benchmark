@@ -15,7 +15,7 @@ func0000000000000026:
 func0000000000000021:
 	zext.h	a0, a0
 	sext.b	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	zext.h	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -24,7 +24,7 @@ func0000000000000021:
 func0000000000000001:
 	zext.h	a0, a0
 	sext.b	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	zext.h	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -33,7 +33,7 @@ func0000000000000001:
 func000000000000000c:
 	zext.h	a0, a0
 	sext.b	a1, a1
-	negw	a1, a1
+	neg	a1, a1
 	zext.h	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

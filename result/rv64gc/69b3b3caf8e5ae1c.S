@@ -1,6 +1,6 @@
 func00000000000000a1:
 	srli	a1, a1, 56
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 3
 	addi	a0, a0, -3
 	seqz	a0, a0
@@ -8,14 +8,14 @@ func00000000000000a1:
 
 func00000000000000c1:
 	srli	a1, a1, 4
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 3
 	seqz	a0, a0
 	ret
 
 func00000000000000e1:
 	srli	a1, a1, 4
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	andi	a0, a0, 3
 	seqz	a0, a0
 	ret

@@ -2,7 +2,7 @@ func0000000000000005:
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, -32
-	negw	a1, a1
+	neg	a1, a1
 	subw	a0, a1, a0
 	ret
 
@@ -11,7 +11,7 @@ func000000000000000d:
 	li	a2, 308
 	srai	a0, a0, 63
 	andi	a0, a0, 305
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	subw	a0, a2, a0
 	ret
 
@@ -20,7 +20,7 @@ func0000000000000003:
 	li	a2, 64
 	srai	a0, a0, 63
 	andi	a0, a0, -4
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	subw	a0, a2, a0
 	ret
 
@@ -32,7 +32,7 @@ func0000000000000004:
 	and	a0, a0, a2
 	lui	a2, 976563
 	addi	a2, a2, -2048
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	subw	a0, a2, a0
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000007:
 	li	a2, 180
 	srai	a0, a0, 63
 	andi	a0, a0, -180
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	subw	a0, a2, a0
 	ret
 

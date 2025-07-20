@@ -7,7 +7,7 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1
 	sgtz	a1, a0
 	neg	a1, a1
@@ -15,7 +15,7 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 3
 	li	a1, 8
 	blt	a1, a0, .LBB2_2

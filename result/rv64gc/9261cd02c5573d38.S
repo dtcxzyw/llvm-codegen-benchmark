@@ -178,7 +178,7 @@ func000000000000002c:
 func0000000000000024:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 16
 	seqz	a0, a0
 	ret

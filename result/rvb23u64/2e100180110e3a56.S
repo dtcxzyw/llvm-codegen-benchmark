@@ -3,7 +3,7 @@ func0000000000000000:
 	sext.w	a1, a1
 	min	a1, a1, a2
 	slli	a2, a1, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	subw	a0, a2, a1
 	ret
 

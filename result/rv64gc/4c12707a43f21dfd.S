@@ -1,5 +1,5 @@
 func0000000000000015:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 349525
 	sraiw	a2, a0, 31
 	addi	a1, a1, 1365

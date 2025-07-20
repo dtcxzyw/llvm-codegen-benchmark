@@ -1,5 +1,5 @@
 func0000000000000103:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, -2
 	slli.uw	a1, a1, 3
 	sh1add	a1, a1, a1
@@ -13,7 +13,7 @@ func000000000000000c:
 	ret
 
 func0000000000000007:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 6
 	sh3add	a0, a1, a0
 	ret

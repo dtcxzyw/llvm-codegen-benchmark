@@ -25,7 +25,7 @@ func00000000000002a8:
 	ret
 
 func000000000000050a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	srliw	a0, a0, 31
 	slli	a0, a0, 31
 	seqz	a0, a0

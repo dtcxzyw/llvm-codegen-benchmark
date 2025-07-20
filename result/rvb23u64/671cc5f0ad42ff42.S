@@ -6,7 +6,7 @@ func000000000000001f:
 
 func0000000000000003:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sh3add.uw	a0, a1, a0
 	ret
 

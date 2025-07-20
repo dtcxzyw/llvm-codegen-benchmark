@@ -7,7 +7,7 @@ func0000000000000029:
 	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 32
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	srliw	a0, a0, 1
 	add	a0, a0, a2
 	srli	a0, a0, 8

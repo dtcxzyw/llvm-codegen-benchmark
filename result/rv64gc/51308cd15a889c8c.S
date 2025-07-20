@@ -13,7 +13,7 @@ func0000000000000021:
 
 func000000000000002c:
 	sgtz	a1, a0
-	negw	a1, a1
+	neg	a1, a1
 	and	a0, a0, a1
 	andi	a0, a0, 7
 	snez	a0, a0

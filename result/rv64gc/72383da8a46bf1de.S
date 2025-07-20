@@ -1,6 +1,6 @@
 func0000000000000361:
 	li	a2, 8
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.b	a0, a0
 	srlw	a0, a0, a2
 	seqz	a0, a0
@@ -8,7 +8,7 @@ func0000000000000361:
 
 func0000000000000161:
 	li	a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.b	a0, a0
 	srlw	a0, a0, a2
 	andi	a0, a0, 1
@@ -17,7 +17,7 @@ func0000000000000161:
 
 func0000000000000061:
 	li	a2, 7
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	zext.b	a0, a0
 	srlw	a0, a0, a2
 	andi	a0, a0, 1

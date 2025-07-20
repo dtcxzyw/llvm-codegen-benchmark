@@ -30,7 +30,7 @@ func000000000000003f:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 32
 	ret
 

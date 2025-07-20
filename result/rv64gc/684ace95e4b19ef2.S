@@ -33,7 +33,7 @@ func000000000000003f:
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
 	li	a1, 32
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 48
 	srli	a0, a0, 48
 	ret

@@ -12,7 +12,7 @@ func000000000000000c:
 
 func000000000000000f:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, -2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

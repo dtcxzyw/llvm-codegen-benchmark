@@ -1,6 +1,6 @@
 func0000000000000002:
 	slli	a3, a2, 4
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	add	a1, a1, a3
 	addiw	a1, a1, -1
 	sh2add	a0, a1, a0

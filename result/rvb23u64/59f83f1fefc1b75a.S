@@ -32,7 +32,7 @@ func0000000000000015:
 	xor	a1, a1, a2
 	sh1add	a2, a0, a0
 	slli	a0, a0, 7
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	xor	a0, a0, a1
 	sext.w	a0, a0
 	ret

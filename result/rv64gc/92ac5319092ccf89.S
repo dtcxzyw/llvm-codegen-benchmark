@@ -1,7 +1,7 @@
 func000000000000000d:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, -1
 	sllw	a1, a2, a1
 	not	a1, a1
@@ -32,7 +32,7 @@ func000000000000000f:
 func0000000000000003:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, 63
 	sllw	a1, a2, a1
 	not	a1, a1

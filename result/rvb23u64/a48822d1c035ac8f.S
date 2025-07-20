@@ -21,7 +21,7 @@ func0000000000000014:
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 10
 	and	a0, a0, a1

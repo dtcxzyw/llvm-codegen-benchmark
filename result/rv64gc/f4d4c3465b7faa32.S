@@ -1,5 +1,5 @@
 func0000000000000013:
-	negw	a2, a2
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 29
@@ -14,7 +14,7 @@ func0000000000000017:
 	ret
 
 func0000000000000003:
-	negw	a2, a2
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 28
@@ -23,7 +23,7 @@ func0000000000000003:
 
 func0000000000000037:
 	li	a3, 8
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	srlw	a1, a1, a3
 	slli	a1, a1, 1
 	add	a0, a0, a1
@@ -31,7 +31,7 @@ func0000000000000037:
 
 func0000000000000033:
 	li	a3, 8
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	srlw	a1, a1, a3
 	slli	a1, a1, 32
 	srli	a1, a1, 31
@@ -39,7 +39,7 @@ func0000000000000033:
 	ret
 
 func0000000000000010:
-	negw	a2, a2
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 30
@@ -47,7 +47,7 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
-	negw	a2, a2
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 29

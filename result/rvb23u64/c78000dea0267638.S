@@ -27,7 +27,7 @@ func00000000000000aa:
 	sh1add	a3, a1, a1
 	slli	a1, a1, 5
 	add	a0, a0, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret

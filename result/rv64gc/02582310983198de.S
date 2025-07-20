@@ -1,5 +1,5 @@
 func0000000000000041:
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, -1
 	srlw	a2, a3, a2
 	and	a0, a0, a1
@@ -10,7 +10,7 @@ func0000000000000041:
 
 func00000000000000c1:
 	li	a3, 16
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	lui	a2, 16
 	addi	a2, a2, -1
 	srlw	a2, a2, a3

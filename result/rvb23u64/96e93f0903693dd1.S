@@ -10,7 +10,7 @@ func000000000000000c:
 
 func000000000000000f:
 	andi	a2, a2, 1
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addi	a1, a1, -2
 	add.uw	a0, a1, a0
 	addi	a0, a0, 24

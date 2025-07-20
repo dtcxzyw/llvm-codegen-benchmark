@@ -4,7 +4,7 @@ func00000000000000a5:
 	mul	a1, a1, a2
 	li	a2, 190
 	sraiw	a1, a1, 19
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

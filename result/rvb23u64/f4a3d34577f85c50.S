@@ -9,7 +9,7 @@ func0000000000000005:
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	sext.h	a0, a0
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000001:
 	add	a1, a1, a2
 	li	a2, 243
 	mul	a1, a1, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sext.h	a0, a0
 	ret
 

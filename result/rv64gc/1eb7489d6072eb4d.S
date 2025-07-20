@@ -28,7 +28,7 @@ func0000000000000902:
 	ret
 
 func0000000000000b18:
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	xori	a1, a2, 22
 	xori	a0, a0, 9
 	or	a0, a0, a1

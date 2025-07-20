@@ -15,7 +15,7 @@ func000000000000007f:
 	ret
 
 func000000000000000f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 28
 	add	a0, a0, a1
@@ -23,7 +23,7 @@ func000000000000000f:
 	ret
 
 func000000000000004f:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	li	a2, 379
 	slli	a1, a1, 32
 	slli	a2, a2, 35

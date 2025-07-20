@@ -11,7 +11,7 @@ func00000000000000aa:
 	ret
 
 func0000000000000008:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, -4
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
@@ -19,7 +19,7 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	addiw	a1, a1, 1
 	slti	a1, a1, 0
 	xori	a1, a1, 1

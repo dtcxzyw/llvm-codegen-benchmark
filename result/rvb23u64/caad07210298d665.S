@@ -4,13 +4,13 @@ func0000000000000003:
 	addi	a2, a2, 133
 	mul	a1, a1, a2
 	srli	a1, a1, 32
-	subw	a2, a0, a1
+	sub	a2, a0, a1
 	srliw	a2, a2, 1
 	add	a1, a1, a2
 	srli	a1, a1, 4
 	slli	a2, a1, 5
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	bset	a0, zero, a0
 	ret
 
@@ -23,7 +23,7 @@ func0000000000000001:
 	srli	a1, a1, 34
 	sh1add	a1, a1, a1
 	slli	a1, a1, 1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	li	a1, -1
 	sllw	a0, a1, a0
 	ret

@@ -5,7 +5,7 @@ func000000000000002c:
 	addi	a3, a3, 133
 	mul	a2, a2, a3
 	srli	a2, a2, 32
-	subw	a3, a0, a2
+	sub	a3, a0, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
 	srli	a2, a2, 4

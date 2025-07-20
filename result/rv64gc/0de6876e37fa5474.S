@@ -5,7 +5,7 @@ func0000000000000005:
 
 func000000000000000d:
 	slli	a1, a0, 1
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 

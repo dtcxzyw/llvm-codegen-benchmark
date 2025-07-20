@@ -1,6 +1,6 @@
 func0000000000000060:
 	andi	a1, a1, 1
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, 10
 	sllw	a2, a3, a2
 	lui	a3, 10
@@ -13,7 +13,7 @@ func0000000000000060:
 
 func0000000000000063:
 	andi	a1, a1, 1
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, 10
 	sllw	a2, a3, a2
 	lui	a3, 10

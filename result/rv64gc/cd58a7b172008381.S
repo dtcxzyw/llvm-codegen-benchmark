@@ -22,7 +22,7 @@ func0000000000000006:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	flt.d	a0, fa0, fa5
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 20
 	ret
 
@@ -35,7 +35,7 @@ func0000000000000001:
 func0000000000000008:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 20
 	ret
 

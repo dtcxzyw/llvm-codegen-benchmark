@@ -1,7 +1,7 @@
 func000000000000002f:
 	sraiw	a0, a0, 13
 	li	a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 335544
 	zext.w	a1, a1
 	addi	a0, a0, 1311
@@ -16,7 +16,7 @@ func000000000000002f:
 func000000000000002d:
 	sraiw	a0, a0, 13
 	li	a1, 1
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	zext.w	a1, a1

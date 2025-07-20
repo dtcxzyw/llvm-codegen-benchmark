@@ -1,6 +1,6 @@
 func0000000000000014:
 	slli	a1, a0, 8
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	addi	a0, a1, 64
 	slli	a0, a0, 42
 	srli	a0, a0, 49

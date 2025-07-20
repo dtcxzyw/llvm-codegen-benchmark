@@ -1,11 +1,11 @@
 func0000000000000001:
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 7
 	seqz	a0, a0
 	ret
 
 func00000000000000a1:
-	negw	a0, a0
+	neg	a0, a0
 	zext.b	a0, a0
 	addi	a0, a0, -8
 	seqz	a0, a0
@@ -17,7 +17,7 @@ func0000000000000021:
 	ret
 
 func0000000000000014:
-	negw	a0, a0
+	neg	a0, a0
 	andi	a0, a0, 7
 	sltiu	a0, a0, 5
 	ret

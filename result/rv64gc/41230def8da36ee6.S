@@ -1,6 +1,6 @@
 func000000000000000d:
 	andi	a1, a1, 7
-	negw	a0, a0
+	neg	a0, a0
 	subw	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func0000000000000001:
 	slli	a1, a1, 35
 	li	a2, 63
 	srli	a1, a1, 35
-	subw	a0, a2, a0
+	sub	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 

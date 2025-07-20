@@ -9,7 +9,7 @@ func0000000000000026:
 	sraiw	a2, a2, 2
 	add	a2, a2, a3
 	slli	a3, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2
@@ -28,7 +28,7 @@ func0000000000000006:
 	sraiw	a2, a2, 2
 	add	a2, a2, a3
 	slli	a3, a2, 3
-	subw	a2, a2, a3
+	sub	a2, a2, a3
 	addw	a1, a1, a2
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2

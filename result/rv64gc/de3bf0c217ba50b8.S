@@ -1,12 +1,12 @@
 func0000000000000001:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sub	a0, a0, a1
 	ret
 
 func0000000000000000:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	andi	a1, a1, 15
 	sub	a0, a0, a1
 	ret
@@ -18,14 +18,14 @@ func0000000000000002:
 	ret
 
 func000000000000000d:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srliw	a1, a1, 1
 	slli	a1, a1, 1
 	sub	a0, a0, a1
 	ret
 
 func0000000000000004:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sub	a0, a0, a1

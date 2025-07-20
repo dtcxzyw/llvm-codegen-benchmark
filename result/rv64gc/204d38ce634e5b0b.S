@@ -13,7 +13,7 @@ func0000000000000000:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret
@@ -33,7 +33,7 @@ func0000000000000002:
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

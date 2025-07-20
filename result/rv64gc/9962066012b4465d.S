@@ -1,5 +1,5 @@
 func0000000000000021:
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 31
 	beqz	a2, .LBB0_2
 	mv	a0, a1
@@ -7,7 +7,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	negw	a2, a2
+	neg	a2, a2
 	andi	a2, a2, 511
 	beqz	a2, .LBB1_2
 	mv	a0, a1

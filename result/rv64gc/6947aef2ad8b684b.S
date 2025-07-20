@@ -1,7 +1,7 @@
 func0000000000000004:
 	sext.w	a1, a1
 	seqz	a1, a1
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
 
@@ -59,7 +59,7 @@ func0000000000000029:
 func0000000000000018:
 	sext.w	a1, a1
 	slti	a1, a1, 3
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	addiw	a0, a0, 1900
 	ret
 
@@ -151,7 +151,7 @@ func0000000000000013:
 func0000000000000019:
 	sext.w	a1, a1
 	slti	a1, a1, 1
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	ret

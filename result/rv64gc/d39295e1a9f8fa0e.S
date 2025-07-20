@@ -32,7 +32,7 @@ func0000000000000035:
 func0000000000000034:
 	sext.w	a3, a2
 	sgtz	a3, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	addi	a2, a2, 1
 	mul	a1, a2, a1
@@ -52,7 +52,7 @@ func0000000000000030:
 func0000000000000020:
 	sext.w	a3, a2
 	sgtz	a3, a3
-	negw	a3, a3
+	neg	a3, a3
 	and	a2, a2, a3
 	addi	a2, a2, 1
 	mul	a1, a2, a1

@@ -25,7 +25,7 @@ func0000000000000194:
 	li	a3, 16
 	slli	a1, a1, 1
 	or	a1, a1, a2
-	subw	a3, a3, a0
+	sub	a3, a3, a0
 	srlw	a0, a1, a3
 	sltiu	a0, a0, 512
 	ret

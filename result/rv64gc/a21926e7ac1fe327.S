@@ -1,5 +1,5 @@
 func0000000000000002:
-	negw	a0, a0
+	neg	a0, a0
 	fmul.s	fa5, fa0, fa1
 	fcvt.s.w	fa4, a0
 	fmv.w.x	fa3, zero

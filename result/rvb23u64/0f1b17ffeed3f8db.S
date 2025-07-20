@@ -1,7 +1,7 @@
 func00000000000000a4:
 	andi	a2, a2, 1
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	addiw	a0, a0, 2
 	sltiu	a0, a0, 13
 	ret

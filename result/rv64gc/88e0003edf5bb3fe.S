@@ -1,5 +1,5 @@
 func0000000000000704:
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, 1
 	sll	a2, a3, a2
 	add	a1, a1, a2
@@ -7,7 +7,7 @@ func0000000000000704:
 	ret
 
 func0000000000000709:
-	negw	a2, a2
+	neg	a2, a2
 	li	a3, 1
 	sll	a2, a3, a2
 	add	a1, a1, a2
@@ -17,7 +17,7 @@ func0000000000000709:
 
 func0000000000000104:
 	li	a3, -54
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	li	a2, 1
 	sll	a2, a2, a3
 	add	a1, a1, a2
@@ -26,7 +26,7 @@ func0000000000000104:
 
 func0000000000000109:
 	li	a3, -54
-	subw	a3, a3, a2
+	sub	a3, a3, a2
 	li	a2, 1
 	sll	a2, a2, a3
 	add	a1, a1, a2

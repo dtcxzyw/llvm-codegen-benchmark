@@ -11,7 +11,7 @@ func0000000000000008:
 	srliw	a0, a0, 2
 	slli	a0, a0, 1
 	slli	a1, a1, 3
-	subw	a1, a1, a0
+	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

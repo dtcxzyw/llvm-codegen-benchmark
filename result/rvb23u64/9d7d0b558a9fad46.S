@@ -19,7 +19,7 @@ func0000000000000000:
 	srli	a2, a2, 39
 	slli	a3, a2, 8
 	add	a1, a1, a2
-	subw	a1, a1, a3
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret

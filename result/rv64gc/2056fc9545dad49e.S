@@ -9,13 +9,13 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a0, a0, 31
 	ori	a0, a0, 1
 	ret
 
 func000000000000000a:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a0, a0, 31
 	ori	a0, a0, 1
 	ret

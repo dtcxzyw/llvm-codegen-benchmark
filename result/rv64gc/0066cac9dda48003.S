@@ -1,9 +1,9 @@
 func0000000000000000:
 	andi	a3, a1, -2
 	slli	a4, a2, 1
-	subw	a0, a0, a2
+	sub	a0, a0, a2
 	srliw	a1, a1, 1
-	subw	a0, a0, a4
+	sub	a0, a0, a4
 	add	a1, a1, a3
 	subw	a0, a0, a1
 	ret

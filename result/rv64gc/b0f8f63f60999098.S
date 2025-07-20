@@ -10,7 +10,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000e1:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	slli	a1, a1, 56
 	srli	a1, a1, 62
 	addi	a0, a0, 1

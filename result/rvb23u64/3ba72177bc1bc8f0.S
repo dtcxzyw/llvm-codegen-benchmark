@@ -12,7 +12,7 @@ func00000000000000a9:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	slt	a1, a2, a1
-	negw	a1, a1
+	neg	a1, a1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	ret

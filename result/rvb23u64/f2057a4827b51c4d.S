@@ -15,7 +15,7 @@ func00000000000000a5:
 	ret
 
 func0000000000000065:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	sraiw	a1, a0, 31
 	andi	a1, a1, 7
 	add	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000065:
 	ret
 
 func0000000000000061:
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	lui	a1, 244
 	sraiw	a2, a0, 31
 	addi	a1, a1, 576

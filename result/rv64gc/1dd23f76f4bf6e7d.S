@@ -57,7 +57,7 @@ func00000000000000cc:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	slti	a2, a2, 18
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	xor	a0, a0, a1
@@ -221,7 +221,7 @@ func0000000000000087:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltiu	a2, a2, 8
-	negw	a2, a2
+	neg	a2, a2
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0
