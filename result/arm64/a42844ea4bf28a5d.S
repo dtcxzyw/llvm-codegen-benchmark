@@ -1,7 +1,6 @@
 func0000000000000021:
-	mov	w8, #15
-	movk	w8, #31744, lsl #16
-	tst	w0, w8
+	and	w8, w0, #0x7fffffff
+	tst	w8, #0xfc00000f
 	cset	w0, eq
 	ret
 

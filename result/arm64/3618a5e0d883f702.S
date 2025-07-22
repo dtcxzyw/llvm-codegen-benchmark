@@ -1,9 +1,8 @@
 func0000000000000082:
-	mov	w8, #768
 	tst	w2, #0xff
-	movk	w8, #14, lsl #16
+	and	w8, w1, #0xfff00
 	cset	w9, eq
-	tst	w1, w8
+	tst	w8, #0xfffe03ff
 	orr	w8, w0, w9
 	cset	w9, eq
 	orr	w8, w9, w8

@@ -8,10 +8,9 @@ func0000000000000001:
 
 func0000000000000041:
 	orr	x8, x1, x2
-	mov	x9, #4
 	orr	x8, x8, x0
-	movk	x9, #32, lsl #32
-	tst	x8, x9
+	and	x8, x8, #0x3ffffffffc
+	tst	x8, #0xffffffe000000007
 	cset	w0, eq
 	ret
 

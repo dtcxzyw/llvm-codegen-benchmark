@@ -76,9 +76,8 @@ func0000000000000604:
 	ret
 
 func0000000000000630:
-	mov	w8, #64
-	movk	w8, #32768, lsl #16
-	tst	w2, w8
+	and	w8, w2, #0xffffffc0
+	tst	w8, #0x8000007f
 	cset	w8, ne
 	cmn	w1, #1
 	cset	w9, ne

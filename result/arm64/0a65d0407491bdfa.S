@@ -76,8 +76,8 @@ func0000000000001b02:
 	ret
 
 func000000000000030c:
-	mov	w8, #-2049
-	tst	x1, x8
+	and	x8, x1, #0xffffffff
+	tst	x8, #0xfffffffffffff7ff
 	ccmp	w0, #1, #8, eq
 	cset	w0, lt
 	ret

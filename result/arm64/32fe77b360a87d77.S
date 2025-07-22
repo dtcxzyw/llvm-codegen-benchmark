@@ -24,10 +24,9 @@ func0000000000000021:
 
 func000000000000008c:
 	cmp	w1, #11
-	mov	w9, #65488
+	and	x9, x2, #0x1fff0
 	cset	w8, lo
-	movk	w9, #1, lsl #16
-	tst	x2, x9
+	tst	x9, #0xffffffffffffffdf
 	and	w8, w8, w0
 	csel	w0, wzr, w8, eq
 	ret

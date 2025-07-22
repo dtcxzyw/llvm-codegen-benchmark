@@ -20,9 +20,9 @@ func0000000000000084:
 
 func0000000000000082:
 	cmp	x2, #27
-	mov	w8, #1073758208
+	and	x8, x1, #0x7fffc000
 	cset	w9, eq
-	tst	x1, x8
+	tst	x8, #0xffffffffc0007fff
 	orr	w8, w0, w9
 	cset	w9, eq
 	orr	w8, w9, w8

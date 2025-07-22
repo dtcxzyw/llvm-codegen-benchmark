@@ -5,10 +5,9 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	mov	x9, #-65280
 	eor	x8, x1, x2
-	movk	x9, #0, lsl #16
-	tst	x8, x9
+	and	x8, x8, #0xffffffffffffff00
+	tst	x8, #0xffffffff000001ff
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

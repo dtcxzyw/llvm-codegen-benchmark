@@ -14,9 +14,8 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
-	mov	w8, #2048
-	movk	w8, #256, lsl #16
-	tst	w2, w8
+	and	w8, w2, #0x1fff800
+	tst	w8, #0xff000fff
 	ccmp	w1, #0, #4, eq
 	cset	w8, ne
 	and	w0, w8, w0

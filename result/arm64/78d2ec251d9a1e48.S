@@ -21,18 +21,16 @@ func0000000000000c21:
 	ret
 
 func0000000000000c74:
-	mov	w8, #32
-	movk	w8, #2, lsl #16
-	tst	w1, w8
+	and	w8, w1, #0x3ffe0
+	tst	w8, #0xfffe003f
 	cinc	w8, w0, ne
 	cmp	w8, #2
 	cset	w0, lo
 	ret
 
 func0000000000000c78:
-	mov	w8, #32
-	movk	w8, #2, lsl #16
-	tst	w1, w8
+	and	w8, w1, #0x3ffe0
+	tst	w8, #0xfffe003f
 	cinc	w8, w0, ne
 	cmp	w8, #1
 	cset	w0, hi

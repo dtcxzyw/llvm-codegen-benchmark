@@ -131,10 +131,9 @@ func0000000000000308:
 	ret
 
 func0000000000000330:
-	mov	w8, #12288
+	and	w8, w1, #0x3f000
 	and	w9, w0, #0xff
-	movk	w8, #3, lsl #16
-	tst	w1, w8
+	tst	w8, #0xffff3fff
 	ccmp	w9, #2, #2, eq
 	cset	w0, hi
 	ret

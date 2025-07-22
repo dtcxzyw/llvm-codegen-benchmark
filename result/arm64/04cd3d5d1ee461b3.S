@@ -4,8 +4,8 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	mov	w8, #-3
-	tst	x2, x8
+	and	x8, x2, #0xffffffff
+	tst	x8, #0xfffffffffffffffd
 	csel	w0, w0, w1, eq
 	ret
 

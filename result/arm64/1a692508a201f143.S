@@ -43,9 +43,8 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	mov	w8, #768
-	movk	w8, #14, lsl #16
-	tst	w2, w8
+	and	w8, w2, #0xfff00
+	tst	w8, #0xfffe03ff
 	ccmp	w1, #0, #4, ne
 	cset	w8, ne
 	and	w0, w8, w0

@@ -11,10 +11,9 @@ func000000000000098c:
 
 func0000000000000984:
 	mov	w8, #1
-	mov	w9, #65488
 	lsl	x8, x8, x1
-	movk	w9, #1, lsl #16
-	tst	x8, x9
+	and	x8, x8, #0x1fff0
+	tst	x8, #0xffffffffffffffdf
 	ccmp	w0, #11, #2, ne
 	cset	w0, lo
 	ret

@@ -30,10 +30,9 @@ func00000000000000e1:
 
 func0000000000000041:
 	mov	w8, #1
-	mov	w9, #49152
 	lsl	w8, w8, w0
-	movk	w9, #2048, lsl #16
-	tst	w8, w9
+	and	w8, w8, #0xfffc000
+	tst	w8, #0xf800ffff
 	cset	w0, eq
 	ret
 

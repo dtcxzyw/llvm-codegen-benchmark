@@ -7,9 +7,8 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	mov	w8, #255
-	movk	w8, #256, lsl #16
-	tst	w2, w8
+	and	w8, w2, #0x1ffffff
+	tst	w8, #0xff0000ff
 	csel	w8, w1, wzr, eq
 	cmp	w8, w0
 	cset	w0, eq

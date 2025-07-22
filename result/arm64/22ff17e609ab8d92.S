@@ -1,8 +1,7 @@
 func0000000000000424:
-	mov	w8, #16384
+	and	w8, w1, #0xfc000
 	sub	w9, w0, #91
-	movk	w8, #8, lsl #16
-	tst	w1, w8
+	tst	w8, #0xfff87fff
 	ccmn	w9, #26, #0, ne
 	cset	w0, lo
 	ret

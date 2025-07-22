@@ -6,13 +6,12 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	mov	w8, #1024
-	mov	w9, #64510
-	movk	w8, #16384, lsl #16
-	movk	w9, #57599, lsl #16
-	tst	w0, w8
-	csel	w8, w0, w1, eq
-	and	w8, w8, #0xfffffff
-	orr	w0, w8, w9
+	and	w9, w0, #0x7ffffc00
+	mov	w8, #64510
+	tst	w9, #0xc00007ff
+	movk	w8, #57599, lsl #16
+	csel	w9, w0, w1, eq
+	and	w9, w9, #0xfffffff
+	orr	w0, w9, w8
 	ret
 

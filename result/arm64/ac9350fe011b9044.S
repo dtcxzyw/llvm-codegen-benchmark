@@ -15,9 +15,9 @@ func0000000000000002:
 
 func000000000000000c:
 	mvn	w8, w2
-	mov	w9, #-1610612737
-	tst	x8, x9
 	orr	w9, w0, w1
+	and	x8, x8, #0xffffffff
+	tst	x8, #0xffffffff9fffffff
 	cset	w8, ne
 	and	w0, w8, w9
 	ret

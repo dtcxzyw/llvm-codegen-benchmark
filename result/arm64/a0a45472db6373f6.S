@@ -1,9 +1,8 @@
 func00000000000001e1:
 	orr	w8, w1, w2, lsl #16
-	mov	w9, #511
-	movk	w9, #255, lsl #16
 	orr	w8, w8, w0
-	tst	w8, w9
+	and	w8, w8, #0xffffff
+	tst	w8, #0xffff01ff
 	cset	w0, eq
 	ret
 

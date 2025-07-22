@@ -14,10 +14,9 @@ func0000000000000041:
 
 func0000000000000001:
 	tst	w0, #0x1
-	mov	w9, #2
 	csel	w8, w2, w1, ne
-	movk	w9, #32768, lsl #16
-	tst	w8, w9
+	and	w8, w8, #0xfffffffe
+	tst	w8, #0x80000003
 	cset	w0, eq
 	ret
 

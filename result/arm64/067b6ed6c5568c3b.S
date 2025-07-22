@@ -2,9 +2,8 @@ func00000000000001e1:
 	mov	w8, #1
 	sub	w9, w0, #97
 	lsl	x8, x8, x9
-	mov	w9, #65532
-	movk	w9, #639, lsl #16
-	tst	x8, x9
+	and	x8, x8, #0x3fffffc
+	tst	x8, #0xfffffffffe7fffff
 	cset	w0, eq
 	ret
 

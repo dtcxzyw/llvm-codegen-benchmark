@@ -70,9 +70,8 @@ func0000000000000628:
 	ret
 
 func0000000000000330:
-	mov	w8, #64
-	movk	w8, #32768, lsl #16
-	tst	w2, w8
+	and	w8, w2, #0xffffffc0
+	tst	w8, #0x8000007f
 	ccmp	w1, #0, #8, eq
 	cset	w8, lt
 	orr	w8, w8, w0

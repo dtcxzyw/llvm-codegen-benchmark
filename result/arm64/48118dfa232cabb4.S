@@ -4,9 +4,9 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	mov	w8, #-1610612737
-	mvn	w9, w0
-	tst	x9, x8
+	mvn	w8, w0
+	and	x8, x8, #0xffffffff
+	tst	x8, #0xffffffff9fffffff
 	csetm	w0, eq
 	ret
 

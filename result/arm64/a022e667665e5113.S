@@ -9,13 +9,13 @@ func0000000000000041:
 	ret
 
 func000000000000004c:
-	mov	w8, #536870911
-	mvn	w9, w1
-	cmp	x2, x8
-	mov	w8, #-1610612737
-	cset	w10, eq
-	tst	x9, x8
-	orr	w8, w0, w10
+	mvn	w8, w1
+	mov	w9, #536870911
+	cmp	x2, x9
+	and	x8, x8, #0xffffffff
+	cset	w9, eq
+	tst	x8, #0xffffffff9fffffff
+	orr	w8, w0, w9
 	cset	w9, ne
 	and	w0, w9, w8
 	ret
@@ -23,10 +23,10 @@ func000000000000004c:
 func000000000000030c:
 	mvn	w8, w1
 	cmp	x2, #0
-	mov	w9, #-1610612737
-	cset	w10, ne
-	tst	x8, x9
-	orr	w8, w10, w0
+	and	x8, x8, #0xffffffff
+	cset	w9, ne
+	tst	x8, #0xffffffff9fffffff
+	orr	w8, w9, w0
 	cset	w9, ne
 	and	w0, w9, w8
 	ret

@@ -8,11 +8,10 @@ func0000000000000302:
 
 func0000000000000058:
 	cmp	w2, #0
-	mov	w9, #16384
+	and	w9, w1, #0x3fc000
 	cset	w8, eq
-	movk	w9, #48, lsl #16
+	tst	w9, #0xfff07fff
 	and	w8, w8, w0
-	tst	w1, w9
 	csinc	w0, w8, wzr, eq
 	ret
 

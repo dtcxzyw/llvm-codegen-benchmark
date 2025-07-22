@@ -20,10 +20,9 @@ func0000000000000181:
 	ret
 
 func0000000000000038:
-	mov	x8, #1
-	movk	x8, #28672, lsl #48
-	tst	x1, x8
+	and	x9, x1, #0x7fffffffffffffff
 	mov	w8, #63
+	tst	x9, #0xf000000000000001
 	ccmp	w0, w8, #2, ne
 	cset	w0, hi
 	ret
