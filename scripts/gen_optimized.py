@@ -56,7 +56,7 @@ if __name__ == '__main__':
             work_list.append(os.path.join(bench_dir, file))
     
     print("total items: ", len(work_list))
-    cores = os.cpu_count()
+    cores = os.cpu_count() * 3 // 4
     print("threads: ", cores)
 
     pool = Pool(processes=cores)
