@@ -50,16 +50,18 @@ func000000000000001f:
 	.byte	127
 	.byte	127
 	.byte	127
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI1_1:
+	.zero	4,127
 func0000000000000013:
-	vpand	.LCPI1_0(%rip), %xmm0, %xmm0
+	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

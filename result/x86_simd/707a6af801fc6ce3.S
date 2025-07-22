@@ -4,33 +4,33 @@ func0000000000000001:
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$1237940039285380275, %rcx
 	imulq	%rcx
-	sarq	$26, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	vmovq	%rax, %xmm2
+	sarq	$26, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm2
 	vmovq	%xmm1, %rax
 	imulq	%rcx
-	sarq	$26, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	vmovq	%rax, %xmm1
+	sarq	$26, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rax
 	imulq	%rcx
-	sarq	$26, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	vmovq	%rax, %xmm2
+	sarq	$26, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm2
 	vmovq	%xmm0, %rax
 	imulq	%rcx
-	sarq	$26, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	vmovq	%rax, %xmm0
+	sarq	$26, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0

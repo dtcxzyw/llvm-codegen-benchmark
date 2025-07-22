@@ -5,8 +5,8 @@ func000000000000000c:
 	mul	a3, a3, a4
 	srli	a3, a3, 32
 	add	a3, a3, a2
-	sraiw	a3, a3, 5
 	srliw	a4, a3, 31
+	sraiw	a3, a3, 5
 	add	a3, a3, a4
 	sh1add	a3, a3, a3
 	sh2add	a3, a3, a3

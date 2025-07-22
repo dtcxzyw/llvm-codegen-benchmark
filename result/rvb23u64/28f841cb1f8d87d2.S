@@ -5,8 +5,8 @@ func0000000000000018:
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	add	a1, a1, a2
-	sraiw	a1, a1, 5
 	srliw	a2, a1, 31
+	sraiw	a1, a1, 5
 	addw	a1, a1, a2
 	mul	a3, a3, a1
 	srli	a3, a3, 32

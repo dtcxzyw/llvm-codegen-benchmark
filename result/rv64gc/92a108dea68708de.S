@@ -10,17 +10,18 @@ func0000000000000001:
 	addw	a1, a1, a2
 	srliw	a2, a1, 31
 	srli	a1, a1, 5
+	add	a4, a1, a2
 	addw	a1, a1, a2
-	mul	a2, a1, a3
-	srli	a2, a2, 32
-	addw	a2, a2, a1
-	srliw	a3, a2, 31
-	srli	a2, a2, 5
-	add	a2, a2, a3
-	slli	a3, a2, 6
-	slli	a2, a2, 2
-	sub	a2, a2, a3
-	addw	a1, a1, a2
+	mul	a1, a1, a3
+	srli	a1, a1, 32
+	addw	a1, a1, a4
+	srliw	a2, a1, 31
+	srli	a1, a1, 5
+	add	a1, a1, a2
+	slli	a2, a1, 6
+	slli	a1, a1, 2
+	sub	a1, a1, a2
+	addw	a1, a1, a4
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
