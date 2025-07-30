@@ -1,7 +1,6 @@
 func0000000000002904:
-	sub	w8, w2, w1
-	subs	w9, w1, w2
-	csel	w8, w9, w8, hi
+	subs	w8, w1, w2
+	cneg	w8, w8, ls
 	cmp	w8, w0
 	cset	w0, lo
 	ret

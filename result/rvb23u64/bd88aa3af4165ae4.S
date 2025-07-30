@@ -1,7 +1,5 @@
 func0000000000000001:
-	srli	a1, a0, 11
-	or	a0, a0, a1
-	andi	a0, a0, 2047
+	slli	a0, a0, 42
 	seqz	a0, a0
 	ret
 

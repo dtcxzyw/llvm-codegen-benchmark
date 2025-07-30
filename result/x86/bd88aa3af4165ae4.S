@@ -1,8 +1,5 @@
 func0000000000000001:
-	movl	%edi, %eax
-	shrl	$11, %eax
-	orl	%edi, %eax
-	testl	$2047, %eax
+	testl	$4194303, %edi
 	sete	%al
 	retq
 

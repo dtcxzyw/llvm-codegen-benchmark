@@ -1,6 +1,5 @@
 func0000000000000001:
-	orr	w8, w0, w0, lsr #11
-	tst	w8, #0x7ff
+	tst	w0, #0x3fffff
 	cset	w0, eq
 	ret
 
