@@ -31,8 +31,8 @@ func00000000000001b4:
 func00000000000001a6:
 	sarq	$48, %rsi
 	sarq	$48, %rdi
-	addq	%rsi, %rdi
-	cmpq	$-32768, %rdi
+	addl	%esi, %edi
+	cmpl	$-32768, %edi
 	setl	%al
 	retq
 

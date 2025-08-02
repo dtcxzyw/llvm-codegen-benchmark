@@ -1,8 +1,6 @@
 func0000000000000126:
 	subl	%edx, %esi
-	movslq	%esi, %rax
-	movslq	%edi, %rcx
-	cmpq	%rax, %rcx
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 

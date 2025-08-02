@@ -65,9 +65,9 @@ func0000000000000069:
 	retq
 
 func0000000000000026:
-	sarq	$32, %rsi
-	sarq	$32, %rdi
-	cmpq	%rsi, %rdi
+	shrq	$32, %rsi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 

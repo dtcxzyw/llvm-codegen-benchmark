@@ -1,16 +1,14 @@
 func0000000000000006:
 	addl	$3, %esi
-	movslq	%esi, %rax
 	andl	$127, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 
 func000000000000000a:
 	decl	%esi
-	movslq	%esi, %rax
 	andl	$127, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	setg	%al
 	retq
 
@@ -25,9 +23,8 @@ func0000000000000008:
 
 func0000000000000004:
 	incl	%esi
-	movslq	%esi, %rax
-	movzbl	%dil, %ecx
-	cmpq	%rax, %rcx
+	movzbl	%dil, %eax
+	cmpl	%esi, %eax
 	setb	%al
 	retq
 

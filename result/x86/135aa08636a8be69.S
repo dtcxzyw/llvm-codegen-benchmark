@@ -10,15 +10,15 @@ func0000000000000021:
 
 func0000000000000024:
 	movzwl	%di, %eax
-	addq	$-26, %rax
-	cmpq	$-20, %rax
+	addl	$-26, %eax
+	cmpl	$-20, %eax
 	setb	%al
 	retq
 
 func0000000000000038:
 	movzwl	%di, %eax
-	addq	$-9, %rax
-	cmpq	$-7, %rax
+	addl	$-9, %eax
+	cmpl	$-7, %eax
 	setb	%al
 	retq
 

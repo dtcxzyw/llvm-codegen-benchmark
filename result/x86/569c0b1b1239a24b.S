@@ -17,8 +17,8 @@ func0000000000000034:
 	retq
 
 func0000000000000014:
-	orq	$-4096, %rdi
-	cmpq	$-8, %rdi
+	orl	$-4096, %edi
+	cmpl	$-8, %edi
 	setb	%al
 	retq
 

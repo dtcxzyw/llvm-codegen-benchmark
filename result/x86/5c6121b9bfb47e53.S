@@ -68,9 +68,8 @@ func000000000000002a:
 
 func000000000000000a:
 	shrq	$16, %rsi
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	setg	%al
 	retq
 

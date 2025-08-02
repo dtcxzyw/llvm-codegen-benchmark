@@ -20,9 +20,8 @@ func0000000000000028:
 	retq
 
 func0000000000000021:
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 
@@ -90,9 +89,8 @@ func0000000000000006:
 	retq
 
 func0000000000000001:
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 

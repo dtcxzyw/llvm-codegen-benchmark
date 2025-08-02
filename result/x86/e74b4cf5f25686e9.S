@@ -1,7 +1,6 @@
 func0000000000000008:
 	movzwl	%si, %eax
-	movslq	%edi, %rcx
-	cmpq	%rax, %rcx
+	cmpl	%eax, %edi
 	seta	%al
 	retq
 

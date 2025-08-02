@@ -39,16 +39,16 @@ func00000000000001a1:
 func00000000000001aa:
 	sarq	$48, %rsi
 	sarq	$48, %rdi
-	subq	%rsi, %rdi
-	cmpq	$32768, %rdi
+	subl	%esi, %edi
+	cmpl	$32768, %edi
 	setge	%al
 	retq
 
 func00000000000001a6:
 	sarq	$48, %rsi
 	sarq	$48, %rdi
-	subq	%rsi, %rdi
-	cmpq	$-32768, %rdi
+	subl	%esi, %edi
+	cmpl	$-32768, %edi
 	setl	%al
 	retq
 

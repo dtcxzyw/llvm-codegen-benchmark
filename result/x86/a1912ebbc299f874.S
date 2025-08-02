@@ -1,8 +1,8 @@
 func0000000000000034:
 	movzbl	%sil, %eax
-	decq	%rax
+	decl	%eax
 	movzbl	%dil, %ecx
-	cmpq	%rcx, %rax
+	cmpl	%ecx, %eax
 	setb	%al
 	retq
 
@@ -16,17 +16,17 @@ func0000000000000074:
 
 func0000000000000024:
 	movzbl	%sil, %eax
-	decq	%rax
+	decl	%eax
 	movzbl	%dil, %ecx
-	cmpq	%rcx, %rax
+	cmpl	%ecx, %eax
 	setb	%al
 	retq
 
 func0000000000000021:
 	movzbl	%sil, %eax
-	decq	%rax
+	decl	%eax
 	movzbl	%dil, %ecx
-	cmpq	%rcx, %rax
+	cmpl	%ecx, %eax
 	sete	%al
 	retq
 

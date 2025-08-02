@@ -1,16 +1,16 @@
 func00000000000001aa:
 	movswq	%si, %rax
 	sarq	$48, %rdi
-	addq	%rax, %rdi
-	cmpq	$32768, %rdi
+	addl	%edi, %eax
+	cmpl	$32768, %eax
 	setge	%al
 	retq
 
 func00000000000001a6:
 	movswq	%si, %rax
 	sarq	$48, %rdi
-	addq	%rax, %rdi
-	cmpq	$-32768, %rdi
+	addl	%edi, %eax
+	cmpl	$-32768, %eax
 	setl	%al
 	retq
 

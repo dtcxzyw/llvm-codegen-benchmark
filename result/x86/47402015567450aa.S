@@ -15,8 +15,8 @@ func0000000000000061:
 func0000000000000024:
 	shrl	$15, %edi
 	andl	$31, %edi
-	addq	$-2, %rdi
-	cmpq	$13, %rdi
+	addl	$-2, %edi
+	cmpl	$13, %edi
 	setb	%al
 	retq
 
@@ -28,8 +28,8 @@ func00000000000000a8:
 func0000000000000028:
 	shrq	$52, %rdi
 	andl	$2047, %edi
-	addq	$-1025, %rdi
-	cmpq	$-2, %rdi
+	addl	$-1025, %edi
+	cmpl	$-2, %edi
 	setb	%al
 	retq
 

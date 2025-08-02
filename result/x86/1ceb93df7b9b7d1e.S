@@ -1,6 +1,6 @@
 func0000000000000014:
-	orq	$-4096, %rsi
-	cmpq	$-8, %rsi
+	orl	$-4096, %esi
+	cmpl	$-8, %esi
 	setb	%al
 	andb	%dil, %al
 	retq

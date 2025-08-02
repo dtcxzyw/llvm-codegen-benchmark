@@ -13,8 +13,8 @@ func0000000000000021:
 func0000000000000034:
 	andl	$2047, %esi
 	andl	$2047, %edi
-	subq	%rsi, %rdi
-	cmpq	$63, %rdi
+	subl	%esi, %edi
+	cmpl	$63, %edi
 	setb	%al
 	retq
 

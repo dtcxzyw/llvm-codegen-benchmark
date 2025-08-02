@@ -16,9 +16,8 @@ func0000000000000066:
 
 func0000000000000028:
 	incl	%esi
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	seta	%al
 	retq
 

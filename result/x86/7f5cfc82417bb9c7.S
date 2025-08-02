@@ -32,9 +32,8 @@ func000000000000006a:
 
 func0000000000000066:
 	subl	%edx, %esi
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 

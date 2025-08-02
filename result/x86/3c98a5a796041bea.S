@@ -1,28 +1,24 @@
 func000000000000000a:
-	movslq	%esi, %rax
 	andl	$127, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	setg	%al
 	retq
 
 func0000000000000006:
-	movslq	%esi, %rax
 	andl	$127, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 
 func0000000000000008:
-	movslq	%esi, %rax
 	andl	$127, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	seta	%al
 	retq
 
 func0000000000000001:
-	movslq	%esi, %rax
 	andl	$15, %edi
-	cmpq	%rax, %rdi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 

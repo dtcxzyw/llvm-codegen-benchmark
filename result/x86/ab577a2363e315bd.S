@@ -1,14 +1,12 @@
 func0000000000000008:
-	movslq	%esi, %rax
-	movzwl	%di, %ecx
-	cmpq	%rax, %rcx
+	movzwl	%di, %eax
+	cmpl	%esi, %eax
 	seta	%al
 	retq
 
 func0000000000000004:
-	movslq	%esi, %rax
-	movzwl	%di, %ecx
-	cmpq	%rax, %rcx
+	movzwl	%di, %eax
+	cmpl	%esi, %eax
 	setb	%al
 	retq
 

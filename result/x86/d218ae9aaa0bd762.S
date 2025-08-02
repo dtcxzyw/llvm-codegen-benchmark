@@ -56,9 +56,8 @@ func0000000000000021:
 
 func0000000000000001:
 	addl	%edx, %esi
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
+	shrq	$32, %rdi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 

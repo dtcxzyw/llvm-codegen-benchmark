@@ -1,8 +1,8 @@
 func0000000000000026:
 	andl	$2047, %esi
-	decq	%rsi
+	decl	%esi
 	andl	$2047, %edi
-	cmpq	%rsi, %rdi
+	cmpl	%esi, %edi
 	setl	%al
 	retq
 

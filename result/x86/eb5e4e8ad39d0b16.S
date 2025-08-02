@@ -9,8 +9,8 @@ func0000000000000001:
 	andl	$1, %esi
 	addl	%esi, %esi
 	orl	%edi, %esi
-	orq	$-8, %rsi
-	cmpq	$-1, %rsi
+	orl	$-8, %esi
+	cmpl	$-1, %esi
 	sete	%al
 	retq
 

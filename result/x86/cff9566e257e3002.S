@@ -1,8 +1,8 @@
 func0000000000000024:
 	addl	$48, %edi
 	andl	$65528, %edi
-	addq	$-40, %rdi
-	cmpq	$40, %rdi
+	addl	$-40, %edi
+	cmpl	$40, %edi
 	setb	%al
 	retq
 
