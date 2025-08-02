@@ -1,8 +1,7 @@
 func000000000000050a:
-	cmn	w2, #1
-	mov	w8, #1
-	cneg	x8, x8, le
+	sbfx	x8, x2, #31, #1
 	tst	w1, #0x1
+	orr	x8, x8, #0x1
 	csel	x8, xzr, x8, ne
 	add	x8, x8, x0
 	lsr	x8, x8, #63

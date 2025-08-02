@@ -1,8 +1,7 @@
 func000000000000000a:
-	fmov	x9, d0
-	mov	w8, #1
-	cmn	x9, #1
-	cneg	w0, w8, le
+	fmov	x8, d0
+	asr	x8, x8, #63
+	orr	w0, w8, #0x1
 	ret
 
 func0000000000000008:

@@ -24,10 +24,9 @@ func0000000000000021:
 	ret
 
 func0000000000000141:
-	mov	w8, #1
-	cmn	w1, #1
-	cneg	x8, x8, le
+	sbfx	x8, x1, #31, #1
 	cmp	w0, #0
+	orr	x8, x8, #0x1
 	csel	x0, xzr, x8, eq
 	ret
 

@@ -7,10 +7,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	mov	w8, #1
-	cmn	x1, #1
-	cneg	w8, w8, le
+	asr	x8, x1, #63
 	tst	w0, #0x1
+	orr	w8, w8, #0x1
 	csel	w0, w8, wzr, ne
 	ret
 

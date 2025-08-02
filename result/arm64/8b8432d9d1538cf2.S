@@ -56,9 +56,9 @@ func0000000000000019:
 	ret
 
 func0000000000000029:
-	sub	x8, x0, #1
-	cmn	w1, #1
-	csinc	x0, x8, x0, le
+	sbfx	x8, x1, #31, #1
+	orr	x8, x8, #0x1
+	add	x0, x0, x8
 	ret
 
 func0000000000000053:

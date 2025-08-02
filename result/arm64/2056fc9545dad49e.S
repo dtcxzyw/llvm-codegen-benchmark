@@ -14,10 +14,9 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	sub	w9, w0, w1
-	mov	w8, #1
-	cmn	w9, #1
-	cneg	x0, x8, le
+	sub	w8, w0, w1
+	sbfx	x8, x8, #31, #1
+	orr	x0, x8, #0x1
 	ret
 
 func0000000000000008:
