@@ -43,9 +43,8 @@ func0000000000000008:
 	ret
 
 func0000000000000002:
-	mov	w8, #65531
-	movk	w8, #1, lsl #16
-	cmp	x8, x1, lsr #47
+	asr	x8, x1, #47
+	cmn	x8, #5
 	cset	w8, eq
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

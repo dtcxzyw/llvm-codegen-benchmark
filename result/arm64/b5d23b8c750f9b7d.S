@@ -1,7 +1,6 @@
 func0000000000000021:
-	mov	w8, #65524
-	movk	w8, #1, lsl #16
-	cmp	x8, x1, lsr #47
+	asr	x8, x1, #47
+	cmn	x8, #12
 	ccmp	w0, #0, #0, eq
 	cset	w0, eq
 	ret

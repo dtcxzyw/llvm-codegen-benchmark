@@ -35,11 +35,10 @@ func0000000000000042:
 
 func0000000000000202:
 	mov	x8, #-844424930131969
-	mov	w9, #65525
+	asr	x9, x2, #47
 	cmp	x1, x8
-	movk	w9, #1, lsl #16
 	cset	w8, hi
-	cmp	x9, x2, lsr #47
+	cmn	x9, #11
 	and	w8, w8, w0
 	csinc	w0, w8, wzr, ne
 	ret

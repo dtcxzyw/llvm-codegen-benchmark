@@ -11,9 +11,8 @@ func0000000000000210:
 	ret
 
 func0000000000000208:
-	mov	x8, #-3721
-	movk	x8, #2047, lsl #48
-	cmp	x8, x2, lsr #5
+	asr	x8, x2, #5
+	cmn	x8, #3721
 	cset	w8, eq
 	cmp	x0, #32
 	cset	w9, lo

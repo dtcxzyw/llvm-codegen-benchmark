@@ -36,10 +36,8 @@ func0000000000000038:
 	ret
 
 func0000000000000061:
-	srliw	a0, a0, 20
-	lui	a1, 1
-	addi	a1, a1, -2
-	xor	a0, a0, a1
+	sraiw	a0, a0, 20
+	addi	a0, a0, 2
 	seqz	a0, a0
 	ret
 

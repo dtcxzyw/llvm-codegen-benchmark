@@ -35,12 +35,11 @@ func0000000000000c28:
 	ret
 
 func0000000000000c68:
-	mov	w8, #65524
-	mov	w9, #-2
-	movk	w8, #1, lsl #16
-	cmp	x8, x1, lsr #47
-	cinc	x8, x0, ne
-	cmp	x8, x9
+	asr	x9, x1, #47
+	mov	w8, #-2
+	cmn	x9, #12
+	cinc	x9, x0, ne
+	cmp	x9, x8
 	cset	w0, hi
 	ret
 

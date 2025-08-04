@@ -7,10 +7,9 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	mov	w8, #65531
+	asr	x8, x1, #47
 	and	x9, x2, #0x7fffffffffff
-	movk	w8, #1, lsl #16
-	cmp	x8, x1, lsr #47
+	cmn	x8, #5
 	ccmp	x9, x0, #0, eq
 	cset	w0, eq
 	ret

@@ -37,15 +37,13 @@ func0000000000000c28:
 	ret
 
 func0000000000000c68:
-	srli	a1, a1, 47
-	lui	a2, 32
-	addi	a2, a2, -12
-	xor	a1, a1, a2
-	li	a2, -2
+	srai	a1, a1, 47
+	addi	a1, a1, 12
 	snez	a1, a1
 	add	a0, a0, a1
-	zext.w	a2, a2
-	sltu	a0, a2, a0
+	li	a1, -2
+	zext.w	a1, a1
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000c2a:
