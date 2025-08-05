@@ -41,20 +41,20 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	li	a1, -1
-	slli	a3, a0, 32
-	srli	a3, a3, 32
-	addi	a2, a3, -64
-	sll	a0, a1, a0
+	slli	a1, a0, 32
+	srli	a1, a1, 32
+	li	a3, -1
+	addi	a2, a1, -64
+	sll	a0, a3, a0
 	bltz	a2, .LBB2_2
-	sll	a1, a1, a3
+	sll	a1, a3, a1
 	srai	a2, a2, 63
 	and	a0, a0, a2
 	ret
 .LBB2_2:
-	not	a3, a3
-	srli	a1, a1, 1
-	srl	a1, a1, a3
+	not	a1, a1
+	srli	a3, a3, 1
+	srl	a1, a3, a1
 	or	a1, a1, a0
 	srai	a2, a2, 63
 	and	a0, a0, a2

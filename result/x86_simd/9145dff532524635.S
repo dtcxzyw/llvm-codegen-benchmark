@@ -22,9 +22,10 @@ func000000000000006d:
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 
+.LCPI3_0:
+	.long	1
 func0000000000000065:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

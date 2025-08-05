@@ -15,16 +15,14 @@ func0000000000000001:
 	.short	64513
 	.short	64513
 	.short	64513
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-.LCPI1_2:
-	.short	64513
+	.short	0
+	.short	0
+	.short	0
+	.short	0
 func0000000000000002:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
-	vpbroadcastw	.LCPI1_2(%rip), %xmm1
+	vmovq	.LCPI1_1(%rip), %xmm1
 	vpand	%xmm1, %xmm0, %xmm2
 	vpxor	%xmm1, %xmm0, %xmm0
 	vpsraw	$1, %xmm0, %xmm0
