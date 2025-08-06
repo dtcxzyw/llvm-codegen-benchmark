@@ -17,8 +17,8 @@ func00000000000000c1:
 	smull	x8, w0, w8
 	asr	x8, x8, #40
 	add	w8, w8, w8, lsr #31
-	msub	w9, w8, w9, w0
-	cmp	w9, #0
+	mul	w9, w8, w9
+	cmp	w0, w9
 	cinc	w0, w8, ne
 	ret
 

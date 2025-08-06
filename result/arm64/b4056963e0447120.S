@@ -41,8 +41,7 @@ func00000000000000a6:
 	ret
 
 func00000000000002a1:
-	sub	x8, x0, w1, uxtw
-	cmp	x8, #0
+	cmp	x0, w1, uxtw
 	cset	w0, eq
 	ret
 

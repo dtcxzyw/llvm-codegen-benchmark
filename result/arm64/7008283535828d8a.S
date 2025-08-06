@@ -1,14 +1,12 @@
 func0000000000000005:
 	and	w8, w0, #0xffff
-	sub	w8, w8, w1, uxth
-	cmp	w8, #0
+	subs	w8, w8, w1, uxth
 	cneg	w0, w8, mi
 	ret
 
 func0000000000000007:
 	and	w8, w0, #0xffff
-	sub	w8, w8, w1, uxth
-	cmp	w8, #0
+	subs	w8, w8, w1, uxth
 	cneg	w0, w8, mi
 	ret
 

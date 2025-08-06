@@ -1,6 +1,5 @@
 func00000000000002b4:
-	sub	w8, w1, w2, uxtb
-	cmp	w8, #0
+	subs	w8, w1, w2, uxtb
 	cneg	w8, w8, mi
 	cmp	w0, #0
 	cneg	w9, w0, mi
@@ -9,8 +8,7 @@ func00000000000002b4:
 	ret
 
 func00000000000002b8:
-	sub	w8, w1, w2, uxtb
-	cmp	w8, #0
+	subs	w8, w1, w2, uxtb
 	cneg	w8, w8, mi
 	cmp	w0, #0
 	cneg	w9, w0, mi

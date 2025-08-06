@@ -27,22 +27,19 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #0, #4, ne
+	ccmp	w1, w2, #4, ne
 	cset	w0, eq
 	ret
 
 func00000000000000a1:
-	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #0, #4, ne
+	ccmp	w1, w2, #4, ne
 	cset	w0, eq
 	ret
 
 func00000000000004a1:
-	sub	w8, w1, w2
-	cmp	w8, #0
+	cmp	w1, w2
 	ccmp	w0, #0, #4, ne
 	cset	w0, eq
 	ret
