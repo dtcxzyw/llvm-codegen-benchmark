@@ -19,7 +19,8 @@ func0000000000000021:
 	ret
 
 func00000000000000ac:
-	cmn	w1, #1
+	mov	w8, #-1
+	cmp	x1, x8
 	cset	w8, ne
 	and	w0, w8, w0
 	ret

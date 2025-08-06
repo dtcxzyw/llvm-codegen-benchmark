@@ -304,7 +304,7 @@ func0000000000000094:
 	retq
 
 func0000000000000d8c:
-	cmpl	$30, %esi
+	cmpq	$30, %rsi
 	setne	%cl
 	cmpl	$28, %edi
 	setne	%al

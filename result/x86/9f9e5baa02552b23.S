@@ -9,7 +9,7 @@ func0000000000000000:
 
 func0000000000000009:
 	leal	3(%rsi), %eax
-	testl	%esi, %esi
+	testq	%rsi, %rsi
 	cmovnsl	%esi, %eax
 	sarl	$2, %eax
 	addl	%edi, %eax

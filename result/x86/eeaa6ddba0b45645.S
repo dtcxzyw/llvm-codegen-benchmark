@@ -49,9 +49,10 @@ func00000000000000a1:
 	retq
 
 func00000000000004a1:
-	testl	%edi, %edi
+	movl	$4294967276, %eax
+	cmpq	%rax, %rsi
 	sete	%cl
-	cmpl	$-20, %esi
+	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq

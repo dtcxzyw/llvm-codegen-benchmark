@@ -12,7 +12,7 @@ func0000000000000001:
 func0000000000000005:
 	movq	%rdi, %rax
 	leal	3(%rdi), %ecx
-	testl	%eax, %eax
+	testq	%rdi, %rdi
 	cmovnsl	%eax, %ecx
 	andl	$252, %ecx
 	subl	%ecx, %eax

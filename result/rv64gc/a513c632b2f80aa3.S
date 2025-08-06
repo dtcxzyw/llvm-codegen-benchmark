@@ -22,7 +22,6 @@ func0000000000000001:
 	ret
 
 func0000000000000101:
-	zext.b	a0, a0
 	addi	a0, a0, -5
 	seqz	a0, a0
 	ret
@@ -41,7 +40,6 @@ func000000000000000a:
 	ret
 
 func00000000000001a1:
-	zext.b	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret

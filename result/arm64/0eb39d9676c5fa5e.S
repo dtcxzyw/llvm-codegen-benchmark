@@ -49,17 +49,17 @@ func0000000000000018:
 	ret
 
 func0000000000000074:
-	cmp	w0, #28
+	cmp	x0, #28
 	cset	w0, lo
 	ret
 
 func000000000000006c:
-	cmp	w0, #30
+	cmp	x0, #30
 	cset	w0, ne
 	ret
 
 func0000000000000041:
-	cmp	w0, #1
+	cmp	x0, #1
 	cset	w0, eq
 	ret
 

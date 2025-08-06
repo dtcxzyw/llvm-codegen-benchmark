@@ -1,6 +1,6 @@
 func0000000000000025:
 	leal	3(%rdx), %eax
-	testl	%edx, %edx
+	testq	%rdx, %rdx
 	cmovnsl	%edx, %eax
 	sarl	$2, %eax
 	addl	%edi, %eax

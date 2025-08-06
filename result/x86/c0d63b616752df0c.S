@@ -80,7 +80,7 @@ func0000000000000008:
 	retq
 
 func00000000000001e1:
-	cmpb	$1, %dil
+	cmpl	$1, %edi
 	sete	%al
 	retq
 

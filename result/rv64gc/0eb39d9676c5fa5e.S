@@ -54,18 +54,15 @@ func0000000000000018:
 	ret
 
 func0000000000000074:
-	sext.w	a0, a0
 	sltiu	a0, a0, 28
 	ret
 
 func000000000000006c:
-	sext.w	a0, a0
 	addi	a0, a0, -30
 	snez	a0, a0
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret

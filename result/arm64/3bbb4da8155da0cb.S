@@ -93,7 +93,7 @@ func0000000000000094:
 
 func0000000000000074:
 	lsr	x8, x0, #59
-	cmp	w8, #28
+	cmp	x8, #28
 	cset	w0, lo
 	ret
 

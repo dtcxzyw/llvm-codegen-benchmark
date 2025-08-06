@@ -236,7 +236,7 @@ func0000000000000094:
 	ret
 
 func0000000000000d8c:
-	cmp	w1, #30
+	cmp	x1, #30
 	ccmp	w0, #28, #4, ne
 	cset	w0, ne
 	ret

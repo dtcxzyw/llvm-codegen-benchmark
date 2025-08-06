@@ -22,7 +22,7 @@ func0000000000000001:
 	retq
 
 func0000000000000101:
-	cmpb	$5, %dil
+	cmpq	$5, %rdi
 	sete	%al
 	retq
 
@@ -38,7 +38,7 @@ func000000000000000a:
 	retq
 
 func00000000000001a1:
-	cmpb	$1, %dil
+	cmpq	$1, %rdi
 	sete	%al
 	retq
 

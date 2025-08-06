@@ -23,7 +23,7 @@ func0000000000000004:
 	retq
 
 func0000000000000101:
-	cmpw	$1, %di
+	cmpl	$1, %edi
 	sete	%al
 	retq
 
@@ -39,7 +39,7 @@ func0000000000000024:
 	retq
 
 func00000000000000a1:
-	cmpw	$11, %di
+	cmpl	$11, %edi
 	sete	%al
 	retq
 

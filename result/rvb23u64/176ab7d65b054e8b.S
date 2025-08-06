@@ -316,10 +316,9 @@ func0000000000000094:
 
 func0000000000000d8c:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	addi	a1, a1, -30
-	addi	a0, a0, -28
 	snez	a1, a1
+	addi	a0, a0, -28
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

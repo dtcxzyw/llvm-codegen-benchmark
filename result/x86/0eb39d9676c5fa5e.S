@@ -49,17 +49,17 @@ func0000000000000018:
 	retq
 
 func0000000000000074:
-	cmpl	$28, %edi
+	cmpq	$28, %rdi
 	setb	%al
 	retq
 
 func000000000000006c:
-	cmpl	$30, %edi
+	cmpq	$30, %rdi
 	setne	%al
 	retq
 
 func0000000000000041:
-	cmpl	$1, %edi
+	cmpq	$1, %rdi
 	sete	%al
 	retq
 

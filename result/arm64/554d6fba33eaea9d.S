@@ -26,8 +26,7 @@ func0000000000000004:
 	ret
 
 func0000000000000101:
-	and	w8, w0, #0xffff
-	cmp	w8, #1
+	cmp	w0, #1
 	cset	w0, eq
 	ret
 
@@ -45,8 +44,7 @@ func0000000000000024:
 	ret
 
 func00000000000000a1:
-	and	w8, w0, #0xffff
-	cmp	w8, #11
+	cmp	w0, #11
 	cset	w0, eq
 	ret
 

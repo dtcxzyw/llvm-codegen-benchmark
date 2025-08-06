@@ -33,12 +33,13 @@ func0000000000000001:
 	retq
 
 func00000000000000a1:
-	cmpl	$-1, %edi
+	movl	$4294967295, %eax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
 func0000000000000101:
-	cmpl	$1, %edi
+	cmpq	$1, %rdi
 	sete	%al
 	retq
 
@@ -89,7 +90,8 @@ func0000000000000084:
 	retq
 
 func00000000000000ac:
-	cmpl	$-1, %edi
+	movl	$4294967295, %eax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
 
@@ -106,7 +108,8 @@ func000000000000004a:
 	retq
 
 func00000000000001a1:
-	cmpl	$-1, %edi
+	movl	$4294967295, %eax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
@@ -129,7 +132,7 @@ func0000000000000028:
 	retq
 
 func00000000000001e1:
-	cmpl	$63, %edi
+	cmpq	$63, %rdi
 	sete	%al
 	retq
 
@@ -145,7 +148,8 @@ func0000000000000124:
 	retq
 
 func000000000000010c:
-	cmpl	$-1, %edi
+	movl	$4294967295, %eax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
 
@@ -184,7 +188,7 @@ func00000000000001a8:
 	retq
 
 func0000000000000121:
-	cmpl	$1, %edi
+	cmpq	$1, %rdi
 	sete	%al
 	retq
 

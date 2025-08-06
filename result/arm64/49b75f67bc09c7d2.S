@@ -1,6 +1,6 @@
 func000000000000002a:
 	add	w8, w2, #63
-	cmp	w2, #0
+	cmp	x2, #0
 	csel	w8, w8, w2, lt
 	asr	w8, w8, #6
 	add	x8, x1, w8, sxtw #3

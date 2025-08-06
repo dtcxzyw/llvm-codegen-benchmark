@@ -59,7 +59,7 @@ func0000000000000014:
 	ret
 
 func000000000000006c:
-	cmp	w1, #30
+	cmp	x1, #30
 	cset	w8, ne
 	and	w0, w8, w0
 	ret

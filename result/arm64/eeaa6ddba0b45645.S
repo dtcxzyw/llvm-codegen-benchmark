@@ -44,7 +44,8 @@ func00000000000000a1:
 	ret
 
 func00000000000004a1:
-	cmn	w1, #20
+	mov	w8, #-20
+	cmp	x1, x8
 	ccmp	w0, #0, #4, ne
 	cset	w0, eq
 	ret

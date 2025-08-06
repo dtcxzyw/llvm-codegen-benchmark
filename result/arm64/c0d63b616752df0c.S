@@ -90,8 +90,7 @@ func0000000000000008:
 	ret
 
 func00000000000001e1:
-	and	w8, w0, #0xff
-	cmp	w8, #1
+	cmp	w0, #1
 	cset	w0, eq
 	ret
 

@@ -19,7 +19,8 @@ func0000000000000021:
 	retq
 
 func00000000000000ac:
-	cmpl	$-1, %esi
+	movl	$4294967295, %eax
+	cmpq	%rax, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
