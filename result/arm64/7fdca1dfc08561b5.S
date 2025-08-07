@@ -4,9 +4,8 @@ func0000000000000005:
 	ret
 
 func0000000000000025:
-	mov	w8, #1
-	movk	w8, #32, lsl #16
-	orr	w8, w1, w8
+	orr	w8, w1, #0x1
+	orr	w8, w8, #0x200000
 	orr	x0, x8, x0, lsl #32
 	ret
 

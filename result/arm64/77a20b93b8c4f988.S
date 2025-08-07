@@ -16,11 +16,10 @@ func0000000000000000:
 
 func0000000000000003:
 	and	x8, x2, #0x8
-	mov	w9, #64
 	tst	w0, #0x1
 	orr	x8, x1, x8
-	movk	w9, #4, lsl #16
-	orr	x9, x8, x9
+	orr	x9, x8, #0x40
+	orr	x9, x9, #0x40000
 	csel	x0, x8, x9, ne
 	ret
 

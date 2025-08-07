@@ -12,11 +12,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	add	w9, w0, w1, lsl #21
-	mov	w8, #2
-	movk	w8, #32768, lsl #16
-	add	w9, w9, #512, lsl #12
-	orr	w0, w9, w8
+	add	w8, w0, w1, lsl #21
+	add	w8, w8, #512, lsl #12
+	orr	w8, w8, #0x2
+	orr	w0, w8, #0x80000000
 	ret
 
 func0000000000000001:

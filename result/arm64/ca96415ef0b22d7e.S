@@ -46,10 +46,9 @@ func000000000000000c:
 
 func0000000000000030:
 	ubfiz	w8, w1, #15, #8
-	mov	w9, #128
-	movk	w9, #49152, lsl #16
 	orr	w8, w8, w0, lsl #8
-	orr	w0, w8, w9
+	orr	w8, w8, #0x80
+	orr	w0, w8, #0xc0000000
 	ret
 
 func0000000000000034:

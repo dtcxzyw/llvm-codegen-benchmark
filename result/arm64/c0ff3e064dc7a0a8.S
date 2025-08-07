@@ -37,10 +37,9 @@ func000000000000005f:
 
 func0000000000000077:
 	orr	x8, x0, x2, lsl #40
-	mov	x9, #4278190080
-	movk	x9, #254, lsl #32
 	orr	x8, x8, x1, lsl #48
-	orr	x0, x8, x9
+	orr	x8, x8, #0xff000000
+	orr	x0, x8, #0xfe00000000
 	ret
 
 func0000000000000071:

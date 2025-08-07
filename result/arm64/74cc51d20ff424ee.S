@@ -8,16 +8,15 @@ func0000000000000007:
 	ret
 
 func0000000000000000:
-	mov	w8, #63490
-	mov	w11, #1024
+	orr	w8, w0, w1
+	mov	w9, #63490
 	tst	w2, #0x1
-	movk	w8, #8447, lsl #16
-	mov	w9, #2
-	orr	w10, w0, w1
-	movk	w11, #49152, lsl #16
-	csel	w8, w9, w8, ne
-	orr	w9, w10, w11
-	orr	w0, w9, w8
+	movk	w9, #8447, lsl #16
+	mov	w10, #2
+	orr	w8, w8, #0x400
+	csel	w9, w10, w9, ne
+	orr	w8, w8, #0xc0000000
+	orr	w0, w8, w9
 	ret
 
 func0000000000000006:

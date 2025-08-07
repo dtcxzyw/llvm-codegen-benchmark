@@ -17,10 +17,9 @@ func0000000000000003:
 
 func0000000000000000:
 	and	w8, w1, #0xfffefffe
-	mov	w9, #3
 	orr	w8, w8, w0, lsl #17
-	movk	w9, #1, lsl #16
-	eor	w0, w8, w9
+	eor	w8, w8, #0x3
+	eor	w0, w8, #0x10000
 	ret
 
 func0000000000000001:

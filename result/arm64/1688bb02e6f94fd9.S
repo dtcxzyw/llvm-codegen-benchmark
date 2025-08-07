@@ -42,19 +42,17 @@ func0000000000000017:
 	ret
 
 func000000000000001e:
-	mov	w10, #240
-	ubfiz	w8, w2, #16, #8
-	orr	w9, w1, w0
-	movk	w10, #256, lsl #16
-	orr	w9, w9, w10
-	orr	w0, w9, w8
+	orr	w8, w1, w0
+	ubfiz	w9, w2, #16, #8
+	orr	w8, w8, #0xf0
+	orr	w8, w8, #0x1000000
+	orr	w0, w8, w9
 	ret
 
 func0000000000000016:
-	mov	w9, #240
 	orr	w8, w1, w2, lsl #24
-	movk	w9, #256, lsl #16
-	orr	w9, w0, w9
+	orr	w9, w0, #0xf0
+	orr	w9, w9, #0x1000000
 	orr	w0, w8, w9
 	ret
 

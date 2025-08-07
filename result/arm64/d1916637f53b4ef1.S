@@ -1,8 +1,7 @@
 func0000000000000003:
 	ubfiz	w8, w0, #3, #8
-	mov	w9, #2040
-	movk	w9, #32768, lsl #16
-	eor	w0, w8, w9
+	eor	w8, w8, #0x7f8
+	eor	w0, w8, #0x80000000
 	ret
 
 func0000000000000006:

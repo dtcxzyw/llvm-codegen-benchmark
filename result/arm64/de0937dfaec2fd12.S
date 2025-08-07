@@ -11,10 +11,9 @@ func000000000000001d:
 
 func000000000000001f:
 	mov	w8, w1
-	mov	x9, #16777216
 	orr	x8, x0, x8, lsl #16
-	movk	x9, #128, lsl #32
-	orr	x0, x8, x9
+	orr	x8, x8, #0x1000000
+	orr	x0, x8, #0x8000000000
 	ret
 
 func000000000000000b:

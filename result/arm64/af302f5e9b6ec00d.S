@@ -5,10 +5,9 @@ func0000000000000007:
 	ret
 
 func0000000000000000:
-	mov	w8, #512
+	orr	w8, w2, #0x200
 	tst	w0, #0x1
-	movk	w8, #32, lsl #16
-	orr	w8, w2, w8
+	orr	w8, w8, #0x200000
 	csel	w0, w8, w1, ne
 	ret
 

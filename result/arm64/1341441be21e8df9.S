@@ -30,10 +30,9 @@ func0000000000000002:
 	tst	w1, #0x1
 	orr	w9, w8, #0x10
 	csel	w8, w8, w9, ne
-	mov	w9, #256
 	tst	w0, #0x1
-	movk	w9, #16384, lsl #16
-	orr	w9, w8, w9
+	orr	w9, w8, #0x100
+	orr	w9, w9, #0x40000000
 	csel	w0, w8, w9, ne
 	ret
 

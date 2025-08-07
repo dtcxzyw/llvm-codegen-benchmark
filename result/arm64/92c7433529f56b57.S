@@ -16,9 +16,8 @@ func000000000000000c:
 	and	w8, w2, #0xffff
 	orr	w9, w1, w0
 	orr	w8, w9, w8
-	mov	w9, #4096
-	movk	w9, #16, lsl #16
-	orr	w0, w8, w9
+	orr	w8, w8, #0x1000
+	orr	w0, w8, #0x100000
 	ret
 
 func0000000000000007:

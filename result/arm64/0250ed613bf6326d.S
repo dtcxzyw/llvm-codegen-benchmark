@@ -15,11 +15,10 @@ func0000000000000001:
 	ret
 
 func0000000000000012:
-	add	w9, w0, w1, lsl #21
-	mov	w8, #64536
-	movk	w8, #255, lsl #16
-	sub	w9, w9, #2048, lsl #12
-	orr	w0, w9, w8
+	add	w8, w0, w1, lsl #21
+	sub	w8, w8, #2048, lsl #12
+	orr	w8, w8, #0x18
+	orr	w0, w8, #0xfffc00
 	ret
 
 func0000000000000010:

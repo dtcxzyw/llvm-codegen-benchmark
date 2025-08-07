@@ -89,12 +89,11 @@ func0000000000000023:
 	ret
 
 func0000000000000012:
-	mov	w9, #32768
 	mov	w8, #32
 	cmp	w1, #1501
-	movk	w9, #515, lsl #16
+	orr	w9, w0, #0x38000
 	csel	w8, wzr, w8, lo
-	orr	w9, w0, w9
+	orr	w9, w9, #0x2000000
 	orr	w0, w9, w8
 	ret
 

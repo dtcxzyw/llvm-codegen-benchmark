@@ -16,11 +16,10 @@ func0000000000000007:
 
 func0000000000000000:
 	lsr	w8, w2, #10
-	mov	w10, #1024
 	orr	w9, w1, w0
-	movk	w10, #49152, lsl #16
+	orr	w9, w9, #0x400
 	and	w8, w8, #0x3fc
-	orr	w9, w9, w10
+	orr	w9, w9, #0xc0000000
 	orr	w0, w8, w9
 	ret
 

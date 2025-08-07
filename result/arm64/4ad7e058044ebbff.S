@@ -10,13 +10,12 @@ func0000000000000003:
 func0000000000000002:
 	mov	w8, #64
 	cmp	w2, #0
-	mov	w9, #256
 	movk	w8, #32768, lsl #16
-	movk	w9, #16384, lsl #16
 	csel	w8, wzr, w8, eq
 	tst	w0, #0x1
 	csel	w8, w8, w1, ne
-	orr	w0, w8, w9
+	orr	w8, w8, #0x100
+	orr	w0, w8, #0x40000000
 	ret
 
 func0000000000000009:

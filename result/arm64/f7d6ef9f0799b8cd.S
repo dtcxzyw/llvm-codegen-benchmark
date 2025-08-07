@@ -18,9 +18,8 @@ func0000000000000000:
 	orr	w8, w8, w0
 	csel	w9, w10, w9, ne
 	orr	w8, w8, w9
-	mov	w9, #1024
-	movk	w9, #49152, lsl #16
-	orr	w0, w8, w9
+	orr	w8, w8, #0x400
+	orr	w0, w8, #0xc0000000
 	ret
 
 func0000000000000006:

@@ -9,11 +9,10 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	lsl	x9, x0, #19
-	mov	x8, #12
-	movk	x8, #8, lsl #48
-	and	x9, x9, #0xffffffffffc7ffff
-	orr	x0, x9, x8
+	lsl	x8, x0, #19
+	and	x8, x8, #0xffffffffffc7ffff
+	orr	x8, x8, #0xc
+	orr	x0, x8, #0x8000000000000
 	ret
 
 func0000000000000003:

@@ -1,14 +1,13 @@
 func0000000000000008:
-	mov	w8, #63490
-	mov	w11, #1024
+	orr	w8, w0, w1
+	mov	w9, #63490
 	cmp	w2, #0
-	movk	w8, #8447, lsl #16
-	mov	w9, #2
-	orr	w10, w0, w1
-	movk	w11, #49152, lsl #16
-	csel	w8, w9, w8, eq
-	orr	w9, w10, w11
-	orr	w0, w9, w8
+	movk	w9, #8447, lsl #16
+	mov	w10, #2
+	orr	w8, w8, #0x400
+	csel	w9, w10, w9, eq
+	orr	w8, w8, #0xc0000000
+	orr	w0, w8, w9
 	ret
 
 func0000000000000020:
@@ -31,14 +30,13 @@ func000000000000000f:
 	ret
 
 func0000000000000026:
-	mov	w10, #32768
+	orr	w8, w0, w1
 	cmp	w2, #1501
-	mov	w8, #32
-	orr	w9, w0, w1
-	movk	w10, #515, lsl #16
-	csel	w8, wzr, w8, lo
-	orr	w9, w9, w10
-	orr	w0, w9, w8
+	mov	w9, #32
+	orr	w8, w8, #0x38000
+	csel	w9, wzr, w9, lo
+	orr	w8, w8, #0x2000000
+	orr	w0, w8, w9
 	ret
 
 func0000000000000027:

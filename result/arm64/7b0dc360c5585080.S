@@ -24,10 +24,9 @@ func0000000000000001:
 
 func0000000000000000:
 	lsl	w8, w0, #2
-	mov	w9, #3
-	movk	w9, #1, lsl #16
 	orr	w8, w8, w1, lsl #17
-	orr	w0, w8, w9
+	orr	w8, w8, #0x3
+	orr	w0, w8, #0x10000
 	ret
 
 func0000000000000005:
@@ -57,10 +56,9 @@ func000000000000000c:
 
 func0000000000000030:
 	lsl	w8, w0, #8
-	mov	w9, #128
-	movk	w9, #49152, lsl #16
 	orr	w8, w8, w1, lsl #15
-	orr	w0, w8, w9
+	orr	w8, w8, #0x80
+	orr	w0, w8, #0xc0000000
 	ret
 
 func0000000000000021:
@@ -71,10 +69,9 @@ func0000000000000021:
 
 func000000000000000b:
 	lsl	w8, w0, #28
-	mov	w9, #8192
-	movk	w9, #15, lsl #16
 	orr	w8, w8, w1, lsl #20
-	orr	w0, w8, w9
+	orr	w8, w8, #0x2000
+	orr	w0, w8, #0xf0000
 	ret
 
 func0000000000000032:

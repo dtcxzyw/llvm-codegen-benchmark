@@ -13,10 +13,9 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	mov	w8, #2047
-	orr	w9, w0, w1
-	movk	w8, #16384, lsl #16
-	and	w9, w9, #0xbfffffff
-	eor	w0, w9, w8
+	orr	w8, w0, w1
+	and	w8, w8, #0xbfffffff
+	eor	w8, w8, #0x7ff
+	eor	w0, w8, #0x40000000
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000007:
-	mov	w8, #512
-	and	w9, w1, #0x1f
-	movk	w8, #256, lsl #16
-	orr	w9, w0, w9
-	orr	w0, w9, w8
+	and	w8, w1, #0x1f
+	orr	w8, w0, w8
+	orr	w8, w8, #0x200
+	orr	w0, w8, #0x1000000
 	ret
 
 func0000000000000006:

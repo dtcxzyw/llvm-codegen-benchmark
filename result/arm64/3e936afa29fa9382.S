@@ -25,10 +25,9 @@ func000000000000001f:
 
 func000000000000003f:
 	orr	w8, w0, w1
-	mov	w9, #8192
 	orr	w8, w8, w2, lsl #16
-	movk	w9, #16384, lsl #16
-	orr	w0, w8, w9
+	orr	w8, w8, #0x2000
+	orr	w0, w8, #0x40000000
 	ret
 
 func000000000000003e:

@@ -24,10 +24,9 @@ func0000000000000021:
 
 func000000000000000b:
 	lsl	w8, w0, #28
-	mov	w9, #8192
-	movk	w9, #15, lsl #16
 	orr	w8, w8, w1, lsl #20
-	orr	w0, w8, w9
+	orr	w8, w8, #0x2000
+	orr	w0, w8, #0xf0000
 	ret
 
 func000000000000003b:

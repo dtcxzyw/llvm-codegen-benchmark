@@ -35,10 +35,9 @@ func0000000000000043:
 	ret
 
 func0000000000000003:
-	mov	w8, #64
+	orr	w8, w1, #0x40
 	cmp	w2, #0
-	movk	w8, #49152, lsl #16
-	orr	w8, w1, w8
+	orr	w8, w8, #0xc0000000
 	csel	w8, w1, w8, eq
 	tst	w0, #0x1
 	orr	w9, w8, #0x10

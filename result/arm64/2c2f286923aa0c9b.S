@@ -13,12 +13,11 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	mov	w8, #1
+	orr	w8, w1, #0x1
 	mov	w9, #15
 	orr	w10, w0, #0x1
-	movk	w8, #4096, lsl #16
+	orr	w8, w8, #0x10000000
 	bics	wzr, w9, w2
-	orr	w8, w1, w8
 	csel	w0, w10, w8, eq
 	ret
 

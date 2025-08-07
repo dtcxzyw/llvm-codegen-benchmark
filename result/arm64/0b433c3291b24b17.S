@@ -61,10 +61,9 @@ func0000000000000077:
 
 func0000000000000076:
 	lsl	w8, w1, #24
-	mov	w9, #240
-	movk	w9, #256, lsl #16
+	orr	w9, w0, #0xf0
+	orr	w9, w9, #0x1000000
 	orr	w8, w8, w2, lsl #16
-	orr	w9, w0, w9
 	orr	w0, w8, w9
 	ret
 

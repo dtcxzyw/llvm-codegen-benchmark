@@ -13,10 +13,9 @@ func000000000000001f:
 
 func000000000000003f:
 	and	w8, w0, #0xff
-	mov	w9, #512
 	bfi	w8, w1, #16, #8
-	movk	w9, #256, lsl #16
-	orr	w0, w8, w9
+	orr	w8, w8, #0x200
+	orr	w0, w8, #0x1000000
 	ret
 
 func000000000000003e:

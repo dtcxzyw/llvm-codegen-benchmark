@@ -9,9 +9,8 @@ func000000000000007f:
 	lsl	x8, x0, #32
 	mov	w9, w1
 	orr	x8, x8, x9, lsl #16
-	mov	x9, #16777216
-	movk	x9, #128, lsl #32
-	orr	x0, x8, x9
+	orr	x8, x8, #0x1000000
+	orr	x0, x8, #0x8000000000
 	ret
 
 func000000000000002f:

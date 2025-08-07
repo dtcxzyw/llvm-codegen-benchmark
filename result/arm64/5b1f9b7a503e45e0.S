@@ -13,11 +13,10 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	mov	w8, #4096
-	lsl	x9, x0, #3
+	lsl	x8, x0, #3
 	cmp	x1, #0
-	movk	w8, #8, lsl #16
-	orr	x8, x9, x8
-	csel	x0, x9, x8, eq
+	orr	x9, x8, #0x1000
+	orr	x9, x9, #0x80000
+	csel	x0, x8, x9, eq
 	ret
 

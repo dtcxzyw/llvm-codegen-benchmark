@@ -3,10 +3,9 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	mov	x8, #281470681743360
-	mov	w9, w0
-	movk	x8, #16, lsl #48
-	orr	x0, x9, x8
+	mov	w8, w0
+	orr	x8, x8, #0xffff00000000
+	orr	x0, x8, #0x10000000000000
 	ret
 
 func0000000000000000:

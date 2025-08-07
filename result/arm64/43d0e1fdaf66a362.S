@@ -23,9 +23,8 @@ func0000000000000002:
 	tst	w0, #0x1
 	orr	w9, w8, #0x10
 	csel	w8, w8, w9, ne
-	mov	w9, #256
-	movk	w9, #16384, lsl #16
-	orr	w0, w8, w9
+	orr	w8, w8, #0x100
+	orr	w0, w8, #0x40000000
 	ret
 
 func0000000000000001:

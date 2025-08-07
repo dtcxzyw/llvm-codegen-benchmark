@@ -48,12 +48,11 @@ func0000000000000017:
 	ret
 
 func0000000000000016:
-	mov	w10, #240
-	orr	w8, w0, w2, lsl #24
-	and	w9, w1, #0xff00
-	movk	w10, #256, lsl #16
-	orr	w9, w9, w10
-	orr	w0, w8, w9
+	and	w8, w1, #0xff00
+	orr	w9, w0, w2, lsl #24
+	orr	w8, w8, #0xf0
+	orr	w8, w8, #0x1000000
+	orr	w0, w9, w8
 	ret
 
 func000000000000001c:
