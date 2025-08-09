@@ -33,8 +33,7 @@ func0000000000000001:
 	ret
 
 func00000000000000a1:
-	mov	w8, #-1
-	cmp	x0, x8
+	cmn	x0, #1
 	cset	w0, eq
 	ret
 
@@ -90,8 +89,7 @@ func0000000000000084:
 	ret
 
 func00000000000000ac:
-	mov	w8, #-1
-	cmp	x0, x8
+	cmn	x0, #1
 	cset	w0, ne
 	ret
 
@@ -109,8 +107,7 @@ func000000000000004a:
 	ret
 
 func00000000000001a1:
-	mov	w8, #-1
-	cmp	x0, x8
+	cmn	x0, #1
 	cset	w0, eq
 	ret
 

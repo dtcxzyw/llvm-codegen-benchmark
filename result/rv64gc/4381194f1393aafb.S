@@ -31,9 +31,7 @@ func0000000000000001:
 	ret
 
 func00000000000000a1:
-	li	a1, -1
-	srli	a1, a1, 32
-	xor	a0, a0, a1
+	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
 
@@ -87,10 +85,7 @@ func0000000000000084:
 	ret
 
 func00000000000000ac:
-	li	a1, -1
-	srli	a1, a1, 32
-	xor	a0, a0, a1
-	snez	a0, a0
+	sltiu	a0, a0, -1
 	ret
 
 func0000000000000024:
@@ -107,9 +102,7 @@ func000000000000004a:
 	ret
 
 func00000000000001a1:
-	li	a1, -1
-	srli	a1, a1, 32
-	xor	a0, a0, a1
+	addi	a0, a0, 1
 	seqz	a0, a0
 	ret
 
