@@ -160,7 +160,7 @@ func000000000000020c:
 	cset	w9, lo
 	cmp	w8, #0
 	orr	w8, w1, w9
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
@@ -172,7 +172,7 @@ func0000000000000218:
 	cset	w9, lo
 	cmp	w8, #0
 	orr	w8, w0, w9
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

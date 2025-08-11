@@ -7,7 +7,7 @@ func0000000000000004:
 func0000000000000018:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	add	w0, w8, #1
 	ret
 
@@ -41,7 +41,7 @@ func0000000000000007:
 func000000000000001b:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	add	w0, w8, #4
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000013:
 func0000000000000019:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	sub	w0, w8, #1
 	ret
 

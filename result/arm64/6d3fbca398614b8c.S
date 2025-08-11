@@ -22,7 +22,7 @@ func0000000000000008:
 	mov	w8, #16383
 	add	x8, x9, x8
 	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	lsl	x8, x8, #18
 	and	x0, x8, #0xffffffff00000000
 	ret

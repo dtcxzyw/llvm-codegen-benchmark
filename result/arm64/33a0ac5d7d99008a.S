@@ -59,7 +59,7 @@ func0000000000000184:
 func0000000000000086:
 	sub	w8, w1, #3
 	cmp	x0, #0
-	ccmp	w8, #5, #2, lt
+	ccmp	w8, #5, #2, mi
 	cset	w0, lo
 	ret
 

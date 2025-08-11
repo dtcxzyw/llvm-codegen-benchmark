@@ -2,7 +2,7 @@ func000000000000084c:
 	cmp	w1, #5
 	ccmp	w1, #3, #4, ne
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000841:

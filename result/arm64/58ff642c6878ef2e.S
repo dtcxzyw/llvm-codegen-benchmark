@@ -11,7 +11,7 @@ func0000000000000146:
 	csel	w8, w1, w2, lt
 	cmp	w8, #0
 	mov	w8, #63
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, gt
 	ret
 

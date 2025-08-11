@@ -19,7 +19,7 @@ func0000000000000005:
 	add	x9, x0, #31
 	cmp	x0, #0
 	mov	x8, #-16777216
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	and	x9, x9, #0xffffffffffffffe0
 	add	x0, x9, x8
 	ret
@@ -28,7 +28,7 @@ func0000000000000004:
 	add	x9, x0, #127
 	cmp	x0, #0
 	mov	x8, #-16777216
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	and	x9, x9, #0xffffffffffffff80
 	add	x0, x9, x8
 	ret

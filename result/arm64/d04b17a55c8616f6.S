@@ -6,7 +6,7 @@ func0000000000000023:
 
 func0000000000000032:
 	cmp	w0, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	lsl	x0, x8, #32
 	ret
 

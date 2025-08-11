@@ -83,7 +83,7 @@ func000000000000000a:
 func0000000000000026:
 	lsl	w8, w1, #2
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000058:

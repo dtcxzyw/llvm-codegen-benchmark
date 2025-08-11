@@ -37,8 +37,8 @@ func000000000000018a:
 func00000000000000c6:
 	cmp	w1, #0
 	mov	x8, #9223372036854775807
-	ccmp	x0, #0, #0, lt
-	cinv	x0, x8, ge
+	ccmp	x0, #0, #0, mi
+	cinv	x0, x8, pl
 	ret
 
 func000000000000010c:

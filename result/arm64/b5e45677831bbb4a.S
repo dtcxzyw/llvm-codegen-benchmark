@@ -43,6 +43,6 @@ func000000000000004a:
 func0000000000000006:
 	lsr	x8, x2, #16
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

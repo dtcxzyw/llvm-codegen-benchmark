@@ -1,6 +1,6 @@
 func0000000000000306:
 	cmp	w2, #0
-	csel	w8, wzr, w0, lt
+	csel	w8, wzr, w0, mi
 	cmp	w8, w1
 	cset	w0, lt
 	ret
@@ -86,7 +86,7 @@ func0000000000000084:
 
 func0000000000000301:
 	cmp	w2, #0
-	csel	w8, wzr, w0, lt
+	csel	w8, wzr, w0, mi
 	cmp	w8, w1
 	cset	w0, eq
 	ret

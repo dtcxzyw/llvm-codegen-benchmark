@@ -12,13 +12,13 @@ func0000000000000041:
 
 func0000000000000046:
 	cmp	w1, #0
-	csel	x8, x2, xzr, lt
+	csel	x8, x2, xzr, mi
 	add	x0, x0, x8
 	ret
 
 func0000000000000006:
 	cmp	w1, #0
-	csel	x8, x2, xzr, lt
+	csel	x8, x2, xzr, mi
 	add	x0, x0, x8
 	ret
 

@@ -12,13 +12,13 @@ func0000000000000008:
 func0000000000000006:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x0, x0, x1, lt
+	csel	x0, x0, x1, mi
 	ret
 
 func000000000000000a:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x0, x1, x0, lt
+	csel	x0, x1, x0, mi
 	ret
 
 func0000000000000004:

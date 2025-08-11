@@ -30,7 +30,7 @@ func000000000000002b:
 
 func000000000000001b:
 	cmp	w1, #0
-	csel	x8, x0, xzr, lt
+	csel	x8, x0, xzr, mi
 	add	x0, x8, #8
 	ret
 

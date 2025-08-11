@@ -11,6 +11,6 @@ func00000000000000aa:
 	sxtb	w9, w1
 	sub	x8, x8, w1, uxtb
 	cmp	w9, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 

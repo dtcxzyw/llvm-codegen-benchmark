@@ -22,7 +22,7 @@ func0000000000001826:
 	cmp	w1, w2
 	csel	w8, wzr, w8, ge
 	cmp	w0, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000001c26:
@@ -31,7 +31,7 @@ func0000000000001c26:
 	cmp	w1, w2
 	csel	w8, wzr, w8, gt
 	cmp	w0, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000282a:

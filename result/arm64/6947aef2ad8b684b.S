@@ -180,7 +180,7 @@ func000000000000001b:
 	mov	w8, #112
 	cmp	w1, #0
 	mov	w9, #88
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w0, w8, w0
 	ret
 

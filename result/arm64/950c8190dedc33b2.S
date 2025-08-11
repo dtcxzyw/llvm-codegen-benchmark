@@ -25,6 +25,6 @@ func0000000000003186:
 	tst	w1, #0xff
 	ccmp	w2, #1, #0, eq
 	ccmp	w0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

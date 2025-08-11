@@ -4,7 +4,7 @@ func0000000000000546:
 	orr	w8, w1, w8
 	sxth	w8, w8
 	cmp	w9, #0
-	ccmp	w8, #0, #4, lt
+	ccmp	w8, #0, #4, mi
 	cset	w0, gt
 	ret
 

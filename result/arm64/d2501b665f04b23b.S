@@ -32,7 +32,7 @@ func0000000000000026:
 	cmp	x0, #0
 	mov	w9, #5
 	csel	w8, w8, wzr, eq
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000294:

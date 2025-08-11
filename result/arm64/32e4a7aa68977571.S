@@ -33,7 +33,7 @@ func00000000000000c1:
 func00000000000000c8:
 	mov	w8, #3
 	cmp	x1, #0
-	cinc	x8, x8, lt
+	cinc	x8, x8, mi
 	cmp	x8, x0
 	cset	w0, hi
 	ret

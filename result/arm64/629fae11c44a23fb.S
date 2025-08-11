@@ -45,7 +45,7 @@ func00000000000000cc:
 	and	w9, w1, #0x7f
 	cmp	w9, #40
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000081:

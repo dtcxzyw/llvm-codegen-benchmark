@@ -22,7 +22,7 @@ func000000000000000c:
 	sxtb	w9, w1
 	mov	w8, #2097152
 	cmp	w9, #0
-	cset	w9, lt
+	cset	w9, mi
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	csel	w0, w8, wzr, ne

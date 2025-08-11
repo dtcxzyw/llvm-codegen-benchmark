@@ -39,7 +39,7 @@ func0000000000000004:
 func0000000000000007:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x8, x0, x8, asr #2
 	add	x0, x8, #3
 	ret

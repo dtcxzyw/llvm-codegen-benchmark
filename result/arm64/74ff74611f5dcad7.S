@@ -17,7 +17,7 @@ func0000000000006084:
 	cmp	x1, #0
 	ccmp	x0, #0, #4, ne
 	ccmp	w2, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000c602:
@@ -63,6 +63,6 @@ func000000000000c20c:
 	cmp	x1, x8
 	ccmp	w2, #0, #0, hs
 	ccmp	x0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

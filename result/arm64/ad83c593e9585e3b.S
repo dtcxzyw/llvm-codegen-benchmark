@@ -37,7 +37,7 @@ func0000000000000081:
 
 func0000000000000546:
 	cmp	x0, #0
-	ccmp	x1, x2, #4, lt
+	ccmp	x1, x2, #4, mi
 	cset	w0, gt
 	ret
 
@@ -131,7 +131,7 @@ func0000000000000306:
 	sub	x8, x1, x2
 	cmp	x0, #0
 	mov	w9, #3000
-	ccmp	x8, x9, #0, lt
+	ccmp	x8, x9, #0, mi
 	cset	w0, hi
 	ret
 

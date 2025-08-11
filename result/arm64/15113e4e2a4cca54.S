@@ -3,7 +3,7 @@ func0000000000006046:
 	mov	w8, #255
 	ccmp	x2, x8, #0, ne
 	ccmp	w0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000844:

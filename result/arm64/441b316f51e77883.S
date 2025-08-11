@@ -11,7 +11,7 @@ func0000000000001d66:
 	cset	w8, le
 	cset	w9, ge
 	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func00000000000014e1:

@@ -109,8 +109,8 @@ func0000000000000078:
 	cmp	x8, #1023
 	cset	w8, lo
 	cmp	x9, #0
-	csel	w8, wzr, w8, ge
-	csel	w10, wzr, w10, ge
+	csel	w8, wzr, w8, pl
+	csel	w10, wzr, w10, pl
 	tst	x9, #0x7fffffffffffffff
 	csinc	w9, w10, wzr, ne
 	orr	w0, w9, w8
@@ -130,8 +130,8 @@ func00000000000003e1:
 	cset	w8, lo
 	cmp	x9, #0
 	mov	x9, #9218868437227405312
-	csel	w8, wzr, w8, ge
-	csel	w11, wzr, w11, ge
+	csel	w8, wzr, w8, pl
+	csel	w11, wzr, w11, pl
 	cmp	x10, x9
 	csinc	w9, w11, wzr, ne
 	csinc	w9, w9, wzr, le
@@ -152,8 +152,8 @@ func00000000000000f9:
 	cmp	x8, #1023
 	cset	w8, lo
 	cmp	x9, #0
-	csel	w8, wzr, w8, ge
-	csel	w10, wzr, w10, ge
+	csel	w8, wzr, w8, pl
+	csel	w10, wzr, w10, pl
 	ands	x9, x9, #0x7fffffffffffffff
 	csinc	w10, w10, wzr, ne
 	cmp	x9, x11
@@ -175,8 +175,8 @@ func00000000000003f9:
 	cmp	x8, #1023
 	cset	w8, lo
 	cmp	x9, #0
-	csel	w8, wzr, w8, ge
-	csel	w10, wzr, w10, ge
+	csel	w8, wzr, w8, pl
+	csel	w10, wzr, w10, pl
 	ands	x9, x9, #0x7fffffffffffffff
 	csinc	w10, w10, wzr, ne
 	cmp	x9, x11
@@ -199,8 +199,8 @@ func00000000000000e1:
 	cset	w8, lo
 	cmp	x9, #0
 	mov	x9, #9218868437227405312
-	csel	w8, wzr, w8, ge
-	csel	w11, wzr, w11, ge
+	csel	w8, wzr, w8, pl
+	csel	w11, wzr, w11, pl
 	cmp	x10, x9
 	csinc	w9, w11, wzr, ne
 	orr	w0, w9, w8
@@ -309,6 +309,6 @@ func00000000000000e4:
 	cset	w8, eq
 	cmp	x10, #1023
 	ccmp	x9, #0, #0, lo
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 

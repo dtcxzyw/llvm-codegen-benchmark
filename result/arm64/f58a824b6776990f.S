@@ -18,7 +18,7 @@ func00000000000000c6:
 	orr	w9, w0, w1
 	mov	w8, #1
 	cmp	w9, #0
-	cinc	w0, w8, lt
+	cinc	w0, w8, mi
 	ret
 
 func0000000000000028:

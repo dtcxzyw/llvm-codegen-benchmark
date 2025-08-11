@@ -1,6 +1,6 @@
 func0000000000000037:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	add	x0, x0, x8
 	ret
 
@@ -13,7 +13,7 @@ func000000000000000b:
 func0000000000000033:
 	cmp	w2, #0
 	mov	w8, #359
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	x0, x0, w8, uxtw #2
 	ret
 

@@ -52,7 +52,7 @@ func0000000000000086:
 	cmp	x9, #0
 	csel	x8, x8, xzr, eq
 	cmp	x0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func0000000000000108:

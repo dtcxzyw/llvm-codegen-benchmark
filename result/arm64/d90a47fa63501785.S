@@ -15,17 +15,16 @@ func0000000000000029:
 	lsl	w8, w8, #3
 	adds	w9, w8, #456
 	add	w8, w8, #967
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	add	w0, w0, w8, asr #9
 	ret
 
 func0000000000000021:
 	add	w8, w1, w1, lsl #2
 	lsl	w8, w8, #3
-	add	w9, w8, #496
+	adds	w9, w8, #496
 	add	w8, w8, #1007
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	add	w0, w0, w8, asr #9
 	ret
 
@@ -33,10 +32,9 @@ func0000000000000001:
 	add	w9, w1, w1, lsl #4
 	mov	w8, #-7937
 	lsl	w9, w9, #6
-	sub	w10, w9, #2, lsl #12
+	subs	w10, w9, #2, lsl #12
 	add	w8, w9, w8
-	cmp	w10, #0
-	csel	w8, w8, w10, lt
+	csel	w8, w8, w10, mi
 	add	w0, w0, w8, asr #8
 	ret
 
@@ -46,7 +44,7 @@ func0000000000000028:
 	mul	w8, w1, w8
 	adds	w9, w8, #3
 	add	w8, w8, #6
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	sub	w0, w0, w8, asr #2
 	ret
 

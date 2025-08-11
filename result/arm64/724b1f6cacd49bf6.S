@@ -29,7 +29,7 @@ func000000000000002c:
 func00000000000000cc:
 	sxth	w8, w1
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w0, #0xffff
 	cset	w9, ne
 	eor	w0, w9, w8

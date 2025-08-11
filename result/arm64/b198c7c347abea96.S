@@ -36,7 +36,7 @@ func0000000000000044:
 func0000000000000068:
 	fcmp	d0, #0.0
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000000a8:

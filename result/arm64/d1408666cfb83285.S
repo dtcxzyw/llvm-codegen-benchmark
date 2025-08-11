@@ -66,7 +66,7 @@ func0000000000001e86:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	w0, #0
-	ccmp	x9, x8, #2, lt
+	ccmp	x9, x8, #2, mi
 	cset	w0, lo
 	ret
 
@@ -106,7 +106,7 @@ func0000000000000d86:
 	mov	w8, w2
 	add	x9, x1, #1
 	cmp	w0, #0
-	ccmp	x9, x8, #4, lt
+	ccmp	x9, x8, #4, mi
 	cset	w0, ne
 	ret
 

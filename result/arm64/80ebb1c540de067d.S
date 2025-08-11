@@ -13,7 +13,7 @@ func000000000000000c:
 func0000000000000006:
 	mov	w8, #2
 	cmp	x0, #0
-	cinc	x0, x8, ge
+	cinc	x0, x8, pl
 	ret
 
 func000000000000000a:

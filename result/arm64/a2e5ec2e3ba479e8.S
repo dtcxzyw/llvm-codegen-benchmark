@@ -51,7 +51,7 @@ func0000000000000048:
 func000000000000090c:
 	mul	w8, w1, w2
 	cmp	w8, #0
-	ccmn	w0, #12, #0, ge
+	ccmn	w0, #12, #0, pl
 	cset	w0, lo
 	ret
 

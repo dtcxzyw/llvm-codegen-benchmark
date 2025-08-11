@@ -115,19 +115,17 @@ func00000000000000b1:
 	ret
 
 func0000000000000021:
-	sub	x8, x1, x2
+	subs	x8, x1, x2
 	add	x9, x8, #63
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	cmn	x0, x8, asr #6
 	cset	w0, eq
 	ret
 
 func0000000000000028:
-	sub	x8, x1, x2
+	subs	x8, x1, x2
 	add	x9, x8, #63
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x8, x0, x8, asr #6
 	tst	x8, #0xf000000000000000
 	cset	w0, ne

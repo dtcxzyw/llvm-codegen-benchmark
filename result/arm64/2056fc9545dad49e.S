@@ -7,10 +7,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	sub	w9, w0, w1
 	mov	x8, #-1
-	cmp	w9, #0
-	cneg	x0, x8, ge
+	cmp	w0, w1
+	cneg	x0, x8, pl
 	ret
 
 func000000000000000a:

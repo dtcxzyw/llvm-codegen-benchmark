@@ -1,8 +1,7 @@
 func00000000000000cc:
-	sub	w8, w1, w2
 	cmn	w0, #1
-	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	ccmp	w1, w2, #0, ne
+	cset	w0, mi
 	ret
 
 func000000000000054c:
@@ -33,7 +32,7 @@ func0000000000000484:
 
 func0000000000000546:
 	cmp	w0, #0
-	ccmp	w1, w2, #4, lt
+	ccmp	w1, w2, #4, mi
 	cset	w0, gt
 	ret
 
@@ -155,14 +154,14 @@ func0000000000000421:
 func0000000000000426:
 	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #31, #0, lt
+	ccmp	w8, #31, #0, mi
 	cset	w0, eq
 	ret
 
 func00000000000000c6:
 	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmn	w8, #1, #0, lt
+	ccmn	w8, #1, #0, mi
 	cset	w0, lt
 	ret
 

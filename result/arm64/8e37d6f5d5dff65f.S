@@ -10,7 +10,7 @@ func0000000000000003:
 func000000000000000d:
 	cmp	w2, #0
 	and	w9, w1, #0xffff0000
-	csel	w8, wzr, w0, lt
+	csel	w8, wzr, w0, mi
 	orr	w0, w8, w9
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000011:
 func000000000000000c:
 	cmp	w2, #0
 	and	w9, w1, #0x10000
-	csel	w8, wzr, w0, lt
+	csel	w8, wzr, w0, mi
 	orr	w0, w8, w9
 	ret
 

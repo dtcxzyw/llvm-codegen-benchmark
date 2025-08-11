@@ -118,7 +118,7 @@ func0000000000000086:
 	sxth	w8, w0
 	and	w9, w1, #0xff
 	cmp	w8, #0
-	ccmp	w9, #7, #2, lt
+	ccmp	w9, #7, #2, mi
 	cset	w0, lo
 	ret
 

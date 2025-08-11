@@ -102,7 +102,7 @@ func000000000000002a:
 
 func00000000000000c6:
 	cmp	x2, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	cmp	x8, x0
 	cset	w0, lt
 	ret

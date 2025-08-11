@@ -17,7 +17,7 @@ func0000000000000086:
 	mov	w8, #7
 	cmp	w0, #0
 	add	w9, w9, #9
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000001:

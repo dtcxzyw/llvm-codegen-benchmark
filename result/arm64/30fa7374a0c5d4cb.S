@@ -50,7 +50,7 @@ func000000000000054a:
 func00000000000004c6:
 	cmp	x1, x2
 	ccmp	x0, #0, #0, lt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000504:

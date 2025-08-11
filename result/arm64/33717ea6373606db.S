@@ -17,7 +17,7 @@ func0000000000000026:
 	cmp	w0, #0
 	cset	w8, eq
 	and	w8, w8, w1
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000028:

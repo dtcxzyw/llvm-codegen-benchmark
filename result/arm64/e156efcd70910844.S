@@ -1,6 +1,6 @@
 func000000000000000d:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	orr	x0, x8, #0x1
 	ret
 

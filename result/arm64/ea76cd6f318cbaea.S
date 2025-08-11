@@ -1,13 +1,13 @@
 func0000000000000046:
 	add	x8, x2, x2, lsl #2
 	cmp	w1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000026:
 	lsl	x8, x2, #16
 	cmp	w1, #0
-	csneg	x0, x0, x8, ge
+	csneg	x0, x0, x8, pl
 	ret
 
 func0000000000000001:

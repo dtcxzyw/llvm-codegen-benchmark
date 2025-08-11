@@ -55,11 +55,10 @@ func0000000000000044:
 	ret
 
 func0000000000000024:
-	sub	x8, x1, x2
+	subs	x8, x1, x2
 	asr	x10, x0, #2
 	add	x9, x8, #3
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	cmp	x10, x8, asr #2
 	cset	w0, lo
 	ret

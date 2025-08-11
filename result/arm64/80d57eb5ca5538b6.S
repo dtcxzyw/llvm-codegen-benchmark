@@ -7,6 +7,6 @@ func0000000000000021:
 func0000000000000026:
 	asr	x8, x1, #29
 	cmp	w0, #0
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 

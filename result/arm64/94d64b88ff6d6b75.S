@@ -50,7 +50,7 @@ func0000000000000082:
 
 func000000000000030c:
 	cmp	w0, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, w1
 	orr	w8, w8, w2
 	cset	w9, lt
@@ -90,7 +90,7 @@ func0000000000000302:
 
 func0000000000000316:
 	cmp	w0, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, w1
 	orr	w8, w8, w2
 	cset	w9, ge

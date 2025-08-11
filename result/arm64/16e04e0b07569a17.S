@@ -45,7 +45,7 @@ func0000000000000026:
 	mov	w8, #63
 	and	x10, x1, #0x7fffffffffffffff
 	cmp	w9, #0
-	ccmp	x10, x8, #0, lt
+	ccmp	x10, x8, #0, mi
 	cset	w0, eq
 	ret
 
@@ -54,7 +54,7 @@ func0000000000000306:
 	mov	w8, #125
 	and	x10, x1, #0x7ffffffffffffffe
 	cmp	w9, #0
-	ccmp	x10, x8, #0, lt
+	ccmp	x10, x8, #0, mi
 	cset	w0, hi
 	ret
 
@@ -62,6 +62,6 @@ func0000000000000186:
 	sxtb	w8, w0
 	tst	x1, #0x7fffffffffffffe0
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

@@ -34,7 +34,7 @@ func00000000000000cc:
 	and	w9, w0, #0xff
 	cmp	w9, #2
 	ccmp	w8, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000028:

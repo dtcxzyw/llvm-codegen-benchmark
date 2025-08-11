@@ -1,10 +1,9 @@
 func0000000000000000:
 	and	w8, w1, #0xffff
 	mul	w8, w0, w8
-	add	w9, w8, #31
+	adds	w9, w8, #31
 	add	w8, w8, #62
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	asr	w0, w8, #5
 	ret
 
@@ -24,10 +23,9 @@ func0000000000000002:
 func0000000000000014:
 	and	w8, w1, #0xffff
 	mul	w8, w0, w8
-	add	w9, w8, #127
+	adds	w9, w8, #127
 	add	w8, w8, #254
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	asr	w0, w8, #7
 	ret
 

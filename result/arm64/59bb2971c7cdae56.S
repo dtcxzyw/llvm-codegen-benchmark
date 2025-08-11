@@ -35,7 +35,7 @@ func0000000000000048:
 func0000000000000198:
 	tst	w1, w2
 	ccmp	w0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000308:

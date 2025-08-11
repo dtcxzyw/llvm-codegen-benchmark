@@ -85,13 +85,13 @@ func0000000000000306:
 	cset	w8, ne
 	cmp	w0, #0
 	orr	w8, w1, w8
-	cset	w9, lt
+	cset	w9, mi
 	and	w0, w9, w8
 	ret
 
 func0000000000000181:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, #0
 	orr	w8, w8, w1
 	cset	w9, eq

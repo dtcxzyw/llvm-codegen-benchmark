@@ -1,7 +1,7 @@
 func0000000000000146:
 	sub	x8, x0, x1
 	cmp	x0, #0
-	ccmp	x8, #0, #4, lt
+	ccmp	x8, #0, #4, mi
 	cset	w0, gt
 	ret
 

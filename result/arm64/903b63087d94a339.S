@@ -30,6 +30,6 @@ func0000000000000002:
 func0000000000000003:
 	adds	w8, w0, #1
 	and	w8, w8, #0x1
-	cneg	w0, w8, lt
+	cneg	w0, w8, mi
 	ret
 

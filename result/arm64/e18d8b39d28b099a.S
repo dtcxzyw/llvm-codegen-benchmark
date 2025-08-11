@@ -6,6 +6,6 @@ func0000000000000001:
 func0000000000000021:
 	sxtb	w8, w1
 	cmp	w8, #0
-	cneg	w0, w0, lt
+	cneg	w0, w0, mi
 	ret
 

@@ -44,7 +44,7 @@ func00000000000009cc:
 func000000000000098c:
 	add	w8, w1, #2
 	cmp	w0, #0
-	ccmp	w8, w0, #8, ge
+	ccmp	w8, w0, #8, pl
 	cset	w0, lt
 	ret
 

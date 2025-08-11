@@ -19,7 +19,7 @@ func0000000000000006:
 	mov	w8, #1
 	sxtb	w9, w9
 	cmp	w9, #0
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 
 func000000000000000a:

@@ -2,7 +2,7 @@ func0000000000001881:
 	cmp	x1, x2
 	cset	w8, lo
 	cmp	w0, #0
-	cset	w9, lt
+	cset	w9, mi
 	csel	w0, w8, w9, eq
 	ret
 
@@ -61,7 +61,7 @@ func00000000000018c1:
 	cmp	x1, x2
 	cset	w8, lt
 	cmp	w0, #0
-	cset	w9, lt
+	cset	w9, mi
 	csel	w0, w8, w9, eq
 	ret
 

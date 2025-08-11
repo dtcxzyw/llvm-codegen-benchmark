@@ -15,14 +15,14 @@ func0000000000000010:
 func0000000000000018:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	sub	x0, x8, #2
 	ret
 
 func0000000000000028:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	x8, x1, x0, lt
+	csel	x8, x1, x0, mi
 	sub	x0, x8, #10
 	ret
 

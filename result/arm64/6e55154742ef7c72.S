@@ -112,7 +112,7 @@ func00000000000000c8:
 	and	w8, w0, #0xff
 	cmp	w8, #63
 	ccmp	w1, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000108:
@@ -134,7 +134,7 @@ func000000000000014c:
 func0000000000000186:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #0, #0, ge
+	ccmp	w1, #0, #0, pl
 	cset	w0, ne
 	ret
 
@@ -193,7 +193,7 @@ func000000000000028c:
 func0000000000000026:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #0, #4, ge
+	ccmp	w1, #0, #4, pl
 	cset	w0, eq
 	ret
 

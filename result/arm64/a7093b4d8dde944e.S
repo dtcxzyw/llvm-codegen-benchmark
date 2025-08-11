@@ -17,7 +17,7 @@ func0000000000000001:
 func0000000000000026:
 	mul	w8, w1, w2
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

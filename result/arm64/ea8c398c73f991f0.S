@@ -5,12 +5,12 @@ func0000000000000005:
 
 func0000000000000029:
 	cmp	w1, #0
-	cneg	w0, w0, lt
+	cneg	w0, w0, mi
 	ret
 
 func0000000000000028:
 	cmp	w1, #0
-	cneg	w0, w0, lt
+	cneg	w0, w0, mi
 	ret
 
 func0000000000000004:
@@ -43,12 +43,12 @@ func000000000000002b:
 
 func0000000000000019:
 	cmp	w1, #0
-	cneg	w0, w0, lt
+	cneg	w0, w0, mi
 	ret
 
 func0000000000000018:
 	cmp	w1, #0
-	cneg	w0, w0, lt
+	cneg	w0, w0, mi
 	ret
 
 func0000000000000031:

@@ -4,7 +4,7 @@ func0000000000000006:
 	movk	x8, #65408, lsl #48
 	orr	x10, x8, #0x4
 	cmp	x9, #0
-	csel	x0, x10, x8, lt
+	csel	x0, x10, x8, mi
 	ret
 
 func000000000000000a:

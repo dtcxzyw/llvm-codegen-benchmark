@@ -65,7 +65,7 @@ func0000000000000011:
 func000000000000000d:
 	mov	w8, w0
 	cmp	x1, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func0000000000000028:

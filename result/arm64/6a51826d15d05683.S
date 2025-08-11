@@ -46,7 +46,7 @@ func0000000000000008:
 	add	x9, x0, #7
 	cmp	x0, #0
 	mov	w8, #536870912
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	cmp	x8, x9, asr #3
 	cset	w0, lo
 	ret
@@ -68,7 +68,7 @@ func0000000000000014:
 func0000000000000004:
 	add	x8, x0, #7
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	asr	x8, x8, #3
 	cmn	x8, #2
 	cset	w0, lo

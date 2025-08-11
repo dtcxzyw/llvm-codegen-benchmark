@@ -21,7 +21,7 @@ func0000000000000004:
 func0000000000000026:
 	mov	w8, #101
 	subs	w9, w0, w1
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000008:

@@ -9,7 +9,7 @@ func0000000000000001:
 func0000000000000006:
 	cmp	x2, #0
 	mov	x8, #-34
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	tst	w0, #0x1
 	csel	x0, x1, x8, ne
 	ret

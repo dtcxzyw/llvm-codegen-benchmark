@@ -31,7 +31,7 @@ func0000000000000081:
 func0000000000000106:
 	cmp	x1, x2
 	ccmp	w0, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000104:

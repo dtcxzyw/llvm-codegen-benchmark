@@ -62,7 +62,7 @@ func0000000000000024:
 	add	x8, x1, #3
 	cmp	x1, #0
 	asr	x9, x0, #2
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	cmp	x9, x8, asr #2
 	cset	w0, lo
 	ret

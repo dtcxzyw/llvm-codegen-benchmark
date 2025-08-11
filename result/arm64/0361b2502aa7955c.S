@@ -79,7 +79,7 @@ func0000000000000101:
 
 func00000000000000c1:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w1, #0x4
 	and	w8, w0, w8
 	csel	w0, wzr, w8, ne

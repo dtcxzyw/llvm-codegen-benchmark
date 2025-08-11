@@ -2,7 +2,7 @@ func0000000000000946:
 	sub	w8, w0, w2
 	orr	w8, w8, w2
 	cmp	w8, #0
-	ccmp	w0, w1, #0, ge
+	ccmp	w0, w1, #0, pl
 	cset	w0, gt
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000026:
 	and	w8, w1, #0xff
 	cmp	w0, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000038:
@@ -19,6 +19,6 @@ func000000000000002a:
 func0000000000000006:
 	and	w8, w1, #0xff
 	cmp	w0, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

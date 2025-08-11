@@ -3,7 +3,7 @@ func0000000000000004:
 	cmp	x1, #0
 	add	w9, w0, #1
 	add	x8, x1, x8
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	lsr	x8, x8, #15
 	add	w8, w8, #1
 	cmp	w9, w8

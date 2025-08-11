@@ -5,7 +5,7 @@ func0000000000000084:
 
 func0000000000000099:
 	cmp	w0, #0
-	csinc	w8, w0, w1, ge
+	csinc	w8, w0, w1, pl
 	add	w0, w8, #2
 	ret
 

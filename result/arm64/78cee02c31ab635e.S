@@ -98,7 +98,7 @@ func0000000000000186:
 	cset	w8, ne
 	cmp	w1, #0
 	orr	w8, w8, w0
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

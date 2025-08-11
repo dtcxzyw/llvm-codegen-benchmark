@@ -25,6 +25,6 @@ func000000000000002a:
 	mov	w9, #23
 	sub	x9, x9, x2
 	cmp	w8, #0
-	csel	x0, x0, x9, lt
+	csel	x0, x0, x9, mi
 	ret
 

@@ -21,7 +21,7 @@ func0000000000000010:
 
 func00000000000000a0:
 	cmp	w2, #0
-	cneg	w8, w1, lt
+	cneg	w8, w1, mi
 	add	w0, w8, w0
 	ret
 

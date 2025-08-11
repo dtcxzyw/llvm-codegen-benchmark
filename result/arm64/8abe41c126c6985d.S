@@ -51,9 +51,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	add	w9, w0, w1
 	mov	w8, #129
-	cmp	w9, #0
-	csinc	x0, x8, xzr, ge
+	cmn	w0, w1
+	csinc	x0, x8, xzr, pl
 	ret
 

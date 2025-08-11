@@ -7,7 +7,7 @@ func0000000000000001:
 func0000000000000006:
 	asr	w8, w2, #1
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func000000000000000c:

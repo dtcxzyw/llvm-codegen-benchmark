@@ -13,7 +13,7 @@ func0000000000000021:
 func0000000000000006:
 	lsr	w8, w2, #6
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func000000000000000c:
@@ -25,7 +25,7 @@ func000000000000000c:
 func000000000000000a:
 	lsr	w8, w2, #3
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000004:

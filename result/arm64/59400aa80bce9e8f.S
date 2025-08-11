@@ -122,7 +122,7 @@ func0000000000000886:
 	sxtb	w8, w0
 	add	x9, x2, #1
 	cmp	w8, #0
-	ccmp	x9, x1, #2, lt
+	ccmp	x9, x1, #2, mi
 	cset	w0, lo
 	ret
 

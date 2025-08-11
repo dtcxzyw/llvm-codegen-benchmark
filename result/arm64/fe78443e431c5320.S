@@ -2,7 +2,7 @@ func0000000000000106:
 	subs	x9, x1, #128
 	add	x10, x1, #127
 	mov	w8, #320
-	csel	x9, x10, x9, lt
+	csel	x9, x10, x9, mi
 	asr	x9, x9, #8
 	cmp	x9, #320
 	csel	x8, x9, x8, lt

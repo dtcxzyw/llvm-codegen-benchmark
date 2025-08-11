@@ -1,8 +1,7 @@
 func000000000000000c:
-	adds	x8, x0, x1
-	cset	w9, hs
-	cmp	x8, #0
-	csinc	w0, w9, wzr, ge
+	cmn	x0, x1
+	cset	w8, hs
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000010:

@@ -173,7 +173,7 @@ func00000000000000c1:
 	add	w8, w1, w2
 	cmp	w0, #2
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000081:
@@ -245,7 +245,7 @@ func00000000000004c1:
 	add	w8, w1, w2
 	cmp	w0, #0
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000108:

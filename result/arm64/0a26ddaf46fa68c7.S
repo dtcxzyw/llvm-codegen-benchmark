@@ -38,21 +38,21 @@ func0000000000000621:
 
 func00000000000001b8:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	x0, x8
 	cset	w0, hi
 	ret
 
 func00000000000001a4:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	x0, x8
 	cset	w0, lo
 	ret
 
 func00000000000001a8:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	x0, x8
 	cset	w0, hi
 	ret

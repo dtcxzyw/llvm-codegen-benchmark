@@ -103,7 +103,7 @@ func0000000000004218:
 	cmp	w8, #10
 	ccmp	w10, #26, #0, hs
 	ccmp	w9, #0, #8, hs
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000001098:

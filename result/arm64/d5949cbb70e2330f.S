@@ -31,7 +31,7 @@ func0000000000000026:
 func0000000000000021:
 	and	x8, x1, #0x1
 	cmp	x1, #0
-	cneg	x8, x8, lt
+	cneg	x8, x8, mi
 	sub	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, eq
@@ -40,7 +40,7 @@ func0000000000000021:
 func000000000000002a:
 	and	x8, x1, #0x1
 	cmp	x1, #0
-	cneg	x8, x8, lt
+	cneg	x8, x8, mi
 	sub	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, gt

@@ -6,7 +6,7 @@ func0000000000000002:
 	orr	x9, x8, #0xf
 	add	x8, x8, #30
 	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #4
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000006:
 	orr	x9, x8, #0xf
 	add	x8, x8, #30
 	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #4
 	ret
 

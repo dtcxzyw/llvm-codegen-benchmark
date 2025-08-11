@@ -1,7 +1,7 @@
 func0000000000000188:
-	subs	x8, x0, x1
-	ccmp	x8, #0, #8, hs
-	cset	w0, lt
+	cmp	x0, x1
+	cset	w8, lo
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000010a:

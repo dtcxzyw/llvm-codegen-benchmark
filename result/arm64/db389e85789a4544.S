@@ -10,7 +10,7 @@ func0000000000000001:
 func0000000000000006:
 	cmp	w1, #0
 	mov	w8, #20
-	cset	w9, lt
+	cset	w9, mi
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	csel	x0, xzr, x8, ne

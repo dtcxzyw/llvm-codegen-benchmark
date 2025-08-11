@@ -43,7 +43,7 @@ func0000000000000028:
 func0000000000000026:
 	mov	w8, #-1
 	cmn	x0, x1
-	cneg	w0, w8, ge
+	cneg	w0, w8, pl
 	ret
 
 func0000000000000046:

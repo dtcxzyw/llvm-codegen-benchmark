@@ -59,7 +59,7 @@ func000000000000018c:
 	cset	w8, lt
 	cmp	w1, #0
 	and	w8, w0, w8
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000030c:
@@ -67,7 +67,7 @@ func000000000000030c:
 	cset	w8, ne
 	cmp	w1, #0
 	and	w8, w8, w0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000282:

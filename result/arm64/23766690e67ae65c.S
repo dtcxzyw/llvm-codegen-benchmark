@@ -5,6 +5,6 @@ func0000000000000006:
 	fmov	d1, x8
 	fadd	d0, d0, d1
 	fcvtzs	x8, d0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 

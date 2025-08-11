@@ -30,7 +30,7 @@ func0000000000000026:
 	cmp	w8, #1
 	cset	w8, eq
 	cmp	x0, #0
-	cset	w9, lt
+	cset	w9, mi
 	eor	w0, w9, w8
 	ret
 

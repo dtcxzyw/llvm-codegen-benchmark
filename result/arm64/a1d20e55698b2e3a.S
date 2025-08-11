@@ -19,7 +19,7 @@ func0000000000000026:
 	csel	w8, w1, w2, ne
 	add	w9, w8, #3600
 	cmp	w8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func000000000000006a:

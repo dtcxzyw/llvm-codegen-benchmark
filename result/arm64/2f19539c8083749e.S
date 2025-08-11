@@ -18,7 +18,7 @@ func0000000000000003:
 
 func000000000000000d:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w8, w1
 	mov	w8, #-2147483648
 	csel	w8, w8, wzr, ne

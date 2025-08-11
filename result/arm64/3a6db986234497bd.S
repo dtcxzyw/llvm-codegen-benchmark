@@ -12,7 +12,7 @@ func000000000000000c:
 
 func0000000000000006:
 	tst	w1, w2
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 
@@ -25,7 +25,7 @@ func0000000000000014:
 
 func000000000000000a:
 	tst	w1, w2
-	cset	w8, ge
+	cset	w8, pl
 	and	w0, w0, w8
 	ret
 

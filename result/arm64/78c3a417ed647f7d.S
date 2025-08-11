@@ -12,7 +12,7 @@ func0000000000000146:
 	mov	x8, #9223372036854775807
 	cinv	x8, x8, le
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000144:

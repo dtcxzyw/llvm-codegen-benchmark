@@ -36,7 +36,7 @@ func0000000000000281:
 func0000000000000286:
 	and	w8, w2, #0xff
 	cmp	w0, #0
-	ccmp	w1, w8, #2, lt
+	ccmp	w1, w8, #2, mi
 	cset	w0, lo
 	ret
 

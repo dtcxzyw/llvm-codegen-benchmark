@@ -2,10 +2,9 @@ func0000000000000000:
 	mov	w8, #4800
 	sub	w9, w1, w0
 	mov	w10, #4803
-	add	w8, w9, w8
+	adds	w8, w9, w8
 	add	w9, w9, w10
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w0, w8, #2
 	ret
 
@@ -23,10 +22,9 @@ func0000000000000008:
 
 func0000000000000002:
 	sub	w8, w1, w0
-	add	w9, w8, #63
+	adds	w9, w8, #63
 	add	w8, w8, #70
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	asr	w0, w8, #3
 	ret
 

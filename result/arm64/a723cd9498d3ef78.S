@@ -1,7 +1,7 @@
 func0000000000000006:
 	eor	x8, x1, x2
 	cmp	x8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

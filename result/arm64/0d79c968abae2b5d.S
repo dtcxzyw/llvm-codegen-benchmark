@@ -99,9 +99,8 @@ func000000000000004a:
 	ret
 
 func0000000000000006:
-	sub	w8, w1, #1
-	cmp	w8, #0
-	cset	w8, lt
+	cmp	w1, #1
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

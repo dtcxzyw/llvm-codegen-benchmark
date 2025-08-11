@@ -1,7 +1,7 @@
 func0000000000000018:
 	cmp	x2, #0
 	mov	x9, #4611686018427387904
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	add	x0, x8, x9
 	ret
 

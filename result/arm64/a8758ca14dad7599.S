@@ -1,6 +1,6 @@
 func000000000000001b:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	tst	w0, #0x1
 	add	w9, w8, #12
 	csel	w0, w9, w8, ne
@@ -8,7 +8,7 @@ func000000000000001b:
 
 func0000000000000018:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	tst	w0, #0x1
 	add	w9, w8, #4
 	csel	w0, w9, w8, ne

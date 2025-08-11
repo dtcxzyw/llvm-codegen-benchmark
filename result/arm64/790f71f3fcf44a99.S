@@ -20,7 +20,7 @@ func0000000000000046:
 	mov	w8, #24
 	cmp	x1, #0
 	madd	x8, x1, x8, x2
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func000000000000004a:
@@ -32,6 +32,6 @@ func000000000000004a:
 func0000000000000066:
 	add	x8, x2, x1
 	cmp	x1, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 

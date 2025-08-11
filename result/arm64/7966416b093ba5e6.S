@@ -23,7 +23,7 @@ func0000000000000041:
 func0000000000000001:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	asr	x8, x8, #2
 	cmp	x8, x0
 	csel	x8, x8, x0, lt

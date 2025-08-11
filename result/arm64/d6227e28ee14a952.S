@@ -39,10 +39,9 @@ func0000000000000061:
 	ret
 
 func0000000000000006:
-	sub	w9, w0, #1
 	mov	w8, #3
-	cmp	w9, #0
-	csel	w0, w8, w9, lt
+	subs	w9, w0, #1
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000004:

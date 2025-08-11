@@ -34,7 +34,7 @@ func0000000000000188:
 func0000000000000186:
 	mov	w8, #-61
 	cmp	w0, #0
-	ccmp	w0, w8, #4, lt
+	ccmp	w0, w8, #4, mi
 	cset	w0, ne
 	ret
 

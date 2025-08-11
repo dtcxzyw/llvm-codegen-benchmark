@@ -13,9 +13,8 @@ func000000000000008a:
 	ret
 
 func00000000000000c8:
-	sub	w8, w0, w1
 	cmp	w0, #2
-	ccmp	w8, #0, #0, hi
-	cset	w0, lt
+	ccmp	w0, w1, #0, hi
+	cset	w0, mi
 	ret
 

@@ -199,7 +199,7 @@ func00000000000009b0:
 	sub	x8, x1, x2
 	cmp	x8, #2045
 	ccmp	x0, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000308:

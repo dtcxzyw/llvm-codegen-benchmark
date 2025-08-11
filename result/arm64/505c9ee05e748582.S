@@ -18,7 +18,7 @@ func000000000000018c:
 	lsl	w8, w1, #3
 	cmp	w8, #1
 	ccmp	w0, #0, #8, ge
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000004c:

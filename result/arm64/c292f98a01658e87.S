@@ -2,7 +2,7 @@ func000000000000002a:
 	mov	w8, #-10
 	cmp	w1, #0
 	sub	w8, w8, w1
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000000a:
@@ -59,6 +59,6 @@ func0000000000000046:
 	mov	w8, #-2147483648
 	cmp	w1, #0
 	sub	w8, w8, w1
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

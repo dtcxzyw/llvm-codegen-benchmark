@@ -8,7 +8,7 @@ func000000000000110c:
 func0000000000000906:
 	lsr	x8, x2, #32
 	cmp	w0, #0
-	ccmp	w1, w8, #0, lt
+	ccmp	w1, w8, #0, mi
 	cset	w0, hi
 	ret
 

@@ -16,7 +16,7 @@ func0000000000000019:
 	mov	w8, #65406
 	sub	w9, w0, #127
 	cmp	w0, #0
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000007:

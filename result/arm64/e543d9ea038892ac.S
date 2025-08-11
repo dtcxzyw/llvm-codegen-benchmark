@@ -15,7 +15,7 @@ func0000000000000006:
 	ubfx	w9, w1, #3, #5
 	mov	w8, #9
 	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func000000000000000a:

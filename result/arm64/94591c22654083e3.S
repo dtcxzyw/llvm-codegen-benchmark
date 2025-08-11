@@ -90,7 +90,7 @@ func0000000000000146:
 
 func000000000000014a:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	w8, w0
 	cset	w0, gt
 	ret

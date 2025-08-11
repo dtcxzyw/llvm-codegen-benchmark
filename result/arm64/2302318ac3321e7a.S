@@ -81,7 +81,7 @@ func00000000000000c1:
 	sxtb	w8, w2
 	cmp	w0, w1
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000025:

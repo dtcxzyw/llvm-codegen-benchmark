@@ -20,7 +20,7 @@ func0000000000000061:
 
 func000000000000002b:
 	cmp	x1, #0
-	csinc	x0, xzr, x0, lt
+	csinc	x0, xzr, x0, mi
 	ret
 
 func0000000000000013:

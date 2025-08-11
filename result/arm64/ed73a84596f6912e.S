@@ -109,7 +109,7 @@ func0000000000000018:
 	sxtb	w8, w1
 	sub	w9, w0, #1
 	cmp	w8, #0
-	csinc	w0, w9, w0, lt
+	csinc	w0, w9, w0, mi
 	ret
 
 func0000000000000020:
@@ -131,7 +131,7 @@ func000000000000001b:
 	sxtb	w8, w1
 	cmp	w8, #0
 	add	w8, w0, #9
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 
 func0000000000000061:

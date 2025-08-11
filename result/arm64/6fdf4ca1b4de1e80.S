@@ -25,7 +25,7 @@ func0000000000000000:
 	add	x8, x0, x1, asr #32
 	add	x9, x8, #63
 	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	asr	x0, x8, #6
 	ret
 

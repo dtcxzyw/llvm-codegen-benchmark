@@ -27,7 +27,7 @@ func0000000000000021:
 func000000000000002c:
 	and	w8, w0, #0xff
 	cmp	w1, #0
-	cset	w9, lt
+	cset	w9, mi
 	cmp	w8, #1
 	cset	w8, eq
 	eor	w0, w9, w8

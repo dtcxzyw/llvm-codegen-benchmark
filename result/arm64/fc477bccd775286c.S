@@ -38,7 +38,7 @@ func0000000000000220:
 func0000000000000618:
 	and	w8, w2, #0xff
 	cmp	w1, #0
-	ccmp	w8, #17, #0, ge
+	ccmp	w8, #17, #0, pl
 	cset	w8, ne
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

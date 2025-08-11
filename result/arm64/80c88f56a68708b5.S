@@ -9,6 +9,6 @@ func0000000000000182:
 	orr	w8, w1, w0
 	cmp	w0, w1
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

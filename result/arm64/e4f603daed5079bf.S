@@ -10,10 +10,10 @@ func0000000000000001:
 	add	w8, w1, #3
 	cmp	w1, #0
 	add	w9, w0, #3
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmp	w0, #0
 	asr	w8, w8, #2
-	csel	w9, w9, w0, lt
+	csel	w9, w9, w0, mi
 	cmp	w8, w9, asr #2
 	cset	w0, eq
 	ret

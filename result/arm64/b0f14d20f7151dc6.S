@@ -22,7 +22,7 @@ func0000000000000002:
 func000000000000000c:
 	cmp	x2, #0
 	orr	w9, w0, w1
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w9, w8
 	ret
 
@@ -43,7 +43,7 @@ func0000000000000004:
 func0000000000000006:
 	cmp	x0, #0
 	orr	w8, w1, w2
-	cset	w9, lt
+	cset	w9, mi
 	and	w0, w9, w8
 	ret
 

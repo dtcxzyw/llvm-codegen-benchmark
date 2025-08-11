@@ -11,7 +11,7 @@ func0000000000000014:
 func0000000000000006:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func0000000000000008:
@@ -28,7 +28,7 @@ func0000000000000004:
 func000000000000000a:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func000000000000000c:

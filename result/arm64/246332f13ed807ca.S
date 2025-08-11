@@ -13,7 +13,7 @@ func0000000000000026:
 	mov	w9, #32
 	csel	w8, w9, w8, eq
 	mov	w9, #45
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000281:

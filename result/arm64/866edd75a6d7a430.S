@@ -20,7 +20,7 @@ func0000000000000001:
 	add	x9, x0, #63
 	cmp	x0, #0
 	mov	x8, #2305843009213693951
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	tst	x8, x9, asr #6
 	cset	w0, eq
 	ret

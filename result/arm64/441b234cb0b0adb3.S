@@ -1,17 +1,16 @@
 func0000000000000311:
 	adds	w8, w0, #7
 	add	w9, w0, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w1, #0
 	asr	w8, w8, #3
 	cinc	w0, w8, ne
 	ret
 
 func0000000000000281:
-	add	w8, w0, #1
-	add	w9, w0, #4
-	cmp	w8, #0
-	csinc	w8, w9, w0, lt
+	cmn	w0, #1
+	add	w8, w0, #4
+	csinc	w8, w8, w0, mi
 	cmp	w1, #0
 	asr	w8, w8, #2
 	cinc	w0, w8, gt
@@ -29,10 +28,9 @@ func0000000000000191:
 	ret
 
 func0000000000000301:
-	add	w8, w0, #496
+	adds	w8, w0, #496
 	add	w9, w0, #1007
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w1, #0
 	asr	w8, w8, #9
 	cinc	w0, w8, ne

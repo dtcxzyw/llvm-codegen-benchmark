@@ -12,7 +12,7 @@ func000000000000014a:
 
 func0000000000000146:
 	cmp	w0, #0
-	ccmp	w1, #0, #4, lt
+	ccmp	w1, #0, #4, mi
 	cset	w0, gt
 	ret
 

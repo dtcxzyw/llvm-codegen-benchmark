@@ -48,7 +48,7 @@ func0000000000000026:
 
 func0000000000000cc4:
 	cmp	w1, #0
-	csinc	w8, w0, w2, ge
+	csinc	w8, w0, w2, pl
 	cmp	w8, #24
 	cset	w0, lo
 	ret
@@ -61,7 +61,7 @@ func0000000000000c2c:
 
 func00000000000004c1:
 	cmp	w1, #0
-	csinc	w8, w0, w2, ge
+	csinc	w8, w0, w2, pl
 	cmp	w8, #0
 	cset	w0, eq
 	ret

@@ -11,8 +11,7 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	sub	x8, x1, x2
-	cmp	x8, #0
-	csinc	w0, w0, wzr, ge
+	cmp	x1, x2
+	csinc	w0, w0, wzr, pl
 	ret
 

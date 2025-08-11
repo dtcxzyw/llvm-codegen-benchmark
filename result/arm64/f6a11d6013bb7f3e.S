@@ -76,7 +76,7 @@ func0000000000000034:
 func0000000000000026:
 	tst	x1, #0x1
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002a:

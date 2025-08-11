@@ -11,7 +11,7 @@ func0000000000000486:
 	and	w9, w0, #0xff
 	sub	w9, w9, #97
 	cmp	w8, #0
-	ccmp	w9, #26, #0, ge
+	ccmp	w9, #26, #0, pl
 	cset	w0, lo
 	ret
 

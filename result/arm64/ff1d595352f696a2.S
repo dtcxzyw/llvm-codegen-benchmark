@@ -40,7 +40,7 @@ func0000000000000208:
 func000000000000032a:
 	cmp	x2, #0
 	mov	w9, #16959
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	movk	w9, #15, lsl #16
 	add	x8, x8, x0
 	cmp	x8, x9
@@ -67,7 +67,7 @@ func0000000000000081:
 func0000000000000338:
 	cmp	x2, #0
 	mov	w9, #15025
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	movk	w9, #2, lsl #16
 	add	x8, x8, x0
 	cmp	x8, x9

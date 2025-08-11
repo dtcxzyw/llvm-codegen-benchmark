@@ -29,7 +29,7 @@ func000000000000042c:
 func0000000000000506:
 	sub	w8, w2, #1
 	cmp	w0, #0
-	ccmp	w1, w8, #2, ge
+	ccmp	w1, w8, #2, pl
 	cset	w0, hi
 	ret
 

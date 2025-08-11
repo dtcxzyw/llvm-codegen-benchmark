@@ -22,7 +22,7 @@ func000000000000000a:
 
 func0000000000000006:
 	cmp	x2, #0
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	tst	w0, #0x1
 	csel	x0, xzr, x8, ne
 	ret

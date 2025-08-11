@@ -8,7 +8,7 @@ func0000000000000118:
 func000000000000004c:
 	sub	w8, w1, #1
 	cmp	w8, #0
-	ccmp	x0, #0, #4, ge
+	ccmp	x0, #0, #4, pl
 	cset	w0, eq
 	ret
 

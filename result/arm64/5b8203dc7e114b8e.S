@@ -1,7 +1,7 @@
 func00000000000000ca:
 	lsr	x8, x2, #1
 	cmp	w1, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	cmp	x8, #0
 	cset	w0, gt
 	ret

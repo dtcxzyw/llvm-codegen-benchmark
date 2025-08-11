@@ -90,7 +90,7 @@ func00000000000001b0:
 
 func00000000000001cc:
 	cmp	x0, #0
-	ccmp	w1, w2, #4, ge
+	ccmp	w1, w2, #4, pl
 	cset	w0, le
 	ret
 

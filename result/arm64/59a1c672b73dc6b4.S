@@ -32,7 +32,7 @@ func0000000000000014:
 
 func000000000000000c:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w1
 	and	w8, w0, w8
 	and	w0, w8, #0x1

@@ -189,6 +189,6 @@ func00000000000000ca:
 	sub	x8, x1, #1
 	cmp	x0, #0
 	ccmp	x8, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

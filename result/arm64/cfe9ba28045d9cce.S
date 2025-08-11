@@ -60,7 +60,7 @@ func000000000000002a:
 
 func000000000000001a:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

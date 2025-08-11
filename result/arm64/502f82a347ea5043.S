@@ -26,10 +26,10 @@ func0000000000000024:
 	add	x8, x2, #3
 	cmp	x2, #0
 	add	x9, x0, #3
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	cmp	x0, #0
 	add	x8, x1, x8, lsr #2
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	add	x8, x8, x9, lsr #2
 	lsl	x0, x8, #2
 	ret
@@ -56,10 +56,10 @@ func0000000000000014:
 	add	x8, x2, #63
 	cmp	x2, #0
 	add	x9, x1, #63
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	cmp	x1, #0
 	lsr	x8, x8, #6
-	csel	x9, x9, x1, lt
+	csel	x9, x9, x1, mi
 	lsr	x9, x9, #6
 	add	w8, w0, w8
 	add	w8, w8, w9

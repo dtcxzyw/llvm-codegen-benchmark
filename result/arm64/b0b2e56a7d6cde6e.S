@@ -5,14 +5,13 @@ func0000000000000078:
 	ret
 
 func0000000000000006:
-	add	w8, w1, w2
-	cmp	w8, #0
-	csinv	x0, x0, xzr, ge
+	cmn	w1, w2
+	csinv	x0, x0, xzr, pl
 	ret
 
 func0000000000000026:
 	cmn	w1, w2
-	csinv	x0, x0, xzr, ge
+	csinv	x0, x0, xzr, pl
 	ret
 
 func0000000000000001:

@@ -52,7 +52,7 @@ func0000000000000060:
 func0000000000000019:
 	sub	x8, x0, #1
 	cmp	w1, #0
-	csinc	x0, x8, x0, lt
+	csinc	x0, x8, x0, mi
 	ret
 
 func0000000000000029:

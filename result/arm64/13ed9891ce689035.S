@@ -38,7 +38,7 @@ func0000000000000146:
 	cmn	w2, #1
 	mov	w8, #2147483647
 	ccmp	w1, #0, #0, gt
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000081:

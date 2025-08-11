@@ -11,7 +11,7 @@ func0000000000000146:
 	cmp	w8, #0
 	mov	w8, #37885
 	movk	w8, #30517, lsl #16
-	ccmp	w9, w8, #4, lt
+	ccmp	w9, w8, #4, mi
 	cset	w0, gt
 	ret
 

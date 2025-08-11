@@ -35,7 +35,7 @@ func0000000000000008:
 func0000000000000006:
 	sxth	w8, w1
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

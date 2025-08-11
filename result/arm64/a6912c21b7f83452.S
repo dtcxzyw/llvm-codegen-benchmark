@@ -15,7 +15,7 @@ func0000000000002102:
 func000000000000030c:
 	lsr	x8, x1, #3
 	cmp	w0, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, ne
 	ret
 
@@ -29,7 +29,7 @@ func0000000000002282:
 func00000000000022cc:
 	lsr	x8, x1, #3
 	cmp	w0, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, ge
 	ret
 

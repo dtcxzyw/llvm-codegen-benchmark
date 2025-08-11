@@ -1,7 +1,7 @@
 func00000000000004c1:
 	add	w8, w1, #13
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmp	w0, w8
 	cset	w0, eq
 	ret
@@ -16,7 +16,7 @@ func0000000000000546:
 func00000000000004c6:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmp	w0, w8
 	cset	w0, lt
 	ret

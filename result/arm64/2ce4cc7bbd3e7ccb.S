@@ -1,7 +1,7 @@
 func000000000000010c:
 	add	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, lo
 	ret
 

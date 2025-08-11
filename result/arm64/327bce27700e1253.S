@@ -11,7 +11,7 @@ func0000000000000001:
 func0000000000000006:
 	cmp	w0, #0
 	mov	x8, #9218868437227405311
-	fcsel	d0, d0, d1, lt
+	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
 	fmul	d0, d0, d1
 	ret

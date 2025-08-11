@@ -3,7 +3,7 @@ func000000000000004c:
 	cset	w8, eq
 	cmp	x1, #0
 	orr	w8, w0, w8
-	cset	w9, lt
+	cset	w9, mi
 	and	w0, w8, w9
 	ret
 

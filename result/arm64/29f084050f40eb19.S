@@ -171,10 +171,10 @@ func00000000000000c6:
 	sxtb	w8, w2
 	sxtb	w9, w1
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w9, #0
 	orr	w8, w0, w8
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

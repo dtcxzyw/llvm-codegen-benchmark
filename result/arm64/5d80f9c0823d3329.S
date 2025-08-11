@@ -29,14 +29,14 @@ func0000000000000181:
 
 func0000000000000cd4:
 	cmp	x1, #0
-	csinc	x8, x0, x2, ge
+	csinc	x8, x0, x2, pl
 	cmp	x8, #8
 	cset	w0, lo
 	ret
 
 func0000000000000cc4:
 	cmp	x1, #0
-	csinc	x8, x0, x2, ge
+	csinc	x8, x0, x2, pl
 	cmp	x8, #11
 	cset	w0, lo
 	ret

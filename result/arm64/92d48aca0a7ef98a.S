@@ -15,7 +15,7 @@ func0000000000000008:
 func0000000000000006:
 	fmov	x8, d0
 	cmp	x8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

@@ -2,7 +2,7 @@ func0000000000000005:
 	and	w8, w2, #0x1
 	cmp	w2, #0
 	add	w9, w1, w0
-	cneg	w8, w8, lt
+	cneg	w8, w8, mi
 	add	w8, w8, w9
 	sxtw	x0, w8
 	ret

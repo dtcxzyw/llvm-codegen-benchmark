@@ -28,7 +28,7 @@ func0000000000000008:
 func000000000000000c:
 	cmp	w1, #0
 	mov	w8, #24
-	cset	w9, lt
+	cset	w9, mi
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	mov	w9, #16

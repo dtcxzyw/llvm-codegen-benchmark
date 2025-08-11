@@ -4,7 +4,7 @@ func0000000000000026:
 	cmp	w9, #4, lsl #12
 	csel	x8, x8, xzr, eq
 	cmp	w0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func0000000000000021:

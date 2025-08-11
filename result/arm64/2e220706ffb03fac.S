@@ -8,6 +8,6 @@ func0000000000000026:
 	mov	w8, #403
 	cmn	w0, w1
 	mov	w9, #147
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 

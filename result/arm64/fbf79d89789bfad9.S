@@ -65,7 +65,7 @@ func00000000000000c6:
 
 func00000000000000c8:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #1
 	orr	w8, w8, w0
 	cset	w9, hi
@@ -75,7 +75,7 @@ func00000000000000c8:
 
 func00000000000000c4:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmn	w1, #6
 	orr	w8, w8, w0
 	cset	w9, lo

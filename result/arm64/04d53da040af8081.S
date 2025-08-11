@@ -18,7 +18,7 @@ func0000000000000028:
 func0000000000000020:
 	adds	x8, x1, #3
 	add	x9, x1, #6
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x8, x0, x8, asr #2
 	add	x0, x8, #2
 	ret

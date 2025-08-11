@@ -16,7 +16,7 @@ func000000000000008a:
 	cmp	w0, w1
 	csel	w8, w0, w1, lo
 	cmp	w0, #0
-	csel	w0, w1, w8, lt
+	csel	w0, w1, w8, mi
 	ret
 
 func00000000000000cc:

@@ -15,7 +15,7 @@ func000000000000000a:
 
 func0000000000000006:
 	cmp	w0, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func0000000000000008:
@@ -30,7 +30,7 @@ func0000000000000041:
 
 func0000000000000066:
 	cmp	w0, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func0000000000000021:
@@ -40,7 +40,7 @@ func0000000000000021:
 
 func0000000000000026:
 	cmp	w0, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func0000000000000046:

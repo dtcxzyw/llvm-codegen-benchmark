@@ -7,7 +7,7 @@ func0000000000000001:
 	add	w9, w0, #3
 	cmp	w0, #0
 	mov	w8, #1
-	csel	w9, w9, w0, lt
+	csel	w9, w9, w0, mi
 	tst	w8, w9, lsr #2
 	cset	w0, eq
 	ret

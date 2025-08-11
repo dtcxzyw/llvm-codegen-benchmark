@@ -13,13 +13,13 @@ func0000000000000004:
 func0000000000000006:
 	and	w8, w2, #0xffff7fff
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000000a:
 	and	w8, w2, #0x1ffc0000
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000014:

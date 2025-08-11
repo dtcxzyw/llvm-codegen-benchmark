@@ -1,7 +1,7 @@
 func0000000000000021:
 	and	x8, x1, #0x1
 	cmp	x1, #0
-	cneg	x8, x8, lt
+	cneg	x8, x8, mi
 	cmp	w0, w8
 	cset	w0, eq
 	ret

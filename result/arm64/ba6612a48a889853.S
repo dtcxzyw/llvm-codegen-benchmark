@@ -17,7 +17,7 @@ func0000000000000021:
 
 func00000000000000c1:
 	cmp	w2, #0
-	csinv	x8, x1, xzr, ge
+	csinv	x8, x1, xzr, pl
 	cmp	x8, x0
 	cset	w0, eq
 	ret
@@ -66,7 +66,7 @@ func0000000000000038:
 
 func00000000000000c4:
 	cmp	w2, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	cmp	x8, x0
 	cset	w0, lo
 	ret

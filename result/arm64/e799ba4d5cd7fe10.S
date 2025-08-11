@@ -9,7 +9,7 @@ func00000000000000e1:
 func000000000000032a:
 	cmp	w2, #0
 	sub	w9, w0, #5
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w9, w8
 	cset	w0, gt
 	ret
@@ -17,7 +17,7 @@ func000000000000032a:
 func0000000000000326:
 	cmp	w2, #0
 	sub	w9, w0, #5
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w9, w8
 	cset	w0, lt
 	ret

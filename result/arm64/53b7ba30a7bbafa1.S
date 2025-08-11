@@ -1,8 +1,7 @@
 func00000000000000e1:
-	add	w8, w1, #63
+	adds	w8, w1, #63
 	add	w9, w1, #126
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	x9, x0, #1
 	asr	w8, w8, #6
 	cmp	x9, x8
@@ -10,10 +9,9 @@ func00000000000000e1:
 	ret
 
 func00000000000004e1:
-	add	w8, w1, #63
+	adds	w8, w1, #63
 	add	w9, w1, #126
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	x9, x0, #1
 	asr	w8, w8, #6
 	cmp	x9, x8

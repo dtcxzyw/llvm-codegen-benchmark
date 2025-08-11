@@ -29,7 +29,7 @@ func0000000000008090:
 
 func0000000000006098:
 	cmp	w2, #0
-	ccmn	w0, #1, #8, ge
+	ccmn	w0, #1, #8, pl
 	ccmp	x1, #0, #4, ge
 	cset	w0, eq
 	ret
@@ -52,7 +52,7 @@ func0000000000001098:
 	cmp	x1, #0
 	ccmp	w2, #0, #4, ne
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000004084:
@@ -132,7 +132,7 @@ func0000000000008082:
 func000000000000608c:
 	cmn	w2, #1
 	ccmp	w0, #0, #8, ge
-	ccmp	x1, #0, #4, ge
+	ccmp	x1, #0, #4, pl
 	cset	w0, eq
 	ret
 

@@ -25,6 +25,6 @@ func000000000000000d:
 	mov	w8, #12
 	cmp	w0, #0
 	mov	w9, #4
-	csel	x0, x9, x8, lt
+	csel	x0, x9, x8, mi
 	ret
 

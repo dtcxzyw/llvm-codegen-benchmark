@@ -29,12 +29,12 @@ func0000000000000018:
 	mov	w8, #-3
 	sub	w9, w0, #3
 	cmp	x1, #0
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000019:
 	mov	w8, #1
 	cmp	x1, #0
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 

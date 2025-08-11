@@ -7,7 +7,7 @@ func0000000000000007:
 func000000000000001a:
 	cmp	w2, #0
 	mov	w8, #24
-	csel	x9, xzr, x1, lt
+	csel	x9, xzr, x1, mi
 	madd	x0, x9, x8, x0
 	ret
 

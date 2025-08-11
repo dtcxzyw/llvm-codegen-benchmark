@@ -1,12 +1,11 @@
 func00000000000000c6:
 	cmn	w1, w2
-	csel	w0, wzr, w0, lt
+	csel	w0, wzr, w0, mi
 	ret
 
 func0000000000000046:
-	add	w8, w1, w2
-	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	cmn	w1, w2
+	csel	w0, wzr, w0, mi
 	ret
 
 func000000000000008a:
@@ -18,6 +17,6 @@ func000000000000008a:
 
 func0000000000000086:
 	cmn	w1, w2
-	csinc	w0, w0, wzr, ge
+	csinc	w0, w0, wzr, pl
 	ret
 

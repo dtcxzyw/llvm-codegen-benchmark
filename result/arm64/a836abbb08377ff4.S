@@ -6,7 +6,7 @@ func0000000000000087:
 
 func0000000000000319:
 	tst	w2, w0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func0000000000000084:

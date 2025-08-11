@@ -10,7 +10,7 @@ func0000000000000088:
 func00000000000000c6:
 	neg	x8, x1
 	cmp	x0, #0
-	ccmp	x0, x8, #0, lt
+	ccmp	x0, x8, #0, mi
 	cset	w0, lt
 	ret
 

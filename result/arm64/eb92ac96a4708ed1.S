@@ -30,6 +30,6 @@ func0000000000000008:
 func0000000000000006:
 	sxtb	w8, w1
 	cmp	w8, #0
-	csel	x0, xzr, x0, lt
+	csel	x0, xzr, x0, mi
 	ret
 

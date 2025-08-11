@@ -1,7 +1,7 @@
 func0000000000001908:
 	cmp	w2, #0
 	mov	w9, #59
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w0, #24
 	ccmp	w8, w9, #2, ls
 	cset	w0, hi
@@ -9,7 +9,7 @@ func0000000000001908:
 
 func000000000000198c:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	orr	w8, w0, w8
 	cmp	w8, #0
 	cset	w0, ne

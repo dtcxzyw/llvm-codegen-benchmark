@@ -52,7 +52,7 @@ func0000000000000006:
 	mov	w8, #2
 	cmp	w1, #0
 	mov	w9, #4
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	tst	w0, #0x1
 	csel	x0, x9, x8, ne
 	ret

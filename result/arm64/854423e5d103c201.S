@@ -44,7 +44,7 @@ func000000000000028c:
 func00000000000000c1:
 	tst	w1, #0x200
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000010c:
@@ -55,7 +55,7 @@ func000000000000010c:
 
 func00000000000000cc:
 	cmp	x0, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w1, lsr #2
 	ret
 

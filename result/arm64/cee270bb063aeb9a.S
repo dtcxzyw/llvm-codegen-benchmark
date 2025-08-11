@@ -31,13 +31,13 @@ func0000000000000011:
 
 func000000000000001b:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	add	w0, w8, w0
 	ret
 
 func0000000000000018:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	add	w0, w8, w0
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000029:
 
 func0000000000000019:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	add	w0, w0, w8
 	ret
 

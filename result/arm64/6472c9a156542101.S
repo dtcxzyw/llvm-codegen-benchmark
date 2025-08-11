@@ -63,7 +63,7 @@ func00000000000000cc:
 	add	x8, x1, x2
 	cmp	w0, #0
 	ccmp	x8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000181:

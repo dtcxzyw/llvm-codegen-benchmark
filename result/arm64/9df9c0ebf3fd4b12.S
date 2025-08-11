@@ -25,7 +25,7 @@ func00000000000001e1:
 func00000000000006e1:
 	cmp	w2, #0
 	add	x9, x0, #1
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	x9, x8
 	cset	w0, eq
 	ret

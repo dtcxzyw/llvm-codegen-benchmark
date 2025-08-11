@@ -44,7 +44,7 @@ func0000000000000546:
 	mov	w8, #2147483647
 	cmp	w0, #0
 	add	w8, w0, w8
-	ccmp	w1, w8, #4, lt
+	ccmp	w1, w8, #4, mi
 	cset	w0, gt
 	ret
 

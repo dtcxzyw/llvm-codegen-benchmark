@@ -38,7 +38,7 @@ func00000000000000cc:
 
 func00000000000000c1:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w8, #32
 	cset	w8, eq
 	and	w0, w0, w8
@@ -46,7 +46,7 @@ func00000000000000c1:
 
 func00000000000000ca:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w8, #0
 	cset	w8, gt
 	and	w0, w0, w8

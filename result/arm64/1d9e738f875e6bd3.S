@@ -59,7 +59,7 @@ func0000000000000021:
 func0000000000000028:
 	add	x8, x1, #15
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	asr	x8, x8, #4
 	add	x8, x8, #1
 	cmp	x8, x0
@@ -69,7 +69,7 @@ func0000000000000028:
 func0000000000000026:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	asr	x8, x8, #2
 	add	x8, x8, #1
 	cmp	x8, x0

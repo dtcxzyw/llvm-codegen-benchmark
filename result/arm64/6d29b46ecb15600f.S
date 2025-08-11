@@ -16,6 +16,6 @@ func000000000000030c:
 	sxtb	w8, w0
 	ubfx	w9, w1, #10, #1
 	cmp	w8, #0
-	csinc	w0, w9, wzr, ge
+	csinc	w0, w9, wzr, pl
 	ret
 

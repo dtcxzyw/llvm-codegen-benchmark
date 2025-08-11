@@ -50,7 +50,7 @@ func00000000000000c1:
 
 func00000000000000cc:
 	cmp	x1, #0
-	ccmp	x0, #0, #4, lt
+	ccmp	x0, #0, #4, mi
 	cset	w0, ne
 	ret
 
@@ -147,12 +147,12 @@ func0000000000000086:
 	mov	x8, #9223372036854775806
 	cmp	x1, x8
 	ccmp	x0, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000148:
 	tst	x0, #0xf000000000000000
 	ccmp	x1, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

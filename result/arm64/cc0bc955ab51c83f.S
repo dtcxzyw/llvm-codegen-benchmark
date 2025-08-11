@@ -212,7 +212,7 @@ func000000000000002a:
 func0000000000000146:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	w1, w2, #4, lt
+	ccmp	w1, w2, #4, mi
 	cset	w0, gt
 	ret
 

@@ -16,16 +16,14 @@ func0000000000000040:
 	ret
 
 func0000000000000060:
-	add	x8, x0, x1
-	cmp	x8, #0
-	csel	x9, xzr, x2, lt
+	adds	x8, x0, x1
+	csel	x9, xzr, x2, mi
 	add	x0, x8, x9
 	ret
 
 func0000000000000061:
-	add	x8, x1, x2
-	cmp	x8, #0
-	csel	x9, xzr, x0, lt
+	adds	x8, x1, x2
+	csel	x9, xzr, x0, mi
 	add	x0, x9, x8
 	ret
 

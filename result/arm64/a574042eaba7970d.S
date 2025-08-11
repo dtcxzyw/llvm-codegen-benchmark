@@ -52,14 +52,14 @@ func00000000000000a6:
 
 func000000000000032a:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	w0, w8
 	cset	w0, gt
 	ret
 
 func0000000000000326:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	sub	w8, w0, w8
 	cmp	w8, #1024
 	cset	w0, lt

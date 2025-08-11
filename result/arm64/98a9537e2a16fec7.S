@@ -7,21 +7,21 @@ func0000000000000074:
 func0000000000000066:
 	lsr	w8, w2, #1
 	cmp	w1, #0
-	csinc	w0, w0, w8, ge
+	csinc	w0, w0, w8, pl
 	ret
 
 func000000000000004a:
 	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w8, w2, lsr #31
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000046:
 	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w8, w2, lsr #31
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000038:

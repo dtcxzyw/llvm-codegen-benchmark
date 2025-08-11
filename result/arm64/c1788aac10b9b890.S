@@ -55,7 +55,7 @@ func0000000000000013:
 func0000000000000007:
 	add	x8, x1, #63
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x8, x0, x8, asr #6
 	lsl	x0, x8, #3
 	ret

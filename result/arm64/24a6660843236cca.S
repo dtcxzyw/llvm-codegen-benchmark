@@ -1,7 +1,7 @@
 func0000000000000566:
 	add	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	ccmp	w8, w0, #0, pl
 	cset	w0, ge
 	ret
 
@@ -50,14 +50,14 @@ func000000000000002a:
 func0000000000000166:
 	add	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	ccmp	w8, w0, #0, pl
 	cset	w0, ge
 	ret
 
 func0000000000000546:
 	add	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
+	ccmp	w8, w0, #0, pl
 	cset	w0, gt
 	ret
 

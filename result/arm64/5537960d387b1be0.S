@@ -40,7 +40,7 @@ func000000000000000a:
 func0000000000000006:
 	cmp	w0, #0
 	mov	w8, #1
-	cset	w9, lt
+	cset	w9, mi
 	orr	w9, w9, w1
 	tst	w9, #0x1
 	cinc	w0, w8, ne

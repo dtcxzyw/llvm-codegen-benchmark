@@ -42,7 +42,7 @@ func0000000000000030:
 
 func0000000000000019:
 	cmp	w0, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	sub	w0, w8, #2
 	ret
 

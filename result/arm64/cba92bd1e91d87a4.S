@@ -10,7 +10,7 @@ func000000000000018c:
 func0000000000000186:
 	tst	w2, #0xff
 	ccmp	w1, #0, #8, eq
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -54,7 +54,7 @@ func0000000000000281:
 func0000000000000026:
 	tst	w2, #0xff
 	ccmp	w1, #0, #8, ne
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

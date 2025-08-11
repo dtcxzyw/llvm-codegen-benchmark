@@ -22,7 +22,7 @@ func0000000000000181:
 
 func00000000000000c1:
 	cmp	x2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	tst	w8, #0x80
 	cset	w0, eq
 	ret

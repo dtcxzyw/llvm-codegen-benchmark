@@ -1,7 +1,7 @@
 func00000000000000c6:
 	neg	x8, x2
 	cmp	x0, #0
-	ccmp	x1, x8, #8, ge
+	ccmp	x1, x8, #8, pl
 	cset	w0, lt
 	ret
 
@@ -32,7 +32,7 @@ func00000000000004ca:
 func0000000000000d46:
 	eor	x8, x2, #0x7fffffffffffffff
 	cmp	x0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, gt
 	ret
 

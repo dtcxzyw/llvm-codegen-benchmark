@@ -10,7 +10,7 @@ func0000000000000586:
 	sxtb	w8, w0
 	orr	w9, w1, w2
 	cmp	w8, #0
-	ccmp	w9, #0, #4, lt
+	ccmp	w9, #0, #4, mi
 	cset	w0, ne
 	ret
 

@@ -2,7 +2,7 @@ func000000000000009a:
 	add	x9, x2, #2
 	cmp	w1, #0
 	mov	w8, #40
-	csinc	x9, x9, x2, ge
+	csinc	x9, x9, x2, pl
 	madd	x0, x9, x8, x0
 	ret
 
@@ -16,7 +16,7 @@ func00000000000000aa:
 func000000000000009b:
 	add	x8, x2, #2
 	cmp	w1, #0
-	csinc	x8, x8, x2, ge
+	csinc	x8, x8, x2, pl
 	add	x0, x0, x8, lsl #3
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000098:
 	add	x9, x2, #2
 	cmp	w1, #0
 	mov	w8, #24
-	csinc	x9, x9, x2, ge
+	csinc	x9, x9, x2, pl
 	madd	x0, x9, x8, x0
 	ret
 

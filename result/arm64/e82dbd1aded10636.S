@@ -19,7 +19,7 @@ func000000000000018c:
 
 func0000000000000146:
 	cmp	x0, #0
-	ccmp	x1, #0, #0, ge
+	ccmp	x1, #0, #0, pl
 	cset	w0, gt
 	ret
 
@@ -203,14 +203,14 @@ func000000000000010c:
 func0000000000000306:
 	mov	w8, #1054
 	cmp	x0, #0
-	ccmp	x1, x8, #2, ge
+	ccmp	x1, x8, #2, pl
 	cset	w0, hi
 	ret
 
 func00000000000000cc:
 	cmp	x0, #0
 	ccmp	x1, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000022c:
@@ -303,13 +303,13 @@ func0000000000000106:
 	mov	w8, #16959
 	cmp	x0, #0
 	movk	w8, #15, lsl #16
-	ccmp	x1, x8, #2, ge
+	ccmp	x1, x8, #2, pl
 	cset	w0, hi
 	ret
 
 func0000000000000186:
 	cmp	x0, #0
-	ccmp	x1, #0, #0, ge
+	ccmp	x1, #0, #0, pl
 	cset	w0, ne
 	ret
 

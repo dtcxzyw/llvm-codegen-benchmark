@@ -15,7 +15,7 @@ func0000000000000102:
 func000000000000014c:
 	mov	w8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, ls
 	ret
 
@@ -37,14 +37,14 @@ func0000000000000842:
 func000000000000004c:
 	mov	w8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	ccmp	x1, x8, #4, pl
 	cset	w0, eq
 	ret
 
 func000000000000050c:
 	mov	w8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, lo
 	ret
 
@@ -72,7 +72,7 @@ func0000000000000542:
 func00000000000001cc:
 	mov	w8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	ccmp	x1, x8, #4, pl
 	cset	w0, le
 	ret
 

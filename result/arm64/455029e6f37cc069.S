@@ -33,7 +33,7 @@ func0000000000000070:
 func0000000000000182:
 	tst	w1, #0xe
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000318:

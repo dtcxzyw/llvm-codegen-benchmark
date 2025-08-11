@@ -64,7 +64,7 @@ func0000000000000182:
 	sxtb	w8, w0
 	cmp	w8, #0
 	and	w8, w0, #0xff
-	cset	w9, lt
+	cset	w9, mi
 	cmp	w8, #10
 	and	w9, w1, w9
 	csinc	w0, w9, wzr, ne

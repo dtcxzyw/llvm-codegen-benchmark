@@ -10,7 +10,7 @@ func0000000000000c26:
 	sxtb	w8, w0
 	add	x9, x2, #4
 	cmp	w8, #0
-	ccmp	x9, x1, #4, ge
+	ccmp	x9, x1, #4, pl
 	cset	w0, eq
 	ret
 

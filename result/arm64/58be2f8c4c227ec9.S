@@ -93,7 +93,7 @@ func0000000000000060:
 	add	w9, w1, w0
 	cmp	w8, #0
 	mov	w8, #13
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	add	w0, w8, w9
 	ret
 

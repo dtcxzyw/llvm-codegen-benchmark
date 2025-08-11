@@ -1,7 +1,7 @@
 func000000000000018c:
 	sub	x8, x1, x2
 	cmp	x0, #0
-	ccmp	x8, x0, #8, ge
+	ccmp	x8, x0, #8, pl
 	cset	w0, lt
 	ret
 
@@ -9,7 +9,7 @@ func0000000000000190:
 	sub	x8, x1, x2
 	cmp	x8, x0
 	ccmp	x0, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000058:

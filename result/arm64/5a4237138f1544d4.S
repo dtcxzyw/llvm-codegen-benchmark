@@ -15,7 +15,7 @@ func0000000000000006:
 	cmp	w0, #0
 	movk	w8, #61035, lsl #16
 	add	w8, w1, w8
-	csel	w0, w8, w1, lt
+	csel	w0, w8, w1, mi
 	ret
 
 func0000000000000121:

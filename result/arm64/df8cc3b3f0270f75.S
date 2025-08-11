@@ -28,7 +28,7 @@ func0000000000000202:
 func000000000000060c:
 	sxtb	w8, w1
 	cmp	w8, #0
-	ccmp	x2, #1, #0, lt
+	ccmp	x2, #1, #0, mi
 	cset	w8, hi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

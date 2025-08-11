@@ -30,7 +30,7 @@ func000000000000054c:
 func0000000000000546:
 	add	w8, w1, w0
 	cmp	w0, #0
-	ccmp	w8, #0, #4, lt
+	ccmp	w8, #0, #4, mi
 	cset	w0, gt
 	ret
 

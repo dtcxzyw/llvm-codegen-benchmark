@@ -20,7 +20,7 @@ func0000000000000063:
 	cmp	w2, #0
 	mov	w9, #12
 	madd	x8, x1, x8, x0
-	csel	x9, xzr, x9, lt
+	csel	x9, xzr, x9, mi
 	add	x0, x8, x9
 	ret
 
@@ -128,7 +128,7 @@ func000000000000006b:
 	mov	w9, #4
 	madd	x8, x1, x8, x0
 	mov	w10, #8
-	csel	x9, x10, x9, lt
+	csel	x9, x10, x9, mi
 	add	x0, x8, x9
 	ret
 

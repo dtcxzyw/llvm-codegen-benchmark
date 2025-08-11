@@ -49,7 +49,7 @@ func00000000000000c1:
 	sxth	w8, w1
 	cmp	w0, #0
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000101:
@@ -157,6 +157,6 @@ func00000000000000c4:
 	sxth	w9, w1
 	cmp	w0, w8
 	ccmp	w9, #0, #8, hs
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

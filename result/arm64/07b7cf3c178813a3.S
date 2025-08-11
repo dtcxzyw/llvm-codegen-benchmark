@@ -1,7 +1,7 @@
 func00000000000018cc:
 	orr	w8, w0, w1
 	cmp	w8, #0
-	ccmp	w0, w1, #0, ge
+	ccmp	w0, w1, #0, pl
 	cset	w0, ne
 	ret
 
@@ -22,7 +22,7 @@ func000000000000042c:
 func00000000000018c1:
 	orr	w8, w0, w1
 	cmp	w8, #0
-	ccmp	w0, w1, #4, ge
+	ccmp	w0, w1, #4, pl
 	cset	w0, eq
 	ret
 

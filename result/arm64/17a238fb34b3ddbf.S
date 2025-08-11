@@ -37,7 +37,7 @@ func000000000000006a:
 	sxtb	w8, w1
 	add	w9, w2, #3
 	cmp	w8, #0
-	csel	w0, w0, w9, lt
+	csel	w0, w0, w9, mi
 	ret
 
 func0000000000000068:
@@ -56,7 +56,7 @@ func0000000000000026:
 	sxtb	w8, w1
 	sub	w9, w2, #132
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000044:

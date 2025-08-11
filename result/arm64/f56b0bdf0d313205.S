@@ -107,7 +107,7 @@ func0000000000000188:
 	sub	w8, w1, #5
 	cmn	w8, #4
 	ccmp	w0, #0, #8, hs
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000910:
@@ -161,14 +161,14 @@ func0000000000000302:
 func000000000000084c:
 	mov	w8, #37
 	cmp	w0, #0
-	ccmp	w1, w8, #4, ge
+	ccmp	w1, w8, #4, pl
 	cset	w0, eq
 	ret
 
 func0000000000000982:
 	cmp	w1, #37
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000918:

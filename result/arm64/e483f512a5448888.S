@@ -18,7 +18,7 @@ func0000000000000001:
 	mov	w8, #32767
 	cmp	w2, #0
 	add	w8, w2, w8
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	sub	w8, w1, w8, asr #15
 	mul	w0, w0, w8
 	ret

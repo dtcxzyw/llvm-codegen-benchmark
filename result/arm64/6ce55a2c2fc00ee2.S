@@ -43,7 +43,7 @@ func000000000000182a:
 	and	w8, w1, #0xff
 	cmp	w8, #1
 	ccmp	w2, #0, #0, eq
-	ccmp	w0, #0, #4, lt
+	ccmp	w0, #0, #4, mi
 	cset	w0, gt
 	ret
 

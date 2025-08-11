@@ -15,7 +15,7 @@ func000000000000011b:
 func000000000000019b:
 	add	x8, x1, #64
 	cmp	w0, #0
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	add	x0, x8, #8
 	ret
 

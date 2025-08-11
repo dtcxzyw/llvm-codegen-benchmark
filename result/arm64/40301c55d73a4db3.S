@@ -99,7 +99,7 @@ func000000000000030c:
 	cset	w8, ne
 	cmp	x0, #0
 	and	w8, w1, w8
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000282:

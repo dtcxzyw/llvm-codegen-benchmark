@@ -159,7 +159,7 @@ func0000000000000085:
 
 func00000000000000ca:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	w0, w8
 	cset	w0, gt
 	ret
@@ -211,7 +211,7 @@ func000000000000014a:
 
 func00000000000000d8:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	w0, w8
 	cset	w0, hi
 	ret

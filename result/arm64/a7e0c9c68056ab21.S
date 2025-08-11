@@ -1,8 +1,7 @@
 func0000000000000000:
-	add	x8, x0, x1
+	adds	x8, x0, x1
 	add	x9, x8, #7
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x0, x8, #3
 	ret
 
@@ -34,7 +33,7 @@ func0000000000000001:
 func0000000000000009:
 	adds	x8, x0, x1
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x0, x8, #2
 	ret
 

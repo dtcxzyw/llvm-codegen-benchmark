@@ -120,7 +120,7 @@ func0000000000000082:
 func00000000000000c6:
 	fcmp	s0, #0.0
 	ccmp	w0, #0, #8, ge
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000090:

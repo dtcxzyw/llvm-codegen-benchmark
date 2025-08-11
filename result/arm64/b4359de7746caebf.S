@@ -37,7 +37,7 @@ func000000000000002a:
 func0000000000000026:
 	mov	w8, #1
 	cmp	w0, #0
-	csinc	w8, w8, w1, ge
+	csinc	w8, w8, w1, pl
 	sxtw	x0, w8
 	ret
 

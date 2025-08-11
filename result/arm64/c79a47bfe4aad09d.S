@@ -37,7 +37,7 @@ func0000000000000014:
 func000000000000004d:
 	orr	x8, x1, #0x2
 	cmp	w2, #0
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	tst	w0, #0x1
 	orr	x9, x8, #0x4
 	csel	x0, x8, x9, ne
@@ -46,7 +46,7 @@ func000000000000004d:
 func000000000000004c:
 	orr	x8, x1, #0x8
 	cmp	w2, #0
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	tst	w0, #0x1
 	orr	x9, x8, #0x20
 	csel	x0, x8, x9, ne
@@ -55,7 +55,7 @@ func000000000000004c:
 func000000000000000c:
 	orr	x8, x1, #0x20
 	cmp	w2, #0
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	tst	w0, #0x1
 	orr	x9, x8, #0x10
 	csel	x0, x8, x9, ne

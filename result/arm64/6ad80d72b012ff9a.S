@@ -7,7 +7,7 @@ func0000000000000004:
 func0000000000000019:
 	mov	w8, #1
 	cmp	x1, #0
-	csinc	x0, x8, x0, lt
+	csinc	x0, x8, x0, mi
 	ret
 
 func0000000000000005:

@@ -21,7 +21,7 @@ func0000000000000028:
 
 func0000000000000099:
 	cmn	w2, w0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	add	w0, w8, w0
 	ret
 

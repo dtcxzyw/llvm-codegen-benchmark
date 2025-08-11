@@ -13,7 +13,7 @@ func000000000000000c:
 func0000000000000006:
 	fcvtzs	w8, s0
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000000a:

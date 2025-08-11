@@ -24,7 +24,7 @@ func0000000000000204:
 
 func0000000000000418:
 	cmp	x1, #0
-	ccmp	x1, x2, #2, ge
+	ccmp	x1, x2, #2, pl
 	cset	w8, hi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
@@ -32,7 +32,7 @@ func0000000000000418:
 
 func0000000000000318:
 	cmp	x1, #0
-	ccmp	x1, x2, #8, ge
+	ccmp	x1, x2, #8, pl
 	cset	w8, lt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
@@ -49,7 +49,7 @@ func0000000000000410:
 
 func0000000000000498:
 	cmp	x1, #0
-	ccmp	x1, x2, #2, ge
+	ccmp	x1, x2, #2, pl
 	cset	w8, hs
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

@@ -2,7 +2,7 @@ func0000000000000026:
 	sxth	w8, w1
 	sub	w9, w0, #15
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000064:
@@ -42,7 +42,7 @@ func0000000000000066:
 	sxth	w8, w1
 	add	w9, w0, #4
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000068:

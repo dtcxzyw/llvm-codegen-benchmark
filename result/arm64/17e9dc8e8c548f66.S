@@ -15,10 +15,9 @@ func0000000000000026:
 	ret
 
 func0000000000000006:
-	add	w8, w2, #1
-	cmp	w8, #0
+	cmn	w2, #1
 	and	w8, w0, w1
-	cset	w9, lt
+	cset	w9, mi
 	bic	w0, w9, w8
 	ret
 

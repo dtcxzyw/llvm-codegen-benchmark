@@ -8,7 +8,7 @@ func0000000000000006:
 	add	w8, w0, #244, lsl #12
 	cmp	x1, #0
 	add	w8, w8, #576
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000061:
@@ -20,7 +20,7 @@ func0000000000000061:
 func0000000000000026:
 	add	w8, w0, #7
 	cmp	x1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000064:
@@ -47,7 +47,7 @@ func0000000000000004:
 func0000000000000066:
 	add	w8, w0, #4
 	cmp	x1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000021:

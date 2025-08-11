@@ -24,7 +24,7 @@ func000000000000000c:
 
 func0000000000000006:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	bic	w0, w8, w0
 	ret
 

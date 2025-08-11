@@ -10,6 +10,6 @@ func0000000000000006:
 	movi	d2, #0000000000000000
 	fsub	s0, s0, s1
 	cmp	w0, #0
-	fcsel	s0, s2, s0, lt
+	fcsel	s0, s2, s0, mi
 	ret
 

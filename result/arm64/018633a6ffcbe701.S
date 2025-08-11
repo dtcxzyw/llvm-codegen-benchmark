@@ -10,7 +10,7 @@ func0000000000000002:
 func0000000000000014:
 	cmp	w2, #0
 	mov	w9, #19923
-	csel	w8, w1, w0, lt
+	csel	w8, w1, w0, mi
 	movk	w9, #4194, lsl #16
 	umull	x8, w8, w9
 	lsr	x0, x8, #38

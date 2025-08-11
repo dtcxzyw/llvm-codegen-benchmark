@@ -3,7 +3,7 @@ func0000000000000006:
 	tst	w1, #0x1
 	csel	w8, w8, wzr, ne
 	cmp	w0, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func000000000000000a:

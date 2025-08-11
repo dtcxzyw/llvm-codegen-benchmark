@@ -13,7 +13,7 @@ func000000000000004c:
 	tst	w1, #0x1
 	csinv	w8, w8, wzr, ne
 	cmp	w0, #0
-	ccmp	w0, w8, #4, ge
+	ccmp	w0, w8, #4, pl
 	cset	w0, eq
 	ret
 

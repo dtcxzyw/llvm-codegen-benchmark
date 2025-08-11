@@ -30,13 +30,13 @@ func00000000000000ca:
 	add	x8, x1, x2
 	cmp	x8, #0
 	ccmp	x0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000146:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x0, #0, #4, lt
+	ccmp	x0, #0, #4, mi
 	cset	w0, gt
 	ret
 
@@ -74,7 +74,7 @@ func0000000000000421:
 func0000000000000586:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x0, #0, #4, lt
+	ccmp	x0, #0, #4, mi
 	cset	w0, ne
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000099:
 	cmp	w1, #0
-	csneg	w8, w0, w2, ge
+	csneg	w8, w0, w2, pl
 	sub	w0, w8, #1
 	ret
 
@@ -15,7 +15,7 @@ func0000000000000119:
 	cmp	w1, #0
 	mov	w9, #1082130432
 	sub	w8, w8, w2
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	add	w0, w8, w9
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000118:
 	cmp	w1, #0
 	mov	w9, #1082130432
 	sub	w8, w8, w2
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	add	w0, w8, w9
 	ret
 

@@ -33,7 +33,7 @@ func0000000000000061:
 
 func0000000000000019:
 	cmp	w1, #0
-	csinc	w8, w0, wzr, lt
+	csinc	w8, w0, wzr, mi
 	neg	w0, w8
 	ret
 

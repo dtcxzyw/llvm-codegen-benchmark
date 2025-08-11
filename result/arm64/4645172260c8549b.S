@@ -1,7 +1,7 @@
 func0000000000000026:
 	mov	w8, w2
 	cmp	w1, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000004:
@@ -31,6 +31,6 @@ func0000000000000021:
 func0000000000000006:
 	mov	w8, w2
 	cmp	w1, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 

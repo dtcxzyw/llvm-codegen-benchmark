@@ -61,7 +61,7 @@ func0000000000000284:
 func0000000000000026:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	w1, w2, #0, lt
+	ccmp	w1, w2, #0, mi
 	cset	w0, eq
 	ret
 

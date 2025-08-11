@@ -20,6 +20,6 @@ func0000000000000006:
 	tst	w0, #0x1
 	csel	w8, wzr, w8, ne
 	cmp	w1, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 

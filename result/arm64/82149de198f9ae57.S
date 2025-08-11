@@ -24,14 +24,13 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
-	add	x8, x1, x2
-	cmp	x8, #0
-	csel	x0, x0, x8, lt
+	adds	x8, x1, x2
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000026:
 	adds	x8, x1, x2
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000078:

@@ -133,7 +133,7 @@ func0000000000000546:
 	sxtb	w8, w0
 	sub	w9, w2, #1
 	cmp	w8, #0
-	ccmp	w9, w1, #4, lt
+	ccmp	w9, w1, #4, mi
 	cset	w0, gt
 	ret
 

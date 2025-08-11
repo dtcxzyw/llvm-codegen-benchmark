@@ -1,6 +1,6 @@
 func0000000000000018:
 	cmp	x2, #0
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	add	x0, x0, x8
 	ret
 
@@ -49,7 +49,7 @@ func000000000000002a:
 
 func000000000000001a:
 	cmp	x2, #0
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	add	x0, x0, x8
 	ret
 

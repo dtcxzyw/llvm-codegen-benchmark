@@ -53,7 +53,7 @@ func00000000000000c1:
 func00000000000000cc:
 	tst	x1, #0x8000000080000000
 	ccmp	x0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000022c:

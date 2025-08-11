@@ -32,7 +32,7 @@ func000000000000000c:
 
 func0000000000000006:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w0, #0x1
 	csel	w8, w1, w8, ne
 	and	w0, w8, #0x1

@@ -47,7 +47,7 @@ func0000000000000026:
 func00000000000000c1:
 	sub	w8, w1, w2
 	cmp	w0, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	cmp	w8, #32
 	cset	w0, eq
 	ret
@@ -55,7 +55,7 @@ func00000000000000c1:
 func00000000000000ca:
 	sub	w8, w1, w2
 	cmp	w0, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	cmp	w8, #0
 	cset	w0, gt
 	ret
@@ -63,7 +63,7 @@ func00000000000000ca:
 func00000000000000cc:
 	sub	w8, w1, w2
 	cmp	w0, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	cmp	w8, #32
 	cset	w0, ne
 	ret

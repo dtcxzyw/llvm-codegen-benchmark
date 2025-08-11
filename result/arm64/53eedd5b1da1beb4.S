@@ -61,6 +61,6 @@ func0000000000000066:
 	sxtb	w8, w0
 	add	x9, x1, #96
 	cmp	w8, #0
-	csel	x0, xzr, x9, lt
+	csel	x0, xzr, x9, mi
 	ret
 

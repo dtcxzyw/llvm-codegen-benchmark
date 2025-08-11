@@ -84,7 +84,7 @@ func000000000000030c:
 	and	w9, w1, #0xffff
 	and	w10, w0, #0xffff
 	cmp	w8, #0
-	ccmp	w10, w9, #0, ge
+	ccmp	w10, w9, #0, pl
 	cset	w0, ne
 	ret
 

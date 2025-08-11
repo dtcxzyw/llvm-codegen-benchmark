@@ -93,7 +93,7 @@ func000000000000004c:
 	cset	w8, eq
 	cmp	w0, #0
 	orr	w8, w8, w1
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

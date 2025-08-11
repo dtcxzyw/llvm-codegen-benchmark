@@ -9,9 +9,8 @@ func0000000000000308:
 
 func000000000000030c:
 	sub	x8, x1, x2
-	sub	x8, x8, #4
-	cmp	x8, #0
-	cset	w8, lt
+	cmp	x8, #4
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

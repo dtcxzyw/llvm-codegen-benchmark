@@ -1,7 +1,7 @@
 func0000000000000650:
 	cmn	x1, #1
 	ccmp	x2, #0, #0, gt
-	cinc	x0, x0, lt
+	cinc	x0, x0, mi
 	ret
 
 func0000000000000a31:

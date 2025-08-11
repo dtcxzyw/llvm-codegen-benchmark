@@ -54,7 +54,7 @@ func0000000000000044:
 
 func000000000000018a:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmn	w0, #1
 	orr	w8, w8, w1
 	cset	w9, gt

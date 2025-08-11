@@ -7,6 +7,6 @@ func0000000000000001:
 func0000000000000006:
 	fneg	d1, d0
 	cmp	x0, #0
-	fcsel	d0, d1, d0, lt
+	fcsel	d0, d1, d0, mi
 	ret
 

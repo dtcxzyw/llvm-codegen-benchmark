@@ -36,8 +36,8 @@ func0000000000002108:
 
 func0000000000002946:
 	tst	x1, x2
-	ccmp	x0, #0, #8, lt
-	cset	w0, lt
+	ccmp	x0, #0, #8, mi
+	cset	w0, mi
 	ret
 
 func00000000000018c6:

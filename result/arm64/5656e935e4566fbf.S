@@ -14,7 +14,7 @@ func000000000000000a:
 	mul	w8, w0, w1
 	adds	w9, w8, #7
 	add	w8, w8, #14
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	sbfx	x0, x8, #3, #29
 	ret
 

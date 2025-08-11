@@ -2,7 +2,7 @@ func0000000000000026:
 	sxtb	w8, w1
 	orr	w9, w0, #0x40
 	cmp	w8, #0
-	csel	w0, w0, w9, lt
+	csel	w0, w0, w9, mi
 	ret
 
 func0000000000000021:

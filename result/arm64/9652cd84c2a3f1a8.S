@@ -42,7 +42,7 @@ func0000000000000186:
 	sxtb	w8, w0
 	ubfx	w9, w1, #2, #1
 	cmp	w8, #0
-	csinc	w0, w9, wzr, ge
+	csinc	w0, w9, wzr, pl
 	ret
 
 func0000000000000308:

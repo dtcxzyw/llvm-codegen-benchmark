@@ -29,7 +29,7 @@ func000000000000042c:
 
 func0000000000000141:
 	cmp	x0, #0
-	ccmp	w0, #0, #0, lt
+	ccmp	w0, #0, #0, mi
 	cset	w0, eq
 	ret
 

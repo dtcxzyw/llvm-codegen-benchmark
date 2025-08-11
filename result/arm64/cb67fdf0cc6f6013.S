@@ -3,7 +3,7 @@ func00000000000000c4:
 	mov	w8, #65536
 	csel	w9, w0, w1, lt
 	cmp	w0, #0
-	ccmp	w9, w8, #0, ge
+	ccmp	w9, w8, #0, pl
 	cset	w0, lo
 	ret
 
@@ -37,6 +37,6 @@ func00000000000000c6:
 	csel	w8, w0, w1, lt
 	cmn	w0, #1
 	ccmp	w8, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

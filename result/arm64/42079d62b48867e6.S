@@ -4,6 +4,6 @@ func0000000000000146:
 	cmp	w9, w0
 	csinc	w8, w0, w8, ge
 	cmp	w9, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

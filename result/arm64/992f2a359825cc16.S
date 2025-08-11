@@ -24,7 +24,7 @@ func0000000000000020:
 
 func0000000000000019:
 	cmp	x1, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	sub	x8, x8, #244, lsl #12
 	sub	x0, x8, #576
 	ret

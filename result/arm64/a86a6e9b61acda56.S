@@ -56,6 +56,6 @@ func0000000000000041:
 
 func0000000000000046:
 	cmp	x1, #0
-	csel	w0, w2, w0, lt
+	csel	w0, w2, w0, mi
 	ret
 

@@ -2,7 +2,7 @@ func000000000000004c:
 	sxtb	w8, w2
 	orr	w9, w1, #0x400
 	cmp	w8, #0
-	csel	w8, w9, w1, lt
+	csel	w8, w9, w1, mi
 	orr	w0, w8, w0
 	ret
 
@@ -42,7 +42,7 @@ func000000000000000c:
 	sxtb	w8, w2
 	orr	w9, w1, #0x10
 	cmp	w8, #0
-	csel	w8, w9, w1, lt
+	csel	w8, w9, w1, mi
 	orr	w0, w0, w8
 	ret
 

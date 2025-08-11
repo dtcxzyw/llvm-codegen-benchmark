@@ -41,7 +41,7 @@ func00000000000000c6:
 func00000000000000c4:
 	cmp	w2, #0
 	mov	w8, #3
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmn	w0, #2
 	csinc	w0, w8, wzr, hs
 	ret

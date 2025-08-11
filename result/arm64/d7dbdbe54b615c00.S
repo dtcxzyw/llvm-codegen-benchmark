@@ -146,7 +146,7 @@ func0000000000000014:
 	add	x8, x0, #7
 	cmp	x0, #0
 	add	w9, w1, #1
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	cmp	x9, x8, asr #3
 	cset	w0, hi
 	ret

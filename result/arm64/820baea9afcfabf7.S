@@ -1,7 +1,7 @@
 func0000000000000065:
 	sub	w8, w0, #1
 	cmp	w1, #0
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 
 func00000000000000a5:

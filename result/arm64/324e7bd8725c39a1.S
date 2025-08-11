@@ -12,7 +12,7 @@ func0000000000000086:
 
 func000000000000009a:
 	cmp	w1, #0
-	csneg	x8, xzr, x2, ge
+	csneg	x8, xzr, x2, pl
 	add	x0, x0, x8
 	ret
 

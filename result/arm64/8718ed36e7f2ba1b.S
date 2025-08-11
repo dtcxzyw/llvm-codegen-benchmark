@@ -37,7 +37,7 @@ func0000000000002048:
 func000000000000098c:
 	cmp	w1, #2
 	ccmp	w0, #0, #8, ge
-	ccmp	w2, #0, #4, ge
+	ccmp	w2, #0, #4, pl
 	cset	w0, eq
 	ret
 

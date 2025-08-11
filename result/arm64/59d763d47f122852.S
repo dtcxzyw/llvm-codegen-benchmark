@@ -45,10 +45,9 @@ func0000000000000181:
 	ret
 
 func00000000000000c1:
-	sub	x8, x1, x2
 	cmp	w0, #32
-	ccmp	x8, #0, #0, eq
-	cset	w0, lt
+	ccmp	x1, x2, #0, eq
+	cset	w0, mi
 	ret
 
 func0000000000000186:
@@ -142,10 +141,9 @@ func0000000000000188:
 	ret
 
 func00000000000000ca:
-	sub	x8, x1, x2
 	cmn	w0, #1
-	ccmp	x8, #0, #0, gt
-	cset	w0, lt
+	ccmp	x1, x2, #0, gt
+	cset	w0, mi
 	ret
 
 func00000000000000d8:
@@ -163,10 +161,9 @@ func000000000000008c:
 	ret
 
 func00000000000000cc:
-	sub	x8, x1, x2
 	cmp	w0, #64
-	ccmp	x8, #0, #0, ne
-	cset	w0, lt
+	ccmp	x1, x2, #0, ne
+	cset	w0, mi
 	ret
 
 func0000000000000141:

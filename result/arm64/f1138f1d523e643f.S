@@ -2,7 +2,7 @@ func0000000000000546:
 	mov	x8, #9223372036854775807
 	cmp	x0, #0
 	add	x8, x0, x8
-	ccmp	x1, x8, #4, lt
+	ccmp	x1, x8, #4, mi
 	cset	w0, gt
 	ret
 

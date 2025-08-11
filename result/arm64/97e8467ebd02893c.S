@@ -89,7 +89,7 @@ func000000000000018a:
 func0000000000000146:
 	orr	w8, w1, w2
 	cmp	w8, #0
-	ccmp	w0, #3, #0, ge
+	ccmp	w0, #3, #0, pl
 	cset	w0, gt
 	ret
 

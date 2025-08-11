@@ -4,7 +4,7 @@ func0000000000000006:
 	csel	w8, w2, w8, ne
 	cmp	w0, #0
 	and	w9, w8, #0xc
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func000000000000000c:

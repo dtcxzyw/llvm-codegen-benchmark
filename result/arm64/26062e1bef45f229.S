@@ -20,7 +20,7 @@ func0000000000000006:
 	sxtb	w8, w2
 	eor	w9, w1, w0
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	eor	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

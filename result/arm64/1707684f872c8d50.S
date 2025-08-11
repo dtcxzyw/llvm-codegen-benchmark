@@ -10,6 +10,6 @@ func0000000000000006:
 	mov	w8, #-2
 	csel	w8, w2, w8, gt
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

@@ -16,7 +16,7 @@ func0000000000000126:
 	sxtb	w8, w0
 	add	w9, w1, w2, uxtb
 	cmp	w8, #0
-	cneg	w0, w9, lt
+	cneg	w0, w9, mi
 	ret
 
 func00000000000001a1:

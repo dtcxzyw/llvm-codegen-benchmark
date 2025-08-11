@@ -5,9 +5,9 @@ func0000000000000042:
 	ret
 
 func0000000000000182:
-	subs	w8, w0, w1
-	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cmp	w0, w1
+	cset	w8, eq
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000202:

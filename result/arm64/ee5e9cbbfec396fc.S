@@ -2,7 +2,7 @@ func0000000000000066:
 	mov	w8, #399
 	cmp	w1, #0
 	sub	w8, w8, w2
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000021:
@@ -19,7 +19,7 @@ func000000000000000a:
 
 func0000000000000026:
 	cmp	w1, #0
-	csneg	w0, w0, w2, ge
+	csneg	w0, w0, w2, pl
 	ret
 
 func000000000000002a:
@@ -52,7 +52,7 @@ func0000000000000008:
 
 func0000000000000006:
 	cmp	w1, #0
-	csneg	w0, w0, w2, ge
+	csneg	w0, w0, w2, pl
 	ret
 
 func0000000000000074:
@@ -92,6 +92,6 @@ func0000000000000046:
 	mov	w8, #-2147483648
 	cmp	w1, #0
 	sub	w8, w8, w2
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 

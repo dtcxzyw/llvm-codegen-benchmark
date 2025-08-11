@@ -1,6 +1,6 @@
 func00000000000002cc:
 	cmp	w1, #0
-	ccmp	w1, w2, #0, ge
+	ccmp	w1, w2, #0, pl
 	cset	w8, ge
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

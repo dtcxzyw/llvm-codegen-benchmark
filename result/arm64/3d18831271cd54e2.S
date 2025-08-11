@@ -62,7 +62,7 @@ func000000000000002a:
 	mov	w9, #78
 	csel	w8, w9, w8, eq
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000101:

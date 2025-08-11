@@ -58,7 +58,7 @@ func0000000000000086:
 func0000000000000158:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w8, w1, w0, lt
+	csel	w8, w1, w0, mi
 	cmp	w8, #24
 	cset	w0, hi
 	ret
@@ -112,7 +112,7 @@ func0000000000000038:
 func00000000000000cc:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmn	w8, #1
 	cset	w0, ne
 	ret
@@ -144,7 +144,7 @@ func0000000000000114:
 func00000000000000c4:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #50
 	cset	w0, lo
 	ret

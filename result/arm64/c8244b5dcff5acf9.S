@@ -9,7 +9,7 @@ func0000000000000181:
 	and	w8, w0, #0xfe
 	cmp	w8, #12
 	ccmp	w1, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002c:

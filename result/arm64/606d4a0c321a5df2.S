@@ -2,7 +2,7 @@ func000000000000010c:
 	sxtb	w8, w1
 	and	w9, w0, #0xff
 	cmp	w8, #0
-	ccmp	w9, #26, #0, ge
+	ccmp	w9, #26, #0, pl
 	cset	w0, lo
 	ret
 

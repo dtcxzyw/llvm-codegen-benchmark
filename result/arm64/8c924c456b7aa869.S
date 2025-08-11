@@ -6,7 +6,7 @@ func0000000000000146:
 
 func0000000000000966:
 	cmp	w0, #0
-	ccmp	w0, w1, #0, ge
+	ccmp	w0, w1, #0, pl
 	cset	w0, ge
 	ret
 

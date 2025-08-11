@@ -6,9 +6,9 @@ func0000000000000026:
 	smulh	x8, x1, x8
 	asr	x9, x8, #1
 	add	x8, x9, x8, lsr #63
-	sub	x8, x8, x8, lsl #3
-	add	x8, x1, x8
-	cmp	x8, #0
-	csel	w0, w0, w8, lt
+	lsl	x9, x8, #3
+	sub	x8, x9, x8
+	subs	x8, x1, x8
+	csel	w0, w0, w8, mi
 	ret
 

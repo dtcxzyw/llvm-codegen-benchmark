@@ -21,7 +21,7 @@ func0000000000000046:
 	mov	x8, #9223372036854775807
 	cmp	x1, #0
 	add	x8, x2, x8
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000021:
@@ -50,7 +50,7 @@ func0000000000000041:
 func0000000000000006:
 	add	x8, x2, #2
 	cmp	x1, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func000000000000000a:

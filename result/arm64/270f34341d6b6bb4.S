@@ -9,7 +9,7 @@ func000000000000630c:
 	cmp	x1, #0
 	ccmp	w2, #0, #4, ne
 	ccmp	w0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000604c:

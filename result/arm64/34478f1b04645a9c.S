@@ -17,7 +17,7 @@ func0000000000000006:
 	sxth	w9, w0
 	mov	w8, #3
 	cmp	w9, #0
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, mi
 	ret
 
 func0000000000000014:

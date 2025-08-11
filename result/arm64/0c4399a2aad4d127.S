@@ -9,7 +9,7 @@ func000000000000000c:
 	lsl	w9, w1, #2
 	mov	w8, #4
 	cmp	w1, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	orr	w0, w8, w0
 	ret
 

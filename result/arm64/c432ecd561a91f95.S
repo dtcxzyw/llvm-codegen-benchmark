@@ -40,11 +40,10 @@ func000000000000002a:
 	ret
 
 func000000000000001b:
-	sub	x8, x1, x2
-	mov	w9, #16
-	cmp	x8, #0
+	cmp	x1, x2
 	mov	w8, #8
-	csel	x8, x9, x8, lt
+	mov	w9, #16
+	csel	x8, x9, x8, mi
 	add	x0, x0, x8
 	ret
 

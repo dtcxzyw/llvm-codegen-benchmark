@@ -36,13 +36,13 @@ func00000000000000c4:
 	sub	x8, x1, #1
 	cmp	x8, #31
 	ccmp	w0, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000cc1:
 	cmp	x1, #1
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000421:

@@ -11,7 +11,7 @@ func0000000000000000:
 	add	w9, w1, #7
 	cmp	w1, #0
 	movk	w8, #10922, lsl #16
-	csel	w9, w9, w1, lt
+	csel	w9, w9, w1, mi
 	smull	x8, w0, w8
 	asr	w9, w9, #3
 	asr	x8, x8, #33

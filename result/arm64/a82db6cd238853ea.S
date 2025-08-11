@@ -27,7 +27,7 @@ func0000000000000306:
 	mov	w8, #1054
 	and	x9, x1, #0x7ff
 	cmp	x0, #0
-	ccmp	x9, x8, #2, ge
+	ccmp	x9, x8, #2, pl
 	cset	w0, hi
 	ret
 

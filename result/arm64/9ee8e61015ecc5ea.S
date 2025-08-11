@@ -35,7 +35,7 @@ func0000000000000058:
 
 func0000000000000198:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w8, #32
 	cset	w8, ne
 	orr	w8, w0, w8

@@ -2,7 +2,7 @@ func0000000000000006:
 	add	w8, w1, #31
 	cmp	w1, #0
 	lsr	w9, w0, #5
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmp	w9, w8, asr #5
 	cset	w0, lt
 	ret

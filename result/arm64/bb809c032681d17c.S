@@ -13,6 +13,6 @@ func0000000000000886:
 	cmp	w8, #0
 	csel	w8, w9, w2, eq
 	cmp	w8, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 

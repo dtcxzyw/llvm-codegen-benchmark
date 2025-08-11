@@ -1,6 +1,6 @@
 func0000000000000141:
 	cmp	x0, #0
-	csel	x8, x1, x0, lt
+	csel	x8, x1, x0, mi
 	cmp	x8, #0
 	cset	w0, eq
 	ret

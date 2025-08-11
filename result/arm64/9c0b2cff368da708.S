@@ -10,6 +10,6 @@ func0000000000000006:
 	mov	w8, #1000
 	cmp	x0, #0
 	mul	w8, w1, w8
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, pl
 	ret
 

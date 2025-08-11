@@ -67,7 +67,7 @@ func0000000000000008:
 
 func0000000000000066:
 	cmp	w1, #0
-	csinc	w0, w0, w1, lt
+	csinc	w0, w0, w1, mi
 	ret
 
 func0000000000000061:
@@ -80,7 +80,7 @@ func0000000000000046:
 	cmp	w1, #0
 	movk	w8, #32640, lsl #16
 	add	w8, w1, w8
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000024:

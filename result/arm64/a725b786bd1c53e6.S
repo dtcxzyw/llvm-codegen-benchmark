@@ -38,7 +38,7 @@ func000000000000006b:
 	mov	w8, #40
 	cmp	w1, #0
 	mov	w9, #32
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x8, x0, x8
 	sub	x0, x8, #24
 	ret

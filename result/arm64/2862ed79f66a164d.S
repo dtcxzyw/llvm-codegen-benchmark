@@ -73,7 +73,7 @@ func0000000000000186:
 	mov	w8, #45
 	and	w9, w1, #0xff
 	cmp	x0, #0
-	ccmp	w9, w8, #0, ge
+	ccmp	w9, w8, #0, pl
 	cset	w0, ne
 	ret
 

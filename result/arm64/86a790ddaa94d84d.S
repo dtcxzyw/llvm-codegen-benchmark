@@ -20,13 +20,13 @@ func0000000000000181:
 
 func0000000000000146:
 	tst	w1, w2
-	ccmn	w0, #1, #4, lt
+	ccmn	w0, #1, #4, mi
 	cset	w0, gt
 	ret
 
 func00000000000000ca:
 	tst	w1, w2
-	ccmn	w0, #1, #4, lt
+	ccmn	w0, #1, #4, mi
 	cset	w0, gt
 	ret
 
@@ -89,7 +89,7 @@ func0000000000000194:
 
 func00000000000000c1:
 	tst	w1, w2
-	ccmp	w0, #0, #0, lt
+	ccmp	w0, #0, #0, mi
 	cset	w0, eq
 	ret
 

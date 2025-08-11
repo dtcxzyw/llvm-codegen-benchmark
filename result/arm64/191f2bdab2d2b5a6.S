@@ -22,7 +22,7 @@ func0000000000000008:
 func0000000000000000:
 	add	x8, x1, #2047
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	asr	x8, x8, #14
 	and	x8, x8, #0x1ffffffffffffff8
 	add	x0, x0, x8

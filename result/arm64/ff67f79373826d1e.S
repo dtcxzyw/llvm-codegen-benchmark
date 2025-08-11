@@ -32,7 +32,7 @@ func00000000000000c4:
 	and	w8, w0, #0xffff
 	cmp	w8, w1, uxth
 	ccmp	w2, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000014c:

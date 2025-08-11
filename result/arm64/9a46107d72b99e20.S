@@ -10,7 +10,7 @@ func0000000000000018:
 	sxtb	w9, w1
 	mov	w8, #-2
 	cmp	w9, #0
-	cinc	w8, w8, ge
+	cinc	w8, w8, pl
 	add	w0, w8, w0
 	ret
 

@@ -24,7 +24,7 @@ func000000000000504c:
 	cset	w8, eq
 	cmp	w0, #0
 	csel	w8, wzr, w8, le
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000854:

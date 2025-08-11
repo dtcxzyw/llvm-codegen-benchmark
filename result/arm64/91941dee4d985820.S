@@ -15,7 +15,7 @@ func0000000000000000:
 func0000000000000080:
 	adds	w8, w2, #3
 	add	w9, w2, #6
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	sub	w8, w1, w8, asr #2
 	add	w8, w8, w0
 	add	w0, w8, #31

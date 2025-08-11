@@ -17,7 +17,7 @@ func0000000000000026:
 func000000000000002a:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	cmp	x0, x8
 	cset	w0, gt

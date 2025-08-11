@@ -9,7 +9,7 @@ func0000000000000009:
 func0000000000000007:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	orr	x0, x8, x0
 	ret

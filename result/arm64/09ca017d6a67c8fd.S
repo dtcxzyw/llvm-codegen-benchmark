@@ -50,7 +50,7 @@ func00000000000000c1:
 
 func000000000000008c:
 	cmp	w2, #0
-	ccmp	x0, x1, #0, ge
+	ccmp	x0, x1, #0, pl
 	cset	w0, lo
 	ret
 

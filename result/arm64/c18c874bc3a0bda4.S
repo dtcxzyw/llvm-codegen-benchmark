@@ -12,7 +12,7 @@ func0000000000000821:
 
 func00000000000006a6:
 	cmp	x0, #0
-	ccmp	w1, w0, #0, ge
+	ccmp	w1, w0, #0, pl
 	cset	w0, ls
 	ret
 

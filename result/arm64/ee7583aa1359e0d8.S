@@ -38,14 +38,14 @@ func00000000000004c6:
 	mov	w8, #-2147483648
 	cmp	w0, #0
 	sub	w8, w8, w0
-	ccmp	w1, w8, #0, lt
+	ccmp	w1, w8, #0, mi
 	cset	w0, lt
 	ret
 
 func0000000000000486:
 	neg	w8, w0
 	cmp	w0, #0
-	ccmp	w1, w8, #2, lt
+	ccmp	w1, w8, #2, mi
 	cset	w0, lo
 	ret
 

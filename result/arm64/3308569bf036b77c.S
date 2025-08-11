@@ -16,7 +16,7 @@ func0000000000000025:
 func0000000000000024:
 	subs	x8, x2, #1
 	add	x9, x2, #2
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	sub	x8, x1, x8, asr #2
 	add	x0, x8, x0
 	ret

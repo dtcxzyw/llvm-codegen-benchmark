@@ -60,7 +60,7 @@ func0000000000000000:
 	asr	x9, x8, #8
 	add	x8, x9, x8, lsr #63
 	add	x9, x1, #3
-	csel	x9, x9, x1, lt
+	csel	x9, x9, x1, mi
 	add	x8, x0, x8
 	sub	x0, x8, x9, asr #2
 	ret
@@ -77,7 +77,7 @@ func0000000000000009:
 	add	x9, x2, #3
 	cmp	x2, #0
 	smulh	x8, x0, x8
-	csel	x9, x9, x2, lt
+	csel	x9, x9, x2, mi
 	sub	x9, x1, x9, asr #2
 	asr	x10, x8, #5
 	add	x8, x10, x8, lsr #63

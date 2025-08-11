@@ -11,9 +11,8 @@ func0000000000000021:
 	ret
 
 func0000000000000006:
-	sub	x8, x1, x2
-	cmp	x8, #0
-	csel	x0, x0, x8, lt
+	subs	x8, x1, x2
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000018:
@@ -31,7 +30,7 @@ func0000000000000001:
 
 func0000000000000026:
 	subs	x8, x1, x2
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000004:

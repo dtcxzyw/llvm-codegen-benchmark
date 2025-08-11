@@ -17,10 +17,9 @@ func0000000000000090:
 	ret
 
 func0000000000000018:
-	add	w8, w2, #3
+	cmn	w2, #3
 	orr	w9, w1, w0
-	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

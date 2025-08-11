@@ -126,7 +126,7 @@ func0000000000000284:
 func0000000000000286:
 	and	w8, w1, #0xfffc
 	cmp	w0, #0
-	ccmp	w8, #12, #2, lt
+	ccmp	w8, #12, #2, mi
 	cset	w0, lo
 	ret
 
@@ -170,6 +170,6 @@ func000000000000028a:
 func0000000000000186:
 	tst	w1, #0xffff
 	ccmp	w0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

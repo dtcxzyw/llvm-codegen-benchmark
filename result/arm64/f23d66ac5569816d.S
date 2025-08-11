@@ -23,7 +23,7 @@ func0000000000000014:
 func0000000000000054:
 	orr	w8, w1, #0x200000
 	cmp	w2, #0
-	csel	w8, w1, w8, lt
+	csel	w8, w1, w8, mi
 	orr	w0, w8, w0
 	ret
 

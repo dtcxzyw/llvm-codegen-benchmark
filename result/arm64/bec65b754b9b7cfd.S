@@ -199,7 +199,7 @@ func0000000000000108:
 func0000000000000194:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, gt
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

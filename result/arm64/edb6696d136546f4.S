@@ -7,10 +7,9 @@ func0000000000000002:
 
 func0000000000000000:
 	sub	x8, x0, x1
-	add	x9, x8, #7
+	adds	x9, x8, #7
 	add	x8, x8, #14
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #3
 	ret
 

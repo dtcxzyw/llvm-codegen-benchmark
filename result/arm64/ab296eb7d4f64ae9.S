@@ -3,12 +3,12 @@ func0000000000000506:
 	cset	w8, gt
 	cmp	w1, #0
 	and	w8, w0, w8
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func000000000000030a:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	and	w8, w0, w8
 	csel	w0, wzr, w8, le

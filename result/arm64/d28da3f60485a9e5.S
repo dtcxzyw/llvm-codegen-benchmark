@@ -84,7 +84,7 @@ func000000000000004c:
 	mov	w8, #253
 	and	w8, w0, w8
 	cmp	w9, #0
-	ccmp	w8, #8, #4, ge
+	ccmp	w8, #8, #4, pl
 	cset	w0, eq
 	ret
 

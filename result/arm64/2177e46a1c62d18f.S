@@ -32,11 +32,11 @@ func0000000000000008:
 
 func0000000000000006:
 	cmp	x1, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func000000000000000a:
 	cmp	x1, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 

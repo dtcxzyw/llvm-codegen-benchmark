@@ -9,7 +9,7 @@ func00000000000001c6:
 	add	x8, x1, x2, lsl #3
 	add	x9, x1, #8
 	cmp	x0, #0
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func00000000000001ca:

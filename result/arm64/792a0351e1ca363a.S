@@ -69,7 +69,7 @@ func0000000000000908:
 func0000000000000b0c:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x0, #0, #0, ge
+	ccmp	x0, #0, #0, pl
 	cset	w0, ne
 	ret
 

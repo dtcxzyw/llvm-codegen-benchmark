@@ -35,7 +35,7 @@ func00000000000004cc:
 	add	x8, x1, x2
 	cmp	x0, #0
 	ccmp	x8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000018a:

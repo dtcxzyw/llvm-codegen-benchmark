@@ -19,7 +19,7 @@ func0000000000000146:
 	mov	w8, #359
 	csel	w9, wzr, w0, gt
 	cmp	w0, #0
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000141:

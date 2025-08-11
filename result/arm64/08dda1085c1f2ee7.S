@@ -181,7 +181,7 @@ func000000000000014a:
 func0000000000000706:
 	and	w8, w1, #0xfffffffc
 	cmp	w0, #0
-	ccmp	w8, #8, #4, lt
+	ccmp	w8, #8, #4, mi
 	cset	w0, ne
 	ret
 

@@ -39,7 +39,7 @@ func0000000000000061:
 func0000000000000161:
 	subs	w8, w1, #4
 	add	w9, w1, #3
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w9, w0, #1
 	cmp	w9, w8, asr #3
 	cset	w0, eq

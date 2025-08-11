@@ -1,11 +1,11 @@
 func000000000000000d:
 	cmp	w1, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func000000000000008c:
 	cmp	w1, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func0000000000000002:

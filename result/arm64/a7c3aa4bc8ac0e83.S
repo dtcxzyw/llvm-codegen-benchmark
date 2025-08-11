@@ -12,7 +12,7 @@ func0000000000000294:
 func000000000000020c:
 	mov	w8, #999
 	cmp	w0, #0
-	ccmp	w1, w8, #2, ge
+	ccmp	w1, w8, #2, pl
 	cset	w0, hi
 	ret
 

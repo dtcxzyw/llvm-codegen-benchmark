@@ -144,7 +144,7 @@ func000000000000018c:
 
 func00000000000000c6:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, #1
 	and	w8, w8, w1
 	csel	w0, wzr, w8, ge

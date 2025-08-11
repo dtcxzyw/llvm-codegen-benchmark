@@ -1,14 +1,14 @@
 func000000000000009b:
 	add	w8, w1, #60
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	w0, w8, w0
 	ret
 
 func0000000000000098:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	w0, w8, w0
 	ret
 

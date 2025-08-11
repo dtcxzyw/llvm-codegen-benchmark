@@ -27,7 +27,7 @@ func000000000000000c:
 
 func0000000000000006:
 	cmp	w1, #0
-	csinc	w0, w0, wzr, lt
+	csinc	w0, w0, wzr, mi
 	ret
 
 func0000000000000008:

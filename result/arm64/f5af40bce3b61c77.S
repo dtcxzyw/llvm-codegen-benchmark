@@ -95,7 +95,7 @@ func0000000000000013:
 func000000000000001b:
 	mov	w8, #1
 	cmp	x1, #0
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	add	w0, w8, w0
 	ret
 

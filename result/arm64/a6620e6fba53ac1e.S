@@ -11,7 +11,7 @@ func0000000000000029:
 
 func0000000000000028:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	sub	w0, w0, w8
 	ret
 

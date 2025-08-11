@@ -18,7 +18,7 @@ func0000000000000094:
 	mov	x8, #9223372036854775807
 	cmp	x1, #0
 	add	x8, x2, x8
-	csel	x8, x0, x8, lt
+	csel	x8, x0, x8, mi
 	lsr	x0, x8, #63
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000018:
 	sxth	w8, w0
 	cmp	w8, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	add	w0, w8, w0
 	ret
 

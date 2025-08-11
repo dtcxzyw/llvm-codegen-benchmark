@@ -27,7 +27,7 @@ func0000000000000024:
 
 func0000000000000026:
 	cmp	w0, #0
-	csneg	w0, wzr, w1, lt
+	csneg	w0, wzr, w1, mi
 	ret
 
 func0000000000000001:

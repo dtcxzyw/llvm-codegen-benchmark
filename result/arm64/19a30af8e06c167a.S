@@ -25,7 +25,7 @@ func000000000000030c:
 func000000000000020c:
 	lsl	w8, w2, #4
 	cmp	w0, #0
-	ccmp	w1, w8, #2, ge
+	ccmp	w1, w8, #2, pl
 	cset	w0, hi
 	ret
 

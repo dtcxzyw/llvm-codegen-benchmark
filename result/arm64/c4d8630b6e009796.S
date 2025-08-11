@@ -54,7 +54,7 @@ func00000000000000a4:
 func0000000000000065:
 	cmp	w0, #0
 	add	w8, w0, #8
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 
 func0000000000000185:

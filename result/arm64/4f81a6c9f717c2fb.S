@@ -210,7 +210,7 @@ func0000000000000161:
 
 func0000000000000286:
 	cmp	w0, #0
-	ccmp	x1, x2, #2, lt
+	ccmp	x1, x2, #2, mi
 	cset	w0, lo
 	ret
 

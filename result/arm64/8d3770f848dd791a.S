@@ -62,6 +62,6 @@ func0000000000000306:
 	mov	w8, w1
 	cmp	x8, #1, lsl #12
 	ccmp	w0, #0, #0, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

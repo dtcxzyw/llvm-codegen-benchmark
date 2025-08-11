@@ -46,7 +46,7 @@ func00000000000000c2:
 
 func0000000000000062:
 	cmp	w0, #0
-	fcsel	d0, d0, d1, lt
+	fcsel	d0, d0, d1, mi
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
 	cset	w0, mi
@@ -54,7 +54,7 @@ func0000000000000062:
 
 func0000000000000064:
 	cmp	w0, #0
-	fcsel	d0, d0, d1, lt
+	fcsel	d0, d0, d1, mi
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
 	cset	w0, gt

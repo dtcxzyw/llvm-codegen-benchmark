@@ -32,7 +32,7 @@ func0000000000000081:
 func0000000000000106:
 	cmp	x1, x2
 	ccmp	w0, #0, #8, hi
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000008a:

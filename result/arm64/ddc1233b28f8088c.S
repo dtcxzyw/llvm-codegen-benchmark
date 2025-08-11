@@ -101,7 +101,7 @@ func0000000000000061:
 	add	x8, x1, #3
 	cmp	x1, #0
 	add	x9, x0, #1
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	cmp	x9, x8, asr #2
 	cset	w0, eq
 	ret
@@ -197,7 +197,7 @@ func000000000000000a:
 	add	x8, x1, #3
 	cmp	x1, #0
 	sub	x9, x0, #1
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	cmp	x9, x8, asr #2
 	cset	w0, gt
 	ret
@@ -206,7 +206,7 @@ func000000000000002a:
 	add	x8, x1, #3
 	cmp	x1, #0
 	sub	x9, x0, #1
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	cmp	x9, x8, asr #2
 	cset	w0, gt
 	ret

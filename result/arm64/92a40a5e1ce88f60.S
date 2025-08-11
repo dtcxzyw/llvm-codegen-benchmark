@@ -9,7 +9,7 @@ func0000000000000081:
 func0000000000000146:
 	add	x8, x1, x2
 	cmp	x0, #0
-	ccmn	x8, #1, #4, lt
+	ccmn	x8, #1, #4, mi
 	cset	w0, gt
 	ret
 

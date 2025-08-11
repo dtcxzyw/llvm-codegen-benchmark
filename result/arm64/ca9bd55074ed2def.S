@@ -11,7 +11,7 @@ func0000000000000002:
 func0000000000000018:
 	cmp	w1, #0
 	mov	w8, #5
-	cset	w9, lt
+	cset	w9, mi
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	csinc	w0, w8, wzr, ne

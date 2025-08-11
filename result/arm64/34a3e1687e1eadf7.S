@@ -29,7 +29,7 @@ func0000000000000026:
 	mov	w9, #4
 	csel	w8, w9, w8, eq
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000002a:
@@ -38,7 +38,7 @@ func000000000000002a:
 	mov	w9, #83
 	csel	w8, w9, w8, eq
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000141:
@@ -99,7 +99,7 @@ func0000000000000286:
 	mov	w8, #5
 	cinc	w8, w8, hs
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000084:

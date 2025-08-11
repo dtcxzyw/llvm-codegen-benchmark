@@ -20,7 +20,7 @@ func00000000000000d8:
 	sxtb	w8, w2
 	cmp	w8, #0
 	mov	w8, #23
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	cmp	x8, x0
 	cset	w0, hi
 	ret
@@ -29,7 +29,7 @@ func00000000000000c1:
 	sxtb	w8, w2
 	cmp	w8, #0
 	mov	w8, #23
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	cmp	x8, x0
 	cset	w0, eq
 	ret

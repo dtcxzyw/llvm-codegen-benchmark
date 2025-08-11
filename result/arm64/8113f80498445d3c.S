@@ -2,13 +2,13 @@ func0000000000000026:
 	lsr	w8, w2, #1
 	cmp	w1, #0
 	sub	w8, w8, #1
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000046:
 	lsr	w8, w2, #1
 	cmp	w1, #0
-	csinc	w0, w0, w8, lt
+	csinc	w0, w0, w8, mi
 	ret
 
 func0000000000000066:

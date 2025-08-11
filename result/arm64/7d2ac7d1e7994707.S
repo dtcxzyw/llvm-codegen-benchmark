@@ -1,7 +1,7 @@
 func000000000000000a:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	orr	w8, w8, w0
 	mvn	w8, w8
 	lsr	w0, w8, #31

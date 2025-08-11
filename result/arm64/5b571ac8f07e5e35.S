@@ -24,7 +24,7 @@ func00000000000000cc:
 
 func00000000000000c1:
 	cmp	w1, #0
-	ccmp	x0, #0, #4, ge
+	ccmp	x0, #0, #4, pl
 	cset	w0, eq
 	ret
 

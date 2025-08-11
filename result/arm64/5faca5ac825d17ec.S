@@ -1,8 +1,7 @@
 func0000000000000000:
-	add	w8, w1, #7
+	adds	w8, w1, #7
 	add	w9, w1, #14
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w8, w8, #3
 	mul	w0, w8, w0
 	ret
@@ -10,7 +9,7 @@ func0000000000000000:
 func0000000000000009:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w8, w8, #3
 	mul	w0, w8, w0
 	ret
@@ -23,10 +22,9 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	add	w8, w1, #7
+	adds	w8, w1, #7
 	add	w9, w1, #14
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w8, w8, #3
 	mul	w0, w8, w0
 	ret

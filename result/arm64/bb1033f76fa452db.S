@@ -38,6 +38,6 @@ func000000000000000a:
 	mov	x9, #-3426
 	csel	x8, x9, x8, ne
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 

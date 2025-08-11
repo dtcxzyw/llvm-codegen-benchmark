@@ -31,7 +31,7 @@ func000000000000002b:
 	add	x8, x1, x2
 	subs	x8, x8, x0
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x0, x8, #0xfffffffffffffffc
 	ret
 
@@ -54,7 +54,7 @@ func000000000000000b:
 	add	x8, x1, x2
 	subs	x8, x8, x0
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x0, x8, #0xfffffffffffffffc
 	ret
 

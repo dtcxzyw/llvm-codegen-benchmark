@@ -46,7 +46,7 @@ func0000000000000006:
 	sxtb	w8, w2
 	orr	w9, w1, w0
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

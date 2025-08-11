@@ -26,6 +26,6 @@ func0000000000000050:
 func0000000000000182:
 	cmp	w0, #1
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

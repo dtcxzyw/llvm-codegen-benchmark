@@ -2,7 +2,7 @@ func0000000000000006:
 	cmn	x1, x0
 	cset	w8, hs
 	cmp	x0, #0
-	cset	w9, lt
+	cset	w9, mi
 	eor	w0, w9, w8
 	ret
 

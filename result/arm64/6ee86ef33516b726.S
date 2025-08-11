@@ -2,7 +2,7 @@ func0000000000000146:
 	cmp	w1, w2
 	csel	w8, w1, w2, lt
 	cmp	w0, #0
-	ccmp	w8, #0, #4, lt
+	ccmp	w8, #0, #4, mi
 	cset	w0, gt
 	ret
 
@@ -52,7 +52,7 @@ func00000000000000c1:
 	csel	w8, w1, w2, lt
 	cmp	w8, #0
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000014c:

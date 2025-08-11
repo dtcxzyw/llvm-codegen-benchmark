@@ -50,7 +50,7 @@ func0000000000000015:
 
 func000000000000000c:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	orr	w0, w8, #0x4000000
 	ret
 

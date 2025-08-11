@@ -17,6 +17,6 @@ func0000000000000026:
 	and	w8, w0, #0xfe
 	cmp	w8, #6
 	ccmp	w0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

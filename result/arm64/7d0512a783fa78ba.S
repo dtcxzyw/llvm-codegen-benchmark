@@ -17,7 +17,7 @@ func000000000000008a:
 func0000000000000426:
 	cmn	w0, w1
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000042a:
@@ -31,7 +31,7 @@ func000000000000042a:
 func0000000000000566:
 	neg	w8, w1
 	cmp	w0, #0
-	ccmp	w0, w8, #8, lt
+	ccmp	w0, w8, #8, mi
 	cset	w0, ge
 	ret
 

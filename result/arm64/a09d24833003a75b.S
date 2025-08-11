@@ -18,7 +18,7 @@ func0000000000000026:
 	and	x8, x2, #0x7ff
 	cmp	x1, #0
 	mov	w9, #1054
-	ccmp	x8, x9, #0, lt
+	ccmp	x8, x9, #0, mi
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

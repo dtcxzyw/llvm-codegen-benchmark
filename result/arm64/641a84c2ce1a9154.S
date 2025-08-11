@@ -67,7 +67,7 @@ func000000000000008a:
 
 func00000000000000c6:
 	tst	x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

@@ -44,7 +44,7 @@ func0000000000000018:
 	movk	w8, #1, lsl #16
 	orr	x10, x8, #0x4
 	cmp	w9, #0
-	csel	x8, x10, x8, lt
+	csel	x8, x10, x8, mi
 	add	x0, x0, x8
 	ret
 
@@ -103,7 +103,7 @@ func000000000000001a:
 	mov	x8, #-416
 	cmp	w9, #0
 	mov	x9, #-448
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x0, x8
 	ret
 

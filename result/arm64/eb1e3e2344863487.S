@@ -20,7 +20,7 @@ func00000000000000c6:
 	cmp	w1, w2
 	csel	w8, w1, w2, lt
 	cmp	w2, #0
-	csel	w8, w1, w8, lt
+	csel	w8, w1, w8, mi
 	cmp	w8, w0
 	cset	w0, lt
 	ret

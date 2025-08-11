@@ -49,7 +49,7 @@ func0000000000000218:
 	mov	w8, #-64
 	sub	w9, w1, #57
 	cmp	w0, #0
-	ccmp	w9, w8, #0, ge
+	ccmp	w9, w8, #0, pl
 	cset	w0, lo
 	ret
 

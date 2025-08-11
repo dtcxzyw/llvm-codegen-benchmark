@@ -23,7 +23,7 @@ func0000000000000193:
 func0000000000000198:
 	add	w8, w1, #4
 	cmp	x2, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	w0, w0, w8
 	ret
 
@@ -32,7 +32,7 @@ func0000000000000018:
 	cmp	x2, #0
 	movk	w8, #61035, lsl #16
 	add	w8, w1, w8
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	w0, w0, w8
 	ret
 

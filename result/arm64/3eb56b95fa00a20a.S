@@ -1,6 +1,6 @@
 func0000000000000006:
 	cmp	w1, #0
-	csinv	w0, w0, w2, ge
+	csinv	w0, w0, w2, pl
 	ret
 
 func0000000000000001:

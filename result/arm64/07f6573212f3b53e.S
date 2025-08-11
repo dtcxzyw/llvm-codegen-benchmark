@@ -57,7 +57,7 @@ func0000000000003021:
 
 func00000000000004cc:
 	cmp	x1, #0
-	ccmp	w2, #10, #0, lt
+	ccmp	w2, #10, #0, mi
 	ccmp	w0, #0, #4, eq
 	cset	w0, ne
 	ret

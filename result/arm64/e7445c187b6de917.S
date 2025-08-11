@@ -2,7 +2,7 @@ func0000000000000026:
 	mvn	x8, x0
 	cmp	w1, #0
 	add	x8, x2, x8
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func000000000000002a:
@@ -23,7 +23,7 @@ func0000000000000006:
 	mvn	x8, x0
 	cmp	w1, #0
 	add	x8, x2, x8
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000021:

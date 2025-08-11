@@ -1,8 +1,7 @@
 func0000000000000006:
-	add	x9, x0, x1
 	mov	w8, #43
-	cmp	x9, #0
+	cmn	x0, x1
 	mov	w9, #45
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 

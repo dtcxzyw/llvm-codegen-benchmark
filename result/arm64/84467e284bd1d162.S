@@ -103,7 +103,7 @@ func000000000000006f:
 	cmp	w2, #0
 	mov	w8, #1032
 	mov	w9, #8
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x8, x1, x8
 	add	x0, x8, x0, lsl #5
 	ret

@@ -17,10 +17,9 @@ func0000000000000025:
 	ret
 
 func0000000000000004:
-	add	w8, w1, #4
+	adds	w8, w1, #4
 	add	w9, w1, #11
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	and	w8, w8, #0xfffffff8
 	add	w0, w0, w8
 	ret

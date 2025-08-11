@@ -12,6 +12,6 @@ func0000000000000004:
 func0000000000000006:
 	sxtb	w8, w0
 	cmp	w8, #0
-	fcsel	d0, d0, d1, lt
+	fcsel	d0, d0, d1, mi
 	ret
 

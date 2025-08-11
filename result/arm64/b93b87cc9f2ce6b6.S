@@ -1,12 +1,12 @@
 func000000000000001b:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	lsl	w0, w8, #6
 	ret
 
 func0000000000000018:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	lsl	w0, w8, #17
 	ret
 

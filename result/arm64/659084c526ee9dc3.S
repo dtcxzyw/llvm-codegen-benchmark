@@ -17,6 +17,6 @@ func0000000000000026:
 	mul	x9, x0, x1
 	mov	w8, #-1
 	cmp	x9, #0
-	cneg	w0, w8, ge
+	cneg	w0, w8, pl
 	ret
 

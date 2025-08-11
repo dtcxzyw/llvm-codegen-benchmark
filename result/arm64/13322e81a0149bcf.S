@@ -1,6 +1,6 @@
 func00000000000000c1:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w8, #0
 	mov	w8, #6
 	csel	w0, w8, w0, eq

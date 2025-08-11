@@ -1,7 +1,7 @@
 func0000000000000004:
 	add	w8, w2, #3
 	cmp	w2, #0
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	sbfx	x8, x8, #2, #30
 	mul	x8, x1, x8
 	add	x0, x0, x8, lsl #2
@@ -21,7 +21,7 @@ func0000000000000000:
 func0000000000000006:
 	add	w8, w2, #63
 	cmp	w2, #0
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	sbfx	x8, x8, #6, #26
 	mul	x8, x1, x8
 	add	x0, x0, x8, lsl #3
@@ -30,7 +30,7 @@ func0000000000000006:
 func0000000000000002:
 	add	w8, w2, #3
 	cmp	w2, #0
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	sbfx	x8, x8, #2, #30
 	madd	x0, x1, x8, x0
 	ret

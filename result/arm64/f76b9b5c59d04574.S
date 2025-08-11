@@ -53,6 +53,6 @@ func0000000000000038:
 func0000000000000026:
 	cmn	x0, #15
 	ccmp	x0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

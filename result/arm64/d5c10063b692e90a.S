@@ -12,7 +12,7 @@ func0000000000000006:
 	tst	w1, #0x1
 	csel	x8, x8, xzr, ne
 	cmp	w0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func0000000000000001:

@@ -22,6 +22,6 @@ func000000000000002a:
 func0000000000000006:
 	mov	w8, #1
 	cmp	w0, #0
-	csneg	w0, w8, w0, lt
+	csneg	w0, w8, w0, mi
 	ret
 

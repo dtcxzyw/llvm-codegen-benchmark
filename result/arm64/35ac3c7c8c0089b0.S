@@ -1,6 +1,6 @@
 func000000000000052a:
 	cmp	w2, #0
-	cneg	w8, w1, lt
+	cneg	w8, w1, mi
 	cmp	w8, w0
 	cset	w0, gt
 	ret

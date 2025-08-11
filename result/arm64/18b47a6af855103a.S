@@ -11,10 +11,9 @@ func0000000000000019:
 
 func0000000000000000:
 	sub	x8, x0, x1
-	sub	x9, x8, #64
+	subs	x9, x8, #64
 	sub	x8, x8, #1
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #6
 	ret
 

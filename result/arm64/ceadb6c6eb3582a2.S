@@ -13,7 +13,7 @@ func0000000000000021:
 
 func000000000000018c:
 	cmp	w2, #0
-	ccmp	w0, w1, #4, lt
+	ccmp	w0, w1, #4, mi
 	cset	w0, ne
 	ret
 

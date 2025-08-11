@@ -56,9 +56,8 @@ func0000000000000002:
 
 func000000000000030c:
 	add	x8, x2, x1
-	add	x8, x8, #2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x8, #2
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -82,18 +81,16 @@ func0000000000000102:
 
 func000000000000010c:
 	add	x8, x2, x1
-	sub	x8, x8, #64
-	cmp	x8, #0
-	cset	w8, lt
+	cmp	x8, #64
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
 
 func000000000000014c:
 	add	x8, x2, x1
-	sub	x8, x8, #4
-	cmp	x8, #0
-	cset	w8, lt
+	cmp	x8, #4
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

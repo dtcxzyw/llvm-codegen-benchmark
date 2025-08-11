@@ -26,7 +26,7 @@ func0000000000000021:
 func0000000000000026:
 	sub	w8, w1, #1
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000041:
@@ -44,14 +44,14 @@ func0000000000000024:
 func0000000000000066:
 	add	w8, w1, #2
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000006:
 	mov	w8, #7
 	add	w9, w1, #9
 	cmp	w0, #0
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000068:

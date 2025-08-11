@@ -12,7 +12,7 @@ func000000000000018c:
 func00000000000000cc:
 	cmp	x1, #0
 	mov	w8, #-2147483648
-	cset	w9, lt
+	cset	w9, mi
 	cmp	x0, #0
 	cset	w10, ne
 	eor	w9, w10, w9

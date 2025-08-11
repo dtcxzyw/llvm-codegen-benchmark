@@ -73,7 +73,7 @@ func0000000000000184:
 
 func00000000000000ca:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmn	x1, #1
 	and	w8, w0, w8
 	csel	w0, wzr, w8, le

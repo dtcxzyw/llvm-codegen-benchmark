@@ -16,10 +16,9 @@ func000000000000020a:
 	ret
 
 func0000000000000188:
-	adds	x8, x0, x1
-	cset	w9, hs
-	cmp	x8, #0
-	csinc	w0, w9, wzr, ge
+	cmn	x0, x1
+	cset	w8, hs
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000208:
@@ -41,7 +40,7 @@ func0000000000000102:
 func000000000000018c:
 	add	x8, x1, x0
 	cmp	x8, #0
-	ccmp	x8, x0, #8, ge
+	ccmp	x8, x0, #8, pl
 	cset	w0, lt
 	ret
 

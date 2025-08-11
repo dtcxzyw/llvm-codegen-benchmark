@@ -20,7 +20,7 @@ func0000000000000021:
 
 func00000000000000d4:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #2048
 	cset	w0, lo
 	ret
@@ -119,7 +119,7 @@ func0000000000000314:
 
 func00000000000000c6:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #1
 	cset	w0, lt
 	ret
@@ -148,7 +148,7 @@ func0000000000000086:
 
 func00000000000000c4:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #11
 	cset	w0, lo
 	ret
@@ -170,7 +170,7 @@ func000000000000014a:
 
 func00000000000000c1:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #0
 	cset	w0, eq
 	ret

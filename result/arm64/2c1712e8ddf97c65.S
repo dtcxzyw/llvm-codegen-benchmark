@@ -1,6 +1,6 @@
 func0000000000000181:
 	cmp	w1, #0
-	csel	w8, w2, w1, lt
+	csel	w8, w2, w1, mi
 	cmp	x0, x8
 	cset	w0, eq
 	ret
@@ -14,7 +14,7 @@ func0000000000000041:
 
 func00000000000001a1:
 	cmp	w1, #0
-	csel	w8, w2, w1, lt
+	csel	w8, w2, w1, mi
 	cmp	x0, x8
 	cset	w0, eq
 	ret

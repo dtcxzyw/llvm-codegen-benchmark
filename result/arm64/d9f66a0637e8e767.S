@@ -7,7 +7,7 @@ func0000000000000020:
 func00000000000000a8:
 	sub	w8, w1, #1
 	cmp	w1, #0
-	csel	w8, wzr, w8, lt
+	csel	w8, wzr, w8, mi
 	add	w0, w8, w0
 	ret
 

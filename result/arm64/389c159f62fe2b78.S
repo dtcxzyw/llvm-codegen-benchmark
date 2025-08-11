@@ -2,7 +2,7 @@ func0000000000000000:
 	add	x8, x2, #15
 	cmp	x2, #0
 	add	x9, x0, x1, lsl #4
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	and	x8, x8, #0xfffffffffffffff0
 	add	x0, x9, x8
 	ret
@@ -11,7 +11,7 @@ func000000000000000a:
 	add	x8, x2, #15
 	cmp	x2, #0
 	add	x9, x0, x1, lsl #4
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	and	x8, x8, #0xfffffffffffffff0
 	add	x0, x9, x8
 	ret

@@ -25,6 +25,6 @@ func0000000000000066:
 	sxtb	w8, w1
 	add	x9, x2, #32
 	cmp	w8, #0
-	csel	x0, x9, x0, lt
+	csel	x0, x9, x0, mi
 	ret
 

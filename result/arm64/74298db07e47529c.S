@@ -43,7 +43,7 @@ func000000000000010c:
 	cset	w8, lo
 	cmp	w1, #0
 	orr	w8, w0, w8
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
@@ -53,7 +53,7 @@ func000000000000030c:
 	cset	w8, ne
 	cmp	w1, #0
 	orr	w8, w8, w0
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
@@ -266,7 +266,7 @@ func0000000000000194:
 
 func0000000000000198:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #266
 	orr	w8, w8, w0
 	cset	w9, ne

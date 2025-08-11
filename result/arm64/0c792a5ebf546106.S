@@ -55,7 +55,7 @@ func00000000000000cc:
 	sxth	w8, w1
 	cmp	x0, #0
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000010c:

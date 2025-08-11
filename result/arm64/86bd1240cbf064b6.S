@@ -7,7 +7,7 @@ func000000000000000a:
 func0000000000000006:
 	movi	d1, #0000000000000000
 	cmp	x0, #0
-	fcsel	d0, d0, d1, lt
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000008:

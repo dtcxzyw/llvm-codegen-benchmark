@@ -1,8 +1,7 @@
 func00000000000004ca:
-	add	w8, w0, w1
+	adds	w8, w0, w1
 	add	w9, w8, #24
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w8, #23
 	cset	w0, gt
 	ret

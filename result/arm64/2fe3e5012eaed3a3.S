@@ -1,6 +1,6 @@
 func000000000000001a:
 	cmp	x0, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	add	x0, x8, x0
 	ret
 
@@ -13,13 +13,13 @@ func0000000000000063:
 
 func0000000000000018:
 	cmp	x0, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	add	x0, x8, x0
 	ret
 
 func0000000000000019:
 	cmp	x0, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	add	x0, x8, x0
 	ret
 
@@ -32,7 +32,7 @@ func0000000000000010:
 
 func000000000000001b:
 	cmp	x0, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	add	x0, x8, x0
 	ret
 

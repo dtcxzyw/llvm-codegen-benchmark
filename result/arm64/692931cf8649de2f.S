@@ -37,7 +37,7 @@ func0000000000000184:
 func00000000000000c6:
 	orr	w8, w1, w2
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

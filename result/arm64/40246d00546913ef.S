@@ -3,7 +3,7 @@ func0000000000000000:
 	add	w9, w2, #3
 	cmp	w2, #0
 	movk	w8, #44564, lsl #16
-	csel	w9, w9, w2, lt
+	csel	w9, w9, w2, mi
 	smull	x8, w2, w8
 	add	w9, w1, w9, asr #2
 	add	w9, w9, w0
@@ -33,7 +33,7 @@ func0000000000000011:
 	add	w9, w2, #3
 	cmp	w2, #0
 	movk	w8, #44564, lsl #16
-	csel	w9, w9, w2, lt
+	csel	w9, w9, w2, mi
 	smull	x8, w2, w8
 	add	w9, w1, w9, asr #2
 	add	w9, w9, w0

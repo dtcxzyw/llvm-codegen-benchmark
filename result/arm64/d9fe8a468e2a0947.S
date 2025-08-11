@@ -10,7 +10,7 @@ func00000000000003e6:
 	mov	w8, #128
 	cmp	w0, #0
 	ubfiz	x9, x9, #3, #32
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func0000000000000066:

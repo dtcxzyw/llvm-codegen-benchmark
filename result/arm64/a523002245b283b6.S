@@ -20,7 +20,7 @@ func0000000000000001:
 func0000000000000006:
 	orr	x8, x0, #0x200000000
 	cmp	w1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func000000000000002c:

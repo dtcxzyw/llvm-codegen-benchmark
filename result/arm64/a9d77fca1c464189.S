@@ -8,7 +8,7 @@ func0000000000000321:
 
 func0000000000000341:
 	cmp	w1, #0
-	csel	w8, wzr, w0, lt
+	csel	w8, wzr, w0, mi
 	add	w8, w8, w1
 	cmn	w8, #1
 	cset	w0, eq

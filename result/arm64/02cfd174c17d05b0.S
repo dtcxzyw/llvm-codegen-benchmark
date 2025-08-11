@@ -12,7 +12,7 @@ func0000000000000006:
 	cmp	x1, x8
 	csel	x9, x1, x8, lo
 	cmp	x0, #0
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func0000000000000008:

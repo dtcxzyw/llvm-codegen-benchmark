@@ -57,7 +57,7 @@ func0000000000000018:
 	mov	w8, #2048
 	cmp	x0, #0
 	mov	x9, #-2047
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	add	x0, x8, x0
 	ret
 

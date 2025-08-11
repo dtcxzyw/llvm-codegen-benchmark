@@ -15,7 +15,7 @@ func0000000000000841:
 func0000000000000986:
 	orr	w8, w1, w0
 	cmp	w8, #0
-	ccmp	w0, w1, #4, ge
+	ccmp	w0, w1, #4, pl
 	cset	w0, eq
 	ret
 

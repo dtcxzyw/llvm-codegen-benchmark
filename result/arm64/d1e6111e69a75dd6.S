@@ -37,9 +37,8 @@ func000000000000008a:
 
 func00000000000000a6:
 	add	w8, w2, w1
-	sub	w8, w8, #25
-	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	cmp	w8, #25
+	csel	w0, wzr, w0, mi
 	ret
 
 func00000000000000aa:

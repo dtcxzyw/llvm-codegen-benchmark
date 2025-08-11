@@ -31,6 +31,6 @@ func000000000000108c:
 	cmp	x1, #0
 	ccmp	x2, #0, #4, ne
 	ccmp	x0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

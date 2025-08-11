@@ -3,7 +3,7 @@ func0000000000000046:
 	cmp	x0, x8
 	csel	x8, x0, x8, lo
 	cmp	x0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000061:
@@ -19,6 +19,6 @@ func0000000000000066:
 	cmp	x0, x8
 	csel	x8, x0, x8, lo
 	cmp	x0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 

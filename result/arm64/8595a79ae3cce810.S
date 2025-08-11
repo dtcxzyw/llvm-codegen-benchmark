@@ -51,7 +51,7 @@ func000000000000000d:
 	mov	w8, #-2147483648
 	cmp	x1, #0
 	mov	w9, #-1073741824
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	bfxil	w8, w0, #0, #24
 	mov	w0, w8
 	ret

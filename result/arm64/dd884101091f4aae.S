@@ -2,7 +2,7 @@ func0000000000000007:
 	add	x8, x2, #3
 	cmp	x2, #0
 	sub	x9, x0, x1
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	cmp	x9, x8, asr #2
 	cset	w0, le
 	ret
@@ -11,7 +11,7 @@ func0000000000000006:
 	add	x8, x2, #3
 	cmp	x2, #0
 	sub	x9, x0, x1
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	cmp	x9, x8, asr #2
 	cset	w0, lt
 	ret

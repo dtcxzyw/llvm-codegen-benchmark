@@ -41,7 +41,7 @@ func0000000000000001:
 func0000000000000026:
 	sub	w8, w1, #1
 	cmp	w0, #0
-	csel	w8, wzr, w8, lt
+	csel	w8, wzr, w8, mi
 	sxtw	x0, w8
 	ret
 

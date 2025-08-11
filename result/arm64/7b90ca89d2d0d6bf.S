@@ -9,7 +9,7 @@ func0000000000000002:
 	bfi	x10, x9, #4, #60
 	add	x8, x8, #30
 	cmp	x10, #0
-	csel	x8, x8, x10, lt
+	csel	x8, x8, x10, mi
 	asr	x0, x8, #4
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000026:
 	bfi	x10, x9, #4, #60
 	add	x8, x8, #30
 	cmp	x10, #0
-	csel	x8, x8, x10, lt
+	csel	x8, x8, x10, mi
 	asr	x0, x8, #4
 	ret
 

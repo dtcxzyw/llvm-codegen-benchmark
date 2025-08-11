@@ -19,6 +19,6 @@ func0000000000000064:
 func0000000000000046:
 	lsr	x8, x0, #32
 	cmp	x0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 

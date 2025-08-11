@@ -121,7 +121,7 @@ func000000000000008c:
 func0000000000000186:
 	sxth	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #0, #0, ge
+	ccmp	w1, #0, #0, pl
 	cset	w0, ne
 	ret
 

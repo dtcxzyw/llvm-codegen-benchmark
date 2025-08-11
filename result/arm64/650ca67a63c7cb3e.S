@@ -43,7 +43,7 @@ func000000000000118c:
 
 func00000000000004cc:
 	cmp	w0, #0
-	ccmp	w1, #27, #0, lt
+	ccmp	w1, #27, #0, mi
 	ccmn	w0, #6, #4, eq
 	cset	w0, ne
 	ret

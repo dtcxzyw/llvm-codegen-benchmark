@@ -22,7 +22,7 @@ func0000000000000029:
 func000000000000000d:
 	mov	w8, #100
 	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000008:
@@ -46,7 +46,7 @@ func0000000000000031:
 func000000000000000c:
 	mov	w8, #6
 	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000015:

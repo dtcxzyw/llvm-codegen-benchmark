@@ -1,7 +1,7 @@
 func0000000000000006:
 	cmp	w2, #0
 	mov	w9, #46021
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	movk	w9, #37282, lsl #16
 	smull	x9, w8, w9
 	lsr	x9, x9, #32

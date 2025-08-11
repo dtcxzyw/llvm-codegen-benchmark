@@ -36,7 +36,7 @@ func000000000000006f:
 	sxtb	w9, w1
 	mov	w8, #32784
 	cmp	w9, #0
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	add	x8, x0, x8
 	add	x0, x8, #8
 	ret
@@ -46,7 +46,7 @@ func000000000000006c:
 	mov	w8, #32784
 	cmp	w9, #0
 	mov	w9, #32775
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	add	x9, x0, x9
 	add	x0, x9, x8
 	ret

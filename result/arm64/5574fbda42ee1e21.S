@@ -12,7 +12,7 @@ func00000000000000c3:
 	cmp	w2, #0
 	mov	w9, #12
 	umaddl	x8, w1, w8, x0
-	csel	x9, xzr, x9, lt
+	csel	x9, xzr, x9, mi
 	add	x0, x8, x9
 	ret
 

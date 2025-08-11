@@ -8,7 +8,7 @@ func0000000000000078:
 
 func0000000000000026:
 	cmn	x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

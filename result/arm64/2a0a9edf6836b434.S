@@ -7,7 +7,7 @@ func0000000000000061:
 func00000000000000a6:
 	lsl	w8, w2, #1
 	cmp	w1, #0
-	csinc	w0, w0, w8, ge
+	csinc	w0, w0, w8, pl
 	ret
 
 func0000000000000021:

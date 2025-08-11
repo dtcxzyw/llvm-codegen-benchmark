@@ -41,7 +41,7 @@ func0000000000000101:
 
 func00000000000000cc:
 	cmp	w0, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w1, lsr #7
 	ret
 
@@ -130,7 +130,7 @@ func0000000000000281:
 func00000000000000c1:
 	tst	w1, #0xff
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000098:

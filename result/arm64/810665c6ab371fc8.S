@@ -3,7 +3,7 @@ func0000000000000146:
 	cset	w8, gt
 	cmp	w1, #0
 	and	w8, w8, w0
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func000000000000018a:

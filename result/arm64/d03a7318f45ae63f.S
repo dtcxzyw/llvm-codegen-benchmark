@@ -44,7 +44,7 @@ func0000000000000053:
 
 func000000000000001a:
 	cmp	w2, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	add	x0, x8, x0
 	ret
 

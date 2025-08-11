@@ -2,7 +2,7 @@ func00000000000000c8:
 	cmp	w2, #0
 	mov	w8, #39
 	mov	w9, #38
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	cmp	w0, w1
 	csel	w0, w9, w8, hi
 	ret

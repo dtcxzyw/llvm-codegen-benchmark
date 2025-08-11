@@ -22,7 +22,7 @@ func0000000000000084:
 func00000000000000c1:
 	mov	w8, #1
 	cmp	w0, #0
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	csel	w0, wzr, w8, eq
 	ret
 

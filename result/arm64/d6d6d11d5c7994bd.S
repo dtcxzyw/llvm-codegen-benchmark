@@ -31,9 +31,8 @@ func000000000000008c:
 	ret
 
 func00000000000000cc:
-	sub	x8, x1, x2
-	cmp	x8, #0
-	ccmp	x0, #0, #4, lt
+	cmp	x1, x2
+	ccmp	x0, #0, #4, mi
 	cset	w0, ne
 	ret
 
@@ -50,7 +49,7 @@ func0000000000000086:
 	mov	x9, #9223372036854775806
 	cmp	x8, x9
 	ccmp	x0, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000108:

@@ -22,7 +22,7 @@ func0000000000000101:
 func0000000000000cc6:
 	add	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, w0, #8, ge
+	ccmp	w8, w0, #8, pl
 	cset	w0, lt
 	ret
 
@@ -36,7 +36,7 @@ func0000000000000021:
 func00000000000000c6:
 	add	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, w0, #8, ge
+	ccmp	w8, w0, #8, pl
 	cset	w0, lt
 	ret
 

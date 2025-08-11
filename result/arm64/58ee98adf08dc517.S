@@ -1,15 +1,13 @@
 func0000000000000006:
 	and	w8, w2, #0x3f
-	add	w8, w8, w1
-	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	adds	w8, w8, w1
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000046:
 	and	w8, w2, #0x7fff0000
-	add	w8, w8, w1
-	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	adds	w8, w8, w1
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000061:

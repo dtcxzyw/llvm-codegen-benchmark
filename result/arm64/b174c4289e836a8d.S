@@ -15,7 +15,7 @@ func0000000000000141:
 func000000000000014c:
 	ubfx	w8, w0, #12, #1
 	cmp	w1, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000002c:

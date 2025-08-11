@@ -7,7 +7,7 @@ func0000000000000061:
 func0000000000000046:
 	lsr	x8, x2, #32
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000041:
@@ -31,6 +31,6 @@ func00000000000000e1:
 func0000000000000006:
 	lsr	x8, x2, #16
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 

@@ -32,7 +32,7 @@ func0000000000000021:
 func0000000000000086:
 	sub	w8, w2, #1
 	cmp	w8, #0
-	ccmp	w0, w1, #2, lt
+	ccmp	w0, w1, #2, mi
 	cset	w0, lo
 	ret
 

@@ -22,7 +22,7 @@ func0000000000000146:
 func0000000000000106:
 	and	w8, w1, #0xffff
 	cmp	w0, #0
-	ccmp	w0, w8, #2, ge
+	ccmp	w0, w8, #2, pl
 	cset	w0, hi
 	ret
 

@@ -21,13 +21,13 @@ func0000000000000061:
 func0000000000000006:
 	add	w8, w0, w1
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000046:
 	add	w8, w1, w0
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000004:

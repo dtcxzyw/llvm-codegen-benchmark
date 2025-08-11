@@ -81,7 +81,7 @@ func00000000000000cc:
 	movk	w8, #256, lsl #16
 	cmp	w0, w8
 	ccmp	w1, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000094a:

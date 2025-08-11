@@ -4,7 +4,7 @@ func000000000000019b:
 	mov	w9, #43
 	csinc	w8, w8, w0, ne
 	cmp	w1, #0
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	sub	w0, w9, w8
 	ret
 

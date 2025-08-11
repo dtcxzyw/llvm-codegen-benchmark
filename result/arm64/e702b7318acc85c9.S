@@ -25,7 +25,7 @@ func0000000000000318:
 
 func000000000000018c:
 	cmp	x1, #0
-	ccmp	x2, #1, #8, ge
+	ccmp	x2, #1, #8, pl
 	cset	w8, lt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

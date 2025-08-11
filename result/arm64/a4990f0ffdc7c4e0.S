@@ -61,7 +61,7 @@ func0000000000000026:
 	mov	w8, #20
 	tst	w1, w8
 	ccmp	x0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000028c:

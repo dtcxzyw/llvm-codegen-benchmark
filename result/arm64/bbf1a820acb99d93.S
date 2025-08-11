@@ -11,6 +11,6 @@ func0000000000000426:
 	sub	w8, w0, #115
 	cmn	w8, #2
 	ccmp	w1, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

@@ -9,7 +9,7 @@ func0000000000000000:
 func0000000000000004:
 	and	w8, w1, #0x1
 	cmp	w1, #0
-	cneg	w8, w8, lt
+	cneg	w8, w8, mi
 	sub	w0, w0, w8
 	ret
 

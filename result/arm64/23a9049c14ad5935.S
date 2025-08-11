@@ -14,7 +14,7 @@ func0000000000000004:
 
 func0000000000000006:
 	cmp	w0, #0
-	fcsel	s0, s0, s1, lt
+	fcsel	s0, s0, s1, mi
 	fcvt	d0, s0
 	ret
 

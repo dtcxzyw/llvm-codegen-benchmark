@@ -56,7 +56,7 @@ func0000000000000048:
 func0000000000000066:
 	add	x8, x2, #8
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func000000000000006c:
@@ -68,7 +68,7 @@ func000000000000006c:
 func0000000000000046:
 	sub	x8, x2, #40
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000008:
@@ -80,7 +80,7 @@ func0000000000000008:
 func000000000000004a:
 	sub	x8, x2, #88
 	cmp	x1, #0
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000078:
@@ -92,7 +92,7 @@ func0000000000000078:
 func0000000000000006:
 	add	x8, x2, #16
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000004:

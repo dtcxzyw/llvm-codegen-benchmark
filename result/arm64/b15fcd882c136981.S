@@ -177,7 +177,7 @@ func0000000000000146:
 	sxth	w8, w0
 	sxth	w9, w1
 	cmp	w8, #0
-	ccmp	w9, #0, #4, lt
+	ccmp	w9, #0, #4, mi
 	cset	w0, gt
 	ret
 

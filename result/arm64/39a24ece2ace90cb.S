@@ -41,14 +41,14 @@ func0000000000000066:
 	sxtb	w8, w1
 	add	x9, x2, #120
 	cmp	w8, #0
-	csel	x0, x0, x9, lt
+	csel	x0, x0, x9, mi
 	ret
 
 func0000000000000006:
 	sxtb	w8, w1
 	sub	x9, x2, #24
 	cmp	w8, #0
-	csel	x0, x0, x9, lt
+	csel	x0, x0, x9, mi
 	ret
 
 func000000000000004c:
@@ -69,6 +69,6 @@ func0000000000000046:
 	sxtb	w8, w1
 	sub	x9, x2, #128
 	cmp	w8, #0
-	csel	x0, x0, x9, lt
+	csel	x0, x0, x9, mi
 	ret
 

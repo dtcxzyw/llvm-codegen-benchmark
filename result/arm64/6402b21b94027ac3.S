@@ -1,6 +1,6 @@
 func0000000000000018:
 	cmp	w0, #0
-	csneg	w8, w1, w2, lt
+	csneg	w8, w1, w2, mi
 	add	w0, w0, w8
 	ret
 

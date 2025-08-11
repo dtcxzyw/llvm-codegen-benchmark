@@ -23,14 +23,14 @@ func0000000000000006:
 	sxtb	w8, w1
 	orr	w9, w0, #0x10
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000026:
 	sxtb	w8, w1
 	orr	w9, w0, #0x400
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000004:
@@ -59,6 +59,6 @@ func000000000000002a:
 	movk	w8, #36608, lsl #16
 	orr	w8, w0, w8
 	cmp	w9, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

@@ -36,6 +36,6 @@ func0000000000000006:
 	csel	x8, x1, x2, ne
 	cmp	x8, #0
 	mov	w8, #2
-	cinc	x0, x8, lt
+	cinc	x0, x8, mi
 	ret
 

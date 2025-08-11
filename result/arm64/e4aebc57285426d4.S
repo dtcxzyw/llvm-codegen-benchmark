@@ -1,6 +1,6 @@
 func000000000000000c:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

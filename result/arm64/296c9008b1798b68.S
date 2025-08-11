@@ -1,7 +1,7 @@
 func0000000000000006:
 	and	w8, w0, #0xff
 	cmp	w1, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000001:

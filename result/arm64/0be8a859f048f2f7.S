@@ -6,7 +6,7 @@ func0000000000000006:
 
 func000000000000001a:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	add	x0, x0, w8, sxtw #3
 	ret
 

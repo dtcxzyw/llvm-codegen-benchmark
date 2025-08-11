@@ -80,7 +80,7 @@ func0000000000000141:
 func0000000000000106:
 	cmp	w1, w2
 	ccmp	w0, #0, #0, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002c:

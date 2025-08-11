@@ -23,13 +23,13 @@ func00000000000000ca:
 	fcvtzs	w8, s0
 	cmp	w8, #0
 	ccmp	w0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000146:
 	fcvtzs	w8, s0
 	cmp	w8, #0
-	ccmp	w0, #0, #4, lt
+	ccmp	w0, #0, #4, mi
 	cset	w0, gt
 	ret
 

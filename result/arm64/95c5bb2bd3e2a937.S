@@ -29,7 +29,7 @@ func00000000000000c1:
 	mov	w8, #361
 	cmp	w1, #0
 	mov	w9, #328
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, #0
 	csel	w0, w8, w9, eq
 	ret
@@ -71,6 +71,6 @@ func000000000000014a:
 	asr	w8, w1, #31
 	cmp	w0, #0
 	orr	w8, w8, #0x1
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 

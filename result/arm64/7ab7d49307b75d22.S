@@ -29,7 +29,7 @@ func00000000000000e6:
 func0000000000000321:
 	cmp	w1, #0
 	add	w9, w0, #1
-	csinc	w8, w1, wzr, ge
+	csinc	w8, w1, wzr, pl
 	cmp	w9, w8
 	cset	w0, eq
 	ret

@@ -33,7 +33,7 @@ func0000000000000102:
 func000000000000030c:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	x1, x2, #0, ge
+	ccmp	x1, x2, #0, pl
 	cset	w0, ne
 	ret
 

@@ -9,7 +9,7 @@ func0000000000000006:
 	orr	x8, x1, x2
 	cmp	w0, #0
 	orr	x9, x8, #0x200000000
-	csel	x0, x9, x8, lt
+	csel	x0, x9, x8, mi
 	ret
 
 func0000000000000061:

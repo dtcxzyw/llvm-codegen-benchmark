@@ -36,13 +36,13 @@ func000000000000014a:
 func00000000000000ca:
 	cmp	x1, #0
 	ccmp	x2, #0, #0, gt
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 
 func0000000000000146:
 	cmp	x1, #0
-	ccmp	x2, #0, #4, lt
+	ccmp	x2, #0, #4, mi
 	cset	w8, gt
 	and	w0, w0, w8
 	ret

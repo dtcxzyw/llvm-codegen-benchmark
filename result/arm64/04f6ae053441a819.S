@@ -145,14 +145,14 @@ func0000000000000d8c:
 func0000000000000546:
 	add	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #3, #0, ge
+	ccmp	w8, #3, #0, pl
 	cset	w0, gt
 	ret
 
 func00000000000000c6:
 	add	w8, w1, w2
 	cmp	w0, #0
-	ccmn	w8, #6, #8, ge
+	ccmn	w8, #6, #8, pl
 	cset	w0, lt
 	ret
 

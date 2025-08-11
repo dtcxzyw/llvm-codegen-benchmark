@@ -12,7 +12,7 @@ func0000000000000000:
 func0000000000000020:
 	subs	w8, w2, #1
 	add	w9, w2, #2
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	sub	w9, w0, w1
 	sub	w0, w9, w8, asr #2
 	ret

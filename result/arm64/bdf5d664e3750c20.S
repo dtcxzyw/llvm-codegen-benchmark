@@ -27,7 +27,7 @@ func00000000000000cc:
 	mov	w8, #7
 	cmp	w1, #0
 	movk	w8, #256, lsl #16
-	ccmp	w2, w8, #4, lt
+	ccmp	w2, w8, #4, mi
 	csel	w0, w0, w1, ne
 	ret
 

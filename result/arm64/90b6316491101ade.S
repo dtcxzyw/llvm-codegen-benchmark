@@ -22,7 +22,7 @@ func0000000000000008:
 	csel	x8, x9, x8, lt
 	adds	x9, x8, #7
 	add	x8, x8, #14
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	and	x8, x8, #0xfffffffffffffff8
 	add	x0, x0, x8
 	ret

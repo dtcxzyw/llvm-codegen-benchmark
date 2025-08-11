@@ -23,7 +23,7 @@ func0000000000000008:
 
 func0000000000000006:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	tst	w0, #0x1
 	csinv	w0, w8, wzr, eq
 	ret

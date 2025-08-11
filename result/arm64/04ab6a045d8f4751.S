@@ -64,7 +64,7 @@ func000000000000004c:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	cmp	w8, #0
-	ccmp	w9, #22, #4, ge
+	ccmp	w9, #22, #4, pl
 	cset	w0, eq
 	ret
 
@@ -73,7 +73,7 @@ func0000000000000182:
 	and	w9, w0, #0xff
 	cmp	w9, #95
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000020c:

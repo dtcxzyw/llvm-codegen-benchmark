@@ -5,7 +5,7 @@ func0000000000000001:
 
 func0000000000000006:
 	cmp	x0, #0
-	fcsel	s0, s0, s1, lt
+	fcsel	s0, s0, s1, mi
 	ret
 
 func0000000000000014:

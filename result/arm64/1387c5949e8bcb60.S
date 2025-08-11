@@ -3,7 +3,7 @@ func0000000000000006:
 	cmp	w1, #0
 	mov	w10, #26
 	movk	w8, #20164, lsl #16
-	csel	w9, w0, w1, lt
+	csel	w9, w0, w1, mi
 	umull	x8, w9, w8
 	lsr	x8, x8, #35
 	msub	w0, w8, w10, w9

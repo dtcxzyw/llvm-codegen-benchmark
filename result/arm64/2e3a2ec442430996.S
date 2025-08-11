@@ -1,6 +1,6 @@
 func0000000000000307:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	csel	w8, w1, w8, eq
 	tst	w8, #0x1
 	mov	w8, #8

@@ -7,7 +7,7 @@ func00000000000001e1:
 
 func00000000000001e6:
 	cmp	w0, #0
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	add	x0, x8, #32
 	ret
 
@@ -43,7 +43,7 @@ func00000000000001c6:
 	add	x8, x2, #8
 	sub	x9, x1, #8
 	cmp	w0, #0
-	csel	x0, x9, x8, lt
+	csel	x0, x9, x8, mi
 	ret
 
 func00000000000001c1:

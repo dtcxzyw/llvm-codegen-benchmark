@@ -19,7 +19,7 @@ func0000000000000002:
 	add	x8, x9, x8, lsr #63
 	subs	x9, x8, #1
 	add	x8, x8, #2
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	neg	x0, x8, asr #2
 	ret
 

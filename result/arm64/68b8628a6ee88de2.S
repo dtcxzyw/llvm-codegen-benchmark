@@ -11,7 +11,7 @@ func000000000000000c:
 	mov	w8, #1000
 	madd	w8, w2, w8, w1
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -28,7 +28,7 @@ func0000000000000150:
 func000000000000014c:
 	add	w8, w2, w2, lsl #1
 	cmn	w8, w1
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

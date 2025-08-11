@@ -79,14 +79,14 @@ func000000000000000d:
 	mov	w8, #-2147483648
 	cmp	x1, #0
 	mov	w9, #-1073741824
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	orr	w0, w0, w8
 	ret
 
 func000000000000000c:
 	mov	w8, #1
 	cmp	x1, #0
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	orr	w0, w0, w8
 	ret
 

@@ -4,7 +4,7 @@ func000000000000001b:
 	cmp	x2, x8
 	csel	x9, x2, x8, lo
 	cmp	x1, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	mov	w9, #12
 	madd	x0, x8, x9, x0
 	ret

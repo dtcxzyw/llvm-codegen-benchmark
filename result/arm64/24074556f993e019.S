@@ -12,7 +12,7 @@ func000000000000000a:
 func000000000000004a:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #3
 	cset	w0, lt
 	ret
@@ -20,7 +20,7 @@ func000000000000004a:
 func0000000000000048:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #3
 	cset	w0, lo
 	ret
@@ -28,7 +28,7 @@ func0000000000000048:
 func0000000000000041:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #3
 	cset	w0, eq
 	ret
@@ -41,19 +41,17 @@ func0000000000000046:
 	ret
 
 func0000000000000006:
-	add	w8, w1, #5
+	adds	w8, w1, #5
 	add	w9, w1, #12
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #3
 	cset	w0, gt
 	ret
 
 func0000000000000007:
-	add	w8, w1, #7
+	adds	w8, w1, #7
 	add	w9, w1, #14
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #3
 	cset	w0, ge
 	ret
@@ -61,10 +59,9 @@ func0000000000000007:
 func0000000000000008:
 	mov	w8, #16383
 	mov	w9, #32766
-	add	w8, w1, w8
+	adds	w8, w1, w8
 	add	w9, w1, w9
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8, asr #14
 	cset	w0, lo
 	ret

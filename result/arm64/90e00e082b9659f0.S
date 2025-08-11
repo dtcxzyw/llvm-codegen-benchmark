@@ -9,9 +9,8 @@ func0000000000000026:
 	ret
 
 func0000000000000006:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	cmp	w1, w2
+	csel	w0, wzr, w0, mi
 	ret
 
 func0000000000000001:

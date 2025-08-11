@@ -19,7 +19,7 @@ func0000000000000181:
 
 func000000000000002c:
 	cmp	w1, #0
-	ccmn	w0, #1, #4, ge
+	ccmn	w0, #1, #4, pl
 	cset	w0, eq
 	ret
 
@@ -33,7 +33,7 @@ func00000000000000c1:
 	and	x8, x1, #0xe
 	cmp	x8, #12
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000114:

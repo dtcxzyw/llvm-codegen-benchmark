@@ -129,7 +129,7 @@ func0000000000000090:
 
 func0000000000000302:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w0, #0xff
 	orr	w8, w8, w1
 	cset	w9, eq

@@ -2,7 +2,7 @@ func000000000000004c:
 	and	w8, w0, #0x7fffffff
 	cmp	w0, #0
 	and	w8, w8, #0xffffffef
-	ccmp	w8, #8, #4, ge
+	ccmp	w8, #8, #4, pl
 	cset	w0, eq
 	ret
 

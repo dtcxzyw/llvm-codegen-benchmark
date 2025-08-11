@@ -1,6 +1,6 @@
 func0000000000000064:
 	cmp	w0, #0
-	fccmp	s0, s1, #4, lt
+	fccmp	s0, s1, #4, mi
 	cset	w0, gt
 	ret
 
@@ -72,7 +72,7 @@ func00000000000000ac:
 
 func000000000000006c:
 	cmp	w0, #0
-	fccmp	s0, s1, #8, lt
+	fccmp	s0, s1, #8, mi
 	cset	w0, ge
 	ret
 

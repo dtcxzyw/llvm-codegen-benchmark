@@ -101,7 +101,7 @@ func00000000000004ca:
 	add	w8, w2, #2
 	cmp	w8, w0
 	ccmp	w1, #0, #8, le
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000004c7:

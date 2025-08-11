@@ -60,7 +60,7 @@ func0000000000000024:
 
 func0000000000000026:
 	cmp	w0, #0
-	ccmp	x1, #0, #0, lt
+	ccmp	x1, #0, #0, mi
 	cset	w0, eq
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000002c:
 	cmp	w1, #0
-	ccmp	x0, #4, #0, lt
+	ccmp	x0, #4, #0, mi
 	cset	w0, eq
 	ret
 

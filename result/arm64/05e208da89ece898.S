@@ -31,7 +31,7 @@ func0000000000000018:
 	sxtb	w8, w2
 	cmp	w8, #0
 	mov	w8, #21
-	csel	x8, x1, x8, lt
+	csel	x8, x1, x8, mi
 	add	x0, x8, x0
 	ret
 

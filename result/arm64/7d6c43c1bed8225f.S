@@ -1,8 +1,7 @@
 func0000000000000000:
-	add	w8, w2, #1899
+	adds	w8, w2, #1899
 	add	w9, w2, #1902
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w8, w1, w8, asr #2
 	sub	w0, w8, w0
 	ret

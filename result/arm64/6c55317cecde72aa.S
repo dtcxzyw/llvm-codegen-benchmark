@@ -59,7 +59,7 @@ func000000000000000c:
 	mov	w8, #2048
 	cmp	w9, #0
 	mov	w9, #4096
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	orr	w0, w0, w8
 	ret
 

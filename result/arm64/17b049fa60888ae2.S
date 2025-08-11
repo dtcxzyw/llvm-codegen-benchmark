@@ -89,20 +89,18 @@ func000000000000008c:
 	ret
 
 func0000000000000005:
-	sub	x8, x2, x1
+	subs	x8, x2, x1
 	add	x9, x8, #31
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x8, x8, #5
 	cmp	w0, w8
 	cset	w0, ls
 	ret
 
 func0000000000000008:
-	sub	x8, x2, x1
+	subs	x8, x2, x1
 	add	x9, x8, #31
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x8, x8, #5
 	cmp	w0, w8
 	cset	w0, hi

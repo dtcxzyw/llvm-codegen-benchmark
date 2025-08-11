@@ -2,7 +2,7 @@ func000000000000108c:
 	cmp	x1, #0
 	ccmp	x2, #0, #4, ne
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000a50c:
@@ -19,7 +19,7 @@ func000000000000c098:
 	cmp	x1, #0
 	ccmp	x2, #0, #0, ne
 	ccmp	w0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000001090:

@@ -2,7 +2,7 @@ func0000000000000cd9:
 	add	x8, x2, #1
 	cmp	x8, x0
 	ccmp	w1, #0, #8, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000d99:

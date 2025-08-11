@@ -40,7 +40,7 @@ func0000000000000006:
 	sxtb	w8, w2
 	and	w9, w1, w0
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w9
 	ret
 

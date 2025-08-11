@@ -62,7 +62,7 @@ func00000000000000cc:
 	orr	w8, w1, w2
 	cmp	w0, #0
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000021:

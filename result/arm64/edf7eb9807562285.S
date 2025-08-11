@@ -19,6 +19,6 @@ func0000000000000146:
 	cset	w8, gt
 	cmp	x0, #0
 	and	w8, w1, w8
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 

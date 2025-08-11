@@ -105,7 +105,7 @@ func0000000000000054:
 func0000000000000a8c:
 	sub	w8, w2, #4
 	cmp	w0, #0
-	ccmp	w1, w8, #0, ge
+	ccmp	w1, w8, #0, pl
 	cset	w0, gt
 	ret
 

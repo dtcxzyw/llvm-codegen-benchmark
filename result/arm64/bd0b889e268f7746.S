@@ -12,17 +12,16 @@ func00000000000000aa:
 	ret
 
 func0000000000000026:
-	add	x8, x0, x1
+	adds	x8, x0, x1
 	sub	x9, x8, #399
-	cmp	x8, #0
-	csel	x0, x9, x8, lt
+	csel	x0, x9, x8, mi
 	ret
 
 func00000000000000a6:
 	adds	x8, x0, x1
 	sub	x9, x8, #35, lsl #12
 	sub	x9, x9, #2736
-	csel	x0, x9, x8, lt
+	csel	x0, x9, x8, mi
 	ret
 
 func00000000000001b8:

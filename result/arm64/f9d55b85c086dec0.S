@@ -1,7 +1,7 @@
 func0000000000000025:
 	adds	w8, w1, #16
 	add	w9, w1, #31
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w8, w0, w8, asr #4
 	add	w0, w8, #9
 	ret
@@ -9,25 +9,23 @@ func0000000000000025:
 func0000000000000021:
 	cmn	w1, #1
 	add	w8, w1, #4
-	csinc	w8, w8, w1, lt
+	csinc	w8, w8, w1, mi
 	add	w8, w0, w8, asr #2
 	add	w0, w8, #1
 	ret
 
 func0000000000000001:
-	add	w8, w1, #1
-	add	w9, w1, #4
-	cmp	w8, #0
-	csinc	w8, w9, w1, lt
+	cmn	w1, #1
+	add	w8, w1, #4
+	csinc	w8, w8, w1, mi
 	add	w8, w0, w8, asr #2
 	add	w0, w8, #1
 	ret
 
 func0000000000000005:
-	add	w8, w1, #1
-	add	w9, w1, #4
-	cmp	w8, #0
-	csinc	w8, w9, w1, lt
+	cmn	w1, #1
+	add	w8, w1, #4
+	csinc	w8, w8, w1, mi
 	add	w8, w0, w8, asr #2
 	sub	w0, w8, #1
 	ret

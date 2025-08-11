@@ -103,7 +103,7 @@ func0000000000001042:
 func0000000000000b0c:
 	add	w8, w2, #7
 	cmp	w0, #0
-	ccmp	w8, w1, #0, ge
+	ccmp	w8, w1, #0, pl
 	cset	w0, ne
 	ret
 

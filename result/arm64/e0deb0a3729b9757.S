@@ -1,7 +1,7 @@
 func0000000000000182:
 	tst	w1, #0xff
 	ccmp	w2, #0, #8, ne
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

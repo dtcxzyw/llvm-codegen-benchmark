@@ -37,7 +37,7 @@ func000000000000002b:
 func000000000000001b:
 	cmp	w2, #0
 	mov	w9, #320
-	cset	w8, lt
+	cset	w8, mi
 	tst	w8, w1
 	mov	w8, #316
 	csel	x8, x9, x8, ne

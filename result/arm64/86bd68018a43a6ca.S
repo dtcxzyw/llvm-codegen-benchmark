@@ -1,11 +1,10 @@
 func0000000000000000:
-	add	x8, x2, #15
+	adds	x8, x2, #15
 	add	x9, x2, #30
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x9, x1, #15
 	cmp	x1, #0
-	csel	x9, x9, x1, lt
+	csel	x9, x9, x1, mi
 	and	x8, x8, #0xfffffffffffffff0
 	and	x9, x9, #0xfffffffffffffff0
 	add	x9, x0, x9
@@ -15,10 +14,10 @@ func0000000000000000:
 func000000000000004a:
 	adds	x8, x2, #15
 	add	x9, x2, #30
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x9, x1, #15
 	cmp	x1, #0
-	csel	x9, x9, x1, lt
+	csel	x9, x9, x1, mi
 	and	x8, x8, #0xfffffffffffffff0
 	and	x9, x9, #0xfffffffffffffff0
 	add	x9, x0, x9

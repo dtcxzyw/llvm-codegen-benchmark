@@ -29,7 +29,7 @@ func000000000000004c:
 	sxtb	w8, w0
 	tst	w1, #0x8
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000102:

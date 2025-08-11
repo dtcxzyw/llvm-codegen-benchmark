@@ -27,7 +27,7 @@ func0000000000000081:
 
 func00000000000000ca:
 	cmp	w2, #0
-	ccmn	w1, #1, #4, lt
+	ccmn	w1, #1, #4, mi
 	csel	w0, wzr, w0, gt
 	ret
 

@@ -111,7 +111,7 @@ func0000000000000019:
 	sxth	w9, w1
 	mov	w8, #-3
 	cmp	w9, #0
-	csel	w8, wzr, w8, lt
+	csel	w8, wzr, w8, mi
 	add	w0, w8, w0
 	ret
 

@@ -68,7 +68,7 @@ func0000000000000026:
 	sxth	w8, w0
 	tst	w1, #0x1
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000198:
@@ -113,7 +113,7 @@ func00000000000000c1:
 	sxth	w8, w0
 	tst	w1, #0x8
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000018a:

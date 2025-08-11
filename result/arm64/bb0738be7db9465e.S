@@ -10,7 +10,7 @@ func0000000000000029:
 func0000000000000018:
 	cmp	x2, #0
 	add	x9, x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	tst	w8, w0
 	csel	x0, xzr, x9, ne
 	ret

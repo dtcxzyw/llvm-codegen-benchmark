@@ -3,7 +3,7 @@ func0000000000000000:
 	add	x9, x0, #3
 	cmp	x0, #0
 	mul	x8, x1, x8
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	add	x8, x8, x9, asr #2
 	sub	x8, x8, #175, lsl #12
 	sub	x0, x8, #2250

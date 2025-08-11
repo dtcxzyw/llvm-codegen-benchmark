@@ -2,7 +2,7 @@ func0000000000000024:
 	add	x8, x1, #3
 	cmp	x1, #0
 	add	x9, x0, #175, lsl #12
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x9, x9, #2667
 	sub	x8, x2, x8, asr #2
 	add	x0, x8, x9
@@ -37,7 +37,7 @@ func0000000000000035:
 func0000000000000015:
 	add	x8, x2, #3
 	cmp	x2, #0
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	sub	x8, x1, x8, asr #2
 	add	x8, x8, x0
 	add	x0, x8, #31

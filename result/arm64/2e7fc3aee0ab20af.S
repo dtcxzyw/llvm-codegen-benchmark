@@ -99,7 +99,7 @@ func0000000000000c21:
 func0000000000000586:
 	sxtb	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #1, #4, lt
+	ccmp	w1, #1, #4, mi
 	cset	w0, ne
 	ret
 

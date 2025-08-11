@@ -7,7 +7,7 @@ func0000000000000021:
 func0000000000000026:
 	cmp	x1, #1
 	ccmp	w0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000000c1:
@@ -38,7 +38,7 @@ func0000000000000101:
 
 func00000000000000c8:
 	cmp	x1, #0
-	ccmp	w0, #4, #0, lt
+	ccmp	w0, #4, #0, mi
 	cset	w0, hi
 	ret
 

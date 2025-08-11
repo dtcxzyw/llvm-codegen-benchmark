@@ -77,7 +77,7 @@ func0000000000000034:
 func0000000000000066:
 	mov	w8, #16
 	cmp	w0, #0
-	csinc	w0, w8, w0, lt
+	csinc	w0, w8, w0, mi
 	ret
 
 func0000000000000064:

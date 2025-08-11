@@ -150,7 +150,7 @@ func0000000000000141:
 func0000000000000026:
 	mov	w8, w2
 	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	ccmp	x1, x8, #4, pl
 	cset	w0, eq
 	ret
 

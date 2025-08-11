@@ -50,7 +50,7 @@ func0000000000000b0c:
 func000000000000010c:
 	sub	w8, w1, #2
 	cmp	w0, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, lo
 	ret
 
@@ -86,7 +86,7 @@ func0000000000001a8c:
 func0000000000000a8c:
 	add	w8, w1, #1
 	cmp	w0, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, gt
 	ret
 

@@ -159,7 +159,7 @@ func0000000000000208:
 
 func000000000000030c:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmn	x0, #16
 	orr	w8, w8, w1
 	cset	w9, lt
@@ -169,7 +169,7 @@ func000000000000030c:
 
 func0000000000000318:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	x0, #0
 	orr	w8, w8, w1
 	cset	w9, ne
@@ -294,7 +294,7 @@ func000000000000020c:
 
 func0000000000000302:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	x0, #0
 	orr	w8, w1, w8
 	cset	w9, eq

@@ -106,7 +106,7 @@ func0000000000000088:
 func0000000000000046:
 	fcmp	d0, #0.0
 	ccmp	w0, #0, #0, mi
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002c:

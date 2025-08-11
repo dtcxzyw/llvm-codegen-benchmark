@@ -125,7 +125,7 @@ func000000000000204c:
 	cmp	w1, #8
 	ccmp	w2, #3, #0, ne
 	ccmp	w0, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000d02:

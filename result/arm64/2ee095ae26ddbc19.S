@@ -8,7 +8,7 @@ func0000000000000001:
 func0000000000000006:
 	asr	w8, w1, #16
 	cmp	w0, #0
-	csinc	w8, w8, wzr, ge
+	csinc	w8, w8, wzr, pl
 	sxtw	x0, w8
 	ret
 

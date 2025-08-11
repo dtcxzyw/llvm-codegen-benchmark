@@ -84,7 +84,7 @@ func00000000000000c6:
 	cset	w8, lt
 	cmp	w0, #0
 	and	w8, w1, w8
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000141:

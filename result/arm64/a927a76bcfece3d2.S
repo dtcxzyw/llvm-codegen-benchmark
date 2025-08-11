@@ -42,7 +42,7 @@ func000000000000018a:
 
 func00000000000000c6:
 	tst	w1, w2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -76,7 +76,7 @@ func000000000000010c:
 func00000000000000cc:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, ne
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -84,7 +84,7 @@ func00000000000000cc:
 func00000000000000c1:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, eq
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

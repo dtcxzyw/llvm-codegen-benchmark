@@ -40,7 +40,7 @@ func000000000000002c:
 func00000000000000c1:
 	and	w8, w2, #0x7
 	cmp	w1, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	cmp	w8, #5
 	cset	w0, eq
 	ret
@@ -48,7 +48,7 @@ func00000000000000c1:
 func00000000000000d8:
 	and	w8, w2, #0x7
 	cmp	w1, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	cmp	w8, #4
 	cset	w0, hi
 	ret

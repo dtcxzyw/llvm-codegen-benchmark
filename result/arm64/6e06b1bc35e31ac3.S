@@ -46,7 +46,7 @@ func00000000000000ca:
 	mov	w8, #2
 	cmp	w0, #0
 	mov	w9, #4
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	csel	x0, x9, x8, gt
 	ret
 

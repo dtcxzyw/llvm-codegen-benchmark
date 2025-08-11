@@ -6,7 +6,7 @@ func0000000000000024:
 
 func000000000000006a:
 	cmp	x0, #0
-	csinc	x0, xzr, x1, lt
+	csinc	x0, xzr, x1, mi
 	ret
 
 func0000000000000006:

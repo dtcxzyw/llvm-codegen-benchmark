@@ -59,7 +59,7 @@ func0000000000000019:
 	mov	x8, #4294967296
 	cmp	w1, #0
 	mov	w9, w0
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	orr	x0, x8, x9
 	ret
 

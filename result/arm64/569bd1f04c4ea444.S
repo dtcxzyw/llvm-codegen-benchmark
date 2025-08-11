@@ -9,7 +9,7 @@ func00000000000004c6:
 	mov	x8, #-9223372036854775808
 	cmp	x0, #0
 	sub	x8, x8, x0
-	ccmp	x1, x8, #0, lt
+	ccmp	x1, x8, #0, mi
 	cset	w0, lt
 	ret
 
@@ -25,7 +25,7 @@ func0000000000000c84:
 func0000000000000486:
 	neg	x8, x0
 	cmp	x0, #0
-	ccmp	x1, x8, #2, lt
+	ccmp	x1, x8, #2, mi
 	cset	w0, lo
 	ret
 

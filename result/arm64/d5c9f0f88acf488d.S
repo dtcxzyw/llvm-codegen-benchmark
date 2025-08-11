@@ -41,7 +41,7 @@ func000000000000002a:
 	csel	w8, w9, w8, eq
 	csel	w9, w11, w10, eq
 	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000318:

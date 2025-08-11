@@ -43,7 +43,7 @@ func0000000000000020:
 	add	x9, x1, #3
 	cmp	x1, #0
 	movk	w8, #2, lsl #16
-	csel	x9, x9, x1, lt
+	csel	x9, x9, x1, mi
 	madd	x8, x2, x8, x0
 	add	x0, x8, x9, asr #2
 	ret

@@ -69,7 +69,7 @@ func00000000000000c9:
 func000000000000004d:
 	sub	w8, w1, #1
 	cmp	w0, #0
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 
 func0000000000000043:

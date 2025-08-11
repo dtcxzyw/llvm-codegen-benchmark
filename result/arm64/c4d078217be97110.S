@@ -46,6 +46,6 @@ func0000000000000054:
 func0000000000000026:
 	mov	w8, #-5
 	cmp	x0, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

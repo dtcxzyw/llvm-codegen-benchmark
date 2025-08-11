@@ -158,7 +158,7 @@ func000000000000006f:
 	mov	w8, #232
 	cmp	w1, #0
 	mov	w9, #264
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x8, x0, x8
 	add	x0, x8, #16
 	ret

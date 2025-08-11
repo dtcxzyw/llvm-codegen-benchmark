@@ -8,8 +8,8 @@ func0000000000000006:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #20864
 	movk	w9, #1, lsl #16
-	msub	x8, x8, x9, x1
-	cmp	x8, #0
-	csel	x0, x0, x8, lt
+	mul	x8, x8, x9
+	subs	x8, x1, x8
+	csel	x0, x0, x8, mi
 	ret
 

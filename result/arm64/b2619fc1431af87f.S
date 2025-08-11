@@ -15,7 +15,7 @@ func0000000000000085:
 func0000000000000018:
 	sub	x8, x2, x1
 	cmp	x1, #0
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	add	x0, x8, x0
 	ret
 

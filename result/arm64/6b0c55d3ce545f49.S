@@ -42,7 +42,7 @@ func000000000000070a:
 func00000000000000c6:
 	sub	x8, x1, x0
 	cmp	x0, #0
-	ccmp	x8, #1, #0, lt
+	ccmp	x8, #1, #0, mi
 	cset	w0, lt
 	ret
 

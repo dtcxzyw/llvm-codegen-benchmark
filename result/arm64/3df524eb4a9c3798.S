@@ -13,7 +13,7 @@ func0000000000000012:
 func0000000000000018:
 	sxth	w8, w1
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	lsl	w0, w8, #6
 	ret
 

@@ -25,19 +25,19 @@ func0000000000000011:
 func000000000000000d:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func0000000000000015:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w0, w1, w0, lt
+	csel	w0, w1, w0, mi
 	ret
 
 func000000000000000c:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func0000000000000010:

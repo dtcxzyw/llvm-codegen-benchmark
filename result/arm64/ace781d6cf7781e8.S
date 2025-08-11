@@ -3,7 +3,7 @@ func00000000000000cb:
 	udiv	w8, w8, w2
 	cmp	w0, w8
 	ccmp	w1, #0, #8, lt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000010a:

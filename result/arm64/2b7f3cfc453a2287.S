@@ -1,6 +1,5 @@
 func000000000000000a:
-	sub	w8, w2, w1
-	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	cmp	w2, w1
+	csel	w0, wzr, w0, mi
 	ret
 

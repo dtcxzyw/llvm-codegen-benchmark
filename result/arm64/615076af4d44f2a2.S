@@ -17,7 +17,7 @@ func000000000000000b:
 
 func0000000000000037:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	add	x0, x0, w8, uxtw #3
 	ret
 

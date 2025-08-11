@@ -35,7 +35,7 @@ func0000000000000181:
 
 func0000000000000186:
 	cmp	w0, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w2, #0
 	bic	w8, w8, w1
 	csel	w0, wzr, w8, eq
@@ -72,7 +72,7 @@ func0000000000000146:
 	cset	w8, gt
 	cmp	w0, #0
 	orr	w8, w1, w8
-	cset	w9, lt
+	cset	w9, mi
 	and	w0, w9, w8
 	ret
 

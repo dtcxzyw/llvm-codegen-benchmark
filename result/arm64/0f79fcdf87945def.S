@@ -1,7 +1,7 @@
 func000000000000006c:
 	add	w8, w1, #63
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #6
 	sub	w8, w8, #1
 	cmp	x0, x8
@@ -11,7 +11,7 @@ func000000000000006c:
 func0000000000000061:
 	add	w8, w1, #63
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #6
 	sub	w8, w8, #1
 	cmp	x0, x8
@@ -21,7 +21,7 @@ func0000000000000061:
 func0000000000000054:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #3
 	sub	w8, w8, #1
 	cmp	x0, x8
@@ -31,7 +31,7 @@ func0000000000000054:
 func0000000000000041:
 	add	w8, w1, #31
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #5
 	add	w8, w8, #1
 	cmp	x0, x8
@@ -53,7 +53,7 @@ func0000000000000074:
 func00000000000000e1:
 	add	w8, w1, #3
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #2
 	add	w8, w8, #1
 	cmp	x0, x8
@@ -63,7 +63,7 @@ func00000000000000e1:
 func000000000000004c:
 	add	w8, w1, #15
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #4
 	sub	w8, w8, #1
 	cmp	x0, x8

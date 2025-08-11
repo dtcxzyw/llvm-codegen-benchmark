@@ -1,9 +1,8 @@
 func0000000000000006:
-	sub	w9, w0, #1
 	mov	w8, #43
-	cmp	w9, #0
+	cmp	w0, #1
 	mov	w9, #45
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000004:

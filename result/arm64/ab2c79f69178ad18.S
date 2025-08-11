@@ -57,7 +57,7 @@ func0000000000000084:
 func00000000000000d9:
 	cmp	x0, x1
 	ccmp	w2, #0, #8, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000027:
@@ -241,7 +241,7 @@ func000000000000014b:
 func00000000000000c5:
 	cmp	x0, x1
 	ccmp	w2, #0, #8, hi
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000198:

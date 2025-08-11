@@ -13,7 +13,7 @@ func0000000000000026:
 	cset	w8, eq
 	cmp	w0, #0
 	bic	w8, w8, w1
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000021:

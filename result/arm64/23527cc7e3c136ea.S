@@ -1,7 +1,6 @@
 func0000000000000000:
-	add	w8, w1, #3
-	cmp	w8, #0
-	csinv	x0, x0, xzr, ge
+	cmn	w1, #3
+	csinv	x0, x0, xzr, pl
 	ret
 
 func0000000000000002:

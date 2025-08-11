@@ -9,7 +9,7 @@ func0000000000000021:
 
 func0000000000000146:
 	cmp	w1, #0
-	ccmn	w2, #1, #4, lt
+	ccmn	w2, #1, #4, mi
 	cset	w8, gt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

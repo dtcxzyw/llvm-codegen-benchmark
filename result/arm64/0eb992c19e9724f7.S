@@ -1,7 +1,7 @@
 func0000000000000006:
 	asr	w8, w1, #16
 	cmp	w0, #0
-	csinc	w0, w8, wzr, lt
+	csinc	w0, w8, wzr, mi
 	ret
 
 func0000000000000001:

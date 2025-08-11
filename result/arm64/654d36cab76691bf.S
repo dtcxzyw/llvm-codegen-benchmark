@@ -34,7 +34,7 @@ func00000000000000c1:
 	sxth	w8, w0
 	tst	w1, #0x200
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002c:

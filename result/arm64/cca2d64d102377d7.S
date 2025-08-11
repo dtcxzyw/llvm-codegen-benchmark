@@ -22,9 +22,8 @@ func0000000000000021:
 
 func0000000000000006:
 	mov	x8, #4611686018427387904
-	add	x8, x2, x8
-	cmp	x8, #0
-	csel	x0, x0, x1, lt
+	cmn	x2, x8
+	csel	x0, x0, x1, mi
 	ret
 
 func0000000000000024:

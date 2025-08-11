@@ -30,7 +30,7 @@ func0000000000000021:
 
 func00000000000000ca:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w0, w8
 	cset	w9, gt
@@ -40,7 +40,7 @@ func00000000000000ca:
 
 func00000000000000c1:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w0, w8
 	cset	w9, eq
@@ -50,7 +50,7 @@ func00000000000000c1:
 
 func00000000000000c8:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w0, w8
 	cset	w9, hi
@@ -60,7 +60,7 @@ func00000000000000c8:
 
 func00000000000000cb:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w0, w8
 	cset	w9, ge

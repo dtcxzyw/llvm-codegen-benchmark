@@ -3,7 +3,7 @@ func000000000000004c:
 	sub	w9, w0, #399
 	cmp	w0, #0
 	movk	w8, #20971, lsl #16
-	csel	w9, w9, w0, lt
+	csel	w9, w9, w0, mi
 	smull	x8, w9, w8
 	asr	x8, x8, #39
 	add	w0, w8, w8, lsr #31

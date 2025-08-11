@@ -19,7 +19,7 @@ func0000000000000086:
 	and	w9, w1, #0xff
 	sub	w9, w9, #66
 	cmp	w8, #0
-	ccmp	w9, #7, #2, lt
+	ccmp	w9, #7, #2, mi
 	cset	w0, lo
 	ret
 

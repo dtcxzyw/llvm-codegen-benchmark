@@ -51,7 +51,7 @@ func0000000000000141:
 
 func0000000000000186:
 	cmp	w0, #0
-	ccmp	w1, #0, #4, lt
+	ccmp	w1, #0, #4, mi
 	cset	w8, ne
 	sbfx	w0, w8, #0, #1
 	ret

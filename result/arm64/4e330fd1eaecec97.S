@@ -6,10 +6,10 @@ func0000000000000042:
 	ret
 
 func000000000000028c:
-	sub	x8, x2, x1
-	cmp	x8, #0
-	ccmp	x8, x0, #0, ge
-	cset	w0, gt
+	subs	x8, x2, x1
+	cset	w9, mi
+	cmp	x8, x0
+	csinc	w0, w9, wzr, le
 	ret
 
 func0000000000000102:

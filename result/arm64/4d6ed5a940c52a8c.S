@@ -5,9 +5,9 @@ func000000000000008c:
 	ret
 
 func00000000000000c8:
-	subs	x8, x0, x1
-	ccmp	x8, #0, #0, hi
-	cset	w0, lt
+	cmp	x0, x1
+	cset	w8, hi
+	csel	w0, wzr, w8, pl
 	ret
 
 func0000000000000148:

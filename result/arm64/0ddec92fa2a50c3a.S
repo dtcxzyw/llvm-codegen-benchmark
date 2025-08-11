@@ -37,9 +37,8 @@ func000000000000000c:
 	ret
 
 func00000000000000aa:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	cset	w8, lt
+	cmp	w1, w2
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

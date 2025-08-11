@@ -6,10 +6,10 @@ func00000000000004ca:
 	ret
 
 func00000000000000c6:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, lt
-	cset	w0, lt
+	subs	w8, w1, w2
+	cset	w9, mi
+	cmp	w8, w0
+	csel	w0, wzr, w9, ge
 	ret
 
 func00000000000004ea:
@@ -27,10 +27,10 @@ func00000000000000ca:
 	ret
 
 func0000000000000566:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #8, lt
-	cset	w0, ge
+	subs	w8, w1, w2
+	cset	w9, mi
+	cmp	w8, w0
+	csel	w0, wzr, w9, lt
 	ret
 
 func000000000000068a:

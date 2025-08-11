@@ -11,7 +11,7 @@ func00000000000000a4:
 func0000000000000126:
 	subs	x8, x1, x2
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x8, x8, #0xfffffffffffffffc
 	cmp	x0, x8
 	cset	w0, lt
@@ -20,7 +20,7 @@ func0000000000000126:
 func000000000000012a:
 	subs	x8, x1, x2
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x8, x8, #0xfffffffffffffffc
 	cmp	x0, x8
 	cset	w0, gt

@@ -9,6 +9,6 @@ func000000000000004c:
 	cmp	w0, #5
 	mov	w8, #5
 	ccmp	w0, #0, #8, ne
-	csel	w0, w8, wzr, lt
+	csel	w0, w8, wzr, mi
 	ret
 

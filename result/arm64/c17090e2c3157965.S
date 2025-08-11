@@ -99,7 +99,7 @@ func0000000000000046:
 	add	x8, x0, #3
 	cmp	x0, #0
 	add	x9, x1, x2
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	cmp	x9, x8, asr #2
 	cset	w0, gt
 	ret

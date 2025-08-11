@@ -22,9 +22,8 @@ func0000000000000058:
 	ret
 
 func000000000000000c:
-	sub	w8, w2, w1
-	cmp	w8, #0
-	cset	w8, lt
+	cmp	w2, w1
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

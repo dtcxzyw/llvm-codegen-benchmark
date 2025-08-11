@@ -87,7 +87,7 @@ func0000000000000042:
 func000000000000010c:
 	sxtw	x8, w1
 	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, ne
 	ret
 

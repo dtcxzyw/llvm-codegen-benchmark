@@ -13,9 +13,8 @@ func0000000000000038:
 	ret
 
 func0000000000000006:
-	add	w8, w1, w2
-	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	adds	w8, w1, w2
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000078:
@@ -33,9 +32,8 @@ func0000000000000008:
 	ret
 
 func0000000000000046:
-	add	w8, w1, w2
-	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	adds	w8, w1, w2
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000061:
@@ -53,7 +51,7 @@ func000000000000000a:
 
 func0000000000000026:
 	adds	w8, w1, w2
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func000000000000002a:

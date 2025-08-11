@@ -132,7 +132,7 @@ func0000000000000258:
 
 func000000000000020c:
 	cmp	w0, #0
-	ccmp	x1, x2, #2, ge
+	ccmp	x1, x2, #2, pl
 	cset	w0, hi
 	ret
 

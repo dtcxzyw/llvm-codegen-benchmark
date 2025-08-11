@@ -29,7 +29,7 @@ func0000000000000061:
 func00000000000001e6:
 	sxtb	w8, w0
 	cmp	w8, #0
-	csel	x8, x1, x2, lt
+	csel	x8, x1, x2, mi
 	add	x0, x8, #16
 	ret
 

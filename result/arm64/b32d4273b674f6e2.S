@@ -25,7 +25,7 @@ func0000000000000086:
 	movk	w8, #15, lsl #16
 	madd	x8, x2, x8, x1
 	cmp	x8, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000001:
 func0000000000000006:
 	and	x8, x1, #0x7f
 	cmp	x0, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func000000000000000a:

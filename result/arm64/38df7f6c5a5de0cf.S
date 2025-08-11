@@ -24,7 +24,7 @@ func0000000000000005:
 
 func0000000000000018:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	sub	w0, w8, w0
 	ret
 

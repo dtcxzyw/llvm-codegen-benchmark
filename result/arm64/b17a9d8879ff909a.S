@@ -8,7 +8,7 @@ func0000000000000085:
 func0000000000000099:
 	sub	x8, x1, #400
 	cmp	x2, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x0, x8, x0
 	ret
 

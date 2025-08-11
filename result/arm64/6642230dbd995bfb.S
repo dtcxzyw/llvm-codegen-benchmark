@@ -81,13 +81,13 @@ func0000000000000486:
 	mov	x8, #-101
 	sub	x9, x1, #128
 	cmp	w0, #0
-	ccmp	x9, x8, #0, ge
+	ccmp	x9, x8, #0, pl
 	cset	w0, lo
 	ret
 
 func0000000000000c26:
 	cmp	w0, #0
-	ccmp	x1, #8, #4, ge
+	ccmp	x1, #8, #4, pl
 	cset	w0, eq
 	ret
 

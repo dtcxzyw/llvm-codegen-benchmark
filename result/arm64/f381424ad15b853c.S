@@ -16,7 +16,7 @@ func0000000000000302:
 
 func0000000000000182:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	x0, #0
 	and	w8, w8, w1
 	csinc	w0, w8, wzr, ne

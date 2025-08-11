@@ -1,8 +1,7 @@
 func0000000000000008:
 	add	x8, x0, x1
-	sub	x9, x8, #63
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	subs	x9, x8, #63
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #6
 	ret
 
@@ -21,7 +20,7 @@ func0000000000000002:
 	movk	w10, #61035, lsl #16
 	adds	x8, x9, x8
 	add	x9, x9, x10
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	neg	x0, x8, asr #2
 	ret
 

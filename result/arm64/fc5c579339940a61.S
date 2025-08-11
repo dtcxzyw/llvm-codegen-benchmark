@@ -56,7 +56,7 @@ func0000000000000004:
 	add	x8, x2, #15
 	cmp	x2, #0
 	add	x9, x0, x1, lsl #5
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	lsr	x8, x8, #4
 	add	x0, x9, x8, lsl #5
 	ret
@@ -77,7 +77,7 @@ func000000000000001f:
 func0000000000000007:
 	add	x8, x2, #63
 	cmp	x2, #0
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	asr	x8, x8, #6
 	add	x8, x0, x8, lsl #3
 	add	x0, x8, x1, lsl #3

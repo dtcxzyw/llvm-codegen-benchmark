@@ -20,6 +20,6 @@ func0000000000000041:
 
 func0000000000000006:
 	cmp	w0, #0
-	cneg	w0, w1, ge
+	cneg	w0, w1, pl
 	ret
 

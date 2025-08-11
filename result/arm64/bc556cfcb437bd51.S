@@ -2,7 +2,7 @@ func0000000000000005:
 	add	w8, w0, #255
 	cmp	w0, #0
 	mov	w9, #224
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	mov	w10, #64
 	asr	w8, w8, #8
 	madd	w8, w8, w9, w10

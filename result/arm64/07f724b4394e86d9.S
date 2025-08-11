@@ -2,7 +2,7 @@ func000000000000000a:
 	add	w8, w2, #63
 	cmp	w2, #0
 	add	x9, x0, w1, sxtw #3
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	asr	w8, w8, #6
 	add	x0, x9, w8, sxtw #3
 	ret

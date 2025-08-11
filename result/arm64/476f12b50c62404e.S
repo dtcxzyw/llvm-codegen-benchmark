@@ -32,7 +32,7 @@ func000000000000020c:
 	orr	x8, x1, x2
 	tst	x8, #0xffffffff00000000
 	ccmp	x0, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000318:

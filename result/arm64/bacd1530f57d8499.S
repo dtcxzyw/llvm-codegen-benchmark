@@ -4,7 +4,7 @@ func0000000000000086:
 	mov	w8, #32
 	csel	w8, w8, w2, eq
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000294:

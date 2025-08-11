@@ -11,7 +11,7 @@ func0000000000000d46:
 	cmp	w0, #0
 	movk	w8, #1, lsl #16
 	sub	w8, w8, w1
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, gt
 	ret
 

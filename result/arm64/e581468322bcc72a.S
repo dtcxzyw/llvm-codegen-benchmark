@@ -32,7 +32,7 @@ func0000000000000166:
 	cmp	x1, #0
 	madd	x8, x1, x8, x2
 	add	x8, x8, #8
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000141:

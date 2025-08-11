@@ -1,7 +1,7 @@
 func0000000000000121:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmn	w0, w8, asr #3
 	cset	w0, eq
 	ret
@@ -46,10 +46,9 @@ func0000000000000006:
 
 func0000000000000026:
 	mov	w8, #-7937
-	sub	w9, w1, #2, lsl #12
+	subs	w9, w1, #2, lsl #12
 	add	w8, w1, w8
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	add	w8, w0, w8, asr #8
 	cmp	w8, #80
 	cset	w0, lt
@@ -58,7 +57,7 @@ func0000000000000026:
 func000000000000010a:
 	adds	w8, w1, #7
 	add	w9, w1, #14
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	sub	w8, w0, w8, asr #3
 	cmp	w8, #0
 	cset	w0, gt

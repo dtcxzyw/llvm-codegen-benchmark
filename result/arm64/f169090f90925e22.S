@@ -27,7 +27,7 @@ func0000000000000008:
 func0000000000000014:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	w8, w1, w0, lt
+	csel	w8, w1, w0, mi
 	and	w0, w8, #0xffff
 	ret
 

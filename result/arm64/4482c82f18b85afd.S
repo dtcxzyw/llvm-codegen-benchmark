@@ -1,7 +1,7 @@
 func000000000000003b:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #3
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #36
@@ -16,7 +16,7 @@ func0000000000000028:
 func0000000000000038:
 	add	w8, w1, #7
 	cmp	w1, #0
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #3
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #17

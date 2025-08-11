@@ -28,7 +28,7 @@ func00000000000030cc:
 	orr	w8, w2, w0
 	tst	w8, #0xff
 	ccmp	w1, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000003084:

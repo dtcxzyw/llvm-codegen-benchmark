@@ -9,7 +9,7 @@ func0000000000000004:
 	mov	w8, #65535
 	cmp	w1, #0
 	add	w8, w1, w8
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	asr	w8, w8, #16
 	add	x8, x0, w8, sxtw
 	sub	x0, x8, #1

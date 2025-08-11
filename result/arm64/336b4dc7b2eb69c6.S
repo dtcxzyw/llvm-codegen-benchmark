@@ -11,7 +11,7 @@ func0000000000000529:
 	asr	w8, w2, #31
 	cmp	w1, #0
 	orr	w8, w8, #0x1
-	csel	w8, wzr, w8, lt
+	csel	w8, wzr, w8, mi
 	add	w0, w0, w8
 	ret
 

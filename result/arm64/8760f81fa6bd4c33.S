@@ -12,10 +12,9 @@ func0000000000000009:
 	ret
 
 func0000000000000000:
-	add	w8, w0, #63
+	adds	w8, w0, #63
 	add	w9, w0, #126
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w0, w0, w8, asr #6
 	ret
 

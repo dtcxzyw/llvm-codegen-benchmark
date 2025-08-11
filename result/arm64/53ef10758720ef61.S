@@ -2,7 +2,7 @@ func000000000000000a:
 	add	x8, x2, #63
 	cmp	x2, #0
 	mov	x9, #-8
-	csel	x8, x8, x2, lt
+	csel	x8, x8, x2, mi
 	tst	w1, #0x1
 	asr	x8, x8, #6
 	csel	x9, x9, xzr, ne

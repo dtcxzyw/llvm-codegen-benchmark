@@ -28,13 +28,13 @@ func0000000000000008:
 
 func0000000000000006:
 	tst	x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 
 func000000000000000a:
 	tst	x1, x2
-	cset	w8, ge
+	cset	w8, pl
 	and	w0, w0, w8
 	ret
 

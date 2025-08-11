@@ -73,7 +73,7 @@ func0000000000000330:
 	and	w8, w2, #0xffffffc0
 	tst	w8, #0x8000007f
 	ccmp	w1, #0, #8, eq
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

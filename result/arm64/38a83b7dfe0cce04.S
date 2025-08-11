@@ -28,10 +28,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	sub	w9, w1, #1
 	mov	w8, #3
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	subs	w9, w1, #1
+	csel	w8, w8, w9, mi
 	mov	w9, #56
 	smaddl	x0, w8, w9, x0
 	ret

@@ -82,7 +82,7 @@ func0000000000000041:
 func0000000000000048:
 	add	x8, x0, #3
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	asr	x8, x8, #2
 	cmp	x8, x1, asr #2
 	cset	w0, hi

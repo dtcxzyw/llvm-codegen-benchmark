@@ -1,6 +1,6 @@
 func0000000000000019:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	lsl	x0, x8, #1
 	ret
 
@@ -31,13 +31,13 @@ func0000000000000022:
 
 func0000000000000028:
 	cmp	x2, #0
-	csel	x8, x1, x0, lt
+	csel	x8, x1, x0, mi
 	lsl	x0, x8, #32
 	ret
 
 func0000000000000018:
 	cmp	x2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	lsl	x0, x8, #32
 	ret
 

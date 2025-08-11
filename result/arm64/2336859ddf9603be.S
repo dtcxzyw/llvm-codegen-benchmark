@@ -15,6 +15,6 @@ func0000000000000026:
 	movk	w9, #32768, lsl #16
 	csel	w8, w9, w8, eq
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 

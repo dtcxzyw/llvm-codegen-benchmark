@@ -13,7 +13,7 @@ func0000000000000000:
 	mul	w8, w0, w1
 	add	w9, w8, #255
 	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	mov	w9, #16960
 	asr	w8, w8, #8
 	movk	w9, #15, lsl #16

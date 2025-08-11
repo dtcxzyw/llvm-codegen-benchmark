@@ -1,6 +1,6 @@
 func0000000000000126:
 	cmn	w1, w2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -99,22 +99,21 @@ func00000000000001e1:
 
 func0000000000000026:
 	cmn	w1, w2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
 
 func0000000000000186:
-	add	w8, w1, w2
-	cmp	w8, #0
-	cset	w8, lt
+	cmn	w1, w2
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
 
 func00000000000001a6:
 	cmn	w1, w2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

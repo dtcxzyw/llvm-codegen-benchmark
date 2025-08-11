@@ -33,9 +33,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	sub	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmp	x1, x2
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

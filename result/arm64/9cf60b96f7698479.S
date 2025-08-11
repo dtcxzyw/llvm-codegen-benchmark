@@ -1,7 +1,6 @@
 func000000000000000c:
-	sub	w8, w2, #20
-	cmp	w8, #0
-	csel	w8, wzr, w1, lt
+	cmp	w2, #20
+	csel	w8, wzr, w1, mi
 	orr	w0, w8, w0
 	ret
 

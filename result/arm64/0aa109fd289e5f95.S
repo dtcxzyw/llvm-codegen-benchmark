@@ -3,6 +3,6 @@ func0000000000000006:
 	fmov	w9, s0
 	eor	w8, w8, #0x80000000
 	cmp	w9, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

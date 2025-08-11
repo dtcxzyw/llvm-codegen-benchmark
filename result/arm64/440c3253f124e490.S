@@ -1,9 +1,8 @@
 func0000000000000000:
 	add	x8, x0, x0, lsl #1
-	add	x9, x8, #9
+	adds	x9, x8, #9
 	add	x8, x8, #12
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	asr	x0, x8, #2
 	ret
 

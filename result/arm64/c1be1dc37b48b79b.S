@@ -1,7 +1,7 @@
 func00000000000000c4:
 	fmov	x8, d0
 	cmp	x1, #0
-	csneg	x8, x8, x1, ge
+	csneg	x8, x8, x1, pl
 	cmp	x8, x0
 	cset	w0, lo
 	ret

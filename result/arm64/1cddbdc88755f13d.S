@@ -3,7 +3,7 @@ func0000000000000046:
 	cmp	w0, #0
 	mvn	x9, x8
 	add	x9, x1, x9
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func000000000000004a:

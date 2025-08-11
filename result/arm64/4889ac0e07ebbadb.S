@@ -31,7 +31,7 @@ func00000000000000ca:
 	cmp	w0, w8
 	csel	w8, w0, w8, lo
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000088:
@@ -45,7 +45,7 @@ func0000000000000088:
 func00000000000000c1:
 	cmp	w1, #0
 	mov	w8, #2
-	ccmp	w0, #0, #0, lt
+	ccmp	w0, #0, #0, mi
 	csel	w0, w8, w0, eq
 	ret
 
@@ -85,7 +85,7 @@ func000000000000018c:
 
 func00000000000000c6:
 	cmp	w1, #0
-	ccmp	w0, #1, #0, lt
+	ccmp	w0, #1, #0, mi
 	csel	w0, wzr, w0, lt
 	ret
 

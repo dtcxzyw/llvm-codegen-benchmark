@@ -3,7 +3,7 @@ func0000000000000066:
 	mov	w9, #4096
 	cmp	x1, #0
 	sub	x8, x9, x8
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000061:

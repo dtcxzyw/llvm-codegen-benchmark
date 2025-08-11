@@ -20,12 +20,12 @@ func0000000000000006:
 
 func0000000000000046:
 	cmp	w0, #0
-	csinc	w0, w0, w1, ge
+	csinc	w0, w0, w1, pl
 	ret
 
 func0000000000000066:
 	cmp	w0, #0
-	csinc	w0, w0, w1, ge
+	csinc	w0, w0, w1, pl
 	ret
 
 func0000000000000021:
@@ -36,7 +36,7 @@ func0000000000000021:
 
 func0000000000000026:
 	cmp	w0, #0
-	csinc	w0, w0, w1, ge
+	csinc	w0, w0, w1, pl
 	ret
 
 func000000000000006a:

@@ -7,14 +7,14 @@ func000000000000098a:
 func000000000000094c:
 	asr	x8, x2, #3
 	cmp	w0, #0
-	ccmp	x1, x8, #2, ge
+	ccmp	x1, x8, #2, pl
 	cset	w0, hs
 	ret
 
 func00000000000009cc:
 	asr	x8, x2, #2
 	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, ge
 	ret
 

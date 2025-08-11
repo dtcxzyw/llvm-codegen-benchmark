@@ -118,7 +118,7 @@ func000000000000018a:
 
 func0000000000000026:
 	cmp	x1, #0
-	ccmp	w2, #10, #0, lt
+	ccmp	w2, #10, #0, mi
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

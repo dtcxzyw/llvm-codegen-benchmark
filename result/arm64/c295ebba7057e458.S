@@ -19,7 +19,7 @@ func000000000000004f:
 func000000000000006f:
 	cmp	w2, #0
 	mov	w9, #208
-	cset	w8, lt
+	cset	w8, mi
 	tst	w8, w0
 	mov	w8, #240
 	csel	x8, x9, x8, ne

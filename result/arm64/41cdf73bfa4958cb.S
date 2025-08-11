@@ -45,7 +45,7 @@ func0000000000000181:
 func0000000000000026:
 	cmp	x1, #0
 	mov	w8, #1054
-	ccmp	x2, x8, #0, lt
+	ccmp	x2, x8, #0, mi
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

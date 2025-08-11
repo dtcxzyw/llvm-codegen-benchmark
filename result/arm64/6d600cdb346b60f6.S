@@ -25,7 +25,7 @@ func000000000000a314:
 	cmp	w1, #999
 	ccmp	w0, w1, #0, le
 	ccmp	w0, #0, #8, le
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000006302:
@@ -38,7 +38,7 @@ func0000000000006302:
 func000000000000650c:
 	cmp	w0, #0
 	mov	w8, #255
-	ccmp	w0, w1, #8, ge
+	ccmp	w0, w1, #8, pl
 	ccmp	w1, w8, #0, ge
 	cset	w0, gt
 	ret

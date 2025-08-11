@@ -28,7 +28,7 @@ func0000000000000008:
 func0000000000000006:
 	cmp	x2, #0
 	mov	w8, #-1
-	cneg	w8, w8, ge
+	cneg	w8, w8, pl
 	tst	w0, #0x1
 	csel	w0, w1, w8, ne
 	ret

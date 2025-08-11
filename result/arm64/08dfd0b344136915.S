@@ -7,7 +7,7 @@ func0000000000000063:
 
 func0000000000000030:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w8, w1, w8
 	add	x0, x0, x8
 	ret

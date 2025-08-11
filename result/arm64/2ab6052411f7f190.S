@@ -121,7 +121,7 @@ func0000000000000530:
 func000000000000004c:
 	tst	w1, #0xff
 	ccmp	x0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000202:
@@ -176,7 +176,7 @@ func0000000000000182:
 	sxtb	w8, w1
 	cmp	x0, #0
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000050:

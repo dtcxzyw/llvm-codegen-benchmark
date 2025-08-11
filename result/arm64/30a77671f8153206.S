@@ -17,6 +17,6 @@ func0000000000000006:
 	fmov	w9, s0
 	mov	w8, #8
 	cmp	w9, #0
-	cinc	w0, w8, lt
+	cinc	w0, w8, mi
 	ret
 

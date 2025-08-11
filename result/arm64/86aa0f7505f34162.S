@@ -25,7 +25,7 @@ func000000000000001d:
 func0000000000000009:
 	add	x8, x0, #3
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	sub	x8, x1, x8, asr #2
 	add	x8, x8, #175, lsl #12
 	add	x0, x8, #2667

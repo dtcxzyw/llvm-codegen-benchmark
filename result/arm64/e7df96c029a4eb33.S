@@ -35,7 +35,7 @@ func0000000000001d66:
 	cset	w8, le
 	cset	w9, ge
 	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000002ce6:
@@ -43,7 +43,7 @@ func0000000000002ce6:
 	cset	w8, ge
 	cset	w9, le
 	cmp	w0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000001d61:

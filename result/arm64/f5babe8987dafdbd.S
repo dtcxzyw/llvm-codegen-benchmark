@@ -19,7 +19,7 @@ func0000000000000066:
 	orr	w9, w1, w2
 	orr	w10, w9, #0x400
 	cmp	w8, #0
-	csel	w0, w10, w9, lt
+	csel	w0, w10, w9, mi
 	ret
 
 func0000000000000004:
@@ -44,6 +44,6 @@ func000000000000006a:
 	movk	w10, #36608, lsl #16
 	orr	w10, w9, w10
 	cmp	w8, #0
-	csel	w0, w9, w10, lt
+	csel	w0, w9, w10, mi
 	ret
 

@@ -110,7 +110,7 @@ func0000000000000186:
 func00000000000000c1:
 	tst	w0, #0xffff
 	ccmp	w1, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000188:
@@ -208,14 +208,14 @@ func0000000000000301:
 func0000000000000026:
 	sxth	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #0, #0, lt
+	ccmp	w1, #0, #0, mi
 	cset	w0, eq
 	ret
 
 func0000000000000146:
 	sxth	w8, w0
 	cmp	w8, #0
-	ccmp	w1, #0, #4, lt
+	ccmp	w1, #0, #4, mi
 	cset	w0, gt
 	ret
 
@@ -250,6 +250,6 @@ func00000000000000ca:
 	sxth	w8, w0
 	cmp	w8, #0
 	ccmp	w1, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

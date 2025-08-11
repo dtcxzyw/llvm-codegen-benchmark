@@ -54,14 +54,14 @@ func0000000000000182:
 	sxtb	w8, w0
 	tst	w1, #0x1
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000004c:
 	sxtb	w8, w0
 	tst	w1, #0x1
 	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000054:
@@ -85,7 +85,7 @@ func000000000000030c:
 	sxtb	w8, w0
 	and	w9, w1, #0xf
 	cmp	w8, #0
-	ccmp	w9, #8, #0, ge
+	ccmp	w9, #8, #0, pl
 	cset	w0, ne
 	ret
 

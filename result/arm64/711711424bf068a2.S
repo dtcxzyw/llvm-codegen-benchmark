@@ -14,7 +14,7 @@ func000000000000010c:
 	and	w8, w0, w8
 	sub	w8, w8, #65
 	cmp	w9, #0
-	ccmp	w8, #26, #0, ge
+	ccmp	w8, #26, #0, pl
 	cset	w0, lo
 	ret
 

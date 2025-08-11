@@ -22,7 +22,7 @@ func0000000000000610:
 
 func0000000000000619:
 	cmp	w1, #0
-	ccmp	w0, #0, #4, lt
+	ccmp	w0, #0, #4, mi
 	cset	w8, ne
 	sub	w0, w0, w8
 	ret

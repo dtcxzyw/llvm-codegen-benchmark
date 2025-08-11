@@ -12,7 +12,7 @@ func0000000000000026:
 	and	w10, w1, #0xff
 	bfxil	w8, w1, #0, #8
 	cmp	w9, #0
-	csel	w0, w8, w10, lt
+	csel	w0, w8, w10, mi
 	ret
 
 func0000000000000066:
@@ -20,7 +20,7 @@ func0000000000000066:
 	and	w9, w1, #0xff
 	orr	w10, w9, #0x4
 	cmp	w8, #0
-	csel	w0, w10, w9, lt
+	csel	w0, w10, w9, mi
 	ret
 
 func0000000000000064:

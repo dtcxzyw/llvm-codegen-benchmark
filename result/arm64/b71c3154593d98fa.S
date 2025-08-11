@@ -152,7 +152,7 @@ func0000000000000034:
 
 func00000000000000cc:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	and	w8, w0, w8
 	csel	w0, wzr, w8, eq
@@ -184,7 +184,7 @@ func000000000000018a:
 
 func00000000000000ca:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	and	w8, w0, w8
 	csel	w0, wzr, w8, le
@@ -192,15 +192,15 @@ func00000000000000ca:
 
 func00000000000000c6:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	and	w8, w0, w8
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func00000000000000c1:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	and	w8, w0, w8
 	csel	w0, wzr, w8, ne
@@ -301,7 +301,7 @@ func0000000000000106:
 	cset	w8, hi
 	cmp	w1, #0
 	and	w8, w0, w8
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func0000000000000108:

@@ -16,7 +16,7 @@ func0000000000000006:
 func0000000000000019:
 	mov	x8, #-2048
 	cmp	x0, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	sub	x0, x0, x8
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000029:
 
 func0000000000000018:
 	cmp	x0, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	sub	x0, x0, x8
 	ret
 

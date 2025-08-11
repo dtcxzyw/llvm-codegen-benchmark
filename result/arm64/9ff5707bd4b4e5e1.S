@@ -1,6 +1,6 @@
 func0000000000000019:
 	cmp	w1, #0
-	csel	w8, w2, w0, lt
+	csel	w8, w2, w0, mi
 	sub	w0, w8, #1
 	ret
 

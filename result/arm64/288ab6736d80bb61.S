@@ -8,7 +8,7 @@ func0000000000000421:
 func00000000000000ca:
 	cmp	w1, #0
 	mov	x8, #-2147483648
-	cneg	x9, x0, lt
+	cneg	x9, x0, mi
 	cmp	x9, x8
 	cset	w0, gt
 	ret
@@ -21,7 +21,7 @@ func0000000000000426:
 
 func00000000000004d4:
 	cmp	w1, #0
-	cneg	x8, x0, lt
+	cneg	x8, x0, mi
 	cmp	x8, #32
 	cset	w0, lo
 	ret

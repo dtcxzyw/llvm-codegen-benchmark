@@ -41,6 +41,6 @@ func0000000000000034:
 
 func000000000000006a:
 	cmp	w0, #0
-	csinc	w0, w0, w1, ge
+	csinc	w0, w0, w1, pl
 	ret
 

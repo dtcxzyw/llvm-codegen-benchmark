@@ -7,6 +7,6 @@ func000000000000002c:
 func0000000000000146:
 	cmp	w1, #0
 	ccmp	x2, #0, #0, gt
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 

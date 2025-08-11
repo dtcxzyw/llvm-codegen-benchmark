@@ -17,7 +17,7 @@ func000000000000002a:
 func0000000000000021:
 	add	x8, x1, #7
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffff8
 	cmp	x8, x0
 	cset	w0, eq
@@ -26,7 +26,7 @@ func0000000000000021:
 func0000000000000026:
 	add	x8, x1, #15
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffff0
 	cmp	x8, x0
 	cset	w0, lt

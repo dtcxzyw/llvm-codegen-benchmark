@@ -30,16 +30,15 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x1, x2
+	cset	w8, mi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
 
 func000000000000004c:
 	cmn	x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -111,9 +110,8 @@ func0000000000000048:
 	ret
 
 func000000000000008c:
-	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x1, x2
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

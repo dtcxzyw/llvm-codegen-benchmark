@@ -102,10 +102,9 @@ func000000000000008c:
 	ret
 
 func0000000000000005:
-	sub	x8, x1, x2
+	subs	x8, x1, x2
 	add	x9, x8, #31
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x8, x8, #5
 	cmp	w0, w8
 	cset	w0, ls
@@ -113,10 +112,9 @@ func0000000000000005:
 
 func0000000000000001:
 	mov	w8, #33554431
-	sub	x9, x1, x2
+	subs	x9, x1, x2
 	add	x8, x9, x8
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	lsr	x8, x8, #25
 	cmp	w0, w8
 	cset	w0, eq

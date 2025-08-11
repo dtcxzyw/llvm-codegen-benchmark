@@ -134,7 +134,7 @@ func0000000000000426:
 func0000000000000686:
 	mov	w8, w2
 	cmp	w0, #0
-	ccmp	x1, x8, #2, lt
+	ccmp	x1, x8, #2, mi
 	cset	w0, lo
 	ret
 
@@ -241,7 +241,7 @@ func0000000000000698:
 func0000000000000186:
 	mov	w8, w2
 	cmp	w0, #0
-	ccmp	x1, x8, #4, lt
+	ccmp	x1, x8, #4, mi
 	cset	w0, ne
 	ret
 
@@ -269,7 +269,7 @@ func0000000000000114:
 func0000000000000486:
 	mov	w8, w2
 	cmp	w0, #0
-	ccmp	x1, x8, #2, lt
+	ccmp	x1, x8, #2, mi
 	cset	w0, lo
 	ret
 

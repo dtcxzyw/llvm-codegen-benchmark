@@ -27,7 +27,7 @@ func000000000000006a:
 	sxtb	w8, w1
 	add	w9, w2, #2
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000061:

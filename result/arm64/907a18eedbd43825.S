@@ -177,8 +177,8 @@ func0000000000000028:
 
 func00000000000000c6:
 	cmp	x0, #0
-	ccmp	w1, #0, #8, ge
-	cset	w0, lt
+	ccmp	w1, #0, #8, pl
+	cset	w0, mi
 	ret
 
 func0000000000000186:

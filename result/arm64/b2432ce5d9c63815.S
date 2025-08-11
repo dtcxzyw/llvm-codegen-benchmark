@@ -10,7 +10,7 @@ func000000000000006c:
 	cmp	w2, #0
 	mov	w8, #8
 	sub	x9, x0, x1
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	sub	x0, x9, x8
 	ret
 

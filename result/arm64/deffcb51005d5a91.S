@@ -10,6 +10,6 @@ func0000000000000006:
 	cmp	w0, #0
 	fmov	s1, w8
 	fsub	s1, s1, s0
-	fcsel	s0, s1, s0, lt
+	fcsel	s0, s1, s0, mi
 	ret
 

@@ -2,7 +2,7 @@ func0000000000000025:
 	adds	w8, w0, #255
 	add	w9, w0, #510
 	mov	w10, #64
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	mov	w9, #224
 	asr	w8, w8, #8
 	madd	w0, w8, w9, w10
@@ -33,11 +33,10 @@ func0000000000000021:
 	ret
 
 func0000000000000000:
-	add	w8, w0, #4
+	adds	w8, w0, #4
 	add	w9, w0, #11
 	mov	w10, #500
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	mov	w9, #144
 	lsr	w8, w8, #3
 	madd	w0, w8, w9, w10

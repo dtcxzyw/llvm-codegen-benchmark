@@ -81,7 +81,7 @@ func0000000000000364:
 	sxtb	w8, w2
 	cmp	w8, #0
 	add	w8, w1, #9
-	csinc	w8, w8, w1, lt
+	csinc	w8, w8, w1, mi
 	cmp	w8, w0
 	cset	w0, lo
 	ret

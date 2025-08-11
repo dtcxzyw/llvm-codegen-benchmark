@@ -8,7 +8,7 @@ func00000000000001e6:
 	mov	w8, #8
 	cmp	w0, #0
 	mov	w9, #32
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x1, x8
 	ret
 
@@ -79,7 +79,7 @@ func0000000000000141:
 func000000000000000a:
 	mov	w8, #3
 	cmp	w0, #0
-	cinc	x8, x8, ge
+	cinc	x8, x8, pl
 	add	x0, x1, x8
 	ret
 

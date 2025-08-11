@@ -16,7 +16,7 @@ func0000000000000081:
 
 func0000000000000186:
 	cmp	w1, #0
-	csinc	w0, w0, w2, lt
+	csinc	w0, w0, w2, mi
 	ret
 
 func00000000000000a1:

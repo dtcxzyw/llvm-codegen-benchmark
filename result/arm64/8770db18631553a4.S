@@ -1,7 +1,7 @@
 func0000000000000546:
 	add	x8, x0, #3
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	and	x8, x8, #0xfffffffffffffffc
 	cmp	x8, x0
 	ccmp	x1, #0, #4, lt

@@ -3,7 +3,7 @@ func0000000000000726:
 	sxtb	w9, w0
 	madd	w8, w2, w8, w1
 	cmp	w9, #0
-	cneg	w0, w8, lt
+	cneg	w0, w8, mi
 	ret
 
 func0000000000000221:

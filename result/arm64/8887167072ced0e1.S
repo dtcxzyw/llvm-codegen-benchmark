@@ -1,34 +1,34 @@
 func00000000000000c6:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #1
 	cset	w0, lt
 	ret
 
 func00000000000000c8:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #24
 	cset	w0, hi
 	ret
 
 func00000000000000c1:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #24
 	cset	w0, eq
 	ret
 
 func00000000000000cc:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #0
 	cset	w0, ne
 	ret
 
 func00000000000008c1:
 	cmp	w1, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #0
 	cset	w0, eq
 	ret

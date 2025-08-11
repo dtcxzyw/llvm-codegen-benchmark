@@ -36,7 +36,7 @@ func0000000000000084:
 func0000000000000006:
 	add	x8, x0, #3
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	lsr	x8, x8, #2
 	cmp	w8, #1
 	cset	w0, lt

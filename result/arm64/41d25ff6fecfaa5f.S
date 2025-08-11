@@ -4,7 +4,7 @@ func00000000000008cb:
 	udiv	w8, w8, w1
 	cmp	w0, w8
 	ccmp	w9, #0, #8, lt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000090a:

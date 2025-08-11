@@ -40,7 +40,7 @@ func0000000000000006:
 	mov	w9, #5
 	csel	w8, w8, wzr, ne
 	cmp	x0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func000000000000000a:

@@ -50,7 +50,7 @@ func0000000000000006:
 func000000000000000c:
 	and	w8, w1, #0x1
 	cmp	w1, #0
-	cneg	w8, w8, lt
+	cneg	w8, w8, mi
 	cmp	w8, w0
 	cset	w0, ne
 	ret

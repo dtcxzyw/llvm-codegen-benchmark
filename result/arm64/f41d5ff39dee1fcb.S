@@ -8,10 +8,10 @@ func0000000000000099:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #20864
 	movk	w9, #1, lsl #16
-	msub	x8, x8, x9, x0
+	mul	x8, x8, x9
+	subs	x8, x0, x8
 	add	w9, w8, w9
-	cmp	x8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func000000000000009b:
@@ -24,10 +24,10 @@ func000000000000009b:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #20864
 	movk	w9, #1, lsl #16
-	msub	x8, x8, x9, x0
+	mul	x8, x8, x9
+	subs	x8, x0, x8
 	add	w9, w8, w9
-	cmp	x8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000098:
@@ -40,9 +40,9 @@ func0000000000000098:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #10240
 	movk	w9, #61035, lsl #16
-	msub	x8, x8, x9, x0
+	mul	x8, x8, x9
+	subs	x8, x0, x8
 	add	w9, w8, w9
-	cmp	x8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 

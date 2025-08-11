@@ -30,7 +30,7 @@ func0000000000000009:
 	add	x8, x0, #7
 	cmp	x0, #0
 	mov	w9, w1
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	asr	x8, x8, #3
 	mul	x0, x8, x9
 	ret

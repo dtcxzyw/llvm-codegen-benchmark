@@ -12,6 +12,6 @@ func0000000000000021:
 
 func00000000000000c6:
 	tst	w2, w1
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 

@@ -10,7 +10,7 @@ func0000000000000011:
 	adds	w9, w0, #31
 	add	w10, w0, #62
 	mov	w8, #2
-	csel	w9, w10, w9, lt
+	csel	w9, w10, w9, mi
 	asr	w9, w9, #5
 	cmp	w9, #2
 	csel	w8, w9, w8, gt

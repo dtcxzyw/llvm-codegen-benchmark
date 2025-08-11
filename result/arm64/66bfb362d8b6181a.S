@@ -1,7 +1,7 @@
 func0000000000000186:
 	tst	w0, w1
 	ccmp	w0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002c:

@@ -25,10 +25,9 @@ func0000000000000121:
 func0000000000000061:
 	mov	w8, #65535
 	mov	w9, #131070
-	add	x8, x1, x8
+	adds	x8, x1, x8
 	add	x9, x1, x9
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x9, x0, #1
 	cmp	x9, x8, asr #16
 	cset	w0, eq

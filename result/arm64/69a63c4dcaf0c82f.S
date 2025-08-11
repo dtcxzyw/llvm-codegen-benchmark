@@ -1,9 +1,8 @@
 func0000000000000011:
 	mov	w8, #8190
-	add	x9, x0, #4095
+	adds	x9, x0, #4095
 	add	x8, x0, x8
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	and	x0, x8, #0xfffffffffffff000
 	ret
 
@@ -15,10 +14,9 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	add	x8, x0, #7
+	adds	x8, x0, #7
 	add	x9, x0, #14
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x0, x8, #0xfffffffffffffff8
 	ret
 
@@ -26,7 +24,7 @@ func0000000000000008:
 	mov	w8, #8190
 	adds	x9, x0, #4095
 	add	x8, x0, x8
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	lsl	x8, x8, #20
 	and	x0, x8, #0xffffffff00000000
 	ret

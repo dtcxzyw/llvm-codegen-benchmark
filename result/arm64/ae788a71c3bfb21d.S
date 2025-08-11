@@ -29,10 +29,9 @@ func0000000000000044:
 
 func0000000000000060:
 	add	x8, x1, x2
-	sub	x8, x8, x0
+	subs	x8, x8, x0
 	add	x9, x8, #15
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x0, x8, #4
 	ret
 

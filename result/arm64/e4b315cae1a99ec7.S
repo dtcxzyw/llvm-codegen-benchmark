@@ -24,13 +24,13 @@ func0000000000000014:
 
 func000000000000000d:
 	cmp	w2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	orr	x0, x8, #0x4
 	ret
 
 func000000000000000c:
 	cmp	w2, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	orr	x0, x8, #0x20
 	ret
 

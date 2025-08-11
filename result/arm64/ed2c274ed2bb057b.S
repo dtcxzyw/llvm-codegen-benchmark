@@ -72,14 +72,13 @@ func0000000000000008:
 
 func0000000000000026:
 	cmn	x1, x2
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 
 func0000000000000006:
-	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x1, x2
+	cset	w8, mi
 	and	w0, w8, w0
 	ret
 

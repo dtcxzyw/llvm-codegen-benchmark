@@ -18,7 +18,7 @@ func0000000000000186:
 	mov	w8, #224
 	and	w10, w0, #0xf0
 	cmp	w9, #0
-	ccmp	w10, w8, #4, lt
+	ccmp	w10, w8, #4, mi
 	cset	w0, ne
 	ret
 

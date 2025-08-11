@@ -143,7 +143,7 @@ func0000000000000594:
 func000000000000182c:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, eq
-	ccmp	w0, #0, #4, lt
+	ccmp	w0, #0, #4, mi
 	cset	w0, ne
 	ret
 
@@ -222,7 +222,7 @@ func000000000000282c:
 func000000000000194c:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, gt
-	ccmp	w0, #0, #4, lt
+	ccmp	w0, #0, #4, mi
 	cset	w0, ne
 	ret
 
@@ -260,7 +260,7 @@ func0000000000000426:
 	cmp	w1, #3
 	ccmp	w2, #0, #0, eq
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000584:
@@ -332,7 +332,7 @@ func0000000000000586:
 	cmp	w1, #0
 	ccmp	w2, #0, #0, ne
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000434:
@@ -345,7 +345,7 @@ func0000000000000434:
 
 func0000000000001986:
 	tst	w2, w0
-	ccmp	w1, #1, #4, lt
+	ccmp	w1, #1, #4, mi
 	cset	w0, ne
 	ret
 

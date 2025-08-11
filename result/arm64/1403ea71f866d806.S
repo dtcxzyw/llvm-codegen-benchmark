@@ -20,7 +20,7 @@ func0000000000000d58:
 	sxtb	w8, w1
 	add	w9, w2, #2
 	cmp	w8, #0
-	csel	w8, w9, w0, lt
+	csel	w8, w9, w0, mi
 	cmp	w8, #24
 	cset	w0, hi
 	ret

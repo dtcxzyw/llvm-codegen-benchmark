@@ -7,7 +7,7 @@ func0000000000000002:
 
 func000000000000000c:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	w8, w0
 	csel	w0, w8, w0, gt
 	ret

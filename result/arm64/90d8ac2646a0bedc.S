@@ -1,6 +1,6 @@
 func000000000000004d:
 	cmn	w1, w2
-	csel	w0, wzr, w0, lt
+	csel	w0, wzr, w0, mi
 	ret
 
 func000000000000000d:
@@ -17,6 +17,6 @@ func0000000000000008:
 
 func000000000000004c:
 	cmn	w1, w2
-	csel	w0, wzr, w0, lt
+	csel	w0, wzr, w0, mi
 	ret
 

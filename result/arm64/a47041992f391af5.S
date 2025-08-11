@@ -9,7 +9,7 @@ func000000000000004a:
 	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w2, w8
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	sxtw	x0, w8
 	ret
 
@@ -17,7 +17,7 @@ func0000000000000046:
 	mov	w8, #2147483647
 	cmp	w1, #0
 	add	w8, w2, w8
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	sxtw	x0, w8
 	ret
 

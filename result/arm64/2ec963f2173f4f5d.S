@@ -19,7 +19,7 @@ func0000000000006046:
 	mov	w8, #2047
 	ccmp	x2, x8, #0, ne
 	ccmp	x0, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000006041:

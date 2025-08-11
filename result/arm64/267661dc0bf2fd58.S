@@ -17,14 +17,14 @@ func0000000000000099:
 	add	x8, x1, #244, lsl #12
 	cmp	x1, #0
 	add	x8, x8, #576
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x0, x8, x0
 	ret
 
 func0000000000000098:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	add	x0, x8, x0
 	ret
 

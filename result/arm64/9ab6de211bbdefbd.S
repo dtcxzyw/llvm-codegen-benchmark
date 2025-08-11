@@ -27,7 +27,7 @@ func0000000000000067:
 	add	w8, w2, #7
 	cmp	w2, #0
 	add	w9, w0, w1
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	cmp	w9, w8, asr #3
 	cset	w0, le
 	ret
@@ -57,7 +57,7 @@ func0000000000000008:
 	add	w8, w2, #15
 	cmp	w2, #0
 	add	w9, w0, w1
-	csel	w8, w8, w2, lt
+	csel	w8, w8, w2, mi
 	cmp	w9, w8, asr #4
 	cset	w0, hi
 	ret

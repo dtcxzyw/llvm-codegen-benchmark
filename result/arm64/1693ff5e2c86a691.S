@@ -4,7 +4,7 @@ func0000000000000219:
 	mov	w8, #32
 	csel	w8, w8, w2, eq
 	cmp	w1, #0
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	sub	w0, w8, #11
 	ret
 
@@ -14,7 +14,7 @@ func000000000000021b:
 	mov	w8, #32
 	csel	w8, w8, w2, eq
 	cmp	w1, #0
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	add	w0, w8, #21
 	ret
 

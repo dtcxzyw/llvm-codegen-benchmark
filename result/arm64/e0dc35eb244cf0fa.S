@@ -13,7 +13,7 @@ func0000000000000008:
 func0000000000000006:
 	sxth	w8, w1
 	cmp	w8, #0
-	csel	w0, wzr, w0, lt
+	csel	w0, wzr, w0, mi
 	ret
 
 func000000000000000c:

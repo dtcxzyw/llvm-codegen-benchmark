@@ -68,7 +68,7 @@ func0000000000000061:
 
 func0000000000000018:
 	cmp	x2, #0
-	csel	x8, xzr, x1, lt
+	csel	x8, xzr, x1, mi
 	mul	x0, x8, x0
 	ret
 

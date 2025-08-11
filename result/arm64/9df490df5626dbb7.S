@@ -54,7 +54,7 @@ func0000000000000188:
 func0000000000000026:
 	sxth	w8, w0
 	cmp	w8, #0
-	ccmp	x1, #0, #4, ge
+	ccmp	x1, #0, #4, pl
 	cset	w0, eq
 	ret
 

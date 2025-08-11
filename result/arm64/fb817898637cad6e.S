@@ -53,9 +53,8 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
-	add	x8, x1, x2
-	cmp	x8, #0
-	csel	x0, xzr, x0, lt
+	cmn	x1, x2
+	csel	x0, xzr, x0, mi
 	ret
 
 func0000000000000021:

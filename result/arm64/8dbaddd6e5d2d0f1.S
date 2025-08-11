@@ -3,7 +3,7 @@ func0000000000001546:
 	sxth	w9, w0
 	sxth	w8, w8
 	cmp	w9, #0
-	ccmp	w8, #0, #4, lt
+	ccmp	w8, #0, #4, mi
 	cset	w0, gt
 	ret
 

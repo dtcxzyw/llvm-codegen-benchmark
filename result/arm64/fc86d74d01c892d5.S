@@ -8,6 +8,6 @@ func0000000000000001:
 func0000000000000006:
 	sxth	w8, w1
 	cmp	w8, #0
-	csinv	w0, w0, w2, lt
+	csinv	w0, w0, w2, mi
 	ret
 

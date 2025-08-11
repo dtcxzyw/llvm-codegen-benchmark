@@ -16,7 +16,7 @@ func0000000000000281:
 func0000000000000181:
 	cmp	w0, #0
 	ccmp	w1, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000038:
@@ -36,7 +36,7 @@ func000000000000018c:
 func0000000000000026:
 	tst	x1, #0x2
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000301:
@@ -78,7 +78,7 @@ func0000000000000306:
 	mov	w8, #158
 	and	x9, x1, #0xff
 	cmp	w0, #0
-	ccmp	x9, x8, #2, ge
+	ccmp	x9, x8, #2, pl
 	cset	w0, hi
 	ret
 

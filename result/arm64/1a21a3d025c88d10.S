@@ -1,7 +1,7 @@
 func0000000000000000:
 	cmp	w0, #0
 	cset	w8, gt
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, pl
 	ret
 
 func0000000000000001:

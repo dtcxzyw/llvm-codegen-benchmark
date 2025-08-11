@@ -7,7 +7,7 @@ func0000000000000061:
 
 func0000000000000046:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	orn	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -58,7 +58,7 @@ func0000000000000008:
 
 func0000000000000066:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	orn	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

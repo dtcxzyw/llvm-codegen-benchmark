@@ -12,6 +12,6 @@ func0000000000000006:
 	mov	w9, #45
 	csel	w8, w8, w2, ne
 	cmp	x0, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 

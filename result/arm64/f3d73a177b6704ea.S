@@ -9,7 +9,7 @@ func0000000000000021:
 
 func00000000000000c6:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w2, w8
 	csel	w8, w0, w1, ne
 	lsr	w0, w8, #31
@@ -17,7 +17,7 @@ func00000000000000c6:
 
 func00000000000000ca:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w2, w8
 	csel	w8, w0, w1, ne
 	mvn	w8, w8

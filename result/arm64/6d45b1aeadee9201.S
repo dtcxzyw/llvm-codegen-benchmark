@@ -16,7 +16,7 @@ func0000000000000021:
 
 func00000000000000c1:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, #0
 	csel	w8, w8, w0, eq
 	and	w0, w8, #0x1

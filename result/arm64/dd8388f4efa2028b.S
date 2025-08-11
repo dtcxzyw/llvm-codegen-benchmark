@@ -23,7 +23,7 @@ func0000000000000026:
 	sxtb	w8, w0
 	and	w9, w1, #0xffff
 	cmp	w8, #0
-	ccmp	w9, #8, #0, lt
+	ccmp	w9, #8, #0, mi
 	cset	w0, eq
 	ret
 
@@ -122,7 +122,7 @@ func0000000000000186:
 	sxtb	w8, w0
 	tst	w1, #0xffff
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000301:

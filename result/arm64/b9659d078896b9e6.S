@@ -35,7 +35,7 @@ func0000000000000006:
 	cmp	w1, w2
 	csel	w8, w1, w2, lt
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	bic	w0, w8, w0
 	ret
 

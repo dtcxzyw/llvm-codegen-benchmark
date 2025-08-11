@@ -11,7 +11,7 @@ func000000000000001b:
 	mov	x8, #9223372036854775800
 	cmp	x1, #0
 	lsl	x9, x9, #2
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func0000000000000007:

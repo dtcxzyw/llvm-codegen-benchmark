@@ -1,7 +1,7 @@
 func0000000000000019:
 	mov	w8, #491
 	cmp	w1, #0
-	cinc	x8, x8, ge
+	cinc	x8, x8, pl
 	sub	x0, x8, x0
 	ret
 

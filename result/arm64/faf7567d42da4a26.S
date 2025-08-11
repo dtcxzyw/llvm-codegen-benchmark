@@ -9,7 +9,7 @@ func0000000000000c21:
 func00000000000000c1:
 	add	x8, x1, w2, uxtw
 	cmp	w0, #0
-	ccmp	x8, #0, #4, ge
+	ccmp	x8, #0, #4, pl
 	cset	w0, eq
 	ret
 

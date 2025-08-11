@@ -14,6 +14,6 @@ func0000000000000021:
 func00000000000000cc:
 	tst	w0, #0xff
 	ccmp	w1, #0, #8, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

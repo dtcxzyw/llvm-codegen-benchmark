@@ -2,7 +2,7 @@ func000000000000002a:
 	mov	w8, #262143
 	cmp	w1, #0
 	add	w8, w1, w8
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	add	w8, w0, w8, asr #18
 	add	w8, w8, #307
 	sxth	w9, w8

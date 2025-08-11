@@ -13,13 +13,13 @@ func0000000000000001:
 func0000000000000026:
 	sxtb	w8, w1
 	cmp	w8, #0
-	cneg	x0, x0, lt
+	cneg	x0, x0, mi
 	ret
 
 func0000000000000006:
 	sxtb	w8, w1
 	cmp	w8, #0
-	cneg	x0, x0, lt
+	cneg	x0, x0, mi
 	ret
 
 func0000000000000061:

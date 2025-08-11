@@ -31,7 +31,7 @@ func0000000000000066:
 	csel	x8, x2, x8, ne
 	cmp	w0, #0
 	orr	x9, x8, #0x4
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func0000000000000046:
@@ -40,7 +40,7 @@ func0000000000000046:
 	csel	x8, x2, x8, ne
 	cmp	w0, #0
 	orr	x9, x8, #0x20
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 
 func0000000000000006:
@@ -49,6 +49,6 @@ func0000000000000006:
 	csel	x8, x2, x8, ne
 	cmp	w0, #0
 	orr	x9, x8, #0x10
-	csel	x0, x8, x9, lt
+	csel	x0, x8, x9, mi
 	ret
 

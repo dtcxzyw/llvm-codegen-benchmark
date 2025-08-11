@@ -23,7 +23,7 @@ func0000000000000002:
 	asr	w8, w8, #1
 	and	w9, w8, #0x1
 	cmp	w8, #0
-	cneg	w0, w9, lt
+	cneg	w0, w9, mi
 	ret
 
 func0000000000000004:

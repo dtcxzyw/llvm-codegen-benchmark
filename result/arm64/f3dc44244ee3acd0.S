@@ -3,7 +3,7 @@ func0000000000000146:
 	mov	w8, #2147483647
 	csel	x8, x2, x8, ne
 	cmp	x0, #0
-	ccmp	x0, x8, #0, ge
+	ccmp	x0, x8, #0, pl
 	cset	w0, gt
 	ret
 

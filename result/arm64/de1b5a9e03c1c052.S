@@ -19,6 +19,6 @@ func0000000000000586:
 	cmp	x1, x8
 	ccmp	x2, #0, #4, eq
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

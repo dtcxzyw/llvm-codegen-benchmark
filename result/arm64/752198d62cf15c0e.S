@@ -80,7 +80,7 @@ func0000000000000141:
 func0000000000000086:
 	mov	w8, #1
 	cmp	w0, #0
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	add	w0, w1, w8
 	ret
 
@@ -94,7 +94,7 @@ func00000000000001e6:
 func00000000000000a6:
 	mov	w8, #1
 	cmp	w0, #0
-	cinc	w8, w8, ge
+	cinc	w8, w8, pl
 	add	w0, w1, w8
 	ret
 

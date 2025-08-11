@@ -22,7 +22,7 @@ func0000000000000023:
 func0000000000000033:
 	cmp	w2, #0
 	mov	w9, #16
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w1
 	tst	w8, #0x1
 	mov	w8, #24

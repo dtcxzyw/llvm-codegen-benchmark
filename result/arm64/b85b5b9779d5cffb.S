@@ -1,6 +1,6 @@
 func0000000000000099:
 	cmp	w2, #0
-	cneg	w8, w1, lt
+	cneg	w8, w1, mi
 	add	w0, w8, w0
 	ret
 
@@ -24,7 +24,7 @@ func0000000000000085:
 
 func0000000000000098:
 	cmp	w2, #0
-	cneg	w8, w1, lt
+	cneg	w8, w1, mi
 	add	w0, w8, w0
 	ret
 
@@ -36,13 +36,13 @@ func0000000000000004:
 
 func0000000000000028:
 	cmp	w2, #0
-	cneg	w8, w1, ge
+	cneg	w8, w1, pl
 	add	w0, w8, w0
 	ret
 
 func0000000000000018:
 	cmp	w2, #0
-	cneg	w8, w1, lt
+	cneg	w8, w1, mi
 	add	w0, w8, w0
 	ret
 

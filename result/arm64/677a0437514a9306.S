@@ -1,9 +1,8 @@
 func0000000000000008:
 	add	w8, w1, w2
-	sub	w8, w8, w0
+	subs	w8, w8, w0
 	add	w9, w8, #7
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w0, w8, #3
 	ret
 

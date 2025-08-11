@@ -6,7 +6,7 @@ func000000000000000a:
 
 func0000000000000026:
 	cmp	x1, #0
-	csinc	x0, x0, x2, ge
+	csinc	x0, x0, x2, pl
 	ret
 
 func0000000000000001:
@@ -25,7 +25,7 @@ func0000000000000038:
 
 func0000000000000046:
 	cmp	x1, #0
-	csinc	x0, x0, x2, ge
+	csinc	x0, x0, x2, pl
 	ret
 
 func0000000000000061:
@@ -35,7 +35,7 @@ func0000000000000061:
 
 func0000000000000066:
 	cmp	x1, #0
-	csinc	x0, x0, x2, ge
+	csinc	x0, x0, x2, pl
 	ret
 
 func000000000000000c:
@@ -53,7 +53,7 @@ func000000000000004a:
 	mov	x8, #9223372036854775807
 	cmp	x1, #0
 	add	x8, x2, x8
-	csel	x0, x0, x8, lt
+	csel	x0, x0, x8, mi
 	ret
 
 func0000000000000064:
@@ -71,7 +71,7 @@ func0000000000000021:
 
 func0000000000000006:
 	cmp	x1, #0
-	csinc	x0, x0, x2, ge
+	csinc	x0, x0, x2, pl
 	ret
 
 func0000000000000008:

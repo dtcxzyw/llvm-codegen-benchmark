@@ -123,7 +123,7 @@ func0000000000000304:
 
 func0000000000000026:
 	cmp	x0, #0
-	ccmp	w1, w2, #4, ge
+	ccmp	w1, w2, #4, pl
 	cset	w0, eq
 	ret
 
@@ -148,7 +148,7 @@ func0000000000000166:
 
 func00000000000002a6:
 	cmp	x0, #0
-	ccmp	w1, w2, #0, ge
+	ccmp	w1, w2, #0, pl
 	cset	w0, ls
 	ret
 

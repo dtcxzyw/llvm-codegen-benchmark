@@ -12,7 +12,7 @@ func0000000000000086:
 	cmp	x0, #0
 	movk	w8, #30517, lsl #16
 	add	x8, x0, x8
-	ccmn	x8, #2, #2, lt
+	ccmn	x8, #2, #2, mi
 	cset	w0, lo
 	ret
 

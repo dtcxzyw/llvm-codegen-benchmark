@@ -12,7 +12,7 @@ func0000000000000042:
 
 func00000000000001cc:
 	cmp	w1, #0
-	ccmp	w0, w1, #4, ge
+	ccmp	w0, w1, #4, pl
 	cset	w0, le
 	ret
 
@@ -24,7 +24,7 @@ func000000000000004c:
 
 func000000000000020c:
 	cmp	w1, #0
-	ccmp	w0, w1, #2, ge
+	ccmp	w0, w1, #2, pl
 	cset	w0, hi
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000294:
 func000000000000018e:
 	cmp	w0, w1
 	ccmp	w1, #0, #8, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000056:

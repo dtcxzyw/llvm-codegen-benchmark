@@ -40,6 +40,6 @@ func0000000000000626:
 	madd	w8, w1, w8, w0
 	add	w9, w8, w9
 	cmp	w8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 

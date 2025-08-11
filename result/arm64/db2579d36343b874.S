@@ -29,7 +29,7 @@ func000000000000000c:
 	sxtb	w8, w2
 	orr	w9, w1, #0x10000000
 	cmp	w8, #0
-	csel	w8, w1, w9, lt
+	csel	w8, w1, w9, mi
 	tst	w0, #0x1
 	orr	w9, w8, #0x400
 	csel	w0, w8, w9, ne

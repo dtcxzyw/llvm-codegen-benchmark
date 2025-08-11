@@ -9,7 +9,7 @@ func0000000000000046:
 	fcmp	d0, d1
 	sxtb	w8, w0
 	ccmp	w8, #0, #0, mi
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000101:

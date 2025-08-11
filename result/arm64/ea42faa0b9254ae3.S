@@ -12,7 +12,7 @@ func000000000000001b:
 	adds	w9, w1, w2
 	mov	w8, #24
 	and	w9, w9, #0x1
-	cneg	w9, w9, lt
+	cneg	w9, w9, mi
 	smaddl	x8, w9, w8, x0
 	add	x0, x8, #8
 	ret

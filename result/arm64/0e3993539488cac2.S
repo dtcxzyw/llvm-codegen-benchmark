@@ -56,7 +56,7 @@ func0000000000000071:
 func0000000000000054:
 	orr	w8, w0, #0x200000
 	cmp	w1, #0
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	orr	w0, w8, #0x400000
 	ret
 

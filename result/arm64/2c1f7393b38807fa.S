@@ -27,7 +27,7 @@ func000000000000018a:
 
 func0000000000000186:
 	cmp	w2, #0
-	csel	w8, wzr, w1, lt
+	csel	w8, wzr, w1, mi
 	cmp	w8, w0
 	csel	w8, w8, w0, lt
 	cmp	w8, #1

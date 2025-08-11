@@ -42,7 +42,7 @@ func000000000000079b:
 	add	x8, x2, #776
 	add	x9, x1, #8
 	cmp	w0, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x8, #8
 	ret
 

@@ -38,7 +38,7 @@ func0000000000001b02:
 func0000000000001198:
 	lsr	w8, w1, w2
 	cmp	w0, #0
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

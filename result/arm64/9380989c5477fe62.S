@@ -15,9 +15,8 @@ func0000000000000424:
 	ret
 
 func00000000000000ca:
-	sub	x8, x1, x2
-	cmp	x8, #0
-	csel	x8, x0, x8, lt
+	subs	x8, x1, x2
+	csel	x8, x0, x8, mi
 	cmp	x8, #0
 	cset	w0, gt
 	ret
@@ -40,7 +39,7 @@ func0000000000000024:
 
 func00000000000004ca:
 	subs	x8, x1, x2
-	csel	x8, x0, x8, lt
+	csel	x8, x0, x8, mi
 	cmp	x8, #0
 	cset	w0, gt
 	ret

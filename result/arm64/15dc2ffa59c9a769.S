@@ -22,6 +22,6 @@ func0000000000000006:
 	mov	x8, #-9223372036854775807
 	cneg	x8, x8, eq
 	cmp	x1, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 

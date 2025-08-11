@@ -7,7 +7,7 @@ func0000000000000021:
 
 func00000000000000d4:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #11
 	cset	w0, lo
 	ret
@@ -28,7 +28,7 @@ func000000000000002c:
 
 func00000000000000c1:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #0
 	cset	w0, eq
 	ret
@@ -62,7 +62,7 @@ func000000000000014a:
 
 func00000000000000c4:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #191
 	cset	w0, lo
 	ret
@@ -76,7 +76,7 @@ func000000000000008a:
 
 func00000000000000cc:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #0
 	cset	w0, ne
 	ret
@@ -168,7 +168,7 @@ func000000000000008c:
 
 func00000000000000c6:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #1
 	cset	w0, lt
 	ret
@@ -209,7 +209,7 @@ func0000000000000144:
 
 func00000000000000d8:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #16
 	cset	w0, hi
 	ret
@@ -217,7 +217,7 @@ func00000000000000d8:
 func0000000000000148:
 	cmp	w2, #0
 	mov	w9, #45568
-	csel	w8, w1, w0, lt
+	csel	w8, w1, w0, mi
 	movk	w9, #9887, lsl #16
 	cmp	w8, w9
 	cset	w0, hi
@@ -270,7 +270,7 @@ func0000000000000114:
 
 func00000000000000c8:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	cmp	w8, #63
 	cset	w0, hi
 	ret

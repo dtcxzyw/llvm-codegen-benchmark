@@ -1,7 +1,7 @@
 func0000000000000546:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x8, x0, #0, ge
+	ccmp	x8, x0, #0, pl
 	cset	w0, gt
 	ret
 
@@ -29,14 +29,14 @@ func0000000000000146:
 func0000000000000126:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x8, x0, #2, ge
+	ccmp	x8, x0, #2, pl
 	cset	w0, hs
 	ret
 
 func0000000000000566:
 	add	x8, x1, x2
 	cmp	x8, #0
-	ccmp	x8, x0, #0, ge
+	ccmp	x8, x0, #0, pl
 	cset	w0, ge
 	ret
 

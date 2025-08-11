@@ -30,7 +30,7 @@ func0000000000000604:
 
 func0000000000000304:
 	cmp	x2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	x1, #0
 	orr	w8, w0, w8
 	cset	w9, eq

@@ -13,14 +13,14 @@ func000000000000042a:
 
 func00000000000004ca:
 	cmp	w1, #0
-	cneg	w8, w0, lt
+	cneg	w8, w0, mi
 	cmp	w8, #0
 	cset	w0, gt
 	ret
 
 func00000000000000c1:
 	cmp	w1, #0
-	cneg	w8, w0, lt
+	cneg	w8, w0, mi
 	cmp	w8, #0
 	cset	w0, eq
 	ret
@@ -46,7 +46,7 @@ func0000000000000586:
 
 func00000000000004c1:
 	cmp	w1, #0
-	cneg	w8, w0, lt
+	cneg	w8, w0, mi
 	cmp	w8, #0
 	cset	w0, eq
 	ret

@@ -11,7 +11,7 @@ func000000000000000a:
 	lsl	x8, x8, #1
 	add	x9, x8, #7
 	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x0, x8, asr #3
 	ret
 

@@ -21,6 +21,6 @@ func0000000000000024:
 func0000000000000006:
 	asr	w8, w1, #16
 	cmp	w0, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 

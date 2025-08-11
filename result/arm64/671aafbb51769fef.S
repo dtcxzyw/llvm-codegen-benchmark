@@ -11,10 +11,9 @@ func0000000000000029:
 
 func0000000000000001:
 	add	w8, w0, w1
-	add	w9, w8, #1
-	add	w10, w8, #4
-	cmp	w9, #0
-	csinc	w8, w10, w8, lt
+	cmn	w8, #1
+	add	w9, w8, #4
+	csinc	w8, w9, w8, mi
 	asr	w8, w8, #2
 	add	w0, w8, #1
 	ret

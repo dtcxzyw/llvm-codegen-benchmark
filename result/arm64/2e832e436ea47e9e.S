@@ -13,7 +13,7 @@ func0000000000000001:
 func0000000000000026:
 	lsl	w8, w2, #1
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000061:
@@ -31,7 +31,7 @@ func0000000000000021:
 func0000000000000006:
 	lsl	w8, w2, #1
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000000a:
@@ -49,7 +49,7 @@ func0000000000000008:
 func0000000000000066:
 	lsl	w8, w2, #1
 	cmp	w1, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000004:
@@ -73,6 +73,6 @@ func0000000000000038:
 func000000000000002a:
 	lsl	w8, w2, #1
 	cmp	w1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

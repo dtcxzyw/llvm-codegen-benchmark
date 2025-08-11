@@ -12,13 +12,13 @@ func0000000000000021:
 
 func00000000000000e6:
 	cmp	w1, #0
-	ccmp	w0, w1, #4, ge
+	ccmp	w0, w1, #4, pl
 	cset	w0, le
 	ret
 
 func00000000000000c6:
 	cmp	w1, #0
-	ccmp	w0, w1, #8, ge
+	ccmp	w0, w1, #8, pl
 	cset	w0, lt
 	ret
 

@@ -14,14 +14,14 @@ func0000000000000003:
 func000000000000000d:
 	sxtb	w8, w1
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	and	w0, w8, #0xff
 	ret
 
 func000000000000000c:
 	sxtb	w8, w1
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	and	w0, w8, #0xff
 	ret
 

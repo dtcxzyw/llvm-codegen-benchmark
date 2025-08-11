@@ -20,12 +20,12 @@ func0000000000000021:
 func0000000000000006:
 	lsl	x8, x1, #1
 	cmp	x0, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000026:
 	lsl	x8, x1, #2
 	cmp	x0, #0
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 

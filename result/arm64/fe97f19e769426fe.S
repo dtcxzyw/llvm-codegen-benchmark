@@ -94,7 +94,7 @@ func00000000000004c4:
 func00000000000004c1:
 	cmp	w1, #1
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000042c:
@@ -145,7 +145,7 @@ func00000000000000c4:
 func0000000000000186:
 	sub	w8, w1, #1
 	cmp	w8, #0
-	ccmp	w0, #0, #0, ge
+	ccmp	w0, #0, #0, pl
 	cset	w0, ne
 	ret
 

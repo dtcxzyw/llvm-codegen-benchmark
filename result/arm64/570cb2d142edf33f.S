@@ -16,9 +16,8 @@ func0000000000000024:
 	ret
 
 func0000000000000006:
-	add	x8, x2, #1
-	cmp	x8, #0
-	csel	x0, x0, x1, lt
+	cmn	x2, #1
+	csel	x0, x0, x1, mi
 	ret
 
 func0000000000000021:

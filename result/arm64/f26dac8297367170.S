@@ -208,7 +208,7 @@ func00000000000000ca:
 	and	w8, w1, #0xffff7fff
 	cmp	w8, #1
 	ccmp	w0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000094:

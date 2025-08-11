@@ -40,7 +40,7 @@ func0000000000000084:
 func0000000000000106:
 	subs	x8, x0, x1
 	add	x9, x8, #3
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x8, x8, #2
 	cmp	w8, #1
 	cset	w0, lt
@@ -68,10 +68,9 @@ func000000000000008c:
 
 func000000000000000a:
 	mov	w8, #33554431
-	sub	x9, x0, x1
+	subs	x9, x0, x1
 	add	x8, x9, x8
-	cmp	x9, #0
-	csel	x8, x8, x9, lt
+	csel	x8, x8, x9, mi
 	lsr	x8, x8, #25
 	cmp	w8, #0
 	cset	w0, gt

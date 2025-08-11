@@ -1,13 +1,13 @@
 func0000000000000066:
 	ubfiz	x8, x0, #2, #32
 	cmp	w0, #0
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 
 func00000000000000e6:
 	ubfiz	x8, x0, #3, #32
 	cmp	w0, #0
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 
 func00000000000000e8:

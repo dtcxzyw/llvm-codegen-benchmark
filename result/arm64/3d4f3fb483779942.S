@@ -17,6 +17,6 @@ func0000000000000010:
 func0000000000000014:
 	subs	x8, x0, x1
 	and	x8, x8, #0x1
-	cneg	x0, x8, lt
+	cneg	x0, x8, mi
 	ret
 

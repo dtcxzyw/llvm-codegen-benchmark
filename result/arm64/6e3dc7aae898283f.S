@@ -32,7 +32,7 @@ func000000000000000a:
 func0000000000000006:
 	mov	w8, #65
 	cmp	w0, #0
-	cinc	w0, w8, ge
+	cinc	w0, w8, pl
 	ret
 
 func0000000000000018:

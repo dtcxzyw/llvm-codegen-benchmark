@@ -1,7 +1,7 @@
 func0000000000000001:
 	add	x8, x1, #15
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	asr	x8, x8, #4
 	sub	x8, x8, #1
 	and	x0, x8, x0

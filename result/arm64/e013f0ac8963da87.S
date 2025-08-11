@@ -1,22 +1,21 @@
 func0000000000000000:
-	sub	w8, w1, w2
+	subs	w8, w1, w2
 	add	w9, w8, #3
-	cmp	w8, #0
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w0, w0, w8, asr #2
 	ret
 
 func0000000000000009:
 	subs	w8, w1, w2
 	add	w9, w8, #63
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	add	w0, w0, w8, asr #6
 	ret
 
 func0000000000000008:
 	subs	w8, w1, w2
 	add	w9, w8, #63
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	sub	w0, w0, w8, asr #6
 	ret
 

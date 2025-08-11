@@ -8,16 +8,15 @@ func0000000000000038:
 	ret
 
 func0000000000000026:
-	sub	w8, w0, w1
+	subs	w8, w0, w1
 	add	w9, w8, #7
-	cmp	w8, #0
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func00000000000000a6:
 	subs	w8, w0, w1
 	add	w9, w8, #7
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func0000000000000024:

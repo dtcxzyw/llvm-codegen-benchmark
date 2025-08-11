@@ -44,7 +44,7 @@ func000000000000084c:
 	cmp	w1, #0
 	ccmp	w2, #0, #4, ne
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000006308:

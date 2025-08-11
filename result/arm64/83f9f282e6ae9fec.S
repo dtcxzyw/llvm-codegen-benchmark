@@ -3,7 +3,7 @@ func0000000000000003:
 	csel	x8, x0, x1, eq
 	cmp	x8, #0
 	cset	w8, gt
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, pl
 	ret
 
 func0000000000000002:
@@ -11,6 +11,6 @@ func0000000000000002:
 	csel	x8, x0, x1, eq
 	cmp	x8, #0
 	cset	w8, gt
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, pl
 	ret
 

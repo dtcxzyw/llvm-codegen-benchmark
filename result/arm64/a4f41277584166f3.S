@@ -21,7 +21,7 @@ func000000000000010c:
 
 func0000000000000146:
 	cmp	x1, #0
-	ccmp	x2, x1, #4, lt
+	ccmp	x2, x1, #4, mi
 	cset	w8, gt
 	and	w0, w0, w8
 	ret

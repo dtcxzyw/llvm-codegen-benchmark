@@ -246,7 +246,7 @@ func0000000000000089:
 func00000000000000ca:
 	cmp	x0, x1
 	ccmp	w2, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002a:

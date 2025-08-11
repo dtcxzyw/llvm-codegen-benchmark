@@ -55,7 +55,7 @@ func000000000000004a:
 func0000000000000046:
 	fcmp	s0, s1
 	ccmp	w0, #0, #0, mi
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000000a8:

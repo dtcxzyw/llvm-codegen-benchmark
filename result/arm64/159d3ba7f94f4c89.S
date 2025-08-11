@@ -15,10 +15,9 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
-	sub	x8, x1, x2
+	subs	x8, x1, x2
 	add	x9, x8, #3
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	lsr	x8, x8, #2
 	add	w0, w0, w8
 	ret

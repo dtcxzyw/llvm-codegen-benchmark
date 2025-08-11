@@ -12,7 +12,7 @@ func0000000000000007:
 func0000000000000002:
 	add	w8, w0, #7
 	cmp	w0, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	asr	w8, w8, #3
 	add	w0, w8, #8
 	ret
@@ -20,7 +20,7 @@ func0000000000000002:
 func0000000000000003:
 	add	w8, w0, #7
 	cmp	w0, #0
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	asr	w8, w8, #3
 	sub	w0, w8, #1
 	ret

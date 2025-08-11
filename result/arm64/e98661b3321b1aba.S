@@ -23,7 +23,7 @@ func00000000000000e6:
 	mov	w8, #8
 	cmp	w0, #0
 	orr	x8, x8, x1, lsl #5
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 
 func0000000000000066:

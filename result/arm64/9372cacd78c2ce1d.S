@@ -62,7 +62,7 @@ func0000000000000028:
 
 func0000000000000018:
 	cmp	x1, #0
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

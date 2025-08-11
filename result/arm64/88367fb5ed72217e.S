@@ -5,9 +5,8 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x1, x2
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 
@@ -90,9 +89,8 @@ func0000000000000034:
 	ret
 
 func0000000000000026:
-	add	x8, x1, x2
-	cmp	x8, #0
-	cset	w8, lt
+	cmn	x1, x2
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

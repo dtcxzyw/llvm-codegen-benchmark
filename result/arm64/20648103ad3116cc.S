@@ -7,7 +7,7 @@ func00000000000000e1:
 func000000000000000a:
 	add	w8, w1, w2
 	cmp	w0, #0
-	cneg	w0, w8, lt
+	cneg	w0, w8, mi
 	ret
 
 func0000000000000001:

@@ -1,7 +1,7 @@
 func00000000000004c4:
 	sub	w8, w1, #1
 	cmp	w1, #0
-	csel	w8, w0, w8, lt
+	csel	w8, w0, w8, mi
 	cmp	w8, #191
 	cset	w0, lo
 	ret

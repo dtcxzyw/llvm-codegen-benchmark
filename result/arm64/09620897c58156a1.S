@@ -14,10 +14,9 @@ func0000000000000014:
 func0000000000000000:
 	mul	w9, w0, w1
 	mov	w8, #-30
-	add	w10, w9, #63
+	adds	w10, w9, #63
 	add	w9, w9, #126
-	cmp	w10, #0
-	csel	w9, w9, w10, lt
+	csel	w9, w9, w10, mi
 	asr	w9, w9, #6
 	neg	w10, w9
 	cmn	w10, #30

@@ -1,7 +1,7 @@
 func0000000000000015:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	add	x0, x8, x0, lsl #1
 	ret
@@ -9,7 +9,7 @@ func0000000000000015:
 func0000000000000004:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	add	x0, x8, x0, lsl #1
 	ret
@@ -17,7 +17,7 @@ func0000000000000004:
 func0000000000000010:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	add	x0, x8, x0, lsl #1
 	ret
@@ -25,7 +25,7 @@ func0000000000000010:
 func0000000000000014:
 	add	x8, x1, #3
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	and	x8, x8, #0xfffffffffffffffc
 	add	x0, x8, x0, lsl #1
 	ret

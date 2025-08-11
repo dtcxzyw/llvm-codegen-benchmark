@@ -3,11 +3,10 @@ func0000000000000000:
 	mov	w9, #12345
 	movk	w8, #16838, lsl #16
 	mul	w8, w0, w8
-	add	w9, w8, w9
-	add	w8, w8, #19, lsl #12
-	add	w8, w8, #56
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	add	w10, w8, #19, lsl #12
+	adds	w8, w8, w9
+	add	w9, w10, #56
+	csel	w8, w9, w8, mi
 	asr	w0, w8, #16
 	ret
 
@@ -25,10 +24,9 @@ func000000000000000a:
 func0000000000000008:
 	add	w8, w0, w0, lsl #2
 	lsl	w8, w8, #3
-	add	w9, w8, #496
+	adds	w9, w8, #496
 	add	w8, w8, #1007
-	cmp	w9, #0
-	csel	w8, w8, w9, lt
+	csel	w8, w8, w9, mi
 	asr	w0, w8, #9
 	ret
 

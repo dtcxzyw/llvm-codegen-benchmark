@@ -65,7 +65,7 @@ func000000000000012c:
 func00000000000000a6:
 	sxth	w8, w0
 	cmp	w8, #0
-	ccmp	x1, x2, #0, ge
+	ccmp	x1, x2, #0, pl
 	cset	w0, ls
 	ret
 

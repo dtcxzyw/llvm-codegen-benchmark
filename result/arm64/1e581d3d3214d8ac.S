@@ -133,7 +133,7 @@ func0000000000000186:
 
 func0000000000000026:
 	cmp	x0, #0
-	ccmp	x1, #0, #0, lt
+	ccmp	x1, #0, #0, mi
 	cset	w0, eq
 	ret
 

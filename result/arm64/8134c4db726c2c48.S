@@ -24,7 +24,7 @@ func0000000000000004:
 func0000000000000019:
 	sxtb	w8, w2
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w1
 	tst	w8, #0x1
 	mov	w8, #2097152

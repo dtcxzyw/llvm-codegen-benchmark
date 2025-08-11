@@ -34,6 +34,6 @@ func0000000000000026:
 	mov	w8, #16387
 	cmp	w0, #0
 	csel	w8, wzr, w8, eq
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 

@@ -71,7 +71,7 @@ func000000000000006a:
 	csel	w8, w8, w2, ne
 	cmp	w0, #0
 	orr	w9, w8, #0x200000
-	csel	w0, w8, w9, lt
+	csel	w0, w8, w9, mi
 	ret
 
 func0000000000000068:

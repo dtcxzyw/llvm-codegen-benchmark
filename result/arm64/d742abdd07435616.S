@@ -75,7 +75,7 @@ func000000000000018c:
 func00000000000000c1:
 	cmp	w1, #0
 	mov	w8, #512
-	ccmp	w0, #3, #0, lt
+	ccmp	w0, #3, #0, mi
 	csel	w0, w8, wzr, eq
 	ret
 

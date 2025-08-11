@@ -38,7 +38,7 @@ func0000000000000026:
 	cmp	w1, #6
 	csel	w8, w8, wzr, eq
 	cmp	w0, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000181:

@@ -7,9 +7,8 @@ func000000000000014a:
 	ret
 
 func00000000000000ca:
-	sub	w8, w1, #1
-	cmp	w8, #0
-	csel	w8, w0, w8, lt
+	subs	w8, w1, #1
+	csel	w8, w0, w8, mi
 	cmp	w8, #99
 	cset	w0, gt
 	ret

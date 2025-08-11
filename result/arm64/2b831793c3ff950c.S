@@ -4,7 +4,7 @@ func0000000000000006:
 	fcsel	s0, s1, s0, ne
 	cmp	w0, #0
 	fneg	s1, s0
-	fcsel	s0, s1, s0, lt
+	fcsel	s0, s1, s0, mi
 	ret
 
 func0000000000000001:

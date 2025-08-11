@@ -24,9 +24,9 @@ func0000000000000948:
 	ret
 
 func00000000000008c8:
-	subs	w8, w0, w1
-	ccmp	w8, #0, #0, hi
-	cset	w0, lt
+	cmp	w0, w1
+	cset	w8, hi
+	csel	w0, wzr, w8, pl
 	ret
 
 func00000000000004cb:

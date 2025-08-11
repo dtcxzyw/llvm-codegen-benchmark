@@ -15,6 +15,6 @@ func0000000000000054:
 
 func0000000000000006:
 	cmp	w0, #0
-	csinc	w0, w0, wzr, lt
+	csinc	w0, w0, wzr, mi
 	ret
 

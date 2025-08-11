@@ -36,7 +36,7 @@ func000000000000c40c:
 	movk	w8, #17, lsl #16
 	ccmp	w1, w8, #2, eq
 	ccmp	w0, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000004608:

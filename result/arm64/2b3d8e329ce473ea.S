@@ -1,7 +1,7 @@
 func000000000000030a:
 	cmp	x2, #0
 	mov	x9, #4611686018427387904
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	add	x8, x8, x9
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1

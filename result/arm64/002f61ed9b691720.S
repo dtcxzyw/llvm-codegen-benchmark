@@ -21,7 +21,7 @@ func000000000000001b:
 	cmp	x2, #0
 	mov	w9, #12
 	movk	x8, #2730, lsl #48
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	madd	x0, x8, x9, x0
 	ret
 

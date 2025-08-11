@@ -1,7 +1,7 @@
 func0000000000000044:
 	subs	w8, w0, w1
 	add	w9, w8, #3
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	asr	w8, w8, #2
 	cmp	w8, #256
 	cset	w0, lo

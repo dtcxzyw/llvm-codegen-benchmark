@@ -176,7 +176,7 @@ func00000000000001b0:
 	add	x8, x1, #512
 	cmp	x0, #2045
 	ccmp	x8, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000130:
@@ -193,7 +193,7 @@ func00000000000011b0:
 	add	x8, x1, #512
 	cmp	x0, #2045
 	ccmp	x8, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000a02:

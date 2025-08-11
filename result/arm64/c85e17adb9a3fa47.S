@@ -30,7 +30,7 @@ func0000000000000088:
 	mov	x9, #32768
 	add	x8, x0, x8
 	movk	x9, #57344, lsl #48
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	and	x8, x8, #0xffffffffffff8000
 	add	x8, x8, x9
 	lsr	x8, x8, #61

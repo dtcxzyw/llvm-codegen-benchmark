@@ -56,7 +56,7 @@ func0000000000000024:
 func00000000000000c4:
 	mov	w8, #65536
 	cmp	w1, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, lo
 	ret
 
@@ -226,7 +226,7 @@ func00000000000000d8:
 func00000000000000d4:
 	mov	w8, #180
 	cmp	w1, #0
-	ccmp	w0, w8, #0, ge
+	ccmp	w0, w8, #0, pl
 	cset	w0, lo
 	ret
 

@@ -23,7 +23,7 @@ func0000000000000006:
 	sxtb	w9, w0
 	mov	w8, #32767
 	cmp	w9, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000000c:

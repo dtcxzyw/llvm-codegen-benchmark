@@ -33,7 +33,7 @@ func0000000000000008:
 
 func0000000000000026:
 	cmn	x1, x2
-	csel	w0, wzr, w0, lt
+	csel	w0, wzr, w0, mi
 	ret
 
 func0000000000000074:

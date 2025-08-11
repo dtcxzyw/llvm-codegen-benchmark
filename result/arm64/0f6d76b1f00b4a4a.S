@@ -32,7 +32,7 @@ func000000000000014a:
 
 func00000000000000cc:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, #0
 	and	w8, w8, w1
 	csinc	w0, w8, wzr, eq
@@ -51,7 +51,7 @@ func0000000000000146:
 	cset	w8, gt
 	cmp	w0, #0
 	and	w8, w8, w1
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000021:

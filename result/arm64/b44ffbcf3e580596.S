@@ -20,7 +20,7 @@ func000000000000030c:
 	cmp	w1, #0
 	mov	w8, #2097152
 	ccmp	w9, #0, #8, eq
-	csel	w0, w8, wzr, lt
+	csel	w0, w8, wzr, mi
 	ret
 
 func0000000000000302:

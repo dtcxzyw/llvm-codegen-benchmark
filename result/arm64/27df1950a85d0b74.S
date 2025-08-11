@@ -9,14 +9,14 @@ func000000000000004a:
 	sxtb	w8, w1
 	add	w9, w2, #127
 	cmp	w8, #0
-	csel	w0, w0, w9, lt
+	csel	w0, w0, w9, mi
 	ret
 
 func0000000000000046:
 	sxtb	w8, w1
 	add	w9, w2, #127
 	cmp	w8, #0
-	csel	w0, w9, w0, lt
+	csel	w0, w9, w0, mi
 	ret
 
 func0000000000000044:

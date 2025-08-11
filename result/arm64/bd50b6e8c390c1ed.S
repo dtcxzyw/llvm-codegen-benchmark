@@ -26,6 +26,6 @@ func000000000000000c:
 func0000000000000006:
 	movi	d1, #0000000000000000
 	cmp	w0, #0
-	fcsel	s0, s0, s1, lt
+	fcsel	s0, s0, s1, mi
 	ret
 

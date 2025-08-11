@@ -35,7 +35,7 @@ func0000000000000184:
 func000000000000001b:
 	add	x8, x2, #16
 	cmp	w1, #0
-	csel	x8, x0, x8, lt
+	csel	x8, x0, x8, mi
 	add	x0, x8, #6
 	ret
 
@@ -77,7 +77,7 @@ func000000000000012b:
 func000000000000011b:
 	sub	x8, x2, #16
 	cmp	w1, #0
-	csel	x8, x0, x8, lt
+	csel	x8, x0, x8, mi
 	add	x0, x8, #8
 	ret
 

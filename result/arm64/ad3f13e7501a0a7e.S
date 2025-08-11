@@ -39,10 +39,9 @@ func0000000000000141:
 	ret
 
 func00000000000000c1:
-	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w8, #0, #8, ne
-	cset	w0, lt
+	ccmp	w1, w2, #8, ne
+	cset	w0, mi
 	ret
 
 func00000000000004c1:

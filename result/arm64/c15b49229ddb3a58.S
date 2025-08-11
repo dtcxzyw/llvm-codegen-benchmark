@@ -8,7 +8,7 @@ func000000000000002a:
 func0000000000000158:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x8, x1, x0, lt
+	csel	x8, x1, x0, mi
 	cmp	x8, #4, lsl #12
 	cset	w0, hi
 	ret
@@ -16,7 +16,7 @@ func0000000000000158:
 func0000000000000154:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x8, x1, x0, lt
+	csel	x8, x1, x0, mi
 	cmp	x8, #3, lsl #12
 	cset	w0, lo
 	ret
@@ -24,7 +24,7 @@ func0000000000000154:
 func00000000000000c1:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #0
 	cset	w0, eq
 	ret
@@ -32,7 +32,7 @@ func00000000000000c1:
 func00000000000000d8:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	lsr	x8, x8, #10
 	cmp	x8, #30
 	cset	w0, hi
@@ -41,7 +41,7 @@ func00000000000000d8:
 func00000000000000d4:
 	sxth	w8, w2
 	cmp	w8, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	cmp	x8, #4, lsl #12
 	cset	w0, lo
 	ret

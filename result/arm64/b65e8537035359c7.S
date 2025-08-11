@@ -46,7 +46,7 @@ func0000000000000518:
 func0000000000000182:
 	tst	w1, #0x1
 	ccmp	x0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000102:
@@ -73,7 +73,7 @@ func0000000000000218:
 func000000000000004c:
 	tst	w1, #0x4
 	ccmp	x0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000310:

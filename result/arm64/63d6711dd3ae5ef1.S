@@ -25,7 +25,7 @@ func000000000000408c:
 	cmp	w9, #33
 	ccmp	w11, w8, #0, ne
 	ccmp	w10, #0, #8, hs
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000001202:

@@ -22,14 +22,14 @@ func0000000000000182:
 func00000000000001cc:
 	sxtw	x8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #4, ge
+	ccmp	x1, x8, #4, pl
 	cset	w0, le
 	ret
 
 func000000000000014c:
 	sxtw	x8, w0
 	cmp	w0, #0
-	ccmp	x1, x8, #0, ge
+	ccmp	x1, x8, #0, pl
 	cset	w0, ls
 	ret
 

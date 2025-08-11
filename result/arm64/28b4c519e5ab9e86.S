@@ -20,7 +20,7 @@ func00000000000001c6:
 	mov	w8, #16807
 	madd	w8, w2, w8, w1
 	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func000000000000008a:
@@ -37,6 +37,6 @@ func0000000000000186:
 	movk	w8, #15, lsl #16
 	madd	w8, w2, w8, w1
 	cmp	w8, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 

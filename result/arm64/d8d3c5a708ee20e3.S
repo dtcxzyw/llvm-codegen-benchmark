@@ -9,7 +9,7 @@ func000000000000002c:
 func00000000000000ca:
 	cmn	w1, #1
 	ccmp	w2, #0, #0, gt
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

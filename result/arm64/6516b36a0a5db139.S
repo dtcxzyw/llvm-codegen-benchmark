@@ -23,7 +23,7 @@ func00000000000000ca:
 	orr	x8, x1, x2
 	cmn	x8, #1
 	ccmp	x0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000021:

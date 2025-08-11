@@ -32,7 +32,7 @@ func000000000000000a:
 
 func0000000000000006:
 	cmp	w0, #0
-	csinc	w0, w0, wzr, ge
+	csinc	w0, w0, wzr, pl
 	ret
 
 func0000000000000041:

@@ -18,7 +18,7 @@ func0000000000000018:
 	sxth	w8, w1
 	sxtw	x9, w2
 	cmp	w8, #0
-	csel	x8, xzr, x9, lt
+	csel	x8, xzr, x9, mi
 	add	x0, x0, x8
 	ret
 

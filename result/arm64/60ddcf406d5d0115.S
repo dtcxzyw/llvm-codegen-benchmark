@@ -91,7 +91,7 @@ func0000000000000050:
 func000000000000004c:
 	tst	w1, #0x8
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000602:

@@ -5,7 +5,7 @@ func000000000000008c:
 	cset	w9, eq
 	cmp	w8, #0
 	orr	w8, w9, w1
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
@@ -36,7 +36,7 @@ func0000000000000302:
 	sxtb	w8, w0
 	and	w9, w0, #0xff
 	cmp	w8, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w9, #95
 	cset	w9, eq
 	orr	w9, w9, w1

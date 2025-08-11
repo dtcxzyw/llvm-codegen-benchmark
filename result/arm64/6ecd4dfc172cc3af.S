@@ -1,7 +1,7 @@
 func0000000000000026:
 	sxth	w8, w1
 	cmp	w8, #0
-	csinc	w0, w0, w2, ge
+	csinc	w0, w0, w2, pl
 	ret
 
 func0000000000000001:

@@ -15,16 +15,15 @@ func0000000000000000:
 func0000000000000009:
 	adds	x8, x0, x1
 	add	x9, x8, #7
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	asr	x8, x8, #3
 	lsl	x0, x8, #2
 	ret
 
 func0000000000000001:
-	add	x8, x0, x1
+	adds	x8, x0, x1
 	add	x9, x8, #4095
-	cmp	x8, #0
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	and	x0, x8, #0xfffffffffffff000
 	ret
 

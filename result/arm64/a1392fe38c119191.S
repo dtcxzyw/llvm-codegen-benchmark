@@ -51,7 +51,7 @@ func0000000000000298:
 func0000000000000194:
 	cmp	w1, #0
 	ccmp	w2, #0, #8, le
-	cset	w8, lt
+	cset	w8, mi
 	and	w0, w0, w8
 	ret
 

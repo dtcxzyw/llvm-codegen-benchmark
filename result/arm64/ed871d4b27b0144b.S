@@ -12,7 +12,7 @@ func0000000000000010:
 	adds	w9, w1, #7
 	add	w10, w1, #14
 	movk	w8, #10922, lsl #16
-	csel	w9, w10, w9, lt
+	csel	w9, w10, w9, mi
 	smull	x8, w0, w8
 	asr	w9, w9, #3
 	asr	x8, x8, #33

@@ -130,7 +130,7 @@ func00000000000000c6:
 	sxtb	w9, w1
 	mov	w8, #1
 	cmp	w9, #0
-	cinc	w8, w8, lt
+	cinc	w8, w8, mi
 	cmp	w0, w8
 	cset	w0, lt
 	ret

@@ -72,7 +72,7 @@ func000000000000002c:
 
 func00000000000000cc:
 	cmp	w2, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w1, #0xff
 	orr	w8, w8, w0
 	cset	w9, ne

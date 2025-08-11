@@ -3,7 +3,7 @@ func0000000000000006:
 	cmp	w0, #0
 	fmul	s0, s0, s1
 	movi	d1, #0000000000000000
-	fcsel	s0, s1, s0, lt
+	fcsel	s0, s1, s0, mi
 	ret
 
 func0000000000000001:

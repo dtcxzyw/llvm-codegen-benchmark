@@ -14,7 +14,7 @@ func0000000000000546:
 
 func0000000000001946:
 	cmp	w2, #0
-	ccmp	w0, w1, #0, lt
+	ccmp	w0, w1, #0, mi
 	ccmn	w0, #1, #4, lt
 	cset	w0, gt
 	ret

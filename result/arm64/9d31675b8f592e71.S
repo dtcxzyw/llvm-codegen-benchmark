@@ -3,7 +3,7 @@ func0000000000000026:
 	cmp	w1, #4, lsl #12
 	csel	x8, x8, xzr, eq
 	cmp	w0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func000000000000018c:
@@ -53,9 +53,9 @@ func00000000000000c6:
 	mov	w8, #8
 	cmp	w1, #0
 	mov	w9, #4
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	cmp	w0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func0000000000000084:

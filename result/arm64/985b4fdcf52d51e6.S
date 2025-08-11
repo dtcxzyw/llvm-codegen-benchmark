@@ -58,7 +58,7 @@ func0000000000000026:
 	cset	w8, ne
 	cmp	w1, #0
 	bic	w8, w8, w0
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func00000000000000c1:
@@ -73,7 +73,7 @@ func0000000000000086:
 	cmn	w2, #2513
 	cset	w8, lo
 	cmp	w1, #0
-	cset	w9, lt
+	cset	w9, mi
 	orr	w8, w0, w8
 	orr	w8, w8, w9
 	and	w0, w8, #0x1

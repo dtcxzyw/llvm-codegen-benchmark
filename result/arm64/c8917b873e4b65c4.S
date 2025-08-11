@@ -1,7 +1,7 @@
 func00000000000000ca:
 	mov	w8, w1
 	cmp	x2, #0
-	csel	x8, xzr, x8, lt
+	csel	x8, xzr, x8, mi
 	cmp	x0, x8
 	cset	w0, gt
 	ret

@@ -29,7 +29,7 @@ func0000000000000004:
 
 func0000000000000006:
 	cmp	x1, #0
-	cset	w8, lt
+	cset	w8, mi
 	tst	w8, w2
 	csel	x0, x0, x1, ne
 	ret

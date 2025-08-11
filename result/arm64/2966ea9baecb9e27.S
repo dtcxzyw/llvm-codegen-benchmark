@@ -36,7 +36,7 @@ func0000000000000013:
 func0000000000000018:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	add	w0, w8, #1
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000007:
 func000000000000001b:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	add	w0, w8, #44
 	ret
 

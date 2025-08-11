@@ -56,7 +56,7 @@ func0000000000000026:
 	sxtb	w8, w0
 	and	w9, w1, #0xff
 	cmp	w8, #0
-	ccmp	w9, #1, #0, lt
+	ccmp	w9, #1, #0, mi
 	cset	w0, eq
 	ret
 
@@ -70,7 +70,7 @@ func00000000000000cc:
 	sxtb	w8, w1
 	tst	w0, #0xff
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000014c:
@@ -98,7 +98,7 @@ func0000000000000086:
 	sxtb	w8, w0
 	tst	w1, #0xf8
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000002a:
@@ -112,7 +112,7 @@ func0000000000000286:
 	sxtb	w8, w0
 	tst	w1, #0xf8
 	ccmp	w8, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000184:
@@ -248,7 +248,7 @@ func0000000000000186:
 	sxtb	w8, w0
 	tst	w1, #0xff
 	ccmp	w8, #0, #0, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000118:

@@ -31,6 +31,6 @@ func000000000000098c:
 	mul	w8, w1, w0
 	cmp	w0, #1
 	ccmp	w8, #0, #8, ge
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

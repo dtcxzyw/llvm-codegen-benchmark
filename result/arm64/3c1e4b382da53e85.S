@@ -3,7 +3,7 @@ func0000000000000000:
 	add	w9, w1, #3
 	cmp	w1, #0
 	movk	w8, #20971, lsl #16
-	csel	w9, w9, w1, lt
+	csel	w9, w9, w1, mi
 	smull	x8, w1, w8
 	add	w9, w2, w9, asr #2
 	add	w9, w9, w0
@@ -17,7 +17,7 @@ func0000000000000021:
 	add	w9, w1, #3
 	cmp	w1, #0
 	movk	w8, #20971, lsl #16
-	csel	w9, w9, w1, lt
+	csel	w9, w9, w1, mi
 	smull	x8, w1, w8
 	add	w9, w2, w9, asr #2
 	add	w9, w9, w0
@@ -31,7 +31,7 @@ func0000000000000065:
 	add	w9, w1, #3
 	cmp	w1, #0
 	movk	w8, #20971, lsl #16
-	csel	w9, w9, w1, lt
+	csel	w9, w9, w1, mi
 	smull	x8, w1, w8
 	add	w9, w2, w9, asr #2
 	add	w9, w9, w0
@@ -45,7 +45,7 @@ func0000000000000025:
 	add	w9, w1, #3
 	cmp	w1, #0
 	movk	w8, #20971, lsl #16
-	csel	w9, w9, w1, lt
+	csel	w9, w9, w1, mi
 	smull	x8, w1, w8
 	add	w9, w2, w9, asr #2
 	add	w9, w9, w0

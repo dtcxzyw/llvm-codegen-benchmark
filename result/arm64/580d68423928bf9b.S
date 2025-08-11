@@ -15,6 +15,6 @@ func0000000000000006:
 	sxth	w8, w0
 	sxtw	x9, w1
 	cmp	w8, #0
-	csel	x0, xzr, x9, lt
+	csel	x0, xzr, x9, mi
 	ret
 

@@ -16,13 +16,13 @@ func0000000000000086:
 	and	w8, w1, #0xffff
 	cmp	w8, #9
 	ccmp	w0, #0, #8, ls
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000026:
 	tst	w1, #0xffff
 	ccmp	w0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000008a:

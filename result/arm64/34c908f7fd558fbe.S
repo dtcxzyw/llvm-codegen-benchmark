@@ -10,7 +10,7 @@ func00000000000000e6:
 	mov	w9, #8
 	cmp	w0, #0
 	orr	x8, x9, x8, lsl #5
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 
 func0000000000000066:
@@ -18,6 +18,6 @@ func0000000000000066:
 	mov	w9, #8
 	cmp	w0, #0
 	orr	x8, x9, x8, lsl #6
-	csinv	x0, x8, xzr, ge
+	csinv	x0, x8, xzr, pl
 	ret
 

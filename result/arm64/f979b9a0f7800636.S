@@ -33,7 +33,7 @@ func0000000000000302:
 
 func000000000000030c:
 	cmp	x1, #0
-	ccmp	w2, #0, #0, ge
+	ccmp	w2, #0, #0, pl
 	cset	w8, ne
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
@@ -41,7 +41,7 @@ func000000000000030c:
 
 func000000000000018c:
 	cmp	w1, #0
-	ccmp	x2, #1, #8, ge
+	ccmp	x2, #1, #8, pl
 	cset	w8, lt
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

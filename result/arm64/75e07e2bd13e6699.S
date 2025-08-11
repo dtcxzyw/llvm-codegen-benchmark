@@ -28,7 +28,7 @@ func0000000000000081:
 func0000000000000026:
 	cmp	w1, #0
 	mov	w8, #113
-	ccmp	w2, w8, #4, lt
+	ccmp	w2, w8, #4, mi
 	mov	w8, #2
 	csel	w0, w8, w0, ne
 	ret

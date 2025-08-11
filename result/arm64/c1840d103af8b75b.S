@@ -118,7 +118,7 @@ func000000000000018c:
 func00000000000004ca:
 	cmp	w1, w2
 	ccmp	w0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000021:

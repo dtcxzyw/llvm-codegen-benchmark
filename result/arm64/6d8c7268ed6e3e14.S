@@ -1,8 +1,8 @@
 func000000000000028c:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
-	cset	w0, gt
+	subs	w8, w1, w2
+	cset	w9, mi
+	cmp	w8, w0
+	csinc	w0, w9, wzr, le
 	ret
 
 func0000000000000a8c:
@@ -28,9 +28,9 @@ func0000000000000628:
 	ret
 
 func0000000000000acc:
-	sub	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
-	cset	w0, ge
+	subs	w8, w1, w2
+	cset	w9, mi
+	cmp	w8, w0
+	csinc	w0, w9, wzr, lt
 	ret
 

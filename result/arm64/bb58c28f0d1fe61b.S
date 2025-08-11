@@ -8,7 +8,7 @@ func0000000000000006:
 	sxth	w8, w1
 	add	w9, w0, #4
 	cmp	w8, #0
-	csel	w0, w0, w9, lt
+	csel	w0, w0, w9, mi
 	ret
 
 func0000000000000024:

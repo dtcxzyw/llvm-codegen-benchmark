@@ -4,7 +4,7 @@ func0000000000000126:
 	add	w8, w8, w8, lsr #31
 	asr	w8, w8, #1
 	sub	w8, w8, #1
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000026:
@@ -12,7 +12,7 @@ func0000000000000026:
 	cmp	w1, #0
 	add	w8, w8, w8, lsr #31
 	asr	w8, w8, #1
-	csinc	w0, w0, w8, ge
+	csinc	w0, w0, w8, pl
 	ret
 
 func000000000000012a:

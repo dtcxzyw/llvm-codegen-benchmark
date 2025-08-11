@@ -16,7 +16,7 @@ func0000000000000186:
 	sxtb	w8, w1
 	cmp	w8, #0
 	mov	w8, #224
-	ccmp	w2, w8, #4, lt
+	ccmp	w2, w8, #4, mi
 	cset	w8, ne
 	and	w0, w0, w8
 	ret

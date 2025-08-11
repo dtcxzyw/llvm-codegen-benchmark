@@ -8,7 +8,7 @@ func0000000000000004:
 func000000000000001b:
 	cmp	w2, #0
 	mov	w9, #43
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	sub	w0, w9, w8
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000029:
 func0000000000000018:
 	cmp	w2, #0
 	mov	w9, #-25
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	sub	w0, w9, w8
 	ret
 
@@ -40,7 +40,7 @@ func0000000000000053:
 
 func0000000000000019:
 	cmp	w2, #0
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	neg	w0, w8
 	ret
 
@@ -54,7 +54,7 @@ func0000000000000007:
 func000000000000001a:
 	cmp	w2, #0
 	mov	w9, #-2147483648
-	csel	w8, w0, w1, lt
+	csel	w8, w0, w1, mi
 	sub	w0, w9, w8
 	ret
 

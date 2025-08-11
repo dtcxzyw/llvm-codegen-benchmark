@@ -38,7 +38,7 @@ func0000000000000034:
 func0000000000000026:
 	tst	w1, #0xffff
 	ccmp	x0, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000014c:
@@ -107,14 +107,14 @@ func00000000000000c1:
 	and	w8, w0, #0xffff
 	cmp	w8, #17
 	ccmp	x1, #0, #0, eq
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000000c4:
 	sxth	w8, w1
 	cmp	x0, #16, lsl #12
 	ccmp	w8, #0, #0, lo
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000081:
@@ -144,7 +144,7 @@ func000000000000002a:
 func0000000000000186:
 	and	w8, w1, #0xffff
 	cmp	x0, #0
-	ccmp	w8, #3, #4, lt
+	ccmp	w8, #3, #4, mi
 	cset	w0, ne
 	ret
 

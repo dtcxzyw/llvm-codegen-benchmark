@@ -220,7 +220,7 @@ func000000000000194a:
 
 func00000000000028c6:
 	cmp	w1, #0
-	ccmp	w0, #6, #0, lt
+	ccmp	w0, #6, #0, mi
 	ccmp	w2, #5, #4, lt
 	cset	w0, gt
 	ret

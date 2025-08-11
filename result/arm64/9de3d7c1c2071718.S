@@ -8,7 +8,7 @@ func0000000000000007:
 func0000000000000003:
 	add	x8, x0, #3
 	cmp	x0, #0
-	csel	x8, x8, x0, lt
+	csel	x8, x8, x0, mi
 	and	x0, x8, #0xfffffffffffffffc
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000000c:
 	cmp	w2, #0
 	mov	w8, #2147483647
-	csel	w8, w8, w1, lt
+	csel	w8, w8, w1, mi
 	cmp	w0, w8
 	csel	w0, w0, w8, lo
 	ret

@@ -5,7 +5,7 @@ func0000000000000006:
 	add	w8, w0, w8
 	movk	w9, #20164, lsl #16
 	mov	w10, #26
-	csel	w8, w8, w0, lt
+	csel	w8, w8, w0, mi
 	umull	x9, w8, w9
 	lsr	x9, x9, #35
 	msub	w0, w9, w10, w8

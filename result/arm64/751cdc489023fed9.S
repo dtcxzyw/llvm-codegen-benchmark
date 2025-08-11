@@ -15,7 +15,7 @@ func0000000000000006:
 	sxtb	w9, w1
 	mov	w8, #65533
 	cmp	w9, #0
-	csel	w0, w8, w0, lt
+	csel	w0, w8, w0, mi
 	ret
 
 func000000000000000c:

@@ -27,7 +27,7 @@ func0000000000000061:
 func0000000000000006:
 	add	x8, x1, w2, uxtw
 	cmp	w0, #0
-	csel	x0, xzr, x8, lt
+	csel	x0, xzr, x8, mi
 	ret
 
 func00000000000000e4:

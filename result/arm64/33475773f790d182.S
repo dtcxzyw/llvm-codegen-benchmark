@@ -120,7 +120,7 @@ func0000000000000294:
 
 func00000000000000cc:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w0, #0
 	cset	w9, ne
 	eor	w0, w9, w8
@@ -178,7 +178,7 @@ func0000000000000026:
 	cmp	w1, #17
 	cset	w8, eq
 	cmp	w0, #0
-	cset	w9, lt
+	cset	w9, mi
 	eor	w0, w9, w8
 	ret
 

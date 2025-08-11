@@ -40,7 +40,7 @@ func000000000000001a:
 	mov	x8, #-16
 	cmp	x1, #0
 	mov	x9, #-32
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x0, x8
 	ret
 
@@ -85,7 +85,7 @@ func000000000000001b:
 	mov	w8, #192
 	cmp	x1, #0
 	mov	w9, #200
-	csel	x8, x9, x8, lt
+	csel	x8, x9, x8, mi
 	add	x0, x0, x8
 	ret
 

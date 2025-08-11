@@ -27,9 +27,9 @@ func0000000000000001:
 	add	x8, x1, #7
 	cmp	x1, #0
 	add	x9, x0, #7
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	cmp	x0, #0
-	csel	x9, x9, x0, lt
+	csel	x9, x9, x0, mi
 	asr	x9, x9, #3
 	cmp	x9, x8, asr #3
 	cset	w0, eq

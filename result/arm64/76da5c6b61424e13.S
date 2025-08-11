@@ -42,7 +42,7 @@ func0000000000000146:
 	cmp	w1, #0
 	cset	w8, gt
 	and	w8, w0, w8
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func00000000000000c6:

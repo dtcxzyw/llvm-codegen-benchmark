@@ -32,10 +32,9 @@ func0000000000000020:
 	ret
 
 func0000000000000018:
-	add	x8, x2, #16
+	cmn	x2, #16
 	orr	w9, w0, w1
-	cmp	x8, #0
-	cset	w8, lt
+	cset	w8, mi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

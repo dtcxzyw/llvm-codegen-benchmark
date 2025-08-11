@@ -16,7 +16,7 @@ func0000000000000066:
 	mov	w8, #4096
 	cmp	x1, #0
 	sub	x8, x8, x2
-	csel	x0, x8, x0, lt
+	csel	x0, x8, x0, mi
 	ret
 
 func0000000000000061:
@@ -40,7 +40,7 @@ func0000000000000021:
 
 func0000000000000026:
 	cmp	x1, #0
-	csneg	x0, x0, x2, ge
+	csneg	x0, x0, x2, pl
 	ret
 
 func0000000000000008:
@@ -59,7 +59,7 @@ func0000000000000034:
 
 func0000000000000006:
 	cmp	x1, #0
-	csneg	x0, x0, x2, ge
+	csneg	x0, x0, x2, pl
 	ret
 
 func0000000000000028:

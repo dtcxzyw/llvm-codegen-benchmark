@@ -1,7 +1,7 @@
 func0000000000000186:
 	cmn	w1, #28
 	ccmp	w0, #0, #0, ne
-	csel	w0, w0, w1, lt
+	csel	w0, w0, w1, mi
 	ret
 
 func0000000000000104:
@@ -30,7 +30,7 @@ func0000000000000141:
 
 func00000000000000ca:
 	cmp	w0, #0
-	ccmn	w1, #1, #4, lt
+	ccmn	w1, #1, #4, mi
 	csel	w0, w0, w1, gt
 	ret
 

@@ -16,6 +16,6 @@ func0000000000000029:
 func000000000000000d:
 	mov	w8, #-128
 	cmp	x0, #0
-	csinv	w0, w8, wzr, ge
+	csinv	w0, w8, wzr, pl
 	ret
 

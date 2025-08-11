@@ -106,7 +106,7 @@ func0000000000000ccc:
 func0000000000000e86:
 	add	x8, x2, #1
 	cmp	w0, #0
-	ccmp	x8, x1, #2, lt
+	ccmp	x8, x1, #2, mi
 	cset	w0, lo
 	ret
 

@@ -84,7 +84,7 @@ func0000000000000024:
 
 func0000000000000106:
 	cmp	w0, #0
-	ccmp	x1, x2, #0, lt
+	ccmp	x1, x2, #0, mi
 	cset	w0, hi
 	ret
 

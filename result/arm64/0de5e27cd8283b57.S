@@ -1,6 +1,6 @@
 func00000000000000cc:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w8, w0
 	cset	w9, ne
@@ -30,7 +30,7 @@ func000000000000002c:
 
 func00000000000000c1:
 	cmp	w1, #0
-	cset	w8, lt
+	cset	w8, mi
 	cmp	w1, w2
 	orr	w8, w8, w0
 	cset	w9, eq

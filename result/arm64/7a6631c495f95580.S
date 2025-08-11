@@ -47,7 +47,7 @@ func0000000000000202:
 func000000000000030c:
 	ubfx	w8, w1, #3, #1
 	cmp	w0, #0
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000318:
@@ -80,6 +80,6 @@ func0000000000000102:
 func000000000000004c:
 	tst	w1, #0x200
 	ccmp	w0, #0, #8, ne
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

@@ -11,7 +11,7 @@ func000000000000c302:
 	mov	w8, #95
 	cmp	w9, #0
 	and	w9, w0, #0xff
-	ccmp	w1, #0, #0, ge
+	ccmp	w1, #0, #0, pl
 	ccmp	w9, w8, #4, eq
 	cset	w0, eq
 	ret

@@ -21,7 +21,7 @@ func00000000000000cb:
 	mov	w8, #12
 	cmp	w0, #0
 	mov	w9, #-7
-	csel	w8, w9, w8, lt
+	csel	w8, w9, w8, mi
 	cmp	w0, w8
 	cset	w0, ge
 	ret

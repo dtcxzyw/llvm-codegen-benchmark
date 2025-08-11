@@ -41,7 +41,7 @@ func0000000000000518:
 
 func0000000000000318:
 	cmp	w1, #0
-	ccmp	w1, w2, #8, ge
+	ccmp	w1, w2, #8, pl
 	cset	w8, lt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
@@ -58,7 +58,7 @@ func0000000000000604:
 
 func0000000000000598:
 	cmp	w1, #0
-	ccmp	w1, w2, #0, ge
+	ccmp	w1, w2, #0, pl
 	cset	w8, ge
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

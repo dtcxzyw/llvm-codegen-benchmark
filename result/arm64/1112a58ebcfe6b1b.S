@@ -47,7 +47,7 @@ func000000000000002a:
 
 func00000000000000c1:
 	cmp	w1, #0
-	ccmp	w0, #0, #0, lt
+	ccmp	w0, #0, #0, mi
 	csinv	w0, w0, wzr, ne
 	ret
 

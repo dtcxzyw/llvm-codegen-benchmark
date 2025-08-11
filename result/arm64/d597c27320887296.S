@@ -15,7 +15,7 @@ func0000000000001150:
 func000000000000120c:
 	add	x8, x2, x0
 	cmp	x0, #0
-	ccmp	x8, x1, #2, ge
+	ccmp	x8, x1, #2, pl
 	cset	w0, hi
 	ret
 

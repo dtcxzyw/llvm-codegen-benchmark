@@ -42,12 +42,12 @@ func000000000000001b:
 	mov	w8, #43
 	cmp	w0, #0
 	mov	w9, #45
-	csel	w0, w9, w8, lt
+	csel	w0, w9, w8, mi
 	ret
 
 func000000000000001a:
 	mov	w8, #127
 	cmp	w0, #0
-	csinv	w0, w8, wzr, lt
+	csinv	w0, w8, wzr, mi
 	ret
 

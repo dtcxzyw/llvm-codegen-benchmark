@@ -1,6 +1,6 @@
 func00000000000000c4:
 	cmp	w2, #0
-	csel	w8, w1, w2, lt
+	csel	w8, w1, w2, mi
 	cmp	x0, w8, sxtw
 	cset	w0, lo
 	ret

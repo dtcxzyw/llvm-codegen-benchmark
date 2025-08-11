@@ -66,7 +66,7 @@ func0000000000000b0c:
 	cset	w8, ne
 	cmp	w0, #0
 	csel	w8, wzr, w8, ne
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000005214:
@@ -102,7 +102,7 @@ func000000000000204c:
 func0000000000003182:
 	cmp	w0, #1
 	ccmp	w1, #0, #0, lt
-	ccmp	w0, #0, #4, ge
+	ccmp	w0, #0, #4, pl
 	cset	w0, eq
 	ret
 
@@ -111,7 +111,7 @@ func000000000000518c:
 	cset	w8, lt
 	cmp	w0, #0
 	csel	w8, wzr, w8, le
-	csinc	w0, w8, wzr, ge
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000504c:
@@ -119,6 +119,6 @@ func000000000000504c:
 	cmp	w1, #3
 	ccmp	w0, w8, #4, eq
 	ccmp	w0, #0, #8, le
-	cset	w0, lt
+	cset	w0, mi
 	ret
 

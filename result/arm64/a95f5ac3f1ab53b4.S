@@ -32,6 +32,6 @@ func0000000000000086:
 	mov	w8, #1
 	cmp	w0, #0
 	cinc	w8, w8, ne
-	csel	w0, wzr, w8, lt
+	csel	w0, wzr, w8, mi
 	ret
 

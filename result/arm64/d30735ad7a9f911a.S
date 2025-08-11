@@ -20,7 +20,7 @@ func000000000000018c:
 func0000000000000186:
 	ubfx	x8, x1, #13, #1
 	cmp	x0, #0
-	csel	w0, wzr, w8, ge
+	csel	w0, wzr, w8, pl
 	ret
 
 func0000000000000181:
@@ -111,7 +111,7 @@ func0000000000000026:
 	mov	w8, #1054
 	and	x9, x1, #0x7ff
 	cmp	x0, #0
-	ccmp	x9, x8, #0, lt
+	ccmp	x9, x8, #0, mi
 	cset	w0, eq
 	ret
 

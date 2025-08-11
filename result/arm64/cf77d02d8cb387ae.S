@@ -21,7 +21,7 @@ func0000000000000006:
 	mov	w8, #-1
 	cneg	w8, w8, eq
 	cmp	x1, #0
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, mi
 	ret
 
 func0000000000000018:

@@ -16,7 +16,7 @@ func0000000000000081:
 func00000000000000c1:
 	sxtb	w8, w2
 	cmp	w8, #0
-	csel	x8, x0, x1, lt
+	csel	x8, x0, x1, mi
 	and	x8, x8, #0xfffffffffffffffe
 	cmp	x8, #2
 	cset	w0, eq

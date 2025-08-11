@@ -55,7 +55,7 @@ func000000000000008a:
 func000000000000002a:
 	add	x8, x1, #7
 	cmp	x1, #0
-	csel	x8, x8, x1, lt
+	csel	x8, x8, x1, mi
 	sub	x8, x0, x8, asr #3
 	cmp	x8, #1
 	cset	w0, gt

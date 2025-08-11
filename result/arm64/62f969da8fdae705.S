@@ -45,21 +45,21 @@ func0000000000002946:
 	cmp	x1, #0
 	ccmp	x2, #0, #4, gt
 	ccmp	x0, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func000000000000194a:
 	cmp	x1, #0
 	ccmp	x0, #0, #4, gt
 	ccmp	x2, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func00000000000028ca:
 	cmp	x2, #0
 	ccmp	x0, #0, #4, gt
 	ccmp	x1, #0, #0, gt
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000001084:

@@ -72,7 +72,7 @@ func0000000000000018:
 func00000000000001a8:
 	add	w8, w2, #2
 	cmp	w1, #0
-	csel	w8, wzr, w8, lt
+	csel	w8, wzr, w8, mi
 	add	w0, w8, w0
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000946:
 	lsr	x8, x2, #32
 	cmp	w0, #0
-	ccmp	w1, w8, #0, ge
+	ccmp	w1, w8, #0, pl
 	cset	w0, gt
 	ret
 
