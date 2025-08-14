@@ -6,8 +6,8 @@ func0000000000000001:
 
 func0000000000000086:
 	mul	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000081:
@@ -35,8 +35,8 @@ func00000000000000a1:
 
 func00000000000000a6:
 	mul	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000aa:
@@ -138,8 +138,8 @@ func0000000000000021:
 
 func00000000000001a6:
 	mul	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001a1:
@@ -155,8 +155,8 @@ func00000000000001a1:
 
 func0000000000000026:
 	mul	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000008:

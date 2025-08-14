@@ -17,8 +17,7 @@ func0000000000000886:
 	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func000000000000088a:
@@ -29,8 +28,7 @@ func000000000000088a:
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000001:
 
 func0000000000000006:
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	li	a1, -128
 	czero.eqz	a0, a1, a0

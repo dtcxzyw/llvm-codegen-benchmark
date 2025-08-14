@@ -50,10 +50,10 @@ func00000000000009cc:
 	ret
 
 func000000000000098c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	addiw	a1, a1, 2
-	slt	a1, a1, a0
-	slti	a0, a0, 0
+	slt	a1, a1, a2
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

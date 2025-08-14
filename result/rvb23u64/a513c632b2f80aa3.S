@@ -34,7 +34,7 @@ func00000000000001a4:
 func000000000000000a:
 	addi	a0, a0, 1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

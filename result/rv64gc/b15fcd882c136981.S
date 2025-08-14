@@ -170,7 +170,7 @@ func000000000000002a:
 	srai	a0, a0, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -247,7 +247,7 @@ func0000000000000146:
 	srai	a0, a0, 48
 	srai	a1, a1, 48
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

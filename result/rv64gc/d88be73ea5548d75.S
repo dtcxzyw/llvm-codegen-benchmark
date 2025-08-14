@@ -8,13 +8,12 @@ func0000000000008410:
 	ret
 
 func000000000000130c:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a2, a2
+	srliw	a0, a0, 31
 	slti	a1, a1, 1
-	slti	a0, a0, 0
-	or	a0, a0, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000006098:
@@ -108,7 +107,7 @@ func0000000000001602:
 func0000000000006082:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, -2
 	addi	a0, a0, -2
 	seqz	a1, a1

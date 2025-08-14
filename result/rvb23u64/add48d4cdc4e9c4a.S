@@ -1,6 +1,6 @@
 func0000000000000006:
-	addiw	a1, a1, -2
-	slti	a1, a1, 0
+	addi	a1, a1, -2
+	srliw	a1, a1, 31
 	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 1

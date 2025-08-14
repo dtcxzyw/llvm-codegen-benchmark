@@ -8,9 +8,8 @@ func0000000000000006:
 	ret
 
 func000000000000001a:
-	sext.w	a1, a1
 	sraiw	a2, a2, 16
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a2, a2, -1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 1

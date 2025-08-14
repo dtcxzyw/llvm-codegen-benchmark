@@ -54,11 +54,10 @@ func000000000000048c:
 	ret
 
 func000000000000010a:
-	sext.w	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -40
 	sltiu	a1, a1, -20
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

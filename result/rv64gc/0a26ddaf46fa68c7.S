@@ -51,8 +51,7 @@ func0000000000000621:
 	ret
 
 func00000000000001b8:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -60,8 +59,7 @@ func00000000000001b8:
 	ret
 
 func00000000000001a4:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -69,8 +67,7 @@ func00000000000001a4:
 	ret
 
 func00000000000001a8:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1

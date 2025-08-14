@@ -18,9 +18,8 @@ func0000000000000141:
 	ret
 
 func000000000000014c:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	srli	a1, a1, 18
-	slti	a2, a2, 0
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -100,9 +99,8 @@ func0000000000000101:
 	ret
 
 func00000000000000c1:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	andi	a1, a1, 4
-	slti	a2, a2, 0
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

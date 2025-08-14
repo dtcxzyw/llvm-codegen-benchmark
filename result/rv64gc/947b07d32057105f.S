@@ -27,10 +27,9 @@ func000000000000048c:
 	ret
 
 func000000000000048a:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	srliw	a0, a0, 31
 	addi	a1, a1, -1
-	slti	a0, a0, 0
 	sltiu	a1, a1, 12
 	not	a0, a0
 	and	a0, a0, a1

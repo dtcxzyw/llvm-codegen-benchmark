@@ -1,6 +1,5 @@
 func0000000000000014:
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	orn	a2, a2, a3
 	andi	a2, a2, 1
 	czero.nez	a1, a1, a2

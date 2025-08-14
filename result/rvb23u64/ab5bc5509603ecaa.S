@@ -71,12 +71,12 @@ func0000000000000281:
 func0000000000000146:
 	sgtz	a2, a2
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func00000000000000ca:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a1, a1, a2
 	sgtz	a0, a0
 	and	a0, a0, a1

@@ -28,7 +28,7 @@ func0000000000000004:
 func000000000000000a:
 	add	a0, a0, a1
 	li	a1, 2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	li	a1, -1
 	srli	a1, a1, 1

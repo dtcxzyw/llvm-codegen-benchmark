@@ -6,10 +6,9 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	sext.w	a0, a0
 	slli	a1, a1, 56
 	srli	a1, a1, 59
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	addi	a1, a1, -9
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 9

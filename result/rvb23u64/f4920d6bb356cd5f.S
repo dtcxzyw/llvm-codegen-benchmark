@@ -1,9 +1,8 @@
 func000000000000002a:
 	andi	a0, a0, 1
-	sext.w	a3, a1
 	zext.b	a2, a2
+	srliw	a3, a1, 31
 	seqz	a2, a2
-	slti	a3, a3, 0
 	xori	a3, a3, 1
 	or	a2, a2, a3
 	addi	a1, a1, -6

@@ -52,11 +52,10 @@ func000000000000004c:
 	ret
 
 func000000000000028c:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	not	a1, a1
+	srliw	a0, a0, 31
 	slti	a2, a2, 1
-	slti	a0, a0, 0
 	and	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -8,11 +8,11 @@ func0000000000000c2c:
 	ret
 
 func0000000000001c2a:
-	sext.w	a0, a0
-	sh2add	a2, a0, a2
+	sext.w	a3, a0
+	sh2add	a2, a3, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

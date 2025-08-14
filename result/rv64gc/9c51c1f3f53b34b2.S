@@ -10,6 +10,6 @@ func000000000000000c:
 	xor	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

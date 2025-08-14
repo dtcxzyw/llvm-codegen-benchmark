@@ -1,6 +1,6 @@
 func000000000000000a:
 	sext.h	a1, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, 2
 	czero.nez	a0, a0, a1
 	addi	a0, a0, -2

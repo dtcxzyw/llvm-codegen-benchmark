@@ -9,7 +9,7 @@ func00000000000000aa:
 	andi	a1, a1, 2047
 	add	a0, a0, a1
 	addi	a0, a0, -1075
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

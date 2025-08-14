@@ -18,7 +18,7 @@ func0000000000001150:
 func000000000000120c:
 	add	a2, a2, a0
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

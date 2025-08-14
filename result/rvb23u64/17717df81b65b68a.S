@@ -30,8 +30,8 @@ func0000000000000761:
 func000000000000042a:
 	fli.d	fa5, 0.5
 	flt.d	a1, fa5, fa0
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

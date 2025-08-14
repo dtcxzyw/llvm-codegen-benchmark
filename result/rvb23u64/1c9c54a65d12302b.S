@@ -23,7 +23,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 

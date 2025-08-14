@@ -10,7 +10,7 @@ func000000000000004a:
 	andi	a0, a0, 1
 	slli	a0, a0, 1
 	sll	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

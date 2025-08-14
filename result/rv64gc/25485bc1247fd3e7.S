@@ -1,7 +1,7 @@
 func00000000000000c6:
 	neg	a2, a2
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -27,7 +27,7 @@ func0000000000000424:
 
 func00000000000004ca:
 	li	a3, -2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	sub	a3, a3, a2
 	slt	a1, a1, a3
 	xori	a0, a0, 1
@@ -39,7 +39,7 @@ func0000000000000d46:
 	srli	a3, a3, 1
 	xor	a2, a2, a3
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

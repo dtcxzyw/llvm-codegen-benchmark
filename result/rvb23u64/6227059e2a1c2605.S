@@ -41,8 +41,8 @@ func00000000000000aa:
 	zext.b	a1, a1
 	seqz	a1, a1
 	sub	a0, a0, a1
-	addiw	a0, a0, 2
-	slti	a0, a0, 0
+	addi	a0, a0, 2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -61,8 +61,8 @@ func00000000000000a6:
 	seqz	a1, a1
 	addi	a1, a1, -1
 	ori	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000224:

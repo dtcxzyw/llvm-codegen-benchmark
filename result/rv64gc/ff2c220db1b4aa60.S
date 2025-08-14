@@ -62,8 +62,7 @@ func0000000000000026:
 	beqz	a2, .LBB6_2
 	mv	a0, a1
 .LBB6_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000081:
@@ -170,8 +169,7 @@ func000000000000018a:
 	beqz	a2, .LBB17_2
 	mv	a1, a0
 .LBB17_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 
@@ -279,8 +277,7 @@ func0000000000000146:
 	blt	a3, a2, .LBB28_2
 	mv	a0, a1
 .LBB28_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000144:
@@ -318,8 +315,7 @@ func0000000000000186:
 	beqz	a2, .LBB32_2
 	mv	a1, a0
 .LBB32_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000184:

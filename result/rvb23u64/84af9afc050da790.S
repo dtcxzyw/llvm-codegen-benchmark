@@ -1,8 +1,8 @@
 func000000000000000d:
-	sext.w	a0, a0
-	li	a1, 15
-	minu	a1, a0, a1
-	slti	a0, a0, 0
+	sext.w	a1, a0
+	li	a2, 15
+	minu	a1, a1, a2
+	srliw	a0, a0, 31
 	czero.nez	a0, a1, a0
 	ret
 

@@ -1,8 +1,8 @@
 func00000000000000a6:
 	zext.b	a2, a2
 	sub	a1, a1, a0
-	subw	a2, a2, a1
-	slti	a0, a2, 0
+	sub	a2, a2, a1
+	srliw	a0, a2, 31
 	ret
 
 func00000000000000a8:

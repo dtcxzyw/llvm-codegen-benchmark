@@ -1,6 +1,6 @@
 func000000000000068a:
 	addi	a2, a1, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1

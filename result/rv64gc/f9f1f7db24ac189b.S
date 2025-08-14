@@ -30,8 +30,8 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

@@ -55,7 +55,7 @@ func0000000000000026:
 	srli	a1, a1, 1
 	addi	a1, a1, -63
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -67,7 +67,7 @@ func0000000000000306:
 	and	a1, a1, a2
 	sltiu	a1, a1, 126
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -78,7 +78,7 @@ func0000000000000186:
 	srli	a2, a2, 1
 	and	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

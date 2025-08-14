@@ -28,7 +28,7 @@ func00000000000001c6:
 	addi	a3, a3, 423
 	mul	a2, a2, a3
 	addw	a1, a1, a2
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000186:
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	addw	a1, a1, a2
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

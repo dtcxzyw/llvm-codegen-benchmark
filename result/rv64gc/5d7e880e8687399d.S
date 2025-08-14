@@ -25,8 +25,8 @@ func000000000000020c:
 	addi	a0, a0, -35
 	sltiu	a0, a0, 92
 	or	a0, a0, a1
-	slti	a1, a2, 0
-	or	a0, a0, a1
+	srli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func0000000000000218:
@@ -36,8 +36,8 @@ func0000000000000218:
 	addi	a1, a1, -48
 	sltiu	a1, a1, 10
 	or	a0, a0, a1
-	slti	a1, a2, 0
-	or	a0, a0, a1
+	srli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func0000000000000214:
@@ -46,7 +46,7 @@ func0000000000000214:
 	srai	a2, a2, 56
 	addi	a0, a0, -241
 	sltiu	a0, a0, 4
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a1
 	xori	a1, a2, 1
 	or	a0, a0, a1

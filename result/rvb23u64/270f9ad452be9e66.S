@@ -7,10 +7,9 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

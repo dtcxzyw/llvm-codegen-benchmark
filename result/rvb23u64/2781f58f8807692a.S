@@ -13,6 +13,6 @@ func0000000000000006:
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 256
 	remw	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

@@ -98,11 +98,10 @@ func0000000000000034:
 	ret
 
 func0000000000000066:
-	sext.w	a1, a0
-	addiw	a0, a0, 1
-	slti	a1, a1, 0
-	addi	a0, a0, -16
-	czero.nez	a0, a0, a1
+	addiw	a1, a0, 1
+	srliw	a0, a0, 31
+	addi	a1, a1, -16
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 16
 	ret
 

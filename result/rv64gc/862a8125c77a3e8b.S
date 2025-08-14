@@ -1,8 +1,7 @@
 func00000000000000c1:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	xor	a0, a0, a1
-	slti	a1, a2, 0
 	seqz	a0, a0
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

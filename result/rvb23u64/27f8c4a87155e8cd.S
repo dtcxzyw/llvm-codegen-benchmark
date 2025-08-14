@@ -39,7 +39,7 @@ func0000000000000008:
 
 func000000000000000a:
 	andi	a0, a0, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addiw	a1, a1, 2
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 46

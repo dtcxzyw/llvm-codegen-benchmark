@@ -12,7 +12,7 @@ func000000000000002c:
 func0000000000000146:
 	sext.w	a3, a1
 	sgtz	a3, a3
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a2, a2, a3
 	bnez	a2, .LBB1_2
 	mv	a0, a1

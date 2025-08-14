@@ -14,13 +14,12 @@ func00000000000000ca:
 
 func00000000000000c1:
 	sext.w	a3, a2
-	sext.w	a1, a1
+	sext.w	a2, a1
 	sext.w	a0, a0
-	mv	a2, a1
-	blt	a1, a3, .LBB1_2
+	blt	a2, a3, .LBB1_2
 	mv	a2, a3
 .LBB1_2:
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
@@ -29,13 +28,12 @@ func00000000000000c1:
 
 func00000000000000cb:
 	sext.w	a3, a2
-	sext.w	a1, a1
+	sext.w	a2, a1
 	sext.w	a0, a0
-	mv	a2, a1
-	blt	a1, a3, .LBB2_2
+	blt	a2, a3, .LBB2_2
 	mv	a2, a3
 .LBB2_2:
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	slt	a0, a1, a0
@@ -44,13 +42,12 @@ func00000000000000cb:
 
 func00000000000000c4:
 	sext.w	a3, a2
-	sext.w	a1, a1
+	sext.w	a2, a1
 	sext.w	a0, a0
-	mv	a2, a1
-	blt	a1, a3, .LBB3_2
+	blt	a2, a3, .LBB3_2
 	mv	a2, a3
 .LBB3_2:
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	sltu	a0, a1, a0
@@ -58,13 +55,12 @@ func00000000000000c4:
 
 func00000000000000c6:
 	sext.w	a3, a2
-	sext.w	a1, a1
+	sext.w	a2, a1
 	sext.w	a0, a0
-	mv	a2, a1
-	blt	a1, a3, .LBB4_2
+	blt	a2, a3, .LBB4_2
 	mv	a2, a3
 .LBB4_2:
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	slt	a0, a1, a0

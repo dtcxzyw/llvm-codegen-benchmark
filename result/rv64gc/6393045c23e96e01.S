@@ -35,7 +35,7 @@ func0000000000000054:
 	srai	a1, a1, 48
 	addi	a2, a2, -2
 	and	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1

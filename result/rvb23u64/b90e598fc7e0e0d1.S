@@ -9,8 +9,8 @@ func00000000000000d4:
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a1, a1, a2
-	slti	a2, a1, 0
+	sub	a1, a1, a2
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

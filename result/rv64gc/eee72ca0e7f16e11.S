@@ -109,8 +109,7 @@ func0000000000000046:
 	lui	a1, 524288
 	sub	a1, a1, a2
 .LBB10_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000044:

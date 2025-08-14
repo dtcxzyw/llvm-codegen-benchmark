@@ -35,8 +35,7 @@ func0000000000000001:
 
 func0000000000000006:
 	xori	a1, a1, 1
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

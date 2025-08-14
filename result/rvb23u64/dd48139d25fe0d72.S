@@ -24,7 +24,7 @@ func0000000000000126:
 	sext.b	a0, a0
 	zext.b	a2, a2
 	addw	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	negw	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

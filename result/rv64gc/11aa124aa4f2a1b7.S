@@ -120,7 +120,7 @@ func0000000000000114:
 func00000000000000c1:
 	slli	a1, a1, 36
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -143,7 +143,7 @@ func0000000000000028:
 	ret
 
 func000000000000014c:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -189,7 +189,7 @@ func0000000000000034:
 	ret
 
 func000000000000018a:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

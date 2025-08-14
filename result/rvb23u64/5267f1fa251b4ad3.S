@@ -10,8 +10,8 @@ func0000000000000006:
 	add	a3, a3, a4
 	slli	a4, a3, 8
 	add	a2, a2, a3
-	subw	a2, a2, a4
-	slti	a2, a2, 0
+	sub	a2, a2, a4
+	srliw	a2, a2, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

@@ -27,7 +27,7 @@ func0000000000000006:
 	li	a3, 2
 	czero.eqz	a2, a3, a2
 	li	a3, -1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	srli	a3, a3, 1
 	add	a2, a2, a3
 	czero.nez	a0, a0, a1

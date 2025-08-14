@@ -14,7 +14,7 @@ func000000000000088a:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, -32
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

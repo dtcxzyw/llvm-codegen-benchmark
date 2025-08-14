@@ -37,7 +37,7 @@ func000000000000002c:
 
 func00000000000004cc:
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

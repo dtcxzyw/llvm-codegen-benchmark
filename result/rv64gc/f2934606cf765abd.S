@@ -1,8 +1,8 @@
 func00000000000002a6:
 	add	a0, a0, a1
 	sub	a2, a2, a0
-	addiw	a2, a2, 4
-	slti	a0, a2, 0
+	addi	a2, a2, 4
+	srliw	a0, a2, 31
 	ret
 
 func0000000000000006:

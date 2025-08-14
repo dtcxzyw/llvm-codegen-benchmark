@@ -31,7 +31,7 @@ func0000000000000006:
 
 func000000000000000a:
 	sext.h	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

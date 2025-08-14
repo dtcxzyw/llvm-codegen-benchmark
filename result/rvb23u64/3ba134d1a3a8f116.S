@@ -29,10 +29,10 @@ func0000000000000042:
 	ret
 
 func000000000000004c:
-	sext.w	a1, a1
+	sext.w	a3, a1
 	sext.w	a2, a2
-	xor	a2, a2, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
+	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

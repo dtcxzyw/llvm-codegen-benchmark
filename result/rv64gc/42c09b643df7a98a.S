@@ -26,7 +26,7 @@ func0000000000000186:
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

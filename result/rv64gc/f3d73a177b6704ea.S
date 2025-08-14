@@ -12,25 +12,21 @@ func0000000000000021:
 	ret
 
 func00000000000000c6:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	and	a2, a2, a3
 	bnez	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000ca:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -54,7 +50,6 @@ func0000000000000026:
 	bnez	a2, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 

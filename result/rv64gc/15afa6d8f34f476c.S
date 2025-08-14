@@ -14,7 +14,7 @@ func0000000000000018:
 
 func0000000000000006:
 	beqz	a1, .LBB2_2
-	slti	a0, a1, 0
+	srli	a0, a1, 63
 	ret
 .LBB2_2:
 	sltu	a0, a0, a2
@@ -28,12 +28,12 @@ func0000000000000001:
 
 func000000000000000b:
 	beqz	a1, .LBB4_2
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 .LBB4_2:
-	sltu	a0, a0, a2
-	xori	a0, a0, 1
+	sltu	a1, a0, a2
+	xori	a0, a1, 1
 	ret
 
 func0000000000000004:

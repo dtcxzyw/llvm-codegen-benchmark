@@ -9,12 +9,10 @@ func0000000000000081:
 	ret
 
 func0000000000000146:
-	sext.w	a0, a0
 	xor	a1, a1, a2
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

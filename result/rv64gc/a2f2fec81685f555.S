@@ -15,8 +15,8 @@ func0000000000000090:
 	ret
 
 func0000000000000018:
-	addiw	a2, a2, 3
-	slti	a2, a2, 0
+	addi	a2, a2, 3
+	srliw	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -12,8 +12,8 @@ func0000000000000006:
 	li	a3, 17
 	min	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	slti	a0, a0, 0
+	sub	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000018:
@@ -40,8 +40,8 @@ func00000000000000a6:
 	li	a3, 17
 	min	a2, a2, a3
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	slti	a0, a0, 0
+	sub	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000b8:

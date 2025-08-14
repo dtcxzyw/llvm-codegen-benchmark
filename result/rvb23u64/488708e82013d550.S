@@ -27,7 +27,7 @@ func0000000000000001:
 func0000000000000066:
 	sext.b	a1, a1
 	addi	a2, a2, 8
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -36,7 +36,7 @@ func0000000000000066:
 func0000000000000046:
 	sext.b	a1, a1
 	addi	a2, a2, -128
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

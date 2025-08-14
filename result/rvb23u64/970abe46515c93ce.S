@@ -54,8 +54,7 @@ func000000000000000a:
 
 func0000000000000006:
 	andi	a0, a0, 1
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	not	a1, a1
 	slli	a1, a1, 1
 	czero.nez	a0, a1, a0

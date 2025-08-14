@@ -17,8 +17,8 @@ func0000000000000321:
 func0000000000000326:
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000301:
@@ -34,8 +34,8 @@ func0000000000000301:
 func000000000000030a:
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -9,8 +9,7 @@ func00000000000004c6:
 
 func000000000000058a:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	not	a2, a2
 	or	a1, a1, a2
 	snez	a0, a0
@@ -19,8 +18,7 @@ func000000000000058a:
 
 func000000000000054a:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	not	a2, a2
 	or	a1, a1, a2
 	sgtz	a0, a0

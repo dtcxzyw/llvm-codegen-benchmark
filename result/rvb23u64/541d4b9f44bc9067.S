@@ -167,7 +167,7 @@ func0000000000001102:
 
 func0000000000000054:
 	xor	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -197,7 +197,7 @@ func0000000000001050:
 
 func0000000000000b14:
 	sub	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	sltiu	a1, a1, -1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -216,7 +216,7 @@ func00000000000009b0:
 	sub	a1, a1, a2
 	sltiu	a1, a1, 2046
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

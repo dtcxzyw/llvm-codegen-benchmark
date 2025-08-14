@@ -3,8 +3,8 @@ func0000000000000a2a:
 	sltiu	a2, a2, 128
 	neg	a2, a2
 	ori	a2, a2, 1
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -24,8 +24,8 @@ func00000000000000aa:
 	snez	a2, a2
 	addi	a2, a2, -1
 	ori	a2, a2, 1
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

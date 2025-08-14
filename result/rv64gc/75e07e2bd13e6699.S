@@ -43,11 +43,10 @@ func0000000000000081:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -113
 	snez	a2, a2
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	and	a1, a1, a2
 	beqz	a1, .LBB4_2
 	li	a0, 2

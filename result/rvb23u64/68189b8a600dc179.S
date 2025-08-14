@@ -76,7 +76,7 @@ func000000000000002c:
 
 func0000000000000006:
 	andi	a1, a1, -4
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	ret
 

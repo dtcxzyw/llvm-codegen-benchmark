@@ -12,10 +12,9 @@ func00000000000004c6:
 func000000000000058a:
 	andi	a1, a1, 1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	snez	a0, a0
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
+	snez	a0, a0
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -24,10 +23,9 @@ func000000000000058a:
 func000000000000054a:
 	andi	a1, a1, 1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	sgtz	a0, a0
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
+	sgtz	a0, a0
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2
 	or	a0, a0, a1

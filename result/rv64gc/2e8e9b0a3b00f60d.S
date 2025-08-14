@@ -35,7 +35,7 @@ func0000000000000006:
 	slli	a1, a0, 1
 	slli	a0, a0, 3
 	sub	a0, a0, a1
-	addiw	a0, a0, 26
-	slti	a0, a0, 0
+	addi	a0, a0, 26
+	srliw	a0, a0, 31
 	ret
 

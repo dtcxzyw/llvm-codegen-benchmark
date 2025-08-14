@@ -91,8 +91,8 @@ func00000000000001a1:
 
 func0000000000000086:
 	sub	a1, a1, a0
-	addiw	a1, a1, -5
-	slti	a0, a1, 0
+	addi	a1, a1, -5
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000008:
@@ -146,8 +146,8 @@ func0000000000000084:
 
 func00000000000000ca:
 	sub	a1, a1, a0
-	addiw	a1, a1, -8
-	slti	a0, a1, 0
+	addi	a1, a1, -8
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

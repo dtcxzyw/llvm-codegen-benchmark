@@ -9,7 +9,7 @@ func0000000000000078:
 func00000000000000aa:
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

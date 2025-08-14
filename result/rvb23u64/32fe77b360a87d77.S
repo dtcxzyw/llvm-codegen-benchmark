@@ -8,9 +8,9 @@ func000000000000002c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	not	a2, a2
+	srliw	a2, a2, 31
 	lui	a3, 131072
-	bexti	a2, a2, 31
+	xori	a2, a2, 1
 	addi	a3, a3, -1
 	xor	a1, a1, a3
 	snez	a1, a1

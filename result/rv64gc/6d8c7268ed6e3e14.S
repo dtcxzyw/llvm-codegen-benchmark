@@ -1,7 +1,7 @@
 func000000000000028c:
 	sext.w	a0, a0
 	subw	a1, a1, a2
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	slt	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -38,7 +38,7 @@ func0000000000000acc:
 	subw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

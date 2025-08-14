@@ -13,8 +13,8 @@ func000000000000000a:
 
 func0000000000000006:
 	sh2add	a0, a0, a0
-	slliw	a0, a0, 3
-	slti	a0, a0, 0
+	slli	a0, a0, 3
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000004:

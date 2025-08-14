@@ -51,7 +51,7 @@ func0000000000000053:
 
 func0000000000000028:
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sub	a0, a0, a1
 	addi	a0, a0, 2

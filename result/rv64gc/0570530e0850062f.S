@@ -20,8 +20,8 @@ func000000000000002a:
 	bnez	a0, .LBB2_2
 	neg	a1, a2
 .LBB2_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000026:

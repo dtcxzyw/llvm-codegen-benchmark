@@ -7,7 +7,7 @@ func0000000000000002:
 
 func000000000000000c:
 	addi	a2, a2, 16
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a0, a0, a1
 	or	a0, a0, a2
 	ret

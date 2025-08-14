@@ -10,7 +10,7 @@ func000000000000004a:
 	ret
 
 func0000000000000046:
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

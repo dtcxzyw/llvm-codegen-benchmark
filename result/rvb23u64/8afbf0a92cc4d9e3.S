@@ -95,12 +95,12 @@ func0000000000002308:
 
 func0000000000000b0c:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	seqz	a2, a0
+	sext.w	a2, a0
+	seqz	a2, a2
 	addi	a1, a1, -1
 	snez	a1, a1
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -151,8 +151,7 @@ func000000000000204c:
 
 func0000000000003182:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	slti	a2, a0, 1
 	and	a1, a1, a2
 	seqz	a0, a0
@@ -161,24 +160,24 @@ func0000000000003182:
 
 func000000000000518c:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	sgtz	a2, a0
+	sext.w	a2, a0
+	sgtz	a2, a2
 	slti	a1, a1, -1999
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
 func000000000000504c:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	lui	a2, 16
-	addi	a2, a2, -2
+	sext.w	a2, a0
+	lui	a3, 16
+	addi	a3, a3, -2
 	addi	a1, a1, -3
-	slt	a2, a2, a0
+	slt	a2, a3, a2
 	seqz	a1, a1
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

@@ -11,7 +11,7 @@ func000000000000088a:
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	addi	a0, a0, -32
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

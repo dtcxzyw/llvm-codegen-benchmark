@@ -26,8 +26,8 @@ func0000000000000004:
 
 func000000000000000a:
 	sub	a2, a2, a1
-	not	a2, a2
-	bexti	a1, a2, 31
+	srliw	a1, a2, 31
+	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 

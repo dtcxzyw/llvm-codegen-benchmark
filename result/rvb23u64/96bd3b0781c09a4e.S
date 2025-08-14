@@ -98,14 +98,14 @@ func0000000000000202:
 
 func0000000000000054:
 	xor	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000192:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	or	a0, a0, a2
@@ -143,13 +143,13 @@ func0000000000000318:
 func000000000000004c:
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func000000000000020c:
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

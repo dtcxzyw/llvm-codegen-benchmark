@@ -37,7 +37,7 @@ func00000000000000c1:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	addi	a0, a0, -2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

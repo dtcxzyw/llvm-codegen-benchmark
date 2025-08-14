@@ -15,7 +15,7 @@ func000000000000008c:
 func000000000000008a:
 	sext.w	a0, a0
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

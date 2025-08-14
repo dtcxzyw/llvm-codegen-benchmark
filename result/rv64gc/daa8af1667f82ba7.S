@@ -46,7 +46,7 @@ func0000000000000001:
 func000000000000008a:
 	sext.w	a2, a2
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -63,7 +63,7 @@ func000000000000000a:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -72,7 +72,7 @@ func000000000000002a:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -80,7 +80,7 @@ func000000000000002a:
 func00000000000000aa:
 	sext.w	a2, a2
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

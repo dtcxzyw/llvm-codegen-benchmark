@@ -20,7 +20,7 @@ func0000000000000001:
 
 func000000000000000a:
 	andi	a0, a0, 1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	li	a3, -1
 	slli	a3, a3, 55
 	czero.eqz	a2, a3, a2

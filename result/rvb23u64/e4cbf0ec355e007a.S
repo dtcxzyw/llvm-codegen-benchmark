@@ -29,7 +29,7 @@ func0000000000000101:
 func0000000000000141:
 	sext.w	a0, a0
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	seqz	a0, a0
 	xori	a2, a2, 1
 	and	a0, a0, a1

@@ -15,8 +15,7 @@ func000000000000004f:
 	ret
 
 func000000000000006f:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	and	a0, a0, a2
 	bnez	a0, .LBB2_2
 	li	a0, 240

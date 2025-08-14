@@ -7,8 +7,8 @@ func0000000000000008:
 
 func0000000000000006:
 	fcvt.w.d	a1, fa0, rtz
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000028:
@@ -32,8 +32,8 @@ func0000000000000066:
 
 func0000000000000026:
 	fcvt.w.d	a1, fa0, rtz
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:

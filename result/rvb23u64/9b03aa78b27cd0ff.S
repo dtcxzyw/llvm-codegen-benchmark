@@ -20,7 +20,7 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret

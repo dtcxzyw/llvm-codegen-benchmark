@@ -7,7 +7,7 @@ func0000000000001084:
 	ret
 
 func0000000000006084:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

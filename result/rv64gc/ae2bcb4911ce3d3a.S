@@ -13,7 +13,7 @@ func000000000000014a:
 
 func000000000000002a:
 	xor	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -70,7 +70,7 @@ func0000000000000144:
 func0000000000000086:
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

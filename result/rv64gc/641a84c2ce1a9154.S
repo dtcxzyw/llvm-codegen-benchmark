@@ -28,7 +28,7 @@ func000000000000002c:
 
 func000000000000014a:
 	or	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -61,7 +61,7 @@ func0000000000000024:
 
 func000000000000008a:
 	lui	a3, 244
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a3, a3, 576
 	not	a1, a1
 	sltu	a2, a2, a3
@@ -71,7 +71,7 @@ func000000000000008a:
 
 func00000000000000c6:
 	and	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 

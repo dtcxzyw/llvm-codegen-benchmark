@@ -14,7 +14,7 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	lui	a2, 1
 	czero.nez	a0, a0, a1
 	addi	a2, a2, 1

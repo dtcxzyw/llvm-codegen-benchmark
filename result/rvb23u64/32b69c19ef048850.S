@@ -40,7 +40,7 @@ func0000000000000064:
 func000000000000006a:
 	sext.h	a0, a0
 	addiw	a1, a1, 4
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -63,7 +63,7 @@ func0000000000000024:
 func000000000000004a:
 	sext.h	a0, a0
 	addiw	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -5
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 5

@@ -24,7 +24,7 @@ func000000000000000a:
 	li	a1, 8
 	maxu	a0, a0, a1
 	addi	a0, a0, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

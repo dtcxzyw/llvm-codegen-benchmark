@@ -68,8 +68,8 @@ func0000000000000006:
 	add	a2, a2, a3
 	li	a3, 100
 	mul	a2, a2, a3
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sub	a1, a1, a2
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func00000000000000c1:
 	zext.b	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -26,7 +26,7 @@ func0000000000000028:
 
 func00000000000000cc:
 	zext.b	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	addi	a0, a0, -45
 	snez	a0, a0

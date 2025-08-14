@@ -23,9 +23,8 @@ func0000000000000012:
 	ret
 
 func0000000000000068:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	fmv.w.x	fa5, zero
-	slti	a0, a0, 0
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

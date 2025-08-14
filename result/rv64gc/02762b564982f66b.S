@@ -8,7 +8,7 @@ func000000000000004a:
 func0000000000000046:
 	addi	a1, a1, 1
 	divw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000041:

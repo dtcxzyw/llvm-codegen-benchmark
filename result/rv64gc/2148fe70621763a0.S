@@ -42,11 +42,10 @@ func0000000000000098:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a1
 	zext.b	a2, a2
 	not	a0, a0
+	srliw	a1, a1, 31
 	addi	a2, a2, -82
-	slti	a1, a1, 0
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

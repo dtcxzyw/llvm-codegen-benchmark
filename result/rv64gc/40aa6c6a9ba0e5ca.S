@@ -38,11 +38,11 @@ func0000000000000208:
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	andi	a1, a1, 3
-	xor	a1, a1, a0
+	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

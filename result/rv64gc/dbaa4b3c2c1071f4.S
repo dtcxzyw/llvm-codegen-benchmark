@@ -18,9 +18,9 @@ func0000000000000048:
 	ret
 
 func0000000000000054:
-	sext.w	a1, a1
-	addi	a2, a1, 2
-	slti	a1, a1, 0
+	sext.w	a2, a1
+	srliw	a1, a1, 31
+	addi	a2, a2, 2
 	seqz	a2, a2
 	xori	a1, a1, 1
 	or	a1, a1, a2

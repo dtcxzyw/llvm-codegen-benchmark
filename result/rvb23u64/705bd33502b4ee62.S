@@ -4,8 +4,8 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000026:

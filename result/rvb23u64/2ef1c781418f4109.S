@@ -14,14 +14,14 @@ func00000000000000ac:
 
 func000000000000018a:
 	sh3add	a1, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
 	sh3add	a1, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

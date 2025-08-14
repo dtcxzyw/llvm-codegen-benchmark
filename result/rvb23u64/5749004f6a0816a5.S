@@ -2,7 +2,7 @@ func0000000000000024:
 	bseti	a2, zero, 62
 	add	a2, a2, a0
 	sltu	a0, a2, a0
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	add	a0, a0, a1
 	xori	a1, a2, 1
 	czero.nez	a0, a1, a0

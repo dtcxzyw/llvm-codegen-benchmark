@@ -32,8 +32,8 @@ func0000000000000008:
 func000000000000000c:
 	add	a1, a1, a2
 	lui	a2, 1048568
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

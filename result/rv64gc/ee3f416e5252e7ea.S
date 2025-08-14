@@ -10,7 +10,7 @@ func0000000000000046:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	flt.d	a1, fa0, fa1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

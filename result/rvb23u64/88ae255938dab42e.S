@@ -14,14 +14,14 @@ func0000000000000001:
 
 func0000000000000006:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func000000000000000a:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2

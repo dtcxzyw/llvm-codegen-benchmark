@@ -72,7 +72,7 @@ func0000000000000028:
 	sext.b	a1, a1
 	andi	a2, a2, 1
 	xori	a2, a2, 3
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a2, a2, -1
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

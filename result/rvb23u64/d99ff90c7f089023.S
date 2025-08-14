@@ -39,8 +39,8 @@ func0000000000000061:
 	ret
 
 func0000000000000026:
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000006a:
@@ -54,7 +54,7 @@ func0000000000000064:
 	ret
 
 func0000000000000006:
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

@@ -214,18 +214,16 @@ func000000000000048a:
 func000000000000014a:
 	addi	a1, a1, -1
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000706:
-	sext.w	a0, a0
 	andi	a1, a1, -4
 	sext.w	a1, a1
 	addi	a1, a1, -8
 	snez	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

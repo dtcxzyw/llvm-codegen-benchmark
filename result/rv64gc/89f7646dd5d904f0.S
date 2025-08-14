@@ -39,7 +39,7 @@ func000000000000018c:
 func000000000000014a:
 	or	a1, a1, a2
 	and	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

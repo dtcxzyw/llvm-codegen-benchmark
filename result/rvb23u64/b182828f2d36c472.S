@@ -77,7 +77,7 @@ func000000000000008b:
 
 func0000000000000149:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, -23
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 23
@@ -87,7 +87,7 @@ func0000000000000149:
 
 func0000000000000148:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, -23
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 23

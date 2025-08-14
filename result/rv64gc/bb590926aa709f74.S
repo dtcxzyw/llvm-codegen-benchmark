@@ -1,8 +1,8 @@
 func000000000000002a:
 	slli	a0, a0, 48
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	srli	a0, a0, 48
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	not	a1, a1
 	addi	a0, a0, -1328
 	seqz	a0, a0

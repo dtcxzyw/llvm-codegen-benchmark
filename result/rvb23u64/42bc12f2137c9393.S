@@ -9,8 +9,8 @@ func000000000000002a:
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	fcvt.w.s	a1, fa0, rtz
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

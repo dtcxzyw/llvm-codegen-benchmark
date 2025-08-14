@@ -28,8 +28,8 @@ func000000000000000a:
 	beqz	a0, .LBB3_2
 	neg	a1, a1
 .LBB3_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000061:

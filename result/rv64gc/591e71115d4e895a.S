@@ -13,8 +13,8 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -50,8 +50,8 @@ func000000000000002a:
 	ret
 
 func0000000000000046:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	not	a0, a0
 	and	a0, a0, a1
 	ret

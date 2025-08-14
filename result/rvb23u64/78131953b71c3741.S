@@ -146,11 +146,10 @@ func0000000000000284:
 	ret
 
 func00000000000000ca:
-	sext.w	a1, a0
-	andi	a0, a0, -129
-	sext.w	a0, a0
-	slti	a0, a0, 132
-	slti	a1, a1, 0
-	andn	a0, a0, a1
+	andi	a1, a0, -129
+	sext.w	a1, a1
+	slti	a1, a1, 132
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 

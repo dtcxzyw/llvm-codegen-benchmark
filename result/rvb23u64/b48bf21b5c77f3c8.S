@@ -12,7 +12,7 @@ func0000000000000630:
 	ret
 
 func0000000000000304:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	seqz	a1, a1
 	or	a1, a1, a2
 	or	a0, a0, a1

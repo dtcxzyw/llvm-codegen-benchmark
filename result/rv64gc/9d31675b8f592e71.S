@@ -1,9 +1,8 @@
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 4
+	srliw	a0, a0, 31
 	xor	a1, a1, a2
-	slti	a0, a0, 0
 	snez	a1, a1
 	addi	a1, a1, -1
 	addi	a0, a0, -1
@@ -77,10 +76,9 @@ func0000000000000024:
 	ret
 
 func00000000000000c6:
-	sext.w	a0, a0
 	sraiw	a1, a1, 31
+	srliw	a0, a0, 31
 	andi	a1, a1, -4
-	slti	a0, a0, 0
 	addi	a1, a1, 8
 	addi	a0, a0, -1
 	and	a0, a0, a1

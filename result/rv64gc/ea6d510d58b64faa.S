@@ -187,8 +187,8 @@ func0000000000000088:
 func000000000000008a:
 	sub	a1, a1, a0
 	addi	a1, a1, 1
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000101:

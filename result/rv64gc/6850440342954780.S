@@ -22,7 +22,7 @@ func0000000000000006:
 	blt	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000086:
@@ -31,7 +31,7 @@ func0000000000000086:
 	blt	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000002a:
@@ -76,8 +76,8 @@ func000000000000004a:
 	blt	a1, a0, .LBB8_2
 	mv	a1, a0
 .LBB8_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000008:
@@ -91,12 +91,12 @@ func0000000000000008:
 	ret
 
 func00000000000000c6:
-	sext.w	a0, a0
-	sext.w	a1, a1
-	blt	a1, a0, .LBB10_2
-	mv	a1, a0
+	sext.w	a2, a0
+	sext.w	a0, a1
+	blt	a0, a2, .LBB10_2
+	mv	a0, a2
 .LBB10_2:
-	slti	a0, a1, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000046:

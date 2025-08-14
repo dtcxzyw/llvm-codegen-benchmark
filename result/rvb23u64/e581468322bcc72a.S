@@ -37,7 +37,7 @@ func0000000000000181:
 
 func0000000000000166:
 	sh1add	a3, a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sh3add	a2, a3, a2
 	addi	a2, a2, 8
 	czero.eqz	a0, a0, a1

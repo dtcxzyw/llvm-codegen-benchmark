@@ -156,9 +156,9 @@ func00000000000000c6:
 	slli	a2, a2, 56
 	srai	a1, a1, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

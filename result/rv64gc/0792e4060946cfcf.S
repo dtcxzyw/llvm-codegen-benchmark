@@ -46,7 +46,7 @@ func000000000000004c:
 	slli	a1, a1, 48
 	srai	a0, a0, 56
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -132,7 +132,7 @@ func0000000000000054:
 	zext.b	a1, a1
 	srai	a0, a0, 48
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

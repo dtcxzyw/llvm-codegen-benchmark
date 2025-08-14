@@ -30,7 +30,7 @@ func0000000000000026:
 	srli	a1, a1, 48
 	addi	a1, a1, -8
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -134,7 +134,7 @@ func000000000000018a:
 	slli	a1, a1, 48
 	srai	a0, a0, 56
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -153,7 +153,7 @@ func0000000000000186:
 	slli	a1, a1, 48
 	srai	a0, a0, 56
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

@@ -12,8 +12,7 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	addi	a0, a0, -1
 	ret
 

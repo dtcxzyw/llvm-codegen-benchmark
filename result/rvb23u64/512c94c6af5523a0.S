@@ -10,14 +10,14 @@ func0000000000000006:
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000000a:
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

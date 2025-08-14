@@ -3,8 +3,7 @@ func000000000000000a:
 	bnez	a0, .LBB0_2
 	neg	a1, a1
 .LBB0_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000006:
 	bnez	a0, .LBB2_2
 	neg	a1, a1
 .LBB2_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000026:

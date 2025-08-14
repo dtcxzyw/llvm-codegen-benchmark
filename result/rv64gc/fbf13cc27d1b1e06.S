@@ -9,7 +9,7 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	or	a2, a2, a3
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2

@@ -244,8 +244,8 @@ func0000000000000126:
 func0000000000000c26:
 	sext.w	a1, a1
 	snez	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000016c:
@@ -390,8 +390,8 @@ func000000000000010a:
 func0000000000000c06:
 	sext.w	a1, a1
 	snez	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000c24:

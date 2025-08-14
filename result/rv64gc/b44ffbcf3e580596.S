@@ -24,7 +24,7 @@ func000000000000030c:
 	sext.w	a1, a1
 	srai	a0, a0, 56
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	slli	a0, a0, 21
 	ret

@@ -39,10 +39,9 @@ func0000000000000186:
 	ret
 
 func00000000000000ca:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a0, a2, a0
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

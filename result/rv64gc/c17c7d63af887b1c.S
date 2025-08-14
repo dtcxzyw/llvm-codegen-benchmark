@@ -33,7 +33,7 @@ func0000000000000010:
 
 func000000000000000c:
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

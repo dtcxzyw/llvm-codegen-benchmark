@@ -8,7 +8,7 @@ func000000000000002a:
 
 func0000000000000158:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
@@ -18,7 +18,7 @@ func0000000000000158:
 
 func0000000000000154:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000154:
 
 func00000000000000c1:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -37,7 +37,7 @@ func00000000000000c1:
 
 func00000000000000d8:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -48,7 +48,7 @@ func00000000000000d8:
 
 func00000000000000d4:
 	sext.h	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

@@ -11,23 +11,22 @@ func000000000000204c:
 	ret
 
 func000000000000628c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
+	srliw	a0, a0, 31
 	snez	a1, a1
-	slti	a2, a0, 0
-	addi	a0, a0, 4
-	xori	a2, a2, 1
-	or	a1, a1, a2
-	snez	a0, a0
+	xori	a0, a0, 1
+	addi	a2, a2, 4
+	or	a0, a0, a1
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000005194:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	slti	a2, a0, 2
+	srliw	a1, a1, 31
 	not	a1, a1
+	slti	a2, a0, 2
 	or	a1, a1, a2
 	sgtz	a0, a0
 	and	a0, a0, a1

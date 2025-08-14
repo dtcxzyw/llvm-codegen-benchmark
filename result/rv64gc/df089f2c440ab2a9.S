@@ -1,5 +1,5 @@
 func000000000000000a:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	addi	a1, a1, -1

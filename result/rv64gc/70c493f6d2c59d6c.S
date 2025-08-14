@@ -58,23 +58,20 @@ func0000000000000018:
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	flt.s	a1, fa0, fa1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000046:
-	sext.w	a0, a0
 	flt.s	a1, fa0, fa1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	feq.s	a1, fa0, fa1
 	and	a0, a0, a1

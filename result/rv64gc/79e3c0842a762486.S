@@ -2,7 +2,7 @@ func0000000000000006:
 	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000184:
@@ -42,7 +42,7 @@ func0000000000000086:
 	sub	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000000a:

@@ -15,7 +15,7 @@ func00000000000001aa:
 func000000000000010a:
 	slli	a1, a1, 32
 	sub	a1, a1, a0
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 

@@ -103,10 +103,9 @@ func000000000000010c:
 	ret
 
 func000000000000030a:
-	sext.w	a0, a0
 	zext.b	a2, a2
+	srliw	a0, a0, 31
 	snez	a2, a2
-	slti	a0, a0, 0
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

@@ -27,7 +27,7 @@ func0000000000000084:
 func0000000000000066:
 	addi	a2, a2, 1
 	addi	a1, a1, 8
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

@@ -57,8 +57,7 @@ func0000000000003181:
 
 func000000000000294c:
 	or	a1, a1, a2
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	snez	a0, a0
 	andn	a0, a0, a1
 	ret

@@ -71,7 +71,7 @@ func000000000000002a:
 	andi	a1, a1, 3
 	srai	a0, a0, 56
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -5,13 +5,13 @@ func0000000000000026:
 	bge	a2, a1, .LBB0_3
 	bge	a0, a1, .LBB0_4
 .LBB0_2:
-	slti	a0, a1, 0
+	srli	a0, a1, 63
 	ret
 .LBB0_3:
 	mv	a1, a2
 	blt	a0, a2, .LBB0_2
 .LBB0_4:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000061:

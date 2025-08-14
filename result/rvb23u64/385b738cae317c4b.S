@@ -102,12 +102,11 @@ func0000000000000008:
 	ret
 
 func0000000000000066:
-	sext.w	a2, a1
-	addiw	a1, a1, 1
-	slti	a2, a2, 0
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	addiw	a2, a1, 1
+	srliw	a1, a1, 31
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000061:
@@ -119,13 +118,12 @@ func0000000000000061:
 	ret
 
 func0000000000000046:
-	sext.w	a2, a1
-	lui	a3, 522240
-	addi	a3, a3, 1
-	slti	a2, a2, 0
-	addw	a1, a1, a3
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
+	lui	a2, 522240
+	addi	a2, a2, 1
+	addw	a2, a2, a1
+	srliw	a1, a1, 31
+	czero.eqz	a0, a0, a1
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func000000000000090c:
 	addiw	a1, a1, -65
 	srai	a0, a0, 56
 	sltiu	a1, a1, 26
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -54,8 +54,8 @@ func0000000000000510:
 
 func000000000000010c:
 	zext.b	a0, a0
-	addiw	a1, a1, -1
-	slti	a1, a1, 0
+	addi	a1, a1, -1
+	srliw	a1, a1, 31
 	sltiu	a0, a0, 254
 	or	a0, a0, a1
 	ret
@@ -137,7 +137,7 @@ func000000000000004c:
 	srai	a0, a0, 56
 	addi	a1, a1, -1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

@@ -55,7 +55,7 @@ func000000000000002a:
 	cpop	a1, a0
 	addi	a1, a1, -1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

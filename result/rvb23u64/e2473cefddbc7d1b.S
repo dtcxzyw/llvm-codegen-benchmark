@@ -1,7 +1,6 @@
 func000000000000000a:
-	sext.w	a1, a0
+	srliw	a1, a0, 31
 	lui	a2, 522240
-	slti	a1, a1, 0
 	czero.eqz	a1, a2, a1
 	lui	a2, 1046528
 	orn	a1, a1, a2

@@ -13,7 +13,7 @@ func0000000000000021:
 func000000000000008a:
 	minu	a0, a0, a1
 	addi	a0, a0, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

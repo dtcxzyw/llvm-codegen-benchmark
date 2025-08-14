@@ -31,7 +31,6 @@ func0000000000000086:
 	beqz	a0, .LBB3_2
 	srli	a1, a2, 2
 .LBB3_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 

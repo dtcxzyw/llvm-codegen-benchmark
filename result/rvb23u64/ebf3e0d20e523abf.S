@@ -88,15 +88,15 @@ func0000000000000184:
 func0000000000000086:
 	zext.b	a1, a1
 	or	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000008a:
 	zext.b	a1, a1
 	or	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

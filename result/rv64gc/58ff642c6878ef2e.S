@@ -17,7 +17,7 @@ func0000000000000146:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	slti	a0, a0, 64
 	xori	a0, a0, 1
 	or	a0, a0, a1

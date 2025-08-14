@@ -12,13 +12,12 @@ func0000000000000226:
 	sltiu	a2, a2, 2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000030a:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -27,8 +26,7 @@ func000000000000030a:
 	ret
 
 func0000000000000306:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -70,8 +68,8 @@ func00000000000000a6:
 	bnez	a2, .LBB7_2
 	li	a1, -126
 .LBB7_2:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000081:
@@ -112,8 +110,8 @@ func000000000000052a:
 	bge	a3, a2, .LBB11_2
 	lui	a1, 8
 .LBB11_2:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -129,22 +127,20 @@ func00000000000000aa:
 	ret
 
 func000000000000032a:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000326:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000508:
@@ -195,8 +191,8 @@ func000000000000036a:
 	slti	a2, a2, 2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -1,5 +1,5 @@
 func0000000000000019:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -23,7 +23,7 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -55,7 +55,7 @@ func0000000000000005:
 	ret
 
 func000000000000001a:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

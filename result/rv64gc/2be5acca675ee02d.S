@@ -15,7 +15,7 @@ func000000000000014c:
 func00000000000000ca:
 	sext.w	a1, a1
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

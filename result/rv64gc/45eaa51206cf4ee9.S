@@ -9,11 +9,10 @@ func00000000000000e1:
 	ret
 
 func0000000000000066:
-	sext.w	a1, a0
-	slli	a0, a0, 2
-	addiw	a0, a0, 2
-	slti	a1, a1, 0
-	addi	a1, a1, -1
+	slli	a1, a0, 2
+	srliw	a0, a0, 31
+	addiw	a1, a1, 2
+	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 

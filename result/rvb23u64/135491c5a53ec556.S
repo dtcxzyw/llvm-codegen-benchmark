@@ -1,7 +1,7 @@
 func00000000000004ca:
 	sext.w	a1, a1
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -50,7 +50,7 @@ func000000000000008c:
 func00000000000002aa:
 	zext.w	a1, a1
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -73,7 +73,7 @@ func0000000000000424:
 func00000000000000ca:
 	zext.w	a1, a1
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -95,7 +95,7 @@ func000000000000032c:
 func000000000000068a:
 	sext.w	a1, a1
 	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

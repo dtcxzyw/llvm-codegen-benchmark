@@ -1,19 +1,19 @@
 func000000000000014a:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	slt	a0, a1, a0
-	xori	a1, a3, 1
-	and	a0, a0, a2
+	sext.w	a3, a1
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
+	and	a1, a1, a2
+	slt	a0, a3, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000014c:
+	sext.w	a3, a1
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	xor	a0, a0, a1
-	xori	a1, a3, 1
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
+	xor	a0, a0, a3
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

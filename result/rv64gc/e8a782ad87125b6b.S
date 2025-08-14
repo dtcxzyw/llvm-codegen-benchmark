@@ -28,7 +28,7 @@ func0000000000000061:
 func0000000000000026:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sub	a0, a0, a1
 	ret
@@ -36,7 +36,7 @@ func0000000000000026:
 func0000000000000066:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	add	a0, a0, a1
 	ret

@@ -14,7 +14,7 @@ func0000000000000006:
 	andi	a0, a0, 1
 	sext.b	a2, a2
 	lui	a3, 1048320
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a2, a3, a2
 	lui	a3, 512
 	add	a2, a2, a3

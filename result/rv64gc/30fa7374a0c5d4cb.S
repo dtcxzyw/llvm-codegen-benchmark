@@ -55,7 +55,7 @@ func000000000000054a:
 
 func00000000000004c6:
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

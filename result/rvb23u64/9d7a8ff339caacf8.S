@@ -47,12 +47,12 @@ func0000000000000026:
 	ret
 
 func0000000000000024:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func000000000000002a:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

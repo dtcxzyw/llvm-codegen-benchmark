@@ -161,9 +161,8 @@ func00000000000000c6:
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	fmv.d.x	fa5, zero
-	slti	a0, a0, 0
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1

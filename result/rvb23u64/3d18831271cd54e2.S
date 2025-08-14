@@ -75,11 +75,10 @@ func0000000000000034:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	li	a3, -9
+	srliw	a1, a1, 31
 	czero.eqz	a2, a3, a2
-	slti	a1, a1, 0
 	addi	a2, a2, 78
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

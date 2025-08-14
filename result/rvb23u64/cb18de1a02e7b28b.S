@@ -16,7 +16,7 @@ func0000000000000181:
 
 func0000000000000166:
 	slt	a2, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a2, a2, 1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

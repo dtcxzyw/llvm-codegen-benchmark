@@ -44,8 +44,8 @@ func0000000000000026:
 	blt	a2, a1, .LBB4_2
 	li	a1, 3
 .LBB4_2:
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 
 func000000000000002a:

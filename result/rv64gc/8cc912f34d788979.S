@@ -1,10 +1,10 @@
 func00000000000000ca:
-	sext.w	a0, a0
-	li	a2, 1000
-	subw	a2, a2, a1
-	slti	a1, a0, 0
-	slt	a0, a0, a2
-	not	a1, a1
+	sext.w	a2, a0
+	li	a3, 1000
+	srliw	a0, a0, 31
+	subw	a3, a3, a1
+	slt	a1, a2, a3
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

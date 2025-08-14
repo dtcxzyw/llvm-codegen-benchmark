@@ -27,8 +27,8 @@ func0000000000000021:
 	ret
 
 func000000000000000a:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -59,8 +59,8 @@ func000000000000000c:
 	ret
 
 func0000000000000046:
-	addiw	a0, a0, 1
-	slti	a0, a0, 0
+	addi	a0, a0, 1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000028:

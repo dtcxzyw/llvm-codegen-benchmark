@@ -20,7 +20,7 @@ func0000000000000186:
 	andi	a0, a0, 240
 	addi	a0, a0, -224
 	snez	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 
@@ -59,7 +59,7 @@ func000000000000018a:
 	sext.b	a1, a0
 	andi	a0, a0, 120
 	snez	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	andn	a0, a0, a1
 	ret
 

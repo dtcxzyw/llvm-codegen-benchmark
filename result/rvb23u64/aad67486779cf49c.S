@@ -10,8 +10,7 @@ func0000000000000108:
 
 func00000000000000c6:
 	or	a1, a1, a2
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 
@@ -232,11 +231,10 @@ func000000000000008c:
 	ret
 
 func0000000000000306:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 24
+	srliw	a1, a1, 31
 	addi	a3, a3, 1696
-	slti	a1, a1, 0
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -252,10 +250,9 @@ func0000000000000081:
 	ret
 
 func0000000000000106:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	sltiu	a2, a2, 60
-	slti	a1, a1, 0
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

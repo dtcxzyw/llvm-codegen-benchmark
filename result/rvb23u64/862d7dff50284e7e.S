@@ -25,14 +25,14 @@ func0000000000000308:
 func000000000000010c:
 	sext.w	a1, a1
 	sltiu	a1, a1, -2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func000000000000030c:
 	sext.w	a1, a1
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000302:
 func000000000000028c:
 	sext.w	a1, a1
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

@@ -21,8 +21,7 @@ func000000000000000b:
 	ret
 
 func0000000000000037:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	czero.nez	a1, a1, a2
 	sext.w	a1, a1
 	sh3add	a0, a1, a0

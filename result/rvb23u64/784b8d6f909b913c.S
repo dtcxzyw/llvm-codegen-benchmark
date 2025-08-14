@@ -7,8 +7,7 @@ func0000000000000001:
 
 func000000000000000a:
 	orn	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

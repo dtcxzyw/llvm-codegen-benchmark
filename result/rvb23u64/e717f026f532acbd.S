@@ -1,7 +1,7 @@
 func000000000000014c:
 	zext.b	a1, a0
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -95
 	xori	a0, a0, 1
 	snez	a1, a1

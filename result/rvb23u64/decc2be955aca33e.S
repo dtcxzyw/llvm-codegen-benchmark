@@ -159,8 +159,8 @@ func0000000000000141:
 func000000000000014c:
 	sext.b	a2, a2
 	xor	a0, a0, a1
-	slti	a1, a2, 0
-	xori	a1, a1, 1
+	srli	a2, a2, 63
+	xori	a1, a2, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -61,7 +61,7 @@ func0000000000000005:
 	ret
 
 func0000000000000018:
-	slti	a1, a0, 0
+	srli	a1, a0, 63
 	lui	a2, 1048575
 	addi	a2, a2, 1
 	czero.nez	a1, a2, a1

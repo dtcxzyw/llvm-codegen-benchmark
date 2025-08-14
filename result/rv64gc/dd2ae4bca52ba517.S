@@ -86,7 +86,7 @@ func000000000000018a:
 	xor	a1, a1, a2
 	srai	a0, a0, 56
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -142,7 +142,7 @@ func000000000000008a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -168,7 +168,7 @@ func0000000000000086:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -190,7 +190,7 @@ func000000000000010a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

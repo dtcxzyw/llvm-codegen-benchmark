@@ -37,7 +37,7 @@ func000000000000000c:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
 	addi	a0, a0, -1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	andi	a0, a0, 1024
 	xori	a2, a2, 1
 	slli	a2, a2, 28

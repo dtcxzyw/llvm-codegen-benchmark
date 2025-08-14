@@ -80,10 +80,9 @@ func0000000000000146:
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
 	sraiw	a1, a1, 31
 	ori	a1, a1, 1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	czero.nez	a0, a1, a0
 	ret
 

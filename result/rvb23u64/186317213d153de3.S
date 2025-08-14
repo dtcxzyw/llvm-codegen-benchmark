@@ -126,9 +126,8 @@ func0000000000000014:
 func00000000000000aa:
 	lui	a1, %hi(.LCPI14_0)
 	flw	fa5, %lo(.LCPI14_0)(a1)
-	sext.w	a0, a0
 	fle.s	a1, fa0, fa5
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -238,9 +237,8 @@ func000000000000001c:
 	ret
 
 func00000000000000a4:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	fmv.w.x	fa5, zero
-	slti	a0, a0, 0
 	xori	a0, a0, 1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1

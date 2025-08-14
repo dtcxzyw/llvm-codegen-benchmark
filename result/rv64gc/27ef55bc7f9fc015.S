@@ -23,8 +23,8 @@ func000000000000014a:
 	slli	a2, a2, 56
 	srai	a1, a1, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	not	a2, a2
 	and	a0, a0, a2
 	xori	a1, a1, 1
@@ -74,7 +74,7 @@ func000000000000002a:
 	srai	a1, a1, 56
 	addi	a2, a2, -2
 	seqz	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

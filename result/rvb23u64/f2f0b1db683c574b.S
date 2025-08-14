@@ -102,8 +102,8 @@ func000000000000070a:
 func0000000000000606:
 	add	a1, a1, a2
 	sub	a0, a0, a1
-	addiw	a0, a0, -8
-	slti	a0, a0, 0
+	addi	a0, a0, -8
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000788:

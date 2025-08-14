@@ -1,7 +1,6 @@
 func0000000000000141:
 	sext.w	a2, a2
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	snez	a2, a2
 	or	a2, a2, a3
 	beqz	a2, .LBB0_2

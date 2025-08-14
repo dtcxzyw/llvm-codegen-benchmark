@@ -46,7 +46,7 @@ func0000000000000004:
 func000000000000000a:
 	srli	a1, a1, 1
 	mul	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

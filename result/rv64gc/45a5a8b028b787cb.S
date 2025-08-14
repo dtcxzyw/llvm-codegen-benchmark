@@ -16,7 +16,7 @@ func0000000000000028:
 func0000000000000026:
 	sext.w	a2, a2
 	mul	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

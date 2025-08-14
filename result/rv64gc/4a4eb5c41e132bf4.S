@@ -19,8 +19,8 @@ func000000000000050a:
 	srai	a2, a0, 48
 	srli	a0, a0, 48
 	sltu	a0, a0, a1
-	slti	a1, a2, 0
-	not	a1, a1
+	srli	a2, a2, 63
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

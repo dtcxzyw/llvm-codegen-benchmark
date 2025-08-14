@@ -56,8 +56,8 @@ func0000000000000006:
 	blt	a2, a1, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000026:

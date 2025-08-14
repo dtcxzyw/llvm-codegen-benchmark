@@ -5,8 +5,8 @@ func000000000000008c:
 	addi	a0, a0, -95
 	seqz	a0, a0
 	or	a0, a0, a1
-	slti	a1, a2, 0
-	or	a0, a0, a1
+	srli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func0000000000000082:
@@ -33,7 +33,7 @@ func0000000000000302:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	addi	a2, a2, -95
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	seqz	a1, a2
 	or	a0, a0, a1

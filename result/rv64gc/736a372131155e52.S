@@ -7,21 +7,21 @@ func0000000000000040:
 	ret
 
 func00000000000000ad:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000a0:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	addw	a0, a0, a1

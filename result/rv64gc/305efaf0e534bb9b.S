@@ -25,7 +25,7 @@ func0000000000000021:
 func000000000000018c:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	srli	a0, a0, 6
 	and	a0, a0, a1
 	ret

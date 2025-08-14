@@ -15,7 +15,7 @@ func000000000000000a:
 	add	a0, a0, a1
 	addi	a0, a0, 256
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

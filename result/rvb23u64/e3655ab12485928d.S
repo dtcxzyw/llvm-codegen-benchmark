@@ -87,8 +87,7 @@ func0000000000000006:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000066:
@@ -97,8 +96,7 @@ func0000000000000066:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000028:
@@ -161,8 +159,7 @@ func0000000000000046:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000c:

@@ -34,7 +34,7 @@ func0000000000000048:
 	ret
 
 func000000000000000a:
-	slti	a1, a0, 0
+	srli	a1, a0, 63
 	czero.eqz	a0, a0, a1
 	ret
 

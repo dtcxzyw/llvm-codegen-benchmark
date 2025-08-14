@@ -46,8 +46,8 @@ func0000000000000108:
 
 func00000000000001a6:
 	addi	a1, a1, 1
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000004:
@@ -108,8 +108,8 @@ func0000000000000021:
 
 func00000000000000a6:
 	addi	a1, a1, 2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000002a:
@@ -132,8 +132,8 @@ func0000000000000104:
 
 func00000000000000e6:
 	addi	a1, a1, -1
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000e1:
@@ -200,8 +200,8 @@ func0000000000000008:
 
 func0000000000000086:
 	addi	a1, a1, 2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000188:
@@ -213,7 +213,7 @@ func0000000000000188:
 
 func0000000000000186:
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 

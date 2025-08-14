@@ -31,7 +31,7 @@ func000000000000060c:
 	sltiu	a2, a2, 2
 	srai	a1, a1, 56
 	xori	a2, a2, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

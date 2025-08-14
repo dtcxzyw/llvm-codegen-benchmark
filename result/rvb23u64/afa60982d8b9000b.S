@@ -1,8 +1,8 @@
 func000000000000054a:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	addiw	a1, a1, -1
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

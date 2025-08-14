@@ -20,7 +20,7 @@ func000000000000042a:
 	srli	a1, a1, 48
 	slli	a3, a3, 11
 	xor	a2, a2, a3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a1, a1, a2
 	seqz	a1, a1
 	not	a0, a0

@@ -5,7 +5,7 @@ func00000000000002aa:
 .LBB0_2:
 	srai	a0, a0, 3
 	add	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -26,8 +26,8 @@ func000000000000032a:
 .LBB2_2:
 	srai	a1, a1, 5
 	add	a1, a1, a2
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000334:

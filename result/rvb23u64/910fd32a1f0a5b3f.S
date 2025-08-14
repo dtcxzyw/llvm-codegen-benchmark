@@ -6,8 +6,8 @@ func0000000000000001:
 
 func000000000000000a:
 	or	a0, a0, a1
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000081:
@@ -29,8 +29,8 @@ func0000000000000006:
 
 func000000000000010a:
 	or	a0, a0, a1
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000004:
@@ -54,8 +54,8 @@ func0000000000000141:
 
 func00000000000003ca:
 	or	a0, a0, a1
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 
 func00000000000003c1:
@@ -72,7 +72,7 @@ func0000000000000341:
 
 func000000000000014a:
 	or	a0, a0, a1
-	not	a0, a0
-	bexti	a0, a0, 31
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	ret
 

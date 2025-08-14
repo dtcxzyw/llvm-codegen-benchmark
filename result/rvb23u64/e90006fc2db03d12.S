@@ -5,8 +5,8 @@ func00000000000000a1:
 
 func00000000000000a6:
 	mul	a1, a0, a0
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000aa:

@@ -42,8 +42,8 @@ func00000000000000a6:
 func00000000000002c6:
 	zext.b	a1, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 
 func000000000000018a:

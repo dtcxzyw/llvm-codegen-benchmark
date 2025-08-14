@@ -8,8 +8,8 @@ func00000000000002a6:
 func0000000000000006:
 	addi	a2, a2, 1
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000002aa:
@@ -29,16 +29,16 @@ func00000000000007a6:
 func00000000000006a6:
 	addi	a2, a2, 1
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000286:
 	lui	a3, 1048560
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000002a1:
@@ -85,7 +85,7 @@ func00000000000007a8:
 func0000000000000206:
 	addi	a2, a2, -1
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

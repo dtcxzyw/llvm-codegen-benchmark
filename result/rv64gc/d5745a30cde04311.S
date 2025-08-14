@@ -16,7 +16,7 @@ func0000000000000c2c:
 func0000000000000cc1:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

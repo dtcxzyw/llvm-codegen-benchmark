@@ -20,7 +20,7 @@ func0000000000000021:
 
 func000000000000018a:
 	slli	a1, a1, 48
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

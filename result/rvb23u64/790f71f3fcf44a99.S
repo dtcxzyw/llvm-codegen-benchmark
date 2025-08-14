@@ -24,7 +24,7 @@ func0000000000000061:
 
 func0000000000000046:
 	sh1add	a3, a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sh3add	a2, a3, a2
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -41,7 +41,7 @@ func000000000000004a:
 
 func0000000000000066:
 	add	a2, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

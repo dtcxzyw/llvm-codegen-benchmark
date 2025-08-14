@@ -18,7 +18,7 @@ func0000000000000084:
 
 func0000000000000304:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000304:
 
 func0000000000000301:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -38,7 +38,7 @@ func0000000000000301:
 
 func0000000000000308:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -48,7 +48,7 @@ func0000000000000308:
 
 func0000000000000508:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

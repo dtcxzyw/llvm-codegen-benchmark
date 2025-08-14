@@ -8,7 +8,7 @@ func000000000000008c:
 func00000000000000ca:
 	sub	a2, a2, a1
 	slt	a1, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

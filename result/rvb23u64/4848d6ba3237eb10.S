@@ -31,7 +31,7 @@ func000000000000002c:
 
 func00000000000000ca:
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -87,7 +87,7 @@ func00000000000000c4:
 
 func00000000000000aa:
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -119,7 +119,7 @@ func000000000000010a:
 
 func00000000000002aa:
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -141,7 +141,7 @@ func0000000000000024:
 func000000000000002a:
 	xor	a1, a1, a0
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -166,7 +166,7 @@ func000000000000032c:
 
 func000000000000028a:
 	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

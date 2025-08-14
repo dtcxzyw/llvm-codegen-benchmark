@@ -1,6 +1,5 @@
 func0000000000000029:
-	sext.w	a2, a0
-	slti	a2, a2, 0
+	srliw	a2, a0, 31
 	not	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

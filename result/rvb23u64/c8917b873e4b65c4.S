@@ -1,5 +1,5 @@
 func00000000000000ca:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	zext.w	a1, a1
 	czero.nez	a1, a1, a2
 	slt	a0, a1, a0

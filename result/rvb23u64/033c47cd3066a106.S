@@ -18,7 +18,7 @@ func000000000000000a:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -33,14 +33,14 @@ func00000000000000a6:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func00000000000001a6:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func00000000000001e1:

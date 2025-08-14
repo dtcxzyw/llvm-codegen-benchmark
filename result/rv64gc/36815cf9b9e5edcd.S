@@ -14,7 +14,7 @@ func000000000000002a:
 	srai	a1, a1, 48
 	addi	a3, a3, 896
 	xor	a2, a2, a3
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a2, a2
 	or	a0, a0, a2
 	xori	a1, a1, 1
@@ -38,7 +38,7 @@ func000000000000018a:
 	srai	a1, a1, 48
 	snez	a2, a2
 	or	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

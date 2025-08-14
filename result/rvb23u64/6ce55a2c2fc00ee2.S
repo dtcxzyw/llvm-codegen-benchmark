@@ -60,8 +60,7 @@ func000000000000042a:
 func000000000000182a:
 	sext.w	a0, a0
 	zext.b	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a1, a1, -1
 	sgtz	a0, a0
 	seqz	a1, a1

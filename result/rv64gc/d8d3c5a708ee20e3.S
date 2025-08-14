@@ -9,10 +9,8 @@ func000000000000002c:
 	ret
 
 func00000000000000ca:
-	sext.w	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srliw	a2, a2, 31
+	srliw	a1, a1, 31
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -98,10 +96,9 @@ func0000000000000038:
 	ret
 
 func000000000000014a:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	sgtz	a2, a2
-	slti	a1, a1, 0
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

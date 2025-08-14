@@ -13,7 +13,7 @@ func0000000000000001:
 func000000000000000a:
 	sext.w	a1, a1
 	rem	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

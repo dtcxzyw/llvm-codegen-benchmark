@@ -1,7 +1,7 @@
 func000000000000018a:
 	slli	a1, a1, 49
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

@@ -31,13 +31,13 @@ func0000000000000021:
 func00000000000000ca:
 	add	a1, a1, a2
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func0000000000000146:
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -45,7 +45,7 @@ func0000000000000146:
 func000000000000014a:
 	add	a1, a1, a2
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -82,7 +82,7 @@ func0000000000000421:
 
 func0000000000000586:
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

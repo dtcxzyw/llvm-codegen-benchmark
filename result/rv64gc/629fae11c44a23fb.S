@@ -3,7 +3,7 @@ func0000000000000141:
 	andi	a1, a1, 512
 	srai	a0, a0, 48
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -57,7 +57,7 @@ func00000000000000cc:
 	srai	a0, a0, 48
 	addi	a1, a1, -40
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -97,7 +97,7 @@ func000000000000014c:
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	srli	a1, a1, 22
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

@@ -51,7 +51,7 @@ func0000000000000008:
 func000000000000002a:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -64,7 +64,7 @@ func0000000000000034:
 func000000000000012a:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -163,7 +163,7 @@ func00000000000000a1:
 func000000000000006a:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -248,7 +248,7 @@ func0000000000000144:
 func000000000000010a:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

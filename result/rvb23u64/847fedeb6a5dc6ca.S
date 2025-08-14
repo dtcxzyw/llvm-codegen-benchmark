@@ -12,7 +12,7 @@ func0000000000000326:
 	sext.w	a1, a1
 	slt	a1, a1, a2
 	xori	a1, a1, 13
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

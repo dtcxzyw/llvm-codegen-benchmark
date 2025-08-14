@@ -43,8 +43,7 @@ func0000000000000006:
 
 func000000000000000a:
 	srli	a0, a0, 63
-	slli	a0, a0, 63
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 
 func000000000000000c:
@@ -85,7 +84,6 @@ func0000000000000048:
 
 func000000000000004a:
 	srli	a0, a0, 63
-	slli	a0, a0, 63
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 

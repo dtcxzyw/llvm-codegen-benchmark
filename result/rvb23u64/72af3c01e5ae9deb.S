@@ -39,8 +39,7 @@ func0000000000000001:
 	ret
 
 func0000000000000046:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

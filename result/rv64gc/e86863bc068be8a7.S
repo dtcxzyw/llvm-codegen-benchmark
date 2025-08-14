@@ -23,7 +23,7 @@ func0000000000000006:
 	mv	a0, a1
 	ret
 .LBB2_2:
-	slti	a0, a2, 0
+	srli	a0, a2, 63
 	ret
 
 func000000000000000a:

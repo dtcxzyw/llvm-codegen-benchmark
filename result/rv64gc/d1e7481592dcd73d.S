@@ -8,21 +8,19 @@ func0000000000000301:
 	ret
 
 func0000000000000306:
-	sext.w	a0, a0
 	zext.b	a2, a2
 	addi	a2, a2, -255
 	snez	a2, a2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func0000000000000046:
-	sext.w	a0, a0
 	slli	a2, a2, 41
 	seqz	a2, a2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

@@ -26,7 +26,7 @@ func000000000000004c:
 
 func0000000000000006:
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

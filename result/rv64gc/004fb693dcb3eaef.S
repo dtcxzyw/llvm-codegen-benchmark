@@ -1,5 +1,5 @@
 func000000000000002b:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	xori	a3, a3, 1
 	and	a1, a1, a3
 	bnez	a1, .LBB0_2

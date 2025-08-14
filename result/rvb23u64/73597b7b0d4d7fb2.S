@@ -1,7 +1,7 @@
 func0000000000000126:
 	add	a1, a1, a2
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func00000000000001a1:

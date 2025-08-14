@@ -20,21 +20,21 @@ func0000000000000001:
 
 func0000000000000006:
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000a:
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func000000000000040a:
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -87,8 +87,8 @@ func00000000000000a8:
 
 func0000000000000606:
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000601:

@@ -10,9 +10,9 @@ func0000000000000c2c:
 	ret
 
 func0000000000001c2a:
-	sext.w	a0, a0
-	slli	a3, a0, 2
-	slti	a0, a0, 0
+	sext.w	a3, a0
+	srliw	a0, a0, 31
+	slli	a3, a3, 2
 	add	a2, a2, a3
 	xor	a1, a1, a2
 	seqz	a1, a1

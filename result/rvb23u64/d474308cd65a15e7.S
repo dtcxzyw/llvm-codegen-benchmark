@@ -20,8 +20,8 @@ func0000000000000058:
 	ret
 
 func000000000000000c:
-	subw	a2, a2, a1
-	slti	a1, a2, 0
+	sub	a2, a2, a1
+	srliw	a1, a2, 31
 	or	a0, a0, a1
 	ret
 

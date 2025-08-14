@@ -1,10 +1,9 @@
 func000000000000000c:
 	sext.w	a0, a0
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	lui	a3, 524288
-	slti	a2, a2, 0
-	addi	a3, a3, -1
 	czero.nez	a1, a1, a2
+	addi	a3, a3, -1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

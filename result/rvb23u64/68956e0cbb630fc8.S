@@ -44,7 +44,7 @@ func000000000000010c:
 	ret
 
 func000000000000014c:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	snez	a1, a1
 	xori	a2, a2, 1
 	and	a0, a0, a1

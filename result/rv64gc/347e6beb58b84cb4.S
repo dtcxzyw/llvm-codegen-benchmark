@@ -21,14 +21,14 @@ func000000000000004a:
 	bge	a1, a2, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 .LBB1_3:
 	mv	a1, a2
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	slti	a0, a2, 0
-	xori	a0, a0, 1
+	srli	a1, a2, 63
+	xori	a0, a1, 1
 	ret
 

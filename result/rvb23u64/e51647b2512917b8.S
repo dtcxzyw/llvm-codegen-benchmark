@@ -27,25 +27,22 @@ func000000000000004c:
 	ret
 
 func0000000000000306:
-	sext.w	a0, a0
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func000000000000030a:
-	sext.w	a0, a0
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	andi	a2, a2, 6
+	srliw	a0, a0, 31
 	seqz	a2, a2
-	slti	a0, a0, 0
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

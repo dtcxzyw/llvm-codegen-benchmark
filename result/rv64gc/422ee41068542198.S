@@ -75,7 +75,7 @@ func000000000000002a:
 	slli	a1, a1, 1
 	srai	a0, a0, 56
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -86,7 +86,7 @@ func000000000000028a:
 	srai	a0, a0, 56
 	srli	a1, a1, 1
 	sltiu	a1, a1, 63
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -97,7 +97,7 @@ func000000000000030a:
 	srai	a0, a0, 56
 	srli	a1, a1, 1
 	sltiu	a1, a1, 3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -107,7 +107,7 @@ func000000000000018a:
 	slli	a1, a1, 1
 	srai	a0, a0, 56
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

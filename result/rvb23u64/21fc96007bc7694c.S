@@ -19,7 +19,7 @@ func0000000000000001:
 func000000000000004a:
 	add	a1, a1, a2
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -38,7 +38,7 @@ func000000000000000c:
 func000000000000000a:
 	add	a1, a1, a2
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

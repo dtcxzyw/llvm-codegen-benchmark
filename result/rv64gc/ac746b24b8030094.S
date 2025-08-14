@@ -71,8 +71,8 @@ func0000000000000046:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000048:

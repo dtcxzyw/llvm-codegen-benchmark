@@ -17,10 +17,9 @@ func0000000000000421:
 	ret
 
 func000000000000018a:
-	sext.w	a0, a0
 	andi	a2, a2, 1
+	srliw	a0, a0, 31
 	subw	a1, a1, a2
-	slti	a0, a0, 0
 	addi	a1, a1, -4
 	snez	a1, a1
 	xori	a0, a0, 1

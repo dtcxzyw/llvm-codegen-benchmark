@@ -10,9 +10,8 @@ func0000000000000005:
 	ret
 
 func0000000000000019:
-	sext.w	a1, a1
+	srliw	a1, a1, 31
 	addiw	a0, a0, -1
-	slti	a1, a1, 0
 	addi	a0, a0, -8
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 8
@@ -54,9 +53,8 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
-	sext.w	a1, a1
 	addiw	a0, a0, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 

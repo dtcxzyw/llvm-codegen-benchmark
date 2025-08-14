@@ -8,7 +8,7 @@ func0000000000000041:
 	ret
 
 func0000000000000046:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a0, a1
 	ret
 

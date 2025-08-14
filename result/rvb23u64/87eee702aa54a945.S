@@ -27,8 +27,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	slti	a1, a2, 0
-	xori	a1, a1, 1
+	srli	a2, a2, 63
+	xori	a1, a2, 1
 	and	a0, a0, a1
 	ret
 

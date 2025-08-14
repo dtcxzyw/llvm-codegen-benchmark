@@ -21,14 +21,14 @@ func000000000000010c:
 
 func0000000000000146:
 	slt	a2, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000008a:
 	sltu	a2, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1

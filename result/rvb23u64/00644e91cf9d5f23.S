@@ -9,9 +9,8 @@ func00000000000000a4:
 	ret
 
 func0000000000000324:
-	sext.w	a1, a1
+	srliw	a1, a1, 31
 	addiw	a0, a0, -1
-	slti	a1, a1, 0
 	sltiu	a0, a0, 8
 	and	a0, a0, a1
 	ret

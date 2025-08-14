@@ -15,21 +15,21 @@ func00000000000001f8:
 func000000000000018a:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func000000000000010a:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func000000000000000a:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

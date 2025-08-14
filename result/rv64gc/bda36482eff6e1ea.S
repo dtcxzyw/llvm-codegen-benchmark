@@ -48,13 +48,12 @@ func000000000000160c:
 	ret
 
 func000000000000c40c:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	zext.b	a2, a2
 	lui	a3, 272
+	srliw	a0, a0, 31
 	snez	a2, a2
 	addi	a3, a3, 1
-	slti	a0, a0, 0
 	sltu	a1, a3, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

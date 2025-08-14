@@ -22,21 +22,21 @@ func0000000000000024:
 
 func00000000000000ca:
 	andi	a0, a0, 1
-	sext.w	a1, a1
 	bnez	a0, .LBB2_2
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 .LBB2_2:
+	sext.w	a1, a1
 	sgtz	a0, a1
 	ret
 
 func00000000000000cc:
 	andi	a0, a0, 1
-	sext.w	a1, a1
 	bnez	a0, .LBB3_2
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 .LBB3_2:
+	sext.w	a1, a1
 	addi	a1, a1, -6
 	snez	a0, a1
 	ret

@@ -66,10 +66,9 @@ func000000000000014a:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
-	not	a1, a1
-	bexti	a1, a1, 31
-	slti	a0, a0, 0
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

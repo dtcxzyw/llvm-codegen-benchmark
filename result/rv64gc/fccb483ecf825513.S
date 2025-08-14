@@ -4,8 +4,7 @@ func000000000000002a:
 	beq	a3, a4, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

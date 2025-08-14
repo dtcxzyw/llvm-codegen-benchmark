@@ -4,7 +4,7 @@ func000000000000000a:
 	fmv.s	fa0, fa1
 .LBB0_2:
 	fcvt.w.s	a0, fa0, rtz
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

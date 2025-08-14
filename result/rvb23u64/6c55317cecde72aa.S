@@ -57,7 +57,7 @@ func0000000000000011:
 func000000000000000c:
 	sext.b	a1, a1
 	li	a2, -2048
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	lui	a2, 1
 	add	a1, a1, a2
@@ -73,7 +73,7 @@ func0000000000000019:
 
 func0000000000000014:
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	addi	a1, a1, 1
 	or	a0, a0, a1

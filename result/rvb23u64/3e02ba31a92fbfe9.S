@@ -15,9 +15,8 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	sext.w	a1, a1
 	fcvt.w.s	a2, fa0, rtz
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

@@ -6,7 +6,7 @@ func0000000000000001:
 
 func0000000000000006:
 	slliw	a1, a1, 2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	ret
 

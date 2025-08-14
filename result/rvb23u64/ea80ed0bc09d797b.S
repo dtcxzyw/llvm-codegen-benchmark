@@ -14,7 +14,7 @@ func000000000000000a:
 	li	a2, 24
 	czero.nez	a0, a2, a0
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

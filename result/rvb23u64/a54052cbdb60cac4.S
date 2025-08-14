@@ -15,7 +15,7 @@ func000000000000000a:
 	ret
 
 func000000000000000b:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

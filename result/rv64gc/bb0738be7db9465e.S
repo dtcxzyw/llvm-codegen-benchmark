@@ -1,5 +1,5 @@
 func0000000000000029:
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	xori	a3, a3, 1
 	and	a0, a0, a3
 	bnez	a0, .LBB0_2
@@ -11,7 +11,7 @@ func0000000000000029:
 	ret
 
 func0000000000000018:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	and	a0, a0, a3
 	add	a1, a1, a2
 	addi	a0, a0, -1

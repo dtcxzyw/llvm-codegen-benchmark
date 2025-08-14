@@ -9,7 +9,7 @@ func00000000000004cc:
 func00000000000004ca:
 	sext.w	a2, a2
 	addw	a0, a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a0, 31
 	not	a1, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
@@ -18,7 +18,7 @@ func00000000000004ca:
 func00000000000000ca:
 	sext.w	a2, a2
 	addw	a0, a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a0, 31
 	not	a1, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1

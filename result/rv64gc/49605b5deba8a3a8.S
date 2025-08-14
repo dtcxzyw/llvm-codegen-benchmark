@@ -24,7 +24,7 @@ func0000000000000058:
 
 func0000000000000054:
 	andi	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -74,7 +74,7 @@ func000000000000004c:
 	lui	a2, 131072
 	and	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -83,13 +83,13 @@ func0000000000000182:
 	slli	a2, a2, 61
 	and	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000314:
 	slli	a1, a1, 4
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -142,7 +142,7 @@ func0000000000000202:
 
 func0000000000000298:
 	sext.w	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -6
 	snez	a1, a1
 	xori	a0, a0, 1

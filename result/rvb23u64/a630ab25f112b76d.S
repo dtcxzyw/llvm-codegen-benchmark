@@ -58,7 +58,7 @@ func0000000000000008:
 
 func000000000000002a:
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	lui	a2, 585736
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

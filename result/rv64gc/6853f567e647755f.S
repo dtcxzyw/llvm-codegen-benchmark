@@ -6,14 +6,14 @@ func0000000000000101:
 
 func0000000000000226:
 	srli	a1, a1, 3
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000026:
 	srli	a1, a1, 3
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000104:
@@ -68,8 +68,8 @@ func0000000000000021:
 
 func0000000000000106:
 	srli	a1, a1, 32
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000010a:

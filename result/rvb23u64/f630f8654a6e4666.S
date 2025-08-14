@@ -26,7 +26,7 @@ func0000000000000008:
 func000000000000000a:
 	slli	a1, a1, 33
 	srli	a1, a1, 33
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0
 	ret
 

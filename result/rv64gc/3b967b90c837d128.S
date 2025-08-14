@@ -9,11 +9,11 @@ func0000000000000146:
 
 func00000000000000c6:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a3, a0, 0
-	and	a2, a2, a3
-	slt	a0, a0, a1
+	sext.w	a3, a0
+	srliw	a0, a0, 31
 	and	a0, a0, a2
+	slt	a1, a3, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000181:
@@ -47,12 +47,12 @@ func000000000000018c:
 	ret
 
 func000000000000014a:
+	sext.w	a3, a0
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a3, a0, 0
-	slt	a0, a1, a0
-	xori	a1, a3, 1
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	and	a0, a0, a2
+	slt	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

@@ -9,14 +9,14 @@ func0000000000000046:
 	andi	a0, a0, 1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000004a:
 	andi	a0, a0, 1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -25,6 +25,6 @@ func0000000000000006:
 	srai	a0, a0, 63
 	andi	a0, a0, 24
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

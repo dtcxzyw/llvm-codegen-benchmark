@@ -7,7 +7,7 @@ func0000000000000001:
 
 func0000000000000006:
 	sext.h	a1, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, -6
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 6

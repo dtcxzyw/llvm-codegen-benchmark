@@ -7,7 +7,7 @@ func0000000000000004:
 	not	a5, a1
 	addiw	a3, a3, -1
 	sll	a1, a2, a1
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	srl	a3, a3, a5
 	sll	a0, a2, a0
 	czero.nez	a1, a1, a4
@@ -24,12 +24,12 @@ func0000000000000007:
 	addi	a5, a1, -64
 	not	a1, a1
 	sll	a0, a2, a0
-	slti	a2, a5, 0
+	srli	a5, a5, 63
 	srl	a1, a3, a1
-	czero.nez	a3, a4, a2
-	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
-	czero.eqz	a0, a0, a2
+	czero.nez	a2, a4, a5
+	czero.eqz	a1, a1, a5
+	or	a1, a1, a2
+	czero.eqz	a0, a0, a5
 	ret
 
 func0000000000000005:
@@ -41,7 +41,7 @@ func0000000000000005:
 	sll	a1, a1, a2
 	addi	a2, a2, -64
 	srl	a3, a4, a3
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a3, a3, a0
 	czero.nez	a1, a1, a2
 	czero.eqz	a3, a3, a2
@@ -54,7 +54,7 @@ func0000000000000006:
 	zext.w	a0, a0
 	addi	a2, a0, -64
 	bset	a3, zero, a0
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.eqz	a0, a1, a2
 	czero.nez	a1, a3, a2
 	ret

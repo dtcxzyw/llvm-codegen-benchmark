@@ -10,9 +10,8 @@ func0000000000000c21:
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	add.uw	a1, a2, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

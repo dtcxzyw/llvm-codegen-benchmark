@@ -134,7 +134,7 @@ func00000000000000f4:
 func00000000000000c6:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -286,7 +286,7 @@ func000000000000014a:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

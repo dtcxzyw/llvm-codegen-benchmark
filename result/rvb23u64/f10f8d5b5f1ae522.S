@@ -17,7 +17,7 @@ func0000000000000026:
 	andi	a1, a1, 1
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000001:

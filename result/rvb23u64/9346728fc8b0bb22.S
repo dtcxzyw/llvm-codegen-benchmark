@@ -14,6 +14,6 @@ func0000000000000006:
 	fli.d	fa4, 0.5
 	fmul.d	fa5, fa5, fa4
 	fcvt.w.d	a0, fa5, rtz
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

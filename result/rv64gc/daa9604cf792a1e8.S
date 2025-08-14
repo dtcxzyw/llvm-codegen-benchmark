@@ -16,13 +16,13 @@ func0000000000000026:
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	li	a1, -55
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 .LBB2_2:
 	li	a1, -48
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:
@@ -38,8 +38,8 @@ func000000000000002a:
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	ori	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -47,8 +47,8 @@ func000000000000000a:
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	ori	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

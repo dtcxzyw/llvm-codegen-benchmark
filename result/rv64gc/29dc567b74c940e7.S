@@ -15,8 +15,8 @@ func0000000000000346:
 	bltz	a3, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000008a:
@@ -24,8 +24,8 @@ func000000000000008a:
 	beqz	a3, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -34,8 +34,8 @@ func0000000000000086:
 	beqz	a3, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000408:

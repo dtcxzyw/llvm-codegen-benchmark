@@ -1,8 +1,7 @@
 func000000000000018a:
-	sext.w	a1, a1
 	andi	a2, a2, 127
+	srliw	a1, a1, 31
 	snez	a2, a2
-	slti	a1, a1, 0
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -31,8 +30,8 @@ func0000000000000181:
 
 func0000000000000021:
 	sext.w	a1, a1
-	not	a2, a2
-	bexti	a2, a2, 31
+	srliw	a2, a2, 31
+	xori	a2, a2, 1
 	addi	a1, a1, -1116
 	and	a0, a0, a2
 	seqz	a1, a1

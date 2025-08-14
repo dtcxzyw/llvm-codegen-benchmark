@@ -13,7 +13,7 @@ func000000000000010c:
 	andi	a0, a0, 223
 	addi	a0, a0, -65
 	sltiu	a0, a0, 26
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

@@ -14,7 +14,7 @@ func0000000000000146:
 	sext.w	a1, a1
 	min	a1, a1, a2
 	slti	a0, a0, 64
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

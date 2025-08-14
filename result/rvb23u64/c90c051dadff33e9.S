@@ -54,9 +54,8 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
 	andi	a2, a2, 7
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -66,9 +65,8 @@ func00000000000000c1:
 	ret
 
 func00000000000000d8:
-	sext.w	a1, a1
 	andi	a2, a2, 7
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

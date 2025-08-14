@@ -80,7 +80,7 @@ func0000000000000d8a:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -142,7 +142,7 @@ func0000000000000886:
 	sext.b	a0, a0
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

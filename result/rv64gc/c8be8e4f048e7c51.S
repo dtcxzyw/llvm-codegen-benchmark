@@ -13,7 +13,7 @@ func0000000000000004:
 
 func000000000000000a:
 	addi	a0, a0, -2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -18,8 +18,7 @@ func0000000000000886:
 	slli	a0, a0, 2
 	sllw	a1, a2, a0
 .LBB1_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func000000000000088a:
@@ -30,8 +29,7 @@ func000000000000088a:
 	slli	a0, a0, 2
 	sllw	a1, a2, a0
 .LBB2_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

@@ -32,8 +32,8 @@ func00000000000001a6:
 	li	a3, 1
 	andn	a1, a3, a1
 	add	a0, a0, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001e1:

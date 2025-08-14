@@ -22,7 +22,7 @@ func0000000000000201:
 func0000000000000281:
 	zext.b	a0, a0
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	or	a1, a1, a2
 	seqz	a0, a0
@@ -63,7 +63,7 @@ func000000000000004a:
 	sext.b	a0, a0
 	zext.b	a2, a2
 	addi	a2, a2, -2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a2, a2
 	or	a1, a1, a2
 	xori	a0, a0, 1
@@ -136,7 +136,7 @@ func000000000000030a:
 	sext.b	a0, a0
 	zext.b	a2, a2
 	addi	a2, a2, -46
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a2, a2
 	or	a1, a1, a2
 	xori	a0, a0, 1

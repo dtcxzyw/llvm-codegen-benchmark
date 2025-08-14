@@ -9,10 +9,9 @@ func0000000000000284:
 	ret
 
 func000000000000068a:
-	sext.w	a0, a0
 	addi	a2, a1, -1
+	srliw	a0, a0, 31
 	and	a1, a1, a2
-	slti	a0, a0, 0
 	sext.w	a1, a1
 	seqz	a1, a1
 	not	a0, a0

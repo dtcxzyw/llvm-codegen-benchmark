@@ -34,8 +34,8 @@ func0000000000000008:
 
 func000000000000000a:
 	srliw	a1, a1, 1
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -54,8 +54,8 @@ func0000000000000021:
 
 func0000000000000006:
 	srliw	a1, a1, 1
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000084:

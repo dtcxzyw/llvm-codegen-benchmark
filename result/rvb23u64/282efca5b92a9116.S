@@ -18,8 +18,7 @@ func0000000000000019:
 	ret
 
 func0000000000000018:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a1, a1, 73
 	czero.eqz	a1, a1, a2
 	sub	a1, a1, a0

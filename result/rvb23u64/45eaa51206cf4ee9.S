@@ -7,11 +7,10 @@ func00000000000000e1:
 	ret
 
 func0000000000000066:
-	sext.w	a1, a0
-	slli	a0, a0, 2
-	addiw	a0, a0, 2
-	slti	a1, a1, 0
-	czero.nez	a0, a0, a1
+	slli	a1, a0, 2
+	addiw	a1, a1, 2
+	srliw	a0, a0, 31
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000021:

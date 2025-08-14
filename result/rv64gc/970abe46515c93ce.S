@@ -67,8 +67,7 @@ func000000000000000a:
 func0000000000000006:
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret

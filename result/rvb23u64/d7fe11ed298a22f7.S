@@ -7,7 +7,7 @@ func0000000000000026:
 func0000000000000006:
 	li	a2, 387
 	subw	a2, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a2, -387
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 387

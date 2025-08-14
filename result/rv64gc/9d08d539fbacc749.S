@@ -10,10 +10,10 @@ func0000000000000042:
 
 func00000000000001cc:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slt	a2, a1, a2
+	sext.w	a3, a1
+	slt	a2, a3, a2
 	xori	a2, a2, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret

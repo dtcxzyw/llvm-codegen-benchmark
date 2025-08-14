@@ -47,7 +47,7 @@ func0000000000000410:
 	ret
 
 func000000000000030c:
-	slti	a3, a0, 0
+	srli	a3, a0, 63
 	or	a2, a2, a3
 	slt	a0, a0, a1
 	or	a0, a0, a2

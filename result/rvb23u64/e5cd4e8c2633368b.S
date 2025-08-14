@@ -69,15 +69,14 @@ func0000000000000602:
 	ret
 
 func0000000000000094:
-	sext.w	a2, a0
-	lui	a3, 782336
-	andn	a0, a0, a3
-	slti	a2, a2, 0
-	binvi	a0, a0, 30
-	xori	a2, a2, 1
-	seqz	a0, a0
-	or	a1, a1, a2
+	lui	a2, 782336
+	andn	a2, a0, a2
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
+	binvi	a2, a2, 30
+	seqz	a2, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000084:

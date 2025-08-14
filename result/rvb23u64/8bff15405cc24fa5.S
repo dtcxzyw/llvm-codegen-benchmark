@@ -9,10 +9,9 @@ func000000000000002c:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	seqz	a2, a2
-	slti	a0, a0, 0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

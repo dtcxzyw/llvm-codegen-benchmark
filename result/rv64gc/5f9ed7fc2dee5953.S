@@ -22,10 +22,10 @@ func0000000000000068:
 	ret
 
 func0000000000000182:
-	sext.w	a0, a0
-	slti	a1, a0, 0
-	addi	a0, a0, -1
-	seqz	a0, a0
+	sext.w	a1, a0
+	srliw	a0, a0, 31
+	addi	a1, a1, -1
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
@@ -38,10 +38,10 @@ func0000000000000282:
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
-	addi	a1, a0, -2
+	sext.w	a1, a0
+	addi	a1, a1, -2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

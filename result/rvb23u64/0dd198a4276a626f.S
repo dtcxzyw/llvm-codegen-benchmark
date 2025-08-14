@@ -68,7 +68,7 @@ func000000000000002a:
 	sext.h	a0, a0
 	not	a1, a1
 	bexti	a1, a1, 11
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -76,7 +76,7 @@ func0000000000000026:
 	sext.h	a0, a0
 	andi	a1, a1, 1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -130,7 +130,7 @@ func00000000000000c1:
 	sext.h	a0, a0
 	andi	a1, a1, 8
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

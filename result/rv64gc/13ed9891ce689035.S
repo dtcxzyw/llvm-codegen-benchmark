@@ -55,11 +55,9 @@ func0000000000000101:
 	ret
 
 func0000000000000146:
-	sext.w	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	and	a1, a1, a2
 	beqz	a1, .LBB5_2
 	lui	a0, 524288

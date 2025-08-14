@@ -1,7 +1,7 @@
 func000000000000002a:
 	fmv.x.d	a1, fa0
 	lui	a2, 261632
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xor	a0, a0, a2
 	not	a1, a1
 	seqz	a0, a0

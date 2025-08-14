@@ -46,11 +46,10 @@ func0000000000000014:
 
 func000000000000004d:
 	andi	a0, a0, 1
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	li	a3, 4
-	slti	a2, a2, 0
-	czero.nez	a0, a3, a0
 	xori	a2, a2, 1
+	czero.nez	a0, a3, a0
 	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -58,11 +57,10 @@ func000000000000004d:
 
 func000000000000004c:
 	andi	a0, a0, 1
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	li	a3, 32
-	slti	a2, a2, 0
-	czero.nez	a0, a3, a0
 	xori	a2, a2, 1
+	czero.nez	a0, a3, a0
 	slli	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -70,11 +68,10 @@ func000000000000004c:
 
 func000000000000000c:
 	andi	a0, a0, 1
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	li	a3, 16
-	slti	a2, a2, 0
-	czero.nez	a0, a3, a0
 	xori	a2, a2, 1
+	czero.nez	a0, a3, a0
 	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2

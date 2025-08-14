@@ -11,7 +11,7 @@ func000000000000000a:
 	bnez	a0, .LBB1_2
 	sext.w	a1, a2
 .LBB1_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 

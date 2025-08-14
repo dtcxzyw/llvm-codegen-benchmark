@@ -172,7 +172,7 @@ func00000000000000aa:
 	bltu	a0, a1, .LBB21_2
 	mv	a0, a1
 .LBB21_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

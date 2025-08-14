@@ -35,7 +35,7 @@ func000000000000000c:
 	andi	a0, a0, 1
 	sext.b	a2, a2
 	li	a3, 1024
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a3, a0
 	xori	a2, a2, 1
 	slli	a2, a2, 28

@@ -12,7 +12,7 @@ func000000000000002a:
 	zext.b	a1, a1
 	snez	a1, a1
 	slli	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -6
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 6

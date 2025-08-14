@@ -23,7 +23,7 @@ func0000000000000298:
 	zext.b	a1, a1
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	snez	a1, a1
 	or	a1, a1, a2

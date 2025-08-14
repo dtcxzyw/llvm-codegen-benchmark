@@ -27,7 +27,7 @@ func0000000000000086:
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 

@@ -13,8 +13,7 @@ func0000000000000026:
 	beqz	a0, .LBB1_2
 	neg	a1, a1
 .LBB1_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func000000000000002a:
@@ -81,8 +80,7 @@ func0000000000000006:
 	beqz	a0, .LBB8_2
 	neg	a1, a1
 .LBB8_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000008:

@@ -1,7 +1,7 @@
 func0000000000000026:
 	add	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000aa:
@@ -12,8 +12,8 @@ func00000000000000aa:
 
 func000000000000002a:
 	add	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -55,8 +55,8 @@ func0000000000000021:
 
 func000000000000018a:
 	add	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -74,8 +74,8 @@ func0000000000000004:
 
 func00000000000000a6:
 	add	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000028:

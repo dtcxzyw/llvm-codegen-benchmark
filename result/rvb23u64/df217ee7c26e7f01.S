@@ -16,7 +16,7 @@ func000000000000004f:
 
 func0000000000000280:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	add	a1, a1, a2
 	sh2add.uw	a0, a1, a0

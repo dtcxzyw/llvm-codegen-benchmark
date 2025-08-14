@@ -8,7 +8,7 @@ func0000000000000021:
 
 func0000000000000006:
 	beqz	a1, .LBB1_2
-	slti	a0, a1, 0
+	srli	a0, a1, 63
 	ret
 .LBB1_2:
 	slli	a2, a2, 32

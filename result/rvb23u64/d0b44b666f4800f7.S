@@ -62,7 +62,7 @@ func000000000000042a:
 	xori	a2, a2, 2
 	xori	a1, a1, 2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	zext.b	a1, a1
 	seqz	a1, a1
 	xori	a0, a0, 1

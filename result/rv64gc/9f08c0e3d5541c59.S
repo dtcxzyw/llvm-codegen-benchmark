@@ -7,8 +7,8 @@ func0000000000000144:
 
 func000000000000014a:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -48,14 +48,14 @@ func0000000000000048:
 
 func000000000000004a:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000146:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

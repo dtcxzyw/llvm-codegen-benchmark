@@ -1,5 +1,5 @@
 func00000000000000ca:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	slli	a1, a1, 32

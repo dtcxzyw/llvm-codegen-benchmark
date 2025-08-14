@@ -26,10 +26,9 @@ func0000000000000610:
 	ret
 
 func0000000000000619:
-	sext.w	a1, a1
 	sext.w	a2, a0
 	snez	a2, a2
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	ret

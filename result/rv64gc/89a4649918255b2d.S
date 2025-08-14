@@ -1,8 +1,8 @@
 func00000000000003c6:
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000003cc:
@@ -18,8 +18,8 @@ func00000000000003cc:
 func0000000000000386:
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000381:

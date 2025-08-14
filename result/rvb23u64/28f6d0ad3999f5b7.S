@@ -13,7 +13,7 @@ func0000000000000184:
 func00000000000000aa:
 	sh1add	a0, a1, a0
 	addi	a0, a0, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -26,7 +26,7 @@ func00000000000000b4:
 func00000000000001aa:
 	sh1add	a0, a1, a0
 	addi	a0, a0, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

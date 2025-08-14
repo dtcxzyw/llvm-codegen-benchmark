@@ -2,7 +2,7 @@ func0000000000000024:
 	slli	a0, a0, 32
 	bseti	a1, zero, 32
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

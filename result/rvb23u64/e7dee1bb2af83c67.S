@@ -35,7 +35,7 @@ func000000000000010c:
 func00000000000000cc:
 	zext.b	a0, a0
 	sext.h	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, -2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -80,7 +80,7 @@ func0000000000000084:
 func000000000000014c:
 	zext.b	a0, a0
 	sext.h	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, -10
 	xori	a1, a1, 1
 	snez	a0, a0

@@ -20,7 +20,7 @@ func0000000000000064:
 
 func0000000000000046:
 	srli	a1, a0, 32
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

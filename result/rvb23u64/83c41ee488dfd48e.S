@@ -15,7 +15,7 @@ func0000000000000068:
 	ret
 
 func0000000000000066:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, 64
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -23,7 +23,7 @@ func0000000000000066:
 	ret
 
 func0000000000000046:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, -64
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -32,7 +32,7 @@ func0000000000000046:
 
 func000000000000004a:
 	addi	a1, a1, -64
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

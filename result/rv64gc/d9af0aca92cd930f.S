@@ -41,7 +41,7 @@ func0000000000000208:
 
 func0000000000000206:
 	srli	a0, a0, 3
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 

@@ -30,8 +30,7 @@ func0000000000000046:
 	bnez	a0, .LBB3_2
 	mv	a2, a1
 .LBB3_2:
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 	ret
 
 func000000000000004a:
@@ -39,8 +38,7 @@ func000000000000004a:
 	bnez	a0, .LBB4_2
 	mv	a2, a1
 .LBB4_2:
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 	xori	a0, a0, 1
 	ret
 
@@ -95,8 +93,7 @@ func000000000000006a:
 	bnez	a0, .LBB10_2
 	mv	a2, a1
 .LBB10_2:
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 	xori	a0, a0, 1
 	ret
 
@@ -141,8 +138,7 @@ func0000000000000026:
 	bnez	a0, .LBB15_2
 	mv	a2, a1
 .LBB15_2:
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 	ret
 
 func0000000000000041:

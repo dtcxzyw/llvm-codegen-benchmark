@@ -2,7 +2,7 @@ func00000000000014ca:
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, -2
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	slt	a0, a1, a0
 	andn	a0, a0, a2
 	ret
@@ -20,7 +20,7 @@ func000000000000008a:
 	sext.w	a0, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 7
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	sltu	a0, a1, a0
 	andn	a0, a0, a2
 	ret
@@ -30,7 +30,7 @@ func0000000000001546:
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	slt	a0, a1, a0
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

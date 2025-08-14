@@ -1,7 +1,6 @@
 func000000000000014a:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	addi	a0, a0, -1
 	ori	a0, a0, 1
 	ret
@@ -159,10 +158,9 @@ func0000000000000146:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	srliw	a0, a0, 31
 	binvi	a1, a1, 30
-	slti	a0, a0, 0
 	seqz	a1, a1
 	andn	a0, a1, a0
 	li	a1, 16

@@ -55,7 +55,7 @@ func0000000000000001:
 func0000000000000002:
 	addi	a1, a0, -64
 	li	a2, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sll	a2, a2, a0
 	neg	a0, a1
 	addi	a1, a1, -1

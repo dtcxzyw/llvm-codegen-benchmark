@@ -71,7 +71,7 @@ func000000000000014b:
 	sext.w	a0, a0
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	slt	a0, a0, a1
 	or	a0, a0, a2
 	xori	a0, a0, 1
@@ -123,9 +123,9 @@ func00000000000000c1:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
 	xor	a0, a0, a1
-	slti	a1, a2, 0
+	srli	a2, a2, 63
 	seqz	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000025:
@@ -223,7 +223,7 @@ func000000000000014a:
 	sext.w	a1, a1
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slt	a0, a1, a0
 	and	a0, a0, a2

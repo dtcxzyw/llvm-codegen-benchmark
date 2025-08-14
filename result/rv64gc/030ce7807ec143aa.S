@@ -191,7 +191,7 @@ func0000000000000146:
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -219,7 +219,7 @@ func0000000000000186:
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

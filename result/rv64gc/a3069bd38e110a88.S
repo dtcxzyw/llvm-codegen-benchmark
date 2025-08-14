@@ -78,7 +78,7 @@ func000000000000000a:
 	srli	a2, a2, 32
 	sub	a0, a0, a1
 	sub	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -158,7 +158,7 @@ func000000000000020a:
 	sext.w	a2, a2
 	sub	a0, a0, a1
 	sub	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

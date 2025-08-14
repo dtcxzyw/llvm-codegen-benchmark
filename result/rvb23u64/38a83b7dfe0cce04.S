@@ -31,7 +31,7 @@ func0000000000000004:
 
 func0000000000000018:
 	addiw	a1, a1, -1
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	addi	a1, a1, -3
 	czero.nez	a1, a1, a2
 	addi	a1, a1, 3

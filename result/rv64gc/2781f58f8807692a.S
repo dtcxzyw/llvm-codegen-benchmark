@@ -13,6 +13,6 @@ func0000000000000006:
 	li	a2, 256
 .LBB1_2:
 	remw	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

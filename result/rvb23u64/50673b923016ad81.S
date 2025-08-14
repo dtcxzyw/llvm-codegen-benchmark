@@ -155,7 +155,7 @@ func000000000000038a:
 	sext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -163,7 +163,7 @@ func000000000000018a:
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

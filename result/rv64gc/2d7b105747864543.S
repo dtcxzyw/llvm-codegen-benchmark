@@ -36,8 +36,8 @@ func0000000000000034:
 	ret
 
 func000000000000000a:
-	addiw	a1, a1, 8
-	slti	a1, a1, 0
+	addi	a1, a1, 8
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

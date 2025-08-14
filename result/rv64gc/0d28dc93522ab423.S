@@ -22,7 +22,7 @@ func0000000000000003:
 func0000000000000002:
 	addi	a3, a2, -64
 	li	a4, 1
-	slti	a3, a3, 0
+	srli	a3, a3, 63
 	sll	a2, a4, a2
 	neg	a4, a3
 	addi	a3, a3, -1

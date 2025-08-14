@@ -81,7 +81,7 @@ func0000000000000d8a:
 	srai	a0, a0, 56
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -145,7 +145,7 @@ func0000000000000886:
 	addi	a2, a2, 1
 	srai	a0, a0, 56
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

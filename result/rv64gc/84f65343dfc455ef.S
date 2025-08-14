@@ -22,8 +22,8 @@ func0000000000000034:
 func0000000000000006:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000004:
@@ -52,7 +52,7 @@ func000000000000000a:
 func0000000000000026:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

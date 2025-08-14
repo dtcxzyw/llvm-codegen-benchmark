@@ -26,7 +26,7 @@ func0000000000000041:
 
 func0000000000000006:
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

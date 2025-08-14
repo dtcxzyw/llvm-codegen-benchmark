@@ -40,7 +40,7 @@ func000000000000088a:
 	srai	a2, a2, 3
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

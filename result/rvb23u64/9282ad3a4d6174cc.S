@@ -40,14 +40,14 @@ func00000000000000c1:
 
 func0000000000000026:
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000106:
 	srli	a1, a1, 61
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -111,14 +111,14 @@ func0000000000000038:
 
 func00000000000000ca:
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func00000000000000c6:
 	slti	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -139,7 +139,7 @@ func0000000000000146:
 	ret
 
 func00000000000000cc:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

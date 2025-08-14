@@ -190,7 +190,7 @@ func0000000000000221:
 func000000000000030a:
 	sext.b	a0, a0
 	sltiu	a1, a1, 31
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -198,7 +198,7 @@ func000000000000030a:
 func000000000000008a:
 	sext.b	a0, a0
 	sltiu	a1, a1, -12
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -240,7 +240,7 @@ func0000000000000104:
 func000000000000002a:
 	sext.b	a0, a0
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -248,7 +248,7 @@ func000000000000002a:
 func000000000000028a:
 	sext.b	a0, a0
 	sltiu	a1, a1, 63
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -256,7 +256,7 @@ func000000000000028a:
 func000000000000018a:
 	sext.b	a0, a0
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

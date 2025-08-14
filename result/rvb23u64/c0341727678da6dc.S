@@ -7,10 +7,10 @@ func000000000000008c:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -23,10 +23,10 @@ func00000000000000cc:
 	ret
 
 func000000000000028a:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	sltu	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -40,10 +40,10 @@ func000000000000002c:
 	ret
 
 func00000000000008ca:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

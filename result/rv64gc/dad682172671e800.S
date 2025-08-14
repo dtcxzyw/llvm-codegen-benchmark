@@ -17,8 +17,8 @@ func000000000000008a:
 
 func00000000000000c8:
 	sext.w	a2, a0
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	sltiu	a1, a2, 3
 	not	a1, a1
 	and	a0, a0, a1

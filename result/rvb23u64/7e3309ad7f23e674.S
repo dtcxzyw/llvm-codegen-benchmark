@@ -5,14 +5,14 @@ func000000000000018c:
 	ret
 
 func0000000000000006:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -58,8 +58,8 @@ func0000000000000104:
 	ret
 
 func000000000000018a:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -85,22 +85,22 @@ func0000000000000024:
 	ret
 
 func000000000000012a:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func00000000000001aa:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

@@ -88,7 +88,7 @@ func00000000000001cc:
 	sext.w	a2, a0
 	slt	a1, a2, a1
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -106,7 +106,7 @@ func000000000000084c:
 	sext.w	a2, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

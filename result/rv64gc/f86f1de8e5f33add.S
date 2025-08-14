@@ -2,8 +2,8 @@ func0000000000000786:
 	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000007a4:
@@ -66,8 +66,8 @@ func000000000000078a:
 	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

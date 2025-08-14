@@ -13,7 +13,7 @@ func0000000000000001:
 func000000000000000a:
 	xor	a1, a1, a2
 	and	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -19,7 +19,7 @@ func000000000000002c:
 func000000000000002a:
 	addi	a1, a1, -1
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -38,7 +38,7 @@ func0000000000000001:
 func0000000000000026:
 	addi	a1, a1, -1
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000006c:
@@ -50,6 +50,6 @@ func000000000000006c:
 func0000000000000006:
 	addi	a1, a1, -1
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

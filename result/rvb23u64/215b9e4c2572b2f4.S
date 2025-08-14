@@ -36,8 +36,8 @@ func000000000000000a:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

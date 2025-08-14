@@ -55,12 +55,12 @@ func0000000000000094:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
-	blez	a0, .LBB5_2
+	sext.w	a1, a0
+	blez	a1, .LBB5_2
 	li	a0, 4
 	ret
 .LBB5_2:
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret

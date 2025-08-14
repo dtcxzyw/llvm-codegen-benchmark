@@ -13,7 +13,7 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	sltu	a0, a0, a2
 	czero.eqz	a2, a3, a1
 	czero.nez	a0, a0, a1
@@ -27,7 +27,7 @@ func0000000000000001:
 	ret
 
 func000000000000000b:
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	sltu	a0, a0, a2
 	czero.eqz	a2, a3, a1
 	czero.nez	a0, a0, a1

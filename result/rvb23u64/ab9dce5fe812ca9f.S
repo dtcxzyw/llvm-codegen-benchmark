@@ -9,8 +9,7 @@ func0000000000000004:
 	ret
 
 func000000000000001a:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 
@@ -59,8 +58,7 @@ func0000000000000012:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 

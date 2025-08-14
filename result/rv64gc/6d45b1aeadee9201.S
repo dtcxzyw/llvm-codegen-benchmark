@@ -17,7 +17,7 @@ func0000000000000021:
 func00000000000000c1:
 	sext.w	a1, a1
 	bnez	a1, .LBB2_2
-	slti	a0, a2, 0
+	srli	a0, a2, 63
 .LBB2_2:
 	ret
 

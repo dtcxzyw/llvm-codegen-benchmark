@@ -1,6 +1,5 @@
 func00000000000000c6:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -10,8 +9,7 @@ func00000000000000c6:
 	ret
 
 func00000000000000c8:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -22,8 +20,7 @@ func00000000000000c8:
 	ret
 
 func00000000000000cc:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -38,8 +35,7 @@ func0000000000000026:
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

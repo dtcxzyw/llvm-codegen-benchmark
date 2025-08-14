@@ -16,7 +16,7 @@ func000000000000008a:
 	srli	a2, a2, 32
 	seqz	a2, a2
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

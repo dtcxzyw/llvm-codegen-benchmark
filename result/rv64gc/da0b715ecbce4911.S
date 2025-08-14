@@ -20,8 +20,8 @@ func000000000000000a:
 
 func0000000000000006:
 	add	a0, a0, a1
-	subw	a2, a2, a0
-	slti	a0, a2, 0
+	sub	a2, a2, a0
+	srliw	a0, a2, 31
 	xori	a0, a0, 1
 	ret
 

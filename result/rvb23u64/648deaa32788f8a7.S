@@ -85,8 +85,7 @@ func0000000000000186:
 
 func000000000000018c:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	or	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1

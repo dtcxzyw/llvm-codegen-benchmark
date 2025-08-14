@@ -10,11 +10,11 @@ func0000000000000481:
 
 func0000000000001946:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	bltz	a0, .LBB1_2
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 .LBB1_2:
+	sext.w	a1, a1
 	sgtz	a0, a1
 	ret
 
@@ -65,11 +65,11 @@ func00000000000028c6:
 
 func00000000000028c1:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	beqz	a0, .LBB6_2
+	sext.w	a1, a1
 	sgtz	a0, a1
 	ret
 .LBB6_2:
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 

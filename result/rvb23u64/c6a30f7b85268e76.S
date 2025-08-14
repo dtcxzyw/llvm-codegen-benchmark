@@ -157,8 +157,8 @@ func000000000000014c:
 
 func00000000000000c6:
 	sub	a1, a1, a0
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000148:
@@ -223,8 +223,8 @@ func000000000000000a:
 
 func0000000000000146:
 	sub	a1, a1, a0
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func00000000000000a1:

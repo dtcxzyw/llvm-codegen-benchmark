@@ -34,7 +34,7 @@ func0000000000000006:
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB4_2
-	slti	a0, a2, 0
+	srli	a0, a2, 63
 .LBB4_2:
 	ret
 

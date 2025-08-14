@@ -37,7 +37,7 @@ func000000000000042a:
 	sltu	a1, a1, a2
 	zext.b	a0, a0
 	sub	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

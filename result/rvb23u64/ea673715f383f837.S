@@ -23,7 +23,7 @@ func0000000000000046:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	min	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000004c:

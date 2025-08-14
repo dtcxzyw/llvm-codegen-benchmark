@@ -33,8 +33,8 @@ func000000000000042a:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
 	flt.d	a1, fa5, fa0
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

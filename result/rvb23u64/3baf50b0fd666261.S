@@ -1,6 +1,6 @@
 func00000000000000e6:
 	fmv.d.x	fa5, zero
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	feq.d	a2, fa0, fa5
 	czero.nez	a2, a0, a2
 	and	a0, a0, a1

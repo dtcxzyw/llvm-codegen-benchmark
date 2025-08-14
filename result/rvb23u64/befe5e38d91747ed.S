@@ -117,7 +117,7 @@ func0000000000004218:
 	sltiu	a2, a2, 26
 	sltiu	a1, a1, 10
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

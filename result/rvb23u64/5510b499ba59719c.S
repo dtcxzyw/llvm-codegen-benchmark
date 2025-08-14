@@ -241,25 +241,24 @@ func0000000000000021:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
-	subw	a1, a1, a2
-	slti	a1, a1, 0
-	slti	a0, a0, 0
+	sub	a1, a1, a2
+	srliw	a1, a1, 31
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sub	a1, a1, a2
+	srliw	a1, a1, 31
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000146:
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sub	a1, a1, a2
+	srliw	a1, a1, 31
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

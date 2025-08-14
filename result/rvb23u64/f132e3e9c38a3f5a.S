@@ -37,8 +37,7 @@ func0000000000000081:
 
 func000000000000000a:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -57,8 +56,7 @@ func00000000000000ec:
 
 func000000000000004a:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -83,8 +81,7 @@ func00000000000000cc:
 
 func0000000000000006:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:
@@ -120,7 +117,6 @@ func0000000000000041:
 
 func0000000000000086:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 

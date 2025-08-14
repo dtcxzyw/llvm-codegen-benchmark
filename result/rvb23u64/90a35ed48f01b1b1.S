@@ -16,10 +16,9 @@ func000000000000008c:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	lui	a2, 496
+	srliw	a0, a0, 31
 	and	a1, a1, a2
-	slti	a0, a0, 0
 	binvi	a1, a1, 16
 	snez	a1, a1
 	xori	a0, a0, 1

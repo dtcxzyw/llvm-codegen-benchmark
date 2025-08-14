@@ -5,7 +5,7 @@ func0000000000000c26:
 	srai	a0, a0, 56
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

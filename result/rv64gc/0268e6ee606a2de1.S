@@ -50,11 +50,10 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16
+	srliw	a0, a0, 31
 	xor	a1, a1, a2
-	slti	a0, a0, 0
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

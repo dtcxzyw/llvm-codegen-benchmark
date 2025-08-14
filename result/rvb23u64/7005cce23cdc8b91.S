@@ -6,8 +6,7 @@ func0000000000001e06:
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000001e18:
@@ -31,8 +30,7 @@ func0000000000001e0a:
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

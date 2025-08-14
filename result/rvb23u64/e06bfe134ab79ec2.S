@@ -1,8 +1,7 @@
 func0000000000000026:
 	addi	a1, a1, -71
 	xor	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000061:
@@ -16,8 +15,7 @@ func0000000000000061:
 func0000000000000006:
 	addi	a1, a1, 1
 	xor	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000004:

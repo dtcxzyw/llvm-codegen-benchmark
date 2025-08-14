@@ -8,8 +8,8 @@ func0000000000000074:
 
 func0000000000000086:
 	zext.h	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000f4:
@@ -58,8 +58,8 @@ func00000000000000c8:
 
 func0000000000000006:
 	zext.h	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000002a:
@@ -161,8 +161,8 @@ func0000000000000088:
 
 func000000000000004a:
 	zext.h	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

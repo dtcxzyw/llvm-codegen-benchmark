@@ -12,7 +12,7 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	bseti	a1, zero, 63
 	sub	a0, a1, a0

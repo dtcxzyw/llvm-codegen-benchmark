@@ -1,9 +1,8 @@
 func00000000000000cc:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
+	and	a1, a1, a2
 	snez	a0, a0
-	slti	a2, a2, 0
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func00000000000000c6:
@@ -59,7 +58,7 @@ func0000000000000028:
 
 func0000000000000026:
 	sext.w	a2, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a2, a2, 1
 	seqz	a2, a2
 	and	a0, a0, a1

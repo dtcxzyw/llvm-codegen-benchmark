@@ -9,7 +9,7 @@ func000000000000000a:
 func0000000000000006:
 	fadd.d	fa5, fa0, fa1
 	fcvt.w.d	a0, fa5, rtz
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000000c:

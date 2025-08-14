@@ -14,8 +14,8 @@ func000000000000000a:
 	blt	a0, a1, .LBB1_2
 	li	a0, 8
 .LBB1_2:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

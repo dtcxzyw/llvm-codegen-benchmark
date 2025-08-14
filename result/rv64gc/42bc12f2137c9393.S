@@ -14,8 +14,8 @@ func000000000000002a:
 	mv	a2, a1
 .LBB0_4:
 	fcvt.w.s	a0, fa0, rtz
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

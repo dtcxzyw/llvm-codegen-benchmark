@@ -39,7 +39,7 @@ func0000000000000074:
 
 func0000000000000066:
 	addi	a2, a2, 8
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -110,7 +110,7 @@ func0000000000000054:
 
 func0000000000000046:
 	addi	a2, a2, -264
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -118,7 +118,7 @@ func0000000000000046:
 
 func000000000000004a:
 	addi	a2, a2, -264
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -134,7 +134,7 @@ func0000000000000078:
 
 func000000000000006a:
 	addi	a2, a2, 8
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

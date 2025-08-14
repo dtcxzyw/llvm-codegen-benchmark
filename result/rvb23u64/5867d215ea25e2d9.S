@@ -43,8 +43,8 @@ func000000000000000c:
 
 func000000000000004a:
 	sh1add	a0, a0, a0
-	slliw	a0, a0, 2
-	slti	a0, a0, 0
+	slli	a0, a0, 2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

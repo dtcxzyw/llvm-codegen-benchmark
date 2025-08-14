@@ -29,7 +29,7 @@ func000000000000408c:
 	zext.b	a1, a1
 	sltiu	a1, a1, 92
 	addi	a0, a0, -33
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	seqz	a0, a0
 	or	a1, a1, a2
 	or	a0, a0, a1

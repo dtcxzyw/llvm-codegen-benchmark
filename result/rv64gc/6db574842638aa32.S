@@ -15,11 +15,11 @@ func0000000000000186:
 	beqz	a1, .LBB1_2
 	li	a2, 1
 .LBB1_2:
-	sext.w	a2, a2
-	slti	a1, a2, 0
-	xor	a0, a0, a2
+	sext.w	a1, a2
+	srliw	a2, a2, 31
+	xor	a0, a0, a1
 	snez	a0, a0
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000021:

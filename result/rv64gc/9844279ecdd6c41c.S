@@ -10,7 +10,6 @@ func000000000000000a:
 	sext.w	a1, a1
 	remu	a0, a0, a1
 	srliw	a0, a0, 31
-	slli	a0, a0, 31
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 

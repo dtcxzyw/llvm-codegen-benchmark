@@ -7,7 +7,7 @@ func0000000000000084:
 func00000000000000aa:
 	add	a0, a0, a1
 	addi	a0, a0, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000008:
 func000000000000000a:
 	ori	a1, a1, -64
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

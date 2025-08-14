@@ -18,12 +18,12 @@ func0000000000000046:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
-	subw	a1, a1, a2
-	blt	a1, a0, .LBB2_2
-	mv	a1, a0
+	sext.w	a3, a0
+	subw	a0, a1, a2
+	blt	a0, a3, .LBB2_2
+	mv	a0, a3
 .LBB2_2:
-	slti	a0, a1, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000014a:

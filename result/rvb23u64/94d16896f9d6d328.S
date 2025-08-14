@@ -8,7 +8,7 @@ func00000000000001c4:
 
 func00000000000001c6:
 	slli	a2, a2, 3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a2, a2, -8
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1

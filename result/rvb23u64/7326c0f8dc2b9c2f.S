@@ -4,7 +4,7 @@ func0000000000000026:
 	sext.w	a1, a1
 	max	a1, a1, a2
 	max	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000061:

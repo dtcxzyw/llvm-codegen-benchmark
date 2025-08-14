@@ -48,7 +48,7 @@ func0000000000000298:
 	srai	a0, a0, 56
 	addi	a1, a1, -144
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

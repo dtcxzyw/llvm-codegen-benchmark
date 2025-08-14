@@ -1,8 +1,8 @@
 func0000000000000006:
 	fcvt.w.d	a0, fa1, rtz
 	fcvt.w.d	a1, fa0, rtz
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	ret
 
 func000000000000002a:

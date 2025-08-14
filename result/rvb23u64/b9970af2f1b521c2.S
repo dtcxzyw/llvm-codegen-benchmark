@@ -35,6 +35,6 @@ func0000000000000026:
 	slli	a1, a1, 2
 	sub	a0, a0, a1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

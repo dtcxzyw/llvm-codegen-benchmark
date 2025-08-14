@@ -6,7 +6,7 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	czero.eqz	a0, a0, a1

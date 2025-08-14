@@ -42,8 +42,7 @@ func000000000000014a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srliw	a2, a2, 31
-	slli	a2, a2, 31
-	seqz	a2, a2
+	xori	a2, a2, 1
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret

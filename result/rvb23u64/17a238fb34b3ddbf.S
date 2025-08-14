@@ -46,7 +46,7 @@ func0000000000000041:
 func000000000000006a:
 	sext.b	a1, a1
 	addiw	a2, a2, 3
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -73,7 +73,7 @@ func0000000000000004:
 func0000000000000026:
 	sext.b	a1, a1
 	addiw	a2, a2, -132
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

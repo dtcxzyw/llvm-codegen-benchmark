@@ -22,15 +22,14 @@ func0000000000000081:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	seqz	a0, a0
 	andn	a0, a0, a1
 	ret
 
 func000000000000002a:
 	sext.w	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	binvi	a1, a1, 14
 	snez	a1, a1
 	xori	a0, a0, 1

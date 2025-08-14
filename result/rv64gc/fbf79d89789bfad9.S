@@ -55,7 +55,7 @@ func00000000000000c6:
 
 func00000000000000c8:
 	sext.w	a1, a1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a2
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
@@ -64,7 +64,7 @@ func00000000000000c8:
 
 func00000000000000c4:
 	sext.w	a1, a1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a2
 	sltiu	a1, a1, -6
 	or	a0, a0, a1

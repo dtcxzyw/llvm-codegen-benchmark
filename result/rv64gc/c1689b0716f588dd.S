@@ -2,7 +2,7 @@ func000000000000004a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	add	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

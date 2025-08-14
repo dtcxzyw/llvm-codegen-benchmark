@@ -37,7 +37,7 @@ func0000000000000061:
 
 func00000000000001e6:
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

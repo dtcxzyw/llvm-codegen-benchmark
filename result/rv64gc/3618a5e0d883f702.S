@@ -24,7 +24,7 @@ func0000000000000502:
 	andi	a1, a1, 240
 	srai	a2, a2, 56
 	addi	a1, a1, -224
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	seqz	a1, a1
 	xori	a2, a2, 1
 	or	a0, a0, a1

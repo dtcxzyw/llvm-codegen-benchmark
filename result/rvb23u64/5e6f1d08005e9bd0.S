@@ -38,7 +38,7 @@ func000000000000000a:
 
 func0000000000000006:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

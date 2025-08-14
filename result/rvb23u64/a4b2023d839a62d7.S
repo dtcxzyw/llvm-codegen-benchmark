@@ -12,8 +12,8 @@ func00000000000008a6:
 	zext.b	a2, a2
 	sltiu	a2, a2, 3
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	slti	a0, a0, 0
+	sub	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000201:
@@ -30,7 +30,7 @@ func0000000000000286:
 	addi	a2, a2, -62
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	slti	a0, a0, 0
+	sub	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 

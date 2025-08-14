@@ -20,7 +20,7 @@ func0000000000000008:
 
 func0000000000000006:
 	andi	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	lui	a2, 1
 	slli	a1, a1, 4
 	addi	a2, a2, 1

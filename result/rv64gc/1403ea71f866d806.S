@@ -62,8 +62,7 @@ func0000000000000426:
 	beqz	a1, .LBB6_2
 	addi	a0, a2, -1
 .LBB6_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000541:

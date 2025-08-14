@@ -168,14 +168,14 @@ func000000000000002a:
 
 func0000000000000146:
 	add	a0, a0, a1
-	addiw	a0, a0, 1
-	slti	a0, a0, 0
+	addi	a0, a0, 1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000c6:
 	add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001a1:

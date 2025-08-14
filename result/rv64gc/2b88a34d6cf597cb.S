@@ -14,7 +14,7 @@ func000000000000000a:
 	mv	a0, a1
 	ret
 .LBB1_2:
-	slti	a0, a2, 0
+	srli	a0, a2, 63
 	addiw	a0, a0, 4
 	ret
 

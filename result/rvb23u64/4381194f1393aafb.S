@@ -20,8 +20,8 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	addiw	a0, a0, -69
-	slti	a0, a0, 0
+	addi	a0, a0, -69
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000001:
@@ -160,8 +160,8 @@ func0000000000000038:
 	ret
 
 func0000000000000106:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000002c:

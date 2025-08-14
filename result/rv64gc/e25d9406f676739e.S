@@ -64,7 +64,7 @@ func0000000000000314:
 
 func0000000000000114:
 	sltiu	a2, a2, 17
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

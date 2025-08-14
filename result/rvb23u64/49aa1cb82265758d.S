@@ -33,7 +33,7 @@ func0000000000000218:
 	sext.b	a1, a1
 	zext.b	a2, a2
 	addi	a2, a2, -65
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sltiu	a2, a2, 26
 	or	a0, a0, a1
 	or	a0, a0, a2

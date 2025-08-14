@@ -21,8 +21,7 @@ func0000000000000007:
 	ret
 
 func000000000000001a:
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	and	a1, a1, a3
 	bnez	a1, .LBB2_2
 	mv	a2, a0
@@ -31,8 +30,7 @@ func000000000000001a:
 	ret
 
 func0000000000000019:
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	and	a1, a1, a3
 	bnez	a1, .LBB3_2
 	mv	a2, a0
@@ -52,8 +50,7 @@ func0000000000000006:
 	ret
 
 func000000000000001b:
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	and	a1, a1, a3
 	bnez	a1, .LBB5_2
 	mv	a2, a0

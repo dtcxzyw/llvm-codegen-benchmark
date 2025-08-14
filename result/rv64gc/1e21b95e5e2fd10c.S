@@ -1,7 +1,7 @@
 func0000000000000146:
 	addiw	a2, a2, -1
 	addw	a0, a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a0, 31
 	blt	a0, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:
@@ -12,7 +12,7 @@ func0000000000000146:
 func0000000000000006:
 	addiw	a2, a2, -1
 	addw	a0, a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a0, 31
 	blt	a0, a2, .LBB1_2
 	mv	a0, a2
 .LBB1_2:

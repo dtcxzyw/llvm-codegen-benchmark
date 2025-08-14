@@ -43,7 +43,7 @@ func0000000000000008:
 func0000000000000046:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000024:
@@ -62,7 +62,7 @@ func0000000000000021:
 func0000000000000006:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000006c:
@@ -75,7 +75,7 @@ func000000000000006c:
 func000000000000000a:
 	add	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

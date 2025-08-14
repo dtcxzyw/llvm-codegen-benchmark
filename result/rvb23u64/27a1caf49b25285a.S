@@ -42,18 +42,16 @@ func0000000000000d8c:
 	ret
 
 func00000000000000c4:
-	sext.w	a0, a0
 	addi	a1, a1, -1
 	sltiu	a1, a1, 31
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func0000000000000cc1:
-	sext.w	a0, a0
 	addi	a1, a1, -1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

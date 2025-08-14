@@ -26,8 +26,8 @@ func0000000000000004:
 func00000000000001aa:
 	mul	a0, a0, a1
 	sh3add	a0, a0, a0
-	slliw	a0, a0, 2
-	slti	a0, a0, 0
+	slli	a0, a0, 2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -41,8 +41,7 @@ func00000000000000aa:
 func0000000000000006:
 	mul	a0, a0, a1
 	sh1add	a0, a0, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000a:

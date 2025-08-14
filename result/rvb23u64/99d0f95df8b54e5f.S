@@ -3,7 +3,7 @@
 func000000000000001b:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	minu	a2, a2, a3
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

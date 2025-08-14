@@ -74,7 +74,7 @@ func0000000000000290:
 	zext.h	a2, a0
 	zext.h	a1, a1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	sltu	a1, a1, a2
 	or	a0, a0, a1
@@ -97,7 +97,7 @@ func000000000000030c:
 	zext.h	a0, a0
 	xor	a0, a0, a1
 	snez	a0, a0
-	slti	a1, a2, 0
-	or	a0, a0, a1
+	srli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 

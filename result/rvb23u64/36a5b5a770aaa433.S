@@ -8,7 +8,7 @@ func0000000000000074:
 func000000000000002a:
 	srli	a2, a2, 3
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

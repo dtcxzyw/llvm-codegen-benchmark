@@ -35,8 +35,7 @@ func0000000000000026:
 	beq	a3, a4, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

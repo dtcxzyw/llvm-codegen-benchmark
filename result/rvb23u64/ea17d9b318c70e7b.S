@@ -1,9 +1,8 @@
 func0000000000000006:
-	sext.w	a0, a0
 	andi	a1, a1, 1
 	andi	a3, a2, 3
+	srliw	a0, a0, 31
 	czero.eqz	a1, a2, a1
-	slti	a0, a0, 0
 	or	a1, a1, a3
 	andi	a2, a1, 12
 	czero.eqz	a0, a1, a0

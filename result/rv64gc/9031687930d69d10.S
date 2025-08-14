@@ -34,7 +34,7 @@ func0000000000000084:
 	ret
 
 func00000000000000cc:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	snez	a1, a1
 	or	a1, a1, a2
 	or	a0, a0, a1
@@ -42,7 +42,7 @@ func00000000000000cc:
 
 func00000000000000c6:
 	or	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

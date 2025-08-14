@@ -1,5 +1,5 @@
 func0000000000000004:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

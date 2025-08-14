@@ -18,7 +18,7 @@ func000000000000008c:
 func000000000000014c:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1

@@ -10,8 +10,8 @@ func000000000000052a:
 	czero.nez	a2, a2, a1
 	czero.eqz	a1, a4, a1
 	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -38,7 +38,7 @@ func000000000000070a:
 	srai	a0, a0, 48
 	srli	a2, a2, 48
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

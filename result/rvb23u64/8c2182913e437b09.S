@@ -3,7 +3,7 @@ func0000000000000061:
 	ret
 
 func0000000000000046:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	ret
 
@@ -14,7 +14,7 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0
 	ret
 

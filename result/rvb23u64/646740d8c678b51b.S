@@ -38,8 +38,8 @@ func000000000000068c:
 	ret
 
 func000000000000014a:
-	addiw	a2, a2, -8
-	slti	a2, a2, 0
+	addi	a2, a2, -8
+	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	andn	a0, a0, a2
 	ret

@@ -31,7 +31,7 @@ func000000000000000a:
 	li	a0, 8
 .LBB3_2:
 	addi	a0, a0, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

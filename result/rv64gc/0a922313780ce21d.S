@@ -55,7 +55,7 @@ func0000000000000301:
 	ret
 
 func00000000000000c1:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	or	a0, a0, a2
@@ -103,7 +103,7 @@ func0000000000000029:
 	ret
 
 func00000000000000c8:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret

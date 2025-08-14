@@ -92,18 +92,16 @@ func0000000000000c2c:
 	ret
 
 func0000000000000486:
-	sext.w	a0, a0
 	addi	a1, a1, -128
 	sltiu	a1, a1, -101
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
 func0000000000000c26:
-	sext.w	a0, a0
 	addi	a1, a1, -8
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

@@ -46,7 +46,7 @@ func0000000000000181:
 	ret
 
 func00000000000000cc:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

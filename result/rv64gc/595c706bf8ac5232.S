@@ -142,7 +142,7 @@ func0000000000000026:
 	srai	a0, a0, 48
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -200,7 +200,7 @@ func0000000000000086:
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -210,7 +210,7 @@ func00000000000000c6:
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

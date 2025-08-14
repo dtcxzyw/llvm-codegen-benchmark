@@ -32,8 +32,8 @@ func000000000000408c:
 	addi	a0, a0, -33
 	seqz	a0, a0
 	or	a0, a0, a1
-	slti	a1, a2, 0
-	or	a0, a0, a1
+	srli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func0000000000001202:

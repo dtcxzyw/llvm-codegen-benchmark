@@ -46,7 +46,7 @@ func000000000000000a:
 	addi	a2, a2, -1536
 	mul	a0, a0, a2
 	add.uw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -124,7 +124,7 @@ func000000000000020a:
 	sext.w	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

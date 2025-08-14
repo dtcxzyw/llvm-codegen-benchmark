@@ -28,7 +28,7 @@ func000000000000004a:
 func000000000000000a:
 	sub	a1, a1, a2
 	divu	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

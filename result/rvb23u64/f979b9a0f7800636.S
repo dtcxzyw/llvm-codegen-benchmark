@@ -32,17 +32,16 @@ func0000000000000302:
 
 func000000000000030c:
 	sext.w	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
 	slti	a2, a2, 1
-	slti	a1, a1, 0
-	or	a0, a0, a2
+	srliw	a1, a1, 31
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

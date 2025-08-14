@@ -47,7 +47,7 @@ func0000000000000088:
 func000000000000002a:
 	zext.h	a1, a1
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

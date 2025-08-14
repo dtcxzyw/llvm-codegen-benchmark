@@ -1,7 +1,7 @@
 func000000000000014c:
 	bseti	a2, zero, 62
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1

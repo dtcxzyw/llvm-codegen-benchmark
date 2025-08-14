@@ -6,8 +6,8 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	not	a2, a2
-	bexti	a2, a2, 31
+	srliw	a2, a2, 31
+	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

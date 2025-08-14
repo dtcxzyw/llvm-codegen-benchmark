@@ -136,7 +136,7 @@ func0000000000000086:
 	sext.h	a0, a0
 	zext.b	a1, a1
 	sltiu	a1, a1, 7
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -150,7 +150,7 @@ func0000000000000094:
 func000000000000014c:
 	zext.h	a0, a0
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, -5
 	xori	a1, a1, 1
 	snez	a0, a0

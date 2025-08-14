@@ -33,8 +33,8 @@ func0000000000000058:
 	ret
 
 func0000000000000194:
-	slti	a1, a1, 0
-	slti	a0, a0, 0
+	srli	a1, a1, 63
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

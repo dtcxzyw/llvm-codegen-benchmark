@@ -69,7 +69,7 @@ func00000000000000cc:
 	slli	a2, a2, 31
 	and	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -89,7 +89,7 @@ func000000000000008c:
 
 func000000000000014c:
 	andi	a1, a1, 5
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -5
 	snez	a1, a1
 	xori	a0, a0, 1

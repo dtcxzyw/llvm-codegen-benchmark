@@ -30,8 +30,7 @@ func0000000000000010:
 	ret
 
 func000000000000000c:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	or	a1, a1, a2
 	andi	a1, a1, 1
 	addi	a1, a1, -1

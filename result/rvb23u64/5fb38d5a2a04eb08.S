@@ -18,7 +18,7 @@ func0000000000000006:
 	ret
 
 func0000000000000019:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	xori	a1, a1, -2048
 	czero.nez	a1, a1, a2
 	xori	a1, a1, -2048
@@ -34,7 +34,7 @@ func0000000000000029:
 	ret
 
 func0000000000000018:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	czero.nez	a1, a1, a2
 	sub	a0, a0, a1
 	ret

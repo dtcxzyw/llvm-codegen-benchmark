@@ -32,8 +32,7 @@ func0000000000000006:
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func000000000000000a:
@@ -41,8 +40,7 @@ func000000000000000a:
 	bnez	a0, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

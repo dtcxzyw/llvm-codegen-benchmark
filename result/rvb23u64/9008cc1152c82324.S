@@ -46,7 +46,7 @@ func0000000000000023:
 	ret
 
 func000000000000001b:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -54,7 +54,7 @@ func000000000000001b:
 	ret
 
 func0000000000000018:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

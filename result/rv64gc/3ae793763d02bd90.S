@@ -18,8 +18,8 @@ func0000000000000004:
 func0000000000000106:
 	add	a0, a0, a2
 	sub	a1, a1, a0
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000604:
@@ -51,7 +51,7 @@ func000000000000042a:
 	sub	a2, a2, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

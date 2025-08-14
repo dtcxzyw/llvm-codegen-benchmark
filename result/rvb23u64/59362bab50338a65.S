@@ -37,16 +37,16 @@ func0000000000000486:
 	sext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000686:
 	sext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 
 func000000000000028a:
@@ -78,7 +78,7 @@ func0000000000000086:
 	sext.b	a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 

@@ -1,11 +1,10 @@
 func000000000000000d:
-	sext.w	a0, a0
+	sext.w	a1, a0
 	li	a2, 15
-	mv	a1, a0
-	bltu	a0, a2, .LBB0_2
+	bltu	a1, a2, .LBB0_2
 	li	a1, 15
 .LBB0_2:
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

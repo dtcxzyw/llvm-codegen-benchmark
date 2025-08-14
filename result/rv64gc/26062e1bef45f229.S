@@ -9,7 +9,7 @@ func0000000000000001:
 func000000000000000a:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	xori	a0, a0, 1
@@ -18,7 +18,7 @@ func000000000000000a:
 func0000000000000006:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	ret

@@ -33,7 +33,7 @@ func0000000000000008:
 
 func0000000000000050:
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	ret

@@ -20,9 +20,9 @@ func0000000000000041:
 
 func0000000000000046:
 	sext.w	a2, a2
-	sext.w	a0, a0
-	xor	a2, a2, a0
-	slti	a0, a0, 0
+	sext.w	a3, a0
+	srliw	a0, a0, 31
+	xor	a2, a2, a3
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -30,9 +30,9 @@ func0000000000000046:
 
 func0000000000000306:
 	sext.w	a2, a2
-	sext.w	a0, a0
-	xor	a2, a2, a0
-	slti	a0, a0, 0
+	sext.w	a3, a0
+	srliw	a0, a0, 31
+	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -5,7 +5,7 @@ func0000000000000046:
 	bltu	a0, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -32,7 +32,7 @@ func0000000000000066:
 	bltu	a0, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

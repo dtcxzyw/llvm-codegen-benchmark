@@ -17,8 +17,7 @@ func0000000000000185:
 	ret
 
 func0000000000000198:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	neg	a2, a2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 100
@@ -26,8 +25,7 @@ func0000000000000198:
 	ret
 
 func000000000000019b:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	neg	a2, a2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 100

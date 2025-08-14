@@ -52,8 +52,8 @@ func000000000000020a:
 func0000000000000206:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

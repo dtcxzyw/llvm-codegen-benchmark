@@ -15,7 +15,7 @@ func000000000000002a:
 	addi	a0, a0, -1
 	seqz	a0, a0
 	xori	a0, a0, 3
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 1

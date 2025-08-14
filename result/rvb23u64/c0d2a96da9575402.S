@@ -37,7 +37,7 @@ func0000000000000306:
 	addi	a2, a2, -2047
 	snez	a2, a2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

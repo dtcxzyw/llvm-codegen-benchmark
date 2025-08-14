@@ -8,7 +8,7 @@ func0000000000000284:
 func00000000000000c4:
 	addiw	a1, a1, -13
 	sltiu	a1, a1, -5
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

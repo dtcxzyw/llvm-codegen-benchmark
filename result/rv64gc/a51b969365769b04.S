@@ -47,7 +47,7 @@ func0000000000000006:
 	blt	a2, a1, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000007:
 	sll	a0, a0, a4
 	addi	a4, a4, -64
 	srl	a3, a3, a5
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	or	a1, a1, a3
 	czero.nez	a0, a0, a4
 	czero.eqz	a1, a1, a4
@@ -24,7 +24,7 @@ func0000000000000004:
 	sll	a0, a0, a4
 	addi	a4, a4, -64
 	srl	a3, a3, a5
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	or	a1, a1, a3
 	czero.nez	a0, a0, a4
 	czero.eqz	a1, a1, a4
@@ -41,7 +41,7 @@ func0000000000000006:
 	sll	a0, a0, a4
 	addi	a4, a4, -64
 	srl	a3, a3, a5
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	or	a1, a1, a3
 	czero.nez	a0, a0, a4
 	czero.eqz	a1, a1, a4
@@ -58,7 +58,7 @@ func0000000000000005:
 	sll	a0, a0, a4
 	addi	a4, a4, -64
 	srl	a3, a3, a5
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	or	a1, a1, a3
 	czero.nez	a0, a0, a4
 	czero.eqz	a1, a1, a4

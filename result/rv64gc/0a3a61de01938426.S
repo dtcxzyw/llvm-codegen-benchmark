@@ -61,7 +61,7 @@ func0000000000000428:
 
 func000000000000002a:
 	addi	a1, a0, -1
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	xor	a0, a0, a1
 	sltu	a0, a1, a0
 	not	a1, a2

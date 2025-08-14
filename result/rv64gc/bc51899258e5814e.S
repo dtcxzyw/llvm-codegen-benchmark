@@ -13,8 +13,7 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	ret

@@ -14,7 +14,7 @@ func00000000000000a6:
 	li	a2, 4
 	czero.nez	a0, a2, a0
 	sh2add	a0, a1, a0
-	addiw	a0, a0, 8
-	slti	a0, a0, 0
+	addi	a0, a0, 8
+	srliw	a0, a0, 31
 	ret
 

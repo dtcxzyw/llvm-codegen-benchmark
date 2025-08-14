@@ -36,7 +36,7 @@ func00000000000000a8:
 func000000000000000a:
 	sub	a0, a0, a1
 	addi	a0, a0, -500
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

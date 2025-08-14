@@ -43,13 +43,12 @@ func0000000000000181:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 4
 	li	a3, -9
+	srliw	a0, a0, 31
 	czero.eqz	a2, a2, a1
 	czero.eqz	a1, a3, a1
-	slti	a0, a0, 0
 	addiw	a2, a2, 83
 	addi	a1, a1, 78
 	czero.nez	a2, a2, a0

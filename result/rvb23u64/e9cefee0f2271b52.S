@@ -46,7 +46,7 @@ func0000000000000544:
 	sext.b	a0, a0
 	addiw	a1, a1, -4
 	sltiu	a1, a1, 3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -55,7 +55,7 @@ func000000000000054c:
 	sext.b	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

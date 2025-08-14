@@ -29,7 +29,7 @@ func000000000000002a:
 	addi	a0, a0, -1
 	andi	a0, a0, 676
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

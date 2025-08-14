@@ -45,7 +45,7 @@ func0000000000000301:
 
 func000000000000018a:
 	bexti	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -70,7 +70,7 @@ func000000000000028c:
 func0000000000000026:
 	andi	a1, a1, 6
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

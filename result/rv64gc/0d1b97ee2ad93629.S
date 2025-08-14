@@ -5,8 +5,7 @@ func000000000000000a:
 	srai	a2, a2, 63
 	and	a1, a1, a2
 .LBB0_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

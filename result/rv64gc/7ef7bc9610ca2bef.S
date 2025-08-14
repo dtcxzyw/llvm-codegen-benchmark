@@ -12,8 +12,7 @@ func00000000000001a6:
 	bnez	a0, .LBB1_2
 	addi	a1, a2, 1
 .LBB1_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000186:
@@ -21,8 +20,7 @@ func0000000000000186:
 	bnez	a0, .LBB2_2
 	addi	a1, a2, 1
 .LBB2_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000086:
@@ -30,8 +28,7 @@ func0000000000000086:
 	bnez	a0, .LBB3_2
 	addi	a1, a2, 1
 .LBB3_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func00000000000001c6:
@@ -39,8 +36,7 @@ func00000000000001c6:
 	bnez	a0, .LBB4_2
 	addi	a1, a2, 1
 .LBB4_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000181:

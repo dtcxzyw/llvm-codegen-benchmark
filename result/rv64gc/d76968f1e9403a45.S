@@ -29,12 +29,12 @@ func0000000000000148:
 func0000000000000006:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	subw	a1, a2, a1
-	slti	a0, a1, 0
+	subw	a0, a2, a1
+	srli	a0, a0, 63
 	ret
 .LBB2_2:
-	subw	a1, a1, a2
-	slti	a0, a1, 0
+	subw	a0, a1, a2
+	srli	a0, a0, 63
 	ret
 
 func00000000000000a6:

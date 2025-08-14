@@ -22,7 +22,7 @@ func000000000000028a:
 	sext.h	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

@@ -1,18 +1,18 @@
 func00000000000000ca:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a2, a0, 0
-	slt	a0, a0, a1
-	andn	a0, a0, a2
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	slt	a1, a2, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000002a:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a2, a0, 0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	andn	a0, a0, a2
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	xor	a1, a1, a2
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -27,9 +27,9 @@ func000000000000018c:
 
 func00000000000020ca:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a2, a0, 0
-	slt	a0, a0, a1
-	andn	a0, a0, a2
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	slt	a1, a2, a1
+	andn	a0, a1, a0
 	ret
 

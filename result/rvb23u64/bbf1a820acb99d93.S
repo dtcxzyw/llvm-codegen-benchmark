@@ -11,9 +11,8 @@ func000000000000194a:
 	ret
 
 func0000000000000426:
-	sext.w	a1, a1
+	srliw	a1, a1, 31
 	addiw	a0, a0, -115
-	slti	a1, a1, 0
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret

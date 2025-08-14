@@ -22,7 +22,7 @@ func0000000000000001:
 
 func0000000000000046:
 	addi	a1, a1, 7
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -37,7 +37,7 @@ func0000000000000021:
 
 func0000000000000026:
 	addi	a1, a1, 52
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

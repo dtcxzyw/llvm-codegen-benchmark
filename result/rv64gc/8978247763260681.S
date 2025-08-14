@@ -1,6 +1,6 @@
 func00000000000000c1:
 	beqz	a1, .LBB0_2
-	slti	a0, a1, 0
+	srli	a0, a1, 63
 .LBB0_2:
 	ret
 

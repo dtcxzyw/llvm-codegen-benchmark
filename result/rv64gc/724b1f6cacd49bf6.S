@@ -36,7 +36,7 @@ func00000000000000cc:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	srai	a1, a1, 48
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

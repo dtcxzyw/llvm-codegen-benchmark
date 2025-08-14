@@ -1,12 +1,12 @@
 func0000000000000142:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	feq.d	a1, fa0, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000014e:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1

@@ -2,8 +2,7 @@ func0000000000000186:
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000198:
@@ -19,8 +18,7 @@ func000000000000018a:
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -87,8 +85,8 @@ func00000000000001c6:
 	lui	a2, 4
 	addi	a2, a2, 423
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000c:
@@ -148,8 +146,7 @@ func0000000000000004:
 func000000000000002a:
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -164,8 +161,7 @@ func0000000000000101:
 func0000000000000106:
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000ac:
@@ -240,8 +236,8 @@ func00000000000001ec:
 func00000000000001a6:
 	li	a2, 75
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001a4:
@@ -260,8 +256,8 @@ func0000000000000088:
 
 func0000000000000086:
 	sh1add	a1, a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001e1:

@@ -1,6 +1,6 @@
 func00000000000000c1:
-	subw	a1, a1, a2
-	slti	a2, a1, 0
+	sub	a1, a1, a2
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func00000000000000c1:
 	ret
 
 func00000000000000ca:
-	subw	a1, a1, a2
-	slti	a2, a1, 0
+	sub	a1, a1, a2
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	lui	a2, 10
@@ -21,8 +21,8 @@ func00000000000000ca:
 	ret
 
 func00000000000004c1:
-	subw	a1, a1, a2
-	slti	a2, a1, 0
+	sub	a1, a1, a2
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -31,8 +31,8 @@ func00000000000004c1:
 	ret
 
 func00000000000004ca:
-	subw	a1, a1, a2
-	slti	a2, a1, 0
+	sub	a1, a1, a2
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

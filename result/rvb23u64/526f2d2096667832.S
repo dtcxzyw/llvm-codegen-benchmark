@@ -1,6 +1,6 @@
 func00000000000000c6:
 	slt	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func00000000000000a1:
 
 func0000000000000086:
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

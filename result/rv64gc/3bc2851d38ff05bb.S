@@ -29,7 +29,7 @@ func000000000000022a:
 	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -171,7 +171,7 @@ func000000000000020a:
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

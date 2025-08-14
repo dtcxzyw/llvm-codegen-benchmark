@@ -6,8 +6,8 @@ func000000000000008c:
 	addi	a0, a0, -95
 	seqz	a0, a0
 	or	a0, a0, a1
-	slti	a1, a3, 0
-	or	a0, a0, a1
+	srli	a3, a3, 63
+	or	a0, a0, a3
 	ret
 
 func0000000000000082:

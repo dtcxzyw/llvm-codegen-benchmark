@@ -33,9 +33,8 @@ func0000000000000002:
 
 func0000000000000015:
 	andi	a0, a0, 1
-	sext.w	a1, a1
+	srliw	a1, a1, 31
 	lui	a2, 131072
-	slti	a1, a1, 0
 	czero.eqz	a1, a2, a1
 	li	a2, 576
 	czero.nez	a0, a2, a0

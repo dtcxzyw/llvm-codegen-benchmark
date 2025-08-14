@@ -20,11 +20,10 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a0
-	andi	a0, a0, 254
-	addi	a0, a0, -6
-	snez	a0, a0
-	slti	a1, a1, 0
+	andi	a1, a0, 254
+	addi	a1, a1, -6
+	snez	a1, a1
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

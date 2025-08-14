@@ -21,15 +21,15 @@ func00000000000002a6:
 
 func000000000000020a:
 	add	a0, a0, a1
-	subw	a2, a2, a0
-	slti	a0, a2, 0
+	sub	a2, a2, a0
+	srliw	a0, a2, 31
 	ret
 
 func0000000000000006:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -4
-	slti	a0, a0, 0
+	addi	a0, a0, -4
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000c:

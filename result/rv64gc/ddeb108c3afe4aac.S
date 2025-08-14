@@ -77,12 +77,11 @@ func0000000000000184:
 
 func000000000000014c:
 	zext.b	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	snez	a1, a1
+	srliw	a2, a2, 31
 	not	a2, a2
-	and	a0, a0, a1
 	and	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000081:

@@ -6,9 +6,8 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a0
-	mulw	a0, a0, a1
-	slti	a1, a2, 0
-	czero.nez	a0, a0, a1
+	mulw	a1, a0, a1
+	srliw	a0, a0, 31
+	czero.nez	a0, a1, a0
 	ret
 

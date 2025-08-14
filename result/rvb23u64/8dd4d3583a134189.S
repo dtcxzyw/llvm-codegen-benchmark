@@ -69,7 +69,7 @@ func0000000000006282:
 
 func0000000000002282:
 	sltiu	a2, a2, 17
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	andn	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -105,7 +105,7 @@ func000000000000002a:
 	ret
 
 func00000000000000c6:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	slt	a0, a1, a0

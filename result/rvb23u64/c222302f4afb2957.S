@@ -17,7 +17,7 @@ func0000000000000006:
 	sext.h	a0, a0
 	andi	a1, a1, 1
 	slli	a1, a1, 8
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	ret
 

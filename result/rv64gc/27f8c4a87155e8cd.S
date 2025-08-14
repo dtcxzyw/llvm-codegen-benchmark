@@ -52,8 +52,8 @@ func0000000000000008:
 func000000000000000a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
-	slti	a0, a1, 0
-	addiw	a0, a0, 48
+	srli	a1, a1, 63
+	addiw	a0, a1, 48
 	ret
 .LBB4_2:
 	li	a0, 46

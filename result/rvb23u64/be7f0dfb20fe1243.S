@@ -4,8 +4,7 @@ func000000000000002a:
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -15,7 +14,6 @@ func0000000000000026:
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 

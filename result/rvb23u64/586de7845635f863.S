@@ -1,6 +1,6 @@
 func000000000000004a:
-	not	a0, a0
-	bexti	a0, a0, 63
+	srli	a0, a0, 63
+	xori	a0, a0, 1
 	ret
 
 func0000000000000046:

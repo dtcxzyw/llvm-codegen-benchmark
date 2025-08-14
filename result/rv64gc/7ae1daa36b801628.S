@@ -21,8 +21,7 @@ func0000000000000002:
 	ret
 
 func0000000000000014:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xor	a0, a0, a1
 	not	a0, a0
 	andi	a0, a0, 1

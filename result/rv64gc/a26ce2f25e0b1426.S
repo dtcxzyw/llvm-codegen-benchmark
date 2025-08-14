@@ -31,10 +31,9 @@ func000000000000302c:
 	ret
 
 func00000000000030cc:
-	sext.w	a1, a1
 	or	a0, a0, a2
 	zext.b	a0, a0
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

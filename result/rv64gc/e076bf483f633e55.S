@@ -80,8 +80,7 @@ func0000000000000141:
 func00000000000000c1:
 	sext.w	a1, a1
 	beqz	a1, .LBB9_2
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 .LBB9_2:
 	ret
 

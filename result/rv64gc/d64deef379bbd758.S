@@ -15,12 +15,12 @@ func00000000000000a6:
 	slli	a1, a1, 2
 	bnez	a0, .LBB1_2
 	li	a0, 12
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 .LBB1_2:
 	li	a0, 8
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

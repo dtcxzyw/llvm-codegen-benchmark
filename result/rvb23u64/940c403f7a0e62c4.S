@@ -1,6 +1,6 @@
 func0000000000000001:
-	not	a1, a1
-	bexti	a1, a1, 31
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
 	and	a0, a0, a1
 	li	a1, 20
 	czero.eqz	a0, a1, a0

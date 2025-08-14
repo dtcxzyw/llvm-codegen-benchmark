@@ -9,8 +9,7 @@ func0000000000000087:
 
 func0000000000000319:
 	and	a2, a2, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

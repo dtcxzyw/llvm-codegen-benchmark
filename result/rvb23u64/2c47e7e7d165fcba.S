@@ -3,9 +3,9 @@ func000000000000008c:
 	zext.b	a0, a0
 	or	a1, a1, a2
 	addi	a0, a0, -95
-	slti	a2, a3, 0
+	srli	a3, a3, 63
 	seqz	a0, a0
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

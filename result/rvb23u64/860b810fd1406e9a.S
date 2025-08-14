@@ -4,7 +4,7 @@ func0000000000000024:
 	ret
 
 func0000000000000141:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a1, a1, -2
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 2
@@ -103,7 +103,7 @@ func000000000000002a:
 	ret
 
 func00000000000000c6:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	slt	a0, a1, a0
 	ret

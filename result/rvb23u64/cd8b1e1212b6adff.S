@@ -50,8 +50,8 @@ func0000000000000081:
 func000000000000008a:
 	li	a2, -12
 	mul	a0, a0, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -103,7 +103,7 @@ func0000000000000086:
 	lui	a2, 1048555
 	addi	a2, a2, -384
 	mul	a0, a0, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

@@ -97,8 +97,8 @@ func0000000000000081:
 
 func000000000000002a:
 	zext.b	a0, a0
-	addiw	a1, a1, -1
-	slti	a1, a1, 0
+	addi	a1, a1, -1
+	srliw	a1, a1, 31
 	addi	a0, a0, -62
 	not	a1, a1
 	seqz	a0, a0

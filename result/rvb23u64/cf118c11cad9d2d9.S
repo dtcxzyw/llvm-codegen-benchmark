@@ -2,7 +2,7 @@ func0000000000000726:
 	sext.b	a0, a0
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	sext.w	a2, a1
 	negw	a1, a1
 	czero.nez	a2, a2, a0

@@ -15,7 +15,7 @@ func000000000000002a:
 func0000000000000026:
 	sub	a2, a2, a1
 	addi	a2, a2, 1
-	mulw	a0, a0, a2
-	slti	a0, a0, 0
+	mul	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 

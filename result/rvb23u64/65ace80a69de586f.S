@@ -11,7 +11,7 @@ func0000000000000019:
 	addi	a3, a3, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -30,7 +30,7 @@ func000000000000001b:
 	addi	a3, a3, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -50,7 +50,7 @@ func0000000000000018:
 	slli	a3, a3, 11
 	mul	a2, a2, a3
 	sub	a1, a1, a2
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

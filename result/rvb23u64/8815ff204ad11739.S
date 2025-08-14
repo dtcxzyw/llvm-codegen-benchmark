@@ -41,8 +41,8 @@ func0000000000000206:
 	lui	a2, 233017
 	addi	a2, a2, -455
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000221:
@@ -60,8 +60,8 @@ func0000000000000226:
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000020a:
@@ -69,8 +69,8 @@ func000000000000020a:
 	lui	a2, 748983
 	addi	a2, a2, -585
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -1,5 +1,5 @@
 func000000000000001a:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -14,14 +14,14 @@ func0000000000000063:
 	ret
 
 func0000000000000018:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000019:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000010:
 	ret
 
 func000000000000001b:
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1

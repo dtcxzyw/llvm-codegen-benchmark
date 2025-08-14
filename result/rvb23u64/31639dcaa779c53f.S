@@ -20,7 +20,7 @@ func0000000000000021:
 
 func0000000000000006:
 	slli	a1, a1, 1
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
@@ -28,7 +28,7 @@ func0000000000000006:
 
 func0000000000000026:
 	slli	a1, a1, 2
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

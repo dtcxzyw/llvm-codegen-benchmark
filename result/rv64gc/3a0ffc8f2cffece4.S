@@ -9,7 +9,7 @@ func0000000000000302:
 func0000000000000182:
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

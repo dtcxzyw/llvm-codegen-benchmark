@@ -45,7 +45,7 @@ func0000000000000581:
 func0000000000000146:
 	subw	a1, a1, a2
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

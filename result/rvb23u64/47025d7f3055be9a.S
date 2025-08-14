@@ -1,9 +1,9 @@
 func00000000000000ca:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a2, a1, 0
-	slt	a0, a1, a0
-	andn	a0, a0, a2
+	sext.w	a2, a1
+	srliw	a1, a1, 31
+	slt	a0, a2, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -17,10 +17,10 @@ func000000000000002c:
 
 func0000000000000146:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a2, a1, 0
-	xori	a2, a2, 1
-	slt	a0, a1, a0
-	and	a0, a0, a2
+	sext.w	a2, a1
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
+	slt	a0, a2, a0
+	and	a0, a0, a1
 	ret
 

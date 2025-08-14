@@ -1,6 +1,5 @@
 func000000000000000c:
-	sext.w	a2, a0
-	slti	a2, a2, 0
+	srliw	a2, a0, 31
 	or	a1, a1, a2
 	slli	a1, a1, 63
 	srai	a1, a1, 63

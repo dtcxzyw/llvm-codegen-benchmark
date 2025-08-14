@@ -26,10 +26,9 @@ func0000000000000504:
 	ret
 
 func0000000000000e8a:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	srliw	a0, a0, 31
 	srli	a1, a1, 31
-	slti	a0, a0, 0
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -77,7 +76,7 @@ func0000000000000d8c:
 func00000000000000cc:
 	sext.w	a0, a0
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

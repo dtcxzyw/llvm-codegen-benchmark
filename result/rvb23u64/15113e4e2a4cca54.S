@@ -1,10 +1,9 @@
 func0000000000006046:
-	sext.w	a0, a0
 	addi	a2, a2, -255
 	seqz	a1, a1
 	snez	a2, a2
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

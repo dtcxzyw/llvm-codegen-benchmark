@@ -25,15 +25,13 @@ func0000000000000026:
 	bne	a3, a4, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 .LBB1_3:
 	mv	a2, a1
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	sext.w	a1, a2
-	slti	a0, a1, 0
+	srliw	a0, a2, 31
 	ret
 
 func00000000000000ca:
@@ -42,16 +40,14 @@ func00000000000000ca:
 	bgtz	a3, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 .LBB2_3:
 	mv	a2, a1
 	bnez	a0, .LBB2_2
 .LBB2_4:
-	sext.w	a1, a2
-	slti	a0, a1, 0
+	srliw	a0, a2, 31
 	xori	a0, a0, 1
 	ret
 

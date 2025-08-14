@@ -89,7 +89,7 @@ func000000000000004a:
 	bnez	a2, .LBB10_2
 	mv	a0, a1
 .LBB10_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

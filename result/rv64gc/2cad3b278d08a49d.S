@@ -27,8 +27,7 @@ func0000000000000026:
 	beq	a4, a3, .LBB2_2
 	sub	a0, a1, a2
 .LBB2_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000084:

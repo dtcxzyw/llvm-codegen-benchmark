@@ -4,7 +4,7 @@ func0000000000000021:
 	ret
 
 func00000000000000ca:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -12,7 +12,7 @@ func00000000000000ca:
 	ret
 
 func00000000000000d4:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -74,7 +74,7 @@ func0000000000000038:
 	ret
 
 func00000000000000c1:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -128,7 +128,7 @@ func000000000000008a:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -143,7 +143,7 @@ func0000000000000146:
 func000000000000002a:
 	czero.nez	a0, a0, a1
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -166,7 +166,7 @@ func000000000000014a:
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

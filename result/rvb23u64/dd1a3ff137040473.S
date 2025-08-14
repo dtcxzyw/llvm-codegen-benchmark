@@ -45,7 +45,7 @@ func0000000000000014:
 
 func000000000000000a:
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	addiw	a0, a0, 4
 	ret

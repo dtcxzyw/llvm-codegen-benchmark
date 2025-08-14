@@ -14,7 +14,7 @@ func0000000000000108:
 	ret
 
 func0000000000000141:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1

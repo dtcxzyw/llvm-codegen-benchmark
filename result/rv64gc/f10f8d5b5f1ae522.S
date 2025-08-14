@@ -18,7 +18,7 @@ func0000000000000026:
 	add	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000001:

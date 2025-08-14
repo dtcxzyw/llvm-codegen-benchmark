@@ -105,10 +105,9 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	lui	a2, 4
+	srliw	a0, a0, 31
 	addi	a2, a2, -16
-	slti	a0, a0, 0
 	and	a1, a1, a2
 	addi	a1, a1, -1328
 	seqz	a1, a1

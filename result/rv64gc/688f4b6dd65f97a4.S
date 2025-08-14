@@ -18,7 +18,7 @@ func0000000000000185:
 
 func000000000000008a:
 	sub	a1, a1, a2
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	sltu	a0, a0, a1
 	not	a1, a2
 	and	a0, a0, a1

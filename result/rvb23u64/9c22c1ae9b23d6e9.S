@@ -1,7 +1,6 @@
 func000000000000004c:
-	sext.w	a1, a0
+	srliw	a1, a0, 31
 	lui	a2, 524288
-	slti	a1, a1, 0
 	addiw	a2, a2, -17
 	and	a0, a0, a2
 	addi	a0, a0, -8

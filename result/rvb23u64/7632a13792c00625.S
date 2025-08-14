@@ -34,10 +34,9 @@ func000000000000008c:
 
 func00000000000000ca:
 	andi	a1, a1, 1
-	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	slti	a2, a2, 1
-	slti	a0, a0, 0
 	xori	a0, a0, 1
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

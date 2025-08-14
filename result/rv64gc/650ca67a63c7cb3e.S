@@ -64,14 +64,14 @@ func000000000000118c:
 	ret
 
 func00000000000004cc:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
+	srliw	a0, a0, 31
 	addi	a1, a1, -27
-	slti	a2, a0, 0
-	addi	a0, a0, 6
+	addi	a2, a2, 6
 	seqz	a1, a1
-	and	a1, a1, a2
-	snez	a0, a0
+	and	a0, a0, a1
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 

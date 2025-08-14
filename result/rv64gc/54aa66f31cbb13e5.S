@@ -1,7 +1,7 @@
 func00000000000004ca:
 	srai	a1, a1, 32
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -9,7 +9,7 @@ func00000000000004ca:
 func00000000000000ca:
 	srai	a1, a1, 32
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -17,7 +17,7 @@ func00000000000000ca:
 func000000000000048a:
 	srai	a1, a1, 2
 	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

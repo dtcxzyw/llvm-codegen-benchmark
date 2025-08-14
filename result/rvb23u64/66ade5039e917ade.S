@@ -8,7 +8,7 @@ func0000000000000001:
 func0000000000000006:
 	sub	a0, a0, a1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000000a:

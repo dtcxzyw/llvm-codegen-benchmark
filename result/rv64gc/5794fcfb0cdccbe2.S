@@ -15,7 +15,7 @@ func0000000000000146:
 	srai	a0, a0, 56
 	addi	a2, a2, 1021
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -26,7 +26,7 @@ func000000000000014a:
 	srai	a0, a0, 56
 	addi	a2, a2, -1537
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

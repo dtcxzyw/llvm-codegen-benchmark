@@ -82,7 +82,7 @@ func0000000000000186:
 	ret
 
 func00000000000000c6:
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	and	a0, a0, a3
 	slt	a1, a1, a2
 	and	a0, a0, a1

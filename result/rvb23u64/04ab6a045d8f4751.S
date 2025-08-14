@@ -73,14 +73,14 @@ func000000000000004c:
 	zext.b	a0, a0
 	addi	a0, a0, -22
 	seqz	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000182:
 	zext.b	a1, a0
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -95
 	seqz	a1, a1
 	or	a0, a0, a1

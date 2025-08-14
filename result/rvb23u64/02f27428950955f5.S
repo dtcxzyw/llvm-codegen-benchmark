@@ -12,7 +12,7 @@ func0000000000000e8a:
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

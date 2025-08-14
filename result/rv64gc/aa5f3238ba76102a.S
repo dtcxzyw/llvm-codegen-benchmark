@@ -22,12 +22,11 @@ func0000000000000080:
 	ret
 
 func0000000000000063:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	slli	a3, a1, 3
 	slli	a1, a1, 5
-	slti	a2, a2, 0
-	add	a1, a1, a3
 	addi	a2, a2, -1
+	add	a1, a1, a3
 	andi	a2, a2, 12
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -33,8 +33,8 @@ func0000000000000226:
 
 func000000000000022a:
 	sltu	a1, a1, a2
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

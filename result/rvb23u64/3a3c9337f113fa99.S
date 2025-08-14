@@ -1,10 +1,9 @@
 func000000000000060c:
-	sext.w	a0, a0
 	slli	a2, a2, 48
+	srliw	a0, a0, 31
 	snez	a2, a2
-	or	a1, a1, a2
-	slti	a0, a0, 0
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000084:
@@ -39,14 +38,13 @@ func0000000000000204:
 	ret
 
 func0000000000000614:
-	sext.w	a0, a0
 	zext.h	a2, a2
+	srliw	a0, a0, 31
 	addi	a2, a2, -2
-	slti	a0, a0, 0
-	snez	a2, a2
-	or	a1, a1, a2
 	xori	a0, a0, 1
+	snez	a2, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000620:

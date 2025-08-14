@@ -119,7 +119,7 @@ func0000000000000084:
 
 func00000000000000c6:
 	sext.w	a0, a0
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -128,7 +128,7 @@ func00000000000000c6:
 
 func00000000000000ca:
 	sext.w	a0, a0
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1

@@ -42,7 +42,7 @@ func00000000000000ca:
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	slti	a0, a0, 256
 	and	a0, a0, a1

@@ -43,9 +43,8 @@ func0000000000000044:
 	ret
 
 func0000000000000053:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	li	a3, -1
-	slti	a2, a2, 0
 	srli	a3, a3, 32
 	czero.eqz	a2, a3, a2
 	zext.w	a1, a1

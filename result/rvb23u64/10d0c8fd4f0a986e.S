@@ -141,7 +141,7 @@ func0000000000000061:
 
 func000000000000004a:
 	add.uw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -160,7 +160,7 @@ func0000000000000006:
 func00000000000000aa:
 	sext.w	a1, a1
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -178,7 +178,7 @@ func00000000000000b4:
 
 func000000000000002a:
 	add.uw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -189,7 +189,7 @@ func0000000000000034:
 
 func000000000000000a:
 	add.uw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -264,7 +264,7 @@ func0000000000000014:
 func000000000000008a:
 	sext.w	a1, a1
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -53,9 +53,8 @@ func00000000000000c6:
 
 func00000000000000c4:
 	sext.w	a0, a0
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	addi	a1, a1, -3
-	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
 	sltiu	a0, a0, -2
 	addi	a1, a1, 2

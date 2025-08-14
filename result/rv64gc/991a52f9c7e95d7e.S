@@ -9,7 +9,7 @@ func000000000000000a:
 	zext.b	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

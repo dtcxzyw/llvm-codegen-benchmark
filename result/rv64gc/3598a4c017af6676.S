@@ -8,20 +8,18 @@ func000000000000098a:
 	ret
 
 func000000000000094c:
-	sext.w	a0, a0
 	srai	a2, a2, 3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
 func00000000000009cc:
-	sext.w	a0, a0
 	srai	a2, a2, 2
 	slt	a1, a1, a2
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

@@ -47,9 +47,8 @@ func0000000000000184:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
 	addi	a2, a2, 16
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -106,9 +105,8 @@ func000000000000012b:
 	ret
 
 func000000000000011b:
-	sext.w	a1, a1
 	addi	a2, a2, -16
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

@@ -1,8 +1,8 @@
 func0000000000000186:
 	or	a1, a1, a2
 	or	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001a4:
@@ -89,8 +89,8 @@ func0000000000000104:
 func000000000000018a:
 	or	a1, a1, a2
 	or	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

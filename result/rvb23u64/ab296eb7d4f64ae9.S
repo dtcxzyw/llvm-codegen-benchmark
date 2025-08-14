@@ -7,9 +7,8 @@ func0000000000000506:
 	ret
 
 func000000000000030a:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	sext.w	a1, a1
-	slti	a2, a2, 0
 	and	a0, a0, a2
 	sgtz	a1, a1
 	and	a0, a0, a1

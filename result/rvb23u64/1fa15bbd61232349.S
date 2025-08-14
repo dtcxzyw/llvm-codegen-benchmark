@@ -24,7 +24,7 @@ func0000000000000168:
 func00000000000000ca:
 	sext.w	a2, a2
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

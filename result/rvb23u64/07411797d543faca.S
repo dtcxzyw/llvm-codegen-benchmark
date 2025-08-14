@@ -82,10 +82,9 @@ func0000000000000294:
 	ret
 
 func0000000000000146:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	slti	a0, a0, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 
@@ -161,16 +160,14 @@ func000000000000014a:
 
 func00000000000000cc:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func00000000000000ca:
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	sgtz	a1, a1
 	andn	a0, a1, a0
 	ret

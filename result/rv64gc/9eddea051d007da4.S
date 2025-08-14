@@ -15,7 +15,7 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 

@@ -19,7 +19,7 @@ func000000000000002a:
 func0000000000000026:
 	sub	a1, a1, a2
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000002c:
@@ -31,6 +31,6 @@ func000000000000002c:
 func0000000000000006:
 	sub	a1, a1, a2
 	remw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

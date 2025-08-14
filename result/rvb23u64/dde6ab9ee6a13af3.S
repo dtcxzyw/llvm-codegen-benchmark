@@ -9,17 +9,15 @@ func000000000000002c:
 	ret
 
 func000000000000018a:
-	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func000000000000054a:
-	sext.w	a0, a0
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -114,7 +112,7 @@ func000000000000008c:
 func00000000000000c1:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

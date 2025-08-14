@@ -38,8 +38,8 @@ func0000000000000201:
 func0000000000000226:
 	sub	a1, a1, a2
 	srli	a1, a1, 3
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000206:
@@ -60,8 +60,8 @@ func0000000000000028:
 func0000000000000026:
 	sub	a1, a1, a2
 	srli	a1, a1, 2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:
@@ -76,7 +76,7 @@ func0000000000000021:
 func0000000000000006:
 	sub	a1, a1, a2
 	srli	a1, a1, 30
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

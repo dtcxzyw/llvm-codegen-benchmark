@@ -29,7 +29,7 @@ func000000000000002c:
 func00000000000000cc:
 	sext.h	a1, a1
 	slli	a0, a0, 48
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

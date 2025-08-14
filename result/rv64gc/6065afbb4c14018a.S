@@ -54,7 +54,7 @@ func0000000000000006:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	or	a1, a1, a2
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	ret
 

@@ -13,8 +13,7 @@ func0000000000000008:
 func000000000000000a:
 	remu	a0, a0, a1
 	srliw	a0, a0, 31
-	slli	a0, a0, 31
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 
 func0000000000000006:

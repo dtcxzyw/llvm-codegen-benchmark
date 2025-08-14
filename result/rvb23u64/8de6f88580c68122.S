@@ -51,8 +51,7 @@ func00000000000000cc:
 	ret
 
 func00000000000000c1:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -63,8 +62,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000ca:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

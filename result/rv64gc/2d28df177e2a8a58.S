@@ -31,7 +31,7 @@ func000000000000002a:
 	srai	a0, a0, 48
 	slli	a3, a3, 8
 	and	a2, a2, a3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a2, a2, -2048
 	not	a0, a0
 	seqz	a2, a2

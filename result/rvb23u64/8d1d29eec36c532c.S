@@ -79,11 +79,10 @@ func0000000000000034:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	lui	a2, 262128
 	and	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

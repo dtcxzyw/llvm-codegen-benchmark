@@ -60,7 +60,7 @@ func000000000000010c:
 	zext.b	a1, a1
 	addi	a1, a1, -65
 	sltiu	a1, a1, 26
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -118,7 +118,7 @@ func0000000000000114:
 	sext.b	a0, a0
 	zext.b	a1, a1
 	addi	a1, a1, -25
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	sltiu	a1, a1, -12
 	xori	a0, a0, 1
 	or	a0, a0, a1

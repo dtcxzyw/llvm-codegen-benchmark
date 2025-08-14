@@ -37,7 +37,7 @@ func00000000000010c4:
 	srai	a1, a1, 56
 	sltiu	a2, a2, 26
 	sltiu	a0, a0, 26
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -133,6 +133,6 @@ func00000000000018c6:
 	or	a0, a0, a1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

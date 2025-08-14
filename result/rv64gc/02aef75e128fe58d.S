@@ -89,7 +89,7 @@ func00000000000000a6:
 	sltu	a1, a2, a1
 	srai	a0, a0, 48
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

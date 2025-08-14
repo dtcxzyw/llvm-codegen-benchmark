@@ -1,7 +1,7 @@
 func00000000000000ca:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -12,7 +12,7 @@ func00000000000000ca:
 func00000000000000c1:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -23,7 +23,7 @@ func00000000000000c1:
 func00000000000000c8:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -35,7 +35,7 @@ func00000000000000c8:
 func00000000000000c6:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -46,7 +46,7 @@ func00000000000000c6:
 func00000000000000d8:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -58,7 +58,7 @@ func00000000000000d8:
 func00000000000000cc:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -69,7 +69,7 @@ func00000000000000cc:
 func00000000000000d4:
 	sext.h	a1, a1
 	sext.h	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	lui	a1, 524288

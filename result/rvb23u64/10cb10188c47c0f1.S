@@ -2,8 +2,8 @@ func00000000000000a6:
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000a1:
@@ -66,8 +66,8 @@ func0000000000000086:
 	andi	a2, a2, 1
 	add	a0, a0, a2
 	andi	a1, a1, 1
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000c:

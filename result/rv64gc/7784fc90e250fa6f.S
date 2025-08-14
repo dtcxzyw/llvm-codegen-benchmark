@@ -76,7 +76,7 @@ func000000000000114a:
 	lui	a3, 244
 	or	a0, a0, a1
 	addi	a1, a3, 576
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	sltu	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1

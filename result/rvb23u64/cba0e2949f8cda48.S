@@ -6,7 +6,7 @@ func0000000000000002:
 	srl	a2, a2, a0
 	srl	a5, a3, a0
 	slli	a3, a3, 1
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	sll	a0, a3, a1
 	czero.nez	a1, a5, a4
 	or	a0, a0, a2

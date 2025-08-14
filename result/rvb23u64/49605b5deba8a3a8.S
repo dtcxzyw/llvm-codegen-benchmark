@@ -23,7 +23,7 @@ func0000000000000058:
 
 func0000000000000054:
 	andi	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -70,20 +70,20 @@ func0000000000000068:
 func000000000000004c:
 	not	a1, a1
 	bexti	a1, a1, 29
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000182:
 	not	a1, a1
 	bexti	a1, a1, 61
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000314:
 	bexti	a1, a1, 59
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -134,7 +134,7 @@ func0000000000000202:
 
 func0000000000000298:
 	sext.w	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a1, a1, -6
 	snez	a1, a1
 	xori	a0, a0, 1

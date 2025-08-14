@@ -1,6 +1,5 @@
 func000000000000001a:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
@@ -22,8 +21,7 @@ func0000000000000010:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

@@ -42,7 +42,7 @@ func0000000000000054:
 func000000000000000a:
 	zext.w	a1, a1
 	divu	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -14,7 +14,7 @@ func0000000000000146:
 	lui	a2, 488281
 	addi	a2, a2, 1021
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -24,7 +24,7 @@ func000000000000014a:
 	lui	a2, 244141
 	addi	a2, a2, -1537
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

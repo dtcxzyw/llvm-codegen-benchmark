@@ -1,14 +1,14 @@
 func000000000000002a:
 	slli	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func00000000000006aa:
 	slli	a1, a1, 5
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -28,8 +28,8 @@ func000000000000000a:
 
 func000000000000040a:
 	slli	a1, a1, 6
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

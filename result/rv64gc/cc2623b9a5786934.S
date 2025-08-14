@@ -5,8 +5,8 @@ func000000000000000a:
 .LBB0_2:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000001:

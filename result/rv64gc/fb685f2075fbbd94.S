@@ -13,7 +13,7 @@ func0000000000000018:
 func0000000000000014:
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

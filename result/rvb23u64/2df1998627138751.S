@@ -52,10 +52,9 @@ func0000000000000787:
 	ret
 
 func000000000000079b:
-	sext.w	a0, a0
 	addi	a2, a2, 776
 	addi	a1, a1, 8
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

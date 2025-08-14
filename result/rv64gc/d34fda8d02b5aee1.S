@@ -13,7 +13,7 @@ func0000000000000086:
 	addi	a1, a1, 1023
 	add	a1, a1, a0
 	sltiu	a1, a1, -2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

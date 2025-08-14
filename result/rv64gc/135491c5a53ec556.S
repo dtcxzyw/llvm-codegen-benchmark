@@ -1,7 +1,7 @@
 func00000000000004ca:
 	sext.w	a1, a1
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -55,7 +55,7 @@ func00000000000002aa:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -80,7 +80,7 @@ func00000000000000ca:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -105,7 +105,7 @@ func000000000000032c:
 func000000000000068a:
 	sext.w	a1, a1
 	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

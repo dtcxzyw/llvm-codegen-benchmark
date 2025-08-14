@@ -121,7 +121,7 @@ func0000000000000040:
 func0000000000000050:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	addw	a0, a0, a1
 	ret

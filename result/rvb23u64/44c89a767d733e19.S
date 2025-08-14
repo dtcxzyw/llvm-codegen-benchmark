@@ -12,7 +12,7 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

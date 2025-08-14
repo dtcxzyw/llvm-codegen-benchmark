@@ -32,8 +32,8 @@ func000000000000020a:
 	add	a1, a1, a2
 	sub	a1, a1, a0
 	addi	a1, a1, 2
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func000000000000008a:

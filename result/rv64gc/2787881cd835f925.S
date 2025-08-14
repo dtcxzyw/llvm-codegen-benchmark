@@ -23,8 +23,7 @@ func0000000000000181:
 	slli	a1, a1, 62
 	srliw	a0, a0, 31
 	srli	a1, a1, 63
-	slli	a0, a0, 31
-	seqz	a0, a0
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

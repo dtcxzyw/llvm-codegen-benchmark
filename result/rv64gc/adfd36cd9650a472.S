@@ -1,7 +1,7 @@
 func0000000000000146:
 	sub	a1, a1, a2
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -135,7 +135,7 @@ func0000000000000506:
 	lui	a2, 244
 	addi	a2, a2, 575
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

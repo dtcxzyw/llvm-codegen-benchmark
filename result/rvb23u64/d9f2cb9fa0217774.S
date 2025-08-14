@@ -27,8 +27,8 @@ func0000000000000028:
 	ret
 
 func0000000000000099:
-	addw	a3, a2, a0
-	slti	a3, a3, 0
+	add	a3, a2, a0
+	srliw	a3, a3, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

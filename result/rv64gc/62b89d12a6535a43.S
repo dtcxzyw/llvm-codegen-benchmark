@@ -13,8 +13,8 @@ func000000000000008a:
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	zext.w	a0, a0
 	czero.nez	a0, a0, a1
 	ret

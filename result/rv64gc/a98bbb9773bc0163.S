@@ -36,12 +36,10 @@ func0000000000000421:
 	ret
 
 func00000000000004ca:
-	sext.w	a0, a0
-	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a1, a1, 31
+	srliw	a0, a0, 31
 	addi	a2, a2, -113
-	slti	a1, a1, 0
-	slti	a0, a0, 0
 	snez	a2, a2
 	and	a1, a1, a2
 	xori	a0, a0, 1

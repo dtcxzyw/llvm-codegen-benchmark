@@ -22,8 +22,8 @@ func0000000000000006:
 	li	a3, -7
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func00000000000001e1:

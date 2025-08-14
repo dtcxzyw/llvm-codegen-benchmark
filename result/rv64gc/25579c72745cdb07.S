@@ -20,7 +20,7 @@ func00000000000000e1:
 
 func00000000000001a9:
 	addi	a2, a2, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -28,7 +28,7 @@ func00000000000001a9:
 
 func00000000000001a8:
 	addi	a2, a2, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1

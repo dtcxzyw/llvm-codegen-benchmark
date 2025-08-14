@@ -19,7 +19,7 @@ func0000000000000006:
 
 func000000000000000a:
 	fmv.x.d	a0, fa0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

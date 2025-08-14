@@ -37,7 +37,7 @@ func000000000000020c:
 	or	a1, a1, a2
 	srli	a1, a1, 32
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000310:
 
 func0000000000000314:
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

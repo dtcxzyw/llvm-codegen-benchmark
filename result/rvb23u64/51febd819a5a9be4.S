@@ -102,7 +102,7 @@ func0000000000000010:
 	ret
 
 func000000000000002a:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	lui	a2, 1048534
 	addi	a2, a2, -1248
 	czero.eqz	a1, a2, a1

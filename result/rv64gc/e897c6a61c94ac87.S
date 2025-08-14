@@ -164,7 +164,7 @@ func0000000000000546:
 	addiw	a2, a2, -1
 	srai	a0, a0, 56
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

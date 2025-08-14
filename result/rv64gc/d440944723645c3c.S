@@ -4,7 +4,7 @@ func0000000000000154:
 	srai	a1, a1, 56
 	srli	a2, a2, 32
 	sltu	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

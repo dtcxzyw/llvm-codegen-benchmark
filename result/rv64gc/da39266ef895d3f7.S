@@ -21,7 +21,7 @@ func000000000000008a:
 	srai	a1, a1, 56
 	addi	a0, a0, -16
 	sltiu	a0, a0, -2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	and	a0, a0, a1
 	ret

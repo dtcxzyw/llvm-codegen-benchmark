@@ -38,7 +38,7 @@ func0000000000000058:
 
 func0000000000000314:
 	sext.w	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a2, a2
 	or	a0, a0, a2
 	xori	a1, a1, 1
@@ -74,11 +74,10 @@ func0000000000000050:
 	ret
 
 func000000000000018c:
-	sext.w	a2, a2
-	slti	a1, a1, 1
-	slti	a2, a2, 0
-	or	a0, a0, a1
+	srliw	a2, a2, 31
 	or	a0, a0, a2
+	slti	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000102:

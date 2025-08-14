@@ -3,8 +3,7 @@ func000000000000002a:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000026:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000c1:
@@ -78,7 +76,7 @@ func0000000000000086:
 
 func0000000000000158:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
@@ -93,8 +91,7 @@ func000000000000028a:
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -154,7 +151,7 @@ func0000000000000038:
 
 func00000000000000cc:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -195,7 +192,7 @@ func0000000000000114:
 
 func00000000000000c4:
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

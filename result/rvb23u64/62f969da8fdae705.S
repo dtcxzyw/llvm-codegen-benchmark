@@ -53,19 +53,19 @@ func0000000000003188:
 func0000000000002946:
 	min	a1, a1, a2
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func000000000000194a:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	min	a0, a1, a0
 	sgtz	a0, a0
 	and	a0, a0, a2
 	ret
 
 func00000000000028ca:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	min	a0, a2, a0
 	sgtz	a0, a0
 	and	a0, a0, a1

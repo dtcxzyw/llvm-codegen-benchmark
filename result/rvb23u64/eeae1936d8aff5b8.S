@@ -34,7 +34,7 @@ func00000000000010c4:
 	zext.b	a0, a0
 	zext.b	a2, a2
 	sext.b	a1, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	minu	a0, a2, a0
 	sltiu	a0, a0, 26
 	or	a0, a0, a1
@@ -120,6 +120,6 @@ func00000000000018c6:
 	or	a1, a1, a2
 	or	a0, a0, a1
 	sext.b	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

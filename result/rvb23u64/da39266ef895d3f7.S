@@ -20,7 +20,7 @@ func000000000000008a:
 	zext.b	a0, a0
 	addi	a0, a0, -16
 	sltiu	a0, a0, -2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	andn	a0, a0, a1
 	ret
 

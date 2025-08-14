@@ -44,8 +44,7 @@ func00000000000014c6:
 	bge	a4, a3, .LBB4_2
 	sub	a0, a1, a2
 .LBB4_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000014c1:

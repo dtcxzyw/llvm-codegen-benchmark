@@ -44,9 +44,9 @@ func0000000000000434:
 	ret
 
 func000000000000002a:
-	addiw	a1, a1, 8
+	addi	a1, a1, 8
 	seqz	a0, a0
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

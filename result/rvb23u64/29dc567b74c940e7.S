@@ -11,13 +11,12 @@ func0000000000000081:
 	ret
 
 func0000000000000346:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000008a:
@@ -25,8 +24,8 @@ func000000000000008a:
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -35,8 +34,8 @@ func0000000000000086:
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000408:

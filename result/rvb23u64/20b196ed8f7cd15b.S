@@ -15,7 +15,7 @@ func0000000000000146:
 	sllw	a1, a2, a1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000014a:
@@ -25,7 +25,7 @@ func000000000000014a:
 	sllw	a1, a2, a1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

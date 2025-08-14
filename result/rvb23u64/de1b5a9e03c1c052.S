@@ -18,7 +18,7 @@ func0000000000000424:
 func0000000000000586:
 	seqz	a2, a2
 	lui	a3, 8
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a3, a3, -1
 	xor	a1, a1, a3
 	and	a2, a2, a0

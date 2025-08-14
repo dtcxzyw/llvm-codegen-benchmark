@@ -23,7 +23,7 @@ func0000000000000061:
 
 func000000000000002b:
 	addi	a0, a0, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a0, a0, a1
 	ret
 

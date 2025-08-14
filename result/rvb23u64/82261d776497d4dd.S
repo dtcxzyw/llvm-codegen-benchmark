@@ -203,7 +203,7 @@ func000000000000002a:
 
 func00000000000000ca:
 	addi	a1, a1, -1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

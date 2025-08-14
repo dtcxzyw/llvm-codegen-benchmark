@@ -9,12 +9,12 @@ func0000000000000146:
 
 func0000000000000154:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	sltu	a1, a1, a2
-	not	a2, a3
+	sext.w	a3, a1
+	srliw	a1, a1, 31
+	not	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	sltu	a1, a3, a2
+	and	a0, a0, a1
 	ret
 
 func00000000000000c6:
@@ -42,12 +42,12 @@ func0000000000000186:
 
 func0000000000000144:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	sltu	a1, a1, a2
-	not	a2, a3
+	sext.w	a3, a1
+	srliw	a1, a1, 31
+	not	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	sltu	a1, a3, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000147:

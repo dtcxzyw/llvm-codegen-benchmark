@@ -1,11 +1,10 @@
 func0000000000000426:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, -1
 	seqz	a1, a1
 	and	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

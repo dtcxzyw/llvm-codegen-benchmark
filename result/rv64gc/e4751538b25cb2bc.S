@@ -23,8 +23,7 @@ func0000000000000081:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -33,7 +32,7 @@ func00000000000000c1:
 func000000000000002a:
 	sext.w	a1, a1
 	lui	a2, 4
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xor	a1, a1, a2
 	snez	a1, a1
 	xori	a0, a0, 1

@@ -13,7 +13,7 @@ func0000000000000114:
 	sext.b	a0, a0
 	zext.b	a1, a1
 	sltiu	a1, a1, 63
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	li	a1, 2

@@ -1,8 +1,8 @@
 func00000000000000ca:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	subw	a1, a1, a2
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
+	slt	a1, a3, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -16,10 +16,10 @@ func000000000000008a:
 	ret
 
 func000000000000058a:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	subw	a1, a1, a2
-	xor	a1, a1, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
+	xor	a1, a1, a3
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

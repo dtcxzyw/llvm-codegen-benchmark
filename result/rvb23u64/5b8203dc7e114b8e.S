@@ -1,7 +1,6 @@
 func00000000000000ca:
-	sext.w	a1, a1
 	srli	a2, a2, 1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

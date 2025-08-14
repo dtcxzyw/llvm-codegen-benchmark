@@ -1,6 +1,5 @@
 func0000000000000181:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	czero.nez	a1, a1, a3
 	czero.eqz	a2, a2, a3
 	or	a1, a1, a2
@@ -20,8 +19,7 @@ func0000000000000041:
 	ret
 
 func00000000000001a1:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	czero.nez	a1, a1, a3
 	czero.eqz	a2, a2, a3
 	or	a1, a1, a2

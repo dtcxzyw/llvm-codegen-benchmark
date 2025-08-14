@@ -1,10 +1,9 @@
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 20
 	binvi	a1, a1, 14
 	czero.nez	a1, a2, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	czero.nez	a0, a1, a0
 	ret
 
@@ -60,11 +59,10 @@ func0000000000000024:
 	ret
 
 func00000000000000c6:
-	sext.w	a0, a0
 	sraiw	a1, a1, 31
 	andi	a1, a1, -4
 	addi	a1, a1, 8
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	czero.nez	a0, a1, a0
 	ret
 

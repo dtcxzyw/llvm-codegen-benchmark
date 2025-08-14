@@ -12,8 +12,8 @@ func0000000000000026:
 	ret
 
 func0000000000000006:
-	subw	a1, a1, a2
-	slti	a1, a1, 0
+	sub	a1, a1, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 

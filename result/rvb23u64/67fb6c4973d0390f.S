@@ -1,6 +1,6 @@
 func000000000000000c:
 	fcvt.w.s	a1, fa0, rtz
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

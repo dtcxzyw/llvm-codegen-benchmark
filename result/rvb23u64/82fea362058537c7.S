@@ -10,8 +10,8 @@ func000000000000014a:
 	ret
 
 func00000000000000ca:
-	addiw	a1, a1, -1
-	slti	a2, a1, 0
+	addi	a1, a1, -1
+	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -26,8 +26,7 @@ func0000000000000026:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:

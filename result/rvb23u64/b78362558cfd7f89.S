@@ -5,7 +5,7 @@ func0000000000000000:
 	srl	a3, a3, a4
 	addi	a4, a4, -64
 	sll	a2, a2, a5
-	slti	a4, a4, 0
+	srli	a4, a4, 63
 	or	a2, a6, a2
 	czero.nez	a5, a3, a4
 	czero.eqz	a3, a3, a4

@@ -1,7 +1,7 @@
 func000000000000000a:
 	fmul.d	fa5, fa0, fa1
 	fcvt.w.d	a0, fa5, rtz
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -14,6 +14,6 @@ func0000000000000001:
 func0000000000000006:
 	fmul.d	fa5, fa0, fa1
 	fcvt.w.d	a0, fa5, rtz
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

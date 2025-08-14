@@ -38,7 +38,7 @@ func000000000000098c:
 
 func00000000000004c6:
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -61,7 +61,7 @@ func0000000000000108:
 func000000000000018a:
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -103,8 +103,8 @@ func0000000000000181:
 
 func00000000000000ca:
 	sub	a1, a1, a2
-	slti	a1, a1, 0
-	slti	a0, a0, 0
+	srli	a1, a1, 63
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

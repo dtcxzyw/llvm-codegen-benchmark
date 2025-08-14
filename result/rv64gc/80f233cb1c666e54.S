@@ -102,8 +102,8 @@ func000000000000004a:
 	bltu	a1, a0, .LBB12_2
 	mv	a1, a0
 .LBB12_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func000000000000002c:

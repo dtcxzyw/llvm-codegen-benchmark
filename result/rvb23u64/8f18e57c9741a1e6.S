@@ -1,12 +1,12 @@
 func00000000000000c6:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000046:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 
@@ -20,8 +20,8 @@ func000000000000008a:
 	ret
 
 func0000000000000086:
-	addw	a1, a1, a2
-	slti	a1, a1, 0
+	add	a1, a1, a2
+	srliw	a1, a1, 31
 	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 1

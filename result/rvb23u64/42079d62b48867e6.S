@@ -2,7 +2,7 @@ func0000000000000146:
 	sext.w	a3, a0
 	add	a1, a1, a2
 	addiw	a1, a1, 1
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	min	a1, a1, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

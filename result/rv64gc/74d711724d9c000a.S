@@ -74,7 +74,7 @@ func00000000000000c6:
 	or	a0, a0, a1
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000298:
@@ -149,7 +149,7 @@ func0000000000000144:
 	slli	a1, a1, 48
 	srli	a0, a0, 48
 	srai	a1, a1, 48
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sltiu	a0, a0, 259
 	or	a0, a0, a1

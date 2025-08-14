@@ -52,9 +52,8 @@ func0000000000000101:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	srli	a1, a1, 7
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -158,10 +157,9 @@ func0000000000000281:
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	zext.b	a1, a1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000650:
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	andn	a1, a2, a1
 	add	a0, a0, a1
 	ret

@@ -34,7 +34,7 @@ func000000000000002a:
 	andi	a1, a1, 64
 	srai	a0, a0, 56
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

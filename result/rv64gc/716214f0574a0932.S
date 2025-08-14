@@ -32,7 +32,7 @@ func0000000000000006:
 	addi	a0, a0, -24
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

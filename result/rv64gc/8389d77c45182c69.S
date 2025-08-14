@@ -47,8 +47,7 @@ func000000000000002a:
 	beq	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -58,8 +57,7 @@ func0000000000000026:
 	beq	a2, a3, .LBB5_2
 	mv	a0, a1
 .LBB5_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000021:

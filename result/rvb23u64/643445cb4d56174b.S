@@ -25,7 +25,7 @@ func00000000000000c1:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	max	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -92,7 +92,7 @@ func000000000000004c:
 	srai	a1, a1, 56
 	addi	a0, a0, -8
 	seqz	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
@@ -110,7 +110,7 @@ func0000000000000054:
 	andi	a0, a0, 10
 	srai	a1, a1, 56
 	seqz	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

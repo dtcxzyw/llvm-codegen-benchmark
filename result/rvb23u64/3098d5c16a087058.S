@@ -1,8 +1,7 @@
 func000000000000014a:
-	sext.w	a0, a0
 	zext.w	a2, a2
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -53,11 +52,10 @@ func000000000000028a:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

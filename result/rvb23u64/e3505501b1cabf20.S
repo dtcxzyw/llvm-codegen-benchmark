@@ -25,7 +25,7 @@ func0000000000000026:
 
 func0000000000000006:
 	sub	a1, a1, a2
-	slti	a2, a0, 0
+	srli	a2, a0, 63
 	min	a0, a0, a1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

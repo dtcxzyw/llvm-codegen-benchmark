@@ -64,7 +64,7 @@ func000000000000014a:
 
 func00000000000000c6:
 	slt	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -78,26 +78,26 @@ func0000000000000028:
 func0000000000000186:
 	xor	a1, a1, a0
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func000000000000008a:
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
 func000000000000002a:
 	xor	a1, a1, a0
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
 func000000000000016a:
 	slt	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

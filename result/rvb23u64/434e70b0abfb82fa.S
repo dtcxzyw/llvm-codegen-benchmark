@@ -53,7 +53,7 @@ func0000000000000186:
 	sext.h	a0, a0
 	slli	a1, a1, 48
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000146:
 	sext.h	a0, a0
 	sext.h	a1, a1
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -168,7 +168,7 @@ func00000000000000c1:
 	zext.h	a0, a0
 	sext.h	a1, a1
 	lui	a2, 6
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a2, a2, 1396
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -224,7 +224,7 @@ func0000000000000026:
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

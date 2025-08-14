@@ -124,8 +124,7 @@ func0000000000000006:
 	beqz	a0, .LBB13_2
 	addi	a1, a2, -2
 .LBB13_2:
-	sext.w	a1, a1
-	slti	a0, a1, 0
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000064:

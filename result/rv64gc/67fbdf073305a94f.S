@@ -51,7 +51,7 @@ func0000000000003021:
 
 func00000000000004d4:
 	xori	a2, a2, 1054
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	srli	a0, a0, 21
 	or	a0, a0, a2
 	seqz	a0, a0

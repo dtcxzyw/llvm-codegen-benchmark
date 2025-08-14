@@ -10,7 +10,7 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000011:
 	ret
 
 func000000000000000b:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

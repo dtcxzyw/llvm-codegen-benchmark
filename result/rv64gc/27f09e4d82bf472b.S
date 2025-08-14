@@ -34,7 +34,7 @@ func000000000000054a:
 	zext.b	a2, a2
 	srai	a1, a1, 56
 	slt	a0, a2, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

@@ -19,7 +19,7 @@ func0000000000000070:
 
 func0000000000000094:
 	li	a3, -1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	srli	a3, a3, 1
 	add	a2, a2, a3
 	czero.eqz	a0, a0, a1

@@ -41,8 +41,8 @@ func0000000000000128:
 func000000000000014a:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	not	a2, a2
-	bexti	a2, a2, 31
+	srliw	a2, a2, 31
+	xori	a2, a2, 1
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret

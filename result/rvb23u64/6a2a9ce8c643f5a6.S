@@ -5,8 +5,8 @@ func00000000000007aa:
 	ret
 
 func00000000000002aa:
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000022a:

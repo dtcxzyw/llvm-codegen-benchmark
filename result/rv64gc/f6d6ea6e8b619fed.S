@@ -19,7 +19,7 @@ func000000000000008a:
 	mv	a0, a1
 .LBB2_2:
 	addi	a0, a0, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -89,12 +89,11 @@ func0000000000000181:
 	ret
 
 func0000000000000186:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	srliw	a1, a1, 31
 	snez	a2, a2
-	or	a0, a0, a2
-	slti	a1, a1, 0
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000026:

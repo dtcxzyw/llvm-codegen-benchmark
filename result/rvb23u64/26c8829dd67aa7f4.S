@@ -1,6 +1,5 @@
 func000000000000000d:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2
@@ -17,8 +16,7 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	sext.w	a3, a2
-	slti	a3, a3, 0
+	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

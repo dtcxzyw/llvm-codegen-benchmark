@@ -14,8 +14,8 @@ func000000000000078a:
 	addi	a3, a3, -496
 	mul	a2, a2, a3
 	sub	a1, a1, a0
-	addw	a1, a1, a2
-	slti	a0, a1, 0
+	add	a1, a1, a2
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

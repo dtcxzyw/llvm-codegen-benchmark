@@ -195,7 +195,7 @@ func0000000000000042:
 func00000000000001b0:
 	addi	a1, a1, 512
 	sltiu	a0, a0, 2046
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -213,7 +213,7 @@ func0000000000000130:
 func00000000000011b0:
 	addi	a1, a1, 512
 	sltiu	a0, a0, 2046
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

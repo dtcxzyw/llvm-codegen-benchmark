@@ -27,6 +27,6 @@ func0000000000000006:
 	li	a2, 4
 	sub	a2, a2, a1
 	sllw	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 

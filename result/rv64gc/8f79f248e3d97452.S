@@ -2,7 +2,7 @@ func000000000000084c:
 	addiw	a1, a1, -3
 	andi	a1, a1, -3
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

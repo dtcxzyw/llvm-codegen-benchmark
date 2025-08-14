@@ -3,8 +3,7 @@ func000000000000002a:
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000026:
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000000c1:
@@ -93,8 +91,7 @@ func000000000000028a:
 	bltu	a2, a3, .LBB9_2
 	mv	a0, a1
 .LBB9_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

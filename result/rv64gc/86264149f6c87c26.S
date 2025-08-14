@@ -7,7 +7,7 @@ func000000000000008c:
 
 func00000000000000ca:
 	sub	a2, a2, a1
-	slti	a1, a0, 0
+	srli	a1, a0, 63
 	slt	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1

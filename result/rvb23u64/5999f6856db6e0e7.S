@@ -15,11 +15,10 @@ func0000000000000688:
 	ret
 
 func000000000000028a:
-	sext.w	a1, a0
-	cpopw	a0, a0
-	sltiu	a0, a0, 2
-	slti	a1, a1, 0
-	andn	a0, a0, a1
+	cpopw	a1, a0
+	sltiu	a1, a1, 2
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func0000000000000684:

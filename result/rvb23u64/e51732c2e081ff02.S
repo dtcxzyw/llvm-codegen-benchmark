@@ -22,7 +22,7 @@ func0000000000000084:
 
 func00000000000000c6:
 	srai	a2, a2, 63
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	ori	a2, a2, 1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

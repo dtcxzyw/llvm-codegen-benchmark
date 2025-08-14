@@ -45,7 +45,7 @@ func0000000000000301:
 
 func000000000000018a:
 	slli	a1, a1, 62
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
@@ -73,7 +73,7 @@ func000000000000028c:
 func0000000000000026:
 	andi	a1, a1, 6
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

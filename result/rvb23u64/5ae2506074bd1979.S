@@ -34,36 +34,33 @@ func0000000000000001:
 	ret
 
 func0000000000000066:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
 	li	a3, 2
-	slti	a0, a0, 0
-	czero.nez	a1, a3, a1
 	xori	a0, a0, 1
+	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	ret
 
 func0000000000000046:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
 	li	a3, 8
-	slti	a0, a0, 0
-	czero.nez	a1, a3, a1
 	xori	a0, a0, 1
+	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
 	li	a3, 32
-	slti	a0, a0, 0
-	czero.nez	a1, a3, a1
 	xori	a0, a0, 1
+	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	slli	a0, a0, 4
 	or	a0, a0, a1

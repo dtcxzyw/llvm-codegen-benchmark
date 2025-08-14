@@ -41,8 +41,7 @@ func0000000000000546:
 	bge	a1, a3, .LBB4_2
 	sub	a0, a1, a2
 .LBB4_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000008c6:
@@ -51,8 +50,7 @@ func00000000000008c6:
 	lui	a0, 524288
 	sub	a0, a0, a2
 .LBB5_2:
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func00000000000008c4:

@@ -1,6 +1,6 @@
 func0000000000000141:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -51,7 +51,7 @@ func00000000000000c6:
 	sext.w	a1, a1
 	and	a0, a0, a1
 	li	a1, -1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	slli	a1, a1, 63
 	sub	a0, a1, a0
 	ret

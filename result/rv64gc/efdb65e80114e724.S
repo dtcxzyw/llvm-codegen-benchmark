@@ -35,8 +35,8 @@ func0000000000000854:
 
 func000000000000098c:
 	sext.w	a2, a0
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	slti	a1, a2, 1
 	or	a0, a0, a1
 	ret

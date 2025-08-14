@@ -9,7 +9,7 @@ func000000000000006a:
 	bltu	a0, a1, .LBB1_2
 	mv	a1, a0
 .LBB1_2:
-	slti	a0, a1, 0
-	xori	a0, a0, 1
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 

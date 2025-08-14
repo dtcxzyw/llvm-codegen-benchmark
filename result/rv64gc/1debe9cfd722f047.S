@@ -27,7 +27,7 @@ func000000000000002a:
 	addi	a1, a1, -1
 	andi	a1, a1, 24
 	sllw	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -41,10 +41,10 @@ func0000000000001842:
 func0000000000000142:
 	sext.w	a0, a0
 	sext.w	a2, a2
-	not	a1, a1
+	srliw	a1, a1, 31
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
-	bexti	a1, a1, 31
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

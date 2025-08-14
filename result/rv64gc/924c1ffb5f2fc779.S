@@ -82,7 +82,7 @@ func0000000000000011:
 	ret
 
 func000000000000000d:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	sext.w	a0, a0
 	addi	a1, a1, -1
 	and	a0, a0, a1

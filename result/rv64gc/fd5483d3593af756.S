@@ -56,8 +56,7 @@ func0000000000000014:
 	ret
 
 func0000000000000006:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	and	a2, a2, a3
 	bnez	a2, .LBB6_2
 	mv	a0, a1

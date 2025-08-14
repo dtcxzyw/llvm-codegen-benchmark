@@ -5,8 +5,7 @@ func0000000000000034:
 
 func0000000000000024:
 	srliw	a0, a0, 31
-	slli	a0, a0, 31
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 
 func0000000000000026:

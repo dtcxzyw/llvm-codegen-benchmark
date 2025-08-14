@@ -6,7 +6,7 @@ func0000000000000034:
 	ret
 
 func0000000000000066:
-	slti	a1, a0, 0
+	srli	a1, a0, 63
 	addi	a1, a1, -1
 	andi	a1, a1, 2000
 	add	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000000074:
 	ret
 
 func0000000000000026:
-	slti	a1, a0, 0
+	srli	a1, a0, 63
 	addi	a1, a1, -1
 	andi	a1, a1, -4
 	add	a0, a0, a1

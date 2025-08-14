@@ -85,7 +85,7 @@ func00000000000000e6:
 	slt	a1, a2, a1
 	srai	a0, a0, 56
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -148,7 +148,7 @@ func00000000000000a6:
 	sltu	a1, a2, a1
 	srai	a0, a0, 56
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -164,7 +164,7 @@ func000000000000008a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

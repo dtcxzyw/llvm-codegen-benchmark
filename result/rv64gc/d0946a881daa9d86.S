@@ -34,8 +34,7 @@ func0000000000000004:
 	ret
 
 func000000000000001b:
-	sext.w	a3, a0
-	slti	a3, a3, 0
+	srliw	a3, a0, 31
 	or	a1, a1, a3
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2

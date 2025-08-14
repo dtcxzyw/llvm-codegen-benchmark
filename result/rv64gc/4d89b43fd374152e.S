@@ -1,5 +1,5 @@
 func0000000000000018:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -27,7 +27,7 @@ func00000000000001a8:
 	ret
 
 func0000000000000019:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1

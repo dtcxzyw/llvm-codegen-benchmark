@@ -125,8 +125,7 @@ func0000000000000204:
 func0000000000000518:
 	lui	a3, 196608
 	and	a1, a1, a3
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	or	a0, a0, a2
 	snez	a1, a1
@@ -148,13 +147,12 @@ func0000000000000504:
 	ret
 
 func0000000000000502:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	andi	a1, a1, 16
-	slti	a2, a2, 0
-	seqz	a1, a1
 	xori	a2, a2, 1
-	or	a0, a0, a1
 	or	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 
 func0000000000000418:

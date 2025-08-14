@@ -1,7 +1,7 @@
 func0000000000000052:
 	mv	a3, a0
 	sext.w	a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a1, 31
 	xori	a4, a1, 1
 	negw	a1, a2
 	and	a2, a3, a4

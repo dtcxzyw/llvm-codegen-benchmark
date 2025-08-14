@@ -23,7 +23,7 @@ func000000000000018a:
 	sext.w	a1, a1
 	addi	a1, a1, -4
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xor	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -35,7 +35,7 @@ func000000000000014c:
 	sext.w	a1, a1
 	addi	a1, a1, -4
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xor	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -57,7 +57,7 @@ func000000000000002a:
 	sext.w	a1, a1
 	addi	a1, a1, -6
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xor	a0, a0, a1
 	xori	a0, a0, 1
 	ret

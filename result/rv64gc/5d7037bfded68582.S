@@ -123,14 +123,14 @@ func0000000000000208:
 	ret
 
 func000000000000030c:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a1, a1, a2
 	slti	a0, a0, -16
 	or	a0, a0, a1
 	ret
 
 func0000000000000318:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -232,7 +232,7 @@ func000000000000020c:
 	ret
 
 func0000000000000302:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

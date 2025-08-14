@@ -6,8 +6,8 @@ func0000000000000004:
 
 func0000000000000086:
 	sub	a1, a1, a0
-	addiw	a1, a1, -5
-	slti	a0, a1, 0
+	addi	a1, a1, -5
+	srliw	a0, a1, 31
 	ret
 
 func0000000000000404:

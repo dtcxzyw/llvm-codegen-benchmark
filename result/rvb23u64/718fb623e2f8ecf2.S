@@ -30,8 +30,8 @@ func0000000000000081:
 func0000000000000086:
 	li	a2, -128
 	sllw	a1, a2, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000a:
@@ -86,14 +86,14 @@ func0000000000000121:
 func00000000000000a6:
 	li	a2, -1
 	sllw	a1, a2, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000106:
 	bset	a1, zero, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000146:

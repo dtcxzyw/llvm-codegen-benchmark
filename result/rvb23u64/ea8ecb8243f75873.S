@@ -1,7 +1,6 @@
 func00000000000000aa:
-	sext.w	a0, a0
 	fle.d	a1, fa0, fa1
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -135,7 +135,7 @@ func000000000000002a:
 	zext.h	a1, a1
 	addi	a1, a1, -1
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -196,7 +196,7 @@ func0000000000000146:
 	sext.h	a0, a0
 	sext.h	a1, a1
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

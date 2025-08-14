@@ -12,8 +12,7 @@ func000000000000000c:
 func0000000000000021:
 	sll	a0, a0, a1
 	srli	a0, a0, 63
-	slli	a0, a0, 63
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 
 func000000000000002c:

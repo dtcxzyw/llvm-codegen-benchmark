@@ -11,14 +11,14 @@ func0000000000000308:
 func000000000000030c:
 	slli	a2, a2, 32
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
 func000000000000020c:
 	slli	a2, a2, 32
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
@@ -32,7 +32,7 @@ func0000000000000108:
 func000000000000000c:
 	slli	a2, a2, 3
 	add	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

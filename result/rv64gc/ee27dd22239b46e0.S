@@ -1,6 +1,6 @@
 func000000000000018a:
 	slli	a1, a1, 49
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

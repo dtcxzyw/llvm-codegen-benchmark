@@ -7,7 +7,7 @@ func000000000000042c:
 
 func000000000000014a:
 	or	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
@@ -22,9 +22,9 @@ func000000000000002c:
 
 func00000000000000ca:
 	or	a1, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	not	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -76,7 +76,7 @@ func0000000000000581:
 
 func0000000000000141:
 	or	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

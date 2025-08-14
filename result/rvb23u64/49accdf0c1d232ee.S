@@ -9,7 +9,7 @@ func0000000000000001:
 func00000000000000a6:
 	add	a0, a0, a1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func00000000000000a1:
@@ -44,7 +44,7 @@ func0000000000000008:
 func0000000000000006:
 	add	a0, a0, a1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000086:

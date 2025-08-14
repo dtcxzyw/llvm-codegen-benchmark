@@ -1,5 +1,5 @@
 func000000000000004a:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a3, a1, -1
 	sh1add	a3, a3, a3
 	sh3add	a2, a3, a2

@@ -6,7 +6,7 @@ func0000000000000014:
 
 func0000000000000006:
 	fcvt.w.d	a1, fa0, rtz
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret
 

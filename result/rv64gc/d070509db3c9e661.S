@@ -21,8 +21,7 @@ func0000000000000006:
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB2_2
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 .LBB2_2:
 	ret
 
@@ -30,8 +29,7 @@ func000000000000000a:
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB3_2
-	sext.w	a2, a2
-	slti	a0, a2, 0
+	srliw	a0, a2, 31
 	xori	a0, a0, 1
 .LBB3_2:
 	ret

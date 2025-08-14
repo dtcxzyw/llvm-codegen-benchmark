@@ -9,10 +9,9 @@ func00000000000028c1:
 	ret
 
 func0000000000001d66:
-	sext.w	a0, a0
 	slt	a3, a2, a1
 	slt	a1, a1, a2
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	czero.nez	a2, a3, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

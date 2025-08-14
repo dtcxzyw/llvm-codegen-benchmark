@@ -9,7 +9,7 @@ func000000000000050a:
 	sext.b	a2, a0
 	zext.b	a0, a0
 	sltu	a0, a0, a1
-	slti	a1, a2, 0
-	andn	a0, a0, a1
+	srli	a2, a2, 63
+	andn	a0, a0, a2
 	ret
 

@@ -105,8 +105,8 @@ func000000000000002a:
 	ret
 
 func0000000000000426:
-	addiw	a0, a0, 1
-	slti	a0, a0, 0
+	addi	a0, a0, 1
+	srliw	a0, a0, 31
 	ret
 
 func00000000000004d8:

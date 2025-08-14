@@ -1,27 +1,27 @@
 func00000000000010ca:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	srli	a1, a1, 3
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func000000000000108a:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	srli	a1, a1, 4
 	sext.w	a1, a1
-	sltu	a1, a0, a1
-	slti	a0, a0, 0
+	sltu	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func00000000000010ea:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	srli	a1, a1, 2
 	sext.w	a1, a1
-	slt	a1, a1, a0
-	slti	a0, a0, 0
+	slt	a1, a1, a2
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -36,10 +36,10 @@ func00000000000010cc:
 	ret
 
 func00000000000008ca:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	srai	a1, a1, 32
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -54,11 +54,11 @@ func0000000000001026:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	srli	a1, a1, 2
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	slti	a0, a0, 0
+	slt	a1, a2, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

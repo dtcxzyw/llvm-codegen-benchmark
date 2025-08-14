@@ -14,7 +14,7 @@ func000000000000008a:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -52,7 +52,7 @@ func0000000000000c0a:
 	neg	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

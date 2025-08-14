@@ -7,7 +7,7 @@ func0000000000000021:
 
 func0000000000000006:
 	zext.w	a2, a2
-	slti	a3, a1, 0
+	srli	a3, a1, 63
 	czero.eqz	a3, a3, a1
 	sltu	a0, a0, a2
 	czero.nez	a0, a0, a1

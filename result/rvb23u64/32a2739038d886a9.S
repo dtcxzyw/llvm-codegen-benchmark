@@ -1,6 +1,5 @@
 func0000000000000501:
-	sext.w	a1, a1
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	zext.b	a0, a0

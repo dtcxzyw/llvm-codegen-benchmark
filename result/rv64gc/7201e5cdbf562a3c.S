@@ -89,7 +89,7 @@ func0000000000000006:
 	bltu	a0, a1, .LBB9_2
 	mv	a0, a1
 .LBB9_2:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func0000000000000028:

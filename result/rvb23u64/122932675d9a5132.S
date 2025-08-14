@@ -5,7 +5,7 @@ func0000000000000046:
 	add	a2, a2, a4
 	sraiw	a2, a2, 3
 	addw	a1, a1, a2
-	slti	a2, a1, 0
+	srliw	a2, a1, 31
 	min	a1, a1, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

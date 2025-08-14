@@ -16,7 +16,7 @@ func00000000000001f4:
 func000000000000020a:
 	slli	a1, a1, 39
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -49,7 +49,7 @@ func00000000000001a1:
 func00000000000003ca:
 	slli	a1, a1, 32
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -79,7 +79,7 @@ func000000000000018a:
 	slli	a1, a1, 32
 	srli	a1, a1, 29
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -111,7 +111,7 @@ func0000000000000181:
 func000000000000010a:
 	slli	a1, a1, 32
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

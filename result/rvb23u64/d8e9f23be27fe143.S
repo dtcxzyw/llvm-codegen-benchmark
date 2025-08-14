@@ -94,8 +94,8 @@ func0000000000000546:
 	lui	a2, 1048575
 	addi	a2, a2, 496
 	czero.eqz	a1, a2, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000541:

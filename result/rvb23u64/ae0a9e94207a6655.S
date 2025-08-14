@@ -9,7 +9,7 @@ func0000000000000001:
 func000000000000000a:
 	sext.b	a1, a1
 	andi	a2, a0, 127
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret

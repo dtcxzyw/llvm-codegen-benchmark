@@ -43,8 +43,8 @@ func0000000000000006:
 
 func00000000000001ca:
 	slli	a1, a1, 3
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

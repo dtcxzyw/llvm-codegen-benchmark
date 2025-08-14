@@ -142,7 +142,7 @@ func00000000000000aa:
 	addi	a2, a2, -1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -255,7 +255,7 @@ func000000000000000a:
 	li	a2, 19
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -286,7 +286,7 @@ func000000000000018a:
 	slli	a1, a1, 6
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

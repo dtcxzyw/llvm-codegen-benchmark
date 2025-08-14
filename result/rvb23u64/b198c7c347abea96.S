@@ -33,14 +33,14 @@ func0000000000000044:
 	ret
 
 func0000000000000068:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
 	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5

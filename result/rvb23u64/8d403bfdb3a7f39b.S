@@ -84,7 +84,7 @@ func0000000000000004:
 func000000000000000a:
 	sub	a2, a2, a1
 	sh2add	a0, a2, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

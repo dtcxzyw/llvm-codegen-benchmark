@@ -11,7 +11,7 @@ func00000000000000c1:
 	srai	a0, a0, 56
 	addi	a1, a1, -32
 	seqz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

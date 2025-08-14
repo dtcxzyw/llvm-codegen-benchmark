@@ -26,7 +26,7 @@ func0000000000000c81:
 
 func0000000000000cca:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	sext.w	a1, a1
 	slt	a0, a0, a1
@@ -34,7 +34,7 @@ func0000000000000cca:
 
 func0000000000000cc6:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	sext.w	a1, a1
 	slt	a0, a1, a0
@@ -42,7 +42,7 @@ func0000000000000cc6:
 
 func0000000000000cc1:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	sext.w	a1, a1
 	xor	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000cc1:
 
 func00000000000000ca:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	sext.w	a1, a1
 	slt	a0, a0, a1
@@ -59,7 +59,7 @@ func00000000000000ca:
 
 func00000000000000c6:
 	sext.w	a0, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	sext.w	a1, a1
 	slt	a0, a1, a0

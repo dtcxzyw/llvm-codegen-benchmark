@@ -93,8 +93,8 @@ func0000000000000290:
 	srai	a3, a3, 48
 	and	a0, a0, a2
 	and	a1, a1, a2
-	slti	a2, a3, 0
-	xori	a2, a2, 1
+	srli	a3, a3, 63
+	xori	a2, a3, 1
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
@@ -120,7 +120,7 @@ func000000000000030c:
 	srai	a0, a0, 48
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

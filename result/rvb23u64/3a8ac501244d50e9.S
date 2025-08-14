@@ -18,8 +18,7 @@ func0000000000000601:
 func000000000000002a:
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

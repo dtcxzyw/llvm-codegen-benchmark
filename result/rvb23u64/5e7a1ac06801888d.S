@@ -9,8 +9,8 @@ func00000000000001ca:
 
 func0000000000000006:
 	slli	a0, a0, 3
-	addiw	a0, a0, 24
-	slti	a0, a0, 0
+	addi	a0, a0, 24
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000001:

@@ -16,16 +16,16 @@ func0000000000000021:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
-	beqz	a1, .LBB2_2
-	slti	a0, a1, 0
+	sext.w	a2, a1
+	beqz	a2, .LBB2_2
+	srliw	a0, a1, 31
 .LBB2_2:
 	ret
 
 func0000000000000141:
-	sext.w	a1, a1
-	beqz	a1, .LBB3_2
-	slti	a0, a1, 0
+	sext.w	a2, a1
+	beqz	a2, .LBB3_2
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 .LBB3_2:
 	ret

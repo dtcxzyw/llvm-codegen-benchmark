@@ -152,9 +152,9 @@ func0000000000000318:
 func00000000000000c6:
 	sext.b	a1, a1
 	sext.b	a2, a2
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

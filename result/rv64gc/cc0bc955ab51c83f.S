@@ -4,7 +4,7 @@ func000000000000014a:
 	sext.w	a2, a2
 	srai	a0, a0, 56
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -45,7 +45,7 @@ func0000000000000144:
 	sext.w	a0, a0
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	sltu	a0, a0, a1
 	and	a0, a0, a2
@@ -316,7 +316,7 @@ func0000000000000146:
 	sext.w	a2, a2
 	srai	a0, a0, 56
 	slt	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

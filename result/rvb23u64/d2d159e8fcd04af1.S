@@ -1,6 +1,5 @@
 func0000000000000306:
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	czero.nez	a1, a1, a3
 	czero.eqz	a0, a0, a3
 	or	a0, a0, a1

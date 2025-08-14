@@ -24,7 +24,7 @@ func0000000000000004:
 
 func0000000000000026:
 	subw	a0, a0, a1
-	slti	a1, a0, 0
+	srliw	a1, a0, 31
 	addi	a0, a0, -101
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 101

@@ -44,7 +44,7 @@ func0000000000000004:
 func0000000000000018:
 	sext.b	a1, a1
 	li	a2, -4
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	czero.nez	a1, a2, a1
 	lui	a2, 17
 	addi	a2, a2, 276

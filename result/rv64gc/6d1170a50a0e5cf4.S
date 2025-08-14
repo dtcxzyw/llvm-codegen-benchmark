@@ -5,8 +5,8 @@ func0000000000000126:
 	bltu	a2, a1, .LBB0_2
 	mv	a2, a1
 .LBB0_2:
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000001:

@@ -13,8 +13,8 @@ func000000000000002a:
 	srliw	a2, a1, 31
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -23,8 +23,8 @@ func000000000000000a:
 	srliw	a2, a2, 30
 	add	a1, a1, a2
 	sraiw	a1, a1, 2
-	subw	a0, a0, a1
-	slti	a0, a0, 0
+	sub	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -42,8 +42,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	not	a0, a0
-	bexti	a0, a0, 63
+	srli	a0, a0, 63
+	xori	a0, a0, 1
 	ret
 
 func000000000000000c:
@@ -83,7 +83,7 @@ func0000000000000048:
 	ret
 
 func000000000000004a:
-	not	a0, a0
-	bexti	a0, a0, 63
+	srli	a0, a0, 63
+	xori	a0, a0, 1
 	ret
 

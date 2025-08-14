@@ -21,7 +21,7 @@ func000000000000004a:
 	sext.b	a0, a0
 	andi	a2, a2, 1
 	seqz	a2, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

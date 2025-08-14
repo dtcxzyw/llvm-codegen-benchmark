@@ -25,8 +25,8 @@ func0000000000000ec6:
 	slli	a0, a0, 3
 	add	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -48
-	slti	a0, a0, 0
+	addi	a0, a0, -48
+	srliw	a0, a0, 31
 	ret
 
 func00000000000006a6:
@@ -34,8 +34,8 @@ func00000000000006a6:
 	li	a2, 75
 	mul	a0, a0, a2
 	add	a0, a0, a1
-	addiw	a0, a0, -150
-	slti	a0, a0, 0
+	addi	a0, a0, -150
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000a81:

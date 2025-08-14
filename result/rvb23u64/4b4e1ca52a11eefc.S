@@ -46,7 +46,7 @@ func000000000000004c:
 	sext.b	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

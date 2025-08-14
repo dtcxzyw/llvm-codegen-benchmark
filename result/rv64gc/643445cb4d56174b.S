@@ -32,7 +32,7 @@ func00000000000000c1:
 	blt	a2, a1, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,6 +1,6 @@
 func000000000000018a:
 	snez	a2, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

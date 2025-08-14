@@ -9,8 +9,7 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	lui	a2, 1048560
@@ -53,8 +52,7 @@ func0000000000000011:
 	ret
 
 func000000000000000c:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	lui	a2, 16

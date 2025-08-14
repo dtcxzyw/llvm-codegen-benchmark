@@ -112,8 +112,7 @@ func0000000000000086:
 	slli	a2, a2, 4
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000094:
@@ -190,16 +189,14 @@ func0000000000000006:
 	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	ret
 
 func000000000000008a:
 	slli	a2, a2, 6
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -48,7 +48,7 @@ func0000000000000544:
 	addiw	a1, a1, -4
 	srai	a0, a0, 56
 	sltiu	a1, a1, 3
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -59,7 +59,7 @@ func000000000000054c:
 	srai	a0, a0, 56
 	addi	a1, a1, -1
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

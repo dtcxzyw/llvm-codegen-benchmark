@@ -44,8 +44,7 @@ func0000000000000084:
 	ret
 
 func0000000000000321:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	sext.w	a0, a0
@@ -66,8 +65,7 @@ func00000000000000a6:
 	ret
 
 func0000000000000326:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	sext.w	a0, a0

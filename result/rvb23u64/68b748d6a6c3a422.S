@@ -1,7 +1,6 @@
 func000000000000000a:
 	andi	a0, a0, 1
-	sext.w	a3, a1
-	slti	a3, a3, 0
+	srliw	a3, a1, 31
 	orn	a2, a2, a3
 	andi	a2, a2, 1
 	addi	a1, a1, -6

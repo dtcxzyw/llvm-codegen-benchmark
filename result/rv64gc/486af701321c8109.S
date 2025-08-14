@@ -1,8 +1,8 @@
 func0000000000000228:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srliw	a0, a0, 31
+	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

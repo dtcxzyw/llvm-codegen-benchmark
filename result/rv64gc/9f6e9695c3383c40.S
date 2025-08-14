@@ -107,7 +107,7 @@ func00000000000002aa:
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

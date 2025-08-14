@@ -173,7 +173,7 @@ func000000000000028a:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -32
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -188,7 +188,7 @@ func00000000000002aa:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

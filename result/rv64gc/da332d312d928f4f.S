@@ -52,7 +52,7 @@ func000000000000006f:
 	slli	a1, a1, 56
 	lui	a2, 8
 	srai	a1, a1, 56
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	addi	a2, a2, 16
 	and	a1, a1, a2
@@ -66,7 +66,7 @@ func000000000000006c:
 	srai	a1, a1, 56
 	addi	a3, a2, 16
 	addi	a2, a2, 7
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	add	a0, a0, a2

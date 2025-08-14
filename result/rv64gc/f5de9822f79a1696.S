@@ -52,9 +52,8 @@ func0000000000000026:
 	ret
 
 func000000000000014a:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	sgtz	a1, a1
-	slti	a2, a2, 0
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

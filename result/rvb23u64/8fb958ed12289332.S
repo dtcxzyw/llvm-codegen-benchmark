@@ -1,9 +1,8 @@
 func000000000000000d:
-	sext.w	a1, a1
 	li	a3, 15
 	slli	a3, a3, 9
 	and	a2, a2, a3
-	slti	a1, a1, 0
+	srliw	a1, a1, 31
 	addi	a2, a2, -512
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 512

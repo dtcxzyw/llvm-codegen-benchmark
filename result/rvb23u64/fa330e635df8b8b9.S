@@ -8,7 +8,7 @@ func0000000000000081:
 	ret
 
 func000000000000014b:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	li	a3, -1
 	srli	a3, a3, 1
 	czero.eqz	a3, a3, a2
@@ -19,7 +19,7 @@ func000000000000014b:
 	ret
 
 func0000000000000146:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	li	a3, -1
 	srli	a3, a3, 1
 	czero.eqz	a3, a3, a2

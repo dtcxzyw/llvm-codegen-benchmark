@@ -10,14 +10,13 @@ func0000000000000100:
 	ret
 
 func00000000000000c3:
-	sext.w	a2, a2
+	srliw	a2, a2, 31
 	slli	a1, a1, 32
-	slti	a2, a2, 0
+	addi	a2, a2, -1
 	srli	a3, a1, 29
 	srli	a1, a1, 27
-	addi	a2, a2, -1
-	add	a1, a1, a3
 	andi	a2, a2, 12
+	add	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

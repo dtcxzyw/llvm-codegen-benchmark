@@ -32,7 +32,7 @@ func000000000000054a:
 	sext.w	a0, a0
 	zext.b	a2, a2
 	slt	a0, a2, a0
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

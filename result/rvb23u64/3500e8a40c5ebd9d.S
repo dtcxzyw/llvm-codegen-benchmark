@@ -6,7 +6,7 @@ func0000000000000020:
 	srl	a2, a2, a3
 	addi	a3, a3, -64
 	sll	a4, a4, a5
-	slti	a3, a3, 0
+	srli	a3, a3, 63
 	or	a1, a1, a4
 	czero.eqz	a1, a1, a3
 	czero.nez	a2, a2, a3
@@ -22,7 +22,7 @@ func000000000000002a:
 	srl	a2, a2, a3
 	addi	a3, a3, -64
 	sll	a4, a4, a5
-	slti	a3, a3, 0
+	srli	a3, a3, 63
 	or	a1, a1, a4
 	czero.eqz	a1, a1, a3
 	czero.nez	a2, a2, a3

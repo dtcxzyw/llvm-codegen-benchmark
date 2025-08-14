@@ -73,14 +73,14 @@ func0000000000000054:
 	ret
 
 func0000000000000190:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
 
 func000000000000010c:
 	sltu	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -140,7 +140,7 @@ func0000000000000210:
 func00000000000001cc:
 	slt	a1, a0, a1
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -190,7 +190,7 @@ func00000000000002cc:
 	ret
 
 func0000000000000188:
-	slti	a2, a1, 0
+	srli	a2, a1, 63
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret

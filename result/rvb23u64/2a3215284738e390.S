@@ -15,9 +15,9 @@ func000000000000002c:
 
 func0000000000000021:
 	not	a1, a1
-	not	a0, a0
+	srliw	a0, a0, 31
 	bexti	a1, a1, 20
-	bexti	a0, a0, 31
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func000000000000042a:
 	mv	a2, a0
 .LBB0_2:
 	xor	a1, a1, a2
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

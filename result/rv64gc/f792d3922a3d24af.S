@@ -3,8 +3,8 @@ func0000000000000426:
 	feq.d	a2, fa0, fa5
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000022a:
@@ -25,8 +25,8 @@ func0000000000000126:
 	flt.d	a2, fa0, fa5
 	neg	a2, a2
 	or	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000012a:
@@ -47,7 +47,7 @@ func0000000000000226:
 	beqz	a2, .LBB4_2
 	li	a1, 1
 .LBB4_2:
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

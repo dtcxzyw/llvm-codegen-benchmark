@@ -49,7 +49,7 @@ func0000000000000208:
 	ret
 
 func000000000000032a:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	lui	a3, 244
@@ -83,7 +83,7 @@ func0000000000000081:
 	ret
 
 func0000000000000338:
-	slti	a3, a2, 0
+	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	lui	a3, 36

@@ -3,8 +3,8 @@ func0000000000000206:
 	lui	a1, 978671
 	addi	a1, a1, -273
 	mul	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000020a:
@@ -12,8 +12,8 @@ func000000000000020a:
 	lui	a1, 325420
 	addi	a1, a1, 565
 	mul	a0, a0, a1
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

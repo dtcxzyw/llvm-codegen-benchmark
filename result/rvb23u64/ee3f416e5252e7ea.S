@@ -8,7 +8,7 @@ func000000000000008a:
 func0000000000000046:
 	sext.b	a0, a0
 	flt.d	a1, fa0, fa1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

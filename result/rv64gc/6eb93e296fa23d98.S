@@ -24,14 +24,14 @@ func0000000000000204:
 
 func0000000000000418:
 	sltu	a2, a2, a1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000318:
 	slt	a2, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -47,7 +47,7 @@ func0000000000000410:
 
 func0000000000000498:
 	sltu	a2, a1, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

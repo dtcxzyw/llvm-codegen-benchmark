@@ -25,8 +25,8 @@ func000000000000002c:
 	ret
 
 func000000000000014a:
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	andn	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -69,8 +69,8 @@ func0000000000000184:
 	ret
 
 func00000000000000ca:
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -114,7 +114,7 @@ func0000000000000024:
 
 func000000000000008a:
 	lui	a3, 244
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	addi	a3, a3, 576
 	xori	a1, a1, 1
 	sltu	a2, a2, a3
@@ -123,7 +123,7 @@ func000000000000008a:
 	ret
 
 func0000000000000144:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	andn	a0, a0, a2
 	lui	a2, 244
 	addi	a2, a2, 576

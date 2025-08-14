@@ -120,8 +120,7 @@ func0000000000000090:
 
 func0000000000000302:
 	zext.b	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -142,7 +141,7 @@ func0000000000000094:
 	sext.b	a0, a0
 	sext.w	a2, a2
 	addi	a2, a2, -128
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	seqz	a2, a2
 	or	a1, a1, a2
 	xori	a0, a0, 1

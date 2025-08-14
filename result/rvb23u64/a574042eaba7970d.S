@@ -13,8 +13,8 @@ func0000000000000086:
 	addi	a1, a1, -6
 	czero.eqz	a1, a1, a2
 	sub	a0, a0, a1
-	addiw	a0, a0, -6
-	slti	a0, a0, 0
+	addi	a0, a0, -6
+	srliw	a0, a0, 31
 	ret
 
 func000000000000022a:
@@ -68,16 +68,14 @@ func00000000000000a6:
 
 func000000000000032a:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	czero.nez	a1, a1, a2
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret
 
 func0000000000000326:
-	sext.w	a2, a2
-	slti	a2, a2, 0
+	srliw	a2, a2, 31
 	czero.nez	a1, a1, a2
 	subw	a0, a0, a1
 	slti	a0, a0, 1024

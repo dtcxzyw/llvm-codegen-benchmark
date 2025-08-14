@@ -6,7 +6,7 @@ func0000000000000024:
 
 func000000000000006a:
 	addi	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	ret
 

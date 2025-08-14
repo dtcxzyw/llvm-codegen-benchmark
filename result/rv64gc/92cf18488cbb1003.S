@@ -8,7 +8,7 @@ func00000000000000ca:
 func000000000000018a:
 	sext.w	a1, a1
 	xor	a1, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

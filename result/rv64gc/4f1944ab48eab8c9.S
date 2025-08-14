@@ -61,12 +61,11 @@ func0000000000001021:
 func000000000000194c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 0
-	sgtz	a1, a1
-	snez	a0, a0
+	srliw	a2, a2, 31
 	not	a2, a2
+	sgtz	a1, a1
+	and	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 

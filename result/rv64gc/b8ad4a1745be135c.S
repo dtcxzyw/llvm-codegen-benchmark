@@ -39,15 +39,15 @@ func00000000000001a4:
 func00000000000001a6:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000a:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -125,8 +125,8 @@ func00000000000003f8:
 func0000000000000006:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func00000000000003aa:
@@ -185,8 +185,8 @@ func00000000000001ec:
 func00000000000003a6:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func00000000000003b4:
@@ -230,7 +230,7 @@ func00000000000000a8:
 func0000000000000226:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 

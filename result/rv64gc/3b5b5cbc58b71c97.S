@@ -20,7 +20,7 @@ func0000000000000144:
 
 func000000000000014c:
 	sext.w	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

@@ -19,8 +19,8 @@ func0000000000000010:
 	ret
 
 func000000000000000c:
-	addiw	a1, a1, -1
-	slti	a1, a1, 0
+	addi	a1, a1, -1
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

@@ -3,8 +3,8 @@ func00000000000008cb:
 	addi	a2, a2, -1
 	divuw	a2, a2, a1
 	sext.w	a3, a0
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	slt	a1, a3, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

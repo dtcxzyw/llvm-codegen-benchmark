@@ -4,7 +4,7 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 

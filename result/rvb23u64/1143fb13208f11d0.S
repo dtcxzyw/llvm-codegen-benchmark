@@ -3,7 +3,7 @@ func0000000000000003:
 	addi	a1, a0, -64
 	not	a0, a0
 	srli	a2, a2, 1
-	slti	a4, a1, 0
+	srli	a4, a1, 63
 	srl	a0, a2, a0
 	czero.nez	a1, a3, a4
 	czero.eqz	a0, a0, a4
@@ -16,7 +16,7 @@ func0000000000000000:
 	addi	a1, a0, -64
 	not	a0, a0
 	srli	a2, a2, 1
-	slti	a4, a1, 0
+	srli	a4, a1, 63
 	srl	a0, a2, a0
 	czero.nez	a1, a3, a4
 	czero.eqz	a0, a0, a4
@@ -29,7 +29,7 @@ func0000000000000006:
 	addi	a1, a0, -64
 	not	a0, a0
 	srli	a2, a2, 1
-	slti	a4, a1, 0
+	srli	a4, a1, 63
 	srl	a0, a2, a0
 	czero.nez	a1, a3, a4
 	czero.eqz	a0, a0, a4
@@ -42,7 +42,7 @@ func0000000000000002:
 	addi	a1, a0, -64
 	not	a0, a0
 	srli	a2, a2, 1
-	slti	a4, a1, 0
+	srli	a4, a1, 63
 	srl	a0, a2, a0
 	czero.nez	a1, a3, a4
 	czero.eqz	a0, a0, a4
@@ -55,7 +55,7 @@ func0000000000000007:
 	addi	a1, a0, -64
 	not	a0, a0
 	srli	a2, a2, 1
-	slti	a4, a1, 0
+	srli	a4, a1, 63
 	srl	a0, a2, a0
 	czero.nez	a1, a3, a4
 	czero.eqz	a0, a0, a4

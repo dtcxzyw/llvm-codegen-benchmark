@@ -30,8 +30,8 @@ func00000000000010a6:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func00000000000031f8:

@@ -19,7 +19,7 @@ func000000000000018c:
 
 func0000000000000146:
 	sgtz	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -182,7 +182,7 @@ func0000000000000301:
 
 func00000000000000ca:
 	slti	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -212,12 +212,12 @@ func000000000000010c:
 func0000000000000306:
 	sltiu	a1, a1, 1055
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func00000000000000cc:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -249,7 +249,7 @@ func000000000000014c:
 	ret
 
 func0000000000000144:
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sltiu	a0, a0, 10
 	or	a0, a0, a1
@@ -317,13 +317,13 @@ func0000000000000106:
 	lui	a2, 244
 	addi	a2, a2, 575
 	sltu	a1, a2, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000186:
 	snez	a1, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

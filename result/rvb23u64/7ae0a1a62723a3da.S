@@ -37,17 +37,17 @@ func0000000000000108:
 	ret
 
 func0000000000000146:
-	slti	a2, a2, 0
-	slti	a1, a1, 0
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func00000000000000c6:
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	or	a0, a0, a2
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

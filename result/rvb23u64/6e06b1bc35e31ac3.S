@@ -45,12 +45,12 @@ func0000000000000094:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
-	slti	a1, a0, 0
-	not	a1, a1
-	slli	a1, a1, 1
-	sgtz	a0, a0
-	czero.nez	a0, a1, a0
+	sext.w	a1, a0
+	srliw	a0, a0, 31
+	not	a0, a0
+	slli	a0, a0, 1
+	sgtz	a1, a1
+	czero.nez	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 

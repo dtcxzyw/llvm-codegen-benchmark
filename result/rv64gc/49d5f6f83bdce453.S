@@ -32,7 +32,6 @@ func000000000000020a:
 	mv	a1, a0
 .LBB3_2:
 	srliw	a0, a1, 31
-	slli	a0, a0, 31
-	seqz	a0, a0
+	xori	a0, a0, 1
 	ret
 

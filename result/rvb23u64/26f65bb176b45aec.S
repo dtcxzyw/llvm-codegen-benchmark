@@ -9,7 +9,7 @@ func0000000000000034:
 func0000000000000006:
 	addi	a0, a0, -1
 	sext.h	a0, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

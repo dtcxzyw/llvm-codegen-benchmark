@@ -21,16 +21,16 @@ func0000000000000026:
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	mulw	a0, a0, a1
-	slti	a0, a0, 0
+	mul	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000000a:
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
-	mulw	a0, a1, a0
-	slti	a0, a0, 0
+	mul	a0, a1, a0
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

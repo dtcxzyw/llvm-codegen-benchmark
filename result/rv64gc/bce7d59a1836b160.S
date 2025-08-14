@@ -15,8 +15,8 @@ func0000000000000406:
 func000000000000000a:
 	srli	a1, a1, 10
 	sub	a0, a0, a1
-	addiw	a0, a0, 100
-	slti	a0, a0, 0
+	addi	a0, a0, 100
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

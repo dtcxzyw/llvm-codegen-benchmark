@@ -36,8 +36,8 @@ func0000000000000001:
 
 func000000000000008a:
 	slli	a1, a1, 8
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -56,8 +56,8 @@ func0000000000000026:
 
 func00000000000000a6:
 	slli	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000184:
@@ -81,8 +81,8 @@ func00000000000000a1:
 
 func000000000000002a:
 	slli	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -134,8 +134,8 @@ func00000000000000b8:
 
 func00000000000001ca:
 	slli	a1, a1, 16
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -255,8 +255,8 @@ func0000000000000161:
 
 func0000000000000146:
 	slli	a1, a1, 16
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000018:

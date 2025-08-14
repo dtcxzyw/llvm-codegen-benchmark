@@ -19,16 +19,16 @@ func0000000000000024:
 func000000000000000a:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000026:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func000000000000002a:
@@ -68,8 +68,8 @@ func0000000000000021:
 func0000000000000006:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000004:

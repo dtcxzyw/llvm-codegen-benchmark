@@ -10,8 +10,8 @@ func00000000000000a6:
 	addi	a1, a1, -1025
 	seqz	a1, a1
 	not	a1, a1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
+	add	a0, a0, a1
+	srliw	a0, a0, 31
 	ret
 
 .LCPI2_0:
@@ -28,8 +28,8 @@ func000000000000042a:
 func00000000000000aa:
 	seqz	a1, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -4
-	slti	a0, a0, 0
+	addi	a0, a0, -4
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -44,8 +44,8 @@ func000000000000008a:
 	li	a2, -300
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -60
-	slti	a0, a0, 0
+	addi	a0, a0, -60
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

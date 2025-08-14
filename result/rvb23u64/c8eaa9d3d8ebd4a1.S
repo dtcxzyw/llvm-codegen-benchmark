@@ -22,9 +22,9 @@ func000000000000002c:
 
 func000000000000008a:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	sltu	a2, a1, a2
-	slti	a1, a1, 0
+	sext.w	a3, a1
+	sltu	a2, a3, a2
+	srliw	a1, a1, 31
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
@@ -41,20 +41,20 @@ func000000000000016c:
 
 func00000000000000ca:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slt	a2, a1, a2
-	slti	a1, a1, 0
+	sext.w	a3, a1
+	slt	a2, a3, a2
+	srliw	a1, a1, 31
 	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000146:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	slt	a1, a1, a2
-	xori	a2, a3, 1
+	sext.w	a3, a1
+	srliw	a1, a1, 31
+	xori	a1, a1, 1
+	slt	a2, a3, a2
+	and	a1, a1, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 

@@ -3,8 +3,8 @@ func00000000000000a6:
 	beqz	a1, .LBB0_2
 	neg	a2, a2
 .LBB0_2:
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000086:
@@ -12,7 +12,7 @@ func0000000000000086:
 	beqz	a1, .LBB1_2
 	neg	a2, a2
 .LBB1_2:
-	addw	a0, a0, a2
-	slti	a0, a0, 0
+	add	a0, a0, a2
+	srliw	a0, a0, 31
 	ret
 

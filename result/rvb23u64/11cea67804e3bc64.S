@@ -1,7 +1,7 @@
 func0000000000000006:
 	sub	a1, a1, a0
-	addiw	a1, a1, 1
-	slti	a0, a1, 0
+	addi	a1, a1, 1
+	srliw	a0, a1, 31
 	ret
 
 func00000000000000a8:
@@ -13,8 +13,8 @@ func00000000000000a8:
 
 func000000000000000a:
 	sub	a1, a1, a0
-	addiw	a1, a1, 1
-	slti	a0, a1, 0
+	addi	a1, a1, 1
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

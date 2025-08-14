@@ -14,15 +14,15 @@ func0000000000000008:
 
 func00000000000012aa:
 	sub	a2, a2, a0
-	addw	a1, a1, a2
-	slti	a0, a1, 0
+	add	a1, a1, a2
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 
 func00000000000002aa:
 	sub	a2, a2, a0
-	addw	a1, a1, a2
-	slti	a0, a1, 0
+	add	a1, a1, a2
+	srliw	a0, a1, 31
 	xori	a0, a0, 1
 	ret
 

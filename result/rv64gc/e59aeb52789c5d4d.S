@@ -1,6 +1,6 @@
 func000000000000008a:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -16,25 +16,25 @@ func0000000000000001:
 	ret
 
 func000000000000018a:
-	addiw	a0, a0, 1
-	slti	a0, a0, 0
+	addi	a0, a0, 1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func000000000000000a:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000006:
-	addiw	a0, a0, 8
-	slti	a0, a0, 0
+	addi	a0, a0, 8
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000186:
-	addiw	a0, a0, 8
-	slti	a0, a0, 0
+	addi	a0, a0, 8
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000088:
@@ -63,8 +63,8 @@ func0000000000000008:
 	ret
 
 func00000000000001c6:
-	addiw	a0, a0, 1
-	slti	a0, a0, 0
+	addi	a0, a0, 1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000188:
@@ -90,8 +90,8 @@ func0000000000000108:
 	ret
 
 func0000000000000086:
-	addiw	a0, a0, -1
-	slti	a0, a0, 0
+	addi	a0, a0, -1
+	srliw	a0, a0, 31
 	ret
 
 func0000000000000184:

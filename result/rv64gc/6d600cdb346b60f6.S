@@ -35,14 +35,14 @@ func0000000000008414:
 	ret
 
 func000000000000a314:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	slti	a2, a1, 1000
-	slti	a3, a0, 0
-	slt	a0, a1, a0
-	xori	a1, a2, 1
-	or	a0, a0, a3
+	srliw	a0, a0, 31
+	slti	a3, a1, 1000
+	slt	a1, a1, a2
+	xori	a2, a3, 1
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000006302:
@@ -57,13 +57,13 @@ func0000000000006302:
 	ret
 
 func000000000000650c:
+	sext.w	a2, a0
 	sext.w	a1, a1
-	sext.w	a0, a0
-	slti	a2, a0, 0
+	srliw	a0, a0, 31
 	slti	a3, a1, 256
-	slt	a0, a0, a1
-	xori	a1, a3, 1
-	or	a0, a0, a2
+	slt	a1, a2, a1
+	xori	a2, a3, 1
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

@@ -16,9 +16,8 @@ func0000000000000013:
 	ret
 
 func0000000000000029:
-	sext.w	a1, a0
+	srliw	a1, a0, 31
 	addiw	a0, a0, -5
-	slti	a1, a1, 0
 	addi	a0, a0, 2
 	czero.nez	a0, a0, a1
 	addi	a0, a0, -2

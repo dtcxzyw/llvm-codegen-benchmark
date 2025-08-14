@@ -1,7 +1,7 @@
 func0000000000000018:
 	sext.h	a2, a0
 	neg	a3, a1
-	slti	a2, a2, 0
+	srli	a2, a2, 63
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

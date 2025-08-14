@@ -41,8 +41,8 @@ func0000000000000184:
 
 func0000000000000006:
 	andi	a0, a0, 1
-	subw	a1, a1, a0
-	slti	a0, a1, 0
+	sub	a1, a1, a0
+	srliw	a0, a1, 31
 	ret
 
 func000000000000000a:

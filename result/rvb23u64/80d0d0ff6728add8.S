@@ -7,7 +7,7 @@ func0000000000000041:
 func0000000000000046:
 	sub	a1, a1, a2
 	divw	a0, a1, a0
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	ret
 
 func000000000000000a:

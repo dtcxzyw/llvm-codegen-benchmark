@@ -2,7 +2,7 @@ func0000000000000e0a:
 	add	a1, a1, a2
 	slli	a1, a1, 39
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -25,7 +25,7 @@ func000000000000050a:
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	add	a0, a0, a1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

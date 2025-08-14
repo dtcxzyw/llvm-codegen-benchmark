@@ -1,7 +1,7 @@
 func0000000000000066:
 	slli	a2, a2, 52
 	lui	a3, 1
-	slti	a1, a1, 0
+	srli	a1, a1, 63
 	srli	a2, a2, 52
 	sub	a3, a3, a2
 	czero.nez	a0, a0, a1

@@ -45,7 +45,7 @@ func0000000000000014:
 func000000000000000a:
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	addi	a0, a0, 3
 	ret
 

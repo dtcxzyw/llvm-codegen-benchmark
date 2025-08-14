@@ -33,7 +33,7 @@ func0000000000000306:
 	andi	a1, a1, 2047
 	sltiu	a1, a1, 1055
 	xori	a1, a1, 1
-	slti	a0, a0, 0
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

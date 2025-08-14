@@ -71,10 +71,9 @@ func00000000000000e1:
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
+	srliw	a0, a0, 31
 	flt.s	a1, fa0, fa5
-	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
