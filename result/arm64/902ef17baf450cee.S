@@ -26,10 +26,9 @@ func0000000000000004:
 	and	x8, x2, #0xfffffffffffffff8
 	add	x9, x0, x1
 	add	x8, x9, x8
-	mov	w9, #65529
-	movk	w9, #3, lsl #16
+	mov	w9, #262136
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000000c:

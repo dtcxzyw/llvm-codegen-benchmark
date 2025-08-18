@@ -6,11 +6,10 @@ func000000000000000c:
 	ret
 
 func0000000000000054:
-	mov	w8, #1
+	mov	w8, #111149056
 	and	x9, x1, #0x7ff00000
-	movk	w8, #1696, lsl #16
 	cmp	x9, x8
-	cset	w8, lo
+	cset	w8, ls
 	and	w0, w0, w8
 	ret
 

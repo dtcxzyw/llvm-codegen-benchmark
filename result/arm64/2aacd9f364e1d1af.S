@@ -40,11 +40,10 @@ func00000000000000aa:
 
 func0000000000000086:
 	sub	w8, w2, w1
-	mov	w9, #1
+	mov	w9, #1073741824
 	add	w8, w8, w0
-	movk	w9, #16384, lsl #16
 	cmp	w8, w9
-	cset	w0, lt
+	cset	w0, le
 	ret
 
 func0000000000000008:

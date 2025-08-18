@@ -89,10 +89,9 @@ func0000000000000064:
 
 func0000000000000084:
 	add	x8, x0, x1, lsr #3
-	mov	w9, #65529
-	movk	w9, #3, lsl #16
+	mov	w9, #262136
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000026:

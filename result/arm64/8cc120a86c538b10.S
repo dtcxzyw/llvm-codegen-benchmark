@@ -7,10 +7,9 @@ func0000000000000018:
 
 func0000000000000014:
 	fmov	w9, s0
-	mov	w8, #1
-	movk	w8, #13056, lsl #16
+	mov	w8, #855638016
 	cmp	w9, w8
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000001:

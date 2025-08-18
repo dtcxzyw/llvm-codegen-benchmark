@@ -36,10 +36,9 @@ func0000000000000108:
 
 func0000000000000290:
 	fcmp	d0, d1
-	mov	w8, #65533
-	movk	w8, #32767, lsl #16
+	mov	w8, #2147483646
 	ccmp	w0, w8, #2, hi
-	cset	w0, hi
+	cset	w0, hs
 	ret
 
 func0000000000000202:

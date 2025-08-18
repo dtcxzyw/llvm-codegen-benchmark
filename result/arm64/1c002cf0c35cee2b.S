@@ -28,17 +28,15 @@ func0000000000000004:
 
 func0000000000000014:
 	mov	x8, #-2459565876494606883
-	movk	x8, #56798
 	movk	x8, #64989, lsl #48
 	cmp	x0, x8
-	csetm	w0, lo
+	csetm	w0, ls
 	ret
 
 func0000000000000006:
 	mov	x8, #-2459565876494606883
-	movk	x8, #56798
 	movk	x8, #64989, lsl #48
 	cmp	x0, x8
-	csetm	w0, lt
+	csetm	w0, le
 	ret
 

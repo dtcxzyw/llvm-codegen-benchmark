@@ -2,10 +2,9 @@ func0000000000000042:
 	mov	x8, #-6148914691236517206
 	mov	x9, #6148914691236517205
 	movk	x8, #43691
-	movk	x9, #21846
 	mul	x8, x1, x8
 	cmp	x8, x9
-	ccmp	x0, #0, #4, hs
+	ccmp	x0, #0, #4, hi
 	cset	w0, eq
 	ret
 

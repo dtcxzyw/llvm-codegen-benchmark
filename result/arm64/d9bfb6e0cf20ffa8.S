@@ -44,11 +44,10 @@ func000000000000008a:
 func000000000000000a:
 	add	w8, w1, w2
 	tst	w0, #0x1
-	mov	w9, #65533
+	mov	w9, #2147483646
 	cneg	w8, w8, ne
-	movk	w9, #32767, lsl #16
 	cmp	w8, w9
-	cset	w0, gt
+	cset	w0, ge
 	ret
 
 func0000000000000001:

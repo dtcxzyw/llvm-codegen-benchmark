@@ -9,10 +9,9 @@ func000000000000a50c:
 	mov	w8, #1073741822
 	cmp	x1, x8
 	ccmp	x2, x8, #0, le
-	mov	w8, #2
-	movk	w8, #49152, lsl #16
-	ccmp	w0, w8, #8, le
-	cset	w0, lt
+	mov	w8, #-1073741823
+	ccmp	w0, w8, #4, le
+	cset	w0, le
 	ret
 
 func000000000000c098:

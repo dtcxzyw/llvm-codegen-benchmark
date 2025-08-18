@@ -7,13 +7,12 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	mov	w8, #1
 	cmp	w1, #0
-	movk	w8, #27008, lsl #16
+	mov	w8, #1769996288
 	cneg	w9, w1, mi
 	cmp	w9, w8
 	mov	w8, #-2147483648
-	csel	w0, w0, w8, lt
+	csel	w0, w0, w8, le
 	ret
 
 func0000000000000038:

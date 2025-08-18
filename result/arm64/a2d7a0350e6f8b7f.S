@@ -139,12 +139,12 @@ func0000000000000108:
 	ret
 
 func0000000000000148:
-	mov	x8, #3689348814741910323
+	mov	x8, #-3689348814741910324
 	and	w9, w0, #0xff
-	eor	x8, x8, #0x3ffffffffffffff8
+	movk	x8, #3276, lsl #48
 	cmp	w9, #9
 	ccmp	x1, x8, #0, ls
-	cset	w0, gt
+	cset	w0, ge
 	ret
 
 func0000000000000034:

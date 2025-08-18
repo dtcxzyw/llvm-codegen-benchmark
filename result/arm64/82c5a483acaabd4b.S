@@ -20,10 +20,9 @@ func00000000000001a1:
 func000000000000002a:
 	lsr	x8, x0, #3
 	mov	x9, #4919131752989213764
-	movk	x9, #17475
-	sub	x8, x8, x1, lsr #3
 	movk	x9, #1092, lsl #48
+	sub	x8, x8, x1, lsr #3
 	cmp	x8, x9
-	cset	w0, gt
+	cset	w0, ge
 	ret
 

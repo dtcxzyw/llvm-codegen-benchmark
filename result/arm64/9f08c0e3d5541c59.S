@@ -15,11 +15,10 @@ func000000000000014a:
 
 func000000000000000a:
 	add	w8, w1, w2
-	mov	w9, #49151
+	mov	w9, #1073725440
 	add	w8, w8, w0
-	movk	w9, #16383, lsl #16
 	cmp	w8, w9
-	cset	w0, gt
+	cset	w0, ge
 	ret
 
 func0000000000000006:

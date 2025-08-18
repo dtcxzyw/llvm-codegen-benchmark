@@ -25,9 +25,9 @@ func0000000000000021:
 	and	x10, x10, #0x7ffffffffffffff8
 	madd	x8, x9, x8, x10
 	mov	x9, #-3689348814741910324
-	eor	x9, x9, #0xc000000000000001
+	movk	x9, #3276, lsl #48
 	ror	x8, x8, #2
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 

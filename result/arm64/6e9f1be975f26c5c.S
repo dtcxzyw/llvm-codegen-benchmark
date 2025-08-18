@@ -52,12 +52,11 @@ func0000000000000788:
 
 func0000000000000604:
 	add	x8, x2, x1
-	mov	w9, #65529
+	mov	w9, #262136
 	add	x8, x8, x0
-	movk	w9, #3, lsl #16
 	add	x8, x8, #16
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000608:

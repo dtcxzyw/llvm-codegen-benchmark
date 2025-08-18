@@ -4,9 +4,8 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	mov	w8, #65534
-	movk	w8, #16, lsl #16
+	mov	w8, #1114111
 	cmp	w0, w8
-	cset	w0, hi
+	cset	w0, hs
 	ret
 

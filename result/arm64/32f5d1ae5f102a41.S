@@ -28,10 +28,9 @@ func000000000000002c:
 	movk	w8, #43690, lsl #16
 	movk	w10, #10922, lsl #16
 	madd	w8, w9, w8, w10
-	mov	w9, #21844
-	movk	w9, #21845, lsl #16
+	mov	w9, #1431655765
 	cmp	w8, w9
-	cset	w0, hi
+	cset	w0, hs
 	ret
 
 func000000000000000a:

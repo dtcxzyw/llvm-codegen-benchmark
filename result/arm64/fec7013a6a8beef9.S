@@ -119,10 +119,9 @@ func0000000000000404:
 	ret
 
 func0000000000000202:
-	mov	w8, #2
-	movk	w8, #32768, lsl #16
+	mov	w8, #-2147483647
 	cmp	w2, w8
-	cset	w8, lo
+	cset	w8, ls
 	cmp	x0, #0
 	cset	w9, eq
 	orr	w9, w9, w1

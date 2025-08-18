@@ -17,10 +17,9 @@ func0000000000000086:
 	and	w8, w2, #0x3fffffff
 	sub	w9, w0, w1
 	add	w8, w9, w8
-	mov	w9, #1
-	movk	w9, #16384, lsl #16
+	mov	w9, #1073741824
 	cmp	w8, w9
-	cset	w0, lt
+	cset	w0, le
 	ret
 
 func0000000000000001:

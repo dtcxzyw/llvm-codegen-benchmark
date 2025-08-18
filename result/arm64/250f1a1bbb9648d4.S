@@ -20,16 +20,14 @@ func0000000000000002:
 
 func0000000000000004:
 	mov	x8, #7378697629483820646
-	movk	x8, #26213
 	movk	x8, #1638, lsl #48
 	cmp	x0, x8
-	cset	w0, hi
+	cset	w0, hs
 	ret
 
 func0000000000000006:
 	mov	x8, #6148914691236517205
-	movk	x8, #21844
 	cmp	x0, x8
-	cset	w0, hi
+	cset	w0, hs
 	ret
 

@@ -83,11 +83,10 @@ func0000000000000528:
 	ret
 
 func00000000000000a0:
-	mov	w8, #65534
-	movk	w8, #16, lsl #16
+	mov	w8, #1114111
 	cmp	w0, w8
 	mov	w8, #55296
-	ccmp	w1, w8, #4, ls
+	ccmp	w1, w8, #4, lo
 	cset	w0, eq
 	ret
 

@@ -1,11 +1,10 @@
 func0000000000000021:
 	mov	w8, #43691
-	mov	w9, #21846
+	mov	w9, #1431655765
 	movk	w8, #43690, lsl #16
-	movk	w9, #21845, lsl #16
 	msub	w8, w0, w8, w8
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000001:
@@ -14,10 +13,9 @@ func0000000000000001:
 	sub	w8, w8, w0
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
-	mov	w9, #21846
-	movk	w9, #21845, lsl #16
+	mov	w9, #1431655765
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000002c:

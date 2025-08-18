@@ -74,12 +74,11 @@ func0000000000000330:
 
 func0000000000000042:
 	mov	w8, #43691
-	mov	w9, #21846
 	cmp	w0, #0
+	mov	w9, #1431655765
 	movk	w8, #43690, lsl #16
-	movk	w9, #21845, lsl #16
 	mul	w8, w1, w8
 	ccmp	w8, w9, #0, ne
-	cset	w0, lo
+	cset	w0, ls
 	ret
 

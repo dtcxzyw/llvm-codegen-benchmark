@@ -30,11 +30,10 @@ func0000000000000041:
 	ret
 
 func0000000000000054:
-	mov	w8, #1
+	mov	w8, #111149056
 	and	x9, x0, #0x7ff00000
-	movk	w8, #1696, lsl #16
 	cmp	x9, x8
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000004c:

@@ -5,11 +5,10 @@ func0000000000000026:
 	ret
 
 func0000000000000024:
-	mov	w8, #1
-	movk	w8, #512, lsl #16
+	mov	w8, #33554432
 	cmp	w0, w8
 	mov	w8, #12
-	csel	w0, w8, wzr, lo
+	csel	w0, w8, wzr, ls
 	ret
 
 func0000000000000006:

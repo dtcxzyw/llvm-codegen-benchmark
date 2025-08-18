@@ -25,12 +25,11 @@ func0000000000000001:
 
 func0000000000000008:
 	cmp	x1, x2
-	mov	w9, #65531
+	mov	w9, #1073741820
 	csel	x8, x1, x2, lt
 	tst	w0, #0x1
-	movk	w9, #16383, lsl #16
 	csel	x8, x1, x8, ne
 	cmp	x8, x9
-	cset	w0, hi
+	cset	w0, hs
 	ret
 

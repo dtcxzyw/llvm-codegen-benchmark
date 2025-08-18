@@ -199,12 +199,11 @@ func0000000000000044:
 	ret
 
 func00000000000001f4:
-	mov	w8, #1
 	sub	w9, w1, w0
-	movk	w8, #16384, lsl #16
+	mov	w8, #1073741824
 	add	w9, w9, #100
 	cmp	w9, w8
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func00000000000001a4:

@@ -17,13 +17,12 @@ func0000000000000021:
 	ret
 
 func0000000000000084:
-	mov	w8, #1
-	movk	w8, #16384, lsl #16
+	mov	w8, #1073741824
 	cmp	x2, x8
-	cset	w9, lo
+	cset	w9, ls
 	cmp	x0, x8
 	bic	w8, w9, w1
-	csel	w0, wzr, w8, hs
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000181:

@@ -64,12 +64,11 @@ func0000000000000484:
 	ret
 
 func0000000000000084:
-	mov	w8, #1
 	add	x9, x1, #10
-	movk	w8, #256, lsl #16
+	mov	w8, #16777216
 	cmp	x9, #21
 	ccmp	x0, x8, #2, lo
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000108:

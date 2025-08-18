@@ -71,13 +71,12 @@ func0000000000000928:
 	ret
 
 func0000000000000110:
-	mov	w9, #65534
 	mov	w8, #-55296
-	movk	w9, #16, lsl #16
+	mov	w9, #1114111
 	add	w8, w0, w8
 	cmp	w0, w9
 	mov	w9, #2047
-	ccmp	w8, w9, #0, ls
+	ccmp	w8, w9, #0, lo
 	cset	w0, lo
 	ret
 

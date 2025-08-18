@@ -17,12 +17,11 @@ func00000000000004a6:
 
 func0000000000000886:
 	lsr	x8, x2, #3
-	mov	w9, #1
-	movk	w9, #16384, lsl #16
+	mov	w9, #1073741824
 	sub	w8, w8, w1
 	add	w8, w8, w0
 	cmp	w8, w9
-	cset	w0, lt
+	cset	w0, le
 	ret
 
 func00000000000004aa:

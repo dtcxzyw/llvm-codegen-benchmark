@@ -15,10 +15,9 @@ func0000000000000001:
 	add	w9, w0, w1
 	movk	w8, #43690, lsl #16
 	mul	w8, w9, w8
-	mov	w9, #21846
-	movk	w9, #21845, lsl #16
+	mov	w9, #1431655765
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000021:

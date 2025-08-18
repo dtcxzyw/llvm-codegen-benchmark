@@ -1,9 +1,8 @@
 func0000000000000a8c:
-	mov	w8, #1
+	mov	w8, #112197632
 	tst	x1, #0xfffff
-	movk	w8, #1712, lsl #16
 	ccmp	w0, w8, #0, eq
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000018c:

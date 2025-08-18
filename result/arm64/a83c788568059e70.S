@@ -21,10 +21,9 @@ func0000000000000006:
 
 func0000000000000004:
 	fcvtzs	w8, d0
-	mov	w9, #1
-	movk	w9, #2048, lsl #16
+	mov	w9, #134217728
 	cmp	w8, w9
-	cset	w8, lo
+	cset	w8, ls
 	and	w0, w8, w0
 	ret
 

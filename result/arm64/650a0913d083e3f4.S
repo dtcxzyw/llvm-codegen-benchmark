@@ -6,10 +6,9 @@ func0000000000000081:
 
 func00000000000000e4:
 	fcmp	d0, d1
-	mov	w8, #1
-	movk	w8, #2048, lsl #16
+	mov	w8, #134217728
 	ccmp	w0, w8, #2, eq
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000004a:

@@ -23,11 +23,10 @@ func0000000000000038:
 	ret
 
 func0000000000000034:
-	mov	w8, #65025
+	mov	w8, #2147483136
 	sub	w9, w0, #24
-	movk	w8, #32767, lsl #16
 	cmp	w9, w8
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func00000000000000a4:

@@ -39,10 +39,9 @@ func00000000000003aa:
 
 func0000000000000388:
 	add	w8, w0, w1, lsl #28
-	mov	w9, #65519
-	movk	w9, #32767, lsl #16
+	mov	w9, #2147483632
 	cmp	w8, w9
-	cset	w0, hi
+	cset	w0, hs
 	ret
 
 func00000000000001f8:

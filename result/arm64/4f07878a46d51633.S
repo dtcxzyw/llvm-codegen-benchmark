@@ -18,12 +18,13 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	mov	w8, #2
+	mov	w8, #-2147483645
 	mov	w9, #65533
-	movk	w8, #32768, lsl #16
-	movk	w9, #32767, lsl #16
 	cmp	w1, w8
-	csel	w8, w1, w8, gt
+	mov	w8, #2
+	movk	w9, #32767, lsl #16
+	movk	w8, #32768, lsl #16
+	csel	w8, w1, w8, ge
 	tst	w0, #0x1
 	sub	w8, w8, #2
 	csel	w0, w9, w8, ne

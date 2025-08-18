@@ -2,22 +2,22 @@ func0000000000000001:
 	mov	x8, #-3689348814741910324
 	mov	x9, #-7378697629483820647
 	movk	x8, #52429
-	eor	x9, x9, #0x8000000000000003
+	movk	x9, #6553, lsl #48
 	mul	x8, x0, x8
 	ror	x8, x8, #1
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func00000000000000a1:
 	mov	x8, #-3689348814741910324
 	mov	x9, #-7378697629483820647
 	movk	x8, #52429
-	eor	x9, x9, #0x8000000000000003
+	movk	x9, #6553, lsl #48
 	mul	x8, x0, x8
 	ror	x8, x8, #1
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func00000000000000a6:

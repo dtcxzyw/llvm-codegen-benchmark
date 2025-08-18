@@ -27,12 +27,12 @@ func0000000000000108:
 
 func0000000000000148:
 	and	w9, w1, #0xff
-	mov	x8, #3689348814741910323
+	mov	x8, #-3689348814741910324
 	sub	w9, w9, #58
-	eor	x8, x8, #0x3ffffffffffffff8
+	movk	x8, #3276, lsl #48
 	cmn	w9, #10
 	ccmp	x0, x8, #0, hs
-	cset	w0, gt
+	cset	w0, ge
 	ret
 
 func0000000000000024:

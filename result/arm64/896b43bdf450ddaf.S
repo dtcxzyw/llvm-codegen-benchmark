@@ -4,8 +4,7 @@ func0000000000000001:
 	movk	x8, #43691
 	mul	x8, x9, x8
 	mov	x9, #6148914691236517205
-	movk	x9, #21846
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 

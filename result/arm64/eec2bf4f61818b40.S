@@ -23,14 +23,13 @@ func0000000000000058:
 	ret
 
 func0000000000000068:
-	mov	w9, #1
+	mov	w9, #256901120
 	and	w8, w2, #0xfffffff
-	movk	w9, #3920, lsl #16
-	and	w8, w8, #0xfff800ff
 	cmp	w1, w9
 	mov	w9, #13
+	and	w8, w8, #0xfff800ff
 	movk	w9, #3928, lsl #16
-	ccmp	w8, w9, #4, hs
+	ccmp	w8, w9, #4, hi
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

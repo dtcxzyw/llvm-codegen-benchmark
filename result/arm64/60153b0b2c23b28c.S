@@ -5,10 +5,10 @@ func0000000000000028:
 	movk	x8, #52429
 	mul	x8, x9, x8
 	mov	x9, #-3689348814741910324
-	eor	x9, x9, #0xc000000000000001
+	movk	x9, #3276, lsl #48
 	ror	x8, x8, #2
 	ccmp	x8, x9, #2, hi
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000024:
@@ -33,11 +33,10 @@ func000000000000002c:
 	mov	x9, #4919131752989213764
 	cmp	x0, #0
 	movk	x8, #61167
-	movk	x9, #17477
-	mul	x8, x0, x8
 	movk	x9, #1092, lsl #48
+	mul	x8, x0, x8
 	ror	x8, x8, #2
 	ccmp	x8, x9, #2, ne
-	cset	w0, lo
+	cset	w0, ls
 	ret
 

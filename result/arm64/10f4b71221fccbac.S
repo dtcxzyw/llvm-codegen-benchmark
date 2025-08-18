@@ -151,12 +151,11 @@ func0000000000000084:
 func000000000000050c:
 	mov	w8, #1073741822
 	cmp	w2, w8
-	mov	w8, #2
-	movk	w8, #49152, lsl #16
+	mov	w8, #-1073741823
 	cset	w9, gt
 	cmp	w0, w8
 	orr	w8, w1, w9
-	cset	w9, lt
+	cset	w9, le
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

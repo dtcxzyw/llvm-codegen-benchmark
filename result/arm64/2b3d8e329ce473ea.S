@@ -20,9 +20,10 @@ func0000000000000208:
 	csel	x8, x0, x1, lo
 	movk	x9, #32768, lsl #16
 	add	x8, x8, x9
+	mov	x9, #-2147483633
 	add	x8, x8, #16
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000081:

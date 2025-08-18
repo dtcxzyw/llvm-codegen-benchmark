@@ -25,10 +25,9 @@ func0000000000000604:
 	mov	w9, #262140
 	add	x8, x8, x0
 	add	x8, x8, x9
-	mov	w9, #65521
-	movk	w9, #3, lsl #16
+	mov	w9, #262128
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000008:

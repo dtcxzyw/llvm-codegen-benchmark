@@ -70,11 +70,10 @@ func000000000000a082:
 	ret
 
 func0000000000004202:
-	mov	w8, #2
-	movk	w8, #32768, lsl #16
+	mov	w8, #-2147483647
 	cmp	w1, w8
-	ccmp	w2, w8, #0, hs
-	ccmp	x0, #0, #4, hs
+	ccmp	w2, w8, #0, hi
+	ccmp	x0, #0, #4, hi
 	cset	w0, eq
 	ret
 

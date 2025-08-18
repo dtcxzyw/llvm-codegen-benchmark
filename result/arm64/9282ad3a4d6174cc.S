@@ -134,9 +134,8 @@ func00000000000000cc:
 
 func000000000000010c:
 	mov	x8, #-6148914691236517206
-	movk	x8, #43689
 	cmp	x1, x8
-	ccmp	x0, #0, #0, ls
+	ccmp	x0, #0, #0, lo
 	cset	w0, ne
 	ret
 

@@ -4,23 +4,21 @@ func0000000000000001:
 	movk	x8, #52429
 	mul	x8, x9, x8
 	mov	x9, #7378697629483820646
-	movk	x9, #26215
 	movk	x9, #1638, lsl #48
 	ror	x8, x8, #3
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000041:
 	mov	x8, #-6148914691236517206
 	mov	x9, #6148914691236517205
 	movk	x8, #43691
-	movk	x9, #21846
-	madd	x8, x0, x8, x8
 	movk	x9, #5461, lsl #48
+	madd	x8, x0, x8, x8
 	ror	x8, x8, #2
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000021:

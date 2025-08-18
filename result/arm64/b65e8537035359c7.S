@@ -36,11 +36,10 @@ func0000000000000308:
 	ret
 
 func0000000000000518:
-	mov	w8, #65025
+	mov	w8, #2147483136
 	ubfx	w9, w1, #8, #1
-	movk	w8, #32767, lsl #16
 	cmp	x0, x8
-	csinc	w0, w9, wzr, hs
+	csinc	w0, w9, wzr, hi
 	ret
 
 func0000000000000182:

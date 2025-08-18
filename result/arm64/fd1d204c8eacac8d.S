@@ -13,11 +13,10 @@ func0000000000000101:
 	mov	x8, #-6148914691236517206
 	mov	x9, #-6148914691236517206
 	movk	x8, #43784
-	movk	x9, #43691
-	mul	x8, x0, x8
 	movk	x9, #2730, lsl #48
+	mul	x8, x0, x8
 	ror	x8, x8, #3
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 

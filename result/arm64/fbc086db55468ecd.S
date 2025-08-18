@@ -107,10 +107,9 @@ func00000000000000ac:
 	ret
 
 func0000000000000104:
-	mov	w8, #1
-	movk	w8, #24000, lsl #16
+	mov	w8, #1572864000
 	cmp	x0, x8
-	ccmp	x1, x2, #0, lo
+	ccmp	x1, x2, #0, ls
 	cset	w0, hi
 	ret
 

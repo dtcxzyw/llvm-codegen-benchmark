@@ -137,11 +137,10 @@ func0000000000000310:
 	ret
 
 func0000000000000518:
-	mov	w8, #65025
+	mov	w8, #2147483136
 	cmp	w0, #0
-	movk	w8, #32767, lsl #16
 	ccmp	x1, x8, #0, eq
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000030c:

@@ -50,11 +50,10 @@ func0000000000000006:
 
 func0000000000000024:
 	mov	w8, #-1048576
-	mov	w9, #1
+	mov	w9, #1072693248
 	madd	w8, w0, w1, w8
-	movk	w9, #16368, lsl #16
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func00000000000000a8:

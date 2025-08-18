@@ -168,10 +168,9 @@ func000000000000008c:
 
 func0000000000000144:
 	mov	x8, #4919131752989213764
-	movk	x8, #17477
 	movk	x8, #1092, lsl #48
 	cmp	x0, x8
-	ccmn	x1, #1, #4, lo
+	ccmn	x1, #1, #4, ls
 	cset	w0, gt
 	ret
 

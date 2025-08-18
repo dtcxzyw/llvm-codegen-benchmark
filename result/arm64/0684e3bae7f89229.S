@@ -221,11 +221,10 @@ func0000000000000026:
 	ret
 
 func00000000000000ca:
-	mov	w8, #2
 	cmp	w0, w1
-	movk	w8, #49152, lsl #16
-	ccmp	w2, w8, #8, le
-	cset	w0, lt
+	mov	w8, #-1073741823
+	ccmp	w2, w8, #4, le
+	cset	w0, le
 	ret
 
 func0000000000000301:

@@ -27,11 +27,10 @@ func00000000000000d4:
 
 func0000000000000024:
 	cmp	x2, #1
-	mov	w9, #1
+	mov	w9, #1073741824
 	csel	x8, x0, x1, eq
-	movk	w9, #16384, lsl #16
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000038:

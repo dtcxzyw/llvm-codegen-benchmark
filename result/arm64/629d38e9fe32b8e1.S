@@ -31,15 +31,14 @@ func0000000000000081:
 	ret
 
 func0000000000000444:
-	mov	x9, #1
 	cmp	w2, #15
-	movk	x9, #42852, lsl #16
+	mov	x9, #2808348672
 	csel	x8, xzr, x1, hi
 	movk	x9, #46771, lsl #32
 	add	x8, x8, x0
 	movk	x9, #3552, lsl #48
 	cmp	x8, x9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000a01:

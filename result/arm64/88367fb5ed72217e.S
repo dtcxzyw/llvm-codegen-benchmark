@@ -95,13 +95,12 @@ func0000000000000026:
 	ret
 
 func0000000000000044:
-	mov	x9, #1
+	mov	x9, #2808348672
 	add	x8, x1, x2
-	movk	x9, #42852, lsl #16
 	movk	x9, #46771, lsl #32
 	movk	x9, #3552, lsl #48
 	cmp	x8, x9
-	cset	w8, lo
+	cset	w8, ls
 	and	w0, w0, w8
 	ret
 

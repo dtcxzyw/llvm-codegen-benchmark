@@ -96,11 +96,10 @@ func00000000000000c1:
 	ret
 
 func000000000000030a:
-	mov	w8, #65503
-	movk	w8, #32767, lsl #16
+	mov	w8, #2147483616
 	cmp	x2, x8
 	mov	w8, #2147483647
-	csel	w8, w8, w1, hi
+	csel	w8, w8, w1, hs
 	cmp	w8, w0
 	cset	w0, gt
 	ret

@@ -53,12 +53,10 @@ func0000000000000b02:
 
 func0000000000000918:
 	mov	x8, #-2147483645
-	mov	x9, #-65532
 	cmp	w0, #1
-	add	x8, x1, x8
-	movk	x9, #32768, lsl #16
-	ccmp	x8, x9, #0, eq
-	cset	w0, lo
+	add	x9, x1, x8
+	ccmp	x9, x8, #0, eq
+	cset	w0, ls
 	ret
 
 func0000000000000210:

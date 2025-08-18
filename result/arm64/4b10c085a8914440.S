@@ -35,13 +35,12 @@ func0000000000000141:
 	ret
 
 func00000000000000aa:
-	mov	w8, #65531
 	lsl	w9, w0, #1
-	movk	w8, #1, lsl #16
-	add	w9, w9, #10
+	mov	w8, #131068
 	cmp	w0, w8
 	mov	w8, #262144
-	csel	w0, w8, w9, gt
+	add	w9, w9, #10
+	csel	w0, w8, w9, ge
 	ret
 
 func0000000000000006:

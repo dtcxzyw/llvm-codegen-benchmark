@@ -6,10 +6,11 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
+	mov	w8, #-2147483645
+	cmp	w0, w8
 	mov	w8, #2
 	movk	w8, #32768, lsl #16
-	cmp	w0, w8
-	csel	w8, w0, w8, gt
+	csel	w8, w0, w8, ge
 	lsl	w8, w8, #3
 	add	w0, w8, #15
 	ret

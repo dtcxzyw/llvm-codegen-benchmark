@@ -25,11 +25,10 @@ func000000000000006c:
 func0000000000000068:
 	lsl	x8, x2, #1
 	tst	w0, #0x1
-	mov	w9, #65533
-	movk	w9, #32767, lsl #16
+	mov	w9, #2147483646
 	csel	x8, x8, x1, ne
 	cmp	x8, x9
-	cset	w0, hi
+	cset	w0, hs
 	ret
 
 func0000000000000021:

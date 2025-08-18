@@ -36,9 +36,9 @@ func0000000000000e94:
 func00000000000000c6:
 	mov	x8, #-3689348814741910324
 	sub	x9, x0, #1
-	eor	x8, x8, #0xc000000000000001
+	movk	x8, #3276, lsl #48
 	cmp	x0, x8
-	ccmp	x9, x1, #0, lt
+	ccmp	x9, x1, #0, le
 	cset	w0, lt
 	ret
 

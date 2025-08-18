@@ -154,11 +154,10 @@ func000000000000294a:
 	ret
 
 func0000000000001101:
-	mov	w8, #1
 	tst	x1, #0xffffffffff000000
-	movk	w8, #512, lsl #16
+	mov	w8, #33554432
 	ccmp	x2, x8, #2, ne
-	ccmp	x0, #0, #0, lo
+	ccmp	x0, #0, #0, ls
 	cset	w0, eq
 	ret
 

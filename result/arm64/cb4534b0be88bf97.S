@@ -9,11 +9,10 @@ func000000000000000c:
 
 func000000000000004c:
 	cmp	w1, w2
-	mov	w9, #2
+	mov	w9, #-1073741823
 	csel	w8, w1, w2, lt
-	movk	w9, #49152, lsl #16
 	cmp	w8, w9
-	cset	w8, lt
+	cset	w8, le
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

@@ -26,10 +26,10 @@ func0000000000000024:
 func0000000000000006:
 	add	x8, x1, x1, lsl #2
 	mov	x9, #-3689348814741910324
-	eor	x9, x9, #0xc000000000000001
+	movk	x9, #3276, lsl #48
 	lsl	x8, x8, #1
 	cmp	x8, x9
-	cset	w8, lt
+	cset	w8, le
 	and	w0, w8, w0
 	ret
 

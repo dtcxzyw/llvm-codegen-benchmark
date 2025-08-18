@@ -15,10 +15,9 @@ func0000000000000001:
 	mov	w9, #6
 	movk	w8, #43690, lsl #16
 	madd	w8, w1, w8, w9
-	mov	w9, #21846
-	movk	w9, #21845, lsl #16
+	mov	w9, #1431655765
 	cmp	w8, w9
-	cset	w8, lo
+	cset	w8, ls
 	and	w0, w0, w8
 	ret
 

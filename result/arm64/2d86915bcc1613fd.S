@@ -11,12 +11,11 @@ func0000000000000061:
 
 func0000000000000001:
 	mov	w8, #65279
-	mov	w9, #258
+	mov	w9, #16843009
 	movk	w8, #65278, lsl #16
-	movk	w9, #257, lsl #16
 	madd	w8, w0, w8, w8
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func000000000000000c:
@@ -53,12 +52,11 @@ func0000000000000021:
 
 func0000000000000041:
 	mov	w8, #43691
-	mov	w9, #21846
+	mov	w9, #1431655765
 	movk	w8, #43690, lsl #16
-	movk	w9, #21845, lsl #16
 	madd	w8, w0, w8, w8
 	cmp	w8, w9
-	cset	w0, lo
+	cset	w0, ls
 	ret
 
 func0000000000000038:

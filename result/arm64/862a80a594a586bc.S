@@ -26,10 +26,9 @@ func0000000000000026:
 
 func000000000000002a:
 	orr	w8, w0, w1, lsr #29
-	mov	w9, #65023
-	movk	w9, #32767, lsl #16
+	mov	w9, #2147483136
 	cmp	w8, w9
-	cset	w0, gt
+	cset	w0, ge
 	ret
 
 func0000000000000014:
