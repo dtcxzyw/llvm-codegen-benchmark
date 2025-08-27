@@ -51,9 +51,9 @@ func000000000000010f:
 
 func0000000000000200:
 	sext.w	a2, a2
-	li	a3, 2047
 	andi	a1, a1, 1
-	sltu	a2, a3, a2
+	srli	a2, a2, 11
+	snez	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

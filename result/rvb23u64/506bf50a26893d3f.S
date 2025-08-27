@@ -362,10 +362,9 @@ func00000000000001b0:
 	ret
 
 func0000000000000618:
-	li	a2, 2047
-	sltu	a1, a2, a1
-	snez	a0, a0
+	srli	a1, a1, 11
 	or	a0, a0, a1
+	snez	a0, a0
 	ret
 
 func0000000000000508:

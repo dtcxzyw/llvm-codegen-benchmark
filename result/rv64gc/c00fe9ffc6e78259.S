@@ -440,11 +440,10 @@ func00000000000000c4:
 
 func0000000000000308:
 	sext.w	a1, a1
-	li	a2, 2047
+	srli	a1, a1, 11
 	srliw	a0, a0, 30
-	sltu	a1, a2, a1
-	snez	a0, a0
 	or	a0, a0, a1
+	snez	a0, a0
 	ret
 
 func0000000000000038:

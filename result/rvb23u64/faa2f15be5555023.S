@@ -60,11 +60,11 @@ func0000000000000281:
 	ret
 
 func0000000000000101:
-	zext.h	a0, a0
 	andi	a1, a1, 15
-	li	a2, 2047
+	slli	a0, a0, 48
 	seqz	a1, a1
-	sltu	a0, a2, a0
+	srli	a0, a0, 59
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

@@ -166,9 +166,8 @@ func0000000000000050:
 
 func0000000000000618:
 	andi	a1, a1, 2044
-	li	a2, 2047
-	snez	a1, a1
-	sltu	a0, a2, a0
+	srli	a0, a0, 11
 	or	a0, a0, a1
+	snez	a0, a0
 	ret
 

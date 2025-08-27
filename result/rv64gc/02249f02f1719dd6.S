@@ -30,8 +30,8 @@ func00000000000000f8:
 	srli	a2, a2, 48
 	or	a1, a1, a2
 	sext.w	a1, a1
-	li	a2, 2047
-	sltu	a1, a2, a1
+	srli	a1, a1, 11
+	snez	a1, a1
 	and	a0, a0, a1
 	ret
 

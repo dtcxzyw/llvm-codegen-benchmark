@@ -303,8 +303,8 @@ func00000000000000c6:
 func000000000000010a:
 	sext.b	a0, a0
 	sext.w	a1, a1
-	li	a2, 2047
-	sltu	a1, a2, a1
+	srli	a1, a1, 11
+	snez	a1, a1
 	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret

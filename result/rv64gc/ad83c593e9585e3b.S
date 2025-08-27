@@ -60,9 +60,9 @@ func0000000000000021:
 
 func0000000000000101:
 	sub	a1, a1, a2
-	li	a2, 2047
 	addi	a0, a0, -2048
-	sltu	a1, a2, a1
+	srli	a1, a1, 11
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

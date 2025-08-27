@@ -36,8 +36,7 @@ func0000000000000078:
 
 func0000000000000008:
 	addw	a1, a1, a2
-	li	a2, 2047
-	sltu	a2, a2, a1
+	srli	a2, a1, 11
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

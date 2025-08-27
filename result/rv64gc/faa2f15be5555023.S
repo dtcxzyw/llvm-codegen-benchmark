@@ -66,12 +66,11 @@ func0000000000000281:
 	ret
 
 func0000000000000101:
-	slli	a0, a0, 48
 	andi	a1, a1, 15
-	srli	a0, a0, 48
+	slli	a0, a0, 48
 	seqz	a1, a1
-	li	a2, 2047
-	sltu	a0, a2, a0
+	srli	a0, a0, 59
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

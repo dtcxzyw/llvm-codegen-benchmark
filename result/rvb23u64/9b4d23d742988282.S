@@ -14,8 +14,8 @@ func0000000000000425:
 
 func0000000000000400:
 	sext.w	a2, a2
-	li	a3, 2047
-	sltu	a2, a3, a2
+	srli	a2, a2, 11
+	snez	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1

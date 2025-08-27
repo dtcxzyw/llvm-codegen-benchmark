@@ -52,10 +52,10 @@ func0000000000000688:
 	sext.w	a0, a0
 	addi	a2, a1, -1
 	and	a1, a1, a2
-	li	a2, 2047
+	srli	a0, a0, 11
 	sext.w	a1, a1
 	seqz	a1, a1
-	sltu	a0, a2, a0
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

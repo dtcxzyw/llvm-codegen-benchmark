@@ -47,8 +47,8 @@ func00000000000000c3:
 	ret
 
 func00000000000000c0:
-	li	a2, 2047
-	sltu	a1, a2, a1
+	srli	a1, a1, 11
+	snez	a1, a1
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	ret

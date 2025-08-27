@@ -11,8 +11,8 @@ func0000000000000028:
 	bltu	a1, a0, .LBB1_2
 	mv	a1, a0
 .LBB1_2:
-	li	a0, 2047
-	sltu	a0, a0, a1
+	srli	a1, a1, 11
+	snez	a0, a1
 	ret
 
 func0000000000000021:
@@ -28,8 +28,8 @@ func0000000000000008:
 	bltu	a1, a0, .LBB3_2
 	mv	a1, a0
 .LBB3_2:
-	li	a0, 2047
-	sltu	a0, a0, a1
+	srli	a1, a1, 11
+	snez	a0, a1
 	ret
 
 func0000000000000001:

@@ -41,9 +41,9 @@ func0000000000000684:
 func0000000000000688:
 	sext.w	a0, a0
 	cpopw	a1, a1
-	li	a2, 2047
 	sltiu	a1, a1, 2
-	sltu	a0, a2, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

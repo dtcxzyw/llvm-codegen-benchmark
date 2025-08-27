@@ -109,9 +109,9 @@ func0000000000000298:
 func0000000000000050:
 	sext.w	a0, a0
 	andi	a1, a1, 16
-	li	a2, 2047
 	seqz	a1, a1
-	sltu	a0, a2, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

@@ -60,8 +60,8 @@ func0000000000000028:
 	beqz	a2, .LBB7_2
 	mv	a0, a1
 .LBB7_2:
-	li	a1, 2047
-	sltu	a0, a1, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	ret
 
 func00000000000000c6:

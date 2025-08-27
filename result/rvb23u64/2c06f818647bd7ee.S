@@ -66,8 +66,8 @@ func00000000000002a8:
 	slli	a2, a2, 8
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	li	a1, 2047
-	sltu	a0, a1, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	ret
 
 func00000000000002b8:

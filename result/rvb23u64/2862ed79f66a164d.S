@@ -58,10 +58,10 @@ func000000000000008c:
 
 func0000000000000028:
 	zext.b	a1, a1
-	li	a2, 2047
+	srli	a0, a0, 11
 	addi	a1, a1, -7
 	seqz	a1, a1
-	sltu	a0, a2, a0
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

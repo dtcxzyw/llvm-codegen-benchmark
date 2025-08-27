@@ -46,7 +46,7 @@ func0000000000000048:
 	li	a2, 12
 	minu	a1, a1, a2
 	addw	a0, a0, a1
-	li	a1, 2047
-	sltu	a0, a1, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	ret
 

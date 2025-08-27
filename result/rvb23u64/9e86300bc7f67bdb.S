@@ -242,10 +242,10 @@ func0000000000000026:
 
 func0000000000000088:
 	lui	a2, 1
+	srli	a0, a0, 11
 	addi	a2, a2, -1931
 	sltu	a1, a1, a2
-	li	a2, 2047
-	sltu	a0, a2, a0
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

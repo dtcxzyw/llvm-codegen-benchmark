@@ -30,8 +30,8 @@ func000000000000018f:
 	ret
 
 func0000000000000300:
-	li	a3, 2047
-	sltu	a2, a3, a2
+	srli	a2, a2, 11
+	snez	a2, a2
 	sh3add	a1, a1, a2
 	sh1add	a0, a1, a0
 	ret

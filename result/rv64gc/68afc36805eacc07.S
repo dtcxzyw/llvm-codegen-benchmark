@@ -36,10 +36,10 @@ func000000000000002c:
 func0000000000000301:
 	sext.w	a0, a0
 	slli	a1, a1, 56
-	li	a2, 2047
 	srai	a1, a1, 56
+	srli	a0, a0, 11
 	slti	a1, a1, -64
-	sltu	a0, a2, a0
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

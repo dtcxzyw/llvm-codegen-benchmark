@@ -62,8 +62,8 @@ func0000000000000294:
 
 func0000000000000108:
 	sltu	a1, a1, a0
-	li	a2, 2047
-	sltu	a0, a2, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

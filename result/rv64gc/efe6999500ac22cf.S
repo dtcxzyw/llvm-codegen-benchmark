@@ -36,9 +36,9 @@ func000000000000018f:
 	ret
 
 func0000000000000300:
-	li	a3, 2047
+	srli	a2, a2, 11
 	slli	a1, a1, 4
-	sltu	a2, a3, a2
+	snez	a2, a2
 	add	a0, a0, a1
 	slli	a2, a2, 1
 	add	a0, a0, a2

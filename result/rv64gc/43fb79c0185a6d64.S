@@ -30,11 +30,11 @@ func0000000000000681:
 
 func0000000000000701:
 	or	a1, a1, a2
-	li	a2, 2047
 	andi	a0, a0, 192
 	sext.w	a1, a1
 	addi	a0, a0, -128
-	sltu	a1, a2, a1
+	srli	a1, a1, 11
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

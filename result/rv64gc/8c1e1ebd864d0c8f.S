@@ -41,7 +41,7 @@ func0000000000000028:
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
-	li	a1, 2047
-	sltu	a0, a1, a0
+	srli	a0, a0, 11
+	snez	a0, a0
 	ret
 
