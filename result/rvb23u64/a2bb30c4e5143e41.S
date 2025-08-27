@@ -6,8 +6,8 @@ func0000000000000003:
 
 func0000000000000010:
 	sltiu	a1, a1, 2
-	bseti	a2, zero, 11
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 11
 	or	a0, a0, a1
 	ori	a0, a0, 64
 	ret
@@ -49,20 +49,19 @@ func0000000000000019:
 
 func0000000000000008:
 	srli	a1, a1, 32
-	lui	a2, 1048573
-	addi	a2, a2, 48
-	czero.nez	a1, a2, a1
 	lui	a2, 3
-	add	a1, a1, a2
+	addi	a2, a2, -48
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 48
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
 	slti	a1, a1, 2
-	li	a2, -2
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 3
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	or	a0, a0, a1
+	ori	a0, a0, 1
 	ret
 
 func0000000000000015:

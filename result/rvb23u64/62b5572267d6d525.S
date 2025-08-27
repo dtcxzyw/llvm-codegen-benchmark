@@ -21,9 +21,8 @@ func0000000000000029:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 3
+	slli	a1, a1, 1
+	addi	a1, a1, 1
 	mulw	a0, a0, a1
 	ret
 

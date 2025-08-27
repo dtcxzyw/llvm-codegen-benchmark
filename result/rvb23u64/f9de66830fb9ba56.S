@@ -18,18 +18,17 @@ func0000000000000008:
 	sext.w	a0, a0
 	srliw	a1, a1, 4
 	sltu	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 15
+	slli	a0, a0, 3
+	addiw	a0, a0, 7
 	ret
 
 func000000000000000a:
 	sext.w	a0, a0
 	srliw	a1, a1, 6
 	slt	a0, a0, a1
-	li	a1, 997
-	czero.eqz	a0, a1, a0
-	addiw	a0, a0, 2
+	li	a1, -997
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 999
 	ret
 
 func0000000000000014:

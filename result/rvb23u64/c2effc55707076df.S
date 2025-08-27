@@ -21,9 +21,9 @@ func0000000000000107:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 12
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 12
+	xori	a1, a1, 1
+	slli	a1, a1, 2
+	addiw	a1, a1, 8
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret

@@ -21,10 +21,10 @@ func0000000000000001:
 func000000000000000a:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, -128
 	slti	a2, a2, 49
-	czero.eqz	a2, a3, a2
-	addi	a2, a2, 408
+	xori	a2, a2, 1
+	slli	a2, a2, 7
+	addiw	a2, a2, 280
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1

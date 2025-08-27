@@ -1,9 +1,8 @@
 func0000000000000004:
 	and	a1, a1, a2
-	li	a2, -2
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 3
+	seqz	a1, a1
+	sh1add	a0, a1, a0
+	addi	a0, a0, 1
 	ret
 
 func0000000000000053:

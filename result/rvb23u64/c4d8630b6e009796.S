@@ -67,9 +67,9 @@ func0000000000000065:
 func0000000000000185:
 	sext.w	a1, a0
 	sltiu	a1, a1, 2
-	li	a2, 253
-	czero.nez	a1, a2, a1
+	li	a2, -253
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 1
+	addiw	a0, a0, 254
 	ret
 

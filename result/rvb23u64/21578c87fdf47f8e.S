@@ -17,9 +17,9 @@ func0000000000000008:
 func0000000000000018:
 	sext.w	a1, a1
 	addi	a1, a1, -100
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 12
+	seqz	a1, a1
+	slli	a1, a1, 2
+	addi	a1, a1, 8
 	srlw	a0, a0, a1
 	ret
 

@@ -48,9 +48,8 @@ func0000000000000141:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sgtz	a1, a1
-	li	a2, -4
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 9
+	slli	a1, a1, 2
+	addi	a1, a1, 5
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -31,10 +31,10 @@ func0000000000000013:
 
 func000000000000018c:
 	sltiu	a1, a1, 3
-	li	a2, 56
-	czero.nez	a1, a2, a1
+	li	a2, -56
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a0, a0, 88
 	ret
 
 func000000000000014c:

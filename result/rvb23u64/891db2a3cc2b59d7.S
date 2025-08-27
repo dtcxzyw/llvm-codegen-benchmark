@@ -18,9 +18,8 @@ func000000000000000c:
 	addi	a1, a1, -96
 	snez	a1, a1
 	and	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 104
+	slli	a0, a0, 3
+	addiw	a0, a0, 96
 	ret
 
 func0000000000000008:
@@ -28,9 +27,8 @@ func0000000000000008:
 	sltiu	a1, a1, 129
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 104
+	slli	a0, a0, 3
+	addiw	a0, a0, 96
 	ret
 
 func0000000000000004:

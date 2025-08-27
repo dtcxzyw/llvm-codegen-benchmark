@@ -1,9 +1,8 @@
 func0000000000000003:
 	andi	a1, a1, 1
 	bexti	a2, a2, 17
-	lui	a3, 1048575
-	czero.nez	a2, a3, a2
-	lui	a3, 2
+	lui	a3, 1
+	czero.eqz	a2, a3, a2
 	add	a2, a2, a3
 	bseti	a3, zero, 11
 	czero.nez	a3, a3, a1

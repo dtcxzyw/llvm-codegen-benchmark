@@ -34,10 +34,10 @@ func0000000000000007:
 	lui	a2, 208
 	addi	a2, a2, 32
 	xor	a1, a1, a2
-	li	a2, -20
-	czero.nez	a1, a2, a1
+	li	a2, 20
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -32
+	addiw	a0, a0, -52
 	ret
 
 func0000000000000006:

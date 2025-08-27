@@ -15,11 +15,9 @@ func000000000000000a:
 
 func0000000000000000:
 	andi	a2, a2, 1
-	li	a3, -2
-	czero.nez	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, -7
+	sh1add	a0, a2, a0
+	addi	a0, a0, -9
 	zext.w	a0, a0
 	ret
 
@@ -31,12 +29,10 @@ func0000000000000015:
 	ret
 
 func000000000000001b:
-	andi	a2, a2, 1
-	li	a3, -8
-	czero.nez	a2, a3, a2
+	slli	a2, a2, 3
+	ori	a2, a2, -13
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, -5
+	addw	a0, a0, a2
 	ret
 
 func000000000000000b:

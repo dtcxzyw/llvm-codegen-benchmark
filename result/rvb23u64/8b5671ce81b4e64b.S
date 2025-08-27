@@ -1,9 +1,9 @@
 func0000000000000108:
 	srliw	a0, a0, 16
 	sltiu	a1, a0, 17
-	li	a2, -404
-	czero.nez	a1, a2, a1
-	addiw	a1, a1, 2
+	li	a2, 404
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, -402
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 2
 	ret

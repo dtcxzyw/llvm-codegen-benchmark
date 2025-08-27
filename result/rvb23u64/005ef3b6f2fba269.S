@@ -7,9 +7,9 @@ func0000000000000003:
 
 func0000000000000019:
 	bexti	a0, a0, 20
-	lui	a1, 1048572
-	czero.nez	a0, a1, a0
-	lui	a1, 524340
-	add	a0, a0, a1
+	lui	a1, 4
+	czero.eqz	a0, a1, a0
+	lui	a1, 524336
+	or	a0, a0, a1
 	ret
 

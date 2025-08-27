@@ -34,18 +34,16 @@ func0000000000000008:
 
 func0000000000000014:
 	srli	a0, a0, 32
-	li	a1, -1
-	slli	a1, a1, 43
-	czero.eqz	a0, a1, a0
-	li	a1, 7
-	slli	a1, a1, 43
-	add	a0, a0, a1
+	bseti	a1, zero, 43
+	czero.nez	a0, a1, a0
+	bseti	a0, a0, 44
+	bseti	a0, a0, 45
 	ret
 
 func0000000000000018:
 	sltiu	a0, a0, 4
-	li	a1, -4
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 9
+	xori	a0, a0, 1
+	slli	a0, a0, 2
+	addi	a0, a0, 5
 	ret
 

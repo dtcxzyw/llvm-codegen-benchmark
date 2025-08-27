@@ -54,8 +54,8 @@ func0000000000000004:
 func0000000000000018:
 	zext.h	a0, a0
 	sltiu	a0, a0, 61
-	li	a1, -64
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 128
+	xori	a0, a0, 1
+	slli	a0, a0, 6
+	addi	a0, a0, 64
 	ret
 

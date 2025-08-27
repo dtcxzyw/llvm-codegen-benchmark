@@ -97,9 +97,8 @@ func0000000000000015:
 func0000000000000019:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 19
+	slli	a1, a1, 3
+	addi	a1, a1, 11
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

@@ -10,9 +10,9 @@ func0000000000000001:
 func000000000000000c:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, 32
-	czero.eqz	a1, a2, a1
-	addiw	a1, a1, 16
+	li	a2, -32
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 48
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -20,9 +20,9 @@ func0000000000000008:
 	andi	a0, a0, 1
 	srliw	a1, a1, 16
 	sltiu	a1, a1, 17
-	li	a2, -404
-	czero.nez	a1, a2, a1
-	addiw	a1, a1, 2
+	li	a2, 404
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, -402
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 2
 	ret

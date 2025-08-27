@@ -18,9 +18,8 @@ func0000000000000018:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	sltu	a0, a1, a0
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 136
+	slli	a0, a0, 3
+	addiw	a0, a0, 128
 	ret
 
 func000000000000000a:

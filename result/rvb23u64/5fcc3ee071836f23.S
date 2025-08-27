@@ -48,11 +48,11 @@ func00000000000000a6:
 
 func000000000000008a:
 	sext.w	a0, a0
-	bexti	a2, a2, 25
-	li	a3, -4
-	czero.nez	a2, a3, a2
+	lui	a3, 8192
+	and	a2, a2, a3
+	srli	a2, a2, 23
 	add	a1, a1, a2
-	addiw	a1, a1, 8
+	addiw	a1, a1, 4
 	slt	a0, a0, a1
 	ret
 

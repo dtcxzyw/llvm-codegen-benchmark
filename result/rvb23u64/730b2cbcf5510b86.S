@@ -84,11 +84,10 @@ func0000000000000024:
 	sext.w	a0, a0
 	lui	a2, 24576
 	and	a1, a1, a2
-	sltiu	a0, a0, 2
 	seqz	a1, a1
+	sltiu	a0, a0, 2
 	and	a0, a0, a1
-	li	a1, -4
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 19
+	slli	a0, a0, 2
+	addi	a0, a0, 15
 	ret
 

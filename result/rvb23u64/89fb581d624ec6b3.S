@@ -7,15 +7,15 @@ func0000000000000003:
 
 func0000000000000009:
 	srliw	a0, a0, 16
-	li	a1, -16
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 24
+	seqz	a0, a0
+	slli	a0, a0, 4
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000019:
 	sext.w	a0, a0
-	li	a1, 256
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 8
 	addiw	a0, a0, 18
 	ret
 
@@ -37,9 +37,9 @@ func000000000000000d:
 
 func0000000000000011:
 	srliw	a0, a0, 16
-	li	a1, -16
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 24
+	snez	a0, a0
+	slli	a0, a0, 4
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000002:

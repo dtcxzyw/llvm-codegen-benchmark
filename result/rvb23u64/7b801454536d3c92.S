@@ -1,15 +1,15 @@
 func0000000000000009:
 	srli	a0, a0, 32
-	li	a1, 32
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 5
 	addiw	a0, a0, 16
 	ret
 
 func0000000000000029:
 	srli	a0, a0, 16
-	li	a1, -16
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 24
+	seqz	a0, a0
+	slli	a0, a0, 4
+	addiw	a0, a0, 8
 	ret
 
 func000000000000000d:

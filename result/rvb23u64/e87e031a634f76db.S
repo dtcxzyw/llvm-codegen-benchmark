@@ -9,32 +9,29 @@ func0000000000000003:
 
 func000000000000000c:
 	andi	a2, a2, 1
-	li	a3, -2
 	slli	a1, a1, 49
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 3
+	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
+	ori	a0, a0, 1
 	ret
 
 func0000000000000000:
 	andi	a2, a2, 1
-	li	a3, -2
 	slli	a1, a1, 49
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 3
+	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
+	ori	a0, a0, 1
 	ret
 
 func0000000000000002:
 	andi	a2, a2, 1
-	li	a3, -2
-	czero.nez	a2, a3, a2
-	add	a0, a0, a2
-	addi	a0, a0, 3
 	slli	a1, a1, 54
+	slli	a2, a2, 1
 	or	a0, a0, a1
+	or	a0, a0, a2
+	ori	a0, a0, 1
 	ret
 
 func000000000000000f:

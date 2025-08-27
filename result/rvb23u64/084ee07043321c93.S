@@ -2,9 +2,8 @@ func0000000000000181:
 	sext.w	a0, a0
 	seqz	a0, a0
 	and	a0, a0, a1
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 283
+	slli	a0, a0, 1
+	addiw	a0, a0, 281
 	ret
 
 func0000000000000021:
@@ -23,8 +22,7 @@ func0000000000000024:
 	bexti	a1, a1, 11
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 

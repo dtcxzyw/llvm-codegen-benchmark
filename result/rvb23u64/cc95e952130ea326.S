@@ -14,9 +14,9 @@ func000000000000000a:
 
 func0000000000000004:
 	srli	a1, a1, 32
-	li	a2, 32
-	czero.eqz	a1, a2, a1
-	addiw	a1, a1, 31
+	li	a2, -32
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 63
 	xor	a0, a0, a1
 	ret
 

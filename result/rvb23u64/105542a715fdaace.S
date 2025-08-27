@@ -9,10 +9,10 @@ func0000000000000021:
 
 func0000000000000294:
 	srli	a1, a0, 32
-	li	a2, -64
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	slli	a1, a1, 6
 	srli	a0, a0, 31
-	addi	a1, a1, -32
+	addiw	a1, a1, -96
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 502
 	ret

@@ -1,9 +1,8 @@
 func0000000000000007:
 	zext.b	a1, a1
-	li	a2, -8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, 16
+	seqz	a1, a1
+	sh3add	a0, a1, a0
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000051:
@@ -40,10 +39,9 @@ func0000000000000013:
 func0000000000000011:
 	zext.b	a1, a1
 	sltiu	a1, a1, 16
-	li	a2, -64
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 6
 	add	a0, a0, a1
-	addiw	a0, a0, -65
+	addiw	a0, a0, -129
 	ret
 
 func0000000000000028:
@@ -80,10 +78,10 @@ func0000000000000021:
 func0000000000000029:
 	sext.b	a1, a1
 	slti	a1, a1, 97
-	li	a2, 32
-	czero.eqz	a1, a2, a1
+	li	a2, -32
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -97
+	addiw	a0, a0, -65
 	ret
 
 func0000000000000023:

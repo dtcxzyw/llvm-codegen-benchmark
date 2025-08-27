@@ -1,10 +1,9 @@
 func000000000000018f:
 	sltiu	a2, a2, 4
-	li	a3, -4
-	czero.eqz	a2, a3, a2
+	xori	a2, a2, 1
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 9
+	addi	a0, a0, 5
 	ret
 
 func000000000000014e:

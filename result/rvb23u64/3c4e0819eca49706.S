@@ -1,8 +1,8 @@
 func00000000000000e1:
 	sext.w	a1, a1
-	li	a2, -128
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 256
+	seqz	a1, a1
+	slli	a1, a1, 7
+	addi	a1, a1, 128
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -12,9 +12,8 @@ func0000000000000561:
 	sext.w	a1, a1
 	bseti	a2, zero, 11
 	slt	a1, a2, a1
-	li	a2, -64
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 128
+	slli	a1, a1, 6
+	addi	a1, a1, 64
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

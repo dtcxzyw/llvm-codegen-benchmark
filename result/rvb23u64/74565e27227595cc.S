@@ -35,9 +35,8 @@ func000000000000000f:
 
 func000000000000000c:
 	andi	a2, a2, 1
-	li	a3, -4
-	czero.nez	a2, a3, a2
-	addi	a2, a2, 16
+	slli	a2, a2, 2
+	addi	a2, a2, 12
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

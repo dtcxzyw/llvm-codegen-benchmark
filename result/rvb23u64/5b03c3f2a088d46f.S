@@ -1,10 +1,9 @@
 func0000000000000001:
 	zext.h	a0, a0
 	andi	a1, a1, 1
-	li	a2, -8
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 3
 	addi	a0, a0, -129
-	addiw	a1, a1, 4
+	addi	a1, a1, -4
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 18
 	ret

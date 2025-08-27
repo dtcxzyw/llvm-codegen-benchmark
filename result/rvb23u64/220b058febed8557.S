@@ -19,14 +19,13 @@ func0000000000000011:
 
 func0000000000000005:
 	sext.w	a1, a1
-	li	a2, -2
-	addi	a1, a1, 1
-	czero.eqz	a1, a2, a1
 	lui	a2, 128
+	addi	a1, a1, 1
 	addi	a2, a2, -8
+	seqz	a1, a1
 	and	a0, a0, a2
-	add	a0, a0, a1
-	addi	a0, a0, -8
+	sh1add	a0, a1, a0
+	addi	a0, a0, -10
 	ret
 
 func000000000000001b:

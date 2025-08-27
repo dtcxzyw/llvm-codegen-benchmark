@@ -12,10 +12,9 @@ func000000000000001f:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 52
+	seqz	a1, a1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 48
 	ret
 
 func000000000000004c:

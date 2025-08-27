@@ -30,10 +30,9 @@ func0000000000000008:
 
 func0000000000000009:
 	zext.b	a1, a1
-	li	a2, -2
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 3
-	slliw	a0, a0, 3
-	or	a0, a0, a1
+	seqz	a1, a1
+	slli	a0, a0, 3
+	sh1add	a0, a1, a0
+	addiw	a0, a0, 1
 	ret
 

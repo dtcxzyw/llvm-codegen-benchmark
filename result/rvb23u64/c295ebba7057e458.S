@@ -17,10 +17,10 @@ func000000000000004f:
 func000000000000006f:
 	srliw	a2, a2, 31
 	and	a0, a0, a2
-	li	a2, 32
-	czero.nez	a0, a2, a0
+	li	a2, -32
+	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
-	addi	a0, a0, 208
+	addi	a0, a0, 240
 	ret
 
 func000000000000001f:

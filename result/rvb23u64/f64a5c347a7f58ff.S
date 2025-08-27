@@ -13,12 +13,10 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 1
-	li	a3, -8
-	czero.nez	a2, a3, a2
+	slli	a2, a2, 3
+	ori	a2, a2, -13
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, -5
+	addw	a0, a0, a2
 	ret
 
 func0000000000000001:

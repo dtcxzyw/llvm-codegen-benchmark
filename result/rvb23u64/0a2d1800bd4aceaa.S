@@ -32,12 +32,11 @@ func0000000000000002:
 
 func0000000000000010:
 	sltu	a1, a2, a1
-	lui	a2, 1048560
-	czero.nez	a1, a2, a1
-	lui	a2, 18
-	addi	a2, a2, 2
-	add	a1, a1, a2
+	lui	a2, 16
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
+	bseti	a0, a0, 1
+	bseti	a0, a0, 13
 	ret
 
 func0000000000000015:

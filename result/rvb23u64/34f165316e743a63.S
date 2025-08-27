@@ -44,10 +44,10 @@ func000000000000003c:
 func000000000000003f:
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	li	a3, 52
-	czero.nez	a2, a3, a2
+	li	a3, -52
+	czero.eqz	a2, a3, a2
 	add	a1, a1, a2
-	addiw	a1, a1, 2
+	addiw	a1, a1, 54
 	sh2add	a0, a1, a0
 	ret
 

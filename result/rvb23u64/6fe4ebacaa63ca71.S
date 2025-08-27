@@ -9,11 +9,11 @@ func0000000000000011:
 
 func0000000000000003:
 	zext.b	a1, a1
-	li	a2, -16
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	slli	a1, a1, 4
 	andi	a0, a0, 1
 	sh1add	a0, a0, a1
-	addi	a0, a0, 17
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000009:

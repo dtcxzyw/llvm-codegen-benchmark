@@ -45,9 +45,9 @@ func0000000000000041:
 func000000000000001f:
 	sext.w	a1, a1
 	addi	a1, a1, -120
-	li	a2, -32
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addiw	a0, a0, 87
+	addiw	a0, a0, 55
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000001:
-	bexti	a0, a0, 15
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 115
+	srli	a0, a0, 10
+	andi	a0, a0, 32
+	addiw	a0, a0, 83
 	ret
 
 func000000000000000c:

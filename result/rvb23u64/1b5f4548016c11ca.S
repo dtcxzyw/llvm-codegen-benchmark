@@ -29,8 +29,8 @@ func0000000000000006:
 
 func0000000000000008:
 	sltiu	a0, a0, 2
-	bseti	a1, zero, 11
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 11
 	addiw	a0, a0, 64
 	ret
 

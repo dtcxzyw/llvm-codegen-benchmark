@@ -26,9 +26,9 @@ func0000000000000061:
 	sext.w	a0, a0
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
-	li	a1, 94
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 3
+	li	a1, -94
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 97
 	ret
 
 func0000000000000001:

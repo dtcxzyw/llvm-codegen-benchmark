@@ -58,10 +58,10 @@ func0000000000000029:
 	lui	a2, 4
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
-	li	a2, 24
-	czero.eqz	a1, a2, a1
+	li	a2, -24
+	czero.nez	a1, a2, a1
 	andi	a0, a0, 1
 	or	a0, a0, a1
-	addi	a0, a0, 10
+	addi	a0, a0, 34
 	ret
 

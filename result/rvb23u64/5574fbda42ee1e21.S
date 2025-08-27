@@ -20,27 +20,25 @@ func00000000000000c3:
 
 func0000000000000023:
 	sext.w	a2, a2
-	li	a3, -4
 	zext.w	a1, a1
-	czero.eqz	a2, a3, a2
 	lui	a3, 2
+	seqz	a2, a2
 	addi	a3, a3, 368
 	mul	a1, a1, a3
-	add	a0, a0, a2
 	add	a0, a0, a1
-	addi	a0, a0, 36
+	sh2add	a0, a2, a0
+	addi	a0, a0, 32
 	ret
 
 func000000000000002f:
 	sext.w	a2, a2
-	li	a3, -4
 	slli.uw	a1, a1, 2
 	addi	a2, a2, -4
 	sh2add	a1, a1, a1
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 12
+	sh2add	a0, a2, a0
+	addi	a0, a0, 8
 	ret
 
 func000000000000003f:
@@ -67,13 +65,12 @@ func0000000000000030:
 
 func000000000000019f:
 	sext.w	a2, a2
-	li	a3, -2
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
-	add	a0, a0, a2
-	addi	a0, a0, 8
+	sh1add	a0, a2, a0
+	addi	a0, a0, 6
 	ret
 
 func0000000000000033:

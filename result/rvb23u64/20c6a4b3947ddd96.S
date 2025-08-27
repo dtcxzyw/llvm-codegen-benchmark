@@ -1,20 +1,19 @@
 func0000000000000003:
 	andi	a2, a2, 1
-	li	a3, 24
-	czero.eqz	a2, a3, a2
+	li	a3, -24
+	czero.nez	a2, a3, a2
 	add	a1, a1, a2
-	addiw	a1, a1, 8
+	addiw	a1, a1, 32
 	and	a0, a0, a1
 	ret
 
 func0000000000000001:
 	andi	a2, a2, 1
-	lui	a3, 1048560
-	addi	a3, a3, 1024
-	czero.nez	a2, a3, a2
 	lui	a3, 16
-	add	a1, a1, a3
-	addw	a1, a1, a2
+	addi	a3, a3, -1024
+	czero.eqz	a2, a3, a2
+	add	a1, a1, a2
+	addiw	a1, a1, 1024
 	and	a0, a0, a1
 	ret
 

@@ -1,8 +1,7 @@
 func000000000000001f:
 	andi	a0, a0, 1
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 160
+	slli	a0, a0, 5
+	addiw	a0, a0, 128
 	ret
 
 func000000000000001b:

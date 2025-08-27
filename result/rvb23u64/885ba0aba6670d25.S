@@ -10,27 +10,24 @@ func0000000000000010:
 func0000000000000028:
 	sext.h	a1, a1
 	sgtz	a1, a1
-	li	a2, -16
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, -8
 	ret
 
 func0000000000000029:
 	sext.h	a1, a1
 	sgtz	a1, a1
-	li	a2, -16
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, 8
+	addi	a0, a0, -8
 	ret
 
 func0000000000000004:
-	zext.h	a1, a1
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, -3
+	slli	a1, a1, 48
+	seqz	a1, a1
+	sh2add	a0, a1, a0
+	addi	a0, a0, -7
 	ret
 
 func0000000000000007:

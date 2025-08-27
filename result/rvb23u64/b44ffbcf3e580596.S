@@ -35,9 +35,8 @@ func0000000000000302:
 	addi	a0, a0, -18
 	seqz	a0, a0
 	or	a0, a0, a1
-	li	a1, -256
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 288
+	slli	a0, a0, 8
+	addiw	a0, a0, 32
 	ret
 
 func0000000000000058:

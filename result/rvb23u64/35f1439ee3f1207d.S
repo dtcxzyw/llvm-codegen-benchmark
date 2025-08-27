@@ -82,11 +82,10 @@ func000000000000018c:
 
 func000000000000008c:
 	sext.w	a1, a1
-	snez	a0, a0
 	sltiu	a1, a1, 2
+	snez	a0, a0
 	and	a0, a0, a1
-	lui	a1, 16
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 16
 	addiw	a0, a0, 2
 	ret
 

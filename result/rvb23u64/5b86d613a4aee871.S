@@ -10,9 +10,8 @@ func000000000000000a:
 
 func000000000000002a:
 	andi	a1, a1, 1
-	li	a2, -4
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 12
+	slli	a1, a1, 2
+	addi	a1, a1, 8
 	mulw	a0, a1, a0
 	slti	a0, a0, 240
 	xori	a0, a0, 1

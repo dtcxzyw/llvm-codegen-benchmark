@@ -26,9 +26,8 @@ func0000000000000101:
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 224
+	slli	a0, a0, 3
+	addi	a0, a0, 216
 	ret
 
 func000000000000002c:

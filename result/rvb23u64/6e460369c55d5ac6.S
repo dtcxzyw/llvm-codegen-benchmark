@@ -1,10 +1,10 @@
 func0000000000000003:
 	sext.w	a2, a2
-	lui	a3, 1048568
-	czero.eqz	a2, a3, a2
-	lui	a3, 13
+	lui	a3, 8
+	czero.nez	a2, a3, a2
+	lui	a3, 5
 	addi	a3, a3, 5
-	add	a2, a2, a3
+	or	a2, a2, a3
 	lui	a3, 1
 	addi	a3, a3, -2024
 	and	a0, a0, a2
@@ -14,10 +14,10 @@ func0000000000000003:
 
 func0000000000000009:
 	sext.w	a2, a2
-	li	a3, -816
+	li	a3, 816
 	sltiu	a2, a2, 2
-	czero.eqz	a2, a3, a2
-	addi	a2, a2, -16
+	czero.nez	a2, a3, a2
+	addiw	a2, a2, -832
 	and	a0, a0, a2
 	andi	a1, a1, 15
 	or	a0, a0, a1

@@ -29,9 +29,9 @@ func0000000000000071:
 func0000000000000042:
 	sext.w	a0, a0
 	binvi	a0, a0, 15
-	li	a1, -4
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 6
+	seqz	a0, a0
+	slli	a0, a0, 2
+	addiw	a0, a0, 2
 	ret
 
 func0000000000000014:

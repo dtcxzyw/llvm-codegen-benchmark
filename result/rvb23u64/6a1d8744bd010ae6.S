@@ -11,9 +11,8 @@ func0000000000000003:
 	or	a1, a1, a2
 	andi	a1, a1, -25
 	addi	a0, a0, -4
-	li	a2, -8
-	czero.eqz	a0, a2, a0
-	addi	a0, a0, 24
-	or	a0, a0, a1
+	seqz	a0, a0
+	sh3add	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 

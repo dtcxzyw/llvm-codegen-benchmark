@@ -16,17 +16,15 @@ func00000000000000f4:
 
 func00000000000000f5:
 	fle.s	a1, fa0, fa1
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 8
+	xori	a1, a1, 1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 4
 	ret
 
 func00000000000000f8:
 	feq.s	a1, fa0, fa1
-	li	a2, -16
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, 80
+	addi	a0, a0, 64
 	ret
 

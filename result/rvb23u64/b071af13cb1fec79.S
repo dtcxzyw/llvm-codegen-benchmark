@@ -1,10 +1,10 @@
 func0000000000000043:
 	sext.w	a1, a1
-	li	a2, 62
+	li	a2, -62
 	addi	a3, a1, -8
-	czero.nez	a2, a2, a3
+	czero.eqz	a2, a2, a3
 	addi	a1, a1, -16
-	addi	a2, a2, -6
+	addiw	a2, a2, 56
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 8
 	or	a0, a0, a1

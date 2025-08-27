@@ -18,11 +18,10 @@ func0000000000000003:
 
 func0000000000000001:
 	andi	a1, a1, 1
-	bseti	a2, zero, 31
-	bseti	a2, a2, 63
-	czero.nez	a1, a2, a1
-	lui	a2, 524288
-	sub	a0, a0, a2
+	li	a2, -1
+	slli.uw	a2, a2, 31
+	czero.eqz	a1, a2, a1
+	bseti	a1, a1, 63
 	sub	a0, a1, a0
 	ret
 

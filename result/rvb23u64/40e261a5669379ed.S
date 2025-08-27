@@ -6,13 +6,12 @@ func0000000000000001:
 	srli	a1, a1, 1
 	srli	a3, a3, 63
 	srl	a1, a1, a2
-	czero.nez	a2, a0, a3
+	czero.eqz	a2, a0, a3
 	or	a1, a1, a0
-	czero.eqz	a0, a0, a3
+	czero.nez	a0, a0, a3
 	czero.eqz	a1, a1, a3
-	or	a1, a1, a2
-	not	a1, a1
-	not	a0, a0
+	xnor	a1, a1, a0
+	not	a0, a2
 	ret
 
 func0000000000000002:

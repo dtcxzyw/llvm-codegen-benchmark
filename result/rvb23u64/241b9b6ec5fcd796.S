@@ -1,19 +1,15 @@
 func0000000000000001:
-	andi	a1, a1, 1
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	addi	a1, a1, -2
+	slli	a1, a1, 1
+	ori	a1, a1, -4
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, -2
+	slli	a1, a1, 1
+	ori	a1, a1, -4
+	addw	a0, a0, a1
 	sltiu	a0, a0, 65
 	xori	a0, a0, 1
 	ret

@@ -9,9 +9,8 @@ func0000000000000034:
 func0000000000000001:
 	andi	a0, a0, 1
 	zext.h	a1, a1
-	li	a2, -4
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 8
+	slli	a0, a0, 2
+	addi	a0, a0, 4
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -27,9 +26,8 @@ func0000000000000018:
 func0000000000000021:
 	andi	a0, a0, 1
 	zext.h	a1, a1
-	li	a2, -2
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

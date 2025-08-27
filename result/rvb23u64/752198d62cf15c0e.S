@@ -75,8 +75,8 @@ func00000000000001e1:
 
 func0000000000000141:
 	sext.w	a0, a0
-	lui	a2, 64
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	slli	a0, a0, 18
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

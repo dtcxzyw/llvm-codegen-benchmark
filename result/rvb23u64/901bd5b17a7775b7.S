@@ -24,17 +24,15 @@ func0000000000000021:
 func0000000000000028:
 	addiw	a0, a0, -176
 	sltiu	a0, a0, -128
-	li	a1, -64
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 128
+	slli	a0, a0, 6
+	addi	a0, a0, 64
 	ret
 
 func0000000000000038:
 	addiw	a0, a0, -176
 	sltiu	a0, a0, -128
-	li	a1, -64
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 128
+	slli	a0, a0, 6
+	addi	a0, a0, 64
 	ret
 
 func0000000000000061:

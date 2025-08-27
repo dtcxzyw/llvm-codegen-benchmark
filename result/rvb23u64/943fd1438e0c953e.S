@@ -32,9 +32,8 @@ func0000000000000008:
 	andi	a1, a1, -8
 	sext.w	a1, a1
 	sltu	a0, a0, a1
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 191
+	slli	a0, a0, 1
+	addiw	a0, a0, 189
 	ret
 
 func0000000000000018:
@@ -50,8 +49,7 @@ func0000000000000004:
 	slli	a1, a1, 34
 	srli	a1, a1, 34
 	sltu	a0, a1, a0
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 18
+	slli	a0, a0, 1
+	addiw	a0, a0, 16
 	ret
 

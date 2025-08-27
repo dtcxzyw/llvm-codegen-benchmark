@@ -8,10 +8,10 @@ func000000000000000f:
 
 func0000000000000070:
 	andi	a2, a2, 1
-	li	a3, 280
-	czero.eqz	a2, a3, a2
+	li	a3, -280
+	czero.nez	a2, a3, a2
 	add	a1, a1, a2
-	addiw	a1, a1, 4
+	addiw	a1, a1, 284
 	add	a0, a0, a1
 	addi	a0, a0, 6
 	ret

@@ -9,8 +9,8 @@ func0000000000000007:
 	lui	a1, 16
 	addi	a1, a1, -257
 	xor	a0, a0, a1
-	li	a1, -2
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 8
+	seqz	a0, a0
+	slli	a0, a0, 1
+	addi	a0, a0, 6
 	ret
 

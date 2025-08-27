@@ -20,13 +20,13 @@ func000000000000002f:
 
 func000000000000015f:
 	sext.w	a2, a2
-	li	a3, 32
+	li	a3, -32
 	sext.w	a1, a1
 	sgtz	a2, a2
-	czero.nez	a2, a3, a2
+	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 96
+	addi	a0, a0, 128
 	ret
 
 func000000000000014f:

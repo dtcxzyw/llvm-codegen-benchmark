@@ -8,10 +8,8 @@ func00000000000000a4:
 
 func000000000000008a:
 	andi	a2, a2, 1
-	li	a3, -2
-	czero.nez	a2, a3, a2
-	add	a0, a0, a2
-	addiw	a0, a0, 9
+	sh1add	a0, a2, a0
+	addiw	a0, a0, 7
 	addiw	a1, a1, -4
 	slt	a0, a1, a0
 	ret
@@ -28,10 +26,8 @@ func00000000000000e8:
 
 func00000000000000e4:
 	andi	a2, a2, 1
-	li	a3, -8
-	czero.nez	a2, a3, a2
-	add	a0, a0, a2
-	addiw	a0, a0, 9
+	sh3add	a0, a2, a0
+	addiw	a0, a0, 1
 	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret

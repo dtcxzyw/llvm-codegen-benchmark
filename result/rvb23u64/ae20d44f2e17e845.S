@@ -2,9 +2,8 @@ func0000000000000008:
 	fsub.d	fa5, fa0, fa1
 	fli.d	fa4, 1.0
 	feq.d	a0, fa5, fa4
-	li	a1, -4
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 31
+	slli	a0, a0, 2
+	addiw	a0, a0, 27
 	ret
 
 func0000000000000004:

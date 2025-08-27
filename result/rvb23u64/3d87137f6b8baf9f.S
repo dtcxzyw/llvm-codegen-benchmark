@@ -31,13 +31,11 @@ func000000000000000f:
 	ret
 
 func000000000000001d:
-	andi	a1, a1, 1
 	zext.b	a2, a2
+	slli	a1, a1, 3
 	add	a0, a0, a2
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, -5
+	ori	a1, a1, -13
+	addw	a0, a0, a1
 	ret
 
 func000000000000000d:

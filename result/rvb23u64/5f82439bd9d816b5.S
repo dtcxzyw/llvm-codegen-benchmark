@@ -20,9 +20,9 @@ func0000000000000018:
 
 func000000000000000c:
 	zext.b	a0, a0
-	lui	a1, 1048572
-	czero.eqz	a0, a1, a0
-	lui	a1, 70
-	add	a0, a0, a1
+	lui	a1, 4
+	czero.nez	a0, a1, a0
+	bseti	a0, a0, 13
+	bseti	a0, a0, 18
 	ret
 

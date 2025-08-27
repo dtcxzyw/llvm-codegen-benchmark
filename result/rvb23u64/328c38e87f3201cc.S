@@ -1,9 +1,8 @@
 func000000000000018f:
 	srli	a1, a1, 16
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, 6
+	snez	a1, a1
+	sh1add	a0, a1, a0
+	addiw	a0, a0, 4
 	ret
 
 func00000000000000af:

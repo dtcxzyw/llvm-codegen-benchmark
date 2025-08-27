@@ -15,10 +15,10 @@ func000000000000003f:
 
 func000000000000002f:
 	andi	a1, a1, 1
-	li	a2, 24
-	czero.eqz	a1, a2, a1
+	li	a2, -24
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, -88
+	addi	a0, a0, -64
 	ret
 
 func0000000000000030:

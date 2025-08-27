@@ -7,10 +7,8 @@ func000000000000000b:
 func0000000000000013:
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 112
+	sh3add	a0, a1, a0
+	addi	a0, a0, 104
 	ret
 
 func000000000000001b:

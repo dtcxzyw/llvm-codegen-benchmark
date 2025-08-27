@@ -26,10 +26,10 @@ func0000000000000084:
 func0000000000000286:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, 32
-	czero.nez	a1, a2, a1
+	li	a2, -32
+	czero.eqz	a1, a2, a1
 	sltiu	a2, a0, 14
-	addi	a1, a1, 16
+	addi	a1, a1, 48
 	czero.nez	a1, a1, a2
 	slti	a0, a0, 6
 	addiw	a1, a1, 8

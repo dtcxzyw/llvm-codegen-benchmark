@@ -9,19 +9,16 @@ func00000000000000a0:
 	lui	a3, 16
 	addi	a3, a3, -1
 	slt	a2, a3, a2
-	li	a3, -4
-	czero.nez	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 11
+	sh2add	a0, a2, a0
+	addiw	a0, a0, 7
 	ret
 
 func0000000000000010:
-	li	a3, -8
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, -5
+	sh3add	a0, a2, a0
+	addiw	a0, a0, -13
 	ret
 
 func0000000000000045:

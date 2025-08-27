@@ -1,9 +1,9 @@
 func0000000000000005:
 	andi	a1, a1, 256
-	li	a2, 32
-	czero.eqz	a1, a2, a1
+	li	a2, -32
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -87
+	addiw	a0, a0, -55
 	ret
 
 func0000000000000007:

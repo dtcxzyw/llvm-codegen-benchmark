@@ -6,9 +6,8 @@ func0000000000000048:
 
 func0000000000000044:
 	andi	a1, a1, 1
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 3
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
 

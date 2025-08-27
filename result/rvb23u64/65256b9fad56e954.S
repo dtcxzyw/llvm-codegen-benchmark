@@ -14,9 +14,8 @@ func0000000000000061:
 	ret
 
 func0000000000000001:
-	li	a2, -8
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, 40
+	seqz	a0, a0
+	sh3add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 

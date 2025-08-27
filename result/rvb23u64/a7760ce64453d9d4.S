@@ -17,10 +17,10 @@ func0000000000000040:
 
 func000000000000004c:
 	sext.w	a2, a2
-	li	a3, -128
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
+	slli	a2, a2, 7
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
-	addi	a0, a0, 904
+	addi	a0, a0, 776
 	ret
 

@@ -3,8 +3,7 @@ func0000000000000000:
 	andi	a1, a1, 1
 	li	a3, 10
 	czero.eqz	a1, a3, a1
-	li	a3, 16
-	czero.eqz	a0, a3, a0
+	slli	a0, a0, 4
 	or	a1, a1, a2
 	addi	a0, a0, 16
 	or	a0, a0, a1
@@ -15,8 +14,7 @@ func0000000000000003:
 	andi	a1, a1, 1
 	slli	a1, a1, 2
 	or	a1, a1, a2
-	li	a2, 512
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 9
 	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret

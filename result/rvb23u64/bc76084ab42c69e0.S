@@ -59,8 +59,7 @@ func0000000000000018:
 	sltiu	a1, a1, 64
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	li	a1, -256
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 1023
+	slli	a0, a0, 8
+	addiw	a0, a0, 767
 	ret
 

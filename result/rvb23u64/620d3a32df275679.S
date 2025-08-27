@@ -1,10 +1,9 @@
 func0000000000000001:
 	zext.b	a0, a0
 	addi	a0, a0, -5
-	li	a2, -4
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addiw	a0, a0, 5
+	seqz	a0, a0
+	sh2add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000141:
@@ -49,10 +48,10 @@ func0000000000000041:
 func00000000000001e1:
 	zext.b	a0, a0
 	addi	a0, a0, -1
-	li	a2, 22
-	czero.nez	a0, a2, a0
+	li	a2, -22
+	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
-	addiw	a0, a0, 17
+	addiw	a0, a0, 39
 	ret
 
 func0000000000000004:

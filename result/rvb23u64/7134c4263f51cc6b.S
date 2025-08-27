@@ -37,11 +37,11 @@ func0000000000000294:
 
 func000000000000014a:
 	sext.w	a0, a0
-	li	a1, -2
-	slti	a2, a0, 24
-	czero.eqz	a1, a1, a2
+	slti	a1, a0, 24
+	not	a1, a1
+	slli	a1, a1, 1
 	slti	a0, a0, 80
-	addi	a1, a1, -1
+	ori	a1, a1, -3
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 4
 	ret

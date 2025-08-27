@@ -1,23 +1,22 @@
 func000000000000001c:
 	sext.w	a2, a2
-	lui	a3, 1048575
+	lui	a3, 1
 	slli	a0, a0, 6
+	addi	a3, a3, -52
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a3, a3, 52
-	addi	a1, a1, 508
-	czero.eqz	a2, a3, a2
+	czero.nez	a1, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	li	a1, 1164
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000001e:
 	sext.w	a2, a2
-	li	a3, 32
-	czero.eqz	a2, a3, a2
+	li	a3, -32
+	czero.nez	a2, a3, a2
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
-	addi	a0, a0, 128
+	addi	a0, a0, 160
 	ret
 
 func000000000000001f:

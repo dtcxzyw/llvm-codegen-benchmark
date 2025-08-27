@@ -1,14 +1,13 @@
 func000000000000000c:
 	andi	a2, a2, 1
-	lui	a3, 1048575
+	lui	a3, 1
 	slli.uw	a1, a1, 6
+	addi	a3, a3, -52
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a3, a3, 52
-	addi	a1, a1, 508
-	czero.nez	a2, a3, a2
+	czero.eqz	a1, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	li	a1, 1164
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000001f:

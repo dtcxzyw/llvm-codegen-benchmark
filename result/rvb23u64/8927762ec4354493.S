@@ -15,8 +15,8 @@ func0000000000000043:
 	sext.w	a1, a1
 	seqz	a1, a1
 	addi	a0, a0, 1
-	li	a2, 32
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	slli	a0, a0, 5
 	or	a0, a0, a1
 	addi	a0, a0, 17
 	ret

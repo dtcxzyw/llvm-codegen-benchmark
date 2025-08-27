@@ -1,14 +1,12 @@
 func0000000000000033:
 	andi	a0, a0, 1
 	zext.w	a2, a2
-	li	a3, -4
-	czero.nez	a0, a3, a0
 	lui	a3, 2
 	addi	a3, a3, 368
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 252
+	add	a1, a1, a2
+	sh2add	a0, a0, a1
+	addi	a0, a0, 248
 	ret
 
 func000000000000003f:

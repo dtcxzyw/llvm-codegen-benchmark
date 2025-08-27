@@ -25,11 +25,11 @@ func0000000000000008:
 
 func0000000000000009:
 	srliw	a1, a1, 11
-	li	a2, -64
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	slli	a1, a1, 6
 	andi	a0, a0, 63
 	or	a0, a0, a1
-	addi	a0, a0, 192
+	addiw	a0, a0, 128
 	ret
 
 func0000000000000015:

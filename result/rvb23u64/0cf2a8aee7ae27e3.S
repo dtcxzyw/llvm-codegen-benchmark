@@ -38,12 +38,11 @@ func000000000000001a:
 func0000000000000015:
 	andi	a0, a0, 1
 	slli	a1, a1, 24
-	lui	a2, 2
-	czero.eqz	a0, a2, a0
-	lui	a2, 4096
+	slli	a0, a0, 13
 	or	a0, a0, a1
-	addi	a2, a2, 20
-	addw	a0, a0, a2
+	lui	a1, 4096
+	addi	a1, a1, 20
+	addw	a0, a0, a1
 	ret
 
 func000000000000001b:

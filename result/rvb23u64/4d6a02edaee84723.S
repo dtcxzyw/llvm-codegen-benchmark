@@ -1,9 +1,9 @@
 func0000000000000021:
 	zext.b	a0, a0
 	sext.w	a1, a1
-	li	a2, -8
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 73
+	seqz	a1, a1
+	slli	a1, a1, 3
+	addiw	a1, a1, 65
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

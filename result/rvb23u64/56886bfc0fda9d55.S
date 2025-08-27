@@ -27,13 +27,11 @@ func000000000000000c:
 
 func0000000000000038:
 	andi	a1, a1, 1
-	slliw	a2, a2, 6
-	li	a3, -2
-	slliw	a0, a0, 16
-	czero.nez	a1, a3, a1
-	addi	a1, a1, 3
-	or	a0, a0, a2
+	slli	a2, a2, 6
+	sh1add	a1, a1, a2
+	slli	a0, a0, 16
 	or	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000003e:

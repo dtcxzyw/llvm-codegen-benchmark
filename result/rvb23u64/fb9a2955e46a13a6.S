@@ -23,11 +23,11 @@ func000000000000000c:
 
 func0000000000000018:
 	andi	a0, a0, 1
-	lui	a2, 1048564
-	czero.nez	a0, a2, a0
-	lui	a2, 16
+	lui	a2, 12
+	czero.eqz	a0, a2, a0
+	lui	a2, 4
 	addi	a2, a2, -193
-	add	a0, a0, a2
+	or	a0, a0, a2
 	and	a0, a0, a1
 	sltiu	a0, a0, 257
 	xori	a0, a0, 1
@@ -35,11 +35,10 @@ func0000000000000018:
 
 func0000000000000014:
 	andi	a0, a0, 1
-	lui	a2, 1048564
-	czero.nez	a0, a2, a0
-	lui	a2, 16
-	addi	a2, a2, -256
-	add	a0, a0, a2
+	lui	a2, 12
+	czero.eqz	a0, a2, a0
+	li	a2, 2016
+	sh3add	a0, a2, a0
 	and	a0, a0, a1
 	sltiu	a0, a0, 1280
 	ret

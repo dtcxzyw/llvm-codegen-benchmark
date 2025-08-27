@@ -1,15 +1,14 @@
 func000000000000052a:
 	sext.w	a1, a1
 	andi	a2, a2, 1
-	li	a3, -1024
-	lui	a4, 8
-	czero.nez	a2, a3, a2
-	addi	a3, a4, 1131
-	addi	a2, a2, 1131
-	slt	a1, a3, a1
-	czero.nez	a2, a2, a1
-	czero.eqz	a1, a4, a1
-	or	a1, a1, a2
+	lui	a3, 8
+	slli	a2, a2, 10
+	addi	a4, a3, 1131
+	addi	a2, a2, 107
+	slt	a1, a4, a1
+	czero.eqz	a3, a3, a1
+	czero.nez	a1, a2, a1
+	or	a1, a1, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 31
 	xori	a0, a0, 1

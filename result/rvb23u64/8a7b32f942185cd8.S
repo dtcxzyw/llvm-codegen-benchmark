@@ -6,13 +6,12 @@ func0000000000000003:
 
 func0000000000000000:
 	andi	a1, a1, 1
-	lui	a2, 1048575
-	czero.nez	a1, a2, a1
-	lui	a2, 7
-	addi	a2, a2, 1604
-	add	a1, a1, a2
+	lui	a2, 1
+	czero.eqz	a1, a2, a1
+	lui	a2, 6
 	or	a0, a0, a1
-	ori	a0, a0, 32
+	addi	a1, a2, 1636
+	or	a0, a0, a1
 	ret
 
 func0000000000000002:

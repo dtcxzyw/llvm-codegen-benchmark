@@ -47,12 +47,11 @@ func0000000000000013:
 
 func0000000000000051:
 	andi	a2, a2, 1
-	lui	a3, 1048575
-	addi	a3, a3, 64
-	czero.eqz	a2, a3, a2
+	lui	a3, 1
+	addi	a3, a3, -64
+	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
-	addi	a2, a2, 2047
-	addi	a2, a2, 2041
+	addiw	a2, a2, 56
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8
@@ -60,12 +59,11 @@ func0000000000000051:
 
 func0000000000000053:
 	andi	a2, a2, 1
-	lui	a3, 1048575
-	addi	a3, a3, 64
-	czero.eqz	a2, a3, a2
+	lui	a3, 1
+	addi	a3, a3, -64
+	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
-	addi	a2, a2, 2047
-	addi	a2, a2, 2041
+	addiw	a2, a2, 56
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8

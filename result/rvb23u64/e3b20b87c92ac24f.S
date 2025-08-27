@@ -13,9 +13,8 @@ func0000000000000028:
 	andi	a0, a0, 2032
 	addi	a0, a0, -176
 	sltiu	a0, a0, -128
-	li	a1, -64
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 128
+	slli	a0, a0, 6
+	addi	a0, a0, 64
 	ret
 
 func0000000000000061:

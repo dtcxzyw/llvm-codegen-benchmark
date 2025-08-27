@@ -52,17 +52,15 @@ func0000000000000018:
 	sltiu	a1, a1, 10
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000014:
 	srliw	a1, a1, 5
 	sltiu	a1, a1, 1875
 	and	a0, a0, a1
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 1296
+	slli	a0, a0, 5
+	addi	a0, a0, 1264
 	ret
 

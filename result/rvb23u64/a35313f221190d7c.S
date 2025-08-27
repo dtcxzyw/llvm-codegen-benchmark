@@ -8,9 +8,9 @@ func0000000000000026:
 func0000000000000024:
 	add	a0, a0, a1
 	srliw	a0, a0, 20
-	li	a1, -8
-	czero.eqz	a0, a1, a0
-	addiw	a0, a0, 4
+	seqz	a0, a0
+	slli	a0, a0, 3
+	addi	a0, a0, -4
 	ret
 
 func0000000000000008:
@@ -40,9 +40,9 @@ func0000000000000078:
 func000000000000002a:
 	addw	a0, a0, a1
 	slti	a0, a0, 1001
-	li	a1, -512
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 1024
+	xori	a0, a0, 1
+	slli	a0, a0, 9
+	addi	a0, a0, 512
 	ret
 
 func000000000000000c:

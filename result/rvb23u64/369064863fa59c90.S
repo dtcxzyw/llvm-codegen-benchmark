@@ -1,9 +1,7 @@
 func000000000000002b:
 	slt	a1, a2, a1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 
 func000000000000001b:
@@ -16,10 +14,8 @@ func000000000000001b:
 
 func0000000000000013:
 	sltu	a1, a1, a2
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 
 func0000000000000007:
@@ -39,10 +35,8 @@ func0000000000000023:
 
 func0000000000000063:
 	sltu	a1, a2, a1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 
 func0000000000000004:
@@ -77,10 +71,8 @@ func0000000000000010:
 
 func0000000000000060:
 	sltu	a1, a2, a1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 
 func0000000000000050:

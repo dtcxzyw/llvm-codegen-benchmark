@@ -11,9 +11,9 @@ func0000000000000004:
 func0000000000000001:
 	andi	a0, a0, 1
 	xor	a1, a1, a2
-	li	a2, -16
-	czero.eqz	a1, a2, a1
-	addiw	a1, a1, 8
+	seqz	a1, a1
+	slli	a1, a1, 4
+	addi	a1, a1, -8
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 40
 	ret

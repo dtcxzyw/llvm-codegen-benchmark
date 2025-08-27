@@ -9,10 +9,9 @@ func0000000000000004:
 func0000000000000007:
 	zext.h	a1, a1
 	addi	a1, a1, -24
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	seqz	a1, a1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 20
 	ret
 
 func0000000000000005:

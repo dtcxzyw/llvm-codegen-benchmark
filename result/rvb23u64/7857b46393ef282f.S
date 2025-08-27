@@ -12,8 +12,8 @@ func0000000000000004:
 
 func0000000000000014:
 	srli	a0, a0, 51
-	lui	a1, 2
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 13
 	addiw	a0, a0, 1
 	ret
 
@@ -31,8 +31,8 @@ func0000000000000008:
 
 func0000000000000018:
 	srli	a0, a0, 21
-	li	a1, 16
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 4
 	addi	a0, a0, 16
 	ret
 

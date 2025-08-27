@@ -27,10 +27,10 @@ func000000000000014c:
 
 func0000000000000014:
 	sext.w	a1, a1
-	li	a2, 32
-	czero.eqz	a1, a2, a1
+	li	a2, -32
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 65
+	addiw	a0, a0, 97
 	ret
 
 func0000000000000148:

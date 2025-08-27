@@ -13,11 +13,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	lui	a2, 1048560
-	czero.eqz	a1, a2, a1
-	lui	a2, 80
-	add	a1, a1, a2
+	lui	a2, 16
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
+	bseti	a0, a0, 18
 	ret
 
 func0000000000000015:
@@ -38,8 +37,7 @@ func0000000000000031:
 	li	a2, 1024
 	bseti	a2, a2, 32
 	sltu	a1, a2, a1
-	li	a2, 256
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret

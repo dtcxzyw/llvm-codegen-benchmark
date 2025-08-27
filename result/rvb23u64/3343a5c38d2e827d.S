@@ -1,9 +1,9 @@
 func000000000000000f:
 	sext.w	a1, a1
 	addi	a1, a1, -9
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 6
+	seqz	a1, a1
+	slli	a1, a1, 2
+	addi	a1, a1, 2
 	mulw	a0, a0, a1
 	ret
 

@@ -98,12 +98,11 @@ func0000000000000028:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -3
-	sltiu	a0, a0, 5
 	seqz	a1, a1
+	sltiu	a0, a0, 5
 	andn	a0, a1, a0
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000181:
@@ -133,9 +132,8 @@ func0000000000000301:
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
-	li	a1, -256
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 1023
+	slli	a0, a0, 8
+	addiw	a0, a0, 767
 	ret
 
 func000000000000028a:

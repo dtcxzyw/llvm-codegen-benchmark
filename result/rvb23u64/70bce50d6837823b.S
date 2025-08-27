@@ -55,9 +55,8 @@ func0000000000000010:
 func0000000000000051:
 	zext.b	a1, a0
 	sltiu	a1, a1, 224
-	li	a2, -64
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 6
 	add	a0, a0, a1
-	addi	a0, a0, 127
+	addi	a0, a0, 63
 	ret
 

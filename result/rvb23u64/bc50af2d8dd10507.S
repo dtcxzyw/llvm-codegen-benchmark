@@ -41,12 +41,12 @@ func000000000000001b:
 	ret
 
 func000000000000001f:
-	bexti	a2, a2, 18
-	li	a3, -8
-	czero.nez	a2, a3, a2
+	lui	a3, 64
+	and	a2, a2, a3
+	srli	a2, a2, 15
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 13
+	addi	a0, a0, 5
 	ret
 
 func000000000000001e:

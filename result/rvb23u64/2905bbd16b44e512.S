@@ -12,9 +12,7 @@ func000000000000000f:
 
 func000000000000000a:
 	andi	a0, a0, 1
-	li	a2, -2
-	czero.nez	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, -8
+	sh1add	a0, a0, a1
+	addi	a0, a0, -10
 	ret
 

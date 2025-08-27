@@ -36,11 +36,10 @@ func0000000000000053:
 	lui	a3, 2
 	addi	a3, a3, 1
 	sltu	a2, a2, a3
-	lui	a3, 1048575
-	addi	a3, a3, 64
-	czero.eqz	a2, a3, a2
-	addi	a2, a2, 2047
-	addi	a2, a2, 2041
+	lui	a3, 1
+	addi	a3, a3, -64
+	czero.nez	a2, a3, a2
+	addiw	a2, a2, 56
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 8

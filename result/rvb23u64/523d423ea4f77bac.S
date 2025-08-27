@@ -24,9 +24,9 @@ func0000000000000021:
 
 func0000000000000041:
 	sext.w	a0, a0
-	li	a2, -32
-	czero.eqz	a0, a2, a0
-	addi	a0, a0, 96
+	seqz	a0, a0
+	slli	a0, a0, 5
 	or	a0, a0, a1
+	ori	a0, a0, 64
 	ret
 

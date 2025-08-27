@@ -37,17 +37,15 @@ func0000000000000008:
 	lui	a1, 2197
 	addi	a1, a1, 1087
 	sltu	a0, a1, a0
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 10
+	slli	a0, a0, 1
+	addiw	a0, a0, 8
 	ret
 
 func000000000000000a:
 	mulw	a0, a0, a1
 	sgtz	a0, a0
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addiw	a0, a0, 4
+	slli	a0, a0, 3
+	addi	a0, a0, -4
 	ret
 
 func0000000000000061:

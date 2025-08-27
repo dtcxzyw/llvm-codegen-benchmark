@@ -28,9 +28,9 @@ func0000000000000053:
 func00000000000000c3:
 	sext.w	a1, a0
 	sltiu	a1, a1, 64
-	li	a2, -64
-	czero.eqz	a1, a2, a1
-	sub	a1, a1, a0
-	addiw	a0, a1, 127
+	xori	a1, a1, 1
+	slli	a1, a1, 6
+	addi	a1, a1, 63
+	subw	a0, a1, a0
 	ret
 

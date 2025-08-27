@@ -36,9 +36,9 @@ func0000000000000006:
 func0000000000000008:
 	subw	a0, a0, a1
 	sltiu	a0, a0, 33
-	li	a1, -2
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 191
+	xori	a0, a0, 1
+	slli	a0, a0, 1
+	addiw	a0, a0, 189
 	ret
 
 func000000000000002a:

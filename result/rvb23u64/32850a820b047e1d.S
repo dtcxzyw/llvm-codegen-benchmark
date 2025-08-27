@@ -20,10 +20,10 @@ func00000000000000ff:
 
 func00000000000000fa:
 	andi	a0, a0, 1
-	li	a3, 32
-	czero.nez	a0, a3, a0
+	li	a3, -32
+	czero.eqz	a0, a3, a0
 	add	a0, a0, a2
 	sh3add	a0, a1, a0
-	addi	a0, a0, 128
+	addi	a0, a0, 160
 	ret
 

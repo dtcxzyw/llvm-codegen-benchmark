@@ -4,10 +4,9 @@ func0000000000000033:
 	ret
 
 func0000000000000007:
-	li	a2, -8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	seqz	a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 
 func0000000000000022:
@@ -20,10 +19,9 @@ func0000000000000022:
 
 func0000000000000063:
 	sltiu	a1, a1, 4
-	li	a2, -4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 9
+	xori	a1, a1, 1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 5
 	ret
 
 func0000000000000023:
@@ -56,10 +54,10 @@ func0000000000000013:
 
 func0000000000000004:
 	addi	a1, a1, 1
-	li	a2, 32
-	czero.eqz	a1, a2, a1
+	li	a2, -32
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 64
+	addi	a0, a0, 96
 	ret
 
 func0000000000000006:
@@ -121,10 +119,10 @@ func000000000000002b:
 
 func0000000000000060:
 	sltiu	a1, a1, 3
-	li	a2, 56
-	czero.nez	a1, a2, a1
+	li	a2, -56
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 16
+	addi	a0, a0, 72
 	ret
 
 func0000000000000050:

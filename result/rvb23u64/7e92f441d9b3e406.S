@@ -17,8 +17,8 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	slli	a1, a1, 1
-	czero.nez	a0, a0, a1
-	or	a0, a0, a1
+	slli	a2, a1, 1
+	czero.nez	a0, a0, a2
+	sh1add	a0, a1, a0
 	ret
 

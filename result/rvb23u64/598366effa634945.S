@@ -1,9 +1,8 @@
 func000000000000000a:
 	sext.w	a1, a1
 	slt	a0, a1, a0
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 3
+	slli	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000006:

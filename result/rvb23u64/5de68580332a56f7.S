@@ -1,9 +1,7 @@
 func00000000000001e4:
 	andi	a1, a1, 1
-	li	a3, -2
-	czero.nez	a1, a3, a1
-	add	a1, a1, a2
-	addi	a1, a1, 4
+	sh1add	a1, a1, a2
+	addi	a1, a1, 2
 	sltu	a0, a1, a0
 	ret
 

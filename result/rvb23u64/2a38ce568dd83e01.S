@@ -13,10 +13,10 @@ func00000000000000a1:
 	ret
 
 func00000000000001e1:
-	bexti	a1, a1, 11
-	li	a2, -4
-	czero.nez	a1, a2, a1
+	bseti	a2, zero, 11
+	and	a1, a1, a2
+	srli	a1, a1, 9
 	add	a0, a0, a1
-	addiw	a0, a0, 6
+	addiw	a0, a0, 2
 	ret
 

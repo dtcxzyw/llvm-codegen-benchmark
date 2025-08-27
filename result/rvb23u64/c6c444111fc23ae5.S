@@ -1,7 +1,7 @@
 func0000000000000007:
 	addi	a0, a0, -3
-	li	a1, 16
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 4
 	addi	a0, a0, 16
 	ret
 

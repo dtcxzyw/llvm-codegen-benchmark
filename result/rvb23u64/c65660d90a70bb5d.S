@@ -14,11 +14,10 @@ func0000000000000054:
 	bseti	a1, a1, 63
 	bseti	a2, a2, 63
 	xor	a1, a1, a0
-	slt	a0, a2, a0
 	seqz	a1, a1
+	slt	a0, a2, a0
 	or	a0, a0, a1
-	li	a1, -16
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 24
+	slli	a0, a0, 4
+	addiw	a0, a0, 8
 	ret
 

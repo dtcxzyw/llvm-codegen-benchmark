@@ -2,8 +2,7 @@ func000000000000000f:
 	andi	a1, a1, 1
 	lui	a3, 4
 	and	a2, a2, a3
-	lui	a3, 2
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 13
 	or	a1, a1, a2
 	slliw	a0, a0, 2
 	or	a0, a0, a1

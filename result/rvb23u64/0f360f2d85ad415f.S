@@ -6,15 +6,15 @@ func0000000000000003:
 
 func0000000000000009:
 	srli	a0, a0, 32
-	li	a1, 32
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 5
 	addiw	a0, a0, 17
 	ret
 
 func0000000000000011:
 	srli	a0, a0, 32
-	li	a1, 32
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 5
 	addiw	a0, a0, 16
 	ret
 
@@ -22,9 +22,9 @@ func0000000000000031:
 	li	a1, -1
 	bclri	a1, a1, 32
 	sltu	a0, a1, a0
-	li	a1, 32
-	czero.nez	a0, a1, a0
-	addiw	a0, a0, 16
+	li	a1, -32
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 48
 	ret
 
 func0000000000000019:
@@ -36,8 +36,8 @@ func0000000000000019:
 
 func0000000000000029:
 	srli	a0, a0, 32
-	li	a1, 32
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	slli	a0, a0, 5
 	addiw	a0, a0, 16
 	ret
 

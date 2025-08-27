@@ -41,13 +41,12 @@ func0000000000000004:
 
 func0000000000000014:
 	andi	a1, a1, 1
-	li	a2, -1
-	slli	a2, a2, 54
-	czero.nez	a1, a2, a1
-	li	a2, 235
+	bseti	a2, zero, 54
+	czero.eqz	a1, a2, a1
+	li	a2, 203
 	srli	a0, a0, 31
 	slli	a2, a2, 49
-	add	a1, a1, a2
+	or	a1, a1, a2
 	li	a2, 251
 	slli	a2, a2, 49
 	czero.nez	a2, a2, a0

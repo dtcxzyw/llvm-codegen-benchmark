@@ -22,10 +22,10 @@ func0000000000000003:
 
 func000000000000001c:
 	andi	a2, a2, 1
-	li	a3, 280
-	czero.eqz	a2, a3, a2
+	li	a3, -280
+	czero.nez	a2, a3, a2
 	add	a1, a1, a2
-	addiw	a1, a1, 4
+	addiw	a1, a1, 284
 	add	a0, a0, a1
 	ret
 

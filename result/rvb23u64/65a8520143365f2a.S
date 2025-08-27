@@ -12,9 +12,9 @@ func0000000000000010:
 	zext.b	a1, a1
 	add	a0, a0, a2
 	addi	a1, a1, -1
-	li	a2, 22
-	czero.nez	a1, a2, a1
+	li	a2, -22
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 21
+	addiw	a0, a0, 43
 	ret
 

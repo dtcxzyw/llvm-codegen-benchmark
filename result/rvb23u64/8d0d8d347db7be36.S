@@ -1,10 +1,10 @@
 func000000000000014a:
 	sext.w	a1, a1
-	li	a2, -128
-	slti	a3, a1, 49
+	slti	a2, a1, 49
 	slti	a1, a1, 51
-	czero.eqz	a2, a2, a3
-	addi	a2, a2, 408
+	xori	a2, a2, 1
+	slli	a2, a2, 7
+	addiw	a2, a2, 280
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

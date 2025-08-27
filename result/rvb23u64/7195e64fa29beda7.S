@@ -1,8 +1,8 @@
 func0000000000000003:
 	sext.w	a0, a0
-	li	a1, -128
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 256
+	seqz	a0, a0
+	slli	a0, a0, 7
+	addi	a0, a0, 128
 	ret
 
 func0000000000000019:

@@ -16,12 +16,11 @@ func0000000000000007:
 
 func0000000000000005:
 	zext.b	a1, a1
-	bseti	a2, zero, 31
+	li	a2, -1
 	addi	a1, a1, -10
-	bseti	a2, a2, 63
-	czero.eqz	a1, a2, a1
-	lui	a2, 524288
-	sub	a0, a0, a2
+	slli.uw	a2, a2, 31
+	czero.nez	a1, a2, a1
+	bseti	a1, a1, 63
 	sub	a0, a1, a0
 	ret
 

@@ -6,11 +6,10 @@ func0000000000000002:
 
 func0000000000000007:
 	feq.s	a0, fa0, fa1
-	lui	a1, 1048575
-	czero.eqz	a0, a1, a0
-	lui	a1, 9
-	addi	a1, a1, 10
-	add	a0, a0, a1
+	lui	a1, 1
+	czero.nez	a0, a1, a0
+	ori	a0, a0, 10
+	bseti	a0, a0, 15
 	ret
 
 func0000000000000004:

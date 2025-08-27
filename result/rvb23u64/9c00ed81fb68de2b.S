@@ -1,9 +1,9 @@
 func0000000000000004:
 	bexti	a1, a1, 11
-	li	a2, 200
-	czero.eqz	a1, a2, a1
+	li	a2, -200
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, 1
+	addiw	a0, a0, 201
 	ret
 
 func0000000000000005:

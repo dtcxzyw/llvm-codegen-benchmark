@@ -9,9 +9,9 @@ func0000000000000038:
 
 func0000000000000031:
 	zext.h	a1, a1
-	li	a2, 32
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 32
+	li	a2, -32
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 64
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

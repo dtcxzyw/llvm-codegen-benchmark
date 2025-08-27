@@ -11,12 +11,12 @@ func0000000000000007:
 
 func0000000000000004:
 	zext.b	a2, a2
-	li	a3, 256
-	czero.nez	a2, a3, a2
-	lui	a3, 63424
-	addi	a3, a3, -462
+	seqz	a2, a2
+	slli	a2, a2, 8
 	or	a0, a0, a2
-	bseti	a2, a3, 31
+	lui	a2, 63424
+	addi	a2, a2, -462
+	bseti	a2, a2, 31
 	bseti	a2, a2, 55
 	and	a1, a1, a2
 	or	a0, a0, a1

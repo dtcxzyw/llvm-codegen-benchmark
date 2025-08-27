@@ -27,10 +27,10 @@ func0000000000000008:
 
 func0000000000000017:
 	flt.s	a1, fa1, fa0
-	li	a2, -16
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 272
+	xori	a1, a1, 1
+	slli	a1, a1, 4
 	or	a0, a0, a1
+	ori	a0, a0, 256
 	ret
 
 func000000000000001b:

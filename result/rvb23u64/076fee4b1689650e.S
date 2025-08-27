@@ -1,10 +1,8 @@
 func000000000000000f:
 	andi	a0, a0, 1
 	zext.b	a1, a1
-	li	a2, -8
-	czero.nez	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, 85
+	sh3add	a0, a0, a1
+	addi	a0, a0, 77
 	ret
 
 func0000000000000005:

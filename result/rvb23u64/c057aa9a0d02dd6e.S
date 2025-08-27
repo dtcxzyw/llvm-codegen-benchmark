@@ -36,14 +36,10 @@ func0000000000000002:
 func0000000000000001:
 	andi	a0, a0, 1
 	andi	a2, a2, 1
-	li	a3, 1024
+	slli	a2, a2, 10
 	andi	a1, a1, -31
-	czero.eqz	a2, a3, a2
-	li	a3, -4
-	czero.nez	a0, a3, a0
 	or	a1, a1, a2
-	addi	a0, a0, 8
-	or	a0, a0, a1
-	ori	a0, a0, 16
+	sh2add	a0, a0, a1
+	addi	a0, a0, 20
 	ret
 

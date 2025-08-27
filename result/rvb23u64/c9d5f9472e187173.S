@@ -30,11 +30,9 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 1
-	li	a2, -64
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 6
 	srli	a0, a0, 31
-	addi	a1, a1, -32
+	ori	a1, a1, -96
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 502
 	ret

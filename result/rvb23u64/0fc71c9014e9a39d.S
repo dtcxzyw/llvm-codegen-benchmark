@@ -8,11 +8,9 @@ func0000000000000000:
 
 func0000000000000003:
 	andi	a0, a0, 1
-	li	a2, -16
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 24
+	slli	a0, a0, 4
 	or	a0, a0, a1
-	ori	a0, a0, 516
+	ori	a0, a0, 524
 	ret
 
 func0000000000000001:

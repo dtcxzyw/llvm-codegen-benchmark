@@ -28,11 +28,9 @@ func00000000000000a0:
 	lui	a3, 16
 	addi	a3, a3, -1
 	slt	a2, a3, a2
-	li	a3, -4
-	czero.nez	a2, a3, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addiw	a0, a0, 11
+	addiw	a0, a0, 7
 	ret
 
 func000000000000014f:

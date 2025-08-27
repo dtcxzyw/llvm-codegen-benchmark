@@ -12,10 +12,10 @@ func000000000000001f:
 func0000000000000183:
 	andi	a1, a1, 7
 	sltiu	a1, a1, 3
-	li	a2, 56
-	czero.nez	a1, a2, a1
+	li	a2, -56
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 36
+	addi	a0, a0, 92
 	ret
 
 func0000000000000140:
@@ -47,9 +47,9 @@ func0000000000000013:
 func0000000000000180:
 	andi	a1, a1, 7
 	sltiu	a1, a1, 3
-	li	a2, 56
-	czero.nez	a1, a2, a1
+	li	a2, -56
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 24
+	addi	a0, a0, 80
 	ret
 

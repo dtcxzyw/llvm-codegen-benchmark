@@ -17,13 +17,12 @@ func0000000000000021:
 func000000000000002a:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, -128
-	czero.nez	a1, a2, a1
-	lui	a2, 24
+	slli	a1, a1, 7
 	slti	a0, a0, 51
-	addi	a1, a1, 408
+	lui	a2, 24
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
+	addiw	a0, a0, 280
 	ret
 
 func000000000000002c:

@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a2, -512
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 768
+	seqz	a1, a1
+	slli	a1, a1, 9
 	or	a0, a0, a1
+	ori	a0, a0, 256
 	ret
 

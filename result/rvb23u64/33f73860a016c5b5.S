@@ -16,11 +16,11 @@ func0000000000000014:
 
 func000000000000000c:
 	sext.w	a0, a0
+	bseti	a1, zero, 60
+	czero.nez	a0, a1, a0
 	li	a1, -1
-	slli	a2, a1, 60
-	czero.eqz	a0, a2, a0
-	srli	a1, a1, 3
-	add	a0, a0, a1
+	srli	a1, a1, 4
+	or	a0, a0, a1
 	ret
 
 func0000000000000006:

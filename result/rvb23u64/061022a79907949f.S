@@ -1,10 +1,10 @@
 func0000000000000194:
 	sext.w	a1, a1
+	bseti	a2, zero, 60
+	czero.nez	a1, a2, a1
 	li	a2, -1
-	slli	a3, a2, 60
-	czero.eqz	a1, a3, a1
-	srli	a2, a2, 3
-	add	a1, a1, a2
+	srli	a2, a2, 4
+	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

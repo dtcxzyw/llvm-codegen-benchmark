@@ -48,10 +48,9 @@ func0000000000000055:
 
 func0000000000000139:
 	zext.b	a1, a1
-	li	a2, -8
 	sltiu	a1, a1, 2
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 19
+	slli	a1, a1, 3
+	addi	a1, a1, 11
 	zext.b	a0, a0
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
@@ -59,10 +58,10 @@ func0000000000000139:
 
 func0000000000000061:
 	zext.b	a1, a1
-	li	a2, 32
+	li	a2, -32
 	addi	a1, a1, -91
-	czero.eqz	a1, a2, a1
-	addiw	a1, a1, 93
+	czero.nez	a1, a2, a1
+	addi	a1, a1, 125
 	zext.b	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

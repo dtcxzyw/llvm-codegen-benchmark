@@ -93,11 +93,10 @@ func0000000000000318:
 
 func0000000000000294:
 	zext.b	a0, a0
-	li	a1, -8
-	sltiu	a2, a0, 240
-	czero.nez	a1, a1, a2
+	sltiu	a1, a0, 240
+	slli	a1, a1, 3
 	sltiu	a0, a0, 224
-	addi	a1, a1, -16
+	addi	a1, a1, -24
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 31
 	ret

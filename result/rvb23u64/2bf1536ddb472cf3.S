@@ -22,8 +22,8 @@ func0000000000000014:
 func0000000000000018:
 	andi	a0, a0, 7
 	sltiu	a0, a0, 5
-	li	a1, 39
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 13
+	li	a1, -39
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 52
 	ret
 

@@ -46,11 +46,10 @@ func0000000000000034:
 
 func0000000000000028:
 	or	a0, a0, a1
-	lui	a1, 16
 	sext.w	a0, a0
+	lui	a1, 16
 	sltu	a0, a1, a0
-	li	a1, -4
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 14
+	slli	a0, a0, 2
+	addiw	a0, a0, 10
 	ret
 

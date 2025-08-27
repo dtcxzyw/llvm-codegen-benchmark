@@ -29,12 +29,11 @@ func0000000000000101:
 	sext.w	a1, a1
 	addi	a0, a0, -6
 	sltiu	a1, a1, 4
-	seqz	a0, a0
 	xori	a1, a1, 1
+	seqz	a0, a0
 	and	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 224
+	slli	a0, a0, 3
+	addi	a0, a0, 216
 	ret
 
 func000000000000002c:

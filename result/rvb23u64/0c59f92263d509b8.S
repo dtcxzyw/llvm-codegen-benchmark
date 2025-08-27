@@ -16,8 +16,7 @@ func0000000000000006:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	slt	a0, a0, a1
-	li	a1, -8
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 24
+	slli	a0, a0, 3
+	addiw	a0, a0, 16
 	ret
 

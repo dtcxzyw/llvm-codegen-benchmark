@@ -19,9 +19,8 @@ func000000000000000c:
 
 func0000000000000014:
 	andi	a1, a1, 1
-	li	a2, -1024
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 1792
+	slli	a1, a1, 10
+	addiw	a1, a1, 768
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

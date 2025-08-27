@@ -1,10 +1,10 @@
 func000000000000001f:
-	bexti	a1, a1, 30
-	li	a2, -2
-	czero.nez	a1, a2, a1
+	lui	a2, 262144
+	and	a1, a1, a2
+	srli	a1, a1, 29
 	add	a0, a0, a1
 	slli	a0, a0, 2
-	addiw	a0, a0, 16
+	addiw	a0, a0, 8
 	ret
 
 func0000000000000014:

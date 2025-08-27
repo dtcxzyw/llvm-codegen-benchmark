@@ -9,10 +9,8 @@ func0000000000000001:
 
 func0000000000000008:
 	zext.b	a0, a0
-	andi	a1, a1, 1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	addi	a1, a1, -8
+	slli	a1, a1, 3
+	ori	a1, a1, -16
 	sltiu	a0, a0, 5
 	czero.nez	a0, a1, a0
 	ret

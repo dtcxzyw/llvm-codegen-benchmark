@@ -5,9 +5,9 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	bexti	a0, a0, 27
-	li	a1, -2
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 10
+	lui	a1, 32768
+	and	a0, a0, a1
+	srli	a0, a0, 26
+	addiw	a0, a0, 8
 	ret
 

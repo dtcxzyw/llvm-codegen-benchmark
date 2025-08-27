@@ -11,10 +11,10 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	zext.h	a0, a0
-	li	a1, -16
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 31
+	slli	a0, a0, 48
+	seqz	a0, a0
+	slli	a0, a0, 4
+	addiw	a0, a0, 15
 	ret
 
 func0000000000000046:

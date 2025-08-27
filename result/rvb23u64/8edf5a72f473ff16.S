@@ -23,10 +23,10 @@ func000000000000000d:
 func0000000000000002:
 	sext.w	a1, a1
 	addi	a1, a1, -8
-	li	a2, -8
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 9
+	seqz	a1, a1
+	slli	a1, a1, 3
 	or	a0, a0, a1
+	ori	a0, a0, 1
 	ret
 
 func0000000000000011:
@@ -42,8 +42,7 @@ func0000000000000031:
 	lui	a2, 32768
 	addi	a2, a2, 15
 	sltu	a1, a2, a1
-	li	a2, 256
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret

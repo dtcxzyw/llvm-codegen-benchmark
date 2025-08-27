@@ -1,9 +1,9 @@
 func0000000000000124:
 	srli	a1, a1, 32
-	li	a2, 32
 	srli	a0, a0, 16
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
 	seqz	a0, a0
+	slli	a1, a1, 5
 	slli	a0, a0, 4
 	or	a0, a0, a1
 	addiw	a0, a0, 1

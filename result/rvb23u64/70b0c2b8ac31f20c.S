@@ -3,12 +3,11 @@ func0000000000000030:
 	lui	a3, 14
 	addi	a3, a3, -1807
 	xor	a2, a2, a3
-	li	a3, -8
+	seqz	a2, a2
+	sh3add	a0, a2, a0
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 24
+	addi	a0, a0, 16
 	ret
 
 func000000000000003f:
@@ -16,12 +15,11 @@ func000000000000003f:
 	lui	a3, 14
 	addi	a3, a3, -1807
 	xor	a2, a2, a3
-	li	a3, -8
+	seqz	a2, a2
+	sh3add	a0, a2, a0
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 24
+	addi	a0, a0, 16
 	ret
 
 func000000000000002f:

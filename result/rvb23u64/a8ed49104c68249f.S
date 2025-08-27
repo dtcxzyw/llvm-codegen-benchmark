@@ -27,11 +27,11 @@ func000000000000000a:
 
 func0000000000000018:
 	andi	a2, a2, 1
-	li	a3, 24
-	czero.eqz	a2, a3, a2
+	li	a3, -24
+	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 16
+	addi	a0, a0, 40
 	zext.w	a0, a0
 	ret
 
@@ -44,11 +44,10 @@ func0000000000000015:
 
 func0000000000000009:
 	andi	a2, a2, 1
-	li	a3, -32
-	czero.nez	a2, a3, a2
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a0, a0, 64
+	addiw	a0, a0, 32
 	ret
 
 func000000000000000b:

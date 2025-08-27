@@ -34,10 +34,10 @@ func0000000000000533:
 func0000000000000133:
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
-	li	a2, 56
-	czero.eqz	a1, a2, a1
+	li	a2, -56
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 52
+	addi	a0, a0, 108
 	ret
 
 func0000000000000073:

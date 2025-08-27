@@ -18,9 +18,7 @@ func000000000000000f:
 func0000000000000027:
 	zext.b	a1, a1
 	sltiu	a1, a1, 31
-	li	a2, 8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 24
 	ret
 

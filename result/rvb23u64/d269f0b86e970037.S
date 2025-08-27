@@ -21,9 +21,7 @@ func0000000000000053:
 	slli	a2, a2, 24
 	srli	a2, a2, 24
 	sltu	a1, a2, a1
-	li	a2, -8
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 24
+	sh3add	a0, a1, a0
+	addi	a0, a0, 16
 	ret
 

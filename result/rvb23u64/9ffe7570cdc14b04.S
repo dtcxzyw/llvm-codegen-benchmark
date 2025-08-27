@@ -13,9 +13,9 @@ func0000000000000021:
 	negw	a1, a0
 	max	a0, a0, a1
 	addi	a0, a0, -8
-	li	a1, 62
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 2
+	li	a1, -62
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 64
 	ret
 
 func0000000000000034:

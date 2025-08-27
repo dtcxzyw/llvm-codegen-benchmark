@@ -62,12 +62,11 @@ func0000000000000005:
 
 func0000000000000018:
 	srli	a1, a0, 63
-	lui	a2, 1048575
-	addi	a2, a2, 1
-	czero.nez	a1, a2, a1
+	lui	a2, 1
+	addi	a2, a2, -1
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 2047
-	addi	a0, a0, 1
+	addi	a0, a0, -2047
 	ret
 
 func0000000000000007:

@@ -20,8 +20,8 @@ func0000000000000361:
 
 func0000000000000661:
 	sext.w	a1, a1
-	li	a2, 16
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
+	slli	a1, a1, 4
 	addi	a1, a1, 16
 	addi	a0, a0, 1
 	xor	a0, a0, a1

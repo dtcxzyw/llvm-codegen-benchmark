@@ -1,10 +1,8 @@
 func00000000000000e3:
 	addi	a1, a1, -9
 	sltiu	a1, a1, -4
-	li	a2, -4
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 9
+	sh2add	a0, a1, a0
+	addi	a0, a0, 5
 	ret
 
 func0000000000000013:
@@ -41,10 +39,8 @@ func0000000000000007:
 func0000000000000023:
 	addi	a1, a1, -6
 	sltiu	a1, a1, -5
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 4
+	sh1add	a0, a1, a0
+	addi	a0, a0, 2
 	ret
 
 func0000000000000187:

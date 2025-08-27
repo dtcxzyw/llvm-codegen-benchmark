@@ -1,11 +1,11 @@
 func0000000000000211:
 	zext.b	a1, a1
 	zext.b	a2, a2
-	li	a3, 32
+	li	a3, -32
 	sltiu	a2, a2, 6
-	czero.nez	a2, a3, a2
+	czero.eqz	a2, a3, a2
 	sltiu	a1, a1, 10
-	addi	a2, a2, -39
+	addi	a2, a2, -7
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -48
@@ -14,11 +14,11 @@ func0000000000000211:
 func0000000000000210:
 	zext.b	a1, a1
 	zext.b	a2, a2
-	li	a3, 32
+	li	a3, -32
 	sltiu	a2, a2, 6
-	czero.nez	a2, a3, a2
+	czero.eqz	a2, a3, a2
 	sltiu	a1, a1, 10
-	addi	a2, a2, -39
+	addi	a2, a2, -7
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -48

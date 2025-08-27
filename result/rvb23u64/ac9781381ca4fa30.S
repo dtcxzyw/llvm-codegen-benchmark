@@ -1,9 +1,7 @@
 func0000000000000000:
 	andi	a1, a1, 1
-	li	a2, -2
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 8
+	sh1add	a0, a1, a0
+	addi	a0, a0, 6
 	ret
 
 func000000000000000e:
@@ -30,10 +28,10 @@ func000000000000000b:
 
 func000000000000000c:
 	andi	a1, a1, 1
-	li	a2, 40
-	czero.eqz	a1, a2, a1
+	li	a2, -40
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
-	addi	a0, a0, 16
+	addi	a0, a0, 56
 	ret
 
 func0000000000000003:

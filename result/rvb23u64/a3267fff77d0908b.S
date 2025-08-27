@@ -1,10 +1,8 @@
 func0000000000000001:
 	andi	a0, a0, 1
 	slli	a1, a1, 49
-	li	a2, -2
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 3
-	or	a0, a0, a1
+	sh1add	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000005:

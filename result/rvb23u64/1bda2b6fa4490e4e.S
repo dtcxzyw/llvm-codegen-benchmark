@@ -30,9 +30,9 @@ func00000000000000c8:
 	lui	a3, 32885
 	addi	a3, a3, -1200
 	xor	a2, a2, a3
-	li	a3, -4
-	czero.eqz	a2, a3, a2
-	addi	a2, a2, 16
+	seqz	a2, a2
+	slli	a2, a2, 2
+	addi	a2, a2, 12
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret

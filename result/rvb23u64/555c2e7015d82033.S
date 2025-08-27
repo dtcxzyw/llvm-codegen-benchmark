@@ -48,9 +48,8 @@ func00000000000001ea:
 
 func00000000000001ec:
 	xor	a0, a0, a1
-	li	a1, -4
-	czero.eqz	a0, a1, a0
-	add	a0, a0, a2
-	addi	a0, a0, 24
+	seqz	a0, a0
+	sh2add	a0, a0, a2
+	addi	a0, a0, 20
 	ret
 

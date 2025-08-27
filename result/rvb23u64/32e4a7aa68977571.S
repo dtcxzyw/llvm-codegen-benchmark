@@ -13,9 +13,9 @@ func0000000000000034:
 
 func0000000000000108:
 	sltiu	a1, a1, 33
-	li	a2, -2
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, 3
+	xori	a1, a1, 1
+	slli	a1, a1, 1
+	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 

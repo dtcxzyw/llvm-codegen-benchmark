@@ -29,10 +29,9 @@ func00000000000007e4:
 func0000000000000541:
 	zext.b	a0, a0
 	add	a1, a1, a2
-	li	a2, -2
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, -8
+	seqz	a0, a0
+	sh1add	a0, a0, a1
+	addi	a0, a0, -10
 	ret
 
 func00000000000007e1:
@@ -47,9 +46,8 @@ func00000000000007e1:
 func00000000000001e1:
 	zext.b	a0, a0
 	add	a1, a1, a2
-	li	a2, -8
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, 16
+	seqz	a0, a0
+	sh3add	a0, a0, a1
+	addi	a0, a0, 8
 	ret
 
