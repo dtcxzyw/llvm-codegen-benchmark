@@ -2,8 +2,8 @@ func0000000000000026:
 	sext.w	a0, a0
 	slliw	a1, a1, 1
 	slt	a0, a1, a0
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addiw	a0, a0, 1
 	ret
 

@@ -4,8 +4,8 @@ func0000000000000021:
 	xori	a1, a1, 80
 	xori	a0, a0, 72
 	or	a0, a0, a1
-	li	a1, 4
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 2
 	addi	a0, a0, 7
 	ret
 

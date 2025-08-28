@@ -20,8 +20,7 @@ func00000000000000a1:
 
 func00000000000000c1:
 	andi	a1, a1, 64
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	srli	a1, a1, 5
 	addi	a1, a1, 2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1

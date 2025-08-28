@@ -7,7 +7,7 @@ func0000000000000026:
 	madd	x8, x3, x8, x9
 	cmn	x8, x0
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000036:
@@ -33,6 +33,6 @@ func0000000000000034:
 	madd	x8, x3, x8, x9
 	cmn	x8, x0
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

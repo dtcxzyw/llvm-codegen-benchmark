@@ -96,11 +96,10 @@ func000000000000014f:
 
 func000000000000008f:
 	sext.w	a2, a2
-	li	a3, 4
 	sltiu	a2, a2, 254
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
 	add.uw	a0, a1, a0
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addi	a0, a0, 1
 	ret
 

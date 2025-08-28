@@ -15,8 +15,7 @@ func0000000000000041:
 func0000000000000004:
 	add	a1, a1, a2
 	sltu	a0, a0, a1
-	li	a1, 4
-	czero.nez	a0, a1, a0
-	addiw	a0, a0, -8
+	not	a0, a0
+	slli	a0, a0, 2
 	ret
 

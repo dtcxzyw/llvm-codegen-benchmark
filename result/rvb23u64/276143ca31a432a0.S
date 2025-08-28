@@ -6,8 +6,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 2
 	addi	a1, a1, 20
 	mul	a0, a0, a1
 	ret

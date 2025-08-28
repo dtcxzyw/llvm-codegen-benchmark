@@ -4,13 +4,13 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
-	mov	x8, #0
+	mov	x8, xzr
 	neg	w9, w0
 	sub	x0, x8, w9, uxtw #2
 	ret
 
 func0000000000000001:
-	mov	x8, #0
+	mov	x8, xzr
 	neg	w9, w0
 	sub	x0, x8, w9, uxtw #2
 	ret

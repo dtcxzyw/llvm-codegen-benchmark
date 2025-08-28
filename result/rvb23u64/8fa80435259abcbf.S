@@ -27,10 +27,9 @@ func000000000000001b:
 	lui	a3, 16
 	addi	a3, a3, -1
 	xor	a2, a2, a3
-	li	a3, 2
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh1add	a0, a2, a0
 	addi	a0, a0, 86
 	ret
 

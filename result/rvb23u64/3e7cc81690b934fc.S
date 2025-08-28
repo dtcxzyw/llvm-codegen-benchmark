@@ -171,20 +171,18 @@ func0000000000000065:
 
 func0000000000000008:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, 4
-	czero.nez	a2, a3, a2
-	add	a1, a1, a2
+	li	a3, 1
+	andn	a2, a3, a2
+	sh2add	a1, a2, a1
 	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
 
 func000000000000006a:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, 4
-	czero.nez	a2, a3, a2
-	add	a1, a1, a2
+	li	a3, 1
+	andn	a2, a3, a2
+	sh2add	a1, a2, a1
 	addiw	a1, a1, 4
 	slt	a0, a0, a1
 	ret

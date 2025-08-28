@@ -10,9 +10,9 @@ func0000000000000108:
 
 func00000000000000ca:
 	sext.w	a0, a0
-	li	a1, 2
-	slti	a2, a0, 27
-	czero.nez	a1, a1, a2
+	slti	a1, a0, 27
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	slti	a0, a0, 10
 	addi	a1, a1, 2
 	czero.nez	a0, a1, a0

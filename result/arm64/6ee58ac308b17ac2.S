@@ -11,7 +11,7 @@ func000000000000005e:
 	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	cmn	x8, x2
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x9, hs
 	ret
 
@@ -28,7 +28,7 @@ func0000000000000014:
 	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	cmn	x8, x2
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x9, hs
 	ret
 

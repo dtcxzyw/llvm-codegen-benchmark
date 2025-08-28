@@ -1,6 +1,6 @@
 func00000000000000c8:
 	mov	w9, #85
-	mov	w8, #0
+	mov	w8, wzr
 	mul	w9, w0, w9
 	sub	w8, w8, w1, sxtb
 	cmp	w9, w8

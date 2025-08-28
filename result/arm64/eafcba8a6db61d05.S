@@ -1,13 +1,13 @@
 func0000000000000004:
 	cmn	x0, x2
 	adc	x0, x1, x3
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000006:
 	cmn	x0, x2
 	adc	x0, x1, x3
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000000:

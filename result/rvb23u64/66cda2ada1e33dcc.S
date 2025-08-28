@@ -41,9 +41,9 @@ func0000000000000021:
 func00000000000000c1:
 	sext.w	a2, a0
 	sext.w	a1, a1
-	li	a3, 2
 	slti	a1, a1, 3
-	czero.nez	a1, a3, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	addiw	a1, a1, 1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2

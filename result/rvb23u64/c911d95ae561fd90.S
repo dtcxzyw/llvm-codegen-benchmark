@@ -14,11 +14,10 @@ func000000000000001f:
 	ret
 
 func0000000000000013:
-	zext.h	a1, a1
-	li	a2, 16
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	li	a1, 1027
+	slli	a1, a1, 48
+	snez	a1, a1
+	li	a2, 1027
+	sh1add	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
 

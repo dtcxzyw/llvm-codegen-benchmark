@@ -21,18 +21,15 @@ func0000000000000548:
 
 func0000000000000741:
 	sh3add	a1, a2, a1
-	li	a2, 8
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, -16
+	seqz	a0, a0
+	not	a0, a0
+	sh3add	a0, a0, a1
 	ret
 
 func0000000000000408:
 	sh2add	a1, a2, a1
 	sltiu	a0, a0, 8
-	li	a2, 8
-	czero.eqz	a0, a2, a0
-	add	a0, a0, a1
+	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 

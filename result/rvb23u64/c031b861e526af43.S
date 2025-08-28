@@ -2,8 +2,8 @@ func0000000000000028:
 	seqz	a1, a1
 	sltiu	a0, a0, 170
 	andn	a0, a1, a0
-	li	a1, 4
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 2
 	addiw	a0, a0, 307
 	ret
 

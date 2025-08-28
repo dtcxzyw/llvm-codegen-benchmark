@@ -3,7 +3,7 @@ func000000000000000a:
 	mov	x8, #-1
 	adc	x10, x3, x1
 	cmp	x9, #1
-	mov	x1, #0
+	mov	x1, xzr
 	adc	x0, x10, x8
 	ret
 
@@ -21,7 +21,7 @@ func0000000000000000:
 	adds	x9, x2, x0
 	adc	x10, x3, x1
 	cmn	x9, x8
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x10, hs
 	ret
 
@@ -30,7 +30,7 @@ func000000000000001e:
 	adds	x9, x2, x0
 	adc	x10, x3, x1
 	cmn	x9, x8
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x10, hs
 	ret
 
@@ -39,7 +39,7 @@ func0000000000000018:
 	adds	x9, x2, x0
 	adc	x10, x3, x1
 	cmn	x9, x8
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x10, hs
 	ret
 
@@ -47,7 +47,7 @@ func0000000000000014:
 	adds	x8, x2, x0
 	adc	x9, x3, x1
 	cmn	x8, #1
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x9, hs
 	ret
 

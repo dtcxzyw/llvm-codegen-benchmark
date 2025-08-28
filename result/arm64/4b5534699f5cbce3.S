@@ -21,7 +21,7 @@ func000000000000000a:
 	sbc	x9, x3, x5
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000e:
@@ -29,7 +29,7 @@ func000000000000000e:
 	sbc	x9, x3, x5
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000010:
@@ -37,6 +37,6 @@ func0000000000000010:
 	sbc	x9, x3, x5
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

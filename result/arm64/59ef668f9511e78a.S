@@ -4,7 +4,7 @@ func0000000000000141:
 	ret
 
 func00000000000004c1:
-	mov	w0, #0
+	mov	w0, wzr
 	ret
 
 func00000000000004ca:

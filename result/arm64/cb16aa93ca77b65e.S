@@ -1,16 +1,16 @@
 func0000000000000004:
 	umulh	x0, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000e:
 	umulh	x0, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000016:
 	umulh	x0, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001e:
@@ -22,6 +22,6 @@ func000000000000001e:
 
 func0000000000000006:
 	umulh	x0, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

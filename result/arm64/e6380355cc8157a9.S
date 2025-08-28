@@ -3,7 +3,7 @@ func0000000000000014:
 	umulh	x9, x2, x3
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000010:

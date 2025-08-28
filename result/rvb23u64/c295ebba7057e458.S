@@ -17,19 +17,18 @@ func000000000000004f:
 func000000000000006f:
 	srliw	a2, a2, 31
 	and	a0, a0, a2
-	li	a2, -32
-	czero.eqz	a0, a2, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 5
 	add	a0, a0, a1
-	addi	a0, a0, 240
+	addi	a0, a0, 208
 	ret
 
 func000000000000001f:
 	sext.w	a2, a2
 	seqz	a2, a2
 	and	a0, a0, a2
-	li	a2, 8
-	czero.nez	a0, a2, a0
-	add	a0, a0, a1
+	xori	a0, a0, 1
+	sh3add	a0, a0, a1
 	addi	a0, a0, 928
 	ret
 

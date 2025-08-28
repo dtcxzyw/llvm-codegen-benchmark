@@ -1,5 +1,5 @@
 func0000000000000001:
-	mov	x8, #0
+	mov	x8, xzr
 	add	w9, w0, #16, lsl #12
 	sub	x0, x8, w9, uxth
 	ret

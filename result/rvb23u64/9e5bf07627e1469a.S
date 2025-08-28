@@ -36,12 +36,12 @@ func0000000000000014:
 
 func0000000000000015:
 	zext.h	a2, a2
-	li	a3, -32
 	addi	a2, a2, -2
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addiw	a0, a0, 63
+	addiw	a0, a0, 31
 	ret
 
 func000000000000001f:

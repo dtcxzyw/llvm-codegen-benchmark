@@ -15,7 +15,7 @@ func0000000000000028:
 	str	x30, [sp, #-16]!
 	mov	x8, #2313682944
 	orr	x1, x2, x1
-	mov	x3, #0
+	mov	x3, xzr
 	movk	x8, #8964, lsl #32
 	movk	x8, #35527, lsl #48
 	mov	x2, x8

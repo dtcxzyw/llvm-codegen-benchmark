@@ -48,10 +48,10 @@ func0000000000000183:
 
 func000000000000001c:
 	sext.w	a1, a1
-	li	a2, -32
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addi	a0, a0, 52
+	addi	a0, a0, 20
 	ret
 
 func000000000000001b:

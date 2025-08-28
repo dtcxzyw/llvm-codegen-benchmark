@@ -1,5 +1,5 @@
 func0000000000000016:
-	mov	x8, #0
+	mov	x8, xzr
 	mov	w9, #24
 	sub	x8, x8, w1, uxth
 	smaddl	x0, w8, w9, x0

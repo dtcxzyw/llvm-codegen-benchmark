@@ -1,8 +1,7 @@
 func0000000000000015:
-	li	a3, 2
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	sh1add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addiw	a0, a0, 1
 	ret
 

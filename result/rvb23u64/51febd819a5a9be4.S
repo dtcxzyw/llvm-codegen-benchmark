@@ -53,11 +53,10 @@ func0000000000000013:
 	ret
 
 func0000000000000004:
-	addi	a1, a1, 1
-	li	a2, -32
-	czero.nez	a1, a2, a1
+	sltiu	a1, a1, -1
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addi	a0, a0, 96
+	addi	a0, a0, 64
 	ret
 
 func0000000000000006:

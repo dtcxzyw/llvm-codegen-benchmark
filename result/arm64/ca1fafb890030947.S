@@ -1,16 +1,16 @@
 func0000000000000002:
 	add	x1, x0, x1
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 
 func000000000000000a:
 	add	x1, x0, x1
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 
 func0000000000000007:
 	add	x1, x0, x1
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 
 func0000000000000003:
@@ -27,6 +27,6 @@ func000000000000001f:
 
 func0000000000000012:
 	add	x1, x0, x1
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 

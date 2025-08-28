@@ -38,10 +38,10 @@ func0000000000000294:
 	sltu	a2, a2, a3
 	lui	a3, 8
 	addi	a3, a3, 15
-	sltu	a0, a0, a3
-	li	a3, 4
 	addiw	a1, a1, 12
-	czero.nez	a2, a3, a2
+	sltu	a0, a0, a3
+	xori	a2, a2, 1
+	slli	a2, a2, 2
 	addiw	a2, a2, 17
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

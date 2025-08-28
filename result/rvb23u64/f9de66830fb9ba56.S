@@ -35,8 +35,8 @@ func0000000000000014:
 	sext.w	a0, a0
 	srliw	a1, a1, 1
 	sltu	a0, a1, a0
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
 

@@ -12,8 +12,8 @@ func00000000000000d4:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 3
-	li	a3, 256
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 8
 	addi	a2, a2, 336
 	sltu	a1, a1, a2
 	and	a0, a0, a1
@@ -33,9 +33,8 @@ func0000000000000154:
 func0000000000000146:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	sgtz	a2, a2
-	li	a3, 2
-	czero.nez	a2, a3, a2
+	slti	a2, a2, 1
+	slli	a2, a2, 1
 	addiw	a2, a2, 13
 	slt	a1, a1, a2
 	and	a0, a0, a1

@@ -1,16 +1,16 @@
 func0000000000000003:
 	zext.h	a1, a1
 	addi	a1, a1, -128
-	li	a2, 256
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	ori	a0, a0, 128
 	ret
 
 func0000000000000002:
-	zext.h	a1, a1
-	li	a2, 512
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 48
+	snez	a1, a1
+	slli	a1, a1, 9
 	addi	a1, a1, 512
 	or	a0, a0, a1
 	ret

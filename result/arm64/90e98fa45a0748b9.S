@@ -34,7 +34,7 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w0, w8, w0, uxtb #1
 	ret
 

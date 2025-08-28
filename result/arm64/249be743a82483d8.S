@@ -2,7 +2,7 @@ func000000000000003e:
 	mov	w8, #10
 	add	x9, x1, x1, lsl #2
 	umulh	x8, x1, x8
-	mov	x1, #0
+	mov	x1, xzr
 	cmn	x0, x9, lsl #1
 	cinc	x0, x8, hs
 	ret
@@ -13,7 +13,7 @@ func0000000000000014:
 	movk	x8, #35527, lsl #48
 	mul	x9, x1, x8
 	umulh	x8, x1, x8
-	mov	x1, #0
+	mov	x1, xzr
 	cmn	x9, x0
 	cinc	x0, x8, hs
 	ret

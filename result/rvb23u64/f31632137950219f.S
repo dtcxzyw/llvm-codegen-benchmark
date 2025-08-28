@@ -11,9 +11,9 @@ func000000000000000c:
 func0000000000000001:
 	andi	a0, a0, 1
 	zext.h	a2, a2
-	li	a3, 2
 	addi	a2, a2, -1
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 1
 	addiw	a2, a2, 1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
@@ -35,9 +35,9 @@ func0000000000000008:
 func0000000000000004:
 	andi	a0, a0, 1
 	zext.h	a2, a2
-	li	a3, 8
 	sltiu	a2, a2, 256
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 3
 	addi	a2, a2, 8
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

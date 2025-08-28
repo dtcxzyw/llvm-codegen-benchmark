@@ -27,8 +27,8 @@ func0000000000000006:
 func0000000000000005:
 	andi	a1, a1, 15
 	addi	a1, a1, -9
-	lui	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 14
 	or	a0, a0, a1
 	ori	a0, a0, 144
 	ret

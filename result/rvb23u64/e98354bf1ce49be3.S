@@ -29,10 +29,9 @@ func00000000000001e1:
 	ret
 
 func00000000000001ec:
-	andi	a2, a2, 1
-	li	a3, 8
-	czero.nez	a2, a3, a2
-	add	a1, a1, a2
+	li	a3, 1
+	andn	a2, a3, a2
+	sh3add	a1, a2, a1
 	addi	a1, a1, 32
 	xor	a0, a0, a1
 	snez	a0, a0

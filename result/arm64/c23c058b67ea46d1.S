@@ -81,6 +81,6 @@ func0000000000000036:
 	cinc	x8, x3, hs
 	cmn	x0, x8
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

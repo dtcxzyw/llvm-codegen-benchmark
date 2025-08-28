@@ -17,11 +17,11 @@ func000000000000003f:
 	ret
 
 func000000000000007f:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	sh3add	a1, a2, a1
-	li	a2, 16
-	czero.nez	a0, a2, a0
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 4
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret

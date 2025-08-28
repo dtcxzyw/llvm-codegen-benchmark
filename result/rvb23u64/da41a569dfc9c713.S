@@ -46,8 +46,7 @@ func0000000000000014:
 func0000000000000008:
 	zext.b	a0, a0
 	sltiu	a0, a0, 7
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, 16
 	ret
 

@@ -2,8 +2,8 @@ func0000000000000086:
 	srli	a0, a0, 3
 	sext.w	a0, a0
 	slti	a0, a0, 4
-	li	a1, 16
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 4
 	addiw	a0, a0, 224
 	ret
 

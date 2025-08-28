@@ -1,5 +1,5 @@
 func000000000000000d:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w9, w0, #48
 	sub	w0, w8, w9, uxtb
 	ret

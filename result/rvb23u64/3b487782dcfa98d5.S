@@ -7,8 +7,8 @@ func0000000000000021:
 
 func0000000000000084:
 	srli	a1, a0, 32
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	srli	a0, a0, 16
 	addi	a1, a1, 8
 	czero.eqz	a0, a1, a0

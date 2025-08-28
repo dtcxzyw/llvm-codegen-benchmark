@@ -28,7 +28,7 @@ func0000000000000003:
 
 func0000000000000001:
 	lsl	w8, w0, #1
-	mov	x9, #0
+	mov	x9, xzr
 	sub	x0, x9, w8, uxtw #3
 	ret
 

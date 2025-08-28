@@ -21,7 +21,7 @@ func000000000000001c:
 	adc	x9, x3, x5
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000014:
@@ -29,7 +29,7 @@ func0000000000000014:
 	adc	x9, x3, x5
 	cmn	x8, x0
 	adc	x0, x9, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000a:

@@ -2,12 +2,12 @@ func0000000000000294:
 	andi	a0, a0, 1
 	sext.w	a2, a2
 	lui	a3, 1
-	li	a4, 1024
-	addi	a5, a3, 1
+	addi	a4, a3, 1
 	addi	a3, a3, -2047
-	sltu	a5, a2, a5
+	sltu	a4, a2, a4
 	sltu	a2, a2, a3
-	czero.nez	a3, a4, a5
+	xori	a3, a4, 1
+	slli	a3, a3, 10
 	addiw	a3, a3, 640
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 384

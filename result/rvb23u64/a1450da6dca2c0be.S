@@ -11,9 +11,9 @@ func0000000000000078:
 
 func0000000000000061:
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	li	a2, 8
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 3
 	seqz	a0, a0
 	sh1add	a0, a0, a1
 	addi	a0, a0, 6

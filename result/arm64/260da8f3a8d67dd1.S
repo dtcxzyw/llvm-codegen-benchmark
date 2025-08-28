@@ -1,6 +1,6 @@
 func0000000000000005:
 	add	w8, w0, w0, lsl #1
-	mov	x9, #0
+	mov	x9, xzr
 	sub	x0, x9, w8, sxtw
 	ret
 

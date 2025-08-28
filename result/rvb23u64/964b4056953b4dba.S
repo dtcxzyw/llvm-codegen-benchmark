@@ -19,12 +19,11 @@ func00000000000001e1:
 
 func0000000000000001:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, 8
-	czero.nez	a2, a3, a2
+	li	a3, 1
+	andn	a2, a3, a2
 	li	a3, 240
 	addi	a0, a0, -17
-	add	a1, a1, a2
+	sh3add	a1, a2, a1
 	czero.nez	a0, a3, a0
 	add	a0, a0, a1
 	addiw	a0, a0, 12

@@ -28,9 +28,9 @@ func0000000000000018:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
-	li	a2, 2
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 1
 	sltiu	a0, a0, 256
 	addi	a1, a1, 2
 	czero.nez	a0, a1, a0

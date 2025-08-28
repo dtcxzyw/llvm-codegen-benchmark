@@ -1,6 +1,6 @@
 func0000000000000001:
-	li	a2, 1024
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 10
 	addi	a1, a1, 1024
 	xor	a0, a0, a1
 	ret
@@ -14,9 +14,9 @@ func000000000000000a:
 
 func0000000000000004:
 	srli	a1, a1, 32
-	li	a2, -32
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 63
+	snez	a1, a1
+	slli	a1, a1, 5
+	addiw	a1, a1, 31
 	xor	a0, a0, a1
 	ret
 

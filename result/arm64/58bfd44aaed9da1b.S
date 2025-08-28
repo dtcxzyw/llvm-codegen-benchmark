@@ -14,7 +14,7 @@ func0000000000000007:
 
 func0000000000000005:
 	add	w8, w0, w1
-	mov	x9, #0
+	mov	x9, xzr
 	lsr	w8, w8, #1
 	sub	x0, x9, w8, uxtw #2
 	ret

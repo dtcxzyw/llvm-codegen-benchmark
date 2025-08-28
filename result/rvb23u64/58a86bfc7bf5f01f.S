@@ -22,8 +22,8 @@ func0000000000000006:
 	sub	a0, a0, a1
 	addiw	a0, a0, 2
 	slti	a0, a0, 4
-	li	a1, 256
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 8
 	addiw	a0, a0, 1040
 	ret
 

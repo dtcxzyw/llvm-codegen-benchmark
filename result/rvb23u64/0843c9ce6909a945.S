@@ -24,11 +24,11 @@ func0000000000000021:
 
 func0000000000000181:
 	lui	a1, 15
-	lui	a2, 14
 	and	a0, a0, a1
-	li	a1, 2
-	xor	a2, a2, a0
-	czero.eqz	a1, a1, a2
+	lui	a1, 14
+	xor	a1, a1, a0
+	snez	a1, a1
+	slli	a1, a1, 1
 	binvi	a0, a0, 14
 	addi	a1, a1, -1
 	czero.eqz	a0, a1, a0

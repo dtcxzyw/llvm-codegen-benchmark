@@ -8,7 +8,7 @@ func000000000000001b:
 	movk	x8, #8388, lsl #48
 	movk	x9, #43980, lsl #48
 	umulh	x8, x0, x8
-	mov	x0, #0
+	mov	x0, xzr
 	lsr	x8, x8, #7
 	umulh	x8, x8, x9
 	and	x1, x8, #0x3ffffff

@@ -14,13 +14,13 @@ func000000000000001a:
 	ret
 
 func000000000000001b:
-	andi	a1, a1, 1
 	slli	a2, a2, 5
 	sub	a0, a0, a2
-	li	a2, -32
-	czero.eqz	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addi	a0, a0, 192
+	addi	a0, a0, 160
 	ret
 
 func000000000000000b:

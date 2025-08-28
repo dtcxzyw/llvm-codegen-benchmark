@@ -6,9 +6,9 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	andi	a2, a2, 1
-	li	a3, 64
-	czero.nez	a2, a3, a2
+	li	a3, 1
+	andn	a2, a3, a2
+	slli	a2, a2, 6
 	addi	a2, a2, 56
 	sub	a1, a1, a0
 	subw	a0, a2, a1

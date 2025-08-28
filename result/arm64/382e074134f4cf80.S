@@ -4,7 +4,7 @@ func000000000000001b:
 	movk	x8, #39845, lsl #32
 	movk	x8, #8388, lsl #48
 	umulh	x9, x0, x8
-	mov	x0, #0
+	mov	x0, xzr
 	madd	x8, x1, x8, x9
 	mov	x9, #52989
 	movk	x9, #33889, lsl #16

@@ -8,8 +8,8 @@ func0000000000000003:
 
 func0000000000000002:
 	sext.w	a1, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 1
 	addiw	a1, a1, 1020
 	ori	a0, a0, 98
 	and	a0, a0, a1

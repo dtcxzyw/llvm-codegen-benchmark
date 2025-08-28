@@ -1,7 +1,7 @@
 func0000000000000006:
 	mov	x8, #32557
 	eor	x9, x0, #0xff
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #19605, lsl #16
 	movk	x8, #62509, lsl #32
 	movk	x8, #22609, lsl #48
@@ -11,7 +11,7 @@ func0000000000000006:
 func0000000000000004:
 	mov	x8, #9033
 	mov	x9, #51847
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #13110, lsl #16
 	movk	x9, #34283, lsl #16
 	movk	x8, #16128, lsl #32
@@ -25,7 +25,7 @@ func0000000000000004:
 func000000000000000e:
 	mov	x8, #2259
 	mov	x9, #32557
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #34211, lsl #16
 	movk	x9, #19605, lsl #16
 	movk	x8, #27272, lsl #32

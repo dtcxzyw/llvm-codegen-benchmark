@@ -17,8 +17,8 @@ func0000000000000006:
 	sext.w	a2, a2
 	lui	a3, 4096
 	slt	a2, a2, a3
-	li	a3, 2
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 1
 	addi	a2, a2, 2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2
@@ -68,8 +68,8 @@ func0000000000000004:
 	andi	a1, a1, 1
 	sext.w	a2, a2
 	sltiu	a2, a2, 17
-	li	a3, 4
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 2
 	addi	a2, a2, 2
 	czero.nez	a1, a2, a1
 	addiw	a1, a1, 1

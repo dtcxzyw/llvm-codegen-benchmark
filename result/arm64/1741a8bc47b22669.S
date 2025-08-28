@@ -3,7 +3,7 @@ func0000000000000018:
 	cinc	x9, x3, hs
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001a:
@@ -11,7 +11,7 @@ func000000000000001a:
 	cinc	x9, x3, hs
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000003a:
@@ -19,7 +19,7 @@ func000000000000003a:
 	cinc	x9, x3, hs
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000000:
@@ -27,7 +27,7 @@ func0000000000000000:
 	cinc	x9, x3, hs
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000010:
@@ -35,6 +35,6 @@ func0000000000000010:
 	cinc	x9, x3, hs
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

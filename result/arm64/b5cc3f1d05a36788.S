@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x0, x8, w0, uxtb
 	ret
 

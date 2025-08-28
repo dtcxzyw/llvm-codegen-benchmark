@@ -27,8 +27,8 @@ func0000000000000032:
 	ret
 
 func0000000000000006:
-	li	a3, 2
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ori	a0, a0, 1

@@ -10,12 +10,12 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	zext.w	a2, a2
 	andi	a1, a1, 2032
 	or	a1, a1, a2
-	li	a2, 4
-	czero.nez	a0, a2, a0
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 2
 	or	a0, a0, a1
 	ori	a0, a0, 1
 	ret

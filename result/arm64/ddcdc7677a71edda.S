@@ -1,6 +1,6 @@
 func0000000000000003:
 	mov	x8, #33103
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #63335, lsl #16
 	movk	x8, #31614, lsl #32
 	movk	x8, #5125, lsl #48
@@ -9,6 +9,6 @@ func0000000000000003:
 
 func0000000000000001:
 	sub	x0, x0, #1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

@@ -44,8 +44,8 @@ func000000000000002b:
 
 func0000000000000033:
 	sext.w	a0, a0
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 8
 	ret
 

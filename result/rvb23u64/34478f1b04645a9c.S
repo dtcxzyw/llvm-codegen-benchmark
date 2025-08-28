@@ -49,8 +49,7 @@ func000000000000000c:
 func0000000000000018:
 	zext.h	a0, a0
 	sltiu	a0, a0, 97
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, -7
+	slli	a0, a0, 5
+	addiw	a0, a0, -39
 	ret
 

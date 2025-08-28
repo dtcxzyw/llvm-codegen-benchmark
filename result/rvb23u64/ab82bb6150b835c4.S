@@ -15,8 +15,8 @@ func0000000000000011:
 func0000000000000009:
 	zext.h	a0, a0
 	sltiu	a0, a0, 256
-	li	a1, 8
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 3
 	addiw	a0, a0, 4
 	ret
 

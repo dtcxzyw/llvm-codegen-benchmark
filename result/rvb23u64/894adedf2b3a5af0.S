@@ -24,8 +24,8 @@ func0000000000000024:
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 17
-	li	a1, 4
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 2
 	addi	a0, a0, 36
 	ret
 

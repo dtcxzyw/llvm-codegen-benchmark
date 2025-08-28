@@ -1,8 +1,8 @@
 func0000000000000004:
 	subw	a0, a0, a1
 	sltiu	a0, a0, 56
-	li	a1, 64
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 6
 	addiw	a0, a0, 60
 	ret
 

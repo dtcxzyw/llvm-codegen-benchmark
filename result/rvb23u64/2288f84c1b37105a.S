@@ -12,8 +12,8 @@ func0000000000000028:
 	sext.w	a0, a0
 	zext.b	a1, a1
 	addi	a1, a1, -8
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 2
 	addi	a1, a1, 6
 	sltu	a0, a0, a1
 	ret
@@ -22,8 +22,8 @@ func0000000000000094:
 	sext.w	a0, a0
 	zext.b	a1, a1
 	sltiu	a1, a1, 5
-	li	a2, 2
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	addi	a1, a1, 2
 	sltu	a0, a1, a0
 	ret

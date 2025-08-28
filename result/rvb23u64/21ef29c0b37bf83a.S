@@ -1,8 +1,8 @@
 func0000000000000004:
 	addi	a0, a0, -1
 	sltiu	a0, a0, 5
-	li	a1, 4
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 2
 	addiw	a0, a0, 1
 	ret
 
@@ -16,8 +16,8 @@ func0000000000000001:
 func0000000000000024:
 	addi	a0, a0, -1
 	srli	a0, a0, 32
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 33
+	snez	a0, a0
+	slli	a0, a0, 5
+	addiw	a0, a0, 1
 	ret
 

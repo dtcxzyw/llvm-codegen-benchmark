@@ -1,10 +1,10 @@
 func0000000000000002:
 	and	x0, x0, x2
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000000:
 	and	x0, x0, x2
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

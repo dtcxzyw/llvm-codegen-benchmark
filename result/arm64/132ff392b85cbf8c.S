@@ -1,6 +1,6 @@
 func0000000000000004:
 	mul	x8, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	umulh	x9, x0, x0
 	add	x9, x9, x8
 	add	x0, x9, x8
@@ -8,7 +8,7 @@ func0000000000000004:
 
 func0000000000000000:
 	mul	x8, x0, x1
-	mov	x1, #0
+	mov	x1, xzr
 	umulh	x9, x0, x0
 	add	x9, x9, x8
 	add	x0, x9, x8

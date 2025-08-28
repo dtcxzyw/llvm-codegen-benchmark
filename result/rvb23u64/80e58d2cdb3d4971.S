@@ -23,16 +23,15 @@ func000000000000000c:
 
 func0000000000000014:
 	andi	a0, a0, 6
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 8
 	ret
 
 func0000000000000018:
 	andi	a0, a0, 7
 	sltiu	a0, a0, 3
-	li	a1, 16
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 4
 	addi	a0, a0, 16
 	ret
 

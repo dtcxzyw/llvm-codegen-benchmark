@@ -25,9 +25,9 @@ func0000000000000042:
 
 func0000000000000295:
 	sext.w	a0, a0
-	li	a1, 4
-	slti	a2, a0, 8
-	czero.nez	a1, a1, a2
+	slti	a1, a0, 8
+	xori	a1, a1, 1
+	slli	a1, a1, 2
 	slti	a0, a0, 9
 	addi	a1, a1, -12
 	czero.eqz	a0, a1, a0

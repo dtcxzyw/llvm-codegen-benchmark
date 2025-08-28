@@ -18,9 +18,9 @@ func0000000000000004:
 
 func000000000000000c:
 	sext.w	a0, a0
-	li	a1, -32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 64
+	snez	a0, a0
+	slli	a0, a0, 5
+	addi	a0, a0, 32
 	ret
 
 func0000000000000008:

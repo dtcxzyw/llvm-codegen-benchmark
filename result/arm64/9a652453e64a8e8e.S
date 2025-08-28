@@ -1,6 +1,6 @@
 func0000000000000004:
 	umulh	x0, x0, x0
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000e:

@@ -23,9 +23,9 @@ func0000000000000294:
 
 func0000000000000084:
 	zext.b	a0, a0
-	li	a1, 8
-	sltiu	a2, a0, 29
-	czero.nez	a1, a1, a2
+	sltiu	a1, a0, 29
+	xori	a1, a1, 1
+	slli	a1, a1, 3
 	sltiu	a0, a0, 21
 	addi	a1, a1, 8
 	czero.nez	a0, a1, a0

@@ -1,9 +1,8 @@
 func0000000000000084:
 	zext.b	a2, a2
 	addi	a2, a2, -117
-	li	a3, 2
-	czero.eqz	a2, a3, a2
-	add	a1, a1, a2
+	snez	a2, a2
+	sh1add	a1, a2, a1
 	addi	a1, a1, 4
 	sltu	a0, a1, a0
 	ret
@@ -11,9 +10,8 @@ func0000000000000084:
 func0000000000000081:
 	zext.b	a2, a2
 	addi	a2, a2, -117
-	li	a3, 2
-	czero.eqz	a2, a3, a2
-	add	a1, a1, a2
+	snez	a2, a2
+	sh1add	a1, a2, a1
 	addi	a1, a1, 4
 	xor	a0, a0, a1
 	seqz	a0, a0

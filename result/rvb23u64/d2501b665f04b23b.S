@@ -20,8 +20,8 @@ func0000000000000318:
 
 func0000000000000084:
 	srli	a1, a0, 16
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 1
 	sltiu	a0, a0, 256
 	addi	a1, a1, 2
 	czero.nez	a0, a1, a0

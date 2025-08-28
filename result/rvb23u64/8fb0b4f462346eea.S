@@ -5,9 +5,10 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	bexti	a0, a0, 22
-	lui	a1, 2
-	czero.nez	a0, a1, a0
+	lui	a1, 1024
+	and	a0, a0, a1
+	srli	a0, a0, 9
+	binvi	a0, a0, 13
 	addiw	a0, a0, 1
 	ret
 

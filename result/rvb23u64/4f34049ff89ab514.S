@@ -9,9 +9,9 @@ func00000000000000e1:
 
 func0000000000000361:
 	sext.w	a1, a1
-	li	a2, 16
 	slti	a1, a1, 3
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 4
 	addi	a1, a1, 16
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -41,9 +41,9 @@ func0000000000000561:
 
 func0000000000000261:
 	sext.w	a1, a1
-	li	a2, 2
 	sltiu	a1, a1, 17
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	addi	a1, a1, 2
 	addi	a0, a0, 1
 	xor	a0, a0, a1

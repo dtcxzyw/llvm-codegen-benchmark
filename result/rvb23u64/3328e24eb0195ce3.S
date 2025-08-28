@@ -54,10 +54,9 @@ func00000000000000c0:
 	ret
 
 func000000000000001e:
-	li	a3, 8
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
 	sh3add	a0, a1, a0
-	add	a0, a0, a2
+	sh3add	a0, a2, a0
 	addi	a0, a0, -24
 	ret
 
@@ -81,12 +80,11 @@ func000000000000001f:
 
 func0000000000000013:
 	binvi	a2, a2, 63
-	li	a3, 8
-	czero.eqz	a2, a3, a2
 	li	a3, 104
+	snez	a2, a2
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh3add	a0, a2, a0
 	addi	a0, a0, 44
 	ret
 

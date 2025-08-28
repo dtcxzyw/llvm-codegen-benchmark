@@ -8,8 +8,8 @@ func0000000000000004:
 func0000000000000026:
 	mulw	a0, a0, a1
 	slti	a0, a0, 256
-	li	a1, 8
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 3
 	addi	a0, a0, 8
 	ret
 

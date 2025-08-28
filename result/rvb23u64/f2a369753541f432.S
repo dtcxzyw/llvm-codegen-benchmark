@@ -22,8 +22,8 @@ func0000000000000031:
 
 func0000000000000004:
 	sext.w	a1, a1
-	li	a2, 16
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addiw	a0, a0, -8
 	ret

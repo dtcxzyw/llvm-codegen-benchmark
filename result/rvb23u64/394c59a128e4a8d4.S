@@ -32,12 +32,11 @@ func000000000000000e:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 1
 	andi	a2, a2, -2048
-	li	a3, 2
+	li	a3, 1
 	bclri	a2, a2, 11
-	czero.nez	a1, a3, a1
-	or	a1, a1, a2
+	andn	a1, a3, a1
+	sh1add	a1, a1, a2
 	slliw	a0, a0, 6
 	or	a0, a0, a1
 	addi	a0, a0, 1

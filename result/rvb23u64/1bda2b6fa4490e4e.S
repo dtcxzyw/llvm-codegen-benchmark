@@ -17,9 +17,9 @@ func0000000000000408:
 
 func0000000000000208:
 	sext.w	a2, a2
-	li	a3, 2
 	sltiu	a2, a2, 10
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 1
 	addi	a2, a2, 3
 	sub	a0, a0, a1
 	sltu	a0, a0, a2

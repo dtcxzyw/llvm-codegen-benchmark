@@ -19,8 +19,8 @@ func000000000000003c:
 
 func0000000000000023:
 	zext.b	a2, a2
-	bseti	a3, zero, 11
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 11
 	add	a1, a1, a2
 	addi	a1, a1, 128
 	add.uw	a0, a1, a0

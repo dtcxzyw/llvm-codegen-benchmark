@@ -6,7 +6,7 @@ func00000000000000f4:
 	add	x8, x8, x2, lsl #2
 	umulh	x9, x0, x8
 	madd	x0, x1, x8, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func00000000000000de:
@@ -14,6 +14,6 @@ func00000000000000de:
 	sub	x8, x8, #1
 	umulh	x9, x0, x8
 	madd	x0, x1, x8, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

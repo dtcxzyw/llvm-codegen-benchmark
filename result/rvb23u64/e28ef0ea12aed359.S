@@ -23,8 +23,8 @@ func0000000000000004:
 func000000000000000c:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addi	a0, a0, 43
 	ret
 

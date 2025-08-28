@@ -63,8 +63,8 @@ func000000000000000c:
 
 func000000000000000e:
 	feq.d	a0, fa0, fa0
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addi	a0, a0, 2
 	ret
 

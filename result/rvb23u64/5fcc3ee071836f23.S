@@ -30,9 +30,8 @@ func0000000000000088:
 	sext.w	a0, a0
 	andi	a2, a2, 3
 	addi	a2, a2, -1
-	li	a3, 4
-	czero.eqz	a2, a3, a2
-	add	a1, a1, a2
+	snez	a2, a2
+	sh2add	a1, a2, a1
 	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret

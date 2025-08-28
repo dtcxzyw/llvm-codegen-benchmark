@@ -1,8 +1,8 @@
 func0000000000000001:
 	andi	a0, a0, 384
 	addi	a0, a0, -128
-	li	a1, 256
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 8
 	addiw	a0, a0, 128
 	ret
 

@@ -36,10 +36,10 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	srliw	a1, a1, 1
-	li	a2, 64
-	czero.nez	a0, a2, a0
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 6
 	add	a0, a0, a1
 	addiw	a0, a0, 129
 	ret

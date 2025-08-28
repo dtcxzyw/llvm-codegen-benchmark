@@ -30,9 +30,9 @@ func0000000000000021:
 
 func0000000000000028:
 	sext.w	a2, a0
-	andi	a1, a1, 1
-	li	a3, 8
-	czero.nez	a1, a3, a1
+	li	a3, 1
+	andn	a1, a3, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 4
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
@@ -58,9 +58,9 @@ func00000000000000c1:
 
 func000000000000002a:
 	sext.w	a2, a0
-	andi	a1, a1, 1
-	li	a3, 2
-	czero.nez	a1, a3, a1
+	li	a3, 1
+	andn	a1, a3, a1
+	slli	a1, a1, 1
 	addi	a1, a1, 1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2

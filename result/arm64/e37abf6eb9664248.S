@@ -1,25 +1,25 @@
 func0000000000000004:
 	umulh	x8, x0, x2
 	madd	x0, x1, x2, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000006:
 	umulh	x8, x0, x2
 	madd	x0, x1, x2, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000e:
 	umulh	x8, x0, x2
 	madd	x0, x1, x2, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000002:
 	umulh	x8, x0, x2
 	madd	x0, x1, x2, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000a:
@@ -33,6 +33,6 @@ func000000000000000a:
 func0000000000000000:
 	umulh	x8, x0, x2
 	madd	x0, x1, x2, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

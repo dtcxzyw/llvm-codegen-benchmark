@@ -9,7 +9,7 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w0, w8, w0, uxtb
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w0, w8, w0, uxtb
 	ret
 

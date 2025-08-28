@@ -18,8 +18,7 @@ func0000000000000001:
 func0000000000000008:
 	zext.h	a1, a1
 	sltiu	a1, a1, 9
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 8
 	and	a0, a0, a1
 	ret

@@ -1,6 +1,6 @@
 func0000000000000002:
 	msub	x1, x2, x4, x0
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 
 func0000000000000001:

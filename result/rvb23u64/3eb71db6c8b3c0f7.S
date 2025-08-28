@@ -11,9 +11,10 @@ func00000000000000e1:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
-	li	a1, 4
-	czero.eqz	a0, a1, a0
-	add	a0, a0, a2
-	addiw	a0, a0, -6
+	seqz	a0, a0
+	not	a0, a0
+	slli	a0, a0, 2
+	ori	a0, a0, -6
+	addw	a0, a0, a2
 	ret
 

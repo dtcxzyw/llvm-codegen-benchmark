@@ -9,7 +9,7 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	mov	w8, #0
+	mov	w8, wzr
 	and	w9, w0, #0xffff
 	sub	w8, w8, w1, sxtb
 	cmp	w9, w8, uxth
@@ -17,7 +17,7 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	mov	w8, #0
+	mov	w8, wzr
 	and	w9, w0, #0xffff
 	sub	w8, w8, w1, sxtb
 	cmp	w9, w8, uxth
@@ -25,7 +25,7 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	mov	w8, #0
+	mov	w8, wzr
 	and	w9, w0, #0xffff
 	sub	w8, w8, w1, sxtb
 	cmp	w9, w8, uxth

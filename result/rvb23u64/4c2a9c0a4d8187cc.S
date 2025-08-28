@@ -18,9 +18,9 @@ func00000000000000c6:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	lui	a2, 4096
-	li	a3, 2
 	slt	a2, a0, a2
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 1
 	addi	a2, a2, 2
 	czero.nez	a1, a2, a1
 	slti	a0, a0, 256
@@ -70,9 +70,9 @@ func0000000000000318:
 func0000000000000084:
 	andi	a1, a1, 1
 	sext.w	a0, a0
-	li	a2, 4
-	sltiu	a3, a0, 17
-	czero.nez	a2, a2, a3
+	sltiu	a2, a0, 17
+	xori	a2, a2, 1
+	slli	a2, a2, 2
 	addi	a2, a2, 2
 	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 3

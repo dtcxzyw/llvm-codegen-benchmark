@@ -1,6 +1,6 @@
 func0000000000000000:
 	adds	x8, x2, x4
-	mov	x1, #0
+	mov	x1, xzr
 	adc	x9, x3, x5
 	cmn	x0, x8
 	cinc	x0, x9, hs

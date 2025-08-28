@@ -1,9 +1,9 @@
 func0000000000000003:
-	andi	a1, a1, 1
 	zext.b	a0, a0
-	lui	a2, 4096
+	li	a2, 1
 	addi	a0, a0, -114
-	czero.nez	a1, a2, a1
+	andn	a1, a2, a1
+	slli	a1, a1, 24
 	addi	a1, a1, -256
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 384

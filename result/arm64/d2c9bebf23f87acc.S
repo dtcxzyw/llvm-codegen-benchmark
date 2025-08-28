@@ -3,7 +3,7 @@ func0000000000000018:
 	adc	x9, x3, x5
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001a:
@@ -11,7 +11,7 @@ func000000000000001a:
 	adc	x9, x3, x5
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001c:
@@ -46,7 +46,7 @@ func000000000000000a:
 	adc	x9, x3, x5
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000010:
@@ -54,6 +54,6 @@ func0000000000000010:
 	adc	x9, x3, x5
 	cmp	x0, x8
 	sbc	x0, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

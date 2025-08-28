@@ -15,11 +15,10 @@ func0000000000000001:
 func0000000000000008:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 2
 	andi	a1, a1, 1
 	sltiu	a2, a2, 37
 	addi	a1, a1, -1
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 1
 	ori	a1, a1, -3
 	addiw	a2, a2, -4
 	czero.eqz	a1, a1, a0
@@ -57,9 +56,9 @@ func0000000000000014:
 	lui	a3, 32
 	addi	a3, a3, -1
 	sltu	a2, a2, a3
-	li	a3, 4
 	addiw	a1, a1, 12
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
+	slli	a2, a2, 2
 	addiw	a2, a2, 17
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

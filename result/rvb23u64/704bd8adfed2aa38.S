@@ -29,9 +29,8 @@ func000000000000000c:
 func000000000000000a:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, 8
 	slti	a1, a1, 65
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 3
 	addiw	a2, a1, 615
 	addi	a1, a1, 616
 	czero.nez	a1, a1, a0

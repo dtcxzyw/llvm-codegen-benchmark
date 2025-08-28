@@ -1,7 +1,6 @@
 func000000000000001f:
-	li	a2, 8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	snez	a1, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 96
 	ret
 
@@ -23,9 +22,8 @@ func000000000000008b:
 
 func0000000000000013:
 	binvi	a1, a1, 63
-	li	a2, 8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	snez	a1, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -60
 	ret
 

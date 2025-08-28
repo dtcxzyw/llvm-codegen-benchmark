@@ -23,10 +23,9 @@ func0000000000000008:
 
 func0000000000000018:
 	zext.h	a0, a0
-	andi	a1, a1, 1
-	li	a2, -32
-	czero.eqz	a1, a2, a1
-	addi	a1, a1, -7
+	not	a1, a1
+	slli	a1, a1, 5
+	ori	a1, a1, -39
 	sltiu	a0, a0, 65
 	czero.nez	a0, a1, a0
 	ret

@@ -13,8 +13,8 @@ func0000000000000030:
 func000000000000002f:
 	zext.b	a2, a2
 	addi	a2, a2, -25
-	li	a3, 16
-	czero.eqz	a2, a3, a2
+	snez	a2, a2
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	sh3add.uw	a0, a1, a0
 	addi	a0, a0, 64

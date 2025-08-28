@@ -4,7 +4,7 @@ func000000000000001e:
 	umulh	x8, x2, x8
 	cmn	x0, x9, lsl #1
 	adc	x0, x8, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000003e:
@@ -26,6 +26,6 @@ func0000000000000014:
 	umulh	x8, x2, x8
 	cmn	x9, x0
 	adc	x0, x8, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

@@ -70,8 +70,7 @@ func000000000000000d:
 	lui	a0, %hi(.LCPI9_0)
 	flw	fa5, %lo(.LCPI9_0)(a0)
 	flt.s	a0, fa0, fa5
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 9
 	ret
 

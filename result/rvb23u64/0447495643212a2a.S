@@ -1,7 +1,8 @@
 func000000000000000a:
-	bexti	a0, a0, 59
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	bseti	a1, zero, 59
+	and	a0, a0, a1
+	srli	a0, a0, 58
+	xori	a0, a0, 2
 	addi	a0, a0, 6
 	ret
 

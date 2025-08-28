@@ -7,14 +7,14 @@ func0000000000000015:
 
 func0000000000000005:
 	add	w9, w1, w2
-	mov	x8, #0
+	mov	x8, xzr
 	add	w9, w9, w0
 	sub	x0, x8, w9, sxtw
 	ret
 
 func0000000000000011:
 	add	w9, w1, w2
-	mov	x8, #0
+	mov	x8, xzr
 	add	w9, w0, w9
 	sub	x0, x8, w9, sxtw
 	ret

@@ -4,7 +4,7 @@ func0000000000000002:
 	movk	x8, #62509, lsl #32
 	movk	x8, #22609, lsl #48
 	add	x1, x0, x8
-	mov	x0, #0
+	mov	x0, xzr
 	ret
 
 func0000000000000003:

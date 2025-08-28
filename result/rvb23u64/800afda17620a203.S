@@ -8,8 +8,8 @@ func0000000000000028:
 
 func0000000000000021:
 	zext.b	a1, a1
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 8
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -17,8 +17,8 @@ func0000000000000021:
 
 func0000000000000038:
 	zext.b	a1, a1
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 8
 	sltu	a0, a0, a1
 	ret

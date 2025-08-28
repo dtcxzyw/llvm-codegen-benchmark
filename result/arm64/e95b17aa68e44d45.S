@@ -2,14 +2,14 @@ func0000000000000002:
 	mov	x8, #-1
 	cmp	x0, #1
 	adc	x0, x1, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000000:
 	mov	x8, #-1
 	cmp	x0, #1
 	adc	x0, x1, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000006:
@@ -23,6 +23,6 @@ func0000000000000006:
 	movk	x8, #62509, lsl #32
 	movk	x8, #22609, lsl #48
 	adc	x0, x1, x8
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

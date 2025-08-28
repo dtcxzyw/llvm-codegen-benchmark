@@ -56,6 +56,6 @@ func0000000000000014:
 	ret
 
 func00000000000000a6:
-	mov	w0, #0
+	mov	w0, wzr
 	ret
 

@@ -6,7 +6,7 @@ func0000000000000028:
 	ret
 
 func0000000000000024:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x8, x8, w0, sxtw #2
 	cmp	x8, #128
 	cset	w0, lo

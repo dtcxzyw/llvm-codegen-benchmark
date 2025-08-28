@@ -154,8 +154,8 @@ func0000000000000194:
 
 func0000000000000029:
 	zext.b	a1, a1
-	li	a2, 64
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 6
 	addi	a1, a1, 64
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

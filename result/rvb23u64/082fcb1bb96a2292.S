@@ -1,8 +1,8 @@
 func0000000000000021:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 1
 	addi	a2, a1, 7
 	addiw	a1, a1, 4
 	czero.eqz	a2, a2, a0

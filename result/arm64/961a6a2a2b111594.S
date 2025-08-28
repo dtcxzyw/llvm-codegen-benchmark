@@ -65,7 +65,7 @@ func0000000000000066:
 	ret
 
 func00000000000000b9:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x8, x8, w1, uxtw
 	cmp	x0, x8
 	cset	w0, ls

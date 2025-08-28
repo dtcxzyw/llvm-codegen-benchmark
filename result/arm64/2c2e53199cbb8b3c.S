@@ -37,7 +37,7 @@ func0000000000000014:
 	adds	x8, x0, x5
 	cinc	x9, x1, hs
 	cmn	x8, x3
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x9, hs
 	ret
 

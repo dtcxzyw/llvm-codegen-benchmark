@@ -72,8 +72,8 @@ func0000000000000008:
 func0000000000000001:
 	neg	a1, a1
 	xor	a0, a0, a1
-	li	a1, 4
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 2
 	addi	a0, a0, 396
 	ret
 

@@ -27,11 +27,10 @@ func0000000000000035:
 
 func0000000000000080:
 	sext.w	a2, a2
-	li	a3, 4
 	sltiu	a2, a2, 254
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addi	a0, a0, 1
 	zext.w	a0, a0
 	ret

@@ -10,12 +10,12 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 1
 	andi	a1, a1, 7
-	li	a2, 8
-	czero.nez	a0, a2, a0
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 7
+	slli	a1, a1, 4
 	or	a0, a0, a1
-	slli	a0, a0, 4
 	addi	a0, a0, 128
 	ret
 

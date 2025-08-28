@@ -12,12 +12,12 @@ func000000000000000b:
 
 func0000000000000002:
 	orr	x0, x1, x2, lsl #1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000e:
 	orr	x0, x1, x2, lsr #63
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001e:
@@ -28,6 +28,6 @@ func000000000000001e:
 
 func000000000000001a:
 	orr	x0, x1, x2, lsl #1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

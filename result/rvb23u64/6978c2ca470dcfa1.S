@@ -76,11 +76,10 @@ func0000000000000060:
 
 func0000000000000041:
 	sext.w	a2, a2
-	li	a3, 4
 	sltiu	a2, a2, 4
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addiw	a0, a0, 34
 	ret
 
@@ -96,11 +95,10 @@ func000000000000014f:
 
 func0000000000000040:
 	sext.w	a2, a2
-	li	a3, 4
 	sltiu	a2, a2, 254
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addiw	a0, a0, 1
 	ret
 

@@ -6,14 +6,14 @@ func000000000000002a:
 	ret
 
 func0000000000000025:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x8, x8, w1, sxtw
 	cmp	x0, x8
 	cset	w0, ls
 	ret
 
 func0000000000000028:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x8, x8, w1, sxtw
 	cmp	x0, x8
 	cset	w0, hi

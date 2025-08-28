@@ -7,7 +7,7 @@ func0000000000000036:
 	mul	x9, x3, x8
 	umulh	x8, x2, x8
 	cmn	x1, x10
-	mov	x1, #0
+	mov	x1, xzr
 	adc	x0, x8, x9
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000024:
 	mul	x9, x3, x8
 	umulh	x8, x2, x8
 	cmn	x1, x10
-	mov	x1, #0
+	mov	x1, xzr
 	adc	x0, x8, x9
 	ret
 

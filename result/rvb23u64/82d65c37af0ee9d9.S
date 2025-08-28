@@ -6,8 +6,7 @@ func0000000000000001:
 
 func000000000000000c:
 	andi	a0, a0, 1
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 248
 	ret
 

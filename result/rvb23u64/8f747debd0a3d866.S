@@ -12,10 +12,9 @@ func0000000000000003:
 
 func0000000000000005:
 	sext.w	a1, a1
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
 	bexti	a0, a0, 10
-	or	a0, a0, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 2
 	ret
 

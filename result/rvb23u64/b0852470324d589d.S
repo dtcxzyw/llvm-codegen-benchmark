@@ -56,9 +56,9 @@ func00000000000004c1:
 func000000000000182a:
 	sext.w	a2, a0
 	sext.w	a1, a1
-	li	a3, 2
 	slti	a1, a1, 3
-	czero.nez	a1, a3, a1
+	xori	a1, a1, 1
+	slli	a1, a1, 1
 	addi	a1, a1, 1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2

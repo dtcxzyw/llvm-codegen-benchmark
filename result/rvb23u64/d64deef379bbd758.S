@@ -10,9 +10,9 @@ func0000000000000004:
 	ret
 
 func00000000000000a6:
-	andi	a0, a0, 1
-	li	a2, 4
-	czero.nez	a0, a2, a0
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 8
 	srliw	a0, a0, 31

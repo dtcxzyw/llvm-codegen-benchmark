@@ -17,11 +17,11 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 1
 	zext.b	a1, a1
-	li	a2, -32
-	czero.eqz	a0, a2, a0
-	addi	a0, a0, 63
+	li	a2, 1
+	andn	a0, a2, a0
+	slli	a0, a0, 5
+	addiw	a0, a0, 31
 	sltu	a0, a0, a1
 	ret
 

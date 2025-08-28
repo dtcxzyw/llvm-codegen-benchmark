@@ -6,7 +6,7 @@ func0000000000000036:
 	umulh	x9, x0, x8
 	madd	x8, x1, x8, x9
 	mov	x9, #52989
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x9, #33889, lsl #16
 	movk	x9, #30481, lsl #32
 	movk	x9, #43980, lsl #48
@@ -23,7 +23,7 @@ func0000000000000026:
 	umulh	x9, x0, x8
 	madd	x8, x1, x8, x9
 	mov	x9, #2313682944
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x9, #8964, lsl #32
 	movk	x9, #35527, lsl #48
 	umulh	x0, x8, x9

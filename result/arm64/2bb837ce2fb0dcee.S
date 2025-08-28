@@ -20,7 +20,7 @@ func0000000000000014:
 	adds	x8, x0, x2
 	adc	x9, x1, x3
 	cmn	x8, x4
-	mov	x1, #0
+	mov	x1, xzr
 	cinc	x0, x9, hs
 	ret
 

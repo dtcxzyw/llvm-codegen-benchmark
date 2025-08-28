@@ -7,10 +7,10 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 1
 	andi	a2, a2, 63
-	li	a3, 16
-	czero.nez	a1, a3, a1
+	li	a3, 1
+	andn	a1, a3, a1
+	slli	a1, a1, 4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ori	a0, a0, 192
@@ -25,10 +25,10 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
 	zext.b	a2, a2
-	li	a3, 2
-	czero.nez	a1, a3, a1
+	li	a3, 1
+	andn	a1, a3, a1
+	slli	a1, a1, 1
 	addi	a1, a1, 2
 	or	a0, a0, a2
 	or	a0, a0, a1

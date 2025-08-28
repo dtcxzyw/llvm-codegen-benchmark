@@ -3,13 +3,13 @@ func0000000000000014:
 	lui	a2, 322639
 	addi	a2, a2, -945
 	mul	a1, a1, a2
-	li	a2, 26
 	srli	a1, a1, 35
+	li	a2, 26
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	sltiu	a0, a0, 22
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addiw	a0, a0, 4
 	ret
 

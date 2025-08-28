@@ -1,7 +1,7 @@
 func000000000000000b:
 	sext.w	a1, a1
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	add.uw	a0, a0, a1
 	addi	a0, a0, 5
 	ret

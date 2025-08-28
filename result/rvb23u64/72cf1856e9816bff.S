@@ -12,11 +12,11 @@ func0000000000000059:
 
 func0000000000000043:
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	li	a2, 2
+	li	a2, 1
 	snez	a0, a0
-	czero.nez	a1, a2, a1
-	sh2add	a0, a0, a1
+	andn	a1, a2, a1
+	slli	a0, a0, 2
+	sh1add	a0, a1, a0
 	addiw	a0, a0, 9
 	ret
 

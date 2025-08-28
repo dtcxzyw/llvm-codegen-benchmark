@@ -4,7 +4,7 @@ func0000000000000014:
 	madd	x8, x3, x4, x8
 	cmn	x9, x0
 	adc	x0, x8, x1
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001e:

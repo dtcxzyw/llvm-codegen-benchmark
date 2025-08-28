@@ -1,8 +1,8 @@
 func0000000000000024:
 	sub	a1, a1, a0
 	srli	a1, a1, 36
-	li	a0, 4
-	czero.eqz	a0, a0, a1
+	snez	a0, a1
+	slli	a0, a0, 2
 	addi	a0, a0, 5
 	ret
 

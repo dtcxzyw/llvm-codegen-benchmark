@@ -2,8 +2,8 @@ func0000000000000001:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, 4
 	ret
 
@@ -103,8 +103,8 @@ func0000000000000019:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addiw	a0, a0, 4
 	ret
 

@@ -63,9 +63,9 @@ func0000000000000078:
 	ret
 
 func0000000000000041:
-	andi	a1, a1, 1
-	li	a2, 2
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 1
 	addi	a1, a1, 2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
@@ -91,9 +91,9 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 1
-	li	a2, 2
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 1
 	addi	a1, a1, 6
 	addiw	a0, a0, 1
 	slt	a0, a0, a1

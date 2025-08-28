@@ -9,8 +9,8 @@ func0000000000000a63:
 
 func0000000000000210:
 	srli	a1, a0, 32
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 2
 	srli	a2, a0, 16
 	addiw	a1, a1, 2
 	czero.eqz	a1, a1, a2

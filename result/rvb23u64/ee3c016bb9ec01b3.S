@@ -15,12 +15,11 @@ func000000000000000f:
 	ret
 
 func0000000000000020:
-	andi	a2, a2, 1
-	li	a3, 4
+	li	a3, 1
+	andn	a2, a3, a2
+	sh2add	a0, a2, a0
 	andi	a1, a1, 1
-	czero.nez	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 21
 	ret
 

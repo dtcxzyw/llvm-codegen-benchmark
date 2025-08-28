@@ -1,6 +1,6 @@
 func0000000000000014:
 	mov	x8, #6515
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #59446, lsl #16
 	movk	x8, #62705, lsl #32
 	movk	x8, #38296, lsl #48

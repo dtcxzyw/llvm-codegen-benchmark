@@ -32,11 +32,9 @@ func000000000000008e:
 
 func000000000000001b:
 	andi	a2, a2, 1
-	li	a3, 2
 	sh1add	a1, a1, a1
-	czero.eqz	a2, a3, a2
 	sh2add	a0, a1, a0
-	add	a0, a0, a2
+	sh1add	a0, a2, a0
 	addi	a0, a0, 6
 	ret
 

@@ -1,5 +1,5 @@
 func0000000000000015:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w0, w8, w0, sxtb
 	ret
 
@@ -9,7 +9,7 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w0, w8, w0, sxth
 	ret
 

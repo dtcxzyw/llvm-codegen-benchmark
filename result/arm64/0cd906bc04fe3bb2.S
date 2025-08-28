@@ -39,6 +39,6 @@ func0000000000000024:
 	madd	x8, x3, x4, x8
 	cmn	x8, x0
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

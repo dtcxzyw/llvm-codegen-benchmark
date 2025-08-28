@@ -1,7 +1,7 @@
 func0000000000000036:
 	mov	x8, #63439
 	mov	x9, #52989
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #58195, lsl #16
 	movk	x9, #33889, lsl #16
 	movk	x8, #39845, lsl #32
@@ -17,7 +17,7 @@ func0000000000000036:
 func0000000000000026:
 	mov	x8, #24997
 	mov	x9, #2313682944
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #46741, lsl #16
 	movk	x9, #8964, lsl #32
 	movk	x8, #19069, lsl #32

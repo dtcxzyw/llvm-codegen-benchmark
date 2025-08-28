@@ -7,6 +7,6 @@ func000000000000001c:
 	eor	x8, x2, x8
 	umulh	x9, x8, x0
 	madd	x0, x8, x1, x9
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 

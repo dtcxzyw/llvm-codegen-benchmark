@@ -13,8 +13,8 @@ func0000000000000015:
 func000000000000001a:
 	fabs.d	fa5, fa1
 	fle.d	a0, fa5, fa0
-	li	a1, 2
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	addiw	a0, a0, 1
 	ret
 

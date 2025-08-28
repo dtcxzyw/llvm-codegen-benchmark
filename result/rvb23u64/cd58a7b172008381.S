@@ -54,8 +54,7 @@ func0000000000000009:
 func0000000000000007:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, 16
 	ret
 

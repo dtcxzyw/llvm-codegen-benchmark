@@ -7,8 +7,8 @@ func000000000000008f:
 	ret
 
 func000000000000001f:
-	li	a2, 128
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 7
 	add	a0, a0, a1
 	addi	a0, a0, 440
 	ret
@@ -28,11 +28,10 @@ func000000000000014e:
 	ret
 
 func0000000000000010:
-	addi	a1, a1, 1
-	li	a2, -32
-	czero.nez	a1, a2, a1
+	sltiu	a1, a1, -1
+	slli	a1, a1, 5
 	add	a0, a0, a1
-	addi	a0, a0, 128
+	addi	a0, a0, 96
 	ret
 
 func000000000000004f:
@@ -98,8 +97,8 @@ func0000000000000143:
 	ret
 
 func0000000000000013:
-	li	a2, 16
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 1952
 	ret

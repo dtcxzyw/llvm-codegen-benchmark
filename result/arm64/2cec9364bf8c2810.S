@@ -5,7 +5,7 @@ func00000000000000a1:
 	ret
 
 func0000000000000085:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x9, x0, x1
 	sub	x8, x8, w2, uxtw
 	cmp	x9, x8
@@ -13,7 +13,7 @@ func0000000000000085:
 	ret
 
 func0000000000000084:
-	mov	x8, #0
+	mov	x8, xzr
 	sub	x9, x0, x1
 	sub	x8, x8, w2, uxtw
 	cmp	x9, x8

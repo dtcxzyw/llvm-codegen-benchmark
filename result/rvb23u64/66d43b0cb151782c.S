@@ -33,8 +33,8 @@ func00000000000002b4:
 	add	a0, a0, a1
 	maxu	a0, a0, a2
 	sltiu	a0, a0, 4
-	li	a1, 4
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 2
 	addi	a0, a0, 4
 	ret
 

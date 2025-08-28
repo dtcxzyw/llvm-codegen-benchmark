@@ -11,9 +11,9 @@ func00000000000000b4:
 	ret
 
 func00000000000000e1:
-	andi	a1, a1, 1
-	li	a2, 16
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 4
 	addiw	a1, a1, 32
 	addi	a0, a0, 1
 	xor	a0, a0, a1
@@ -28,9 +28,9 @@ func00000000000000a4:
 	ret
 
 func00000000000000f4:
-	andi	a1, a1, 1
-	li	a2, 2
-	czero.nez	a1, a2, a1
+	li	a2, 1
+	andn	a1, a2, a1
+	slli	a1, a1, 1
 	addi	a1, a1, 6
 	addi	a0, a0, 1
 	sltu	a0, a0, a1

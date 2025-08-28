@@ -2,8 +2,8 @@ func0000000000000002:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
-	li	a2, 8
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret

@@ -43,9 +43,9 @@ func0000000000000206:
 
 func0000000000000081:
 	sext.w	a1, a1
-	li	a2, 8
 	addi	a1, a1, -1
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 632
 	neg	a0, a0
 	xor	a0, a0, a1

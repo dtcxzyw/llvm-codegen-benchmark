@@ -23,11 +23,10 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 1
 	zext.h	a1, a1
-	li	a2, 2
-	czero.nez	a0, a2, a0
-	add	a0, a0, a1
+	li	a2, 1
+	andn	a0, a2, a0
+	sh1add	a0, a0, a1
 	addi	a0, a0, 14
 	ret
 

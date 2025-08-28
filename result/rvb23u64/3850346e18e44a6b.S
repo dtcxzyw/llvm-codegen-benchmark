@@ -1,9 +1,8 @@
 func000000000000000d:
 	sext.w	a1, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
 	slli	a0, a0, 26
-	or	a0, a0, a1
+	sh1add	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
 

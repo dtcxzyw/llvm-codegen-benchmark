@@ -8,10 +8,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 1
-	li	a2, 16
-	czero.nez	a1, a2, a1
-	addi	a1, a1, -32
+	not	a1, a1
+	slli	a1, a1, 4
+	ori	a1, a1, -32
 	and	a0, a0, a1
 	srliw	a0, a0, 2
 	ret

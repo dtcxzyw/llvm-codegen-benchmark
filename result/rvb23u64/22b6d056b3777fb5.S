@@ -20,11 +20,11 @@ func00000000000000a4:
 
 func00000000000000a1:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, 4
-	czero.nez	a2, a3, a2
+	not	a2, a2
+	slli	a2, a2, 2
+	ori	a2, a2, -6
 	add	a1, a1, a2
-	addiw	a1, a1, -8
+	addiw	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

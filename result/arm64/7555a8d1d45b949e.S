@@ -1,25 +1,25 @@
 func0000000000000002:
 	cmp	x0, x2
 	sbc	x0, x1, xzr
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000006:
 	cmp	x0, x2
 	sbc	x0, x1, xzr
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000000:
 	cmp	x0, x2
 	sbc	x0, x1, xzr
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func0000000000000004:
 	cmp	x0, x2
 	sbc	x0, x1, xzr
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000000a:

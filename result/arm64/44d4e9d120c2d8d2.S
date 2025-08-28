@@ -6,14 +6,14 @@ func0000000000000026:
 	ret
 
 func0000000000000028:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w8, w8, w1, sxtb
 	cmp	w0, w8
 	cset	w0, hi
 	ret
 
 func0000000000000024:
-	mov	w8, #0
+	mov	w8, wzr
 	sub	w8, w8, w1, sxtb
 	cmp	w0, w8
 	cset	w0, lo

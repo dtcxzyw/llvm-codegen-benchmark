@@ -12,7 +12,7 @@ func000000000000001e:
 func0000000000000014:
 	umulh	x9, x2, x4
 	and	x11, x0, #0xfffffffffffffffe
-	mov	x1, #0
+	mov	x1, xzr
 	mul	x10, x2, x4
 	mul	x8, x3, x4
 	madd	x9, x2, x5, x9

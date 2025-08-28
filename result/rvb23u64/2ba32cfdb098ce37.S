@@ -1,6 +1,6 @@
 func0000000000000001:
-	li	a1, 2
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 1
 	addiw	a0, a0, 16
 	ret
 

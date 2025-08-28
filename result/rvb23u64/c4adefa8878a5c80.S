@@ -52,9 +52,9 @@ func000000000000042c:
 func0000000000000424:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	li	a2, 8
-	addi	a3, a1, -2
-	czero.eqz	a2, a2, a3
+	addi	a2, a1, -2
+	snez	a2, a2
+	slli	a2, a2, 3
 	addi	a1, a1, -1
 	addi	a2, a2, 8
 	czero.eqz	a1, a2, a1

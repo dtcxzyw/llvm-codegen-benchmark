@@ -1,8 +1,7 @@
 func00000000000000e4:
 	zext.b	a2, a2
-	li	a3, 8
-	czero.eqz	a2, a3, a2
-	add	a1, a1, a2
+	snez	a2, a2
+	sh3add	a1, a2, a1
 	addi	a1, a1, 8
 	sltu	a0, a1, a0
 	ret

@@ -5,7 +5,7 @@ func000000000000000a:
 	mov	x1, x0
 	movk	x2, #20082, lsl #16
 	mov	x0, x8
-	mov	x3, #0
+	mov	x3, xzr
 	movk	x2, #2328, lsl #32
 	bl	__udivti3
 	ldr	x30, [sp], #16

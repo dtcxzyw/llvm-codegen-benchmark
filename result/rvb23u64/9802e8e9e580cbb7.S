@@ -14,10 +14,10 @@ func0000000000000003:
 
 func0000000000000002:
 	sext.w	a1, a1
-	andi	a2, a2, 1
-	li	a3, 8
+	li	a3, 1
 	andi	a0, a0, 1
-	czero.nez	a2, a3, a2
+	andn	a2, a3, a2
+	slli	a2, a2, 3
 	addiw	a2, a2, 4
 	czero.eqz	a1, a2, a1
 	slli	a0, a0, 2

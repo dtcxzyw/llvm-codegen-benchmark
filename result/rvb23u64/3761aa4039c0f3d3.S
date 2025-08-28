@@ -1,7 +1,7 @@
 func0000000000000087:
 	sext.w	a1, a1
-	li	a2, 64
-	czero.eqz	a2, a2, a1
+	snez	a2, a1
+	slli	a2, a2, 6
 	addi	a1, a1, -1
 	addi	a2, a2, 64
 	czero.eqz	a1, a2, a1

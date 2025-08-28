@@ -12,8 +12,8 @@ func0000000000000005:
 
 func0000000000000013:
 	sltiu	a0, a0, 112
-	li	a1, 128
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 7
 	addi	a0, a0, 128
 	ret
 

@@ -38,8 +38,8 @@ func0000000000000143:
 
 func0000000000000013:
 	andi	a1, a1, 768
-	li	a2, 16
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 1952
 	ret

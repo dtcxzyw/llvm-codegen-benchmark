@@ -23,9 +23,7 @@ func0000000000000184:
 
 func0000000000000104:
 	bext	a1, a1, a2
-	li	a2, 4
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	addiw	a0, a0, 12
 	ret
 

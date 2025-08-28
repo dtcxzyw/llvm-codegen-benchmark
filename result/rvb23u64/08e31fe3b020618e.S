@@ -6,8 +6,8 @@ func0000000000000006:
 
 func0000000000000024:
 	srli	a0, a0, 36
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, 16
 	ret
 

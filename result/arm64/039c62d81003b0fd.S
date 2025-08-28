@@ -1,7 +1,7 @@
 func0000000000000000:
 	str	x30, [sp, #-32]!
 	mov	w2, #100
-	mov	x3, #0
+	mov	x3, xzr
 	stp	x20, x19, [sp, #16]
 	mov	x19, x1
 	mov	x20, x0

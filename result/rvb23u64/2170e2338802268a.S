@@ -10,9 +10,9 @@ func0000000000000001:
 func000000000000000c:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, -32
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 48
+	snez	a1, a1
+	slli	a1, a1, 5
+	addiw	a1, a1, 16
 	czero.eqz	a0, a1, a0
 	ret
 

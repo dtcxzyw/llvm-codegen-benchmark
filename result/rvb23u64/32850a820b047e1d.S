@@ -10,20 +10,18 @@ func00000000000000f0:
 	ret
 
 func00000000000000ff:
-	andi	a0, a0, 1
-	li	a3, 16
-	czero.nez	a0, a3, a0
-	add	a0, a0, a2
-	sh3add	a0, a1, a0
+	li	a3, 1
+	andn	a0, a3, a0
+	sh1add	a0, a0, a1
+	sh3add	a0, a0, a2
 	addi	a0, a0, 40
 	ret
 
 func00000000000000fa:
-	andi	a0, a0, 1
-	li	a3, -32
-	czero.eqz	a0, a3, a0
-	add	a0, a0, a2
-	sh3add	a0, a1, a0
-	addi	a0, a0, 160
+	li	a3, 1
+	andn	a0, a3, a0
+	sh2add	a0, a0, a1
+	sh3add	a0, a0, a2
+	addi	a0, a0, 128
 	ret
 

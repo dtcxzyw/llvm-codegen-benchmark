@@ -8,8 +8,7 @@ func0000000000000001:
 
 func0000000000000061:
 	andi	a0, a0, 1
-	li	a1, 8
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 12
 	ret
 
@@ -21,8 +20,7 @@ func000000000000006c:
 
 func0000000000000021:
 	andi	a0, a0, 1
-	li	a1, 4
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 2
 	addiw	a0, a0, 2
 	ret
 

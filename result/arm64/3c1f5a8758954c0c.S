@@ -6,7 +6,7 @@ func00000000000000a4:
 	madd	x8, x3, x4, x8
 	madd	x9, x0, x3, x9
 	mul	x11, x1, x2
-	mov	x1, #0
+	mov	x1, xzr
 	cmn	x8, x10
 	adc	x0, x9, x11
 	ret
@@ -19,7 +19,7 @@ func0000000000000094:
 	madd	x8, x5, x2, x8
 	madd	x9, x0, x3, x9
 	mul	x11, x1, x2
-	mov	x1, #0
+	mov	x1, xzr
 	cmn	x10, x8
 	adc	x0, x9, x11
 	ret

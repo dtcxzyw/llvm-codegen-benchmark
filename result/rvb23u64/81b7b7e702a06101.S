@@ -36,10 +36,9 @@ func0000000000000006:
 
 func0000000000000004:
 	sext.w	a1, a1
-	andi	a2, a2, 1
-	li	a3, 16
-	czero.nez	a2, a3, a2
-	addiw	a2, a2, -24
+	not	a2, a2
+	slli	a2, a2, 4
+	ori	a2, a2, -24
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 144

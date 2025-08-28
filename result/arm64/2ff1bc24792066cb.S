@@ -1,7 +1,7 @@
 func000000000000000e:
 	mov	x8, #-3689348814741910324
 	mov	x9, #52989
-	mov	x1, #0
+	mov	x1, xzr
 	movk	x8, #52429
 	movk	x9, #33889, lsl #16
 	umulh	x8, x0, x8

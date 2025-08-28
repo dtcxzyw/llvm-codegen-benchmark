@@ -1,6 +1,6 @@
 func0000000000000001:
 	sub	x8, x0, x1
-	mov	x9, #0
+	mov	x9, xzr
 	lsr	x8, x8, #3
 	sub	x0, x9, w8, uxtw
 	ret

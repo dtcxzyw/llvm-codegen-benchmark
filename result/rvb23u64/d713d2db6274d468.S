@@ -27,9 +27,7 @@ func0000000000000061:
 func0000000000000029:
 	sext.w	a1, a0
 	slti	a1, a1, 7
-	li	a2, 8
-	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	addiw	a0, a0, -7
 	ret
 

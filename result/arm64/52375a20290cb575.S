@@ -2,14 +2,14 @@ func000000000000001c:
 	add	x8, x5, x2
 	cmn	x8, x0
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001a:
 	add	x8, x2, x5
 	cmn	x0, x8
 	cinc	x0, x1, hs
-	mov	x1, #0
+	mov	x1, xzr
 	ret
 
 func000000000000001e:

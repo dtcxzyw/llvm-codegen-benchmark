@@ -1,7 +1,7 @@
 func0000000000000003:
 	sext.w	a0, a0
-	lui	a1, 2
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slli	a0, a0, 13
 	addiw	a0, a0, 2
 	ret
 

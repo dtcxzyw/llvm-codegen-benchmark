@@ -18,7 +18,7 @@ func0000000000000008:
 	orr	x0, x0, x2
 	orr	x1, x1, x3
 	movk	x8, #8964, lsl #32
-	mov	x3, #0
+	mov	x3, xzr
 	movk	x8, #35527, lsl #48
 	mov	x2, x8
 	bl	__udivti3
@@ -31,7 +31,7 @@ func000000000000000a:
 	mov	w2, #10240
 	orr	x1, x1, x3
 	movk	w2, #61035, lsl #16
-	mov	x3, #0
+	mov	x3, xzr
 	bl	__udivti3
 	ldr	x30, [sp], #16
 	ret

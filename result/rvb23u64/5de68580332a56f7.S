@@ -14,11 +14,10 @@ func00000000000001e1:
 	ret
 
 func0000000000000148:
-	andi	a1, a1, 1
-	li	a3, 8
-	czero.nez	a1, a3, a1
+	not	a1, a1
+	slli	a1, a1, 3
+	ori	a1, a1, -16
 	add	a1, a1, a2
-	addi	a1, a1, -16
 	sltu	a0, a0, a1
 	ret
 

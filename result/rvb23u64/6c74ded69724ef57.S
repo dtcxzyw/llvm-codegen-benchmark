@@ -29,11 +29,11 @@ func0000000000000084:
 func00000000000000d4:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, -32
-	slti	a3, a1, 30
-	czero.eqz	a2, a2, a3
+	slti	a2, a1, 30
+	xori	a2, a2, 1
+	slli	a2, a2, 5
 	sltiu	a1, a1, 14
-	addi	a2, a2, 48
+	addi	a2, a2, 16
 	czero.nez	a1, a2, a1
 	addiw	a1, a1, 8
 	czero.nez	a0, a1, a0

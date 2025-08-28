@@ -19,7 +19,7 @@ func0000000000000028:
 	mov	x1, x0
 	movk	x2, #8964, lsl #32
 	mov	x0, x8
-	mov	x3, #0
+	mov	x3, xzr
 	movk	x2, #35527, lsl #48
 	bl	__udivti3
 	ldr	x30, [sp], #16

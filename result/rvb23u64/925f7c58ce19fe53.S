@@ -10,19 +10,17 @@ func0000000000000021:
 
 func000000000000000b:
 	zext.h	a1, a1
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
 	zext.h	a0, a0
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	addi	a0, a0, 8
 	ret
 
 func000000000000000f:
 	zext.h	a1, a1
-	li	a2, 4
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
 	zext.h	a0, a0
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
 
