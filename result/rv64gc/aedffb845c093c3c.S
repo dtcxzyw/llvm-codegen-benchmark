@@ -38,8 +38,8 @@ func0000000000000006:
 func0000000000000044:
 	andi	a1, a1, 1
 	beqz	a1, .LBB4_2
-	lui	a1, 268352
-	addi	a2, a1, 1170
+	lui	a2, 268352
+	addi	a2, a2, 1170
 .LBB4_2:
 	mul	a0, a0, a2
 	srli	a0, a0, 32

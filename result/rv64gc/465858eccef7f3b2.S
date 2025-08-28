@@ -30,8 +30,8 @@ func0000000000000006:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 140
-	addi	a1, a0, -68
-	add	a1, a1, a2
+	addi	a0, a0, -68
+	add	a1, a2, a0
 .LBB2_2:
 	sext.w	a1, a1
 	lui	a0, 235184

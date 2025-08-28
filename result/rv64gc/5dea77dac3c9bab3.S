@@ -11,8 +11,8 @@ func0000000000000001:
 func0000000000000000:
 	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
-	lui	a0, 5
-	addi	a1, a0, -481
+	lui	a1, 5
+	addi	a1, a1, -481
 .LBB1_2:
 	negw	a0, a1
 	ret

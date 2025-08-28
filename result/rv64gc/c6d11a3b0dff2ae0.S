@@ -35,8 +35,8 @@ func0000000000000003:
 func0000000000000002:
 	andi	a1, a1, 1
 	beqz	a1, .LBB4_2
-	lui	a1, 1048575
-	addi	a2, a1, 216
+	lui	a2, 1048575
+	addi	a2, a2, 216
 .LBB4_2:
 	add	a0, a0, a2
 	slliw	a0, a0, 25

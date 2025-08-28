@@ -33,8 +33,8 @@ func000000000000000b:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	beqz	a1, .LBB3_2
-	lui	a1, 16
-	addi	a2, a1, -256
+	lui	a2, 16
+	addi	a2, a2, -256
 .LBB3_2:
 	sext.w	a2, a2
 	slt	a0, a2, a0
@@ -45,8 +45,8 @@ func000000000000000a:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	beqz	a1, .LBB4_2
-	lui	a1, 16
-	addi	a2, a1, -256
+	lui	a2, 16
+	addi	a2, a2, -256
 .LBB4_2:
 	sext.w	a2, a2
 	slt	a0, a0, a2

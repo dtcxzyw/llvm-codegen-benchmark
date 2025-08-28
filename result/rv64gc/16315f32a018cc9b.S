@@ -37,8 +37,8 @@ func0000000000000014:
 .LBB2_2:
 	ret
 .LBB2_3:
-	lui	a0, 2
-	addi	a1, a0, 1807
+	lui	a1, 2
+	addi	a1, a1, 1807
 	sext.w	a0, a1
 	blt	a0, a2, .LBB2_2
 .LBB2_4:

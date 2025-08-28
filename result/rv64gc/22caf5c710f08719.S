@@ -132,8 +132,8 @@ func0000000000000528:
 	li	a3, 1979
 	bge	a3, a1, .LBB8_4
 .LBB8_3:
-	lui	a1, 1048575
-	addi	a2, a1, 216
+	lui	a2, 1048575
+	addi	a2, a2, 216
 .LBB8_4:
 	addw	a0, a0, a2
 	ret

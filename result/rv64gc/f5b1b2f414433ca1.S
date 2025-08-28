@@ -11,8 +11,8 @@ func0000000000000002:
 func0000000000000000:
 	andi	a1, a1, 1
 	beqz	a1, .LBB1_2
-	lui	a1, 16
-	addi	a2, a1, 39
+	lui	a2, 16
+	addi	a2, a2, 39
 .LBB1_2:
 	sub	a2, a2, a0
 	slli	a0, a2, 32

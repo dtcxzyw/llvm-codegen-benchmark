@@ -49,8 +49,8 @@ func0000000000000211:
 	li	a3, 75
 	bgeu	a1, a3, .LBB2_4
 .LBB2_3:
-	lui	a1, 2
-	addi	a2, a1, 408
+	lui	a2, 2
+	addi	a2, a2, 408
 .LBB2_4:
 	addw	a0, a0, a2
 	ret

@@ -23,8 +23,8 @@ func0000000000000014:
 	lui	a2, 2048
 	addi	a2, a2, -2
 	bge	a2, a0, .LBB2_2
-	lui	a0, 524288
-	addi	a1, a0, -256
+	lui	a1, 524288
+	addi	a1, a1, -256
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

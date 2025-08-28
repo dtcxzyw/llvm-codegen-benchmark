@@ -32,8 +32,8 @@ func000000000000000f:
 	addw	a0, a0, a2
 	ret
 .LBB3_2:
-	lui	a1, 256
-	addi	a2, a1, -1024
+	lui	a2, 256
+	addi	a2, a2, -1024
 	addw	a0, a0, a2
 	ret
 

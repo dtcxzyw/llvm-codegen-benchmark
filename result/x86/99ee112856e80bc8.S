@@ -1,8 +1,7 @@
 func0000000000000048:
 	testb	$15, %dil
 	sete	%cl
-	cmpb	$16, %dil
-	setb	%al
+	setbe	%al
 	orb	%cl, %al
 	retq
 

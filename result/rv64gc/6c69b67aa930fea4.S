@@ -90,8 +90,8 @@ func0000000000000018:
 	slli	a1, a1, 10
 	beqz	a0, .LBB6_2
 .LBB6_4:
-	lui	a0, 8
-	addi	a0, a0, -512
+	lui	a1, 8
+	addi	a0, a1, -512
 	ret
 
 func000000000000000a:

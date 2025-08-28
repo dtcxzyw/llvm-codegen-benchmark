@@ -45,8 +45,8 @@ func0000000000000008:
 func0000000000000038:
 	andi	a1, a1, 1
 	bnez	a1, .LBB5_2
-	lui	a1, 7
-	addi	a2, a1, 1620
+	lui	a2, 7
+	addi	a2, a2, 1620
 .LBB5_2:
 	subw	a0, a0, a2
 	lui	a1, 1048573
@@ -57,8 +57,8 @@ func0000000000000038:
 func0000000000000034:
 	andi	a1, a1, 1
 	bnez	a1, .LBB6_2
-	lui	a1, 7
-	addi	a2, a1, 1620
+	lui	a2, 7
+	addi	a2, a2, 1620
 .LBB6_2:
 	subw	a0, a0, a2
 	lui	a1, 3

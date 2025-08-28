@@ -3,8 +3,8 @@ func0000000000000000:
 	sd	ra, 8(sp)
 	sd	s0, 0(sp)
 	lui	a2, 298023
-	addi	s0, a2, 917
-	slli	s0, s0, 13
+	addi	a2, a2, 917
+	slli	s0, a2, 13
 	mv	a2, s0
 	li	a3, 0
 	call	__udivti3

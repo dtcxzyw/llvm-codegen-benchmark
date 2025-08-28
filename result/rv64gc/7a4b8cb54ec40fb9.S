@@ -135,8 +135,8 @@ func0000000000000318:
 	lui	a2, 522240
 	bgeu	a2, a0, .LBB8_2
 .LBB8_4:
-	lui	a0, 8
-	addi	a0, a0, -512
+	lui	a1, 8
+	addi	a0, a1, -512
 	ret
 
 func0000000000000084:

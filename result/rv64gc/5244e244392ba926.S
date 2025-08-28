@@ -11,8 +11,8 @@ func0000000000000006:
 	addi	a1, a1, -576
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	lui	a0, 1047599
-	addi	a0, a0, 1792
+	lui	a1, 1047599
+	addi	a0, a1, 1792
 	ret
 
 func0000000000000001:

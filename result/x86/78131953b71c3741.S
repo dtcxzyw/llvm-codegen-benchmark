@@ -63,8 +63,7 @@ func0000000000000186:
 func0000000000000028:
 	testl	$1048575, %edi
 	sete	%cl
-	cmpl	$1048576, %edi
-	setae	%al
+	seta	%al
 	andb	%cl, %al
 	retq
 

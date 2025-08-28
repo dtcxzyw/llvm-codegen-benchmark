@@ -24,7 +24,7 @@ func0000000000000001:
 	addi	a1, a1, -1695
 	beqz	a0, .LBB1_2
 .LBB1_4:
-	lui	a0, 24
-	addi	a0, a0, 1695
+	lui	a1, 24
+	addi	a0, a1, 1695
 	ret
 
