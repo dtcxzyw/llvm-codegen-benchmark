@@ -4,8 +4,7 @@ func0000000000000444:
 	fccmp	s1, s3, #4, gt
 	cset	w8, gt
 	fcmp	s0, #0.0
-	cset	w9, gt
-	and	w0, w8, w9
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000888:
@@ -14,8 +13,7 @@ func0000000000000888:
 	fccmp	s1, s3, #0, eq
 	cset	w8, eq
 	fcmp	s0, #0.0
-	cset	w9, eq
-	and	w0, w8, w9
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000222:
@@ -25,8 +23,7 @@ func0000000000000222:
 	fccmp	s1, s3, #0, mi
 	cset	w8, mi
 	fcmp	s0, s3
-	cset	w9, mi
-	and	w0, w8, w9
+	csel	w0, wzr, w8, pl
 	ret
 
 func0000000000000ccc:
@@ -35,8 +32,7 @@ func0000000000000ccc:
 	fccmp	s1, s3, #8, ge
 	cset	w8, ge
 	fcmp	s0, #0.0
-	cset	w9, ge
-	and	w0, w8, w9
+	csel	w0, wzr, w8, lt
 	ret
 
 func0000000000000555:
@@ -54,8 +50,7 @@ func0000000000000aaa:
 	fccmp	s1, s3, #2, ls
 	cset	w8, ls
 	fcmp	s0, s3
-	cset	w9, ls
-	and	w0, w8, w9
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000777:
@@ -64,8 +59,7 @@ func0000000000000777:
 	fccmp	s1, s3, #4, ne
 	cset	w8, ne
 	fcmp	s0, s3
-	cset	w9, ne
-	and	w0, w8, w9
+	csel	w0, wzr, w8, eq
 	ret
 
 func0000000000000666:
@@ -97,8 +91,7 @@ func000000000000044c:
 	fccmp	s1, s3, #4, gt
 	cset	w8, gt
 	fcmp	s0, #0.0
-	cset	w9, ge
-	and	w0, w8, w9
+	csel	w0, wzr, w8, lt
 	ret
 
 func0000000000000cca:
@@ -107,23 +100,21 @@ func0000000000000cca:
 	fccmp	s1, s3, #8, ge
 	cset	w8, ge
 	fcmp	s0, #0.0
-	cset	w9, ls
-	and	w0, w8, w9
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000242:
-	mov	w8, #52429
-	movk	w8, #15820, lsl #16
-	fmov	s3, w8
 	mov	w8, #26214
 	movk	w8, #16230, lsl #16
-	fcmp	s1, s3
-	fmov	s1, w8
-	cset	w8, gt
-	fcmp	s0, s1
-	fccmp	s2, s1, #0, mi
-	cset	w9, mi
-	and	w0, w9, w8
+	fmov	s3, w8
+	mov	w8, #52429
+	movk	w8, #15820, lsl #16
+	fcmp	s0, s3
+	fmov	s0, w8
+	fccmp	s2, s3, #0, mi
+	cset	w8, mi
+	fcmp	s1, s0
+	csel	w0, wzr, w8, le
 	ret
 
 func000000000000077e:
@@ -133,8 +124,7 @@ func000000000000077e:
 	fccmp	s1, s3, #4, ne
 	cset	w8, ne
 	fcmp	s0, s0
-	cset	w9, vc
-	and	w0, w8, w9
+	csel	w0, wzr, w8, vs
 	ret
 
 func0000000000000eee:
@@ -144,14 +134,13 @@ func0000000000000eee:
 	ret
 
 func00000000000008b8:
-	mov	w8, #1120403456
-	fmov	s3, w8
-	fcmp	s1, s3
-	movi	d1, #0000000000000000
-	cset	w8, le
+	movi	d3, #0000000000000000
 	fcmp	s0, #0.0
-	fccmp	s2, s1, #0, eq
-	cset	w9, eq
-	and	w0, w9, w8
+	mov	w8, #1120403456
+	fmov	s0, w8
+	fccmp	s2, s3, #0, eq
+	cset	w8, eq
+	fcmp	s1, s0
+	csel	w0, wzr, w8, gt
 	ret
 

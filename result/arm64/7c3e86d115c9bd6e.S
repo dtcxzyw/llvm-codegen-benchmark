@@ -3,7 +3,7 @@ func0000000000000003:
 	tst	w1, #0x1
 	cinc	w8, w8, ne
 	tst	w0, #0x1
-	add	w9, w8, #4
+	orr	w9, w8, #0x4
 	csinc	w0, w9, w8, ne
 	ret
 

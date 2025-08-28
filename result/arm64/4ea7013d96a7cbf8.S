@@ -5,6 +5,6 @@ func0000000000000007:
 	cinc	x8, x8, ne
 	tst	w1, #0x1
 	csel	x8, x8, xzr, ne
-	madd	x0, x8, x9, x0
+	umaddl	x0, w8, w9, x0
 	ret
 

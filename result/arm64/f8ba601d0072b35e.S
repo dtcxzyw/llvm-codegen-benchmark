@@ -4,8 +4,7 @@ func0000000000000224:
 	fccmp	s1, s3, #0, mi
 	cset	w8, mi
 	fcmp	s0, #0.0
-	cset	w9, gt
-	and	w0, w8, w9
+	csel	w0, wzr, w8, le
 	ret
 
 func0000000000000888:
@@ -14,18 +13,16 @@ func0000000000000888:
 	fccmp	s1, s3, #0, eq
 	cset	w8, eq
 	fcmp	s0, s3
-	cset	w9, eq
-	and	w0, w8, w9
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000aca:
-	fcmp	s1, #0.0
-	movi	d1, #0000000000000000
-	cset	w8, ge
+	movi	d3, #0000000000000000
 	fcmp	s0, #0.0
-	fccmp	s2, s1, #2, ls
-	cset	w9, ls
-	and	w0, w9, w8
+	fccmp	s2, s3, #2, ls
+	cset	w8, ls
+	fcmp	s1, #0.0
+	csel	w0, wzr, w8, lt
 	ret
 
 func0000000000000444:
@@ -51,8 +48,7 @@ func0000000000000742:
 	fmov	s1, #1.00000000
 	cset	w8, gt
 	fcmp	s0, s1
-	cset	w9, mi
-	and	w0, w8, w9
+	csel	w0, wzr, w8, pl
 	ret
 
 func000000000000044a:
@@ -61,8 +57,7 @@ func000000000000044a:
 	fccmp	s1, s3, #4, gt
 	cset	w8, gt
 	fcmp	s0, s3
-	cset	w9, ls
-	and	w0, w8, w9
+	csel	w0, wzr, w8, hi
 	ret
 
 func000000000000022c:
@@ -71,8 +66,7 @@ func000000000000022c:
 	fccmp	s1, s3, #0, mi
 	cset	w8, mi
 	fcmp	s0, s3
-	cset	w9, ge
-	and	w0, w8, w9
+	csel	w0, wzr, w8, lt
 	ret
 
 func0000000000000222:
@@ -83,8 +77,7 @@ func0000000000000222:
 	fccmp	s1, s3, #0, mi
 	cset	w8, mi
 	fcmp	s0, s3
-	cset	w9, mi
-	and	w0, w8, w9
+	csel	w0, wzr, w8, pl
 	ret
 
 func000000000000024a:
@@ -93,8 +86,7 @@ func000000000000024a:
 	fccmp	s1, s3, #4, mi
 	cset	w8, gt
 	fcmp	s0, #0.0
-	cset	w9, ls
-	and	w0, w8, w9
+	csel	w0, wzr, w8, hi
 	ret
 
 func0000000000000cca:
@@ -104,7 +96,6 @@ func0000000000000cca:
 	fmov	s1, #1.00000000
 	cset	w8, ge
 	fcmp	s0, s1
-	cset	w9, ls
-	and	w0, w8, w9
+	csel	w0, wzr, w8, hi
 	ret
 
