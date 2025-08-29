@@ -82,7 +82,8 @@ func0000000000000058:
 func0000000000000068:
 	testb	$63, %dil
 	sete	%cl
-	setbe	%al
+	cmpb	$64, %dil
+	setb	%al
 	orb	%cl, %al
 	retq
 
