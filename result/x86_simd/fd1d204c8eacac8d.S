@@ -13,11 +13,11 @@ func000000000000010c:
 .LCPI1_0:
 	.quad	-6148914691236517112
 .LCPI1_1:
-	.quad	768614336404564650
+	.quad	768614336404564651
 func0000000000000101:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vprorq	$3, %ymm0, %ymm0
-	vpcmpleuq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
+	vpcmpltq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
