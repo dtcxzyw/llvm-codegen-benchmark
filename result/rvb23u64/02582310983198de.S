@@ -16,7 +16,6 @@ func00000000000000c1:
 	srlw	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2
-	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 

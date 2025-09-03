@@ -8,6 +8,6 @@ func0000000000000000:
 func0000000000000003:
 	lui	a1, 131072
 	srlw	a0, a1, a0
-	slliw	a0, a0, 1
+	slli	a0, a0, 1
 	ret
 
