@@ -21,7 +21,6 @@ func0000000000000005:
 
 func0000000000000031:
 	srliw	a1, a1, 25
-	slli	a1, a1, 25
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

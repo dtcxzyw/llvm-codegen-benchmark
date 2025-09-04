@@ -18,7 +18,6 @@ func0000000000000001:
 func0000000000000018:
 	sub	a0, a0, a1
 	srliw	a0, a0, 10
-	slli	a0, a0, 10
 	snez	a0, a0
 	ret
 
@@ -82,7 +81,6 @@ func0000000000000038:
 func0000000000000034:
 	sub	a0, a0, a1
 	srliw	a0, a0, 3
-	slli	a0, a0, 3
 	seqz	a0, a0
 	ret
 

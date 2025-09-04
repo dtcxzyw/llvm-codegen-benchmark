@@ -34,7 +34,7 @@ func00000000000001e1:
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func000000000000018c:

@@ -13,7 +13,6 @@ func000000000000000c:
 func0000000000000008:
 	and	a0, a0, a1
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	snez	a0, a0
 	ret
 

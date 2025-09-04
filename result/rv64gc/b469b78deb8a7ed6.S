@@ -1,6 +1,5 @@
 func000000000000008c:
 	srliw	a1, a1, 10
-	slli	a1, a1, 10
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -8,7 +7,6 @@ func000000000000008c:
 
 func0000000000000184:
 	srliw	a1, a1, 10
-	slli	a1, a1, 10
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

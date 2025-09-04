@@ -11,7 +11,7 @@ func0000000000000001:
 func0000000000000021:
 	mul	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func000000000000002c:
@@ -29,7 +29,6 @@ func0000000000000061:
 func000000000000000c:
 	mul	a0, a0, a1
 	srliw	a0, a0, 15
-	slli	a0, a0, 15
 	snez	a0, a0
 	ret
 

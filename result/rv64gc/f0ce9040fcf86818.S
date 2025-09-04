@@ -46,7 +46,6 @@ func0000000000000081:
 
 func0000000000000094:
 	srliw	a1, a1, 3
-	slli	a1, a1, 3
 	seqz	a1, a1
 	sltiu	a0, a0, 32
 	or	a0, a0, a1

@@ -1,6 +1,5 @@
 func0000000000000008:
 	srliw	a2, a2, 2
-	slli	a2, a2, 2
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -23,7 +22,7 @@ func0000000000000001:
 
 func000000000000000a:
 	srliw	a2, a2, 31
-	xori	a2, a2, 1
+	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

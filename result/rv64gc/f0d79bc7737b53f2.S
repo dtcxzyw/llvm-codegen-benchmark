@@ -21,7 +21,7 @@ func0000000000000078:
 
 func000000000000000a:
 	srliw	a1, a1, 31
-	xori	a1, a1, 1
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -70,7 +70,6 @@ func0000000000000008:
 
 func0000000000000004:
 	srliw	a1, a1, 12
-	slli	a1, a1, 12
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

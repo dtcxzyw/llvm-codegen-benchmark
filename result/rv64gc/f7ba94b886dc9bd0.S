@@ -8,7 +8,6 @@ func0000000000000021:
 func0000000000000185:
 	srliw	a2, a2, 2
 	sltu	a0, a1, a0
-	slli	a2, a2, 2
 	snez	a1, a2
 	not	a0, a0
 	and	a0, a0, a1

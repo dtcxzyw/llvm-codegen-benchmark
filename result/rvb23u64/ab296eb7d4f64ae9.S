@@ -45,11 +45,10 @@ func0000000000000408:
 	sext.w	a2, a2
 	srliw	a1, a1, 4
 	sltiu	a2, a2, 4
-	slli	a1, a1, 4
-	xori	a2, a2, 1
-	and	a0, a0, a2
 	snez	a1, a1
+	xori	a2, a2, 1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000014a:

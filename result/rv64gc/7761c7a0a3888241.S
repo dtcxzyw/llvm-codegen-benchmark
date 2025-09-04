@@ -77,7 +77,6 @@ func0000000000000084:
 func0000000000000104:
 	srliw	a1, a1, 2
 	sext.w	a0, a0
-	slli	a1, a1, 2
 	snez	a1, a1
 	sltiu	a0, a0, 24
 	and	a0, a0, a1

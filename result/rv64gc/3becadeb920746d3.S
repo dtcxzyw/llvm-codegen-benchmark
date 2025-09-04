@@ -34,7 +34,6 @@ func000000000000000c:
 func0000000000000034:
 	add	a0, a0, a1
 	srliw	a0, a0, 2
-	slli	a0, a0, 2
 	seqz	a0, a0
 	ret
 
@@ -106,7 +105,6 @@ func0000000000000038:
 func0000000000000078:
 	add	a0, a0, a1
 	srliw	a0, a0, 5
-	slli	a0, a0, 5
 	snez	a0, a0
 	ret
 

@@ -9,7 +9,6 @@ func0000000000001084:
 	addiw	a1, a1, -5
 	srliw	a0, a0, 6
 	sltiu	a1, a1, 2
-	slli	a0, a0, 6
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -26,7 +25,6 @@ func0000000000000088:
 	addiw	a1, a1, -35
 	srliw	a0, a0, 20
 	sltiu	a1, a1, 2
-	slli	a0, a0, 20
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,6 +1,5 @@
 func0000000000000004:
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	seqz	a0, a0
 	slli	a0, a0, 4
 	ret

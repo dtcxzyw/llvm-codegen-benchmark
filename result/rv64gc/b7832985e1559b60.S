@@ -9,11 +9,11 @@ func0000000000000188:
 	li	a1, 1
 	slli	a1, a1, 32
 	addi	a1, a1, -2
-	addi	a2, a1, 2
+	addi	a1, a1, 2
 	and	a1, a1, a0
-	and	a0, a0, a2
-	snez	a0, a0
+	srliw	a0, a0, 1
 	snez	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -83,7 +83,6 @@ func0000000000000184:
 	lui	a1, 65535
 	srliw	a2, a0, 16
 	slli	a1, a1, 20
-	slli	a2, a2, 16
 	and	a0, a0, a1
 	xor	a0, a0, a1
 	snez	a0, a0

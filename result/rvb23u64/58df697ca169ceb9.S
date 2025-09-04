@@ -1,7 +1,6 @@
 func0000000000000d85:
 	srliw	a2, a2, 2
 	addi	a1, a1, 10
-	slli	a2, a2, 2
 	snez	a2, a2
 	sltu	a0, a0, a1
 	andn	a0, a2, a0

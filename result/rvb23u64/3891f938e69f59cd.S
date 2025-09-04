@@ -37,7 +37,6 @@ func0000000000000088:
 func00000000000001e1:
 	sh2add	a0, a1, a0
 	srliw	a0, a0, 18
-	slli	a0, a0, 18
 	seqz	a0, a0
 	ret
 

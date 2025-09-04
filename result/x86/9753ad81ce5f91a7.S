@@ -16,7 +16,6 @@ func000000000000001a:
 	movb	$7, %al
 	subb	%sil, %al
 	bzhil	%eax, %edi, %eax
-	movzbl	%al, %eax
 	retq
 
 func0000000000000000:

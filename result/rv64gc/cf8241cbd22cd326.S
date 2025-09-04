@@ -21,7 +21,6 @@ func0000000000000101:
 	sub	a1, a1, a2
 	srliw	a1, a1, 2
 	addi	a0, a0, -32
-	slli	a1, a1, 2
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

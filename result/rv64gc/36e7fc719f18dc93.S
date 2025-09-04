@@ -60,9 +60,8 @@ func0000000000000088:
 func0000000000000101:
 	sext.w	a0, a0
 	srliw	a1, a1, 12
-	slli	a1, a1, 12
-	addi	a0, a0, -34
 	snez	a1, a1
+	addi	a0, a0, -34
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -70,7 +69,6 @@ func0000000000000101:
 func0000000000000081:
 	sext.w	a0, a0
 	srliw	a1, a1, 24
-	slli	a1, a1, 24
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

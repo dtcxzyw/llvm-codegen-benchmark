@@ -52,7 +52,6 @@ func0000000000000008:
 	sub	a1, a1, a0
 	addi	a1, a1, 1
 	srliw	a0, a1, 1
-	slli	a0, a0, 1
 	snez	a0, a0
 	ret
 

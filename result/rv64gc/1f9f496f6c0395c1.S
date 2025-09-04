@@ -7,14 +7,12 @@ func0000000000000001:
 func0000000000000018:
 	sub	a0, a0, a1
 	srliw	a0, a0, 10
-	slli	a0, a0, 10
 	snez	a0, a0
 	ret
 
 func000000000000000c:
 	sub	a0, a0, a1
 	srliw	a0, a0, 2
-	slli	a0, a0, 2
 	snez	a0, a0
 	ret
 

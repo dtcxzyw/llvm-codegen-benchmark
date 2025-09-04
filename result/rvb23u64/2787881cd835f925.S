@@ -22,7 +22,7 @@ func0000000000000021:
 func0000000000000181:
 	bexti	a1, a1, 1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 

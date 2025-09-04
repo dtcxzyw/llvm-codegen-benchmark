@@ -34,7 +34,6 @@ func0000000000000018:
 	mv	a1, a2
 .LBB3_2:
 	srliw	a0, a1, 5
-	slli	a0, a0, 5
 	snez	a0, a0
 	ret
 

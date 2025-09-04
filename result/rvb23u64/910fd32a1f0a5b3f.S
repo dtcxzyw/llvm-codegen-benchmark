@@ -7,7 +7,7 @@ func0000000000000001:
 func000000000000000a:
 	or	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func0000000000000081:
@@ -30,13 +30,12 @@ func0000000000000006:
 func000000000000010a:
 	or	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func0000000000000004:
 	or	a0, a0, a1
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	seqz	a0, a0
 	ret
 
@@ -55,7 +54,7 @@ func0000000000000141:
 func00000000000003ca:
 	or	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func00000000000003c1:
@@ -73,6 +72,6 @@ func0000000000000341:
 func000000000000014a:
 	or	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 

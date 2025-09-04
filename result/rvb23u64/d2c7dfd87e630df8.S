@@ -26,6 +26,6 @@ func00000000000002a8:
 func000000000000050a:
 	sub	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 

@@ -24,14 +24,12 @@ func000000000000000c:
 func0000000000000008:
 	add	a0, a0, a1
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	snez	a0, a0
 	ret
 
 func0000000000000004:
 	add	a0, a0, a1
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	seqz	a0, a0
 	ret
 
@@ -68,7 +66,6 @@ func0000000000000081:
 func0000000000000194:
 	add	a0, a0, a1
 	srliw	a0, a0, 5
-	slli	a0, a0, 5
 	seqz	a0, a0
 	ret
 
@@ -91,7 +88,7 @@ func000000000000018c:
 func00000000000001ca:
 	add	a0, a0, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	seqz	a0, a0
 	ret
 
 func000000000000008c:
@@ -102,7 +99,6 @@ func000000000000008c:
 func0000000000000088:
 	add	a0, a0, a1
 	srliw	a0, a0, 1
-	slli	a0, a0, 1
 	snez	a0, a0
 	ret
 
@@ -119,14 +115,12 @@ func0000000000000184:
 func0000000000000094:
 	add	a0, a0, a1
 	srliw	a0, a0, 2
-	slli	a0, a0, 2
 	seqz	a0, a0
 	ret
 
 func0000000000000018:
 	add	a0, a0, a1
 	srliw	a0, a0, 15
-	slli	a0, a0, 15
 	snez	a0, a0
 	ret
 

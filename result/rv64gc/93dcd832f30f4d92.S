@@ -8,7 +8,6 @@ func0000000000000014:
 
 func0000000000000001:
 	srliw	a0, a0, 2
-	slli	a0, a0, 2
 	seqz	a0, a0
 	ret
 

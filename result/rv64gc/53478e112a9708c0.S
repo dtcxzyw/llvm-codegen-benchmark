@@ -8,7 +8,6 @@ func0000000000000101:
 
 func0000000000000184:
 	srliw	a1, a1, 15
-	slli	a1, a1, 15
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

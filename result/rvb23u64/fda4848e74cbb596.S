@@ -65,9 +65,8 @@ func0000000000000146:
 func0000000000000148:
 	sext.w	a0, a0
 	srliw	a1, a1, 5
-	slli	a1, a1, 5
-	slti	a0, a0, 8
 	snez	a1, a1
+	slti	a0, a0, 8
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

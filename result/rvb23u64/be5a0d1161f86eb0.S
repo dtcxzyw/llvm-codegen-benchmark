@@ -26,7 +26,6 @@ func0000000000000181:
 func0000000000000028:
 	srliw	a1, a1, 5
 	sext.w	a0, a0
-	slli	a1, a1, 5
 	seqz	a1, a1
 	sltiu	a0, a0, 33
 	andn	a0, a1, a0
@@ -34,10 +33,10 @@ func0000000000000028:
 
 func000000000000008c:
 	li	a2, -64
+	srliw	a0, a0, 6
 	zext.w	a2, a2
-	addi	a3, a2, 32
-	and	a0, a0, a2
-	and	a1, a1, a3
+	addi	a2, a2, 32
+	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

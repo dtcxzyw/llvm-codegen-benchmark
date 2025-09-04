@@ -46,7 +46,6 @@ func00000000000001e1:
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	srliw	a0, a0, 18
-	slli	a0, a0, 18
 	seqz	a0, a0
 	ret
 
