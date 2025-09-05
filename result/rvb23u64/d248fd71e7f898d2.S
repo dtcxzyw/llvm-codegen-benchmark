@@ -8,14 +8,14 @@ func0000000000000003:
 	ret
 
 func0000000000000011:
-	andi	a0, a0, 1
 	zext.h	a1, a1
 	li	a2, -10
+	slli	a0, a0, 63
 	sltiu	a1, a1, 761
+	srai	a0, a0, 63
 	czero.eqz	a1, a2, a1
-	li	a2, 33
 	addi	a1, a1, 266
-	czero.eqz	a0, a2, a0
+	andi	a0, a0, 33
 	or	a0, a0, a1
 	ret
 

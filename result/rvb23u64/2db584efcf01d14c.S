@@ -39,8 +39,8 @@ func000000000000001f:
 func0000000000000185:
 	zext.b	a1, a1
 	sltiu	a1, a1, 161
-	li	a2, -64
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -64
 	add	a0, a0, a1
 	addiw	a0, a0, -129
 	ret

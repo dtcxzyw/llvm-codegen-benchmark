@@ -35,9 +35,9 @@ func000000000000000f:
 
 func00000000000000a3:
 	sext.w	a1, a1
-	li	a2, 320
 	sltiu	a1, a1, 880
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 320
 	srliw	a0, a0, 5
 	add	a0, a0, a1
 	ret

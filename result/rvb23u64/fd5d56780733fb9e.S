@@ -13,9 +13,9 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	andi	a2, a2, 1
-	li	a3, 3
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 3
 	sll	a1, a1, a2
 	mul	a0, a0, a1
 	ret

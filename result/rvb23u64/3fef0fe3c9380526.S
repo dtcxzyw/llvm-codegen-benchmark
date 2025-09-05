@@ -1,35 +1,35 @@
 func0000000000000008:
 	fli.s	fa5, inf
 	feq.s	a0, fa0, fa5
-	li	a1, 15
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 15
 	ret
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa5, fa0
-	li	a1, 15
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 15
 	ret
 
 func0000000000000001:
 	feq.s	a0, fa0, fa0
-	li	a1, 7
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 7
 	ret
 
 func0000000000000002:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa0, fa5
-	li	a1, 15
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 15
 	ret
 
 func000000000000000c:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa0
-	li	a1, 7
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 7
 	ret
 
 .LCPI5_0:
@@ -38,15 +38,15 @@ func000000000000000d:
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	flt.s	a0, fa0, fa5
-	li	a1, 7
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 7
 	ret
 
 func0000000000000007:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa0, fa5
-	li	a1, 7
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 7
 	ret
 
 func0000000000000003:

@@ -2,9 +2,9 @@ func0000000000000004:
 	andi	a1, a1, 1
 	snez	a2, a2
 	slli	a2, a2, 4
+	addi	a1, a1, -1
 	or	a0, a0, a2
-	li	a2, 32
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 32
 	or	a0, a0, a1
 	ret
 
@@ -31,9 +31,9 @@ func0000000000000006:
 	andi	a1, a1, 1
 	snez	a2, a2
 	slli	a2, a2, 9
+	addi	a1, a1, -1
 	or	a0, a0, a2
-	li	a2, 1025
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 1025
 	or	a0, a0, a1
 	ret
 

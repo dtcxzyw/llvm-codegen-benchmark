@@ -21,7 +21,7 @@ func0000000000000028:
 	srai	a1, a1, 3
 	mul	a1, a1, a2
 	sltiu	a0, a1, 2
-	li	a1, 24
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 24
 	ret
 

@@ -16,12 +16,12 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	andi	a1, a1, 1
+	slli	a0, a0, 63
 	slli	a1, a1, 4
+	srai	a0, a0, 63
 	or	a1, a1, a2
-	li	a2, 96
-	czero.eqz	a0, a2, a0
+	andi	a0, a0, 96
 	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret

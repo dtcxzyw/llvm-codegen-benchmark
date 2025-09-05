@@ -1,9 +1,9 @@
 func0000000000000031:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, 4
 	snez	a1, a1
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 4
 	or	a0, a0, a1
 	ret
 
@@ -17,10 +17,10 @@ func0000000000000005:
 func0000000000000029:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, 2
 	slti	a1, a1, 2
+	addi	a0, a0, -1
 	xori	a1, a1, 1
-	czero.nez	a0, a2, a0
+	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret
 

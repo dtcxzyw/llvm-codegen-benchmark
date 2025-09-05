@@ -1,10 +1,10 @@
 func0000000000000055:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 8
 	slti	a2, a2, 5
-	czero.nez	a0, a3, a0
+	addi	a0, a0, -1
 	xori	a2, a2, 1
+	andi	a0, a0, 8
 	slli	a2, a2, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -13,10 +13,10 @@ func0000000000000055:
 func0000000000000002:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 32
 	addi	a2, a2, -1
-	czero.nez	a0, a3, a0
+	addi	a0, a0, -1
 	seqz	a2, a2
+	andi	a0, a0, 32
 	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -25,10 +25,10 @@ func0000000000000002:
 func0000000000000042:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 2
 	addi	a2, a2, -23
-	czero.nez	a0, a3, a0
+	addi	a0, a0, -1
 	seqz	a2, a2
+	andi	a0, a0, 2
 	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -48,12 +48,12 @@ func0000000000000043:
 func0000000000000054:
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 512
-	czero.nez	a0, a3, a0
 	lui	a3, 49152
 	slti	a2, a2, 25
+	addi	a0, a0, -1
 	czero.nez	a2, a3, a2
+	or	a1, a1, a2
+	andi	a0, a0, 512
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 

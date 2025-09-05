@@ -1,16 +1,18 @@
 func00000000000001a1:
 	zext.b	a0, a0
 	addi	a0, a0, -10
-	li	a2, -32
-	czero.nez	a0, a2, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -32
 	addw	a0, a0, a1
 	ret
 
 func0000000000000021:
 	zext.b	a0, a0
 	addi	a0, a0, -120
-	li	a2, -2
-	czero.nez	a0, a2, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -2
 	addw	a0, a0, a1
 	ret
 

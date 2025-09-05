@@ -76,9 +76,9 @@ func000000000000002a:
 
 func0000000000000007:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, -9
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, -9
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
@@ -96,9 +96,9 @@ func000000000000002c:
 
 func0000000000000008:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, -2
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, -2
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

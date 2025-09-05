@@ -5,8 +5,8 @@ func0000000000000034:
 
 func0000000000000066:
 	srli	a1, a0, 63
-	li	a2, 2000
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 2000
 	add	a0, a0, a1
 	ret
 
@@ -20,8 +20,8 @@ func0000000000000074:
 
 func0000000000000026:
 	srli	a1, a0, 63
-	li	a2, -4
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -4
 	add	a0, a0, a1
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000004:
 
 func0000000000000046:
 	slti	a1, a0, 17
-	li	a2, 240
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 240
 	add	a0, a0, a1
 	ret
 

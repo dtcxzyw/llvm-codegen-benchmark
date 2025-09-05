@@ -16,16 +16,16 @@ func000000000000001e:
 
 func000000000000001c:
 	andi	a1, a1, 1
-	li	a3, -15
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -15
 	sh1add	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000016:
 	andi	a1, a1, 1
-	li	a3, 8
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 8
 	sh3add	a1, a2, a1
 	add	a0, a0, a1
 	ret

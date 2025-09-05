@@ -1,7 +1,7 @@
 func00000000000000a4:
-	andi	a0, a0, 1
-	li	a2, -32
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 224
 	add	a0, a0, a1
 	addi	a0, a0, -71
 	zext.b	a0, a0
@@ -9,9 +9,9 @@ func00000000000000a4:
 	ret
 
 func0000000000000084:
-	andi	a0, a0, 1
-	li	a2, -32
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 224
 	add	a0, a0, a1
 	addi	a0, a0, -65
 	zext.b	a0, a0
@@ -19,9 +19,9 @@ func0000000000000084:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
-	li	a2, -94
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 162
 	add	a0, a0, a1
 	zext.b	a0, a0
 	addi	a0, a0, -31
@@ -29,9 +29,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
-	li	a2, -94
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 162
 	add	a0, a0, a1
 	addi	a0, a0, -89
 	zext.b	a0, a0

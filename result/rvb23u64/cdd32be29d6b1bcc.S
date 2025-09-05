@@ -8,28 +8,28 @@ func0000000000000000:
 	ret
 
 func000000000000000a:
-	andi	a2, a2, 1
-	li	a3, -32
+	slli	a2, a2, 63
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
+	srai	a2, a2, 63
+	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000000e:
-	andi	a2, a2, 1
-	li	a3, 3
+	slli	a2, a2, 63
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
+	srai	a2, a2, 63
+	andi	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000000c:
-	andi	a2, a2, 1
-	li	a3, 3
+	slli	a2, a2, 63
 	sext.w	a1, a1
-	czero.eqz	a2, a3, a2
+	srai	a2, a2, 63
+	andi	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

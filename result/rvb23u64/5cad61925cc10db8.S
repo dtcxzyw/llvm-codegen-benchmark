@@ -21,9 +21,9 @@ func000000000000000c:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 1
-	li	a2, -256
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -256
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 128

@@ -2,8 +2,9 @@ func0000000000000001:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
-	li	a1, 20
-	czero.nez	a0, a1, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 20
 	ret
 
 func0000000000000021:

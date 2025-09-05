@@ -4,16 +4,17 @@ func000000000000008a:
 	andn	a2, a2, a3
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
-	li	a3, -8
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, -8
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret
 
 func000000000000001a:
 	andi	a2, a2, 15
-	li	a3, -8
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -8
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret
@@ -24,8 +25,8 @@ func000000000000008e:
 	andn	a2, a2, a3
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
-	li	a3, -8
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, -8
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret
@@ -49,8 +50,9 @@ func000000000000001f:
 
 func000000000000001e:
 	andi	a2, a2, 63
-	li	a3, -8
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -8
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	ret

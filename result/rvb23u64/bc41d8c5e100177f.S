@@ -122,8 +122,8 @@ func0000000000000027:
 func0000000000000022:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	li	a2, -3
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -3
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret

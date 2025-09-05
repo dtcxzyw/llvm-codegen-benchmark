@@ -5,9 +5,9 @@ func0000000000000028:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
-	li	a3, -232
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -232
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

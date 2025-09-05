@@ -11,8 +11,9 @@ func000000000000005d:
 func000000000000004c:
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	li	a3, 12
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 12
 	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	sext.w	a0, a0

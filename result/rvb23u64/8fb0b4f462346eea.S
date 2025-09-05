@@ -13,8 +13,9 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
-	zext.h	a0, a0
-	li	a1, 28
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 48
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 28
 	ret
 

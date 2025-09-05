@@ -1,41 +1,41 @@
 func0000000000000028:
-	andi	a0, a0, 1
-	li	a2, 24
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 24
 	addw	a0, a0, a1
 	sltiu	a0, a0, 25
 	xori	a0, a0, 1
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 1
-	li	a2, 24
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 24
 	addw	a0, a0, a1
 	addi	a0, a0, -24
 	seqz	a0, a0
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 1
-	li	a2, 60
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 60
 	addw	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000026:
-	andi	a0, a0, 1
-	li	a2, 13
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 13
 	addw	a0, a0, a1
 	slti	a0, a0, 3
 	ret
 
 func000000000000002a:
-	andi	a0, a0, 1
-	li	a2, 24
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 24
 	addw	a0, a0, a1
 	slti	a0, a0, 24
 	xori	a0, a0, 1
@@ -51,45 +51,45 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
-	li	a2, -2
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 15
 	xori	a0, a0, 1
 	ret
 
 func0000000000000038:
-	andi	a0, a0, 1
-	li	a2, -3
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 8
 	xori	a0, a0, 1
 	ret
 
 func0000000000000068:
-	andi	a0, a0, 1
-	li	a2, 305
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 305
 	addw	a0, a0, a1
 	sltiu	a0, a0, -22
 	xori	a0, a0, 1
 	ret
 
 func000000000000006a:
-	andi	a0, a0, 1
-	li	a2, 305
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 305
 	addw	a0, a0, a1
 	slti	a0, a0, 309
 	xori	a0, a0, 1
 	ret
 
 func0000000000000066:
-	andi	a0, a0, 1
-	li	a2, 305
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 305
 	addw	a0, a0, a1
 	slti	a0, a0, -308
 	ret
@@ -101,34 +101,34 @@ func0000000000000024:
 	ret
 
 func0000000000000034:
-	andi	a0, a0, 1
-	li	a2, 100
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 100
 	addw	a0, a0, a1
 	sltiu	a0, a0, 10
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
-	li	a2, -2
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -2
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
-	li	a2, -2
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -2
 	addw	a0, a0, a1
 	slti	a0, a0, 7
 	xori	a0, a0, 1
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
-	li	a2, -4
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -4
 	addw	a0, a0, a1
 	sltiu	a0, a0, 64
 	ret

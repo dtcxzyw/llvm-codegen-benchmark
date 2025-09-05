@@ -1,9 +1,9 @@
 func0000000000000081:
 	zext.b	a1, a1
-	andi	a2, a2, 1
-	li	a3, -2
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
 	addi	a1, a1, -75
+	andi	a2, a2, -2
 	czero.eqz	a1, a2, a1
 	negw	a0, a0
 	xor	a0, a0, a1

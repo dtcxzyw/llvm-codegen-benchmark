@@ -24,8 +24,8 @@ func000000000000001c:
 
 func000000000000000f:
 	andi	a2, a2, 1
-	li	a3, 8
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 8
 	add	a0, a0, a2
 	sh3add.uw	a0, a1, a0
 	ret

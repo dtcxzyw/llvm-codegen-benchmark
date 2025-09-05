@@ -20,8 +20,8 @@ func0000000000000006:
 	andi	a0, a0, 1
 	lui	a2, 524288
 	slt	a1, a1, a2
-	li	a2, 12
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 12
 	addi	a1, a1, -11
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 11

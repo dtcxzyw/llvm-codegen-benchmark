@@ -21,8 +21,8 @@ func0000000000000004:
 	addi	a1, a1, -1
 	addw	a0, a0, a1
 	sltiu	a1, a0, 3
-	li	a2, 3
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 3
 	addw	a0, a0, a1
 	ret
 

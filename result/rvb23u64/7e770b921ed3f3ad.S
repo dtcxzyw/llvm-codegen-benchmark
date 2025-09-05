@@ -20,9 +20,9 @@ func0000000000000013:
 	ret
 
 func000000000000001c:
-	andi	a1, a1, 1
-	li	a3, 6
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 6
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret

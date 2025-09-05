@@ -2,8 +2,9 @@ func0000000000000108:
 	sltiu	a1, a1, 33
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
-	li	a1, -256
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	neg	a0, a0
+	andi	a0, a0, -256
 	ret
 
 func0000000000000181:

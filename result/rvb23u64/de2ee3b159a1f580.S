@@ -71,9 +71,10 @@ func0000000000000081:
 func000000000000002a:
 	sext.b	a1, a0
 	zext.b	a0, a0
-	li	a2, -19
 	addi	a0, a0, -255
-	czero.nez	a0, a2, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -19
 	srli	a1, a1, 63
 	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1

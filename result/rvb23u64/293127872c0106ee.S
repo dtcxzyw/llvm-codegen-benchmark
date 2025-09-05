@@ -34,8 +34,8 @@ func000000000000001f:
 func000000000000008b:
 	bseti	a3, zero, 63
 	sltu	a2, a3, a2
-	li	a3, -8
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -21,8 +21,8 @@ func0000000000000014:
 func0000000000000008:
 	sext.w	a0, a0
 	sltiu	a0, a0, 51
-	li	a1, 15
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 15
 	ret
 
 func000000000000000c:

@@ -1,7 +1,7 @@
 func00000000000000a6:
 	andi	a2, a2, 1
-	li	a3, 63
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 63
 	sub	a1, a1, a0
 	addw	a1, a1, a2
 	slti	a0, a1, -63
@@ -9,8 +9,8 @@ func00000000000000a6:
 
 func0000000000000006:
 	andi	a2, a2, 1
-	li	a3, -2
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -2
 	sub	a1, a1, a0
 	add	a1, a1, a2
 	srliw	a0, a1, 31

@@ -7,8 +7,9 @@ func0000000000000061:
 	addi	a2, a2, 274
 	xor	a1, a1, a0
 	xor	a0, a0, a2
-	li	a2, -9
-	czero.eqz	a0, a2, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -9
 	addi	a0, a0, 7
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, -7

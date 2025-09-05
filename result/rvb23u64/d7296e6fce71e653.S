@@ -2,11 +2,12 @@ func0000000000000021:
 	zext.b	a1, a1
 	or	a0, a0, a1
 	lui	a1, 196384
-	addi	a1, a1, 274
 	sext.w	a0, a0
+	addi	a1, a1, 274
 	xor	a0, a0, a1
-	li	a1, -9
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -9
 	ret
 
 func0000000000000034:
@@ -50,7 +51,8 @@ func0000000000000001:
 	zext.b	a1, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
-	li	a1, -199
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -199
 	ret
 

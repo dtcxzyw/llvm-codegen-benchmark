@@ -17,8 +17,8 @@ func0000000000000506:
 	addi	a1, a1, -455
 	seqz	a1, a1
 	and	a1, a1, a2
-	li	a2, -12
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -12
 	add	a0, a0, a1
 	ret
 

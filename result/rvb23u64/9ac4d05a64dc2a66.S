@@ -1,7 +1,7 @@
 func0000000000000014:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	srl	a1, a2, a1
 	srli	a2, a1, 16
 	czero.nez	a1, a1, a2
@@ -11,8 +11,8 @@ func0000000000000014:
 
 func0000000000000004:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	srl	a1, a2, a1
 	srli	a2, a1, 16
 	czero.nez	a1, a1, a2

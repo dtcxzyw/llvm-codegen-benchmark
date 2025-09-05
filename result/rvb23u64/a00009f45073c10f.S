@@ -15,10 +15,10 @@ func0000000000000051:
 	andi	a0, a0, 1
 	zext.h	a2, a2
 	lui	a3, 12
-	czero.eqz	a0, a3, a0
-	li	a3, 33
 	sltiu	a2, a2, 830
-	czero.nez	a2, a3, a2
+	czero.eqz	a0, a3, a0
+	addi	a2, a2, -1
+	andi	a2, a2, 33
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

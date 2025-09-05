@@ -9,7 +9,7 @@ func0000000000000024:
 func0000000000000004:
 	addi	a0, a0, 64
 	sltiu	a0, a0, 128
-	li	a1, -128
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -128
 	ret
 

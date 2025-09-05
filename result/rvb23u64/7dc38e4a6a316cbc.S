@@ -1,7 +1,8 @@
 func0000000000000001:
 	sext.w	a0, a0
-	li	a1, 110
-	czero.nez	a0, a1, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 110
 	ret
 
 func0000000000000004:
@@ -13,8 +14,8 @@ func0000000000000004:
 func000000000000000a:
 	sext.w	a0, a0
 	sgtz	a0, a0
-	li	a1, 77
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 77
 	ret
 
 func0000000000000018:

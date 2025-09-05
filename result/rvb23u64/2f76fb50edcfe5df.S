@@ -1,8 +1,8 @@
 func0000000000000034:
 	andi	a0, a0, 1
 	zext.h	a1, a1
-	li	a2, 60
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 60
 	sltu	a0, a0, a1
 	ret
 

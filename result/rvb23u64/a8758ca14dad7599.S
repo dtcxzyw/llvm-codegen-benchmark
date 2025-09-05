@@ -1,11 +1,11 @@
 func000000000000001b:
-	andi	a0, a0, 1
 	srliw	a3, a2, 31
+	slli	a0, a0, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
-	li	a3, 12
+	srai	a0, a0, 63
 	or	a1, a1, a2
-	czero.eqz	a0, a3, a0
+	andi	a0, a0, 12
 	addw	a0, a0, a1
 	ret
 

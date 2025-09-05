@@ -7,9 +7,9 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 1
-	li	a2, 68
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 68
 	subw	a0, a1, a0
 	ret
 

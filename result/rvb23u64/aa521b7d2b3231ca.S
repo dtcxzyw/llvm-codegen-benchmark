@@ -41,8 +41,9 @@ func0000000000000006:
 func000000000000000c:
 	zext.h	a0, a0
 	addi	a0, a0, -20
-	li	a1, -22
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -22
 	ret
 
 func000000000000000a:

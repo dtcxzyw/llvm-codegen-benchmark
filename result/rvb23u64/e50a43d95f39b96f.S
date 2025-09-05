@@ -42,8 +42,8 @@ func0000000000000028:
 
 func0000000000000004:
 	sltu	a1, a1, a2
-	li	a2, 50
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 50
 	addw	a0, a0, a1
 	ret
 

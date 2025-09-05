@@ -15,8 +15,9 @@ func000000000000002a:
 	lui	a2, 14
 	addi	a2, a2, -339
 	xor	a1, a1, a2
-	li	a2, 24
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 24
 	sllw	a0, a0, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

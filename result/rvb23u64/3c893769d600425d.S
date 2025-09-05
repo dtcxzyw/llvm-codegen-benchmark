@@ -1,8 +1,8 @@
 func0000000000000008:
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
-	li	a1, 15
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 15
 	ret
 
 func0000000000000004:

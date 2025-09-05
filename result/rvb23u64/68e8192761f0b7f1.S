@@ -63,12 +63,12 @@ func0000000000000534:
 func000000000000028a:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	li	a2, 14
 	slti	a1, a1, 2
-	czero.nez	a1, a2, a1
-	li	a2, 9
 	slti	a0, a0, 2
-	czero.nez	a0, a2, a0
+	addi	a1, a1, -1
+	addi	a0, a0, -1
+	andi	a1, a1, 14
+	andi	a0, a0, 9
 	or	a0, a0, a1
 	ret
 

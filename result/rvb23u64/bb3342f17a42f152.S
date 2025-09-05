@@ -1,8 +1,8 @@
 func0000000000000021:
 	snez	a0, a0
 	andi	a1, a1, 1
-	li	a2, 256
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 256
 	slli	a0, a0, 12
 	or	a0, a0, a1
 	ret
@@ -18,9 +18,9 @@ func000000000000002c:
 func0000000000000034:
 	srli	a0, a0, 16
 	andi	a1, a1, 1
-	li	a2, 32
 	snez	a0, a0
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	slli	a0, a0, 4
 	or	a0, a0, a1
 	ret
@@ -28,9 +28,9 @@ func0000000000000034:
 func0000000000000024:
 	srli	a0, a0, 16
 	andi	a1, a1, 1
-	li	a2, 32
 	snez	a0, a0
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	slli	a0, a0, 4
 	or	a0, a0, a1
 	ret

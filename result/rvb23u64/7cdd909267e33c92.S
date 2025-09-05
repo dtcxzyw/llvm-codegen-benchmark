@@ -7,8 +7,9 @@ func0000000000000001:
 
 func000000000000000c:
 	andi	a0, a0, 7
-	li	a1, 7
-	czero.nez	a0, a1, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 7
 	ret
 
 func0000000000000014:

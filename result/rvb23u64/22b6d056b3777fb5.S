@@ -1,8 +1,8 @@
 func00000000000000aa:
 	sext.w	a0, a0
-	andi	a2, a2, 1
-	li	a3, -68
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, -68
 	add	a1, a1, a2
 	addiw	a1, a1, 181
 	slt	a0, a0, a1

@@ -29,9 +29,9 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	andi	a2, a2, 1
-	li	a3, 360
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 360
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -52,9 +52,9 @@ func000000000000000d:
 	ret
 
 func000000000000000e:
-	andi	a2, a2, 1
-	li	a3, 911
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 911
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

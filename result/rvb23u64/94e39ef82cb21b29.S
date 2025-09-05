@@ -15,9 +15,10 @@ func0000000000000021:
 
 func00000000000000e1:
 	bseti	a2, zero, 11
+	seqz	a0, a0
 	and	a1, a1, a2
-	li	a2, 6
-	czero.eqz	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 6
 	or	a0, a0, a1
 	ret
 

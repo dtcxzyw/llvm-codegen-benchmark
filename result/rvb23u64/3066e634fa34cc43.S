@@ -50,9 +50,9 @@ func0000000000000181:
 func0000000000000081:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	li	a2, -8
 	sltiu	a1, a1, -2
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -8
 	addi	a0, a0, 1
 	addi	a1, a1, 9
 	czero.eqz	a0, a1, a0

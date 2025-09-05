@@ -1,7 +1,7 @@
 func000000000000000e:
-	andi	a1, a1, 1
-	li	a3, 30
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 30
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 144

@@ -6,9 +6,8 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	srli	a1, a1, 63
-	li	a2, 27
-	czero.eqz	a1, a2, a1
+	srai	a1, a1, 63
+	andi	a1, a1, 27
 	xor	a0, a0, a1
 	ret
 

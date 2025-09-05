@@ -84,9 +84,10 @@ func0000000000000084:
 func0000000000000024:
 	andi	a1, a1, 1
 	sext.w	a0, a0
-	li	a2, 19
-	addi	a3, a0, -3
-	czero.nez	a2, a2, a3
+	addi	a2, a0, -3
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 19
 	addi	a2, a2, -13
 	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 2

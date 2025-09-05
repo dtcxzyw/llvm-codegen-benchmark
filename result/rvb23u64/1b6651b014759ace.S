@@ -6,17 +6,17 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
-	li	a2, -100
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 156
 	add	a0, a0, a1
 	zext.b	a0, a0
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
-	li	a2, -32
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 224
 	add	a0, a0, a1
 	zext.b	a0, a0
 	ret

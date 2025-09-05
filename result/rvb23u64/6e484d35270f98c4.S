@@ -1,15 +1,17 @@
 func000000000000001b:
 	andi	a1, a1, 32
-	li	a2, -5
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -5
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 
 func000000000000001f:
 	andi	a1, a1, 8
-	li	a2, 136
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 136
 	add	a0, a0, a1
 	addi	a0, a0, 112
 	ret

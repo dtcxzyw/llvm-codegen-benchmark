@@ -8,8 +8,9 @@ func0000000000000061:
 func0000000000000001:
 	sext.w	a0, a0
 	addi	a0, a0, -1
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 20
 	ret
 
 func000000000000004a:
@@ -18,8 +19,8 @@ func000000000000004a:
 	lui	a1, 8192
 	addi	a1, a1, -1
 	slt	a0, a1, a0
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000004:

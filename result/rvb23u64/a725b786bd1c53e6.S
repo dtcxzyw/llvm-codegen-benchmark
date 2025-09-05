@@ -89,8 +89,8 @@ func000000000000004c:
 func000000000000014f:
 	sext.w	a1, a1
 	sltiu	a1, a1, 4
-	li	a2, 12
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 12
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

@@ -7,9 +7,9 @@ func0000000000000064:
 
 func0000000000000060:
 	sext.w	a2, a1
-	li	a3, 1900
 	slti	a2, a2, 100
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 1900
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

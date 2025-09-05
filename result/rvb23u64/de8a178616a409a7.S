@@ -20,12 +20,12 @@ func0000000000000034:
 	ret
 
 func0000000000000021:
-	andi	a2, a2, 1
-	li	a3, -2
+	slli	a2, a2, 63
 	or	a0, a0, a1
-	czero.eqz	a1, a3, a2
+	srai	a2, a2, 63
+	andi	a2, a2, -2
 	sext.w	a0, a0
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

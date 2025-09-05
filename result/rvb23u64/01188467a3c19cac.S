@@ -11,14 +11,14 @@ func0000000000000014:
 func0000000000000006:
 	sext.w	a0, a0
 	slti	a0, a0, 1
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func000000000000000a:
 	srliw	a0, a0, 31
-	li	a1, 20
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 20
 	ret
 
 func0000000000000001:
@@ -52,7 +52,7 @@ func0000000000000004:
 
 func000000000000004a:
 	srliw	a0, a0, 31
-	li	a1, 7
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 7
 	ret
 

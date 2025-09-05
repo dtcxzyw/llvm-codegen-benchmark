@@ -1,7 +1,7 @@
 func00000000000000a1:
 	andi	a1, a1, 1
-	li	a3, 4
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	addi	a0, a0, -16
@@ -38,8 +38,8 @@ func00000000000001a6:
 
 func00000000000001e1:
 	andi	a1, a1, 1
-	li	a3, 2
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 2
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	addi	a0, a0, -128

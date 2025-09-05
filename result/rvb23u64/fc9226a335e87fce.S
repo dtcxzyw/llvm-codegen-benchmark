@@ -8,8 +8,9 @@ func0000000000000298:
 
 func0000000000000021:
 	addi	a1, a0, -1022
-	li	a2, 1022
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 1022
 	addi	a0, a0, -516
 	addi	a1, a1, -516
 	czero.eqz	a0, a1, a0

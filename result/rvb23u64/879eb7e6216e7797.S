@@ -41,12 +41,12 @@ func0000000000000003:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	lui	a2, 2
+	slli	a0, a0, 63
 	addi	a2, a2, -255
+	srai	a0, a0, 63
 	mul	a1, a1, a2
-	li	a2, 911
-	czero.eqz	a0, a2, a0
+	andi	a0, a0, 911
 	addw	a0, a0, a1
 	ret
 

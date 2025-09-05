@@ -1,6 +1,7 @@
 func0000000000000001:
-	li	a2, -64
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -64
 	addw	a0, a0, a1
 	ret
 
@@ -14,8 +15,9 @@ func0000000000000006:
 
 func0000000000000061:
 	addi	a1, a1, -7
-	li	a2, 10
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 10
 	addw	a0, a0, a1
 	ret
 
@@ -36,15 +38,16 @@ func0000000000000008:
 	lui	a2, 16
 	addi	a2, a2, -2
 	sltu	a1, a2, a1
-	li	a2, 10
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 10
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
 	srli	a1, a1, 32
-	li	a2, -18
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -18
 	addw	a0, a0, a1
 	ret
 
@@ -56,8 +59,9 @@ func0000000000000066:
 
 func0000000000000021:
 	addi	a1, a1, -3
-	li	a2, -3
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -3
 	addw	a0, a0, a1
 	ret
 

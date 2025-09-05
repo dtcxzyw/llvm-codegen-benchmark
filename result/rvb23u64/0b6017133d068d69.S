@@ -39,8 +39,8 @@ func000000000000002c:
 	seqz	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1
-	li	a1, -110
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -110
 	ret
 
 func00000000000000ca:

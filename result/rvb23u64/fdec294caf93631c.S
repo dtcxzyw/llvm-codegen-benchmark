@@ -1,7 +1,7 @@
 func0000000000000294:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	srl	a1, a2, a1
 	srli	a2, a1, 16
 	czero.nez	a1, a1, a2
@@ -12,8 +12,8 @@ func0000000000000294:
 
 func0000000000000298:
 	andi	a1, a1, 1
-	li	a3, 4
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 4
 	srl	a1, a2, a1
 	sltiu	a2, a1, 4
 	czero.eqz	a1, a1, a2
@@ -25,8 +25,8 @@ func0000000000000298:
 
 func0000000000000084:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	srl	a1, a2, a1
 	srli	a2, a1, 16
 	czero.nez	a1, a1, a2
@@ -37,8 +37,8 @@ func0000000000000084:
 
 func0000000000000088:
 	andi	a1, a1, 1
-	li	a3, 4
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 4
 	srl	a1, a2, a1
 	sltiu	a2, a1, 4
 	czero.eqz	a1, a1, a2

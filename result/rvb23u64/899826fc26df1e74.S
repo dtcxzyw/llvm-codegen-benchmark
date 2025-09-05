@@ -12,22 +12,22 @@ func0000000000000035:
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 1
-	li	a3, 911
-	czero.eqz	a1, a3, a1
 	lui	a3, 2
+	slli	a1, a1, 63
 	addi	a3, a3, -255
+	srai	a1, a1, 63
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	andi	a1, a1, 911
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000015:
-	andi	a1, a1, 1
 	sh2add	a2, a2, a2
-	li	a3, 20
+	slli	a1, a1, 63
 	sh2add	a2, a2, a2
-	czero.eqz	a1, a3, a1
+	srai	a1, a1, 63
+	andi	a1, a1, 20
 	sh2add	a1, a2, a1
 	addw	a0, a0, a1
 	ret

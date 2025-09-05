@@ -8,8 +8,9 @@ func0000000000000007:
 
 func0000000000000030:
 	zext.b	a1, a1
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 
@@ -59,8 +60,8 @@ func0000000000000033:
 func000000000000001b:
 	sext.b	a1, a1
 	slti	a1, a1, 1
-	li	a2, 5
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 5
 	add	a0, a0, a1
 	ret
 

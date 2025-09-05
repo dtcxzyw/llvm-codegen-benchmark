@@ -8,8 +8,9 @@ func0000000000000105:
 
 func0000000000000187:
 	bext	a1, a1, a2
-	li	a2, 255
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 

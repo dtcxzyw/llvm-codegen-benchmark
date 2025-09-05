@@ -1,23 +1,23 @@
 func0000000000000006:
 	slt	a1, a1, a2
 	and	a0, a0, a1
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func000000000000000a:
 	slt	a1, a2, a1
 	and	a0, a0, a1
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000001:
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000005:

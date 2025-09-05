@@ -1,11 +1,11 @@
 func0000000000000010:
-	andi	a0, a0, 1
 	zext.w	a3, a2
-	li	a4, -50
-	czero.eqz	a0, a4, a0
 	lui	a4, 335544
+	slli	a0, a0, 63
 	addi	a4, a4, 1311
+	srai	a0, a0, 63
 	mul	a3, a3, a4
+	andi	a0, a0, -50
 	srli	a3, a3, 36
 	sh2add	a3, a3, a3
 	sh2add	a3, a3, a3

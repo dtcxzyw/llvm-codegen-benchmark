@@ -1,7 +1,7 @@
 func000000000000003b:
-	andi	a0, a0, 1
-	li	a2, 100
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 100
 	add	a0, a0, a1
 	li	a1, 205
 	mul	a0, a0, a1

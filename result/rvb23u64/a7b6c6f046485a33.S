@@ -2,8 +2,8 @@ func0000000000000208:
 	sext.w	a1, a1
 	add	a0, a0, a1
 	sltiu	a1, a0, 51
-	li	a2, -50
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -50
 	add	a0, a0, a1
 	ret
 

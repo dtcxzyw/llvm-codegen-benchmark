@@ -15,9 +15,10 @@ func0000000000000074:
 
 func0000000000000061:
 	andi	a1, a1, 512
+	seqz	a1, a1
 	sext.w	a0, a0
-	li	a2, -1024
-	czero.eqz	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -1024
 	or	a0, a0, a1
 	ret
 

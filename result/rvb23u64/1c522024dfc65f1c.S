@@ -35,9 +35,9 @@ func00000000000000a5:
 
 func0000000000000085:
 	zext.b	a2, a2
-	li	a3, -34
 	sltiu	a2, a2, 127
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -34
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

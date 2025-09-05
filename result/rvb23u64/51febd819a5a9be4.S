@@ -12,8 +12,8 @@ func0000000000000007:
 func0000000000000022:
 	bseti	a2, zero, 63
 	sltu	a1, a2, a1
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 
@@ -26,8 +26,8 @@ func0000000000000063:
 
 func0000000000000023:
 	sltiu	a1, a1, 34
-	li	a2, 34
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 34
 	add	a0, a0, a1
 	ret
 
@@ -60,8 +60,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 
@@ -78,15 +79,15 @@ func000000000000001b:
 
 func0000000000000012:
 	sltiu	a1, a1, 17
-	li	a2, -16
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 
 func0000000000000052:
 	sltiu	a1, a1, 8
-	li	a2, -4
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -4
 	add	a0, a0, a1
 	ret
 

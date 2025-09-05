@@ -1,7 +1,7 @@
 func0000000000000005:
-	andi	a1, a1, 1
-	li	a3, -32
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -32
 	sub	a0, a0, a2
 	subw	a0, a0, a1
 	ret
@@ -19,17 +19,17 @@ func0000000000000008:
 	ret
 
 func000000000000000d:
-	andi	a1, a1, 1
-	li	a3, 6
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 6
 	sub	a0, a0, a2
 	subw	a0, a0, a1
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
-	li	a3, 7
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 7
 	sub	a0, a0, a2
 	subw	a0, a0, a1
 	ret

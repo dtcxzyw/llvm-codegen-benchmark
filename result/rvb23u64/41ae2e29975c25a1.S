@@ -4,8 +4,9 @@ func0000000000000001:
 	lui	a2, 12300
 	addi	a2, a2, 44
 	xor	a1, a1, a2
-	li	a2, 24
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 24
 	addi	a1, a1, -23
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 23

@@ -6,10 +6,10 @@ func000000000000000a:
 	ret
 
 func000000000000001a:
-	andi	a1, a1, 1
 	sub	a0, a0, a2
-	li	a2, -2
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -2
 	add	a0, a0, a1
 	ret
 

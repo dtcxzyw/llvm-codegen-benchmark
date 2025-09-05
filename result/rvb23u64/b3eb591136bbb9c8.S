@@ -31,8 +31,8 @@ func0000000000000006:
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	slti	a0, a0, 4
-	li	a1, -7
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -7
 	ret
 
 func0000000000000001:
@@ -43,11 +43,11 @@ func0000000000000001:
 	addi	a1, a1, -1892
 	add	a0, a0, a1
 	lui	a1, 2621
-	addi	a1, a1, 1803
 	roriw	a0, a0, 4
+	addi	a1, a1, 1803
 	sltu	a0, a0, a1
-	li	a1, 6
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 6
 	ret
 
 func0000000000000026:

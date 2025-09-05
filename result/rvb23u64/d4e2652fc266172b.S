@@ -1,8 +1,8 @@
 func0000000000000099:
 	add	a0, a0, a1
 	srliw	a1, a0, 31
-	li	a2, -24
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -24
 	addw	a0, a0, a1
 	ret
 
@@ -17,8 +17,8 @@ func0000000000000098:
 func0000000000000299:
 	addw	a0, a0, a1
 	slti	a1, a0, 50
-	li	a2, 100
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 100
 	add	a0, a0, a1
 	addiw	a0, a0, 1900
 	ret
@@ -26,8 +26,8 @@ func0000000000000299:
 func0000000000000399:
 	addw	a0, a0, a1
 	slti	a1, a0, -305
-	li	a2, 305
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 305
 	add	a0, a0, a1
 	addiw	a0, a0, 308
 	ret

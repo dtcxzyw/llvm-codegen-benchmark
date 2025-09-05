@@ -1,8 +1,9 @@
 func0000000000000038:
 	andi	a1, a1, 31
-	li	a2, 59
 	addi	a1, a1, -24
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 59
 	andi	a0, a0, 63
 	sltu	a0, a1, a0
 	ret

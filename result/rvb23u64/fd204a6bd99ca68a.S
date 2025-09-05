@@ -24,8 +24,8 @@ func0000000000000026:
 	sext.w	a0, a0
 	subw	a1, a1, a2
 	slt	a0, a1, a0
-	li	a1, 6
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 6
 	ret
 
 func0000000000000001:

@@ -1,7 +1,8 @@
 func00000000000000c1:
 	xor	a2, a2, a1
-	li	a3, -24
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -24
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -26,8 +27,8 @@ func0000000000000264:
 
 func0000000000000444:
 	sltu	a2, a2, a1
-	li	a3, -4
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, -4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

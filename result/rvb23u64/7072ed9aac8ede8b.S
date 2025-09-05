@@ -1,8 +1,8 @@
 func0000000000000018:
 	srli	a1, a1, 14
 	sltiu	a1, a1, 625
-	li	a2, 10
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 10
 	srl	a0, a0, a1
 	ret
 

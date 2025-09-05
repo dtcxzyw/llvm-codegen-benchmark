@@ -16,11 +16,11 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	andi	a1, a1, 1
-	li	a2, 12
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
 	lui	a2, 524288
+	srai	a1, a1, 63
 	addiw	a2, a2, -1
+	andi	a1, a1, 12
 	slt	a0, a2, a0
 	addi	a1, a1, -11
 	czero.nez	a0, a1, a0

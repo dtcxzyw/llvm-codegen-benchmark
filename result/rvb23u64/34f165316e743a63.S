@@ -53,8 +53,8 @@ func000000000000003f:
 func000000000000029f:
 	srliw	a2, a2, 10
 	sltiu	a2, a2, 55
-	li	a3, 320
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 320
 	addw	a1, a1, a2
 	sh1add	a0, a1, a0
 	ret

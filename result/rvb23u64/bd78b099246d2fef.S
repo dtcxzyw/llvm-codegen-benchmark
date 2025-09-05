@@ -19,9 +19,9 @@ func000000000000000f:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
-	li	a2, -9
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -9
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret

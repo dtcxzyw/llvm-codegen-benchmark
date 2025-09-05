@@ -23,8 +23,8 @@ func0000000000000038:
 
 func0000000000000006:
 	andi	a0, a0, 1
-	li	a2, 2
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	lui	a1, 786432

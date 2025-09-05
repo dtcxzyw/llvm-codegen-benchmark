@@ -1,11 +1,11 @@
 func000000000000000e:
-	andi	a1, a1, 1
 	slli	a2, a2, 33
+	slli	a1, a1, 63
 	srli	a2, a2, 33
+	srai	a1, a1, 63
 	sh3add	a2, a2, a2
 	sh2add	a0, a2, a0
-	li	a2, -36
-	czero.eqz	a1, a2, a1
+	andi	a1, a1, -36
 	add	a0, a0, a1
 	ret
 
@@ -19,11 +19,11 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, 1
 	andi	a2, a2, -2
+	slli	a1, a1, 63
 	add	a0, a0, a2
-	li	a2, -2
-	czero.eqz	a1, a2, a1
+	srai	a1, a1, 63
+	andi	a1, a1, -2
 	add	a0, a0, a1
 	ret
 

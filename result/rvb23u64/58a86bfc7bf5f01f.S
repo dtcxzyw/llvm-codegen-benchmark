@@ -1,11 +1,11 @@
 func0000000000000026:
-	andi	a1, a1, 1
-	li	a2, 360
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 360
 	addw	a0, a0, a1
 	slti	a0, a0, 360
-	li	a1, -360
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -360
 	ret
 
 func000000000000000c:

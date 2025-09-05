@@ -17,9 +17,9 @@ func000000000000000e:
 	ret
 
 func000000000000000a:
-	andi	a2, a2, 1
-	li	a3, 3
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	slli	a0, a0, 32

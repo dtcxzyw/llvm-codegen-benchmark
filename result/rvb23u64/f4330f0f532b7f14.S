@@ -22,8 +22,8 @@ func0000000000000024:
 func0000000000000034:
 	sext.w	a1, a1
 	sltiu	a1, a1, 64
-	li	a2, -128
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -128
 	or	a0, a0, a1
 	ret
 

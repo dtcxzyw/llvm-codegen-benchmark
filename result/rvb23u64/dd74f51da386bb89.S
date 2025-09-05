@@ -1,9 +1,9 @@
 func0000000000000021:
 	andi	a0, a0, 1
 	andi	a1, a1, -5
-	li	a2, 256
 	snez	a1, a1
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 256
 	slli	a1, a1, 12
 	or	a0, a0, a1
 	ret

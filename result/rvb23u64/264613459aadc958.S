@@ -7,9 +7,9 @@ func0000000000000001:
 
 func0000000000000008:
 	zext.h	a0, a0
-	andi	a1, a1, 1
-	li	a2, 10
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 10
 	sltiu	a0, a0, 12
 	addiw	a1, a1, -12
 	czero.eqz	a0, a1, a0

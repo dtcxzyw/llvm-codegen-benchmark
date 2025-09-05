@@ -23,8 +23,8 @@ func0000000000000011:
 func000000000000000e:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	li	a2, 5
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 5
 	or	a0, a0, a1
 	ret
 

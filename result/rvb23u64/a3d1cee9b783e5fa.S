@@ -12,8 +12,8 @@ func0000000000000034:
 
 func0000000000000006:
 	srliw	a1, a1, 31
-	li	a2, 33
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 33
 	or	a0, a0, a1
 	andi	a0, a0, -79
 	ret

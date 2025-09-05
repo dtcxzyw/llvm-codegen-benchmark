@@ -8,8 +8,8 @@ func00000000000000a1:
 func00000000000000a4:
 	addiw	a1, a1, -731
 	sltiu	a1, a1, 2
-	li	a2, 9
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 9
 	addw	a0, a0, a1
 	ret
 

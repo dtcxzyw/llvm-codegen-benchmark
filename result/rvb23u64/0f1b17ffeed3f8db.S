@@ -15,9 +15,9 @@ func0000000000000004:
 	ret
 
 func0000000000000084:
-	andi	a2, a2, 1
-	li	a3, -6
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, -6
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	sltiu	a0, a0, 32
@@ -25,8 +25,8 @@ func0000000000000084:
 
 func00000000000001e1:
 	andi	a2, a2, 1
-	li	a3, 2
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 2
 	add	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0

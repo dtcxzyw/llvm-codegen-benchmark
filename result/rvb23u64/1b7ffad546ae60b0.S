@@ -21,7 +21,7 @@ func00000000000001a6:
 	subw	a0, a0, a1
 	addi	a1, a2, -516
 	slt	a0, a0, a1
-	li	a1, 255
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	zext.b	a0, a0
 	ret
 

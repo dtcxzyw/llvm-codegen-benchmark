@@ -1,8 +1,8 @@
 func0000000000000064:
 	addw	a0, a0, a1
 	slti	a1, a0, 360
-	li	a2, -360
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -360
 	addw	a0, a0, a1
 	ret
 

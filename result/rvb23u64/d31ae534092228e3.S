@@ -8,9 +8,9 @@ func00000000000000e1:
 	ret
 
 func0000000000000061:
-	andi	a1, a1, 1
-	li	a2, 3
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

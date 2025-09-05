@@ -21,10 +21,10 @@ func000000000000003b:
 	ret
 
 func000000000000003a:
-	andi	a1, a1, 1
 	sh3add	a0, a0, a2
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
@@ -41,8 +41,9 @@ func0000000000000000:
 	andi	a1, a1, 1
 	li	a3, 704
 	mul	a0, a0, a3
+	addi	a1, a1, -1
 	add	a0, a0, a2
-	czero.nez	a1, a3, a1
+	andi	a1, a1, 704
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 577

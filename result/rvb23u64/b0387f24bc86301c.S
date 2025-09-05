@@ -1,12 +1,14 @@
 func0000000000000043:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	li	a2, 12
 	addi	a1, a1, -12
-	czero.nez	a1, a2, a1
-	li	a2, 3
 	addi	a0, a0, -3
-	czero.nez	a0, a2, a0
+	snez	a1, a1
+	snez	a0, a0
+	addi	a1, a1, -1
+	addi	a0, a0, -1
+	andi	a1, a1, 12
+	andi	a0, a0, 3
 	or	a0, a0, a1
 	ret
 

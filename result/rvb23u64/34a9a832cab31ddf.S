@@ -22,15 +22,15 @@ func000000000000002a:
 func0000000000000005:
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
-	li	a1, -11
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, -11
 	ret
 
 func0000000000000004:
 	addi	a1, a1, 1
 	sltu	a0, a1, a0
-	li	a1, -12
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, -12
 	ret
 
 func0000000000000001:

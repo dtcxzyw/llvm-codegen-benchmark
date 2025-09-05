@@ -21,8 +21,8 @@ func0000000000000043:
 func0000000000000051:
 	zext.h	a1, a1
 	sltiu	a1, a1, 830
-	li	a2, 33
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 33
 	or	a0, a0, a1
 	bseti	a0, a0, 14
 	bseti	a0, a0, 15

@@ -18,21 +18,21 @@ func0000000000000004:
 func0000000000000006:
 	fli.d	fa5, inf
 	flt.d	a0, fa0, fa5
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000001:
 	feq.d	a0, fa0, fa0
-	li	a1, 20
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 20
 	ret
 
 func0000000000000008:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000003:

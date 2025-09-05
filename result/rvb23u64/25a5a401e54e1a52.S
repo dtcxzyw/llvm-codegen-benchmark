@@ -12,8 +12,8 @@ func0000000000000018:
 	add	a1, a1, a2
 	subw	a1, a1, a3
 	slti	a1, a1, 4
-	li	a2, -7
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -7
 	addw	a0, a0, a1
 	ret
 

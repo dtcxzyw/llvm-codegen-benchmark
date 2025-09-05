@@ -5,8 +5,8 @@ func0000000000000042:
 	addi	a0, a0, -10
 	seqz	a0, a0
 	or	a0, a0, a1
-	li	a1, 290
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 290
 	ret
 
 func0000000000000114:

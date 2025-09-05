@@ -28,8 +28,8 @@ func0000000000000004:
 	sext.w	a1, a1
 	sltiu	a1, a1, 10
 	and	a0, a0, a1
-	li	a1, 6
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 6
 	ret
 
 func0000000000000008:

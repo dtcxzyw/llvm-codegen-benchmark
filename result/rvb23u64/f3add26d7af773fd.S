@@ -1,10 +1,10 @@
 func0000000000000006:
 	andi	a1, a1, 1
-	li	a2, 6
-	czero.nez	a1, a2, a1
-	lui	a2, 8
+	addi	a1, a1, -1
+	andi	a1, a1, 6
 	add	a0, a0, a1
-	addi	a1, a2, -202
+	lui	a1, 8
+	addi	a1, a1, -202
 	minu	a0, a0, a1
 	ret
 

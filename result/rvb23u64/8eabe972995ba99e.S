@@ -15,7 +15,8 @@ func000000000000000c:
 func0000000000000001:
 	srli	a0, a0, 22
 	sext.w	a0, a0
-	li	a1, 320
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 320
 	ret
 

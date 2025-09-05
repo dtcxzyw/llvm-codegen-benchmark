@@ -46,8 +46,9 @@ func00000000000000ec:
 func00000000000000cc:
 	zext.b	a2, a2
 	addi	a2, a2, -2
-	li	a3, -16
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -16
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -56,8 +57,9 @@ func00000000000000cc:
 func00000000000000c1:
 	zext.b	a2, a2
 	addi	a2, a2, -2
-	li	a3, -16
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -16
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

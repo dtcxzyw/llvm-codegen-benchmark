@@ -1,7 +1,7 @@
 func000000000000000e:
 	andi	a1, a1, 1
-	li	a3, 32
-	czero.nez	a1, a3, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 32
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	ret

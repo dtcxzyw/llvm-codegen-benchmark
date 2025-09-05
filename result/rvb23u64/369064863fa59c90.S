@@ -19,8 +19,9 @@ func0000000000000013:
 
 func0000000000000007:
 	xor	a1, a1, a2
-	li	a2, 304
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 304
 	add	a0, a0, a1
 	ret
 
@@ -54,8 +55,8 @@ func000000000000002c:
 
 func0000000000000018:
 	slt	a1, a1, a2
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 
@@ -104,8 +105,9 @@ func000000000000001a:
 
 func0000000000000006:
 	xor	a1, a1, a2
-	li	a2, -8
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
 

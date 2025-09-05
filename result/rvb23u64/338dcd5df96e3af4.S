@@ -23,8 +23,8 @@ func00000000000000a6:
 func0000000000000024:
 	subw	a0, a0, a1
 	sltiu	a1, a0, 3
-	li	a2, -3
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -3
 	addw	a0, a0, a1
 	ret
 

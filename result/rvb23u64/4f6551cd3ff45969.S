@@ -53,8 +53,9 @@ func0000000000000013:
 func000000000000001b:
 	andi	a1, a1, 3
 	addi	a1, a1, -2
-	li	a2, -64
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -64
 	add	a0, a0, a1
 	addi	a0, a0, 56
 	ret

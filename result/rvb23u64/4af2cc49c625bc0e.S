@@ -1,10 +1,10 @@
 func0000000000000007:
 	andi	a0, a0, 1
 	or	a1, a1, a2
-	li	a2, 32
-	czero.nez	a0, a2, a0
 	lui	a2, 33825
+	addi	a0, a0, -1
 	addi	a2, a2, 133
+	andi	a0, a0, 32
 	or	a0, a0, a1
 	zext.w	a1, a0
 	mul	a1, a1, a2

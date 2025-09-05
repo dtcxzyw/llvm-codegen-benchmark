@@ -3,8 +3,8 @@ func0000000000000481:
 	addi	a2, a1, -97
 	zext.b	a2, a2
 	sltiu	a2, a2, 26
-	li	a3, -32
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 224
 	add	a1, a1, a2
 	zext.b	a1, a1
 	xor	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000486:
 	addi	a2, a1, -97
 	zext.b	a2, a2
 	sltiu	a2, a2, 26
-	li	a3, -32
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 224
 	add	a1, a1, a2
 	sext.b	a1, a1
 	slt	a0, a0, a1
@@ -28,8 +28,8 @@ func000000000000048a:
 	addi	a2, a1, -97
 	zext.b	a2, a2
 	sltiu	a2, a2, 26
-	li	a3, -32
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 224
 	add	a1, a1, a2
 	sext.b	a1, a1
 	slt	a0, a1, a0
@@ -109,8 +109,8 @@ func000000000000048c:
 	addi	a2, a1, -97
 	zext.b	a2, a2
 	sltiu	a2, a2, 26
-	li	a3, -32
-	czero.eqz	a2, a3, a2
+	neg	a2, a2
+	andi	a2, a2, 224
 	add	a1, a1, a2
 	zext.b	a1, a1
 	xor	a0, a0, a1

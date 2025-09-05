@@ -1,7 +1,7 @@
 func0000000000000021:
 	bexti	a1, a1, 15
-	li	a2, -15
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -15
 	addw	a0, a0, a1
 	ret
 
@@ -14,8 +14,9 @@ func0000000000000001:
 
 func0000000000000061:
 	andi	a1, a1, 4
-	li	a2, 6
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 6
 	addw	a0, a0, a1
 	ret
 

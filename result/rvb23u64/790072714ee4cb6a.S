@@ -20,8 +20,9 @@ func0000000000000002:
 
 func0000000000000042:
 	andi	a1, a1, 2
-	li	a2, 10
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 10
 	or	a0, a0, a1
 	ori	a0, a0, 20
 	ret

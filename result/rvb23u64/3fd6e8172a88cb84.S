@@ -7,12 +7,12 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	sh3add	a2, a2, a2
+	slli	a0, a0, 63
 	slli	a2, a2, 4
+	srai	a0, a0, 63
 	add	a1, a1, a2
-	li	a2, 72
-	czero.eqz	a0, a2, a0
+	andi	a0, a0, 72
 	add	a0, a0, a1
 	ret
 

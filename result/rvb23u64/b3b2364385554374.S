@@ -8,25 +8,25 @@ func00000000000000a9:
 	ret
 
 func00000000000001e3:
-	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, 148
-	czero.eqz	a0, a3, a0
-	li	a3, 317
+	slli	a0, a0, 63
 	sltiu	a2, a2, 701
-	czero.nez	a2, a3, a2
+	srai	a0, a0, 63
+	addi	a2, a2, -1
+	andi	a0, a0, 148
+	andi	a2, a2, 317
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func00000000000000e1:
-	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, -200
-	czero.eqz	a0, a3, a0
-	li	a3, -400
+	slli	a0, a0, 63
 	sltiu	a2, a2, 701
-	czero.nez	a2, a3, a2
+	srai	a0, a0, 63
+	addi	a2, a2, -1
+	andi	a0, a0, -200
+	andi	a2, a2, -400
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -42,14 +42,15 @@ func0000000000000187:
 	ret
 
 func0000000000000085:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	lui	a3, 409600
+	slli	a0, a0, 63
 	xor	a2, a2, a3
-	li	a3, -10
-	czero.eqz	a0, a3, a0
-	li	a3, 10
-	czero.nez	a2, a3, a2
+	srai	a0, a0, 63
+	snez	a2, a2
+	andi	a0, a0, -10
+	addi	a2, a2, -1
+	andi	a2, a2, 10
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

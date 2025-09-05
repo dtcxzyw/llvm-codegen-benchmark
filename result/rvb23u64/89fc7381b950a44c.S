@@ -24,11 +24,11 @@ func000000000000002c:
 func0000000000000034:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, 292
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
 	sltiu	a0, a0, 2
-	li	a2, 146
-	czero.nez	a0, a2, a0
+	andi	a1, a1, 292
+	addi	a0, a0, -1
+	andi	a0, a0, 146
 	or	a0, a0, a1
 	ret
 

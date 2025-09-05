@@ -38,9 +38,9 @@ func0000000000000001:
 
 func0000000000000026:
 	sext.b	a0, a0
-	andi	a1, a1, 1
-	li	a3, -16
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 240
 	or	a1, a1, a2
 	sext.b	a1, a1
 	slt	a0, a1, a0

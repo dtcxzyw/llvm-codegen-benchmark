@@ -34,8 +34,9 @@ func00000000000000a0:
 
 func000000000000014f:
 	srli	a2, a2, 12
-	li	a3, 13
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 13
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

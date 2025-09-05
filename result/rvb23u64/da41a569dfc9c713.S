@@ -25,15 +25,15 @@ func0000000000000006:
 
 func000000000000000c:
 	zext.b	a0, a0
-	li	a1, -8
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -8
 	ret
 
 func000000000000000a:
-	sext.b	a0, a0
-	srli	a0, a0, 63
-	li	a1, 255
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 56
+	srai	a0, a0, 7
+	srli	a0, a0, 56
 	ret
 
 func0000000000000014:

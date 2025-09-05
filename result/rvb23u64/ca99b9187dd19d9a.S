@@ -18,13 +18,13 @@ func000000000000002b:
 	ret
 
 func0000000000000063:
-	andi	a0, a0, 1
 	sext.w	a1, a1
-	li	a2, 165
+	slli	a0, a0, 63
 	sltiu	a1, a1, 301
-	czero.nez	a1, a2, a1
-	li	a2, 317
-	czero.eqz	a0, a2, a0
+	srai	a0, a0, 63
+	addi	a1, a1, -1
+	andi	a1, a1, 165
+	andi	a0, a0, 317
 	add	a0, a0, a1
 	ret
 

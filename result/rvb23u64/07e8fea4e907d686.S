@@ -1,7 +1,7 @@
 func000000000000008f:
 	sltiu	a1, a1, 34
-	li	a2, 34
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 34
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
@@ -113,8 +113,8 @@ func0000000000000180:
 
 func000000000000006a:
 	slti	a1, a1, 17
-	li	a2, -16
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -16
 	add	a0, a0, a1
 	addi	a0, a0, -16
 	ret

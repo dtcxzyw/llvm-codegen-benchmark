@@ -1,7 +1,7 @@
 func000000000000023f:
 	sltiu	a2, a2, 34
-	li	a3, 34
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 34
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1

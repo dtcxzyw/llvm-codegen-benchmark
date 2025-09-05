@@ -31,11 +31,11 @@ func000000000000000c:
 func0000000000000018:
 	andi	a0, a0, 1
 	zext.b	a1, a1
-	li	a2, -34
-	li	a3, 34
 	sltiu	a1, a1, 161
-	czero.eqz	a2, a2, a1
-	czero.nez	a1, a3, a1
+	neg	a2, a1
+	addi	a1, a1, -1
+	andi	a2, a2, -34
+	andi	a1, a1, 34
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1

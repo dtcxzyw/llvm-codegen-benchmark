@@ -1,8 +1,8 @@
 func0000000000000021:
 	zext.b	a0, a0
-	andi	a1, a1, 1
-	li	a3, -32
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 224
 	add	a1, a1, a2
 	zext.b	a1, a1
 	xor	a0, a0, a1
@@ -11,9 +11,9 @@ func0000000000000021:
 
 func0000000000000026:
 	sext.b	a0, a0
-	andi	a1, a1, 1
-	li	a3, -32
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 224
 	add	a1, a1, a2
 	sext.b	a1, a1
 	slt	a0, a0, a1
@@ -21,9 +21,9 @@ func0000000000000026:
 
 func000000000000002a:
 	sext.b	a0, a0
-	andi	a1, a1, 1
-	li	a3, -32
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 224
 	add	a1, a1, a2
 	sext.b	a1, a1
 	slt	a0, a1, a0
@@ -88,9 +88,9 @@ func0000000000000001:
 
 func000000000000002c:
 	zext.b	a0, a0
-	andi	a1, a1, 1
-	li	a3, -32
-	czero.eqz	a1, a3, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 224
 	add	a1, a1, a2
 	zext.b	a1, a1
 	xor	a0, a0, a1

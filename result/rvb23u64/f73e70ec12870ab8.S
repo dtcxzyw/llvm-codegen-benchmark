@@ -1,9 +1,10 @@
 func0000000000000026:
 	lui	a2, 15
 	and	a1, a1, a2
-	li	a2, 20
 	binvi	a1, a1, 14
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 20
 	srliw	a0, a0, 31
 	czero.nez	a0, a1, a0
 	ret

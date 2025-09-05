@@ -12,8 +12,8 @@ func0000000000000029:
 	addi	a3, a3, -473
 	slt	a2, a3, a2
 	and	a1, a1, a2
-	li	a2, -2
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -2
 	addw	a0, a0, a1
 	ret
 

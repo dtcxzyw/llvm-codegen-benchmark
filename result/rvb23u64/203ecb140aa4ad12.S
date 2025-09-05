@@ -12,15 +12,15 @@ func000000000000004c:
 
 func0000000000000054:
 	sext.w	a1, a0
-	li	a2, -360
 	slti	a1, a1, 361
-	czero.nez	a1, a2, a1
-	lui	a2, 745654
-	addi	a2, a2, 183
+	addi	a1, a1, -1
+	andi	a1, a1, -360
 	addw	a0, a0, a1
-	mul	a2, a2, a0
-	srli	a2, a2, 32
-	add	a0, a0, a2
+	lui	a1, 745654
+	addi	a1, a1, 183
+	mul	a1, a1, a0
+	srli	a1, a1, 32
+	add	a0, a0, a1
 	srliw	a1, a0, 31
 	sraiw	a0, a0, 6
 	add	a0, a0, a1

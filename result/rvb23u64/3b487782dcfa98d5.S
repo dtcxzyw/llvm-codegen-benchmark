@@ -17,10 +17,10 @@ func0000000000000084:
 
 func00000000000000ca:
 	lui	a1, 524288
-	li	a2, 12
-	slt	a3, a0, a1
+	slt	a2, a0, a1
 	addiw	a1, a1, -1
-	czero.eqz	a2, a2, a3
+	neg	a2, a2
+	andi	a2, a2, 12
 	slt	a0, a1, a0
 	addi	a2, a2, -11
 	czero.nez	a0, a2, a0

@@ -1,8 +1,8 @@
 func0000000000000074:
 	srli	a1, a1, 6
 	sltiu	a1, a1, 59
-	li	a2, 640
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 640
 	add	a0, a0, a1
 	ret
 
@@ -14,14 +14,16 @@ func0000000000000066:
 
 func0000000000000061:
 	binvi	a1, a1, 63
-	li	a2, 120
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 120
 	add	a0, a0, a1
 	ret
 
 func0000000000000041:
-	li	a2, -24
-	czero.eqz	a1, a2, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -24
 	add	a0, a0, a1
 	ret
 

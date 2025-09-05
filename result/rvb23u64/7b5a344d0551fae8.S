@@ -23,16 +23,17 @@ func0000000000000002:
 func0000000000000048:
 	sext.w	a1, a1
 	sltiu	a1, a1, 16
-	li	a2, -16
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -16
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 
 func0000000000000003:
 	sext.w	a1, a1
-	li	a2, -2
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -2
 	addw	a0, a0, a1
 	ret
 

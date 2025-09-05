@@ -33,17 +33,17 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
-	li	a2, -9
-	czero.eqz	a0, a2, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -9
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret
 
 func0000000000000001:
 	andi	a0, a0, 1
-	li	a2, -2
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -2
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret

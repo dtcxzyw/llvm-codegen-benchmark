@@ -9,11 +9,11 @@ func000000000000002c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -912
-	snez	a0, a0
 	seqz	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
-	li	a1, 77
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 77
 	ret
 
 func0000000000000188:
@@ -184,8 +184,8 @@ func0000000000000281:
 	sltiu	a1, a1, 10
 	seqz	a0, a0
 	and	a0, a0, a1
-	li	a1, 10
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 10
 	ret
 
 func00000000000000ca:

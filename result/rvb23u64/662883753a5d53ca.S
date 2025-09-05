@@ -7,16 +7,16 @@ func000000000000000f:
 
 func000000000000000b:
 	andi	a0, a0, 1
-	li	a2, -16
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -16
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func000000000000000c:
 	andi	a0, a0, 1
-	li	a2, 32
-	czero.nez	a0, a2, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 32
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

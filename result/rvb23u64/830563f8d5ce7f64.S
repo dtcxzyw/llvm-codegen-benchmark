@@ -33,20 +33,20 @@ func0000000000000011:
 	ret
 
 func0000000000000030:
-	andi	a0, a0, 1
 	sh2add	a2, a2, a2
+	slli	a0, a0, 63
 	sh1add	a1, a2, a1
-	li	a2, 200
-	czero.eqz	a0, a2, a0
+	srai	a0, a0, 63
+	andi	a0, a0, 200
 	addw	a0, a0, a1
 	ret
 
 func0000000000000015:
-	andi	a0, a0, 1
 	sh1add	a2, a2, a2
+	slli	a0, a0, 63
 	add	a1, a1, a2
-	li	a2, 3
-	czero.eqz	a0, a2, a0
+	srai	a0, a0, 63
+	andi	a0, a0, 3
 	addw	a0, a0, a1
 	ret
 

@@ -38,8 +38,9 @@ func00000000000000a0:
 
 func000000000000001f:
 	sext.w	a2, a2
-	li	a3, 255
-	czero.eqz	a2, a3, a2
+	seqz	a2, a2
+	addi	a2, a2, -1
+	zext.b	a2, a2
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

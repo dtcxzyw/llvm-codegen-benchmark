@@ -98,10 +98,10 @@ func000000000000014a:
 
 func0000000000000024:
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	li	a2, 19
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
 	addi	a2, a0, -2
+	andi	a1, a1, 19
 	addi	a1, a1, -13
 	czero.eqz	a1, a1, a2
 	sltiu	a0, a0, 2

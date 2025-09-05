@@ -11,8 +11,9 @@ func0000000000000001:
 	and	a0, a0, a1
 	lui	a1, 1536
 	xor	a0, a0, a1
-	li	a1, 59
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 59
 	ret
 
 func0000000000000018:

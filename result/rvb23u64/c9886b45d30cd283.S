@@ -3,8 +3,9 @@ func0000000000000021:
 	binvi	a1, a1, 13
 	binvi	a1, a1, 15
 	or	a0, a0, a1
-	li	a1, 20
-	czero.nez	a0, a1, a0
+	snez	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, 20
 	ret
 
 func000000000000010c:

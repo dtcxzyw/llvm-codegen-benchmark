@@ -3,11 +3,12 @@ func00000000000001e1:
 	or	a0, a0, a1
 	lui	a1, 196384
 	or	a0, a0, a2
-	addi	a1, a1, 274
 	sext.w	a0, a0
+	addi	a1, a1, 274
 	xor	a0, a0, a1
-	li	a1, -9
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -9
 	ret
 
 func00000000000001e4:

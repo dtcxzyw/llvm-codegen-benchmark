@@ -11,8 +11,8 @@ func0000000000000024:
 	zext.b	a0, a0
 	addi	a0, a0, -1
 	sltiu	a0, a0, 3
-	li	a1, 20
-	czero.eqz	a0, a1, a0
+	neg	a0, a0
+	andi	a0, a0, 20
 	ret
 
 func0000000000000034:

@@ -18,7 +18,7 @@ func0000000000000004:
 func0000000000000008:
 	bclri	a0, a0, 63
 	sltiu	a0, a0, 5
-	li	a1, -10
-	czero.nez	a0, a1, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -10
 	ret
 

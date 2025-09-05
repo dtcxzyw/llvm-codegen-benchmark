@@ -2,9 +2,9 @@ func0000000000000002:
 	andi	a1, a1, 250
 	seqz	a1, a1
 	or	a0, a0, a1
-	andi	a0, a0, 1
-	li	a1, 290
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 290
 	ret
 
 func0000000000000018:

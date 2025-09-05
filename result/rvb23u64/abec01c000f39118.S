@@ -10,9 +10,9 @@ func0000000000000001:
 
 func0000000000000000:
 	andi	a2, a2, 1
-	li	a3, 27
 	srliw	a0, a0, 8
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 27
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	ret

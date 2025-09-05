@@ -1,7 +1,7 @@
 func000000000000006c:
 	andi	a2, a2, 1
-	li	a3, 4
-	czero.nez	a2, a3, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 4
 	add	a1, a1, a2
 	addi	a1, a1, -12
 	snez	a1, a1
@@ -9,9 +9,9 @@ func000000000000006c:
 	ret
 
 func000000000000000c:
-	andi	a2, a2, 1
-	li	a3, 9
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 9
 	neg	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -19,9 +19,9 @@ func000000000000000c:
 	ret
 
 func000000000000002c:
-	andi	a2, a2, 1
-	li	a3, 1000
-	czero.eqz	a2, a3, a2
+	slli	a2, a2, 63
+	srai	a2, a2, 63
+	andi	a2, a2, 1000
 	neg	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1

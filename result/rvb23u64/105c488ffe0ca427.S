@@ -1,10 +1,10 @@
 func0000000000000065:
-	andi	a0, a0, 1
 	sext.w	a2, a2
-	li	a3, -12
+	slli	a0, a0, 63
 	slti	a2, a2, 2
-	czero.eqz	a0, a3, a0
+	srai	a0, a0, 63
 	addi	a2, a2, -1
+	andi	a0, a0, -12
 	ori	a2, a2, 11
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -20,12 +20,12 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	slli	a0, a0, 63
 	snez	a2, a2
+	srai	a0, a0, 63
 	sh3add	a1, a2, a1
-	li	a2, 240
-	czero.eqz	a0, a2, a0
+	andi	a0, a0, 240
 	add	a0, a0, a1
 	addiw	a0, a0, 12
 	ret

@@ -27,11 +27,12 @@ func0000000000000042:
 
 func0000000000000003:
 	andi	a1, a1, 32
-	li	a2, 160
-	czero.eqz	a1, a2, a1
 	lui	a2, 17
-	or	a0, a0, a1
-	addi	a1, a2, -2036
+	seqz	a1, a1
+	addi	a2, a2, -2036
+	addi	a1, a1, -1
+	andi	a1, a1, 160
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

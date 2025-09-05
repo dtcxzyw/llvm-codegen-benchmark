@@ -11,11 +11,11 @@ func0000000000000006:
 func000000000000000a:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, 3
-	czero.nez	a1, a2, a1
-	lui	a2, 2
+	addi	a1, a1, -1
+	andi	a1, a1, 3
 	slt	a0, a1, a0
-	addi	a1, a2, 1810
+	lui	a1, 2
+	addi	a1, a1, 1810
 	czero.eqz	a0, a1, a0
 	ret
 

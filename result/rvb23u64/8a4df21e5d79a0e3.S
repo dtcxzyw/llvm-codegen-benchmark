@@ -1,8 +1,9 @@
 func0000000000000018:
 	zext.b	a2, a2
-	li	a3, -32
 	addi	a2, a2, -137
-	czero.nez	a2, a3, a2
+	snez	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, -32
 	sub	a0, a1, a0
 	add	a0, a0, a2
 	ret

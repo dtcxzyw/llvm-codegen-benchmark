@@ -1,16 +1,16 @@
 func0000000000000008:
 	add	a0, a0, a1
 	sltiu	a1, a0, 51
-	li	a2, -50
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -50
 	add	a0, a0, a1
 	ret
 
 func00000000000000aa:
 	add	a0, a0, a1
 	slti	a1, a0, 5
-	li	a2, -7
-	czero.nez	a1, a2, a1
+	addi	a1, a1, -1
+	andi	a1, a1, -7
 	add	a0, a0, a1
 	ret
 

@@ -87,12 +87,12 @@ func0000000000000404:
 
 func0000000000000426:
 	zext.b	a1, a1
-	li	a2, -34
 	sltiu	a1, a1, 127
-	czero.nez	a1, a2, a1
-	lui	a2, 3
+	addi	a1, a1, -1
+	andi	a1, a1, -34
 	addw	a0, a0, a1
-	addi	a1, a2, 1487
+	lui	a1, 3
+	addi	a1, a1, 1487
 	slt	a0, a0, a1
 	ret
 

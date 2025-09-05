@@ -14,14 +14,14 @@ func0000000000000015:
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 1
-	li	a3, 353
-	czero.eqz	a1, a3, a1
 	lui	a3, 1
+	slli	a1, a1, 63
 	addi	a3, a3, -1125
+	srai	a1, a1, 63
 	mul	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a0, a0, a2
+	andi	a1, a1, 353
+	addw	a0, a0, a1
 	ret
 
 func0000000000000011:

@@ -1,8 +1,8 @@
 func0000000000000000:
 	andi	a1, a1, 1
-	li	a2, -7
-	czero.nez	a1, a2, a1
 	lui	a2, 149797
+	addi	a1, a1, -1
+	andi	a1, a1, -7
 	add	a0, a0, a1
 	zext.w	a1, a0
 	addi	a2, a2, -1755

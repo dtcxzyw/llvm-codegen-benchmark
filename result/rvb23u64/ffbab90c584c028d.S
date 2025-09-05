@@ -32,8 +32,8 @@ func0000000000000033:
 
 func0000000000000010:
 	flt.d	a1, fa1, fa0
-	li	a2, 24
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, 24
 	add	a0, a0, a1
 	ret
 

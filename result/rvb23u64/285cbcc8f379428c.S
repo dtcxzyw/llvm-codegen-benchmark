@@ -32,8 +32,8 @@ func0000000000000007:
 
 func0000000000000010:
 	sltu	a1, a1, a2
-	li	a2, -8
-	czero.eqz	a1, a2, a1
+	neg	a1, a1
+	andi	a1, a1, -8
 	addw	a0, a0, a1
 	ret
 
@@ -54,8 +54,9 @@ func0000000000000062:
 
 func0000000000000005:
 	xor	a1, a1, a2
-	li	a2, 7
-	czero.nez	a1, a2, a1
+	snez	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 7
 	addw	a0, a0, a1
 	ret
 

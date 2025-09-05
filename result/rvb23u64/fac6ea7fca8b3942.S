@@ -1,9 +1,9 @@
 func0000000000000004:
 	sltu	a1, a1, a2
 	or	a0, a0, a1
-	andi	a0, a0, 1
-	li	a1, 7
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, 7
 	ret
 
 func000000000000000c:
@@ -17,8 +17,8 @@ func000000000000000c:
 func0000000000000008:
 	sltu	a1, a2, a1
 	or	a0, a0, a1
-	andi	a0, a0, 1
-	li	a1, -28
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	andi	a0, a0, -28
 	ret
 

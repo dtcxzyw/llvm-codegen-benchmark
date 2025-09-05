@@ -16,7 +16,8 @@ func0000000000000001:
 	slli	a1, a1, 36
 	srli	a1, a1, 52
 	xor	a0, a0, a1
-	li	a1, -22
-	czero.eqz	a0, a1, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	andi	a0, a0, -22
 	ret
 
