@@ -1,7 +1,7 @@
 func000000000000000a:
 	fli.s	fa5, 2.0
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa1, fa5
+	fneg.s	fa5, fa5
 	fdiv.s	fa5, fa0, fa5
 	fli.s	fa4, 1.0
 	fle.s	a1, fa5, fa4
@@ -11,8 +11,8 @@ func000000000000000a:
 
 func0000000000000006:
 	fli.s	fa5, 2.0
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa1, fa5
+	fneg.s	fa5, fa5
 	fdiv.s	fa5, fa0, fa5
 	fmv.w.x	fa4, zero
 	fle.s	a1, fa4, fa5

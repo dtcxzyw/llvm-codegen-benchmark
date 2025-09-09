@@ -3,7 +3,7 @@ func0000000000000000:
 	beqz	a0, .LBB0_2
 	fmv.w.x	fa1, zero
 .LBB0_2:
-	fneg.s	fa5, fa0
-	fmul.s	fa0, fa1, fa5
+	fmul.s	fa5, fa1, fa0
+	fneg.s	fa0, fa5
 	ret
 

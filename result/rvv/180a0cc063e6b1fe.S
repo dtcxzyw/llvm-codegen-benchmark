@@ -3,7 +3,7 @@ func0000000000000000:
 	vfsub.vv	v24, v16, v20
 	vfwcvt.f.f.v	v16, v24
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfneg.v	v16, v16
 	vfmul.vv	v8, v8, v16
+	vfneg.v	v8, v8
 	ret
 

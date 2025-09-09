@@ -3,8 +3,8 @@ func0000000000000001:
 	vsub.vv	v16, v12, v14
 	vfwcvt.f.x.v	v12, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfneg.v	v12, v12
 	vfmul.vv	v8, v8, v12
+	vfneg.v	v8, v8
 	ret
 
 func0000000000000000:
@@ -12,7 +12,7 @@ func0000000000000000:
 	vsub.vv	v16, v12, v14
 	vfwcvt.f.x.v	v12, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfneg.v	v12, v12
 	vfmul.vv	v8, v8, v12
+	vfneg.v	v8, v8
 	ret
 

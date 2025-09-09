@@ -1,7 +1,7 @@
 func0000000000000000:
-	fneg.d	fa5, fa2
-	fmv.d.x	fa4, zero
-	fmadd.d	fa4, fa0, fa4, fa1
-	fmul.d	fa0, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmadd.d	fa5, fa0, fa5, fa1
+	fmul.d	fa5, fa5, fa2
+	fneg.d	fa0, fa5
 	ret
 

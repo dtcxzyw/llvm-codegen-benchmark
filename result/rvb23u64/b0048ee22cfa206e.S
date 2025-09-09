@@ -13,8 +13,8 @@ func0000000000000002:
 
 func000000000000000c:
 	fli.s	fa5, 8.0
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa2, fa5
+	fneg.s	fa5, fa5
 	fle.s	a0, fa5, fa1
 	bnez	a0, .LBB1_2
 	fmv.s	fa1, fa5

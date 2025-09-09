@@ -1,8 +1,8 @@
 func0000000000000010:
 	fli.d	fa5, 0.5
-	fneg.d	fa5, fa5
 	fmul.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
+	fneg.d	fa4, fa4
 	feq.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret

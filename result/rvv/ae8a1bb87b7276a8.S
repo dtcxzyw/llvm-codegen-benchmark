@@ -5,8 +5,8 @@ func0000000000000004:
 	vmfgt.vf	v0, v24, fa5
 	vmv.v.i	v24, 0
 	vmerge.vvm	v8, v24, v8, v0
-	vfneg.v	v16, v16
 	vfmul.vv	v8, v8, v16
+	vfneg.v	v8, v8
 	ret
 
 func0000000000000007:

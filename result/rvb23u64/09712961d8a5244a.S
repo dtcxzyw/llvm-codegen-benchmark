@@ -1,9 +1,9 @@
 func0000000000000002:
 	fsub.s	fa5, fa0, fa1
 	fli.s	fa4, 0.5
-	fneg.s	fa4, fa4
 	fmul.s	fa5, fa5, fa4
 	fli.s	fa4, 2.0
+	fneg.s	fa5, fa5
 	fneg.s	fa4, fa4
 	flt.s	a0, fa5, fa4
 	ret

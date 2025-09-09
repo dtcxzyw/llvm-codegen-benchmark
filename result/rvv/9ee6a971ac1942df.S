@@ -3,7 +3,7 @@ func0000000000000000:
 	vle64.v	v24, (a0)
 	vfmul.vv	v24, v24, v24
 	vfmul.vv	v8, v8, v24
-	vfneg.v	v16, v16
 	vfmul.vv	v8, v8, v16
+	vfneg.v	v8, v8
 	ret
 

@@ -30,8 +30,8 @@ func000000000000000a:
 
 func000000000000000c:
 	fli.s	fa5, 8.0
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa2, fa5
+	fneg.s	fa5, fa5
 	fsub.s	fa4, fa0, fa1
 	fle.s	a0, fa5, fa4
 	ret

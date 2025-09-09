@@ -7,7 +7,7 @@ func0000000000000004:
 	vmfgt.vf	v0, v16, fa5
 	vmv.v.i	v16, 0
 	vmerge.vvm	v8, v16, v8, v0
-	vfneg.v	v12, v12
 	vfmul.vv	v8, v8, v12
+	vfneg.v	v8, v8
 	ret
 

@@ -42,8 +42,8 @@ func0000000000000008:
 
 func000000000000000a:
 	fli.s	fa5, 0.0078125
-	fneg.s	fa5, fa5
 	fmul.s	fa5, fa0, fa5
+	fneg.s	fa5, fa5
 	fmv.w.x	fa4, zero
 	fle.s	a1, fa5, fa4
 	and	a0, a0, a1

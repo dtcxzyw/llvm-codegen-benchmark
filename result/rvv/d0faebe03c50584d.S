@@ -5,18 +5,16 @@ func0000000000000004:
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	vmfgt.vf	v0, v16, fa5
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	fmv.d.x	fa5, zero
 	vmfle.vf	v8, v16, fa5
 	vmnot.m	v0, v8
@@ -25,9 +23,8 @@ func0000000000000005:
 func0000000000000002:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	fmv.d.x	fa5, zero
 	vmflt.vf	v0, v16, fa5
 	ret
@@ -35,9 +32,8 @@ func0000000000000002:
 func0000000000000008:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v16, fa5
 	ret
@@ -45,9 +41,8 @@ func0000000000000008:
 func000000000000000c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	fmv.d.x	fa5, zero
 	vmfge.vf	v0, v16, fa5
 	ret
@@ -55,9 +50,8 @@ func000000000000000c:
 func0000000000000003:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfneg.v	v24, v24
 	vfmul.vv	v16, v16, v24
-	vfmacc.vv	v16, v8, v8
+	vfmsac.vv	v16, v8, v8
 	fmv.d.x	fa5, zero
 	vmfge.vf	v8, v16, fa5
 	vmnot.m	v0, v8

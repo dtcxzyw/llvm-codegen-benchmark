@@ -10,9 +10,9 @@ func0000000000000001:
 
 func0000000000000000:
 	fmadd.d	fa5, fa1, fa1, fa2
-	fli.d	fa4, 4.0
 	fmadd.d	fa5, fa0, fa0, fa5
-	fneg.d	fa4, fa4
-	fmul.d	fa0, fa5, fa4
+	fli.d	fa4, 4.0
+	fmul.d	fa5, fa5, fa4
+	fneg.d	fa0, fa5
 	ret
 

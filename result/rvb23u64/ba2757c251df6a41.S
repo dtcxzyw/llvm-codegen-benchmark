@@ -45,8 +45,8 @@ func000000000000000d:
 
 func000000000000000c:
 	fli.d	fa5, 0.5
-	fneg.d	fa5, fa5
 	fmul.d	fa5, fa1, fa5
+	fneg.d	fa5, fa5
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

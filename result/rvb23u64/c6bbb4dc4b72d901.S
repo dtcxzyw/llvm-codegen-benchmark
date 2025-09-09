@@ -17,9 +17,9 @@ func0000000000000005:
 func0000000000000008:
 	fadd.d	fa5, fa0, fa1
 	fli.d	fa4, 0.5
-	fneg.d	fa4, fa4
 	fmul.d	fa5, fa5, fa4
 	fmv.d.x	fa4, zero
+	fneg.d	fa4, fa4
 	feq.d	a0, fa5, fa4
 	ret
 
@@ -30,8 +30,8 @@ func0000000000000004:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa4, %lo(.LCPI3_0)(a0)
 	fli.d	fa3, 0.5
-	fneg.d	fa3, fa3
 	fmul.d	fa5, fa5, fa3
+	fneg.d	fa5, fa5
 	flt.d	a0, fa4, fa5
 	ret
 
