@@ -1,10 +1,8 @@
 func0000000000000004:
 	addi	a1, a1, 1
-	li	a2, 2
-	bgeu	a1, a2, .LBB0_2
-	li	a0, 1
-	ret
-.LBB0_2:
+	sltiu	a1, a1, 2
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
@@ -23,11 +21,11 @@ func0000000000000064:
 	ret
 
 func0000000000000041:
-	li	a2, 1
-	beq	a1, a2, .LBB3_2
-	addi	a2, a0, 1
-.LBB3_2:
-	mv	a0, a2
+	addi	a1, a1, -1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000024:

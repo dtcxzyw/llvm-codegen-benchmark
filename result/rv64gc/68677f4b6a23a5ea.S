@@ -27,12 +27,9 @@ func000000000000000c:
 
 func0000000000000004:
 	andi	a1, a1, 1
-	bnez	a1, .LBB3_2
-	addi	a2, a2, 5
-	sub	a0, a0, a2
-	ret
-.LBB3_2:
-	li	a2, 5
-	sub	a0, a0, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	sub	a0, a0, a1
+	addi	a0, a0, -5
 	ret
 

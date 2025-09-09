@@ -29,11 +29,12 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	sext.w	a2, a1
+	sext.w	a1, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	li	a1, 30
-	beqz	a2, .LBB3_2
 	sub	a1, a1, a0
-.LBB3_2:
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 	ret

@@ -14,11 +14,12 @@ func0000000000000026:
 	ret
 
 func0000000000000001:
-	sext.w	a2, a0
-	li	a0, -1
-	slli	a0, a0, 48
-	beqz	a2, .LBB2_2
+	sext.w	a0, a0
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, -1
+	slli	a1, a1, 48
 	or	a0, a0, a1
-.LBB2_2:
 	ret
 

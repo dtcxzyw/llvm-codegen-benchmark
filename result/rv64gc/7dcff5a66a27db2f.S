@@ -1,27 +1,30 @@
 func000000000000000d:
-	neg	a1, a1
-	li	a2, -1
-	slli	a0, a0, 63
-	sllw	a1, a2, a1
-	srai	a0, a0, 63
-	or	a0, a0, a1
+	andi	a0, a0, 1
+	li	a2, 32
+	sub	a2, a2, a1
+	addi	a0, a0, -1
+	and	a0, a0, a2
+	li	a1, -1
+	sllw	a0, a1, a0
 	ret
 
 func000000000000000e:
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB1_2
-	neg	a1, a1
-	sllw	a0, a0, a1
-.LBB1_2:
+	andi	a0, a0, 1
+	li	a2, 32
+	sub	a2, a2, a1
+	addi	a0, a0, -1
+	and	a0, a0, a2
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func000000000000000f:
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB2_2
-	neg	a1, a1
-	sllw	a0, a0, a1
-.LBB2_2:
+	andi	a0, a0, 1
+	li	a2, 32
+	sub	a2, a2, a1
+	addi	a0, a0, -1
+	and	a0, a0, a2
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 

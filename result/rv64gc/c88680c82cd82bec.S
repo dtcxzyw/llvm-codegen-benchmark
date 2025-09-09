@@ -8,11 +8,11 @@ func0000000000000061:
 	ret
 
 func0000000000000066:
-	andi	a1, a0, -64
-	li	a0, -32
-	blt	a1, a0, .LBB1_2
-	xori	a0, a1, -32
-.LBB1_2:
+	andi	a0, a0, -64
+	slti	a1, a0, -32
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	xori	a0, a0, -32
 	ret
 
 func0000000000000021:

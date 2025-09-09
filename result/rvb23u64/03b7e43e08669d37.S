@@ -7,8 +7,8 @@ func0000000000000028:
 	ret
 
 func0000000000000001:
-	neg	a1, a1
 	czero.nez	a0, a1, a0
+	neg	a0, a0
 	ret
 
 func0000000000000004:
@@ -23,8 +23,8 @@ func0000000000000004:
 
 func0000000000000064:
 	sltiu	a0, a0, 4
-	neg	a1, a1
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 5
+	li	a1, 5
+	sub	a0, a1, a0
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000004:
-	negw	a1, a0
-	sltiu	a0, a0, -119
-	addi	a0, a0, -1
+	sltiu	a1, a0, -119
+	addi	a1, a1, -1
 	and	a0, a0, a1
+	negw	a0, a0
 	ret
 
 func0000000000000001:

@@ -39,10 +39,9 @@ func0000000000000029:
 
 func0000000000000007:
 	sext.w	a1, a1
-	beqz	a1, .LBB4_2
-	li	a0, 1
-	ret
-.LBB4_2:
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
@@ -76,20 +75,17 @@ func0000000000000020:
 
 func0000000000000011:
 	sext.w	a1, a1
-	li	a2, 2
-	bltu	a1, a2, .LBB8_2
-	li	a0, -3
-	ret
-.LBB8_2:
+	sltiu	a1, a1, 2
+	neg	a1, a1
+	and	a0, a0, a1
 	addiw	a0, a0, -3
 	ret
 
 func0000000000000033:
 	sext.w	a1, a1
-	bnez	a1, .LBB9_2
-	li	a0, 13
-	ret
-.LBB9_2:
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addiw	a0, a0, 13
 	ret
 

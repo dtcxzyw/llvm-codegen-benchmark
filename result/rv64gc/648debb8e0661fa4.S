@@ -47,12 +47,10 @@ func0000000000000084:
 
 func0000000000000085:
 	zext.b	a1, a1
-	bnez	a1, .LBB5_2
-	li	a1, 2000
-	addw	a0, a0, a1
-	ret
-.LBB5_2:
-	addi	a1, a2, 2000
-	addw	a0, a0, a1
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 2000
 	ret
 

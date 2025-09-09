@@ -1,8 +1,8 @@
 func0000000000000004:
-	bne	a0, a1, .LBB0_2
-	li	a0, 160
-	ret
-.LBB0_2:
+	xor	a1, a1, a0
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 160
 	ret
 

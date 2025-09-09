@@ -70,13 +70,13 @@ func0000000000000009:
 	ret
 
 func0000000000000002:
-	andi	a2, a0, 1
-	lui	a0, 1
-	addi	a0, a0, 296
-	beqz	a2, .LBB7_2
 	li	a2, 4
+	slli	a0, a0, 63
 	sllw	a1, a2, a1
+	lui	a2, 1
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	addi	a1, a2, 296
 	addw	a0, a0, a1
-.LBB7_2:
 	ret
 

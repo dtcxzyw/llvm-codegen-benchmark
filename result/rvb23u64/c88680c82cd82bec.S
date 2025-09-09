@@ -7,11 +7,9 @@ func0000000000000061:
 
 func0000000000000066:
 	andi	a0, a0, -64
-	xori	a1, a0, -32
-	slti	a0, a0, -32
-	addi	a1, a1, 32
-	czero.nez	a0, a1, a0
-	addi	a0, a0, -32
+	slti	a1, a0, -32
+	czero.nez	a0, a0, a1
+	xori	a0, a0, -32
 	ret
 
 func0000000000000021:

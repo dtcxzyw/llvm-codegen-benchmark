@@ -27,10 +27,8 @@ func000000000000000d:
 
 func0000000000000009:
 	sext.w	a1, a1
-	ori	a0, a0, 1024
 	sltiu	a1, a1, 3
-	addi	a0, a0, -1024
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, 1024
+	ori	a0, a0, 1024
 	ret
 

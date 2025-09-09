@@ -23,12 +23,12 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a2, a0, 1
-	lui	a0, 64
-	bnez	a2, .LBB2_2
+	andi	a0, a0, 1
 	slli	a1, a1, 26
-	subw	a0, a0, a1
-.LBB2_2:
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	lui	a1, 64
+	subw	a0, a1, a0
 	ret
 
 func0000000000000003:

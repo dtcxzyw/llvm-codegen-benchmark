@@ -1,8 +1,7 @@
 func0000000000000007:
-	beqz	a1, .LBB0_2
-	li	a0, 1
-	ret
-.LBB0_2:
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
@@ -62,10 +61,9 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	beqz	a1, .LBB7_2
-	li	a0, 4
-	ret
-.LBB7_2:
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 

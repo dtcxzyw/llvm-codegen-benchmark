@@ -1,19 +1,16 @@
 func0000000000000021:
 	zext.b	a0, a0
-	beqz	a0, .LBB0_2
-	li	a0, 8
-	ret
-.LBB0_2:
-	andi	a0, a1, 1
+	seqz	a0, a0
+	and	a0, a0, a1
 	addiw	a0, a0, 8
 	ret
 
 func0000000000000028:
-	zext.b	a2, a0
-	li	a0, 8
-	bgeu	a0, a2, .LBB1_2
-	andi	a0, a1, -16
+	zext.b	a0, a0
+	sltiu	a0, a0, 9
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	andi	a0, a0, -16
 	addi	a0, a0, 8
-.LBB1_2:
 	ret
 

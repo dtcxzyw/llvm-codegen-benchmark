@@ -21,11 +21,11 @@ func0000000000000004:
 	ret
 
 func0000000000000066:
-	andi	a3, a1, 1
-	li	a1, 1
-	beqz	a3, .LBB2_2
-	sll	a1, a1, a2
-.LBB2_2:
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	li	a2, 1
+	sll	a1, a2, a1
 	slt	a0, a0, a1
 	ret
 

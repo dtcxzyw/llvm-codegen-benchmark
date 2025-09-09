@@ -1,9 +1,7 @@
 func0000000000000008:
-	li	a1, 8
-	bltu	a1, a0, .LBB0_2
-	li	a0, 96
-	ret
-.LBB0_2:
+	sltiu	a1, a0, 9
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 96
 	ret
 

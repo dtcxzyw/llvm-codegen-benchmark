@@ -5,12 +5,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	bseti	a1, a0, 38
-	addi	a0, a0, 2
-	bseti	a2, zero, 38
-	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a0, 2
+	czero.eqz	a0, a0, a1
+	bseti	a0, a0, 38
 	ret
 
 func0000000000000028:

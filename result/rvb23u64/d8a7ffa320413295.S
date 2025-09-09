@@ -1,10 +1,8 @@
 func0000000000000007:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
-	addiw	a1, a1, -8
-	addi	a1, a1, 8
 	czero.nez	a0, a1, a0
-	addi	a0, a0, -8
+	addiw	a0, a0, -8
 	ret
 
 func000000000000000f:
@@ -40,9 +38,7 @@ func0000000000000003:
 func000000000000000e:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	addiw	a1, a1, 256
-	addi	a1, a1, -256
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 256
+	addiw	a0, a0, 256
 	ret
 

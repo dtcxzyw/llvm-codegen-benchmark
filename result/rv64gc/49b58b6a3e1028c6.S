@@ -1,8 +1,7 @@
 func0000000000000010:
-	bltu	a0, a1, .LBB0_2
-	li	a0, 1
-	ret
-.LBB0_2:
+	sltu	a1, a0, a1
+	neg	a1, a1
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 

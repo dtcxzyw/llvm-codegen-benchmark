@@ -89,12 +89,9 @@ func000000000000000a:
 
 func000000000000000d:
 	andi	a1, a1, 1
-	bnez	a1, .LBB10_2
-	addi	a2, a2, 1
-	addw	a0, a0, a2
-	ret
-.LBB10_2:
-	li	a2, 1
-	addw	a0, a0, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 

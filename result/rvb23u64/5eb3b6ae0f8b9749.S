@@ -37,10 +37,8 @@ func0000000000000029:
 
 func0000000000000007:
 	sext.w	a1, a1
-	addiw	a0, a0, 1
-	addi	a0, a0, -1
 	czero.nez	a0, a0, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	ret
 
 func000000000000002a:
@@ -72,18 +70,14 @@ func0000000000000020:
 
 func0000000000000011:
 	sext.w	a1, a1
-	addiw	a0, a0, -3
 	sltiu	a1, a1, 2
-	addi	a0, a0, 3
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	ret
 
 func0000000000000033:
 	sext.w	a1, a1
-	addiw	a0, a0, 13
-	addi	a0, a0, -13
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, 13
+	addiw	a0, a0, 13
 	ret
 

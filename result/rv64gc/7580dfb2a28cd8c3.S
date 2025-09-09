@@ -1,78 +1,71 @@
 func0000000000000086:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 3
-	blt	a2, a3, .LBB0_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB0_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	slti	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 3
+	sllw	a0, a1, a0
 	ret
 
 func00000000000000c6:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	blt	a2, a3, .LBB1_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB1_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	slti	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func00000000000000f4:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 6
-	li	a0, 1
-	bltu	a2, a3, .LBB2_2
-	addi	a1, a1, -5
-	sllw	a0, a0, a1
-.LBB2_2:
+	sext.w	a1, a0
+	addi	a0, a0, -5
+	sltiu	a1, a1, 6
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func00000000000000d4:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	bltu	a2, a3, .LBB3_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB3_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	sltiu	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func00000000000000e6:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	blt	a2, a3, .LBB4_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB4_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	slti	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000046:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	blt	a2, a3, .LBB5_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB5_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	slti	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000044:
-	mv	a1, a0
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	bltu	a2, a3, .LBB6_2
-	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB6_2:
+	sext.w	a1, a0
+	addi	a0, a0, -6
+	sltiu	a1, a1, 7
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func00000000000000c1:

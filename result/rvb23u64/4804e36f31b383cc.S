@@ -1,10 +1,8 @@
 func0000000000000021:
 	andi	a1, a1, 7
 	addi	a1, a1, -7
-	snez	a1, a1
+	czero.eqz	a0, a0, a1
 	addiw	a0, a0, -1
-	addi	a1, a1, -1
-	or	a0, a0, a1
 	ret
 
 func0000000000000001:

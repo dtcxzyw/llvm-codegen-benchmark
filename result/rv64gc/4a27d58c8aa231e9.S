@@ -12,12 +12,11 @@ func0000000000000004:
 	ret
 
 func00000000000000e4:
-	mv	a1, a0
-	addi	a2, a0, -1
-	li	a3, 4
-	li	a0, 5
-	bgeu	a2, a3, .LBB1_2
-	sub	a0, a0, a1
-.LBB1_2:
+	addi	a1, a0, -1
+	sltiu	a1, a1, 4
+	neg	a1, a1
+	and	a0, a0, a1
+	li	a1, 5
+	sub	a0, a1, a0
 	ret
 

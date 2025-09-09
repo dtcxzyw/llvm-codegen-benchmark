@@ -25,11 +25,9 @@ func0000000000000000:
 func0000000000000001:
 	andi	a0, a0, 1
 	slli	a1, a1, 26
-	lui	a2, 64
-	subw	a1, a2, a1
-	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	lui	a1, 64
+	subw	a0, a1, a0
 	ret
 
 func0000000000000003:

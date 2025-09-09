@@ -28,13 +28,13 @@ func0000000000000001:
 	ret
 
 func0000000000000024:
-	sext.w	a2, a0
-	lui	a0, 13
-	li	a3, 32
-	addi	a0, a0, 1288
-	bgeu	a2, a3, .LBB3_2
+	sext.w	a0, a0
+	sltiu	a0, a0, 32
+	neg	a0, a0
+	and	a0, a0, a1
+	lui	a1, 13
+	addi	a1, a1, 1288
 	or	a0, a0, a1
-.LBB3_2:
 	ret
 
 func0000000000000006:

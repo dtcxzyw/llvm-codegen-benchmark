@@ -5,11 +5,10 @@ func0000000000000026:
 	ret
 
 func0000000000000006:
-	mv	a2, a0
-	li	a0, 387
-	bgez	a2, .LBB1_2
-	subw	a0, a0, a1
-.LBB1_2:
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	li	a1, 387
+	subw	a0, a1, a0
 	ret
 
 func0000000000000004:

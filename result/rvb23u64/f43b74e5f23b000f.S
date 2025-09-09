@@ -1,10 +1,8 @@
 func0000000000000021:
 	subw	a0, a0, a1
 	addi	a1, a0, 1
-	addiw	a0, a0, -64
-	addi	a0, a0, 64
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, -64
+	addiw	a0, a0, -64
 	ret
 
 func00000000000000a6:

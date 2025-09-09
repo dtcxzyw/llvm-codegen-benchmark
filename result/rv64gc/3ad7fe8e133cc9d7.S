@@ -1,8 +1,8 @@
 func0000000000000000:
-	andi	a2, a0, 1
-	li	a0, 8
-	beqz	a2, .LBB0_2
-	srlw	a0, a0, a1
-.LBB0_2:
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	li	a1, 8
+	srlw	a0, a1, a0
 	ret
 

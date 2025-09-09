@@ -1,12 +1,13 @@
 func0000000000000001:
-	sext.w	a2, a0
-	lui	a0, 4
-	li	a3, 1
-	addi	a0, a0, -1472
-	beq	a2, a3, .LBB0_2
-	andi	a1, a1, -8
+	sext.w	a0, a0
+	addi	a0, a0, -1
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	lui	a1, 4
+	andi	a0, a0, -8
+	addi	a1, a1, -1472
 	add	a0, a0, a1
-.LBB0_2:
 	ret
 
 func0000000000000061:

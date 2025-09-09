@@ -17,19 +17,17 @@ func0000000000000061:
 	ret
 
 func0000000000000054:
-	bset	a1, zero, a1
+	zext.w	a1, a1
 	sltiu	a0, a0, 7
-	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000074:
-	bset	a1, zero, a1
+	zext.w	a1, a1
 	sltiu	a0, a0, 7
-	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000021:
@@ -39,10 +37,9 @@ func0000000000000021:
 	ret
 
 func0000000000000044:
-	bset	a1, zero, a1
+	zext.w	a1, a1
 	sltiu	a0, a0, 2
-	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 

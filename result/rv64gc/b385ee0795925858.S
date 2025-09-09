@@ -3,9 +3,9 @@ func0000000000000026:
 	slli	a2, a2, 48
 	slli	a1, a1, 63
 	srai	a2, a2, 48
-	neg	a2, a2
 	srai	a1, a1, 63
 	and	a1, a1, a2
+	neg	a1, a1
 	slt	a0, a1, a0
 	ret
 

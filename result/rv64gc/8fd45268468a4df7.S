@@ -30,10 +30,10 @@ func0000000000000026:
 
 func0000000000000008:
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	addiw	a2, a2, -1
-	addi	a1, a1, -1
-	or	a1, a1, a2
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
 

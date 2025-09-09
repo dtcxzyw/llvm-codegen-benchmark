@@ -1,23 +1,17 @@
 func000000000000000c:
 	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
-	addi	a2, a2, 28
-	addw	a0, a0, a2
-	ret
-.LBB0_2:
-	li	a2, 28
-	addw	a0, a0, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 28
 	ret
 
 func0000000000000004:
 	andi	a1, a1, 1
-	bnez	a1, .LBB1_2
-	addi	a2, a2, -4
-	addw	a0, a0, a2
-	ret
-.LBB1_2:
-	li	a2, -4
-	addw	a0, a0, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -4
 	ret
 
 func000000000000000f:
@@ -44,20 +38,17 @@ func0000000000000005:
 
 func0000000000000000:
 	andi	a1, a1, 1
-	bnez	a1, .LBB4_2
-	addi	a2, a2, 7
-	addw	a0, a0, a2
-	ret
-.LBB4_2:
-	li	a2, 7
-	addw	a0, a0, a2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 7
 	ret
 
 func0000000000000007:
-	addi	a2, a2, -1
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
-	addw	a0, a0, a1
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	ret
 

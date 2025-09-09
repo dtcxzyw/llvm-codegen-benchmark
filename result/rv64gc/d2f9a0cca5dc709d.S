@@ -17,12 +17,11 @@ func0000000000000004:
 
 func0000000000000021:
 	zext.b	a0, a0
-	li	a2, 10
-	bne	a0, a2, .LBB2_2
-	li	a0, 1
-	ret
-.LBB2_2:
-	addiw	a0, a1, 1
+	addi	a0, a0, -10
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000001:

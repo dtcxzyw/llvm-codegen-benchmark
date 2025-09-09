@@ -10,11 +10,11 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	li	a2, 1
-	bne	a0, a2, .LBB1_2
-	addi	a2, a1, 1
-.LBB1_2:
-	mv	a0, a2
+	addi	a0, a0, -1
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ori	a0, a0, 1
 	ret
 
 func000000000000002a:
@@ -33,11 +33,10 @@ func0000000000000038:
 	ret
 
 func000000000000002c:
-	bnez	a0, .LBB4_2
-	li	a0, 4
-	ret
-.LBB4_2:
-	addi	a0, a1, 4
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ori	a0, a0, 4
 	ret
 
 func0000000000000028:
@@ -48,10 +47,9 @@ func0000000000000028:
 	ret
 
 func0000000000000001:
-	beqz	a0, .LBB6_2
-	li	a0, 1
-	ret
-.LBB6_2:
-	ori	a0, a1, 1
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ori	a0, a0, 1
 	ret
 

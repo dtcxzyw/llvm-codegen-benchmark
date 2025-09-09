@@ -26,11 +26,11 @@ func0000000000000007:
 	ret
 
 func000000000000000b:
-	andi	a2, a0, 1
-	li	a0, 32
-	bnez	a2, .LBB3_2
-	subw	a0, a0, a1
-.LBB3_2:
+	andi	a0, a0, 1
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 32
+	subw	a0, a1, a0
 	ret
 
 func000000000000000f:

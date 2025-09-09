@@ -42,23 +42,21 @@ func0000000000000041:
 
 func0000000000000064:
 	sext.w	a0, a0
-	li	a2, 64
-	bgeu	a0, a2, .LBB4_2
-	li	a0, 16
-	ret
-.LBB4_2:
-	lui	a0, 262144
-	addi	a0, a0, -16
+	lui	a2, 262144
+	sltiu	a0, a0, 64
+	addi	a2, a2, -16
+	addi	a0, a0, -1
+	and	a1, a1, a2
 	and	a0, a0, a1
 	addi	a0, a0, 16
 	ret
 
 func0000000000000026:
-	sext.w	a2, a0
-	li	a0, 128
-	blt	a2, a0, .LBB5_2
-	andi	a0, a1, -128
+	sext.w	a0, a0
+	slti	a0, a0, 128
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	andi	a0, a0, -128
 	addiw	a0, a0, 128
-.LBB5_2:
 	ret
 

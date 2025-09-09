@@ -1,14 +1,11 @@
 func0000000000000010:
 	sext.w	a1, a1
-	beqz	a1, .LBB0_2
-	li	a1, 48
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a1, a1, a2
 	slli	a0, a0, 4
-	addw	a0, a0, a1
-	ret
-.LBB0_2:
-	addi	a1, a2, 48
-	slli	a0, a0, 4
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addiw	a0, a0, 48
 	ret
 
 func0000000000000060:

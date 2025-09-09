@@ -1,9 +1,8 @@
 func0000000000000003:
 	sext.w	a0, a0
-	xori	a1, a1, 256
-	addi	a1, a1, -256
 	czero.eqz	a0, a1, a0
-	addiw	a0, a0, 256
+	xori	a0, a0, 256
+	sext.w	a0, a0
 	ret
 
 func0000000000000015:

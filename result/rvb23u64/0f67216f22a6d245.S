@@ -28,9 +28,7 @@ func000000000000000f:
 func000000000000000d:
 	andi	a0, a0, 1
 	slli	a1, a1, 2
-	addiw	a1, a1, -30
-	addi	a1, a1, 30
 	czero.nez	a0, a1, a0
-	addi	a0, a0, -30
+	addiw	a0, a0, -30
 	ret
 

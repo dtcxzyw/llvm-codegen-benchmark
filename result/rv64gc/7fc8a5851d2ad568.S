@@ -8,21 +8,21 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	andi	a2, a0, 1
-	li	a0, 255
-	beqz	a2, .LBB1_2
 	addi	a1, a1, -5
-	sllw	a0, a0, a1
-.LBB1_2:
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	li	a1, 255
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000002:
-	andi	a2, a0, 1
-	li	a0, 1
-	beqz	a2, .LBB2_2
 	addi	a1, a1, -6
-	sllw	a0, a0, a1
-.LBB2_2:
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000005:

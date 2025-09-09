@@ -8,13 +8,13 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	mv	a2, a0
-	li	a0, 513
-	slli	a0, a0, 22
-	addi	a0, a0, -1
-	beqz	a1, .LBB1_2
-	or	a0, a0, a2
-.LBB1_2:
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 513
+	slli	a1, a1, 22
+	addi	a1, a1, -1
+	or	a0, a0, a1
 	ret
 
 func0000000000000029:

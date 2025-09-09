@@ -5,20 +5,20 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	neg	a2, a2
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
+	neg	a1, a1
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000078:
-	andi	a3, a1, 1
-	li	a1, 5
-	beqz	a3, .LBB2_2
-	sub	a1, a1, a2
-.LBB2_2:
-	sltu	a0, a0, a1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	li	a2, 5
+	sub	a2, a2, a1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000024:

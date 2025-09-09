@@ -13,8 +13,8 @@ func0000000000000004:
 func00000000000000e4:
 	addi	a1, a0, -1
 	sltiu	a1, a1, 4
-	neg	a0, a0
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, 5
+	li	a1, 5
+	sub	a0, a1, a0
 	ret
 

@@ -32,14 +32,11 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 1
-	bnez	a1, .LBB4_2
-	li	a1, 128
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
 	add	a0, a0, a1
-	ret
-.LBB4_2:
-	addi	a1, a2, 128
-	add	a0, a0, a1
+	addi	a0, a0, 128
 	ret
 
 func0000000000000004:

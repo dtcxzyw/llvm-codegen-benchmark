@@ -14,9 +14,9 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	orn	a1, a1, a2
+	andi	a1, a1, 1
+	czero.nez	a1, a2, a1
+	not	a1, a1
 	add	a0, a0, a1
 	ret
 

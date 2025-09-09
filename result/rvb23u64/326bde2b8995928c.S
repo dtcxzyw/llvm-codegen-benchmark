@@ -18,8 +18,8 @@ func0000000000000004:
 func0000000000000028:
 	sext.w	a1, a1
 	sgtz	a1, a1
-	addi	a1, a1, -1
-	orn	a1, a1, a2
+	czero.eqz	a1, a2, a1
+	not	a1, a1
 	addw	a0, a0, a1
 	ret
 

@@ -3,10 +3,10 @@ func0000000000000021:
 	li	a2, -1
 	sll	a1, a2, a1
 	addi	a0, a0, -64
-	not	a1, a1
-	snez	a0, a0
+	seqz	a0, a0
 	addi	a0, a0, -1
-	or	a0, a0, a1
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func000000000000002a:
@@ -14,9 +14,9 @@ func000000000000002a:
 	li	a2, -1
 	sll	a1, a2, a1
 	slti	a0, a0, 8
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func0000000000000028:
@@ -24,9 +24,9 @@ func0000000000000028:
 	li	a2, -1
 	sll	a1, a2, a1
 	sltiu	a0, a0, 64
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func0000000000000034:

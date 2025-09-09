@@ -30,12 +30,13 @@ func0000000000000006:
 	ret
 
 func000000000000012a:
-	sext.w	a3, a1
-	lui	a1, 1
-	addi	a1, a1, 296
-	blez	a3, .LBB3_2
+	sext.w	a1, a1
+	sgtz	a1, a1
+	neg	a1, a1
+	and	a1, a1, a2
+	lui	a2, 1
+	addi	a2, a2, 296
 	addw	a1, a1, a2
-.LBB3_2:
 	add	a0, a0, a1
 	ret
 

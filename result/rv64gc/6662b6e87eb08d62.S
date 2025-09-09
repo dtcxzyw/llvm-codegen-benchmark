@@ -1,9 +1,7 @@
 func0000000000000061:
-	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
-	li	a0, 24
-	ret
-.LBB0_2:
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 

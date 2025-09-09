@@ -63,10 +63,9 @@ func0000000000000066:
 
 func0000000000000021:
 	sext.w	a0, a0
-	addiw	a2, a2, -1
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	or	a1, a1, a2
+	andi	a1, a1, 1
+	czero.nez	a1, a2, a1
+	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

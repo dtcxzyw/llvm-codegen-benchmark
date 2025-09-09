@@ -8,8 +8,8 @@ func000000000000000a:
 func000000000000002a:
 	addw	a0, a0, a1
 	sgtz	a1, a0
-	negw	a0, a0
 	czero.nez	a0, a0, a1
+	negw	a0, a0
 	ret
 
 func00000000000000aa:

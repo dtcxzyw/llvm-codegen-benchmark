@@ -1,10 +1,9 @@
 func0000000000000021:
 	zext.b	a0, a0
-	beqz	a0, .LBB0_2
-	li	a0, 8
-	ret
-.LBB0_2:
-	ori	a0, a1, 8
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ori	a0, a0, 8
 	ret
 
 func0000000000000004:
@@ -36,10 +35,10 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	zext.b	a2, a0
-	li	a0, 8
-	bgeu	a0, a2, .LBB4_2
-	ori	a0, a1, 8
-.LBB4_2:
+	zext.b	a0, a0
+	sltiu	a0, a0, 9
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ori	a0, a0, 8
 	ret
 

@@ -20,13 +20,12 @@ func0000000000000000:
 
 func000000000000000a:
 	andi	a0, a0, 1
-	bnez	a0, .LBB2_2
-	slli	a1, a1, 1
-	srli	a0, a1, 33
+	srli	a1, a1, 32
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	slli	a0, a0, 33
+	srli	a0, a0, 33
 	addiw	a0, a0, 5
-	ret
-.LBB2_2:
-	li	a0, 5
 	ret
 
 func0000000000000003:

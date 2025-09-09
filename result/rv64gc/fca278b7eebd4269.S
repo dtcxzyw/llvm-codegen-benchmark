@@ -28,57 +28,57 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 3
-	blt	a2, a3, .LBB3_2
-	sllw	a0, a0, a1
-.LBB3_2:
+	sext.w	a0, a0
+	slti	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 3
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000046:
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	blt	a2, a3, .LBB4_2
-	sllw	a0, a0, a1
-.LBB4_2:
+	sext.w	a0, a0
+	slti	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000044:
-	srliw	a2, a0, 24
-	li	a3, 7
-	li	a0, 1
-	bltu	a2, a3, .LBB5_2
-	sllw	a0, a0, a1
-.LBB5_2:
+	srliw	a0, a0, 24
+	sltiu	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000074:
-	sext.w	a2, a0
-	li	a3, 6
-	li	a0, 1
-	bltu	a2, a3, .LBB6_2
-	sllw	a0, a0, a1
-.LBB6_2:
+	sext.w	a0, a0
+	sltiu	a0, a0, 6
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000054:
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	bltu	a2, a3, .LBB7_2
-	sllw	a0, a0, a1
-.LBB7_2:
+	sext.w	a0, a0
+	sltiu	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000064:
-	srliw	a2, a0, 27
-	li	a3, 7
-	li	a0, 1
-	bltu	a2, a3, .LBB8_2
-	sllw	a0, a0, a1
-.LBB8_2:
+	srliw	a0, a0, 27
+	sltiu	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -91,20 +91,20 @@ func0000000000000021:
 	ret
 
 func0000000000000066:
-	sext.w	a2, a0
-	li	a3, 7
-	li	a0, 1
-	blt	a2, a3, .LBB10_2
-	sllw	a0, a0, a1
-.LBB10_2:
+	sext.w	a0, a0
+	slti	a0, a0, 7
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000004:
-	mv	a2, a0
-	li	a0, 3
-	srliw	a2, a2, 27
-	bltu	a2, a0, .LBB11_2
-	sllw	a0, a0, a1
-.LBB11_2:
+	srliw	a0, a0, 27
+	sltiu	a0, a0, 3
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	li	a1, 3
+	sllw	a0, a1, a0
 	ret
 

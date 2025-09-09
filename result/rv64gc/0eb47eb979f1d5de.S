@@ -75,12 +75,10 @@ func0000000000000028:
 	ret
 
 func0000000000000068:
-	li	a2, 127
-	bltu	a2, a0, .LBB10_2
-	li	a0, 1
-	ret
-.LBB10_2:
-	addi	a0, a1, 1
+	sltiu	a0, a0, 128
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000064:

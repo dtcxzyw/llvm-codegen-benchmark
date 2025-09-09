@@ -10,11 +10,10 @@ func000000000000006a:
 func0000000000000026:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bge	a0, a1, .LBB1_2
-	li	a0, 3
-	ret
-.LBB1_2:
-	addiw	a0, a2, 3
+	slt	a0, a0, a1
+	addi	a0, a0, -1
+	and	a0, a0, a2
+	addiw	a0, a0, 3
 	ret
 
 func0000000000000074:
@@ -78,11 +77,11 @@ func0000000000000006:
 func0000000000000061:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bne	a0, a1, .LBB8_2
-	li	a0, 1
-	ret
-.LBB8_2:
-	addiw	a0, a2, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a2
+	addiw	a0, a0, 1
 	ret
 
 func0000000000000021:

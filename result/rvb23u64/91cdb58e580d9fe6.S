@@ -34,10 +34,8 @@ func0000000000000231:
 
 func0000000000000042:
 	sext.w	a1, a1
-	ori	a0, a0, 2
 	binvi	a1, a1, 15
-	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
-	addi	a0, a0, 2
+	ori	a0, a0, 2
 	ret
 

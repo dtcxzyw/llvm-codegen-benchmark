@@ -9,9 +9,9 @@ func0000000000000006:
 
 func0000000000000004:
 	sext.w	a0, a0
-	not	a1, a1
 	sltiu	a0, a0, 8
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 

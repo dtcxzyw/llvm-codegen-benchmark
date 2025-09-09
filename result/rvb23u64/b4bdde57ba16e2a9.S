@@ -1,11 +1,9 @@
 func0000000000000080:
 	srliw	a1, a0, 16
-	srli	a0, a0, 18
 	sltiu	a1, a1, 17
-	ori	a0, a0, -16
-	addi	a0, a0, 16
+	srli	a0, a0, 18
 	czero.eqz	a0, a0, a1
-	addiw	a0, a0, -16
+	ori	a0, a0, -16
 	ret
 
 func0000000000000085:
@@ -20,12 +18,10 @@ func0000000000000085:
 
 func0000000000000087:
 	srliw	a1, a0, 16
-	srli	a0, a0, 18
 	sltiu	a1, a1, 17
-	ori	a0, a0, -16
-	addi	a0, a0, 16
+	srli	a0, a0, 18
 	czero.eqz	a0, a0, a1
-	addiw	a0, a0, -16
+	ori	a0, a0, -16
 	ret
 
 func0000000000000081:

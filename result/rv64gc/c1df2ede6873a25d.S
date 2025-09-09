@@ -1,52 +1,52 @@
 func0000000000000046:
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB0_2
-	sllw	a1, a1, a2
-.LBB0_2:
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	li	a2, 1
+	sllw	a1, a2, a1
 	slt	a0, a0, a1
 	ret
 
 func000000000000004c:
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB1_2
-	sllw	a1, a1, a2
-.LBB1_2:
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	li	a2, 1
+	sllw	a1, a2, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000006:
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 4
-	bnez	a3, .LBB2_2
-	sllw	a1, a1, a2
-.LBB2_2:
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	li	a2, 4
+	sllw	a1, a2, a1
 	slt	a0, a0, a1
 	ret
 
 func0000000000000041:
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB3_2
-	sllw	a1, a1, a2
-.LBB3_2:
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	li	a2, 1
+	sllw	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000044:
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB4_2
-	sllw	a1, a1, a2
-.LBB4_2:
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	li	a2, 1
+	sllw	a1, a2, a1
 	sltu	a0, a0, a1
 	ret
 

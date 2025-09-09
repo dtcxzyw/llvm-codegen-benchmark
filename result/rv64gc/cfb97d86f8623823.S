@@ -29,11 +29,9 @@ func000000000000000d:
 
 func0000000000000009:
 	sext.w	a1, a1
-	li	a2, 3
-	bltu	a1, a2, .LBB3_2
-	li	a0, 1024
-	ret
-.LBB3_2:
+	sltiu	a1, a1, 3
+	neg	a1, a1
+	and	a0, a0, a1
 	ori	a0, a0, 1024
 	ret
 

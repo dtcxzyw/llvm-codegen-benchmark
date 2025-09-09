@@ -7,13 +7,13 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	mv	a1, a0
-	li	a0, 1
-	li	a2, -2
-	slli	a0, a0, 38
-	beq	a1, a2, .LBB1_2
+	addi	a1, a0, 2
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	slli	a1, a1, 38
 	or	a0, a0, a1
-.LBB1_2:
 	ret
 
 func0000000000000028:

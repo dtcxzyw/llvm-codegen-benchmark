@@ -15,23 +15,21 @@ func0000000000000061:
 	ret
 
 func0000000000000074:
-	mv	a2, a0
 	andi	a1, a1, 14
-	li	a3, 6
-	li	a0, 1
-	bltu	a1, a3, .LBB2_2
-	sllw	a0, a0, a2
-.LBB2_2:
+	sltiu	a1, a1, 6
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000054:
-	mv	a2, a0
 	andi	a1, a1, 62
-	li	a3, 6
-	li	a0, 1
-	bltu	a1, a3, .LBB3_2
-	sllw	a0, a0, a2
-.LBB3_2:
+	sltiu	a1, a1, 6
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000021:

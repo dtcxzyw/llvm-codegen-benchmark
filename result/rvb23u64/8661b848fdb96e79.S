@@ -12,20 +12,18 @@ func0000000000000061:
 
 func0000000000000074:
 	andi	a1, a1, 14
-	bset	a0, zero, a0
 	sltiu	a1, a1, 6
-	addi	a0, a0, -1
+	zext.w	a0, a0
 	czero.nez	a0, a0, a1
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000054:
 	andi	a1, a1, 62
-	bset	a0, zero, a0
 	sltiu	a1, a1, 6
-	addi	a0, a0, -1
+	zext.w	a0, a0
 	czero.nez	a0, a0, a1
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000021:

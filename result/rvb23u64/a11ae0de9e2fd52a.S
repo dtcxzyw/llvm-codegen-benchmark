@@ -51,11 +51,9 @@ func0000000000000048:
 
 func0000000000000046:
 	sext.w	a0, a0
-	bset	a1, zero, a1
 	slti	a0, a0, 6
-	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000034:

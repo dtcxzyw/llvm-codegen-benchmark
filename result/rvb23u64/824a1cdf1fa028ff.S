@@ -24,11 +24,9 @@ func0000000000000007:
 
 func000000000000000b:
 	andi	a0, a0, 1
-	li	a2, 32
-	subw	a2, a2, a1
-	addi	a2, a2, -32
-	czero.nez	a0, a2, a0
-	addi	a0, a0, 32
+	czero.nez	a0, a1, a0
+	li	a1, 32
+	subw	a0, a1, a0
 	ret
 
 func000000000000000f:

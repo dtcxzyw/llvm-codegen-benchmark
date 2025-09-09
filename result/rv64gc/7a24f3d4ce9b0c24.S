@@ -16,19 +16,19 @@ func0000000000000004:
 
 func0000000000000061:
 	zext.b	a0, a0
-	beqz	a0, .LBB2_2
-	li	a0, 1
-	ret
-.LBB2_2:
-	addi	a0, a1, 1
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000001:
-	zext.b	a2, a0
-	li	a0, 1
-	bne	a2, a0, .LBB3_2
-	addi	a0, a1, 1
-.LBB3_2:
+	zext.b	a0, a0
+	addi	a0, a0, -1
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000064:

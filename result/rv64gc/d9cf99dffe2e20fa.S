@@ -37,10 +37,10 @@ func0000000000000006:
 
 func000000000000002a:
 	sext.w	a0, a0
-	negw	a1, a1
 	sgtz	a0, a0
 	neg	a0, a0
 	and	a0, a0, a1
+	negw	a0, a0
 	ret
 
 func000000000000000a:
@@ -81,11 +81,12 @@ func000000000000006a:
 	ret
 
 func0000000000000026:
-	sext.w	a2, a0
-	li	a0, 1
-	bgtz	a2, .LBB9_2
-	subw	a0, a0, a1
-.LBB9_2:
+	sext.w	a0, a0
+	slti	a0, a0, 1
+	neg	a0, a0
+	and	a0, a0, a1
+	li	a1, 1
+	subw	a0, a1, a0
 	ret
 
 func0000000000000074:
@@ -101,10 +102,10 @@ func0000000000000074:
 
 func0000000000000024:
 	sext.w	a0, a0
-	negw	a1, a1
 	sltiu	a0, a0, 2
 	neg	a0, a0
 	and	a0, a0, a1
+	negw	a0, a0
 	ret
 
 func0000000000000004:

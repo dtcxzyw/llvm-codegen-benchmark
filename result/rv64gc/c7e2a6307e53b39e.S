@@ -17,21 +17,18 @@ func0000000000000024:
 
 func0000000000000021:
 	sext.w	a1, a0
-	li	a2, 127
-	bne	a1, a2, .LBB2_2
-	li	a0, 1
-	ret
-.LBB2_2:
+	addi	a1, a1, -127
+	seqz	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
 func000000000000000a:
 	sext.w	a1, a0
-	li	a2, 126
-	bge	a2, a1, .LBB3_2
-	li	a0, 1
-	ret
-.LBB3_2:
+	slti	a1, a1, 127
+	neg	a1, a1
+	and	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 

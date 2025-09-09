@@ -1,10 +1,9 @@
 func0000000000000046:
 	sext.w	a1, a0
-	bset	a0, zero, a0
+	zext.w	a0, a0
 	slti	a1, a1, 32
-	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000054:
@@ -27,11 +26,10 @@ func000000000000000a:
 
 func0000000000000044:
 	sext.w	a1, a0
-	bset	a0, zero, a0
+	zext.w	a0, a0
 	sltiu	a1, a1, 32
-	addi	a0, a0, -1
 	czero.eqz	a0, a0, a1
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func000000000000004a:

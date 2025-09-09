@@ -1,8 +1,7 @@
 func000000000000002c:
 	sext.w	a1, a1
-	snez	a1, a1
-	addi	a1, a1, -1
-	orn	a1, a1, a2
+	czero.eqz	a1, a2, a1
+	not	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -16,9 +15,8 @@ func000000000000002a:
 
 func0000000000000021:
 	sext.w	a1, a1
-	snez	a1, a1
-	addi	a1, a1, -1
-	orn	a1, a1, a2
+	czero.eqz	a1, a2, a1
+	not	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

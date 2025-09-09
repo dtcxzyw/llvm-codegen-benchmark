@@ -21,11 +21,9 @@ func0000000000000002:
 
 func0000000000000009:
 	zext.b	a1, a1
-	li	a2, 16
-	bgeu	a1, a2, .LBB2_2
-	li	a0, 8
-	ret
-.LBB2_2:
+	sltiu	a1, a1, 16
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	ori	a0, a0, 8
 	ret
 

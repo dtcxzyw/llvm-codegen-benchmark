@@ -3,9 +3,9 @@ func00000000000000b4:
 	li	a1, -1
 	sll	a1, a1, a0
 	sltiu	a0, a0, 64
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func00000000000000e4:
@@ -13,9 +13,9 @@ func00000000000000e4:
 	li	a1, 1
 	sll	a1, a1, a0
 	sltiu	a0, a0, 32
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func00000000000000a4:
@@ -23,9 +23,9 @@ func00000000000000a4:
 	li	a1, -1
 	sll	a1, a1, a0
 	sltiu	a0, a0, 64
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 
 func0000000000000024:
@@ -33,8 +33,8 @@ func0000000000000024:
 	li	a1, -1
 	sll	a1, a1, a0
 	sltiu	a0, a0, 64
-	not	a1, a1
-	addi	a0, a0, -1
-	or	a0, a0, a1
+	neg	a0, a0
+	and	a0, a0, a1
+	not	a0, a0
 	ret
 

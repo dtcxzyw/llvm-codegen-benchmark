@@ -16,9 +16,7 @@ func00000000000001a1:
 func0000000000000001:
 	zext.b	a0, a0
 	slli	a1, a1, 3
-	addiw	a1, a1, 42
-	addi	a1, a1, -42
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 42
+	addiw	a0, a0, 42
 	ret
 

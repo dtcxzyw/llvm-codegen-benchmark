@@ -1,9 +1,7 @@
 func0000000000000084:
-	bnez	a2, .LBB0_2
-	li	a1, 1
-	sltu	a0, a0, a1
-	ret
-.LBB0_2:
+	seqz	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -42,12 +40,9 @@ func0000000000000208:
 	ret
 
 func00000000000000c1:
-	bnez	a2, .LBB4_2
-	li	a1, 1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-.LBB4_2:
+	seqz	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
 	addi	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

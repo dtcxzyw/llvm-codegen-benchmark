@@ -9,11 +9,10 @@ func0000000000000061:
 
 func0000000000000021:
 	sext.w	a0, a0
-	bnez	a0, .LBB1_2
-	li	a0, 1
-	ret
-.LBB1_2:
-	addi	a0, a1, 1
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 1
 	ret
 
 func0000000000000034:
@@ -52,10 +51,10 @@ func0000000000000001:
 
 func000000000000002c:
 	sext.w	a0, a0
-	addi	a1, a1, -1
-	seqz	a0, a0
+	snez	a0, a0
 	addi	a0, a0, -1
-	or	a0, a0, a1
+	and	a0, a0, a1
+	addi	a0, a0, -1
 	ret
 
 func0000000000000074:
@@ -79,10 +78,9 @@ func000000000000006c:
 
 func000000000000000c:
 	sext.w	a0, a0
-	beqz	a0, .LBB9_2
-	li	a0, 32
-	ret
-.LBB9_2:
-	addi	a0, a1, 32
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 

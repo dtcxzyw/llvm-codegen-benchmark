@@ -40,16 +40,12 @@ func0000000000000026:
 	ret
 
 func0000000000000045:
-	andi	a1, a1, 1
 	sext.w	a0, a0
-	bnez	a1, .LBB4_2
-	addiw	a2, a2, 5
-	sltu	a0, a2, a0
-	xori	a0, a0, 1
-	ret
-.LBB4_2:
-	li	a2, 5
-	sltu	a0, a2, a0
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	addiw	a1, a1, 5
+	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 

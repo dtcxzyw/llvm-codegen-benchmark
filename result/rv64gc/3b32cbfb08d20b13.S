@@ -32,14 +32,11 @@ func0000000000000087:
 
 func0000000000000193:
 	sext.w	a1, a1
-	li	a3, 2
-	bgeu	a1, a3, .LBB3_2
-	li	a2, 16
-	add	a0, a0, a2
-	ret
-.LBB3_2:
-	addi	a2, a2, 16
-	add	a0, a0, a2
+	sltiu	a1, a1, 2
+	addi	a1, a1, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 16
 	ret
 
 func00000000000001b0:
@@ -57,12 +54,10 @@ func00000000000001b0:
 
 func0000000000000032:
 	sext.w	a1, a1
-	beqz	a1, .LBB5_2
-	li	a1, 32
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a1, a1, a2
 	add	a0, a0, a1
-	ret
-.LBB5_2:
-	addi	a1, a2, 32
-	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 

@@ -26,12 +26,10 @@ func0000000000000003:
 
 func0000000000000002:
 	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	slli	a1, a1, 33
-	srli	a0, a1, 33
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	slli	a0, a0, 33
+	srli	a0, a0, 33
 	addiw	a0, a0, 5
-	ret
-.LBB3_2:
-	li	a0, 5
 	ret
 

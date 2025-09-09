@@ -9,12 +9,9 @@ func0000000000000007:
 func0000000000000005:
 	andi	a0, a0, 1
 	slliw	a1, a1, 26
-	lui	a2, 64
-	addi	a2, a2, 34
-	or	a1, a1, a2
-	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	ori	a0, a0, 34
+	bseti	a0, a0, 18
 	ret
 
 func0000000000000003:

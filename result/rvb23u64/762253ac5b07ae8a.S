@@ -15,11 +15,10 @@ func0000000000000061:
 
 func0000000000000046:
 	sext.b	a0, a0
-	bset	a1, zero, a1
+	zext.w	a1, a1
 	slti	a0, a0, 6
-	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
 	ret
 
 func0000000000000021:

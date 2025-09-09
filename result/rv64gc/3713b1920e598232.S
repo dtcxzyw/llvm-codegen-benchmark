@@ -1,4 +1,5 @@
 func000000000000001d:
+	andi	a0, a0, 1
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -27,21 +28,19 @@ func000000000000001d:
 	lui	a2, 4112
 	addi	a3, a3, -241
 	and	a1, a1, a3
-	li	a3, -1
-	slli	a0, a0, 63
+	li	a3, 32
 	addi	a2, a2, 257
+	addi	a0, a0, -1
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	neg	a1, a1
-	sllw	a1, a3, a1
-	srai	a0, a0, 63
-	or	a0, a0, a1
+	sub	a3, a3, a1
+	and	a0, a0, a3
+	li	a1, -1
+	sllw	a0, a1, a0
 	ret
 
 func000000000000001e:
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB1_2
+	andi	a0, a0, 1
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -70,18 +69,19 @@ func000000000000001e:
 	lui	a2, 4112
 	addi	a3, a3, -241
 	and	a1, a1, a3
+	li	a3, 32
 	addi	a2, a2, 257
+	addi	a0, a0, -1
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	neg	a1, a1
-	sllw	a0, a0, a1
-.LBB1_2:
+	sub	a3, a3, a1
+	and	a0, a0, a3
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 
 func000000000000001f:
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB2_2
+	andi	a0, a0, 1
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -110,11 +110,14 @@ func000000000000001f:
 	lui	a2, 4112
 	addi	a3, a3, -241
 	and	a1, a1, a3
+	li	a3, 32
 	addi	a2, a2, 257
+	addi	a0, a0, -1
 	mul	a1, a1, a2
 	srli	a1, a1, 24
-	neg	a1, a1
-	sllw	a0, a0, a1
-.LBB2_2:
+	sub	a3, a3, a1
+	and	a0, a0, a3
+	li	a1, 1
+	sllw	a0, a1, a0
 	ret
 

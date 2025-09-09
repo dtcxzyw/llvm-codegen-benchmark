@@ -1,19 +1,16 @@
 func0000000000000021:
-	andi	a1, a1, 8
-	bnez	a1, .LBB0_2
-	li	a0, 1
-	ret
-.LBB0_2:
-	addi	a0, a0, 1
+	slli	a1, a1, 60
+	srai	a1, a1, 63
+	and	a0, a0, a1
+	ori	a0, a0, 1
 	ret
 
 func0000000000000001:
-	mv	a2, a0
-	andi	a1, a1, 128
-	lui	a0, 11
-	addi	a0, a0, 1023
-	beqz	a1, .LBB1_2
-	or	a0, a0, a2
-.LBB1_2:
+	slli	a1, a1, 56
+	srai	a1, a1, 63
+	and	a0, a0, a1
+	lui	a1, 11
+	addi	a1, a1, 1023
+	or	a0, a0, a1
 	ret
 

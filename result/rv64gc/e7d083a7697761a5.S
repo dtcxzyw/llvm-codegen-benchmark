@@ -1,10 +1,10 @@
 func0000000000000009:
+	andi	a0, a0, 1
 	li	a2, 2
-	slli	a0, a0, 63
 	sll	a1, a2, a1
-	addi	a1, a1, -1
-	srai	a0, a0, 63
-	or	a0, a0, a1
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addi	a0, a0, -1
 	ret
 
 func0000000000000005:

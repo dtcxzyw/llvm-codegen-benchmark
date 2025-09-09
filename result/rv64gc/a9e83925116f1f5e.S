@@ -47,13 +47,9 @@ func0000000000000053:
 
 func0000000000000030:
 	sext.w	a1, a1
-	li	a2, 26
-	bge	a1, a2, .LBB5_2
-	li	a0, 1
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	ret
-.LBB5_2:
+	slti	a1, a1, 26
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

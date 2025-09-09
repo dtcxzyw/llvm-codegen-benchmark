@@ -1,10 +1,8 @@
 func000000000000000f:
 	andi	a0, a0, 1
 	slli	a1, a1, 3
-	addiw	a1, a1, 24
-	addi	a1, a1, -24
 	czero.eqz	a0, a1, a0
-	addi	a0, a0, 24
+	addiw	a0, a0, 24
 	ret
 
 func0000000000000000:

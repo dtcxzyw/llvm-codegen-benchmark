@@ -10,10 +10,9 @@ func000000000000000f:
 
 func0000000000000006:
 	andi	a1, a1, 1
-	andi	a2, a0, 63
-	neg	a2, a2
 	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a1, a1, a0
+	andi	a1, a1, 63
+	sub	a0, a0, a1
 	ret
 

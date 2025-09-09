@@ -1,11 +1,9 @@
 func0000000000000007:
 	andi	a0, a0, 1
-	bnez	a0, .LBB0_2
-	slli	a0, a1, 3
+	slli	a1, a1, 3
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	addiw	a0, a0, -8
-	ret
-.LBB0_2:
-	li	a0, -8
 	ret
 
 func000000000000000f:
@@ -44,11 +42,9 @@ func0000000000000003:
 
 func000000000000000e:
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
 	slli	a1, a1, 1
-	addiw	a0, a1, 256
-	ret
-.LBB5_2:
-	li	a0, 256
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	addiw	a0, a0, 256
 	ret
 

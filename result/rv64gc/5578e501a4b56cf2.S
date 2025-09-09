@@ -1,9 +1,9 @@
 func0000000000000c98:
-	li	a4, 4
-	li	a3, 5
-	bgeu	a1, a4, .LBB0_2
-	sub	a3, a3, a2
-.LBB0_2:
-	sltu	a0, a0, a3
+	sltiu	a1, a1, 4
+	neg	a1, a1
+	and	a1, a1, a2
+	li	a2, 5
+	sub	a2, a2, a1
+	sltu	a0, a0, a2
 	ret
 

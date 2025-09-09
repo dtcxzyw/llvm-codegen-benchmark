@@ -3,20 +3,16 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	andi	a1, a1, 1
-	bnez	a1, .LBB1_2
-	li	a0, 1
-	ret
-.LBB1_2:
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func000000000000000b:
-	andi	a1, a1, 1
-	bnez	a1, .LBB2_2
-	li	a0, 1
-	ret
-.LBB2_2:
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
