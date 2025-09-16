@@ -7,7 +7,7 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	srliw	a1, a1, 31
+	sraiw	a1, a1, 31
 	seqz	a1, a1
 	addi	a1, a1, -1
 	or	a0, a0, a1
@@ -38,7 +38,7 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

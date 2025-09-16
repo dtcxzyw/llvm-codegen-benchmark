@@ -20,8 +20,8 @@ func0000000000000006:
 	retq
 
 func0000000000000016:
-	movzbl	%dl, %eax
 	shlq	$12, %rsi
+	movzbl	%dl, %eax
 	shll	$4, %eax
 	orq	%rsi, %rax
 	addq	%rdi, %rax

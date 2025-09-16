@@ -20,8 +20,8 @@ func000000000000004c:
 
 func0000000000000061:
 	sh1add	a0, a0, a0
-	srli	a0, a0, 1
-	slli	a0, a0, 34
+	slli	a0, a0, 33
+	srai	a0, a0, 34
 	seqz	a0, a0
 	ret
 

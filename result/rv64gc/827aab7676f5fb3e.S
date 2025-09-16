@@ -1,16 +1,11 @@
 func0000000000000004:
-	sext.w	a3, a2
-	sext.w	a2, a0
-	bgeu	a2, a3, .LBB0_3
-	li	a3, 258
-	bgeu	a1, a3, .LBB0_4
+	sext.w	a0, a0
+	sltiu	a1, a1, 258
+	addi	a1, a1, -1
+	or	a1, a1, a2
+	sext.w	a1, a1
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
-	mv	a0, a2
-	ret
-.LBB0_3:
-	mv	a2, a3
-	li	a3, 258
-	bltu	a1, a3, .LBB0_2
-.LBB0_4:
 	ret
 

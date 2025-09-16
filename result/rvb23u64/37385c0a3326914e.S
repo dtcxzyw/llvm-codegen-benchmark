@@ -38,8 +38,8 @@ func0000000000000004:
 	ld	a1, %lo(.LCPI3_0)(a1)
 	srli	a0, a0, 9
 	mulhu	a0, a0, a1
-	srli	a0, a0, 12
-	slli	a0, a0, 33
+	srli	a0, a0, 11
+	sraiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

@@ -6,7 +6,7 @@ func0000000000000001:
 
 func0000000000000004:
 	sub	a0, a0, a1
-	srliw	a0, a0, 30
+	sraiw	a0, a0, 30
 	seqz	a0, a0
 	ret
 

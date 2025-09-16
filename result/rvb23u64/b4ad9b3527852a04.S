@@ -11,11 +11,9 @@ func0000000000000008:
 
 func0000000000000010:
 	bseti	a3, zero, 63
-	maxu	a1, a1, a0
 	sltu	a2, a3, a2
 	czero.eqz	a1, a1, a2
-	czero.nez	a0, a0, a2
-	or	a0, a0, a1
+	maxu	a0, a0, a1
 	ret
 
 func0000000000000028:

@@ -14,7 +14,8 @@ func00000000000004ca:
 
 func000000000000008c:
 	subs	x8, x1, x2
-	ccmp	x8, x0, #2, ne
-	cset	w0, lo
+	cset	w9, ne
+	cmp	x8, x0
+	csel	w0, wzr, w9, hs
 	ret
 

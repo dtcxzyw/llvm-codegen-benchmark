@@ -1,6 +1,7 @@
 func0000000000000210:
 	subs	w8, w1, w0
-	ccmp	w2, w8, #2, hs
-	cset	w0, hi
+	cset	w9, lo
+	cmp	w2, w8
+	csinc	w0, w9, wzr, ls
 	ret
 

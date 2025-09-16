@@ -1,11 +1,11 @@
 .LCPI0_0:
-	.quad	18
-.LCPI0_1:
 	.quad	36
+.LCPI0_1:
+	.quad	18
 func000000000000000f:
-	vpmovzxwq	%xmm0, %ymm0
-	vpmuldq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
+	vpmovzxwq	%xmm0, %ymm1
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0
+	vpmadd52luq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -19,13 +19,13 @@ func0000000000000000:
 	retq
 
 .LCPI2_0:
-	.quad	40
-.LCPI2_1:
 	.quad	-40
+.LCPI2_1:
+	.quad	40
 func000000000000000d:
-	vpmovzxwq	%xmm0, %ymm0
-	vpmuldq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
+	vpmovzxwq	%xmm0, %ymm1
+	vpbroadcastq	.LCPI2_0(%rip), %ymm0
+	vpmadd52luq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

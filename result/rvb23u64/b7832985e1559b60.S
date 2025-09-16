@@ -7,7 +7,7 @@ func0000000000000021:
 
 func0000000000000188:
 	bexti	a1, a0, 32
-	srliw	a0, a0, 1
+	sraiw	a0, a0, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -60,19 +60,16 @@ func000000000000014c:
 	ret
 
 func0000000000000081:
-	lui	a1, 65535
-	slli	a2, a0, 48
-	slli	a1, a1, 4
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	snez	a0, a0
-	seqz	a1, a2
+	sraiw	a1, a0, 16
+	slli	a0, a0, 48
+	sltiu	a1, a1, -1
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000184:
 	lui	a1, 65535
-	srliw	a2, a0, 16
+	sraiw	a2, a0, 16
 	slli	a1, a1, 20
 	and	a0, a0, a1
 	xor	a0, a0, a1

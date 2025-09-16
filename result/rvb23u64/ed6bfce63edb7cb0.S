@@ -35,9 +35,8 @@ func0000000000000021:
 
 func0000000000000081:
 	sext.w	a0, a0
-	srliw	a1, a1, 1
-	slli	a1, a1, 1
-	addi	a1, a1, -2
+	sraiw	a1, a1, 1
+	addi	a1, a1, -1
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

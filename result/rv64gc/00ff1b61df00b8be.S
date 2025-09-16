@@ -11,16 +11,12 @@ func0000000000000014:
 	ret
 
 func0000000000000028:
-	srli	a3, a2, 16
-	mv	a2, a0
-	bgeu	a0, a1, .LBB1_3
-	bnez	a3, .LBB1_4
+	srli	a2, a2, 16
+	seqz	a2, a2
+	addi	a2, a2, -1
+	or	a1, a1, a2
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
 .LBB1_2:
-	mv	a0, a2
-	ret
-.LBB1_3:
-	mv	a2, a1
-	beqz	a3, .LBB1_2
-.LBB1_4:
 	ret
 

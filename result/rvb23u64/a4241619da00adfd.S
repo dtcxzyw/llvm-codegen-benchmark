@@ -16,7 +16,7 @@ func000000000000002c:
 
 func0000000000000028:
 	slli	a1, a1, 48
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	srli	a1, a1, 58
 	addi	a1, a1, -55
 	seqz	a1, a1

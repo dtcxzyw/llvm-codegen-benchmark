@@ -79,7 +79,7 @@ func000000000000010c:
 	ret
 
 func0000000000000181:
-	srliw	a2, a2, 30
+	sraiw	a2, a2, 30
 	xor	a0, a0, a1
 	seqz	a1, a2
 	snez	a0, a0

@@ -75,7 +75,7 @@ func0000000000000084:
 	ret
 
 func0000000000000104:
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	sext.w	a0, a0
 	snez	a1, a1
 	sltiu	a0, a0, 24

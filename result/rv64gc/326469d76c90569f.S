@@ -7,8 +7,8 @@ func00000000000001f4:
 	srli	a0, a0, 48
 	mulhu	a1, a0, a1
 	slli	a2, a1, 3
+	sub	a1, a1, a2
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	sltiu	a1, a0, 6
 	addi	a0, a0, 1
 	neg	a1, a1

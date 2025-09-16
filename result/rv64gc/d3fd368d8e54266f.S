@@ -13,8 +13,8 @@ func0000000000000003:
 	lui	a2, 1
 	addi	a2, a2, -8
 .LBB1_2:
-	or	a0, a0, a2
 	lui	a1, 6
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

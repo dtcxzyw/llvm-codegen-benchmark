@@ -91,17 +91,17 @@ func0000000000000035:
 	mul	a1, a1, a2
 	srli	a1, a1, 56
 	slli	a1, a1, 52
-	li	a2, 511
-	slli	a2, a2, 53
-	add	a0, a0, a2
 	sub	a0, a0, a1
+	li	a1, 511
+	slli	a1, a1, 53
+	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 64
 	slli	a1, a1, 52
-	li	a2, 511
-	slli	a2, a2, 53
-	add	a0, a0, a2
 	sub	a0, a0, a1
+	li	a1, 511
+	slli	a1, a1, 53
+	add	a0, a0, a1
 	ret
 

@@ -24,7 +24,7 @@ func0000000000000361:
 	add	a1, a1, a2
 	srli	a0, a0, 48
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 

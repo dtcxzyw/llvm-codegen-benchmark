@@ -20,8 +20,7 @@ func0000000000000015:
 	.quad	19
 func000000000000003d:
 	vpsrlq	$25, %ymm2, %ymm2
-	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

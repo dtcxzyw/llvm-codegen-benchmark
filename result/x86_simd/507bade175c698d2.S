@@ -29,8 +29,7 @@ func0000000000000195:
 func00000000000001bd:
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpsrlq	$25, %ymm2, %ymm2
-	vpmullq	.LCPI2_1(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpmadd52luq	.LCPI2_1(%rip){1to4}, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

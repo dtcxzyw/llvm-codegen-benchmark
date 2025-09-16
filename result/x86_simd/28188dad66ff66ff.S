@@ -88,8 +88,7 @@ func000000000000001a:
 	.quad	4069
 func000000000000001f:
 	vpsrlq	$32, %ymm1, %ymm1
-	vpmuludq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI12_0:
@@ -100,10 +99,10 @@ func000000000000001c:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+.LCPI13_0:
+	.quad	3
 func000000000000000e:
 	vpsrlq	$16, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm1, %ymm2
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
+	vpmadd52luq	.LCPI13_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

@@ -21,7 +21,7 @@ func0000000000000021:
 
 func0000000000000181:
 	slli	a1, a1, 62
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1

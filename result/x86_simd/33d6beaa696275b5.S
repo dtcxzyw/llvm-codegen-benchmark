@@ -14,9 +14,8 @@ func0000000000000055:
 func0000000000000075:
 	vpmovzxdq	%xmm1, %ymm1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
-	vpmuludq	%ymm2, %ymm1, %ymm1
+	vpmadd52luq	%ymm2, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:
@@ -25,8 +24,7 @@ func0000000000000075:
 	.quad	68
 func0000000000000070:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 

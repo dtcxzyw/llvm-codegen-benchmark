@@ -8,7 +8,7 @@ func0000000000000318:
 	ret
 
 func0000000000000208:
-	srliw	a2, a2, 24
+	sraiw	a2, a2, 24
 	srliw	a0, a0, 24
 	seqz	a2, a2
 	or	a1, a1, a2

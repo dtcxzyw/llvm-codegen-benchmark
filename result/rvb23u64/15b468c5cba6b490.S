@@ -1,6 +1,6 @@
 func000000000000000c:
 	sub	a1, a1, a2
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

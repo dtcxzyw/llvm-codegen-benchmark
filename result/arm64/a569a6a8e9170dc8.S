@@ -1,7 +1,8 @@
 func0000000000000042:
 	subs	w8, w0, w1
-	ccmn	w8, #1, #4, ne
-	cset	w0, eq
+	cset	w9, eq
+	cmn	w8, #1
+	csinc	w0, w9, wzr, ne
 	ret
 
 func0000000000000182:
@@ -12,25 +13,29 @@ func0000000000000182:
 
 func0000000000000202:
 	subs	w8, w0, w1
-	ccmp	w8, #3, #2, ne
-	cset	w0, hi
+	cset	w9, eq
+	cmp	w8, #3
+	csinc	w0, w9, wzr, ls
 	ret
 
 func0000000000000110:
 	subs	w8, w1, w0
-	ccmp	w8, #3, #0, hs
-	cset	w0, lo
+	cset	w9, lo
+	cmp	w8, #3
+	csinc	w0, w9, wzr, hs
 	ret
 
 func000000000000010a:
 	subs	w8, w0, w1
-	ccmp	w8, #3, #0, hi
-	cset	w0, lo
+	cset	w9, ls
+	cmp	w8, #3
+	csinc	w0, w9, wzr, hs
 	ret
 
 func0000000000000112:
 	subs	w8, w1, w0
-	ccmp	w8, #3, #0, hi
-	cset	w0, lo
+	cset	w9, ls
+	cmp	w8, #3
+	csinc	w0, w9, wzr, hs
 	ret
 

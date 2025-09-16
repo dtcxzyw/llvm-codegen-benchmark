@@ -3,8 +3,7 @@
 func000000000000007d:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -21,8 +20,7 @@ func000000000000002f:
 func000000000000000c:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 func000000000000002a:
@@ -38,7 +36,6 @@ func000000000000002a:
 func000000000000007f:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

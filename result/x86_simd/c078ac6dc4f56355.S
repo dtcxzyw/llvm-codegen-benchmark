@@ -58,7 +58,6 @@ func000000000000001c:
 	.quad	10033
 func0000000000000005:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

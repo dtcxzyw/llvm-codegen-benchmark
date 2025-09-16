@@ -21,9 +21,10 @@ func0000000000000004:
 	ret
 
 func0000000000000099:
-	sraiw	a2, a1, 31
-	or	a1, a1, a2
-	not	a1, a1
+	not	a2, a1
+	srliw	a1, a1, 31
+	addi	a1, a1, -1
+	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

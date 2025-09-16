@@ -51,56 +51,55 @@ func0000000000000005:
 .LCPI1_0:
 	.quad	3294967296
 func000000000000000f:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrq	$1, %xmm1, %rax
+	vpextrq	$1, %xmm0, %rax
 	movq	%rax, %rdx
 	shrq	$18, %rdx
 	movabsq	$81129638414607, %r8
-	mulxq	%r8, %rsi, %rsi
-	shrl	$24, %esi
-	vmovq	%xmm1, %rcx
-	movq	%rcx, %rdx
-	shrq	$18, %rdx
-	mulxq	%r8, %rdx, %rdx
-	vmovd	%edx, %xmm1
-	vpsrld	$24, %xmm1, %xmm1
-	vpinsrd	$2, %esi, %xmm1, %xmm1
-	vpextrq	$1, %xmm0, %rsi
+	mulxq	%r8, %rcx, %rcx
+	vmovd	%ecx, %xmm1
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rsi
 	movq	%rsi, %rdx
 	shrq	$18, %rdx
-	mulxq	%r8, %r9, %r9
-	shrl	$24, %r9d
-	vmovq	%xmm0, %rdi
-	movq	%rdi, %rdx
+	mulxq	%r8, %rcx, %rcx
+	vmovd	%ecx, %xmm3
+	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vpsrld	$24, %ymm1, %ymm1
+	vmovq	%xmm0, %rcx
+	movq	%rcx, %rdx
 	shrq	$18, %rdx
 	mulxq	%r8, %rdx, %rdx
 	vmovd	%edx, %xmm0
-	vpsrld	$24, %xmm0, %xmm0
-	vpinsrd	$2, %r9d, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpmuludq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
-	shrq	$9, %rax
+	vmovq	%xmm2, %rdi
+	movq	%rdi, %rdx
+	shrq	$18, %rdx
+	mulxq	%r8, %rdx, %rdx
+	vmovd	%edx, %xmm2
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpsrld	$24, %ymm0, %ymm0
+	vpunpcklqdq	%ymm1, %ymm0, %ymm1
+	shrq	$9, %rsi
 	movabsq	$19342813113834067, %r8
+	movq	%rsi, %rdx
+	mulxq	%r8, %rdx, %rdx
+	vmovq	%rdx, %xmm0
+	shrq	$9, %rdi
+	movq	%rdi, %rdx
+	mulxq	%r8, %rdx, %rdx
+	vmovq	%rdx, %xmm2
+	vpunpcklqdq	%xmm0, %xmm2, %xmm0
+	shrq	$9, %rax
 	movq	%rax, %rdx
 	mulxq	%r8, %rax, %rax
-	vmovq	%rax, %xmm1
+	vmovq	%rax, %xmm2
 	shrq	$9, %rcx
 	movq	%rcx, %rdx
 	mulxq	%r8, %rax, %rax
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1
-	shrq	$9, %rsi
-	movq	%rsi, %rdx
-	mulxq	%r8, %rax, %rax
-	vmovq	%rax, %xmm2
-	shrq	$9, %rdi
-	movq	%rdi, %rdx
-	mulxq	%r8, %rax, %rax
 	vmovq	%rax, %xmm3
 	vpunpcklqdq	%xmm2, %xmm3, %xmm2
-	vinserti128	$1, %xmm1, %ymm2, %ymm1
-	vpsrlq	$11, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vinserti128	$1, %xmm0, %ymm2, %ymm0
+	vpsrlq	$11, %ymm0, %ymm0
+	vpmadd52luq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:

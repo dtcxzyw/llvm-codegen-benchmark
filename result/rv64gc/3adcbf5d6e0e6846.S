@@ -1,5 +1,5 @@
 func0000000000000010:
-	srliw	a1, a1, 15
+	sraiw	a1, a1, 15
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -49,13 +49,13 @@ func0000000000000094:
 	ret
 
 func0000000000000030:
-	srliw	a1, a1, 5
+	sraiw	a1, a1, 5
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000028:
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

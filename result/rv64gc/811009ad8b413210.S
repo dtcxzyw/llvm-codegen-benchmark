@@ -26,7 +26,7 @@ func000000000000000c:
 
 func000000000000000a:
 	sra	a0, a0, a1
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 

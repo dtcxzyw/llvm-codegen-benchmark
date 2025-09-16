@@ -36,7 +36,7 @@ func0000000000000041:
 
 func000000000000008c:
 	srl	a0, a0, a1
-	srliw	a0, a0, 1
+	sraiw	a0, a0, 1
 	snez	a0, a0
 	ret
 

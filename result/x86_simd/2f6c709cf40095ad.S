@@ -2,8 +2,7 @@
 	.quad	24
 func000000000000000c:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -34,40 +33,35 @@ func0000000000000015:
 	.quad	136657
 func000000000000001f:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:
 	.quad	136657
 func000000000000001d:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI6_0:
 	.quad	10
 func000000000000000f:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:
 	.quad	376
 func000000000000001c:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI8_0:
 	.quad	1000
 func000000000000000d:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI9_0:
@@ -88,8 +82,7 @@ func0000000000000014:
 	.quad	40
 func000000000000000e:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI12_0:
@@ -136,7 +129,6 @@ func0000000000000008:
 	.quad	1000
 func000000000000001e:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI15_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI15_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

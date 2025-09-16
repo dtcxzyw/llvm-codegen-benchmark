@@ -23,7 +23,7 @@ func0000000000000001:
 func000000000000020a:
 	sub	a1, a1, a2
 	minu	a0, a1, a0
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 

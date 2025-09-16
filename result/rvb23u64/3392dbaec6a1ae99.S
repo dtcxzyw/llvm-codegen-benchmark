@@ -57,7 +57,7 @@ func000000000000008c:
 func0000000000000008:
 	andi	a1, a1, 1
 	add	a0, a0, a1
-	srliw	a0, a0, 30
+	sraiw	a0, a0, 30
 	snez	a0, a0
 	ret
 
@@ -71,7 +71,7 @@ func000000000000000a:
 func0000000000000018:
 	andi	a1, a1, 1
 	add	a0, a0, a1
-	srliw	a0, a0, 15
+	sraiw	a0, a0, 15
 	snez	a0, a0
 	ret
 

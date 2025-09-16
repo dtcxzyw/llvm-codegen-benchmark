@@ -31,7 +31,7 @@ func000000000000020a:
 	bltu	a1, a0, .LBB3_2
 	mv	a1, a0
 .LBB3_2:
-	srliw	a0, a1, 31
+	sraiw	a0, a1, 31
 	seqz	a0, a0
 	ret
 

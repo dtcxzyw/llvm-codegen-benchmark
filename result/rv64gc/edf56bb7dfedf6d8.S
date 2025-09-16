@@ -66,7 +66,7 @@ func0000000000003008:
 	sext.w	a1, a1
 	snez	a1, a1
 	add	a0, a0, a1
-	srliw	a0, a0, 30
+	sraiw	a0, a0, 30
 	snez	a0, a0
 	ret
 
@@ -82,7 +82,7 @@ func0000000000003018:
 	sext.w	a1, a1
 	sltiu	a1, a1, -1
 	add	a0, a0, a1
-	srliw	a0, a0, 15
+	sraiw	a0, a0, 15
 	snez	a0, a0
 	ret
 

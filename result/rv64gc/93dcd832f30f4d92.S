@@ -7,7 +7,7 @@ func0000000000000014:
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 

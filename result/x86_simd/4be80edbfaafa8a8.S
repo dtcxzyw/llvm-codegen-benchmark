@@ -4,8 +4,7 @@
 	.quad	666643
 func000000000000003d:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpmuldq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpmadd52luq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
@@ -23,8 +22,9 @@ func0000000000000015:
 .LCPI2_0:
 	.quad	24
 func0000000000000030:
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

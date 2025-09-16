@@ -28,7 +28,8 @@ func0000000000000566:
 
 func0000000000000081:
 	subs	x8, x1, x2
-	ccmp	x8, x0, #0, ne
-	cset	w0, lo
+	cset	w9, eq
+	cmp	x8, x0
+	csinc	w0, w9, wzr, hs
 	ret
 

@@ -1,44 +1,44 @@
 func0000000000000026:
-	li	a3, -1
-	srli	a3, a3, 4
-	mv	a2, a0
-	bgeu	a0, a3, .LBB0_4
-	slli	a2, a2, 1
-	bgeu	a2, a3, .LBB0_5
+	li	a2, -1
+	srli	a2, a2, 4
+	mv	a3, a0
+	bgeu	a0, a2, .LBB0_3
+	sltu	a0, a0, a1
+	slli	a3, a3, 1
+	neg	a0, a0
+	or	a0, a0, a3
+	bgeu	a0, a2, .LBB0_4
 .LBB0_2:
-	bltu	a0, a1, .LBB0_6
-.LBB0_3:
-	mv	a0, a2
 	ret
+.LBB0_3:
+	sltu	a0, a0, a1
+	slli	a3, a2, 1
+	neg	a0, a0
+	or	a0, a0, a3
+	bltu	a0, a2, .LBB0_2
 .LBB0_4:
-	slli	a2, a3, 1
-	bltu	a2, a3, .LBB0_2
-.LBB0_5:
-	mv	a2, a3
-	bgeu	a0, a1, .LBB0_3
-.LBB0_6:
-	mv	a0, a3
+	mv	a0, a2
 	ret
 
 func0000000000000024:
-	li	a3, -1
-	srli	a3, a3, 1
-	mv	a2, a0
-	bgeu	a0, a3, .LBB1_4
-	slli	a2, a2, 1
-	bgeu	a2, a3, .LBB1_5
+	li	a2, -1
+	srli	a2, a2, 1
+	mv	a3, a0
+	bgeu	a0, a2, .LBB1_3
+	sltu	a0, a0, a1
+	slli	a3, a3, 1
+	neg	a0, a0
+	or	a0, a0, a3
+	bgeu	a0, a2, .LBB1_4
 .LBB1_2:
-	bltu	a0, a1, .LBB1_6
-.LBB1_3:
-	mv	a0, a2
 	ret
+.LBB1_3:
+	sltu	a0, a0, a1
+	slli	a3, a2, 1
+	neg	a0, a0
+	or	a0, a0, a3
+	bltu	a0, a2, .LBB1_2
 .LBB1_4:
-	slli	a2, a3, 1
-	bltu	a2, a3, .LBB1_2
-.LBB1_5:
-	mv	a2, a3
-	bgeu	a0, a1, .LBB1_3
-.LBB1_6:
-	mv	a0, a3
+	mv	a0, a2
 	ret
 

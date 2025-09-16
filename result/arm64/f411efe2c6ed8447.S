@@ -1,7 +1,8 @@
 func000000000000092c:
 	subs	x8, x1, x2
-	ccmp	x8, x0, #0, ne
-	cset	w0, hs
+	cset	w9, ne
+	cmp	x8, x0
+	csel	w0, wzr, w9, lo
 	ret
 
 func0000000000000128:

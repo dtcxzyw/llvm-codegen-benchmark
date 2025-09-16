@@ -1,5 +1,5 @@
 func0000000000000008:
-	srliw	a0, a0, 7
+	sraiw	a0, a0, 7
 	snez	a0, a0
 	ret
 

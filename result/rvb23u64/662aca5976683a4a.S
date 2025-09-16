@@ -39,7 +39,7 @@ func0000000000000288:
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 1
+	sraiw	a0, a0, 1
 	snez	a0, a0
 	ret
 
@@ -51,7 +51,7 @@ func0000000000000294:
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 

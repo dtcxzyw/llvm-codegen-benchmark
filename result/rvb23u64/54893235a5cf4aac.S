@@ -7,7 +7,7 @@ func0000000000000284:
 
 func0000000000001084:
 	addiw	a1, a1, -5
-	srliw	a0, a0, 6
+	sraiw	a0, a0, 6
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -23,7 +23,7 @@ func0000000000001088:
 
 func0000000000000088:
 	addiw	a1, a1, -35
-	srliw	a0, a0, 20
+	sraiw	a0, a0, 20
 	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1

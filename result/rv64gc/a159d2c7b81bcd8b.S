@@ -33,16 +33,16 @@ func0000000000000080:
 	li	a3, 2
 	bltu	a3, a2, .LBB3_2
 	li	a2, 64
-	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 .LBB3_2:
 	li	a2, 21
 	slli	a2, a2, 10
-	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000010:

@@ -6,7 +6,7 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	srli	a0, a0, 60
 	snez	a1, a1
 	snez	a0, a0

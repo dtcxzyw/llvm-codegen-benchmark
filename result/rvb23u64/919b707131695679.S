@@ -10,14 +10,14 @@ func0000000000000181:
 func0000000000000001:
 	sub	a0, a0, a1
 	addi	a0, a0, -4
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 
 func000000000000018c:
 	sub	a0, a0, a1
 	addi	a0, a0, -10
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	snez	a0, a0
 	ret
 

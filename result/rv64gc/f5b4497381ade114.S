@@ -21,10 +21,8 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	srliw	a1, a1, 23
-	slli	a1, a1, 23
-	lui	a2, 12288
-	xor	a1, a1, a2
+	sraiw	a1, a1, 23
+	addi	a1, a1, -6
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

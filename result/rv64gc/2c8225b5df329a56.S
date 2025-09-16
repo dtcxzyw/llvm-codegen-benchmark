@@ -44,7 +44,7 @@ func000000000000000a:
 func0000000000000004:
 	sub	a0, a0, a1
 	addi	a0, a0, -4
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 

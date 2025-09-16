@@ -9,7 +9,7 @@ func0000000000000021:
 func0000000000000304:
 	zext.w	a1, a0
 	lui	a2, 1
-	srliw	a0, a0, 12
+	sraiw	a0, a0, 12
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0

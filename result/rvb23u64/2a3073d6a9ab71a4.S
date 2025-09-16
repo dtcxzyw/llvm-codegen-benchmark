@@ -12,7 +12,7 @@ func00000000000001e1:
 	srli	a2, a2, 25
 	add	a0, a0, a1
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 

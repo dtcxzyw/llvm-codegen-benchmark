@@ -27,21 +27,14 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
-	li	a2, 16
-	bgeu	a2, a1, .LBB2_3
 	srliw	a0, a0, 25
-	li	a2, 3
-	bltu	a0, a2, .LBB2_4
-.LBB2_2:
-	mv	a0, a1
-	ret
-.LBB2_3:
+	sltiu	a0, a0, 3
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	sext.w	a0, a0
 	li	a1, 16
-	srliw	a0, a0, 25
-	li	a2, 3
-	bgeu	a0, a2, .LBB2_2
-.LBB2_4:
+	bltu	a1, a0, .LBB2_2
 	li	a0, 16
+.LBB2_2:
 	ret
 

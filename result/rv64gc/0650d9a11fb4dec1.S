@@ -1,8 +1,6 @@
 func0000000000000001:
-	srliw	a2, a2, 23
-	lui	a3, 40960
-	slli	a2, a2, 23
-	xor	a2, a2, a3
+	sraiw	a2, a2, 23
+	addi	a2, a2, -20
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

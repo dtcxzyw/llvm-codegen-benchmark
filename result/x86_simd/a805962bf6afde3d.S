@@ -123,31 +123,30 @@ func0000000000000005:
 .LCPI4_0:
 	.quad	3294967296
 func000000000000000f:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rdx
+	vpextrq	$1, %xmm1, %rdx
 	shrq	$18, %rdx
 	movabsq	$81129638414607, %rax
 	mulxq	%rax, %rcx, %rcx
-	shrl	$24, %ecx
-	vmovq	%xmm2, %rdx
-	shrq	$18, %rdx
-	mulxq	%rax, %rdx, %rdx
-	vmovd	%edx, %xmm2
-	vpsrld	$24, %xmm2, %xmm2
-	vpinsrd	$2, %ecx, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rdx
+	vmovd	%ecx, %xmm2
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rdx
 	shrq	$18, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrl	$24, %ecx
+	vmovd	%ecx, %xmm4
+	vinserti128	$1, %xmm4, %ymm2, %ymm2
+	vpsrld	$24, %ymm2, %ymm2
 	vmovq	%xmm1, %rdx
 	shrq	$18, %rdx
+	mulxq	%rax, %rcx, %rcx
+	vmovd	%ecx, %xmm1
+	vmovq	%xmm3, %rdx
+	shrq	$18, %rdx
 	mulxq	%rax, %rax, %rax
-	vmovd	%eax, %xmm1
-	vpsrld	$24, %xmm1, %xmm1
-	vpinsrd	$2, %ecx, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vmovd	%eax, %xmm3
+	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vpsrld	$24, %ymm1, %ymm1
+	vpunpcklqdq	%ymm2, %ymm1, %ymm1
+	vpmadd52luq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:

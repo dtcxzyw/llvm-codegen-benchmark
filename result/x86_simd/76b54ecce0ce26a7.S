@@ -29,8 +29,7 @@ func000000000000001e:
 	.quad	10033
 func000000000000001a:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm0
 	vpsrlq	$18, %ymm0, %ymm0
 	retq
 

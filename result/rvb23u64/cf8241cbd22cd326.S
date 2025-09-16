@@ -19,7 +19,7 @@ func0000000000000021:
 func0000000000000101:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	addi	a0, a0, -32
 	snez	a1, a1
 	seqz	a0, a0

@@ -1,15 +1,11 @@
 func0000000000000001:
-	zext.b	a2, a0
-	li	a3, 5
+	zext.b	a0, a0
 	sext.w	a1, a1
-	bgeu	a3, a2, .LBB0_3
-	bnez	a1, .LBB0_4
+	seqz	a1, a1
+	addi	a1, a1, -1
+	andi	a1, a1, 5
+	bltu	a1, a0, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
-	ret
-.LBB0_3:
-	li	a2, 5
-	beqz	a1, .LBB0_2
-.LBB0_4:
-	mv	a0, a2
 	ret
 

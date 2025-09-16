@@ -6,9 +6,8 @@ func0000000000000002:
 	ret
 
 func0000000000000018:
-	srliw	a1, a1, 23
-	slli	a1, a1, 23
-	binvi	a1, a1, 26
+	sraiw	a1, a1, 23
+	addi	a1, a1, -8
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

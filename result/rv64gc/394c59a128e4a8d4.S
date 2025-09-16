@@ -4,15 +4,15 @@ func000000000000000f:
 	and	a1, a1, a2
 	bnez	a3, .LBB0_2
 	li	a2, 32
+	or	a1, a1, a2
 	slliw	a0, a0, 2
-	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a2, 2
 	addi	a2, a2, 32
+	or	a1, a1, a2
 	slliw	a0, a0, 2
-	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

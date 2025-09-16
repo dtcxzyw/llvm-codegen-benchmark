@@ -22,7 +22,7 @@ func0000000000000181:
 	ret
 
 func000000000000010c:
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

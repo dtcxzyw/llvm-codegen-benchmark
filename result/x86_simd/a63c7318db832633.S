@@ -2,7 +2,6 @@
 	.quad	1000
 func000000000000000d:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	movabsq	$4835703278458516699, %rcx
@@ -36,7 +35,7 @@ func000000000000000d:
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -84,7 +83,6 @@ func0000000000000025:
 	.quad	1000000
 func000000000000002d:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	movabsq	$2361183241434822607, %rcx
@@ -118,6 +116,6 @@ func000000000000002d:
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

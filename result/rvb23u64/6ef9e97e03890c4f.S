@@ -17,7 +17,7 @@ func0000000000000042:
 	ret
 
 func0000000000000330:
-	srliw	a2, a2, 19
+	sraiw	a2, a2, 19
 	snez	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
@@ -25,7 +25,7 @@ func0000000000000330:
 	ret
 
 func0000000000000070:
-	srliw	a2, a2, 19
+	sraiw	a2, a2, 19
 	addi	a1, a1, -2
 	snez	a2, a2
 	seqz	a1, a1

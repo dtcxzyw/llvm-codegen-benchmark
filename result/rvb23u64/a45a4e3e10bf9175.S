@@ -20,7 +20,7 @@ func0000000000000052:
 func0000000000000208:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	srliw	a2, a2, 24
+	sraiw	a2, a2, 24
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2
@@ -40,7 +40,7 @@ func0000000000000042:
 func00000000000001c8:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	srliw	a2, a2, 24
+	sraiw	a2, a2, 24
 	seqz	a2, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1

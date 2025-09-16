@@ -1,11 +1,10 @@
 func0000000000000001:
-	andi	a0, a0, 1
-	sext.w	a1, a1
-	li	a2, 1024
-	minu	a1, a1, a2
-	addi	a1, a1, -1024
-	czero.nez	a0, a1, a0
-	li	a1, -1024
-	sub	a0, a1, a0
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	or	a0, a0, a1
+	sext.w	a0, a0
+	li	a1, 1024
+	minu	a0, a0, a1
+	neg	a0, a0
 	ret
 

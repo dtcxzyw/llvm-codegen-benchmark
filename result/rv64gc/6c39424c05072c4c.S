@@ -1,7 +1,7 @@
 func000000000000018c:
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	srliw	a0, a1, 2
+	sraiw	a0, a1, 2
 	snez	a0, a0
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000114:
 func0000000000000194:
 	add	a1, a1, a2
 	sub	a1, a1, a0
-	srliw	a0, a1, 7
+	sraiw	a0, a1, 7
 	seqz	a0, a0
 	ret
 

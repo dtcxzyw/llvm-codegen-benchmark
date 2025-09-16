@@ -4,7 +4,7 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 
@@ -57,7 +57,7 @@ func000000000000000a:
 	ret
 
 func0000000000000038:
-	srliw	a0, a0, 3
+	sraiw	a0, a0, 3
 	snez	a0, a0
 	ret
 

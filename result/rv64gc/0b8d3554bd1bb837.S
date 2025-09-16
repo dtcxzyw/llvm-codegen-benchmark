@@ -1,5 +1,5 @@
 func000000000000004a:
-	srliw	a1, a1, 31
+	sraiw	a1, a1, 31
 	seqz	a1, a1
 	addiw	a0, a0, 2
 	addi	a1, a1, -1
@@ -7,7 +7,7 @@ func000000000000004a:
 	ret
 
 func0000000000000008:
-	srliw	a1, a1, 23
+	sraiw	a1, a1, 23
 	lui	a2, 307200
 	seqz	a1, a1
 	addw	a0, a0, a2

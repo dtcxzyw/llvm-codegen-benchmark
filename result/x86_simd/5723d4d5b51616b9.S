@@ -37,13 +37,13 @@ func0000000000000000:
 	retq
 
 .LCPI4_0:
-	.quad	67
-.LCPI4_1:
 	.quad	843314118
+.LCPI4_1:
+	.quad	67
 func000000000000000f:
-	vpsrlq	$34, %ymm0, %ymm0
-	vpmuldq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$34, %ymm0, %ymm1
+	vpbroadcastq	.LCPI4_0(%rip), %ymm0
+	vpmadd52luq	.LCPI4_1(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:

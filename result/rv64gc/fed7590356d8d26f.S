@@ -34,7 +34,7 @@ func0000000000000008:
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	srliw	a0, a0, 3
+	sraiw	a0, a0, 3
 	snez	a0, a0
 	ret
 

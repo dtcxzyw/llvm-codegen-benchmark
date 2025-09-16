@@ -3,8 +3,8 @@ func0000000000000005:
 	beqz	a1, .LBB0_2
 	li	a2, -126
 .LBB0_2:
-	add	a0, a0, a2
-	negw	a0, a0
+	neg	a0, a0
+	subw	a0, a0, a2
 	ret
 
 func0000000000000000:
@@ -12,8 +12,8 @@ func0000000000000000:
 	beqz	a1, .LBB1_2
 	li	a2, -1076
 .LBB1_2:
-	add	a0, a0, a2
-	negw	a0, a0
+	neg	a0, a0
+	subw	a0, a0, a2
 	ret
 
 func0000000000000001:

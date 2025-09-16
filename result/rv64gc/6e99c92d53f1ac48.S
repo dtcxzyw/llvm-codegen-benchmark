@@ -1,19 +1,14 @@
 func0000000000000113:
 	srai	a2, a2, 3
-	li	a3, -1
-	srli	a3, a3, 5
-	mv	a4, a2
-	bgeu	a2, a3, .LBB0_3
-	bltu	a2, a1, .LBB0_4
+	sltu	a1, a2, a1
+	neg	a1, a1
+	or	a1, a1, a2
+	li	a2, -1
+	srli	a2, a2, 5
+	bltu	a1, a2, .LBB0_2
+	mv	a1, a2
 .LBB0_2:
-	slli	a4, a4, 4
-	add	a0, a0, a4
-	ret
-.LBB0_3:
-	mv	a4, a3
-	bgeu	a2, a1, .LBB0_2
-.LBB0_4:
-	slli	a4, a3, 4
-	add	a0, a0, a4
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 

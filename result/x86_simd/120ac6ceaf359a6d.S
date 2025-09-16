@@ -57,8 +57,7 @@ func0000000000000010:
 func0000000000000018:
 	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
-	vpmuludq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	%ymm2, %ymm1, %ymm0
 	vpsrlq	$3, %ymm0, %ymm0
 	retq
 

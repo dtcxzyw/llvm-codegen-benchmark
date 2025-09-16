@@ -6,8 +6,8 @@ func000000000000004f:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
-	vpmuludq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm1
+	vmovdqa	%ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -18,7 +18,7 @@ func000000000000005f:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
-	vpmuludq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm1
+	vmovdqa	%ymm1, %ymm0
 	retq
 

@@ -1,7 +1,7 @@
 func0000000000000488:
-	and	x8, x2, #0xffff
-	subs	x9, x1, x0
-	ccmp	x9, x8, #0, hs
-	cset	w0, lo
+	subs	x8, x1, x0
+	cset	w9, lo
+	cmp	x8, w2, uxth
+	csinc	w0, w9, wzr, hs
 	ret
 

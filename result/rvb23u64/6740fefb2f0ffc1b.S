@@ -19,7 +19,7 @@ func000000000000008c:
 
 func0000000000000088:
 	add	a1, a1, a2
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

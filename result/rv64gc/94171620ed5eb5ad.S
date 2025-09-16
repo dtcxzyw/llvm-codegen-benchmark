@@ -7,7 +7,7 @@ func0000000000000021:
 func0000000000000034:
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 

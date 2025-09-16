@@ -17,14 +17,14 @@ func000000000000003f:
 	beqz	a2, .LBB1_2
 	li	a2, 17
 	slli	a2, a2, 7
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 128
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 

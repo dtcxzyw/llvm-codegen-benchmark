@@ -1,18 +1,13 @@
 func0000000000000000:
 	lui	a3, 16
-	addi	a4, a3, -1
-	and	a3, a1, a4
-	and	a2, a2, a4
 	andi	a0, a0, 1
-	bgeu	a2, a3, .LBB0_3
-	beqz	a0, .LBB0_4
-.LBB0_2:
+	addi	a3, a3, -1
+	addi	a4, a0, -1
+	and	a0, a1, a3
+	and	a1, a4, a2
+	and	a1, a1, a3
+	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
-	ret
-.LBB0_3:
-	mv	a3, a2
-	bnez	a0, .LBB0_2
-.LBB0_4:
-	mv	a0, a3
+.LBB0_2:
 	ret
 

@@ -25,7 +25,7 @@ func0000000000000181:
 	ret
 
 func0000000000000028:
-	srliw	a1, a1, 5
+	sraiw	a1, a1, 5
 	sext.w	a0, a0
 	seqz	a1, a1
 	sltiu	a0, a0, 33
@@ -35,7 +35,7 @@ func0000000000000028:
 
 func000000000000008c:
 	li	a2, 1
-	srliw	a0, a0, 6
+	sraiw	a0, a0, 6
 	slli	a2, a2, 32
 	addi	a2, a2, -64
 	addi	a2, a2, 32

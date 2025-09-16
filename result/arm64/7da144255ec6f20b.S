@@ -5,17 +5,18 @@ func0000000000000188:
 	ret
 
 func000000000000010a:
-	mov	w8, #64
-	subs	x9, x0, x1
-	ccmp	x9, x8, #0, hi
-	cset	w0, lo
+	subs	x8, x0, x1
+	cset	w9, ls
+	cmp	x8, #64
+	csinc	w0, w9, wzr, hs
 	ret
 
 func0000000000000112:
 	mov	w8, #25856
 	subs	x9, x1, x0
 	movk	w8, #7629, lsl #16
-	ccmp	x9, x8, #0, hi
-	cset	w0, lo
+	cset	w10, ls
+	cmp	x9, x8
+	csinc	w0, w10, wzr, hs
 	ret
 

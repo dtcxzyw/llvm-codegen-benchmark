@@ -13,32 +13,22 @@ func0000000000000001:
 func0000000000000006:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	bgeu	a1, a2, .LBB1_3
-	bltz	a0, .LBB1_4
-.LBB1_2:
-	mv	a0, a1
-	ret
-.LBB1_3:
-	mv	a1, a2
-	bgez	a0, .LBB1_2
-.LBB1_4:
+	srai	a0, a0, 63
+	or	a0, a0, a1
+	bltu	a0, a2, .LBB1_2
 	mv	a0, a2
+.LBB1_2:
 	ret
 
 func0000000000000008:
-	lui	a2, 1048560
-	bgeu	a1, a2, .LBB2_3
 	srli	a0, a0, 48
-	bnez	a0, .LBB2_4
-.LBB2_2:
-	mv	a0, a1
-	ret
-.LBB2_3:
+	seqz	a0, a0
+	addi	a0, a0, -1
+	or	a0, a0, a1
 	lui	a1, 1048560
-	srli	a0, a0, 48
-	beqz	a0, .LBB2_2
-.LBB2_4:
+	bltu	a0, a1, .LBB2_2
 	lui	a0, 1048560
+.LBB2_2:
 	ret
 
 func0000000000000004:

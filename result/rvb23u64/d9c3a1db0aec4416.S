@@ -43,7 +43,7 @@ func00000000000000ec:
 func00000000000000f4:
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	srliw	a0, a0, 8
+	sraiw	a0, a0, 8
 	seqz	a0, a0
 	ret
 

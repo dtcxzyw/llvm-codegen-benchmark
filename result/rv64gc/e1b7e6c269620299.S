@@ -17,11 +17,11 @@ func0000000000000050:
 	ret
 
 func0000000000000040:
-	sub	a3, a0, a1
-	bltu	a3, a2, .LBB2_2
-	mv	a3, a2
+	sub	a0, a0, a1
+	mv	a1, a0
+	bltu	a0, a2, .LBB2_2
+	mv	a1, a2
 .LBB2_2:
 	sub	a0, a0, a1
-	sub	a0, a0, a3
 	ret
 

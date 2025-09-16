@@ -17,10 +17,10 @@ func0000000000000004:
 	ret
 
 func0000000000000099:
-	li	a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmax.vx	v10, v10, a0
+	vsra.vi	v12, v10, 31
 	vnot.v	v10, v10
+	vandn.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
 	ret
 

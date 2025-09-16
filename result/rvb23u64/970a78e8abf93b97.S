@@ -22,7 +22,7 @@ func00000000000000d1:
 
 func0000000000000041:
 	addi	a0, a0, 1
-	srliw	a0, a0, 1
+	sraiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

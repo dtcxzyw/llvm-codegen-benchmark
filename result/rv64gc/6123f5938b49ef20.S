@@ -19,11 +19,8 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	li	a1, 63
-	slli	a1, a1, 26
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	snez	a0, a0
+	sraiw	a0, a0, 26
+	sltiu	a0, a0, -1
 	ret
 
 func0000000000000021:

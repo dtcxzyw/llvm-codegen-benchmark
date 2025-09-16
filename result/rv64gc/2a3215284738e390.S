@@ -16,7 +16,7 @@ func000000000000002c:
 
 func0000000000000021:
 	lui	a2, 256
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	and	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0

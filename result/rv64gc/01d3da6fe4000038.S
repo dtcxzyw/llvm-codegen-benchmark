@@ -1,19 +1,14 @@
 func000000000000000b:
-	srai	a3, a2, 3
+	srai	a2, a2, 3
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	or	a1, a1, a2
 	li	a2, -1
 	srli	a2, a2, 5
-	andi	a1, a1, 1
-	bgeu	a3, a2, .LBB0_3
-	beqz	a1, .LBB0_4
+	bltu	a1, a2, .LBB0_2
+	mv	a1, a2
 .LBB0_2:
-	slli	a2, a2, 4
-	add	a0, a0, a2
-	ret
-.LBB0_3:
-	mv	a3, a2
-	bnez	a1, .LBB0_2
-.LBB0_4:
-	slli	a2, a3, 4
-	add	a0, a0, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 

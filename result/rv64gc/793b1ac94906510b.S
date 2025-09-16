@@ -19,7 +19,7 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	srliw	a2, a2, 31
+	sraiw	a2, a2, 31
 	srliw	a1, a1, 31
 	seqz	a2, a2
 	not	a1, a1

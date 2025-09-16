@@ -1,5 +1,5 @@
 func0000000000000118:
-	srliw	a1, a0, 6
+	sraiw	a1, a0, 6
 	andi	a0, a0, 7
 	seqz	a1, a1
 	addi	a0, a0, -1

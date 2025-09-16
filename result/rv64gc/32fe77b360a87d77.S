@@ -8,7 +8,7 @@ func000000000000002c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	srliw	a2, a2, 31
+	sraiw	a2, a2, 31
 	lui	a3, 131072
 	seqz	a2, a2
 	addi	a3, a3, -1

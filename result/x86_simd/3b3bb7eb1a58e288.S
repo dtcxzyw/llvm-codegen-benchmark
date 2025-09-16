@@ -4,9 +4,8 @@ func000000000000003e:
 	vpmovzxdq	%xmm1, %ymm1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpand	%ymm2, %ymm0, %ymm0
-	vpmuludq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpsrlq	$5, %ymm0, %ymm0
+	vpmadd52luq	%ymm1, %ymm0, %ymm2
+	vpsrlq	$5, %ymm2, %ymm0
 	retq
 
 .LCPI1_0:
@@ -27,8 +26,7 @@ func000000000000001e:
 	vpmovzxdq	%xmm1, %ymm1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2
 	vpand	%ymm2, %ymm0, %ymm0
-	vpmuludq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpsrlq	$3, %ymm0, %ymm0
+	vpmadd52luq	%ymm1, %ymm0, %ymm2
+	vpsrlq	$3, %ymm2, %ymm0
 	retq
 

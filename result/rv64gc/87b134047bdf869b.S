@@ -207,7 +207,7 @@ func0000000000000301:
 
 func0000000000000098:
 	sext.w	a0, a0
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	snez	a1, a1
 	sltiu	a0, a0, 47
 	and	a0, a0, a1

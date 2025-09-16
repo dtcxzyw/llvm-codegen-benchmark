@@ -71,7 +71,7 @@ func0000000000000101:
 	ret
 
 func0000000000000028:
-	srliw	a1, a1, 5
+	sraiw	a1, a1, 5
 	addi	a0, a0, -256
 	snez	a1, a1
 	seqz	a0, a0
@@ -79,7 +79,7 @@ func0000000000000028:
 	ret
 
 func0000000000000188:
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -149,7 +149,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000088:
-	srliw	a1, a1, 1
+	sraiw	a1, a1, 1
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

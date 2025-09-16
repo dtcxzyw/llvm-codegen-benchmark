@@ -16,10 +16,10 @@ func0000000000000004:
 	retq
 
 func0000000000000099:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
 	notl	%eax
+	sarl	$31, %esi
+	andnl	%eax, %esi, %eax
 	addl	%edi, %eax
 	retq
 

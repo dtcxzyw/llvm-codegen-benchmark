@@ -7,7 +7,7 @@ func0000000000000002:
 	ret
 
 func0000000000000030:
-	srliw	a2, a2, 19
+	sraiw	a2, a2, 19
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

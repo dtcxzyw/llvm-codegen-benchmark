@@ -45,7 +45,6 @@ func000000000000001d:
 	vpblendd	$10, %xmm2, %xmm1, %xmm1
 	vpsrld	$7, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuldq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0
 	retq
 

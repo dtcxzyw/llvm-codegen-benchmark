@@ -9,7 +9,7 @@ func0000000000000318:
 
 func0000000000000808:
 	srliw	a2, a2, 24
-	srliw	a1, a1, 24
+	sraiw	a1, a1, 24
 	seqz	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1

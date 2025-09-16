@@ -6,8 +6,8 @@ func0000000000000001:
 	slli	a2, a2, 2
 	subw	a3, a0, a2
 	beqz	a3, .LBB0_2
-	sub	a0, a0, a2
 	sub	a0, a1, a0
+	add	a0, a0, a2
 .LBB0_2:
 	sext.w	a0, a0
 	ret

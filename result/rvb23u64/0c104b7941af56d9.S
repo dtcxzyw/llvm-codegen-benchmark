@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	230584300921369395
 func0000000000000012:
-	andi	a0, a0, 1
 	srai	a2, a2, 3
 	lui	a3, 838861
+	slli	a0, a0, 63
 	addi	a3, a3, -819
 	slli	a4, a3, 32
 	add	a3, a3, a4
@@ -12,9 +12,8 @@ func0000000000000012:
 	mul	a2, a2, a3
 	maxu	a2, a1, a2
 	add	a1, a1, a2
-	minu	a1, a1, a4
-	czero.eqz	a2, a4, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	srai	a0, a0, 63
+	or	a0, a0, a1
+	minu	a0, a0, a4
 	ret
 

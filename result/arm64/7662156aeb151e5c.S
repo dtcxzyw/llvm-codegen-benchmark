@@ -1,46 +1,51 @@
 func0000000000000888:
-	mov	w8, #2048
-	subs	x9, x0, x1
-	ccmp	x9, x8, #2, hi
-	cset	w0, lo
+	subs	x8, x0, x1
+	cset	w9, hi
+	cmp	x8, #2048
+	csel	w0, wzr, w9, hs
 	ret
 
 func0000000000000885:
-	mov	w8, #65536
-	subs	x9, x1, x0
-	ccmp	x9, x8, #2, hs
-	cset	w0, lo
+	subs	x8, x1, x0
+	cset	w9, hs
+	cmp	x8, #16, lsl #12
+	csel	w0, wzr, w9, hs
 	ret
 
 func0000000000000d08:
 	subs	x8, x0, x1
-	ccmp	x8, #4, #0, hi
-	cset	w0, hi
+	cset	w9, hi
+	cmp	x8, #4
+	csel	w0, wzr, w9, ls
 	ret
 
 func0000000000000908:
 	subs	x8, x0, x1
-	ccmp	x8, #16, #0, hi
-	cset	w0, hi
+	cset	w9, hi
+	cmp	x8, #16
+	csel	w0, wzr, w9, ls
 	ret
 
 func0000000000000904:
 	subs	x8, x1, x0
-	ccmp	x8, #1, #0, hi
-	cset	w0, hi
+	cset	w9, hi
+	cmp	x8, #1
+	csel	w0, wzr, w9, ls
 	ret
 
 func0000000000000889:
 	mov	w8, #50881
 	subs	x9, x0, x1
 	movk	w8, #45, lsl #16
-	ccmp	x9, x8, #2, hs
-	cset	w0, lo
+	cset	w10, hs
+	cmp	x9, x8
+	csel	w0, wzr, w10, hs
 	ret
 
 func0000000000000909:
 	subs	x8, x0, x1
-	ccmp	x8, #27, #0, hs
-	cset	w0, hi
+	cset	w9, hs
+	cmp	x8, #27
+	csel	w0, wzr, w9, ls
 	ret
 

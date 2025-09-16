@@ -6,7 +6,7 @@ func0000000000000058:
 
 func0000000000000018:
 	mul	a0, a0, a1
-	srliw	a0, a0, 15
+	sraiw	a0, a0, 15
 	snez	a0, a0
 	ret
 

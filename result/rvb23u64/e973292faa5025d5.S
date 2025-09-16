@@ -6,9 +6,8 @@ func0000000000000031:
 	ret
 
 func0000000000000004:
-	srliw	a1, a1, 1
-	slli	a1, a1, 1
-	addi	a1, a1, -14
+	sraiw	a1, a1, 1
+	addi	a1, a1, -7
 	seqz	a1, a1
 	or	a0, a0, a1
 	lui	a1, 1048063

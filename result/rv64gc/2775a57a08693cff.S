@@ -22,7 +22,7 @@ func0000000000000018:
 
 func0000000000000084:
 	sub	a0, a0, a1
-	srliw	a0, a0, 16
+	sraiw	a0, a0, 16
 	seqz	a0, a0
 	ret
 
@@ -50,7 +50,7 @@ func000000000000008a:
 
 func0000000000000004:
 	sub	a0, a0, a1
-	srliw	a0, a0, 2
+	sraiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 
@@ -93,7 +93,7 @@ func0000000000000184:
 
 func0000000000000088:
 	sub	a0, a0, a1
-	srliw	a0, a0, 5
+	sraiw	a0, a0, 5
 	snez	a0, a0
 	ret
 

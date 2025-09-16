@@ -2,9 +2,9 @@ func0000000000000075:
 	andi	a1, a1, 1
 	bnez	a1, .LBB0_2
 	li	a1, 1
-	add	a0, a0, a1
-	li	a1, 24
-	subw	a0, a1, a0
+	li	a2, 24
+	sub	a0, a2, a0
+	subw	a0, a0, a1
 	ret
 .LBB0_2:
 	srliw	a1, a2, 1
@@ -40,8 +40,8 @@ func0000000000000075:
 	srliw	a1, a1, 24
 	li	a2, 32
 	sub	a1, a2, a1
-	add	a0, a0, a1
-	li	a1, 24
-	subw	a0, a1, a0
+	li	a2, 24
+	sub	a0, a2, a0
+	subw	a0, a0, a1
 	ret
 

@@ -9,18 +9,18 @@ func0000000000000003:
 	addi	a1, a1, -897
 	slli	a1, a1, 14
 	addi	a1, a1, 1
-	or	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 11
+	li	a2, 7
+	slli	a2, a2, 11
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LBB0_2:
 	lui	a1, 150655
 	slli	a1, a1, 2
 	addi	a1, a1, 1
-	or	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 11
+	li	a2, 7
+	slli	a2, a2, 11
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

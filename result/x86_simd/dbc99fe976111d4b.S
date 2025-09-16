@@ -2,8 +2,7 @@
 	.quad	1000000
 func000000000000001a:
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuludq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$1237940039285380275, %rcx

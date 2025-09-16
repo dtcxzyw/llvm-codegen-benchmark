@@ -12,8 +12,7 @@ func0000000000000015:
 func000000000000001f:
 	vpsrld	$3, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuldq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:
@@ -21,8 +20,7 @@ func000000000000001f:
 func000000000000001d:
 	vpsrld	$3, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuldq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 func0000000000000014:
@@ -37,8 +35,7 @@ func0000000000000014:
 func000000000000001c:
 	vpsrld	$1, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuldq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:
@@ -46,7 +43,6 @@ func000000000000001c:
 func000000000000001e:
 	vpsrld	$1, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpmuldq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 

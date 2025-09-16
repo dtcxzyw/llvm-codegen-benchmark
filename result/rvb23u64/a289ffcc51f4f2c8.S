@@ -27,9 +27,8 @@ func0000000000000021:
 	ret
 
 func0000000000000081:
-	srliw	a2, a2, 27
-	slli	a2, a2, 27
-	binvi	a2, a2, 28
+	sraiw	a2, a2, 27
+	addi	a2, a2, -2
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

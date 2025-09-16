@@ -51,7 +51,7 @@ func0000000000000184:
 
 func0000000000000028:
 	zext.b	a0, a0
-	srliw	a1, a1, 14
+	sraiw	a1, a1, 14
 	snez	a1, a1
 	addi	a0, a0, -112
 	seqz	a0, a0

@@ -1,6 +1,6 @@
 func000000000000001c:
-	movzwl	%dx, %eax
 	shlq	$19, %rsi
+	movzwl	%dx, %eax
 	leaq	(%rsi,%rax,8), %rax
 	addq	%rdi, %rax
 	retq

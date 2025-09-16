@@ -6,7 +6,7 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	addi	a0, a0, 65
 	ret

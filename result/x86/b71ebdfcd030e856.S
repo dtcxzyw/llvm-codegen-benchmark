@@ -1,8 +1,8 @@
 func000000000000007f:
+	shlq	$4, %rsi
 	movzwl	%dx, %eax
-	shll	$8, %eax
+	shll	$12, %eax
 	orq	%rsi, %rax
-	shlq	$4, %rax
 	leaq	12(%rdi,%rax), %rax
 	retq
 

@@ -30,14 +30,14 @@ func0000000000000008:
 	slliw	a1, a2, 24
 	bnez	a3, .LBB3_2
 	li	a2, 992
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 .LBB3_2:
 	lui	a2, 524288
 	addi	a2, a2, 992
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000000:

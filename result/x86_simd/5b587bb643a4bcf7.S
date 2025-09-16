@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	31
 func000000000000001f:
-	vpmovzxdq	%xmm1, %ymm1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm2
-	vpand	%ymm2, %ymm0, %ymm0
-	vpmuludq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
+	vpmovzxdq	%xmm1, %ymm2
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1
+	vpand	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	%ymm2, %ymm0, %ymm1
+	vmovdqa	%ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -22,11 +22,11 @@ func000000000000001e:
 .LCPI2_0:
 	.quad	7
 func000000000000000f:
-	vpmovzxdq	%xmm1, %ymm1
-	vpbroadcastq	.LCPI2_0(%rip), %ymm2
-	vpand	%ymm2, %ymm0, %ymm0
-	vpmuludq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
+	vpmovzxdq	%xmm1, %ymm2
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1
+	vpand	%ymm1, %ymm0, %ymm0
+	vpmadd52luq	%ymm2, %ymm0, %ymm1
+	vmovdqa	%ymm1, %ymm0
 	retq
 
 func0000000000000008:

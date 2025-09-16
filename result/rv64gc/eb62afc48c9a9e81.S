@@ -6,7 +6,7 @@ func000000000000000c:
 
 func0000000000000001:
 	add	a1, a1, a2
-	srliw	a1, a1, 31
+	sraiw	a1, a1, 31
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

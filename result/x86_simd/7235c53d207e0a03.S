@@ -26,8 +26,7 @@ func0000000000000541:
 	.quad	10
 func00000000000007e1:
 	vpmovzxdq	%xmm2, %ymm2
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpmadd52luq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

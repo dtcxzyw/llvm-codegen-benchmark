@@ -16,7 +16,7 @@ func0000000000000088:
 	slli	a3, a2, 33
 	add	a2, a2, a3
 	mul	a1, a1, a2
-	srliw	a1, a1, 2
+	sraiw	a1, a1, 2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

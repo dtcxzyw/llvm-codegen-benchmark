@@ -1,32 +1,23 @@
 func00000000000000c4:
-	sext.w	a2, a0
-	sext.w	a3, a1
-	bgeu	a2, a3, .LBB0_3
-	li	a3, 258
-	bgeu	a1, a3, .LBB0_4
+	sext.w	a0, a0
+	sltiu	a2, a1, 258
+	addi	a2, a2, -1
+	or	a1, a1, a2
+	sext.w	a1, a1
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
-	mv	a0, a2
-	ret
-.LBB0_3:
-	mv	a2, a3
-	li	a3, 258
-	bltu	a1, a3, .LBB0_2
-.LBB0_4:
 	ret
 
 func0000000000000084:
-	sext.w	a2, a0
-	sext.w	a3, a1
-	bgeu	a2, a3, .LBB1_3
-	srli	a1, a1, 32
-	bnez	a1, .LBB1_4
+	sext.w	a0, a0
+	srli	a2, a1, 32
+	seqz	a2, a2
+	addi	a2, a2, -1
+	or	a1, a1, a2
+	sext.w	a1, a1
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
 .LBB1_2:
-	mv	a0, a2
-	ret
-.LBB1_3:
-	mv	a2, a3
-	srli	a1, a1, 32
-	beqz	a1, .LBB1_2
-.LBB1_4:
 	ret
 

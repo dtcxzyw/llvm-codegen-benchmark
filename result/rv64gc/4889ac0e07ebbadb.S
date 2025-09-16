@@ -46,19 +46,14 @@ func0000000000000306:
 	ret
 
 func00000000000000ca:
-	sext.w	a2, a0
-	lui	a3, 524288
-	addiw	a3, a3, -1
+	sext.w	a0, a0
+	lui	a2, 524288
+	addi	a2, a2, -1
+	or	a1, a1, a2
 	sext.w	a1, a1
-	bgeu	a2, a3, .LBB4_3
-	bgez	a1, .LBB4_4
+	bltu	a0, a1, .LBB4_2
+	mv	a0, a1
 .LBB4_2:
-	ret
-.LBB4_3:
-	mv	a2, a3
-	bltz	a1, .LBB4_2
-.LBB4_4:
-	mv	a0, a2
 	ret
 
 func0000000000000088:

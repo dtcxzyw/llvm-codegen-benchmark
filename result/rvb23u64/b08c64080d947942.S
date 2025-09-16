@@ -116,13 +116,11 @@ func0000000000000310:
 	ret
 
 func0000000000000202:
-	li	a1, -2
-	srli	a2, a0, 32
-	zext.w	a1, a1
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	snez	a1, a2
+	sraiw	a1, a0, 1
+	srli	a0, a0, 32
+	addi	a1, a1, 1
+	seqz	a1, a1
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

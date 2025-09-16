@@ -37,7 +37,7 @@ func0000000000000046:
 	ret
 
 func000000000000004a:
-	srliw	a0, a0, 31
+	sraiw	a0, a0, 31
 	seqz	a0, a0
 	ret
 

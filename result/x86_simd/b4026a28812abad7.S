@@ -73,8 +73,7 @@ func000000000000000a:
 func000000000000000c:
 	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI4_1(%rip){1to4}, %ymm1, %ymm1
-	vpmuludq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmadd52luq	%ymm2, %ymm1, %ymm0
 	retq
 
 func000000000000001c:

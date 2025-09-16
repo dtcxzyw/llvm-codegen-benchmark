@@ -1,16 +1,12 @@
 func0000000000000001:
-	sext.w	a2, a1
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	or	a0, a0, a1
+	sext.w	a0, a0
 	li	a1, 1024
-	andi	a0, a0, 1
-	bgeu	a2, a1, .LBB0_3
-	beqz	a0, .LBB0_4
+	bltu	a0, a1, .LBB0_2
+	li	a0, 1024
 .LBB0_2:
-	neg	a0, a1
-	ret
-.LBB0_3:
-	li	a2, 1024
-	bnez	a0, .LBB0_2
-.LBB0_4:
-	neg	a0, a2
+	neg	a0, a0
 	ret
 

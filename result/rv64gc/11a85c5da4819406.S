@@ -21,17 +21,12 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	mv	a2, a0
-	lui	a0, 2048
-	andi	a2, a2, 1
-	bgeu	a1, a0, .LBB2_3
-	beqz	a2, .LBB2_4
-.LBB2_2:
-	ret
-.LBB2_3:
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	or	a0, a0, a1
 	lui	a1, 2048
-	bnez	a2, .LBB2_2
-.LBB2_4:
-	mv	a0, a1
+	bltu	a0, a1, .LBB2_2
+	lui	a0, 2048
+.LBB2_2:
 	ret
 

@@ -5,9 +5,8 @@
 func000000000000001e:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
-	vpmuldq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsrlq	$3, %ymm0, %ymm0
+	vpmadd52luq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm1
+	vpsrlq	$3, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

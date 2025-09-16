@@ -4,11 +4,8 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 11
-	li	a1, 27
-	slli	a0, a0, 11
-	slli	a1, a1, 11
-	xor	a0, a0, a1
+	sraiw	a0, a0, 11
+	addi	a0, a0, -27
 	seqz	a0, a0
 	ret
 

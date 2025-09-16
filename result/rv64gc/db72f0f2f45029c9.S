@@ -19,14 +19,14 @@ func0000000000000006:
 	addi	a2, a2, -1
 	seqz	a1, a2
 	slli	a1, a1, 4
-	lui	a2, 4
-	or	a0, a0, a2
+	or	a0, a0, a1
+	lui	a1, 4
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 32
-	lui	a2, 4
-	or	a0, a0, a2
+	or	a0, a0, a1
+	lui	a1, 4
 	or	a0, a0, a1
 	ret
 
