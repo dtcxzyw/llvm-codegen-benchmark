@@ -73,8 +73,7 @@ func0000000000000404:
 func0000000000000a51:
 	sext.w	a1, a1
 	sltiu	a2, a1, 6
-	neg	a2, a2
-	andi	a2, a2, 3
+	sh1add	a2, a2, a2
 	sltiu	a1, a1, 3
 	addi	a2, a2, -6
 	czero.nez	a1, a2, a1

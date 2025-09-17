@@ -8,9 +8,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000061:
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	andi	a1, a1, 3
+	andi	a1, a1, 1
+	sh1add	a1, a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

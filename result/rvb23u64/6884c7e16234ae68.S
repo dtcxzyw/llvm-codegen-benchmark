@@ -16,8 +16,7 @@ func0000000000000021:
 func0000000000000004:
 	zext.b	a1, a1
 	sltiu	a1, a1, 161
-	neg	a1, a1
-	andi	a1, a1, 3
+	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	ret
 
@@ -31,8 +30,8 @@ func0000000000000041:
 func0000000000000068:
 	zext.b	a1, a1
 	sltiu	a1, a1, 3
-	addi	a1, a1, -1
-	andi	a1, a1, 5
+	xori	a1, a1, 1
+	sh2add	a1, a1, a1
 	add	a0, a0, a1
 	ret
 

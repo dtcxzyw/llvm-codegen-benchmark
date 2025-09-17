@@ -43,8 +43,8 @@ func000000000000001c:
 func0000000000000040:
 	sext.w	a1, a1
 	sltiu	a1, a1, 10
-	addi	a1, a1, -1
-	andi	a1, a1, 9
+	xori	a1, a1, 1
+	sh3add	a1, a1, a1
 	add	a0, a0, a1
 	slliw	a0, a0, 4
 	ret

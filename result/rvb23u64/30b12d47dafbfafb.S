@@ -9,8 +9,7 @@ func0000000000000001:
 func0000000000000004:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	neg	a1, a1
-	andi	a1, a1, 3
+	sh1add	a1, a1, a1
 	sllw	a0, a0, a1
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000001:
 	or	a0, a0, a1
 	bexti	a1, a2, 18
-	neg	a1, a1
-	andi	a1, a1, 3
+	sh1add	a1, a1, a1
 	or	a0, a0, a1
 	ret
 

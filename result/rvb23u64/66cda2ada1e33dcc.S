@@ -54,9 +54,8 @@ func0000000000000026:
 	sext.w	a1, a1
 	srliw	a2, a0, 31
 	addi	a1, a1, -6
-	snez	a1, a1
-	addi	a1, a1, -1
-	andi	a1, a1, 3
+	seqz	a1, a1
+	sh1add	a1, a1, a1
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

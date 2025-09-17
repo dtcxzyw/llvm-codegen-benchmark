@@ -32,9 +32,8 @@ func0000000000000024:
 func0000000000000021:
 	or	a0, a0, a1
 	sext.w	a0, a0
-	snez	a0, a0
-	addi	a0, a0, -1
-	andi	a0, a0, 5
+	seqz	a0, a0
+	sh2add	a0, a0, a0
 	ret
 
 func0000000000000034:

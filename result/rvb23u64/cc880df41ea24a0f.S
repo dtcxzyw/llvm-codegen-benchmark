@@ -58,9 +58,8 @@ func00000000000000c8:
 func00000000000000e8:
 	sext.w	a2, a2
 	addi	a2, a2, -2
-	snez	a2, a2
-	addi	a2, a2, -1
-	andi	a2, a2, 5
+	seqz	a2, a2
+	sh2add	a2, a2, a2
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

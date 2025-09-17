@@ -62,8 +62,8 @@ func000000000000000a:
 	srai	a1, a1, 63
 	slti	a0, a0, 2
 	andi	a1, a1, 14
-	addi	a0, a0, -1
-	andi	a0, a0, 9
+	xori	a0, a0, 1
+	sh3add	a0, a0, a0
 	or	a0, a0, a1
 	ret
 

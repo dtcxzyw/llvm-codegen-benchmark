@@ -41,9 +41,8 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	andi	a1, a1, 9
+	andi	a1, a1, 1
+	sh3add	a1, a1, a1
 	add	a0, a0, a1
 	ret
 

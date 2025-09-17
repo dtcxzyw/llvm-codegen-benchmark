@@ -8,9 +8,8 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	andi	a1, a1, 3
+	andi	a1, a1, 1
+	sh1add	a1, a1, a1
 	addw	a1, a1, a2
 	sgtz	a1, a1
 	and	a0, a0, a1

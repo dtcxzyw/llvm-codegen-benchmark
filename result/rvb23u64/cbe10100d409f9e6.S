@@ -58,9 +58,8 @@ func000000000000002a:
 
 func0000000000000426:
 	sext.w	a1, a1
-	snez	a1, a1
-	addi	a1, a1, -1
-	andi	a1, a1, 3
+	seqz	a1, a1
+	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	srliw	a0, a0, 31
 	ret

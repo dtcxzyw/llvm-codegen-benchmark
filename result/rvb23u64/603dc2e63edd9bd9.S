@@ -4,8 +4,7 @@ func0000000000000001:
 	addi	a2, a2, -1
 	seqz	a2, a2
 	and	a1, a1, a2
-	neg	a1, a1
-	andi	a1, a1, 9
+	sh3add	a1, a1, a1
 	addi	a1, a1, -4
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 4

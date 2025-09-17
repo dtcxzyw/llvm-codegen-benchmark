@@ -23,8 +23,8 @@ func0000000000000011:
 func000000000000000e:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	addi	a1, a1, -1
-	andi	a1, a1, 5
+	xori	a1, a1, 1
+	sh2add	a1, a1, a1
 	or	a0, a0, a1
 	ret
 

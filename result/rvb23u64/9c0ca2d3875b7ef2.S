@@ -14,8 +14,7 @@ func0000000000000021:
 
 func0000000000000001:
 	bexti	a1, a1, 16
-	neg	a1, a1
-	andi	a1, a1, 5
+	sh2add	a1, a1, a1
 	add	a0, a0, a1
 	ret
 

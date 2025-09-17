@@ -45,11 +45,10 @@ func0000000000000005:
 	ret
 
 func000000000000000d:
-	slli	a2, a2, 63
+	andi	a2, a2, 1
 	slli	a1, a1, 63
-	srai	a2, a2, 63
+	sh2add	a2, a2, a2
 	srai	a1, a1, 63
-	andi	a2, a2, 5
 	add	a0, a0, a2
 	andi	a1, a1, -3
 	addw	a0, a0, a1

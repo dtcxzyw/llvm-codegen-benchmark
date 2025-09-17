@@ -15,8 +15,8 @@ func0000000000000002:
 func0000000000000007:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa0, fa5
-	addi	a0, a0, -1
-	andi	a0, a0, 5
+	xori	a0, a0, 1
+	sh2add	a0, a0, a0
 	ret
 
 .LCPI3_0:

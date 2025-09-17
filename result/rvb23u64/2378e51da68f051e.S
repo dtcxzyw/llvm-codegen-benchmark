@@ -9,9 +9,8 @@ func000000000000006c:
 	ret
 
 func000000000000000c:
-	slli	a2, a2, 63
-	srai	a2, a2, 63
-	andi	a2, a2, 9
+	andi	a2, a2, 1
+	sh3add	a2, a2, a2
 	neg	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1

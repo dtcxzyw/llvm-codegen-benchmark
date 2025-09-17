@@ -24,9 +24,8 @@ func000000000000002a:
 	ret
 
 func0000000000000008:
-	slli	a0, a0, 63
-	srai	a0, a0, 63
-	andi	a0, a0, 9
+	andi	a0, a0, 1
+	sh3add	a0, a0, a0
 	add	a0, a0, a1
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1

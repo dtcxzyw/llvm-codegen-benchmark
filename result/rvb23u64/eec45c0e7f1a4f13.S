@@ -1,9 +1,8 @@
 func0000000000000028:
 	zext.h	a1, a1
 	addi	a1, a1, -124
-	snez	a1, a1
-	addi	a1, a1, -1
-	andi	a1, a1, 3
+	seqz	a1, a1
+	sh1add	a1, a1, a1
 	sltu	a0, a1, a0
 	ret
 
