@@ -14,7 +14,6 @@ func000000000000001e:
 	zext.w	a1, a0
 	sh2add.uw	a0, a0, a1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 2
-	srli	a0, a0, 31
+	srli	a0, a0, 29
 	ret
 
