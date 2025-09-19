@@ -1,7 +1,6 @@
 func0000000000000014:
-	slli	a1, a1, 33
+	bclri	a1, a1, 31
 	andi	a0, a0, 1
-	srli	a1, a1, 33
 	add	a0, a0, a1
 	lui	a1, 8
 	addi	a1, a1, -1

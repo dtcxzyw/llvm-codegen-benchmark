@@ -6,8 +6,7 @@ func0000000000000000:
 
 func0000000000000001:
 	add	a1, a1, a2
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	subw	a0, a1, a0
 	ret
 

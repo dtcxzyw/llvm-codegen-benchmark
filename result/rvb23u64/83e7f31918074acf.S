@@ -35,8 +35,7 @@ func000000000000000f:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	sub	a0, a1, a0
 	addiw	a0, a0, 4
 	ret

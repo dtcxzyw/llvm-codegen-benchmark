@@ -8,10 +8,8 @@ func0000000000000026:
 
 func0000000000000024:
 	sext.w	a0, a0
-	lui	a3, 524288
-	slli	a1, a1, 33
-	andn	a2, a2, a3
-	srli	a1, a1, 33
+	bclri	a2, a2, 31
+	bclri	a1, a1, 31
 	subw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

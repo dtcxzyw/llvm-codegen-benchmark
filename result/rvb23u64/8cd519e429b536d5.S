@@ -28,8 +28,7 @@ func0000000000000004:
 
 func0000000000000000:
 	addi	a1, a1, -1
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	mulw	a0, a0, a1
 	ret
 

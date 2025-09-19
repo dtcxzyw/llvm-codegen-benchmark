@@ -6,8 +6,7 @@ func0000000000000001:
 
 func0000000000000000:
 	slli	a0, a0, 8
-	lui	a1, 524288
-	or	a0, a0, a1
+	bseti	a0, a0, 31
 	zext.w	a0, a0
 	ret
 

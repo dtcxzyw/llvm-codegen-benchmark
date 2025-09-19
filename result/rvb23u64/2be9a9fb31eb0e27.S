@@ -75,8 +75,7 @@ func0000000000000041:
 	ret
 
 func0000000000000048:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	add	a0, a0, a1
 	srliw	a0, a0, 30
 	snez	a0, a0
@@ -97,8 +96,7 @@ func0000000000000028:
 	ret
 
 func0000000000000148:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	addw	a0, a0, a1
 	lui	a1, 524032
 	sltu	a0, a1, a0

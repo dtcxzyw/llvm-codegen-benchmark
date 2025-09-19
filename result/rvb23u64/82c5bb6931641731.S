@@ -54,8 +54,7 @@ func0000000000000014:
 	ret
 
 func0000000000000005:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	add	a1, a1, a2
 	zext.w	a1, a1
 	sltu	a0, a1, a0

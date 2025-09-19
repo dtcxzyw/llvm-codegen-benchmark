@@ -17,8 +17,7 @@ func000000000000254a:
 
 func0000000000000021:
 	sub	a1, a1, a2
-	lui	a2, 524288
-	xor	a1, a1, a2
+	binvi	a1, a1, 31
 	orn	a0, a1, a0
 	sext.w	a0, a0
 	seqz	a0, a0

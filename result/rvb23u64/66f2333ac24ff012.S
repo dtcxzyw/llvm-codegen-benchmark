@@ -3,8 +3,7 @@
 func0000000000000015:
 	lui	a1, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a1)
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -18,8 +17,7 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	fmv.w.x	fa5, a0
 	fli.s	fa4, min
 	flt.s	a0, fa5, fa4

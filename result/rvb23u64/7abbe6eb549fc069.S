@@ -35,8 +35,7 @@ func0000000000000021:
 	ret
 
 func0000000000000081:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0

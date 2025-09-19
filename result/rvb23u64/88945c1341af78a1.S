@@ -16,8 +16,7 @@ func00000000000003e1:
 	ret
 
 func00000000000002e1:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	subw	a2, a2, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a2

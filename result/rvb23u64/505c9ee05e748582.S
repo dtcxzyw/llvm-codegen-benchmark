@@ -46,9 +46,8 @@ func0000000000000298:
 
 func0000000000000318:
 	zext.b	a1, a1
-	lui	a2, 524288
 	xori	a1, a1, 128
-	xor	a0, a0, a2
+	binvi	a0, a0, 31
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

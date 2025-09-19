@@ -27,8 +27,7 @@ func0000000000000061:
 
 func0000000000000041:
 	sext.w	a0, a0
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	addiw	a1, a1, 4
 	czero.eqz	a0, a1, a0
 	ret

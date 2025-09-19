@@ -22,8 +22,7 @@ func000000000000000f:
 	ret
 
 func0000000000000004:
-	slli	a1, a0, 33
-	srli	a1, a1, 33
+	bclri	a1, a0, 31
 	sh1add	a0, a0, a1
 	lui	a1, 1048573
 	addi	a1, a1, 3

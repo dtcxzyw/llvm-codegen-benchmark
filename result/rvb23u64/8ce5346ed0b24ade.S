@@ -17,15 +17,13 @@ func0000000000000003:
 	ret
 
 func0000000000000013:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000014:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret

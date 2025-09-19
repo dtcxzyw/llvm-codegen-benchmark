@@ -13,8 +13,7 @@ func0000000000000030:
 	ret
 
 func0000000000000008:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	sub	a0, a0, a1
 	subw	a0, a0, a2
 	ret

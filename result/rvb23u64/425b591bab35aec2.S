@@ -1,6 +1,5 @@
 func0000000000000025:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	slli	a0, a0, 20
 	subw	a0, a1, a0
 	ret

@@ -13,8 +13,7 @@ func0000000000000001:
 
 func0000000000000003:
 	addi	a1, a1, 27
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	subw	a0, a0, a1
 	ret
 

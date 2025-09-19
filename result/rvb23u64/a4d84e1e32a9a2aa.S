@@ -1,6 +1,5 @@
 func0000000000000013:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	subw	a0, a1, a0
 	ret
 
@@ -12,14 +11,12 @@ func000000000000001a:
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	subw	a0, a1, a0
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	subw	a0, a1, a0
 	ret
 

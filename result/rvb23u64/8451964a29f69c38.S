@@ -131,16 +131,14 @@ func0000000000000028:
 	ret
 
 func0000000000000048:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	addw	a0, a0, a1
 	sltiu	a0, a0, 8
 	xori	a0, a0, 1
 	ret
 
 func0000000000000058:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1

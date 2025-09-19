@@ -1,6 +1,5 @@
 func0000000000000021:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	orn	a0, a1, a0
 	sext.w	a0, a0
 	seqz	a0, a0

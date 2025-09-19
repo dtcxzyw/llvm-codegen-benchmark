@@ -28,8 +28,7 @@ func000000000000000a:
 	ret
 
 func0000000000000010:
-	slli	a1, a1, 33
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	zext.w	a0, a0

@@ -8,8 +8,7 @@ func0000000000000003:
 
 func0000000000000002:
 	slli	a1, a1, 31
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret

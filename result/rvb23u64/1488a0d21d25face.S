@@ -26,8 +26,7 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	mulw	a0, a0, a1
 	ret
 

@@ -19,7 +19,7 @@ func0000000000000058:
 func0000000000000042:
 	lui	a3, 524288
 	xnor	a2, a2, a3
-	xor	a1, a1, a3
+	binvi	a1, a1, 31
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1

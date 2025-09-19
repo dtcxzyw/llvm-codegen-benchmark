@@ -22,8 +22,7 @@ func000000000000001f:
 func0000000000000004:
 	slli	a1, a1, 16
 	or	a0, a0, a1
-	lui	a1, 524288
-	or	a0, a0, a1
+	bseti	a0, a0, 31
 	zext.w	a0, a0
 	ret
 

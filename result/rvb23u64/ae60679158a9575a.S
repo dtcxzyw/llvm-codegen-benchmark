@@ -16,8 +16,7 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	lui	a2, 524288
-	or	a1, a1, a2
+	bseti	a1, a1, 31
 	zext.w	a1, a1
 	or	a0, a0, a1
 	ret

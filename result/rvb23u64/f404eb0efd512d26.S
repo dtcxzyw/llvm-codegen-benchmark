@@ -30,9 +30,8 @@ func0000000000000017:
 
 func0000000000000010:
 	zext.b	a2, a2
-	slli	a1, a1, 33
 	add	a0, a0, a2
-	srli	a1, a1, 33
+	bclri	a1, a1, 31
 	addw	a0, a0, a1
 	ret
 

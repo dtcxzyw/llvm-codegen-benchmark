@@ -1,6 +1,5 @@
 func0000000000000000:
-	lui	a1, 524288
-	xor	a0, a0, a1
+	binvi	a0, a0, 31
 	fmv.w.x	fa0, a0
 	ret
 

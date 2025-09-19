@@ -2,8 +2,7 @@ func000000000000000a:
 	lui	a2, 524272
 	and	a1, a1, a2
 	add	a0, a0, a1
-	slli	a0, a0, 33
-	srli	a0, a0, 33
+	bclri	a0, a0, 31
 	addiw	a0, a0, 1
 	ret
 

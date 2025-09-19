@@ -11,8 +11,7 @@ func000000000000000b:
 	ret
 
 func0000000000000000:
-	slli	a2, a2, 33
-	srli	a2, a2, 33
+	bclri	a2, a2, 31
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	zext.w	a0, a0
