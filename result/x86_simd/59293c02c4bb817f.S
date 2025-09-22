@@ -9,8 +9,9 @@ func0000000000000021:
 	sarq	$25, %rdx
 	addq	%rax, %rdx
 	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm2
+	movq	%rcx, %rdx
+	subq	%rax, %rdx
+	vmovq	%rdx, %xmm2
 	vmovq	%xmm1, %rsi
 	movq	%rsi, %rax
 	imulq	%r9
@@ -19,8 +20,9 @@ func0000000000000021:
 	sarq	$25, %rdx
 	addq	%rax, %rdx
 	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rsi
-	vmovq	%rsi, %xmm1
+	movq	%rsi, %rdx
+	subq	%rax, %rdx
+	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdi
 	movq	%rdi, %rax
@@ -30,8 +32,9 @@ func0000000000000021:
 	sarq	$25, %rdx
 	addq	%rax, %rdx
 	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rdi
-	vmovq	%rdi, %xmm2
+	movq	%rdi, %rdx
+	subq	%rax, %rdx
+	vmovq	%rdx, %xmm2
 	vmovq	%xmm0, %r8
 	movq	%r8, %rax
 	imulq	%r9
@@ -40,8 +43,9 @@ func0000000000000021:
 	sarq	$25, %rdx
 	addq	%rax, %rdx
 	imulq	$86400000, %rdx, %rax
-	subq	%rax, %r8
-	vmovq	%r8, %xmm0
+	movq	%r8, %rdx
+	subq	%rax, %rdx
+	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	movabsq	$5373003642731685221, %r9
