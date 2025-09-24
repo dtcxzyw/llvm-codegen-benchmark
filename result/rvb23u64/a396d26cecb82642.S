@@ -34,8 +34,6 @@ func0000000000000004:
 	fneg.s	fa0, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x5cde0b6b
 func0000000000000008:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
@@ -44,7 +42,8 @@ func0000000000000008:
 	fmul.s	fa0, fa0, fa5
 	ret
 .LBB3_2:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa0, %lo(.LCPI3_0)(a0)
+	lui	a0, 380385
+	addi	a0, a0, -1173
+	fmv.w.x	fa0, a0
 	ret
 

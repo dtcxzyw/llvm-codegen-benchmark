@@ -88,11 +88,10 @@ func0000000000000058:
 	vmand.mm	v0, v10, v12
 	ret
 
-.LCPI11_0:
-	.word	0x3f7d70a4
 func000000000000008a:
-	lui	a0, %hi(.LCPI11_0)
-	flw	fa5, %lo(.LCPI11_0)(a0)
+	lui	a0, 260055
+	addi	a0, a0, 164
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfgt.vf	v12, v10, fa5
 	vmsgt.vi	v10, v8, 1

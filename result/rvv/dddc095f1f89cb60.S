@@ -24,13 +24,12 @@ func0000000000000055:
 	vmnot.m	v0, v12
 	ret
 
-.LCPI3_0:
-	.word	0x3dcccccd
 func0000000000000022:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v12, v12, v16
+	lui	a0, 253133
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16

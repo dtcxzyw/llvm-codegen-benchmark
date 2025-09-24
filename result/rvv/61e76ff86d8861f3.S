@@ -12,34 +12,32 @@ func0000000000000024:
 	ret
 
 .LCPI1_0:
-	.word	0xbff70a3d
-.LCPI1_1:
 	.quad	0x400921fb54442d18
 func00000000000000a4:
 	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 786289
+	addi	a0, a0, -1475
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v20, v16, fa5
+	vmfle.vf	v20, v16, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa4
+	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v20
 	ret
 
 .LCPI2_0:
-	.word	0xbff70a3d
-.LCPI2_1:
 	.quad	0x400921fb54442d18
 func0000000000000044:
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 786289
+	addi	a0, a0, -1475
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfgt.vf	v20, v16, fa5
+	vmfgt.vf	v20, v16, fa4
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa4
+	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v20
 	ret
 

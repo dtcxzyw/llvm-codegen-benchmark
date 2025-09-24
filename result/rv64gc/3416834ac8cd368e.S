@@ -17,9 +17,13 @@ func0000000000000002:
 	ret
 
 func0000000000000009:
-	fclass.d	a2, fa0
-	andi	a2, a2, 896
-	snez	a2, a2
+	li	a2, 2047
+	slli	a2, a2, 52
+	fmv.d.x	fa5, a2
+	flt.d	a2, fa0, fa5
+	flt.d	a3, fa5, fa0
+	or	a2, a2, a3
+	xori	a2, a2, 1
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret

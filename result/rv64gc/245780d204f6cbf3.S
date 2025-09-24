@@ -124,11 +124,10 @@ func0000000000000444:
 	and	a0, a0, a1
 	ret
 
-.LCPI10_0:
-	.quad	0x7ff0000000000000
 func0000000000000666:
-	lui	a0, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa5
 	and	a0, a0, a1

@@ -32,11 +32,10 @@ func00000000000000ca:
 	fmv.s	fa0, fa1
 	ret
 
-.LCPI2_0:
-	.word	0x3b808081
 func0000000000000022:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 243720
+	addi	a0, a0, 129
+	fmv.w.x	fa5, a0
 	fmul.s	fa5, fa2, fa5
 	flt.s	a0, fa1, fa5
 	beqz	a0, .LBB2_3

@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.word	0x358637bd
 func0000000000000022:
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
+	lui	a1, 219235
+	addi	a1, a1, 1981
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa1, fa5
 	or	a0, a0, a1
 	flt.s	a1, fa0, fa5
@@ -20,11 +19,10 @@ func0000000000000077:
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.word	0x48976760
 func0000000000000044:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
+	lui	a1, 297334
+	addi	a1, a1, 1888
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa1
 	or	a0, a0, a1
 	flt.s	a1, fa5, fa0

@@ -24,11 +24,10 @@ func0000000000000022:
 .LBB0_4:
 	ret
 
-.LCPI1_0:
-	.quad	0x4066800000000000
 func0000000000000024:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
+	lui	a1, 32973
+	slli	a1, a1, 35
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	bnez	a1, .LBB1_2
 	fmv.d.x	fa5, zero

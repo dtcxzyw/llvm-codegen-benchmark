@@ -21,11 +21,10 @@ func0000000000000007:
 	andi	a0, a0, 5
 	ret
 
-.LCPI3_0:
-	.word	0x4e6e6b28
 func0000000000000008:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 321255
+	addi	a0, a0, -1240
+	fmv.w.x	fa5, a0
 	feq.s	a0, fa0, fa5
 	slli	a0, a0, 14
 	ret

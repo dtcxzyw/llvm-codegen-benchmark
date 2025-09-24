@@ -174,11 +174,10 @@ func00000000000000c4:
 	vmor.mm	v0, v16, v24
 	ret
 
-.LCPI18_0:
-	.quad	0x4024000000000000
 func00000000000000bd:
-	lui	a0, %hi(.LCPI18_0)
-	fld	fa5, %lo(.LCPI18_0)(a0)
+	lui	a0, 4105
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
 	vmflt.vf	v16, v8, fa5

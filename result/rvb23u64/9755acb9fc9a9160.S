@@ -64,11 +64,10 @@ func0000000000000003:
 	ori	a0, a0, 1
 	ret
 
-.LCPI9_0:
-	.word	0x3a83126f
 func000000000000000d:
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, 239665
+	addi	a0, a0, 623
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	slli	a0, a0, 3
 	addi	a0, a0, 9

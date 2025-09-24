@@ -15,27 +15,25 @@ func0000000000000019:
 	snez	a0, a0
 	ret
 
-.LCPI2_0:
-	.word	0x179abe15
 func000000000000001a:
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa5, fa0
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
+	lui	a0, 96684
+	addi	a0, a0, -491
 	fabs.s	fa5, fa5
+	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret
 
-.LCPI3_0:
-	.word	0x6753c21c
 func000000000000001c:
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa5, fa0
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa4, %lo(.LCPI3_0)(a0)
+	lui	a0, 423228
+	addi	a0, a0, 540
 	fabs.s	fa5, fa5
+	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret
 

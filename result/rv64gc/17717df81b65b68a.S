@@ -27,11 +27,10 @@ func0000000000000761:
 	seqz	a0, a0
 	ret
 
-.LCPI3_0:
-	.quad	0x3fe0000000000000
 func000000000000042a:
-	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
+	li	a1, 511
+	slli	a1, a1, 53
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	add	a0, a0, a1
 	srliw	a0, a0, 31

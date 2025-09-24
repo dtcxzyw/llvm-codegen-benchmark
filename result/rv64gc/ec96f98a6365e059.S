@@ -7,14 +7,13 @@ func0000000000000004:
 .LBB0_2:
 	ret
 
-.LCPI1_0:
-	.quad	0x3fe0000000000000
 func0000000000000003:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0
 	beqz	a0, .LBB1_2
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa0, %lo(.LCPI1_0)(a0)
+	li	a0, 511
+	slli	a0, a0, 53
+	fmv.d.x	fa0, a0
 	ret
 .LBB1_2:
 	fdiv.d	fa0, fa1, fa2

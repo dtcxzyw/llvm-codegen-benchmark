@@ -1,7 +1,8 @@
 func0000000000000008:
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
@@ -12,9 +13,13 @@ func0000000000000002:
 	ret
 
 func0000000000000009:
-	fclass.d	a1, fa0
-	andi	a1, a1, 896
-	snez	a1, a1
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	flt.d	a1, fa0, fa5
+	flt.d	a2, fa5, fa0
+	or	a1, a1, a2
+	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
@@ -74,21 +79,19 @@ func000000000000000b:
 	and	a0, a0, a1
 	ret
 
-.LCPI11_0:
-	.quad	0x3ff0000000000000
 func0000000000000005:
-	lui	a1, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a1)
+	li	a1, 1023
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
-.LCPI12_0:
-	.quad	0x7ff0000000000000
 func0000000000000006:
-	lui	a1, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a1)
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

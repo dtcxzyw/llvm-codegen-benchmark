@@ -31,11 +31,10 @@ func0000000000000009:
 	vmsleu.vv	v0, v10, v8
 	ret
 
-.LCPI3_0:
-	.quad	0x404e000000000000
 func0000000000000001:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 8231
+	slli	a0, a0, 37
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfmul.vf	v10, v10, fa5
 	vfcvt.rtz.xu.f.v	v10, v10

@@ -12,29 +12,27 @@ func0000000000000004:
 
 .LCPI1_0:
 	.quad	0xc7d2ced32a16a1b1
-.LCPI1_1:
-	.word	0xfe967699
 func0000000000000005:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fle.d	a0, fa1, fa5
 	beqz	a0, .LBB1_2
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa0, %lo(.LCPI1_1)(a0)
+	lui	a0, 1042791
+	addi	a0, a0, 1689
+	fmv.w.x	fa0, a0
 .LBB1_2:
 	ret
 
 .LCPI2_0:
 	.quad	0x3fefae147ae147ae
-.LCPI2_1:
-	.word	0x3f7d70a4
 func000000000000000b:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	flt.d	a0, fa5, fa1
 	beqz	a0, .LBB2_2
-	lui	a0, %hi(.LCPI2_1)
-	flw	fa0, %lo(.LCPI2_1)(a0)
+	lui	a0, 260055
+	addi	a0, a0, 164
+	fmv.w.x	fa0, a0
 .LBB2_2:
 	ret
 
@@ -51,23 +49,21 @@ func0000000000000003:
 
 .LCPI4_0:
 	.quad	0x3ee4f8b588e368f1
-.LCPI4_1:
-	.word	0x3727c5ac
 func000000000000000c:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	fle.d	a0, fa5, fa1
 	bnez	a0, .LBB4_2
-	lui	a0, %hi(.LCPI4_1)
-	flw	fa0, %lo(.LCPI4_1)(a0)
+	lui	a0, 225916
+	addi	a0, a0, 1452
+	fmv.w.x	fa0, a0
 .LBB4_2:
 	ret
 
-.LCPI5_0:
-	.quad	0x7ff0000000000000
 func0000000000000006:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa1, fa5
 	bnez	a0, .LBB5_2
 	lui	a0, 523264

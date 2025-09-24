@@ -17,8 +17,6 @@ func0000000000000044:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.word	0x7f7fffff
 func00000000000000c2:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa1
@@ -28,8 +26,9 @@ func00000000000000c2:
 .LBB2_2:
 	ret
 .LBB2_3:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa1, %lo(.LCPI2_0)(a0)
+	lui	a0, 522240
+	addi	a0, a0, -1
+	fmv.w.x	fa1, a0
 	flt.s	a0, fa0, fa1
 	bnez	a0, .LBB2_2
 .LBB2_4:

@@ -1,23 +1,21 @@
-.LCPI0_0:
-	.word	0x3b83126f
 func0000000000000082:
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 243761
 	sltiu	a0, a0, 51
+	addi	a1, a1, 623
 	xori	a0, a0, 1
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.word	0x24e69595
 func0000000000000012:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 151145
 	addi	a0, a0, -100
+	addi	a1, a1, 1429
 	seqz	a0, a0
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -29,14 +27,13 @@ func0000000000000068:
 	or	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0x358637bd
 func000000000000001b:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 219235
 	addi	a0, a0, -202
+	addi	a1, a1, 1981
 	seqz	a0, a0
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1

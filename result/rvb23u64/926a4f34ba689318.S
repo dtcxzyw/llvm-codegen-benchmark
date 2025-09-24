@@ -23,16 +23,15 @@ func00000000000000cc:
 	or	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0x3f733333
 func0000000000000120:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
-	fmv.w.x	fa4, zero
-	feq.s	a1, fa0, fa4
-	flt.s	a2, fa5, fa1
-	or	a0, a0, a1
+	lui	a1, 259891
+	fmv.w.x	fa5, zero
+	addi	a1, a1, 819
+	feq.s	a2, fa0, fa5
+	fmv.w.x	fa5, a1
+	flt.s	a1, fa5, fa1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000110:

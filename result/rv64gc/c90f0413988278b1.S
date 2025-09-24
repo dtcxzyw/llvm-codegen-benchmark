@@ -1,11 +1,10 @@
-.LCPI0_0:
-	.word	0x40490fdb
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	fsub.s	fa4, fa1, fa2
-	fadd.s	fa4, fa0, fa4
-	flt.s	a0, fa5, fa4
+	fsub.s	fa5, fa1, fa2
+	lui	a0, 263313
+	fadd.s	fa5, fa0, fa5
+	addi	a0, a0, -37
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000008:
@@ -15,14 +14,13 @@ func0000000000000008:
 	feq.s	a0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.word	0x3b4d2e1c
 func0000000000000005:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fsub.s	fa4, fa1, fa2
-	fadd.s	fa4, fa4, fa0
-	fle.s	a0, fa4, fa5
+	fsub.s	fa5, fa1, fa2
+	lui	a0, 242899
+	fadd.s	fa5, fa5, fa0
+	addi	a0, a0, -484
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

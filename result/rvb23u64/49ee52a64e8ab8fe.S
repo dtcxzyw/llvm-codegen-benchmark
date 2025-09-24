@@ -38,16 +38,15 @@ func0000000000000028:
 	feq.d	a0, fa0, fa5
 	ret
 
-.LCPI4_0:
-	.quad	0x4049000000000000
 func0000000000000124:
 	fabs.d	fa5, fa1
 	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB4_2
 	fmv.d	fa0, fa5
 .LBB4_2:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 16457
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa0
 	ret
 

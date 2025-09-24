@@ -15,12 +15,11 @@ func0000000000000004:
 	and	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.word	0x3f7fffef
 func0000000000000002:
 	fdiv.s	fa5, fa0, fa1
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a1)
+	lui	a1, 260096
+	addi	a1, a1, -17
+	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	xori	a0, a0, 1
 	or	a0, a0, a1

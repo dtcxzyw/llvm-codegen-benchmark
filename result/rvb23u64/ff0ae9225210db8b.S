@@ -119,13 +119,12 @@ func00000000000000d8:
 	or	a0, a0, a1
 	ret
 
-.LCPI12_0:
-	.quad	0x3cb0000000000000
 func00000000000000d6:
-	lui	a1, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a1)
 	sext.w	a0, a0
+	li	a1, 971
 	slti	a0, a0, 1
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -140,12 +139,11 @@ func0000000000000096:
 	or	a0, a0, a1
 	ret
 
-.LCPI14_0:
-	.quad	0x3eb4000000000000
 func000000000000008c:
-	lui	a1, %hi(.LCPI14_0)
-	fld	fa5, %lo(.LCPI14_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 4013
+	slli	a1, a1, 38
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	slti	a0, a0, 1
 	or	a0, a0, a1

@@ -23,9 +23,10 @@ func0000000000000005:
 	ret
 
 func0000000000000008:
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	feq.d	a1, fa0, fa5
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

@@ -8,15 +8,14 @@ func00000000000000a6:
 	xori	a0, a0, 1
 	ret
 
-.LCPI1_0:
-	.quad	0x4038000000000000
 func0000000000000048:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fadd.d	fa4, fa0, fa1
-	flt.d	a0, fa5, fa4
-	fmv.d.x	fa5, zero
-	flt.d	a1, fa4, fa5
+	fadd.d	fa5, fa0, fa1
+	lui	a0, 2055
+	slli	a0, a0, 39
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa4, fa5
+	fmv.d.x	fa4, zero
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
@@ -35,15 +34,14 @@ func0000000000000084:
 	or	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.quad	0x3cb0000000000000
 func0000000000000042:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	fadd.d	fa4, fa0, fa1
-	feq.d	a0, fa4, fa4
-	xori	a0, a0, 1
-	flt.d	a1, fa4, fa5
+	fadd.d	fa5, fa0, fa1
+	li	a0, 971
+	feq.d	a1, fa5, fa5
+	slli	a0, a0, 52
+	xori	a1, a1, 1
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	or	a0, a0, a1
 	ret
 

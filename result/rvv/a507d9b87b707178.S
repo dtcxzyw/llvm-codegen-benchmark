@@ -17,13 +17,12 @@ func0000000000000023:
 	vmorn.mm	v0, v16, v17
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func000000000000002a:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vmflt.vv	v7, v16, v24
 	vmfle.vf	v16, v8, fa5
 	vmand.mm	v0, v7, v16

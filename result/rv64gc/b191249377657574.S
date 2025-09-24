@@ -6,14 +6,13 @@ func0000000000000001:
 .LBB0_2:
 	ret
 
-.LCPI1_0:
-	.quad	0x3fd2000000000000
 func0000000000000018:
 	sext.w	a0, a0
 	lui	a1, 261776
 	bgeu	a1, a0, .LBB1_2
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa0, %lo(.LCPI1_0)(a0)
+	lui	a0, 8169
+	slli	a0, a0, 37
+	fmv.d.x	fa0, a0
 .LBB1_2:
 	ret
 
@@ -26,13 +25,12 @@ func0000000000000008:
 .LBB2_2:
 	ret
 
-.LCPI3_0:
-	.quad	0xbff0000000000000
 func0000000000000006:
 	sext.w	a0, a0
 	bgez	a0, .LBB3_2
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa0, %lo(.LCPI3_0)(a0)
+	li	a0, -1025
+	slli	a0, a0, 52
+	fmv.d.x	fa0, a0
 .LBB3_2:
 	ret
 

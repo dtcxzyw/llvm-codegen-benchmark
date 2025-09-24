@@ -8,16 +8,15 @@ func0000000000000110:
 	vmor.mm	v0, v16, v24
 	ret
 
-.LCPI1_0:
-	.quad	0x3a1b900000000000
 func0000000000000050:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fmv.d.x	fa4, zero
+	fmv.d.x	fa5, zero
+	lui	a0, 238009
+	slli	a0, a0, 32
 	vfadd.vv	v16, v16, v24
-	vmfeq.vf	v24, v16, fa4
+	vmfeq.vf	v24, v16, fa5
+	fmv.d.x	fa5, a0
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v24, v16
 	ret

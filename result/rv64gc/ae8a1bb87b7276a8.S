@@ -8,14 +8,13 @@ func0000000000000004:
 	fneg.d	fa0, fa5
 	ret
 
-.LCPI1_0:
-	.quad	0x3ff0000000000000
 func0000000000000007:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	beqz	a0, .LBB1_2
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa0, %lo(.LCPI1_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa0, a0
 .LBB1_2:
 	fmul.d	fa5, fa0, fa1
 	fneg.d	fa0, fa5

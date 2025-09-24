@@ -8,16 +8,15 @@ func0000000000000002:
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x41e0000000000000
 func000000000000000c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	li	a0, 1
 	ret
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 527
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa5, fa0
 	slli	a0, a0, 1
 	ret

@@ -50,14 +50,13 @@ func0000000000000004:
 	flt.d	a0, fa4, fa5
 	ret
 
-.LCPI6_0:
-	.quad	0x3ff0000000000000
 func0000000000000017:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
-	fmadd.d	fa4, fa1, fa1, fa2
-	fmadd.d	fa4, fa0, fa0, fa4
-	feq.d	a0, fa4, fa5
+	fmadd.d	fa5, fa1, fa1, fa2
+	li	a0, 1023
+	fmadd.d	fa5, fa0, fa0, fa5
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

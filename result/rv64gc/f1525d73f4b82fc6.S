@@ -1,22 +1,25 @@
 .LCPI0_0:
-	.quad	0x3fd0000000000000
 	.quad	0x3fb54fdf3b645a1d
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d
 func0000000000000021:
 	sext.w	a0, a0
-	li	a1, -6
+	li	a1, -18
 	beq	a0, a1, .LBB0_2
-	addi	a0, a0, 18
-	seqz	a0, a0
-	slli	a0, a0, 3
-	lui	a1, %hi(.LCPI0_0)
-	addi	a1, a1, %lo(.LCPI0_0)
-	add	a0, a0, a1
-	fld	fa0, 0(a0)
-	ret
+	li	a1, 1021
+	slli	a1, a1, 52
+	fmv.d.x	fa0, a1
+	li	a1, -6
+	beq	a0, a1, .LBB0_3
+	j	.LBB0_4
 .LBB0_2:
+	lui	a1, %hi(.LCPI0_0)
+	fld	fa0, %lo(.LCPI0_0)(a1)
+	li	a1, -6
+	bne	a0, a1, .LBB0_4
+.LBB0_3:
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa0, %lo(.LCPI0_1)(a0)
+.LBB0_4:
 	ret
 

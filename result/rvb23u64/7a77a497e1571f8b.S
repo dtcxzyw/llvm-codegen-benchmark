@@ -22,20 +22,18 @@ func0000000000000002:
 	fmul.s	fa0, fa5, fa0
 	ret
 
-.LCPI2_0:
-	.word	0x3e4ccccd
-.LCPI2_1:
-	.word	0x3f733333
 func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	lui	a0, %hi(.LCPI2_1)
-	flw	fa5, %lo(.LCPI2_1)(a0)
+	lui	a0, 259891
+	addi	a0, a0, 819
+	fmv.w.x	fa5, a0
 	fmul.s	fa0, fa5, fa0
 	ret
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	fmax.s	fa5, fa1, fa5
 	fmul.s	fa0, fa5, fa0
 	ret

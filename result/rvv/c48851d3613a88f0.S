@@ -33,16 +33,15 @@ func0000000000000044:
 	vmor.mm	v0, v16, v24
 	ret
 
-.LCPI3_0:
-	.quad	0xffefffffffffffff
 func000000000000012a:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	li	a0, 897
 	vand.vx	v16, v16, a0
+	li	a0, -1
+	bclri	a0, a0, 52
 	vmsne.vi	v24, v16, 0
+	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmorn.mm	v0, v24, v16
 	ret
@@ -57,13 +56,12 @@ func00000000000001b6:
 	vmorn.mm	v0, v8, v24
 	ret
 
-.LCPI5_0:
-	.quad	0x4012000000000000
 func0000000000000084:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, 8201
+	slli	a0, a0, 37
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v24, v16, fa5
 	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
@@ -150,13 +148,12 @@ func0000000000000288:
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI13_0:
-	.quad	0x3cb0000000000000
 func00000000000002aa:
-	lui	a0, %hi(.LCPI13_0)
-	fld	fa5, %lo(.LCPI13_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vmfle.vf	v24, v16, fa5
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v8, v16
@@ -190,14 +187,13 @@ func0000000000000310:
 	vmor.mm	v0, v16, v24
 	ret
 
-.LCPI16_0:
-	.quad	0x3cb0000000000000
 func0000000000000244:
-	lui	a0, %hi(.LCPI16_0)
-	fld	fa5, %lo(.LCPI16_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	li	a0, 971
 	vfmin.vv	v8, v8, v16
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -227,26 +223,24 @@ func0000000000000098:
 	vmor.mm	v0, v16, v24
 	ret
 
-.LCPI19_0:
-	.quad	0x3d00000000000000
 func00000000000000aa:
-	lui	a0, %hi(.LCPI19_0)
-	fld	fa5, %lo(.LCPI19_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	li	a0, 61
+	slli	a0, a0, 56
+	fmv.d.x	fa5, a0
 	vmfle.vf	v24, v16, fa5
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v8, v16
 	vmorn.mm	v0, v8, v24
 	ret
 
-.LCPI20_0:
-	.quad	0x3cb0000000000000
 func00000000000001ba:
-	lui	a0, %hi(.LCPI20_0)
-	fld	fa5, %lo(.LCPI20_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vmflt.vf	v24, v16, fa5
 	vmflt.vf	v16, v8, fa5
 	vmnot.m	v8, v16

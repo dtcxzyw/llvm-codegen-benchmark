@@ -29,11 +29,10 @@ func0000000000000024:
 	vmand.mm	v0, v16, v12
 	ret
 
-.LCPI3_0:
-	.word	0x3f99999a
 func0000000000000022:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 260506
+	addi	a0, a0, -1638
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	fli.s	fa5, 1.0

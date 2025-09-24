@@ -1,22 +1,20 @@
-.LCPI0_0:
-	.word	0x358637bd
 func00000000000000aa:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	fabs.s	fa4, fa1
-	fle.s	a0, fa4, fa5
-	fle.s	a1, fa0, fa5
+	fabs.s	fa5, fa1
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa5, fa4
+	fle.s	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.word	0x358637bd
 func00000000000001aa:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fabs.s	fa4, fa1
-	fle.s	a0, fa4, fa5
-	fle.s	a1, fa0, fa5
+	fabs.s	fa5, fa1
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa5, fa4
+	fle.s	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 
@@ -92,25 +90,23 @@ func000000000000006d:
 	and	a0, a0, a1
 	ret
 
-.LCPI9_0:
-	.word	0x358637bd
 func00000000000001dd:
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
-	fabs.s	fa4, fa1
-	fmin.s	fa4, fa0, fa4
-	flt.s	a0, fa4, fa5
+	fabs.s	fa5, fa1
+	lui	a0, 219235
+	fmin.s	fa5, fa0, fa5
+	addi	a0, a0, 1981
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
-.LCPI10_0:
-	.word	0x358637bd
 func00000000000000dd:
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
-	fabs.s	fa4, fa1
-	fmin.s	fa4, fa4, fa0
-	flt.s	a0, fa4, fa5
+	fabs.s	fa5, fa1
+	lui	a0, 219235
+	fmin.s	fa5, fa5, fa0
+	addi	a0, a0, 1981
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

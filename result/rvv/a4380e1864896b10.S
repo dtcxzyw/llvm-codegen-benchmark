@@ -30,11 +30,10 @@ func0000000000000004:
 	vmerge.vim	v8, v8, 0, v0
 	ret
 
-.LCPI4_0:
-	.word	0x40490fdb
 func000000000000000a:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 263313
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
 	vmand.mm	v0, v16, v0

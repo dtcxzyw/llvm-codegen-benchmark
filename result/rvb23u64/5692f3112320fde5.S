@@ -17,13 +17,12 @@ func0000000000000006:
 	and	a0, a0, a2
 	ret
 
-.LCPI2_0:
-	.quad	0x433fffffffffffff
 func000000000000000a:
-	lui	a2, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a2)
-	fabs.d	fa4, fa0
-	fle.d	a2, fa4, fa5
+	fabs.d	fa5, fa0
+	li	a2, -756
+	rori	a2, a2, 10
+	fmv.d.x	fa4, a2
+	fle.d	a2, fa5, fa4
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

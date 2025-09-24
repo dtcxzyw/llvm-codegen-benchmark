@@ -48,14 +48,13 @@ func0000000000000005:
 	xori	a0, a0, 1
 	ret
 
-.LCPI8_0:
-	.word	0x38d1b717
 func000000000000000d:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
-	fli.s	fa4, 1.0
-	fsub.s	fa4, fa4, fa0
-	flt.s	a0, fa4, fa5
+	fli.s	fa5, 1.0
+	lui	a0, 232731
+	fsub.s	fa5, fa5, fa0
+	addi	a0, a0, 1815
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
@@ -65,13 +64,12 @@ func000000000000000e:
 	feq.s	a0, fa5, fa5
 	ret
 
-.LCPI10_0:
-	.word	0x2b8cbccc
 func000000000000000a:
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
-	fli.s	fa4, 1.0
-	fsub.s	fa4, fa4, fa0
-	fle.s	a0, fa4, fa5
+	fli.s	fa5, 1.0
+	lui	a0, 178380
+	fsub.s	fa5, fa5, fa0
+	addi	a0, a0, -820
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa5, fa4
 	ret
 

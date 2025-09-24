@@ -118,14 +118,13 @@ func000000000000000a:
 	fle.d	a0, fa4, fa5
 	ret
 
-.LCPI12_0:
-	.quad	0x4076800000000000
 func0000000000000013:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
-	fsub.d	fa4, fa0, fa1
-	fabs.d	fa4, fa4
-	fle.d	a0, fa5, fa4
+	fsub.d	fa5, fa0, fa1
+	lui	a0, 33005
+	fabs.d	fa5, fa5
+	slli	a0, a0, 35
+	fmv.d.x	fa4, a0
+	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

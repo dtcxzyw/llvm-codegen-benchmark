@@ -1,9 +1,10 @@
 func0000000000000101:
 	sext.w	a0, a0
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
+	li	a1, 2047
+	slli	a1, a1, 52
 	addi	a0, a0, -34
-	srli	a1, a1, 63
+	fmv.d.x	fa5, a1
+	feq.d	a1, fa0, fa5
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -26,20 +27,23 @@ func000000000000004c:
 
 func0000000000000121:
 	sext.w	a0, a0
-	fclass.d	a1, fa0
-	andi	a1, a1, 896
-	snez	a1, a1
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	flt.d	a1, fa0, fa5
+	flt.d	a2, fa5, fa0
+	or	a1, a1, a2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
-.LCPI4_0:
-	.quad	0x3ff0000000000000
 func0000000000000048:
-	lui	a1, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a1)
 	sext.w	a0, a0
+	li	a1, 1023
+	slli	a1, a1, 52
 	sltiu	a0, a0, 23
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	not	a0, a0
 	and	a0, a0, a1
@@ -53,38 +57,35 @@ func0000000000000181:
 	and	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.quad	0x3ff0000000000000
 func0000000000000061:
-	lui	a1, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a1)
 	sext.w	a0, a0
+	li	a1, 1023
+	slli	a1, a1, 52
 	addi	a0, a0, -1
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
-.LCPI7_0:
-	.quad	0x3ff0000000000000
 func00000000000000a1:
-	lui	a1, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a1)
 	sext.w	a0, a0
+	li	a1, 1023
+	slli	a1, a1, 52
 	addi	a0, a0, 1
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
-.LCPI8_0:
-	.quad	0x4014000000000000
 func0000000000000041:
-	lui	a1, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 4101
+	slli	a1, a1, 38
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -98,13 +99,12 @@ func0000000000000081:
 	and	a0, a0, a1
 	ret
 
-.LCPI10_0:
-	.quad	0x7ff0000000000000
 func00000000000000cc:
-	lui	a1, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a1)
 	sext.w	a0, a0
+	li	a1, 2047
+	slli	a1, a1, 52
 	addi	a0, a0, -10
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	snez	a0, a0
 	and	a0, a0, a1
@@ -169,12 +169,11 @@ func00000000000000e1:
 	and	a0, a0, a1
 	ret
 
-.LCPI18_0:
-	.quad	0x4090000000000000
 func0000000000000094:
-	lui	a1, %hi(.LCPI18_0)
-	fld	fa5, %lo(.LCPI18_0)(a1)
 	sext.w	a0, a0
+	li	a1, 1033
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	sltiu	a0, a0, 4
 	and	a0, a0, a1

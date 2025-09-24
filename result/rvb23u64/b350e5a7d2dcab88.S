@@ -20,18 +20,16 @@ func0000000000000009:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.quad	0x4056800000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fmul.d	fa4, fa0, fa1
-	fabs.d	fa3, fa4
-	flt.d	a0, fa5, fa3
+	fmul.d	fa5, fa0, fa1
+	lui	a0, 32941
+	fabs.d	fa4, fa5
+	slli	a0, a0, 35
+	fmv.d.x	fa0, a0
+	flt.d	a0, fa0, fa4
 	bnez	a0, .LBB2_2
-	fmv.d	fa5, fa4
-.LBB2_2:
 	fmv.d	fa0, fa5
+.LBB2_2:
 	ret
 
 func0000000000000008:

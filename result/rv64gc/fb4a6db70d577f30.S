@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.quad	0x3fe0000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 511
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa1
 	bnez	a0, .LBB0_2
 	fmv.d	fa5, fa1
@@ -20,9 +19,11 @@ func0000000000000002:
 	ret
 
 func0000000000000008:
-	fclass.d	a0, fa1
-	slli	a0, a0, 56
-	bgez	a0, .LBB2_2
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	feq.d	a0, fa1, fa5
+	beqz	a0, .LBB2_2
 	fmv.d.x	fa1, zero
 .LBB2_2:
 	fadd.d	fa0, fa1, fa0

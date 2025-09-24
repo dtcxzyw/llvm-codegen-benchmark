@@ -1,11 +1,10 @@
-.LCPI0_0:
-	.word	0x4461d2f7
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	fli.s	fa4, 16.0
+	fli.s	fa5, 16.0
+	lui	a0, 280093
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmv.v.f	v12, fa4
+	vfmv.v.f	v12, fa5
+	addi	a0, a0, 759
+	fmv.w.x	fa5, a0
 	lui	a0, 274048
 	vfmacc.vf	v12, fa5, v8
 	fmv.w.x	fa5, a0

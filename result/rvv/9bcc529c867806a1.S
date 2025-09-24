@@ -31,13 +31,12 @@ func000000000000001c:
 	vmand.mm	v0, v8, v9
 	ret
 
-.LCPI3_0:
-	.quad	0x4069000000000000
 func000000000000002c:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 16489
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfgt.vf	v9, v16, fa5
 	vsetvli	zero, zero, e8, m1, ta, ma

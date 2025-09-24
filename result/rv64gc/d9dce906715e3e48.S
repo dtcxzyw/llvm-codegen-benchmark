@@ -60,16 +60,19 @@ func000000000000001c:
 	ret
 
 func0000000000000012:
-	fclass.d	a0, fa0
-	andi	a0, a0, 896
-	snez	a0, a0
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
+	or	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 
-.LCPI10_0:
-	.quad	0x7ff0000000000000
 func000000000000000c:
-	lui	a0, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa0, fa5
 	ret
 

@@ -6,18 +6,16 @@ func0000000000000084:
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x3870000000000000
-.LCPI1_1:
-	.quad	0x3ff0000000000000
 func00000000000000db:
-	lui	a0, %hi(.LCPI1_0)
-	lui	a1, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fld	fa4, %lo(.LCPI1_1)(a1)
-	fsub.d	fa3, fa1, fa2
-	flt.d	a0, fa3, fa5
-	flt.d	a1, fa4, fa0
+	fsub.d	fa5, fa1, fa2
+	li	a0, 903
+	li	a1, 1023
+	slli	a0, a0, 52
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
+	fmv.d.x	fa5, a1
+	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

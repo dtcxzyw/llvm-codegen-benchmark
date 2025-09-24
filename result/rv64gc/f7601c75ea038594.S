@@ -50,25 +50,23 @@ func0000000000000017:
 	or	a0, a0, a1
 	ret
 
-.LCPI5_0:
-	.quad	0x3ff0000000000000
 func00000000000000a4:
-	lui	a1, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a1)
 	sext.w	a0, a0
+	li	a1, 1023
 	sgtz	a0, a0
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.quad	0x4014000000000000
 func0000000000000014:
-	lui	a1, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 4101
 	addi	a0, a0, -7
+	slli	a1, a1, 38
 	seqz	a0, a0
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

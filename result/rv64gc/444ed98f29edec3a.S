@@ -47,9 +47,13 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	fclass.d	a0, fa2
-	andi	a0, a0, 896
-	bnez	a0, .LBB6_2
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa2, fa5
+	flt.d	a1, fa5, fa2
+	or	a0, a0, a1
+	beqz	a0, .LBB6_2
 	fmv.d	fa0, fa1
 .LBB6_2:
 	ret
@@ -62,11 +66,10 @@ func000000000000000c:
 .LBB7_2:
 	ret
 
-.LCPI8_0:
-	.quad	0x7ff0000000000000
 func0000000000000006:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa2, fa5
 	bnez	a0, .LBB8_2
 	fmv.d	fa0, fa1

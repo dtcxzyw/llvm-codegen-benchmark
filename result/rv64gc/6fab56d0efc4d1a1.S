@@ -7,9 +7,10 @@ func0000000000000006:
 	ret
 
 func0000000000000010:
-	fclass.d	a2, fa0
-	slli	a2, a2, 56
-	srli	a2, a2, 63
+	li	a2, 2047
+	slli	a2, a2, 52
+	fmv.d.x	fa5, a2
+	feq.d	a2, fa0, fa5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

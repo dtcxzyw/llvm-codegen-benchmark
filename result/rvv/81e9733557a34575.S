@@ -27,26 +27,24 @@ func0000000000000022:
 	vmflt.vv	v0, v8, v12
 	ret
 
-.LCPI3_0:
-	.word	0x3f666666
 func0000000000000024:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
+	lui	a0, 259686
 	vmerge.vvm	v12, v16, v12, v0
+	addi	a0, a0, 1638
+	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vmflt.vv	v0, v12, v8
 	ret
 
-.LCPI4_0:
-	.word	0x3f4ccccd
 func0000000000000023:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
+	lui	a0, 259277
 	vmerge.vvm	v12, v16, v12, v0
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vmfle.vv	v16, v12, v8
 	vmnot.m	v0, v16

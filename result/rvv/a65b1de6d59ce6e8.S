@@ -16,14 +16,13 @@ func0000000000000007:
 	vmv.v.v	v8, v16
 	ret
 
-.LCPI1_0:
-	.quad	0x4059000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fmv.d.x	fa4, zero
+	lui	a0, 16473
+	fmv.d.x	fa5, zero
+	slli	a0, a0, 36
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmfgt.vf	v0, v8, fa4
+	vmfgt.vf	v0, v8, fa5
+	fmv.d.x	fa5, a0
 	vfmul.vf	v24, v16, fa5
 	vmv.v.i	v16, 0
 	vfdiv.vv	v16, v24, v8, v0.t

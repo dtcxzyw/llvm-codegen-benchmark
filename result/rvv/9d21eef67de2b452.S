@@ -9,19 +9,18 @@ func0000000000000008:
 	ret
 
 .LCPI1_0:
-	.quad	0x408f400000000000
-.LCPI1_1:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
-	fmv.d.x	fa3, zero
+	lui	a0, 66109
+	slli	a0, a0, 34
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v0, v8, fa3
-	vfmul.vf	v8, v16, fa5
-	vfmerge.vfm	v8, v8, fa4, v0
+	vmflt.vf	v0, v8, fa4
+	fmv.d.x	fa4, a0
+	vfmul.vf	v8, v16, fa4
+	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
 .LCPI2_0:

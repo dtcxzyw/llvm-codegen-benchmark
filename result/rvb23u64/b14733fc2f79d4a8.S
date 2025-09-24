@@ -103,13 +103,12 @@ func0000000000000108:
 	or	a0, a0, a1
 	ret
 
-.LCPI14_0:
-	.quad	0xc1e0000000000000
 func00000000000000f4:
-	lui	a0, %hi(.LCPI14_0)
-	fld	fa5, %lo(.LCPI14_0)(a0)
 	feq.d	a0, fa1, fa0
+	li	a1, -497
 	xori	a0, a0, 1
+	slli	a1, a1, 53
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

@@ -12,27 +12,25 @@ func00000000000002d8:
 	or	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x3cb0000000000000
 func00000000000004d6:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
 	sext.w	a0, a0
-	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
+	fabs.d	fa5, fa0
+	li	a1, 971
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func00000000000000d6:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
 	sext.w	a0, a0
-	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
+	fabs.d	fa5, fa0
+	li	a1, 971
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
 	slti	a0, a0, 1
 	or	a0, a0, a1

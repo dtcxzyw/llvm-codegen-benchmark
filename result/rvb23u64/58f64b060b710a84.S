@@ -31,20 +31,19 @@ func0000000000000042:
 	ret
 
 .LCPI2_0:
-	.quad	0xc1e0000000000000
-.LCPI2_1:
 	.quad	0x41dfffffffc00000
 func00000000000000c4:
+	fmv.d	fa5, fa0
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_1)(a0)
-	fmax.d	fa4, fa0, fa4
-	flt.d	a0, fa5, fa4
+	fld	fa0, %lo(.LCPI2_0)(a0)
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa4, a0
+	fmax.d	fa5, fa5, fa4
+	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB2_2
-	fmv.d	fa5, fa4
-.LBB2_2:
 	fmv.d	fa0, fa5
+.LBB2_2:
 	ret
 
 func0000000000000044:

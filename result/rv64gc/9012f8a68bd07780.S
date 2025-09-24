@@ -15,13 +15,12 @@ func0000000000000008:
 	fmv.w.x	fa0, a0
 	ret
 
-.LCPI2_0:
-	.word	0xff7fffff
 func0000000000000001:
 	li	a1, 1
 	beq	a0, a1, .LBB2_2
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa0, %lo(.LCPI2_0)(a0)
+	lui	a0, 1046528
+	addi	a0, a0, -1
+	fmv.w.x	fa0, a0
 	ret
 .LBB2_2:
 	lui	a0, 798720

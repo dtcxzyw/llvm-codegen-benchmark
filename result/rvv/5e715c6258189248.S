@@ -38,13 +38,12 @@ func0000000000000008:
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
-.LCPI4_0:
-	.word	0x322bcc77
 func000000000000001b:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	vmfgt.vf	v16, v12, fa5
 	vmnot.m	v0, v16
 	vmerge.vim	v8, v8, 0, v0

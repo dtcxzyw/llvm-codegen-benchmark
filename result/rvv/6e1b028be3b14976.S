@@ -78,21 +78,19 @@ func000000000000000c:
 	vmfge.vf	v0, v8, fa5
 	ret
 
-.LCPI9_0:
-	.word	0x3c23d70a
 func000000000000000e:
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vmfeq.vv	v0, v8, v8
 	ret
 
-.LCPI10_0:
-	.word	0x3b808081
 func0000000000000009:
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
+	lui	a0, 243720
+	addi	a0, a0, 129
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, inf

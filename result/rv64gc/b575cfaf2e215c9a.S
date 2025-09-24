@@ -10,15 +10,14 @@ func0000000000000005:
 	xori	a0, a0, 1
 	ret
 
-.LCPI1_0:
-	.word	0x3e4ccccd
 func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fmv.s	fa0, fa1
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	lui	a0, 278532
 	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0

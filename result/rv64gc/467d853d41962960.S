@@ -2,22 +2,20 @@ func0000000000000002:
 	srliw	a0, a0, 31
 	ret
 
-.LCPI1_0:
-	.word	0x4e6e6b28
 func0000000000000008:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.s.w	fa4, a0
-	feq.s	a0, fa4, fa5
+	fcvt.s.w	fa5, a0
+	lui	a0, 321255
+	addi	a0, a0, -1240
+	fmv.w.x	fa4, a0
+	feq.s	a0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.word	0x4f3504f3
 func0000000000000004:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.s.w	fa4, a0
-	flt.s	a0, fa5, fa4
+	fcvt.s.w	fa5, a0
+	lui	a0, 324432
+	addi	a0, a0, 1267
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	ret
 
 func000000000000000a:

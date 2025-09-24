@@ -1,14 +1,13 @@
-.LCPI0_0:
-	.quad	0x3a1b900000000000
 func0000000000000a10:
-	lui	a0, %hi(.LCPI0_0)
 	fmv.d.x	fa5, zero
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v8, fa5
 	fli.d	fa5, 1.0
 	vmfeq.vf	v25, v8, fa5
-	vmflt.vf	v8, v16, fa4
+	lui	a0, 238009
+	slli	a0, a0, 32
+	fmv.d.x	fa5, a0
+	vmflt.vf	v8, v16, fa5
 	vmor.mm	v9, v24, v25
 	vmor.mm	v0, v9, v8
 	ret

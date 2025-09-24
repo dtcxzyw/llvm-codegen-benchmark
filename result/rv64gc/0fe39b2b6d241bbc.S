@@ -1,34 +1,31 @@
-.LCPI0_0:
-	.quad	0x3ff0000000000000
 func0000000000000034:
-	lui	a2, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a2)
-	fabs.d	fa4, fa0
-	flt.d	a2, fa4, fa5
-	xori	a2, a2, 1
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
-
-.LCPI1_0:
-	.quad	0x3ff0000000000000
-func000000000000002c:
-	lui	a2, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a2)
-	fabs.d	fa4, fa0
+	fabs.d	fa5, fa0
+	li	a2, 1023
+	slli	a2, a2, 52
+	fmv.d.x	fa4, a2
 	flt.d	a2, fa5, fa4
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
-.LCPI2_0:
-	.quad	0x3a1b900000000000
-func0000000000000008:
-	lui	a2, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a2)
-	fabs.d	fa4, fa0
+func000000000000002c:
+	fabs.d	fa5, fa0
+	li	a2, 1023
+	slli	a2, a2, 52
+	fmv.d.x	fa4, a2
 	flt.d	a2, fa4, fa5
+	xori	a2, a2, 1
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+
+func0000000000000008:
+	fabs.d	fa5, fa0
+	lui	a2, 238009
+	slli	a2, a2, 32
+	fmv.d.x	fa4, a2
+	flt.d	a2, fa5, fa4
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

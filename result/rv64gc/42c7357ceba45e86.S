@@ -11,11 +11,16 @@ func0000000000000044:
 
 func0000000000000099:
 	fsub.d	fa5, fa1, fa2
-	fclass.d	a0, fa0
+	li	a0, 2047
 	fclass.d	a1, fa5
+	slli	a0, a0, 52
 	andi	a1, a1, 897
-	andi	a0, a0, 896
+	fmv.d.x	fa5, a0
+	snez	a0, a1
+	flt.d	a1, fa0, fa5
+	flt.d	a2, fa5, fa0
+	or	a1, a1, a2
+	xori	a1, a1, 1
 	or	a0, a0, a1
-	snez	a0, a0
 	ret
 

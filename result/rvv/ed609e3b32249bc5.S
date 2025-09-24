@@ -1,10 +1,9 @@
-.LCPI0_0:
-	.quad	0x408f400000000000
 func0000000000000082:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v24, v8
+	lui	a0, 66109
+	slli	a0, a0, 34
+	fmv.d.x	fa5, a0
 	vmflt.vf	v7, v24, fa5
 	vmfeq.vv	v24, v8, v16
 	vmand.mm	v0, v7, v24

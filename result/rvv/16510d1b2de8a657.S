@@ -23,11 +23,10 @@ func0000000000000048:
 	vmor.mm	v0, v12, v20
 	ret
 
-.LCPI3_0:
-	.word	0xc8c7ce60
 func000000000000010e:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 822397
+	addi	a0, a0, -416
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v20, v16, fa5
 	vmfne.vv	v16, v8, v12

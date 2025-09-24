@@ -6,23 +6,21 @@ func000000000000000a:
 	or	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.word	0x3a83126f
 func0000000000000028:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
-	fabs.s	fa4, fa0
-	flt.s	a1, fa5, fa4
+	fabs.s	fa5, fa0
+	lui	a1, 239665
+	addi	a1, a1, 623
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.word	0x48976760
 func0000000000000008:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fabs.s	fa4, fa0
-	flt.s	a1, fa5, fa4
+	fabs.s	fa5, fa0
+	lui	a1, 297334
+	addi	a1, a1, 1888
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
@@ -42,13 +40,12 @@ func0000000000000024:
 	or	a0, a0, a1
 	ret
 
-.LCPI5_0:
-	.word	0x358637bd
 func000000000000002a:
-	lui	a1, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a1)
-	fabs.s	fa4, fa0
-	fle.s	a1, fa4, fa5
+	fabs.s	fa5, fa0
+	lui	a1, 219235
+	addi	a1, a1, 1981
+	fmv.w.x	fa4, a1
+	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -60,23 +57,21 @@ func0000000000000012:
 	or	a0, a0, a1
 	ret
 
-.LCPI7_0:
-	.word	0x6753c21c
 func0000000000000038:
-	lui	a1, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a1)
-	fabs.s	fa4, fa0
-	fle.s	a1, fa5, fa4
+	fabs.s	fa5, fa0
+	lui	a1, 423228
+	addi	a1, a1, 540
+	fmv.w.x	fa4, a1
+	fle.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
-.LCPI8_0:
-	.word	0x179abe15
 func0000000000000034:
-	lui	a1, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a1)
-	fabs.s	fa4, fa0
-	fle.s	a1, fa4, fa5
+	fabs.s	fa5, fa0
+	lui	a1, 96684
+	addi	a1, a1, -491
+	fmv.w.x	fa4, a1
+	fle.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 

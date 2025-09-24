@@ -8,15 +8,14 @@ func0000000000000001:
 	vfmacc.vv	v8, v16, v16
 	ret
 
-.LCPI1_0:
-	.word	0x3ca3d70a
 func0000000000000000:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 524288
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa5, a0
+	lui	a0, 248381
+	addi	a0, a0, 1802
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v16, v16, fa4
+	vfmul.vf	v16, v16, fa5
+	fmv.w.x	fa5, a0
 	vfmacc.vf	v16, fa5, v12
 	vfmacc.vv	v8, v16, v16
 	ret

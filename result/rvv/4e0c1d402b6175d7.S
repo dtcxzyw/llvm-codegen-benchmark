@@ -27,14 +27,13 @@ func0000000000000048:
 	vmor.mm	v0, v0, v12
 	ret
 
-.LCPI3_0:
-	.word	0xb8d1b717
 func000000000000006a:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
-	fli.s	fa4, 1.0
+	lui	a0, 757019
+	fli.s	fa5, 1.0
+	addi	a0, a0, 1815
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v12, v8, fa4
+	vmfle.vf	v12, v8, fa5
+	fmv.w.x	fa5, a0
 	vmfge.vf	v13, v8, fa5
 	vmnot.m	v8, v12
 	vmorn.mm	v8, v8, v13

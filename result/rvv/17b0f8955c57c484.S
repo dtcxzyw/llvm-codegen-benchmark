@@ -20,11 +20,10 @@ func000000000000000c:
 	vfcvt.rtz.x.f.v	v8, v8
 	ret
 
-.LCPI3_0:
-	.word	0x46fffe00
 func000000000000000a:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 290816
+	addi	a0, a0, -512
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfmin.vf	v8, v8, fa5
 	vfcvt.rtz.x.f.v	v8, v8

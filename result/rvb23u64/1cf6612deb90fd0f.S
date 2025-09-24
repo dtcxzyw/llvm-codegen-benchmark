@@ -61,11 +61,10 @@ func0000000000000006:
 	or	a0, a0, a1
 	ret
 
-.LCPI7_0:
-	.word	0x3b808081
 func0000000000000010:
-	lui	a1, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a1)
+	lui	a1, 243720
+	addi	a1, a1, 129
+	fmv.w.x	fa5, a1
 	fmul.s	fa5, fa0, fa5
 	fli.s	fa4, 1.0
 	feq.s	a1, fa5, fa4

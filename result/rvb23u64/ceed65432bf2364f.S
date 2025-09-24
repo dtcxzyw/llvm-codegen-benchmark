@@ -15,15 +15,14 @@ func00000000000000ca:
 	fle.s	a0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.word	0x7f7fffff
 func00000000000000c4:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmul.s	fa4, fa0, fa1
-	fli.s	fa3, min
-	fmax.s	fa4, fa4, fa3
-	flt.s	a0, fa5, fa4
+	fmul.s	fa5, fa0, fa1
+	fli.s	fa4, min
+	lui	a0, 522240
+	fmax.s	fa5, fa5, fa4
+	addi	a0, a0, -1
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000024:

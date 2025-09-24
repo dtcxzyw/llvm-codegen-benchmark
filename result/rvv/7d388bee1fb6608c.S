@@ -28,17 +28,16 @@ func0000000000000035:
 	vmandn.mm	v0, v16, v17
 	ret
 
-.LCPI2_0:
-	.quad	0x47e0000000000000
 func0000000000000036:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v8
 	vfclass.v	v8, v8
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	li	a0, 126
 	vand.vx	v8, v8, a0
+	li	a0, 575
+	slli	a0, a0, 53
 	vmsne.vi	v24, v8, 0
+	fmv.d.x	fa5, a0
 	vmfge.vf	v8, v16, fa5
 	vmandn.mm	v0, v24, v8
 	ret

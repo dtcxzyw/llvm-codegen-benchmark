@@ -29,13 +29,12 @@ func000000000000000a:
 	or	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.quad	0x0010000000000000
 func0000000000000002:
-	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
-	fcvt.d.s	fa4, fa0
-	flt.d	a1, fa4, fa5
+	fcvt.d.s	fa5, fa0
+	li	a1, 1
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 

@@ -38,15 +38,14 @@ func0000000000000004:
 .LBB3_2:
 	ret
 
-.LCPI4_0:
-	.word	0x49742400
 func0000000000000007:
 	fmul.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa5, fa4
 	beqz	a0, .LBB4_2
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa0, %lo(.LCPI4_0)(a0)
+	lui	a0, 300866
+	addi	a0, a0, 1024
+	fmv.w.x	fa0, a0
 .LBB4_2:
 	ret
 

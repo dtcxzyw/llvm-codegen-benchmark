@@ -17,13 +17,12 @@ func0000000000000004:
 	flt.d	a0, fa1, fa0
 	ret
 
-.LCPI2_0:
-	.quad	0x404e000000000000
 func0000000000000003:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa1, %lo(.LCPI2_0)(a0)
+	lui	a0, 8231
+	slli	a0, a0, 37
+	fmv.d.x	fa1, a0
 .LBB2_2:
 	fle.d	a0, fa1, fa0
 	xori	a0, a0, 1

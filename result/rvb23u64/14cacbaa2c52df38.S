@@ -5,13 +5,12 @@ func0000000000000001:
 	fadd.s	fa0, fa5, fa0
 	ret
 
-.LCPI1_0:
-	.word	0x40c90fdb
 func0000000000000000:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.s.wu	fa4, a0
-	fdiv.s	fa5, fa5, fa4
+	fcvt.s.wu	fa5, a0
+	lui	a0, 265361
+	addi	a0, a0, -37
+	fmv.w.x	fa4, a0
+	fdiv.s	fa5, fa4, fa5
 	fadd.s	fa0, fa5, fa0
 	ret
 

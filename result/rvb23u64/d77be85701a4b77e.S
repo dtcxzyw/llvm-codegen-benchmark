@@ -20,11 +20,10 @@ func0000000000000002:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.word	0x3fa28f5c
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 260649
+	addi	a0, a0, -164
+	fmv.w.x	fa5, a0
 	fmul.s	fa4, fa1, fa5
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa5, fa4

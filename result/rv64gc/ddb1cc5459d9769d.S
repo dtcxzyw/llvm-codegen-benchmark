@@ -43,19 +43,17 @@ func000000000000000a:
 .LBB4_2:
 	ret
 
-.LCPI5_0:
-	.word	0xdd5e0b6b
 func000000000000000b:
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 906721
+	addi	a0, a0, -1173
+	fmv.w.x	fa5, a0
 	fmax.s	fa0, fa0, fa5
 	ret
 
-.LCPI6_0:
-	.word	0x477fff00
 func000000000000000c:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 292864
+	addi	a0, a0, -256
+	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB6_2
 	fmv.s	fa5, fa0

@@ -5,11 +5,10 @@ func0000000000000054:
 	and	a0, a0, a2
 	ret
 
-.LCPI1_0:
-	.word	0xc8c7ce60
 func00000000000000f4:
-	lui	a2, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a2)
+	lui	a2, 822397
+	addi	a2, a2, -416
+	fmv.w.x	fa5, a2
 	feq.s	a2, fa0, fa5
 	xori	a2, a2, 1
 	sltu	a0, a0, a1

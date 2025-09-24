@@ -15,8 +15,6 @@ func0000000000000002:
 	fmv.w.x	fa0, a0
 	ret
 
-.LCPI1_0:
-	.word	0x3f4ccccd
 func0000000000000004:
 	fcvt.s.d	fa5, fa0
 	lui	a1, 260608
@@ -31,7 +29,8 @@ func0000000000000004:
 	fmv.s	fa0, fa5
 	beqz	a0, .LBB1_2
 .LBB1_4:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa0, %lo(.LCPI1_0)(a0)
+	lui	a0, 259277
+	addi	a0, a0, -819
+	fmv.w.x	fa0, a0
 	ret
 

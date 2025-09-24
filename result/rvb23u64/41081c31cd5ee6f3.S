@@ -57,14 +57,13 @@ func0000000000000220:
 	or	a0, a0, a1
 	ret
 
-.LCPI5_0:
-	.quad	0x3cb0000000000000
 func0000000000000374:
-	lui	a1, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a1)
-	fabs.d	fa4, fa1
-	flt.d	a1, fa4, fa5
-	flt.d	a2, fa0, fa5
+	fabs.d	fa5, fa1
+	li	a1, 971
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa5, fa4
+	flt.d	a2, fa0, fa4
 	and	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

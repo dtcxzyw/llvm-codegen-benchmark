@@ -51,14 +51,13 @@ func0000000000000004:
 	flt.d	a0, fa5, fa4
 	ret
 
-.LCPI6_0:
-	.quad	0x3a1b900000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
-	fadd.d	fa4, fa0, fa1
-	fabs.d	fa4, fa4
-	flt.d	a0, fa4, fa5
+	fadd.d	fa5, fa0, fa1
+	lui	a0, 238009
+	fabs.d	fa5, fa5
+	slli	a0, a0, 32
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	ret
 
 .LCPI7_0:
@@ -78,14 +77,13 @@ func0000000000000009:
 	snez	a0, a0
 	ret
 
-.LCPI9_0:
-	.quad	0x4066800000000000
 func0000000000000018:
-	lui	a0, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a0)
-	fadd.d	fa4, fa0, fa1
-	fabs.d	fa4, fa4
-	feq.d	a0, fa4, fa5
+	fadd.d	fa5, fa0, fa1
+	lui	a0, 32973
+	fabs.d	fa5, fa5
+	slli	a0, a0, 35
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa5, fa4
 	ret
 
 func0000000000000019:

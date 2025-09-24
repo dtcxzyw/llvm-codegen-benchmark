@@ -45,11 +45,10 @@ func000000000000000c:
 	vmor.mm	v0, v0, v8
 	ret
 
-.LCPI6_0:
-	.word	0x3f733333
 func0000000000000010:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 259891
+	addi	a0, a0, 819
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v9, v12, fa5
 	vmor.mm	v8, v8, v9

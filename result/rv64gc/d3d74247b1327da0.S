@@ -73,15 +73,14 @@ func0000000000000022:
 	and	a0, a0, a1
 	ret
 
-.LCPI7_0:
-	.quad	0x3ff0000000000000
 func0000000000000084:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fmul.d	fa4, fa1, fa2
-	fmv.d.x	fa3, zero
-	feq.d	a0, fa4, fa3
-	flt.d	a1, fa5, fa0
+	fmul.d	fa5, fa1, fa2
+	fmv.d.x	fa4, zero
+	li	a0, 1023
+	feq.d	a1, fa5, fa4
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
 	and	a0, a0, a1
 	ret
 

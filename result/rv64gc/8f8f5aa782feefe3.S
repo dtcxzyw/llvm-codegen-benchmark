@@ -21,25 +21,26 @@ func000000000000000c:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.word	0x7f7fffff
-	.word	0xff7fffff
 func0000000000000002:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa1, fa5
-	slli	a0, a0, 2
-	lui	a1, %hi(.LCPI2_0)
-	addi	a1, a1, %lo(.LCPI2_0)
-	add	a0, a0, a1
-	flw	fa5, 0(a0)
+	bnez	a0, .LBB2_2
+	lui	a0, 522240
+	addi	a0, a0, -1
+	fmv.w.x	fa5, a0
+	fmul.s	fa0, fa5, fa0
+	ret
+.LBB2_2:
+	lui	a0, 1046528
+	addi	a0, a0, -1
+	fmv.w.x	fa5, a0
 	fmul.s	fa0, fa5, fa0
 	ret
 
-.LCPI3_0:
-	.word	0x3d4ccccd
 func0000000000000004:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 251085
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
 	fcvt.s.w	fa5, a0
 	fmul.s	fa0, fa5, fa0

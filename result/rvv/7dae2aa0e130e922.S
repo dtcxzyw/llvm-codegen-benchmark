@@ -10,16 +10,15 @@ func0000000000000002:
 	vfadd.vf	v8, v8, fa4
 	ret
 
-.LCPI1_0:
-	.quad	0xc056800000000000
 func0000000000000003:
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI1_0)
+	lui	a0, 1015981
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmnot.m	v0, v16
+	slli	a0, a0, 35
 	vfneg.v	v8, v8, v0.t
+	fmv.d.x	fa5, a0
 	vfadd.vf	v8, v8, fa5
 	ret
 

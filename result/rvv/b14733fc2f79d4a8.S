@@ -114,13 +114,12 @@ func0000000000000108:
 	vmor.mm	v0, v25, v24
 	ret
 
-.LCPI14_0:
-	.quad	0xc1e0000000000000
 func00000000000000f4:
-	lui	a0, %hi(.LCPI14_0)
-	fld	fa5, %lo(.LCPI14_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v24, v16, v8
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret

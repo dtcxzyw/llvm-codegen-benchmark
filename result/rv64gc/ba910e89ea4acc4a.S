@@ -63,8 +63,6 @@ func000000000000042d:
 	xori	a0, a0, 1
 	ret
 
-.LCPI4_0:
-	.word	0x3d25aee6
 func0000000000000423:
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
@@ -72,12 +70,13 @@ func0000000000000423:
 	bnez	a0, .LBB4_2
 	fmv.s	fa5, fa0
 .LBB4_2:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa4, %lo(.LCPI4_0)(a0)
-	fmv.w.x	fa3, zero
-	flt.s	a0, fa0, fa3
-	fle.s	a1, fa4, fa5
-	xori	a1, a1, 1
+	fmv.w.x	fa4, zero
+	lui	a0, 250459
+	flt.s	a1, fa0, fa4
+	addi	a0, a0, -282
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa4, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

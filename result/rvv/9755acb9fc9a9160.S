@@ -83,11 +83,10 @@ func0000000000000003:
 	vmerge.vim	v8, v8, -1, v0
 	ret
 
-.LCPI9_0:
-	.word	0x3a83126f
 func000000000000000d:
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, 239665
+	addi	a0, a0, 623
+	fmv.w.x	fa5, a0
 	li	a0, 17
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v10, v8, fa5

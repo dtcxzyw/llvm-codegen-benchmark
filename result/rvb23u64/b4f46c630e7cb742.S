@@ -7,11 +7,10 @@ func0000000000000002:
 	fadd.d	fa0, fa0, fa1
 	ret
 
-.LCPI1_0:
-	.quad	0x4024000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 4105
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa2
 	bnez	a0, .LBB1_2
 	fli.d	fa1, 1.0

@@ -26,14 +26,13 @@ func000000000000008a:
 	vmfle.vv	v0, v8, v16
 	ret
 
-.LCPI2_0:
-	.quad	0x3d10000000000000
 func0000000000000095:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, 977
+	slli	a0, a0, 52
 	vmflt.vv	v0, v24, v16
+	fmv.d.x	fa5, a0
 	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -41,14 +40,13 @@ func0000000000000095:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI3_0:
-	.quad	0x3ce0000000000000
 func0000000000000054:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	li	a0, 487
+	slli	a0, a0, 53
 	vmflt.vv	v0, v24, v16
+	fmv.d.x	fa5, a0
 	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8

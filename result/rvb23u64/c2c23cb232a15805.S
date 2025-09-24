@@ -34,14 +34,13 @@ func0000000000000004:
 	fmadd.s	fa0, fa0, fa5, fa1
 	ret
 
-.LCPI5_0:
-	.word	0x3dcccccd
 func000000000000000a:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa2, fa5
 	beqz	a0, .LBB5_2
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa2, %lo(.LCPI5_0)(a0)
+	lui	a0, 253133
+	addi	a0, a0, -819
+	fmv.w.x	fa2, a0
 .LBB5_2:
 	fmadd.s	fa0, fa0, fa2, fa1
 	ret

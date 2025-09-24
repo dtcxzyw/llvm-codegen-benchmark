@@ -1,44 +1,38 @@
-.LCPI0_0:
-	.word	0x3f1645a2
-.LCPI0_1:
-	.word	0x3e991687
-.LCPI0_2:
-	.word	0x3de978d5
 func0000000000000000:
-	zext.b	a1, a1
-	lui	a2, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a2)
-	lui	a2, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a2)
-	lui	a2, %hi(.LCPI0_2)
-	fcvt.s.wu	fa3, a1
-	fmul.s	fa5, fa0, fa5
-	flw	fa2, %lo(.LCPI0_2)(a2)
-	fmadd.s	fa5, fa3, fa4, fa5
 	zext.b	a0, a0
+	zext.b	a1, a1
+	lui	a2, 258404
+	fcvt.s.wu	fa5, a1
+	lui	a1, 256401
+	addi	a2, a2, 1442
+	fmv.w.x	fa4, a2
+	lui	a2, 253592
+	addi	a1, a1, 1671
+	fmul.s	fa4, fa0, fa4
+	fmv.w.x	fa3, a1
+	fmadd.s	fa5, fa5, fa3, fa4
 	fcvt.s.wu	fa4, a0
-	fmadd.s	fa0, fa4, fa2, fa5
+	addi	a0, a2, -1835
+	fmv.w.x	fa3, a0
+	fmadd.s	fa0, fa4, fa3, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x3f170a3d
-.LCPI1_1:
-	.word	0x3e99999a
-.LCPI1_2:
-	.word	0x3de147ae
 func0000000000000001:
-	zext.b	a1, a1
-	lui	a2, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a2)
-	lui	a2, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a2)
-	lui	a2, %hi(.LCPI1_2)
-	fcvt.s.wu	fa3, a1
-	fmul.s	fa5, fa0, fa5
-	flw	fa2, %lo(.LCPI1_2)(a2)
-	fmadd.s	fa5, fa3, fa4, fa5
 	zext.b	a0, a0
+	zext.b	a1, a1
+	lui	a2, 258417
+	fcvt.s.wu	fa5, a1
+	lui	a1, 256410
+	addi	a2, a2, -1475
+	fmv.w.x	fa4, a2
+	lui	a2, 253460
+	addi	a1, a1, -1638
+	fmul.s	fa4, fa0, fa4
+	fmv.w.x	fa3, a1
+	fmadd.s	fa5, fa5, fa3, fa4
 	fcvt.s.wu	fa4, a0
-	fmadd.s	fa0, fa4, fa2, fa5
+	addi	a0, a2, 1966
+	fmv.w.x	fa3, a0
+	fmadd.s	fa0, fa4, fa3, fa5
 	ret
 

@@ -1,5 +1,3 @@
-.LCPI0_0:
-	.word	0x38d1b717
 func0000000000000004:
 	flt.s	a1, fa1, fa0
 	andi	a0, a0, 1
@@ -11,8 +9,9 @@ func0000000000000004:
 	fmv.s	fa0, fa1
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa0, %lo(.LCPI0_0)(a0)
+	lui	a0, 232731
+	addi	a0, a0, 1815
+	fmv.w.x	fa0, a0
 	ret
 
 func0000000000000002:

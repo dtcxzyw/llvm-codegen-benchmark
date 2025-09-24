@@ -17,11 +17,10 @@ func000000000000000c:
 	fcvt.w.s	a0, fa5, rtz
 	ret
 
-.LCPI3_0:
-	.word	0x46fffe00
 func000000000000000a:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 290816
+	addi	a0, a0, -512
+	fmv.w.x	fa5, a0
 	fmin.s	fa5, fa0, fa5
 	fcvt.w.s	a0, fa5, rtz
 	ret

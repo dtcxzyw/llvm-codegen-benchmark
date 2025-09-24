@@ -15,14 +15,13 @@ func0000000000000004:
 	vfcvt.rtz.x.f.v	v8, v8
 	ret
 
-.LCPI2_0:
-	.word	0x477fff00
 func000000000000000c:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 292864
+	addi	a0, a0, -256
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfge.vf	v0, v8, fa5
-	vfmerge.vfm	v8, v8, fa5, v0
+	vmerge.vxm	v8, v8, a0, v0
 	vfcvt.rtz.x.f.v	v8, v8
 	ret
 

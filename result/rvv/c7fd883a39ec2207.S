@@ -36,11 +36,10 @@ func0000000000000003:
 	vmnot.m	v0, v12
 	ret
 
-.LCPI6_0:
-	.word	0x358637bd
 func0000000000000005:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

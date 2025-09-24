@@ -16,13 +16,11 @@ func0000000000000004:
 	fmv.w.x	fa0, zero
 	ret
 
-.LCPI1_0:
-	.word	0x3dcccccd
 func0000000000000002:
-	fmv.s	fa5, fa0
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa0, %lo(.LCPI1_0)(a1)
-	fadd.s	fa5, fa5, fa5
+	fadd.s	fa5, fa0, fa0
+	lui	a1, 253133
+	addi	a1, a1, -819
+	fmv.w.x	fa0, a1
 	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1
 	beqz	a1, .LBB1_3

@@ -18,13 +18,12 @@ func0000000000000008:
 	vmfeq.vf	v0, v8, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x46fffe00
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 290816
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v12, v16
+	addi	a0, a0, -512
+	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5

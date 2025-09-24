@@ -1,17 +1,16 @@
-.LCPI0_0:
-	.quad	0x3cb0000000000000
 func00000000000000a6:
+	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fli.d	fa4, inf
-	vmflt.vf	v7, v8, fa4
-	vmfgt.vf	v6, v8, fa4
-	vfmul.vf	v8, v24, fa5
-	vmfle.vv	v24, v16, v8
-	vmor.mm	v8, v6, v7
-	vmand.mm	v0, v8, v24
+	vmflt.vf	v24, v8, fa5
+	vmfgt.vf	v25, v8, fa5
+	vle64.v	v8, (a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	vfmul.vf	v8, v8, fa5
+	vmfle.vv	v26, v16, v8
+	vmor.mm	v8, v25, v24
+	vmand.mm	v0, v8, v26
 	ret
 
 .LCPI1_0:

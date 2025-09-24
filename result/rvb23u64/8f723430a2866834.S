@@ -26,13 +26,12 @@ func000000000000000d:
 .LBB3_2:
 	ret
 
-.LCPI4_0:
-	.quad	0x402e000000000000
 func0000000000000003:
 	fle.d	a0, fa2, fa1
 	beqz	a0, .LBB4_2
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa0, %lo(.LCPI4_0)(a0)
+	lui	a0, 8215
+	slli	a0, a0, 37
+	fmv.d.x	fa0, a0
 .LBB4_2:
 	ret
 

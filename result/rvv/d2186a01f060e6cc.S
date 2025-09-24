@@ -32,15 +32,13 @@ func000000000000000c:
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 
-.LCPI5_0:
-	.quad	0x4059000000000000
 func0000000000000007:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
-	fmv.d.x	fa4, zero
+	fmv.d.x	fa5, zero
+	lui	a0, 16473
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfne.vf	v0, v8, fa4
-	vfmv.v.f	v16, fa5
+	vmfne.vf	v0, v8, fa5
+	slli	a0, a0, 36
+	vmv.v.x	v16, a0
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 

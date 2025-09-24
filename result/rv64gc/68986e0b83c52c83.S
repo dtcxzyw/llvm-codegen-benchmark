@@ -15,11 +15,10 @@ func0000000000000009:
 	fmul.s	fa0, fa0, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x322bcc77
 func000000000000000b:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
 	beqz	a0, .LBB1_2
 	lui	a0, 262144
@@ -43,11 +42,10 @@ func0000000000000008:
 	fmul.s	fa0, fa0, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x322bcc77
 func0000000000000002:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa1, fa5
 	bnez	a0, .LBB3_2
 	lui	a0, 260096

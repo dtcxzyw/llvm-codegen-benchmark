@@ -6,15 +6,14 @@ func0000000000000009:
 	snez	a0, a0
 	ret
 
-.LCPI1_0:
-	.word	0x3b83126f
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fadd.s	fa4, fa1, fa2
-	fadd.s	fa4, fa0, fa4
-	fabs.s	fa4, fa4
-	flt.s	a0, fa4, fa5
+	fadd.s	fa5, fa1, fa2
+	lui	a0, 243761
+	fadd.s	fa5, fa0, fa5
+	addi	a0, a0, 623
+	fabs.s	fa5, fa5
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	ret
 
 func0000000000000014:

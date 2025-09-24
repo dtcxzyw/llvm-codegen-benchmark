@@ -1,5 +1,3 @@
-.LCPI0_0:
-	.quad	0x4000000000000000
 func0000000000000002:
 	andi	a0, a0, 1
 	beqz	a0, .LBB0_3
@@ -9,8 +7,9 @@ func0000000000000002:
 	fmv.d	fa0, fa1
 	ret
 .LBB0_3:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa1, %lo(.LCPI0_0)(a0)
+	li	a0, 1
+	slli	a0, a0, 62
+	fmv.d.x	fa1, a0
 	flt.d	a0, fa1, fa0
 	bnez	a0, .LBB0_2
 .LBB0_4:
@@ -31,8 +30,6 @@ func0000000000000004:
 .LBB1_4:
 	ret
 
-.LCPI2_0:
-	.quad	0x3ff0000000000000
 func000000000000000a:
 	andi	a0, a0, 1
 	beqz	a0, .LBB2_3
@@ -42,8 +39,9 @@ func000000000000000a:
 	fmv.d	fa0, fa1
 	ret
 .LBB2_3:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa1, %lo(.LCPI2_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa1, a0
 	fle.d	a0, fa1, fa0
 	bnez	a0, .LBB2_2
 .LBB2_4:

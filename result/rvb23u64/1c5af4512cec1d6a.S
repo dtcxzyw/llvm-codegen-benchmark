@@ -40,13 +40,12 @@ func000000000000000d:
 .LBB5_2:
 	ret
 
-.LCPI6_0:
-	.word	0x3ec3ef15
 func0000000000000005:
 	fle.s	a0, fa1, fa2
 	beqz	a0, .LBB6_2
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa0, %lo(.LCPI6_0)(a0)
+	lui	a0, 257087
+	addi	a0, a0, -235
+	fmv.w.x	fa0, a0
 .LBB6_2:
 	ret
 

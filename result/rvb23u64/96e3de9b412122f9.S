@@ -47,18 +47,17 @@ func0000000000000045:
 	xori	a0, a0, 1
 	ret
 
-.LCPI4_0:
-	.word	0x3f7fffff
 func0000000000000048:
 	fsub.s	fa5, fa1, fa2
-	fdiv.s	fa4, fa5, fa0
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
-	flt.s	a0, fa5, fa4
+	fdiv.s	fa5, fa5, fa0
+	lui	a0, 260096
+	addi	a0, a0, -1
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB4_2
-	fmv.s	fa5, fa4
+	fmv.s	fa4, fa5
 .LBB4_2:
-	fmv.w.x	fa4, zero
-	feq.s	a0, fa5, fa4
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa4, fa5
 	ret
 

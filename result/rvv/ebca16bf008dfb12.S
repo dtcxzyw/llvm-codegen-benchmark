@@ -7,11 +7,10 @@ func0000000000000054:
 	vmand.mm	v0, v13, v12
 	ret
 
-.LCPI1_0:
-	.word	0xc8c7ce60
 func00000000000000f4:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 822397
+	addi	a0, a0, -416
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmfne.vf	v12, v12, fa5
 	vsetvli	zero, zero, e64, m2, ta, ma

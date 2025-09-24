@@ -5,15 +5,14 @@ func0000000000000000:
 	fmul.s	fa0, fa5, fa4
 	ret
 
-.LCPI1_0:
-	.word	0x3eaaaaab
 func0000000000000001:
 	fmadd.s	fa5, fa0, fa1, fa2
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
 	lui	a0, 258048
-	fmv.w.x	fa3, a0
-	fmul.s	fa5, fa5, fa3
+	fmv.w.x	fa4, a0
+	lui	a0, 256683
+	addi	a0, a0, -1365
+	fmul.s	fa5, fa5, fa4
+	fmv.w.x	fa4, a0
 	fmul.s	fa0, fa5, fa4
 	ret
 

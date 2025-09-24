@@ -40,22 +40,22 @@ func0000000000000042:
 	fmv.s	fa0, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x477fff00
 func000000000000002c:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa0, fa5
 	beqz	a0, .LBB2_3
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa0, %lo(.LCPI2_0)(a0)
+	lui	a0, 292864
+	addi	a0, a0, -256
+	fmv.w.x	fa0, a0
 	fle.s	a0, fa0, fa5
 	beqz	a0, .LBB2_4
 .LBB2_2:
 	ret
 .LBB2_3:
 	fmv.s	fa5, fa0
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa0, %lo(.LCPI2_0)(a0)
+	lui	a0, 292864
+	addi	a0, a0, -256
+	fmv.w.x	fa0, a0
 	fle.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
 .LBB2_4:

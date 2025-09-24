@@ -1,7 +1,11 @@
 func0000000000000009:
-	fclass.d	a2, fa0
-	andi	a2, a2, 896
-	bnez	a2, .LBB0_2
+	li	a2, 2047
+	slli	a2, a2, 52
+	fmv.d.x	fa5, a2
+	flt.d	a2, fa0, fa5
+	flt.d	a3, fa5, fa0
+	or	a2, a2, a3
+	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	ret
@@ -14,9 +18,11 @@ func000000000000000e:
 	ret
 
 func0000000000000008:
-	fclass.d	a2, fa0
-	slli	a2, a2, 56
-	bltz	a2, .LBB2_2
+	li	a2, 2047
+	slli	a2, a2, 52
+	fmv.d.x	fa5, a2
+	feq.d	a2, fa0, fa5
+	bnez	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
 	ret

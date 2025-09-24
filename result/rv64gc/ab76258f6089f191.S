@@ -19,16 +19,15 @@ func000000000000000c:
 	fle.s	a0, fa5, fa0
 	ret
 
-.LCPI2_0:
-	.word	0x2a0637bd
 func000000000000000d:
 	andi	a2, a0, 1
 	bnez	a2, .LBB2_2
 	mv	a0, a1
 	ret
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 172131
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

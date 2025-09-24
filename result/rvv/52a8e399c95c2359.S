@@ -10,20 +10,18 @@ func0000000000000002:
 	vfadd.vf	v8, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0xbfe9eb96
-.LCPI1_1:
-	.word	0x3f5b5e7f
 func0000000000000004:
 	fli.s	fa5, 1.0
-	lui	a0, %hi(.LCPI1_0)
+	lui	a0, 786079
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
+	addi	a0, a0, -1130
+	fmv.w.x	fa5, a0
+	lui	a0, 259510
+	addi	a0, a0, -385
 	vmerge.vvm	v8, v12, v8, v0
 	vfmul.vf	v8, v8, fa5
-	vfadd.vf	v8, v8, fa4
+	fmv.w.x	fa5, a0
+	vfadd.vf	v8, v8, fa5
 	ret
 

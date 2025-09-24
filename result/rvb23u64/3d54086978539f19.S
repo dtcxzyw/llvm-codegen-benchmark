@@ -35,11 +35,10 @@ func0000000000000007:
 .LBB3_2:
 	ret
 
-.LCPI4_0:
-	.quad	0x4034000000000000
 func000000000000000d:
-	lui	a1, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a1)
+	lui	a1, 4109
+	slli	a1, a1, 38
+	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	and	a0, a0, a1

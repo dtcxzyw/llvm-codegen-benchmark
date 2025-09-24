@@ -14,12 +14,11 @@ func000000000000010f:
 	addw	a0, a0, a2
 	ret
 
-.LCPI2_0:
-	.word	0x3db27eb6
 func0000000000000105:
-	lui	a2, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a2)
+	lui	a2, 252712
 	andi	a1, a1, 1
+	addi	a2, a2, -330
+	fmv.w.x	fa5, a2
 	flt.s	a2, fa5, fa0
 	add	a0, a0, a1
 	addw	a0, a0, a2

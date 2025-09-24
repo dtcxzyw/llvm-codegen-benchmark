@@ -4,11 +4,10 @@ func0000000000000004:
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.word	0x358637bd
 func0000000000000002:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
+	lui	a1, 219235
+	addi	a1, a1, 1981
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

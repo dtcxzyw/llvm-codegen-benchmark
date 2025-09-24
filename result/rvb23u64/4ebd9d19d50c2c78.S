@@ -2,8 +2,6 @@
 	.quad	0x409db40000000000
 .LCPI0_1:
 	.quad	0x40d86a0000000000
-.LCPI0_2:
-	.quad	0x40af400000000000
 func0000000000000242:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
@@ -14,8 +12,9 @@ func0000000000000242:
 	flt.d	a0, fa4, fa5
 	beqz	a0, .LBB0_4
 .LBB0_2:
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa5, %lo(.LCPI0_2)(a0)
+	lui	a0, 66237
+	slli	a0, a0, 34
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa4, fa5
 	ret
 .LBB0_3:
@@ -26,8 +25,9 @@ func0000000000000242:
 	bnez	a0, .LBB0_2
 .LBB0_4:
 	fmv.d	fa4, fa5
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa5, %lo(.LCPI0_2)(a0)
+	lui	a0, 66237
+	slli	a0, a0, 34
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa4, fa5
 	ret
 

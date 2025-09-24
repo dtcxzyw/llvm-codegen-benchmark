@@ -1,24 +1,21 @@
-.LCPI0_0:
-	.word	0x3fc90fdb
-.LCPI0_1:
-	.word	0xbfc90fdb
 func0000000000000032:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
+	lui	a0, 261265
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
+	lui	a0, 785553
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v8, fa5
-	flw	fa5, %lo(.LCPI0_1)(a0)
 	vmnot.m	v0, v16
+	addi	a0, a0, -37
 	vmerge.vvm	v8, v12, v8, v0
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x41102d33
 func00000000000000b8:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 266499
+	addi	a0, a0, -717
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -84,52 +81,48 @@ func0000000000000054:
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI8_0:
-	.word	0x40c90fdb
 func00000000000000c3:
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa4, %lo(.LCPI8_0)(a0)
+	lui	a0, 265361
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
+	addi	a0, a0, -37
 	vmerge.vvm	v8, v12, v8, v0
-	vmfge.vf	v12, v8, fa4
+	fmv.w.x	fa5, a0
+	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
 
-.LCPI9_0:
-	.word	0x3ba3d70a
 func0000000000000042:
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa4, %lo(.LCPI9_0)(a0)
+	lui	a0, 244285
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
+	addi	a0, a0, 1802
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI10_0:
-	.word	0x3d0efa36
 func000000000000004a:
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa4, %lo(.LCPI10_0)(a0)
+	lui	a0, 250096
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v8, fa5
+	addi	a0, a0, -1482
 	vmerge.vvm	v8, v12, v8, v0
-	vmfle.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmfle.vf	v0, v8, fa5
 	ret
 
-.LCPI11_0:
-	.word	0x3727c5ac
 func00000000000000c2:
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI11_0)
-	flw	fa4, %lo(.LCPI11_0)(a0)
+	lui	a0, 225916
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
+	addi	a0, a0, 1452
 	vmerge.vvm	v8, v12, v8, v0
-	vmflt.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmflt.vf	v0, v8, fa5
 	ret
 

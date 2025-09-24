@@ -1,31 +1,29 @@
-.LCPI0_0:
-	.quad	0x43d0000000000000
 func0000000000000422:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI0_0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa4, %lo(.LCPI0_0)(a0)
+	li	a0, 1085
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vf	v0, v16, fa5
+	slli	a0, a0, 52
 	vmerge.vvm	v8, v16, v8, v0
-	vmflt.vf	v0, v8, fa4
+	fmv.d.x	fa5, a0
+	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI1_0:
-	.quad	0xc3d0000000000000
 func000000000000042c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI1_0)
 	vmfgt.vf	v0, v24, fa5
-	fld	fa4, %lo(.LCPI1_0)(a0)
+	li	a0, -963
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vf	v0, v16, fa5
+	slli	a0, a0, 52
 	vmerge.vvm	v8, v16, v8, v0
-	vmfge.vf	v0, v8, fa4
+	fmv.d.x	fa5, a0
+	vmfge.vf	v0, v8, fa5
 	ret
 
 func0000000000000225:
@@ -41,20 +39,19 @@ func0000000000000225:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI3_0:
-	.quad	0x4056800000000000
 func0000000000000332:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	vmfge.vf	v7, v24, fa5
 	vmnot.m	v0, v7
-	lui	a0, %hi(.LCPI3_0)
+	lui	a0, 32941
 	vmerge.vvm	v16, v24, v16, v0
 	vmfge.vf	v24, v16, fa5
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v24
+	slli	a0, a0, 35
 	vmerge.vvm	v8, v16, v8, v0
+	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -80,44 +77,39 @@ func0000000000000222:
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI5_0:
-	.quad	0x4066800000000000
-.LCPI5_1:
-	.quad	0x4056800000000000
 func0000000000000244:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa4, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
+	lui	a0, 32973
+	slli	a0, a0, 35
 	vmflt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI5_1)(a0)
+	fmv.d.x	fa5, a0
+	lui	a0, 32941
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa4
+	vmfgt.vf	v0, v16, fa5
+	slli	a0, a0, 35
 	vmerge.vvm	v8, v16, v8, v0
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI6_0:
-	.quad	0x4066800000000000
-.LCPI6_1:
-	.quad	0x4056800000000000
-.LCPI6_2:
-	.quad	0x404e000000000000
 func0000000000000445:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
-	lui	a0, %hi(.LCPI6_1)
-	fld	fa4, %lo(.LCPI6_1)(a0)
-	lui	a0, %hi(.LCPI6_2)
+	lui	a0, 32973
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
+	lui	a0, 32941
+	slli	a0, a0, 35
 	vmfgt.vf	v0, v24, fa5
-	fld	fa5, %lo(.LCPI6_2)(a0)
+	fmv.d.x	fa5, a0
+	lui	a0, 8231
 	vmerge.vvm	v16, v24, v16, v0
-	vmfgt.vf	v0, v16, fa4
+	vmfgt.vf	v0, v16, fa5
+	slli	a0, a0, 37
 	vmerge.vvm	v8, v16, v8, v0
+	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

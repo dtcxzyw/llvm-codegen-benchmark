@@ -13,13 +13,12 @@ func0000000000000007:
 	andn	a0, a1, a0
 	ret
 
-.LCPI2_0:
-	.word	0x3f4ccccd
 func0000000000000002:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.s.d	fa4, fa0
-	flt.s	a1, fa4, fa5
+	fcvt.s.d	fa5, fa0
+	lui	a1, 259277
+	addi	a1, a1, -819
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa5, fa4
 	andn	a0, a1, a0
 	ret
 

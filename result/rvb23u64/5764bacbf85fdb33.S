@@ -7,24 +7,22 @@ func0000000000000012:
 	or	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x4066800000000000
 func000000000000001a:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
 	negw	a1, a0
+	lui	a2, 32973
+	slli	a2, a2, 35
+	fmv.d.x	fa5, a2
 	fle.d	a2, fa0, fa5
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x4066800000000000
 func0000000000000014:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
 	negw	a1, a0
+	lui	a2, 32973
+	slli	a2, a2, 35
+	fmv.d.x	fa5, a2
 	flt.d	a2, fa5, fa0
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

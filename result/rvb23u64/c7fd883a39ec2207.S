@@ -31,11 +31,10 @@ func0000000000000003:
 	xori	a0, a0, 1
 	ret
 
-.LCPI6_0:
-	.word	0x358637bd
 func0000000000000005:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	fle.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

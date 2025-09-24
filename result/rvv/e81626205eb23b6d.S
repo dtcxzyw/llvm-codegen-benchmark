@@ -41,11 +41,10 @@ func000000000000000e:
 	vmfeq.vv	v0, v8, v8
 	ret
 
-.LCPI7_0:
-	.word	0x3c0efa35
 func000000000000000d:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, 246000
+	addi	a0, a0, -1483
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12

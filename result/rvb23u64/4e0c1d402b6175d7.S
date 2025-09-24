@@ -24,11 +24,10 @@ func0000000000000048:
 	or	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0xb8d1b717
 func000000000000006a:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
+	lui	a1, 757019
+	addi	a1, a1, 1815
+	fmv.w.x	fa5, a1
 	fle.s	a1, fa5, fa0
 	fli.s	fa5, 1.0
 	fle.s	a2, fa0, fa5

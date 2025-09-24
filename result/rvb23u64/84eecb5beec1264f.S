@@ -55,13 +55,12 @@ func000000000000000e:
 	feq.d	a0, fa5, fa5
 	ret
 
-.LCPI7_0:
-	.quad	0x433fffffffffffff
 func0000000000000014:
 	fcvt.d.lu	fa5, a0
 	fdiv.d	fa5, fa5, fa0
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa4, %lo(.LCPI7_0)(a0)
+	li	a0, -756
+	rori	a0, a0, 10
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
 

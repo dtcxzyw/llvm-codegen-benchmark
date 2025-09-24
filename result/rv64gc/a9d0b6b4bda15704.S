@@ -1,12 +1,10 @@
-.LCPI0_0:
-	.quad	0x4059000000000000
-.LCPI0_1:
-	.quad	0xc030000000000000
 func0000000000000000:
-	lui	a1, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a1)
-	lui	a1, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a1)
+	lui	a1, 16473
+	slli	a1, a1, 36
+	fmv.d.x	fa5, a1
+	li	a1, -1021
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
 	fmadd.d	fa5, fa0, fa4, fa5
 	fcvt.w.d	a1, fa5, rtz
 	addw	a0, a0, a1

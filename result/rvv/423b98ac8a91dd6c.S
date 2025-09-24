@@ -15,13 +15,12 @@ func0000000000000004:
 	vmor.mm	v0, v0, v12
 	ret
 
-.LCPI2_0:
-	.word	0x40c90fdb
 func0000000000000018:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v8, v8
+	lui	a0, 265361
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	vmfeq.vf	v12, v8, fa5
 	vmor.mm	v0, v0, v12
 	ret

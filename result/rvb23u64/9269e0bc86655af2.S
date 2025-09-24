@@ -14,15 +14,14 @@ func00000000000000c7:
 
 .LCPI2_0:
 	.quad	0x3f1a36e2eb1c432d
-.LCPI2_1:
-	.quad	0x40c3880000000000
 func0000000000000024:
 	lui	a0, %hi(.LCPI2_0)
-	lui	a1, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	fld	fa4, %lo(.LCPI2_1)(a1)
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa4, fa0
+	lui	a0, 530545
+	slli.uw	a0, a0, 31
+	flt.d	a1, fa1, fa5
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
 	and	a0, a0, a1
 	ret
 
@@ -99,28 +98,25 @@ func0000000000000042:
 	and	a0, a0, a1
 	ret
 
-.LCPI11_0:
-	.quad	0x43e0000000000000
 func000000000000006b:
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
-	fli.d	fa4, inf
-	flt.d	a0, fa1, fa4
-	flt.d	a1, fa5, fa0
-	andn	a0, a0, a1
+	fli.d	fa5, inf
+	li	a0, 543
+	flt.d	a1, fa1, fa5
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
+	andn	a0, a1, a0
 	ret
 
-.LCPI12_0:
-	.quad	0x4059000000000000
-.LCPI12_1:
-	.quad	0x4062c00000000000
 func00000000000000a4:
-	lui	a0, %hi(.LCPI12_0)
-	lui	a1, %hi(.LCPI12_1)
-	fld	fa5, %lo(.LCPI12_0)(a0)
-	fld	fa4, %lo(.LCPI12_1)(a1)
+	lui	a0, 16473
+	lui	a1, 65931
+	slli	a0, a0, 36
+	slli	a1, a1, 34
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa1, fa5
-	flt.d	a1, fa4, fa0
+	fmv.d.x	fa5, a1
+	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 
@@ -258,22 +254,20 @@ func00000000000000ce:
 	and	a0, a0, a1
 	ret
 
-.LCPI28_0:
-	.quad	0xc1e0000000000000
 func000000000000006d:
-	lui	a0, %hi(.LCPI28_0)
-	fld	fa5, %lo(.LCPI28_0)(a0)
-	fli.d	fa4, inf
-	flt.d	a0, fa1, fa4
-	flt.d	a1, fa0, fa5
-	andn	a0, a0, a1
+	fli.d	fa5, inf
+	li	a0, -497
+	flt.d	a1, fa1, fa5
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	andn	a0, a1, a0
 	ret
 
-.LCPI29_0:
-	.quad	0x3870000000000000
 func00000000000000db:
-	lui	a0, %hi(.LCPI29_0)
-	fld	fa5, %lo(.LCPI29_0)(a0)
+	li	a0, 903
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa1, fa5
 	fli.d	fa5, 1.0
 	flt.d	a1, fa5, fa0
@@ -380,13 +374,12 @@ func0000000000000055:
 	xori	a0, a0, 1
 	ret
 
-.LCPI42_0:
-	.quad	0x4034000000000000
 func00000000000000dd:
-	lui	a0, %hi(.LCPI42_0)
-	fld	fa5, %lo(.LCPI42_0)(a0)
-	fmin.d	fa4, fa0, fa1
-	flt.d	a0, fa4, fa5
+	fmin.d	fa5, fa0, fa1
+	lui	a0, 4109
+	slli	a0, a0, 38
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

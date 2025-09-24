@@ -23,29 +23,27 @@ func0000000000000008:
 	feq.d	a0, fa5, fa4
 	ret
 
-.LCPI3_0:
-	.quad	0xc059000000000000
 func0000000000000004:
 	fadd.d	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
-	fli.d	fa3, 0.5
-	fmul.d	fa5, fa5, fa3
+	fli.d	fa4, 0.5
+	lui	a0, 1032281
+	fmul.d	fa5, fa5, fa4
+	slli	a0, a0, 36
 	fneg.d	fa5, fa5
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
 
 .LCPI4_0:
 	.quad	0x412e848000000000
-.LCPI4_1:
-	.quad	0xc3e0000000000000
 func0000000000000002:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
-	fadd.d	fa3, fa0, fa1
-	fmul.d	fa5, fa3, fa5
+	fadd.d	fa4, fa0, fa1
+	li	a0, -481
+	slli	a0, a0, 53
+	fmul.d	fa5, fa4, fa5
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	ret
 

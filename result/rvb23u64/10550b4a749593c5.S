@@ -58,15 +58,14 @@ func0000000000000001:
 	xori	a0, a0, 1
 	ret
 
-.LCPI7_0:
-	.word	0x40490fdb
 func0000000000000003:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
-	fadd.s	fa4, fa0, fa1
-	fli.s	fa3, 0.5
-	fmul.s	fa4, fa4, fa3
-	fle.s	a0, fa5, fa4
+	fadd.s	fa5, fa0, fa1
+	fli.s	fa4, 0.5
+	lui	a0, 263313
+	fmul.s	fa5, fa5, fa4
+	addi	a0, a0, -37
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

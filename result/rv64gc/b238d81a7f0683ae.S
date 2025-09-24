@@ -18,14 +18,13 @@ func0000000000000008:
 	snez	a0, a0
 	ret
 
-.LCPI2_0:
-	.quad	0x3ff0000000000000
 func0000000000000004:
 	fsub.d	fa5, fa1, fa2
 	fdiv.d	fa5, fa0, fa5
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
 	fabs.d	fa5, fa5
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
 

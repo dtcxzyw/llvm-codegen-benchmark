@@ -87,29 +87,27 @@ func0000000000000009:
 	vmsne.vi	v0, v8, 0
 	ret
 
-.LCPI7_0:
-	.quad	0x4330000000000000
 func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	li	a0, 1075
+	slli	a0, a0, 52
 	vfmul.vv	v16, v16, v24
 	vfsub.vv	v8, v16, v8
 	vfabs.v	v8, v8
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI8_0:
-	.quad	0x3cb0000000000000
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
 	vfmul.vv	v16, v16, v24
 	vfsub.vv	v8, v16, v8
 	vfabs.v	v8, v8
+	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

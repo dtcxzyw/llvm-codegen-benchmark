@@ -8,17 +8,19 @@ func0000000000000012:
 	flt.d	a0, fa0, fa5
 	ret
 
-.LCPI1_0:
-	.quad	0x3e80000000000000
-	.quad	0x3cb0000000000000
 func0000000000000014:
 	sext.w	a0, a0
-	addi	a0, a0, -4
-	seqz	a0, a0
-	lui	a1, %hi(.LCPI1_0)
-	addi	a1, a1, %lo(.LCPI1_0)
-	sh3add	a0, a0, a1
-	fld	fa5, 0(a0)
+	li	a1, 4
+	beq	a0, a1, .LBB1_2
+	li	a0, 125
+	slli	a0, a0, 55
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
+	ret
+.LBB1_2:
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa0
 	ret
 

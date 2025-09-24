@@ -69,25 +69,23 @@ func0000000000000014:
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI7_0:
-	.quad	0x3cb0000000000000
 func0000000000000012:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
 	vfabs.v	v8, v8
+	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI8_0:
-	.quad	0x4042800000000000
 func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, 32901
+	slli	a0, a0, 35
 	vfabs.v	v8, v8
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
 

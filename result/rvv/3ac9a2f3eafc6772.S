@@ -31,26 +31,24 @@ func000000000000000d:
 	vmnot.m	v0, v12
 	ret
 
-.LCPI3_0:
-	.word	0x477fff00
 func0000000000000004:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v16
+	lui	a0, 292864
+	addi	a0, a0, -256
+	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vfadd.vv	v8, v8, v12
 	fli.s	fa5, -1.0
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI4_0:
-	.word	0x34a00003
 func0000000000000008:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 215552
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v12
+	addi	a0, a0, 3
+	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v16, fa5
 	vfadd.vv	v8, v8, v12
 	fli.s	fa5, inf

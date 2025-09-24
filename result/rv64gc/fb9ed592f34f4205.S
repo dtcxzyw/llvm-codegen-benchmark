@@ -10,11 +10,10 @@ func000000000000000c:
 	fcvt.w.d	a0, fa5, rtz
 	ret
 
-.LCPI1_0:
-	.quad	0xc1e0000000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa0
@@ -22,11 +21,10 @@ func0000000000000002:
 	fcvt.w.d	a0, fa5, rtz
 	ret
 
-.LCPI2_0:
-	.quad	0xc1e0000000000000
 func000000000000000a:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa0, fa5
 	bnez	a0, .LBB2_2
 	fmv.d	fa5, fa0

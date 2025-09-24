@@ -72,11 +72,10 @@ func000000000000022c:
 	and	a0, a0, a1
 	ret
 
-.LCPI8_0:
-	.word	0x3dcccccd
 func0000000000000222:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, 253133
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa2, fa5
 	flt.s	a1, fa1, fa5
 	and	a0, a0, a1

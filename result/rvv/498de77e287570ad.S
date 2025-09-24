@@ -1,10 +1,9 @@
-.LCPI0_0:
-	.word	0x322bcc77
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v8
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	vfmax.vf	v8, v8, fa5
 	ret
 
@@ -28,11 +27,10 @@ func0000000000000002:
 	vfmin.vf	v8, v8, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x3c010204
 func000000000000000c:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 245776
+	addi	a0, a0, 516
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero

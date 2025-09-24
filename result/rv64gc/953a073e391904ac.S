@@ -7,11 +7,10 @@ func0000000000000002:
 	fmv.s	fa0, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x42b0c0a5
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 273164
+	addi	a0, a0, 165
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
 	beqz	a0, .LBB1_2
 	lui	a0, 522240
@@ -69,11 +68,10 @@ func000000000000000c:
 .LBB6_2:
 	ret
 
-.LCPI7_0:
-	.word	0x322bcc77
 func000000000000000b:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
 	bnez	a0, .LBB7_2
 	fmv.w.x	fa0, zero

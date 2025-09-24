@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.word	0x4423d70a
 func0000000000000002:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 279101
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, 1.0
@@ -12,16 +11,15 @@ func0000000000000002:
 	vmerge.vim	v8, v8, 0, v0
 	ret
 
-.LCPI1_0:
-	.word	0x477fff00
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fli.s	fa4, 0.5
+	lui	a0, 292864
+	fli.s	fa5, 0.5
+	addi	a0, a0, -256
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v8, v8, fa5
-	vfadd.vf	v8, v8, fa4
-	vmfgt.vf	v0, v8, fa5
-	vfmerge.vfm	v8, v8, fa5, v0
+	vfmul.vf	v8, v8, fa4
+	vfadd.vf	v8, v8, fa5
+	vmfgt.vf	v0, v8, fa4
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

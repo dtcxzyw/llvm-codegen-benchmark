@@ -7,16 +7,18 @@ func0000000000000001:
 .LBB0_2:
 	ret
 
-.LCPI1_0:
-	.word	0x3dcccccd
-	.word	0x3e4ccccd
 func0000000000000014:
 	zext.b	a0, a0
-	sltiu	a0, a0, 2
-	lui	a1, %hi(.LCPI1_0)
-	addi	a1, a1, %lo(.LCPI1_0)
-	sh2add	a0, a0, a1
-	flw	fa0, 0(a0)
+	li	a1, 2
+	bltu	a0, a1, .LBB1_2
+	lui	a0, 253133
+	addi	a0, a0, -819
+	fmv.w.x	fa0, a0
+	ret
+.LBB1_2:
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa0, a0
 	ret
 
 func0000000000000018:

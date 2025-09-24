@@ -36,11 +36,10 @@ func000000000000000e:
 	feq.s	a0, fa0, fa0
 	ret
 
-.LCPI7_0:
-	.word	0x3c0efa35
 func000000000000000d:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, 246000
+	addi	a0, a0, -1483
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

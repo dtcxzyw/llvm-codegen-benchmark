@@ -15,21 +15,19 @@ func0000000000000048:
 
 .LCPI1_0:
 	.quad	0xbf50624dd2f1a9fc
-.LCPI1_1:
-	.word	0xcb189680
 func00000000000000b6:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
+	lui	a0, 831881
+	addi	a0, a0, 1664
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
+	vmfgt.vf	v12, v8, fa4
 	vfwcvt.f.f.v	v16, v8
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vmfle.vf	v12, v16, fa5
-	vsetvli	zero, zero, e32, m4, ta, ma
-	vmfgt.vf	v13, v8, fa4
-	vmnot.m	v8, v13
-	vmorn.mm	v0, v8, v12
+	vmfle.vf	v8, v16, fa5
+	vmnot.m	v9, v12
+	vmorn.mm	v0, v9, v8
 	ret
 
 .LCPI2_0:

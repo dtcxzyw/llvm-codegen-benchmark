@@ -18,14 +18,13 @@ func0000000000000007:
 	vmfne.vv	v0, v8, v10
 	ret
 
-.LCPI3_0:
-	.word	0x3727c5ac
 func000000000000000a:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
+	lui	a0, 225916
 	vfsub.vv	v8, v8, v10
+	addi	a0, a0, 1452
+	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret
 

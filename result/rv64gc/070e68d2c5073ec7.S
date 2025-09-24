@@ -105,37 +105,37 @@ func0000000000000035:
 	xori	a0, a0, 1
 	ret
 
-.LCPI7_0:
-	.word	0x3f567750
 func0000000000000022:
 	andi	a0, a0, 1
 	bnez	a0, .LBB7_2
 	fabs.s	fa5, fa1
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa4, %lo(.LCPI7_0)(a0)
+	lui	a0, 259431
+	addi	a0, a0, 1872
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 .LBB7_2:
 	fabs.s	fa5, fa0
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa4, %lo(.LCPI7_0)(a0)
+	lui	a0, 259431
+	addi	a0, a0, 1872
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 
-.LCPI8_0:
-	.word	0x3f567750
 func0000000000000024:
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
 	fabs.s	fa5, fa1
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa4, %lo(.LCPI8_0)(a0)
+	lui	a0, 259431
+	addi	a0, a0, 1872
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 .LBB8_2:
 	fabs.s	fa5, fa0
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa4, %lo(.LCPI8_0)(a0)
+	lui	a0, 259431
+	addi	a0, a0, 1872
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 

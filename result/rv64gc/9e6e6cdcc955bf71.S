@@ -24,11 +24,10 @@ func0000000000000088:
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0x7e7fffff
 func0000000000000022:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
+	lui	a1, 518144
+	addi	a1, a1, -1
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa1, fa5
 	flt.s	a2, fa0, fa5
 	and	a1, a1, a2
@@ -51,11 +50,10 @@ func0000000000000055:
 	and	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.word	0x358637bd
 func00000000000000aa:
-	lui	a1, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a1)
+	lui	a1, 219235
+	addi	a1, a1, 1981
+	fmv.w.x	fa5, a1
 	fle.s	a1, fa1, fa5
 	fle.s	a2, fa0, fa5
 	and	a1, a1, a2
@@ -98,17 +96,15 @@ func00000000000000ca:
 	and	a0, a0, a1
 	ret
 
-.LCPI11_0:
-	.word	0x3f666666
-.LCPI11_1:
-	.word	0x3dcccccd
 func0000000000000024:
-	lui	a1, %hi(.LCPI11_0)
-	lui	a2, %hi(.LCPI11_1)
-	flw	fa5, %lo(.LCPI11_0)(a1)
-	flw	fa4, %lo(.LCPI11_1)(a2)
+	lui	a1, 259686
+	lui	a2, 253133
+	addi	a1, a1, 1638
+	addi	a2, a2, -819
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa1, fa5
-	flt.s	a2, fa4, fa0
+	fmv.w.x	fa5, a2
+	flt.s	a2, fa5, fa0
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret

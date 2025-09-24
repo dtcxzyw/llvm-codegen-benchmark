@@ -18,11 +18,10 @@ func000000000000000c:
 	fadd.s	fa0, fa0, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x3c23d70a
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	lui	a0, 260096
 	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0

@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.word	0x40490fdb
 func0000000000000008:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 263313
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v12, v8
@@ -10,26 +9,23 @@ func0000000000000008:
 	vmfeq.vf	v0, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x419de9e7
-.LCPI1_1:
-	.word	0x358637bd
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
+	lui	a0, 268767
+	addi	a0, a0, -1561
+	fmv.w.x	fa5, a0
+	lui	a0, 219235
+	addi	a0, a0, 1981
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v12, v8
-	vmflt.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x3b808081
 func0000000000000005:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 243720
+	addi	a0, a0, 129
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v12, v8
@@ -48,11 +44,10 @@ func000000000000000c:
 	vmfge.vf	v0, v8, fa5
 	ret
 
-.LCPI4_0:
-	.word	0x3c23d70a
 func0000000000000003:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v12, v8
@@ -61,11 +56,10 @@ func0000000000000003:
 	vmnot.m	v0, v12
 	ret
 
-.LCPI5_0:
-	.word	0x3c23d70a
 func000000000000000a:
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v12, v8
@@ -73,18 +67,15 @@ func000000000000000a:
 	vmfle.vf	v0, v8, fa5
 	ret
 
-.LCPI6_0:
-	.word	0x477fff00
-.LCPI6_1:
-	.word	0x477ffefd
 func0000000000000004:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
-	lui	a0, %hi(.LCPI6_1)
-	flw	fa4, %lo(.LCPI6_1)(a0)
+	lui	a0, 292864
+	addi	a1, a0, -256
+	addi	a0, a0, -259
+	fmv.w.x	fa5, a1
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
 	vfmul.vv	v8, v8, v12
-	vmfgt.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmfgt.vf	v0, v8, fa5
 	ret
 

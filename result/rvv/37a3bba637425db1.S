@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.quad	0x40f5180000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 532131
+	slli.uw	a0, a0, 31
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vfabs.v	v8, v8
@@ -69,14 +68,13 @@ func000000000000001d:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI6_0:
-	.quad	0x3a1b900000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vv	v8, v8, v8
+	lui	a0, 238009
 	vfabs.v	v8, v8
+	slli	a0, a0, 32
+	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 

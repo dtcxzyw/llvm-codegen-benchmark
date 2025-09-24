@@ -25,9 +25,13 @@ func0000000000000001:
 	ret
 
 func0000000000000009:
-	fclass.d	a0, fa2
-	andi	a0, a0, 896
-	beqz	a0, .LBB3_2
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa2, fa5
+	flt.d	a1, fa5, fa2
+	or	a0, a0, a1
+	bnez	a0, .LBB3_2
 	fmv.d.x	fa1, zero
 .LBB3_2:
 	fadd.d	fa0, fa0, fa1

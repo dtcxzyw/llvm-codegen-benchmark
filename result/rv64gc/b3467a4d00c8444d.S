@@ -14,23 +14,21 @@ func000000000000000a:
 	and	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.word	0x358637bd
 func0000000000000004:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	fadd.s	fa4, fa0, fa1
-	flt.s	a1, fa5, fa4
+	fadd.s	fa5, fa0, fa1
+	lui	a1, 219235
+	addi	a1, a1, 1981
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa4, fa5
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0xb58637bd
 func000000000000000d:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
-	fadd.s	fa4, fa0, fa1
-	flt.s	a1, fa4, fa5
+	fadd.s	fa5, fa0, fa1
+	lui	a1, 743523
+	addi	a1, a1, 1981
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa5, fa4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

@@ -1,10 +1,8 @@
-.LCPI0_0:
-	.word	0x7fffffff
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfneg.v	v8, v8
-	vfmerge.vfm	v8, v8, fa5, v0
+	lui	a0, 524288
+	addi	a0, a0, -1
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

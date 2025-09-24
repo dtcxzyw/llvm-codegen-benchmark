@@ -29,20 +29,18 @@ func0000000000000042:
 	vfmul.vv	v8, v8, v16
 	ret
 
-.LCPI2_0:
-	.quad	0x4059000000000000
-.LCPI2_1:
-	.quad	0x4024000000000000
 func00000000000000ca:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	lui	a0, 16473
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v0, v16, fa5
-	vfmerge.vfm	v16, v16, fa5, v0
-	vmfle.vf	v0, v16, fa4
-	vfmerge.vfm	v16, v16, fa4, v0
+	vmerge.vxm	v16, v16, a0, v0
+	lui	a0, 4105
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
+	vmfle.vf	v0, v16, fa5
+	vmerge.vxm	v16, v16, a0, v0
 	vfmul.vv	v8, v8, v16
 	ret
 

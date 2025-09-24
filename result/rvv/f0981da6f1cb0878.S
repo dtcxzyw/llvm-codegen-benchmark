@@ -131,14 +131,13 @@ func000000000000000a:
 	vmfle.vf	v0, v8, fa5
 	ret
 
-.LCPI12_0:
-	.quad	0x4076800000000000
 func0000000000000013:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfsub.vv	v8, v8, v16
+	lui	a0, 33005
 	vfabs.v	v8, v8
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

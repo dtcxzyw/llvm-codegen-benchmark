@@ -37,14 +37,13 @@ func0000000000000018:
 	vmor.mm	v0, v13, v12
 	ret
 
-.LCPI4_0:
-	.word	0x3d75c28f
 func0000000000000008:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v12, v12, 1
+	lui	a0, 251740
 	vmsne.vi	v12, v12, 0
+	addi	a0, a0, 655
+	fmv.w.x	fa5, a0
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vmfgt.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12

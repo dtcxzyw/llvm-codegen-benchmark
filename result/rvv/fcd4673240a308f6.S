@@ -64,11 +64,10 @@ func0000000000000020:
 	vmor.mm	v0, v8, v9
 	ret
 
-.LCPI8_0:
-	.word	0x3f800347
 func0000000000000014:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, 260096
+	addi	a0, a0, 839
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v9, v12, fa5
 	vmor.mm	v8, v0, v8

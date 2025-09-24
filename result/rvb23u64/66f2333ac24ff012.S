@@ -1,11 +1,10 @@
-.LCPI0_0:
-	.word	0x358637bd
 func0000000000000015:
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
 	bclri	a0, a0, 31
+	fmv.w.x	fa5, a0
+	lui	a0, 219235
+	addi	a0, a0, 1981
 	fmv.w.x	fa4, a0
-	fle.s	a0, fa4, fa5
+	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

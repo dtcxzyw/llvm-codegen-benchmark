@@ -60,11 +60,10 @@ func000000000000002b:
 	xori	a0, a0, 1
 	ret
 
-.LCPI8_0:
-	.word	0x7f61b1e6
 func0000000000000078:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, 521755
+	addi	a0, a0, 486
+	fmv.w.x	fa5, a0
 	feq.s	a0, fa1, fa5
 	feq.s	a1, fa0, fa5
 	xor	a0, a0, a1

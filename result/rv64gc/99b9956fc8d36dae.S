@@ -1,13 +1,12 @@
-.LCPI0_0:
-	.word	0x38d1b717
 func0000000000000442:
 	flt.s	a0, fa2, fa1
 	beqz	a0, .LBB0_3
 	flt.s	a0, fa0, fa1
 	beqz	a0, .LBB0_4
 .LBB0_2:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 232731
+	addi	a0, a0, 1815
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa1, fa5
 	ret
 .LBB0_3:
@@ -15,21 +14,21 @@ func0000000000000442:
 	flt.s	a0, fa0, fa2
 	bnez	a0, .LBB0_2
 .LBB0_4:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 232731
+	addi	a0, a0, 1815
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x358637bd
 func0000000000000222:
 	flt.s	a0, fa1, fa2
 	beqz	a0, .LBB1_3
 	flt.s	a0, fa1, fa0
 	beqz	a0, .LBB1_4
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa1, fa5
 	ret
 .LBB1_3:
@@ -37,21 +36,21 @@ func0000000000000222:
 	flt.s	a0, fa2, fa0
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x358637bd
 func000000000000022d:
 	flt.s	a0, fa1, fa2
 	beqz	a0, .LBB2_3
 	flt.s	a0, fa1, fa0
 	beqz	a0, .LBB2_4
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa1, fa5
 	xori	a0, a0, 1
 	ret
@@ -60,22 +59,22 @@ func000000000000022d:
 	flt.s	a0, fa2, fa0
 	bnez	a0, .LBB2_2
 .LBB2_4:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 
-.LCPI3_0:
-	.word	0x3e4ccccd
 func0000000000000224:
 	flt.s	a0, fa1, fa2
 	beqz	a0, .LBB3_3
 	flt.s	a0, fa1, fa0
 	beqz	a0, .LBB3_4
 .LBB3_2:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
 	ret
 .LBB3_3:
@@ -83,8 +82,9 @@ func0000000000000224:
 	flt.s	a0, fa2, fa0
 	bnez	a0, .LBB3_2
 .LBB3_4:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa0
 	ret
 

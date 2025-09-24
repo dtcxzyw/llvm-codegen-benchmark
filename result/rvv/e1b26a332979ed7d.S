@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.quad	0x43e0000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 543
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v0, v12
@@ -11,11 +10,10 @@ func0000000000000004:
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
-.LCPI1_0:
-	.quad	0xc3e0000000000000
 func0000000000000018:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, -481
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v0

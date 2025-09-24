@@ -50,30 +50,28 @@ func0000000000000088:
 	and	a0, a0, a1
 	ret
 
-.LCPI5_0:
-	.quad	0x3e80000000000000
 func0000000000000044:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
-	fsub.d	fa4, fa1, fa2
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa5, fa0
+	fsub.d	fa5, fa1, fa2
+	li	a0, 125
+	slli	a0, a0, 55
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
 	ret
 
 .LCPI6_0:
 	.quad	0x3ff004189374bc6a
-.LCPI6_1:
-	.quad	0x3ff0000000000000
 func0000000000000047:
 	lui	a0, %hi(.LCPI6_0)
-	lui	a1, %hi(.LCPI6_1)
+	li	a1, 1023
 	fld	fa5, %lo(.LCPI6_0)(a0)
-	fld	fa4, %lo(.LCPI6_1)(a1)
-	fsub.d	fa3, fa1, fa2
-	flt.d	a0, fa5, fa3
-	feq.d	a1, fa0, fa4
-	not	a1, a1
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	feq.d	a0, fa0, fa4
+	fsub.d	fa4, fa1, fa2
+	flt.d	a1, fa5, fa4
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

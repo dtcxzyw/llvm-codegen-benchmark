@@ -43,22 +43,20 @@ func0000000000000022:
 	vmflt.vv	v0, v8, v16
 	ret
 
-.LCPI5_0:
-	.quad	0x4056800000000000
 func0000000000000025:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 32941
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vf	v16, v16, fa5
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
 	ret
 
-.LCPI6_0:
-	.quad	0x4056800000000000
 func000000000000002a:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 32941
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vf	v16, v16, fa5
 	vmfle.vv	v0, v8, v16

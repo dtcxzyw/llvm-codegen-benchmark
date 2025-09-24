@@ -1,46 +1,36 @@
-.LCPI0_0:
-	.word	0x40c90fdb
 func0000000000000002:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v0, v8, fa4
+	vmflt.vf	v0, v8, fa5
 	vmv.v.i	v8, 0
-	vfmerge.vfm	v8, v8, fa5, v0
+	lui	a0, 265361
+	addi	a0, a0, -37
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
-.LCPI1_0:
-	.word	0x3dcccccd
-.LCPI1_1:
-	.word	0x3f19999a
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
-	fli.s	fa3, 0.5
+	fli.s	fa5, 0.5
+	lui	a0, 253133
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfgt.vf	v0, v8, fa3
-	vfmv.v.f	v8, fa5
-	vfmerge.vfm	v8, v8, fa4, v0
+	vmfgt.vf	v0, v8, fa5
+	addi	a0, a0, -819
+	vmv.v.x	v8, a0
+	lui	a0, 258458
+	addi	a0, a0, -1638
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
-.LCPI2_0:
-	.word	0x3fa14518
-.LCPI2_1:
-	.word	0x3f4b2ff5
 func0000000000000003:
 	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	flw	fa3, %lo(.LCPI2_1)(a0)
+	lui	a0, 260628
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
+	addi	a0, a0, 1304
+	vmv.v.x	v8, a0
+	lui	a0, 259251
 	vmnot.m	v0, v12
-	vfmv.v.f	v8, fa4
-	vfmerge.vfm	v8, v8, fa3, v0
+	addi	a0, a0, -11
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000008:

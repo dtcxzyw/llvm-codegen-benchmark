@@ -39,11 +39,10 @@ func0000000000000008:
 	xor	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.word	0x7f61b1e6
 func0000000000000007:
-	lui	a1, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a1)
+	lui	a1, 521755
+	addi	a1, a1, 486
+	fmv.w.x	fa5, a1
 	feq.s	a1, fa0, fa5
 	xor	a0, a0, a1
 	xori	a0, a0, 1

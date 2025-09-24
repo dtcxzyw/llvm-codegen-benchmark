@@ -22,14 +22,13 @@ func0000000000000007:
 	vmfne.vf	v0, v8, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x3a33a102
 func0000000000000002:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v16
 	vfdiv.vv	v8, v8, v12
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 238394
+	addi	a0, a0, 258
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -41,14 +40,13 @@ func0000000000000008:
 	vmfeq.vf	v0, v8, fa5
 	ret
 
-.LCPI5_0:
-	.word	0x38d1b717
 func000000000000000b:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v16
 	vfdiv.vv	v8, v8, v12
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 232731
+	addi	a0, a0, 1815
+	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret

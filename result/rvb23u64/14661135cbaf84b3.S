@@ -1,5 +1,3 @@
-.LCPI0_0:
-	.word	0x7fffffff
 func0000000000000003:
 	fmv.w.x	fa5, zero
 	fle.s	a0, fa5, fa1
@@ -7,8 +5,9 @@ func0000000000000003:
 	fneg.s	fa0, fa0
 	ret
 .LBB0_2:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa0, %lo(.LCPI0_0)(a0)
+	lui	a0, 524288
+	addi	a0, a0, -1
+	fmv.w.x	fa0, a0
 	ret
 
 func0000000000000008:

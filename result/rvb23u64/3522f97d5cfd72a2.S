@@ -4,11 +4,10 @@ func0000000000000004:
 	fcvt.lu.d	a0, fa5, rtz
 	ret
 
-.LCPI1_0:
-	.quad	0x43f0000000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 1087
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fmin.d	fa5, fa0, fa5
 	fcvt.lu.d	a0, fa5, rtz
 	ret

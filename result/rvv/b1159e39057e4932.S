@@ -14,13 +14,11 @@ func0000000000000004:
 	vmflt.vv	v0, v8, v16
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func0000000000000003:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmerge.vfm	v16, v16, fa5, v0
+	vmerge.vxm	v16, v16, a0, v0
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
 	ret

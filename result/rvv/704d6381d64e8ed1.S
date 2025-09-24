@@ -8,36 +8,33 @@ func0000000000000007:
 	vmfne.vf	v0, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0xbf7ffffe
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	lui	a0, 784384
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmadd.vf	v12, fa4, v16
+	vfmadd.vf	v12, fa5, v16
+	addi	a0, a0, -2
 	vfadd.vv	v8, v8, v12
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x3f733333
 func0000000000000003:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	lui	a0, 259891
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmadd.vf	v12, fa4, v16
+	vfmadd.vf	v12, fa5, v16
+	addi	a0, a0, 819
 	vfadd.vv	v8, v8, v12
+	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
 
-.LCPI3_0:
-	.word	0x40c00672
 func0000000000000004:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 265216
+	addi	a0, a0, 1650
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vf	v12, fa5, v16
 	vfadd.vv	v8, v8, v12

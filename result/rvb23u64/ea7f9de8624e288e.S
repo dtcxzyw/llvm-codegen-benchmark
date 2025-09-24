@@ -18,11 +18,10 @@ func0000000000000022:
 	flt.s	a0, fa5, fa0
 	ret
 
-.LCPI2_0:
-	.word	0x2b8cbccc
 func000000000000002d:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 178380
+	addi	a0, a0, -820
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa2, fa5
 	bnez	a0, .LBB2_2
 	fmv.s	fa5, fa2

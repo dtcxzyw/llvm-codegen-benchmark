@@ -24,11 +24,10 @@ func0000000000000002:
 	vmflt.vv	v0, v8, v16
 	ret
 
-.LCPI2_0:
-	.quad	0x409f400000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 66173
+	slli	a0, a0, 34
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfdiv.vf	v8, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma

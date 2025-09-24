@@ -39,12 +39,11 @@ func0000000000000008:
 	and	a0, a0, a1
 	ret
 
-.LCPI5_0:
-	.quad	0x4024000000000000
 func0000000000000003:
 	fdiv.d	fa5, fa0, fa1
-	lui	a1, %hi(.LCPI5_0)
-	fld	fa4, %lo(.LCPI5_0)(a1)
+	lui	a1, 4105
+	slli	a1, a1, 38
+	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
 	xori	a1, a1, 1
 	and	a0, a0, a1

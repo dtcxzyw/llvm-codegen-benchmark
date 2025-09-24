@@ -55,11 +55,10 @@ func000000000000000c:
 	vmerge.vim	v8, v8, 1, v0
 	ret
 
-.LCPI7_0:
-	.quad	0x433fffffffffffff
 func0000000000000014:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	li	a0, -756
+	rori	a0, a0, 10
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmfle.vf	v0, v8, fa5
 	vmv.v.i	v8, 0

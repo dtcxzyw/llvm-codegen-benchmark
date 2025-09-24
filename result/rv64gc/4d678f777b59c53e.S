@@ -12,11 +12,10 @@ func000000000000000c:
 	and	a0, a0, a2
 	ret
 
-.LCPI2_0:
-	.word	0x3ecccccd
 func0000000000000002:
-	lui	a2, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a2)
+	lui	a2, 257229
+	addi	a2, a2, -819
+	fmv.w.x	fa5, a2
 	flt.s	a2, fa0, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -37,11 +36,10 @@ func0000000000000005:
 	and	a0, a0, a2
 	ret
 
-.LCPI5_0:
-	.word	0x358637bd
 func000000000000000a:
-	lui	a2, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a2)
+	lui	a2, 219235
+	addi	a2, a2, 1981
+	fmv.w.x	fa5, a2
 	fle.s	a2, fa0, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2

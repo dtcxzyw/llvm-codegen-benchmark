@@ -49,17 +49,16 @@ func00000000000000e2:
 	ret
 
 .LCPI5_0:
-	.quad	0xc1e0000000000000
-.LCPI5_1:
 	.quad	0x41dfffffffc00000
 func00000000000000c4:
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa4, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmax.vf	v8, v8, fa5
-	vmfgt.vf	v0, v8, fa4
+	vfmax.vf	v8, v8, fa4
+	vmfgt.vf	v0, v8, fa5
 	ret
 
 .LCPI6_0:

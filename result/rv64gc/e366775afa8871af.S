@@ -25,13 +25,12 @@ func000000000000008c:
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0x3c23d70a
 func0000000000000081:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
 	andi	a0, a0, 256
+	lui	a1, 246333
 	seqz	a0, a0
+	addi	a1, a1, 1802
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

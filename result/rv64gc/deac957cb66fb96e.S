@@ -22,19 +22,18 @@ func0000000000000448:
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.word	0x7c38aa25
 func000000000000046a:
 	flt.s	a0, fa2, fa1
 	bnez	a0, .LBB2_2
 	fmv.s	fa1, fa2
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, 260096
-	fle.s	a1, fa5, fa1
+	lui	a0, 508811
+	lui	a1, 260096
+	addi	a0, a0, -1499
 	fmv.w.x	fa5, a0
-	fle.s	a0, fa0, fa5
+	fle.s	a0, fa5, fa1
+	fmv.w.x	fa5, a1
+	fle.s	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

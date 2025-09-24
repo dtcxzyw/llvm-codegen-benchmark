@@ -95,13 +95,12 @@ func0000000000000058:
 	and	a0, a0, a1
 	ret
 
-.LCPI11_0:
-	.word	0x3f7d70a4
 func000000000000008a:
-	lui	a1, %hi(.LCPI11_0)
-	flw	fa5, %lo(.LCPI11_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 260055
+	addi	a1, a1, 164
 	slti	a0, a0, 2
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	not	a0, a0
 	and	a0, a0, a1

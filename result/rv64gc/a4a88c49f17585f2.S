@@ -1,24 +1,22 @@
-.LCPI0_0:
-	.quad	0x3ff0000000000000
 func0000000000000048:
 	fcvt.w.d	a1, fa1, rtz
-	lui	a2, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a2)
 	addw	a0, a0, a1
+	li	a1, 1023
+	slli	a1, a1, 52
 	sltiu	a0, a0, 23
+	fmv.d.x	fa5, a1
 	not	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x3ff0000000000000
 func0000000000000248:
 	fcvt.w.d	a1, fa1, rtz
-	lui	a2, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a2)
 	addw	a0, a0, a1
+	li	a1, 1023
+	slli	a1, a1, 52
 	sltiu	a0, a0, 23
+	fmv.d.x	fa5, a1
 	not	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1

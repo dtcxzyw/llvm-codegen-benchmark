@@ -37,14 +37,13 @@ func0000000000000006:
 	snez	a0, a0
 	ret
 
-.LCPI5_0:
-	.quad	0x43e0000000000000
 func0000000000000005:
-	lui	a1, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a1)
 	bclri	a0, a0, 63
+	fmv.d.x	fa5, a0
+	li	a0, 543
+	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
-	fle.d	a0, fa4, fa5
+	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

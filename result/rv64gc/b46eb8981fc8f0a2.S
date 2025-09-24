@@ -12,13 +12,12 @@ func0000000000000000:
 .LBB0_2:
 	ret
 
-.LCPI1_0:
-	.quad	0x3fa0000000000000
 func0000000000000001:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.lu	fa4, a0
-	fmul.d	fa5, fa4, fa5
+	fcvt.d.lu	fa5, a0
+	li	a0, 509
+	slli	a0, a0, 53
+	fmv.d.x	fa4, a0
+	fmul.d	fa5, fa5, fa4
 	fcvt.lu.d	a0, fa5, rtz
 	lui	a1, 512
 	bltu	a1, a0, .LBB1_2

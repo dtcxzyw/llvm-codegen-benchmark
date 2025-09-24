@@ -1,25 +1,23 @@
-.LCPI0_0:
-	.quad	0x3bf0000000000000
 func0000000000000002:
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
+	li	a0, 959
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
+	slli	a0, a0, 52
 	vfneg.v	v8, v8, v0.t
-	vfmul.vf	v8, v8, fa4
+	fmv.d.x	fa5, a0
+	vfmul.vf	v8, v8, fa5
 	ret
 
-.LCPI1_0:
-	.quad	0x408f400000000000
 func0000000000000003:
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI1_0)
+	lui	a0, 66109
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmnot.m	v0, v16
+	slli	a0, a0, 34
 	vfneg.v	v8, v8, v0.t
+	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret
 

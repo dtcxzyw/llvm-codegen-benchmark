@@ -7,11 +7,10 @@ func0000000000000004:
 	vmflt.vv	v0, v16, v8
 	ret
 
-.LCPI1_0:
-	.word	0xbc1b0d37
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 770481
+	addi	a0, a0, -713
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v24, v16, fa5
 	vfwcvt.f.f.v	v16, v24

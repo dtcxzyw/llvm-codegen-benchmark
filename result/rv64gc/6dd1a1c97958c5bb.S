@@ -8,15 +8,14 @@ func0000000000000022:
 	fmin.s	fa0, fa0, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x7f7fffff
 func0000000000000042:
 	flt.s	a0, fa1, fa0
 	bnez	a0, .LBB1_2
 	fmv.s	fa0, fa1
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 522240
+	addi	a0, a0, -1
+	fmv.w.x	fa5, a0
 	fmin.s	fa0, fa0, fa5
 	ret
 

@@ -22,14 +22,13 @@ func0000000000000007:
 	fmul.d	fa0, fa0, fa5
 	ret
 
-.LCPI2_0:
-	.quad	0x7ff0000000000000
 func0000000000000005:
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa2, fa5
 	beqz	a0, .LBB2_2
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fmul.d	fa0, fa0, fa5
 	ret
 .LBB2_2:

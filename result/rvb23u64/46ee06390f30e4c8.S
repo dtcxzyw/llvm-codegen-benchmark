@@ -18,13 +18,12 @@ func00000000000000a7:
 	andn	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x4024000000000000
 func000000000000001c:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 4105
 	seqz	a0, a0
+	slli	a1, a1, 38
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -179,13 +178,12 @@ func00000000000000ea:
 	and	a0, a0, a1
 	ret
 
-.LCPI20_0:
-	.quad	0x433fffffffffffff
 func000000000000004a:
-	lui	a1, %hi(.LCPI20_0)
-	fld	fa5, %lo(.LCPI20_0)(a1)
 	sext.w	a0, a0
+	li	a1, -756
 	sltiu	a0, a0, 45
+	rori	a1, a1, 10
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -213,12 +211,11 @@ func00000000000000c6:
 	and	a0, a0, a1
 	ret
 
-.LCPI24_0:
-	.quad	0x4024000000000000
 func000000000000006a:
-	lui	a1, %hi(.LCPI24_0)
-	fld	fa5, %lo(.LCPI24_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 4105
+	slli	a1, a1, 38
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	sgtz	a0, a0

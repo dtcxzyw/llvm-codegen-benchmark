@@ -53,11 +53,10 @@ func0000000000000003:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI7_0:
-	.quad	0x402a000000000000
 func0000000000000005:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	lui	a0, 8213
+	slli	a0, a0, 37
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -76,11 +75,10 @@ func000000000000000e:
 	vmfeq.vv	v0, v8, v8
 	ret
 
-.LCPI10_0:
-	.quad	0xc3d0000000000000
 func000000000000000c:
-	lui	a0, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a0)
+	li	a0, -963
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
 	ret
@@ -93,11 +91,10 @@ func0000000000000006:
 	vmor.mm	v0, v17, v16
 	ret
 
-.LCPI12_0:
-	.quad	0x43e0000000000000
 func000000000000000d:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
+	li	a0, 543
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
 	vmnot.m	v0, v16

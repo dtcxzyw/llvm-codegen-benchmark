@@ -38,16 +38,14 @@ func0000000000000004:
 	vfmadd.vv	v8, v16, v12
 	ret
 
-.LCPI5_0:
-	.word	0x3dcccccd
 func000000000000000a:
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	lui	a0, 253133
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v20, v16, fa4
+	vmfle.vf	v20, v16, fa5
+	addi	a0, a0, -819
 	vmnot.m	v0, v20
-	vfmv.v.f	v20, fa5
+	vmv.v.x	v20, a0
 	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret

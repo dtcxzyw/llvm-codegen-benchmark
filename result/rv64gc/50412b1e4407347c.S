@@ -1,10 +1,9 @@
-.LCPI0_0:
-	.quad	0x7ff8000000000000
 func0000000000000017:
 	feq.d	a0, fa2, fa2
 	bnez	a0, .LBB0_2
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa1, %lo(.LCPI0_0)(a0)
+	lui	a0, 4095
+	slli	a0, a0, 39
+	fmv.d.x	fa1, a0
 .LBB0_2:
 	feq.d	a0, fa1, fa0
 	xori	a0, a0, 1

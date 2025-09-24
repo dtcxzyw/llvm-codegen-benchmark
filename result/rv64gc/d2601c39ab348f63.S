@@ -20,11 +20,10 @@ func0000000000000044:
 	fmv.s	fa0, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x40490fdb
 func00000000000000ca:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 263313
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa2
 	fle.s	a1, fa1, fa5
 	and	a0, a0, a1

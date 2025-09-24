@@ -6,11 +6,10 @@ func000000000000004c:
 	vmand.mm	v0, v10, v12
 	ret
 
-.LCPI1_0:
-	.quad	0x4049000000000000
 func0000000000000044:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 16457
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v12, v10, fa5
 	vmsleu.vi	v10, v8, -3

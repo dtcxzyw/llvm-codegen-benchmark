@@ -43,15 +43,14 @@ func0000000000000127:
 	vmfne.vf	v0, v8, fa5
 	ret
 
-.LCPI5_0:
-	.quad	0x4049000000000000
 func0000000000000124:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 16457
 	vmflt.vv	v0, v8, v16
+	slli	a0, a0, 36
 	vmerge.vvm	v8, v8, v16, v0
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
 

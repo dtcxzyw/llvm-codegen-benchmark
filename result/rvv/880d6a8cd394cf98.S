@@ -1,10 +1,9 @@
-.LCPI0_0:
-	.quad	0x3e50000000000000
 func000000000000000a:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 997
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vfmul.vf	v24, v24, fa5
 	vfmul.vv	v16, v24, v16
 	vmfle.vv	v0, v8, v16
@@ -52,13 +51,12 @@ func0000000000000003:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI5_0:
-	.quad	0x3eb2000000000000
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 8025
+	slli	a0, a0, 37
+	fmv.d.x	fa5, a0
 	vfmul.vf	v24, v24, fa5
 	vfmul.vv	v16, v24, v16
 	vmfle.vv	v24, v8, v16

@@ -19,11 +19,10 @@ func000000000000000b:
 	xori	a0, a0, 1
 	ret
 
-.LCPI3_0:
-	.word	0xbdcccccd
 func0000000000000002:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 777421
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa1, fa5
 	flt.s	a0, fa0, fa5
 	ret
@@ -42,11 +41,10 @@ func000000000000000c:
 	fle.s	a0, fa5, fa0
 	ret
 
-.LCPI6_0:
-	.word	0xb727c5ac
 func0000000000000003:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 750204
+	addi	a0, a0, 1452
+	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa1, fa5
 	fle.s	a0, fa5, fa0
 	xori	a0, a0, 1

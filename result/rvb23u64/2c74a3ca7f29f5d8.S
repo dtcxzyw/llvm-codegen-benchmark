@@ -8,14 +8,13 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0xc1dfffe000000000
-.LCPI1_1:
-	.quad	0xc1e0000000000000
 func000000000000000a:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	lui	a1, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a1)
+	li	a1, -497
+	slli	a1, a1, 53
 	fadd.d	fa5, fa0, fa5
+	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
 	andn	a0, a1, a0
 	ret

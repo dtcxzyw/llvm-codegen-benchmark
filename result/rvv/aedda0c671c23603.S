@@ -41,13 +41,12 @@ func0000000000000006:
 	vmsne.vi	v0, v8, 0
 	ret
 
-.LCPI5_0:
-	.quad	0x43e0000000000000
 func0000000000000005:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfabs.v	v8, v8
+	li	a0, 543
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vmfle.vf	v10, v8, fa5
 	vmnot.m	v0, v10
 	ret

@@ -14,12 +14,11 @@ func0000000000000023:
 	xori	a0, a0, 1
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func000000000000002a:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	flt.d	a0, fa1, fa2
+	li	a1, 971
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

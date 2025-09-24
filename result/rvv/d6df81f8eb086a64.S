@@ -40,11 +40,10 @@ func0000000000000008:
 	vmor.mm	v0, v0, v8
 	ret
 
-.LCPI5_0:
-	.quad	0x4034000000000000
 func000000000000001a:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 4109
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v9, v16, fa5
 	vmandn.mm	v8, v8, v9

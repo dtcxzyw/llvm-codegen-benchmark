@@ -8,29 +8,27 @@ func0000000000000021:
 	xori	a0, a0, 1
 	ret
 
-.LCPI1_0:
-	.word	0x358637bd
 func0000000000000022:
 	fsub.s	fa5, fa1, fa2
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 	fmv.s	fa0, fa5
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	ret
 
-.LCPI2_0:
-	.word	0x358637bd
 func000000000000002d:
 	fsub.s	fa5, fa1, fa2
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
 	fmv.s	fa0, fa5
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

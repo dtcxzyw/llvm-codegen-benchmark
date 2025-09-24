@@ -30,11 +30,10 @@ func0000000000000004:
 	xori	a0, a0, 1
 	ret
 
-.LCPI5_0:
-	.quad	0x7ff0000000000000
 func0000000000000008:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

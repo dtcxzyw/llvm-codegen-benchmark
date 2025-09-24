@@ -20,14 +20,13 @@ func0000000000000004:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.quad	0x7ff8000000000000
 func0000000000000001:
 	fsub.d	fa0, fa0, fa1
 	feq.d	a0, fa0, fa0
 	bnez	a0, .LBB2_2
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa0, %lo(.LCPI2_0)(a0)
+	lui	a0, 4095
+	slli	a0, a0, 39
+	fmv.d.x	fa0, a0
 .LBB2_2:
 	ret
 

@@ -30,15 +30,13 @@ func00000000000000c4:
 	flt.s	a0, fa5, fa0
 	ret
 
-.LCPI2_0:
-	.word	0x3f7fffff
 func0000000000000022:
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
-	andi	a0, a0, 1
-	fmin.s	fa5, fa0, fa5
-	bnez	a0, .LBB2_2
+	andi	a1, a0, 1
 	lui	a0, 260096
+	addi	a2, a0, -1
+	fmv.w.x	fa5, a2
+	fmin.s	fa5, fa0, fa5
+	bnez	a1, .LBB2_2
 	fmv.w.x	fa1, a0
 .LBB2_2:
 	flt.s	a0, fa5, fa1

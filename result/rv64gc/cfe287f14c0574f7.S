@@ -19,17 +19,15 @@ func0000000000000002:
 	flt.s	a0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.word	0x3f800347
 func0000000000000005:
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
 	fdiv.s	fa5, fa5, fa2
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	fmul.s	fa3, fa0, fa5
+	addi	a0, a0, 839
+	fmul.s	fa4, fa0, fa5
 	fmul.s	fa5, fa1, fa5
-	fadd.s	fa5, fa3, fa5
+	fadd.s	fa5, fa4, fa5
+	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret

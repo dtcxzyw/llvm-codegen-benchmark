@@ -32,19 +32,17 @@ func00000000000000d2:
 	flt.s	a0, fa0, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x3f490fdb
-.LCPI3_1:
-	.word	0x3a83126f
 func0000000000000042:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 259217
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa2
 	bnez	a0, .LBB3_2
 	fmv.s	fa0, fa1
 .LBB3_2:
-	lui	a0, %hi(.LCPI3_1)
-	flw	fa5, %lo(.LCPI3_1)(a0)
+	lui	a0, 239665
+	addi	a0, a0, 623
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	ret
 

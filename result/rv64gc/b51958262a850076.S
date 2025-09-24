@@ -17,11 +17,10 @@ func0000000000000013:
 	add	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x7ff0000000000000
 func000000000000001b:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
+	li	a1, 2047
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
 	flt.d	a2, fa0, fa5
 	lui	a1, 65
 	bnez	a2, .LBB2_2

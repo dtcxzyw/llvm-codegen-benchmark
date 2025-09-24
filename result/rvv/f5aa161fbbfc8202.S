@@ -1,34 +1,31 @@
-.LCPI0_0:
-	.word	0x3089705f
 func0000000000000122:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 198807
+	addi	a0, a0, 95
+	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12
 	ret
 
-.LCPI1_0:
-	.word	0x7e7fffff
 func0000000000000022:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 518144
+	addi	a0, a0, -1
+	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12
 	ret
 
-.LCPI2_0:
-	.word	0x358637bd
 func00000000000001aa:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	vmfle.vf	v16, v12, fa5
 	vmfle.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12
@@ -71,25 +68,23 @@ func00000000000000c4:
 	vmand.mm	v0, v16, v12
 	ret
 
-.LCPI6_0:
-	.word	0x358637bd
 func0000000000000044:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	vmfgt.vf	v16, v12, fa5
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12
 	ret
 
-.LCPI7_0:
-	.word	0x3f800054
 func00000000000000aa:
-	lui	a0, %hi(.LCPI7_0)
-	flw	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
+	lui	a0, 260096
+	addi	a0, a0, 84
+	fmv.w.x	fa5, a0
 	vmfle.vf	v16, v12, fa5
 	vmfle.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12

@@ -17,11 +17,10 @@ func0000000000000008:
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
-.LCPI2_0:
-	.word	0x3e4ccccd
 func0000000000000004:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	lui	a0, 278532
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5

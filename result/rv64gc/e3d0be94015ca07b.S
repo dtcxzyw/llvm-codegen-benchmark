@@ -48,11 +48,10 @@ func0000000000000008:
 .LBB5_2:
 	ret
 
-.LCPI6_0:
-	.quad	0x3ff0000000000000
 func0000000000000003:
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa5, fa1
 	beqz	a0, .LBB6_2
 	fmv.d	fa0, fa1
@@ -85,11 +84,10 @@ func000000000000000a:
 .LBB9_2:
 	ret
 
-.LCPI10_0:
-	.quad	0x3fe0000000000000
 func0000000000000005:
-	lui	a0, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a0)
+	li	a0, 511
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa1, fa5
 	beqz	a0, .LBB10_2
 	fmv.d	fa0, fa1

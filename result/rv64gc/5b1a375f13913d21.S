@@ -121,15 +121,14 @@ func0000000000000048:
 	or	a0, a0, a1
 	ret
 
-.LCPI13_0:
-	.word	0x3d25aee6
 func0000000000000023:
-	lui	a0, %hi(.LCPI13_0)
-	flw	fa5, %lo(.LCPI13_0)(a0)
-	fmv.w.x	fa4, zero
-	flt.s	a0, fa1, fa4
-	fle.s	a1, fa5, fa0
-	xori	a1, a1, 1
+	fmv.w.x	fa5, zero
+	lui	a0, 250459
+	flt.s	a1, fa1, fa5
+	addi	a0, a0, -282
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa5, fa0
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

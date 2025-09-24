@@ -17,17 +17,15 @@ func0000000000000004:
 .LBB1_2:
 	ret
 
-.LCPI2_0:
-	.word	0xf149f2ca
 func000000000000000a:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fsub.s	fa4, fa0, fa1
-	fle.s	a0, fa4, fa5
+	fsub.s	fa5, fa0, fa1
+	lui	a0, 988319
+	addi	a0, a0, 714
+	fmv.w.x	fa0, a0
+	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB2_2
-	fmv.s	fa5, fa4
-.LBB2_2:
 	fmv.s	fa0, fa5
+.LBB2_2:
 	ret
 
 func0000000000000001:

@@ -25,15 +25,14 @@ func000000000000008c:
 	vmand.mm	v0, v12, v10
 	ret
 
-.LCPI3_0:
-	.word	0x3c23d70a
 func0000000000000081:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	lui	a0, 246333
+	addi	a0, a0, 1802
 	vmseq.vi	v12, v10, 0
+	fmv.w.x	fa5, a0
 	vmfgt.vf	v10, v8, fa5
 	vmand.mm	v0, v12, v10
 	ret

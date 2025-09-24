@@ -61,23 +61,21 @@ func0000000000000014:
 	flt.d	a0, fa4, fa5
 	ret
 
-.LCPI7_0:
-	.quad	0x3cb0000000000000
 func0000000000000012:
 	fdiv.d	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa4, %lo(.LCPI7_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
 	fabs.d	fa5, fa5
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	ret
 
-.LCPI8_0:
-	.quad	0x4042800000000000
 func0000000000000004:
 	fdiv.d	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa4, %lo(.LCPI8_0)(a0)
+	lui	a0, 32901
+	slli	a0, a0, 35
 	fabs.d	fa5, fa5
+	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
 

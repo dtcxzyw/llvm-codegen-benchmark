@@ -6,13 +6,12 @@ func0000000000000001:
 	vfadd.vf	v8, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x3727c5ac
 func0000000000000000:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v8, v8
+	lui	a0, 225916
+	addi	a0, a0, 1452
+	fmv.w.x	fa5, a0
 	vfadd.vf	v8, v8, fa5
 	ret
 

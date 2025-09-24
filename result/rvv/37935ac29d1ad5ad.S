@@ -6,14 +6,13 @@ func0000000000000004:
 	vmfgt.vf	v0, v8, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x3c23d70a
 func0000000000000012:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.xu.w	v9, v10
 	vfdiv.vv	v8, v8, v9
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -25,14 +24,13 @@ func0000000000000002:
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI3_0:
-	.word	0x3e4ccccd
 func0000000000000003:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vfncvt.f.xu.w	v9, v10
 	vfdiv.vv	v8, v8, v9
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
 	vmfge.vf	v8, v8, fa5
 	vmnot.m	v0, v8
 	ret

@@ -27,18 +27,17 @@ func000000000000001b:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func0000000000000005:
 	fli.d	fa5, 0.5
-	lui	a0, %hi(.LCPI2_0)
+	li	a0, 971
 	fneg.d	fa5, fa5
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	slli	a0, a0, 52
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfadd.vv	v8, v8, v16
 	vfabs.v	v8, v8
-	vmfle.vf	v16, v8, fa4
+	fmv.d.x	fa5, a0
+	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
 

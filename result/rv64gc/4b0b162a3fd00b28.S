@@ -1,15 +1,13 @@
-.LCPI0_0:
-	.word	0x358637bd
-.LCPI0_1:
-	.word	0x3f7fffef
 func0000000000000042:
 	fdiv.s	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa4, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa3, %lo(.LCPI0_1)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa4, a0
+	lui	a0, 260096
+	addi	a0, a0, -17
 	fmax.s	fa5, fa5, fa4
-	flt.s	a0, fa5, fa3
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	ret
 
 func00000000000000c4:

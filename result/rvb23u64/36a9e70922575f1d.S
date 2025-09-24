@@ -20,12 +20,11 @@ func000000000000000a:
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0x3c23d70a
 func0000000000000002:
 	fdiv.s	fa5, fa0, fa1
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa4, %lo(.LCPI3_0)(a1)
+	lui	a1, 246333
+	addi	a1, a1, 1802
+	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret

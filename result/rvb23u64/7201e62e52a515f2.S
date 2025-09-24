@@ -1,14 +1,12 @@
-.LCPI0_0:
-	.word	0x3c23d70a
-.LCPI0_1:
-	.word	0x3dcccccd
 func0000000000000000:
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
-	lui	a1, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a1)
-	fcvt.s.w	fa3, a0
-	fmul.s	fa5, fa3, fa5
+	fcvt.s.w	fa5, a0
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa4, a0
+	lui	a0, 253133
+	addi	a0, a0, -819
+	fmul.s	fa5, fa5, fa4
+	fmv.w.x	fa4, a0
 	fmadd.s	fa0, fa0, fa4, fa5
 	ret
 

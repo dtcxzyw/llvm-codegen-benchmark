@@ -8,18 +8,16 @@ func0000000000000001:
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
-.LCPI1_0:
-	.quad	0x3f10000000000000
 func000000000000000a:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	li	a0, 30
+	fli.d	fa5, 65536.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
-	fli.d	fa4, 65536.0
+	li	a0, 1009
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmv.v.f	v8, fa4
-	vfmerge.vfm	v8, v8, fa5, v0
+	vfmv.v.f	v8, fa5
+	slli	a0, a0, 52
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 .LCPI2_0:

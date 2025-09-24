@@ -17,11 +17,10 @@ func0000000000000007:
 	fmul.s	fa0, fa1, fa2
 	ret
 
-.LCPI2_0:
-	.word	0x2b8cbccc
 func000000000000000c:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 178380
+	addi	a0, a0, -820
+	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB2_2
 	fmv.w.x	fa0, zero

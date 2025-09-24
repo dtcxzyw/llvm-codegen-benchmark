@@ -33,16 +33,15 @@ func0000000000000043:
 	xori	a0, a0, 1
 	ret
 
-.LCPI3_0:
-	.quad	0x3ff0000000000000
 func0000000000000042:
 	flt.d	a0, fa1, fa2
 	bnez	a0, .LBB3_2
 	fmv.d	fa1, fa2
 .LBB3_2:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	fsub.d	fa4, fa0, fa1
-	flt.d	a0, fa4, fa5
+	fsub.d	fa5, fa0, fa1
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	ret
 

@@ -1,16 +1,14 @@
-.LCPI0_0:
-	.word	0x358637bd
-.LCPI0_1:
-	.word	0x3f7fffef
 func0000000000000042:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
+	lui	a0, 260096
+	addi	a0, a0, -17
 	vfmax.vf	v8, v8, fa5
-	vmflt.vf	v0, v8, fa4
+	fmv.w.x	fa5, a0
+	vmflt.vf	v0, v8, fa5
 	ret
 
 func00000000000000c4:

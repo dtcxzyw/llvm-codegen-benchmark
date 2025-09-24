@@ -47,15 +47,14 @@ func0000000000000047:
 	vmfne.vf	v0, v8, fa5
 	ret
 
-.LCPI5_0:
-	.word	0x0da24260
 func0000000000000042:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 55844
 	vmflt.vv	v0, v8, v12
+	addi	a0, a0, 608
 	vmerge.vvm	v8, v8, v12, v0
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 

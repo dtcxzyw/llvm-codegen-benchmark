@@ -55,14 +55,13 @@ func0000000000000013:
 	xori	a0, a0, 1
 	ret
 
-.LCPI7_0:
-	.quad	0x406fe00000000000
 func0000000000000002:
-	lui	a1, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a1)
-	fcvt.d.w	fa4, a0
-	fmadd.d	fa4, fa4, fa0, fa1
-	flt.d	a0, fa4, fa5
+	fcvt.d.w	fa5, a0
+	lui	a0, 131967
+	fmadd.d	fa5, fa5, fa0, fa1
+	slli	a0, a0, 33
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	ret
 
 func000000000000000a:

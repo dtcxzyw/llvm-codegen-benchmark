@@ -64,11 +64,10 @@ func000000000000002b:
 	vmxnor.mm	v0, v12, v16
 	ret
 
-.LCPI8_0:
-	.word	0x7f61b1e6
 func0000000000000078:
-	lui	a0, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, 521755
+	addi	a0, a0, 486
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v16, v12, fa5
 	vmfeq.vf	v12, v8, fa5

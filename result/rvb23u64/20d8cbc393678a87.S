@@ -52,11 +52,10 @@ func0000000000000001:
 	addiw	a0, a0, 2
 	ret
 
-.LCPI7_0:
-	.quad	0x41e0000000000000
 func000000000000000c:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	li	a0, 527
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa5, fa0
 	slli	a0, a0, 1
 	ret

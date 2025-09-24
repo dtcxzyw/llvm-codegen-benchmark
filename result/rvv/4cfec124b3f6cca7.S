@@ -26,11 +26,10 @@ func000000000000000e:
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 
-.LCPI4_0:
-	.word	0x41102d33
 func000000000000000b:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 266499
+	addi	a0, a0, -717
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v8, fa5
 	vmnot.m	v0, v16

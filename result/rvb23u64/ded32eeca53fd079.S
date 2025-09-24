@@ -11,16 +11,14 @@ func0000000000000002:
 	fmin.d	fa0, fa5, fa4
 	ret
 
-.LCPI1_0:
-	.quad	0x4059000000000000
-.LCPI1_1:
-	.quad	0x4024000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	lui	a0, 16473
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
+	lui	a0, 4105
+	slli	a0, a0, 38
 	fmul.d	fa5, fa0, fa5
+	fmv.d.x	fa4, a0
 	fmax.d	fa0, fa5, fa4
 	ret
 

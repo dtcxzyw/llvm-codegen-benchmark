@@ -53,19 +53,18 @@ func000000000000042d:
 	vmandn.mm	v0, v12, v13
 	ret
 
-.LCPI4_0:
-	.word	0x3d25aee6
 func0000000000000423:
-	fli.s	fa5, 1.0
-	lui	a0, %hi(.LCPI4_0)
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfgt.vf	v0, v8, fa5
-	flw	fa4, %lo(.LCPI4_0)(a0)
-	vfmerge.vfm	v12, v8, fa5, v0
 	fmv.w.x	fa5, zero
-	vmflt.vf	v16, v8, fa5
-	vmfge.vf	v8, v12, fa4
-	vmorn.mm	v0, v16, v8
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v12, v8, fa5
+	fli.s	fa5, 1.0
+	lui	a0, 250459
+	vmfgt.vf	v0, v8, fa5
+	addi	a0, a0, -282
+	vfmerge.vfm	v8, v8, fa5, v0
+	fmv.w.x	fa5, a0
+	vmfge.vf	v13, v8, fa5
+	vmorn.mm	v0, v12, v13
 	ret
 
 func0000000000000428:

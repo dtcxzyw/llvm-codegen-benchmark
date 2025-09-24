@@ -24,13 +24,12 @@ func0000000000000002:
 	flt.d	a0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.quad	0x405e000000000000
 func0000000000000007:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.d.w	fa4, a0
-	fdiv.d	fa5, fa4, fa5
+	fcvt.d.w	fa5, a0
+	lui	a0, 8239
+	slli	a0, a0, 37
+	fmv.d.x	fa4, a0
+	fdiv.d	fa5, fa5, fa4
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
 	xori	a0, a0, 1

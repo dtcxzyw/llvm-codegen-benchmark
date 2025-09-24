@@ -133,13 +133,12 @@ func000000000000000b:
 	xori	a0, a0, 1
 	ret
 
-.LCPI17_0:
-	.quad	0x41d0000000000000
 func0000000000000003:
-	lui	a0, %hi(.LCPI17_0)
-	fld	fa5, %lo(.LCPI17_0)(a0)
-	fabs.d	fa4, fa0
-	fle.d	a0, fa5, fa4
+	fabs.d	fa5, fa0
+	li	a0, 1053
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
+	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

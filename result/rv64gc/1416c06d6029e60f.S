@@ -31,25 +31,23 @@ func0000000000000002:
 .LBB2_2:
 	ret
 
-.LCPI3_0:
-	.quad	0x3ff0000000000000
 func0000000000000008:
 	fclass.d	a0, fa1
 	andi	a0, a0, 129
 	beqz	a0, .LBB3_2
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa0, %lo(.LCPI3_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa0, a0
 .LBB3_2:
 	ret
 
-.LCPI4_0:
-	.quad	0x7ff8000000000000
 func0000000000000009:
 	fclass.d	a0, fa1
 	andi	a0, a0, 897
 	beqz	a0, .LBB4_2
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa0, %lo(.LCPI4_0)(a0)
+	lui	a0, 4095
+	slli	a0, a0, 39
+	fmv.d.x	fa0, a0
 .LBB4_2:
 	ret
 

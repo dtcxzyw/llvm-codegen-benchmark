@@ -35,16 +35,15 @@ func0000000000000003:
 	ret
 
 .LCPI4_0:
-	.quad	0xc1e0000000000000
-.LCPI4_1:
 	.quad	0x41dfffffffc00000
 func000000000000000c:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
-	fadd.d	fa5, fa0, fa5
-	fle.d	a0, fa4, fa5
+	li	a0, -497
+	slli	a0, a0, 53
+	fmv.d.x	fa4, a0
+	fadd.d	fa4, fa0, fa4
+	fle.d	a0, fa5, fa4
 	ret
 
 func0000000000000008:

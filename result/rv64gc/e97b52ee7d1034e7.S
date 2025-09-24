@@ -8,16 +8,14 @@ func0000000000000004:
 	and	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.word	0x3b808081
-.LCPI1_1:
-	.word	0x3e3851ec
 func0000000000000005:
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
-	lui	a1, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a1)
+	lui	a1, 243720
+	addi	a1, a1, 129
+	fmv.w.x	fa5, a1
+	lui	a1, 254853
+	addi	a1, a1, 492
 	fmul.s	fa5, fa0, fa5
+	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1
 	and	a0, a0, a1

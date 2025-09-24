@@ -15,11 +15,10 @@ func0000000000000007:
 	vfmul.vv	v8, v12, v16, v0.t
 	ret
 
-.LCPI2_0:
-	.word	0x2b8cbccc
 func000000000000000c:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 178380
+	addi	a0, a0, -820
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v8, 0

@@ -22,14 +22,13 @@ func00000000000000c4:
 	vmflt.vv	v0, v12, v8
 	ret
 
-.LCPI2_0:
-	.word	0x3f7fffff
 func0000000000000022:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fli.s	fa4, 1.0
+	lui	a0, 260096
+	fli.s	fa5, 1.0
+	addi	a0, a0, -1
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmv.v.f	v16, fa4
+	vfmv.v.f	v16, fa5
+	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vmflt.vv	v0, v8, v12

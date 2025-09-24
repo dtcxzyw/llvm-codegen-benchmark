@@ -6,33 +6,30 @@ func0000000000000003:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI1_0:
-	.quad	0x43e0000000000000
 func000000000000000c:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 543
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfneg.v	v8, v8, v0.t
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret
 
-.LCPI2_0:
-	.quad	0xc3e0000000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, -481
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfneg.v	v8, v8, v0.t
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 
-.LCPI3_0:
-	.quad	0xc059000000000000
 func0000000000000004:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 1032281
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfneg.v	v8, v8, v0.t
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
 

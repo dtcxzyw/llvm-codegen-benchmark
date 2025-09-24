@@ -30,26 +30,24 @@ func0000000000000008:
 	vfmul.vv	v8, v12, v8
 	ret
 
-.LCPI3_0:
-	.word	0x322bcc77
 func000000000000001b:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	vmfgt.vf	v20, v16, fa5
 	vmnot.m	v0, v20
 	vmerge.vim	v12, v12, 0, v0
 	vfmul.vv	v8, v8, v12
 	ret
 
-.LCPI4_0:
-	.word	0x322bcc77
 func0000000000000012:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, 205501
+	addi	a0, a0, -905
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
 	vfmul.vv	v8, v8, v12

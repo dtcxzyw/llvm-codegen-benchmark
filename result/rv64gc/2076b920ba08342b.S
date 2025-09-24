@@ -1,44 +1,36 @@
-.LCPI0_0:
-	.word	0x39f77236
-.LCPI0_1:
-	.word	0xb79d821b
-.LCPI0_2:
-	.word	0xbb7c6287
-.LCPI0_3:
-	.word	0x3bf19642
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	flw	fa3, %lo(.LCPI0_2)(a0)
-	lui	a0, %hi(.LCPI0_3)
-	flw	fa2, %lo(.LCPI0_3)(a0)
+	lui	a0, 237431
+	addi	a0, a0, 566
+	fmv.w.x	fa5, a0
+	lui	a0, 752088
+	addi	a0, a0, 539
+	fmv.w.x	fa4, a0
+	lui	a0, 767942
+	addi	a0, a0, 647
 	fmadd.s	fa5, fa0, fa4, fa5
-	fmadd.s	fa5, fa0, fa5, fa3
-	fmadd.s	fa0, fa0, fa5, fa2
+	fmv.w.x	fa4, a0
+	lui	a0, 245529
+	addi	a0, a0, 1602
+	fmadd.s	fa5, fa0, fa5, fa4
+	fmv.w.x	fa4, a0
+	fmadd.s	fa0, fa0, fa5, fa4
 	ret
 
-.LCPI1_0:
-	.word	0xb85ffb93
-.LCPI1_1:
-	.word	0xb2951928
-.LCPI1_2:
-	.word	0xbc9ded90
-.LCPI1_3:
-	.word	0xbf409397
 func0000000000000007:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
-	lui	a0, %hi(.LCPI1_2)
-	flw	fa3, %lo(.LCPI1_2)(a0)
-	lui	a0, %hi(.LCPI1_3)
-	flw	fa2, %lo(.LCPI1_3)(a0)
+	lui	a0, 755200
+	addi	a0, a0, -1133
+	fmv.w.x	fa5, a0
+	lui	a0, 731474
+	addi	a0, a0, -1752
+	fmv.w.x	fa4, a0
+	lui	a0, 772575
+	addi	a0, a0, -624
 	fmadd.s	fa5, fa0, fa4, fa5
-	fmadd.s	fa5, fa5, fa0, fa3
-	fmadd.s	fa0, fa5, fa0, fa2
+	fmv.w.x	fa4, a0
+	lui	a0, 783369
+	addi	a0, a0, 919
+	fmadd.s	fa5, fa5, fa0, fa4
+	fmv.w.x	fa4, a0
+	fmadd.s	fa0, fa5, fa0, fa4
 	ret
 

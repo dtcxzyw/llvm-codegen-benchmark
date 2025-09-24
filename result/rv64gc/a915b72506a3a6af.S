@@ -13,13 +13,12 @@ func000000000000000c:
 	fmax.s	fa0, fa5, fa4
 	ret
 
-.LCPI2_0:
-	.word	0x3e0efa36
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
-	fsub.s	fa4, fa1, fa2
-	fsub.s	fa4, fa4, fa0
-	fmin.s	fa0, fa4, fa5
+	fsub.s	fa5, fa1, fa2
+	lui	a0, 254192
+	fsub.s	fa5, fa5, fa0
+	addi	a0, a0, -1482
+	fmv.w.x	fa4, a0
+	fmin.s	fa0, fa5, fa4
 	ret
 

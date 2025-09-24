@@ -20,13 +20,12 @@ func0000000000000004:
 	vmflt.vv	v0, v24, v8
 	ret
 
-.LCPI2_0:
-	.quad	0x4059000000000000
 func000000000000000c:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
+	lui	a0, 16473
+	slli	a0, a0, 36
+	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vmfle.vv	v0, v24, v8
@@ -41,13 +40,12 @@ func0000000000000008:
 	vmfeq.vv	v0, v8, v24
 	ret
 
-.LCPI4_0:
-	.quad	0x402e000000000000
 func0000000000000002:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
+	lui	a0, 8215
+	slli	a0, a0, 37
+	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vmflt.vv	v0, v8, v24

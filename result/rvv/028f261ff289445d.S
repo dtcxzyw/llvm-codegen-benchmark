@@ -15,14 +15,13 @@ func0000000000000025:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI2_0:
-	.word	0x3f733333
 func0000000000000042:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 259891
+	addi	a0, a0, 819
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
-	vfmerge.vfm	v12, v12, fa5, v0
+	vmerge.vxm	v12, v12, a0, v0
 	vmflt.vv	v0, v8, v12
 	ret
 
@@ -109,15 +108,13 @@ func0000000000000048:
 	vmfeq.vv	v0, v8, v12
 	ret
 
-.LCPI13_0:
-	.word	0x3fac28f6
 func00000000000000a2:
-	lui	a0, %hi(.LCPI13_0)
-	flw	fa5, %lo(.LCPI13_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	lui	a0, 260803
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v0, v12, fa4
-	vfmerge.vfm	v12, v12, fa5, v0
+	vmfle.vf	v0, v12, fa5
+	addi	a0, a0, -1802
+	vmerge.vxm	v12, v12, a0, v0
 	vmflt.vv	v0, v8, v12
 	ret
 

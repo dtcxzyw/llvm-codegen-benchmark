@@ -37,15 +37,14 @@ func000000000000004a:
 	fle.d	a0, fa0, fa5
 	ret
 
-.LCPI3_0:
-	.quad	0x3d10000000000000
 func0000000000000045:
 	flt.d	a0, fa2, fa1
 	bnez	a0, .LBB3_2
 	fmv.d	fa1, fa2
 .LBB3_2:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	li	a0, 977
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fmul.d	fa5, fa1, fa5
 	fle.d	a0, fa0, fa5
 	xori	a0, a0, 1

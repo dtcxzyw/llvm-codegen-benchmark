@@ -49,28 +49,26 @@ func000000000000000c:
 	vmfge.vf	v0, v8, fa5
 	ret
 
-.LCPI5_0:
-	.quad	0x3cb0000000000000
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfdiv.vv	v16, v16, v24
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
 	vfmul.vv	v8, v16, v8
+	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
 
-.LCPI6_0:
-	.quad	0x4072c00000000000
 func0000000000000003:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfdiv.vv	v16, v16, v24
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, 65995
+	slli	a0, a0, 34
 	vfmul.vv	v8, v16, v8
+	fmv.d.x	fa5, a0
 	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

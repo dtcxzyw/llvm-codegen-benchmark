@@ -10,11 +10,10 @@ func0000000000000004:
 	fmul.s	fa0, fa5, fa4
 	ret
 
-.LCPI1_0:
-	.word	0x358637bd
 func0000000000000002:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa0

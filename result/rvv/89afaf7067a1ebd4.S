@@ -1,8 +1,7 @@
-.LCPI0_0:
-	.quad	0x3ca0000000000000
 func0000000000000015:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 485
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -21,22 +20,20 @@ func0000000000000014:
 	vmflt.vv	v0, v16, v8
 	ret
 
-.LCPI2_0:
-	.quad	0x3cb0000000000000
 func000000000000000a:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
 	vmfle.vv	v0, v8, v16
 	ret
 
-.LCPI3_0:
-	.quad	0x3cb0000000000000
 func0000000000000005:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -75,11 +72,10 @@ func0000000000000003:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI7_0:
-	.quad	0x3cb0000000000000
 func000000000000000d:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -87,11 +83,10 @@ func000000000000000d:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI8_0:
-	.quad	0x3cb0000000000000
 func000000000000001a:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -118,11 +113,10 @@ func0000000000000012:
 	vmflt.vv	v0, v8, v16
 	ret
 
-.LCPI11_0:
-	.quad	0x4024000000000000
 func000000000000001b:
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
+	lui	a0, 4105
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
@@ -130,11 +124,10 @@ func000000000000001b:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI12_0:
-	.quad	0x3cb0000000000000
 func000000000000001d:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8

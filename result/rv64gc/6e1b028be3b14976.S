@@ -75,23 +75,21 @@ func000000000000000c:
 	fle.s	a0, fa4, fa5
 	ret
 
-.LCPI9_0:
-	.word	0x3c23d70a
 func000000000000000e:
-	lui	a0, %hi(.LCPI9_0)
-	flw	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, 246333
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	fmul.s	fa5, fa0, fa5
 	feq.s	a0, fa5, fa5
 	ret
 
-.LCPI10_0:
-	.word	0x3b808081
 func0000000000000009:
-	lui	a0, %hi(.LCPI10_0)
-	flw	fa5, %lo(.LCPI10_0)(a0)
-	lui	a0, 522240
+	lui	a0, 243720
+	lui	a1, 522240
+	addi	a0, a0, 129
+	fmv.w.x	fa5, a0
 	fmul.s	fa5, fa0, fa5
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	flt.s	a0, fa5, fa4
 	flt.s	a1, fa4, fa5
 	or	a0, a0, a1

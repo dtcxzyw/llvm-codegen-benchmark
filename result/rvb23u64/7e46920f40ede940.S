@@ -29,11 +29,10 @@ func0000000000000004:
 	fld	fa0, 0(a0)
 	ret
 
-.LCPI2_0:
-	.quad	0x4018000000000000
 func0000000000000003:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 2051
+	slli	a0, a0, 39
+	fmv.d.x	fa5, a0
 	fdiv.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5

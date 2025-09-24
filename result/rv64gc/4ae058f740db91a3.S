@@ -7,11 +7,10 @@ func0000000000000002:
 	fsub.s	fa0, fa0, fa1
 	ret
 
-.LCPI1_0:
-	.word	0x40490fdb
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 263313
+	addi	a0, a0, -37
+	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa2
 	bnez	a0, .LBB1_2
 	fmv.s	fa1, fa2

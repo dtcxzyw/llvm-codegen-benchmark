@@ -10,11 +10,10 @@ func0000000000000000:
 	vmaxu.vx	v8, v8, a0
 	ret
 
-.LCPI1_0:
-	.quad	0x3fa0000000000000
 func0000000000000001:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 509
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vfcvt.rtz.xu.f.v	v8, v8

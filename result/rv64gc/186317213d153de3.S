@@ -127,25 +127,23 @@ func0000000000000014:
 	and	a0, a0, a1
 	ret
 
-.LCPI14_0:
-	.word	0x3b23d70a
 func00000000000000aa:
-	lui	a1, %hi(.LCPI14_0)
-	flw	fa5, %lo(.LCPI14_0)(a1)
+	lui	a1, 242237
+	addi	a1, a1, 1802
+	fmv.w.x	fa5, a1
 	fle.s	a1, fa0, fa5
 	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
-.LCPI15_0:
-	.word	0x3e4ccccd
 func0000000000000012:
-	lui	a1, %hi(.LCPI15_0)
-	flw	fa5, %lo(.LCPI15_0)(a1)
 	sext.w	a0, a0
+	lui	a1, 255181
 	addi	a0, a0, -3
+	addi	a1, a1, -819
 	seqz	a0, a0
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -81,11 +81,10 @@ func0000000000000073:
 	addw	a0, a0, a1
 	ret
 
-.LCPI14_0:
-	.word	0xbdb27eb6
 func0000000000000011:
-	lui	a1, %hi(.LCPI14_0)
-	flw	fa5, %lo(.LCPI14_0)(a1)
+	lui	a1, 777000
+	addi	a1, a1, -330
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	addw	a0, a0, a1
 	ret

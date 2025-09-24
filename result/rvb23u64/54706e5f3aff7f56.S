@@ -1,19 +1,17 @@
-.LCPI0_0:
-	.word	0xbca3d70a
-.LCPI0_1:
-	.word	0x3ca3d70a
 func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	lui	a0, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a0)
+	lui	a0, 772669
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa4, fa5
 	ret
 .LBB0_2:
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa5, %lo(.LCPI0_1)(a0)
+	lui	a0, 248381
+	addi	a0, a0, 1802
+	fmv.w.x	fa5, a0
 	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa4, fa5

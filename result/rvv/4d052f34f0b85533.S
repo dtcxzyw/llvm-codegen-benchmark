@@ -32,13 +32,12 @@ func0000000000000002:
 	vmflt.vv	v0, v12, v8
 	ret
 
-.LCPI3_0:
-	.quad	0x3bf0000000000000
 func0000000000000018:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfwcvt.f.xu.v	v16, v12
+	li	a0, 959
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmul.vf	v12, v16, fa5
 	vmfeq.vv	v0, v12, v8

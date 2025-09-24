@@ -14,28 +14,27 @@ func00000000000000bb:
 
 func0000000000000088:
 	fclass.d	a1, fa1
+	li	a2, 2047
+	slli	a2, a2, 52
+	fmv.d.x	fa5, a2
 	andi	a1, a1, 129
 	snez	a1, a1
 	or	a0, a0, a1
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x4076800000000000
-.LCPI2_1:
-	.quad	0x4056800000000000
 func0000000000000044:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	lui	a1, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a1)
-	fabs.d	fa3, fa1
-	flt.d	a1, fa5, fa3
+	fabs.d	fa5, fa1
+	lui	a1, 33005
+	lui	a2, 32941
+	slli	a1, a1, 35
+	slli	a2, a2, 35
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, a2
 	or	a0, a0, a1
-	flt.d	a1, fa4, fa0
+	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 
@@ -57,15 +56,14 @@ func0000000000000055:
 	or	a0, a0, a1
 	ret
 
-.LCPI4_0:
-	.quad	0x3cb0000000000000
 func0000000000000022:
-	lui	a1, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a1)
-	fabs.d	fa4, fa1
-	flt.d	a1, fa4, fa5
+	fabs.d	fa5, fa1
+	li	a1, 971
+	slli	a1, a1, 52
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
+	flt.d	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 

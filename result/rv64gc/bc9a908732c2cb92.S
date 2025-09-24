@@ -19,13 +19,12 @@ func0000000000000003:
 	xori	a0, a0, 1
 	ret
 
-.LCPI2_0:
-	.quad	0xbff0000000000000
 func0000000000000008:
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa5, fa0
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa4, %lo(.LCPI2_0)(a0)
+	li	a0, -1025
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
 	feq.d	a0, fa5, fa4
 	ret
 
@@ -57,13 +56,12 @@ func000000000000000b:
 	xori	a0, a0, 1
 	ret
 
-.LCPI6_0:
-	.quad	0x3fd0000000000000
 func000000000000000a:
 	fcvt.d.w	fa5, a0
 	fdiv.d	fa5, fa5, fa0
-	lui	a0, %hi(.LCPI6_0)
-	fld	fa4, %lo(.LCPI6_0)(a0)
+	li	a0, 1021
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4
 	ret
 

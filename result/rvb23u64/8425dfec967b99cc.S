@@ -17,16 +17,15 @@ func0000000000000022:
 	or	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x4066800000000000
 func0000000000000024:
 	fmv.d.x	fa5, zero
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a1)
-	flt.d	a1, fa1, fa5
-	neg	a1, a1
-	ori	a1, a1, 1
-	flt.d	a2, fa4, fa0
+	lui	a1, 32973
+	flt.d	a2, fa1, fa5
+	slli	a1, a1, 35
+	neg	a2, a2
+	fmv.d.x	fa5, a1
+	ori	a1, a2, 1
+	flt.d	a2, fa5, fa0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

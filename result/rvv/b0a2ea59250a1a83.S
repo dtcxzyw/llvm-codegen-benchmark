@@ -27,11 +27,10 @@ func0000000000000007:
 	vmerge.vim	v8, v8, 5, v0
 	ret
 
-.LCPI3_0:
-	.word	0x4e6e6b28
 func0000000000000008:
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 321255
+	addi	a0, a0, -1240
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmfeq.vf	v0, v8, fa5
 	vsetvli	zero, zero, e64, m2, ta, ma

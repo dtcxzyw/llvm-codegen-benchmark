@@ -26,11 +26,10 @@ func0000000000000004:
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.word	0xbca3d70a
 func0000000000000002:
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
+	lui	a1, 772669
+	addi	a1, a1, 1802
+	fmv.w.x	fa5, a1
 	lui	a1, 260096
 	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1

@@ -25,8 +25,6 @@ func000000000000000e:
 .LBB2_3:
 	ret
 
-.LCPI3_0:
-	.word	0x7f7fffff
 func000000000000000c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_3
@@ -34,8 +32,9 @@ func000000000000000c:
 	fle.s	a0, fa5, fa1
 	fmv.s	fa0, fa1
 	bnez	a0, .LBB3_3
-	lui	a0, %hi(.LCPI3_0)
-	flw	fa0, %lo(.LCPI3_0)(a0)
+	lui	a0, 522240
+	addi	a0, a0, -1
+	fmv.w.x	fa0, a0
 .LBB3_3:
 	ret
 

@@ -38,20 +38,18 @@ func0000000000000022:
 	vmflt.vf	v0, v8, fa4
 	ret
 
-.LCPI4_0:
-	.quad	0x4076800000000000
-.LCPI4_1:
-	.quad	0x4056800000000000
 func0000000000000025:
-	lui	a0, %hi(.LCPI4_0)
+	lui	a0, 33005
 	fmv.d.x	fa5, zero
-	fld	fa4, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa3, %lo(.LCPI4_1)(a0)
+	slli	a0, a0, 35
+	fmv.d.x	fa4, a0
+	lui	a0, 32941
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v8, fa5
+	slli	a0, a0, 35
 	vfadd.vf	v8, v8, fa4, v0.t
-	vmfle.vf	v16, v8, fa3
+	fmv.d.x	fa5, a0
+	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
 

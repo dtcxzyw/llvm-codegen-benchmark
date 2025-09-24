@@ -16,14 +16,13 @@ func0000000000000008:
 	vmsne.vi	v0, v8, 0
 	ret
 
-.LCPI2_0:
-	.word	0x358637bd
 func0000000000000012:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
+	lui	a0, 219235
 	vfabs.v	v8, v8
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 

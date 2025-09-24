@@ -14,12 +14,11 @@ func000000000000005d:
 	xori	a0, a0, 1
 	ret
 
-.LCPI2_0:
-	.word	0x40c90fdb
 func000000000000008c:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
 	feq.s	a0, fa1, fa2
+	lui	a1, 265361
+	addi	a1, a1, -37
+	fmv.w.x	fa5, a1
 	fle.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

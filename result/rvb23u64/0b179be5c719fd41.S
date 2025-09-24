@@ -162,11 +162,10 @@ func00000000000000c4:
 	or	a0, a0, a1
 	ret
 
-.LCPI18_0:
-	.quad	0x4024000000000000
 func00000000000000bd:
-	lui	a0, %hi(.LCPI18_0)
-	fld	fa5, %lo(.LCPI18_0)(a0)
+	lui	a0, 4105
+	slli	a0, a0, 38
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1

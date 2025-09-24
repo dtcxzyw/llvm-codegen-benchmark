@@ -1,5 +1,3 @@
-.LCPI0_0:
-	.word	0x3c23d70a
 func0000000000000000:
 	andi	a1, a1, 1
 	andi	a0, a0, 1
@@ -9,8 +7,9 @@ func0000000000000000:
 	bnez	a0, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	lui	a1, %hi(.LCPI0_0)
-	flw	fa5, %lo(.LCPI0_0)(a1)
+	lui	a1, 246333
+	addi	a1, a1, 1802
+	fmv.w.x	fa5, a1
 	fmul.s	fa0, fa0, fa5
 	beqz	a0, .LBB0_4
 .LBB0_3:

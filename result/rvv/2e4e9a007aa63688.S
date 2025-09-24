@@ -16,11 +16,10 @@ func00000000000000ca:
 	vmfle.vv	v0, v8, v12
 	ret
 
-.LCPI2_0:
-	.word	0x3b808081
 func0000000000000022:
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 243720
+	addi	a0, a0, 129
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vmflt.vv	v0, v12, v16
@@ -39,11 +38,10 @@ func0000000000000045:
 	vmnot.m	v0, v16
 	ret
 
-.LCPI4_0:
-	.word	0x3f800003
 func0000000000000024:
-	lui	a0, %hi(.LCPI4_0)
-	flw	fa5, %lo(.LCPI4_0)(a0)
+	lui	a0, 260096
+	addi	a0, a0, 3
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
 	vmflt.vv	v0, v12, v16

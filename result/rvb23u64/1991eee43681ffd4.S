@@ -14,11 +14,10 @@ func0000000000000006:
 	or	a0, a0, a2
 	ret
 
-.LCPI2_0:
-	.word	0x48976760
 func0000000000000008:
-	lui	a2, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a2)
+	lui	a2, 297334
+	addi	a2, a2, 1888
+	fmv.w.x	fa5, a2
 	flt.s	a2, fa5, fa0
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -43,8 +43,6 @@ func000000000000000a:
 	fmv.d.x	fa0, zero
 	ret
 
-.LCPI3_0:
-	.quad	0x3ff0000000000000
 func000000000000000c:
 	fle.d	a1, fa1, fa0
 	andi	a0, a0, 1
@@ -56,7 +54,8 @@ func000000000000000c:
 	fmv.d	fa0, fa1
 	beqz	a0, .LBB3_2
 .LBB3_4:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa0, %lo(.LCPI3_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa0, a0
 	ret
 

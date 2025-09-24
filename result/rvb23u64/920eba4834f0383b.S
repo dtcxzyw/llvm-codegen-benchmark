@@ -9,8 +9,6 @@ func0000000000000024:
 	flt.s	a0, fa4, fa5
 	ret
 
-.LCPI1_0:
-	.word	0x3f4ccccd
 func0000000000000042:
 	fcvt.s.d	fa4, fa0
 	fli.s	fa5, 1.25
@@ -18,8 +16,9 @@ func0000000000000042:
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa4
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa4, %lo(.LCPI1_0)(a0)
+	lui	a0, 259277
+	addi	a0, a0, -819
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 

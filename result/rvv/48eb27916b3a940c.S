@@ -45,19 +45,17 @@ func0000000000000011:
 	vmor.mm	v0, v16, v17
 	ret
 
-.LCPI5_0:
-	.quad	0x4076800000000000
-.LCPI5_1:
-	.quad	0x4056800000000000
 func0000000000000044:
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	lui	a0, 33005
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
+	lui	a0, 32941
+	slli	a0, a0, 35
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
+	fmv.d.x	fa5, a0
 	vmor.mm	v16, v0, v24
-	vmfgt.vf	v17, v8, fa4
+	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
 

@@ -28,8 +28,6 @@ func0000000000000002:
 .LBB1_4:
 	ret
 
-.LCPI2_0:
-	.quad	0x3ff0000000000000
 func000000000000000c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_3
@@ -39,8 +37,9 @@ func000000000000000c:
 	fmv.d	fa0, fa1
 	ret
 .LBB2_3:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa1, %lo(.LCPI2_0)(a0)
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa1, a0
 	fle.d	a0, fa0, fa1
 	bnez	a0, .LBB2_2
 .LBB2_4:

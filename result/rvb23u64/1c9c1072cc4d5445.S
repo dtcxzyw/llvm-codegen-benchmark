@@ -53,21 +53,19 @@ func0000000000000042:
 	fmul.d	fa0, fa4, fa5
 	ret
 
-.LCPI2_0:
-	.quad	0x4066800000000000
-.LCPI2_1:
-	.quad	0x3cb0000000000000
 func0000000000000022:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 32973
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa0, fa5
 	beqz	a0, .LBB2_3
 	fli.d	fa4, 1.0
 	flt.d	a0, fa5, fa4
 	beqz	a0, .LBB2_4
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_1)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fmul.d	fa0, fa4, fa5
 	ret
 .LBB2_3:
@@ -77,8 +75,9 @@ func0000000000000022:
 	bnez	a0, .LBB2_2
 .LBB2_4:
 	fmv.d	fa4, fa5
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_1)(a0)
+	li	a0, 971
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fmul.d	fa0, fa4, fa5
 	ret
 

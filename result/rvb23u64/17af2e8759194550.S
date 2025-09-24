@@ -4,11 +4,10 @@ func0000000000000005:
 	czero.nez	a0, a0, a1
 	ret
 
-.LCPI1_0:
-	.quad	0x43e0000000000000
 func0000000000000003:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
+	li	a1, 543
+	slli	a1, a1, 53
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	neg	a1, a1
 	or	a0, a0, a1
@@ -22,11 +21,10 @@ func0000000000000008:
 	addi	a0, a0, 4
 	ret
 
-.LCPI3_0:
-	.quad	0x4049000000000000
 func000000000000000a:
-	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
+	lui	a1, 16457
+	slli	a1, a1, 36
+	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
 	addi	a1, a1, -1
 	or	a0, a0, a1

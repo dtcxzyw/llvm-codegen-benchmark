@@ -7,19 +7,17 @@ func0000000000000044:
 	vmand.mm	v0, v12, v13
 	ret
 
-.LCPI1_0:
-	.word	0x3e4ccccd
-.LCPI1_1:
-	.word	0x3ecccccd
 func0000000000000022:
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a0)
+	lui	a0, 255181
+	addi	a0, a0, -819
+	fmv.w.x	fa5, a0
+	lui	a0, 257229
+	addi	a0, a0, -819
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
+	fmv.w.x	fa5, a0
 	vmand.mm	v12, v0, v16
-	vmflt.vf	v13, v8, fa4
+	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
 
@@ -50,11 +48,10 @@ func0000000000000055:
 	vmandn.mm	v0, v12, v13
 	ret
 
-.LCPI5_0:
-	.word	0x358637bd
 func00000000000000aa:
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a0)
+	lui	a0, 219235
+	addi	a0, a0, 1981
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
 	vmand.mm	v12, v0, v16
@@ -62,15 +59,14 @@ func00000000000000aa:
 	vmand.mm	v0, v12, v13
 	ret
 
-.LCPI6_0:
-	.word	0x3c0efa35
 func0000000000000082:
-	lui	a0, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a0)
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	lui	a0, 246000
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfeq.vf	v16, v12, fa4
+	vmfeq.vf	v16, v12, fa5
+	addi	a0, a0, -1483
 	vmand.mm	v12, v0, v16
+	fmv.w.x	fa5, a0
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
@@ -116,11 +112,10 @@ func00000000000000bb:
 	vmandn.mm	v0, v12, v13
 	ret
 
-.LCPI11_0:
-	.word	0x3727c5ac
 func00000000000000a8:
-	lui	a0, %hi(.LCPI11_0)
-	flw	fa5, %lo(.LCPI11_0)(a0)
+	lui	a0, 225916
+	addi	a0, a0, 1452
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
 	fli.s	fa5, 1.0
