@@ -13,13 +13,8 @@ func0000000000000001:
 	ret
 
 func00000000000000a1:
-	li	a2, 1
 	sub	a1, a1, a0
-	slli	a2, a2, 32
-	addi	a2, a2, -4
-	add	a1, a1, a2
-	addi	a2, a2, 3
-	and	a1, a1, a2
+	addiw	a1, a1, -4
 	seqz	a0, a1
 	ret
 

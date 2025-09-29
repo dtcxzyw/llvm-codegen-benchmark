@@ -17,10 +17,9 @@ func000000000000018c:
 
 func0000000000000181:
 	sext.w	a1, a0
-	li	a2, -1
+	li	a2, 1
 	snez	a1, a1
-	srli	a2, a2, 32
-	addi	a2, a2, 1
+	slli	a2, a2, 32
 	and	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

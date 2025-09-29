@@ -32,11 +32,8 @@ func0000000000000028:
 	ret
 
 func000000000000008c:
-	li	a2, -64
+	sraiw	a1, a1, 5
 	sraiw	a0, a0, 6
-	zext.w	a2, a2
-	addi	a2, a2, 32
-	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

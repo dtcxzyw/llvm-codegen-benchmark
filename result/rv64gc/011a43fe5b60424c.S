@@ -5,8 +5,7 @@ func0000000000000018:
 	ret
 
 func00000000000000d8:
-	addi	a0, a0, -16
-	addi	a0, a0, 15
+	addi	a0, a0, -1
 	sraiw	a0, a0, 4
 	snez	a0, a0
 	ret
