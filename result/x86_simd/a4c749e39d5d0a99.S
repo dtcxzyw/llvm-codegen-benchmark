@@ -64,7 +64,7 @@ func0000000000000021:
 	vpandd	.LCPI2_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

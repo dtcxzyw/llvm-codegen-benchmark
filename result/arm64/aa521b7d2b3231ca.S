@@ -28,10 +28,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	sxth	w9, w0
 	mov	w8, #3
-	cmp	w9, #0
-	csinc	w0, w8, wzr, mi
+	tst	w0, #0x8000
+	csinc	w0, w8, wzr, ne
 	ret
 
 func000000000000000c:

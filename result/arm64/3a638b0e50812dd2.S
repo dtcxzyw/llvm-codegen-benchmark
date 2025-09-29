@@ -50,9 +50,8 @@ func0000000000000101:
 	ret
 
 func00000000000000c1:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #0
 	cset	w0, eq
 	ret
@@ -112,57 +111,50 @@ func0000000000000094:
 	ret
 
 func00000000000000cc:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #1
 	cset	w0, ne
 	ret
 
 func00000000000000c4:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #2
 	cset	w0, lo
 	ret
 
 func00000000000000c8:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #1
 	cset	w0, hi
 	ret
 
 func00000000000000ca:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #16
 	cset	w0, gt
 	ret
 
 func00000000000000c6:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #16
 	cset	w0, lt
 	ret
 
 func0000000000000141:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x1, x0, mi
+	tst	w2, #0x80
+	csel	x8, x1, x0, ne
 	cmp	x8, #26
 	cset	w0, eq
 	ret
 
 func0000000000000148:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x1, x0, mi
+	tst	w2, #0x80
+	csel	x8, x1, x0, ne
 	cmp	x8, #5
 	cset	w0, hi
 	ret

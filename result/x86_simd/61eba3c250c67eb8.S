@@ -12,7 +12,7 @@ func0000000000000007:
 func0000000000000004:
 	vptestmd	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

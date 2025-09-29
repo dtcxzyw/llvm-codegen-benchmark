@@ -4,7 +4,7 @@ func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:
@@ -13,7 +13,7 @@ func0000000000000003:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:

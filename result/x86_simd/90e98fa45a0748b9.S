@@ -71,31 +71,11 @@ func0000000000000008:
 	retq
 
 .LCPI6_0:
-	.byte	255
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	255
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	255
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	255
-	.byte	0
-	.byte	0
-	.byte	0
-.LCPI6_1:
-	.byte	255
-	.byte	0
-	.byte	0
-	.byte	0
+	.long	510
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
-	vpandd	.LCPI6_1(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
+	vpandd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper

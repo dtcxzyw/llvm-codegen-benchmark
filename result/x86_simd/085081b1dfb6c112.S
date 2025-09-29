@@ -2,7 +2,7 @@ func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpaddd	%ymm2, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm0, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm0, %ymm0 {%k1} {z}
 	retq
 
 .LCPI1_0:
@@ -30,6 +30,6 @@ func0000000000000005:
 	vpmovw2m	%xmm0, %k1
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 

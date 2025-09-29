@@ -3,7 +3,7 @@
 func0000000000000002:
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}
+	vpslld	$1, %xmm0, %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 
@@ -21,7 +21,7 @@ func00000000000000c3:
 func0000000000000043:
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1
 	vptestmd	%xmm0, %xmm0, %k1
-	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}
+	vpslld	$1, %xmm0, %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 
@@ -32,7 +32,7 @@ func0000000000000043:
 func00000000000000cd:
 	vpcmpgtd	.LCPI3_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}
+	vpslld	$1, %xmm0, %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 
@@ -41,7 +41,7 @@ func00000000000000cd:
 func0000000000000042:
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}
+	vpslld	$1, %xmm0, %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 

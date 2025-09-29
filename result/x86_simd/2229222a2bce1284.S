@@ -3,7 +3,7 @@
 func0000000000000005:
 	vptestmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -69,7 +69,7 @@ func0000000000000051:
 func0000000000000053:
 	vpcmpnltud	.LCPI6_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -80,7 +80,7 @@ func0000000000000053:
 func000000000000001a:
 	vpcmpgtd	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -102,7 +102,7 @@ func0000000000000018:
 func000000000000001b:
 	vpcmpgtd	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -113,7 +113,7 @@ func000000000000001b:
 func0000000000000011:
 	vpcmpnltud	.LCPI10_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI10_1(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -156,7 +156,7 @@ func0000000000000006:
 func0000000000000052:
 	vpcmpnltud	.LCPI15_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI15_1(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

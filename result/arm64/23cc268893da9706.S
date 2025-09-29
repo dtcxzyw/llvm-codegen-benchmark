@@ -10,10 +10,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	sxtb	w8, w1
-	and	w9, w1, #0xff
-	cmp	w8, #0
-	csel	w0, w0, w9, mi
+	and	w8, w1, #0xff
+	tst	w1, #0x80
+	csel	w0, w0, w8, ne
 	ret
 
 func0000000000000008:

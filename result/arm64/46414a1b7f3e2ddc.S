@@ -8,19 +8,17 @@ func0000000000000024:
 
 func0000000000000026:
 	mov	w8, #63232
-	sxtb	w9, w0
-	and	w10, w1, #0xff
+	and	w9, w1, #0xff
+	tst	w0, #0x80
 	bfxil	w8, w1, #0, #8
-	cmp	w9, #0
-	csel	w0, w8, w10, mi
+	csel	w0, w8, w9, ne
 	ret
 
 func0000000000000066:
-	sxtb	w8, w0
-	and	w9, w1, #0xff
-	orr	w10, w9, #0x4
-	cmp	w8, #0
-	csel	w0, w10, w9, mi
+	and	w8, w1, #0xff
+	tst	w0, #0x80
+	orr	w9, w8, #0x4
+	csel	w0, w9, w8, ne
 	ret
 
 func0000000000000064:

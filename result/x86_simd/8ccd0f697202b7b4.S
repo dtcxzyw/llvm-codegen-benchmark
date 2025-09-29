@@ -1,13 +1,17 @@
+.LCPI0_0:
+	.quad	1
 func0000000000000003:
-	vmovdqa	%ymm0, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm1
-	vpsubq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vporq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+.LCPI1_0:
+	.quad	1
 func0000000000000005:
-	vmovdqa	%ymm0, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm1
-	vpsubq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vporq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

@@ -13,17 +13,15 @@ func0000000000000021:
 	ret
 
 func0000000000000006:
-	sxtb	w8, w1
-	and	x9, x1, #0xff
-	cmp	w8, #0
-	csel	x0, x0, x9, mi
+	and	x8, x1, #0xff
+	tst	w1, #0x80
+	csel	x0, x0, x8, ne
 	ret
 
 func0000000000000026:
-	sxtb	w8, w1
-	and	x9, x1, #0xff
-	cmp	w8, #0
-	csel	x0, x0, x9, mi
+	and	x8, x1, #0xff
+	tst	w1, #0x80
+	csel	x0, x0, x8, ne
 	ret
 
 func0000000000000001:

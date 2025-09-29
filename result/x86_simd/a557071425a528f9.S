@@ -13,6 +13,6 @@ func0000000000000003:
 	vpmovd2m	%xmm0, %k1
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

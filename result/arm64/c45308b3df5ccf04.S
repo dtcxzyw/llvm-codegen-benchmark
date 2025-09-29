@@ -17,9 +17,8 @@ func0000000000000001:
 func0000000000000006:
 	add	w9, w0, #1
 	mov	w8, #1
-	sxtb	w9, w9
-	cmp	w9, #0
-	csinc	w0, w8, w0, mi
+	tst	w9, #0x80
+	csinc	w0, w8, w0, ne
 	ret
 
 func000000000000000a:

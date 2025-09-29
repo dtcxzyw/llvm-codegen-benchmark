@@ -20,6 +20,6 @@ func0000000000000021:
 	vpmovsxdq	%xmm0, %ymm1
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

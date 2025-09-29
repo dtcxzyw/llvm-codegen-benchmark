@@ -5,6 +5,6 @@ func0000000000000001:
 	vpmovd2m	%xmm0, %k1
 	vpmovsxdq	%xmm1, %ymm1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

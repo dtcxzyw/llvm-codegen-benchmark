@@ -5,23 +5,20 @@ func000000000000000a:
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rcx, %rcx
-	shrq	%rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	%rcx
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	%rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm0, %rdx
 	mulxq	%rax, %rax, %rax
-	shrq	%rax
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
@@ -33,23 +30,20 @@ func000000000000000f:
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$-6148914691236517205, %rax
 	mulxq	%rax, %rcx, %rcx
-	shrq	$5, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$5, %rcx
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$5, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm0, %rdx
 	mulxq	%rax, %rax, %rax
-	shrq	$5, %rax
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$5, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq

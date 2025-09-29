@@ -38,17 +38,15 @@ func0000000000000064:
 	ret
 
 func0000000000000066:
-	sxtb	w8, w1
-	add	x9, x2, #120
-	cmp	w8, #0
-	csel	x0, x0, x9, mi
+	add	x8, x2, #120
+	tst	w1, #0x80
+	csel	x0, x0, x8, ne
 	ret
 
 func0000000000000006:
-	sxtb	w8, w1
-	sub	x9, x2, #24
-	cmp	w8, #0
-	csel	x0, x0, x9, mi
+	sub	x8, x2, #24
+	tst	w1, #0x80
+	csel	x0, x0, x8, ne
 	ret
 
 func000000000000004c:
@@ -66,9 +64,8 @@ func000000000000006a:
 	ret
 
 func0000000000000046:
-	sxtb	w8, w1
-	sub	x9, x2, #128
-	cmp	w8, #0
-	csel	x0, x0, x9, mi
+	sub	x8, x2, #128
+	tst	w1, #0x80
+	csel	x0, x0, x8, ne
 	ret
 

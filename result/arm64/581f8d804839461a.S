@@ -108,10 +108,9 @@ func0000000000000021:
 	ret
 
 func0000000000000019:
-	sxth	w9, w1
 	mov	w8, #-3
-	cmp	w9, #0
-	csel	w8, wzr, w8, mi
+	tst	w1, #0x8000
+	csel	w8, wzr, w8, ne
 	add	w0, w8, w0
 	ret
 

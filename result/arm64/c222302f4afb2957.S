@@ -15,11 +15,10 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	sxth	w9, w0
 	mov	w8, #256
 	tst	w1, #0x1
 	csel	w8, w8, wzr, ne
-	cmp	w9, #0
-	csel	w0, wzr, w8, mi
+	tst	w0, #0x8000
+	csel	w0, wzr, w8, ne
 	ret
 

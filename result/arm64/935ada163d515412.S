@@ -26,9 +26,8 @@ func000000000000004a:
 func0000000000000006:
 	sub	w9, w0, #19
 	mov	w8, #127
-	sxtb	w9, w9
-	cmp	w9, #0
-	csinc	w0, w8, wzr, mi
+	tst	w9, #0x80
+	csinc	w0, w8, wzr, ne
 	ret
 
 func0000000000000024:

@@ -6,8 +6,7 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sxth	w8, w1
-	cmp	w8, #0
-	csinv	w0, w0, w2, mi
+	tst	w1, #0x8000
+	csinv	w0, w0, w2, ne
 	ret
 

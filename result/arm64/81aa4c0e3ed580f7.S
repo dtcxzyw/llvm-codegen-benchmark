@@ -4,9 +4,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x0, x0, x1, mi
+	tst	w2, #0x80
+	csel	x0, x0, x1, ne
 	ret
 
 func0000000000000014:

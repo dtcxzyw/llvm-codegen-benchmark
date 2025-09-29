@@ -10,6 +10,6 @@ func000000000000006a:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

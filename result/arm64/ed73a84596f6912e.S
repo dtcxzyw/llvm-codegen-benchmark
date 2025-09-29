@@ -106,10 +106,9 @@ func0000000000000019:
 	ret
 
 func0000000000000018:
-	sxtb	w8, w1
-	sub	w9, w0, #1
-	cmp	w8, #0
-	csinc	w0, w9, w0, mi
+	sub	w8, w0, #1
+	tst	w1, #0x80
+	csinc	w0, w8, w0, ne
 	ret
 
 func0000000000000020:
@@ -128,10 +127,9 @@ func0000000000000010:
 	ret
 
 func000000000000001b:
-	sxtb	w8, w1
-	cmp	w8, #0
+	tst	w1, #0x80
 	add	w8, w0, #9
-	csinc	w0, w8, w0, mi
+	csinc	w0, w8, w0, ne
 	ret
 
 func0000000000000061:

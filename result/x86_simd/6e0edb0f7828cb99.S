@@ -17,7 +17,7 @@ func0000000000000024:
 
 func0000000000000021:
 	vptestmw	%xmm0, %xmm0, %k1
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1} {z}
+	vpsllq	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI2_0:
@@ -25,7 +25,7 @@ func0000000000000021:
 func0000000000000061:
 	vptestmw	%xmm0, %xmm0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI3_0:

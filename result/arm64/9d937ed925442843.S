@@ -1,7 +1,6 @@
 func0000000000000018:
-	sxth	w8, w2
-	cmp	w8, #0
-	csel	x8, xzr, x1, mi
+	tst	w2, #0x8000
+	csel	x8, xzr, x1, ne
 	mul	x0, x8, x0
 	ret
 

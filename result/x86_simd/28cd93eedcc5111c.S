@@ -3,7 +3,7 @@
 func0000000000000006:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpslld	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

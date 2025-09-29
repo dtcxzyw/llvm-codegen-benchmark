@@ -12,9 +12,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sxth	w8, w0
-	sxtw	x9, w1
-	cmp	w8, #0
-	csel	x0, xzr, x9, mi
+	sxtw	x8, w1
+	tst	w0, #0x8000
+	csel	x0, xzr, x8, ne
 	ret
 

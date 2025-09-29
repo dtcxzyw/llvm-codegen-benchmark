@@ -63,10 +63,9 @@ func0000000000000011:
 	ret
 
 func000000000000001b:
-	sxtb	w9, w1
 	mov	w8, #19
-	cmp	w9, #0
-	csel	x8, x8, xzr, mi
+	tst	w1, #0x80
+	csel	x8, x8, xzr, ne
 	add	x0, x8, x0
 	ret
 

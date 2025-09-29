@@ -10,7 +10,7 @@ func0000000000000021:
 
 func000000000000002a:
 	vpcmpgtd	%ymm1, %ymm0, %k1
-	vpaddd	%ymm2, %ymm2, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm2, %ymm0 {%k1} {z}
 	retq
 
 func0000000000000008:

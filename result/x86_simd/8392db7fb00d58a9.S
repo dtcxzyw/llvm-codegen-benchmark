@@ -4,23 +4,20 @@ func0000000000000003:
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$4835703278458516699, %rax
 	mulxq	%rax, %rcx, %rcx
-	shrq	$18, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$18, %rcx
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$18, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm0, %rdx
 	mulxq	%rax, %rax, %rax
-	shrq	$18, %rax
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$18, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 
@@ -30,23 +27,20 @@ func0000000000000013:
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$-3689348814741910323, %rax
 	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm2, %xmm1, %xmm1
 	vpextrq	$1, %xmm0, %rdx
 	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
 	vmovq	%rcx, %xmm2
 	vmovq	%xmm0, %rdx
 	mulxq	%rax, %rax, %rax
-	shrq	$3, %rax
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$3, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 

@@ -17,12 +17,11 @@ func000000000000000b:
 	.quad	9223372036854775806
 func0000000000000003:
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltd	%xmm3, %xmm0, %k1
+	vpmovd2m	%xmm0, %k1
 	vpaddq	%ymm2, %ymm1, %ymm0
-	vpminuq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm1
-	vpbroadcastq	.LCPI1_1(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpminuq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vpbroadcastq	.LCPI1_1(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
@@ -31,11 +30,10 @@ func0000000000000003:
 	.quad	-2
 func0000000000000002:
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltd	%xmm3, %xmm0, %k1
+	vpmovd2m	%xmm0, %k1
 	vpaddq	%ymm2, %ymm1, %ymm0
-	vpminuq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm1
-	vpbroadcastq	.LCPI2_1(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpminuq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vpbroadcastq	.LCPI2_1(%rip), %ymm0 {%k1}
 	retq
 

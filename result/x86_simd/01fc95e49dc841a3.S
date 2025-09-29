@@ -20,8 +20,8 @@ func0000000000000005:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovsxbd	.LCPI0_1(%rip), %ymm3
 	vpermi2d	%ymm0, %ymm1, %ymm3
-	vpaddq	%ymm3, %ymm3, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpsubq	%ymm3, %ymm2, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

@@ -29,7 +29,7 @@ func0000000000000051:
 func0000000000000053:
 	vpcmpnltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %xmm1
-	vpaddd	%xmm0, %xmm0, %xmm1 {%k1}
+	vpslld	$1, %xmm0, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq

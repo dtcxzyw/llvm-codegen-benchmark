@@ -10,7 +10,7 @@ func0000000000000026:
 
 func0000000000000021:
 	vptestmq	%ymm1, %ymm1, %k1
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	vptestnmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

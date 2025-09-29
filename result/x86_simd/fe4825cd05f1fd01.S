@@ -9,6 +9,6 @@ func0000000000000061:
 	.long	1
 func0000000000000021:
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vpaddd	%ymm0, %ymm0, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm0, %ymm0 {%k1} {z}
 	retq
 

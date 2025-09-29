@@ -65,6 +65,6 @@ func0000000000000001:
 	vpsubq	%ymm1, %ymm0, %ymm1
 	vpbroadcastq	.LCPI6_0(%rip), %ymm0
 	vptestmq	%ymm1, %ymm1, %k1
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

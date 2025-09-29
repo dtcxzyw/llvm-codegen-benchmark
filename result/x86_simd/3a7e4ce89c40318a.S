@@ -14,7 +14,7 @@ func0000000000000013:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpleuq	%ymm1, %ymm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
-	vpaddq	%ymm0, %ymm0, %ymm1 {%k1}
+	vpsllq	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -24,7 +24,7 @@ func0000000000000012:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpleuq	%ymm1, %ymm2, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1
-	vpaddq	%ymm0, %ymm0, %ymm1 {%k1}
+	vpsllq	$1, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

@@ -2,7 +2,7 @@
 	.long	1879048192
 func0000000000000001:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
-	vpaddq	%ymm0, %ymm0, %ymm0 {%k1} {z}
+	vpsllq	$1, %ymm0, %ymm0 {%k1} {z}
 	retq
 
 .LCPI1_0:

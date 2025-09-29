@@ -13,7 +13,7 @@ func0000000000000187:
 func0000000000000199:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

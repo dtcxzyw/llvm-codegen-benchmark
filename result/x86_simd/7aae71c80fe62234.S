@@ -3,13 +3,13 @@
 func0000000000000061:
 	vptestmd	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 func0000000000000041:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpneqd	%ymm2, %ymm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm2 {%k1}
+	vpslld	$1, %ymm1, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
 
@@ -20,7 +20,7 @@ func0000000000000041:
 func0000000000000066:
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI3_0:
@@ -30,12 +30,12 @@ func0000000000000066:
 func0000000000000024:
 	vpcmpnltud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 func0000000000000001:
 	vptestmd	%ymm0, %ymm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI5_0:
@@ -45,7 +45,7 @@ func0000000000000001:
 func0000000000000004:
 	vpcmpnltud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI6_0:
@@ -53,13 +53,13 @@ func0000000000000004:
 func0000000000000074:
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vpcmpnleud	%ymm2, %ymm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm2 {%k1}
+	vpslld	$1, %ymm1, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
 
 func0000000000000021:
 	vptestmd	%ymm0, %ymm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI8_0:
@@ -86,7 +86,7 @@ func0000000000000068:
 	.long	3
 func0000000000000064:
 	vpcmpnltud	.LCPI10_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI11_0:

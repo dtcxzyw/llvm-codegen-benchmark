@@ -127,10 +127,9 @@ func0000000000000094:
 	ret
 
 func00000000000000c6:
-	sxtb	w9, w1
-	mov	w8, #1
-	cmp	w9, #0
-	cinc	w8, w8, mi
+	mov	w8, #2
+	tst	w1, #0x80
+	csinc	w8, w8, wzr, ne
 	cmp	w0, w8
 	cset	w0, lt
 	ret

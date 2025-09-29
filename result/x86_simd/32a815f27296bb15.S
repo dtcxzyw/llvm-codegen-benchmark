@@ -41,8 +41,8 @@ func0000000000000020:
 	vpshufd	$245, %ymm0, %ymm0
 	vpblendd	$170, %ymm2, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

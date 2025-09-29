@@ -14,7 +14,7 @@ func0000000000000901:
 func0000000000000021:
 	vptestmq	%ymm1, %ymm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
-	vpaddq	%ymm1, %ymm1, %ymm2 {%k1}
+	vpsllq	$1, %ymm1, %ymm2 {%k1}
 	vpcmpeqq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

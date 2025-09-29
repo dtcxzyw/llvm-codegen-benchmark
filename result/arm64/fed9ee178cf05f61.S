@@ -21,9 +21,8 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #0
 	cset	w0, eq
 	ret
@@ -36,17 +35,15 @@ func0000000000000181:
 	ret
 
 func0000000000000141:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x1, x0, mi
+	tst	w2, #0x80
+	csel	x8, x1, x0, ne
 	cmp	x8, #0
 	cset	w0, eq
 	ret
 
 func00000000000000cc:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	x8, x0, x1, mi
+	tst	w2, #0x80
+	csel	x8, x0, x1, ne
 	cmp	x8, #0
 	cset	w0, ne
 	ret

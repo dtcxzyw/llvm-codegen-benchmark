@@ -38,6 +38,6 @@ func0000000000000068:
 
 func0000000000000001:
 	vptestmb	%xmm0, %xmm0, %k1
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm1, %ymm0 {%k1} {z}
 	retq
 

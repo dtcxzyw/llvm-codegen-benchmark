@@ -5,9 +5,8 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	sxth	w8, w2
-	cmp	w8, #0
-	csel	w8, w0, w1, mi
+	tst	w2, #0x8000
+	csel	w8, w0, w1, ne
 	add	w0, w8, #1
 	ret
 
@@ -39,9 +38,8 @@ func0000000000000007:
 	ret
 
 func000000000000001b:
-	sxth	w8, w2
-	cmp	w8, #0
-	csel	w8, w0, w1, mi
+	tst	w2, #0x8000
+	csel	w8, w0, w1, ne
 	add	w0, w8, #4
 	ret
 
@@ -60,9 +58,8 @@ func0000000000000013:
 	ret
 
 func0000000000000019:
-	sxth	w8, w2
-	cmp	w8, #0
-	csel	w8, w0, w1, mi
+	tst	w2, #0x8000
+	csel	w8, w0, w1, ne
 	sub	w0, w8, #1
 	ret
 

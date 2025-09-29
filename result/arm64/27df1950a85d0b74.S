@@ -6,17 +6,15 @@ func0000000000000068:
 	ret
 
 func000000000000004a:
-	sxtb	w8, w1
-	add	w9, w2, #127
-	cmp	w8, #0
-	csel	w0, w0, w9, mi
+	add	w8, w2, #127
+	tst	w1, #0x80
+	csel	w0, w0, w8, ne
 	ret
 
 func0000000000000046:
-	sxtb	w8, w1
-	add	w9, w2, #127
-	cmp	w8, #0
-	csel	w0, w9, w0, mi
+	add	w8, w2, #127
+	tst	w1, #0x80
+	csel	w0, w8, w0, ne
 	ret
 
 func0000000000000044:

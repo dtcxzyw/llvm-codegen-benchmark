@@ -19,7 +19,7 @@ func0000000000000013:
 	vpcmpnltuq	%ymm0, %ymm1, %k1
 	vpminuq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
@@ -31,6 +31,6 @@ func0000000000000012:
 	vpcmpnltuq	%ymm0, %ymm1, %k1
 	vpminuq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm0
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 

@@ -11,9 +11,8 @@ func0000000000000012:
 	ret
 
 func0000000000000018:
-	sxth	w8, w1
-	cmp	w8, #0
-	csel	w8, w0, w1, mi
+	tst	w1, #0x8000
+	csel	w8, w0, w1, ne
 	lsl	w0, w8, #6
 	ret
 

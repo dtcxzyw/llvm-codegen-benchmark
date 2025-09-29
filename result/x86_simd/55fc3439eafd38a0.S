@@ -5,7 +5,7 @@
 func0000000000000009:
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2
-	vpaddq	%ymm1, %ymm1, %ymm2 {%k1}
+	vpsllq	$1, %ymm1, %ymm2 {%k1}
 	vpmaxuq	%ymm0, %ymm2, %ymm0
 	retq
 
@@ -16,7 +16,7 @@ func0000000000000009:
 func000000000000000d:
 	vptestmq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm2
-	vpaddq	%ymm1, %ymm1, %ymm2 {%k1}
+	vpsllq	$1, %ymm1, %ymm2 {%k1}
 	vpmaxuq	%ymm0, %ymm2, %ymm0
 	retq
 

@@ -1,6 +1,6 @@
 func0000000000000004:
 	vptestmw	%xmm1, %xmm1, %k1
-	vpaddd	%ymm0, %ymm0, %ymm0 {%k1} {z}
+	vpslld	$1, %ymm0, %ymm0 {%k1} {z}
 	retq
 
 .LCPI1_0:

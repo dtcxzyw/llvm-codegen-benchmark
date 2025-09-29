@@ -17,9 +17,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	sxtb	w8, w0
-	cmp	w8, #0
-	csinc	w0, w0, wzr, pl
+	tst	w0, #0x80
+	csinc	w0, w0, wzr, eq
 	ret
 
 func0000000000000004:

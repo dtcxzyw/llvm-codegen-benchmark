@@ -2,10 +2,9 @@
 	.long	256
 func0000000000000004:
 	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltw	%xmm2, %xmm1, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpmovw2m	%xmm1, %k1
+	vpaddd	%ymm0, %ymm0, %ymm1
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1}
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -27,10 +26,9 @@ func0000000000000026:
 	.long	1024
 func000000000000002a:
 	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltw	%xmm2, %xmm1, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpmovw2m	%xmm1, %k1
+	vpaddd	%ymm0, %ymm0, %ymm1
+	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k1}
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -40,10 +38,9 @@ func000000000000002a:
 	.long	16
 func0000000000000008:
 	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpnltw	%xmm2, %xmm1, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm1 {%k1}
+	vpmovw2m	%xmm1, %k1
+	vpaddd	%ymm0, %ymm0, %ymm1
+	vpbroadcastd	.LCPI3_0(%rip), %ymm1 {%k1}
 	vpcmpnleud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

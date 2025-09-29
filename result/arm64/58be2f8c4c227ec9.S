@@ -89,11 +89,11 @@ func000000000000008c:
 	ret
 
 func0000000000000060:
-	sxtb	w8, w2
-	add	w9, w1, w0
-	cmp	w8, #0
+	tst	w2, #0x80
 	mov	w8, #13
-	cinc	w8, w8, mi
+	mov	w9, #14
+	csel	w8, w9, w8, ne
+	add	w9, w1, w0
 	add	w0, w8, w9
 	ret
 

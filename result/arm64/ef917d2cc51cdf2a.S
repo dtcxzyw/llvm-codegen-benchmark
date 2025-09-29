@@ -20,11 +20,10 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	sxth	w9, w0
 	mov	w8, #16
-	cmp	w9, #0
+	tst	w0, #0x8000
 	mov	w9, #8
-	csel	w0, w9, w8, mi
+	csel	w0, w9, w8, ne
 	ret
 
 func0000000000000008:

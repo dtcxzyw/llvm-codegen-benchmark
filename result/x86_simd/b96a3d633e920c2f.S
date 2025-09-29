@@ -37,7 +37,7 @@ func0000000000000018:
 func0000000000000021:
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm0
-	vpaddd	%ymm1, %ymm1, %ymm0 {%k1}
+	vpslld	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI5_0:

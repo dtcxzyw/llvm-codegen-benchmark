@@ -58,9 +58,8 @@ func000000000000000a:
 	ret
 
 func0000000000000066:
-	sxtb	w8, w0
-	add	x9, x1, #96
-	cmp	w8, #0
-	csel	x0, xzr, x9, mi
+	add	x8, x1, #96
+	tst	w0, #0x80
+	csel	x0, xzr, x8, ne
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000726:
 	mov	w8, #10
-	sxtb	w9, w0
+	tst	w0, #0x80
 	madd	w8, w2, w8, w1
-	cmp	w9, #0
-	cneg	w0, w8, mi
+	cneg	w0, w8, ne
 	ret
 
 func0000000000000221:

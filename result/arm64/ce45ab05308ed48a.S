@@ -13,9 +13,8 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	sxtb	w8, w1
-	orr	x9, x0, #0x40
-	cmp	w8, #0
-	csel	x0, x9, x0, mi
+	orr	x8, x0, #0x40
+	tst	w1, #0x80
+	csel	x0, x8, x0, ne
 	ret
 

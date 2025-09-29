@@ -40,11 +40,10 @@ func0000000000000004:
 
 func0000000000000018:
 	mov	w8, #4368
-	sxtb	w9, w1
+	tst	w1, #0x80
 	movk	w8, #1, lsl #16
-	orr	x10, x8, #0x4
-	cmp	w9, #0
-	csel	x8, x10, x8, mi
+	orr	x9, x8, #0x4
+	csel	x8, x9, x8, ne
 	add	x0, x0, x8
 	ret
 
@@ -99,11 +98,10 @@ func000000000000002b:
 	ret
 
 func000000000000001a:
-	sxtb	w9, w1
 	mov	x8, #-416
-	cmp	w9, #0
+	tst	w1, #0x80
 	mov	x9, #-448
-	csel	x8, x9, x8, mi
+	csel	x8, x9, x8, ne
 	add	x0, x0, x8
 	ret
 

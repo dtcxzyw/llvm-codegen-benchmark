@@ -3,7 +3,7 @@ func0000000000000001:
 	vpmovw2m	%xmm0, %k1
 	vpsrld	$31, %ymm2, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpsrad	$1, %ymm0, %ymm0
+	vpsrld	$1, %ymm0, %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	vpaddd	%ymm0, %ymm0, %ymm0
 	retq

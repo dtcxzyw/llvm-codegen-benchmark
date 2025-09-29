@@ -17,6 +17,6 @@ func0000000000000012:
 	vpminuq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm2
 	vpcmpnltuq	%ymm1, %ymm0, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm0
-	vpaddq	%ymm2, %ymm2, %ymm0 {%k1}
+	vpsllq	$1, %ymm2, %ymm0 {%k1}
 	retq
 

@@ -20,10 +20,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	sxtb	w9, w0
 	mov	w8, #32767
-	cmp	w9, #0
-	csinc	w0, w8, wzr, pl
+	tst	w0, #0x80
+	csinc	w0, w8, wzr, eq
 	ret
 
 func000000000000000c:

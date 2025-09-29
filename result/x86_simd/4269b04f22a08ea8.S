@@ -2,8 +2,8 @@ func0000000000000005:
 	vpsllq	$32, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

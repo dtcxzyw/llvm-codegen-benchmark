@@ -11,9 +11,8 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	sxtb	w8, w2
-	cmp	w8, #0
-	csel	w8, wzr, w1, mi
+	tst	w2, #0x80
+	csel	w8, wzr, w1, ne
 	orr	w0, w8, w0
 	ret
 

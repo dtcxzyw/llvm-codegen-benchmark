@@ -17,7 +17,7 @@ func0000000000000021:
 
 func0000000000000006:
 	vpmovq2m	%ymm0, %k1
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpsllq	$1, %ymm1, %ymm0 {%k1}
 	retq
 
 func0000000000000026:

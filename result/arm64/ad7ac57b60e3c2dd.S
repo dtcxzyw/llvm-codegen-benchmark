@@ -1,9 +1,8 @@
 func0000000000000026:
-	sxth	w9, w0
 	mov	w8, #26624
+	tst	w0, #0x8000
 	add	w8, w0, w8
-	cmp	w9, #0
-	csel	w0, w8, w0, mi
+	csel	w0, w8, w0, ne
 	ret
 
 func000000000000002a:

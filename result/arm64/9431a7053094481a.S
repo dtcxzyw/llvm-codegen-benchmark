@@ -43,14 +43,13 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	sxtb	w9, w0
 	mov	w8, #88
 	tst	w1, #0x1
-	mov	w10, #46
-	csel	w8, w10, w8, ne
-	cmp	w9, #0
+	mov	w9, #46
+	csel	w8, w9, w8, ne
+	tst	w0, #0x80
 	mov	w9, #98
-	csel	w0, w9, w8, mi
+	csel	w0, w9, w8, ne
 	ret
 
 func0000000000000018:

@@ -5,10 +5,9 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sxth	w8, w1
-	add	w9, w0, #4
-	cmp	w8, #0
-	csel	w0, w0, w9, mi
+	add	w8, w0, #4
+	tst	w1, #0x8000
+	csel	w0, w0, w8, ne
 	ret
 
 func0000000000000024:

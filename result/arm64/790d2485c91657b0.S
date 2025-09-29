@@ -1,8 +1,7 @@
 func0000000000000026:
-	sxth	w8, w1
-	sub	w9, w0, #15
-	cmp	w8, #0
-	csel	w0, w9, w0, mi
+	sub	w8, w0, #15
+	tst	w1, #0x8000
+	csel	w0, w8, w0, ne
 	ret
 
 func0000000000000064:
@@ -39,10 +38,9 @@ func0000000000000061:
 	ret
 
 func0000000000000066:
-	sxth	w8, w1
-	add	w9, w0, #4
-	cmp	w8, #0
-	csel	w0, w9, w0, mi
+	add	w8, w0, #4
+	tst	w1, #0x8000
+	csel	w0, w8, w0, ne
 	ret
 
 func0000000000000068:

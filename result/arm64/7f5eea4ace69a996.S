@@ -32,10 +32,9 @@ func000000000000000c:
 	ret
 
 func0000000000000026:
-	sxth	w8, w1
-	orr	w9, w0, #0xff000000
-	cmp	w8, #0
-	csel	w0, w9, w0, mi
+	orr	w8, w0, #0xff000000
+	tst	w1, #0x8000
+	csel	w0, w8, w0, ne
 	ret
 
 func0000000000000004:

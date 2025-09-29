@@ -7,10 +7,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	sxtb	w9, w1
 	mov	w8, #-2
-	cmp	w9, #0
-	cinc	w8, w8, pl
+	tst	w1, #0x80
+	csinv	w8, w8, wzr, ne
 	add	w0, w8, w0
 	ret
 

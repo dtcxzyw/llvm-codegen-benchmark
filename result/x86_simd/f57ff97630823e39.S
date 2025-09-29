@@ -28,7 +28,7 @@ func000000000000000d:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1
-	vpaddd	%ymm2, %ymm2, %ymm1 {%k1}
+	vpslld	$1, %ymm2, %ymm1 {%k1}
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
