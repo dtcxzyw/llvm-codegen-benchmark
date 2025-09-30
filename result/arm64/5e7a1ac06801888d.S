@@ -127,10 +127,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	mov	w8, #65531
-	and	w9, w0, #0x1fffffff
-	movk	w8, #8191, lsl #16
-	cmp	w9, w8
+	mov	w8, #-40
+	cmp	w8, w0, lsl #3
 	cset	w0, ne
 	ret
 

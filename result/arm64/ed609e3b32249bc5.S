@@ -19,28 +19,28 @@ func0000000000000098:
 	ret
 
 func0000000000000078:
-	fmov	x9, d0
+	fmov	x8, d0
 	fcmp	d0, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
+	mov	x9, #-9007199254740992
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #4, eq
 	cset	w0, ne
 	ret
 
 func0000000000000072:
-	fmov	x9, d0
+	fmov	x8, d0
 	fcmp	d0, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
+	mov	x9, #-9007199254740992
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #4, mi
 	cset	w0, ne
 	ret
 
 func000000000000008a:
-	fmov	x9, d0
+	fmov	x8, d0
 	fcmp	d0, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
+	mov	x9, #-9007199254740992
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #0, ls
 	cset	w0, eq
 	ret

@@ -83,9 +83,8 @@ func0000000000000005:
 
 func0000000000000008:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

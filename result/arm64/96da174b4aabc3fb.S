@@ -1,8 +1,7 @@
 func0000000000000001:
+	mov	x8, #-64
 	sub	x9, x0, x1
-	mov	x8, #9223372036854775776
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	cmp	x8, x9, lsl #1
 	cset	w0, eq
 	ret
 

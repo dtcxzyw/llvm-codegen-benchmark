@@ -12,12 +12,11 @@ func0000000000000004:
 	.xword	0x3f91df46a2529d39
 func0000000000000018:
 	adrp	x8, .LCPI1_0
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	ldr	d1, [x8, :lo12:.LCPI1_0]
 	fmul	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
+	cmp	x9, x8, lsl #1
 	cset	w0, eq
 	ret
 
@@ -78,11 +77,10 @@ func0000000000000002:
 
 func0000000000000008:
 	fmov	d1, #0.50000000
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	fmul	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
+	cmp	x9, x8, lsl #1
 	cset	w0, eq
 	ret
 
@@ -90,12 +88,11 @@ func0000000000000008:
 	.xword	0x3f91df46a2529d39
 func0000000000000007:
 	adrp	x8, .LCPI8_0
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	ldr	d1, [x8, :lo12:.LCPI8_0]
 	fmul	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
+	cmp	x9, x8, lsl #1
 	cset	w0, ne
 	ret
 

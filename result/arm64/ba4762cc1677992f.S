@@ -1,22 +1,20 @@
 func00000000000000f0:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, ne
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #0, ne
 	cset	w0, ne
 	ret
 
 func000000000000010e:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, eq
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, eq
 	cset	w0, eq
 	ret
 
@@ -31,13 +29,12 @@ func00000000000001b6:
 	ret
 
 func00000000000000ee:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, eq
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #0, eq
 	cset	w0, ne
 	ret
 
@@ -53,13 +50,12 @@ func0000000000000132:
 	ret
 
 func0000000000000110:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, ne
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, ne
 	cset	w0, eq
 	ret
 
@@ -111,13 +107,12 @@ func0000000000000044:
 	ret
 
 func0000000000000710:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, ne
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, ne
 	cset	w0, eq
 	ret
 
@@ -157,11 +152,11 @@ func00000000000000f2:
 	fmov	x9, d0
 	fmov	x10, d1
 	mov	x8, #9218868437227405311
+	lsl	x10, x10, #1
 	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
 	cmp	x9, x8
-	mov	x8, #9218868437227405312
-	ccmp	x10, x8, #0, le
+	mov	x8, #-9007199254740992
+	ccmp	x8, x10, #0, le
 	cset	w0, ne
 	ret
 

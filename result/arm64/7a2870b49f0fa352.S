@@ -48,9 +48,8 @@ func0000000000000121:
 	ret
 
 func0000000000000081:
-	and	x8, x2, #0x1ffffffff
-	mov	x9, #4294967296
-	cmp	x8, x9
+	mov	x8, #-9223372036854775808
+	cmp	x8, x2, lsl #31
 	ccmp	x0, x1, #2, eq
 	cset	w0, lo
 	ret

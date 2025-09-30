@@ -11,10 +11,9 @@ func0000000000000002:
 func0000000000000008:
 	fmul	s0, s0, s1
 	movi	d1, #0000000000000000
-	mov	w9, #2139095040
+	mov	w9, #-16777216
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	cmp	w9, w8, lsl #1
 	fcsel	s0, s1, s0, eq
 	ret
 

@@ -1,8 +1,7 @@
 func0000000000000008:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	mov	w8, #4
 	csel	x0, x0, x8, eq
 	ret

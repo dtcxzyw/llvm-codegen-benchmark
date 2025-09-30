@@ -7,9 +7,8 @@ func0000000000000002:
 	ret
 
 func0000000000000082:
-	and	x8, x2, #0x7fffffff
-	mov	w9, #1073741824
-	cmp	x8, x9
+	mov	x8, #-9223372036854775808
+	cmp	x8, x2, lsl #33
 	cset	w8, eq
 	orr	w8, w1, w8
 	and	w8, w0, w8

@@ -6,16 +6,14 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
-	mov	x8, #9218868437227405312
-	and	x9, x0, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x0, lsl #1
 	cset	w0, eq
 	ret
 
 func0000000000000007:
-	mov	x8, #9218868437227405312
-	and	x9, x0, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x0, lsl #1
 	cset	w0, ne
 	ret
 

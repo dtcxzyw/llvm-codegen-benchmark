@@ -29,9 +29,8 @@ func00000000000000d6:
 
 func0000000000000190:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	ccmp	w0, #0, #0, ne
 	cset	w0, ne
 	ret

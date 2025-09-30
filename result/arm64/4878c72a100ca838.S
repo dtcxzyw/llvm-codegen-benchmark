@@ -33,9 +33,8 @@ func0000000000000054:
 	ret
 
 func0000000000000041:
-	mov	w8, #2146435072
-	and	x9, x1, #0x7fffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x1, lsl #33
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

@@ -25,9 +25,8 @@ func000000000000000d:
 	ret
 
 func0000000000000008:
-	mov	w8, #2139095040
-	and	w9, w0, #0x7fffffff
-	cmp	w9, w8
+	mov	w8, #-16777216
+	cmp	w8, w0, lsl #1
 	cset	w0, eq
 	ret
 

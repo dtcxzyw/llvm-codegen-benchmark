@@ -26,10 +26,10 @@ func0000000000000268:
 func0000000000000208:
 	fmov	d1, #0.50000000
 	fmov	x8, d0
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	fcmp	d0, d1
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #4, pl
+	lsl	x8, x8, #1
+	ccmp	x9, x8, #4, pl
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

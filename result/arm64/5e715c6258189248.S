@@ -1,10 +1,9 @@
 func0000000000000018:
 	fmov	w9, s1
 	mov	w10, #-1
-	mov	w8, #2139095040
+	mov	w8, #-16777216
 	fmov	s1, w10
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	cmp	w8, w9, lsl #1
 	fcsel	s0, s1, s0, eq
 	ret
 
@@ -29,10 +28,9 @@ func0000000000000012:
 func0000000000000008:
 	fmov	w9, s1
 	mov	w10, #-1
-	mov	w8, #2139095040
+	mov	w8, #-16777216
 	fmov	s1, w10
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	cmp	w8, w9, lsl #1
 	fcsel	s0, s1, s0, eq
 	ret
 

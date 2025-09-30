@@ -85,10 +85,11 @@ func00000000000000dd:
 
 func0000000000000088:
 	mov	w8, #2139095040
-	fmov	w9, s1
+	mov	w9, #-16777216
 	fmov	s2, w8
-	and	w9, w9, #0x7fffffff
+	fmov	w8, s1
 	fcmp	s0, s2
+	lsl	w8, w8, #1
 	ccmp	w9, w8, #4, ne
 	cset	w0, eq
 	ret

@@ -1,7 +1,6 @@
 func000000000000000c:
-	and	x8, x2, #0xffffffffff
-	mov	x9, #549755813888
-	cmp	x8, x9
+	mov	x8, #-9223372036854775808
+	cmp	x8, x2, lsl #24
 	cset	w8, ne
 	orr	w8, w8, w1
 	and	w8, w0, w8

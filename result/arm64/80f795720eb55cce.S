@@ -1,8 +1,8 @@
 func000000000000002c:
-	and	w8, w2, #0x7fffffff
+	lsl	w8, w2, #1
 	cmp	w1, #0
-	mov	w9, #2146435072
-	ccmp	w8, w9, #0, ne
+	mov	w9, #-2097152
+	ccmp	w9, w8, #0, ne
 	cset	w8, eq
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

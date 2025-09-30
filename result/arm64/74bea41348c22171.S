@@ -12,11 +12,10 @@ func0000000000000002:
 
 func0000000000000007:
 	fcvt	d1, s1
-	mov	x8, #9218868437227405312
+	mov	x8, #-9007199254740992
 	fadd	d0, d0, d1
 	fmov	x9, d0
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	cmp	x8, x9, lsl #1
 	cset	w0, ne
 	ret
 

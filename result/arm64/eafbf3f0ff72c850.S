@@ -15,9 +15,8 @@ func0000000000000014:
 
 func0000000000000001:
 	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	mov	w8, #-16777216
+	cmp	w8, w9, lsl #1
 	cset	w0, eq
 	ret
 

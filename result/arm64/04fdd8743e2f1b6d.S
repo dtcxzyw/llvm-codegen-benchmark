@@ -54,10 +54,9 @@ func0000000000000002:
 
 func0000000000000008:
 	fsub	s0, s0, s1
-	mov	w8, #2139095040
+	mov	w8, #-16777216
 	fmov	w9, s0
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	cmp	w8, w9, lsl #1
 	cset	w0, eq
 	ret
 
@@ -132,10 +131,9 @@ func0000000000000006:
 
 func0000000000000007:
 	fsub	s0, s0, s1
-	mov	w8, #2139095040
+	mov	w8, #-16777216
 	fmov	w9, s0
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	cmp	w8, w9, lsl #1
 	cset	w0, ne
 	ret
 

@@ -1,19 +1,21 @@
 func00000000000000f0:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x9, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #0, ne
 	cset	w0, ne
 	ret
 
 func000000000000010e:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x9, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #4, eq
 	cset	w0, eq
 	ret
@@ -71,10 +73,11 @@ func0000000000000072:
 
 func00000000000000ee:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x9, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #0, eq
 	cset	w0, ne
 	ret
@@ -94,10 +97,11 @@ func0000000000000132:
 
 func0000000000000110:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x9, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #4, ne
 	cset	w0, eq
 	ret
@@ -162,10 +166,11 @@ func0000000000000048:
 
 func0000000000000310:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x9, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
+	lsl	x8, x8, #1
 	ccmp	x9, x8, #4, ne
 	cset	w0, eq
 	ret
@@ -226,13 +231,13 @@ func00000000000001ba:
 
 func00000000000000f2:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
+	mov	x10, #-9007199254740992
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
-	cset	w10, eq
-	csinc	w10, w10, wzr, vc
-	cmp	x9, x8
-	csinc	w0, w10, wzr, eq
+	cset	w9, eq
+	csinc	w9, w9, wzr, vc
+	cmp	x10, x8, lsl #1
+	csinc	w0, w9, wzr, eq
 	ret
 

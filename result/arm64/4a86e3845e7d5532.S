@@ -105,12 +105,11 @@ func0000000000000004:
 	.xword	0x3ff921fb54442d18
 func0000000000000008:
 	adrp	x8, .LCPI10_0
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	ldr	d1, [x8, :lo12:.LCPI10_0]
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
+	cmp	x9, x8, lsl #1
 	cset	w0, eq
 	ret
 

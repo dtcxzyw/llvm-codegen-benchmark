@@ -15,10 +15,10 @@ func00000000000000bb:
 
 func0000000000000088:
 	fmov	x8, d1
-	mov	x9, #9218868437227405312
-	fmov	d1, x9
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
+	mov	x10, #9218868437227405312
+	mov	x9, #-9007199254740992
+	fmov	d1, x10
+	cmp	x9, x8, lsl #1
 	cset	w8, eq
 	fcmp	d0, d1
 	orr	w8, w0, w8

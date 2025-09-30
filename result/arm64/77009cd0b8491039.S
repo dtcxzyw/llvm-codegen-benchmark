@@ -48,18 +48,16 @@ func0000000000000004:
 
 func0000000000000008:
 	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	mov	w8, #-16777216
+	cmp	w8, w9, lsl #1
 	cset	w8, eq
 	and	w0, w0, w8
 	ret
 
 func0000000000000007:
 	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
+	mov	w8, #-16777216
+	cmp	w8, w9, lsl #1
 	cset	w8, ne
 	and	w0, w0, w8
 	ret

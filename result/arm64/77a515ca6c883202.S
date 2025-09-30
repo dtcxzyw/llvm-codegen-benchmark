@@ -4,9 +4,8 @@ func00000000000001a1:
 	ret
 
 func0000000000000001:
-	mov	w8, #2147483644
-	and	w9, w1, #0x7fffffff
-	cmp	w9, w8
+	mov	w8, #-8
+	cmp	w8, w1, lsl #1
 	csel	w0, wzr, w0, eq
 	ret
 

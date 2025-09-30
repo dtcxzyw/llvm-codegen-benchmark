@@ -13,10 +13,10 @@ func0000000000000181:
 	ret
 
 func000000000000082c:
-	mov	w8, #2146435072
-	and	x9, x1, #0x7fffffff
+	lsl	x9, x1, #33
+	mov	x8, #-9007199254740992
 	cmp	w0, #0
-	ccmp	x9, x8, #0, ne
+	ccmp	x8, x9, #0, ne
 	cset	w0, eq
 	ret
 

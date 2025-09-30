@@ -11,9 +11,8 @@ func0000000000000024:
 
 func000000000000001c:
 	fmov	w8, s0
-	mov	w9, #2139095040
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	mov	w9, #-16777216
+	cmp	w9, w8, lsl #1
 	orr	w9, w0, w1
 	cset	w8, ne
 	orr	w8, w9, w8
@@ -22,9 +21,8 @@ func000000000000001c:
 
 func0000000000000020:
 	fmov	w8, s0
-	mov	w9, #2139095040
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	mov	w9, #-16777216
+	cmp	w9, w8, lsl #1
 	orr	w9, w0, w1
 	cset	w8, eq
 	orr	w8, w9, w8

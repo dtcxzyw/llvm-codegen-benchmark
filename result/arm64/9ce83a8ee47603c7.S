@@ -37,12 +37,12 @@ func0000000000000124:
 
 func0000000000000108:
 	mov	w8, #1333788672
-	mov	w9, #2139095040
+	mov	w9, #-16777216
 	fmov	s1, w8
 	fmov	w8, s0
 	fcmp	s0, s1
-	and	w8, w8, #0x7fffffff
-	ccmp	w8, w9, #4, le
+	lsl	w8, w8, #1
+	ccmp	w9, w8, #4, le
 	cset	w0, eq
 	ret
 

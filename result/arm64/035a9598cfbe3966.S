@@ -1,22 +1,20 @@
 func0000000000000088:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, eq
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #0, eq
 	cset	w0, eq
 	ret
 
 func0000000000000077:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, ne
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, ne
 	cset	w0, ne
 	ret
 
@@ -34,11 +32,11 @@ func0000000000000066:
 func0000000000000188:
 	fabs	d0, d0
 	fmov	d2, #1.00000000
-	mov	x9, #9218868437227405312
+	mov	x9, #-9007199254740992
 	fmov	x8, d1
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, eq
+	lsl	x8, x8, #1
+	ccmp	x9, x8, #0, eq
 	cset	w0, eq
 	ret
 

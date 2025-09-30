@@ -38,24 +38,22 @@ func0000000000000132:
 	ret
 
 func0000000000000110:
-	fmov	w9, s0
-	fmov	w10, s1
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	and	w10, w10, #0x7fffffff
-	cmp	w9, w8
-	ccmp	w10, w8, #4, ne
+	fmov	w9, s1
+	fmov	w10, s0
+	mov	w8, #-16777216
+	lsl	w9, w9, #1
+	cmp	w8, w10, lsl #1
+	ccmp	w8, w9, #4, ne
 	cset	w0, eq
 	ret
 
 func00000000000000f0:
-	fmov	w9, s0
-	fmov	w10, s1
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	and	w10, w10, #0x7fffffff
-	cmp	w9, w8
-	ccmp	w10, w8, #0, ne
+	fmov	w9, s1
+	fmov	w10, s0
+	mov	w8, #-16777216
+	lsl	w9, w9, #1
+	cmp	w8, w10, lsl #1
+	ccmp	w8, w9, #0, ne
 	cset	w0, ne
 	ret
 
@@ -71,13 +69,12 @@ func00000000000000aa:
 	ret
 
 func0000000000000710:
-	fmov	w9, s0
-	fmov	w10, s1
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	and	w10, w10, #0x7fffffff
-	cmp	w9, w8
-	ccmp	w10, w8, #4, ne
+	fmov	w9, s1
+	fmov	w10, s0
+	mov	w8, #-16777216
+	lsl	w9, w9, #1
+	cmp	w8, w10, lsl #1
+	ccmp	w8, w9, #4, ne
 	cset	w0, eq
 	ret
 

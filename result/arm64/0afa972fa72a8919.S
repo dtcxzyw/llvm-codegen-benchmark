@@ -12,10 +12,9 @@ func000000000000020a:
 	ret
 
 func000000000000000c:
-	mov	w8, #65531
-	and	x9, x0, #0x1fffffff
-	movk	w8, #8191, lsl #16
-	cmp	x9, x8
+	mov	x8, #281303178018816
+	movk	x8, #65535, lsl #48
+	cmp	x8, x0, lsl #35
 	cset	w0, ne
 	ret
 

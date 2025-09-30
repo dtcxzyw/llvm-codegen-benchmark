@@ -1,12 +1,11 @@
 func0000000000000018:
 	mov	w8, #4059
-	mov	w9, #2139095040
+	mov	w9, #-16777216
 	movk	w8, #16329, lsl #16
 	fmov	s1, w8
 	fadd	s0, s0, s1
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	cmp	w9, w8, lsl #1
 	cset	w0, eq
 	ret
 

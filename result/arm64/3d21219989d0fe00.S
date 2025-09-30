@@ -11,13 +11,12 @@ func0000000000000002:
 
 func0000000000000018:
 	mov	w8, #4059
-	mov	w9, #2139095040
+	mov	w9, #-16777216
 	movk	w8, #16585, lsl #16
 	fmov	s1, w8
 	fmul	s0, s0, s1
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	cmp	w9, w8, lsl #1
 	cset	w0, eq
 	ret
 
@@ -78,13 +77,12 @@ func0000000000000005:
 
 func0000000000000008:
 	mov	w8, #516
-	mov	w9, #2139095040
+	mov	w9, #-16777216
 	movk	w8, #15361, lsl #16
 	fmov	s1, w8
 	fmul	s0, s0, s1
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
+	cmp	w9, w8, lsl #1
 	cset	w0, eq
 	ret
 

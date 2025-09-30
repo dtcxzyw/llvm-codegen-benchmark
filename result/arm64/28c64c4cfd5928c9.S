@@ -1,8 +1,7 @@
 func000000000000000e:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	cset	w8, ne
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
@@ -10,9 +9,8 @@ func000000000000000e:
 
 func0000000000000010:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	cset	w8, eq
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
@@ -155,9 +153,8 @@ func000000000000002a:
 
 func0000000000000030:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
+	mov	x8, #-9007199254740992
+	cmp	x8, x9, lsl #1
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

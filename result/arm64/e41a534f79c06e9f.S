@@ -44,24 +44,22 @@ func0000000000000155:
 	ret
 
 func0000000000000087:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, eq
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, eq
 	cset	w0, eq
 	ret
 
 func0000000000000088:
-	fmov	x9, d0
-	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #4, ne
+	fmov	x9, d1
+	fmov	x10, d0
+	mov	x8, #-9007199254740992
+	lsl	x9, x9, #1
+	cmp	x8, x10, lsl #1
+	ccmp	x8, x9, #4, ne
 	cset	w0, eq
 	ret
 
