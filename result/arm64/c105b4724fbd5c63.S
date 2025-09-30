@@ -1,7 +1,6 @@
 func000000000000000c:
-	mov	x8, #-1
-	lsr	x9, x0, x2
-	lsr	x8, x8, x1
-	and	x0, x8, x9
+	lsr	x8, x0, x2
+	lsl	x8, x8, x1
+	lsr	x0, x8, x1
 	ret
 

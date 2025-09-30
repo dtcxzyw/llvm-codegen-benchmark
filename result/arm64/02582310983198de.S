@@ -1,8 +1,7 @@
 func0000000000000041:
 	neg	w8, w2
-	mov	w9, #-1
+	lsl	w9, w1, w8
 	lsr	w8, w9, w8
-	and	w8, w1, w8
 	tst	w0, w8
 	cset	w0, eq
 	ret

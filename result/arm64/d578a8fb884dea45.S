@@ -1,7 +1,7 @@
 func0000000000000001:
-	mov	w8, #-1
+	mov	w8, #112
+	lsr	w8, w8, w0
 	lsl	w8, w8, w0
-	and	w8, w8, #0x70
 	eor	w0, w8, #0x7f
 	ret
 

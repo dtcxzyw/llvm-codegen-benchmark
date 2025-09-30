@@ -32,17 +32,15 @@ func000000000000000e:
 
 func0000000000000011:
 	add	w8, w2, #1
-	mov	x9, #-1
-	lsl	x8, x9, x8
 	and	x9, x0, x1
-	and	x0, x8, x9
+	lsr	x9, x9, x8
+	lsl	x0, x9, x8
 	ret
 
 func0000000000000001:
 	add	w8, w2, #1
-	mov	x9, #-1
-	lsl	x8, x9, x8
 	and	x9, x0, x1
-	and	x0, x8, x9
+	lsr	x9, x9, x8
+	lsl	x0, x9, x8
 	ret
 

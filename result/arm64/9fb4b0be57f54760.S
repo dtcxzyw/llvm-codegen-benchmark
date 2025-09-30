@@ -20,19 +20,17 @@ func00000000000000c1:
 	ret
 
 func0000000000000004:
-	mov	w8, #-1
-	neg	w9, w1
-	lsr	w8, w8, w9
-	and	w8, w0, w8
+	neg	w8, w1
+	lsl	w9, w0, w8
+	lsr	w8, w9, w8
 	cmp	w8, #16, lsl #12
 	cset	w0, lo
 	ret
 
 func00000000000000c4:
-	mov	w8, #-1
-	neg	w9, w1
-	lsr	w8, w8, w9
-	and	w8, w0, w8
+	neg	w8, w1
+	lsl	w9, w0, w8
+	lsr	w8, w9, w8
 	cmp	w8, #16, lsl #12
 	cset	w0, lo
 	ret

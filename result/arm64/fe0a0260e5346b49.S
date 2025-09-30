@@ -13,10 +13,9 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	mov	x8, #-1
-	lsl	x8, x8, x0
-	and	w8, w1, w8
-	and	x0, x8, #0xff
+	and	x8, x1, #0xff
+	lsr	x8, x8, x0
+	lsl	x0, x8, x0
 	ret
 
 func0000000000000007:
@@ -27,10 +26,9 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	mov	x8, #-1
-	lsl	x8, x8, x0
-	and	w8, w1, w8
-	and	x0, x8, #0xff
+	and	x8, x1, #0xff
+	lsr	x8, x8, x0
+	lsl	x0, x8, x0
 	ret
 
 func0000000000000006:

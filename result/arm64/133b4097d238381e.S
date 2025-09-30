@@ -6,10 +6,9 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	mov	x8, #-1
-	mov	w9, #272
+	mov	w8, #272
+	lsl	x8, x8, x1
 	lsr	x8, x8, x1
-	and	x8, x8, x9
 	add	x0, x0, x8, lsl #3
 	ret
 

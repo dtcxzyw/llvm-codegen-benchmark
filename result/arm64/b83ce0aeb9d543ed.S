@@ -1,8 +1,7 @@
 func000000000000000d:
 	lsl	w8, w1, #3
-	mov	w9, #-1
-	lsl	w8, w9, w8
-	and	w0, w0, w8
+	lsr	w9, w0, w8
+	lsl	w0, w9, w8
 	ret
 
 func000000000000000e:

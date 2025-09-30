@@ -13,9 +13,8 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	mov	x8, #-1
-	sxtw	x9, w1
-	lsl	x8, x8, x0
-	and	x0, x8, x9
+	sxtw	x8, w1
+	lsr	x8, x8, x0
+	lsl	x0, x8, x0
 	ret
 

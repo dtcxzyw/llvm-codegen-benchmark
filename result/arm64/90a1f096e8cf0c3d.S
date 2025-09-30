@@ -16,10 +16,10 @@ func000000000000000f:
 
 func0000000000000001:
 	mov	w8, #8
-	mov	w9, #-1
+	mov	w9, #255
 	sub	w8, w8, w0
-	lsl	w8, w9, w8
-	and	w0, w8, #0xff
+	lsr	w9, w9, w8
+	lsl	w0, w9, w8
 	ret
 
 func0000000000000000:

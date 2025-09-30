@@ -1,9 +1,8 @@
 func000000000000000e:
-	lsl	w9, w1, #3
-	mov	x8, #-1
-	neg	w9, w9
-	lsr	x8, x8, x9
-	and	x0, x0, x8
+	lsl	w8, w1, #3
+	neg	w8, w8
+	lsl	x9, x0, x8
+	lsr	x0, x9, x8
 	ret
 
 func0000000000000002:
@@ -18,18 +17,16 @@ func0000000000000002:
 	ret
 
 func000000000000003e:
-	lsl	w9, w1, #3
-	mov	x8, #-1
-	neg	w9, w9
-	lsr	x8, x8, x9
-	and	x0, x8, x0
+	lsl	w8, w1, #3
+	neg	w8, w8
+	lsl	x9, x0, x8
+	lsr	x0, x9, x8
 	ret
 
 func0000000000000016:
-	lsl	w9, w1, #3
-	mov	x8, #-1
-	neg	w9, w9
-	lsr	x8, x8, x9
-	and	x0, x0, x8
+	lsl	w8, w1, #3
+	neg	w8, w8
+	lsl	x9, x0, x8
+	lsr	x0, x9, x8
 	ret
 

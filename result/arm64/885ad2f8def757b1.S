@@ -11,10 +11,9 @@ func0000000000000041:
 	ret
 
 func0000000000000044:
-	mov	x8, #-1
+	lsl	x8, x0, x1
 	mov	w9, #2147483647
 	lsr	x8, x8, x1
-	and	x8, x8, x0
 	cmp	x8, x9
 	cset	w0, lo
 	ret

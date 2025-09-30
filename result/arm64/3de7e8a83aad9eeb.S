@@ -1,8 +1,7 @@
 func0000000000000002:
-	sub	x9, x1, #1
-	mov	x8, #-1
-	clz	x9, x9
-	lsr	x8, x8, x9
-	and	x0, x0, x8
+	sub	x8, x1, #1
+	clz	x8, x8
+	lsl	x9, x0, x8
+	lsr	x0, x9, x8
 	ret
 

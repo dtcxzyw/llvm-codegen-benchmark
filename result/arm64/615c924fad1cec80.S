@@ -1,8 +1,7 @@
 func0000000000000014:
-	mov	x8, #-1
-	add	x9, x0, x1
-	lsl	x8, x8, x2
-	and	x0, x9, x8
+	add	x8, x0, x1
+	lsr	x8, x8, x2
+	lsl	x0, x8, x2
 	ret
 
 func0000000000000013:
@@ -20,17 +19,15 @@ func0000000000000018:
 	ret
 
 func0000000000000015:
-	mov	x8, #-1
-	add	x9, x0, x1
-	lsl	x8, x8, x2
-	and	x0, x8, x9
+	add	x8, x0, x1
+	lsr	x8, x8, x2
+	lsl	x0, x8, x2
 	ret
 
 func0000000000000001:
-	mov	x8, #-1
-	add	x9, x0, x1
-	lsl	x8, x8, x2
-	and	x0, x8, x9
+	add	x8, x0, x1
+	lsr	x8, x8, x2
+	lsl	x0, x8, x2
 	ret
 
 func0000000000000009:
