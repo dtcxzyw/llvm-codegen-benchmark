@@ -31,6 +31,6 @@ func0000000000000007:
 	add	a1, a1, a2
 	srli	a0, a0, 6
 	srliw	a1, a1, 3
-	sh3add.uw	a0, a1, a0
+	sh3add	a0, a1, a0
 	ret
 

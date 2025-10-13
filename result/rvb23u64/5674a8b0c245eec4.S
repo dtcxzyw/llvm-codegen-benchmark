@@ -7,8 +7,6 @@ func00000000000001ff:
 	ret
 
 func00000000000001bf:
-	slli	a1, a1, 3
-	srli	a1, a1, 3
 	sh3add.uw	a2, a1, a2
 	sh3add.uw	a2, a1, a2
 	sh3add.uw	a1, a1, a2

@@ -41,8 +41,6 @@ func0000000000000090:
 	ret
 
 func000000000000007c:
-	slli	a2, a2, 3
-	srli	a2, a2, 3
 	sh3add.uw	a1, a2, a1
 	sh3add.uw	a1, a2, a1
 	sext.w	a0, a0

@@ -22,7 +22,7 @@ func00000000000000ec:
 
 func0000000000000064:
 	srliw	a2, a2, 3
-	sh3add.uw	a1, a2, a1
+	sh3add	a1, a2, a1
 	sltu	a0, a0, a1
 	ret
 

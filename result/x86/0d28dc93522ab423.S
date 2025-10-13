@@ -41,18 +41,14 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	movq	%rdx, %rcx
-	shrdq	%cl, %rsi, %rdi
-	shrxq	%rdx, %rsi, %rdx
-	xorl	%esi, %esi
-	testb	$64, %cl
-	cmovneq	%rdx, %rdi
-	shlxq	%rcx, %rdi, %r8
-	movq	%r8, %rax
-	cmovneq	%rsi, %rax
-	cmovneq	%rsi, %rdx
-	shldq	%cl, %rdi, %rdx
-	testb	$64, %cl
-	cmovneq	%r8, %rdx
+	movq	$-1, %rcx
+	shlxq	%rdx, %rcx, %r8
+	xorl	%eax, %eax
+	testb	$64, %dl
+	cmovneq	%r8, %rcx
+	cmoveq	%r8, %rax
+	andq	%rdi, %rax
+	andq	%rsi, %rcx
+	movq	%rcx, %rdx
 	retq
 

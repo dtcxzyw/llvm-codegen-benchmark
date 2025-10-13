@@ -8,7 +8,7 @@ func000000000000003f:
 
 func000000000000002c:
 	srliw	a2, a2, 3
-	sh3add.uw	a0, a2, a0
+	sh3add	a0, a2, a0
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret
@@ -29,7 +29,7 @@ func000000000000000c:
 
 func0000000000000030:
 	srliw	a2, a2, 3
-	sh3add.uw	a0, a2, a0
+	sh3add	a0, a2, a0
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
