@@ -9,9 +9,8 @@ func0000000000000424:
 
 func000000000000054c:
 	slli	a0, a0, 56
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	srai	a0, a0, 56
-	addi	a1, a1, -1
 	snez	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -73,10 +72,9 @@ func0000000000000584:
 
 func000000000000070c:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -20
-	sltiu	a0, a0, 6
+	addiw	a1, a1, -20
 	snez	a1, a1
+	sltiu	a0, a0, 6
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

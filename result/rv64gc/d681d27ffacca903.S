@@ -59,11 +59,10 @@ func0000000000000063:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a2
+	addiw	a2, a2, -5
 	andi	a1, a1, 1
-	addi	a2, a2, -5
-	slli	a1, a1, 6
 	seqz	a2, a2
+	slli	a1, a1, 6
 	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -6,8 +6,7 @@ func0000000000000021:
 	andi	a2, a2, -6
 	addi	a1, a2, -49
 .LBB0_2:
-	sext.w	a1, a1
-	addi	a0, a1, 55
+	addiw	a0, a1, 55
 	seqz	a0, a0
 	ret
 

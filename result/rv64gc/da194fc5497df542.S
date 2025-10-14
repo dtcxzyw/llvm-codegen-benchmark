@@ -1,20 +1,18 @@
 func000000000000008c:
-	sext.w	a2, a0
-	addiw	a0, a0, -512
-	sltiu	a0, a0, -2
-	addi	a2, a2, -517
-	and	a0, a0, a1
-	snez	a1, a2
+	addiw	a2, a0, -512
+	addiw	a0, a0, -517
+	sltiu	a2, a2, -2
+	and	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000048c:
-	sext.w	a2, a0
-	addiw	a0, a0, -65
-	sltiu	a0, a0, -10
-	addi	a2, a2, -17
-	and	a0, a0, a1
-	snez	a1, a2
+	addiw	a2, a0, -65
+	addiw	a0, a0, -17
+	sltiu	a2, a2, -10
+	and	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

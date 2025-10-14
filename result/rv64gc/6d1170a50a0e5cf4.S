@@ -16,8 +16,8 @@ func0000000000000001:
 	bltu	a2, a1, .LBB1_2
 	mv	a2, a1
 .LBB1_2:
-	addw	a0, a0, a2
-	addi	a0, a0, -64
+	add	a0, a0, a2
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 

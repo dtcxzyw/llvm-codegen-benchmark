@@ -1,12 +1,12 @@
 func000000000000018c:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	sext.w	a2, a2
-	xor	a2, a2, a0
-	addi	a0, a0, -1
-	snez	a2, a2
-	and	a1, a1, a2
+	addiw	a0, a0, -1
+	xor	a2, a2, a3
 	snez	a0, a0
+	snez	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000186:

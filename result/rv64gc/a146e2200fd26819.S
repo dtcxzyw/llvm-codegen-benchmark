@@ -28,12 +28,11 @@ func0000000000001082:
 
 func0000000000004088:
 	zext.b	a0, a0
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -95
 	sltiu	a2, a2, 10
-	addi	a1, a1, -95
-	sltiu	a0, a0, 26
 	seqz	a1, a1
+	sltiu	a0, a0, 26
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -41,13 +40,12 @@ func0000000000004088:
 func0000000000001214:
 	slli	a0, a0, 56
 	zext.b	a1, a1
-	sext.w	a2, a2
+	addiw	a2, a2, -128
 	srai	a0, a0, 56
-	addi	a2, a2, -128
-	sltiu	a1, a1, 4
 	seqz	a2, a2
-	srli	a0, a0, 63
+	sltiu	a1, a1, 4
 	or	a1, a1, a2
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

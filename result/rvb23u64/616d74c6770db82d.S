@@ -34,10 +34,9 @@ func0000000000000042:
 	ret
 
 func0000000000000318:
-	sext.w	a1, a1
 	lui	a3, 7176
+	addiw	a1, a1, -256
 	and	a2, a2, a3
-	addi	a1, a1, -256
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2

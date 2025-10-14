@@ -1,8 +1,7 @@
 func00000000000000e1:
-	sext.w	a0, a0
 	clzw	a1, a1
+	addiw	a0, a0, -1
 	li	a2, 31
-	addi	a0, a0, -1
 	sub	a2, a2, a1
 	czero.eqz	a0, a2, a0
 	addi	a0, a0, 1

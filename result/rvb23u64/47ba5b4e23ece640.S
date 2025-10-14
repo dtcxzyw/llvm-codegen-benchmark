@@ -32,22 +32,22 @@ func00000000000001a8:
 
 func00000000000001a1:
 	ctz	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -32
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
 func00000000000003a1:
 	ctz	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -32
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
 func00000000000001e1:
 	ctz	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -64
+	add	a0, a0, a1
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 

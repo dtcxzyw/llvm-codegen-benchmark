@@ -78,9 +78,8 @@ func0000000000000090:
 
 func00000000000000a8:
 	slli	a1, a1, 56
-	sext.w	a2, a2
+	addiw	a2, a2, -192
 	srai	a1, a1, 56
-	addi	a2, a2, -192
 	seqz	a2, a2
 	srli	a1, a1, 63
 	xori	a1, a1, 1

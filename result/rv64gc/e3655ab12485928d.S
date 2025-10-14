@@ -31,8 +31,7 @@ func0000000000000001:
 	bnez	a0, .LBB3_2
 	addi	a1, a2, 1
 .LBB3_2:
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a0, a1
 	ret
 
@@ -114,8 +113,7 @@ func0000000000000061:
 	bnez	a0, .LBB12_2
 	addi	a1, a2, 1
 .LBB12_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -124,8 +122,7 @@ func0000000000000041:
 	bnez	a0, .LBB13_2
 	addi	a1, a2, 1
 .LBB13_2:
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a0, a1
 	ret
 

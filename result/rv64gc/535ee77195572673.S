@@ -40,8 +40,8 @@ func000000000000028a:
 func000000000000028c:
 	zext.b	a2, a2
 	sub	a1, a1, a0
-	subw	a2, a2, a1
-	addi	a2, a2, -1
+	sub	a2, a2, a1
+	addiw	a2, a2, -1
 	snez	a0, a2
 	ret
 

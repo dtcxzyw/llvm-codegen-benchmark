@@ -19,8 +19,8 @@ func000000000000012a:
 
 func0000000000000121:
 	srli	a1, a0, 32
-	mulw	a0, a1, a0
-	addi	a0, a0, -1
+	mul	a0, a1, a0
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

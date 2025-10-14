@@ -7,16 +7,16 @@ func0000000000000606:
 
 func0000000000000401:
 	slli	a1, a0, 1
-	addw	a0, a0, a1
-	addi	a0, a0, 3
+	add	a0, a0, a1
+	addiw	a0, a0, 3
 	seqz	a0, a0
 	ret
 
 func0000000000000001:
 	slli	a1, a0, 3
 	slli	a0, a0, 5
-	subw	a0, a0, a1
-	addi	a0, a0, 64
+	sub	a0, a0, a1
+	addiw	a0, a0, 64
 	seqz	a0, a0
 	ret
 

@@ -31,8 +31,7 @@ func0000000000000040:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a1
-	addi	a1, a1, -46
+	addiw	a1, a1, -46
 	seqz	a1, a1
 	add	a0, a0, a1
 	ret

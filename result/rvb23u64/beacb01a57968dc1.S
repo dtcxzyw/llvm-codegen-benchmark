@@ -11,8 +11,7 @@ func0000000000000006:
 
 func000000000000000c:
 	and	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -102
+	addiw	a0, a0, -102
 	snez	a0, a0
 	ret
 

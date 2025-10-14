@@ -13,10 +13,9 @@ func0000000000000302:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
 	not	a1, a1
+	addiw	a0, a0, -3
 	bexti	a1, a1, 23
-	addi	a0, a0, -3
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

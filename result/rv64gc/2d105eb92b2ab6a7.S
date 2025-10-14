@@ -36,9 +36,8 @@ func000000000000018c:
 
 func0000000000000181:
 	slli	a0, a0, 48
-	sext.w	a1, a1
+	addiw	a1, a1, -35
 	srli	a0, a0, 48
-	addi	a1, a1, -35
 	snez	a1, a1
 	addi	a0, a0, -772
 	seqz	a0, a0

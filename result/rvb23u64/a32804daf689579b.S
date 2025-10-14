@@ -53,10 +53,9 @@ func0000000000000042:
 
 func0000000000000302:
 	zext.h	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -64
-	addi	a0, a0, -64
+	addiw	a2, a2, -64
 	snez	a2, a2
+	addi	a0, a0, -64
 	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

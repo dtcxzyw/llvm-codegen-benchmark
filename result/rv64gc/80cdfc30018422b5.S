@@ -15,8 +15,7 @@ func0000000000000041:
 	li	a1, -33
 .LBB1_2:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

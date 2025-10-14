@@ -1,6 +1,5 @@
 func0000000000000181:
-	sext.w	a1, a1
-	addi	a1, a1, -58
+	addiw	a1, a1, -58
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -38,8 +37,7 @@ func000000000000018c:
 	ret
 
 func0000000000000188:
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	snez	a1, a1
 	sltiu	a0, a0, 8
 	andn	a0, a1, a0

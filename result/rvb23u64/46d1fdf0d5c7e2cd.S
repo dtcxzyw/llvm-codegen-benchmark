@@ -68,11 +68,10 @@ func0000000000000281:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a0
+	addiw	a1, a0, -13
 	bseti	a2, zero, 32
-	addi	a1, a1, -13
-	bseti	a2, a2, 63
 	seqz	a1, a1
+	bseti	a2, a2, 63
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

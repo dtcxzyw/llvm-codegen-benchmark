@@ -1,7 +1,6 @@
 func0000000000000181:
 	zext.b	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	snez	a2, a2
 	and	a0, a0, a2
 	seqz	a1, a1

@@ -19,11 +19,10 @@ func000000000000018a:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 48
+	addiw	a1, a1, -1
 	srli	a2, a2, 48
-	addi	a1, a1, -1
 	sltu	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

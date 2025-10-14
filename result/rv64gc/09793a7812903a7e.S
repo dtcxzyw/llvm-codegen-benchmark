@@ -12,8 +12,8 @@ func0000000000003081:
 	seqz	a1, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
-	addw	a0, a0, a1
-	addi	a0, a0, -16
+	add	a0, a0, a1
+	addiw	a0, a0, -16
 	seqz	a0, a0
 	ret
 

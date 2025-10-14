@@ -109,8 +109,8 @@ func000000000000004c:
 	ret
 
 func000000000000002c:
-	mulw	a0, a0, a1
-	addi	a0, a0, -64
+	mul	a0, a0, a1
+	addiw	a0, a0, -64
 	snez	a0, a0
 	ret
 

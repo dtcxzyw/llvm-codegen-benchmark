@@ -1,6 +1,5 @@
 func0000000000000186:
-	sext.w	a2, a1
-	addi	a2, a2, 28
+	addiw	a2, a1, 28
 	snez	a2, a2
 	srliw	a3, a0, 31
 	and	a2, a2, a3
@@ -33,12 +32,10 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	sext.w	a2, a0
-	sext.w	a3, a1
-	addi	a3, a3, -4
-	addi	a2, a2, -4
-	seqz	a3, a3
-	snez	a2, a2
+	addiw	a2, a1, -4
+	addiw	a3, a0, -4
+	seqz	a2, a2
+	snez	a3, a3
 	and	a2, a2, a3
 	bnez	a2, .LBB3_2
 	mv	a0, a1

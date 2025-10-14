@@ -28,8 +28,7 @@ func0000000000000043:
 
 func0000000000000042:
 	sext.w	a2, a0
-	sext.w	a1, a1
-	addi	a0, a1, -8
+	addiw	a0, a1, -8
 	li	a1, 8
 	seqz	a0, a0
 	bne	a2, a1, .LBB2_2
@@ -40,10 +39,9 @@ func0000000000000042:
 	ret
 
 func0000000000000283:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, -8
 	slti	a1, a1, 8
-	addi	a0, a0, -8
 	xori	a1, a1, 1
 	slli	a1, a1, 2
 	seqz	a0, a0

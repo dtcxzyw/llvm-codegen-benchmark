@@ -17,8 +17,8 @@ func0000000000000026:
 func0000000000000021:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -63,8 +63,8 @@ func0000000000000008:
 func0000000000000001:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 

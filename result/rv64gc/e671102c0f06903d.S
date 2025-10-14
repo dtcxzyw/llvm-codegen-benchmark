@@ -9,8 +9,7 @@ func0000000000000858:
 
 func0000000000000918:
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	snez	a1, a1
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
@@ -19,8 +18,7 @@ func0000000000000918:
 func0000000000000b02:
 	or	a1, a1, a2
 	addi	a0, a0, -16
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

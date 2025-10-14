@@ -25,8 +25,7 @@ func000000000000002c:
 func0000000000000021:
 	andi	a2, a2, 1
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

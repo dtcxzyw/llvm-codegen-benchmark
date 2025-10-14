@@ -3,8 +3,7 @@ func0000000000000321:
 	bltz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
-	sext.w	a0, a0
-	addi	a0, a0, -11
+	addiw	a0, a0, -11
 	seqz	a0, a0
 	ret
 
@@ -13,8 +12,7 @@ func00000000000000a1:
 	beqz	a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

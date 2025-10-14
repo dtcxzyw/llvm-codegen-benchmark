@@ -56,8 +56,8 @@ func0000000000000021:
 	blt	a1, a2, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 

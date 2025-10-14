@@ -21,9 +21,8 @@ func00000000000000e8:
 
 func000000000000002c:
 	lui	a3, 16
-	sext.w	a0, a0
+	addiw	a0, a0, -3
 	addi	a3, a3, -1
-	addi	a0, a0, -3
 	and	a2, a2, a3
 	and	a1, a1, a3
 	xor	a1, a1, a2

@@ -21,8 +21,7 @@ func0000000000000001:
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

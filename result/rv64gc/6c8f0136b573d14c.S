@@ -1,7 +1,6 @@
 func000000000000018c:
-	sext.w	a1, a1
-	addi	a3, a1, -1995
-	addi	a1, a1, -2020
+	addiw	a3, a1, -1995
+	addiw	a1, a1, -2020
 	snez	a3, a3
 	snez	a1, a1
 	and	a2, a2, a3

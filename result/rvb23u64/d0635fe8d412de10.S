@@ -23,8 +23,7 @@ func0000000000000013:
 	ret
 
 func0000000000000011:
-	sext.w	a2, a2
-	addi	a2, a2, -182
+	addiw	a2, a2, -182
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
@@ -32,8 +31,7 @@ func0000000000000011:
 	ret
 
 func00000000000000c1:
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	snez	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
@@ -41,8 +39,7 @@ func00000000000000c1:
 	ret
 
 func0000000000000010:
-	sext.w	a2, a2
-	addi	a2, a2, -182
+	addiw	a2, a2, -182
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

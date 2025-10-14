@@ -35,10 +35,9 @@ func0000000000000a84:
 	ret
 
 func0000000000000a81:
-	sext.w	a0, a0
 	lui	a2, 524288
+	addiw	a0, a0, -6
 	addiw	a2, a2, -2
-	addi	a0, a0, -6
 	and	a1, a1, a2
 	sltiu	a1, a1, 6
 	seqz	a0, a0

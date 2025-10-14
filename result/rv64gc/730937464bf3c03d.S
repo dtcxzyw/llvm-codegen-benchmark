@@ -53,8 +53,8 @@ func0000000000000201:
 	slli	a0, a0, 56
 	add	a1, a1, a2
 	srai	a0, a0, 56
-	addw	a0, a0, a1
-	addi	a0, a0, -47
+	add	a0, a0, a1
+	addiw	a0, a0, -47
 	seqz	a0, a0
 	ret
 

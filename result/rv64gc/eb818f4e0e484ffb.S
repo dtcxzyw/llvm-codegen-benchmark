@@ -1,6 +1,5 @@
 func00000000000000aa:
-	sext.w	a0, a0
-	addi	a0, a0, -31
+	addiw	a0, a0, -31
 	snez	a0, a0
 	ret
 

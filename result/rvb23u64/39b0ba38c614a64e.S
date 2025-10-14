@@ -8,9 +8,8 @@ func000000000000008c:
 	ret
 
 func0000000000000421:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	slli	a0, a0, 48
-	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -41,9 +40,8 @@ func000000000000048c:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	slli	a0, a0, 48
-	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -51,11 +49,10 @@ func0000000000000021:
 
 func0000000000000424:
 	zext.h	a0, a0
-	sext.w	a1, a1
+	addiw	a1, a1, -48
 	lui	a2, 16
-	addi	a1, a1, -48
-	addi	a2, a2, -4
 	seqz	a1, a1
+	addi	a2, a2, -4
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -1,40 +1,36 @@
 func0000000000001202:
-	sext.w	a2, a0
-	addiw	a0, a0, -48
-	sltiu	a0, a0, 10
-	addi	a2, a2, -45
-	or	a0, a0, a1
-	seqz	a1, a2
+	addiw	a2, a0, -48
+	addiw	a0, a0, -45
+	sltiu	a2, a2, 10
+	or	a1, a1, a2
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000202:
-	sext.w	a2, a0
-	addiw	a0, a0, -11
-	sltiu	a0, a0, 3
-	addi	a2, a2, -18
-	or	a0, a0, a1
-	seqz	a1, a2
+	addiw	a2, a0, -11
+	addiw	a0, a0, -18
+	sltiu	a2, a2, 3
+	or	a1, a1, a2
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000204:
-	sext.w	a2, a1
-	addiw	a1, a1, -48
-	sltiu	a1, a1, 10
-	addi	a2, a2, -95
-	or	a0, a0, a1
-	seqz	a1, a2
+	addiw	a2, a1, -48
+	addiw	a1, a1, -95
+	sltiu	a2, a2, 10
+	or	a0, a0, a2
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000001204:
-	sext.w	a2, a1
-	addiw	a1, a1, -44
-	sltiu	a1, a1, -7
-	addi	a2, a2, -40
-	or	a0, a0, a1
-	seqz	a1, a2
+	addiw	a2, a1, -44
+	addiw	a1, a1, -40
+	sltiu	a2, a2, -7
+	or	a0, a0, a2
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 

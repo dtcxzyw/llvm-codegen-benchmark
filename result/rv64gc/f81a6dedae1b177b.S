@@ -3,8 +3,8 @@ func0000000000000201:
 	sgtz	a2, a2
 	neg	a2, a2
 	and	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, 1
+	sub	a0, a0, a1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

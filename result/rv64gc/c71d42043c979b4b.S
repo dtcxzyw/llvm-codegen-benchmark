@@ -58,8 +58,8 @@ func0000000000000021:
 	beqz	a1, .LBB6_2
 	li	a2, 1
 .LBB6_2:
-	mulw	a0, a2, a0
-	addi	a0, a0, -1
+	mul	a0, a2, a0
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

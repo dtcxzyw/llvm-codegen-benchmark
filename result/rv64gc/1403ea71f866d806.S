@@ -34,8 +34,7 @@ func0000000000000481:
 	bltu	a1, a3, .LBB3_2
 	addi	a0, a2, -29
 .LBB3_2:
-	sext.w	a0, a0
-	addi	a0, a0, -25
+	addiw	a0, a0, -25
 	seqz	a0, a0
 	ret
 

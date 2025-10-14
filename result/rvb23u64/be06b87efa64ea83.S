@@ -14,8 +14,7 @@ func0000000000000141:
 	czero.eqz	a2, a3, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

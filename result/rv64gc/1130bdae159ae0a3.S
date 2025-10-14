@@ -6,8 +6,7 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -40,8 +39,7 @@ func0000000000000008:
 	ret
 
 func0000000000000061:
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

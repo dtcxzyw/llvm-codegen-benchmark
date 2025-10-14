@@ -94,10 +94,9 @@ func0000000000000060:
 	ret
 
 func0000000000000005:
-	sext.w	a2, a2
+	addiw	a2, a2, -6
 	lui	a3, 131072
 	slliw	a1, a1, 31
-	addi	a2, a2, -6
 	addi	a3, a3, -6
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 6

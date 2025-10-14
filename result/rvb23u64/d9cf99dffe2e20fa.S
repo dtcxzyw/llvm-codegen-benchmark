@@ -1,8 +1,7 @@
 func0000000000000021:
-	sext.w	a0, a0
 	li	a2, 44
 	subw	a2, a2, a1
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	addi	a2, a2, -1
 	czero.nez	a0, a2, a0
 	addi	a0, a0, 1
@@ -17,10 +16,9 @@ func0000000000000064:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	li	a2, -3
+	addiw	a0, a0, -1
 	subw	a2, a2, a1
-	addi	a0, a0, -1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a2

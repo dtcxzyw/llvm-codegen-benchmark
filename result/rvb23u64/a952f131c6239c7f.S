@@ -18,8 +18,7 @@ func0000000000000088:
 func0000000000000081:
 	sub	a1, a1, a2
 	srli	a1, a1, 3
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -43,8 +42,7 @@ func000000000000008c:
 func0000000000000181:
 	sub	a1, a1, a2
 	srli	a1, a1, 2
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

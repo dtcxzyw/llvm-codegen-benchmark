@@ -4,8 +4,7 @@ func0000000000000008:
 	ret
 
 func0000000000000058:
-	sext.w	a0, a0
-	addi	a0, a0, -17
+	addiw	a0, a0, -17
 	snez	a0, a0
 	ret
 
@@ -15,8 +14,7 @@ func0000000000000048:
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	snez	a0, a0
 	ret
 
@@ -26,14 +24,12 @@ func0000000000000010:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
 func00000000000000c2:
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 

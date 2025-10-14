@@ -18,9 +18,8 @@ func00000000000000e4:
 	ret
 
 func0000000000000061:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	addi	a1, a1, 24
-	addi	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -36,9 +35,8 @@ func0000000000000064:
 	ret
 
 func0000000000000081:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	addi	a1, a1, -16
-	addi	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

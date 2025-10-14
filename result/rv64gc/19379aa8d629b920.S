@@ -49,8 +49,7 @@ func0000000000000521:
 
 func00000000000000e1:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	seqz	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 1
@@ -139,8 +138,7 @@ func0000000000000086:
 
 func00000000000000a6:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	sub	a1, a1, a2
 	addiw	a1, a1, 2
@@ -158,8 +156,7 @@ func0000000000000088:
 
 func00000000000000a1:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a2, a2
 	not	a2, a2
 	addw	a1, a1, a2

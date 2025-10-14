@@ -11,9 +11,8 @@ func0000000000000021:
 
 func0000000000000184:
 	slli	a1, a1, 48
-	sext.w	a2, a2
+	addiw	a2, a2, -8
 	srli	a1, a1, 48
-	addi	a2, a2, -8
 	snez	a2, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 2
@@ -31,9 +30,8 @@ func0000000000000181:
 
 func0000000000000024:
 	slli	a1, a1, 48
-	sext.w	a2, a2
+	addiw	a2, a2, -33
 	srli	a1, a1, 48
-	addi	a2, a2, -33
 	seqz	a2, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 120

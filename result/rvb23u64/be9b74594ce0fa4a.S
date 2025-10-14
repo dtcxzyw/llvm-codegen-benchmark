@@ -1,7 +1,7 @@
 func0000000000000021:
 	slli	a1, a1, 6
-	addw	a0, a0, a1
-	addi	a0, a0, -63
+	add	a0, a0, a1
+	addiw	a0, a0, -63
 	seqz	a0, a0
 	ret
 
@@ -32,15 +32,13 @@ func0000000000000024:
 
 func0000000000000361:
 	sh3add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -8
+	addiw	a0, a0, -8
 	seqz	a0, a0
 	ret
 
 func0000000000000221:
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

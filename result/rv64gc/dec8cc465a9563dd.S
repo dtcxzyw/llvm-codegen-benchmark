@@ -27,8 +27,7 @@ func0000000000000044:
 	ret
 
 func00000000000000c6:
-	sext.w	a2, a2
-	addi	a2, a2, -3
+	addiw	a2, a2, -3
 	snez	a2, a2
 	sll	a1, a2, a1
 	or	a0, a0, a1

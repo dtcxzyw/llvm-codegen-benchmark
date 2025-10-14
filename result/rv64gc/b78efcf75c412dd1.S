@@ -12,8 +12,7 @@ func0000000000000101:
 	beqz	a0, .LBB1_2
 	addi	a1, a2, -2
 .LBB1_2:
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a0, a1
 	ret
 

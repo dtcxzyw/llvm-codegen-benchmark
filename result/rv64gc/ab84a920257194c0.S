@@ -4,8 +4,8 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a1
-	addi	a0, a0, 1
+	sub	a0, a0, a1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

@@ -9,8 +9,7 @@ func0000000000000018:
 
 func0000000000000002:
 	andi	a2, a2, -4
-	sext.w	a2, a2
-	addi	a2, a2, -300
+	addiw	a2, a2, -300
 	seqz	a2, a2
 	or	a1, a1, a2
 	slli	a1, a1, 63

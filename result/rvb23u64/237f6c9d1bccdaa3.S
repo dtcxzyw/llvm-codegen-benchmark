@@ -27,8 +27,7 @@ func0000000000000042:
 func0000000000000048:
 	sext.w	a1, a1
 	andi	a2, a2, -4
-	sext.w	a2, a2
-	addi	a2, a2, -12
+	addiw	a2, a2, -12
 	seqz	a2, a2
 	sltiu	a1, a1, 4
 	or	a1, a1, a2

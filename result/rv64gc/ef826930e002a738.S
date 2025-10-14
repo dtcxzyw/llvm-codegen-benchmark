@@ -24,8 +24,7 @@ func0000000000000006:
 func0000000000000001:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_3
-	sext.w	a1, a2
-	addi	a1, a1, 1
+	addiw	a1, a2, 1
 	seqz	a1, a1
 	and	a0, a0, a1
 	bnez	a0, .LBB1_4
@@ -34,8 +33,7 @@ func0000000000000001:
 	ret
 .LBB1_3:
 	li	a2, 1
-	sext.w	a1, a2
-	addi	a1, a1, 1
+	addiw	a1, a2, 1
 	seqz	a1, a1
 	and	a0, a0, a1
 	beqz	a0, .LBB1_2

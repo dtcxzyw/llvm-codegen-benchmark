@@ -59,8 +59,7 @@ func00000000000000c4:
 func000000000000018c:
 	andi	a0, a0, -2
 	fmv.w.x	fa5, zero
-	sext.w	a0, a0
-	addi	a0, a0, -8
+	addiw	a0, a0, -8
 	snez	a0, a0
 	fle.s	a1, fa5, fa0
 	and	a0, a0, a1

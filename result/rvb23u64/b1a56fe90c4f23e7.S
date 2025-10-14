@@ -1,8 +1,7 @@
 func0000000000000041:
-	sext.w	a0, a0
 	andi	a1, a1, 31
 	bset	a1, zero, a1
-	addi	a0, a0, -6
+	addiw	a0, a0, -6
 	czero.nez	a0, a1, a0
 	ret
 

@@ -11,10 +11,9 @@ func0000000000000295:
 	ret
 
 func0000000000000043:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, 1
 	seqz	a1, a1
-	addi	a0, a0, 1
 	seqz	a0, a0
 	slli	a0, a0, 5
 	or	a0, a0, a1
@@ -22,11 +21,9 @@ func0000000000000043:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
-	sext.w	a1, a1
+	addiw	a1, a1, -8
+	addiw	a0, a0, -8
 	li	a2, 6
-	addi	a1, a1, -8
-	addi	a0, a0, -8
 	seqz	a1, a1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -35,10 +32,9 @@ func0000000000000042:
 	ret
 
 func0000000000000283:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, -8
 	slti	a1, a1, 8
-	addi	a0, a0, -8
 	xori	a1, a1, 1
 	seqz	a0, a0
 	sh2add	a0, a1, a0

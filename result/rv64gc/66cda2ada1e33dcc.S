@@ -68,8 +68,7 @@ func00000000000000c1:
 func0000000000000026:
 	sext.w	a2, a0
 	bgez	a2, .LBB4_2
-	sext.w	a1, a1
-	addi	a1, a1, -6
+	addiw	a1, a1, -6
 	snez	a0, a1
 	addi	a0, a0, -1
 	andi	a0, a0, 3

@@ -285,11 +285,10 @@ func0000000000000210:
 	ret
 
 func0000000000000070:
-	sext.w	a1, a1
+	addiw	a1, a1, -168
 	slli	a0, a0, 48
-	addi	a1, a1, -168
-	srli	a0, a0, 58
 	seqz	a1, a1
+	srli	a0, a0, 58
 	sltiu	a0, a0, 43
 	xori	a0, a0, 1
 	or	a0, a0, a1

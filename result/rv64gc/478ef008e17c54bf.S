@@ -10,15 +10,15 @@ func000000000000314a:
 	ret
 
 func000000000000318c:
-	sext.w	a1, a1
-	sext.w	a0, a0
-	xor	a2, a0, a1
-	addi	a1, a1, -4
-	addi	a0, a0, -4
-	snez	a2, a2
+	sext.w	a2, a1
+	sext.w	a3, a0
+	addiw	a1, a1, -4
+	addiw	a0, a0, -4
+	xor	a2, a2, a3
 	snez	a1, a1
-	and	a1, a1, a2
 	snez	a0, a0
+	snez	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

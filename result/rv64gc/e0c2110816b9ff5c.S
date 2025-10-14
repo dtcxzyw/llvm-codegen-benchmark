@@ -57,9 +57,8 @@ func000000000000010c:
 
 func0000000000000101:
 	lui	a3, 16
-	sext.w	a0, a0
+	addiw	a0, a0, -2
 	addi	a3, a3, -1
-	addi	a0, a0, -2
 	and	a1, a1, a3
 	and	a2, a2, a3
 	sltu	a1, a2, a1

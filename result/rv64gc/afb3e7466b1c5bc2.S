@@ -16,8 +16,8 @@ func00000000000002aa:
 func00000000000002ac:
 	slli	a2, a2, 1
 	sub	a0, a0, a1
-	subw	a0, a0, a2
-	addi	a0, a0, -2
+	sub	a0, a0, a2
+	addiw	a0, a0, -2
 	snez	a0, a0
 	ret
 

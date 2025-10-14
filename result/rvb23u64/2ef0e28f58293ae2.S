@@ -18,8 +18,7 @@ func000000000000008c:
 
 func000000000000002c:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -146,8 +145,7 @@ func0000000000000101:
 
 func0000000000000024:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	seqz	a1, a1
 	sltiu	a0, a0, 32
 	and	a0, a0, a1
@@ -235,8 +233,7 @@ func0000000000000148:
 
 func0000000000000028:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -22
+	addiw	a1, a1, -22
 	seqz	a1, a1
 	sltiu	a0, a0, 29
 	andn	a0, a1, a0

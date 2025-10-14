@@ -16,8 +16,8 @@ func00000000000001f4:
 func00000000000001e1:
 	li	a2, 1
 	sllw	a1, a2, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -16
+	add	a0, a0, a1
+	addiw	a0, a0, -16
 	seqz	a0, a0
 	ret
 
@@ -68,8 +68,8 @@ func0000000000000144:
 func0000000000000181:
 	li	a2, 1
 	sllw	a1, a2, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -4
+	add	a0, a0, a1
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

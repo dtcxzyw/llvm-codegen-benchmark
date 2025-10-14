@@ -59,11 +59,10 @@ func0000000000000258:
 	ret
 
 func0000000000000b02:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	zext.h	a2, a2
+	addiw	a1, a1, -2
 	xor	a0, a0, a2
-	addi	a1, a1, -2
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1

@@ -22,11 +22,10 @@ func000000000000002c:
 
 func000000000000002a:
 	sext.w	a2, a0
-	sext.w	a3, a1
+	addiw	a3, a1, -1
 	lui	a4, 8
-	addi	a3, a3, -1
-	addi	a4, a4, -1
 	seqz	a3, a3
+	addi	a4, a4, -1
 	slt	a2, a4, a2
 	and	a2, a2, a3
 	bnez	a2, .LBB2_2

@@ -25,10 +25,9 @@ func000000000000014a:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	sub	a2, a2, a1
+	addiw	a0, a0, -18
 	addi	a2, a2, -8
-	addi	a0, a0, -18
 	seqz	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

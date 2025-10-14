@@ -1,7 +1,7 @@
 func0000000000000d81:
 	zext.b	a0, a0
-	addw	a1, a1, a2
-	addi	a1, a1, -2
+	add	a1, a1, a2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

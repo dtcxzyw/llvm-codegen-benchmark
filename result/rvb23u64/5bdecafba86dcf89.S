@@ -52,10 +52,9 @@ func0000000000000021:
 	ret
 
 func0000000000000701:
-	sext.w	a0, a0
 	zext.b	a2, a2
+	addiw	a0, a0, -224
 	or	a1, a1, a2
-	addi	a0, a0, -224
 	sext.w	a1, a1
 	sltiu	a1, a1, 7
 	xori	a1, a1, 1

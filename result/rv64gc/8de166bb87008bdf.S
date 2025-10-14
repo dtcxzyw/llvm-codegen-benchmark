@@ -13,8 +13,8 @@ func0000000000000026:
 	ret
 
 func0000000000000001:
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	sub	a0, a0, a1
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	not	a0, a0
 	ret

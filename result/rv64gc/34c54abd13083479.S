@@ -3,9 +3,8 @@
 func00000000000002d8:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
-	sext.w	a0, a0
 	fabs.d	fa4, fa0
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	flt.d	a1, fa5, fa4
 	xori	a1, a1, 1
 	snez	a0, a0

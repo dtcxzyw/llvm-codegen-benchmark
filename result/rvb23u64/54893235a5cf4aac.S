@@ -30,9 +30,8 @@ func0000000000000088:
 	ret
 
 func0000000000000024:
-	sext.w	a1, a1
+	addiw	a1, a1, -2
 	addiw	a0, a0, -7
-	addi	a1, a1, -2
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
@@ -40,9 +39,8 @@ func0000000000000024:
 
 func0000000000000081:
 	addiw	a1, a1, -7
-	sext.w	a0, a0
+	addiw	a0, a0, -2
 	sltiu	a1, a1, 2
-	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

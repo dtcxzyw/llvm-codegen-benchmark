@@ -41,12 +41,11 @@ func00000000000000e4:
 	ret
 
 func00000000000000e1:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

@@ -25,8 +25,7 @@ func0000000000000021:
 	beqz	a3, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1664
+	addiw	a1, a1, -1664
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

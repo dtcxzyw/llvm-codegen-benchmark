@@ -1,8 +1,7 @@
 func0000000000000021:
-	sext.w	a0, a0
 	li	a2, -1
 	sll	a1, a2, a1
-	addi	a0, a0, -64
+	addiw	a0, a0, -64
 	czero.eqz	a0, a1, a0
 	not	a0, a0
 	ret

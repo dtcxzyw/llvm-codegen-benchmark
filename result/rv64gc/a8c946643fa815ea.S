@@ -29,8 +29,7 @@ func00000000000000c4:
 func0000000000000021:
 	zext.b	a1, a1
 	beqz	a1, .LBB3_2
-	sext.w	a2, a2
-	addi	a2, a2, -3
+	addiw	a2, a2, -3
 	seqz	a0, a2
 .LBB3_2:
 	ret

@@ -18,16 +18,16 @@ func000000000000002a:
 func0000000000000021:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
-	addi	a0, a0, -1
+	sub	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
 func0000000000000041:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	subw	a0, a0, a1
-	addi	a0, a0, -20
+	sub	a0, a0, a1
+	addiw	a0, a0, -20
 	seqz	a0, a0
 	ret
 

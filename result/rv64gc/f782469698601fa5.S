@@ -131,8 +131,7 @@ func000000000000007a:
 	ret
 
 func000000000000006b:
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, -64

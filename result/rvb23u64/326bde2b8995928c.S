@@ -8,9 +8,8 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
 	not	a2, a2
-	addi	a1, a1, -255
+	addiw	a1, a1, -255
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret

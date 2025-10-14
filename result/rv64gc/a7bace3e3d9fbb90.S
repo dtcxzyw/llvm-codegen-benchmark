@@ -83,10 +83,9 @@ func000000000000014a:
 	ret
 
 func0000000000000141:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	addiw	a0, a0, -2
 	slt	a1, a2, a1
-	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -116,10 +115,9 @@ func000000000000010a:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	addiw	a0, a0, -176
 	sltu	a1, a1, a2
-	addi	a0, a0, -176
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

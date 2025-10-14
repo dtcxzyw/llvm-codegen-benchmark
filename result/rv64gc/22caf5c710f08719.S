@@ -1,12 +1,12 @@
 func0000000000000087:
-	sext.w	a2, a1
-	li	a1, 6
-	beq	a2, a1, .LBB0_2
-	addi	a2, a2, -4
-	snez	a1, a2
-	addi	a1, a1, 7
+	sext.w	a3, a1
+	li	a2, 6
+	beq	a3, a2, .LBB0_2
+	addiw	a1, a1, -4
+	snez	a2, a1
+	addi	a2, a2, 7
 .LBB0_2:
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000a53:
@@ -60,14 +60,14 @@ func00000000000000d1:
 	ret
 
 func0000000000000085:
-	sext.w	a1, a1
-	li	a2, 4
-	bne	a1, a2, .LBB4_2
+	sext.w	a2, a1
+	li	a3, 4
+	bne	a2, a3, .LBB4_2
 	li	a1, 3
 	addw	a0, a0, a1
 	ret
 .LBB4_2:
-	addi	a1, a1, -5
+	addiw	a1, a1, -5
 	seqz	a1, a1
 	slli	a1, a1, 1
 	addw	a0, a0, a1

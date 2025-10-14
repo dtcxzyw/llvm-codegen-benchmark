@@ -27,9 +27,8 @@ func0000000000000028:
 	ret
 
 func0000000000000187:
-	sext.w	a1, a1
 	addi	a2, a2, 8
-	addi	a1, a1, -9
+	addiw	a1, a1, -9
 	snez	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2
@@ -47,9 +46,8 @@ func0000000000000106:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	addi	a2, a2, 8
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2

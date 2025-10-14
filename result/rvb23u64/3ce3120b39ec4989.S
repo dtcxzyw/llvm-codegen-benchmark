@@ -75,8 +75,8 @@ func0000000000000c48:
 func0000000000000c61:
 	sraiw	a1, a1, 1
 	snez	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -64
+	add	a0, a0, a1
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 

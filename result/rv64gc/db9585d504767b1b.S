@@ -38,8 +38,7 @@ func0000000000000026:
 
 func0000000000000038:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -24
+	addiw	a1, a1, -24
 	seqz	a1, a1
 	addi	a1, a1, -1
 	andi	a1, a1, 59
@@ -123,8 +122,7 @@ func00000000000000c1:
 
 func000000000000002b:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a1, a1
 	xori	a1, a1, 5
 	slt	a0, a0, a1

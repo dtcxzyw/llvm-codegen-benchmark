@@ -8,15 +8,13 @@ func0000000000000041:
 
 func00000000000000c1:
 	bset	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	ret
 
 func0000000000000081:
 	bset	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	seqz	a0, a0
 	ret
 

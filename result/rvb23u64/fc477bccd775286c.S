@@ -78,12 +78,11 @@ func0000000000000090:
 
 func00000000000000a8:
 	sext.b	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -192
-	srli	a1, a1, 63
+	addiw	a2, a2, -192
 	seqz	a2, a2
+	srli	a1, a1, 63
 	xori	a1, a1, 1
-	or	a1, a1, a2
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

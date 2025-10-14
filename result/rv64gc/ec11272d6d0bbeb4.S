@@ -16,10 +16,10 @@ func0000000000000121:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	addw	a1, a1, a2
-	sltu	a1, a0, a1
-	addi	a0, a0, 2
+	addiw	a0, a0, 2
+	sltu	a1, a3, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -33,10 +33,10 @@ func0000000000000cc6:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	addw	a1, a1, a2
-	xor	a1, a1, a0
-	addi	a0, a0, -8
+	addiw	a0, a0, -8
+	xor	a1, a1, a3
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

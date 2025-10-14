@@ -1,9 +1,8 @@
 func0000000000000042:
-	sext.w	a1, a0
+	addiw	a1, a0, -256
 	srliw	a0, a0, 8
-	addi	a1, a1, -256
-	addi	a0, a0, -254
 	seqz	a1, a1
+	addi	a0, a0, -254
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -43,8 +43,7 @@ func0000000000000081:
 	ret
 
 func0000000000000026:
-	sext.w	a2, a2
-	addi	a2, a2, -113
+	addiw	a2, a2, -113
 	snez	a2, a2
 	srliw	a1, a1, 31
 	and	a1, a1, a2

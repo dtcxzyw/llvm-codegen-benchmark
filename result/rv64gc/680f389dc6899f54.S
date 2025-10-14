@@ -55,8 +55,7 @@ func0000000000000094:
 func000000000000008c:
 	sub	a1, a1, a0
 	srli	a1, a1, 2
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a0, a1
 	ret
 

@@ -30,10 +30,9 @@ func0000000000000050:
 	ret
 
 func0000000000000302:
-	sext.w	a1, a1
 	lui	a3, 524288
+	addiw	a1, a1, -1
 	addi	a3, a3, 68
-	addi	a1, a1, -1
 	and	a2, a2, a3
 	sext.w	a2, a2
 	snez	a2, a2

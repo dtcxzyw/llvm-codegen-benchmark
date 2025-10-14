@@ -26,7 +26,7 @@ func00000000000004cc:
 func000000000000054c:
 	sext.w	a0, a0
 	addiw	a1, a1, -64
-	addi	a2, a1, -1
+	addiw	a2, a1, -1
 	snez	a2, a2
 	slt	a0, a0, a1
 	and	a0, a0, a2

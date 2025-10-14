@@ -1,6 +1,5 @@
 func0000000000000098:
-	sext.w	a1, a1
-	addi	a1, a1, -105
+	addiw	a1, a1, -105
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

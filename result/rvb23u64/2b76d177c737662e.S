@@ -10,7 +10,7 @@ func0000000000000006:
 
 func0000000000000021:
 	subw	a0, a0, a1
-	addi	a1, a0, -31
+	addiw	a1, a0, -31
 	addi	a0, a0, -30
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 30

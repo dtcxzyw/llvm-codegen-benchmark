@@ -21,16 +21,14 @@ func00000000000000a2:
 	ret
 
 func000000000000001c:
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	fle.d	a1, fa1, fa0
 	and	a0, a0, a1
 	ret
 
 func000000000000001a:
-	sext.w	a0, a0
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	fle.d	a1, fa0, fa1
 	and	a0, a0, a1

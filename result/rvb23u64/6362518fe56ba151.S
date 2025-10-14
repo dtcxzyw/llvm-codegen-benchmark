@@ -58,8 +58,7 @@ func000000000000006c:
 	andi	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	snez	a0, a0
 	ret
 
@@ -68,8 +67,7 @@ func0000000000000041:
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

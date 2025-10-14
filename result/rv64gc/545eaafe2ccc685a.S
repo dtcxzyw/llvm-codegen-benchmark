@@ -36,13 +36,14 @@ func0000000000000146:
 	ret
 
 func0000000000000141:
-	sext.w	a1, a0
-	bltz	a1, .LBB3_2
-	li	a0, -5
+	sext.w	a2, a0
+	mv	a1, a0
+	bltz	a2, .LBB3_2
+	li	a1, -5
 .LBB3_2:
-	addi	a1, a1, -1
-	seqz	a1, a1
-	addi	a1, a1, -1
+	addiw	a0, a0, -1
+	seqz	a0, a0
+	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 

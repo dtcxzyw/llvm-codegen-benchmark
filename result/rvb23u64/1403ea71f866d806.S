@@ -39,8 +39,7 @@ func0000000000000481:
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -25
+	addiw	a0, a0, -25
 	seqz	a0, a0
 	ret
 

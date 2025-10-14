@@ -18,8 +18,8 @@ func0000000000000021:
 	add	a1, a1, a2
 	slli	a2, a1, 1
 	sub	a0, a0, a1
-	subw	a0, a0, a2
-	addi	a0, a0, 1
+	sub	a0, a0, a2
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

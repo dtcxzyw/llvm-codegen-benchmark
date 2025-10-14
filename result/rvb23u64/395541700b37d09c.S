@@ -166,8 +166,7 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	li	a2, 925
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 149

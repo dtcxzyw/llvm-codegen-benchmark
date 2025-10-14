@@ -32,8 +32,7 @@ func000000000000006c:
 	andi	a1, a1, 12
 	or	a1, a1, a2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	snez	a0, a0
 	ret
 

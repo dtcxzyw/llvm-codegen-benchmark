@@ -7,8 +7,7 @@ func000000000000000c:
 	ret
 
 func0000000000000043:
-	sext.w	a2, a2
-	addi	a2, a2, -48
+	addiw	a2, a2, -48
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2

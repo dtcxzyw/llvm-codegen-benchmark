@@ -1,7 +1,6 @@
 func000000000000000c:
-	sext.w	a0, a0
 	or	a1, a1, a2
-	addi	a0, a0, -15
+	addiw	a0, a0, -15
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

@@ -1,11 +1,10 @@
 func0000000000000082:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -127
-	seqz	a0, a0
+	addiw	a2, a2, -127
 	seqz	a2, a2
+	or	a1, a1, a2
+	seqz	a0, a0
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000a02:
@@ -91,12 +90,11 @@ func0000000000000208:
 
 func0000000000000088:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -1600
-	sltiu	a0, a0, 31
+	addiw	a2, a2, -1600
 	seqz	a2, a2
+	or	a1, a1, a2
+	sltiu	a0, a0, 31
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000318:
@@ -109,10 +107,9 @@ func0000000000000318:
 	ret
 
 func0000000000000202:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	addiw	a0, a0, -45
 	sltiu	a2, a2, 26
-	addi	a0, a0, -45
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -161,10 +158,9 @@ func0000000000000520:
 	ret
 
 func0000000000000618:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	addiw	a0, a0, -14
 	snez	a2, a2
-	addi	a0, a0, -14
 	or	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -180,10 +176,8 @@ func0000000000000308:
 	ret
 
 func00000000000000b0:
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -1024
-	addi	a1, a1, -19
+	addiw	a2, a2, -1024
+	addiw	a1, a1, -19
 	seqz	a2, a2
 	or	a0, a0, a2
 	snez	a1, a1
@@ -191,10 +185,8 @@ func00000000000000b0:
 	ret
 
 func0000000000000630:
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -331
-	addi	a1, a1, -19
+	addiw	a2, a2, -331
+	addiw	a1, a1, -19
 	snez	a2, a2
 	or	a0, a0, a2
 	snez	a1, a1
@@ -213,22 +205,20 @@ func0000000000000528:
 	ret
 
 func0000000000000504:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -2
 	slti	a2, a2, 16
-	addi	a1, a1, -2
-	xori	a2, a2, 1
-	or	a0, a0, a2
 	seqz	a1, a1
+	xori	a2, a2, 1
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000094:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -16
-	slti	a0, a0, 16
+	addiw	a2, a2, -16
 	seqz	a2, a2
+	slti	a0, a0, 16
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -247,12 +237,11 @@ func0000000000000514:
 
 func0000000000000604:
 	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -2
-	seqz	a1, a1
+	addiw	a2, a2, -2
 	snez	a2, a2
-	or	a0, a0, a1
 	or	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 
 func000000000000020c:
@@ -356,10 +345,9 @@ func0000000000000614:
 	ret
 
 func0000000000000402:
-	sext.w	a0, a0
 	srliw	a2, a2, 26
+	addiw	a0, a0, -5
 	snez	a2, a2
-	addi	a0, a0, -5
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -395,30 +383,27 @@ func0000000000000210:
 	ret
 
 func0000000000000608:
-	sext.w	a2, a2
+	addiw	a2, a2, -320
 	srliw	a0, a0, 26
-	addi	a2, a2, -320
-	seqz	a0, a0
 	snez	a2, a2
+	or	a1, a1, a2
+	seqz	a0, a0
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000204:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -95
 	sltiu	a2, a2, 26
-	addi	a1, a1, -95
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000304:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -4
 	slti	a2, a2, 131
-	addi	a1, a1, -4
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -472,10 +457,9 @@ func0000000000000518:
 	ret
 
 func0000000000000a04:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -128
 	sltiu	a2, a2, 32
-	addi	a1, a1, -128
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1

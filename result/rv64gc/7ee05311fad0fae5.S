@@ -1,8 +1,7 @@
 func0000000000000024:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a0, a2
 	ret
 .LBB0_2:
@@ -12,8 +11,7 @@ func0000000000000024:
 func000000000000002a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a0, a2
 	ret
 .LBB1_2:
@@ -24,8 +22,7 @@ func000000000000002a:
 func0000000000000021:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a0, a2
 	ret
 .LBB2_2:

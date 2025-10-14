@@ -11,8 +11,7 @@ func00000000000001a1:
 .LBB0_3:
 	mv	a1, a2
 .LBB0_4:
-	sext.w	a1, a1
-	addi	a1, a1, -11
+	addiw	a1, a1, -11
 	seqz	a0, a1
 	ret
 

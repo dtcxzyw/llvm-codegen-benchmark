@@ -19,10 +19,9 @@ func000000000000004c:
 	ret
 
 func0000000000000318:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -14
 	addi	a2, a2, -13
-	addi	a1, a1, -14
 	snez	a2, a2
 	and	a0, a0, a2
 	snez	a1, a1

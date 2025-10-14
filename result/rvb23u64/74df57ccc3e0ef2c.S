@@ -2,8 +2,8 @@ func0000000000000001:
 	andi	a0, a0, 1
 	addi	a1, a1, 400
 	czero.eqz	a0, a1, a0
-	addiw	a1, a0, -400
-	addi	a1, a1, 400
+	addi	a1, a0, -400
+	addiw	a1, a1, 400
 	addi	a0, a0, -401
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 1

@@ -27,14 +27,13 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -160
 	addi	a2, a2, -237
-	addi	a1, a1, -160
-	seqz	a2, a2
-	and	a0, a0, a2
 	seqz	a1, a1
+	seqz	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000181:
@@ -76,10 +75,9 @@ func0000000000000024:
 	ret
 
 func0000000000000081:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -26
 	sltiu	a2, a2, 6
-	addi	a1, a1, -26
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

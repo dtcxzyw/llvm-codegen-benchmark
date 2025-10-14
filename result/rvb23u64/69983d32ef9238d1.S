@@ -1,6 +1,5 @@
 func000000000000000b:
-	sext.w	a0, a0
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	bset	a0, zero, a0
 	ret

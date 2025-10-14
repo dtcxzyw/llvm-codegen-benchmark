@@ -17,8 +17,7 @@ func0000000000000004:
 
 func000000000000000c:
 	xori	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -16
+	addiw	a2, a2, -16
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -26,8 +25,7 @@ func000000000000000c:
 
 func0000000000000001:
 	xori	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -128
+	addiw	a2, a2, -128
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

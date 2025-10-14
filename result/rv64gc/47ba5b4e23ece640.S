@@ -125,14 +125,14 @@ func00000000000001a1:
 	addi	a2, a2, %lo(.LCPI5_1)
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	addi	a0, a0, -32
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 .LBB5_2:
 	li	a1, 64
-	addw	a0, a0, a1
-	addi	a0, a0, -32
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
@@ -151,8 +151,8 @@ func00000000000003a1:
 	addi	a2, a2, %lo(.LCPI6_1)
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	addi	a0, a0, -32
+	add	a0, a0, a1
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
@@ -172,14 +172,14 @@ func00000000000001e1:
 	addi	a2, a2, %lo(.LCPI7_1)
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
-	addw	a0, a0, a1
-	addi	a0, a0, -64
+	add	a0, a0, a1
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 .LBB7_2:
 	li	a1, 64
-	addw	a0, a0, a1
-	addi	a0, a0, -64
+	add	a0, a0, a1
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 

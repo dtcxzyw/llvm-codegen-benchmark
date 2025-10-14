@@ -25,8 +25,8 @@ func000000000000002a:
 func0000000000000781:
 	li	a2, 1000
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	ret
 
@@ -57,8 +57,8 @@ func000000000000060c:
 
 func0000000000000401:
 	sh1add	a1, a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, 1
+	add	a0, a0, a1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000c2c:
-	addw	a1, a1, a2
-	addi	a1, a1, -1
+	add	a1, a1, a2
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -23,8 +23,8 @@ func000000000000002c:
 	ret
 
 func000000000000042c:
-	addw	a1, a1, a2
-	addi	a1, a1, -32
+	add	a1, a1, a2
+	addiw	a1, a1, -32
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -38,8 +38,8 @@ func0000000000000426:
 	ret
 
 func000000000000018c:
-	addw	a1, a1, a2
-	addi	a1, a1, -1
+	add	a1, a1, a2
+	addiw	a1, a1, -1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

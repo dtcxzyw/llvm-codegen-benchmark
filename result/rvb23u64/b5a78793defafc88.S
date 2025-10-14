@@ -12,8 +12,8 @@ func0000000000000521:
 	li	a2, 100
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
-	addiw	a0, a0, -99
-	addi	a0, a0, -1
+	addi	a0, a0, -99
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

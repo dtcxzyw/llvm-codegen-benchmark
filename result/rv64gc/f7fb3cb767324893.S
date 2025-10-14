@@ -4,8 +4,7 @@ func0000000000000002:
 	li	a0, 2
 	ret
 .LBB0_2:
-	sext.w	a1, a1
-	addi	a0, a1, -315
+	addiw	a0, a1, -315
 	seqz	a0, a0
 	ret
 

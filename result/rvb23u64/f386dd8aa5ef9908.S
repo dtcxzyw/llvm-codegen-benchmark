@@ -7,8 +7,8 @@ func0000000000000006:
 	ret
 
 func0000000000000021:
-	subw	a2, a2, a0
-	addi	a2, a2, -1
+	sub	a2, a2, a0
+	addiw	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

@@ -28,8 +28,8 @@ func0000000000000121:
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	min	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, -3
+	sub	a0, a0, a1
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 

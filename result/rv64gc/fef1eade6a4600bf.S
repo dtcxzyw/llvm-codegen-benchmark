@@ -71,8 +71,8 @@ func000000000000000c:
 
 func0000000000000081:
 	zext.b	a1, a1
-	subw	a0, a0, a1
-	addi	a0, a0, -31
+	sub	a0, a0, a1
+	addiw	a0, a0, -31
 	seqz	a0, a0
 	ret
 

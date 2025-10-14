@@ -25,19 +25,17 @@ func000000000000048c:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	addiw	a1, a1, -9
+	addiw	a0, a0, -8
 	sltiu	a1, a1, 5
-	addi	a0, a0, -8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	addiw	a1, a1, 8
+	addiw	a0, a0, -1
 	sltiu	a1, a1, 17
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -51,10 +49,9 @@ func0000000000000144:
 	ret
 
 func0000000000000584:
-	sext.w	a0, a0
 	addiw	a1, a1, -3
+	addiw	a0, a0, -5
 	sltiu	a1, a1, -2
-	addi	a0, a0, -5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -107,8 +104,7 @@ func000000000000008c:
 
 func000000000000098c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -123,10 +119,9 @@ func0000000000000184:
 	ret
 
 func000000000000014c:
-	sext.w	a0, a0
 	addi	a1, a1, -1
+	addiw	a0, a0, -18
 	srliw	a1, a1, 31
-	addi	a0, a0, -18
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -134,8 +129,7 @@ func000000000000014c:
 
 func000000000000018c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -169,8 +163,7 @@ func000000000000008a:
 
 func000000000000002c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -186,8 +179,7 @@ func0000000000000684:
 
 func0000000000000d8c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -7
+	addiw	a1, a1, -7
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -202,19 +194,16 @@ func0000000000000086:
 	ret
 
 func0000000000000424:
-	sext.w	a0, a0
 	addiw	a1, a1, -5
+	addiw	a0, a0, -31
 	sltiu	a1, a1, -2
-	addi	a0, a0, -31
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -18
-	addi	a0, a0, -17
+	addiw	a1, a1, -18
+	addiw	a0, a0, -17
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -239,8 +228,7 @@ func0000000000000481:
 
 func000000000000042c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -248,8 +236,7 @@ func000000000000042c:
 
 func000000000000058c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -266,8 +253,7 @@ func000000000000014a:
 
 func0000000000000581:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -115
+	addiw	a1, a1, -115
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -299,19 +285,17 @@ func0000000000000704:
 	ret
 
 func0000000000000434:
-	sext.w	a0, a0
 	addiw	a1, a1, -1
+	addiw	a0, a0, -1
 	sltiu	a1, a1, 2
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000428:
-	sext.w	a0, a0
 	addiw	a1, a1, -4
+	addiw	a0, a0, -1
 	sltiu	a1, a1, -3
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -326,8 +310,7 @@ func0000000000000094:
 
 func0000000000000c2c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -6
+	addiw	a1, a1, -6
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -343,10 +326,9 @@ func0000000000000508:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	addiw	a1, a1, -2
+	addiw	a0, a0, -1
 	slti	a1, a1, 8
-	addi	a0, a0, -1
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -372,8 +354,7 @@ func000000000000094c:
 func0000000000000028:
 	sext.w	a0, a0
 	andi	a1, a1, -8
-	sext.w	a1, a1
-	addi	a1, a1, -8
+	addiw	a1, a1, -8
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -382,8 +363,7 @@ func0000000000000028:
 func0000000000000101:
 	sext.w	a0, a0
 	andi	a1, a1, -8
-	sext.w	a1, a1
-	addi	a1, a1, -8
+	addiw	a1, a1, -8
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -410,8 +390,7 @@ func00000000000000cc:
 	ret
 
 func00000000000004c1:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	srliw	a0, a0, 31
 	and	a0, a0, a1

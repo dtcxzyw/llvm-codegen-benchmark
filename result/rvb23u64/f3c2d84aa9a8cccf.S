@@ -1,12 +1,12 @@
 func00000000000000c3:
 	addiw	a0, a0, 1
-	addi	a1, a0, -3
+	addiw	a1, a0, -3
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000002:
-	addiw	a0, a0, 1
-	addi	a1, a0, -3
+	addi	a0, a0, 1
+	addiw	a1, a0, -3
 	czero.eqz	a0, a0, a1
 	zext.w	a0, a0
 	ret
@@ -19,8 +19,8 @@ func0000000000000010:
 	ret
 
 func0000000000000042:
-	addiw	a0, a0, -1
-	addi	a1, a0, -63
+	addi	a0, a0, -1
+	addiw	a1, a0, -63
 	addi	a0, a0, -112
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 112
@@ -29,7 +29,7 @@ func0000000000000042:
 
 func0000000000000003:
 	addiw	a0, a0, 1
-	addi	a1, a0, -124
+	addiw	a1, a0, -124
 	czero.eqz	a0, a0, a1
 	ret
 

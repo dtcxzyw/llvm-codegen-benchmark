@@ -33,8 +33,8 @@ func00000000000001a1:
 
 func0000000000000001:
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
-	addi	a0, a0, -1
+	sub	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -123,8 +123,8 @@ func00000000000000a8:
 
 func0000000000000081:
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
-	addi	a0, a0, -3
+	sub	a0, a0, a1
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 
@@ -175,8 +175,8 @@ func00000000000000ac:
 func0000000000000181:
 	li	a2, 1000
 	mul	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	ret
 
@@ -262,8 +262,8 @@ func0000000000000086:
 
 func00000000000001e1:
 	sh1add	a1, a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	ret
 

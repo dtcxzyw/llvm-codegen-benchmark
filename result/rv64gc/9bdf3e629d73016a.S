@@ -13,8 +13,7 @@ func0000000000000141:
 	blt	a4, a3, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

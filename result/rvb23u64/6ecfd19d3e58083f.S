@@ -1,8 +1,7 @@
 func000000000000018c:
-	sext.w	a0, a0
 	snez	a2, a2
+	addiw	a0, a0, -32
 	and	a1, a1, a2
-	addi	a0, a0, -32
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -35,10 +34,9 @@ func000000000000010c:
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
 	sltiu	a2, a2, 5
+	addiw	a0, a0, -1
 	and	a1, a1, a2
-	addi	a0, a0, -1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

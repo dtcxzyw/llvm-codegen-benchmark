@@ -1,13 +1,11 @@
 func00000000000000c3:
-	sext.w	a1, a1
-	addi	a1, a1, -23
+	addiw	a1, a1, -23
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
 
 func0000000000000082:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	add	a0, a0, a1
 	zext.w	a0, a0

@@ -32,8 +32,8 @@ func00000000000001f8:
 func00000000000001e1:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -4
+	add	a0, a0, a2
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 
@@ -70,8 +70,8 @@ func000000000000022a:
 func00000000000000a1:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -220
+	add	a0, a0, a2
+	addiw	a0, a0, -220
 	seqz	a0, a0
 	ret
 
@@ -86,8 +86,8 @@ func0000000000000008:
 func0000000000000001:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -64
+	add	a0, a0, a2
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 
@@ -115,8 +115,8 @@ func00000000000001ec:
 func00000000000003e1:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -1
+	add	a0, a0, a2
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

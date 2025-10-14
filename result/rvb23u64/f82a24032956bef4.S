@@ -1,8 +1,7 @@
 func0000000000000001:
 	andi	a0, a0, 1
-	sext.w	a3, a1
+	addiw	a3, a1, -1
 	addi	a2, a2, -4
-	addi	a3, a3, -1
 	czero.eqz	a2, a2, a3
 	addi	a2, a2, 4
 	czero.eqz	a1, a1, a0

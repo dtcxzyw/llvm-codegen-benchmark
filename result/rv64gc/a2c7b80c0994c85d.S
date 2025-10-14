@@ -45,12 +45,11 @@ func0000000000000084:
 
 func0000000000000184:
 	slli	a1, a1, 48
-	sext.w	a2, a2
+	addiw	a2, a2, -8
 	srli	a1, a1, 48
-	addi	a2, a2, -8
 	snez	a2, a2
 	sltiu	a1, a1, 120
-	and	a1, a1, a2
+	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

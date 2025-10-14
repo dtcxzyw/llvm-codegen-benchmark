@@ -1,9 +1,8 @@
 func000000000000118c:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -1
-	addi	a0, a0, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
+	addi	a0, a0, -1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

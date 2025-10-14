@@ -92,8 +92,7 @@ func0000000000000081:
 
 func0000000000000024:
 	zext.h	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	sltiu	a0, a0, 100
 	or	a0, a0, a1

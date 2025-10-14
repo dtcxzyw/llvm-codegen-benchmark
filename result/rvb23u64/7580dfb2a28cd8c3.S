@@ -76,14 +76,13 @@ func00000000000000e1:
 	ret
 
 func0000000000000041:
-	sext.w	a1, a0
-	addi	a0, a0, -237
+	addi	a1, a0, -237
+	addiw	a0, a0, -12
 	lui	a2, 524288
-	bset	a0, zero, a0
-	addi	a1, a1, -12
-	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	bset	a1, zero, a1
+	czero.nez	a2, a2, a0
+	czero.eqz	a0, a1, a0
+	or	a0, a0, a2
 	ret
 
 func0000000000000001:

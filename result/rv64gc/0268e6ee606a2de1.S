@@ -23,10 +23,9 @@ func0000000000000021:
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, -16
 	sltiu	a1, a1, 9
-	addi	a0, a0, -16
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1

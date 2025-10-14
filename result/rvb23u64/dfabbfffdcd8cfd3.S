@@ -13,8 +13,7 @@ func00000000000000c0:
 	ret
 
 func0000000000000014:
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a1, a1
 	sub	a0, a0, a1
 	addiw	a0, a0, -4
@@ -30,8 +29,7 @@ func0000000000000040:
 	ret
 
 func0000000000000010:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	not	a1, a1
 	addw	a0, a0, a1

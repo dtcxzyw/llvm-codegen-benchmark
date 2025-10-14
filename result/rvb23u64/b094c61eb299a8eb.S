@@ -23,8 +23,7 @@ func000000000000198c:
 
 func00000000000004c6:
 	sext.w	a0, a0
-	sext.w	a3, a2
-	addi	a3, a3, 233
+	addiw	a3, a2, 233
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2

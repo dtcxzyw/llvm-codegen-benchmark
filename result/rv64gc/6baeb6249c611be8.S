@@ -1,8 +1,8 @@
 func000000000000058c:
 	sext.w	a2, a1
 	sext.w	a3, a0
-	subw	a0, a0, a1
-	addi	a0, a0, -1
+	sub	a0, a0, a1
+	addiw	a0, a0, -1
 	xor	a2, a2, a3
 	snez	a0, a0
 	snez	a1, a2

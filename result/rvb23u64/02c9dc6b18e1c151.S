@@ -1,9 +1,8 @@
 func0000000000000021:
-	sext.w	a0, a0
 	lui	a2, 122880
 	and	a1, a1, a2
 	lui	a2, 57344
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0

@@ -96,9 +96,8 @@ func0000000000000081:
 
 func0000000000000024:
 	slli	a0, a0, 48
-	sext.w	a1, a1
+	addiw	a1, a1, -2
 	srli	a0, a0, 48
-	addi	a1, a1, -2
 	seqz	a1, a1
 	sltiu	a0, a0, 100
 	or	a0, a0, a1

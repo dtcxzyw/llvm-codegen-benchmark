@@ -19,7 +19,7 @@ func0000000000000028:
 func0000000000000021:
 	zext.b	a1, a1
 	subw	a0, a0, a1
-	addi	a1, a0, -32
+	addiw	a1, a0, -32
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1

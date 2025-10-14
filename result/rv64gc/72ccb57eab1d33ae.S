@@ -37,12 +37,11 @@ func0000000000000021:
 	ret
 
 func000000000000008c:
-	sext.w	a2, a0
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	addi	a2, a2, 2
-	sltu	a0, a1, a0
-	snez	a1, a2
+	slli	a2, a0, 32
+	addiw	a0, a0, 2
+	srli	a2, a2, 32
+	sltu	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

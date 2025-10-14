@@ -50,12 +50,11 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
 	andi	a2, a2, 3
+	addiw	a1, a1, -3
 	addi	a2, a2, -3
-	addi	a1, a1, -3
-	snez	a2, a2
 	snez	a1, a1
+	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

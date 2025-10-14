@@ -1,10 +1,9 @@
 func0000000000000302:
-	sext.w	a0, a0
 	li	a3, 1
+	addiw	a0, a0, 1
 	slli	a3, a3, 48
-	addi	a0, a0, 1
-	xor	a2, a2, a3
 	seqz	a0, a0
+	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

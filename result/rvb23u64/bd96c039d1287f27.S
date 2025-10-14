@@ -50,9 +50,8 @@ func0000000000000008:
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	addiw	a1, a1, 2
-	addi	a0, a0, -63
+	addiw	a0, a0, -63
 	czero.eqz	a0, a1, a0
 	ret
 

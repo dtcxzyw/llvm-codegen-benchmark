@@ -32,8 +32,7 @@ func00000000000006b4:
 func0000000000000001:
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -47
+	addiw	a0, a0, -47
 	seqz	a0, a0
 	ret
 
@@ -95,8 +94,7 @@ func0000000000000206:
 func0000000000000201:
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	addi	a0, a0, -47
+	addiw	a0, a0, -47
 	seqz	a0, a0
 	ret
 

@@ -29,20 +29,18 @@ func000000000000014a:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	slli	a1, a1, 1
 	addiw	a1, a1, -1
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	slli	a1, a1, 3
 	addiw	a1, a1, 64
-	addi	a0, a0, -5
+	addiw	a0, a0, -5
 	addi	a1, a1, -56
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 56

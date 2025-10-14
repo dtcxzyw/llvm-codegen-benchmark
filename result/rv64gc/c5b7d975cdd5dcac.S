@@ -10,8 +10,8 @@ func00000000000001e1:
 	slli	a2, a2, 60
 	srli	a2, a2, 63
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -1
+	add	a0, a0, a2
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

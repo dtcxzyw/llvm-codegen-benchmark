@@ -11,9 +11,8 @@ func0000000000000021:
 
 func0000000000000028:
 	slli	a1, a1, 48
-	sext.w	a2, a2
+	addiw	a2, a2, -8
 	srli	a1, a1, 48
-	addi	a2, a2, -8
 	seqz	a2, a2
 	sltiu	a1, a1, 25
 	not	a1, a1

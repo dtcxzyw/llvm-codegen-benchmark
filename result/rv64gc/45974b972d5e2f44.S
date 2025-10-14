@@ -17,8 +17,7 @@ func0000000000000c74:
 
 func000000000000010c:
 	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -34
+	addiw	a2, a2, -34
 	snez	a2, a2
 	addi	a2, a2, -1
 	xor	a1, a1, a2
@@ -46,8 +45,7 @@ func0000000000000c68:
 	ret
 
 func000000000000016c:
-	sext.w	a2, a2
-	addi	a2, a2, -5
+	addiw	a2, a2, -5
 	seqz	a2, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

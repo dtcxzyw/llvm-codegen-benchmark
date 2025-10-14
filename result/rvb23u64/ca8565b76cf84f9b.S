@@ -19,13 +19,11 @@ func000000000000002c:
 	ret
 
 func000000000000042c:
-	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, -1
-	xor	a0, a0, a1
-	addi	a2, a2, -1
-	seqz	a0, a0
-	snez	a1, a2
+	xor	a1, a1, a0
+	seqz	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

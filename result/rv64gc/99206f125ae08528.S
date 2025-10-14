@@ -10,7 +10,7 @@ func0000000000000c08:
 
 func0000000000000109:
 	sext.w	a3, a2
-	addi	a2, a3, -44
+	addiw	a2, a2, -44
 	li	a4, 37
 	seqz	a2, a2
 	beq	a3, a4, .LBB1_2

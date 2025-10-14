@@ -1,6 +1,5 @@
 func0000000000000028:
-	sext.w	a2, a2
-	addi	a2, a2, -8
+	addiw	a2, a2, -8
 	snez	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -74,8 +73,7 @@ func0000000000000146:
 	ret
 
 func000000000000018a:
-	sext.w	a2, a2
-	addi	a2, a2, -64
+	addiw	a2, a2, -64
 	snez	a2, a2
 	slt	a0, a1, a0
 	and	a0, a0, a2

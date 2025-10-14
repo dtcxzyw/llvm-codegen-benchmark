@@ -1,7 +1,6 @@
 func0000000000000009:
-	sext.w	a1, a1
+	addiw	a1, a1, -33
 	srli	a0, a0, 3
-	addi	a1, a1, -33
 	seqz	a1, a1
 	andi	a0, a0, 2
 	or	a0, a0, a1

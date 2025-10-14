@@ -30,8 +30,7 @@ func000000000000022c:
 	slli	a2, a2, 4
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	snez	a0, a0
 	ret
 

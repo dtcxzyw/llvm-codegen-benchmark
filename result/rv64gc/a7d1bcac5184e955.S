@@ -63,9 +63,8 @@ func000000000000018c:
 	ret
 
 func0000000000000101:
-	sext.w	a1, a1
+	addiw	a1, a1, -64
 	sltiu	a0, a0, 256
-	addi	a1, a1, -64
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -95,9 +94,8 @@ func0000000000000108:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
+	addiw	a1, a1, -3
 	addi	a0, a0, -16
-	addi	a1, a1, -3
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -119,8 +117,7 @@ func000000000000008c:
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -137,8 +134,7 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	sext.w	a1, a1
-	addi	a1, a1, -32
+	addiw	a1, a1, -32
 	seqz	a1, a1
 	sltiu	a0, a0, 32
 	and	a0, a0, a1

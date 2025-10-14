@@ -16,8 +16,8 @@ func00000000000004cc:
 
 func000000000000042c:
 	sext.w	a2, a0
-	addw	a0, a0, a1
-	addi	a0, a0, -8
+	add	a0, a0, a1
+	addiw	a0, a0, -8
 	seqz	a0, a0
 	sltiu	a1, a2, -1
 	and	a0, a0, a1

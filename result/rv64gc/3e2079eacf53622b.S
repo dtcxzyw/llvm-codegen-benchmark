@@ -1,16 +1,16 @@
 func0000000000000021:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	subw	a0, a0, a1
-	addi	a0, a0, -37
+	sub	a0, a0, a1
+	addiw	a0, a0, -37
 	seqz	a0, a0
 	ret
 
 func00000000000000a1:
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	sub	a0, a0, a1
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

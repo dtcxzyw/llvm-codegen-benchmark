@@ -9,10 +9,10 @@ func0000000000000c2a:
 	ret
 
 func0000000000000d8c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	addiw	a1, a1, 1
-	xor	a1, a1, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
+	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

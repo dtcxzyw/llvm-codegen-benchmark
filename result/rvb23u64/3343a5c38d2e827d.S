@@ -1,6 +1,5 @@
 func000000000000000f:
-	sext.w	a1, a1
-	addi	a1, a1, -9
+	addiw	a1, a1, -9
 	seqz	a1, a1
 	slli	a1, a1, 2
 	addi	a1, a1, 2
@@ -8,8 +7,7 @@ func000000000000000f:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	li	a2, -3
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 8
@@ -18,9 +16,8 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sext.w	a1, a1
+	addiw	a1, a1, 1
 	neg	a2, a0
-	addi	a1, a1, 1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2

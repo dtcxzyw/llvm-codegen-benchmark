@@ -68,14 +68,13 @@ func0000000000001090:
 	ret
 
 func0000000000001082:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	li	a3, -1
+	addiw	a0, a0, -5
 	seqz	a2, a2
 	srli	a3, a3, 2
-	addi	a0, a0, -5
-	xor	a1, a1, a3
 	seqz	a0, a0
+	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -105,11 +104,9 @@ func0000000000001602:
 	ret
 
 func0000000000006082:
-	sext.w	a0, a0
-	sext.w	a1, a1
 	srli	a2, a2, 63
-	addi	a1, a1, -2
-	addi	a0, a0, -2
+	addiw	a1, a1, -2
+	addiw	a0, a0, -2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

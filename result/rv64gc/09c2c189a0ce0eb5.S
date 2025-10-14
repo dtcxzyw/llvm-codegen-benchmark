@@ -20,10 +20,9 @@ func0000000000000181:
 	ret
 
 func0000000000000101:
-	sext.w	a2, a2
 	sext.w	a3, a0
+	addiw	a2, a2, -1
 	sltiu	a3, a3, 128
-	addi	a2, a2, -1
 	snez	a2, a2
 	or	a2, a2, a3
 	beqz	a2, .LBB2_2

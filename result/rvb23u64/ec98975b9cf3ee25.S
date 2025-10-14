@@ -7,8 +7,7 @@ func000000000000000c:
 
 func0000000000000001:
 	xori	a0, a0, 1
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

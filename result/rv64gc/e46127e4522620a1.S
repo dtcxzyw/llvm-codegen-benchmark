@@ -21,8 +21,7 @@ func000000000000028c:
 	bltu	a2, a3, .LBB1_2
 	mv	a1, a0
 .LBB1_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a0, a1
 	ret
 

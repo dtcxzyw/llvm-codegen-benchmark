@@ -13,16 +13,14 @@ func0000000000000011:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	sub	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 
 func0000000000000005:
-	sext.w	a1, a1
-	addi	a1, a1, -1853
+	addiw	a1, a1, -1853
 	seqz	a1, a1
 	slli	a1, a1, 2
 	addiw	a1, a1, 8

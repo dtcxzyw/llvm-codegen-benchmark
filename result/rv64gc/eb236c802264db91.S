@@ -3,8 +3,7 @@ func0000000000000061:
 	bnez	a0, .LBB0_2
 	srli	a1, a2, 60
 .LBB0_2:
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	seqz	a0, a1
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000041:
 	bnez	a0, .LBB2_2
 	srli	a1, a2, 32
 .LBB2_2:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a0, a1
 	ret
 

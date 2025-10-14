@@ -8,10 +8,9 @@ func000000000000002c:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	zext.w	a2, a2
+	addiw	a0, a0, -2
 	sltu	a1, a2, a1
-	addi	a0, a0, -2
 	snez	a0, a0
 	andn	a0, a0, a1
 	ret

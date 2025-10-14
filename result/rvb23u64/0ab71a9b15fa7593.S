@@ -88,10 +88,9 @@ func0000000000000083:
 	ret
 
 func00000000000000c3:
-	sext.w	a0, a0
 	lui	a2, 16
 	sllw	a1, a2, a1
-	addi	a0, a0, -224
+	addiw	a0, a0, -224
 	czero.eqz	a0, a1, a0
 	ret
 

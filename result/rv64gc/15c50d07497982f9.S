@@ -108,8 +108,8 @@ func00000000000003a4:
 
 func00000000000002a1:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -96
+	add	a0, a0, a1
+	addiw	a0, a0, -96
 	seqz	a0, a0
 	ret
 

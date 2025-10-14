@@ -19,10 +19,9 @@ func000000000000018c:
 	ret
 
 func000000000000010c:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, 2
 	sltiu	a2, a2, 222
-	addi	a1, a1, 2
 	not	a2, a2
 	or	a0, a0, a2
 	snez	a1, a1

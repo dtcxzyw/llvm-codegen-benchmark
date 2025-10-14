@@ -51,8 +51,7 @@ func0000000000000021:
 
 func0000000000000181:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

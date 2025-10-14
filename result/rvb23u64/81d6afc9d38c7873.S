@@ -19,11 +19,11 @@ func0000000000000a53:
 	ret
 
 func0000000000000a04:
-	sext.w	a1, a1
-	sltiu	a2, a1, 13
+	sext.w	a2, a1
+	sltiu	a2, a2, 13
 	xori	a2, a2, 1
 	slli	a2, a2, 2
-	addi	a1, a1, -23
+	addiw	a1, a1, -23
 	addi	a2, a2, 4
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

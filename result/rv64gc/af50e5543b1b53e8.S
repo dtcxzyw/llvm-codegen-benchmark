@@ -19,9 +19,8 @@ func000000000000008c:
 	ret
 
 func000000000000058c:
-	sext.w	a1, a1
+	addiw	a1, a1, -6
 	slli	a0, a0, 48
-	addi	a1, a1, -6
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -40,10 +39,9 @@ func0000000000000108:
 	slli	a0, a0, 48
 	andi	a1, a1, -16
 	srli	a0, a0, 48
-	sext.w	a1, a1
-	addi	a1, a1, -16
-	sltiu	a0, a0, 16
+	addiw	a1, a1, -16
 	snez	a1, a1
+	sltiu	a0, a0, 16
 	not	a0, a0
 	and	a0, a0, a1
 	ret

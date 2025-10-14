@@ -11,11 +11,10 @@ func0000000000000421:
 
 func000000000000002c:
 	sext.w	a0, a0
-	sext.w	a2, a1
-	addiw	a1, a1, 1
-	addi	a2, a2, -63
-	seqz	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a1, 1
+	addiw	a1, a1, -63
+	seqz	a1, a1
+	addi	a1, a1, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -23,11 +22,10 @@ func000000000000002c:
 
 func0000000000000021:
 	sext.w	a0, a0
-	sext.w	a2, a1
-	addiw	a1, a1, 1
-	addi	a2, a2, -63
-	seqz	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a1, 1
+	addiw	a1, a1, -63
+	seqz	a1, a1
+	addi	a1, a1, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

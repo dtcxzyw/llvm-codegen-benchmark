@@ -26,8 +26,7 @@ func0000000000000421:
 func00000000000004c1:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -85
+	addiw	a1, a1, -85
 	seqz	a1, a1
 	slti	a0, a0, 5
 	and	a0, a0, a1
@@ -98,10 +97,9 @@ func000000000000054a:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	or	a1, a1, a2
+	addiw	a0, a0, -1
 	srliw	a1, a1, 31
-	addi	a0, a0, -1
 	seqz	a0, a0
 	andn	a0, a0, a1
 	ret

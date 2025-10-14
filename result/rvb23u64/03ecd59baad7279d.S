@@ -41,8 +41,7 @@ func00000000000000b8:
 
 func00000000000000a1:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -55,8 +54,7 @@ func0000000000000084:
 
 func000000000000002c:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	snez	a0, a0
 	ret
 
@@ -92,8 +90,7 @@ func00000000000000a8:
 
 func0000000000000001:
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

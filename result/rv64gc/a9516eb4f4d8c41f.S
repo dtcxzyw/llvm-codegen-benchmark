@@ -5,8 +5,8 @@ func0000000000000021:
 	addi	a0, a0, -819
 	slli	a2, a0, 32
 	add	a0, a0, a2
-	mulw	a0, a1, a0
-	addi	a0, a0, -11
+	mul	a0, a1, a0
+	addiw	a0, a0, -11
 	seqz	a0, a0
 	ret
 

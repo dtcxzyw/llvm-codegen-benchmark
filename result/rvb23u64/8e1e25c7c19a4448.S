@@ -59,8 +59,8 @@ func00000000000004ca:
 
 func0000000000000024:
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	addi	a1, a1, -16
+	sub	a1, a1, a2
+	addiw	a1, a1, -16
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
@@ -206,8 +206,8 @@ func0000000000000421:
 	ret
 
 func0000000000000426:
-	subw	a1, a1, a2
-	addi	a1, a1, -31
+	sub	a1, a1, a2
+	addiw	a1, a1, -31
 	seqz	a1, a1
 	srliw	a0, a0, 31
 	and	a0, a0, a1

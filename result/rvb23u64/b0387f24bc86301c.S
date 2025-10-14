@@ -1,8 +1,6 @@
 func0000000000000043:
-	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -12
-	addi	a0, a0, -3
+	addiw	a1, a1, -12
+	addiw	a0, a0, -3
 	snez	a1, a1
 	seqz	a0, a0
 	addi	a1, a1, -1

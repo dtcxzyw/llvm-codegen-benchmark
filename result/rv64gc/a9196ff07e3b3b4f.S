@@ -109,9 +109,8 @@ func0000000000000144:
 	ret
 
 func0000000000000141:
-	sext.w	a1, a1
 	srliw	a2, a2, 31
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	or	a1, a1, a2
 	bnez	a1, .LBB10_2

@@ -26,9 +26,8 @@ func0000000000000102:
 	ret
 
 func0000000000000058:
-	sext.w	a1, a1
 	bexti	a2, a2, 3
-	addi	a1, a1, -8
+	addiw	a1, a1, -8
 	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

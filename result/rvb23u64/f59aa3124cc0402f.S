@@ -1,9 +1,8 @@
 func000000000000060a:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -12
-	slti	a0, a0, 2
+	addiw	a2, a2, -12
 	snez	a2, a2
+	slti	a0, a0, 2
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

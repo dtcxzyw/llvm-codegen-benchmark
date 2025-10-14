@@ -1,8 +1,7 @@
 func0000000000000027:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	not	a2, a2
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	addi	a2, a2, -127
 	czero.eqz	a1, a2, a1
 	addiw	a1, a1, 127
@@ -23,8 +22,7 @@ func0000000000000025:
 
 func0000000000000021:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -32
+	addiw	a1, a1, -32
 	czero.eqz	a1, a2, a1
 	not	a1, a1
 	sext.w	a1, a1

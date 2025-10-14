@@ -33,8 +33,7 @@ func0000000000000007:
 	addw	a0, a0, a1
 	ret
 .LBB2_2:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a1, a2
 	slli	a1, a1, 2
 	addw	a0, a0, a1

@@ -1,7 +1,6 @@
 func0000000000000007:
 	andi	a3, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a1, a2
 	slli	a1, a1, 18
 	lui	a2, 2224

@@ -7,8 +7,7 @@ func0000000000000088:
 	ret
 
 func000000000000003c:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	feq.s	a1, fa0, fa0
 	or	a0, a0, a1
@@ -32,10 +31,9 @@ func00000000000001d4:
 	ret
 
 func00000000000001d8:
-	sext.w	a0, a0
 	fli.s	fa5, 1.0
+	addiw	a0, a0, -2
 	feq.s	a1, fa0, fa5
-	addi	a0, a0, -2
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -104,10 +102,9 @@ func0000000000000148:
 	ret
 
 func0000000000000202:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
+	addiw	a0, a0, -16
 	feq.s	a1, fa0, fa5
-	addi	a0, a0, -16
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -130,9 +127,8 @@ func0000000000000098:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
+	addiw	a0, a0, -256
 	fli.s	fa5, 0.5
-	addi	a0, a0, -256
 	seqz	a0, a0
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
@@ -147,10 +143,9 @@ func0000000000000084:
 	ret
 
 func0000000000000082:
-	sext.w	a0, a0
 	fli.s	fa5, 1.0
+	addiw	a0, a0, -1
 	flt.s	a1, fa0, fa5
-	addi	a0, a0, -1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

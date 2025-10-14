@@ -59,8 +59,7 @@ func0000000000000146:
 func0000000000000181:
 	sext.w	a1, a1
 	bnez	a1, .LBB7_2
-	sext.w	a2, a2
-	addi	a2, a2, -3
+	addiw	a2, a2, -3
 	snez	a0, a2
 .LBB7_2:
 	ret

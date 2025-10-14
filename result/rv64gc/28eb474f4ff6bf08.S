@@ -102,8 +102,8 @@ func0000000000000034:
 
 func00000000000000e1:
 	srliw	a1, a1, 3
-	addw	a0, a0, a1
-	addi	a0, a0, -8
+	add	a0, a0, a1
+	addiw	a0, a0, -8
 	seqz	a0, a0
 	ret
 

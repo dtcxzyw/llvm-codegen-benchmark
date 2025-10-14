@@ -1,7 +1,6 @@
 func0000000000000061:
-	sext.w	a0, a0
 	addi	a1, a1, 8
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -20,9 +19,8 @@ func000000000000006a:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	addi	a1, a1, -104
-	addi	a0, a0, -46
+	addiw	a0, a0, -46
 	czero.nez	a0, a1, a0
 	ret
 

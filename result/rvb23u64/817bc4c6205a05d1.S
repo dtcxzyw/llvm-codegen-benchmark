@@ -52,9 +52,8 @@ func000000000000002c:
 	ret
 
 func0000000000000038:
-	sext.w	a1, a1
+	addiw	a1, a1, -512
 	lui	a2, 12
-	addi	a1, a1, -512
 	czero.nez	a1, a2, a1
 	lui	a2, 4
 	addi	a2, a2, -193

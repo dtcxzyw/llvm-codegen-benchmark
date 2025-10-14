@@ -6,9 +6,8 @@ func000000000000008c:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	flt.s	a1, fa0, fa1
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -29,9 +28,8 @@ func0000000000000161:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	flt.s	a1, fa1, fa0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

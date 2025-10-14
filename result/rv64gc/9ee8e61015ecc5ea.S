@@ -46,8 +46,7 @@ func0000000000000198:
 	bltz	a3, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
-	sext.w	a1, a1
-	addi	a1, a1, -32
+	addiw	a1, a1, -32
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

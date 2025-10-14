@@ -27,8 +27,8 @@ func0000000000000086:
 func0000000000000001:
 	sub	a1, a1, a2
 	andi	a0, a0, 128
-	addw	a0, a0, a1
-	addi	a0, a0, -127
+	add	a0, a0, a1
+	addiw	a0, a0, -127
 	seqz	a0, a0
 	ret
 

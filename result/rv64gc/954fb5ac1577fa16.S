@@ -14,8 +14,8 @@ func0000000000000126:
 
 func00000000000001a1:
 	srliw	a1, a1, 6
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 

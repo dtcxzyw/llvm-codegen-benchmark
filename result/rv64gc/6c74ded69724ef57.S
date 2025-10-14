@@ -1,16 +1,16 @@
 func0000000000000021:
-	sext.w	a2, a1
-	li	a3, 2
-	andi	a1, a0, 1
-	bne	a2, a3, .LBB0_2
+	sext.w	a3, a1
+	li	a4, 2
+	andi	a2, a0, 1
+	bne	a3, a4, .LBB0_2
 	lui	a0, 512
-	bnez	a1, .LBB0_3
+	bnez	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	addi	a2, a2, -3
-	seqz	a0, a2
+	addiw	a1, a1, -3
+	seqz	a0, a1
 	slli	a0, a0, 36
-	beqz	a1, .LBB0_4
+	beqz	a2, .LBB0_4
 .LBB0_3:
 	li	a0, 512
 .LBB0_4:

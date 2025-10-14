@@ -31,10 +31,8 @@ func000000000000018c:
 	ret
 
 func000000000000158c:
-	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -42
-	addi	a0, a0, -42
+	addiw	a1, a1, -42
+	addiw	a0, a0, -42
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -50,10 +48,8 @@ func0000000000000484:
 	ret
 
 func000000000000142c:
-	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -42
-	addi	a0, a0, -54
+	addiw	a1, a1, -42
+	addiw	a0, a0, -54
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

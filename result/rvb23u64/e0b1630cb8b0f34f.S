@@ -8,10 +8,9 @@ func000000000000018c:
 	ret
 
 func0000000000000141:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, -455
 	sgtz	a1, a1
-	addi	a0, a0, -455
 	seqz	a0, a0
 	and	a0, a0, a1
 	neg	a0, a0

@@ -1,7 +1,6 @@
 func0000000000000002:
 	andi	a3, a0, 1
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	snez	a0, a2
 	slliw	a0, a0, 31
 	beqz	a3, .LBB0_2

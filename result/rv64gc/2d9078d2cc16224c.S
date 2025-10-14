@@ -8,9 +8,8 @@ func0000000000000010:
 	ret
 
 func000000000000001c:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	andi	a0, a0, -8
-	addi	a2, a2, -1
 	seqz	a2, a2
 	slli	a2, a2, 3
 	add	a0, a0, a1
@@ -30,8 +29,7 @@ func0000000000000087:
 	ret
 
 func000000000000001f:
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a2, a2
 	slli	a2, a2, 3
 	add	a0, a0, a2

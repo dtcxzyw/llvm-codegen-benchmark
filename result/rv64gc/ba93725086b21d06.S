@@ -7,10 +7,10 @@ func0000000000000208:
 	ret
 
 func0000000000000842:
-	sext.w	a0, a0
+	sext.w	a3, a0
 	subw	a1, a1, a2
-	xor	a1, a1, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
+	xor	a1, a1, a3
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

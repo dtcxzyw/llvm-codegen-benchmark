@@ -3,8 +3,8 @@ func00000000000002a1:
 	addi	a2, a2, -90
 	seqz	a2, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	addi	a0, a0, -1
+	sub	a0, a0, a2
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

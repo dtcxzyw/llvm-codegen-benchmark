@@ -151,10 +151,9 @@ func000000000000058a:
 	ret
 
 func000000000000042a:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	addiw	a0, a0, -4
 	sgtz	a1, a1
-	addi	a0, a0, -4
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -169,11 +168,10 @@ func0000000000000c2c:
 	ret
 
 func000000000000042c:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	negw	a2, a2
+	addiw	a0, a0, -1
 	xor	a1, a1, a2
-	addi	a0, a0, -1
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

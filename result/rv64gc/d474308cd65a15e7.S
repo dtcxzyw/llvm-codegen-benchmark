@@ -6,15 +6,15 @@ func0000000000000054:
 	ret
 
 func0000000000000042:
-	subw	a2, a2, a1
-	addi	a2, a2, -6
+	sub	a2, a2, a1
+	addiw	a2, a2, -6
 	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	subw	a2, a2, a1
-	addi	a2, a2, -22
+	sub	a2, a2, a1
+	addiw	a2, a2, -22
 	snez	a1, a2
 	or	a0, a0, a1
 	ret

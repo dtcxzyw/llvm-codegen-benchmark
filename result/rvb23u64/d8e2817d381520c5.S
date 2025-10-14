@@ -26,11 +26,10 @@ func00000000000000a7:
 	ret
 
 func0000000000000009:
-	sext.w	a2, a2
+	addiw	a2, a2, 1
 	lui	a3, 7699
-	addi	a2, a2, 1
-	addi	a3, a3, 896
 	czero.eqz	a1, a1, a2
+	addi	a3, a3, 896
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add.uw	a0, a1, a0
@@ -51,8 +50,7 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	addi	a1, a1, 33
 	czero.eqz	a1, a1, a2
 	addiw	a1, a1, -33

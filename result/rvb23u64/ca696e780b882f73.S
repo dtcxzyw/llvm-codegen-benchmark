@@ -1,6 +1,5 @@
 func0000000000000059:
-	sext.w	a2, a2
-	addi	a2, a2, -7
+	addiw	a2, a2, -7
 	seqz	a2, a2
 	add	a1, a1, a2
 	slliw	a1, a1, 12

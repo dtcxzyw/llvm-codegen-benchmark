@@ -3,8 +3,7 @@ func0000000000000061:
 	srli	a2, a2, 55
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -73
+	addiw	a0, a0, -73
 	seqz	a0, a0
 	ret
 
@@ -36,8 +35,7 @@ func000000000000006c:
 	andi	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	snez	a0, a0
 	ret
 

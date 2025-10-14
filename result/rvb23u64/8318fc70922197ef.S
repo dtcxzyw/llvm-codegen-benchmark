@@ -13,10 +13,9 @@ func0000000000000021:
 
 func0000000000000028:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -258
-	sltiu	a0, a0, 31
+	addiw	a1, a1, -258
 	snez	a1, a1
+	sltiu	a0, a0, 31
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

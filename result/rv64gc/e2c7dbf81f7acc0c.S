@@ -33,13 +33,12 @@ func0000000000003101:
 func0000000000000581:
 	sext.w	a0, a0
 	li	a2, 3
-	sext.w	a1, a1
 	beq	a0, a2, .LBB3_2
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 .LBB3_2:
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	snez	a0, a1
 	ret
 

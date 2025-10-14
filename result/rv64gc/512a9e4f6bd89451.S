@@ -17,8 +17,7 @@ func000000000000002c:
 	li	a0, 2
 	ret
 .LBB1_2:
-	sext.w	a1, a1
-	addi	a0, a1, -224
+	addiw	a0, a1, -224
 	snez	a0, a0
 	addi	a0, a0, 3
 	ret

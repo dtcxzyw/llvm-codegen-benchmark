@@ -1,10 +1,10 @@
 func0000000000000041:
-	sext.w	a0, a0
-	bnez	a0, .LBB0_2
+	sext.w	a1, a0
+	bnez	a1, .LBB0_2
 	li	a0, 3
 	ret
 .LBB0_2:
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

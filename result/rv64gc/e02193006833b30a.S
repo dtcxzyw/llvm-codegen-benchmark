@@ -37,8 +37,7 @@ func0000000000000001:
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	snez	a0, a1
 	slli	a0, a0, 2
 	ret

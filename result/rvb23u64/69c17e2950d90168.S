@@ -1,10 +1,9 @@
 func000000000000004a:
 	sext.w	a1, a1
-	sext.w	a3, a2
+	addiw	a3, a2, -256
 	lui	a4, 16
-	addi	a3, a3, -256
-	addi	a4, a4, -256
 	czero.eqz	a2, a2, a3
+	addi	a4, a4, -256
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3
 	sext.w	a2, a2
@@ -25,8 +24,7 @@ func0000000000000048:
 
 func0000000000000042:
 	sext.w	a1, a1
-	sext.w	a3, a2
-	addi	a3, a3, 1
+	addiw	a3, a2, 1
 	addi	a2, a2, -1
 	czero.eqz	a2, a2, a3
 	addiw	a2, a2, 1

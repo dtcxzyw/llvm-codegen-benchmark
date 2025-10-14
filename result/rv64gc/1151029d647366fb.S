@@ -71,8 +71,7 @@ func00000000000029f8:
 	ret
 
 func00000000000005e1:
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	seqz	a2, a2
 	add	a1, a1, a2
 	or	a0, a0, a1
@@ -111,8 +110,8 @@ func00000000000021e1:
 	srliw	a2, a2, 16
 	snez	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -1
+	add	a0, a0, a2
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -129,8 +128,7 @@ func0000000000003001:
 	ret
 
 func0000000000000401:
-	sext.w	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	seqz	a2, a2
 	addw	a1, a1, a2
 	negw	a0, a0
@@ -147,12 +145,11 @@ func00000000000030aa:
 	ret
 
 func00000000000004a1:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -3
+	add	a0, a0, a2
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 

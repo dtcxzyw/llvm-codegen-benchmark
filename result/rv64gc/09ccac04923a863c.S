@@ -68,8 +68,7 @@ func0000000000000261:
 	or	a0, a0, a2
 	zext.b	a1, a1
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -12
+	addiw	a0, a0, -12
 	seqz	a0, a0
 	ret
 
@@ -154,8 +153,7 @@ func00000000000003ec:
 	or	a0, a0, a2
 	zext.b	a1, a1
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -13
+	addiw	a0, a0, -13
 	snez	a0, a0
 	ret
 

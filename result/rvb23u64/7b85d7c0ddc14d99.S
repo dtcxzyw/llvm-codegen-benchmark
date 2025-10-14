@@ -1,6 +1,5 @@
 func0000000000000208:
-	sext.w	a2, a2
-	addi	a2, a2, -346
+	addiw	a2, a2, -346
 	seqz	a2, a2
 	add	a0, a0, a1
 	subw	a0, a0, a2
@@ -20,8 +19,8 @@ func000000000000140c:
 	add	a0, a0, a1
 	not	a2, a2
 	sraiw	a1, a2, 31
-	addw	a0, a0, a1
-	addi	a0, a0, -4
+	add	a0, a0, a1
+	addiw	a0, a0, -4
 	snez	a0, a0
 	ret
 

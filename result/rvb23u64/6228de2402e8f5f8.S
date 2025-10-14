@@ -50,8 +50,7 @@ func0000000000000027:
 	ret
 
 func000000000000000b:
-	sext.w	a2, a2
-	addi	a2, a2, -8
+	addiw	a2, a2, -8
 	seqz	a2, a2
 	xori	a2, a2, 5
 	or	a0, a0, a1

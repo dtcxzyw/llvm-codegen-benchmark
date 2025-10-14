@@ -28,10 +28,9 @@ func000000000000030c:
 	ret
 
 func0000000000000302:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	addiw	a0, a0, -1
 	snez	a1, a1
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

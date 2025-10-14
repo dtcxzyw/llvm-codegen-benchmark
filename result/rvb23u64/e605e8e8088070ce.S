@@ -13,8 +13,7 @@ func000000000000004a:
 
 func000000000000008c:
 	srli	a1, a1, 4
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -27,24 +26,21 @@ func0000000000000046:
 
 func0000000000000081:
 	srli	a1, a1, 3
-	sext.w	a1, a1
-	addi	a1, a1, -4
+	addiw	a1, a1, -4
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000001:
 	srli	a1, a1, 9
-	sext.w	a1, a1
-	addi	a1, a1, -5
+	addiw	a1, a1, -5
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000000c:
 	srli	a1, a1, 9
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

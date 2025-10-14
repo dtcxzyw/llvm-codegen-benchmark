@@ -1,8 +1,8 @@
 func0000000000000101:
 	slli	a1, a1, 48
 	seqz	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -71,8 +71,8 @@ func0000000000000c2a:
 func0000000000000121:
 	slli	a1, a1, 48
 	seqz	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

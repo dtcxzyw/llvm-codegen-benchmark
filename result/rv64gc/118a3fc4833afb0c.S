@@ -22,8 +22,7 @@ func00000000000000c1:
 	bltz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
-	addi	a0, a0, -24
+	addiw	a0, a0, -24
 	seqz	a0, a0
 	ret
 
@@ -205,8 +204,7 @@ func0000000000000101:
 	bltu	a3, a2, .LBB22_2
 	mv	a0, a1
 .LBB22_2:
-	sext.w	a0, a0
-	addi	a0, a0, -14
+	addiw	a0, a0, -14
 	seqz	a0, a0
 	ret
 

@@ -1,8 +1,7 @@
 func000000000000018c:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -2
 	snez	a2, a2
-	addi	a1, a1, -2
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -45,10 +44,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000101:
-	sext.w	a1, a1
 	srliw	a2, a2, 13
+	addiw	a1, a1, -3
 	snez	a2, a2
-	addi	a1, a1, -3
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -72,10 +70,9 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -8
 	slti	a2, a2, 310
-	addi	a1, a1, -8
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

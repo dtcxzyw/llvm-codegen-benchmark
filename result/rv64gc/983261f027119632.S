@@ -16,8 +16,8 @@ func00000000000000f4:
 
 func000000000000006c:
 	zext.b	a2, a2
-	addw	a1, a1, a2
-	addi	a1, a1, -4
+	add	a1, a1, a2
+	addiw	a1, a1, -4
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

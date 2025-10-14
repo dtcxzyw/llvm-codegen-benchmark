@@ -47,20 +47,18 @@ func0000000000000084:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	addiw	a0, a0, -64
 	addi	a1, a1, -2
-	addi	a0, a0, -64
 	sltiu	a1, a1, 8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	addiw	a0, a0, -2
 	addi	a1, a1, -17
-	addi	a0, a0, -2
 	sltiu	a1, a1, 120
 	seqz	a0, a0
 	and	a0, a0, a1

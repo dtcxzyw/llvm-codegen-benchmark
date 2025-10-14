@@ -11,8 +11,7 @@ func0000000000000102:
 	addiw	a1, a0, -1500
 	andi	a0, a0, -4
 	sltiu	a1, a1, 3
-	sext.w	a0, a0
-	addi	a0, a0, -1600
+	addiw	a0, a0, -1600
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

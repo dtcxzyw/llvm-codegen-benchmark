@@ -1,6 +1,5 @@
 func000000000000000f:
-	sext.w	a1, a1
-	addi	a1, a1, -665
+	addiw	a1, a1, -665
 	snez	a1, a1
 	sh3add	a0, a1, a0
 	ret

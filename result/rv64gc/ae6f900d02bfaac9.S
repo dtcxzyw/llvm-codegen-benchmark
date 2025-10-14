@@ -23,8 +23,8 @@ func0000000000000061:
 	add	a2, a2, a3
 	slli	a3, a2, 1
 	sub	a1, a1, a2
-	subw	a1, a1, a3
-	addi	a1, a1, -2
+	sub	a1, a1, a3
+	addiw	a1, a1, -2
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret

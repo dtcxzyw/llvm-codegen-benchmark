@@ -7,19 +7,17 @@ func00000000000008c1:
 	ret
 
 func00000000000008ca:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	addiw	a1, a1, -31
 	slti	a0, a0, 7
-	addi	a1, a1, -31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func000000000000088a:
-	sext.w	a1, a1
 	srliw	a0, a0, 24
+	addiw	a1, a1, -31
 	sltiu	a0, a0, 7
-	addi	a1, a1, -31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -41,19 +39,17 @@ func0000000000000a81:
 	ret
 
 func0000000000000a8a:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	addiw	a1, a1, -31
 	sltiu	a0, a0, 7
-	addi	a1, a1, -31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func00000000000008c6:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	addiw	a1, a1, -31
 	slti	a0, a0, 6
-	addi	a1, a1, -31
 	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -69,10 +65,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000a86:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	addiw	a1, a1, -31
 	sltiu	a0, a0, 7
-	addi	a1, a1, -31
 	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -87,20 +82,18 @@ func00000000000008c4:
 	ret
 
 func0000000000000886:
-	sext.w	a1, a1
 	srliw	a0, a0, 24
+	addiw	a1, a1, -31
 	sltiu	a0, a0, 7
-	addi	a1, a1, -31
 	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000826:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	addiw	a1, a1, -31
 	snez	a0, a0
-	addi	a1, a1, -31
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

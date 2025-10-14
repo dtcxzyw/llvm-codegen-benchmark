@@ -1,8 +1,7 @@
 func000000000000018c:
-	sext.w	a1, a1
 	sext.w	a2, a0
+	addiw	a1, a1, -123
 	snez	a2, a2
-	addi	a1, a1, -123
 	snez	a1, a1
 	and	a1, a1, a2
 	beqz	a1, .LBB0_2
@@ -33,8 +32,7 @@ func000000000000002c:
 
 func0000000000000034:
 	sext.w	a1, a1
-	sext.w	a2, a0
-	addi	a2, a2, -12
+	addiw	a2, a0, -12
 	seqz	a2, a2
 	sltiu	a1, a1, 12
 	and	a1, a1, a2

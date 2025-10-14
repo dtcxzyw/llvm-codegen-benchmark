@@ -39,10 +39,9 @@ func000000000000002a:
 	slli	a0, a0, 56
 	andi	a1, a1, -2
 	srai	a0, a0, 56
-	sext.w	a1, a1
-	addi	a1, a1, -4
-	srli	a0, a0, 63
+	addiw	a1, a1, -4
 	seqz	a1, a1
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

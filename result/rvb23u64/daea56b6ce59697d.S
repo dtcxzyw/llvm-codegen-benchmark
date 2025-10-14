@@ -4,8 +4,8 @@ func00000000000001a1:
 	czero.nez	a2, a3, a2
 	sub	a0, a0, a1
 	sub	a0, a0, a2
-	addiw	a0, a0, -284
-	addi	a0, a0, -1
+	addi	a0, a0, -284
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

@@ -33,11 +33,10 @@ func00000000000000e1:
 	ret
 
 func0000000000000187:
-	sext.w	a2, a2
+	addiw	a2, a2, -2
 	andi	a0, a0, 1
-	addi	a2, a2, -2
-	slli	a0, a0, 3
 	seqz	a2, a2
+	slli	a0, a0, 3
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	addw	a0, a0, a2

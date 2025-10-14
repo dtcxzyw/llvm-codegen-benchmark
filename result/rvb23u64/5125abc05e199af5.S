@@ -1,13 +1,12 @@
 func0000000000000021:
-	sext.w	a0, a0
 	andi	a1, a1, 1
-	lui	a2, 512
+	addiw	a2, a0, -2
+	lui	a3, 512
 	slli	a1, a1, 36
-	addi	a3, a0, -2
-	czero.eqz	a1, a1, a3
-	czero.nez	a2, a2, a3
-	or	a1, a1, a2
-	addi	a0, a0, -1
+	czero.nez	a3, a3, a2
+	czero.eqz	a1, a1, a2
+	or	a1, a1, a3
+	addiw	a0, a0, -1
 	addi	a1, a1, -512
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 512

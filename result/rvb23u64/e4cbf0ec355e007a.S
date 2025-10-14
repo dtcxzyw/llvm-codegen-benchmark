@@ -17,10 +17,9 @@ func000000000000008c:
 	ret
 
 func0000000000000101:
-	sext.w	a1, a1
 	zext.h	a2, a2
+	addiw	a1, a1, -7
 	sltiu	a2, a2, 8
-	addi	a1, a1, -7
 	andn	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

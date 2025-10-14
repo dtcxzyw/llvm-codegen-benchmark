@@ -12,11 +12,10 @@ func0000000000000038:
 
 func0000000000000026:
 	sext.w	a1, a1
-	sext.w	a3, a2
+	addiw	a3, a2, 1
 	lui	a4, 524288
-	addi	a3, a3, 1
-	addi	a4, a4, -1
 	czero.eqz	a2, a2, a3
+	addi	a4, a4, -1
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3
 	sext.w	a2, a2

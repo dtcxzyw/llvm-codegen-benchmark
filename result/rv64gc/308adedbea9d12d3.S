@@ -8,8 +8,8 @@ func0000000000000030:
 
 func0000000000000142:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -4
+	add	a0, a0, a1
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 
@@ -61,8 +61,8 @@ func00000000000003e8:
 
 func00000000000003d8:
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	snez	a0, a0
 	ret
 

@@ -1,7 +1,6 @@
 func000000000000005d:
-	sext.w	a2, a2
+	addiw	a2, a2, -3
 	slli	a1, a1, 22
-	addi	a2, a2, -3
 	snez	a2, a2
 	slli	a2, a2, 22
 	add	a0, a0, a1
@@ -9,9 +8,8 @@ func000000000000005d:
 	ret
 
 func000000000000004c:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	slli	a1, a1, 2
-	addi	a2, a2, -1
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 12

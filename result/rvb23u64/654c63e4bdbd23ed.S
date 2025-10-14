@@ -1,7 +1,6 @@
 func0000000000000021:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	li	a2, -1
-	addi	a1, a1, -1
 	slli.uw	a2, a2, 31
 	czero.eqz	a1, a2, a1
 	bseti	a2, zero, 31

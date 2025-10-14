@@ -1,8 +1,7 @@
 func000000000000002c:
 	zext.b	a2, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -256
+	addiw	a1, a1, -256
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -50,8 +49,7 @@ func0000000000000074:
 func000000000000006c:
 	zext.b	a2, a2
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -13
+	addiw	a1, a1, -13
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

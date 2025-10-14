@@ -2,8 +2,7 @@ func0000000000000181:
 	andi	a1, a0, 7
 	andi	a0, a0, -8
 	snez	a1, a1
-	sext.w	a0, a0
-	addi	a0, a0, -128
+	addiw	a0, a0, -128
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

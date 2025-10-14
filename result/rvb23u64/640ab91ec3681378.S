@@ -45,8 +45,7 @@ func0000000000000034:
 	ret
 
 func0000000000000028:
-	sext.w	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	seqz	a2, a2
 	and	a1, a1, a2
 	sltiu	a0, a0, 3
@@ -54,9 +53,8 @@ func0000000000000028:
 	ret
 
 func0000000000000026:
-	sext.w	a2, a2
+	addiw	a2, a2, 1
 	srli	a0, a0, 63
-	addi	a2, a2, 1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

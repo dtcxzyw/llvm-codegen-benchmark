@@ -49,20 +49,18 @@ func0000000000000504:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	addiw	a0, a0, -3
 	addi	a1, a1, -5
-	addi	a0, a0, -3
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000424:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	addiw	a0, a0, -2
 	addi	a1, a1, -59
-	addi	a0, a0, -2
 	sltiu	a1, a1, -4
 	seqz	a0, a0
 	and	a0, a0, a1

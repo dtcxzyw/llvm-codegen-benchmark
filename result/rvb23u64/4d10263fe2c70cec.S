@@ -88,10 +88,9 @@ func0000000000000166:
 	ret
 
 func0000000000000161:
-	sext.w	a1, a1
 	slli	a2, a2, 4
+	addiw	a1, a1, -2
 	add	a2, a2, a0
-	addi	a1, a1, -2
 	addi	a2, a2, 16
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

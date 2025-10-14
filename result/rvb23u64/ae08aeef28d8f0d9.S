@@ -24,12 +24,11 @@ func000000000000058c:
 
 func000000000000302c:
 	zext.b	a0, a0
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -28
 	snez	a2, a2
-	addi	a1, a1, -28
-	snez	a0, a0
 	seqz	a1, a1
+	snez	a0, a0
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -49,10 +48,9 @@ func0000000000000421:
 func0000000000001024:
 	zext.b	a0, a0
 	zext.b	a2, a2
-	sext.w	a1, a1
-	addi	a1, a1, -17
-	maxu	a0, a2, a0
+	addiw	a1, a1, -17
 	seqz	a1, a1
+	maxu	a0, a2, a0
 	sltiu	a0, a0, 22
 	and	a0, a0, a1
 	ret
@@ -81,15 +79,14 @@ func000000000000042c:
 
 func0000000000000584:
 	zext.b	a0, a0
-	sext.w	a1, a1
 	zext.b	a2, a2
+	addiw	a1, a1, -2
 	addi	a2, a2, -69
-	addi	a1, a1, -2
-	seqz	a2, a2
 	snez	a1, a1
-	and	a1, a1, a2
 	sltiu	a0, a0, 10
+	seqz	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000003181:

@@ -6,10 +6,9 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
-	sext.w	a1, a1
 	srliw	a2, a2, 31
+	addiw	a1, a1, -12
 	xori	a2, a2, 1
-	addi	a1, a1, -12
 	snez	a1, a1
 	or	a1, a1, a2
 	and	a0, a0, a1

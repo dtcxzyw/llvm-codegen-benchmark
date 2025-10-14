@@ -5,15 +5,13 @@ func0000000000000041:
 	ret
 
 func000000000000004a:
-	sext.w	a1, a1
-	addi	a1, a1, -31
+	addiw	a1, a1, -31
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000046:
-	sext.w	a1, a1
-	addi	a1, a1, -31
+	addiw	a1, a1, -31
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

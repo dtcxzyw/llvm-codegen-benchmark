@@ -1,8 +1,7 @@
 func0000000000000028:
 	zext.h	a0, a0
 	zext.h	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -100
+	addiw	a2, a2, -100
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2

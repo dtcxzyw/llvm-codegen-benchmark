@@ -45,8 +45,8 @@ func00000000000000a1:
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	add	a0, a0, a1
-	subw	a0, a0, a2
-	addi	a0, a0, -24
+	sub	a0, a0, a2
+	addiw	a0, a0, -24
 	seqz	a0, a0
 	ret
 

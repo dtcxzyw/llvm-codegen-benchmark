@@ -14,10 +14,9 @@ func0000000000000026:
 
 func0000000000000021:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	addiw	a1, a1, -3
 	addi	a2, a2, 1
-	addi	a1, a1, -3
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2
@@ -27,10 +26,9 @@ func0000000000000021:
 
 func0000000000000034:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	addiw	a1, a1, -3
 	addi	a2, a2, 1
-	addi	a1, a1, -3
 	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

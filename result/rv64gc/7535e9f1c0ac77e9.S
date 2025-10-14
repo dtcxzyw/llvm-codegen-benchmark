@@ -65,10 +65,9 @@ func000000000000002a:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	sltu	a1, a2, a1
+	addiw	a0, a0, -2
 	not	a1, a1
-	addi	a0, a0, -2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

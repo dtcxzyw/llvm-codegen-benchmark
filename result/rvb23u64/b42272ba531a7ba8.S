@@ -1,8 +1,7 @@
 func0000000000000302:
 	and	a1, a1, a2
 	not	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -24
+	addiw	a1, a1, -24
 	snez	a1, a1
 	bexti	a0, a0, 14
 	or	a0, a0, a1

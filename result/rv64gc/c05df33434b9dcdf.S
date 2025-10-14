@@ -33,8 +33,8 @@ func000000000000006c:
 func0000000000000061:
 	slli	a1, a1, 36
 	srli	a1, a1, 56
-	addw	a0, a0, a1
-	addi	a0, a0, -6
+	add	a0, a0, a1
+	addiw	a0, a0, -6
 	seqz	a0, a0
 	ret
 

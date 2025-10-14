@@ -22,9 +22,8 @@ func000000000000004a:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	bset	a1, zero, a1
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	addi	a1, a1, -16
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 16
@@ -46,10 +45,9 @@ func0000000000000061:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	li	a2, -1
 	sllw	a1, a2, a1
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

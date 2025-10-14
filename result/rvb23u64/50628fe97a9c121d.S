@@ -11,10 +11,9 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	not	a1, a1
+	addiw	a0, a0, -11
 	bexti	a1, a1, 11
-	addi	a0, a0, -11
 	snez	a0, a0
 	or	a0, a0, a1
 	lui	a1, 1048569

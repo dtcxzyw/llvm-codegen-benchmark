@@ -113,14 +113,14 @@ func000000000000010c:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	addw	a0, a0, a1
-	addi	a0, a0, -31
+	add	a0, a0, a1
+	addiw	a0, a0, -31
 	snez	a0, a0
 	ret
 .LBB2_2:
 	li	a1, 32
-	addw	a0, a0, a1
-	addi	a0, a0, -31
+	add	a0, a0, a1
+	addiw	a0, a0, -31
 	snez	a0, a0
 	ret
 

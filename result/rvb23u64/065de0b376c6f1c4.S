@@ -34,11 +34,10 @@ func000000000000002c:
 func0000000000000021:
 	lui	a3, 24576
 	and	a1, a1, a3
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
-	binvi	a1, a1, 26
 	and	a0, a0, a2
+	binvi	a1, a1, 26
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

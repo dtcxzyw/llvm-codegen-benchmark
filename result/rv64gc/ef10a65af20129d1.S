@@ -17,8 +17,7 @@ func000000000000024a:
 func0000000000000201:
 	sub	a0, a0, a1
 	srli	a0, a0, 5
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

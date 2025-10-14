@@ -21,8 +21,7 @@ func0000000000000021:
 	slli	a1, a1, 61
 	srli	a1, a1, 55
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -73
+	addiw	a0, a0, -73
 	seqz	a0, a0
 	ret
 
@@ -47,8 +46,7 @@ func0000000000000001:
 	slli	a1, a1, 1
 	andi	a1, a1, 2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -32
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
@@ -90,8 +88,7 @@ func00000000000000a1:
 	slli	a1, a1, 1
 	andi	a1, a1, 2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 
@@ -125,8 +122,7 @@ func000000000000002c:
 	slli	a1, a1, 3
 	andi	a1, a1, 48
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	snez	a0, a0
 	ret
 
@@ -134,8 +130,7 @@ func00000000000000c1:
 	slli	a1, a1, 2
 	andi	a1, a1, 128
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -127
+	addiw	a0, a0, -127
 	seqz	a0, a0
 	ret
 

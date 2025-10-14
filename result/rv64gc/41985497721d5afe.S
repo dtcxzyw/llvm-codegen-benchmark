@@ -17,8 +17,7 @@ func0000000000000004:
 
 func0000000000000021:
 	andi	a3, a0, 1
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a0, a2
 	beqz	a3, .LBB1_2
 	li	a1, 1

@@ -19,8 +19,8 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	mulw	a0, a0, a1
-	addi	a0, a0, 12
+	mul	a0, a0, a1
+	addiw	a0, a0, 12
 	seqz	a0, a0
 	ret
 
@@ -40,8 +40,8 @@ func000000000000000a:
 	ret
 
 func00000000000000ac:
-	mulw	a0, a0, a1
-	addi	a0, a0, 2
+	mul	a0, a0, a1
+	addiw	a0, a0, 2
 	snez	a0, a0
 	ret
 
@@ -69,14 +69,14 @@ func00000000000000a8:
 	ret
 
 func0000000000000021:
-	mulw	a0, a0, a1
-	addi	a0, a0, 2
+	mul	a0, a0, a1
+	addiw	a0, a0, 2
 	seqz	a0, a0
 	ret
 
 func00000000000000a1:
-	mulw	a0, a0, a1
-	addi	a0, a0, 16
+	mul	a0, a0, a1
+	addiw	a0, a0, 16
 	seqz	a0, a0
 	ret
 

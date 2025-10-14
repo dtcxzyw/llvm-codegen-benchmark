@@ -6,16 +6,14 @@ func0000000000000281:
 	ret
 
 func0000000000000041:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	slliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000061:
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a1, a1
 	slliw	a0, a0, 1
 	or	a0, a0, a1

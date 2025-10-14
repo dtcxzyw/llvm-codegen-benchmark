@@ -69,13 +69,12 @@ func0000000000000298:
 	ret
 
 func0000000000000182:
-	sext.w	a1, a1
 	lui	a3, 24
+	addiw	a1, a1, -1
 	addi	a3, a3, 1697
-	addi	a1, a1, -1
-	slt	a2, a2, a3
-	or	a0, a0, a2
 	seqz	a1, a1
+	slt	a2, a2, a3
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

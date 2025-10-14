@@ -17,8 +17,7 @@ func0000000000000021:
 
 func0000000000000141:
 	sext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	seqz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

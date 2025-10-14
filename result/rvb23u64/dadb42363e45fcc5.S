@@ -12,8 +12,8 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	subw	a2, a2, a1
-	addi	a2, a2, -1
+	sub	a2, a2, a1
+	addiw	a2, a2, -1
 	seqz	a1, a2
 	and	a0, a0, a1
 	ret
@@ -25,8 +25,8 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	subw	a2, a2, a1
-	addi	a2, a2, -6
+	sub	a2, a2, a1
+	addiw	a2, a2, -6
 	seqz	a1, a2
 	and	a0, a0, a1
 	ret

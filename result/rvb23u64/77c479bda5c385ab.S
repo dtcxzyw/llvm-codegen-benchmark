@@ -7,9 +7,8 @@ func0000000000000185:
 	ret
 
 func0000000000000025:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	andi	a1, a1, 1
-	addi	a2, a2, -1
 	seqz	a2, a2
 	sub	a0, a0, a1
 	addw	a0, a0, a2

@@ -21,8 +21,8 @@ func00000000000000ca:
 	ret
 
 func0000000000000026:
-	addiw	a1, a1, -2
-	addi	a2, a1, 1
+	addi	a1, a1, -2
+	addiw	a2, a1, 1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -30,8 +30,8 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	addiw	a1, a1, -2
-	addi	a2, a1, 1
+	addi	a1, a1, -2
+	addiw	a2, a1, 1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

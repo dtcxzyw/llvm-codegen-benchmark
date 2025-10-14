@@ -72,8 +72,8 @@ func0000000000000004:
 
 func000000000000000c:
 	andi	a1, a1, 1
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	sub	a0, a0, a1
+	addiw	a0, a0, -4
 	snez	a0, a0
 	ret
 

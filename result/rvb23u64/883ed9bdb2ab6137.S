@@ -1,6 +1,6 @@
 func0000000000000b02:
-	mulw	a1, a1, a2
-	addi	a1, a1, -64
+	mul	a1, a1, a2
+	addiw	a1, a1, -64
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

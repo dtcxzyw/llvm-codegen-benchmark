@@ -14,8 +14,7 @@ func0000000000000146:
 func000000000000002c:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	seqz	a0, a2
 	ret
 .LBB1_2:
@@ -37,8 +36,7 @@ func0000000000000084:
 func0000000000000181:
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
-	sext.w	a2, a2
-	addi	a0, a2, -768
+	addiw	a0, a2, -768
 	snez	a0, a0
 	ret
 .LBB3_2:
@@ -49,8 +47,7 @@ func0000000000000181:
 func0000000000000024:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
-	sext.w	a2, a2
-	addi	a2, a2, -6
+	addiw	a2, a2, -6
 	seqz	a0, a2
 	ret
 .LBB4_2:
@@ -97,13 +94,11 @@ func000000000000014a:
 func0000000000000021:
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
-	sext.w	a2, a2
-	addi	a2, a2, -3
+	addiw	a2, a2, -3
 	seqz	a0, a2
 	ret
 .LBB8_2:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a0, a1
 	ret
 

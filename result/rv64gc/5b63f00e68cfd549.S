@@ -36,8 +36,8 @@ func0000000000000121:
 	blt	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	subw	a0, a0, a1
-	addi	a0, a0, -3
+	sub	a0, a0, a1
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 

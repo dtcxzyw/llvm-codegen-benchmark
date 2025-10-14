@@ -20,11 +20,10 @@ func000000000000002c:
 
 func0000000000000026:
 	sext.b	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -237
-	slti	a1, a1, -64
+	addiw	a2, a2, -237
 	seqz	a2, a2
-	and	a0, a0, a1
 	and	a0, a0, a2
+	slti	a1, a1, -64
+	and	a0, a0, a1
 	ret
 

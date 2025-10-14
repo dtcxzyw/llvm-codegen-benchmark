@@ -7,8 +7,7 @@ func000000000000000c:
 
 func000000000000002c:
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, -256
+	addiw	a1, a1, -256
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

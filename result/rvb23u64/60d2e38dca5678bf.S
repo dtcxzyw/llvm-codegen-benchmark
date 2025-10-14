@@ -81,11 +81,10 @@ func000000000000056a:
 	ret
 
 func00000000000000a1:
-	sext.w	a2, a2
-	addi	a2, a2, 1
+	addiw	a2, a2, 1
 	czero.eqz	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -16
+	add	a0, a0, a1
+	addiw	a0, a0, -16
 	seqz	a0, a0
 	ret
 
@@ -103,8 +102,7 @@ func000000000000052a:
 	ret
 
 func00000000000000aa:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	addi	a1, a1, -1
 	czero.eqz	a1, a1, a2
 	add	a0, a0, a1

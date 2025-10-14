@@ -1,6 +1,5 @@
 func0000000000000005:
-	sext.w	a2, a1
-	addi	a2, a2, -105
+	addiw	a2, a1, -105
 	seqz	a2, a2
 	and	a0, a0, a2
 	bnez	a0, .LBB0_2

@@ -20,12 +20,11 @@ func0000000000000630:
 	ret
 
 func0000000000000604:
-	sext.w	a1, a1
 	slli	a2, a2, 48
+	addiw	a1, a1, 1
 	snez	a2, a2
-	addi	a1, a1, 1
 	seqz	a1, a1
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -39,12 +38,11 @@ func0000000000000204:
 	ret
 
 func0000000000000230:
-	sext.w	a1, a1
 	zext.h	a2, a2
+	addiw	a1, a1, -1
 	sltiu	a2, a2, 7
-	addi	a1, a1, -1
 	snez	a1, a1
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

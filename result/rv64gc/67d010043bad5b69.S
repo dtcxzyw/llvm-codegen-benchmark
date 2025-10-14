@@ -10,9 +10,9 @@ func000000000000048c:
 func000000000000058c:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	sext.w	a1, a1
-	xor	a0, a0, a1
-	addi	a1, a1, -1
+	sext.w	a2, a1
+	addiw	a1, a1, -1
+	xor	a0, a0, a2
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1

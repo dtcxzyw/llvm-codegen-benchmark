@@ -38,10 +38,9 @@ func0000000000000318:
 	ret
 
 func0000000000000c2c:
-	sext.w	a0, a0
 	andi	a1, a1, 6
+	addiw	a0, a0, -37
 	addi	a1, a1, -2
-	addi	a0, a0, -37
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -66,10 +65,9 @@ func000000000000002c:
 	ret
 
 func0000000000000c21:
-	sext.w	a0, a0
 	andi	a1, a1, 7
+	addiw	a0, a0, -7
 	addi	a1, a1, -7
-	addi	a0, a0, -7
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

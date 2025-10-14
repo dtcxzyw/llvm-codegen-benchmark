@@ -7,10 +7,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	sext.w	a1, a1
 	xori	a2, a2, 1
+	addiw	a1, a1, -42
 	or	a0, a0, a2
-	addi	a1, a1, -42
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

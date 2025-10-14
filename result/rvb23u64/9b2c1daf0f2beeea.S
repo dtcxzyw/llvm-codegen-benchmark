@@ -10,8 +10,7 @@ func0000000000000086:
 func0000000000000001:
 	srli	a0, a0, 3
 	li	a1, -2
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	czero.eqz	a0, a1, a0
 	lui	a1, 1048573
 	addi	a1, a1, -627

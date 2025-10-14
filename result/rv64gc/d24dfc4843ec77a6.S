@@ -12,17 +12,15 @@ func00000000000000c8:
 	ret
 
 func00000000000000cd:
-	sext.w	a0, a0
+	addiw	a0, a0, -3
 	flt.s	a1, fa0, fa1
-	addi	a0, a0, -3
 	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
-	addi	a0, a0, -64
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	flt.s	a1, fa1, fa0
 	and	a0, a0, a1
@@ -102,8 +100,7 @@ func00000000000000aa:
 	ret
 
 func0000000000000012:
-	sext.w	a0, a0
-	addi	a0, a0, -2048
+	addiw	a0, a0, -2048
 	seqz	a0, a0
 	flt.s	a1, fa0, fa1
 	and	a0, a0, a1

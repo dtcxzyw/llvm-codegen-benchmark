@@ -1,7 +1,6 @@
 func0000000000000003:
-	sext.w	a0, a0
 	andi	a1, a1, 15
-	addi	a0, a0, -64
+	addiw	a0, a0, -64
 	czero.eqz	a0, a1, a0
 	ret
 

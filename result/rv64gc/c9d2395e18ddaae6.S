@@ -60,11 +60,10 @@ func0000000000000025:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a0, a0, -3
 	slt	a1, a1, a2
-	addi	a0, a0, -3
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

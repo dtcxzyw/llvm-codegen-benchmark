@@ -22,8 +22,7 @@ func000000000000018f:
 
 func0000000000000180:
 	andi	a1, a1, -256
-	sext.w	a1, a1
-	addi	a1, a1, -256
+	addiw	a1, a1, -256
 	snez	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 3

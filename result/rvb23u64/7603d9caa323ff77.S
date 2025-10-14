@@ -14,10 +14,10 @@ func0000000000003314:
 	ret
 
 func0000000000002302:
-	sext.w	a0, a0
-	sltiu	a1, a0, 32
-	addi	a2, a0, -9
-	addi	a0, a0, -127
+	sext.w	a1, a0
+	addiw	a2, a0, -9
+	addiw	a0, a0, -127
+	sltiu	a1, a1, 32
 	snez	a2, a2
 	and	a1, a1, a2
 	seqz	a0, a0

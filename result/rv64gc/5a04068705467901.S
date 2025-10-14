@@ -1,9 +1,8 @@
 func000000000000001f:
-	sext.w	a2, a2
+	addiw	a2, a2, -63
 	andi	a1, a1, 1
-	addi	a2, a2, -63
-	slli	a1, a1, 3
 	seqz	a2, a2
+	slli	a1, a1, 3
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -30,12 +29,11 @@ func0000000000000010:
 
 func000000000000001b:
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -2
-	addi	a1, a1, -1
+	addiw	a2, a2, -2
 	seqz	a2, a2
-	andi	a1, a1, 64
+	addi	a1, a1, -1
 	addi	a2, a2, -1
+	andi	a1, a1, 64
 	andi	a2, a2, -64
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -43,12 +41,11 @@ func000000000000001b:
 
 func000000000000001a:
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -2
-	addi	a1, a1, -1
+	addiw	a2, a2, -2
 	seqz	a2, a2
-	andi	a1, a1, -64
+	addi	a1, a1, -1
 	addi	a2, a2, -1
+	andi	a1, a1, -64
 	andi	a2, a2, -64
 	add	a0, a0, a1
 	add	a0, a0, a2

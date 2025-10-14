@@ -6,8 +6,7 @@ func0000000000000002:
 
 func0000000000000003:
 	andi	a2, a2, -2
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	addi	a1, a1, -2
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 2

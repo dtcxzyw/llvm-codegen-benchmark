@@ -29,8 +29,7 @@ func0000000000000081:
 
 func000000000000042a:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, -2
@@ -40,8 +39,7 @@ func000000000000042a:
 
 func0000000000000421:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, -2

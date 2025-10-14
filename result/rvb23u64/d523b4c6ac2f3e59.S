@@ -10,8 +10,8 @@ func0000000000000181:
 	li	a3, 8
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -16
+	add	a0, a0, a1
+	addiw	a0, a0, -16
 	seqz	a0, a0
 	ret
 

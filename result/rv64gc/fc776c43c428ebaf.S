@@ -18,12 +18,11 @@ func0000000000000144:
 	ret
 
 func0000000000000024:
-	sext.w	a1, a1
 	lui	a3, 1048575
+	addiw	a1, a1, -987
 	addi	a3, a3, -224
-	addi	a1, a1, -987
-	addw	a2, a2, a3
 	seqz	a1, a1
+	addw	a2, a2, a3
 	sltiu	a2, a2, 10
 	and	a0, a0, a1
 	and	a0, a0, a2

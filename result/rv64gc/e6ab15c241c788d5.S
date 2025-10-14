@@ -10,8 +10,7 @@ func000000000000018c:
 func0000000000000181:
 	sext.w	a0, a0
 	andi	a1, a1, -8
-	sext.w	a1, a1
-	addi	a1, a1, -128
+	addiw	a1, a1, -128
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -20,8 +19,7 @@ func0000000000000181:
 func000000000000008c:
 	sext.w	a0, a0
 	andi	a1, a1, -64
-	sext.w	a1, a1
-	addi	a1, a1, -192
+	addiw	a1, a1, -192
 	snez	a1, a1
 	sltiu	a0, a0, 15
 	and	a0, a0, a1

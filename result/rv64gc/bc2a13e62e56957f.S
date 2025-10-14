@@ -7,8 +7,8 @@ func0000000000000c78:
 
 func0000000000000c61:
 	snez	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -57,8 +57,8 @@ func0000000000000178:
 
 func0000000000000c6c:
 	snez	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	snez	a0, a0
 	ret
 

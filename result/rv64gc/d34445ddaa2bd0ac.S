@@ -4,8 +4,7 @@ func0000000000000c21:
 	beq	a1, a3, .LBB0_2
 	mv	a0, a2
 .LBB0_2:
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 
@@ -33,8 +32,7 @@ func0000000000000021:
 	beq	a1, a3, .LBB3_2
 	mv	a0, a2
 .LBB3_2:
-	sext.w	a0, a0
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

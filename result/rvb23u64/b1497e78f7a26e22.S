@@ -1,8 +1,7 @@
 func0000000000000842:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a2, a1, 5
-	addi	a1, a1, -1
+	addiw	a2, a1, 5
+	addiw	a1, a1, -1
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
@@ -12,8 +11,8 @@ func0000000000000842:
 
 func0000000000000858:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a2, a1, -255
+	sext.w	a2, a1
+	addiw	a1, a1, -255
 	seqz	a1, a1
 	seqz	a2, a2
 	or	a1, a1, a2

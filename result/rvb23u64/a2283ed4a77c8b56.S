@@ -35,8 +35,8 @@ func0000000000000058:
 	ret
 
 func0000000000000042:
-	addw	a0, a0, a1
-	addi	a0, a0, -8
+	add	a0, a0, a1
+	addiw	a0, a0, -8
 	seqz	a0, a0
 	ret
 

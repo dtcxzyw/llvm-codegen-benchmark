@@ -9,8 +9,7 @@ func00000000000003e4:
 	ret
 
 func00000000000001e1:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	li	a2, 12
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

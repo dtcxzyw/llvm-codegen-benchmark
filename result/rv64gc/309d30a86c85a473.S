@@ -18,8 +18,7 @@ func0000000000000003:
 func0000000000000002:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	snez	a1, a2
 	addi	a1, a1, -1
 	andi	a1, a1, 3

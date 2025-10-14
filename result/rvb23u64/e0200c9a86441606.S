@@ -10,8 +10,7 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	sext.w	a3, a1
-	addi	a3, a3, -16
+	addiw	a3, a1, -16
 	seqz	a3, a3
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -22,8 +21,7 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sext.w	a3, a1
-	addi	a3, a3, -1
+	addiw	a3, a1, -1
 	seqz	a3, a3
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -34,8 +32,7 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	sext.w	a3, a1
-	addi	a3, a3, 1
+	addiw	a3, a1, 1
 	seqz	a3, a3
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -45,8 +42,7 @@ func0000000000000026:
 	ret
 
 func000000000000002c:
-	sext.w	a3, a1
-	addi	a3, a3, 2
+	addiw	a3, a1, 2
 	seqz	a3, a3
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -57,8 +53,7 @@ func000000000000002c:
 	ret
 
 func0000000000000038:
-	sext.w	a3, a1
-	addi	a3, a3, -1
+	addiw	a3, a1, -1
 	seqz	a3, a3
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2

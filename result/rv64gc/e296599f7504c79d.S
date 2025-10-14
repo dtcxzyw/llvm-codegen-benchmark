@@ -18,9 +18,8 @@ func000000000000000b:
 	ret
 
 func000000000000000c:
-	sext.w	a2, a2
+	addiw	a2, a2, -16
 	sext.w	a1, a1
-	addi	a2, a2, -16
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 6

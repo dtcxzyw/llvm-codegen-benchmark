@@ -42,20 +42,18 @@ func000000000000002a:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	addiw	a0, a0, -240
 	addi	a1, a1, -3
-	addi	a0, a0, -240
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000028:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	addiw	a0, a0, -240
 	sltiu	a1, a1, 4
-	addi	a0, a0, -240
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

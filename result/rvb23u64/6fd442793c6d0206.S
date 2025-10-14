@@ -1,6 +1,5 @@
 func0000000000000002:
-	sext.w	a1, a1
-	addi	a1, a1, -42
+	addiw	a1, a1, -42
 	seqz	a1, a1
 	slli	a1, a1, 9
 	or	a0, a0, a1
@@ -8,8 +7,7 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	slli	a1, a1, 1
 	or	a0, a0, a1
@@ -24,8 +22,7 @@ func0000000000000010:
 	ret
 
 func0000000000000019:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	xori	a1, a1, 5
 	or	a0, a0, a1

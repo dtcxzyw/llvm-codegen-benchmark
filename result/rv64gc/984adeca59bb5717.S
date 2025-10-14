@@ -1,6 +1,5 @@
 func0000000000000180:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
@@ -57,40 +56,35 @@ func0000000000000140:
 	ret
 
 func0000000000000020:
-	sext.w	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	seqz	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
 func0000000000000029:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
 
 func0000000000000023:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
 
 func0000000000000027:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -1

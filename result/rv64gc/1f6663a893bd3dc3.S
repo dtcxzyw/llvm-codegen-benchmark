@@ -12,8 +12,7 @@ func00000000000000c3:
 
 func0000000000000011:
 	andi	a2, a2, -2
-	sext.w	a2, a2
-	addi	a2, a2, -182
+	addiw	a2, a2, -182
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1
@@ -22,8 +21,7 @@ func0000000000000011:
 
 func0000000000000010:
 	andi	a2, a2, -2
-	sext.w	a2, a2
-	addi	a2, a2, -182
+	addiw	a2, a2, -182
 	seqz	a2, a2
 	or	a1, a1, a2
 	andi	a1, a1, 1

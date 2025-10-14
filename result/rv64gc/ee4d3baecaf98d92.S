@@ -59,8 +59,7 @@ func00000000000000c1:
 	bgez	a3, .LBB6_2
 	sub	a0, a1, a2
 .LBB6_2:
-	sext.w	a0, a0
-	addi	a0, a0, -32
+	addiw	a0, a0, -32
 	seqz	a0, a0
 	ret
 
@@ -78,8 +77,7 @@ func00000000000000cc:
 	bgez	a3, .LBB8_2
 	sub	a0, a1, a2
 .LBB8_2:
-	sext.w	a0, a0
-	addi	a0, a0, -32
+	addiw	a0, a0, -32
 	snez	a0, a0
 	ret
 

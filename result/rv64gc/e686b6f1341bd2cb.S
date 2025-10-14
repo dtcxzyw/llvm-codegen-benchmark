@@ -1,10 +1,9 @@
 func0000000000000084:
 	sext.w	a1, a1
-	sext.w	a2, a2
+	addiw	a2, a2, -256
 	lui	a3, 16
-	addi	a2, a2, -256
-	addi	a3, a3, -512
 	seqz	a2, a2
+	addi	a3, a3, -512
 	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a2
@@ -41,13 +40,12 @@ func0000000000000630:
 	ret
 
 func0000000000000204:
-	sext.w	a2, a2
+	addiw	a2, a2, -133
 	srliw	a1, a1, 5
-	addi	a2, a2, -133
-	sltiu	a1, a1, 1723
 	seqz	a2, a2
+	sltiu	a1, a1, 1723
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000420:

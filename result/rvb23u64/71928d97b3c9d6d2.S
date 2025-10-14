@@ -23,8 +23,7 @@ func0000000000000061:
 	li	a2, -128
 	sub	a2, a2, a0
 	or	a1, a1, a2
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a0, a1
 	ret
 

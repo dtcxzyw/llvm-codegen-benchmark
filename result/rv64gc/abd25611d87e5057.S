@@ -24,16 +24,14 @@ func0000000000000021:
 	beqz	a4, .LBB1_3
 	bne	a2, a3, .LBB1_4
 .LBB1_2:
-	sext.w	a1, a1
-	addi	a0, a1, 55
+	addiw	a0, a1, 55
 	seqz	a0, a0
 	ret
 .LBB1_3:
 	li	a1, -55
 	beq	a2, a3, .LBB1_2
 .LBB1_4:
-	sext.w	a1, a0
-	addi	a0, a1, 55
+	addiw	a0, a0, 55
 	seqz	a0, a0
 	ret
 
@@ -68,8 +66,7 @@ func00000000000000c1:
 .LBB3_3:
 	mv	a2, a0
 .LBB3_4:
-	sext.w	a2, a2
-	addi	a2, a2, -11
+	addiw	a2, a2, -11
 	seqz	a0, a2
 	ret
 

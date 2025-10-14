@@ -1,8 +1,7 @@
 func0000000000000028:
 	lui	a3, 16
-	sext.w	a2, a2
+	addiw	a2, a2, -100
 	addi	a3, a3, -1
-	addi	a2, a2, -100
 	and	a0, a0, a3
 	and	a1, a1, a3
 	seqz	a2, a2

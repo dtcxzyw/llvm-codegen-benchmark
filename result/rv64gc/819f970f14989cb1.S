@@ -25,14 +25,14 @@ func00000000000000a1:
 	li	a2, 1
 	beq	a1, a2, .LBB2_2
 	li	a1, -16
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 .LBB2_2:
 	li	a1, -4
-	addw	a0, a0, a1
-	addi	a0, a0, -1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

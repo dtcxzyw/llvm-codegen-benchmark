@@ -1,7 +1,6 @@
 func00000000000000c6:
-	sext.w	a2, a0
+	addiw	a2, a0, -19
 	addi	a0, a0, -16
-	addi	a2, a2, -19
 	czero.eqz	a0, a0, a2
 	addiw	a0, a0, 16
 	sext.w	a1, a1
@@ -19,9 +18,8 @@ func00000000000000e1:
 	ret
 
 func00000000000000ca:
-	sext.w	a2, a0
+	addiw	a2, a0, -71
 	addi	a0, a0, -70
-	addi	a2, a2, -71
 	czero.eqz	a0, a0, a2
 	addiw	a0, a0, 70
 	sext.w	a1, a1
@@ -29,8 +27,7 @@ func00000000000000ca:
 	ret
 
 func000000000000008a:
-	sext.w	a2, a0
-	addi	a2, a2, 1
+	addiw	a2, a0, 1
 	czero.eqz	a0, a0, a2
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -38,8 +35,7 @@ func000000000000008a:
 	ret
 
 func0000000000000094:
-	sext.w	a2, a0
-	addi	a2, a2, 1
+	addiw	a2, a0, 1
 	czero.eqz	a0, a0, a2
 	sext.w	a0, a0
 	sext.w	a1, a1

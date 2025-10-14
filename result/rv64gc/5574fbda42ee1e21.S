@@ -55,9 +55,8 @@ func000000000000002f:
 	ret
 
 func000000000000003f:
-	sext.w	a2, a2
+	addiw	a2, a2, -33
 	sext.w	a1, a1
-	addi	a2, a2, -33
 	seqz	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 3

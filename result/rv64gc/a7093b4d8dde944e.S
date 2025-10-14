@@ -17,8 +17,8 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	mulw	a1, a1, a2
-	addi	a1, a1, -8
+	mul	a1, a1, a2
+	addiw	a1, a1, -8
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func000000000000002a:
 	ret
 
 func000000000000002c:
-	mulw	a1, a1, a2
-	addi	a1, a1, -64
+	mul	a1, a1, a2
+	addiw	a1, a1, -64
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

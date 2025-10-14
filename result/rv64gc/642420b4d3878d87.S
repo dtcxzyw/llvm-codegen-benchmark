@@ -6,8 +6,8 @@ func0000000000000126:
 
 func0000000000000121:
 	srli	a1, a1, 12
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -41,8 +41,8 @@ func000000000000010a:
 
 func00000000000001a1:
 	srli	a1, a1, 6
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -80,8 +80,8 @@ func0000000000000106:
 
 func0000000000000201:
 	srli	a1, a1, 3
-	subw	a1, a1, a0
-	addi	a1, a1, -1
+	sub	a1, a1, a0
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -99,8 +99,8 @@ func000000000000000a:
 
 func0000000000000221:
 	srli	a1, a1, 1
-	subw	a1, a1, a0
-	addi	a1, a1, -6
+	sub	a1, a1, a0
+	addiw	a1, a1, -6
 	seqz	a0, a1
 	ret
 

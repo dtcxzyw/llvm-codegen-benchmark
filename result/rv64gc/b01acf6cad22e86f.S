@@ -8,8 +8,7 @@ func0000000000000141:
 
 func000000000000018c:
 	andi	a1, a1, -2
-	sext.w	a1, a1
-	addi	a1, a1, -178
+	addiw	a1, a1, -178
 	snez	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1

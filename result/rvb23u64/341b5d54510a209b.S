@@ -37,8 +37,8 @@ func0000000000000386:
 func0000000000000381:
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, -1
+	sub	a0, a0, a1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

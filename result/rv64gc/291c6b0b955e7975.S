@@ -14,8 +14,7 @@ func00000000000000c1:
 	blt	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 
@@ -45,8 +44,7 @@ func0000000000000081:
 	bltu	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 
@@ -66,8 +64,7 @@ func0000000000000141:
 	blt	a3, a2, .LBB6_2
 	mv	a0, a1
 .LBB6_2:
-	sext.w	a0, a0
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 

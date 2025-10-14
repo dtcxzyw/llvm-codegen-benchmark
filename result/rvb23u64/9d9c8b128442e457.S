@@ -1,8 +1,7 @@
 func0000000000000042:
-	sext.w	a1, a0
-	andi	a2, a0, 13
-	addi	a2, a2, -4
-	addi	a1, a1, -7
+	andi	a1, a0, 13
+	addiw	a2, a0, -7
+	addi	a1, a1, -4
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2

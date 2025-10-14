@@ -3,8 +3,8 @@ func0000000000000881:
 	slli	a2, a0, 1
 	slli	a0, a0, 3
 	add	a0, a0, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -47
+	add	a0, a0, a1
+	addiw	a0, a0, -47
 	seqz	a0, a0
 	ret
 

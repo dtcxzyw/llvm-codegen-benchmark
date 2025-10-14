@@ -19,10 +19,9 @@ func0000000000000021:
 	ret
 
 func000000000000014c:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -4
 	sgtz	a2, a2
-	addi	a1, a1, -4
 	addiw	a2, a2, 8
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -63,10 +62,9 @@ func0000000000000118:
 
 func0000000000000034:
 	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -1853
-	sltiu	a1, a1, 2
+	addiw	a2, a2, -1853
 	seqz	a2, a2
+	sltiu	a1, a1, 2
 	slli	a2, a2, 1
 	addiw	a2, a2, 1
 	czero.eqz	a0, a0, a1

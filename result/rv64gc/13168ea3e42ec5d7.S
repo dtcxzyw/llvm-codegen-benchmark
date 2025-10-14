@@ -51,10 +51,9 @@ func000000000000002a:
 	ret
 
 func0000000000000481:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	addiw	a0, a0, -3
 	sltiu	a1, a1, 3
-	addi	a0, a0, -3
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -68,10 +67,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	addiw	a0, a0, -1
 	sltiu	a1, a1, 7
-	addi	a0, a0, -1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

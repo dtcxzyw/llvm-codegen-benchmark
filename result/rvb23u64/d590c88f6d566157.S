@@ -62,8 +62,8 @@ func0000000000000026:
 
 func00000000000000a1:
 	add	a0, a0, a2
-	subw	a1, a1, a0
-	addi	a1, a1, -2
+	sub	a1, a1, a0
+	addiw	a1, a1, -2
 	seqz	a0, a1
 	ret
 

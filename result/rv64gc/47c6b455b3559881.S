@@ -45,10 +45,9 @@ func0000000000001302:
 	ret
 
 func0000000000000302:
-	sext.w	a1, a1
 	addi	a2, a2, -40
+	addiw	a1, a1, -4
 	xor	a0, a0, a2
-	addi	a1, a1, -4
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1

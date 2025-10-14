@@ -7,8 +7,7 @@ func0000000000000028:
 
 func0000000000000004:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -30
+	addiw	a1, a1, -30
 	seqz	a1, a1
 	srl	a0, a0, a1
 	ret

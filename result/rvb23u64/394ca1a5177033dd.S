@@ -1,7 +1,6 @@
 func0000000000000c21:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	andi	a0, a0, 128
-	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -47,28 +46,25 @@ func0000000000000481:
 	ret
 
 func0000000000000c2c:
-	sext.w	a1, a1
+	addiw	a1, a1, -3
 	lui	a2, 256
-	addi	a1, a1, -3
-	addi	a2, a2, -256
 	seqz	a1, a1
+	addi	a2, a2, -256
 	and	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000421:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	andi	a0, a0, 2
-	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000042c:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	bexti	a0, a0, 9
 	or	a0, a0, a1

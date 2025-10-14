@@ -1,12 +1,11 @@
 func000000000000002c:
 	andi	a0, a0, 1
-	sext.w	a1, a1
 	bnez	a0, .LBB0_2
-	addi	a0, a1, -151
+	addiw	a0, a1, -151
 	seqz	a0, a0
 	ret
 .LBB0_2:
-	addi	a0, a1, -152
+	addiw	a0, a1, -152
 	snez	a0, a0
 	ret
 
@@ -36,8 +35,7 @@ func00000000000000cc:
 	srliw	a0, a1, 31
 	ret
 .LBB3_2:
-	sext.w	a1, a1
-	addi	a1, a1, -6
+	addiw	a1, a1, -6
 	snez	a0, a1
 	ret
 
@@ -54,13 +52,12 @@ func0000000000000188:
 
 func0000000000000181:
 	andi	a0, a0, 1
-	sext.w	a1, a1
 	bnez	a0, .LBB5_2
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	snez	a0, a1
 	ret
 .LBB5_2:
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 
@@ -90,12 +87,12 @@ func0000000000000146:
 
 func0000000000000141:
 	andi	a0, a0, 1
-	sext.w	a1, a1
 	bnez	a0, .LBB8_2
+	sext.w	a1, a1
 	sgtz	a0, a1
 	ret
 .LBB8_2:
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a0, a1
 	ret
 

@@ -28,10 +28,9 @@ func0000000000001208:
 	ret
 
 func0000000000001202:
-	sext.w	a0, a0
 	addiw	a2, a2, -65
+	addiw	a0, a0, -45
 	sltiu	a2, a2, 26
-	addi	a0, a0, -45
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -81,10 +80,9 @@ func0000000000000210:
 	ret
 
 func0000000000000204:
-	sext.w	a1, a1
 	addiw	a2, a2, -65
+	addiw	a1, a1, -95
 	sltiu	a2, a2, 26
-	addi	a1, a1, -95
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -61,11 +61,10 @@ func00000000000000a4:
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
+	addiw	a0, a0, -7
 	lui	a1, 4101
-	addi	a0, a0, -7
-	slli	a1, a1, 38
 	seqz	a0, a0
+	slli	a1, a1, 38
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
@@ -84,9 +83,8 @@ func0000000000000013:
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
+	addiw	a0, a0, -5
 	fmv.d.x	fa5, zero
-	addi	a0, a0, -5
 	seqz	a0, a0
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1

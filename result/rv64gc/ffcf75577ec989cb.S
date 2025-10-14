@@ -31,8 +31,7 @@ func0000000000000821:
 	beqz	a1, .LBB3_2
 	addi	a0, a2, 1
 .LBB3_2:
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 
@@ -50,8 +49,7 @@ func0000000000000021:
 	beqz	a1, .LBB5_2
 	addi	a0, a2, 1
 .LBB5_2:
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

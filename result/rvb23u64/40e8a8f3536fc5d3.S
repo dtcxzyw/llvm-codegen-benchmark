@@ -11,8 +11,7 @@ func000000000000002a:
 	lui	a2, 524288
 	addi	a2, a2, 3
 	and	a2, a2, a1
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -24,8 +23,7 @@ func000000000000002c:
 	lui	a2, 524288
 	addi	a2, a2, 3
 	and	a2, a2, a1
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -45,8 +43,7 @@ func0000000000000024:
 
 func0000000000000028:
 	andi	a2, a1, -9
-	sext.w	a2, a2
-	addi	a2, a2, -258
+	addiw	a2, a2, -258
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

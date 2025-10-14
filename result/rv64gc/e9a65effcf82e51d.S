@@ -21,8 +21,7 @@ func000000000000000c:
 	beqz	a0, .LBB2_2
 	srliw	a1, a2, 30
 .LBB2_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a0, a1
 	ret
 

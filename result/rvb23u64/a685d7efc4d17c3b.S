@@ -1,20 +1,18 @@
 func0000000000000902:
-	sext.w	a1, a0
-	andi	a0, a0, 95
-	addi	a0, a0, -65
-	addi	a1, a1, -95
-	sltiu	a0, a0, 26
-	seqz	a1, a1
+	andi	a1, a0, 95
+	addiw	a0, a0, -95
+	addi	a1, a1, -65
+	sltiu	a1, a1, 26
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	sext.w	a1, a0
-	andi	a0, a0, -33
-	addiw	a0, a0, -65
-	addi	a1, a1, -95
-	sltiu	a0, a0, 26
-	seqz	a1, a1
+	andi	a1, a0, -33
+	addiw	a0, a0, -95
+	addiw	a1, a1, -65
+	sltiu	a1, a1, 26
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

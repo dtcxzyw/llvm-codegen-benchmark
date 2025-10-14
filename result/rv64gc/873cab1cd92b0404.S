@@ -2,8 +2,7 @@ func0000000000000026:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	bnez	a1, .LBB0_2
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a1, a2
 	slli	a1, a1, 4
 	slt	a0, a0, a1
@@ -17,8 +16,7 @@ func0000000000000021:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	bnez	a1, .LBB1_2
-	sext.w	a2, a2
-	addi	a1, a2, -1035
+	addiw	a1, a2, -1035
 	seqz	a1, a1
 	xori	a1, a1, 57
 	xor	a0, a0, a1
@@ -32,8 +30,7 @@ func0000000000000021:
 
 func0000000000000034:
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -12
+	addiw	a2, a2, -12
 	seqz	a2, a2
 	addi	a2, a2, 1
 	sltu	a0, a0, a2
@@ -92,8 +89,7 @@ func000000000000002c:
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	bnez	a1, .LBB6_2
-	sext.w	a2, a2
-	addi	a1, a2, -33
+	addiw	a1, a2, -33
 	seqz	a1, a1
 	slli	a1, a1, 1
 	xor	a0, a0, a1

@@ -7,9 +7,8 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	srli	a1, a1, 4
-	addi	a0, a0, -18
+	addiw	a0, a0, -18
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

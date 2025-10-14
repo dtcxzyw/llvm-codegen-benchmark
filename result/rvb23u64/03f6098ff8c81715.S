@@ -23,12 +23,11 @@ func000000000000014c:
 	ret
 
 func0000000000000042:
-	sext.w	a2, a0
-	zext.w	a0, a0
-	xor	a0, a0, a1
-	addi	a2, a2, 1
+	zext.w	a2, a0
+	addiw	a0, a0, 1
+	xor	a1, a1, a2
+	seqz	a1, a1
 	seqz	a0, a0
-	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -59,11 +58,10 @@ func000000000000050c:
 	ret
 
 func0000000000000502:
-	sext.w	a2, a0
-	zext.w	a0, a0
-	sltu	a0, a1, a0
-	addi	a2, a2, 2
-	seqz	a1, a2
+	zext.w	a2, a0
+	addiw	a0, a0, 2
+	sltu	a1, a1, a2
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

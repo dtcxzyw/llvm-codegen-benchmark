@@ -91,8 +91,7 @@ func000000000000000c:
 	li	a1, 2
 	sub	a1, a1, a2
 .LBB6_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a0, a1
 	ret
 

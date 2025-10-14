@@ -7,8 +7,7 @@ func000000000000000d:
 	ret
 
 func0000000000000002:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	addi	a1, a1, -128
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 128
@@ -22,8 +21,7 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	sext.w	a2, a2
-	addi	a2, a2, -16
+	addiw	a2, a2, -16
 	addi	a1, a1, -8
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 8

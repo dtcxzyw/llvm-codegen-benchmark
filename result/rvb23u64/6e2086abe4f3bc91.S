@@ -11,8 +11,8 @@ func00000000000001e1:
 	andi	a2, a2, 1
 	andi	a1, a1, 1
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -3
+	add	a0, a0, a1
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	ret
 
@@ -28,8 +28,8 @@ func00000000000001ec:
 	andi	a2, a2, 1
 	andi	a1, a1, 1
 	add	a1, a1, a2
-	addw	a0, a0, a1
-	addi	a0, a0, -2
+	add	a0, a0, a1
+	addiw	a0, a0, -2
 	snez	a0, a0
 	ret
 

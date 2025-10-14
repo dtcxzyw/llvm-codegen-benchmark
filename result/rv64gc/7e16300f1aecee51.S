@@ -8,8 +8,8 @@ func0000000000000461:
 func0000000000000c0c:
 	xor	a1, a1, a2
 	snez	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -64
+	add	a0, a0, a1
+	addiw	a0, a0, -64
 	snez	a0, a0
 	ret
 

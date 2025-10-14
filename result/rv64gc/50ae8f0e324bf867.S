@@ -60,8 +60,8 @@ func0000000000000006:
 
 func0000000000000041:
 	add	a1, a1, a2
-	subw	a1, a1, a0
-	addi	a1, a1, 3
+	sub	a1, a1, a0
+	addiw	a1, a1, 3
 	seqz	a0, a1
 	ret
 

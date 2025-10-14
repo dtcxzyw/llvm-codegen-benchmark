@@ -7,9 +7,8 @@ func000000000000000d:
 	ret
 
 func0000000000000003:
-	sext.w	a1, a0
+	addiw	a1, a0, -7
 	andi	a0, a0, 31
-	addi	a1, a1, -7
 	addi	a0, a0, -23
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 23

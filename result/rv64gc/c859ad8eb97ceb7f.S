@@ -15,8 +15,7 @@ func0000000000000041:
 
 func0000000000000001:
 	andi	a2, a2, -128
-	sext.w	a2, a2
-	addi	a2, a2, -128
+	addiw	a2, a2, -128
 	seqz	a2, a2
 	add	a0, a0, a1
 	addi	a2, a2, -1

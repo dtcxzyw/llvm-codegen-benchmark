@@ -6,16 +6,14 @@ func000000000000018f:
 	ret
 
 func000000000000002f:
-	sext.w	a1, a1
-	addi	a1, a1, -117
+	addiw	a1, a1, -117
 	seqz	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	snez	a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
@@ -30,8 +28,7 @@ func000000000000030f:
 	ret
 
 func0000000000000023:
-	sext.w	a1, a1
-	addi	a1, a1, -7
+	addiw	a1, a1, -7
 	seqz	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1

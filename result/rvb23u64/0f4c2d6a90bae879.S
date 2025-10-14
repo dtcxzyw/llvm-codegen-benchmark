@@ -13,8 +13,8 @@ func0000000000000001:
 	addi	a3, a3, -1024
 	mul	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a0, a0, -5
+	add	a0, a0, a2
+	addiw	a0, a0, -5
 	seqz	a0, a0
 	ret
 

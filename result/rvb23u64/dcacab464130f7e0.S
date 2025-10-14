@@ -158,8 +158,7 @@ func000000000000028a:
 func0000000000000189:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -17
+	addiw	a2, a2, -17
 	snez	a2, a2
 	sltu	a0, a0, a1
 	andn	a0, a2, a0
@@ -443,8 +442,7 @@ func0000000000000026:
 func0000000000000029:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	andn	a0, a2, a0
@@ -482,8 +480,7 @@ func0000000000000085:
 func0000000000000034:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, 1
+	addiw	a2, a2, 1
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
@@ -658,8 +655,7 @@ func0000000000000087:
 func0000000000000035:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	andn	a0, a2, a0

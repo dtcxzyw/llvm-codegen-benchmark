@@ -77,10 +77,9 @@ func0000000000000210:
 	ret
 
 func0000000000000048:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	addiw	a0, a0, -2
 	addi	a1, a1, -5
-	addi	a0, a0, -2
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -96,10 +95,9 @@ func0000000000000908:
 	ret
 
 func0000000000000848:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	addiw	a0, a0, -160
 	addi	a1, a1, -217
-	addi	a0, a0, -160
 	sltiu	a1, a1, 3
 	seqz	a0, a0
 	or	a0, a0, a1

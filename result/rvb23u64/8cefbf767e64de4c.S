@@ -1,14 +1,13 @@
 func000000000000b318:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a3, a1
 	srliw	a1, a1, 31
+	addiw	a0, a0, -1
 	slt	a2, a3, a2
-	addi	a0, a0, -1
-	xori	a2, a2, 1
-	or	a1, a1, a2
 	snez	a0, a0
+	xori	a2, a2, 1
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000001318:

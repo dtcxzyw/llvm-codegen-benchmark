@@ -86,12 +86,11 @@ func0000000000000d4a:
 	ret
 
 func000000000000054c:
-	sext.w	a2, a0
 	sext.w	a1, a1
-	addiw	a0, a0, -2
-	slt	a0, a0, a1
-	addi	a2, a2, -1
-	snez	a1, a2
+	addiw	a2, a0, -2
+	addiw	a0, a0, -1
+	slt	a1, a2, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

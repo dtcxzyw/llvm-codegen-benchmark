@@ -48,8 +48,7 @@ func00000000000000f8:
 func00000000000000a1:
 	slli	a1, a1, 16
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -100
+	addiw	a0, a0, -100
 	li	a1, -90
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 100

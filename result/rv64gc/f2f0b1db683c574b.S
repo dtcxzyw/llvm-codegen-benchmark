@@ -73,15 +73,15 @@ func00000000000007aa:
 
 func0000000000000041:
 	add	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, -5
+	sub	a0, a0, a1
+	addiw	a0, a0, -5
 	seqz	a0, a0
 	ret
 
 func00000000000002a1:
 	add	a1, a1, a2
-	subw	a0, a0, a1
-	addi	a0, a0, 11
+	sub	a0, a0, a1
+	addiw	a0, a0, 11
 	seqz	a0, a0
 	ret
 

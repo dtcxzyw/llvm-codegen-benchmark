@@ -10,12 +10,12 @@ func0000000000000146:
 
 func0000000000000184:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	addi	a3, a1, 2
-	sltu	a1, a1, a2
-	snez	a2, a3
+	sext.w	a3, a1
+	addiw	a1, a1, 2
+	snez	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	sltu	a1, a3, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000185:

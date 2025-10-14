@@ -1,7 +1,6 @@
 func0000000000000018:
-	sext.w	a0, a0
 	xori	a1, a1, 1
-	addi	a0, a0, -16
+	addiw	a0, a0, -16
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

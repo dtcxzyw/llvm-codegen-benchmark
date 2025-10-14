@@ -1,9 +1,9 @@
 func0000000000000050:
-	sext.w	a0, a0
-	addi	a1, a0, -95
-	sltiu	a0, a0, 128
-	seqz	a1, a1
-	xori	a0, a0, 1
+	sext.w	a1, a0
+	addiw	a0, a0, -95
+	seqz	a0, a0
+	sltiu	a1, a1, 128
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
@@ -14,32 +14,30 @@ func0000000000000042:
 	ret
 
 func0000000000000068:
-	sext.w	a0, a0
-	addi	a1, a0, -127
-	seqz	a1, a1
-	sltiu	a0, a0, 32
+	sext.w	a1, a0
+	addiw	a0, a0, -127
+	seqz	a0, a0
+	sltiu	a1, a1, 32
 	or	a0, a0, a1
 	ret
 
 func0000000000000182:
-	sext.w	a1, a0
-	srliw	a0, a0, 31
-	addi	a1, a1, -1
-	seqz	a1, a1
+	srliw	a1, a0, 31
+	addiw	a0, a0, -1
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000282:
-	sext.w	a0, a0
-	sgtz	a1, a0
-	addi	a0, a0, 1
+	sext.w	a1, a0
+	addiw	a0, a0, 1
+	sgtz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000004c:
-	sext.w	a1, a0
-	addi	a1, a1, -2
+	addiw	a1, a0, -2
 	seqz	a1, a1
 	srliw	a0, a0, 31
 	or	a0, a0, a1
@@ -54,18 +52,18 @@ func0000000000000054:
 	ret
 
 func0000000000000602:
-	sext.w	a0, a0
-	sltiu	a1, a0, 37
-	addi	a0, a0, -1
+	sext.w	a1, a0
+	addiw	a0, a0, -1
+	sltiu	a1, a1, 37
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000202:
-	sext.w	a0, a0
-	sltiu	a1, a0, 7
-	addi	a0, a0, -2
+	sext.w	a1, a0
+	addiw	a0, a0, -2
+	sltiu	a1, a1, 7
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -82,34 +80,34 @@ func0000000000000288:
 	ret
 
 func0000000000000048:
-	sext.w	a0, a0
-	addi	a1, a0, -173
-	seqz	a1, a1
-	sltiu	a0, a0, 161
+	sext.w	a1, a0
+	addiw	a0, a0, -173
+	seqz	a0, a0
+	sltiu	a1, a1, 161
 	or	a0, a0, a1
 	ret
 
 func0000000000000070:
-	sext.w	a0, a0
-	addi	a1, a0, -133
-	sltiu	a0, a0, 140
-	seqz	a1, a1
-	xori	a0, a0, 1
+	sext.w	a1, a0
+	addiw	a0, a0, -133
+	seqz	a0, a0
+	sltiu	a1, a1, 140
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	sext.w	a0, a0
-	sltiu	a1, a0, 2
-	addi	a0, a0, -19
+	sext.w	a1, a0
+	addiw	a0, a0, -19
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000502:
-	sext.w	a0, a0
-	sltiu	a1, a0, 23
-	addi	a0, a0, -26
+	sext.w	a1, a0
+	addiw	a0, a0, -26
+	sltiu	a1, a1, 23
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

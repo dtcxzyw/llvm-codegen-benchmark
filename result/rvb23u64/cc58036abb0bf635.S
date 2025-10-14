@@ -12,10 +12,9 @@ func0000000000000104:
 	ret
 
 func0000000000000102:
-	sext.w	a1, a1
 	fmv.d.x	fa5, zero
+	addiw	a1, a1, -2
 	flt.d	a2, fa5, fa0
-	addi	a1, a1, -2
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

@@ -12,10 +12,8 @@ func000000000000108c:
 
 func0000000000003184:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -12
-	addi	a1, a1, -240
+	addiw	a2, a2, -12
+	addiw	a1, a1, -240
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2

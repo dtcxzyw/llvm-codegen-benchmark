@@ -7,8 +7,7 @@ func0000000000000006:
 
 func0000000000000081:
 	srli	a1, a1, 4
-	sext.w	a1, a1
-	addi	a1, a1, 1
+	addiw	a1, a1, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

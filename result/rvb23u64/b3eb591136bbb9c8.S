@@ -10,8 +10,8 @@ func0000000000000021:
 	add	a1, a1, a2
 	lui	a2, 8517
 	sh1add	a1, a1, a1
-	subw	a0, a0, a1
-	addi	a0, a0, -1
+	sub	a0, a0, a1
+	addiw	a0, a0, -1
 	addi	a1, a2, 381
 	czero.nez	a0, a1, a0
 	bseti	a0, a0, 30

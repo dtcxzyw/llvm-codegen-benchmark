@@ -1,6 +1,5 @@
 func00000000000001a1:
-	sext.w	a1, a1
-	addi	a1, a1, -6
+	addiw	a1, a1, -6
 	czero.eqz	a0, a0, a1
 	ret
 

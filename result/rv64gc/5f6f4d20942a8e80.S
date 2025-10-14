@@ -3,8 +3,7 @@ func0000000000000001:
 	bnez	a0, .LBB0_2
 	andi	a1, a2, 3
 .LBB0_2:
-	sext.w	a1, a1
-	addi	a1, a1, -2
+	addiw	a1, a1, -2
 	seqz	a0, a1
 	ret
 

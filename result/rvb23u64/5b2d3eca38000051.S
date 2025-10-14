@@ -16,8 +16,7 @@ func0000000000000007:
 	ret
 
 func0000000000000033:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	xori	a2, a2, 5
 	or	a0, a0, a1
@@ -93,9 +92,8 @@ func0000000000000062:
 	ret
 
 func0000000000000005:
-	sext.w	a2, a2
+	addiw	a2, a2, -6
 	lui	a3, 131072
-	addi	a2, a2, -6
 	addi	a3, a3, -6
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 6

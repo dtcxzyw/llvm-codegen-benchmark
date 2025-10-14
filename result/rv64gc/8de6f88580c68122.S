@@ -53,8 +53,7 @@ func00000000000000c1:
 	bltz	a3, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	sext.w	a1, a1
-	addi	a1, a1, -32
+	addiw	a1, a1, -32
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

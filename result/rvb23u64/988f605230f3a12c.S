@@ -6,18 +6,16 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	srli	a1, a1, 17
-	addi	a0, a0, -4
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	andi	a1, a1, 192
+	addiw	a0, a0, -2
 	snez	a1, a1
-	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

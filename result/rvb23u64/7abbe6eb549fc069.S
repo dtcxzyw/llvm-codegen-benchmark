@@ -44,8 +44,7 @@ func0000000000000081:
 func00000000000000ec:
 	andi	a1, a1, 2
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	snez	a0, a0
 	ret
 

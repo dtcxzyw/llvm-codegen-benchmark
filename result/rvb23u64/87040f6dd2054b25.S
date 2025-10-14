@@ -62,8 +62,7 @@ func0000000000000084:
 	ret
 
 func0000000000000028:
-	sext.w	a2, a2
-	addi	a2, a2, 1
+	addiw	a2, a2, 1
 	addi	a1, a1, -64
 	czero.eqz	a1, a1, a2
 	addiw	a1, a1, 64

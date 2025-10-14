@@ -16,17 +16,15 @@ func000000000000048c:
 	ret
 
 func0000000000000421:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	andi	a0, a0, 2
-	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000042c:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	bexti	a0, a0, 3
 	or	a0, a0, a1

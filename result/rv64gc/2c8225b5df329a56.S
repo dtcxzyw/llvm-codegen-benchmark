@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000601:
-	subw	a0, a0, a1
-	addi	a0, a0, -162
+	sub	a0, a0, a1
+	addiw	a0, a0, -162
 	seqz	a0, a0
 	ret
 

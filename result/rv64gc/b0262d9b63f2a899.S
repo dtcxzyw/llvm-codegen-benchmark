@@ -32,8 +32,7 @@ func0000000000000048:
 
 func000000000000004c:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -38
+	addiw	a1, a1, -38
 	seqz	a1, a1
 	slti	a0, a0, 1
 	or	a0, a0, a1

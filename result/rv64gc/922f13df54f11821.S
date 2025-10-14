@@ -9,8 +9,8 @@ func0000000000000028:
 func0000000000000021:
 	not	a1, a1
 	ori	a1, a1, -2
-	addw	a0, a0, a1
-	addi	a0, a0, 33
+	add	a0, a0, a1
+	addiw	a0, a0, 33
 	seqz	a0, a0
 	ret
 

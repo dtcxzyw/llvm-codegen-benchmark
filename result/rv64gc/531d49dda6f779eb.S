@@ -1,21 +1,18 @@
 func00000000000004c6:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000004cc:
-	sext.w	a1, a1
-	addi	a1, a1, -9
+	addiw	a1, a1, -9
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
-	addi	a1, a1, -62
+	addiw	a1, a1, -62
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

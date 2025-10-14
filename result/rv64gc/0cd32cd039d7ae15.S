@@ -69,8 +69,7 @@ func0000000000000301:
 	beqz	a2, .LBB7_2
 	mv	a1, a0
 .LBB7_2:
-	sext.w	a1, a1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a0, a1
 	ret
 

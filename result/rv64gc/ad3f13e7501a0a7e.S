@@ -92,8 +92,8 @@ func00000000000000c6:
 
 func000000000000058a:
 	sext.w	a0, a0
-	subw	a1, a1, a2
-	addi	a1, a1, -1
+	sub	a1, a1, a2
+	addiw	a1, a1, -1
 	slti	a0, a0, 4
 	snez	a1, a1
 	xori	a0, a0, 1

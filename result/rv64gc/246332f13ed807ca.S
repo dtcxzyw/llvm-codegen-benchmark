@@ -1,11 +1,11 @@
 func0000000000000021:
-	sext.w	a0, a0
-	li	a1, 1
-	bne	a0, a1, .LBB0_2
+	sext.w	a1, a0
+	li	a2, 1
+	bne	a1, a2, .LBB0_2
 	li	a0, 4
 	ret
 .LBB0_2:
-	addi	a0, a0, -9
+	addiw	a0, a0, -9
 	seqz	a0, a0
 	slli	a0, a0, 1
 	ret

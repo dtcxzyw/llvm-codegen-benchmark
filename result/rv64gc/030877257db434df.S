@@ -1,7 +1,7 @@
 func0000000000000421:
 	addiw	a0, a0, 1
 	seqz	a1, a0
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -9,7 +9,7 @@ func0000000000000421:
 func0000000000000021:
 	addiw	a0, a0, 1
 	seqz	a1, a0
-	addi	a0, a0, -18
+	addiw	a0, a0, -18
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

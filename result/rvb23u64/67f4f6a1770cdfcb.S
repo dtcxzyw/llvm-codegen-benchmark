@@ -8,9 +8,8 @@ func0000000000000015:
 	ret
 
 func0000000000000010:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	li	a3, 10
-	addi	a2, a2, -1
 	czero.eqz	a2, a3, a2
 	li	a3, -98
 	add.uw	a2, a3, a2

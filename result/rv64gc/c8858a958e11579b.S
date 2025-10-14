@@ -8,8 +8,8 @@ func000000000000014a:
 
 func0000000000000581:
 	sext.w	a0, a0
-	mulw	a1, a1, a2
-	addi	a1, a1, -1
+	mul	a1, a1, a2
+	addiw	a1, a1, -1
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

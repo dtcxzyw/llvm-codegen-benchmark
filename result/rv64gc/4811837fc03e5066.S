@@ -42,8 +42,7 @@ func0000000000000101:
 	bltu	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

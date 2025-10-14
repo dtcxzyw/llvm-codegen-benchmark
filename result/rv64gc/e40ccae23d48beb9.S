@@ -54,18 +54,16 @@ func0000000000000c8c:
 	ret
 
 func0000000000000d8c:
-	sext.w	a0, a0
 	srlw	a1, a1, a2
-	addi	a0, a0, -1
+	addiw	a0, a0, -1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	srlw	a1, a1, a2
+	addiw	a0, a0, -3
 	zext.b	a1, a1
-	addi	a0, a0, -3
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

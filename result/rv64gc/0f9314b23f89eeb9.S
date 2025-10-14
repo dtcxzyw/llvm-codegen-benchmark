@@ -20,8 +20,8 @@ func0000000000000050:
 	ret
 
 func0000000000000002:
-	subw	a1, a1, a2
-	addi	a1, a1, 1
+	sub	a1, a1, a2
+	addiw	a1, a1, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	subw	a1, a1, a2
-	addi	a1, a1, -1
+	sub	a1, a1, a2
+	addiw	a1, a1, -1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -75,8 +75,8 @@ func0000000000000070:
 	ret
 
 func0000000000000058:
-	subw	a1, a1, a2
-	addi	a1, a1, -22
+	sub	a1, a1, a2
+	addiw	a1, a1, -22
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

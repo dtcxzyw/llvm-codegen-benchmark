@@ -10,12 +10,11 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a0
-	srliw	a0, a0, 11
-	addi	a0, a0, -27
-	addi	a1, a1, 1
-	seqz	a0, a0
+	srliw	a1, a0, 11
+	addiw	a0, a0, 1
+	addi	a1, a1, -27
 	seqz	a1, a1
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

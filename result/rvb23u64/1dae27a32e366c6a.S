@@ -8,9 +8,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
+	addiw	a1, a1, -224
 	andi	a0, a0, 224
-	addi	a1, a1, -224
 	seqz	a1, a1
 	slli	a1, a1, 3
 	addi	a0, a0, -192

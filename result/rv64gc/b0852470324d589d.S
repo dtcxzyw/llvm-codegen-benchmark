@@ -6,23 +6,21 @@ func0000000000000421:
 	bnez	a4, .LBB0_3
 	bne	a2, a3, .LBB0_4
 .LBB0_2:
-	sext.w	a1, a1
-	addi	a0, a1, 55
+	addiw	a0, a1, 55
 	seqz	a0, a0
 	ret
 .LBB0_3:
 	li	a1, -55
 	beq	a2, a3, .LBB0_2
 .LBB0_4:
-	sext.w	a1, a0
-	addi	a0, a1, 55
+	addiw	a0, a0, 55
 	seqz	a0, a0
 	ret
 
 func0000000000001821:
-	sext.w	a0, a0
-	beqz	a0, .LBB1_2
-	addi	a0, a0, -1
+	sext.w	a2, a0
+	beqz	a2, .LBB1_2
+	addiw	a0, a0, -1
 	seqz	a0, a0
 	ret
 .LBB1_2:
@@ -31,10 +29,10 @@ func0000000000001821:
 	ret
 
 func0000000000002021:
-	sext.w	a0, a0
-	li	a2, 4
-	beq	a0, a2, .LBB2_2
-	addi	a0, a0, -5
+	sext.w	a2, a0
+	li	a3, 4
+	beq	a2, a3, .LBB2_2
+	addiw	a0, a0, -5
 	seqz	a0, a0
 	ret
 .LBB2_2:
@@ -50,16 +48,14 @@ func00000000000004c1:
 	beq	a3, a1, .LBB3_3
 	bgtz	a2, .LBB3_4
 .LBB3_2:
-	sext.w	a1, a1
-	addi	a1, a1, -11
+	addiw	a1, a1, -11
 	seqz	a0, a1
 	ret
 .LBB3_3:
 	li	a1, 13
 	blez	a2, .LBB3_2
 .LBB3_4:
-	sext.w	a1, a0
-	addi	a1, a1, -11
+	addiw	a1, a0, -11
 	seqz	a0, a1
 	ret
 

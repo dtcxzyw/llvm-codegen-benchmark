@@ -56,8 +56,7 @@ func000000000000002f:
 
 func0000000000000180:
 	andi	a2, a2, -256
-	sext.w	a2, a2
-	addi	a2, a2, -256
+	addiw	a2, a2, -256
 	snez	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -65,8 +64,7 @@ func0000000000000180:
 
 func0000000000000020:
 	andi	a2, a2, -3
-	sext.w	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

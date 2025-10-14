@@ -7,8 +7,7 @@ func0000000000000021:
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 55
+	addiw	a0, a0, 55
 	seqz	a0, a0
 	ret
 

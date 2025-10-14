@@ -173,8 +173,7 @@ func0000000000000194:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, -4
-	sext.w	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	snez	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

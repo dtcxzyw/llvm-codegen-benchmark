@@ -125,23 +125,23 @@ func0000000000000146:
 
 func000000000000012c:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	sltu	a2, a1, a2
-	addi	a1, a1, -228
-	xori	a2, a2, 1
+	sext.w	a3, a1
+	addiw	a1, a1, -228
+	sltu	a2, a3, a2
 	snez	a1, a1
-	and	a1, a1, a2
+	xori	a2, a2, 1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000016c:
 	sext.w	a2, a2
-	sext.w	a1, a1
-	slt	a2, a1, a2
-	addi	a1, a1, -228
-	xori	a2, a2, 1
+	sext.w	a3, a1
+	addiw	a1, a1, -228
+	slt	a2, a3, a2
 	snez	a1, a1
-	and	a1, a1, a2
+	xori	a2, a2, 1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

@@ -1,6 +1,5 @@
 func000000000000002c:
-	sext.w	a2, a2
-	addi	a2, a2, -256
+	addiw	a2, a2, -256
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -35,8 +34,7 @@ func0000000000000080:
 	ret
 
 func000000000000002f:
-	sext.w	a2, a2
-	addi	a2, a2, -18
+	addiw	a2, a2, -18
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -64,16 +62,14 @@ func0000000000000085:
 	ret
 
 func0000000000000020:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func0000000000000024:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

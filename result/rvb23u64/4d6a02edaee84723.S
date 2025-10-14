@@ -20,8 +20,7 @@ func0000000000000181:
 
 func000000000000002c:
 	zext.b	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	li	a2, -45
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 92

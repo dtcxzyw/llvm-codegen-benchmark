@@ -1,15 +1,14 @@
 func0000000000000007:
 	andi	a1, a1, 1
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	lui	a3, 1048544
 	czero.nez	a1, a3, a1
 	lui	a3, 2224
-	addi	a2, a2, -1
 	seqz	a2, a2
-	add	a1, a1, a3
 	slli	a2, a2, 18
+	add	a1, a1, a3
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000002b:
@@ -24,9 +23,8 @@ func000000000000002b:
 
 func0000000000000005:
 	andi	a1, a1, 1
-	sext.w	a2, a2
+	addiw	a2, a2, -6
 	lui	a3, 131072
-	addi	a2, a2, -6
 	addi	a3, a3, -6
 	czero.nez	a2, a3, a2
 	lui	a3, 262144

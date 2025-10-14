@@ -2,8 +2,7 @@ func000000000000018c:
 	slli	a1, a1, 60
 	andi	a0, a0, -2
 	srli	a1, a1, 63
-	sext.w	a0, a0
-	addi	a0, a0, -178
+	addiw	a0, a0, -178
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

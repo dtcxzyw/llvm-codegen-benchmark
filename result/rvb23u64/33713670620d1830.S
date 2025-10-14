@@ -11,8 +11,8 @@ func0000000000000021:
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	andi	a0, a0, 24
-	addw	a0, a0, a1
-	addi	a0, a0, -24
+	add	a0, a0, a1
+	addiw	a0, a0, -24
 	seqz	a0, a0
 	ret
 

@@ -60,24 +60,22 @@ func000000000000c082:
 
 func0000000000001204:
 	sext.w	a1, a1
-	sext.w	a2, a2
-	seqz	a0, a0
-	addi	a2, a2, -32
-	sltiu	a1, a1, -6
+	addiw	a2, a2, -32
 	seqz	a2, a2
-	or	a0, a0, a1
+	sltiu	a1, a1, -6
+	seqz	a0, a0
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000001604:
 	sext.w	a1, a1
-	sext.w	a2, a2
-	seqz	a0, a0
-	addi	a2, a2, -8
-	snez	a1, a1
+	addiw	a2, a2, -8
 	seqz	a2, a2
-	or	a0, a0, a1
+	snez	a1, a1
+	seqz	a0, a0
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000001602:

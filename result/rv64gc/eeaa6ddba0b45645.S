@@ -36,10 +36,9 @@ func00000000000000a6:
 
 func00000000000000a1:
 	sext.w	a0, a0
-	sext.w	a1, a1
-	seqz	a0, a0
-	addi	a1, a1, 20
+	addiw	a1, a1, 20
 	seqz	a1, a1
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

@@ -1,7 +1,6 @@
 func0000000000000003:
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -8
+	addiw	a2, a2, -8
 	li	a3, -62
 	czero.eqz	a2, a3, a2
 	addiw	a2, a2, 56
@@ -12,8 +11,7 @@ func0000000000000003:
 
 func0000000000000002:
 	andi	a1, a1, 1
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	seqz	a2, a2
 	sh1add	a2, a2, a2
 	addi	a2, a2, -1

@@ -40,8 +40,7 @@ func0000000000000028:
 	li	a0, 38
 	ret
 .LBB3_2:
-	sext.w	a2, a2
-	addi	a0, a2, -40
+	addiw	a0, a2, -40
 	seqz	a0, a0
 	addi	a0, a0, 39
 	ret

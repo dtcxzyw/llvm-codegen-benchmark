@@ -1,14 +1,12 @@
 func000000000000000c:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	sext.w	a1, a1
 	mul	a0, a0, a1
 	ret
 
 func000000000000000d:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	sext.w	a1, a1
 	mul	a0, a0, a1

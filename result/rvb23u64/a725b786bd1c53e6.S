@@ -13,8 +13,7 @@ func000000000000001e:
 	ret
 
 func000000000000001f:
-	sext.w	a1, a1
-	addi	a1, a1, -3
+	addiw	a1, a1, -3
 	seqz	a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 120

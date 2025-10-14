@@ -13,8 +13,8 @@ func00000000000001f4:
 
 func000000000000010c:
 	clzw	a1, a1
-	addw	a0, a0, a1
-	addi	a0, a0, -31
+	add	a0, a0, a1
+	addiw	a0, a0, -31
 	snez	a0, a0
 	ret
 

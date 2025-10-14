@@ -7,20 +7,18 @@ func000000000000018c:
 	ret
 
 func0000000000000198:
-	sext.w	a2, a0
-	mulw	a0, a1, a0
-	slti	a0, a0, 16
-	addi	a2, a2, -16
-	snez	a1, a2
+	mulw	a1, a1, a0
+	addiw	a0, a0, -16
+	slti	a1, a1, 16
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000998:
-	sext.w	a2, a0
-	mulw	a0, a1, a0
-	slti	a0, a0, 4
-	addi	a2, a2, -4
-	snez	a1, a2
+	mulw	a1, a1, a0
+	addiw	a0, a0, -4
+	slti	a1, a1, 4
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

@@ -63,8 +63,7 @@ func0000000000000301:
 func0000000000000028:
 	zext.b	a0, a0
 	andi	a1, a1, -2
-	sext.w	a1, a1
-	addi	a1, a1, -22
+	addiw	a1, a1, -22
 	seqz	a1, a1
 	sltiu	a0, a0, 29
 	andn	a0, a1, a0

@@ -33,9 +33,8 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	slli	a0, a0, 48
-	addi	a1, a1, -1
 	snez	a1, a1
 	slliw	a1, a1, 31
 	srli	a0, a0, 48

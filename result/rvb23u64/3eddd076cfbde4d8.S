@@ -1,9 +1,8 @@
 func0000000000000029:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	zext.h	a2, a2
+	addiw	a1, a1, -4
 	sltu	a0, a0, a2
-	addi	a1, a1, -4
 	xori	a0, a0, 1
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -31,11 +30,10 @@ func0000000000000148:
 	ret
 
 func000000000000042c:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	zext.h	a2, a2
+	addiw	a1, a1, -2
 	xor	a0, a0, a2
-	addi	a1, a1, -2
 	snez	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1

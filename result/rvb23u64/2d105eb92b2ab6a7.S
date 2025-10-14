@@ -34,10 +34,9 @@ func000000000000018c:
 
 func0000000000000181:
 	zext.h	a0, a0
-	sext.w	a1, a1
-	addi	a1, a1, -35
-	addi	a0, a0, -772
+	addiw	a1, a1, -35
 	snez	a1, a1
+	addi	a0, a0, -772
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

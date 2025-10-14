@@ -16,12 +16,11 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	li	a3, 99
+	addiw	a0, a0, -13
 	slli	a3, a3, 27
-	addi	a0, a0, -13
-	and	a2, a2, a3
 	seqz	a0, a0
+	and	a2, a2, a3
 	xor	a2, a2, a3
 	snez	a2, a2
 	and	a0, a0, a1
@@ -29,10 +28,9 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	sraiw	a2, a2, 31
+	addiw	a1, a1, -1116
 	seqz	a2, a2
-	addi	a1, a1, -1116
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

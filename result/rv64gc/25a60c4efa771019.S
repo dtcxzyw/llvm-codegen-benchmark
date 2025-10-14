@@ -1,6 +1,6 @@
 func000000000000000b:
-	addiw	a1, a1, 1
-	addi	a2, a1, -3
+	addi	a1, a1, 1
+	addiw	a2, a1, -3
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -10,8 +10,8 @@ func000000000000000b:
 	ret
 
 func000000000000010b:
-	addiw	a1, a1, 1
-	addi	a2, a1, -127
+	addi	a1, a1, 1
+	addiw	a2, a1, -127
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -21,8 +21,8 @@ func000000000000010b:
 	ret
 
 func0000000000000008:
-	addiw	a1, a1, 1
-	addi	a2, a1, -18
+	addi	a1, a1, 1
+	addiw	a2, a1, -18
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -33,7 +33,7 @@ func0000000000000008:
 
 func000000000000000f:
 	addiw	a1, a1, 1
-	addi	a2, a1, -124
+	addiw	a2, a1, -124
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
@@ -53,7 +53,7 @@ func0000000000000043:
 
 func000000000000030f:
 	addiw	a1, a1, 1
-	addi	a2, a1, -3
+	addiw	a2, a1, -3
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2

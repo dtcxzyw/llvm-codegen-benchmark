@@ -13,10 +13,9 @@ func0000000000000005:
 
 func0000000000000007:
 	andi	a2, a2, 1
-	sext.w	a1, a1
 	bnez	a2, .LBB1_2
 	li	a2, 1
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2
@@ -24,7 +23,7 @@ func0000000000000007:
 	ret
 .LBB1_2:
 	li	a2, 3
-	addi	a1, a1, -1
+	addiw	a1, a1, -1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2

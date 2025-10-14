@@ -10,10 +10,9 @@ func00000000000007ab:
 	ret
 
 func0000000000000784:
-	sext.w	a0, a0
 	addi	a2, a2, 8
 	addi	a1, a1, 80
-	addi	a0, a0, -3
+	addiw	a0, a0, -3
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

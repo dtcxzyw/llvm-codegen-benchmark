@@ -17,10 +17,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
-	sext.w	a2, a2
-	addi	a2, a2, -3
-	addi	a0, a0, -3
+	addiw	a2, a2, -3
+	addiw	a0, a0, -3
 	snez	a0, a0
 	czero.nez	a2, a0, a2
 	and	a0, a0, a1

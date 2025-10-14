@@ -63,10 +63,8 @@ func0000000000000024:
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -7
-	addi	a1, a1, -6
+	addiw	a2, a2, -7
+	addiw	a1, a1, -6
 	snez	a2, a2
 	and	a0, a0, a2
 	seqz	a1, a1
@@ -74,10 +72,9 @@ func0000000000000181:
 	ret
 
 func0000000000000081:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	addiw	a1, a1, -29
 	sltiu	a2, a2, 2
-	addi	a1, a1, -29
 	and	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1

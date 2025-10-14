@@ -12,8 +12,7 @@ func000000000000000c:
 func0000000000000001:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	sext.w	a1, a1
-	addi	a1, a1, 2
+	addiw	a1, a1, 2
 	snez	a0, a1
 	addi	a0, a0, -1
 	ret

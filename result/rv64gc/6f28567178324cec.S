@@ -22,8 +22,7 @@ func0000000000000024:
 func00000000000000ec:
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -2
+	addiw	a0, a0, -2
 	snez	a0, a0
 	ret
 
@@ -139,8 +138,7 @@ func000000000000002c:
 func0000000000000061:
 	slli	a1, a1, 3
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -64
+	addiw	a0, a0, -64
 	seqz	a0, a0
 	ret
 

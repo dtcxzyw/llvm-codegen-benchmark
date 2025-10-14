@@ -1,6 +1,6 @@
 func0000000000000001:
-	subw	a1, a1, a0
-	addi	a1, a1, 2
+	sub	a1, a1, a0
+	addiw	a1, a1, 2
 	seqz	a0, a1
 	ret
 
@@ -119,8 +119,8 @@ func0000000000000041:
 	ret
 
 func0000000000000081:
-	subw	a0, a0, a1
-	addi	a0, a0, 1
+	sub	a0, a0, a1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 
@@ -132,8 +132,8 @@ func000000000000002a:
 	ret
 
 func000000000000000c:
-	subw	a1, a1, a0
-	addi	a1, a1, 3
+	sub	a1, a1, a0
+	addiw	a1, a1, 3
 	snez	a0, a1
 	ret
 
@@ -180,8 +180,8 @@ func0000000000000106:
 	ret
 
 func0000000000000021:
-	subw	a0, a0, a1
-	addi	a0, a0, -4
+	sub	a0, a0, a1
+	addiw	a0, a0, -4
 	seqz	a0, a0
 	ret
 

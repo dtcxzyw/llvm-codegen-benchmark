@@ -260,10 +260,9 @@ func00000000000001d8:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, -2
-	sext.w	a2, a2
+	addiw	a2, a2, -112
 	slt	a0, a1, a0
-	addi	a1, a2, -112
-	snez	a1, a1
+	snez	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

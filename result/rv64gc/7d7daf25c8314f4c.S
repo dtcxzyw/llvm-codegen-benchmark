@@ -34,8 +34,7 @@ func00000000000007e1:
 	or	a0, a0, a2
 	slli	a1, a1, 12
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, -10
+	addiw	a0, a0, -10
 	seqz	a0, a0
 	ret
 
@@ -72,8 +71,7 @@ func0000000000000661:
 	or	a0, a0, a2
 	slli	a1, a1, 7
 	or	a0, a0, a1
-	sext.w	a0, a0
-	addi	a0, a0, 1
+	addiw	a0, a0, 1
 	seqz	a0, a0
 	ret
 

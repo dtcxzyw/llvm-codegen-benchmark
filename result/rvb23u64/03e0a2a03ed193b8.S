@@ -9,9 +9,8 @@ func0000000000000088:
 	ret
 
 func00000000000000aa:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	li	a3, -96
-	addi	a2, a2, -1
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 128
 	addw	a0, a0, a1
@@ -19,8 +18,7 @@ func00000000000000aa:
 	ret
 
 func00000000000000f4:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	seqz	a2, a2
 	slli	a2, a2, 2
 	addiw	a2, a2, 1

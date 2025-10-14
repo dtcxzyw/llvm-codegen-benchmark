@@ -25,8 +25,7 @@ func0000000000000001:
 .LBB1_2:
 	ret
 .LBB1_3:
-	sext.w	a2, a2
-	addi	a2, a2, -3
+	addiw	a2, a2, -3
 	seqz	a0, a2
 	slli	a0, a0, 36
 	beqz	a3, .LBB1_2

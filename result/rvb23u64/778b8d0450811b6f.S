@@ -1,7 +1,6 @@
 func0000000000000015:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	neg	a3, a1
-	addi	a2, a2, -1
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -18,8 +17,7 @@ func00000000000000a5:
 	ret
 
 func0000000000000010:
-	sext.w	a2, a2
-	addi	a2, a2, -1
+	addiw	a2, a2, -1
 	li	a3, -10
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 98
@@ -57,8 +55,7 @@ func0000000000000014:
 	ret
 
 func000000000000001c:
-	sext.w	a2, a2
-	addi	a2, a2, -2
+	addiw	a2, a2, -2
 	li	a3, -3
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 6

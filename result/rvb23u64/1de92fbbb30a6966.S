@@ -13,8 +13,7 @@ func0000000000000013:
 func000000000000001f:
 	andi	a2, a2, -2
 	sh2add	a1, a1, a1
-	sext.w	a2, a2
-	addi	a2, a2, -4
+	addiw	a2, a2, -4
 	seqz	a2, a2
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0

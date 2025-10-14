@@ -7,10 +7,10 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
-	li	a2, 3
-	beq	a1, a2, .LBB1_2
-	addi	a1, a1, -2
+	sext.w	a2, a1
+	li	a3, 3
+	beq	a2, a3, .LBB1_2
+	addiw	a1, a1, -2
 	seqz	a0, a1
 .LBB1_2:
 	ret

@@ -1,12 +1,10 @@
 func000000000000018c:
-	sext.w	a2, a0
-	andi	a0, a0, -2
-	sext.w	a0, a0
-	addi	a2, a2, -31
-	addi	a0, a0, -24
-	snez	a2, a2
+	andi	a2, a0, -2
+	addiw	a0, a0, -31
+	addiw	a2, a2, -24
 	snez	a0, a0
-	and	a1, a1, a2
+	snez	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

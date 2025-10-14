@@ -18,8 +18,8 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	subw	a1, a1, a2
-	addi	a1, a1, 1
+	sub	a1, a1, a2
+	addiw	a1, a1, 1
 	addi	a0, a0, 64
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, -64
@@ -48,8 +48,8 @@ func0000000000000008:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
-	addi	a1, a1, -40
+	sub	a1, a1, a2
+	addiw	a1, a1, -40
 	czero.eqz	a0, a0, a1
 	ret
 

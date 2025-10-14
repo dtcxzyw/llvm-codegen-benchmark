@@ -9,20 +9,18 @@ func0000000000000410:
 	ret
 
 func0000000000000204:
-	sext.w	a1, a0
-	addiw	a0, a0, -48
-	sltiu	a0, a0, 10
-	addi	a1, a1, -45
-	seqz	a1, a1
+	addiw	a1, a0, -48
+	addiw	a0, a0, -45
+	sltiu	a1, a1, 10
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000001204:
-	sext.w	a1, a0
-	addiw	a0, a0, -46
-	sltiu	a0, a0, 3
-	addi	a1, a1, -29
-	seqz	a1, a1
+	addiw	a1, a0, -46
+	addiw	a0, a0, -29
+	sltiu	a1, a1, 3
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

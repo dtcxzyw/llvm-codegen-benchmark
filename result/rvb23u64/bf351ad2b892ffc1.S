@@ -1,7 +1,6 @@
 func0000000000000030:
-	sext.w	a2, a2
+	addiw	a2, a2, -2
 	sext.w	a1, a1
-	addi	a2, a2, -2
 	seqz	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2
@@ -16,9 +15,8 @@ func0000000000000020:
 	ret
 
 func0000000000000035:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	sext.w	a1, a1
-	addi	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	sh3add	a0, a2, a0

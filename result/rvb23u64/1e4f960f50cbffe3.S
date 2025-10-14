@@ -124,10 +124,9 @@ func0000000000000101:
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	sext.h	a1, a1
+	addiw	a0, a0, -3
 	slti	a1, a1, 2
-	addi	a0, a0, -3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -142,10 +141,9 @@ func0000000000000184:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	sext.h	a1, a1
+	addiw	a0, a0, -40
 	srli	a1, a1, 63
-	addi	a0, a0, -40
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
