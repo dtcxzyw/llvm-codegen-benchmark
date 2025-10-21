@@ -6,7 +6,6 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	addi	a1, a1, -64
 	bclr	a0, a0, a1
 	ret
 
