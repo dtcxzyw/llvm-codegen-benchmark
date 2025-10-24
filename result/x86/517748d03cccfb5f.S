@@ -1,6 +1,6 @@
 func0000000000000141:
-	leal	4(%rdi), %eax
-	cmpl	$-4, %edi
+	movl	%edi, %eax
+	subl	$-4, %eax
 	cmovll	%edi, %eax
 	imull	$-1227133513, %eax, %eax
 	cmpl	$613566757, %eax
@@ -8,8 +8,8 @@ func0000000000000141:
 	retq
 
 func0000000000000101:
-	leal	-1000000000(%rdi), %eax
-	cmpl	$1000000000, %edi
+	movl	%edi, %eax
+	subl	$1000000000, %eax
 	cmovbl	%edi, %eax
 	imull	$1757569337, %eax, %eax
 	rorxl	$6, %eax, %eax
@@ -18,8 +18,8 @@ func0000000000000101:
 	retq
 
 func0000000000000558:
-	leal	4(%rdi), %eax
-	cmpl	$-4, %edi
+	movl	%edi, %eax
+	subl	$-4, %eax
 	cmovll	%edi, %eax
 	imulq	$613566757, %rax, %rcx
 	shrq	$32, %rcx
@@ -36,8 +36,8 @@ func0000000000000558:
 	retq
 
 func0000000000000541:
-	leal	4(%rdi), %eax
-	cmpl	$-4, %edi
+	movl	%edi, %eax
+	subl	$-4, %eax
 	cmovll	%edi, %eax
 	imull	$-1227133513, %eax, %eax
 	cmpl	$613566757, %eax

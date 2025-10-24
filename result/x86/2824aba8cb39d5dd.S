@@ -1,7 +1,7 @@
 func0000000000000008:
 	subq	%rsi, %rdi
-	leaq	-232(%rdi), %rax
-	cmpq	$232, %rdi
+	movq	%rdi, %rax
+	subq	$232, %rax
 	cmovbq	%rdi, %rax
 	retq
 

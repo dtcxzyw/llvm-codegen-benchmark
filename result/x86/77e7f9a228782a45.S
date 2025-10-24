@@ -3,7 +3,8 @@ func00000000000000e1:
 	lzcntl	%eax, %ecx
 	movl	$32, %eax
 	subl	%ecx, %eax
-	cmpl	$1, %edi
+	movl	%edi, %ecx
+	decl	%ecx
 	cmovel	%edi, %eax
 	retq
 

@@ -9,11 +9,10 @@ func0000000000000f18:
 	retq
 
 func0000000000000546:
-	leal	7(%rdx), %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	cmpl	$-7, %edx
+	subl	$-7, %edx
 	setge	%al
+	cmpl	%esi, %edx
+	setl	%cl
 	andb	%dil, %al
 	andb	%cl, %al
 	retq

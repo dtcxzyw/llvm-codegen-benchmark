@@ -68,11 +68,10 @@ func000000000000042a:
 	retq
 
 func0000000000000d4a:
-	leal	1(%rdi), %eax
-	cmpl	%eax, %esi
-	setg	%cl
-	cmpl	$-1, %edi
-	setge	%al
+	incl	%edi
+	setge	%cl
+	cmpl	%edi, %esi
+	setg	%al
 	andb	%cl, %al
 	retq
 
@@ -86,11 +85,10 @@ func000000000000054c:
 	retq
 
 func000000000000054a:
-	leal	1(%rdi), %eax
-	cmpl	%eax, %esi
-	setg	%cl
-	cmpl	$-1, %edi
-	setge	%al
+	incl	%edi
+	setge	%cl
+	cmpl	%edi, %esi
+	setg	%al
 	andb	%cl, %al
 	retq
 

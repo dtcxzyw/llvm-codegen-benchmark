@@ -8,8 +8,8 @@ func0000000000000108:
 	retq
 
 func0000000000000101:
-	leal	-100(%rdi), %eax
-	cmpb	$100, %dil
+	movl	%edi, %eax
+	subb	$100, %al
 	movzbl	%al, %eax
 	cmovbl	%edi, %eax
 	cmpb	$11, %al

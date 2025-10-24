@@ -1,9 +1,9 @@
 func0000000000003708:
-	leaq	(%rdi,%rsi), %rax
-	cmpq	$131042, %rax
-	leaq	-131042(%rdi,%rsi), %rcx
-	cmovbq	%rax, %rcx
-	cmpq	$65521, %rcx
+	addq	%rsi, %rdi
+	movq	%rdi, %rax
+	subq	$131042, %rax
+	cmovbq	%rdi, %rax
+	cmpq	$65521, %rax
 	setae	%al
 	retq
 

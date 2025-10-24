@@ -20,9 +20,9 @@ func0000000000000008:
 	retq
 
 func00000000000000aa:
-	subl	%edx, %esi
-	leal	719471(%rsi), %eax
-	cmpl	$-719471, %esi
+	movl	%esi, %eax
+	subl	%edx, %eax
+	subl	$-719471, %eax
 	cmovll	%edi, %eax
 	retq
 

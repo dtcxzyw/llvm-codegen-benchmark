@@ -6,8 +6,8 @@ func0000000000000020:
 	retq
 
 func00000000000000e3:
-	leaq	-65521(%rsi), %rax
-	cmpq	$65521, %rsi
+	movq	%rsi, %rax
+	subq	$65521, %rax
 	cmovbq	%rsi, %rax
 	addq	%rdi, %rax
 	retq

@@ -26,8 +26,8 @@ func00000000000000a6:
 
 func00000000000001b8:
 	leaq	(%rdi,%rsi), %rcx
-	cmpq	$65521, %rcx
-	leaq	-65521(%rdi,%rsi), %rax
+	movq	%rcx, %rax
+	subq	$65521, %rax
 	cmovbq	%rcx, %rax
 	retq
 

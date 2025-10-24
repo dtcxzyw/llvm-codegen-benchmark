@@ -1,6 +1,6 @@
 func0000000000000038:
-	leal	-86400(%rdx), %eax
-	cmpl	$86400, %edx
+	movl	%edx, %eax
+	subl	$86400, %eax
 	cmovbl	%edx, %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax

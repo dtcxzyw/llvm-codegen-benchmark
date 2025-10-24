@@ -1,7 +1,7 @@
 func00000000000001e6:
 	leal	1(%rdi), %ecx
 	shlq	$2, %rcx
-	cmpl	$-1, %edi
+	incl	%edi
 	movq	$-1, %rax
 	cmovgeq	%rcx, %rax
 	retq
@@ -17,7 +17,7 @@ func00000000000003e6:
 func0000000000000066:
 	leal	1(%rdi), %ecx
 	shlq	$3, %rcx
-	cmpl	$-1, %edi
+	incl	%edi
 	movq	$-1, %rax
 	cmovgeq	%rcx, %rax
 	retq

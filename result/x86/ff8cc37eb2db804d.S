@@ -1,6 +1,6 @@
 func0000000000000055:
-	leal	-64(%rsi), %eax
-	cmpl	$64, %esi
+	movl	%esi, %eax
+	subl	$64, %eax
 	cmovll	%edi, %eax
 	retq
 

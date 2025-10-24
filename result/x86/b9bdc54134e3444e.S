@@ -33,8 +33,8 @@ func000000000000036a:
 func000000000000032a:
 	cmpl	$-2450244, %esi
 	cmovgel	%esi, %edi
-	leal	-2143607405(%rdi), %eax
-	cmpl	$2143607405, %edi
+	movl	%edi, %eax
+	subl	$2143607405, %eax
 	cmovll	%edi, %eax
 	retq
 

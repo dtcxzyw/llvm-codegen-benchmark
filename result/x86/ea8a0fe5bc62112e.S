@@ -1,14 +1,14 @@
 func0000000000000501:
-	leaq	-34(%rdi), %rax
-	cmpq	$34, %rdi
+	movq	%rdi, %rax
+	subq	$34, %rax
 	cmovbq	%rdi, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
 
 func0000000000000708:
-	leaq	-131042(%rdi), %rax
-	cmpq	$131042, %rdi
+	movq	%rdi, %rax
+	subq	$131042, %rax
 	cmovbq	%rdi, %rax
 	cmpq	$65521, %rax
 	setae	%al

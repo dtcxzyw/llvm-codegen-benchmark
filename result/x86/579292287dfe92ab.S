@@ -11,8 +11,8 @@ func00000000000000a6:
 	cmpl	$8, %edi
 	movl	$-1, %ecx
 	cmovnel	%edi, %ecx
-	leal	-4(%rcx), %eax
-	cmpl	$4, %ecx
+	movl	%ecx, %eax
+	subl	$4, %eax
 	cmovll	%ecx, %eax
 	retq
 

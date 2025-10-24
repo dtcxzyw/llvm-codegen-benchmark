@@ -5,8 +5,8 @@ func0000000000000034:
 	retq
 
 func0000000000000026:
-	leal	-5(%rdi), %eax
-	cmpl	$5, %edi
+	movl	%edi, %eax
+	subl	$5, %eax
 	cmovll	%edi, %eax
 	retq
 

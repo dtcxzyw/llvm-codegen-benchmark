@@ -7,11 +7,10 @@ func000000000000010c:
 	retq
 
 func00000000000004ca:
-	leal	1(%rdi), %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	cmpl	$-1, %edi
-	setge	%al
+	incl	%edi
+	setge	%cl
+	cmpl	%esi, %edi
+	setl	%al
 	andb	%cl, %al
 	retq
 

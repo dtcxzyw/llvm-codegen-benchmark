@@ -1,9 +1,8 @@
 func0000000000000087:
-	leaq	-1(%rsi), %rax
-	cmpq	$1, %rsi
-	movl	$12, %ecx
-	cmovneq	%rax, %rcx
-	leaq	(%rdi,%rcx,4), %rax
+	decq	%rsi
+	movl	$12, %eax
+	cmovneq	%rsi, %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 
 func0000000000000187:

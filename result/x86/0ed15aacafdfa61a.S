@@ -8,11 +8,10 @@ func0000000000000250:
 	retq
 
 func0000000000000210:
-	leaq	2(%rdi), %rax
-	cmpq	%rsi, %rax
-	seta	%cl
-	cmpq	$-2, %rdi
-	setae	%al
+	subq	$-2, %rdi
+	setae	%cl
+	cmpq	%rsi, %rdi
+	seta	%al
 	orb	%cl, %al
 	retq
 

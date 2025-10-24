@@ -37,8 +37,8 @@ func0000000000000026:
 	retq
 
 func0000000000000038:
-	leaq	-2(%rsi), %rax
-	cmpq	$2, %rsi
+	movq	%rsi, %rax
+	subq	$2, %rax
 	cmovbq	%rdi, %rax
 	retq
 

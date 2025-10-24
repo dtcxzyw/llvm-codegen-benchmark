@@ -31,10 +31,11 @@ func0000000000000684:
 	retq
 
 func000000000000068c:
-	blsrl	%edi, %eax
-	sete	%cl
-	cmpl	$1, %edi
-	setne	%al
+	movl	%edi, %eax
+	decl	%eax
+	setne	%cl
+	testl	%eax, %edi
+	sete	%al
 	andb	%cl, %al
 	retq
 

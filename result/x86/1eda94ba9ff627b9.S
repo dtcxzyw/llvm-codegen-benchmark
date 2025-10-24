@@ -1,6 +1,6 @@
 func00000000000000e3:
-	leaq	-65521(%rdi), %rcx
-	cmpq	$65521, %rdi
+	movq	%rdi, %rcx
+	subq	$65521, %rcx
 	cmovbq	%rdi, %rcx
 	movzwl	%si, %eax
 	addq	%rcx, %rax

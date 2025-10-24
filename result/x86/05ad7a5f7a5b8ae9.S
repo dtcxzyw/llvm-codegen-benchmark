@@ -29,10 +29,9 @@ func0000000000000006:
 	retq
 
 func0000000000000038:
-	leaq	-65521(%rdi), %rcx
-	cmpq	$65521, %rdi
+	subq	$65521, %rdi
 	movl	$65520, %eax
-	cmovaeq	%rcx, %rax
+	cmovaeq	%rdi, %rax
 	retq
 
 func000000000000004c:

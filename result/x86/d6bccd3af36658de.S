@@ -1,18 +1,16 @@
 func0000000000000cca:
-	leal	2(%rdi), %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	cmpl	$-2, %edi
-	setge	%al
+	subl	$-2, %edi
+	setge	%cl
+	cmpl	%esi, %edi
+	setl	%al
 	andb	%cl, %al
 	retq
 
 func00000000000004ca:
-	leal	2(%rdi), %eax
-	cmpl	%esi, %eax
-	setl	%cl
-	cmpl	$-2, %edi
-	setge	%al
+	subl	$-2, %edi
+	setge	%cl
+	cmpl	%esi, %edi
+	setl	%al
 	andb	%cl, %al
 	retq
 

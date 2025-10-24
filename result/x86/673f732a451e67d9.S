@@ -15,32 +15,32 @@ func000000000000068c:
 	retq
 
 func00000000000004c6:
-	leal	-15(%rdi), %eax
-	cmpl	$15, %edi
+	movl	%edi, %eax
+	subl	$15, %eax
 	cmovll	%edi, %eax
 	cmpl	$6, %eax
 	setl	%al
 	retq
 
 func00000000000004d8:
-	leal	-15(%rdi), %eax
-	cmpl	$15, %edi
+	movl	%edi, %eax
+	subl	$15, %eax
 	cmovll	%edi, %eax
 	cmpl	$9, %eax
 	setae	%al
 	retq
 
 func00000000000004d4:
-	leal	-15(%rdi), %eax
-	cmpl	$15, %edi
+	movl	%edi, %eax
+	subl	$15, %eax
 	cmovll	%edi, %eax
 	cmpl	$12, %eax
 	setb	%al
 	retq
 
 func00000000000004c1:
-	leal	-12(%rdi), %eax
-	cmpl	$12, %edi
+	movl	%edi, %eax
+	subl	$12, %eax
 	cmovll	%edi, %eax
 	testl	%eax, %eax
 	sete	%al

@@ -20,15 +20,15 @@ func00000000000000a8:
 	retq
 
 func0000000000000020:
-	leal	-255(%rsi), %eax
-	cmpl	$255, %esi
+	movl	%esi, %eax
+	subl	$255, %eax
 	cmovbl	%esi, %eax
 	addl	%edi, %eax
 	retq
 
 func00000000000000a9:
-	leal	-48(%rsi), %eax
-	cmpl	$48, %esi
+	movl	%esi, %eax
+	subl	$48, %eax
 	cmovll	%esi, %eax
 	addl	%edi, %eax
 	retq

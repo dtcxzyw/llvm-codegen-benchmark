@@ -7,10 +7,10 @@ func0000000000000208:
 	retq
 
 func00000000000003b8:
-	movl	%esi, %eax
-	leaq	(%rdi,%rax), %rcx
-	cmpq	$131042, %rcx
-	leaq	-131042(%rdi,%rax), %rax
+	movl	%esi, %ecx
+	addq	%rdi, %rcx
+	movq	%rcx, %rax
+	subq	$131042, %rax
 	cmovbq	%rcx, %rax
 	retq
 

@@ -10,7 +10,7 @@ func0000000000000026:
 	leal	1(%rdi), %eax
 	movslq	%eax, %rcx
 	shlq	$2, %rcx
-	cmpl	$-1, %edi
+	incl	%edi
 	movq	$-1, %rax
 	cmovgeq	%rcx, %rax
 	retq

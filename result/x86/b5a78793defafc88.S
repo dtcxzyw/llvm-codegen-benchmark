@@ -47,10 +47,9 @@ func000000000000008a:
 
 func000000000000052a:
 	leal	100(%rdi), %eax
-	leal	-300(%rdi), %ecx
-	cmpl	$300, %edi
-	cmovll	%eax, %ecx
-	cmpl	$301, %ecx
+	subl	$300, %edi
+	cmovll	%eax, %edi
+	cmpl	$301, %edi
 	setge	%al
 	retq
 

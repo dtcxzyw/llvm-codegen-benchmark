@@ -9,11 +9,10 @@ func0000000000000546:
 	retq
 
 func000000000000054a:
-	leaq	1(%rdi), %rax
-	cmpq	%rax, %rsi
-	setg	%cl
-	cmpq	$-1, %rdi
-	setge	%al
+	incq	%rdi
+	setge	%cl
+	cmpq	%rdi, %rsi
+	setg	%al
 	andb	%cl, %al
 	retq
 

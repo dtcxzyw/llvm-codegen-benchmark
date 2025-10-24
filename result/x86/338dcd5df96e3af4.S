@@ -1,7 +1,7 @@
 func0000000000000038:
 	subl	%esi, %edi
-	leal	-86400(%rdi), %eax
-	cmpl	$86400, %edi
+	movl	%edi, %eax
+	subl	$86400, %eax
 	cmovbl	%edi, %eax
 	retq
 
@@ -28,8 +28,8 @@ func0000000000000024:
 
 func00000000000000aa:
 	subl	%esi, %edi
-	leal	4(%rdi), %eax
-	cmpl	$-4, %edi
+	movl	%edi, %eax
+	subl	$-4, %eax
 	cmovll	%edi, %eax
 	retq
 

@@ -1,7 +1,6 @@
 func0000000000000026:
-	leal	1(%rsi), %eax
-	cmpl	$-1, %esi
-	cmovll	%edi, %eax
-	cltq
+	incl	%esi
+	cmovll	%edi, %esi
+	movslq	%esi, %rax
 	retq
 

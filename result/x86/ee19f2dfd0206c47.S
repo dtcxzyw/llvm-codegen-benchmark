@@ -1,7 +1,7 @@
 func0000000000000064:
 	leal	(%rdi,%rsi), %ecx
-	cmpl	$360, %ecx
-	leal	-360(%rdi,%rsi), %eax
+	movl	%ecx, %eax
+	subl	$360, %eax
 	cmovll	%ecx, %eax
 	retq
 
@@ -15,8 +15,8 @@ func0000000000000065:
 
 func0000000000000080:
 	leal	(%rdi,%rsi), %ecx
-	cmpl	$100000000, %ecx
-	leal	-100000000(%rdi,%rsi), %eax
+	movl	%ecx, %eax
+	subl	$100000000, %eax
 	cmovbl	%ecx, %eax
 	retq
 

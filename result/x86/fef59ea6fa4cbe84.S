@@ -21,9 +21,8 @@ func00000000000000aa:
 	retq
 
 func00000000000001aa:
-	leal	573372(%rdi), %ecx
-	leal	719468(%rdi), %eax
-	cmpl	$-719468, %edi
-	cmovll	%ecx, %eax
+	leal	573372(%rdi), %eax
+	subl	$-719468, %edi
+	cmovgel	%edi, %eax
 	retq
 

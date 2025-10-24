@@ -1,9 +1,8 @@
 func0000000000000108:
-	leaq	4(%rdi), %rax
-	cmpq	%rsi, %rax
-	seta	%cl
-	cmpq	$-4, %rdi
-	setae	%al
+	subq	$-4, %rdi
+	setae	%cl
+	cmpq	%rsi, %rdi
+	seta	%al
 	orb	%cl, %al
 	retq
 

@@ -5,8 +5,8 @@ func0000000000000026:
 	retq
 
 func0000000000000038:
-	leal	-86400(%rdi), %eax
-	cmpl	$86400, %edi
+	movl	%edi, %eax
+	subl	$86400, %eax
 	cmovbl	%edi, %eax
 	retq
 
@@ -47,8 +47,8 @@ func0000000000000006:
 	retq
 
 func0000000000000008:
-	leal	-2(%rdi), %eax
-	cmpl	$2, %edi
+	movl	%edi, %eax
+	subl	$2, %eax
 	cmovbl	%edi, %eax
 	retq
 

@@ -12,8 +12,8 @@ func000000000000002a:
 	retq
 
 func0000000000000008:
-	leal	-4(%rdi), %eax
-	cmpw	$4, %di
+	movl	%edi, %eax
+	subw	$4, %ax
 	cmovbl	%edi, %eax
 	retq
 
@@ -25,8 +25,8 @@ func0000000000000078:
 	retq
 
 func0000000000000038:
-	leal	-4(%rdi), %eax
-	cmpw	$4, %di
+	movl	%edi, %eax
+	subw	$4, %ax
 	cmovbl	%edi, %eax
 	retq
 

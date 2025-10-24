@@ -1,12 +1,12 @@
 func0000000000000028:
-	leaq	-34(%rdi), %rax
-	cmpq	$34, %rdi
+	movq	%rdi, %rax
+	subq	$34, %rax
 	cmovbq	%rdi, %rax
 	retq
 
 func0000000000000008:
-	leaq	-232(%rdi), %rax
-	cmpq	$232, %rdi
+	movq	%rdi, %rax
+	subq	$232, %rax
 	cmovbq	%rdi, %rax
 	retq
 
@@ -23,10 +23,9 @@ func000000000000002a:
 	retq
 
 func0000000000000038:
-	movabsq	$-576460752303423488, %rax
-	addq	%rdi, %rax
 	movabsq	$576460752303423488, %rcx
-	cmpq	%rcx, %rdi
+	movq	%rdi, %rax
+	subq	%rcx, %rax
 	cmovbeq	%rdi, %rax
 	retq
 

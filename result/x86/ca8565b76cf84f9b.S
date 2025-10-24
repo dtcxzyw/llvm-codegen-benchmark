@@ -16,20 +16,18 @@ func000000000000002c:
 	retq
 
 func000000000000042c:
-	leal	-1(%rdi), %eax
-	cmpl	%eax, %esi
-	sete	%cl
-	cmpl	$1, %edi
-	setne	%al
+	decl	%edi
+	setne	%cl
+	cmpl	%edi, %esi
+	sete	%al
 	andb	%cl, %al
 	retq
 
 func0000000000000088:
-	leal	-8(%rdi), %eax
-	cmpl	%eax, %esi
-	setb	%cl
-	cmpl	$8, %edi
-	setae	%al
+	subl	$8, %edi
+	setae	%cl
+	cmpl	%edi, %esi
+	setb	%al
 	andb	%cl, %al
 	retq
 

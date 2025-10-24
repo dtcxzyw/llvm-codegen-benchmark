@@ -1,8 +1,8 @@
 func00000000000001b8:
-	movzwl	%si, %eax
-	leaq	(%rax,%rdi), %rcx
-	cmpq	$65521, %rcx
-	leaq	-65521(%rax,%rdi), %rax
+	movzwl	%si, %ecx
+	addq	%rdi, %rcx
+	movq	%rcx, %rax
+	subq	$65521, %rax
 	cmovbq	%rcx, %rax
 	retq
 

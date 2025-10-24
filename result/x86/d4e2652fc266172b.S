@@ -23,16 +23,16 @@ func0000000000000299:
 
 func0000000000000399:
 	leal	(%rdi,%rsi), %ecx
-	cmpl	$-305, %ecx
-	leal	305(%rdi,%rsi), %eax
+	movl	%ecx, %eax
+	subl	$-305, %eax
 	cmovgel	%ecx, %eax
 	addl	$308, %eax
 	retq
 
 func00000000000002a9:
 	leal	(%rdi,%rsi), %ecx
-	cmpl	$5003, %ecx
-	leal	-5003(%rdi,%rsi), %eax
+	movl	%ecx, %eax
+	subl	$5003, %eax
 	cmovll	%ecx, %eax
 	addl	$-5003, %eax
 	retq

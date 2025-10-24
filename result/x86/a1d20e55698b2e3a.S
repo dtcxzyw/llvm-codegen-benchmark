@@ -33,8 +33,8 @@ func000000000000006a:
 func000000000000002a:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	leal	-2143607405(%rsi), %eax
-	cmpl	$2143607405, %esi
+	movl	%esi, %eax
+	subl	$2143607405, %eax
 	cmovll	%esi, %eax
 	retq
 

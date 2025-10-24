@@ -23,10 +23,11 @@ func000000000000068a:
 	retq
 
 func000000000000028c:
-	blsrq	%rdi, %rax
-	sete	%cl
-	cmpq	$1, %rdi
-	setne	%al
+	movq	%rdi, %rax
+	decq	%rax
+	setne	%cl
+	testq	%rax, %rdi
+	sete	%al
 	andb	%cl, %al
 	retq
 

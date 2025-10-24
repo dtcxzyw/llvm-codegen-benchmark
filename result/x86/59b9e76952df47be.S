@@ -17,11 +17,10 @@ func0000000000000561:
 	retq
 
 func0000000000000108:
-	leal	2(%rdi), %eax
-	cmpl	%esi, %eax
-	seta	%cl
-	cmpl	$-2, %edi
-	setae	%al
+	subl	$-2, %edi
+	setae	%cl
+	cmpl	%esi, %edi
+	seta	%al
 	orb	%cl, %al
 	retq
 

@@ -6,8 +6,8 @@ func000000000000002a:
 	retq
 
 func0000000000000008:
-	leal	-16(%rdi), %eax
-	cmpb	$16, %dil
+	movl	%edi, %eax
+	subb	$16, %al
 	movzbl	%al, %eax
 	cmovbl	%edi, %eax
 	retq

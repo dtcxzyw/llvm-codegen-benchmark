@@ -55,24 +55,24 @@ func000000000000054a:
 	retq
 
 func0000000000000701:
-	leal	-32(%rdi), %eax
-	cmpl	$32, %edi
+	movl	%edi, %eax
+	subl	$32, %eax
 	cmovbl	%edi, %eax
 	testl	%eax, %eax
 	sete	%al
 	retq
 
 func0000000000000cc8:
-	leal	305(%rdi), %eax
-	cmpl	$-305, %edi
+	movl	%edi, %eax
+	subl	$-305, %eax
 	cmovgel	%edi, %eax
 	cmpl	$-22, %eax
 	setae	%al
 	retq
 
 func0000000000000cca:
-	leal	305(%rdi), %eax
-	cmpl	$-305, %edi
+	movl	%edi, %eax
+	subl	$-305, %eax
 	cmovgel	%edi, %eax
 	cmpl	$309, %eax
 	setge	%al
@@ -91,16 +91,16 @@ func0000000000000546:
 	retq
 
 func0000000000000541:
-	leal	-12(%rdi), %eax
-	cmpl	$12, %edi
+	movl	%edi, %eax
+	subl	$12, %eax
 	cmovll	%edi, %eax
 	cmpl	$1, %eax
 	sete	%al
 	retq
 
 func0000000000000101:
-	leal	-1000000000(%rdi), %eax
-	cmpl	$1000000000, %edi
+	movl	%edi, %eax
+	subl	$1000000000, %eax
 	cmovbl	%edi, %eax
 	testl	%eax, %eax
 	sete	%al

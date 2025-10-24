@@ -8,20 +8,20 @@ func00000000000004ca:
 	retq
 
 func0000000000001cc8:
-	leal	(%rdi,%rsi), %eax
-	cmpl	$-305, %eax
-	leal	305(%rdi,%rsi), %ecx
-	cmovgel	%eax, %ecx
-	cmpl	$-22, %ecx
+	addl	%esi, %edi
+	movl	%edi, %eax
+	subl	$-305, %eax
+	cmovgel	%edi, %eax
+	cmpl	$-22, %eax
 	setae	%al
 	retq
 
 func0000000000001cca:
-	leal	(%rdi,%rsi), %eax
-	cmpl	$-305, %eax
-	leal	305(%rdi,%rsi), %ecx
-	cmovgel	%eax, %ecx
-	cmpl	$309, %ecx
+	addl	%esi, %edi
+	movl	%edi, %eax
+	subl	$-305, %eax
+	cmovgel	%edi, %eax
+	cmpl	$309, %eax
 	setge	%al
 	retq
 
@@ -32,11 +32,11 @@ func0000000000001cc6:
 	retq
 
 func0000000000001541:
-	leal	(%rdi,%rsi), %eax
-	cmpl	$12, %eax
-	leal	-12(%rdi,%rsi), %ecx
-	cmovll	%eax, %ecx
-	cmpl	$1, %ecx
+	addl	%esi, %edi
+	movl	%edi, %eax
+	subl	$12, %eax
+	cmovll	%edi, %eax
+	cmpl	$1, %eax
 	sete	%al
 	retq
 

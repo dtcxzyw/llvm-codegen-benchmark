@@ -15,8 +15,8 @@ func00000000000000c4:
 	retq
 
 func0000000000000101:
-	leal	-18(%rsi), %eax
-	cmpl	$18, %esi
+	movl	%esi, %eax
+	subl	$18, %eax
 	cmovbl	%esi, %eax
 	cmpl	%edi, %eax
 	sete	%al

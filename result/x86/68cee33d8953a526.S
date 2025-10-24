@@ -32,8 +32,8 @@ func0000000000000098:
 	retq
 
 func0000000000000199:
-	leal	305(%rdi), %eax
-	cmpl	$-305, %edi
+	movl	%edi, %eax
+	subl	$-305, %eax
 	cmovgel	%edi, %eax
 	addl	$308, %eax
 	retq

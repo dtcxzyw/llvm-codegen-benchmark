@@ -1,9 +1,8 @@
 func000000000000088c:
-	leaq	1(%rdi), %rax
-	cmpq	%rsi, %rax
-	setb	%cl
-	cmpq	$-1, %rdi
-	setne	%al
+	incq	%rdi
+	setne	%cl
+	cmpq	%rsi, %rdi
+	setb	%al
 	andb	%cl, %al
 	retq
 
@@ -34,11 +33,10 @@ func0000000000000cd4:
 	retq
 
 func0000000000000088:
-	leaq	-12(%rdi), %rax
-	cmpq	%rsi, %rax
-	setb	%cl
-	cmpq	$12, %rdi
-	setae	%al
+	subq	$12, %rdi
+	setae	%cl
+	cmpq	%rsi, %rdi
+	setb	%al
 	andb	%cl, %al
 	retq
 

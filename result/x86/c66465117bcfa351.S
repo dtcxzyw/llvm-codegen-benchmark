@@ -6,9 +6,9 @@ func0000000000000078:
 	retq
 
 func0000000000000038:
-	andl	$2047, %esi
-	leal	-1023(%rsi), %eax
-	cmpl	$1023, %esi
+	movl	%esi, %eax
+	andl	$2047, %eax
+	subl	$1023, %eax
 	cmovbl	%edi, %eax
 	retq
 

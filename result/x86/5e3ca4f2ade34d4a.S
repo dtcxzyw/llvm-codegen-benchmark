@@ -1,6 +1,6 @@
 func0000000000000104:
-	leaq	-232(%rsi), %rax
-	cmpq	$232, %rsi
+	movq	%rsi, %rax
+	subq	$232, %rax
 	cmovbq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al
@@ -16,8 +16,8 @@ func0000000000000546:
 	retq
 
 func0000000000000541:
-	leaq	-1000000000(%rsi), %rax
-	cmpq	$1000000000, %rsi
+	movq	%rsi, %rax
+	subq	$1000000000, %rax
 	cmovlq	%rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al

@@ -24,10 +24,9 @@ func0000000000000029:
 	retq
 
 func0000000000000019:
-	leal	-5(%rdi), %eax
-	leal	1(%rdi), %ecx
-	cmpl	$5, %edi
-	cmovgel	%eax, %ecx
-	movslq	%ecx, %rax
+	leal	1(%rdi), %eax
+	subl	$5, %edi
+	cmovll	%eax, %edi
+	movslq	%edi, %rax
 	retq
 

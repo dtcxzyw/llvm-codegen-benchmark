@@ -11,8 +11,8 @@ func000000000000000c:
 	retq
 
 func0000000000000071:
-	leal	-32(%rdi), %eax
-	cmpl	$32, %edi
+	movl	%edi, %eax
+	subl	$32, %eax
 	cmovbl	%edi, %eax
 	retq
 

@@ -27,9 +27,8 @@ func00000000000000f4:
 	retq
 
 func00000000000000aa:
-	leal	(%rsi,%rdx), %ecx
-	leal	719468(%rsi,%rdx), %eax
-	cmpl	$-719468, %ecx
+	leal	(%rsi,%rdx), %eax
+	subl	$-719468, %eax
 	cmovll	%edi, %eax
 	retq
 

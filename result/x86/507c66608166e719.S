@@ -8,8 +8,8 @@ func0000000000000408:
 	retq
 
 func0000000000001c68:
-	leaq	-65521(%rsi), %rax
-	cmpq	$65521, %rsi
+	movq	%rsi, %rax
+	subq	$65521, %rax
 	cmovbq	%rsi, %rax
 	addq	%rdi, %rax
 	cmpq	$65521, %rax

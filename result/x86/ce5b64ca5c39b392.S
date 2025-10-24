@@ -13,8 +13,8 @@ func0000000000000026:
 	negb	%dil
 	sbbl	%ecx, %ecx
 	orl	%esi, %ecx
-	leal	-4(%rcx), %eax
-	cmpl	$4, %ecx
+	movl	%ecx, %eax
+	subl	$4, %eax
 	cmovll	%ecx, %eax
 	retq
 
