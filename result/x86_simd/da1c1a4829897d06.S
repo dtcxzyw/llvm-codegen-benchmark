@@ -9,9 +9,7 @@ func000000000000001b:
 
 func0000000000000013:
 	vpslld	$16, %ymm2, %ymm2
-	vpor	%ymm2, %ymm0, %ymm2
 	vpmovzxbd	%xmm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpternlogd	$30, %ymm1, %ymm2, %ymm0
+	vpternlogd	$1, %ymm2, %ymm1, %ymm0
 	retq
 

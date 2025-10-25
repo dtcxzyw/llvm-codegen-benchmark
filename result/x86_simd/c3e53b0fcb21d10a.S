@@ -64,9 +64,7 @@ func0000000000000007:
 	.zero	4,1
 func0000000000000006:
 	vpmovdb	%ymm1, %xmm1
-	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm2
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpternlogq	$30, %xmm1, %xmm2, %xmm0
+	vpternlogd	$19, .LCPI1_1(%rip){1to4}, %xmm1, %xmm0
 	vzeroupper
 	retq
 

@@ -1,6 +1,4 @@
 func0000000000000000:
-	vpand	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogq	$54, %ymm1, %ymm2, %ymm0
+	vpternlogq	$7, %ymm2, %ymm1, %ymm0
 	retq
 

@@ -18,8 +18,6 @@ func0000000000000000:
 	vpmovw2m	%xmm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2 {%k1}
-	vpor	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogd	$86, %ymm2, %ymm1, %ymm0
+	vpternlogd	$1, %ymm2, %ymm1, %ymm0
 	retq
 

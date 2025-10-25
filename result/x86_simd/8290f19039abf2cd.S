@@ -1,10 +1,8 @@
 .LCPI0_0:
 	.quad	4294963200
 func0000000000000003:
-	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpsllq	$32, %ymm0, %ymm2
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpternlogq	$30, %ymm1, %ymm2, %ymm0
+	vpsllq	$32, %ymm0, %ymm0
+	vpternlogq	$7, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

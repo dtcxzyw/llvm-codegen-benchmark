@@ -6,8 +6,6 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	vpor	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogq	$106, %ymm2, %ymm1, %ymm0
+	vpternlogq	$31, %ymm2, %ymm1, %ymm0
 	retq
 

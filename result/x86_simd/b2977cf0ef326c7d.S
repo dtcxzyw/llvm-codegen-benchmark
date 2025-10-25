@@ -13,8 +13,6 @@ func0000000000000001:
 .LCPI1_1:
 	.zero	4,1
 func0000000000000000:
-	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpternlogq	$86, %xmm2, %xmm1, %xmm0
+	vpternlogd	$7, .LCPI1_1(%rip){1to4}, %xmm1, %xmm0
 	retq
 

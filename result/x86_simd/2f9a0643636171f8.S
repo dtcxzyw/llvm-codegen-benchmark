@@ -1,7 +1,5 @@
 func0000000000000000:
-	vpor	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogd	$86, %ymm2, %ymm1, %ymm0
+	vpternlogd	$1, %ymm2, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
