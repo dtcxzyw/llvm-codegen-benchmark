@@ -32,15 +32,11 @@ func0000000000000022:
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.quad	0x400921fb54442d18
-.LCPI3_1:
-	.quad	0x3d719799812dea11
 func0000000000000024:
-	lui	a0, %hi(.LCPI3_0)
-	lui	a1, %hi(.LCPI3_1)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	fld	fa4, %lo(.LCPI3_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000024)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000024)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fabs.d	fa3, fa1
 	flt.d	a0, fa3, fa5
 	flt.d	a1, fa4, fa0
@@ -96,4 +92,8 @@ func0000000000000092:
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000024:
+	.quad	0x400921fb54442d18
+	.quad	0x3d719799812dea11
 

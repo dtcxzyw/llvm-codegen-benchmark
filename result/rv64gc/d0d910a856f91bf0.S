@@ -1,14 +1,10 @@
-.LCPI0_0:
-	.quad	0x3e45798ee2308c3a
-.LCPI0_1:
-	.quad	0xbe45798ee2308c3a
 func0000000000000004:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	flt.d	a0, fa5, fa0
-	bnez	a0, .LBB0_2
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa0, %lo(.LCPI0_1)(a0)
+	lui	a0, %hi(.promoted_doubles.func0000000000000004)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000004)
+	fld	fa5, 0(a0)
+	flt.d	a1, fa5, fa0
+	bnez	a1, .LBB0_2
+	fld	fa0, 8(a0)
 	ret
 .LBB0_2:
 	fneg.d	fa0, fa0
@@ -23,4 +19,8 @@ func000000000000000e:
 .LBB1_2:
 	fneg.d	fa0, fa0
 	ret
+
+.promoted_doubles.func0000000000000004:
+	.quad	0x3e45798ee2308c3a
+	.quad	0xbe45798ee2308c3a
 

@@ -60,29 +60,24 @@ func0000000000000044:
 .LBB3_2:
 	ret
 
-.LCPI4_0:
-	.quad	0x3fb999999999999a
-.LCPI4_1:
-	.quad	0x3f50624dd2f1a9fc
 func0000000000000052:
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa0, fa5
-	bnez	a0, .LBB4_3
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa5, %lo(.LCPI4_1)(a0)
-	flt.d	a0, fa0, fa5
+	fmv.d	fa5, fa0
+	lui	a0, %hi(.promoted_doubles.func0000000000000052)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000052)
+	fld	fa0, 8(a0)
+	fmv.d.x	fa4, zero
+	fle.d	a1, fa5, fa4
+	bnez	a1, .LBB4_3
+	flt.d	a0, fa5, fa0
 	beqz	a0, .LBB4_4
 .LBB4_2:
-	fmv.d	fa0, fa5
 	ret
 .LBB4_3:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa0, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa5, %lo(.LCPI4_1)(a0)
-	flt.d	a0, fa0, fa5
+	fld	fa5, 0(a0)
+	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB4_2
 .LBB4_4:
+	fmv.d	fa0, fa5
 	ret
 
 func00000000000000ea:
@@ -101,4 +96,8 @@ func00000000000000ea:
 .LBB5_4:
 	fmv.d	fa0, fa5
 	ret
+
+.promoted_doubles.func0000000000000052:
+	.quad	0x3fb999999999999a
+	.quad	0x3f50624dd2f1a9fc
 

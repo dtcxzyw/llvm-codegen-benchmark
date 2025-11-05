@@ -1,24 +1,20 @@
-.LCPI0_0:
-	.quad	0x4044b212c473c6fc
-.LCPI0_1:
-	.quad	0xc03970e957377778
-.LCPI0_2:
-	.quad	0xc0329d70ae54a3de
-.LCPI0_3:
-	.quad	0x40040d931b28620d
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa3, %lo(.LCPI0_2)(a0)
-	lui	a0, %hi(.LCPI0_3)
-	fld	fa2, %lo(.LCPI0_3)(a0)
+	lui	a0, %hi(.promoted_doubles.func0000000000000000)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000000)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
+	fld	fa3, 16(a0)
+	fld	fa2, 24(a0)
 	fmul.d	fa1, fa0, fa0
-	fmadd.d	fa5, fa1, fa4, fa5
+	fmadd.d	fa5, fa1, fa5, fa4
 	fmadd.d	fa5, fa5, fa1, fa3
 	fmadd.d	fa5, fa5, fa1, fa2
 	fmul.d	fa0, fa0, fa5
 	ret
+
+.promoted_doubles.func0000000000000000:
+	.quad	0xc03970e957377778
+	.quad	0x4044b212c473c6fc
+	.quad	0xc0329d70ae54a3de
+	.quad	0x40040d931b28620d
 

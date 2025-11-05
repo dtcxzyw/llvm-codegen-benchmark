@@ -15,29 +15,21 @@ func00000000000000c7:
 	and	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x3f1a36e2eb1c432d
-.LCPI2_1:
-	.quad	0x40c3880000000000
 func0000000000000024:
-	lui	a0, %hi(.LCPI2_0)
-	lui	a1, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fld	fa4, %lo(.LCPI2_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000024)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000024)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
 	ret
 
-.LCPI3_0:
-	.quad	0x3fd6666666666666
-.LCPI3_1:
-	.quad	0x3fcfaee41e6a7498
 func0000000000000022:
-	lui	a0, %hi(.LCPI3_0)
-	lui	a1, %hi(.LCPI3_1)
-	fld	fa5, %lo(.LCPI3_0)(a0)
-	fld	fa4, %lo(.LCPI3_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000022)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000022)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -138,29 +130,21 @@ func0000000000000084:
 	and	a0, a0, a1
 	ret
 
-.LCPI14_0:
-	.quad	0x3fdccccccccccccd
-.LCPI14_1:
-	.quad	0x3fd3333333333333
 func00000000000000cc:
-	lui	a0, %hi(.LCPI14_0)
-	lui	a1, %hi(.LCPI14_1)
-	fld	fa5, %lo(.LCPI14_0)(a0)
-	fld	fa4, %lo(.LCPI14_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func00000000000000cc)
+	addi	a0, a0, %lo(.promoted_doubles.func00000000000000cc)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fle.d	a0, fa5, fa1
 	fle.d	a1, fa4, fa0
 	and	a0, a0, a1
 	ret
 
-.LCPI15_0:
-	.quad	0x3fd6666666666666
-.LCPI15_1:
-	.quad	0x3fd3333333333333
 func00000000000000c2:
-	lui	a0, %hi(.LCPI15_0)
-	lui	a1, %hi(.LCPI15_1)
-	fld	fa5, %lo(.LCPI15_0)(a0)
-	fld	fa4, %lo(.LCPI15_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func00000000000000c2)
+	addi	a0, a0, %lo(.promoted_doubles.func00000000000000c2)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fle.d	a0, fa5, fa1
 	flt.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -174,15 +158,11 @@ func0000000000000077:
 	xori	a0, a0, 1
 	ret
 
-.LCPI17_0:
-	.quad	0x3c9cd2b297d889bc
-.LCPI17_1:
-	.quad	0x47efffffe0000000
 func00000000000000b7:
-	lui	a0, %hi(.LCPI17_0)
-	lui	a1, %hi(.LCPI17_1)
-	fld	fa5, %lo(.LCPI17_0)(a0)
-	fld	fa4, %lo(.LCPI17_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func00000000000000b7)
+	addi	a0, a0, %lo(.promoted_doubles.func00000000000000b7)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa1
 	feq.d	a1, fa0, fa4
 	or	a0, a0, a1
@@ -454,15 +434,11 @@ func0000000000000027:
 	and	a0, a0, a1
 	ret
 
-.LCPI47_0:
-	.quad	0x3f847ae147ae147b
-.LCPI47_1:
-	.quad	0x3fef5c28f5c28f5c
 func00000000000000b4:
-	lui	a0, %hi(.LCPI47_0)
-	fld	fa5, %lo(.LCPI47_0)(a0)
-	lui	a0, %hi(.LCPI47_1)
-	fld	fa4, %lo(.LCPI47_1)(a0)
+	lui	a0, %hi(.promoted_doubles.func00000000000000b4)
+	addi	a0, a0, %lo(.promoted_doubles.func00000000000000b4)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa1
 	xori	a0, a0, 1
 	flt.d	a1, fa4, fa0
@@ -478,4 +454,28 @@ func0000000000000086:
 	flt.d	a0, fa0, fa5
 	and	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000024:
+	.quad	0x3f1a36e2eb1c432d
+	.quad	0x40c3880000000000
+
+.promoted_doubles.func0000000000000022:
+	.quad	0x3fd6666666666666
+	.quad	0x3fcfaee41e6a7498
+
+.promoted_doubles.func00000000000000cc:
+	.quad	0x3fdccccccccccccd
+	.quad	0x3fd3333333333333
+
+.promoted_doubles.func00000000000000c2:
+	.quad	0x3fd6666666666666
+	.quad	0x3fd3333333333333
+
+.promoted_doubles.func00000000000000b7:
+	.quad	0x3c9cd2b297d889bc
+	.quad	0x47efffffe0000000
+
+.promoted_doubles.func00000000000000b4:
+	.quad	0x3f847ae147ae147b
+	.quad	0x3fef5c28f5c28f5c
 

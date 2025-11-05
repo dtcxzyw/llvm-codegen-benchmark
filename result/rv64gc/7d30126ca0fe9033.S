@@ -53,17 +53,13 @@ func0000000000000007:
 	fmv.d.x	fa0, a0
 	ret
 
-.LCPI3_0:
-	.quad	0xbff921fb54442d18
-.LCPI3_1:
-	.quad	0x3ff921fb54442d18
 func0000000000000004:
-	lui	a1, %hi(.LCPI3_1)
-	fld	fa5, %lo(.LCPI3_1)(a1)
+	lui	a1, %hi(.promoted_doubles.func0000000000000004)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000004)
+	fld	fa5, 8(a1)
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
+	fld	fa4, 0(a1)
 	flt.d	a0, fa4, fa1
 	bnez	a0, .LBB3_3
 .LBB3_2:
@@ -84,4 +80,8 @@ func0000000000000006:
 	fmv.d	fa0, fa5
 .LBB4_3:
 	ret
+
+.promoted_doubles.func0000000000000004:
+	.quad	0xbff921fb54442d18
+	.quad	0x3ff921fb54442d18
 

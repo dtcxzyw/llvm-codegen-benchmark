@@ -15,18 +15,18 @@ func0000000000000004:
 	or	a0, a0, a1
 	ret
 
-.LCPI2_0:
-	.quad	0x3fb99999a0000000
-.LCPI2_1:
-	.quad	0x3fe6666660000000
 func0000000000000016:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	lui	a1, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a1)
+	lui	a1, %hi(.promoted_doubles.func0000000000000016)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000016)
+	fld	fa5, 0(a1)
+	fld	fa4, 8(a1)
 	fsub.d	fa5, fa5, fa0
 	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000016:
+	.quad	0x3fb99999a0000000
+	.quad	0x3fe6666660000000
 

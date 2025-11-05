@@ -75,15 +75,11 @@ func0000000000000248:
 	or	a0, a0, a1
 	ret
 
-.LCPI7_0:
-	.quad	0x3eb0c6f7a0b5ed8d
-.LCPI7_1:
-	.quad	0x401921fb54442d18
 func0000000000000090:
-	lui	a1, %hi(.LCPI7_0)
-	lui	a2, %hi(.LCPI7_1)
-	fld	fa5, %lo(.LCPI7_0)(a1)
-	fld	fa4, %lo(.LCPI7_1)(a2)
+	lui	a1, %hi(.promoted_doubles.func0000000000000090)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000090)
+	fld	fa5, 0(a1)
+	fld	fa4, 8(a1)
 	flt.d	a1, fa1, fa5
 	flt.d	a2, fa4, fa0
 	or	a1, a1, a2
@@ -164,4 +160,8 @@ func0000000000000110:
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000090:
+	.quad	0x3eb0c6f7a0b5ed8d
+	.quad	0x401921fb54442d18
 

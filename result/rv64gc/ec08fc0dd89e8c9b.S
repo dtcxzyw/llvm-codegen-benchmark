@@ -86,20 +86,20 @@ func0000000000000035:
 	xori	a0, a0, 1
 	ret
 
-.LCPI7_0:
-	.quad	0x3ff921fb54442d18
-.LCPI7_1:
-	.quad	0xbff921fb54442d18
 func0000000000000042:
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa4, %lo(.LCPI7_0)(a0)
-	fsub.d	fa5, fa1, fa2
-	flt.d	a0, fa4, fa5
+	lui	a0, %hi(.promoted_doubles.func0000000000000042)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000042)
+	fld	fa3, 0(a0)
+	fld	fa5, 8(a0)
+	fsub.d	fa4, fa1, fa2
+	flt.d	a0, fa3, fa4
 	bnez	a0, .LBB7_2
-	fmv.d	fa0, fa5
+	fmv.d	fa0, fa4
 .LBB7_2:
-	lui	a0, %hi(.LCPI7_1)
-	fld	fa5, %lo(.LCPI7_1)(a0)
 	flt.d	a0, fa0, fa5
 	ret
+
+.promoted_doubles.func0000000000000042:
+	.quad	0x3ff921fb54442d18
+	.quad	0xbff921fb54442d18
 

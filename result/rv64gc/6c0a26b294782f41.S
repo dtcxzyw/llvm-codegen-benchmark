@@ -25,20 +25,28 @@ func0000000000000424:
 	flt.d	a0, fa4, fa5
 	ret
 
-.LCPI2_0:
-	.quad	0x3f1a36e2eb1c432d
-.LCPI2_1:
-	.quad	0x3feccccccccccccd
 func0000000000000442:
-	flt.d	a0, fa1, fa0
-	bnez	a0, .LBB2_2
-	fmv.d	fa0, fa1
+	lui	a0, %hi(.promoted_doubles.func0000000000000442)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000442)
+	fld	fa5, 0(a0)
+	flt.d	a1, fa1, fa0
+	beqz	a1, .LBB2_3
+	fld	fa4, 8(a0)
+	flt.d	a0, fa5, fa0
+	beqz	a0, .LBB2_4
 .LBB2_2:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
-	fmax.d	fa5, fa0, fa5
+	flt.d	a0, fa0, fa4
+	ret
+.LBB2_3:
+	fmv.d	fa0, fa1
+	fld	fa4, 8(a0)
+	flt.d	a0, fa5, fa1
+	bnez	a0, .LBB2_2
+.LBB2_4:
 	flt.d	a0, fa5, fa4
 	ret
+
+.promoted_doubles.func0000000000000442:
+	.quad	0x3f1a36e2eb1c432d
+	.quad	0x3feccccccccccccd
 

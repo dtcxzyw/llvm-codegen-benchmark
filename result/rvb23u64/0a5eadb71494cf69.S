@@ -62,16 +62,12 @@ func0000000000000094:
 	or	a0, a0, a1
 	ret
 
-.LCPI6_0:
-	.quad	0xbddb7cdfd9d7bdbb
-.LCPI6_1:
-	.quad	0x3ff000000006df38
 func00000000000000a6:
 	fdiv.d	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI6_0)
-	lui	a1, %hi(.LCPI6_1)
-	fld	fa4, %lo(.LCPI6_0)(a0)
-	fld	fa3, %lo(.LCPI6_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func00000000000000a6)
+	addi	a0, a0, %lo(.promoted_doubles.func00000000000000a6)
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
 	fle.d	a0, fa4, fa5
 	fle.d	a1, fa5, fa3
 	and	a0, a0, a1
@@ -86,4 +82,8 @@ func0000000000000194:
 	fle.d	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
+
+.promoted_doubles.func00000000000000a6:
+	.quad	0xbddb7cdfd9d7bdbb
+	.quad	0x3ff000000006df38
 

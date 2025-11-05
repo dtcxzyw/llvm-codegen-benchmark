@@ -113,30 +113,22 @@ func0000000000000003:
 	xori	a0, a0, 1
 	ret
 
-.LCPI10_0:
-	.quad	0xbf91df46a2529d39
-.LCPI10_1:
-	.quad	0x402921fb54442d18
 func0000000000000005:
-	lui	a0, %hi(.LCPI10_0)
-	fld	fa5, %lo(.LCPI10_0)(a0)
-	lui	a0, %hi(.LCPI10_1)
-	fld	fa4, %lo(.LCPI10_1)(a0)
+	lui	a0, %hi(.promoted_doubles.func0000000000000005)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000005)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fmul.d	fa5, fa0, fa5
 	fabs.d	fa5, fa5
 	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
-.LCPI11_0:
-	.quad	0x3f91df46a2529d39
-.LCPI11_1:
-	.quad	0x4009220092718f51
 func000000000000000a:
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
-	lui	a0, %hi(.LCPI11_1)
-	fld	fa4, %lo(.LCPI11_1)(a0)
+	lui	a0, %hi(.promoted_doubles.func000000000000000a)
+	addi	a0, a0, %lo(.promoted_doubles.func000000000000000a)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fmul.d	fa5, fa0, fa5
 	fabs.d	fa5, fa5
 	fle.d	a0, fa5, fa4
@@ -152,4 +144,12 @@ func0000000000000006:
 	andi	a0, a0, 126
 	snez	a0, a0
 	ret
+
+.promoted_doubles.func0000000000000005:
+	.quad	0xbf91df46a2529d39
+	.quad	0x402921fb54442d18
+
+.promoted_doubles.func000000000000000a:
+	.quad	0x3f91df46a2529d39
+	.quad	0x4009220092718f51
 

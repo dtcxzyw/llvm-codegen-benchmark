@@ -10,31 +10,23 @@ func0000000000000007:
 	xori	a0, a0, 1
 	ret
 
-.LCPI1_0:
-	.quad	0x41dfffffeac00000
-.LCPI1_1:
-	.quad	0x3feffffffffffffe
 func0000000000000004:
-	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.l	fa4, a0
-	fdiv.d	fa5, fa4, fa5
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	lui	a1, %hi(.promoted_doubles.func0000000000000004)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000004)
+	fld	fa5, 0(a1)
+	fld	fa4, 8(a1)
+	fcvt.d.l	fa3, a0
+	fdiv.d	fa5, fa3, fa5
 	flt.d	a0, fa4, fa5
 	ret
 
-.LCPI2_0:
-	.quad	0x41dfffffea400000
-.LCPI2_1:
-	.quad	0x3fd999999999999a
 func0000000000000002:
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.d.l	fa4, a0
-	fdiv.d	fa5, fa4, fa5
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	lui	a1, %hi(.promoted_doubles.func0000000000000002)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000002)
+	fld	fa5, 0(a1)
+	fld	fa4, 8(a1)
+	fcvt.d.l	fa3, a0
+	fdiv.d	fa5, fa3, fa5
 	flt.d	a0, fa5, fa4
 	ret
 
@@ -51,4 +43,12 @@ func0000000000000003:
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
+
+.promoted_doubles.func0000000000000004:
+	.quad	0x41dfffffeac00000
+	.quad	0x3feffffffffffffe
+
+.promoted_doubles.func0000000000000002:
+	.quad	0x41dfffffea400000
+	.quad	0x3fd999999999999a
 

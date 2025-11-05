@@ -1,12 +1,8 @@
-.LCPI0_0:
-	.quad	0x40f86a0000000000
-.LCPI0_1:
-	.quad	0x40e631e000000000
 func0000000000000000:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
+	lui	a0, %hi(.promoted_doubles.func0000000000000000)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000000)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fmul.d	fa5, fa0, fa5
 	fdiv.d	fa5, fa5, fa4
 	li	a0, 511
@@ -14,4 +10,8 @@ func0000000000000000:
 	fmv.d.x	fa4, a0
 	fadd.d	fa0, fa5, fa4
 	ret
+
+.promoted_doubles.func0000000000000000:
+	.quad	0x40f86a0000000000
+	.quad	0x40e631e000000000
 

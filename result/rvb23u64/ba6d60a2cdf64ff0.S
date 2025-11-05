@@ -10,23 +10,16 @@ func0000000000000007:
 .LBB0_2:
 	ret
 
-.LCPI1_0:
-	.quad	0x3f1a36e2eb1c432d
-.LCPI1_1:
-	.quad	0x3f50624dd2f1a9fc
-.LCPI1_2:
-	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000004:
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a0)
-	flt.d	a0, fa5, fa0
-	bnez	a0, .LBB1_2
-	lui	a0, %hi(.LCPI1_2)
-	fld	fa0, %lo(.LCPI1_2)(a0)
+	lui	a0, %hi(.promoted_doubles.func0000000000000004)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000004)
+	fld	fa5, 8(a0)
+	flt.d	a1, fa5, fa0
+	bnez	a1, .LBB1_2
+	fld	fa0, 16(a0)
 	ret
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	fld	fa5, 0(a0)
 	fmul.d	fa0, fa1, fa5
 	ret
 
@@ -65,4 +58,9 @@ func0000000000000006:
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	fmul.d	fa0, fa1, fa5
 	ret
+
+.promoted_doubles.func0000000000000004:
+	.quad	0x3f1a36e2eb1c432d
+	.quad	0x3f50624dd2f1a9fc
+	.quad	0x3eb0c6f7a0b5ed8d
 

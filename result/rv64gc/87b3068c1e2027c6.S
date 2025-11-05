@@ -1,12 +1,8 @@
-.LCPI0_0:
-	.quad	0x3fe051eb851eb852
-.LCPI0_1:
-	.quad	0x3fdf5c28f5c28f5c
 func0000000000000024:
-	lui	a1, %hi(.LCPI0_0)
-	lui	a2, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_0)(a1)
-	fld	fa4, %lo(.LCPI0_1)(a2)
+	lui	a1, %hi(.promoted_doubles.func0000000000000024)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000024)
+	fld	fa5, 0(a1)
+	fld	fa4, 8(a1)
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa4, fa0
 	and	a1, a1, a2
@@ -36,4 +32,8 @@ func000000000000002c:
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000024:
+	.quad	0x3fe051eb851eb852
+	.quad	0x3fdf5c28f5c28f5c
 

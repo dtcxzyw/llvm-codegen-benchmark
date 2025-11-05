@@ -1,12 +1,8 @@
-.LCPI0_0:
-	.quad	0x3fefffffffffdcd1
-.LCPI0_1:
-	.quad	0x3d719799812dea11
 func0000000000000024:
-	lui	a0, %hi(.LCPI0_0)
-	lui	a1, %hi(.LCPI0_1)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fld	fa4, %lo(.LCPI0_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000024)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000024)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa0, fa5
 	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
@@ -105,30 +101,22 @@ func00000000000000d3:
 	xori	a0, a0, 1
 	ret
 
-.LCPI9_0:
-	.quad	0x3ff0cccccccccccd
-.LCPI9_1:
-	.quad	0x3fee147ae147ae14
 func0000000000000035:
-	lui	a0, %hi(.LCPI9_0)
-	lui	a1, %hi(.LCPI9_1)
-	fld	fa5, %lo(.LCPI9_0)(a0)
-	fld	fa4, %lo(.LCPI9_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000035)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000035)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fle.d	a0, fa5, fa0
 	fle.d	a1, fa0, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
-.LCPI10_0:
-	.quad	0xc00921fb54442d18
-.LCPI10_1:
-	.quad	0x400921fb54442d18
 func000000000000005b:
-	lui	a0, %hi(.LCPI10_0)
-	lui	a1, %hi(.LCPI10_1)
-	fld	fa5, %lo(.LCPI10_0)(a0)
-	fld	fa4, %lo(.LCPI10_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func000000000000005b)
+	addi	a0, a0, %lo(.promoted_doubles.func000000000000005b)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fle.d	a0, fa0, fa5
 	flt.d	a1, fa4, fa0
 	or	a0, a0, a1
@@ -183,15 +171,11 @@ func0000000000000077:
 	xori	a0, a0, 1
 	ret
 
-.LCPI15_0:
-	.quad	0xbfeffffffaa19c47
-.LCPI15_1:
-	.quad	0x3e45798ee2308c3a
 func0000000000000044:
-	lui	a0, %hi(.LCPI15_0)
-	lui	a1, %hi(.LCPI15_1)
-	fld	fa5, %lo(.LCPI15_0)(a0)
-	fld	fa4, %lo(.LCPI15_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000044)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000044)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa0
 	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
@@ -305,4 +289,20 @@ func000000000000007e:
 	feq.d	a1, fa0, fa0
 	and	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000024:
+	.quad	0x3fefffffffffdcd1
+	.quad	0x3d719799812dea11
+
+.promoted_doubles.func0000000000000035:
+	.quad	0x3ff0cccccccccccd
+	.quad	0x3fee147ae147ae14
+
+.promoted_doubles.func000000000000005b:
+	.quad	0xc00921fb54442d18
+	.quad	0x400921fb54442d18
+
+.promoted_doubles.func0000000000000044:
+	.quad	0xbfeffffffaa19c47
+	.quad	0x3e45798ee2308c3a
 

@@ -160,15 +160,11 @@ func00000000000002aa:
 	xori	a0, a0, 1
 	ret
 
-.LCPI14_0:
-	.quad	0x3eb0c6f7a0b5ed8d
-.LCPI14_1:
-	.quad	0x401921fb54442d18
 func0000000000000048:
-	lui	a0, %hi(.LCPI14_0)
-	lui	a1, %hi(.LCPI14_1)
-	fld	fa5, %lo(.LCPI14_0)(a0)
-	fld	fa4, %lo(.LCPI14_1)(a1)
+	lui	a0, %hi(.promoted_doubles.func0000000000000048)
+	addi	a0, a0, %lo(.promoted_doubles.func0000000000000048)
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
 	fabs.d	fa3, fa1
 	flt.d	a0, fa3, fa5
 	flt.d	a1, fa4, fa0
@@ -256,4 +252,8 @@ func00000000000000f2:
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+
+.promoted_doubles.func0000000000000048:
+	.quad	0x3eb0c6f7a0b5ed8d
+	.quad	0x401921fb54442d18
 
