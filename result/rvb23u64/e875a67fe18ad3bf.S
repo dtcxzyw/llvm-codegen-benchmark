@@ -29,17 +29,15 @@ func000000000000000e:
 
 func0000000000000011:
 	addi	a2, a2, 1
-	li	a3, -1
-	sll	a2, a3, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	srl	a0, a0, a2
+	sll	a0, a0, a2
 	ret
 
 func0000000000000001:
 	addi	a2, a2, 1
-	li	a3, -1
-	sll	a2, a3, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	srl	a0, a0, a2
+	sll	a0, a0, a2
 	ret
 

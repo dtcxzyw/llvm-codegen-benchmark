@@ -38,12 +38,11 @@ func0000000000000002:
 	add	a2, a2, a3
 	srli	a3, a2, 4
 	add	a2, a2, a3
-	li	a3, -1
 	and	a2, a2, t0
 	mul	a2, a2, a7
 	srli	a2, a2, 56
-	srl	a2, a3, a2
 	xor	a0, a0, a1
-	and	a0, a0, a2
+	sll	a0, a0, a2
+	srl	a0, a0, a2
 	ret
 

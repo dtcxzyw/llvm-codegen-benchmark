@@ -18,9 +18,8 @@ func000000000000000e:
 
 func0000000000000005:
 	add	a1, a1, a2
-	li	a2, -1
-	sllw	a1, a2, a1
-	and	a0, a0, a1
+	srlw	a0, a0, a1
+	sllw	a0, a0, a1
 	ret
 
 func0000000000000000:
@@ -32,8 +31,7 @@ func0000000000000000:
 
 func000000000000000d:
 	add	a1, a1, a2
-	li	a2, -1
-	sllw	a1, a2, a1
-	and	a0, a0, a1
+	srlw	a0, a0, a1
+	sllw	a0, a0, a1
 	ret
 

@@ -22,9 +22,8 @@ func000000000000002c:
 	ret
 
 func0000000000000004:
-	li	a2, -1
-	srlw	a1, a2, a1
-	and	a0, a0, a1
+	sllw	a0, a0, a1
+	srlw	a0, a0, a1
 	srliw	a0, a0, 16
 	seqz	a0, a0
 	ret

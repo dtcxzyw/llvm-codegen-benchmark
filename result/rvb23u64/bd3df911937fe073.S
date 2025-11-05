@@ -4,9 +4,9 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	li	a2, -1
-	sllw	a0, a2, a0
-	andn	a0, a0, a1
+	not	a1, a1
+	srlw	a1, a1, a0
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000003:

@@ -13,8 +13,8 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	li	a1, -1
+	li	a1, 254
+	srl	a1, a1, a0
 	sll	a0, a1, a0
-	andi	a0, a0, 254
 	ret
 

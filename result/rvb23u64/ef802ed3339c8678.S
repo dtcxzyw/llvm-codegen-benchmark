@@ -1,7 +1,6 @@
 func0000000000000000:
-	li	a3, -1
-	srlw	a2, a3, a2
-	and	a1, a1, a2
+	sllw	a1, a1, a2
+	srlw	a1, a1, a2
 	sllw	a0, a1, a0
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000041:
 	neg	a2, a2
-	li	a3, -1
-	srlw	a2, a3, a2
+	sllw	a1, a1, a2
+	srlw	a1, a1, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret

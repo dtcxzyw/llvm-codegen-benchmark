@@ -6,9 +6,9 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	li	a2, -1
+	li	a2, 272
+	sll	a2, a2, a1
 	srl	a1, a2, a1
-	andi	a1, a1, 272
 	sh3add	a0, a1, a0
 	ret
 

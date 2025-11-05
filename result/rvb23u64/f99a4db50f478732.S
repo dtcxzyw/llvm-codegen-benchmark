@@ -5,9 +5,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	li	a1, -1
+	li	a1, 255
+	srlw	a1, a1, a0
 	sllw	a0, a1, a0
-	zext.b	a0, a0
 	ret
 
 func000000000000000f:
