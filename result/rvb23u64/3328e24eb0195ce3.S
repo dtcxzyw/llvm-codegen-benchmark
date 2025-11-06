@@ -81,10 +81,10 @@ func000000000000001f:
 
 func0000000000000013:
 	binvi	a2, a2, 63
-	li	a3, 104
+	sh1add	a3, a1, a1
 	snez	a2, a2
-	mul	a1, a1, a3
-	add	a0, a0, a1
+	sh2add	a1, a3, a1
+	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
 	addi	a0, a0, 44
 	ret

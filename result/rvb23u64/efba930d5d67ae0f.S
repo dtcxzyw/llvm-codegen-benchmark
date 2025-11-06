@@ -22,9 +22,9 @@ func0000000000000034:
 func0000000000000035:
 	li	a2, -104
 	mul	a1, a1, a2
-	li	a2, 104
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a2, a0, a0
+	sh2add	a0, a2, a0
+	sh3add	a0, a0, a1
 	ret
 
 .LCPI4_0:
@@ -44,9 +44,9 @@ func0000000000000000:
 func0000000000000004:
 	li	a2, -416
 	mul	a1, a1, a2
-	li	a2, 104
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a2, a0, a0
+	sh2add	a0, a2, a0
+	sh3add	a0, a0, a1
 	ret
 
 func000000000000001d:

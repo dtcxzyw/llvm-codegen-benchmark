@@ -90,8 +90,9 @@ func0000000000000011:
 
 func000000000000003f:
 	add	a0, a0, a1
-	li	a1, 82
-	mul	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh3add	a0, a1, a0
+	slli	a0, a0, 1
 	addiw	a0, a0, 738
 	ret
 

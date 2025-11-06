@@ -2,11 +2,10 @@ func0000000000000003:
 	andi	a1, a1, 1
 	li	a3, -224
 	czero.nez	a1, a3, a1
-	slli	a3, a0, 3
-	slli	a0, a0, 6
+	sh1add	a3, a0, a0
 	add	a1, a1, a2
-	sub	a0, a0, a3
-	add	a0, a0, a1
+	sh1add	a0, a3, a0
+	sh3add	a0, a0, a1
 	addi	a0, a0, 504
 	ret
 

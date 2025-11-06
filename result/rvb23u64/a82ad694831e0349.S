@@ -20,11 +20,11 @@ func0000000000000386:
 	ret
 
 func000000000000018a:
-	zext.w	a2, a2
-	li	a3, 104
-	mul	a2, a2, a3
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh2add	a2, a2, a3
+	sh3add	a1, a2, a1
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	sgtz	a0, a0
 	ret
 

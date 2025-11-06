@@ -19,10 +19,11 @@ func00000000000000af:
 	ld	a3, %lo(.LCPI1_0)(a3)
 	srai	a4, a1, 4
 	mul	a3, a3, a4
-	li	a4, 208
 	sub	a2, a2, a3
 	maxu	a2, a3, a2
-	mul	a2, a2, a4
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

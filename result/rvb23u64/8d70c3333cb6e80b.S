@@ -44,8 +44,9 @@ func000000000000000d:
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 36
-	li	a1, 22
-	mul	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 1
 	addiw	a0, a0, -272
 	ret
 

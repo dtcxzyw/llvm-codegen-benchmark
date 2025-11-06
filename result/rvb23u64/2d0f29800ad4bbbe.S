@@ -1,9 +1,8 @@
 func00000000000001c1:
 	addi	a3, a0, 24
-	slli	a4, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a4
-	add	a1, a1, a2
+	sh1add	a4, a2, a2
+	sh1add	a2, a4, a2
+	sh3add	a1, a2, a1
 	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

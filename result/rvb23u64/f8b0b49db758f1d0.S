@@ -38,9 +38,9 @@ func0000000000000006:
 	ret
 
 func0000000000000003:
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slliw	a1, a1, 3
 	or	a0, a0, a1
 	ret
 

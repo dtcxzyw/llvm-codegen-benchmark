@@ -48,12 +48,11 @@ func0000000000000355:
 func00000000000003f4:
 	li	a3, 588
 	mul	a2, a2, a3
-	slli	a3, a1, 2
-	slli	a1, a1, 5
-	sub	a1, a1, a3
+	sh1add	a3, a1, a1
+	sh1add	a1, a3, a1
 	lui	a3, 1047932
 	addi	a3, a3, -1692
-	add	a1, a1, a2
+	sh2add	a1, a1, a2
 	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
@@ -106,12 +105,11 @@ func00000000000003d5:
 func0000000000000375:
 	li	a3, 196
 	mul	a2, a2, a3
-	slli	a3, a1, 2
-	slli	a1, a1, 5
-	sub	a1, a1, a3
+	sh1add	a3, a1, a1
+	sh1add	a1, a3, a1
 	lui	a3, 7
 	addi	a3, a3, 1708
-	add	a1, a1, a2
+	sh2add	a1, a1, a2
 	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret

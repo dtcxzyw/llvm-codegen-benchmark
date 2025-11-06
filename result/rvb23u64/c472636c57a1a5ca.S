@@ -13,9 +13,9 @@ func000000000000007f:
 	ret
 
 func000000000000007c:
-	slli	a3, a2, 1
-	slli	a2, a2, 4
-	subw	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slliw	a2, a2, 1
 	sh1add	a0, a2, a0
 	sext.w	a1, a1
 	sh1add	a0, a1, a0

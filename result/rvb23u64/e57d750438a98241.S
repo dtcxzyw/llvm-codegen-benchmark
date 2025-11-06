@@ -1,8 +1,9 @@
 func0000000000000000:
-	li	a1, 84
-	mul	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh2add	a0, a1, a0
 	lui	a1, 699051
 	addi	a1, a1, -1365
+	slli	a0, a0, 2
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1

@@ -58,9 +58,10 @@ func00000000000001e1:
 
 func000000000000006c:
 	addi	a2, a2, -1
-	zext.w	a2, a2
-	li	a3, 176
-	mul	a2, a2, a3
+	zext.w	a3, a2
+	sh2add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	slli	a2, a2, 4
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

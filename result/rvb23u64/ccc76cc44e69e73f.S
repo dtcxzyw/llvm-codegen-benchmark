@@ -5,14 +5,13 @@ func000000000000003f:
 	ret
 
 func0000000000000030:
-	slli	a3, a1, 3
-	slli	a1, a1, 6
+	sh1add	a3, a1, a1
 	slli	a0, a0, 4
-	sub	a1, a1, a3
+	sh1add	a1, a3, a1
 	lui	a3, 33
-	add	a0, a0, a2
-	add	a0, a0, a1
-	addi	a1, a3, -1968
+	addi	a3, a3, -1968
+	sh3add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

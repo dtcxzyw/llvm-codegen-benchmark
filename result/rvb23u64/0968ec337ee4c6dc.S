@@ -5,10 +5,9 @@ func0000000000000181:
 	ret
 
 func0000000000000001:
-	slli	a2, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a2, a0, a0
+	sh1add	a0, a2, a0
+	sh3add	a0, a0, a1
 	addi	a0, a0, -112
 	seqz	a0, a0
 	ret

@@ -1,7 +1,7 @@
 func0000000000000601:
-	slli	a3, a2, 5
-	slli	a2, a2, 8
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 5
 	add	a1, a1, a2
 	addi	a1, a1, 120
 	xor	a0, a0, a1

@@ -63,9 +63,9 @@ func0000000000000001:
 
 func000000000000000b:
 	sext.w	a0, a0
-	slli	a2, a1, 1
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 1
 	addiw	a1, a1, 68
 	slt	a0, a0, a1
 	xori	a0, a0, 1
@@ -88,8 +88,9 @@ func00000000000001e1:
 
 func00000000000001e6:
 	sext.w	a0, a0
-	li	a2, 52
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	slli	a1, a1, 2
 	addiw	a1, a1, 12
 	slt	a0, a0, a1
 	ret

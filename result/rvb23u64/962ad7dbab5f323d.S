@@ -29,9 +29,9 @@ func000000000000088c:
 	ret
 
 func0000000000000d8c:
-	li	a3, 104
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
+	sh3add	a1, a2, a1
 	xor	a1, a1, a0
 	snez	a1, a1
 	snez	a0, a0

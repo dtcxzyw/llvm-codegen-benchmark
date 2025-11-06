@@ -1,14 +1,13 @@
 func00000000000000f0:
 	sext.w	a2, a2
 	sext.w	a0, a0
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
 	lui	a3, 33
 	slli	a0, a0, 4
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a1, a3, -1968
+	addi	a3, a3, -1968
+	sh3add	a1, a2, a1
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -20,9 +19,9 @@ func000000000000006f:
 
 func00000000000000ff:
 	sext.w	a2, a2
-	li	a3, 328
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a3, a2, a2
+	sh3add	a2, a3, a2
+	sh3add	a1, a2, a1
 	sext.w	a0, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 96
@@ -41,11 +40,10 @@ func0000000000000070:
 	li	a3, 616
 	sext.w	a0, a0
 	mul	a2, a2, a3
-	slli	a3, a0, 3
-	slli	a0, a0, 6
+	sh1add	a3, a0, a0
 	add	a1, a1, a2
-	sub	a0, a0, a3
-	add	a0, a0, a1
+	sh1add	a0, a3, a0
+	sh3add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
 

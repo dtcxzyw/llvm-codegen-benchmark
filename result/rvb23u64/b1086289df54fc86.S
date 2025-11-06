@@ -29,17 +29,17 @@ func000000000000000c:
 	ret
 
 func00000000000001f4:
-	slli	a2, a1, 2
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 2
 	slli	a0, a0, 3
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000101:
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 3
 	slli	a0, a0, 6
 	xor	a0, a0, a1
 	seqz	a0, a0

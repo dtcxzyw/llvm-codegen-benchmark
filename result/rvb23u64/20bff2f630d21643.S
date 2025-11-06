@@ -71,8 +71,9 @@ func0000000000000021:
 
 func00000000000000cc:
 	sub	a1, a1, a2
-	li	a2, 52
-	mul	a0, a0, a2
+	sh1add	a2, a0, a0
+	sh2add	a0, a2, a0
+	slli	a0, a0, 2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

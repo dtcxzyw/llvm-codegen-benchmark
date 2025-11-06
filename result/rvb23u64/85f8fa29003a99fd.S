@@ -12,9 +12,10 @@ func0000000000000000:
 
 func0000000000000007:
 	add	a0, a0, a1
-	zext.w	a0, a0
-	li	a1, 44
-	mul	a0, a0, a1
+	zext.w	a1, a0
+	sh2add.uw	a0, a0, a1
+	sh1add	a0, a0, a1
+	slli	a0, a0, 2
 	ret
 
 func000000000000000c:
@@ -41,9 +42,10 @@ func000000000000000f:
 
 func0000000000000003:
 	add	a0, a0, a1
-	zext.w	a0, a0
-	li	a1, 152
-	mul	a0, a0, a1
+	zext.w	a1, a0
+	sh3add.uw	a0, a0, a1
+	sh1add	a0, a0, a1
+	slli	a0, a0, 3
 	ret
 
 func000000000000000a:

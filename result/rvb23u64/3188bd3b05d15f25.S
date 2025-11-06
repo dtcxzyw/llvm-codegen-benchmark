@@ -8,10 +8,10 @@ func000000000000009c:
 	ret
 
 func000000000000006f:
-	slli.uw	a3, a2, 3
-	slli.uw	a2, a2, 6
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	sh3add	a1, a2, a1
 	sh2add.uw	a0, a0, a1
 	addi	a0, a0, 32
 	ret
@@ -49,9 +49,9 @@ func000000000000001c:
 
 func000000000000008c:
 	sext.w	a2, a2
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	sh2add.uw	a0, a0, a1
 	addi	a0, a0, 4
 	ret

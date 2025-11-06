@@ -49,11 +49,12 @@ func000000000000010a:
 	ret
 
 func0000000000000008:
+	sh3add	a2, a0, a0
+	sh1add	a0, a2, a0
 	lui	a2, 1
 	addi	a2, a2, -448
 	subw	a2, a2, a1
-	li	a1, 152
-	mulw	a0, a0, a1
+	slliw	a0, a0, 3
 	sltu	a0, a2, a0
 	ret
 

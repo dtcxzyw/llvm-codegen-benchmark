@@ -61,11 +61,10 @@ func000000000000003f:
 	ret
 
 func000000000000003d:
-	slli	a2, a1, 2
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
 	lui	a2, 1047932
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret

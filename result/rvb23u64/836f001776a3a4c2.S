@@ -16,9 +16,9 @@ func0000000000000001:
 func0000000000000021:
 	add	a0, a0, a1
 	addiw	a0, a0, 1
-	slli	a1, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 3
 	ret
 
 func0000000000000035:

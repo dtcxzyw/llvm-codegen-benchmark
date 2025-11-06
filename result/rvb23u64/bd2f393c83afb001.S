@@ -1,9 +1,9 @@
 func000000000000001f:
 	zext.b	a1, a1
 	or	a0, a0, a1
-	slli	a1, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 3
 	addiw	a0, a0, 32
 	ret
 

@@ -16,10 +16,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000000a:

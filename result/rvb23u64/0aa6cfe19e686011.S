@@ -7,9 +7,9 @@ func000000000000002c:
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srli	a1, a1, 2
-	slli	a2, a1, 5
-	slli	a1, a1, 8
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
 	ret
 

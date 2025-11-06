@@ -8,13 +8,13 @@ func000000000000000b:
 	srli	a1, a1, 50
 	mul	a1, a1, a2
 	srli	a1, a1, 17
-	slli	a2, a1, 5
-	slli	a1, a1, 2
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
 	lui	a2, 1
 	addi	a2, a2, 423
+	slli	a1, a1, 2
 	add	a0, a0, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 
 func000000000000001b:
@@ -27,12 +27,12 @@ func000000000000001b:
 	srli	a1, a1, 50
 	mul	a1, a1, a2
 	srli	a1, a1, 17
-	slli	a2, a1, 5
-	slli	a1, a1, 2
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
 	lui	a2, 1
 	addi	a2, a2, 423
+	slli	a1, a1, 2
 	add	a0, a0, a2
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 

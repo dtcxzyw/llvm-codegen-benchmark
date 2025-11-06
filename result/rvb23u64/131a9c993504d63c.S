@@ -1,10 +1,9 @@
 func0000000000000001:
 	addi	a1, a1, 15
-	slli	a2, a0, 2
-	slli	a0, a0, 5
+	sh1add	a2, a0, a0
 	andi	a1, a1, -16
-	sub	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a0, a2, a0
+	sh2add	a0, a0, a1
 	ret
 
 func000000000000001f:

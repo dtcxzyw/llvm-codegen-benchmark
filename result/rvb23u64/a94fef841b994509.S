@@ -89,9 +89,9 @@ func0000000000000064:
 
 func0000000000000041:
 	sext.w	a0, a0
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	subw	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slliw	a1, a1, 3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

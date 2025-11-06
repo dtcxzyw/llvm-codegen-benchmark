@@ -7,10 +7,9 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	slli	a3, a2, 1
-	slli	a2, a2, 4
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh1add	a1, a2, a1
 	remuw	a0, a1, a0
 	ret
 

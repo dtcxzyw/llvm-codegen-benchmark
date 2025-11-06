@@ -71,8 +71,9 @@ func0000000000000184:
 	ret
 
 func0000000000000001:
-	li	a2, 42
-	mulw	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh2add	a1, a2, a1
+	slliw	a1, a1, 1
 	addiw	a0, a0, -3
 	xor	a0, a0, a1
 	seqz	a0, a0

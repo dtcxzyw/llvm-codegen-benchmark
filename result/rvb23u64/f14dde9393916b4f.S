@@ -4,9 +4,9 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	slli	a3, a2, 5
-	slli	a2, a2, 8
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 5
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -57,8 +57,9 @@ func000000000000004c:
 	ret
 
 func000000000000000c:
-	li	a3, 1216
-	mul	a2, a2, a3
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 6
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

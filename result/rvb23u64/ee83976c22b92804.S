@@ -12,8 +12,9 @@ func0000000000000050:
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	li	a1, 88
-	mul	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 3
 	ret
 
 func0000000000000004:

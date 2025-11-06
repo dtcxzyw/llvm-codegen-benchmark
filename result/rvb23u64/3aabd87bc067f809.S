@@ -15,13 +15,15 @@ func0000000000000015:
 	ret
 
 func0000000000000000:
-	srliw	a2, a2, 2
-	lui	a3, 149797
-	addi	a3, a3, -1755
-	mul	a2, a2, a3
-	srli	a2, a2, 32
-	slli	a3, a2, 5
-	slli	a2, a2, 2
+	srliw	a3, a2, 2
+	lui	a4, 149797
+	sub	a2, a2, a2
+	addi	a4, a4, -1755
+	mul	a3, a3, a4
+	srli	a3, a3, 32
+	sh1add	a4, a3, a3
+	sh1add	a3, a4, a3
+	slli	a3, a3, 2
 	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

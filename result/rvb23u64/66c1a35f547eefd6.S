@@ -28,8 +28,9 @@ func0000000000000010:
 	ret
 
 func0000000000000035:
-	li	a2, 22
-	mul	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 1
 	sub	a1, a1, a0
 	addiw	a0, a1, -272
 	ret

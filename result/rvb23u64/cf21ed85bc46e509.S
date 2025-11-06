@@ -61,8 +61,9 @@ func000000000000000a:
 	sub	a0, a0, a1
 	mulhu	a0, a0, a2
 	srli	a0, a0, 4
-	li	a1, 52
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 2
 	ret
 
 .LCPI5_0:

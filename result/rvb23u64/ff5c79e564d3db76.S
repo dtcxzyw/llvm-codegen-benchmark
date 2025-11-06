@@ -1,9 +1,9 @@
 func0000000000000064:
-	li	a3, 152
+	sh3add	a3, a0, a0
 	addi	a1, a1, 40
-	mul	a3, a3, a0
+	sh1add	a3, a3, a0
 	sltiu	a0, a0, 2
-	add	a2, a2, a3
+	sh3add	a2, a3, a2
 	addi	a2, a2, -288
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

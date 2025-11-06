@@ -40,18 +40,18 @@ func0000000000000050:
 	ret
 
 func00000000000000d5:
-	li	a3, 22
-	mul	a2, a2, a3
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh1add	a0, a2, a0
 	addiw	a0, a0, -272
 	ret
 
 func0000000000000004:
-	li	a3, 52
-	mul	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a0, a2, a0
 	addiw	a0, a0, 108
 	ret
 

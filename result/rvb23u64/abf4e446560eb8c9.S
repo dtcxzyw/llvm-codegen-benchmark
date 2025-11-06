@@ -74,9 +74,9 @@ func000000000000000c:
 	ret
 
 func0000000000000406:
-	li	a2, 26
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	sh1add	a0, a1, a0
 	addi	a0, a0, -97
 	slti	a0, a0, 1
 	ret

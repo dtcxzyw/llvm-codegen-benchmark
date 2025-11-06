@@ -3,9 +3,10 @@ func0000000000000003:
 	lui	a3, 322639
 	addi	a3, a3, -945
 	mul	a2, a2, a3
-	li	a3, 26
 	srli	a2, a2, 35
-	mul	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
+	slli	a2, a2, 1
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret

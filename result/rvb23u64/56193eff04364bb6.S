@@ -6,8 +6,9 @@ func0000000000000001:
 	srli	a2, a1, 63
 	srai	a1, a1, 36
 	add	a1, a1, a2
-	li	a2, 52
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	slli	a1, a1, 2
 	subw	a0, a0, a1
 	ret
 

@@ -27,9 +27,10 @@ func00000000000000da:
 	ret
 
 func000000000000005e:
-	li	a3, 52
-	mul	a2, a2, a3
-	addw	a1, a1, a2
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
+	sh2add	a1, a2, a1
+	sext.w	a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 264
 	ret

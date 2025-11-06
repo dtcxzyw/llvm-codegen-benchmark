@@ -37,13 +37,13 @@ func0000000000000043:
 
 func0000000000000195:
 	sh2add	a2, a1, a1
-	zext.b	a0, a0
 	sh2add	a1, a2, a1
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -161
-	slli	a1, a0, 2
-	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slliw	a0, a0, 2
 	ret
 
 func00000000000000c3:

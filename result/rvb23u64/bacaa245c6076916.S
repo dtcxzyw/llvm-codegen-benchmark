@@ -6,11 +6,10 @@ func0000000000000088:
 	ret
 
 func00000000000000ff:
-	slli	a1, a1, 6
-	slli	a2, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a2
-	add	a0, a0, a1
+	sh1add	a2, a0, a0
+	sh1add	a0, a2, a0
+	sh3add	a0, a1, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 64
 	ret
 

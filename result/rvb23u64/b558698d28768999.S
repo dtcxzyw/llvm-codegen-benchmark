@@ -26,9 +26,9 @@ func0000000000000001:
 
 func0000000000000003:
 	srli	a0, a0, 2
-	slli	a1, a0, 5
-	slli	a0, a0, 8
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 5
 	ret
 
 func0000000000000006:

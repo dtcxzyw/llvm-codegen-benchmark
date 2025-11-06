@@ -58,11 +58,11 @@ func000000000000037e:
 	ret
 
 func00000000000003dd:
-	li	a3, 42
+	sh2add	a3, a2, a2
 	sh1add	a1, a1, a1
-	mul	a2, a2, a3
+	sh2add	a2, a3, a2
 	lui	a3, 8
-	add	a0, a0, a2
+	sh1add	a0, a2, a0
 	sh1add	a0, a1, a0
 	addi	a1, a3, -1604
 	addw	a0, a0, a1

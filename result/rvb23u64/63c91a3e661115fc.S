@@ -69,8 +69,9 @@ func0000000000000045:
 	ret
 
 func000000000000000c:
-	li	a2, 88
-	mul	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 3
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -168,16 +169,17 @@ func0000000000000009:
 	ret
 
 func0000000000000065:
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 3
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000004c:
-	li	a2, 52
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	slli	a1, a1, 2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

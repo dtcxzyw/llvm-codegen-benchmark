@@ -96,20 +96,20 @@ func00000000000000f5:
 	ret
 
 func00000000000000fd:
-	li	a3, 42
-	add	a0, a0, a1
-	lui	a1, 8
-	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -1604
+	sh2add	a3, a2, a2
+	sh2add	a2, a3, a2
+	lui	a3, 8
+	addi	a3, a3, -1604
+	sh1add	a1, a2, a1
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000051:
-	li	a3, 292
-	mul	a2, a2, a3
+	sh3add	a3, a2, a2
+	sh3add	a2, a3, a2
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addiw	a0, a0, 277
 	ret
 

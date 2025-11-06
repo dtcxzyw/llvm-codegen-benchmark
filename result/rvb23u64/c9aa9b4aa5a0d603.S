@@ -22,8 +22,9 @@ func000000000000007f:
 
 func000000000000000c:
 	andi	a2, a2, 3
-	li	a3, 1216
-	mul	a2, a2, a3
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 6
 	add	a1, a1, a2
 	sh3add.uw	a0, a0, a1
 	addi	a0, a0, 1088

@@ -37,9 +37,9 @@ func00000000000003ff:
 	ret
 
 func00000000000003bf:
-	li	a3, 84
-	mul	a1, a1, a3
-	add	a1, a1, a2
+	sh2add	a3, a1, a1
+	sh2add	a1, a3, a1
+	sh2add	a1, a1, a2
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
 	addi	a0, a0, 2016

@@ -45,8 +45,9 @@ func000000000000000b:
 
 func000000000000003b:
 	sub	a1, a1, a0
-	li	a0, 208
-	mul	a0, a0, a1
+	sh1add	a0, a1, a1
+	sh2add	a0, a0, a1
+	slli	a0, a0, 4
 	addi	a0, a0, 208
 	ret
 

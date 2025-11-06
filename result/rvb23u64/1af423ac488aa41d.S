@@ -7,11 +7,11 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	slli	a1, a0, 3
-	slli	a0, a0, 6
-	subw	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
 	lui	a1, 174763
 	addi	a1, a1, -1365
+	slliw	a0, a0, 3
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srli	a0, a0, 32

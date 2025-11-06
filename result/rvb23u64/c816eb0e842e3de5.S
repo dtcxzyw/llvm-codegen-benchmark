@@ -21,9 +21,9 @@ func0000000000000168:
 func0000000000000a6c:
 	not	a2, a2
 	srli	a2, a2, 63
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -31,9 +31,9 @@ func0000000000000a6c:
 func0000000000000a61:
 	not	a2, a2
 	srli	a2, a2, 63
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

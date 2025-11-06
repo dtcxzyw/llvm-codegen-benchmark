@@ -1,8 +1,8 @@
 func0000000000000002:
 	andi	a0, a0, 1
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 3
 	addi	a1, a1, 16
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, -16

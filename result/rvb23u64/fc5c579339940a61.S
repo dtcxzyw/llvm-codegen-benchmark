@@ -94,20 +94,20 @@ func0000000000000007:
 
 func0000000000000012:
 	add	a0, a0, a2
-	li	a2, 104
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	sh3add	a0, a1, a0
 	ret
 
 .LCPI13_0:
 	.quad	6148914691236517240
 func000000000000001a:
-	li	a3, 104
+	sh1add	a3, a1, a1
 	lui	a4, %hi(.LCPI13_0)
 	ld	a4, %lo(.LCPI13_0)(a4)
-	mul	a1, a1, a3
+	sh2add	a1, a3, a1
 	srli	a2, a2, 3
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	mul	a2, a2, a4
 	add	a0, a0, a2
 	ret

@@ -33,11 +33,11 @@ func0000000000000030:
 	ret
 
 func000000000000003e:
-	slli.uw	a3, a2, 3
-	slli.uw	a2, a2, 6
-	sub	a2, a2, a3
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	sh3add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000007f:

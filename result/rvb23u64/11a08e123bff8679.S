@@ -6,10 +6,10 @@ func0000000000000050:
 	ret
 
 func000000000000005c:
-	srai	a2, a1, 53
-	srai	a1, a1, 50
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	srai	a1, a1, 56
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 56
 	ret
 

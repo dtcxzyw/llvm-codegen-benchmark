@@ -1,13 +1,13 @@
 func0000000000000041:
 	zext.b	a1, a1
-	li	a3, 152
 	addi	a1, a1, -255
-	snez	a4, a1
-	neg	a4, a4
-	mul	a3, a3, a4
-	add	a2, a2, a3
+	snez	a3, a1
+	neg	a3, a3
+	sh3add	a4, a3, a3
+	sh1add	a3, a4, a3
+	sh3add	a2, a3, a2
+	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

@@ -72,10 +72,10 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
-	li	a3, 84
-	mul	a1, a1, a3
+	sh2add	a3, a1, a1
+	sh2add	a1, a3, a1
+	sh2add	a0, a1, a0
 	add	a0, a0, a2
-	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 

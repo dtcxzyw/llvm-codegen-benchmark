@@ -35,8 +35,8 @@ func0000000000000015:
 	zext.b	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, -161
-	slli	a1, a0, 2
-	slli	a0, a0, 5
-	subw	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slliw	a0, a0, 2
 	ret
 

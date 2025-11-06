@@ -1,7 +1,7 @@
 func0000000000005842:
-	slli	a3, a2, 5
-	slli	a2, a2, 8
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 5
 	add	a1, a1, a2
 	addi	a1, a1, 24
 	xor	a1, a1, a0
@@ -11,9 +11,9 @@ func0000000000005842:
 	ret
 
 func0000000000007842:
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	addi	a1, a1, 24
 	xor	a1, a1, a0
 	seqz	a1, a1

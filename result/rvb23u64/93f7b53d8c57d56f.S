@@ -7,10 +7,9 @@ func000000000000019c:
 	ret
 
 func00000000000001ef:
-	slli	a3, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a3
-	add	a1, a1, a2
+	sh1add	a3, a1, a1
+	sh1add	a1, a3, a1
+	sh3add	a1, a1, a2
 	sh2add.uw	a0, a0, a1
 	addi	a0, a0, 200
 	ret

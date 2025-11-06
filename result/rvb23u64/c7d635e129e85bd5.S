@@ -34,12 +34,12 @@ func0000000000000012:
 .LCPI5_0:
 	.quad	163391164108059
 func0000000000000010:
-	slli	a1, a0, 3
+	sh1add	a1, a0, a0
 	lui	a2, %hi(.LCPI5_0)
 	ld	a2, %lo(.LCPI5_0)(a2)
-	slli	a0, a0, 6
-	sub	a0, a0, a1
-	zext.w	a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 35
+	srli	a0, a0, 32
 	mul	a0, a0, a2
 	ret
 

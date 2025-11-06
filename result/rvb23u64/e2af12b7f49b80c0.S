@@ -9,8 +9,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	li	a1, 26
-	mulw	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slliw	a0, a0, 1
 	ret
 
 func0000000000000018:

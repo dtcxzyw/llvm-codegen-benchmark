@@ -20,9 +20,9 @@ func0000000000000004:
 	ret
 
 func0000000000000761:
-	slli	a3, a1, 4
-	slli	a1, a1, 7
-	sub	a1, a1, a3
+	sh1add	a3, a1, a1
+	sh1add	a1, a3, a1
+	slli	a1, a1, 4
 	add	a1, a1, a2
 	addi	a1, a1, 8
 	addi	a0, a0, 112
@@ -204,12 +204,13 @@ func0000000000000641:
 	ret
 
 func0000000000000609:
-	lui	a3, 1
-	addi	a3, a3, -1472
-	mul	a1, a1, a3
+	sh2add	a3, a1, a1
+	addi	a0, a0, 2047
+	sh3add	a1, a3, a1
+	slli	a1, a1, 6
 	add	a1, a1, a2
 	addi	a1, a1, 1152
-	add	a0, a0, a3
+	addi	a0, a0, 577
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -10,17 +10,19 @@ func0000000000000001:
 
 func000000000000010c:
 	sh2add	a1, a1, a1
-	li	a2, 88
+	sh2add	a2, a0, a0
 	slli	a1, a1, 4
-	mul	a0, a0, a2
+	sh1add	a0, a2, a0
+	slli	a0, a0, 3
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000045:
-	li	a2, 88
+	sh2add	a2, a1, a1
 	sh2add	a0, a0, a0
-	mul	a1, a1, a2
+	sh1add	a1, a2, a1
+	slli	a1, a1, 3
 	slli	a0, a0, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
@@ -98,12 +100,12 @@ func00000000000000a8:
 	ret
 
 func0000000000000048:
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	slli	a2, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh1add	a2, a0, a0
+	sh1add	a0, a2, a0
+	slli	a1, a1, 3
+	slli	a0, a0, 3
 	sltu	a0, a1, a0
 	ret
 

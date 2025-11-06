@@ -85,13 +85,14 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	zext.w	a2, a2
-	li	a3, 208
-	mul	a2, a2, a3
 	li	a3, -832
-	add	a0, a0, a2
 	mul	a1, a1, a3
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh2add	a2, a2, a3
+	slli	a2, a2, 4
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000050:

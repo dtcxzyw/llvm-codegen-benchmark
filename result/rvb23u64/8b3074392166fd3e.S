@@ -35,9 +35,9 @@ func0000000000000348:
 
 func0000000000000341:
 	srai	a2, a2, 4
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a0, a2, a0
 	addi	a1, a1, -88
 	xor	a0, a0, a1
 	seqz	a0, a0

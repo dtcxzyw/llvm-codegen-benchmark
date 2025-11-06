@@ -1,12 +1,11 @@
 func0000000000000070:
-	slli	a3, a0, 3
-	slli	a0, a0, 6
+	sh1add	a3, a0, a0
 	sext.w	a1, a1
-	sub	a0, a0, a3
+	sh1add	a0, a3, a0
 	lui	a3, 33
 	slli	a1, a1, 4
 	addi	a3, a3, -1968
-	add	a0, a0, a2
+	sh3add	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
@@ -25,9 +24,9 @@ func000000000000006f:
 	ret
 
 func000000000000007f:
-	li	a3, 328
-	mul	a0, a0, a3
-	add	a0, a0, a2
+	sh2add	a3, a0, a0
+	sh3add	a0, a3, a0
+	sh3add	a0, a0, a2
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 96

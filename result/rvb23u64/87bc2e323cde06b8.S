@@ -4,8 +4,9 @@ func0000000000000014:
 	addi	a2, a2, -945
 	mul	a1, a1, a2
 	srli	a1, a1, 35
-	li	a2, 26
-	mul	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	slli	a1, a1, 1
 	subw	a0, a0, a1
 	sltiu	a0, a0, 22
 	xori	a0, a0, 1

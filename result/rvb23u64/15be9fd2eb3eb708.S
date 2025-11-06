@@ -7,10 +7,9 @@ func0000000000000184:
 
 func0000000000000181:
 	sext.w	a2, a2
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	addi	a1, a1, 664
 	xor	a0, a0, a1
 	seqz	a0, a0

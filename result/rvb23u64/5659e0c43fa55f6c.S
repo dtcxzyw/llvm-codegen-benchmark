@@ -6,9 +6,9 @@ func00000000000000a6:
 	ret
 
 func00000000000001a1:
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slliw	a2, a2, 3
 	addw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

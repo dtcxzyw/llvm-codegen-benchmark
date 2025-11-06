@@ -7,8 +7,9 @@ func0000000000000003:
 
 func0000000000000000:
 	max	a0, a0, zero
-	lui	a1, 82
-	mul	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh3add	a0, a1, a0
+	slli	a0, a0, 13
 	ret
 
 func0000000000000001:

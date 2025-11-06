@@ -42,8 +42,9 @@ func00000000000001ef:
 	ret
 
 func00000000000001ff:
-	li	a3, 164
-	mulw	a2, a2, a3
+	sh2add	a3, a2, a2
+	sh3add	a2, a3, a2
+	slliw	a2, a2, 2
 	sh2add	a1, a2, a1
 	sh2add	a0, a0, a1
 	li	a1, 1681

@@ -20,13 +20,13 @@ func00000000000000d5:
 	ret
 
 func00000000000000cc:
-	zext.w	a1, a1
-	li	a2, 296
-	mul	a1, a1, a2
+	zext.w	a2, a1
+	sh3add.uw	a1, a1, a2
+	sh2add	a1, a1, a2
 	lui	a2, 2
 	addi	a2, a2, 96
 	mul	a0, a0, a2
-	add	a0, a0, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 112
 	ret
 

@@ -21,15 +21,14 @@ func0000000000000080:
 
 func000000000000001b:
 	zext.h	a2, a2
-	slli	a3, a1, 4
-	slli	a1, a1, 7
-	sub	a1, a1, a3
 	lui	a3, 16
 	addi	a3, a3, -1
 	xor	a2, a2, a3
+	sh1add	a3, a1, a1
 	snez	a2, a2
-	add	a0, a0, a1
-	sh1add	a0, a2, a0
+	sh1add	a1, a3, a1
+	sh3add	a1, a1, a2
+	sh1add	a0, a1, a0
 	addi	a0, a0, 86
 	ret
 

@@ -5,9 +5,10 @@ func000000000000001d:
 	ret
 
 func0000000000000011:
-	li	a1, 84
-	mul	a0, a0, a1
-	zext.w	a0, a0
+	sh2add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 34
+	srli	a0, a0, 32
 	neg	a0, a0
 	ret
 

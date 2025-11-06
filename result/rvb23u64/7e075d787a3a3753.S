@@ -31,9 +31,9 @@ func00000000000001e8:
 
 func00000000000003f8:
 	sext.w	a2, a2
-	li	a3, 104
-	mul	a1, a1, a3
-	add	a1, a1, a2
+	sh1add	a3, a1, a1
+	sh2add	a1, a3, a1
+	sh3add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 

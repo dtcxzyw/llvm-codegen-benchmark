@@ -35,8 +35,9 @@ func000000000000007b:
 	srli	a1, a1, 4
 	mul	a1, a1, a3
 	add	a0, a0, a1
-	li	a1, 208
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 4
 	addi	a0, a0, 208
 	ret
 

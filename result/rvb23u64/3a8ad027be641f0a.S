@@ -21,9 +21,9 @@ func000000000000001f:
 	ret
 
 func0000000000000014:
-	slli	a1, a0, 3
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 3
 	addi	a0, a0, 32
 	zext.w	a0, a0
 	ret

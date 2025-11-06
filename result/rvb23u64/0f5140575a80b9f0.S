@@ -20,16 +20,18 @@ func0000000000000007:
 	lui	a1, 1048464
 	add	a0, a0, a1
 	sraiw	a0, a0, 16
-	li	a1, 104
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 3
 	ret
 
 func0000000000000005:
 	lui	a1, 1048464
 	add	a0, a0, a1
 	sraiw	a0, a0, 16
-	li	a1, 104
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 3
 	ret
 
 func0000000000000003:

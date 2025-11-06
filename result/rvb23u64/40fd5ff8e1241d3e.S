@@ -31,9 +31,10 @@ func0000000000000031:
 	ret
 
 func0000000000000005:
-	li	a2, 52
-	mul	a0, a0, a2
-	addw	a0, a0, a1
+	sh1add	a2, a0, a0
+	sh2add	a0, a2, a0
+	sh2add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 
 func0000000000000000:

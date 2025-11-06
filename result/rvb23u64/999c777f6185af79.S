@@ -1,15 +1,15 @@
 func00000000000000f0:
-	slli	a2, a1, 5
-	slli	a1, a1, 8
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 136
 	ret
 
 func00000000000000c3:
-	slli	a2, a1, 5
-	slli	a1, a1, 8
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret
@@ -27,25 +27,24 @@ func000000000000006b:
 	ret
 
 func00000000000000c0:
-	slli	a2, a1, 2
-	slli	a1, a1, 5
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh2add	a0, a1, a0
 	addi	a0, a0, 1284
 	ret
 
 func0000000000000070:
-	li	a2, 88
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 2047
 	addi	a0, a0, 905
 	ret
 
 func0000000000000030:
-	li	a2, 152
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh3add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 28
 	ret
 

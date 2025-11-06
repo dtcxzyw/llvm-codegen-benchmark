@@ -43,18 +43,18 @@ func00000000000000ff:
 	ret
 
 func00000000000000f7:
-	li	a3, 44
-	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh2add	a0, a2, a0
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	andi	a0, a0, 63
 	ret
 
 func00000000000000f5:
-	li	a3, 44
-	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh2add	a0, a2, a0
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	andi	a0, a0, 63

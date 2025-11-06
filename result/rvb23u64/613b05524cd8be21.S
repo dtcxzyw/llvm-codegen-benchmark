@@ -7,9 +7,9 @@ func000000000000000f:
 
 func000000000000000c:
 	andi	a0, a0, 1
-	lui	a3, 1
-	addi	a3, a3, -1472
-	mul	a1, a1, a3
+	sh2add	a3, a1, a1
+	sh3add	a1, a3, a1
+	slli	a1, a1, 6
 	add	a1, a1, a2
 	addi	a1, a1, 1152
 	czero.eqz	a0, a1, a0

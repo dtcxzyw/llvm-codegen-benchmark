@@ -9,10 +9,10 @@ func00000000000001ff:
 func000000000000003f:
 	li	a2, 1
 	sub	a2, a2, a1
-	slli.uw	a1, a2, 3
-	slli.uw	a2, a2, 6
-	sub	a2, a2, a1
-	add	a0, a0, a2
+	zext.w	a1, a2
+	sh1add.uw	a2, a2, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 216
 	ret
 

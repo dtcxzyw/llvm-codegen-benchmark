@@ -22,7 +22,8 @@ func00000000000000af:
 	sub	a1, a1, a0
 	maxu	a1, a0, a1
 	add	a0, a0, a1
-	li	a1, 208
-	mul	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slli	a0, a0, 4
 	ret
 

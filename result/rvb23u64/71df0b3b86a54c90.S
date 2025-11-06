@@ -8,10 +8,9 @@ func000000000000000f:
 
 func000000000000001f:
 	sext.w	a1, a1
-	slli	a2, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a2
-	add	a0, a0, a1
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 40
 	ret
 
@@ -22,9 +21,10 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	zext.w	a1, a1
-	li	a2, 304
-	mul	a1, a1, a2
+	zext.w	a2, a1
+	sh3add.uw	a1, a1, a2
+	sh1add	a1, a1, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 184
 	ret

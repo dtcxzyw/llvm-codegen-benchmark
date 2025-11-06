@@ -54,12 +54,12 @@ func000000000000006b:
 	.quad	5675921253449092805
 func0000000000000009:
 	li	a2, -416
-	li	a3, 104
+	sh1add	a3, a0, a0
 	mul	a1, a1, a2
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	mul	a0, a0, a3
-	add	a0, a0, a1
+	sh2add	a0, a3, a0
+	sh3add	a0, a0, a1
 	srai	a0, a0, 3
 	mul	a0, a0, a2
 	ret

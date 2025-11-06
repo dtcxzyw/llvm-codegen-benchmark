@@ -66,10 +66,10 @@ func00000000000001f5:
 
 func00000000000000e5:
 	sext.w	a0, a0
-	slli	a3, a2, 1
-	slli	a2, a2, 4
-	sub	a2, a2, a3
-	addw	a1, a1, a2
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh1add	a1, a2, a1
+	sext.w	a1, a1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

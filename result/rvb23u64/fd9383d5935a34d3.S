@@ -49,12 +49,13 @@ func0000000000000002:
 	li	a1, -3
 	lui	a2, 199729
 	sub	a1, a1, a0
-	addi	a0, a2, -975
-	srliw	a2, a1, 1
+	srliw	a0, a1, 1
+	addi	a2, a2, -975
 	mul	a0, a0, a2
 	srli	a0, a0, 34
-	li	a2, 42
-	mul	a0, a0, a2
+	sh2add	a2, a0, a0
+	sh2add	a0, a2, a0
+	slli	a0, a0, 1
 	subw	a0, a1, a0
 	ret
 

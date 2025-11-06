@@ -14,8 +14,9 @@ func0000000000000028:
 
 func00000000000000ec:
 	sub	a2, a2, a1
-	li	a1, 208
-	mul	a1, a1, a2
+	sh1add	a1, a2, a2
+	sh2add	a1, a1, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 208
 	ret

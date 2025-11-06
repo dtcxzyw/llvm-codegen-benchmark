@@ -21,10 +21,10 @@ func0000000000000007:
 	mul	a0, a0, a1
 	srli	a1, a0, 1
 	mulhu	a1, a1, a2
-	andi	a2, a1, -2
-	slli	a1, a1, 3
-	andi	a1, a1, -16
-	add	a0, a0, a2
+	srli	a1, a1, 1
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 1
 	sub	a0, a0, a1
 	ret
 

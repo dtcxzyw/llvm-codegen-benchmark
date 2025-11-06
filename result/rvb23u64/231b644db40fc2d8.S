@@ -8,12 +8,12 @@ func000000000000000e:
 
 func000000000000001e:
 	or	a1, a1, a2
-	li	a2, 22
 	sext.w	a1, a1
-	mul	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
 	lui	a2, 3
-	addi	a2, a2, 1348
-	add	a0, a0, a2
+	sh1add	a0, a1, a0
+	addi	a1, a2, 1348
 	add	a0, a0, a1
 	ret
 

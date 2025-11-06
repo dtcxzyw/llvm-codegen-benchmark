@@ -18,12 +18,13 @@ func000000000000000c:
 	ret
 
 func000000000000003f:
-	zext.w	a1, a1
-	li	a2, 104
+	zext.w	a2, a1
 	addi	a0, a0, 7
-	mul	a1, a1, a2
+	sh1add.uw	a1, a1, a2
 	srli	a0, a0, 3
-	sh3add.uw	a0, a0, a1
+	sh2add	a1, a1, a2
+	slli.uw	a0, a0, 3
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000002f:

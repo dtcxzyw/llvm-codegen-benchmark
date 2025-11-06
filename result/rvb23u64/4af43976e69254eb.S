@@ -21,9 +21,9 @@ func0000000000000030:
 func0000000000000000:
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slli	a1, a0, 4
-	slli	a0, a0, 7
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 4
 	ret
 
 func000000000000003e:

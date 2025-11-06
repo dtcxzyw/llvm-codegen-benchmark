@@ -42,8 +42,9 @@ func0000000000000003:
 
 func0000000000000000:
 	zext.h	a1, a1
-	li	a2, 704
-	mul	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 6
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 577

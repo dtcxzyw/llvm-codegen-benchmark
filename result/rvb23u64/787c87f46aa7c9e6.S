@@ -107,13 +107,13 @@ func0000000000000050:
 	ret
 
 func00000000000000e0:
-	slli	a3, a2, 6
-	slli	a2, a2, 9
+	sh1add	a3, a2, a2
 	add	a0, a0, a1
 	lui	a1, 8
-	sub	a2, a2, a3
-	add	a0, a0, a2
+	sh1add	a2, a3, a2
 	addi	a1, a1, 448
+	slli	a2, a2, 6
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

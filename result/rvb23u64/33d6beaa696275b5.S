@@ -19,9 +19,9 @@ func0000000000000075:
 
 func0000000000000070:
 	sext.w	a1, a1
-	li	a2, 88
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 68
 	ret
 

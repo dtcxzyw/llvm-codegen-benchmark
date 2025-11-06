@@ -5,9 +5,9 @@ func0000000000000010:
 	ret
 
 func000000000000001c:
-	li	a2, 152
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh3add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -152
 	ret
 
@@ -111,9 +111,9 @@ func000000000000002c:
 	ret
 
 func0000000000000004:
-	li	a2, 88
-	mul	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -88
 	ret
 

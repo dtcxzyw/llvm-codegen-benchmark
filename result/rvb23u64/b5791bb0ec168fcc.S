@@ -18,7 +18,8 @@ func0000000000000001:
 
 func0000000000000004:
 	add	a0, a0, a1
-	li	a1, 84
-	mulw	a0, a0, a1
+	sh2add	a1, a0, a0
+	sh2add	a0, a1, a0
+	slliw	a0, a0, 2
 	ret
 

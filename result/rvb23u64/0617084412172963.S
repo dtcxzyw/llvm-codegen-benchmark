@@ -11,9 +11,9 @@ func000000000000003c:
 	ret
 
 func0000000000000034:
-	slli	a2, a1, 6
-	slli	a1, a1, 9
-	sub	a1, a1, a2
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 6
 	addi	a1, a1, -20
 	mul	a0, a0, a1
 	ret

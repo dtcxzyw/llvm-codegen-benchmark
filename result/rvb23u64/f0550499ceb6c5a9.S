@@ -7,14 +7,14 @@ func000000000000000c:
 
 func000000000000004c:
 	sext.w	a2, a2
-	slli	a3, a0, 4
-	slli	a0, a0, 7
-	sub	a0, a0, a3
+	sh1add	a3, a0, a0
+	sh1add	a0, a3, a0
 	lui	a3, 1
 	addi	a3, a3, 1992
 	mul	a2, a2, a3
+	add	a1, a1, a2
+	slli	a0, a0, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 2047
 	addi	a0, a0, 449
 	ret
@@ -63,10 +63,10 @@ func000000000000003f:
 	ret
 
 func000000000000003e:
-	zext.w	a2, a2
-	li	a3, 88
-	mul	a2, a2, a3
-	add	a1, a1, a2
+	zext.w	a3, a2
+	sh2add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	sh3add	a1, a2, a1
 	sh2add	a0, a0, a1
 	addi	a0, a0, 52
 	ret

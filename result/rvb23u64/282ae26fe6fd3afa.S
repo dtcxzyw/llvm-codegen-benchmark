@@ -20,9 +20,10 @@ func0000000000000140:
 
 func0000000000000103:
 	sub	a1, a1, a2
-	zext.w	a1, a1
-	li	a2, 176
-	mul	a1, a1, a2
+	zext.w	a2, a1
+	sh2add.uw	a1, a1, a2
+	sh1add	a1, a1, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 

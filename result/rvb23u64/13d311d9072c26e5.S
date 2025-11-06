@@ -36,8 +36,9 @@ func00000000000000d8:
 func000000000000005b:
 	add	a1, a1, a2
 	addiw	a1, a1, -1
-	li	a2, 176
-	mul	a1, a1, a2
+	sh2add	a2, a1, a1
+	sh1add	a1, a2, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret

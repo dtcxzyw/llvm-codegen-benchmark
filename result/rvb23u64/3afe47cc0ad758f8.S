@@ -1,7 +1,8 @@
 func0000000000000030:
-	slli.uw	a3, a2, 6
-	slli.uw	a2, a2, 9
-	sub	a2, a2, a3
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2047

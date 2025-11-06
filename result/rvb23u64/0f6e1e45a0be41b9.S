@@ -16,10 +16,10 @@ func0000000000000004:
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 4
 	add	a2, a2, a3
-	slli	a3, a2, 5
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
 	slli	a2, a2, 2
-	sub	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	subw	a0, a0, a2
 	ret
 

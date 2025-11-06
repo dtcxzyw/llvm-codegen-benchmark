@@ -1,8 +1,8 @@
 func00000000000000d0:
-	slli.uw	a3, a2, 6
-	slli.uw	a2, a2, 9
-	sub	a2, a2, a3
-	add	a0, a0, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	sh3add	a1, a2, a1
 	sh3add	a0, a1, a0
 	ret
 

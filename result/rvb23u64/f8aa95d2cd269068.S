@@ -1,6 +1,7 @@
 func000000000000000c:
-	li	a3, 88
-	mul	a2, a2, a3
+	sh2add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 3
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
@@ -40,9 +41,9 @@ func0000000000000026:
 	ret
 
 func0000000000000065:
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 3
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

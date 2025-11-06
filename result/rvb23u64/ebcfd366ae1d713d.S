@@ -5,9 +5,9 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	slli	a1, a0, 1
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	sh1add	a1, a0, a0
+	sh1add	a0, a1, a0
+	slli	a0, a0, 1
 	addi	a0, a0, 18
 	zext.w	a0, a0
 	ret

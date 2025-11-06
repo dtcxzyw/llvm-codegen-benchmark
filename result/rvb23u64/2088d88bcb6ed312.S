@@ -1,9 +1,9 @@
 func000000000000004c:
 	zext.h	a2, a2
-	li	a3, 152
-	mul	a2, a2, a3
+	sh3add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 22
 	ret
 

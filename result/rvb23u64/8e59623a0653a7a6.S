@@ -68,11 +68,10 @@ func0000000000000588:
 	ret
 
 func000000000000058a:
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	addi	a0, a1, 56
 	sgtz	a0, a0
 	ret
@@ -115,11 +114,10 @@ func0000000000000004:
 	ret
 
 func000000000000060a:
-	slli	a3, a2, 3
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh3add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	addi	a0, a1, -56
 	sgtz	a0, a0
 	ret
@@ -154,21 +152,19 @@ func0000000000000186:
 	ret
 
 func0000000000000706:
-	slli	a3, a2, 2
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh2add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	addi	a1, a1, -28
 	slti	a0, a1, 56
 	ret
 
 func000000000000070a:
-	slli	a3, a2, 2
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	sh2add	a1, a2, a1
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	addi	a1, a1, -28
 	slti	a0, a1, 57
 	xori	a0, a0, 1

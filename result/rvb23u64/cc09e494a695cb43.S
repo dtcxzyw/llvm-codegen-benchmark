@@ -8,9 +8,11 @@ func0000000000000141:
 	srliw	a3, a2, 31
 	srli	a2, a2, 4
 	add	a2, a2, a3
-	sh2add	a1, a2, a1
-	li	a2, 28
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
+	slli	a2, a2, 2
 	sub	a2, a2, a1
+	addi	a2, a2, 28
 	srlw	a0, a0, a2
 	seqz	a0, a0
 	ret

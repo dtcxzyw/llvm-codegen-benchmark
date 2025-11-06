@@ -35,10 +35,10 @@ func000000000000002f:
 func000000000000000c:
 	li	a2, 1
 	sub	a2, a2, a1
-	lui	a1, 1
-	zext.w	a2, a2
-	addi	a1, a1, -1472
-	mul	a1, a1, a2
+	zext.w	a1, a2
+	sh2add.uw	a2, a2, a1
+	sh3add	a1, a2, a1
+	slli	a1, a1, 6
 	add	a0, a0, a1
 	addi	a0, a0, 1152
 	ret

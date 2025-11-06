@@ -1,9 +1,9 @@
 func0000000000000c21:
 	sext.w	a0, a0
-	slli.uw	a3, a2, 2
-	slli.uw	a2, a2, 5
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	zext.w	a3, a2
+	sh1add.uw	a2, a2, a3
+	sh1add	a2, a2, a3
+	sh2add	a1, a2, a1
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1

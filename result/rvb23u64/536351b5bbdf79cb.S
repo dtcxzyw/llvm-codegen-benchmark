@@ -10,11 +10,11 @@ func0000000000000033:
 	ret
 
 func000000000000003b:
-	li	a3, 88
-	mul	a0, a0, a3
+	sh2add	a3, a0, a0
+	sh1add	a0, a3, a0
 	li	a3, 1
 	andn	a1, a3, a1
-	add	a0, a0, a2
+	sh3add	a0, a0, a2
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 72
@@ -39,9 +39,10 @@ func000000000000003f:
 
 func0000000000000000:
 	andi	a1, a1, 1
-	li	a3, 704
-	mul	a0, a0, a3
+	sh2add	a3, a0, a0
+	sh1add	a0, a3, a0
 	addi	a1, a1, -1
+	slli	a0, a0, 6
 	add	a0, a0, a2
 	andi	a1, a1, 704
 	add	a0, a0, a1

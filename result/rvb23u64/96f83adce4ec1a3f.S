@@ -37,10 +37,11 @@ func000000000000000a:
 
 func0000000000000000:
 	andi	a2, a2, 1
-	li	a3, 704
+	sh2add	a3, a1, a1
 	addi	a2, a2, -1
-	mul	a1, a1, a3
+	sh1add	a1, a3, a1
 	andi	a2, a2, 704
+	slli	a1, a1, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

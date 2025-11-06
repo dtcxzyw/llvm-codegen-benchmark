@@ -1,14 +1,13 @@
 func0000000000000070:
 	sext.w	a2, a2
 	slli	a0, a0, 4
+	sh1add	a3, a2, a2
+	sh1add	a2, a3, a2
 	lui	a3, 33
-	add	a0, a0, a1
-	slli	a1, a2, 3
-	slli	a2, a2, 6
 	addi	a3, a3, -1968
-	sub	a2, a2, a1
+	sh3add	a1, a2, a1
 	add	a0, a0, a3
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func000000000000003f:
