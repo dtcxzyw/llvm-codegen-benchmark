@@ -3,8 +3,7 @@ func000000000000014c:
 	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000c1:
@@ -109,9 +108,8 @@ func0000000000000101:
 	zext.b	a0, a0
 	sext.w	a2, a2
 	sltiu	a2, a2, 9
-	seqz	a0, a0
 	xori	a2, a2, 1
-	and	a0, a0, a1
-	and	a0, a0, a2
+	and	a1, a1, a2
+	czero.nez	a0, a1, a0
 	ret
 

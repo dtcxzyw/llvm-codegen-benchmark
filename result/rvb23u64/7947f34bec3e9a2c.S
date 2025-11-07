@@ -12,8 +12,7 @@ func0000000000000104:
 	sext.w	a2, a1
 	addi	a1, a1, 1
 	srliw	a1, a1, 20
-	seqz	a1, a1
 	sltu	a0, a2, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

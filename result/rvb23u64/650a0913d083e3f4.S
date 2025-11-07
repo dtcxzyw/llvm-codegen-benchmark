@@ -33,8 +33,7 @@ func00000000000000ec:
 func00000000000000e1:
 	sext.w	a0, a0
 	feq.d	a1, fa0, fa1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000041:

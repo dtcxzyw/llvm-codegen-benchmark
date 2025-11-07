@@ -3,23 +3,20 @@ func000000000000018c:
 	neg	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d8a:
 	zext.w	a2, a2
 	or	a1, a1, a2
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008c:
 	add.uw	a1, a2, a1
 	srli	a1, a1, 18
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

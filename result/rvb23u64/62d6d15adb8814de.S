@@ -1,9 +1,8 @@
 func0000000000000181:
-	slli	a1, a1, 48
+	zext.h	a1, a1
 	addiw	a0, a0, -6
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:

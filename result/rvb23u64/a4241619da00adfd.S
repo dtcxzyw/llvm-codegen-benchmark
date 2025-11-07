@@ -8,19 +8,18 @@ func0000000000000021:
 
 func000000000000002c:
 	not	a1, a1
-	sext.w	a0, a0
 	bexti	a1, a1, 13
-	snez	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:
 	slli	a1, a1, 48
-	sraiw	a0, a0, 2
+	srliw	a0, a0, 2
 	srli	a1, a1, 58
 	addi	a1, a1, -55
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	slli	a0, a0, 2
+	czero.eqz	a0, a1, a0
 	ret
 

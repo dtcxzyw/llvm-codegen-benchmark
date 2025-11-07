@@ -7,10 +7,9 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	slli	a1, a1, 48
-	seqz	a1, a1
+	zext.h	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:

@@ -1,10 +1,9 @@
 func000000000000018c:
 	slli	a0, a0, 43
 	srli	a0, a0, 61
-	snez	a1, a0
-	addi	a0, a0, -7
-	snez	a0, a0
-	and	a0, a0, a1
+	addi	a1, a0, -7
+	snez	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000198:

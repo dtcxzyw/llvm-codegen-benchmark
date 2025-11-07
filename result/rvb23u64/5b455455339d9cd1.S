@@ -3,8 +3,7 @@ func000000000000008c:
 	zext.h	a1, a1
 	addi	a1, a1, -200
 	sltiu	a1, a1, 100
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000086:
@@ -30,8 +29,7 @@ func0000000000000081:
 	zext.h	a1, a1
 	addi	a1, a1, -17
 	sltiu	a1, a1, 120
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000084:
@@ -65,8 +63,7 @@ func000000000000018c:
 	zext.h	a1, a1
 	addi	a1, a1, -1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000488:

@@ -1,8 +1,7 @@
 func0000000000000081:
 	andi	a2, a2, 15
-	seqz	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000021:
@@ -16,9 +15,8 @@ func0000000000000021:
 func0000000000000121:
 	andi	a2, a2, 63
 	sltu	a0, a0, a1
-	seqz	a1, a2
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000028c:

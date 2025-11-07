@@ -1,20 +1,16 @@
 func000000000000014c:
 	sext.w	a1, a1
-	zext.h	a2, a0
-	slli	a0, a0, 48
-	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	zext.h	a0, a0
+	slt	a1, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
-	zext.h	a2, a0
+	zext.h	a0, a0
 	sext.w	a1, a1
-	slli	a0, a0, 48
-	xor	a1, a1, a2
+	xor	a1, a1, a0
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000088:
@@ -55,10 +51,8 @@ func0000000000000128:
 
 func000000000000010c:
 	sext.w	a1, a1
-	zext.h	a2, a0
-	slli	a0, a0, 48
-	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	zext.h	a0, a0
+	sltu	a1, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

@@ -7,11 +7,10 @@ func0000000000000181:
 	addi	a2, a2, -1968
 	add	a1, a1, a2
 	lui	a2, 10486
-	addi	a2, a2, -984
 	roriw	a1, a1, 2
+	addi	a2, a2, -984
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:

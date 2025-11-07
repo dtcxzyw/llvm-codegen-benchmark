@@ -1,9 +1,8 @@
 func0000000000000881:
 	sext.w	a0, a0
 	bext	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, -10
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000082c:
@@ -62,8 +61,7 @@ func000000000000018c:
 	srlw	a1, a1, a2
 	addiw	a0, a0, -3
 	zext.b	a1, a1
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

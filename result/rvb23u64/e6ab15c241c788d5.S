@@ -3,8 +3,7 @@ func000000000000018c:
 	srliw	a1, a1, 24
 	addi	a1, a1, -4
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
@@ -12,8 +11,7 @@ func0000000000000181:
 	andi	a1, a1, -8
 	addiw	a1, a1, -128
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:

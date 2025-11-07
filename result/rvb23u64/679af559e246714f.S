@@ -22,9 +22,8 @@ func0000000000000d8c:
 func0000000000000881:
 	sext.w	a0, a0
 	bext	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000d81:

@@ -86,8 +86,7 @@ func00000000000000b8:
 func00000000000000ac:
 	sext.w	a1, a1
 	snez	a0, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000026:

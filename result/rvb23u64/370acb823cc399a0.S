@@ -14,7 +14,6 @@ func000000000000008c:
 	or	a0, a0, a1
 	srliw	a0, a0, 30
 	seqz	a0, a0
-	snez	a1, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

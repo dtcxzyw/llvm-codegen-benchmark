@@ -12,19 +12,17 @@ func00000000000000a4:
 func0000000000000624:
 	sext.w	a1, a1
 	lui	a2, 1048574
-	seqz	a1, a1
 	addi	a2, a2, -809
 	addw	a0, a0, a2
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000084:
 	sext.w	a1, a1
 	addiw	a0, a0, -1
-	snez	a1, a1
 	sltiu	a0, a0, 15
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000204:

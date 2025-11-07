@@ -30,8 +30,7 @@ func0000000000000281:
 	sext.w	a2, a2
 	sltiu	a2, a2, 50
 	and	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000014a:
@@ -74,8 +73,7 @@ func0000000000000141:
 	sext.w	a2, a2
 	sgtz	a2, a2
 	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000181:
@@ -83,8 +81,7 @@ func0000000000000181:
 	sext.w	a2, a2
 	snez	a2, a2
 	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000028a:
@@ -176,8 +173,7 @@ func0000000000000101:
 	srliw	a2, a2, 16
 	snez	a2, a2
 	and	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000144:
@@ -196,8 +192,7 @@ func000000000000014c:
 	sext.w	a2, a2
 	sgtz	a2, a2
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018a:

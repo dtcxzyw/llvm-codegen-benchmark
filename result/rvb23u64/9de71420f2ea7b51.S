@@ -1,9 +1,9 @@
 func0000000000000181:
 	slli	a1, a1, 41
 	addi	a0, a0, -255
-	snez	a1, a1
+	srli	a1, a1, 41
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000581:

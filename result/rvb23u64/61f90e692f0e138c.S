@@ -9,8 +9,7 @@ func00000000000004cc:
 	sext.w	a2, a0
 	addw	a0, a0, a1
 	slti	a0, a0, 129
-	snez	a1, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000042c:
@@ -27,8 +26,7 @@ func000000000000054c:
 	addw	a0, a0, a1
 	slti	a0, a0, 9
 	xori	a0, a0, 1
-	snez	a1, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000546:

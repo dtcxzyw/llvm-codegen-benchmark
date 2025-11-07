@@ -45,32 +45,28 @@ func0000000000000181:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000186:
+	zext.h	a1, a1
 	sext.h	a0, a0
-	slli	a1, a1, 48
-	snez	a1, a1
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000024:
-	zext.h	a0, a0
 	zext.h	a1, a1
-	seqz	a1, a1
+	zext.h	a0, a0
 	sltiu	a0, a0, 37
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
 	zext.h	a0, a0
 	zext.h	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000146:
@@ -86,8 +82,7 @@ func0000000000000101:
 	zext.h	a1, a1
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -102,12 +97,11 @@ func000000000000008c:
 	ret
 
 func0000000000000141:
+	zext.h	a0, a0
 	sext.h	a1, a1
-	slli	a0, a0, 48
 	slti	a1, a1, -14
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000188:
@@ -123,11 +117,10 @@ func0000000000000188:
 	ret
 
 func0000000000000184:
-	zext.h	a0, a0
 	zext.h	a1, a1
-	snez	a1, a1
+	zext.h	a0, a0
 	sltiu	a0, a0, 11
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -202,19 +195,17 @@ func0000000000000108:
 	ret
 
 func000000000000002a:
+	zext.h	a1, a1
 	sext.h	a0, a0
-	slli	a1, a1, 48
-	seqz	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000034:
-	zext.h	a0, a0
 	zext.h	a1, a1
-	seqz	a1, a1
+	zext.h	a0, a0
 	sltiu	a0, a0, 63
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000026:
@@ -229,10 +220,9 @@ func0000000000000026:
 	ret
 
 func000000000000018a:
+	zext.h	a1, a1
 	sext.h	a0, a0
-	slli	a1, a1, 48
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

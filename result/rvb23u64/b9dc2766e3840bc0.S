@@ -15,9 +15,8 @@ func00000000000000c6:
 	sext.w	a0, a0
 	fclass.d	a1, fa0
 	andi	a1, a1, 126
-	snez	a1, a1
 	sltiu	a0, a0, -1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 .LCPI2_0:
@@ -40,7 +39,6 @@ func000000000000008c:
 	sext.w	a0, a0
 	fabs.d	fa4, fa0
 	flt.d	a1, fa5, fa4
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

@@ -3,8 +3,7 @@ func0000000000000481:
 	sext.b	a1, a1
 	addi	a1, a1, -58
 	sltiu	a1, a1, -10
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000484:

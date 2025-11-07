@@ -2,8 +2,7 @@ func000000000000068c:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:
@@ -20,8 +19,7 @@ func0000000000000181:
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000042a:
@@ -38,8 +36,7 @@ func000000000000002c:
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -70,8 +67,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000a1:
@@ -96,8 +92,7 @@ func00000000000000ac:
 	zext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004ca:
@@ -122,8 +117,7 @@ func0000000000000581:
 	sext.w	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000072c:
@@ -131,8 +125,7 @@ func000000000000072c:
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000544:
@@ -147,8 +140,7 @@ func0000000000000681:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000426:
@@ -172,8 +164,7 @@ func00000000000006ac:
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000050a:
@@ -195,8 +186,7 @@ func0000000000000081:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000004a4:
@@ -214,16 +204,14 @@ func000000000000054c:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000010c:
 	sext.w	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000028c:

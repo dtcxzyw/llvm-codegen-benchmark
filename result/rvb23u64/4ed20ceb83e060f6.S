@@ -41,11 +41,11 @@ func000000000000001c:
 	ret
 
 func000000000000007f:
-	zext.w	a3, a2
 	zext.b	a0, a0
-	sh1add.uw	a2, a2, a3
+	slli.uw	a2, a2, 3
+	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
-	sh3add	a1, a2, a1
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 40
 	ret

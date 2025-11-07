@@ -23,20 +23,18 @@ func0000000000000099:
 	fclass.s	a0, fa1
 	fclass.s	a1, fa0
 	andi	a0, a0, 897
-	andi	a1, a1, 897
 	snez	a0, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 897
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000066:
 	fclass.s	a0, fa1
 	fclass.s	a1, fa0
 	andi	a0, a0, 126
-	andi	a1, a1, 126
 	snez	a0, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 126
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000022:

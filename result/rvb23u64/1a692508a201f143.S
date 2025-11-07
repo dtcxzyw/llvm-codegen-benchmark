@@ -35,9 +35,8 @@ func0000000000000184:
 func000000000000002c:
 	andi	a2, a2, 16
 	addiw	a1, a1, -258
-	seqz	a2, a2
 	snez	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -57,11 +56,10 @@ func000000000000018c:
 	sext.w	a1, a1
 	lui	a3, 224
 	addi	a3, a3, 768
-	snez	a1, a1
 	and	a2, a2, a3
 	snez	a2, a2
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func0000000000000026:

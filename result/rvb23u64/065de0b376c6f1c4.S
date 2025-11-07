@@ -1,10 +1,9 @@
 func0000000000000081:
 	sext.w	a2, a2
-	andi	a1, a1, 1
 	sltiu	a2, a2, 9
 	and	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -17,11 +16,10 @@ func000000000000008c:
 
 func0000000000000181:
 	sext.w	a2, a2
-	andi	a1, a1, 1
 	snez	a2, a2
 	and	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -54,10 +52,9 @@ func0000000000000101:
 
 func000000000000018c:
 	sext.w	a2, a2
-	andi	a1, a1, 768
 	snez	a2, a2
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 768
+	czero.eqz	a0, a0, a1
 	ret
 

@@ -16,11 +16,10 @@ func0000000000000104:
 	ret
 
 func000000000000012c:
+	zext.h	a0, a0
 	sltu	a1, a1, a2
-	slli	a0, a0, 48
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000189:
@@ -31,10 +30,9 @@ func0000000000000189:
 	ret
 
 func0000000000000188:
-	slli	a2, a2, 48
-	snez	a2, a2
+	zext.h	a2, a2
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000029:
@@ -131,9 +129,8 @@ func0000000000000088:
 	ret
 
 func0000000000000184:
-	slli	a2, a2, 48
-	snez	a2, a2
+	zext.h	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 

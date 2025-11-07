@@ -1,9 +1,8 @@
 func000000000000018c:
 	andi	a1, a1, 7
-	andi	a0, a0, 7
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 7
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:

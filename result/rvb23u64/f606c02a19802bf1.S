@@ -7,9 +7,8 @@ func0000000000000021:
 
 func000000000000002c:
 	zext.b	a1, a1
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -23,9 +22,8 @@ func0000000000000081:
 func0000000000000038:
 	zext.b	a1, a1
 	lui	a2, 16384
-	seqz	a1, a1
 	sltu	a0, a2, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func00000000000000d4:
@@ -47,7 +45,6 @@ func00000000000000d8:
 func00000000000000c1:
 	sext.b	a1, a1
 	srli	a1, a1, 63
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

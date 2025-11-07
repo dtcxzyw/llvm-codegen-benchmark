@@ -3,12 +3,11 @@ func0000000000001c2c:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	lui	a2, 16
-	addi	a2, a2, -536
 	sext.w	a1, a1
+	addi	a2, a2, -536
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000001c21:
@@ -27,8 +26,7 @@ func000000000000058c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000001d81:
@@ -37,8 +35,7 @@ func0000000000001d81:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000142c:
@@ -47,8 +44,7 @@ func000000000000142c:
 	or	a1, a1, a2
 	addiw	a1, a1, -10
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000001f01:
@@ -81,8 +77,7 @@ func0000000000001581:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001d8c:
@@ -91,7 +86,6 @@ func0000000000001d8c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

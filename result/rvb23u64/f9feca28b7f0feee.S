@@ -11,9 +11,8 @@ func0000000000000021:
 func0000000000000024:
 	sext.w	a1, a1
 	srliw	a0, a0, 16
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	addiw	a0, a0, -4
 	ret
 

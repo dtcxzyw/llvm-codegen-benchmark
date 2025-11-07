@@ -28,11 +28,10 @@ func0000000000000036:
 	li	a1, 575
 	andi	a0, a0, 126
 	slli	a1, a1, 53
-	snez	a0, a0
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
 	xori	a1, a1, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI3_0:
@@ -54,11 +53,10 @@ func00000000000000d6:
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	fabs.d	fa4, fa0
 	fclass.d	a0, fa0
-	andi	a0, a0, 126
 	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 126
+	czero.eqz	a0, a1, a0
 	ret
 
 .promoted_doubles.func0000000000000035:

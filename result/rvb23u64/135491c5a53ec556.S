@@ -8,8 +8,7 @@ func00000000000004ca:
 func00000000000004cc:
 	sext.w	a1, a1
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000294:
@@ -22,15 +21,13 @@ func0000000000000294:
 func00000000000000cc:
 	zext.w	a1, a1
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000068c:
 	sext.w	a1, a1
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000048c:
@@ -43,8 +40,7 @@ func000000000000048c:
 func000000000000008c:
 	zext.w	a1, a1
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000002aa:
@@ -58,8 +54,7 @@ func00000000000002aa:
 func000000000000010c:
 	zext.w	a1, a1
 	sltu	a1, a1, a0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000424:
@@ -88,8 +83,7 @@ func000000000000032c:
 	zext.w	a1, a1
 	sltu	a1, a0, a1
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000068a:

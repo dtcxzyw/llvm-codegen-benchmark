@@ -20,8 +20,7 @@ func000000000000008c:
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000184:
@@ -29,8 +28,7 @@ func0000000000000184:
 	xor	a1, a1, a2
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000084:

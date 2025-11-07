@@ -28,7 +28,6 @@ func000000000000008c:
 	zext.w	a0, a0
 	sub	a1, a1, a2
 	sltu	a0, a1, a0
-	snez	a1, a3
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a3
 	ret
 

@@ -11,9 +11,9 @@ func00000000000000c7:
 func000000000000014c:
 	slli	a0, a0, 33
 	fli.s	fa5, min
-	snez	a0, a0
+	srli	a0, a0, 33
 	fle.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -26,10 +26,9 @@ func000000000000008c:
 func0000000000000081:
 	andi	a0, a0, 64
 	lui	a1, 212992
-	seqz	a0, a0
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000ca:

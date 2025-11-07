@@ -42,7 +42,6 @@ func000000000000068c:
 	sext.w	a0, a0
 	zext.h	a1, a1
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

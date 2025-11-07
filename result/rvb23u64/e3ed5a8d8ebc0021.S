@@ -2,9 +2,8 @@ func0000000000000101:
 	lui	a1, 524032
 	fmv.d.x	fa5, zero
 	and	a0, a0, a1
-	seqz	a0, a0
 	feq.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000001cc:
@@ -33,8 +32,7 @@ func000000000000004c:
 func0000000000000041:
 	andi	a0, a0, 511
 	fli.d	fa5, 1.0
-	seqz	a0, a0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

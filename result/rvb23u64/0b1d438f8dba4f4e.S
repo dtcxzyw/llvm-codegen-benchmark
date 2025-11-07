@@ -32,16 +32,14 @@ func0000000000000086:
 
 func0000000000000026:
 	sext.w	a1, a1
-	snez	a1, a1
 	srliw	a0, a0, 31
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

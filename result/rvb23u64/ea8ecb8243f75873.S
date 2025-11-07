@@ -8,15 +8,13 @@ func00000000000000aa:
 func000000000000014c:
 	sext.w	a0, a0
 	fle.d	a1, fa0, fa1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:
 	sext.w	a0, a0
 	fle.d	a1, fa1, fa0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000041:
@@ -43,8 +41,7 @@ func0000000000000101:
 func000000000000004c:
 	sext.w	a0, a0
 	flt.d	a1, fa0, fa1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008a:
@@ -73,8 +70,7 @@ func0000000000000154:
 func000000000000008c:
 	sext.w	a0, a0
 	flt.d	a1, fa1, fa0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000098:

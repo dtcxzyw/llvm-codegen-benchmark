@@ -25,8 +25,7 @@ func0000000000000421:
 func0000000000000028:
 	sext.w	a0, a0
 	addiw	a1, a1, -60
-	seqz	a0, a0
 	sltiu	a1, a1, -61
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

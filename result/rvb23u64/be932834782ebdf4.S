@@ -72,9 +72,8 @@ func0000000000000066:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
 	andi	a0, a0, 126
-	snez	a0, a0
 	flt.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000006d:
@@ -110,8 +109,7 @@ func0000000000000086:
 	fclass.s	a0, fa1
 	fmv.w.x	fa5, zero
 	andi	a0, a0, 126
-	snez	a0, a0
 	feq.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

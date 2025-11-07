@@ -14,7 +14,6 @@ func00000000000010ac:
 	zext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

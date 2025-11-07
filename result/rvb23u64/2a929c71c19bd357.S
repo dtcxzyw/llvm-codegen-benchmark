@@ -15,11 +15,10 @@ func0000000000000034:
 	ret
 
 func0000000000000021:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	snez	a1, a1
+	zext.b	a0, a0
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000024:
@@ -49,20 +48,18 @@ func0000000000000081:
 	ret
 
 func000000000000002c:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	snez	a1, a1
+	zext.b	a0, a0
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000038:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	snez	a1, a1
+	zext.b	a0, a0
 	sltiu	a0, a0, 3
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008c:

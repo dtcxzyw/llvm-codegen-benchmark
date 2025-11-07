@@ -16,9 +16,8 @@ func0000000000000028:
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fclass.d	a0, fa1
 	andi	a0, a0, 129
-	snez	a0, a0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI2_0:
@@ -58,18 +57,16 @@ func0000000000000066:
 	fclass.d	a0, fa1
 	fli.d	fa5, inf
 	andi	a0, a0, 126
-	snez	a0, a0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000088:
 	fclass.d	a0, fa1
 	fli.d	fa5, inf
 	andi	a0, a0, 129
-	snez	a0, a0
 	feq.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000004a:

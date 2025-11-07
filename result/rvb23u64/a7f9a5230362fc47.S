@@ -13,8 +13,7 @@ func0000000000000181:
 	sext.w	a1, a1
 	zext.b	a2, a2
 	snez	a2, a2
-	seqz	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a2, a1
 	lui	a2, 2081
 	addi	a2, a2, -986
 	czero.nez	a0, a0, a1
@@ -26,9 +25,8 @@ func000000000000002c:
 	sext.w	a1, a1
 	zext.b	a2, a2
 	addi	a2, a2, -102
-	snez	a1, a1
 	seqz	a2, a2
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	addi	a0, a0, -4
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 4

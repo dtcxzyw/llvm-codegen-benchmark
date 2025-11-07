@@ -12,8 +12,7 @@ func0000000000000181:
 	andi	a1, a1, 15
 	addi	a1, a1, -1
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000081:
@@ -37,7 +36,6 @@ func0000000000000301:
 	sext.b	a1, a1
 	slti	a1, a1, -64
 	srli	a0, a0, 11
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

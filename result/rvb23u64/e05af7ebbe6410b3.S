@@ -15,10 +15,9 @@ func00000000000004c1:
 func000000000000008c:
 	sext.w	a0, a0
 	addiw	a2, a2, 2
-	andi	a1, a1, 15
 	sltu	a0, a2, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	andi	a1, a1, 15
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000054c:

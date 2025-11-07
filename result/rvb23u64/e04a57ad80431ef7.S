@@ -14,9 +14,8 @@ func0000000000000021:
 func0000000000000181:
 	lui	a2, 96
 	and	a1, a1, a2
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:

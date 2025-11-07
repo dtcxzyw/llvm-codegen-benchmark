@@ -10,10 +10,9 @@ func00000000000000e4:
 
 func0000000000000004:
 	sext.w	a2, a0
-	zext.w	a3, a0
-	sh1add.uw	a0, a0, a3
+	slli.uw	a0, a0, 4
+	sh1add	a0, a0, a0
 	sh2add	a0, a0, a0
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	sltiu	a1, a2, 33
 	czero.eqz	a0, a0, a1

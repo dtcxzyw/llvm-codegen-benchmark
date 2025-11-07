@@ -21,16 +21,14 @@ func000000000000008c:
 	lui	a3, 1048575
 	sltu	a2, a2, a3
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000018c:
 	sext.w	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000010a:
@@ -99,7 +97,6 @@ func000000000000002c:
 	sext.w	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

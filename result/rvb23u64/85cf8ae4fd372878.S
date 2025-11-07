@@ -14,7 +14,6 @@ func0000000000000c34:
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

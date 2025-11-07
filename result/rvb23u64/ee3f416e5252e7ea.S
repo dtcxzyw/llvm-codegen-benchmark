@@ -15,14 +15,12 @@ func0000000000000046:
 func0000000000000101:
 	zext.b	a0, a0
 	feq.d	a1, fa0, fa1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000010c:
 	zext.b	a0, a0
 	feq.d	a1, fa0, fa1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

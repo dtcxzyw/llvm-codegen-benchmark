@@ -1,9 +1,8 @@
 func000000000000008a:
 	sext.w	a2, a2
 	subw	a0, a0, a1
-	seqz	a1, a2
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000401:

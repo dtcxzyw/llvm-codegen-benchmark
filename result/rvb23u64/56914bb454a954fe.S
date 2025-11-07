@@ -10,8 +10,8 @@ func0000000000000042:
 func0000000000000302:
 	slli	a1, a1, 12
 	addiw	a0, a0, -1
-	seqz	a1, a1
+	srli	a1, a1, 12
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

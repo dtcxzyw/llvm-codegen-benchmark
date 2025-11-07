@@ -7,21 +7,20 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	not	a2, a2
+	lui	a3, 1
 	addiw	a1, a1, -1283
-	bexti	a2, a2, 12
+	and	a2, a2, a3
 	seqz	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000181:
 	andi	a2, a2, 1
 	addiw	a1, a1, -1
-	seqz	a2, a2
 	snez	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000002c:
@@ -70,9 +69,8 @@ func0000000000000034:
 	addiw	a3, a3, -8
 	seqz	a1, a1
 	and	a2, a2, a3
-	seqz	a2, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000081:

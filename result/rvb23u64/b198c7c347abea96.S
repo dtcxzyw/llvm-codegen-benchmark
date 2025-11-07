@@ -9,15 +9,13 @@ func00000000000000e8:
 func000000000000014c:
 	fli.d	fa5, min
 	fle.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000004c:
 	fli.d	fa5, 1.0
 	flt.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI3_0:
@@ -48,17 +46,15 @@ func00000000000000a8:
 	ret
 
 func00000000000000c4:
-	snez	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000010c:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000024:
@@ -73,8 +69,7 @@ func0000000000000024:
 func00000000000000cc:
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000ac:

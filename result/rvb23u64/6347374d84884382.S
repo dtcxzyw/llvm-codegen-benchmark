@@ -6,15 +6,13 @@ func00000000000000ca:
 
 func000000000000010c:
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
 	xor	a1, a1, a0
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000024:
@@ -38,10 +36,9 @@ func00000000000000cc:
 
 func0000000000000124:
 	sltu	a1, a1, a0
-	srli	a0, a0, 61
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	srli	a0, a0, 61
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:

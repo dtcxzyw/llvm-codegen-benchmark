@@ -21,23 +21,20 @@ func0000000000000c94:
 func000000000000008c:
 	addi	a2, a2, 4
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d8c:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c8c:
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c81:
@@ -67,8 +64,7 @@ func0000000000000d81:
 	addi	a2, a2, 8
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000c24:
@@ -100,29 +96,25 @@ func000000000000002c:
 	addi	a2, a2, 1024
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000090c:
 	addi	a2, a2, -1
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000cac:
 	addi	a2, a2, 12
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000081:
 	addi	a2, a2, 2
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

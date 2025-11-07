@@ -4,8 +4,7 @@ func0000000000000058:
 	srli	a1, a1, 52
 	addi	a1, a1, -1
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000318:
@@ -14,7 +13,6 @@ func0000000000000318:
 	and	a1, a1, a2
 	binvi	a1, a1, 26
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

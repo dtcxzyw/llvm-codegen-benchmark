@@ -3,8 +3,7 @@ func0000000000000181:
 	sub	a1, a1, a2
 	addi	a1, a1, -1
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -46,16 +45,14 @@ func0000000000000028:
 func000000000000042a:
 	zext.b	a0, a0
 	slt	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
 	zext.b	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002a:
@@ -128,17 +125,15 @@ func000000000000010c:
 	sub	a1, a1, a2
 	sltiu	a1, a1, 33
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000184:
 	zext.b	a0, a0
 	sub	a1, a1, a2
 	srli	a1, a1, 52
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000108:

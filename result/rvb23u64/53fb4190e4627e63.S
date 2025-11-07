@@ -13,7 +13,6 @@ func0000000000000104:
 	addi	a0, a0, 1
 	sltu	a1, a2, a1
 	srliw	a0, a0, 20
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

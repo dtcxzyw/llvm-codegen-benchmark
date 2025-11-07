@@ -25,9 +25,8 @@ func0000000000000584:
 	and	a1, a1, a2
 	lui	a2, 256
 	addi	a2, a2, 528
-	snez	a1, a1
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -35,8 +34,7 @@ func0000000000000081:
 	addiw	a1, a1, 63
 	andi	a1, a1, -64
 	sltiu	a1, a1, 321
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000c21:

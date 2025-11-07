@@ -2,8 +2,7 @@ func000000000000002c:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -15,19 +14,17 @@ func0000000000000021:
 	ret
 
 func0000000000000184:
+	zext.h	a1, a1
 	sext.w	a0, a0
-	slli	a1, a1, 48
-	snez	a1, a1
 	sltiu	a0, a0, 26
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000018c:
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000084:
@@ -41,11 +38,10 @@ func0000000000000084:
 	ret
 
 func0000000000000181:
+	zext.h	a0, a0
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000141:
@@ -66,11 +62,10 @@ func0000000000000028:
 	ret
 
 func000000000000018a:
+	zext.h	a1, a1
 	sext.w	a0, a0
-	slli	a1, a1, 48
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000038:
@@ -83,11 +78,10 @@ func0000000000000038:
 	ret
 
 func0000000000000024:
-	zext.h	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
+	zext.h	a0, a0
 	sltiu	a0, a0, 61
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000010c:
@@ -121,26 +115,23 @@ func0000000000000118:
 	ret
 
 func00000000000000cc:
+	zext.h	a0, a0
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	slti	a1, a1, 3
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000186:
+	zext.h	a1, a1
 	sext.w	a0, a0
-	slli	a1, a1, 48
-	snez	a1, a1
 	slti	a0, a0, 2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000000c1:
+	zext.h	a0, a0
 	srliw	a1, a1, 31
-	slli	a0, a0, 48
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000188:
@@ -156,8 +147,7 @@ func00000000000000c8:
 	slli	a0, a0, 48
 	slti	a1, a1, 18
 	srli	a0, a0, 62
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000101:
@@ -257,11 +247,10 @@ func0000000000000301:
 	ret
 
 func0000000000000026:
-	sext.h	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
+	sext.h	a0, a0
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000146:

@@ -47,8 +47,7 @@ func000000000000002c:
 	andi	a2, a2, 32
 	seqz	a2, a2
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000038:
@@ -70,12 +69,11 @@ func000000000000018c:
 	sext.w	a1, a1
 	lui	a3, 16
 	addi	a3, a3, -256
-	snez	a1, a1
 	and	a2, a2, a3
 	addi	a2, a2, -1536
 	snez	a2, a2
-	and	a0, a0, a1
 	and	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000034:

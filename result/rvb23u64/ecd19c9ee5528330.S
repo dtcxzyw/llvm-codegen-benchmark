@@ -24,10 +24,9 @@ func0000000000000004:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	zext.w	a3, a2
-	sh1add.uw	a2, a2, a3
+	slli.uw	a2, a2, 4
+	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	add	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret

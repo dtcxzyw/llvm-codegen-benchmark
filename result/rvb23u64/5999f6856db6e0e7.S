@@ -8,10 +8,9 @@ func0000000000000284:
 
 func0000000000000688:
 	cpopw	a1, a0
-	srliw	a0, a0, 12
 	sltiu	a1, a1, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 12
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000028a:

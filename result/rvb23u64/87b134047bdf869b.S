@@ -7,9 +7,8 @@ func0000000000000181:
 func000000000000018c:
 	andi	a1, a1, -5
 	addiw	a0, a0, -7
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -22,25 +21,22 @@ func0000000000000021:
 func000000000000002c:
 	sext.w	a0, a0
 	andi	a1, a1, -5
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000281:
 	sext.w	a0, a0
 	zext.w	a1, a1
 	sltiu	a1, a1, 29
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002a:
 	sext.w	a0, a0
 	andi	a1, a1, 16
-	seqz	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -56,51 +52,45 @@ func0000000000000081:
 func0000000000000101:
 	sext.w	a0, a0
 	andi	a1, a1, 3
-	seqz	a1, a1
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000028:
 	slli	a1, a1, 44
-	srliw	a0, a0, 20
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 20
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018a:
 	sext.w	a0, a0
 	andi	a1, a1, 7
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000014c:
 	sext.w	a0, a0
 	andi	a1, a1, 7
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000026:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	seqz	a1, a1
 	slti	a0, a0, 3
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000141:
 	sext.w	a0, a0
 	andi	a1, a1, 3
-	seqz	a1, a1
 	slti	a0, a0, 4
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000184:
@@ -134,9 +124,8 @@ func0000000000000024:
 func00000000000000c1:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	seqz	a1, a1
 	slti	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -192,17 +181,16 @@ func000000000000030c:
 func0000000000000301:
 	andi	a1, a1, 1
 	srliw	a0, a0, 1
-	seqz	a1, a1
 	sltiu	a0, a0, 1561
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000098:
 	sext.w	a0, a0
-	sraiw	a1, a1, 2
-	snez	a1, a1
+	srliw	a1, a1, 2
+	slli	a1, a1, 2
 	sltiu	a0, a0, 47
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

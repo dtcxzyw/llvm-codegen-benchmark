@@ -1,8 +1,7 @@
 func0000000000000181:
 	andi	a1, a1, 2
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -20,9 +19,8 @@ func000000000000014c:
 
 func000000000000018c:
 	andi	a1, a1, 3
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -46,9 +44,8 @@ func000000000000028c:
 
 func00000000000000c1:
 	andi	a1, a1, 512
-	seqz	a1, a1
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000010c:
@@ -77,9 +74,8 @@ func0000000000000141:
 func0000000000000101:
 	andi	a1, a1, 3
 	sltiu	a0, a0, 256
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -91,9 +87,8 @@ func000000000000008c:
 func0000000000000281:
 	andi	a1, a1, -5
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 100
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000030c:

@@ -5,7 +5,6 @@ func000000000000002c:
 	lui	a2, 29959
 	addi	a2, a2, 1288
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

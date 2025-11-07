@@ -23,9 +23,8 @@ func000000000000018c:
 func0000000000000034:
 	sext.w	a2, a2
 	srliw	a1, a1, 4
-	seqz	a2, a2
 	sltiu	a1, a1, 225
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	addi	a0, a0, -43
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 43

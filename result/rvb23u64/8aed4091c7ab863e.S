@@ -4,19 +4,17 @@ func0000000000000021:
 	ret
 
 func0000000000000828:
-	snez	a0, a0
 	li	a2, -9
 	srli	a2, a2, 3
 	sltu	a1, a2, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000838:
-	snez	a0, a0
 	li	a2, -17
 	srli	a2, a2, 4
 	sltu	a1, a2, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c94:
@@ -26,9 +24,8 @@ func0000000000000c94:
 	ret
 
 func000000000000002c:
-	snez	a0, a0
 	sltiu	a1, a1, -1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:

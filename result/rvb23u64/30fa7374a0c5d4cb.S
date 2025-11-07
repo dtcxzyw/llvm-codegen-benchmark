@@ -80,9 +80,8 @@ func0000000000000108:
 func0000000000000184:
 	sub	a1, a1, a2
 	srli	a1, a1, 14
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002a:

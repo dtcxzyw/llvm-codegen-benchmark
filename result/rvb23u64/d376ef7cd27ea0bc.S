@@ -18,17 +18,16 @@ func0000000000000024:
 	.quad	1844674407370955162
 func0000000000000028:
 	lui	a2, 838861
-	addi	a2, a2, -819
-	slli	a3, a2, 32
-	add	a2, a2, a3
 	lui	a3, %hi(.LCPI1_0)
+	addi	a2, a2, -819
 	ld	a3, %lo(.LCPI1_0)(a3)
-	srli	a0, a0, 16
+	slli	a4, a2, 32
+	add	a2, a2, a4
 	mul	a1, a1, a2
 	rori	a1, a1, 1
 	sltu	a1, a1, a3
-	snez	a0, a0
-	and	a0, a0, a1
+	srli	a0, a0, 16
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI2_0:

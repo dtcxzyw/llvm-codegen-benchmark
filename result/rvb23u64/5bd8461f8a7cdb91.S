@@ -20,8 +20,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	addw	a1, a1, a2
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000ca:

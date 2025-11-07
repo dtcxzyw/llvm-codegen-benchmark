@@ -6,9 +6,8 @@ func0000000000000181:
 	li	a3, 11
 	slli	a3, a3, 9
 	xor	a1, a1, a3
-	snez	a2, a2
 	seqz	a1, a1
-	and	a1, a1, a2
+	czero.eqz	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

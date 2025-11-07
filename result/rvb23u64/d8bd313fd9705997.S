@@ -10,15 +10,13 @@ func0000000000000021:
 
 func0000000000000186:
 	srli	a1, a1, 63
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000050c:
 	sltiu	a1, a1, 17
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000054a:

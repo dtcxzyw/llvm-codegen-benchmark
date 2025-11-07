@@ -21,8 +21,7 @@ func0000000000000481:
 	andi	a1, a1, 7
 	addi	a1, a1, -5
 	sltiu	a1, a1, 2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000584:
@@ -30,8 +29,7 @@ func0000000000000584:
 	andi	a1, a1, 7
 	addi	a1, a1, -1
 	sltiu	a1, a1, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000048c:
@@ -39,8 +37,7 @@ func000000000000048c:
 	andi	a1, a1, 7
 	addi	a1, a1, -1
 	sltiu	a1, a1, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000428:

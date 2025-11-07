@@ -9,19 +9,17 @@ func0000000000000146:
 	ret
 
 func0000000000000c26:
+	zext.h	a1, a1
 	addi	a2, a2, 1
-	slli	a1, a1, 48
 	slt	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000426:
+	zext.h	a1, a1
 	addi	a2, a2, 1
-	slli	a1, a1, 48
 	slt	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000184:

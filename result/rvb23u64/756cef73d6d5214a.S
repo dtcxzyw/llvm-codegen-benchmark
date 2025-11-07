@@ -5,10 +5,10 @@ func0000000000000186:
 	ret
 
 func0000000000000026:
-	not	a2, a2
+	lui	a3, 4096
 	sext.w	a1, a1
-	bexti	a2, a2, 24
+	and	a2, a2, a3
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 

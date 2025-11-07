@@ -7,14 +7,14 @@ func000000000000002c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	sraiw	a2, a2, 31
+	srliw	a2, a2, 31
 	lui	a3, 131072
-	seqz	a2, a2
+	slli	a2, a2, 31
 	addi	a3, a3, -1
 	xor	a1, a1, a3
 	snez	a1, a1
-	and	a0, a0, a2
 	and	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000021:
@@ -32,9 +32,8 @@ func000000000000008c:
 	addi	a3, a3, -48
 	sltiu	a1, a1, 11
 	and	a2, a2, a3
-	snez	a2, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000034:

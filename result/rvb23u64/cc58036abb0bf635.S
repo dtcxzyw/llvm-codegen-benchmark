@@ -24,8 +24,7 @@ func0000000000000082:
 	sext.w	a1, a1
 	fmv.d.x	fa5, zero
 	flt.d	a2, fa0, fa5
-	seqz	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

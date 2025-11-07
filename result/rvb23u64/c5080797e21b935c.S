@@ -38,8 +38,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	addiw	a1, a1, 1
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002a:
@@ -63,16 +62,14 @@ func00000000000000cc:
 	sext.w	a0, a0
 	addiw	a1, a1, 13
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004cc:
 	sext.w	a0, a0
 	addiw	a1, a1, -9
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000008cc:

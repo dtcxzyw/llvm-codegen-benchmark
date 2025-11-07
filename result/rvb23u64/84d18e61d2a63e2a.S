@@ -50,8 +50,7 @@ func000000000000048a:
 func0000000000000421:
 	sext.w	a0, a0
 	addiw	a1, a1, -2
-	snez	a0, a0
 	seqz	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

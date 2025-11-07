@@ -13,8 +13,7 @@ func0000000000000581:
 	or	a0, a0, a2
 	zext.b	a0, a0
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000003021:
@@ -22,8 +21,7 @@ func0000000000003021:
 	or	a0, a0, a1
 	snez	a1, a2
 	zext.b	a0, a0
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000003181:
@@ -31,10 +29,8 @@ func0000000000003181:
 	zext.b	a1, a1
 	zext.b	a2, a2
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001084:
@@ -51,10 +47,8 @@ func000000000000318c:
 	zext.b	a1, a1
 	zext.b	a2, a2
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000042a:
@@ -64,19 +58,17 @@ func000000000000042a:
 	or	a1, a1, a2
 	srli	a0, a0, 63
 	zext.b	a1, a1
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000488:
 	zext.b	a0, a0
-	zext.b	a1, a1
 	zext.b	a2, a2
-	seqz	a2, a2
+	zext.b	a1, a1
 	sltiu	a1, a1, 16
 	sltiu	a0, a0, 16
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -89,8 +81,7 @@ func0000000000002021:
 	or	a0, a0, a1
 	xori	a1, a2, 1
 	zext.b	a0, a0
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000424:
@@ -99,9 +90,8 @@ func0000000000000424:
 	xori	a1, a1, 18
 	or	a1, a1, a2
 	zext.b	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 3
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000042c:
@@ -110,9 +100,8 @@ func000000000000042c:
 	xori	a1, a1, 34
 	or	a1, a1, a2
 	zext.b	a1, a1
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000484:
@@ -133,9 +122,8 @@ func0000000000000428:
 	or	a1, a1, a2
 	sltiu	a0, a0, 15
 	zext.b	a1, a1
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000426:
@@ -144,8 +132,7 @@ func0000000000000426:
 	xori	a1, a1, 226
 	or	a1, a1, a2
 	zext.b	a1, a1
-	seqz	a1, a1
 	slti	a0, a0, -64
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

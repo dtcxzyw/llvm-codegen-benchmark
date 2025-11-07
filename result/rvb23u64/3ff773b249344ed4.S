@@ -19,8 +19,7 @@ func0000000000000021:
 
 func0000000000000181:
 	bexti	a1, a1, 9
-	slli	a0, a0, 48
-	seqz	a0, a0
-	and	a0, a0, a1
+	zext.h	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 

@@ -2,8 +2,7 @@ func000000000000010c:
 	zext.h	a1, a1
 	zext.h	a0, a0
 	sltu	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -11,8 +10,7 @@ func000000000000002c:
 	zext.h	a1, a1
 	xor	a1, a1, a0
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:

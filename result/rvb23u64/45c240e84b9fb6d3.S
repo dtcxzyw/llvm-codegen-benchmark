@@ -10,8 +10,7 @@ func0000000000000021:
 func0000000000000181:
 	bexti	a1, a1, 7
 	andi	a0, a0, 256
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -25,10 +24,9 @@ func0000000000000301:
 	andi	a1, a1, 248
 	lui	a2, 3
 	sltiu	a1, a1, 9
-	and	a0, a0, a2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -67,11 +65,10 @@ func0000000000000294:
 
 func0000000000000081:
 	andi	a1, a1, -64
-	andi	a0, a0, 17
 	sext.w	a1, a1
 	sltiu	a1, a1, 321
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 17
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000194:
@@ -84,9 +81,8 @@ func0000000000000194:
 func000000000000028c:
 	andi	a1, a1, 508
 	andi	a0, a0, 7
-	seqz	a1, a1
 	addi	a0, a0, -7
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

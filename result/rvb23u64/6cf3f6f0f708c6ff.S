@@ -12,19 +12,17 @@ func0000000000000021:
 
 func0000000000000181:
 	andi	a1, a1, 6
-	andi	a0, a0, 10
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 10
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
 	andi	a1, a1, 48
 	andi	a0, a0, 15
-	snez	a1, a1
 	addi	a0, a0, -9
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:

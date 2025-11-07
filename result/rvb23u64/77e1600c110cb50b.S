@@ -10,7 +10,6 @@ func0000000000000194:
 	sext.w	a1, a1
 	zext.w	a2, a2
 	sltu	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

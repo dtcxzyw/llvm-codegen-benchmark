@@ -17,10 +17,9 @@ func00000000000000ca:
 func0000000000000c2c:
 	sext.w	a0, a0
 	addw	a1, a1, a2
-	snez	a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000cca:

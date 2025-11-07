@@ -16,18 +16,16 @@ func00000000000000ca:
 func0000000000000088:
 	add	a1, a1, a0
 	lui	a2, 1
-	srli	a0, a0, 11
 	addi	a2, a2, -1931
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	srli	a0, a0, 11
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
 	add	a1, a1, a0
 	sltiu	a1, a1, 4
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:

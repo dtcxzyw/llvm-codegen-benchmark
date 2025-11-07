@@ -9,9 +9,8 @@ func000000000000014c:
 func0000000000000181:
 	andi	a2, a2, 8
 	addiw	a1, a1, -95
-	seqz	a2, a2
 	snez	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -44,9 +43,8 @@ func000000000000002c:
 func0000000000000281:
 	sext.w	a1, a1
 	andi	a2, a2, 1023
-	seqz	a2, a2
 	sltiu	a1, a1, 8
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

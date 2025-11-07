@@ -9,11 +9,10 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	seqz	a1, a1
+	zext.b	a0, a0
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -25,11 +24,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	seqz	a1, a1
+	zext.b	a0, a0
 	sltiu	a0, a0, 6
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000181:

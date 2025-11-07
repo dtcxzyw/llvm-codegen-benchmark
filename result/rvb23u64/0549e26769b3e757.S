@@ -17,8 +17,7 @@ func000000000000082c:
 	andi	a2, a2, 1
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -57,7 +56,6 @@ func000000000000010c:
 	slli	a2, a2, 40
 	srli	a2, a2, 40
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

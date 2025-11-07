@@ -23,9 +23,8 @@ func000000000000000f:
 	lui	a1, 10486
 	addi	a1, a1, -983
 	mul	a0, a0, a1
-	zext.w	a1, a0
-	sh2add.uw	a0, a0, a1
+	slli.uw	a0, a0, 2
 	sh2add	a0, a0, a0
-	slli	a0, a0, 2
+	sh2add	a0, a0, a0
 	ret
 

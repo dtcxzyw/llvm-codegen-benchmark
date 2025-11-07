@@ -15,9 +15,8 @@ func000000000000002c:
 func0000000000000181:
 	andi	a1, a1, 192
 	addiw	a0, a0, -2
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000184:
@@ -39,7 +38,6 @@ func000000000000018a:
 func000000000000018c:
 	sext.w	a0, a0
 	bexti	a1, a1, 21
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

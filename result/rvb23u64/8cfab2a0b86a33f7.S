@@ -9,9 +9,9 @@ func0000000000000011:
 func0000000000000088:
 	slli	a0, a0, 33
 	fmv.w.x	fa5, zero
-	seqz	a0, a0
+	srli	a0, a0, 33
 	feq.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000ee:

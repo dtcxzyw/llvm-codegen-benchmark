@@ -21,10 +21,9 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
+	slli.uw	a1, a1, 4
+	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
-	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret

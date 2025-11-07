@@ -3,9 +3,8 @@ func0000000000000d81:
 	addiw	a0, a0, -1
 	or	a1, a1, a2
 	sext.w	a1, a1
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000e8c:
@@ -34,8 +33,7 @@ func000000000000018c:
 	srai	a2, a2, 63
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -45,8 +43,7 @@ func000000000000002c:
 	srai	a2, a2, 63
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e94:
@@ -64,8 +61,7 @@ func0000000000000d8c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
@@ -75,8 +71,7 @@ func0000000000000181:
 	srai	a2, a2, 63
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d08:
@@ -103,8 +98,7 @@ func0000000000000c2c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000f0c:
@@ -113,8 +107,7 @@ func0000000000000f0c:
 	addw	a1, a1, a2
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000024:
@@ -139,12 +132,11 @@ func0000000000000421:
 func0000000000000184:
 	sext.w	a1, a1
 	slli	a2, a2, 63
-	srliw	a0, a0, 29
 	srai	a2, a2, 63
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 29
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000f01:
@@ -153,8 +145,7 @@ func0000000000000f01:
 	addw	a1, a1, a2
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000c38:

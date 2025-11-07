@@ -22,11 +22,11 @@ func000000000000002c:
 
 func0000000000000181:
 	zext.b	a0, a0
-	not	a1, a1
-	bexti	a1, a1, 11
+	bseti	a2, zero, 11
+	and	a1, a1, a2
 	addi	a0, a0, -46
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -40,24 +40,21 @@ func000000000000018c:
 func00000000000000c1:
 	sext.b	a0, a0
 	andi	a1, a1, 128
-	seqz	a1, a1
 	slti	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
 	zext.b	a0, a0
 	andi	a1, a1, 8
-	seqz	a1, a1
 	sltiu	a0, a0, 32
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000028c:
 	zext.b	a0, a0
 	andi	a1, a1, 3
-	snez	a1, a1
 	sltiu	a0, a0, 10
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

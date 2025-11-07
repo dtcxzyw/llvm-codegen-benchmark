@@ -21,23 +21,21 @@ func000000000000002c:
 func000000000000018c:
 	andi	a2, a2, 31
 	xor	a0, a0, a1
-	snez	a1, a2
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000028:
 	andi	a2, a2, 1
-	seqz	a2, a2
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000008c:
 	slli	a2, a2, 33
-	snez	a2, a2
+	srli	a2, a2, 33
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000025:

@@ -9,9 +9,8 @@ func0000000000000021:
 func000000000000018c:
 	zext.b	a1, a1
 	addiw	a0, a0, -40
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	li	a1, -673
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 2047

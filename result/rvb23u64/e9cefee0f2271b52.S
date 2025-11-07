@@ -11,16 +11,14 @@ func0000000000000584:
 	zext.b	a0, a0
 	addiw	a1, a1, -32
 	sltiu	a1, a1, 95
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000184:
 	zext.b	a0, a0
 	addiw	a1, a1, -301
 	sltiu	a1, a1, 99
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000424:
@@ -36,8 +34,7 @@ func000000000000058c:
 	zext.b	a0, a0
 	addiw	a1, a1, -19
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000544:

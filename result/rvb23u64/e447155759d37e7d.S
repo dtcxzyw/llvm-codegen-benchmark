@@ -10,12 +10,9 @@ func0000000000000168:
 
 func00000000000000c8:
 	sext.w	a1, a1
-	srli	a2, a0, 16
 	srliw	a0, a0, 16
-	slt	a0, a0, a1
-	slli	a2, a2, 48
-	snez	a1, a2
-	and	a0, a0, a1
+	slt	a1, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:
@@ -23,8 +20,7 @@ func0000000000000028:
 	srliw	a0, a0, 24
 	xor	a1, a1, a0
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000188:

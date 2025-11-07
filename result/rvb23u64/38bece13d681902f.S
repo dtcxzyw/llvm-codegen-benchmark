@@ -1,8 +1,7 @@
 func0000000000000304:
 	binvi	a1, a1, 63
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000301:
@@ -25,8 +24,7 @@ func0000000000000308:
 
 func0000000000000314:
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000046:

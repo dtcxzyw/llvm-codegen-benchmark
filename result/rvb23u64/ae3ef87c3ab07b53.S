@@ -11,9 +11,9 @@ func0000000000000000:
 
 func000000000000001e:
 	addi	a0, a0, 1
-	zext.w	a1, a0
-	sh2add.uw	a0, a0, a1
+	slli.uw	a0, a0, 2
 	sh2add	a0, a0, a0
-	srli	a0, a0, 29
+	sh2add	a0, a0, a0
+	srli	a0, a0, 31
 	ret
 

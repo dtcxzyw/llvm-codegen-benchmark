@@ -47,18 +47,16 @@ func0000000000000066:
 	fclass.d	a0, fa1
 	fli.d	fa5, inf
 	andi	a0, a0, 126
-	snez	a0, a0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000088:
 	fclass.d	a0, fa1
 	fli.d	fa5, inf
 	andi	a0, a0, 129
-	snez	a0, a0
 	feq.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI6_0:
@@ -76,9 +74,8 @@ func0000000000000064:
 	fclass.d	a0, fa1
 	fmv.d.x	fa5, zero
 	andi	a0, a0, 126
-	snez	a0, a0
 	flt.d	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI8_0:
@@ -88,9 +85,8 @@ func0000000000000092:
 	fld	fa5, %lo(.LCPI8_0)(a0)
 	fclass.d	a0, fa1
 	andi	a0, a0, 897
-	snez	a0, a0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 .promoted_doubles.func0000000000000024:

@@ -13,8 +13,7 @@ func0000000000000021:
 
 func000000000000018c:
 	bexti	a1, a1, 6
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
@@ -24,15 +23,13 @@ func0000000000000181:
 
 func0000000000000024:
 	andi	a1, a1, 4
-	seqz	a1, a1
 	sltiu	a0, a0, 16
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:
 	andi	a1, a1, 2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

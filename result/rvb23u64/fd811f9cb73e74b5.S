@@ -21,9 +21,8 @@ func000000000000008c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 7
-	snez	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000010c:
@@ -45,10 +44,9 @@ func0000000000000181:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 8
-	seqz	a2, a2
 	xor	a0, a0, a1
 	snez	a0, a0
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000028c:

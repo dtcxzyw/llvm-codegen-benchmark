@@ -10,16 +10,14 @@ func000000000000010c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000004c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000121:
@@ -29,8 +27,7 @@ func0000000000000121:
 	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000048:
@@ -45,8 +42,7 @@ func0000000000000181:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000061:
@@ -73,16 +69,14 @@ func0000000000000041:
 	slli	a1, a1, 38
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000081:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000cc:
@@ -97,8 +91,7 @@ func000000000000008c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000004a:
@@ -113,8 +106,7 @@ func0000000000000021:
 	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000088:
@@ -136,8 +128,7 @@ func000000000000002c:
 	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000e1:
@@ -175,8 +166,7 @@ func00000000000000ec:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000aa:
@@ -191,8 +181,7 @@ func00000000000000aa:
 func00000000000001cc:
 	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000118:
@@ -224,7 +213,6 @@ func000000000000014c:
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

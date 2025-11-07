@@ -19,11 +19,10 @@ func000000000000008c:
 	lui	a2, 1032192
 	czero.eqz	a0, a1, a0
 	addi	a1, a2, -1
-	addi	a2, a2, 511
 	sext.w	a3, a0
 	addw	a0, a0, a1
-	snez	a1, a3
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	addi	a1, a2, 511
+	sltu	a0, a0, a1
+	czero.eqz	a0, a0, a3
 	ret
 

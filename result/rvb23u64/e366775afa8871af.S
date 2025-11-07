@@ -25,19 +25,18 @@ func000000000000008c:
 func0000000000000081:
 	andi	a0, a0, 256
 	lui	a1, 246333
-	seqz	a0, a0
 	addi	a1, a1, 1802
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000101:
 	slli	a0, a0, 34
 	fmv.w.x	fa5, zero
-	seqz	a0, a0
+	srli	a0, a0, 34
 	feq.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000004c:

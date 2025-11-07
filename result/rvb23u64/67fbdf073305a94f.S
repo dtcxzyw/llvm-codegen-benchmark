@@ -2,8 +2,7 @@ func0000000000000581:
 	snez	a1, a1
 	xori	a0, a0, 5
 	or	a0, a0, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001081:
@@ -16,13 +15,11 @@ func0000000000001081:
 	ret
 
 func0000000000003084:
-	snez	a2, a2
 	srli	a1, a1, 1
-	srli	a0, a0, 12
 	sltiu	a1, a1, 2047
-	seqz	a0, a0
-	and	a0, a0, a1
-	and	a0, a0, a2
+	srli	a0, a0, 12
+	czero.nez	a0, a1, a0
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000318c:
@@ -41,12 +38,11 @@ func000000000000318c:
 
 func0000000000003021:
 	lui	a3, 131072
-	or	a0, a0, a1
 	addi	a3, a3, -1
 	xor	a2, a2, a3
-	snez	a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	snez	a2, a2
+	or	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func00000000000004d4:
@@ -54,83 +50,70 @@ func00000000000004d4:
 	srli	a1, a1, 63
 	srli	a0, a0, 21
 	or	a0, a0, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001021:
 	lui	a3, 262144
+	addi	a3, a3, -55
+	sltu	a2, a2, a3
 	or	a0, a0, a1
-	addi	a1, a3, -55
-	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000003184:
 	snez	a2, a2
-	snez	a1, a1
+	czero.eqz	a1, a2, a1
 	srli	a0, a0, 32
-	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000003181:
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000594:
 	seqz	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
 	ret
 
 func000000000000048c:
-	seqz	a2, a2
 	sltiu	a1, a1, 1024
-	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a1, a1, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:
 	addi	a2, a2, -2
-	snez	a1, a1
 	snez	a0, a0
 	seqz	a2, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func0000000000000494:
-	seqz	a2, a2
 	sltiu	a1, a1, 136
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000584:
 	seqz	a2, a2
-	snez	a1, a1
 	srli	a0, a0, 61
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	sltiu	a0, a0, 7
 	and	a0, a0, a1
 	ret
 
 func0000000000000588:
 	seqz	a2, a2
-	snez	a1, a1
 	srli	a0, a0, 59
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	sltiu	a0, a0, 31
 	xori	a0, a0, 1
 	and	a0, a0, a1

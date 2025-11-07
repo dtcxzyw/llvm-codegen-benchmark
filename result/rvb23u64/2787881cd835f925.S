@@ -21,8 +21,8 @@ func0000000000000021:
 
 func0000000000000181:
 	bexti	a1, a1, 1
-	sraiw	a0, a0, 31
-	seqz	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 31
+	slli	a0, a0, 31
+	czero.nez	a0, a1, a0
 	ret
 

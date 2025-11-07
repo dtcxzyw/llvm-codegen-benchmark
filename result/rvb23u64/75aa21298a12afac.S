@@ -6,11 +6,11 @@ func000000000000006f:
 	ret
 
 func000000000000007f:
-	zext.w	a3, a2
-	sh1add.uw	a2, a2, a3
-	sh2add	a2, a2, a3
-	sh3add	a0, a2, a0
+	slli.uw	a2, a2, 3
 	sext.w	a1, a1
+	sh1add	a3, a2, a2
+	sh2add	a2, a3, a2
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

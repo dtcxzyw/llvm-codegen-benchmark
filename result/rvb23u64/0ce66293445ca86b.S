@@ -18,8 +18,7 @@ func0000000000000181:
 	zext.b	a0, a0
 	andi	a1, a1, 97
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000188:
@@ -81,17 +80,15 @@ func0000000000000028:
 func0000000000000026:
 	sext.b	a0, a0
 	andi	a1, a1, 64
-	seqz	a1, a1
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000024:
 	zext.b	a0, a0
 	andi	a1, a1, 15
-	seqz	a1, a1
 	sltiu	a0, a0, 16
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000101:
@@ -123,8 +120,7 @@ func000000000000018a:
 func00000000000000c1:
 	sext.b	a0, a0
 	andi	a1, a1, 1
-	seqz	a1, a1
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

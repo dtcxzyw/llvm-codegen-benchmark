@@ -11,8 +11,7 @@ func000000000000002c:
 	zext.b	a1, a0
 	andi	a0, a0, 8
 	seqz	a0, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000186:

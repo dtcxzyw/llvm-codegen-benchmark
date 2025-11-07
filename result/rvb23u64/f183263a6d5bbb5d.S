@@ -45,10 +45,9 @@ func0000000000000198:
 
 func0000000000000281:
 	andi	a1, a1, 7
-	andi	a0, a0, 7
 	sltiu	a1, a1, 3
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 7
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000301:
@@ -64,11 +63,10 @@ func0000000000000301:
 func0000000000000298:
 	andi	a1, a1, 12
 	lui	a2, 7168
-	seqz	a1, a1
 	and	a0, a0, a2
 	lui	a2, 2560
 	sltu	a0, a2, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000028c:
@@ -95,9 +93,8 @@ func0000000000000314:
 
 func0000000000000294:
 	andi	a1, a1, 7
-	andi	a0, a0, 2
 	sltiu	a1, a1, 3
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 2
+	czero.nez	a0, a1, a0
 	ret
 

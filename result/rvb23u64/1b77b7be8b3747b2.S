@@ -18,9 +18,8 @@ func000000000000008c:
 
 func0000000000000481:
 	addiw	a2, a2, -8
-	seqz	a1, a1
 	sltiu	a2, a2, 9
-	and	a0, a0, a1
 	and	a0, a0, a2
+	czero.nez	a0, a0, a1
 	ret
 

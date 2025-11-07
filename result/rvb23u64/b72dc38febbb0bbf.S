@@ -69,9 +69,8 @@ func00000000000000a4:
 func00000000000000c4:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
-	snez	a0, a0
 	flt.s	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000144:
@@ -89,9 +88,8 @@ func0000000000000144:
 func00000000000000cc:
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
-	snez	a0, a0
 	fle.s	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000001a:

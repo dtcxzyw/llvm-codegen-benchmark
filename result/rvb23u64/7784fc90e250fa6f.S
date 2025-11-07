@@ -8,18 +8,14 @@ func0000000000000421:
 
 func000000000000318c:
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a1, a2, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:
-	seqz	a2, a2
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000001184:
@@ -33,9 +29,8 @@ func0000000000001184:
 
 func0000000000003188:
 	snez	a2, a2
-	snez	a1, a1
 	sltiu	a0, a0, 2
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -43,11 +38,10 @@ func0000000000003188:
 func000000000000042c:
 	or	a1, a1, a2
 	li	a2, -2
-	seqz	a1, a1
 	bclri	a2, a2, 62
 	xor	a0, a0, a2
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000001084:
@@ -59,9 +53,8 @@ func0000000000001084:
 
 func0000000000000424:
 	or	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000481:

@@ -97,11 +97,10 @@ func000000000000002c:
 func0000000000000024:
 	sext.w	a0, a0
 	slli	a1, a1, 63
-	snez	a3, a0
 	srai	a1, a1, 63
 	or	a1, a1, a2
 	sext.w	a1, a1
-	sltu	a0, a0, a1
-	and	a0, a0, a3
+	sltu	a1, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

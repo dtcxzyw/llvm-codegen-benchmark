@@ -1,9 +1,8 @@
 func0000000000000181:
 	andi	a1, a0, 127
-	andi	a0, a0, 128
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 128
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -12,9 +11,8 @@ func000000000000018c:
 	and	a1, a1, a0
 	andi	a0, a0, 504
 	addi	a0, a0, -8
-	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:

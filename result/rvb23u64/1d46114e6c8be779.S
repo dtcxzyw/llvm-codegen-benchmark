@@ -8,11 +8,10 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	zext.b	a0, a0
 	sext.w	a1, a1
-	snez	a1, a1
+	zext.b	a0, a0
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000000cc:

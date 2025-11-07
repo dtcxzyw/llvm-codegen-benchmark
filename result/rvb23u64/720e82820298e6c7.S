@@ -1,9 +1,8 @@
 func0000000000000694:
 	addw	a1, a1, a2
-	srli	a0, a0, 24
 	sltiu	a1, a1, 255
-	seqz	a0, a0
-	and	a0, a0, a1
+	srli	a0, a0, 24
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000050c:

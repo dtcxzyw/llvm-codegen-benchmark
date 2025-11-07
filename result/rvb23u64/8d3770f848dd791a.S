@@ -30,9 +30,8 @@ func000000000000002a:
 	slli	a2, a2, 52
 	slti	a0, a0, 12
 	and	a1, a1, a2
-	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000038:
@@ -41,9 +40,8 @@ func0000000000000038:
 	slli	a2, a2, 52
 	sltiu	a0, a0, -52
 	and	a1, a1, a2
-	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000034:
@@ -67,11 +65,10 @@ func000000000000002c:
 func0000000000000304:
 	zext.w	a1, a1
 	lui	a2, 1
-	srliw	a0, a0, 12
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 12
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000301:
@@ -80,8 +77,7 @@ func0000000000000301:
 	lui	a2, 1
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000306:

@@ -1,10 +1,10 @@
 func0000000000000021:
 	sext.w	a1, a1
 	slli	a2, a2, 44
-	seqz	a2, a2
+	srli	a2, a2, 44
 	seqz	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000002c:
@@ -26,10 +26,9 @@ func000000000000018c:
 func0000000000000181:
 	sext.w	a1, a1
 	andi	a2, a2, 512
-	seqz	a2, a2
 	snez	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000010c:
@@ -51,11 +50,11 @@ func0000000000000038:
 	ret
 
 func0000000000000081:
-	not	a2, a2
+	lui	a3, 256
 	srliw	a1, a1, 29
-	bexti	a2, a2, 20
+	and	a2, a2, a3
 	seqz	a1, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	ret
 

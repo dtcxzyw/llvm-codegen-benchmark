@@ -2,8 +2,7 @@ func000000000000018c:
 	andi	a1, a1, 3
 	addi	a1, a1, -3
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -16,11 +15,11 @@ func0000000000000021:
 	ret
 
 func000000000000082c:
-	not	a1, a1
+	lui	a2, 128
 	binvi	a0, a0, 33
-	bexti	a1, a1, 19
+	and	a1, a1, a2
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000d8c:
@@ -31,16 +30,14 @@ func0000000000000d8c:
 func0000000000000f01:
 	andi	a1, a1, 2046
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d81:
 	andi	a1, a1, 7
 	lui	a2, 393216
-	snez	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

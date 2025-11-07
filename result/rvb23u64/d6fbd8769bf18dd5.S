@@ -1,7 +1,6 @@
 func0000000000003184:
 	snez	a2, a0
-	snez	a3, a1
-	and	a2, a2, a3
+	czero.eqz	a2, a2, a1
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

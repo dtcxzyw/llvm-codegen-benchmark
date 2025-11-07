@@ -26,8 +26,7 @@ func00000000000000cc:
 	sext.w	a2, a0
 	sub	a0, a0, a1
 	srliw	a0, a0, 31
-	snez	a1, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func00000000000000ca:

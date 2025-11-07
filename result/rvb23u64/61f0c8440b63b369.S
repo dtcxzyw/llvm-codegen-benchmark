@@ -40,8 +40,7 @@ func0000000000001184:
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	sltu	a0, a1, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000108c:
@@ -49,7 +48,6 @@ func000000000000108c:
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	sltu	a0, a1, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

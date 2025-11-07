@@ -17,10 +17,9 @@ func000000000000014c:
 func000000000000002c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	snez	a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002a:
@@ -77,9 +76,8 @@ func0000000000000084:
 func000000000000010c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	snez	a2, a1
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000010a:
@@ -119,8 +117,7 @@ func000000000000018a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a1, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000014b:

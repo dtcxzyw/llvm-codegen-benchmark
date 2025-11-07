@@ -5,8 +5,7 @@ func0000000000000b01:
 	seqz	a2, a2
 	snez	a1, a1
 	or	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000604c:
@@ -118,8 +117,7 @@ func0000000000006041:
 	snez	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000006281:
@@ -129,8 +127,7 @@ func0000000000006281:
 	snez	a2, a2
 	xori	a1, a1, 1
 	or	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000006042:
@@ -140,8 +137,7 @@ func0000000000006042:
 	snez	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000604a:
@@ -252,7 +248,6 @@ func000000000000630c:
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

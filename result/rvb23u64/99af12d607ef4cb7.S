@@ -26,10 +26,10 @@ func0000000000000070:
 
 func00000000000000f0:
 	addi	a1, a1, -1
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
-	sh2add	a1, a1, a2
-	sh3add	a0, a1, a0
+	slli.uw	a1, a1, 3
+	sh1add	a2, a1, a1
+	sh2add	a1, a2, a1
+	add	a0, a0, a1
 	addi	a0, a0, 118
 	ret
 

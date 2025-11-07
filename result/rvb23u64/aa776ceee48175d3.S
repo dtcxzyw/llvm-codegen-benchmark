@@ -35,10 +35,10 @@ func000000000000018c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	not	a2, a2
-	bexti	a2, a2, 12
+	lui	a3, 1
+	and	a2, a2, a3
 	snez	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

@@ -2,9 +2,8 @@ func0000000000000028:
 	lui	a2, 786432
 	srli	a2, a2, 3
 	and	a1, a1, a2
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000144:
@@ -21,9 +20,8 @@ func0000000000000144:
 func000000000000014c:
 	sext.w	a1, a1
 	srli	a0, a0, 63
-	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -41,7 +39,6 @@ func0000000000000024:
 	slli	a1, a1, 3
 	srli	a1, a1, 3
 	sltiu	a1, a1, 129
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

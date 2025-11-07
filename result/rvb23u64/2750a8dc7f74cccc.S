@@ -9,9 +9,8 @@ func000000000000028c:
 
 func0000000000000184:
 	zext.b	a1, a1
-	snez	a2, a2
 	sltiu	a1, a1, 64
-	and	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

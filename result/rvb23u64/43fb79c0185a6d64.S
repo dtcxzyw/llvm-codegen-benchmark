@@ -34,8 +34,7 @@ func0000000000000701:
 	sext.w	a1, a1
 	addi	a0, a0, -128
 	srli	a1, a1, 11
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

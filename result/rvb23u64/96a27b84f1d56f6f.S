@@ -32,8 +32,7 @@ func000000000000006c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000001f8:
@@ -89,8 +88,7 @@ func00000000000000ec:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000f8:

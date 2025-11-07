@@ -2,8 +2,7 @@ func0000000000000028:
 	zext.b	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -46,8 +45,7 @@ func0000000000000c2c:
 	addi	a2, a2, 2
 	xor	a0, a0, a2
 	snez	a0, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -55,16 +53,14 @@ func000000000000002c:
 	addi	a2, a2, 6
 	xor	a0, a0, a2
 	snez	a0, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000c28:
 	zext.b	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000024:

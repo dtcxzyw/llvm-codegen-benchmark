@@ -23,9 +23,8 @@ func000000000000042a:
 	slli	a2, a2, 52
 	slti	a0, a0, 1087
 	and	a1, a1, a2
-	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000438:
@@ -33,9 +32,8 @@ func0000000000000438:
 	addiw	a0, a0, -1023
 	slli	a2, a2, 52
 	and	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 52
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000434:

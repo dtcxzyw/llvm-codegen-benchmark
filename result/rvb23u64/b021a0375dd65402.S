@@ -4,7 +4,6 @@ func000000000000008c:
 	addi	a2, a2, -1787
 	add	a1, a1, a2
 	sltiu	a1, a1, -12
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

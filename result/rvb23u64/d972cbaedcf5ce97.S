@@ -18,9 +18,8 @@ func0000000000000034:
 	ret
 
 func0000000000000021:
-	snez	a2, a2
 	seqz	a1, a1
-	and	a1, a1, a2
+	czero.eqz	a1, a1, a2
 	lui	a2, 268352
 	addi	a2, a2, 1170
 	czero.nez	a0, a0, a1

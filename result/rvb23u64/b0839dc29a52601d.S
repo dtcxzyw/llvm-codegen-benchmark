@@ -9,10 +9,10 @@ func000000000000000f:
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
 	sub	a0, a0, a1
-	zext.w	a1, a0
-	sh1add.uw	a2, a0, a1
+	slli.uw	a1, a0, 1
+	sh1add	a2, a1, a1
 	sh2add	a1, a2, a1
-	srli	a1, a1, 7
+	srli	a1, a1, 8
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
 	sub	a0, a0, a1

@@ -28,10 +28,9 @@ func0000000000000036:
 	lui	a1, 389120
 	andi	a0, a0, 126
 	fmv.w.x	fa4, a1
-	snez	a0, a0
 	fle.s	a1, fa4, fa5
 	xori	a1, a1, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000124:

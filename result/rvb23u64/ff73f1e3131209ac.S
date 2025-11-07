@@ -6,16 +6,14 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	snez	a1, a1
 	addiw	a0, a0, -4
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000181:
 	sext.w	a0, a0
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

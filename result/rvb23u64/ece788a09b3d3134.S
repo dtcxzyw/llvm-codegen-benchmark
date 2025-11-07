@@ -24,17 +24,15 @@ func0000000000000017:
 	ret
 
 func00000000000000c2:
-	snez	a0, a0
 	fli.d	fa5, 1.0
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000014:
-	seqz	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000014c:
@@ -62,10 +60,9 @@ func0000000000000144:
 	ret
 
 func00000000000000c6:
-	snez	a0, a0
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000018:

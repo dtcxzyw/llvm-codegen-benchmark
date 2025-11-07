@@ -10,10 +10,9 @@ func0000000000000488:
 func0000000000000428:
 	sext.w	a0, a0
 	rev8	a1, a1
-	lui	a2, 4
 	srli	a1, a1, 32
+	lui	a2, 4
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

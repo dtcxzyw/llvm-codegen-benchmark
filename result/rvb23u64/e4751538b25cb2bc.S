@@ -8,10 +8,9 @@ func0000000000000021:
 
 func0000000000000148:
 	sext.w	a1, a1
-	srli	a0, a0, 23
 	slti	a1, a1, 64
-	snez	a0, a0
-	and	a0, a0, a1
+	srli	a0, a0, 23
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000081:

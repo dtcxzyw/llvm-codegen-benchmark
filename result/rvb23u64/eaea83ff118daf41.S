@@ -13,7 +13,6 @@ func000000000000014c:
 	sext.w	a1, a1
 	min	a1, a1, a2
 	sgtz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

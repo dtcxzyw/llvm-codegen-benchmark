@@ -28,9 +28,8 @@ func0000000000000308:
 func0000000000000302:
 	sext.w	a1, a1
 	addiw	a0, a0, -16
-	seqz	a1, a1
 	snez	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000108:

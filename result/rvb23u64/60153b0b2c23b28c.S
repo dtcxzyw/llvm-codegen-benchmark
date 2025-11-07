@@ -38,13 +38,12 @@ func000000000000002c:
 	lui	a1, 978671
 	lui	a2, %hi(.LCPI2_0)
 	addi	a1, a1, -273
-	ld	a2, %lo(.LCPI2_0)(a2)
 	slli	a3, a1, 32
+	ld	a2, %lo(.LCPI2_0)(a2)
 	add	a1, a1, a3
 	mul	a1, a1, a0
 	rori	a1, a1, 2
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

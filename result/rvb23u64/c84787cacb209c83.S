@@ -14,20 +14,18 @@ func0000000000000021:
 
 func0000000000000114:
 	sub	a1, a1, a2
-	andi	a0, a0, 192
 	sltiu	a1, a1, 21
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 192
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000101:
 	sub	a1, a1, a2
-	andi	a0, a0, 8
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 8
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002c:

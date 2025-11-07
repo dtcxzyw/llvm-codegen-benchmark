@@ -2,16 +2,14 @@ func0000000000000058:
 	sext.w	a1, a1
 	not	a2, a2
 	bexti	a2, a2, 11
-	snez	a1, a1
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000302:
 	sext.w	a1, a1
 	bexti	a2, a2, 6
-	seqz	a1, a1
-	and	a1, a1, a2
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
@@ -37,19 +35,17 @@ func0000000000000318:
 	lui	a3, 7176
 	addiw	a1, a1, -256
 	and	a2, a2, a3
-	snez	a2, a2
 	snez	a1, a1
-	and	a1, a1, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000118:
 	andi	a2, a2, 224
-	srliw	a1, a1, 11
 	addi	a2, a2, -192
 	snez	a2, a2
-	seqz	a1, a1
-	and	a1, a1, a2
+	srliw	a1, a1, 11
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
@@ -80,9 +76,8 @@ func0000000000000182:
 	lui	a3, 1
 	addi	a3, a3, -2
 	and	a2, a2, a3
-	seqz	a2, a2
 	slti	a1, a1, 4
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

@@ -10,7 +10,6 @@ func0000000000000141:
 	fcvt.w.s	a1, fa0, rtz
 	srliw	a1, a1, 31
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

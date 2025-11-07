@@ -9,30 +9,27 @@ func0000000000000126:
 	ret
 
 func000000000000008c:
+	zext.h	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, 4
-	slli	a0, a0, 48
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004cc:
+	zext.h	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, -2
-	slli	a0, a0, 48
 	slt	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:
+	zext.h	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	slli	a0, a0, 48
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

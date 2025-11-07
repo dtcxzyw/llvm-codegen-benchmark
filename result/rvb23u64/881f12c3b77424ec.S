@@ -1,15 +1,13 @@
 func000000000000018a:
-	snez	a3, a1
-	slt	a1, a2, a1
-	and	a1, a1, a3
+	slt	a2, a2, a1
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	snez	a3, a1
-	xor	a1, a1, a2
-	snez	a1, a1
-	and	a0, a0, a3
+	xor	a2, a2, a1
+	snez	a2, a2
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
@@ -31,10 +29,9 @@ func00000000000000ac:
 
 func0000000000000128:
 	sltu	a2, a1, a2
-	srli	a1, a1, 14
 	xori	a2, a2, 1
-	snez	a1, a1
-	and	a1, a1, a2
+	srli	a1, a1, 14
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

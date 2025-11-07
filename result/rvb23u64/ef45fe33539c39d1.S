@@ -64,8 +64,7 @@ func000000000000630c:
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
-	snez	a1, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000084c:

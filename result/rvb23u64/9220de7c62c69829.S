@@ -1,8 +1,7 @@
 func00000000000001e4:
-	zext.w	a2, a1
-	sh2add.uw	a1, a1, a2
+	slli.uw	a1, a1, 1
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
+	sh2add	a1, a1, a1
 	addi	a1, a1, 84
 	sltu	a0, a0, a1
 	ret
@@ -23,10 +22,9 @@ func00000000000001e9:
 	ret
 
 func00000000000001e1:
-	zext.w	a2, a1
-	sh2add.uw	a1, a1, a2
+	slli.uw	a1, a1, 1
 	sh2add	a1, a1, a1
-	slli	a1, a1, 1
+	sh2add	a1, a1, a1
 	addi	a1, a1, 84
 	xor	a0, a0, a1
 	seqz	a0, a0

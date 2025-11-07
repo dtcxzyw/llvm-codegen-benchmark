@@ -7,28 +7,26 @@ func000000000000008c:
 
 func0000000000000581:
 	addiw	a1, a1, -1
-	andi	a0, a0, 1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000008cc:
 	lui	a2, 4096
 	addw	a1, a1, a2
 	lui	a2, 8192
-	andi	a0, a0, 127
 	slt	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	andi	a0, a0, 127
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000481:
 	addiw	a1, a1, -1
-	not	a0, a0
+	lui	a2, 1024
 	sltiu	a1, a1, 2
-	bexti	a0, a0, 22
-	and	a0, a0, a1
+	and	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000081:

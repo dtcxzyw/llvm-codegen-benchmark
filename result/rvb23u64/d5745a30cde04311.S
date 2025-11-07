@@ -17,7 +17,6 @@ func0000000000000c2c:
 func0000000000000cc1:
 	sext.b	a1, a1
 	srli	a1, a1, 63
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

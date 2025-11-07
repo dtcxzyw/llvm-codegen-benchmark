@@ -13,8 +13,7 @@ func00000000000000c3:
 
 func000000000000008c:
 	flt.s	a1, fa1, fa0
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008a:
@@ -25,7 +24,6 @@ func000000000000008a:
 
 func0000000000000041:
 	flt.s	a1, fa0, fa1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

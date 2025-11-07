@@ -1,11 +1,10 @@
 func00000000000000c1:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	addiw	a0, a0, 1
-	snez	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a0, a2
 	ret
 
 func00000000000000a6:

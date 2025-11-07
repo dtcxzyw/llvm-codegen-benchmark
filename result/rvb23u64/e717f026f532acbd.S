@@ -18,10 +18,9 @@ func000000000000028c:
 
 func000000000000018c:
 	zext.b	a0, a0
-	snez	a1, a0
-	addi	a0, a0, -46
-	snez	a0, a0
-	and	a0, a0, a1
+	addi	a1, a0, -46
+	snez	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -69,8 +68,7 @@ func00000000000000cc:
 	zext.b	a1, a0
 	sext.b	a0, a0
 	slti	a0, a0, 65
-	snez	a1, a1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000194:

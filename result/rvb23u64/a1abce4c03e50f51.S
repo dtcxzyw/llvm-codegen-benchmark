@@ -10,8 +10,7 @@ func000000000000002a:
 func0000000000000028:
 	fmv.x.d	a1, fa0
 	srli	a1, a1, 53
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

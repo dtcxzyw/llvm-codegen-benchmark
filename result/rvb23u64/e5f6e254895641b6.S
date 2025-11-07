@@ -2,8 +2,7 @@ func000000000000002c:
 	andi	a1, a1, 80
 	addi	a1, a1, -16
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -17,15 +16,13 @@ func0000000000000021:
 
 func000000000000018c:
 	bexti	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
 	zext.b	a1, a1
 	addi	a1, a1, -1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

@@ -2,8 +2,7 @@ func000000000000014c:
 	sext.w	a1, a1
 	zext.b	a0, a0
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000054a:

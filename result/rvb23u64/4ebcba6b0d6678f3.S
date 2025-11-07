@@ -1,9 +1,8 @@
 func0000000000000018:
 	zext.b	a0, a0
 	fmv.w.x	fa5, zero
-	seqz	a0, a0
 	feq.s	a1, fa0, fa5
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000014:
@@ -38,15 +37,13 @@ func00000000000000ec:
 	fli.s	fa5, 1.0
 	feq.s	a1, fa0, fa5
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000101:
 	zext.b	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

@@ -46,10 +46,10 @@ func0000000000000286:
 	ret
 
 func000000000000018a:
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
-	sh1add	a1, a1, a2
-	sh3add	a0, a1, a0
+	slli.uw	a1, a1, 3
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
+	add	a0, a0, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
@@ -79,10 +79,9 @@ func000000000000038a:
 	ret
 
 func0000000000000188:
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
-	sh1add	a1, a1, a2
-	slli	a1, a1, 4
+	slli.uw	a1, a1, 4
+	sh1add	a2, a1, a1
+	sh1add	a1, a2, a1
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	snez	a0, a0

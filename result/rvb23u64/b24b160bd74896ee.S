@@ -11,7 +11,6 @@ func0000000000000021:
 	mul	a1, a1, a2
 	rori	a1, a1, 1
 	sltu	a1, a1, a3
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

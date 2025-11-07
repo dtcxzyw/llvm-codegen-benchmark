@@ -24,8 +24,7 @@ func000000000000030c:
 func0000000000000181:
 	bexti	a1, a1, 26
 	andi	a0, a0, 256
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:

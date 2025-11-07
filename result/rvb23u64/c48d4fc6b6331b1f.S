@@ -31,8 +31,7 @@ func00000000000010cc:
 	srli	a1, a1, 2
 	sext.w	a1, a1
 	slt	a1, a0, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000008ca:

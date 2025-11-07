@@ -50,15 +50,13 @@ func0000000000000012:
 func0000000000000104:
 	feq.d	a1, fa0, fa1
 	srliw	a0, a0, 16
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000014:
 	sext.w	a0, a0
-	seqz	a0, a0
 	flt.d	a1, fa1, fa0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000c7:
@@ -71,8 +69,7 @@ func00000000000000c7:
 func000000000000004c:
 	sext.w	a0, a0
 	flt.d	a1, fa0, fa1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000101:

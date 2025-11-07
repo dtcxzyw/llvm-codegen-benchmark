@@ -26,10 +26,9 @@ func000000000000610c:
 	sext.h	a2, a0
 	sext.w	a1, a1
 	slli	a0, a0, 48
-	snez	a1, a1
 	srli	a0, a0, 62
 	sltiu	a0, a0, 3
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	lui	a1, 1048572
 	slt	a1, a2, a1
 	or	a0, a0, a1

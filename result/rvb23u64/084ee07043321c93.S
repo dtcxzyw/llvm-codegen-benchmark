@@ -18,10 +18,10 @@ func0000000000000021:
 
 func0000000000000024:
 	sext.w	a0, a0
-	not	a1, a1
-	bexti	a1, a1, 11
+	bseti	a2, zero, 11
+	and	a1, a1, a2
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	slli	a0, a0, 1
 	addiw	a0, a0, 1
 	ret

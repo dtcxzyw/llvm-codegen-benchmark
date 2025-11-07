@@ -12,8 +12,7 @@ func0000000000000d81:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000884:
@@ -60,8 +59,7 @@ func000000000000088c:
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000098c:
@@ -69,8 +67,7 @@ func000000000000098c:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000010a:
@@ -86,8 +83,7 @@ func000000000000012c:
 	addi	a2, a2, -1
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e8c:
@@ -110,16 +106,14 @@ func0000000000000cc1:
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	slt	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000ccc:
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e86:
@@ -142,8 +136,7 @@ func0000000000000981:
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000088a:
@@ -173,8 +166,7 @@ func00000000000004cc:
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004d4:
@@ -233,8 +225,7 @@ func0000000000000c81:
 	addi	a3, a3, 64
 	add	a2, a2, a3
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -242,8 +233,7 @@ func000000000000008c:
 	lui	a3, 1
 	add	a2, a2, a3
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -251,8 +241,7 @@ func000000000000018c:
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e98:
@@ -281,10 +270,9 @@ func0000000000000e84:
 
 func0000000000000544:
 	addi	a2, a2, -1
-	srliw	a0, a0, 16
 	slt	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 16
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000094:
@@ -297,10 +285,9 @@ func0000000000000094:
 
 func0000000000000cc8:
 	addi	a2, a2, 1
-	srliw	a0, a0, 30
 	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	srliw	a0, a0, 30
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004c1:

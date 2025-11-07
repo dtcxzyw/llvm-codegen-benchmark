@@ -16,10 +16,10 @@ func000000000000001c:
 
 func000000000000000f:
 	xor	a1, a1, a2
-	zext.w	a2, a1
-	sh1add.uw	a1, a1, a2
+	slli.uw	a1, a1, 3
+	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
-	sh3add	a0, a1, a0
+	add	a0, a0, a1
 	li	a1, 1236
 	sh2add	a0, a1, a0
 	ret

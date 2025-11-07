@@ -11,12 +11,11 @@ func0000000000000c51:
 	ret
 
 func0000000000000099:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	lui	a3, 1
-	seqz	a2, a2
 	slt	a1, a1, a3
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
