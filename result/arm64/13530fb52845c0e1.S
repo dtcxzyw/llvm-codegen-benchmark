@@ -29,16 +29,14 @@ func000000000000022c:
 
 func0000000000000226:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	cmp	w8, #9
 	cset	w0, lt
 	ret
 
 func000000000000022a:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	mvn	w8, w8
 	lsr	w0, w8, #31
 	ret

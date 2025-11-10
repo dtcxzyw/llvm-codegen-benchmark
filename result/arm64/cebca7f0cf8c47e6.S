@@ -18,7 +18,6 @@ func0000000000000020:
 
 func0000000000000011:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 

@@ -24,28 +24,25 @@ func00000000000000a2:
 	movk	w8, #65533, lsl #16
 	movk	w9, #14699, lsl #16
 	cmp	w1, w8
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	umull	x8, w8, w9
 	lsr	x0, x8, #47
 	ret
 
 func0000000000000022:
-	cmp	w1, #3
 	mov	w8, #34079
-	cset	w9, lo
+	cmp	w1, #3
 	movk	w8, #20971, lsl #16
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	umull	x8, w9, w8
 	lsr	x0, x8, #37
 	ret
 
 func0000000000000020:
-	cmp	w1, #3
 	mov	w8, #34079
-	cset	w9, lo
+	cmp	w1, #3
 	movk	w8, #20971, lsl #16
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	umull	x8, w9, w8
 	lsr	x0, x8, #37
 	ret

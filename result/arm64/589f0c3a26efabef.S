@@ -15,8 +15,7 @@ func00000000000000a8:
 
 func000000000000020a:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	x8, x0, x8
+	sbc	x8, x0, xzr
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret

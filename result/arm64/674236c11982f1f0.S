@@ -7,8 +7,7 @@ func0000000000000005:
 
 func0000000000000011:
 	cmp	w1, #3
-	and	w9, w0, #0xffff
-	cset	w8, lo
-	sub	w0, w9, w8
+	and	w8, w0, #0xffff
+	sbc	w0, w8, wzr
 	ret
 

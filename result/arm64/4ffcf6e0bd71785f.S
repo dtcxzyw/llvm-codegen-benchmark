@@ -34,16 +34,14 @@ func0000000000000065:
 func0000000000000145:
 	cmp	w1, #3
 	mov	w8, #36525
-	cset	w9, lo
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	mul	w0, w9, w8
 	ret
 
 func0000000000000040:
 	cmp	w1, #3
 	mov	w8, #365
-	cset	w9, lo
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	mul	w0, w9, w8
 	ret
 

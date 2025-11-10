@@ -16,10 +16,9 @@ func0000000000000015:
 
 func0000000000000045:
 	and	w8, w2, #0xff
-	add	w9, w0, w1
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w0, w9, w8
+	add	w8, w0, w1
+	sbc	w0, w8, wzr
 	ret
 
 func0000000000000011:

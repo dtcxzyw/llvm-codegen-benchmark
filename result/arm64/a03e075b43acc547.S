@@ -54,21 +54,18 @@ func0000000000000011:
 
 func0000000000000050:
 	cmp	x1, #2
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000051:
 	mov	x8, #-20864
 	movk	x8, #65534, lsl #16
 	cmp	x1, x8
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000010:
 	cmp	x1, #10
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 

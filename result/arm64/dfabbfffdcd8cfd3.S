@@ -22,8 +22,7 @@ func0000000000000014:
 func0000000000000040:
 	cmp	w1, #3
 	mov	w8, #4800
-	cset	w9, lo
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	add	w0, w9, w8
 	ret
 

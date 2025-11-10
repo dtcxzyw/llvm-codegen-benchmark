@@ -6,8 +6,7 @@ func0000000000000004:
 
 func0000000000000010:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000021:
@@ -30,8 +29,7 @@ func0000000000000020:
 
 func0000000000000011:
 	cmp	x1, x2
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000029:

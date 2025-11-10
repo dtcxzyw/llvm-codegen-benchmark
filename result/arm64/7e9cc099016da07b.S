@@ -14,15 +14,13 @@ func0000000000000015:
 
 func0000000000000045:
 	cmp	w2, #3
-	cset	w8, lo
-	sub	w8, w1, w8
+	sbc	w8, w1, wzr
 	add	w0, w8, w0
 	ret
 
 func0000000000000144:
 	cmp	w2, #2
-	cset	w8, lo
-	sub	w8, w1, w8
+	sbc	w8, w1, wzr
 	add	w0, w0, w8
 	ret
 

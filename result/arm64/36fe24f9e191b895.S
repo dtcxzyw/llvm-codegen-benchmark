@@ -1,8 +1,7 @@
 func0000000000000145:
 	cmp	w1, #3
 	mov	w8, #4716
-	cset	w9, lo
-	sub	w9, w0, w9
+	sbc	w9, w0, wzr
 	add	w0, w9, w8
 	ret
 
@@ -36,8 +35,7 @@ func0000000000000185:
 
 func0000000000000045:
 	cmp	w1, #3
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	add	w0, w8, #1
 	ret
 

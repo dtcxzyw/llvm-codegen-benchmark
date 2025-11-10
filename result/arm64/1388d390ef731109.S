@@ -39,14 +39,12 @@ func0000000000000011:
 	movk	x8, #46771, lsl #32
 	movk	x8, #3552, lsl #48
 	cmp	x1, x8
-	cset	w8, lo
-	sub	w0, w0, w8
+	sbc	w0, w0, wzr
 	ret
 
 func0000000000000010:
 	cmp	x1, #2
-	cset	w8, lo
-	sub	w0, w0, w8
+	sbc	w0, w0, wzr
 	ret
 
 func0000000000000029:
@@ -60,7 +58,6 @@ func0000000000000051:
 	movk	x8, #42182, lsl #16
 	movk	x8, #36222, lsl #32
 	cmp	x1, x8
-	cset	w8, lo
-	sub	w0, w0, w8
+	sbc	w0, w0, wzr
 	ret
 

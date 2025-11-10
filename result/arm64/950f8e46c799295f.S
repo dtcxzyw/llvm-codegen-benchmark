@@ -20,8 +20,7 @@ func0000000000000041:
 func0000000000000044:
 	and	w8, w1, #0xff
 	cmp	w8, #10
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000064:

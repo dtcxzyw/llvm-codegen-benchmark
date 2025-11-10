@@ -36,7 +36,6 @@ func0000000000000028:
 
 func0000000000000011:
 	cmp	w1, #80, lsl #12
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 

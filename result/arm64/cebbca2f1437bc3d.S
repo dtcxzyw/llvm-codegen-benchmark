@@ -17,8 +17,7 @@ func0000000000000015:
 func0000000000000045:
 	and	w8, w1, #0xff
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	sub	w0, w8, #399
 	ret
 
@@ -33,8 +32,7 @@ func0000000000000011:
 func0000000000000145:
 	and	w8, w1, #0xff
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	sub	w0, w8, #399
 	ret
 

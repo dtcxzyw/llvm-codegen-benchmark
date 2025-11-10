@@ -35,11 +35,10 @@ func00000000000000a4:
 
 func0000000000000040:
 	mov	w8, #4919
-	add	w9, w0, w1
 	movk	w8, #49136, lsl #16
 	cmp	w2, w8
-	cset	w8, lo
-	sub	w0, w9, w8
+	add	w8, w0, w1
+	sbc	w0, w8, wzr
 	ret
 
 func0000000000000185:
@@ -51,9 +50,8 @@ func0000000000000185:
 
 func000000000000004d:
 	cmp	w2, #3
-	add	w9, w0, w1
-	cset	w8, lo
-	sub	w0, w9, w8
+	add	w8, w0, w1
+	sbc	w0, w8, wzr
 	ret
 
 func00000000000000a0:

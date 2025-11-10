@@ -10,10 +10,9 @@ func00000000000002a1:
 
 func00000000000008a6:
 	and	w8, w2, #0xff
-	add	w9, w0, w1
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w8, w9, w8
+	add	w8, w0, w1
+	sbc	w8, w8, wzr
 	lsr	w0, w8, #31
 	ret
 

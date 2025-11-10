@@ -44,8 +44,7 @@ func00000000000000a1:
 func0000000000000226:
 	and	w8, w1, #0xff
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	lsr	w0, w8, #31
 	ret
 
@@ -85,8 +84,7 @@ func0000000000000086:
 func0000000000000a26:
 	and	w8, w1, #0xff
 	cmp	w8, #3
-	cset	w8, lo
-	sub	w8, w0, w8
+	sbc	w8, w0, wzr
 	lsr	w0, w8, #31
 	ret
 

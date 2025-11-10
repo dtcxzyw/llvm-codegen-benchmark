@@ -8,8 +8,7 @@ func0000000000000005:
 func0000000000000011:
 	and	w8, w1, #0xffff
 	cmp	w8, #5
-	cset	w8, lo
-	sub	x0, x0, x8
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000004:
