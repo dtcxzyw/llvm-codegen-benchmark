@@ -1,6 +1,7 @@
 func0000000000000000:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
-	cmovbq	%rdi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
 	retq
 

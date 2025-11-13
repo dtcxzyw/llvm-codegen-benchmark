@@ -13,7 +13,8 @@ func0000000000000002:
 	movl	$255, %eax
 	movl	$255, %ecx
 	subl	%esi, %ecx
-	cmovbl	%eax, %ecx
+	cmpl	$255, %ecx
+	cmovael	%eax, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax

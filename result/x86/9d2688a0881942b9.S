@@ -1,22 +1,26 @@
 func0000000000000151:
 	movl	%edi, %eax
-	xorl	%ecx, %ecx
-	movl	%esi, %edx
-	negl	%edx
-	cmovbl	%ecx, %edx
+	movl	%esi, %ecx
+	negl	%ecx
+	movl	%ecx, %edx
+	sarl	$31, %edx
+	andnl	%ecx, %edx, %ecx
+	xorl	%edx, %edx
 	testl	%esi, %esi
-	cmovgl	%ecx, %edx
+	cmovlel	%ecx, %edx
 	subl	%edx, %eax
 	retq
 
 func0000000000000051:
 	movl	%edi, %eax
-	xorl	%ecx, %ecx
-	movl	%esi, %edx
-	negl	%edx
-	cmovbl	%ecx, %edx
+	movl	%esi, %ecx
+	negl	%ecx
+	movl	%ecx, %edx
+	sarl	$31, %edx
+	andnl	%ecx, %edx, %ecx
+	xorl	%edx, %edx
 	testl	%esi, %esi
-	cmovgl	%ecx, %edx
+	cmovlel	%ecx, %edx
 	subl	%edx, %eax
 	retq
 

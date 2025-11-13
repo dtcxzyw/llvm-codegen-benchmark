@@ -1,20 +1,24 @@
 func0000000000000054:
 	addl	%esi, %edi
-	xorl	%ecx, %ecx
 	movl	%edi, %eax
 	negl	%eax
-	cmovbl	%ecx, %eax
+	movl	%eax, %ecx
+	sarl	$31, %ecx
+	andnl	%eax, %ecx, %ecx
+	xorl	%eax, %eax
 	testl	%edi, %edi
-	cmovgl	%ecx, %eax
+	cmovlel	%ecx, %eax
 	retq
 
 func0000000000000014:
 	addl	%esi, %edi
-	xorl	%ecx, %ecx
 	movl	%edi, %eax
 	negl	%eax
-	cmovbl	%ecx, %eax
+	movl	%eax, %ecx
+	sarl	$31, %ecx
+	andnl	%eax, %ecx, %ecx
+	xorl	%eax, %eax
 	testl	%edi, %edi
-	cmovgl	%ecx, %eax
+	cmovlel	%ecx, %eax
 	retq
 

@@ -34,6 +34,7 @@ func0000000000000001:
 	movl	$8, %ecx
 	movl	$8, %eax
 	subq	%rdi, %rax
-	cmovbq	%rcx, %rax
+	cmpq	$8, %rax
+	cmovaeq	%rcx, %rax
 	retq
 

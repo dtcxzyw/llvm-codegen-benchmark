@@ -1,7 +1,8 @@
 func0000000000000000:
 	mov	w8, #16
-	subs	w9, w8, w0
-	csel	w0, w8, w9, lo
+	sub	w9, w8, w0
+	cmp	w9, #16
+	csel	w0, w9, w8, lo
 	ret
 
 func0000000000000006:
