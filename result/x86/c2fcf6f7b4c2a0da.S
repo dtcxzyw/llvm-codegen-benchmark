@@ -1,10 +1,10 @@
 func0000000000000002:
 	movq	%rdx, %rax
 	movl	%edi, %ecx
-	andl	$1, %ecx
-	shll	$4, %ecx
-	subq	%rcx, %rax
-	testb	$1, %dil
+	andl	$1, %edi
+	shll	$4, %edi
+	subq	%rdi, %rax
+	testb	$1, %cl
 	cmoveq	%rsi, %rax
 	retq
 

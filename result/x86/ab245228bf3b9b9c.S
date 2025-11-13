@@ -1,8 +1,8 @@
 func0000000000000020:
 	movl	%edx, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdx,%rax), %eax
+	incl	%edx
+	shrl	$31, %edx
+	leal	1(%rax,%rdx), %eax
 	sarl	%eax
 	cltq
 	imulq	%rsi, %rax
@@ -11,9 +11,9 @@ func0000000000000020:
 
 func0000000000000024:
 	movl	%edx, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdx,%rax), %eax
+	incl	%edx
+	shrl	$31, %edx
+	leal	1(%rax,%rdx), %eax
 	sarl	%eax
 	cltq
 	imulq	%rsi, %rax

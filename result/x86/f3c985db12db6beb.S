@@ -1,22 +1,18 @@
 func0000000000000002:
-	addl	%edx, %esi
-	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %ecx
-	xorl	%eax, %eax
+	leal	(%rsi,%rdx), %eax
+	xorl	%ecx, %ecx
+	negl	%eax
+	cmovbl	%ecx, %eax
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000000:
-	addl	%edx, %esi
-	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %ecx
-	xorl	%eax, %eax
+	leal	(%rsi,%rdx), %eax
+	xorl	%ecx, %ecx
+	negl	%eax
+	cmovbl	%ecx, %eax
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovnel	%ecx, %eax
 	retq
 

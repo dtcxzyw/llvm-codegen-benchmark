@@ -1,15 +1,15 @@
 func0000000000000007:
 	movzwl	%di, %eax
 	movl	%eax, %ecx
-	shrl	$15, %ecx
-	leal	(%rcx,%rax,2), %eax
+	shrl	$15, %eax
+	leal	(%rax,%rcx,2), %eax
 	retq
 
 func000000000000000f:
 	andl	$48, %edi
 	movl	%edi, %eax
-	shrl	$2, %eax
-	leal	(%rax,%rdi,4), %eax
+	shrl	$2, %edi
+	leal	(%rdi,%rax,4), %eax
 	retq
 
 func000000000000000d:

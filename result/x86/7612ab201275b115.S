@@ -1,9 +1,9 @@
 func0000000000000002:
 	movl	%edi, %ecx
-	shrl	$2, %ecx
-	movl	%ecx, %eax
+	shrl	$2, %edi
+	movl	%edi, %eax
 	andl	$-2, %eax
-	testb	$1, %dil
-	cmovel	%ecx, %eax
+	testb	$1, %cl
+	cmovel	%edi, %eax
 	retq
 

@@ -1,11 +1,11 @@
 func000000000000000b:
-	leal	63(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%esi, %eax
+	addl	%edx, %esi
+	leal	63(%rax,%rdx), %eax
+	cmovnsl	%esi, %eax
 	andl	$-64, %eax
-	subl	%eax, %ecx
-	movslq	%ecx, %rax
+	subl	%eax, %esi
+	movslq	%esi, %rax
 	shlq	$4, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq

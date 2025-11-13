@@ -88,13 +88,13 @@ func000000000000002a:
 	retq
 
 func0000000000000004:
-	leal	63(%rdi,%rsi), %eax
-	movl	%edi, %ecx
-	addl	%esi, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%edi, %eax
+	addl	%esi, %edi
+	leal	63(%rax,%rsi), %eax
+	cmovnsl	%edi, %eax
 	andl	$-64, %eax
-	subl	%eax, %ecx
-	cmpl	$60, %ecx
+	subl	%eax, %edi
+	cmpl	$60, %edi
 	setb	%al
 	retq
 

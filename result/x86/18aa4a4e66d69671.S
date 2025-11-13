@@ -12,9 +12,9 @@ func0000000000000000:
 	addl	%edx, %esi
 	subl	%esi, %edi
 	movl	%edi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdi,%rax), %eax
+	incl	%edi
+	shrl	$31, %edi
+	leal	1(%rax,%rdi), %eax
 	sarl	%eax
 	retq
 
@@ -22,9 +22,9 @@ func0000000000000008:
 	addl	%edx, %esi
 	subl	%esi, %edi
 	movl	%edi, %eax
-	addl	$-9, %eax
-	shrl	$31, %eax
-	leal	-9(%rdi,%rax), %eax
+	addl	$-9, %edi
+	shrl	$31, %edi
+	leal	-9(%rax,%rdi), %eax
 	sarl	%eax
 	retq
 

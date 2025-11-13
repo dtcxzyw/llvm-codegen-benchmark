@@ -32,8 +32,7 @@ func0000000000000006:
 
 func0000000000000001:
 	mov	w8, #8
-	sub	x9, x8, x0
-	cmp	x9, #8
-	csel	x0, x9, x8, lo
+	subs	x9, x8, x0
+	csel	x0, x8, x9, lo
 	ret
 

@@ -28,8 +28,8 @@ func0000000000000015:
 
 func0000000000000010:
 	movl	%esi, %eax
-	shll	$4, %eax
-	leal	1(%rsi,%rax), %eax
+	shll	$4, %esi
+	leal	1(%rax,%rsi), %eax
 	imull	%edi, %eax
 	retq
 

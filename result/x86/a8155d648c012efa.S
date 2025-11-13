@@ -108,10 +108,10 @@ func0000000000000006:
 	movq	%rsi, %rax
 	movabsq	$6148914691236517206, %rcx
 	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	addl	%edx, %eax
-	cmpl	%eax, %edi
+	movl	%edx, %eax
+	shrq	$63, %rdx
+	addl	%eax, %edx
+	cmpl	%edx, %edi
 	setl	%al
 	retq
 

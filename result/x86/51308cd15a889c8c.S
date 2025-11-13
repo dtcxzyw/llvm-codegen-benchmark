@@ -7,17 +7,17 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movq	%rdi, %rax
-	shrq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	shrq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	testb	$1, %al
 	sete	%al
 	retq
 
 func000000000000002c:
-	movq	%rdi, %rax
-	sarq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	testb	$7, %al
 	setne	%al
 	retq

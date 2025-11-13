@@ -1,7 +1,8 @@
 func0000000000000001:
 	movl	%esi, %eax
+	movl	%eax, %ecx
 	andl	$7, %eax
-	testb	$4, %sil
+	testb	$4, %cl
 	cmovnel	%edi, %eax
 	retq
 

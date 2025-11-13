@@ -13,12 +13,12 @@ func0000000000000015:
 	retq
 
 func0000000000000004:
-	movq	%rdx, %rcx
-	shrq	$63, %rcx
-	addl	%edx, %ecx
-	shrl	%ecx
+	movl	%edx, %eax
+	shrq	$63, %rdx
+	addl	%eax, %edx
+	shrl	%edx
 	leal	(%rdi,%rsi), %eax
-	subl	%ecx, %eax
+	subl	%edx, %eax
 	andl	$63, %eax
 	retq
 

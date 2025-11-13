@@ -1,24 +1,21 @@
 func000000000000000d:
+	xorl	%eax, %eax
 	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
 
 func0000000000000008:
+	xorl	%eax, %eax
 	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
 
 func000000000000000b:
+	xorl	%eax, %eax
 	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
 
@@ -32,10 +29,9 @@ func0000000000000000:
 	retq
 
 func0000000000000009:
+	xorl	%eax, %eax
 	negl	%esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq
 

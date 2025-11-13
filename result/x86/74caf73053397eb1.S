@@ -21,9 +21,9 @@ func0000000000000021:
 func0000000000000001:
 	subl	%esi, %edx
 	movl	%edx, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdx,%rax), %eax
+	incl	%edx
+	shrl	$31, %edx
+	leal	1(%rax,%rdx), %eax
 	sarl	%eax
 	addl	%edi, %eax
 	retq

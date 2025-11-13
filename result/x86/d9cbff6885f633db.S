@@ -21,9 +21,9 @@ func0000000000000000:
 
 func0000000000000002:
 	movl	%edi, %eax
-	addl	$-3, %eax
-	shrl	$31, %eax
-	leal	-3(%rdi,%rax), %ecx
+	addl	$-3, %edi
+	shrl	$31, %edi
+	leal	-3(%rax,%rdi), %ecx
 	movl	%ecx, %eax
 	sarl	%eax
 	shrl	$31, %ecx

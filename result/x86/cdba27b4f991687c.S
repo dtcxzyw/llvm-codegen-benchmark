@@ -1,7 +1,7 @@
 func0000000000000003:
-	movq	%rdi, %rax
-	sarq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	retq
 
 func0000000000000000:
@@ -11,9 +11,9 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movq	%rdi, %rax
-	sarq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	retq
 
 func0000000000000001:

@@ -1,13 +1,13 @@
 func0000000000000051:
 	movl	%esi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rsi,%rax), %ecx
+	incl	%esi
+	shrl	$31, %esi
+	leal	1(%rax,%rsi), %ecx
 	sarl	%ecx
 	movl	%edi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdi,%rax), %eax
+	incl	%edi
+	shrl	$31, %edi
+	leal	1(%rax,%rdi), %eax
 	sarl	%eax
 	imull	%ecx, %eax
 	retq

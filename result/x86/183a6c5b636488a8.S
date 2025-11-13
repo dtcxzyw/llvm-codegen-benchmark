@@ -4,9 +4,9 @@ func0000000000000002:
 	cmovnsl	%edi, %eax
 	sarl	$4, %eax
 	movl	%eax, %ecx
-	decl	%ecx
-	shrl	$31, %ecx
-	leal	-1(%rax,%rcx), %eax
+	decl	%eax
+	shrl	$31, %eax
+	leal	-1(%rcx,%rax), %eax
 	sarl	%eax
 	retq
 

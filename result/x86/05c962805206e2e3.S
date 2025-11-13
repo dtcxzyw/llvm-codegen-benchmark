@@ -1,7 +1,8 @@
 func0000000000000001:
-	leal	15(%rdi,%rsi), %ecx
 	movl	%edi, %eax
+	movl	%edi, %ecx
 	addl	%esi, %eax
+	leal	15(%rcx,%rsi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$-16, %ecx
 	subl	%ecx, %eax

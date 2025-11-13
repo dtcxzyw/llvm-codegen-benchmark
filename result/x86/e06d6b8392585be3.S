@@ -44,9 +44,9 @@ func000000000000001a:
 func0000000000000018:
 	subl	%edi, %esi
 	movl	%esi, %eax
-	addl	$6, %eax
-	shrl	$31, %eax
-	leal	6(%rsi,%rax), %eax
+	addl	$6, %esi
+	shrl	$31, %esi
+	leal	6(%rax,%rsi), %eax
 	sarl	%eax
 	retq
 

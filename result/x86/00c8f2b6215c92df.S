@@ -30,9 +30,9 @@ func0000000000000048:
 
 func0000000000000046:
 	movl	%esi, %eax
-	decl	%eax
-	shrl	$31, %eax
-	leal	-1(%rsi,%rax), %eax
+	decl	%esi
+	shrl	$31, %esi
+	leal	-1(%rax,%rsi), %eax
 	sarl	%eax
 	cmpl	%eax, %edi
 	setl	%al
@@ -82,9 +82,9 @@ func000000000000004b:
 
 func000000000000000a:
 	movl	%esi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rsi,%rax), %eax
+	incl	%esi
+	shrl	$31, %esi
+	leal	1(%rax,%rsi), %eax
 	sarl	%eax
 	cmpl	%eax, %edi
 	setg	%al

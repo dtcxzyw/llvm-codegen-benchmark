@@ -44,9 +44,9 @@ func0000000000000022:
 
 func000000000000002b:
 	movl	%edx, %eax
-	decl	%eax
-	shrl	$31, %eax
-	leal	-1(%rdx,%rax), %eax
+	decl	%edx
+	shrl	$31, %edx
+	leal	-1(%rax,%rdx), %eax
 	sarl	%eax
 	cltq
 	leaq	(%rsi,%rax,8), %rax

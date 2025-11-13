@@ -47,8 +47,8 @@ func000000000000002f:
 	imulq	$1745256553, %rsi, %rax
 	shrq	$39, %rax
 	movl	%eax, %ecx
-	shll	$7, %ecx
-	leal	(%rcx,%rax,2), %eax
+	shll	$7, %eax
+	leal	(%rax,%rcx,2), %eax
 	addl	%edi, %eax
 	retq
 
@@ -58,8 +58,8 @@ func000000000000000f:
 	imulq	$1745256553, %rsi, %rax
 	shrq	$39, %rax
 	movl	%eax, %ecx
-	shll	$7, %ecx
-	leal	(%rcx,%rax,2), %eax
+	shll	$7, %eax
+	leal	(%rax,%rcx,2), %eax
 	addl	%edi, %eax
 	retq
 

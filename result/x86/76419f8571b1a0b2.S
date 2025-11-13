@@ -1,7 +1,7 @@
 func00000000000000c1:
 	movl	%edi, %eax
-	decl	%eax
-	testw	%ax, %di
+	decl	%edi
+	testw	%di, %ax
 	sete	%al
 	retq
 

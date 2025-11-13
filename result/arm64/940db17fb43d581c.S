@@ -1,6 +1,6 @@
 func0000000000000003:
-	neg	w8, w0
-	bic	w0, w8, w8, asr #31
+	negs	w8, w0
+	csel	w0, wzr, w8, lo
 	ret
 
 func0000000000000006:
@@ -23,7 +23,7 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	neg	w8, w0
-	bic	w0, w8, w8, asr #31
+	negs	w8, w0
+	csel	w0, wzr, w8, lo
 	ret
 

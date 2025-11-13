@@ -1,9 +1,9 @@
 func0000000000000082:
 	movl	%edi, %eax
-	andl	$65519, %eax
-	cmpw	$47, %ax
+	andl	$65519, %edi
+	cmpw	$47, %di
 	sete	%cl
-	cmpw	$35, %di
+	cmpw	$35, %ax
 	sete	%al
 	orb	%sil, %al
 	orb	%cl, %al

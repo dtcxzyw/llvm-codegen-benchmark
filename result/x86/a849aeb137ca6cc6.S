@@ -3,13 +3,13 @@ func00000000000000e1:
 	imulq	$613566757, %rax, %rax
 	shrq	$32, %rax
 	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$2, %ecx
-	leal	(,%rcx,8), %eax
-	subl	%eax, %ecx
-	leal	1(%rsi,%rcx), %eax
+	subl	%eax, %esi
+	shrl	%esi
+	addl	%eax, %esi
+	shrl	$2, %esi
+	leal	(,%rsi,8), %eax
+	subl	%eax, %esi
+	leal	1(%rcx,%rsi), %eax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq

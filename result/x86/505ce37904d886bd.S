@@ -11,9 +11,9 @@ func0000000000000024:
 
 func0000000000000025:
 	movl	%esi, %eax
-	addl	$3, %eax
-	shrl	$31, %eax
-	leal	3(%rsi,%rax), %eax
+	addl	$3, %esi
+	shrl	$31, %esi
+	leal	3(%rax,%rsi), %eax
 	andl	$-2, %eax
 	addl	%edi, %eax
 	retq

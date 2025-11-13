@@ -16,9 +16,9 @@ func000000000000000b:
 
 func000000000000000a:
 	subq	%rsi, %rdi
-	movq	%rdi, %rax
-	sarq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	shlq	$52, %rax
 	retq
 

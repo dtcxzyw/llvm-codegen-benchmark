@@ -1,9 +1,9 @@
 func0000000000000002:
-	movl	%edi, %eax
-	andl	$1, %eax
-	shll	$4, %eax
-	leaq	-16(%rax,%rdx), %rax
-	testb	$1, %dil
+	movl	%edi, %ecx
+	andl	$1, %edi
+	shll	$4, %edi
+	leaq	-16(%rdi,%rdx), %rax
+	testb	$1, %cl
 	cmovneq	%rsi, %rax
 	retq
 

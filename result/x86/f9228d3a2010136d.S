@@ -1,11 +1,11 @@
 func0000000000000025:
 	xorl	%eax, %eax
 	movl	%edi, %ecx
-	subl	$7, %ecx
-	cmovbl	%eax, %ecx
-	addl	$3, %ecx
-	andl	$-4, %ecx
-	negl	%ecx
-	leal	-4(%rdi,%rcx), %eax
+	subl	$7, %edi
+	cmovbl	%eax, %edi
+	addl	$3, %edi
+	andl	$-4, %edi
+	negl	%edi
+	leal	-4(%rcx,%rdi), %eax
 	retq
 

@@ -7,35 +7,20 @@
 	.short	139
 	.short	139
 	.short	139
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	139
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
+	.short	139
 func0000000000000004:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
-	vpmovzxbw	.LCPI0_1(%rip), %ymm1
+	vpbroadcastw	.LCPI0_1(%rip), %ymm1
 	vpsrlvw	%ymm0, %ymm1, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
@@ -50,35 +35,20 @@ func0000000000000004:
 	.short	223
 	.short	223
 	.short	223
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	223
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
+	.short	223
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
-	vpmovzxbw	.LCPI1_1(%rip), %ymm1
+	vpbroadcastw	.LCPI1_1(%rip), %ymm1
 	vpsrlvw	%ymm0, %ymm1, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
@@ -93,35 +63,20 @@ func0000000000000000:
 	.short	209
 	.short	209
 	.short	209
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI2_1:
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	209
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
+	.short	209
 func0000000000000006:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
-	vpmovzxbw	.LCPI2_1(%rip), %ymm1
+	vpbroadcastw	.LCPI2_1(%rip), %ymm1
 	vpsrlvw	%ymm0, %ymm1, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper

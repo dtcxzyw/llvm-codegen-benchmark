@@ -25,11 +25,11 @@ func000000000000001b:
 	ret
 
 func0000000000000000:
-	lui	a1, 1
+	slli	a1, a0, 9
 	lui	a2, 4080
-	addi	a1, a1, -1535
+	sh2add	a1, a1, a1
 	addi	a2, a2, 255
-	mul	a0, a0, a1
+	add	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2
 	lui	a2, 1600

@@ -1,8 +1,8 @@
 func000000000000003f:
 	imull	%esi, %edi
 	movl	%edi, %eax
-	shll	$8, %eax
-	leal	257(%rdi,%rax), %eax
+	shll	$8, %edi
+	leal	257(%rax,%rdi), %eax
 	retq
 
 func0000000000000000:

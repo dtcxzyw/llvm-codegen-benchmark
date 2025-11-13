@@ -1,20 +1,20 @@
 func0000000000000075:
-	movl	%edi, %eax
-	andl	$1, %eax
-	addq	%rsi, %rax
-	movzwl	%dx, %ecx
-	cmpq	%rcx, %rax
+	movl	%edi, %ecx
+	andl	$1, %edi
+	addq	%rsi, %rdi
+	movzwl	%dx, %eax
+	cmpq	%rax, %rdi
 	setbe	%al
-	andb	%dil, %al
+	andb	%cl, %al
 	retq
 
 func0000000000000045:
-	movl	%edi, %eax
-	andl	$1, %eax
-	addq	%rsi, %rax
-	movzwl	%dx, %ecx
-	cmpq	%rcx, %rax
+	movl	%edi, %ecx
+	andl	$1, %edi
+	addq	%rsi, %rdi
+	movzwl	%dx, %eax
+	cmpq	%rax, %rdi
 	setbe	%al
-	andb	%dil, %al
+	andb	%cl, %al
 	retq
 

@@ -1,11 +1,11 @@
 func0000000000000001:
-	leal	15(%rdi,%rsi), %eax
-	movl	%edi, %ecx
-	addl	%esi, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%edi, %eax
+	addl	%esi, %edi
+	leal	15(%rax,%rsi), %eax
+	cmovnsl	%edi, %eax
 	andl	$-16, %eax
-	subl	%eax, %ecx
-	movslq	%ecx, %rax
+	subl	%eax, %edi
+	movslq	%edi, %rax
 	retq
 
 func0000000000000000:

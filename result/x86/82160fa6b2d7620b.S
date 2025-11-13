@@ -56,8 +56,8 @@ func0000000000000000:
 
 func0000000000000014:
 	movl	%edx, %eax
-	shll	$6, %eax
-	leal	(%rax,%rdx,2), %eax
+	shll	$6, %edx
+	leal	(%rdx,%rax,2), %eax
 	addl	%esi, %eax
 	cltq
 	leaq	(%rdi,%rax,8), %rax

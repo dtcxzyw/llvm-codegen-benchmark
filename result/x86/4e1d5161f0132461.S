@@ -40,9 +40,9 @@ func0000000000000121:
 
 func00000000000000a1:
 	movl	%esi, %eax
-	addl	$6, %eax
-	shrl	$31, %eax
-	leal	6(%rsi,%rax), %eax
+	addl	$6, %esi
+	shrl	$31, %esi
+	leal	6(%rax,%rsi), %eax
 	sarl	%eax
 	cmpq	%rax, %rdi
 	sete	%al
@@ -70,9 +70,9 @@ func0000000000000088:
 
 func0000000000000081:
 	movl	%esi, %eax
-	decl	%eax
-	shrl	$31, %eax
-	leal	-1(%rsi,%rax), %eax
+	decl	%esi
+	shrl	$31, %esi
+	leal	-1(%rax,%rsi), %eax
 	sarl	%eax
 	cmpq	%rax, %rdi
 	sete	%al

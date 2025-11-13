@@ -28,9 +28,10 @@ func0000000000000007:
 	retq
 
 func0000000000000001:
-	leal	3(%rdi,%rsi), %ecx
 	movl	%edi, %eax
+	movl	%edi, %ecx
 	addl	%esi, %eax
+	leal	3(%rcx,%rsi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$65532, %ecx
 	subl	%ecx, %eax

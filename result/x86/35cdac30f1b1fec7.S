@@ -9,9 +9,9 @@ func0000000000000017:
 
 func0000000000000012:
 	movl	%edi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdi,%rax), %eax
+	incl	%edi
+	shrl	$31, %edi
+	leal	1(%rax,%rdi), %eax
 	sarl	%eax
 	shlq	$32, %rax
 	retq

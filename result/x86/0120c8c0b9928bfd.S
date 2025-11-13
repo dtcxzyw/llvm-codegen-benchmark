@@ -1,29 +1,29 @@
 func0000000000000130:
 	movl	%edi, %eax
-	addl	$-48, %eax
-	cmpw	$10, %ax
+	addl	$-48, %edi
+	cmpw	$10, %di
 	setb	%cl
-	cmpw	$97, %di
+	cmpw	$97, %ax
 	setae	%al
 	orb	%cl, %al
 	retq
 
 func0000000000000902:
 	movl	%edi, %eax
-	addl	$-43, %eax
-	cmpw	$10, %ax
+	addl	$-43, %edi
+	cmpw	$10, %di
 	setb	%cl
-	cmpw	$15, %di
+	cmpw	$15, %ax
 	sete	%al
 	orb	%cl, %al
 	retq
 
 func0000000000000102:
 	movl	%edi, %eax
-	addl	$-48, %eax
-	cmpw	$10, %ax
+	addl	$-48, %edi
+	cmpw	$10, %di
 	setb	%cl
-	cmpw	$46, %di
+	cmpw	$46, %ax
 	sete	%al
 	orb	%cl, %al
 	retq

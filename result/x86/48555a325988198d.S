@@ -13,8 +13,8 @@ func0000000000000007:
 func000000000000000f:
 	andl	$3, %edi
 	movl	%edi, %eax
-	shll	$8, %eax
-	leal	257(%rdi,%rax), %eax
+	shll	$8, %edi
+	leal	257(%rax,%rdi), %eax
 	retq
 
 func0000000000000004:

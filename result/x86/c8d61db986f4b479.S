@@ -1,6 +1,7 @@
 func0000000000000005:
-	leal	3(%rdi,%rsi), %eax
+	movl	%edi, %eax
 	addl	%esi, %edi
+	leal	3(%rax,%rsi), %eax
 	cmovnsl	%edi, %eax
 	andl	$2147483644, %eax
 	subl	%eax, %edi

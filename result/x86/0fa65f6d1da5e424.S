@@ -20,9 +20,9 @@ func0000000000000000:
 
 func0000000000000008:
 	movl	%esi, %eax
-	addl	$-4, %eax
-	shrl	$31, %eax
-	leal	-4(%rsi,%rax), %eax
+	addl	$-4, %esi
+	shrl	$31, %esi
+	leal	-4(%rax,%rsi), %eax
 	shrl	%eax
 	movzbl	%al, %eax
 	addl	%edi, %eax

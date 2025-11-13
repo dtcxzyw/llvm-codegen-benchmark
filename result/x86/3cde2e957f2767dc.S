@@ -24,12 +24,12 @@ func00000000000000c1:
 	retq
 
 func0000000000000061:
-	movq	%rsi, %rax
-	shrq	$63, %rax
-	addl	%esi, %eax
-	shrl	%eax
+	movl	%esi, %eax
+	shrq	$63, %rsi
+	addl	%eax, %esi
+	shrl	%esi
 	incq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 

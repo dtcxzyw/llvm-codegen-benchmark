@@ -16,8 +16,8 @@ func00000000000000a1:
 
 func0000000000000008:
 	movl	%esi, %eax
-	shll	$4, %eax
-	leal	69(%rsi,%rax), %eax
+	shll	$4, %esi
+	leal	69(%rax,%rsi), %eax
 	cltq
 	cmpq	%rax, %rdi
 	seta	%al

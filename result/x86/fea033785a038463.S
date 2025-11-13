@@ -2,8 +2,7 @@ func0000000000000000:
 	movl	$16, %ecx
 	movl	$16, %eax
 	subl	%edi, %eax
-	cmpl	$16, %eax
-	cmovael	%ecx, %eax
+	cmovbl	%ecx, %eax
 	retq
 
 func0000000000000006:

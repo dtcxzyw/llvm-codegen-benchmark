@@ -45,10 +45,11 @@ func0000000000000001:
 	retq
 
 func0000000000000004:
-	addl	%edx, %esi
-	leal	7(%rdi,%rsi), %ecx
 	movl	%esi, %eax
+	addl	%edx, %eax
+	movl	%eax, %ecx
 	addl	%edi, %eax
+	leal	7(%rdi,%rcx), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$-8, %ecx
 	subl	%ecx, %eax

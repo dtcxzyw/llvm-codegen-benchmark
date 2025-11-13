@@ -34,11 +34,11 @@ func0000000000000028:
 	retq
 
 func000000000000000c:
-	movq	%rdi, %rax
-	shrq	$63, %rax
-	addl	%edi, %eax
-	shrl	%eax
-	testl	$2147483646, %eax
+	movl	%edi, %eax
+	shrq	$63, %rdi
+	addl	%eax, %edi
+	shrl	%edi
+	testl	$2147483646, %edi
 	setne	%al
 	retq
 

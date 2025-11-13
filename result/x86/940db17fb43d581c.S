@@ -1,8 +1,7 @@
 func0000000000000003:
+	xorl	%eax, %eax
 	negl	%edi
-	movl	%edi, %eax
-	sarl	$31, %eax
-	andnl	%edi, %eax, %eax
+	cmovael	%edi, %eax
 	retq
 
 func0000000000000006:
@@ -30,9 +29,8 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
+	xorl	%eax, %eax
 	negl	%edi
-	movl	%edi, %eax
-	sarl	$31, %eax
-	andnl	%edi, %eax, %eax
+	cmovael	%edi, %eax
 	retq
 

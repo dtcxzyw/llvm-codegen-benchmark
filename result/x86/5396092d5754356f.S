@@ -1,24 +1,20 @@
 func0000000000000025:
+	xorl	%eax, %eax
 	negl	%edx
-	movl	%edx, %eax
-	sarl	$31, %eax
-	andnl	%edx, %eax, %eax
-	xorl	%ecx, %ecx
+	cmovbl	%eax, %edx
 	testb	$1, %sil
-	cmovel	%eax, %ecx
-	subl	%ecx, %edi
+	cmovnel	%eax, %edx
+	subl	%edx, %edi
 	leal	28(%rdi), %eax
 	retq
 
 func0000000000000005:
+	xorl	%eax, %eax
 	negl	%edx
-	movl	%edx, %eax
-	sarl	$31, %eax
-	andnl	%edx, %eax, %eax
-	xorl	%ecx, %ecx
+	cmovbl	%eax, %edx
 	testb	$1, %sil
-	cmovel	%eax, %ecx
-	subl	%ecx, %edi
+	cmovnel	%eax, %edx
+	subl	%edx, %edi
 	leal	28(%rdi), %eax
 	retq
 

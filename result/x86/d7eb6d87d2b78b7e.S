@@ -4,8 +4,9 @@ func0000000000000000:
 	testb	$1, %sil
 	movl	$-6, %ecx
 	cmovel	%eax, %ecx
-	leal	7(%rdi,%rcx), %eax
+	movl	%edi, %eax
 	addl	%ecx, %edi
+	leal	7(%rax,%rcx), %eax
 	cltq
 	imulq	$-1840700269, %rax, %rax
 	shrq	$32, %rax
@@ -22,8 +23,9 @@ func0000000000000008:
 	testb	$1, %sil
 	movl	$-6, %ecx
 	cmovel	%eax, %ecx
-	leal	7(%rdi,%rcx), %eax
+	movl	%edi, %eax
 	addl	%ecx, %edi
+	leal	7(%rax,%rcx), %eax
 	cltq
 	imulq	$-1840700269, %rax, %rax
 	shrq	$32, %rax

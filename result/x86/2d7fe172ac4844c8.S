@@ -7,8 +7,9 @@ func0000000000000001:
 
 func0000000000000021:
 	movl	%esi, %eax
+	movl	%eax, %ecx
 	shrl	%eax
-	testb	$1, %sil
+	testb	$1, %cl
 	cmovnel	%edi, %eax
 	retq
 

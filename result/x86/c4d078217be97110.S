@@ -21,12 +21,12 @@ func0000000000000008:
 	retq
 
 func0000000000000004:
-	movq	%rdi, %rcx
-	shrq	$32, %rcx
+	movl	%edi, %ecx
+	shrq	$32, %rdi
 	xorl	%eax, %eax
-	negq	%rcx
+	negq	%rdi
 	sbbl	%eax, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000074:
@@ -42,12 +42,12 @@ func0000000000000064:
 	retq
 
 func0000000000000054:
-	movq	%rdi, %rcx
-	shrq	$31, %rcx
+	movl	%edi, %ecx
+	shrq	$31, %rdi
 	xorl	%eax, %eax
-	negq	%rcx
+	negq	%rdi
 	sbbl	%eax, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000026:

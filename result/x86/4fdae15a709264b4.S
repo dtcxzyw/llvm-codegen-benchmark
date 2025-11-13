@@ -7,13 +7,13 @@ func000000000000001c:
 
 func0000000000000004:
 	movl	%edi, %eax
-	andl	$7, %eax
-	leal	(%rax,%rdi,8), %eax
+	andl	$7, %edi
+	leal	(%rdi,%rax,8), %eax
 	retq
 
 func000000000000001e:
 	movl	%edi, %eax
-	andl	$7, %eax
-	leal	(%rax,%rdi,8), %eax
+	andl	$7, %edi
+	leal	(%rdi,%rax,8), %eax
 	retq
 

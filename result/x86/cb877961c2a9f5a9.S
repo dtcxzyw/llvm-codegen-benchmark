@@ -1,9 +1,9 @@
 func000000000000000c:
-	movq	%rsi, %rax
-	shrq	$63, %rax
-	addl	%esi, %eax
-	shrl	%eax
-	testl	$2147483646, %eax
+	movl	%esi, %eax
+	shrq	$63, %rsi
+	addl	%eax, %esi
+	shrl	%esi
+	testl	$2147483646, %esi
 	setne	%al
 	andb	%dil, %al
 	retq

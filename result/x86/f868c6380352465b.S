@@ -8,12 +8,12 @@ func00000000000000e1:
 	retq
 
 func0000000000000064:
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	addl	%edx, %eax
-	shrl	%eax
-	andl	$-2, %eax
-	leaq	(%rsi,%rax,4), %rax
+	movl	%edx, %eax
+	shrq	$63, %rdx
+	addl	%eax, %edx
+	shrl	%edx
+	andl	$-2, %edx
+	leaq	(%rsi,%rdx,4), %rax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

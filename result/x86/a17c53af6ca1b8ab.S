@@ -1,8 +1,8 @@
 func000000000000001f:
 	movl	%edi, %eax
-	shll	$5, %eax
-	orl	%esi, %eax
-	leal	-1862270976(%rdi,%rax), %eax
+	shll	$5, %edi
+	orl	%esi, %edi
+	leal	-1862270976(%rax,%rdi), %eax
 	retq
 
 func0000000000000000:

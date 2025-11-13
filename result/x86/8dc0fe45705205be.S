@@ -8,8 +8,8 @@ func0000000000000080:
 	imull	%edx, %esi
 	addl	%edi, %esi
 	movl	%esi, %eax
-	shll	$8, %eax
-	leal	32768(%rax,%rsi), %eax
+	shll	$8, %esi
+	leal	32768(%rsi,%rax), %eax
 	retq
 
 func0000000000000004:
@@ -40,7 +40,7 @@ func00000000000000ff:
 	imull	%edx, %esi
 	addl	%edi, %esi
 	movl	%esi, %eax
-	shll	$8, %eax
-	leal	256(%rax,%rsi), %eax
+	shll	$8, %esi
+	leal	256(%rsi,%rax), %eax
 	retq
 

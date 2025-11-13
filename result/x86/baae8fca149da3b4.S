@@ -1,8 +1,8 @@
 func0000000000000027:
 	movl	%edi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdi,%rax), %eax
+	incl	%edi
+	shrl	$31, %edi
+	leal	1(%rax,%rdi), %eax
 	movl	%eax, %ecx
 	sarl	%ecx
 	sarl	$31, %eax

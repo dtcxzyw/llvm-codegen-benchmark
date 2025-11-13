@@ -1,18 +1,18 @@
 func0000000000000000:
 	subl	%esi, %edi
 	movl	%edi, %eax
-	addl	$-350, %eax
-	shrl	$31, %eax
-	leal	-350(%rdi,%rax), %eax
+	addl	$-350, %edi
+	shrl	$31, %edi
+	leal	-350(%rax,%rdi), %eax
 	sarl	%eax
 	retq
 
 func000000000000000a:
 	subl	%esi, %edi
 	movl	%edi, %eax
-	incl	%eax
-	shrl	$31, %eax
-	leal	1(%rdi,%rax), %eax
+	incl	%edi
+	shrl	$31, %edi
+	leal	1(%rax,%rdi), %eax
 	sarl	%eax
 	retq
 

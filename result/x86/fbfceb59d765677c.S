@@ -8,9 +8,9 @@ func0000000000000000:
 
 func0000000000000008:
 	movl	%edi, %eax
-	addl	$-2, %eax
-	shrl	$31, %eax
-	leal	-2(%rdi,%rax), %eax
+	addl	$-2, %edi
+	shrl	$31, %edi
+	leal	-2(%rax,%rdi), %eax
 	shrl	%eax
 	retq
 

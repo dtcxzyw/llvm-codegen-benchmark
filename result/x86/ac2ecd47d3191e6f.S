@@ -1,8 +1,9 @@
 func0000000000000005:
-	shll	$6, %esi
-	leal	63(%rsi,%rdi), %ecx
 	movl	%esi, %eax
+	shll	$6, %eax
+	movl	%eax, %ecx
 	addl	%edi, %eax
+	leal	63(%rcx,%rdi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$-64, %ecx
 	subl	%ecx, %eax

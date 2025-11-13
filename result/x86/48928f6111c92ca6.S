@@ -13,18 +13,20 @@ func0000000000000004:
 	retq
 
 func0000000000000005:
-	leal	15(%rdi,%rsi), %ecx
 	movl	%edi, %eax
+	movl	%edi, %ecx
 	addl	%esi, %eax
+	leal	15(%rcx,%rsi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$240, %ecx
 	subl	%ecx, %eax
 	retq
 
 func0000000000000001:
-	leal	7(%rdi,%rsi), %ecx
 	movl	%edi, %eax
+	movl	%edi, %ecx
 	addl	%esi, %eax
+	leal	7(%rcx,%rsi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$248, %ecx
 	subl	%ecx, %eax

@@ -8,10 +8,10 @@ func0000000000000048:
 
 func0000000000000042:
 	movl	%edi, %eax
-	andl	$509, %eax
-	cmpw	$5, %ax
+	andl	$509, %edi
+	cmpw	$5, %di
 	sete	%cl
-	cmpw	$9, %di
+	cmpw	$9, %ax
 	sete	%al
 	orb	%cl, %al
 	retq
@@ -53,10 +53,10 @@ func0000000000000308:
 
 func0000000000000118:
 	movl	%edi, %eax
-	andl	$65528, %eax
-	cmpw	$48, %ax
-	setne	%cl
+	andl	$65528, %edi
 	cmpw	$48, %di
+	setne	%cl
+	cmpw	$48, %ax
 	setb	%al
 	orb	%cl, %al
 	retq

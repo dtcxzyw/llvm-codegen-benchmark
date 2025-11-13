@@ -1,12 +1,12 @@
 func0000000000000000:
 	movl	%edi, %eax
-	sarl	%eax
-	leal	200(%rdi,%rax), %eax
+	sarl	%edi
+	leal	200(%rax,%rdi), %eax
 	retq
 
 func0000000000000005:
 	movl	%edi, %eax
-	sarl	$31, %eax
-	leal	8192(%rdi,%rax), %eax
+	sarl	$31, %edi
+	leal	8192(%rax,%rdi), %eax
 	retq
 

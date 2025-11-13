@@ -3,8 +3,9 @@ func0000000000000001:
 	shrl	$31, %eax
 	addl	%esi, %eax
 	sarl	%eax
-	leal	3(%rax,%rdi), %ecx
+	movl	%eax, %ecx
 	addl	%edi, %eax
+	leal	3(%rcx,%rdi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$-4, %ecx
 	subl	%ecx, %eax

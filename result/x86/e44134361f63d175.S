@@ -22,11 +22,11 @@ func0000000000000004:
 	addl	%edx, %eax
 	shrl	%eax
 	addl	%edi, %eax
-	movq	%rsi, %rcx
-	shrq	$63, %rcx
-	addl	%esi, %ecx
-	shrl	%ecx
-	subl	%ecx, %eax
+	movl	%esi, %ecx
+	shrq	$63, %rsi
+	addl	%ecx, %esi
+	shrl	%esi
+	subl	%esi, %eax
 	andl	$63, %eax
 	retq
 

@@ -14,8 +14,8 @@ func0000000000000000:
 func000000000000007e:
 	addl	%esi, %edi
 	movl	%edi, %eax
-	shll	$8, %eax
-	leal	256(%rax,%rdi), %eax
+	shll	$8, %edi
+	leal	256(%rdi,%rax), %eax
 	shrl	$16, %eax
 	retq
 

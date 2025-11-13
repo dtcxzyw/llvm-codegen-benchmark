@@ -6,8 +6,8 @@ func0000000000000000:
 
 func00000000000000f0:
 	movl	%esi, %eax
-	shll	$7, %eax
-	leal	(%rax,%rsi,2), %eax
+	shll	$7, %esi
+	leal	(%rsi,%rax,2), %eax
 	addl	%edi, %eax
 	addb	$-127, %al
 	retq

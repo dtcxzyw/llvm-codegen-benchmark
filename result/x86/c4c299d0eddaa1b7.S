@@ -29,10 +29,10 @@ func00000000000000a1:
 	movq	%rsi, %rax
 	movabsq	$6148914691236517206, %rcx
 	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	addl	%edx, %eax
-	cltq
+	movl	%edx, %eax
+	shrq	$63, %rdx
+	addl	%eax, %edx
+	movslq	%edx, %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al

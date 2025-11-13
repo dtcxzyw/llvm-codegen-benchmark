@@ -1,8 +1,9 @@
 func0000000000000000:
-	andl	$31, %esi
-	leal	3(%rsi,%rdi), %ecx
 	movl	%esi, %eax
+	andl	$31, %eax
+	movl	%eax, %ecx
 	addl	%edi, %eax
+	leal	3(%rcx,%rdi), %ecx
 	cmovnsl	%eax, %ecx
 	andl	$-4, %ecx
 	subl	%ecx, %eax

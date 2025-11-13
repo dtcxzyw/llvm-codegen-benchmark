@@ -7,9 +7,9 @@ func0000000000000000:
 
 func000000000000000a:
 	subq	%rsi, %rdi
-	movq	%rdi, %rax
-	sarq	$63, %rax
-	andnl	%edi, %eax, %eax
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	andnl	%eax, %edi, %eax
 	retq
 
 func0000000000000008:

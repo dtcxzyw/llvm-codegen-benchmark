@@ -2,14 +2,14 @@ func0000000000000065:
 	movabsq	$5270498306774157605, %rcx
 	movq	%rdi, %rax
 	imulq	%rcx
-	movq	%rdx, %rcx
-	shrq	$63, %rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
 	sarq	%rdx
-	addq	%rdx, %rcx
-	leaq	(,%rcx,8), %rax
-	subq	%rax, %rcx
-	addq	%rdi, %rcx
-	movq	%rcx, %rax
+	addq	%rdx, %rax
+	leaq	(,%rax,8), %rcx
+	subq	%rcx, %rax
+	addq	%rdi, %rax
+	movl	%eax, %ecx
 	sarq	$63, %rax
 	andl	$7, %eax
 	addl	%ecx, %eax

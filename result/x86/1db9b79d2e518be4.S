@@ -23,9 +23,9 @@ func000000000000000b:
 
 func0000000000000001:
 	movl	%edi, %eax
-	addl	$-350, %eax
-	shrl	$31, %eax
-	leal	-350(%rdi,%rax), %eax
+	addl	$-350, %edi
+	shrl	$31, %edi
+	leal	-350(%rax,%rdi), %eax
 	sarl	%eax
 	addl	$350, %eax
 	retq

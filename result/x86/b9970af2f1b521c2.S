@@ -15,19 +15,19 @@ func0000000000000021:
 
 func0000000000000026:
 	movl	%edi, %eax
-	incl	%eax
-	movswl	%ax, %ecx
+	incl	%edi
+	movswl	%di, %ecx
 	imull	$-30583, %ecx, %ecx
 	shrl	$16, %ecx
-	leal	1(%rcx,%rdi), %ecx
-	movzwl	%cx, %ecx
-	movswl	%cx, %edx
-	shrl	$15, %ecx
-	sarl	$5, %edx
-	addl	%ecx, %edx
-	imull	$60, %edx, %ecx
-	subl	%ecx, %eax
+	leal	1(%rcx,%rax), %eax
 	movzwl	%ax, %eax
+	movswl	%ax, %ecx
+	shrl	$15, %eax
+	sarl	$5, %ecx
+	addl	%eax, %ecx
+	imull	$60, %ecx, %eax
+	subl	%eax, %edi
+	movzwl	%di, %eax
 	shrl	$15, %eax
 	retq
 

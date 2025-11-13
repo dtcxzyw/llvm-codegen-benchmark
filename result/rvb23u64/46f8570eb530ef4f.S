@@ -19,7 +19,8 @@ func0000000000000004:
 
 func0000000000000001:
 	mul	a0, a0, a1
-	li	a1, 49
-	mulw	a0, a0, a1
+	slli	a1, a0, 4
+	sh1add	a1, a1, a1
+	addw	a0, a0, a1
 	ret
 

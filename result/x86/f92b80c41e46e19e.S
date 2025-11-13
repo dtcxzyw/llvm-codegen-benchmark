@@ -14,24 +14,24 @@ func0000000000000006:
 	retq
 
 func0000000000000000:
-	leal	255(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%esi, %eax
+	addl	%edx, %esi
+	leal	255(%rax,%rdx), %eax
+	cmovnsl	%esi, %eax
 	andl	$-256, %eax
-	subl	%eax, %ecx
-	movslq	%ecx, %rax
+	subl	%eax, %esi
+	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
 
 func0000000000000002:
-	leal	3(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	addl	%edx, %ecx
-	cmovnsl	%ecx, %eax
+	movl	%esi, %eax
+	addl	%edx, %esi
+	leal	3(%rax,%rdx), %eax
+	cmovnsl	%esi, %eax
 	andl	$-4, %eax
-	subl	%eax, %ecx
-	movslq	%ecx, %rax
+	subl	%eax, %esi
+	movslq	%esi, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
 

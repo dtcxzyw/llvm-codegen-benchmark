@@ -1,7 +1,7 @@
 func000000000000008a:
 	movl	%edi, %eax
-	andl	$1, %eax
-	leal	-1(%rax,%rdi), %eax
+	andl	$1, %edi
+	leal	-1(%rdi,%rax), %eax
 	testl	%eax, %eax
 	setg	%al
 	retq

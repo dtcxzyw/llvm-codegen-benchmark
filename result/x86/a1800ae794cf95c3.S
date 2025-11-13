@@ -1,8 +1,8 @@
 func0000000000000007:
 	movl	%edi, %eax
-	shrl	$6, %eax
-	andl	$1, %eax
-	leal	(%rax,%rdi,2), %eax
+	shrl	$6, %edi
+	andl	$1, %edi
+	leal	(%rdi,%rax,2), %eax
 	retq
 
 func0000000000000001:

@@ -9,10 +9,10 @@ func0000000000000186:
 
 func000000000000018c:
 	movl	%edi, %eax
-	andl	$55, %eax
-	cmpw	$23, %ax
+	andl	$55, %edi
+	cmpw	$23, %di
 	setne	%cl
-	cmpw	$24, %di
+	cmpw	$24, %ax
 	setne	%al
 	andb	%cl, %al
 	retq
