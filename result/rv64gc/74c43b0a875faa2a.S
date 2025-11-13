@@ -16,9 +16,9 @@ func00000000000001c1:
 func00000000000001e1:
 	bnez	a0, .LBB2_2
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a0
-	add	a0, a2, a1
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 8
 .LBB2_2:
 	ret

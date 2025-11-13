@@ -5,8 +5,7 @@ func000000000000002c:
 	ret
 
 func000000000000002a:
-	add	x8, x1, w2, sxtw
-	cmp	x8, #0
+	cmn	x1, w2, sxtw
 	cset	w8, gt
 	and	w0, w8, w0
 	ret

@@ -10,8 +10,8 @@ func00000000000000d5:
 	sub	a2, a2, a1
 	add	a0, a0, a2
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	sub	a0, a0, a1
+	slli	a0, a0, 2
+	add	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
 

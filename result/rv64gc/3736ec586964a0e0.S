@@ -2,8 +2,8 @@ func000000000000003f:
 	slli	a1, a1, 32
 	slli	a0, a0, 2
 	srli	a3, a1, 30
-	srli	a1, a1, 28
-	sub	a1, a1, a3
+	srli	a1, a1, 29
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 28

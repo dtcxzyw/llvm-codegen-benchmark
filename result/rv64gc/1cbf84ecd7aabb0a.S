@@ -23,8 +23,8 @@ func000000000000005f:
 	lui	a4, 16
 	sext.w	a1, a1
 	slli	a5, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a5
+	slli	a1, a1, 3
+	add	a1, a1, a5
 	srliw	a5, a2, 24
 	addi	a4, a4, -256
 	and	a3, a3, a4

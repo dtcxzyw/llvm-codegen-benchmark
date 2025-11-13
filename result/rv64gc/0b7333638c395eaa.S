@@ -32,8 +32,8 @@ func0000000000000008:
 
 func000000000000004a:
 	slli	a1, a0, 5
-	slli	a0, a0, 7
-	sub	a0, a0, a1
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	sgtz	a0, a0
 	ret
 
@@ -47,8 +47,8 @@ func0000000000000018:
 
 func0000000000000046:
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret
 
@@ -66,15 +66,15 @@ func0000000000000024:
 
 func0000000000000011:
 	slli	a1, a0, 4
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000038:
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	sub	a0, a0, a1
+	slli	a0, a0, 2
+	add	a0, a0, a1
 	srli	a0, a0, 58
 	snez	a0, a0
 	ret

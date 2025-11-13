@@ -1,7 +1,7 @@
 func00000000000007e1:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 24
 	xor	a0, a0, a1
@@ -10,8 +10,8 @@ func00000000000007e1:
 
 func0000000000000061:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 12
 	xor	a0, a0, a1
@@ -20,8 +20,8 @@ func0000000000000061:
 
 func0000000000000361:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 24
 	xor	a0, a0, a1
@@ -30,8 +30,8 @@ func0000000000000361:
 
 func00000000000005e4:
 	slli	a3, a2, 5
-	slli	a2, a2, 7
-	sub	a2, a2, a3
+	slli	a2, a2, 6
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 96
 	sltu	a0, a0, a1
@@ -39,8 +39,8 @@ func00000000000005e4:
 
 func0000000000000261:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 24
 	xor	a0, a0, a1
@@ -49,8 +49,8 @@ func0000000000000261:
 
 func00000000000007ec:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 6
 	xor	a0, a0, a1
@@ -59,8 +59,8 @@ func00000000000007ec:
 
 func0000000000000661:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 12
 	xor	a0, a0, a1
@@ -78,8 +78,8 @@ func0000000000000364:
 
 func00000000000001e1:
 	slli	a3, a2, 4
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 48
 	xor	a0, a0, a1
@@ -108,8 +108,8 @@ func0000000000000161:
 
 func00000000000003e4:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 12
 	sltu	a0, a0, a1
@@ -117,8 +117,8 @@ func00000000000003e4:
 
 func0000000000000601:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 24
 	xor	a0, a0, a1

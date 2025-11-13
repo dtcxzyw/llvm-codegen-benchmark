@@ -36,33 +36,33 @@ func000000000000001a:
 	ret
 
 func0000000000000030:
-	slli	a2, a0, 4
+	slli	a2, a0, 3
 	slli	a0, a0, 2
-	sub	a2, a2, a0
+	add	a2, a2, a0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func0000000000000010:
-	slli	a2, a0, 4
+	slli	a2, a0, 3
 	slli	a0, a0, 2
-	sub	a2, a2, a0
+	add	a2, a2, a0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func0000000000000000:
-	slli	a2, a0, 5
+	slli	a2, a0, 4
 	slli	a0, a0, 3
-	sub	a2, a2, a0
+	add	a2, a2, a0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000002f:
-	slli	a2, a0, 4
+	slli	a2, a0, 3
 	slli	a0, a0, 2
-	sub	a2, a2, a0
+	add	a2, a2, a0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

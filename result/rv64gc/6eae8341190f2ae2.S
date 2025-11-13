@@ -1,8 +1,8 @@
 func0000000000000008:
 	sext.w	a1, a1
 	slli	a3, a2, 4
-	slli	a2, a2, 6
-	subw	a2, a2, a3
+	slli	a2, a2, 5
+	addw	a2, a2, a3
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

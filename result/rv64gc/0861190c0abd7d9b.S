@@ -7,8 +7,8 @@ func000000000000001e:
 	mul	a1, a1, a2
 	sub	a1, a1, a0
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func000000000000001f:
@@ -20,8 +20,8 @@ func000000000000001f:
 	mul	a1, a1, a2
 	sub	a1, a1, a0
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000014:
@@ -61,8 +61,8 @@ func0000000000000018:
 	mul	a1, a1, a2
 	sub	a1, a1, a0
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000010:
@@ -74,8 +74,8 @@ func0000000000000010:
 	mul	a1, a1, a2
 	sub	a1, a1, a0
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000013:
@@ -87,7 +87,7 @@ func0000000000000013:
 	mul	a1, a1, a2
 	sub	a1, a1, a0
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 

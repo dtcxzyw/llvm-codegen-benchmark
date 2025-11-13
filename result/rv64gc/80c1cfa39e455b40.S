@@ -30,8 +30,8 @@ func0000000000000000:
 
 func00000000000000ac:
 	slli	a3, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a3
+	slli	a1, a1, 4
+	add	a1, a1, a3
 	sub	a0, a0, a2
 	sub	a0, a0, a1
 	ret

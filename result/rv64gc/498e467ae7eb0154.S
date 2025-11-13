@@ -31,8 +31,8 @@ func000000000000001d:
 
 func0000000000000000:
 	slli	a2, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	ori	a0, a0, 48
 	addw	a0, a0, a1
 	ret

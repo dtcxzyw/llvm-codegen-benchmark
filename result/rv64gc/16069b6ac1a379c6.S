@@ -1,8 +1,8 @@
 func0000000000000005:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	lui	a2, 699051
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	addi	a1, a2, -1365
 	srai	a0, a0, 3
 	slli	a2, a1, 32

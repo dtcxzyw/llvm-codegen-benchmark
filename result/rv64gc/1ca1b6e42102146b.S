@@ -26,8 +26,8 @@ func000000000000004f:
 	li	a2, 8
 .LBB1_3:
 	slli	a3, a1, 6
-	slli	a1, a1, 8
-	sub	a1, a1, a3
+	slli	a1, a1, 7
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

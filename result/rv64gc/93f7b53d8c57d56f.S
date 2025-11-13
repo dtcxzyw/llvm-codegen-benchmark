@@ -33,9 +33,9 @@ func00000000000001ff:
 
 func000000000000018c:
 	slli	a3, a1, 6
-	slli	a1, a1, 8
+	slli	a1, a1, 7
 	slli	a0, a0, 32
-	sub	a1, a1, a3
+	add	a1, a1, a3
 	add	a1, a1, a2
 	srli	a0, a0, 30
 	add	a0, a0, a1

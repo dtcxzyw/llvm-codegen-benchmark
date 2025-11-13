@@ -15,8 +15,8 @@ func0000000000000001:
 func0000000000000019:
 	add	a0, a0, a1
 	slli	a1, a0, 32
-	slli	a0, a0, 34
-	sub	a0, a0, a1
+	slli	a0, a0, 33
+	add	a0, a0, a1
 	srai	a0, a0, 32
 	ret
 

@@ -37,10 +37,10 @@ func0000000000000031:
 	srli	a3, a2, 63
 	srai	a2, a2, 33
 	add	a2, a2, a3
-	slli	a3, a2, 4
-	slli	a2, a2, 2
-	sub	a2, a2, a3
-	addw	a1, a1, a2
+	slli	a3, a2, 2
+	slli	a2, a2, 3
+	add	a2, a2, a3
+	subw	a1, a1, a2
 	slti	a1, a1, 2
 	addw	a0, a0, a1
 	ret

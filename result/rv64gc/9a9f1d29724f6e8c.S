@@ -2,8 +2,8 @@ func0000000000000000:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a0, 24
@@ -13,8 +13,8 @@ func0000000000000006:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a0, 24
@@ -43,8 +43,8 @@ func0000000000000005:
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 .LBB4_2:
 	li	a0, 1008
@@ -65,8 +65,8 @@ func0000000000000004:
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
 	slli	a0, a1, 5
-	slli	a1, a1, 7
-	sub	a0, a1, a0
+	slli	a1, a1, 6
+	add	a0, a0, a1
 	ret
 .LBB6_2:
 	li	a0, 48

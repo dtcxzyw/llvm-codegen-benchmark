@@ -16,8 +16,8 @@ func0000000000000001:
 	addi	a3, a3, -256
 	and	a1, a1, a2
 	slli	a2, a1, 8
-	slli	a1, a1, 10
-	sub	a1, a1, a2
+	slli	a1, a1, 9
+	add	a1, a1, a2
 	slli	a2, a3, 32
 	add	a2, a2, a3
 	and	a1, a1, a2

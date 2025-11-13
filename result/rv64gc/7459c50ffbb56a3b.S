@@ -23,8 +23,8 @@ func0000000000000000:
 func0000000000000003:
 	add	a0, a0, a1
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 
@@ -62,8 +62,8 @@ func000000000000003f:
 func000000000000003c:
 	add	a0, a0, a1
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
 
@@ -78,8 +78,8 @@ func0000000000000012:
 func0000000000000035:
 	add	a0, a0, a1
 	slli	a1, a0, 4
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	addi	a0, a0, 144
 	ret
 

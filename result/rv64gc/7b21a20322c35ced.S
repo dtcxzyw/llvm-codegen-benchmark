@@ -1,24 +1,24 @@
 func0000000000000081:
 	mul	a0, a0, a2
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000d5:
 	mul	a0, a0, a2
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000c0:
 	mul	a1, a1, a2
 	slli	a2, a0, 7
-	slli	a0, a0, 9
-	sub	a0, a0, a2
+	slli	a0, a0, 8
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

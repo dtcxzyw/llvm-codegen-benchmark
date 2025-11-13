@@ -1,8 +1,8 @@
 func000000000000001a:
 	slli	a1, a0, 2
-	slli	a0, a0, 4
+	slli	a0, a0, 3
 	lui	a2, 699051
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	addi	a1, a2, -1365
 	addi	a0, a0, -12
 	slli	a2, a1, 32
@@ -13,9 +13,9 @@ func000000000000001a:
 
 func000000000000000b:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	lui	a2, 699051
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	addi	a1, a2, -1365
 	addi	a0, a0, -24
 	slli	a2, a1, 32
@@ -52,10 +52,10 @@ func0000000000000014:
 	.quad	3234497591006606311
 func000000000000001e:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	addi	a0, a0, 365
 	srli	a0, a0, 1
 	mulhu	a0, a0, a2
@@ -77,9 +77,9 @@ func000000000000001b:
 
 func0000000000000008:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	lui	a2, 699051
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	addi	a1, a2, -1365
 	addi	a0, a0, -24
 	slli	a2, a1, 32

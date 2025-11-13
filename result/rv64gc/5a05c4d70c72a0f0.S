@@ -5,8 +5,9 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 3
-	neg	a0, a0
+	slli	a1, a0, 3
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	andi	a0, a0, 24
 	ret
 

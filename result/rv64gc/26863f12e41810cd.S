@@ -6,9 +6,9 @@ func0000000000000000:
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	andi	a1, a0, -2
-	slli	a0, a0, 2
-	andi	a0, a0, -8
-	sub	a0, a0, a1
+	slli	a0, a0, 1
+	andi	a0, a0, -4
+	add	a0, a0, a1
 	ret
 
 func0000000000000002:
@@ -58,8 +58,8 @@ func000000000000001b:
 	mulhu	a0, a0, a1
 	srli	a0, a0, 1
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 .LCPI5_0:

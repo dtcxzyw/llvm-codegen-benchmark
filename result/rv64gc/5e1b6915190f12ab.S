@@ -13,8 +13,8 @@ func00000000000000ff:
 	add	a0, a0, a1
 	lui	a1, 128
 	srli	a3, a2, 31
-	srli	a2, a2, 29
-	sub	a2, a2, a3
+	srli	a2, a2, 30
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

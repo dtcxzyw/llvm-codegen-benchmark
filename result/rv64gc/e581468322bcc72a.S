@@ -37,9 +37,9 @@ func0000000000000181:
 func0000000000000166:
 	bltz	a1, .LBB4_2
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a0
-	add	a0, a2, a1
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 8
 .LBB4_2:
 	ret

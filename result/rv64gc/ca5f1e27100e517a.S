@@ -66,8 +66,8 @@ func000000000000000c:
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a2, a1, 23
-	srli	a1, a1, 21
-	sub	a1, a1, a2
+	srli	a1, a1, 22
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1805

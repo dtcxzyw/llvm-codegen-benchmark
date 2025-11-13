@@ -33,8 +33,8 @@ func0000000000000761:
 
 func00000000000007e1:
 	slli	a3, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a3
+	slli	a1, a1, 4
+	add	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 8
 	addi	a0, a0, 24

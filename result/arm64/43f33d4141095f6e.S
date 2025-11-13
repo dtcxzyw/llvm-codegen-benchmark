@@ -4,8 +4,8 @@ func0000000000000001:
 	movk	x8, #43691
 	umulh	x8, x0, x8
 	lsr	x8, x8, #3
-	add	x8, x8, x8, lsl #1
-	subs	x8, x0, x8, lsl #2
+	msub	x8, x8, x9, x0
+	cmp	x8, #0
 	csel	x0, x9, x8, eq
 	ret
 

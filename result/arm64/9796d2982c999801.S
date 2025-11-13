@@ -95,8 +95,9 @@ func0000000000000181:
 	ret
 
 func00000000000000ca:
+	sub	x8, x1, x2
 	cmn	x0, #1
-	ccmp	x1, x2, #0, gt
+	ccmp	x8, #0, #0, gt
 	cset	w0, mi
 	ret
 

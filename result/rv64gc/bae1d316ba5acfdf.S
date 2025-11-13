@@ -2,10 +2,10 @@
 	.quad	230584300921369395
 func0000000000000288:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
+	slli	a2, a2, 3
 	lui	a4, %hi(.LCPI0_0)
 	ld	a4, %lo(.LCPI0_0)(a4)
-	sub	a2, a2, a3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	sltu	a0, a4, a0

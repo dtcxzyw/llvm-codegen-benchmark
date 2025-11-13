@@ -2,8 +2,8 @@ func000000000000006b:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -21,8 +21,8 @@ func000000000000003b:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -32,8 +32,8 @@ func000000000000001a:
 	slli	a3, a2, 1
 	addw	a2, a2, a3
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

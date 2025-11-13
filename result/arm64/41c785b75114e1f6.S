@@ -39,8 +39,7 @@ func00000000000000a6:
 func00000000000000aa:
 	sub	x8, x1, x2
 	lsl	x8, x8, #3
-	add	x8, x8, w0, uxtw
-	cmp	x8, #0
+	cmn	x8, w0, uxtw
 	cset	w0, gt
 	ret
 

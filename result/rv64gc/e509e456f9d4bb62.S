@@ -7,24 +7,24 @@ func000000000000003f:
 
 func0000000000000001:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	mul	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func0000000000000015:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	mul	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func000000000000000d:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	mul	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -32,8 +32,8 @@ func000000000000000d:
 func0000000000000000:
 	mul	a1, a1, a2
 	slli	a2, a0, 7
-	slli	a0, a0, 9
-	sub	a0, a0, a2
+	slli	a0, a0, 8
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

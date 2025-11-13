@@ -22,15 +22,15 @@ func0000000000000001:
 func0000000000000003:
 	addiw	a0, a0, -2
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	sub	a0, a0, a1
+	slli	a0, a0, 2
+	add	a0, a0, a1
 	ret
 
 func0000000000000009:
 	addiw	a0, a0, 1
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	ret
 
 .LCPI5_0:

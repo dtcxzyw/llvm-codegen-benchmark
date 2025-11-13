@@ -56,9 +56,8 @@ func0000000000000026:
 	add	w8, w8, w9
 	asr	w10, w8, #2
 	add	w8, w10, w8, lsr #31
-	lsl	w10, w8, #3
-	sub	w8, w10, w8
-	cmp	w9, w8
+	sub	w8, w8, w8, lsl #3
+	cmn	w9, w8
 	mov	w8, #8
 	csinc	w0, w8, wzr, mi
 	ret

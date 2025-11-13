@@ -7,9 +7,8 @@ func0000000000000026:
 	add	w9, w9, w8
 	asr	w10, w9, #2
 	add	w9, w10, w9, lsr #31
-	lsl	w10, w9, #3
-	sub	w9, w10, w9
-	subs	w8, w8, w9
+	sub	w9, w9, w9, lsl #3
+	adds	w8, w8, w9
 	csel	w0, w0, w8, mi
 	ret
 
@@ -22,9 +21,8 @@ func0000000000000006:
 	add	w9, w9, w8
 	asr	w10, w9, #2
 	add	w9, w10, w9, lsr #31
-	lsl	w10, w9, #3
-	sub	w9, w10, w9
-	subs	w8, w8, w9
+	sub	w9, w9, w9, lsl #3
+	adds	w8, w8, w9
 	csel	w0, w0, w8, mi
 	ret
 

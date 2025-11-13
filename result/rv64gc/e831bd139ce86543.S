@@ -2,8 +2,8 @@ func000000000000007f:
 	sext.w	a2, a2
 	slli	a1, a1, 63
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1

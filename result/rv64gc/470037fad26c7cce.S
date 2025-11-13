@@ -4,9 +4,9 @@ func0000000000000003:
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	srli	a1, a2, 28
-	srli	a2, a2, 26
-	sub	a2, a2, a1
-	add	a0, a0, a2
+	srli	a2, a2, 27
+	add	a1, a1, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000007:

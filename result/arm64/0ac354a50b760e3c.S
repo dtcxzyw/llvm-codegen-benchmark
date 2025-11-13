@@ -4,8 +4,8 @@ func0000000000000001:
 	movk	w8, #20971, lsl #16
 	umull	x8, w1, w8
 	lsr	x8, x8, #37
-	mul	w8, w8, w9
-	cmp	w1, w8
+	msub	w8, w8, w9, w1
+	cmp	w8, #0
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

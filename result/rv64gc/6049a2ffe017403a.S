@@ -2,8 +2,8 @@ func000000000000003e:
 	andi	a2, a2, 1
 	slli	a0, a0, 4
 	slli	a3, a2, 5
-	slli	a2, a2, 7
-	sub	a2, a2, a3
+	slli	a2, a2, 6
+	or	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 48

@@ -17,8 +17,8 @@ func0000000000000001:
 
 func0000000000000061:
 	slli	a3, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a3
+	slli	a0, a0, 4
+	add	a0, a0, a3
 	add	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

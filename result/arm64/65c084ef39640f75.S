@@ -34,8 +34,9 @@ func00000000000000a6:
 	ret
 
 func00000000000000a1:
+	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w1, w2, #4, ne
+	ccmp	w8, #0, #4, ne
 	cset	w0, eq
 	ret
 
@@ -54,8 +55,9 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
+	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w1, w2, #4, ne
+	ccmp	w8, #0, #4, ne
 	cset	w0, eq
 	ret
 
@@ -88,8 +90,9 @@ func0000000000000188:
 	ret
 
 func00000000000000ac:
+	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w1, w2, #4, ne
+	ccmp	w8, #0, #4, ne
 	cset	w0, ne
 	ret
 

@@ -7,8 +7,7 @@ func000000000000000a:
 
 func0000000000000010:
 	srli	a1, a0, 1
-	slli	a0, a0, 1
-	sub	a0, a0, a1
+	add	a0, a0, a1
 	lui	a1, 32767
 	slli	a1, a1, 5
 	addi	a1, a1, 44

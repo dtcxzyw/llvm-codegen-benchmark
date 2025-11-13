@@ -29,8 +29,7 @@ func0000000000000021:
 	ret
 
 func00000000000000aa:
-	add	w8, w0, w1, uxtb
-	cmp	w8, #0
+	cmn	w0, w1, uxtb
 	cset	w0, gt
 	ret
 
@@ -218,8 +217,7 @@ func0000000000000038:
 	ret
 
 func000000000000006a:
-	add	w8, w0, w1, uxtb
-	cmp	w8, #0
+	cmn	w0, w1, uxtb
 	cset	w0, gt
 	ret
 

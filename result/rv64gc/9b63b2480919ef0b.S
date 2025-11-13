@@ -3,8 +3,8 @@ func0000000000000003:
 	bnez	a0, .LBB0_2
 	slli	a1, a1, 32
 	srli	a0, a1, 29
-	srli	a1, a1, 27
-	sub	a0, a1, a0
+	srli	a1, a1, 28
+	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a0, 3

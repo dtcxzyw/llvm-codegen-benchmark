@@ -29,8 +29,8 @@ func00000000000007e1:
 
 func00000000000007ec:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 4
 	xor	a0, a0, a1
@@ -39,8 +39,8 @@ func00000000000007ec:
 
 func0000000000000201:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 8
 	xor	a0, a0, a1
@@ -49,8 +49,8 @@ func0000000000000201:
 
 func0000000000000604:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	add	a1, a1, a2
 	addi	a1, a1, 6
 	sltu	a0, a0, a1

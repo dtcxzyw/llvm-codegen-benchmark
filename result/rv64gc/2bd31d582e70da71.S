@@ -38,8 +38,8 @@ func0000000000000002:
 
 func0000000000000007:
 	slli	a1, a0, 4
-	slli	a0, a0, 6
-	subw	a0, a0, a1
+	slli	a0, a0, 5
+	addw	a0, a0, a1
 	slli	a0, a0, 2
 	ret
 

@@ -45,16 +45,16 @@ func000000000000000c:
 
 func000000000000004a:
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
 func0000000000000004:
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	subw	a0, a0, a1
+	slli	a0, a0, 2
+	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
 
@@ -73,8 +73,8 @@ func0000000000000018:
 
 func0000000000000046:
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	subw	a0, a0, a1
+	slli	a0, a0, 2
+	addw	a0, a0, a1
 	lui	a1, 524288
 	addiw	a1, a1, -6
 	slt	a0, a0, a1

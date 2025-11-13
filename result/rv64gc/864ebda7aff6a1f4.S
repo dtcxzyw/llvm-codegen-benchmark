@@ -10,8 +10,8 @@ func0000000000000046:
 	sext.w	a1, a1
 	bltz	a1, .LBB1_2
 	slli	a0, a2, 1
-	slli	a2, a2, 3
-	sub	a0, a2, a0
+	slli	a2, a2, 2
+	add	a0, a0, a2
 .LBB1_2:
 	ret
 

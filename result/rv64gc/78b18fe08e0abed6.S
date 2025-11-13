@@ -5,8 +5,8 @@ func0000000000000003:
 .LBB0_2:
 	slli	a1, a1, 32
 	srli	a0, a1, 30
-	srli	a1, a1, 28
-	sub	a0, a1, a0
+	srli	a1, a1, 29
+	add	a0, a0, a1
 	ret
 
 func0000000000000007:
@@ -16,8 +16,8 @@ func0000000000000007:
 .LBB1_2:
 	sext.w	a1, a1
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000002:

@@ -26,8 +26,8 @@ func0000000000000055:
 func000000000000007f:
 	zext.b	a1, a1
 	slli	a2, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	lui	a2, 8
 	addi	a2, a2, 92
 	add	a0, a0, a2

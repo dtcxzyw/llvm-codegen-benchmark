@@ -5,7 +5,7 @@ func0000000000000001:
 	mv	a0, a1
 .LBB0_2:
 	slli	a1, a0, 6
-	slli	a0, a0, 8
-	sub	a0, a0, a1
+	slli	a0, a0, 7
+	add	a0, a0, a1
 	ret
 

@@ -13,8 +13,8 @@ func00000000000007f4:
 
 func0000000000000548:
 	slli	a3, a2, 4
-	slli	a2, a2, 6
-	sub	a2, a2, a3
+	slli	a2, a2, 5
+	add	a2, a2, a3
 	li	a3, 1
 	add	a1, a1, a2
 	bltu	a3, a0, .LBB1_2

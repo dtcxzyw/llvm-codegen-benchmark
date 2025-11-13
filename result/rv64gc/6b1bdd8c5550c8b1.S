@@ -1,12 +1,10 @@
 func0000000000000043:
-	slli	a3, a2, 5
+	slli	a3, a2, 4
 	slli	a2, a2, 3
 	add	a0, a0, a1
-	addi	a2, a2, 24
-	addi	a1, a3, 96
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
+	add	a2, a2, a3
+	add	a0, a0, a2
+	addi	a0, a0, 80
 	ret
 
 func0000000000000040:

@@ -11,7 +11,7 @@ func000000000000002f:
 .LBB0_2:
 	add	a1, a1, a2
 	slli	a0, a1, 2
-	slli	a1, a1, 4
-	sub	a0, a1, a0
+	slli	a1, a1, 3
+	add	a0, a0, a1
 	ret
 

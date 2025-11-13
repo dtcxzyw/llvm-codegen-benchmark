@@ -6,9 +6,8 @@ func0000000000000026:
 	add	w8, w8, w0
 	asr	w9, w8, #2
 	add	w8, w9, w8, lsr #31
-	lsl	w9, w8, #3
-	sub	w8, w9, w8
-	subs	w8, w0, w8
+	sub	w8, w8, w8, lsl #3
+	adds	w8, w0, w8
 	add	w9, w8, #7
 	csel	w0, w9, w8, mi
 	ret

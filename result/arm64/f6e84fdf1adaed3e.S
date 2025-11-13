@@ -5,8 +5,8 @@ func000000000000002a:
 	movk	w8, #20971, lsl #16
 	umull	x8, w1, w8
 	lsr	x8, x8, #37
-	mul	w8, w8, w9
-	ccmp	w1, w8, #0, gt
+	msub	w8, w8, w9, w1
+	ccmp	w8, #0, #0, gt
 	cset	w0, eq
 	ret
 

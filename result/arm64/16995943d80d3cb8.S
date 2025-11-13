@@ -1,7 +1,7 @@
 func0000000000000001:
 	udiv	x8, x1, x2
-	mul	x8, x8, x2
-	cmp	x1, x8
+	msub	x8, x8, x2, x1
+	cmp	x8, #0
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

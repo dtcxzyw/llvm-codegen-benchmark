@@ -105,7 +105,8 @@ func000000000000014a:
 	ret
 
 func0000000000000026:
-	cmp	x1, x2
+	sub	x8, x1, x2
+	cmp	x8, #0
 	ccmp	w0, #0, #0, mi
 	cset	w0, eq
 	ret

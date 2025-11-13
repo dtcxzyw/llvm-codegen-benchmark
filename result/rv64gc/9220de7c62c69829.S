@@ -19,8 +19,8 @@ func00000000000001e8:
 func00000000000001e9:
 	slli	a1, a1, 32
 	srli	a2, a1, 30
-	srli	a1, a1, 28
-	sub	a1, a1, a2
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	addi	a1, a1, 24
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

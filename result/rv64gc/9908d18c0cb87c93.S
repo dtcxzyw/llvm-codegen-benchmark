@@ -4,8 +4,8 @@ func000000000000003a:
 
 func000000000000003f:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 

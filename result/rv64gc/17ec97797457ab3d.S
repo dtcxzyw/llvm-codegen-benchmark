@@ -44,8 +44,8 @@ func0000000000000004:
 
 func00000000000001e9:
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	addi	a1, a1, 24
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
@@ -68,8 +68,8 @@ func000000000000000c:
 
 func0000000000000144:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
@@ -94,8 +94,8 @@ func00000000000001f9:
 
 func00000000000001f4:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	addi	a1, a1, 4
 	sltu	a0, a0, a1
 	ret

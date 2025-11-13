@@ -3,8 +3,8 @@ func0000000000000005:
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	srai	a1, a0, 29
-	srai	a0, a0, 27
-	sub	a0, a0, a1
+	srai	a0, a0, 28
+	add	a0, a0, a1
 	ret
 
 func0000000000000009:
@@ -29,8 +29,8 @@ func000000000000000b:
 	addi	a0, a0, -1
 	srli	a0, a0, 2
 	slli	a1, a0, 5
-	slli	a0, a0, 7
-	sub	a0, a0, a1
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 
 func0000000000000007:
@@ -38,7 +38,7 @@ func0000000000000007:
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	srai	a1, a0, 30
-	srai	a0, a0, 28
-	sub	a0, a0, a1
+	srai	a0, a0, 29
+	add	a0, a0, a1
 	ret
 

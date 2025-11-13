@@ -1,15 +1,15 @@
 func00000000000001f8:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	sltu	a0, a1, a0
 	ret
 
 func000000000000010c:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	slli	a0, a0, 5
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -24,8 +24,8 @@ func0000000000000004:
 
 func000000000000000c:
 	slli	a2, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a2
+	slli	a1, a1, 5
+	add	a1, a1, a2
 	slli	a0, a0, 4
 	xor	a0, a0, a1
 	snez	a0, a0

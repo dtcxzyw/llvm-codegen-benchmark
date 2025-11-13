@@ -190,19 +190,22 @@ func0000000000000021:
 	ret
 
 func00000000000000ca:
+	sub	w8, w1, w2
 	cmn	w0, #1
-	ccmp	w1, w2, #0, gt
+	ccmp	w8, #0, #0, gt
 	cset	w0, mi
 	ret
 
 func00000000000000cc:
+	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w1, w2, #0, ne
+	ccmp	w8, #0, #0, ne
 	cset	w0, mi
 	ret
 
 func0000000000000146:
-	cmp	w1, w2
+	sub	w8, w1, w2
+	cmp	w8, #0
 	ccmp	w0, #0, #4, mi
 	cset	w0, gt
 	ret

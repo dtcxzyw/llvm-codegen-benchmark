@@ -1,8 +1,8 @@
 func000000000000001f:
 	or	a0, a0, a1
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addiw	a0, a0, 12
 	ret
 

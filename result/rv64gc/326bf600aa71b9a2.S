@@ -28,8 +28,8 @@ func0000000000000601:
 
 func0000000000000761:
 	slli	a3, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a3
+	slli	a1, a1, 5
+	add	a1, a1, a3
 	add	a1, a1, a2
 	addi	a1, a1, 152
 	xor	a0, a0, a1

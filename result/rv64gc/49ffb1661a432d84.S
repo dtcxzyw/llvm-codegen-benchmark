@@ -21,8 +21,8 @@ func0000000000000037:
 .LBB1_2:
 	sext.w	a0, a0
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 
 func000000000000000a:
@@ -54,7 +54,7 @@ func000000000000000b:
 .LBB4_2:
 	slli	a0, a0, 32
 	srli	a1, a0, 29
-	srli	a0, a0, 27
-	sub	a0, a0, a1
+	srli	a0, a0, 28
+	add	a0, a0, a1
 	ret
 

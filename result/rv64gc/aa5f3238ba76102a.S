@@ -104,16 +104,16 @@ func00000000000000cf:
 	beqz	a2, .LBB7_2
 	li	a2, 6
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB7_2:
 	li	a2, 8
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -123,16 +123,16 @@ func00000000000000cb:
 	beqz	a2, .LBB8_2
 	li	a2, 6
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 .LBB8_2:
 	li	a2, 8
 	slli	a3, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -140,9 +140,9 @@ func00000000000000cb:
 func00000000000000af:
 	sext.w	a2, a2
 	slli	a3, a1, 3
-	slli	a1, a1, 5
+	slli	a1, a1, 4
 	sgtz	a2, a2
-	sub	a1, a1, a3
+	add	a1, a1, a3
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2

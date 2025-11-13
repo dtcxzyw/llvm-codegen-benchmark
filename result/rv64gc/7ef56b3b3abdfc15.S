@@ -22,11 +22,11 @@ func0000000000000048:
 func00000000000000c1:
 	slli	a2, a2, 35
 	srli	a2, a2, 35
-	neg	a2, a2
-	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
-	add	a1, a1, a2
+	neg	a3, a2
+	slli	a2, a2, 2
+	slli	a3, a3, 3
+	sub	a1, a1, a2
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

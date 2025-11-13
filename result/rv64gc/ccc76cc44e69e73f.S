@@ -19,21 +19,21 @@ func0000000000000030:
 
 func000000000000003e:
 	slli	a3, a1, 6
-	slli	a1, a1, 8
-	sub	a1, a1, a3
+	slli	a1, a1, 7
+	add	a1, a1, a3
 	slli	a3, a0, 4
-	slli	a0, a0, 6
+	slli	a0, a0, 5
 	add	a1, a1, a2
-	sub	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 232
 	ret
 
 func000000000000003a:
 	slli	a3, a1, 7
-	slli	a1, a1, 9
+	slli	a1, a1, 8
 	slli	a0, a0, 2
-	sub	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 48

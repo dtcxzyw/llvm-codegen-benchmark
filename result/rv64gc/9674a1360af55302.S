@@ -4,8 +4,8 @@ func0000000000000007:
 	mv	a1, a0
 .LBB0_2:
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000000:
@@ -14,8 +14,8 @@ func0000000000000000:
 	mv	a1, a0
 .LBB1_2:
 	slli	a0, a1, 4
-	slli	a1, a1, 6
-	sub	a0, a1, a0
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000008:
@@ -24,8 +24,8 @@ func0000000000000008:
 	mv	a0, a1
 .LBB2_2:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000018:
@@ -34,8 +34,8 @@ func0000000000000018:
 	mv	a1, a0
 .LBB3_2:
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 
 func0000000000000004:
@@ -44,7 +44,7 @@ func0000000000000004:
 	mv	a0, a1
 .LBB4_2:
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	ret
 

@@ -2,8 +2,8 @@ func0000000000000001:
 	tst	w1, #0x1
 	csinc	w8, w2, wzr, eq
 	sdiv	w9, w0, w8
-	mul	w8, w9, w8
-	cmp	w0, w8
+	msub	w8, w9, w8, w0
+	cmp	w8, #0
 	cset	w0, eq
 	ret
 

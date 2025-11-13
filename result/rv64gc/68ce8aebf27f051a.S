@@ -31,8 +31,8 @@ func00000000000000fb:
 func00000000000000eb:
 	add	a1, a1, a2
 	slli	a2, a0, 9
-	slli	a0, a0, 11
-	sub	a0, a0, a2
+	slli	a0, a0, 10
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 96
 	ret

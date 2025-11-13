@@ -5,11 +5,11 @@ func0000000000000000:
 	slli	a3, a1, 32
 	add	a1, a1, a3
 	mulhu	a1, a0, a1
+	andi	a3, a1, -32
 	srli	a1, a1, 5
-	slli	a3, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a3
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	sub	a3, a3, a0
+	add	a0, a3, a1
 	add	a0, a0, a2
 	ret
 

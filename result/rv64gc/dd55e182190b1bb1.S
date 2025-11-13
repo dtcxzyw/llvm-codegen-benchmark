@@ -8,10 +8,10 @@ func0000000000000000:
 	srli	a2, a0, 63
 	srai	a0, a0, 33
 	add	a0, a0, a2
-	slli	a2, a0, 4
-	slli	a0, a0, 2
-	sub	a0, a0, a2
-	addw	a0, a0, a1
+	slli	a2, a0, 2
+	slli	a0, a0, 3
+	add	a0, a0, a2
+	subw	a0, a1, a0
 	ret
 .LBB0_2:
 	li	a0, 12

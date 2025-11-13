@@ -34,9 +34,9 @@ func000000000000001e:
 func000000000000001f:
 	addi	a2, a2, -2
 	slli	a3, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	seqz	a2, a2
-	sub	a0, a0, a3
+	add	a0, a0, a3
 	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2

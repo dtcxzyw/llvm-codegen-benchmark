@@ -2,8 +2,8 @@ func000000000000007b:
 	li	a2, -96
 	mul	a1, a1, a2
 	slli	a2, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	add	a0, a0, a1
@@ -17,8 +17,8 @@ func000000000000002b:
 	li	a2, -24
 	mul	a1, a1, a2
 	slli	a2, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	add	a0, a0, a1
@@ -32,8 +32,8 @@ func0000000000000069:
 	li	a2, -96
 	mul	a1, a1, a2
 	slli	a2, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	add	a0, a0, a1

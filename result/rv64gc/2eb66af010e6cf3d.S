@@ -90,8 +90,8 @@ func000000000000000c:
 
 func00000000000001aa:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	subw	a1, a1, a2
+	slli	a1, a1, 2
+	addw	a1, a1, a2
 	addiw	a0, a0, 6
 	slt	a0, a1, a0
 	ret
@@ -136,8 +136,8 @@ func0000000000000066:
 
 func0000000000000181:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	subw	a1, a1, a2
+	slli	a1, a1, 2
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -145,8 +145,8 @@ func0000000000000181:
 
 func00000000000000a6:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	subw	a1, a1, a2
+	slli	a1, a1, 2
+	addw	a1, a1, a2
 	addiw	a0, a0, 1
 	slt	a0, a0, a1
 	ret

@@ -6,8 +6,8 @@ func0000000000000002:
 	mulhu	a0, a0, a1
 	srli	a0, a0, 39
 	slli	a1, a0, 6
-	slli	a0, a0, 8
-	subw	a0, a0, a1
+	slli	a0, a0, 7
+	addw	a0, a0, a1
 	ret
 
 func0000000000000003:

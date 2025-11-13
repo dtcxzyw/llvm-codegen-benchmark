@@ -1,23 +1,23 @@
 func00000000000000aa:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	subw	a2, a2, a3
+	slli	a2, a2, 2
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	slt	a0, a2, a0
 	ret
 
 func00000000000000e4:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	subw	a2, a2, a3
+	slli	a2, a2, 2
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
 
 func00000000000000e9:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	subw	a2, a2, a3
+	slli	a2, a2, 3
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
@@ -55,8 +55,8 @@ func00000000000000a6:
 
 func00000000000000a1:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	subw	a2, a2, a3
+	slli	a2, a2, 2
+	addw	a2, a2, a3
 	mulw	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

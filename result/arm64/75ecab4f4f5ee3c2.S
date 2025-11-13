@@ -1,7 +1,6 @@
 func0000000000000026:
-	add	w9, w0, w1, uxtb
 	mov	w8, #255
-	cmp	w9, #0
+	cmn	w0, w1, uxtb
 	csel	w0, wzr, w8, mi
 	ret
 

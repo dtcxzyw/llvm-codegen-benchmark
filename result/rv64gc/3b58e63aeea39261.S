@@ -8,8 +8,8 @@ func0000000000000001:
 
 func000000000000000f:
 	slli	a2, a1, 45
-	slli	a1, a1, 47
-	sub	a1, a1, a2
+	slli	a1, a1, 46
+	add	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

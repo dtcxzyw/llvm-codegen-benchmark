@@ -5,8 +5,8 @@ func000000000000001a:
 	add	a2, a2, a3
 	sraiw	a2, a2, 8
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2

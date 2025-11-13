@@ -24,8 +24,8 @@ func000000000000003f:
 	andi	a3, a0, 1
 	slli	a2, a2, 32
 	srli	a0, a2, 29
-	srli	a2, a2, 27
-	sub	a0, a2, a0
+	srli	a2, a2, 28
+	add	a0, a0, a2
 	add	a0, a0, a1
 	bnez	a3, .LBB2_2
 	li	a1, 8

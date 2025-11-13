@@ -10,8 +10,8 @@ func0000000000000003:
 
 func000000000000003c:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -21
@@ -53,8 +53,8 @@ func000000000000001c:
 
 func0000000000000014:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	lui	a2, 1
 	addi	a1, a1, 15
 	addi	a2, a2, -8

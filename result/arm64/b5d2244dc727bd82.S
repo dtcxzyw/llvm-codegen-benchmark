@@ -21,8 +21,7 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	add	x8, x0, w1, sxth
-	cmp	x8, #0
+	cmn	x0, w1, sxth
 	cset	w0, gt
 	ret
 

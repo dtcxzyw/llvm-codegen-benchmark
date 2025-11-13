@@ -36,8 +36,9 @@ func00000000000000aa:
 	ret
 
 func00000000000000a1:
+	sub	x8, x1, x2
 	cmp	x0, #0
-	ccmp	x1, x2, #4, ne
+	ccmp	x8, #0, #4, ne
 	cset	w0, eq
 	ret
 

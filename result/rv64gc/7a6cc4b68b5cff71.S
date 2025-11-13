@@ -14,16 +14,16 @@ func0000000000000001:
 
 func0000000000000017:
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	subw	a0, a0, a1
+	slli	a0, a0, 2
+	addw	a0, a0, a1
 	slli	a0, a0, 2
 	addi	a0, a0, 40
 	ret
 
 func0000000000000003:
 	slli	a1, a0, 1
-	slli	a0, a0, 3
-	sub	a0, a0, a1
+	slli	a0, a0, 2
+	add	a0, a0, a1
 	addiw	a0, a0, 26
 	slli	a0, a0, 2
 	ret

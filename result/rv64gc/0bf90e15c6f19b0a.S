@@ -35,8 +35,8 @@ func000000000000001f:
 	mv	a1, a2
 .LBB4_2:
 	slli	a2, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a2
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
@@ -46,8 +46,8 @@ func0000000000000010:
 	mv	a1, a2
 .LBB5_2:
 	slli	a2, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a2
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -12
 	ret

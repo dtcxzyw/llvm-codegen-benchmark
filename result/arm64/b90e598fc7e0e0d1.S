@@ -6,8 +6,8 @@ func00000000000000d4:
 	smull	x9, w8, w9
 	asr	x9, x9, #37
 	add	w9, w9, w9, lsr #31
-	mul	w9, w9, w10
-	subs	w8, w8, w9
+	msub	w8, w9, w10, w8
+	cmp	w8, #0
 	csel	w8, w0, w8, mi
 	cmp	w8, #10
 	cset	w0, lo

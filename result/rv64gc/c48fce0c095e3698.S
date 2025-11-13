@@ -18,8 +18,8 @@ func0000000000000048:
 
 func0000000000000058:
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	subw	a1, a1, a2
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 20
@@ -27,8 +27,8 @@ func0000000000000058:
 
 func000000000000005b:
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	subw	a1, a1, a2
+	slli	a1, a1, 3
+	addw	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 24

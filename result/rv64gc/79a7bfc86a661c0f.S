@@ -14,9 +14,9 @@ func00000000000001c1:
 
 func00000000000001e1:
 	slli	a3, a1, 3
-	slli	a1, a1, 5
+	slli	a1, a1, 4
 	addi	a0, a0, -2
-	sub	a1, a1, a3
+	add	a1, a1, a3
 	seqz	a0, a0
 	add	a1, a1, a2
 	addi	a1, a1, 440

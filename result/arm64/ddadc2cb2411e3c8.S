@@ -111,8 +111,7 @@ func00000000000003e1:
 
 func00000000000001ea:
 	add	w8, w0, w1
-	add	w8, w8, w2, uxtb
-	cmp	w8, #0
+	cmn	w8, w2, uxtb
 	cset	w0, gt
 	ret
 

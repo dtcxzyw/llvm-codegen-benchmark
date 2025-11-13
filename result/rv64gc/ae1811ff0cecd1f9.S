@@ -29,8 +29,8 @@ func000000000000000a:
 func000000000000001b:
 	slli	a1, a1, 32
 	srli	a2, a1, 30
-	srli	a1, a1, 28
-	sub	a1, a1, a2
+	srli	a1, a1, 29
+	add	a1, a1, a2
 	srli	a0, a0, 3
 	add	a0, a0, a1
 	ret

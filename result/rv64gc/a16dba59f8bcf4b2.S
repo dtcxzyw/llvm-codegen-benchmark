@@ -38,8 +38,8 @@ func000000000000014f:
 func00000000000001a0:
 	addi	a1, a1, -512
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	lui	a2, 4
 	addi	a2, a2, 184
 	slli	a1, a1, 32

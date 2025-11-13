@@ -4,8 +4,8 @@ func0000000000000004:
 	ret
 .LBB0_2:
 	slli	a1, a0, 4
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000006:

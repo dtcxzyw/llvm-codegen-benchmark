@@ -1,15 +1,15 @@
 func000000000000028c:
-	subs	x8, x1, x2
-	cset	w9, mi
-	cmp	x8, x0
-	csinc	w0, w9, wzr, le
+	sub	x8, x1, x2
+	cmp	x8, #0
+	ccmp	x8, x0, #0, pl
+	cset	w0, gt
 	ret
 
 func0000000000000a8c:
-	subs	x8, x1, x2
-	cset	w9, mi
-	cmp	x8, x0
-	csinc	w0, w9, wzr, le
+	sub	x8, x1, x2
+	cmp	x8, #0
+	ccmp	x8, x0, #0, pl
+	cset	w0, gt
 	ret
 
 func0000000000001210:

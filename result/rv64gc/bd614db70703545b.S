@@ -3,9 +3,9 @@ func0000000000000001:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	srli	a3, a2, 29
-	srli	a2, a2, 27
+	srli	a2, a2, 28
 	addi	a0, a0, -1365
-	sub	a2, a2, a3
+	add	a2, a2, a3
 	slli	a3, a0, 32
 	add	a1, a1, a2
 	srai	a1, a1, 3
@@ -33,9 +33,9 @@ func0000000000000039:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	slli	a3, a2, 4
-	slli	a2, a2, 6
+	slli	a2, a2, 5
 	addi	a0, a0, -1365
-	sub	a2, a2, a3
+	add	a2, a2, a3
 	slli	a3, a0, 32
 	add	a1, a1, a2
 	srai	a1, a1, 4
@@ -48,9 +48,9 @@ func0000000000000021:
 	sub	a1, a1, a0
 	lui	a0, 699051
 	slli	a3, a2, 3
-	slli	a2, a2, 5
+	slli	a2, a2, 4
 	addi	a0, a0, -1365
-	sub	a2, a2, a3
+	add	a2, a2, a3
 	slli	a3, a0, 32
 	add	a1, a1, a2
 	srai	a1, a1, 3

@@ -19,8 +19,8 @@ func0000000000000028:
 func000000000000003f:
 	zext.b	a2, a2
 	slli	a3, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a3
+	slli	a1, a1, 2
+	add	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

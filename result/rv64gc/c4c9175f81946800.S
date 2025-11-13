@@ -90,9 +90,9 @@ func0000000000000050:
 	srai	a2, a2, 4
 	lui	a3, 838861
 	slli	a4, a1, 1
-	slli	a1, a1, 3
+	slli	a1, a1, 2
 	addi	a3, a3, -819
-	sub	a1, a1, a4
+	add	a1, a1, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	mul	a2, a2, a3

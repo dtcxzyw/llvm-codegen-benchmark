@@ -14,8 +14,8 @@ func0000000000000288:
 	lui	a2, %hi(.LCPI1_0)
 	slli	a3, a1, 2
 	ld	a2, %lo(.LCPI1_0)(a2)
-	slli	a1, a1, 4
-	sub	a1, a1, a3
+	slli	a1, a1, 3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

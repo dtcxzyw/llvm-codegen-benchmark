@@ -35,8 +35,8 @@ func0000000000000035:
 
 func0000000000000000:
 	slli	a2, a1, 7
-	slli	a1, a1, 9
-	sub	a1, a1, a2
+	slli	a1, a1, 8
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	addw	a0, a0, a1
 	ret
@@ -84,8 +84,8 @@ func0000000000000005:
 
 func000000000000003e:
 	slli	a2, a1, 13
-	slli	a1, a1, 15
-	sub	a1, a1, a2
+	slli	a1, a1, 14
+	add	a1, a1, a2
 	slli	a0, a0, 14
 	addw	a0, a0, a1
 	ret

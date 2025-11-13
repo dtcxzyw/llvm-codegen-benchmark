@@ -62,8 +62,8 @@ func00000000000001c1:
 
 func0000000000000164:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	add	a1, a1, a0
 	addi	a1, a1, 24
 	sltu	a0, a1, a0

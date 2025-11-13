@@ -19,13 +19,15 @@ func0000000000000000:
 func0000000000000011:
 	sub	a0, a0, a1
 	lui	a1, 699051
-	slli	a0, a0, 32
+	slli	a2, a0, 32
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
-	mulhu	a0, a0, a1
-	srli	a0, a0, 35
-	slli	a1, a0, 4
-	slli	a0, a0, 2
+	mulhu	a1, a2, a1
+	srli	a1, a1, 35
+	slli	a2, a1, 2
+	slli	a1, a1, 3
+	add	a1, a1, a2
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 

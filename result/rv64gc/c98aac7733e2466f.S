@@ -13,7 +13,7 @@ func0000000000000013:
 	ret
 .LBB0_4:
 	slli	a0, a2, 3
-	slli	a2, a2, 5
-	sub	a0, a2, a0
+	slli	a2, a2, 4
+	add	a0, a0, a2
 	ret
 

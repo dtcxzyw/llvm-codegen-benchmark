@@ -49,12 +49,14 @@ func0000000000000001:
 	addi	a0, a0, -4
 	lui	a1, 699051
 	addi	a1, a1, -1365
-	slli	a0, a0, 32
+	slli	a2, a0, 32
 	slli	a1, a1, 32
-	mulhu	a0, a0, a1
-	srli	a0, a0, 37
-	slli	a1, a0, 6
-	slli	a0, a0, 4
+	mulhu	a1, a2, a1
+	srli	a1, a1, 37
+	slli	a2, a1, 4
+	slli	a1, a1, 5
+	add	a1, a1, a2
+	sub	a0, a0, a0
 	subw	a0, a0, a1
 	ret
 

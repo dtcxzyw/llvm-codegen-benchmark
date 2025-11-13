@@ -29,8 +29,8 @@ func000000000000000c:
 
 func0000000000000010:
 	srai	a2, a1, 29
-	srai	a1, a1, 27
-	sub	a1, a1, a2
+	srai	a1, a1, 28
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret

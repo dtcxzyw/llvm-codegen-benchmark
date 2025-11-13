@@ -16,8 +16,8 @@ func000000000000007d:
 
 func0000000000000001:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	sub	a2, a2, a3
+	slli	a2, a2, 2
+	add	a2, a2, a3
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
@@ -36,8 +36,8 @@ func0000000000000073:
 
 func0000000000000000:
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

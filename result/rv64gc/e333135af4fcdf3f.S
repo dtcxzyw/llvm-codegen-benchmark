@@ -1,8 +1,8 @@
 func0000000000000001:
 	sext.w	a0, a0
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	seqz	a0, a0
 	add	a1, a1, a2
 	addi	a0, a0, -1
@@ -27,9 +27,9 @@ func0000000000000061:
 
 func0000000000000041:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
+	slli	a2, a2, 4
 	addiw	a0, a0, 1
-	sub	a2, a2, a3
+	add	a2, a2, a3
 	seqz	a0, a0
 	add	a1, a1, a2
 	addi	a0, a0, -1

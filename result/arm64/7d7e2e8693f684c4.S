@@ -8,8 +8,8 @@ func0000000000000001:
 	asr	x9, x8, #6
 	add	x8, x9, x8, lsr #63
 	mov	w9, #100
-	mul	x8, x8, x9
-	subs	x8, x0, x8
+	msub	x8, x8, x9, x0
+	cmp	x8, #0
 	cneg	x0, x8, mi
 	ret
 
@@ -23,8 +23,8 @@ func0000000000000003:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #16960
 	movk	w9, #15, lsl #16
-	mul	x8, x8, x9
-	subs	x8, x0, x8
+	msub	x8, x8, x9, x0
+	cmp	x8, #0
 	cneg	x0, x8, mi
 	ret
 

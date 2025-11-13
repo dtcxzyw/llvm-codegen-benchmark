@@ -1,8 +1,8 @@
 func0000000000000030:
 	andi	a1, a1, 63
 	slli	a2, a1, 5
-	slli	a1, a1, 7
-	sub	a1, a1, a2
+	slli	a1, a1, 6
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 144
 	ret
@@ -25,8 +25,8 @@ func000000000000003f:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 744
 	ret
@@ -35,8 +35,8 @@ func000000000000003c:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 744
 	ret

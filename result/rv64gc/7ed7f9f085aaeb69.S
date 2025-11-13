@@ -1,8 +1,8 @@
 func0000000000000007:
 	andi	a0, a0, 1
 	slli	a1, a0, 45
-	slli	a0, a0, 47
-	sub	a0, a0, a1
+	slli	a0, a0, 46
+	or	a0, a0, a1
 	ret
 
 func0000000000000005:
@@ -43,7 +43,7 @@ func0000000000000003:
 	srliw	a0, a0, 1
 	slli	a0, a0, 1
 	slli	a1, a0, 4
-	slli	a0, a0, 6
-	sub	a0, a0, a1
+	slli	a0, a0, 5
+	add	a0, a0, a1
 	ret
 

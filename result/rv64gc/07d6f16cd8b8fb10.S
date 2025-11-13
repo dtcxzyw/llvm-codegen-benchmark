@@ -1,15 +1,15 @@
 func000000000000000e:
 	slli	a2, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 712
 	ret
 
 func000000000000000f:
 	slli	a2, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a2
+	slli	a0, a0, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 360
 	ret

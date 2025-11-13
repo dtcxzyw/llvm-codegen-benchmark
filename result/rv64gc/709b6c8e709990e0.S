@@ -6,8 +6,8 @@ func0000000000000008:
 	mulhu	a1, a1, a2
 	srli	a1, a1, 1
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
@@ -17,10 +17,10 @@ func000000000000000b:
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
+	andi	a2, a1, -64
 	srli	a1, a1, 6
-	slli	a2, a1, 5
-	slli	a1, a1, 7
-	sub	a1, a1, a2
+	slli	a1, a1, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -57,8 +57,8 @@ func000000000000000c:
 	mulhu	a1, a1, a2
 	srli	a1, a1, 1
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

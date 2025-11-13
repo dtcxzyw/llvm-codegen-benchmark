@@ -20,8 +20,7 @@ func00000000000003f4:
 	ret
 
 func00000000000001a1:
-	add	x8, x0, w1, uxth
-	cmp	x8, #0
+	cmn	x0, w1, uxth
 	cset	w0, eq
 	ret
 

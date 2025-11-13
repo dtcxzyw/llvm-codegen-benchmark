@@ -4,11 +4,11 @@ func0000000000000017:
 	slli	a1, a1, 4
 	mulhu	a1, a2, a1
 	srli	a1, a1, 22
-	slli	a2, a1, 7
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a2, a1, 5
+	slli	a1, a1, 6
+	add	a1, a1, a2
 	lui	a2, 16
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	addi	a0, a0, 32
 	addi	a2, a2, -1
 	and	a0, a0, a2

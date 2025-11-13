@@ -24,16 +24,16 @@ func000000000000003b:
 
 func0000000000000070:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 5
 	ret
 
 func0000000000000013:
 	slli	a2, a1, 5
-	slli	a1, a1, 7
-	sub	a1, a1, a2
+	slli	a1, a1, 6
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret

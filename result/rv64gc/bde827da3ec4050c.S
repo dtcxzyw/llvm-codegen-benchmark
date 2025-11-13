@@ -10,10 +10,10 @@ func00000000000000ef:
 	mv	a3, a2
 .LBB0_2:
 	slli	a2, a3, 2
-	slli	a3, a3, 4
-	sub	a3, a3, a2
+	slli	a3, a3, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
 	ret
 
 .LCPI1_0:

@@ -52,8 +52,7 @@ func0000000000000006:
 	ret
 
 func000000000000002a:
-	add	w8, w0, w1, uxth
-	cmp	w8, #0
+	cmn	w0, w1, uxth
 	cset	w0, gt
 	ret
 

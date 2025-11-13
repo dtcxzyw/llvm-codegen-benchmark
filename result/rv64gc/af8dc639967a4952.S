@@ -8,8 +8,8 @@ func0000000000000384:
 
 func0000000000000386:
 	slli	a3, a2, 1
-	slli	a2, a2, 3
-	subw	a2, a2, a3
+	slli	a2, a2, 2
+	addw	a2, a2, a3
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret

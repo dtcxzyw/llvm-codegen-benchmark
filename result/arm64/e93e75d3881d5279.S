@@ -49,8 +49,7 @@ func0000000000000008:
 
 func00000000000002aa:
 	lsl	x8, x0, #2
-	add	x8, x8, w1, uxtw
-	cmp	x8, #0
+	cmn	x8, w1, uxtw
 	cset	w0, gt
 	ret
 
@@ -64,8 +63,7 @@ func00000000000001f8:
 
 func00000000000000aa:
 	lsl	x8, x0, #3
-	add	x8, x8, w1, uxtw
-	cmp	x8, #0
+	cmn	x8, w1, uxtw
 	cset	w0, gt
 	ret
 

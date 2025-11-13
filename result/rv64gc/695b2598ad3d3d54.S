@@ -10,8 +10,8 @@ func0000000000000113:
 .LBB0_2:
 	bltu	a2, a1, .LBB0_4
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	ret
 .LBB0_4:
 	li	a0, -15
@@ -30,8 +30,8 @@ func0000000000000013:
 .LBB1_2:
 	bltu	a2, a1, .LBB1_4
 	slli	a1, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	ret
 .LBB1_4:
 	li	a0, -15

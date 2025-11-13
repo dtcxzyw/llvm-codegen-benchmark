@@ -13,8 +13,7 @@ func0000000000000081:
 	ret
 
 func000000000000000c:
-	add	x8, x0, w1, uxtw #4
-	cmp	x8, #0
+	cmn	x0, w1, uxtw #4
 	cset	w0, ne
 	ret
 

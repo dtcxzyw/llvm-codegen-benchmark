@@ -39,10 +39,10 @@ func000000000000002a:
 	mulh	a1, a0, a1
 	srli	a2, a1, 63
 	add	a1, a1, a2
-	slli	a2, a1, 3
-	slli	a1, a1, 1
-	sub	a1, a1, a2
-	add	a1, a1, a0
+	slli	a2, a1, 1
+	slli	a1, a1, 2
+	add	a1, a1, a2
+	sub	a1, a0, a1
 	slt	a0, a1, a0
 	ret
 

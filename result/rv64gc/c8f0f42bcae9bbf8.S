@@ -14,8 +14,8 @@ func0000000000000181:
 
 func000000000000000c:
 	slli	a2, a0, 2
-	slli	a0, a0, 4
-	sub	a0, a0, a2
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	snez	a0, a0

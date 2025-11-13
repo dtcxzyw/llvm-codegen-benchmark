@@ -1,15 +1,15 @@
 func0000000000000086:
-	subs	x8, x1, x2
-	cset	w9, mi
-	cmp	x8, x0
-	csinc	w0, w9, wzr, hs
+	sub	x8, x1, x2
+	cmp	x8, #0
+	ccmp	x8, x0, #0, pl
+	cset	w0, lo
 	ret
 
 func0000000000000546:
-	subs	x8, x1, x2
-	cset	w9, mi
-	cmp	x8, x0
-	csinc	w0, w9, wzr, le
+	sub	x8, x1, x2
+	cmp	x8, #0
+	ccmp	x8, x0, #0, pl
+	cset	w0, gt
 	ret
 
 func0000000000000484:
@@ -20,10 +20,10 @@ func0000000000000484:
 	ret
 
 func0000000000000566:
-	subs	x8, x1, x2
-	cset	w9, mi
-	cmp	x8, x0
-	csinc	w0, w9, wzr, lt
+	sub	x8, x1, x2
+	cmp	x8, #0
+	ccmp	x8, x0, #0, pl
+	cset	w0, ge
 	ret
 
 func0000000000000081:

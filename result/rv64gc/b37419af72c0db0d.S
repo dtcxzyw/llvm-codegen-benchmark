@@ -7,10 +7,10 @@ func0000000000000003:
 	slli	a2, a2, 32
 	mulhu	a0, a0, a2
 	srli	a0, a0, 35
-	slli	a2, a0, 4
-	slli	a0, a0, 2
-	sub	a0, a0, a2
-	addw	a0, a0, a1
+	slli	a2, a0, 2
+	slli	a0, a0, 3
+	add	a0, a0, a2
+	subw	a0, a1, a0
 	ret
 .LBB0_2:
 	li	a0, 12

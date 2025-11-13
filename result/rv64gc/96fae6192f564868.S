@@ -9,8 +9,8 @@ func0000000000000074:
 func0000000000000021:
 	beqz	a1, .LBB1_2
 	slli	a0, a2, 2
-	slli	a2, a2, 4
-	sub	a0, a2, a0
+	slli	a2, a2, 3
+	add	a0, a0, a2
 .LBB1_2:
 	ret
 

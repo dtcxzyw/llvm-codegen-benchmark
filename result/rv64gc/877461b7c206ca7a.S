@@ -2,8 +2,8 @@ func000000000000001d:
 	srli	a0, a0, 2
 	slli	a0, a0, 32
 	srli	a1, a0, 30
-	srli	a0, a0, 28
-	sub	a0, a0, a1
+	srli	a0, a0, 29
+	add	a0, a0, a1
 	addi	a0, a0, -12
 	ret
 
@@ -27,16 +27,16 @@ func000000000000001f:
 	srli	a0, a0, 3
 	slli	a0, a0, 32
 	srli	a1, a0, 29
-	srli	a0, a0, 27
-	sub	a0, a0, a1
+	srli	a0, a0, 28
+	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func000000000000000d:
 	srliw	a0, a0, 1
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	addi	a0, a0, -24
 	ret
 
@@ -45,8 +45,8 @@ func000000000000000f:
 	srli	a0, a0, 32
 	addi	a0, a0, 170
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	addi	a0, a0, 7
 	ret
 

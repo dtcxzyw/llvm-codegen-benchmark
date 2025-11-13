@@ -23,8 +23,8 @@ func000000000000000f:
 func000000000000000a:
 	andi	a0, a0, 1
 	slli	a3, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a3
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	addi	a0, a0, -1
 	add	a1, a1, a2
 	andi	a0, a0, 4

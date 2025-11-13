@@ -6,11 +6,10 @@ func0000000000000026:
 	smulh	x8, x1, x8
 	asr	x9, x8, #1
 	add	x8, x9, x8, lsr #63
-	lsl	x9, x8, #3
-	sub	x8, x9, x8
-	add	w9, w0, #7
-	cmp	x1, x8
-	csel	w0, w9, w0, mi
+	sub	x8, x8, x8, lsl #3
+	cmn	x1, x8
+	add	w8, w0, #7
+	csel	w0, w8, w0, mi
 	ret
 
 func0000000000000006:
@@ -23,11 +22,11 @@ func0000000000000006:
 	add	x8, x9, x8, lsr #63
 	mov	w9, #51712
 	movk	w9, #15258, lsl #16
-	mul	x8, x8, x9
+	msub	x8, x8, x9, x1
 	mov	w9, #10240
 	movk	w9, #61035, lsl #16
 	add	w9, w0, w9
-	cmp	x1, x8
+	cmp	x8, #0
 	csel	w0, w9, w0, mi
 	ret
 

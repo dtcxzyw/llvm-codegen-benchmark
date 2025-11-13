@@ -155,8 +155,8 @@ func0000000000000004:
 
 func000000000000002a:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 31
 	xori	a0, a0, 1
@@ -247,8 +247,8 @@ func00000000000000a4:
 
 func00000000000001ec:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0

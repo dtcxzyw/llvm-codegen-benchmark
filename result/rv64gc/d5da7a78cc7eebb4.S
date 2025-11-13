@@ -14,8 +14,8 @@ func0000000000000064:
 
 func0000000000000061:
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	add	a2, a2, a3
 	add	a2, a2, a0
 	beq	a1, a2, .LBB2_2
 	mv	a0, a1

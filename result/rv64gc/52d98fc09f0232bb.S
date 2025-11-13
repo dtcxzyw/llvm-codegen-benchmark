@@ -6,11 +6,11 @@ func0000000000000005:
 	srli	a3, a2, 63
 	srai	a2, a2, 33
 	add	a2, a2, a3
-	slli	a3, a2, 4
-	slli	a2, a2, 2
-	sub	a2, a2, a3
+	slli	a3, a2, 2
+	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	subw	a0, a0, a2
 	ret
 
 func0000000000000001:

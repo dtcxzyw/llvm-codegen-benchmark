@@ -22,8 +22,8 @@ func000000000000082c:
 
 func0000000000000021:
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a1, a1, a0
 	seqz	a0, a0
 	seqz	a1, a1

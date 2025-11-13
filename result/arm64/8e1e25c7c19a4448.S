@@ -1,6 +1,7 @@
 func00000000000000cc:
+	sub	w8, w1, w2
 	cmn	w0, #1
-	ccmp	w1, w2, #0, ne
+	ccmp	w8, #0, #0, ne
 	cset	w0, mi
 	ret
 

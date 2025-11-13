@@ -31,7 +31,8 @@ func000000000000008c:
 	ret
 
 func00000000000000cc:
-	cmp	x1, x2
+	sub	x8, x1, x2
+	cmp	x8, #0
 	ccmp	x0, #0, #4, mi
 	cset	w0, ne
 	ret

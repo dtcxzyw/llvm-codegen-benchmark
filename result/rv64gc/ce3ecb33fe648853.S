@@ -22,12 +22,12 @@ func00000000000000eb:
 
 func00000000000000fb:
 	slli	a3, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a3
+	slli	a1, a1, 4
+	add	a1, a1, a3
 	slli	a3, a0, 3
-	slli	a0, a0, 5
+	slli	a0, a0, 4
 	add	a1, a1, a2
-	sub	a0, a0, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
@@ -41,8 +41,8 @@ func00000000000000ff:
 
 func000000000000000f:
 	slli	a3, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a3
+	slli	a0, a0, 4
+	add	a0, a0, a3
 	lui	a3, 1
 	addi	a3, a3, -1712
 	mul	a1, a1, a3

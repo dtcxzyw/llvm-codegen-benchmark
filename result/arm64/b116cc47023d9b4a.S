@@ -43,8 +43,7 @@ func0000000000000026:
 
 func000000000000002a:
 	add	w8, w1, #1
-	add	x8, x0, w8, sxtw
-	cmp	x8, #0
+	cmn	x0, w8, sxtw
 	cset	w0, gt
 	ret
 

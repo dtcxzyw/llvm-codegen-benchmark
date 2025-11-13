@@ -33,8 +33,7 @@ func0000000000000001:
 
 func00000000000000aa:
 	sub	x8, x0, x1
-	add	x8, x8, w2, sxtw
-	cmp	x8, #0
+	cmn	x8, w2, sxtw
 	cset	w0, gt
 	ret
 
@@ -47,8 +46,7 @@ func00000000000000b8:
 
 func000000000000002a:
 	sub	x8, x0, x1
-	add	x8, x8, w2, sxtw
-	cmp	x8, #0
+	cmn	x8, w2, sxtw
 	cset	w0, gt
 	ret
 

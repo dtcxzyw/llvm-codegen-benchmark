@@ -22,8 +22,8 @@ func0000000000000041:
 
 func00000000000000ff:
 	slli	a2, a0, 4
-	slli	a0, a0, 6
-	sub	a0, a0, a2
+	slli	a0, a0, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 40
 	ret

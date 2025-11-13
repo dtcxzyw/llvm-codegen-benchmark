@@ -33,8 +33,8 @@ func0000000000000000:
 func000000000000000c:
 	andi	a3, a0, 1
 	slli	a0, a2, 1
-	slli	a2, a2, 3
-	sub	a0, a2, a0
+	slli	a2, a2, 2
+	add	a0, a0, a2
 	beqz	a3, .LBB3_2
 	li	a1, 16
 .LBB3_2:

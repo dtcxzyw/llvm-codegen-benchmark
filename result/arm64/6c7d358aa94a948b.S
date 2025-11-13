@@ -1,5 +1,6 @@
 func000000000000014a:
-	cmp	w1, w2
+	sub	w8, w1, w2
+	cmp	w8, #0
 	ccmp	w0, #0, #4, mi
 	cset	w0, gt
 	ret

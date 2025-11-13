@@ -4,8 +4,8 @@ func000000000000000f:
 	bgeu	a1, a0, .LBB0_4
 .LBB0_2:
 	slli	a1, a0, 5
-	slli	a0, a0, 7
-	sub	a0, a0, a1
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 .LBB0_3:
 	mv	a0, a1
@@ -14,8 +14,8 @@ func000000000000000f:
 .LBB0_4:
 	li	a0, 4
 	slli	a1, a0, 5
-	slli	a0, a0, 7
-	sub	a0, a0, a1
+	slli	a0, a0, 6
+	add	a0, a0, a1
 	ret
 
 func000000000000000e:

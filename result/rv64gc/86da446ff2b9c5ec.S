@@ -16,9 +16,9 @@ func0000000000000006:
 func0000000000000004:
 	slli	a1, a1, 48
 	slli	a2, a0, 4
-	slli	a0, a0, 6
+	slli	a0, a0, 5
 	srli	a1, a1, 48
-	sub	a0, a0, a2
+	add	a0, a0, a2
 	divuw	a0, a0, a1
 	ret
 

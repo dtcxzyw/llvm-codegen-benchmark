@@ -16,10 +16,10 @@ func000000000000000f:
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
+	andi	a1, a0, -16
 	srli	a0, a0, 4
-	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 3
+	add	a0, a0, a1
 	addi	a0, a0, 365
 	ret
 
@@ -32,8 +32,8 @@ func000000000000000d:
 	srli	a0, a0, 4
 	addi	a0, a0, -349
 	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
 	addi	a0, a0, -19
 	ret
 

@@ -35,8 +35,8 @@ func00000000000000f3:
 func00000000000001f3:
 	addiw	a1, a1, 1
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	lui	a2, 2
 	addi	a2, a2, -360
 	add	a0, a0, a2
@@ -69,8 +69,8 @@ func000000000000003f:
 func00000000000001ff:
 	addiw	a1, a1, 1
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 5
 	ret
@@ -78,8 +78,8 @@ func00000000000001ff:
 func000000000000007f:
 	addiw	a1, a1, 1
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 5
 	ret
@@ -95,8 +95,8 @@ func00000000000000bf:
 func0000000000000073:
 	addiw	a1, a1, -8
 	slli	a2, a1, 2
-	slli	a1, a1, 4
-	sub	a1, a1, a2
+	slli	a1, a1, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 264
 	ret

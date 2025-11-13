@@ -92,8 +92,8 @@ func00000000000001f8:
 func00000000000000c3:
 	slli	a2, a2, 32
 	srli	a3, a2, 29
-	srli	a2, a2, 27
-	sub	a2, a2, a3
+	srli	a2, a2, 28
+	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -8

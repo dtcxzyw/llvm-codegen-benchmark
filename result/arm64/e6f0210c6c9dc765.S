@@ -14,9 +14,9 @@ func0000000000000002:
 
 func0000000000000010:
 	mov	w8, #7
-	negs	w9, w0
+	cmp	wzr, w0
 	sub	w8, w8, w0
-	csel	w8, w8, w9, mi
+	csneg	w8, w8, w0, mi
 	asr	w0, w8, #3
 	ret
 

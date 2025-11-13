@@ -83,8 +83,7 @@ func00000000000001e1:
 
 func00000000000002aa:
 	add	x8, x0, x1
-	add	x8, x8, w2, uxtw
-	cmp	x8, #0
+	cmn	x8, w2, uxtw
 	cset	w0, gt
 	ret
 

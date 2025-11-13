@@ -22,8 +22,8 @@ func0000000000000061:
 func0000000000000046:
 	bltz	a1, .LBB3_2
 	slli	a0, a1, 3
-	slli	a1, a1, 5
-	sub	a0, a1, a0
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	add	a0, a0, a2
 .LBB3_2:
 	ret

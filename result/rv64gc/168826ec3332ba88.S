@@ -1,7 +1,7 @@
 func0000000000000044:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	li	a2, -29
 	addi	a1, a1, 39
 	andi	a1, a1, -16
@@ -12,8 +12,8 @@ func0000000000000044:
 
 func0000000000000041:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	addi	a1, a1, 39
 	andi	a1, a1, -16
 	or	a0, a0, a1

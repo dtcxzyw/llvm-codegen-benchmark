@@ -93,8 +93,9 @@ func0000000000000210:
 	ret
 
 func0000000000000182:
+	sub	w8, w1, w2
 	cmp	w0, #0
-	ccmp	w1, w2, #8, ne
+	ccmp	w8, #0, #8, ne
 	cset	w0, mi
 	ret
 

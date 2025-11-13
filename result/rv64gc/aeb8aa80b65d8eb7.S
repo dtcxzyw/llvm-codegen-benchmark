@@ -23,8 +23,8 @@ func0000000000000000:
 
 func0000000000000014:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a1, a1, a2
 	addi	a1, a1, 24
 	bltu	a1, a0, .LBB2_2
 	mv	a0, a1

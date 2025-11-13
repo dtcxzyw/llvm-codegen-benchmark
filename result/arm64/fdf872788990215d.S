@@ -1,27 +1,28 @@
 func0000000000000821:
+	sub	x8, x0, x1
 	cmp	x0, #0
-	ccmp	x0, x1, #4, ne
+	ccmp	x8, #0, #4, ne
 	cset	w0, eq
 	ret
 
 func000000000000082c:
-	lsl	x8, x1, #3
+	sub	x8, x0, x1, lsl #3
 	cmp	x0, #0
-	ccmp	x0, x8, #4, ne
+	ccmp	x8, #0, #4, ne
 	cset	w0, ne
 	ret
 
 func000000000000002c:
-	lsl	x8, x1, #3
+	sub	x8, x0, x1, lsl #3
 	cmp	x0, #0
-	ccmp	x0, x8, #4, ne
+	ccmp	x8, #0, #4, ne
 	cset	w0, ne
 	ret
 
 func0000000000000021:
-	lsl	x8, x1, #3
+	sub	x8, x0, x1, lsl #3
 	cmp	x0, #0
-	ccmp	x0, x8, #4, ne
+	ccmp	x8, #0, #4, ne
 	cset	w0, eq
 	ret
 

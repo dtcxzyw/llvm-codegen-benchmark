@@ -30,8 +30,8 @@ func000000000000016c:
 	addi	a2, a2, -255
 	seqz	a2, a2
 	slli	a3, a2, 3
-	slli	a2, a2, 5
-	sub	a2, a2, a3
+	slli	a2, a2, 4
+	or	a2, a2, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

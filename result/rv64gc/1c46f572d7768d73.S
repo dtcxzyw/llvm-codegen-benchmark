@@ -20,9 +20,9 @@ func000000000000003b:
 func000000000000002f:
 	andi	a2, a2, 1
 	slli	a3, a1, 4
-	slli	a1, a1, 6
+	slli	a1, a1, 5
 	slli	a2, a2, 3
-	sub	a1, a1, a3
+	add	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16
@@ -52,8 +52,8 @@ func000000000000000f:
 	li	a2, 8
 .LBB4_3:
 	slli	a3, a1, 6
-	slli	a1, a1, 8
-	sub	a1, a1, a3
+	slli	a1, a1, 7
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

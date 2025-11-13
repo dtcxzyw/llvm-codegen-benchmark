@@ -1,8 +1,8 @@
 func0000000000000006:
 	slli	a2, a1, 3
-	slli	a1, a1, 5
+	slli	a1, a1, 4
 	lui	a3, 699051
-	sub	a1, a1, a2
+	add	a1, a1, a2
 	addi	a2, a3, -1365
 	srai	a1, a1, 3
 	slli	a3, a2, 32
@@ -13,8 +13,8 @@ func0000000000000006:
 
 func000000000000000a:
 	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
+	slli	a1, a1, 2
+	add	a1, a1, a2
 	srai	a2, a1, 63
 	srli	a2, a2, 61
 	add	a1, a1, a2
