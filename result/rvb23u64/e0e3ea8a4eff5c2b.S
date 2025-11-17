@@ -9,9 +9,9 @@ func0000000000000010:
 func000000000000003a:
 	bseti	a3, zero, 32
 	sub	a2, a2, a3
-	srai	a2, a2, 32
+	srai	a2, a2, 29
 	sh2add	a2, a2, a2
-	sh3add	a1, a2, a1
+	add	a1, a1, a2
 	sh2add	a0, a0, a0
 	sh3add	a0, a0, a1
 	ret

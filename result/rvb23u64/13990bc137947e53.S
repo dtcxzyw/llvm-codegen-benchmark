@@ -1,8 +1,7 @@
 func0000000000000004:
 	sub	a0, a0, a1
-	srli	a0, a0, 3
+	slli	a0, a0, 31
 	sh3add	a0, a0, a0
-	slli	a0, a0, 34
 	ret
 
 func0000000000000000:
@@ -22,9 +21,8 @@ func0000000000000017:
 
 func0000000000000014:
 	sub	a0, a0, a1
-	srli	a0, a0, 3
+	slli	a0, a0, 1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 4
 	ret
 
 func0000000000000006:

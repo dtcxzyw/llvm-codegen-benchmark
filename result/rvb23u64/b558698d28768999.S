@@ -6,15 +6,13 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	srli	a0, a0, 4
+	slli	a0, a0, 1
 	sh2add	a0, a0, a0
-	slli	a0, a0, 5
 	ret
 
 func0000000000000005:
-	srai	a0, a0, 32
+	srai	a0, a0, 29
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
 	ret
 
 func0000000000000001:

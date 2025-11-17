@@ -1,9 +1,8 @@
 func0000000000000005:
 	bseti	a1, zero, 32
 	sub	a0, a0, a1
-	srai	a0, a0, 32
+	srai	a0, a0, 29
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
 	ret
 
 func0000000000000009:
@@ -34,8 +33,7 @@ func000000000000000b:
 func0000000000000007:
 	bseti	a1, zero, 32
 	add	a0, a0, a1
-	srai	a0, a0, 32
+	srai	a0, a0, 30
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
 	ret
 

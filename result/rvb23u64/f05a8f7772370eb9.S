@@ -10,9 +10,8 @@ func00000000000000a8:
 	ret
 
 func00000000000000b8:
-	srai	a0, a0, 3
+	srai	a0, a0, 2
 	sh1add	a0, a0, a0
-	slli	a0, a0, 1
 	srli	a0, a0, 58
 	snez	a0, a0
 	ret

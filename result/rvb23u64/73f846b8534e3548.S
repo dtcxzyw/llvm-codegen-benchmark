@@ -1,8 +1,8 @@
 func0000000000000040:
-	srai	a1, a1, 3
+	srai	a1, a1, 1
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1
-	sh2add	a0, a1, a0
+	add	a0, a0, a1
 	addi	a0, a0, -100
 	ret
 

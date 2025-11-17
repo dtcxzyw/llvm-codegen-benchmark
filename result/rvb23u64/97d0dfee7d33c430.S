@@ -1,7 +1,7 @@
 func0000000000000361:
-	srai	a2, a2, 32
+	srai	a2, a2, 30
 	sh2add	a2, a2, a2
-	sh2add	a1, a2, a1
+	add	a1, a1, a2
 	addi	a1, a1, 20
 	xor	a0, a0, a1
 	seqz	a0, a0

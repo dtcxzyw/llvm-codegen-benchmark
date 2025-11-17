@@ -1,8 +1,7 @@
 func0000000000000040:
-	srli	a0, a0, 3
+	srli	a0, a0, 2
 	sh1add	a1, a0, a0
 	sh1add	a0, a1, a0
-	slli	a0, a0, 1
 	addiw	a0, a0, 18
 	ret
 

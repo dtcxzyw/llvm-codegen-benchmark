@@ -1,15 +1,15 @@
 func0000000000000050:
-	srai	a1, a1, 32
+	srai	a1, a1, 29
 	sh1add	a1, a1, a1
-	sh3add	a0, a1, a0
+	add	a0, a0, a1
 	addi	a0, a0, 184
 	ret
 
 func000000000000005c:
-	srai	a1, a1, 56
+	srai	a1, a1, 53
 	sh1add	a2, a1, a1
 	sh1add	a1, a2, a1
-	sh3add	a0, a1, a0
+	add	a0, a0, a1
 	addi	a0, a0, 56
 	ret
 
