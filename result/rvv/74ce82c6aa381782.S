@@ -3,9 +3,9 @@ func0000000000000010:
 	vmseq.vi	v0, v10, 4
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	vadd.vi	v10, v10, 1
 	li	a0, 3
-	vmacc.vx	v10, a0, v8
-	vadd.vi	v8, v10, 1
+	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000014:

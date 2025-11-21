@@ -5,8 +5,8 @@ func000000000000000c:
 	vmulhu.vx	v10, v10, a0
 	lui	a0, 16
 	vsrl.vi	v10, v10, 7
+	vadd.vi	v10, v10, 3
 	addi	a0, a0, -12
-	vmacc.vx	v10, a0, v8
-	vadd.vi	v8, v10, 3
+	vmadd.vx	v8, a0, v10
 	ret
 

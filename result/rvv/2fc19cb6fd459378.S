@@ -3,15 +3,15 @@ func0000000000000014:
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulh.vx	v10, v10, a0
+	lui	a0, 1048400
+	addi	a0, a0, 1427
+	vadd.vx	v8, v8, a0
 	lui	a0, 36
-	addi	a0, a0, -1359
 	vsra.vi	v10, v10, 7
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	vmadd.vx	v10, a0, v8
-	lui	a0, 1048400
-	addi	a0, a0, 1427
-	vadd.vx	v8, v10, a0
+	addi	a0, a0, -1359
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000010:
@@ -19,15 +19,15 @@ func0000000000000010:
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulh.vx	v10, v10, a0
+	lui	a0, 1048400
+	addi	a0, a0, 1427
+	vadd.vx	v8, v8, a0
 	lui	a0, 36
-	addi	a0, a0, -1359
 	vsra.vi	v10, v10, 7
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	vmadd.vx	v10, a0, v8
-	lui	a0, 1048400
-	addi	a0, a0, 1427
-	vadd.vx	v8, v10, a0
+	addi	a0, a0, -1359
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000015:

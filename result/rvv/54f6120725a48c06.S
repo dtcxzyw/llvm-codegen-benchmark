@@ -5,8 +5,8 @@ func0000000000000284:
 	vmv.v.x	v12, a0
 	li	a0, -178
 	vmerge.vxm	v12, v12, a0, v0
-	vmadd.vv	v12, v10, v8
 	li	a0, -438
-	vadd.vx	v8, v12, a0
+	vadd.vx	v8, v8, a0
+	vmacc.vv	v8, v10, v12
 	ret
 

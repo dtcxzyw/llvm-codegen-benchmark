@@ -7,12 +7,12 @@ func0000000000000004:
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	li	a0, -365
-	vsra.vi	v10, v10, 25
-	vadd.vv	v10, v10, v12
-	vmacc.vx	v10, a0, v8
 	lui	a0, 176
 	addi	a0, a0, -1846
-	vadd.vx	v8, v10, a0
+	vsra.vi	v10, v10, 25
+	vadd.vv	v10, v10, v12
+	vadd.vx	v10, v10, a0
+	li	a0, -365
+	vmadd.vx	v8, a0, v10
 	ret
 

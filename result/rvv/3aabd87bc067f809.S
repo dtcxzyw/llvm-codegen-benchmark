@@ -32,11 +32,11 @@ func0000000000000030:
 	vadd.vv	v8, v8, v10
 	addi	a0, a0, 1725
 	vmulhu.vx	v10, v12, a0
-	li	a0, 3
-	vsrl.vi	v10, v10, 15
-	vmacc.vx	v8, a0, v10
 	lui	a0, 8
 	addi	a0, a0, -663
 	vadd.vx	v8, v8, a0
+	vsrl.vi	v10, v10, 15
+	li	a0, 3
+	vmacc.vx	v8, a0, v10
 	ret
 

@@ -1,23 +1,27 @@
 func0000000000000055:
-	li	a0, -24
+	li	a0, -1046
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmadd.vx	v8, a0, v10
-	li	a0, 1094
-	vrsub.vx	v8, v8, a0
+	vadd.vx	v10, v10, a0
+	li	a0, -24
+	vmacc.vx	v10, a0, v8
+	li	a0, 48
+	vrsub.vx	v8, v10, a0
 	ret
 
 func0000000000000041:
-	li	a0, -3
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v8, v8, 3
+	li	a0, -3
 	vmacc.vx	v8, a0, v10
-	vrsub.vi	v8, v8, 0
+	vrsub.vi	v8, v8, 3
 	ret
 
 func0000000000000040:
-	li	a0, -3
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v8, v8, 3
+	li	a0, -3
 	vmacc.vx	v8, a0, v10
-	vrsub.vi	v8, v8, 0
+	vrsub.vi	v8, v8, 3
 	ret
 
 func0000000000000051:

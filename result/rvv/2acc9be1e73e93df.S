@@ -1,15 +1,15 @@
 func000000000000000c:
 	lui	a0, 524296
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 11
 	addi	a0, a0, 1
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 16
-	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 15
 	addi	a1, a1, 4
-	vmadd.vx	v10, a1, v8
-	vadd.vi	v8, v10, 11
+	vmacc.vx	v8, a1, v10
 	ret
 
 .LCPI1_0:
@@ -28,15 +28,15 @@ func0000000000000034:
 
 func0000000000000035:
 	lui	a0, 699051
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v8, v8, 8
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 1
 	li	a0, -12
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, 8
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000000:

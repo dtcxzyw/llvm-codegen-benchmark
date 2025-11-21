@@ -1,56 +1,53 @@
 func000000000000000c:
-	li	a0, 20
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
 	li	a0, 68
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.vx	v12, v10, a0
+	li	a0, 20
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vmadd.vx	v8, a0, v12
 	ret
 
 func000000000000003f:
+	li	a0, 2
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.vx	v12, v10, a0
 	li	a0, 12
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, 2
+	vmadd.vx	v8, a0, v12
 	ret
 
 func000000000000001d:
-	lui	a0, 21
-	addi	a0, a0, 384
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
 	lui	a0, 930062
 	addi	a0, a0, -1681
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
 	slli	a0, a0, 7
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	lui	a0, 21
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v12, v12, v10
+	addi	a0, a0, 384
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
+	vmadd.vx	v8, a0, v12
 	ret
 
 func0000000000000037:
-	lui	a0, 16000
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
+	vmv.v.i	v12, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v12, v12, v10
+	lui	a0, 16000
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, -1
+	vmadd.vx	v8, a0, v12
 	ret
 
 func0000000000000035:
-	lui	a0, 244141
-	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
+	vmv.v.i	v12, -1
+	lui	a0, 244141
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v12, v12, v10
+	addi	a0, a0, -1536
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v8, v8, -1
+	vmadd.vx	v8, a0, v12
 	ret
 

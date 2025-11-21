@@ -19,14 +19,14 @@ func0000000000000000:
 
 func0000000000000035:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 4
+	vadd.vv	v12, v12, v8
+	vsra.vi	v8, v10, 4
 	lui	a0, 986895
+	vadd.vi	v10, v12, 1
 	addi	a0, a0, 241
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, 1
+	vmadd.vx	v8, a0, v10
 	ret
 
 .LCPI2_0:
@@ -53,58 +53,58 @@ func0000000000000004:
 	vadd.vv	v10, v12, v10
 	vsra.vi	v8, v8, 3
 	lui	a0, 349525
+	vadd.vi	v10, v10, -1
 	addi	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
-	vadd.vi	v8, v8, -1
 	ret
 
 func0000000000000030:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 3
+	vadd.vv	v12, v12, v8
+	vsra.vi	v8, v10, 3
 	lui	a0, 699051
+	vadd.vi	v10, v12, 1
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, 1
+	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 4
+	vadd.vv	v12, v12, v8
+	vsra.vi	v8, v10, 4
 	lui	a0, 699051
+	vadd.vi	v10, v12, -4
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, -4
+	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 3
+	vadd.vv	v12, v12, v8
+	vsra.vi	v8, v10, 3
 	lui	a0, 699051
+	vadd.vi	v10, v12, -8
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, -8
+	vmadd.vx	v8, a0, v10
 	ret
 
 func0000000000000031:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v12, v8
-	vsra.vi	v10, v10, 3
+	vadd.vv	v12, v12, v8
+	vsra.vi	v8, v10, 3
 	lui	a0, 699051
+	vadd.vi	v10, v12, -16
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	vmadd.vx	v10, a0, v8
-	vadd.vi	v8, v10, -16
+	vmadd.vx	v8, a0, v10
 	ret
 
