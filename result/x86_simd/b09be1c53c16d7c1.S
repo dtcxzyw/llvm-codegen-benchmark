@@ -30,10 +30,10 @@ func0000000000000025:
 func0000000000000001:
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsrld	$31, %ymm1, %ymm3
-	vpaddd	%ymm3, %ymm1, %ymm1
-	vpsrad	$1, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm2
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpsrad	$1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 

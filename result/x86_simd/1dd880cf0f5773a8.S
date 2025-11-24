@@ -3,9 +3,9 @@
 func0000000000000064:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpbroadcastq	.LCPI0_0(%rip), %ymm3
-	vpsllvq	%ymm1, %ymm3, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
+	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -26,9 +26,9 @@ func000000000000000c:
 func0000000000000020:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpbroadcastq	.LCPI2_0(%rip), %ymm3
-	vpsllvq	%ymm1, %ymm3, %ymm1
 	vpaddq	%ymm2, %ymm0, %ymm0
+	vpbroadcastq	.LCPI2_0(%rip), %ymm2
+	vpsllvq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 

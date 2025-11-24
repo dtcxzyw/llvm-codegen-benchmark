@@ -2,9 +2,9 @@ func000000000000001c:
 	vpmovzxwd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -12,9 +12,9 @@ func0000000000000014:
 	vpmovzxwd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -33,9 +33,9 @@ func0000000000000015:
 	vpmovzxwd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
