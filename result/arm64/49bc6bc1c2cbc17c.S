@@ -5,10 +5,8 @@ func000000000000000f:
 	movk	w9, #10965, lsl #16
 	umull	x8, w2, w8
 	umull	x9, w1, w9
-	lsr	x8, x8, #39
-	lsr	x9, x9, #40
-	add	w8, w0, w8
-	add	w0, w8, w9
+	add	x8, x0, x8, lsr #39
+	add	x0, x8, x9, lsr #40
 	ret
 
 func0000000000000005:
@@ -18,10 +16,8 @@ func0000000000000005:
 	movk	w9, #43690, lsl #16
 	umull	x8, w2, w8
 	umull	x9, w1, w9
-	lsr	x8, x8, #39
-	lsr	x9, x9, #35
-	add	w8, w0, w8
-	add	w0, w8, w9
+	add	x8, x0, x8, lsr #39
+	add	x0, x8, x9, lsr #35
 	ret
 
 func0000000000000000:
@@ -32,9 +28,7 @@ func0000000000000000:
 	movk	w10, #4, lsl #16
 	umull	x8, w2, w8
 	umull	x9, w9, w10
-	lsr	x8, x8, #38
-	lsr	x9, x9, #39
-	add	w8, w0, w8
-	add	w0, w8, w9
+	add	x8, x0, x8, lsr #38
+	add	x0, x8, x9, lsr #39
 	ret
 

@@ -79,14 +79,13 @@ func0000000000000094:
 	ret
 
 func0000000000000008:
-	mov	x9, #-8608480567731124088
-	sub	x8, x1, x2
-	movk	x9, #34953
-	smulh	x9, x8, x9
-	add	x8, x9, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #5
-	add	w8, w8, w9
+	mov	x8, #-8608480567731124088
+	sub	x9, x1, x2
+	movk	x8, #34953
+	smulh	x8, x9, x8
+	add	x8, x8, x9
+	lsr	x9, x8, #5
+	add	x8, x9, x8, lsr #63
 	cmp	w0, w8
 	cset	w0, hi
 	ret

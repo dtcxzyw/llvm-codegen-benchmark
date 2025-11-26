@@ -12,8 +12,8 @@ func0000000000000000:
 	umulh	x9, x9, x10
 	mov	w10, #-1000
 	lsr	x8, x8, #18
-	lsr	x9, x9, #4
-	madd	w0, w8, w10, w9
+	mul	w8, w8, w10
+	add	x0, x8, x9, lsr #4
 	ret
 
 func0000000000000028:
@@ -30,8 +30,8 @@ func0000000000000028:
 	umulh	x9, x9, x10
 	mov	w10, #-60
 	lsr	x8, x8, #31
-	lsr	x9, x9, #10
-	madd	w0, w8, w10, w9
+	mul	w8, w8, w10
+	add	x0, x8, x9, lsr #10
 	ret
 
 func000000000000003c:
@@ -47,7 +47,7 @@ func000000000000003c:
 	umulh	x8, x0, x8
 	umulh	x9, x0, x9
 	lsr	x8, x8, #34
-	lsr	x9, x9, #31
-	madd	w0, w8, w10, w9
+	mul	w8, w8, w10
+	add	x0, x8, x9, lsr #31
 	ret
 

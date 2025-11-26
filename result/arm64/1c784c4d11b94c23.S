@@ -4,9 +4,8 @@ func0000000000000000:
 	movk	x8, #3048, lsl #32
 	movk	x8, #4398, lsl #48
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #26
-	add	w8, w8, w9
+	lsr	x9, x8, #26
+	add	x8, x9, x8, lsr #63
 	sub	w0, w8, w0
 	ret
 
@@ -40,9 +39,8 @@ func0000000000000005:
 	movk	x8, #16313, lsl #32
 	movk	x8, #13031, lsl #48
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	asr	x8, x8, #34
-	add	w8, w8, w9
+	asr	x9, x8, #34
+	add	x8, x9, x8, lsr #63
 	sub	w0, w8, w0
 	ret
 

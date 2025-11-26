@@ -7,8 +7,8 @@ func0000000000000040:
 	ret
 
 func0000000000000000:
-	lsr	x8, x0, #63
-	add	w8, w0, w8
+	mov	w8, w0
+	add	x8, x8, x0, lsr #63
 	and	w8, w8, #0xfffffffe
 	sub	w0, w8, #2
 	ret

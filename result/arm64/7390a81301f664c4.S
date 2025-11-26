@@ -1,6 +1,6 @@
 func0000000000000020:
-	lsr	x8, x1, #32
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #32
 	mul	w0, w0, w8
 	ret
 
@@ -20,14 +20,14 @@ func0000000000000025:
 	ret
 
 func0000000000000000:
-	lsr	x8, x1, #3
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #3
 	mul	w0, w8, w0
 	ret
 
 func0000000000000004:
-	lsr	x8, x1, #3
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #3
 	mul	w0, w8, w0
 	ret
 

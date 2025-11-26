@@ -11,9 +11,9 @@ func0000000000000040:
 	ret
 
 func0000000000000000:
-	sub	x8, x1, x2
-	lsr	x8, x8, #2
-	sub	w8, w8, #1
+	mov	w8, #-1
+	sub	x9, x1, x2
+	add	x8, x8, x9, lsr #2
 	mul	w0, w0, w8
 	ret
 

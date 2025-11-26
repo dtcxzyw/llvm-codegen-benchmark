@@ -5,23 +5,20 @@ func0000000000000015:
 	ret
 
 func0000000000000001:
-	lsr	x8, x2, #21
-	add	w9, w1, w0
-	add	w8, w9, w8
+	add	x8, x1, x2, lsr #21
+	add	w8, w8, w0
 	and	x0, x8, #0x1fffff
 	ret
 
 func0000000000000005:
-	lsr	x8, x2, #21
-	add	w9, w1, w0
-	add	w8, w9, w8
+	add	x8, x1, x2, lsr #21
+	add	w8, w8, w0
 	and	x0, x8, #0x1fffff
 	ret
 
 func0000000000000000:
-	lsr	x8, x2, #21
-	add	w9, w1, w0
-	add	w8, w9, w8
+	add	x8, x1, x2, lsr #21
+	add	w8, w8, w0
 	and	x0, x8, #0x1fffff
 	ret
 

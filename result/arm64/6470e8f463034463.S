@@ -5,8 +5,7 @@ func000000000000001f:
 	movk	w9, #4, lsl #16
 	umull	x8, w8, w9
 	mov	w9, #205
-	lsr	x8, x8, #39
-	add	w8, w8, w0
+	add	x8, x0, x8, lsr #39
 	mul	w9, w8, w9
 	ubfx	w9, w9, #11, #5
 	msub	w8, w9, w10, w8
@@ -19,8 +18,7 @@ func0000000000000001:
 	mov	w10, #205
 	movk	w9, #4, lsl #16
 	umull	x8, w8, w9
-	lsr	x8, x8, #39
-	add	w8, w0, w8
+	add	x8, x0, x8, lsr #39
 	and	w9, w8, #0xff
 	mul	w9, w9, w10
 	mov	w10, #10

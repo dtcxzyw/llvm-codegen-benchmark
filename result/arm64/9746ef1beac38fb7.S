@@ -12,9 +12,8 @@ func0000000000000025:
 	ret
 
 func0000000000000035:
-	lsr	x8, x1, #6
-	mvn	w9, w0
-	add	w0, w9, w8
+	mvn	w8, w0
+	add	x0, x8, x1, lsr #6
 	ret
 
 func0000000000000040:

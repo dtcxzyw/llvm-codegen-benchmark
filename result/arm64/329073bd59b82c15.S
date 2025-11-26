@@ -3,8 +3,7 @@ func000000000000000c:
 	and	w9, w1, #0x1
 	movk	w8, #20971, lsl #16
 	umull	x8, w0, w8
-	lsr	x8, x8, #39
-	add	w8, w8, w9
+	add	x8, x9, x8, lsr #39
 	mov	w9, #400
 	mul	w0, w8, w9
 	ret
@@ -14,8 +13,7 @@ func000000000000000d:
 	and	w9, w1, #0x1
 	movk	w8, #14699, lsl #16
 	umull	x8, w0, w8
-	lsr	x8, x8, #47
-	add	w8, w8, w9
+	add	x8, x9, x8, lsr #47
 	mov	w9, #-400
 	mul	w0, w8, w9
 	ret

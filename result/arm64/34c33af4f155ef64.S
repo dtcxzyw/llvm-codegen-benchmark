@@ -4,8 +4,7 @@ func000000000000000a:
 	movk	w9, #32896, lsl #16
 	mul	w8, w8, w0
 	smull	x9, w8, w9
-	lsr	x9, x9, #32
-	add	w8, w9, w8
+	add	x8, x8, x9, lsr #32
 	asr	w9, w8, #7
 	add	w0, w9, w8, lsr #31
 	ret

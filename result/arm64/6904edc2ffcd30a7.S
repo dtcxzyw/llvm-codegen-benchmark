@@ -1,6 +1,6 @@
 func00000000000000e0:
 	mov	w8, #-100
-	lsr	x9, x1, #32
-	madd	w0, w0, w8, w9
+	mul	w8, w0, w8
+	add	x0, x8, x1, lsr #32
 	ret
 

@@ -7,8 +7,8 @@ func000000000000012b:
 	ret
 
 func0000000000000101:
-	lsr	x8, x2, #32
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x2, lsr #32
 	cmp	w1, w8
 	cset	w8, eq
 	and	w0, w0, w8

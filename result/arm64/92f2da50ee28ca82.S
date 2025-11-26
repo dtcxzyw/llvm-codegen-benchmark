@@ -33,9 +33,8 @@ func000000000000000f:
 	eor	x8, x8, #0x8000000000000001
 	smulh	x8, x1, x8
 	mul	x9, x9, x10
-	lsr	x10, x8, #63
-	lsr	x8, x8, #4
-	add	w8, w8, w10
+	lsr	x10, x8, #4
+	add	x8, x10, x8, lsr #63
 	add	x0, x9, w8, sxtw
 	ret
 

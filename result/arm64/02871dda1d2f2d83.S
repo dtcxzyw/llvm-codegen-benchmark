@@ -16,9 +16,8 @@ func0000000000000006:
 	add	w9, w0, #1
 	movk	w8, #10922, lsl #16
 	smull	x8, w9, w8
-	lsr	x10, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w10
+	lsr	x10, x8, #32
+	add	x8, x10, x8, lsr #63
 	mov	w10, #6
 	msub	w8, w8, w10, w9
 	cmp	w8, #1

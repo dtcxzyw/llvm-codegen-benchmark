@@ -25,8 +25,7 @@ func0000000000000048:
 
 func000000000000006d:
 	add	x8, x1, x2
-	lsr	x8, x8, #32
-	add	w8, w0, w8
+	add	x8, x0, x8, lsr #32
 	neg	x0, x8, lsl #32
 	ret
 

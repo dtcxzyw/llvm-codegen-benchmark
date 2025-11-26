@@ -1,37 +1,37 @@
 func0000000000000010:
-	lsr	x8, x1, #2
+	mov	w8, #-1
 	tst	w0, #0x1
-	sub	w8, w8, #1
+	add	x8, x8, x1, lsr #2
 	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000011:
-	lsr	x8, x1, #2
+	mov	w8, #-1
 	tst	w0, #0x1
-	sub	w8, w8, #1
+	add	x8, x8, x1, lsr #2
 	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000001d:
-	lsr	x9, x1, #52
-	mov	w8, #-1022
+	mov	w8, #-1023
 	tst	w0, #0x1
-	sub	w9, w9, #1023
-	csel	w0, w8, w9, ne
+	mov	w9, #-1022
+	add	x8, x8, x1, lsr #52
+	csel	w0, w9, w8, ne
 	ret
 
 func000000000000000d:
-	lsr	x9, x1, #52
-	mov	w8, #-1074
+	mov	w8, #-1075
 	tst	w0, #0x1
-	sub	w9, w9, #1075
-	csel	w0, w8, w9, ne
+	mov	w9, #-1074
+	add	x8, x8, x1, lsr #52
+	csel	w0, w9, w8, ne
 	ret
 
 func0000000000000009:
-	lsr	x8, x1, #32
+	mov	w8, #-1
 	tst	w0, #0x1
-	sub	w8, w8, #1
+	add	x8, x8, x1, lsr #32
 	csel	w0, wzr, w8, ne
 	ret
 

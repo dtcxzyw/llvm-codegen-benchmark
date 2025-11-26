@@ -24,9 +24,8 @@ func000000000000000e:
 	add	w9, w1, #1
 	movk	w8, #21845, lsl #16
 	smull	x8, w9, w8
-	lsr	x10, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w10
+	lsr	x10, x8, #32
+	add	x8, x10, x8, lsr #63
 	add	w8, w8, w8, lsl #1
 	sub	w8, w9, w8
 	sxtw	x8, w8

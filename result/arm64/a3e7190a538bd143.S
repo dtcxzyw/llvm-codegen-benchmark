@@ -1,6 +1,5 @@
 func0000000000000524:
-	lsr	x8, x2, #5
-	add	w8, w8, w1
+	add	x8, x1, x2, lsr #5
 	sxtw	x8, w8
 	cmp	x8, x0
 	cset	w0, lo

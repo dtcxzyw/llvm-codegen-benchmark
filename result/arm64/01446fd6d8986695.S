@@ -3,9 +3,8 @@ func0000000000000046:
 	mov	w9, #43691
 	movk	w9, #10922, lsl #16
 	smull	x8, w8, w9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w9
+	lsr	x9, x8, #32
+	add	x8, x9, x8, lsr #63
 	cmp	w8, w0
 	cset	w0, lt
 	ret

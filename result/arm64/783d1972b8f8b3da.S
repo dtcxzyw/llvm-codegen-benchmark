@@ -7,9 +7,8 @@ func0000000000000000:
 	movk	x9, #39845, lsl #32
 	movk	x9, #8388, lsl #48
 	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #7
-	add	w0, w8, w9
+	lsr	x9, x8, #7
+	add	x0, x9, x8, lsr #63
 	ret
 
 func0000000000000020:
@@ -21,9 +20,8 @@ func0000000000000020:
 	movk	x9, #56962, lsl #32
 	movk	x9, #17179, lsl #48
 	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #18
-	add	w0, w8, w9
+	lsr	x9, x8, #18
+	add	x0, x9, x8, lsr #63
 	ret
 
 func0000000000000068:
@@ -36,9 +34,8 @@ func0000000000000068:
 	movk	x9, #28885, lsl #48
 	smulh	x9, x8, x9
 	sub	x8, x9, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #25
-	add	w0, w8, w9
+	lsr	x9, x8, #25
+	add	x0, x9, x8, lsr #63
 	ret
 
 func0000000000000028:
@@ -50,9 +47,8 @@ func0000000000000028:
 	movk	x9, #8573, lsl #32
 	movk	x9, #48356, lsl #48
 	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #18
-	add	w0, w8, w9
+	lsr	x9, x8, #18
+	add	x0, x9, x8, lsr #63
 	ret
 
 func0000000000000021:
@@ -65,9 +61,8 @@ func0000000000000021:
 	madd	x8, x1, x8, x0
 	movk	x9, #13031, lsl #48
 	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	asr	x8, x8, #34
-	add	w0, w8, w9
+	asr	x9, x8, #34
+	add	x0, x9, x8, lsr #63
 	ret
 
 func000000000000002c:
@@ -97,8 +92,7 @@ func0000000000000029:
 	movk	x9, #16313, lsl #32
 	movk	x9, #13031, lsl #48
 	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	asr	x8, x8, #34
-	add	w0, w8, w9
+	asr	x9, x8, #34
+	add	x0, x9, x8, lsr #63
 	ret
 

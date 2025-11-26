@@ -1,6 +1,6 @@
 func000000000000000c:
-	lsr	x8, x1, #63
-	add	w8, w1, w8
+	mov	w8, w1
+	add	x8, x8, x1, lsr #63
 	lsr	w8, w8, #1
 	tst	x8, #0x7ffffffe
 	cset	w8, ne

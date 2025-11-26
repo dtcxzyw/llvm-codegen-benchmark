@@ -9,10 +9,9 @@ func0000000000000010:
 	mov	w9, #20864
 	movk	w9, #1, lsl #16
 	msub	x8, x8, x9, x1
-	add	w9, w0, #175, lsl #12
-	add	w9, w9, #2363
-	asr	x8, x8, #63
-	add	w0, w8, w9
+	add	x8, x0, x8, asr #63
+	add	w8, w8, #175, lsl #12
+	add	w0, w8, #2363
 	ret
 
 func0000000000000015:
@@ -26,9 +25,8 @@ func0000000000000015:
 	mov	w9, #20864
 	movk	w9, #1, lsl #16
 	msub	x8, x8, x9, x1
-	add	w9, w0, #175, lsl #12
-	add	w9, w9, #2363
-	asr	x8, x8, #63
-	add	w0, w8, w9
+	add	x8, x0, x8, asr #63
+	add	w8, w8, #175, lsl #12
+	add	w0, w8, #2363
 	ret
 

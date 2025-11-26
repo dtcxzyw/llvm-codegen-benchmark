@@ -8,9 +8,9 @@ func0000000000000281:
 	ret
 
 func00000000000002e1:
-	lsr	x8, x1, #2
+	mov	w8, #-1
 	add	x9, x0, #1
-	sub	w8, w8, #1
+	add	x8, x8, x1, lsr #2
 	and	x8, x8, #0x7fffffff
 	cmp	x9, x8
 	cset	w0, eq

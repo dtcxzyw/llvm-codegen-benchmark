@@ -1,21 +1,19 @@
 func000000000000000d:
-	fmov	x8, d0
-	lsr	x8, x8, #60
-	sub	w0, w8, #3
+	fmov	x9, d0
+	mov	w8, #-3
+	add	x0, x8, x9, lsr #60
 	ret
 
 func0000000000000009:
-	fmov	x8, d0
-	mov	w9, #13312
-	movk	w9, #16239, lsl #16
-	lsr	x8, x8, #32
-	add	w0, w8, w9
+	fmov	x9, d0
+	mov	w8, #13312
+	movk	w8, #16239, lsl #16
+	add	x0, x8, x9, lsr #32
 	ret
 
 func0000000000000008:
-	fmov	x8, d0
-	mov	w9, #55574528
-	lsr	x8, x8, #32
-	add	w0, w8, w9
+	fmov	x9, d0
+	mov	w8, #55574528
+	add	x0, x8, x9, lsr #32
 	ret
 

@@ -47,9 +47,8 @@ func000000000000005e:
 	ret
 
 func0000000000000040:
-	lsr	x8, x2, #3
-	add	w9, w0, w1
-	sub	w8, w9, w8
+	add	w8, w0, w1
+	sub	x8, x8, x2, lsr #3
 	lsl	x0, x8, #32
 	ret
 

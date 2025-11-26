@@ -17,12 +17,10 @@ func0000000000000000:
 	smulh	x8, x1, x8
 	movk	x9, #11491, lsl #48
 	smulh	x9, x0, x9
-	lsr	x10, x8, #63
-	lsr	x8, x8, #1
-	lsr	x11, x9, #63
-	lsr	x9, x9, #6
-	add	w8, w8, w10
-	add	w9, w9, w11
+	lsr	x10, x8, #1
+	lsr	x11, x9, #6
+	add	x8, x10, x8, lsr #63
+	add	x9, x11, x9, lsr #63
 	add	w0, w9, w8
 	ret
 

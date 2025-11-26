@@ -3,8 +3,7 @@ func0000000000000005:
 	add	w9, w0, w1
 	movk	w8, #52428, lsl #16
 	umull	x8, w2, w8
-	lsr	x8, x8, #34
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #34
 	ret
 
 func000000000000000f:
@@ -12,8 +11,7 @@ func000000000000000f:
 	add	w9, w0, w1
 	movk	w8, #10965, lsl #16
 	umull	x8, w2, w8
-	lsr	x8, x8, #40
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #40
 	ret
 
 func0000000000000008:
@@ -21,8 +19,7 @@ func0000000000000008:
 	add	w9, w0, w1
 	movk	w8, #43690, lsl #16
 	umull	x8, w2, w8
-	lsr	x8, x8, #33
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #33
 	ret
 
 func0000000000000000:
@@ -30,7 +27,6 @@ func0000000000000000:
 	add	w9, w0, w1
 	movk	w8, #52428, lsl #16
 	umull	x8, w2, w8
-	lsr	x8, x8, #34
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #34
 	ret
 

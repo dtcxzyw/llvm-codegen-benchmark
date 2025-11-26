@@ -8,15 +8,14 @@ func0000000000000201:
 	ret
 
 func0000000000000406:
-	mov	x9, #2097
-	sub	x8, x1, x2
-	movk	x9, #7340, lsl #16
-	movk	x9, #25690, lsl #32
-	movk	x9, #57147, lsl #48
-	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	lsr	x8, x8, #7
-	add	w8, w8, w9
+	mov	x8, #2097
+	sub	x9, x1, x2
+	movk	x8, #7340, lsl #16
+	movk	x8, #25690, lsl #32
+	movk	x8, #57147, lsl #48
+	smulh	x8, x9, x8
+	lsr	x9, x8, #7
+	add	x8, x9, x8, lsr #63
 	add	w8, w0, w8
 	cmp	w8, #1
 	cset	w0, lt

@@ -17,8 +17,8 @@ func0000000000000018:
 	ret
 
 func000000000000001d:
-	lsr	x8, x0, #52
-	sub	w8, w8, #1075
+	mov	w8, #-1075
+	add	x8, x8, x0, lsr #52
 	and	w0, w8, #0xfffffffe
 	ret
 
@@ -35,8 +35,8 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	lsr	x8, x0, #57
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #57
 	and	w0, w8, #0xfffffffe
 	ret
 

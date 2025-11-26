@@ -1,8 +1,8 @@
 func00000000000003a1:
-	lsr	x9, x0, #52
-	mov	w8, #-1022
+	mov	w8, #-1023
 	cmp	x0, #0
-	sub	w9, w9, #1023
-	csel	w0, w8, w9, eq
+	mov	w9, #-1022
+	add	x8, x8, x0, lsr #52
+	csel	w0, w9, w8, eq
 	ret
 

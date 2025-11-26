@@ -1,12 +1,11 @@
 func0000000000000081:
-	lsr	x8, x1, #3
-	cmn	w8, w0
+	add	x8, x0, x1, lsr #3
+	cmp	w8, #0
 	cset	w0, eq
 	ret
 
 func0000000000000021:
-	lsr	x8, x1, #25
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #25
 	tst	x8, #0x8000
 	cset	w0, eq
 	ret
@@ -26,14 +25,13 @@ func0000000000000008:
 	ret
 
 func00000000000000e1:
-	lsr	x8, x1, #5
-	cmn	w0, w8
+	add	x8, x0, x1, lsr #5
+	cmp	w8, #0
 	cset	w0, eq
 	ret
 
 func0000000000000041:
-	lsr	x8, x1, #32
-	add	w8, w0, w8
+	add	x8, x0, x1, lsr #32
 	tst	x8, #0x100
 	cset	w0, eq
 	ret

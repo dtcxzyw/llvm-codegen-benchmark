@@ -1,8 +1,7 @@
 func000000000000003d:
-	lsr	x9, x1, #12
-	mov	x8, #-4294967296
-	add	w9, w0, w9
-	add	x0, x8, x9, lsl #32
+	add	x8, x0, x1, lsr #12
+	mov	x9, #-4294967296
+	add	x0, x9, x8, lsl #32
 	ret
 
 func0000000000000000:

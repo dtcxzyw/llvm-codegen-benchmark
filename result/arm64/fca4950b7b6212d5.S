@@ -1,13 +1,13 @@
 func0000000000000022:
-	lsr	x8, x1, #4
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #4
 	cmp	w0, w8
 	csel	w0, w0, w8, gt
 	ret
 
 func0000000000000020:
-	lsr	x8, x1, #5
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #5
 	cmp	w0, w8
 	csel	w0, w0, w8, gt
 	ret

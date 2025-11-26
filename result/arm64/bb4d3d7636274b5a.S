@@ -9,12 +9,11 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	mov	x9, #6148914691236517205
-	sub	x8, x1, x2
-	movk	x9, #21846
-	smulh	x8, x8, x9
-	lsr	x9, x8, #63
-	add	w8, w8, w9
+	mov	x8, #6148914691236517205
+	sub	x9, x1, x2
+	movk	x8, #21846
+	smulh	x8, x9, x8
+	add	x8, x8, x8, lsr #63
 	cmp	w8, w0
 	csel	w0, w8, w0, lt
 	ret

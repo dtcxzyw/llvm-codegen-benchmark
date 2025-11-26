@@ -28,8 +28,8 @@ func0000000000000028:
 	ret
 
 func0000000000000001:
-	lsr	x8, x1, #63
-	add	w8, w1, w8
+	mov	w8, w1
+	add	x8, x8, x1, lsr #63
 	sub	w8, w0, w8, lsr #1
 	tst	x8, #0x3f
 	cset	w0, eq

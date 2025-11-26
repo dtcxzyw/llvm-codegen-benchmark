@@ -59,7 +59,7 @@ func0000000000000001:
 	ret
 
 func0000000000000011:
-	lsr	x8, x0, #32
-	add	w0, w8, w1
+	add	x8, x1, x0, lsr #32
+	mov	w0, w8
 	ret
 

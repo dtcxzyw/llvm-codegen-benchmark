@@ -11,9 +11,8 @@ func0000000000000057:
 	ret
 
 func0000000000000040:
-	lsr	x8, x2, #32
-	add	w9, w1, w0
-	add	w8, w9, w8
+	add	x8, x1, x2, lsr #32
+	add	w8, w8, w0
 	lsl	x0, x8, #32
 	ret
 

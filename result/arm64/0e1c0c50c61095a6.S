@@ -1,7 +1,6 @@
 func0000000000000004:
 	sub	x8, x0, x1
-	lsr	x9, x8, #3
-	add	w8, w8, w9
+	add	x8, x8, x8, lsr #3
 	lsl	x0, x8, #34
 	ret
 

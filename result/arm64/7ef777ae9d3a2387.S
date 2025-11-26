@@ -31,10 +31,11 @@ func00000000000002f4:
 	ret
 
 func00000000000000e1:
-	add	x8, x1, x1, lsr #63
+	add	x9, x1, x1, lsr #63
+	mov	w8, #-1
+	add	x8, x8, x9, lsr #1
 	add	x9, x0, #1
-	lsr	x8, x8, #1
-	sub	w8, w8, #1
+	mov	w8, w8
 	cmp	x9, x8
 	cset	w0, eq
 	ret

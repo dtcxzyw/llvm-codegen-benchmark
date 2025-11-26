@@ -64,8 +64,7 @@ func0000000000000013:
 	ret
 
 func0000000000000000:
-	lsr	x8, x1, #32
-	sub	w8, w0, w8
+	sub	x8, x0, x1, lsr #32
 	lsl	x0, x8, #32
 	ret
 

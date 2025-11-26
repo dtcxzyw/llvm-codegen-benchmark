@@ -1,5 +1,4 @@
 func0000000000000000:
-	lsr	x8, x1, #2
-	sub	w0, w0, w8
+	sub	x0, x0, x1, lsr #2
 	ret
 

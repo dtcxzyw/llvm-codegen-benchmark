@@ -5,8 +5,9 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	lsr	x8, x0, #5
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #5
+	mov	w0, w8
 	ret
 
 func0000000000000003:

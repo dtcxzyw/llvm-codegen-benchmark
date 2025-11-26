@@ -1,7 +1,6 @@
 func0000000000000020:
-	lsr	x8, x0, #2
-	mov	w9, #-5432
-	add	w8, w8, w9
+	mov	w8, #-5432
+	add	x8, x8, x0, lsr #2
 	add	w8, w8, w8, lsr #31
 	asr	w0, w8, #1
 	ret

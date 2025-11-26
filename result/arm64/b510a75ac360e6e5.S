@@ -1,6 +1,6 @@
 func000000000000003f:
-	lsr	x8, x2, #32
-	add	w8, w8, w1
+	add	x8, x1, x2, lsr #32
+	mov	w8, w8
 	add	x8, x8, x0
 	add	x0, x8, #1
 	ret

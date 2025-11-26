@@ -13,7 +13,7 @@ func0000000000000004:
 	ret
 
 func0000000000000031:
-	sbfx	x8, x1, #19, #1
-	add	w0, w0, w8
+	lsl	x8, x1, #44
+	add	x0, x0, x8, asr #63
 	ret
 

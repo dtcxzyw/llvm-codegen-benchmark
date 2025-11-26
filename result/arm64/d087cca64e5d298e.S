@@ -24,15 +24,14 @@ func000000000000000c:
 	ret
 
 func0000000000000026:
-	mul	w9, w0, w1
-	mov	w8, #43691
-	movk	w8, #10922, lsl #16
-	smull	x8, w9, w8
-	lsr	x10, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w10
+	mul	w8, w0, w1
+	mov	w9, #43691
+	movk	w9, #10922, lsl #16
+	smull	x9, w8, w9
+	lsr	x10, x9, #32
+	add	x9, x10, x9, lsr #63
 	mov	w10, #6
-	msub	w8, w8, w10, w9
+	msub	w8, w9, w10, w8
 	cmp	w8, #3
 	cset	w0, lt
 	ret

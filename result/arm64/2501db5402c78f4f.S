@@ -20,8 +20,7 @@ func0000000000000010:
 	mov	w8, #8323
 	movk	w8, #33288, lsl #16
 	smull	x8, w0, w8
-	lsr	x8, x8, #32
-	add	w8, w8, w0
+	add	x8, x0, x8, lsr #32
 	asr	w9, w8, #6
 	add	w8, w9, w8, lsr #31
 	add	w0, w8, w1, lsl #1

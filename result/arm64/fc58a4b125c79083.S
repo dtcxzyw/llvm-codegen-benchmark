@@ -4,8 +4,7 @@ func0000000000000086:
 	ret
 
 func00000000000000a6:
-	lsr	x8, x2, #5
-	add	w8, w8, w1
+	add	x8, x1, x2, lsr #5
 	lsl	x8, x8, #32
 	add	x0, x0, x8, asr #27
 	ret

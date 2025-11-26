@@ -8,8 +8,8 @@ func000000000000024a:
 	ret
 
 func000000000000044a:
-	lsr	x8, x2, #5
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x2, lsr #5
 	cmp	w1, w8
 	csel	w8, w1, w8, lt
 	cmp	w0, w8
@@ -17,8 +17,8 @@ func000000000000044a:
 	ret
 
 func000000000000020a:
-	lsr	x8, x2, #32
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x2, lsr #32
 	cmp	w8, w1
 	csel	w8, w8, w1, lt
 	cmp	w0, w8

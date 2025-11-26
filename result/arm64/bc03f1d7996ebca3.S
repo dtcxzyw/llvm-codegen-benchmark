@@ -20,14 +20,12 @@ func000000000000000f:
 	ret
 
 func0000000000000005:
-	lsr	x8, x1, #26
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #26
 	ubfiz	x0, x8, #8, #26
 	ret
 
 func0000000000000000:
-	lsr	x8, x1, #12
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #12
 	ubfiz	x0, x8, #3, #32
 	ret
 

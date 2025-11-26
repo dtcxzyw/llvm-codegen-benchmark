@@ -5,9 +5,9 @@ func0000000000000001:
 	ret
 
 func0000000000000011:
-	lsr	x8, x2, #2
+	mov	w8, #-1
 	tst	w0, #0x1
-	sub	w8, w8, #1
+	add	x8, x8, x2, lsr #2
 	csel	w0, w8, w1, ne
 	ret
 

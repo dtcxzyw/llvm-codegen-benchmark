@@ -1,90 +1,75 @@
 func0000000000000000:
-	lsr	x8, x2, #29
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #29
 	ret
 
 func0000000000000005:
-	lsr	x8, x2, #31
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #31
 	ret
 
 func0000000000000040:
-	lsr	x8, x2, #3
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #3
 	ret
 
 func000000000000007f:
-	lsr	x8, x2, #3
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #3
 	ret
 
 func0000000000000030:
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #32
 	ret
 
 func0000000000000024:
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #32
 	ret
 
 func0000000000000020:
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #32
 	ret
 
 func0000000000000025:
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #32
 	ret
 
 func0000000000000045:
-	lsr	x8, x2, #4
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #4
 	ret
 
 func0000000000000041:
-	lsr	x8, x2, #2
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #2
 	ret
 
 func0000000000000021:
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #32
 	ret
 
 func000000000000003f:
-	lsr	x8, x2, #16
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #16
 	ret
 
 func0000000000000001:
-	lsr	x8, x2, #16
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #16
 	ret
 
 func0000000000000004:
-	lsr	x8, x2, #1
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #1
 	ret
 
 func0000000000000035:
-	lsr	x8, x2, #16
-	add	w9, w0, w1
-	add	w0, w9, w8
+	add	w8, w0, w1
+	add	x0, x8, x2, lsr #16
 	ret
 

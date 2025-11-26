@@ -13,8 +13,7 @@ func0000000000000006:
 	mov	x8, #6148914691236517205
 	movk	x8, #21846
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	add	w8, w8, w9
+	add	x8, x8, x8, lsr #63
 	cmp	w8, w0
 	csel	w8, w8, w0, lt
 	cmp	w8, #3

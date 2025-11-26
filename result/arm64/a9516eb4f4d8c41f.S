@@ -47,8 +47,8 @@ func0000000000000001:
 	sub	x9, x1, x0
 	eor	x8, x8, #0x8000000000000001
 	smulh	x8, x9, x8
-	lsr	x9, x8, #63
-	add	w8, w9, w8, lsr #1
+	lsr	w9, w8, #1
+	add	x8, x9, x8, lsr #63
 	tst	x8, #0x1
 	cset	w0, eq
 	ret

@@ -4,7 +4,7 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	lsr	x8, x1, #32
-	sub	w0, w0, w8
+	sub	x8, x0, x1, lsr #32
+	mov	w0, w8
 	ret
 

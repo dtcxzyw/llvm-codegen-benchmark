@@ -1,6 +1,5 @@
 func0000000000000011:
-	asr	x8, x1, #63
-	add	w0, w0, w8
+	add	x0, x0, x1, asr #63
 	ret
 
 func0000000000000000:

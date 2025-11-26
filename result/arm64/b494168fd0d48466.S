@@ -2,8 +2,7 @@ func0000000000000000:
 	mov	x8, #4398046445568
 	mov	w9, #55296
 	add	x8, x0, x8
-	lsr	x8, x8, #10
-	add	w0, w8, w9
+	add	x0, x9, x8, lsr #10
 	ret
 
 func000000000000006f:
@@ -48,9 +47,9 @@ func0000000000000029:
 	ret
 
 func000000000000006d:
-	add	x8, x0, #63
-	lsr	x8, x8, #6
-	sub	w0, w8, #2
+	mov	w8, #-2
+	add	x9, x0, #63
+	add	x0, x8, x9, lsr #6
 	ret
 
 func0000000000000020:

@@ -1,13 +1,12 @@
 func0000000000000000:
-	mov	x8, #10583
-	asr	x9, x0, #1
-	movk	x8, #52817, lsl #16
-	movk	x8, #51360, lsl #32
-	movk	x8, #6213, lsl #48
-	smulh	x8, x9, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #13
-	add	w0, w8, w9
+	mov	x9, #10583
+	asr	x8, x0, #1
+	movk	x9, #52817, lsl #16
+	movk	x9, #51360, lsl #32
+	movk	x9, #6213, lsl #48
+	smulh	x8, x8, x9
+	lsr	x9, x8, #13
+	add	x0, x9, x8, lsr #63
 	ret
 
 func0000000000000008:

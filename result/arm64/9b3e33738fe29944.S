@@ -21,8 +21,9 @@ func00000000000000b4:
 
 func0000000000000021:
 	add	x8, x1, x1, lsr #63
-	lsr	x8, x8, #1
-	sub	w8, w8, #1
+	mov	w9, #-1
+	add	x8, x9, x8, lsr #1
+	mov	w8, w8
 	cmp	x0, x8
 	cset	w0, eq
 	ret

@@ -30,11 +30,10 @@ func00000000000004a6:
 
 func00000000000000a1:
 	mov	x8, #6148914691236517205
+	add	x9, x0, #1
 	movk	x8, #21846
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	add	w8, w8, w9
-	add	x9, x0, #1
+	add	x8, x8, x8, lsr #63
 	cmp	x9, w8, sxtw
 	cset	w0, eq
 	ret

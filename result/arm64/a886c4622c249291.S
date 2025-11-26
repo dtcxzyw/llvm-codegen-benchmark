@@ -5,10 +5,10 @@ func0000000000000042:
 	ret
 
 func0000000000000043:
-	lsr	x9, x1, #1
-	mov	w8, #6
-	sub	w9, w9, #2
-	smaddl	x0, w9, w8, x0
+	mov	w8, #-2
+	mov	w9, #6
+	add	x8, x8, x1, lsr #1
+	smaddl	x0, w8, w9, x0
 	ret
 
 func0000000000000046:
@@ -36,8 +36,8 @@ func0000000000000044:
 	ret
 
 func0000000000000002:
-	lsr	x8, x1, #4
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #4
 	add	x0, x0, w8, sxtw #2
 	ret
 

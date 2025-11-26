@@ -1,6 +1,5 @@
 func0000000000000005:
-	lsr	x8, x1, #56
-	sub	w8, w0, w8
+	sub	x8, x0, x1, lsr #56
 	and	x0, x8, #0x3
 	ret
 
@@ -15,7 +14,7 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	lsr	x8, x1, #2
-	sub	w0, w0, w8
+	sub	x8, x0, x1, lsr #2
+	mov	w0, w8
 	ret
 

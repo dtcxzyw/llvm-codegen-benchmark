@@ -1,9 +1,8 @@
 func0000000000000020:
-	lsr	x9, x1, #32
-	mov	w8, #61945
-	movk	w8, #64, lsl #16
-	add	w9, w0, w9
-	mul	w0, w9, w8
+	add	x8, x0, x1, lsr #32
+	mov	w9, #61945
+	movk	w9, #64, lsl #16
+	mul	w0, w8, w9
 	ret
 
 func0000000000000040:

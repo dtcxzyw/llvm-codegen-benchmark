@@ -1,13 +1,13 @@
 func0000000000000004:
-	lsr	x8, x0, #4
-	sub	w8, w8, #238
+	mov	w8, #-238
+	add	x8, x8, x0, lsr #4
 	cmn	w8, #9
 	cset	w0, lo
 	ret
 
 func00000000000001a4:
-	lsr	x8, x0, #60
-	sub	w8, w8, #3
+	mov	w8, #-3
+	add	x8, x8, x0, lsr #60
 	cmp	w8, #2
 	cset	w0, lo
 	ret
@@ -19,8 +19,8 @@ func0000000000000101:
 	ret
 
 func0000000000000208:
-	lsr	x8, x0, #2
-	sub	w8, w8, #3
+	mov	w8, #-3
+	add	x8, x8, x0, lsr #2
 	cmn	w8, #2
 	cset	w0, lo
 	ret
@@ -39,20 +39,19 @@ func0000000000000204:
 	ret
 
 func000000000000020a:
-	lsr	x8, x0, #3
-	neg	w8, w8
+	neg	x8, x0, lsr #3
 	lsr	w0, w8, #31
 	ret
 
 func0000000000000206:
-	lsr	x8, x0, #3
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #3
 	lsr	w0, w8, #31
 	ret
 
 func0000000000000234:
-	lsr	x8, x0, #1
-	sub	w8, w8, #3
+	mov	w8, #-3
+	add	x8, x8, x0, lsr #1
 	cmp	w8, #3
 	cset	w0, lo
 	ret
@@ -64,8 +63,7 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	lsr	x8, x0, #2
-	neg	w8, w8
+	neg	x8, x0, lsr #2
 	lsr	w0, w8, #31
 	ret
 
@@ -84,15 +82,15 @@ func0000000000000024:
 	ret
 
 func0000000000000104:
-	lsr	x8, x0, #32
-	sub	w8, w8, #100
+	mov	w8, #-100
+	add	x8, x8, x0, lsr #32
 	cmp	w8, #900
 	cset	w0, lo
 	ret
 
 func0000000000000228:
-	lsr	x8, x0, #3
-	sub	w8, w8, #129
+	mov	w8, #-129
+	add	x8, x8, x0, lsr #3
 	cmn	w8, #128
 	cset	w0, lo
 	ret
@@ -147,8 +145,8 @@ func0000000000000121:
 	ret
 
 func0000000000000108:
-	lsr	x8, x0, #32
-	sub	w8, w8, #63
+	mov	w8, #-63
+	add	x8, x8, x0, lsr #32
 	cmn	w8, #64
 	cset	w0, lo
 	ret

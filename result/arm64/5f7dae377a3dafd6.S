@@ -16,16 +16,16 @@ func000000000000000c:
 	ret
 
 func000000000000006f:
-	add	x8, x1, #63
-	lsr	x8, x8, #6
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x9, x1, #63
+	add	x8, x8, x9, lsr #6
 	add	x0, x0, w8, uxtw #3
 	ret
 
 func0000000000000067:
-	add	x8, x1, #63
-	lsr	x8, x8, #6
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x9, x1, #63
+	add	x8, x8, x9, lsr #6
 	add	x0, x0, w8, uxtw #3
 	ret
 

@@ -9,8 +9,7 @@ func000000000000001e:
 	ret
 
 func0000000000000006:
-	lsr	x8, x0, #22
-	add	w8, w8, w1
+	add	x8, x1, x0, lsr #22
 	and	x0, x8, #0x7ff
 	ret
 

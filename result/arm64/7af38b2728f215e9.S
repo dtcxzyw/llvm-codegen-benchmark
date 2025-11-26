@@ -5,9 +5,9 @@ func0000000000000029:
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	umull	x8, w8, w9
-	lsr	x8, x8, #34
-	sub	w8, w8, #175, lsl #12
-	sub	w0, w8, #2669
+	mov	w9, #1427
+	movk	w9, #65525, lsl #16
+	add	x0, x9, x8, lsr #34
 	ret
 
 func0000000000000003:
@@ -51,8 +51,8 @@ func0000000000000079:
 	mov	w9, #7557
 	movk	w9, #28633, lsl #16
 	umull	x8, w8, w9
-	lsr	x8, x8, #48
-	sub	w0, w8, #1
+	mov	w9, #-1
+	add	x0, x9, x8, lsr #48
 	ret
 
 func000000000000002b:

@@ -5,9 +5,8 @@ func00000000000000a4:
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	umull	x8, w8, w9
-	add	w9, w1, w0
-	lsr	x8, x8, #34
-	add	w0, w9, w8
+	add	x8, x1, x8, lsr #34
+	add	w0, w8, w0
 	ret
 
 func00000000000001e5:
@@ -17,9 +16,8 @@ func00000000000001e5:
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	umull	x8, w8, w9
-	add	w9, w0, w1
-	lsr	x8, x8, #34
-	add	w0, w9, w8
+	add	x8, x1, x8, lsr #34
+	add	w0, w0, w8
 	ret
 
 func00000000000000a0:
@@ -30,9 +28,8 @@ func00000000000000a0:
 	mov	w9, #34079
 	movk	w9, #20971, lsl #16
 	umull	x8, w8, w9
-	add	w9, w1, w0
-	lsr	x8, x8, #37
-	add	w0, w9, w8
+	add	x8, x1, x8, lsr #37
+	add	w0, w8, w0
 	ret
 
 func00000000000001e0:
@@ -43,9 +40,8 @@ func00000000000001e0:
 	mov	w9, #34079
 	movk	w9, #20971, lsl #16
 	umull	x8, w8, w9
-	add	w9, w1, w0
-	lsr	x8, x8, #37
-	add	w0, w9, w8
+	add	x8, x1, x8, lsr #37
+	add	w0, w8, w0
 	ret
 
 func00000000000000a5:
@@ -55,8 +51,7 @@ func00000000000000a5:
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	umull	x8, w8, w9
-	add	w9, w1, w0
-	lsr	x8, x8, #34
-	add	w0, w9, w8
+	add	x8, x1, x8, lsr #34
+	add	w0, w8, w0
 	ret
 

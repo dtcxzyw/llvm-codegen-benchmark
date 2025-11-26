@@ -4,8 +4,9 @@ func0000000000000005:
 	ret
 
 func0000000000000015:
-	sbfiz	x8, x1, #8, #16
-	add	w0, w0, w8
+	lsl	x8, x1, #48
+	add	x8, x0, x8, asr #40
+	mov	w0, w8
 	ret
 
 func0000000000000000:
@@ -14,7 +15,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	sbfx	x8, x1, #61, #1
-	add	w0, w8, w0
+	lsl	x8, x1, #2
+	add	x8, x0, x8, asr #63
+	mov	w0, w8
 	ret
 

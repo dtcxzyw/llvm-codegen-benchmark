@@ -1,11 +1,11 @@
 func0000000000000000:
 	mov	x8, #20165
+	mov	w9, #-3
 	movk	x8, #50412, lsl #16
 	movk	x8, #60494, lsl #32
 	movk	x8, #20164, lsl #48
 	umulh	x8, x0, x8
-	lsr	x8, x8, #2
-	sub	w0, w8, #3
+	add	x0, x9, x8, lsr #2
 	ret
 
 func0000000000000001:

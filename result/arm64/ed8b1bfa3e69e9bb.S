@@ -6,8 +6,7 @@ func0000000000000003:
 	mov	w10, #129
 	umull	x8, w1, w8
 	csel	w9, w10, w9, ne
-	lsr	x8, x8, #39
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #39
 	ret
 
 func0000000000000001:
@@ -18,7 +17,6 @@ func0000000000000001:
 	mov	w10, #3
 	umull	x8, w1, w8
 	csel	w9, w10, w9, ne
-	lsr	x8, x8, #39
-	add	w0, w9, w8
+	add	x0, x9, x8, lsr #39
 	ret
 

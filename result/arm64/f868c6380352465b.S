@@ -9,8 +9,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000064:
-	lsr	x8, x2, #63
-	add	w8, w2, w8
+	mov	w8, w2
+	add	x8, x8, x2, lsr #63
 	lsr	w8, w8, #1
 	and	x8, x8, #0x7ffffffe
 	add	x8, x1, x8, lsl #2

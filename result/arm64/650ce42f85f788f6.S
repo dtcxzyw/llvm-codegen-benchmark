@@ -11,21 +11,19 @@ func0000000000000016:
 	ret
 
 func0000000000000013:
-	lsr	x8, x2, #2
-	add	w8, w1, w8
+	add	x8, x1, x2, lsr #2
+	mov	w8, w8
 	add	x0, x0, x8, lsl #5
 	ret
 
 func0000000000000004:
-	asr	x9, x2, #63
-	mov	w8, #320
-	add	w9, w9, w1
-	umaddl	x0, w9, w8, x0
+	add	x8, x1, x2, asr #63
+	mov	w9, #320
+	umaddl	x0, w8, w9, x0
 	ret
 
 func0000000000000007:
-	lsr	x8, x2, #1
-	add	w8, w8, w1
+	add	x8, x1, x2, lsr #1
 	add	x0, x0, w8, uxtw #2
 	ret
 

@@ -1,6 +1,5 @@
 func0000000000000041:
-	lsr	x8, x1, #4
-	add	w8, w0, w8
+	add	x8, x0, x1, lsr #4
 	sbfiz	x0, x8, #4, #32
 	ret
 

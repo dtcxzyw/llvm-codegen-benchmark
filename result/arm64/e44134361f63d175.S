@@ -17,10 +17,10 @@ func0000000000000035:
 	ret
 
 func0000000000000004:
-	lsr	x8, x2, #63
-	lsr	x9, x1, #63
-	add	w8, w2, w8
-	add	w9, w1, w9
+	mov	w8, w2
+	mov	w9, w1
+	add	x8, x8, x2, lsr #63
+	add	x9, x9, x1, lsr #63
 	add	w8, w0, w8, lsr #1
 	sub	w8, w8, w9, lsr #1
 	and	x0, x8, #0x3f

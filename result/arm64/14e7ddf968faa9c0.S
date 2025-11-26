@@ -11,20 +11,17 @@ func0000000000000008:
 	ret
 
 func0000000000000041:
-	lsr	x8, x1, #2
-	mvn	w9, w0
-	add	w0, w9, w8
+	mvn	w8, w0
+	add	x0, x8, x1, lsr #2
 	ret
 
 func0000000000000051:
-	lsr	x8, x1, #2
-	mvn	w9, w0
-	add	w0, w9, w8
+	mvn	w8, w0
+	add	x0, x8, x1, lsr #2
 	ret
 
 func0000000000000031:
-	lsr	x8, x1, #2
-	mvn	w9, w0
-	add	w0, w9, w8
+	mvn	w8, w0
+	add	x0, x8, x1, lsr #2
 	ret
 

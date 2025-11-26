@@ -11,8 +11,7 @@ func000000000000001f:
 	ret
 
 func000000000000000b:
-	lsr	x8, x2, #26
-	add	w8, w8, w1
+	add	x8, x1, x2, lsr #26
 	ubfiz	x8, x8, #8, #26
 	orr	x0, x0, x8
 	ret

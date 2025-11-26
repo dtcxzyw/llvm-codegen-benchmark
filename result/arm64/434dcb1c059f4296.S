@@ -35,8 +35,8 @@ func0000000000000028:
 	ret
 
 func0000000000000001:
-	lsr	x8, x1, #63
-	add	w8, w1, w8
+	mov	w8, w1
+	add	x8, x8, x1, lsr #63
 	lsr	w8, w8, #1
 	cmp	x0, x8
 	cset	w0, eq
@@ -56,9 +56,8 @@ func0000000000000019:
 	mov	x8, #-6148914691236517206
 	eor	x8, x8, #0x8000000000000001
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #3
-	add	w8, w8, w9
+	lsr	x9, x8, #3
+	add	x8, x9, x8, lsr #63
 	and	x8, x8, #0x7fffffff
 	cmp	x0, x8
 	cset	w0, hs
@@ -71,9 +70,8 @@ func0000000000000014:
 	movk	x8, #45590, lsl #48
 	smulh	x8, x1, x8
 	add	x8, x8, x1
-	lsr	x9, x8, #63
-	lsr	x8, x8, #7
-	add	w8, w8, w9
+	lsr	x9, x8, #7
+	add	x8, x9, x8, lsr #63
 	and	x8, x8, #0x7fffffff
 	cmp	x0, x8
 	cset	w0, lo

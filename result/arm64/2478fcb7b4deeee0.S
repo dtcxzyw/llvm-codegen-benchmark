@@ -21,7 +21,7 @@ func0000000000000001:
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	umull	x8, w8, w9
-	lsr	x8, x8, #35
-	sub	w0, w8, #1
+	mov	w9, #-1
+	add	x0, x9, x8, lsr #35
 	ret
 

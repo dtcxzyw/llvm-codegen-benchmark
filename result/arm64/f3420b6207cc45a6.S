@@ -23,9 +23,8 @@ func0000000000000126:
 	sub	w9, w1, #2
 	movk	w8, #10922, lsl #16
 	smull	x8, w9, w8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w9
+	lsr	x9, x8, #32
+	add	x8, x9, x8, lsr #63
 	sub	w8, w8, #1
 	cmp	w0, w8
 	cset	w0, lt

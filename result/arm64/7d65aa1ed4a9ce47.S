@@ -16,17 +16,16 @@ func0000000000000088:
 	ret
 
 func0000000000000361:
-	lsr	x8, x0, #48
-	add	w9, w1, w2
-	add	w8, w8, w9
+	add	w8, w1, w2
+	add	x8, x8, x0, lsr #48
 	mvn	w8, w8
 	lsr	w0, w8, #31
 	ret
 
 func00000000000003e1:
-	lsr	x8, x2, #5
-	add	w9, w0, w1
-	cmn	w9, w8
+	add	w8, w0, w1
+	add	x8, x8, x2, lsr #5
+	cmp	w8, #0
 	cset	w0, eq
 	ret
 

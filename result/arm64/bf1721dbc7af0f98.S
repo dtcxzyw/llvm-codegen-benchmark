@@ -2,8 +2,7 @@ func0000000000000004:
 	mov	w8, #32897
 	movk	w8, #32896, lsl #16
 	umull	x8, w1, w8
-	lsr	x8, x8, #39
-	add	w8, w1, w8
+	add	x8, x1, x8, lsr #39
 	orr	w0, w0, w8, lsl #24
 	ret
 

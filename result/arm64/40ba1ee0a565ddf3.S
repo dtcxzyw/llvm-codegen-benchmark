@@ -1,7 +1,6 @@
 func0000000000000021:
-	lsr	x8, x0, #23
-	mov	w9, #33554428
-	sub	w8, w9, w8
+	mov	w8, #33554428
+	sub	x8, x8, x0, lsr #23
 	tst	x8, #0x1000000
 	cset	w0, eq
 	ret

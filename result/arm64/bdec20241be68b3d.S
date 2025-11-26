@@ -1,20 +1,20 @@
 func0000000000000052:
-	lsr	x8, x1, #32
-	add	w0, w0, w8
+	add	x8, x0, x1, lsr #32
+	mov	w0, w8
 	ret
 
 func000000000000005f:
-	lsr	x8, x1, #12
-	add	w0, w0, w8
+	add	x8, x0, x1, lsr #12
+	mov	w0, w8
 	ret
 
 func0000000000000040:
-	lsr	x8, x1, #32
-	add	w0, w0, w8
+	add	x8, x0, x1, lsr #32
+	mov	w0, w8
 	ret
 
 func0000000000000051:
-	lsr	x8, x1, #32
-	add	w0, w0, w8
+	add	x8, x0, x1, lsr #32
+	mov	w0, w8
 	ret
 

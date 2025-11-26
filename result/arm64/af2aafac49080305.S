@@ -12,8 +12,9 @@ func0000000000000000:
 	ret
 
 func00000000000000db:
-	add	x8, x0, #64
-	lsr	x8, x8, #6
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x9, x0, #64
+	add	x8, x8, x9, lsr #6
+	mov	w0, w8
 	ret
 

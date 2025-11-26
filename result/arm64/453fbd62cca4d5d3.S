@@ -1,8 +1,7 @@
 func000000000000006e:
-	lsr	x8, x2, #63
-	add	w9, w1, w0
-	add	w8, w9, w8
+	add	x8, x1, x2, lsr #63
 	mov	w9, #255
+	add	w8, w8, w0
 	cmp	w8, #255
 	csel	w0, w8, w9, lo
 	ret

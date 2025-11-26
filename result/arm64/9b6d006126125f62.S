@@ -1,12 +1,10 @@
 func0000000000000426:
-	lsr	x8, x1, #3
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #3
 	lsr	w0, w8, #31
 	ret
 
 func0000000000000528:
-	lsr	x8, x1, #2
-	add	w8, w0, w8
+	add	x8, x0, x1, lsr #2
 	cmp	w8, #136
 	cset	w0, hi
 	ret

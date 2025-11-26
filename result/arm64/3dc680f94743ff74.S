@@ -5,21 +5,21 @@ func0000000000000010:
 	ret
 
 func0000000000000011:
-	sub	x8, x0, x1
-	lsr	x8, x8, #3
-	sub	w0, w8, #1
+	mov	w8, #-1
+	sub	x9, x0, x1
+	add	x0, x8, x9, lsr #3
 	ret
 
 func0000000000000009:
-	sub	x8, x0, x1
-	lsr	x8, x8, #12
-	sub	w0, w8, #32
+	mov	w8, #-32
+	sub	x9, x0, x1
+	add	x0, x8, x9, lsr #12
 	ret
 
 func0000000000000000:
-	sub	x8, x0, x1
-	lsr	x8, x8, #2
-	sub	w0, w8, #1
+	mov	w8, #-1
+	sub	x9, x0, x1
+	add	x0, x8, x9, lsr #2
 	ret
 
 func0000000000000001:
@@ -41,9 +41,9 @@ func0000000000000013:
 	ret
 
 func0000000000000058:
-	sub	x8, x0, x1
-	lsr	x8, x8, #5
-	sub	w0, w8, #1
+	mov	w8, #-1
+	sub	x9, x0, x1
+	add	x0, x8, x9, lsr #5
 	ret
 
 func0000000000000040:

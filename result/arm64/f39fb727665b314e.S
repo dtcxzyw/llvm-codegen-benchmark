@@ -12,9 +12,8 @@ func0000000000000020:
 	add	w9, w1, #2
 	movk	w8, #21845, lsl #16
 	smull	x8, w9, w8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #32
-	add	w8, w8, w9
+	lsr	x9, x8, #32
+	add	x8, x9, x8, lsr #63
 	add	x8, x0, w8, sxtw #2
 	sub	x0, x8, #4
 	ret

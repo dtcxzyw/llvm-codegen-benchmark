@@ -1,18 +1,15 @@
 func0000000000000083:
-	lsr	x8, x1, #3
-	sub	w8, w0, w8
+	sub	x8, x0, x1, lsr #3
 	ubfiz	x0, x8, #2, #32
 	ret
 
 func0000000000000042:
-	lsr	x8, x1, #32
-	sub	w8, w0, w8
+	sub	x8, x0, x1, lsr #32
 	lsl	x0, x8, #32
 	ret
 
 func000000000000004a:
-	lsr	x8, x1, #32
-	sub	w8, w0, w8
+	sub	x8, x0, x1, lsr #32
 	lsl	x0, x8, #32
 	ret
 

@@ -1,6 +1,7 @@
 func00000000000000e1:
-	lsr	x8, x1, #2
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #2
+	mov	w8, w8
 	cmp	x0, x8
 	cset	w0, eq
 	ret
@@ -53,15 +54,17 @@ func0000000000000021:
 	ret
 
 func0000000000000074:
-	lsr	x8, x1, #6
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #6
+	mov	w8, w8
 	cmp	x0, x8
 	cset	w0, lo
 	ret
 
 func00000000000000f4:
-	lsr	x8, x1, #4
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x1, lsr #4
+	mov	w8, w8
 	cmp	x0, x8
 	cset	w0, lo
 	ret

@@ -1,6 +1,5 @@
 func0000000000000010:
-	lsr	x8, x2, #32
-	add	w8, w1, w8
+	add	x8, x1, x2, lsr #32
 	cmp	w0, w8
 	csel	w0, w0, w8, hi
 	ret

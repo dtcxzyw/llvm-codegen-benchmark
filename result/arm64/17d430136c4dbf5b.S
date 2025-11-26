@@ -3,8 +3,7 @@ func0000000000000001:
 	add	w9, w0, w1
 	movk	w8, #37282, lsl #16
 	smull	x8, w9, w8
-	lsr	x8, x8, #32
-	add	w8, w8, w9
+	add	x8, x9, x8, lsr #32
 	asr	w10, w8, #11
 	add	w8, w10, w8, lsr #31
 	mov	w10, #3600

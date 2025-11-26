@@ -19,8 +19,7 @@ func0000000000000013:
 	ret
 
 func0000000000000010:
-	lsr	x8, x1, #3
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #3
 	lsl	x0, x8, #32
 	ret
 
@@ -40,8 +39,7 @@ func0000000000000012:
 	ret
 
 func0000000000000000:
-	asr	x8, x1, #52
-	add	w8, w0, w8
+	add	x8, x0, x1, asr #52
 	lsl	x0, x8, #32
 	ret
 

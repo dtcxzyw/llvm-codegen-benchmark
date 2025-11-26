@@ -29,8 +29,7 @@ func000000000000007b:
 	ret
 
 func0000000000000042:
-	lsr	x8, x0, #32
-	add	w0, w8, w1
+	add	x0, x1, x0, lsr #32
 	ret
 
 func0000000000000000:
@@ -49,7 +48,6 @@ func0000000000000022:
 	ret
 
 func0000000000000046:
-	lsr	x8, x0, #32
-	add	w0, w8, w1
+	add	x0, x1, x0, lsr #32
 	ret
 

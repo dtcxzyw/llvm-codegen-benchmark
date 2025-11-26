@@ -19,15 +19,14 @@ func0000000000000003:
 	movk	x8, #28885, lsl #48
 	smulh	x8, x0, x8
 	sub	x8, x8, x0
-	lsr	x9, x8, #63
-	lsr	x8, x8, #25
-	add	w8, w8, w9
+	lsr	x9, x8, #25
+	add	x8, x9, x8, lsr #63
 	lsl	w0, w8, #1
 	ret
 
 func0000000000000000:
-	lsr	x8, x0, #63
-	add	w8, w0, w8
+	mov	w8, w0
+	add	x8, x8, x0, lsr #63
 	and	w0, w8, #0xfffffffe
 	ret
 

@@ -71,8 +71,9 @@ func0000000000000009:
 	ret
 
 func0000000000000019:
-	add	x8, x0, #63
-	lsr	x8, x8, #6
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x9, x0, #63
+	add	x8, x8, x9, lsr #6
+	mov	w0, w8
 	ret
 

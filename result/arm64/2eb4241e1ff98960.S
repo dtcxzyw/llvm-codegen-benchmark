@@ -1,7 +1,6 @@
 func0000000000000002:
-	lsr	x8, x1, #48
-	mov	w9, #47
-	sub	w8, w9, w8
+	mov	w8, #47
+	sub	x8, x8, x1, lsr #48
 	lsr	x0, x0, x8
 	ret
 

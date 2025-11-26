@@ -6,7 +6,8 @@ func0000000000000005:
 
 func0000000000000001:
 	add	x8, x0, x0, lsr #63
-	lsr	x8, x8, #1
-	sub	w0, w8, #1
+	mov	w9, #-1
+	add	x8, x9, x8, lsr #1
+	mov	w0, w8
 	ret
 

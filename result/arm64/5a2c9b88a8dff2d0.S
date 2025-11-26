@@ -24,12 +24,11 @@ func000000000000001d:
 	ret
 
 func0000000000000000:
-	lsr	x8, x1, #4
-	add	w0, w8, w0
+	add	x0, x0, x1, lsr #4
 	ret
 
 func0000000000000005:
-	sbfx	x8, x1, #3, #29
-	add	w0, w8, w0
+	lsl	x8, x1, #32
+	add	x0, x0, x8, asr #35
 	ret
 

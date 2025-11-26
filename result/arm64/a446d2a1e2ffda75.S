@@ -1,13 +1,11 @@
 func00000000000000a1:
-	lsr	x8, x1, #32
-	add	w8, w8, w0
+	add	x8, x0, x1, lsr #32
 	tst	x8, #0x3f
 	cset	w0, eq
 	ret
 
 func000000000000000c:
-	lsr	x8, x1, #52
-	add	w8, w0, w8
+	add	x8, x0, x1, lsr #52
 	tst	x8, #0x7
 	cset	w0, ne
 	ret

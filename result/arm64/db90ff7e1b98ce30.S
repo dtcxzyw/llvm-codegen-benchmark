@@ -3,8 +3,7 @@ func0000000000000000:
 	mov	w9, #31961
 	movk	w9, #22982, lsl #16
 	umull	x8, w8, w9
-	lsr	x8, x8, #39
-	sub	w8, w1, w8
+	sub	x8, x1, x8, lsr #39
 	add	w0, w8, w0
 	ret
 
@@ -23,8 +22,7 @@ func0000000000000004:
 	mov	w8, #34079
 	movk	w8, #20971, lsl #16
 	umull	x8, w2, w8
-	lsr	x8, x8, #37
-	sub	w8, w1, w8
+	sub	x8, x1, x8, lsr #37
 	add	w0, w0, w8
 	ret
 

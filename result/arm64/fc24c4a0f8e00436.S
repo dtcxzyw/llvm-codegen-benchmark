@@ -6,10 +6,10 @@ func000000000000006f:
 	ret
 
 func000000000000006d:
-	mov	w8, w0
-	add	x8, x8, #63
-	lsr	x8, x8, #6
-	sub	w0, w8, #2
+	mov	w9, w0
+	mov	w8, #-2
+	add	x9, x9, #63
+	add	x0, x8, x9, lsr #6
 	ret
 
 func0000000000000061:

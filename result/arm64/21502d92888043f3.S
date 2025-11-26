@@ -54,9 +54,8 @@ func0000000000000061:
 	movk	x8, #60494, lsl #32
 	movk	x8, #20164, lsl #48
 	smulh	x8, x1, x8
-	lsr	x9, x8, #63
-	lsr	x8, x8, #3
-	add	w8, w8, w9
+	lsr	x9, x8, #3
+	add	x8, x9, x8, lsr #63
 	add	w9, w0, #1
 	cmp	w9, w8
 	cset	w0, eq
@@ -109,9 +108,8 @@ func0000000000000066:
 	movk	x8, #45590, lsl #48
 	smulh	x8, x1, x8
 	add	x8, x8, x1
-	lsr	x9, x8, #63
-	lsr	x8, x8, #7
-	add	w8, w8, w9
+	lsr	x9, x8, #7
+	add	x8, x9, x8, lsr #63
 	add	w9, w0, #1
 	cmp	w9, w8
 	cset	w0, lt

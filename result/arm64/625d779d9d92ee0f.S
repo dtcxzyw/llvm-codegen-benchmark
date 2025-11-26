@@ -1,6 +1,7 @@
 func0000000000000010:
-	lsr	x8, x0, #32
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #32
+	mov	w0, w8
 	ret
 
 func0000000000000020:
@@ -9,8 +10,9 @@ func0000000000000020:
 	ret
 
 func0000000000000021:
-	lsr	x8, x0, #3
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #3
+	mov	w0, w8
 	ret
 
 func0000000000000000:
@@ -24,18 +26,21 @@ func0000000000000027:
 	ret
 
 func0000000000000023:
-	lsr	x8, x0, #1
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #1
+	mov	w0, w8
 	ret
 
 func0000000000000001:
-	lsr	x8, x0, #3
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #3
+	mov	w0, w8
 	ret
 
 func0000000000000022:
-	lsr	x8, x0, #2
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #2
+	mov	w0, w8
 	ret
 
 func000000000000001f:
@@ -44,8 +49,9 @@ func000000000000001f:
 	ret
 
 func0000000000000013:
-	lsr	x8, x0, #32
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #32
+	mov	w0, w8
 	ret
 
 func0000000000000017:
@@ -54,7 +60,8 @@ func0000000000000017:
 	ret
 
 func000000000000001b:
-	lsr	x8, x0, #6
-	sub	w0, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #6
+	mov	w0, w8
 	ret
 

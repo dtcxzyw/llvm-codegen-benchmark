@@ -32,16 +32,15 @@ func00000000000000a4:
 	ret
 
 func0000000000000208:
-	lsr	x8, x0, #2
-	mov	w9, #-65535
-	add	w8, w8, w9
+	mov	w8, #-65535
+	add	x8, x8, x0, lsr #2
 	cmn	w8, #16, lsl #12
 	cset	w0, lo
 	ret
 
 func0000000000000206:
-	lsr	x8, x0, #3
-	sub	w8, w8, #1
+	mov	w8, #-1
+	add	x8, x8, x0, lsr #3
 	lsr	w0, w8, #31
 	ret
 

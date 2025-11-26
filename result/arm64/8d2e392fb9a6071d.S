@@ -33,14 +33,13 @@ func0000000000000268:
 func0000000000000068:
 	mov	x8, #-6148914691236517206
 	asr	x9, x0, #5
-	mov	x10, #-6148914691236517206
+	mov	x11, #-6148914691236517206
 	eor	x8, x8, #0x8000000000000001
-	movk	x10, #43691
+	movk	x11, #43691
 	smulh	x8, x1, x8
-	mul	x9, x9, x10
-	lsr	x11, x8, #63
-	lsr	x8, x8, #4
-	add	w8, w8, w11
+	mul	x9, x9, x11
+	lsr	x10, x8, #4
+	add	x8, x10, x8, lsr #63
 	sxtw	x8, w8
 	cmp	x8, x9
 	cset	w0, hi
@@ -49,14 +48,13 @@ func0000000000000068:
 func0000000000000064:
 	mov	x8, #-6148914691236517206
 	asr	x9, x0, #5
-	mov	x10, #-6148914691236517206
+	mov	x11, #-6148914691236517206
 	eor	x8, x8, #0x8000000000000001
-	movk	x10, #43691
+	movk	x11, #43691
 	smulh	x8, x1, x8
-	mul	x9, x9, x10
-	lsr	x11, x8, #63
-	lsr	x8, x8, #4
-	add	w8, w8, w11
+	mul	x9, x9, x11
+	lsr	x10, x8, #4
+	add	x8, x10, x8, lsr #63
 	sxtw	x8, w8
 	cmp	x8, x9
 	cset	w0, lo

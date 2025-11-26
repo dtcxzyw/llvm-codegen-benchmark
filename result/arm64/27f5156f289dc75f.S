@@ -17,15 +17,13 @@ func0000000000000201:
 	ret
 
 func0000000000000006:
-	lsr	x8, x1, #4
-	neg	w8, w8
+	neg	x8, x1, lsr #4
 	cmp	w0, w8
 	cset	w0, lt
 	ret
 
 func000000000000000a:
-	lsr	x8, x1, #4
-	neg	w8, w8
+	neg	x8, x1, lsr #4
 	cmp	w0, w8
 	cset	w0, gt
 	ret
