@@ -4,8 +4,8 @@ func0000000000000005:
 	mul	w8, w1, w8
 	movk	w9, #20971, lsl #16
 	smull	x8, w8, w9
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #37
+	add	x8, x9, x8, lsr #63
 	cmp	w0, w8
 	csel	w0, w0, w8, gt
 	ret

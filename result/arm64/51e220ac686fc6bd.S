@@ -8,8 +8,8 @@ func000000000000000a:
 	mov	w8, #36409
 	movk	w8, #14563, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #33
+	add	x8, x9, x8, lsr #63
 	cmp	w8, w0
 	cset	w0, gt
 	ret

@@ -18,11 +18,11 @@ func0000000000000007:
 
 func0000000000000005:
 	mov	w8, #3121
-	mov	w9, #21
 	movk	w8, #12483, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #34
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #34
+	add	x8, x9, x8, lsr #63
+	mov	w9, #21
 	msub	w8, w8, w9, w1
 	add	w8, w8, w0
 	sub	w0, w8, #1

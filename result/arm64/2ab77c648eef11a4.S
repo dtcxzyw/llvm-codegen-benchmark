@@ -11,8 +11,8 @@ func0000000000000001:
 	mov	w8, #45613
 	movk	w8, #61341, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #38
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #38
+	add	x8, x9, x8, lsr #63
 	cmp	x0, w8, sxtw
 	cset	w0, eq
 	ret
@@ -21,8 +21,8 @@ func000000000000002a:
 	mov	w8, #56963
 	movk	w8, #17179, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #50
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #50
+	add	x8, x9, x8, lsr #63
 	add	x8, x0, w8, sxtw
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1

@@ -15,8 +15,8 @@ func0000000000000010:
 	csel	w9, w10, w9, mi
 	smull	x8, w0, w8
 	asr	w9, w9, #3
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	asr	x11, x8, #33
+	add	x8, x11, x8, lsr #63
 	mul	w0, w8, w9
 	ret
 

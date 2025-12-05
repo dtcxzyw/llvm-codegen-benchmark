@@ -9,11 +9,11 @@ func0000000000000001:
 
 func000000000000000a:
 	mov	w8, #26215
-	mov	w9, #20
 	movk	w8, #26214, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #35
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #35
+	add	x8, x9, x8, lsr #63
+	mov	w9, #20
 	msub	w8, w8, w9, w1
 	cmp	w0, w8
 	cset	w0, gt
@@ -21,11 +21,11 @@ func000000000000000a:
 
 func000000000000000b:
 	mov	w8, #34079
-	mov	w9, #100
 	movk	w8, #20971, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #37
+	add	x8, x9, x8, lsr #63
+	mov	w9, #100
 	msub	w8, w8, w9, w1
 	cmp	w0, w8
 	cset	w0, ge
@@ -33,11 +33,11 @@ func000000000000000b:
 
 func0000000000000006:
 	mov	w8, #34079
-	mov	w9, #100
 	movk	w8, #20971, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #37
+	add	x8, x9, x8, lsr #63
+	mov	w9, #100
 	msub	w8, w8, w9, w1
 	cmp	w0, w8
 	cset	w0, lt

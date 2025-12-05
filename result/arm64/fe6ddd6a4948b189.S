@@ -25,8 +25,8 @@ func0000000000000095:
 	madd	w9, w2, w9, w1
 	smull	x8, w2, w8
 	add	w9, w9, w0
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x10, x8, #37
+	add	x8, x10, x8, lsr #63
 	add	w0, w9, w8
 	ret
 

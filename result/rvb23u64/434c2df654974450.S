@@ -9,8 +9,7 @@ func0000000000000002:
 	srai	a0, a0, 37
 	add	a0, a0, a1
 	sh1add	a0, a0, a0
-	slli	a1, a0, 1
-	srli	a1, a1, 62
+	srliw	a1, a0, 30
 	add	a0, a0, a1
 	srai	a0, a0, 2
 	neg	a0, a0

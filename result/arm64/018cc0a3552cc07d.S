@@ -8,8 +8,8 @@ func0000000000000000:
 	smull	x8, w1, w8
 	csel	w9, w10, w9, mi
 	add	w9, w0, w9, asr #2
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	asr	x11, x8, #33
+	add	x8, x11, x8, lsr #63
 	add	w0, w9, w8
 	ret
 

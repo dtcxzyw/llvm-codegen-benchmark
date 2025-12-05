@@ -16,8 +16,8 @@ func00000000000000a0:
 	movk	w8, #44564, lsl #16
 	smull	x8, w9, w8
 	madd	w9, w9, w10, w0
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x11, x8, #37
+	add	x8, x11, x8, lsr #63
 	add	w0, w9, w8
 	ret
 
@@ -39,8 +39,8 @@ func00000000000000a5:
 	movk	w8, #44564, lsl #16
 	smull	x8, w9, w8
 	madd	w9, w9, w10, w0
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x11, x8, #37
+	add	x8, x11, x8, lsr #63
 	add	w0, w9, w8
 	ret
 

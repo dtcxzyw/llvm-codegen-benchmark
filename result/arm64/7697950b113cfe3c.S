@@ -1,8 +1,8 @@
 func0000000000000000:
 	sxtw	x8, w0
 	add	x8, x8, x8, lsl #30
-	asr	x8, x8, #61
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #61
+	add	x8, x9, x8, lsr #63
 	add	w8, w8, w8, lsl #31
 	add	w8, w0, w8
 	scvtf	d0, w8

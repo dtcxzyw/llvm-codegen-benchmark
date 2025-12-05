@@ -11,8 +11,8 @@ func0000000000000024:
 	add	w8, w2, #34
 	movk	w9, #26214, lsl #16
 	smull	x8, w8, w9
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #33
+	add	x8, x9, x8, lsr #63
 	add	w8, w1, w8
 	sub	w0, w8, w0
 	ret
@@ -22,8 +22,8 @@ func0000000000000020:
 	add	w8, w2, #1899
 	movk	w9, #20971, lsl #16
 	smull	x8, w8, w9
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #37
+	add	x8, x9, x8, lsr #63
 	add	w8, w8, w1
 	sub	w0, w8, w0
 	ret

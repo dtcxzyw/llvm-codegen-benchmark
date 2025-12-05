@@ -4,8 +4,8 @@ func0000000000000000:
 	sub	w8, w8, w0
 	movk	w9, #14563, lsl #16
 	smull	x9, w8, w9
-	asr	x9, x9, #33
-	add	w9, w9, w9, lsr #31
+	asr	x10, x9, #33
+	add	x9, x10, x9, lsr #63
 	add	w9, w9, w9, lsl #3
 	sub	w0, w8, w9
 	ret

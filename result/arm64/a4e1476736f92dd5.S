@@ -6,8 +6,8 @@ func0000000000000065:
 	smull	x8, w1, w8
 	sub	w9, w9, #175, lsl #12
 	sub	w9, w9, #2363
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x10, x8, #37
+	add	x8, x10, x8, lsr #63
 	add	w0, w9, w8
 	ret
 
@@ -19,8 +19,8 @@ func0000000000000064:
 	smull	x8, w1, w8
 	sub	w9, w9, #175, lsl #12
 	sub	w9, w9, #2363
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x10, x8, #37
+	add	x8, x10, x8, lsr #63
 	add	w0, w9, w8
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000060:
 	smull	x8, w1, w8
 	sub	w9, w9, #175, lsl #12
 	sub	w9, w9, #2363
-	asr	x8, x8, #37
-	add	w8, w8, w8, lsr #31
+	asr	x10, x8, #37
+	add	x8, x10, x8, lsr #63
 	add	w0, w9, w8
 	ret
 

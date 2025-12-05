@@ -30,8 +30,8 @@ func0000000000000003:
 	add	w9, w0, #17
 	movk	w8, #30840, lsl #16
 	smull	x8, w9, w8
-	asr	x8, x8, #35
-	add	w8, w8, w8, lsr #31
+	asr	x10, x8, #35
+	add	x8, x10, x8, lsr #63
 	add	w8, w8, w8, lsl #4
 	sub	w0, w9, w8
 	ret

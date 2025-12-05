@@ -12,8 +12,8 @@ func00000000000000a1:
 	cmp	w1, #0
 	movk	w8, #4194, lsl #16
 	smull	x8, w0, w8
-	asr	x8, x8, #38
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #38
+	add	x8, x9, x8, lsr #63
 	cinc	w0, w8, gt
 	ret
 
@@ -22,8 +22,8 @@ func0000000000000061:
 	cmp	w1, #2
 	movk	w8, #54613, lsl #16
 	smull	x8, w0, w8
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #33
+	add	x8, x9, x8, lsr #63
 	cinc	w0, w8, lt
 	ret
 

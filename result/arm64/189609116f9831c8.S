@@ -12,8 +12,8 @@ func00000000000000a4:
 	mov	w8, #43691
 	movk	w8, #10922, lsl #16
 	smull	x8, w0, w8
-	asr	x8, x8, #33
-	add	w8, w8, w8, lsr #31
+	lsr	x9, x8, #33
+	add	x8, x9, x8, lsr #63
 	lsl	w8, w8, #1
 	sub	w8, w8, #1
 	cmp	w8, #15

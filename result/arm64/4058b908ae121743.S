@@ -34,8 +34,8 @@ func0000000000000008:
 	mov	w8, #19923
 	movk	w8, #4194, lsl #16
 	smull	x8, w2, w8
-	asr	x8, x8, #38
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #38
+	add	x8, x9, x8, lsr #63
 	add	x8, x1, w8, sxtw
 	cmp	x0, x8
 	cset	w0, hi
@@ -45,8 +45,8 @@ func0000000000000001:
 	mov	w8, #19923
 	movk	w8, #4194, lsl #16
 	smull	x8, w2, w8
-	asr	x8, x8, #38
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #38
+	add	x8, x9, x8, lsr #63
 	add	x8, x1, w8, sxtw
 	cmp	x0, x8
 	cset	w0, eq

@@ -1,10 +1,10 @@
 func000000000000000a:
 	mov	w8, #26215
-	mov	w9, #10
 	movk	w8, #26214, lsl #16
 	smull	x8, w1, w8
-	asr	x8, x8, #34
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #34
+	add	x8, x9, x8, lsr #63
+	mov	w9, #10
 	msub	w8, w8, w9, w1
 	cmp	w8, #4
 	cset	w8, gt

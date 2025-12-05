@@ -5,10 +5,10 @@ func0000000000000000:
 	movk	w9, #26214, lsl #16
 	smull	x8, w2, w8
 	smull	x9, w1, w9
-	asr	x8, x8, #39
-	asr	x9, x9, #33
-	add	w8, w8, w8, lsr #31
-	add	w9, w9, w9, lsr #31
+	asr	x10, x8, #39
+	asr	x11, x9, #33
+	add	x8, x10, x8, lsr #63
+	add	x9, x11, x9, lsr #63
 	add	w8, w0, w8
 	add	w0, w8, w9
 	ret

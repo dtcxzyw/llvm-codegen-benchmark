@@ -3,8 +3,8 @@ func0000000000000000:
 	tst	w0, #0x1
 	movk	w8, #30840, lsl #16
 	smull	x8, w2, w8
-	asr	x8, x8, #35
-	add	w8, w8, w8, lsr #31
+	asr	x9, x8, #35
+	add	x8, x9, x8, lsr #63
 	csel	w0, w1, w8, ne
 	ret
 
