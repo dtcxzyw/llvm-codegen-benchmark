@@ -1,10 +1,9 @@
 func000000000000000d:
-	fmv.d.x	fa5, zero
-	li	a0, 971
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfrsub.vf	v16, v16, fa5
-	slli	a0, a0, 52
+	vfneg.v	v16, v16
+	li	a0, 971
 	vfabs.v	v16, v16
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmflt.vv	v24, v16, v8

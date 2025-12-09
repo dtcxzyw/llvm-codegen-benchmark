@@ -1,27 +1,21 @@
 func0000000000000002:
 	mov	x8, #4318952042648305664
-	movi	v2.2d, #0xffffffffffffffff
 	fmov	d1, x8
 	mov	x8, #-4327959241903046656
-	fmov	d3, x8
+	fmov	d2, x8
 	fmul	d1, d0, d1
-	fneg	v2.2d, v2.2d
 	frintz	d1, d1
-	fmadd	d1, d1, d3, d0
-	bit	v0.16b, v1.16b, v2.16b
+	fmadd	d0, d1, d2, d0
 	fcmp	d0, #0.0
 	cset	w0, mi
 	ret
 
 func0000000000000008:
 	fmov	d1, #0.50000000
-	movi	v2.2d, #0xffffffffffffffff
-	fmov	d3, #-2.00000000
+	fmov	d2, #-2.00000000
 	fmul	d1, d0, d1
-	fneg	v2.2d, v2.2d
 	frintz	d1, d1
-	fmadd	d1, d1, d3, d0
-	bit	v0.16b, v1.16b, v2.16b
+	fmadd	d0, d1, d2, d0
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret

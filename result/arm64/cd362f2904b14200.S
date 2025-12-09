@@ -1,6 +1,6 @@
 func000000000000000d:
-	movi	d2, #0000000000000000
-	fabd	d1, d2, d1
+	fneg	d1, d1
+	fabs	d1, d1
 	fcmp	d1, d0
 	cset	w0, pl
 	ret

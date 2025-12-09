@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.xword	0x3e45798ee2308c3a
 func000000000000001b:
-	movi	d1, #0000000000000000
+	fneg	d0, d0
 	adrp	x8, .LCPI0_0
-	fabd	d0, d1, d0
 	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, le
 	ret
@@ -72,10 +72,10 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	movi	d1, #0000000000000000
+	fneg	d0, d0
 	mov	x8, #4372995238176751616
-	fabd	d0, d1, d0
 	fmov	d1, x8
+	fabs	d0, d0
 	fcmp	d0, d1
 	cset	w0, pl
 	ret

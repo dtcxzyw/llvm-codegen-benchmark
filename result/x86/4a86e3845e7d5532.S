@@ -3,8 +3,6 @@
 .LCPI0_1:
 	.quad	0x3e45798ee2308c3a
 func000000000000001b:
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vsubsd	%xmm0, %xmm1, %xmm0
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
 	vucomisd	.LCPI0_1(%rip), %xmm0
 	setbe	%al
@@ -94,8 +92,6 @@ func0000000000000009:
 .LCPI7_1:
 	.quad	0x3cb0000000000000
 func000000000000000d:
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vsubsd	%xmm0, %xmm1, %xmm0
 	vandpd	.LCPI7_0(%rip){1to2}, %xmm0, %xmm0
 	vmovsd	.LCPI7_1(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1

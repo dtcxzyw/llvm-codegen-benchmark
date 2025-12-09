@@ -1,8 +1,6 @@
 .LCPI0_0:
 	.quad	0x7fffffffffffffff
 func000000000000000d:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vsubsd	%xmm1, %xmm2, %xmm1
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setbe	%al

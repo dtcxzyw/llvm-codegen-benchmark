@@ -1,9 +1,6 @@
 .LCPI0_0:
 	.quad	0x7fffffffffffffff
 func000000000000000d:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vsubpd	%zmm2, %zmm4, %zmm2
-	vsubpd	%zmm3, %zmm4, %zmm3
 	vbroadcastsd	.LCPI0_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
 	vandpd	%zmm4, %zmm2, %zmm2

@@ -17,7 +17,6 @@ func0000000000000000:
 	vfsgnj.vv	v16, v24, v16, v0.t
 	fmv.d.x	fa5, a0
 	vfnmsub.vf	v16, fa5, v8
-	vfsgnj.vv	v8, v16, v8
-	vfadd.vf	v8, v8, fa5
+	vfadd.vf	v8, v16, fa5
 	ret
 

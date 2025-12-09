@@ -3,9 +3,8 @@
 func000000000000001b:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfrsub.vf	v8, v8, fa4
+	vfneg.v	v8, v8
 	vfabs.v	v8, v8
 	vmfgt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -79,12 +78,11 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	fmv.d.x	fa5, zero
-	li	a0, 971
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfrsub.vf	v8, v8, fa5
-	slli	a0, a0, 52
+	vfneg.v	v8, v8
+	li	a0, 971
 	vfabs.v	v8, v8
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmflt.vf	v16, v8, fa5
 	vmnot.m	v0, v16

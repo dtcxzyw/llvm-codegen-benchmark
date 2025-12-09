@@ -3,9 +3,6 @@
 .LCPI0_1:
 	.quad	0x3e45798ee2308c3a
 func000000000000001b:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vsubpd	%zmm0, %zmm2, %zmm0
-	vsubpd	%zmm1, %zmm2, %zmm1
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2
 	vandpd	%zmm2, %zmm1, %zmm1
 	vandpd	%zmm2, %zmm0, %zmm0
@@ -142,9 +139,6 @@ func0000000000000009:
 .LCPI7_1:
 	.quad	0x3cb0000000000000
 func000000000000000d:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vsubpd	%zmm0, %zmm2, %zmm0
-	vsubpd	%zmm1, %zmm2, %zmm1
 	vbroadcastsd	.LCPI7_0(%rip), %zmm2
 	vandpd	%zmm2, %zmm1, %zmm1
 	vandpd	%zmm2, %zmm0, %zmm0

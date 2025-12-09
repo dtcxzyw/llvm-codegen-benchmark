@@ -1,9 +1,8 @@
 func000000000000000d:
-	fmv.d.x	fa5, zero
+	fneg.d	fa5, fa1
 	li	a0, 971
-	fsub.d	fa5, fa5, fa1
-	slli	a0, a0, 52
 	fabs.d	fa5, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fmul.d	fa4, fa0, fa4
 	flt.d	a0, fa5, fa4

@@ -1,9 +1,9 @@
 func000000000000000d:
-	movi	d2, #0000000000000000
 	mov	x8, #4372995238176751616
-	fmov	d3, x8
-	fabd	d1, d2, d1
-	fmul	d0, d0, d3
+	fneg	d1, d1
+	fmov	d2, x8
+	fabs	d1, d1
+	fmul	d0, d0, d2
 	fcmp	d1, d0
 	cset	w0, pl
 	ret

@@ -1,6 +1,5 @@
 func000000000000000d:
-	fmv.d.x	fa5, zero
-	fsub.d	fa5, fa5, fa1
+	fneg.d	fa5, fa1
 	fabs.d	fa5, fa5
 	flt.d	a0, fa5, fa0
 	xori	a0, a0, 1

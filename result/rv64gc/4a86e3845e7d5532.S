@@ -3,8 +3,7 @@
 func000000000000001b:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fmv.d.x	fa4, zero
-	fsub.d	fa4, fa4, fa0
+	fneg.d	fa4, fa0
 	fabs.d	fa4, fa4
 	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -74,11 +73,10 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	fmv.d.x	fa5, zero
+	fneg.d	fa5, fa0
 	li	a0, 971
-	fsub.d	fa5, fa5, fa0
-	slli	a0, a0, 52
 	fabs.d	fa5, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
