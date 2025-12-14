@@ -48,7 +48,7 @@ func0000000000000019:
 	srli	a2, a0, 49
 	seqz	a0, a0
 	add	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LBB0_3:
 	li	a1, 128
@@ -56,7 +56,7 @@ func0000000000000019:
 	srli	a2, a0, 49
 	seqz	a0, a0
 	add	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 .LBB0_4:
 	srli	a1, a2, 1
@@ -88,6 +88,6 @@ func0000000000000019:
 	srli	a2, a0, 49
 	seqz	a0, a0
 	add	a0, a0, a2
-	subw	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 
