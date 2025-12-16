@@ -10,11 +10,10 @@ func0000000000000205:
 	ret
 
 func0000000000000208:
-	mov	x8, #45371
+	mov	x8, #-20165
 	sub	x9, x1, x0
-	movk	x8, #15123, lsl #16
-	movk	x8, #5041, lsl #32
-	movk	x8, #315, lsl #48
+	movk	x8, #64275, lsl #16
+	eor	x8, x8, x8, lsl #30
 	cmp	x2, x8
 	csel	x8, x2, x8, lo
 	sub	x8, x8, x0

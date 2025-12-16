@@ -1,12 +1,11 @@
 func0000000000000008:
 	mov	x8, #23593
-	mov	x9, #36700
+	mov	x9, #-28836
 	movk	x8, #49807, lsl #16
 	movk	x9, #62914, lsl #16
 	movk	x8, #10485, lsl #32
-	movk	x9, #23592, lsl #32
+	eor	x9, x9, x9, lsl #30
 	movk	x8, #36700, lsl #48
-	movk	x9, #655, lsl #48
 	mul	x8, x0, x8
 	extr	x8, x0, x8, #2
 	cmp	x8, x9

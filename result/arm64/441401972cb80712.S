@@ -1,11 +1,10 @@
 func000000000000002b:
-	mov	x9, #29127
+	mov	x9, #-36409
 	sub	x8, x1, x2
 	add	w10, w0, #1
 	movk	x9, #50972, lsl #16
 	asr	x8, x8, #4
-	movk	x9, #7281, lsl #32
-	movk	x9, #29127, lsl #48
+	eor	x9, x9, x9, lsl #33
 	madd	x0, x8, x9, x10
 	ret
 

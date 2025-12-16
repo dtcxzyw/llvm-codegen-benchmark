@@ -72,12 +72,11 @@ func000000000000001d:
 	ret
 
 func0000000000000014:
-	mov	x9, #29789
+	mov	x9, #-35747
 	asr	x8, x2, #3
 	add	x10, x0, x1
 	movk	x9, #17873, lsl #16
-	movk	x9, #23831, lsl #32
-	movk	x9, #53620, lsl #48
+	eor	x9, x9, x9, lsl #35
 	madd	x0, x8, x9, x10
 	ret
 

@@ -43,19 +43,17 @@ func0000000000000026:
 
 func000000000000002c:
 	mov	x8, #23593
-	mov	x10, #7864
+	mov	x10, #-57672
 	add	x9, x0, x1
 	movk	x8, #49807, lsl #16
 	movk	x10, #60293, lsl #16
 	movk	x8, #10485, lsl #32
-	movk	x10, #47185, lsl #32
+	eor	x10, x10, x10, lsl #30
 	movk	x8, #36700, lsl #48
-	movk	x10, #1310, lsl #48
 	madd	x8, x9, x8, x10
-	mov	x9, #36700
+	mov	x9, #-28836
 	movk	x9, #62914, lsl #16
-	movk	x9, #23592, lsl #32
-	movk	x9, #655, lsl #48
+	eor	x9, x9, x9, lsl #30
 	ror	x8, x8, #2
 	cmp	x8, x9
 	cset	w0, hi
@@ -101,19 +99,17 @@ func0000000000000008:
 
 func000000000000000c:
 	mov	x8, #23593
-	mov	x10, #7864
+	mov	x10, #-57672
 	add	x9, x0, x1
 	movk	x8, #49807, lsl #16
 	movk	x10, #60293, lsl #16
 	movk	x8, #10485, lsl #32
-	movk	x10, #47185, lsl #32
+	eor	x10, x10, x10, lsl #30
 	movk	x8, #36700, lsl #48
-	movk	x10, #1310, lsl #48
 	madd	x8, x9, x8, x10
-	mov	x9, #36700
+	mov	x9, #-28836
 	movk	x9, #62914, lsl #16
-	movk	x9, #23592, lsl #32
-	movk	x9, #655, lsl #48
+	eor	x9, x9, x9, lsl #30
 	ror	x8, x8, #2
 	cmp	x8, x9
 	cset	w0, hi

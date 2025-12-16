@@ -1,12 +1,11 @@
 func0000000000000002:
 	mov	x8, #23593
-	mov	x9, #7864
+	mov	x9, #-57672
 	movk	x8, #49807, lsl #16
 	movk	x9, #60293, lsl #16
 	movk	x8, #10485, lsl #32
-	movk	x9, #47185, lsl #32
+	eor	x9, x9, x9, lsl #30
 	movk	x8, #36700, lsl #48
-	movk	x9, #1310, lsl #48
 	madd	x8, x1, x8, x9
 	mov	x9, #36701
 	movk	x9, #62914, lsl #16
@@ -21,18 +20,16 @@ func0000000000000002:
 
 func0000000000000018:
 	mov	x8, #23593
-	mov	x9, #7864
+	mov	x9, #-57672
 	movk	x8, #49807, lsl #16
 	movk	x9, #60293, lsl #16
 	movk	x8, #10485, lsl #32
-	movk	x9, #47185, lsl #32
+	eor	x9, x9, x9, lsl #30
 	movk	x8, #36700, lsl #48
-	movk	x9, #1310, lsl #48
 	madd	x8, x1, x8, x9
-	mov	x9, #36700
+	mov	x9, #-28836
 	movk	x9, #62914, lsl #16
-	movk	x9, #23592, lsl #32
-	movk	x9, #655, lsl #48
+	eor	x9, x9, x9, lsl #30
 	ror	x8, x8, #2
 	cmp	x8, x9
 	cset	w8, hi

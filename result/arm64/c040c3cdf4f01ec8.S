@@ -17,13 +17,12 @@ func0000000000000041:
 
 func000000000000004c:
 	mov	x8, #20165
-	mov	x9, #50412
+	mov	x9, #-15124
 	movk	x8, #50412, lsl #16
 	movk	x9, #60494, lsl #16
 	movk	x8, #60494, lsl #32
-	movk	x9, #20164, lsl #32
+	eor	x9, x9, x9, lsl #30
 	movk	x8, #20164, lsl #48
-	movk	x9, #1260, lsl #48
 	mul	x8, x0, x8
 	ror	x8, x8, #2
 	cmp	x8, x9

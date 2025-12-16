@@ -1,9 +1,8 @@
 func0000000000000008:
-	mov	x9, #36700
+	mov	x9, #-28836
 	extr	x8, x0, x1, #2
 	movk	x9, #62914, lsl #16
-	movk	x9, #23592, lsl #32
-	movk	x9, #655, lsl #48
+	eor	x9, x9, x9, lsl #30
 	cmp	x8, x9
 	cset	w0, hi
 	ret

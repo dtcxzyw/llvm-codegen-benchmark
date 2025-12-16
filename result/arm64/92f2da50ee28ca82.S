@@ -13,12 +13,11 @@ func000000000000004d:
 	ret
 
 func000000000000004f:
-	mov	x8, #29127
+	mov	x8, #-36409
 	asr	x9, x0, #3
 	lsr	x10, x1, #3
 	movk	x8, #50972, lsl #16
-	movk	x8, #7281, lsl #32
-	movk	x8, #29127, lsl #48
+	eor	x8, x8, x8, lsl #33
 	mul	x8, x9, x8
 	mov	w9, #36409
 	movk	w9, #14563, lsl #16

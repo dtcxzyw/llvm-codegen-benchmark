@@ -1,10 +1,9 @@
 func0000000000000003:
 	mov	w8, #24
-	mov	x9, #65512
+	mov	x9, #-24
 	tst	w0, #0x1
 	umull	x8, w1, w8
-	movk	x9, #32767, lsl #16
-	movk	x9, #1, lsl #32
+	eor	x9, x9, x9, lsl #28
 	csel	x0, x9, x8, ne
 	ret
 

@@ -8,12 +8,11 @@ func0000000000000065:
 
 func0000000000000064:
 	sub	x8, x2, x1
-	mov	x9, #29789
+	mov	x9, #-35747
 	add	x8, x8, #88
 	movk	x9, #17873, lsl #16
 	asr	x8, x8, #3
-	movk	x9, #23831, lsl #32
-	movk	x9, #53620, lsl #48
+	eor	x9, x9, x9, lsl #35
 	madd	x0, x8, x9, x0
 	ret
 

@@ -87,13 +87,12 @@ func0000000000000009:
 func0000000000000034:
 	mov	x9, #35747
 	asr	x8, x2, #3
-	mov	x10, #29789
+	mov	x10, #-35747
 	movk	x9, #47662, lsl #16
 	movk	x10, #17873, lsl #16
 	movk	x9, #41704, lsl #32
-	movk	x10, #23831, lsl #32
+	eor	x10, x10, x10, lsl #35
 	movk	x9, #11915, lsl #48
-	movk	x10, #53620, lsl #48
 	madd	x8, x8, x9, x0
 	asr	x9, x1, #3
 	madd	x0, x9, x10, x8
