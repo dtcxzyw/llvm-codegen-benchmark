@@ -15,25 +15,28 @@ func0000000000000048:
 	ret
 
 func00000000000000c1:
-	subs	x8, x1, #1
+	cmp	x1, #0
 	add	x9, x0, #1
-	csel	x8, xzr, x8, lo
+	cset	w8, ne
+	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
 
 func0000000000000008:
-	subs	x8, x1, #1
+	cmp	x1, #0
 	sub	x9, x0, #4
-	csel	x8, xzr, x8, lo
+	cset	w8, ne
+	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, hi
 	ret
 
 func0000000000000028:
-	subs	x8, x1, #1
+	cmp	x1, #0
 	sub	x9, x0, #1
-	csel	x8, xzr, x8, lo
+	cset	w8, ne
+	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, hi
 	ret
@@ -55,17 +58,19 @@ func0000000000000004:
 	ret
 
 func0000000000000041:
-	subs	x8, x1, #1
+	cmp	x1, #0
 	add	x9, x0, #1
-	csel	x8, xzr, x8, lo
+	cset	w8, ne
+	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, eq
 	ret
 
 func00000000000000a4:
-	subs	x8, x1, #1
+	cmp	x1, #0
 	sub	x9, x0, #1
-	csel	x8, xzr, x8, lo
+	cset	w8, ne
+	sub	x8, x1, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret

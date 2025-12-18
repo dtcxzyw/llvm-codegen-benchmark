@@ -1,6 +1,7 @@
 func0000000000000000:
-	subs	w8, w0, #1
-	csel	w0, wzr, w8, lo
+	cmp	w0, #0
+	cset	w8, ne
+	sub	w0, w0, w8
 	ret
 
 func000000000000000c:
@@ -9,12 +10,14 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	subs	w8, w0, #1
-	csel	w0, wzr, w8, lo
+	cmp	w0, #0
+	cset	w8, ne
+	sub	w0, w0, w8
 	ret
 
 func0000000000000001:
-	subs	w8, w0, #1
-	csel	w0, wzr, w8, lo
+	cmp	w0, #0
+	cset	w8, ne
+	sub	w0, w0, w8
 	ret
 

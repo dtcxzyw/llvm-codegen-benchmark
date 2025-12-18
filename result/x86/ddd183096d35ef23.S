@@ -1,9 +1,8 @@
 func0000000000000001:
-	xorl	%eax, %eax
-	subq	$1, %rdx
-	cmovaeq	%rdx, %rax
-	addq	%rsi, %rax
-	testq	%rdi, %rax
+	cmpq	$1, %rdx
+	adcq	$-1, %rdx
+	addq	%rsi, %rdx
+	testq	%rdi, %rdx
 	sete	%al
 	retq
 

@@ -6,17 +6,15 @@ func0000000000000002:
 	retq
 
 func0000000000000001:
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
-	decq	%rax
+	cmpq	$1, %rdi
+	adcq	$-1, %rdi
+	leaq	-1(%rdi), %rax
 	retq
 
 func0000000000000003:
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
-	addq	$3, %rax
+	cmpq	$1, %rdi
+	adcq	$-1, %rdi
+	leaq	3(%rdi), %rax
 	retq
 
 func0000000000000000:

@@ -1,7 +1,7 @@
 func0000000000000001:
-	add	w8, w0, #1
-	subs	w8, w8, #1
-	csel	w0, wzr, w8, lo
+	adds	w8, w0, #1
+	cset	w9, ne
+	sub	w0, w8, w9
 	ret
 
 func0000000000000002:

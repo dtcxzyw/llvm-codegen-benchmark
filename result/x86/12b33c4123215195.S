@@ -1,14 +1,12 @@
 func0000000000000003:
-	xorl	%eax, %eax
-	subl	$1, %edi
-	cmovael	%edi, %eax
-	addl	%eax, %eax
+	cmpl	$1, %edi
+	adcl	$-1, %edi
+	leal	(%rdi,%rdi), %eax
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
-	subl	$1, %edi
-	cmovael	%edi, %eax
-	addl	%eax, %eax
+	cmpl	$1, %edi
+	adcl	$-1, %edi
+	leal	(%rdi,%rdi), %eax
 	retq
 

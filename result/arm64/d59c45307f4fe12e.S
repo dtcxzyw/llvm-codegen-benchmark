@@ -1,7 +1,8 @@
 func0000000000000000:
-	subs	x8, x2, #1
-	csel	x8, xzr, x8, lo
+	cmp	x2, #0
+	cset	w8, ne
 	tst	w0, #0x1
+	sub	x8, x2, x8
 	csel	x0, x1, x8, ne
 	ret
 

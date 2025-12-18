@@ -1,8 +1,6 @@
 func00000000000000a4:
-	addi	a2, a1, -1
-	sltu	a1, a1, a2
-	addi	a1, a1, -1
-	and	a1, a1, a2
+	snez	a2, a1
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

@@ -1,21 +1,21 @@
 func0000000000000002:
-	sarq	$3, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	sarq	$3, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 
 func0000000000000000:
-	sarq	$5, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	sarq	$5, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 
 func0000000000000003:
-	sarq	$3, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	sarq	$3, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 

@@ -17,29 +17,26 @@ func0000000000000048:
 	retq
 
 func00000000000000c1:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
 	incq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 
 func0000000000000008:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
 	addq	$-4, %rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
 
 func0000000000000028:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
 	decq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
 
@@ -62,20 +59,18 @@ func0000000000000004:
 	retq
 
 func0000000000000041:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
 	incq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 
 func00000000000000a4:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
 	decq	%rdi
-	cmpq	%rax, %rdi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
 

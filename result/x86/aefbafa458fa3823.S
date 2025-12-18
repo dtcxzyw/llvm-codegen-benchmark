@@ -1,6 +1,6 @@
 func0000000000000000:
-	xorl	%eax, %eax
-	subw	$1, %di
-	cmovael	%edi, %eax
+	movl	%edi, %eax
+	cmpw	$1, %ax
+	adcl	$-1, %eax
 	retq
 

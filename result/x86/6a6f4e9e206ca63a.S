@@ -11,10 +11,9 @@ func0000000000000003:
 func0000000000000002:
 	subq	%rdi, %rsi
 	sarq	$3, %rsi
-	movabsq	$-3689348814741910323, %rcx
-	imulq	%rsi, %rcx
-	xorl	%eax, %eax
-	subq	$1, %rcx
-	cmovaeq	%rcx, %rax
+	movabsq	$-3689348814741910323, %rax
+	imulq	%rsi, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 

@@ -12,9 +12,8 @@ func0000000000000003:
 	retq
 
 func0000000000000000:
-	xorl	%eax, %eax
-	subl	$1, %edi
-	cmovael	%edi, %eax
-	decl	%eax
+	cmpl	$1, %edi
+	adcl	$-1, %edi
+	leal	-1(%rdi), %eax
 	retq
 

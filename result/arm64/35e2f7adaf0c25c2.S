@@ -5,8 +5,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	subs	x8, x0, #1
-	csel	x8, xzr, x8, lo
-	mov	w0, w8
+	cmp	x0, #0
+	cset	w8, ne
+	sub	w0, w0, w8
 	ret
 

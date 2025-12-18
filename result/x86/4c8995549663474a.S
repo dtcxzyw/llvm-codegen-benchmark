@@ -6,16 +6,16 @@ func0000000000000004:
 	retq
 
 func0000000000000000:
-	subq	%rsi, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	subq	%rsi, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 
 func0000000000000006:
-	subq	%rsi, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	subq	%rsi, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 

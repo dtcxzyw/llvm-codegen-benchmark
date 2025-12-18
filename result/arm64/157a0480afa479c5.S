@@ -1,6 +1,6 @@
 func0000000000000000:
-	subs	x8, x1, #1
-	csel	x8, xzr, x8, lo
-	sub	x0, x0, x8
+	sub	x8, x0, x1
+	cmp	x1, #0
+	cinc	x0, x8, ne
 	ret
 

@@ -6,9 +6,8 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
-	movl	%eax, %eax
+	cmpq	$1, %rdi
+	adcq	$-1, %rdi
+	movl	%edi, %eax
 	retq
 

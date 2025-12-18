@@ -27,10 +27,9 @@ func0000000000000041:
 	sarq	$3, %rsi
 	movabsq	$-3689348814741910323, %rax
 	imulq	%rsi, %rax
-	xorl	%ecx, %ecx
-	subq	$1, %rax
-	cmovaeq	%rax, %rcx
-	cmpq	%rcx, %rdi
+	cmpq	$1, %rax
+	adcq	$-1, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 

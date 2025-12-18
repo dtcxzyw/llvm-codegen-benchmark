@@ -1,10 +1,9 @@
 func0000000000000041:
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
-	xorl	%eax, %eax
-	subq	$1, %rdx
-	cmovaeq	%rdx, %rax
-	cmpq	%rax, %rdi
+	cmpq	$1, %rdx
+	adcq	$-1, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 

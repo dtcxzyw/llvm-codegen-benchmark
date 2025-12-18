@@ -1,7 +1,7 @@
 func0000000000000000:
-	shrq	$6, %rdi
-	xorl	%eax, %eax
-	subq	$1, %rdi
-	cmovaeq	%rdi, %rax
+	movq	%rdi, %rax
+	shrq	$6, %rax
+	cmpq	$1, %rax
+	adcq	$-1, %rax
 	retq
 

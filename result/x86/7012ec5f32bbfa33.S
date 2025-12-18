@@ -1,8 +1,7 @@
 func00000000000000a4:
-	xorl	%eax, %eax
-	subq	$1, %rsi
-	cmovaeq	%rsi, %rax
-	cmpq	%rdi, %rax
+	cmpq	$1, %rsi
+	adcq	$-1, %rsi
+	cmpq	%rdi, %rsi
 	setb	%al
 	retq
 
