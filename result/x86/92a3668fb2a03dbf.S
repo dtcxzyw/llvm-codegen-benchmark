@@ -8,8 +8,7 @@ func0000000000000007:
 	vmovsd	.LCPI0_0(%rip), %xmm2
 	vfmadd213sd	.LCPI0_1(%rip), %xmm1, %xmm2
 	vfmadd231sd	.LCPI0_2(%rip), %xmm0, %xmm2
-	vcvttpd2dq	%xmm2, %xmm0
-	vcvtdq2pd	%xmm0, %xmm0
+	vroundsd	$11, %xmm2, %xmm2, %xmm0
 	vcmpneqsd	%xmm0, %xmm2, %k0
 	kmovd	%k0, %eax
 	retq

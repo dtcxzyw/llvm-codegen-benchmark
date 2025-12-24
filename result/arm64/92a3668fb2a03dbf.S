@@ -13,8 +13,7 @@ func0000000000000007:
 	fmadd	d1, d1, d3, d2
 	ldr	d2, [x8, :lo12:.LCPI0_2]
 	fmadd	d0, d0, d2, d1
-	fcvtzs	w8, d0
-	scvtf	d1, w8
+	frintz	d1, d0
 	fcmp	d0, d1
 	cset	w0, ne
 	ret

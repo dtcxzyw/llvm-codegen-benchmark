@@ -1,6 +1,5 @@
 func0000000000000072:
-	fcvt.w.d	a0, fa0, rtz
-	fcvt.d.w	fa5, a0
+	fround.d	fa5, fa0, rtz
 	feq.d	a0, fa0, fa5
 	fmv.d.x	fa5, zero
 	xori	a0, a0, 1
@@ -9,8 +8,7 @@ func0000000000000072:
 	ret
 
 func0000000000000084:
-	fcvt.w.d	a0, fa0, rtz
-	fcvt.d.w	fa5, a0
+	fround.d	fa5, fa0, rtz
 	feq.d	a0, fa0, fa5
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0

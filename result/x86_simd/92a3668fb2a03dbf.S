@@ -8,8 +8,7 @@ func0000000000000007:
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2
 	vfmadd213pd	.LCPI0_1(%rip){1to8}, %zmm1, %zmm2
 	vfmadd231pd	.LCPI0_2(%rip){1to8}, %zmm0, %zmm2
-	vcvttpd2dq	%zmm2, %ymm0
-	vcvtdq2pd	%ymm0, %zmm0
+	vrndscalepd	$11, %zmm2, %zmm0
 	vcmpneqpd	%zmm0, %zmm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -27,8 +27,7 @@ func0000000000000004:
 	ret
 
 func0000000000000010:
-	fcvtzs	w8, d0
-	scvtf	d1, w8
+	frintz	d1, d0
 	fcmp	d0, d1
 	cset	w8, eq
 	orr	w8, w8, w0

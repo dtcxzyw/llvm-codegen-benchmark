@@ -1,12 +1,10 @@
 func0000000000000002:
-	fcvt.w.d	a0, fa1, rtz
-	fcvt.d.w	fa5, a0
+	fround.d	fa5, fa1, rtz
 	flt.d	a0, fa0, fa5
 	ret
 
 func0000000000000008:
-	fcvt.w.d	a0, fa1, rtz
-	fcvt.d.w	fa5, a0
+	fround.d	fa5, fa1, rtz
 	feq.d	a0, fa0, fa5
 	ret
 
