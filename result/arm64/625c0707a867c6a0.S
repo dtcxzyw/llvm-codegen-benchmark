@@ -4,7 +4,6 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	mov	x8, #-1
-	eor	x0, x8, x0, ror #63
+	mvn	x0, x0, ror #63
 	ret
 

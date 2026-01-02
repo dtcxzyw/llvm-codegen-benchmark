@@ -6,8 +6,7 @@ func000000000000006b:
 	umulh	x8, x2, x8
 	sub	x9, x2, x8
 	add	x8, x8, x9, lsr #1
-	mov	x9, #-1
-	eor	x8, x9, x8, lsr #2
+	mvn	x8, x8, lsr #2
 	add	x8, x1, x8
 	lsr	x8, x8, #1
 	add	x0, x0, x8, lsl #3
@@ -21,8 +20,7 @@ func0000000000000063:
 	umulh	x8, x2, x8
 	sub	x9, x2, x8
 	add	x8, x8, x9, lsr #1
-	mov	x9, #-1
-	eor	x8, x9, x8, lsr #4
+	mvn	x8, x8, lsr #4
 	add	x8, x1, x8
 	lsr	x8, x8, #1
 	add	x0, x0, x8, lsl #3

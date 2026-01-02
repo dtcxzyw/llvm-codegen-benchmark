@@ -1,7 +1,6 @@
 func0000000000000055:
-	mov	x8, #-1
+	mvn	x8, x1, lsl #5
 	add	x9, x2, x0
-	eor	x8, x8, x1, lsl #5
 	add	x0, x8, x9
 	ret
 

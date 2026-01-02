@@ -1,7 +1,6 @@
 func000000000000000c:
-	mov	w8, #-1
-	sub	w9, w1, #128
-	eor	w8, w8, w9, lsr #8
+	sub	w8, w1, #128
+	mvn	w8, w8, lsr #8
 	add	w0, w0, w8
 	ret
 

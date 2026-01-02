@@ -6,8 +6,7 @@ func0000000000000000:
 	umulh	x8, x0, x8
 	sub	x9, x0, x8
 	add	x8, x8, x9, lsr #1
-	mov	x9, #-1
-	eor	x0, x9, x8, lsr #27
+	mvn	x0, x8, lsr #27
 	ret
 
 func0000000000000001:

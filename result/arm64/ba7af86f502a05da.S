@@ -9,7 +9,6 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	mov	w8, #-1
-	eor	w0, w8, w0, lsl #1
+	mvn	w0, w0, lsl #1
 	ret
 

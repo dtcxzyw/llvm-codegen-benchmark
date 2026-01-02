@@ -10,8 +10,7 @@ func0000000000000066:
 
 func000000000000002a:
 	add	w8, w1, w1, lsr #31
-	mov	w9, #-1
-	eor	w8, w9, w8, asr #1
+	mvn	w8, w8, asr #1
 	cmp	w8, w0
 	cset	w0, gt
 	ret

@@ -41,9 +41,8 @@ func000000000000005e:
 	ret
 
 func000000000000005c:
-	mov	x8, #-1
+	mvn	x8, x2, lsr #3
 	add	x9, x0, x1, lsl #3
-	eor	x8, x8, x2, lsr #3
 	add	x0, x9, x8, lsl #3
 	ret
 
@@ -54,9 +53,8 @@ func000000000000004b:
 	ret
 
 func0000000000000017:
-	mov	x8, #-1
+	mvn	x8, x2, asr #32
 	add	x9, x0, x1, lsl #4
-	eor	x8, x8, x2, asr #32
 	add	x0, x9, x8, lsl #4
 	ret
 

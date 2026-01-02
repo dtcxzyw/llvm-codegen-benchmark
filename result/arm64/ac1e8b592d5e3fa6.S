@@ -13,8 +13,7 @@ func000000000000000a:
 	umulh	x9, x8, x9
 	sub	x8, x8, x9
 	add	x8, x9, x8, lsr #1
-	mov	x9, #-1
-	eor	x0, x9, x8, lsr #2
+	mvn	x0, x8, lsr #2
 	ret
 
 func0000000000000002:
@@ -24,7 +23,6 @@ func0000000000000002:
 	add	x9, x0, x9, asr #1
 	mvn	x9, x9
 	umulh	x8, x9, x8
-	mov	x9, #-1
-	eor	x0, x9, x8, lsr #1
+	mvn	x0, x8, lsr #1
 	ret
 

@@ -31,10 +31,9 @@ func000000000000006b:
 	ret
 
 func0000000000000001:
-	sub	w9, w0, w1
-	mov	w8, #-1
-	add	w9, w9, #63
-	eor	w8, w8, w9, lsr #6
+	sub	w8, w0, w1
+	add	w8, w8, #63
+	mvn	w8, w8, lsr #6
 	and	x0, x8, #0x1
 	ret
 

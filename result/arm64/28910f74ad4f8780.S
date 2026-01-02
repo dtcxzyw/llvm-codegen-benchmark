@@ -5,16 +5,14 @@ func000000000000148c:
 	ret
 
 func0000000000001481:
-	mov	x8, #-1
-	eor	x8, x8, x2, asr #2
+	mvn	x8, x2, asr #2
 	cmp	x1, x8
 	ccmp	x0, #0, #0, ls
 	cset	w0, eq
 	ret
 
 func0000000000001081:
-	mov	x8, #-1
-	eor	x8, x8, x2, asr #1
+	mvn	x8, x2, asr #1
 	cmp	x1, x8
 	ccmp	x0, #0, #0, ls
 	cset	w0, eq

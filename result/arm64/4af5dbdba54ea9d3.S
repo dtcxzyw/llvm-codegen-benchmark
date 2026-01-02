@@ -5,14 +5,12 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
-	mov	w8, #-1
-	sub	w9, w0, #1
-	eor	w0, w8, w9, lsr #31
+	sub	w8, w0, #1
+	mvn	w0, w8, lsr #31
 	ret
 
 func0000000000000000:
-	mov	w8, #-1
-	add	w9, w0, #63
-	eor	w0, w8, w9, lsr #6
+	add	w8, w0, #63
+	mvn	w0, w8, lsr #6
 	ret
 

@@ -17,11 +17,10 @@ func0000000000000020:
 	ret
 
 func0000000000000025:
-	subs	x9, x1, #1
-	add	x10, x1, #2
-	mov	x8, #-1
-	csel	x9, x10, x9, mi
-	eor	x8, x8, x9, asr #2
+	subs	x8, x1, #1
+	add	x9, x1, #2
+	csel	x8, x9, x8, mi
+	mvn	x8, x8, asr #2
 	add	x0, x8, x0
 	ret
 

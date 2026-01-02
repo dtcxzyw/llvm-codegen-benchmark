@@ -1,11 +1,9 @@
 func0000000000000002:
-	mov	x8, #-1
-	eor	x0, x8, x0, lsl #32
+	mvn	x0, x0, lsl #32
 	ret
 
 func0000000000000007:
-	mov	x8, #-1
-	eor	x0, x8, x0, lsl #32
+	mvn	x0, x0, lsl #32
 	ret
 
 func0000000000000003:
@@ -14,7 +12,6 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	mov	x8, #-1
-	eor	x0, x8, x0, lsl #47
+	mvn	x0, x0, lsl #47
 	ret
 

@@ -7,8 +7,7 @@ func0000000000000006:
 	lsr	x9, x9, #32
 	sub	w8, w8, w9
 	add	w8, w9, w8, lsr #1
-	mov	w9, #-1
-	eor	w0, w9, w8, lsr #2
+	mvn	w0, w8, lsr #2
 	ret
 
 func0000000000000000:

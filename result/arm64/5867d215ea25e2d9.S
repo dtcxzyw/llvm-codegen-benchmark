@@ -46,8 +46,7 @@ func000000000000000c:
 
 func000000000000004a:
 	add	w8, w0, w0, lsl #1
-	mov	w9, #-1
-	eor	w8, w9, w8, lsl #2
+	mvn	w8, w8, lsl #2
 	lsr	w0, w8, #31
 	ret
 

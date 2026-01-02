@@ -24,8 +24,7 @@ func000000000000001e:
 	ret
 
 func0000000000000005:
-	mov	x8, #-1
-	eor	x8, x8, x1, asr #32
+	mvn	x8, x1, asr #32
 	add	x0, x0, x8
 	ret
 

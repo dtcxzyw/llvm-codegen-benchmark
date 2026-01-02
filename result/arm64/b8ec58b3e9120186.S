@@ -15,8 +15,7 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	mov	w8, #-1
-	eor	w8, w8, w1, lsr #11
+	mvn	w8, w1, lsr #11
 	and	x8, x8, #0x8
 	orr	x0, x0, x8
 	ret

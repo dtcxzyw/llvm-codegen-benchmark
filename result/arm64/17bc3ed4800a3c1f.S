@@ -10,8 +10,7 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	mov	w8, #-1
-	eor	w0, w8, w0, lsl #15
+	mvn	w0, w0, lsl #15
 	ret
 
 func0000000000000002:

@@ -19,8 +19,7 @@ func0000000000000104:
 	ret
 
 func0000000000000109:
-	mov	x8, #-1
-	eor	x8, x8, x1, lsl #1
+	mvn	x8, x1, lsl #1
 	cmp	x0, x8
 	cset	w0, ls
 	ret

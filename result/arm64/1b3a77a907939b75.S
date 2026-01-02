@@ -6,9 +6,8 @@ func000000000000008f:
 	ret
 
 func000000000000008d:
-	mov	x8, #-1
+	mvn	x8, x2, asr #2
 	sub	x9, x0, x1
-	eor	x8, x8, x2, asr #2
 	add	x0, x8, x9, asr #2
 	ret
 

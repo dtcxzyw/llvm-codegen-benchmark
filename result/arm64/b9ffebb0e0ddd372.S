@@ -21,15 +21,13 @@ func00000000000001e1:
 
 func000000000000010a:
 	mul	w8, w1, w0
-	mov	w9, #-1
-	eor	w8, w9, w8, lsl #1
+	mvn	w8, w8, lsl #1
 	lsr	w0, w8, #31
 	ret
 
 func00000000000000aa:
 	mul	w8, w1, w0
-	mov	w9, #-1
-	eor	w8, w9, w8, lsl #4
+	mvn	w8, w8, lsl #4
 	lsr	w0, w8, #31
 	ret
 

@@ -5,8 +5,7 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	mov	w8, #-1
-	eor	w8, w8, w1, lsr #4
+	mvn	w8, w1, lsr #4
 	add	x0, x0, x8
 	ret
 

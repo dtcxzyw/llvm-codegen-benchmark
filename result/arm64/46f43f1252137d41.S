@@ -9,11 +9,10 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	add	w9, w1, #31
+	add	w8, w1, #31
 	cmp	w1, #0
-	mov	w8, #-1
-	csel	w9, w9, w1, mi
-	eor	w8, w8, w9, asr #5
+	csel	w8, w8, w1, mi
+	mvn	w8, w8, asr #5
 	add	w0, w8, w0
 	ret
 
@@ -25,8 +24,7 @@ func0000000000000004:
 
 func0000000000000000:
 	add	w8, w1, w1, lsr #31
-	mov	w9, #-1
-	eor	w8, w9, w8, asr #1
+	mvn	w8, w8, asr #1
 	add	w0, w8, w0
 	ret
 

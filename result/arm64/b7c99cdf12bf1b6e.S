@@ -23,9 +23,8 @@ func0000000000000004:
 
 func00000000000001aa:
 	mul	w8, w1, w0
-	mov	w9, #-1
 	add	w8, w8, w8, lsl #3
-	eor	w8, w9, w8, lsl #2
+	mvn	w8, w8, lsl #2
 	lsr	w0, w8, #31
 	ret
 

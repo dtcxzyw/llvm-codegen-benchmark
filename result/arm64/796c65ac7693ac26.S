@@ -5,14 +5,12 @@ func0000000000000004:
 	ret
 
 func0000000000000015:
-	mov	x8, #-1
-	eor	x8, x8, x1, asr #3
+	mvn	x8, x1, asr #3
 	add	x0, x0, x8
 	ret
 
 func0000000000000010:
-	mov	x8, #-1
-	eor	x8, x8, x1, asr #32
+	mvn	x8, x1, asr #32
 	add	x0, x0, x8
 	ret
 
