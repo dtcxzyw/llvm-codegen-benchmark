@@ -4,8 +4,8 @@ func0000000000000074:
 	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 3
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 3
 	ret
 
 func0000000000000034:
@@ -14,8 +14,8 @@ func0000000000000034:
 	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 6
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 6
 	ret
 
 func0000000000000006:
@@ -34,8 +34,8 @@ func0000000000000004:
 	bseti	a0, zero, 56
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 9
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 9
 	ret
 
 func000000000000000a:

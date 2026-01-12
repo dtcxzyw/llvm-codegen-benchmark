@@ -21,8 +21,8 @@ func0000000000000064:
 	vmul.vv	v10, v10, v12
 	vmsltu.vv	v0, v10, v8
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 5
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 5
 	ret
 
 func0000000000000068:
@@ -56,7 +56,7 @@ func0000000000000026:
 	vmul.vv	v10, v10, v12
 	vmslt.vv	v0, v10, v8
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 3
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 3
 	ret
 

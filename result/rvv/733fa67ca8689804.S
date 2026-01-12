@@ -27,7 +27,7 @@ func000000000000000d:
 	vnsrl.wi	v9, v10, 0
 	vmv.v.i	v10, 0
 	vadd.vv	v8, v8, v9
-	vmerge.vim	v9, v10, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v10, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 

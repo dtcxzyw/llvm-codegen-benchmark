@@ -6,8 +6,8 @@ func0000000000000004:
 	addi	a0, a0, -864
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func0000000000000021:
@@ -28,8 +28,8 @@ func0000000000000034:
 	addi	a0, a0, 1808
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 5
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 5
 	ret
 
 func0000000000000038:

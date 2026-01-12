@@ -8,9 +8,9 @@ func0000000000000010:
 	slli	a0, a0, 20
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vnot.v	v10, v10
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, -1
 	ret
 
 func0000000000000011:
@@ -23,8 +23,8 @@ func0000000000000011:
 	slli	a0, a0, 20
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vnot.v	v10, v10
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, -1
 	ret
 

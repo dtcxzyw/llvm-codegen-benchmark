@@ -3,9 +3,9 @@ func0000000000000010:
 	vsub.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 4
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vnot.v	v10, v10
+	vmerge.vim	v10, v10, -1, v0
 	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, -1
 	ret
 
 func00000000000000a5:

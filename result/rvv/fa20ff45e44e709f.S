@@ -26,9 +26,9 @@ func00000000000050c6:
 	vmv.v.i	v12, 0
 	vmsltu.vx	v0, v10, a0
 	li	a0, 206
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmslt.vx	v0, v10, a0
-	vxor.vi	v10, v12, 7
+	vadd.vi	v10, v12, 7
 	vmerge.vim	v10, v10, 5, v0
 	vmslt.vv	v0, v10, v8
 	ret
@@ -39,9 +39,9 @@ func0000000000005281:
 	vmv.v.i	v12, 0
 	vmsltu.vx	v0, v10, a0
 	li	a0, 32
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmsltu.vx	v0, v10, a0
-	vrsub.vi	v10, v12, 4
+	vadd.vi	v10, v12, 4
 	vmerge.vim	v10, v10, 2, v0
 	vmseq.vv	v0, v10, v8
 	ret
@@ -92,9 +92,9 @@ func0000000000001081:
 	addi	a1, a0, 705
 	vmsltu.vx	v0, v10, a1
 	addi	a0, a0, -895
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmsltu.vx	v0, v10, a0
-	vrsub.vi	v10, v12, 2
+	vadd.vi	v10, v12, 2
 	vmerge.vim	v10, v10, 0, v0
 	vmseq.vv	v0, v10, v8
 	ret

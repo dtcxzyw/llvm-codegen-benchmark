@@ -36,8 +36,8 @@ func0000000000000024:
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vxor.vi	v9, v9, 3
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vi	v9, v9, 3
 	vmsltu.vv	v0, v8, v9
 	ret
 

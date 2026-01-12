@@ -14,11 +14,11 @@ func0000000000000a01:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	li	a0, 128
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vxor.vi	v10, v12, 3
+	vadd.vi	v10, v12, 3
 	vmerge.vim	v10, v10, 1, v0
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8

@@ -14,8 +14,8 @@ func0000000000000088:
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsgtu.vi	v0, v8, 2
 	ret
 
@@ -27,8 +27,8 @@ func0000000000000084:
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -57,8 +57,8 @@ func0000000000000326:
 	vmsle.vi	v0, v10, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, -1
 	ret
 
@@ -68,8 +68,8 @@ func00000000000000aa:
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 2
 	ret
 

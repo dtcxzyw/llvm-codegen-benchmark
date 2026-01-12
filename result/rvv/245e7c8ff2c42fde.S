@@ -12,9 +12,9 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	lui	a0, 522232
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	addi	a0, a0, -129
-	vsub.vv	v10, v10, v12
+	vadd.vv	v10, v12, v10
 	slli	a1, a0, 32
 	vadd.vi	v10, v10, 2
 	add	a0, a0, a1

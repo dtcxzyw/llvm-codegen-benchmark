@@ -44,12 +44,10 @@ func000000000000000a:
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	lui	a0, 524288
-	vmerge.vim	v12, v12, 1, v0
-	addi	a0, a0, -1
-	vxor.vx	v12, v12, a0
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v10, v12, v10
 	vadd.vv	v10, v10, v10
+	vadd.vi	v10, v10, -2
 	vor.vv	v8, v10, v8
 	ret
 

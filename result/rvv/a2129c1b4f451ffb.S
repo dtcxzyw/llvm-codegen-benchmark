@@ -22,18 +22,18 @@ func0000000000000007:
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmslt.vv	v0, v8, v10
 	vmv.v.i	v8, 1
-	vrsub.vi	v8, v12, 2, v0.t
+	vadd.vi	v8, v12, 2, v0.t
 	ret
 
 func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
-	vmerge.vim	v14, v12, 1, v0
+	vmerge.vim	v14, v12, -1, v0
 	vmseq.vv	v0, v8, v10
-	vrsub.vi	v12, v14, 10, v0.t
+	vadd.vi	v12, v14, 10, v0.t
 	vmv.v.v	v8, v12
 	ret
 

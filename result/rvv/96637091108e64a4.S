@@ -84,8 +84,8 @@ func0000000000000005:
 	vand.vx	v10, v12, a0
 	vor.vv	v8, v8, v10
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 2
 	ret
 

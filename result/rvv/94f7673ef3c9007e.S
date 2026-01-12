@@ -20,8 +20,8 @@ func0000000000000000:
 	vfmacc.vf	v16, fa3, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v16
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v10, v8
 	ret
 
 .LCPI1_0:
@@ -46,7 +46,7 @@ func0000000000000001:
 	vfmacc.vf	v16, fa3, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v16
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v10, v8
 	ret
 

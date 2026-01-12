@@ -6,7 +6,7 @@ func0000000000000021:
 	vmv.v.i	v8, 0
 	vmerge.vim	v12, v8, 1, v0
 	vmv1r.v	v0, v10
-	vmerge.vim	v8, v8, 1, v0
-	vsub.vv	v8, v12, v8
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vv	v8, v8, v12
 	ret
 

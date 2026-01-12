@@ -2,9 +2,9 @@ func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	lui	a0, 169
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	addi	a0, a0, 1276
-	vsub.vv	v10, v8, v10
+	vadd.vv	v10, v10, v8
 	vmv.v.x	v8, a0
 	li	a0, 365
 	vmacc.vx	v8, a0, v10

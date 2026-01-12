@@ -4,9 +4,9 @@ func0000000000000000:
 	vwaddu.wv	v8, v8, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 3
 	ret
 
 func000000000000001f:
@@ -15,8 +15,8 @@ func000000000000001f:
 	vwaddu.wv	v8, v8, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 2
 	ret
 
@@ -59,8 +59,8 @@ func000000000000000d:
 	vwaddu.wv	v8, v8, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
 	li	a0, -64
 	vadd.vx	v8, v8, a0
 	ret

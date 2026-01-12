@@ -4,8 +4,8 @@ func0000000000000021:
 	vand.vx	v10, v10, a0
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmseq.vv	v0, v8, v10
 	ret
 
@@ -26,8 +26,8 @@ func0000000000000034:
 	vand.vi	v10, v10, 4
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmsltu.vv	v0, v8, v10
 	ret
 
@@ -47,8 +47,8 @@ func0000000000000181:
 	vand.vi	v10, v10, 4
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmseq.vv	v0, v8, v10
 	ret
 
@@ -71,8 +71,8 @@ func0000000000000024:
 	vand.vx	v10, v10, a0
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmsltu.vv	v0, v8, v10
 	ret
 
@@ -93,8 +93,8 @@ func000000000000002c:
 	vand.vx	v10, v10, a0
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 3
 	vmsne.vv	v0, v8, v10
 	ret
 

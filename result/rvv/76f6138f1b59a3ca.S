@@ -17,9 +17,9 @@ func00000000000000a8:
 	vmv.v.i	v10, 0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 5
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 5
 	vmsgtu.vx	v0, v8, a0
 	ret
 

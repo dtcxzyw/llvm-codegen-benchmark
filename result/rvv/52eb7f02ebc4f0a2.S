@@ -57,12 +57,12 @@ func0000000000000025:
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 2
 	vmv.v.i	v10, 0
-	vmerge.vim	v14, v10, 1, v0
-	vnot.v	v14, v14
+	vmerge.vim	v14, v10, -1, v0
+	vadd.vv	v8, v14, v8
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v14, v8
+	vadd.vi	v8, v8, -1
 	ret
 
 func0000000000000140:

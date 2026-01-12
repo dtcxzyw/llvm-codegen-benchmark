@@ -73,10 +73,10 @@ func0000000000000011:
 	vmseq.vi	v0, v12, 8
 	vmv.v.i	v12, 0
 	vsll.vi	v10, v10, 16
-	vmerge.vim	v12, v12, 1, v0
-	vxor.vi	v12, v12, 5
+	vmerge.vim	v12, v12, -1, v0
 	vor.vv	v8, v8, v10
-	vor.vv	v8, v8, v12
+	vadd.vv	v8, v12, v8
+	vadd.vi	v8, v8, 5
 	ret
 
 func00000000000000a0:

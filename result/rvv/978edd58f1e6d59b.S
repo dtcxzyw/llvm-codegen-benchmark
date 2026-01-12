@@ -11,10 +11,10 @@ func0000000000000001:
 	vnsrl.wi	v10, v8, 0
 	vmv.v.i	v8, 0
 	vand.vi	v9, v10, 2
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vv	v8, v8, v9
 	li	a0, 37
-	vxor.vx	v8, v8, a0
-	vor.vv	v8, v8, v9
+	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000007:

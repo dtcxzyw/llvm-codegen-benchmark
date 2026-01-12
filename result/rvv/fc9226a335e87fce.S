@@ -4,9 +4,9 @@ func0000000000000298:
 	vmv.v.i	v10, 0
 	vmsltu.vx	v0, v8, a0
 	li	a0, 255
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	vmsgtu.vx	v0, v8, a0
-	vxor.vi	v8, v10, 3
+	vadd.vi	v8, v10, 3
 	vmerge.vim	v8, v8, 4, v0
 	ret
 

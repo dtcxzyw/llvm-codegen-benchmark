@@ -40,8 +40,8 @@ func000000000000000a:
 	vmslt.vv	v0, v10, v8
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	li	a0, 63
-	vxor.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 

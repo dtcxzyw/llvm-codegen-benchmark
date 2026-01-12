@@ -3,8 +3,8 @@ func0000000000000007:
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 4
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 8
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 8
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 6, v0
 	vadd.vv	v8, v10, v8
@@ -16,8 +16,8 @@ func0000000000000053:
 	li	a0, 100
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 3
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v10, v8
@@ -105,8 +105,8 @@ func000000000000001b:
 	li	a0, 100
 	vmslt.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 4
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 4
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 2, v0
 	vadd.vv	v8, v8, v10
@@ -117,8 +117,8 @@ func0000000000000018:
 	vmv1r.v	v12, v0
 	vmsle.vi	v0, v10, 2
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 3
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
@@ -130,8 +130,8 @@ func0000000000000050:
 	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 4
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 4
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 2, v0
 	vadd.vv	v8, v10, v8

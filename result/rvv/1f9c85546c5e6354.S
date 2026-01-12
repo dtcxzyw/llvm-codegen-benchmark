@@ -20,8 +20,8 @@ func000000000000018f:
 	vmv.v.i	v10, 0
 	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v10, v14, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 2
 	ret

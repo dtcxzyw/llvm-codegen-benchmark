@@ -3,8 +3,8 @@ func0000000000000001:
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
-	vrsub.vi	v12, v12, 2
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vi	v12, v12, 2
 	vmv1r.v	v0, v11
 	vmerge.vvm	v8, v12, v8, v0
 	vrsub.vi	v8, v8, -8
@@ -15,8 +15,8 @@ func0000000000000000:
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
-	vrsub.vi	v12, v12, 2
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vi	v12, v12, 2
 	vmv1r.v	v0, v11
 	vmerge.vvm	v8, v12, v8, v0
 	vrsub.vi	v8, v8, -4

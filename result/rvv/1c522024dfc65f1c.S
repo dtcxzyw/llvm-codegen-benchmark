@@ -28,9 +28,9 @@ func00000000000000a0:
 	vmsgt.vi	v0, v12, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v8, v8, v10
-	vsub.vv	v8, v8, v12
+	vadd.vv	v8, v12, v8
 	vadd.vi	v8, v8, 2
 	ret
 
@@ -39,10 +39,10 @@ func00000000000000a5:
 	vmsgt.vi	v0, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vnot.v	v12, v12
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
+	vadd.vv	v8, v12, v8
+	vadd.vi	v8, v8, -1
 	ret
 
 func0000000000000085:

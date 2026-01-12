@@ -3,10 +3,10 @@ func0000000000000001:
 	vmv1r.v	v10, v0
 	vmv1r.v	v0, v9
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
+	vmerge.vim	v9, v9, -1, v0
 	vmv.v.i	v11, 4
 	vmv1r.v	v0, v10
-	vrsub.vi	v11, v9, 2, v0.t
+	vadd.vi	v11, v9, 2, v0.t
 	vand.vi	v8, v8, 8
 	vor.vv	v8, v11, v8
 	ret

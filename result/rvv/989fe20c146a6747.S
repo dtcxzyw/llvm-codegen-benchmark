@@ -5,8 +5,8 @@ func0000000000000000:
 	vmv1r.v	v12, v0
 	vmv.v.i	v8, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v14, v8, 1, v0
+	vmerge.vim	v14, v8, -1, v0
 	vmor.mm	v0, v12, v11
-	vrsub.vi	v8, v14, 2, v0.t
+	vadd.vi	v8, v14, 2, v0.t
 	ret
 

@@ -5,8 +5,8 @@ func0000000000000004:
 	vsub.vv	v8, v8, v10
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func0000000000000006:

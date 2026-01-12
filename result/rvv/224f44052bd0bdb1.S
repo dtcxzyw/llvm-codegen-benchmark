@@ -43,9 +43,9 @@ func0000000000000006:
 	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
 	li	a0, -99
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmslt.vx	v0, v8, a0
-	vxor.vi	v8, v12, 5
+	vadd.vi	v8, v12, 5
 	vmerge.vim	v8, v8, 6, v0
 	vmv1r.v	v0, v11
 	vmerge.vim	v8, v8, 5, v0

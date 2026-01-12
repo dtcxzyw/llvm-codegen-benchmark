@@ -57,9 +57,9 @@ func0000000000000011:
 	vmv.v.i	v10, 0
 	lui	a0, 16
 	addi	a0, a0, -1023
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vx	v10, v10, a0
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
+	vadd.vx	v8, v8, a0
 	lui	a0, 1048560
 	vandn.vx	v8, v8, a0
 	ret

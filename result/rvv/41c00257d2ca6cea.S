@@ -3,9 +3,9 @@ func0000000000000060:
 	vmsle.vi	v0, v10, 2
 	vmv.v.i	v10, 0
 	lui	a0, 169
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	addi	a0, a0, 1276
-	vsub.vv	v10, v8, v10
+	vadd.vv	v10, v10, v8
 	vmv.v.x	v8, a0
 	li	a0, 365
 	vmacc.vx	v8, a0, v10

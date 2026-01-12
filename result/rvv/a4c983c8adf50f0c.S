@@ -3,9 +3,9 @@ func0000000000000015:
 	vand.vi	v12, v12, 7
 	vmseq.vi	v0, v12, 1
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v8, v10, v8
-	vsub.vv	v8, v8, v12
+	vadd.vv	v8, v8, v12
 	ret
 
 func0000000000000014:
@@ -14,9 +14,9 @@ func0000000000000014:
 	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 4
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v8, v10, v8
-	vsub.vv	v8, v8, v12
+	vadd.vv	v8, v8, v12
 	ret
 
 func0000000000000185:
@@ -26,8 +26,8 @@ func0000000000000185:
 	li	a0, 32
 	vmsgtu.vx	v0, v12, a0
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v8, v10, v8
-	vsub.vv	v8, v8, v12
+	vadd.vv	v8, v8, v12
 	ret
 

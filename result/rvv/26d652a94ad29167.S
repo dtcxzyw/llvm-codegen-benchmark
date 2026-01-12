@@ -3,8 +3,8 @@ func0000000000000048:
 	vmv.v.i	v14, 0
 	li	a0, 22
 	fli.d	fa5, 1.0
-	vmerge.vim	v14, v14, 1, v0
-	vsub.vv	v12, v12, v14
+	vmerge.vim	v14, v14, -1, v0
+	vadd.vv	v12, v12, v14
 	vmsgtu.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
@@ -16,8 +16,8 @@ func0000000000000248:
 	vmv.v.i	v14, 0
 	li	a0, 22
 	fli.d	fa5, 1.0
-	vmerge.vim	v14, v14, 1, v0
-	vsub.vv	v12, v12, v14
+	vmerge.vim	v14, v14, -1, v0
+	vadd.vv	v12, v12, v14
 	vmsgtu.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5

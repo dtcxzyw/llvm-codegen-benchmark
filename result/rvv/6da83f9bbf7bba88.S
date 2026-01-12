@@ -5,8 +5,8 @@ func000000000000010b:
 	vmv.v.i	v10, 0
 	vmerge.vim	v12, v10, 1, v0
 	vmseq.vi	v0, v8, 0
-	vmerge.vim	v8, v10, 1, v0
-	vsub.vv	v8, v12, v8
+	vmerge.vim	v8, v10, -1, v0
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 6
 	ret
 
@@ -16,8 +16,8 @@ func0000000000000c0b:
 	vmv.v.i	v10, 0
 	vmerge.vim	v12, v10, 1, v0
 	vmseq.vi	v0, v8, 0
-	vmerge.vim	v8, v10, 1, v0
-	vsub.vv	v8, v12, v8
+	vmerge.vim	v8, v10, -1, v0
+	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 2
 	ret
 

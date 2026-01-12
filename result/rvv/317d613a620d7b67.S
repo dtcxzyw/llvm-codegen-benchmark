@@ -19,9 +19,9 @@ func0000000000000004:
 	vmsleu.vi	v0, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	li	a0, 454
-	vrsub.vx	v10, v10, a0
+	vadd.vx	v10, v10, a0
 	vmv1r.v	v0, v9
 	vmerge.vvm	v8, v10, v8, v0
 	ret

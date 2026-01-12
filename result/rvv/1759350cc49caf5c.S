@@ -30,8 +30,8 @@ func0000000000000024:
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vrsub.vi	v9, v9, 2
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vi	v9, v9, 2
 	vmsltu.vv	v0, v9, v8
 	ret
 
@@ -42,8 +42,8 @@ func0000000000000038:
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vrsub.vi	v9, v9, 2
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vi	v9, v9, 2
 	vmsltu.vv	v0, v8, v9
 	ret
 
@@ -55,9 +55,9 @@ func0000000000000028:
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
+	vmerge.vim	v9, v9, -1, v0
 	li	a0, 21
-	vxor.vx	v9, v9, a0
+	vadd.vx	v9, v9, a0
 	vmsltu.vv	v0, v8, v9
 	ret
 

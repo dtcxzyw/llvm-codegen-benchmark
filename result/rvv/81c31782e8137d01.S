@@ -46,10 +46,11 @@ func0000000000000000:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 3
+	li	a0, 24
+	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000000c:

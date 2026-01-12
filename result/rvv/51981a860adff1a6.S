@@ -18,8 +18,8 @@ func0000000000000008:
 func0000000000000009:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmsleu.vv	v0, v8, v10
 	ret
 

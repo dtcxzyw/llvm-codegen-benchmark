@@ -26,9 +26,9 @@ func000000000000014c:
 	vmsne.vx	v10, v8, a0
 	vmxor.mm	v0, v10, v12
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	lui	a0, 524288
-	vrsub.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000002c:

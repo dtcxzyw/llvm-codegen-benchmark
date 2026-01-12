@@ -8,7 +8,7 @@ func0000000000000211:
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v8, v12, 1, v0
-	vsub.vv	v8, v14, v8
+	vmerge.vim	v8, v12, -1, v0
+	vadd.vv	v8, v8, v14
 	ret
 

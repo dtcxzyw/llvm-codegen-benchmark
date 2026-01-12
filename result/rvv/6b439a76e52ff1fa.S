@@ -61,8 +61,8 @@ func000000000000000a:
 	vmsgt.vx	v0, v8, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 12
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 12
 	ret
 
 func000000000000000c:

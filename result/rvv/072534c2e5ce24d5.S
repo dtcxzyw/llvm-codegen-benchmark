@@ -16,8 +16,8 @@ func0000000000000001:
 	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
 	li	a0, 57
-	vmerge.vim	v12, v12, 1, v0
-	vxor.vx	v12, v12, a0
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vx	v12, v12, a0
 	li	a0, 32
 	vmv1r.v	v0, v11
 	vmerge.vxm	v10, v12, a0, v0

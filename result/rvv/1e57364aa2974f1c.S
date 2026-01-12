@@ -3,8 +3,8 @@ func0000000000000041:
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	vsrl.vi	v8, v8, 28
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vand.vi	v8, v8, 3
 	vmseq.vv	v0, v8, v10
 	ret

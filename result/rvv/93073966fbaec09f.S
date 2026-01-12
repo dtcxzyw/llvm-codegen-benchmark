@@ -38,9 +38,9 @@ func000000000000000c:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	lui	a0, 1048560
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	addi	a0, a0, 1
-	vxor.vx	v10, v10, a0
+	vadd.vx	v10, v10, a0
 	vand.vv	v8, v8, v10
 	ret
 

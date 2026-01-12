@@ -14,10 +14,10 @@ func0000000000000001:
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	lui	a0, 524288
 	vmv1r.v	v0, v11
-	vrsub.vx	v8, v12, a0, v0.t
+	vadd.vx	v8, v12, a0, v0.t
 	vmseq.vx	v0, v8, a0
 	ret
 
@@ -68,9 +68,9 @@ func000000000000000c:
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vmv1r.v	v0, v11
-	vrsub.vi	v8, v12, 2, v0.t
+	vadd.vi	v8, v12, 2, v0.t
 	vmsne.vi	v0, v8, 1
 	ret
 

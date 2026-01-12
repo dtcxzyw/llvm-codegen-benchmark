@@ -27,8 +27,8 @@ func0000000000000004:
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
-	vrsub.vi	v12, v12, 2
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vi	v12, v12, 2
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 2, v0
 	vmsltu.vv	v0, v10, v8
@@ -39,8 +39,8 @@ func0000000000000006:
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
-	vxor.vi	v12, v12, 7
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vi	v12, v12, 7
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 5, v0
 	vmslt.vv	v0, v10, v8

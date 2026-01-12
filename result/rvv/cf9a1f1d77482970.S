@@ -14,7 +14,7 @@ func000000000000000c:
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 7
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 

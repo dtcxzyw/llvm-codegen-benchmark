@@ -2,8 +2,8 @@ func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
 	li	a0, 257
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vv	v10, v12, v10
 	vmsltu.vx	v0, v8, a0
 	vadd.vi	v8, v10, 4
 	vadd.vi	v8, v10, 12, v0.t

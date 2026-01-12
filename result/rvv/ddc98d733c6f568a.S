@@ -3,8 +3,8 @@ func0000000000000002:
 	vmseq.vv	v12, v8, v10
 	vmor.mm	v0, v12, v0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func0000000000000010:
@@ -12,8 +12,8 @@ func0000000000000010:
 	vmsltu.vv	v12, v10, v8
 	vmor.mm	v0, v0, v12
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func000000000000000a:
@@ -21,8 +21,8 @@ func000000000000000a:
 	vmsleu.vv	v12, v8, v10
 	vmor.mm	v0, v12, v0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func0000000000000016:
@@ -30,8 +30,8 @@ func0000000000000016:
 	vmsle.vv	v12, v10, v8
 	vmor.mm	v0, v0, v12
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 3
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 3
 	ret
 
 func0000000000000014:

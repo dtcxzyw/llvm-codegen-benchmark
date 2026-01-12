@@ -6,8 +6,8 @@ func00000000000000a6:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, -1
 	ret
 
@@ -43,8 +43,8 @@ func00000000000001a6:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, 0
 	ret
 
@@ -56,8 +56,8 @@ func00000000000000aa:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 0
 	ret
 
@@ -81,8 +81,8 @@ func000000000000010a:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 0
 	ret
 
@@ -94,8 +94,8 @@ func000000000000018a:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 0
 	ret
 
@@ -107,8 +107,8 @@ func0000000000000086:
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
-	vmerge.vim	v10, v12, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, -1
 	ret
 

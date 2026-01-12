@@ -7,8 +7,8 @@ func0000000000000015:
 	vmv.v.i	v10, 0
 	vmerge.vxm	v8, v8, a0, v0
 	vmv1r.v	v0, v9
-	vmerge.vim	v9, v10, 1, v0
-	vnot.v	v9, v9
-	vadd.vv	v8, v8, v9
+	vmerge.vim	v9, v10, -1, v0
+	vadd.vv	v8, v9, v8
+	vadd.vi	v8, v8, -1
 	ret
 

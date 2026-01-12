@@ -25,11 +25,11 @@ func0000000000000047:
 	vmfgt.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v14, v12, 1, v0
+	vmerge.vim	v14, v12, -1, v0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfne.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vrsub.vi	v12, v14, 2, v0.t
+	vadd.vi	v12, v14, 2, v0.t
 	vmv.v.v	v8, v12
 	ret
 

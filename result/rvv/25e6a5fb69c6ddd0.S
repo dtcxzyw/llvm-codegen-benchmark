@@ -4,9 +4,9 @@ func0000000000000141:
 	vmsgt.vi	v0, v10, -1
 	vmv.v.i	v10, 0
 	lui	a0, 524288
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	vmv1r.v	v0, v12
-	vrsub.vx	v8, v10, a0, v0.t
+	vadd.vx	v8, v10, a0, v0.t
 	vmseq.vx	v0, v8, a0
 	ret
 

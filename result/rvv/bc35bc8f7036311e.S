@@ -16,9 +16,9 @@ func0000000000000008:
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmv.v.i	v8, 0
 	vnsrl.wi	v9, v10, 0
-	vmerge.vim	v8, v8, 1, v0
-	vnot.v	v8, v8
+	vmerge.vim	v8, v8, -1, v0
 	vadd.vv	v8, v8, v9
+	vadd.vi	v8, v8, -1
 	ret
 
 func000000000000000f:

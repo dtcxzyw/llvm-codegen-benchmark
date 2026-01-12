@@ -7,9 +7,9 @@ func0000000000000008:
 	vfmadd.vf	v8, fa5, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vfncvt.rtz.x.f.w	v14, v8
-	vsub.vv	v8, v14, v12
+	vadd.vv	v8, v12, v14
 	li	a0, 22
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -23,9 +23,9 @@ func0000000000000028:
 	vfmadd.vf	v8, fa5, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v12, -1, v0
 	vfncvt.rtz.x.f.w	v14, v8
-	vsub.vv	v8, v14, v12
+	vadd.vv	v8, v12, v14
 	li	a0, 22
 	vmsgtu.vx	v0, v8, a0
 	ret

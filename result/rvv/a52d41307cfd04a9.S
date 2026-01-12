@@ -101,8 +101,8 @@ func000000000000030a:
 	vmsgtu.vi	v0, v10, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vx	v10, v10, a0
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
 
@@ -129,8 +129,8 @@ func0000000000000308:
 	vmsgtu.vi	v0, v10, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vx	v10, v10, a0
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 

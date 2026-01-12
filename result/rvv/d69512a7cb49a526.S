@@ -3,8 +3,8 @@ func0000000000000014:
 	vmsleu.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000020:
@@ -12,8 +12,8 @@ func0000000000000020:
 	vmsltu.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000004:
@@ -21,7 +21,7 @@ func0000000000000004:
 	vmseq.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vsub.vv	v8, v8, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v8, v8, v10
 	ret
 

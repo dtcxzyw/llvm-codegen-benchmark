@@ -21,9 +21,9 @@ func0000000000000006:
 	vmsle.vi	v10, v8, -1
 	vmand.mm	v0, v10, v0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	bseti	a0, zero, 63
-	vrsub.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000000a:
@@ -31,8 +31,8 @@ func000000000000000a:
 	vmsgt.vi	v10, v8, 0
 	vmand.mm	v0, v10, v0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	bseti	a0, zero, 63
-	vrsub.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 

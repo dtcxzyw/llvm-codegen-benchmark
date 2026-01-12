@@ -3,8 +3,8 @@ func0000000000000001:
 	vsll.vi	v8, v8, 18
 	vmv.v.i	v10, 0
 	vsra.vi	v8, v8, 29
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
+	vmerge.vim	v10, v10, -1, v0
 	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 3
 	ret
 

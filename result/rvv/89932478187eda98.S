@@ -8,7 +8,7 @@ func0000000000000021:
 	vmandn.mm	v8, v12, v8
 	vmor.mm	v0, v9, v8
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 4
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 4
 	ret
 

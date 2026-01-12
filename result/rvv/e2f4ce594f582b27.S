@@ -15,8 +15,8 @@ func0000000000000001:
 	vmseq.vi	v0, v8, 0
 	vmv.v.i	v8, 0
 	lui	a0, 786432
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	addi	a0, a0, 1025
-	vxor.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 

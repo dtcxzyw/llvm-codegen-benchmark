@@ -3,8 +3,8 @@ func0000000000000021:
 	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vi	v10, v10, 2
 	vmseq.vv	v13, v8, v10
 	vmor.mm	v0, v12, v13
 	ret

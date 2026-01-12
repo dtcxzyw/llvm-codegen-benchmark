@@ -5,8 +5,8 @@ func0000000000000081:
 	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vv	v10, v12, v10
 	vadd.vi	v10, v10, 2
 	vmseq.vv	v0, v8, v10
 	ret

@@ -1,14 +1,16 @@
 func0000000000000001:
-	li	a0, 31
-	slli	a0, a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vmv1r.v	v9, v0
+	vmv1r.v	v0, v8
+	vmv.v.i	v10, 0
+	li	a0, 31
+	vmerge.vim	v10, v10, -1, v0
+	slli	a0, a0, 10
+	vmv.v.x	v12, a0
 	lui	a0, 16
 	addi	a0, a0, -1024
-	vmerge.vxm	v10, v10, a0, v0
-	vmv.v.i	v12, 0
-	vmv1r.v	v0, v8
-	vmerge.vim	v8, v12, 1, v0
-	vsub.vv	v8, v10, v8
+	vmv1r.v	v0, v9
+	vmerge.vxm	v8, v12, a0, v0
+	vadd.vv	v8, v8, v10
 	ret
 

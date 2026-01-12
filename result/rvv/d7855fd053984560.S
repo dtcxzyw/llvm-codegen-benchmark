@@ -12,8 +12,8 @@ func00000000000000a1:
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	lui	a0, 1048572
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vv	v10, v12, v10
 	addi	a0, a0, 2
 	vadd.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8
@@ -24,8 +24,8 @@ func0000000000000221:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
+	vmerge.vim	v12, v12, -1, v0
+	vadd.vv	v10, v12, v10
 	li	a0, -126
 	vadd.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

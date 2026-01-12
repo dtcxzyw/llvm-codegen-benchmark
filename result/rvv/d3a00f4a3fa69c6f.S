@@ -4,8 +4,8 @@ func0000000000000010:
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v10, 0
 	vnsrl.wi	v11, v8, 5
-	vmerge.vim	v8, v10, 1, v0
-	vnot.v	v8, v8
+	vmerge.vim	v8, v10, -1, v0
 	vadd.vv	v8, v8, v11
+	vadd.vi	v8, v8, -1
 	ret
 

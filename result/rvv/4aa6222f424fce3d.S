@@ -4,8 +4,8 @@ func0000000000000021:
 	lui	a0, 131088
 	vmv.v.i	v12, 0
 	vmseq.vx	v8, v10, a0
-	vmerge.vim	v10, v12, 1, v0
-	vrsub.vi	v10, v10, 2
+	vmerge.vim	v10, v12, -1, v0
+	vadd.vi	v10, v10, 2
 	vmv1r.v	v0, v8
 	vmerge.vim	v8, v10, 0, v0
 	ret

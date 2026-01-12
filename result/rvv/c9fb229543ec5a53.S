@@ -5,9 +5,8 @@ func000000000000000f:
 	vmv1r.v	v0, v8
 	vmerge.vim	v12, v10, 1, v0
 	vmv1r.v	v0, v9
-	vmerge.vim	v8, v10, 1, v0
-	vxor.vi	v8, v8, 3
+	vmerge.vim	v8, v10, -1, v0
 	vadd.vv	v8, v8, v12
-	vadd.vi	v8, v8, 1
+	vadd.vi	v8, v8, 4
 	ret
 

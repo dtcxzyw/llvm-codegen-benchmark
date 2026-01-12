@@ -16,9 +16,9 @@ func000000000000000a:
 	vmsgt.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v10, -1, v0
 	vmv1r.v	v0, v9
-	vxor.vi	v8, v10, 5, v0.t
+	vadd.vi	v8, v10, 5, v0.t
 	ret
 
 func0000000000000004:

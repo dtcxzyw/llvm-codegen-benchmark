@@ -18,8 +18,8 @@ func0000000000000024:
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.i	v8, 0
 	lui	a0, 1
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	addi	a0, a0, 327
-	vxor.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 

@@ -29,8 +29,8 @@ func0000000000000004:
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vxor.vi	v8, v8, 3
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 3
 	ret
 
 func0000000000000028:

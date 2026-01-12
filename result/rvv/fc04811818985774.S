@@ -22,8 +22,8 @@ func0000000000000001:
 	vadd.vv	v10, v10, v12
 	vmseq.vv	v0, v10, v8
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vrsub.vi	v8, v8, 2
+	vmerge.vim	v8, v8, -1, v0
+	vadd.vi	v8, v8, 2
 	ret
 
 func000000000000002a:

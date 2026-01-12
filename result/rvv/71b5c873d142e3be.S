@@ -8,6 +8,8 @@ func0000000000000000:
 
 func0000000000000002:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vrsub.vi	v8, v8, 2
+	vsll.vi	v8, v8, 7
+	vsra.vi	v8, v8, 7
+	vadd.vi	v8, v8, 2
 	ret
 

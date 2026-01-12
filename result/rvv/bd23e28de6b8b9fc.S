@@ -18,8 +18,8 @@ func000000000000014c:
 	vmand.mm	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
+	vmerge.vim	v8, v8, -1, v0
 	bseti	a0, zero, 63
-	vrsub.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	ret
 

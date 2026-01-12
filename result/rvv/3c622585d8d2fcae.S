@@ -3,8 +3,8 @@ func000000000000002d:
 	vnsrl.wi	v12, v10, 0
 	vmsle.vv	v0, v12, v9
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
 func0000000000000111:
@@ -12,8 +12,8 @@ func0000000000000111:
 	vnsrl.wi	v12, v10, 0
 	vmsltu.vv	v0, v9, v12
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
 func0000000000000005:
@@ -21,8 +21,8 @@ func0000000000000005:
 	vnsrl.wi	v12, v10, 0
 	vmseq.vv	v0, v9, v12
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
 func0000000000000030:
@@ -30,8 +30,8 @@ func0000000000000030:
 	vnsrl.wi	v12, v10, 0
 	vmsne.vv	v0, v9, v12
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
 func0000000000000029:
@@ -39,8 +39,8 @@ func0000000000000029:
 	vnsrl.wi	v12, v10, 0
 	vmslt.vv	v0, v12, v9
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
 func000000000000001d:
@@ -48,7 +48,7 @@ func000000000000001d:
 	vnsrl.wi	v12, v10, 0
 	vmsle.vv	v0, v9, v12
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
-	vsub.vv	v8, v8, v9
+	vmerge.vim	v9, v9, -1, v0
+	vadd.vv	v8, v8, v9
 	ret
 
