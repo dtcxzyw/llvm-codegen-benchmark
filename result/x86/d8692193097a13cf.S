@@ -2,8 +2,7 @@ func00000000000000a6:
 	leal	-1(%rdi), %ecx
 	movl	$1, %eax
 	subl	%edi, %eax
-	testl	%edi, %edi
-	cmovgl	%ecx, %eax
+	cmovll	%ecx, %eax
 	retq
 
 func00000000000000f4:

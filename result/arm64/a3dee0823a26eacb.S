@@ -1,17 +1,13 @@
 func00000000000014ca:
-	mov	w8, #1
-	sub	w9, w0, #1
-	subs	w8, w8, w0
-	csel	w8, w8, w9, gt
+	subs	w8, w0, #1
+	cneg	w8, w8, le
 	cmp	w8, #99
 	cset	w0, gt
 	ret
 
 func00000000000014c6:
-	mov	w8, #1
-	sub	w9, w0, #1
-	subs	w8, w8, w0
-	csel	w8, w8, w9, gt
+	subs	w8, w0, #1
+	cneg	w8, w8, le
 	cmp	w8, #4
 	cset	w0, lt
 	ret

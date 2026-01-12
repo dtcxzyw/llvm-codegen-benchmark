@@ -1,15 +1,11 @@
 func00000000000000a6:
-	mov	w8, #1
-	sub	w9, w0, #1
-	subs	w8, w8, w0
-	csel	w0, w8, w9, gt
+	subs	w8, w0, #1
+	cneg	w0, w8, le
 	ret
 
 func00000000000000f4:
-	mov	w8, #127
-	sub	w9, w0, #127
-	subs	w8, w8, w0
-	csel	w0, w8, w9, hi
+	subs	w8, w0, #127
+	cneg	w0, w8, ls
 	ret
 
 func00000000000000b4:
