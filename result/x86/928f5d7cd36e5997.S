@@ -1,16 +1,18 @@
 func0000000000000284:
-	shll	$8, %esi
-	orl	%edi, %esi
-	decl	%esi
-	cmpw	$2, %si
+	movzwl	%si, %eax
+	shll	$8, %eax
+	orl	%edi, %eax
+	decl	%eax
+	cmpw	$2, %ax
 	setb	%al
 	retq
 
 func00000000000002a4:
-	shll	$8, %esi
-	orl	%edi, %esi
-	decl	%esi
 	movzwl	%si, %eax
+	shll	$8, %eax
+	orl	%edi, %eax
+	decl	%eax
+	movzwl	%ax, %eax
 	cmpl	$1500, %eax
 	setb	%al
 	retq

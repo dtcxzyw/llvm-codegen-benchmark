@@ -17,8 +17,9 @@ func0000000000000026:
 .LCPI2_0:
 	.quad	1000000
 func00000000000000a6:
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpmovq2m	%ymm0, %k1
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpsubq	%ymm1, %ymm0, %ymm2
+	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2 {%k1}
+	vmovdqa	%ymm2, %ymm0
 	retq
 

@@ -20,11 +20,11 @@ func00000000000000a5:
 
 func0000000000000065:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v8, v8, v10
-	vmsle.vi	v0, v8, -1
-	vmv.v.i	v10, 1
-	vmerge.vim	v10, v10, 8, v0
-	vadd.vv	v8, v10, v8
+	vsub.vv	v12, v8, v10
+	vmslt.vv	v0, v8, v10
+	vmv.v.i	v8, 1
+	vmerge.vim	v8, v8, 8, v0
+	vadd.vv	v8, v8, v12
 	ret
 
 func0000000000000061:

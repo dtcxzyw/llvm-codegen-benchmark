@@ -5,14 +5,16 @@ func0000000000000000:
 	retq
 
 func0000000000000035:
-	addl	%esi, %esi
-	subl	%esi, %edi
+	movzwl	%si, %eax
+	addl	%eax, %eax
+	subl	%eax, %edi
 	leal	30(%rdi), %eax
 	retq
 
 func0000000000000030:
-	addl	%esi, %esi
-	subl	%esi, %edi
+	movzwl	%si, %eax
+	addl	%eax, %eax
+	subl	%eax, %edi
 	leal	-2(%rdi), %eax
 	retq
 

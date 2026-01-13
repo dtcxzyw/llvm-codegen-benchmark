@@ -1,16 +1,18 @@
 func0000000000000005:
-	shll	$8, %edx
-	orl	%esi, %edx
+	movzwl	%dx, %ecx
+	shll	$8, %ecx
+	orl	%esi, %ecx
 	testb	$1, %dil
 	movl	$258, %eax
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000007:
-	shll	$8, %edx
-	orl	%esi, %edx
+	movzwl	%dx, %ecx
+	shll	$8, %ecx
+	orl	%esi, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 

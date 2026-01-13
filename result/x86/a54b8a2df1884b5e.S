@@ -1,5 +1,6 @@
 func000000000000009f:
-	leal	1(%rsi,%rsi), %eax
+	movzwl	%si, %eax
+	leal	1(%rax,%rax), %eax
 	movzwl	%ax, %eax
 	addl	%edi, %eax
 	leal	(%rax,%rax), %ecx

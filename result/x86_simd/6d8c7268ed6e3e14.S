@@ -41,9 +41,9 @@ func0000000000000628:
 	retq
 
 func0000000000000acc:
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpnltd	%ymm0, %ymm1, %k0
-	vpmovd2m	%ymm1, %k1
+	vpsubd	%ymm2, %ymm1, %ymm3
+	vpcmpnltd	%ymm0, %ymm3, %k0
+	vpcmpgtd	%ymm1, %ymm2, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

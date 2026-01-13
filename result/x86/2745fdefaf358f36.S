@@ -1,8 +1,9 @@
 func000000000000000a:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
-	movzwl	%si, %ecx
+	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax

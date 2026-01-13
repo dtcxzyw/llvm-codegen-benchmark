@@ -8,9 +8,9 @@ func000000000000028c:
 	retq
 
 func0000000000000a8c:
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpcmpgtq	%ymm0, %ymm1, %k0
-	vpmovq2m	%ymm1, %k1
+	vpsubq	%ymm2, %ymm1, %ymm3
+	vpcmpgtq	%ymm0, %ymm3, %k0
+	vpcmpgtq	%ymm1, %ymm2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

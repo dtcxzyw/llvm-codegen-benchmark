@@ -9,7 +9,7 @@ func0000000000000001:
 	retq
 
 func0000000000000006:
-	movq	%rdi, %rax
+	movzwl	%di, %eax
 	shll	$9, %eax
 	orl	$1026, %eax
 	retq

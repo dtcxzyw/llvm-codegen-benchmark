@@ -19,10 +19,9 @@ func00000000000004cb:
 	retq
 
 func000000000000054b:
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpnltd	%ymm0, %ymm1, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
+	vpsubd	%ymm2, %ymm1, %ymm3
+	vpcmpnltd	%ymm0, %ymm3, %k1
+	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

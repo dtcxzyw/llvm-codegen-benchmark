@@ -1,7 +1,8 @@
 func000000000000003f:
-	movzbl	%dl, %eax
-	addl	%edi, %eax
-	leal	(%rax,%rsi,2), %eax
+	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	addl	%edi, %ecx
+	leal	(%rcx,%rax,2), %eax
 	retq
 
 func0000000000000004:

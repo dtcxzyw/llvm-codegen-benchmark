@@ -1,27 +1,30 @@
 func0000000000000281:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
+	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
 	incl	%edi
-	cmpw	%si, %di
+	cmpw	%ax, %di
 	sete	%al
 	retq
 
 func0000000000000285:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
+	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
 	addl	$-2, %edi
-	cmpw	%si, %di
+	cmpw	%ax, %di
 	setbe	%al
 	retq
 
 func0000000000000284:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
+	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
 	addl	$-2, %edi
-	cmpw	%si, %di
+	cmpw	%ax, %di
 	setb	%al
 	retq
 

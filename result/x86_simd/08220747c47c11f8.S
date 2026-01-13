@@ -40,10 +40,8 @@ func0000000000000001:
 	retq
 
 func0000000000000026:
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vmovdqa	%ymm1, %ymm0
+	vpcmpnltq	%ymm2, %ymm1, %k1
+	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI6_0:

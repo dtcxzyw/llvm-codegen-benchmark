@@ -1,6 +1,7 @@
 func0000000000000019:
 	orl	%esi, %edi
-	leal	1(%rdi,%rdi), %eax
+	movzwl	%di, %eax
+	leal	1(%rax,%rax), %eax
 	movzwl	%ax, %eax
 	retq
 

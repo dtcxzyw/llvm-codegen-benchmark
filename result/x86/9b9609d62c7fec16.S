@@ -1,49 +1,56 @@
 func00000000000000a5:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	setbe	%al
 	retq
 
 func0000000000000088:
-	shll	$11, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$11, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	seta	%al
 	retq
 
 func00000000000000aa:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	setg	%al
 	retq
 
 func00000000000000a6:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	setl	%al
 	retq
 
 func00000000000000a1:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	sete	%al
 	retq
 
 func00000000000000a4:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	setb	%al
 	retq
 
 func00000000000000a8:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	%dx, %di
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	%ax, %di
 	seta	%al
 	retq
 

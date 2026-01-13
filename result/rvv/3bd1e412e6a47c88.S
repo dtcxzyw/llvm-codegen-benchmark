@@ -18,10 +18,10 @@ func00000000000004cb:
 
 func000000000000054b:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	vmsle.vv	v12, v8, v10
-	vmsgt.vi	v8, v10, 0
-	vmand.mm	v0, v12, v8
+	vsub.vv	v14, v10, v12
+	vmsle.vv	v16, v8, v14
+	vmslt.vv	v8, v12, v10
+	vmand.mm	v0, v16, v8
 	ret
 
 func00000000000004ca:

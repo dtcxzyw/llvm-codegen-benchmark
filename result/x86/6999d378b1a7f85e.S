@@ -32,8 +32,8 @@ func000000000000000c:
 
 func0000000000000008:
 	movl	%esi, %eax
-	andl	$-8, %edx
 	shll	$7, %edx
+	andl	$8387584, %edx
 	andl	$2016, %eax
 	orl	%edi, %eax
 	orl	%edx, %eax
@@ -48,8 +48,8 @@ func0000000000000002:
 	retq
 
 func000000000000000b:
-	andl	$-8, %edx
 	shll	$8, %edx
+	andl	$16775168, %edx
 	andl	$2016, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax

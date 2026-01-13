@@ -1,15 +1,17 @@
 func000000000000001f:
-	shll	$5, %edx
-	orl	%edi, %edx
+	movzwl	%dx, %ecx
+	shll	$5, %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000017:
-	shll	$11, %edx
-	orl	%edi, %edx
+	movzwl	%dx, %ecx
+	shll	$11, %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000007:
@@ -20,10 +22,11 @@ func0000000000000007:
 	retq
 
 func0000000000000010:
-	shll	$8, %edx
-	orl	%edi, %edx
+	movzwl	%dx, %ecx
+	shll	$8, %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:
@@ -34,9 +37,10 @@ func0000000000000000:
 	retq
 
 func0000000000000018:
-	shll	$5, %edx
-	orl	%edi, %edx
+	movzwl	%dx, %ecx
+	shll	$5, %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 

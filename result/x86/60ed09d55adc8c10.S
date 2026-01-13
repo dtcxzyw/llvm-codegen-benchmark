@@ -1,71 +1,79 @@
 func0000000000000154:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq
 
 func0000000000000141:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	sete	%al
 	retq
 
 func000000000000014c:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	setne	%al
 	retq
 
 func0000000000000146:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	setl	%al
 	retq
 
 func0000000000000144:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq
 
 func0000000000000149:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	setae	%al
 	retq
 
 func0000000000000158:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	seta	%al
 	retq
 
 func0000000000000148:
-	movzbl	%dl, %eax
-	shll	$8, %esi
-	orl	%eax, %esi
 	movzwl	%si, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	%eax, %edi
 	seta	%al
 	retq

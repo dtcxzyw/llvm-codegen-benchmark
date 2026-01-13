@@ -1,13 +1,14 @@
 func000000000000003f:
-	movl	%esi, %eax
-	shll	$10, %edx
-	orl	%edi, %edx
+	movzwl	%si, %eax
+	movzwl	%dx, %ecx
+	shll	$10, %ecx
+	orl	%edi, %ecx
 	shll	$5, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000f:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$15, %edx
 	orl	%edi, %edx
 	shll	$5, %eax
@@ -15,19 +16,21 @@ func000000000000000f:
 	retq
 
 func0000000000000038:
-	movl	%esi, %eax
-	shll	$5, %edx
-	orl	%edi, %edx
+	movzwl	%si, %eax
+	movzwl	%dx, %ecx
+	shll	$5, %ecx
+	orl	%edi, %ecx
 	shll	$11, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000003d:
-	movl	%edi, %eax
-	shll	$9, %edx
-	orl	%esi, %edx
+	movzwl	%di, %eax
+	movzwl	%dx, %ecx
+	shll	$9, %ecx
+	orl	%esi, %ecx
 	shll	$14, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:
@@ -39,15 +42,16 @@ func0000000000000000:
 	retq
 
 func000000000000003b:
-	movl	%esi, %eax
-	shll	$5, %edx
-	orl	%edi, %edx
+	movzwl	%si, %eax
+	movzwl	%dx, %ecx
+	shll	$5, %ecx
+	orl	%edi, %ecx
 	shll	$11, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000c:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$12, %edx
 	orl	%edi, %edx
 	shll	$4, %eax
@@ -55,11 +59,12 @@ func000000000000000c:
 	retq
 
 func000000000000002c:
-	movl	%esi, %eax
-	shll	$8, %edx
-	orl	%edi, %edx
+	movzwl	%si, %eax
+	movzwl	%dx, %ecx
+	shll	$8, %ecx
+	orl	%edi, %ecx
 	shll	$4, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000008:
@@ -71,15 +76,16 @@ func0000000000000008:
 	retq
 
 func000000000000003c:
-	movl	%esi, %eax
-	shll	$13, %edx
-	orl	%edi, %edx
+	movzwl	%si, %eax
+	movzwl	%dx, %ecx
+	shll	$13, %ecx
+	orl	%edi, %ecx
 	shll	$8, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000004:
-	movl	%esi, %eax
+	movswl	%si, %eax
 	shll	$12, %edx
 	orl	%edi, %edx
 	shll	$4, %eax
@@ -87,7 +93,7 @@ func0000000000000004:
 	retq
 
 func000000000000000e:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$11, %edx
 	orl	%edi, %edx
 	shll	$6, %eax
@@ -95,7 +101,7 @@ func000000000000000e:
 	retq
 
 func000000000000000a:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$12, %edx
 	orl	%edi, %edx
 	shll	$8, %eax

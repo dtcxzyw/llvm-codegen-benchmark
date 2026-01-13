@@ -1,16 +1,16 @@
 func000000000000001f:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	andl	$31, %edx
 	shll	$10, %eax
-	orl	%edi, %eax
+	orl	%edi, %edx
 	orl	%edx, %eax
 	retq
 
 func0000000000000017:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	andl	$62, %edx
 	shll	$11, %eax
-	orl	%edi, %eax
+	orl	%edi, %edx
 	orl	%edx, %eax
 	retq
 

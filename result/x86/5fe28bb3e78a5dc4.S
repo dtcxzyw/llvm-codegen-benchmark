@@ -8,8 +8,9 @@ func0000000000000000:
 	retq
 
 func000000000000000f:
-	shll	$8, %esi
-	leal	(%rsi,%rdi), %eax
+	movzwl	%si, %eax
+	shll	$8, %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000003c:

@@ -5,9 +5,10 @@ func0000000000000002:
 	retq
 
 func0000000000000008:
-	addl	%edi, %edi
-	orl	$32768, %edi
 	movzwl	%di, %eax
+	addl	%eax, %eax
+	orl	$32768, %eax
+	movzwl	%ax, %eax
 	retq
 
 func0000000000000000:

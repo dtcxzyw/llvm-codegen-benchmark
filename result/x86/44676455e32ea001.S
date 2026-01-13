@@ -4,8 +4,9 @@ func0000000000000001:
 	retq
 
 func0000000000000007:
-	shll	$4, %edi
-	orl	$2, %edi
-	movzbl	%dil, %eax
+	movzwl	%di, %eax
+	shll	$4, %eax
+	orl	$2, %eax
+	movzbl	%al, %eax
 	retq
 

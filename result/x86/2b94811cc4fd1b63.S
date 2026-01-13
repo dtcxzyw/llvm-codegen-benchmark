@@ -1,6 +1,7 @@
 func000000000000000f:
-	movzbl	%sil, %eax
-	leal	(%rax,%rdi,2), %eax
+	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	leal	(%rcx,%rax,2), %eax
 	retq
 
 func0000000000000000:

@@ -1,24 +1,27 @@
 func0000000000000281:
-	shll	$8, %edx
-	orl	%esi, %edx
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
 	incl	%edi
-	cmpw	%dx, %di
+	cmpw	%ax, %di
 	sete	%al
 	retq
 
 func0000000000000285:
-	shll	$8, %edx
-	orl	%esi, %edx
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
 	addl	$-2, %edi
-	cmpw	%dx, %di
+	cmpw	%ax, %di
 	setbe	%al
 	retq
 
 func0000000000000284:
-	shll	$8, %edx
-	orl	%esi, %edx
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
 	addl	$-2, %edi
-	cmpw	%dx, %di
+	cmpw	%ax, %di
 	setb	%al
 	retq
 

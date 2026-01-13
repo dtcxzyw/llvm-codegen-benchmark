@@ -5,9 +5,10 @@ func0000000000000001:
 	retq
 
 func000000000000005d:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%edi, %eax
+	movzbl	%sil, %ecx
+	movzwl	%di, %eax
+	shll	$8, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000019:

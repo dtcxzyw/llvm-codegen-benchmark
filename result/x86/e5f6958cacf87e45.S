@@ -6,16 +6,18 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	shll	$15, %esi
+	movzwl	%si, %ecx
+	shll	$15, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000003:
-	shll	$8, %esi
+	movzwl	%si, %ecx
+	shll	$8, %ecx
 	testb	$1, %dil
 	movl	$512, %eax
-	cmovel	%esi, %eax
+	cmovel	%ecx, %eax
 	retq
 

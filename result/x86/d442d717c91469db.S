@@ -1,14 +1,15 @@
 func000000000000002c:
-	movl	%edi, %eax
+	movzwl	%di, %eax
+	movzwl	%si, %ecx
 	shll	$12, %edx
-	shll	$8, %esi
-	orl	%edx, %esi
+	shll	$8, %ecx
+	orl	%edx, %ecx
 	shll	$4, %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000004:
-	movl	%edi, %eax
+	movswl	%di, %eax
 	shll	$12, %edx
 	shll	$8, %esi
 	orl	%edx, %esi

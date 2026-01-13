@@ -6,7 +6,8 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	leal	(%rdx,%rdx), %eax
+	movzwl	%dx, %eax
+	addl	%eax, %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq

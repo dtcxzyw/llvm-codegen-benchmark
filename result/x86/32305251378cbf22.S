@@ -1,18 +1,23 @@
 func000000000000003a:
-	shll	$7, %esi
-	shll	$6, %edi
-	leal	(%rdi,%rsi), %eax
+	movzwl	%di, %eax
+	movzwl	%si, %ecx
+	shll	$7, %ecx
+	shll	$6, %eax
+	addl	%ecx, %eax
 	retq
 
 func000000000000003e:
-	shll	$7, %esi
-	shll	$6, %edi
-	leal	(%rdi,%rsi), %eax
+	movzwl	%di, %eax
+	movzwl	%si, %ecx
+	shll	$7, %ecx
+	shll	$6, %eax
+	addl	%ecx, %eax
 	retq
 
 func0000000000000004:
+	movswl	%di, %eax
 	shll	$8, %esi
-	shll	$4, %edi
-	leal	(%rdi,%rsi), %eax
+	shll	$4, %eax
+	addl	%esi, %eax
 	retq
 

@@ -5,12 +5,14 @@ func0000000000000000:
 	retq
 
 func000000000000000b:
-	leal	(%rdi,%rsi,2), %eax
+	movswl	%si, %eax
+	leal	(%rdi,%rax,2), %eax
 	movzwl	%ax, %eax
 	retq
 
 func0000000000000018:
-	leal	(%rdi,%rsi,2), %eax
+	movzwl	%si, %eax
+	leal	(%rdi,%rax,2), %eax
 	movzwl	%ax, %eax
 	retq
 

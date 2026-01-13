@@ -3,7 +3,8 @@ func0000000000000009:
 	retq
 
 func000000000000000b:
-	leal	-48(%rdi,%rsi,8), %eax
+	movswl	%si, %eax
+	leal	-48(%rdi,%rax,8), %eax
 	retq
 
 func0000000000000003:

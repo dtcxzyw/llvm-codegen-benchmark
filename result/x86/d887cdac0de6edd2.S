@@ -1,8 +1,9 @@
 func0000000000000005:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
-	movswl	%di, %eax
+	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	cwtl
 	vcvtsi2ss	%eax, %xmm15, %xmm0
 	retq
 

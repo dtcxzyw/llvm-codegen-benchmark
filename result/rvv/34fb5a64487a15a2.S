@@ -8,10 +8,10 @@ func000000000000028c:
 
 func0000000000000a8c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	vmslt.vv	v12, v8, v10
-	vmsle.vi	v8, v10, -1
-	vmor.mm	v0, v8, v12
+	vsub.vv	v14, v10, v12
+	vmslt.vv	v16, v8, v14
+	vmslt.vv	v8, v10, v12
+	vmor.mm	v0, v8, v16
 	ret
 
 func0000000000001210:

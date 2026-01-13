@@ -1,8 +1,8 @@
 func000000000000000f:
-	movl	%edi, %eax
-	shll	$5, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movzwl	%dx, %eax
+	shll	$5, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 
 func0000000000000000:
@@ -13,14 +13,14 @@ func0000000000000000:
 	retq
 
 func0000000000000008:
-	movl	%edi, %eax
-	shll	$11, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movzwl	%dx, %eax
+	shll	$11, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 
 func000000000000000d:
-	movl	%edi, %eax
+	movzwl	%di, %eax
 	orl	%edx, %esi
 	shll	$14, %eax
 	orl	%esi, %eax
@@ -34,36 +34,37 @@ func0000000000000003:
 	retq
 
 func000000000000000c:
-	leal	(,%rdx,8), %eax
+	movzwl	%dx, %eax
+	shll	$3, %eax
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
 
 func000000000000000b:
-	movl	%edi, %eax
-	shll	$11, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movzwl	%dx, %eax
+	shll	$11, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 
 func0000000000000004:
-	movl	%edi, %eax
-	shll	$4, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movswl	%dx, %eax
+	shll	$4, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 
 func000000000000000e:
-	movl	%edi, %eax
-	shll	$6, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movzwl	%dx, %eax
+	shll	$6, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 
 func000000000000000a:
-	movl	%edi, %eax
-	shll	$8, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
 	retq
 

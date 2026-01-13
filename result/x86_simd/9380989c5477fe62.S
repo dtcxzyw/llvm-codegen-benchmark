@@ -53,11 +53,10 @@ func0000000000000024:
 	retq
 
 func00000000000004ca:
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmovq2m	%ymm1, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpcmpgtq	%ymm2, %ymm1, %k0
+	vpcmpnltq	%ymm2, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
+	vpcmpgtq	%ymm3, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

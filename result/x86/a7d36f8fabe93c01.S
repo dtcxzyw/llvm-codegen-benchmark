@@ -4,7 +4,8 @@ func0000000000000003:
 	retq
 
 func000000000000001f:
-	leal	12(,%rdi,8), %eax
+	movzwl	%di, %eax
+	leal	12(,%rax,8), %eax
 	movzwl	%ax, %eax
 	retq
 

@@ -1,7 +1,8 @@
 func0000000000000050:
-	shll	$8, %edx
-	orl	%esi, %edx
 	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	movzwl	%ax, %eax
 	addl	%edi, %eax
 	retq
 

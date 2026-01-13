@@ -1,5 +1,5 @@
 func0000000000000007:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$9, %eax
 	orl	%edi, %eax
 	retq
@@ -10,7 +10,7 @@ func0000000000000000:
 	retq
 
 func0000000000000005:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$8, %eax
 	orl	%edi, %eax
 	retq
@@ -21,24 +21,25 @@ func0000000000000001:
 	retq
 
 func0000000000000006:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$4, %eax
 	orl	%edi, %eax
 	retq
 
 func0000000000000004:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	shll	$11, %eax
 	orl	%edi, %eax
 	retq
 
 func0000000000000003:
-	leal	(%rsi,%rsi), %eax
+	movswl	%si, %eax
+	addl	%eax, %eax
 	orl	%edi, %eax
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
+	movswl	%si, %eax
 	shll	$4, %eax
 	orl	%edi, %eax
 	retq

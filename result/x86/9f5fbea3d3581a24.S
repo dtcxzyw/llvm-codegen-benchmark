@@ -13,8 +13,8 @@ func000000000000000b:
 	retq
 
 func000000000000000a:
-	andl	$-8, %esi
 	shll	$8, %esi
+	andl	$16775168, %esi
 	orl	%edi, %esi
 	movzwl	%si, %eax
 	retq

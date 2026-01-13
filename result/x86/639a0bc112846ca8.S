@@ -1,17 +1,19 @@
 func000000000000000f:
-	addl	%edi, %edi
+	movzwl	%di, %ecx
+	addl	%ecx, %ecx
 	movl	$1024, %eax
-	subl	%edi, %eax
+	subl	%ecx, %eax
 	retq
 
 func000000000000000d:
-	addl	%edi, %edi
+	movzwl	%di, %ecx
+	addl	%ecx, %ecx
 	movl	$126, %eax
-	subl	%edi, %eax
+	subl	%ecx, %eax
 	retq
 
 func0000000000000008:
-	movl	%edi, %eax
+	movzwl	%di, %eax
 	xorl	$63, %eax
 	shll	$9, %eax
 	retq

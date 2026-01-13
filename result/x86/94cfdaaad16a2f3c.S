@@ -6,25 +6,29 @@ func0000000000000000:
 
 func0000000000000004:
 	movl	%edi, %eax
-	shll	$4, %esi
-	subl	%esi, %eax
+	movswl	%si, %ecx
+	shll	$4, %ecx
+	subl	%ecx, %eax
 	retq
 
 func000000000000000d:
 	movl	%edi, %eax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	movzwl	%si, %ecx
+	addl	%ecx, %ecx
+	subl	%ecx, %eax
 	retq
 
 func0000000000000005:
 	movl	%edi, %eax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	movswl	%si, %ecx
+	addl	%ecx, %ecx
+	subl	%ecx, %eax
 	retq
 
 func000000000000000c:
 	movl	%edi, %eax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	movzwl	%si, %ecx
+	addl	%ecx, %ecx
+	subl	%ecx, %eax
 	retq
 

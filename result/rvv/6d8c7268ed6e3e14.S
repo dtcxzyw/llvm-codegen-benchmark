@@ -34,9 +34,9 @@ func0000000000000628:
 
 func0000000000000acc:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v10, v10, v12
-	vmsle.vv	v12, v8, v10
-	vmsle.vi	v8, v10, -1
-	vmor.mm	v0, v8, v12
+	vsub.vv	v14, v10, v12
+	vmsle.vv	v16, v8, v14
+	vmslt.vv	v8, v10, v12
+	vmor.mm	v0, v8, v16
 	ret
 

@@ -1,11 +1,13 @@
 func000000000000003a:
-	leal	(%rsi,%rdx), %eax
+	addl	%edx, %esi
+	movzwl	%si, %eax
 	shll	$6, %eax
 	addl	%edi, %eax
 	retq
 
 func000000000000003e:
-	leal	(%rsi,%rdx), %eax
+	addl	%edx, %esi
+	movzwl	%si, %eax
 	shll	$6, %eax
 	addl	%edi, %eax
 	retq
@@ -17,7 +19,8 @@ func0000000000000010:
 	retq
 
 func0000000000000014:
-	leal	(%rsi,%rdx), %eax
+	addl	%edx, %esi
+	movswl	%si, %eax
 	shll	$4, %eax
 	addl	%edi, %eax
 	retq

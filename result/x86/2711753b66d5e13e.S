@@ -1,21 +1,24 @@
 func000000000000000a:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	retq
 
 func000000000000000f:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	retq
 
 func000000000000000b:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	retq
 

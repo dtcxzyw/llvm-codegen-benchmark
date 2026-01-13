@@ -17,9 +17,10 @@ func0000000000000026:
 .LCPI2_0:
 	.long	7
 func00000000000000a6:
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpmovd2m	%ymm0, %k1
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm0, %ymm2
+	vpcmpgtd	%ymm0, %ymm1, %k1
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2 {%k1}
+	vmovdqa	%ymm2, %ymm0
 	retq
 
 .LCPI3_0:

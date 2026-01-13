@@ -1,5 +1,5 @@
 func0000000000000003:
-	movl	%edx, %eax
+	movzwl	%dx, %eax
 	shll	$8, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax

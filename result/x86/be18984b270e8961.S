@@ -5,7 +5,7 @@ func0000000000000001:
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
+	movzwl	%si, %eax
 	shll	$8, %eax
 	orl	%edi, %eax
 	retq

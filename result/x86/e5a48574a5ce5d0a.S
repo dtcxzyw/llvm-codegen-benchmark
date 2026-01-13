@@ -1,5 +1,5 @@
 func000000000000001d:
-	movl	%edi, %eax
+	movzwl	%di, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
 	retq
@@ -10,7 +10,7 @@ func0000000000000010:
 	retq
 
 func0000000000000004:
-	movl	%edi, %eax
+	movzwl	%di, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
 	retq

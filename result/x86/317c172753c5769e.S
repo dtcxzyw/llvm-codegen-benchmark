@@ -4,10 +4,11 @@ func00000000000000ac:
 	retq
 
 func00000000000000a1:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$65317, %eax
 	sete	%al
 	retq
@@ -20,70 +21,78 @@ func00000000000000aa:
 	retq
 
 func00000000000000a8:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
-	cmpw	$5, %di
+	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	cmpw	$5, %ax
 	setae	%al
 	retq
 
 func00000000000001e1:
-	movzbl	%sil, %eax
-	shll	$4, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$4, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$4095, %eax
 	sete	%al
 	retq
 
 func00000000000000b8:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
-	cmpw	$16, %di
+	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	cmpw	$16, %ax
 	setae	%al
 	retq
 
 func00000000000000a4:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$60001, %eax
 	setb	%al
 	retq
 
 func00000000000000b4:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
-	cmpw	$5, %di
+	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	cmpw	$5, %ax
 	setb	%al
 	retq
 
 func00000000000001ec:
-	movzbl	%sil, %eax
-	shll	$6, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$6, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$977, %eax
 	setne	%al
 	retq
 
 func00000000000000e1:
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$32767, %eax
 	sete	%al
 	retq
 
 func00000000000001f4:
-	movzbl	%sil, %eax
-	shll	$5, %edi
-	orl	%eax, %edi
 	movzwl	%di, %eax
+	movzbl	%sil, %ecx
+	shll	$5, %eax
+	orl	%ecx, %eax
+	movzwl	%ax, %eax
 	cmpl	$1000, %eax
 	setb	%al
 	retq

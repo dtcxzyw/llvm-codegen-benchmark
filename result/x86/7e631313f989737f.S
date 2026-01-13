@@ -1,8 +1,9 @@
 func000000000000000d:
+	movzwl	%di, %eax
 	addb	$-97, %sil
-	movzbl	%sil, %eax
-	shll	$8, %edi
-	orl	%edi, %eax
+	movzbl	%sil, %ecx
+	shll	$8, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000009:

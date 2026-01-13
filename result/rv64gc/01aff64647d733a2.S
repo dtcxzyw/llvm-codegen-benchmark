@@ -57,8 +57,8 @@ func0000000000000009:
 	slli	a2, a0, 35
 	srli	a2, a2, 43
 	or	a0, a0, a2
-	slli	a2, a0, 33
-	srli	a2, a2, 49
+	slli	a2, a0, 34
+	srli	a2, a2, 50
 	or	a0, a0, a2
 	not	a0, a0
 	srli	a2, a0, 1

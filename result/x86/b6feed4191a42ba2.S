@@ -1,9 +1,9 @@
 func000000000000000f:
-	movl	%esi, %eax
+	movzwl	%si, %eax
 	andl	$8703, %edx
 	shll	$9, %eax
+	orl	%edi, %edx
 	orl	%edx, %eax
-	orl	%edi, %eax
 	retq
 
 func0000000000000003:

@@ -1,5 +1,6 @@
 func00000000000000b4:
-	leal	(%rdi,%rsi,2), %eax
+	movswl	%si, %eax
+	leal	(%rdi,%rax,2), %eax
 	cmpw	$-30, %ax
 	setb	%al
 	retq
@@ -13,9 +14,10 @@ func0000000000000004:
 	retq
 
 func0000000000000104:
-	shll	$8, %esi
-	addl	%edi, %esi
 	movzwl	%si, %eax
+	shll	$8, %eax
+	addl	%edi, %eax
+	movzwl	%ax, %eax
 	cmpl	$261, %eax
 	setb	%al
 	retq

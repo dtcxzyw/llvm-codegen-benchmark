@@ -1,16 +1,18 @@
 func000000000000001f:
+	movzwl	%si, %eax
 	shrb	$3, %dl
-	movzbl	%dl, %eax
-	shll	$5, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	movzbl	%dl, %ecx
+	shll	$5, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000017:
+	movzwl	%si, %eax
 	shrb	$3, %dl
-	movzbl	%dl, %eax
-	shll	$11, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	movzbl	%dl, %ecx
+	shll	$11, %eax
+	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 

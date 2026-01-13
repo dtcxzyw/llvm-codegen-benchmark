@@ -1,28 +1,32 @@
 func000000000000000f:
+	movzwl	%si, %eax
 	andl	$224, %edx
-	leal	(,%rsi,8), %eax
+	shll	$3, %eax
+	orl	%edi, %edx
+	orl	%edx, %eax
+	retq
+
+func000000000000001f:
+	movzwl	%si, %eax
+	andl	$56, %edx
+	shll	$11, %eax
 	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
 
-func000000000000001f:
-	andl	$56, %edx
-	shll	$11, %esi
-	leal	(%rsi,%rdx), %eax
-	orl	%edi, %eax
-	retq
-
 func000000000000001b:
+	movzwl	%si, %eax
 	andl	$2, %edx
-	shll	$15, %esi
-	leal	(%rsi,%rdx), %eax
+	shll	$15, %eax
+	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
 
 func000000000000000b:
+	movzwl	%si, %eax
 	andl	$253, %edx
-	shll	$8, %esi
-	leal	(%rsi,%rdx), %eax
+	shll	$8, %eax
+	orl	%edx, %eax
 	orl	%edi, %eax
 	retq
 

@@ -4,23 +4,28 @@ func0000000000000000:
 	retq
 
 func000000000000003f:
-	leal	2(%rdi,%rsi,2), %eax
+	movzwl	%si, %eax
+	leal	2(%rdi,%rax,2), %eax
 	retq
 
 func0000000000000015:
-	leal	28(%rdi,%rsi,2), %eax
+	movswl	%si, %eax
+	leal	28(%rdi,%rax,2), %eax
 	retq
 
 func0000000000000025:
-	shll	$8, %esi
-	leal	2412(%rsi,%rdi), %eax
+	movzwl	%si, %eax
+	shll	$8, %eax
+	leal	2412(%rax,%rdi), %eax
 	retq
 
 func0000000000000034:
-	leal	-5(%rdi,%rsi,8), %eax
+	movzwl	%si, %eax
+	leal	-5(%rdi,%rax,8), %eax
 	retq
 
 func000000000000003c:
-	leal	8(%rdi,%rsi,4), %eax
+	movzwl	%si, %eax
+	leal	8(%rdi,%rax,4), %eax
 	retq
 

@@ -1,14 +1,16 @@
 func0000000000000014:
-	shll	$8, %edx
-	orl	%esi, %edx
-	movswl	%dx, %eax
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cwtl
 	addl	%edi, %eax
 	retq
 
 func0000000000000015:
-	shll	$8, %edx
-	orl	%esi, %edx
-	movswl	%dx, %eax
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cwtl
 	addl	%edi, %eax
 	retq
 

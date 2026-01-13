@@ -8,17 +8,19 @@ func0000000000001546:
 	retq
 
 func0000000000001421:
-	shll	$8, %edx
-	orl	%esi, %edx
-	notl	%edx
-	orw	%di, %dx
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	notl	%eax
+	orw	%di, %ax
 	sete	%al
 	retq
 
 func0000000000001428:
-	shll	$8, %edx
-	orl	%esi, %edx
-	cmpw	$3, %dx
+	movzwl	%dx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpw	$3, %ax
 	sete	%cl
 	cmpw	$4, %di
 	setae	%al

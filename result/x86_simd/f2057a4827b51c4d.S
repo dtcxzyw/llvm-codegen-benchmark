@@ -29,11 +29,11 @@ func00000000000000a5:
 .LCPI2_1:
 	.long	8
 func0000000000000065:
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpmovd2m	%ymm0, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1
-	vpbroadcastd	.LCPI2_1(%rip), %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpsubd	%ymm1, %ymm0, %ymm2
+	vpcmpgtd	%ymm0, %ymm1, %k1
+	vpbroadcastd	.LCPI2_0(%rip), %ymm0
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1}
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

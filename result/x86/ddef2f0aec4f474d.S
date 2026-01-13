@@ -4,7 +4,7 @@ func0000000000000000:
 	retq
 
 func000000000000000a:
-	andl	$-256, %esi
+	andl	$65280, %esi
 	leal	(%rdi,%rsi,8), %eax
 	retq
 

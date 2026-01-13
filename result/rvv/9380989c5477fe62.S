@@ -40,8 +40,8 @@ func0000000000000024:
 
 func00000000000004ca:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmslt.vv	v0, v10, v12
 	vsub.vv	v10, v10, v12
-	vmsle.vi	v0, v10, -1
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vi	v0, v8, 0
 	ret
