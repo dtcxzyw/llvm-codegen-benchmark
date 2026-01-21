@@ -1,6 +1,6 @@
 func0000000000000000:
-	vcvttsd2si	%xmm1, %rax
-	vcvtsi2sd	%rax, %xmm15, %xmm1
+	vcvttpd2qq	%xmm1, %xmm1
+	vcvtqq2pd	%xmm1, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 
