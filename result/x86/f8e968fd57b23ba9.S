@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000162:
 	addq	%rdi, %rdx
 	xorl	%eax, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	negl	%edi
 	movl	$2147483647, %eax

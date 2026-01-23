@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	leaq	39(%rdx), %rax
 	andq	$-8, %rax

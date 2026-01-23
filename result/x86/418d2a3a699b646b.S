@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a8:
 	cmpl	%esi, %edx
 	sbbq	$-1, %rdi

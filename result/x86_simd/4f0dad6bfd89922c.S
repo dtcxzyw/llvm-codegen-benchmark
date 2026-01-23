@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.short	2048
 	.short	2048

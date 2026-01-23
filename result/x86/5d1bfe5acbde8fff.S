@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000478:
 	cmpb	$22, %dl
 	setb	%al

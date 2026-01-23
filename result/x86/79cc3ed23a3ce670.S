@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007c:
 	testq	%rdx, %rdx
 	cmovneq	%rdx, %rsi

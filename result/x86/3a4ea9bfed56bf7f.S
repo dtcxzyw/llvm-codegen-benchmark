@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	addl	%edi, %edi
 	vcvtsi2sd	%edi, %xmm15, %xmm1

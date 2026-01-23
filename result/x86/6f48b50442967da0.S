@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e6:
 	sarl	%edx
 	xorl	%eax, %eax

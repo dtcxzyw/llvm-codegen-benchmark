@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	cmpl	$2458605, %edi
 	movq	$-1988, %rcx

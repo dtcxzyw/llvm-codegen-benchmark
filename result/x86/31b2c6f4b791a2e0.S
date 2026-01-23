@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl

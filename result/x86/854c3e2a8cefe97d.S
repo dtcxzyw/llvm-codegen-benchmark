@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	vmovq	%xmm0, %rax
 	shrq	$32, %rax

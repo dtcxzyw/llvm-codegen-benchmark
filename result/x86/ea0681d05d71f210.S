@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000005c:
 	movsbq	%sil, %rax
 	imulq	$56, %rax, %rax

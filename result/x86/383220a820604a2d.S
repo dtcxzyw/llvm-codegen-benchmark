@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	xorb	$31, %dil
 	movzbl	%dil, %eax

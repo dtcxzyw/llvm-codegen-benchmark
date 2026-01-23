@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	bswapl	%edi
 	cmpl	%esi, %edi

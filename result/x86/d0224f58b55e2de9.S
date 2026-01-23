@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000006c8:
 	cmpq	$8, %rdi
 	setne	%cl

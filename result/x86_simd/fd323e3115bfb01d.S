@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vpextrq	$1, %xmm1, %rax
 	vpextrq	$1, %xmm0, %rcx

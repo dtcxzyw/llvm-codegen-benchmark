@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	imulq	$1000000, %rdx, %rax
 	imulq	%rsi, %rdi

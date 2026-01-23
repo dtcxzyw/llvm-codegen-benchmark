@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	leal	911(%rdi), %ecx
 	testb	$1, %dl

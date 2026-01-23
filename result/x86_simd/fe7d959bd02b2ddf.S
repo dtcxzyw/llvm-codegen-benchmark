@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	subq	$344, %rsp
 	vmovups	%zmm3, 272(%rsp)

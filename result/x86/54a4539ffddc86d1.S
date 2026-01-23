@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000055:
 	sarq	$5, %rdx
 	shlq	$4, %rsi

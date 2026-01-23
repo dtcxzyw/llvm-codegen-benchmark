@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000013:
 	shrq	$46, %rdx
 	notb	%sil

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	leaq	-272(%rsi), %rcx
 	movzwl	%di, %edx

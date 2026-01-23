@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	testl	%esi, %esi
 	movl	$64, %eax

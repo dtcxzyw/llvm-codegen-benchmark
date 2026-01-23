@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	cmpw	$6, %di
 	sete	%cl

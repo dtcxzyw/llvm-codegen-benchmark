@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000050:
 	cmpb	$97, %dil
 	movl	$169, %eax

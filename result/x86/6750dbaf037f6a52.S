@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000210:
 	shrq	$60, %rdi
 	setne	%al

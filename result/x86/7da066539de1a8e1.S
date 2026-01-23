@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	shrl	$8, %edx
 	testq	%rsi, %rsi

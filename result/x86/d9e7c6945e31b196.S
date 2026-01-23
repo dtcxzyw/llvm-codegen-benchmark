@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	btq	$35, %rdi
 	cmovaeq	%rdi, %rsi

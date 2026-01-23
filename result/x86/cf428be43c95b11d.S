@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	testw	%dx, %dx
 	cmovnel	%esi, %edi

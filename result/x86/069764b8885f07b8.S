@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	andl	$24, %esi
 	orw	%di, %si

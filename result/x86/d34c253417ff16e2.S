@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000b5:
 	shll	$24, %edx
 	shll	$18, %esi

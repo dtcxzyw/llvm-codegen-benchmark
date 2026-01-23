@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000019:
 	addb	$8, %dl
 	shlxl	%edx, %esi, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	testb	$1, %dl
 	movabsq	$-9223372036854775808, %rax

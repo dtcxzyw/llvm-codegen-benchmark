@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000187:
 	leaq	1632(%rsi), %rax
 	btq	$36, %rdx

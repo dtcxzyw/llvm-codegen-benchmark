@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	addb	%dl, %sil
 	cmpb	$64, %sil

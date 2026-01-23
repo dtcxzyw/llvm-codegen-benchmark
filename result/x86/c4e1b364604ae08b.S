@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	orq	%rdx, %rsi
 	leaq	(%rdi,%rsi,4), %rax

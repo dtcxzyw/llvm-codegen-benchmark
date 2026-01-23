@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	cmpb	$1, %sil
 	adcl	$0, %esi

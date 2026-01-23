@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000318:
 	xorl	$65521, %esi
 	orw	%dx, %si

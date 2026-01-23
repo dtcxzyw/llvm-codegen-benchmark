@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000084:
 	shrb	$3, %dl
 	movzbl	%dl, %eax

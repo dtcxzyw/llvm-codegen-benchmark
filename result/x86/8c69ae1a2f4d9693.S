@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000074:
 	shll	$20, %edx
 	addl	%edi, %edx

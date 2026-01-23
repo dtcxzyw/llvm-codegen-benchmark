@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a4:
 	incl	%edi
 	cmpl	$4097, %edi

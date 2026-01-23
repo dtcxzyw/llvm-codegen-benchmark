@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000aa:
 	vpmovsxwd	%xmm2, %ymm2
 	vpmovsxwd	%xmm1, %ymm1

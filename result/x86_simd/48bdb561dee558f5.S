@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001461:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm2, %xmm2

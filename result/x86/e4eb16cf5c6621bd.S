@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000058a:
 	leal	3(%rdi), %eax
 	cmpq	%rdx, %rsi

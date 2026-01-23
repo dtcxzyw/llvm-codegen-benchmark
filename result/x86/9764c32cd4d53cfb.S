@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000002c1:
 	movabsq	$-6148914691236517205, %rax
 	imulq	%rdx, %rax

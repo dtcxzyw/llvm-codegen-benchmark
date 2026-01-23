@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	vcvttsd2si	%xmm0, %rax
 	addq	%rdi, %rax

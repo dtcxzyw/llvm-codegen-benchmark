@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c3:
 	movl	%edx, %eax
 	imulq	$56, %rax, %rax

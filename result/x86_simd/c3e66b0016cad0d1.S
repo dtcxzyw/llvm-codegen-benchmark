@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.zero	32,51
 .LCPI0_1:

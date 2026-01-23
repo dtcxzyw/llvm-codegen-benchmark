@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	subl	%esi, %edi
 	cmpl	$8, %edi

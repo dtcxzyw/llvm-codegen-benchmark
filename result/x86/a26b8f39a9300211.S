@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	shlq	$3, %rsi
 	cmpq	$129, %rsi

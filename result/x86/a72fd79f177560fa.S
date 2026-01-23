@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e2:
 	negb	%dl
 	movl	$1, %eax

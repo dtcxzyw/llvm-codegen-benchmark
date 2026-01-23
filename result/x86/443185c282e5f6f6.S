@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000318:
 	addl	%esi, %edx
 	setne	%cl

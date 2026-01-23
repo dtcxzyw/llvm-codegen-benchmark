@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	movzwl	%di, %eax
 	addb	$-97, %sil

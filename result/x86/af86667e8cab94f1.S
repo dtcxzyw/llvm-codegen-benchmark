@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	testl	$2139095040, %edx
 	cmovnel	%esi, %edi

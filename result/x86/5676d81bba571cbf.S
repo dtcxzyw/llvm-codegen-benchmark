@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	sarq	$21, %rsi
 	imulq	$666643, %rsi, %rax

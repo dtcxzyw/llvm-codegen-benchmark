@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	incq	%rdx
 	cmpb	$45, %sil

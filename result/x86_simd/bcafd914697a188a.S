@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vmulpd	%zmm3, %zmm3, %zmm3
 	vmulpd	%zmm2, %zmm2, %zmm2

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000701:
 	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax

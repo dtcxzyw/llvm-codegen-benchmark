@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000aa:
 	imull	%esi, %edx
 	cmpl	%edx, %edi

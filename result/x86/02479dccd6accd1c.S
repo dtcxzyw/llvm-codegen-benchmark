@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shlq	$32, %rdi
 	vmovq	%rdi, %xmm1

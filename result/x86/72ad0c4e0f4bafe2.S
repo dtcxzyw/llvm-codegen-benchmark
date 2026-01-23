@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	incb	%sil
 	shlxl	%esi, %edi, %eax

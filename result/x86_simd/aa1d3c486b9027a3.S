@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	vpor	%ymm2, %ymm0, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

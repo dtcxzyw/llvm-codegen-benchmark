@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	cmpq	$6, %rdi
 	movl	$5, %eax

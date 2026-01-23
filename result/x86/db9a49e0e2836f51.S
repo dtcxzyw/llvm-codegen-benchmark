@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c1:
 	shrl	$19, %edi
 	btl	%esi, %edi

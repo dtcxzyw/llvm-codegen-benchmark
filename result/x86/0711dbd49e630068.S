@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	addl	$6, %edx
 	testb	$1, %dil

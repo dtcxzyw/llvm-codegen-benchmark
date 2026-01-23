@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm0, %xmm1, %xmm0

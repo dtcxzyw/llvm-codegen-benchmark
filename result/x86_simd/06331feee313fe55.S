@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	vcmpleps	%zmm1, %zmm0, %k1
 	vcmpleps	%zmm2, %zmm1, %k0 {%k1}

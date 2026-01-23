@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.byte	62
 	.byte	62

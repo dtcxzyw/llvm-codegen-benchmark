@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper

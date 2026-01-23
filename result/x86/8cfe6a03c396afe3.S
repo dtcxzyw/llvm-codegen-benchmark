@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	movslq	%edi, %rcx
 	cmpq	$16, %rcx

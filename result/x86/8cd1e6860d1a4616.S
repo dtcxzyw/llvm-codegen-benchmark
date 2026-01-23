@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	orl	%edx, %esi
 	leaq	4(%rdi,%rsi), %rax

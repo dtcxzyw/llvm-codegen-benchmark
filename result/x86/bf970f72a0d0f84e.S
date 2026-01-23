@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007e:
 	shrl	$8, %edx
 	imull	$77, %edx, %eax

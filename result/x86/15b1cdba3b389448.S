@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003c:
 	decb	%dil
 	andb	$7, %dil

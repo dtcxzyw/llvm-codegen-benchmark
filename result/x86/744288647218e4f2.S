@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	addq	$-1290608000, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1

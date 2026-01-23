@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f4:
 	negq	%rsi
 	movabsq	$9223372036854775807, %rax

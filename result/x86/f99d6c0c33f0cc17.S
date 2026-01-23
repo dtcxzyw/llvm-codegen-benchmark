@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax

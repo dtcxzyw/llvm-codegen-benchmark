@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	addl	$2, %edi
 	movslq	%edi, %rax

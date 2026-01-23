@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000011:
 	leaq	-1(%rsi,%rdi), %rax
 	negq	%rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	andl	$7, %esi
 	subl	%esi, %edi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	andb	$-13, %dil
 	orb	$4, %dil

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	orq	$16384, %rsi
 	imulq	%rdi, %rsi

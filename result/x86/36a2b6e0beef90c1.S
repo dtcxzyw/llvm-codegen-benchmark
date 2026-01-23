@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000260:
 	movl	%edi, %eax
 	btq	%rdx, %rsi

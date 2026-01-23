@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	subl	%esi, %edx
 	leal	1(%rdi,%rdx), %eax

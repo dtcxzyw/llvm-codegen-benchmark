@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	incl	%esi
 	shrq	$6, %rdi

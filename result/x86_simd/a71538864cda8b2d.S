@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a1:
 	vpabsd	%ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2

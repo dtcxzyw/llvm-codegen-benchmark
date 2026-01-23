@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000074:
 	imull	$64536, %edi, %eax
 	leal	16960(%rsi,%rax), %eax

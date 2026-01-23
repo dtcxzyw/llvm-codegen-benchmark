@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001c1:
 	blsil	%esi, %eax
 	testl	%edi, %eax

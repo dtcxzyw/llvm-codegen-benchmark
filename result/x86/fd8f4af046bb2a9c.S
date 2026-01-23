@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	testl	%edi, %edi
 	setns	%cl

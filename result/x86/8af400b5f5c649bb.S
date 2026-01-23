@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	addl	$63, %esi
 	shrl	$6, %esi

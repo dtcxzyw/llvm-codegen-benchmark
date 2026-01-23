@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	decl	%edi
 	testl	$960, %edi

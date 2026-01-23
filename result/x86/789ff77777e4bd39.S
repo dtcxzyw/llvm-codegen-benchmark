@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	notb	%sil
 	andb	$1, %sil

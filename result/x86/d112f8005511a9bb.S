@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	movb	$4, %al
 	subb	%dl, %al

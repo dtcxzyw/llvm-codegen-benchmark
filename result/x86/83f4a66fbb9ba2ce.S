@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	cmpb	$61, %dl
 	cmovneq	%rsi, %rdi

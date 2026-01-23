@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	leal	9(%rdi), %eax
 	testb	$64, %sil

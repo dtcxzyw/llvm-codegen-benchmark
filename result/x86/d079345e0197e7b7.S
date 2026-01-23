@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	andl	%esi, %edi
 	movb	$16, %al

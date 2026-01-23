@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	negb	%dl
 	shrxl	%edx, %esi, %eax

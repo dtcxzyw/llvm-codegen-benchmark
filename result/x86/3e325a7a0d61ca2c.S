@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007b:
 	leal	(%rdx,%rdx,2), %eax
 	movslq	%esi, %rcx

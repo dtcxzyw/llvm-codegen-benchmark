@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	leaq	255(%rdi), %rcx
 	testq	%rdi, %rdi

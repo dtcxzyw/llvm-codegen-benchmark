@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	orl	%esi, %edi
 	imulq	$138547333, %rdi, %rcx

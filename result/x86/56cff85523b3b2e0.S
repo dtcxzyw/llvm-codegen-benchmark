@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	addl	$-16, %esi
 	testl	$-17, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030f:
 	cmpb	$1, %dl
 	sbbq	$-1, %rdi

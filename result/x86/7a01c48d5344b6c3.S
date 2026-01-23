@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shrxl	%edx, %esi, %ecx
 	andl	$2147481600, %ecx

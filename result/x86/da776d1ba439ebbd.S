@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	testb	%dl, %dl
 	cmovneq	%rsi, %rdi

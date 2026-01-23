@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004c:
 	shlq	$44, %rsi
 	setne	%al

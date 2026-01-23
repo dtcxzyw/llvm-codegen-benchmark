@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a4:
 	orl	%esi, %edi
 	xorl	$55296, %edi

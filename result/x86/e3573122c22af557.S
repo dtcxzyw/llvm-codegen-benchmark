@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	orl	%esi, %edi
 	movabsq	$5871781006564002453, %rax

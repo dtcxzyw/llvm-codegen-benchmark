@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008c:
 	addl	$-200, %esi
 	cmpw	$100, %si

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	decl	%edi
 	andb	$1, %sil

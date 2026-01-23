@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000064:
 	leaq	4(%rdx), %rax
 	cmpl	$13, %esi

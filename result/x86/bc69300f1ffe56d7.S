@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	leal	24(%rdi,%rsi), %eax
 	movl	%edi, %ecx

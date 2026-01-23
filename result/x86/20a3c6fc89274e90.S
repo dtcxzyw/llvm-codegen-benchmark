@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000012:
 	notl	%esi
 	movl	$1, %eax

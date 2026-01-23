@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	vpsllq	$9, %ymm2, %ymm2
 	vpsllq	$17, %ymm1, %ymm1

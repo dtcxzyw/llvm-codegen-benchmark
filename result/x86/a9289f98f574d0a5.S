@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	movsbq	%sil, %rax
 	movl	$2164195328, %ecx

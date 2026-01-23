@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f1:
 	movb	$16, %al
 	subb	%dl, %al

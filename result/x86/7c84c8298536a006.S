@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000058:
 	cmpq	$-128, %rsi
 	setb	%cl

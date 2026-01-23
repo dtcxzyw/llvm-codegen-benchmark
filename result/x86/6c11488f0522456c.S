@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	andb	$1, %dl
 	incb	%dl

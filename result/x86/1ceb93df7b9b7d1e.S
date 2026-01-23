@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	orl	$-4096, %esi
 	cmpl	$-8, %esi

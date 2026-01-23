@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	orl	$26, %esi
 	cmpq	%rsi, %rdi

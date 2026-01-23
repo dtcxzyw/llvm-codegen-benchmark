@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	testq	$-5, %rsi
 	sete	%cl

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e4:
 	addl	$-65536, %edx
 	leaq	4(%rsi), %rax

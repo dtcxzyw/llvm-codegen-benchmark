@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	leal	-3(%rdi,%rdi), %eax
 	vcvtusi2sd	%eax, %xmm15, %xmm0

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	incl	%edi
 	movl	$2147483645, %eax

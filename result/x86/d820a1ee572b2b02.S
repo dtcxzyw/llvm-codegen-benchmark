@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a1:
 	btq	$56, %rdx
 	adcq	$-1, %rsi

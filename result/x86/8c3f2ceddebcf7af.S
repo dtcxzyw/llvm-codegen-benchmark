@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	leal	(,%rdi,4), %ecx
 	movabsq	$274877906815, %rax

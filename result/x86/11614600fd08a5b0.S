@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a1:
 	orw	%di, %si
 	sete	%al

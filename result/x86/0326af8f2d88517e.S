@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	movswl	%di, %eax
 	vcvtsi2ss	%eax, %xmm15, %xmm1

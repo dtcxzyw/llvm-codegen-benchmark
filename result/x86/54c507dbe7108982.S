@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000070:
 	movzbl	%dl, %ecx
 	orl	%esi, %ecx

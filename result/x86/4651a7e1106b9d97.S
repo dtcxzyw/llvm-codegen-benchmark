@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a6:
 	subl	%edx, %esi
 	movslq	%esi, %rax

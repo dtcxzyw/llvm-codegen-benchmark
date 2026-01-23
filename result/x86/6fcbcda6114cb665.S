@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	incb	%dl
 	cmpb	%sil, %dl

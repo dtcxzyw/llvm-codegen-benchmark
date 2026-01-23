@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c1:
 	incl	%esi
 	andl	$131064, %esi

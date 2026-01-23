@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	andb	$1, %sil
 	shlq	$3, %rdx

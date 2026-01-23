@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	addl	$48, %esi
 	leal	-48(%rdi), %ecx

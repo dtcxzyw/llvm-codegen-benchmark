@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000688:
 	blsrq	%rdi, %rax
 	sete	%cl

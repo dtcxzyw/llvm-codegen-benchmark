@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	decb	%dil
 	movl	$2, %eax

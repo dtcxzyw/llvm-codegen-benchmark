@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c21:
 	testq	%rsi, %rsi
 	cmovel	%edi, %edx

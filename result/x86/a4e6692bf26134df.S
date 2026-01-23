@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	movq	%rdx, %r10
 	orq	%r8, %r10

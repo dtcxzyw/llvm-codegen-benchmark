@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	sarq	$4, %rdi
 	cmpq	%rdx, %rsi

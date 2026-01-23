@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008b:
 	shrq	$31, %rdx
 	sete	%cl

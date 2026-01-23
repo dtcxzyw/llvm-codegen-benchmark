@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001481:
 	addb	$-6, %dl
 	addq	$-5, %rsi

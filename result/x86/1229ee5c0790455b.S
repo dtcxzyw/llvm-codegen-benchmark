@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	shrb	$3, %sil
 	movzbl	%sil, %eax

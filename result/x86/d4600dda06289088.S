@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000208:
 	xorb	$1, %sil
 	cmpl	$716213, %edx

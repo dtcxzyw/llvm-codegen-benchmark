@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	movq	%rdx, %rax
 	shlq	$16, %rax

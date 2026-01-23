@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	movsbq	%sil, %rax
 	addq	$-48, %rax

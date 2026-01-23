@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ec:
 	leaq	64(%rsi,%rdi), %rax
 	retq

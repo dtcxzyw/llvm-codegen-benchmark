@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	cmpl	$97, %edx
 	setae	%al

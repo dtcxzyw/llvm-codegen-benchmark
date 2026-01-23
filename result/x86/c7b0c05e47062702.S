@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ca:
 	shll	$24, %esi
 	addl	$16777216, %esi

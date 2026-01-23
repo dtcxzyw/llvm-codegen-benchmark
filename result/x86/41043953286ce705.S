@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003d:
 	shrl	$6, %edi
 	leal	64672(%rdi,%rsi,4), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	cmpl	$2, %edi
 	setae	%al

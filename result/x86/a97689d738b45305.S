@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	notq	%rdi
 	imulq	$-1000000, %rdi, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	pushq	%rbx
 	vpmovzxwd	%xmm2, %ymm2

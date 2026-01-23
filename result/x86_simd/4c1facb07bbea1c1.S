@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vminps	%zmm0, %zmm1, %zmm2
 	vcmpunordps	%zmm0, %zmm0, %k1

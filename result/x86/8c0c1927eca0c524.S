@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ec:
 	andl	$31, %esi
 	setne	%cl

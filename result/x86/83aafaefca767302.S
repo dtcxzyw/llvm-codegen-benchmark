@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000027:
 	incb	%sil
 	movzbl	%sil, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	orl	$8388608, %edi
 	movb	$126, %al

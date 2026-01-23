@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	leaq	1(%rdi), %rcx
 	movl	$2147483645, %eax

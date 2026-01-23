@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a4:
 	andl	$-8, %esi
 	cmpl	$8, %esi

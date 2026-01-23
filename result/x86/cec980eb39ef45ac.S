@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003f:
 	movsbl	%sil, %eax
 	addl	$-49, %eax

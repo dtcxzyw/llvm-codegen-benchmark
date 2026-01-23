@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000038:
 	decb	%sil
 	movq	$-1, %rax

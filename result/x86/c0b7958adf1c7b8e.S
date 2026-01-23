@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c1:
 	addb	$9, %dl
 	shrxq	%rdx, %rsi, %rax

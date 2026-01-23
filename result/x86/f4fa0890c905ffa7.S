@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000104:
 	shrl	$8, %edi
 	addb	$-3, %dil

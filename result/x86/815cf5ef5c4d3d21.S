@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004c:
 	notb	%sil
 	cmpq	$3, %rdi

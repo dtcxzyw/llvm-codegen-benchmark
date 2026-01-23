@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	sarl	$16, %edx
 	subl	%esi, %edx

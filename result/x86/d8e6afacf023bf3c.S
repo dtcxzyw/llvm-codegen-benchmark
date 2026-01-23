@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000384:
 	shrl	$2, %edx
 	movl	$8, %eax

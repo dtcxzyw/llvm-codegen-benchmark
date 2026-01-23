@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	addq	%rsi, %rdi
 	movb	$24, %al

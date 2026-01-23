@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	testl	$65528, %edx
 	cmovnel	%edx, %esi

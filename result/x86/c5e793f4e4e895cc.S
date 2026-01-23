@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	movzbl	%dh, %eax
 	testb	$1, %dil

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000068:
 	cmpl	$65534, %esi
 	sete	%cl

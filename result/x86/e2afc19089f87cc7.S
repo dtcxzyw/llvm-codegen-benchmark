@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	andl	$7, %edi
 	setne	%cl

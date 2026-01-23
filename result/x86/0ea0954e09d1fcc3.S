@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000546:
 	orw	%dx, %si
 	setg	%cl

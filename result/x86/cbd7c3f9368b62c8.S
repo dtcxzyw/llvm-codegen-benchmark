@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	shrl	$10, %edi
 	leal	1984(%rdi), %eax

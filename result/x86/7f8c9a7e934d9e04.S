@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000088:
 	subq	%rsi, %rdx
 	sarq	$2, %rdx

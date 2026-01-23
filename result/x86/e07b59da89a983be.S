@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	kmovd	%edi, %k1
 	vmovaps	%xmm0, %xmm2

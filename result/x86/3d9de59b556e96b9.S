@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	popcntl	%esi, %eax
 	cmpl	$1, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000188:
 	orl	$8388608, %edi
 	addb	$-94, %sil

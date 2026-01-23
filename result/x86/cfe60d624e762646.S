@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.long	0x4b18967f
 func0000000000000001:

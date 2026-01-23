@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	vpsubd	%ymm1, %ymm2, %ymm0
 	retq

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	cmpq	$-9, %rdi
 	sete	%al

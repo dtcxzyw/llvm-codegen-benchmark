@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	cmpw	$39, %si
 	setne	%cl

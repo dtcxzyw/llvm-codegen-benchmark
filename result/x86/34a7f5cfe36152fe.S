@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003e:
 	decl	%edi
 	leaq	39(,%rdi,4), %rax

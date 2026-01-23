@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000204c:
 	cmpl	$5, %esi
 	setb	%al

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	vpextrd	$1, %xmm1, %ecx
 	movl	$2048, %eax

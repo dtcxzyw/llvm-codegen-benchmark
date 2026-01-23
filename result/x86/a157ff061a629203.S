@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	negq	%rdi
 	movabsq	$-6763796780581093376, %rax

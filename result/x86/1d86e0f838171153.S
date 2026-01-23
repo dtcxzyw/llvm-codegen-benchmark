@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	andb	$60, %sil
 	shrb	$6, %dil

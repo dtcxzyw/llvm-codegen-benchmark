@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000115:
 	cmpb	$127, %dl
 	adcl	%esi, %edi

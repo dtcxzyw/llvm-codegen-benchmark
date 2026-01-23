@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000058:
 	shrl	$24, %edx
 	orl	%esi, %edi

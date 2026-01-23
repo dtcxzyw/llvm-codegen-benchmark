@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000144:
 	sarq	$3, %rsi
 	leaq	(%rdi,%rsi), %rax

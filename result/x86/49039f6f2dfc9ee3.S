@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	sarq	%rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm0

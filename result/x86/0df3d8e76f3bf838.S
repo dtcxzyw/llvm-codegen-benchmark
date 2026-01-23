@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	subq	%rsi, %rdi
 	imulq	$1000, %rdi, %rax

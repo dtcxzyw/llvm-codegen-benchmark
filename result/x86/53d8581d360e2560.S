@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000005e:
 	andl	$4095, %edx
 	shlq	$4, %rsi

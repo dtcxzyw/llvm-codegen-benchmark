@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000081:
 	orb	$38, %dl
 	shlxq	%rdx, %rsi, %rax

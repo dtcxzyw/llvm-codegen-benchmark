@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	shrdq	$32, %r9, %r8
 	shrq	$32, %r9

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000003021:
 	cmpl	$20, %edi
 	sete	%al

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000060:
 	cmpl	$9, %esi
 	leaq	64(%rdi,%rdi), %rcx

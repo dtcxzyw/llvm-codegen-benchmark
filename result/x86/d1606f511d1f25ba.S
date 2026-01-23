@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	lzcntq	%rdi, %rax
 	shrl	$3, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	andl	$-4096, %esi
 	shlq	$32, %rdi

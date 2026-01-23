@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	xorl	$1, %esi
 	leaq	(%rdi,%rsi,8), %rax

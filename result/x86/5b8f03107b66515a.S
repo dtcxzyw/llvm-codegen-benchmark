@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	andl	$3, %edi
 	cmpw	$1, %di

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a4:
 	sarq	$4, %rsi
 	testb	$1, %dl

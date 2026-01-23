@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000084:
 	orl	$4, %edx
 	subl	%esi, %edi

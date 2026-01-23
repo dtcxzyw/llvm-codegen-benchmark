@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000003181:
 	vptestmb	%xmm1, %xmm1, %k1
 	vptestmb	%xmm0, %xmm0, %k1 {%k1}

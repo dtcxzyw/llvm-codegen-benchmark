@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000068:
 	leaq	64(%rdi), %rax
 	cmpl	%edx, %esi

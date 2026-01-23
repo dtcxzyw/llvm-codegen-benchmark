@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsq	%ymm2, %ymm1, %ymm1

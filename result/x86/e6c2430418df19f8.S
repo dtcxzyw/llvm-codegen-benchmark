@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	bsrl	%esi, %eax
 	leaq	-112(%rdi,%rax,8), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000086:
 	andb	$1, %sil
 	leal	-5003(%rdx), %ecx

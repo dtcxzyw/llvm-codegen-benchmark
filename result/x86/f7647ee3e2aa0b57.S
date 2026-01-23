@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	addl	$-16, %edi
 	rorxl	$3, %edi, %eax

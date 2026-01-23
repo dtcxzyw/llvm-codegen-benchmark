@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000424:
 	decl	%esi
 	cmpq	$7, %rdi

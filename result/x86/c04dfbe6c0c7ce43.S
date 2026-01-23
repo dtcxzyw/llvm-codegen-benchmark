@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	movl	%edi, %eax
 	andb	$-17, %sil

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000007ab:
 	leaq	32(%rdx), %rax
 	leaq	48(%rsi), %rcx

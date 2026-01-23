@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a6:
 	vpsraq	$32, %ymm1, %ymm1
 	vpcmpleq	%ymm1, %ymm0, %k0

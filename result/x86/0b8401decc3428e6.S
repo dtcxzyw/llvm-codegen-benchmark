@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	movw	$256, %ax
 	xorl	%edx, %edx

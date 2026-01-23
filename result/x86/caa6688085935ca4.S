@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	addl	$-1012, %edx
 	movzwl	%dx, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vpcmpeqb	%xmm2, %xmm1, %k1
 	vpblendmb	%xmm0, %xmm1, %xmm0 {%k1}

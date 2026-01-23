@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vminsd	%xmm1, %xmm0, %xmm2
 	kmovd	%edi, %k1

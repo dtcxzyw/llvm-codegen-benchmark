@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	leaq	1(%rdi), %rax
 	vcvtsi2sd	%rax, %xmm15, %xmm0

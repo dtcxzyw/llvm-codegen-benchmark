@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000002e1:
 	decl	%esi
 	movl	$2863311531, %eax

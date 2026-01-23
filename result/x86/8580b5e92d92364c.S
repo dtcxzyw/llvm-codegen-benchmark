@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	cmpb	$95, %sil
 	sete	%al

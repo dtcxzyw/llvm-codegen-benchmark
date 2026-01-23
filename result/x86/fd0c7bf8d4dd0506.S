@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	xorq	$1, %rdx
 	shlxq	%rsi, %rdx, %rax

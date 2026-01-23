@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	leaq	-1000(%rsi,%rdi), %rcx
 	cmpq	$2147483647, %rcx

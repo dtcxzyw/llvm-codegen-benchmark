@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000180:
 	cmpl	$1, %edx
 	sbbq	$-1, %rsi

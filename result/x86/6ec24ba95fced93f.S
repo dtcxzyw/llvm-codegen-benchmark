@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	bswapl	%edi
 	rorxl	$19, %edi, %eax

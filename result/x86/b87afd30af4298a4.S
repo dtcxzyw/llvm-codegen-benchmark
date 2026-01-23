@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ec:
 	movzbl	%sil, %eax
 	leal	10(%rax,%rax), %eax

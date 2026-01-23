@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vprolq	$56, %ymm1, %ymm2
 	vpsrlq	$7, %ymm1, %ymm1

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000019:
 	testq	%rdx, %rdx
 	setne	%al

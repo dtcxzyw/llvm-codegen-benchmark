@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000064:
 	addl	$-788, %esi
 	leaq	16(%rdi), %rcx

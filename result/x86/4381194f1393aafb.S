@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	addl	$-238, %edi
 	cmpl	$-9, %edi

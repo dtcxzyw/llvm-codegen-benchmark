@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000196a:
 	cmpl	%esi, %edx
 	setl	%al

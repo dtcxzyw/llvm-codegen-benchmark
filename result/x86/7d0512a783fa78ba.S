@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	movl	$3000, %eax
 	subl	%esi, %eax

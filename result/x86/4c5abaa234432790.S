@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	pushq	%rax
 	movl	$100, %edx

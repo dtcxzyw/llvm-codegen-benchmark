@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c0:
 	vpand	%ymm0, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

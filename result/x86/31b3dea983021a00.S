@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	imull	%esi, %edi
 	shlq	$32, %rdi

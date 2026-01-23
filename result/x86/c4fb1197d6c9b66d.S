@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	shrxq	%rdx, %rsi, %rax
 	cmpq	$134217729, %rax

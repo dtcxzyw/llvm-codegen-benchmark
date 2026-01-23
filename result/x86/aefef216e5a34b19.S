@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e1:
 	incl	%edx
 	testb	$1, %sil

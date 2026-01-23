@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	xorb	$1, %dl
 	testl	%esi, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	subl	%esi, %edi
 	leaq	1(%rdi), %rax

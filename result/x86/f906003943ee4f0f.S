@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorl	$-1756908916, %edi
 	rorxl	$19, %edi, %eax

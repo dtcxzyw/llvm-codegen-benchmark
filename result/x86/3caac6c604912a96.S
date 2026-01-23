@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	testq	%rdi, %rdi
 	movq	$-1, %rax

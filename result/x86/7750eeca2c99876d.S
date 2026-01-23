@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	notq	%rdx
 	addq	%rdi, %rdx

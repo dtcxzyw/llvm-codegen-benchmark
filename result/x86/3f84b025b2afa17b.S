@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	orl	%edi, %esi
 	movl	$3, %eax

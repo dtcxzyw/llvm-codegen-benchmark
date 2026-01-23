@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	shrq	$3, %rsi
 	imull	$-1090785345, %esi, %eax

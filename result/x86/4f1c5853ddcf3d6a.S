@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	orl	$1, %edi
 	movq	%rdi, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	xorl	$55296, %edi
 	leal	-1114112(%rdi), %eax

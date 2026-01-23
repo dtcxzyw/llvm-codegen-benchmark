@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	cmpl	$32768, %edx
 	cmovgeq	%rsi, %rdi

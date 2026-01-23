@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	andb	$-128, %dil
 	movzbl	%dil, %ecx

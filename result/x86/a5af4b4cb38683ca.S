@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	imull	$-1028477379, %esi, %eax
 	addl	%edi, %eax

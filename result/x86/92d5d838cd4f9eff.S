@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	andq	$-4, %rdx
 	subq	%rdx, %rdi

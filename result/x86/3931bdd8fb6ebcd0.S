@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	andl	$127, %edx
 	testb	$1, %sil

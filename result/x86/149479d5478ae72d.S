@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	decl	%edi
 	andl	$7, %edi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000220:
 	cmpl	$429496730, %edx
 	adcl	%esi, %edi

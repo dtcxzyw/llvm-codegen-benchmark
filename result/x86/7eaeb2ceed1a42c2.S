@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	andq	$-245761, %rsi
 	leaq	16384(%rsi,%rdi), %rax

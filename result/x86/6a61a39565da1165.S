@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000db:
 	subq	%rsi, %rdx
 	cmpq	%rdx, %rsi

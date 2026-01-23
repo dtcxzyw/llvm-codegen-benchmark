@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	xorb	$1, %dl
 	orb	%sil, %dl

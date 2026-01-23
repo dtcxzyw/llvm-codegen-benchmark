@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	addl	%edx, %edi
 	movzwl	%si, %eax

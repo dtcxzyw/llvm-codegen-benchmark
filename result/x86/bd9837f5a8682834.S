@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000101:
 	cmpb	$6, %sil
 	sbbb	$0, %dil

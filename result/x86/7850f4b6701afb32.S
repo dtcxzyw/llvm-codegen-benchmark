@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000013:
 	subb	%sil, %dil
 	leal	23(%rdi), %eax

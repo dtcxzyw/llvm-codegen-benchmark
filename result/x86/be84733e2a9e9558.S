@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c78:
 	xorl	%ecx, %ecx
 	cmpq	$2147483647, %rdx

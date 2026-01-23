@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000070:
 	shll	$5, %edx
 	andl	$-64, %edx

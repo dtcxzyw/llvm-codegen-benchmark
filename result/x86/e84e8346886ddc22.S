@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	btl	$30, %esi
 	adcl	$0, %edi

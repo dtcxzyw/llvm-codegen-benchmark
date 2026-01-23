@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	incl	%edi
 	andl	$-2, %edi

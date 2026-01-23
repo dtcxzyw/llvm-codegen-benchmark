@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shll	$3, %edi
 	andb	$24, %dil

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	testw	%si, %si
 	movl	$65507, %ecx

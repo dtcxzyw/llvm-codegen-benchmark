@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000044:
 	vcmpltss	%xmm1, %xmm2, %k0
 	vxorps	%xmm1, %xmm1, %xmm1

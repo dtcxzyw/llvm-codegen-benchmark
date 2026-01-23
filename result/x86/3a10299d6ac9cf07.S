@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	andl	$7168, %edx
 	cmovnel	%esi, %edx

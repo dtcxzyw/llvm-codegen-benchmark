@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000618:
 	andb	$-8, %sil
 	cmpb	$48, %sil

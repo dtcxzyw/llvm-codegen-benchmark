@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	xorl	%ecx, %ecx
 	cmpl	%esi, %edi

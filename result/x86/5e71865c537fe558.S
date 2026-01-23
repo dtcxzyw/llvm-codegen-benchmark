@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000db:
 	negl	%esi
 	subq	%rsi, %rdi

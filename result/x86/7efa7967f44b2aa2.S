@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000308:
 	andb	$2, %sil
 	shrb	%sil

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	xorl	%edx, %esi
 	leaq	168618(%rdi,%rsi,2), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vcmpneqsd	%xmm1, %xmm0, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}

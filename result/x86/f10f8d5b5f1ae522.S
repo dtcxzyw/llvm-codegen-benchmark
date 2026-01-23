@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006c:
 	andb	$1, %sil
 	addb	%dil, %sil

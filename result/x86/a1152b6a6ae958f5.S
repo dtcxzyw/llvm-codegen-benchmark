@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	addl	$5, %edx
 	shlq	$4, %rsi

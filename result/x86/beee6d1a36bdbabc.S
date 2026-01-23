@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000045:
 	andb	$1, %dl
 	addb	%sil, %dl

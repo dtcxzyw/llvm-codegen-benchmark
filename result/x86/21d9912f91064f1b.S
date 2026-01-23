@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	andb	$31, %sil
 	shlxq	%rsi, %rdi, %rax

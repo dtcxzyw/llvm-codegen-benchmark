@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000021b:
 	cmpq	$32000, %rdx
 	movl	$16, %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	pushq	%r14
 	pushq	%rbx

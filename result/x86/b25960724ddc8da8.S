@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003e:
 	lzcntq	%rdi, %rcx
 	movl	$64, %eax

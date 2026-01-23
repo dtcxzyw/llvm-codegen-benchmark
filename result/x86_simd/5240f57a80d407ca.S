@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vpabsd	%ymm0, %ymm0
 	vpsrld	$5, %ymm0, %ymm0

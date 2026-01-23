@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	orq	$199, %rdi
 	andnq	%rdi, %rsi, %rax

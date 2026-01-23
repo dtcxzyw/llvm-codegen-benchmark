@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	orl	$1174405120, %esi
 	cmpb	$12, %dil

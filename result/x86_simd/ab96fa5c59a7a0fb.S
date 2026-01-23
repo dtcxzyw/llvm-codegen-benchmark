@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	vpabsd	%ymm0, %ymm0
 	retq

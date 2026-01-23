@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	testb	$1, %dil
 	cmovnel	%esi, %edx

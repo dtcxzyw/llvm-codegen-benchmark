@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vmulps	%ymm2, %ymm1, %ymm1
 	vcvttps2udq	%ymm1, %ymm1

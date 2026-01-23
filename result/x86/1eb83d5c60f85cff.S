@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	cmpl	$36000, %esi
 	setb	%al

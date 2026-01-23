@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	notq	%rdx
 	cmpl	$64, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000294:
 	cmpq	$4, %rsi
 	setb	%al

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	leal	(%rdx,%rdx), %eax
 	orq	$-4, %rax

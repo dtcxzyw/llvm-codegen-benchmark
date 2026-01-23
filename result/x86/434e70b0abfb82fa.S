@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000104:
 	cmpw	$10, %si
 	setae	%cl

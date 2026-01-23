@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	notq	%rsi
 	movl	$1, %eax

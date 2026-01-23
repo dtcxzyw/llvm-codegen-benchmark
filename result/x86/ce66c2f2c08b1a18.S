@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	notl	%edi
 	testb	$7, %dil

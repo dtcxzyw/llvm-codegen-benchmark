@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	shll	$3, %edi
 	movabsq	$652177563988262924, %rax

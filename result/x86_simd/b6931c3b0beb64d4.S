@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0

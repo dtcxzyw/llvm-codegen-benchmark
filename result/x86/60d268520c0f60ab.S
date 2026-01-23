@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	bzhil	%esi, %edi, %eax
 	andl	$16383, %eax

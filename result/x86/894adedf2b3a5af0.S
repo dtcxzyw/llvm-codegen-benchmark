@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	orl	%esi, %edi
 	movq	$-273940481, %rcx

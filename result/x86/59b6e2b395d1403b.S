@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	orq	%rdx, %rsi
 	movabsq	$-922337203685477581, %rax

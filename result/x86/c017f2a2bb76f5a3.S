@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	orl	$32, %edi
 	leal	-97(%rdi), %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vpminsd	%ymm0, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2

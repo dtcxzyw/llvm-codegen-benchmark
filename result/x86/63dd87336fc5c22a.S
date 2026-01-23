@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000144:
 	subl	%edi, %esi
 	cmpl	$2147483647, %esi

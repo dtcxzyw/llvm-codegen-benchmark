@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	testl	%edx, %edx
 	movl	$1073741824, %eax

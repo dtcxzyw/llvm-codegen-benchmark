@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000089:
 	movl	$8, %eax
 	shlxl	%esi, %eax, %eax

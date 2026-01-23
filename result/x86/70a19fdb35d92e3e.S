@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	andq	$-2, %rdi
 	cmpq	$4, %rdi

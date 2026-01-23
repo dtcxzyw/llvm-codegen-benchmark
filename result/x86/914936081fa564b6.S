@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000144:
 	incl	%edi
 	cmpw	%si, %di

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	andl	$1, %esi
 	movabsq	$3997770567508694361, %rax

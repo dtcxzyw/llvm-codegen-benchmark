@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	bsrl	%esi, %eax
 	shll	$4, %eax

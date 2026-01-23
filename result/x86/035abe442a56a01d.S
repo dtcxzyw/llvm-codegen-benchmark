@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c4:
 	xorl	%eax, %eax
 	testb	$16, %dl

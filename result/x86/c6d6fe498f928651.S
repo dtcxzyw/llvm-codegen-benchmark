@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000850:
 	addq	$-2, %rdi
 	cmpq	$5, %rdi

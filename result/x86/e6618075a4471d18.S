@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	andnq	%rdi, %rdx, %rax
 	btq	%rsi, %rax

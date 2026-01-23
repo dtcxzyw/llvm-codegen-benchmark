@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ef:
 	leaq	1048576(%rdx), %rcx
 	shrq	$21, %rcx

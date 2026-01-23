@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	cmpw	%si, %dx
 	setl	%cl

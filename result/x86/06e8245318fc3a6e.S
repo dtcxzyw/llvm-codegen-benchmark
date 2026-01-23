@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000244:
 	cmpl	$65536, %esi
 	cmovael	%esi, %edi

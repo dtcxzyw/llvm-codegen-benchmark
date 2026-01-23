@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	orb	%sil, %dil
 	setne	%al

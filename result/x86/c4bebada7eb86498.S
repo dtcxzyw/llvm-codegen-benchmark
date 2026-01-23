@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	negb	%dil
 	movq	$-1, %rax

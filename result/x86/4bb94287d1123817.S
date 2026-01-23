@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	xorq	%rdx, %rsi
 	leaq	1160(%rdi,%rsi,8), %rax

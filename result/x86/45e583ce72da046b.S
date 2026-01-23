@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000005f:
 	negl	%esi
 	shrl	$24, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002f:
 	shll	$2, %edx
 	leal	(%rdx,%rdx,8), %eax

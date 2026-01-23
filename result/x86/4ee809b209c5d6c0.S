@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001da:
 	addl	%edx, %esi
 	shlq	$3, %rsi

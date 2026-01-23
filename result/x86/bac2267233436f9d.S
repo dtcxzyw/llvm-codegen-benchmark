@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000184:
 	subb	%dil, %sil
 	addb	$19, %sil

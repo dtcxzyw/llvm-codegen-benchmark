@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000055:
 	movsbl	%sil, %eax
 	imull	$100, %eax, %eax

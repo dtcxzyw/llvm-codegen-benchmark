@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000284:
 	addb	$-48, %dl
 	cmpb	$10, %dl

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	vprolvd	%ymm1, %ymm0, %ymm0
 	retq

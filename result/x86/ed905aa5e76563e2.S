@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	addb	$55, %dl
 	movzbl	%dl, %eax

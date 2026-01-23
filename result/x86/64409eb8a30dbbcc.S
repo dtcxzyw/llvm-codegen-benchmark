@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000884:
 	subl	%esi, %edx
 	cmovbel	%edi, %edx

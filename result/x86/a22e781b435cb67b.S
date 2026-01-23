@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	leal	7(%rsi), %eax
 	shrl	$3, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001042:
 	testq	%rsi, %rsi
 	sete	%cl

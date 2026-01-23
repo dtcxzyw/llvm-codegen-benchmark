@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	testb	$2, %sil
 	sete	%al

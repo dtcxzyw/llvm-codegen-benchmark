@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	vmovq	%xmm0, %rax
 	leaq	-1(%rax), %rcx

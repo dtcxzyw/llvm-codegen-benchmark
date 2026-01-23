@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	andl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1

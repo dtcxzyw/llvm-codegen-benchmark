@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000009c:
 	decl	%edx
 	imulq	$1040, %rsi, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000842:
 	cmpl	$-5, %esi
 	sete	%al

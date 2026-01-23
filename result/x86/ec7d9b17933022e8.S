@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000053:
 	cmpb	$-32, %dl
 	movl	$2, %eax

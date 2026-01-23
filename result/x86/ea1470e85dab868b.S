@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	incb	%dil
 	movq	$-1, %rax

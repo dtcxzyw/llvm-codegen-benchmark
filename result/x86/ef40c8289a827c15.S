@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	orb	$32, %dil
 	leal	-97(%rdi), %eax

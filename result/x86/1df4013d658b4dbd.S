@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000d0:
 	leaq	-4(,%rdx,4), %rcx
 	movslq	%esi, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	xorb	$63, %sil
 	bzhiq	%rsi, %rdi, %rax

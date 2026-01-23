@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000208:
 	cmpq	$16777217, %rdx
 	setae	%cl

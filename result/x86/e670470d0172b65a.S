@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000421:
 	xorb	$75, %dl
 	xorb	$80, %sil

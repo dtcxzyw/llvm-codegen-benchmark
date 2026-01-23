@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	leal	8(%rdx), %eax
 	orb	%dil, %sil

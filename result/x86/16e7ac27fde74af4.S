@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000113:
 	sarq	$3, %rdx
 	movabsq	$1152921504606846975, %rax

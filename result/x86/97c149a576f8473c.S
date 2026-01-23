@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000cc:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi

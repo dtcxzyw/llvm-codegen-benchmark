@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	btrl	%edx, %esi
 	movzbl	%sil, %eax

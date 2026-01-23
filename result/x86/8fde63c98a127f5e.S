@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	addb	$-20, %sil
 	shrxl	%esi, %edi, %eax

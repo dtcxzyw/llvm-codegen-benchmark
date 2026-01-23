@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.zero	16,16
 func000000000000002c:

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001b:
 	movl	%edi, %eax
 	movl	$2290649225, %ecx

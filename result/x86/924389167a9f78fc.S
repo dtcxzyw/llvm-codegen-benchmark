@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a4:
 	addb	$-37, %sil
 	leaq	-36(%rdi), %rcx

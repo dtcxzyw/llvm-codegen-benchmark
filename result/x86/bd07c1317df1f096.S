@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	decb	%dil
 	movabsq	$-9223372036854775808, %rax

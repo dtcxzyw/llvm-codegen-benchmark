@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	orq	%rsi, %rdi
 	movb	$31, %al

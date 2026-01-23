@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2

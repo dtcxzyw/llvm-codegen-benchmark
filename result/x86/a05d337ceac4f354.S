@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	subl	%edx, %esi
 	andl	$858993459, %esi

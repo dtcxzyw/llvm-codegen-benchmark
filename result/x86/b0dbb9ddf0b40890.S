@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000de:
 	lzcntl	%edi, %eax
 	negb	%al

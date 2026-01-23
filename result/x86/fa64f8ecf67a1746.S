@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	movsbl	%dl, %eax
 	shll	$8, %eax

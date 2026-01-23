@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	imull	%esi, %edi
 	sarl	$3, %edi

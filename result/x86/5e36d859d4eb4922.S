@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	incl	%edx
 	leaq	(%rdi,%rdx,8), %rax

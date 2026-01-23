@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030c:
 	movzwl	%dx, %eax
 	cmpl	$513, %eax

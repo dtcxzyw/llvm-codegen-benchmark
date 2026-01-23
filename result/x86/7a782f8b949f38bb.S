@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000046:
 	subq	%rsi, %rdx
 	leaq	-8(%rdi,%rdx,2), %rax

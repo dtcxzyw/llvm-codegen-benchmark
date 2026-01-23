@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	addw	%di, %si
 	sete	%al

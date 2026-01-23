@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	bswapl	%esi
 	leaq	-1(%rdi,%rsi), %rax

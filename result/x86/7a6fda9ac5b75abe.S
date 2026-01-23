@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorl	%esi, %edi
 	shll	$13, %esi

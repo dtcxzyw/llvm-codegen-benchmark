@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	xorb	$7, %dl
 	shrxl	%edx, %esi, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000186:
 	addl	$-128, %edx
 	subq	%rsi, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	addl	%edi, %edi
 	addb	$-6, %sil

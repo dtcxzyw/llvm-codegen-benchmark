@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000181:
 	testl	$8388607, %esi
 	setne	%cl

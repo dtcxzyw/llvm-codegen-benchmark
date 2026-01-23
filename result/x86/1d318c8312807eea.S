@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	xorl	$-16777216, %edx
 	xorl	$24, %esi

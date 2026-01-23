@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	andl	$-4096, %esi
 	orq	$26, %rsi

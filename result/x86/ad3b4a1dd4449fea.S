@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	subl	%esi, %edi
 	imulq	$613566757, %rdi, %rax

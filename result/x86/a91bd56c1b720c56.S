@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	andb	$1, %dil
 	vcvttsd2si	%xmm0, %rax

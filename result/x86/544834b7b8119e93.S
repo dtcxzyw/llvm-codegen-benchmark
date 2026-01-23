@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	shrq	$3, %rdi
 	movabsq	$7905747460161236407, %rax

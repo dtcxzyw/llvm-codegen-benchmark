@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	andl	$2097151, %edx
 	imulq	$136657, %rdx, %rax

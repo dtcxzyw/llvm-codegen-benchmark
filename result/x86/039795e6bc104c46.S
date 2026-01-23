@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vcvttss2usi	%xmm0, %ecx
 	cmpl	$31, %ecx

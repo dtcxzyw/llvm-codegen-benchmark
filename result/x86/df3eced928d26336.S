@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	popcntq	%rdi, %rax
 	cmpl	$1, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000017f:
 	movzwl	%si, %eax
 	leaq	544(%rdi,%rax,8), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	cmpb	$114, %dl
 	sete	%cl

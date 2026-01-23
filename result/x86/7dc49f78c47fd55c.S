@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	movq	%rdi, %rax
 	leaq	1048576(%rdi), %rcx

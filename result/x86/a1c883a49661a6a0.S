@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vmovmskps	%xmm0, %eax
 	shll	$31, %eax

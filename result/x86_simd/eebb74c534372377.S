@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vpmaxsd	%xmm1, %xmm0, %xmm0
 	vpslld	$8, %xmm0, %xmm0

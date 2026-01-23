@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000141:
 	andb	$-4, %dl
 	xorl	%eax, %eax

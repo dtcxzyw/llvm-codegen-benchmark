@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	testb	$1, %dil
 	movabsq	$9007199254740992, %rcx

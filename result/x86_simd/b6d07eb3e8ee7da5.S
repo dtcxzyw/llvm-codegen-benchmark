@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vroundps	$11, %ymm0, %ymm1
 	vcmpneqps	%ymm1, %ymm0, %k0

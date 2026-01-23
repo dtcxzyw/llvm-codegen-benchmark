@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	testq	$-5, %rdx
 	setne	%al

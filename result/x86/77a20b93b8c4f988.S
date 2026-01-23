@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	movb	$48, %al
 	bzhiq	%rax, %rdx, %rcx

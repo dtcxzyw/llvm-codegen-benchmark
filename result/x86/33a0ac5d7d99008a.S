@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000141:
 	decl	%esi
 	testl	%esi, %esi

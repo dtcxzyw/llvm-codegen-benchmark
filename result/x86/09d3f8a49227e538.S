@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000308c:
 	incq	%rdx
 	cmpq	%rdi, %rdx

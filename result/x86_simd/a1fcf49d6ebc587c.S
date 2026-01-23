@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

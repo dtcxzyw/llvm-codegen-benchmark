@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003c2:
 	btl	%edx, %esi
 	setae	%al

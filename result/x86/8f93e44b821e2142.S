@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	addb	%dil, %dil
 	andb	$126, %dil

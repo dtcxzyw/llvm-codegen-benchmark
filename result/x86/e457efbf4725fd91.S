@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	andq	$-8, %rdi
 	movb	$38, %al

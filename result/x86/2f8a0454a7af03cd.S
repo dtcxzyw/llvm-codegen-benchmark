@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	addl	$8, %edi
 	negb	%sil

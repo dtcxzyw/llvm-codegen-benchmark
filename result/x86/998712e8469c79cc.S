@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	lzcntw	%di, %ax
 	addl	$8, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004a:
 	addl	$-261663, %edi
 	sarl	$21, %edi

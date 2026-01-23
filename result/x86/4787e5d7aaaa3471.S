@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	shlxq	%rdx, %rsi, %rax
 	movabsq	$-3689348814741910323, %rcx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000064:
 	addl	$-48, %edx
 	leaq	2(%rsi), %rax

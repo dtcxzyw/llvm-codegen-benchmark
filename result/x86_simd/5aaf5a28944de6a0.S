@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vpsrlq	$12, %ymm0, %ymm1
 	movl	$16843009, %eax

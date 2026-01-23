@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	leal	65536(%rsi,%rdi), %eax
 	xorl	$55296, %eax

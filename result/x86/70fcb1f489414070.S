@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000017:
 	shrb	$4, %dil
 	leal	-32(%rdi), %eax

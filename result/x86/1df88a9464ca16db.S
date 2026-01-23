@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	rorxl	$18, %esi, %eax
 	xorl	%esi, %edi

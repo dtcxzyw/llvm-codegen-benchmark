@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	andq	$-16, %rsi
 	xorl	%eax, %eax

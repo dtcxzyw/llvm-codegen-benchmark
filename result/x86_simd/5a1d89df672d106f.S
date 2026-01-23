@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	vmovq	%xmm0, %rax
 	movabsq	$-4454547087429121353, %rdi

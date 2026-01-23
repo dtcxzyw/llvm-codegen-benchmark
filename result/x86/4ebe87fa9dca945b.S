@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	incq	%rdi
 	vcvtsi2ss	%rdi, %xmm15, %xmm0

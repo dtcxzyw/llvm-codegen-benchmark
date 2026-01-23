@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	bzhil	%edx, %edi, %eax
 	movl	$1, %ecx

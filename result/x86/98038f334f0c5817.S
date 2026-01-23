@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	cmpw	$2, %si
 	sete	%al

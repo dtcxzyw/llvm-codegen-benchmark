@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.byte	20
 	.byte	20

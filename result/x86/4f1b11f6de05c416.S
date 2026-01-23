@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004a:
 	negq	%rsi
 	orq	%rdi, %rsi

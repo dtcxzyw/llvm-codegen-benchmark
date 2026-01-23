@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000e98:
 	notl	%esi
 	testb	$14, %sil

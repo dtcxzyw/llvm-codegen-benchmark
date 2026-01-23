@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	andl	$65087, %edi
 	btq	$32, %rsi

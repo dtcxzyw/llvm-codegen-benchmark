@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

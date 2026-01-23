@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	shrl	%edx
 	leaq	(%rdi,%rsi,4), %rax

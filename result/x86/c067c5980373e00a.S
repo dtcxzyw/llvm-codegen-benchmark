@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	leaq	(%rdx,%rdx), %rcx
 	cmpq	%rsi, %rcx

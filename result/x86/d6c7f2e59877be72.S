@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	cmpl	$768, %edx
 	sete	%al

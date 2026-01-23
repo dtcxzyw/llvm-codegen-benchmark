@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000cec:
 	incl	%edx
 	cmpl	%edx, %esi

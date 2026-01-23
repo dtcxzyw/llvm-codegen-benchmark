@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000088c:
 	orq	%rsi, %rdi
 	setne	%al

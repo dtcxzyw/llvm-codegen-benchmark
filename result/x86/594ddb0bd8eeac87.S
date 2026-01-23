@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	shrq	$56, %rsi
 	andl	$65280, %edi

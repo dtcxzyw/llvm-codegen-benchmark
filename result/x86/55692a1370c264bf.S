@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vcvttsd2si	%xmm0, %rax
 	movabsq	$4835703278458516699, %rcx

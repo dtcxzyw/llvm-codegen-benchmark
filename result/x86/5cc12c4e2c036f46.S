@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vcvtsi2sd	%edi, %xmm15, %xmm2
 	vdivsd	%xmm2, %xmm0, %xmm0

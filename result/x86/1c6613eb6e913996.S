@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000040:
 	rorxl	$26, %edx, %ecx
 	leal	(%rdi,%rsi), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000012ea:
 	subl	%edx, %esi
 	addl	$2147483299, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000008cb:
 	movl	%edi, %eax
 	imull	%esi, %eax

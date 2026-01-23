@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000012c:
 	addq	$-1, %rdi
 	setb	%cl

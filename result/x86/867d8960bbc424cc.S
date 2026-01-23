@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	sarl	$16, %edx
 	testl	%esi, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	lzcntq	%rdi, %rax
 	xorb	$63, %al

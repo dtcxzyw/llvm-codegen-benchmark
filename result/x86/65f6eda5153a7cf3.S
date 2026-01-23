@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008c:
 	cmpw	%si, %di
 	setb	%cl

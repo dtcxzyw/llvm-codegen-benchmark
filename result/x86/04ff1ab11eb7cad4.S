@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	leaq	40(%rdi), %rax
 	retq

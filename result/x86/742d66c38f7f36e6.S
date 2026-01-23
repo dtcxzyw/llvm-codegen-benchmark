@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	cmpl	%esi, %edi
 	cmovbl	%edi, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	kmovd	%edi, %k1
 	kmovd	%esi, %k2

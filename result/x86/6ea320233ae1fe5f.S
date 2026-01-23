@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000038:
 	subq	$65521, %rdx
 	movl	$65520, %eax

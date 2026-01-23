@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000584:
 	testq	%rdx, %rdx
 	sete	%al

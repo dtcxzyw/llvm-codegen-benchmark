@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpless	%xmm0, %xmm3, %k1

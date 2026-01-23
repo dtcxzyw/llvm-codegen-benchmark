@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001d:
 	lzcntq	%rsi, %rcx
 	shlq	$52, %rcx

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	leaq	-32(%rdx), %rax
 	retq

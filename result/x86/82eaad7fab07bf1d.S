@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	subl	%esi, %edx
 	vcvtsi2ss	%edx, %xmm15, %xmm0

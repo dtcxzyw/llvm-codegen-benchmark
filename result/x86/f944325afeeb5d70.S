@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002b:
 	leaq	8(%rdx,%rdi), %rax
 	retq

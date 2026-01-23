@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	movswl	%di, %eax
 	cmpl	$-31006, %eax

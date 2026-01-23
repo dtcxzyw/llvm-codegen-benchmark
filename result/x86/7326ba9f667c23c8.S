@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	addb	%dil, %sil
 	addb	$-32, %sil

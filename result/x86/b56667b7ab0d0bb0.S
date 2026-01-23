@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shrq	$3, %rdi
 	cmpq	$1048576, %rdi

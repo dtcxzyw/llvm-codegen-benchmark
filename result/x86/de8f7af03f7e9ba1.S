@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000494:
 	addq	$-14, %rsi
 	cmpq	$20, %rsi

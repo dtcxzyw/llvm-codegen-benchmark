@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000a64:
 	notq	%rdx
 	shrq	$63, %rdx

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	vpmovzxbw	%xmm1, %xmm1
 	vpor	%xmm1, %xmm0, %xmm0

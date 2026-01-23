@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003f:
 	shrl	%esi
 	leaq	(%rdi,%rsi,4), %rax

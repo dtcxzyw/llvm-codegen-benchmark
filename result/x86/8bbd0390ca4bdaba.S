@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e1:
 	negb	%sil
 	cmpl	$2, %edi

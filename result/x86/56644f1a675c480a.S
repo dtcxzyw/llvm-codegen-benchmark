@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	notb	%sil
 	cmpl	$63, %edx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	leal	-64(%rsi), %ecx
 	testw	%di, %di

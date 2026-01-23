@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	xorq	$14, %rdi
 	cmpq	$2, %rdi

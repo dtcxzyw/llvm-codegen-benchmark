@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vpternlogq	$30, %ymm2, %ymm1, %ymm0
 	vpmovq2m	%ymm0, %k0

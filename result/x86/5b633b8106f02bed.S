@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	bswapq	%rdi
 	movabsq	$4611686018427387904, %rax

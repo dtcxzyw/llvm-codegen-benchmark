@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vpminsw	%xmm2, %xmm1, %xmm1
 	vpmovsxwd	%xmm1, %ymm1

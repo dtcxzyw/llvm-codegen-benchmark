@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	movl	%esi, %eax
 	imulq	$104, %rax, %rax

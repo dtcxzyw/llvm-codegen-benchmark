@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	leaq	63(%rdi,%rsi), %rax
 	shrq	$6, %rax

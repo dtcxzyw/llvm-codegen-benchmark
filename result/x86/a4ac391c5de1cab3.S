@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c6:
 	movl	%edx, %eax
 	cmpl	$17, %esi

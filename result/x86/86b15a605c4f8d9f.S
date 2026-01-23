@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	vmulsd	%xmm2, %xmm2, %xmm2
 	vdivsd	%xmm1, %xmm2, %xmm1

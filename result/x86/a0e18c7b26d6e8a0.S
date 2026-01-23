@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ab:
 	leaq	48(%rsi), %rax
 	cmpl	$3, %edx

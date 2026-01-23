@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001b:
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx

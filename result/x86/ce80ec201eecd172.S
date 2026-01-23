@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	testb	$1, %sil
 	jne	.LBB0_1

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e1:
 	xorb	$1, %sil
 	movzbl	%sil, %eax

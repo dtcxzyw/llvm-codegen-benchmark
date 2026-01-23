@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001d:
 	movl	%edi, %eax
 	xorb	$31, %sil

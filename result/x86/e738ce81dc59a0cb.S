@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002b:
 	decq	%rdx
 	andq	$-1024, %rdx

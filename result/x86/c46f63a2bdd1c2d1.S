@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a7:
 	cmpl	$2, %edx
 	movzwl	%si, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	andq	$-3145729, %rdx
 	testb	$1, %dil

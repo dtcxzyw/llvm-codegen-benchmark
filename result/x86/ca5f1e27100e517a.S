@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000010c:
 	addl	%esi, %edx
 	leaq	1904(%rdi,%rdx,8), %rax

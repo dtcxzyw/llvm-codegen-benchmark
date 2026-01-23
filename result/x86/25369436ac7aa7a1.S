@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001b5:
 	addq	%r8, %rdx
 	adcq	%r9, %rcx

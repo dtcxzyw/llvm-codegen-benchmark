@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	xorl	%eax, %eax
 	btq	$59, %rdi

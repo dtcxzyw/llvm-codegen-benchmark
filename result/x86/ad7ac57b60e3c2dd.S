@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	leal	26624(%rdi), %eax
 	testw	%di, %di

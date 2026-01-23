@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.quad	544
 func00000000000001fe:

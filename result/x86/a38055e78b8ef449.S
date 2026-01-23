@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000118:
 	andq	$-8, %rsi
 	addq	$-65553, %rsi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	notl	%esi
 	leal	7(%rdi), %eax

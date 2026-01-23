@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000453:
 	cmpl	$1073741824, %edx
 	cmovael	%edx, %esi

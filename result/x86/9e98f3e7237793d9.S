@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	shrl	$24, %edx
 	incq	%rsi

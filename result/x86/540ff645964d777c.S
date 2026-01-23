@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	notl	%edx
 	andl	$15, %edx

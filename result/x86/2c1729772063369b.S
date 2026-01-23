@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	blsil	%edi, %eax
 	cmpl	$4096, %eax

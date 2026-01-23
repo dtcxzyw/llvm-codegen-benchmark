@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	addl	%edx, %esi
 	sets	%cl

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	subb	%dl, %sil
 	shlb	$4, %sil

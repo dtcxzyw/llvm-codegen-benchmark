@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	andl	$15, %esi
 	leal	-40(%rdi,%rsi), %eax

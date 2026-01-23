@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	movzwl	%si, %ecx
 	leal	65536(%rcx), %eax

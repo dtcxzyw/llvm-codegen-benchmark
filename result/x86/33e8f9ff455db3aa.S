@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c4:
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx

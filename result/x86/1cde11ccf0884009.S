@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002b:
 	subq	%rdx, %rdi
 	movzbl	%sil, %eax

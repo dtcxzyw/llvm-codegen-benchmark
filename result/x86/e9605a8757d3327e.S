@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001dc:
 	incl	%esi
 	subq	%rsi, %rdi

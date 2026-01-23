@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000014ca:
 	addl	%edx, %esi
 	movl	$1, %eax

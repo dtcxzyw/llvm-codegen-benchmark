@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000098:
 	addl	$-57, %edx
 	leal	57(%rdi), %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	notq	%rdx
 	leaq	(%rsi,%rsi,2), %rax

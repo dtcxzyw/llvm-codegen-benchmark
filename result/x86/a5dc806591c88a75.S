@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	orb	$16, %sil
 	shrxl	%esi, %edi, %eax

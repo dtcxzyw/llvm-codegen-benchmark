@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	cmpb	$1, %sil
 	cmovnel	%edi, %edx

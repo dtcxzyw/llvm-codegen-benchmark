@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000084:
 	testq	%rdi, %rdi
 	setne	%cl

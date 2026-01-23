@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000008a4:
 	cmpb	%sil, %dil
 	setb	%cl

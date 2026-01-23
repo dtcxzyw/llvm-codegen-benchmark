@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	vpsubd	%ymm2, %ymm0, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0

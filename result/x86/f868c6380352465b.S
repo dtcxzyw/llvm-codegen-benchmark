@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e1:
 	shrq	%rdx
 	imull	$-1431655765, %edx, %eax

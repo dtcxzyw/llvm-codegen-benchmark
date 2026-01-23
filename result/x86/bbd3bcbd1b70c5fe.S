@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	xorl	%ecx, %ecx
 	testb	$1, %sil

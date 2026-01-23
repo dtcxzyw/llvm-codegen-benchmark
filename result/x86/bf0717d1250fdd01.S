@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000087:
 	decq	%rsi
 	movl	$12, %eax

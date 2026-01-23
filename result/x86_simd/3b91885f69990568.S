@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vpmovsxbd	%xmm2, %ymm2
 	vpslld	$12, %ymm2, %ymm2

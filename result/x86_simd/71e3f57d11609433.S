@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	vmovdqa	%ymm0, %ymm3
 	vpternlogq	$15, %ymm0, %ymm0, %ymm3

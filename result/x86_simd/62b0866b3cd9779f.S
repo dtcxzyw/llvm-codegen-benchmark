@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000019:
 	vpcmpgtd	%xmm2, %xmm0, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001f3:
 	incl	%esi
 	vcvtsi2ss	%esi, %xmm15, %xmm1

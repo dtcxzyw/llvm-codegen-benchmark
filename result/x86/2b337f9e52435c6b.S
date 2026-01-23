@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	decl	%edi
 	vcvtsi2sd	%edi, %xmm15, %xmm1

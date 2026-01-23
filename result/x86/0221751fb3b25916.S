@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000064:
 	negl	%edx
 	andl	$15, %edx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000d06:
 	cmpq	$2147483647, %rdi
 	setae	%cl

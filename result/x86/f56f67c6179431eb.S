@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000027:
 	notl	%edx
 	cmpl	$1, %esi

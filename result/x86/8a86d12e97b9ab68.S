@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006a:
 	addl	$-9, %edx
 	cmpl	%edx, %esi

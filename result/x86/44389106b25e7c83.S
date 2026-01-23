@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000046:
 	decl	%esi
 	sarxl	%edi, %esi, %eax

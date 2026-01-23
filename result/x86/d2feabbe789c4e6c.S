@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	leaq	16(%rsi), %rax
 	testl	$8192, %edx

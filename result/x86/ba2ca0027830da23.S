@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000060f4:
 	addl	%esi, %edi
 	cmpq	$33554432, %rdx

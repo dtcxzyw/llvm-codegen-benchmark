@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	movq	%rdx, %rcx
 	leaq	1900(%rdx), %rax

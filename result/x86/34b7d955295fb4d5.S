@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006a:
 	negl	%edx
 	movslq	%edx, %rax

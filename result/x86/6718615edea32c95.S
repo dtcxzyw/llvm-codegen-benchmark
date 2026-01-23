@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000a44:
 	cmpq	$65536, %rdx
 	cmovael	%esi, %edi

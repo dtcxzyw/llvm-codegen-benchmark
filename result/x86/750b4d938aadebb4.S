@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	negl	%esi
 	orl	$-1024, %esi

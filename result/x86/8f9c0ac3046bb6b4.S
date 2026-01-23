@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	testb	$64, %sil
 	movl	$256, %ecx

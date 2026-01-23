@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000202a:
 	vpcmpnleud	%ymm2, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1

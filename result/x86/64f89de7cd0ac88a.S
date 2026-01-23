@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	notq	%rdi
 	andb	$7, %sil

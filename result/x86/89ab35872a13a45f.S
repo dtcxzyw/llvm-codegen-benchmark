@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003f:
 	addl	$10240, %edi
 	movzwl	%di, %eax

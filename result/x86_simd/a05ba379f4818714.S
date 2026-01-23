@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000b4:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	vmovd	%xmm0, %eax
 	cmpl	$947912704, %eax

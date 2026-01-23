@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	vpmaxsd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0

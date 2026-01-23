@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	andb	$7, %dil
 	movl	$128, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000181:
 	movl	%edx, %eax
 	leaq	16(%rsi,%rax), %rax

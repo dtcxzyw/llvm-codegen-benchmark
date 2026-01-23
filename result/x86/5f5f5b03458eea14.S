@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000065:
 	leal	(%rsi,%rdx), %eax
 	movzbl	%dil, %ecx

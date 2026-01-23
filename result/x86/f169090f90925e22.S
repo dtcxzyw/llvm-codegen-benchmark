@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	cmpw	$2, %dx
 	cmovgel	%esi, %edi

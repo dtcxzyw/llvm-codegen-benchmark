@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	testl	$-32768, %esi
 	setne	%al

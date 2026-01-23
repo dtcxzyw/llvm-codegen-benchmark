@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	andl	$1, %edi
 	shlxl	%esi, %edi, %eax

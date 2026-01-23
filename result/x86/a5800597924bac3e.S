@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	movl	%edi, %eax
 	orb	$48, %al

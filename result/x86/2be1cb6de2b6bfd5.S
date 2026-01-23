@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	addl	$-457, %edx
 	movslq	%edx, %rax

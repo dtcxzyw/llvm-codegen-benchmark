@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	shlq	$48, %rsi
 	orq	%rdi, %rsi

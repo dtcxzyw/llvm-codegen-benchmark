@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a1:
 	incq	%rsi
 	movl	%esi, %eax

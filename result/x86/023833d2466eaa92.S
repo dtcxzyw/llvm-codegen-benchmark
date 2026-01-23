@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000082:
 	bzhiq	%rdx, %rsi, %rcx
 	addq	%rdi, %rdi

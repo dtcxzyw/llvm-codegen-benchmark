@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c06:
 	movq	%rdi, %rax
 	cmpl	$1, %esi

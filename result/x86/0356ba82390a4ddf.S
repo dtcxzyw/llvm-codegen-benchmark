@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	shrl	%edi
 	movq	$-1, %rax

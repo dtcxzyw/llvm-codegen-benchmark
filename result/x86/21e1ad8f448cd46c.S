@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c8:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi

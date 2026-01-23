@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	cmpq	%rdi, %rsi
 	sete	%al

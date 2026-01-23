@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	andl	$95, %esi
 	addl	$-65, %esi

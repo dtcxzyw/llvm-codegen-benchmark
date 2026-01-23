@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	movl	$2147483648, %ecx
 	leaq	1073741824(%rcx), %rax

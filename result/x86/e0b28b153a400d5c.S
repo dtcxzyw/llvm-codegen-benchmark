@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	vcvttsd2si	%xmm0, %eax
 	leal	416(%rdi,%rax), %eax

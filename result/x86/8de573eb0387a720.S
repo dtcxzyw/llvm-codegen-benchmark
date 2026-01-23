@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000072c:
 	shrl	%edx
 	cmpq	%rdx, %rsi

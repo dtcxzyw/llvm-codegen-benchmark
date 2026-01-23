@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002e:
 	decl	%edx
 	andl	$63, %edx

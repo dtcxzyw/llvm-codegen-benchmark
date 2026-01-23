@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	shrxq	%rsi, %rdi, %rax
 	movb	$1, %cl

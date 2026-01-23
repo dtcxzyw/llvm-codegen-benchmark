@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	testl	$251658240, %edi
 	sete	%al

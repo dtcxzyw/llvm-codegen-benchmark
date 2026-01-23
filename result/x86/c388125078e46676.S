@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000023:
 	shrq	%rdi
 	cmpl	$65536, %edi

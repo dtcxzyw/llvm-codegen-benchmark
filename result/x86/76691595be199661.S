@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000011:
 	sarq	$63, %rsi
 	leal	(%rsi,%rdi), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	rolw	$8, %si
 	cmpw	%si, %di

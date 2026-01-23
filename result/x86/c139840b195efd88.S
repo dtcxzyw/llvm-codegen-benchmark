@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030c:
 	incl	%edx
 	cmpq	%rdx, %rsi

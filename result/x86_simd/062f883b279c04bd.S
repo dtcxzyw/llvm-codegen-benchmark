@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.short	12137
 	.short	12137

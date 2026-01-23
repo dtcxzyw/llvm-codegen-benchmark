@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000088c:
 	decq	%rdx
 	incq	%rsi

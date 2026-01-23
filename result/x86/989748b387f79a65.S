@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000022:
 	vcmpltss	%xmm1, %xmm2, %k0
 	vcmpltss	%xmm1, %xmm0, %k1

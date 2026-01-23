@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	andl	$15, %edi
 	vcvtsi2sd	%rdi, %xmm15, %xmm0

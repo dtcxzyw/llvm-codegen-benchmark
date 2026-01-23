@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	notb	%sil
 	testb	$12, %dl

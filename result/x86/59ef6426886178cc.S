@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	xorl	$1431655765, %esi
 	andl	%edi, %esi

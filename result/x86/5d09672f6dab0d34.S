@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	shlq	$29, %rdi
 	movl	$3758096384, %eax

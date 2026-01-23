@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	shrl	$16, %edi
 	imull	$16807, %edi, %eax

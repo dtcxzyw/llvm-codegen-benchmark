@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	testb	$1, %dil
 	leal	52(%rsi,%rdx), %ecx

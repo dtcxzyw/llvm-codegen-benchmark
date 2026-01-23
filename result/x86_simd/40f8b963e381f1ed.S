@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vpor	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

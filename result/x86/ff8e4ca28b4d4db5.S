@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e1:
 	imulq	$688, %rdx, %rax
 	leaq	464(%rsi,%rax), %rax

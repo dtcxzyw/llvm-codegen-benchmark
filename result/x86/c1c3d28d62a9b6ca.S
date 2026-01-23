@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	leal	65536(%rsi), %eax
 	cltd

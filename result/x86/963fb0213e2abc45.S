@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	notl	%edx
 	orl	$-65536, %edx

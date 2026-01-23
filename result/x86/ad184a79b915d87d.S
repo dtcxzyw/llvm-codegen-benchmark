@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000081:
 	testq	%rsi, %rsi
 	movl	$8388607, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	rolw	$8, %di
 	leal	1(%rdi), %eax

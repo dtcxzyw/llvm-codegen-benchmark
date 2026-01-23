@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vpshufd	$245, %xmm1, %xmm2
 	vpshufd	$245, %xmm0, %xmm3

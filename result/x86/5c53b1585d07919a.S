@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	negl	%edi
 	testb	$7, %dil

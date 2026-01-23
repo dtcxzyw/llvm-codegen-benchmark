@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	vorps	%xmm1, %xmm0, %xmm0
 	retq

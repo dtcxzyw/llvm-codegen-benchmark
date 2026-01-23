@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	orl	$-2147483648, %esi
 	shlq	$32, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	xorq	$-2, %rdx
 	xorq	$-2, %rsi

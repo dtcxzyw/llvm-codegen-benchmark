@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	cmpb	$1, %sil
 	movq	$-1, %rax

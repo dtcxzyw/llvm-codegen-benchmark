@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	addb	$49, %dl
 	testl	%esi, %esi

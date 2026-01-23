@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000110c:
 	shrq	$5, %rdx
 	cmpl	%edx, %esi

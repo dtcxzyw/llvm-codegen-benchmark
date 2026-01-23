@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	addl	$26, %edi
 	imulq	$795364315, %rdi, %rax

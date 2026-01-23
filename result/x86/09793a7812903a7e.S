@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000156a:
 	movl	%esi, %eax
 	sarl	$31, %eax

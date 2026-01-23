@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	notl	%edi
 	vcvttsd2si	%xmm0, %eax

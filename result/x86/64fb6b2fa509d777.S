@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000101:
 	addl	$-14, %edx
 	cmpl	$5, %edx

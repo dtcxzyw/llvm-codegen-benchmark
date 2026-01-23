@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	vpminub	%xmm2, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0

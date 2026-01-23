@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	testl	%edx, %edx
 	cmovel	%edx, %esi

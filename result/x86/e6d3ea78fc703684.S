@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	bsrq	%rsi, %rax
 	cmpq	%rdi, %rax

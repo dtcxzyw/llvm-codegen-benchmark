@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000328c:
 	notb	%dl
 	cmpl	$5, %esi

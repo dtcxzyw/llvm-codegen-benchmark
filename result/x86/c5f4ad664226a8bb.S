@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	notb	%dil
 	testb	$4, %sil

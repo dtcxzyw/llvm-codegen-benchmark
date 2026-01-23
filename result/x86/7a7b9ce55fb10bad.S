@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	imulq	$365, %rsi, %rax
 	movslq	%edi, %rcx

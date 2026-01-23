@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vptestnmw	%xmm2, %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}

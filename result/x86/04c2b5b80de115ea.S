@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vmovd	%xmm0, %eax
 	shrl	$23, %eax

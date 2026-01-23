@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a1:
 	shlq	$8, %rdx
 	orq	%rdi, %rdx

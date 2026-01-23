@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000110a:
 	movl	%edi, %eax
 	addq	$46, %rsi

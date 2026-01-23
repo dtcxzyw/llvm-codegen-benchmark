@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	subl	%edx, %esi
 	setns	%cl

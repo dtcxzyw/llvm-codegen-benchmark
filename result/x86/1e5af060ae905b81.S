@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	orb	$48, %dl
 	cmpb	$-96, %sil

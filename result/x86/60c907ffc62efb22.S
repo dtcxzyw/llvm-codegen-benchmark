@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a4:
 	andl	$63, %esi
 	subl	%esi, %edi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	cmpl	$64, %edx
 	movq	$-1, %rax

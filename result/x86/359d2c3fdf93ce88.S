@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	movl	%esi, %eax
 	vroundsd	$11, %xmm0, %xmm0, %xmm1

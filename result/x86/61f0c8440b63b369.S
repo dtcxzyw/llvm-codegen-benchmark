@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000014ca:
 	leal	-2(%rdx,%rsi), %eax
 	testl	%eax, %eax

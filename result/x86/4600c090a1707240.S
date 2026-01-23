@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	lzcntq	%rsi, %rax
 	movl	$11, %ecx

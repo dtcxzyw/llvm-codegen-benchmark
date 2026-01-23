@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	cmpw	$126, %dx
 	sete	%al

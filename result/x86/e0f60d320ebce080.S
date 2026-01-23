@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	testl	%edi, %edi
 	setg	%al

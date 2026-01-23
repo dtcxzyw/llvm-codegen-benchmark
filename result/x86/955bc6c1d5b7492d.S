@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001bc:
 	addq	%rdx, %rsi
 	movzwl	%di, %eax

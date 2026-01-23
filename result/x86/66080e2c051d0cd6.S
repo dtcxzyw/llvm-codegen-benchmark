@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	orb	$32, %sil
 	addb	$-97, %sil

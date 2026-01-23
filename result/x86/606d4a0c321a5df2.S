@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000010c:
 	testb	%sil, %sil
 	sets	%cl

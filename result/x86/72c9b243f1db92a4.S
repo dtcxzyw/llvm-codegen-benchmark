@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	sarl	$13, %edx
 	leal	-1(%rdx,%rsi), %eax

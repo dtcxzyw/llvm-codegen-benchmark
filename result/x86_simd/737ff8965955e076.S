@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2

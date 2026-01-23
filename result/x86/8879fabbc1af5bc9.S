@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000108:
 	subq	$-4, %rdi
 	setae	%cl

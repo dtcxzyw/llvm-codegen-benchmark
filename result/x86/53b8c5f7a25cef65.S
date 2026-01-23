@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000014a:
 	incb	%dl
 	setns	%cl

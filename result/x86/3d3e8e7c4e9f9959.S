@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	shrb	$4, %sil
 	addb	%dil, %sil

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	movzbl	%dil, %eax
 	imull	$1540483477, %eax, %eax

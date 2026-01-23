@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000008ca:
 	addq	%rsi, %rdx
 	shrq	%rsi

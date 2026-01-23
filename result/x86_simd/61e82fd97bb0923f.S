@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000520:
 	vpminuq	%ymm2, %ymm1, %ymm3
 	vpmaxuq	%ymm2, %ymm1, %ymm1

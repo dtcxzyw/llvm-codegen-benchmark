@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	imull	$-286331153, %edi, %eax
 	cmpl	$286331154, %eax

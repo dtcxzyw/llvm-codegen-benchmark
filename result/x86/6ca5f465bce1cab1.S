@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000604:
 	negb	%dl
 	shlxq	%rdx, %rsi, %rax

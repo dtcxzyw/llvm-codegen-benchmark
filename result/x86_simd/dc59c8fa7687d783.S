@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000302:
 	vpand	%xmm0, %xmm2, %xmm2
 	vpcmpneqb	%xmm0, %xmm2, %k0

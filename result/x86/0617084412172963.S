@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	leaq	13(%rsi,%rsi,2), %rax
 	imulq	%rdi, %rax

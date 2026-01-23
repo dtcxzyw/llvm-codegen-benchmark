@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000ca8:
 	vcmplesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}

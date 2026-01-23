@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ce:
 	shll	$6, %edx
 	movslq	%edx, %rax

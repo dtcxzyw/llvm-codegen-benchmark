@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl

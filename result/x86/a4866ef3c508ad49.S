@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	movzbl	%dil, %eax
 	leal	-48(%rax,%rsi,8), %eax

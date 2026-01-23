@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a5:
 	movq	%rdi, %rcx
 	notq	%rcx

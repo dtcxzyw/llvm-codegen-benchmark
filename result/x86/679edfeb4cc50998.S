@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001d:
 	shlq	$36, %rsi
 	movb	$36, %al

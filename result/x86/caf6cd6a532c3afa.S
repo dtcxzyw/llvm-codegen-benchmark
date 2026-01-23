@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	orl	%esi, %edx
 	leal	(%rdx,%rdi), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	decb	%dl
 	shrxl	%edx, %esi, %eax

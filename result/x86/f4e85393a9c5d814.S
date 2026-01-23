@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	movzwl	%si, %eax
 	shll	$6, %eax

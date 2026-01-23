@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	andl	$15, %esi
 	movabsq	$9223372036854775807, %rax

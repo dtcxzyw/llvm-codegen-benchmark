@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	subb	%dil, %sil
 	xorl	%ecx, %ecx

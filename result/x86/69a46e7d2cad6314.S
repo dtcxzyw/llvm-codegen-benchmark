@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001842:
 	cmpl	%edx, %edi
 	sete	%cl

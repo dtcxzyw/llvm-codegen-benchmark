@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	tzcntl	%edx, %ecx
 	addq	%rdi, %rcx

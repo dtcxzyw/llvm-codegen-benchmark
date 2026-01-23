@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	shll	$30, %esi
 	movabsq	$-4611686020574871553, %rax

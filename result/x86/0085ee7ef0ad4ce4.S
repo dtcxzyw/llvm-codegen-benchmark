@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	addl	$-17, %esi
 	movzwl	%si, %eax

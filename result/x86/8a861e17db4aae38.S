@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000164:
 	andl	$-16, %edx
 	movslq	%edx, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	xorb	$1, %sil
 	cmpq	$15, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e1:
 	cmpl	$1, %edi
 	sete	%al

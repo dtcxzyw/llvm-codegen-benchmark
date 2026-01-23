@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000058a:
 	testb	%dl, %dl
 	sete	%al

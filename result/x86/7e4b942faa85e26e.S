@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001b:
 	andl	$1, %edx
 	movslq	%esi, %rax

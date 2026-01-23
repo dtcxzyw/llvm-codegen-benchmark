@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	addl	$-1000, %edi
 	movzwl	%di, %eax

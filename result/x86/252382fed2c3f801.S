@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	addl	$1032, %edx
 	addq	%rsi, %rdx

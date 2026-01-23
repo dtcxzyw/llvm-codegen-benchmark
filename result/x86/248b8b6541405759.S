@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000104:
 	notq	%rsi
 	leaq	-35(%rdx,%rsi), %rax

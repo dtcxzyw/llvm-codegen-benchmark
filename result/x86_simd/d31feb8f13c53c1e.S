@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000110:
 	vpsrld	$2, %ymm1, %ymm2
 	vpcmpltud	%ymm2, %ymm0, %k0

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vpaddd	%ymm1, %ymm2, %ymm0 {%k1} {z}

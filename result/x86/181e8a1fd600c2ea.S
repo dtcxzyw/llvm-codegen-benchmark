@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	decb	%dil
 	cmpb	$6, %dil

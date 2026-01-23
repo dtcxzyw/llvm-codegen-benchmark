@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vrndscalepd	$11, %zmm2, %zmm3
 	vcmpneqpd	%zmm3, %zmm2, %k1

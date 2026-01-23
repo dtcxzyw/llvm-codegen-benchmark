@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000210:
 	subl	$-12, %edi
 	setae	%cl

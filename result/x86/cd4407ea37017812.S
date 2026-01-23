@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	testq	%rdx, %rdx
 	movslq	%esi, %rax

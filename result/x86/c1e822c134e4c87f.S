@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000d2:
 	sarq	$32, %rdx
 	xorl	%eax, %eax

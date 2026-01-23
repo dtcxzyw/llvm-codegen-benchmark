@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	pushq	%rax
 	callq	__umodti3@PLT

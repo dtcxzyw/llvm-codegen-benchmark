@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	shrq	$23, %rdi
 	movl	$33554428, %eax

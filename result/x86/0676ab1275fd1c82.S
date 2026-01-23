@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004c:
 	addl	%edx, %esi
 	leal	(%rdi,%rsi,8), %eax

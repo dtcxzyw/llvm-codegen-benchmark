@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	addb	$-2, %dil
 	movl	$-1, %eax

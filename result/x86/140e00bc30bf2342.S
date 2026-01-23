@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	imull	%edi, %edi
 	leaq	(,%rdi,4), %rax

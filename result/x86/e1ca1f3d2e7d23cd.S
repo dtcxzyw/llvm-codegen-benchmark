@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000102:
 	incl	%esi
 	cmpl	$16, %esi

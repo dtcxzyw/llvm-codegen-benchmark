@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	andb	$15, %dl
 	movb	$9, %al

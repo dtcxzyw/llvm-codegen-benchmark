@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f4:
 	andb	$15, %dil
 	leal	48(%rdi), %eax

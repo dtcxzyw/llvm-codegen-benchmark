@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	andb	$63, %dil
 	movq	$-1, %rax

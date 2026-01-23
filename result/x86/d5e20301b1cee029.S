@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000010b:
 	cmpb	$-57, %sil
 	sete	%al

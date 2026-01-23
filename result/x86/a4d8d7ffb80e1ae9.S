@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000370a:
 	addl	%edx, %esi
 	testl	%esi, %esi

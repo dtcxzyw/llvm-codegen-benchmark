@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003f4:
 	addl	$3, %esi
 	movzwl	%si, %eax

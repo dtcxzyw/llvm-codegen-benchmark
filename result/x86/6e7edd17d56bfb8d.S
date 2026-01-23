@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000006610:
 	cmpq	$2, %rdx
 	setne	%al

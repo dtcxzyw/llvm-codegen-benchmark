@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000007f4:
 	cmpq	$3776, %rdi
 	leaq	640(%rsi,%rdx), %rcx

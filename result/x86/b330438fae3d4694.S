@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000038:
 	incb	%sil
 	bzhiq	%rsi, %rdi, %rax

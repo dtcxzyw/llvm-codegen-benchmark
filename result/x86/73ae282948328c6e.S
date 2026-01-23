@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000d4:
 	xorl	%eax, %eax
 	testl	$-2147483636, %edi

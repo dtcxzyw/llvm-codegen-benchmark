@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	decb	%dl
 	movl	$1, %eax

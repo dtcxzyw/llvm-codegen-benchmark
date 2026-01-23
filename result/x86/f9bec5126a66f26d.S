@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000012a:
 	decl	%edi
 	cmpl	%esi, %edi

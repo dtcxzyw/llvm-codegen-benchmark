@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	testw	%si, %si
 	setns	%cl

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	bzhil	%edx, %edi, %eax
 	movb	$24, %cl

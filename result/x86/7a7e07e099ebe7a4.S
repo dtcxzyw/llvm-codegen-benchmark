@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000201:
 	shrq	$32, %rdx
 	imull	%esi, %edx

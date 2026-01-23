@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	addl	%esi, %edx
 	shrxl	%edi, %edx, %eax

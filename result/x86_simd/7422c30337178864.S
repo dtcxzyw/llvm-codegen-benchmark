@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpabsq	%ymm0, %ymm0

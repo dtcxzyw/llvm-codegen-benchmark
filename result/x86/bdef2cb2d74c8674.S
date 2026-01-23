@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001c8:
 	movl	%edi, %eax
 	vcmpneqsd	%xmm1, %xmm0, %k0

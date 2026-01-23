@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003a1:
 	movq	%rdi, %rcx
 	shrq	$52, %rcx

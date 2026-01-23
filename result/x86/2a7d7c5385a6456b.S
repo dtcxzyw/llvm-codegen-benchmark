@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	andl	$16, %edx
 	orl	%edi, %edx

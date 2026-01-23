@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018a:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi

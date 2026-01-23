@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	shrb	$6, %sil
 	leal	(,%rdi,4), %eax

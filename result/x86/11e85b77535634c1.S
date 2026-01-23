@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	movswl	%si, %eax
 	sarl	$16, %edi

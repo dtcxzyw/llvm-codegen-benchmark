@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001d:
 	movzbl	%sil, %ecx
 	shll	$6, %ecx

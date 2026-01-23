@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	movswq	%si, %rax
 	leaq	4(%rdi,%rax,8), %rax

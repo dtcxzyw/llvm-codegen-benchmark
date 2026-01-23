@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	rolw	$8, %si
 	movzwl	%si, %eax

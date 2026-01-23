@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	shll	$9, %esi
 	leaq	57(%rdi,%rsi), %rax

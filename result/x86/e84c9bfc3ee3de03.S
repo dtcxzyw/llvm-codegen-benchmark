@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	andb	%dil, %sil
 	xorl	%eax, %eax

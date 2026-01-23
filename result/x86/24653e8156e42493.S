@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vcvttss2usi	%xmm0, %eax

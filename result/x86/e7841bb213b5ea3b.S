@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	incq	%rdx
 	testb	$1, %dil

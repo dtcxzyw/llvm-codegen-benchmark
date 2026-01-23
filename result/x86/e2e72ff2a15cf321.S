@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	bzhil	%edx, %edi, %eax
 	shlxl	%esi, %eax, %eax

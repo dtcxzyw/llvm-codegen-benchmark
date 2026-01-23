@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	cmpl	$10, %edi
 	cmovnel	%edx, %esi

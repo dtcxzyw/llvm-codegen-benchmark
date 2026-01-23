@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	addl	%esi, %edi
 	leaq	2(%rdi,%rdi), %rax

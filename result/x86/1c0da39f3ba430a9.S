@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	shrxl	%edx, %esi, %eax
 	movzbl	%al, %eax

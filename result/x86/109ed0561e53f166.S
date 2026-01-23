@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	cmpl	$4097, %edx
 	movl	$4096, %eax

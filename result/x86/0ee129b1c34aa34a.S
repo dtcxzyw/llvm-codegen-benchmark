@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	addq	$40000, %rdx
 	xorl	%eax, %eax

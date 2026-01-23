@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007e:
 	orl	%edx, %esi
 	leal	(,%rsi,8), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	shll	$3, %esi
 	movslq	%esi, %rax

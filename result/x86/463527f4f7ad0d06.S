@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	shlxl	%edx, %esi, %eax
 	leaq	1376(%rdi,%rax,2), %rax

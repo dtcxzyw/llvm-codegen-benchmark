@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003a6:
 	lzcntl	%esi, %eax
 	notb	%al

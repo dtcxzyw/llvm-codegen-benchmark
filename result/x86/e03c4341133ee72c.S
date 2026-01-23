@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e4:
 	leaq	16(,%rsi,8), %rcx
 	xorl	%eax, %eax

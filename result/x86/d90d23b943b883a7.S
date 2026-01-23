@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	orq	$8, %rdi
 	testl	%esi, %esi

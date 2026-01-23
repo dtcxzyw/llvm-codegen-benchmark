@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	tzcntq	%rsi, %rax
 	leaq	(%rax,%rdi,8), %rax

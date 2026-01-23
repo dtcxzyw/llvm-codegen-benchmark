@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	shlq	$9, %rdx
 	shlq	$17, %rsi

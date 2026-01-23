@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	shlxl	%esi, %edi, %ecx
 	cmpl	$1073741821, %ecx

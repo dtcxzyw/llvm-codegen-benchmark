@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	andb	$1, %sil
 	leal	2(%rsi), %eax

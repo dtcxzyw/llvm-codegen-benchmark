@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.byte	241
 	.byte	241

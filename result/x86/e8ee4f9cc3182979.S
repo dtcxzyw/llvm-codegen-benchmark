@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	movslq	%esi, %rax
 	leaq	7680(%rdi,%rax,8), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	addl	$10, %esi
 	addq	%rdi, %rsi

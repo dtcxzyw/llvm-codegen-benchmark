@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000050:
 	lzcntl	%esi, %eax
 	addb	$-8, %al

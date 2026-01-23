@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	lzcntq	%rsi, %rax
 	xorl	$63, %eax

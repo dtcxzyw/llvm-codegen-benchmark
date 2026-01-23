@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vcmpltsd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}

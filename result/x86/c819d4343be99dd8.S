@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003c:
 	shrdq	$56, %r9, %r8
 	leaq	(%rdi,%rdx), %rax

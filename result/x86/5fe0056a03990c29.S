@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	andb	$1, %dil
 	cmovel	%edx, %esi

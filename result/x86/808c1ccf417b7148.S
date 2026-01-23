@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	addl	%esi, %edi
 	movl	$24000000, %eax

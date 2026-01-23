@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000118:
 	testl	$-64, %edi
 	sete	%cl

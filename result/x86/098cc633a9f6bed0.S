@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	shrl	$16, %edi
 	leal	8(,%rdi,8), %eax

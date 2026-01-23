@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c4:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax,4), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	shlq	$53, %rdx
 	movb	$52, %al

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000066:
 	incl	%edx
 	xorl	%eax, %eax

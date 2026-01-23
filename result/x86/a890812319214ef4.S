@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	cmpl	$1, %edx
 	setne	%al

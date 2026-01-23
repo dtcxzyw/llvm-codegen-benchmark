@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	orq	%rdx, %rsi
 	movl	$4294967295, %eax

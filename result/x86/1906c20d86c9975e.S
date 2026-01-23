@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	andl	$2031616, %edx
 	orq	%rsi, %rdx

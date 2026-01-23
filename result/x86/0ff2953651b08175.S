@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	shlxl	%edx, %esi, %eax
 	leal	5(%rax,%rdi), %eax

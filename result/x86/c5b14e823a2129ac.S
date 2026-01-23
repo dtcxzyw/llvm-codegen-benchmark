@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000050:
 	testb	$-4, %sil
 	setne	%al

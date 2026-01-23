@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000021e:
 	cmpl	$1000000000, %esi
 	sbbl	$-1, %edi

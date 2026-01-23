@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c2c:
 	movl	%edi, %eax
 	leaq	(%rdx,%rax,4), %rax

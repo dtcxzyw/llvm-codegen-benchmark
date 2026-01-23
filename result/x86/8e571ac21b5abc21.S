@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	btq	$37, %rdx
 	setae	%al

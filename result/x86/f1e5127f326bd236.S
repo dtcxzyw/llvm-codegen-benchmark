@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000071:
 	leal	128(%rdi,%rsi,4), %eax
 	retq

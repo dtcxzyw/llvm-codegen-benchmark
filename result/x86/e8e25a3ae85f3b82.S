@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000318c:
 	cmpq	$259, %rdx
 	setne	%cl

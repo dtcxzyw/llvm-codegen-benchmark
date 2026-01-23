@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000005a4:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm2, %xmm0, %xmm2

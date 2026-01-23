@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	vroundsd	$11, %xmm0, %xmm0, %xmm1
 	vcmpeqsd	%xmm1, %xmm0, %k0

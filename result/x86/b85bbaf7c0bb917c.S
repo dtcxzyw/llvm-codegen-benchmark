@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a8:
 	andl	$33554431, %esi
 	sarl	$24, %edi

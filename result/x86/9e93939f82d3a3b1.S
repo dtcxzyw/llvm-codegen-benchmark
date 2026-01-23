@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	incl	%esi
 	imulq	$10619863, %rsi, %rax

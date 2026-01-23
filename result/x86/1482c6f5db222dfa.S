@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001b:
 	incl	%esi
 	movzwl	%si, %ecx

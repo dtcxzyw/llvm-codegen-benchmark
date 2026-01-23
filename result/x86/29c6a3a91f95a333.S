@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000908:
 	testl	%edx, %edx
 	sete	%al

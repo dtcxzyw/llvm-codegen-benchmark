@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007f:
 	andl	$15, %edx
 	leaq	(%rdi,%rsi,4), %rax

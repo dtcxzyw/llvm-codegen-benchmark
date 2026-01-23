@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	orq	$1, %rsi
 	testl	%edi, %edi

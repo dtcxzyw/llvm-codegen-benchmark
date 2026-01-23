@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.long	21
 .LCPI0_1:

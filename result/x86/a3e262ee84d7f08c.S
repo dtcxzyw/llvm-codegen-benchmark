@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000011:
 	rolw	$8, %di
 	shrl	$6, %edi

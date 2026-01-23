@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	leal	15(%rdi), %eax
 	cmpb	$1, %sil

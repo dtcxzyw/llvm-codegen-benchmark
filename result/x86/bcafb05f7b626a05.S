@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	xorl	$-2, %esi
 	incl	%esi

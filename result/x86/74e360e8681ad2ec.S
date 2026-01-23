@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	notl	%edx
 	testb	$7, %dl

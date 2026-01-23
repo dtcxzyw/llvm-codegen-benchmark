@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003e:
 	addq	%rdx, %rsi
 	leaq	24(%rdi,%rsi), %rax

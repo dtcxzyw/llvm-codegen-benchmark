@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vaddpd	%zmm3, %zmm1, %zmm3
 	vaddpd	%zmm2, %zmm0, %zmm2

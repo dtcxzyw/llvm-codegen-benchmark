@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	leaq	(%rsi,%rsi,4), %rax
 	shlq	$6, %rax

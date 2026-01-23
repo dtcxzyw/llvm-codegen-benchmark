@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	orl	%esi, %edi
 	testb	$1, %dil

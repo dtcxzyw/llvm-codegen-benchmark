@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	orl	%edi, %esi
 	cmpl	$1114112, %edi

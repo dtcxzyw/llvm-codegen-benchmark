@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001aa:
 	shrq	$52, %rsi
 	andl	$2047, %esi

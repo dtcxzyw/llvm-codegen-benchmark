@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	sarl	$3, %edx
 	negl	%edx

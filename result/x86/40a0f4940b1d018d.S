@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	orl	$-2147483648, %edi
 	testl	%esi, %esi

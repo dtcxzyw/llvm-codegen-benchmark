@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000aa:
 	movslq	%edx, %rax
 	imulq	$-2147418109, %rax, %rcx

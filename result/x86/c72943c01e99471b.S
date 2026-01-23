@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorq	$221, %rdx
 	rorxq	$51, %rdx, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vsubps	%ymm2, %ymm1, %ymm1
 	vroundps	$11, %ymm1, %ymm1

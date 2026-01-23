@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	orl	$8388608, %esi
 	movb	$126, %al

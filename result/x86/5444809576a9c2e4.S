@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	shlq	$52, %rsi
 	movb	$52, %al

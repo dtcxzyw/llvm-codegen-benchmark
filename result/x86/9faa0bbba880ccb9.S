@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000035:
 	subq	%rdx, %rsi
 	imulq	$666643, %rsi, %rcx

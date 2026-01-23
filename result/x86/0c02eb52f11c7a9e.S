@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	imulq	%rsi, %rdi
 	movl	$4294901760, %eax

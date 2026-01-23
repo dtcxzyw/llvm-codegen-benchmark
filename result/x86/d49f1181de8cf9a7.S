@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000054:
 	leaq	32768(%rdx), %rcx
 	subq	$-2147483648, %rsi

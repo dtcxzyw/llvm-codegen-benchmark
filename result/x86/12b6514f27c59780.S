@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	addl	$-2, %edi
 	lzcntl	%edi, %ecx

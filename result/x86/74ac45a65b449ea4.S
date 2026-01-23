@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000005e:
 	andl	$7, %esi
 	subq	%rsi, %rdi

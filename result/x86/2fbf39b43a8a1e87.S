@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000d98:
 	orl	%edx, %esi
 	setne	%cl

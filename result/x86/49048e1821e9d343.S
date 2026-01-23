@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	movb	$52, %al
 	bzhiq	%rax, %rdx, %rax

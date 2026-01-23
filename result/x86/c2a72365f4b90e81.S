@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	movswq	%si, %rax
 	leaq	240(%rax,%rdi), %rax

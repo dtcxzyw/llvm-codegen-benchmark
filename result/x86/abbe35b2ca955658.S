@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000008c4:
 	incl	%edx
 	cmpl	%edi, %edx

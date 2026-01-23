@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000038c:
 	imulq	%rdi, %rdi
 	orb	$32, %sil

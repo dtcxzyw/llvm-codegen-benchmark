@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	andb	$1, %sil
 	orb	$2, %sil

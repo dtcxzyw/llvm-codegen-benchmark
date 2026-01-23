@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	cmpb	$5, %dl
 	setne	%al

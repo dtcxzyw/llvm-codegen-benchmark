@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000388:
 	andb	$63, %dl
 	movzbl	%dl, %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000604c:
 	xorl	%esi, %edx
 	testl	%esi, %esi

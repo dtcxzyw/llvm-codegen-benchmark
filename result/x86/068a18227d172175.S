@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	shrb	$3, %sil
 	cmpb	%dil, %sil

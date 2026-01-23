@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000102:
 	shrq	$32, %rsi
 	cmpl	$1114112, %esi

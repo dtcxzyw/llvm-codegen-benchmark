@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vcvttps2dq	%ymm1, %ymm1
 	movl	$286331153, %eax

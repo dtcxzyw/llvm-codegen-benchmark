@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax

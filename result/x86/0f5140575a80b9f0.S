@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	decl	%edi
 	sarl	$2, %edi

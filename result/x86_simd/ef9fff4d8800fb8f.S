@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vcvtps2pd	%ymm4, %zmm5
 	vextractf64x4	$1, %zmm4, %ymm4

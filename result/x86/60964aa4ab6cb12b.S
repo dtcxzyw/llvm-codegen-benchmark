@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	orq	%r8, %rdx
 	cmpq	%rdx, %rdi

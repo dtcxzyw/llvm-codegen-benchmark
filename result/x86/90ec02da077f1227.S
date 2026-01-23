@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000060:
 	cmpl	$7, %esi
 	leal	16(,%rdi,8), %ecx

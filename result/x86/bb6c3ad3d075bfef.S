@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000014f:
 	shlb	$4, %dil
 	xorl	%ecx, %ecx

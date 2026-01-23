@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000318:
 	shrl	$11, %esi
 	andl	$1, %esi

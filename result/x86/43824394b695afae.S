@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	imull	%esi, %edx
 	movslq	%edx, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000070:
 	imulq	%rdx, %rdi
 	negb	%r8b

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ff:
 	lzcntq	%rdx, %rax
 	subl	%eax, %edi

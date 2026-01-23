@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000081:
 	shll	$18, %esi
 	sarl	$31, %esi

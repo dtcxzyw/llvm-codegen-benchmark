@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpslld	$3, %ymm0, %ymm1

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	andl	$31, %esi
 	imulq	%rdi, %rsi

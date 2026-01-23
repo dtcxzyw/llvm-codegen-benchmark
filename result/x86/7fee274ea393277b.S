@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	decq	%rsi
 	shrq	$3, %rsi

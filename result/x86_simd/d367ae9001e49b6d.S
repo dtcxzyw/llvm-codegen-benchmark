@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000093:
 	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vextracti128	$1, %ymm0, %xmm1

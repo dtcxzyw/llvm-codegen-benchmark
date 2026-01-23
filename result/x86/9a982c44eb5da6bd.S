@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	vaddss	%xmm2, %xmm2, %xmm2
 	vxorps	%xmm3, %xmm3, %xmm3

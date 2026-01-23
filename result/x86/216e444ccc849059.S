@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	tzcntq	%rsi, %rax
 	andl	$2147483647, %edi

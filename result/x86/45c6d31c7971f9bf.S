@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e4:
 	shll	$9, %edx
 	testb	$1, %sil

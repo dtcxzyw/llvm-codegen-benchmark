@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	testb	$31, %dil
 	setne	%cl

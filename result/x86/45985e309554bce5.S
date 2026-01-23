@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003c2:
 	incq	%rsi
 	xorl	%eax, %eax

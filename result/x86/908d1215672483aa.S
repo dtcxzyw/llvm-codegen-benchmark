@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	andl	$63, %edx
 	subq	%rdx, %rsi

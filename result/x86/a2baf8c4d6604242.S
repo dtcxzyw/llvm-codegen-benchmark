@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorq	%rsi, %rdi
 	movabsq	$-4658895280553007687, %rcx

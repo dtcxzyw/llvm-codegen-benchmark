@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	decq	%rdi
 	lzcntq	%rdi, %rcx

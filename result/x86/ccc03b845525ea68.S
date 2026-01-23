@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	andl	$2052, %esi
 	cmpw	$4, %si

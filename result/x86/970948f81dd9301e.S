@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	shlb	$4, %dil
 	leal	16(%rdi), %eax

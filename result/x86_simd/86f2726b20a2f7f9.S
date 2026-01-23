@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	vroundpd	$11, %ymm0, %ymm1
 	vcmpeqpd	%ymm1, %ymm0, %k0

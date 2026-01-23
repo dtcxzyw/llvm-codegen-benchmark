@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000fa:
 	shll	$10, %edi
 	leal	65536(%rdi), %eax

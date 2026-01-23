@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	addl	$437918234, %edi
 	andnl	%edi, %esi, %eax

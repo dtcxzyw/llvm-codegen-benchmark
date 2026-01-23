@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003f:
 	andq	$-8, %rdx
 	addq	%rsi, %rdx

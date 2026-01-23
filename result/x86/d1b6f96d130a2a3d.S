@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	decl	%edx
 	testb	$1, %dil

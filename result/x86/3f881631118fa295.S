@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000006e1:
 	movb	$1, %al
 	retq

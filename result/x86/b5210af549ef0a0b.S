@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	decl	%esi
 	leaq	(%rsi,%rsi,4), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	imull	$1000, %esi, %ecx
 	testb	$1, %dil

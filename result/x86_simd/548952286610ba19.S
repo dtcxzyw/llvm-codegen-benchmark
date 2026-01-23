@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	vcvtdq2pd	%ymm2, %zmm2
 	vmulpd	%zmm2, %zmm1, %zmm1

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	decq	%rdi
 	andb	$1, %sil

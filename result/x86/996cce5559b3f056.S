@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000043:
 	movq	%rdi, %rcx
 	orq	$512, %rcx

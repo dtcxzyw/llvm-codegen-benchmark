@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	leal	-127(%rdx), %eax
 	imulq	%rsi, %rax

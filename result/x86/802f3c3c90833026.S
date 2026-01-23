@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	tzcntl	%esi, %eax
 	cmpl	%eax, %edi

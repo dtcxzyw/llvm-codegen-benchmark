@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007b:
 	vpsraq	$2, %ymm1, %ymm1
 	vpsraq	$4, %ymm0, %ymm0

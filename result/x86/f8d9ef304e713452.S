@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006c:
 	andl	$-16, %edx
 	imulq	%rsi, %rdx

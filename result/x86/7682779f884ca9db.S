@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	leal	1(%rsi,%rdx), %ecx
 	movl	$1073741824, %eax

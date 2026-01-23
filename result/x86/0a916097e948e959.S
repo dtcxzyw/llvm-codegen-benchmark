@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000102:
 	cmpl	$-10, %edx
 	setb	%cl

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000011:
 	notb	%dl
 	movzbl	%dl, %ecx

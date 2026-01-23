@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	vucomisd	%xmm1, %xmm0
 	setbe	%al

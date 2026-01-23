@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	subl	%esi, %edi
 	addb	$-31, %dil

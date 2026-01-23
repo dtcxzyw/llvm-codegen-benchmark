@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000030:
 	andb	$7, %dl
 	shrxl	%edx, %esi, %ecx

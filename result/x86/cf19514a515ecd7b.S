@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorq	%rdx, %rsi
 	andl	$-272236544, %edi

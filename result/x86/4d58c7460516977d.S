@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	notl	%edx
 	andl	$536870911, %edx

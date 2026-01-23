@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	vorpd	%ymm2, %ymm1, %ymm1
 	vcmpltpd	%ymm0, %ymm1, %k0

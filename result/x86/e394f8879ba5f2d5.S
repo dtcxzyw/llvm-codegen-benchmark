@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	decq	%rsi
 	cmpq	%rdx, %rsi

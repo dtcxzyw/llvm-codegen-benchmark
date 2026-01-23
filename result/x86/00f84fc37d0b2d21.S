@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000063:
 	shrq	$63, %rdx
 	leal	(%rdx,%rsi), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000388:
 	movl	$32, %eax
 	subq	%rdx, %rax

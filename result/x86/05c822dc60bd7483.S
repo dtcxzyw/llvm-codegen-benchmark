@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000099:
 	negl	%edx
 	testl	%esi, %esi

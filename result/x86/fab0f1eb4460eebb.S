@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003d3:
 	leal	87(%rdi), %eax
 	movl	%edi, %ecx

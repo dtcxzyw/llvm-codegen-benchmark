@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	andq	$-8, %rsi
 	movl	%edi, %eax

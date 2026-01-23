@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	notl	%edx
 	addl	%esi, %edx

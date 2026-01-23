@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003b:
 	decl	%edx
 	shlq	$5, %rdx

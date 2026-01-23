@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.quad	12884901888
 .LCPI0_1:

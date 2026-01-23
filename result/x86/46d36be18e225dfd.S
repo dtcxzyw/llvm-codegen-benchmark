@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	movq	%rdx, %rax
 	movabsq	$485440633518672411, %rcx

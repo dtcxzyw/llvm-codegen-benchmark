@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	leaq	22(%rsi,%rdi), %rdx
 	movabsq	$-2912643801112034465, %rax

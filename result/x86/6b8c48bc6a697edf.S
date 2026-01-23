@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c0:
 	shll	$6, %esi
 	leal	8192(%rdi,%rsi), %eax

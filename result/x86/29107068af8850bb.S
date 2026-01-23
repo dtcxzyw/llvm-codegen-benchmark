@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000564:
 	cmpq	$1, %rdx
 	adcq	$0, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000020c:
 	addq	%rdx, %rdi
 	setne	%al

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	leal	(,%rdx,4), %eax
 	orb	%dil, %al

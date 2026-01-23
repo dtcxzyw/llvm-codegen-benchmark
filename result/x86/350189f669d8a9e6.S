@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000302:
 	andb	$4, %dl
 	shrb	$2, %dl

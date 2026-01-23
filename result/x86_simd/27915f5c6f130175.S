@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rcx

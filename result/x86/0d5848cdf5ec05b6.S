@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	bswapl	%edi
 	leal	1518500249(%rdi), %eax

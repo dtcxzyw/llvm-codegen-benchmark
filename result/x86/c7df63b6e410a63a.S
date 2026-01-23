@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vcvttsd2si	%xmm0, %eax
 	sarl	$31, %eax

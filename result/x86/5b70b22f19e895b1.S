@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000016:
 	shlb	$4, %sil
 	addb	%dil, %sil

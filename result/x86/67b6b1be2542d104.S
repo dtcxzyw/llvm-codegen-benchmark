@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	popcntq	%rsi, %rax
 	addq	%rdi, %rax

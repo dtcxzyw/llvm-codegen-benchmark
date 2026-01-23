@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	movzwl	%di, %eax
 	leal	1(%rax,%rax), %eax

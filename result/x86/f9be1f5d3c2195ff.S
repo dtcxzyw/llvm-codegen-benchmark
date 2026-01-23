@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	leaq	2(%rsi), %rax
 	cmpb	$45, %dl

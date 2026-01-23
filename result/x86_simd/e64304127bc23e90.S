@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	vpminsq	%ymm1, %ymm0, %ymm0
 	retq

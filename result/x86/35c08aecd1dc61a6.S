@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	tzcntl	%edi, %eax
 	shrxl	%eax, %edi, %eax

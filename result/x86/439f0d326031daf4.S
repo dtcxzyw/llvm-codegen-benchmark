@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000d:
 	addq	%rdi, %rdi
 	movl	$126, %eax

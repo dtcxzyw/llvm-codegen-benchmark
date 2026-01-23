@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007f:
 	movzwl	%di, %eax
 	movzwl	%si, %ecx

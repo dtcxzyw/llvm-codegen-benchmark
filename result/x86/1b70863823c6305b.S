@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	xorl	$1, %edi
 	movb	$3, %al

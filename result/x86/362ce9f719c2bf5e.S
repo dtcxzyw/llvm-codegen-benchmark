@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004c4:
 	shlq	$20, %rdx
 	cmpq	%rdi, %rdx

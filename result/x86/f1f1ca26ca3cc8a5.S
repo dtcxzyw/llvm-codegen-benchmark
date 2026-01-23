@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vmovq	%rdi, %xmm0
 	vucomisd	%xmm0, %xmm0

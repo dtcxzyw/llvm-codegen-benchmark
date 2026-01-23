@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpternlogq	$120, %ymm1, %ymm0, %ymm3

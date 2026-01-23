@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000aa:
 	andl	$7, %edx
 	xorl	%eax, %eax

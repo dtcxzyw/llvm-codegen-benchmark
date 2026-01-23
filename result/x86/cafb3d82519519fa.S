@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	cmpw	$-1, %di
 	sete	%al

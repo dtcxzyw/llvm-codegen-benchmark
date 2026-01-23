@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000d8:
 	shrxl	%esi, %edi, %eax
 	andl	$1, %eax

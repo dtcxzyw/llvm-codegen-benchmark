@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e1:
 	negl	%esi
 	andl	$7, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovd2m	%ymm0, %k0

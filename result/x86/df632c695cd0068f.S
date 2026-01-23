@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	testb	$1, %dil
 	cmovel	%edi, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	andl	%edx, %edi
 	testb	%sil, %sil

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	vpmulld	%xmm0, %xmm0, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0

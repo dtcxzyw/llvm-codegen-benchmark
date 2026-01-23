@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	andq	$-64, %rdx
 	leaq	(%rdx,%rdi,4), %rax

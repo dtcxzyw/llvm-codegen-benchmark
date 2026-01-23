@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000040:
 	cmpq	$2, %rsi
 	setae	%al

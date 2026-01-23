@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	andl	$2097151, %esi
 	imulq	$-997805, %rdi, %rax

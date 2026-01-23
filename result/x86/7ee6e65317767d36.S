@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	vcvttss2si	%xmm0, %eax
 	cmpl	$1, %eax

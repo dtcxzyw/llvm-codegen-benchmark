@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	imulq	%r8, %rcx
 	mulxq	%r8, %rax, %rdx

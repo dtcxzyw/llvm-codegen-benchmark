@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	incb	%sil
 	andb	$31, %sil

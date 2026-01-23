@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	shrq	$4, %rdi
 	leal	7(%rdi), %eax

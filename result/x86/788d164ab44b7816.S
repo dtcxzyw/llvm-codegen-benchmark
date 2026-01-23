@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	decl	%esi
 	shrl	$6, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001042:
 	movl	$3083263, %eax
 	btq	%rsi, %rax

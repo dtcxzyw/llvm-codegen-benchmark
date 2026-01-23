@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000009e:
 	shll	$3, %edx
 	addb	$-8, %dl

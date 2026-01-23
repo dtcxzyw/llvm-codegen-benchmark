@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vpsrad	$31, %ymm1, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1

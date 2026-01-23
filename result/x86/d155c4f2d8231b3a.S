@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	movslq	%edi, %rax
 	addq	$63, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	vpcmpleuq	%ymm1, %ymm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0

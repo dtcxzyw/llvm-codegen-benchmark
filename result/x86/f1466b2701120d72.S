@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	addl	$32770, %edx
 	shrl	$16, %edx

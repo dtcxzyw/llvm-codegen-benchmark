@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000050:
 	decq	%rdi
 	cmpl	$-1, %edi

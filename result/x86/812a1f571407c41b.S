@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	andb	$-33, %dil
 	leal	-65(%rdi), %eax

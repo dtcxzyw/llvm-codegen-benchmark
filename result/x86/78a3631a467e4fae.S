@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vmovd	%edi, %xmm2
 	vsubss	%xmm2, %xmm1, %xmm1

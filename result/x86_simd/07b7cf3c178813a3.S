@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000018cc:
 	vpor	%ymm1, %ymm0, %ymm2
 	vpmovd2m	%ymm2, %k0

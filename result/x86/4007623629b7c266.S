@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	incl	%esi
 	leaq	-2(%rdi,%rsi), %rax

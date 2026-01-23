@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000080:
 	leaq	95(%rdx,%rsi), %rax
 	negq	%rsi

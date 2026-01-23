@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030c:
 	addq	$104, %rdx
 	testq	%rdi, %rdi

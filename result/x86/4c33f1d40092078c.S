@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000474:
 	subq	%rdx, %rsi
 	movb	$60, %al

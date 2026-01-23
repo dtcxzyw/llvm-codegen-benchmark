@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	decl	%edi
 	cmpl	$45, %edi

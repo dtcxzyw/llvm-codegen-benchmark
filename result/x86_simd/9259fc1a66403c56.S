@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000025:
 	vpslld	$3, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3

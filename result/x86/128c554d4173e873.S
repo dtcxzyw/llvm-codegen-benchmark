@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c21:
 	shlq	$53, %rdx
 	cmovneq	%rsi, %rdi

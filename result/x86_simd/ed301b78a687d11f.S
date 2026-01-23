@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	vpsrlq	$1, %ymm1, %ymm3
 	vpmovd2m	%xmm0, %k1

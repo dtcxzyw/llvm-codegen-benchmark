@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	orl	$768, %esi
 	leaq	(%rsi,%rdi), %rax

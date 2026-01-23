@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000005b:
 	andl	$16777215, %esi
 	subq	%rsi, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000013:
 	leal	2(%rdi), %ecx
 	movl	$2863311531, %eax

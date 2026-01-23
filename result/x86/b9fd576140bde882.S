@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	orl	%edx, %esi
 	cmpb	$95, %dil

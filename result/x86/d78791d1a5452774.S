@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	orq	%rdx, %rsi
 	cmpq	$16777216, %rsi

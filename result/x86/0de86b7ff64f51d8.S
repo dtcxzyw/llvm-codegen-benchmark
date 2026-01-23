@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000078:
 	xorl	$31, %esi
 	leal	73(%rsi,%rsi,8), %eax

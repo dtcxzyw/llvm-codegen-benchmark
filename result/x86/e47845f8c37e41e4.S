@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	orl	$4095, %edx
 	cmpl	%esi, %edx

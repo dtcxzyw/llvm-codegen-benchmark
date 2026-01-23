@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	andl	$2139062142, %esi
 	leal	437918234(%rsi), %eax

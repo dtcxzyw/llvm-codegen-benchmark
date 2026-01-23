@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000ca4:
 	vcmpless	%xmm2, %xmm1, %k1
 	vmovaps	%xmm1, %xmm3

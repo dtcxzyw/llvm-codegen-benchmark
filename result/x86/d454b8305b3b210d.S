@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000db:
 	movq	%rcx, %rax
 	addq	%r8, %rdx

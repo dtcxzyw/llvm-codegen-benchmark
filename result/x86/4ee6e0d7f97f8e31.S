@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	andb	$-4, %dl
 	shlxq	%rdx, %rsi, %rcx

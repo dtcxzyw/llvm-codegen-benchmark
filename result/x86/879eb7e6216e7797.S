@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	testb	$1, %sil
 	leal	(%rdi,%rdi,4), %eax

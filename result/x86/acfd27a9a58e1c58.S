@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	movslq	%edx, %rax
 	subq	%rsi, %rdi

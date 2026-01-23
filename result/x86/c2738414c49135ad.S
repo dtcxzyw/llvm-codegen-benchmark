@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001a:
 	vcvtsi2ss	%esi, %xmm15, %xmm1
 	vucomiss	%xmm0, %xmm1

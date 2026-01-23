@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000032:
 	testl	%esi, %esi
 	cmovnsl	%edi, %edx

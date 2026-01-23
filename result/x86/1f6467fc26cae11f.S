@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	lzcntl	%esi, %eax
 	movl	$31, %ecx

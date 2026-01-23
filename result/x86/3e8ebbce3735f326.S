@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000224:
 	cmpb	$26, %dl
 	cmovael	%esi, %edi

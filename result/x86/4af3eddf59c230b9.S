@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	leaq	30(%rdi), %rax
 	orq	$15, %rdi

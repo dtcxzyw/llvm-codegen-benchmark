@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001c:
 	addl	%edx, %esi
 	orq	$1, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000061:
 	lzcntq	%rsi, %rax
 	cmpl	%eax, %edi

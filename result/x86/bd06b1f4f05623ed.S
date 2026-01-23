@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000ca1:
 	addl	$614244, %edx
 	shrl	$20, %edx

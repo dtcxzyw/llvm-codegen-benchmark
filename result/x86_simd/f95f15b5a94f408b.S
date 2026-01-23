@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vminps	%zmm1, %zmm0, %zmm0
 	retq

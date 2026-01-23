@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000048:
 	sarl	$6, %edx
 	movslq	%edx, %rax

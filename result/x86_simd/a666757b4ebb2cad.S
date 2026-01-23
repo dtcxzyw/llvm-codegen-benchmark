@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vmaxpd	%zmm0, %zmm2, %zmm4
 	vcmpunordpd	%zmm0, %zmm0, %k1

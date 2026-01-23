@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	addq	%rdx, %rsi
 	andl	$511, %edi

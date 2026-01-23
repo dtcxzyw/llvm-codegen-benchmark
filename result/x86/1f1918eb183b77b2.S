@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000108:
 	addb	$-30, %dl
 	testb	$-3, %dl

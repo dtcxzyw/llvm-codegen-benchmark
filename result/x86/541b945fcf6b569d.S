@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000040:
 	imull	%edx, %esi
 	leaq	8(%rdi,%rsi), %rax

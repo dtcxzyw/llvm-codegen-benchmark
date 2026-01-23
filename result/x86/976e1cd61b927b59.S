@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	subl	%edx, %esi
 	addb	$10, %sil

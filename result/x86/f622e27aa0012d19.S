@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	movzbl	%sil, %ecx
 	cmpb	$127, %dil

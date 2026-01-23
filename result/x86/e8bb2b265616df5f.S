@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000b8:
 	andl	$1023, %esi
 	movq	%rsi, %rax

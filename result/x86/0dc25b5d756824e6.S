@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	leal	(%rsi,%rsi), %ecx
 	testb	$1, %dil

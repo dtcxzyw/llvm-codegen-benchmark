@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	movl	%edx, %eax
 	leaq	(%rax,%rax,4), %rax

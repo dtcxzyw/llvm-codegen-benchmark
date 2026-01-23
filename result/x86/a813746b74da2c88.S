@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000019:
 	movzbl	%sil, %eax
 	andl	$1023, %edi

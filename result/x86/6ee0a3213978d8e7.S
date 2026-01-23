@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	vmulss	%xmm0, %xmm1, %xmm1
 	testl	%edi, %edi

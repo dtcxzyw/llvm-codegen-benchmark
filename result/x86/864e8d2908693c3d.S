@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000009:
 	orl	%edx, %esi
 	imull	$380141568, %esi, %eax

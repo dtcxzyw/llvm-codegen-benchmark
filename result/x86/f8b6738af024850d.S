@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	shll	$16, %esi
 	andq	$-34013185, %rdi

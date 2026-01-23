@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f1:
 	vpcmpnleud	%xmm2, %xmm1, %k1
 	vpsubd	%xmm2, %xmm1, %xmm0 {%k1}

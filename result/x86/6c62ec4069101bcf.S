@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a1:
 	sarq	$32, %rdi
 	testl	%esi, %esi

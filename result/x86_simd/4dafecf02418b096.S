@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a8:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsraq	$4, %ymm0, %ymm0

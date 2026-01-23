@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	shlq	$2, %rdx
 	leaq	(%rdx,%rdx,2), %rax

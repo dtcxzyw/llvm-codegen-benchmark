@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	%xmm0, %xmm1, %xmm0

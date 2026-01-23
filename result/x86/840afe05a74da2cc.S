@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shrb	$6, %dil
 	orb	$4, %dil

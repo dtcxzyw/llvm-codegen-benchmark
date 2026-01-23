@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000014:
 	orl	%edx, %esi
 	movabsq	$549755813889, %rax

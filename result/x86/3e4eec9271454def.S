@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	imulq	%rdi, %rdi
 	vcvtusi2sd	%rdi, %xmm15, %xmm0

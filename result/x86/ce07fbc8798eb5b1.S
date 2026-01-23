@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007f:
 	tzcntl	%esi, %eax
 	leaq	32(%rdi,%rax,4), %rax

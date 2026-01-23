@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	incl	%edx
 	cmpb	$10, %sil

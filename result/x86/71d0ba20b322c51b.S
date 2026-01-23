@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030a:
 	negq	%rdx
 	leaq	(%rdx,%rdx,4), %rax

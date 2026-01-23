@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	andl	$1, %edx
 	decl	%edx

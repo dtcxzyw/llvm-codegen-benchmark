@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	andb	$3, %sil
 	andb	$-4, %dil

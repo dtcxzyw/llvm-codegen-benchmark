@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	shlq	$32, %rdx
 	andl	$-8, %esi

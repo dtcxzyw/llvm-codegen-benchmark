@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	shll	$3, %esi
 	addb	$-32, %sil

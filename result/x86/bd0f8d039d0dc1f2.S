@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	addb	$7, %dl
 	movq	$-1, %rax

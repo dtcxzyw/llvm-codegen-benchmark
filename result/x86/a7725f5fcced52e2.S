@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	decq	%rdx
 	andq	$-96, %rdx

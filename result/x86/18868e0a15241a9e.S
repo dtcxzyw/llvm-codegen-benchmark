@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000081:
 	addq	%rsi, %rdi
 	btq	$32, %rdi

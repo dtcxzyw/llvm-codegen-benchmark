@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	negq	%rsi
 	andq	%rsi, %rdx

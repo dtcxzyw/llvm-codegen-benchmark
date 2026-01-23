@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	notb	%dil
 	cmpl	$4097, %edx

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000003b4:
 	movzbl	%sil, %eax
 	shll	$8, %edi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	xorl	%eax, %eax
 	negl	%edx

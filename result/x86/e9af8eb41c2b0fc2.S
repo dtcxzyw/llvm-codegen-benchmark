@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	bswapq	%rdx
 	leaq	(%rdi,%rsi), %rax

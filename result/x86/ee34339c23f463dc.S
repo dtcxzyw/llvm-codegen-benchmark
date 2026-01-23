@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	andb	$31, %sil
 	bzhil	%esi, %edi, %eax

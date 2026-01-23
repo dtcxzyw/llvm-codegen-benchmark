@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	addb	$27, %dil
 	movl	$1, %eax

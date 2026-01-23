@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	xorl	%ecx, %ecx
 	cmpb	$125, %dl

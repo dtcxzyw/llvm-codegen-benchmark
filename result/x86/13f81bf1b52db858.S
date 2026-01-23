@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	testl	$7168, %edx
 	cmovneq	%rsi, %rdi

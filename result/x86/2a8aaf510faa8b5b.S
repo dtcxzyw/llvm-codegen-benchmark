@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000038:
 	shlb	$3, %dil
 	movl	$-2112218243, %eax

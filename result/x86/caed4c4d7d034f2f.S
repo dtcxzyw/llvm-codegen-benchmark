@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000034:
 	orb	$48, %dl
 	cmpl	$10, %esi

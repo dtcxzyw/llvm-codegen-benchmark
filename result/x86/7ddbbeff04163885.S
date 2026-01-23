@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	bswapl	%esi
 	leal	32(%rdi,%rsi), %eax

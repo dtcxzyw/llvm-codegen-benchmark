@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	xorl	$32768, %esi
 	cmpw	%di, %si

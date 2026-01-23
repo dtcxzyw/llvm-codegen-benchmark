@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	orl	%esi, %edi
 	jne	.LBB0_1

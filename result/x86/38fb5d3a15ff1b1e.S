@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	shrq	$7, %rdx
 	testb	$1, %dil

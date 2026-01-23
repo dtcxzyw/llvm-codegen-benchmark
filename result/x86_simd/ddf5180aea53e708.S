@@ -1,3 +1,4 @@
+	.att_syntax
 .LCPI0_0:
 	.long	0xb9d3c55c
 .LCPI0_1:

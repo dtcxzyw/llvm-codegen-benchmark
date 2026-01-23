@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000601:
 	shlq	$6, %rsi
 	addq	$-65, %rdi

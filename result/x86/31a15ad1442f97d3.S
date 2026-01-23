@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000018c:
 	shrb	$6, %dl
 	cmpl	$1, %esi

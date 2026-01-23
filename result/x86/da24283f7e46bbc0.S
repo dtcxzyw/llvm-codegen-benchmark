@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008a:
 	shrq	$6, %rsi
 	subl	%edi, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006c:
 	vpsllq	$10, %ymm1, %ymm1
 	vptestmq	%ymm0, %ymm1, %k0

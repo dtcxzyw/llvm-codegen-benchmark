@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	cmpq	$1440001, %rdi
 	setb	%al

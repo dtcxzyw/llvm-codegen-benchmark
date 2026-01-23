@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000168:
 	bswapl	%esi
 	addq	$4, %rsi

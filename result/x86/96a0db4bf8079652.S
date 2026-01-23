@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	leal	(,%rdi,4), %ecx
 	testl	%edi, %edi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000001:
 	bswapl	%edi
 	vmovd	%edi, %xmm0

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	xorb	$8, %sil
 	xorl	%eax, %eax

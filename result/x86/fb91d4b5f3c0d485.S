@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	leal	87(%rsi), %eax
 	orb	$48, %sil

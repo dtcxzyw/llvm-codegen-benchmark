@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000194:
 	addl	$2, %edx
 	cmpq	%rdx, %rdi

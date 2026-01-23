@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000168a:
 	blsrl	%edi, %eax
 	sete	%cl

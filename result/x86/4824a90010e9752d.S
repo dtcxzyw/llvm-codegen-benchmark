@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	lzcntl	%edi, %eax
 	addl	$-31, %eax

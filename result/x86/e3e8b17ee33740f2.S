@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000029f:
 	notl	%edx
 	shrl	$31, %edx

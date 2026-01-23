@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000001881:
 	xorl	%ecx, %ecx
 	cmpq	%rdx, %rsi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c2a:
 	cmpb	$1, %sil
 	sbbl	$-1, %edi

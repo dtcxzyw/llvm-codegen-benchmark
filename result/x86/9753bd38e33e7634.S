@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	incl	%edi
 	movslq	%edi, %rax

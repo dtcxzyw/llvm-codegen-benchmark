@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003a:
 	decl	%edi
 	lzcntl	%edi, %eax

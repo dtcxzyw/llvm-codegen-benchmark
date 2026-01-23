@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	leal	21(%rdx), %ecx
 	addq	%rdi, %rcx

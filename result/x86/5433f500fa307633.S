@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	movq	$-300, %rdx
 	subq	%rdi, %rdx

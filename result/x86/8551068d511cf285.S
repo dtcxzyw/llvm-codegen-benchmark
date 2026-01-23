@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000015:
 	bswapl	%esi
 	shlq	$32, %rdi

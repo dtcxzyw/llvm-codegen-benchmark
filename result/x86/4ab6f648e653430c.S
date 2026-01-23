@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	testb	$80, %dl
 	setne	%al

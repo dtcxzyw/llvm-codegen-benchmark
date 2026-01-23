@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000007c:
 	imull	$122, %edx, %eax
 	leaq	(%rsi,%rax,4), %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	vpsrlw	$15, %xmm1, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1

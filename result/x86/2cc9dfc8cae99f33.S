@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	xorl	%edx, %esi
 	movabsq	$-4737503975807385600, %rcx

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	shlq	$3, %rsi
 	leaq	(%rsi,%rsi,2), %rax

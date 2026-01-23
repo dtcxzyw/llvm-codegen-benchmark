@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001da:
 	incl	%edx
 	subq	%rdx, %rsi

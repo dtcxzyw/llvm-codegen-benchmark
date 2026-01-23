@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	xorl	%eax, %eax
 	testl	$14680064, %edi

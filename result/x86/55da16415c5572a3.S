@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	lzcntq	%rsi, %rax
 	notb	%al

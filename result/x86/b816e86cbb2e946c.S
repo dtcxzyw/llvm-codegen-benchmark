@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	addb	$-2, %sil
 	movsbq	%sil, %rax

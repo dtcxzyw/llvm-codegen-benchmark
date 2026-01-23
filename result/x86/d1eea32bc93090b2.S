@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000318:
 	andq	$-4096, %rdx
 	xorq	$4096, %rdx

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e1:
 	imull	%esi, %esi
 	sarq	$3, %rdi

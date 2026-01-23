@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000128:
 	incl	%esi
 	sarq	$2, %rdi

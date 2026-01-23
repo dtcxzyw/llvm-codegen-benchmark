@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000012a:
 	vpslld	$31, %xmm0, %xmm0
 	vpsrlq	$32, %ymm2, %ymm2

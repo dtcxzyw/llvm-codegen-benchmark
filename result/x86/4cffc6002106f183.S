@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000df:
 	addl	$7, %esi
 	shrl	$3, %esi

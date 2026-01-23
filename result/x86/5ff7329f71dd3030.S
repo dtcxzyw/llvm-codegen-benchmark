@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	vucomiss	%xmm1, %xmm0
 	movl	$2, %eax

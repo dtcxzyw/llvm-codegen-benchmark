@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000005c1:
 	decq	%rsi
 	movb	$63, %al

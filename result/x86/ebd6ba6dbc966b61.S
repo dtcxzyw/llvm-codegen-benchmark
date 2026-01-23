@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	shrq	%rdx
 	andq	$-2048, %rdx

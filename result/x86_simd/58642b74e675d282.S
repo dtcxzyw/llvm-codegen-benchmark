@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	vpcmpltub	%xmm1, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0

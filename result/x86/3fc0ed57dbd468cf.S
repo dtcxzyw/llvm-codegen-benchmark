@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e1:
 	shrq	$40, %rdx
 	movzbl	%dl, %eax

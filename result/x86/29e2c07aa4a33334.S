@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	xorb	$-32, %sil
 	addb	$33, %sil

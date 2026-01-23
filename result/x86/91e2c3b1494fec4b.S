@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	imull	$90, %edi, %eax
 	vcvtsi2sd	%eax, %xmm15, %xmm0

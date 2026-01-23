@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000008a9:
 	shrq	$32, %rdx
 	cmpl	%edx, %edi

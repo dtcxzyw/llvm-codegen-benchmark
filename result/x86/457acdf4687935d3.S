@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	andb	$63, %dl
 	negb	%dl

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000cca:
 	subl	$-2, %edi
 	setge	%cl

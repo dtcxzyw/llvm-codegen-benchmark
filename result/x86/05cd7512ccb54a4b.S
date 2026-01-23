@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	notb	%dil
 	movl	$4, %eax

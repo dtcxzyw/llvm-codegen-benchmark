@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	vpslld	$4, %ymm0, %ymm0
 	retq

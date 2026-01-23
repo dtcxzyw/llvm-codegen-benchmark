@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	xorl	%r8d, %r8d
 	testl	$2139095040, %ecx

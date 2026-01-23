@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ba:
 	imull	$32639, %esi, %eax
 	movzwl	%di, %ecx

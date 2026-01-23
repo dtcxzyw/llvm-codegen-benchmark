@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	testb	$1, %dl
 	movl	$65535, %eax

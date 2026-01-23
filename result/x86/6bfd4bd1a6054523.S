@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001f8:
 	andb	$1, %dl
 	andb	$1, %sil

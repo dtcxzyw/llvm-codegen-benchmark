@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000114:
 	shrxl	%edx, %esi, %eax
 	cmpl	$16, %eax

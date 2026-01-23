@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	imull	%edx, %esi
 	leal	3(%rdi,%rsi), %eax

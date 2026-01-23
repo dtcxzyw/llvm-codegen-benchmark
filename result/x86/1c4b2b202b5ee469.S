@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ba:
 	lzcntl	%esi, %eax
 	shll	$23, %eax

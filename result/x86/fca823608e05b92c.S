@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000008:
 	movabsq	$189151184349560832, %rcx
 	imulq	%rsi, %rcx

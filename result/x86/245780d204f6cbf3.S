@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000caa:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm2, %xmm3, %k0

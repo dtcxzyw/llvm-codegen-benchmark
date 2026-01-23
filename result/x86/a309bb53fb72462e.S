@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002b:
 	movl	%esi, %eax
 	sarq	$4, %rdi

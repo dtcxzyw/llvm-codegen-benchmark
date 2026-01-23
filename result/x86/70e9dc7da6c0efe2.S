@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	orb	$48, %dl
 	movzbl	%dl, %eax

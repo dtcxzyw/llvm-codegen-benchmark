@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	testb	$15, %dil
 	sete	%cl

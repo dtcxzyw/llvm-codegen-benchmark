@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001e0:
 	leaq	(%rdi,%rdx,8), %rax
 	movl	%esi, %ecx

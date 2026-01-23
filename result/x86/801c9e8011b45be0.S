@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f4:
 	imull	%edx, %esi
 	shll	$2, %esi

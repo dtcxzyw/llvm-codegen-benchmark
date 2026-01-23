@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000408:
 	cmpl	$30288, %edx
 	setb	%cl

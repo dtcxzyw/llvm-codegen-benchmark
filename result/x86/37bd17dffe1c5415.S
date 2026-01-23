@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	lzcntl	%edi, %ecx
 	shrl	$2, %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	xorl	%ecx, %ecx
 	movl	$-2147483648, %eax

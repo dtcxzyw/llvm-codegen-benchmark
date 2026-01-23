@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000c:
 	testl	%edi, %edi
 	movl	$1, %eax

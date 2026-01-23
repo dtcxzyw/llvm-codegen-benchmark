@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0

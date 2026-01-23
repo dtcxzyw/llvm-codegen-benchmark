@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	notb	%sil
 	movzbl	%sil, %eax

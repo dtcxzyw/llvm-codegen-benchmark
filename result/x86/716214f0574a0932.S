@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	cmpb	$-127, %dil
 	setae	%al

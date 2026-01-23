@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000018:
 	movzbl	%dil, %eax
 	addl	$267, %eax

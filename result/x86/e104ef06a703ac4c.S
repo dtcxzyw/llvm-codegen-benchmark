@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	addb	$-2, %dil
 	cmpb	$9, %dil

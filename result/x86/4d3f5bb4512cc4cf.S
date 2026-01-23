@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c21:
 	xorq	$1, %rsi
 	xorq	$1, %rdi

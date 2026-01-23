@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000074:
 	leal	1(%rdi), %eax
 	cmpl	$31, %edi

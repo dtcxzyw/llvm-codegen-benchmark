@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a4:
 	movl	%esi, %eax
 	decq	%rax

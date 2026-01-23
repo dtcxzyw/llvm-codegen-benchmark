@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000004ca:
 	incq	%rdx
 	cmpq	$32767, %rsi

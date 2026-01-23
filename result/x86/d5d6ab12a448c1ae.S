@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000013:
 	andb	$1, %dil
 	subl	%edx, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000016:
 	notb	%dil
 	vxorps	%xmm1, %xmm1, %xmm1

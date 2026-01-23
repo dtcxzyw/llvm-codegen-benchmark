@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000004d:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1

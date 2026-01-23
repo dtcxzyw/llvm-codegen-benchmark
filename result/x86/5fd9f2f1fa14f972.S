@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a8:
 	decl	%edx
 	addq	%rsi, %rdi

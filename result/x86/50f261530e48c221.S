@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000341:
 	incl	%esi
 	shrxl	%edi, %esi, %eax

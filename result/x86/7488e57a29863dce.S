@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	testl	%edx, %edx
 	movabsq	$72057594037927936, %rcx

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000908:
 	shlq	$3, %rdx
 	cmpq	%rsi, %rdx

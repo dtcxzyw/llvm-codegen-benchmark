@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	shlxl	%edx, %esi, %ecx
 	movl	$2147483647, %eax

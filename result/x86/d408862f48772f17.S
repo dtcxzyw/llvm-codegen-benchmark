@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	testq	%rdi, %rdi
 	je	.LBB0_2

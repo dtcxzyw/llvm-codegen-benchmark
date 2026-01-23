@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000060a:
 	subl	%esi, %edx
 	addl	%edi, %edx

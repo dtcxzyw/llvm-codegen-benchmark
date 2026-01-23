@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000108:
 	cmpl	$1114112, %edi
 	movl	$-400, %eax

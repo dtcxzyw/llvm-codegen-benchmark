@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	bsrl	%edi, %eax
 	leal	(%rax,%rax,8), %eax

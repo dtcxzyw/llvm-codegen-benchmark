@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000a8:
 	incl	%esi
 	leal	(%rdi,%rdi,4), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c8:
 	incq	%rsi
 	movabsq	$1152921504606846972, %rax

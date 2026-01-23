@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	addl	$1000000, %edi
 	shrl	$3, %edi

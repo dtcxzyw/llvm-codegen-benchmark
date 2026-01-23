@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	vpaddw	%ymm1, %ymm0, %ymm0
 	retq

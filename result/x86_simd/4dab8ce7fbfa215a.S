@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vpsrld	$8, %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0

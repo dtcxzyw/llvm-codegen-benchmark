@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000103:
 	negq	%rdx
 	imulq	$376, %rdx, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	andq	$-16, %rdx
 	imulq	$392, %rsi, %rax

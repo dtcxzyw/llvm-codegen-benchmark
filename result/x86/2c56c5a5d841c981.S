@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000074:
 	addq	$4095, %rdx
 	shrq	$12, %rdx

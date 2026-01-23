@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000f8:
 	lzcntq	%rdi, %rax
 	xorl	$32, %eax

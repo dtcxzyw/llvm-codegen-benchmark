@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	rorxl	$26, %edx, %eax
 	subl	%edx, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002d:
 	shll	$24, %esi
 	movzbl	%dil, %eax

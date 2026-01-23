@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000009b:
 	decl	%edx
 	xorl	%eax, %eax

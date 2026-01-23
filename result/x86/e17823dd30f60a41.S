@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vsubss	%xmm1, %xmm2, %xmm3
 	vcmpltss	%xmm2, %xmm1, %k1

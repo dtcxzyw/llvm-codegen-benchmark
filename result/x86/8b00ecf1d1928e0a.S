@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	cmpw	$-32, %dx
 	setb	%al

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vmovq	%rsi, %xmm1
 	kmovd	%edi, %k1

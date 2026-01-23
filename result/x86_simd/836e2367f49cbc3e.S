@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000042:
 	vpsrld	$1, %ymm2, %ymm2
 	vpcmpeqd	%ymm0, %ymm2, %k0

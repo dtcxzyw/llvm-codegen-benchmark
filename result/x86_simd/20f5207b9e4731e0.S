@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000010:
 	vprold	$6, %ymm2, %ymm3
 	vpsubd	%ymm2, %ymm1, %ymm1

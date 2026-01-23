@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000006c:
 	incl	%edi
 	testb	$30, %dil

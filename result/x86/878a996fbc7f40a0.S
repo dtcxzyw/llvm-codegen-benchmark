@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	vcvtss2sd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1

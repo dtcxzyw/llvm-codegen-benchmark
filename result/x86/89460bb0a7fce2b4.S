@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000028:
 	imulq	%rdx, %rsi
 	cmpq	$536870913, %rsi

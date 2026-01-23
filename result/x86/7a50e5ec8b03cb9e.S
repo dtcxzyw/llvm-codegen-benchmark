@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000026:
 	leal	6(%rdx), %eax
 	cmpl	%eax, %esi

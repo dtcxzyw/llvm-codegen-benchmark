@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000502:
 	cmpl	$32, %esi
 	setb	%al

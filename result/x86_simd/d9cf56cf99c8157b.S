@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000c3:
 	vpmovqb	%ymm1, %xmm1
 	vptestmb	%xmm1, %xmm1, %k0

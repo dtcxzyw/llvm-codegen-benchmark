@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	vmovmskpd	%xmm0, %eax
 	andl	$1, %eax

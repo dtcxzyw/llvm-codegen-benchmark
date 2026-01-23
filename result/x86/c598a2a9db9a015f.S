@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000b7:
 	lzcntq	%rsi, %rax
 	sarl	$16, %edi

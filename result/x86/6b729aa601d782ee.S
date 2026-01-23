@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000006:
 	cmpl	$255, %edi
 	movl	$255, %ecx

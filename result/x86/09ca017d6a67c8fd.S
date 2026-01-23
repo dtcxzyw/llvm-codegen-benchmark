@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	andl	$31, %edx
 	cmpl	$11, %edx

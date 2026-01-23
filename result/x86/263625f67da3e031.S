@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000030f:
 	shrl	$7, %esi
 	cmpl	$1, %edx

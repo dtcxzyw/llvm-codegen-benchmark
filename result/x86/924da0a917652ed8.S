@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	xorl	%eax, %eax
 	vucomiss	%xmm0, %xmm1

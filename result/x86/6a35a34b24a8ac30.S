@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000002:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0

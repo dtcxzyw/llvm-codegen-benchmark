@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	andl	$-4, %esi
 	movslq	%esi, %rax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000005:
 	shrxl	%edx, %esi, %eax
 	leal	-128(%rax,%rdi), %eax

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000c21:
 	addl	%edx, %esi
 	testb	$31, %sil

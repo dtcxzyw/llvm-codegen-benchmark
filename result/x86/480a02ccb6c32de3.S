@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000066:
 	decl	%esi
 	orl	$1, %edi

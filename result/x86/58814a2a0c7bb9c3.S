@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	bzhil	%esi, %edi, %eax
 	retq

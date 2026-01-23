@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001ff:
 	addl	$2, %edx
 	imulq	%rsi, %rdx

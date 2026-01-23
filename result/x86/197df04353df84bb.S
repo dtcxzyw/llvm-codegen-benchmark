@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001f4:
 	addl	%edx, %esi
 	xorl	$2147483647, %esi

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000078:
 	vpaddq	%ymm2, %ymm0, %ymm2
 	vpcmpleuq	%ymm1, %ymm2, %k1

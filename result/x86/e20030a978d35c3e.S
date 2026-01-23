@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	andl	$1048575, %esi
 	shlq	$32, %rsi

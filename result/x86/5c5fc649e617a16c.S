@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001f:
 	addl	$32, %esi
 	negl	%esi

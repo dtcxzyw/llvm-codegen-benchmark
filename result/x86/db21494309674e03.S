@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000e:
 	orq	$16, %rsi
 	andq	$-16, %rsi

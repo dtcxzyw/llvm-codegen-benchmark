@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000133:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2

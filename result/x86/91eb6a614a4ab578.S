@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	sarxl	%edx, %esi, %eax
 	imull	%edi, %eax

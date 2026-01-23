@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000009b:
 	decl	%esi
 	movslq	%esi, %rax

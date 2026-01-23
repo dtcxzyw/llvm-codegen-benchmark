@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008a:
 	addl	%edi, %edi
 	testw	%di, %di

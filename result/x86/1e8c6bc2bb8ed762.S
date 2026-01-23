@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001b:
 	movsbq	%dl, %rcx
 	addq	%rdi, %rcx

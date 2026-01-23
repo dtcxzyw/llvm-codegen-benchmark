@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000020:
 	leal	4800(%rsi), %ecx
 	imull	$365, %ecx, %edx

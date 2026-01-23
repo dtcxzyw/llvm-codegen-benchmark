@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	leaq	(%rdx,%rdi), %rcx
 	xorl	%eax, %eax

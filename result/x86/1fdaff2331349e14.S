@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vmovaps	%xmm0, %xmm3
 	vdivsd	%xmm2, %xmm1, %xmm0

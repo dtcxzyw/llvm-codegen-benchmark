@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	imull	%edi, %edi
 	vcvtusi2ss	%edi, %xmm15, %xmm0

@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000021:
 	orb	$8, %sil
 	testb	%dil, %dil

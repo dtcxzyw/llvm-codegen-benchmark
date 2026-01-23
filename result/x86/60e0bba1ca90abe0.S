@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002a:
 	orq	%r9, %rcx
 	orq	%r8, %rdx

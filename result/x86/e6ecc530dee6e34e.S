@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ca:
 	movswl	%dx, %eax
 	testw	%si, %si

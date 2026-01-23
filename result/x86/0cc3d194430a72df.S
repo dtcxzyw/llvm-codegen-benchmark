@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000001a0:
 	incl	%edx
 	imull	%esi, %edx

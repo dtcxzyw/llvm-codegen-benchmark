@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000007:
 	vmulsd	%xmm1, %xmm0, %xmm1
 	vcmpneqsd	%xmm1, %xmm0, %k0

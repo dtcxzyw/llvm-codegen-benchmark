@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000024:
 	decl	%esi
 	leal	65792(%rdi), %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000001e:
 	shrl	$5, %edx
 	leaq	(%rsi,%rdx,4), %rax

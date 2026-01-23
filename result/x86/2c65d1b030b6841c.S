@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000072:
 	tzcntq	%rsi, %rax
 	shll	$6, %edi

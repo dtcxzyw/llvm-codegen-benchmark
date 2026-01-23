@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000b:
 	vcvtdq2pd	%xmm0, %ymm0
 	vpsrlq	$52, %ymm0, %ymm0

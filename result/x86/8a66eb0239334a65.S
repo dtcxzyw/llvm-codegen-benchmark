@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003f:
 	imull	%edx, %esi
 	xorl	$255, %edx

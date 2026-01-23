@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000004:
 	shrq	$32, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm0

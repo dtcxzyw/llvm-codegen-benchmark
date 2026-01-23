@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000047:
 	movq	%rdi, %rax
 	btq	$34, %rsi

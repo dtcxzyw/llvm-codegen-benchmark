@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000003c:
 	movzbl	%dl, %ecx
 	shlq	$40, %rcx

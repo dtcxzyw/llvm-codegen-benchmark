@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000041:
 	incl	%edx
 	imulq	%rsi, %rdx

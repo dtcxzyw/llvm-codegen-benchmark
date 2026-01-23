@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000019:
 	cmpb	$5, %dl
 	cmovgel	%esi, %edi

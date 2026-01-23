@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000dc:
 	movq	%rdi, %rax
 	leal	-1(%rsi,%rdi), %ecx

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vptestmd	%xmm1, %xmm1, %k1

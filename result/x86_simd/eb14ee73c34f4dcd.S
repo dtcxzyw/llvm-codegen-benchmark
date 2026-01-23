@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vpslld	$5, %ymm2, %ymm3
 	vpaddd	%ymm1, %ymm2, %ymm1

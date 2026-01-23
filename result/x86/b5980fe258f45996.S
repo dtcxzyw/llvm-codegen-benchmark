@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000002c:
 	addl	%edx, %esi
 	movb	$11, %al

@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000ff:
 	addq	%rdx, %rdi
 	leaq	352(%rdi,%rsi,8), %rax

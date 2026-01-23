@@ -1,3 +1,4 @@
+	.att_syntax
 func00000000000000e4:
 	tzcntq	%rsi, %rax
 	cmpl	%eax, %edi

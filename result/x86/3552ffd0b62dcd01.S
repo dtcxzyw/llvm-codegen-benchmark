@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000003:
 	shlb	$5, %dl
 	andb	$16, %sil

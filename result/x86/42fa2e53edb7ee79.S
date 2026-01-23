@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000008c:
 	addb	$-94, %dl
 	shlxl	%edx, %esi, %eax

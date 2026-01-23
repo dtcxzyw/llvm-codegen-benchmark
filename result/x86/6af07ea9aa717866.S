@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000046:
 	sarxl	%esi, %edi, %eax
 	cmpl	$121, %eax

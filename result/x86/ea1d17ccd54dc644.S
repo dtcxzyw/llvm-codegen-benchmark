@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000a:
 	addl	$-54525952, %edi
 	shlq	$32, %rdi

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	subl	%edx, %esi
 	imull	%esi, %esi

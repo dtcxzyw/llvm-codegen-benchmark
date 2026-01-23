@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000cc1:
 	cmpq	$12, %rdx
 	setl	%cl

@@ -1,3 +1,4 @@
+	.att_syntax
 func000000000000000f:
 	shlq	$32, %rdx
 	xorl	%eax, %eax

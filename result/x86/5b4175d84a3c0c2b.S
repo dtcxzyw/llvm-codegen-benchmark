@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000058:
 	andl	$1835008, %edx
 	andl	$3, %esi

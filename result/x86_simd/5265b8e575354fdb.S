@@ -1,3 +1,4 @@
+	.att_syntax
 func0000000000000000:
 	vsubpd	%zmm5, %zmm1, %zmm5
 	vsubpd	%zmm4, %zmm0, %zmm4
