@@ -5,7 +5,7 @@ func0000000000000002:
 
 func0000000000000000:
 	negb	%sil
-	andb	$63, %sil
+	andl	$63, %esi
 	movl	$64, %eax
 	subl	%esi, %eax
 	bzhiq	%rax, %rdi, %rax

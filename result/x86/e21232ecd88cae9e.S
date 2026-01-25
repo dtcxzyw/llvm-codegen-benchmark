@@ -1,12 +1,12 @@
 	.att_syntax
 func0000000000000101:
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	sete	%al
 	retq
 
 func00000000000001a1:
-	andb	$31, %sil
+	andl	$31, %esi
 	bzhil	%esi, %edi, %eax
 	sete	%al
 	retq

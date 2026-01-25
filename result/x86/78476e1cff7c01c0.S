@@ -8,13 +8,13 @@ func0000000000000006:
 	retq
 
 func0000000000000003:
-	andb	$63, %dl
+	andl	$63, %edx
 	bzhiq	%rdx, %rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000002:
-	andb	$7, %dl
+	andl	$7, %edx
 	bzhil	%edx, %esi, %eax
 	orq	%rdi, %rax
 	retq

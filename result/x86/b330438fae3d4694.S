@@ -6,19 +6,19 @@ func0000000000000038:
 
 func0000000000000008:
 	decb	%sil
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 
 func0000000000000018:
 	decb	%sil
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 
 func0000000000000028:
 	decb	%sil
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 

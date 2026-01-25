@@ -7,7 +7,7 @@ func0000000000000002:
 
 func0000000000000001:
 	addl	%edx, %esi
-	andb	$7, %sil
+	andl	$7, %esi
 	bzhil	%esi, %edi, %eax
 	retq
 

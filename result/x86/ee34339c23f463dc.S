@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000008:
-	andb	$31, %sil
+	andl	$31, %esi
 	bzhil	%esi, %edi, %eax
 	retq
 

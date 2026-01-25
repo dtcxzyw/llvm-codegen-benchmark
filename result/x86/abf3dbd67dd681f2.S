@@ -11,7 +11,7 @@ func0000000000000009:
 	retq
 
 func000000000000000d:
-	andb	$31, %sil
+	andl	$31, %esi
 	bzhil	%esi, %edi, %eax
 	retq
 

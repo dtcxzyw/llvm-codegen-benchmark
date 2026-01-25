@@ -7,7 +7,7 @@ func000000000000000a:
 
 func0000000000000001:
 	subl	%edx, %esi
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 

@@ -23,7 +23,7 @@ func0000000000000002:
 
 func0000000000000001:
 	shll	$3, %esi
-	andb	$56, %sil
+	andl	$56, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 

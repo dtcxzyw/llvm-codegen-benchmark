@@ -13,7 +13,7 @@ func0000000000000006:
 
 func0000000000000005:
 	shrl	$3, %esi
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 

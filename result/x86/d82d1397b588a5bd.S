@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000002:
-	andb	$63, %dl
 	orq	%rsi, %rdi
+	andl	$63, %edx
 	bzhiq	%rdx, %rdi, %rax
 	retq
 

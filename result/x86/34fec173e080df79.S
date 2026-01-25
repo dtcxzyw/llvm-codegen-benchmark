@@ -10,7 +10,7 @@ func0000000000000006:
 	retq
 
 func0000000000000001:
-	andb	$63, %sil
+	andl	$63, %esi
 	bzhiq	%rsi, %rdi, %rax
 	retq
 
