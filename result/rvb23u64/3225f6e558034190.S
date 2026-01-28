@@ -66,7 +66,8 @@ func0000000000003181:
 func000000000000294a:
 	or	a1, a1, a2
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -79,20 +80,22 @@ func0000000000003021:
 	ret
 
 func000000000000058a:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	srliw	a0, a0, 31
 	seqz	a2, a2
+	srli	a0, a0, 63
 	czero.eqz	a1, a2, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000002941:
+	slli	a1, a1, 32
 	sext.w	a2, a2
-	srliw	a1, a1, 31
 	addiw	a0, a0, -1
 	sgtz	a2, a2
+	srli	a1, a1, 63
 	andn	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -192,7 +195,8 @@ func0000000000000594:
 func000000000000182c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	czero.nez	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret
@@ -218,9 +222,10 @@ func000000000000302c:
 
 func0000000000002946:
 	sext.w	a0, a0
+	slli	a1, a1, 32
 	sext.w	a2, a2
-	srliw	a1, a1, 31
 	sgtz	a2, a2
+	srli	a1, a1, 63
 	andn	a1, a2, a1
 	slti	a0, a0, 33
 	and	a0, a0, a1
@@ -299,7 +304,8 @@ func000000000000282c:
 func000000000000194c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	sgtz	a1, a1
 	and	a1, a1, a2
 	czero.eqz	a0, a1, a0
@@ -349,10 +355,11 @@ func0000000000003184:
 	ret
 
 func0000000000000426:
+	slli	a0, a0, 32
 	xori	a1, a1, 3
 	or	a1, a1, a2
 	sext.w	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	czero.nez	a0, a0, a1
 	ret
 
@@ -381,8 +388,9 @@ func000000000000114a:
 	lui	a3, 244
 	or	a0, a0, a1
 	addi	a1, a3, 576
+	slli	a0, a0, 32
 	sltu	a1, a2, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -445,11 +453,12 @@ func0000000000002981:
 	ret
 
 func0000000000000586:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
 	czero.eqz	a1, a2, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -464,8 +473,9 @@ func0000000000000434:
 func0000000000001986:
 	and	a0, a0, a2
 	addiw	a1, a1, -1
+	slli	a0, a0, 32
 	snez	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -506,8 +516,9 @@ func00000000000018c6:
 func000000000000282a:
 	or	a0, a0, a2
 	addiw	a1, a1, -4
+	slli	a0, a0, 32
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

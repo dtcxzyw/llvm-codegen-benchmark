@@ -44,7 +44,7 @@ func0000000000000029:
 	ret
 
 func000000000000014c:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	cmp	x0, x1
 	ccmn	w8, #1, #0, eq
 	cset	w0, gt

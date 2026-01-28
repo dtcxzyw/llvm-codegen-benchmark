@@ -14,7 +14,7 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	and	a1, a1, a2
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -36,7 +36,7 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	and	a1, a1, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1

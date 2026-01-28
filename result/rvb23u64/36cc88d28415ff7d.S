@@ -1,5 +1,5 @@
 func00000000000000a0:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	andi	a2, a2, 1
 	xori	a2, a2, 3
 	srli	a1, a1, 63

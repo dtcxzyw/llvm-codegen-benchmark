@@ -1,5 +1,6 @@
 func00000000000002a4:
-	srliw	a2, a1, 31
+	slli	a2, a1, 32
+	srli	a2, a2, 63
 	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1

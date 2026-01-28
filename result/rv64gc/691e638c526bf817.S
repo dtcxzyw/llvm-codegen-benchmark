@@ -10,11 +10,12 @@ func0000000000000314:
 	ret
 
 func000000000000004c:
+	slli	a0, a0, 32
 	zext.b	a2, a2
 	addi	a2, a2, -45
 	seqz	a2, a2
 	and	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

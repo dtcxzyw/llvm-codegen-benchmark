@@ -22,7 +22,7 @@ func0000000000000101:
 	ret
 
 func0000000000000146:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	sext.h	a2, a2
 	sgtz	a2, a2
 	srli	a1, a1, 63

@@ -19,7 +19,7 @@ func000000000000018c:
 
 func000000000000002a:
 	and	w8, w2, #0xf00
-	sxth	w9, w0
+	lsl	w9, w0, #16
 	cmp	w8, #2048
 	cset	w8, eq
 	cmn	w9, #1

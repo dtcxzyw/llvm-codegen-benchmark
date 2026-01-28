@@ -19,7 +19,7 @@ func0000000000000101:
 	ret
 
 func0000000000000146:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	sxth	w9, w2
 	cmp	w8, #0
 	ccmp	w9, #0, #4, mi

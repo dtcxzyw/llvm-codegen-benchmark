@@ -35,10 +35,9 @@ func000000000000070a:
 	slli	a0, a0, 48
 	sext.w	a1, a1
 	slli	a2, a2, 48
-	srai	a0, a0, 48
 	srli	a2, a2, 48
-	sltu	a1, a2, a1
 	srli	a0, a0, 63
+	sltu	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

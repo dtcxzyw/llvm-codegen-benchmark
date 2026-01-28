@@ -88,7 +88,7 @@ func000000000000042c:
 	ret
 
 func000000000000042a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	add	w9, w2, #1
 	cmn	w8, #1
 	ccmp	w9, w1, #4, le

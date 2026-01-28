@@ -1,7 +1,6 @@
 func000000000000010c:
 	zext.b	a0, a0
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	sltiu	a0, a0, 26
 	or	a0, a0, a1

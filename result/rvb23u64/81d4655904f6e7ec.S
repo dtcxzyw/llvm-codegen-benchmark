@@ -116,7 +116,7 @@ func000000000000042c:
 	ret
 
 func000000000000042a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2

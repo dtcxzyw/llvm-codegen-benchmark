@@ -19,7 +19,8 @@ func0000000000000185:
 	ret
 
 func0000000000000198:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	li	a2, 100
@@ -28,7 +29,8 @@ func0000000000000198:
 	ret
 
 func000000000000019b:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	li	a2, 100

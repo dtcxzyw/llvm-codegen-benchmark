@@ -83,7 +83,6 @@ func0000000000000108:
 func00000000000000e6:
 	slli	a0, a0, 56
 	slt	a1, a2, a1
-	srai	a0, a0, 56
 	xori	a1, a1, 1
 	srli	a0, a0, 63
 	or	a0, a0, a1
@@ -146,7 +145,6 @@ func000000000000012c:
 func00000000000000a6:
 	slli	a0, a0, 56
 	sltu	a1, a2, a1
-	srai	a0, a0, 56
 	xori	a1, a1, 1
 	srli	a0, a0, 63
 	or	a0, a0, a1
@@ -162,7 +160,6 @@ func00000000000002a1:
 
 func000000000000008a:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sltu	a1, a1, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1

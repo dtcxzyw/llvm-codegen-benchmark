@@ -16,11 +16,9 @@ func000000000000002a:
 	ret
 
 func00000000000000c1:
-	cmp	w1, w2
-	csel	w8, w1, w2, gt
-	cmp	w0, #0
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	tst	w1, w2
+	ccmp	w0, #0, #0, mi
+	cset	w0, eq
 	ret
 
 func00000000000004c6:

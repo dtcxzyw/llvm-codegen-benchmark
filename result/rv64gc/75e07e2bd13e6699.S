@@ -43,9 +43,10 @@ func0000000000000081:
 	ret
 
 func0000000000000026:
+	slli	a1, a1, 32
 	addiw	a2, a2, -113
 	snez	a2, a2
-	srliw	a1, a1, 31
+	srli	a1, a1, 63
 	and	a1, a1, a2
 	beqz	a1, .LBB4_2
 	li	a0, 2

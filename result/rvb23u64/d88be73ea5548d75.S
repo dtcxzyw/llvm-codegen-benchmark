@@ -8,12 +8,13 @@ func0000000000008410:
 	ret
 
 func000000000000130c:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	seqz	a2, a2
-	srliw	a0, a0, 31
 	slti	a1, a1, 1
-	or	a0, a0, a2
+	srli	a0, a0, 63
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000006098:

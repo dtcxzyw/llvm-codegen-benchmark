@@ -30,11 +30,10 @@ func000000000000002c:
 func00000000000000c4:
 	zext.b	a1, a1
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	sltiu	a1, a1, 26
 	srli	a2, a2, 63
-	or	a0, a0, a1
 	or	a0, a0, a2
+	sltiu	a1, a1, 26
+	or	a0, a0, a1
 	ret
 
 func0000000000000181:
@@ -123,8 +122,6 @@ func0000000000000318:
 func00000000000000c6:
 	slli	a1, a1, 56
 	slli	a2, a2, 56
-	srai	a1, a1, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	or	a0, a0, a2
 	srli	a1, a1, 63

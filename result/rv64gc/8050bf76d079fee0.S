@@ -10,15 +10,17 @@ func00000000000004c1:
 func0000000000000546:
 	sext.w	a0, a0
 	mul	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000004ca:
+	slli	a0, a0, 32
 	mulw	a1, a1, a2
 	sgtz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

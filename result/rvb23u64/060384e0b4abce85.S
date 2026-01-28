@@ -1,7 +1,8 @@
 func0000000000000186:
-	addiw	a2, a1, 28
-	srliw	a3, a0, 31
-	snez	a2, a2
+	slli	a2, a0, 32
+	addiw	a3, a1, 28
+	snez	a3, a3
+	srli	a2, a2, 63
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -42,10 +43,11 @@ func000000000000002c:
 	ret
 
 func0000000000000141:
-	srliw	a2, a0, 31
+	slli	a2, a0, 32
 	addiw	a3, a1, 1
-	xori	a2, a2, 1
+	srli	a2, a2, 63
 	seqz	a3, a3
+	xori	a2, a2, 1
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -53,9 +55,11 @@ func0000000000000141:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a0, 31
-	srliw	a3, a1, 31
-	andn	a2, a2, a3
+	slli	a2, a1, 32
+	slli	a3, a0, 32
+	srli	a3, a3, 63
+	srli	a2, a2, 63
+	andn	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

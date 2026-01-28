@@ -57,7 +57,6 @@ func0000000000000029:
 func000000000000014c:
 	slli	a2, a2, 56
 	xor	a0, a0, a1
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a1, a2, 1
 	snez	a0, a0

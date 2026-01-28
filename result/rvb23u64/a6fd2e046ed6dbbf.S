@@ -151,7 +151,7 @@ func000000000000008c:
 	ret
 
 func0000000000000186:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a1, a1
 	snez	a1, a1
 	srli	a0, a0, 63

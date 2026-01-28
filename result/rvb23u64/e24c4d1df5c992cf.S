@@ -45,7 +45,7 @@ func0000000000000181:
 	ret
 
 func0000000000000141:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	addiw	a0, a0, -3
 	srli	a1, a1, 63
 	xori	a1, a1, 1
@@ -130,7 +130,8 @@ func0000000000000186:
 
 func00000000000000c1:
 	zext.h	a0, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	czero.nez	a0, a1, a0
 	ret
 
@@ -230,7 +231,8 @@ func0000000000000094:
 
 func0000000000000148:
 	zext.h	a0, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	sltiu	a0, a0, 58
 	or	a0, a0, a1
 	xori	a0, a0, 1
@@ -248,13 +250,13 @@ func0000000000000301:
 
 func0000000000000026:
 	sext.w	a1, a1
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	srli	a0, a0, 63
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000146:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a1, a1
 	sgtz	a1, a1
 	srli	a0, a0, 63
@@ -299,7 +301,8 @@ func0000000000000034:
 
 func00000000000000ca:
 	sext.h	a0, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

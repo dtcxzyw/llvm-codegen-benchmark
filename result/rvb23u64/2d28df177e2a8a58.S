@@ -24,7 +24,7 @@ func000000000000018c:
 	ret
 
 func000000000000002a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	li	a3, 15
 	slli	a3, a3, 8
 	and	a2, a2, a3

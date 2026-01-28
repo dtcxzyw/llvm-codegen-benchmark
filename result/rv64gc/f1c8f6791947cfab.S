@@ -22,10 +22,9 @@ func0000000000000021:
 func000000000000028a:
 	slli	a1, a1, 48
 	sext.w	a2, a2
-	srai	a1, a1, 48
 	sltiu	a2, a2, 2
-	or	a0, a0, a2
 	srli	a1, a1, 63
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

@@ -153,7 +153,7 @@ func0000000000000141:
 	ret
 
 func000000000000014c:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	xor	a0, a0, a1
 	srli	a2, a2, 63
 	xori	a1, a2, 1

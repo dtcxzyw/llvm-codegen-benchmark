@@ -8,7 +8,7 @@ func0000000000000424:
 	ret
 
 func000000000000054c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	cmp	w1, #1
 	ccmn	w8, #1, #0, eq
 	cset	w0, gt

@@ -128,8 +128,9 @@ func0000000000000028:
 	ret
 
 func000000000000014c:
+	slli	a0, a0, 32
 	srli	a1, a1, 30
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -272,13 +273,14 @@ func0000000000000198:
 	ret
 
 func00000000000000ca:
+	slli	a0, a0, 32
 	lui	a2, 1048568
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
 	slti	a1, a1, 2
 	not	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

@@ -17,11 +17,12 @@ func0000000000000084:
 	ret
 
 func00000000000000d9:
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
-	srliw	a1, a1, 31
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

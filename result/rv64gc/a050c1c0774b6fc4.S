@@ -90,10 +90,9 @@ func0000000000000290:
 	lui	a2, 16
 	slli	a3, a0, 48
 	addi	a2, a2, -1
-	srai	a3, a3, 48
+	srli	a3, a3, 63
 	and	a0, a0, a2
 	and	a1, a1, a2
-	srli	a3, a3, 63
 	xori	a2, a3, 1
 	sltu	a0, a1, a0
 	or	a0, a0, a2
@@ -117,7 +116,6 @@ func000000000000030c:
 	and	a1, a1, a2
 	and	a2, a2, a0
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	xor	a1, a1, a2
 	snez	a1, a1
 	srli	a0, a0, 63

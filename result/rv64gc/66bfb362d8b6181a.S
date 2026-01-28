@@ -1,9 +1,10 @@
 func0000000000000186:
-	and	a1, a1, a0
-	sext.w	a1, a1
-	snez	a1, a1
-	srliw	a0, a0, 31
+	slli	a2, a0, 32
 	and	a0, a0, a1
+	sext.w	a0, a0
+	snez	a0, a0
+	srli	a2, a2, 63
+	and	a0, a0, a2
 	ret
 
 func000000000000002c:

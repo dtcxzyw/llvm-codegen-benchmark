@@ -141,7 +141,7 @@ func0000000000000141:
 	ret
 
 func000000000000014c:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	cmp	x0, x1
 	ccmn	w8, #1, #4, ne
 	cset	w0, gt

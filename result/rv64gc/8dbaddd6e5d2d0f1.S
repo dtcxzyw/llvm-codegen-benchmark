@@ -2,7 +2,6 @@ func0000000000001546:
 	slli	a0, a0, 48
 	slli	a1, a1, 48
 	slli	a2, a2, 56
-	srai	a0, a0, 48
 	or	a1, a1, a2
 	srai	a1, a1, 48
 	sgtz	a1, a1

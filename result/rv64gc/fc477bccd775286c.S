@@ -39,9 +39,10 @@ func0000000000000220:
 	ret
 
 func0000000000000618:
+	slli	a1, a1, 32
 	zext.b	a2, a2
-	srliw	a1, a1, 31
 	addi	a2, a2, -17
+	srli	a1, a1, 63
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -79,7 +80,6 @@ func0000000000000090:
 func00000000000000a8:
 	slli	a1, a1, 56
 	addiw	a2, a2, -192
-	srai	a1, a1, 56
 	seqz	a2, a2
 	srli	a1, a1, 63
 	xori	a1, a1, 1

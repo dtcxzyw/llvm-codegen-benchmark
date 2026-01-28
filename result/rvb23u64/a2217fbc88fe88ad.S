@@ -29,7 +29,7 @@ func000000000000002c:
 
 func00000000000000c4:
 	zext.b	a1, a1
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	or	a0, a0, a2
 	sltiu	a1, a1, 26
@@ -117,8 +117,8 @@ func0000000000000318:
 	ret
 
 func00000000000000c6:
-	sext.b	a1, a1
-	sext.b	a2, a2
+	slli	a1, a1, 56
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	or	a0, a0, a2
 	srli	a1, a1, 63

@@ -70,7 +70,6 @@ func000000000000014b:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	slt	a0, a0, a1
 	or	a0, a0, a2
@@ -121,9 +120,8 @@ func00000000000000c1:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	xor	a0, a0, a1
 	srli	a2, a2, 63
+	xor	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2
 	ret
@@ -222,7 +220,6 @@ func000000000000014a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slt	a0, a1, a0

@@ -44,11 +44,12 @@ func0000000000000044:
 func0000000000000181:
 	not	a1, a1
 	sext.w	a0, a0
-	srliw	a2, a2, 31
-	not	a2, a2
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	seqz	a0, a0
-	and	a1, a1, a2
+	not	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000004a:
@@ -63,8 +64,10 @@ func000000000000004a:
 
 func0000000000000186:
 	not	a1, a1
-	srliw	a2, a2, 31
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	slli	a2, a2, 32
+	srli	a2, a2, 63
+	srli	a0, a0, 63
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

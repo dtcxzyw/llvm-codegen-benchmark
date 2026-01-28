@@ -14,10 +14,9 @@ func000000000000c302:
 	zext.b	a2, a0
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	snez	a1, a1
-	addi	a2, a2, -95
 	srli	a0, a0, 63
+	addi	a2, a2, -95
 	or	a0, a0, a1
 	seqz	a1, a2
 	or	a0, a0, a1

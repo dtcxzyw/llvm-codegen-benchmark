@@ -71,7 +71,7 @@ func0000000000000090:
 	ret
 
 func00000000000000a8:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmn	w8, #1
 	mov	w8, #192
 	ccmp	w2, w8, #4, le

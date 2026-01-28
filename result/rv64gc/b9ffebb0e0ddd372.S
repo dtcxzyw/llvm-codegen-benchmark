@@ -22,15 +22,15 @@ func00000000000001e1:
 
 func000000000000010a:
 	mul	a0, a1, a0
-	slli	a0, a0, 1
-	srliw	a0, a0, 31
+	slli	a0, a0, 33
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func00000000000000aa:
 	mul	a0, a1, a0
-	slli	a0, a0, 4
-	srliw	a0, a0, 31
+	slli	a0, a0, 36
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

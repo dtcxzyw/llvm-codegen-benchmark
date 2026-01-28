@@ -33,7 +33,8 @@ func000000000000042a:
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -51,7 +51,8 @@ func000000000000008a:
 	li	a2, -12
 	mul	a0, a0, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -151,7 +151,8 @@ func00000000000006a1:
 func00000000000006aa:
 	add	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -186,7 +187,8 @@ func00000000000002a6:
 func00000000000002aa:
 	add	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

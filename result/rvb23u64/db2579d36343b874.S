@@ -33,7 +33,7 @@ func0000000000000003:
 
 func000000000000000c:
 	andi	a0, a0, 1
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	addi	a0, a0, -1
 	xori	a2, a2, 1

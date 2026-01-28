@@ -41,7 +41,7 @@ func0000000000000014:
 	ret
 
 func000000000000000a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	addi	a0, a0, 3
 	ret

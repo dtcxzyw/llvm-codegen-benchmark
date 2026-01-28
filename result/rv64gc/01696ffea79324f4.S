@@ -3,7 +3,8 @@ func000000000000002a:
 	beqz	a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -90,7 +91,8 @@ func000000000000028a:
 	bltu	a2, a3, .LBB9_2
 	mv	a0, a1
 .LBB9_2:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

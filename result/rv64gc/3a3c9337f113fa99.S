@@ -1,9 +1,10 @@
 func000000000000060c:
+	slli	a0, a0, 32
 	slli	a2, a2, 48
-	srliw	a0, a0, 31
 	snez	a2, a2
+	or	a1, a1, a2
+	srli	a0, a0, 63
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000084:
@@ -41,11 +42,12 @@ func0000000000000204:
 	ret
 
 func0000000000000614:
+	slli	a0, a0, 32
 	slli	a2, a2, 48
-	srliw	a0, a0, 31
 	srli	a2, a2, 48
-	xori	a0, a0, 1
+	srli	a0, a0, 63
 	addi	a2, a2, -2
+	xori	a0, a0, 1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

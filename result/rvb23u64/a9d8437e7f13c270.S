@@ -83,7 +83,7 @@ func0000000000000130:
 	ret
 
 func000000000000030c:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	slli	a1, a1, 48
 	snez	a1, a1
 	srli	a0, a0, 63
@@ -121,7 +121,7 @@ func000000000000004c:
 	ret
 
 func0000000000000054:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	slli	a1, a1, 48
 	seqz	a1, a1
 	srli	a0, a0, 63

@@ -104,7 +104,7 @@ func0000000000000034:
 	ret
 
 func0000000000000144:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	and	w9, w0, #0xffff
 	cmp	w9, #259
 	ccmn	w8, #1, #0, hs

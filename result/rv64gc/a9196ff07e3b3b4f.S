@@ -41,8 +41,10 @@ func0000000000000081:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	slli	a2, a2, 32
+	srli	a2, a2, 63
+	srli	a1, a1, 63
 	not	a1, a1
 	and	a1, a1, a2
 	addi	a1, a1, -1
@@ -109,8 +111,9 @@ func0000000000000144:
 	ret
 
 func0000000000000141:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	addiw	a1, a1, -1
+	srli	a2, a2, 63
 	snez	a1, a1
 	or	a1, a1, a2
 	bnez	a1, .LBB10_2

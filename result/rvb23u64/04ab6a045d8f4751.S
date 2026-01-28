@@ -69,7 +69,7 @@ func0000000000000602:
 	ret
 
 func000000000000004c:
-	sext.b	a1, a0
+	slli	a1, a0, 56
 	zext.b	a0, a0
 	addi	a0, a0, -22
 	seqz	a0, a0
@@ -79,7 +79,7 @@ func000000000000004c:
 
 func0000000000000182:
 	zext.b	a1, a0
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	addi	a1, a1, -95
 	seqz	a1, a1

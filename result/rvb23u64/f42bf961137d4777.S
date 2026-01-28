@@ -2,7 +2,8 @@ func000000000000010c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	addi	a2, a2, 3
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -23,7 +24,8 @@ func000000000000020c:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a2, a2, 1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret

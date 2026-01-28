@@ -15,7 +15,8 @@ func000000000000052a:
 	mv	a3, a2
 .LBB0_4:
 	add	a0, a0, a3
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

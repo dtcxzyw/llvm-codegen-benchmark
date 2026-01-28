@@ -13,7 +13,7 @@ func0000000000000318:
 	ret
 
 func000000000000030c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	ubfx	w9, w1, #10, #1
 	cmp	w8, #0
 	csinc	w0, w9, wzr, pl

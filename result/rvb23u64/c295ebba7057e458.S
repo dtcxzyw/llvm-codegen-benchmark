@@ -15,7 +15,8 @@ func000000000000004f:
 	ret
 
 func000000000000006f:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	and	a0, a0, a2
 	xori	a0, a0, 1
 	slli	a0, a0, 5

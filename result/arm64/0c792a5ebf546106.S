@@ -45,14 +45,14 @@ func0000000000000081:
 	ret
 
 func000000000000014c:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	x0, #0
 	ccmn	w8, #1, #4, ne
 	cset	w0, gt
 	ret
 
 func00000000000000cc:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	x0, #0
 	ccmp	w8, #0, #0, ne
 	cset	w0, mi

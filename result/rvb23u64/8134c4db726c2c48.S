@@ -22,7 +22,7 @@ func0000000000000004:
 	ret
 
 func0000000000000019:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	or	a1, a1, a2
 	andi	a1, a1, 1

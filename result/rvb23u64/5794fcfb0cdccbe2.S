@@ -8,7 +8,7 @@ func000000000000018c:
 	ret
 
 func0000000000000146:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addw	a1, a1, a2
 	lui	a2, 488281
 	addi	a2, a2, 1021
@@ -18,7 +18,7 @@ func0000000000000146:
 	ret
 
 func000000000000014a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addw	a1, a1, a2
 	lui	a2, 244141
 	addi	a2, a2, -1537

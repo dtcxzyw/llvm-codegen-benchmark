@@ -20,7 +20,8 @@ func0000000000000029:
 	ret
 
 func000000000000002b:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	and	a0, a0, a2
 	bnez	a0, .LBB2_2

@@ -7,16 +7,14 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	cmp	x1, x2
-	csel	x8, x1, x2, lt
+	orr	x8, x1, x2
 	cmn	x8, #1
 	cset	w8, gt
 	and	w0, w0, w8
 	ret
 
 func0000000000000006:
-	cmp	x1, x2
-	csel	x8, x1, x2, lt
+	orr	x8, x1, x2
 	cmp	x8, #0
 	cset	w8, mi
 	and	w0, w0, w8

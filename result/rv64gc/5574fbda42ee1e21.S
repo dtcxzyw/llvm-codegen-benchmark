@@ -10,13 +10,14 @@ func0000000000000100:
 	ret
 
 func00000000000000c3:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	slli	a1, a1, 32
-	addi	a2, a2, -1
+	srli	a2, a2, 63
 	srli	a3, a1, 29
 	srli	a1, a1, 27
-	andi	a2, a2, 12
+	addi	a2, a2, -1
 	add	a1, a1, a3
+	andi	a2, a2, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

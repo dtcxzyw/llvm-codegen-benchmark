@@ -1,5 +1,5 @@
 func0000000000000004:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
@@ -20,7 +20,7 @@ func0000000000000006:
 	ret
 
 func000000000000000c:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

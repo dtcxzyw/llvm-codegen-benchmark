@@ -1,5 +1,5 @@
 func0000000000000141:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0x200
 	ccmn	w8, #1, #4, eq
 	cset	w0, gt
@@ -55,7 +55,7 @@ func00000000000000cc:
 
 func00000000000000c1:
 	mov	w8, #7
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	bics	wzr, w8, w1
 	ccmp	w9, #0, #0, eq
 	cset	w0, mi

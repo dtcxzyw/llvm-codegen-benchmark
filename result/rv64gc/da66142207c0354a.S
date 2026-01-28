@@ -34,7 +34,6 @@ func000000000000028a:
 func00000000000000c1:
 	slli	a1, a1, 56
 	addiw	a0, a0, -2
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	not	a1, a1
 	seqz	a0, a0

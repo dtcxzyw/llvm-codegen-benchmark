@@ -114,7 +114,6 @@ func0000000000004218:
 	slli	a0, a0, 56
 	zext.b	a1, a1
 	zext.b	a2, a2
-	srai	a0, a0, 56
 	sltiu	a2, a2, 26
 	sltiu	a1, a1, 10
 	or	a1, a1, a2

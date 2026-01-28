@@ -60,7 +60,8 @@ func0000000000000088:
 
 func00000000000000c1:
 	sext.w	a2, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	czero.nez	a1, a1, a2
 	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
@@ -124,7 +125,8 @@ func000000000000018c:
 
 func00000000000000c6:
 	sext.w	a2, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	slti	a2, a2, 1
 	and	a1, a1, a2
 	czero.nez	a0, a0, a1

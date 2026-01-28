@@ -43,7 +43,6 @@ func0000000000000034:
 
 func000000000000002a:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -60,7 +59,6 @@ func0000000000000028:
 
 func0000000000000026:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1
@@ -68,7 +66,6 @@ func0000000000000026:
 
 func000000000000002b:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

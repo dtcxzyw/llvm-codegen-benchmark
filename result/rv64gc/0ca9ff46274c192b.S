@@ -57,10 +57,9 @@ func000000000000002a:
 	lui	a3, 16
 	slli	a0, a0, 48
 	addi	a3, a3, -1
-	srai	a0, a0, 48
+	srli	a0, a0, 63
 	and	a2, a2, a3
 	and	a1, a1, a3
-	srli	a0, a0, 63
 	xor	a1, a1, a2
 	seqz	a1, a1
 	not	a0, a0
@@ -84,10 +83,9 @@ func000000000000014c:
 	lui	a3, 16
 	slli	a2, a2, 48
 	addi	a3, a3, -1
-	srai	a2, a2, 48
+	srli	a2, a2, 63
 	and	a1, a1, a3
 	and	a0, a0, a3
-	srli	a2, a2, 63
 	xori	a2, a2, 1
 	xor	a0, a0, a1
 	snez	a0, a0

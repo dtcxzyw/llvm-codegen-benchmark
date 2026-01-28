@@ -62,7 +62,7 @@ func00000000000000a4:
 	ret
 
 func00000000000000a0:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	add	a0, a0, a1

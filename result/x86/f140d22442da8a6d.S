@@ -8,17 +8,13 @@ func000000000000000c:
 	retq
 
 func000000000000000a:
-	cmpq	%rdx, %rsi
-	cmovlq	%rsi, %rdx
-	testq	%rdx, %rdx
+	orq	%rdx, %rsi
 	setns	%al
 	andb	%dil, %al
 	retq
 
 func0000000000000006:
-	cmpq	%rdx, %rsi
-	cmovlq	%rsi, %rdx
-	testq	%rdx, %rdx
+	orq	%rdx, %rsi
 	sets	%al
 	andb	%dil, %al
 	retq

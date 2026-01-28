@@ -22,7 +22,6 @@ func0000000000000042:
 func0000000000000298:
 	zext.b	a1, a1
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	snez	a1, a1

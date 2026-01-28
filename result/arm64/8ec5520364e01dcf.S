@@ -13,7 +13,7 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmn	w8, #1
 	cset	w8, gt
 	and	w0, w0, w8

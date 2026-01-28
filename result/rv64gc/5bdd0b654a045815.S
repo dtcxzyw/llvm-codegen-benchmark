@@ -9,7 +9,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	srliw	a1, a0, 31
+	slli	a1, a0, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

@@ -2,9 +2,10 @@ func000000000000002a:
 	slli	a0, a0, 48
 	sub	a1, a1, a2
 	srli	a0, a0, 48
-	srliw	a1, a1, 31
-	not	a1, a1
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a0, a0, -1328
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

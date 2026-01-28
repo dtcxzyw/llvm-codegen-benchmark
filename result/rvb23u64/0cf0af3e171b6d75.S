@@ -28,8 +28,9 @@ func00000000000000cc:
 	ret
 
 func00000000000000d8:
-	srliw	a1, a0, 31
+	slli	a1, a0, 32
 	andi	a0, a0, 15
+	srli	a1, a1, 63
 	sltiu	a0, a0, 11
 	or	a0, a0, a1
 	xori	a0, a0, 1

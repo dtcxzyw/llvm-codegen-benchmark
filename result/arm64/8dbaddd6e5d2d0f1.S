@@ -1,6 +1,6 @@
 func0000000000001546:
 	orr	w8, w1, w2, lsl #8
-	sxth	w9, w0
+	lsl	w9, w0, #16
 	sxth	w8, w8
 	cmp	w9, #0
 	ccmp	w8, #0, #4, mi

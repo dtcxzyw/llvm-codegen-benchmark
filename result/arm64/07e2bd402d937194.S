@@ -28,7 +28,7 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	w8, #0
 	cset	w8, mi
 	orr	w8, w8, w0

@@ -17,7 +17,6 @@ func000000000000008a:
 	mv	a0, a1
 .LBB1_2:
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

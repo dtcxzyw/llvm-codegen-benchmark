@@ -1,6 +1,6 @@
 func0000000000000546:
 	and	w8, w2, #0xff
-	sxth	w9, w0
+	lsl	w9, w0, #16
 	orr	w8, w1, w8
 	sxth	w8, w8
 	cmp	w9, #0

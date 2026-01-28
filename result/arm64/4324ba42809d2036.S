@@ -85,14 +85,14 @@ func0000000000000184:
 	ret
 
 func0000000000000186:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	cmp	w8, #0
 	ccmp	x1, #0, #4, mi
 	cset	w0, ne
 	ret
 
 func000000000000002a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	cmn	w8, #1
 	ccmp	x1, #0, #0, gt
 	cset	w0, eq

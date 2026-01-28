@@ -163,7 +163,6 @@ func000000000000008c:
 func0000000000000186:
 	slli	a0, a0, 48
 	sext.w	a1, a1
-	srai	a0, a0, 48
 	snez	a1, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1

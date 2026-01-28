@@ -147,8 +147,9 @@ func0000000000000084:
 func00000000000000ca:
 	sub	a1, a1, a0
 	addi	a1, a1, -8
-	srliw	a0, a1, 31
-	xori	a0, a0, 1
+	slli	a1, a1, 32
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func0000000000000028:

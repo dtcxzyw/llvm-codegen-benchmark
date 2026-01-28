@@ -1,16 +1,18 @@
 func00000000000000ca:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	slt	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
 func00000000000004c6:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	slt	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -141,10 +143,11 @@ func0000000000000084:
 	ret
 
 func00000000000004aa:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	sltu	a1, a2, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

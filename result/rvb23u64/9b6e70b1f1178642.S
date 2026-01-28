@@ -1,6 +1,7 @@
 func000000000000000a:
 	addi	a2, a2, 1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	andn	a1, a2, a1
 	and	a0, a0, a1
@@ -24,7 +25,8 @@ func000000000000002c:
 
 func000000000000002a:
 	andi	a1, a1, 1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

@@ -19,7 +19,8 @@ func0000000000000007:
 	ret
 
 func000000000000001a:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	bnez	a1, .LBB2_2
 	mv	a2, a0
@@ -28,7 +29,8 @@ func000000000000001a:
 	ret
 
 func0000000000000019:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	bnez	a1, .LBB3_2
 	mv	a2, a0
@@ -47,7 +49,8 @@ func0000000000000006:
 	ret
 
 func000000000000001b:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	bnez	a1, .LBB5_2
 	mv	a2, a0

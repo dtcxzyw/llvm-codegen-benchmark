@@ -35,9 +35,7 @@ func000000000000000a:
 	retq
 
 func0000000000000006:
-	cmpl	%edx, %esi
-	cmovll	%esi, %edx
-	testl	%edx, %edx
+	orl	%edx, %esi
 	sets	%al
 	notb	%dil
 	andb	%dil, %al

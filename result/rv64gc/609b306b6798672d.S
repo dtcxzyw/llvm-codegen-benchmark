@@ -39,10 +39,9 @@ func000000000000018c:
 func000000000000002a:
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	addi	a2, a2, -2
-	seqz	a2, a2
 	srli	a1, a1, 63
+	seqz	a2, a2
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

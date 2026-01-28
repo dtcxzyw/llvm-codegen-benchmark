@@ -78,7 +78,7 @@ func000000000000318c:
 	ret
 
 func000000000000042a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	xori	a2, a2, 2
 	xori	a1, a1, 2
 	or	a1, a1, a2

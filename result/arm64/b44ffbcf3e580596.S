@@ -16,7 +16,7 @@ func0000000000000318:
 	ret
 
 func000000000000030c:
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	cmp	w1, #0
 	mov	w8, #2097152
 	ccmp	w9, #0, #8, eq

@@ -20,7 +20,8 @@ func00000000000000a1:
 func00000000000000aa:
 	sub	a0, a0, a1
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -67,7 +68,8 @@ func0000000000000026:
 func000000000000060a:
 	sub	a0, a0, a1
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -118,7 +120,8 @@ func0000000000000626:
 func00000000000002aa:
 	sub	a0, a0, a1
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

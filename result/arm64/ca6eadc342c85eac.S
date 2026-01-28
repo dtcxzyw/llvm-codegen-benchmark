@@ -49,7 +49,7 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmp	w8, #0
 	cset	w8, mi
 	tst	w0, #0xff
@@ -58,7 +58,7 @@ func00000000000000cc:
 	ret
 
 func000000000000018a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0xff
 	cset	w9, ne
 	cmn	w8, #1

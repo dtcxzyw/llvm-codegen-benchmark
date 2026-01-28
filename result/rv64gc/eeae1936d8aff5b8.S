@@ -34,10 +34,9 @@ func00000000000010c4:
 	zext.b	a0, a0
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	sltiu	a2, a2, 26
-	sltiu	a0, a0, 26
 	srli	a1, a1, 63
+	sltiu	a0, a0, 26
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

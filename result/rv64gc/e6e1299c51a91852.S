@@ -38,10 +38,9 @@ func0000000000000024:
 func0000000000000086:
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	sltiu	a2, a2, 26
 	srli	a1, a1, 63
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -129,7 +128,6 @@ func0000000000000318:
 func00000000000000c6:
 	or	a1, a1, a2
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret

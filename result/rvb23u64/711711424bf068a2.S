@@ -9,7 +9,7 @@ func0000000000000102:
 	ret
 
 func000000000000010c:
-	sext.b	a1, a0
+	slli	a1, a0, 56
 	andi	a0, a0, 223
 	addi	a0, a0, -65
 	sltiu	a0, a0, 26

@@ -111,7 +111,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000c4:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	x0, #16, lsl #12
 	ccmp	w8, #0, #0, lo
 	cset	w0, mi

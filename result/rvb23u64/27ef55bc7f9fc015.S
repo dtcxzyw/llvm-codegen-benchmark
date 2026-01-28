@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	sext.b	a1, a1
-	sext.b	a2, a2
+	slli	a1, a1, 56
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	srli	a1, a1, 63
 	andn	a0, a0, a2
@@ -63,7 +63,7 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	zext.b	a2, a2
 	addi	a2, a2, -2
 	srli	a1, a1, 63

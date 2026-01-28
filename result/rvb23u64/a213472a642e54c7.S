@@ -101,7 +101,7 @@ func000000000000008c:
 	ret
 
 func000000000000002a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	slli	a2, a2, 48
 	seqz	a2, a2
 	and	a1, a1, a2

@@ -1,7 +1,7 @@
 func000000000000014a:
-	add	w8, w2, #1
+	mov	w8, #16777216
 	cmp	w0, w1
-	sxtb	w8, w8
+	add	w8, w8, w2, lsl #24
 	ccmn	w8, #1, #4, gt
 	cset	w0, gt
 	ret

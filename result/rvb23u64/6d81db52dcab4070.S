@@ -61,7 +61,8 @@ func000000000000010c:
 	ret
 
 func000000000000014f:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 1024

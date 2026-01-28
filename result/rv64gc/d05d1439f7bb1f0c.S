@@ -11,7 +11,6 @@ func0000000000000c2c:
 func0000000000000c26:
 	slli	a0, a0, 56
 	addi	a2, a2, 4
-	srai	a0, a0, 56
 	xor	a1, a1, a2
 	seqz	a1, a1
 	srli	a0, a0, 63

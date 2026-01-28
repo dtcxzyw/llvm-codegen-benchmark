@@ -49,10 +49,11 @@ func00000000000000c1:
 
 func00000000000000c4:
 	lui	a3, 16
+	slli	a2, a2, 32
 	addi	a3, a3, -1
 	and	a1, a1, a3
 	and	a0, a0, a3
-	srliw	a2, a2, 31
+	srli	a2, a2, 63
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

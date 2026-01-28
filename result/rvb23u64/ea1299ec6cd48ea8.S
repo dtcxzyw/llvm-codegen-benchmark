@@ -23,7 +23,7 @@ func000000000000014c:
 	ret
 
 func0000000000000126:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a1, a1, a2
@@ -183,7 +183,7 @@ func0000000000000128:
 	ret
 
 func000000000000002a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
@@ -202,7 +202,7 @@ func000000000000016c:
 	ret
 
 func000000000000010a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a2, a1
@@ -211,7 +211,7 @@ func000000000000010a:
 	ret
 
 func000000000000014a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1

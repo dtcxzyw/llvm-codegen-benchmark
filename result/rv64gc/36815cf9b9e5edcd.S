@@ -11,14 +11,13 @@ func000000000000002a:
 	slli	a1, a1, 48
 	sext.w	a2, a2
 	lui	a3, 7699
-	srai	a1, a1, 48
 	addi	a3, a3, 896
-	xor	a2, a2, a3
 	srli	a1, a1, 63
-	seqz	a2, a2
-	or	a0, a0, a2
+	xor	a2, a2, a3
 	xori	a1, a1, 1
+	seqz	a2, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func000000000000018c:
@@ -35,10 +34,9 @@ func000000000000018c:
 func000000000000018a:
 	slli	a1, a1, 48
 	sext.w	a2, a2
-	srai	a1, a1, 48
 	snez	a2, a2
-	or	a0, a0, a2
 	srli	a1, a1, 63
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

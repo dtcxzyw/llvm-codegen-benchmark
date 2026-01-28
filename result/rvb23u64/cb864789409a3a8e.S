@@ -1,6 +1,6 @@
 func000000000000000c:
 	xor	a1, a1, a2
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret

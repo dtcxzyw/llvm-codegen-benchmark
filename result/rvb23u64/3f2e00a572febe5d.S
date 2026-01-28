@@ -8,8 +8,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
 	lui	a2, 262144
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

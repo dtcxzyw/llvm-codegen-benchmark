@@ -51,7 +51,7 @@ func0000000000000048:
 func0000000000000282:
 	zext.h	a1, a1
 	zext.h	a0, a0
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	xor	a0, a0, a1
 	xori	a1, a2, 1

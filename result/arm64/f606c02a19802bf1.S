@@ -24,7 +24,7 @@ func0000000000000038:
 	ret
 
 func00000000000000d4:
-	sxtb	w9, w1
+	lsl	w9, w1, #24
 	mov	w8, #32
 	cmn	w9, #1
 	ccmp	x0, x8, #0, le
@@ -32,14 +32,14 @@ func00000000000000d4:
 	ret
 
 func00000000000000d8:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmn	w8, #1
 	ccmp	x0, #1, #2, le
 	cset	w0, hi
 	ret
 
 func00000000000000c1:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmp	w8, #0
 	ccmp	x0, #0, #0, mi
 	cset	w0, eq

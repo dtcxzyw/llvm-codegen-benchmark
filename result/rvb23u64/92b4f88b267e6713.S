@@ -59,8 +59,9 @@ func00000000000000cc:
 	ret
 
 func000000000000002a:
+	slli	a0, a0, 32
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

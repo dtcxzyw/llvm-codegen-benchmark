@@ -15,8 +15,9 @@ func000000000000078a:
 	mul	a2, a2, a3
 	sub	a1, a1, a0
 	add	a1, a1, a2
-	srliw	a0, a1, 31
-	xori	a0, a0, 1
+	slli	a1, a1, 32
+	srli	a1, a1, 63
+	xori	a0, a1, 1
 	ret
 
 func00000000000002aa:

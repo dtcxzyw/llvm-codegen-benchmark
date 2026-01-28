@@ -107,8 +107,9 @@ func000000000000018a:
 func0000000000000146:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
 	slti	a0, a0, 4
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -8,7 +8,6 @@ func0000000000000041:
 
 func00000000000000c6:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	srli	a1, a1, 3
 	srli	a0, a0, 63
 	xori	a0, a0, 1

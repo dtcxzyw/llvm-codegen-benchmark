@@ -26,7 +26,6 @@ func0000000000000184:
 func0000000000000026:
 	slli	a0, a0, 56
 	slli	a1, a1, 48
-	srai	a0, a0, 56
 	srli	a1, a1, 48
 	addi	a1, a1, -8
 	seqz	a1, a1
@@ -132,7 +131,6 @@ func0000000000000084:
 func000000000000018a:
 	slli	a0, a0, 56
 	slli	a1, a1, 48
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	not	a0, a0
@@ -151,7 +149,6 @@ func0000000000000284:
 func0000000000000186:
 	slli	a0, a0, 56
 	slli	a1, a1, 48
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

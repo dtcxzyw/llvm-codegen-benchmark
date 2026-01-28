@@ -3,7 +3,8 @@ func000000000000042a:
 	beqz	a1, .LBB0_2
 	addi	a0, a2, -2
 .LBB0_2:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

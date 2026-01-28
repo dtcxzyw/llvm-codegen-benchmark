@@ -32,10 +32,11 @@ func0000000000000114:
 	ret
 
 func000000000000002a:
+	slli	a0, a0, 32
 	sub	a2, a2, a1
 	addi	a1, a2, -72
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

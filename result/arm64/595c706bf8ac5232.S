@@ -85,7 +85,7 @@ func0000000000000034:
 	ret
 
 func0000000000000026:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w8, #0
 	ccmp	w1, w2, #4, pl
 	cset	w0, eq
@@ -125,14 +125,14 @@ func0000000000000106:
 	ret
 
 func0000000000000086:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w8, #0
 	ccmp	w1, w2, #0, pl
 	cset	w0, lo
 	ret
 
 func00000000000000c6:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w8, #0
 	ccmp	w1, w2, #8, pl
 	cset	w0, lt

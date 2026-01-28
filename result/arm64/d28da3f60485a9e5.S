@@ -80,7 +80,7 @@ func0000000000000068:
 	ret
 
 func000000000000004c:
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	mov	w8, #253
 	and	w8, w0, w8
 	cmp	w9, #0
@@ -98,7 +98,7 @@ func0000000000000610:
 
 func0000000000000054:
 	mov	w8, #10
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	tst	w0, w8
 	ccmn	w9, #1, #0, ne
 	cset	w0, gt

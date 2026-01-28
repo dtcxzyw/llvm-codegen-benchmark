@@ -222,7 +222,8 @@ func0000000000000028:
 func00000000000000d4:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
@@ -242,7 +243,8 @@ func0000000000000085:
 
 func00000000000000ca:
 	sext.w	a0, a0
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -318,7 +320,8 @@ func000000000000014a:
 
 func00000000000000d8:
 	sext.w	a0, a0
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -327,7 +330,8 @@ func00000000000000d8:
 
 func0000000000000141:
 	sext.w	a0, a0
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sext.w	a1, a1

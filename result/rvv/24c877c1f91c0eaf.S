@@ -25,7 +25,7 @@ func0000000000000021:
 
 func00000000000000ca:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmin.vv	v10, v10, v12
+	vor.vv	v10, v10, v12
 	li	a0, 256
 	vmsgt.vi	v12, v10, -1
 	vmslt.vx	v10, v8, a0

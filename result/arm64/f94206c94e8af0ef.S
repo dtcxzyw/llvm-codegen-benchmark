@@ -7,7 +7,7 @@ func0000000000000042:
 	ret
 
 func0000000000000114:
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	and	w10, w1, #0xff
 	mov	w8, #1
 	cmp	w10, #63

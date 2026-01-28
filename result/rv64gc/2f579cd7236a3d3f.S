@@ -38,9 +38,11 @@ func000000000000018c:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
+	slli	a0, a0, 32
+	slli	a2, a2, 32
 	not	a1, a1
-	srliw	a0, a0, 31
+	srli	a2, a2, 63
+	srli	a0, a0, 63
 	and	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
@@ -158,10 +160,11 @@ func000000000000002c:
 	ret
 
 func0000000000000186:
+	slli	a0, a0, 32
 	sext.w	a2, a2
 	snez	a2, a2
 	or	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

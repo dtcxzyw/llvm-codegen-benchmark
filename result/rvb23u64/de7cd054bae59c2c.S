@@ -36,7 +36,8 @@ func0000000000000001:
 func000000000000008a:
 	slli	a1, a1, 8
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -79,7 +80,8 @@ func00000000000000a1:
 
 func000000000000002a:
 	sh1add	a0, a1, a0
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -131,7 +133,8 @@ func00000000000000b8:
 func00000000000001ca:
 	slli	a1, a1, 16
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

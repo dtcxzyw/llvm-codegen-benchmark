@@ -1,6 +1,6 @@
 func000000000000004c:
 	sext.w	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1

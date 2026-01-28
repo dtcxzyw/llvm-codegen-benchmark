@@ -36,7 +36,8 @@ func0000000000000081:
 
 func000000000000000a:
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -55,7 +56,8 @@ func00000000000000ec:
 
 func000000000000004a:
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

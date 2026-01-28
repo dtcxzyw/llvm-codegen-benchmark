@@ -28,7 +28,7 @@ func000000000000000c:
 
 func000000000000000a:
 	addi	a1, a1, 1
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1

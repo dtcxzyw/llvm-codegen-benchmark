@@ -1,5 +1,5 @@
 func0000000000000546:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	orr	w9, w1, w2
 	sxth	w9, w9
 	cmp	w8, #0

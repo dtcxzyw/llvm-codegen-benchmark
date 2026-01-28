@@ -1,8 +1,9 @@
 func000000000000002a:
 	zext.h	a0, a0
 	sub	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
 	addi	a0, a0, -1328
+	srli	a1, a1, 63
 	seqz	a0, a0
 	andn	a0, a0, a1
 	ret

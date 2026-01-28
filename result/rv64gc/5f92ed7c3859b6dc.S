@@ -157,8 +157,9 @@ func0000000000000082:
 	ret
 
 func00000000000000c6:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
 	fmv.w.x	fa5, zero
+	srli	a0, a0, 63
 	fle.s	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1

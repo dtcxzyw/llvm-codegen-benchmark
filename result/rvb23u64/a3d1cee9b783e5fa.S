@@ -11,7 +11,8 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	andi	a1, a1, 33
 	or	a0, a0, a1

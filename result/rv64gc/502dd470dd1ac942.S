@@ -33,9 +33,10 @@ func0000000000000c8c:
 	ret
 
 func0000000000000e8a:
+	slli	a0, a0, 32
 	addi	a2, a2, 1
-	srliw	a0, a0, 31
 	sltu	a1, a2, a1
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -126,9 +127,10 @@ func0000000000000ccc:
 	ret
 
 func0000000000000e86:
+	slli	a0, a0, 32
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -150,9 +152,10 @@ func0000000000000981:
 	ret
 
 func000000000000088a:
+	slli	a0, a0, 32
 	addi	a2, a2, 1
-	srliw	a0, a0, 31
 	sltu	a1, a2, a1
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -167,9 +170,10 @@ func0000000000000898:
 	ret
 
 func000000000000098a:
+	slli	a0, a0, 32
 	addi	a2, a2, 1
-	srliw	a0, a0, 31
 	xor	a1, a1, a2
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -201,9 +205,10 @@ func000000000000056c:
 	ret
 
 func0000000000000d8a:
+	slli	a0, a0, 32
 	addi	a2, a2, 1
-	srliw	a0, a0, 31
 	xor	a1, a1, a2
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

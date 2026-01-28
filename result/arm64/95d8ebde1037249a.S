@@ -34,7 +34,7 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	sxth	w8, w2
+	lsl	w8, w2, #16
 	orr	w9, w1, w0
 	cmp	w8, #0
 	cset	w8, mi

@@ -41,7 +41,8 @@ func00000000000000c1:
 func00000000000000c4:
 	zext.h	a1, a1
 	zext.h	a0, a0
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

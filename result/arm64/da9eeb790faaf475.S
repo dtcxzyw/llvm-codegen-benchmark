@@ -1,5 +1,5 @@
 func000000000000000a:
-	sxth	w9, w1
+	lsl	w9, w1, #16
 	mov	w8, #64
 	cmn	w9, #1
 	cset	w9, gt

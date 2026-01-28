@@ -60,7 +60,8 @@ func0000000000000044:
 func000000000000000a:
 	addi	a1, a1, -1
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -77,14 +78,16 @@ func000000000000008a:
 	addi	a2, a2, -1
 	add	a1, a1, a2
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func00000000000000ca:
 	addi	a1, a1, 1
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

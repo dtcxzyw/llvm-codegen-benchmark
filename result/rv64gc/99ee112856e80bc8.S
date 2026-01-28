@@ -19,10 +19,9 @@ func0000000000000042:
 func0000000000000054:
 	slli	a1, a0, 56
 	andi	a0, a0, 224
-	srai	a1, a1, 56
 	addi	a0, a0, -192
-	seqz	a0, a0
 	srli	a1, a1, 63
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

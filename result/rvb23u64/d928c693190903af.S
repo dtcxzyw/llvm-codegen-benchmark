@@ -122,9 +122,10 @@ func0000000000006041:
 
 func0000000000006281:
 	sext.w	a0, a0
+	slli	a1, a1, 32
 	addiw	a2, a2, -2
-	srliw	a1, a1, 31
 	snez	a2, a2
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	or	a1, a1, a2
 	czero.nez	a0, a1, a0
@@ -187,12 +188,13 @@ func000000000000098c:
 	ret
 
 func000000000000204c:
+	slli	a0, a0, 32
 	sext.w	a2, a2
 	addiw	a1, a1, -8
 	sltiu	a2, a2, 3
 	seqz	a1, a1
 	or	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

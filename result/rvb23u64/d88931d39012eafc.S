@@ -73,7 +73,7 @@ func0000000000000023:
 	ret
 
 func0000000000000028:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	addi	a1, a1, -1
 	czero.eqz	a1, a1, a2

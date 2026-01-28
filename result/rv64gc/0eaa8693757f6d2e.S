@@ -151,10 +151,11 @@ func0000000000000304:
 	ret
 
 func0000000000000306:
+	slli	a0, a0, 32
 	lui	a2, 1
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

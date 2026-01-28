@@ -38,7 +38,7 @@ func0000000000000064:
 	ret
 
 func000000000000006a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	addiw	a1, a1, 4
 	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0
@@ -61,7 +61,7 @@ func0000000000000024:
 	ret
 
 func000000000000004a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	addiw	a1, a1, 1
 	srli	a0, a0, 63
 	addi	a1, a1, -5

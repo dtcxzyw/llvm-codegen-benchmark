@@ -30,7 +30,8 @@ func0000000000001e0a:
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -70,7 +70,8 @@ func000000000000000a:
 	bnez	a0, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
-	srliw	a0, a1, 31
+	slli	a1, a1, 32
+	srli	a0, a1, 63
 	addiw	a0, a0, 2
 	ret
 

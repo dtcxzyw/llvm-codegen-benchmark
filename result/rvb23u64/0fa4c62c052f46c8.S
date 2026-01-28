@@ -67,7 +67,7 @@ func0000000000000502:
 	ret
 
 func0000000000000a82:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	sext.w	a0, a0
 	addiw	a2, a2, -1
 	xor	a0, a0, a2

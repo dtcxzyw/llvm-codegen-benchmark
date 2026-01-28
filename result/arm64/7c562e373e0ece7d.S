@@ -20,7 +20,7 @@ func0000000000000201:
 	ret
 
 func0000000000000281:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	cmn	w8, #1
 	cset	w8, gt
 	tst	w0, #0xff
@@ -61,7 +61,7 @@ func000000000000030c:
 	ret
 
 func000000000000004a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w2, #0xff
 	cmp	w9, #2
 	cset	w9, eq
@@ -135,7 +135,7 @@ func0000000000000058:
 	ret
 
 func000000000000030a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w2, #0xff
 	cmp	w9, #46
 	cset	w9, ne

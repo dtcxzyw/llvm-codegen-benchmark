@@ -41,9 +41,10 @@ func0000000000000070:
 	ret
 
 func0000000000000182:
+	slli	a0, a0, 32
 	andi	a1, a1, 14
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

@@ -136,7 +136,6 @@ func00000000000000cc:
 
 func0000000000000286:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sltiu	a1, a1, 19
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -217,7 +216,6 @@ func000000000000002a:
 
 func0000000000000086:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sltiu	a1, a1, 13
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -252,7 +250,6 @@ func000000000000030c:
 func0000000000000026:
 	slli	a0, a0, 56
 	addi	a1, a1, -63
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -261,7 +258,6 @@ func0000000000000026:
 func0000000000000306:
 	slli	a0, a0, 56
 	sltiu	a1, a1, 126
-	srai	a0, a0, 56
 	xori	a1, a1, 1
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -269,7 +265,6 @@ func0000000000000306:
 
 func0000000000000186:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

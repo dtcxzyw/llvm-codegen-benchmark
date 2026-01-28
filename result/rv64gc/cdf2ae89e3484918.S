@@ -11,7 +11,8 @@ func000000000000004a:
 	or	a1, a1, a2
 	addi	a0, a0, 1
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -19,7 +20,8 @@ func000000000000008a:
 	addi	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

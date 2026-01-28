@@ -55,7 +55,6 @@ func0000000000000081:
 
 func000000000000014c:
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -64,7 +63,6 @@ func000000000000014c:
 
 func00000000000000cc:
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	srli	a1, a1, 63
 	snez	a0, a0
 	and	a0, a0, a1

@@ -1,5 +1,6 @@
 func0000000000000099:
-	srliw	a1, a0, 31
+	slli	a1, a0, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	andi	a1, a1, -13
 	addw	a0, a0, a1
@@ -31,7 +32,8 @@ func00000000000001d3:
 	ret
 
 func0000000000000098:
-	srliw	a1, a0, 31
+	slli	a1, a0, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	andi	a1, a1, -7
 	addw	a0, a0, a1

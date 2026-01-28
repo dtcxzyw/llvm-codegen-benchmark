@@ -1,5 +1,5 @@
 func000000000000008c:
-	sext.b	a3, a0
+	slli	a3, a0, 56
 	zext.b	a0, a0
 	or	a1, a1, a2
 	addi	a0, a0, -95

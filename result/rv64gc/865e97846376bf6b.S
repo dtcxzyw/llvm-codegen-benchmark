@@ -34,7 +34,8 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	and	a1, a1, a2
 	neg	a1, a1
 	and	a0, a0, a1

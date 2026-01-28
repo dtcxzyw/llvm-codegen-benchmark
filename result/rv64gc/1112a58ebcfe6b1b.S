@@ -75,7 +75,8 @@ func000000000000002a:
 
 func00000000000000c1:
 	sext.w	a2, a0
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	seqz	a2, a2
 	and	a1, a1, a2
 	neg	a1, a1

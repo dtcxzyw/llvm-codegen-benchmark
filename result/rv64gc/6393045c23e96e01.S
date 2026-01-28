@@ -32,10 +32,9 @@ func000000000000004c:
 func0000000000000054:
 	slli	a1, a0, 48
 	lui	a2, 8
-	srai	a1, a1, 48
 	addi	a2, a2, -2
-	and	a0, a0, a2
 	srli	a1, a1, 63
+	and	a0, a0, a2
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1

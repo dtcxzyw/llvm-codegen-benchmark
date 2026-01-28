@@ -43,8 +43,9 @@ func0000000000001b02:
 	ret
 
 func0000000000001198:
+	slli	a0, a0, 32
 	srlw	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

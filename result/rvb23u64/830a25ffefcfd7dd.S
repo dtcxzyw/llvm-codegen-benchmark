@@ -9,7 +9,7 @@ func0000000000000021:
 
 func0000000000000141:
 	sext.w	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	seqz	a0, a0
 	andn	a0, a0, a1
@@ -23,9 +23,10 @@ func000000000000002c:
 	ret
 
 func000000000000008a:
+	slli	a0, a0, 32
 	zext.b	a1, a1
-	srliw	a0, a0, 31
 	sltiu	a1, a1, 10
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

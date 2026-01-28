@@ -1,7 +1,8 @@
 func00000000000000af:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	li	a3, -1
 	slli	a1, a1, 24
+	srli	a2, a2, 63
 	slli	a3, a3, 56
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1

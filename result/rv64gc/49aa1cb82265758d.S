@@ -32,11 +32,10 @@ func0000000000000210:
 func0000000000000218:
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	addi	a2, a2, -65
-	sltiu	a2, a2, 26
-	or	a0, a0, a2
 	srli	a1, a1, 63
+	sltiu	a2, a2, 26
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

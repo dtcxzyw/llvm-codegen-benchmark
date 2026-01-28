@@ -19,11 +19,10 @@ func00000000000000ca:
 	slli	a0, a0, 56
 	slli	a2, a2, 56
 	slli	a1, a1, 56
-	srai	a0, a0, 56
 	srai	a2, a2, 56
 	srai	a1, a1, 56
-	slt	a1, a1, a2
 	srli	a0, a0, 63
+	slt	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -34,7 +33,6 @@ func0000000000000146:
 	slli	a2, a2, 56
 	srai	a1, a1, 56
 	srai	a0, a0, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slt	a0, a0, a1

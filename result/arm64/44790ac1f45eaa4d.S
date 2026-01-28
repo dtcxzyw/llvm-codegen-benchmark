@@ -25,7 +25,7 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	orr	w9, w1, w0
 	cmn	w8, #1
 	cset	w8, gt
@@ -43,7 +43,7 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	orr	w9, w1, w0
 	cmp	w8, #0
 	cset	w8, mi

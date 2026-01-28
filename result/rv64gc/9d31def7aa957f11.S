@@ -26,17 +26,19 @@ func0000000000000061:
 	ret
 
 func0000000000000006:
-	addw	a1, a1, a0
-	srliw	a0, a0, 31
-	addi	a0, a0, -1
-	and	a0, a0, a1
+	slli	a2, a0, 32
+	addw	a0, a0, a1
+	srli	a2, a2, 63
+	addi	a2, a2, -1
+	and	a0, a0, a2
 	ret
 
 func0000000000000046:
-	addw	a1, a1, a0
-	srliw	a0, a0, 31
-	addi	a0, a0, -1
-	and	a0, a0, a1
+	slli	a2, a0, 32
+	addw	a0, a0, a1
+	srli	a2, a2, 63
+	addi	a2, a2, -1
+	and	a0, a0, a2
 	ret
 
 func0000000000000004:

@@ -10,7 +10,8 @@ func000000000000018c:
 
 func000000000000014c:
 	zext.b	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	snez	a1, a1
 	or	a1, a1, a2
@@ -19,7 +20,8 @@ func000000000000014c:
 
 func00000000000000c8:
 	zext.b	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	sltiu	a1, a1, 222
 	xori	a1, a1, 1
 	or	a1, a1, a2

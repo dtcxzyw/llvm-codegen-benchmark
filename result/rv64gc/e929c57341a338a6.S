@@ -30,7 +30,6 @@ func0000000000000008:
 
 func000000000000000c:
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -38,7 +37,6 @@ func000000000000000c:
 
 func0000000000000014:
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	or	a0, a0, a1

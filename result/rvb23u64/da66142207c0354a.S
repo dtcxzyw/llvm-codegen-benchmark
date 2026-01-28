@@ -31,7 +31,7 @@ func000000000000028a:
 	ret
 
 func00000000000000c1:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	addiw	a0, a0, -2
 	srli	a1, a1, 63
 	seqz	a0, a0

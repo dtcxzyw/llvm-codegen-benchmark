@@ -105,7 +105,7 @@ func0000000000000108:
 
 func000000000000002a:
 	and	w8, w2, #0xff
-	sxtb	w9, w1
+	lsl	w9, w1, #24
 	cmp	w8, #2
 	cset	w8, eq
 	cmn	w9, #1

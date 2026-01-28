@@ -41,7 +41,7 @@ func0000000000000101:
 	ret
 
 func000000000000002a:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	and	w9, w2, #0xffff
 	and	w10, w1, #0xffff
 	cmn	w8, #1
@@ -59,7 +59,7 @@ func0000000000000028:
 	ret
 
 func000000000000014c:
-	sxth	w8, w2
+	lsl	w8, w2, #16
 	and	w9, w0, #0xffff
 	cmp	w9, w1, uxth
 	ccmn	w8, #1, #4, ne

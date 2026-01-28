@@ -115,7 +115,7 @@ func0000000000000281:
 	ret
 
 func0000000000000086:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	and	w9, w1, #0xff
 	cmp	w8, #0
 	ccmp	w9, #7, #2, mi
@@ -132,7 +132,7 @@ func0000000000000094:
 	ret
 
 func000000000000014c:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	and	w9, w0, #0xffff
 	cmp	w9, #5
 	ccmn	w8, #1, #4, ne

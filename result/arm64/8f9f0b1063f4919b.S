@@ -1,5 +1,5 @@
 func000000000000090c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	sub	w9, w1, #65
 	cmp	w8, #0
 	ccmp	w9, #26, #0, pl
@@ -120,7 +120,7 @@ func0000000000000a08:
 	ret
 
 func000000000000004c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	cmp	w8, #0
 	ccmp	w1, #1, #4, pl
 	cset	w0, eq

@@ -1,6 +1,7 @@
 func000000000000004c:
-	srliw	a1, a0, 31
+	slli	a1, a0, 32
 	lui	a2, 524288
+	srli	a1, a1, 63
 	addiw	a2, a2, -17
 	and	a0, a0, a2
 	addi	a0, a0, -8

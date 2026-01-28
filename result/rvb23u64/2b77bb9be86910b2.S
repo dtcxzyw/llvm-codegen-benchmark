@@ -1,7 +1,8 @@
 func000000000000000a:
 	andi	a0, a0, 1
-	srliw	a3, a1, 31
+	slli	a3, a1, 32
 	addi	a2, a2, -5
+	srli	a3, a3, 63
 	czero.nez	a2, a2, a3
 	addi	a2, a2, 5
 	czero.nez	a1, a1, a0

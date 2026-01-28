@@ -2,12 +2,11 @@ func000000000000008c:
 	slli	a3, a0, 56
 	zext.b	a0, a0
 	or	a1, a1, a2
-	srai	a3, a3, 56
 	addi	a0, a0, -95
-	seqz	a0, a0
-	or	a0, a0, a1
 	srli	a3, a3, 63
-	or	a0, a0, a3
+	seqz	a0, a0
+	or	a1, a1, a3
+	or	a0, a0, a1
 	ret
 
 func0000000000000082:

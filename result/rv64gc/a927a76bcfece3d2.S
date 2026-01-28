@@ -47,7 +47,8 @@ func000000000000018a:
 
 func00000000000000c6:
 	and	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 
@@ -83,7 +84,8 @@ func000000000000010c:
 
 func00000000000000cc:
 	sext.w	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -91,7 +93,8 @@ func00000000000000cc:
 
 func00000000000000c1:
 	sext.w	a1, a1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

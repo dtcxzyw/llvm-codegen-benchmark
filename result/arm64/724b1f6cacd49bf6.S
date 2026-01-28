@@ -27,7 +27,7 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	w8, #0
 	cset	w8, mi
 	tst	w0, #0xffff

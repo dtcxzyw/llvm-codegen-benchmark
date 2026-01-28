@@ -33,8 +33,7 @@ func00000000000000cc:
 	ret
 
 func00000000000000c6:
-	cmp	w0, w1
-	csel	w8, w0, w1, lt
+	orr	w8, w0, w1
 	cmn	w0, #1
 	ccmp	w8, #0, #0, gt
 	cset	w0, mi

@@ -180,7 +180,6 @@ func0000000000000048:
 
 func0000000000000298:
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -206,7 +205,6 @@ func0000000000000054:
 
 func0000000000000182:
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1

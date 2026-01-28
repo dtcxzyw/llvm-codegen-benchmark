@@ -66,7 +66,8 @@ func0000000000000141:
 	li	a0, 3
 	ret
 .LBB4_2:
-	srliw	a0, a1, 31
+	slli	a1, a1, 32
+	srli	a0, a1, 63
 	addi	a0, a0, 3
 	ret
 

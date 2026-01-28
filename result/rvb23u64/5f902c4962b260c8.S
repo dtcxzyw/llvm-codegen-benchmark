@@ -46,9 +46,10 @@ func0000000000000188:
 	ret
 
 func000000000000018a:
+	slli	a0, a0, 32
 	snez	a2, a2
 	and	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

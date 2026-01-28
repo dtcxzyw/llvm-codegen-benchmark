@@ -36,7 +36,6 @@ func0000000000000001:
 
 func000000000000000a:
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	or	a1, a1, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1

@@ -26,7 +26,8 @@ func0000000000000006:
 
 func000000000000000a:
 	andi	a0, a0, 1
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

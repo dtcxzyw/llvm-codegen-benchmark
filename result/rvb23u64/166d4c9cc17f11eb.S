@@ -37,7 +37,7 @@ func0000000000000090:
 	ret
 
 func0000000000000094:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	andi	a2, a2, 192
 	addi	a2, a2, -128
 	srli	a0, a0, 63

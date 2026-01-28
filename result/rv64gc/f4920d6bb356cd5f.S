@@ -1,7 +1,8 @@
 func000000000000002a:
+	slli	a3, a1, 32
 	zext.b	a2, a2
 	snez	a2, a2
-	srliw	a3, a1, 31
+	srli	a3, a3, 63
 	and	a2, a2, a3
 	andi	a0, a0, 1
 	bnez	a2, .LBB0_3

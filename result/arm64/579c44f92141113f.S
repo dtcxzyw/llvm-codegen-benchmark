@@ -29,7 +29,7 @@ func0000000000000181:
 	ret
 
 func000000000000002a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0x40
 	ccmn	w8, #1, #4, eq
 	cset	w0, gt

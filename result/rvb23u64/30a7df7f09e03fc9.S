@@ -34,8 +34,9 @@ func00000000000002aa:
 	slli	a2, a2, 1
 	sub	a1, a1, a0
 	sub	a2, a2, a1
-	srliw	a0, a2, 31
-	xori	a0, a0, 1
+	slli	a2, a2, 32
+	srli	a2, a2, 63
+	xori	a0, a2, 1
 	ret
 
 func0000000000000004:

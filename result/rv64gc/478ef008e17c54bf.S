@@ -3,8 +3,9 @@ func000000000000314a:
 	sext.w	a3, a0
 	or	a0, a0, a1
 	xor	a2, a2, a3
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
 	snez	a1, a2
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

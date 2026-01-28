@@ -38,9 +38,8 @@ func000000000000010c:
 func00000000000000cc:
 	zext.b	a0, a0
 	slli	a1, a1, 48
-	srai	a1, a1, 48
-	addi	a0, a0, -2
 	srli	a1, a1, 63
+	addi	a0, a0, -2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -86,9 +85,8 @@ func0000000000000084:
 func000000000000014c:
 	zext.b	a0, a0
 	slli	a1, a1, 48
-	srai	a1, a1, 48
-	addi	a0, a0, -10
 	srli	a1, a1, 63
+	addi	a0, a0, -10
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1

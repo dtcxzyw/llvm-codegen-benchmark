@@ -10,7 +10,7 @@ func0000000000000021:
 
 func000000000000002a:
 	mov	w9, #13184
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	movk	w9, #481, lsl #16
 	cmp	w2, w9
 	cset	w9, eq
@@ -33,7 +33,7 @@ func000000000000018c:
 	ret
 
 func000000000000018a:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	w2, #0
 	cset	w9, ne
 	cmn	w8, #1

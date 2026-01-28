@@ -8,10 +8,11 @@ func0000000000000421:
 	ret
 
 func000000000000054a:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	ori	a2, a2, 1
-	srliw	a0, a0, 31
 	sext.w	a2, a2
+	srli	a0, a0, 63
 	slt	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1

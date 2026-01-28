@@ -41,7 +41,8 @@ func0000000000000181:
 
 func0000000000000186:
 	sext.w	a2, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	andn	a0, a0, a1
 	czero.eqz	a0, a0, a2
 	ret
@@ -79,8 +80,10 @@ func00000000000000c6:
 
 func0000000000000146:
 	andi	a1, a1, 1
-	srliw	a2, a2, 31
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	slli	a2, a2, 32
+	srli	a2, a2, 63
+	srli	a0, a0, 63
 	xori	a2, a2, 1
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

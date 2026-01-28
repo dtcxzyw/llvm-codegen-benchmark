@@ -53,7 +53,7 @@ func0000000000000502:
 	ret
 
 func0000000000000a82:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	sub	w9, w2, #1
 	cmp	w9, w0
 	ccmn	w8, #1, #0, ne

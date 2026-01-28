@@ -9,7 +9,7 @@ func0000000000000421:
 	ret
 
 func000000000000042a:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	tst	w1, #0xffff
 	mov	w9, #2048
 	ccmp	w2, w9, #0, eq

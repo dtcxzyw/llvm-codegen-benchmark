@@ -45,7 +45,7 @@ func000000000000018c:
 	ret
 
 func0000000000000026:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	bclri	a1, a1, 63
 	addi	a1, a1, -63
 	seqz	a1, a1
@@ -54,7 +54,7 @@ func0000000000000026:
 	ret
 
 func0000000000000306:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	bclri	a1, a1, 0
 	bclri	a1, a1, 63
 	sltiu	a1, a1, 126
@@ -64,7 +64,7 @@ func0000000000000306:
 	ret
 
 func0000000000000186:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	andi	a1, a1, -32
 	bclri	a1, a1, 63
 	srli	a0, a0, 63

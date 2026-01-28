@@ -1,5 +1,5 @@
 func000000000000014a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1
@@ -39,7 +39,7 @@ func000000000000012c:
 func0000000000000144:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	sltu	a0, a0, a1
@@ -296,7 +296,7 @@ func000000000000002a:
 	ret
 
 func0000000000000146:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1

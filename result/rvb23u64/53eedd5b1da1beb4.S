@@ -5,7 +5,7 @@ func0000000000000061:
 	ret
 
 func000000000000006a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addi	a1, a1, 1
 	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0
@@ -53,7 +53,7 @@ func0000000000000068:
 	ret
 
 func000000000000000a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addi	a1, a1, 5
 	srli	a0, a0, 63
 	czero.eqz	a0, a1, a0

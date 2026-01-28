@@ -23,7 +23,7 @@ func0000000000000544:
 	ret
 
 func000000000000070a:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	and	w9, w2, #0xffff
 	cmn	w8, #1
 	ccmp	w1, w9, #0, gt

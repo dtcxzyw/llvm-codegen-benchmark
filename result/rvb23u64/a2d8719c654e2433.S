@@ -166,7 +166,8 @@ func00000000000000ca:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	addi	a2, a2, 348
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	slt	a0, a0, a1
 	andn	a0, a0, a2
 	ret

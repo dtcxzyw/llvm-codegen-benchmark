@@ -11,7 +11,7 @@ func0000000000000021:
 .LCPI1_0:
 	.long	63
 func0000000000000146:
-	vpminsd	%ymm2, %ymm1, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpmovd2m	%ymm1, %k0
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0

@@ -40,11 +40,9 @@ func00000000000000cc:
 	retq
 
 func00000000000000c6:
-	cmpl	%esi, %edi
-	cmovll	%edi, %esi
 	testl	%edi, %edi
 	setns	%cl
-	testl	%esi, %esi
+	orl	%edi, %esi
 	sets	%al
 	andb	%cl, %al
 	retq

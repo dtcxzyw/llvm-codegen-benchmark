@@ -42,7 +42,7 @@ func0000000000000034:
 	ret
 
 func000000000000002a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -58,14 +58,14 @@ func0000000000000028:
 	ret
 
 func0000000000000026:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func000000000000002b:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

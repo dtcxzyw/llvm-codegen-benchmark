@@ -118,7 +118,7 @@ func00000000000000c1:
 	ret
 
 func00000000000000c4:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	srli	a1, a1, 63
 	srli	a0, a0, 16
 	czero.nez	a0, a1, a0

@@ -16,11 +16,10 @@ func0000000000000504:
 
 func000000000000050a:
 	slli	a0, a0, 48
-	srai	a2, a0, 48
-	srli	a0, a0, 48
-	sltu	a0, a0, a1
-	srli	a2, a2, 63
-	not	a1, a2
+	srli	a2, a0, 48
+	srli	a0, a0, 63
+	sltu	a1, a2, a1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

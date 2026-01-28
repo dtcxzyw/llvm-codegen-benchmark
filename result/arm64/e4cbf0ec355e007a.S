@@ -25,7 +25,7 @@ func0000000000000101:
 	ret
 
 func0000000000000141:
-	sxth	w8, w2
+	lsl	w8, w2, #16
 	cmn	w8, #1
 	cset	w8, gt
 	cmp	w0, #0

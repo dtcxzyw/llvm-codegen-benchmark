@@ -32,7 +32,8 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	andn	a0, a1, a0
 	ret
 

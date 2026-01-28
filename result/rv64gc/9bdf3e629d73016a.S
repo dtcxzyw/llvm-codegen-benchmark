@@ -1,9 +1,10 @@
 func00000000000000c1:
 	sext.w	a2, a2
-	srliw	a1, a1, 31
-	not	a1, a1
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	seqz	a2, a2
-	and	a1, a1, a2
+	not	a1, a1
+	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

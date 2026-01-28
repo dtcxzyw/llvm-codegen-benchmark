@@ -1,5 +1,6 @@
 func0000000000000306:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	sext.w	a0, a0
@@ -123,7 +124,8 @@ func0000000000000084:
 	ret
 
 func0000000000000301:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	sext.w	a0, a0

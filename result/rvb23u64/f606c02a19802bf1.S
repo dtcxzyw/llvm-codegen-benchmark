@@ -27,7 +27,7 @@ func0000000000000038:
 	ret
 
 func00000000000000d4:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sltiu	a0, a0, 32
@@ -35,7 +35,7 @@ func00000000000000d4:
 	ret
 
 func00000000000000d8:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
@@ -43,7 +43,7 @@ func00000000000000d8:
 	ret
 
 func00000000000000c1:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	czero.nez	a0, a1, a0
 	ret

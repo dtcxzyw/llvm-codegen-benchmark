@@ -16,7 +16,6 @@ func000000000000010a:
 	srli	a0, a0, 8
 	addi	a0, a0, 1
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

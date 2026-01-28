@@ -25,7 +25,8 @@ func0000000000000021:
 	ret
 
 func0000000000000018:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	mulw	a0, a1, a0
@@ -40,7 +41,8 @@ func0000000000000005:
 	ret
 
 func0000000000000019:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	mulw	a0, a1, a0

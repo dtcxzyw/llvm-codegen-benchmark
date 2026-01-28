@@ -20,7 +20,7 @@ func0000000000004082:
 func000000000000408c:
 	and	w9, w0, #0xff
 	mov	w8, #92
-	sxtb	w10, w0
+	lsl	w10, w0, #24
 	and	w11, w1, #0xff
 	cmp	w9, #33
 	ccmp	w11, w8, #0, ne

@@ -44,14 +44,14 @@ func0000000000000081:
 	ret
 
 func000000000000014c:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000cc:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	srli	a1, a1, 63
 	czero.eqz	a0, a1, a0
 	ret

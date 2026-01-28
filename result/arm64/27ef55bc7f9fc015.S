@@ -17,8 +17,8 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	sxtb	w8, w2
-	sxtb	w9, w1
+	lsl	w8, w2, #24
+	lsl	w9, w1, #24
 	cmn	w8, #1
 	cset	w8, gt
 	cmn	w9, #1
@@ -61,7 +61,7 @@ func0000000000000024:
 
 func000000000000002a:
 	and	w8, w2, #0xff
-	sxtb	w9, w1
+	lsl	w9, w1, #24
 	cmp	w8, #2
 	cset	w8, eq
 	cmn	w9, #1

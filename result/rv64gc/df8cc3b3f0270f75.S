@@ -29,7 +29,6 @@ func0000000000000202:
 func000000000000060c:
 	slli	a1, a1, 56
 	sltiu	a2, a2, 2
-	srai	a1, a1, 56
 	xori	a2, a2, 1
 	srli	a1, a1, 63
 	and	a1, a1, a2

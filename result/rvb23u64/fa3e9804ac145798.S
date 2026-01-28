@@ -11,7 +11,7 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
@@ -31,7 +31,7 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	or	a0, a0, a1

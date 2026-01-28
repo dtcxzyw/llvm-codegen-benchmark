@@ -29,9 +29,7 @@ func0000000000000021:
 	retq
 
 func00000000000000ca:
-	cmpl	%edx, %esi
-	cmovll	%esi, %edx
-	testl	%edx, %edx
+	orl	%edx, %esi
 	setns	%cl
 	cmpl	$256, %edi
 	setl	%al

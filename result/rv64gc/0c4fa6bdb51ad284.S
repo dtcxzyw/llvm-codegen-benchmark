@@ -38,7 +38,8 @@ func000000000000108a:
 	srliw	a2, a1, 30
 	bnez	a2, .LBB2_4
 .LBB2_2:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 .LBB2_3:
@@ -46,7 +47,8 @@ func000000000000108a:
 	srliw	a2, a2, 30
 	beqz	a2, .LBB2_2
 .LBB2_4:
-	srliw	a0, a1, 31
+	slli	a0, a1, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

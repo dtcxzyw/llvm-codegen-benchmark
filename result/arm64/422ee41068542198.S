@@ -58,14 +58,14 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	x1, #0x7fffffffffffffff
 	ccmn	w8, #1, #0, ne
 	cset	w0, gt
 	ret
 
 func000000000000028a:
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	mov	w8, #63
 	and	x10, x1, #0x7fffffffffffffff
 	cmn	w9, #1
@@ -74,7 +74,7 @@ func000000000000028a:
 	ret
 
 func000000000000030a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	x9, x1, #0x7fffffffffffffff
 	cmn	w8, #1
 	ccmp	x9, #2, #2, le
@@ -82,7 +82,7 @@ func000000000000030a:
 	ret
 
 func000000000000018a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	x1, #0x7fffffffffffffff
 	ccmn	w8, #1, #0, eq
 	cset	w0, gt

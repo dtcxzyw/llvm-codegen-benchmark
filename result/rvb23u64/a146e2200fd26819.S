@@ -38,7 +38,7 @@ func0000000000004088:
 	ret
 
 func0000000000001214:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	addiw	a2, a2, -128
 	seqz	a2, a2

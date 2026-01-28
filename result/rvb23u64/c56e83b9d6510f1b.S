@@ -6,7 +6,7 @@ func0000000000000184:
 	ret
 
 func000000000000014a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	lui	a2, 244141
 	addi	a2, a2, -1537

@@ -23,14 +23,16 @@ func000000000000000a:
 	bge	a2, a3, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:
-	srliw	a0, a2, 31
-	xori	a0, a0, 1
+	slli	a2, a2, 32
+	srli	a2, a2, 63
+	xori	a0, a2, 1
 	ret
 .LBB1_3:
 	mv	a2, a3
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	srliw	a0, a1, 31
-	xori	a0, a0, 1
+	slli	a2, a1, 32
+	srli	a2, a2, 63
+	xori	a0, a2, 1
 	ret
 

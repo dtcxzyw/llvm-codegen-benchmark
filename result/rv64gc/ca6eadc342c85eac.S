@@ -49,7 +49,6 @@ func000000000000002c:
 func00000000000000cc:
 	zext.b	a0, a0
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	srli	a1, a1, 63
 	snez	a0, a0
 	xor	a0, a0, a1
@@ -58,7 +57,6 @@ func00000000000000cc:
 func000000000000018a:
 	slli	a0, a0, 56
 	zext.b	a1, a1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	xor	a0, a0, a1

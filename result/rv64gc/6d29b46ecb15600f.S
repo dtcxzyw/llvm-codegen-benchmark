@@ -18,7 +18,6 @@ func0000000000000318:
 func000000000000030c:
 	slli	a0, a0, 56
 	slli	a1, a1, 53
-	srai	a0, a0, 56
 	srli	a1, a1, 63
 	srli	a0, a0, 63
 	or	a0, a0, a1

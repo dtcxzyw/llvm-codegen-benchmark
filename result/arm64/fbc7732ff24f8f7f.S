@@ -54,7 +54,7 @@ func0000000000000908:
 	ret
 
 func000000000000010c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w1, #0xff
 	sub	w9, w9, #65
 	cmp	w8, #0
@@ -111,7 +111,7 @@ func0000000000000848:
 	ret
 
 func0000000000000114:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w1, #0xff
 	sub	w9, w9, #25
 	cmn	w8, #1

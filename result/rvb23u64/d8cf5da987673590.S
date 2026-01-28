@@ -1,5 +1,5 @@
 func000000000000008c:
-	sext.b	a2, a0
+	slli	a2, a0, 56
 	zext.b	a0, a0
 	addi	a0, a0, -95
 	srli	a2, a2, 63
@@ -29,7 +29,7 @@ func0000000000000202:
 
 func0000000000000302:
 	zext.b	a2, a0
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	addi	a2, a2, -95
 	or	a0, a0, a1

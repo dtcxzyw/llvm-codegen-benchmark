@@ -20,7 +20,7 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -60,7 +60,7 @@ func0000000000000188:
 	ret
 
 func0000000000000026:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	seqz	a1, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1

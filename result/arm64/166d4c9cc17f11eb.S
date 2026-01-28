@@ -42,7 +42,7 @@ func0000000000000090:
 	ret
 
 func0000000000000094:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w2, #0xc0
 	cmp	w9, #128
 	cset	w9, eq

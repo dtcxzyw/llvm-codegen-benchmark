@@ -18,8 +18,9 @@ func000000000000014c:
 	ret
 
 func0000000000000141:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	addiw	a1, a1, -8
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	and	a0, a0, a2
 	seqz	a1, a1
@@ -77,17 +78,19 @@ func000000000000002a:
 	ret
 
 func000000000000018a:
+	slli	a1, a1, 32
 	sext.w	a2, a2
-	srliw	a1, a1, 31
 	sltiu	a2, a2, -1
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000c1:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	addiw	a1, a1, -5
+	srli	a2, a2, 63
 	and	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -114,9 +114,10 @@ func0000000000000581:
 	ret
 
 func000000000000002a:
+	slli	a0, a0, 32
 	sub	a1, a1, a2
-	srliw	a0, a0, 31
 	addi	a1, a1, -72
+	srli	a0, a0, 63
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -174,9 +175,10 @@ func0000000000000188:
 	ret
 
 func00000000000000ca:
+	slli	a0, a0, 32
 	sub	a1, a1, a2
-	srliw	a0, a0, 31
 	srli	a1, a1, 63
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

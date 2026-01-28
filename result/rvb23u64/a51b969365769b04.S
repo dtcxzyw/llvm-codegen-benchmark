@@ -34,9 +34,8 @@ func000000000000002c:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a2
-	sext.w	a1, a1
-	max	a1, a1, a2
+	and	a1, a1, a2
+	slli	a1, a1, 32
 	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret

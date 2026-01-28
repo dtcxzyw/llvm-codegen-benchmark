@@ -135,7 +135,6 @@ func0000000000000084:
 func000000000000020c:
 	slli	a0, a0, 56
 	zext.b	a2, a2
-	srai	a0, a0, 56
 	sltiu	a2, a2, 92
 	or	a1, a1, a2
 	srli	a0, a0, 63
@@ -145,7 +144,6 @@ func000000000000020c:
 func0000000000000218:
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	sltiu	a2, a2, 26
 	or	a0, a0, a2
 	srli	a1, a1, 63
@@ -165,10 +163,9 @@ func0000000000000098:
 func0000000000000214:
 	slli	a0, a0, 56
 	zext.b	a2, a2
-	srai	a0, a0, 56
 	sltiu	a2, a2, 4
-	or	a1, a1, a2
 	srli	a0, a0, 63
+	or	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

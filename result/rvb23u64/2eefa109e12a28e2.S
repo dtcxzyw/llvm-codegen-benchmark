@@ -1,5 +1,5 @@
 func0000000000000546:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	zext.b	a2, a2
 	or	a1, a1, a2
 	sext.h	a1, a1

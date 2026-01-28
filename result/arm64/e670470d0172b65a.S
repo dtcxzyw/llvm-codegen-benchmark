@@ -86,7 +86,7 @@ func000000000000318c:
 
 func000000000000042a:
 	and	w8, w1, #0xff
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	and	w10, w2, #0xff
 	cmp	w8, #2
 	ccmp	w10, #2, #0, eq

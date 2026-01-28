@@ -1,6 +1,7 @@
 func000000000000004d:
 	add	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -27,7 +28,8 @@ func0000000000000008:
 
 func000000000000004c:
 	add	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	slli	a0, a0, 32

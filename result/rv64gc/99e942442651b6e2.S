@@ -82,10 +82,9 @@ func0000000000000d81:
 func0000000000000d8a:
 	slli	a0, a0, 56
 	addi	a2, a2, 1
-	srai	a0, a0, 56
 	xor	a1, a1, a2
-	snez	a1, a1
 	srli	a0, a0, 63
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -102,7 +101,6 @@ func0000000000000821:
 func0000000000000c86:
 	slli	a0, a0, 56
 	addi	a2, a2, 1
-	srai	a0, a0, 56
 	sltu	a1, a2, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -120,7 +118,6 @@ func0000000000000c8a:
 func0000000000000d86:
 	slli	a0, a0, 56
 	addi	a2, a2, 1
-	srai	a0, a0, 56
 	xor	a1, a1, a2
 	snez	a1, a1
 	srli	a0, a0, 63

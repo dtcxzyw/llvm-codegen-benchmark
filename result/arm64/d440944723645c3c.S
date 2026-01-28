@@ -1,5 +1,5 @@
 func0000000000000154:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmp	x0, w2, uxtw
 	ccmn	w8, #1, #4, lo
 	cset	w0, gt

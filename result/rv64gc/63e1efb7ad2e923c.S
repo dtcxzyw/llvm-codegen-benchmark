@@ -10,7 +10,6 @@ func000000000000002c:
 func0000000000000026:
 	slli	a0, a0, 56
 	xor	a1, a1, a2
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1
@@ -106,7 +105,6 @@ func0000000000000101:
 func000000000000002a:
 	slli	a0, a0, 56
 	xor	a1, a1, a2
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

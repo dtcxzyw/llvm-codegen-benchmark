@@ -71,7 +71,7 @@ func0000000000000181:
 	ret
 
 func000000000000018a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	xor	a1, a1, a2
 	snez	a1, a1
 	srli	a0, a0, 63
@@ -79,14 +79,14 @@ func000000000000018a:
 	ret
 
 func0000000000000086:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sltu	a1, a1, a2
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	xor	a1, a1, a2
 	seqz	a1, a1
 	srli	a0, a0, 63
@@ -108,7 +108,7 @@ func0000000000000088:
 	ret
 
 func0000000000000186:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	xor	a1, a1, a2
 	snez	a1, a1
 	srli	a0, a0, 63

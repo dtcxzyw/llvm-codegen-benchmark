@@ -32,7 +32,7 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	maxu	a0, a0, a1
+	or	a0, a0, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

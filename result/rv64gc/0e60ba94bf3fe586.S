@@ -1,10 +1,11 @@
 func000000000000014c:
 	zext.b	a0, a0
-	srliw	a2, a2, 31
-	xori	a2, a2, 1
-	and	a1, a1, a2
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	snez	a0, a0
+	xori	a2, a2, 1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func00000000000000c1:
@@ -97,9 +98,10 @@ func0000000000000184:
 
 func0000000000000141:
 	zext.b	a0, a0
-	srliw	a2, a2, 31
-	xori	a2, a2, 1
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a0, a0, -1
+	xori	a2, a2, 1
 	and	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

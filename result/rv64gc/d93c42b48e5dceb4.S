@@ -27,7 +27,6 @@ func000000000000018a:
 func000000000000008a:
 	slli	a0, a0, 56
 	sext.w	a2, a2
-	srai	a0, a0, 56
 	sltu	a1, a1, a2
 	srli	a0, a0, 63
 	not	a0, a0

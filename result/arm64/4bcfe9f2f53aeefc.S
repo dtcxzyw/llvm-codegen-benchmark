@@ -58,7 +58,7 @@ func0000000000000308:
 	ret
 
 func000000000000002a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0x3
 	ccmn	w8, #1, #0, ne
 	cset	w0, gt

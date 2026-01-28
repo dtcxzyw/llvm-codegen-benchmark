@@ -17,10 +17,11 @@ func0000000000000884:
 	ret
 
 func0000000000000d8a:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, 1
-	srliw	a0, a0, 31
 	xor	a1, a1, a2
+	srli	a0, a0, 63
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -47,10 +48,11 @@ func00000000000004ca:
 	ret
 
 func000000000000054a:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, -1
-	srliw	a0, a0, 31
 	slt	a1, a1, a2
+	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -19,9 +19,7 @@ func000000000000002a:
 	retq
 
 func00000000000000c1:
-	cmpl	%edx, %esi
-	cmovgl	%esi, %edx
-	testl	%edx, %edx
+	testl	%edx, %esi
 	sets	%cl
 	testl	%edi, %edi
 	sete	%al

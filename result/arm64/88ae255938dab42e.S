@@ -13,7 +13,7 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sxth	w8, w2
+	lsl	w8, w2, #16
 	and	w9, w0, w1
 	cmp	w8, #0
 	cset	w8, mi
@@ -21,7 +21,7 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	sxth	w8, w2
+	lsl	w8, w2, #16
 	and	w9, w0, w1
 	cmn	w8, #1
 	cset	w8, gt

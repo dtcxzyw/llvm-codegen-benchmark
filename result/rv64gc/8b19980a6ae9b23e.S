@@ -1,5 +1,6 @@
 func0000000000000014:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	not	a3, a3
 	or	a2, a2, a3
 	andi	a2, a2, 1

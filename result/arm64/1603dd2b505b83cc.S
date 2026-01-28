@@ -19,7 +19,7 @@ func0000000000000044:
 	ret
 
 func000000000000004a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w2, #0x1
 	cset	w9, eq
 	cmn	w8, #1

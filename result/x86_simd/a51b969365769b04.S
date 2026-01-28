@@ -44,7 +44,7 @@ func000000000000002c:
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpmaxsd	%ymm2, %ymm1, %ymm0
+	vpand	%ymm2, %ymm1, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

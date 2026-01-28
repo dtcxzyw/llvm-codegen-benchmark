@@ -24,7 +24,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	li	a1, 1
 	andn	a0, a1, a0
@@ -33,7 +34,8 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	orn	a0, a0, a1
 	andi	a0, a0, 1
 	bseti	a1, zero, 63

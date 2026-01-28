@@ -30,7 +30,7 @@ func0000000000003021:
 
 func00000000000010c4:
 	and	w8, w2, #0xff
-	sxtb	w9, w1
+	lsl	w9, w1, #24
 	and	w10, w0, #0xff
 	cmp	w8, #26
 	ccmp	w10, #26, #0, hs

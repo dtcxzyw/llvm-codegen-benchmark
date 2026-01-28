@@ -22,10 +22,10 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	slli	a1, a1, 56
-	srai	a1, a1, 56
+	slli	a1, a1, 24
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

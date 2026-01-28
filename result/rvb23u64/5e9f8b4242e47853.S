@@ -17,7 +17,7 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	andi	a0, a0, 1
@@ -43,7 +43,7 @@ func0000000000000028:
 	ret
 
 func0000000000000014:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	orn	a0, a0, a1
 	andi	a0, a0, 1

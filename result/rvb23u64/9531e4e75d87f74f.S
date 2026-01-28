@@ -21,7 +21,8 @@ func0000000000000011:
 	ret
 
 func0000000000000029:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	slli	a1, a1, 32
 	add.uw	a0, a0, a1
@@ -51,7 +52,8 @@ func0000000000000031:
 	ret
 
 func0000000000000019:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	slli	a1, a1, 32
 	add.uw	a0, a0, a1

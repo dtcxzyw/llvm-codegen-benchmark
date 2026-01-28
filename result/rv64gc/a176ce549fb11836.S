@@ -50,11 +50,12 @@ func00000000000010b0:
 
 func0000000000006082:
 	sext.w	a1, a1
-	srliw	a2, a2, 31
-	seqz	a0, a0
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	seqz	a1, a1
-	or	a0, a0, a2
+	seqz	a0, a0
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000001098:

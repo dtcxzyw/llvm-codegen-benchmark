@@ -26,8 +26,8 @@ func0000000000000004:
 func00000000000001aa:
 	mul	a0, a0, a1
 	sh3add	a0, a0, a0
-	slli	a0, a0, 2
-	srliw	a0, a0, 31
+	slli	a0, a0, 34
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

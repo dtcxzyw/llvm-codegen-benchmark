@@ -1,11 +1,12 @@
 func0000000000000186:
 	lui	a3, 16
+	slli	a0, a0, 32
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	xor	a1, a1, a2
 	snez	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
@@ -23,8 +24,9 @@ func0000000000000021:
 
 func000000000000002a:
 	lui	a3, 16
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
 	addi	a3, a3, -1
+	srli	a0, a0, 63
 	and	a2, a2, a3
 	and	a1, a1, a3
 	xor	a1, a1, a2

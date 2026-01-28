@@ -31,7 +31,6 @@ func000000000000000a:
 	add	a0, a0, a1
 	addi	a0, a0, -40
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

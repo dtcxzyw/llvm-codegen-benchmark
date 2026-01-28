@@ -168,8 +168,8 @@ func0000000000000318:
 	ret
 
 func00000000000000c6:
-	sxtb	w8, w2
-	sxtb	w9, w1
+	lsl	w8, w2, #24
+	lsl	w9, w1, #24
 	cmp	w8, #0
 	cset	w8, mi
 	cmp	w9, #0

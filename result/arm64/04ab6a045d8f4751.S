@@ -61,7 +61,7 @@ func0000000000000602:
 	ret
 
 func000000000000004c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w0, #0xff
 	cmp	w8, #0
 	ccmp	w9, #22, #4, pl
@@ -69,7 +69,7 @@ func000000000000004c:
 	ret
 
 func0000000000000182:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w0, #0xff
 	cmp	w9, #95
 	ccmp	w8, #0, #8, ne

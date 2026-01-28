@@ -43,7 +43,7 @@ func00000000000000cc:
 	retq
 
 func00000000000000c6:
-	vpminsd	%ymm1, %ymm0, %ymm1
+	vpor	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0

@@ -50,19 +50,22 @@ func0000000000000018:
 	ret
 
 func000000000000004a:
+	slli	a0, a0, 32
 	flt.s	a1, fa0, fa1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
 func0000000000000046:
+	slli	a0, a0, 32
 	flt.s	a1, fa0, fa1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	feq.s	a1, fa0, fa1
 	and	a0, a0, a1

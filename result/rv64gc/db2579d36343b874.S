@@ -35,11 +35,10 @@ func0000000000000003:
 func000000000000000c:
 	andi	a0, a0, 1
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	addi	a0, a0, -1
 	srli	a2, a2, 63
-	andi	a0, a0, 1024
+	addi	a0, a0, -1
 	xori	a2, a2, 1
+	andi	a0, a0, 1024
 	slli	a2, a2, 28
 	or	a0, a0, a1
 	or	a0, a0, a2

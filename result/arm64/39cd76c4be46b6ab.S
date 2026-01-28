@@ -52,7 +52,7 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w2, #2048
 	cset	w9, eq
 	and	w9, w1, w9

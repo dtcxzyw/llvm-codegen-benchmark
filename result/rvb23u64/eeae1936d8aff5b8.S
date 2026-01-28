@@ -33,7 +33,7 @@ func0000000000003021:
 func00000000000010c4:
 	zext.b	a0, a0
 	zext.b	a2, a2
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	minu	a0, a2, a0
 	sltiu	a0, a0, 26

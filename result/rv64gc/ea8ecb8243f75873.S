@@ -1,6 +1,7 @@
 func00000000000000aa:
+	slli	a0, a0, 32
 	fle.d	a1, fa0, fa1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

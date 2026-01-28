@@ -36,10 +36,11 @@ func0000000000000181:
 	ret
 
 func0000000000000186:
+	slli	a0, a0, 32
 	sext.w	a2, a2
 	not	a1, a1
-	srliw	a0, a0, 31
 	snez	a2, a2
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -73,10 +74,12 @@ func00000000000000c6:
 	ret
 
 func0000000000000146:
-	srliw	a2, a2, 31
+	slli	a0, a0, 32
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	or	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

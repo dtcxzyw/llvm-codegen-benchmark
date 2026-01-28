@@ -30,8 +30,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	add	w8, w1, #1
-	sxtb	w8, w8
+	mov	w8, #16777216
+	add	w8, w8, w1, lsl #24
 	cmn	w8, #1
 	cset	w8, gt
 	and	w0, w0, w8

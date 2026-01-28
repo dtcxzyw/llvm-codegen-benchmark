@@ -17,7 +17,8 @@ func0000000000000007:
 	ret
 
 func000000000000001a:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -25,7 +26,8 @@ func000000000000001a:
 	ret
 
 func0000000000000019:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -42,7 +44,8 @@ func0000000000000006:
 	ret
 
 func000000000000001b:
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	and	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

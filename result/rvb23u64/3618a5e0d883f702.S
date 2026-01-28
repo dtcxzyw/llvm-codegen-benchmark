@@ -20,7 +20,7 @@ func0000000000000202:
 	ret
 
 func0000000000000502:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	andi	a1, a1, 240
 	srli	a2, a2, 63
 	addi	a1, a1, -224

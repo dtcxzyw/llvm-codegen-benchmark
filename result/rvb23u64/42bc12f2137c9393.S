@@ -9,7 +9,8 @@ func000000000000002a:
 	or	a0, a0, a2
 	fcvt.w.s	a1, fa0, rtz
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

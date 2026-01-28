@@ -62,10 +62,9 @@ func0000000000000282:
 	lui	a3, 16
 	slli	a2, a2, 56
 	addi	a3, a3, -1
-	srai	a2, a2, 56
+	srli	a2, a2, 63
 	and	a1, a1, a3
 	and	a0, a0, a3
-	srli	a2, a2, 63
 	xori	a2, a2, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

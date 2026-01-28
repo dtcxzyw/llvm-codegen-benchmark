@@ -28,7 +28,6 @@ func0000000000000006:
 
 func0000000000000018:
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	sext.w	a2, a2
 	srli	a1, a1, 63
 	addi	a1, a1, -1

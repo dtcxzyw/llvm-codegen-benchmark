@@ -20,9 +20,9 @@ func000000000000000a:
 	ret
 
 func000000000000014a:
-	addiw	a1, a1, -1
-	sext.w	a0, a0
-	min	a0, a0, a1
+	addi	a1, a1, -1
+	or	a0, a0, a1
+	slli	a0, a0, 32
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

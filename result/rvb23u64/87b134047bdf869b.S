@@ -136,7 +136,8 @@ func000000000000008c:
 	ret
 
 func0000000000000186:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

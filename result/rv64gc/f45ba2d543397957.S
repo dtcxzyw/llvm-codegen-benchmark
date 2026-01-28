@@ -21,7 +21,6 @@ func000000000000054a:
 	slli	a0, a0, 56
 	sext.w	a1, a1
 	zext.b	a2, a2
-	srai	a0, a0, 56
 	slt	a1, a2, a1
 	srli	a0, a0, 63
 	not	a0, a0

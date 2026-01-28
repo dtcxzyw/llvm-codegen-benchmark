@@ -10,7 +10,7 @@ func0000000000000421:
 	ret
 
 func000000000000042a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	zext.h	a1, a1
 	sext.w	a2, a2
 	binvi	a2, a2, 11

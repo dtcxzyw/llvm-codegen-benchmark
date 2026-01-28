@@ -36,7 +36,7 @@ func0000000000000020:
 	ret
 
 func0000000000000028:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	addi	a1, a1, -4
 	czero.nez	a1, a1, a2
@@ -45,7 +45,7 @@ func0000000000000028:
 	ret
 
 func000000000000002a:
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	addi	a1, a1, -4
 	czero.nez	a1, a1, a2

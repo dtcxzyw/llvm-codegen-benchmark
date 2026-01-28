@@ -51,10 +51,11 @@ func000000000000048c:
 	ret
 
 func000000000000010a:
+	slli	a0, a0, 32
 	zext.h	a1, a1
 	addi	a1, a1, -40
 	sltiu	a1, a1, -20
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

@@ -5,7 +5,7 @@ func000000000000030c:
 	ret
 
 func000000000000050a:
-	sext.b	a2, a0
+	slli	a2, a0, 56
 	zext.b	a0, a0
 	sltu	a0, a0, a1
 	srli	a2, a2, 63

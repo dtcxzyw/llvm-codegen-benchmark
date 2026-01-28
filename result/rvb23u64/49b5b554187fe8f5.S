@@ -71,10 +71,11 @@ func0000000000000281:
 	ret
 
 func00000000000000ca:
+	slli	a0, a0, 32
 	li	a2, 1
 	bseti	a2, a2, 62
 	slt	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -229,7 +230,8 @@ func0000000000000086:
 	ret
 
 func0000000000000144:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	srli	a0, a0, 32
 	czero.nez	a0, a1, a0
@@ -254,10 +256,11 @@ func0000000000000186:
 	ret
 
 func000000000000028a:
+	slli	a0, a0, 32
 	lui	a2, 1221
 	addi	a2, a2, -1216
 	sltu	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -275,9 +278,10 @@ func0000000000000286:
 	ret
 
 func000000000000008a:
+	slli	a0, a0, 32
 	srli	a1, a1, 61
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
@@ -330,7 +334,8 @@ func0000000000000194:
 	ret
 
 func0000000000000158:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	srli	a0, a0, 32
 	czero.eqz	a0, a1, a0
@@ -381,8 +386,9 @@ func0000000000000304:
 	ret
 
 func0000000000000146:
+	slli	a0, a0, 32
 	sgtz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

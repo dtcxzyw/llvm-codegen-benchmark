@@ -71,7 +71,6 @@ func0000000000000024:
 func000000000000002a:
 	slli	a0, a0, 56
 	slli	a1, a1, 1
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -81,10 +80,9 @@ func000000000000002a:
 func000000000000028a:
 	slli	a0, a0, 56
 	slli	a1, a1, 1
-	srai	a0, a0, 56
 	srli	a1, a1, 1
-	sltiu	a1, a1, 63
 	srli	a0, a0, 63
+	sltiu	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -92,7 +90,6 @@ func000000000000028a:
 func000000000000030a:
 	slli	a0, a0, 56
 	slli	a1, a1, 1
-	srai	a0, a0, 56
 	srli	a1, a1, 1
 	sltiu	a1, a1, 3
 	srli	a0, a0, 63
@@ -103,7 +100,6 @@ func000000000000030a:
 func000000000000018a:
 	slli	a0, a0, 56
 	slli	a1, a1, 1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

@@ -10,7 +10,6 @@ func0000000000000424:
 func000000000000054c:
 	slli	a0, a0, 56
 	addiw	a1, a1, -1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

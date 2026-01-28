@@ -8,9 +8,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	add	w8, w2, #1
+	mov	w8, #16777216
 	and	w9, w1, w0
-	sxtb	w8, w8
+	add	w8, w8, w2, lsl #24
 	cmn	w8, #1
 	cset	w8, gt
 	and	w0, w9, w8

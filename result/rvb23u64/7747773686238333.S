@@ -29,7 +29,7 @@ func0000000000000e84:
 	ret
 
 func0000000000000426:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	addiw	a2, a2, -1
 	xor	a1, a1, a2

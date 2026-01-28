@@ -1,7 +1,7 @@
 	.att_syntax
 func000000000000000a:
-	vmovq	%xmm0, %rax
-	testq	%rax, %rax
+	vmovmskpd	%xmm0, %eax
+	shlq	$63, %rax
 	setns	%al
 	andb	%dil, %al
 	retq
@@ -14,8 +14,8 @@ func0000000000000008:
 	retq
 
 func0000000000000006:
-	vmovq	%xmm0, %rax
-	testq	%rax, %rax
+	vmovmskpd	%xmm0, %eax
+	shlq	$63, %rax
 	sets	%al
 	andb	%dil, %al
 	retq

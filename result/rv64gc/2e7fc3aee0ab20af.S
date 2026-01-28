@@ -119,7 +119,6 @@ func0000000000000c21:
 func0000000000000586:
 	slli	a0, a0, 56
 	addiw	a1, a1, -1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

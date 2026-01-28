@@ -1,11 +1,12 @@
 func0000000000000146:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	slli	a0, a0, 32
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
 	sgtz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -75,11 +76,12 @@ func0000000000000181:
 func00000000000000c1:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	slli	a0, a0, 32
 	blt	a1, a2, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
 	seqz	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

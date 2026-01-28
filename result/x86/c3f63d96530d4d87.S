@@ -8,9 +8,7 @@ func0000000000000001:
 	retq
 
 func0000000000000006:
-	cmpl	%edx, %esi
-	cmovll	%esi, %edx
-	testl	%edx, %edx
+	orl	%edx, %esi
 	sets	%al
 	orb	%dil, %al
 	retq

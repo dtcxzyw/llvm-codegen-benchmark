@@ -176,7 +176,7 @@ func0000000000000502:
 	ret
 
 func0000000000000254:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sltu	a1, a1, a2
 	srli	a0, a0, 63
 	and	a0, a0, a1

@@ -26,29 +26,32 @@ func0000000000000ccc:
 	ret
 
 func00000000000000ca:
+	slli	a3, a0, 32
 	sext.w	a1, a1
-	addw	a2, a2, a0
-	srliw	a0, a0, 31
-	slt	a1, a2, a1
-	not	a0, a0
+	addw	a0, a0, a2
+	slt	a0, a0, a1
+	srli	a3, a3, 63
+	not	a1, a3
 	and	a0, a0, a1
 	ret
 
 func00000000000004ca:
+	slli	a3, a0, 32
 	sext.w	a1, a1
-	addw	a2, a2, a0
-	srliw	a0, a0, 31
-	slt	a1, a2, a1
-	not	a0, a0
+	addw	a0, a0, a2
+	slt	a0, a0, a1
+	srli	a3, a3, 63
+	not	a1, a3
 	and	a0, a0, a1
 	ret
 
 func00000000000008ca:
+	slli	a3, a0, 32
 	sext.w	a1, a1
-	addw	a2, a2, a0
-	srliw	a0, a0, 31
-	slt	a1, a2, a1
-	not	a0, a0
+	addw	a0, a0, a2
+	slt	a0, a0, a1
+	srli	a3, a3, 63
+	not	a1, a3
 	and	a0, a0, a1
 	ret
 

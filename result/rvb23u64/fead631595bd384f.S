@@ -12,7 +12,7 @@ func0000000000001082:
 
 func000000000000c302:
 	zext.b	a2, a0
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.w	a1, a1
 	snez	a1, a1
 	srli	a0, a0, 63

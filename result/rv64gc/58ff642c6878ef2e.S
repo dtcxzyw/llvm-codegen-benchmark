@@ -11,14 +11,11 @@ func0000000000000021:
 	ret
 
 func0000000000000146:
-	sext.w	a2, a2
-	sext.w	a1, a1
 	sext.w	a0, a0
-	blt	a1, a2, .LBB1_2
-	mv	a1, a2
-.LBB1_2:
-	srli	a1, a1, 63
+	or	a1, a1, a2
+	slli	a1, a1, 32
 	slti	a0, a0, 64
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

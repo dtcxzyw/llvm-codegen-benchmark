@@ -48,14 +48,14 @@ func000000000000002c:
 
 func00000000000000cc:
 	zext.b	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret
 
 func000000000000018a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	snez	a1, a1
 	srli	a0, a0, 63

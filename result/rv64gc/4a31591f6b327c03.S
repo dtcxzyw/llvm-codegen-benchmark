@@ -42,7 +42,8 @@ func000000000000002b:
 	ret
 
 func000000000000001b:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	and	a1, a1, a2
 	bnez	a1, .LBB4_2
 	li	a1, 316

@@ -22,7 +22,7 @@ func000000000000002a:
 	retq
 
 func00000000000000c1:
-	vpmaxsd	%ymm2, %ymm1, %ymm1
+	vpand	%ymm2, %ymm1, %ymm1
 	vpmovd2m	%ymm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

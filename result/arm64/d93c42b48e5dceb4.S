@@ -23,7 +23,7 @@ func000000000000018a:
 	ret
 
 func000000000000008a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	sxtw	x9, w2
 	cmn	w8, #1
 	ccmp	x1, x9, #2, gt

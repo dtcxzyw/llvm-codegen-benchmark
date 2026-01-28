@@ -9,7 +9,8 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

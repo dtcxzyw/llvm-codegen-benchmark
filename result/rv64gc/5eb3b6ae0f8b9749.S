@@ -55,8 +55,9 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
+	slli	a1, a1, 32
 	addiw	a0, a0, 1
-	srliw	a1, a1, 31
+	srli	a1, a1, 63
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

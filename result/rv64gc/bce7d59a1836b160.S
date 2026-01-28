@@ -16,7 +16,8 @@ func000000000000000a:
 	srli	a1, a1, 10
 	sub	a0, a0, a1
 	addi	a0, a0, 100
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

@@ -79,7 +79,7 @@ func0000000000000d81:
 	ret
 
 func0000000000000d8a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -97,7 +97,7 @@ func0000000000000821:
 	ret
 
 func0000000000000c86:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
 	srli	a0, a0, 63
@@ -113,7 +113,7 @@ func0000000000000c8a:
 	ret
 
 func0000000000000d86:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	snez	a1, a1

@@ -45,10 +45,9 @@ func0000000000000048:
 func0000000000000298:
 	slli	a0, a0, 56
 	andi	a1, a1, 208
-	srai	a0, a0, 56
 	addi	a1, a1, -144
-	snez	a1, a1
 	srli	a0, a0, 63
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

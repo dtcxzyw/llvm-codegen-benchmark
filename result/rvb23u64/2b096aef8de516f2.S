@@ -1,5 +1,5 @@
 func0000000000000141:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	andi	a1, a1, 512
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -60,7 +60,7 @@ func00000000000000cc:
 	ret
 
 func00000000000000c1:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	andi	a1, a1, 7
 	addi	a1, a1, -7
 	seqz	a1, a1

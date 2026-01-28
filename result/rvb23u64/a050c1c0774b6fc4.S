@@ -73,7 +73,7 @@ func000000000000020c:
 func0000000000000290:
 	zext.h	a2, a0
 	zext.h	a1, a1
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	sltu	a1, a1, a2
@@ -92,7 +92,7 @@ func0000000000000102:
 	ret
 
 func000000000000030c:
-	sext.h	a2, a0
+	slli	a2, a0, 48
 	zext.h	a1, a1
 	zext.h	a0, a0
 	xor	a0, a0, a1

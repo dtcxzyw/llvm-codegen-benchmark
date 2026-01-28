@@ -130,7 +130,7 @@ func000000000000018a:
 	ret
 
 func0000000000000146:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w8, #0
 	ccmp	w1, #0, #4, mi
 	cset	w0, gt
@@ -152,7 +152,7 @@ func0000000000000284:
 	ret
 
 func0000000000000186:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	cmp	w8, #0
 	ccmp	w1, #0, #4, mi
 	cset	w0, ne

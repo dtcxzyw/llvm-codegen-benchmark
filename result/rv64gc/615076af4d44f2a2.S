@@ -27,7 +27,8 @@ func000000000000000b:
 	ret
 
 func0000000000000037:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1

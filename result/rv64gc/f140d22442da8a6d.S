@@ -7,18 +7,14 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	blt	a1, a2, .LBB1_2
-	mv	a1, a2
-.LBB1_2:
+	or	a1, a1, a2
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000006:
-	blt	a1, a2, .LBB2_2
-	mv	a1, a2
-.LBB2_2:
+	or	a1, a1, a2
 	srli	a1, a1, 63
 	and	a0, a0, a1
 	ret

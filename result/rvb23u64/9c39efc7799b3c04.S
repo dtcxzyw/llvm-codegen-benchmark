@@ -30,14 +30,14 @@ func0000000000000001:
 
 func000000000000000a:
 	addi	a0, a0, 1
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func000000000000010a:
 	addi	a0, a0, 1
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

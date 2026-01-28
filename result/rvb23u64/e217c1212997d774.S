@@ -7,10 +7,11 @@ func000000000000014c:
 	ret
 
 func000000000000014a:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	fcvt.w.s	a2, fa0, rtz
 	slt	a1, a2, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 

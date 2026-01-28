@@ -17,7 +17,8 @@ func0000000000000226:
 	ret
 
 func000000000000030a:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -26,7 +27,8 @@ func000000000000030a:
 	ret
 
 func0000000000000306:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -110,7 +112,8 @@ func000000000000052a:
 	lui	a1, 8
 .LBB11_2:
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
@@ -126,16 +129,19 @@ func00000000000000aa:
 	ret
 
 func000000000000032a:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func0000000000000326:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -191,7 +197,8 @@ func000000000000036a:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

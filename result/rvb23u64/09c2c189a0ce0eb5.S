@@ -1,6 +1,7 @@
 func0000000000000141:
 	sext.w	a2, a2
-	srliw	a3, a0, 31
+	slli	a3, a0, 32
+	srli	a3, a3, 63
 	xori	a3, a3, 1
 	czero.nez	a2, a3, a2
 	czero.nez	a1, a1, a2

@@ -103,7 +103,7 @@ func0000000000000210:
 	ret
 
 func000000000000004c:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	andi	a1, a1, 32
 	seqz	a1, a1
 	srli	a0, a0, 63

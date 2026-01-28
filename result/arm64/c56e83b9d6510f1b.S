@@ -5,7 +5,7 @@ func0000000000000184:
 	ret
 
 func000000000000014a:
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	mov	w8, #51711
 	movk	w8, #15258, lsl #16
 	cmn	w9, #1

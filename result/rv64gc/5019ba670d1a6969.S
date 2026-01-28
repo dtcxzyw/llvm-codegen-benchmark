@@ -50,7 +50,8 @@ func000000000000018a:
 	or	a0, a0, a1
 	or	a0, a0, a2
 	addi	a0, a0, -1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

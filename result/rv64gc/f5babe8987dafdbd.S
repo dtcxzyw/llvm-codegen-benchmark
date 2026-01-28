@@ -42,7 +42,6 @@ func0000000000000061:
 func000000000000006a:
 	slli	a0, a0, 56
 	or	a1, a1, a2
-	srai	a0, a0, 56
 	srli	a0, a0, 63
 	addi	a0, a0, -1
 	lui	a2, 585736

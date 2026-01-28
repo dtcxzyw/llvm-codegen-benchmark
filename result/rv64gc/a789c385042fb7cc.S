@@ -140,7 +140,6 @@ func00000000000000c1:
 func00000000000000c4:
 	slli	a1, a1, 48
 	srli	a0, a0, 16
-	srai	a1, a1, 48
 	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1

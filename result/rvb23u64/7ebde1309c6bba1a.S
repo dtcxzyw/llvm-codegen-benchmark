@@ -29,7 +29,7 @@ func0000000000000184:
 func000000000000000a:
 	add	a0, a0, a1
 	addi	a0, a0, -40
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret

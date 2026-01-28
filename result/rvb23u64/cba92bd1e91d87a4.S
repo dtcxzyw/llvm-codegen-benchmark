@@ -7,11 +7,12 @@ func000000000000018c:
 	ret
 
 func0000000000000186:
+	slli	a1, a1, 32
 	zext.b	a2, a2
-	srliw	a1, a1, 31
 	snez	a2, a2
+	srli	a1, a1, 63
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000021:
@@ -53,11 +54,12 @@ func0000000000000281:
 	ret
 
 func0000000000000026:
+	slli	a1, a1, 32
 	zext.b	a2, a2
-	srliw	a1, a1, 31
 	seqz	a2, a2
+	srli	a1, a1, 63
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000181:

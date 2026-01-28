@@ -20,7 +20,7 @@ func0000000000000021:
 	ret
 
 func000000000000028a:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	cmp	w2, #2
 	cset	w9, lo
 	cmn	w8, #1

@@ -12,7 +12,7 @@ func0000000000000504:
 	ret
 
 func000000000000050a:
-	sext.h	a2, a0
+	slli	a2, a0, 48
 	zext.h	a0, a0
 	sltu	a0, a0, a1
 	srli	a2, a2, 63

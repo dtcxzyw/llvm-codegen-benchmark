@@ -7,7 +7,7 @@ func0000000000000094:
 	ret
 
 func0000000000000086:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	sltiu	a1, a1, 26
 	srli	a0, a0, 63
@@ -126,7 +126,7 @@ func0000000000000084:
 	ret
 
 func000000000000008a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	sltiu	a1, a1, 63
 	srli	a0, a0, 63
@@ -169,7 +169,7 @@ func0000000000000028:
 
 func00000000000000cc:
 	zext.b	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	snez	a0, a0
 	or	a0, a0, a1
@@ -212,7 +212,7 @@ func0000000000000081:
 
 func00000000000000d4:
 	zext.b	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	sltiu	a0, a0, 5
 	or	a0, a0, a1
@@ -247,7 +247,7 @@ func0000000000000108:
 
 func000000000000014c:
 	zext.b	a0, a0
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -264,7 +264,7 @@ func0000000000000088:
 	ret
 
 func0000000000000186:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	snez	a1, a1
 	srli	a0, a0, 63
@@ -282,7 +282,7 @@ func000000000000030c:
 	ret
 
 func000000000000002a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	seqz	a1, a1
 	srli	a0, a0, 63
@@ -308,7 +308,7 @@ func0000000000000098:
 	ret
 
 func000000000000018a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	zext.b	a1, a1
 	snez	a1, a1
 	srli	a0, a0, 63

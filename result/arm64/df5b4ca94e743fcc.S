@@ -15,7 +15,7 @@ func0000000000000081:
 	ret
 
 func0000000000000086:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	and	w9, w1, #0xff
 	sub	w9, w9, #66
 	cmp	w8, #0

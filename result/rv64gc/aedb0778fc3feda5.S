@@ -56,7 +56,8 @@ func000000000000002a:
 	beqz	a1, .LBB6_2
 	neg	a0, a0
 .LBB6_2:
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

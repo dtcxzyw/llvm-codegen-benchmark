@@ -1,5 +1,5 @@
 func000000000000008c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w0, #0xff
 	cmp	w9, #95
 	cset	w9, eq
@@ -33,7 +33,7 @@ func0000000000000202:
 	ret
 
 func0000000000000302:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w0, #0xff
 	cmp	w8, #0
 	cset	w8, mi

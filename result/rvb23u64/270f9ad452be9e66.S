@@ -7,9 +7,10 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	snez	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

@@ -42,7 +42,7 @@ func0000000000000048:
 	ret
 
 func0000000000000298:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	andi	a1, a1, 208
 	addi	a1, a1, -144
 	srli	a0, a0, 63

@@ -31,7 +31,7 @@ func0000000000000028:
 	ret
 
 func000000000000002a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w1, #0xfffffffe
 	cmn	w8, #1
 	ccmp	w9, #4, #4, le
@@ -39,7 +39,7 @@ func000000000000002a:
 	ret
 
 func0000000000000186:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	ubfx	w9, w1, #2, #1
 	cmp	w8, #0
 	csinc	w0, w9, wzr, pl

@@ -38,7 +38,7 @@ func0000000000000001:
 
 func000000000000000a:
 	orr	w8, w1, w2
-	sxth	w8, w8
+	lsl	w8, w8, #16
 	cmn	w8, #1
 	cset	w8, gt
 	and	w0, w0, w8

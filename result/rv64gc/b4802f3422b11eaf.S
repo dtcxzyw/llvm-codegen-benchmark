@@ -10,7 +10,6 @@ func0000000000000421:
 func0000000000000586:
 	slli	a0, a0, 56
 	zext.b	a2, a2
-	srai	a0, a0, 56
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1

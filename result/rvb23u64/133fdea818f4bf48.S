@@ -15,7 +15,7 @@ func000000000000008c:
 	ret
 
 func00000000000000ca:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sext.b	a2, a2
 	sext.b	a1, a1
 	slt	a1, a1, a2
@@ -26,7 +26,7 @@ func00000000000000ca:
 func0000000000000146:
 	sext.b	a1, a1
 	sext.b	a0, a0
-	sext.b	a2, a2
+	slli	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slt	a0, a0, a1

@@ -73,7 +73,8 @@ func00000000000001a1:
 func0000000000000086:
 	add	a1, a1, a2
 	addi	a1, a1, -1
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 

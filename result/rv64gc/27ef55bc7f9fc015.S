@@ -21,8 +21,6 @@ func0000000000000021:
 func000000000000014a:
 	slli	a1, a1, 56
 	slli	a2, a2, 56
-	srai	a1, a1, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	srli	a1, a1, 63
 	not	a2, a2
@@ -71,10 +69,9 @@ func0000000000000024:
 func000000000000002a:
 	slli	a1, a1, 56
 	zext.b	a2, a2
-	srai	a1, a1, 56
 	addi	a2, a2, -2
-	seqz	a2, a2
 	srli	a1, a1, 63
+	seqz	a2, a2
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

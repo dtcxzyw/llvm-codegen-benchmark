@@ -41,11 +41,10 @@ func0000000000001214:
 	slli	a0, a0, 56
 	zext.b	a1, a1
 	addiw	a2, a2, -128
-	srai	a0, a0, 56
 	seqz	a2, a2
 	sltiu	a1, a1, 4
-	or	a1, a1, a2
 	srli	a0, a0, 63
+	or	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

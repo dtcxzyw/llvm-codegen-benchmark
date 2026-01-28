@@ -33,7 +33,8 @@ func0000000000001e0a:
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

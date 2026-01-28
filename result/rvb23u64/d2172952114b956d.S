@@ -1,5 +1,5 @@
 func0000000000000586:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	lui	a3, 8
 	addi	a3, a3, -256
 	and	a2, a2, a3

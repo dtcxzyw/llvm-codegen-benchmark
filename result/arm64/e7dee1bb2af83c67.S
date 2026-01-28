@@ -30,7 +30,7 @@ func000000000000010c:
 	ret
 
 func00000000000000cc:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	and	w9, w0, #0xff
 	cmp	w9, #2
 	ccmp	w8, #0, #8, eq
@@ -69,7 +69,7 @@ func0000000000000084:
 	ret
 
 func000000000000014c:
-	sxth	w8, w1
+	lsl	w8, w1, #16
 	and	w9, w0, #0xff
 	cmp	w9, #10
 	ccmn	w8, #1, #0, eq

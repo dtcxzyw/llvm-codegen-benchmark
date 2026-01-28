@@ -141,9 +141,10 @@ func0000000000000088:
 	ret
 
 func0000000000000046:
+	slli	a0, a0, 32
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

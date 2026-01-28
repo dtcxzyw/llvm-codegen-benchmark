@@ -20,7 +20,8 @@ func0000000000000002:
 	ret
 
 func0000000000000014:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xor	a0, a0, a1
 	not	a0, a0
 	andi	a0, a0, 1

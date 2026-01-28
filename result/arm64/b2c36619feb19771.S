@@ -77,14 +77,14 @@ func000000000000010c:
 	ret
 
 func0000000000000286:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0xff80
 	ccmp	w8, #0, #0, eq
 	cset	w0, mi
 	ret
 
 func00000000000000c1:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	and	w9, w0, #0xffff
 	cmp	w9, #257
 	ccmp	w8, #0, #0, eq
@@ -124,7 +124,7 @@ func000000000000002a:
 	ret
 
 func000000000000008a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w1, #0xffff
 	cmn	w8, #1
 	ccmp	w9, #3, #2, gt
@@ -132,7 +132,7 @@ func000000000000008a:
 	ret
 
 func00000000000000cc:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	tst	w0, #0xffff
 	ccmp	w8, #0, #0, ne
 	cset	w0, mi
@@ -147,7 +147,7 @@ func0000000000000281:
 	ret
 
 func00000000000000c4:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	and	w9, w0, #0xffff
 	cmp	w9, #5
 	ccmp	w8, #0, #0, lo
@@ -155,7 +155,7 @@ func00000000000000c4:
 	ret
 
 func0000000000000026:
-	sxth	w9, w0
+	lsl	w9, w0, #16
 	mov	w8, #118
 	and	w10, w1, #0xff
 	cmp	w9, #0
@@ -172,7 +172,7 @@ func000000000000018a:
 	ret
 
 func0000000000000186:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0xffff
 	ccmp	w8, #0, #0, ne
 	cset	w0, mi

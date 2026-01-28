@@ -33,9 +33,10 @@ func0000000000000114:
 	ret
 
 func000000000000002a:
+	slli	a0, a0, 32
 	sub	a1, a1, a2
-	srliw	a0, a0, 31
 	addi	a1, a1, -72
+	srli	a0, a0, 63
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

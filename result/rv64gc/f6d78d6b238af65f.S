@@ -54,7 +54,6 @@ func000000000000008c:
 func000000000000018a:
 	slli	a1, a1, 56
 	snez	a2, a2
-	srai	a1, a1, 56
 	and	a0, a0, a2
 	srli	a1, a1, 63
 	xori	a1, a1, 1

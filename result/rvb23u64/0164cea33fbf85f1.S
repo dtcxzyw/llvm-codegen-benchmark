@@ -9,10 +9,11 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	slli	a0, a0, 32
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	or	a1, a1, a2
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	addi	a1, a1, -1
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1

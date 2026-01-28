@@ -16,7 +16,7 @@ func000000000000008c:
 	ret
 
 func00000000000000ca:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	sxtb	w9, w2
 	sxtb	w10, w1
 	cmn	w8, #1
@@ -26,7 +26,7 @@ func00000000000000ca:
 
 func0000000000000146:
 	sxtb	w8, w0
-	sxtb	w9, w2
+	lsl	w9, w2, #24
 	cmp	w8, w1, sxtb
 	ccmn	w9, #1, #4, lt
 	cset	w0, gt

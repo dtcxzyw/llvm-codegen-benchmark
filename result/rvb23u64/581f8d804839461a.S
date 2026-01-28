@@ -113,7 +113,7 @@ func0000000000000021:
 	ret
 
 func0000000000000019:
-	sext.h	a1, a1
+	slli	a1, a1, 48
 	srli	a1, a1, 63
 	addi	a1, a1, -1
 	andi	a1, a1, -3

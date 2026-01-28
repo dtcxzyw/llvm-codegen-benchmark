@@ -79,7 +79,7 @@ func000000000000012c:
 	ret
 
 func00000000000000a6:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	srli	a0, a0, 63

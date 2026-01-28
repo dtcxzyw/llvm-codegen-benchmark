@@ -32,7 +32,6 @@ func0000000000000181:
 func000000000000002a:
 	slli	a0, a0, 56
 	andi	a1, a1, 64
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	not	a0, a0

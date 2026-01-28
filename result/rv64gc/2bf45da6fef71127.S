@@ -7,14 +7,16 @@ func0000000000000026:
 func000000000000000a:
 	sraiw	a1, a1, 2
 	mul	a0, a1, a0
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func000000000000008a:
 	sraiw	a1, a1, 1
 	mul	a0, a1, a0
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

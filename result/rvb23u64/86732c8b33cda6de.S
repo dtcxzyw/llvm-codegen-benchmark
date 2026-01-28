@@ -8,8 +8,9 @@ func000000000000002c:
 	ret
 
 func00000000000000cc:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	addiw	a1, a1, -12
+	srli	a2, a2, 63
 	snez	a1, a1
 	czero.nez	a2, a0, a2
 	and	a0, a0, a1

@@ -197,15 +197,17 @@ func000000000000048a:
 func000000000000014a:
 	addi	a1, a1, -1
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func0000000000000706:
+	slli	a0, a0, 32
 	andi	a1, a1, -4
 	addiw	a1, a1, -8
 	snez	a1, a1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

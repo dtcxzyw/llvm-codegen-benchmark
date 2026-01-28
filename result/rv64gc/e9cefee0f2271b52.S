@@ -44,7 +44,6 @@ func000000000000058c:
 func0000000000000544:
 	slli	a0, a0, 56
 	addiw	a1, a1, -4
-	srai	a0, a0, 56
 	sltiu	a1, a1, 3
 	srli	a0, a0, 63
 	xori	a0, a0, 1
@@ -54,7 +53,6 @@ func0000000000000544:
 func000000000000054c:
 	slli	a0, a0, 56
 	addiw	a1, a1, -1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	xori	a0, a0, 1

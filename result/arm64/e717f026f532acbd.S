@@ -1,5 +1,5 @@
 func000000000000014c:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	w9, w0, #0xff
 	cmp	w9, #95
 	ccmn	w8, #1, #4, ne

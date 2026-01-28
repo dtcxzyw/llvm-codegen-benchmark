@@ -227,23 +227,27 @@ func0000000000000021:
 	ret
 
 func00000000000000ca:
+	slli	a0, a0, 32
 	sub	a1, a1, a2
-	srliw	a1, a1, 31
-	srliw	a0, a0, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
+	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000146:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

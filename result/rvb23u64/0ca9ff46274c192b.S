@@ -44,7 +44,7 @@ func0000000000000101:
 	ret
 
 func000000000000002a:
-	sext.h	a0, a0
+	slli	a0, a0, 48
 	zext.h	a2, a2
 	zext.h	a1, a1
 	xor	a1, a1, a2
@@ -66,7 +66,7 @@ func0000000000000028:
 func000000000000014c:
 	zext.h	a1, a1
 	zext.h	a0, a0
-	sext.h	a2, a2
+	slli	a2, a2, 48
 	srli	a2, a2, 63
 	xor	a0, a0, a1
 	xori	a1, a2, 1

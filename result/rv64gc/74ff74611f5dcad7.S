@@ -19,9 +19,10 @@ func0000000000004082:
 	ret
 
 func0000000000006084:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	seqz	a1, a1
 	seqz	a0, a0
+	srli	a2, a2, 63
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

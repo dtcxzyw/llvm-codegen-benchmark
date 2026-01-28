@@ -25,7 +25,7 @@ func0000000000000210:
 	ret
 
 func00000000000000a8:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	zext.b	a2, a2
 	addi	a2, a2, -1
 	seqz	a2, a2

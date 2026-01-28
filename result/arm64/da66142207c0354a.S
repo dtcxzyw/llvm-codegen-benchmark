@@ -26,7 +26,7 @@ func000000000000028a:
 	ret
 
 func00000000000000c1:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	cmn	w8, #1
 	ccmp	w0, #2, #0, gt
 	cset	w0, eq

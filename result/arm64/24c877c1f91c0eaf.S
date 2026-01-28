@@ -24,8 +24,7 @@ func0000000000000021:
 	ret
 
 func00000000000000ca:
-	cmp	w1, w2
-	csel	w8, w1, w2, lt
+	orr	w8, w1, w2
 	cmn	w8, #1
 	mov	w8, #256
 	ccmp	w0, w8, #0, gt

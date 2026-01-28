@@ -49,11 +49,12 @@ func0000000000000026:
 	ret
 
 func0000000000000106:
+	slli	a0, a0, 32
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	srliw	a0, a0, 31
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 

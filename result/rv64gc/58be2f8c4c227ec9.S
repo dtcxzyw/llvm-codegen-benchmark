@@ -68,7 +68,6 @@ func00000000000000a4:
 
 func00000000000000a0:
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	srli	a2, a2, 63
 	xori	a2, a2, 1
 	add	a0, a0, a1

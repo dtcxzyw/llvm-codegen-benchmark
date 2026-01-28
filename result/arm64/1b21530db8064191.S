@@ -41,7 +41,7 @@ func0000000000000048:
 
 func0000000000000298:
 	mov	w8, #208
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	and	w8, w1, w8
 	cmp	w8, #144
 	ccmn	w9, #1, #0, eq

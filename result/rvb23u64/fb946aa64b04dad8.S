@@ -70,7 +70,8 @@ func000000000000002c:
 func00000000000000cc:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -114,7 +115,8 @@ func0000000000000681:
 func0000000000000141:
 	sext.w	a0, a0
 	or	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret

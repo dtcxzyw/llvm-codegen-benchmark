@@ -76,13 +76,13 @@ func0000000000000184:
 	ret
 
 func0000000000000186:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	srli	a0, a0, 63
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002a:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	andn	a0, a1, a0

@@ -66,7 +66,8 @@ func0000000000000048:
 func000000000000090c:
 	sext.w	a0, a0
 	mul	a1, a1, a2
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	sltiu	a0, a0, -12
 	or	a0, a0, a1
 	ret

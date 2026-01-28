@@ -8,7 +8,7 @@ func0000000000000424:
 	ret
 
 func000000000000054c:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addiw	a1, a1, -1
 	snez	a1, a1
 	srli	a0, a0, 63

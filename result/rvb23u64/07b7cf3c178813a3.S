@@ -2,8 +2,9 @@ func00000000000018cc:
 	sext.w	a2, a1
 	sext.w	a3, a0
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
 	xor	a2, a2, a3
+	srli	a0, a0, 63
 	snez	a1, a2
 	or	a0, a0, a1
 	ret
@@ -35,8 +36,9 @@ func00000000000018c1:
 	sext.w	a2, a1
 	sext.w	a3, a0
 	or	a0, a0, a1
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
 	xor	a2, a2, a3
+	srli	a0, a0, 63
 	seqz	a1, a2
 	or	a0, a0, a1
 	ret

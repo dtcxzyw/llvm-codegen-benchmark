@@ -6,7 +6,7 @@ func000000000000030c:
 	ret
 
 func000000000000050a:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	and	x9, x0, #0xff
 	cmn	w8, #1
 	ccmp	x1, x9, #0, gt

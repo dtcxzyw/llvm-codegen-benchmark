@@ -17,8 +17,9 @@ func0000000000000080:
 	ret
 
 func0000000000000063:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
 	sh2add	a1, a1, a1
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	andi	a2, a2, 12
 	sh3add	a0, a1, a0

@@ -68,7 +68,7 @@ func000000000000018c:
 	ret
 
 func00000000000000cc:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	czero.eqz	a0, a1, a0
 	ret
@@ -136,7 +136,7 @@ func0000000000000186:
 	ret
 
 func0000000000000148:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	sltiu	a0, a0, 76
 	or	a0, a0, a1
@@ -166,7 +166,7 @@ func000000000000010c:
 	ret
 
 func0000000000000154:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	sltiu	a0, a0, 6
@@ -244,7 +244,7 @@ func000000000000028a:
 	ret
 
 func0000000000000306:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	srli	a0, a0, 63

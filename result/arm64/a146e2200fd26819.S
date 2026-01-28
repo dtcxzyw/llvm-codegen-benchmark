@@ -30,7 +30,7 @@ func0000000000004088:
 	ret
 
 func0000000000001214:
-	sxtb	w8, w0
+	lsl	w8, w0, #24
 	tst	w1, #0xfc
 	mov	w9, #128
 	ccmp	w2, w9, #4, ne

@@ -24,7 +24,7 @@ func0000000000004082:
 	ret
 
 func000000000000408c:
-	sext.b	a2, a0
+	slli	a2, a0, 56
 	zext.b	a0, a0
 	zext.b	a1, a1
 	sltiu	a1, a1, 92

@@ -7,7 +7,8 @@ func0000000000000019:
 	ret
 
 func000000000000001a:
-	srliw	a2, a1, 31
+	slli	a2, a1, 32
+	srli	a2, a2, 63
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	addw	a0, a0, a1

@@ -74,10 +74,9 @@ func000000000000010c:
 func000000000000002a:
 	slli	a0, a0, 48
 	li	a2, 1
-	srai	a0, a0, 48
 	slli	a2, a2, 11
-	and	a1, a1, a2
 	srli	a0, a0, 63
+	and	a1, a1, a2
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -86,7 +85,6 @@ func000000000000002a:
 func0000000000000026:
 	slli	a0, a0, 48
 	andi	a1, a1, 1
-	srai	a0, a0, 48
 	seqz	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -148,7 +146,6 @@ func000000000000008c:
 func00000000000000c1:
 	slli	a0, a0, 48
 	andi	a1, a1, 8
-	srai	a0, a0, 48
 	seqz	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

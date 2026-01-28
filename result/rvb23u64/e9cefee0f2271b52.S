@@ -38,7 +38,7 @@ func000000000000058c:
 	ret
 
 func0000000000000544:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addiw	a1, a1, -4
 	sltiu	a1, a1, 3
 	srli	a0, a0, 63
@@ -47,7 +47,7 @@ func0000000000000544:
 	ret
 
 func000000000000054c:
-	sext.b	a0, a0
+	slli	a0, a0, 56
 	addiw	a1, a1, -1
 	snez	a1, a1
 	srli	a0, a0, 63

@@ -45,7 +45,8 @@ func00000000000000c4:
 	ret
 
 func0000000000000361:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slli	a2, a2, 3
 	add	a1, a1, a2
@@ -54,7 +55,8 @@ func0000000000000361:
 	ret
 
 func000000000000036c:
-	srliw	a2, a2, 31
+	slli	a2, a2, 32
+	srli	a2, a2, 63
 	xori	a2, a2, 1
 	slli	a2, a2, 3
 	add	a1, a1, a2

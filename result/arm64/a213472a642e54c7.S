@@ -91,7 +91,7 @@ func000000000000008c:
 	ret
 
 func000000000000002a:
-	sxth	w8, w0
+	lsl	w8, w0, #16
 	tst	w2, #0xffff
 	cset	w9, eq
 	and	w9, w9, w1

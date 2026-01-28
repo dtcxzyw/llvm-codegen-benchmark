@@ -38,7 +38,7 @@ func0000000000000024:
 	ret
 
 func0000000000000086:
-	sxtb	w8, w1
+	lsl	w8, w1, #24
 	and	w9, w2, #0xff
 	cmp	w8, #0
 	ccmp	w9, #26, #0, pl
@@ -132,7 +132,7 @@ func0000000000000318:
 
 func00000000000000c6:
 	orr	w8, w1, w2
-	sxtb	w8, w8
+	lsl	w8, w8, #24
 	cmp	w8, #0
 	cset	w8, mi
 	orr	w8, w8, w0

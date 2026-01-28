@@ -20,7 +20,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	srliw	a1, a1, 31
+	slli	a1, a1, 32
+	srli	a1, a1, 63
 	xnor	a0, a1, a0
 	slli	a0, a0, 63
 	srai	a0, a0, 63

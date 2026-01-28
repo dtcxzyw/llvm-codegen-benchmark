@@ -94,7 +94,6 @@ func0000000000000181:
 func0000000000000186:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	snez	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -174,7 +173,6 @@ func0000000000000146:
 	slli	a0, a0, 56
 	sext.w	a1, a1
 	lui	a2, 488281
-	srai	a0, a0, 56
 	addi	a2, a2, 1021
 	slt	a1, a2, a1
 	srli	a0, a0, 63
@@ -185,10 +183,9 @@ func000000000000014a:
 	slli	a0, a0, 56
 	sext.w	a1, a1
 	lui	a2, 244141
-	srai	a0, a0, 56
 	addi	a2, a2, -1537
-	slt	a1, a2, a1
 	srli	a0, a0, 63
+	slt	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -214,7 +211,6 @@ func0000000000000301:
 func000000000000028a:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	sltiu	a1, a1, 128
 	srli	a0, a0, 63
 	not	a0, a0
@@ -269,7 +265,6 @@ func0000000000000306:
 func0000000000000086:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	sltiu	a1, a1, 64
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -305,7 +300,6 @@ func0000000000000308:
 func00000000000000c6:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	slti	a1, a1, 16
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -314,10 +308,9 @@ func00000000000000c6:
 func000000000000010a:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	srli	a1, a1, 11
-	snez	a1, a1
 	srli	a0, a0, 63
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -333,7 +326,6 @@ func0000000000000144:
 func0000000000000286:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	sltiu	a1, a1, 3
 	srli	a0, a0, 63
 	and	a0, a0, a1
@@ -342,7 +334,6 @@ func0000000000000286:
 func0000000000000026:
 	slli	a0, a0, 56
 	sext.w	a1, a1
-	srai	a0, a0, 56
 	seqz	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

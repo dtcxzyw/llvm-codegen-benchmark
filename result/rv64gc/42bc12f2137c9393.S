@@ -15,7 +15,8 @@ func000000000000002a:
 .LBB0_4:
 	fcvt.w.s	a0, fa0, rtz
 	add	a0, a0, a2
-	srliw	a0, a0, 31
+	slli	a0, a0, 32
+	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 

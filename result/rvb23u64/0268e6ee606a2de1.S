@@ -49,9 +49,10 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
+	slli	a0, a0, 32
 	sext.w	a1, a1
-	srliw	a0, a0, 31
 	binvi	a1, a1, 16
+	srli	a0, a0, 63
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -24,7 +24,7 @@ func0000000000001202:
 
 func000000000000020c:
 	and	w8, w0, #0xff
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	sub	w8, w8, #35
 	cmp	w8, #92
 	cset	w8, lo
@@ -37,7 +37,7 @@ func000000000000020c:
 
 func0000000000000218:
 	and	w8, w1, #0xff
-	sxtb	w9, w1
+	lsl	w9, w1, #24
 	sub	w8, w8, #48
 	cmp	w8, #10
 	cset	w8, lo
@@ -50,7 +50,7 @@ func0000000000000218:
 
 func0000000000000214:
 	and	w8, w0, #0xff
-	sxtb	w9, w0
+	lsl	w9, w0, #24
 	sub	w8, w8, #241
 	cmp	w8, #4
 	cset	w8, lo

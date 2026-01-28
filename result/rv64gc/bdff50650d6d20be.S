@@ -19,7 +19,6 @@ func000000000000002c:
 func0000000000000186:
 	slli	a1, a0, 56
 	andi	a0, a0, 240
-	srai	a1, a1, 56
 	addi	a0, a0, -224
 	snez	a0, a0
 	srli	a1, a1, 63
@@ -61,7 +60,6 @@ func000000000000002a:
 func000000000000018a:
 	slli	a1, a0, 56
 	andi	a0, a0, 120
-	srai	a1, a1, 56
 	snez	a0, a0
 	srli	a1, a1, 63
 	not	a1, a1

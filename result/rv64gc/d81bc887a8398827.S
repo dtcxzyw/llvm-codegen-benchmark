@@ -1,7 +1,8 @@
 func00000000000000c6:
+	slli	a1, a1, 32
 	li	a3, 1
-	srliw	a1, a1, 31
 	slli	a3, a3, 62
+	srli	a1, a1, 63
 	addi	a3, a3, 1
 	slt	a2, a2, a3
 	and	a0, a0, a1
@@ -9,9 +10,10 @@ func00000000000000c6:
 	ret
 
 func000000000000018a:
+	slli	a1, a1, 32
 	snez	a2, a2
-	srliw	a1, a1, 31
 	and	a0, a0, a2
+	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

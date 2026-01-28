@@ -21,7 +21,7 @@ func0000000000000202:
 	ret
 
 func0000000000000502:
-	sxtb	w8, w2
+	lsl	w8, w2, #24
 	cmn	w8, #1
 	and	w8, w1, #0xf0
 	cset	w9, gt

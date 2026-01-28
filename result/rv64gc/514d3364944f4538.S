@@ -85,7 +85,6 @@ func00000000000000c1:
 
 func000000000000008a:
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	sltu	a1, a1, a2
 	srli	a0, a0, 63
 	not	a0, a0
@@ -126,7 +125,6 @@ func0000000000000141:
 
 func000000000000010a:
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	sltu	a1, a2, a1
 	srli	a0, a0, 63
 	not	a0, a0
