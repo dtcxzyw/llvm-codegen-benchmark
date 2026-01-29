@@ -1,23 +1,23 @@
 func000000000000030b:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 3
-	slt	a0, a0, a1
+	bset	a1, zero, a1
+	li	a2, 3
+	sub	a2, a2, a1
+	slt	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
 func0000000000000306:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 3
-	slt	a0, a0, a1
+	bset	a1, zero, a1
+	li	a2, 3
+	sub	a2, a2, a1
+	slt	a0, a0, a2
 	ret
 
 func000000000000032a:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 1
-	slt	a0, a1, a0
+	bset	a1, zero, a1
+	li	a2, 1
+	sub	a2, a2, a1
+	slt	a0, a2, a0
 	ret
 
 func000000000000032b:

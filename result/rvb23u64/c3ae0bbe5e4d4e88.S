@@ -37,9 +37,8 @@ func0000000000000060:
 	ret
 
 func0000000000000055:
-	li	a2, -1
-	sll	a1, a2, a1
-	add	a0, a0, a1
+	bset	a1, zero, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -66
 	ret
 
@@ -58,9 +57,8 @@ func000000000000004e:
 	ret
 
 func0000000000000044:
-	li	a2, -1
-	sll	a1, a2, a1
-	add	a0, a0, a1
+	bset	a1, zero, a1
+	sub	a0, a0, a1
 	addi	a0, a0, -1
 	ret
 

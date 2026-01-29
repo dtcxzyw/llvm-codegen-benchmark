@@ -52,10 +52,9 @@ func0000000000000004:
 	ret
 
 func0000000000000015:
-	li	a2, -1
-	sll	a0, a2, a0
-	add	a0, a0, a1
-	addi	a0, a0, -66
+	bset	a0, zero, a0
+	sub	a1, a1, a0
+	addi	a0, a1, -66
 	ret
 
 func000000000000003e:

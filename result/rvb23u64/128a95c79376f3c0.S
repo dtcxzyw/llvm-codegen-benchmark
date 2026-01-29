@@ -12,11 +12,10 @@ func00000000000000a6:
 	ret
 
 func0000000000000108:
-	li	a2, -1
-	sll	a1, a2, a1
+	bset	a1, zero, a1
 	lui	a2, 1
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+	sub	a2, a2, a1
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000126:
@@ -26,25 +25,25 @@ func0000000000000126:
 	ret
 
 func000000000000010b:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 3
-	slt	a0, a0, a1
+	bset	a1, zero, a1
+	li	a2, 3
+	sub	a2, a2, a1
+	slt	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
 func0000000000000106:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 3
-	slt	a0, a0, a1
+	bset	a1, zero, a1
+	li	a2, 3
+	sub	a2, a2, a1
+	slt	a0, a0, a2
 	ret
 
 func000000000000012a:
-	li	a2, -1
-	sll	a1, a2, a1
-	addi	a1, a1, 1
-	slt	a0, a1, a0
+	bset	a1, zero, a1
+	li	a2, 1
+	sub	a2, a2, a1
+	slt	a0, a2, a0
 	ret
 
 func000000000000012b:

@@ -6,11 +6,10 @@ func0000000000000000:
 	ret
 
 func000000000000000a:
-	li	a2, -1
-	sll	a1, a2, a1
+	bset	a1, zero, a1
 	lui	a2, 8192
-	add	a1, a1, a2
-	or	a0, a0, a1
+	sub	a2, a2, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000010:

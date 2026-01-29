@@ -24,9 +24,8 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	li	a2, -1
-	sll	a1, a2, a1
-	add	a0, a0, a1
+	bset	a1, zero, a1
+	sub	a0, a0, a1
 	ret
 
 func000000000000000b:

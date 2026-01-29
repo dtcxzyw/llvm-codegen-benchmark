@@ -1,7 +1,7 @@
 func0000000000000007:
-	li	a1, -1
-	sll	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
+	li	a1, 1
+	sub	a0, a1, a0
 	ret
 
 func0000000000000000:
@@ -11,8 +11,8 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	li	a1, -1
-	sll	a0, a1, a0
-	addi	a0, a0, 1
+	bset	a0, zero, a0
+	li	a1, 1
+	sub	a0, a1, a0
 	ret
 
