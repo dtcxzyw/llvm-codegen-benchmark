@@ -70,8 +70,7 @@ func0000000000000086:
 
 func0000000000000141:
 	sext.w	a0, a0
-	slli	a2, a1, 32
-	srli	a2, a2, 63
+	srliw	a2, a1, 31
 	addi	a1, a1, -1024
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1024

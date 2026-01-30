@@ -23,8 +23,7 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -67,8 +66,7 @@ func0000000000000008:
 	ret
 
 func0000000000000094:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

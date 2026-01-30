@@ -9,8 +9,7 @@ func000000000000002c:
 
 func0000000000000026:
 	sext.w	a2, a2
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	czero.nez	a0, a0, a2
 	ret

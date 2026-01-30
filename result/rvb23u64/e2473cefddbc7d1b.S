@@ -1,7 +1,6 @@
 func000000000000000a:
-	slli	a1, a0, 32
+	srliw	a1, a0, 31
 	lui	a2, 522240
-	srli	a1, a1, 63
 	czero.eqz	a1, a2, a1
 	lui	a2, 1046528
 	orn	a1, a1, a2

@@ -6,8 +6,7 @@ func000000000000001c:
 	ret
 
 func000000000000006c:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	sh3add	a1, a2, a1
 	sub	a0, a0, a1

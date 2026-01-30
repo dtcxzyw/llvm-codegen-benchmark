@@ -37,8 +37,7 @@ func000000000000068c:
 
 func000000000000014a:
 	addi	a2, a2, -8
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	andn	a0, a0, a2
 	ret

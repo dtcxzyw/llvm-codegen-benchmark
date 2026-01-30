@@ -1,6 +1,5 @@
 func000000000000000a:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret

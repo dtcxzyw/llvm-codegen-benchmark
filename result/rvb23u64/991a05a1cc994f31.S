@@ -1,7 +1,6 @@
 func000000000000294c:
 	sext.w	a1, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	sgtz	a1, a1
 	and	a1, a1, a2
@@ -52,10 +51,9 @@ func000000000000282c:
 	ret
 
 func000000000000114c:
-	slli	a1, a1, 32
 	sext.w	a2, a2
 	sltiu	a2, a2, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	andn	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret

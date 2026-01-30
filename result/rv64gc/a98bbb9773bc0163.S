@@ -32,12 +32,10 @@ func0000000000000421:
 	ret
 
 func00000000000004ca:
-	slli	a0, a0, 32
-	slli	a1, a1, 32
 	addiw	a2, a2, -113
+	srliw	a1, a1, 31
+	srliw	a0, a0, 31
 	snez	a2, a2
-	srli	a1, a1, 63
-	srli	a0, a0, 63
 	and	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

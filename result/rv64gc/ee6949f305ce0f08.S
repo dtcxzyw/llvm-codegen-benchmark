@@ -121,8 +121,7 @@ func0000000000000184:
 func000000000000014c:
 	addi	a1, a1, -1
 	addiw	a0, a0, -18
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -246,8 +245,7 @@ func000000000000058c:
 func000000000000014a:
 	sext.w	a0, a0
 	addi	a1, a1, -1
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	slti	a0, a0, 2
 	or	a0, a0, a1
 	xori	a0, a0, 1
@@ -383,20 +381,18 @@ func0000000000000494:
 	ret
 
 func00000000000000cc:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	lui	a2, 16
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func00000000000004c1:
-	slli	a0, a0, 32
 	addiw	a1, a1, -1
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

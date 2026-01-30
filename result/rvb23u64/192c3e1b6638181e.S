@@ -46,11 +46,10 @@ func000000000000002c:
 	ret
 
 func0000000000000026:
-	slli	a0, a0, 32
 	zext.b	a1, a1
 	addi	a1, a1, -48
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -70,8 +69,7 @@ func0000000000000184:
 
 func000000000000014c:
 	zext.b	a0, a0
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret

@@ -38,12 +38,11 @@ func0000000000000118:
 	ret
 
 func000000000000018c:
-	slli	a1, a1, 32
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	slti	a2, a2, 1
-	srli	a1, a1, 63
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000318:
@@ -105,12 +104,11 @@ func000000000000004c:
 	ret
 
 func000000000000030c:
-	slli	a1, a1, 32
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	snez	a2, a2
-	srli	a1, a1, 63
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000298:
@@ -153,12 +151,11 @@ func0000000000000110:
 	ret
 
 func000000000000028c:
-	slli	a1, a1, 32
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	sgtz	a2, a2
-	srli	a1, a1, 63
-	or	a1, a1, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000108:

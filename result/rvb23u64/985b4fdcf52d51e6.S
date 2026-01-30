@@ -67,30 +67,27 @@ func00000000000000ca:
 	ret
 
 func0000000000000026:
-	slli	a1, a1, 32
 	addiw	a2, a2, -114
 	snez	a2, a2
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	andn	a0, a2, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000c1:
 	sext.w	a1, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
-	seqz	a1, a1
+	srliw	a2, a2, 31
 	not	a0, a0
+	seqz	a1, a1
 	andn	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000086:
-	slli	a1, a1, 32
 	sext.w	a2, a2
 	lui	a3, 1048575
+	srliw	a1, a1, 31
 	addi	a3, a3, 1583
-	srli	a1, a1, 63
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

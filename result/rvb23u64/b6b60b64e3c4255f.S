@@ -36,10 +36,9 @@ func0000000000000181:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
 	andi	a1, a1, 96
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

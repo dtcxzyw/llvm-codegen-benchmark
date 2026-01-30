@@ -20,9 +20,8 @@ func0000000000000012:
 	ret
 
 func0000000000000068:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	fmv.w.x	fa5, zero
-	srli	a0, a0, 63
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

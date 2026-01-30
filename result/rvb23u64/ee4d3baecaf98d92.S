@@ -4,8 +4,7 @@ func000000000000042a:
 	czero.eqz	a0, a0, a3
 	czero.nez	a1, a1, a3
 	or	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

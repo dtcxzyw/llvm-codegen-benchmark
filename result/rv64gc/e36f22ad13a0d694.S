@@ -27,20 +27,18 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	slli	a0, a0, 32
 	addiw	a2, a2, -1
 	not	a1, a1
+	srliw	a0, a0, 31
 	snez	a2, a2
-	and	a1, a1, a2
-	srli	a0, a0, 63
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
 	addiw	a2, a2, -1
+	srliw	a0, a0, 31
 	seqz	a2, a2
-	srli	a0, a0, 63
 	or	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -60,11 +58,9 @@ func0000000000000028:
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 32
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	not	a1, a1
-	srli	a2, a2, 63
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -1,6 +1,5 @@
 func00000000000000f8:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	not	a0, a0
 	and	a0, a0, a1
 	ret

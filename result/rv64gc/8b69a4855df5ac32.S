@@ -24,8 +24,7 @@ func000000000000002a:
 	mv	a3, a2
 .LBB1_4:
 	add	a0, a0, a3
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

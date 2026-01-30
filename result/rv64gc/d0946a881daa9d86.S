@@ -32,8 +32,7 @@ func0000000000000004:
 	ret
 
 func000000000000001b:
-	slli	a3, a0, 32
-	srli	a3, a3, 63
+	srliw	a3, a0, 31
 	or	a1, a1, a3
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2

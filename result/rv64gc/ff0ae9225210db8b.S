@@ -160,9 +160,8 @@ func00000000000000c6:
 	ret
 
 func000000000000014a:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	fmv.d.x	fa5, zero
-	srli	a0, a0, 63
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1

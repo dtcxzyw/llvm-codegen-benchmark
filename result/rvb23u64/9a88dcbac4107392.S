@@ -9,8 +9,7 @@ func00000000000000c6:
 func00000000000000ca:
 	sext.w	a2, a0
 	add	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	sgtz	a1, a2
 	and	a0, a0, a1
 	ret
@@ -79,8 +78,7 @@ func00000000000004c6:
 func000000000000014a:
 	sext.w	a2, a0
 	add	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	sgtz	a1, a2
 	andn	a0, a1, a0
 	ret

@@ -39,9 +39,8 @@ func000000000000002a:
 	beqz	a1, .LBB4_2
 	mv	a2, a0
 .LBB4_2:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
-	xori	a0, a2, 1
+	srliw	a0, a2, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000a81:

@@ -45,8 +45,7 @@ func0000000000000026:
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

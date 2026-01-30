@@ -8,10 +8,9 @@ func0000000000000042:
 	ret
 
 func0000000000000054:
-	slli	a1, a1, 32
 	zext.b	a2, a2
+	srliw	a1, a1, 31
 	seqz	a2, a2
-	srli	a1, a1, 63
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

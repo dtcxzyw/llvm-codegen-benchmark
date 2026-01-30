@@ -1,12 +1,11 @@
 func000000000000294c:
 	sext.w	a1, a1
-	slli	a2, a2, 32
-	snez	a0, a0
-	srli	a2, a2, 63
-	sgtz	a1, a1
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
+	sgtz	a1, a1
+	and	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func000000000000302c:
@@ -60,13 +59,12 @@ func000000000000282c:
 	ret
 
 func000000000000114c:
-	slli	a1, a1, 32
 	sext.w	a2, a2
-	snez	a0, a0
+	srliw	a1, a1, 31
 	sltiu	a2, a2, 32
-	srli	a1, a1, 63
 	not	a1, a1
-	and	a0, a0, a2
+	and	a1, a1, a2
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

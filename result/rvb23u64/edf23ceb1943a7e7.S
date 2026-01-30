@@ -44,10 +44,9 @@ func000000000000004c:
 	ret
 
 func000000000000028c:
-	slli	a0, a0, 32
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	slti	a2, a2, 1
-	srli	a0, a0, 63
 	andn	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

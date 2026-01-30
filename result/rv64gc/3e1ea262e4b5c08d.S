@@ -3,9 +3,8 @@ func000000000000000a:
 	bnez	a0, .LBB0_2
 	neg	a1, a1
 .LBB0_2:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
-	xori	a0, a1, 1
+	srliw	a0, a1, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000001:

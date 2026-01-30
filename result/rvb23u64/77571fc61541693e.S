@@ -89,12 +89,11 @@ func0000000000000281:
 	ret
 
 func0000000000000026:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	xor	a1, a1, a2
+	seqz	a1, a1
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 
 func0000000000000706:
@@ -120,10 +119,9 @@ func00000000000004a6:
 	ret
 
 func00000000000000c6:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	slt	a0, a1, a0
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	slt	a1, a1, a2
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 

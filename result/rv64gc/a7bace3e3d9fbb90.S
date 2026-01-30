@@ -33,10 +33,9 @@ func00000000000000ea:
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 32
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	slt	a1, a1, a2
-	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -76,10 +75,9 @@ func0000000000000186:
 	ret
 
 func000000000000014a:
-	slli	a0, a0, 32
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	slt	a1, a2, a1
-	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

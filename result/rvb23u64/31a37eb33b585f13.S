@@ -13,8 +13,7 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	czero.eqz	a0, a0, a1
 	ret
@@ -26,8 +25,7 @@ func000000000000002c:
 	ret
 
 func0000000000000186:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	czero.nez	a0, a0, a1
 	ret
 

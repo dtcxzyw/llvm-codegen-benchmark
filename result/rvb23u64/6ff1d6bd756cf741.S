@@ -14,8 +14,7 @@ func0000000000000081:
 func000000000000008a:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	flt.d	a1, fa5, fa0
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -39,11 +39,10 @@ func0000000000000001:
 	ret
 
 func0000000000000066:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
-	srli	a0, a0, 63
-	addi	a1, a1, -1
 	xori	a0, a0, 1
+	addi	a1, a1, -1
 	andi	a1, a1, 2
 	or	a1, a1, a2
 	slli	a0, a0, 2
@@ -51,11 +50,10 @@ func0000000000000066:
 	ret
 
 func0000000000000046:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
-	srli	a0, a0, 63
-	addi	a1, a1, -1
 	xori	a0, a0, 1
+	addi	a1, a1, -1
 	andi	a1, a1, 8
 	or	a1, a1, a2
 	slli	a0, a0, 5
@@ -63,11 +61,10 @@ func0000000000000046:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	andi	a1, a1, 1
-	srli	a0, a0, 63
-	addi	a1, a1, -1
 	xori	a0, a0, 1
+	addi	a1, a1, -1
 	andi	a1, a1, 32
 	or	a1, a1, a2
 	slli	a0, a0, 4

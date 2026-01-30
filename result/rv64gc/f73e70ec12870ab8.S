@@ -1,9 +1,8 @@
 func0000000000000026:
-	slli	a0, a0, 32
 	lui	a2, 15
 	and	a1, a1, a2
 	lui	a2, 4
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xor	a1, a1, a2
 	snez	a1, a1
 	addi	a1, a1, -1

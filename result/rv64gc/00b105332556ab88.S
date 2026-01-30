@@ -16,11 +16,10 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	lui	a2, 1048574
-	srli	a1, a1, 63
-	addi	a2, a2, -1
 	xori	a1, a1, 1
+	addi	a2, a2, -1
 	slli	a1, a1, 13
 	and	a0, a0, a2
 	or	a0, a0, a1

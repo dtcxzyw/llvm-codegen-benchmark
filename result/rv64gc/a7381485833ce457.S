@@ -80,10 +80,9 @@ func0000000000000628:
 	ret
 
 func0000000000000330:
-	slli	a1, a1, 32
 	lui	a3, 524288
+	srliw	a1, a1, 31
 	addi	a3, a3, 64
-	srli	a1, a1, 63
 	and	a2, a2, a3
 	sext.w	a2, a2
 	snez	a2, a2

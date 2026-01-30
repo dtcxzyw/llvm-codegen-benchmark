@@ -47,12 +47,10 @@ func00000000000000cc:
 	ret
 
 func00000000000000c6:
-	slli	a2, a0, 32
-	or	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a2, a2, 63
-	not	a1, a2
-	srli	a0, a0, 63
+	or	a1, a1, a0
+	srliw	a0, a0, 31
+	not	a0, a0
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

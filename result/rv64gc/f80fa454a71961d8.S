@@ -69,10 +69,9 @@ func00000000000000e1:
 	ret
 
 func000000000000004a:
-	slli	a0, a0, 32
 	fmv.w.x	fa5, zero
+	srliw	a0, a0, 31
 	flt.s	a1, fa0, fa5
-	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

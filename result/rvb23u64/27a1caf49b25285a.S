@@ -38,18 +38,16 @@ func0000000000000d8c:
 	ret
 
 func00000000000000c4:
-	slli	a0, a0, 32
 	addi	a1, a1, -1
 	sltiu	a1, a1, 31
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func0000000000000cc1:
-	slli	a0, a0, 32
 	addi	a1, a1, -1
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

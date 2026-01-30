@@ -1,9 +1,8 @@
 func000000000000000a:
-	slli	a1, a0, 32
-	srliw	a0, a0, 23
-	srli	a1, a1, 63
-	addi	a0, a0, -2
-	czero.nez	a0, a0, a1
+	srliw	a1, a0, 23
+	srliw	a0, a0, 31
+	addi	a1, a1, -2
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 2
 	ret
 

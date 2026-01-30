@@ -28,8 +28,7 @@ func0000000000000318:
 	ret
 
 func0000000000000198:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

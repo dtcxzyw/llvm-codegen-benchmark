@@ -92,20 +92,18 @@ func00000000000000c4:
 	ret
 
 func00000000000000c6:
-	slli	a0, a0, 32
 	sext.w	a2, a2
 	li	a3, 3
 	slli	a3, a3, 11
 	slt	a2, a2, a3
 	and	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
 func0000000000000141:
 	sext.w	a0, a0
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	seqz	a0, a0

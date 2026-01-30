@@ -164,12 +164,11 @@ func0000000000000284:
 	ret
 
 func0000000000000286:
-	slli	a0, a0, 32
 	lui	a2, 16
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltiu	a1, a1, 12
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -225,10 +224,9 @@ func000000000000028a:
 	ret
 
 func0000000000000186:
-	slli	a0, a0, 32
 	slli	a1, a1, 48
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

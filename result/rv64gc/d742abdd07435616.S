@@ -103,9 +103,8 @@ func000000000000018c:
 	ret
 
 func00000000000000c1:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	addiw	a0, a0, -3
-	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 9

@@ -1,8 +1,7 @@
 func000000000000014a:
-	slli	a0, a0, 32
 	slli	a2, a2, 32
+	srliw	a0, a0, 31
 	srli	a2, a2, 32
-	srli	a0, a0, 63
 	slt	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -56,10 +55,9 @@ func000000000000028a:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
 	slli	a2, a2, 32
+	srliw	a0, a0, 31
 	srli	a2, a2, 32
-	srli	a0, a0, 63
 	xor	a1, a1, a2
 	seqz	a1, a1
 	not	a0, a0

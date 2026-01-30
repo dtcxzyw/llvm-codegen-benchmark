@@ -49,8 +49,7 @@ func0000000000000026:
 	ret
 
 func000000000000014a:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	andn	a0, a0, a2
 	sgtz	a1, a1
 	and	a0, a0, a1

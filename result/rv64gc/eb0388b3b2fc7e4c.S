@@ -71,10 +71,9 @@ func0000000000000028:
 	ret
 
 func0000000000000186:
-	slli	a0, a0, 32
 	andi	a1, a1, 7
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

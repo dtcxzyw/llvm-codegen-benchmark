@@ -169,12 +169,11 @@ func0000000000001514:
 	ret
 
 func0000000000006318:
-	slli	a0, a0, 32
 	sext.w	a2, a2
 	sext.w	a1, a1
 	min	a1, a1, a2
 	slti	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -201,9 +200,8 @@ func0000000000004082:
 	ret
 
 func0000000000006630:
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	orn	a0, a1, a0
-	srli	a2, a2, 63
 	sext.w	a0, a0
 	snez	a0, a0
 	or	a0, a0, a2
@@ -470,8 +468,7 @@ func000000000000630c:
 func0000000000006514:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	max	a0, a1, a0
 	slti	a0, a0, 201
 	xori	a0, a0, 1
@@ -479,13 +476,12 @@ func0000000000006514:
 	ret
 
 func0000000000008418:
-	slli	a0, a0, 32
 	sext.w	a2, a2
 	sext.w	a1, a1
 	maxu	a1, a1, a2
 	sltiu	a1, a1, 200
 	xori	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -515,25 +511,23 @@ func0000000000001098:
 func000000000000a082:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
+	xori	a2, a2, 1
 	seqz	a1, a1
 	seqz	a0, a0
-	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000001094:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	seqz	a2, a2
 	binvi	a1, a1, 30
-	srli	a0, a0, 63
-	seqz	a1, a1
-	or	a1, a1, a2
 	xori	a0, a0, 1
+	seqz	a1, a1
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
@@ -554,9 +548,8 @@ func0000000000001202:
 	ret
 
 func000000000000c318:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	xori	a0, a0, 1
-	srli	a1, a1, 63
 	or	a0, a0, a2
 	sext.w	a0, a0
 	snez	a0, a0
@@ -650,34 +643,31 @@ func000000000000108c:
 
 func000000000000430c:
 	sext.w	a0, a0
-	slli	a1, a1, 32
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	sltiu	a2, a2, -12
-	srli	a1, a1, 63
 	slti	a0, a0, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000008318:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	sltiu	a2, a2, 7
 	slti	a1, a1, 1
-	srli	a0, a0, 63
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000830c:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	sext.w	a2, a2
+	srliw	a0, a0, 31
 	sltiu	a2, a2, 7
 	slti	a1, a1, 1
-	srli	a0, a0, 63
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

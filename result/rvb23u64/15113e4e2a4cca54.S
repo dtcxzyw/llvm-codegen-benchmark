@@ -1,10 +1,9 @@
 func0000000000006046:
-	slli	a0, a0, 32
 	addi	a2, a2, -255
 	seqz	a1, a1
 	snez	a2, a2
 	or	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

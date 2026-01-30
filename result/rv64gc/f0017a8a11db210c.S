@@ -1,9 +1,8 @@
 func0000000000000146:
-	slli	a2, a0, 32
-	subw	a0, a0, a1
-	sgtz	a0, a0
-	srli	a2, a2, 63
-	and	a0, a0, a2
+	subw	a1, a0, a1
+	sgtz	a1, a1
+	srliw	a0, a0, 31
+	and	a0, a0, a1
 	ret
 
 func000000000000054a:
@@ -26,8 +25,7 @@ func0000000000000084:
 func00000000000000cc:
 	sext.w	a2, a0
 	sub	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	snez	a1, a2
 	and	a0, a0, a1
 	ret

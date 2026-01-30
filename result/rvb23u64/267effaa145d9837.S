@@ -27,8 +27,7 @@ func00000000000001b4:
 
 func000000000000000a:
 	addi	a1, a1, 8
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

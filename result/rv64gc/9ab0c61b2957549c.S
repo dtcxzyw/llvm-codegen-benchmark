@@ -7,10 +7,9 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
-	slli	a2, a0, 32
-	mulw	a0, a0, a1
-	srli	a2, a2, 63
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	mulw	a1, a0, a1
+	srliw	a0, a0, 31
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret
 

@@ -76,8 +76,7 @@ func0000000000000188:
 func00000000000001aa:
 	zext.b	a1, a1
 	sh1add	a0, a1, a0
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

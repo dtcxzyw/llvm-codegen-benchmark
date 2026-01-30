@@ -4,8 +4,7 @@ func00000000000008cb:
 	divuw	a2, a2, a1
 	sext.w	a3, a0
 	mul	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	slt	a1, a3, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

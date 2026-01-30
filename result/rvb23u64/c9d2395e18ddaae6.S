@@ -171,31 +171,28 @@ func0000000000000885:
 	ret
 
 func000000000000094a:
-	slli	a1, a1, 32
 	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000d4a:
-	slli	a1, a1, 32
 	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000054a:
-	slli	a1, a1, 32
 	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	srli	a1, a1, 63
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

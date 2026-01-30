@@ -29,8 +29,7 @@ func000000000000088a:
 	slli	a0, a0, 2
 	sllw	a1, a2, a0
 .LBB2_2:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
-	xori	a0, a1, 1
+	srliw	a0, a1, 31
+	xori	a0, a0, 1
 	ret
 

@@ -147,9 +147,8 @@ func0000000000000186:
 	ret
 
 func00000000000000c1:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	slli	a0, a0, 48
-	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -263,9 +262,8 @@ func0000000000000094:
 
 func0000000000000148:
 	slli	a0, a0, 48
-	slli	a1, a1, 32
 	srli	a0, a0, 48
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sltiu	a0, a0, 58
 	or	a0, a0, a1
 	xori	a0, a0, 1
@@ -339,9 +337,8 @@ func0000000000000034:
 
 func00000000000000ca:
 	slli	a0, a0, 48
-	slli	a1, a1, 32
 	srai	a0, a0, 48
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

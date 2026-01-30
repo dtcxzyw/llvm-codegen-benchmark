@@ -258,12 +258,11 @@ func00000000000008cc:
 	ret
 
 func0000000000000c26:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

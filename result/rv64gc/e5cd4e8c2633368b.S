@@ -65,17 +65,16 @@ func0000000000000602:
 	ret
 
 func0000000000000094:
-	slli	a2, a0, 32
-	lui	a3, 266240
-	addi	a3, a3, -1
-	and	a0, a0, a3
+	lui	a2, 266240
 	lui	a3, 262144
-	srli	a2, a2, 63
-	xori	a2, a2, 1
-	xor	a0, a0, a3
-	seqz	a0, a0
-	or	a1, a1, a2
+	addi	a2, a2, -1
+	and	a2, a2, a0
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
+	xor	a2, a2, a3
+	seqz	a2, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000084:

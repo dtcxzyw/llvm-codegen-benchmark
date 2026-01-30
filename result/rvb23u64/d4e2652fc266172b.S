@@ -1,7 +1,6 @@
 func0000000000000099:
 	add	a0, a0, a1
-	slli	a1, a0, 32
-	srli	a1, a1, 63
+	srliw	a1, a0, 31
 	addi	a1, a1, -1
 	andi	a1, a1, -24
 	addw	a0, a0, a1

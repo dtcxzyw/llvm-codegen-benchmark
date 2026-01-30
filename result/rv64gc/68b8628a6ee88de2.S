@@ -11,8 +11,7 @@ func000000000000000c:
 	li	a3, 1000
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 
@@ -29,8 +28,7 @@ func000000000000014c:
 	slli	a3, a2, 1
 	add	a1, a1, a2
 	add	a1, a1, a3
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

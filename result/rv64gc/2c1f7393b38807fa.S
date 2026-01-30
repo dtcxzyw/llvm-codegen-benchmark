@@ -49,8 +49,7 @@ func000000000000018a:
 
 func0000000000000186:
 	sext.w	a0, a0
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	sext.w	a1, a1

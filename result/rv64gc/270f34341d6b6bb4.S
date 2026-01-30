@@ -9,12 +9,11 @@ func0000000000000b02:
 	ret
 
 func000000000000630c:
-	slli	a0, a0, 32
 	sext.w	a2, a2
 	snez	a1, a1
 	snez	a2, a2
 	and	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

@@ -22,10 +22,9 @@ func000000000000018a:
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 32
 	fcvt.w.s	a1, fa0, rtz
 	sgtz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

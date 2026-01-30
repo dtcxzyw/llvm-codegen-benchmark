@@ -51,10 +51,9 @@ func0000000000000302:
 	ret
 
 func0000000000000314:
-	slli	a0, a0, 32
 	sext.w	a1, a1
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

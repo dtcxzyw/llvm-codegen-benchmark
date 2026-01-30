@@ -47,8 +47,7 @@ func0000000000000086:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	addi	a2, a2, -1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -123,9 +122,8 @@ func000000000000014c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	addi	a2, a2, -1
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	xor	a0, a0, a1
-	srli	a2, a2, 63
 	xori	a1, a2, 1
 	snez	a0, a0
 	and	a0, a0, a1

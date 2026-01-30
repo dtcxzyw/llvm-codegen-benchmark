@@ -39,10 +39,9 @@ func000000000000030c:
 	ret
 
 func000000000000018c:
-	slli	a1, a1, 32
 	slti	a2, a2, 1
-	srli	a1, a1, 63
-	or	a0, a0, a2
+	srliw	a1, a1, 31
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

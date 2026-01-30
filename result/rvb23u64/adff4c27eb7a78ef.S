@@ -25,10 +25,9 @@ func0000000000000050:
 	ret
 
 func0000000000000094:
-	slli	a0, a0, 32
 	addi	a1, a1, 2
+	srliw	a0, a0, 31
 	li	a2, -1
-	srli	a0, a0, 63
 	srli	a2, a2, 32
 	czero.eqz	a0, a2, a0
 	zext.w	a1, a1

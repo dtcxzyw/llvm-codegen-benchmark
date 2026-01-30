@@ -20,16 +20,14 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 
 func0000000000000006:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	ret

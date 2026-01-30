@@ -112,12 +112,11 @@ func0000000000000014:
 	ret
 
 func00000000000000aa:
-	slli	a0, a0, 32
 	lui	a1, 242237
 	addi	a1, a1, 1802
 	fmv.w.x	fa5, a1
 	fle.s	a1, fa0, fa5
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -218,9 +217,8 @@ func000000000000001c:
 	ret
 
 func00000000000000a4:
-	slli	a0, a0, 32
+	srliw	a0, a0, 31
 	fmv.w.x	fa5, zero
-	srli	a0, a0, 63
 	xori	a0, a0, 1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1

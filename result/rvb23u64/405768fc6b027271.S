@@ -145,10 +145,9 @@ func0000000000000110:
 	ret
 
 func000000000000030c:
-	slli	a0, a0, 32
 	slli	a1, a1, 48
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

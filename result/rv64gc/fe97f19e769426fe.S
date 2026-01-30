@@ -113,10 +113,9 @@ func00000000000004c4:
 	ret
 
 func00000000000004c1:
-	slli	a0, a0, 32
 	addiw	a1, a1, -1
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -175,8 +174,7 @@ func00000000000000c4:
 func0000000000000186:
 	sext.w	a0, a0
 	addi	a1, a1, -1
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

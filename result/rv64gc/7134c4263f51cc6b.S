@@ -278,12 +278,11 @@ func0000000000000308:
 	ret
 
 func0000000000000086:
-	slli	a1, a0, 32
-	srliw	a0, a0, 16
-	seqz	a0, a0
-	srli	a1, a1, 63
-	slli	a0, a0, 16
-	addi	a1, a1, -1
+	srliw	a1, a0, 16
+	srliw	a0, a0, 31
+	seqz	a1, a1
+	slli	a1, a1, 16
+	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 

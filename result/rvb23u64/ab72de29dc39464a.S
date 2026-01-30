@@ -127,10 +127,9 @@ func0000000000000090:
 	ret
 
 func0000000000000614:
-	slli	a0, a0, 32
 	bexti	a2, a2, 11
+	srliw	a0, a0, 31
 	or	a1, a1, a2
-	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

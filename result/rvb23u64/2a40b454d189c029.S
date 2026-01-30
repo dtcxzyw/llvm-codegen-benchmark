@@ -6,10 +6,9 @@ func0000000000000041:
 	ret
 
 func000000000000006a:
-	slli	a0, a0, 32
 	slli	a2, a2, 5
 	add	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	czero.eqz	a0, a1, a0
 	ret
 

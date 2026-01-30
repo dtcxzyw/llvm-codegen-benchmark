@@ -1,10 +1,9 @@
 func0000000000000cd9:
-	slli	a0, a0, 32
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

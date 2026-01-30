@@ -35,13 +35,12 @@ func0000000000000005:
 
 func000000000000002b:
 	andi	a1, a1, 1
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	lui	a3, 131072
-	srli	a2, a2, 63
-	addi	a1, a1, -1
 	czero.eqz	a2, a3, a2
+	addi	a1, a1, -1
 	andi	a1, a1, 576
-	or	a1, a1, a2
+	or	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 27
 	ret

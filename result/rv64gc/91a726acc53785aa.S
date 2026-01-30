@@ -29,8 +29,7 @@ func00000000000000aa:
 	seqz	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, -4
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -45,15 +44,13 @@ func000000000000008a:
 	beqz	a1, .LBB5_2
 	li	a1, -360
 	add	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 .LBB5_2:
 	li	a1, -60
 	add	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

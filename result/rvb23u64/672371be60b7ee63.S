@@ -44,8 +44,7 @@ func0000000000000006:
 func00000000000001ca:
 	slli	a1, a1, 3
 	sub	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

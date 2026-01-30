@@ -11,8 +11,7 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	slli	a1, a0, 32
-	srli	a1, a1, 63
+	srliw	a1, a0, 31
 	addi	a0, a0, 5
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, -5

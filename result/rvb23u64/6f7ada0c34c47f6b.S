@@ -19,11 +19,10 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	slli	a1, a0, 32
-	andi	a0, a0, 254
-	addi	a0, a0, -6
-	snez	a0, a0
-	srli	a1, a1, 63
+	andi	a1, a0, 254
+	addi	a1, a1, -6
+	snez	a1, a1
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

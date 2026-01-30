@@ -1,9 +1,8 @@
 func0000000000000cd9:
-	slli	a1, a1, 32
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	or	a0, a0, a1
 	ret
 

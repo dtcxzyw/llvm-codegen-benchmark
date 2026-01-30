@@ -24,11 +24,10 @@ func000000000000048c:
 	ret
 
 func000000000000048a:
-	slli	a0, a0, 32
 	zext.b	a1, a1
 	addi	a1, a1, -1
 	sltiu	a1, a1, 12
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

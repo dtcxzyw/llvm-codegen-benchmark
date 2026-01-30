@@ -26,8 +26,7 @@ func000000000000020a:
 	slli	a1, a1, 3
 	sub	a0, a0, a1
 	addi	a0, a0, 348
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

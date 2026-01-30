@@ -1,10 +1,9 @@
 func00000000000000ac:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	fmv.d.x	fa5, zero
-	srli	a1, a1, 63
-	fle.d	a2, fa5, fa0
 	xori	a1, a1, 1
-	and	a0, a0, a2
+	and	a0, a0, a1
+	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 

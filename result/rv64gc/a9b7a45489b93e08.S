@@ -12,8 +12,7 @@ func00000000000000ca:
 	bgez	a3, .LBB1_2
 	add	a0, a2, a1
 .LBB1_2:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

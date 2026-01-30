@@ -69,8 +69,7 @@ func0000000000000006:
 	li	a3, 100
 	mul	a2, a2, a3
 	sub	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

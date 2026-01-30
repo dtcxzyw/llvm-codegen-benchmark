@@ -160,10 +160,9 @@ func0000000000000281:
 	ret
 
 func000000000000008a:
-	slli	a0, a0, 32
 	zext.b	a1, a1
+	srliw	a0, a0, 31
 	sltiu	a1, a1, 64
-	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -230,10 +229,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000186:
-	slli	a0, a0, 32
 	zext.b	a1, a1
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 

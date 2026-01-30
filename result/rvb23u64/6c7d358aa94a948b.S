@@ -1,8 +1,7 @@
 func000000000000014a:
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

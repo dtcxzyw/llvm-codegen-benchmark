@@ -1,6 +1,5 @@
 func000000000000001b:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	or	a0, a0, a2
 	andi	a0, a0, 1
 	slli	a1, a1, 32
@@ -8,8 +7,7 @@ func000000000000001b:
 	ret
 
 func000000000000001a:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	or	a0, a0, a2
 	andi	a0, a0, 1
 	slli	a1, a1, 32

@@ -1,6 +1,5 @@
 func0000000000000281:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	andn	a0, a1, a0
 	ret
 

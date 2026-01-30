@@ -7,9 +7,8 @@ func00000000000002c2:
 	ret
 
 func000000000000028c:
-	slli	a0, a0, 32
 	slt	a1, a2, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -90,9 +89,8 @@ func0000000000000102:
 	ret
 
 func000000000000060c:
-	slli	a0, a0, 32
 	sltu	a1, a2, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -112,8 +110,7 @@ func000000000000004a:
 	ret
 
 func0000000000000188:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -166,19 +163,17 @@ func0000000000000328:
 	ret
 
 func0000000000000314:
-	slli	a0, a0, 32
 	xor	a1, a1, a2
+	srliw	a0, a0, 31
 	snez	a1, a1
-	srli	a0, a0, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000014c:
-	slli	a0, a0, 32
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -191,8 +186,7 @@ func0000000000000196:
 	ret
 
 func000000000000028e:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	xori	a0, a0, 1
@@ -259,9 +253,8 @@ func0000000000000258:
 	ret
 
 func000000000000050c:
-	slli	a0, a0, 32
 	sltu	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -328,10 +321,9 @@ func0000000000000250:
 	ret
 
 func00000000000001cc:
-	slli	a0, a0, 32
 	slt	a1, a2, a1
 	xori	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -395,9 +387,8 @@ func0000000000000642:
 	ret
 
 func00000000000001d4:
-	slli	a0, a0, 32
 	slt	a1, a2, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

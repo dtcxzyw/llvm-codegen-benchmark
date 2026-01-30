@@ -37,12 +37,11 @@ func0000000000000098:
 	ret
 
 func0000000000000026:
-	slli	a1, a1, 32
 	zext.b	a2, a2
 	addi	a2, a2, -82
 	snez	a2, a2
 	andn	a0, a2, a0
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

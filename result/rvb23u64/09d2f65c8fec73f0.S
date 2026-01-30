@@ -42,8 +42,7 @@ func0000000000000184:
 	ret
 
 func00000000000000c1:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	czero.nez	a0, a1, a0
 	ret
 
@@ -215,8 +214,7 @@ func00000000000000d4:
 	ret
 
 func0000000000000158:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	xori	a0, a0, 1
@@ -237,8 +235,7 @@ func0000000000000081:
 	ret
 
 func00000000000000c4:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sltiu	a0, a0, 31
 	and	a0, a0, a1
 	ret

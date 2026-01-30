@@ -10,8 +10,7 @@ func0000000000000021:
 	ret
 
 func00000000000000c6:
-	slli	a3, a1, 32
-	srli	a3, a3, 63
+	srliw	a3, a1, 31
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -20,14 +19,12 @@ func00000000000000c6:
 	ret
 
 func00000000000000ca:
-	slli	a3, a1, 32
-	srli	a3, a3, 63
+	srliw	a3, a1, 31
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

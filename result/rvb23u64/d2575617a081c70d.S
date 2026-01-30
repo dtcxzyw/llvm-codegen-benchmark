@@ -1,9 +1,8 @@
 func000000000000108c:
-	slli	a0, a0, 32
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -20,11 +19,10 @@ func000000000000a50c:
 	ret
 
 func000000000000c098:
-	slli	a0, a0, 32
 	snez	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

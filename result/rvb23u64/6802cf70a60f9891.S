@@ -102,11 +102,10 @@ func000000000000098a:
 	ret
 
 func0000000000000d8a:
-	slli	a0, a0, 32
 	addi	a2, a2, 8
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

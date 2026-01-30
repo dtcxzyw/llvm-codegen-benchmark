@@ -17,8 +17,7 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	not	a2, a2
 	or	a1, a1, a2
 	slli	a1, a1, 63

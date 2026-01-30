@@ -17,13 +17,12 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	slli	a1, a1, 32
 	sraiw	a2, a2, 31
+	srliw	a1, a1, 31
 	seqz	a2, a2
-	srli	a1, a1, 63
 	not	a1, a1
-	and	a0, a0, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000024:

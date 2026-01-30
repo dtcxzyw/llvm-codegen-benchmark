@@ -6,8 +6,7 @@ func0000000000000001:
 
 func000000000000000a:
 	addi	a1, a1, 3
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	not	a0, a0
 	and	a0, a0, a1

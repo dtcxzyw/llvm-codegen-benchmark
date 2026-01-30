@@ -105,10 +105,9 @@ func0000000000002821:
 	ret
 
 func000000000000298a:
-	slli	a0, a0, 32
 	sext.w	a2, a2
 	sgtz	a2, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a2, a0
 	czero.eqz	a0, a0, a1
 	ret

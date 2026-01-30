@@ -17,8 +17,7 @@ func00000000000000aa:
 	zext.b	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 
@@ -26,8 +25,7 @@ func00000000000002aa:
 	zext.b	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

@@ -1,7 +1,6 @@
 func000000000000000c:
 	not	a0, a0
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -41,8 +40,7 @@ func0000000000000028:
 
 func0000000000000014:
 	xori	a0, a0, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	and	a0, a0, a1
 	ret
 

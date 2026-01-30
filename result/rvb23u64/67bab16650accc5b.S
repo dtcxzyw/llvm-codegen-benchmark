@@ -25,9 +25,8 @@ func0000000000000986:
 	sext.w	a3, a0
 	or	a0, a0, a1
 	xor	a2, a2, a3
-	slli	a0, a0, 32
 	seqz	a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

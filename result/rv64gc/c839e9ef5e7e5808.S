@@ -6,10 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	slli	a0, a0, 32
 	addi	a1, a1, -1
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

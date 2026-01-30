@@ -15,12 +15,11 @@ func0000000000000102:
 	ret
 
 func000000000000014c:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	sltu	a1, a2, a1
+	xori	a1, a1, 1
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 
 func0000000000000042:
@@ -44,20 +43,18 @@ func0000000000000842:
 	ret
 
 func000000000000004c:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	xor	a1, a1, a2
+	seqz	a1, a1
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 
 func000000000000050c:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	sltu	a0, a1, a0
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	sltu	a1, a1, a2
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 
 func0000000000000502:
@@ -88,12 +85,11 @@ func0000000000000542:
 	ret
 
 func00000000000001cc:
-	slli	a2, a0, 32
-	zext.w	a0, a0
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	srli	a2, a2, 63
-	or	a0, a0, a2
+	zext.w	a2, a0
+	slt	a1, a2, a1
+	xori	a1, a1, 1
+	srliw	a0, a0, 31
+	or	a0, a0, a1
 	ret
 
 func0000000000000182:

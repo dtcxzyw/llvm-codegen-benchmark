@@ -8,10 +8,9 @@ func0000000000000020:
 	ret
 
 func00000000000000a8:
-	slli	a2, a1, 32
+	addi	a2, a1, -1
+	srliw	a1, a1, 31
 	addi	a1, a1, -1
-	srli	a2, a2, 63
-	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

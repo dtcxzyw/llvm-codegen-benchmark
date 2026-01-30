@@ -47,9 +47,8 @@ func0000000000000208:
 	ret
 
 func000000000000004c:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	addiw	a0, a0, -8
-	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

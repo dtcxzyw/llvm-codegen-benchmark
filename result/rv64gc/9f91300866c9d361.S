@@ -38,10 +38,9 @@ func0000000000000081:
 	ret
 
 func0000000000000106:
-	slli	a0, a0, 32
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 

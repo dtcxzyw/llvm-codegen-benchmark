@@ -15,8 +15,7 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	slli	a1, a1, 13
 	bclri	a0, a0, 13

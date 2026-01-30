@@ -20,8 +20,7 @@ func0000000000000021:
 
 func00000000000000c1:
 	zext.b	a1, a1
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	addi	a1, a1, -3
 	seqz	a1, a1
 	and	a1, a1, a2

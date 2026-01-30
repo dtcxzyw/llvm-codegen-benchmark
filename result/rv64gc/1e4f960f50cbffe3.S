@@ -82,12 +82,11 @@ func0000000000000301:
 	ret
 
 func0000000000000186:
-	slli	a0, a0, 32
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -1
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -100,10 +99,9 @@ func000000000000002a:
 	ret
 
 func000000000000018a:
-	slli	a0, a0, 32
 	slli	a1, a1, 48
+	srliw	a0, a0, 31
 	snez	a1, a1
-	srli	a0, a0, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -242,11 +240,10 @@ func0000000000000094:
 	ret
 
 func000000000000010a:
-	slli	a0, a0, 32
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 20
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

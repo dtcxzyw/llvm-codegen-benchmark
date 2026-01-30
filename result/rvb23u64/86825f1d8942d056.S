@@ -39,10 +39,9 @@ func000000000000014c:
 	ret
 
 func0000000000000026:
-	slli	a0, a0, 32
 	addi	a1, a1, -4
 	seqz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -145,9 +144,8 @@ func000000000000030c:
 	ret
 
 func000000000000014a:
-	slli	a0, a0, 32
 	sgtz	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
@@ -243,9 +241,8 @@ func000000000000030a:
 	ret
 
 func0000000000000286:
-	slli	a0, a0, 32
 	sltiu	a1, a1, 5
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -336,16 +333,14 @@ func0000000000000084:
 	ret
 
 func000000000000008a:
-	slli	a0, a0, 32
 	sltiu	a1, a1, 256
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 32
 	srli	a1, a1, 63
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

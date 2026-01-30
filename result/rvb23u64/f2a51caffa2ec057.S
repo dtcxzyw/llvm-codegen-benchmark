@@ -6,8 +6,7 @@ func000000000000002a:
 	czero.eqz	a0, a3, a0
 	or	a0, a0, a1
 	add	a0, a0, a2
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

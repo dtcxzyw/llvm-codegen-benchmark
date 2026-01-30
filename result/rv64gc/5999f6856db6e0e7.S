@@ -19,13 +19,12 @@ func0000000000000688:
 	ret
 
 func000000000000028a:
-	slli	a1, a0, 32
-	addi	a2, a0, -1
-	and	a0, a0, a2
-	srli	a1, a1, 63
-	sext.w	a0, a0
-	seqz	a0, a0
-	not	a1, a1
+	addi	a1, a0, -1
+	and	a1, a1, a0
+	srliw	a0, a0, 31
+	sext.w	a1, a1
+	seqz	a1, a1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

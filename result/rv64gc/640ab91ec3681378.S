@@ -1,9 +1,8 @@
 func00000000000000cc:
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
+	and	a1, a1, a2
 	snez	a0, a0
-	srli	a2, a2, 63
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func00000000000000c6:

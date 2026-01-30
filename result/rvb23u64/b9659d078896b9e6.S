@@ -34,8 +34,7 @@ func000000000000000a:
 
 func0000000000000006:
 	or	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	andn	a0, a1, a0
 	ret
 

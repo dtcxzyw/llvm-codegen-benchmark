@@ -38,16 +38,14 @@ func00000000000000ca:
 	bgtz	a3, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
-	xori	a0, a1, 1
+	srliw	a0, a1, 31
+	xori	a0, a0, 1
 	ret
 .LBB2_3:
 	mv	a2, a1
 	bnez	a0, .LBB2_2
 .LBB2_4:
-	slli	a1, a2, 32
-	srli	a1, a1, 63
-	xori	a0, a1, 1
+	srliw	a0, a2, 31
+	xori	a0, a0, 1
 	ret
 

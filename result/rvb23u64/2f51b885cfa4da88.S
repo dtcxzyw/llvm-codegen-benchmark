@@ -13,8 +13,7 @@ func000000000000010c:
 	ret
 
 func0000000000000064:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	flt.d	a1, fa1, fa0
 	and	a0, a0, a1
 	ret

@@ -69,9 +69,8 @@ func0000000000000084:
 	ret
 
 func00000000000000d9:
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	sltu	a0, a0, a1
-	srli	a2, a2, 63
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
@@ -145,8 +144,7 @@ func0000000000000024:
 	ret
 
 func0000000000000145:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	xori	a0, a0, 1
@@ -304,9 +302,8 @@ func000000000000014b:
 	ret
 
 func00000000000000c5:
-	slli	a2, a2, 32
+	srliw	a2, a2, 31
 	sltu	a0, a1, a0
-	srli	a2, a2, 63
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret

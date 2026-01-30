@@ -18,8 +18,7 @@ func000000000000000a:
 	li	a2, -28
 .LBB2_2:
 	add	a0, a0, a2
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

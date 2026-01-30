@@ -26,10 +26,9 @@ func0000000000000181:
 	ret
 
 func0000000000000144:
-	slli	a0, a0, 32
 	add	a1, a1, a2
+	srliw	a0, a0, 31
 	srli	a1, a1, 32
-	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

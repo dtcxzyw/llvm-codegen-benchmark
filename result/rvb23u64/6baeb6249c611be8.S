@@ -32,8 +32,7 @@ func0000000000000948:
 	sext.w	a2, a0
 	sext.w	a3, a1
 	sub	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	sltu	a1, a3, a2
 	and	a0, a0, a1
@@ -43,8 +42,7 @@ func00000000000008c8:
 	sext.w	a2, a0
 	sext.w	a3, a1
 	sub	a0, a0, a1
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	sltu	a1, a3, a2
 	and	a0, a0, a1
 	ret

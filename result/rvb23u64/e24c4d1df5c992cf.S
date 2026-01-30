@@ -130,8 +130,7 @@ func0000000000000186:
 
 func00000000000000c1:
 	zext.h	a0, a0
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	czero.nez	a0, a1, a0
 	ret
 
@@ -231,8 +230,7 @@ func0000000000000094:
 
 func0000000000000148:
 	zext.h	a0, a0
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sltiu	a0, a0, 58
 	or	a0, a0, a1
 	xori	a0, a0, 1
@@ -301,8 +299,7 @@ func0000000000000034:
 
 func00000000000000ca:
 	sext.h	a0, a0
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -73,10 +73,9 @@ func0000000000000034:
 	ret
 
 func00000000000000cc:
-	slli	a0, a0, 32
 	lui	a2, 262128
 	and	a1, a1, a2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	czero.eqz	a0, a0, a1
 	ret
 

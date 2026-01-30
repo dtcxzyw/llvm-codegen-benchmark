@@ -48,9 +48,8 @@ func0000000000000101:
 	ret
 
 func00000000000000cc:
-	slli	a0, a0, 32
 	srli	a1, a1, 7
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
@@ -153,9 +152,8 @@ func0000000000000281:
 	ret
 
 func00000000000000c1:
-	slli	a0, a0, 32
 	zext.b	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	czero.nez	a0, a0, a1
 	ret
 

@@ -281,8 +281,7 @@ func0000000000000089:
 	ret
 
 func00000000000000ca:
-	slli	a2, a2, 32
-	srli	a2, a2, 63
+	srliw	a2, a2, 31
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret

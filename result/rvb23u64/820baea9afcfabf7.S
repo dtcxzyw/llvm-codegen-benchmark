@@ -8,9 +8,8 @@ func0000000000000065:
 	ret
 
 func00000000000000a5:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	li	a2, -2
-	srli	a1, a1, 63
 	zext.w	a2, a2
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

@@ -8,17 +8,15 @@ func000000000000002c:
 	ret
 
 func000000000000018a:
-	slli	a0, a0, 32
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 
 func000000000000054a:
-	slli	a0, a0, 32
 	slt	a1, a2, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

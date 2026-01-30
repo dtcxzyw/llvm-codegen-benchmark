@@ -49,10 +49,8 @@ func0000000000000034:
 	ret
 
 func00000000000000ca:
-	slli	a1, a1, 32
-	slli	a2, a2, 32
-	srli	a2, a2, 63
-	srli	a1, a1, 63
+	srliw	a2, a2, 31
+	srliw	a1, a1, 31
 	not	a1, a1
 	and	a1, a1, a2
 	neg	a1, a1

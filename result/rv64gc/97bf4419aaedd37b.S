@@ -28,8 +28,7 @@ func000000000000088a:
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	slli	a0, a0, 32
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret
 

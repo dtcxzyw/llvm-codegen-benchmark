@@ -60,9 +60,8 @@ func000000000000018a:
 	beqz	a2, .LBB6_2
 	mv	a1, a0
 .LBB6_2:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
-	xori	a0, a1, 1
+	srliw	a0, a1, 31
+	xori	a0, a0, 1
 	ret
 
 func0000000000000301:

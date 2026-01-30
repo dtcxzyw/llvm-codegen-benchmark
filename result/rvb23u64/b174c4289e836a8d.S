@@ -9,16 +9,14 @@ func0000000000000021:
 	ret
 
 func0000000000000141:
-	slli	a1, a1, 32
+	srliw	a1, a1, 31
 	not	a0, a0
-	srli	a1, a1, 63
 	bexti	a0, a0, 30
 	andn	a0, a0, a1
 	ret
 
 func000000000000014c:
-	slli	a1, a1, 32
-	srli	a1, a1, 63
+	srliw	a1, a1, 31
 	bexti	a0, a0, 12
 	or	a0, a0, a1
 	ret

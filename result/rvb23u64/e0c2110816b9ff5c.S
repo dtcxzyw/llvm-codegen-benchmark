@@ -1,10 +1,9 @@
 func0000000000000186:
-	slli	a0, a0, 32
 	zext.h	a2, a2
 	zext.h	a1, a1
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
 
@@ -19,11 +18,10 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
 	zext.h	a2, a2
 	zext.h	a1, a1
+	srliw	a0, a0, 31
 	xor	a1, a1, a2
-	srli	a0, a0, 63
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

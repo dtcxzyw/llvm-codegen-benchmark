@@ -7,10 +7,9 @@ func0000000000000284:
 	ret
 
 func000000000000068a:
-	slli	a0, a0, 32
 	cpopw	a1, a1
 	sltiu	a1, a1, 2
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	ret
 

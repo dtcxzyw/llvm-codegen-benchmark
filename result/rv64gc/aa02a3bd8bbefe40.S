@@ -27,11 +27,10 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 32
 	srliw	a1, a1, 30
 	addi	a1, a1, -1
 	snez	a1, a1
-	srli	a0, a0, 63
+	srliw	a0, a0, 31
 	or	a1, a1, a0
 	lui	a0, 176
 	bnez	a1, .LBB2_2
