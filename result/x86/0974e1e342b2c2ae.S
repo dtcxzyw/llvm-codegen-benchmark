@@ -7,23 +7,26 @@ func0000000000000011:
 	retq
 
 func0000000000000015:
-	leal	-1(%rdi,%rsi), %ecx
-	movl	%ecx, %eax
-	negl	%eax
-	cmovsl	%ecx, %eax
+	leal	(%rdi,%rsi), %ecx
+	leal	-1(%rdi,%rsi), %edx
+	movl	$1, %eax
+	subl	%ecx, %eax
+	cmovll	%edx, %eax
 	retq
 
 func0000000000000014:
-	leal	-1(%rdi,%rsi), %ecx
-	movl	%ecx, %eax
-	negl	%eax
-	cmovsl	%ecx, %eax
+	leal	(%rdi,%rsi), %ecx
+	leal	-1(%rdi,%rsi), %edx
+	movl	$1, %eax
+	subl	%ecx, %eax
+	cmovll	%edx, %eax
 	retq
 
 func0000000000000005:
-	leal	-1(%rdi,%rsi), %ecx
-	movl	%ecx, %eax
-	negl	%eax
-	cmovsl	%ecx, %eax
+	leal	(%rdi,%rsi), %ecx
+	leal	-1(%rdi,%rsi), %edx
+	movl	$1, %eax
+	subl	%ecx, %eax
+	cmovll	%edx, %eax
 	retq
 

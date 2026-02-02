@@ -8,8 +8,8 @@ func0000000000000000:
 
 func0000000000000016:
 	leal	-1(%rdi), %ecx
-	movl	%ecx, %eax
-	negl	%eax
-	cmovsl	%ecx, %eax
+	movl	$1, %eax
+	subl	%edi, %eax
+	cmovll	%ecx, %eax
 	retq
 
