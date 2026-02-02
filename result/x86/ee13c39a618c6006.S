@@ -1,9 +1,9 @@
 	.att_syntax
 func000000000000000a:
-	vmovmskps	%xmm0, %ecx
-	xorl	%eax, %eax
-	shll	$31, %ecx
-	sets	%al
-	addq	$3, %rax
+	vmovmskps	%xmm0, %eax
+	andl	$1, %eax
+	cmpl	$1, %eax
+	movl	$4, %eax
+	sbbq	$0, %rax
 	retq
 

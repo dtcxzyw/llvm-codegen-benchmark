@@ -12,8 +12,8 @@ func0000000000000086:
 
 func000000000000008a:
 	shlxq	%rsi, %rdi, %rax
-	testq	%rax, %rax
-	setns	%al
+	shrq	$63, %rax
+	sete	%al
 	retq
 
 func0000000000000081:

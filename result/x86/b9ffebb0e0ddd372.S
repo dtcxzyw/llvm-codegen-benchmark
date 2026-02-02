@@ -23,14 +23,14 @@ func00000000000001e1:
 
 func000000000000010a:
 	imull	%esi, %edi
-	addl	%edi, %edi
-	setns	%al
+	testl	$1073741824, %edi
+	sete	%al
 	retq
 
 func00000000000000aa:
 	imull	%esi, %edi
-	shll	$4, %edi
-	setns	%al
+	testl	$134217728, %edi
+	sete	%al
 	retq
 
 func0000000000000001:

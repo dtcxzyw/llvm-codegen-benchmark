@@ -13,7 +13,7 @@ func0000000000000006:
 
 func000000000000000a:
 	shlxl	%esi, %edi, %eax
-	testl	%eax, %eax
-	setns	%al
+	testl	$-2147483648, %eax
+	sete	%al
 	retq
 

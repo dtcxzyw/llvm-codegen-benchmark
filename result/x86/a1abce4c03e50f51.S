@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000002a:
 	vmovmskpd	%xmm0, %eax
-	shlq	$63, %rax
-	setns	%cl
+	testb	$1, %al
+	sete	%cl
 	cmpq	$1071644672, %rdi
 	sete	%al
 	andb	%cl, %al
