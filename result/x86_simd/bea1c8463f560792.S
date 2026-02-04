@@ -17,8 +17,6 @@
 	.byte	0
 	.byte	0
 .LCPI0_1:
-	.zero	16,128
-.LCPI0_2:
 	.byte	16
 	.byte	8
 	.byte	4
@@ -27,11 +25,9 @@
 	.byte	0
 	.byte	0
 	.byte	0
-.LCPI0_3:
-	.zero	4,128
 func000000000000000e:
-	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
-	vpternlogd	$246, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0
+	vgf2p8affineqb	$128, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 
 .LCPI1_0:
@@ -86,8 +82,6 @@ func0000000000000001:
 	.byte	0
 	.byte	0
 .LCPI2_1:
-	.zero	16,128
-.LCPI2_2:
 	.byte	8
 	.byte	4
 	.byte	2
@@ -96,11 +90,9 @@ func0000000000000001:
 	.byte	0
 	.byte	0
 	.byte	0
-.LCPI2_3:
-	.zero	4,128
 func0000000000000005:
-	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm1, %xmm1
-	vpternlogd	$246, .LCPI2_3(%rip){1to4}, %xmm1, %xmm0
+	vgf2p8affineqb	$128, .LCPI2_1(%rip){1to2}, %xmm1, %xmm1
+	vpor	%xmm0, %xmm1, %xmm0
 	retq
 
 .LCPI3_0:
@@ -189,8 +181,6 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 .LCPI5_1:
-	.zero	16,128
-.LCPI5_2:
 	.byte	16
 	.byte	8
 	.byte	4
@@ -199,11 +189,9 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	0
-.LCPI5_3:
-	.zero	4,128
 func000000000000000f:
-	vgf2p8affineqb	$0, .LCPI5_2(%rip){1to2}, %xmm1, %xmm1
-	vpternlogd	$246, .LCPI5_3(%rip){1to4}, %xmm1, %xmm0
+	vgf2p8affineqb	$128, .LCPI5_1(%rip){1to2}, %xmm1, %xmm1
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 
 .LCPI6_0:
