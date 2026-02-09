@@ -25,7 +25,7 @@ func0000000000000422:
 	fmaxnm	s1, s1, s2
 	fminnm	s0, s0, s3
 	fcmp	s0, s1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000442:
@@ -33,6 +33,6 @@ func0000000000000442:
 	fmaxnm	s1, s1, s2
 	fmaxnm	s0, s0, s2
 	fcmp	s0, s1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 

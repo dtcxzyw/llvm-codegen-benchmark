@@ -11,8 +11,7 @@ func0000000000000005:
 	li	a0, 543
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
-	fle.d	a0, fa5, fa4
-	xori	a0, a0, 1
+	flt.d	a0, fa4, fa5
 	ret
 
 func000000000000000c:

@@ -13,8 +13,7 @@ func0000000000000005:
 	li	a0, 543
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
-	vmfle.vf	v10, v8, fa5
-	vmnot.m	v0, v10
+	vmfgt.vf	v0, v8, fa5
 	ret
 
 func000000000000000c:

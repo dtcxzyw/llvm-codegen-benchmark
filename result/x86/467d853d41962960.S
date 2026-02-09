@@ -8,8 +8,8 @@ func0000000000000002:
 	.long	0x4e6e6b28
 func0000000000000008:
 	vcvtsi2ss	%edi, %xmm15, %xmm0
-	vcmpeqss	.LCPI1_0(%rip), %xmm0, %k0
-	kmovd	%k0, %eax
+	vucomiss	.LCPI1_0(%rip), %xmm0
+	sete	%al
 	retq
 
 .LCPI2_0:

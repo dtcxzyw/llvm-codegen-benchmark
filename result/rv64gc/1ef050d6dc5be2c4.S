@@ -60,8 +60,7 @@ func0000000000000043:
 	fld	fa4, %lo(.LCPI5_0)(a0)
 	fmv.d.x	fa3, zero
 	fmax.d	fa5, fa5, fa3
-	fle.d	a0, fa4, fa5
-	xori	a0, a0, 1
+	flt.d	a0, fa5, fa4
 	ret
 
 func00000000000000e4:

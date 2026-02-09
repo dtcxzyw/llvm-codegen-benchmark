@@ -3,8 +3,7 @@ func0000000000000035:
 	vfwcvt.f.xu.v	v12, v10
 	vfwcvt.f.xu.v	v16, v8
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v8, v16, v12
-	vmnot.m	v0, v8
+	vmflt.vv	v0, v12, v16
 	ret
 
 func0000000000000032:
@@ -20,8 +19,7 @@ func0000000000000003:
 	vfwcvt.f.xu.v	v12, v10
 	vfwcvt.f.xu.v	v16, v8
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v8, v12, v16
-	vmnot.m	v0, v8
+	vmflt.vv	v0, v16, v12
 	ret
 
 func0000000000000005:
@@ -29,8 +27,7 @@ func0000000000000005:
 	vfwcvt.f.xu.v	v12, v10
 	vfwcvt.f.xu.v	v16, v8
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v8, v16, v12
-	vmnot.m	v0, v8
+	vmflt.vv	v0, v12, v16
 	ret
 
 func0000000000000034:

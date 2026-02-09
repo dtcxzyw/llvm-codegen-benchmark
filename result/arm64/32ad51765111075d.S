@@ -13,6 +13,6 @@ func0000000000000005:
 	mov	x8, #4890909195324358656
 	fmov	d1, x8
 	fcmp	d0, d1
-	cset	w0, hi
+	cset	w0, gt
 	ret
 

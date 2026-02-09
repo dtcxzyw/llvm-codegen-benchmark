@@ -3,7 +3,7 @@ func0000000000000002:
 	mov	x8, #4890909195324358656
 	fmov	d1, x8
 	fcmp	d0, d1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000005:
@@ -11,7 +11,7 @@ func0000000000000005:
 	mov	x8, #4890909195324358656
 	fmov	d1, x8
 	fcmp	d0, d1
-	cset	w0, hi
+	cset	w0, gt
 	ret
 
 func000000000000000c:

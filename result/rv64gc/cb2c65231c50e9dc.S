@@ -4,8 +4,7 @@ func0000000000000023:
 	fmv.w.x	fa4, a0
 	fmin.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
-	fle.s	a0, fa4, fa5
-	xori	a0, a0, 1
+	flt.s	a0, fa5, fa4
 	ret
 
 func0000000000000042:

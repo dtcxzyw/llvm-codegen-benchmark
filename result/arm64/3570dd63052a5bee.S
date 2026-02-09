@@ -7,7 +7,7 @@ func0000000000000022:
 	mov	w8, #55050
 	movk	w8, #15395, lsl #16
 	fcmp	s0, s1
-	fcsel	s0, s1, s0, mi
+	fcsel	s0, s1, s0, lt
 	fmov	s1, w8
 	fmul	s0, s0, s1
 	ret
@@ -19,7 +19,7 @@ func0000000000000042:
 	fmaxnm	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
-	fcsel	s0, s1, s0, mi
+	fcsel	s0, s1, s0, lt
 	fmul	s0, s0, s2
 	ret
 
@@ -43,7 +43,7 @@ func00000000000000aa:
 	fmov	s1, w8
 	mov	w8, #1199570944
 	fcmp	s0, s1
-	fcsel	s0, s1, s0, ls
+	fcsel	s0, s1, s0, le
 	fmov	s1, w8
 	fmul	s0, s0, s1
 	ret

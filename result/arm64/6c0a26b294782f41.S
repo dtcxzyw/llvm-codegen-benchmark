@@ -5,7 +5,7 @@ func0000000000000242:
 	fmov	d1, #1.00000000
 	fmaxnm	d0, d0, d2
 	fcmp	d0, d1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000424:
@@ -32,6 +32,6 @@ func0000000000000442:
 	fmaxnm	d0, d0, d1
 	ldr	d1, [x8, :lo12:.LCPI2_1]
 	fcmp	d0, d1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 

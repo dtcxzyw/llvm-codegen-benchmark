@@ -29,7 +29,7 @@ func0000000000000022:
 	fminnm	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000024:

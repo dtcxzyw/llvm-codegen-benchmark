@@ -9,14 +9,14 @@ func0000000000000004:
 func0000000000000002:
 	vcvtsi2ss	%esi, %xmm15, %xmm0
 	vcvtsi2ss	%edi, %xmm15, %xmm1
-	vucomiss	%xmm1, %xmm0
-	seta	%al
+	vucomiss	%xmm0, %xmm1
+	setb	%al
 	retq
 
 func0000000000000005:
 	vcvtsi2ss	%esi, %xmm15, %xmm0
 	vcvtsi2ss	%edi, %xmm15, %xmm1
-	vucomiss	%xmm1, %xmm0
-	setb	%al
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 

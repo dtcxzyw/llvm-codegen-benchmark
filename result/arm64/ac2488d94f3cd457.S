@@ -2,7 +2,7 @@ func0000000000000002:
 	scvtf	d0, w1
 	scvtf	d1, w0
 	fcmp	d1, d0
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000004:

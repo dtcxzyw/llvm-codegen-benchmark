@@ -5,7 +5,7 @@ func0000000000000022:
 	fminnm	s0, s0, s1
 	fmov	s1, #4.00000000
 	fcmp	s0, s1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func00000000000000ca:
@@ -14,7 +14,7 @@ func00000000000000ca:
 	fmaxnm	s0, s0, s1
 	fmov	s1, #1.00000000
 	fcmp	s0, s1
-	cset	w0, ls
+	cset	w0, le
 	ret
 
 func00000000000000c4:

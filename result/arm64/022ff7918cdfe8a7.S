@@ -6,7 +6,7 @@ func0000000000000042:
 	fmaxnm	d0, d0, d1
 	fmov	d1, x8
 	fcmp	d0, d1
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000024:

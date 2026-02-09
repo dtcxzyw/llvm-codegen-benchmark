@@ -3,18 +3,16 @@
 	.quad	0x43e0000000000000
 func0000000000000002:
 	vcvtsi2sd	%rdi, %xmm15, %xmm0
-	vmovsd	.LCPI0_0(%rip), %xmm1
-	vucomisd	%xmm0, %xmm1
-	seta	%al
+	vucomisd	.LCPI0_0(%rip), %xmm0
+	setb	%al
 	retq
 
 .LCPI1_0:
 	.quad	0x43e0000000000000
 func0000000000000005:
 	vcvtsi2sd	%rdi, %xmm15, %xmm0
-	vmovsd	.LCPI1_0(%rip), %xmm1
-	vucomisd	%xmm0, %xmm1
-	setb	%al
+	vucomisd	.LCPI1_0(%rip), %xmm0
+	seta	%al
 	retq
 
 .LCPI2_0:

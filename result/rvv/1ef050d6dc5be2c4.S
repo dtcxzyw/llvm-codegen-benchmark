@@ -56,8 +56,7 @@ func0000000000000043:
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	fmv.d.x	fa4, zero
 	vfmax.vf	v8, v8, fa4
-	vmfge.vf	v16, v8, fa5
-	vmnot.m	v0, v16
+	vmflt.vf	v0, v8, fa5
 	ret
 
 func00000000000000e4:

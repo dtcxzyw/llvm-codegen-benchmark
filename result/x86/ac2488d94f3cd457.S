@@ -2,8 +2,8 @@
 func0000000000000002:
 	vcvtsi2sd	%esi, %xmm15, %xmm0
 	vcvtsi2sd	%edi, %xmm15, %xmm1
-	vucomisd	%xmm1, %xmm0
-	seta	%al
+	vucomisd	%xmm0, %xmm1
+	setb	%al
 	retq
 
 func0000000000000004:

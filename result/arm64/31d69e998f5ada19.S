@@ -9,13 +9,13 @@ func0000000000000002:
 	scvtf	s0, w1
 	scvtf	s1, w0
 	fcmp	s1, s0
-	cset	w0, mi
+	cset	w0, lt
 	ret
 
 func0000000000000005:
 	scvtf	s0, w1
 	scvtf	s1, w0
 	fcmp	s1, s0
-	cset	w0, hi
+	cset	w0, gt
 	ret
 
