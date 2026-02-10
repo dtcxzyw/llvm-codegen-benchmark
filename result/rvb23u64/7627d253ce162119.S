@@ -30,10 +30,9 @@ func00000000000000b8:
 	addi	a3, a3, -1
 	sltu	a2, a3, a2
 	xor	a3, a0, a1
+	czero.nez	a2, a2, a3
 	sltu	a0, a1, a0
-	czero.eqz	a0, a0, a3
-	czero.nez	a1, a2, a3
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 .LCPI5_0:

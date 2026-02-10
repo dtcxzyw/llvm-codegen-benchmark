@@ -7,10 +7,9 @@ func0000000000000141:
 
 func00000000000000a6:
 	xor	a4, a1, a3
-	slt	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	slt	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

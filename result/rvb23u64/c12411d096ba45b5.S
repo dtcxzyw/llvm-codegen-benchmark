@@ -7,76 +7,68 @@ func0000000000000001:
 
 func000000000000000a:
 	xor	a4, a1, a3
-	slt	a1, a3, a1
 	sltu	a0, a2, a0
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000018:
 	xor	a4, a1, a3
-	sltu	a1, a3, a1
 	sltu	a0, a2, a0
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
 	xor	a4, a1, a3
-	slt	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	slt	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
 	xor	a4, a1, a3
-	sltu	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
 	xor	a4, a1, a3
-	sltu	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000000b:
 	xor	a4, a1, a3
-	slt	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	slt	a1, a1, a3
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000007:
 	xor	a4, a1, a3
-	slt	a1, a3, a1
 	sltu	a0, a2, a0
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000019:
 	xor	a4, a1, a3
-	sltu	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -90,19 +82,17 @@ func000000000000000c:
 
 func0000000000000008:
 	xor	a4, a1, a3
-	sltu	a1, a3, a1
 	sltu	a0, a2, a0
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
 	xor	a4, a1, a3
-	sltu	a1, a1, a3
 	sltu	a0, a0, a2
-	czero.eqz	a1, a1, a4
 	czero.nez	a0, a0, a4
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
