@@ -15,7 +15,7 @@ func0000000000000005:
 	retq
 
 func000000000000000f:
-	leaq	(%rsi,%rdx), %rax
+	leaq	(%rdx,%rsi), %rax
 	movq	%rax, %rdx
 	shrq	$32, %rdx
 	shlq	$32, %rax
@@ -23,7 +23,7 @@ func000000000000000f:
 	retq
 
 func000000000000007f:
-	leaq	(%rsi,%rdx), %rax
+	leaq	(%rdx,%rsi), %rax
 	movq	%rax, %rdx
 	shrq	$32, %rdx
 	shlq	$32, %rax
