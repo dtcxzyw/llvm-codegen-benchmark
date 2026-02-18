@@ -13,8 +13,8 @@ func000000000000000c:
 
 func0000000000000021:
 	shlxq	%rsi, %rdi, %rax
-	shrq	$63, %rax
-	sete	%al
+	btq	$63, %rax
+	setae	%al
 	retq
 
 func000000000000002c:

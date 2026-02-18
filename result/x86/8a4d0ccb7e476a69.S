@@ -5,7 +5,8 @@ func000000000000000e:
 	retq
 
 func000000000000000b:
-	leal	1(%rdi,%rsi), %eax
+	leal	(%rdi,%rsi), %eax
+	notl	%eax
 	andl	$1, %eax
 	retq
 

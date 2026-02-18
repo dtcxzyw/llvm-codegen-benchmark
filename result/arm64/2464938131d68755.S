@@ -7,7 +7,7 @@ func000000000000000f:
 
 func0000000000000010:
 	add	w8, w0, w1
-	add	w8, w8, #1
+	mvn	w8, w8
 	and	x0, x8, #0x1
 	ret
 

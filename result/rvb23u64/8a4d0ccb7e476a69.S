@@ -5,8 +5,8 @@ func000000000000000e:
 
 func000000000000000b:
 	add	a0, a0, a1
-	addi	a0, a0, 1
-	andi	a0, a0, 1
+	li	a1, 1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000000:

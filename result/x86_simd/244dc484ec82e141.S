@@ -5,9 +5,7 @@ func000000000000018d:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpbroadcastq	.LCPI0_0(%rip), %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpand	%ymm1, %ymm0, %ymm0
+	vpandnq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:
