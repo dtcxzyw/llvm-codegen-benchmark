@@ -14,26 +14,20 @@ func0000000000000021:
 	retq
 
 func0000000000000041:
-	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	andq	%rsi, %rax
-	testq	%rdi, %rax
-	sete	%al
+	andq	%rsi, %rdi
+	btq	%rdx, %rdi
+	setae	%al
 	retq
 
 func0000000000000061:
-	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	andq	%rsi, %rax
-	testq	%rdi, %rax
-	sete	%al
+	andq	%rsi, %rdi
+	btq	%rdx, %rdi
+	setae	%al
 	retq
 
 func000000000000004c:
-	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	andq	%rsi, %rax
-	testq	%rdi, %rax
-	setne	%al
+	andq	%rsi, %rdi
+	btq	%rdx, %rdi
+	setb	%al
 	retq
 

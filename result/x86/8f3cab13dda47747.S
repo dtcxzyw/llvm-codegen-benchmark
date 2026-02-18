@@ -1,10 +1,8 @@
 	.att_syntax
 func0000000000000041:
-	movl	$1, %eax
-	shlxl	%edi, %eax, %eax
-	andl	%esi, %eax
-	testl	$1022, %eax
-	sete	%al
+	andl	$1022, %esi
+	btl	%edi, %esi
+	setae	%al
 	retq
 
 func0000000000000061:
