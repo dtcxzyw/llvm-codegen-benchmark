@@ -10,35 +10,25 @@ func0000000000000061:
 	retq
 
 func0000000000000041:
-	movq	%rdx, %rcx
-	xorl	%eax, %eax
-	movl	$1, %edx
-	xorl	%r8d, %r8d
-	shldq	%cl, %rdx, %r8
-	shlxq	%rcx, %rdx, %rdx
-	testb	$64, %cl
-	cmovneq	%rdx, %r8
-	cmovneq	%rax, %rdx
-	andq	%rsi, %r8
-	andq	%rdi, %rdx
-	orq	%r8, %rdx
-	sete	%al
+	movl	%edx, %eax
+	andb	$32, %al
+	shrxq	%rax, %rsi, %rcx
+	shrxq	%rax, %rdi, %rax
+	testb	$64, %dl
+	cmovneq	%rcx, %rax
+	btl	%edx, %eax
+	setae	%al
 	retq
 
 func000000000000004c:
-	movq	%rdx, %rcx
-	xorl	%eax, %eax
-	movl	$1, %edx
-	xorl	%r8d, %r8d
-	shldq	%cl, %rdx, %r8
-	shlxq	%rcx, %rdx, %rdx
-	testb	$64, %cl
-	cmovneq	%rdx, %r8
-	cmovneq	%rax, %rdx
-	andq	%rsi, %r8
-	andq	%rdi, %rdx
-	orq	%r8, %rdx
-	setne	%al
+	movl	%edx, %eax
+	andb	$32, %al
+	shrxq	%rax, %rsi, %rcx
+	shrxq	%rax, %rdi, %rax
+	testb	$64, %dl
+	cmovneq	%rcx, %rax
+	btl	%edx, %eax
+	setb	%al
 	retq
 
 func0000000000000021:
@@ -54,18 +44,13 @@ func0000000000000021:
 	retq
 
 func000000000000006c:
-	movq	%rdx, %rcx
-	xorl	%eax, %eax
-	movl	$1, %edx
-	xorl	%r8d, %r8d
-	shldq	%cl, %rdx, %r8
-	shlxq	%rcx, %rdx, %rdx
-	testb	$64, %cl
-	cmovneq	%rdx, %r8
-	cmovneq	%rax, %rdx
-	andq	%rsi, %r8
-	andq	%rdi, %rdx
-	orq	%r8, %rdx
-	setne	%al
+	movl	%edx, %eax
+	andb	$32, %al
+	shrxq	%rax, %rsi, %rcx
+	shrxq	%rax, %rdi, %rax
+	testb	$64, %dl
+	cmovneq	%rcx, %rax
+	btl	%edx, %eax
+	setb	%al
 	retq
 
