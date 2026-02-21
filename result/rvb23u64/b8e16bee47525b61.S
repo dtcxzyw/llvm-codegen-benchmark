@@ -28,7 +28,7 @@ func000000000000002c:
 
 func000000000000018c:
 	sext.w	a1, a1
-	bexti	a2, a2, 6
+	andi	a2, a2, 64
 	snez	a1, a1
 	czero.eqz	a2, a0, a2
 	and	a0, a0, a1

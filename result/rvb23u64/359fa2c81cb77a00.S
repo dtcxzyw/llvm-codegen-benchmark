@@ -1,5 +1,5 @@
 func000000000000000c:
-	bexti	a2, a2, 10
+	andi	a2, a2, 1024
 	and	a1, a1, a0
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
