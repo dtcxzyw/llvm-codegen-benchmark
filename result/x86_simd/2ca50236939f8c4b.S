@@ -13,34 +13,34 @@ func000000000000003f:
 	.byte	0
 	.byte	128
 	.byte	128
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
 	.byte	128
 	.byte	8
 	.byte	128
 	.byte	128
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
 	.byte	128
 	.byte	16
 	.byte	128
 	.byte	128
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
 	.byte	128
 	.byte	24
 	.byte	128
 	.byte	128
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	128
 func000000000000003e:
 	vpshufb	.LCPI1_0(%rip), %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -99,7 +99,7 @@ func000000000000000a:
 	.byte	2
 	.byte	128
 	.byte	128
-	.zero	1
+	.byte	128
 	.byte	128
 	.byte	128
 	.byte	128
@@ -107,7 +107,7 @@ func000000000000000a:
 	.byte	10
 	.byte	128
 	.byte	128
-	.zero	1
+	.byte	128
 	.byte	128
 	.byte	128
 	.byte	128
@@ -115,7 +115,7 @@ func000000000000000a:
 	.byte	18
 	.byte	128
 	.byte	128
-	.zero	1
+	.byte	128
 	.byte	128
 	.byte	128
 	.byte	128
@@ -123,7 +123,7 @@ func000000000000000a:
 	.byte	26
 	.byte	128
 	.byte	128
-	.zero	1
+	.byte	128
 func000000000000000e:
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2

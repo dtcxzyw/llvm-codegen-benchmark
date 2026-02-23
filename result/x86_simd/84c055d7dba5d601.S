@@ -41,13 +41,13 @@ func0000000000000001:
 	.long	60000000
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm0
-	vpsrlq	$40, %xmm0, %xmm1
-	vpbroadcastd	.LCPI2_0(%rip), %xmm2
-	vpmuludq	%xmm2, %xmm1, %xmm1
-	vpsrld	$8, %xmm0, %xmm3
-	vpmuludq	%xmm2, %xmm3, %xmm2
-	vpshufd	$245, %xmm2, %xmm2
-	vpblendd	$10, %xmm1, %xmm2, %xmm1
+	vpsrld	$8, %xmm0, %xmm1
+	vpshufd	$245, %xmm1, %xmm2
+	vpbroadcastd	.LCPI2_0(%rip), %xmm3
+	vpmuludq	%xmm3, %xmm2, %xmm2
+	vpmuludq	%xmm3, %xmm1, %xmm1
+	vpshufd	$245, %xmm1, %xmm1
+	vpblendd	$10, %xmm2, %xmm1, %xmm1
 	vpsrld	$10, %xmm1, %xmm1
 	vpmulld	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0

@@ -30,19 +30,85 @@ func000000000000001f:
 	retq
 
 .LCPI3_0:
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
+	.byte	128
+.LCPI3_1:
 	.long	4278190080
 func000000000000001e:
-	vpsllw	$8, %ymm2, %ymm2
+	vpshufb	.LCPI3_0(%rip), %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
-	vpternlogd	$254, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$254, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
+	.byte	128
+.LCPI4_1:
 	.long	4278190080
 func0000000000000006:
-	vpsllw	$8, %ymm2, %ymm2
+	vpshufb	.LCPI4_0(%rip), %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
-	vpternlogd	$254, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$254, .LCPI4_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:
@@ -87,11 +153,44 @@ func000000000000001b:
 	retq
 
 .LCPI6_0:
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
+	.byte	128
+.LCPI6_1:
 	.long	4278190080
 func000000000000001c:
-	vpsllw	$8, %ymm2, %ymm2
+	vpshufb	.LCPI6_0(%rip), %ymm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI6_0(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$254, .LCPI6_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:
@@ -175,18 +274,84 @@ func000000000000000f:
 	retq
 
 .LCPI15_0:
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
+	.byte	128
+.LCPI15_1:
 	.long	4278190080
 func000000000000000e:
-	vpsllw	$8, %ymm2, %ymm2
+	vpshufb	.LCPI15_0(%rip), %ymm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI15_0(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$254, .LCPI15_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI16_0:
+	.byte	128
+	.byte	0
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	4
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	8
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	12
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	16
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	20
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	24
+	.byte	128
+	.byte	128
+	.byte	128
+	.byte	28
+	.byte	128
+	.byte	128
+.LCPI16_1:
 	.long	4278190080
 func0000000000000016:
-	vpsllw	$8, %ymm2, %ymm2
+	vpshufb	.LCPI16_0(%rip), %ymm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogd	$254, .LCPI16_0(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$254, .LCPI16_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 

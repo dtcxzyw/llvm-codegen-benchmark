@@ -4,34 +4,34 @@
 	.byte	6
 	.byte	5
 	.byte	4
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
 	.byte	15
 	.byte	14
 	.byte	13
 	.byte	12
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
 	.byte	7
 	.byte	6
 	.byte	5
 	.byte	4
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	3
+	.byte	2
+	.byte	1
+	.byte	0
 	.byte	15
 	.byte	14
 	.byte	13
 	.byte	12
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	11
+	.byte	10
+	.byte	9
+	.byte	8
 func0000000000000000:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

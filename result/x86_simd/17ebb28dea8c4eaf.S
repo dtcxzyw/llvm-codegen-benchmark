@@ -1,7 +1,7 @@
 	.att_syntax
 func000000000000000e:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpblendw	$34, %ymm2, %ymm1, %ymm1
+	vpblendw	$17, %ymm1, %ymm2, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	movabsq	$4223091239536077, %rax

@@ -6,7 +6,9 @@ func000000000000000a:
 	retq
 
 func0000000000000003:
-	vpsrld	$16, %ymm1, %ymm1
+	vpsrlq	$16, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendw	$17, %ymm1, %ymm2, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
 	vpmuludq	%ymm0, %ymm1, %ymm0
 	retq

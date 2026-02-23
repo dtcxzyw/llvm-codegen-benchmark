@@ -19,7 +19,7 @@ func0000000000000013:
 
 func000000000000001b:
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpblendw	$34, %ymm3, %ymm1, %ymm1
+	vpblendw	$17, %ymm1, %ymm3, %ymm1
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$15, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

@@ -1,33 +1,33 @@
 	.att_syntax
 .LCPI0_0:
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
 	.byte	3
 	.byte	2
 	.byte	1
 	.byte	0
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
 	.byte	11
 	.byte	10
 	.byte	9
 	.byte	8
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	7
+	.byte	6
+	.byte	5
+	.byte	4
 	.byte	3
 	.byte	2
 	.byte	1
 	.byte	0
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	15
+	.byte	14
+	.byte	13
+	.byte	12
 	.byte	11
 	.byte	10
 	.byte	9

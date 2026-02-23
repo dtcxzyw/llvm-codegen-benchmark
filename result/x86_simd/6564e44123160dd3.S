@@ -22,49 +22,40 @@ func000000000000000b:
 .LCPI2_0:
 	.byte	32
 	.byte	0
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	2
 	.byte	36
 	.byte	4
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	6
 	.byte	40
 	.byte	8
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	10
 	.byte	44
 	.byte	12
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	14
 	.byte	48
 	.byte	16
-	.zero	1
-	.zero	1
+	.byte	17
+	.byte	18
 	.byte	52
 	.byte	20
-	.zero	1
-	.zero	1
+	.byte	21
+	.byte	22
 	.byte	56
 	.byte	24
-	.zero	1
-	.zero	1
+	.byte	25
+	.byte	26
 	.byte	60
 	.byte	28
-	.zero	1
-	.zero	1
+	.byte	29
+	.byte	30
 .LCPI2_1:
 	.long	4294901760
-.LCPI2_2:
-	.short	32
-	.short	1060
-	.short	2088
-	.short	3116
-	.short	4144
-	.short	5172
-	.short	6200
-	.short	7228
 func0000000000000002:
-	vpmovsxwd	.LCPI2_2(%rip), %ymm2
+	vmovdqa	.LCPI2_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
 	vpord	.LCPI2_1(%rip){1to8}, %ymm2, %ymm0
 	retq

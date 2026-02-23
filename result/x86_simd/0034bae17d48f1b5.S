@@ -2,36 +2,36 @@
 .LCPI0_0:
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 .LCPI0_1:
 	.byte	128
 	.byte	128
@@ -60,38 +60,38 @@ func0000000000000010:
 	retq
 
 .LCPI1_0:
-	.zero	1
+	.byte	3
 	.byte	2
 	.byte	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	7
 	.byte	6
 	.byte	5
-	.zero	1
-	.zero	1
+	.byte	4
+	.byte	11
 	.byte	10
 	.byte	9
-	.zero	1
-	.zero	1
+	.byte	8
+	.byte	15
 	.byte	14
 	.byte	13
-	.zero	1
-	.zero	1
+	.byte	12
+	.byte	3
 	.byte	2
 	.byte	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	7
 	.byte	6
 	.byte	5
-	.zero	1
-	.zero	1
+	.byte	4
+	.byte	11
 	.byte	10
 	.byte	9
-	.zero	1
-	.zero	1
+	.byte	8
+	.byte	15
 	.byte	14
 	.byte	13
-	.zero	1
+	.byte	12
 .LCPI1_1:
 	.byte	224
 	.byte	224

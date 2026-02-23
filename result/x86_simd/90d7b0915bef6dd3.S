@@ -2,36 +2,36 @@
 .LCPI0_0:
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 func0000000000000006:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -41,36 +41,36 @@ func0000000000000006:
 .LCPI1_0:
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 func0000000000000004:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -80,36 +80,36 @@ func0000000000000004:
 .LCPI2_0:
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 func0000000000000000:
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -119,36 +119,36 @@ func0000000000000000:
 .LCPI3_0:
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 	.byte	3
 	.byte	2
-	.zero	1
-	.zero	1
+	.byte	1
+	.byte	0
 	.byte	7
 	.byte	6
-	.zero	1
-	.zero	1
+	.byte	5
+	.byte	4
 	.byte	11
 	.byte	10
-	.zero	1
-	.zero	1
+	.byte	9
+	.byte	8
 	.byte	15
 	.byte	14
-	.zero	1
-	.zero	1
+	.byte	13
+	.byte	12
 func0000000000000002:
 	vpshufb	.LCPI3_0(%rip), %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

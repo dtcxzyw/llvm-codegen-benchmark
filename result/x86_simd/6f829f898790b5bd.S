@@ -23,7 +23,7 @@ func0000000000000010:
 func0000000000000018:
 	vpmovzxdq	%xmm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpblendw	$34, %ymm3, %ymm1, %ymm1
+	vpblendw	$17, %ymm1, %ymm3, %ymm1
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$16, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
