@@ -1,17 +1,14 @@
 	.att_syntax
 func000000000000000a:
-	movq	%rdx, %r10
 	shrdq	$32, %r9, %r8
 	shrq	$32, %r9
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%r10, %rax, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %r10
-	addq	%rdx, %r10
+	mulxq	%rdi, %rax, %rdi
+	addq	%rcx, %rdi
+	imulq	%rsi, %rdx
+	addq	%rdi, %rdx
 	addq	%r8, %rax
-	adcq	%r9, %r10
-	movq	%r10, %rdx
+	adcq	%r9, %rdx
 	retq
 
 func0000000000000012:

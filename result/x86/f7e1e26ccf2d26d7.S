@@ -9,14 +9,12 @@ func0000000000000092:
 	retq
 
 func0000000000000052:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdi, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
+	mulxq	%rdi, %rdi, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
 	addq	%r9, %rdi
-	adcq	%rdx, %rax
+	adcq	%rsi, %rax
 	retq
 
 func00000000000000da:

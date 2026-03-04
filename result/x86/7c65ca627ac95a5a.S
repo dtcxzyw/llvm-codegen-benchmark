@@ -11,13 +11,10 @@ func0000000000000052:
 	retq
 
 func000000000000008a:
-	movq	%rdx, %rax
 	imulq	%rdx, %rsi
-	movq	%rdi, %rdx
-	mulxq	%rax, %r9, %rdi
-	imulq	%rax, %r8
-	movq	%rcx, %rdx
-	mulxq	%rax, %rax, %rax
+	mulxq	%rdi, %r9, %rdi
+	imulq	%rdx, %r8
+	mulxq	%rcx, %rax, %rax
 	addq	%r8, %rax
 	addq	%r9, %rax
 	adcq	%rsi, %rdi

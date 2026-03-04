@@ -1,95 +1,77 @@
 	.att_syntax
 func000000000000000a:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	retq
 
 func0000000000000012:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	retq
 
 func0000000000000002:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	retq
 
 func000000000000001b:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	retq
 
 func0000000000000010:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdi
-	addq	%rcx, %rdi
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	shldq	$1, %rdx, %rax
+	mulxq	%rdi, %rdi, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
+	shldq	$1, %rdi, %rax
 	retq
 
 func0000000000000008:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdi
-	addq	%rcx, %rdi
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	shldq	$1, %rdx, %rax
+	mulxq	%rdi, %rdi, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
+	shldq	$1, %rdi, %rax
 	retq
 
 func0000000000000018:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdi
-	addq	%rcx, %rdi
-	imulq	%rsi, %rax
-	addq	%rdi, %rax
-	shldq	$3, %rdx, %rax
+	mulxq	%rdi, %rdi, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
+	shldq	$3, %rdi, %rax
 	retq
 
 func000000000000000e:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	retq
 
 func000000000000001a:
-	movq	%rdx, %rax
 	imull	%edi, %ecx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdi, %rdx
-	addl	%ecx, %edx
-	imull	%esi, %eax
-	addl	%edx, %eax
+	mulxq	%rdi, %rdi, %rax
+	addl	%ecx, %eax
+	imull	%edx, %esi
+	addl	%esi, %eax
 	shldq	$32, %rdi, %rax
 	retq
 

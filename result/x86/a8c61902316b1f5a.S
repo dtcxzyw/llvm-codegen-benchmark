@@ -1,25 +1,21 @@
 	.att_syntax
 func0000000000000241:
-	movq	%rdx, %rax
 	imulq	%rdi, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addq	%rcx, %rdx
-	imulq	%rax, %rsi
-	addq	%rdx, %rsi
+	mulxq	%rdi, %rax, %rax
+	addq	%rcx, %rax
+	imulq	%rdx, %rsi
+	addq	%rax, %rsi
 	notq	%rsi
 	shlq	$26, %rsi
 	sete	%al
 	retq
 
 func000000000000024c:
-	movq	%rdx, %rax
 	imull	%edi, %ecx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
-	addl	%ecx, %edx
-	imull	%eax, %esi
-	addl	%edx, %esi
+	mulxq	%rdi, %rax, %rax
+	addl	%ecx, %eax
+	imull	%edx, %esi
+	addl	%eax, %esi
 	setne	%al
 	retq
 

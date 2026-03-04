@@ -6,18 +6,16 @@ func0000000000000028:
 	retq
 
 func000000000000001a:
-	movq	%rdx, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rcx, %rax, %rax
+	movl	%edx, %ecx
 	imull	%esi, %ecx
+	mulxq	%rdi, %rax, %rax
 	addl	%ecx, %eax
 	retq
 
 func0000000000000010:
-	movq	%rdx, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rcx, %rax, %rax
+	movl	%edx, %ecx
 	imull	%esi, %ecx
+	mulxq	%rdi, %rax, %rax
 	addl	%ecx, %eax
 	retq
 

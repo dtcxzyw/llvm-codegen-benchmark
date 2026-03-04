@@ -8,8 +8,7 @@ func000000000000000a:
 	retq
 
 func0000000000000008:
-	movq	%rdx, %rax
-	leaq	(%rcx,%rcx,2), %rdx
+	leaq	(%rcx,%rcx,2), %rax
 	mulxq	%rax, %rax, %rdx
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx

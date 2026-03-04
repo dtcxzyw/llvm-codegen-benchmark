@@ -1,9 +1,7 @@
 	.att_syntax
 func000000000000001e:
-	movq	%rdx, %rax
 	imulq	%r8, %rcx
-	movq	%r8, %rdx
-	mulxq	%rax, %rax, %rdx
+	mulxq	%r8, %rax, %rdx
 	addq	%rcx, %rdx
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
@@ -12,10 +10,9 @@ func000000000000001e:
 	retq
 
 func000000000000001a:
-	movq	%rdx, %rax
-	movb	$56, %dl
-	bzhiq	%rdx, %r8, %rdx
-	imulq	%rdx, %rcx
+	movb	$56, %al
+	bzhiq	%rax, %r8, %rax
+	imulq	%rax, %rcx
 	mulxq	%rax, %rax, %rdx
 	addq	%rcx, %rdx
 	addq	%rdi, %rax
@@ -25,10 +22,8 @@ func000000000000001a:
 	retq
 
 func0000000000000014:
-	movq	%rdx, %rax
 	imulq	%r8, %rcx
-	movq	%r8, %rdx
-	mulxq	%rax, %rdx, %rax
+	mulxq	%r8, %rdx, %rax
 	addq	%rcx, %rax
 	addq	%rdi, %rdx
 	adcq	%rsi, %rax

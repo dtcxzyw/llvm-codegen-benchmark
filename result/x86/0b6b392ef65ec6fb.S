@@ -1,23 +1,19 @@
 	.att_syntax
 func00000000000000a2:
-	movq	%rdx, %rax
 	orq	%r8, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
+	mulxq	%rdi, %rax, %rax
 	imulq	%rdi, %rcx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
 
 func00000000000000aa:
-	movq	%rdx, %rax
 	orq	%r8, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
+	mulxq	%rdi, %rax, %rax
 	imulq	%rdi, %rcx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
 
@@ -31,13 +27,11 @@ func00000000000000ae:
 	retq
 
 func0000000000000062:
-	movq	%rdx, %rax
 	orq	%r8, %rcx
-	movq	%rdi, %rdx
-	mulxq	%rax, %rdx, %rdx
+	mulxq	%rdi, %rax, %rax
 	imulq	%rdi, %rcx
-	imulq	%rsi, %rax
-	addq	%rdx, %rax
+	imulq	%rdx, %rsi
+	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
 

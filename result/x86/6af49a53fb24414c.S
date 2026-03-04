@@ -26,8 +26,8 @@ func000000000000008a:
 	imulq	%rdi, %r8
 	addq	%r8, %rcx
 	imulq	%rax, %rsi
-	movq	%rdi, %rdx
-	mulxq	%rax, %rax, %rdx
+	movq	%rax, %rdx
+	mulxq	%rdi, %rax, %rdx
 	addq	%rcx, %rax
 	adcq	%rsi, %rdx
 	retq
