@@ -15,21 +15,24 @@ func0000000000000032:
 	movk	x8, #16470, lsl #48
 	fcsel	d0, d0, d1, lt
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000034:
 	fcmp	d1, #0.0
 	fmov	d2, #1.00000000
 	fcsel	d0, d0, d1, lt
-	fmaxnm	d0, d0, d2
+	fcmp	d0, d2
+	fcsel	d0, d0, d2, gt
 	ret
 
 func0000000000000024:
 	fcmp	d1, #0.0
 	fmov	d2, #16.00000000
 	fcsel	d0, d0, d1, mi
-	fmaxnm	d0, d0, d2
+	fcmp	d0, d2
+	fcsel	d0, d0, d2, gt
 	ret
 
 func000000000000002e:

@@ -4,7 +4,8 @@ func0000000000000004:
 	adrp	x8, .LCPI0_0
 	fmul	d0, d0, d1
 	ldr	d3, [x8, :lo12:.LCPI0_0]
-	fmaxnm	d2, d2, d3
-	fdiv	d0, d0, d2
+	fcmp	d2, d3
+	fcsel	d1, d2, d3, gt
+	fdiv	d0, d0, d1
 	ret
 

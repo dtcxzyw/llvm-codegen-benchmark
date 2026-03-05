@@ -2,7 +2,8 @@ func0000000000000042:
 	fmov	d2, #1.50000000
 	fmul	d1, d1, d2
 	fmov	d2, #2.00000000
-	fmaxnm	d1, d1, d2
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, gt
 	fcmp	d1, d0
 	cset	w0, mi
 	ret
@@ -11,7 +12,8 @@ func0000000000000045:
 	fmov	d2, #0.50000000
 	fmul	d1, d1, d2
 	fmov	d2, #1.00000000
-	fmaxnm	d1, d1, d2
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, gt
 	fcmp	d1, d0
 	cset	w0, hi
 	ret
@@ -48,7 +50,8 @@ func0000000000000044:
 	adrp	x8, .LCPI4_1
 	fmul	d1, d1, d2
 	ldr	d2, [x8, :lo12:.LCPI4_1]
-	fmaxnm	d1, d1, d2
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, gt
 	fcmp	d1, d0
 	cset	w0, gt
 	ret

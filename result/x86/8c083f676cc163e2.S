@@ -4,9 +4,8 @@
 func0000000000000042:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI0_0(%rip), %xmm1
-	vucomisd	%xmm0, %xmm1
-	seta	%al
+	vucomisd	.LCPI0_0(%rip), %xmm0
+	setb	%al
 	retq
 
 .LCPI1_0:
@@ -22,8 +21,8 @@ func0000000000000054:
 func0000000000000048:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
-	vcmpeqsd	%xmm1, %xmm0, %k0
-	kmovd	%k0, %eax
+	vucomisd	%xmm1, %xmm0
+	sete	%al
 	retq
 
 .LCPI3_0:
@@ -59,9 +58,8 @@ func00000000000000c4:
 func0000000000000045:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
-	vmovsd	.LCPI6_0(%rip), %xmm1
-	vucomisd	%xmm0, %xmm1
-	setb	%al
+	vucomisd	.LCPI6_0(%rip), %xmm0
+	seta	%al
 	retq
 
 func00000000000000e3:

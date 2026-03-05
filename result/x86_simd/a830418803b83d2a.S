@@ -1,10 +1,10 @@
 	.att_syntax
 func0000000000000004:
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpltpd	%zmm3, %zmm4, %k1
-	vcmpltpd	%zmm2, %zmm4, %k2
-	vsubpd	%zmm2, %zmm0, %zmm0 {%k2}
-	vsubpd	%zmm3, %zmm1, %zmm1 {%k1}
+	vmaxpd	%zmm4, %zmm3, %zmm3
+	vmaxpd	%zmm4, %zmm2, %zmm2
+	vsubpd	%zmm2, %zmm0, %zmm0
+	vsubpd	%zmm3, %zmm1, %zmm1
 	retq
 
 .LCPI1_0:

@@ -1,14 +1,16 @@
 func0000000000000002:
 	fmov	d1, #1.00000000
 	mov	x8, #4372995238176751616
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
 	fmul	d0, d0, d1
 	ret
 
 func0000000000000004:
 	fmov	d1, #1.00000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	fmov	d1, #1.50000000
 	fmul	d0, d0, d1
 	ret

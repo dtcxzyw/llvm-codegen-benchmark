@@ -1,11 +1,13 @@
 func0000000000000004:
 	fmov	d1, #1.00000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func0000000000000002:
 	movi	d1, #0000000000000000
-	fminnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000005:
@@ -38,7 +40,8 @@ func0000000000000007:
 func000000000000000a:
 	adrp	x8, .LCPI6_0
 	ldr	d1, [x8, :lo12:.LCPI6_0]
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, ls
 	ret
 
 func0000000000000003:

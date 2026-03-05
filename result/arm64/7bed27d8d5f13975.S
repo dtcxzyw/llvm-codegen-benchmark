@@ -3,7 +3,8 @@ func0000000000000002:
 	tst	w0, #0x1
 	fcsel	d0, d0, d1, ne
 	fmov	d1, #1.00000000
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 .LCPI1_0:
@@ -17,7 +18,8 @@ func0000000000000004:
 	adrp	x8, .LCPI1_1
 	fcsel	d0, d0, d1, ne
 	ldr	d1, [x8, :lo12:.LCPI1_1]
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func000000000000000e:
@@ -33,7 +35,8 @@ func000000000000000a:
 	tst	w0, #0x1
 	fcsel	d0, d0, d1, ne
 	fmov	d1, #1.00000000
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, ls
 	ret
 
 func000000000000000c:

@@ -3,7 +3,8 @@ func0000000000000022:
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, mi
 	fmov	d1, #1.00000000
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000044:
@@ -15,7 +16,8 @@ func0000000000000044:
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, gt
 	fmov	d1, x8
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func000000000000004e:

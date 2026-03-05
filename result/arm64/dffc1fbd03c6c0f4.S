@@ -2,14 +2,16 @@ func0000000000000002:
 	fdiv	d0, d0, d1
 	fmov	s1, #1.00000000
 	fcvt	s0, d0
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, mi
 	ret
 
 func0000000000000004:
 	fdiv	d0, d0, d1
-	movi	d2, #0000000000000000
+	movi	d1, #0000000000000000
 	fcvt	s0, d0
-	fmaxnm	s0, s0, s2
+	fcmp	s0, #0.0
+	fcsel	s0, s0, s1, gt
 	ret
 
 func000000000000000c:

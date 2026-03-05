@@ -7,7 +7,8 @@ func0000000000000002:
 	adrp	x8, .LCPI0_0
 	fmul	d0, d0, d1
 	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000004:
@@ -15,7 +16,8 @@ func0000000000000004:
 	fmov	d1, x8
 	fmul	d0, d0, d1
 	fmov	d1, #10.00000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 .LCPI2_0:

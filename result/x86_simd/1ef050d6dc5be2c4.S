@@ -89,8 +89,8 @@ func0000000000000043:
 	vmaxpd	%zmm2, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
 	vbroadcastsd	.LCPI5_0(%rip), %zmm2
-	vcmpnlepd	%zmm0, %zmm2, %k0
-	vcmpnlepd	%zmm1, %zmm2, %k1
+	vcmpltpd	%zmm2, %zmm0, %k0
+	vcmpltpd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

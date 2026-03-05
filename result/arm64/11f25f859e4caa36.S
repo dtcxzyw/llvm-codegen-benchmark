@@ -4,7 +4,8 @@ func0000000000000024:
 	movk	x8, #15695, lsl #48
 	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func0000000000000022:
@@ -13,7 +14,8 @@ func0000000000000022:
 	movk	x8, #16879, lsl #48
 	fcsel	d0, d0, d1, mi
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000042:
@@ -22,7 +24,8 @@ func0000000000000042:
 	movk	x8, #16607, lsl #48
 	fcsel	d0, d0, d1, gt
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 .LCPI3_0:
@@ -32,6 +35,7 @@ func0000000000000044:
 	adrp	x8, .LCPI3_0
 	fcsel	d0, d0, d1, gt
 	ldr	d1, [x8, :lo12:.LCPI3_0]
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 

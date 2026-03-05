@@ -21,14 +21,14 @@ func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vbroadcastsd	.LCPI1_0(%rip), %zmm0
-	vcmpltpd	%zmm0, %zmm4, %k2
-	vcmpltpd	%zmm0, %zmm3, %k3
-	kshiftrw	$8, %k1, %k4
-	vbroadcastsd	.LCPI1_1(%rip), %zmm0
-	vblendmpd	%zmm2, %zmm0, %zmm2 {%k4}
-	vmovapd	%zmm1, %zmm0 {%k1}
-	vmulpd	%zmm3, %zmm0, %zmm0 {%k3}
-	vmulpd	%zmm4, %zmm2, %zmm2 {%k2}
+	vminpd	%zmm0, %zmm4, %zmm4
+	vminpd	%zmm0, %zmm3, %zmm0
+	kshiftrw	$8, %k1, %k2
+	vbroadcastsd	.LCPI1_1(%rip), %zmm3
+	vblendmpd	%zmm2, %zmm3, %zmm2 {%k2}
+	vmulpd	%zmm4, %zmm2, %zmm2
+	vmovapd	%zmm1, %zmm3 {%k1}
+	vmulpd	%zmm0, %zmm3, %zmm0
 	vmovapd	%zmm2, %zmm1
 	retq
 

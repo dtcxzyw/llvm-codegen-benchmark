@@ -21,9 +21,10 @@ func00000000000000c4:
 func0000000000000022:
 	fmov	s2, #1.00000000
 	mov	w8, #1065353215
-	tst	w0, #0x1
-	fminnm	s1, s1, s2
+	fcmp	s1, s2
+	fcsel	s1, s1, s2, mi
 	fmov	s2, w8
+	tst	w0, #0x1
 	fcsel	s0, s0, s2, ne
 	fcmp	s0, s1
 	cset	w0, mi
@@ -31,10 +32,11 @@ func0000000000000022:
 
 func0000000000000042:
 	movi	d2, #0000000000000000
+	fcmp	s1, #0.0
 	mov	w8, #1065353215
-	tst	w0, #0x1
-	fmaxnm	s1, s1, s2
+	fcsel	s1, s1, s2, gt
 	fmov	s2, w8
+	tst	w0, #0x1
 	fcsel	s0, s0, s2, ne
 	fcmp	s0, s1
 	cset	w0, mi
@@ -43,8 +45,9 @@ func0000000000000042:
 func0000000000000024:
 	fmov	s2, #1.00000000
 	movi	d3, #0000000000000000
+	fcmp	s1, s2
+	fcsel	s1, s1, s2, mi
 	tst	w0, #0x1
-	fminnm	s1, s1, s2
 	fcsel	s0, s0, s3, ne
 	fcmp	s0, s1
 	cset	w0, gt

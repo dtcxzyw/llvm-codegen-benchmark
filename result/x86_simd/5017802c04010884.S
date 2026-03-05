@@ -5,14 +5,13 @@
 	.quad	0x3cb0000000000000
 func000000000000004a:
 	vbroadcastsd	.LCPI0_0(%rip), %zmm4
-	vcmpltpd	%zmm2, %zmm4, %k1
-	vcmpltpd	%zmm3, %zmm4, %k2
+	vmaxpd	%zmm4, %zmm2, %zmm2
+	vmaxpd	%zmm4, %zmm3, %zmm3
 	vbroadcastsd	.LCPI0_1(%rip), %zmm4
-	vmovapd	%zmm4, %zmm5
-	vmulpd	%zmm4, %zmm3, %zmm5 {%k2}
-	vmulpd	%zmm4, %zmm2, %zmm4 {%k1}
-	vcmplepd	%zmm4, %zmm0, %k0
-	vcmplepd	%zmm5, %zmm1, %k1
+	vmulpd	%zmm4, %zmm3, %zmm3
+	vmulpd	%zmm4, %zmm2, %zmm2
+	vcmplepd	%zmm2, %zmm0, %k0
+	vcmplepd	%zmm3, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

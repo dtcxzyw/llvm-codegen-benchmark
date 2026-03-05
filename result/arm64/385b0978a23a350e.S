@@ -1,6 +1,7 @@
 func0000000000000444:
 	movi	d3, #0000000000000000
-	fmaxnm	s2, s2, s3
+	fcmp	s2, #0.0
+	fcsel	s2, s2, s3, gt
 	fcmp	s1, s2
 	fcsel	s1, s1, s2, gt
 	fcmp	s0, s1
@@ -11,7 +12,8 @@ func0000000000000222:
 	mov	w8, #2923
 	movk	w8, #23902, lsl #16
 	fmov	s3, w8
-	fminnm	s2, s2, s3
+	fcmp	s2, s3
+	fcsel	s2, s2, s3, mi
 	fcmp	s1, s2
 	fcsel	s1, s1, s2, mi
 	fcmp	s0, s1

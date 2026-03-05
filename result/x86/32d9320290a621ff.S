@@ -4,9 +4,8 @@
 func0000000000000042:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI0_0(%rip), %xmm1
-	vucomiss	%xmm0, %xmm1
-	seta	%al
+	vucomiss	.LCPI0_0(%rip), %xmm0
+	setb	%al
 	retq
 
 .LCPI1_0:
@@ -44,9 +43,8 @@ func00000000000000ca:
 	.long	0xc2c80000
 func0000000000000022:
 	vminss	.LCPI4_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI4_1(%rip), %xmm1
-	vucomiss	%xmm0, %xmm1
-	seta	%al
+	vucomiss	.LCPI4_1(%rip), %xmm0
+	setb	%al
 	retq
 
 .LCPI5_0:
@@ -91,15 +89,15 @@ func00000000000000c5:
 func0000000000000048:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vcmpeqss	%xmm1, %xmm0, %k0
-	kmovd	%k0, %eax
+	vucomiss	%xmm1, %xmm0
+	sete	%al
 	retq
 
 func0000000000000047:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vcmpneqss	%xmm1, %xmm0, %k0
-	kmovd	%k0, %eax
+	vucomiss	%xmm1, %xmm0
+	setne	%al
 	retq
 
 .LCPI11_0:
@@ -108,8 +106,7 @@ func0000000000000047:
 	.long	0xc2b40000
 func00000000000000aa:
 	vminss	.LCPI11_0(%rip), %xmm0, %xmm0
-	vmovss	.LCPI11_1(%rip), %xmm1
-	vucomiss	%xmm0, %xmm1
-	setae	%al
+	vucomiss	.LCPI11_1(%rip), %xmm0
+	setbe	%al
 	retq
 

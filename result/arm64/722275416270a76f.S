@@ -3,13 +3,15 @@ func0000000000000004:
 	mov	w8, #4719
 	movk	w8, #14979, lsl #16
 	fmov	s1, w8
-	fmaxnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, gt
 	ret
 
 func0000000000000002:
 	fdiv	s0, s0, s1
 	fmov	s1, #1.00000000
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, mi
 	ret
 
 func000000000000000c:

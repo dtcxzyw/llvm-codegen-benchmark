@@ -1,7 +1,9 @@
 func0000000000000044:
 	movi	d2, #0000000000000000
-	fmaxnm	d1, d1, d2
-	fmaxnm	d0, d0, d2
+	fcmp	d1, #0.0
+	fcsel	d1, d1, d2, gt
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d2, gt
 	fmul	d0, d0, d1
 	ret
 
@@ -11,8 +13,10 @@ func0000000000000024:
 	fmov	d2, #1.00000000
 	adrp	x8, .LCPI1_0
 	ldr	d3, [x8, :lo12:.LCPI1_0]
-	fminnm	d1, d1, d2
-	fmaxnm	d0, d0, d3
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, mi
+	fcmp	d0, d3
+	fcsel	d0, d0, d3, gt
 	fmul	d0, d0, d1
 	ret
 

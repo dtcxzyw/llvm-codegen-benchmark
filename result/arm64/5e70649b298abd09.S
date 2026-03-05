@@ -3,7 +3,8 @@
 func0000000000000004:
 	adrp	x8, .LCPI0_0
 	ldr	d2, [x8, :lo12:.LCPI0_0]
-	fmaxnm	d1, d1, d2
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, gt
 	fdiv	d0, d1, d0
 	ret
 
@@ -11,7 +12,8 @@ func0000000000000002:
 	mov	x8, #149533581377536
 	movk	x8, #16579, lsl #48
 	fmov	d2, x8
-	fminnm	d1, d1, d2
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, mi
 	fdiv	d0, d1, d0
 	ret
 

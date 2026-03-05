@@ -2,14 +2,16 @@ func0000000000000002:
 	tst	w0, #0x1
 	fcsel	s0, s0, s1, ne
 	fmov	s1, #1.00000000
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, mi
 	ret
 
 func0000000000000004:
 	tst	w0, #0x1
-	movi	d2, #0000000000000000
 	fcsel	s0, s0, s1, ne
-	fmaxnm	s0, s0, s2
+	movi	d1, #0000000000000000
+	fcmp	s0, #0.0
+	fcsel	s0, s0, s1, gt
 	ret
 
 func0000000000000007:

@@ -4,7 +4,8 @@ func0000000000000002:
 	movk	x8, #16527, lsl #48
 	fdiv	d0, d1, d0
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000004:
@@ -12,12 +13,14 @@ func0000000000000004:
 	mov	x8, #4503599627370496
 	fdiv	d0, d1, d0
 	fmov	d1, x8
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func000000000000000a:
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, ls
 	ret
 

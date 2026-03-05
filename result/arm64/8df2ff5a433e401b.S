@@ -2,7 +2,8 @@ func0000000000000004:
 	fmov	d1, #1.00000000
 	mov	x8, #70368744177664
 	movk	x8, #16533, lsl #48
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	fmov	d1, x8
 	fdiv	d0, d0, d1
 	ret
@@ -10,7 +11,8 @@ func0000000000000004:
 func0000000000000002:
 	mov	x8, #4636737291354636288
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	fdiv	d0, d0, d1
 	ret
 

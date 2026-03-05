@@ -1,9 +1,10 @@
 func0000000000000042:
 	movi	d1, #0000000000000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
-	cset	w0, lt
+	cset	w0, mi
 	ret
 
 func0000000000000054:
@@ -18,7 +19,8 @@ func0000000000000054:
 
 func0000000000000048:
 	movi	d1, #0000000000000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	fcmp	d0, #0.0
 	cset	w0, eq
 	ret
@@ -31,7 +33,8 @@ func0000000000000024:
 	adrp	x8, .LCPI3_0
 	ldr	d1, [x8, :lo12:.LCPI3_0]
 	adrp	x8, .LCPI3_1
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ldr	d1, [x8, :lo12:.LCPI3_1]
 	fcmp	d0, d1
 	cset	w0, gt
@@ -50,7 +53,8 @@ func00000000000000c4:
 	fmov	d1, x8
 	mov	x8, #281474972516352
 	movk	x8, #16863, lsl #48
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, ge
 	fmov	d1, x8
 	fcmp	d0, d1
 	cset	w0, gt
@@ -60,11 +64,12 @@ func00000000000000c4:
 	.xword	0x3eb0c6f7a0000000
 func0000000000000045:
 	movi	d1, #0000000000000000
+	fcmp	d0, #0.0
 	adrp	x8, .LCPI6_0
-	fmaxnm	d0, d0, d1
+	fcsel	d0, d0, d1, gt
 	ldr	d1, [x8, :lo12:.LCPI6_0]
 	fcmp	d0, d1
-	cset	w0, gt
+	cset	w0, hi
 	ret
 
 func00000000000000e3:
@@ -86,7 +91,8 @@ func00000000000000e5:
 
 func0000000000000044:
 	movi	d1, #0000000000000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
 	cset	w0, gt
@@ -96,8 +102,9 @@ func0000000000000044:
 	.xword	0x3fefae147ae147ae
 func0000000000000043:
 	movi	d1, #0000000000000000
+	fcmp	d0, #0.0
 	adrp	x8, .LCPI10_0
-	fmaxnm	d0, d0, d1
+	fcsel	d0, d0, d1, gt
 	ldr	d1, [x8, :lo12:.LCPI10_0]
 	fcmp	d0, d1
 	cset	w0, lt

@@ -15,13 +15,13 @@ func0000000000000044:
 	.quad	0x3f50624dd2f1a9fc
 func0000000000000024:
 	vbroadcastsd	.LCPI1_0(%rip), %zmm4
-	vcmpltpd	%zmm4, %zmm3, %k1
-	vcmpltpd	%zmm4, %zmm2, %k2
+	vminpd	%zmm4, %zmm3, %zmm3
+	vminpd	%zmm4, %zmm2, %zmm2
 	vbroadcastsd	.LCPI1_1(%rip), %zmm4
 	vmaxpd	%zmm4, %zmm1, %zmm1
+	vmulpd	%zmm3, %zmm1, %zmm1
 	vmaxpd	%zmm4, %zmm0, %zmm0
-	vmulpd	%zmm2, %zmm0, %zmm0 {%k2}
-	vmulpd	%zmm3, %zmm1, %zmm1 {%k1}
+	vmulpd	%zmm2, %zmm0, %zmm0
 	retq
 
 func00000000000000ee:

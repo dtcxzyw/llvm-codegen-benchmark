@@ -33,7 +33,8 @@ func000000000000000b:
 	mov	w8, #2923
 	movk	w8, #56670, lsl #16
 	fmov	s1, w8
-	fmaxnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, gt
 	ret
 
 func000000000000000c:

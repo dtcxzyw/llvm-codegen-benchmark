@@ -9,7 +9,8 @@ func00000000000000e2:
 
 func0000000000000044:
 	movi	d2, #0000000000000000
-	fmaxnm	d1, d1, d2
+	fcmp	d1, #0.0
+	fcsel	d1, d1, d2, gt
 	fadd	d0, d0, d1
 	fcmp	d0, #0.0
 	cset	w0, gt

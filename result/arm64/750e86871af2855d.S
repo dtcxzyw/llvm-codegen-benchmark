@@ -2,7 +2,8 @@ func0000000000000004:
 	tst	w0, #0x1
 	fcsel	d0, d0, d1, ne
 	fmov	d1, #1.00000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, gt
 	ret
 
 func000000000000000c:
@@ -19,7 +20,8 @@ func0000000000000002:
 	movk	x8, #16470, lsl #48
 	fcsel	d0, d0, d1, ne
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func000000000000000e:

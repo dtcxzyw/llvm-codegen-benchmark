@@ -10,11 +10,12 @@ func0000000000000054:
 
 func0000000000000042:
 	movi	d1, #0000000000000000
+	fcmp	d0, #0.0
 	mov	x8, #4503599627370496
-	fmaxnm	d0, d0, d1
+	fcsel	d0, d0, d1, gt
 	fmov	d1, x8
 	fcmp	d0, d1
-	fcsel	d0, d1, d0, lt
+	fcsel	d0, d1, d0, mi
 	ret
 
 func00000000000000c4:
@@ -22,7 +23,8 @@ func00000000000000c4:
 	fmov	d1, x8
 	mov	x8, #281474972516352
 	movk	x8, #16863, lsl #48
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, ge
 	fmov	d1, x8
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, gt
@@ -30,7 +32,8 @@ func00000000000000c4:
 
 func0000000000000044:
 	movi	d1, #0000000000000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, gt

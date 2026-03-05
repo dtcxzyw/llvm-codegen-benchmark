@@ -5,7 +5,8 @@ func0000000000000004:
 	fmul	d1, d1, d2
 	fdiv	d0, d0, d1
 	movi	d1, #0000000000000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	ret
 
 func000000000000000e:

@@ -5,7 +5,8 @@ func0000000000000022:
 	tst	w0, #0x1
 	fmov	d1, #1.00000000
 	fcsel	d0, d0, d2, ne
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000044:
@@ -34,6 +35,7 @@ func0000000000000042:
 	adrp	x8, .LCPI2_1
 	fcsel	d0, d0, d1, ne
 	ldr	d1, [x8, :lo12:.LCPI2_1]
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 

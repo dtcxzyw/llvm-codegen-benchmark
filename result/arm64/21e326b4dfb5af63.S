@@ -2,7 +2,8 @@ func0000000000000004:
 	mov	w8, #14269
 	movk	w8, #13702, lsl #16
 	fmov	s2, w8
-	fmaxnm	s1, s1, s2
+	fcmp	s1, s2
+	fcsel	s1, s1, s2, gt
 	fdiv	s0, s0, s1
 	ret
 
@@ -15,7 +16,8 @@ func0000000000000007:
 
 func000000000000000c:
 	fmov	s2, #1.00000000
-	fmaxnm	s1, s1, s2
+	fcmp	s1, s2
+	fcsel	s1, s1, s2, ge
 	fdiv	s0, s0, s1
 	ret
 

@@ -1,7 +1,8 @@
 func0000000000000002:
 	fmov	d2, #1.00000000
+	fcmp	d1, d2
+	fcsel	d1, d1, d2, mi
 	tst	w0, #0x1
-	fminnm	d1, d1, d2
 	fcsel	d0, d0, d2, ne
 	fsub	d0, d0, d1
 	ret

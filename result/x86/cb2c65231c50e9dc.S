@@ -15,9 +15,8 @@ func0000000000000042:
 	vaddss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vmovss	.LCPI1_0(%rip), %xmm1
-	vucomiss	%xmm0, %xmm1
-	seta	%al
+	vucomiss	.LCPI1_0(%rip), %xmm0
+	setb	%al
 	retq
 
 .LCPI2_0:

@@ -1,10 +1,12 @@
 func0000000000000042:
 	tst	w0, #0x1
-	movi	d2, #0000000000000000
 	fcsel	d0, d0, d1, ne
+	movi	d1, #0000000000000000
+	fcmp	d0, #0.0
+	fcsel	d0, d0, d1, gt
 	fmov	d1, #1.00000000
-	fmaxnm	d0, d0, d2
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	ret
 
 func0000000000000024:
@@ -13,7 +15,8 @@ func0000000000000024:
 	movk	x8, #16607, lsl #48
 	fcsel	d0, d0, d1, ne
 	fmov	d1, x8
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d0, d1, mi
 	fmov	d1, #1.00000000
 	fcmp	d0, #0.0
 	fcsel	d0, d0, d1, gt
